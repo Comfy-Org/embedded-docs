@@ -1,0 +1,3 @@
+include LICENSE
+include README.md
+recursive-include comfyui_embedded_docs/docs *.md *.jpg *.png *.gif *.webp
