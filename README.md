@@ -1,12 +1,16 @@
 # comfyui_embedded_docs
 
+> [!NOTE]
+> This is only for core nodes. For embedded custom node documentation, please see https://docs.comfy.org/custom-nodes/help-page
+
 ## Updating Documentation
 
-Documentation files are stored in the `docs/` directory. Each node has its own subdirectory containing:
-- `en.md` - English documentation
-- `assets/` - Images and other assets used in the documentation
+Each core node should have a folder containing its node name, then a two letter locale.md, and potentially any assets along with it in the same folder.
 
-To update documentation, simply add or edit the relevant markdown files in the `docs/` directory.
+See [FluxProUltraImageNode](https://github.com/Comfy-Org/embedded-docs/tree/main/docs/FluxProUltraImageNode) as an example.
+
+> [!NOTE]
+> A fallback is simply docs/NodeName.md, but this is discouraged.
 
 ## Publishing
 
