@@ -12,6 +12,33 @@ See [FluxProUltraImageNode](https://github.com/Comfy-Org/embedded-docs/tree/main
 > [!NOTE]
 > A fallback is simply docs/NodeName.md, but this is discouraged.
 
+## Previewing Changes Locally
+
+To preview your documentation changes in ComfyUI:
+
+1. **Setup prerequisites:**
+   - Have both ComfyUI and ComfyUI_Frontend locally cloned
+   - Ensure both repositories are on the "bl help page" branch
+
+2. **Copy documentation files:**
+   ```bash
+   cp -r docs/* comfyui_embedded_docs/docs/
+   ```
+
+3. **Install editable version (optional but recommended):**
+   ```bash
+   # Activate your virtual environment first
+   pip uninstall comfyui-embedded-docs  # Remove PyPI version
+   pip install -e /path/to/embedded-docs/  # Install editable version
+   ```
+
+4. **Launch and preview:**
+   - Start ComfyUI and ComfyUI_Frontend
+   - Refresh the frontend tab after making documentation changes
+
+> [!TIP]
+> The editable installation allows you to see changes immediately after copying files, without reinstalling the package.
+
 ## Publishing
 
 The package is automatically published to PyPI when:
