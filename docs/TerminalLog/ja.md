@@ -1,0 +1,9 @@
+
+<PhotoProvider>
+      <PhotoView src="/utils/Terminal_Log.jpg">
+        <img src="/utils/Terminal_Log.jpg" alt="ComfyUIノードメニュー - ターミナルログノード" className='rounded-lg' priority/>
+      </PhotoView>
+</PhotoProvider>
+
+ターミナルログ (マネージャー) ノードは、ComfyUIのインターフェース内でターミナルに表示される実行情報を主に表示するために使用されます。使用するには、`mode`を**logging**モードに設定する必要があります。これにより、画像生成タスク中に対応するログ情報を記録できます。`mode`が**stop**モードに設定されている場合、ログ情報は記録されません。
+ComfyUIをリモート接続やローカルエリアネットワーク接続を介してアクセスおよび使用する際、ターミナルログ (マネージャー) ノードは特に便利です。ComfyUIインターフェース内でCMDからのエラーメッセージを直接表示できるため、ComfyUIの動作状況を理解しやすくなります。

@@ -1,0 +1,20 @@
+DualCLIPLoader 노드는 두 개의 CLIP 모델을 동시에 로드하도록 설계되어, 두 모델의 기능을 통합하거나 비교하는 작업을 용이하게 합니다.
+
+## 입력 유형 - Dual CLIP Loader
+
+| 매개변수    | Comfy dtype  | 설명 |
+|--------------|--------------|-------------|
+| `clip_name1` | `COMBO[STRING]` | 로드할 첫 번째 CLIP 모델의 이름을 지정합니다. 이 매개변수는 사용 가능한 CLIP 모델의 미리 정의된 목록에서 올바른 모델을 식별하고 검색하는 데 중요합니다. |
+| `clip_name2` | `COMBO[STRING]` | 로드할 두 번째 CLIP 모델의 이름을 지정합니다. 이 매개변수는 첫 번째 모델과 함께 비교 또는 통합 분석을 위해 두 번째 개별 CLIP 모델을 로드할 수 있게 합니다. |
+| `type`       | `option`        | "sdxl", "sd3", "flux" 중에서 선택하여 다양한 모델에 적응합니다. |
+
+* 로드 순서는 출력 효과에 영향을 미치지 않습니다.
+
+## 출력 유형 - Dual CLIP Loader
+
+| 매개변수 | Comfy dtype  | 설명 |
+|-----------|--------------|-------------|
+| `clip`    | `CLIP`       | 출력은 두 개의 지정된 CLIP 모델의 기능이나 기능을 통합한 결합된 CLIP 모델입니다. |
+
+## 워크플로우 예제 - Dual CLIP Loader
+원본 워크플로우 인용: https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP
