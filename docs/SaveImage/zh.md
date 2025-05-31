@@ -1,5 +1,5 @@
 
-**节点功能：**`Save Image-保存图像`节点主要用于把图像保存到comfyUI的**output**文件夹中，如果中间过程你只是想预览而不是保存图像，可以使用`[Preview Image-预览图像](/zh/comfyui-nodes/image/preview-image)`节点
+**节点功能：**`Save Image-保存图像`节点主要用于把图像保存到comfyUI的**output**文件夹中，如果中间过程你只是想预览而不是保存图像，可以使用`Preview Image-预览图像`节点
 默认保存图片位置： `ComfyUI/output/`
 
 ## 输入类型
