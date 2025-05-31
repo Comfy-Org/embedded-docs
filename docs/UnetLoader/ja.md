@@ -1,0 +1,21 @@
+
+UNETLoaderノードは、U-Netモデルを名前でロードするために設計されており、システム内で事前訓練されたU-Netアーキテクチャの使用を容易にします。
+
+## 入力タイプ - UNET Loader Guide | Load Diffusion Model
+
+| パラメータ   | Comfy dtype  | 説明 |
+|-------------|--------------|-------------|
+| `unet_name` | `COMBO[STRING]` | ロードするU-Netモデルの名前を指定します。この名前は、事前定義されたディレクトリ構造内でモデルを見つけるために使用され、異なるU-Netモデルの動的ロードを可能にします。 |
+| `weight_dtype` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
+
+## 出力タイプ - UNET Loader Guide | Load Diffusion Model
+
+| パラメータ | Comfy dtype | 説明 |
+|-----------|-------------|-------------|
+| `model`   | `MODEL`     | ロードされたU-Netモデルを返し、システム内でのさらなる処理や推論に利用可能にします。 |
+
+## Load Diffusion Model ワークフロー例 | UNET Loader Guide 
+1. UNETモデルをインストール
+2. ワークフローファイルをダウンロード
+3. ComfyUIにワークフローをインポート
+4. UNETモデルを選択し、ワークフローを実行

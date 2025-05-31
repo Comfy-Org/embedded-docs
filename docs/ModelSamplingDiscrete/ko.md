@@ -1,0 +1,16 @@
+
+이 노드는 이산 샘플링 전략을 적용하여 모델의 샘플링 동작을 수정하도록 설계되었습니다. epsilon, v_prediction, lcm, x0와 같은 다양한 샘플링 방법을 선택할 수 있으며, zero-shot noise ratio (zsnr) 설정에 따라 모델의 노이즈 감소 전략을 선택적으로 조정할 수 있습니다.
+
+## Input types (입력 유형)
+
+| Parameter | Comfy dtype | Python dtype     | Description (설명) |
+|-----------|--------------|-------------------|-------------|
+| `model`   | `MODEL`     | `torch.nn.Module` | 이산 샘플링 전략이 적용될 모델입니다. 이 매개변수는 수정될 기본 모델을 정의하므로 중요합니다. |
+| `sampling`| `COMBO[STRING]` | `str`           | 모델에 적용할 이산 샘플링 방법을 지정합니다. 방법의 선택은 모델이 샘플을 생성하는 방식에 영향을 미치며, 다양한 샘플링 전략을 제공합니다. |
+| `zsnr`    | `BOOLEAN`   | `bool`           | 활성화되면 zero-shot noise ratio에 따라 모델의 노이즈 감소 전략을 조정하는 부울 플래그입니다. 이는 생성된 샘플의 품질과 특성에 영향을 줄 수 있습니다. |
+
+## Output types (출력 유형)
+
+| Parameter | Comfy dtype | Python dtype     | Description (설명) |
+|-----------|-------------|-------------------|-------------|
+| `model`   | `MODEL`     | `torch.nn.Module` | 이산 샘플링 전략이 적용된 수정된 모델입니다. 이 모델은 지정된 방법과 조정을 사용하여 샘플을 생성할 수 있습니다. |
