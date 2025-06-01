@@ -1,7 +1,7 @@
 # comfyui_embedded_docs
 
 > [!NOTE]
-> This is only for core nodes. For embedded custom node documentation, please see https://docs.comfy.org/custom-nodes/help-page
+> This is only for core nodes. For embedded custom node documentation, please see https://docs.comfy.org/custom-nodes/help_page
 
 ## Updating Documentation
 
