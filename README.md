@@ -16,19 +16,14 @@ See [FluxProUltraImageNode](https://github.com/Comfy-Org/embedded-docs/tree/main
 
 To preview your documentation changes in ComfyUI:
 
-1. **Copy documentation files:**
-   ```bash
-   cp -r docs/* comfyui_embedded_docs/docs/
-   ```
-
-2. **Install editable version (optional but recommended):**
+1. **Install editable version (optional but recommended):**
    ```bash
    # If you have one, activate your ComfyUI virtual environment first
    pip uninstall comfyui-embedded-docs  # Remove existing PyPI version
    pip install -e /path/to/embedded-docs/  # Install editable version
    ```
 
-3. **Launch and preview:**
+2. **Launch and preview:**
    - Start ComfyUI
    - Refresh the frontend tab after making documentation changes
 
@@ -43,6 +38,5 @@ The package is automatically published to PyPI when:
 3. A pull request that modifies `pyproject.toml` is merged to main
 
 The publishing workflow:
-1. Copies documentation from `docs/` to `comfyui_embedded_docs/docs/`
-2. Builds the package using `python -m build`
-3. Publishes to PyPI using the configured PYPI_TOKEN secret
+1. Builds the package using `python -m build`
+2. Publishes to PyPI using the configured PYPI_TOKEN secret
