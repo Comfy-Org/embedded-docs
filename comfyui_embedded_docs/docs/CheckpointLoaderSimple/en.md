@@ -1,16 +1,21 @@
-This node will detect models located in the `ComfyUI/models/checkpoints` folder, and it will also read models from additional paths configured in the extra_model_paths.yaml file. Sometimes, you may need to **refresh the ComfyUI interface** (shortcut 'Ctrl + R') to allow it to read the model files from the corresponding folder.
+This is a model loader node that loads model files from specified locations and decomposes them into three core components: the main model, text encoder, and image encoder/decoder.
 
-The CheckpointLoaderSimple node is designed for loading model checkpoints without the need for specifying a configuration. It simplifies the process of checkpoint loading by requiring only the checkpoint name, making it more accessible for users who may not be familiar with the configuration details.
-## Input types
+This node automatically detects all model files in the `ComfyUI/models/checkpoints` folder, as well as additional paths configured in your `extra_model_paths.yaml` file.
 
-| Field     | Comfy dtype | Description                                                                       |
-|-----------|-------------|-----------------------------------------------------------------------------------|
-| `ckpt_name`| `COMBO[STRING]` | Specifies the name of the checkpoint to be loaded, determining which checkpoint file the node will attempt to load and affecting the node's execution and the model that is loaded. |
+1. **Model Compatibility**: Ensure the selected model is compatible with your workflow. Different model types (such as SD1.5, SDXL, Flux, etc.) need to be paired with corresponding samplers and other nodes
+2. **File Management**: Place model files in the `ComfyUI/models/checkpoints` folder, or configure other paths through extra_model_paths.yaml
+3. **Interface Refresh**: If new model files are added while ComfyUI is running, you need to refresh the browser (Ctrl+R) to see the new files in the dropdown list
 
-## Output types
+## Input Parameters
 
-| Field | Comfy dtype | Description                                                              |
-|-------|-------------|--------------------------------------------------------------------------|
-| `model` | `MODEL` | Returns the loaded model, allowing it to be used for further processing or inference. |
-| `clip`  | `CLIP`     | Returns the CLIP model associated with the loaded checkpoint, if available. |
-| `vae`   | `VAE`      | Returns the VAE model associated with the loaded checkpoint, if available. |
+| Parameter Name | Data Type | Input Method | Default Value | Value Range | Description |
+|----------------|-----------|--------------|---------------|-------------|-------------|
+| ckpt_name | STRING | Dropdown Selection | null | All model files in checkpoints folder | Select the checkpoint model file name to load, which determines the AI model used for subsequent image generation |
+
+## Output Parameters
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| MODEL | MODEL | The main diffusion model used for image denoising generation, the core component of AI image creation |
+| CLIP | CLIP | The model used for encoding text prompts, converting text descriptions into information that AI can understand |
+| VAE | VAE | The model used for image encoding and decoding, responsible for converting between pixel space and latent space |
