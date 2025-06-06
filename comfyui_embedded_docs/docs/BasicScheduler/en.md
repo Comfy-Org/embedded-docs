@@ -1,17 +1,63 @@
+The `BasicScheduler` node is designed to compute a sequence of sigma values for diffusion models based on the provided scheduler, model, and denoising parameters. It dynamically adjusts the total number of steps based on the denoise factor to fine-tune the diffusion process, providing precise "recipes" for different stages in advanced sampling processes that require fine control (such as multi-stage sampling).
 
-The BasicScheduler node is designed to compute a sequence of sigma values for diffusion models based on the provided scheduler, model, and denoising parameters. It dynamically adjusts the total number of steps based on the denoise factor to fine-tune the diffusion process.
+## Input Parameters
 
-## Input types
+| Parameter   | Data Type     | Input Type | Default | Range    | Metaphor Description           | Technical Purpose            |
+| ----------- | ------------- | ---------- | ------- | -------- | ------------------------------ | ---------------------------- |
+| `model`     | MODEL         | Input      | -       | -        | **Canvas Type**: Different canvas materials need different paint formulas | Diffusion model object, determines sigma calculation basis |
+| `scheduler` | COMBO[STRING] | Widget     | -       | 9 options | **Mixing Technique**: Choose how paint concentration changes    | Scheduling algorithm, controls noise decay mode              |
+| `steps`     | INT           | Widget     | 20      | 1-10000  | **Mixing Count**: 20 mixes vs 50 mixes precision difference   | Sampling steps, affects generation quality and speed        |
+| `denoise`   | FLOAT         | Widget     | 1.0     | 0.0-1.0  | **Creation Intensity**: Control level from fine-tuning to repainting | Denoising strength, supports partial repainting scenarios   |
 
-| Parameter | Comfy dtype | Description |
-|-----------|-------------|-------------|
-| `model`   | `MODEL`     | The model parameter specifies the diffusion model for which the sigma values are to be calculated. It plays a crucial role in determining the appropriate sigma values for the diffusion process. |
-| `scheduler` | `COMBO[STRING]` | The scheduler parameter determines the scheduling algorithm to be used for calculating the sigma values. It directly influences the progression and characteristics of the diffusion process. |
-| `steps`    | `INT`       | The steps parameter indicates the total number of steps in the diffusion process. It affects the granularity and duration of the process. |
-| `denoise`  | `FLOAT`     | The denoise parameter allows for adjusting the effective number of steps by scaling the total steps, enabling finer control over the diffusion process. |
+### Scheduler Types
 
-## Output types
+Based on source code `comfy.samplers.SCHEDULER_NAMES`, supports the following 9 schedulers:
 
-| Parameter | Comfy dtype | Description |
-|-----------|-------------|-------------|
-| `sigmas`  | `SIGMAS`    | The sigmas output represents the computed sequence of sigma values for the diffusion process, essential for controlling the noise level at each step. |
+| Scheduler Name       | Characteristics      | Use Cases                    | Noise Decay Pattern          |
+| -------------------- | -------------------- | ---------------------------- | ---------------------------- |
+| **normal**           | Standard linear      | General scenarios, balanced  | Uniform decay                |
+| **karras**           | Smooth transition    | High quality, detail-rich    | Smooth non-linear decay      |
+| **exponential**      | Exponential decay    | Fast generation, efficiency  | Exponential rapid decay      |
+| **sgm_uniform**      | SGM uniform          | Specific model optimization  | SGM optimized decay          |
+| **simple**           | Simple scheduling    | Quick testing, basic use     | Simplified decay             |
+| **ddim_uniform**     | DDIM uniform         | DDIM sampling optimization   | DDIM specific decay          |
+| **beta**             | Beta distribution    | Special distribution needs   | Beta function decay          |
+| **linear_quadratic** | Linear quadratic     | Complex scenario optimization| Quadratic function decay     |
+| **kl_optimal**       | KL optimal           | Theoretical optimization     | KL divergence optimized decay|
+
+## Output Results
+
+| Parameter | Data Type | Output Type | Metaphor Description   | Technical Meaning                |
+| --------- | --------- | ----------- | ---------------------- | -------------------------------- |
+| `sigmas`  | SIGMAS    | Output      | **Paint Recipe Chart**: Detailed paint concentration list for step-by-step use | Noise level sequence, guides diffusion model denoising process |
+
+
+## Node Role: Artist's Color Mixing Assistant
+
+Imagine you are an artist creating a clear image from a chaotic mixture of paint (noise). `BasicScheduler` acts like your **professional color mixing assistant**, whose job is to prepare a series of precise paint concentration recipes:
+
+### Workflow
+- **Step 1**: Use 90% concentration paint (high noise level)
+- **Step 2**: Use 80% concentration paint  
+- **Step 3**: Use 70% concentration paint
+- **...**
+- **Final Step**: Use 0% concentration (clean canvas, no noise)
+
+### Color Assistant's Special Skills
+
+**Different mixing methods (scheduler)**:
+- **"karras" mixing method**: Paint concentration changes very smoothly, like professional artist's gradient technique
+- **"exponential" mixing method**: Paint concentration decreases rapidly, suitable for quick creation
+- **"linear" mixing method**: Paint concentration decreases uniformly, stable and controllable
+
+**Fine control (steps)**:
+- **20 mixes**: Quick painting, efficiency priority
+- **50 mixes**: Fine painting, quality priority
+
+**Creation intensity (denoise)**:
+- **1.0 = Complete new creation**: Start completely from blank canvas
+- **0.5 = Half transformation**: Keep half of original painting, transform half
+- **0.2 = Fine adjustment**: Only make subtle adjustments to original painting
+
+### Collaboration with Other Nodes
+`BasicScheduler` (Color Assistant) → Prepare Recipe → `SamplerCustom` (Artist) → Actual Painting → Completed Work
