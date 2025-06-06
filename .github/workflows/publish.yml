@@ -26,11 +26,6 @@ jobs:
       - name: Install build dependencies
         run: python -m pip install build
 
-      - name: Setup package
-        run: |
-          mkdir -p comfyui_embedded_docs/docs/
-          cp -r docs/* comfyui_embedded_docs/docs/
-
       - name: Build package
         run: python -m build
 
