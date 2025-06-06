@@ -1,14 +1,38 @@
-The Canny node is designed for edge detection in images, utilizing the Canny algorithm to identify and highlight the edges. This process involves applying a series of filters to the input image to detect areas of high gradient, which correspond to edges, thereby enhancing the image's structural details.
+Extract all edge lines from photos, like using a pen to outline a photo, drawing out the contours and detail boundaries of objects.
 
-## Input type
-| Parameter | Comfy dtype | Description |
-| --- | --- | --- |
-| `image` | `IMAGE` | The input image to be processed for edge detection. It is crucial as it serves as the base for the edge detection operation. |
-| `low_threshold` | `FLOAT` | The lower threshold for the hysteresis procedure in edge detection. It determines the minimum intensity gradient considered for an edge, affecting the sensitivity of edge detection. |
-| `high_threshold` | `FLOAT` | The upper threshold for the hysteresis procedure in edge detection. It sets the maximum intensity gradient considered for an edge, influencing the selectivity of edge detection. |
+## Working Principle
+Imagine you are an artist who needs to use a pen to outline a photo. The Canny node acts like an intelligent assistant, helping you decide where to draw lines (edges) and where not to.
 
-## Output types
+This process is like a screening job:
+- **High threshold** is the "must draw line standard": only very obvious and clear contour lines will be drawn, such as facial contours of people and building frames
+- **Low threshold** is the "definitely don't draw line standard": edges that are too weak will be ignored to avoid drawing noise and meaningless lines
+- **Middle area**: edges between the two standards will be drawn together if they connect to "must draw lines", but won't be drawn if they are isolated
 
-| Parameter | Comfy dtype | Description |
-| --- | --- | --- |
-| `image` | `IMAGE` | The output is an image with highlighted edges, where the edges are detected using the Canny algorithm. This enhances the structural details of the original image. |
+The final output is a black and white image, where white parts are detected edge lines and black parts are areas without edges.
+
+## Input Parameters
+
+| Parameter Name | Data Type | Input Method | Default Value | Value Range | Function Description |
+|----------------|-----------|--------------|---------------|-------------|---------------------|
+| image | IMAGE | Connection | - | - | Original photo that needs edge extraction |
+| low_threshold | FLOAT | Manual Input | 0.4 | 0.01-0.99 | Low threshold, determines how weak edges to ignore. Lower values preserve more details but may produce noise |
+| high_threshold | FLOAT | Manual Input | 0.8 | 0.01-0.99 | High threshold, determines how strong edges to preserve. Higher values only keep the most obvious contour lines |
+
+## Output Results
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| image | IMAGE | Black and white edge image, white lines are detected edges, black areas are parts without edges |
+
+## Parameter Comparison
+
+![Original Image](./asset/input.webp)
+
+
+![Parameter Comparison](./asset/compare.webp)
+
+**Common Issues:**
+- Broken edges: Try lowering high threshold
+- Too much noise: Raise low threshold
+- Missing important details: Lower low threshold
+- Edges too rough: Check input image quality and resolution
