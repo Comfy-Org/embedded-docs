@@ -2,9 +2,9 @@ Ce nœud est conçu pour modifier les informations de conditionnement en défini
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Les données de conditionnement à modifier. Elles servent de base pour appliquer des ajustements spatiaux. |
+| `CONDITIONING` | CONDITIONING | Les données de conditionnement à modifier. Elles servent de base pour appliquer des ajustements spatiaux. |
 | `width`   | `INT`      | Spécifie la largeur de la zone à définir dans le contexte de conditionnement, influençant la portée horizontale de l'ajustement. |
 | `height`  | `INT`      | Détermine la hauteur de la zone à définir, affectant l'étendue verticale de la modification du conditionnement. |
 | `x`       | `INT`      | Le point de départ horizontal de la zone à définir, positionnant l'ajustement dans le contexte de conditionnement. |
@@ -13,6 +13,6 @@ Ce nœud est conçu pour modifier les informations de conditionnement en défini
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Les données de conditionnement modifiées, reflétant les paramètres et ajustements de zone spécifiés. |
+| `CONDITIONING` | CONDITIONING | Les données de conditionnement modifiées, reflétant les paramètres et ajustements de zone spécifiés. |

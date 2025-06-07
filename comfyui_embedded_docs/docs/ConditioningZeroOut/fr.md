@@ -4,10 +4,10 @@ Ce nœud annule des éléments spécifiques au sein de la structure de données 
 
 | Paramètre | Comfy dtype                | Description |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | La structure de données de conditionnement à modifier. Ce nœud annule les éléments 'pooled_output' au sein de chaque entrée de conditionnement, si présents. |
+| `CONDITIONING` | CONDITIONING | La structure de données de conditionnement à modifier. Ce nœud annule les éléments 'pooled_output' au sein de chaque entrée de conditionnement, si présents. |
 
 ## Sorties
 
 | Paramètre | Comfy dtype                | Description |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | La structure de données de conditionnement modifiée, avec les éléments 'pooled_output' mis à zéro là où c'est applicable. |
+| `CONDITIONING` | CONDITIONING | La structure de données de conditionnement modifiée, avec les éléments 'pooled_output' mis à zéro là où c'est applicable. |

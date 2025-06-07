@@ -12,4 +12,4 @@ The ModelMergeAdd node is designed for merging two models by adding key patches 
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | The result of merging two models by adding key patches from the second model to the first. This merged model combines features or behaviors from both models. |
+| `model`   | MODEL     | The result of merging two models by adding key patches from the second model to the first. This merged model combines features or behaviors from both models. |

@@ -15,20 +15,20 @@ This node can be viewed as a "language translator" that converts user input text
 
 ## Inputs
 
-| Parameter | Comfy Data Type | Description |
-| --------- | -------------- | ----------- |
-| `clip`    | `CLIP`         | A CLIP model instance for text tokenization and encoding, core to generating conditions. |
-| `bert`    | `STRING`       | Text input for encoding, supports multiline and dynamic prompts. |
-| `mt5xl`   | `STRING`       | Another text input for encoding, supports multiline and dynamic prompts (multilingual). |
+| Parameter | Data Type | Description |
+| --------- | ----------| ----------- |
+| `clip`    | CLIP      | A CLIP model instance for text tokenization and encoding, core to generating conditions. |
+| `bert`    | STRING    | Text input for encoding, supports multiline and dynamic prompts. |
+| `mt5xl`   | STRING    | Another text input for encoding, supports multiline and dynamic prompts (multilingual). |
 
 - **`bert` parameter**: Suitable for English text input. It's recommended to input concise text with context to help the node generate more accurate and meaningful token representations.
 - **`mt5xl` parameter**: Suitable for multilingual text input. You can input text in any language to help the model understand multilingual tasks.
 
 ## Outputs
 
-| Parameter | Comfy Data Type | Description |
+| Parameter | Data Type | Description |
 | --------- | -------------- | ----------- |
-| `conditioning` | `CONDITIONING` | Encoded conditional output for further processing in generation tasks. |
+| `CONDITIONING` | CONDITIONING | Encoded conditional output for further processing in generation tasks. |
 
 ## Methods
 

@@ -2,7 +2,7 @@ Este nodo está diseñado para codificar las entradas de texto utilizando el mod
 
 ## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 | --- | --- | --- |
 | `clip` | `CLIP` | La instancia del modelo CLIP utilizada para codificar el texto. Juega un papel vital en el procesamiento de la entrada de texto y su conversión en un formato adecuado para tareas de generación o manipulación de imágenes. |
 | `width` | `INT` | Especifica el ancho de la imagen en píxeles. Determina las dimensiones de la imagen de salida generada o manipulada. |
@@ -16,6 +16,6 @@ Este nodo está diseñado para codificar las entradas de texto utilizando el mod
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | La salida del nodo, que incluye el texto codificado junto con información adicional necesaria para tareas de generación o manipulación de imágenes. |
+| `CONDITIONING` | CONDITIONING | La salida del nodo, que incluye el texto codificado junto con información adicional necesaria para tareas de generación o manipulación de imágenes. |

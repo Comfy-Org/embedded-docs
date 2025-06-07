@@ -4,10 +4,10 @@ Emplacement d'enregistrement par défaut : `ComfyUI/output/`
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `images` | `IMAGE` | Les images à sauvegarder. Ce paramètre est crucial car il contient directement les données d'image qui seront traitées et sauvegardées sur le disque. |
-| `filename_prefix` | `STRING` | Le préfixe du nom de fichier pour les images enregistrées dans le dossier `ComfyUI/output/`. La valeur par défaut est `ComfyUI`, mais elle peut être personnalisée. |
+| `filename_prefix` | STRING   | Le préfixe du nom de fichier pour les images enregistrées dans le dossier `ComfyUI/output/`. La valeur par défaut est `ComfyUI`, mais elle peut être personnalisée. |
 
 ## Options du Menu Contextuel
 

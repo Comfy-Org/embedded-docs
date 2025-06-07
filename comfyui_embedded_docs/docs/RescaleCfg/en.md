@@ -5,11 +5,11 @@ The RescaleCFG node is designed to adjust the conditioning and unconditioning sc
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | The model parameter represents the generative model to be adjusted. It is crucial as the node applies a rescaling function to the model's output, directly influencing the generation process. |
+| `model`   | MODEL     | The model parameter represents the generative model to be adjusted. It is crucial as the node applies a rescaling function to the model's output, directly influencing the generation process. |
 | `multiplier` | `FLOAT` | The multiplier parameter controls the extent of rescaling applied to the model's output. It determines the balance between the original and rescaled components, affecting the final output's characteristics. |
 
 ## Outputs
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | The modified model with adjusted conditioning and unconditioning scales. This model is expected to produce outputs with potentially enhanced characteristics due to the applied rescaling. |
+| `model`   | MODEL     | The modified model with adjusted conditioning and unconditioning scales. This model is expected to produce outputs with potentially enhanced characteristics due to the applied rescaling. |

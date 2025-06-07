@@ -2,12 +2,12 @@ Le nœud `ImageInvert` est conçu pour inverser les couleurs d'une image, transf
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | Le paramètre 'image' représente l'image d'entrée à inverser. Il est crucial pour spécifier l'image cible dont les couleurs doivent être inversées, affectant l'exécution du nœud et le résultat visuel du processus d'inversion. |
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La sortie est une version inversée de l'image d'entrée, avec chaque valeur de couleur de pixel transformée en sa couleur complémentaire. |

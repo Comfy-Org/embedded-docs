@@ -2,7 +2,7 @@ Este nodo se especializa en refinar la codificación de las entradas de texto ut
 
 ## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 | --- | --- | --- |
 | `clip` | `CLIP` | Una instancia del modelo CLIP utilizada para la tokenización y codificación de texto, central para generar el condicionamiento. |
 | `ascore` | `FLOAT` | El parámetro de puntuación estética influye en la salida del condicionamiento al proporcionar una medida de calidad estética. |
@@ -12,6 +12,6 @@ Este nodo se especializa en refinar la codificación de las entradas de texto ut
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | La salida de condicionamiento refinada, enriquecida con puntuaciones estéticas y dimensiones para una generación de contenido mejorada.
+| `CONDITIONING` | CONDITIONING | La salida de condicionamiento refinada, enriquecida con puntuaciones estéticas y dimensiones para una generación de contenido mejorada.

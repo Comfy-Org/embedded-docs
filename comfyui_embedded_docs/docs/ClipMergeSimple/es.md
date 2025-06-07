@@ -2,7 +2,7 @@ Este nodo se especializa en fusionar dos modelos CLIP basándose en una proporci
 
 ## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
 | `clip1`   | `CLIP`      | El primer modelo CLIP que se va a fusionar. Sirve como el modelo base para el proceso de fusión. |
 | `clip2`   | `CLIP`      | El segundo modelo CLIP que se va a fusionar. Sus parches clave, excepto los IDs de posición y la escala de logit, se aplican al primer modelo según la proporción especificada. |
@@ -10,6 +10,6 @@ Este nodo se especializa en fusionar dos modelos CLIP basándose en una proporci
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `clip`    | `CLIP`      | El modelo CLIP resultante de la fusión, que incorpora características de ambos modelos de entrada según la proporción especificada. |
+| `clip`    | CLIP      | El modelo CLIP resultante de la fusión, que incorpora características de ambos modelos de entrada según la proporción especificada. |

@@ -10,6 +10,6 @@ Le nœud RebatchLatents est conçu pour réorganiser un lot de représentations 
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est un lot réorganisé de représentations latentes, ajusté selon la taille de lot spécifiée. Il facilite un traitement ou une analyse ultérieure. |

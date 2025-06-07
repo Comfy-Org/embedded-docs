@@ -10,6 +10,6 @@ Le nœud `EmptyLatentImage` est conçu pour générer une représentation d'espa
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est un tenseur représentant un lot d'images latentes vides, servant de base pour la génération ou la manipulation ultérieure d'images dans l'espace latent. |

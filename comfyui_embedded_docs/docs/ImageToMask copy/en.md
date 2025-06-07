@@ -5,7 +5,7 @@ The ImageToMask node is designed to convert an image into a mask based on a spec
 | Parameter   | Data Type | Description                                                                                                          |
 |-------------|-------------|----------------------------------------------------------------------------------------------------------------------|
 | `image`     | `IMAGE`     | The 'image' parameter represents the input image from which a mask will be generated based on the specified color channel. It plays a crucial role in determining the content and characteristics of the resulting mask. |
-| `channel`   | `COMBO[STRING]` | The 'channel' parameter specifies which color channel (red, green, blue, or alpha) of the input image should be used to generate the mask. This choice directly influences the mask's appearance and which parts of the image are highlighted or masked out. |
+| `channel`   | COMBO[STRING] | The 'channel' parameter specifies which color channel (red, green, blue, or alpha) of the input image should be used to generate the mask. This choice directly influences the mask's appearance and which parts of the image are highlighted or masked out. |
 
 ## Outputs
 

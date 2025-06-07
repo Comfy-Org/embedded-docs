@@ -16,7 +16,7 @@ Este nodo está diseñado para procesar y condicionar datos para su uso en model
 
 ## Salidas
 
-| Parámetro     | Tipo Comfy  | Descripción |
+| Parámetro     | Tipo de Dato | Descripción |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Genera vectores de condicionamiento positivos, ayudando en el refuerzo de características positivas del modelo. |
 | `negative`    | `CONDITIONING` | Produce vectores de condicionamiento negativos, asistiendo en la evitación de ciertas características por parte del modelo. |

@@ -13,7 +13,7 @@ Le nœud InpaintModelConditioning est conçu pour faciliter le processus de cond
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|--------------|-------------|
 | `positive`| `CONDITIONING` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'inpainting. Cette sortie est essentielle pour guider le processus d'inpainting selon les conditions positives spécifiées. |
 | `negative`| `CONDITIONING` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'inpainting. Cette sortie est essentielle pour guider le processus d'inpainting selon les conditions négatives spécifiées. |

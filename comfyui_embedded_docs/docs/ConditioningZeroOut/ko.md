@@ -4,10 +4,10 @@
 
 | 매개변수 | Comfy dtype                | 설명 |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | 수정할 컨디셔닝 데이터 구조입니다. 이 노드는 각 컨디셔닝 항목 내 'pooled_output' 요소를 0으로 설정합니다. |
+| `CONDITIONING` | CONDITIONING | 수정할 컨디셔닝 데이터 구조입니다. 이 노드는 각 컨디셔닝 항목 내 'pooled_output' 요소를 0으로 설정합니다. |
 
 ## 출력
 
 | 매개변수 | Comfy dtype                | 설명 |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | 'pooled_output' 요소가 해당되는 경우 0으로 설정된 수정된 컨디셔닝 데이터 구조입니다. |
+| `CONDITIONING` | CONDITIONING | 'pooled_output' 요소가 해당되는 경우 0으로 설정된 수정된 컨디셔닝 데이터 구조입니다. |

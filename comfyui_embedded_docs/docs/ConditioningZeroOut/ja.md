@@ -4,10 +4,10 @@
 
 | パラメータ | Comfy dtype                | 説明 |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | 修正されるコンディショニングデータ構造。このノードは、各コンディショニングエントリ内の 'pooled_output' 要素をゼロにします（存在する場合）。 |
+| `CONDITIONING` | CONDITIONING | 修正されるコンディショニングデータ構造。このノードは、各コンディショニングエントリ内の 'pooled_output' 要素をゼロにします（存在する場合）。 |
 
 ## 出力
 
 | パラメータ | Comfy dtype                | 説明 |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | 'pooled_output' 要素がゼロに設定された修正済みのコンディショニングデータ構造。 |
+| `CONDITIONING` | CONDITIONING | 'pooled_output' 要素がゼロに設定された修正済みのコンディショニングデータ構造。 |

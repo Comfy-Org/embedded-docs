@@ -14,4 +14,4 @@ The `ratio` parameter determines the blending ratio between the two models. When
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | The resulting merged model, incorporating elements from both input models according to the specified ratio. |
+| `model`   | MODEL     | The resulting merged model, incorporating elements from both input models according to the specified ratio. |

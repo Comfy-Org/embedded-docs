@@ -3,12 +3,12 @@ Le nœud InvertMask est conçu pour inverser les valeurs d'un masque donné, inv
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | Le paramètre 'mask' représente le masque d'entrée à inverser. Il est crucial pour déterminer les zones à inverser dans le processus d'inversion. |
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | La sortie est une version inversée du masque d'entrée, avec les zones précédemment masquées devenant non masquées et vice versa. |

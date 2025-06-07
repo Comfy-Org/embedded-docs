@@ -4,7 +4,7 @@ The ConditioningSetAreaPercentage node specializes in adjusting the area of infl
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Represents the conditioning elements to be modified, serving as the foundation for applying area and strength adjustments. |
+| `CONDITIONING` | CONDITIONING | Represents the conditioning elements to be modified, serving as the foundation for applying area and strength adjustments. |
 | `width`   | `FLOAT`     | Specifies the width of the area as a percentage of the total image width, influencing how much of the image the conditioning affects horizontally. |
 | `height`  | `FLOAT`     | Determines the height of the area as a percentage of the total image height, affecting the vertical extent of the conditioning's influence. |
 | `x`       | `FLOAT`     | Indicates the horizontal starting point of the area as a percentage of the total image width, positioning the conditioning effect. |
@@ -15,4 +15,4 @@ The ConditioningSetAreaPercentage node specializes in adjusting the area of infl
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Returns the modified conditioning elements with updated area and strength parameters, ready for further processing or application. |
+| `CONDITIONING` | CONDITIONING | Returns the modified conditioning elements with updated area and strength parameters, ready for further processing or application. |

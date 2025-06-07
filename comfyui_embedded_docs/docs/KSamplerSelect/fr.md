@@ -5,7 +5,7 @@ Le nœud KSamplerSelect est conçu pour sélectionner un échantillonneur spéci
 
 | Paramètre         | Data Type | Description                                                                                      |
 |-------------------|-------------|------------------------------------------------------------------------------------------------|
-| `sampler_name`    | `COMBO[STRING]` | Spécifie le nom de l'échantillonneur à sélectionner. Ce paramètre détermine quelle stratégie d'échantillonnage sera utilisée, influençant le comportement global de l'échantillonnage et les résultats. |
+| `sampler_name`    | COMBO[STRING] | Spécifie le nom de l'échantillonneur à sélectionner. Ce paramètre détermine quelle stratégie d'échantillonnage sera utilisée, influençant le comportement global de l'échantillonnage et les résultats. |
 
 ## Sorties
 

@@ -4,10 +4,10 @@ Este nodo anula elementos específicos dentro de la estructura de datos de condi
 
 | Parámetro | Tipo Comfy                | Descripción |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | La estructura de datos de condicionamiento que se va a modificar. Este nodo anula los elementos 'pooled_output' dentro de cada entrada de condicionamiento, si están presentes. |
+| `CONDITIONING` | CONDITIONING | La estructura de datos de condicionamiento que se va a modificar. Este nodo anula los elementos 'pooled_output' dentro de cada entrada de condicionamiento, si están presentes. |
 
 ## Salidas
 
 | Parámetro | Tipo Comfy                | Descripción |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | La estructura de datos de condicionamiento modificada, con los elementos 'pooled_output' establecidos en cero donde sea aplicable. |
+| `CONDITIONING` | CONDITIONING | La estructura de datos de condicionamiento modificada, con los elementos 'pooled_output' establecidos en cero donde sea aplicable. |

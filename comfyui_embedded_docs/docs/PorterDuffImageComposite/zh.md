@@ -8,7 +8,7 @@ PorterDuffImageComposite 节点旨在使用 Porter-Duff 合成操作符执行图
 | `source_alpha` | `MASK`   | 源图像的 alpha 通道，指定源图像中每个像素的透明度。它影响源图像与目标图像的混合方式。 |
 | `destination`  | `IMAGE`  | 作为背景的目标图像张量，其上合成源图像。它根据混合模式对最终合成图像有所贡献。 |
 | `destination_alpha` | `MASK` | 目标图像的 alpha 通道，定义目标图像像素的透明度。它影响源图像和目标图像的混合。 |
-| `mode`         | `COMBO[STRING]` | 要应用的 Porter-Duff 合成模式，它决定了源图像和目标图像如何混合在一起。每种模式都会产生不同的视觉效果。 |
+| `mode`         | COMBO[STRING] | 要应用的 Porter-Duff 合成模式，它决定了源图像和目标图像如何混合在一起。每种模式都会产生不同的视觉效果。 |
 | `PorterDuffMode` | `STRING` | Python 中 Porter-Duff 合成模式的数据类型。 |
 
 ## 输出

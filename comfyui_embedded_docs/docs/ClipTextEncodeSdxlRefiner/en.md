@@ -14,4 +14,4 @@ This node specializes in refining the encoding of text inputs using CLIP models,
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | The refined conditioning output, enriched with aesthetic scores and dimensions for enhanced content generation. |
+| `CONDITIONING` | CONDITIONING | The refined conditioning output, enriched with aesthetic scores and dimensions for enhanced content generation. |

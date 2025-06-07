@@ -10,6 +10,6 @@ Le nœud LatentAdd est conçu pour l'addition de deux représentations latentes.
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | Le résultat de l'addition élément par élément de deux échantillons latents, représentant un nouvel ensemble d'échantillons latents qui combine les caractéristiques des deux entrées. |

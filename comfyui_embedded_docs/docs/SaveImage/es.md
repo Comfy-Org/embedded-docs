@@ -7,7 +7,7 @@ Ubicación de guardado predeterminada: `ComfyUI/output/`
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `images` | `IMAGE` | Las imágenes que se guardarán. Este parámetro es crucial ya que contiene directamente los datos de imagen que se procesarán y guardarán en disco. |
-| `filename_prefix` | `STRING` | El prefijo del nombre de archivo para las imágenes guardadas en la carpeta `ComfyUI/output/`. El valor predeterminado es `ComfyUI`, pero se puede personalizar. |
+| `filename_prefix` | STRING   | El prefijo del nombre de archivo para las imágenes guardadas en la carpeta `ComfyUI/output/`. El valor predeterminado es `ComfyUI`, pero se puede personalizar. |
 
 ## Opciones del Menú Contextual
 

@@ -11,4 +11,4 @@ Este nodo está diseñado para modificar el comportamiento de un modelo CLIP al 
 
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
-| `clip`    | `CLIP`      | El modelo CLIP modificado con la capa especificada establecida como la última. Esta salida permite un uso o análisis adicional del modelo ajustado.
+| `clip`    | CLIP      | El modelo CLIP modificado con la capa especificada establecida como la última. Esta salida permite un uso o análisis adicional del modelo ajustado.

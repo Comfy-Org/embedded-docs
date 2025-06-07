@@ -6,13 +6,13 @@ This node is designed to modify the conditioning of a generative model by applyi
 
 | Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
-| `conditioning` | `CONDITIONING` | The conditioning data to be modified. It serves as the basis for applying the mask and strength adjustments. |
+| `CONDITIONING` | CONDITIONING | The conditioning data to be modified. It serves as the basis for applying the mask and strength adjustments. |
 | `mask`        | `MASK`       | A mask tensor that specifies the areas within the conditioning to be modified. |
 | `strength`    | `FLOAT`      | The strength of the mask's effect on the conditioning, allowing for fine-tuning of the applied modifications. |
-| `set_cond_area` | `COMBO[STRING]` | Determines whether the mask's effect is applied to the default area or bounded by the mask itself, offering flexibility in targeting specific regions. |
+| `set_cond_area` | COMBO[STRING] | Determines whether the mask's effect is applied to the default area or bounded by the mask itself, offering flexibility in targeting specific regions. |
 
 ## Outputs
 
 | Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
-| `conditioning` | `CONDITIONING` | The modified conditioning data, with the mask and strength adjustments applied. |
+| `CONDITIONING` | CONDITIONING | The modified conditioning data, with the mask and strength adjustments applied. |

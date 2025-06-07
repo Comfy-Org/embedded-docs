@@ -10,6 +10,6 @@ Le nœud LatentBatch est conçu pour fusionner deux ensembles d'échantillons la
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | L'ensemble fusionné d'échantillons latents, maintenant combiné en un seul lot pour un traitement ultérieur. |

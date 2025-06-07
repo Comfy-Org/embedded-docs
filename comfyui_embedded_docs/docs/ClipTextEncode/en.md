@@ -6,13 +6,13 @@ For example, if the corresponding model name is `EasyNegative`, you can use `emb
 
 ## Inputs
 
-| Parameter | Data Type | Description |
+| Parameter | Data Type   | Description |
 |-----------|-------------|-------------|
 | `text`    | `STRING`    | The 'text' parameter is the textual input that will be encoded. It plays a crucial role in determining the output conditioning vector, as it is the primary source of information for the encoding process. |
-| `clip`    | `CLIP`      | The 'clip' parameter represents the CLIP model used for text tokenization and encoding. It is essential for converting the textual input into a conditioning vector, influencing the quality and relevance of the generated output. |
+| `clip`    | CLIP      | The 'clip' parameter represents the CLIP model used for text tokenization and encoding. It is essential for converting the textual input into a conditioning vector, influencing the quality and relevance of the generated output. |
 
 ## Outputs
 
-| Parameter | Data Type | Description |
+| Parameter | Data Type    | Description |
 |-----------|--------------|-------------|
-| `conditioning` | `CONDITIONING` | The output 'conditioning' is a vector representation of the input text, encoded by the CLIP model. It serves as a crucial component for guiding generative models in producing relevant and coherent outputs. |
+| `CONDITIONING` | CONDITIONING | The output 'conditioning' is a vector representation of the input text, encoded by the CLIP model. It serves as a crucial component for guiding generative models in producing relevant and coherent outputs. |

@@ -10,7 +10,7 @@ This node is designed for saving a sequence of images as an animated WEBP file. 
 | `fps`             | `FLOAT`     | The frames per second rate for the animation, influencing the playback speed. |
 | `lossless`        | `BOOLEAN`   | A boolean indicating whether to use lossless compression, affecting the file size and quality of the animation. |
 | `quality`         | `INT`       | A value between 0 and 100 that sets the compression quality level, with higher values resulting in better image quality but larger file sizes. |
-| `method`          | `COMBO[STRING]` | Specifies the compression method to use, which can impact the encoding speed and file size. |
+| `method`          | COMBO[STRING] | Specifies the compression method to use, which can impact the encoding speed and file size. |
 
 ## Outputs
 

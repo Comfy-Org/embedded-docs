@@ -3,7 +3,7 @@ ModelMergeBlocks está diseñado para operaciones avanzadas de fusión de modelo
 
 ## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|------------|-------------|
 | `model1`  | `MODEL`    | El primer modelo a fusionar. Sirve como el modelo base sobre el cual se aplican parches del segundo modelo. |
 | `model2`  | `MODEL`    | El segundo modelo del cual se extraen parches y se aplican al primer modelo, según las proporciones de mezcla especificadas. |
@@ -13,6 +13,6 @@ ModelMergeBlocks está diseñado para operaciones avanzadas de fusión de modelo
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|------------|-------------|
 | `model`   | `MODEL`    | El modelo resultante de la fusión, que es un híbrido de los dos modelos de entrada con parches aplicados según las proporciones de mezcla especificadas. |

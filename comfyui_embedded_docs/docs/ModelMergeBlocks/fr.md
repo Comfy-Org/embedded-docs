@@ -3,7 +3,7 @@ ModelMergeBlocks est conçu pour des opérations avancées de fusion de modèles
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les patchs du second modèle sont appliqués. |
 | `model2`  | `MODEL`     | Le second modèle à partir duquel les patchs sont extraits et appliqués au premier modèle, selon les ratios de mélange spécifiés. |
@@ -13,6 +13,6 @@ ModelMergeBlocks est conçu pour des opérations avancées de fusion de modèles
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | Le modèle fusionné résultant, qui est un hybride des deux modèles d'entrée avec des patchs appliqués selon les ratios de mélange spécifiés. |
+| `model`   | MODEL     | Le modèle fusionné résultant, qui est un hybride des deux modèles d'entrée avec des patchs appliqués selon les ratios de mélange spécifiés. |

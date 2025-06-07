@@ -9,6 +9,6 @@ Ce nœud est conçu pour modifier le comportement d'un modèle CLIP en définiss
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `clip`    | `CLIP`      | Le modèle CLIP modifié avec la couche spécifiée définie comme la dernière. Cette sortie permet une utilisation ou une analyse ultérieure du modèle ajusté. |
+| `clip`    | CLIP      | Le modèle CLIP modifié avec la couche spécifiée définie comme la dernière. Cette sortie permet une utilisation ou une analyse ultérieure du modèle ajusté. |

@@ -18,4 +18,4 @@ This node is designed to encode text inputs using the CLIP model specifically ta
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | The output of the node, which includes the encoded text along with additional information necessary for image generation or manipulation tasks. |
+| `CONDITIONING` | CONDITIONING | The output of the node, which includes the encoded text along with additional information necessary for image generation or manipulation tasks. |

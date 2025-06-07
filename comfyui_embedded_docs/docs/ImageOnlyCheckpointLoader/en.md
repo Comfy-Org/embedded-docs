@@ -6,12 +6,12 @@ This node specializes in loading checkpoints specifically for image-based models
 
 | Field      | Data Type | Description                                                                       |
 |------------|-------------|-----------------------------------------------------------------------------------|
-| `ckpt_name`| `COMBO[STRING]` | Specifies the name of the checkpoint to load, crucial for identifying and retrieving the correct checkpoint file from a predefined list. |
+| `ckpt_name`| COMBO[STRING] | Specifies the name of the checkpoint to load, crucial for identifying and retrieving the correct checkpoint file from a predefined list. |
 
 ## Outputs
 
 | Field     | Data Type | Description                                                                                   |
 |-----------|-------------|-----------------------------------------------------------------------------------------------|
-| `model`   | `MODEL`     | Returns the main model loaded from the checkpoint, configured for image processing within video generation contexts. |
+| `model`   | MODEL     | Returns the main model loaded from the checkpoint, configured for image processing within video generation contexts. |
 | `clip_vision` | `CLIP_VISION` | Provides the CLIP vision component from the checkpoint, tailored for image understanding and feature extraction. |
-| `vae`     | `VAE`       | Delivers the Variational Autoencoder (VAE) component, essential for image manipulation and generation tasks. |
+| `vae`     | VAE       | Delivers the Variational Autoencoder (VAE) component, essential for image manipulation and generation tasks. |

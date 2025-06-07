@@ -3,7 +3,7 @@ Le SDTurboScheduler est conçu pour générer une séquence de valeurs sigma pou
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 | --- | --- | --- |
 | `model` | `MODEL` | Le paramètre model spécifie le modèle génératif à utiliser pour la génération des valeurs sigma. Il est crucial pour déterminer le comportement d'échantillonnage spécifique et les capacités du planificateur. |
 | `steps` | `INT` | Le paramètre steps détermine la longueur de la séquence sigma à générer, influençant directement la granularité du processus de débruitage. |
@@ -11,6 +11,6 @@ Le SDTurboScheduler est conçu pour générer une séquence de valeurs sigma pou
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 | --- | --- | --- |
 | `sigmas` | `SIGMAS` | Une séquence de valeurs sigma générées en fonction du modèle spécifié, des étapes et du niveau de débruitage. Ces valeurs sont essentielles pour contrôler le processus de débruitage dans la génération d'images. |

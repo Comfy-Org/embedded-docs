@@ -21,7 +21,7 @@ Este nodo puede verse como un "traductor de lenguaje" que convierte el texto de 
 
 | Parámetro | Tipo de Datos Comfy | Descripción |
 | --------- | ------------------ | ----------- |
-| `conditioning` | `CONDITIONING` | Salida condicional codificada para procesamiento posterior en tareas de generación. |
+| `CONDITIONING` | CONDITIONING | Salida condicional codificada para procesamiento posterior en tareas de generación. |
 
 ## Métodos
 

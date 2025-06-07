@@ -10,6 +10,6 @@ Le nœud LatentSubtract est conçu pour soustraire une représentation latente d
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | Le résultat de la soustraction du second ensemble d'échantillons latents du premier. Cette représentation latente modifiée peut être utilisée pour d'autres tâches génératives. |

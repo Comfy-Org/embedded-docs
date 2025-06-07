@@ -13,6 +13,6 @@ Le nœud LatentComposite est conçu pour mélanger ou fusionner deux représenta
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est une représentation latente composite, mélangeant les caractéristiques des latents 'samples_to' et 'samples_from' en fonction des coordonnées spécifiées et de l'option de redimensionnement. |

@@ -15,4 +15,4 @@ ModelMergeBlocks is designed for advanced model merging operations, allowing for
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | The resulting merged model, which is a hybrid of the two input models with patches applied according to the specified blending ratios. |
+| `model`   | MODEL     | The resulting merged model, which is a hybrid of the two input models with patches applied according to the specified blending ratios. |

@@ -6,13 +6,13 @@ Par exemple, si le nom du modèle correspondant est `EasyNegative`, vous pouvez 
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `text`    | `STRING`    | Le paramètre 'text' est l'entrée textuelle qui sera encodée. Il joue un rôle crucial dans la détermination du vecteur de conditionnement de sortie, car il est la source principale d'information pour le processus d'encodage. |
-| `clip`    | `CLIP`      | Le paramètre 'clip' représente le modèle CLIP utilisé pour la tokenisation et l'encodage du texte. Il est essentiel pour convertir l'entrée textuelle en un vecteur de conditionnement, influençant la qualité et la pertinence de la sortie générée. |
+| `clip`    | CLIP      | Le paramètre 'clip' représente le modèle CLIP utilisé pour la tokenisation et l'encodage du texte. Il est essentiel pour convertir l'entrée textuelle en un vecteur de conditionnement, influençant la qualité et la pertinence de la sortie générée. |
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|--------------|-------------|
-| `conditioning` | `CONDITIONING` | La sortie 'conditioning' est une représentation vectorielle du texte d'entrée, encodée par le modèle CLIP. Elle sert de composant crucial pour guider les modèles génératifs dans la production de sorties pertinentes et cohérentes. |
+| `CONDITIONING` | CONDITIONING | La sortie 'conditioning' est une représentation vectorielle du texte d'entrée, encodée par le modèle CLIP. Elle sert de composant crucial pour guider les modèles génératifs dans la production de sorties pertinentes et cohérentes. |

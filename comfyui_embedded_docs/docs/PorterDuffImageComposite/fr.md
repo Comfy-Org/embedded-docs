@@ -9,7 +9,7 @@ Le nœud PorterDuffImageComposite est conçu pour effectuer la composition d'ima
 | `source_alpha` | `MASK` | Le canal alpha de l'image source, qui spécifie la transparence de chaque pixel de l'image source. Il affecte la manière dont l'image source se fond avec l'image de destination. |
 | `destination` | `IMAGE` | Le tenseur d'image de destination qui sert de toile de fond sur laquelle l'image source est composée. Il contribue à l'image composée finale en fonction du mode de fusion. |
 | `destination_alpha` | `MASK` | Le canal alpha de l'image de destination, définissant la transparence des pixels de l'image de destination. Il influence la fusion des images source et destination. |
-| `mode` | `COMBO[STRING]` | Le mode de composition Porter-Duff à appliquer, qui détermine comment les images source et destination sont fusionnées. Chaque mode crée des effets visuels différents. |
+| `mode` | COMBO[STRING] | Le mode de composition Porter-Duff à appliquer, qui détermine comment les images source et destination sont fusionnées. Chaque mode crée des effets visuels différents. |
 
 ## Sorties
 

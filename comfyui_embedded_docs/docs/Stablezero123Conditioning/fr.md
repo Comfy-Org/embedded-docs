@@ -16,7 +16,7 @@ Ce nœud est conçu pour traiter et conditionner les données à utiliser dans l
 
 ## Sorties
 
-| Paramètre     | Data Type | Description |
+| Paramètre     | Type de Donnée | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Génère des vecteurs de conditionnement positifs, aidant au renforcement des caractéristiques positives du modèle. |
 | `negative`    | `CONDITIONING` | Produit des vecteurs de conditionnement négatifs, aidant le modèle à éviter certaines caractéristiques. |

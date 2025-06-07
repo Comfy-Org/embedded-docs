@@ -21,7 +21,7 @@ Ce nœud peut être considéré comme un "traducteur de langage" qui convertit l
 
 | Paramètre | Type de Données Comfy | Description |
 | --------- | -------------------- | ----------- |
-| `conditioning` | `CONDITIONING` | Sortie conditionnelle encodée pour un traitement ultérieur dans les tâches de génération. |
+| `CONDITIONING` | CONDITIONING | Sortie conditionnelle encodée pour un traitement ultérieur dans les tâches de génération. |
 
 ## Méthodes
 

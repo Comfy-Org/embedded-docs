@@ -11,4 +11,4 @@
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | 组合conditioning_1和conditioning_2的结果，封装了合并后的信息。 |
+| `CONDITIONING` | CONDITIONING | 组合conditioning_1和conditioning_2的结果，封装了合并后的信息。 |

@@ -13,7 +13,7 @@ Este nodo se especializa en mejorar la resolución de las imágenes a través de
 
 ## Salidas
 
-| Parámetro     | Tipo Comfy  | Descripción |
+| Parámetro     | Tipo de Dato | Descripción |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Los elementos de condicionamiento positivo refinados resultantes del proceso de aumento. |
 | `negative`    | `CONDITIONING` | Los elementos de condicionamiento negativo refinados resultantes del proceso de aumento. |

@@ -11,4 +11,4 @@
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | 输出是统一的条件向量集，由'conditioning_from'向量连接到'conditioning_to'向量的结果。 |
+| `CONDITIONING` | CONDITIONING | 输出是统一的条件向量集，由'conditioning_from'向量连接到'conditioning_to'向量的结果。 |

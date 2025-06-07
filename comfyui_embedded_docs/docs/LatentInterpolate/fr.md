@@ -11,6 +11,6 @@ Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deu
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est un nouvel ensemble d'échantillons latents qui représente un état interpolé entre les deux ensembles d'entrée, basé sur le ratio spécifié. |

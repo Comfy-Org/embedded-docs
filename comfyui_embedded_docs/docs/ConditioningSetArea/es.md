@@ -4,7 +4,7 @@ Este nodo está diseñado para modificar la información de condicionamiento est
 
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Los datos de condicionamiento a modificar. Sirve como base para aplicar ajustes espaciales. |
+| `CONDITIONING` | CONDITIONING | Los datos de condicionamiento a modificar. Sirve como base para aplicar ajustes espaciales. |
 | `width`   | `INT`      | Especifica el ancho del área a establecer dentro del contexto de condicionamiento, influyendo en el alcance horizontal del ajuste. |
 | `height`  | `INT`      | Determina la altura del área a establecer, afectando la extensión vertical de la modificación de condicionamiento. |
 | `x`       | `INT`      | El punto de inicio horizontal del área a establecer, posicionando el ajuste dentro del contexto de condicionamiento. |
@@ -15,4 +15,4 @@ Este nodo está diseñado para modificar la información de condicionamiento est
 
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Los datos de condicionamiento modificados, reflejando los ajustes y configuraciones de área especificados. |
+| `CONDITIONING` | CONDITIONING | Los datos de condicionamiento modificados, reflejando los ajustes y configuraciones de área especificados. |

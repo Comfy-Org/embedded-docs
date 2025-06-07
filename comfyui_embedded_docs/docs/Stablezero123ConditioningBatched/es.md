@@ -3,7 +3,7 @@ Este nodo está diseñado para procesar información de condicionamiento de mane
 
 ## Entradas
 
-| Parámetro             | Tipo Comfy  | Descripción |
+| Parámetro             | Tipo de Dato | Descripción |
 |----------------------|--------------|-------------|
 | `clip_vision`         | `CLIP_VISION` | Las incrustaciones de visión CLIP que proporcionan contexto visual para el proceso de condicionamiento. |
 | `init_image`          | `IMAGE`      | La imagen inicial sobre la cual se va a condicionar, sirviendo como punto de partida para el proceso de generación. |
@@ -18,7 +18,7 @@ Este nodo está diseñado para procesar información de condicionamiento de mane
 
 ## Salidas
 
-| Parámetro     | Tipo Comfy  | Descripción |
+| Parámetro     | Tipo de Dato | Descripción |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | La salida de condicionamiento positiva, adaptada para promover ciertas características o aspectos en el contenido generado. |
 | `negative`    | `CONDITIONING` | La salida de condicionamiento negativa, adaptada para despromover ciertas características o aspectos en el contenido generado. |

@@ -10,6 +10,6 @@ Le nœud LatentMultiply est conçu pour mettre à l'échelle la représentation 
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est une version modifiée des échantillons latents d'entrée, mise à l'échelle par le multiplicateur spécifié. Cela permet l'exploration de variations au sein de l'espace latent en ajustant l'intensité de ses caractéristiques. |

@@ -3,7 +3,7 @@ Le nœud SolidMask génère un masque uniforme avec une valeur spécifiée sur t
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `value`   | FLOAT       | Spécifie la valeur d'intensité du masque, affectant son apparence générale et son utilité dans les opérations ultérieures. |
 | `width`   | INT         | Détermine la largeur du masque généré, influençant directement sa taille et son rapport d'aspect. |
@@ -11,6 +11,6 @@ Le nœud SolidMask génère un masque uniforme avec une valeur spécifiée sur t
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | Produit un masque uniforme avec les dimensions et la valeur spécifiées. |

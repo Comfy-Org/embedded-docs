@@ -4,7 +4,7 @@ This node is designed to modify the conditioning information by setting specific
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | The conditioning data to be modified. It serves as the base for applying spatial adjustments. |
+| `CONDITIONING` | CONDITIONING | The conditioning data to be modified. It serves as the base for applying spatial adjustments. |
 | `width`   | `INT`      | Specifies the width of the area to be set within the conditioning context, influencing the horizontal scope of the adjustment. |
 | `height`  | `INT`      | Determines the height of the area to be set, affecting the vertical extent of the conditioning modification. |
 | `x`       | `INT`      | The horizontal starting point of the area to be set, positioning the adjustment within the conditioning context. |
@@ -15,4 +15,4 @@ This node is designed to modify the conditioning information by setting specific
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | The modified conditioning data, reflecting the specified area settings and adjustments. |
+| `CONDITIONING` | CONDITIONING | The modified conditioning data, reflecting the specified area settings and adjustments. |

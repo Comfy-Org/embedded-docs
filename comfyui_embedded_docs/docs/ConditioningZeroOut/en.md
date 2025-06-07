@@ -4,10 +4,10 @@ This node zeroes out specific elements within the conditioning data structure, e
 
 | Parameter | Comfy dtype                | Description |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | The conditioning data structure to be modified. This node zeroes out the 'pooled_output' elements within each conditioning entry, if present. |
+| `CONDITIONING` | CONDITIONING | The conditioning data structure to be modified. This node zeroes out the 'pooled_output' elements within each conditioning entry, if present. |
 
 ## Outputs
 
 | Parameter | Comfy dtype                | Description |
 |-----------|----------------------------|-------------|
-| `conditioning` | `CONDITIONING` | The modified conditioning data structure, with 'pooled_output' elements set to zero where applicable. |
+| `CONDITIONING` | CONDITIONING | The modified conditioning data structure, with 'pooled_output' elements set to zero where applicable. |

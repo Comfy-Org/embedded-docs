@@ -10,7 +10,7 @@ Este nodo está diseñado para guardar una secuencia de imágenes como un archiv
 | `fps`             | `FLOAT`     | La tasa de fotogramas por segundo para la animación, influyendo en la velocidad de reproducción. |
 | `lossless`        | `BOOLEAN`   | Un booleano que indica si se debe usar compresión sin pérdida, afectando el tamaño del archivo y la calidad de la animación. |
 | `quality`         | `INT`       | Un valor entre 0 y 100 que establece el nivel de calidad de compresión, con valores más altos resultando en mejor calidad de imagen pero tamaños de archivo más grandes. |
-| `method`          | `COMBO[STRING]` | Especifica el método de compresión a usar, lo cual puede impactar la velocidad de codificación y el tamaño del archivo. |
+| `method`          | COMBO[STRING] | Especifica el método de compresión a usar, lo cual puede impactar la velocidad de codificación y el tamaño del archivo. |
 
 ## Salidas
 

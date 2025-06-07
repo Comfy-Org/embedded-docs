@@ -11,7 +11,7 @@ If you need to load multiple LoRA models, you can directly chain multiple nodes 
 
 ## Inputs
 
-| Parameter Name | Data Type | Function |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
 | `model` | MODEL | Typically used to connect to the base model |
 | `clip` | CLIP | Typically used to connect to the CLIP model |
@@ -21,7 +21,7 @@ If you need to load multiple LoRA models, you can directly chain multiple nodes 
 
 ## Outputs
 
-| Parameter Name | Data Type | Function |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
 | `model` | MODEL | The model with LoRA adjustments applied |
 | `clip` | CLIP | The CLIP instance with LoRA adjustments applied |

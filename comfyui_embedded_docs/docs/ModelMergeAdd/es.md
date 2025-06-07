@@ -3,13 +3,13 @@ El nodo Fusión de Modelos por Suma está diseñado para fusionar dos modelos a�
 
 ## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | El primer modelo que se clonará y al que se añadirán los parches del segundo modelo. Sirve como el modelo base para el proceso de fusión. |
 | `model2`  | `MODEL`     | El segundo modelo del cual se extraen los parches clave y se añaden al primer modelo. Contribuye con características o comportamientos adicionales al modelo fusionado. |
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | El resultado de fusionar dos modelos añadiendo parches clave del segundo modelo al primero. Este modelo fusionado combina características o comportamientos de ambos modelos. |
+| `model`   | MODEL     | El resultado de fusionar dos modelos añadiendo parches clave del segundo modelo al primero. Este modelo fusionado combina características o comportamientos de ambos modelos. |

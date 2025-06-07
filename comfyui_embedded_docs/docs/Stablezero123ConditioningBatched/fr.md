@@ -18,7 +18,7 @@ Ce nœud est conçu pour traiter les informations de conditionnement de manière
 
 ## Sorties
 
-| Paramètre     | Data Type | Description |
+| Paramètre     | Type de Donnée | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | La sortie de conditionnement positive, adaptée pour promouvoir certaines caractéristiques ou aspects dans le contenu généré. |
 | `negative`    | `CONDITIONING` | La sortie de conditionnement négative, adaptée pour réduire certaines caractéristiques ou aspects dans le contenu généré. |

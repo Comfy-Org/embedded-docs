@@ -12,7 +12,7 @@ El nodo InpaintModelConditioning está diseñado para facilitar el proceso de co
 
 ## Salidas
 
-| Parámetro | Tipo Comfy  | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|--------------|-------------|
 | `positive`| `CONDITIONING` | La información de condicionamiento positivo modificada después del procesamiento, lista para ser aplicada al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones positivas especificadas. |
 | `negative`| `CONDITIONING` | La información de condicionamiento negativo modificada después del procesamiento, lista para ser aplicada al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones negativas especificadas. |

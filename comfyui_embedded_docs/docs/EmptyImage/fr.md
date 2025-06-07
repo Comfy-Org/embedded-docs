@@ -11,6 +11,6 @@ Le nœud `EmptyImage` est conçu pour générer des images vides de dimensions e
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La sortie est un tenseur représentant l'image ou les images générées, avec les dimensions et la couleur spécifiées. |

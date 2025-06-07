@@ -2,7 +2,7 @@ Le nœud CropMask est conçu pour recadrer une zone spécifiée à partir d'un m
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | L'entrée du masque représente l'image du masque à recadrer. Elle est essentielle pour définir la zone à extraire en fonction des coordonnées et des dimensions spécifiées. |
 | `x`       | INT         | La coordonnée x spécifie le point de départ sur l'axe horizontal à partir duquel le recadrage doit commencer. |
@@ -12,6 +12,6 @@ Le nœud CropMask est conçu pour recadrer une zone spécifiée à partir d'un m
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | La sortie est un masque recadré, qui est une portion du masque original définie par les coordonnées et dimensions spécifiées. |

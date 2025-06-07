@@ -2,15 +2,15 @@ El nodo CheckpointLoader está diseñado para operaciones de carga avanzadas, es
 
 ## Entradas
 
-| Parámetro    | Tipo Comfy  | Descripción |
+| Parámetro    | Tipo de Dato | Descripción |
 |--------------|--------------|-------------|
-| `config_name` | `COMBO[STRING]` | Especifica el nombre del archivo de configuración a utilizar. Esto es crucial para determinar los parámetros y configuraciones del modelo, afectando el comportamiento y rendimiento del mismo. |
-| `ckpt_name`  | `COMBO[STRING]` | Indica el nombre del archivo de punto de control a cargar. Esto influye directamente en el estado del modelo que se está inicializando, impactando sus pesos y sesgos iniciales. |
+| `config_name` | COMBO[STRING] | Especifica el nombre del archivo de configuración a utilizar. Esto es crucial para determinar los parámetros y configuraciones del modelo, afectando el comportamiento y rendimiento del mismo. |
+| `ckpt_name`  | COMBO[STRING] | Indica el nombre del archivo de punto de control a cargar. Esto influye directamente en el estado del modelo que se está inicializando, impactando sus pesos y sesgos iniciales. |
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | Representa el modelo principal cargado desde el punto de control, listo para operaciones o inferencias adicionales. |
-| `clip`    | `CLIP`      | Proporciona el componente del modelo CLIP, si está disponible y solicitado, cargado desde el punto de control. |
-| `vae`     | `VAE`       | Entrega el componente del modelo VAE, si está disponible y solicitado, cargado desde el punto de control. |
+| `model`   | MODEL     | Representa el modelo principal cargado desde el punto de control, listo para operaciones o inferencias adicionales. |
+| `clip`    | CLIP      | Proporciona el componente del modelo CLIP, si está disponible y solicitado, cargado desde el punto de control. |
+| `vae`     | VAE       | Entrega el componente del modelo VAE, si está disponible y solicitado, cargado desde el punto de control. |

@@ -6,7 +6,7 @@ The CLIPVisionLoader node is designed for loading CLIP Vision models from specif
 
 | Field       | Data Type | Description                                                                       |
 |-------------|-------------|-----------------------------------------------------------------------------------|
-| `clip_name` | `COMBO[STRING]` | Specifies the name of the CLIP Vision model to be loaded, used to locate the model file within a predefined directory structure. |
+| `clip_name` | COMBO[STRING] | Specifies the name of the CLIP Vision model to be loaded, used to locate the model file within a predefined directory structure. |
 
 ## Outputs
 

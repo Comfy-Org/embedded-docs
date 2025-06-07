@@ -4,7 +4,7 @@ The KSamplerSelect node is designed to select a specific sampler based on the pr
 
 | Parameter         | Data Type | Description                                                                                      |
 |-------------------|-------------|------------------------------------------------------------------------------------------------|
-| `sampler_name`    | `COMBO[STRING]` | Specifies the name of the sampler to be selected. This parameter determines which sampling strategy will be used, impacting the overall sampling behavior and results. |
+| `sampler_name`    | COMBO[STRING] | Specifies the name of the sampler to be selected. This parameter determines which sampling strategy will be used, impacting the overall sampling behavior and results. |
 
 ## Outputs
 

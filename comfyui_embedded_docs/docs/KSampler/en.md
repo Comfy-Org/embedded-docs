@@ -19,7 +19,7 @@ First, it adds noise to the original image data according to the set **seed** an
 
 ## Output
 
-| Parameter Name | Function                                   |
+| Parameter | Function                                   |
 | -------------- | ------------------------------------------ |
 | Latent         | Outputs the latent after sampler denoising |
 

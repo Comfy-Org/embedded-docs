@@ -6,15 +6,15 @@ Conditional Data Generation: Outputs processed conditional data, which will be u
 
 ## Inputs
 
-| Parameter Name | Data Type | Function |
-|----------------|-----------|----------|
-| clip           | CLIP      | CLIP model object input, used for text encoding and processing, typically used with DualCLIPLoader |
-| clip_l         | STRING    | Multi-line text input, enter text similar to tag information for CLIP model encoding |
-| t5xxl          | STRING    | Multi-line text input, enter natural language prompt descriptions for T5XXL model encoding |
-| guidance       | FLOAT     | Floating-point value, used to guide the generation process; higher values increase image-prompt matching but may reduce creativity |
+| Parameter  | Data Type | Description |
+|------------|-----------|-------------|
+| `clip`     | CLIP      | CLIP model object input, used for text encoding and processing, typically used with DualCLIPLoader |
+| `clip_l`   | STRING    | Multi-line text input, enter text similar to tag information for CLIP model encoding |
+| `t5xxl`    | STRING    | Multi-line text input, enter natural language prompt descriptions for T5XXL model encoding |
+| `guidance` | FLOAT     | Floating-point value, used to guide the generation process; higher values increase image-prompt matching but may reduce creativity |
 
 ## Outputs
 
-| Parameter Name | Data Type | Function |
-|----------------|-----------|----------|
-| CONDITIONING   | Condition | Contains conditional data (cond) for subsequent conditional generation tasks |
+| Parameter      | Data Type | Description |
+|----------------|-----------|-------------|
+| `CONDITIONING` | Condition | Contains conditional data (cond) for subsequent conditional generation tasks |

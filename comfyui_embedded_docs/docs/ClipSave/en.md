@@ -2,10 +2,10 @@ The CLIPSave node is designed for saving CLIP models along with additional infor
 
 ## Inputs
 
-| Parameter | Data Type | Description |
+| Parameter | Data Type   | Description |
 |-----------|-------------|-------------|
-| `clip`    | `CLIP`      | The CLIP model to be saved. This parameter is crucial as it represents the model whose state is to be serialized and stored. |
-| `filename_prefix` | `STRING` | A prefix for the filename under which the model and its additional information will be saved. This parameter allows for organized storage and easy retrieval of saved models. |
+| `clip`    | CLIP      | The CLIP model to be saved. This parameter is crucial as it represents the model whose state is to be serialized and stored. |
+| `filename_prefix` | STRING   | A prefix for the filename under which the model and its additional information will be saved. This parameter allows for organized storage and easy retrieval of saved models. |
 
 ## Outputs
 

@@ -6,7 +6,7 @@ The StyleModelLoader node is designed to load a style model from a specified pat
 
 | Parameter Name      | Comfy dtype     | Python dtype | Description                                                                                       |
 |---------------------|-----------------|--------------|---------------------------------------------------------------------------------------------------|
-| `style_model_name`  | `COMBO[STRING]` | `str`        | Specifies the name of the style model to be loaded. This name is used to locate the model file within a predefined directory structure, allowing for the dynamic loading of different style models based on user input or application needs. |
+| `style_model_name`  | COMBO[STRING] | `str`        | Specifies the name of the style model to be loaded. This name is used to locate the model file within a predefined directory structure, allowing for the dynamic loading of different style models based on user input or application needs. |
 
 ## Outputs
 

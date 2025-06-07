@@ -2,9 +2,9 @@ Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la 
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Représente les éléments de conditionnement à modifier, servant de base pour appliquer les ajustements de zone et de force. |
+| `CONDITIONING` | CONDITIONING | Représente les éléments de conditionnement à modifier, servant de base pour appliquer les ajustements de zone et de force. |
 | `width`   | `FLOAT`     | Spécifie la largeur de la zone en pourcentage de la largeur totale de l'image, influençant la part de l'image affectée horizontalement par le conditionnement. |
 | `height`  | `FLOAT`     | Détermine la hauteur de la zone en pourcentage de la hauteur totale de l'image, affectant l'étendue verticale de l'influence du conditionnement. |
 | `x`       | `FLOAT`     | Indique le point de départ horizontal de la zone en pourcentage de la largeur totale de l'image, positionnant l'effet de conditionnement. |
@@ -13,6 +13,6 @@ Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la 
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `conditioning` | `CONDITIONING` | Retourne les éléments de conditionnement modifiés avec des paramètres de zone et de force mis à jour, prêts pour un traitement ou une application ultérieure. |
+| `CONDITIONING` | CONDITIONING | Retourne les éléments de conditionnement modifiés avec des paramètres de zone et de force mis à jour, prêts pour un traitement ou une application ultérieure. |

@@ -2,7 +2,7 @@ El nodo `EmptyHunyuanLatentVideo` es similar al nodo `EmptyLatentImage`. Puedes 
 
 ## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|------------|-------------|
 | width | INT | Ancho del video, por defecto 848, mínimo 16, máximo nodes.MAX_RESOLUTION, paso de 16. |
 | height | INT | Altura del video, por defecto 480, mínimo 16, máximo nodes.MAX_RESOLUTION, paso de 16. |
@@ -11,6 +11,6 @@ El nodo `EmptyHunyuanLatentVideo` es similar al nodo `EmptyLatentImage`. Puedes 
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|------------|-------------|
 | samples | LATENT | Muestras de video latentes generadas que contienen tensores nulos, listas para el procesamiento y generación. |

@@ -3,7 +3,7 @@ Le nœud LatentCrop est conçu pour effectuer des opérations de recadrage sur l
 
 ## Entrées
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `samples` | `LATENT`    | Le paramètre 'samples' représente les représentations latentes à recadrer. Il est crucial pour définir les données sur lesquelles l'opération de recadrage sera effectuée. |
 | `width`   | `INT`       | Spécifie la largeur de la zone de recadrage. Elle influence directement les dimensions de la représentation latente de sortie. |
@@ -13,6 +13,6 @@ Le nœud LatentCrop est conçu pour effectuer des opérations de recadrage sur l
 
 ## Sorties
 
-| Paramètre | Data Type | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est une représentation latente modifiée avec le recadrage spécifié appliqué. |

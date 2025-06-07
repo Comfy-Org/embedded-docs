@@ -8,8 +8,8 @@ El nodo KSampler está diseñado para operaciones avanzadas de muestreo dentro d
 | `seed`          | `INT`       | Controla la aleatoriedad del proceso de muestreo, asegurando la reproducibilidad de los resultados cuando se establece en un valor específico.                         |
 | `steps`         | `INT`       | Determina el número de pasos a realizar en el proceso de muestreo, afectando el detalle y calidad de las muestras generadas.           |
 | `cfg`           | `FLOAT`     | Ajusta el factor de condicionamiento, influyendo en la dirección y fuerza del condicionamiento aplicado durante el muestreo.                     |
-| `sampler_name`  | `COMBO[STRING]` | Selecciona el algoritmo de muestreo específico a utilizar, impactando el comportamiento y resultado del proceso de muestreo.                     |
-| `scheduler`     | `COMBO[STRING]` | Elige el algoritmo de programación para controlar el proceso de muestreo, afectando la progresión y dinámica del muestreo.           |
+| `sampler_name`  | COMBO[STRING] | Selecciona el algoritmo de muestreo específico a utilizar, impactando el comportamiento y resultado del proceso de muestreo.                     |
+| `scheduler`     | COMBO[STRING] | Elige el algoritmo de programación para controlar el proceso de muestreo, afectando la progresión y dinámica del muestreo.           |
 | `positive`      | `CONDITIONING` | Define el condicionamiento positivo para guiar el muestreo hacia atributos o características deseadas.                                         |
 | `negative`      | `CONDITIONING` | Especifica el condicionamiento negativo para desviar el muestreo de ciertos atributos o características.                                     |
 | `latent_image`  | `LATENT`    | Proporciona una representación de espacio latente para ser utilizada como punto de partida o referencia para el proceso de muestreo.                            |

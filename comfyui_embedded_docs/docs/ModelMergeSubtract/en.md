@@ -13,4 +13,4 @@ This node is designed for advanced model merging operations, specifically to sub
 
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `model`   | `MODEL`     | The resulting model after subtracting the parameters of one model from another, scaled by the multiplier. |
+| `model`   | MODEL     | The resulting model after subtracting the parameters of one model from another, scaled by the multiplier. |

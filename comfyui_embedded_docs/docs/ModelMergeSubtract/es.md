@@ -3,7 +3,7 @@ Este nodo está diseñado para operaciones avanzadas de fusión de modelos, espe
 
 ## Entradas
 
-| Parámetro     | Tipo Comfy | Descripción |
+| Parámetro     | Tipo de Dato | Descripción |
 |---------------|------------|-------------|
 | `model1`      | `MODEL`    | El modelo base del cual se restarán los parámetros. |
 | `model2`      | `MODEL`    | El modelo cuyos parámetros se restarán del modelo base. |
@@ -11,6 +11,6 @@ Este nodo está diseñado para operaciones avanzadas de fusión de modelos, espe
 
 ## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|------------|-------------|
 | `model`   | `MODEL`    | El modelo resultante después de restar los parámetros de un modelo de otro, escalado por el multiplicador.
