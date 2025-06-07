@@ -1,6 +1,7 @@
 
 Ce nœud est conçu pour modifier le comportement d'échantillonnage d'un modèle en appliquant une stratégie d'échantillonnage discret. Il permet la sélection de différentes méthodes d'échantillonnage, telles que epsilon, v_prediction, lcm, ou x0, et ajuste éventuellement la stratégie de réduction de bruit du modèle en fonction du paramètre zero-shot noise ratio (zsnr).
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Python dtype     | Description |
 |-----------|--------------|-------------------|-------------|
@@ -8,7 +9,7 @@ Ce nœud est conçu pour modifier le comportement d'échantillonnage d'un modèl
 | `sampling`| `COMBO[STRING]` | `str`           | Spécifie la méthode d'échantillonnage discret à appliquer au modèle. Le choix de la méthode affecte la manière dont le modèle génère des échantillons, offrant différentes stratégies d'échantillonnage. |
 | `zsnr`    | `BOOLEAN`   | `bool`           | Un indicateur booléen qui, lorsqu'il est activé, ajuste la stratégie de réduction de bruit du modèle en fonction du zero-shot noise ratio. Cela peut influencer la qualité et les caractéristiques des échantillons générés. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Python dtype     | Description |
 |-----------|-------------|-------------------|-------------|

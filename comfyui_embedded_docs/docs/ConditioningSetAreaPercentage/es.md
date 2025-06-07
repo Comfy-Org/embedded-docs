@@ -1,6 +1,6 @@
 El nodo ConditioningSetAreaPercentage se especializa en ajustar el área de influencia de los elementos de condicionamiento basado en valores porcentuales. Permite especificar las dimensiones y la posición del área como porcentajes del tamaño total de la imagen, junto con un parámetro de fuerza para modular la intensidad del efecto de condicionamiento.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ El nodo ConditioningSetAreaPercentage se especializa en ajustar el área de infl
 | `y`       | `FLOAT`     | Especifica el punto de inicio vertical del área como un porcentaje de la altura total de la imagen, posicionando el efecto de condicionamiento. |
 | `strength`| `FLOAT`     | Controla la intensidad del efecto de condicionamiento dentro del área especificada, permitiendo un ajuste fino de su impacto. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

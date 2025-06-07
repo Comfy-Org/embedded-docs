@@ -1,6 +1,6 @@
-The EmptyImage node is designed to generate blank images of specified dimensions and color. It allows for the creation of uniform color images that can serve as backgrounds or placeholders in various image processing tasks.
+The `EmptyImage` node is designed to generate blank images of specified dimensions and color. It allows for the creation of uniform color images that can serve as backgrounds or placeholders in various image processing tasks.
 
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -9,7 +9,7 @@ The EmptyImage node is designed to generate blank images of specified dimensions
 | `batch_size` | `INT` | Indicates the number of images to generate in a single batch. This allows for the creation of multiple images at once. |
 | `color`   | `INT`      | Defines the color of the generated image using a hexadecimal value, allowing for customization of the image's appearance. This parameter enables the selection of a wide range of colors. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

@@ -1,6 +1,7 @@
 
 Le nœud LatentUpscale est conçu pour agrandir les représentations latentes des images. Il permet d'ajuster les dimensions de l'image de sortie et la méthode d'agrandissement, offrant une flexibilité dans l'amélioration de la résolution des images latentes.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ Le nœud LatentUpscale est conçu pour agrandir les représentations latentes de
 | `height`  | `INT`       | La hauteur souhaitée de l'image agrandie. Si elle est définie sur 0, elle sera calculée en fonction de la largeur pour maintenir le rapport d'aspect. |
 | `crop`    | `COMBO[STRING]` | Détermine comment l'image agrandie doit être recadrée, affectant l'apparence finale et les dimensions de la sortie. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

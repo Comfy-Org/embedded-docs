@@ -1,6 +1,7 @@
 
 Ce nœud se spécialise dans la combinaison de deux entrées de masque à travers une variété d'opérations telles que l'addition, la soustraction et les opérations logiques, pour produire un nouveau masque modifié. Il gère de manière abstraite la manipulation des données de masque pour réaliser des effets de masquage complexes, servant de composant crucial dans les flux de travail d'édition et de traitement d'images basés sur les masques.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre    | Comfy dtype | Description                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +11,7 @@ Ce nœud se spécialise dans la combinaison de deux entrées de masque à traver
 | `y`          | INT         | Le décalage vertical auquel le masque source sera appliqué au masque de destination, affectant le positionnement du résultat composite.         |
 | `operation`  | COMBO[STRING]| Spécifie le type d'opération à appliquer entre les masques de destination et source, tels que 'add', 'subtract', ou des opérations logiques, déterminant la nature de l'effet composite. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |

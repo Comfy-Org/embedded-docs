@@ -3,6 +3,7 @@
 때때로 **ComfyUI 인터페이스를 새로 고침**해야 해당 폴더의 모델 파일을 읽을 수 있습니다.
 
 VAELoader 노드는 Variational Autoencoder (VAE) 모델을 로드하기 위해 설계되었습니다. 이 노드는 표준 VAE와 근사 VAE 모두를 처리할 수 있도록 특별히 조정되었으며, 'taesd' 및 'taesdxl' 모델에 대한 특수 처리를 포함하여 VAE의 특정 구성에 따라 동적으로 조정됩니다.
+
 ## 입력 유형
 
 | 필드   | Comfy dtype       | 설명                                                                                   |

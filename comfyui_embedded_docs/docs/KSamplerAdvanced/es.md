@@ -1,6 +1,6 @@
-
 El nodo KSamplerAdvanced está diseñado para mejorar el proceso de muestreo proporcionando configuraciones y técnicas avanzadas. Su objetivo es ofrecer opciones más sofisticadas para generar muestras a partir de un modelo, mejorando las funcionalidades básicas de KSampler.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro             | Comfy dtype | Descripción                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -18,7 +18,7 @@ El nodo KSamplerAdvanced está diseñado para mejorar el proceso de muestreo pro
 | `end_at_step`        | INT         | Establece el paso final del proceso de muestreo, definiendo el alcance del muestreo.                                                                                                                                                                                                                                         |
 | `return_with_leftover_noise` | COMBO[STRING] | Indica si se debe devolver la muestra con el ruido sobrante, afectando la apariencia final del resultado.                                                                                                                                                                                                                               |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro   | Comfy dtype | Descripción                                                                                                               |
 |-------------|-------------|------------------------------------------------------------------------------------------------------------------------------|

@@ -1,6 +1,6 @@
-Le nœud EmptyImage est conçu pour générer des images vides de dimensions et de couleur spécifiées. Il permet la création d'images de couleur uniforme pouvant servir de fonds ou de réserves dans diverses tâches de traitement d'image.
+Le nœud `EmptyImage` est conçu pour générer des images vides de dimensions et de couleur spécifiées. Il permet la création d'images de couleur uniforme pouvant servir de fonds ou de réserves dans diverses tâches de traitement d'image.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre   | Comfy dtype | Description |
 |-------------|-------------|-------------|
@@ -9,7 +9,7 @@ Le nœud EmptyImage est conçu pour générer des images vides de dimensions et 
 | `batch_size`| `INT`       | Indique le nombre d'images à générer en un seul lot. Cela permet la création de plusieurs images à la fois. |
 | `color`     | `INT`       | Définit la couleur de l'image générée en utilisant une valeur hexadécimale, permettant la personnalisation de l'apparence de l'image. Ce paramètre permet la sélection d'une large gamme de couleurs. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

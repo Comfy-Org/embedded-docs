@@ -1,6 +1,7 @@
 
 Le nœud LatentComposite est conçu pour mélanger ou fusionner deux représentations latentes en une seule sortie. Ce processus est essentiel pour créer des images composites ou des caractéristiques en combinant les caractéristiques des latents d'entrée de manière contrôlée.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre    | Comfy dtype | Description |
 |--------------|-------------|-------------|
@@ -10,7 +11,7 @@ Le nœud LatentComposite est conçu pour mélanger ou fusionner deux représenta
 | `y`          | `INT`      | La coordonnée y (position verticale) où la latente 'samples_from' sera placée sur 'samples_to'. Elle détermine l'alignement vertical du composite. |
 | `feather`    | `INT`      | Un booléen indiquant si la latente 'samples_from' doit être redimensionnée pour correspondre à 'samples_to' avant la composition. Cela peut affecter l'échelle et la proportion du résultat composite. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

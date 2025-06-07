@@ -1,6 +1,7 @@
 
 Le nœud LatentCompositeMasked est conçu pour fusionner deux représentations latentes à des coordonnées spécifiées, en utilisant éventuellement un masque pour un compositing plus contrôlé. Ce nœud permet la création d'images latentes complexes en superposant des parties d'une image sur une autre, avec la possibilité de redimensionner l'image source pour un ajustement parfait.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +12,7 @@ Le nœud LatentCompositeMasked est conçu pour fusionner deux représentations l
 | `resize_source` | `BOOLEAN` | Un indicateur booléen indiquant si la représentation latente source doit être redimensionnée pour correspondre aux dimensions de la destination avant la composition. |
 | `mask` | `MASK`     | Un masque optionnel qui peut être utilisé pour contrôler le mélange de la source sur la destination. Le masque définit quelles parties de la source seront visibles dans le composite final. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

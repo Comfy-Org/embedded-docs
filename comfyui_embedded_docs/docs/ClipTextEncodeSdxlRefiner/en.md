@@ -1,6 +1,6 @@
 This node specializes in refining the encoding of text inputs using CLIP models, enhancing the conditioning for generative tasks by incorporating aesthetic scores and dimensions.
 
-## CLIPTextEncodeSDXLRefiner Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ This node specializes in refining the encoding of text inputs using CLIP models,
 | `height` | `INT` | Determines the height of the output conditioning, influencing the dimensions of the generated content. |
 | `text` | `STRING` | The text input to be encoded, serving as the primary content descriptor for conditioning. |
 
-## CLIPTextEncodeSDXLRefiner Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 | --- | --- | --- |

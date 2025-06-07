@@ -1,5 +1,6 @@
 Ce nœud est conçu pour modifier le conditionnement d'un modèle génératif en appliquant un masque avec une force spécifiée à certaines zones. Il permet des ajustements ciblés au sein du conditionnement, offrant un contrôle plus précis sur le processus de génération.
-## Types d'entrée
+
+## Entrées
 
 ### Requis
 
@@ -10,7 +11,7 @@ Ce nœud est conçu pour modifier le conditionnement d'un modèle génératif en
 | `strength`    | `FLOAT`      | La force de l'effet du masque sur le conditionnement, permettant un ajustement précis des modifications appliquées. |
 | `set_cond_area` | `COMBO[STRING]` | Détermine si l'effet du masque est appliqué à la zone par défaut ou limité par le masque lui-même, offrant une flexibilité dans le ciblage de régions spécifiques. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre     | Comfy dtype  | Description |
 |---------------|--------------|-------------|

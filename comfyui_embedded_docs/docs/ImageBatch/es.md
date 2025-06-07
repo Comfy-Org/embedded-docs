@@ -1,13 +1,13 @@
-El nodo ImageBatch está diseñado para combinar dos imágenes en un solo lote. Si las dimensiones de las imágenes no coinciden, automáticamente redimensiona la segunda imagen para que coincida con las dimensiones de la primera antes de combinarlas.
+El nodo `ImageBatch` está diseñado para combinar dos imágenes en un solo lote. Si las dimensiones de las imágenes no coinciden, automáticamente redimensiona la segunda imagen para que coincida con las dimensiones de la primera antes de combinarlas.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
 | `image1`  | `IMAGE`     | La primera imagen que se combinará en el lote. Sirve como referencia para las dimensiones a las que se ajustará la segunda imagen si es necesario. |
 | `image2`  | `IMAGE`     | La segunda imagen que se combinará en el lote. Se redimensiona automáticamente para coincidir con las dimensiones de la primera imagen si difieren. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

@@ -1,6 +1,6 @@
-
 The KarrasScheduler node is designed to generate a sequence of noise levels (sigmas) based on the Karras et al. (2022) noise schedule. This scheduler is useful for controlling the diffusion process in generative models, allowing for fine-tuned adjustments to the noise levels applied at each step of the generation process.
-## Input types
+
+## Inputs
 
 | Parameter   | Comfy dtype | Description                                                                                      |
 |-------------|-------------|------------------------------------------------------------------------------------------------|
@@ -9,7 +9,7 @@ The KarrasScheduler node is designed to generate a sequence of noise levels (sig
 | `sigma_min` | FLOAT       | The minimum sigma value in the noise schedule, setting the lower bound of noise levels.                    |
 | `rho`       | FLOAT       | A parameter that controls the shape of the noise schedule curve, influencing how noise levels progress from sigma_min to sigma_max. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|

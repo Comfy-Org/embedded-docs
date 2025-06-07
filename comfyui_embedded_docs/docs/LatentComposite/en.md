@@ -1,6 +1,6 @@
-
 The LatentComposite node is designed to blend or merge two latent representations into a single output. This process is essential for creating composite images or features by combining the characteristics of the input latents in a controlled manner.
-## Input types
+
+## Inputs
 
 | Parameter    | Comfy dtype | Description |
 |--------------|-------------|-------------|
@@ -10,7 +10,7 @@ The LatentComposite node is designed to blend or merge two latent representation
 | `y`          | `INT`      | The y-coordinate (vertical position) where the 'samples_from' latent will be placed on the 'samples_to'. It determines the vertical alignment of the composite. |
 | `feather`    | `INT`      | A boolean indicating whether the 'samples_from' latent should be resized to match the 'samples_to' before compositing. This can affect the scale and proportion of the composite result. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

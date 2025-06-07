@@ -1,6 +1,6 @@
 DualCLIPLoaderノードは、2つのCLIPモデルを同時にロードするために設計されており、両モデルの特徴を統合または比較する操作を容易にします。
 
-## 入力タイプ - Dual CLIP Loader
+## 入力タイプ
 
 | パラメータ    | Comfy dtype  | 説明 |
 |--------------|--------------|-------------|
@@ -10,11 +10,12 @@ DualCLIPLoaderノードは、2つのCLIPモデルを同時にロードするた�
 
 * ロードの順序は出力効果に影響を与えません
 
-## 出力タイプ - Dual CLIP Loader
+## 出力タイプ
 
 | パラメータ | Comfy dtype  | 説明 |
 |-----------|--------------|-------------|
 | `clip`    | `CLIP`       | 出力は、指定された2つのCLIPモデルの特徴または機能を統合した結合CLIPモデルです。 |
 
-## ワークフロー例 - Dual CLIP Loader
-元のワークフロー引用元 https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP
+## ワークフロー例
+
+元のワークフロー引用元 <https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP>

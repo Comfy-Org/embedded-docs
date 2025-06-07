@@ -1,6 +1,7 @@
 
 Le nœud KSamplerAdvanced est conçu pour améliorer le processus d'échantillonnage en offrant des configurations et techniques avancées. Il vise à proposer des options plus sophistiquées pour générer des échantillons à partir d'un modèle, améliorant ainsi les fonctionnalités de base du KSampler.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre             | Comfy dtype | Description                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -18,7 +19,7 @@ Le nœud KSamplerAdvanced est conçu pour améliorer le processus d'échantillon
 | `end_at_step`        | INT         | Définit l'étape de fin du processus d'échantillonnage, définissant la portée de l'échantillonnage.                                                                                                                                                                                                                                         |
 | `return_with_leftover_noise` | COMBO[STRING] | Indique si l'échantillon doit être retourné avec le bruit restant, affectant l'apparence finale de la sortie.                                                                                                                                                                                                                               |
 
-## Types de sortie
+## Sorties
 
 | Paramètre   | Comfy dtype | Description                                                                                                               |
 |-------------|-------------|------------------------------------------------------------------------------------------------------------------------------|

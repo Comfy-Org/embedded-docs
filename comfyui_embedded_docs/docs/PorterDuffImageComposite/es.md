@@ -1,6 +1,7 @@
 
 El nodo PorterDuffImageComposite está diseñado para realizar la composición de imágenes utilizando los operadores de composición Porter-Duff. Permite la combinación de imágenes de origen y destino según varios modos de mezcla, habilitando la creación de efectos visuales complejos al manipular la transparencia de las imágenes y superponer imágenes de manera creativa.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 | --------- | ------------ | ----------- |
@@ -10,7 +11,7 @@ El nodo PorterDuffImageComposite está diseñado para realizar la composición d
 | `destination_alpha` | `MASK` | El canal alfa de la imagen de destino, definiendo la transparencia de los píxeles de la imagen de destino. Influye en la mezcla de las imágenes de origen y destino. |
 | `mode` | `COMBO[STRING]` | El modo de composición Porter-Duff a aplicar, que determina cómo se mezclan las imágenes de origen y destino. Cada modo crea diferentes efectos visuales. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 | --------- | ------------ | ----------- |

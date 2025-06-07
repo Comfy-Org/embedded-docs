@@ -1,7 +1,8 @@
 
 Le nœud InpaintModelConditioning est conçu pour faciliter le processus de conditionnement pour les modèles d'inpainting, permettant l'intégration et la manipulation de divers entrées de conditionnement pour adapter le résultat de l'inpainting. Il englobe une large gamme de fonctionnalités, allant du chargement de points de contrôle de modèles spécifiques et de l'application de modèles de style ou de réseau de contrôle, à l'encodage et à la combinaison d'éléments de conditionnement, servant ainsi d'outil complet pour personnaliser les tâches d'inpainting.
 
-## Types d'entrée
+## Entrées
+
 | Paramètre | Comfy dtype        | Description |
 |-----------|--------------------|-------------|
 | `positive`| `CONDITIONING`     | Représente les informations ou paramètres de conditionnement positifs à appliquer au modèle d'inpainting. Cette entrée est cruciale pour définir le contexte ou les contraintes dans lesquelles l'opération d'inpainting doit être effectuée, affectant significativement le résultat final. |
@@ -10,7 +11,7 @@ Le nœud InpaintModelConditioning est conçu pour faciliter le processus de cond
 | `pixels`  | `IMAGE`            | Représente les données de pixels de l'image à inpeindre. Cette entrée est essentielle pour fournir le contexte visuel nécessaire à la tâche d'inpainting. |
 | `mask`    | `MASK`             | Spécifie le masque à appliquer à l'image, indiquant les zones à inpeindre. Cette entrée est cruciale pour définir les régions spécifiques de l'image nécessitant un inpainting. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype  | Description |
 |-----------|--------------|-------------|

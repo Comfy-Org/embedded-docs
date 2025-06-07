@@ -29,8 +29,6 @@
   
   该方法接受 `clip`、`bert` 和 `mt5xl` 作为参数。首先，它对 `bert` 进行标记化，然后对 `mt5xl` 进行标记化，并将结果存储在 `tokens` 字典中。最后，它使用 `clip.encode_from_tokens_scheduled` 方法将标记化的 tokens 编码为条件。
 
-
-
 ## CLIP Text Encode Hunyuan DiT 节点的相关内容扩展
 
 ### BERT（Bidirectional Encoder Representations from Transformers）
@@ -77,10 +75,10 @@ mT5-XL 是 T5 模型的多语言版本，采用编码器-解码器架构，支�
 
 1. [BERT: 用于语言理解的深度双向 Transformer 预训练](https://arxiv.org/pdf/1810.04805)
    - **描述**: 这篇开创性论文介绍了 BERT，一个基于 transformer 的模型，在广泛的自然语言处理任务中都达到了最先进的效果。
-   
+
 2. [mT5: 大规模多语言预训练的文本到文本 Transformer](https://aclanthology.org/2021.naacl-main.41.pdf)
    - **描述**: 这篇论文介绍了 mT5，T5 的多语言变体，它在一个覆盖 101 种语言的新 Common Crawl 数据集上进行训练。
-   
+
 3. [mLongT5: 一个用于处理更长序列的多语言高效文本到文本 Transformer](https://arxiv.org/pdf/2112.08760)
    - **描述**: 这项工作开发了 mLongT5，一个专门设计用于高效处理更长输入序列的多语言模型。
 

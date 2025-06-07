@@ -1,6 +1,7 @@
 
 This node is designed to generate a sampler for the DPMPP_2M_SDE model, allowing for the creation of samples based on specified solver types, noise levels, and computational device preferences. It abstracts the complexities of sampler configuration, providing a streamlined interface for generating samples with customized settings.
-## Input types
+
+## Inputs
 
 | Parameter       | Comfy dtype | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ This node is designed to generate a sampler for the DPMPP_2M_SDE model, allowing
 | `s_noise`       | `FLOAT`     | Controls the level of noise introduced during the sampling process, influencing the variability of the generated samples. |
 | `noise_device`  | `COMBO[STRING]` | Indicates the computational device ('gpu' or 'cpu') on which the noise generation process is executed, affecting performance and efficiency. |
 
-## Output types
+## Outputs
 
 | Parameter       | Comfy dtype | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|

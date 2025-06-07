@@ -1,7 +1,7 @@
 
 Ce nœud est conçu pour traiter et conditionner les données à utiliser dans les modèles StableZero123, en se concentrant sur la préparation des entrées dans un format spécifique compatible et optimisé pour ces modèles.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre             | Comfy dtype        | Description |
 |-----------------------|--------------------|-------------|
@@ -14,7 +14,7 @@ Ce nœud est conçu pour traiter et conditionner les données à utiliser dans l
 | `elevation`           | `FLOAT`            | Ajuste l'angle d'élévation pour le rendu du modèle 3D, améliorant la compréhension spatiale du modèle. |
 | `azimuth`             | `FLOAT`            | Modifie l'angle d'azimut pour la visualisation du modèle 3D, améliorant la perception de l'orientation par le modèle. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre     | Comfy dtype  | Description |
 |---------------|--------------|-------------|

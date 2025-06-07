@@ -1,13 +1,13 @@
+The `ImageColorToMask` node is designed to convert a specified color in an image to a mask. It processes an image and a target color, generating a mask where the specified color is highlighted, facilitating operations like color-based segmentation or object isolation.
 
-The ImageColorToMask node is designed to convert a specified color in an image to a mask. It processes an image and a target color, generating a mask where the specified color is highlighted, facilitating operations like color-based segmentation or object isolation.
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The 'image' parameter represents the input image to be processed. It is crucial for determining the areas of the image that match the specified color to be converted into a mask. |
 | `color`   | `INT`       | The 'color' parameter specifies the target color in the image to be converted into a mask. It plays a key role in identifying the specific color areas to be highlighted in the resulting mask. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

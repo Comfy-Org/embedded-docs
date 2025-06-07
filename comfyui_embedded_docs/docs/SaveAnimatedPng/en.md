@@ -1,7 +1,7 @@
 
 The SaveAnimatedPNG node is designed for creating and saving animated PNG images from a sequence of frames. It handles the assembly of individual image frames into a cohesive animation, allowing for customization of frame duration, looping, and metadata inclusion.
 
-## Input types
+## Inputs
 
 | Field             | Comfy dtype | Description                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
@@ -10,7 +10,7 @@ The SaveAnimatedPNG node is designed for creating and saving animated PNG images
 | `fps`             | `FLOAT`     | The frames per second rate for the animation, controlling how quickly the frames are displayed. |
 | `compress_level`  | `INT`       | The level of compression applied to the animated PNG files, affecting file size and image clarity. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|

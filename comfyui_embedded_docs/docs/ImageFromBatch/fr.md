@@ -1,7 +1,6 @@
+Le nœud `ImageFromBatch` est conçu pour extraire un segment spécifique d'images d'un lot en fonction de l'index et de la longueur fournis. Il permet un contrôle plus précis sur les images en lot, permettant des opérations sur des images individuelles ou des sous-ensembles d'images au sein d'un lot plus large.
 
-Le nœud ImageFromBatch est conçu pour extraire un segment spécifique d'images d'un lot en fonction de l'index et de la longueur fournis. Il permet un contrôle plus précis sur les images en lot, permettant des opérations sur des images individuelles ou des sous-ensembles d'images au sein d'un lot plus large.
-
-## Types d'entrée
+## Entrées
 
 | Champ          | Comfy dtype | Description                                                                           |
 |----------------|-------------|---------------------------------------------------------------------------------------|
@@ -9,7 +8,7 @@ Le nœud ImageFromBatch est conçu pour extraire un segment spécifique d'images
 | `batch_index`  | `INT`       | L'index de départ dans le lot à partir duquel l'extraction commence. Il détermine la position initiale du segment à extraire du lot. |
 | `length`       | `INT`       | Le nombre d'images à extraire du lot à partir du batch_index. Ce paramètre définit la taille du segment à extraire. |
 
-## Types de sortie
+## Sorties
 
 | Champ | Comfy dtype | Description                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|

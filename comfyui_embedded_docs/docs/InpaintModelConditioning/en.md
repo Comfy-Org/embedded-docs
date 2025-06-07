@@ -1,6 +1,7 @@
-
 The InpaintModelConditioning node is designed to facilitate the conditioning process for inpainting models, enabling the integration and manipulation of various conditioning inputs to tailor the inpainting output. It encompasses a broad range of functionalities, from loading specific model checkpoints and applying style or control net models, to encoding and combining conditioning elements, thereby serving as a comprehensive tool for customizing inpainting tasks.
-## Input types
+
+## Inputs
+
 | Parameter | Comfy dtype        | Description |
 |-----------|--------------------|-------------|
 | `positive`| `CONDITIONING`     | Represents the positive conditioning information or parameters that are to be applied to the inpainting model. This input is crucial for defining the context or constraints under which the inpainting operation should be performed, affecting the final output significantly. |
@@ -9,7 +10,7 @@ The InpaintModelConditioning node is designed to facilitate the conditioning pro
 | `pixels`  | `IMAGE`            | Represents the pixel data of the image to be inpainted. This input is essential for providing the visual context necessary for the inpainting task. |
 | `mask`    | `MASK`             | Specifies the mask to be applied to the image, indicating the areas to be inpainted. This input is crucial for defining the specific regions within the image that require inpainting. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype  | Description |
 |-----------|--------------|-------------|

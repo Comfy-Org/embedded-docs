@@ -1,6 +1,6 @@
 Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la zone d'influence des éléments de conditionnement en fonction de valeurs en pourcentage. Il permet de spécifier les dimensions et la position de la zone en pourcentages de la taille totale de l'image, ainsi qu'un paramètre de force pour moduler l'intensité de l'effet de conditionnement.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la 
 | `y`       | `FLOAT`     | Spécifie le point de départ vertical de la zone en pourcentage de la hauteur totale de l'image, positionnant l'effet de conditionnement. |
 | `strength`| `FLOAT`     | Contrôle l'intensité de l'effet de conditionnement dans la zone spécifiée, permettant un ajustement précis de son impact. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

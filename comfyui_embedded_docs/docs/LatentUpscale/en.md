@@ -1,6 +1,7 @@
 
 The LatentUpscale node is designed for upscaling latent representations of images. It allows for the adjustment of the output image's dimensions and the method of upscaling, providing flexibility in enhancing the resolution of latent images.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ The LatentUpscale node is designed for upscaling latent representations of image
 | `height`  | `INT`       | The desired height of the upscaled image. If set to 0, it will be calculated based on the width to maintain the aspect ratio. |
 | `crop`    | `COMBO[STRING]` | Determines how the upscaled image should be cropped, affecting the final appearance and dimensions of the output. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

@@ -2,7 +2,7 @@ El nodo DualCLIPLoader está diseñado para cargar dos modelos CLIP simultáneam
 
 Imagina que estás en una cocina preparando un plato y tienes dos frascos de especias diferentes: uno con sal y otro con pimienta. Cada especia añade un sabor único a tu plato. Ahora, imagina que tienes una herramienta especial que te permite usar ambos frascos al mismo tiempo para sazonar tu comida. Esto es similar al nodo DualCLIPLoader. Te permite cargar y usar dos modelos CLIP diferentes simultáneamente, para que puedas combinar sus capacidades y estilos únicos y crear arte generado por IA más versátil y refinado.
 
-## Tipos de entrada - Cargador Dual CLIP
+## Entradas
 
 | Parámetro    | Tipo Comfy   | Descripción |
 |--------------|--------------|-------------|
@@ -12,7 +12,7 @@ Imagina que estás en una cocina preparando un plato y tienes dos frascos de esp
 
 * El orden de carga no afecta el efecto de salida.
 
-## Tipos de salida - Cargador Dual CLIP
+## Salidas
 
 | Parámetro | Tipo Comfy  | Descripción |
 |-----------|-------------|-------------|

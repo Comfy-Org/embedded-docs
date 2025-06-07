@@ -1,5 +1,6 @@
 Ce nœud est conçu pour modifier les informations de conditionnement en définissant des zones spécifiques dans le contexte de conditionnement. Il permet une manipulation spatiale précise des éléments de conditionnement, permettant des ajustements et des améliorations ciblés basés sur des dimensions et une force spécifiées.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ Ce nœud est conçu pour modifier les informations de conditionnement en défini
 | `y`       | `INT`      | Le point de départ vertical pour l'ajustement de la zone, établissant sa position dans le contexte de conditionnement. |
 | `strength`| `FLOAT`    | Définit l'intensité de la modification du conditionnement dans la zone spécifiée, permettant un contrôle nuancé de l'impact de l'ajustement. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

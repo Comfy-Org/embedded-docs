@@ -1,6 +1,7 @@
 
 The SamplerCustom node is designed to provide a flexible and customizable sampling mechanism for various applications. It enables users to select and configure different sampling strategies tailored to their specific needs, enhancing the adaptability and efficiency of the sampling process.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|--------------|-------------|
@@ -14,7 +15,7 @@ The SamplerCustom node is designed to provide a flexible and customizable sampli
 | `sigmas`  | `SIGMAS`     | The 'sigmas' input type defines the noise levels to be used in the sampling process, affecting the exploration of the sample space and the diversity of the output. |
 | `latent_image` | `LATENT` | The 'latent_image' input type provides an initial latent image for the sampling process, serving as a starting point for sample generation. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|--------------|-------------|

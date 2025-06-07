@@ -1,7 +1,6 @@
+El nodo `ImageFromBatch` está diseñado para extraer un segmento específico de imágenes de un lote basado en el índice y la longitud proporcionados. Permite un control más granular sobre las imágenes en lotes, habilitando operaciones en imágenes individuales o subconjuntos dentro de un lote más grande.
 
-El nodo ImageFromBatch está diseñado para extraer un segmento específico de imágenes de un lote basado en el índice y la longitud proporcionados. Permite un control más granular sobre las imágenes en lotes, habilitando operaciones en imágenes individuales o subconjuntos dentro de un lote más grande.
-
-## Tipos de entrada
+## Entradas
 
 | Campo          | Comfy dtype | Descripción                                                                           |
 |----------------|-------------|---------------------------------------------------------------------------------------|
@@ -9,7 +8,7 @@ El nodo ImageFromBatch está diseñado para extraer un segmento específico de i
 | `batch_index`  | `INT`       | El índice de inicio dentro del lote desde el cual comienza la extracción. Determina la posición inicial del segmento a extraer del lote. |
 | `length`       | `INT`       | El número de imágenes a extraer del lote comenzando desde el batch_index. Este parámetro define el tamaño del segmento a extraer. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|

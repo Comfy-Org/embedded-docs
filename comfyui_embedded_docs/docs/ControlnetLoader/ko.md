@@ -1,6 +1,4 @@
-이 노드는 `ComfyUI/models/controlnet` 폴더에 있는 모델을 감지하며,
-또한 extra_model_paths.yaml 파일에서 설정한 추가 경로의 모델도 읽어옵니다.
-때때로 **ComfyUI 인터페이스를 새로 고침**해야 해당 폴더의 모델 파일을 읽을 수 있습니다.
+이 노드는 `ComfyUI/models/controlnet` 폴더에 있는 모델을 감지하며, 또한 extra_model_paths.yaml 파일에서 설정한 추가 경로의 모델도 읽어옵니다. 때때로 **ComfyUI 인터페이스를 새로 고침**해야 해당 폴더의 모델 파일을 읽을 수 있습니다.
 
 ControlNetLoader 노드는 지정된 경로에서 ControlNet 모델을 로드하도록 설계되었습니다. 이는 생성된 콘텐츠에 제어 메커니즘을 적용하거나 제어 신호에 따라 기존 콘텐츠를 수정하는 데 필수적입니다.
 

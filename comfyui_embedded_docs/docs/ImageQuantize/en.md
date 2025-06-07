@@ -1,6 +1,6 @@
-
 The ImageQuantize node is designed to reduce the number of colors in an image to a specified number, optionally applying dithering techniques to maintain visual quality. This process is useful for creating palette-based images or reducing the color complexity for certain applications.
-## Input types
+
+## Inputs
 
 | Field   | Comfy dtype | Description                                                                       |
 |---------|-------------|-----------------------------------------------------------------------------------|
@@ -8,7 +8,7 @@ The ImageQuantize node is designed to reduce the number of colors in an image to
 | `colors`| `INT`       | Specifies the number of colors to reduce the image to. It directly influences the quantization process by determining the color palette size. |
 | `dither`| `COMBO[STRING]` | Determines the dithering technique to be applied during quantization, affecting the visual quality and appearance of the output image. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|

@@ -3,7 +3,7 @@ El nodo ModelMergeSimple está diseñado para fusionar dos modelos mediante la m
 
 El parámetro `ratio` determina la proporción de mezcla entre los dos modelos. Cuando este valor es 1, el modelo de salida es 100% `model1`, y cuando este valor es 0, el modelo de salida es 100% `model2`.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro | Tipo Comfy | Descripción |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ El parámetro `ratio` determina la proporción de mezcla entre los dos modelos. 
 | `model2`  | `MODEL`     | El segundo modelo cuyos parches se aplican al primer modelo, influenciado por la proporción especificada. |
 | `ratio`   | `FLOAT`     | Cuando este valor es 1, el modelo de salida es 100% `model1`, y cuando este valor es 0, el modelo de salida es 100% `model2`. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Tipo Comfy | Descripción |
 |-----------|-------------|-------------|

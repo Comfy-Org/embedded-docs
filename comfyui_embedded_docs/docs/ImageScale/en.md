@@ -1,7 +1,6 @@
-
 The ImageScale node is designed for resizing images to specific dimensions, offering a selection of upscale methods and the ability to crop the resized image. It abstracts the complexity of image upscaling and cropping, providing a straightforward interface for modifying image dimensions according to user-defined parameters.
 
-## Input types
+## Inputs
 
 | Parameter       | Comfy dtype | Description                                                                           |
 |-----------------|-------------|---------------------------------------------------------------------------------------|
@@ -11,7 +10,7 @@ The ImageScale node is designed for resizing images to specific dimensions, offe
 | `height`        | `INT`       | The target height for the upscaled image. This parameter directly influences the dimensions of the output image, determining the vertical scale of the resizing operation. |
 | `crop`          | `COMBO[STRING]` | Determines whether and how the upscaled image should be cropped, offering options for disabled cropping or center cropping. This affects the final composition of the image by potentially removing edges to fit the specified dimensions. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

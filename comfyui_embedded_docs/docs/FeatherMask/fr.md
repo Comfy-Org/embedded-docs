@@ -1,6 +1,6 @@
-Le nœud FeatherMask applique un effet de plume aux bords d'un masque donné, en transitionnant en douceur les bords du masque en ajustant leur opacité en fonction des distances spécifiées à partir de chaque bord. Cela crée un effet de bord plus doux et plus fondu.
+Le nœud `FeatherMask` applique un effet de plume aux bords d'un masque donné, en transitionnant en douceur les bords du masque en ajustant leur opacité en fonction des distances spécifiées à partir de chaque bord. Cela crée un effet de bord plus doux et plus fondu.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|--------------|-------------|
@@ -10,7 +10,7 @@ Le nœud FeatherMask applique un effet de plume aux bords d'un masque donné, en
 | `right`   | INT          | Spécifie la distance à partir du bord droit dans laquelle l'effet de plume sera appliqué. |
 | `bottom`  | INT          | Spécifie la distance à partir du bord inférieur dans laquelle l'effet de plume sera appliqué. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|--------------|-------------|

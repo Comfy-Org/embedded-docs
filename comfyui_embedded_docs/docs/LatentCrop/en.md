@@ -1,6 +1,7 @@
 
 The LatentCrop node is designed to perform cropping operations on latent representations of images. It allows for the specification of the crop dimensions and position, enabling targeted modifications of the latent space.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ The LatentCrop node is designed to perform cropping operations on latent represe
 | `x`       | `INT`       | Determines the starting x-coordinate of the crop area, influencing the position of the crop within the original latent representation. |
 | `y`       | `INT`       | Determines the starting y-coordinate of the crop area, setting the position of the crop within the original latent representation. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

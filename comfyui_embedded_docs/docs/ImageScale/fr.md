@@ -1,7 +1,6 @@
-
 Le nœud ImageScale est conçu pour redimensionner les images à des dimensions spécifiques, offrant une sélection de méthodes d'agrandissement et la possibilité de recadrer l'image redimensionnée. Il simplifie la complexité de l'agrandissement et du recadrage d'image, fournissant une interface simple pour modifier les dimensions de l'image selon les paramètres définis par l'utilisateur.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre       | Comfy dtype | Description                                                                           |
 |-----------------|-------------|---------------------------------------------------------------------------------------|
@@ -11,7 +10,8 @@ Le nœud ImageScale est conçu pour redimensionner les images à des dimensions 
 | `height`        | `INT`       | La hauteur cible pour l'image agrandie. Ce paramètre influence directement les dimensions de l'image de sortie, déterminant l'échelle verticale de l'opération de redimensionnement. |
 | `crop`          | `COMBO[STRING]` | Détermine si et comment l'image agrandie doit être recadrée, offrant des options pour désactiver le recadrage ou pour un recadrage centré. Cela affecte la composition finale de l'image en supprimant potentiellement les bords pour s'adapter aux dimensions spécifiées. |
 
-## Types de sortie
+## Sorties
+
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | L'image agrandie (et éventuellement recadrée), prête pour un traitement ou une visualisation ultérieure. |

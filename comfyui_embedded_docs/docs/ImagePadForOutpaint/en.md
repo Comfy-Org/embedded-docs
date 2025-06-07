@@ -1,6 +1,6 @@
-
 This node is designed for preparing images for the outpainting process by adding padding around them. It adjusts the image dimensions to ensure compatibility with outpainting algorithms, facilitating the generation of extended image areas beyond the original boundaries.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ This node is designed for preparing images for the outpainting process by adding
 | `bottom`  | `INT`       | Indicates the amount of padding to add to the bottom of the image, contributing to the vertical expansion for outpainting. |
 | `feathering` | `INT` | Controls the smoothness of the transition between the original image and the added padding, enhancing the visual integration for outpainting. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

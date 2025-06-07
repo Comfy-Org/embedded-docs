@@ -1,7 +1,6 @@
+El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dada, ya sea expandiéndola o contrayéndola, mientras opcionalmente aplica un efecto de afinado a las esquinas. Esta funcionalidad es crucial para ajustar dinámicamente los límites de la máscara en tareas de procesamiento de imágenes, permitiendo un control más flexible y preciso sobre el área de interés.
 
-El nodo GrowMask está diseñado para modificar el tamaño de una máscara dada, ya sea expandiéndola o contrayéndola, mientras opcionalmente aplica un efecto de afinado a las esquinas. Esta funcionalidad es crucial para ajustar dinámicamente los límites de la máscara en tareas de procesamiento de imágenes, permitiendo un control más flexible y preciso sobre el área de interés.
-
-## Tipos de entrada
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -9,7 +8,7 @@ El nodo GrowMask está diseñado para modificar el tamaño de una máscara dada,
 | `expand`  | INT         | Determina la magnitud y dirección de la modificación de la máscara. Los valores positivos hacen que la máscara se expanda, mientras que los valores negativos conducen a la contracción. Este parámetro influye directamente en el tamaño final de la máscara. |
 | `tapered_corners` | BOOLEAN    | Una bandera booleana que, cuando se establece en True, aplica un efecto de afinado a las esquinas de la máscara durante la modificación. Esta opción permite transiciones más suaves y resultados visualmente atractivos. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

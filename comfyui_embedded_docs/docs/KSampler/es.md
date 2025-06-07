@@ -1,6 +1,6 @@
-
 El nodo KSampler está diseñado para operaciones avanzadas de muestreo dentro de modelos generativos, permitiendo la personalización de los procesos de muestreo a través de varios parámetros. Facilita la generación de nuevas muestras de datos manipulando representaciones de espacio latente, aprovechando el condicionamiento y ajustando los niveles de ruido.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro       | Comfy dtype | Descripción                                                                                                               |
 |-----------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -15,7 +15,7 @@ El nodo KSampler está diseñado para operaciones avanzadas de muestreo dentro d
 | `latent_image`  | `LATENT`    | Proporciona una representación de espacio latente para ser utilizada como punto de partida o referencia para el proceso de muestreo.                            |
 | `denoise`       | `FLOAT`     | Controla el nivel de eliminación de ruido aplicado a las muestras, afectando la claridad y nitidez de las imágenes generadas.                   |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro   | Comfy dtype | Descripción |
 |-------------|-------------|-------------|

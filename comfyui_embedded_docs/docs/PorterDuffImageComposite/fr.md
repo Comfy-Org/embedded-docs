@@ -1,6 +1,7 @@
 
 Le nœud PorterDuffImageComposite est conçu pour effectuer la composition d'images en utilisant les opérateurs de composition Porter-Duff. Il permet la combinaison d'images source et destination selon divers modes de fusion, permettant la création d'effets visuels complexes en manipulant la transparence des images et en superposant les images de manière créative.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Type Comfy | Description |
 | --------- | ----------- | ----------- |
@@ -10,7 +11,7 @@ Le nœud PorterDuffImageComposite est conçu pour effectuer la composition d'ima
 | `destination_alpha` | `MASK` | Le canal alpha de l'image de destination, définissant la transparence des pixels de l'image de destination. Il influence la fusion des images source et destination. |
 | `mode` | `COMBO[STRING]` | Le mode de composition Porter-Duff à appliquer, qui détermine comment les images source et destination sont fusionnées. Chaque mode crée des effets visuels différents. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Type Comfy | Description |
 | --------- | ----------- | ----------- |

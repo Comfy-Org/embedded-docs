@@ -1,6 +1,7 @@
 
 Ce nœud est conçu pour générer un échantillonneur pour le modèle DPMPP_2M_SDE, permettant la création d'échantillons basés sur des types de solveurs spécifiés, des niveaux de bruit et des préférences de dispositif de calcul. Il simplifie les complexités de la configuration de l'échantillonneur, offrant une interface simplifiée pour générer des échantillons avec des paramètres personnalisés.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre       | Comfy dtype | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ Ce nœud est conçu pour générer un échantillonneur pour le modèle DPMPP_2M_
 | `s_noise`       | `FLOAT`     | Contrôle le niveau de bruit introduit pendant le processus d'échantillonnage, influençant la variabilité des échantillons générés. |
 | `noise_device`  | `COMBO[STRING]` | Indique le dispositif de calcul ('gpu' ou 'cpu') sur lequel le processus de génération de bruit est exécuté, affectant la performance et l'efficacité. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre       | Comfy dtype | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|

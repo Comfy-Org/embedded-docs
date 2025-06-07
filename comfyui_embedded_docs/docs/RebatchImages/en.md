@@ -1,14 +1,14 @@
 
 The RebatchImages node is designed to reorganize a batch of images into a new batch configuration, adjusting the batch size as specified. This process is essential for managing and optimizing the processing of image data in batch operations, ensuring that images are grouped according to the desired batch size for efficient handling.
 
-## Input types
+## Inputs
 
 | Field       | Comfy dtype | Description                                                                         |
 |-------------|-------------|-------------------------------------------------------------------------------------|
 | `images`    | `IMAGE`     | A list of images to be rebatched. This parameter is crucial for determining the input data that will undergo the rebatching process. |
 | `batch_size`| `INT`       | Specifies the desired size of the output batches. This parameter directly influences how the input images are grouped and processed, impacting the structure of the output. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|

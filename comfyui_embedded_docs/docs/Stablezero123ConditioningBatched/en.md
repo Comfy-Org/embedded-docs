@@ -1,6 +1,7 @@
 
 This node is designed to process conditioning information in a batched manner specifically tailored for the StableZero123 model. It focuses on efficiently handling multiple sets of conditioning data simultaneously, optimizing the workflow for scenarios where batch processing is crucial.
-## Input types
+
+## Inputs
 
 | Parameter             | Comfy dtype  | Description |
 |----------------------|--------------|-------------|
@@ -15,7 +16,7 @@ This node is designed to process conditioning information in a batched manner sp
 | `elevation_batch_increment` | `FLOAT` | The incremental change in elevation angle across the batch, allowing for varied perspectives. |
 | `azimuth_batch_increment` | `FLOAT` | The incremental change in azimuth angle across the batch, allowing for varied orientations. |
 
-## Output types
+## Outputs
 
 | Parameter     | Comfy dtype  | Description |
 |---------------|--------------|-------------|

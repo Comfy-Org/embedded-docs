@@ -2,14 +2,14 @@ Le nœud ConditioningConcat est conçu pour concaténer les vecteurs de conditio
 
 Imaginez que vous cuisinez un plat, `conditioning_to` est la recette de base, et `conditioning_from` sont des assaisonnements ou condiments supplémentaires. La classe ConditioningConcat est comme un outil qui vous aide à ajouter ces assaisonnements à la recette, rendant votre plat plus coloré et riche.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre             | Comfy dtype        | Description |
 |-----------------------|--------------------|-------------|
 | `conditioning_to`     | `CONDITIONING`     | Représente l'ensemble principal de vecteurs de conditionnement auquel les vecteurs 'conditioning_from' seront concaténés. Il sert de base pour le processus de concaténation. |
 | `conditioning_from`   | `CONDITIONING`     | Se compose de vecteurs de conditionnement qui doivent être concaténés aux vecteurs 'conditioning_to'. Ce paramètre permet d'intégrer des informations de conditionnement supplémentaires dans l'ensemble existant. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre            | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|

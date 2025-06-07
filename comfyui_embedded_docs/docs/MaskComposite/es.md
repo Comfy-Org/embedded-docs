@@ -1,6 +1,7 @@
 
 Este nodo se especializa en combinar dos entradas de máscara a través de una variedad de operaciones como adición, sustracción y operaciones lógicas, para producir una nueva máscara modificada. Maneja abstractamente la manipulación de datos de máscara para lograr efectos de enmascaramiento complejos, sirviendo como un componente crucial en flujos de trabajo de edición y procesamiento de imágenes basados en máscaras.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro    | Comfy dtype | Descripción                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +11,7 @@ Este nodo se especializa en combinar dos entradas de máscara a través de una v
 | `y`          | INT         | El desplazamiento vertical en el que se aplicará la máscara fuente a la máscara de destino, afectando la posición del resultado compuesto.         |
 | `operation`  | COMBO[STRING]| Especifica el tipo de operación a aplicar entre las máscaras de destino y fuente, como 'add', 'subtract', u operaciones lógicas, determinando la naturaleza del efecto compuesto. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |

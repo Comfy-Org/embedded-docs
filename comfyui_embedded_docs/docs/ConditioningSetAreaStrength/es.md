@@ -1,13 +1,13 @@
 Este nodo está diseñado para modificar el atributo de fuerza de un conjunto de acondicionamiento dado, permitiendo el ajuste de la influencia o intensidad del acondicionamiento en el proceso de generación.
 
-## Tipos de entrada
+## Entradas
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | El conjunto de acondicionamiento a modificar, que representa el estado actual de acondicionamiento que influye en el proceso de generación. |
 | `strength` | `FLOAT` | El valor de fuerza que se aplicará al conjunto de acondicionamiento, dictando la intensidad de su influencia. |
 
-## Tipos de salida
+## Salidas
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

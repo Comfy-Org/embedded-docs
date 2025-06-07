@@ -1,6 +1,7 @@
 
 The LatentCompositeMasked node is designed for blending two latent representations together at specified coordinates, optionally using a mask for more controlled compositing. This node enables the creation of complex latent images by overlaying parts of one image onto another, with the ability to resize the source image for a perfect fit.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +12,7 @@ The LatentCompositeMasked node is designed for blending two latent representatio
 | `resize_source` | `BOOLEAN` | A boolean flag indicating whether the source latent representation should be resized to match the destination's dimensions before compositing. |
 | `mask` | `MASK`     | An optional mask that can be used to control the blending of the source onto the destination. The mask defines which parts of the source will be visible in the final composite. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

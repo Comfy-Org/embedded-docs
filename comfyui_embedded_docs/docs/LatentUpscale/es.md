@@ -1,6 +1,7 @@
 
 El nodo LatentUpscale está diseñado para ampliar las representaciones latentes de imágenes. Permite ajustar las dimensiones de la imagen de salida y el método de ampliación, proporcionando flexibilidad en la mejora de la resolución de imágenes latentes.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ El nodo LatentUpscale está diseñado para ampliar las representaciones latentes
 | `height`  | `INT`       | La altura deseada de la imagen ampliada. Si se establece en 0, se calculará en función del ancho para mantener la relación de aspecto. |
 | `crop`    | `COMBO[STRING]` | Determina cómo se debe recortar la imagen ampliada, afectando la apariencia final y las dimensiones de la salida. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

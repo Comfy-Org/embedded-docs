@@ -1,6 +1,7 @@
 
 El nodo SolidMask genera una máscara uniforme con un valor especificado en toda su área. Está diseñado para crear máscaras de dimensiones e intensidad específicas, útiles en diversas tareas de procesamiento de imágenes y enmascaramiento.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -8,7 +9,7 @@ El nodo SolidMask genera una máscara uniforme con un valor especificado en toda
 | `width`   | INT         | Determina el ancho de la máscara generada, influyendo directamente en su tamaño y relación de aspecto. |
 | `height`  | INT         | Establece la altura de la máscara generada, afectando su tamaño y relación de aspecto. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

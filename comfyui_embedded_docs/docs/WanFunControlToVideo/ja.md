@@ -32,4 +32,3 @@ WanFunControlToVideoノードは、ビデオ生成のためのWan Fun Controlモ
 | positive           | CONDITIONING       | エンコードされたstart_imageとcontrol_videoを含む、強化されたポジティブ条件データを提供します。 |
 | negative           | CONDITIONING       | 同様に強化されたネガティブ条件データを提供し、同じconcat_latent_imageを含みます。 |
 | latent             | LATENT             | キー「samples」を持つ空の潜在テンソルを含む辞書です。 |
-

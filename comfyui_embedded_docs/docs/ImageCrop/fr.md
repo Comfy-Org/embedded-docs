@@ -1,6 +1,6 @@
-Le nœud ImageCrop est conçu pour recadrer les images à une largeur et une hauteur spécifiées à partir d'une coordonnée x et y donnée. Cette fonctionnalité est essentielle pour se concentrer sur des régions spécifiques d'une image ou pour ajuster la taille de l'image afin de répondre à certaines exigences.
+Le nœud `ImageCrop` est conçu pour recadrer les images à une largeur et une hauteur spécifiées à partir d'une coordonnée x et y donnée. Cette fonctionnalité est essentielle pour se concentrer sur des régions spécifiques d'une image ou pour ajuster la taille de l'image afin de répondre à certaines exigences.
 
-## Types d'entrée
+## Entrées
 
 | Champ | Comfy dtype | Description                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|
@@ -10,7 +10,7 @@ Le nœud ImageCrop est conçu pour recadrer les images à une largeur et une hau
 | `x` | `INT` | La coordonnée x du coin supérieur gauche de la zone de recadrage. Ce paramètre définit le point de départ pour la dimension de largeur du recadrage. |
 | `y` | `INT` | La coordonnée y du coin supérieur gauche de la zone de recadrage. Ce paramètre définit le point de départ pour la dimension de hauteur du recadrage. |
 
-## Types de sortie
+## Sorties
 
 | Champ | Comfy dtype | Description                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|

@@ -1,6 +1,7 @@
 
 Le nœud KSampler est conçu pour des opérations d'échantillonnage avancées au sein des modèles génératifs, permettant la personnalisation des processus d'échantillonnage à travers divers paramètres. Il facilite la génération de nouveaux échantillons de données en manipulant les représentations de l'espace latent, en utilisant le conditionnement et en ajustant les niveaux de bruit.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre       | Comfy dtype | Description                                                                                                               |
 |-----------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -15,7 +16,7 @@ Le nœud KSampler est conçu pour des opérations d'échantillonnage avancées a
 | `latent_image`  | `LATENT`    | Fournit une représentation de l'espace latent à utiliser comme point de départ ou de référence pour le processus d'échantillonnage.                            |
 | `denoise`       | `FLOAT`     | Contrôle le niveau de débruitage appliqué aux échantillons, affectant la clarté et la netteté des images générées.                   |
 
-## Types de sortie
+## Sorties
 
 | Paramètre   | Comfy dtype | Description |
 |-------------|-------------|-------------|

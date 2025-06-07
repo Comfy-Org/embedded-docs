@@ -1,7 +1,6 @@
+The `ImageBlur` node applies a Gaussian blur to an image, allowing for the softening of edges and reduction of detail and noise. It provides control over the intensity and spread of the blur through parameters.
 
-The ImageBlur node applies a Gaussian blur to an image, allowing for the softening of edges and reduction of detail and noise. It provides control over the intensity and spread of the blur through parameters.
-
-## Input types
+## Inputs
 
 | Field          | Comfy dtype | Description                                                                   |
 |----------------|-------------|-------------------------------------------------------------------------------|
@@ -9,7 +8,7 @@ The ImageBlur node applies a Gaussian blur to an image, allowing for the softeni
 | `blur_radius`  | `INT`       | Determines the radius of the blur effect. A larger radius results in a more pronounced blur. |
 | `sigma`        | `FLOAT`     | Controls the spread of the blur. A higher sigma value means the blur will affect a wider area around each pixel. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

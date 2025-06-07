@@ -1,6 +1,7 @@
 
 The PorterDuffImageComposite node is designed to perform image compositing using the Porter-Duff compositing operators. It allows for the combination of source and destination images according to various blending modes, enabling the creation of complex visual effects by manipulating image transparency and overlaying images in creative ways.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 | --------- | ------------ | ----------- |
@@ -10,7 +11,7 @@ The PorterDuffImageComposite node is designed to perform image compositing using
 | `destination_alpha` | `MASK` | The alpha channel of the destination image, defining the transparency of the destination image's pixels. It influences the blending of the source and destination images. |
 | `mode` | `COMBO[STRING]` | The Porter-Duff compositing mode to apply, which determines how the source and destination images are blended together. Each mode creates different visual effects. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 | --------- | ------------ | ----------- |

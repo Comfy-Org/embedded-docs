@@ -3,14 +3,15 @@ El nodo CLIPTextEncode está diseñado para codificar entradas textuales utiliza
 Además de los prompts de texto normales, también puedes usar modelos de incrustación. Por ejemplo, si agregas un modelo de incrustación en el directorio `ComfyUI/models/embeddings`, puedes usar este modelo en el prompt.
 
 Por ejemplo, si el nombre del modelo correspondiente es `EasyNegative`, puedes usar `embedding:EasyNegative,` en el prompt para usar este modelo correspondiente.
-## Tipos de entrada 
+
+## Entradas
 
 | Parámetro | Tipo Comfy | Descripción |
 |-----------|-------------|-------------|
 | `text`    | `STRING`    | El parámetro 'text' es la entrada textual que será codificada. Juega un papel crucial en la determinación del vector de condicionamiento de salida, ya que es la fuente principal de información para el proceso de codificación. |
 | `clip`    | `CLIP`      | El parámetro 'clip' representa el modelo CLIP utilizado para la tokenización y codificación de texto. Es esencial para convertir la entrada textual en un vector de condicionamiento, influyendo en la calidad y relevancia de la salida generada. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Tipo Comfy  | Descripción |
 |-----------|--------------|-------------|

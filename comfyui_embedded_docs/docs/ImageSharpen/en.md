@@ -1,7 +1,6 @@
-
 The ImageSharpen node enhances the clarity of an image by accentuating its edges and details. It applies a sharpening filter to the image, which can be adjusted in intensity and radius, thereby making the image appear more defined and crisp.
 
-## Input types
+## Inputs
 
 | Field          | Comfy dtype | Description                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
@@ -10,7 +9,7 @@ The ImageSharpen node enhances the clarity of an image by accentuating its edges
 | `sigma`        | `FLOAT`     | Controls the spread of the sharpening effect. A higher sigma value results in a smoother transition at the edges, while a lower sigma makes the sharpening more localized. |
 | `alpha`        | `FLOAT`     | Adjusts the intensity of the sharpening effect. Higher alpha values result in a stronger sharpening effect. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

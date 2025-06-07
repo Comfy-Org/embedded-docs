@@ -1,6 +1,7 @@
 
 This node specializes in combining two mask inputs through a variety of operations such as addition, subtraction, and logical operations, to produce a new, modified mask. It abstractly handles the manipulation of mask data to achieve complex masking effects, serving as a crucial component in mask-based image editing and processing workflows.
-## Input types
+
+## Inputs
 
 | Parameter    | Comfy dtype | Description                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +11,7 @@ This node specializes in combining two mask inputs through a variety of operatio
 | `y`          | INT         | The vertical offset at which the source mask will be applied to the destination mask, affecting the positioning of the composite result.         |
 | `operation`  | COMBO[STRING]| Specifies the type of operation to apply between the destination and source masks, such as 'add', 'subtract', or logical operations, determining the nature of the composite effect. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |

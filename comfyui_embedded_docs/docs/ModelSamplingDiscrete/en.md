@@ -1,6 +1,7 @@
 
 This node is designed to modify the sampling behavior of a model by applying a discrete sampling strategy. It allows for the selection of different sampling methods, such as epsilon, v_prediction, lcm, or x0, and optionally adjusts the model's noise reduction strategy based on the zero-shot noise ratio (zsnr) setting.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Python dtype     | Description |
 |-----------|--------------|-------------------|-------------|
@@ -8,7 +9,7 @@ This node is designed to modify the sampling behavior of a model by applying a d
 | `sampling`| `COMBO[STRING]` | `str`           | Specifies the discrete sampling method to be applied to the model. The choice of method affects how the model generates samples, offering different strategies for sampling. |
 | `zsnr`    | `BOOLEAN`   | `bool`           | A boolean flag that, when enabled, adjusts the model's noise reduction strategy based on the zero-shot noise ratio. This can influence the quality and characteristics of the generated samples. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Python dtype     | Description |
 |-----------|-------------|-------------------|-------------|

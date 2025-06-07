@@ -1,6 +1,6 @@
 Ce nœud se spécialise dans l'affinage de l'encodage des entrées textuelles en utilisant les modèles CLIP, améliorant le conditionnement pour les tâches génératives en incorporant des scores esthétiques et des dimensions.
 
-## Types d'entrée de CLIPTextEncodeSDXLRefiner
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ Ce nœud se spécialise dans l'affinage de l'encodage des entrées textuelles en
 | `height` | `INT` | Détermine la hauteur du conditionnement de sortie, influençant les dimensions du contenu généré. |
 | `text` | `STRING` | L'entrée textuelle à encoder, servant de descripteur de contenu principal pour le conditionnement. |
 
-## Types de sortie de CLIPTextEncodeSDXLRefiner
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
+Le nœud `ImageBlur` applique un flou gaussien à une image, permettant d'adoucir les bords et de réduire les détails et le bruit. Il offre un contrôle sur l'intensité et l'étendue du flou via des paramètres.
 
-Le nœud ImageBlur applique un flou gaussien à une image, permettant d'adoucir les bords et de réduire les détails et le bruit. Il offre un contrôle sur l'intensité et l'étendue du flou via des paramètres.
-## Types d'entrée
+## Entrées
 
 | Champ          | Comfy dtype | Description                                                                   |
 |----------------|-------------|-------------------------------------------------------------------------------|
@@ -8,7 +8,7 @@ Le nœud ImageBlur applique un flou gaussien à une image, permettant d'adoucir 
 | `blur_radius`  | `INT`       | Détermine le rayon de l'effet de flou. Un rayon plus grand entraîne un flou plus prononcé. |
 | `sigma`        | `FLOAT`     | Contrôle l'étendue du flou. Une valeur de sigma plus élevée signifie que le flou affectera une zone plus large autour de chaque pixel. |
 
-## Types de sortie
+## Sorties
 
 | Champ | Comfy dtype | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

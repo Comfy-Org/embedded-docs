@@ -1,6 +1,7 @@
 
 Este nodo está diseñado para codificar imágenes en una representación latente adecuada para tareas de relleno, incorporando pasos de preprocesamiento adicionales para ajustar la imagen de entrada y la máscara para una codificación óptima por el modelo VAE.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro      | Comfy dtype | Descripción |
 |----------------|-------------|-------------|
@@ -9,7 +10,7 @@ Este nodo está diseñado para codificar imágenes en una representación latent
 | `mask`         | `MASK`      | Una máscara que indica las regiones de la imagen de entrada que se rellenarán. Se utiliza para modificar la imagen antes de la codificación, asegurando que el VAE se enfoque en las áreas relevantes. |
 | `grow_mask_by` | `INT`       | Especifica cuánto expandir la máscara de relleno para asegurar transiciones fluidas en el espacio latente. Un valor mayor incrementa el área afectada por el relleno. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

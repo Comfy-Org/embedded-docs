@@ -1,6 +1,7 @@
 
 This node is designed to extract a specific subset of latent samples from a given batch based on the specified batch index and length. It allows for selective processing of latent samples, facilitating operations on smaller segments of the batch for efficiency or targeted manipulation.
-## Input types
+
+## Inputs
 
 | Parameter     | Comfy dtype | Description |
 |---------------|-------------|-------------|
@@ -8,7 +9,7 @@ This node is designed to extract a specific subset of latent samples from a give
 | `batch_index` | `INT`       | Specifies the starting index within the batch from which the subset of samples will begin. This parameter enables targeted extraction of samples from specific positions in the batch. |
 | `length`      | `INT`       | Defines the number of samples to be extracted from the specified starting index. This parameter controls the size of the subset to be processed, allowing for flexible manipulation of batch segments. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

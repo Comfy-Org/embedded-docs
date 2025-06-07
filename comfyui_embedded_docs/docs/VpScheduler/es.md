@@ -1,6 +1,7 @@
 
 El nodo VPScheduler está diseñado para generar una secuencia de niveles de ruido (sigmas) basada en el método de programación de Preservación de Varianza (VP). Esta secuencia es crucial para guiar el proceso de eliminación de ruido en modelos de difusión, permitiendo la generación controlada de imágenes u otros tipos de datos.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro   | Comfy dtype | Descripción                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ El nodo VPScheduler está diseñado para generar una secuencia de niveles de rui
 | `beta_min`  | FLOAT       | Establece el límite mínimo para el nivel de ruido, asegurando que el ruido no caiga por debajo de un cierto umbral.                              |
 | `eps_s`     | FLOAT       | Ajusta el valor inicial de epsilon, afinando el nivel de ruido inicial en el proceso de difusión.                                    |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro   | Comfy dtype | Descripción                                                                                   |
 |-------------|-------------|-----------------------------------------------------------------------------------------------|

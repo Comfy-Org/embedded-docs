@@ -1,13 +1,13 @@
 El nodo CheckpointLoader está diseñado para operaciones de carga avanzadas, específicamente para cargar puntos de control de modelos junto con sus configuraciones. Facilita la recuperación de componentes del modelo necesarios para inicializar y ejecutar modelos generativos, incluyendo configuraciones y puntos de control desde directorios especificados.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro    | Tipo Comfy  | Descripción |
 |--------------|--------------|-------------|
 | `config_name` | `COMBO[STRING]` | Especifica el nombre del archivo de configuración a utilizar. Esto es crucial para determinar los parámetros y configuraciones del modelo, afectando el comportamiento y rendimiento del mismo. |
 | `ckpt_name`  | `COMBO[STRING]` | Indica el nombre del archivo de punto de control a cargar. Esto influye directamente en el estado del modelo que se está inicializando, impactando sus pesos y sesgos iniciales. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Tipo Comfy | Descripción |
 |-----------|-------------|-------------|

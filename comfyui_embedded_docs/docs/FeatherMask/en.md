@@ -1,6 +1,6 @@
-The FeatherMask node applies a feathering effect to the edges of a given mask, smoothly transitioning the mask's edges by adjusting their opacity based on specified distances from each edge. This creates a softer, more blended edge effect.
+The `FeatherMask` node applies a feathering effect to the edges of a given mask, smoothly transitioning the mask's edges by adjusting their opacity based on specified distances from each edge. This creates a softer, more blended edge effect.
 
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|--------------|-------------|
@@ -10,7 +10,7 @@ The FeatherMask node applies a feathering effect to the edges of a given mask, s
 | `right`   | INT          | Specifies the distance from the right edge within which the feathering effect will be applied. |
 | `bottom`  | INT          | Specifies the distance from the bottom edge within which the feathering effect will be applied. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|--------------|-------------|

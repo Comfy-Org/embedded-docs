@@ -1,6 +1,6 @@
 The CheckpointSave node is designed for saving the state of various model components, including models, CLIP, and VAE, into a checkpoint file. This functionality is crucial for preserving the training progress or configuration of models for later use or sharing.
 
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -9,6 +9,6 @@ The CheckpointSave node is designed for saving the state of various model compon
 | `vae`     | `VAE`       | The vae parameter is for the Variational Autoencoder (VAE) model, enabling its state to be saved for future use or analysis alongside the main model and CLIP. |
 | `filename_prefix` | `STRING` | This parameter specifies the prefix for the filename under which the checkpoint will be saved, providing a means to organize and identify saved checkpoints. |
 
-## Output types
+## Outputs
 
 This node will output a checkpoint file, and the corresponding output file path is `output/checkpoints/` directory

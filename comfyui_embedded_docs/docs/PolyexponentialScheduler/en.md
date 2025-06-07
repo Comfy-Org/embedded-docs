@@ -1,6 +1,7 @@
 
 The PolyexponentialScheduler node is designed to generate a sequence of noise levels (sigmas) based on a polyexponential noise schedule. This schedule is a polynomial function in the logarithm of sigma, allowing for a flexible and customizable progression of noise levels throughout the diffusion process.
-## Input types
+
+## Inputs
 
 | Parameter   | Comfy dtype | Description                                                                                                                                                                                                                                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ The PolyexponentialScheduler node is designed to generate a sequence of noise le
 | `sigma_min` | FLOAT       | The minimum noise level, setting the lower bound of the noise schedule.                                                                                                                                                                                                                                                                                                                                 |
 | `rho`       | FLOAT       | A parameter that controls the shape of the polyexponential noise schedule, influencing how noise levels progress between the minimum and maximum values.                                                                                                                                                                                                               |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|

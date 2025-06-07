@@ -1,6 +1,7 @@
 
 El nodo LatentCompositeMasked está diseñado para mezclar dos representaciones latentes en coordenadas especificadas, utilizando opcionalmente una máscara para una composición más controlada. Este nodo permite la creación de imágenes latentes complejas al superponer partes de una imagen sobre otra, con la capacidad de redimensionar la imagen fuente para un ajuste perfecto.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -11,7 +12,7 @@ El nodo LatentCompositeMasked está diseñado para mezclar dos representaciones 
 | `resize_source` | `BOOLEAN` | Un indicador booleano que indica si la representación latente de la fuente debe ser redimensionada para coincidir con las dimensiones del destino antes de la composición. |
 | `mask` | `MASK`     | Una máscara opcional que se puede usar para controlar la mezcla de la fuente sobre el destino. La máscara define qué partes de la fuente serán visibles en la composición final. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

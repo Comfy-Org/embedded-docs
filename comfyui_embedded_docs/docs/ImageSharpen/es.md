@@ -1,7 +1,6 @@
-
 El nodo ImageSharpen mejora la claridad de una imagen acentuando sus bordes y detalles. Aplica un filtro de afilado a la imagen, que se puede ajustar en intensidad y radio, haciendo que la imagen parezca más definida y nítida.
 
-## Tipos de entrada
+## Entradas
 
 | Campo          | Comfy dtype | Descripción                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
@@ -10,7 +9,7 @@ El nodo ImageSharpen mejora la claridad de una imagen acentuando sus bordes y de
 | `sigma`        | `FLOAT`     | Controla la extensión del efecto de afilado. Un valor de sigma más alto resulta en una transición más suave en los bordes, mientras que un sigma más bajo hace que el afilado sea más localizado. |
 | `alpha`        | `FLOAT`     | Ajusta la intensidad del efecto de afilado. Valores de alpha más altos resultan en un efecto de afilado más fuerte. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

@@ -1,6 +1,7 @@
 
 The LatentUpscaleBy node is designed for upscaling latent representations of images. It allows for the adjustment of the scale factor and the method of upscaling, providing flexibility in enhancing the resolution of latent samples.
-## Input types
+
+## Inputs
 
 | Parameter     | Comfy dtype  | Description |
 |---------------|--------------|-------------|
@@ -8,7 +9,7 @@ The LatentUpscaleBy node is designed for upscaling latent representations of ima
 | `upscale_method` | `COMBO[STRING]` | Specifies the method used for upscaling the latent samples. The choice of method can significantly affect the quality and characteristics of the upscaled output. |
 | `scale_by`    | `FLOAT`      | Determines the factor by which the latent samples are scaled. This parameter directly influences the resolution of the output, allowing for precise control over the upscaling process. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

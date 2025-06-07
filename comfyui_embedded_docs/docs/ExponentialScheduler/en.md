@@ -1,6 +1,6 @@
-The ExponentialScheduler node is designed to generate a sequence of sigma values following an exponential schedule for diffusion sampling processes. It provides a customizable approach to control the noise levels applied at each step of the diffusion process, allowing for fine-tuning of the sampling behavior.
+The `ExponentialScheduler` node is designed to generate a sequence of sigma values following an exponential schedule for diffusion sampling processes. It provides a customizable approach to control the noise levels applied at each step of the diffusion process, allowing for fine-tuning of the sampling behavior.
 
-## Input types
+## Inputs
 
 | Parameter   | Comfy dtype | Description                                                                                   |
 |-------------|-------------|---------------------------------------------------------------------------------------------|
@@ -8,7 +8,7 @@ The ExponentialScheduler node is designed to generate a sequence of sigma values
 | `sigma_max` | FLOAT       | Defines the maximum sigma value, setting the upper limit of noise intensity in the diffusion process. It plays a crucial role in determining the range of noise levels applied. |
 | `sigma_min` | FLOAT       | Sets the minimum sigma value, establishing the lower boundary of noise intensity. This parameter helps in fine-tuning the starting point of the noise application. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description                                                                                   |
 |-----------|-------------|---------------------------------------------------------------------------------------------|

@@ -36,7 +36,6 @@
   
   이 메서드는 `clip`, `bert`, `mt5xl`을 매개변수로 받습니다. 먼저 `bert`를 토큰화하고, 그 다음 `mt5xl`을 토큰화하여 결과를 `tokens` 딕셔너리에 저장합니다. 마지막으로 `clip.encode_from_tokens_scheduled` 메서드를 사용하여 토큰을 조건으로 인코딩합니다.
 
-
 ## CLIP Text Encode Hunyuan DiT 노드 관련 확장 내용
 
 ### BERT (Bidirectional Encoder Representations from Transformers)
@@ -83,10 +82,10 @@ mT5-XL은 T5 모델의 다국어 버전으로, 여러 언어 처리를 지원하
 
 1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805)
    - **설명**: 이 기초 논문은 광범위한 NLP 작업에서 최첨단 결과를 달성하는 트랜스포머 기반 모델인 BERT를 소개합니다.
-   
+
 2. [mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer](https://aclanthology.org/2021.naacl-main.41.pdf)
    - **설명**: 이 논문은 101개 언어를 포함하는 새로운 Common Crawl 기반 데이터셋으로 학습된 T5의 다국어 변형인 mT5를 소개합니다.
-   
+
 3. [mLongT5: A Multilingual and Efficient Text-To-Text Transformer for Longer Sequences](https://arxiv.org/pdf/2112.08760)
    - **설명**: 이 연구는 더 긴 입력 시퀀스를 효율적으로 처리하도록 설계된 다국어 모델인 mLongT5를 개발합니다.
 

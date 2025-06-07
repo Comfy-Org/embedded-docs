@@ -1,6 +1,6 @@
-
 El nodo LatentComposite está diseñado para mezclar o fusionar dos representaciones latentes en una sola salida. Este proceso es esencial para crear imágenes o características compuestas combinando las características de las latentes de entrada de manera controlada.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro    | Comfy dtype | Descripción |
 |--------------|-------------|-------------|
@@ -10,7 +10,7 @@ El nodo LatentComposite está diseñado para mezclar o fusionar dos representaci
 | `y`          | `INT`      | La coordenada y (posición vertical) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación vertical del compuesto. |
 | `feather`    | `INT`      | Un booleano que indica si la latente 'samples_from' debe ser redimensionada para coincidir con 'samples_to' antes de componer. Esto puede afectar la escala y proporción del resultado compuesto. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

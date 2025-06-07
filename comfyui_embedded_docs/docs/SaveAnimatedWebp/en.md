@@ -1,7 +1,7 @@
 
 This node is designed for saving a sequence of images as an animated WEBP file. It handles the aggregation of individual frames into a cohesive animation, applying specified metadata, and optimizing the output based on quality and compression settings.
 
-## Input types
+## Inputs
 
 | Field             | Comfy dtype | Description                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
@@ -12,7 +12,7 @@ This node is designed for saving a sequence of images as an animated WEBP file. 
 | `quality`         | `INT`       | A value between 0 and 100 that sets the compression quality level, with higher values resulting in better image quality but larger file sizes. |
 | `method`          | `COMBO[STRING]` | Specifies the compression method to use, which can impact the encoding speed and file size. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|

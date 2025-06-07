@@ -1,6 +1,7 @@
 
 The VPScheduler node is designed to generate a sequence of noise levels (sigmas) based on the Variance Preserving (VP) scheduling method. This sequence is crucial for guiding the denoising process in diffusion models, allowing for controlled generation of images or other data types.
-## Input types
+
+## Inputs
 
 | Parameter   | Comfy dtype | Description                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ The VPScheduler node is designed to generate a sequence of noise levels (sigmas)
 | `beta_min`  | FLOAT       | Sets the minimum boundary for the noise level, ensuring the noise does not fall below a certain threshold.                              |
 | `eps_s`     | FLOAT       | Adjusts the starting epsilon value, fine-tuning the initial noise level in the diffusion process.                                    |
 
-## Output types
+## Outputs
 
 | Parameter   | Comfy dtype | Description                                                                                   |
 |-------------|-------------|-----------------------------------------------------------------------------------------------|

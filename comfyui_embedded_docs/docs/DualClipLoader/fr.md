@@ -1,6 +1,6 @@
 Le nœud DualCLIPLoader est conçu pour charger deux modèles CLIP simultanément, facilitant les opérations nécessitant l'intégration ou la comparaison des caractéristiques des deux modèles.
 
-## Types d'entrée - Dual CLIP Loader
+## Entrées
 
 | Paramètre    | Comfy dtype  | Description |
 |--------------|--------------|-------------|
@@ -10,11 +10,12 @@ Le nœud DualCLIPLoader est conçu pour charger deux modèles CLIP simultanémen
 
 * L'ordre de chargement n'affecte pas l'effet de sortie
 
-## Types de sortie - Dual CLIP Loader
+## Sorties
 
 | Paramètre | Comfy dtype  | Description |
 |-----------|--------------|-------------|
 | `clip`    | `CLIP`       | La sortie est un modèle CLIP combiné qui intègre les caractéristiques ou fonctionnalités des deux modèles CLIP spécifiés. |
 
-## Exemple de flux de travail - Dual CLIP Loader
-Le flux de travail original est cité de https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP
+## Exemple de flux de travail
+
+Le flux de travail original est cité de <https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP>

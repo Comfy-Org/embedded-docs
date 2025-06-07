@@ -6,8 +6,7 @@ Las funciones principales del nodo `CLIPTextEncodeHunyuanDiT` son:
 
 Este nodo puede verse como un "traductor de lenguaje" que convierte el texto de entrada del usuario (ya sea en inglés u otros idiomas) en "lenguaje máquina" que los modelos de IA pueden entender, permitiendo que el modelo genere contenido correspondiente basado en estas condiciones.
 
-
-## Tipos de Entrada de CLIP Text Encode Hunyuan DiT
+## Entradas
 
 | Parámetro | Tipo de Datos Comfy | Descripción |
 | --------- | ------------------ | ----------- |
@@ -18,7 +17,7 @@ Este nodo puede verse como un "traductor de lenguaje" que convierte el texto de 
 - **Parámetro `bert`**: Adecuado para entrada de texto en inglés. Se recomienda ingresar texto conciso con contexto para ayudar al nodo a generar representaciones de tokens más precisas y significativas.
 - **Parámetro `mt5xl`**: Adecuado para entrada de texto multilingüe. Puede ingresar texto en cualquier idioma para ayudar al modelo a comprender tareas multilingües.
 
-## Tipos de Salida de CLIP Text Encode Hunyuan DiT
+## Salidas
 
 | Parámetro | Tipo de Datos Comfy | Descripción |
 | --------- | ------------------ | ----------- |
@@ -29,7 +28,6 @@ Este nodo puede verse como un "traductor de lenguaje" que convierte el texto de 
 - **Método de Codificación**: `encode`
   
   Este método acepta `clip`, `bert` y `mt5xl` como parámetros. Primero, tokeniza `bert`, luego tokeniza `mt5xl`, y almacena los resultados en un diccionario `tokens`. Finalmente, utiliza el método `clip.encode_from_tokens_scheduled` para codificar los tokens en condiciones.
-
 
 ## Contenido Extendido para el Nodo CLIP Text Encode Hunyuan DiT
 
@@ -77,10 +75,10 @@ Unifica todas las tareas de NLP como transformaciones texto-a-texto, capaz de ma
 
 1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805)
    - **Descripción**: Este artículo fundamental introduce BERT, un modelo basado en transformers que logra resultados estado del arte en una amplia gama de tareas NLP.
-   
+
 2. [mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer](https://aclanthology.org/2021.naacl-main.41.pdf)
    - **Descripción**: Este artículo presenta mT5, una variante multilingüe de T5, entrenada en un nuevo conjunto de datos basado en Common Crawl que cubre 101 idiomas.
-   
+
 3. [mLongT5: A Multilingual and Efficient Text-To-Text Transformer for Longer Sequences](https://arxiv.org/pdf/2112.08760)
    - **Descripción**: Este trabajo desarrolla mLongT5, un modelo multilingüe diseñado para manejar secuencias de entrada más largas de manera eficiente.
 

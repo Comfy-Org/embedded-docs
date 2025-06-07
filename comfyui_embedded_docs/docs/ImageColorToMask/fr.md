@@ -1,13 +1,14 @@
 
-Le nœud ImageColorToMask est conçu pour convertir une couleur spécifiée dans une image en un masque. Il traite une image et une couleur cible, générant un masque où la couleur spécifiée est mise en évidence, facilitant des opérations telles que la segmentation basée sur la couleur ou l'isolement d'objets.
-## Types d'entrée
+Le nœud `ImageColorToMask` est conçu pour convertir une couleur spécifiée dans une image en un masque. Il traite une image et une couleur cible, générant un masque où la couleur spécifiée est mise en évidence, facilitant des opérations telles que la segmentation basée sur la couleur ou l'isolement d'objets.
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | Le paramètre 'image' représente l'image d'entrée à traiter. Il est crucial pour déterminer les zones de l'image qui correspondent à la couleur spécifiée à convertir en masque. |
 | `color`   | `INT`       | Le paramètre 'color' spécifie la couleur cible dans l'image à convertir en masque. Il joue un rôle clé dans l'identification des zones de couleur spécifiques à mettre en évidence dans le masque résultant. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

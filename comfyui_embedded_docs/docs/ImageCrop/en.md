@@ -1,6 +1,6 @@
-The ImageCrop node is designed for cropping images to a specified width and height starting from a given x and y coordinate. This functionality is essential for focusing on specific regions of an image or for adjusting the image size to meet certain requirements.
+The `ImageCrop` node is designed for cropping images to a specified width and height starting from a given x and y coordinate. This functionality is essential for focusing on specific regions of an image or for adjusting the image size to meet certain requirements.
 
-## Input types
+## Inputs
 
 | Field | Comfy dtype | Description                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|
@@ -10,7 +10,7 @@ The ImageCrop node is designed for cropping images to a specified width and heig
 | `x` | `INT` | The x-coordinate of the top-left corner of the cropping area. This parameter sets the starting point for the width dimension of the crop. |
 | `y` | `INT` | The y-coordinate of the top-left corner of the cropping area. This parameter sets the starting point for the height dimension of the crop. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|

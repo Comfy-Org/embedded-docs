@@ -2,7 +2,7 @@
 **Función del nodo:** El nodo `Save Image-Guardar Imagen` se utiliza principalmente para guardar imágenes en la carpeta **output** de ComfyUI. Si solo desea previsualizar la imagen durante el proceso intermedio en lugar de guardarla, puede usar el nodo `Preview Image-Previsualizar Imagen`.
 Ubicación de guardado predeterminada: `ComfyUI/output/`
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -12,6 +12,7 @@ Ubicación de guardado predeterminada: `ComfyUI/output/`
 ## Opciones del Menú Contextual
 
 Después de completar la generación de la imagen, al hacer clic derecho en el menú correspondiente, se proporcionan las siguientes opciones y funciones específicas del nodo:
+
 | Nombre de la Opción | Función |
 |---------------------|----------|
 | `Save Image-Guardar Imagen` | Guardar la imagen localmente |

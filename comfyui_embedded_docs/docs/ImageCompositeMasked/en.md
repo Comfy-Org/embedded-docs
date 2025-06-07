@@ -1,6 +1,7 @@
-The ImageCompositeMasked node is designed for compositing images, allowing for the overlay of a source image onto a destination image at specified coordinates, with optional resizing and masking.
+The `ImageCompositeMasked` node is designed for compositing images, allowing for the overlay of a source image onto a destination image at specified coordinates, with optional resizing and masking.
 
-## Input types
+## Inputs
+
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `destination` | `IMAGE` | The destination image onto which the source image will be composited. It serves as the background for the composite operation. |
@@ -10,7 +11,7 @@ The ImageCompositeMasked node is designed for compositing images, allowing for t
 | `resize_source` | `BOOLEAN` | A boolean flag indicating whether the source image should be resized to match the destination image's dimensions. |
 | `mask` | `MASK` | An optional mask that specifies which parts of the source image should be composited onto the destination image. This allows for more complex compositing operations, such as blending or partial overlays. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

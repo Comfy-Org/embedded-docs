@@ -1,16 +1,14 @@
-Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/checkpoints`, 
-et il peut également lire les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. 
-Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
-
+Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/checkpoints`, et il peut également lire les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
 
 Ce nœud est spécialisé dans le chargement de checkpoints spécifiquement pour les modèles basés sur l'image dans les flux de travail de génération vidéo. Il récupère et configure efficacement les composants nécessaires à partir d'un checkpoint donné, en se concentrant sur les aspects liés à l'image du modèle.
-## Types d'entrée
+
+## Entrées
 
 | Champ      | Comfy dtype | Description                                                                       |
 |------------|-------------|-----------------------------------------------------------------------------------|
 | `ckpt_name`| `COMBO[STRING]` | Spécifie le nom du checkpoint à charger, crucial pour identifier et récupérer le fichier de checkpoint correct à partir d'une liste prédéfinie. |
 
-## Types de sortie
+## Sorties
 
 | Champ     | Comfy dtype | Description                                                                                   |
 |-----------|-------------|-----------------------------------------------------------------------------------------------|

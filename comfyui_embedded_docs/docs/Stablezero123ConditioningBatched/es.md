@@ -1,6 +1,7 @@
 
 Este nodo está diseñado para procesar información de condicionamiento de manera por lotes, específicamente adaptado para el modelo StableZero123. Se centra en manejar eficientemente múltiples conjuntos de datos de condicionamiento simultáneamente, optimizando el flujo de trabajo para escenarios donde el procesamiento por lotes es crucial.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro             | Tipo Comfy  | Descripción |
 |----------------------|--------------|-------------|
@@ -15,7 +16,7 @@ Este nodo está diseñado para procesar información de condicionamiento de mane
 | `elevation_batch_increment` | `FLOAT` | El cambio incremental en el ángulo de elevación a través del lote, permitiendo perspectivas variadas. |
 | `azimuth_batch_increment` | `FLOAT` | El cambio incremental en el ángulo de acimut a través del lote, permitiendo orientaciones variadas. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro     | Tipo Comfy  | Descripción |
 |---------------|--------------|-------------|

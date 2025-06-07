@@ -1,7 +1,6 @@
-
 El nodo ImageScaleToTotalPixels está diseñado para redimensionar imágenes a un número total de píxeles especificado mientras se mantiene la relación de aspecto. Ofrece varios métodos para escalar la imagen y lograr el recuento de píxeles deseado.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro       | Comfy dtype | Descripción                                                                |
 |-----------------|-------------|----------------------------------------------------------------------------|
@@ -9,7 +8,7 @@ El nodo ImageScaleToTotalPixels está diseñado para redimensionar imágenes a u
 | `upscale_method`| `COMBO[STRING]` | El método utilizado para escalar la imagen. Afecta la calidad y las características de la imagen escalada. |
 | `megapixels`    | `FLOAT`     | El tamaño objetivo de la imagen en megapíxeles. Esto determina el número total de píxeles en la imagen escalada. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción                                                           |
 |-----------|-------------|-----------------------------------------------------------------------|

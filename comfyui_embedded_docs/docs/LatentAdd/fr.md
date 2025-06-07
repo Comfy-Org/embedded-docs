@@ -1,13 +1,14 @@
 
 Le nœud LatentAdd est conçu pour l'addition de deux représentations latentes. Il facilite la combinaison des caractéristiques ou des traits encodés dans ces représentations en effectuant une addition élément par élément.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre    | Comfy dtype | Description |
 |--------------|-------------|-------------|
 | `samples1`   | `LATENT`    | Le premier ensemble d'échantillons latents à ajouter. Il représente l'une des entrées dont les caractéristiques doivent être combinées avec un autre ensemble d'échantillons latents. |
 | `samples2`   | `LATENT`    | Le second ensemble d'échantillons latents à ajouter. Il sert d'autre entrée dont les caractéristiques sont combinées avec le premier ensemble d'échantillons latents par addition élément par élément. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

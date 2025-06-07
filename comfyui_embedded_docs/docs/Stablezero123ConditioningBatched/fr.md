@@ -1,6 +1,7 @@
 
 Ce nœud est conçu pour traiter les informations de conditionnement de manière groupée, spécifiquement adapté au modèle StableZero123. Il se concentre sur la gestion efficace de plusieurs ensembles de données de conditionnement simultanément, optimisant le flux de travail pour les scénarios où le traitement par lots est crucial.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre             | Comfy dtype  | Description |
 |----------------------|--------------|-------------|
@@ -15,7 +16,7 @@ Ce nœud est conçu pour traiter les informations de conditionnement de manière
 | `elevation_batch_increment` | `FLOAT` | Le changement incrémental de l'angle d'élévation à travers le lot, permettant des perspectives variées. |
 | `azimuth_batch_increment` | `FLOAT` | Le changement incrémental de l'angle d'azimut à travers le lot, permettant des orientations variées. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre     | Comfy dtype  | Description |
 |---------------|--------------|-------------|

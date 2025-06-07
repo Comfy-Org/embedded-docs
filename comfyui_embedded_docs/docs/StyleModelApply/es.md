@@ -1,5 +1,6 @@
 
 Este nodo aplica un modelo de estilo a una condición dada, mejorando o alterando su estilo basado en la salida de un modelo de visión CLIP. Integra la condición del modelo de estilo en la condición existente, permitiendo una fusión fluida de estilos en el proceso de generación.
+
 ## Input types (Tipos de entrada)
 
 ### Required (Requerido)

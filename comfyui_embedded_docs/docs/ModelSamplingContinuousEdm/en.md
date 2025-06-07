@@ -1,6 +1,8 @@
 
 This node is designed to enhance a model's sampling capabilities by integrating continuous EDM (Energy-based Diffusion Models) sampling techniques. It allows for the dynamic adjustment of the noise levels within the model's sampling process, offering a more refined control over the generation quality and diversity.
-## Input types
+
+## Inputs
+
 | Parameter   | Comfy dtype | Python dtype        | Description |
 |-------------|--------------|----------------------|-------------|
 | `model`     | `MODEL`     | `torch.nn.Module`   | The model to be enhanced with continuous EDM sampling capabilities. It serves as the foundation for applying the advanced sampling techniques. |
@@ -8,7 +10,7 @@ This node is designed to enhance a model's sampling capabilities by integrating 
 | `sigma_max` | `FLOAT`     | `float`             | The maximum sigma value for noise level, allowing for upper bound control in the noise injection process during sampling. |
 | `sigma_min` | `FLOAT`     | `float`             | The minimum sigma value for noise level, setting the lower limit for noise injection, thus affecting the model's sampling precision. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Python dtype        | Description |
 |-----------|-------------|----------------------|-------------|

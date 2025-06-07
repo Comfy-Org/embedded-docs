@@ -1,6 +1,7 @@
 
 Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deux ensembles d'échantillons latents en fonction d'un ratio spécifié, mélangeant les caractéristiques des deux ensembles pour produire un nouvel ensemble intermédiaire d'échantillons latents.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre    | Comfy dtype | Description |
 |--------------|-------------|-------------|
@@ -8,7 +9,7 @@ Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deu
 | `samples2`   | `LATENT`    | Le second ensemble d'échantillons latents à interpoler. Il sert de point d'arrivée pour le processus d'interpolation. |
 | `ratio`      | `FLOAT`     | Une valeur flottante qui détermine le poids de chaque ensemble d'échantillons dans le résultat interpolé. Un ratio de 0 produit une copie du premier ensemble, tandis qu'un ratio de 1 produit une copie du second ensemble. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

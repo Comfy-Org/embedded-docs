@@ -1,5 +1,6 @@
 
 Este nodo está diseñado para generar datos de condicionamiento para tareas de generación de video, específicamente adaptado para su uso con modelos SVD_img2vid. Toma varias entradas, incluyendo imágenes iniciales, parámetros de video y un modelo VAE para producir datos de condicionamiento que pueden ser utilizados para guiar la generación de fotogramas de video.
+
 ## Input types (Tipos de entrada)
 
 | Parameter             | Comfy dtype        | Description (Descripción) |

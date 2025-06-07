@@ -1,6 +1,6 @@
 El nodo CropMask está diseñado para recortar un área específica de una máscara dada. Permite a los usuarios definir la región de interés especificando coordenadas y dimensiones, extrayendo efectivamente una porción de la máscara para su posterior procesamiento o análisis.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -10,7 +10,7 @@ El nodo CropMask está diseñado para recortar un área específica de una másc
 | `width`   | INT         | El ancho define la extensión horizontal del área de recorte desde el punto de inicio. |
 | `height`  | INT         | La altura especifica la extensión vertical del área de recorte desde el punto de inicio. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

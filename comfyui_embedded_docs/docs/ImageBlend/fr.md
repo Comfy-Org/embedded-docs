@@ -1,7 +1,7 @@
 
-Le nœud ImageBlend est conçu pour mélanger deux images ensemble en fonction d'un mode de fusion et d'un facteur de mélange spécifiés. Il prend en charge divers modes de fusion tels que normal, multiply, screen, overlay, soft light et difference, permettant des techniques polyvalentes de manipulation et de composition d'images. Ce nœud est essentiel pour créer des images composites en ajustant l'interaction visuelle entre deux couches d'image.
+Le nœud `ImageBlend` est conçu pour mélanger deux images ensemble en fonction d'un mode de fusion et d'un facteur de mélange spécifiés. Il prend en charge divers modes de fusion tels que normal, multiply, screen, overlay, soft light et difference, permettant des techniques polyvalentes de manipulation et de composition d'images. Ce nœud est essentiel pour créer des images composites en ajustant l'interaction visuelle entre deux couches d'image.
 
-## Types d'entrée
+## Entrées
 
 | Champ         | Comfy dtype | Description                                                                       |
 |---------------|-------------|-----------------------------------------------------------------------------------|
@@ -10,7 +10,7 @@ Le nœud ImageBlend est conçu pour mélanger deux images ensemble en fonction d
 | `blend_factor`| `FLOAT`     | Détermine le poids de la deuxième image dans le mélange. Un facteur de mélange plus élevé donne plus de poids à la deuxième image dans le mélange résultant. |
 | `blend_mode`  | `COMBO[STRING]` | Spécifie la méthode de fusion des deux images. Prend en charge des modes comme normal, multiply, screen, overlay, soft light et difference, chacun produisant un effet visuel unique. |
 
-## Types de sortie
+## Sorties
 
 | Champ | Comfy dtype | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

@@ -1,13 +1,13 @@
-
 The LatentAdd node is designed for the addition of two latent representations. It facilitates the combination of features or characteristics encoded in these representations by performing element-wise addition.
-## Input types
+
+## Inputs
 
 | Parameter    | Comfy dtype | Description |
 |--------------|-------------|-------------|
 | `samples1`   | `LATENT`    | The first set of latent samples to be added. It represents one of the inputs whose features are to be combined with another set of latent samples. |
 | `samples2`   | `LATENT`    | The second set of latent samples to be added. It serves as the other input whose features are combined with the first set of latent samples through element-wise addition. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

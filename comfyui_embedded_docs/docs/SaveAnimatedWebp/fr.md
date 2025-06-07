@@ -1,7 +1,7 @@
 
 Ce nœud est conçu pour sauvegarder une séquence d'images sous forme de fichier WEBP animé. Il gère l'agrégation des cadres individuels en une animation cohérente, en appliquant les métadonnées spécifiées et en optimisant la sortie en fonction des paramètres de qualité et de compression.
 
-## Types d'entrée
+## Entrées
 
 | Champ             | Comfy dtype | Description                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
@@ -12,7 +12,7 @@ Ce nœud est conçu pour sauvegarder une séquence d'images sous forme de fichie
 | `quality`         | `INT`       | Une valeur entre 0 et 100 qui définit le niveau de qualité de compression, des valeurs plus élevées entraînant une meilleure qualité d'image mais des fichiers plus volumineux. |
 | `method`          | `COMBO[STRING]` | Spécifie la méthode de compression à utiliser, ce qui peut influencer la vitesse d'encodage et la taille du fichier. |
 
-## Types de sortie
+## Sorties
 
 | Champ | Comfy dtype | Description                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|

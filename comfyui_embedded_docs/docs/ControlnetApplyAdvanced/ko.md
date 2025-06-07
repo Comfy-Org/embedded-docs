@@ -1,8 +1,7 @@
-> 
 이 노드는 새로운 ComfyUI 버전에서 Apply ControlNet으로 이름이 변경되었으며, 이전 버전인 Apply ControlNet (OLD)를 대체했습니다. 이전의 Apply ControlNet (OLD)는 현재 어느 정도 활성화된 상태와 유사하므로, 이 노드에 대한 최신 문서는 `Apply ControlNet`로 이동되었습니다.
 
-
 이 노드는 이미지와 ControlNet 모델을 기반으로 조건 데이터에 고급 ControlNet 변환을 적용합니다. 생성된 콘텐츠에 대한 ControlNet의 영향을 세밀하게 조정할 수 있어, 조건에 대한 보다 정밀하고 다양한 수정이 가능합니다.
+
 ## 입력 유형
 
 | 매개변수 | Comfy dtype | 설명 |

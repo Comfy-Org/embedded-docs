@@ -1,6 +1,6 @@
 Este nodo se especializa en refinar la codificación de las entradas de texto utilizando modelos CLIP, mejorando el condicionamiento para tareas generativas al incorporar puntuaciones estéticas y dimensiones.
 
-## Tipos de entrada del Refinador de Codificación de Texto CLIP SDXL
+## Entradas
 
 | Parámetro | Tipo Comfy | Descripción |
 | --- | --- | --- |
@@ -10,8 +10,8 @@ Este nodo se especializa en refinar la codificación de las entradas de texto ut
 | `height` | `INT` | Determina la altura del condicionamiento de salida, influyendo en las dimensiones del contenido generado. |
 | `text` | `STRING` | La entrada de texto a codificar, que sirve como el descriptor principal del contenido para el condicionamiento. |
 
-## Tipos de salida del Refinador de Codificación de Texto CLIP SDXL
+## Salidas
 
 | Parámetro | Tipo Comfy | Descripción |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | La salida de condicionamiento refinada, enriquecida con puntuaciones estéticas y dimensiones para una generación de contenido mejorada. 
+| `conditioning` | `CONDITIONING` | La salida de condicionamiento refinada, enriquecida con puntuaciones estéticas y dimensiones para una generación de contenido mejorada.

@@ -1,6 +1,6 @@
-Le nœud ExponentialScheduler est conçu pour générer une séquence de valeurs sigma suivant un plan exponentiel pour les processus d'échantillonnage par diffusion. Il offre une approche personnalisable pour contrôler les niveaux de bruit appliqués à chaque étape du processus de diffusion, permettant un ajustement précis du comportement d'échantillonnage.
+Le nœud `ExponentialScheduler` est conçu pour générer une séquence de valeurs sigma suivant un plan exponentiel pour les processus d'échantillonnage par diffusion. Il offre une approche personnalisable pour contrôler les niveaux de bruit appliqués à chaque étape du processus de diffusion, permettant un ajustement précis du comportement d'échantillonnage.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre   | Comfy dtype | Description                                                                                   |
 |-------------|-------------|---------------------------------------------------------------------------------------------|
@@ -8,7 +8,7 @@ Le nœud ExponentialScheduler est conçu pour générer une séquence de valeurs
 | `sigma_max` | FLOAT       | Définit la valeur sigma maximale, fixant la limite supérieure de l'intensité du bruit dans le processus de diffusion. Il joue un rôle crucial dans la détermination de la gamme des niveaux de bruit appliqués. |
 | `sigma_min` | FLOAT       | Définit la valeur sigma minimale, établissant la limite inférieure de l'intensité du bruit. Ce paramètre aide à ajuster précisément le point de départ de l'application du bruit. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description                                                                                   |
 |-----------|-------------|---------------------------------------------------------------------------------------------|

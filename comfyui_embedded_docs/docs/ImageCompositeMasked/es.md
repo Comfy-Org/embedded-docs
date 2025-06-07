@@ -1,6 +1,7 @@
-El nodo ImageCompositeMasked está diseñado para componer imágenes, permitiendo la superposición de una imagen fuente sobre una imagen de destino en coordenadas especificadas, con redimensionamiento y enmascaramiento opcionales.
+El nodo `ImageCompositeMasked` está diseñado para componer imágenes, permitiendo la superposición de una imagen fuente sobre una imagen de destino en coordenadas especificadas, con redimensionamiento y enmascaramiento opcionales.
 
-## Tipos de entrada
+## Entradas
+
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `destination` | `IMAGE` | La imagen de destino sobre la cual se compondrá la imagen fuente. Sirve como fondo para la operación de composición. |
@@ -10,7 +11,7 @@ El nodo ImageCompositeMasked está diseñado para componer imágenes, permitiend
 | `resize_source` | `BOOLEAN` | Una bandera booleana que indica si la imagen fuente debe ser redimensionada para coincidir con las dimensiones de la imagen de destino. |
 | `mask` | `MASK` | Una máscara opcional que especifica qué partes de la imagen fuente deben componerse sobre la imagen de destino. Esto permite operaciones de composición más complejas, como mezclas o superposiciones parciales. |
 
-## Tipos de salida
+## Salidas
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

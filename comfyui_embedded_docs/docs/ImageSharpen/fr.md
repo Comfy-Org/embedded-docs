@@ -1,7 +1,6 @@
-
 Le nœud ImageSharpen améliore la clarté d'une image en accentuant ses contours et ses détails. Il applique un filtre de netteté à l'image, qui peut être ajusté en intensité et en rayon, rendant ainsi l'image plus définie et nette.
 
-## Types d'entrée
+## Entrées
 
 | Champ          | Comfy dtype | Description                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
@@ -10,7 +9,7 @@ Le nœud ImageSharpen améliore la clarté d'une image en accentuant ses contour
 | `sigma`        | `FLOAT`     | Contrôle l'étendue de l'effet de netteté. Une valeur de sigma plus élevée entraîne une transition plus douce aux contours, tandis qu'une valeur plus basse rend la netteté plus localisée. |
 | `alpha`        | `FLOAT`     | Ajuste l'intensité de l'effet de netteté. Des valeurs alpha plus élevées entraînent un effet de netteté plus fort. |
 
-## Types de sortie
+## Sorties
 
 | Champ | Comfy dtype | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

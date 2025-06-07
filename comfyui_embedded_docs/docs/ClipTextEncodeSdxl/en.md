@@ -1,5 +1,6 @@
 This node is designed to encode text inputs using the CLIP model specifically tailored for the SDXL architecture. It focuses on converting textual descriptions into a format that can be effectively utilized for generating or manipulating images, leveraging the capabilities of the CLIP model to understand and process text in the context of visual content.
-## CLIPTextEncodeSDXL Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 | --- | --- | --- |
@@ -13,7 +14,7 @@ This node is designed to encode text inputs using the CLIP model specifically ta
 | `text_g` | `STRING` | The global textual description to be encoded. This input is crucial for generating the corresponding visual representations and understanding the content described. |
 | `text_l` | `STRING` | The local textual description to be encoded. This input provides additional detail or context to the global description, enhancing the specificity of the generated or manipulated image. |
 
-## CLIPTextEncodeSDXL Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 | --- | --- | --- |

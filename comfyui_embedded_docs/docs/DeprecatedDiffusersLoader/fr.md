@@ -1,12 +1,12 @@
 Le nœud DiffusersLoader est conçu pour charger des modèles à partir de la bibliothèque diffusers, en gérant spécifiquement le chargement des modèles UNet, CLIP et VAE en fonction des chemins de modèles fournis. Il facilite l'intégration de ces modèles dans le cadre ComfyUI, permettant des fonctionnalités avancées telles que la génération d'images à partir de texte, la manipulation d'images, et plus encore.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre    | Comfy dtype  | Description |
 |--------------|--------------|-------------|
 | `model_path` | `COMBO[STRING]` | Spécifie le chemin vers le modèle à charger. Ce chemin est crucial car il détermine quel modèle sera utilisé pour les opérations ultérieures, affectant la sortie et les capacités du nœud. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

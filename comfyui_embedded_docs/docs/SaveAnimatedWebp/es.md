@@ -1,7 +1,7 @@
 
 Este nodo está diseñado para guardar una secuencia de imágenes como un archivo WEBP animado. Maneja la agregación de fotogramas individuales en una animación cohesiva, aplicando metadatos especificados y optimizando la salida según la calidad y configuraciones de compresión.
 
-## Tipos de entrada
+## Entradas
 
 | Campo             | Comfy dtype | Descripción                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
@@ -12,7 +12,7 @@ Este nodo está diseñado para guardar una secuencia de imágenes como un archiv
 | `quality`         | `INT`       | Un valor entre 0 y 100 que establece el nivel de calidad de compresión, con valores más altos resultando en mejor calidad de imagen pero tamaños de archivo más grandes. |
 | `method`          | `COMBO[STRING]` | Especifica el método de compresión a usar, lo cual puede impactar la velocidad de codificación y el tamaño del archivo. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|

@@ -1,6 +1,6 @@
 This node is designed to modify the conditioning of a generative model by applying a mask with a specified strength to certain areas. It allows for targeted adjustments within the conditioning, enabling more precise control over the generation process.
 
-## Input types
+## Inputs
 
 ### Required
 
@@ -11,7 +11,7 @@ This node is designed to modify the conditioning of a generative model by applyi
 | `strength`    | `FLOAT`      | The strength of the mask's effect on the conditioning, allowing for fine-tuning of the applied modifications. |
 | `set_cond_area` | `COMBO[STRING]` | Determines whether the mask's effect is applied to the default area or bounded by the mask itself, offering flexibility in targeting specific regions. |
 
-## Output types
+## Outputs
 
 | Parameter     | Comfy dtype  | Description |
 |---------------|--------------|-------------|

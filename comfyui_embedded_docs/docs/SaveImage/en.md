@@ -2,7 +2,7 @@
 **Node Function:** The `Save Image` node is mainly used to save images to the **output** folder in ComfyUI. If you only want to preview the image during the intermediate process rather than saving it, you can use the `Preview Image` node.
 Default save location: `ComfyUI/output/`
 
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -12,6 +12,7 @@ Default save location: `ComfyUI/output/`
 ## Right-click Menu Options
 
 After the image generation is complete, right-clicking on the corresponding menu provides the following node-specific options and functions:
+
 | Option Name | Function |
 |-------------|----------|
 | `Save Image` | Save the image locally |

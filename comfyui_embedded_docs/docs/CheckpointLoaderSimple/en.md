@@ -6,13 +6,13 @@ This node automatically detects all model files in the `ComfyUI/models/checkpoin
 2. **File Management**: Place model files in the `ComfyUI/models/checkpoints` folder, or configure other paths through extra_model_paths.yaml
 3. **Interface Refresh**: If new model files are added while ComfyUI is running, you need to refresh the browser (Ctrl+R) to see the new files in the dropdown list
 
-## Input Parameters
+## Inputs
 
 | Parameter Name | Data Type | Input Method | Default Value | Value Range | Description |
 |----------------|-----------|--------------|---------------|-------------|-------------|
 | ckpt_name | STRING | Dropdown Selection | null | All model files in checkpoints folder | Select the checkpoint model file name to load, which determines the AI model used for subsequent image generation |
 
-## Output Parameters
+## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|

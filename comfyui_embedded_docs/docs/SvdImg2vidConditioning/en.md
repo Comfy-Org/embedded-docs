@@ -1,6 +1,7 @@
 
 This node is designed for generating conditioning data for video generation tasks, specifically tailored for use with SVD_img2vid models. It takes various inputs including initial images, video parameters, and a VAE model to produce conditioning data that can be used to guide the generation of video frames.
-## Input types
+
+## Inputs
 
 | Parameter             | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
@@ -14,7 +15,7 @@ This node is designed for generating conditioning data for video generation task
 | `fps`                 | `INT`              | The frames per second (fps) rate for the video, influencing the smoothness and realism of the generated video. |
 | `augmentation_level`  | `FLOAT`            | A parameter controlling the level of augmentation applied to the initial image, affecting the diversity and variability of the generated video frames. |
 
-## Output types
+## Outputs
 
 | Parameter     | Comfy dtype        | Description |
 |---------------|--------------------|-------------|

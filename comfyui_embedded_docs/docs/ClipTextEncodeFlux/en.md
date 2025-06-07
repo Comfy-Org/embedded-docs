@@ -4,7 +4,7 @@ Multimodal Fusion: Combines the processing results from CLIP and T5XXL to create
 Generation Control: Adjusts the influence of text prompts on image generation through the guidance parameter, allowing users to find a balance between creative freedom and strict adherence to prompts.
 Conditional Data Generation: Outputs processed conditional data, which will be used in subsequent image generation processes to ensure that the generated images match the text descriptions.
 
-## Input Parameters Table
+## Inputs
 
 | Parameter Name | Data Type | Function |
 |----------------|-----------|----------|
@@ -13,7 +13,7 @@ Conditional Data Generation: Outputs processed conditional data, which will be u
 | t5xxl          | STRING    | Multi-line text input, enter natural language prompt descriptions for T5XXL model encoding |
 | guidance       | FLOAT     | Floating-point value, used to guide the generation process; higher values increase image-prompt matching but may reduce creativity |
 
-## Output Parameters Table
+## Outputs
 
 | Parameter Name | Data Type | Function |
 |----------------|-----------|----------|

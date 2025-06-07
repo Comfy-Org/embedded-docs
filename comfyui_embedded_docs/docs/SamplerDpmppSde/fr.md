@@ -1,6 +1,7 @@
 
 Ce nœud est conçu pour générer un échantillonneur pour le modèle DPM++ SDE (Équation Différentielle Stochastique). Il s'adapte aux environnements d'exécution CPU et GPU, optimisant l'implémentation de l'échantillonneur en fonction du matériel disponible.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre      | Comfy dtype | Description |
 |----------------|-------------|-------------|
@@ -9,7 +10,7 @@ Ce nœud est conçu pour générer un échantillonneur pour le modèle DPM++ SDE
 | `r`            | FLOAT       | Contrôle le ratio de réduction du bruit dans le processus d'échantillonnage, impactant la clarté et la qualité des échantillons générés.|
 | `noise_device` | COMBO[STRING]| Sélectionne l'environnement d'exécution (CPU ou GPU) pour l'échantillonneur, optimisant la performance en fonction du matériel disponible.|
 
-## Types de sortie
+## Sorties
 
 | Paramètre    | Comfy dtype | Description |
 |----------------|-------------|-------------|

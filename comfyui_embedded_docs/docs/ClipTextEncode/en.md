@@ -3,14 +3,15 @@ The CLIPTextEncode node is designed to encode textual inputs using a CLIP model,
 Besides normal text prompts, you can also use embedding models. For example, if you add an embedding model in the `ComfyUI/models/embeddings` directory, you can use this embedding model in the prompt.
 
 For example, if the corresponding model name is `EasyNegative`, you can use `embedding:EasyNegative,` in the prompt to use this corresponding model.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
 | `text`    | `STRING`    | The 'text' parameter is the textual input that will be encoded. It plays a crucial role in determining the output conditioning vector, as it is the primary source of information for the encoding process. |
 | `clip`    | `CLIP`      | The 'clip' parameter represents the CLIP model used for text tokenization and encoding. It is essential for converting the textual input into a conditioning vector, influencing the quality and relevance of the generated output. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype  | Description |
 |-----------|--------------|-------------|

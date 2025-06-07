@@ -1,6 +1,6 @@
 DualCLIPLoader 노드는 두 개의 CLIP 모델을 동시에 로드하도록 설계되어, 두 모델의 기능을 통합하거나 비교하는 작업을 용이하게 합니다.
 
-## 입력 유형 - Dual CLIP Loader
+## 입력 유형
 
 | 매개변수    | Comfy dtype  | 설명 |
 |--------------|--------------|-------------|
@@ -10,11 +10,12 @@ DualCLIPLoader 노드는 두 개의 CLIP 모델을 동시에 로드하도록 설
 
 * 로드 순서는 출력 효과에 영향을 미치지 않습니다.
 
-## 출력 유형 - Dual CLIP Loader
+## 출력 유형
 
 | 매개변수 | Comfy dtype  | 설명 |
 |-----------|--------------|-------------|
 | `clip`    | `CLIP`       | 출력은 두 개의 지정된 CLIP 모델의 기능이나 기능을 통합한 결합된 CLIP 모델입니다. |
 
-## 워크플로우 예제 - Dual CLIP Loader
-원본 워크플로우 인용: https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP
+## 워크플로우 예제
+
+원본 워크플로우 인용: <https://openart.ai/workflows/seal_harmful_40/flux/UGHBjoJgN8tLnhr7FKOP>

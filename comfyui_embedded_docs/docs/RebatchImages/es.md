@@ -1,14 +1,14 @@
 
 El nodo RebatchImages está diseñado para reorganizar un lote de imágenes en una nueva configuración de lote, ajustando el tamaño del lote según lo especificado. Este proceso es esencial para gestionar y optimizar el procesamiento de datos de imágenes en operaciones por lotes, asegurando que las imágenes se agrupen según el tamaño de lote deseado para un manejo eficiente.
 
-## Tipos de entrada
+## Entradas
 
 | Campo       | Comfy dtype | Descripción                                                                         |
 |-------------|-------------|-------------------------------------------------------------------------------------|
 | `images`    | `IMAGE`     | Una lista de imágenes que se reorganizarán. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de reorganización. |
 | `batch_size`| `INT`       | Especifica el tamaño deseado de los lotes de salida. Este parámetro influye directamente en cómo se agrupan y procesan las imágenes de entrada, impactando la estructura de la salida. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|

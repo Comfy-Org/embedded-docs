@@ -1,7 +1,6 @@
+El nodo `ImageBlend` está diseñado para mezclar dos imágenes juntas basándose en un modo de mezcla y un factor de mezcla especificados. Soporta varios modos de mezcla como normal, multiplicar, pantalla, superponer, luz suave y diferencia, permitiendo técnicas versátiles de manipulación y composición de imágenes. Este nodo es esencial para crear imágenes compuestas ajustando la interacción visual entre dos capas de imagen.
 
-El nodo ImageBlend está diseñado para mezclar dos imágenes juntas basándose en un modo de mezcla y un factor de mezcla especificados. Soporta varios modos de mezcla como normal, multiplicar, pantalla, superponer, luz suave y diferencia, permitiendo técnicas versátiles de manipulación y composición de imágenes. Este nodo es esencial para crear imágenes compuestas ajustando la interacción visual entre dos capas de imagen.
-
-## Tipos de entrada
+## Entradas
 
 | Campo         | Comfy dtype | Descripción                                                                       |
 |---------------|-------------|-----------------------------------------------------------------------------------|
@@ -10,7 +9,7 @@ El nodo ImageBlend está diseñado para mezclar dos imágenes juntas basándose 
 | `blend_factor`| `FLOAT`     | Determina el peso de la segunda imagen en la mezcla. Un factor de mezcla más alto da más prominencia a la segunda imagen en la mezcla resultante. |
 | `blend_mode`  | `COMBO[STRING]` | Especifica el método de mezcla de las dos imágenes. Soporta modos como normal, multiplicar, pantalla, superponer, luz suave y diferencia, cada uno produciendo un efecto visual único. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                              |
 |-------|-------------|--------------------------------------------------------------------------|

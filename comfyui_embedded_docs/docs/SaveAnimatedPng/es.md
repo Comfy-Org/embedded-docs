@@ -1,7 +1,7 @@
 
 El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG animadas a partir de una secuencia de fotogramas. Maneja el ensamblaje de fotogramas individuales en una animación coherente, permitiendo la personalización de la duración de los fotogramas, el bucle y la inclusión de metadatos.
 
-## Tipos de entrada
+## Entradas
 
 | Campo             | Comfy dtype | Descripción                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
@@ -10,7 +10,7 @@ El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG anima
 | `fps`             | `FLOAT`     | La tasa de fotogramas por segundo para la animación, controlando la rapidez con la que se muestran los fotogramas. |
 | `compress_level`  | `INT`       | El nivel de compresión aplicado a los archivos PNG animados, afectando el tamaño del archivo y la claridad de la imagen. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|

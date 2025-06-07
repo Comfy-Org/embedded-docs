@@ -3,7 +3,7 @@ Le nœud ModelMergeSimple est conçu pour fusionner deux modèles en mélangeant
 
 Le paramètre `ratio` détermine le ratio de mélange entre les deux modèles. Lorsque cette valeur est 1, le modèle de sortie est 100% `model1`, et lorsque cette valeur est 0, le modèle de sortie est 100% `model2`.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ Le paramètre `ratio` détermine le ratio de mélange entre les deux modèles. L
 | `model2`  | `MODEL`     | Le second modèle dont les patchs sont appliqués au premier modèle, influencés par le ratio spécifié. |
 | `ratio`   | `FLOAT`     | Lorsque cette valeur est 1, le modèle de sortie est 100% `model1`, et lorsque cette valeur est 0, le modèle de sortie est 100% `model2`. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

@@ -1,6 +1,7 @@
 
 Este nodo se especializa en mejorar la resolución de las imágenes a través de un proceso de aumento de 4x, incorporando elementos de condicionamiento para refinar la salida. Aprovecha técnicas de difusión para aumentar la resolución de las imágenes, permitiendo ajustes en la relación de escala y la augmentación de ruido para afinar el proceso de mejora.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro            | Tipo Comfy        | Descripción |
 |----------------------|--------------------|-------------|
@@ -10,10 +11,10 @@ Este nodo se especializa en mejorar la resolución de las imágenes a través de
 | `scale_ratio`        | `FLOAT`            | Determina el factor por el cual se aumenta la resolución de la imagen. Una relación de escala más alta resulta en una imagen de salida más grande, permitiendo mayor detalle y claridad. |
 | `noise_augmentation` | `FLOAT`            | Controla el nivel de augmentación de ruido aplicado durante el proceso de aumento. Esto puede usarse para introducir variabilidad y mejorar la robustez de las imágenes de salida. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro     | Tipo Comfy  | Descripción |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Los elementos de condicionamiento positivo refinados resultantes del proceso de aumento. |
 | `negative`    | `CONDITIONING` | Los elementos de condicionamiento negativo refinados resultantes del proceso de aumento. |
-| `latent`      | `LATENT`     | Una representación latente generada durante el proceso de aumento, que puede ser utilizada en procesamiento adicional o entrenamiento de modelos. 
+| `latent`      | `LATENT`     | Una representación latente generada durante el proceso de aumento, que puede ser utilizada en procesamiento adicional o entrenamiento de modelos.

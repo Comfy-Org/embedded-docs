@@ -1,6 +1,7 @@
 
 Le nœud PolyexponentialScheduler est conçu pour générer une séquence de niveaux de bruit (sigmas) basée sur un calendrier de bruit polyexponentiel. Ce calendrier est une fonction polynomiale dans le logarithme de sigma, permettant une progression flexible et personnalisable des niveaux de bruit tout au long du processus de diffusion.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre   | Comfy dtype | Description                                                                                                                                                        |
 | ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -9,7 +10,7 @@ Le nœud PolyexponentialScheduler est conçu pour générer une séquence de niv
 | `sigma_min` | FLOAT       | Le niveau de bruit minimal, fixant la limite inférieure du calendrier de bruit.                                                                                    |
 | `rho`       | FLOAT       | Un paramètre qui contrôle la forme du calendrier de bruit polyexponentiel, influençant la progression des niveaux de bruit entre les valeurs minimale et maximale. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description                                                                                                      |
 | --------- | ----------- | ---------------------------------------------------------------------------------------------------------------- |

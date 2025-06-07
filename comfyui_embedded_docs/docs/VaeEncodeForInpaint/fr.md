@@ -1,6 +1,7 @@
 
 Ce nœud est conçu pour encoder des images en une représentation latente adaptée aux tâches d'inpainting, en intégrant des étapes de prétraitement supplémentaires pour ajuster l'image d'entrée et le masque pour un encodage optimal par le modèle VAE.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -9,7 +10,7 @@ Ce nœud est conçu pour encoder des images en une représentation latente adapt
 | `mask`    | `MASK`      | Un masque indiquant les régions de l'image d'entrée à inpeindre. Il est utilisé pour modifier l'image avant l'encodage, garantissant que le VAE se concentre sur les zones pertinentes. |
 | `grow_mask_by` | `INT` | Spécifie dans quelle mesure étendre le masque d'inpainting pour assurer des transitions fluides dans l'espace latent. Une valeur plus grande augmente la zone affectée par l'inpainting. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

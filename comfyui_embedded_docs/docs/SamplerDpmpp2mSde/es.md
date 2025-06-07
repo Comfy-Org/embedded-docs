@@ -1,6 +1,7 @@
 
 Este nodo está diseñado para generar un muestrador para el modelo DPMPP_2M_SDE, permitiendo la creación de muestras basadas en tipos de solucionadores especificados, niveles de ruido y preferencias de dispositivo computacional. Abstrae las complejidades de la configuración del muestrador, proporcionando una interfaz simplificada para generar muestras con configuraciones personalizadas.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro       | Comfy dtype | Descripción                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ Este nodo está diseñado para generar un muestrador para el modelo DPMPP_2M_SDE
 | `s_noise`       | `FLOAT`     | Controla el nivel de ruido introducido durante el proceso de muestreo, influyendo en la variabilidad de las muestras generadas. |
 | `noise_device`  | `COMBO[STRING]` | Indica el dispositivo computacional ('gpu' o 'cpu') en el cual se ejecuta el proceso de generación de ruido, afectando el rendimiento y la eficiencia. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro       | Comfy dtype | Descripción                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|

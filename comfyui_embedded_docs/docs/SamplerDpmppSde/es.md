@@ -1,6 +1,7 @@
 
 Este nodo está diseñado para generar un muestrador para el modelo DPM++ SDE (Ecuación Diferencial Estocástica). Se adapta a entornos de ejecución tanto en CPU como en GPU, optimizando la implementación del muestrador según el hardware disponible.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro      | Comfy dtype | Descripción |
 |----------------|-------------|-------------|
@@ -9,7 +10,7 @@ Este nodo está diseñado para generar un muestrador para el modelo DPM++ SDE (E
 | `r`            | FLOAT       | Controla la proporción de reducción de ruido en el proceso de muestreo, impactando la claridad y calidad de las muestras generadas.|
 | `noise_device` | COMBO[STRING]| Selecciona el entorno de ejecución (CPU o GPU) para el muestrador, optimizando el rendimiento según el hardware disponible.|
 
-## Tipos de salida
+## Salidas
 
 | Parámetro    | Comfy dtype | Descripción |
 |----------------|-------------|-------------|

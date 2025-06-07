@@ -2,7 +2,7 @@
 **Fonction du nœud :** Le nœud `Save Image-Sauvegarder l'Image` est principalement utilisé pour enregistrer des images dans le dossier **output** de ComfyUI. Si vous souhaitez uniquement prévisualiser l'image pendant le processus intermédiaire au lieu de l'enregistrer, vous pouvez utiliser le nœud `Preview Image-Prévisualiser l'Image`.
 Emplacement d'enregistrement par défaut : `ComfyUI/output/`
 
-## Types d'entrée
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -12,6 +12,7 @@ Emplacement d'enregistrement par défaut : `ComfyUI/output/`
 ## Options du Menu Contextuel
 
 Après la génération de l'image, un clic droit sur le menu correspondant fournit les options et fonctions spécifiques au nœud suivantes :
+
 | Nom de l'Option | Fonction |
 |-----------------|-----------|
 | `Save Image-Sauvegarder l'Image` | Enregistrer l'image localement |

@@ -2,13 +2,13 @@ This node will detect models located in the `ComfyUI/models/clip_vision` folder,
 
 The CLIPVisionLoader node is designed for loading CLIP Vision models from specified paths. It abstracts the complexities of locating and initializing CLIP Vision models, making them readily available for further processing or inference tasks.
 
-## Input types
+## Inputs
 
 | Field       | Comfy dtype | Description                                                                       |
 |-------------|-------------|-----------------------------------------------------------------------------------|
 | `clip_name` | `COMBO[STRING]` | Specifies the name of the CLIP Vision model to be loaded, used to locate the model file within a predefined directory structure. |
 
-## Output types
+## Outputs
 
 | Field          | Comfy dtype     | Description                                                              |
 |----------------|-----------------|--------------------------------------------------------------------------|

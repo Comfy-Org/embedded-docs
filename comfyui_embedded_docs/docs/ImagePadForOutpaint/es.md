@@ -1,6 +1,6 @@
-
 Este nodo está diseñado para preparar imágenes para el proceso de extensión añadiendo acolchado alrededor de ellas. Ajusta las dimensiones de la imagen para asegurar la compatibilidad con los algoritmos de extensión, facilitando la generación de áreas de imagen extendidas más allá de los límites originales.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ Este nodo está diseñado para preparar imágenes para el proceso de extensión 
 | `bottom`  | `INT`       | Indica la cantidad de acolchado a añadir en la parte inferior de la imagen, contribuyendo a la expansión vertical para la extensión. |
 | `feathering` | `INT` | Controla la suavidad de la transición entre la imagen original y el acolchado añadido, mejorando la integración visual para la extensión. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

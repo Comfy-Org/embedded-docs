@@ -1,6 +1,6 @@
 This node is designed to modify the conditioning information by setting specific areas within the conditioning context. It allows for the precise spatial manipulation of conditioning elements, enabling targeted adjustments and enhancements based on specified dimensions and strength.
 
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ This node is designed to modify the conditioning information by setting specific
 | `y`       | `INT`      | The vertical starting point for the area adjustment, establishing its position within the conditioning context. |
 | `strength`| `FLOAT`    | Defines the intensity of the conditioning modification within the specified area, allowing for nuanced control over the adjustment's impact. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

@@ -1,7 +1,7 @@
 
 Este nodo está diseñado para integrar las salidas de visión CLIP en el proceso de condicionamiento, ajustando la influencia de estas salidas según los parámetros de fuerza y aumento de ruido especificados. Enriquece el condicionamiento con contexto visual, mejorando el proceso de generación.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro              | Comfy dtype            | Descripción |
 |------------------------|------------------------|-------------|
@@ -10,7 +10,7 @@ Este nodo está diseñado para integrar las salidas de visión CLIP en el proces
 | `strength`             | `FLOAT`                | Determina la intensidad de la influencia de la salida de visión CLIP en el condicionamiento. |
 | `noise_augmentation`   | `FLOAT`                | Especifica el nivel de aumento de ruido a aplicar a la salida de visión CLIP antes de integrarla en el condicionamiento. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro             | Comfy dtype            | Descripción |
 |-----------------------|------------------------|-------------|

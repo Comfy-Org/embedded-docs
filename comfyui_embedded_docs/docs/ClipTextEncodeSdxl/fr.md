@@ -1,7 +1,6 @@
-
 Ce nœud est conçu pour encoder les entrées textuelles en utilisant le modèle CLIP spécifiquement adapté à l'architecture SDXL. Il se concentre sur la conversion des descriptions textuelles en un format qui peut être efficacement utilisé pour générer ou manipuler des images, en tirant parti des capacités du modèle CLIP pour comprendre et traiter le texte dans le contexte du contenu visuel.
 
-## Types d'entrée de CLIPTextEncodeSDXL
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 | --- | --- | --- |
@@ -15,7 +14,7 @@ Ce nœud est conçu pour encoder les entrées textuelles en utilisant le modèle
 | `text_g` | `STRING` | La description textuelle globale à encoder. Cette entrée est cruciale pour générer les représentations visuelles correspondantes et comprendre le contenu décrit. |
 | `text_l` | `STRING` | La description textuelle locale à encoder. Cette entrée fournit des détails ou un contexte supplémentaires à la description globale, améliorant la spécificité de l'image générée ou manipulée. |
 
-## Types de sortie de CLIPTextEncodeSDXL
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 | --- | --- | --- |

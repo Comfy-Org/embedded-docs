@@ -1,6 +1,6 @@
-
 El nodo ImageQuantize está diseñado para reducir el número de colores en una imagen a un número especificado, aplicando opcionalmente técnicas de dithering para mantener la calidad visual. Este proceso es útil para crear imágenes basadas en paletas o reducir la complejidad de color para ciertas aplicaciones.
-## Tipos de entrada
+
+## Entradas
 
 | Campo   | Comfy dtype | Descripción                                                                       |
 |---------|-------------|-----------------------------------------------------------------------------------|
@@ -8,7 +8,7 @@ El nodo ImageQuantize está diseñado para reducir el número de colores en una 
 | `colors`| `INT`       | Especifica el número de colores al que se debe reducir la imagen. Influye directamente en el proceso de cuantización al determinar el tamaño de la paleta de colores. |
 | `dither`| `COMBO[STRING]` | Determina la técnica de dithering a aplicar durante la cuantización, afectando la calidad visual y apariencia de la imagen de salida. |
 
-## Tipos de salida
+## Salidas
 
 | Campo | Comfy dtype | Descripción                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|

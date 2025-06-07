@@ -1,13 +1,14 @@
 
 The LatentSubtract node is designed for subtracting one latent representation from another. This operation can be used to manipulate or modify the characteristics of generative models' outputs by effectively removing features or attributes represented in one latent space from another.
-## Input types
+
+## Inputs
 
 | Parameter    | Comfy dtype | Description |
 |--------------|-------------|-------------|
 | `samples1`   | `LATENT`    | The first set of latent samples to be subtracted from. It serves as the base for the subtraction operation. |
 | `samples2`   | `LATENT`    | The second set of latent samples that will be subtracted from the first set. This operation can alter the resulting generative model's output by removing attributes or features. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

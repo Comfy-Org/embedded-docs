@@ -1,6 +1,7 @@
 
 El nodo PolyexponentialScheduler está diseñado para generar una secuencia de niveles de ruido (sigmas) basada en un programa de ruido poliexponencial. Este programa es una función polinómica en el logaritmo de sigma, permitiendo una progresión flexible y personalizable de los niveles de ruido a lo largo del proceso de difusión.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro   | Comfy dtype | Descripción                                                                                                                                                                                                                                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -9,7 +10,7 @@ El nodo PolyexponentialScheduler está diseñado para generar una secuencia de n
 | `sigma_min` | FLOAT       | El nivel mínimo de ruido, estableciendo el límite inferior del programa de ruido.                                                                                                                                                                                                                                                                                                                                 |
 | `rho`       | FLOAT       | Un parámetro que controla la forma del programa de ruido poliexponencial, influyendo en cómo progresan los niveles de ruido entre los valores mínimo y máximo.                                                                                                                                                                                                               |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|

@@ -1,6 +1,7 @@
 
 ModelMergeBlocks is designed for advanced model merging operations, allowing for the integration of two models with customizable blending ratios for different parts of the models. This node facilitates the creation of hybrid models by selectively merging components from two source models based on specified parameters.
-## Input types
+
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ ModelMergeBlocks is designed for advanced model merging operations, allowing for
 | `middle`  | `FLOAT`     | Defines the blending ratio for the middle layers of the models. This parameter controls the integration level of the models' middle layers. |
 | `out`     | `FLOAT`     | Determines the blending ratio for the output layer of the models. It affects the final output by adjusting the contribution of the second model's output layer. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

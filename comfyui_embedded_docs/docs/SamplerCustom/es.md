@@ -1,6 +1,7 @@
 
 El nodo SamplerCustom está diseñado para proporcionar un mecanismo de muestreo flexible y personalizable para diversas aplicaciones. Permite a los usuarios seleccionar y configurar diferentes estrategias de muestreo adaptadas a sus necesidades específicas, mejorando la adaptabilidad y eficiencia del proceso de muestreo.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|--------------|-------------|
@@ -14,7 +15,7 @@ El nodo SamplerCustom está diseñado para proporcionar un mecanismo de muestreo
 | `sigmas`  | `SIGMAS`     | El tipo de entrada 'sigmas' define los niveles de ruido a utilizar en el proceso de muestreo, afectando la exploración del espacio de muestras y la diversidad del resultado. |
 | `latent_image` | `LATENT` | El tipo de entrada 'latent_image' proporciona una imagen latente inicial para el proceso de muestreo, sirviendo como punto de partida para la generación de muestras. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|--------------|-------------|

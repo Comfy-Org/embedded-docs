@@ -1,7 +1,6 @@
+The `ImageFromBatch` node is designed for extracting a specific segment of images from a batch based on the provided index and length. It allows for more granular control over the batched images, enabling operations on individual or subsets of images within a larger batch.
 
-The ImageFromBatch node is designed for extracting a specific segment of images from a batch based on the provided index and length. It allows for more granular control over the batched images, enabling operations on individual or subsets of images within a larger batch.
-
-## Input types
+## Inputs
 
 | Field          | Comfy dtype | Description                                                                           |
 |----------------|-------------|---------------------------------------------------------------------------------------|
@@ -9,7 +8,7 @@ The ImageFromBatch node is designed for extracting a specific segment of images 
 | `batch_index`  | `INT`       | The starting index within the batch from which the extraction begins. It determines the initial position of the segment to be extracted from the batch. |
 | `length`       | `INT`       | The number of images to extract from the batch starting from the batch_index. This parameter defines the size of the segment to be extracted. |
 
-## Output types
+## Outputs
 
 | Field | Comfy dtype | Description                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|

@@ -1,6 +1,7 @@
 
 Le nœud LatentCrop est conçu pour effectuer des opérations de recadrage sur les représentations latentes des images. Il permet de spécifier les dimensions et la position du recadrage, permettant des modifications ciblées de l'espace latent.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ Le nœud LatentCrop est conçu pour effectuer des opérations de recadrage sur l
 | `x`       | `INT`       | Détermine la coordonnée x de départ de la zone de recadrage, influençant la position du recadrage au sein de la représentation latente originale. |
 | `y`       | `INT`       | Détermine la coordonnée y de départ de la zone de recadrage, définissant la position du recadrage au sein de la représentation latente originale. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

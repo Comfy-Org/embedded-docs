@@ -1,6 +1,7 @@
 
 This node is designed to generate a sampler for the DPM++ SDE (Stochastic Differential Equation) model. It adapts to both CPU and GPU execution environments, optimizing the sampler's implementation based on the available hardware.
-## Input types
+
+## Inputs
 
 | Parameter      | Comfy dtype | Description |
 |----------------|-------------|-------------|
@@ -9,7 +10,7 @@ This node is designed to generate a sampler for the DPM++ SDE (Stochastic Differ
 | `r`            | FLOAT       | Controls the ratio of noise reduction in the sampling process, impacting the clarity and quality of the generated samples.|
 | `noise_device` | COMBO[STRING]| Selects the execution environment (CPU or GPU) for the sampler, optimizing performance based on available hardware.|
 
-## Output types
+## Outputs
 
 | Parameter    | Comfy dtype | Description |
 |----------------|-------------|-------------|

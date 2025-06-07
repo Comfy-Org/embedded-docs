@@ -1,5 +1,6 @@
 Este nodo se especializa en fusionar dos modelos CLIP basándose en una proporción especificada, combinando efectivamente sus características. Aplica selectivamente parches de un modelo a otro, excluyendo componentes específicos como los IDs de posición y la escala de logit, para crear un modelo híbrido que combina características de ambos modelos fuente.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Tipo Comfy | Descripción |
 |-----------|-------------|-------------|
@@ -7,7 +8,7 @@ Este nodo se especializa en fusionar dos modelos CLIP basándose en una proporci
 | `clip2`   | `CLIP`      | El segundo modelo CLIP que se va a fusionar. Sus parches clave, excepto los IDs de posición y la escala de logit, se aplican al primer modelo según la proporción especificada. |
 | `ratio`   | `FLOAT`     | Determina la proporción de características del segundo modelo que se fusionarán en el primer modelo. Una proporción de 1.0 significa adoptar completamente las características del segundo modelo, mientras que 0.0 retiene solo las características del primer modelo. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Tipo Comfy | Descripción |
 |-----------|-------------|-------------|

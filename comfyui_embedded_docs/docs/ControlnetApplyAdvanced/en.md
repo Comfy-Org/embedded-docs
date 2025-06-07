@@ -1,6 +1,6 @@
 This node applies advanced control net transformations to conditioning data based on an image and a control net model. It allows for fine-tuned adjustments of the control net's influence over the generated content, enabling more precise and varied modifications to the conditioning.
 
-## Input types
+## Inputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -12,7 +12,7 @@ This node applies advanced control net transformations to conditioning data base
 | `start_percent` | `FLOAT` | The starting percentage of the control net's effect, allowing for gradual application of transformations over a specified range. |
 | `end_percent` | `FLOAT` | The ending percentage of the control net's effect, defining the range over which the transformations are applied. This enables more nuanced control over the adjustment process. |
 
-## Output types
+## Outputs
 
 | Parameter | Comfy dtype | Description |
 |-----------|-------------|-------------|

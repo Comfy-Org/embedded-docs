@@ -1,6 +1,6 @@
-
 Ce nœud est conçu pour préparer les images au processus d'outpainting en ajoutant un remplissage autour d'elles. Il ajuste les dimensions de l'image pour garantir la compatibilité avec les algorithmes d'outpainting, facilitant la génération de zones d'image étendues au-delà des limites originales.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|
@@ -11,7 +11,7 @@ Ce nœud est conçu pour préparer les images au processus d'outpainting en ajou
 | `bottom`  | `INT`       | Indique la quantité de remplissage à ajouter au bas de l'image, contribuant à l'expansion verticale pour l'outpainting. |
 | `feathering` | `INT` | Contrôle la douceur de la transition entre l'image originale et le remplissage ajouté, améliorant l'intégration visuelle pour l'outpainting. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Comfy dtype | Description |
 |-----------|-------------|-------------|

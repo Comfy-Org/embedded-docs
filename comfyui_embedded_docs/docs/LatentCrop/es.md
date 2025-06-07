@@ -1,6 +1,7 @@
 
 El nodo LatentCrop está diseñado para realizar operaciones de recorte en representaciones latentes de imágenes. Permite especificar las dimensiones y la posición del recorte, habilitando modificaciones específicas del espacio latente.
-## Tipos de entrada
+
+## Entradas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|
@@ -10,7 +11,7 @@ El nodo LatentCrop está diseñado para realizar operaciones de recorte en repre
 | `x`       | `INT`       | Determina la coordenada x inicial del área de recorte, influyendo en la posición del recorte dentro de la representación latente original. |
 | `y`       | `INT`       | Determina la coordenada y inicial del área de recorte, estableciendo la posición del recorte dentro de la representación latente original. |
 
-## Tipos de salida
+## Salidas
 
 | Parámetro | Comfy dtype | Descripción |
 |-----------|-------------|-------------|

@@ -8,9 +8,7 @@ This node serves as a preparation point for essential conditioning information a
 
 The node's position in the ComfyUI node hierarchy indicates that it operates in the early stages of the video generation pipeline, focusing on manipulating conditioning signals before actual sampling or decoding of video frames.
 
-## WanFunControlToVideo Node Detailed Analysis
-
-### Input Parameters
+## Inputs
 
 | Parameter Name      | Required | Data Type           | Description                                                  | Default Value |
 |:-------------------|:---------|:-------------------|:-------------------------------------------------------------|:-------------|
@@ -25,7 +23,7 @@ The node's position in the ComfyUI node hierarchy indicates that it operates in 
 | start_image        | No       | IMAGE              | (Optional) An initial image that influences the beginning of the generated video. | None |
 | control_video      | No       | IMAGE              | (Optional) Allows users to provide a preprocessed ControlNet reference video that will guide the motion and potential structure of the generated video.| None |
 
-### Output Parameters
+## Outputs
 
 | Parameter Name      | Data Type           | Description                                                  |
 |:-------------------|:-------------------|:-------------------------------------------------------------|

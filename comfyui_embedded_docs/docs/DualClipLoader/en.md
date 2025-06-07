@@ -1,6 +1,6 @@
 The DualCLIPLoader node is designed for loading two CLIP models simultaneously, facilitating operations that require the integration or comparison of features from both models.
 
-## Input types
+## Inputs
 
 | Parameter    | Comfy dtype     | Description                                                                                                                                                                                     |
 | ------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -10,7 +10,7 @@ The DualCLIPLoader node is designed for loading two CLIP models simultaneously, 
 
 * The order of loading does not affect the output effect
 
-## Output types - Dual CLIP Loader
+## Outputs
 
 | Parameter | Comfy dtype | Description                                                                                                           |
 | --------- | ----------- | --------------------------------------------------------------------------------------------------------------------- |
