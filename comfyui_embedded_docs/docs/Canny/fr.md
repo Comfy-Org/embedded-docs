@@ -1,6 +1,7 @@
 Extrait toutes les lignes de contour des photos, comme utiliser un stylo pour contourner une photo, en dessinant les contours et les limites de détails des objets.
 
 ## Principe de Fonctionnement
+
 Imaginez que vous êtes un artiste qui doit utiliser un stylo pour contourner une photo. Le nœud Canny agit comme un assistant intelligent, vous aidant à décider où dessiner des lignes (contours) et où ne pas le faire.
 
 Ce processus est comme un travail de filtrage :

@@ -1,6 +1,7 @@
 Extrae todas las líneas de borde de las fotos, como usar un bolígrafo para contornear una foto, dibujando los contornos y límites de detalles de los objetos.
 
 ## Principio de Funcionamiento
+
 Imagina que eres un artista que necesita usar un bolígrafo para contornear una foto. El nodo Canny actúa como un asistente inteligente, ayudándote a decidir dónde dibujar líneas (bordes) y dónde no.
 
 Este proceso es como un trabajo de filtrado:

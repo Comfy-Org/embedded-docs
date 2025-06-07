@@ -1,6 +1,7 @@
 Extract all edge lines from photos, like using a pen to outline a photo, drawing out the contours and detail boundaries of objects.
 
 ## Working Principle
+
 Imagine you are an artist who needs to use a pen to outline a photo. The Canny node acts like an intelligent assistant, helping you decide where to draw lines (edges) and where not to.
 
 This process is like a screening job:
