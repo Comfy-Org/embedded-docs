@@ -3,7 +3,7 @@
 
 ControlNet을 사용하려면 입력 이미지의 전처리가 필요합니다. ComfyUI 초기 노드에는 전처리기와 ControlNet 모델이 포함되어 있지 않으므로, 먼저 ContrlNet 전처리기[전처리기 다운로드](https://github.com/Fannovel16/comfy_controlnet_preprocessors)와 해당하는 ControlNet 모델을 설치하세요.
 
-### 입력 유형
+## 입력
 
 | 매개변수 | 데이터 유형 | 기능 |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ ControlNet을 사용하려면 입력 이미지의 전처리가 필요합니다. 
 | `start_percent` | `FLOAT` | 값 0.000~1.000, ControlNet 적용을 시작할 시점을 백분율로 결정, 예를 들어 0.2는 확산 프로세스의 20% 시점에서 ControlNet 가이드가 이미지 생성에 영향을 미치기 시작함을 의미 |
 | `end_percent` | `FLOAT` | 값 0.000~1.000, ControlNet 적용을 종료할 시점을 백분율로 결정, 예를 들어 0.8은 확산 프로세스의 80% 시점에서 ControlNet 가이드가 이미지 생성에 대한 영향을 중단함을 의미 |
 
-### 출력 유형
+## 출력 유형
 
 | 매개변수 | 데이터 유형 | 기능 |
 | --- | --- | --- |

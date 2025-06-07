@@ -4,7 +4,7 @@ CLIPTextEncode 노드는 CLIP 모델을 사용하여 텍스트 입력을 인코�
 
 예를 들어, 해당 모델 이름이 `EasyNegative`인 경우, 프롬프트에서 `embedding:EasyNegative,`를 사용하여 이 모델을 사용할 수 있습니다.
 
-## 입력 유형
+## 입력
 
 | 매개변수 | Comfy dtype | 설명 |
 |-----------|-------------|-------------|
