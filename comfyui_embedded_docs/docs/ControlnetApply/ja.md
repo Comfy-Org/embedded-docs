@@ -4,7 +4,7 @@
 
 ControlNetを使用するには、入力画像の前処理が必要です。ComfyUIの初期ノードには前処理器とControlNetモデルが含まれていないため、まずContrlNet前処理器[前処理器のダウンロード](https://github.com/Fannovel16/comfy_controlnet_preprocessors)と対応するControlNetモデルをインストールしてください。
 
-### 入力タイプ
+## 入力
 
 | パラメータ | データタイプ | 機能 |
 | --- | --- | --- |
@@ -17,7 +17,7 @@ ControlNetを使用するには、入力画像の前処理が必要です。Comf
 | `start_percent` | `FLOAT` | 値0.000~1.000、ControlNetの適用を開始する時点をパーセンテージで決定、例えば0.2は拡散プロセスの20%時点でControlNetガイドが画像生成に影響を与え始めることを意味します |
 | `end_percent` | `FLOAT` | 値0.000~1.000、ControlNetの適用を終了する時点をパーセンテージで決定、例えば0.8は拡散プロセスの80%時点でControlNetガイドが画像生成への影響を停止することを意味します |
 
-### 出力タイプ
+## 出力
 
 | パラメータ | データタイプ | 機能 |
 | --- | --- | --- |
