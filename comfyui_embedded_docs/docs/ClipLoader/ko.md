@@ -7,7 +7,7 @@ CLIPLoader 노드는 stable diffusion 및 stable cascade와 같은 다양한 유
 | `clip_name`   | `COMBO[STRING]` | 로드할 CLIP 모델의 이름을 지정합니다. 이 이름은 미리 정의된 디렉토리 구조 내에서 모델 파일을 찾는 데 사용됩니다. |
 | `type`        | `COMBO[STRING]` | 로드할 CLIP 모델의 유형을 결정하며, 'stable_diffusion'과 'stable_cascade' 옵션을 제공합니다. 이는 모델이 초기화되고 구성되는 방식에 영향을 미칩니다. |
 
-## 출력 유형
+## 출력
 
 | 매개변수 | Comfy dtype | 설명 |
 |-----------|-------------|-------------|

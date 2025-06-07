@@ -8,7 +8,7 @@ LatentFlip 노드는 잠재 표현을 수직 또는 수평으로 뒤집어 조�
 | `samples`     | `LATENT`     | 'samples' 매개변수는 뒤집힐 잠재 표현을 나타냅니다. 뒤집기 작업은 'flip_method' 매개변수에 따라 이 표현을 수직 또는 수평으로 변경하여 잠재 공간의 데이터를 변형합니다. |
 | `flip_method` | `COMBO[STRING]` | 'flip_method' 매개변수는 잠재 샘플이 뒤집힐 축을 지정합니다. 'x-axis: vertically' 또는 'y-axis: horizontally' 중 하나로, 뒤집기의 방향을 결정하여 잠재 표현에 적용되는 변형의 성격을 결정합니다. |
 
-## 출력 유형
+## 출력
 
 | 매개변수 | Comfy dtype | 설명 |
 |-----------|-------------|-------------|

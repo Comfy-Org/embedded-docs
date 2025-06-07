@@ -9,4 +9,4 @@ Le nœud PreviewImage est conçu pour créer des images d'aperçu temporaires. I
 
 ## Sorties
 
-Le nœud n'a pas de types de sortie.
+Le nœud n'a pas de sortie.

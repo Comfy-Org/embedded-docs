@@ -7,7 +7,7 @@
 | `conditioning_1`      | `CONDITIONING`     | 결합될 첫 번째 조건 입력입니다. 결합 과정에서 `conditioning_2`와 동등한 역할을 합니다. |
 | `conditioning_2`      | `CONDITIONING`     | 결합될 두 번째 조건 입력입니다. 병합 과정에서 `conditioning_1`과 동등하게 중요합니다. |
 
-## 출력 유형
+## 출력
 
 | 매개변수            | Comfy dtype        | 설명 |
 |----------------------|--------------------|-------------|

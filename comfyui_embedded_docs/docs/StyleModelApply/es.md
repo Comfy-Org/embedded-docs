@@ -1,9 +1,6 @@
-
 Este nodo aplica un modelo de estilo a una condición dada, mejorando o alterando su estilo basado en la salida de un modelo de visión CLIP. Integra la condición del modelo de estilo en la condición existente, permitiendo una fusión fluida de estilos en el proceso de generación.
 
-## Input types (Tipos de entrada)
-
-### Required (Requerido)
+## Entradas
 
 | Parameter             | Comfy dtype          | Description |
 |-----------------------|-----------------------|-------------|
@@ -11,7 +8,7 @@ Este nodo aplica un modelo de estilo a una condición dada, mejorando o alterand
 | `style_model`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar una nueva condición basada en la salida del modelo de visión CLIP. Juega un papel clave en la definición del nuevo estilo que se aplicará. |
 | `clip_vision_output`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que es utilizada por el modelo de estilo para generar una nueva condición. Proporciona el contexto visual necesario para la aplicación del estilo. |
 
-## Output types (Tipos de salida)
+## Salidas
 
 | Parameter            | Comfy dtype           | Description |
 |----------------------|-----------------------|-------------|

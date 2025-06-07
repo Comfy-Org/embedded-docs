@@ -10,4 +10,4 @@ Le nœud VAESave est conçu pour sauvegarder les modèles VAE avec leurs métado
 
 ## Sorties
 
-Le nœud n'a pas de types de sortie.
+Le nœud n'a pas de sortie.

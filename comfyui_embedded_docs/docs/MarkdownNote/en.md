@@ -3,3 +3,5 @@ Node to add annotations to a workflow. It supports text formatting using Markdow
 ## Inputs
 
 ## Outputs
+
+The node doesn't have outputs.

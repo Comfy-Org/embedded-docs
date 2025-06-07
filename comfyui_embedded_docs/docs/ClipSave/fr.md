@@ -9,4 +9,4 @@ Le nœud CLIPSave est conçu pour sauvegarder les modèles CLIP ainsi que des in
 
 ## Sorties
 
-Le nœud n'a pas de types de sortie.
+Le nœud n'a pas de sortie.
