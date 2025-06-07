@@ -1,15 +1,16 @@
-Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/checkpoints`, 
-y también leerá los modelos de las rutas adicionales que hayas configurado en el archivo extra_model_paths.yaml. 
+Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/checkpoints`,
+y también leerá los modelos de las rutas adicionales que hayas configurado en el archivo extra_model_paths.yaml.
 A veces, es posible que necesites **refrescar la interfaz de ComfyUI** para que pueda leer los archivos de modelo en la carpeta correspondiente.
 
 El nodo unCLIPCheckpointLoader está diseñado para cargar checkpoints específicamente adaptados para modelos unCLIP. Facilita la recuperación e inicialización de modelos, módulos de visión CLIP y VAEs desde un checkpoint especificado, agilizando el proceso de configuración para operaciones o análisis posteriores.
-## Tipos de entrada
+
+## Entradas
 
 | Campo      | Comfy dtype       | Descripción                                                                       |
 |------------|-------------------|-----------------------------------------------------------------------------------|
 | `ckpt_name`| `COMBO[STRING]`    | Especifica el nombre del checkpoint a cargar, identificando y recuperando el archivo de checkpoint correcto desde un directorio predefinido, determinando la inicialización de modelos y configuraciones. |
 
-## Tipos de salida
+## Salidas
 
 | Campo       | Comfy dtype   | Descripción                                                              | Python dtype         |
 |-------------|---------------|--------------------------------------------------------------------------|---------------------|

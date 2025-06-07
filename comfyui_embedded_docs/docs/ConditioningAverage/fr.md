@@ -1,6 +1,6 @@
 Le nœud ConditioningAverage est conçu pour mélanger deux ensembles de données de conditionnement en appliquant une moyenne pondérée basée sur une force spécifiée. Ce processus permet un ajustement dynamique de l'influence du conditionnement, facilitant le réglage fin du contenu ou des caractéristiques générés.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre             | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
@@ -8,7 +8,7 @@ Le nœud ConditioningAverage est conçu pour mélanger deux ensembles de donnée
 | `conditioning_from`   | `CONDITIONING`     | Désigne l'ensemble secondaire de données de conditionnement qui sera mélangé à l'ensemble principal. Ces données influencent le résultat final en fonction de la force spécifiée. |
 | `conditioning_to_strength` | `FLOAT` | Une valeur scalaire qui détermine la force du mélange entre les données de conditionnement principales et secondaires. Elle influence directement l'équilibre de la moyenne pondérée. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre            | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|

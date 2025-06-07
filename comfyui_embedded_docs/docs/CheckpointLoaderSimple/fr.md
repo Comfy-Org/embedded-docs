@@ -6,7 +6,7 @@ Ce nœud détecte automatiquement tous les fichiers de modèles dans le dossier 
 2. **Gestion des fichiers** : Placez les fichiers de modèles dans le dossier `ComfyUI/models/checkpoints`, ou configurez d'autres chemins via extra_model_paths.yaml
 3. **Actualisation de l'interface** : Si de nouveaux fichiers de modèles sont ajoutés pendant que ComfyUI fonctionne, vous devez actualiser le navigateur (Ctrl+R) pour voir les nouveaux fichiers dans la liste déroulante
 
-## Paramètres d'Entrée
+## Entrées
 
 | Nom du Paramètre | Type de Données | Méthode d'Entrée | Valeur Par Défaut | Plage de Valeurs | Description |
 |-------------------|-----------------|------------------|-------------------|------------------|-------------|

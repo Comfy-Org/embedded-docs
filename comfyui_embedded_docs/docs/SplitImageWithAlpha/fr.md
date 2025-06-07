@@ -1,12 +1,13 @@
 
 Le nœud SplitImageWithAlpha est conçu pour séparer les composants couleur et alpha d'une image. Il traite un tenseur d'image d'entrée, extrayant les canaux RGB comme composant couleur et le canal alpha comme composant de transparence, facilitant les opérations nécessitant la manipulation de ces aspects distincts de l'image.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre | Type Comfy | Description |
 |-----------|------------|-------------|
 | `image`   | `IMAGE`    | Le paramètre 'image' représente le tenseur d'image d'entrée à partir duquel les canaux RGB et alpha doivent être séparés. Il est crucial pour l'opération car il fournit les données sources pour la séparation. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre | Type Comfy | Description |
 |-----------|------------|-------------|

@@ -4,7 +4,8 @@ Fusion Multimodale : Combine les résultats de traitement de CLIP et T5XXL pour 
 Contrôle de la Génération : Ajuste l'influence des invites textuelles sur la génération d'images via le paramètre de guidage, permettant aux utilisateurs de trouver un équilibre entre la liberté créative et le respect strict des invites.
 Génération de Données Conditionnelles : Produit des données conditionnelles traitées, qui seront utilisées dans les processus de génération d'images ultérieurs pour s'assurer que les images générées correspondent aux descriptions textuelles.
 
-## Tableau des Paramètres d'Entrée
+## Entrées
+
 | Nom du Paramètre | Type de Donnée | Fonction |
 |------------------|----------------|----------|
 | clip             | CLIP           | Entrée d'objet modèle CLIP, utilisée pour l'encodage et le traitement du texte, généralement utilisée avec DualCLIPLoader |
@@ -12,7 +13,7 @@ Génération de Données Conditionnelles : Produit des données conditionnelles 
 | t5xxl            | STRING         | Entrée texte multi-lignes, entrez des descriptions d'invites en langage naturel pour l'encodage du modèle T5XXL |
 | guidance         | FLOAT          | Valeur flottante, utilisée pour guider le processus de génération ; des valeurs plus élevées augmentent la correspondance image-invite mais peuvent réduire la créativité |
 
-## Tableau des Paramètres de Sortie
+## Sorties
 
 | Nom du Paramètre | Type de Donnée | Fonction |
 |------------------|----------------|----------|

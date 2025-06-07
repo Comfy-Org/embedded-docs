@@ -2,6 +2,7 @@ Node Name: Reroute Node
 Node Purpose: Mainly used to organize the logic of overly long connection lines in the ComfyUI workflow.
 
 ## How to Use Reroute Nodes
+
 | Menu Options | Description |
 | --- | --- |
 | Show Type | Display the node's type property |

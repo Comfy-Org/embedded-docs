@@ -1,6 +1,7 @@
-Using controlNet requires preprocessing of input images. Since ComfyUI initial nodes do not come with preprocessors and controlNet models, please first install ContrlNet preprocessors [download preprocessors here](https://github.com/Fannovel16/comfy_controlnet_preprocessors) and corresponding controlNet models.
+Using controlNet requires preprocessing of input images. Since ComfyUI initial nodes do not come with preprocessors and controlNet models, please first install ControlNet preprocessors [download preprocessors here](https://github.com/Fannovel16/comfy_controlnet_preprocessors) and corresponding controlNet models.
 
-### Input Types
+## Inputs
+
 | Parameter | Data Type | Function |
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | Positive conditioning data, from CLIP Text Encoder or other conditioning inputs |
@@ -12,7 +13,8 @@ Using controlNet requires preprocessing of input images. Since ComfyUI initial n
 | `start_percent` | `FLOAT` | Value 0.000~1.000, determines when to start applying controlNet as a percentage, e.g., 0.2 means ControlNet guidance will start influencing image generation at 20% of the diffusion process |
 | `end_percent` | `FLOAT` | Value 0.000~1.000, determines when to stop applying controlNet as a percentage, e.g., 0.8 means ControlNet guidance will stop influencing image generation at 80% of the diffusion process |
 
-### Output Types
+### Outputs
+
 | Parameter | Data Type | Function |
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | Positive conditioning data processed by ControlNet, can be output to next ControlNet or K Sampler nodes |

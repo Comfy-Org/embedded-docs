@@ -1,8 +1,9 @@
 
 Le nœud SamplerCustom est conçu pour fournir un mécanisme d'échantillonnage flexible et personnalisable pour diverses applications. Il permet aux utilisateurs de sélectionner et de configurer différentes stratégies d'échantillonnage adaptées à leurs besoins spécifiques, améliorant ainsi l'adaptabilité et l'efficacité du processus d'échantillonnage.
-## Types d'entrée
 
-| Paramètre | Comfy dtype | Description |
+## Entrées
+
+| Paramètre | Type de Donnée | Description |
 |-----------|--------------|-------------|
 | `model`   | `MODEL`      | Le type d'entrée 'model' spécifie le modèle à utiliser pour l'échantillonnage, jouant un rôle crucial dans la détermination du comportement et du résultat de l'échantillonnage. |
 | `add_noise` | `BOOLEAN`    | Le type d'entrée 'add_noise' permet aux utilisateurs de spécifier si du bruit doit être ajouté au processus d'échantillonnage, influençant la diversité et les caractéristiques des échantillons générés. |
@@ -14,9 +15,9 @@ Le nœud SamplerCustom est conçu pour fournir un mécanisme d'échantillonnage 
 | `sigmas`  | `SIGMAS`     | Le type d'entrée 'sigmas' définit les niveaux de bruit à utiliser dans le processus d'échantillonnage, affectant l'exploration de l'espace d'échantillons et la diversité du résultat. |
 | `latent_image` | `LATENT` | Le type d'entrée 'latent_image' fournit une image latente initiale pour le processus d'échantillonnage, servant de point de départ pour la génération d'échantillons. |
 
-## Types de sortie
+## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Type de Donnée | Description |
 |-----------|--------------|-------------|
 | `output`  | `LATENT`     | Le 'output' représente le résultat principal du processus d'échantillonnage, contenant les échantillons générés. |
 | `denoised_output` | `LATENT` | Le 'denoised_output' représente les échantillons après qu'un processus de débruitage a été appliqué, améliorant potentiellement la clarté et la qualité des échantillons générés. |

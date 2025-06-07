@@ -1,6 +1,7 @@
 
 This node specializes in enhancing the resolution of images through a 4x upscale process, incorporating conditioning elements to refine the output. It leverages diffusion techniques to upscale images while allowing for the adjustment of scale ratio and noise augmentation to fine-tune the enhancement process.
-## Input types
+
+## Inputs
 
 | Parameter            | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
@@ -10,9 +11,9 @@ This node specializes in enhancing the resolution of images through a 4x upscale
 | `scale_ratio`        | `FLOAT`            | Determines the factor by which the image resolution is increased. A higher scale ratio results in a larger output image, allowing for greater detail and clarity. |
 | `noise_augmentation` | `FLOAT`            | Controls the level of noise augmentation applied during the upscale process. This can be used to introduce variability and improve the robustness of the output images. |
 
-## Output types
+## Outputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | The refined positive conditioning elements resulting from the upscale process. |
 | `negative`    | `CONDITIONING` | The refined negative conditioning elements resulting from the upscale process. |

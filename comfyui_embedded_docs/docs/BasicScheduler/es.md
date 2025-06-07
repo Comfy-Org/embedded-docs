@@ -1,6 +1,6 @@
 El nodo `ProgramadorBásico` está diseñado para calcular una secuencia de valores sigma para modelos de difusión basados en el programador, modelo y parámetros de reducción de ruido proporcionados. Ajusta dinámicamente el número total de pasos según el factor de reducción de ruido para afinar el proceso de difusión, proporcionando "recetas" precisas para diferentes etapas en procesos de muestreo avanzados que requieren control fino (como el muestreo por etapas).
 
-## Parámetros de Entrada
+## Entradas
 
 | Parámetro   | Tipo de Dato  | Tipo de Entrada | Por Defecto | Rango     | Descripción Metafórica   | Propósito Técnico   |
 | ----------- | ------------- | --------------- | ----------- | --------- | ------------------------ | ------------------- |
@@ -25,18 +25,18 @@ Basado en el código fuente `comfy.samplers.SCHEDULER_NAMES`, soporta los siguie
 | **linear_quadratic**   | Cuadrático lineal      | Optimización de escenarios complejos | Decaimiento de función cuadrática |
 | **kl_optimal**         | KL óptimo              | Optimización teórica              | Decaimiento optimizado de divergencia KL |
 
-## Resultados de Salida
+## Salidas
 
 | Parámetro | Tipo de Dato | Tipo de Salida | Descripción Metafórica           | Significado Técnico                              |
 | --------- | ------------ | -------------- | -------------------------------- | ----------------------------------------------- |
 | `sigmas`  | SIGMAS       | Output         | **Tabla de Recetas de Pintura**: Lista detallada de concentración de pintura para uso paso a paso | Secuencia de niveles de ruido, guía el proceso de reducción de ruido del modelo de difusión |
-
 
 ## Rol del Nodo: Asistente de Mezcla de Colores del Artista
 
 Imagina que eres un artista creando una imagen clara a partir de una mezcla caótica de pintura (ruido). `ProgramadorBásico` actúa como tu **asistente profesional de mezcla de colores**, cuyo trabajo es preparar una serie de recetas precisas de concentración de pintura:
 
 ### Flujo de Trabajo
+
 - **Paso 1**: Usar pintura de concentración 90% (nivel de ruido alto)
 - **Paso 2**: Usar pintura de concentración 80%  
 - **Paso 3**: Usar pintura de concentración 70%
@@ -46,18 +46,22 @@ Imagina que eres un artista creando una imagen clara a partir de una mezcla caó
 ### Habilidades Especiales del Asistente de Colores
 
 **Diferentes métodos de mezcla (scheduler)**:
+
 - **Método de mezcla "karras"**: La concentración de pintura cambia muy suavemente, como la técnica de gradiente de un artista profesional
 - **Método de mezcla "exponential"**: La concentración de pintura disminuye rápidamente, adecuado para creación rápida
 - **Método de mezcla "linear"**: La concentración de pintura disminuye uniformemente, estable y controlable
 
 **Control fino (steps)**:
+
 - **20 mezclas**: Pintura rápida, prioridad en eficiencia
 - **50 mezclas**: Pintura fina, prioridad en calidad
 
 **Intensidad de creación (denoise)**:
+
 - **1.0 = Creación completamente nueva**: Comenzar completamente desde lienzo en blanco
 - **0.5 = Media transformación**: Mantener la mitad de la pintura original, transformar la mitad
 - **0.2 = Ajuste fino**: Solo hacer ajustes sutiles a la pintura original
 
 ### Colaboración con Otros Nodos
+
 `ProgramadorBásico` (Asistente de Colores) → Preparar Receta → `ÉchantillonneurPersonnalisé` (Artista) → Pintura Real → Trabajo Completado

@@ -2,13 +2,13 @@
 
 ## Input types
 
-| Parameter            | Comfy dtype | Description |
+| Parameter            | Data Type | Description |
 |---------------------|--------------|-------------|
 | `clip`               | `CLIP`      | 수정할 CLIP 모델입니다. 이 매개변수는 노드가 CLIP 모델의 구조와 직접 상호작용하고 변경할 수 있도록 합니다. |
 | `stop_at_clip_layer` | `INT`       | CLIP 모델이 처리 중단할 레이어를 지정합니다. 이는 계산 깊이를 제어할 수 있게 하며, 모델의 동작이나 성능을 조정하는 데 사용할 수 있습니다. |
 
 ## Output types
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
-| `clip`    | `CLIP`      | 지정된 레이어가 마지막으로 설정된 수정된 CLIP 모델입니다. 이 출력은 조정된 모델의 추가 사용 또는 분석을 가능하게 합니다. |
+| `clip`    | CLIP      | 지정된 레이어가 마지막으로 설정된 수정된 CLIP 모델입니다. 이 출력은 조정된 모델의 추가 사용 또는 분석을 가능하게 합니다. |

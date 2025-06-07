@@ -1,16 +1,14 @@
-Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/clip_vision`, 
-et lira également les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. 
-Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
+Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/clip_vision`, et lira également les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
 
 Le nœud CLIPVisionLoader est conçu pour charger les modèles CLIP Vision à partir de chemins spécifiés. Il simplifie la complexité de localisation et d'initialisation des modèles CLIP Vision, les rendant facilement disponibles pour des tâches de traitement ou d'inférence ultérieures.
 
-## Types d'entrée
+## Entrées
 
-| Champ       | Comfy dtype | Description                                                                       |
+| Champ       | Data Type | Description                                                                       |
 |-------------|-------------|-----------------------------------------------------------------------------------|
-| `clip_name` | `COMBO[STRING]` | Spécifie le nom du modèle CLIP Vision à charger, utilisé pour localiser le fichier du modèle dans une structure de répertoire prédéfinie. |
+| `clip_name` | COMBO[STRING] | Spécifie le nom du modèle CLIP Vision à charger, utilisé pour localiser le fichier du modèle dans une structure de répertoire prédéfinie. |
 
-## Types de sortie
+## Sorties
 
 | Champ          | Comfy dtype     | Description                                                              |
 |----------------|-----------------|--------------------------------------------------------------------------|

@@ -1,7 +1,7 @@
 
 Este nodo está diseñado para procesar y condicionar datos para su uso en modelos StableZero123, centrándose en preparar la entrada en un formato específico que es compatible y optimizado para estos modelos.
 
-## Tipos de entrada
+## Entradas
 
 | Parámetro             | Tipo Comfy        | Descripción |
 |-----------------------|--------------------|-------------|
@@ -14,10 +14,10 @@ Este nodo está diseñado para procesar y condicionar datos para su uso en model
 | `elevation`           | `FLOAT`            | Ajusta el ángulo de elevación para el renderizado del modelo 3D, mejorando la comprensión espacial del modelo. |
 | `azimuth`             | `FLOAT`            | Modifica el ángulo de acimut para la visualización del modelo 3D, mejorando la percepción de orientación del modelo. |
 
-## Tipos de salida
+## Salidas
 
-| Parámetro     | Tipo Comfy  | Descripción |
+| Parámetro     | Tipo de Dato | Descripción |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Genera vectores de condicionamiento positivos, ayudando en el refuerzo de características positivas del modelo. |
 | `negative`    | `CONDITIONING` | Produce vectores de condicionamiento negativos, asistiendo en la evitación de ciertas características por parte del modelo. |
-| `latent`      | `LATENT`     | Crea representaciones latentes, facilitando una comprensión más profunda del modelo sobre los datos. 
+| `latent`      | `LATENT`     | Crea representaciones latentes, facilitando una comprensión más profunda del modelo sobre los datos.

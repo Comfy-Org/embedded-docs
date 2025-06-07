@@ -1,2 +1,7 @@
-Node Name: Note Annotation Node (Remark)
-Node Purpose: Used to add text annotations in the workflow
+Node to add annotations to a workflow.
+
+## Inputs
+
+## Outputs
+
+The node doesn't have outputs.

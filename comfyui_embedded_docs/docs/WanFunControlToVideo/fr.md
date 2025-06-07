@@ -8,9 +8,7 @@ Ce noeud sert de point de préparation pour les informations conditionnelles ess
 
 La position du noeud dans la hiérarchie des noeuds ComfyUI indique qu'il opère aux premières étapes du pipeline de génération vidéo, se concentrant sur la manipulation des signaux conditionnels avant l'échantillonnage ou le décodage réel des cadres vidéo.
 
-## Analyse détaillée du noeud WanFunControlToVideo
-
-### Paramètres d'entrée
+## Entrées
 
 | Nom du paramètre    | Requis  | Type de données      | Description                                                  | Valeur par défaut |
 |:-------------------|:--------|:--------------------|:-------------------------------------------------------------|:------------------|

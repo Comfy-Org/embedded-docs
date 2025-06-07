@@ -13,29 +13,28 @@ This node can be viewed as a "language translator" that converts user input text
 - **Category**: `advanced/conditioning`
 - **Output Node**: `False`
 
-## CLIP Text Encode Hunyuan DiT Input Types
+## Inputs
 
-| Parameter | Comfy Data Type | Description |
-| --------- | -------------- | ----------- |
-| `clip`    | `CLIP`         | A CLIP model instance for text tokenization and encoding, core to generating conditions. |
-| `bert`    | `STRING`       | Text input for encoding, supports multiline and dynamic prompts. |
-| `mt5xl`   | `STRING`       | Another text input for encoding, supports multiline and dynamic prompts (multilingual). |
+| Parameter | Data Type | Description |
+| --------- | ----------| ----------- |
+| `clip`    | CLIP      | A CLIP model instance for text tokenization and encoding, core to generating conditions. |
+| `bert`    | STRING    | Text input for encoding, supports multiline and dynamic prompts. |
+| `mt5xl`   | STRING    | Another text input for encoding, supports multiline and dynamic prompts (multilingual). |
 
 - **`bert` parameter**: Suitable for English text input. It's recommended to input concise text with context to help the node generate more accurate and meaningful token representations.
 - **`mt5xl` parameter**: Suitable for multilingual text input. You can input text in any language to help the model understand multilingual tasks.
 
-## CLIP Text Encode Hunyuan DiT Output Types
+## Outputs
 
-| Parameter | Comfy Data Type | Description |
+| Parameter | Data Type | Description |
 | --------- | -------------- | ----------- |
-| `conditioning` | `CONDITIONING` | Encoded conditional output for further processing in generation tasks. |
+| `CONDITIONING` | CONDITIONING | Encoded conditional output for further processing in generation tasks. |
 
 ## Methods
 
 - **Encoding Method**: `encode`
   
   This method accepts `clip`, `bert`, and `mt5xl` as parameters. First, it tokenizes `bert`, then tokenizes `mt5xl`, and stores the results in a `tokens` dictionary. Finally, it uses the `clip.encode_from_tokens_scheduled` method to encode the tokenized tokens into conditions.
-
 
 ## Extended Content for CLIP Text Encode Hunyuan DiT Node
 
@@ -83,10 +82,10 @@ It unifies all NLP tasks as text-to-text transformations, capable of handling va
 
 1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805)
    - **Description**: This foundational paper introduces BERT, a transformer-based model that achieves state-of-the-art results on a wide array of NLP tasks.
-   
+
 2. [mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer](https://aclanthology.org/2021.naacl-main.41.pdf)
    - **Description**: This paper presents mT5, a multilingual variant of T5, trained on a new Common Crawl-based dataset covering 101 languages.
-   
+
 3. [mLongT5: A Multilingual and Efficient Text-To-Text Transformer for Longer Sequences](https://arxiv.org/pdf/2112.08760)
    - **Description**: This work develops mLongT5, a multilingual model designed to handle longer input sequences efficiently.
 

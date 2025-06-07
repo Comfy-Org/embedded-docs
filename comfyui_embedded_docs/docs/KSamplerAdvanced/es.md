@@ -1,8 +1,8 @@
-
 El nodo KSamplerAdvanced está diseñado para mejorar el proceso de muestreo proporcionando configuraciones y técnicas avanzadas. Su objetivo es ofrecer opciones más sofisticadas para generar muestras a partir de un modelo, mejorando las funcionalidades básicas de KSampler.
-## Tipos de entrada
 
-| Parámetro             | Comfy dtype | Descripción                                                                                                                                                                                                                                                                                                                                                     |
+## Entradas
+
+| Parámetro             | Data Type | Descripción                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `model`              | MODEL       | Especifica el modelo del cual se generarán las muestras, desempeñando un papel crucial en el proceso de muestreo.                                                                                                                                                                                                                      |
 | `add_noise`          | COMBO[STRING] | Determina si se debe añadir ruido al proceso de muestreo, afectando la diversidad y calidad de las muestras generadas.                                                                                                                                                                                                             |
@@ -18,8 +18,8 @@ El nodo KSamplerAdvanced está diseñado para mejorar el proceso de muestreo pro
 | `end_at_step`        | INT         | Establece el paso final del proceso de muestreo, definiendo el alcance del muestreo.                                                                                                                                                                                                                                         |
 | `return_with_leftover_noise` | COMBO[STRING] | Indica si se debe devolver la muestra con el ruido sobrante, afectando la apariencia final del resultado.                                                                                                                                                                                                                               |
 
-## Tipos de salida
+## Salidas
 
-| Parámetro   | Comfy dtype | Descripción                                                                                                               |
+| Parámetro   | Data Type | Descripción                                                                                                               |
 |-------------|-------------|------------------------------------------------------------------------------------------------------------------------------|
 | `latent`    | LATENT      | La salida representa la imagen latente generada a partir del modelo, reflejando las configuraciones y técnicas aplicadas. |

@@ -8,9 +8,7 @@ Este nodo actúa como el punto central para preparar la información condicional
 
 La posición del nodo en la jerarquía de nodos de ComfyUI indica que opera en las primeras etapas del pipeline de generación de video, enfocándose en manipular las señales condicionales antes de la muestreo o decodificación real de los fotogramas de video.
 
-## Análisis detallado del nodo WanFunControlToVideo
-
-### Parámetros de entrada
+## Entradas
 
 | Nombre del parámetro | Parámetro requerido | Tipo de dato       | Descripción                                                                                                                                                                                                                                         | Valor por defecto |
 |:---------------------|:--------------------|:-------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
@@ -25,7 +23,7 @@ La posición del nodo en la jerarquía de nodos de ComfyUI indica que opera en l
 | start_image          | No                  | IMAGE              | (Opcional) Imagen inicial que influye en el comienzo del video generado.                                                                                                                                                                            | None              |
 | control_video        | No                  | IMAGE              | (Opcional) Permite al usuario proporcionar un video de referencia preprocesado por ControlNet, que guiará el movimiento y la estructura latente del video generado.                                                                                 | None              |
 
-### Parámetros de salida
+## Salidas
 
 | Nombre del parámetro | Tipo de dato | Descripción                                                                                                                  |
 |:---------------------|:-------------|:-----------------------------------------------------------------------------------------------------------------------------|

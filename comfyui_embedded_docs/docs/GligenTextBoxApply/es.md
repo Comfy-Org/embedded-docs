@@ -1,6 +1,6 @@
-El nodo GLIGENTextBoxApply está diseñado para integrar la condicionamiento basada en texto en la entrada de un modelo generativo, específicamente aplicando parámetros de cuadro de texto y codificándolos utilizando un modelo CLIP. Este proceso enriquece la condicionamiento con información espacial y textual, facilitando una generación más precisa y consciente del contexto.
+El nodo `GLIGENTextBoxApply` está diseñado para integrar la condicionamiento basada en texto en la entrada de un modelo generativo, específicamente aplicando parámetros de cuadro de texto y codificándolos utilizando un modelo CLIP. Este proceso enriquece la condicionamiento con información espacial y textual, facilitando una generación más precisa y consciente del contexto.
 
-## Input types (Tipos de entrada)
+## Entradas
 
 | Parameter            | Comfy dtype        | Description (Descripción) |
 |----------------------|--------------------|-------------|
@@ -13,7 +13,7 @@ El nodo GLIGENTextBoxApply está diseñado para integrar la condicionamiento bas
 | `x`                  | `INT`              | La coordenada x de la esquina superior izquierda del cuadro de texto dentro de la imagen generada. Especifica la posición horizontal del cuadro de texto. |
 | `y`                  | `INT`              | La coordenada y de la esquina superior izquierda del cuadro de texto dentro de la imagen generada. Especifica la posición vertical del cuadro de texto. |
 
-## Output types (Tipos de salida)
+## Salidas
 
 | Parameter            | Comfy dtype        | Description (Descripción) |
 |----------------------|--------------------|-------------|

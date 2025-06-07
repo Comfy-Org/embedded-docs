@@ -1,4 +1,4 @@
-## Types d'entrée Empty Hunyuan Latent Video
+## Entrées
 
 | Paramètre    | Type Comfy | Description                                                                               |
 | ------------ | ---------- | ----------------------------------------------------------------------------------------- |
@@ -7,7 +7,7 @@
 | `length`     | `INT`      | Longueur de la vidéo, par défaut 25, minimum 1, maximum `nodes.MAX_RESOLUTION`, pas de 4. |
 | `batch_size` | `INT`      | Taille du lot, par défaut 1, minimum 1, maximum 4096.                                    |
 
-## Types de sortie Empty Hunyuan Latent Video
+## Sorties
 
 | Paramètre    | Type Comfy | Description                                                                              |
 | ------------ | ---------- | ---------------------------------------------------------------------------------------- |

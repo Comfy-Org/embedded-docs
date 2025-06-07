@@ -1,8 +1,9 @@
 
 Este nodo está diseñado para procesar información de condicionamiento de manera por lotes, específicamente adaptado para el modelo StableZero123. Se centra en manejar eficientemente múltiples conjuntos de datos de condicionamiento simultáneamente, optimizando el flujo de trabajo para escenarios donde el procesamiento por lotes es crucial.
-## Tipos de entrada
 
-| Parámetro             | Tipo Comfy  | Descripción |
+## Entradas
+
+| Parámetro             | Tipo de Dato | Descripción |
 |----------------------|--------------|-------------|
 | `clip_vision`         | `CLIP_VISION` | Las incrustaciones de visión CLIP que proporcionan contexto visual para el proceso de condicionamiento. |
 | `init_image`          | `IMAGE`      | La imagen inicial sobre la cual se va a condicionar, sirviendo como punto de partida para el proceso de generación. |
@@ -15,9 +16,9 @@ Este nodo está diseñado para procesar información de condicionamiento de mane
 | `elevation_batch_increment` | `FLOAT` | El cambio incremental en el ángulo de elevación a través del lote, permitiendo perspectivas variadas. |
 | `azimuth_batch_increment` | `FLOAT` | El cambio incremental en el ángulo de acimut a través del lote, permitiendo orientaciones variadas. |
 
-## Tipos de salida
+## Salidas
 
-| Parámetro     | Tipo Comfy  | Descripción |
+| Parámetro     | Tipo de Dato | Descripción |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | La salida de condicionamiento positiva, adaptada para promover ciertas características o aspectos en el contenido generado. |
 | `negative`    | `CONDITIONING` | La salida de condicionamiento negativa, adaptada para despromover ciertas características o aspectos en el contenido generado. |
