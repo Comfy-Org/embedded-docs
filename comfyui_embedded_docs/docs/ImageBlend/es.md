@@ -2,7 +2,7 @@ El nodo `ImageBlend` está diseñado para mezclar dos imágenes juntas basándos
 
 ## Entradas
 
-| Campo         | Comfy dtype | Descripción                                                                       |
+| Campo         | Data Type | Descripción                                                                       |
 |---------------|-------------|-----------------------------------------------------------------------------------|
 | `image1`      | `IMAGE`     | La primera imagen a mezclar. Sirve como la capa base para la operación de mezcla. |
 | `image2`      | `IMAGE`     | La segunda imagen a mezclar. Dependiendo del modo de mezcla, modifica la apariencia de la primera imagen. |
@@ -11,6 +11,6 @@ El nodo `ImageBlend` está diseñado para mezclar dos imágenes juntas basándos
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                              |
+| Campo | Data Type | Descripción                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | La imagen resultante después de mezclar las dos imágenes de entrada según el modo y factor de mezcla especificados. |

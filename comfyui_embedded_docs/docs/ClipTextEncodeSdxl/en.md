@@ -2,7 +2,7 @@ This node is designed to encode text inputs using the CLIP model specifically ta
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
 | `clip` | `CLIP` | The CLIP model instance used for encoding the text. It plays a vital role in processing the text input and converting it into a format suitable for image generation or manipulation tasks. |
 | `width` | `INT` | Specifies the width of the image in pixels. It determines the dimensions of the output image generated or manipulated. |
@@ -16,6 +16,6 @@ This node is designed to encode text inputs using the CLIP model specifically ta
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
 | `conditioning` | `CONDITIONING` | The output of the node, which includes the encoded text along with additional information necessary for image generation or manipulation tasks. |

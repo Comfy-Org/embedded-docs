@@ -3,7 +3,7 @@ Ce nœud est conçu pour améliorer les capacités d'échantillonnage d'un modè
 
 ## Entrées
 
-| Paramètre   | Comfy dtype | Python dtype        | Description |
+| Paramètre   | Data Type | Python dtype        | Description |
 |-------------|--------------|----------------------|-------------|
 | `model`     | `MODEL`     | `torch.nn.Module`   | Le modèle à améliorer avec des capacités d'échantillonnage EDM continues. Il sert de base pour appliquer les techniques d'échantillonnage avancées. |
 | `sampling`  | `COMBO[STRING]` | `str`             | Spécifie le type d'échantillonnage à appliquer, soit 'eps' pour l'échantillonnage epsilon, soit 'v_prediction' pour la prédiction de vitesse, influençant le comportement du modèle pendant le processus d'échantillonnage. |
@@ -12,6 +12,6 @@ Ce nœud est conçu pour améliorer les capacités d'échantillonnage d'un modè
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Python dtype        | Description |
+| Paramètre | Data Type | Python dtype        | Description |
 |-----------|-------------|----------------------|-------------|
 | `model`   | `MODEL`     | `torch.nn.Module`   | Le modèle amélioré avec des capacités d'échantillonnage EDM continues intégrées, prêt pour une utilisation ultérieure dans des tâches de génération. |

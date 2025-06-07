@@ -14,6 +14,6 @@ Este nodo se especializa en cargar un modelo LoRA sin requerir un modelo CLIP, e
 
 ## Salidas
 
-| Campo   | Comfy dtype | Descripción                                                              |
+| Campo   | Data Type | Descripción                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
 | `model` | `MODEL`     | El modelo modificado con ajustes LoRA aplicados, reflejando cambios en el comportamiento o capacidades del modelo. |

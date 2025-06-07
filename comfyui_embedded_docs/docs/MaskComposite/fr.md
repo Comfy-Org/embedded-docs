@@ -3,7 +3,7 @@ Ce nœud se spécialise dans la combinaison de deux entrées de masque à traver
 
 ## Entrées
 
-| Paramètre    | Comfy dtype | Description                                                                                                                                      |
+| Paramètre    | Data Type | Description                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `destination`| MASK        | Le masque principal qui sera modifié en fonction de l'opération avec le masque source. Il joue un rôle central dans l'opération composite, servant de base pour les modifications. |
 | `source`     | MASK        | Le masque secondaire qui sera utilisé en conjonction avec le masque de destination pour effectuer l'opération spécifiée, influençant le masque de sortie final. |
@@ -13,6 +13,6 @@ Ce nœud se spécialise dans la combinaison de deux entrées de masque à traver
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description                                                                 |
+| Paramètre | Data Type | Description                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |
 | `mask`    | MASK        | Le masque résultant après l'application de l'opération spécifiée entre les masques de destination et source, représentant le résultat composite. |

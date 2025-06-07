@@ -2,12 +2,12 @@ The `ImageInvert` node is designed to invert the colors of an image, effectively
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The 'image' parameter represents the input image to be inverted. It is crucial for specifying the target image whose colors are to be inverted, affecting the node's execution and the visual outcome of the inversion process. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The output is an inverted version of the input image, with each pixel's color value transformed to its complementary color. |

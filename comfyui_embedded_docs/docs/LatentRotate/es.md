@@ -3,13 +3,13 @@ El nodo LatentRotate está diseñado para rotar representaciones latentes de im�
 
 ## Entradas
 
-| Parámetro  | Comfy dtype | Descripción |
+| Parámetro  | Data Type | Descripción |
 |------------|-------------|-------------|
 | `samples`  | `LATENT`    | El parámetro 'samples' representa las representaciones latentes de imágenes a rotar. Es crucial para determinar el punto de inicio de la operación de rotación. |
 | `rotation` | `COMBO[STRING]` | El parámetro 'rotation' especifica el ángulo por el cual deben rotarse las imágenes latentes. Influye directamente en la orientación de las imágenes resultantes. |
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La salida es una versión modificada de las representaciones latentes de entrada, rotadas por el ángulo especificado. |

@@ -2,7 +2,7 @@ The ImageSharpen node enhances the clarity of an image by accentuating its edges
 
 ## Inputs
 
-| Field          | Comfy dtype | Description                                                                                   |
+| Field          | Data Type | Description                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
 | `image`        | `IMAGE`     | The input image to be sharpened. This parameter is crucial as it determines the base image on which the sharpening effect will be applied. |
 | `sharpen_radius`| `INT`       | Defines the radius of the sharpening effect. A larger radius means that more pixels around the edge will be affected, leading to a more pronounced sharpening effect. |
@@ -11,6 +11,6 @@ The ImageSharpen node enhances the clarity of an image by accentuating its edges
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                              |
+| Field | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | The sharpened image, with enhanced edges and details, ready for further processing or display. |

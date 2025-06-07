@@ -2,7 +2,7 @@ El nodo ImageScaleBy está diseñado para escalar imágenes por un factor de esc
 
 ## Entradas
 
-| Parámetro       | Comfy dtype | Descripción                                                                 |
+| Parámetro       | Data Type | Descripción                                                                 |
 |-----------------|-------------|----------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | La imagen de entrada a escalar. Este parámetro es crucial ya que proporciona la imagen base que se someterá al proceso de escalado. |
 | `upscale_method`| `COMBO[STRING]` | Especifica el método de interpolación que se utilizará para escalar. La elección del método puede afectar la calidad y las características de la imagen escalada. |
@@ -10,6 +10,6 @@ El nodo ImageScaleBy está diseñado para escalar imágenes por un factor de esc
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción                                                   |
+| Parámetro | Data Type | Descripción                                                   |
 |-----------|-------------|---------------------------------------------------------------|
 | `image`   | `IMAGE`     | La imagen escalada, que es más grande que la imagen de entrada según el factor de escala y el método de interpolación especificados. |

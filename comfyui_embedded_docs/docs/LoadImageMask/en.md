@@ -3,13 +3,13 @@ The LoadImageMask node is designed to load images and their associated masks fro
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `COMBO[STRING]` | The 'image' parameter specifies the image file to be loaded and processed. It plays a crucial role in determining the output by providing the source image for mask extraction and format conversion. |
 | `channel` | `COMBO[STRING]` | The 'channel' parameter specifies the color channel of the image that will be used to generate the mask. This allows for flexibility in mask creation based on different color channels, enhancing the node's utility in various image processing scenarios. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `mask`    | `MASK`      | This node outputs the mask generated from the specified image and channel, prepared in a standardized format suitable for further processing in image manipulation tasks. |

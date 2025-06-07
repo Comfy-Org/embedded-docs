@@ -3,7 +3,7 @@ El nodo LatentCrop está diseñado para realizar operaciones de recorte en repre
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `samples` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes a recortar. Es crucial para definir los datos sobre los que se realizará la operación de recorte. |
 | `width`   | `INT`       | Especifica el ancho del área de recorte. Influye directamente en las dimensiones de la representación latente de salida. |
@@ -13,6 +13,6 @@ El nodo LatentCrop está diseñado para realizar operaciones de recorte en repre
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La salida es una representación latente modificada con el recorte especificado aplicado. |

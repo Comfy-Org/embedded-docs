@@ -3,7 +3,7 @@
 
 ## 입력
 
-| Parameter | Comfy dtype | Python dtype     | Description (설명) |
+| Parameter | Data Type | Python dtype     | Description (설명) |
 |-----------|--------------|-------------------|-------------|
 | `model`   | `MODEL`     | `torch.nn.Module` | 이산 샘플링 전략이 적용될 모델입니다. 이 매개변수는 수정될 기본 모델을 정의하므로 중요합니다. |
 | `sampling`| `COMBO[STRING]` | `str`           | 모델에 적용할 이산 샘플링 방법을 지정합니다. 방법의 선택은 모델이 샘플을 생성하는 방식에 영향을 미치며, 다양한 샘플링 전략을 제공합니다. |
@@ -11,6 +11,6 @@
 
 ## 출력
 
-| Parameter | Comfy dtype | Python dtype     | Description (설명) |
+| Parameter | Data Type | Python dtype     | Description (설명) |
 |-----------|-------------|-------------------|-------------|
 | `model`   | `MODEL`     | `torch.nn.Module` | 이산 샘플링 전략이 적용된 수정된 모델입니다. 이 모델은 지정된 방법과 조정을 사용하여 샘플을 생성할 수 있습니다. |

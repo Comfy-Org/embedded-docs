@@ -2,7 +2,7 @@ The ImageScaleBy node is designed for upscaling images by a specified scale fact
 
 ## Inputs
 
-| Parameter       | Comfy dtype | Description                                                                 |
+| Parameter       | Data Type | Description                                                                 |
 |-----------------|-------------|----------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | The input image to be upscaled. This parameter is crucial as it provides the base image that will undergo the upscaling process. |
 | `upscale_method`| `COMBO[STRING]` | Specifies the interpolation method to be used for upscaling. The choice of method can affect the quality and characteristics of the upscaled image. |
@@ -10,6 +10,6 @@ The ImageScaleBy node is designed for upscaling images by a specified scale fact
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                   |
+| Parameter | Data Type | Description                                                   |
 |-----------|-------------|---------------------------------------------------------------|
 | `image`   | `IMAGE`     | The upscaled image, which is larger than the input image according to the specified scale factor and interpolation method. |

@@ -10,6 +10,6 @@ Ce nœud est conçu pour agrandir les images en utilisant un modèle d'agrandiss
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description                                        |
+| Paramètre | Data Type | Description                                        |
 |-----------|-------------|----------------------------------------------------|
 | `image`   | `IMAGE`     | L'image agrandie, traitée par le modèle d'agrandissement. Cette sortie est le résultat de l'opération d'agrandissement, montrant la résolution ou la qualité améliorée. |

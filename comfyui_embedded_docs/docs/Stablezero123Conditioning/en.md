@@ -16,7 +16,7 @@ This node is designed to process and condition data for use in StableZero123 mod
 
 ## Outputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Generates positive conditioning vectors, aiding in the model's positive feature reinforcement. |
 | `negative`    | `CONDITIONING` | Produces negative conditioning vectors, assisting in the model's avoidance of certain features. |

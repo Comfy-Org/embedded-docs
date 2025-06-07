@@ -10,6 +10,6 @@ The `GLIGENLoader` node is designed for loading GLIGEN models, which are special
 
 ## Outputs
 
-| Field    | Comfy dtype | Description                                                              |
+| Field    | Data Type | Description                                                              |
 |----------|-------------|--------------------------------------------------------------------------|
 | `gligen` | `GLIGEN`    | The loaded GLIGEN model, ready for use in generative tasks, representing the fully initialized model loaded from the specified path. |

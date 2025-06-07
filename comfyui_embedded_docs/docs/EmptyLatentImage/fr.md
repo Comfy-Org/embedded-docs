@@ -2,7 +2,7 @@ Le nœud `EmptyLatentImage` est conçu pour générer une représentation d'espa
 
 ## Entrées
 
-| Paramètre   | Comfy dtype | Description |
+| Paramètre   | Data Type | Description |
 |-------------|-------------|-------------|
 | `width`     | `INT`       | Spécifie la largeur de l'image latente à générer. Ce paramètre influence directement les dimensions spatiales de la représentation latente résultante. |
 | `height`    | `INT`       | Détermine la hauteur de l'image latente à générer. Ce paramètre est crucial pour définir les dimensions spatiales de la représentation de l'espace latent. |
@@ -10,6 +10,6 @@ Le nœud `EmptyLatentImage` est conçu pour générer une représentation d'espa
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est un tenseur représentant un lot d'images latentes vides, servant de base pour la génération ou la manipulation ultérieure d'images dans l'espace latent. |

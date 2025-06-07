@@ -13,6 +13,6 @@ This node specializes in loading a LoRA model without requiring a CLIP model, fo
 
 ## Outputs
 
-| Field   | Comfy dtype | Description                                                              |
+| Field   | Data Type | Description                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
 | `model` | `MODEL`     | The modified model with LoRA adjustments applied, reflecting changes in model behavior or capabilities. |

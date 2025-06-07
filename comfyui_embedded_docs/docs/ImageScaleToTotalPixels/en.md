@@ -2,7 +2,7 @@ The ImageScaleToTotalPixels node is designed for resizing images to a specified 
 
 ## Inputs
 
-| Parameter       | Comfy dtype | Description                                                                |
+| Parameter       | Data Type | Description                                                                |
 |-----------------|-------------|----------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | The input image to be upscaled to the specified total number of pixels.    |
 | `upscale_method`| `COMBO[STRING]` | The method used for upscaling the image. It affects the quality and characteristics of the upscaled image. |
@@ -10,6 +10,6 @@ The ImageScaleToTotalPixels node is designed for resizing images to a specified 
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                           |
+| Parameter | Data Type | Description                                                           |
 |-----------|-------------|-----------------------------------------------------------------------|
 | `image`   | `IMAGE`     | The upscaled image with the specified total number of pixels, maintaining the original aspect ratio. |

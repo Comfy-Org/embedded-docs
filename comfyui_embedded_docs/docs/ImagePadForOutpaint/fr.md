@@ -2,7 +2,7 @@ Ce nœud est conçu pour préparer les images au processus d'outpainting en ajou
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | L'entrée 'image' est l'image principale à préparer pour l'outpainting, servant de base pour les opérations de remplissage. |
 | `left`    | `INT`       | Spécifie la quantité de remplissage à ajouter au côté gauche de l'image, influençant la zone étendue pour l'outpainting. |
@@ -13,7 +13,7 @@ Ce nœud est conçu pour préparer les images au processus d'outpainting en ajou
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La sortie 'image' représente l'image avec remplissage, prête pour le processus d'outpainting. |
 | `mask`    | `MASK`      | La sortie 'mask' indique les zones de l'image originale et le remplissage ajouté, utile pour guider les algorithmes d'outpainting. |

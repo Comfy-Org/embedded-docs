@@ -2,7 +2,7 @@ Le nœud `ImageCompositeMasked` est conçu pour la composition d'images, permett
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `destination` | `IMAGE` | L'image de destination sur laquelle l'image source sera composée. Elle sert de fond pour l'opération de composition. |
 | `source` | `IMAGE` | L'image source à composer sur l'image de destination. Cette image peut être redimensionnée pour s'adapter aux dimensions de l'image de destination. |
@@ -13,6 +13,6 @@ Le nœud `ImageCompositeMasked` est conçu pour la composition d'images, permett
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image` | `IMAGE` | L'image résultante après l'opération de composition, qui combine des éléments des deux images. |

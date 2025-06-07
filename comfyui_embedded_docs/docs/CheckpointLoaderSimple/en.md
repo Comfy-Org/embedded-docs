@@ -8,14 +8,14 @@ This node automatically detects all model files in the `ComfyUI/models/checkpoin
 
 ## Inputs
 
-| Parameter Name | Data Type | Input Method | Default Value | Value Range | Description |
-|----------------|-----------|--------------|---------------|-------------|-------------|
-| ckpt_name | STRING | Dropdown Selection | null | All model files in checkpoints folder | Select the checkpoint model file name to load, which determines the AI model used for subsequent image generation |
+| Parameter Name | Data Type | Input Type | Default | Range | Description |
+|----------------|-----------|------------|---------|-------|-------------|
+| `ckpt_name`    | STRING    | Widget     | null    | All model files in checkpoints folder | Select the checkpoint model file name to load, which determines the AI model used for subsequent image generation |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| MODEL | MODEL | The main diffusion model used for image denoising generation, the core component of AI image creation |
-| CLIP | CLIP | The model used for encoding text prompts, converting text descriptions into information that AI can understand |
-| VAE | VAE | The model used for image encoding and decoding, responsible for converting between pixel space and latent space |
+| `MODEL`     | MODEL     | The main diffusion model used for image denoising generation, the core component of AI image creation |
+| `CLIP`      | CLIP      | The model used for encoding text prompts, converting text descriptions into information that AI can understand |
+| `VAE`       | VAE       | The model used for image encoding and decoding, responsible for converting between pixel space and latent space |

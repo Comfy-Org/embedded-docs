@@ -2,7 +2,7 @@ Le nœud ImageSharpen améliore la clarté d'une image en accentuant ses contour
 
 ## Entrées
 
-| Champ          | Comfy dtype | Description                                                                                   |
+| Champ          | Data Type | Description                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
 | `image`        | `IMAGE`     | L'image d'entrée à améliorer. Ce paramètre est crucial car il détermine l'image de base sur laquelle l'effet de netteté sera appliqué. |
 | `sharpen_radius`| `INT`       | Définit le rayon de l'effet de netteté. Un rayon plus grand signifie que plus de pixels autour du contour seront affectés, entraînant un effet de netteté plus prononcé. |
@@ -11,6 +11,6 @@ Le nœud ImageSharpen améliore la clarté d'une image en accentuant ses contour
 
 ## Sorties
 
-| Champ | Comfy dtype | Description                                                              |
+| Champ | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | L'image améliorée, avec des contours et des détails accentués, prête pour un traitement ou un affichage ultérieur. |

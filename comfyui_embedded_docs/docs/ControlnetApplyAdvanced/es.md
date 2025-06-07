@@ -4,7 +4,7 @@ Este nodo aplica transformaciones avanzadas de control net a los datos de acondi
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `positive` | `CONDITIONING` | Los datos de acondicionamiento positivo a los que se aplicarán las transformaciones de control net. Representa los atributos o características deseadas para mejorar o mantener en el contenido generado. |
 | `negative` | `CONDITIONING` | Los datos de acondicionamiento negativo, que representan atributos o características a disminuir o eliminar del contenido generado. Las transformaciones de control net también se aplican a estos datos, permitiendo un ajuste equilibrado de las características del contenido. |
@@ -16,7 +16,7 @@ Este nodo aplica transformaciones avanzadas de control net a los datos de acondi
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `positive` | `CONDITIONING` | Los datos de acondicionamiento positivo modificados después de la aplicación de transformaciones de control net, reflejando las mejoras realizadas basadas en los parámetros de entrada. |
 | `negative` | `CONDITIONING` | Los datos de acondicionamiento negativo modificados después de la aplicación de transformaciones de control net, reflejando la supresión o eliminación de características específicas basadas en los parámetros de entrada. |

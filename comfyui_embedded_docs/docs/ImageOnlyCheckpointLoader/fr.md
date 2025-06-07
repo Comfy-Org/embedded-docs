@@ -4,13 +4,13 @@ Ce nœud est spécialisé dans le chargement de checkpoints spécifiquement pour
 
 ## Entrées
 
-| Champ      | Comfy dtype | Description                                                                       |
+| Champ      | Data Type | Description                                                                       |
 |------------|-------------|-----------------------------------------------------------------------------------|
 | `ckpt_name`| `COMBO[STRING]` | Spécifie le nom du checkpoint à charger, crucial pour identifier et récupérer le fichier de checkpoint correct à partir d'une liste prédéfinie. |
 
 ## Sorties
 
-| Champ     | Comfy dtype | Description                                                                                   |
+| Champ     | Data Type | Description                                                                                   |
 |-----------|-------------|-----------------------------------------------------------------------------------------------|
 | `model`   | `MODEL`     | Retourne le modèle principal chargé à partir du checkpoint, configuré pour le traitement d'image dans les contextes de génération vidéo. |
 | `clip_vision` | `CLIP_VISION` | Fournit le composant CLIP vision du checkpoint, adapté pour la compréhension de l'image et l'extraction de caractéristiques. |

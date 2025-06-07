@@ -3,7 +3,7 @@ The LatentCrop node is designed to perform cropping operations on latent represe
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `samples` | `LATENT`    | The 'samples' parameter represents the latent representations to be cropped. It is crucial for defining the data on which the cropping operation will be performed. |
 | `width`   | `INT`       | Specifies the width of the crop area. It directly influences the dimensions of the output latent representation. |
@@ -13,6 +13,6 @@ The LatentCrop node is designed to perform cropping operations on latent represe
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output is a modified latent representation with the specified crop applied. |

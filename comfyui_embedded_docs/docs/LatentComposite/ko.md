@@ -3,7 +3,7 @@ LatentComposite 노드는 두 개의 잠재 표현을 하나의 출력으로 혼
 
 ## 입력
 
-| 매개변수    | Comfy dtype | 설명 |
+| 매개변수    | Data Type | 설명 |
 |--------------|-------------|-------------|
 | `samples_to` | `LATENT`    | 'samples_from'이 합성될 'samples_to' 잠재 표현입니다. 합성 작업의 기본 레이어로 작용합니다. |
 | `samples_from` | `LATENT` | 'samples_to'에 합성될 'samples_from' 잠재 표현입니다. 최종 합성 출력에 그 특성이나 특징을 기여합니다. |
@@ -13,6 +13,6 @@ LatentComposite 노드는 두 개의 잠재 표현을 하나의 출력으로 혼
 
 ## 출력
 
-| 매개변수 | Comfy dtype | 설명 |
+| 매개변수 | Data Type | 설명 |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | 출력은 지정된 좌표와 크기 조정 옵션에 따라 'samples_to'와 'samples_from' 잠재 표현의 특성을 혼합한 합성 잠재 표현입니다. |

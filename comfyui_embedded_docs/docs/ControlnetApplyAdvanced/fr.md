@@ -4,7 +4,7 @@ Ce nœud applique des transformations avancées de réseau de contrôle aux donn
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `positive` | `CONDITIONING` | Les données de conditionnement positives auxquelles les transformations du réseau de contrôle seront appliquées. Elles représentent les attributs ou caractéristiques souhaités à améliorer ou maintenir dans le contenu généré. |
 | `negative` | `CONDITIONING` | Les données de conditionnement négatives, représentant les attributs ou caractéristiques à diminuer ou supprimer du contenu généré. Les transformations du réseau de contrôle sont également appliquées à ces données, permettant un ajustement équilibré des caractéristiques du contenu. |
@@ -16,7 +16,7 @@ Ce nœud applique des transformations avancées de réseau de contrôle aux donn
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `positive` | `CONDITIONING` | Les données de conditionnement positives modifiées après l'application des transformations du réseau de contrôle, reflétant les améliorations effectuées en fonction des paramètres d'entrée. |
 | `negative` | `CONDITIONING` | Les données de conditionnement négatives modifiées après l'application des transformations du réseau de contrôle, reflétant la suppression ou le retrait de caractéristiques spécifiques en fonction des paramètres d'entrée. |

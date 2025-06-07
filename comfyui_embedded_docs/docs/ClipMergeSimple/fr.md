@@ -2,7 +2,7 @@ Ce nœud se spécialise dans la fusion de deux modèles CLIP selon un ratio spé
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip1`   | `CLIP`      | Le premier modèle CLIP à fusionner. Il sert de modèle de base pour le processus de fusion. |
 | `clip2`   | `CLIP`      | Le second modèle CLIP à fusionner. Ses patches clés, à l'exception des IDs de position et de l'échelle des logits, sont appliqués au premier modèle selon le ratio spécifié. |
@@ -10,6 +10,6 @@ Ce nœud se spécialise dans la fusion de deux modèles CLIP selon un ratio spé
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | Le modèle CLIP fusionné résultant, incorporant des caractéristiques des deux modèles d'entrée selon le ratio spécifié. |

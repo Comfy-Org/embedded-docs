@@ -3,7 +3,7 @@ Ce nœud est conçu pour des opérations avancées de fusion de modèles, spéci
 
 ## Entrées
 
-| Paramètre     | Comfy dtype | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `model1`      | `MODEL`     | Le modèle de base dont les paramètres seront soustraits. |
 | `model2`      | `MODEL`     | Le modèle dont les paramètres seront soustraits du modèle de base. |
@@ -11,6 +11,6 @@ Ce nœud est conçu pour des opérations avancées de fusion de modèles, spéci
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | Le modèle résultant après soustraction des paramètres d'un modèle d'un autre, échelonné par le multiplicateur. |

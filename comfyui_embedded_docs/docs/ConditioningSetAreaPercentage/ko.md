@@ -2,7 +2,7 @@ ConditioningSetAreaPercentage 노드는 조건 요소의 영향 영역을 백분
 
 ## 입력
 
-| 매개변수 | Comfy dtype | 설명 |
+| 매개변수 | Data Type | 설명 |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | 수정될 조건 요소를 나타내며, 영역 및 강도 조정을 적용하는 기초가 됩니다. |
 | `width`   | `FLOAT`     | 전체 이미지 너비의 백분율로 영역의 너비를 지정하여, 조건이 수평으로 이미지에 얼마나 영향을 미치는지 결정합니다. |
@@ -13,6 +13,6 @@ ConditioningSetAreaPercentage 노드는 조건 요소의 영향 영역을 백분
 
 ## 출력
 
-| 매개변수 | Comfy dtype | 설명 |
+| 매개변수 | Data Type | 설명 |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | 수정된 영역 및 강도 매개변수가 적용된 조건 요소를 반환하여, 추가 처리나 적용을 준비합니다. |

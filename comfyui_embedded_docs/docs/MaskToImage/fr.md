@@ -3,12 +3,12 @@ Le nœud `MaskToImage` est conçu pour convertir un masque en format image. Cett
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `mask`    | `MASK`      | L'entrée du masque est essentielle pour le processus de conversion, servant de données source qui seront transformées en format image. Cette entrée dicte la forme et le contenu de l'image résultante. |
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La sortie est une représentation image du masque d'entrée, permettant l'inspection visuelle et d'autres manipulations basées sur l'image. |

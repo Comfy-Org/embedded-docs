@@ -3,7 +3,7 @@ Este nodo está diseñado para codificar imágenes en una representación latent
 
 ## Entradas
 
-| Parámetro      | Comfy dtype | Descripción |
+| Parámetro      | Data Type | Descripción |
 |----------------|-------------|-------------|
 | `pixels`       | `IMAGE`     | La imagen de entrada a codificar. Esta imagen se somete a preprocesamiento y redimensionamiento para coincidir con las dimensiones de entrada esperadas por el modelo VAE antes de la codificación. |
 | `vae`          | `VAE`       | El modelo VAE utilizado para codificar la imagen en su representación latente. Juega un papel crucial en el proceso de transformación, determinando la calidad y las características del espacio latente de salida. |
@@ -12,6 +12,6 @@ Este nodo está diseñado para codificar imágenes en una representación latent
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La salida incluye la representación latente codificada de la imagen y una máscara de ruido, ambas cruciales para tareas de relleno posteriores. |

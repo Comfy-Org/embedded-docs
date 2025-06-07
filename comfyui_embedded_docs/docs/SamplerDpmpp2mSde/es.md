@@ -3,7 +3,7 @@ Este nodo está diseñado para generar un muestrador para el modelo DPMPP_2M_SDE
 
 ## Entradas
 
-| Parámetro       | Comfy dtype | Descripción                                                                 |
+| Parámetro       | Data Type | Descripción                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
 | `solver_type`   | `COMBO[STRING]` | Especifica el tipo de solucionador que se utilizará en el proceso de muestreo, ofreciendo opciones entre 'midpoint' y 'heun'. Esta elección influye en el método de integración numérica aplicado durante el muestreo. |
 | `eta`           | `FLOAT`     | Determina el tamaño del paso en la integración numérica, afectando la granularidad del proceso de muestreo. Un valor más alto indica un tamaño de paso mayor. |
@@ -12,6 +12,6 @@ Este nodo está diseñado para generar un muestrador para el modelo DPMPP_2M_SDE
 
 ## Salidas
 
-| Parámetro       | Comfy dtype | Descripción                                                                 |
+| Parámetro       | Data Type | Descripción                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
 | `sampler`       | `SAMPLER`   | La salida es un muestrador configurado según los parámetros especificados, listo para generar muestras. |

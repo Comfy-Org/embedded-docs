@@ -2,7 +2,7 @@ The ConditioningSetAreaPercentage node specializes in adjusting the area of infl
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Represents the conditioning elements to be modified, serving as the foundation for applying area and strength adjustments. |
 | `width`   | `FLOAT`     | Specifies the width of the area as a percentage of the total image width, influencing how much of the image the conditioning affects horizontally. |
@@ -13,6 +13,6 @@ The ConditioningSetAreaPercentage node specializes in adjusting the area of infl
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Returns the modified conditioning elements with updated area and strength parameters, ready for further processing or application. |

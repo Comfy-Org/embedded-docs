@@ -3,7 +3,7 @@ This node is designed for encoding images into a latent representation suitable 
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `pixels`  | `IMAGE`     | The input image to be encoded. This image undergoes preprocessing and resizing to match the VAE model's expected input dimensions before encoding. |
 | `vae`     | `VAE`       | The VAE model used for encoding the image into its latent representation. It plays a crucial role in the transformation process, determining the quality and characteristics of the output latent space. |
@@ -12,6 +12,6 @@ This node is designed for encoding images into a latent representation suitable 
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output includes the encoded latent representation of the image and a noise mask, both crucial for subsequent inpainting tasks. |

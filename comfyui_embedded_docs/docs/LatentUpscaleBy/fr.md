@@ -3,7 +3,7 @@ Le nœud LatentUpscaleBy est conçu pour agrandir les représentations latentes 
 
 ## Entrées
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `samples`     | `LATENT`     | La représentation latente des images à agrandir. Ce paramètre est crucial pour déterminer les données d'entrée qui subiront le processus d'agrandissement. |
 | `upscale_method` | `COMBO[STRING]` | Spécifie la méthode utilisée pour agrandir les échantillons latents. Le choix de la méthode peut affecter de manière significative la qualité et les caractéristiques de la sortie agrandie. |
@@ -11,6 +11,6 @@ Le nœud LatentUpscaleBy est conçu pour agrandir les représentations latentes 
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La représentation latente agrandie, prête pour des tâches de traitement ou de génération ultérieures. Cette sortie est essentielle pour améliorer la résolution des images générées ou pour des opérations de modèle ultérieures. |

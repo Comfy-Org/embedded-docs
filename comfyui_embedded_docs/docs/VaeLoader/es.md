@@ -12,6 +12,6 @@ El nodo VAELoader está diseñado para cargar modelos de Autoencoder Variacional
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                              |
+| Campo | Data Type | Descripción                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `vae`  | `VAE`       | Devuelve el modelo VAE cargado, listo para operaciones adicionales como codificación o decodificación. La salida es un objeto modelo que encapsula el estado del modelo cargado. |

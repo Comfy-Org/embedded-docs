@@ -2,7 +2,7 @@ Ce nœud se spécialise dans l'affinage de l'encodage des entrées textuelles en
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 | --- | --- | --- |
 | `clip` | `CLIP` | Une instance du modèle CLIP utilisée pour la tokenisation et l'encodage du texte, centrale pour générer le conditionnement. |
 | `ascore` | `FLOAT` | Le paramètre de score esthétique influence la sortie de conditionnement en fournissant une mesure de la qualité esthétique. |
@@ -12,6 +12,6 @@ Ce nœud se spécialise dans l'affinage de l'encodage des entrées textuelles en
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 | --- | --- | --- |
 | `conditioning` | `CONDITIONING` | La sortie de conditionnement affinée, enrichie de scores esthétiques et de dimensions pour une génération de contenu améliorée. |

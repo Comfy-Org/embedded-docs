@@ -2,7 +2,7 @@ Le nœud `EmptyImage` est conçu pour générer des images vides de dimensions e
 
 ## Entrées
 
-| Paramètre   | Comfy dtype | Description |
+| Paramètre   | Data Type | Description |
 |-------------|-------------|-------------|
 | `width`     | `INT`       | Spécifie la largeur de l'image générée. Cela détermine la largeur de l'image. |
 | `height`    | `INT`       | Détermine la hauteur de l'image générée. Cela affecte la taille verticale de l'image. |
@@ -11,6 +11,6 @@ Le nœud `EmptyImage` est conçu pour générer des images vides de dimensions e
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La sortie est un tenseur représentant l'image ou les images générées, avec les dimensions et la couleur spécifiées. |

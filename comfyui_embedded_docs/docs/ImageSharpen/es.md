@@ -2,7 +2,7 @@ El nodo ImageSharpen mejora la claridad de una imagen acentuando sus bordes y de
 
 ## Entradas
 
-| Campo          | Comfy dtype | Descripción                                                                                   |
+| Campo          | Data Type | Descripción                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
 | `image`        | `IMAGE`     | La imagen de entrada a afilar. Este parámetro es crucial ya que determina la imagen base sobre la cual se aplicará el efecto de afilado. |
 | `sharpen_radius`| `INT`       | Define el radio del efecto de afilado. Un radio mayor significa que más píxeles alrededor del borde serán afectados, llevando a un efecto de afilado más pronunciado. |
@@ -11,6 +11,6 @@ El nodo ImageSharpen mejora la claridad de una imagen acentuando sus bordes y de
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                              |
+| Campo | Data Type | Descripción                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | La imagen afilada, con bordes y detalles mejorados, lista para un procesamiento o visualización adicional. |

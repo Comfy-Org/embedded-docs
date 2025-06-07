@@ -2,7 +2,7 @@ The `ImageCrop` node is designed for cropping images to a specified width and he
 
 ## Inputs
 
-| Field | Comfy dtype | Description                                                                                   |
+| Field | Data Type | Description                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|
 | `image` | `IMAGE` | The input image to be cropped. This parameter is crucial as it defines the source image from which a region will be extracted based on the specified dimensions and coordinates. |
 | `width` | `INT` | Specifies the width of the cropped image. This parameter determines how wide the resulting cropped image will be. |
@@ -12,6 +12,6 @@ The `ImageCrop` node is designed for cropping images to a specified width and he
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                                   |
+| Field | Data Type | Description                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|
 | `image` | `IMAGE` | The cropped image as a result of the cropping operation. This output is significant for further processing or analysis of the specified image region. |

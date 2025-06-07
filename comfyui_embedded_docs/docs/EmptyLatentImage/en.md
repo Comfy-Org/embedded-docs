@@ -2,7 +2,7 @@ The `EmptyLatentImage` node is designed to generate a blank latent space represe
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `width`   | `INT`       | Specifies the width of the latent image to be generated. This parameter directly influences the spatial dimensions of the resulting latent representation. |
 | `height`  | `INT`       | Determines the height of the latent image to be generated. This parameter is crucial for defining the spatial dimensions of the latent space representation. |
@@ -10,6 +10,6 @@ The `EmptyLatentImage` node is designed to generate a blank latent space represe
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output is a tensor representing a batch of blank latent images, serving as a base for further image generation or manipulation in latent space. |

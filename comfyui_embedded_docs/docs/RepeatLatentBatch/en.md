@@ -3,13 +3,13 @@ The RepeatLatentBatch node is designed to replicate a given batch of latent repr
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `samples` | `LATENT`    | The 'samples' parameter represents the latent representations to be replicated. It is essential for defining the data that will undergo repetition. |
 | `amount`  | `INT`       | The 'amount' parameter specifies the number of times the input samples should be repeated. It directly influences the size of the output batch, thereby affecting the computational load and the diversity of the generated data. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output is a modified version of the input latent representations, replicated according to the specified 'amount'. It may include replicated noise masks and adjusted batch indices, if applicable. |

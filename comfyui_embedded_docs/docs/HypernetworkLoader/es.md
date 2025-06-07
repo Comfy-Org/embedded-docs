@@ -12,6 +12,6 @@ El nodo HypernetworkLoader está diseñado para mejorar o modificar las capacida
 
 ## Salidas
 
-| Campo   | Comfy dtype | Descripción                                                              |
+| Campo   | Data Type | Descripción                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
 | `model` | `MODEL`     | El modelo modificado después de que el hypernetwork ha sido aplicado, mostrando el impacto del hypernetwork en el modelo original. |

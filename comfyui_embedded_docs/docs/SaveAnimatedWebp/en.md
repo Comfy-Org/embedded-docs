@@ -3,7 +3,7 @@ This node is designed for saving a sequence of images as an animated WEBP file. 
 
 ## Inputs
 
-| Field             | Comfy dtype | Description                                                                         |
+| Field             | Data Type | Description                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
 | `images`          | `IMAGE`     | A list of images to be saved as frames in the animated WEBP. This parameter is essential for defining the visual content of the animation. |
 | `filename_prefix` | `STRING`    | Specifies the base name for the output file, which will be appended with a counter and the '.webp' extension. This parameter is crucial for identifying and organizing the saved files. |
@@ -14,6 +14,6 @@ This node is designed for saving a sequence of images as an animated WEBP file. 
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                                       |
+| Field | Data Type | Description                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|
 | `ui`  | N/A         | Provides a UI component displaying the saved animated WEBP images along with their metadata, and indicates whether the animation is enabled. |

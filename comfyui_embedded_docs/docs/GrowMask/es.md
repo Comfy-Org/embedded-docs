@@ -2,7 +2,7 @@ El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dad
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | La máscara de entrada a modificar. Este parámetro es central para la operación del nodo, sirviendo como base sobre la cual la máscara se expande o contrae. |
 | `expand`  | INT         | Determina la magnitud y dirección de la modificación de la máscara. Los valores positivos hacen que la máscara se expanda, mientras que los valores negativos conducen a la contracción. Este parámetro influye directamente en el tamaño final de la máscara. |
@@ -10,6 +10,6 @@ El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dad
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | La máscara modificada después de aplicar la expansión/contracción especificada y el efecto opcional de esquinas afinadas. |

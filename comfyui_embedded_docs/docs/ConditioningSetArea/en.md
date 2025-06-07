@@ -2,7 +2,7 @@ This node is designed to modify the conditioning information by setting specific
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | The conditioning data to be modified. It serves as the base for applying spatial adjustments. |
 | `width`   | `INT`      | Specifies the width of the area to be set within the conditioning context, influencing the horizontal scope of the adjustment. |
@@ -13,6 +13,6 @@ This node is designed to modify the conditioning information by setting specific
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | The modified conditioning data, reflecting the specified area settings and adjustments. |

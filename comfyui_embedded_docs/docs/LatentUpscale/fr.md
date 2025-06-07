@@ -3,7 +3,7 @@ Le nœud LatentUpscale est conçu pour agrandir les représentations latentes de
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `samples` | `LATENT`    | La représentation latente d'une image à agrandir. Ce paramètre est crucial pour déterminer le point de départ du processus d'agrandissement. |
 | `upscale_method` | `COMBO[STRING]` | Spécifie la méthode utilisée pour agrandir l'image latente. Différentes méthodes peuvent affecter la qualité et les caractéristiques de l'image agrandie. |
@@ -13,6 +13,6 @@ Le nœud LatentUpscale est conçu pour agrandir les représentations latentes de
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La représentation latente agrandie de l'image, prête pour un traitement ou une génération ultérieure. |

@@ -3,7 +3,7 @@ Le nœud SamplerCustom est conçu pour fournir un mécanisme d'échantillonnage 
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|--------------|-------------|
 | `model`   | `MODEL`      | Le type d'entrée 'model' spécifie le modèle à utiliser pour l'échantillonnage, jouant un rôle crucial dans la détermination du comportement et du résultat de l'échantillonnage. |
 | `add_noise` | `BOOLEAN`    | Le type d'entrée 'add_noise' permet aux utilisateurs de spécifier si du bruit doit être ajouté au processus d'échantillonnage, influençant la diversité et les caractéristiques des échantillons générés. |
@@ -17,7 +17,7 @@ Le nœud SamplerCustom est conçu pour fournir un mécanisme d'échantillonnage 
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|--------------|-------------|
 | `output`  | `LATENT`     | Le 'output' représente le résultat principal du processus d'échantillonnage, contenant les échantillons générés. |
 | `denoised_output` | `LATENT` | Le 'denoised_output' représente les échantillons après qu'un processus de débruitage a été appliqué, améliorant potentiellement la clarté et la qualité des échantillons générés. |

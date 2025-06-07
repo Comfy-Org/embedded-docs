@@ -2,7 +2,7 @@ Ce nœud est conçu pour modifier les informations de conditionnement en défini
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Les données de conditionnement à modifier. Elles servent de base pour appliquer des ajustements spatiaux. |
 | `width`   | `INT`      | Spécifie la largeur de la zone à définir dans le contexte de conditionnement, influençant la portée horizontale de l'ajustement. |
@@ -13,6 +13,6 @@ Ce nœud est conçu pour modifier les informations de conditionnement en défini
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Les données de conditionnement modifiées, reflétant les paramètres et ajustements de zone spécifiés. |

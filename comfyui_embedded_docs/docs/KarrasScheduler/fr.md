@@ -3,7 +3,7 @@ Le nœud KarrasScheduler est conçu pour générer une séquence de niveaux de b
 
 ## Entrées
 
-| Paramètre   | Comfy dtype | Description                                                                                      |
+| Paramètre   | Data Type | Description                                                                                      |
 |-------------|-------------|------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Spécifie le nombre d'étapes dans le calendrier de bruit, affectant la granularité de la séquence de sigmas générée. |
 | `sigma_max` | FLOAT       | La valeur maximale de sigma dans le calendrier de bruit, définissant la limite supérieure des niveaux de bruit.                    |
@@ -12,6 +12,6 @@ Le nœud KarrasScheduler est conçu pour générer une séquence de niveaux de b
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description                                                                 |
+| Paramètre | Data Type | Description                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | La séquence générée de niveaux de bruit (sigmas) suivant le calendrier de bruit de Karras et al. (2022). |

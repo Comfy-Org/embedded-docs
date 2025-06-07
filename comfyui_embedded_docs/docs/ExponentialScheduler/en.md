@@ -2,7 +2,7 @@ The `ExponentialScheduler` node is designed to generate a sequence of sigma valu
 
 ## Inputs
 
-| Parameter   | Comfy dtype | Description                                                                                   |
+| Parameter   | Data Type | Description                                                                                   |
 |-------------|-------------|---------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Specifies the number of steps in the diffusion process. It influences the length of the generated sigma sequence and thus the granularity of the noise application. |
 | `sigma_max` | FLOAT       | Defines the maximum sigma value, setting the upper limit of noise intensity in the diffusion process. It plays a crucial role in determining the range of noise levels applied. |
@@ -10,6 +10,6 @@ The `ExponentialScheduler` node is designed to generate a sequence of sigma valu
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                                                   |
+| Parameter | Data Type | Description                                                                                   |
 |-----------|-------------|---------------------------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | A sequence of sigma values generated according to the exponential schedule. These values are used to control the noise levels at each step of the diffusion process. |

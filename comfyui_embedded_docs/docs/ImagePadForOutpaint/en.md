@@ -2,7 +2,7 @@ This node is designed for preparing images for the outpainting process by adding
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The 'image' input is the primary image to be prepared for outpainting, serving as the base for padding operations. |
 | `left`    | `INT`       | Specifies the amount of padding to add to the left side of the image, influencing the expanded area for outpainting. |
@@ -13,7 +13,7 @@ This node is designed for preparing images for the outpainting process by adding
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The output 'image' represents the padded image, ready for the outpainting process. |
 | `mask`    | `MASK`      | The output 'mask' indicates the areas of the original image and the added padding, useful for guiding the outpainting algorithms. |

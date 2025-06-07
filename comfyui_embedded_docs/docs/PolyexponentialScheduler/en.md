@@ -3,7 +3,7 @@ The PolyexponentialScheduler node is designed to generate a sequence of noise le
 
 ## Inputs
 
-| Parameter   | Comfy dtype | Description                                                                                                                                                                                                                                                                                                                                                      |
+| Parameter   | Data Type | Description                                                                                                                                                                                                                                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Specifies the number of steps in the diffusion process, affecting the granularity of the generated noise levels.                                                                                                                                                                                                                                                                        |
 | `sigma_max` | FLOAT       | The maximum noise level, setting the upper bound of the noise schedule.                                                                                                                                                                                                                                                                                                                                 |
@@ -12,6 +12,6 @@ The PolyexponentialScheduler node is designed to generate a sequence of noise le
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                                 |
+| Parameter | Data Type | Description                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | The output is a sequence of noise levels (sigmas) tailored to the specified polyexponential noise schedule. |

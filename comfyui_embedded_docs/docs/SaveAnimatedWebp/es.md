@@ -3,7 +3,7 @@ Este nodo está diseñado para guardar una secuencia de imágenes como un archiv
 
 ## Entradas
 
-| Campo             | Comfy dtype | Descripción                                                                         |
+| Campo             | Data Type | Descripción                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
 | `images`          | `IMAGE`     | Una lista de imágenes que se guardarán como fotogramas en el WEBP animado. Este parámetro es esencial para definir el contenido visual de la animación. |
 | `filename_prefix` | `STRING`    | Especifica el nombre base para el archivo de salida, al cual se le añadirá un contador y la extensión '.webp'. Este parámetro es crucial para identificar y organizar los archivos guardados. |
@@ -14,6 +14,6 @@ Este nodo está diseñado para guardar una secuencia de imágenes como un archiv
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                                       |
+| Campo | Data Type | Descripción                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|
 | `ui`  | N/A         | Proporciona un componente de interfaz de usuario que muestra las imágenes WEBP animadas guardadas junto con sus metadatos, e indica si la animación está habilitada. |

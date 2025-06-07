@@ -2,12 +2,12 @@ El nodo InvertMask está diseñado para invertir los valores de una máscara dad
 
 ## Entradas
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | El parámetro 'mask' representa la máscara de entrada que se va a invertir. Es crucial para determinar las áreas que se invertirán en el proceso de inversión. |
 
 ## Salidas
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | La salida es una versión invertida de la máscara de entrada, con áreas previamente enmascaradas que se vuelven no enmascaradas y viceversa. |

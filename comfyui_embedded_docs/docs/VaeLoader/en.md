@@ -10,6 +10,6 @@ The VAELoader node is designed for loading Variational Autoencoder (VAE) models,
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                              |
+| Field | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `vae`  | `VAE`       | Returns the loaded VAE model, ready for further operations such as encoding or decoding. The output is a model object encapsulating the loaded model's state. |

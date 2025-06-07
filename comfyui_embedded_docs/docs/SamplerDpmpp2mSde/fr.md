@@ -3,7 +3,7 @@ Ce nœud est conçu pour générer un échantillonneur pour le modèle DPMPP_2M_
 
 ## Entrées
 
-| Paramètre       | Comfy dtype | Description                                                                 |
+| Paramètre       | Data Type | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
 | `solver_type`   | `COMBO[STRING]` | Spécifie le type de solveur à utiliser dans le processus d'échantillonnage, offrant des options entre 'midpoint' et 'heun'. Ce choix influence la méthode d'intégration numérique appliquée lors de l'échantillonnage. |
 | `eta`           | `FLOAT`     | Détermine la taille des pas dans l'intégration numérique, affectant la granularité du processus d'échantillonnage. Une valeur plus élevée indique une taille de pas plus grande. |
@@ -12,6 +12,6 @@ Ce nœud est conçu pour générer un échantillonneur pour le modèle DPMPP_2M_
 
 ## Sorties
 
-| Paramètre       | Comfy dtype | Description                                                                 |
+| Paramètre       | Data Type | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
 | `sampler`       | `SAMPLER`   | La sortie est un échantillonneur configuré selon les paramètres spécifiés, prêt à générer des échantillons. |

@@ -13,7 +13,7 @@ This node specializes in enhancing the resolution of images through a 4x upscale
 
 ## Outputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | The refined positive conditioning elements resulting from the upscale process. |
 | `negative`    | `CONDITIONING` | The refined negative conditioning elements resulting from the upscale process. |

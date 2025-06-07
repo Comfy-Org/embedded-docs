@@ -3,7 +3,7 @@ Le nœud LatentComposite est conçu pour mélanger ou fusionner deux représenta
 
 ## Entrées
 
-| Paramètre    | Comfy dtype | Description |
+| Paramètre    | Data Type | Description |
 |--------------|-------------|-------------|
 | `samples_to` | `LATENT`    | La représentation latente 'samples_to' où 'samples_from' sera composé. Elle sert de base pour l'opération de composition. |
 | `samples_from` | `LATENT` | La représentation latente 'samples_from' à composer sur 'samples_to'. Elle apporte ses caractéristiques ou ses traits à la sortie composite finale. |
@@ -13,6 +13,6 @@ Le nœud LatentComposite est conçu pour mélanger ou fusionner deux représenta
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est une représentation latente composite, mélangeant les caractéristiques des latents 'samples_to' et 'samples_from' en fonction des coordonnées spécifiées et de l'option de redimensionnement. |

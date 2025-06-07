@@ -3,7 +3,7 @@ El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG anima
 
 ## Entradas
 
-| Campo             | Comfy dtype | Descripción                                                                         |
+| Campo             | Data Type | Descripción                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
 | `images`          | `IMAGE`     | Una lista de imágenes que se procesarán y guardarán como un PNG animado. Cada imagen en la lista representa un fotograma en la animación. |
 | `filename_prefix` | `STRING`    | Especifica el nombre base para el archivo de salida, que se usará como prefijo para los archivos PNG animados generados. |
@@ -12,6 +12,6 @@ El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG anima
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                                       |
+| Campo | Data Type | Descripción                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|
 | `ui`  | N/A         | Proporciona un componente de UI que muestra las imágenes PNG animadas generadas e indica si la animación es de un solo fotograma o de varios fotogramas. |

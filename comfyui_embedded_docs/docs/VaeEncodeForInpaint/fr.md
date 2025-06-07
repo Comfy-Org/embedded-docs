@@ -3,7 +3,7 @@ Ce nœud est conçu pour encoder des images en une représentation latente adapt
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `pixels`  | `IMAGE`     | L'image d'entrée à encoder. Cette image subit un prétraitement et un redimensionnement pour correspondre aux dimensions d'entrée attendues par le modèle VAE avant l'encodage. |
 | `vae`     | `VAE`       | Le modèle VAE utilisé pour encoder l'image en sa représentation latente. Il joue un rôle crucial dans le processus de transformation, déterminant la qualité et les caractéristiques de l'espace latent de sortie. |
@@ -12,6 +12,6 @@ Ce nœud est conçu pour encoder des images en une représentation latente adapt
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie inclut la représentation latente encodée de l'image et un masque de bruit, tous deux cruciaux pour les tâches d'inpainting ultérieures. |

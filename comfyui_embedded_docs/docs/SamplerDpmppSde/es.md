@@ -3,7 +3,7 @@ Este nodo está diseñado para generar un muestrador para el modelo DPM++ SDE (E
 
 ## Entradas
 
-| Parámetro      | Comfy dtype | Descripción |
+| Parámetro      | Data Type | Descripción |
 |----------------|-------------|-------------|
 | `eta`          | FLOAT       | Especifica el tamaño del paso para el solucionador SDE, influyendo en la granularidad del proceso de muestreo.|
 | `s_noise`      | FLOAT       | Determina el nivel de ruido que se aplicará durante el proceso de muestreo, afectando la diversidad de las muestras generadas.|
@@ -12,6 +12,6 @@ Este nodo está diseñado para generar un muestrador para el modelo DPM++ SDE (E
 
 ## Salidas
 
-| Parámetro    | Comfy dtype | Descripción |
+| Parámetro    | Data Type | Descripción |
 |----------------|-------------|-------------|
 | `sampler`    | SAMPLER     | El muestrador generado configurado con los parámetros especificados, listo para su uso en operaciones de muestreo. |

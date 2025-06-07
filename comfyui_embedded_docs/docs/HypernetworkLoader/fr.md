@@ -12,6 +12,6 @@ Le nœud HypernetworkLoader est conçu pour améliorer ou modifier les capacité
 
 ## Sorties
 
-| Champ   | Comfy dtype | Description                                                              |
+| Champ   | Data Type | Description                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
 | `model` | `MODEL`     | Le modèle modifié après l'application de l'hypernetwork, illustrant l'impact de l'hypernetwork sur le modèle original. |

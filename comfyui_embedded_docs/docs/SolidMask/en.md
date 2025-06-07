@@ -3,7 +3,7 @@ The SolidMask node generates a uniform mask with a specified value across its en
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `value`   | FLOAT       | Specifies the intensity value of the mask, affecting its overall appearance and utility in subsequent operations. |
 | `width`   | INT         | Determines the width of the generated mask, directly influencing its size and aspect ratio. |
@@ -11,6 +11,6 @@ The SolidMask node generates a uniform mask with a specified value across its en
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | Outputs a uniform mask with the specified dimensions and value. |

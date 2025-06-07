@@ -3,7 +3,7 @@ El nodo LatentCompositeMasked está diseñado para mezclar dos representaciones 
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `destination` | `LATENT`    | La representación latente sobre la cual se compondrá otra representación latente. Actúa como la capa base para la operación de composición. |
 | `source` | `LATENT`    | La representación latente que se compondrá sobre el destino. Esta capa fuente puede ser redimensionada y posicionada según los parámetros especificados. |
@@ -14,6 +14,6 @@ El nodo LatentCompositeMasked está diseñado para mezclar dos representaciones 
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La representación latente resultante después de componer la fuente sobre el destino, utilizando potencialmente una máscara para una mezcla selectiva. |

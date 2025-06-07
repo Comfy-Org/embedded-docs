@@ -2,7 +2,7 @@ The `ImageBlend` node is designed to blend two images together based on a specif
 
 ## Inputs
 
-| Field         | Comfy dtype | Description                                                                       |
+| Field         | Data Type | Description                                                                       |
 |---------------|-------------|-----------------------------------------------------------------------------------|
 | `image1`      | `IMAGE`     | The first image to be blended. It serves as the base layer for the blending operation. |
 | `image2`      | `IMAGE`     | The second image to be blended. Depending on the blend mode, it modifies the appearance of the first image. |
@@ -11,6 +11,6 @@ The `ImageBlend` node is designed to blend two images together based on a specif
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                              |
+| Field | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | The resulting image after blending the two input images according to the specified blend mode and factor. |

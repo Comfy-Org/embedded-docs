@@ -3,7 +3,7 @@ This node is designed for advanced model merging operations, specifically to sub
 
 ## Inputs
 
-| Parameter     | Comfy dtype | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `model1`      | `MODEL`     | The base model from which parameters will be subtracted. |
 | `model2`      | `MODEL`     | The model whose parameters will be subtracted from the base model. |
@@ -11,6 +11,6 @@ This node is designed for advanced model merging operations, specifically to sub
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | The resulting model after subtracting the parameters of one model from another, scaled by the multiplier. |

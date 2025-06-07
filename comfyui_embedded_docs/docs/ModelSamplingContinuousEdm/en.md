@@ -3,7 +3,7 @@ This node is designed to enhance a model's sampling capabilities by integrating 
 
 ## Inputs
 
-| Parameter   | Comfy dtype | Python dtype        | Description |
+| Parameter   | Data Type | Python dtype        | Description |
 |-------------|--------------|----------------------|-------------|
 | `model`     | `MODEL`     | `torch.nn.Module`   | The model to be enhanced with continuous EDM sampling capabilities. It serves as the foundation for applying the advanced sampling techniques. |
 | `sampling`  | `COMBO[STRING]` | `str`             | Specifies the type of sampling to be applied, either 'eps' for epsilon sampling or 'v_prediction' for velocity prediction, influencing the model's behavior during the sampling process. |
@@ -12,6 +12,6 @@ This node is designed to enhance a model's sampling capabilities by integrating 
 
 ## Outputs
 
-| Parameter | Comfy dtype | Python dtype        | Description |
+| Parameter | Data Type | Python dtype        | Description |
 |-----------|-------------|----------------------|-------------|
 | `model`   | `MODEL`     | `torch.nn.Module`   | The enhanced model with integrated continuous EDM sampling capabilities, ready for further use in generation tasks. |

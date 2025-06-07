@@ -2,7 +2,7 @@ Ce nœud est conçu pour encoder les entrées textuelles en utilisant le modèle
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 | --- | --- | --- |
 | `clip` | `CLIP` | L'instance du modèle CLIP utilisée pour encoder le texte. Elle joue un rôle vital dans le traitement de l'entrée textuelle et sa conversion en un format adapté aux tâches de génération ou de manipulation d'images. |
 | `width` | `INT` | Spécifie la largeur de l'image en pixels. Elle détermine les dimensions de l'image générée ou manipulée. |
@@ -16,6 +16,6 @@ Ce nœud est conçu pour encoder les entrées textuelles en utilisant le modèle
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 | --- | --- | --- |
 | `conditioning` | `CONDITIONING` | La sortie du nœud, qui inclut le texte encodé ainsi que des informations supplémentaires nécessaires pour les tâches de génération ou de manipulation d'images. |

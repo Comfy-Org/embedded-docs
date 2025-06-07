@@ -14,6 +14,6 @@ Ce nœud est spécialisé dans le chargement d'un modèle LoRA sans nécessiter 
 
 ## Sorties - Lora Loader Model Only
 
-| Champ   | Comfy dtype | Description                                                              |
+| Champ   | Data Type | Description                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
 | `model` | `MODEL`     | Le modèle modifié avec les ajustements LoRA appliqués, reflétant les changements de comportement ou de capacités du modèle. |

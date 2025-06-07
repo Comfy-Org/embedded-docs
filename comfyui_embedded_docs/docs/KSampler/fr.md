@@ -3,7 +3,7 @@ Le nœud KSampler est conçu pour des opérations d'échantillonnage avancées a
 
 ## Entrées
 
-| Paramètre       | Comfy dtype | Description                                                                                                               |
+| Paramètre       | Data Type | Description                                                                                                               |
 |-----------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
 | `model`         | `MODEL`     | Spécifie le modèle génératif à utiliser pour l'échantillonnage, jouant un rôle crucial dans la détermination des caractéristiques des échantillons générés. |
 | `seed`          | `INT`       | Contrôle l'aléatoire du processus d'échantillonnage, assurant la reproductibilité des résultats lorsqu'il est défini à une valeur spécifique.                         |
@@ -18,6 +18,6 @@ Le nœud KSampler est conçu pour des opérations d'échantillonnage avancées a
 
 ## Sorties
 
-| Paramètre   | Comfy dtype | Description |
+| Paramètre   | Data Type | Description |
 |-------------|-------------|-------------|
 | `latent`    | `LATENT`    | Représente la sortie de l'espace latent du processus d'échantillonnage, encapsulant les échantillons générés. |

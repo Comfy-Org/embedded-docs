@@ -2,7 +2,7 @@ The CheckpointSave node is designed for saving the state of various model compon
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type   | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | The model parameter represents the primary model whose state is to be saved. It is essential for capturing the current state of the model for future restoration or analysis. |
 | `clip`    | `CLIP`      | The clip parameter is intended for the CLIP model associated with the primary model, allowing its state to be saved alongside the main model. |

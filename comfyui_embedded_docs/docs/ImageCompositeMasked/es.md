@@ -2,7 +2,7 @@ El nodo `ImageCompositeMasked` está diseñado para componer imágenes, permitie
 
 ## Entradas
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `destination` | `IMAGE` | La imagen de destino sobre la cual se compondrá la imagen fuente. Sirve como fondo para la operación de composición. |
 | `source` | `IMAGE` | La imagen fuente que se compondrá sobre la imagen de destino. Esta imagen puede ser opcionalmente redimensionada para ajustarse a las dimensiones de la imagen de destino. |
@@ -13,6 +13,6 @@ El nodo `ImageCompositeMasked` está diseñado para componer imágenes, permitie
 
 ## Salidas
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image` | `IMAGE` | La imagen resultante después de la operación de composición, que combina elementos de ambas

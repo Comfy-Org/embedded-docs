@@ -2,7 +2,7 @@ El nodo `EmptyImage` está diseñado para generar imágenes en blanco de dimensi
 
 ## Entradas
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `width`   | `INT`      | Especifica el ancho de la imagen generada. Determina qué tan ancha será la imagen. |
 | `height`  | `INT`      | Determina la altura de la imagen generada. Afecta el tamaño vertical de la imagen. |
@@ -11,6 +11,6 @@ El nodo `EmptyImage` está diseñado para generar imágenes en blanco de dimensi
 
 ## Salidas
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`    | La salida es un tensor que representa la imagen o imágenes generadas, con las dimensiones y color especificados. |

@@ -10,6 +10,6 @@ Le nœud `GLIGENLoader` est conçu pour charger des modèles GLIGEN, qui sont de
 
 ## Sorties
 
-| Champ    | Comfy dtype | Description                                                              |
+| Champ    | Data Type | Description                                                              |
 |----------|-------------|--------------------------------------------------------------------------|
 | `gligen` | `GLIGEN`    | Le modèle GLIGEN chargé, prêt à être utilisé dans des tâches génératives, représentant le modèle entièrement initialisé chargé à partir du chemin spécifié. |

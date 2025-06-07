@@ -5,7 +5,7 @@ Le paramètre `ratio` détermine le ratio de mélange entre les deux modèles. L
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les patchs du second modèle sont appliqués. |
 | `model2`  | `MODEL`     | Le second modèle dont les patchs sont appliqués au premier modèle, influencés par le ratio spécifié. |
@@ -13,6 +13,6 @@ Le paramètre `ratio` détermine le ratio de mélange entre les deux modèles. L
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | Le modèle fusionné résultant, incorporant des éléments des deux modèles d'entrée selon le ratio spécifié. |

@@ -3,7 +3,7 @@ El nodo SamplerCustom está diseñado para proporcionar un mecanismo de muestreo
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|--------------|-------------|
 | `model`   | `MODEL`      | El tipo de entrada 'model' especifica el modelo que se utilizará para el muestreo, desempeñando un papel crucial en la determinación del comportamiento y resultado del muestreo. |
 | `add_noise` | `BOOLEAN`    | El tipo de entrada 'add_noise' permite a los usuarios especificar si se debe añadir ruido al proceso de muestreo, influyendo en la diversidad y características de las muestras generadas. |
@@ -17,7 +17,7 @@ El nodo SamplerCustom está diseñado para proporcionar un mecanismo de muestreo
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|--------------|-------------|
 | `output`  | `LATENT`     | El 'output' representa el resultado principal del proceso de muestreo, conteniendo las muestras generadas. |
 | `denoised_output` | `LATENT` | El 'denoised_output' representa las muestras después de que se ha aplicado un proceso de eliminación de ruido, potencialmente mejorando la claridad y calidad de las muestras generadas. |

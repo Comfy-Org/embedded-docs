@@ -3,7 +3,7 @@ El nodo LatentInterpolate está diseñado para realizar la interpolación entre 
 
 ## Entradas
 
-| Parámetro    | Comfy dtype | Descripción |
+| Parámetro    | Data Type | Descripción |
 |--------------|-------------|-------------|
 | `samples1`   | `LATENT`    | El primer conjunto de muestras latentes a interpolar. Sirve como punto de inicio para el proceso de interpolación. |
 | `samples2`   | `LATENT`    | El segundo conjunto de muestras latentes a interpolar. Sirve como punto final para el proceso de interpolación. |
@@ -11,6 +11,6 @@ El nodo LatentInterpolate está diseñado para realizar la interpolación entre 
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La salida es un nuevo conjunto de muestras latentes que representa un estado interpolado entre los dos conjuntos de entrada, basado en la proporción especificada. |

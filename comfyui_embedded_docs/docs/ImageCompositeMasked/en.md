@@ -2,7 +2,7 @@ The `ImageCompositeMasked` node is designed for compositing images, allowing for
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `destination` | `IMAGE` | The destination image onto which the source image will be composited. It serves as the background for the composite operation. |
 | `source` | `IMAGE` | The source image to be composited onto the destination image. This image can optionally be resized to fit the destination image's dimensions. |
@@ -13,6 +13,6 @@ The `ImageCompositeMasked` node is designed for compositing images, allowing for
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image` | `IMAGE` | The resulting image after the compositing operation, which combines elements of both t

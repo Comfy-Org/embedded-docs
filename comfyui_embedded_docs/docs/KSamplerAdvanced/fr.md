@@ -3,7 +3,7 @@ Le nœud KSamplerAdvanced est conçu pour améliorer le processus d'échantillon
 
 ## Entrées
 
-| Paramètre             | Comfy dtype | Description                                                                                                                                                                                                                                                                                                                                                     |
+| Paramètre             | Data Type | Description                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `model`              | MODEL       | Spécifie le modèle à partir duquel les échantillons doivent être générés, jouant un rôle crucial dans le processus d'échantillonnage.                                                                                                                                                                                                                      |
 | `add_noise`          | COMBO[STRING] | Détermine si du bruit doit être ajouté au processus d'échantillonnage, affectant la diversité et la qualité des échantillons générés.                                                                                                                                                                                                             |
@@ -21,6 +21,6 @@ Le nœud KSamplerAdvanced est conçu pour améliorer le processus d'échantillon
 
 ## Sorties
 
-| Paramètre   | Comfy dtype | Description                                                                                                               |
+| Paramètre   | Data Type | Description                                                                                                               |
 |-------------|-------------|------------------------------------------------------------------------------------------------------------------------------|
 | `latent`    | LATENT      | La sortie représente l'image latente générée à partir du modèle, reflétant les configurations et techniques appliquées. |

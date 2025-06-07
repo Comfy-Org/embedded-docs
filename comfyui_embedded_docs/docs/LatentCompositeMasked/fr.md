@@ -3,7 +3,7 @@ Le nœud LatentCompositeMasked est conçu pour fusionner deux représentations l
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `destination` | `LATENT`    | La représentation latente sur laquelle une autre représentation latente sera composée. Sert de couche de base pour l'opération de composition. |
 | `source` | `LATENT`    | La représentation latente à composer sur la destination. Cette couche source peut être redimensionnée et positionnée selon les paramètres spécifiés. |
@@ -14,6 +14,6 @@ Le nœud LatentCompositeMasked est conçu pour fusionner deux représentations l
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La représentation latente résultante après la composition de la source sur la destination, utilisant potentiellement un masque pour un mélange sélectif. |

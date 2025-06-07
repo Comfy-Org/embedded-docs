@@ -2,7 +2,7 @@ Ce nœud est conçu pour ajuster l'aspect temporel du conditionnement en défini
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 | --- | --- | --- |
 | `conditioning` | `CONDITIONING` | L'entrée de conditionnement représente l'état actuel du processus de génération, que ce nœud modifie en définissant une plage spécifique de pas de temps. |
 | `start` | `FLOAT` | Le paramètre de début spécifie le commencement de la plage de pas de temps en pourcentage du processus de génération total, permettant un contrôle précis du moment où les effets de conditionnement commencent. |
@@ -10,6 +10,6 @@ Ce nœud est conçu pour ajuster l'aspect temporel du conditionnement en défini
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 | --- | --- | --- |
 | `conditioning` | `CONDITIONING` | La sortie est le conditionnement modifié avec la plage de pas de temps spécifiée appliquée, prêt pour un traitement ou une génération ultérieure. |

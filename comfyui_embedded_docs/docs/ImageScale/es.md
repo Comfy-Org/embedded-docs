@@ -2,7 +2,7 @@ El nodo ImageScale está diseñado para redimensionar imágenes a dimensiones es
 
 ## Entradas
 
-| Parámetro       | Comfy dtype | Descripción                                                                           |
+| Parámetro       | Data Type | Descripción                                                                           |
 |-----------------|-------------|---------------------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | La imagen de entrada que se va a escalar. Este parámetro es central para la operación del nodo, sirviendo como el dato principal sobre el cual se aplican las transformaciones de redimensionamiento. La calidad y las dimensiones de la imagen de salida están directamente influenciadas por las propiedades de la imagen original. |
 | `upscale_method`| `COMBO[STRING]` | Especifica el método utilizado para escalar la imagen. La elección del método puede afectar la calidad y las características de la imagen escalada, influyendo en la fidelidad visual y los posibles artefactos en la salida redimensionada. |
@@ -12,6 +12,6 @@ El nodo ImageScale está diseñado para redimensionar imágenes a dimensiones es
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La imagen escalada (y opcionalmente recortada), lista para un procesamiento o visualización adicional. |

@@ -3,7 +3,7 @@ Le nœud SaveAnimatedPNG est conçu pour créer et sauvegarder des images PNG an
 
 ## Entrées
 
-| Champ             | Comfy dtype | Description                                                                         |
+| Champ             | Data Type | Description                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
 | `images`          | `IMAGE`     | Une liste d'images à traiter et à sauvegarder sous forme de PNG animé. Chaque image de la liste représente un cadre dans l'animation. |
 | `filename_prefix` | `STRING`    | Spécifie le nom de base pour le fichier de sortie, qui sera utilisé comme préfixe pour les fichiers PNG animés générés. |
@@ -12,6 +12,6 @@ Le nœud SaveAnimatedPNG est conçu pour créer et sauvegarder des images PNG an
 
 ## Sorties
 
-| Champ | Comfy dtype | Description                                                                       |
+| Champ | Data Type | Description                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|
 | `ui`  | N/A         | Fournit un composant UI affichant les images PNG animées générées et indiquant si l'animation est à cadre unique ou multi-cadres. |

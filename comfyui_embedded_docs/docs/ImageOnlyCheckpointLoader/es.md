@@ -4,13 +4,13 @@ Este nodo se especializa en cargar checkpoints específicamente para modelos bas
 
 ## Entradas
 
-| Campo      | Comfy dtype | Descripción                                                                       |
+| Campo      | Data Type | Descripción                                                                       |
 |------------|-------------|-----------------------------------------------------------------------------------|
 | `ckpt_name`| `COMBO[STRING]` | Especifica el nombre del checkpoint a cargar, crucial para identificar y recuperar el archivo de checkpoint correcto de una lista predefinida. |
 
 ## Salidas
 
-| Campo     | Comfy dtype | Descripción                                                                                   |
+| Campo     | Data Type | Descripción                                                                                   |
 |-----------|-------------|-----------------------------------------------------------------------------------------------|
 | `model`   | `MODEL`     | Devuelve el modelo principal cargado desde el checkpoint, configurado para el procesamiento de imágenes dentro de contextos de generación de video. |
 | `clip_vision` | `CLIP_VISION` | Proporciona el componente de visión CLIP del checkpoint, adaptado para la comprensión de imágenes y la extracción de características. |

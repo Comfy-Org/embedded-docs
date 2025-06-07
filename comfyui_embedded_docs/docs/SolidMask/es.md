@@ -3,7 +3,7 @@ El nodo SolidMask genera una máscara uniforme con un valor especificado en toda
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `value`   | FLOAT       | Especifica el valor de intensidad de la máscara, afectando su apariencia general y utilidad en operaciones posteriores. |
 | `width`   | INT         | Determina el ancho de la máscara generada, influyendo directamente en su tamaño y relación de aspecto. |
@@ -11,6 +11,6 @@ El nodo SolidMask genera una máscara uniforme con un valor especificado en toda
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | Produce una máscara uniforme con las dimensiones y el valor especificados. |

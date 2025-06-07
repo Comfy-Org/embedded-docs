@@ -3,7 +3,7 @@ Este nodo se especializa en combinar dos entradas de máscara a través de una v
 
 ## Entradas
 
-| Parámetro    | Comfy dtype | Descripción                                                                                                                                      |
+| Parámetro    | Data Type | Descripción                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `destination`| MASK        | La máscara principal que se modificará en función de la operación con la máscara fuente. Juega un papel central en la operación de composición, actuando como base para las modificaciones. |
 | `source`     | MASK        | La máscara secundaria que se utilizará junto con la máscara de destino para realizar la operación especificada, influyendo en la máscara de salida final. |
@@ -13,6 +13,6 @@ Este nodo se especializa en combinar dos entradas de máscara a través de una v
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción                                                                 |
+| Parámetro | Data Type | Descripción                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |
 | `mask`    | MASK        | La máscara resultante después de aplicar la operación especificada entre las máscaras de destino y fuente, representando el resultado compuesto. |

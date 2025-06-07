@@ -3,13 +3,13 @@ El nodo LatentSubtract está diseñado para restar una representación latente d
 
 ## Entradas
 
-| Parámetro    | Comfy dtype | Descripción |
+| Parámetro    | Data Type | Descripción |
 |--------------|-------------|-------------|
 | `samples1`   | `LATENT`    | El primer conjunto de muestras latentes del cual se restará. Sirve como base para la operación de resta. |
 | `samples2`   | `LATENT`    | El segundo conjunto de muestras latentes que se restará del primer conjunto. Esta operación puede alterar la salida del modelo generativo resultante eliminando atributos o características. |
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | El resultado de restar el segundo conjunto de muestras latentes del primero. Esta representación latente modificada se puede utilizar para tareas generativas adicionales. |

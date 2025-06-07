@@ -3,7 +3,7 @@ Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deu
 
 ## Entrées
 
-| Paramètre    | Comfy dtype | Description |
+| Paramètre    | Data Type | Description |
 |--------------|-------------|-------------|
 | `samples1`   | `LATENT`    | Le premier ensemble d'échantillons latents à interpoler. Il sert de point de départ pour le processus d'interpolation. |
 | `samples2`   | `LATENT`    | Le second ensemble d'échantillons latents à interpoler. Il sert de point d'arrivée pour le processus d'interpolation. |
@@ -11,6 +11,6 @@ Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deu
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La sortie est un nouvel ensemble d'échantillons latents qui représente un état interpolé entre les deux ensembles d'entrée, basé sur le ratio spécifié. |

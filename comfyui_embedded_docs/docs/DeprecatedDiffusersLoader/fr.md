@@ -2,13 +2,13 @@ Le nœud DiffusersLoader est conçu pour charger des modèles à partir de la bi
 
 ## Entrées
 
-| Paramètre    | Comfy dtype  | Description |
+| Paramètre    | Data Type | Description |
 |--------------|--------------|-------------|
 | `model_path` | `COMBO[STRING]` | Spécifie le chemin vers le modèle à charger. Ce chemin est crucial car il détermine quel modèle sera utilisé pour les opérations ultérieures, affectant la sortie et les capacités du nœud. |
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | Le modèle UNet chargé, qui fait partie du tuple de sortie. Ce modèle est essentiel pour les tâches de synthèse et de manipulation d'images dans le cadre ComfyUI. |
 | `clip`    | `CLIP`      | Le modèle CLIP chargé, inclus dans le tuple de sortie si demandé. Ce modèle permet des capacités avancées de compréhension et de manipulation de texte et d'image. |

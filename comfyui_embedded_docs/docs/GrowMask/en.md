@@ -2,7 +2,7 @@ The `GrowMask` node is designed to modify the size of a given mask, either expan
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | The input mask to be modified. This parameter is central to the node's operation, serving as the base upon which the mask is either expanded or contracted. |
 | `expand`  | INT         | Determines the magnitude and direction of the mask modification. Positive values cause the mask to expand, while negative values lead to contraction. This parameter directly influences the final size of the mask. |
@@ -10,6 +10,6 @@ The `GrowMask` node is designed to modify the size of a given mask, either expan
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | The modified mask after applying the specified expansion/contraction and optional tapered corners effect. |

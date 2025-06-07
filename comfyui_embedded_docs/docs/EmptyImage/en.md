@@ -2,7 +2,7 @@ The `EmptyImage` node is designed to generate blank images of specified dimensio
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `width`   | `INT`      | Specifies the width of the generated image. It determines how wide the image will be. |
 | `height`  | `INT`      | Determines the height of the generated image. It affects the vertical size of the image. |
@@ -11,6 +11,6 @@ The `EmptyImage` node is designed to generate blank images of specified dimensio
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`    | The output is a tensor representing the generated image or images, with the specified dimensions and color. |

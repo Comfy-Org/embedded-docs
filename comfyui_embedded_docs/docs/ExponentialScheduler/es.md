@@ -2,7 +2,7 @@ El nodo `ExponentialScheduler` está diseñado para generar una secuencia de val
 
 ## Entradas
 
-| Parámetro   | Comfy dtype | Descripción                                                                                   |
+| Parámetro   | Data Type | Descripción                                                                                   |
 |-------------|-------------|---------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Especifica el número de pasos en el proceso de difusión. Influye en la longitud de la secuencia de sigma generada y, por lo tanto, en la granularidad de la aplicación de ruido. |
 | `sigma_max` | FLOAT       | Define el valor máximo de sigma, estableciendo el límite superior de la intensidad del ruido en el proceso de difusión. Juega un papel crucial en la determinación del rango de niveles de ruido aplicados. |
@@ -10,6 +10,6 @@ El nodo `ExponentialScheduler` está diseñado para generar una secuencia de val
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción                                                                                   |
+| Parámetro | Data Type | Descripción                                                                                   |
 |-----------|-------------|---------------------------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | Una secuencia de valores sigma generada según el programa exponencial. Estos valores se utilizan para controlar los niveles de ruido en cada paso del proceso de difusión. |

@@ -2,7 +2,7 @@ The `ImageBlur` node applies a Gaussian blur to an image, allowing for the softe
 
 ## Inputs
 
-| Field          | Comfy dtype | Description                                                                   |
+| Field          | Data Type | Description                                                                   |
 |----------------|-------------|-------------------------------------------------------------------------------|
 | `image`        | `IMAGE`     | The input image to be blurred. This is the primary target for the blur effect. |
 | `blur_radius`  | `INT`       | Determines the radius of the blur effect. A larger radius results in a more pronounced blur. |
@@ -10,6 +10,6 @@ The `ImageBlur` node applies a Gaussian blur to an image, allowing for the softe
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                              |
+| Field | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | The output is the blurred version of the input image, with the degree of blur determined by the input parameters. |

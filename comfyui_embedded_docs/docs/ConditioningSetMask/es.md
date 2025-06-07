@@ -4,7 +4,7 @@ Este nodo está diseñado para modificar el condicionamiento de un modelo genera
 
 ### Requerido
 
-| Parámetro     | Comfy dtype  | Descripción |
+| Parámetro     | Data Type | Descripción |
 |---------------|--------------|-------------|
 | `conditioning` | `CONDITIONING` | Los datos de condicionamiento a modificar. Sirve como base para aplicar la máscara y los ajustes de fuerza. |
 | `mask`        | `MASK`       | Un tensor de máscara que especifica las áreas dentro del condicionamiento a modificar. |
@@ -13,6 +13,6 @@ Este nodo está diseñado para modificar el condicionamiento de un modelo genera
 
 ## Salidas
 
-| Parámetro     | Comfy dtype  | Descripción |
+| Parámetro     | Data Type | Descripción |
 |---------------|--------------|-------------|
 | `conditioning` | `CONDITIONING` | Los datos de condicionamiento modificados, con los ajustes de máscara y fuerza aplicados. |

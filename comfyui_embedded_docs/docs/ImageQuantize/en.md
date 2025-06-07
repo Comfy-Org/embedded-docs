@@ -2,7 +2,7 @@ The ImageQuantize node is designed to reduce the number of colors in an image to
 
 ## Inputs
 
-| Field   | Comfy dtype | Description                                                                       |
+| Field   | Data Type | Description                                                                       |
 |---------|-------------|-----------------------------------------------------------------------------------|
 | `image` | `IMAGE`     | The input image tensor to be quantized. It affects the node's execution by being the primary data upon which color reduction is performed. |
 | `colors`| `INT`       | Specifies the number of colors to reduce the image to. It directly influences the quantization process by determining the color palette size. |
@@ -10,6 +10,6 @@ The ImageQuantize node is designed to reduce the number of colors in an image to
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                                   |
+| Field | Data Type | Description                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|
 | `image`| `IMAGE`     | The quantized version of the input image, with reduced color complexity and optionally dithered to maintain visual quality. |

@@ -3,7 +3,7 @@ The VAESave node is designed for saving VAE models along with their metadata, in
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `vae`     | `VAE`       | The VAE model to be saved. This parameter is crucial as it represents the model whose state is to be serialized and stored. |
 | `filename_prefix` | `STRING` | A prefix for the filename under which the model and its metadata will be saved. This allows for organized storage and easy retrieval of models. |

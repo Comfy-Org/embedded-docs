@@ -3,7 +3,7 @@ The VPScheduler node is designed to generate a sequence of noise levels (sigmas)
 
 ## Inputs
 
-| Parameter   | Comfy dtype | Description                                                                                                                                      |
+| Parameter   | Data Type | Description                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Specifies the number of steps in the diffusion process, affecting the granularity of the generated noise levels.                              |
 | `beta_d`    | FLOAT       | Determines the overall noise level distribution, influencing the variance of the generated noise levels.                                 |
@@ -12,6 +12,6 @@ The VPScheduler node is designed to generate a sequence of noise levels (sigmas)
 
 ## Outputs
 
-| Parameter   | Comfy dtype | Description                                                                                   |
+| Parameter   | Data Type | Description                                                                                   |
 |-------------|-------------|-----------------------------------------------------------------------------------------------|
 | `sigmas`    | SIGMAS      | A sequence of noise levels (sigmas) generated based on the VP scheduling method, used to guide the denoising process in diffusion models. |

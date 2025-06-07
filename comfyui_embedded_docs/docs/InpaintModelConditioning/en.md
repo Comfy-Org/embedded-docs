@@ -12,7 +12,7 @@ The InpaintModelConditioning node is designed to facilitate the conditioning pro
 
 ## Outputs
 
-| Parameter | Comfy dtype  | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `positive`| `CONDITIONING` | The modified positive conditioning information after processing, ready to be applied to the inpainting model. This output is essential for guiding the inpainting process according to the specified positive conditions. |
 | `negative`| `CONDITIONING` | The modified negative conditioning information after processing, ready to be applied to the inpainting model. This output is essential for guiding the inpainting process according to the specified negative conditions. |

@@ -2,13 +2,13 @@ Le nœud CLIPLoader est conçu pour charger les modèles CLIP, supportant diffé
 
 ## Entrées
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `clip_name`   | `COMBO[STRING]` | Spécifie le nom du modèle CLIP à charger. Ce nom est utilisé pour localiser le fichier du modèle dans une structure de répertoire prédéfinie. |
 | `type`        | `COMBO[STRING]` | Détermine le type de modèle CLIP à charger, offrant des options entre 'stable_diffusion' et 'stable_cascade'. Cela affecte la manière dont le modèle est initialisé et configuré. |
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | Le modèle CLIP chargé, prêt à être utilisé dans des tâches en aval ou pour un traitement ultérieur. |

@@ -4,7 +4,7 @@ Le nœud CLIPVisionLoader est conçu pour charger les modèles CLIP Vision à pa
 
 ## Entrées
 
-| Champ       | Comfy dtype | Description                                                                       |
+| Champ       | Data Type | Description                                                                       |
 |-------------|-------------|-----------------------------------------------------------------------------------|
 | `clip_name` | `COMBO[STRING]` | Spécifie le nom du modèle CLIP Vision à charger, utilisé pour localiser le fichier du modèle dans une structure de répertoire prédéfinie. |
 

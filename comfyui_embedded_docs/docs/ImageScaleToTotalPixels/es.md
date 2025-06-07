@@ -2,7 +2,7 @@ El nodo ImageScaleToTotalPixels está diseñado para redimensionar imágenes a u
 
 ## Entradas
 
-| Parámetro       | Comfy dtype | Descripción                                                                |
+| Parámetro       | Data Type | Descripción                                                                |
 |-----------------|-------------|----------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | La imagen de entrada que se escalará al número total de píxeles especificado.    |
 | `upscale_method`| `COMBO[STRING]` | El método utilizado para escalar la imagen. Afecta la calidad y las características de la imagen escalada. |
@@ -10,6 +10,6 @@ El nodo ImageScaleToTotalPixels está diseñado para redimensionar imágenes a u
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción                                                           |
+| Parámetro | Data Type | Descripción                                                           |
 |-----------|-------------|-----------------------------------------------------------------------|
 | `image`   | `IMAGE`     | La imagen escalada con el número total de píxeles especificado, manteniendo la relación de aspecto original. |

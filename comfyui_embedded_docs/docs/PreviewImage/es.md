@@ -3,7 +3,7 @@ El nodo PreviewImage está diseñado para crear imágenes de vista previa tempor
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `images`  | `IMAGE`     | La entrada 'images' especifica las imágenes que se procesarán y guardarán como imágenes de vista previa temporales. Esta es la entrada principal para el nodo, determinando qué imágenes pasarán por el proceso de generación de vista previa. |
 

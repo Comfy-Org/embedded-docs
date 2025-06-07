@@ -4,7 +4,7 @@ The `ratio` parameter determines the blending ratio between the two models. When
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | The first model to be merged. It serves as the base model onto which patches from the second model are applied. |
 | `model2`  | `MODEL`     | The second model whose patches are applied onto the first model, influenced by the specified ratio. |
@@ -12,6 +12,6 @@ The `ratio` parameter determines the blending ratio between the two models. When
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | The resulting merged model, incorporating elements from both input models according to the specified ratio. |

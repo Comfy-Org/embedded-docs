@@ -14,17 +14,17 @@ The final output is a black and white image, where white parts are detected edge
 
 ## Inputs
 
-| Parameter Name | Data Type | Input Method | Default Value | Value Range | Function Description |
-|----------------|-----------|--------------|---------------|-------------|---------------------|
-| image | IMAGE | Connection | - | - | Original photo that needs edge extraction |
-| low_threshold | FLOAT | Manual Input | 0.4 | 0.01-0.99 | Low threshold, determines how weak edges to ignore. Lower values preserve more details but may produce noise |
-| high_threshold | FLOAT | Manual Input | 0.8 | 0.01-0.99 | High threshold, determines how strong edges to preserve. Higher values only keep the most obvious contour lines |
+| Parameter Name   | Data Type | Input Type | Default | Range     | Function Description |
+|------------------|-----------|------------|---------|-----------|----------------------|
+| `image`          | IMAGE     | Input      | -       | -         | Original photo that needs edge extraction |
+| `low_threshold`  | FLOAT     | Widget     | 0.4     | 0.01-0.99 | Low threshold, determines how weak edges to ignore. Lower values preserve more details but may produce noise |
+| `high_threshold` | FLOAT     | Widget     | 0.8     | 0.01-0.99 | High threshold, determines how strong edges to preserve. Higher values only keep the most obvious contour lines |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| image | IMAGE | Black and white edge image, white lines are detected edges, black areas are parts without edges |
+| `image`     | IMAGE     | Black and white edge image, white lines are detected edges, black areas are parts without edges |
 
 ## Parameter Comparison
 

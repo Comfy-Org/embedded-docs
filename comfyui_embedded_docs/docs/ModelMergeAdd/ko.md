@@ -2,13 +2,13 @@ ModelMergeAdd 노드는 한 모델에서 다른 모델로 주요 패치를 추�
 
 ## 입력
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | 복제될 첫 번째 모델로, 두 번째 모델에서 패치가 추가됩니다. 병합 과정의 기본 모델로 사용됩니다. |
 | `model2`  | `MODEL`     | 주요 패치가 추출되어 첫 번째 모델에 추가되는 두 번째 모델입니다. 병합된 모델에 추가 기능이나 동작을 제공합니다. |
 
 ## 출력
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | 두 번째 모델에서 첫 번째 모델로 주요 패치를 추가하여 두 모델을 병합한 결과입니다. 이 병합된 모델은 두 모델의 기능이나 동작을 결합합니다. |

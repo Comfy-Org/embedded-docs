@@ -3,7 +3,7 @@ The LatentCompositeMasked node is designed for blending two latent representatio
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `destination` | `LATENT`    | The latent representation onto which another latent representation will be composited. Acts as the base layer for the composite operation. |
 | `source` | `LATENT`    | The latent representation to be composited onto the destination. This source layer can be resized and positioned according to the specified parameters. |
@@ -14,6 +14,6 @@ The LatentCompositeMasked node is designed for blending two latent representatio
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The resulting latent representation after compositing the source onto the destination, potentially using a mask for selective blending. |

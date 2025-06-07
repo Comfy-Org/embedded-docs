@@ -3,7 +3,7 @@ Ce nœud est conçu pour générer un échantillonneur pour le modèle DPM++ SDE
 
 ## Entrées
 
-| Paramètre      | Comfy dtype | Description |
+| Paramètre      | Data Type | Description |
 |----------------|-------------|-------------|
 | `eta`          | FLOAT       | Spécifie la taille des pas pour le solveur SDE, influençant la granularité du processus d'échantillonnage.|
 | `s_noise`      | FLOAT       | Détermine le niveau de bruit à appliquer pendant le processus d'échantillonnage, affectant la diversité des échantillons générés.|
@@ -12,6 +12,6 @@ Ce nœud est conçu pour générer un échantillonneur pour le modèle DPM++ SDE
 
 ## Sorties
 
-| Paramètre    | Comfy dtype | Description |
+| Paramètre    | Data Type | Description |
 |----------------|-------------|-------------|
 | `sampler`    | SAMPLER     | L'échantillonneur généré configuré avec les paramètres spécifiés, prêt à être utilisé dans les opérations d'échantillonnage. |

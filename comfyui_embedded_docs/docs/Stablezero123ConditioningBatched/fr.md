@@ -3,7 +3,7 @@ Ce nœud est conçu pour traiter les informations de conditionnement de manière
 
 ## Entrées
 
-| Paramètre             | Comfy dtype  | Description |
+| Paramètre             | Data Type | Description |
 |----------------------|--------------|-------------|
 | `clip_vision`         | `CLIP_VISION` | Les embeddings de vision CLIP qui fournissent un contexte visuel pour le processus de conditionnement. |
 | `init_image`          | `IMAGE`      | L'image initiale à conditionner, servant de point de départ pour le processus de génération. |
@@ -18,7 +18,7 @@ Ce nœud est conçu pour traiter les informations de conditionnement de manière
 
 ## Sorties
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | La sortie de conditionnement positive, adaptée pour promouvoir certaines caractéristiques ou aspects dans le contenu généré. |
 | `negative`    | `CONDITIONING` | La sortie de conditionnement négative, adaptée pour réduire certaines caractéristiques ou aspects dans le contenu généré. |

@@ -2,7 +2,7 @@ Le nœud CheckpointSave est conçu pour sauvegarder l'état de divers composants
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | Le paramètre modèle représente le modèle principal dont l'état doit être sauvegardé. Il est essentiel pour capturer l'état actuel du modèle pour une restauration ou une analyse future. |
 | `clip`    | `CLIP`      | Le paramètre clip est destiné au modèle CLIP associé au modèle principal, permettant de sauvegarder son état aux côtés du modèle principal. |

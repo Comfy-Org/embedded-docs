@@ -3,7 +3,7 @@ This node is designed to generate a sampler for the DPM++ SDE (Stochastic Differ
 
 ## Inputs
 
-| Parameter      | Comfy dtype | Description |
+| Parameter      | Data Type | Description |
 |----------------|-------------|-------------|
 | `eta`          | FLOAT       | Specifies the step size for the SDE solver, influencing the granularity of the sampling process.|
 | `s_noise`      | FLOAT       | Determines the level of noise to be applied during the sampling process, affecting the diversity of the generated samples.|
@@ -12,6 +12,6 @@ This node is designed to generate a sampler for the DPM++ SDE (Stochastic Differ
 
 ## Outputs
 
-| Parameter    | Comfy dtype | Description |
+| Parameter    | Data Type | Description |
 |----------------|-------------|-------------|
 | `sampler`    | SAMPLER     | The generated sampler configured with the specified parameters, ready for use in sampling operations. |

@@ -12,6 +12,6 @@ The DualCLIPLoader node is designed for loading two CLIP models simultaneously, 
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                                                                           |
+| Parameter | Data Type | Description                                                                                                           |
 | --------- | ----------- | --------------------------------------------------------------------------------------------------------------------- |
 | `clip`    | `CLIP`      | The output is a combined CLIP model that integrates the features or functionalities of the two specified CLIP models. |

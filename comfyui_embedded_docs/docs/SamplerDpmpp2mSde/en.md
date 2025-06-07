@@ -3,7 +3,7 @@ This node is designed to generate a sampler for the DPMPP_2M_SDE model, allowing
 
 ## Inputs
 
-| Parameter       | Comfy dtype | Description                                                                 |
+| Parameter       | Data Type | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
 | `solver_type`   | `COMBO[STRING]` | Specifies the solver type to be used in the sampling process, offering options between 'midpoint' and 'heun'. This choice influences the numerical integration method applied during sampling. |
 | `eta`           | `FLOAT`     | Determines the step size in the numerical integration, affecting the granularity of the sampling process. A higher value indicates a larger step size. |
@@ -12,6 +12,6 @@ This node is designed to generate a sampler for the DPMPP_2M_SDE model, allowing
 
 ## Outputs
 
-| Parameter       | Comfy dtype | Description                                                                 |
+| Parameter       | Data Type | Description                                                                 |
 |-----------------|-------------|-----------------------------------------------------------------------------|
 | `sampler`       | `SAMPLER`   | The output is a sampler configured according to the specified parameters, ready for generating samples. |

@@ -3,7 +3,7 @@ The SamplerCustom node is designed to provide a flexible and customizable sampli
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `model`   | `MODEL`      | The 'model' input type specifies the model to be used for sampling, playing a crucial role in determining the sampling behavior and output. |
 | `add_noise` | `BOOLEAN`    | The 'add_noise' input type allows users to specify whether noise should be added to the sampling process, influencing the diversity and characteristics of the generated samples. |
@@ -17,7 +17,7 @@ The SamplerCustom node is designed to provide a flexible and customizable sampli
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `output`  | `LATENT`     | The 'output' represents the primary result of the sampling process, containing the generated samples. |
 | `denoised_output` | `LATENT` | The 'denoised_output' represents the samples after a denoising process has been applied, potentially enhancing the clarity and quality of the generated samples. |

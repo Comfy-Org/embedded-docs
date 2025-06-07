@@ -2,7 +2,7 @@ The LatentComposite node is designed to blend or merge two latent representation
 
 ## Inputs
 
-| Parameter    | Comfy dtype | Description |
+| Parameter    | Data Type | Description |
 |--------------|-------------|-------------|
 | `samples_to` | `LATENT`    | The 'samples_to' latent representation where the 'samples_from' will be composited onto. It serves as the base for the composite operation. |
 | `samples_from` | `LATENT` | The 'samples_from' latent representation to be composited onto the 'samples_to'. It contributes its features or characteristics to the final composite output. |
@@ -12,6 +12,6 @@ The LatentComposite node is designed to blend or merge two latent representation
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output is a composite latent representation, blending the features of both 'samples_to' and 'samples_from' latents based on the specified coordinates and resizing option. |

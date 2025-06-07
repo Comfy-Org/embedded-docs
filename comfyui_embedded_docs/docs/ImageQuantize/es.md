@@ -2,7 +2,7 @@ El nodo ImageQuantize está diseñado para reducir el número de colores en una 
 
 ## Entradas
 
-| Campo   | Comfy dtype | Descripción                                                                       |
+| Campo   | Data Type | Descripción                                                                       |
 |---------|-------------|-----------------------------------------------------------------------------------|
 | `image` | `IMAGE`     | El tensor de imagen de entrada a cuantizar. Afecta la ejecución del nodo al ser el dato principal sobre el cual se realiza la reducción de color. |
 | `colors`| `INT`       | Especifica el número de colores al que se debe reducir la imagen. Influye directamente en el proceso de cuantización al determinar el tamaño de la paleta de colores. |
@@ -10,6 +10,6 @@ El nodo ImageQuantize está diseñado para reducir el número de colores en una 
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                                   |
+| Campo | Data Type | Descripción                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|
 | `image`| `IMAGE`     | La versión cuantizada de la imagen de entrada, con complejidad de color reducida y opcionalmente con dithering para mantener la calidad visual. |

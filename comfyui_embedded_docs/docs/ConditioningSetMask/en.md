@@ -4,7 +4,7 @@ This node is designed to modify the conditioning of a generative model by applyi
 
 ### Required
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `conditioning` | `CONDITIONING` | The conditioning data to be modified. It serves as the basis for applying the mask and strength adjustments. |
 | `mask`        | `MASK`       | A mask tensor that specifies the areas within the conditioning to be modified. |
@@ -13,6 +13,6 @@ This node is designed to modify the conditioning of a generative model by applyi
 
 ## Outputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `conditioning` | `CONDITIONING` | The modified conditioning data, with the mask and strength adjustments applied. |

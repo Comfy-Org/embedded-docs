@@ -2,7 +2,7 @@ This node specializes in refining the encoding of text inputs using CLIP models,
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
 | `clip` | `CLIP` | A CLIP model instance used for text tokenization and encoding, central to generating the conditioning. |
 | `ascore` | `FLOAT` | The aesthetic score parameter influences the conditioning output by providing a measure of aesthetic quality. |
@@ -12,6 +12,6 @@ This node specializes in refining the encoding of text inputs using CLIP models,
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
 | `conditioning` | `CONDITIONING` | The refined conditioning output, enriched with aesthetic scores and dimensions for enhanced content generation. |

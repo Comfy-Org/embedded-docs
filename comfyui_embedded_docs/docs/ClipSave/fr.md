@@ -2,7 +2,7 @@ Le nœud CLIPSave est conçu pour sauvegarder les modèles CLIP ainsi que des in
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | Le modèle CLIP à sauvegarder. Ce paramètre est crucial car il représente le modèle dont l'état doit être sérialisé et stocké. |
 | `filename_prefix` | `STRING` | Un préfixe pour le nom de fichier sous lequel le modèle et ses informations supplémentaires seront sauvegardés. Ce paramètre permet un stockage organisé et une récupération facile des modèles sauvegardés. |

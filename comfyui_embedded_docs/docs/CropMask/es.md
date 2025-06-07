@@ -2,7 +2,7 @@ El nodo CropMask está diseñado para recortar un área específica de una másc
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | La entrada de máscara representa la imagen de máscara que se va a recortar. Es esencial para definir el área que se extraerá según las coordenadas y dimensiones especificadas. |
 | `x`       | INT         | La coordenada x especifica el punto de inicio en el eje horizontal desde el cual debe comenzar el recorte. |
@@ -12,6 +12,6 @@ El nodo CropMask está diseñado para recortar un área específica de una másc
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `mask`    | MASK        | La salida es una máscara recortada, que es una porción de la máscara original definida por las coordenadas y dimensiones especificadas. |

@@ -3,13 +3,13 @@ Ce nœud est conçu pour les opérations de composition, spécifiquement pour fu
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | Le contenu visuel principal à combiner avec un masque alpha. Il représente l'image sans informations de transparence. |
 | `alpha`   | `MASK`      | Le masque alpha qui définit la transparence de l'image correspondante. Il est utilisé pour déterminer quelles parties de l'image doivent être transparentes ou semi-transparentes. |
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La sortie est une image unique qui combine l'image d'entrée avec le masque alpha, incorporant les informations de transparence dans le contenu visuel. |

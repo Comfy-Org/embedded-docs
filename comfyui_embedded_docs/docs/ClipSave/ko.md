@@ -2,7 +2,7 @@ CLIPSave 노드는 프롬프트 및 추가 PNG 메타데이터와 같은 정보�
 
 ## 입력
 
-| Parameter (매개변수) | Comfy dtype | Description (설명) |
+| Parameter (매개변수) | Data Type | Description (설명) |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | 저장할 CLIP 모델입니다. 이 매개변수는 직렬화 및 저장할 모델의 상태를 나타내므로 중요합니다. |
 | `filename_prefix` | `STRING` | 모델 및 추가 정보를 저장할 파일 이름의 접두사입니다. 이 매개변수는 저장된 모델의 체계적인 저장 및 쉬운 검색을 가능하게 합니다. |

@@ -2,7 +2,7 @@ El nodo `FeatherMask` aplica un efecto de desvanecimiento a los bordes de una m�
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | La máscara a la que se aplicará el efecto de desvanecimiento. Determina el área de la imagen que se verá afectada por el desvanecimiento. |
 | `left`    | INT          | Especifica la distancia desde el borde izquierdo dentro de la cual se aplicará el efecto de desvanecimiento. |
@@ -12,6 +12,6 @@ El nodo `FeatherMask` aplica un efecto de desvanecimiento a los bordes de una m�
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | La salida es una versión modificada de la máscara de entrada con un efecto de desvanecimiento aplicado a sus bordes. |

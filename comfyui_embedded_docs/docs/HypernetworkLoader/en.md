@@ -12,6 +12,6 @@ The HypernetworkLoader node is designed to enhance or modify the capabilities of
 
 ## Outputs
 
-| Field   | Comfy dtype | Description                                                              |
+| Field   | Data Type | Description                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
 | `model` | `MODEL`     | The modified model after the hypernetwork has been applied, showcasing the impact of the hypernetwork on the original model. |

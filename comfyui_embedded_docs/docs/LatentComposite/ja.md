@@ -3,7 +3,7 @@ LatentCompositeノードは、2つの潜在表現を1つの出力にブレンド
 
 ## 入力
 
-| パラメータ    | Comfy dtype | 説明 |
+| パラメータ    | Data Type | 説明 |
 |--------------|-------------|-------------|
 | `samples_to` | `LATENT`    | 'samples_from'が合成される'samples_to'の潜在表現です。合成操作のベースとして機能します。 |
 | `samples_from` | `LATENT` | 'samples_to'に合成される'samples_from'の潜在表現です。最終的な合成出力にその特徴や特性を提供します。 |
@@ -13,6 +13,6 @@ LatentCompositeノードは、2つの潜在表現を1つの出力にブレンド
 
 ## 出力
 
-| パラメータ | Comfy dtype | 説明 |
+| パラメータ | Data Type | 説明 |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | 出力は、指定された座標とリサイズオプションに基づいて、'samples_to'と'samples_from'の両方の特徴をブレンドした合成潜在表現です。 |

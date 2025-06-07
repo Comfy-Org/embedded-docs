@@ -2,7 +2,7 @@ The KarrasScheduler node is designed to generate a sequence of noise levels (sig
 
 ## Inputs
 
-| Parameter   | Comfy dtype | Description                                                                                      |
+| Parameter   | Data Type | Description                                                                                      |
 |-------------|-------------|------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Specifies the number of steps in the noise schedule, affecting the granularity of the generated sigmas sequence. |
 | `sigma_max` | FLOAT       | The maximum sigma value in the noise schedule, setting the upper bound of noise levels.                    |
@@ -11,6 +11,6 @@ The KarrasScheduler node is designed to generate a sequence of noise levels (sig
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                                 |
+| Parameter | Data Type | Description                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | The generated sequence of noise levels (sigmas) following the Karras et al. (2022) noise schedule. |

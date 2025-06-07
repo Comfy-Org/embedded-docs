@@ -3,7 +3,7 @@ This node specializes in combining two mask inputs through a variety of operatio
 
 ## Inputs
 
-| Parameter    | Comfy dtype | Description                                                                                                                                      |
+| Parameter    | Data Type | Description                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `destination`| MASK        | The primary mask that will be modified based on the operation with the source mask. It plays a central role in the composite operation, acting as the base for modifications. |
 | `source`     | MASK        | The secondary mask that will be used in conjunction with the destination mask to perform the specified operation, influencing the final output mask. |
@@ -13,6 +13,6 @@ This node specializes in combining two mask inputs through a variety of operatio
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                                                 |
+| Parameter | Data Type | Description                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |
 | `mask`    | MASK        | The resulting mask after applying the specified operation between the destination and source masks, representing the composite outcome. |

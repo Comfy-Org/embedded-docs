@@ -3,7 +3,7 @@ Ce nœud est conçu pour sauvegarder une séquence d'images sous forme de fichie
 
 ## Entrées
 
-| Champ             | Comfy dtype | Description                                                                         |
+| Champ             | Data Type | Description                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
 | `images`          | `IMAGE`     | Une liste d'images à sauvegarder en tant que cadres dans le WEBP animé. Ce paramètre est essentiel pour définir le contenu visuel de l'animation. |
 | `filename_prefix` | `STRING`    | Spécifie le nom de base pour le fichier de sortie, qui sera complété par un compteur et l'extension '.webp'. Ce paramètre est crucial pour identifier et organiser les fichiers sauvegardés. |
@@ -14,6 +14,6 @@ Ce nœud est conçu pour sauvegarder une séquence d'images sous forme de fichie
 
 ## Sorties
 
-| Champ | Comfy dtype | Description                                                                       |
+| Champ | Data Type | Description                                                                       |
 |-------|-------------|-----------------------------------------------------------------------------------|
 | `ui`  | N/A         | Fournit un composant UI affichant les images WEBP animées sauvegardées avec leurs métadonnées, et indique si l'animation est activée. |

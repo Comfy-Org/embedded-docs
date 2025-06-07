@@ -3,7 +3,7 @@ This node is designed to modify the sampling behavior of a model by applying a d
 
 ## Inputs
 
-| Parameter | Comfy dtype | Python dtype     | Description |
+| Parameter | Data Type | Python dtype     | Description |
 |-----------|--------------|-------------------|-------------|
 | `model`   | `MODEL`     | `torch.nn.Module` | The model to which the discrete sampling strategy will be applied. This parameter is crucial as it defines the base model that will undergo modification. |
 | `sampling`| `COMBO[STRING]` | `str`           | Specifies the discrete sampling method to be applied to the model. The choice of method affects how the model generates samples, offering different strategies for sampling. |
@@ -11,6 +11,6 @@ This node is designed to modify the sampling behavior of a model by applying a d
 
 ## Outputs
 
-| Parameter | Comfy dtype | Python dtype     | Description |
+| Parameter | Data Type | Python dtype     | Description |
 |-----------|-------------|-------------------|-------------|
 | `model`   | `MODEL`     | `torch.nn.Module` | The modified model with the applied discrete sampling strategy. This model is now equipped to generate samples using the specified method and adjustments. |

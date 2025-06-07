@@ -4,7 +4,7 @@ Ce nœud est conçu pour modifier le conditionnement d'un modèle génératif en
 
 ### Requis
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `conditioning` | `CONDITIONING` | Les données de conditionnement à modifier. Elles servent de base pour appliquer les ajustements de masque et de force. |
 | `mask`        | `MASK`       | Un tenseur de masque qui spécifie les zones à modifier au sein du conditionnement. |
@@ -13,6 +13,6 @@ Ce nœud est conçu pour modifier le conditionnement d'un modèle génératif en
 
 ## Sorties
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `conditioning` | `CONDITIONING` | Les données de conditionnement modifiées, avec les ajustements de masque et de force appliqués. |

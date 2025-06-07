@@ -9,6 +9,6 @@ Este nodo está diseñado para ampliar imágenes utilizando un modelo de ampliac
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción                                        |
+| Parámetro | Data Type | Descripción                                        |
 |-----------|-------------|----------------------------------------------------|
 | `image`   | `IMAGE`     | La imagen ampliada, procesada por el modelo de ampliación. Esta salida es el resultado de la operación de ampliación, mostrando la resolución o calidad mejorada. |

@@ -2,7 +2,7 @@ The ImageScale node is designed for resizing images to specific dimensions, offe
 
 ## Inputs
 
-| Parameter       | Comfy dtype | Description                                                                           |
+| Parameter       | Data Type | Description                                                                           |
 |-----------------|-------------|---------------------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | The input image to be upscaled. This parameter is central to the node's operation, serving as the primary data upon which resizing transformations are applied. The quality and dimensions of the output image are directly influenced by the original image's properties. |
 | `upscale_method`| `COMBO[STRING]` | Specifies the method used for upscaling the image. The choice of method can affect the quality and characteristics of the upscaled image, influencing the visual fidelity and potential artifacts in the resized output. |
@@ -12,6 +12,6 @@ The ImageScale node is designed for resizing images to specific dimensions, offe
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The upscaled (and optionally cropped) image, ready for further processing or visualization. |

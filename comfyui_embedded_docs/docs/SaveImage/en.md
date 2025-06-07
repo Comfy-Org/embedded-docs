@@ -4,7 +4,7 @@ Default save location: `ComfyUI/output/`
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `images` | `IMAGE` | The images to be saved. This parameter is crucial as it directly contains the image data that will be processed and saved to disk. |
 | `filename_prefix` | `STRING` | The filename prefix for images saved to the `ComfyUI/output/` folder. The default is `ComfyUI`, but you can customize it. |

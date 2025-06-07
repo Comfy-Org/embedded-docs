@@ -3,7 +3,7 @@ El nodo LatentUpscaleBy está diseñado para ampliar las representaciones latent
 
 ## Entradas
 
-| Parámetro     | Comfy dtype  | Descripción |
+| Parámetro     | Data Type | Descripción |
 |---------------|--------------|-------------|
 | `samples`     | `LATENT`     | La representación latente de las imágenes a ampliar. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de ampliación. |
 | `upscale_method` | `COMBO[STRING]` | Especifica el método utilizado para ampliar las muestras latentes. La elección del método puede afectar significativamente la calidad y las características del resultado ampliado. |
@@ -11,6 +11,6 @@ El nodo LatentUpscaleBy está diseñado para ampliar las representaciones latent
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La representación latente ampliada, lista para un procesamiento o tareas de generación adicionales. Esta salida es esencial para mejorar la resolución de imágenes generadas o para operaciones posteriores del modelo. |

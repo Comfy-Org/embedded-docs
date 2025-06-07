@@ -2,7 +2,7 @@ Le nœud `FeatherMask` applique un effet de plume aux bords d'un masque donné, 
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | Le masque auquel l'effet de plume sera appliqué. Il détermine la zone de l'image qui sera affectée par l'effet de plume. |
 | `left`    | INT          | Spécifie la distance à partir du bord gauche dans laquelle l'effet de plume sera appliqué. |
@@ -12,6 +12,6 @@ Le nœud `FeatherMask` applique un effet de plume aux bords d'un masque donné, 
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | La sortie est une version modifiée du masque d'entrée avec un effet de plume appliqué à ses bords. |

@@ -2,7 +2,7 @@ The `FeatherMask` node applies a feathering effect to the edges of a given mask,
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | The mask to which the feathering effect will be applied. It determines the area of the image that will be affected by the feathering. |
 | `left`    | INT          | Specifies the distance from the left edge within which the feathering effect will be applied. |
@@ -12,6 +12,6 @@ The `FeatherMask` node applies a feathering effect to the edges of a given mask,
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|--------------|-------------|
 | `mask`    | MASK         | The output is a modified version of the input mask with a feathering effect applied to its edges. |

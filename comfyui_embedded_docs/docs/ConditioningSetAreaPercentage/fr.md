@@ -2,7 +2,7 @@ Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la 
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Représente les éléments de conditionnement à modifier, servant de base pour appliquer les ajustements de zone et de force. |
 | `width`   | `FLOAT`     | Spécifie la largeur de la zone en pourcentage de la largeur totale de l'image, influençant la part de l'image affectée horizontalement par le conditionnement. |
@@ -13,6 +13,6 @@ Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la 
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Retourne les éléments de conditionnement modifiés avec des paramètres de zone et de force mis à jour, prêts pour un traitement ou une application ultérieure. |

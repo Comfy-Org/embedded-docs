@@ -3,7 +3,7 @@ ModelMergeBlocks is designed for advanced model merging operations, allowing for
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | The first model to be merged. It serves as the base model onto which patches from the second model are applied. |
 | `model2`  | `MODEL`     | The second model from which patches are extracted and applied to the first model, based on the specified blending ratios. |
@@ -13,6 +13,6 @@ ModelMergeBlocks is designed for advanced model merging operations, allowing for
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `model`   | `MODEL`     | The resulting merged model, which is a hybrid of the two input models with patches applied according to the specified blending ratios. |

@@ -2,7 +2,7 @@ Este nodo está diseñado para preparar imágenes para el proceso de extensión 
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La entrada 'image' es la imagen principal que se preparará para la extensión, sirviendo como base para las operaciones de acolchado. |
 | `left`    | `INT`       | Especifica la cantidad de acolchado a añadir al lado izquierdo de la imagen, influyendo en el área expandida para la extensión. |
@@ -13,7 +13,7 @@ Este nodo está diseñado para preparar imágenes para el proceso de extensión 
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | La salida 'image' representa la imagen acolchada, lista para el proceso de extensión. |
 | `mask`    | `MASK`      | La salida 'mask' indica las áreas de la imagen original y el acolchado añadido, útil para guiar los algoritmos de extensión. |

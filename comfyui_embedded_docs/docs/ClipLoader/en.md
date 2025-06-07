@@ -2,13 +2,13 @@ The CLIPLoader node is designed for loading CLIP models, supporting different ty
 
 ## Inputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `clip_name`   | `COMBO[STRING]` | Specifies the name of the CLIP model to be loaded. This name is used to locate the model file within a predefined directory structure. |
 | `type`        | `COMBO[STRING]` | Determines the type of CLIP model to load, offering options between 'stable_diffusion' and 'stable_cascade'. This affects how the model is initialized and configured. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | The loaded CLIP model, ready for use in downstream tasks or further processing. |

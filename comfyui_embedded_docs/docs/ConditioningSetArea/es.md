@@ -2,7 +2,7 @@ Este nodo está diseñado para modificar la información de condicionamiento est
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Los datos de condicionamiento a modificar. Sirve como base para aplicar ajustes espaciales. |
 | `width`   | `INT`      | Especifica el ancho del área a establecer dentro del contexto de condicionamiento, influyendo en el alcance horizontal del ajuste. |
@@ -13,6 +13,6 @@ Este nodo está diseñado para modificar la información de condicionamiento est
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `conditioning` | `CONDITIONING` | Los datos de condicionamiento modificados, reflejando los ajustes y configuraciones de área especificados. |

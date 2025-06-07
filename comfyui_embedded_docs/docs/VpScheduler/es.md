@@ -3,7 +3,7 @@ El nodo VPScheduler está diseñado para generar una secuencia de niveles de rui
 
 ## Entradas
 
-| Parámetro   | Comfy dtype | Descripción                                                                                                                                      |
+| Parámetro   | Data Type | Descripción                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Especifica el número de pasos en el proceso de difusión, afectando la granularidad de los niveles de ruido generados.                              |
 | `beta_d`    | FLOAT       | Determina la distribución general del nivel de ruido, influyendo en la varianza de los niveles de ruido generados.                                 |
@@ -12,6 +12,6 @@ El nodo VPScheduler está diseñado para generar una secuencia de niveles de rui
 
 ## Salidas
 
-| Parámetro   | Comfy dtype | Descripción                                                                                   |
+| Parámetro   | Data Type | Descripción                                                                                   |
 |-------------|-------------|-----------------------------------------------------------------------------------------------|
 | `sigmas`    | SIGMAS      | Una secuencia de niveles de ruido (sigmas) generada basada en el método de programación VP, utilizada para guiar el proceso de eliminación de ruido en modelos de difusión. |

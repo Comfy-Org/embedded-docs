@@ -3,7 +3,7 @@ El nodo PorterDuffImageComposite está diseñado para realizar la composición d
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 | --------- | ------------ | ----------- |
 | `source`  | `IMAGE`     | El tensor de imagen de origen que se compondrá sobre la imagen de destino. Juega un papel crucial en la determinación del resultado visual final basado en el modo de composición seleccionado. |
 | `source_alpha` | `MASK` | El canal alfa de la imagen de origen, que especifica la transparencia de cada píxel en la imagen de origen. Afecta cómo la imagen de origen se mezcla con la imagen de destino. |
@@ -13,7 +13,7 @@ El nodo PorterDuffImageComposite está diseñado para realizar la composición d
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 | --------- | ------------ | ----------- |
 | `image`   | `IMAGE`     | La imagen compuesta resultante de la aplicación del modo Porter-Duff especificado. |
 | `mask`    | `MASK`      | El canal alfa de la imagen compuesta, indicando la transparencia de cada píxel. |

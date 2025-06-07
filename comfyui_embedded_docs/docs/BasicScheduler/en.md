@@ -2,12 +2,12 @@ The `BasicScheduler` node is designed to compute a sequence of sigma values for 
 
 ## Inputs
 
-| Parameter   | Data Type     | Input Type | Default | Range    | Metaphor Description           | Technical Purpose            |
-| ----------- | ------------- | ---------- | ------- | -------- | ------------------------------ | ---------------------------- |
-| `model`     | MODEL         | Input      | -       | -        | **Canvas Type**: Different canvas materials need different paint formulas | Diffusion model object, determines sigma calculation basis |
-| `scheduler` | COMBO[STRING] | Widget     | -       | 9 options | **Mixing Technique**: Choose how paint concentration changes    | Scheduling algorithm, controls noise decay mode              |
-| `steps`     | INT           | Widget     | 20      | 1-10000  | **Mixing Count**: 20 mixes vs 50 mixes precision difference   | Sampling steps, affects generation quality and speed        |
-| `denoise`   | FLOAT         | Widget     | 1.0     | 0.0-1.0  | **Creation Intensity**: Control level from fine-tuning to repainting | Denoising strength, supports partial repainting scenarios   |
+| Parameter   | Data Type     | Input Type | Default | Range     | Metaphor Description           | Technical Purpose            |
+| ----------- | ------------- | ---------- | ------- | --------- | ------------------------------ | ---------------------------- |
+| `model`     | MODEL         | Input      | -       | -         | **Canvas Type**: Different canvas materials need different paint formulas | Diffusion model object, determines sigma calculation basis |
+| `scheduler` | COMBO[STRING] | Widget     | -       | 9 options | **Mixing Technique**: Choose how paint concentration changes | Scheduling algorithm, controls noise decay mode |
+| `steps`     | INT           | Widget     | 20      | 1-10000   | **Mixing Count**: 20 mixes vs 50 mixes precision difference | Sampling steps, affects generation quality and speed |
+| `denoise`   | FLOAT         | Widget     | 1.0     | 0.0-1.0   | **Creation Intensity**: Control level from fine-tuning to repainting | Denoising strength, supports partial repainting scenarios |
 
 ### Scheduler Types
 

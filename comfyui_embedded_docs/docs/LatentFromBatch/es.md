@@ -3,7 +3,7 @@ Este nodo está diseñado para extraer un subconjunto específico de muestras la
 
 ## Entradas
 
-| Parámetro     | Comfy dtype | Descripción |
+| Parámetro     | Data Type | Descripción |
 |---------------|-------------|-------------|
 | `samples`     | `LATENT`    | La colección de muestras latentes de la cual se extraerá un subconjunto. Este parámetro es crucial para determinar el lote fuente de muestras a procesar. |
 | `batch_index` | `INT`       | Especifica el índice de inicio dentro del lote desde el cual comenzará el subconjunto de muestras. Este parámetro permite la extracción dirigida de muestras desde posiciones específicas en el lote. |
@@ -11,6 +11,6 @@ Este nodo está diseñado para extraer un subconjunto específico de muestras la
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | El subconjunto extraído de muestras latentes, ahora disponible para un procesamiento o análisis posterior. |

@@ -3,7 +3,7 @@ Le nœud PolyexponentialScheduler est conçu pour générer une séquence de niv
 
 ## Entrées
 
-| Paramètre   | Comfy dtype | Description                                                                                                                                                        |
+| Paramètre   | Data Type | Description                                                                                                                                                        |
 | ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `steps`     | INT         | Spécifie le nombre d'étapes dans le processus de diffusion, affectant la granularité des niveaux de bruit générés.                                                 |
 | `sigma_max` | FLOAT       | Le niveau de bruit maximal, fixant la limite supérieure du calendrier de bruit.                                                                                    |
@@ -12,6 +12,6 @@ Le nœud PolyexponentialScheduler est conçu pour générer une séquence de niv
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description                                                                                                      |
+| Paramètre | Data Type | Description                                                                                                      |
 | --------- | ----------- | ---------------------------------------------------------------------------------------------------------------- |
 | `sigmas`  | SIGMAS      | La sortie est une séquence de niveaux de bruit (sigmas) adaptée au calendrier de bruit polyexponentiel spécifié. |

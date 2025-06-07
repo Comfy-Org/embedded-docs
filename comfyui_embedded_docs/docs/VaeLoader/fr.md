@@ -12,6 +12,6 @@ Le nœud VAELoader est conçu pour charger des modèles d'Autoencodeur Variation
 
 ## Sorties
 
-| Champ | Comfy dtype | Description                                                              |
+| Champ | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `vae`  | `VAE`       | Retourne le modèle VAE chargé, prêt pour d'autres opérations telles que l'encodage ou le décodage. La sortie est un objet modèle encapsulant l'état du modèle chargé. |

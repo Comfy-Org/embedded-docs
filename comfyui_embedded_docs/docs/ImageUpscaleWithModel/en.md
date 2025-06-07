@@ -9,6 +9,6 @@ This node is designed for upscaling images using a specified upscale model. It e
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description                                        |
+| Parameter | Data Type | Description                                        |
 |-----------|-------------|----------------------------------------------------|
 | `image`   | `IMAGE`     | The upscaled image, processed by the upscale model. This output is the result of the upscaling operation, showcasing the enhanced resolution or quality. |

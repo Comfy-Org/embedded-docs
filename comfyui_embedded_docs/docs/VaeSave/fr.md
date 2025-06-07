@@ -3,7 +3,7 @@ Le nœud VAESave est conçu pour sauvegarder les modèles VAE avec leurs métado
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `vae`     | `VAE`       | Le modèle VAE à sauvegarder. Ce paramètre est crucial car il représente le modèle dont l'état doit être sérialisé et stocké. |
 | `filename_prefix` | `STRING` | Un préfixe pour le nom de fichier sous lequel le modèle et ses métadonnées seront sauvegardés. Cela permet un stockage organisé et une récupération facile des modèles. |

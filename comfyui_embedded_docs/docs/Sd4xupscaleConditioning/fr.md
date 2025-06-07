@@ -13,7 +13,7 @@ Ce nœud est spécialisé dans l'amélioration de la résolution des images grâ
 
 ## Sorties
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Les éléments de conditionnement positifs raffinés résultant du processus de mise à l'échelle. |
 | `negative`    | `CONDITIONING` | Les éléments de conditionnement négatifs raffinés résultant du processus de mise à l'échelle. |

@@ -2,13 +2,13 @@ The `ImageBatch` node is designed for combining two images into a single batch. 
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image1`  | `IMAGE`     | The first image to be combined into the batch. It serves as the reference for the dimensions to which the second image will be adjusted if necessary. |
 | `image2`  | `IMAGE`     | The second image to be combined into the batch. It is automatically rescaled to match the dimensions of the first image if they differ. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | The combined batch of images, with the second image rescaled to match the first one's dimensions if needed. |

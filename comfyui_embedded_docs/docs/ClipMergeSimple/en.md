@@ -2,7 +2,7 @@ This node specializes in merging two CLIP models based on a specified ratio, eff
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip1`   | `CLIP`      | The first CLIP model to be merged. It serves as the base model for the merging process. |
 | `clip2`   | `CLIP`      | The second CLIP model to be merged. Its key patches, except for position IDs and logit scale, are applied to the first model based on the specified ratio. |
@@ -10,6 +10,6 @@ This node specializes in merging two CLIP models based on a specified ratio, eff
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | The resulting merged CLIP model, incorporating features from both input models according to the specified ratio. |

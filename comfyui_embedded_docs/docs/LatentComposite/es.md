@@ -2,7 +2,7 @@ El nodo LatentComposite está diseñado para mezclar o fusionar dos representaci
 
 ## Entradas
 
-| Parámetro    | Comfy dtype | Descripción |
+| Parámetro    | Data Type | Descripción |
 |--------------|-------------|-------------|
 | `samples_to` | `LATENT`    | La representación latente 'samples_to' donde se compondrá 'samples_from'. Sirve como base para la operación de composición. |
 | `samples_from` | `LATENT` | La representación latente 'samples_from' que se compondrá sobre 'samples_to'. Contribuye con sus características al resultado final compuesto. |
@@ -12,6 +12,6 @@ El nodo LatentComposite está diseñado para mezclar o fusionar dos representaci
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La salida es una representación latente compuesta, mezclando las características de las latentes 'samples_to' y 'samples_from' según las coordenadas especificadas y la opción de redimensionamiento. |

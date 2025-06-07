@@ -3,7 +3,7 @@ Le nœud VPScheduler est conçu pour générer une séquence de niveaux de bruit
 
 ## Entrées
 
-| Paramètre   | Comfy dtype | Description                                                                                                                                      |
+| Paramètre   | Data Type | Description                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Spécifie le nombre d'étapes dans le processus de diffusion, affectant la granularité des niveaux de bruit générés.                              |
 | `beta_d`    | FLOAT       | Détermine la distribution globale du niveau de bruit, influençant la variance des niveaux de bruit générés.                                 |
@@ -12,6 +12,6 @@ Le nœud VPScheduler est conçu pour générer une séquence de niveaux de bruit
 
 ## Sorties
 
-| Paramètre   | Comfy dtype | Description                                                                                   |
+| Paramètre   | Data Type | Description                                                                                   |
 |-------------|-------------|-----------------------------------------------------------------------------------------------|
 | `sigmas`    | SIGMAS      | Une séquence de niveaux de bruit (sigmas) générée selon la méthode de planification VP, utilisée pour guider le processus de débruitage dans les modèles de diffusion. |

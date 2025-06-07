@@ -2,7 +2,7 @@ El nodo KarrasScheduler está diseñado para generar una secuencia de niveles de
 
 ## Entradas
 
-| Parameter   | Comfy dtype | Description                                                                                      |
+| Parameter   | Data Type | Description                                                                                      |
 |-------------|-------------|------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Especifica el número de pasos en el programa de ruido, afectando la granularidad de la secuencia de sigmas generada. |
 | `sigma_max` | FLOAT       | El valor máximo de sigma en el programa de ruido, estableciendo el límite superior de los niveles de ruido.                    |
@@ -11,6 +11,6 @@ El nodo KarrasScheduler está diseñado para generar una secuencia de niveles de
 
 ## Salidas
 
-| Parameter | Comfy dtype | Description                                                                 |
+| Parameter | Data Type | Description                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | La secuencia generada de niveles de ruido (sigmas) siguiendo el programa de ruido de Karras et al. (2022). |

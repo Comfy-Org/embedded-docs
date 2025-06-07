@@ -3,13 +3,13 @@ The LatentMultiply node is designed to scale the latent representation of sample
 
 ## Inputs
 
-| Parameter    | Comfy dtype | Description |
+| Parameter    | Data Type | Description |
 |--------------|-------------|-------------|
 | `samples`    | `LATENT`    | The 'samples' parameter represents the latent representations to be scaled. It is crucial for defining the input data on which the multiplication operation will be performed. |
 | `multiplier` | `FLOAT`     | The 'multiplier' parameter specifies the scaling factor to be applied to the latent samples. It plays a key role in adjusting the magnitude of the latent features, allowing for nuanced control over the generated output. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output is a modified version of the input latent samples, scaled by the specified multiplier. This allows for the exploration of variations within the latent space by adjusting the intensity of its features. |

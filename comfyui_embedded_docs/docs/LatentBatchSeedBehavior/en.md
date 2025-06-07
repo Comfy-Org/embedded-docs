@@ -2,13 +2,13 @@ The LatentBatchSeedBehavior node is designed to modify the seed behavior of a ba
 
 ## Inputs
 
-| Parameter       | Comfy dtype  | Description |
+| Parameter       | Data Type | Description |
 |-----------------|--------------|-------------|
 | `samples`       | `LATENT`     | The 'samples' parameter represents the batch of latent samples to be processed. Its modification depends on the seed behavior chosen, affecting the consistency or variability of the generated outputs. |
 | `seed_behavior`  | `COMBO[STRING]` | The 'seed_behavior' parameter dictates whether the seed for the batch of latent samples should be randomized or fixed. This choice significantly impacts the generation process by either introducing variability or ensuring consistency across the batch. |
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The output is a modified version of the input latent samples, with adjustments made based on the specified seed behavior. It either maintains or alters the batch index to reflect the chosen seed behavior. |

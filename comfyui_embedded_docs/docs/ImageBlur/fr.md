@@ -2,7 +2,7 @@ Le nœud `ImageBlur` applique un flou gaussien à une image, permettant d'adouci
 
 ## Entrées
 
-| Champ          | Comfy dtype | Description                                                                   |
+| Champ          | Data Type | Description                                                                   |
 |----------------|-------------|-------------------------------------------------------------------------------|
 | `image`        | `IMAGE`     | L'image d'entrée à flouter. C'est la cible principale de l'effet de flou. |
 | `blur_radius`  | `INT`       | Détermine le rayon de l'effet de flou. Un rayon plus grand entraîne un flou plus prononcé. |
@@ -10,6 +10,6 @@ Le nœud `ImageBlur` applique un flou gaussien à une image, permettant d'adouci
 
 ## Sorties
 
-| Champ | Comfy dtype | Description                                                              |
+| Champ | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | La sortie est la version floutée de l'image d'entrée, avec le degré de flou déterminé par les paramètres d'entrée. |

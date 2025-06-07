@@ -3,13 +3,13 @@ Le nœud LoadImage est conçu pour charger et prétraiter des images à partir d
 
 ## Entrées
 
-| Paramètre | Comfy dtype  | Description |
+| Paramètre | Data Type | Description |
 |-----------|--------------|-------------|
 | `image`   | `COMBO[STRING]` | Le paramètre 'image' spécifie l'identifiant de l'image à charger et traiter. Il est crucial pour déterminer le chemin vers le fichier image et charger ensuite l'image pour la transformation et la normalisation. |
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | L'image traitée, avec des valeurs de pixels normalisées et des transformations appliquées si nécessaire. Elle est prête pour un traitement ou une analyse ultérieure. |
 | `mask`    | `MASK`      | Une sortie optionnelle fournissant un masque pour l'image, utile dans les scénarios où l'image inclut un canal alpha pour la transparence. |

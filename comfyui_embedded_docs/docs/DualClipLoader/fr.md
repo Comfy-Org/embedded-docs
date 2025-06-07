@@ -2,7 +2,7 @@ Le nœud DualCLIPLoader est conçu pour charger deux modèles CLIP simultanémen
 
 ## Entrées
 
-| Paramètre    | Comfy dtype  | Description |
+| Paramètre    | Data Type | Description |
 |--------------|--------------|-------------|
 | `clip_name1` | `COMBO[STRING]` | Spécifie le nom du premier modèle CLIP à charger. Ce paramètre est crucial pour identifier et récupérer le modèle correct à partir d'une liste prédéfinie de modèles CLIP disponibles. |
 | `clip_name2` | `COMBO[STRING]` | Spécifie le nom du second modèle CLIP à charger. Ce paramètre permet le chargement d'un second modèle CLIP distinct pour une analyse comparative ou intégrative aux côtés du premier modèle. |
@@ -12,7 +12,7 @@ Le nœud DualCLIPLoader est conçu pour charger deux modèles CLIP simultanémen
 
 ## Sorties
 
-| Paramètre | Comfy dtype  | Description |
+| Paramètre | Data Type | Description |
 |-----------|--------------|-------------|
 | `clip`    | `CLIP`       | La sortie est un modèle CLIP combiné qui intègre les caractéristiques ou fonctionnalités des deux modèles CLIP spécifiés. |
 

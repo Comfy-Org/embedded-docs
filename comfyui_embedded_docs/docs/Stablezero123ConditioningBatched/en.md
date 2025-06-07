@@ -3,7 +3,7 @@ This node is designed to process conditioning information in a batched manner sp
 
 ## Inputs
 
-| Parameter             | Comfy dtype  | Description |
+| Parameter             | Data Type | Description |
 |----------------------|--------------|-------------|
 | `clip_vision`         | `CLIP_VISION` | The CLIP vision embeddings that provide visual context for the conditioning process. |
 | `init_image`          | `IMAGE`      | The initial image to be conditioned upon, serving as a starting point for the generation process. |
@@ -18,7 +18,7 @@ This node is designed to process conditioning information in a batched manner sp
 
 ## Outputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | The positive conditioning output, tailored for promoting certain features or aspects in the generated content. |
 | `negative`    | `CONDITIONING` | The negative conditioning output, tailored for demoting certain features or aspects in the generated content. |

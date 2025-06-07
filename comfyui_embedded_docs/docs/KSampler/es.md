@@ -2,7 +2,7 @@ El nodo KSampler está diseñado para operaciones avanzadas de muestreo dentro d
 
 ## Entradas
 
-| Parámetro       | Comfy dtype | Descripción                                                                                                               |
+| Parámetro       | Data Type | Descripción                                                                                                               |
 |-----------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
 | `model`         | `MODEL`     | Especifica el modelo generativo a utilizar para el muestreo, desempeñando un papel crucial en la determinación de las características de las muestras generadas. |
 | `seed`          | `INT`       | Controla la aleatoriedad del proceso de muestreo, asegurando la reproducibilidad de los resultados cuando se establece en un valor específico.                         |
@@ -17,6 +17,6 @@ El nodo KSampler está diseñado para operaciones avanzadas de muestreo dentro d
 
 ## Salidas
 
-| Parámetro   | Comfy dtype | Descripción |
+| Parámetro   | Data Type | Descripción |
 |-------------|-------------|-------------|
 | `latent`    | `LATENT`    | Representa la salida del espacio latente del proceso de muestreo, encapsulando las muestras generadas. |

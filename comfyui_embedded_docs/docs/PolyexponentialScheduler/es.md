@@ -3,7 +3,7 @@ El nodo PolyexponentialScheduler está diseñado para generar una secuencia de n
 
 ## Entradas
 
-| Parámetro   | Comfy dtype | Descripción                                                                                                                                                                                                                                                                                                                                                      |
+| Parámetro   | Data Type | Descripción                                                                                                                                                                                                                                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `steps`     | INT         | Especifica el número de pasos en el proceso de difusión, afectando la granularidad de los niveles de ruido generados.                                                                                                                                                                                                                                                                        |
 | `sigma_max` | FLOAT       | El nivel máximo de ruido, estableciendo el límite superior del programa de ruido.                                                                                                                                                                                                                                                                                                                                 |
@@ -12,6 +12,6 @@ El nodo PolyexponentialScheduler está diseñado para generar una secuencia de n
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción                                                                 |
+| Parámetro | Data Type | Descripción                                                                 |
 |-----------|-------------|-----------------------------------------------------------------------------|
 | `sigmas`  | SIGMAS      | La salida es una secuencia de niveles de ruido (sigmas) adaptada al programa de ruido poliexponencial especificado. |

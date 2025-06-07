@@ -2,12 +2,12 @@ El nodo `FlipSigmas` está diseñado para manipular la secuencia de valores sigm
 
 ## Entradas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `sigmas`  | `SIGMAS`    | El parámetro 'sigmas' representa la secuencia de valores sigma que se va a invertir. Esta secuencia es crucial para controlar los niveles de ruido aplicados durante el proceso de difusión, y su inversión es esencial para el proceso de generación inversa. |
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `sigmas`  | `SIGMAS`    | La salida es la secuencia modificada de valores sigma, invertida y ajustada para asegurar que el primer valor no sea cero si originalmente lo era, lista para su uso en operaciones posteriores del modelo de difusión. |

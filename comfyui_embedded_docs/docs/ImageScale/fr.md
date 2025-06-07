@@ -2,7 +2,7 @@ Le nœud ImageScale est conçu pour redimensionner les images à des dimensions 
 
 ## Entrées
 
-| Paramètre       | Comfy dtype | Description                                                                           |
+| Paramètre       | Data Type | Description                                                                           |
 |-----------------|-------------|---------------------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | L'image d'entrée à agrandir. Ce paramètre est central pour le fonctionnement du nœud, servant de données principales sur lesquelles les transformations de redimensionnement sont appliquées. La qualité et les dimensions de l'image de sortie sont directement influencées par les propriétés de l'image originale. |
 | `upscale_method`| `COMBO[STRING]` | Spécifie la méthode utilisée pour agrandir l'image. Le choix de la méthode peut affecter la qualité et les caractéristiques de l'image agrandie, influençant la fidélité visuelle et les artefacts potentiels dans le résultat redimensionné. |
@@ -12,6 +12,6 @@ Le nœud ImageScale est conçu pour redimensionner les images à des dimensions 
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | L'image agrandie (et éventuellement recadrée), prête pour un traitement ou une visualisation ultérieure. |

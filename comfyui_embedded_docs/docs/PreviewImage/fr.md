@@ -3,7 +3,7 @@ Le nœud PreviewImage est conçu pour créer des images d'aperçu temporaires. I
 
 ## Entrées
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `images`  | `IMAGE`     | L'entrée 'images' spécifie les images à traiter et à enregistrer en tant qu'images d'aperçu temporaires. C'est l'entrée principale pour le nœud, déterminant quelles images subiront le processus de génération d'aperçu. |
 

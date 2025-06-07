@@ -3,7 +3,7 @@ Le nœud `ImageBlend` est conçu pour mélanger deux images ensemble en fonction
 
 ## Entrées
 
-| Champ         | Comfy dtype | Description                                                                       |
+| Champ         | Data Type | Description                                                                       |
 |---------------|-------------|-----------------------------------------------------------------------------------|
 | `image1`      | `IMAGE`     | La première image à mélanger. Elle sert de couche de base pour l'opération de mélange. |
 | `image2`      | `IMAGE`     | La deuxième image à mélanger. Selon le mode de fusion, elle modifie l'apparence de la première image. |
@@ -12,6 +12,6 @@ Le nœud `ImageBlend` est conçu pour mélanger deux images ensemble en fonction
 
 ## Sorties
 
-| Champ | Comfy dtype | Description                                                              |
+| Champ | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | L'image résultante après le mélange des deux images d'entrée selon le mode de fusion et le facteur spécifiés. |

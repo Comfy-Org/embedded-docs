@@ -2,13 +2,13 @@ Ce nœud est conçu pour modifier le comportement d'un modèle CLIP en définiss
 
 ## Entrées
 
-| Paramètre            | Comfy dtype | Description |
+| Paramètre            | Data Type | Description |
 |---------------------|--------------|-------------|
 | `clip`               | `CLIP`      | Le modèle CLIP à modifier. Ce paramètre permet au nœud d'interagir directement avec et de modifier la structure du modèle CLIP. |
 | `stop_at_clip_layer` | `INT`       | Spécifie la couche à laquelle le modèle CLIP doit arrêter le traitement. Cela permet de contrôler la profondeur de calcul et peut être utilisé pour ajuster le comportement ou la performance du modèle. |
 
 ## Sorties
 
-| Paramètre | Comfy dtype | Description |
+| Paramètre | Data Type | Description |
 |-----------|-------------|-------------|
 | `clip`    | `CLIP`      | Le modèle CLIP modifié avec la couche spécifiée définie comme la dernière. Cette sortie permet une utilisation ou une analyse ultérieure du modèle ajusté. |

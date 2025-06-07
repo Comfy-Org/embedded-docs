@@ -2,7 +2,7 @@ El nodo `ImageCrop` está diseñado para recortar imágenes a un ancho y alto es
 
 ## Entradas
 
-| Campo | Comfy dtype | Descripción                                                                                   |
+| Campo | Data Type | Descripción                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|
 | `image` | `IMAGE` | La imagen de entrada a recortar. Este parámetro es crucial ya que define la imagen fuente de la cual se extraerá una región basada en las dimensiones y coordenadas especificadas. |
 | `width` | `INT` | Especifica el ancho de la imagen recortada. Este parámetro determina cuán ancha será la imagen recortada resultante. |
@@ -12,6 +12,6 @@ El nodo `ImageCrop` está diseñado para recortar imágenes a un ancho y alto es
 
 ## Salidas
 
-| Campo | Comfy dtype | Descripción                                                                   |
+| Campo | Data Type | Descripción                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|
 | `image` | `IMAGE` | La imagen recortada como resultado de la operación de recorte. Esta salida es significativa para un procesamiento o análisis adicional de la región de imagen especificada. |

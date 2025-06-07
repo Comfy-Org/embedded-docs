@@ -3,13 +3,13 @@ The RepeatImageBatch node is designed to replicate a given image a specified num
 
 ## Inputs
 
-| Field   | Comfy dtype | Description                                                                 |
+| Field   | Data Type | Description                                                                 |
 |---------|-------------|-----------------------------------------------------------------------------|
 | `image` | `IMAGE`     | The 'image' parameter represents the image to be replicated. It is crucial for defining the content that will be duplicated across the batch. |
 | `amount`| `INT`       | The 'amount' parameter specifies the number of times the input image should be replicated. It directly influences the size of the output batch, allowing for flexible batch creation. |
 
 ## Outputs
 
-| Field | Comfy dtype | Description                                                              |
+| Field | Data Type | Description                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
 | `image`| `IMAGE`     | The output is a batch of images, each identical to the input image, replicated according to the specified 'amount'. |

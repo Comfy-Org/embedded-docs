@@ -4,7 +4,7 @@ El nodo CLIPVisionLoader está diseñado para cargar modelos de Visión CLIP des
 
 ## Entradas
 
-| Campo       | Comfy dtype | Descripción                                                                       |
+| Campo       | Data Type | Descripción                                                                       |
 |-------------|-------------|-----------------------------------------------------------------------------------|
 | `clip_name` | `COMBO[STRING]` | Especifica el nombre del modelo de Visión CLIP a cargar, utilizado para localizar el archivo del modelo dentro de una estructura de directorios predefinida. |
 

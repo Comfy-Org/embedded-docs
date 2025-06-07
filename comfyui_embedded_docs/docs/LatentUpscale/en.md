@@ -3,7 +3,7 @@ The LatentUpscale node is designed for upscaling latent representations of image
 
 ## Inputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `samples` | `LATENT`    | The latent representation of an image to be upscaled. This parameter is crucial for determining the starting point of the upscaling process. |
 | `upscale_method` | `COMBO[STRING]` | Specifies the method used for upscaling the latent image. Different methods can affect the quality and characteristics of the upscaled image. |
@@ -13,6 +13,6 @@ The LatentUpscale node is designed for upscaling latent representations of image
 
 ## Outputs
 
-| Parameter | Comfy dtype | Description |
+| Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | The upscaled latent representation of the image, ready for further processing or generation. |

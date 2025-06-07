@@ -2,7 +2,7 @@ El nodo `EmptyLatentImage` está diseñado para generar una representación de e
 
 ## Entradas
 
-| Parámetro   | Comfy dtype | Descripción |
+| Parámetro   | Data Type | Descripción |
 |-------------|-------------|-------------|
 | `width`     | `INT`       | Especifica el ancho de la imagen latente a generar. Este parámetro influye directamente en las dimensiones espaciales de la representación latente resultante. |
 | `height`    | `INT`       | Determina la altura de la imagen latente a generar. Este parámetro es crucial para definir las dimensiones espaciales de la representación del espacio latente. |
@@ -10,6 +10,6 @@ El nodo `EmptyLatentImage` está diseñado para generar una representación de e
 
 ## Salidas
 
-| Parámetro | Comfy dtype | Descripción |
+| Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | La salida es un tensor que representa un lote de imágenes latentes en blanco, sirviendo como base para la generación o manipulación adicional de imágenes en el espacio latente. |
