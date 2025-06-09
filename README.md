@@ -54,8 +54,11 @@ To ensure minimal consistency across nodes documentation, it is recommended to f
 # Run this command: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 npm install -g markdownlint-cli
 
-# Fix linting issues in markdown files, using shell script (Linux)
+# Fix linting issues in all markdown files under docs directory，using shell script (Linux)
 bash fix_markdown.sh
+
+# Fix linting issues for a specific node's documentation
+bash fix_markdown.sh ClipLoader  # This will only check files in comfyui_embedded_docs/docs/ClipLoader/
 
 # Or fix linting issues in markdown files, using powershell script (Windows)
 powershell -ExecutionPolicy Bypass -File fix_markdown.ps1
