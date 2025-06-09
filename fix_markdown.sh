@@ -4,18 +4,44 @@
 # Get the folder path of the script
 script_folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Define the sibling folder containing markdown files
-folder_path="$script_folder/comfyui_embedded_docs/docs"
+# Set the base path
+base_path="$script_folder/comfyui_embedded_docs/docs"
 
-# Resolve the full path of the sibling folder
-resolved_folder_path="$(realpath "$folder_path")"
+# Check if base path exists
+if [ ! -d "$base_path" ]; then
+    echo "Error: Base directory '$base_path' does not exist!"
+    exit 1
+fi
 
-# Find all markdown files in the folder and subfolders
-markdown_files=$(find "$resolved_folder_path" -type f -name "*.md")
+# Set the target folder path
+if [ -n "$1" ]; then
+    # If subdirectory is provided, check if it exists in base path
+    target_folder="$base_path/$1"
+    if [ ! -d "$target_folder" ]; then
+        echo "Error: Subdirectory '$1' not found in $base_path"
+        exit 1
+    fi
+    echo "Checking markdown files in subdirectory: $1"
+else
+    # Use base path to check all files
+    target_folder="$base_path"
+    echo "Checking all markdown files in: $base_path"
+fi
+
+# Find all markdown files in the target folder and subfolders
+markdown_files=$(find "$target_folder" -type f -name "*.md")
+
+# Check if any markdown files were found
+if [ -z "$markdown_files" ]; then
+    echo "No markdown files found in specified path"
+    exit 0
+fi
 
 # Loop through each markdown file and fix linting issues
 for file in $markdown_files; do
-    echo "Fixing linting issues for: $file"
+    # Get relative path for cleaner output
+    relative_path=${file#$base_path/}
+    echo "Fixing linting issues for: $relative_path"
     markdownlint --fix "$file"
 done
 
