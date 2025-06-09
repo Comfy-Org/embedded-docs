@@ -1,11 +1,13 @@
 Este nodo se utiliza principalmente para cargar modelos de codificador de texto CLIP de forma independiente.
 Los archivos de modelo se pueden detectar en las siguientes rutas:
+
 - "ComfyUI/models/text_encoders/"
 - "ComfyUI/models/clip/"
 
 > Si guardas un modelo después de haber iniciado ComfyUI, necesitarás actualizar el frontend de ComfyUI para obtener la lista más reciente de rutas de archivos de modelo
 
 Formatos de modelo soportados:
+
 - `.ckpt`
 - `.pt`
 - `.pt2`

@@ -1,11 +1,13 @@
 이 노드는 주로 CLIP 텍스트 인코더 모델을 독립적으로 로드하는 데 사용됩니다.
 모델 파일은 다음 경로에서 감지할 수 있습니다:
+
 - "ComfyUI/models/text_encoders/"
 - "ComfyUI/models/clip/"
 
 > ComfyUI 시작 후 모델을 저장한 경우, 최신 모델 파일 경로 목록을 가져오기 위해 ComfyUI 프론트엔드를 새로 고침해야 합니다
 
 지원되는 모델 형식:
+
 - `.ckpt`
 - `.pt`
 - `.pt2`

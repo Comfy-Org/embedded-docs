@@ -1,11 +1,13 @@
 Ce nœud est principalement utilisé pour charger indépendamment les modèles d'encodeur de texte CLIP.
 Les fichiers de modèle peuvent être détectés dans les chemins suivants :
+
 - "ComfyUI/models/text_encoders/"
 - "ComfyUI/models/clip/"
 
 > Si vous sauvegardez un modèle après le démarrage de ComfyUI, vous devrez actualiser l'interface frontend de ComfyUI pour obtenir la liste la plus récente des chemins de fichiers de modèle
 
 Formats de modèle pris en charge :
+
 - `.ckpt`
 - `.pt`
 - `.pt2`

@@ -1,11 +1,13 @@
 This node is primarily used for loading CLIP text encoder models independently.
 The model files can be detected in the following paths:
+
 - "ComfyUI/models/text_encoders/"
 - "ComfyUI/models/clip/"
 
 > If you save a model after ComfyUI has started, you'll need to refresh the ComfyUI frontend to get the latest model file path list
 
 Supported model formats:
+
 - `.ckpt`
 - `.pt`
 - `.pt2`

@@ -1,11 +1,13 @@
 该节点主要用于单独加载 CLIP 文本编码器模型。
 支持检测以下路径的模型文件检测：
+
 - “ComfyUI/models/text_encoders/”
 - “ComfyUI/models/clip/”
 
 > 如果你是在 ComfyUI 启动后才保存的模型则需要刷新 ComfyUI 前端来获取最新的模型文件路径列表
 
 支持的模型格式有:
+
 - `.ckpt`
 - `.pt`
 - `.pt2`
@@ -15,7 +17,7 @@
 - `.pkl`
 - `.sft`
 
-更多最新模型文件加载详情请查阅[folder_paths]](https://github.com/comfyanonymous/ComfyUI/blob/master/folder_paths.py)
+更多最新模型文件加载详情请查阅[folder_paths](https://github.com/comfyanonymous/ComfyUI/blob/master/folder_paths.py)
 
 ## 输入
 
@@ -24,7 +26,6 @@
 | `CLIP名称`  | COMBO[STRING] | 指定要加载的 CLIP 模型的名称。此名称用于在预定义的目录结构内定位模型文件。 |
 | `类型`       | COMBO[STRING] | 确定要加载的 CLIP 模型类型，随着 ComfyUI 支持的模型数量增加这里的类型也会新增对应的类型，请查看[node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py)中源码里关于`CLIPLoader` 类的相关定义|
 | `设备`       | COMBO[STRING] |选择加载 CLIP 模型的设备，`default` 将会将对应的模型在 GPU 上运行，如果选择`CPU` 将强制在 CPU上进行加载|
-
 
 ### 不同`设备`选项的说明
 
