@@ -50,11 +50,13 @@ To ensure minimal consistency across nodes documentation, it is recommended to f
 
 ```sh
 # Install markdownlint-cli
+# If you encounter the error npm.ps1 cannot be loaded because running scripts is disabled on this system
+# Run this command: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 npm install -g markdownlint-cli
 
 # Fix linting issues in markdown files, using shell script (Linux)
 bash fix_markdown.sh
 
 # Or fix linting issues in markdown files, using powershell script (Windows)
-powershell -ExecutionPolicy Bypass -File .\fix_markdown.ps1
+powershell -ExecutionPolicy Bypass -File fix_markdown.ps1
 ```
