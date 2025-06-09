@@ -1,20 +1,23 @@
-
 UNETLoader 节点旨在通过名称加载 U-Net 模型，方便在系统中使用预训练的 U-Net 架构。
 这个节点名称已更新为 `Load Diffusion Model`.
 
-## 输入类型 - UNET Loader
+## 输入
+
 | 参数名称 | 数据类型 | 作用                                                         |
 | -------- | -------- | ------------------------------------------------------------ |
-| `unet_name` | `COMBO[STRING]` | 指定要加载的 U-Net 模型的名称。此名称用于在预定义的目录结构内定位模型，从而实现不同 U-Net 模型的动态加载。 |
+| `unet_name` | COMBO[STRING] | 指定要加载的 U-Net 模型的名称。此名称用于在预定义的目录结构内定位模型，从而实现不同 U-Net 模型的动态加载。 |
 | `weight_dtype` | ... |  |
 
 fp8_e4m3fn和fp9_e5m2  表示不同精度和动态范围
-## 输出类型 - UNET Loader
+
+## 输出
+
 | 参数名称 | 数据类型 | 作用                                       |
 | -------- | -------- | ------------------------------------------ |
-| `model`  | `MODEL`  | 返回加载的 U-Net 模型，允许在系统中用于进一步处理或推理。 |
+| `model`  | MODEL    | 返回加载的 U-Net 模型，允许在系统中用于进一步处理或推理。 |
 
 ## UNET Loader Guide | Load Diffusion Model Workflow Example
+
 1. 安装 UNET 模型
 2. 下载工作流文件
 3. 在 ComfyUI 中导入工作流

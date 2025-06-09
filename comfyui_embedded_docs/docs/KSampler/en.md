@@ -1,7 +1,7 @@
 The KSampler works like this: it modifies the provided original latent image information based on a specific model and both positive and negative conditions.
 First, it adds noise to the original image data according to the set **seed** and **denoise strength**, then inputs the preset **Model** combined with **positive** and **negative** guidance conditions to generate the image.
 
-## Input Parameters
+## Inputs
 
 | Parameter Name         | Data Type    | Required | Default | Range/Options            | Description                                                                        |
 | ---------------------- | ------------ | -------- | ------- | ------------------------ | ---------------------------------------------------------------------------------- |
@@ -19,7 +19,7 @@ First, it adds noise to the original image data according to the set **seed** an
 
 ## Output
 
-| Parameter Name | Function                                   |
+| Parameter | Function                                   |
 | -------------- | ------------------------------------------ |
 | Latent         | Outputs the latent after sampler denoising |
 

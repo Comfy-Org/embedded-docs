@@ -1,19 +1,16 @@
+El nodo `EmptyHunyuanLatentVideo` es similar al nodo `EmptyLatentImage`. Puedes considerarlo como un lienzo en blanco para la generación de videos, donde el ancho, la altura y la longitud definen las propiedades del lienzo, y el tamaño del lote determina el número de lienzos a crear. Este nodo crea lienzos vacíos listos para tareas posteriores de generación de videos.
 
+## Entradas
 
-Le nœud `EmptyHunyuanLatentVideo` est similaire au nœud `EmptyLatent Image`.
-Vous pouvez le considérer comme un canevas vierge pour la génération de vidéos, où la largeur, la hauteur et la longueur définissent les propriétés du canevas, et la taille du lot détermine le nombre de canevas à créer. Ce nœud crée des canevas vides prêts pour les tâches ultérieures de génération de vidéos.
+| Parámetro | Tipo de Dato | Descripción |
+|-----------|------------|-------------|
+| width | INT | Ancho del video, por defecto 848, mínimo 16, máximo nodes.MAX_RESOLUTION, paso de 16. |
+| height | INT | Altura del video, por defecto 480, mínimo 16, máximo nodes.MAX_RESOLUTION, paso de 16. |
+| length | INT | Longitud del video, por defecto 25, mínimo 1, máximo nodes.MAX_RESOLUTION, paso de 4. |
+| batch_size | INT | Tamaño del lote, por defecto 1, mínimo 1, máximo 4096. |
 
-## Types d'entrée Empty Hunyuan Latent Video
+## Salidas
 
-| Paramètre    | Type Comfy | Description                                                                               |
-| ------------ | ---------- | ----------------------------------------------------------------------------------------- |
-| `width`      | `INT`      | Largeur de la vidéo, par défaut 848, minimum 16, maximum `nodes.MAX_RESOLUTION`, pas de 16. |
-| `height`     | `INT`      | Hauteur de la vidéo, par défaut 480, minimum 16, maximum `nodes.MAX_RESOLUTION`, pas de 16. |
-| `length`     | `INT`      | Longueur de la vidéo, par défaut 25, minimum 1, maximum `nodes.MAX_RESOLUTION`, pas de 4. |
-| `batch_size` | `INT`      | Taille du lot, par défaut 1, minimum 1, maximum 4096.                                    |
-
-## Types de sortie Empty Hunyuan Latent Video
-
-| Paramètre    | Type Comfy | Description                                                                              |
-| ------------ | ---------- | ---------------------------------------------------------------------------------------- |
-| `samples`    | `LATENT`   | Échantillons vidéo latents générés contenant des tenseurs nuls, prêts pour le traitement et la génération. |
+| Parámetro | Tipo de Dato | Descripción |
+|-----------|------------|-------------|
+| samples | LATENT | Muestras de video latentes generadas que contienen tensores nulos, listas para el procesamiento y generación. |

@@ -1,2 +1,7 @@
-Nom du nœud : Note Annotation Node (Remarque)
-Objectif du nœud : Utilisé pour ajouter des annotations textuelles dans le flux de travail
+Nœud pour ajouter des annotations à un workflow.
+
+## Entrées
+
+## Sorties
+
+Le nœud n'a pas de sortie.

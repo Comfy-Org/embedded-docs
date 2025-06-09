@@ -1,8 +1,8 @@
 Este nodo está diseñado para codificar las entradas de texto utilizando el modelo CLIP específicamente adaptado para la arquitectura SDXL. Se centra en convertir descripciones textuales en un formato que puede ser utilizado de manera efectiva para generar o manipular imágenes, aprovechando las capacidades del modelo CLIP para entender y procesar texto en el contexto del contenido visual.
 
-## Tipos de entrada de CLIPTextEncodeSDXL
+## Entradas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 | --- | --- | --- |
 | `clip` | `CLIP` | La instancia del modelo CLIP utilizada para codificar el texto. Juega un papel vital en el procesamiento de la entrada de texto y su conversión en un formato adecuado para tareas de generación o manipulación de imágenes. |
 | `width` | `INT` | Especifica el ancho de la imagen en píxeles. Determina las dimensiones de la imagen de salida generada o manipulada. |
@@ -14,8 +14,8 @@ Este nodo está diseñado para codificar las entradas de texto utilizando el mod
 | `text_g` | `STRING` | La descripción textual global que se va a codificar. Esta entrada es crucial para generar las representaciones visuales correspondientes y entender el contenido descrito. |
 | `text_l` | `STRING` | La descripción textual local que se va a codificar. Esta entrada proporciona detalles o contexto adicionales a la descripción global, mejorando la especificidad de la imagen generada o manipulada. |
 
-## Tipos de salida de CLIPTextEncodeSDXL
+## Salidas
 
-| Parámetro | Tipo Comfy | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 | --- | --- | --- |
-| `conditioning` | `CONDITIONING` | La salida del nodo, que incluye el texto codificado junto con información adicional necesaria para tareas de generación o manipulación de imágenes. |
+| `CONDITIONING` | CONDITIONING | La salida del nodo, que incluye el texto codificado junto con información adicional necesaria para tareas de generación o manipulación de imágenes. |

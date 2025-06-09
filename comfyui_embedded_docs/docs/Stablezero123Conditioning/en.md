@@ -1,7 +1,7 @@
 
 This node is designed to process and condition data for use in StableZero123 models, focusing on preparing the input in a specific format that is compatible and optimized for these models.
 
-## Input types
+## Inputs
 
 | Parameter             | Comfy dtype        | Description |
 |-----------------------|--------------------|-------------|
@@ -14,9 +14,9 @@ This node is designed to process and condition data for use in StableZero123 mod
 | `elevation`           | `FLOAT`            | Adjusts the elevation angle for 3D model rendering, enhancing the model's spatial understanding. |
 | `azimuth`             | `FLOAT`            | Modifies the azimuth angle for 3D model visualization, improving the model's perception of orientation. |
 
-## Output types
+## Outputs
 
-| Parameter     | Comfy dtype  | Description |
+| Parameter     | Data Type | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | Generates positive conditioning vectors, aiding in the model's positive feature reinforcement. |
 | `negative`    | `CONDITIONING` | Produces negative conditioning vectors, assisting in the model's avoidance of certain features. |

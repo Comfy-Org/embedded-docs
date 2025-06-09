@@ -5,7 +5,7 @@
 
 このノードは、ユーザーが入力したテキスト（英語やその他の言語）をAIモデルが理解できる「機械言語」に変換する「言語翻訳機」として機能し、これらの条件に基づいて対応するコンテンツを生成することができます。
 
-## CLIP Text Encode Hunyuan DiT 入力タイプ
+## 入力
 
 | パラメータ | Comfyデータ型 | 説明 |
 | --------- | ------------ | ----------- |
@@ -16,18 +16,17 @@
 - **`bert`パラメータ**：英語テキスト入力に適しています。より正確で意味のあるトークン表現を生成するために、コンテキストを含む簡潔なテキストの入力を推奨します。
 - **`mt5xl`パラメータ**：多言語テキスト入力に適しています。モデルが多言語タスクを理解するために、任意の言語でテキストを入力できます。
 
-## CLIP Text Encode Hunyuan DiT 出力タイプ
+## 出力
 
 | パラメータ | Comfyデータ型 | 説明 |
 | --------- | ------------ | ----------- |
-| `conditioning` | `CONDITIONING` | 生成タスクでの後続処理のためのエンコードされた条件出力。 |
+| `CONDITIONING` | CONDITIONING | 生成タスクでの後続処理のためのエンコードされた条件出力。 |
 
 ## メソッド
 
 - **エンコードメソッド**: `encode`
   
   このメソッドは`clip`、`bert`、`mt5xl`をパラメータとして受け取ります。まず`bert`をトークン化し、次に`mt5xl`をトークン化して、結果を`tokens`ディクショナリに格納します。最後に、`clip.encode_from_tokens_scheduled`メソッドを使用してトークンを条件にエンコードします。
-
 
 ## CLIP Text Encode Hunyuan DiT ノードの拡張コンテンツ
 
@@ -75,10 +74,10 @@ mT5-XLはT5モデルの多言語バージョンで、複数の言語処理をサ
 
 1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805)
    - **説明**: この基礎的な論文は、幅広いNLPタスクで最先端の結果を達成するトランスフォーマーベースのモデルBERTを紹介しています。
-   
+
 2. [mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer](https://aclanthology.org/2021.naacl-main.41.pdf)
    - **説明**: この論文は、101言語をカバーする新しいCommon Crawlベースのデータセットで訓練された、T5の多言語バリアントであるmT5を紹介しています。
-   
+
 3. [mLongT5: A Multilingual and Efficient Text-To-Text Transformer for Longer Sequences](https://arxiv.org/pdf/2112.08760)
    - **説明**: この研究は、より長い入力シーケンスを効率的に処理するように設計された多言語モデルmLongT5を開発しています。
 

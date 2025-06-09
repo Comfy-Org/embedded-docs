@@ -1,8 +1,8 @@
-
 The KSamplerAdvanced node is designed to enhance the sampling process by providing advanced configurations and techniques. It aims to offer more sophisticated options for generating samples from a model, improving upon the basic KSampler functionalities.
-## Input types
 
-| Parameter             | Comfy dtype | Description                                                                                                                                                                                                                                                                                                                                                     |
+## Inputs
+
+| Parameter             | Data Type | Description                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `model`              | MODEL       | Specifies the model from which samples are to be generated, playing a crucial role in the sampling process.                                                                                                                                                                                                                      |
 | `add_noise`          | COMBO[STRING] | Determines whether noise should be added to the sampling process, affecting the diversity and quality of the generated samples.                                                                                                                                                                                                             |
@@ -18,8 +18,8 @@ The KSamplerAdvanced node is designed to enhance the sampling process by providi
 | `end_at_step`        | INT         | Sets the ending step of the sampling process, defining the scope of the sampling.                                                                                                                                                                                                                                         |
 | `return_with_leftover_noise` | COMBO[STRING] | Indicates whether to return the sample with leftover noise, affecting the final output's appearance.                                                                                                                                                                                                                               |
 
-## Output types
+## Outputs
 
-| Parameter   | Comfy dtype | Description                                                                                                               |
+| Parameter   | Data Type | Description                                                                                                               |
 |-------------|-------------|------------------------------------------------------------------------------------------------------------------------------|
 | `latent`    | LATENT      | The output represents the latent image generated from the model, reflecting the applied configurations and techniques. |

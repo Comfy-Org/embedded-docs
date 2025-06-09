@@ -1,6 +1,7 @@
 
 Ce nœud est conçu pour générer des données de conditionnement pour les tâches de génération vidéo, spécifiquement adaptées à l'utilisation avec les modèles SVD_img2vid. Il prend en compte divers paramètres d'entrée, y compris les images initiales, les paramètres vidéo et un modèle VAE pour produire des données de conditionnement pouvant être utilisées pour guider la génération des images vidéo.
-## Types d'entrée
+
+## Entrées
 
 | Paramètre             | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
@@ -14,7 +15,7 @@ Ce nœud est conçu pour générer des données de conditionnement pour les tâc
 | `fps`                 | `INT`              | Le taux de frames par seconde (fps) pour la vidéo, influençant la fluidité et le réalisme de la vidéo générée. |
 | `augmentation_level`  | `FLOAT`            | Un paramètre contrôlant le niveau d'augmentation appliqué à l'image initiale, affectant la diversité et la variabilité des cadres vidéo générés. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre     | Comfy dtype        | Description |
 |---------------|--------------------|-------------|

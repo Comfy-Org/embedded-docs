@@ -1,8 +1,9 @@
 
 Ce nœud est conçu pour traiter les informations de conditionnement de manière groupée, spécifiquement adapté au modèle StableZero123. Il se concentre sur la gestion efficace de plusieurs ensembles de données de conditionnement simultanément, optimisant le flux de travail pour les scénarios où le traitement par lots est crucial.
-## Types d'entrée
 
-| Paramètre             | Comfy dtype  | Description |
+## Entrées
+
+| Paramètre             | Data Type | Description |
 |----------------------|--------------|-------------|
 | `clip_vision`         | `CLIP_VISION` | Les embeddings de vision CLIP qui fournissent un contexte visuel pour le processus de conditionnement. |
 | `init_image`          | `IMAGE`      | L'image initiale à conditionner, servant de point de départ pour le processus de génération. |
@@ -15,9 +16,9 @@ Ce nœud est conçu pour traiter les informations de conditionnement de manière
 | `elevation_batch_increment` | `FLOAT` | Le changement incrémental de l'angle d'élévation à travers le lot, permettant des perspectives variées. |
 | `azimuth_batch_increment` | `FLOAT` | Le changement incrémental de l'angle d'azimut à travers le lot, permettant des orientations variées. |
 
-## Types de sortie
+## Sorties
 
-| Paramètre     | Comfy dtype  | Description |
+| Paramètre     | Type de Donnée | Description |
 |---------------|--------------|-------------|
 | `positive`    | `CONDITIONING` | La sortie de conditionnement positive, adaptée pour promouvoir certaines caractéristiques ou aspects dans le contenu généré. |
 | `negative`    | `CONDITIONING` | La sortie de conditionnement négative, adaptée pour réduire certaines caractéristiques ou aspects dans le contenu généré. |

@@ -1,13 +1,13 @@
 The `BasicScheduler` node is designed to compute a sequence of sigma values for diffusion models based on the provided scheduler, model, and denoising parameters. It dynamically adjusts the total number of steps based on the denoise factor to fine-tune the diffusion process, providing precise "recipes" for different stages in advanced sampling processes that require fine control (such as multi-stage sampling).
 
-## Input Parameters
+## Inputs
 
-| Parameter   | Data Type     | Input Type | Default | Range    | Metaphor Description           | Technical Purpose            |
-| ----------- | ------------- | ---------- | ------- | -------- | ------------------------------ | ---------------------------- |
-| `model`     | MODEL         | Input      | -       | -        | **Canvas Type**: Different canvas materials need different paint formulas | Diffusion model object, determines sigma calculation basis |
-| `scheduler` | COMBO[STRING] | Widget     | -       | 9 options | **Mixing Technique**: Choose how paint concentration changes    | Scheduling algorithm, controls noise decay mode              |
-| `steps`     | INT           | Widget     | 20      | 1-10000  | **Mixing Count**: 20 mixes vs 50 mixes precision difference   | Sampling steps, affects generation quality and speed        |
-| `denoise`   | FLOAT         | Widget     | 1.0     | 0.0-1.0  | **Creation Intensity**: Control level from fine-tuning to repainting | Denoising strength, supports partial repainting scenarios   |
+| Parameter   | Data Type     | Input Type | Default | Range     | Metaphor Description           | Technical Purpose            |
+| ----------- | ------------- | ---------- | ------- | --------- | ------------------------------ | ---------------------------- |
+| `model`     | MODEL         | Input      | -       | -         | **Canvas Type**: Different canvas materials need different paint formulas | Diffusion model object, determines sigma calculation basis |
+| `scheduler` | COMBO[STRING] | Widget     | -       | 9 options | **Mixing Technique**: Choose how paint concentration changes | Scheduling algorithm, controls noise decay mode |
+| `steps`     | INT           | Widget     | 20      | 1-10000   | **Mixing Count**: 20 mixes vs 50 mixes precision difference | Sampling steps, affects generation quality and speed |
+| `denoise`   | FLOAT         | Widget     | 1.0     | 0.0-1.0   | **Creation Intensity**: Control level from fine-tuning to repainting | Denoising strength, supports partial repainting scenarios |
 
 ### Scheduler Types
 
@@ -25,18 +25,18 @@ Based on source code `comfy.samplers.SCHEDULER_NAMES`, supports the following 9 
 | **linear_quadratic** | Linear quadratic     | Complex scenario optimization| Quadratic function decay     |
 | **kl_optimal**       | KL optimal           | Theoretical optimization     | KL divergence optimized decay|
 
-## Output Results
+## Outputs
 
 | Parameter | Data Type | Output Type | Metaphor Description   | Technical Meaning                |
 | --------- | --------- | ----------- | ---------------------- | -------------------------------- |
 | `sigmas`  | SIGMAS    | Output      | **Paint Recipe Chart**: Detailed paint concentration list for step-by-step use | Noise level sequence, guides diffusion model denoising process |
-
 
 ## Node Role: Artist's Color Mixing Assistant
 
 Imagine you are an artist creating a clear image from a chaotic mixture of paint (noise). `BasicScheduler` acts like your **professional color mixing assistant**, whose job is to prepare a series of precise paint concentration recipes:
 
 ### Workflow
+
 - **Step 1**: Use 90% concentration paint (high noise level)
 - **Step 2**: Use 80% concentration paint  
 - **Step 3**: Use 70% concentration paint
@@ -46,18 +46,22 @@ Imagine you are an artist creating a clear image from a chaotic mixture of paint
 ### Color Assistant's Special Skills
 
 **Different mixing methods (scheduler)**:
+
 - **"karras" mixing method**: Paint concentration changes very smoothly, like professional artist's gradient technique
 - **"exponential" mixing method**: Paint concentration decreases rapidly, suitable for quick creation
 - **"linear" mixing method**: Paint concentration decreases uniformly, stable and controllable
 
 **Fine control (steps)**:
+
 - **20 mixes**: Quick painting, efficiency priority
 - **50 mixes**: Fine painting, quality priority
 
 **Creation intensity (denoise)**:
+
 - **1.0 = Complete new creation**: Start completely from blank canvas
 - **0.5 = Half transformation**: Keep half of original painting, transform half
 - **0.2 = Fine adjustment**: Only make subtle adjustments to original painting
 
 ### Collaboration with Other Nodes
+
 `BasicScheduler` (Color Assistant) → Prepare Recipe → `SamplerCustom` (Artist) → Actual Painting → Completed Work

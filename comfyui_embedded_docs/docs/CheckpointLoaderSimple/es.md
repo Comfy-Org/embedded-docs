@@ -6,13 +6,13 @@ Este nodo detecta automáticamente todos los archivos de modelos en la carpeta `
 2. **Gestión de archivos**: Coloca los archivos de modelos en la carpeta `ComfyUI/models/checkpoints`, o configura otras rutas a través de extra_model_paths.yaml
 3. **Actualización de interfaz**: Si se agregan nuevos archivos de modelos mientras ComfyUI está ejecutándose, necesitas actualizar el navegador (Ctrl+R) para ver los nuevos archivos en la lista desplegable
 
-## Parámetros de Entrada
+## Entradas
 
 | Nombre del Parámetro | Tipo de Datos | Método de Entrada | Valor Predeterminado | Rango de Valores | Descripción |
 |----------------------|---------------|-------------------|----------------------|------------------|-------------|
 | nombre_ckpt | STRING | Selección Desplegable | null | Todos los archivos de modelos en la carpeta checkpoints | Selecciona el nombre del archivo de checkpoint del modelo a cargar, que determina el modelo de IA utilizado para la generación posterior de imágenes |
 
-## Parámetros de Salida
+## Salidas
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |------------------|---------------|-------------|

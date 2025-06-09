@@ -1,6 +1,7 @@
 
 Este nodo está diseñado para generar datos de condicionamiento para tareas de generación de video, específicamente adaptado para su uso con modelos SVD_img2vid. Toma varias entradas, incluyendo imágenes iniciales, parámetros de video y un modelo VAE para producir datos de condicionamiento que pueden ser utilizados para guiar la generación de fotogramas de video.
-## Input types (Tipos de entrada)
+
+## Entradas
 
 | Parameter             | Comfy dtype        | Description (Descripción) |
 |----------------------|--------------------|-------------|
@@ -14,7 +15,7 @@ Este nodo está diseñado para generar datos de condicionamiento para tareas de 
 | `fps`                 | `INT`              | La tasa de fotogramas por segundo (fps) para el video, influyendo en la suavidad y realismo del video generado. |
 | `augmentation_level`  | `FLOAT`            | Un parámetro que controla el nivel de aumento aplicado a la imagen inicial, afectando la diversidad y variabilidad de los fotogramas de video generados. |
 
-## Output types (Tipos de salida)
+## Salidas
 
 | Parameter     | Comfy dtype        | Description (Descripción) |
 |---------------|--------------------|-------------|

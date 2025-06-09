@@ -1,6 +1,6 @@
-Le nœud GLIGENTextBoxApply est conçu pour intégrer le conditionnement basé sur le texte dans l'entrée d'un modèle génératif, en appliquant spécifiquement les paramètres de la boîte de texte et en les encodant à l'aide d'un modèle CLIP. Ce processus enrichit le conditionnement avec des informations spatiales et textuelles, facilitant une génération plus précise et contextuellement consciente.
+Le nœud `GLIGENTextBoxApply` est conçu pour intégrer le conditionnement basé sur le texte dans l'entrée d'un modèle génératif, en appliquant spécifiquement les paramètres de la boîte de texte et en les encodant à l'aide d'un modèle CLIP. Ce processus enrichit le conditionnement avec des informations spatiales et textuelles, facilitant une génération plus précise et contextuellement consciente.
 
-## Types d'entrée
+## Entrées
 
 | Paramètre            | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
@@ -13,7 +13,7 @@ Le nœud GLIGENTextBoxApply est conçu pour intégrer le conditionnement basé s
 | `x`                  | `INT`              | La coordonnée x du coin supérieur gauche de la boîte de texte dans l'image générée. Elle spécifie la position horizontale de la boîte de texte. |
 | `y`                  | `INT`              | La coordonnée y du coin supérieur gauche de la boîte de texte dans l'image générée. Elle spécifie la position verticale de la boîte de texte. |
 
-## Types de sortie
+## Sorties
 
 | Paramètre            | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
