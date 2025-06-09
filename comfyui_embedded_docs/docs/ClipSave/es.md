@@ -1,12 +1,31 @@
-El nodo Guardar CLIP está diseñado para guardar modelos CLIP junto con información adicional como prompts y metadatos extra en PNG. Este nodo encapsula la funcionalidad para serializar y almacenar el estado del modelo, facilitando la preservación y el intercambio de configuraciones de modelos y sus prompts creativos asociados.
+El nodo `Guardar CLIP` está diseñado para guardar modelos de codificador de texto CLIP en formato SafeTensors. Este nodo forma parte de flujos de trabajo avanzados de fusión de modelos y se utiliza típicamente en conjunto con nodos como `CLIPMergeSimple` y `CLIPMergeAdd`. Los archivos guardados utilizan el formato SafeTensors para garantizar la seguridad y compatibilidad.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Descripción |
-|-----------|-------------|-------------|
-| `clip`    | CLIP      | El modelo CLIP que se va a guardar. Este parámetro es crucial ya que representa el modelo cuyo estado se va a serializar y almacenar. |
-| `filename_prefix` | STRING   | Un prefijo para el nombre del archivo bajo el cual se guardará el modelo y su información adicional. Este parámetro permite un almacenamiento organizado y una fácil recuperación de los modelos guardados. |
+| Parámetro | Tipo de Dato | Requerido | Valor Predeterminado | Descripción |
+|-----------|--------------|-----------|---------------------|-------------|
+| clip | CLIP | Sí | - | El modelo CLIP que se va a guardar |
+| prefijo_nombre_archivo | STRING | Sí | "clip/ComfyUI" | La ruta del prefijo para el archivo guardado |
+| prompt | PROMPT | Oculto | - | Información del prompt del flujo de trabajo (para metadatos) |
+| extra_pnginfo | EXTRA_PNGINFO | Oculto | - | Información adicional de PNG (para metadatos) |
 
 ## Salidas
 
-El nodo no tiene salidas.
+Este nodo no tiene tipos de salida definidos. Guarda los archivos procesados en la carpeta `ComfyUI/output/`.
+
+### Estrategia de Guardado Múltiple
+
+El nodo guarda diferentes componentes según el tipo de modelo CLIP:
+
+| Tipo de Prefijo | Sufijo del Archivo | Descripción |
+|-----------------|-------------------|-------------|
+| `clip_l.` | `_clip_l` | Codificador de texto CLIP-L |
+| `clip_g.` | `_clip_g` | Codificador de texto CLIP-G |
+| Prefijo vacío | Sin sufijo | Otros componentes CLIP |
+
+## Notas de Uso
+
+1. **Ubicación de Archivos**: Todos los archivos se guardan en el directorio `ComfyUI/output/`
+2. **Formato de Archivo**: Los modelos se guardan en formato SafeTensors para seguridad
+3. **Metadatos**: Incluye información del flujo de trabajo y metadatos PNG si están disponibles
+4. **Convención de Nombres**: Utiliza el prefijo especificado más los sufijos apropiados según el tipo de modelo
