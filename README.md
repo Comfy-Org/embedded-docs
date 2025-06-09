@@ -52,6 +52,9 @@ To ensure minimal consistency across nodes documentation, it is recommended to f
 # Install markdownlint-cli
 npm install -g markdownlint-cli
 
-# Fix linting issues in markdown files
+# Fix linting issues in markdown files, using shell script (Linux)
+bash fix_markdown.sh
+
+# Or fix linting issues in markdown files, using powershell script (Windows)
 powershell -ExecutionPolicy Bypass -File .\fix_markdown.ps1
 ```
