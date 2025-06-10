@@ -1,18 +1,49 @@
-Le nœud CLIPTextEncode est conçu pour encoder les entrées textuelles à l'aide d'un modèle CLIP, transformant le texte en une forme utilisable pour le conditionnement dans les tâches génératives. Il simplifie la complexité de la tokenisation et de l'encodage du texte, offrant une interface simplifiée pour générer des vecteurs de conditionnement basés sur le texte.
+`CLIP Text Encode (Prompt)` agit comme un traducteur, convertissant vos descriptions textuelles créatives en un "langage" spécial que l'IA peut comprendre, aidant ainsi l'IA à interpréter précisément le type d'image que vous souhaitez créer.
 
-En plus des invites textuelles normales, vous pouvez également utiliser des modèles d'incorporation. Par exemple, si vous ajoutez un modèle d'incorporation dans le répertoire `ComfyUI/models/embeddings`, vous pouvez utiliser ce modèle d'incorporation dans l'invite.
+## Principe de Fonctionnement
 
-Par exemple, si le nom du modèle correspondant est `EasyNegative`, vous pouvez utiliser `embedding:EasyNegative,` dans l'invite pour utiliser ce modèle correspondant.
+Imaginez que vous communiquez avec un artiste étranger - vous avez besoin d'un traducteur pour transmettre précisément l'œuvre que vous désirez. Ce nœud agit comme ce traducteur, utilisant le modèle CLIP (un modèle d'IA entraîné sur de vastes quantités de paires image-texte) pour comprendre vos descriptions textuelles et les convertir en "instructions" que le modèle d'art IA peut comprendre.
 
 ## Entrées
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `text`    | `STRING`    | Le paramètre 'text' est l'entrée textuelle qui sera encodée. Il joue un rôle crucial dans la détermination du vecteur de conditionnement de sortie, car il est la source principale d'information pour le processus d'encodage. |
-| `clip`    | CLIP      | Le paramètre 'clip' représente le modèle CLIP utilisé pour la tokenisation et l'encodage du texte. Il est essentiel pour convertir l'entrée textuelle en un vecteur de conditionnement, influençant la qualité et la pertinence de la sortie générée. |
+| Paramètre | Type de Donnée | Méthode d'Entrée | Valeur par Défaut | Plage | Description |
+|-----------|----------------|------------------|-------------------|--------|-------------|
+| text | STRING | Saisie de texte | Vide | Tout texte | Comme des instructions détaillées à un artiste, entrez ici votre description d'image. Supporte le texte multiligne pour des descriptions détaillées. |
+| clip | CLIP | Sélection de modèle | Aucun | Modèles CLIP chargés | Comme choisir un traducteur spécifique, différents modèles CLIP sont comme différents traducteurs avec des compréhensions légèrement différentes des styles artistiques. |
 
 ## Sorties
 
-| Paramètre | Type de Donnée | Description |
-|-----------|--------------|-------------|
-| `CONDITIONING` | CONDITIONING | La sortie 'conditioning' est une représentation vectorielle du texte d'entrée, encodée par le modèle CLIP. Elle sert de composant crucial pour guider les modèles génératifs dans la production de sorties pertinentes et cohérentes. |
+| Nom de Sortie | Type de Donnée | Description |
+|---------------|----------------|-------------|
+| CONDITIONNEMENT | CONDITIONING | Ce sont les "instructions de peinture" traduites contenant des directives créatives détaillées que le modèle d'IA peut comprendre. Ces instructions indiquent au modèle d'IA comment créer une image correspondant à votre description. |
+
+## Conseils d'Utilisation
+
+1. **Utilisation Basique des Prompts Textuels**
+   - Écrivez des descriptions détaillées comme si vous rédigiez un court essai
+   - Des descriptions plus spécifiques mènent à des résultats plus précis
+   - Utilisez des virgules anglaises pour séparer différents éléments descriptifs
+
+2. **Fonction Spéciale : Utilisation des Modèles d'Embedding**
+   - Les modèles d'embedding sont comme des packages de styles artistiques préréglés qui peuvent rapidement appliquer des effets artistiques spécifiques
+   - Supporte actuellement les formats de fichiers .safetensors, .pt et .bin, et vous n'avez pas nécessairement besoin d'utiliser le nom complet du modèle
+   - Comment utiliser :
+     1. Placez le fichier du modèle d'embedding (au format .pt) dans le dossier `ComfyUI/models/embeddings`
+     2. Utilisez `embedding:nom_du_modèle` dans votre texte
+     Exemple : Si vous avez un modèle nommé `EasyNegative.pt`, vous pouvez l'utiliser ainsi :
+
+     ```
+     a beautiful landscape, embedding:EasyNegative, high quality
+     ```
+
+3. **Ajustement des Poids des Prompts**
+   - Utilisez des parenthèses pour ajuster l'importance de certaines descriptions
+   - Par exemple : `(beautiful:1.2)` rendra la caractéristique "beautiful" plus prononcée
+   - Les parenthèses simples `()` ont un poids par défaut de 1.1
+   - Utilisez les raccourcis clavier `ctrl + flèches haut/bas` pour ajuster rapidement les poids
+   - La taille des pas d'ajustement des poids peut être modifiée dans les paramètres
+
+4. **Notes Importantes**
+   - Assurez-vous que le modèle CLIP est correctement chargé
+   - Utilisez des descriptions textuelles positives et claires
+   - Lors de l'utilisation de modèles d'embedding, assurez-vous que le nom du fichier est correct et compatible avec l'architecture de votre modèle principal actuel
