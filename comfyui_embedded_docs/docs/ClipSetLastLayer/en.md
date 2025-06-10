@@ -1,14 +1,33 @@
-This node is designed to modify the behavior of a CLIP model by setting a specific layer as the last one to be executed. It allows for the customization of the depth of processing within the CLIP model, potentially affecting the model's output by limiting the amount of information processed.
+`CLIP Set Last Layer` is a core node in ComfyUI for controlling the processing depth of CLIP models. It allows users to precisely control where the CLIP text encoder stops processing, affecting both the depth of text understanding and the style of generated images.
+
+Imagine the CLIP model as a 24-layer intelligent brain:
+
+- Shallow layers (1-8): Recognize basic letters and words
+- Middle layers (9-16): Understand grammar and sentence structure
+- Deep layers (17-24): Grasp abstract concepts and complex semantics
+
+`CLIP Set Last Layer` works like a **"thinking depth controller"**:
+
+-1: Use all 24 layers (complete understanding)
+-2: Stop at layer 23 (slightly simplified)
+-12: Stop at layer 13 (medium understanding)
+-24: Use only layer 1 (basic understanding)
 
 ## Inputs
 
-| Parameter            | Data Type | Description |
-|----------------------|-----------|-------------|
-| `clip`               | `CLIP`    | The CLIP model to be modified. This parameter allows the node to directly interact with and alter the structure of the CLIP model. |
-| `stop_at_clip_layer` | `INT`     | Specifies the layer at which the CLIP model should stop processing. This allows for control over the depth of computation and can be used to adjust the model's behavior or performance. |
+| Parameter | Data Type | Default | Range | Description |
+|-----------|-----------|---------|--------|-------------|
+| `clip` | CLIP | - | - | The CLIP model to be modified |
+| `stop_at_clip_layer` | INT | -1 | -24 to -1 | Specifies which layer to stop at, -1 uses all layers, -24 uses only the first layer |
 
 ## Outputs
 
-| Parameter | Data Type   | Description |
-|-----------|-------------|-------------|
-| `clip`    | CLIP      | The modified CLIP model with the specified layer set as the last one. This output enables further use or analysis of the adjusted model. |
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| clip | CLIP | The modified CLIP model with the specified layer set as the last one |
+
+## Why Set the Last Layer
+
+- **Performance Optimization**: Like not needing a PhD to understand simple sentences, sometimes shallow understanding is enough and faster
+- **Style Control**: Different levels of understanding produce different artistic styles
+- **Compatibility**: Some models might perform better at specific layers
