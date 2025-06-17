@@ -18,4 +18,4 @@ Ce nœud est conçu pour encoder le texte d'entrée en utilisant un modèle CLIP
 
 | Paramètre | Data Type | Description |
 |-----------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | Contient le texte encodé et les informations conditionnelles nécessaires à la génération d'images. |
+| `ACONDICIONAMIENTO` | CONDITIONING | Contient le texte encodé et les informations conditionnelles nécessaires à la génération d'images. |
