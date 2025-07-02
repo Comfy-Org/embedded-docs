@@ -1,14 +1,27 @@
-The CLIPVisionEncode node is designed to encode images using a CLIP vision model, transforming visual input into a format suitable for further processing or analysis. This node abstracts the complexity of image encoding, offering a streamlined interface for converting images into encoded representations.
+The `CLIP Vision Encode` node is an image encoding node in ComfyUI, used to convert input images into visual feature vectors through the CLIP Vision model. This node is an important bridge connecting image and text understanding, and is widely used in various AI image generation and processing workflows.
+
+**Node Functionality**
+
+- **Image feature extraction**: Converts input images into high-dimensional feature vectors
+- **Multimodal bridging**: Provides a foundation for joint processing of images and text
+- **Conditional generation**: Provides visual conditions for image-based conditional generation
 
 ## Inputs
 
-| Parameter            | Comfy dtype          | Description |
-|----------------------|-----------------------|-------------|
-| `clip_vision`        | `CLIP_VISION`        | The CLIP vision model used for encoding the image. It is crucial for the encoding process, as it determines the method and quality of the encoding. |
-| `image`              | `IMAGE`              | The image to be encoded. This input is essential for generating the encoded representation of the visual content. |
+| Parameter Name | Data Type    | Description                                                      |
+| -------------- | -----------  | --------------------------------------------------------------- |
+| `clip_vision`  | CLIP_VISION  | CLIP vision model, usually loaded via the CLIPVisionLoader node |
+| `image`        | IMAGE        | The input image to be encoded                                   |
+| `crop`         | Dropdown     | Image cropping method, options: center (center crop), none (no crop) |
 
 ## Outputs
 
-| Parameter             | Comfy dtype            | Description |
-|-----------------------|------------------------|-------------|
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT`  | The encoded representation of the input image, produced by the CLIP vision model. This output is suitable for further processing or analysis. |
+| Output Name         | Data Type           | Description                |
+| ------------------- | ------------------ | -------------------------- |
+| CLIP_VISION_OUTPUT  | CLIP_VISION_OUTPUT | Encoded visual features    |
+
+This output object contains:
+- `last_hidden_state`: The last hidden state
+- `image_embeds`: Image embedding vector
+- `penultimate_hidden_states`: The penultimate hidden state
+- `mm_projected`: Multimodal projection result (if available)

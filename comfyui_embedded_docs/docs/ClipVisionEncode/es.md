@@ -1,14 +1,27 @@
-El nodo CLIPVisionEncode está diseñado para codificar imágenes utilizando un modelo de visión CLIP, transformando la entrada visual en un formato adecuado para un procesamiento o análisis posterior. Este nodo abstrae la complejidad de la codificación de imágenes, ofreciendo una interfaz simplificada para convertir imágenes en representaciones codificadas.
+El nodo `CLIP Vision Encode` es un nodo de codificación de imágenes en ComfyUI, utilizado para convertir imágenes de entrada en vectores de características visuales mediante el modelo CLIP Vision. Este nodo es un puente importante que conecta la comprensión de imágenes y textos, y se utiliza ampliamente en varios flujos de trabajo de generación y procesamiento de imágenes con IA.
+
+**Funcionalidad del nodo**
+
+- **Extracción de características de imagen**: Convierte imágenes de entrada en vectores de características de alta dimensión
+- **Puente multimodal**: Proporciona una base para el procesamiento conjunto de imágenes y textos
+- **Generación condicional**: Proporciona condiciones visuales para la generación condicional basada en imágenes
 
 ## Entradas
 
-| Parámetro            | Tipo Comfy          | Descripción |
-|----------------------|---------------------|-------------|
-| `clip_vision`        | `CLIP_VISION`       | El modelo de visión CLIP utilizado para codificar la imagen. Es crucial para el proceso de codificación, ya que determina el método y la calidad de la codificación. |
-| `image`              | `IMAGE`             | La imagen que se va a codificar. Esta entrada es esencial para generar la representación codificada del contenido visual. |
+| Nombre del parámetro | Tipo de dato   | Descripción                                                      |
+| -------------------- | -------------  | --------------------------------------------------------------- |
+| `clip_vision`        | CLIP_VISION    | Modelo CLIP vision, normalmente cargado mediante el nodo CLIPVisionLoader |
+| `image`              | IMAGE          | La imagen de entrada a codificar                                 |
+| `crop`               | Dropdown       | Método de recorte de imagen, opciones: center (recorte centrado), none (sin recorte) |
 
 ## Salidas
 
-| Parámetro             | Tipo Comfy            | Descripción |
-|-----------------------|-----------------------|-------------|
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT`  | La representación codificada de la imagen de entrada, producida por el modelo de visión CLIP. Esta salida es adecuada para un procesamiento o análisis posterior. |
+| Nombre de salida     | Tipo de dato         | Descripción                |
+| -------------------- | ------------------- | -------------------------- |
+| SALIDA_CLIP_VISION   | CLIP_VISION_OUTPUT  | Características visuales codificadas    |
+
+Este objeto de salida contiene:
+- `last_hidden_state`: El último estado oculto
+- `image_embeds`: Vector de incrustación de la imagen
+- `penultimate_hidden_states`: El penúltimo estado oculto
+- `mm_projected`: Resultado de proyección multimodal (si está disponible)
