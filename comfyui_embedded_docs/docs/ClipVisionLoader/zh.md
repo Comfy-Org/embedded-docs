@@ -1,17 +1,13 @@
-该节点会检测位于 `ComfyUI/models/clip_vision` 文件夹下的模型，同时也会读取你在 extra_model_paths.yaml 文件中配置的额外路径的模型，有时你可能需要 **刷新 ComfyUI 界面** 才能让它读取到对应文件夹下的模型文件
-
-CLIP视觉模型加载节点旨在从指定路径加载CLIP视觉模型。它抽象了定位和初始化CLIP视觉模型的复杂性，使它们可以立即用于进一步的处理或推理任务。
+该节点会检测位于 `ComfyUI/models/clip_vision` 文件夹下的模型，同时也会读取在 `extra_model_paths.yaml` 文件中配置的额外路径的模型，如果你的模型是在 ComfyUI 启动后才添加的，请 **刷新 ComfyUI 界面** 保证前端能够获取到最新的模型文件列表
 
 ## 输入
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `clip_name` | COMBO[STRING] | 指定要加载的CLIP视觉模型的名称。此名称用于在预定义的目录结构中定位模型文件。 |
+| `clip名称` | COMBO[STRING] | 会获取`ComfyUI/models/clip_vision` 文件夹下受支持格式的模型文件列表 |
 
 ## 输出
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `clip_vision` | CLIP_VISION | 加载的CLIP视觉模型，准备用于编码图像或执行其他视觉相关任务。 |
-
----
+| `CLIP视觉` | CLIP_VISION | 加载的CLIP视觉模型，准备用于编码图像或执行其他视觉相关任务。 |

@@ -1,15 +1,13 @@
-Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/clip_vision`, et lira également les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
-
-Le nœud CLIPVisionLoader est conçu pour charger les modèles CLIP Vision à partir de chemins spécifiés. Il simplifie la complexité de localisation et d'initialisation des modèles CLIP Vision, les rendant facilement disponibles pour des tâches de traitement ou d'inférence ultérieures.
+Ce nœud détecte automatiquement les modèles situés dans le dossier `ComfyUI/models/clip_vision`, ainsi que tout chemin supplémentaire configuré dans le fichier `extra_model_paths.yaml`. Si vous ajoutez des modèles après avoir démarré ComfyUI, veuillez **rafraîchir l'interface ComfyUI** pour vous assurer que la liste des fichiers de modèles est à jour.
 
 ## Entrées
 
-| Champ       | Data Type | Description                                                                       |
-|-------------|-------------|-----------------------------------------------------------------------------------|
-| `clip_name` | COMBO[STRING] | Spécifie le nom du modèle CLIP Vision à charger, utilisé pour localiser le fichier du modèle dans une structure de répertoire prédéfinie. |
+| Champ      | Data Type      | Description |
+|------------|---------------|-------------|
+| nom_clip   | COMBO[STRING]  | Affiche tous les fichiers de modèles compatibles dans le dossier `ComfyUI/models/clip_vision`. |
 
 ## Sorties
 
-| Champ          | Comfy dtype     | Description                                                              |
-|----------------|-----------------|--------------------------------------------------------------------------|
-| `clip_vision`  | `CLIP_VISION`   | Le modèle CLIP Vision chargé, prêt à être utilisé pour encoder des images ou effectuer d'autres tâches liées à la vision. |
+| Champ        | Data Type    | Description |
+|--------------|--------------|-------------|
+| clip_vision  | CLIP_VISION  | Modèle CLIP Vision chargé, prêt à encoder des images ou à effectuer d'autres tâches liées à la vision. |
