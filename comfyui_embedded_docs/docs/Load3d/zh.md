@@ -6,6 +6,8 @@ Load3D 节点是 ComfyUI 中用于加载和处理 3D 模型文件的核心节点
 **支持格式**
 目前该节点支持多种 3D 文件格式，包括 `.gltf`、`.glb`、`.obj`、`.fbx` 和 `.stl`。
 
+
+![Load 3D 节点UI](./asset/load3d_ui.jpg)
 ## 输入
 
 | 参数名       | 类型       | 描述                     | 默认值 | 范围         |
