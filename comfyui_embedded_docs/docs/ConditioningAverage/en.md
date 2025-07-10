@@ -1,15 +1,26 @@
-The ConditioningAverage node is designed to blend two sets of conditioning data, applying a weighted average based on a specified strength. This process allows for the dynamic adjustment of conditioning influence, facilitating the fine-tuning of generated content or features.
+The `ConditioningAverage` node is used to blend two different sets of conditioning (such as text prompts) according to a specified weight, generating a new conditioning vector that lies between the two. By adjusting the weight parameter, you can flexibly control the influence of each conditioning on the final result. This is especially suitable for prompt interpolation, style fusion, and other advanced use cases.
+
+As shown below, by adjusting the strength of `conditioning_to`, you can output a result between the two conditionings.
+
+![example](./asset/example.webp)
 
 ## Inputs
 
-| Parameter             | Comfy dtype        | Description |
-|----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | Represents the primary set of conditioning data to which the blending will be applied. It serves as the base for the weighted average operation. |
-| `conditioning_from`   | `CONDITIONING`     | Denotes the secondary set of conditioning data that will be blended into the primary set. This data influences the final output based on the specified strength. |
-| `conditioning_to_strength` | `FLOAT` | A scalar value that determines the strength of the blend between the primary and secondary conditioning data. It directly influences the balance of the weighted average. |
+| Parameter               | Comfy dtype    | Description |
+|------------------------|---------------|-------------|
+| `conditioning_to`      | `CONDITIONING`| The target conditioning vector, serving as the main base for the weighted average. |
+| `conditioning_from`    | `CONDITIONING`| The source conditioning vector, which will be blended into the target according to a certain weight. |
+| `conditioning_to_strength` | `FLOAT`    | The strength of the target conditioning, range 0.0-1.0, default 1.0, step 0.01. |
 
 ## Outputs
 
-| Parameter            | Comfy dtype        | Description |
-|----------------------|--------------------|-------------|
-| `conditioning`        | `CONDITIONING`     | The result of blending the primary and secondary conditioning data, producing a new set of conditioning that reflects the weighted average. |
+| Parameter        | Comfy dtype    | Description |
+|------------------|---------------|-------------|
+| `conditioning`   | `CONDITIONING`| The resulting conditioning vector after blending, reflecting the weighted average. |
+
+## Typical Use Cases
+
+- **Prompt Interpolation:** Smoothly transition between two different text prompts, generating content with intermediate style or semantics.
+- **Style Fusion:** Combine different artistic styles or semantic conditions to create novel effects.
+- **Strength Adjustment:** Precisely control the influence of a particular conditioning on the result by adjusting the weight.
+- **Creative Exploration:** Explore diverse generative effects by mixing different prompts.
