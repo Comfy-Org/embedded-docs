@@ -9,6 +9,7 @@ SDXL Refiner est un modèle de raffinement spécialisé qui se concentre sur l'a
 3. Enfin, il se concentre sur le traitement des détails d'image haute fréquence pour améliorer la qualité globale
 
 Le Refiner peut être utilisé de deux manières :
+
 - Comme une étape de raffinement autonome pour le post-traitement des images générées par le modèle de base
 - Comme partie d'un système d'intégration expert, prenant le relais du traitement pendant la phase de faible bruit de la génération
 

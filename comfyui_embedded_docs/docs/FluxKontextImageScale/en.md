@@ -1,16 +1,19 @@
 This node scales the input image to an optimal size used during Flux Kontext model training using the Lanczos algorithm, based on the input image's aspect ratio. This node is particularly useful when inputting large-sized images, as oversized inputs may lead to degraded model output quality or issues such as multiple subjects appearing in the output.
 
 ## Inputs
+
 | Parameter Name | Data Type | Input Type | Default Value | Value Range | Description |
 |----------------|-----------|------------|---------------|-------------|-------------|
 | `image` | IMAGE | Required | - | - | Input image to be resized |
 
 ## Outputs
+
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | Resized image |
 
 ## Preset Size List
+
 The following is a list of standard sizes used during model training. The node will select the size closest to the input image's aspect ratio:
 
 | Width | Height | Aspect Ratio |

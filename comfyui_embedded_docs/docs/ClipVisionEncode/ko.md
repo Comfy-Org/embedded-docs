@@ -21,6 +21,7 @@
 | CLIP_VISION 출력   | CLIP_VISION_OUTPUT | 인코딩된 시각적 특징          |
 
 이 출력 객체에는 다음이 포함됩니다:
+
 - `last_hidden_state`: 마지막 히든 상태
 - `image_embeds`: 이미지 임베딩 벡터
 - `penultimate_hidden_states`: 마지막에서 두 번째 히든 상태

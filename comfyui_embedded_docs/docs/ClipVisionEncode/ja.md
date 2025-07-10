@@ -21,6 +21,7 @@
 | CLIP_VISION_OUTPUT  | CLIP_VISION_OUTPUT | エンコードされた視覚特徴      |
 
 この出力オブジェクトには以下が含まれます：
+
 - `last_hidden_state`: 最終隠れ状態
 - `image_embeds`: 画像埋め込みベクトル
 - `penultimate_hidden_states`: 最後から2番目の隠れ状態

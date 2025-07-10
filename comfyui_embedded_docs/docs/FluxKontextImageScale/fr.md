@@ -1,16 +1,19 @@
 Ce nœud redimensionne l'image d'entrée à une taille optimale utilisée lors de l'entraînement du modèle Flux Kontext en utilisant l'algorithme Lanczos, basé sur le rapport d'aspect de l'image d'entrée. Ce nœud est particulièrement utile lors de l'entrée d'images de grande taille, car les entrées surdimensionnées peuvent entraîner une dégradation de la qualité de sortie du modèle ou des problèmes tels que l'apparition de plusieurs sujets dans la sortie.
 
 ## Entrées
+
 | Nom du Paramètre | Type de Données | Type d'Entrée | Valeur par Défaut | Plage de Valeurs | Description |
 |-----------------|-----------------|----------------|-------------------|------------------|-------------|
 | `image` | IMAGE | Requis | - | - | Image d'entrée à redimensionner |
 
 ## Sorties
+
 | Nom de Sortie | Type de Données | Description |
 |---------------|-----------------|-------------|
 | `image` | IMAGE | Image redimensionnée |
 
 ## Liste des Tailles Prédéfinies
+
 Voici une liste des tailles standard utilisées pendant l'entraînement du modèle. Le nœud sélectionnera la taille la plus proche du rapport d'aspect de l'image d'entrée :
 
 | Largeur | Hauteur | Rapport d'Aspect |
@@ -31,4 +34,4 @@ Voici une liste des tailles standard utilisées pendant l'entraînement du modè
 | 1392    | 752     | 1.851           |
 | 1456    | 720     | 2.022           |
 | 1504    | 688     | 2.186           |
-| 1568    | 672     | 2.333           | 
+| 1568    | 672     | 2.333           |

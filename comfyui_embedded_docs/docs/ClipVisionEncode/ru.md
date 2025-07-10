@@ -21,6 +21,7 @@
 | CLIP_VISION_OUTPUT   | CLIP_VISION_OUTPUT | Закодированные визуальные признаки |
 
 Этот объект выхода содержит:
+
 - `last_hidden_state`: Последнее скрытое состояние
 - `image_embeds`: Вектор эмбеддинга изображения
 - `penultimate_hidden_states`: Предпоследнее скрытое состояние
