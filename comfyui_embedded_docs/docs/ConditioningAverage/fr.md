@@ -1,15 +1,31 @@
-Le nœud ConditioningAverage est conçu pour mélanger deux ensembles de données de conditionnement en appliquant une moyenne pondérée basée sur une force spécifiée. Ce processus permet un ajustement dynamique de l'influence du conditionnement, facilitant le réglage fin du contenu ou des caractéristiques générés.
+Le nœud `Moyenne de Conditionnement` est utilisé pour mélanger deux ensembles différents de conditionnements (comme des invites textuelles) selon un poids spécifié, générant un nouveau conditionnement situé entre les deux. En ajustant le paramètre de poids, vous pouvez contrôler de manière flexible l'influence de chaque conditionnement sur le résultat final. Il est particulièrement utile pour l'interpolation d'invites, la fusion de styles et d'autres cas avancés.
+
+Comme illustré ci-dessous, en ajustant la force de `conditionnement_à`, vous pouvez obtenir un résultat intermédiaire entre les deux conditionnements.
+
+![example](./asset/example.webp)
+
+**Explication de l'exemple**
+`conditioning_to` — `conditionnement_à`
+`conditioning_from` — `conditionnement_de`
+`conditioning_to_strength` — `force_conditionnement_à`
 
 ## Entrées
 
-| Paramètre             | Comfy dtype        | Description |
-|----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | Représente l'ensemble principal de données de conditionnement auquel le mélange sera appliqué. Il sert de base pour l'opération de moyenne pondérée. |
-| `conditioning_from`   | `CONDITIONING`     | Désigne l'ensemble secondaire de données de conditionnement qui sera mélangé à l'ensemble principal. Ces données influencent le résultat final en fonction de la force spécifiée. |
-| `conditioning_to_strength` | `FLOAT` | Une valeur scalaire qui détermine la force du mélange entre les données de conditionnement principales et secondaires. Elle influence directement l'équilibre de la moyenne pondérée. |
+| Nom du paramètre         | Type de donnée      | Description |
+|-------------------------|---------------------|-------------|
+| `conditionnement_à`     | CONDITIONNEMENT     | Vecteur de conditionnement cible, servant de base principale pour la moyenne pondérée. |
+| `conditionnement_de`    | CONDITIONNEMENT     | Vecteur de conditionnement source, qui sera mélangé au vecteur cible selon le poids spécifié. |
+| `force_conditionnement_à` | FLOAT              | Poids du conditionnement cible, plage 0.0-1.0, par défaut 1.0, pas 0.01. |
 
 ## Sorties
 
-| Paramètre            | Comfy dtype        | Description |
-|----------------------|--------------------|-------------|
-| `conditioning`        | `CONDITIONING`     | Le résultat du mélange des données de conditionnement principales et secondaires, produisant un nouvel ensemble de conditionnement qui reflète la moyenne pondérée. |
+| Nom du paramètre         | Type de donnée      | Description |
+|-------------------------|---------------------|-------------|
+| `conditionnement`       | CONDITIONNEMENT     | Retourne le vecteur de conditionnement mélangé, reflétant le résultat de la moyenne pondérée. |
+
+## Cas d'utilisation typiques
+
+- **Interpolation d'invites** : Transition fluide entre deux invites textuelles différentes, générant un contenu de style ou de sens intermédiaire.
+- **Fusion de styles** : Combine différents styles artistiques ou conditions sémantiques pour créer de nouveaux effets.
+- **Ajustement de la force** : Contrôle précis de l'influence d'un conditionnement sur le résultat en ajustant le poids.
+- **Exploration créative** : Explorez divers effets génératifs en mélangeant différentes invites.
