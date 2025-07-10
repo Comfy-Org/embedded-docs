@@ -21,6 +21,7 @@ Le nœud `CLIP Vision Encode` dans ComfyUI est un nœud d'encodage d'image, util
 | SORTIE_CLIP_VISION    | CLIP_VISION_OUTPUT | Caractéristiques visuelles encodées |
 
 Cet objet de sortie contient :
+
 - `last_hidden_state` : Le dernier état caché
 - `image_embeds` : Vecteur d'intégration de l'image
 - `penultimate_hidden_states` : L'avant-dernier état caché

@@ -21,6 +21,7 @@ El nodo `CLIP Vision Encode` es un nodo de codificación de imágenes en ComfyUI
 | SALIDA_CLIP_VISION   | CLIP_VISION_OUTPUT  | Características visuales codificadas    |
 
 Este objeto de salida contiene:
+
 - `last_hidden_state`: El último estado oculto
 - `image_embeds`: Vector de incrustación de la imagen
 - `penultimate_hidden_states`: El penúltimo estado oculto
