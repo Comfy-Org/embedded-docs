@@ -9,6 +9,7 @@ SDXL Refiner es un modelo de refinamiento especializado que se centra en mejorar
 3. Finalmente, se centra en procesar detalles de imagen de alta frecuencia para mejorar la calidad general
 
 El Refiner se puede usar de dos maneras:
+
 - Como un paso de refinamiento independiente para el post-procesamiento de imágenes generadas por el modelo base
 - Como parte de un sistema de integración experto, tomando el control del procesamiento durante la fase de bajo ruido de la generación
 
