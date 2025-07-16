@@ -97,7 +97,6 @@ Le menu Modèle propose quelques fonctions liées au modèle
 
 1. **Direction haut (Up direction)** : détermine quel axe est la direction haut du modèle
 2. **Mode matériel (Material mode)** : basculer entre les modes de rendu du modèle - Original, Normal, Fil de fer, Dessin au trait
-3. **Télécharger Texture (Upload texture)** : permet d’ajouter des textures au modèle (exemple uniquement)
 
 #### Caméra (Camera)
 

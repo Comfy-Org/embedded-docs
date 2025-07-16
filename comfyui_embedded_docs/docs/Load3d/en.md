@@ -97,7 +97,6 @@ The Model menu provides some model-related functions
 
 1. **Up direction**: Determine which axis is the up direction for the model
 2. **Material mode**: Switch model rendering modes - Original, Normal, Wireframe, Lineart
-3. **Upload texture**: Allows adding textures to the model
 
 #### Camera
 

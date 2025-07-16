@@ -97,7 +97,6 @@ El menú Modelo proporciona algunas funciones relacionadas con el modelo
 
 1. **Dirección superior (Up direction)**: determina qué eje es la dirección superior del modelo
 2. **Modo de material (Material mode)**: cambiar modos de renderizado del modelo - Original, Normal, Malla, Dibujo lineal
-3. **Subir textura (Upload texture)**: permite añadir texturas al modelo (solo ejemplo)
 
 #### Cámara (Camera)
 

@@ -96,7 +96,6 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 1. **上方向(Up direction)**: 确定模型的哪个轴为上方向
 2. **渲染模式（Material mode）**: 模型渲染模式切换 原始（Original）、法线(Normal)、线框(Wireframe)、线稿(Lineart)
-3. **Upload texture**: 允许为模型增加材质（图中仅为示例）
 
 #### 摄像机（Camera）
 
