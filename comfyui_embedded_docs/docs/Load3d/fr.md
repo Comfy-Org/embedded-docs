@@ -36,6 +36,7 @@ Aperçu de toutes les sorties :
 ## Description de la zone Canevas (Canvas)
 
 La zone Canvas du nœud Load3D contient de nombreuses opérations de vue, notamment :
+
 - Paramètres d’aperçu (grille, couleur de fond, aperçu)
 - Contrôle de la caméra : contrôle du FOV, type de caméra
 - Intensité de l’éclairage global : ajuster l’intensité de la lumière
@@ -59,6 +60,7 @@ La zone Canvas du nœud Load3D contient de nombreuses opérations de vue, notamm
 </video>
 
 Opérations de contrôle de la vue :
+
 - Clic gauche + glisser : faire pivoter la vue
 - Clic droit + glisser : déplacer la vue
 - Molette de la souris ou clic central : zoom avant/arrière
@@ -69,6 +71,7 @@ Opérations de contrôle de la vue :
 ![Menu](./asset/menu.webp)
 
 Dans la zone d’aperçu, certains menus liés aux opérations de vue sont cachés dans le menu. Cliquez sur le bouton de menu pour développer les différents menus
+
 - 1. Scène (Scene) : comprend la grille de la fenêtre d’aperçu, la couleur de fond, les paramètres de la miniature
 - 2. Modèle (Model) : mode de rendu du modèle, matériaux de texture, réglage de la direction haut
 - 3. Caméra (Camera) : basculer entre la vue orthographique et la vue en perspective, et régler l’angle de perspective
@@ -80,6 +83,7 @@ Dans la zone d’aperçu, certains menus liés aux opérations de vue sont cach�
 ![scene menu](./asset/menu_scene.webp)
 
 Le menu Scène propose quelques fonctions de configuration de base de la scène
+
 1. Afficher/Masquer la grille
 2. Définir la couleur de fond
 3. Télécharger une image de fond
@@ -90,6 +94,7 @@ Le menu Scène propose quelques fonctions de configuration de base de la scène
 ![Menu_Scene](./asset/menu_model.webp)
 
 Le menu Modèle propose quelques fonctions liées au modèle
+
 1. **Direction haut (Up direction)** : détermine quel axe est la direction haut du modèle
 2. **Mode matériel (Material mode)** : basculer entre les modes de rendu du modèle - Original, Normal, Fil de fer, Dessin au trait
 3. **Télécharger Texture (Upload texture)** : permet d’ajouter des textures au modèle (exemple uniquement)
@@ -99,6 +104,7 @@ Le menu Modèle propose quelques fonctions liées au modèle
 ![menu_modelmenu_camera](./asset/menu_modelmenu_camera.webp)
 
 Ce menu permet de basculer entre la vue orthographique et la vue en perspective, et de régler l’angle de perspective
+
 1. **Caméra (Camera)** : basculer rapidement entre la vue orthographique et la vue en perspective
 2. **FOV** : ajuster l’angle FOV
 
@@ -122,5 +128,6 @@ Ce menu permet de convertir et d’exporter rapidement les formats de modèle
 </video>
 
 Le menu de droite a deux fonctions principales :
+
 1. **Réinitialiser le ratio de vue** : après avoir cliqué sur le bouton, la vue ajustera le ratio de la zone de rendu du canevas selon la largeur et la hauteur définies
 2. **Enregistrement vidéo** : permet d’enregistrer les opérations de vue 3D actuelles en vidéo, permet l’importation et peut être exporté comme `recording_video` vers les nœuds suivants

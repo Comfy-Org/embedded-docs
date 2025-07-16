@@ -36,6 +36,7 @@ All the outputs preview:
 ## Canvas Area Description
 
 The Load3D node's Canvas area contains numerous view operations, including:
+
 - Preview view settings (grid, background color, preview view)
 - Camera control: Control FOV, camera type
 - Global illumination intensity: Adjust lighting intensity
@@ -59,6 +60,7 @@ The Load3D node's Canvas area contains numerous view operations, including:
 </video>
 
 View control operations:
+
 - Left-click + drag: Rotate the view
 - Right-click + drag: Pan the view
 - Middle wheel scroll or middle-click + drag: Zoom in/out
@@ -69,6 +71,7 @@ View control operations:
 ![Menu](./asset/menu.webp)
 
 In the canvas, some settings are hidden in the menu. Click the menu button to expand different menus
+
 - 1. Scene: Contains preview window grid, background color, preview settings
 - 2. Model: Model rendering mode, texture materials, up direction settings
 - 3. Camera: Switch between orthographic and perspective views, and set the perspective angle size
@@ -80,6 +83,7 @@ In the canvas, some settings are hidden in the menu. Click the menu button to ex
 ![scene menu](./asset/menu_scene.webp)
 
 The Scene menu provides some basic scene setting functions
+
 1. Show/Hide grid
 2. Set background color
 3. Click to upload a background image
@@ -90,6 +94,7 @@ The Scene menu provides some basic scene setting functions
 ![Menu_Scene](./asset/menu_model.webp)
 
 The Model menu provides some model-related functions
+
 1. **Up direction**: Determine which axis is the up direction for the model
 2. **Material mode**: Switch model rendering modes - Original, Normal, Wireframe, Lineart
 3. **Upload texture**: Allows adding textures to the model
@@ -99,6 +104,7 @@ The Model menu provides some model-related functions
 ![menu_modelmenu_camera](./asset/menu_modelmenu_camera.webp)
 
 This menu provides switching between orthographic and perspective views, and perspective angle size settings
+
 1. **Camera**: Quickly switch between orthographic and orthographic views
 2. **FOV**: Adjust FOV angle
 
@@ -122,5 +128,6 @@ This menu provides the ability to quickly convert and export model formats
 </video>
 
 The right menu has two main functions:
+
 1. **Reset view ratio**: After clicking the button, the view will adjust the canvas rendering area ratio according to the set width and height
 2. **Video recording**: Allows you to record current 3D view operations as video, allows import, and can be output as `recording_video` to subsequent nodes

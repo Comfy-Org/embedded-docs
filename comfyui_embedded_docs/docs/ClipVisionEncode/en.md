@@ -21,6 +21,7 @@ The `CLIP Vision Encode` node is an image encoding node in ComfyUI, used to conv
 | CLIP_VISION_OUTPUT  | CLIP_VISION_OUTPUT | Encoded visual features    |
 
 This output object contains:
+
 - `last_hidden_state`: The last hidden state
 - `image_embeds`: Image embedding vector
 - `penultimate_hidden_states`: The penultimate hidden state

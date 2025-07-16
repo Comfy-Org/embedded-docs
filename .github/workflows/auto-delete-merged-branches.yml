@@ -1,0 +1,51 @@
+name: Auto Delete Merged Branches
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  delete-merged-branch:
+    runs-on: ubuntu-latest
+    # Only run if PR was merged (not just closed)
+    if: github.event.pull_request.merged == true
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Delete merged branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get the branch name that was merged
+          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+          
+          # Skip deletion for protected branches
+          PROTECTED_BRANCHES=("main" "master" "develop" "dev" "staging" "production")
+          
+          echo "Checking if branch '$BRANCH_NAME' should be deleted..."
+          
+          # Check if branch is in protected list
+          for protected in "${PROTECTED_BRANCHES[@]}"; do
+            if [[ "$BRANCH_NAME" == "$protected" ]]; then
+              echo "Branch '$BRANCH_NAME' is protected, skipping deletion"
+              exit 0
+            fi
+          done
+          
+          # Check if it's a fork (external contributor)
+          if [[ "${{ github.event.pull_request.head.repo.full_name }}" != "${{ github.repository }}" ]]; then
+            echo "This is a fork PR, cannot delete external branch"
+            exit 0
+          fi
+          
+          # Delete the branch using gh CLI
+          echo "Deleting branch '$BRANCH_NAME'..."
+          if gh api repos/${{ github.repository }}/git/refs/heads/$BRANCH_NAME --method DELETE; then
+            echo "✅ Successfully deleted branch '$BRANCH_NAME'"
+          else
+            echo "❌ Failed to delete branch '$BRANCH_NAME' (may already be deleted or protected)"
+          fi
