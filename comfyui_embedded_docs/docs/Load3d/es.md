@@ -36,6 +36,7 @@ Vista previa de todas las salidas:
 ## Descripción del área de lienzo (Canvas)
 
 El área Canvas del nodo Load3D contiene numerosas operaciones de vista, incluyendo:
+
 - Configuración de vista previa (cuadrícula, color de fondo, vista previa)
 - Control de cámara: controlar FOV, tipo de cámara
 - Intensidad de iluminación global: ajustar la intensidad de la luz
@@ -59,6 +60,7 @@ El área Canvas del nodo Load3D contiene numerosas operaciones de vista, incluye
 </video>
 
 Operaciones de control de vista:
+
 - Clic izquierdo + arrastrar: rotar la vista
 - Clic derecho + arrastrar: mover la vista
 - Rueda del ratón o clic central: acercar/alejar
@@ -69,6 +71,7 @@ Operaciones de control de vista:
 ![Menu](./asset/menu.webp)
 
 En el área de previsualización, algunos menús relacionados con operaciones de vista están ocultos en el menú. Haz clic en el botón de menú para expandir los diferentes menús
+
 - 1. Escena (Scene): incluye cuadrícula de la ventana de previsualización, color de fondo, configuración de miniatura
 - 2. Modelo (Model): modo de renderizado del modelo, materiales de textura, configuración de dirección superior
 - 3. Cámara (Camera): cambiar entre vista ortográfica y perspectiva, y ajustar el ángulo de perspectiva
@@ -80,6 +83,7 @@ En el área de previsualización, algunos menús relacionados con operaciones de
 ![scene menu](./asset/menu_scene.webp)
 
 El menú Escena proporciona algunas funciones básicas de configuración de la escena
+
 1. Mostrar/ocultar cuadrícula
 2. Establecer color de fondo
 3. Subir imagen de fondo
@@ -90,6 +94,7 @@ El menú Escena proporciona algunas funciones básicas de configuración de la e
 ![Menu_Scene](./asset/menu_model.webp)
 
 El menú Modelo proporciona algunas funciones relacionadas con el modelo
+
 1. **Dirección superior (Up direction)**: determina qué eje es la dirección superior del modelo
 2. **Modo de material (Material mode)**: cambiar modos de renderizado del modelo - Original, Normal, Malla, Dibujo lineal
 3. **Subir textura (Upload texture)**: permite añadir texturas al modelo (solo ejemplo)
@@ -99,6 +104,7 @@ El menú Modelo proporciona algunas funciones relacionadas con el modelo
 ![menu_modelmenu_camera](./asset/menu_modelmenu_camera.webp)
 
 Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el ángulo de perspectiva
+
 1. **Cámara (Camera)**: cambiar rápidamente entre vistas ortográfica y perspectiva
 2. **FOV**: ajustar el ángulo FOV
 
@@ -122,5 +128,6 @@ Este menú permite convertir y exportar rápidamente formatos de modelo
 </video>
 
 El menú derecho tiene dos funciones principales:
+
 1. **Restablecer proporción de vista**: al hacer clic en el botón, la vista ajustará la proporción del área de renderizado del lienzo según el ancho y alto establecidos
 2. **Grabación de video**: permite grabar las operaciones actuales de vista 3D como video, permite importar y puede ser salida como `recording_video` a nodos posteriores
