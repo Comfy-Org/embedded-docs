@@ -1,0 +1,144 @@
+# ComfyUI Node Documentation Multi-language Localization Project Rules
+
+## Project Overview
+You are assisting in a project dedicated to creating multi-language documentation for ComfyUI nodes.
+While maintaining professional explanations, metaphorical explanations are also needed to transform complex technical concepts into everyday life scenarios, ensuring non-technical users can easily understand node functionality.
+
+## Core Principles
+
+### User-Oriented
+- Assume readers are completely non-technical users
+- Use easy-to-understand everyday vocabulary, avoid technical terms
+- Transform abstract concepts into concrete daily operations
+- Explain functionality through "what it does" rather than "how it does it"
+
+### Metaphorical Explanation Strategy
+- Choose everyday life scenarios or craft processes similar to node functionality, preferably related to painting
+- Metaphors must accurately reflect the node's core functionality, avoid misleading analogies
+- Choose everyday scenarios familiar to ordinary people
+- Match metaphor complexity with node functionality
+- Avoid metaphors that might cause cultural misunderstandings
+
+## Documentation Structure Requirements
+
+When creating or editing ComfyUI node documentation, strictly follow this structure:
+
+### Required Sections
+1. **Function Description** - Explain the node's core purpose in 1-2 easy-to-understand sentences
+2. **Working Principle** - Explain the node's working method using everyday life metaphors
+3. **Input Parameter Description** - Detailed explanation of all input parameters
+4. **Output Result Description** - Explain the node's output content and format
+5. **Usage Suggestions** - Practical application scenarios and operation tips with metaphors
+6. **Do not use level-one headings**
+
+### Parameter Table Format
+For input parameters, please refer to the following format, though it's not mandatory if a table is already provided:
+```markdown
+| Parameter Name | Data Type | Input Method | Default | Range | Description |
+|----------|----------|----------|---------|----------|----------|
+```
+
+For output results, please refer to the following format, though it's not mandatory if a table is already provided:
+```markdown
+| Output Name | Data Type | Description |
+|----------|----------|------|
+```
+
+Parameter names should be represented using backticks (`) to ensure they are displayed as styled text, not plain text.
+Data types should be represented using plain text, not styled text.
+
+## Data Type Processing Rules
+
+### Important: Do not translate data types
+- Keep all data types in English: IMAGE, FLOAT, INT, STRING, MODEL, CONDITIONING, LATENT, MASK, etc.
+- Do not translate data types into any localized versions
+- Only translate parameter names
+
+## Multilingual Localization Rules
+
+### Supported Languages
+- Chinese (zh)
+- English (en)
+- Spanish (es)
+- French (fr)
+- Japanese (ja)
+- Korean (ko)
+- Russian (ru)
+
+### Translation Principles
+- Only translate when explicitly requested by the user
+- Only translate parameter names and descriptions
+- Keep data types in English
+- Maintain document structure consistency
+- Ensure metaphors are appropriate for the target language
+
+## Workflow (Only when I provide you with source code)
+
+### Node Analysis Phase
+1. Get the node source code to determine the node's classification and functionality
+2. Analyze INPUT_TYPES to identify all input parameters and their data types
+3. Analyze RETURN_TYPES to determine the output content and data types
+4. Understand the node's core working mechanism and application scenarios
+
+### Metaphor Design Phase
+1. Select an appropriate everyday life metaphor based on the node's functionality
+2. Ensure the metaphor accurately conveys the node's function
+3. Consider the applicability of the metaphor in different cultural backgrounds
+4. Design a detailed expansion of the metaphor
+
+### Documentation Creation Phase
+1. Write a concise function description (1-2 sentences)
+2. Use the selected metaphor to explain the working principle
+3. Create a complete input parameter table
+4. Create an output result table
+5. Write practical usage suggestions and application scenarios
+
+## Quality Standards
+
+### Content Requirements
+- ✅ Use everyday life metaphors to ensure non-technical users can understand
+- ✅ Provide complete input and output parameter descriptions
+- ✅ Include practical application scenarios and operation suggestions
+- ✅ Use simple language to describe technical concepts
+- ❌ Avoid using emojis
+- ❌ Do not include source code snippets
+- ❌ Avoid overly technical terminology explanations
+
+### Language Style Requirements
+- **Simple and easy to understand**: Assume the reader is a completely non-technical user
+- **Clear and concise**: Avoid long and complex sentences
+- **Accurate and consistent**: Term
+- **Clear Structure**: Clear logical hierarchy, easy to reference
+
+## Special Notes
+
+### User Collaboration Mode
+- Do not actively perform multilingual translation unless explicitly requested by the user. Additionally, if the user incorrectly requests translation during file provision (e.g., providing en.md but requesting French translation), do not translate but promptly notify the user
+- Terminology verification depends on user-provided interface information
+- Use user-updated versions for translation and updates
+- Remember to add any image content if added by the user
+
+### Prohibited Actions
+- Do not automatically start translation work for other language files unless actively requested by the user
+- Do not translate data type names
+- Do not modify original documentation or create specific node example information during translation unless requested by the user
+
+## Translation Tasks
+
+When users provide language files and request translation to corresponding languages, please follow these rules:
+- Usually, corresponding language screenshots of node information will be provided; ensure parameter names and descriptions match the screenshots
+- If no corresponding screenshots are provided, maintain the English version of parameter names
+
+## Standardized Terms for Input/Output Section Titles in Different Languages
+
+- Note: These terms only apply to the headings of parameter description sections
+
+| Language File | Input Title | Output Title |
+|----------|----------|----------|
+| en.md    | Inputs   | Outputs  |
+| es.md    | Entradas | Salidas  |
+| fr.md    | Entrées  | Sorties  |
+| ja.md    | 入力     | 出力     |
+| ko.md    | 입력     | 출력     |
+| zh.md    | 输入     | 输出     |
+| ru.md    | Входы    | Выходы   |
