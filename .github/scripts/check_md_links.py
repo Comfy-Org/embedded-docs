@@ -3,7 +3,26 @@ import re
 import sys
 from pathlib import Path
 
-DOCS_ROOT = Path(__file__).parent.parent.parent / 'comfyui_embedded_docs' / 'docs'
+# Try to find the docs directory relative to the script location first
+# If that fails, try relative to current working directory
+script_based_docs = Path(__file__).parent.parent.parent / 'comfyui_embedded_docs' / 'docs'
+cwd_based_docs = Path.cwd() / 'comfyui_embedded_docs' / 'docs'
+
+if script_based_docs.exists():
+    DOCS_ROOT = script_based_docs
+elif cwd_based_docs.exists():
+    DOCS_ROOT = cwd_based_docs
+else:
+    # Fallback: search for the docs directory
+    current = Path.cwd()
+    while current != current.parent:  # Stop at filesystem root
+        potential_docs = current / 'comfyui_embedded_docs' / 'docs'
+        if potential_docs.exists():
+            DOCS_ROOT = potential_docs
+            break
+        current = current.parent
+    else:
+        DOCS_ROOT = script_based_docs  # Default to original logic
 
 # Supported file extensions
 doc_exts = {'.md', '.mdx'}
@@ -30,6 +49,12 @@ def find_links_in_line(line):
     return links
 
 def check_links():
+    if not DOCS_ROOT.exists():
+        print(f"ERROR: DOCS_ROOT directory does not exist: {DOCS_ROOT}")
+        print(f"Current working directory: {os.getcwd()}")
+        print(f"Script location: {Path(__file__)}")
+        sys.exit(1)
+    
     errors = []
     for root, _, files in os.walk(DOCS_ROOT):
         for fname in files:
