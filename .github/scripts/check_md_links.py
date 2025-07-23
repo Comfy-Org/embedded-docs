@@ -84,11 +84,55 @@ def check_links():
                                     abs_path = (fpath.parent / link_path).absolute()
                             
                             if not abs_path.exists():
-                                errors.append(f"[NOT FOUND] {rel_fpath}:{idx}: {link} (resolved: {abs_path})")
+                                # Add detailed debugging information
+                                debug_info = []
+                                debug_info.append(f"Original link: {link}")
+                                debug_info.append(f"Link path (no anchor/query): {link_path}")
+                                debug_info.append(f"Source file: {fpath}")
+                                debug_info.append(f"Source parent: {fpath.parent}")
+                                debug_info.append(f"Resolved path: {abs_path}")
+                                debug_info.append(f"Path exists: {abs_path.exists()}")
+                                
+                                # Check if parent directory exists
+                                debug_info.append(f"Parent dir exists: {abs_path.parent.exists()}")
+                                if abs_path.parent.exists():
+                                    try:
+                                        parent_contents = list(abs_path.parent.iterdir())
+                                        debug_info.append(f"Parent dir contents: {[p.name for p in parent_contents]}")
+                                    except Exception as e:
+                                        debug_info.append(f"Error reading parent dir: {e}")
+                                
+                                # Check if it's a case sensitivity issue
+                                if abs_path.parent.exists():
+                                    actual_name = abs_path.name
+                                    try:
+                                        for item in abs_path.parent.iterdir():
+                                            if item.name.lower() == actual_name.lower() and item.name != actual_name:
+                                                debug_info.append(f"Case mismatch found: expected '{actual_name}', found '{item.name}'")
+                                    except Exception:
+                                        pass
+                                
+                                error_msg = f"[NOT FOUND] {rel_fpath}:{idx}: {link} (resolved: {abs_path})"
+                                error_msg += "\n  DEBUG: " + " | ".join(debug_info)
+                                errors.append(error_msg)
     if errors:
         print("\nThe following issues were found during link checking:")
-        for err in errors:
-            print(err)
+        # Show first 5 errors with full debug info, then just count the rest
+        for i, err in enumerate(errors):
+            if i < 5:
+                print(err)
+            elif i == 5:
+                print(f"\n... and {len(errors) - 5} more similar errors (showing first 5 with debug info)")
+                break
+        
+        # Show summary of remaining errors without debug info
+        if len(errors) > 5:
+            print("\nRemaining errors (summary):")
+            for err in errors[5:]:
+                # Extract just the basic error line
+                basic_err = err.split('\n')[0]
+                print(basic_err)
+        
         print(f"\nA total of {len(errors)} invalid links were found. Please fix the above issues.")
         sys.exit(1)
     else:
