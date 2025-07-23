@@ -104,7 +104,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 #### 카메라(Camera)
 
-![menu_modelmenu_camera](../Load3D/asset/menu_modelmenu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
 
 이 메뉴는 직교 뷰와 원근 뷰 전환, 시야각(FOV) 설정을 제공합니다
 
@@ -113,7 +113,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 #### 빛(Light)
 
-![menu_modelmenu_camera](../Load3D/asset/menu_modelmenu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 이 메뉴에서 전체 조명 강도를 빠르게 조절할 수 있습니다
 

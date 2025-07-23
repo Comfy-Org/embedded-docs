@@ -111,7 +111,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 #### 灯光（Light）
 
-![menu_modelmenu_camera](../Load3D/asset/menu_lightebp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 通过该菜单可以快速调节模型场景的全局光照强度
 

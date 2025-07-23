@@ -1,10 +1,3 @@
-
-<PhotoProvider>
-      <PhotoView src="/conditioning/video_models/SVD_img2vid_Conditioning.jpg">
-        <img src="/conditioning/video_models/SVD_img2vid_Conditioning.jpg" alt="comfyUIノード-SVD_img2vid_Conditioning|SVD画像から動画へのコンディショニング" className='rounded-lg' priority/>
-      </PhotoView>
-</PhotoProvider>
-
 このノードは、SVD_img2vidモデルを使用したビデオ生成タスクのためのコンディショニングデータを生成するように設計されています。初期画像、ビデオパラメータ、VAEモデルなどのさまざまな入力を受け取り、ビデオフレームの生成をガイドするためのコンディショニングデータを生成します。
 
 ## 入力
