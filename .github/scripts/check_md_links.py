@@ -55,6 +55,16 @@ def check_links():
         print(f"Script location: {Path(__file__)}")
         sys.exit(1)
     
+    # Debug: Check if Load3D directory and asset folder exist
+    load3d_dir = DOCS_ROOT / 'Load3D'
+    load3d_asset_dir = load3d_dir / 'asset'
+    print(f"DEBUG: Load3D directory exists: {load3d_dir.exists()}")
+    if load3d_dir.exists():
+        print(f"DEBUG: Load3D contents: {[p.name for p in load3d_dir.iterdir()]}")
+        print(f"DEBUG: Load3D/asset directory exists: {load3d_asset_dir.exists()}")
+        if load3d_asset_dir.exists():
+            print(f"DEBUG: Load3D/asset contents: {[p.name for p in load3d_asset_dir.iterdir()]}")
+    
     errors = []
     for root, _, files in os.walk(DOCS_ROOT):
         for fname in files:
