@@ -1,4 +1,7 @@
-Le nœud Load3D est un nœud principal pour charger et traiter des fichiers de modèles 3D. Lors du chargement du nœud, il récupère automatiquement les ressources 3D disponibles dans `ComfyUI/input/3d/`. Vous pouvez également téléverser des fichiers 3D pris en charge pour les prévisualiser à l'aide de la fonction de téléversement.
+Le nœud Load3DAnimation est un nœud principal pour charger et traiter des fichiers de modèles 3D. Lors du chargement du nœud, il récupère automatiquement les ressources 3D disponibles dans `ComfyUI/input/3d/`. Vous pouvez également téléverser des fichiers 3D pris en charge pour les prévisualiser à l'aide de la fonction de téléversement.
+
+> - La plupart des fonctions de ce nœud sont identiques à celles du nœud Load 3D, mais ce nœud prend en charge le chargement de modèles avec animations, et vous pouvez prévisualiser les animations correspondantes dans le nœud.
+> - Le contenu de cette documentation est le même que celui du nœud Load3D, car à l’exception de la prévisualisation et de la lecture des animations, leurs capacités sont identiques.
 
 **Formats pris en charge**
 Actuellement, ce nœud prend en charge plusieurs formats de fichiers 3D, y compris `.gltf`, `.glb`, `.obj`, `.fbx` et `.stl`.
@@ -31,7 +34,7 @@ En plus des sorties habituelles du nœud, Load3D propose de nombreuses options l
 | recording_video  | VIDEO          | Vidéo enregistrée (uniquement si une vidéo existe)                 |
 
 Aperçu de toutes les sorties :
-![Démonstration des opérations de vue](./asset/load3d_outputs.webp)
+![Démonstration des opérations de vue](../Load3D/asset/load3d_outputs.webp)
 
 ## Description de la zone Canevas (Canvas)
 
@@ -44,7 +47,7 @@ La zone Canvas du nœud Load3D contient de nombreuses opérations de vue, notamm
 - Exportation de modèle : prend en charge les formats `GLB`, `OBJ`, `STL`
 - Etc.
 
-![UI du nœud Load 3D](./asset/load3d_ui.jpg)
+![UI du nœud Load 3D](../Load3D/asset/load3d_ui.jpg)
 
 1. Contient plusieurs menus et menus cachés du nœud Load 3D
 2. Menu pour redimensionner la fenêtre d’aperçu et enregistrer la vidéo du canevas
@@ -55,7 +58,7 @@ La zone Canvas du nœud Load3D contient de nombreuses opérations de vue, notamm
 ### 1. Opérations de vue
 
 <video controls width="640" height="360">
-  <source src="./asset/view_operations.mp4" type="video/mp4">
+  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
   Votre navigateur ne prend pas en charge la lecture vidéo.
 </video>
 
@@ -68,7 +71,7 @@ Opérations de contrôle de la vue :
 
 ### 2. Fonctions du menu de gauche
 
-![Menu](./asset/menu.webp)
+![Menu](../Load3D/asset/menu.webp)
 
 Dans la zone d’aperçu, certains menus liés aux opérations de vue sont cachés dans le menu. Cliquez sur le bouton de menu pour développer les différents menus
 
@@ -80,7 +83,7 @@ Dans la zone d’aperçu, certains menus liés aux opérations de vue sont cach�
 
 #### Scène (Scene)
 
-![scene menu](./asset/menu_scene.webp)
+![scene menu](../Load3D/asset/menu_scene.webp)
 
 Le menu Scène propose quelques fonctions de configuration de base de la scène
 
@@ -91,7 +94,7 @@ Le menu Scène propose quelques fonctions de configuration de base de la scène
 
 #### Modèle (Model)
 
-![Menu_Scene](./asset/menu_model.webp)
+![Menu_Scene](../Load3D/asset/menu_model.webp)
 
 Le menu Modèle propose quelques fonctions liées au modèle
 
@@ -100,7 +103,7 @@ Le menu Modèle propose quelques fonctions liées au modèle
 
 #### Caméra (Camera)
 
-![menu_modelmenu_camera](./asset/menu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
 
 Ce menu permet de basculer entre la vue orthographique et la vue en perspective, et de régler l’angle de perspective
 
@@ -109,20 +112,20 @@ Ce menu permet de basculer entre la vue orthographique et la vue en perspective,
 
 #### Lumière (Light)
 
-![menu_modelmenu_camera](./asset/menu_light.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 Ce menu permet d’ajuster rapidement l’intensité de l’éclairage global de la scène
 
 #### Exportation (Export)
 
-![menu_export](./asset/menu_export.webp)
+![menu_export](../Load3D/asset/menu_export.webp)
 
 Ce menu permet de convertir et d’exporter rapidement les formats de modèle
 
 ### 3. Fonctions du menu de droite
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
   Votre navigateur ne prend pas en charge la lecture vidéo.
 </video>
 

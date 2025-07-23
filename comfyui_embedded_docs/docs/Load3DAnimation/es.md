@@ -1,4 +1,7 @@
-El nodo Load3D es un nodo principal para cargar y procesar archivos de modelos 3D. Al cargar el nodo, obtiene automáticamente los recursos 3D disponibles en `ComfyUI/input/3d/`. También puedes subir archivos 3D compatibles para previsualizarlos usando la función de carga.
+El nodo Load3DAnimation es un nodo principal para cargar y procesar archivos de modelos 3D. Al cargar el nodo, obtiene automáticamente los recursos 3D disponibles en `ComfyUI/input/3d/`. También puedes subir archivos 3D compatibles para previsualizarlos usando la función de carga.
+
+> - La mayoría de las funciones de este nodo son iguales a las del nodo Load 3D, pero este nodo permite cargar modelos con animaciones y puedes previsualizar las animaciones correspondientes en el nodo.
+> - El contenido de esta documentación es el mismo que el del nodo Load3D, ya que, excepto por la previsualización y reproducción de animaciones, sus capacidades son idénticas.
 
 **Formatos soportados**
 Actualmente, este nodo soporta varios formatos de archivos 3D, incluyendo `.gltf`, `.glb`, `.obj`, `.fbx` y `.stl`.
@@ -31,7 +34,7 @@ Además de las salidas habituales del nodo, Load3D tiene muchas opciones relacio
 | recording_video    | VIDEO          | Video grabado (solo si existe grabación)                           |
 
 Vista previa de todas las salidas:
-![Demostración de operaciones de vista](./asset/load3d_outputs.webp)
+![Demostración de operaciones de vista](../Load3D/asset/load3d_outputs.webp)
 
 ## Descripción del área de lienzo (Canvas)
 
@@ -44,7 +47,7 @@ El área Canvas del nodo Load3D contiene numerosas operaciones de vista, incluye
 - Exportación de modelo: soporta formatos `GLB`, `OBJ`, `STL`
 - Etc.
 
-![UI del nodo Load 3D](./asset/load3d_ui.jpg)
+![UI del nodo Load 3D](../Load3D/asset/load3d_ui.jpg)
 
 1. Incluye varios menús y menús ocultos del nodo Load 3D
 2. Menú para redimensionar la ventana de previsualización y grabar video del lienzo
@@ -55,7 +58,7 @@ El área Canvas del nodo Load3D contiene numerosas operaciones de vista, incluye
 ### 1. Operaciones de vista
 
 <video controls width="640" height="360">
-  <source src="./asset/view_operations.mp4" type="video/mp4">
+  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
   Tu navegador no soporta la reproducción de video.
 </video>
 
@@ -68,7 +71,7 @@ Operaciones de control de vista:
 
 ### 2. Funciones del menú izquierdo
 
-![Menu](./asset/menu.webp)
+![Menu](../Load3D/asset/menu.webp)
 
 En el área de previsualización, algunos menús relacionados con operaciones de vista están ocultos en el menú. Haz clic en el botón de menú para expandir los diferentes menús
 
@@ -80,7 +83,7 @@ En el área de previsualización, algunos menús relacionados con operaciones de
 
 #### Escena (Scene)
 
-![scene menu](./asset/menu_scene.webp)
+![scene menu](../Load3D/asset/menu_scene.webp)
 
 El menú Escena proporciona algunas funciones básicas de configuración de la escena
 
@@ -91,7 +94,7 @@ El menú Escena proporciona algunas funciones básicas de configuración de la e
 
 #### Modelo (Model)
 
-![Menu_Scene](./asset/menu_model.webp)
+![Menu_Scene](../Load3D/asset/menu_model.webp)
 
 El menú Modelo proporciona algunas funciones relacionadas con el modelo
 
@@ -100,7 +103,7 @@ El menú Modelo proporciona algunas funciones relacionadas con el modelo
 
 #### Cámara (Camera)
 
-![menu_modelmenu_camera](./asset/menu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
 
 Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el ángulo de perspectiva
 
@@ -109,20 +112,20 @@ Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el
 
 #### Luz (Light)
 
-![menu_modelmenu_camera](./asset/menu_light.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 A través de este menú puedes ajustar rápidamente la intensidad de la iluminación global de la escena
 
 #### Exportar (Export)
 
-![menu_export](./asset/menu_export.webp)
+![menu_export](../Load3D/asset/menu_export.webp)
 
 Este menú permite convertir y exportar rápidamente formatos de modelo
 
 ### 3. Funciones del menú derecho
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
   Tu navegador no soporta la reproducción de video.
 </video>
 

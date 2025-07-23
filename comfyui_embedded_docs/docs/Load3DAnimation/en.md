@@ -1,4 +1,7 @@
-The Load3D node is a core node for loading and processing 3D model files. When loading the node, it automatically retrieves available 3D resources from `ComfyUI/input/3d/`. You can also upload supported 3D files for preview using the upload function.
+The Load3DAnimation node is a core node for loading and processing 3D model files. When loading the node, it automatically retrieves available 3D resources from `ComfyUI/input/3d/`. You can also upload supported 3D files for preview using the upload function.
+
+> - Most of the functions of this node are the same as the Load 3D node, but this node supports loading models with animations, and you can preview the corresponding animations in the node.
+> - The content of this documentation is the same as the Load3D node, because except for animation preview and playback, their capabilities are identical.
 
 **Supported Formats**
 Currently, this node supports multiple 3D file formats, including `.gltf`, `.glb`, `.obj`, `.fbx`, and `.stl`.
@@ -31,7 +34,7 @@ Besides regular node outputs, Load3D has lots of 3D view-related settings in the
 | recording_video | VIDEO          | Recorded video (only when recording exists) |
 
 All the outputs preview:
-![View Operation Demo](./asset/load3d_outputs.webp)
+![View Operation Demo](../Load3D/asset/load3d_outputs.webp)
 
 ## Canvas Area Description
 
@@ -44,7 +47,7 @@ The Load3D node's Canvas area contains numerous view operations, including:
 - Model export: Supports `GLB`, `OBJ`, `STL` formats
 - And more
 
-![Load 3D Node UI](./asset/load3d_ui.jpg)
+![Load 3D Node UI](../Load3D/asset/load3d_ui.jpg)
 
 1. Contains multiple menus and hidden menus of the Load 3D node
 2. Menu for `resizing preview window` and `canvas video recording`
@@ -55,7 +58,7 @@ The Load3D node's Canvas area contains numerous view operations, including:
 ### 1. View Operations
 
 <video controls width="640" height="360">
-  <source src="./asset/view_operations.mp4" type="video/mp4">
+  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
   Your browser does not support video playback.
 </video>
 
@@ -68,7 +71,7 @@ View control operations:
 
 ### 2. Left Menu Functions
 
-![Menu](./asset/menu.webp)
+![Menu](../Load3D/asset/menu.webp)
 
 In the canvas, some settings are hidden in the menu. Click the menu button to expand different menus
 
@@ -80,7 +83,7 @@ In the canvas, some settings are hidden in the menu. Click the menu button to ex
 
 #### Scene
 
-![scene menu](./asset/menu_scene.webp)
+![scene menu](../Load3D/asset/menu_scene.webp)
 
 The Scene menu provides some basic scene setting functions
 
@@ -91,7 +94,7 @@ The Scene menu provides some basic scene setting functions
 
 #### Model
 
-![Menu_Scene](./asset/menu_model.webp)
+![Menu_Scene](../Load3D/asset/menu_model.webp)
 
 The Model menu provides some model-related functions
 
@@ -100,7 +103,7 @@ The Model menu provides some model-related functions
 
 #### Camera
 
-![menu_modelmenu_camera](./asset/menu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
 
 This menu provides switching between orthographic and perspective views, and perspective angle size settings
 
@@ -109,20 +112,20 @@ This menu provides switching between orthographic and perspective views, and per
 
 #### Light
 
-![menu_modelmenu_camera](./asset/menu_light.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 Through this menu, you can quickly adjust the scene's global illumination intensity
 
 #### Export
 
-![menu_export](./asset/menu_export.webp)
+![menu_export](../Load3D/asset/menu_export.webp)
 
 This menu provides the ability to quickly convert and export model formats
 
 ### 3. Right Menu Functions
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
   Your browser does not support video playback.
 </video>
 

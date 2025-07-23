@@ -1,0 +1,33 @@
+name: Check Markdown Resource Links
+
+on:
+  pull_request:
+    paths:
+      - 'comfyui_embedded_docs/docs/**/*.md'
+      - 'comfyui_embedded_docs/docs/**/*.mdx'
+      - '.github/scripts/check_md_links.py'
+      - '.github/workflows/check-md-links.yml'
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Debug git status
+        run: |
+          echo "Current branch: $(git branch --show-current)"
+          echo "Current commit: $(git rev-parse HEAD)"
+          echo "PR Head SHA: ${{ github.event.pull_request.head.sha }}"
+          echo "Checking if Load3D/asset directory exists:"
+          ls -la comfyui_embedded_docs/docs/Load3D/ || echo "Load3D directory not found"
+          ls -la comfyui_embedded_docs/docs/Load3D/asset/ || echo "Load3D/asset directory not found"
+      - name: Run Markdown resource link checker
+        run: |
+          python .github/scripts/check_md_links.py 

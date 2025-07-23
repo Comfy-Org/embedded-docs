@@ -1,5 +1,8 @@
 3Dを読み込むノードは、3Dモデルファイルを読み込み・処理するためのコアノードです。ノードを読み込むと、自動的に`ComfyUI/input/3d/`から利用可能な3Dリソースを取得します。また、「upload 3d model」機能を使って、対応する3Dファイルをアップロードし、プレビューすることもできます。
 
+> - このノードのほとんどの機能は「Load 3D」ノードと同じですが、本ノードはアニメーション付きモデルの読み込みに対応しており、ノード内で対応するアニメーションのプレビューも可能です。
+> - 本ドキュメントの内容は「Load3D」ノードと同じですが、アニメーションのプレビューや再生機能を除けば、両者の機能は同一です。
+
 **対応フォーマット**
 現在、このノードは複数の3Dファイル形式（.gltf、.glb、.obj、.fbx、.stl）に対応しています。
 
@@ -32,7 +35,7 @@
 
 すべての出力のプレビュー：
 
-![ビュー操作デモ](./asset/load3d_outputs.webp)
+![ビュー操作デモ](../Load3D/asset/load3d_outputs.webp)
 
 ## モデルキャンバス(Canvas)エリアの説明
 
@@ -45,7 +48,7 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 - モデルエクスポート：GLB、OBJ、STL形式に対応
 - など
 
-![Load 3D Node UI](./asset/load3d_ui.jpg)
+![Load 3D Node UI](../Load3D/asset/load3d_ui.jpg)
 
 1. Load3Dノードの複数のメニューおよび隠しメニュー
 2. プレビューウィンドウのリサイズやキャンバスビデオ録画のメニュー
@@ -56,7 +59,7 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 ### 1. ビュー操作
 
 <video controls width="640" height="360">
-  <source src="./asset/view_operations.mp4" type="video/mp4">
+  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
   お使いのブラウザは動画再生に対応していません。
 </video>
 
@@ -69,7 +72,7 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 
 ### 2. 左側メニュー機能
 
-![Menu](./asset/menu.webp)
+![Menu](../Load3D/asset/menu.webp)
 
 プレビューエリアでは、一部のビュー操作関連メニューがメニュー内に隠れています。メニューボタンをクリックすると各種メニューが展開されます。
 
@@ -81,7 +84,7 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 
 #### シーン（Scene）
 
-![scene menu](./asset/menu_scene.webp)
+![scene menu](../Load3D/asset/menu_scene.webp)
 
 シーンメニューは、シーンの基本設定機能を提供します
 
@@ -92,7 +95,7 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 
 #### モデル（Model）
 
-![Menu_Scene](./asset/menu_model.webp)
+![Menu_Scene](../Load3D/asset/menu_model.webp)
 
 モデルメニューは、モデル関連の機能を提供します
 
@@ -101,7 +104,7 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 
 #### カメラ（Camera）
 
-![menu_modelmenu_camera](./asset/menu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
 
 このメニューは、オーソグラフィックビューとパースビューの切り替え、視野角設定を提供します
 
@@ -110,20 +113,20 @@ Load3DノードのCanvasエリアには、多くのビュー操作が含まれ�
 
 #### ライト（Light）
 
-![menu_modelmenu_camera](./asset/menu_light.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 このメニューでシーン全体のグローバル照明強度を調整できます
 
 #### エクスポート（Export）
 
-![menu_export](./asset/menu_export.webp)
+![menu_export](../Load3D/asset/menu_export.webp)
 
 このメニューは、モデルを他の形式（GLB、OBJ、STL）に変換・エクスポートできます
 
 ### 3. 右側メニュー機能
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
   お使いのブラウザは動画再生に対応していません。
 </video>
 

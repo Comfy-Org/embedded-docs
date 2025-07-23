@@ -1,4 +1,7 @@
-Load3D 节点用于加载和处理 3D 模型文件的核心节点，在加载节点时会自动获取  `ComfyUI/input/3d/`  可用的 3D 资源，你也可以通过上传功能将受支持的 3D 文件上传然后进行预览。
+Load3DAnimation 节点用于加载和处理 3D 模型文件的核心节点，在加载节点时会自动获取  `ComfyUI/input/3d/`  可用的 3D 资源，你也可以通过上传功能将受支持的 3D 文件上传然后进行预览。
+
+> - 该节点功能大部分与 Load 3D 节点相同，但这个节点支持加载带有动画的模型加载，可以在节点中预览对应的动画
+> - 本篇文档内容与 Load3D 节点相同，因为除了动画预览播放外他们的能力都是相同的。
 
 **支持格式**
 目前该节点支持多种 3D 文件格式，包括 `.gltf`、`.glb`、`.obj`、`.fbx` 和 `.stl`。
@@ -30,7 +33,7 @@ Load3D 节点用于加载和处理 3D 模型文件的核心节点，在加载节
 | recording_video | VIDEO         | 录制视频（仅当有录制视频存在时）     |
 
 对应所有的输出预览如下：
-![视图操作演示](./asset/load3d_outputs.webp)
+![视图操作演示](../Load3D/asset/load3d_outputs.webp)
 
 ## 模型画布(Canvas)区说明
 
@@ -43,7 +46,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 - 模型导出: 支持`GLB`、`OBJ`、`STL` 格式
 - 等
 
-![Load 3D 节点UI](./asset/load3d_ui.jpg)
+![Load 3D 节点UI](../Load3D/asset/load3d_ui.jpg)
 
 1. 包含了 Load 3D 节点的多个菜单以及隐藏菜单
 2. 重新`缩放预览窗口大小`以及进行`画布视频录制`菜单
@@ -54,7 +57,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 ### 1. 视图操作
 
 <video controls width="640" height="360">
-  <source src="./asset/view_operations.mp4" type="video/mp4">
+  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
   您的浏览器不支持视频播放。
 </video>
 
@@ -67,7 +70,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 ### 2. 左侧菜单功能
 
-![Menu](./asset/menu.webp)
+![Menu](../Load3D/asset/menu.webp)
 
 在预览区域，有些视图操作相关的菜单被隐藏在了菜单里，点击菜单按钮可以展开对应不同的菜单
 
@@ -79,7 +82,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 #### 场景（Scene）
 
-![scene menu](./asset/menu_scene.webp)
+![scene menu](../Load3D/asset/menu_scene.webp)
 
 场景菜单提供了对场景的一些基础设置功能
 
@@ -90,7 +93,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 #### 模型(Model)
 
-![Menu_Scene](./asset/menu_model.webp)
+![Menu_Scene](../Load3D/asset/menu_model.webp)
 
 模型菜单提供了一些模型的相关功能
 
@@ -99,7 +102,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 #### 摄像机（Camera）
 
-![menu_modelmenu_camera](./asset/menu_camera.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
 
 该菜单提供了轴测视图和透视视图切换、透视视角大小设置
 
@@ -108,20 +111,20 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 
 #### 灯光（Light）
 
-![menu_modelmenu_camera](./asset/menu_light.webp)
+![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
 
 通过该菜单可以快速调节模型场景的全局光照强度
 
 #### 导出（Export）
 
-![menu_export](./asset/menu_export.webp)
+![menu_export](../Load3D/asset/menu_export.webp)
 
 该菜单提供了一个快速转换模型格式并导出的能力
 
 ### 3. 右侧菜单功能
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
   您的浏览器不支持视频播放。
 </video>
 
