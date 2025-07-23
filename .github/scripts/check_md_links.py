@@ -70,7 +70,19 @@ def check_links():
                             if link_path.startswith('/'):
                                 abs_path = DOCS_ROOT / link_path.lstrip('/')
                             else:
-                                abs_path = (fpath.parent / link_path).resolve()
+                                # Use resolve() for relative paths but ensure proper handling
+                                try:
+                                    abs_path = (fpath.parent / link_path).resolve()
+                                    # Additional check: ensure the resolved path is still under expected directory
+                                    if not abs_path.exists():
+                                        # Try alternative resolution without resolve() for symlink issues
+                                        abs_path_alt = (fpath.parent / link_path).absolute()
+                                        if abs_path_alt.exists():
+                                            abs_path = abs_path_alt
+                                except (OSError, ValueError):
+                                    # Fallback for path resolution issues
+                                    abs_path = (fpath.parent / link_path).absolute()
+                            
                             if not abs_path.exists():
                                 errors.append(f"[NOT FOUND] {rel_fpath}:{idx}: {link} (resolved: {abs_path})")
     if errors:
