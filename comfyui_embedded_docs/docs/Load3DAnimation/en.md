@@ -3,7 +3,6 @@ The Load3DAnimation node is a core node for loading and processing 3D model file
 > - Most of the functions of this node are the same as the Load 3D node, but this node supports loading models with animations, and you can preview the corresponding animations in the node.
 > - The content of this documentation is the same as the Load3D node, because except for animation preview and playback, their capabilities are identical.
 
-
 **Supported Formats**
 Currently, this node supports multiple 3D file formats, including `.gltf`, `.glb`, `.obj`, `.fbx`, and `.stl`.
 

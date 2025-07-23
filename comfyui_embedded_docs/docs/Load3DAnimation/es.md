@@ -3,8 +3,6 @@ El nodo Load3DAnimation es un nodo principal para cargar y procesar archivos de 
 > - La mayoría de las funciones de este nodo son iguales a las del nodo Load 3D, pero este nodo permite cargar modelos con animaciones y puedes previsualizar las animaciones correspondientes en el nodo.
 > - El contenido de esta documentación es el mismo que el del nodo Load3D, ya que, excepto por la previsualización y reproducción de animaciones, sus capacidades son idénticas.
 
-
-
 **Formatos soportados**
 Actualmente, este nodo soporta varios formatos de archivos 3D, incluyendo `.gltf`, `.glb`, `.obj`, `.fbx` y `.stl`.
 

@@ -3,7 +3,6 @@ Le nœud Load3DAnimation est un nœud principal pour charger et traiter des fich
 > - La plupart des fonctions de ce nœud sont identiques à celles du nœud Load 3D, mais ce nœud prend en charge le chargement de modèles avec animations, et vous pouvez prévisualiser les animations correspondantes dans le nœud.
 > - Le contenu de cette documentation est le même que celui du nœud Load3D, car à l’exception de la prévisualisation et de la lecture des animations, leurs capacités sont identiques.
 
-
 **Formats pris en charge**
 Actuellement, ce nœud prend en charge plusieurs formats de fichiers 3D, y compris `.gltf`, `.glb`, `.obj`, `.fbx` et `.stl`.
 
