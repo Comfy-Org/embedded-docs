@@ -1,10 +1,3 @@
-
-<PhotoProvider>
-      <PhotoView src="/latent/Upscale_latent_by.jpg">
-        <img src="/latent/Upscale_latent_by.jpg" alt="comfyUI节点- Upscale latent by｜Latent按系数缩放" className='rounded-lg' priority/>
-      </PhotoView>
-</PhotoProvider>
-
 这一节点将使用特定算法对潜空间图像进行缩放，它允许调整放大比例和放大方法，提供在提高潜在样本分辨率方面的灵活性。
 
 ### 关于upscale_method中几个方法的说明介绍

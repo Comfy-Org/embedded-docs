@@ -1,10 +1,3 @@
-
-<PhotoProvider>
-      <PhotoView src="/conditioning/style_model/Apply_Style_model.jpg">
-        <img src="/conditioning/style_model/Apply_Style_model.jpg" alt="comfyUIノード-Apply Style model | スタイルモデル適用" className='rounded-lg' priority/>
-      </PhotoView>
-</PhotoProvider>
-
 このノードは、CLIPビジョンモデルの出力に基づいてスタイルモデルを適用し、与えられたコンディショニングのスタイルを強化または変更します。スタイルモデルのコンディショニングを既存のコンディショニングに統合し、生成プロセスでスタイルをシームレスにブレンドすることができます。
 
 ## 入力
