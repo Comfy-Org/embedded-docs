@@ -1,6 +1,5 @@
 El nodo EmptyImage se utiliza para crear imágenes en blanco con dimensiones y colores especificados. Puede generar imágenes de fondo de color sólido, comúnmente utilizadas como puntos de partida o imágenes de fondo para flujos de trabajo de procesamiento de imágenes.
 
-
 ## Entradas
 
 | Nombre del Parámetro | Tipo de Datos | Descripción |
