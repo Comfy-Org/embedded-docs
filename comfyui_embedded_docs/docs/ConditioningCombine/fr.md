@@ -22,6 +22,7 @@ Comparez les deux groupes ci-dessous : le côté gauche utilise le nœud Conditi
 Dans cet exemple, les deux conditions utilisées dans `Conditionnement (Combiner)` ont une importance équivalente. Par conséquent, vous pouvez utiliser différents encodages de texte pour le style d'image, les caractéristiques du sujet, etc., permettant aux caractéristiques du prompt d'être sorties plus complètement. Le deuxième prompt utilise le prompt complet combiné, mais la compréhension sémantique peut encoder des conditions complètement différentes.
 
 En utilisant ce nœud, vous pouvez réaliser :
+
 - Fusion de texte basique : Connectez les sorties de deux nœuds `Encodage de Texte CLIP` aux deux ports d'entrée de `Conditionnement (Combiner)`
 - Combinaison complexe de prompts : Combinez des prompts positifs et négatifs, ou encodez séparément les descriptions principales et les descriptions de style avant de les fusionner
 - Combinaison conditionnelle en chaîne : Plusieurs nœuds `Conditionnement (Combiner)` peuvent être utilisés en série pour réaliser la combinaison progressive de plusieurs conditions

@@ -22,6 +22,7 @@ Compara los dos grupos a continuación: el lado izquierdo usa el nodo Conditioni
 En este ejemplo, las dos condiciones utilizadas en `Acondicionamiento (Combinar)` tienen importancia equivalente. Por lo tanto, puedes usar diferentes codificaciones de texto para el estilo de imagen, características del sujeto, etc., permitiendo que las características del prompt se generen de manera más completa. El segundo prompt usa el prompt completo combinado, pero la comprensión semántica puede codificar condiciones completamente diferentes.
 
 Usando este nodo, puedes lograr:
+
 - Fusión básica de texto: Conecta las salidas de dos nodos de `Codificación de Texto CLIP` a los dos puertos de entrada de `Acondicionamiento (Combinar)`
 - Combinación compleja de prompts: Combina prompts positivos y negativos, o codifica por separado las descripciones principales y las descripciones de estilo antes de fusionarlas
 - Combinación en cadena condicional: Múltiples nodos de `Acondicionamiento (Combinar)` pueden usarse en serie para lograr la combinación gradual de múltiples condiciones

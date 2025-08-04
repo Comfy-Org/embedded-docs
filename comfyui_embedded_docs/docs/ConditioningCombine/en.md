@@ -22,6 +22,7 @@ Compare the two groups below: the left side uses the ConditioningCombine node, w
 In this example, the two conditions used in `Conditioning Combine` have equivalent importance. Therefore, you can use different text encodings for image style, subject features, etc., allowing the prompt features to be output more completely. The second prompt uses the combined complete prompt, but semantic understanding may encode completely different conditions.
 
 Using this node, you can achieve:
+
 - Basic text merging: Connect the outputs of two `CLIP Text Encode` nodes to the two input ports of `Conditioning Combine`
 - Complex prompt combination: Combine positive and negative prompts, or separately encode main descriptions and style descriptions before merging
 - Conditional chain combination: Multiple `Conditioning Combine` nodes can be used in series to achieve gradual combination of multiple conditions
