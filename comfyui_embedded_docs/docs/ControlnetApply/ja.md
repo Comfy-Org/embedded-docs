@@ -1,6 +1,6 @@
 このドキュメントは、元の`Apply ControlNet(Advanced)`ノードに関するものです。最も古い`Apply ControlNet`ノードは`Apply ControlNet(Old)`に名前が変更されました。互換性のために、comfyui.orgからダウンロードした多くのワークフローフォルダで`Apply ControlNet(Old)`ノードを見ることができますが、検索やノードリストでは`Apply ControlNet(Old)`ノードを見つけることはできません。代わりに`Apply ControlNet`ノードを使用してください。
 
-このノードは、与えられた画像とコンディショニングにControlNetを適用し、Depth、OpenPose、Canny、HEDなどのコントロールネットワークのパラメータと指定された強度に従って画像の属性を調整します。
+このノードは、与えられた画像と条件付けにControlNetを適用し、Depth、OpenPose、Canny、HEDなどのコントロールネットワークのパラメータと指定された強度に従って画像の属性を調整します。
 
 ControlNetを使用するには、入力画像の前処理が必要です。ComfyUIの初期ノードには前処理器とControlNetモデルが含まれていないため、まずContrlNet前処理器[前処理器のダウンロード](https://github.com/Fannovel16/comfy_controlnet_preprocessors)と対応するControlNetモデルをインストールしてください。
 
@@ -8,8 +8,8 @@ ControlNetを使用するには、入力画像の前処理が必要です。Comf
 
 | パラメータ | データタイプ | 機能 |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | `CLIPテキストエンコーダー`または他のコンディショニング入力からの正のコンディショニングデータ |
-| `negative` | `CONDITIONING` | `CLIPテキストエンコーダー`または他のコンディショニング入力からの負のコンディショニングデータ |
+| `positive` | `CONDITIONING` | `CLIPテキストエンコーダー`または他の条件付け入力からの正の条件付けデータ |
+| `negative` | `CONDITIONING` | `CLIPテキストエンコーダー`または他の条件付け入力からの負の条件付けデータ |
 | `control_net` | `CONTROL_NET` | 適用するControlNetモデル、通常は`ControlNetローダー`から入力 |
 | `image` | `IMAGE` | ControlNet適用のための画像、前処理器で処理が必要 |
 | `vae` | `VAE` | Vaeモデル入力 |
@@ -21,7 +21,7 @@ ControlNetを使用するには、入力画像の前処理が必要です。Comf
 
 | パラメータ | データタイプ | 機能 |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | ControlNetによって処理された正のコンディショニングデータ、次のControlNetまたはKサンプラーノードに出力可能 |
-| `negative` | `CONDITIONING` | ControlNetによって処理された負のコンディショニングデータ、次のControlNetまたはKサンプラーノードに出力可能 |
+| `positive` | `CONDITIONING` | ControlNetによって処理された正の条件付けデータ、次のControlNetまたはKサンプラーノードに出力可能 |
+| `negative` | `CONDITIONING` | ControlNetによって処理された負の条件付けデータ、次のControlNetまたはKサンプラーノードに出力可能 |
 
 **T2IAdaptorスタイルモデル**を使用する場合は、代わりに`Apply Style Model`ノードを使用してください
