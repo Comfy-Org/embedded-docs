@@ -1,5 +1,7 @@
 The DualCLIPLoader node is designed for loading two CLIP models simultaneously, facilitating operations that require the integration or comparison of features from both models.
 
+This node will detect models located in the `ComfyUI/models/text_encoders` folder.
+
 ## Inputs
 
 | Parameter    | Comfy dtype     | Description                                                                                                                                                                                     |
