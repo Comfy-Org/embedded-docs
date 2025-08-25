@@ -1,5 +1,7 @@
 Le nœud DualCLIPLoader est conçu pour charger deux modèles CLIP simultanément, facilitant les opérations nécessitant l'intégration ou la comparaison des caractéristiques des deux modèles.
 
+Ce nœud détectera automatiquement les modèles situés dans le dossier `ComfyUI/models/text_encoders`.
+
 ## Entrées
 
 | Paramètre    | Data Type | Description |

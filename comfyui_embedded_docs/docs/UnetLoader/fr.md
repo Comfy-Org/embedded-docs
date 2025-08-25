@@ -1,6 +1,8 @@
 
 Le nœud UNETLoader est conçu pour charger des modèles U-Net par nom, facilitant l'utilisation des architectures U-Net pré-entraînées au sein du système.
 
+Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/diffusion_models`.
+
 ## Entrées - Guide du Chargeur UNET | Charger le Modèle de Diffusion
 
 | Paramètre   | Data Type | Description |
