@@ -1,6 +1,6 @@
 El nodo DualCLIPLoader está diseñado para cargar dos modelos CLIP simultáneamente, facilitando operaciones que requieren la integración o comparación de características de ambos modelos.
 
-Imagina que estás en una cocina preparando un plato y tienes dos frascos de especias diferentes: uno con sal y otro con pimienta. Cada especia añade un sabor único a tu plato. Ahora, imagina que tienes una herramienta especial que te permite usar ambos frascos al mismo tiempo para sazonar tu comida. Esto es similar al nodo DualCLIPLoader. Te permite cargar y usar dos modelos CLIP diferentes simultáneamente, para que puedas combinar sus capacidades y estilos únicos y crear arte generado por IA más versátil y refinado.
+Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/text_encoders`.
 
 ## Entradas
 

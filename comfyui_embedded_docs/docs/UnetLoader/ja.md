@@ -1,5 +1,7 @@
 UNETLoaderノードは、U-Netモデルを名前でロードするために設計されており、システム内で事前訓練されたU-Netアーキテクチャの使用を容易にします。
 
+このノードは、`ComfyUI/models/diffusion_models` フォルダ内にあるモデルを自動的に検出します。
+
 ## 入力
 
 | パラメータ   | Data Type | 説明 |
