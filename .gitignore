@@ -5,3 +5,10 @@ dist
 .ref/
 .cursorrules
 .gemini/
+
+# Environment variables
+.env
+*.env.local
+
+# Doc automation outputs
+/doc_automation

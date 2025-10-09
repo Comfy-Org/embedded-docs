@@ -20,5 +20,8 @@ classifiers = [
 [project.urls]
 repository = "https://github.com/Comfy-Org/embedded-docs"
 
+[tool.setuptools]
+packages = ["comfyui_embedded_docs"]
+
 [tool.setuptools.package-data]
 comfyui_embedded_docs = ["docs/**/*.md", "docs/**/*.jpg", "docs/**/*.png", "docs/**/*.gif", "docs/**/*.webp"] 
