@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MoonvalleyTxt2VideoNode/zh.md)
 
-{heading_overview}
+## 概述
 
 Moonvalley Marey 文生视频节点通过 Moonvalley API 从文本描述生成视频内容。它接收文本提示词，并根据可自定义的分辨率、质量和风格设置将其转换为视频。该节点处理从发送生成请求到下载最终视频输出的完整流程。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
@@ -15,7 +15,7 @@ Moonvalley Marey 文生视频节点通过 Moonvalley API 从文本描述生成�
 | `seed` | INT | 否 | 0-4294967295 | 随机种子值（默认值：9） |
 | `steps` | INT | 否 | 1-100 | 推理步数（默认值：33） |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

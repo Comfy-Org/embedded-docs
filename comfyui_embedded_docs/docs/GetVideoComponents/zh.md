@@ -1,16 +1,16 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/zh.md)
 
-{heading_overview}
+## 概述
 
 Get Video Components 节点可从视频文件中提取所有主要元素。它将视频分离为独立帧，提取音轨，并提供视频的帧率信息。这使您能够独立处理每个组件以进行后续处理或分析。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | 是 | - | 要从中提取组件的视频。 |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

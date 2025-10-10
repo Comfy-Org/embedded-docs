@@ -1,17 +1,17 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentAudio/zh.md)
 
-{heading_overview}
+## 概述
 
 EmptyLatentAudio 节点为音频处理创建空的潜在张量。它生成具有指定时长和批次大小的空白音频潜在表示，可用作音频生成或处理工作流的输入。该节点根据音频时长和采样率计算适当的潜在维度。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `seconds` | FLOAT | 是 | 1.0 - 1000.0 | 音频时长（单位：秒），默认值：47.6 |
 | `batch_size` | INT | 是 | 1 - 4096 | 批次中的潜在图像数量，默认值：1 |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

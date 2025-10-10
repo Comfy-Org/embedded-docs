@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/zh.md)
 
-{heading_overview}
+## 概述
 
 根据提示词和输出设置同步生成视频。此节点使用文本描述和各种生成参数来创建视频内容，在生成过程完成后输出最终视频。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
@@ -19,7 +19,7 @@
 
 **注意：** 使用 `ray_1_6` 模型时，`duration` 和 `resolution` 参数会自动设置为 None 且不会影响生成过程。
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

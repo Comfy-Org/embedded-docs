@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageNode/zh.md)
 
-{heading_overview}
+## 概述
 
 ByteDance Image 节点通过基于文本提示的 API 使用字节跳动模型生成图像。它允许您选择不同的模型，指定图像尺寸，并控制各种生成参数，如种子值和引导尺度。该节点连接到字节跳动的图像生成服务并返回创建的图像。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 输入类型 | 默认值 | 范围 | 描述 |
 |-----------|-----------|------------|---------|-------|-------------|
@@ -17,7 +17,7 @@ ByteDance Image 节点通过基于文本提示的 API 使用字节跳动模型�
 | `guidance_scale` | FLOAT | FLOAT | 2.5 | 1.0-10.0（步长 0.01） | 值越高，图像越紧密遵循提示（可选） |
 | `watermark` | BOOLEAN | BOOLEAN | True | - | 是否在图像上添加"AI 生成"水印（可选） |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveVideo/zh.md)
 
-{heading_overview}
+## 概述
 
 SaveVideo 节点将输入的视频内容保存到您的 ComfyUI 输出目录中。它允许您指定保存文件的文件名前缀、视频格式和编解码器。该节点会自动处理带计数器递增的文件命名，并可在保存的视频中包含工作流元数据。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
@@ -13,7 +13,7 @@ SaveVideo 节点将输入的视频内容保存到您的 ComfyUI 输出目录中�
 | `format` | COMBO | 否 | 提供多个选项 | 保存视频的格式（默认值："auto"）。 |
 | `codec` | COMBO | 否 | 提供多个选项 | 用于视频的编解码器（默认值："auto"）。 |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

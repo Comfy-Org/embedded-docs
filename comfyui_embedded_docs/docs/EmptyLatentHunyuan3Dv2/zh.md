@@ -1,17 +1,17 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentHunyuan3Dv2/zh.md)
 
-{heading_overview}
+## 概述
 
 EmptyLatentHunyuan3Dv2 节点创建专门为 Hunyuan3Dv2 3D 生成模型格式化的空白潜空间张量。它生成具有 Hunyuan3Dv2 架构所需正确维度和结构的空潜空间，允许您从头开始 3D 生成工作流程。该节点生成填充零值的潜空间张量，作为后续 3D 生成过程的基础。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `resolution` | INT | 是 | 1 - 8192 | 潜空间的分辨率维度（默认值：3072） |
 | `batch_size` | INT | 是 | 1 - 4096 | 批次中的潜空间图像数量（默认值：1） |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

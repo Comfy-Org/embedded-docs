@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftReplaceBackgroundNode/zh.md)
 
-{heading_overview}
+## 概述
 
 根据提供的提示词替换图像背景。该节点使用 Recraft API 根据您的文本描述为图像生成新背景，让您在保持主体完整的同时完全变换背景。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
@@ -17,7 +17,7 @@
 
 **注意：** `seed` 参数控制节点何时重新执行，但由于外部 API 的特性，无法保证结果的可重复性。
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

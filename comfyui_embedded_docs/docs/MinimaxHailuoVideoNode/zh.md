@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuoVideoNode/zh.md)
 
-{heading_overview}
+## 概述
 
 使用 MiniMax Hailuo-02 模型从文本提示生成视频。您可以选择提供起始图像作为第一帧，以创建从该图像继续的视频。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
@@ -17,7 +17,7 @@
 
 **注意：** 当使用 MiniMax-Hailuo-02 模型并选择 1080P 分辨率时，视频时长限制为 6 秒。
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

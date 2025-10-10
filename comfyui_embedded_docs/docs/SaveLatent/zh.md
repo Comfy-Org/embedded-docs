@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/zh.md)
 
-{heading_overview}
+## 概述
 
 SaveLatent 节点将潜在张量以文件形式保存到磁盘，供后续使用或共享。该节点接收潜在样本并将其保存到输出目录，同时可包含提示信息等元数据。节点会自动处理文件命名和组织，同时保留潜在数据结构。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
@@ -13,7 +13,7 @@ SaveLatent 节点将潜在张量以文件形式保存到磁盘，供后续使用
 | `prompt` | PROMPT | 否 | - | 要包含在元数据中的提示信息（隐藏参数） |
 | `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 要包含在元数据中的额外PNG信息（隐藏参数） |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|

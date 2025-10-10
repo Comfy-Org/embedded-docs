@@ -1,10 +1,10 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/zh.md)
 
-# {heading_overview}
+# ## 概述
 
 Kling 首尾帧转视频节点可创建一个在提供的起始图像和结束图像之间过渡的视频序列。它会生成中间所有帧，从而产生从第一帧到最后一帧的平滑转换。此节点调用图像转视频 API，但仅支持与 `image_tail` 请求字段配合使用的输入选项。
 
-## {heading_inputs}
+## ## 输入
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |------|-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Kling 首尾帧转视频节点可创建一个在提供的起始图像和结束�
 - `start_frame` 的宽高比必须在 1:2.5 和 2.5:1 之间
 - Base64 编码的图像不应包含 "data:image" 前缀
 
-## {heading_outputs}
+## ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |----------|-----------|-------------|

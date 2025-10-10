@@ -1,16 +1,16 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/zh.md)
 
-{heading_overview}
+## 概述
 
 此节点允许您选择徽标栅格样式并从可用的子样式中进行选择。它专门用于生成具有基于栅格的样式选项的徽标设计，为徽标创建提供各种视觉处理效果。
 
-{heading_inputs}
+## 输入
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `substyle` | STRING | 是 | 提供多个选项 | 应用于徽标生成的具体徽标栅格子样式 |
 
-{heading_outputs}
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
