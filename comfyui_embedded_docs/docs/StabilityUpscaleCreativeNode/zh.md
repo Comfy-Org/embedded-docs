@@ -1,0 +1,22 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleCreativeNode/zh.md)
+
+{heading_overview}
+
+将图像放大至 4K 分辨率，同时保持最小程度的改动。此节点采用 Stability AI 的创意放大技术，在提升图像分辨率的同时保留原始内容并添加细腻的创意细节。
+
+{heading_inputs}
+
+| 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | 是 | - | 需要放大的输入图像 |
+| `prompt` | STRING | 是 | - | 期望在输出图像中看到的内容。使用强描述性提示词明确定义元素、颜色和主体将获得更佳效果。（默认：空字符串） |
+| `creativity` | FLOAT | 是 | 0.1-0.5 | 控制创建不受初始图像严格约束的附加细节的可能性。（默认：0.3） |
+| `style_preset` | COMBO | 是 | 提供多种选项 | 可选的目标生成图像风格预设。包含 Stability AI 提供的多种风格预设选项。 |
+| `seed` | INT | 是 | 0-4294967294 | 用于生成噪声的随机种子。（默认：0） |
+| `negative_prompt` | STRING | 否 | - | 不希望出现在输出图像中的关键词。此为高级功能。（默认：空字符串） |
+
+{heading_outputs}
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `image` | IMAGE | 放大至 4K 分辨率的图像 |

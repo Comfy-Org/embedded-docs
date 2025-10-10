@@ -1,0 +1,19 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentOperationSharpen/zh.md)
+
+{heading_overview}
+
+LatentOperationSharpen 节点使用高斯核对潜空间表示应用锐化效果。其工作原理包括对潜空间数据进行归一化处理，应用自定义锐化核进行卷积运算，然后恢复原始亮度。这样可以增强潜空间表示中的细节和边缘。
+
+{heading_inputs}
+
+| 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `sharpen_radius` | INT | 否 | 1-31 | 锐化核的半径（默认值：9） |
+| `sigma` | FLOAT | 否 | 0.1-10.0 | 高斯核的标准差（默认值：1.0） |
+| `alpha` | FLOAT | 否 | 0.0-5.0 | 锐化强度因子（默认值：0.1） |
+
+{heading_outputs}
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `operation` | LATENT_OPERATION | 返回一个可应用于潜空间数据的锐化操作 |

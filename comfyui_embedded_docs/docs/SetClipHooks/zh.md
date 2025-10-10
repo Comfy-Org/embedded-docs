@@ -1,0 +1,20 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetClipHooks/zh.md)
+
+{heading_overview}
+
+SetClipHooks 节点允许您向 CLIP 模型应用自定义钩子，从而能够对其行为进行高级修改。该节点可将钩子应用于条件输出，并可选择启用剪辑调度功能。此节点会创建输入 CLIP 模型的克隆副本，并应用指定的钩子配置。
+
+{heading_inputs}
+
+| 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `clip` | CLIP | 是 | - | 要应用钩子的 CLIP 模型 |
+| `apply_to_conds` | BOOLEAN | 是 | - | 是否对条件输出应用钩子（默认值：True） |
+| `schedule_clip` | BOOLEAN | 是 | - | 是否启用剪辑调度功能（默认值：False） |
+| `hooks` | HOOKS | 否 | - | 可选的要应用于 CLIP 模型的钩子组 |
+
+{heading_outputs}
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `clip` | CLIP | 应用了指定钩子的 CLIP 模型克隆副本 |

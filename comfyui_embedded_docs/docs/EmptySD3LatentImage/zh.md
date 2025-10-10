@@ -1,0 +1,17 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptySD3LatentImage/zh.md)
+
+EmptySD3LatentImage 节点可创建专为 Stable Diffusion 3 模型格式化的空白潜空间图像张量。它会生成一个填充零值的张量，该张量具有 SD3 流程所需的正确维度和结构。这通常用作图像生成流程的起点。
+
+## 输入参数
+
+| 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `width` | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） | 输出潜空间图像的宽度（单位：像素，默认值：1024） |
+| `height` | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） | 输出潜空间图像的高度（单位：像素，默认值：1024） |
+| `batch_size` | INT | 是 | 1 至 4096 | 单批次生成的潜空间图像数量（默认值：1） |
+
+## 输出结果
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `LATENT` | LATENT | 包含具有 SD3 兼容维度的空白样本的潜空间张量 |

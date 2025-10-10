@@ -1,0 +1,28 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/zh.md)
+
+通过 OpenAI 的 GPT Image 1 端点同步生成图像。此节点可根据文本提示创建新图像，或在提供输入图像和可选遮罩时编辑现有图像。
+
+## 输入参数
+
+| 参数名 | 数据类型 | 必填 | 取值范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | 是 | - | GPT Image 1 的文本提示（默认：""） |
+| `seed` | INT | 否 | 0 至 2147483647 | 生成随机种子（默认：0）- 后端尚未实现 |
+| `quality` | COMBO | 否 | "low"<br>"medium"<br>"high" | 图像质量，影响成本和生成时间（默认："low"） |
+| `background` | COMBO | 否 | "opaque"<br>"transparent" | 返回带背景或不带背景的图像（默认："opaque"） |
+| `size` | COMBO | 否 | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024" | 图像尺寸（默认："auto"） |
+| `n` | INT | 否 | 1 至 8 | 生成图像数量（默认：1） |
+| `image` | IMAGE | 否 | - | 用于图像编辑的可选参考图像（默认：None） |
+| `mask` | MASK | 否 | - | 用于修复的可选遮罩（白色区域将被替换）（默认：None） |
+
+**参数约束：**
+- 当提供 `image` 时，节点切换到图像编辑模式
+- 只有在提供 `image` 时才能使用 `mask`
+- 使用 `mask` 时仅支持单张图像（批次大小必须为 1）
+- `mask` 和 `image` 必须具有相同尺寸
+
+## 输出参数
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `IMAGE` | IMAGE | 生成或编辑后的图像 |

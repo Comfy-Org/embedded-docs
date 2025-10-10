@@ -1,0 +1,21 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVCropGuides/zh.md)
+
+{heading_overview}
+
+LTXVCropGuides 节点通过移除关键帧信息并调整潜在维度，为视频生成处理条件输入和潜在输入。该节点会裁剪潜在图像和噪声掩码以排除关键帧部分，同时清除正负条件输入中的关键帧索引。这为不需要关键帧引导的视频生成工作流程准备了数据。
+
+{heading_inputs}
+
+| 参数 | 数据类型 | 必需 | 范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `positive` | CONDITIONING | 是 | - | 包含生成引导信息的正条件输入 |
+| `negative` | CONDITIONING | 是 | - | 包含生成过程中需要避免内容的引导信息的负条件输入 |
+| `latent` | LATENT | 是 | - | 包含图像样本和噪声掩码数据的潜在表示 |
+
+{heading_outputs}
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `positive` | CONDITIONING | 已清除关键帧索引的处理后正条件输入 |
+| `negative` | CONDITIONING | 已清除关键帧索引的处理后负条件输入 |
+| `latent` | LATENT | 包含调整后样本和噪声掩码的裁剪后潜在表示 |

@@ -1,0 +1,26 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaVideoNode/zh.md)
+
+{heading_overview}
+
+根据提示词和输出设置同步生成视频。此节点使用文本描述和各种生成参数来创建视频内容，在生成过程完成后输出最终视频。
+
+{heading_inputs}
+
+| 参数 | 数据类型 | 必需 | 范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | 是 | - | 视频生成的提示词（默认：空字符串） |
+| `model` | COMBO | 是 | 多个可用选项 | 要使用的视频生成模型 |
+| `aspect_ratio` | COMBO | 是 | 多个可用选项 | 生成视频的宽高比（默认：16:9） |
+| `resolution` | COMBO | 是 | 多个可用选项 | 视频的输出分辨率（默认：540p） |
+| `duration` | COMBO | 是 | 多个可用选项 | 生成视频的时长 |
+| `loop` | BOOLEAN | 是 | - | 视频是否应循环播放（默认：False） |
+| `seed` | INT | 是 | 0 到 18446744073709551615 | 用于确定节点是否应重新运行的种子值；无论种子值如何，实际结果都是非确定性的（默认：0） |
+| `luma_concepts` | CUSTOM | 否 | - | 通过 Luma Concepts 节点控制摄像机运动的可选摄像机概念 |
+
+**注意：** 使用 `ray_1_6` 模型时，`duration` 和 `resolution` 参数会自动设置为 None 且不会影响生成过程。
+
+{heading_outputs}
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `output` | VIDEO | 生成的视频文件 |

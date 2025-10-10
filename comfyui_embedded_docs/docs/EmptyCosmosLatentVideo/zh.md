@@ -1,0 +1,18 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyCosmosLatentVideo/zh.md)
+
+EmptyCosmosLatentVideo 节点可创建具有指定尺寸的空潜视频张量。它生成一个填充零值的潜表示，可作为视频生成工作流程的起点，并支持可配置的宽度、高度、长度和批次大小参数。
+
+## 输入参数
+
+| 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `width` | INT | 是 | 16 至 MAX_RESOLUTION | 潜视频的宽度（单位：像素），默认值：1280，必须能被16整除 |
+| `height` | INT | 是 | 16 至 MAX_RESOLUTION | 潜视频的高度（单位：像素），默认值：704，必须能被16整除 |
+| `length` | INT | 是 | 1 至 MAX_RESOLUTION | 潜视频的帧数，默认值：121 |
+| `batch_size` | INT | 否 | 1 至 4096 | 单批次生成的潜视频数量，默认值：1 |
+
+## 输出结果
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `samples` | LATENT | 生成的空潜视频张量，其数值均为零 |
