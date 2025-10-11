@@ -1,0 +1,28 @@
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImageGenerationNode/ja.md)
+
+Kling Image Generation Nodeは、テキストプロンプトから画像を生成するノードで、ガイダンス用の参照画像を使用するオプションがあります。テキストの説明と参照設定に基づいて1つ以上の画像を作成し、生成された画像を出力として返します。
+
+## 入力パラメータ
+
+| パラメータ名 | データ型 | 必須 | 範囲 | 説明 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | はい | - | ポジティブなテキストプロンプト |
+| `negative_prompt` | STRING | はい | - | ネガティブなテキストプロンプト |
+| `image_type` | COMBO | はい | KlingImageGenImageReferenceTypeのオプション<br>（ソースコードから抽出） | 画像参照タイプの選択 |
+| `image_fidelity` | FLOAT | はい | 0.0 - 1.0 | ユーザーがアップロードした画像の参照強度（デフォルト: 0.5） |
+| `human_fidelity` | FLOAT | はい | 0.0 - 1.0 | 被写体の参照類似度（デフォルト: 0.45） |
+| `model_name` | COMBO | はい | "kling-v1"<br>（およびKlingImageGenModelNameの他のオプション） | 画像生成用のモデル選択（デフォルト: "kling-v1"） |
+| `aspect_ratio` | COMBO | はい | "16:9"<br>（およびKlingImageGenAspectRatioの他のオプション） | 生成画像のアスペクト比（デフォルト: "16:9"） |
+| `n` | INT | はい | 1 - 9 | 生成する画像の数（デフォルト: 1） |
+| `image` | IMAGE | いいえ | - | オプションの参照画像 |
+
+**パラメータ制約:**
+- `image`パラメータはオプションですが、提供された場合、kling-v1モデルは参照画像をサポートしていません
+- プロンプトとネガティブプロンプトには最大長の制限があります（MAX_PROMPT_LENGTH_IMAGE_GEN）
+- 参照画像が提供されない場合、`image_type`パラメータは自動的にNoneに設定されます
+
+## 出力
+
+| 出力名 | データ型 | 説明 |
+|-------------|-----------|-------------|
+| `output` | IMAGE | 入力パラメータに基づいて生成された画像 |
