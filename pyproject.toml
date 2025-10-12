@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "comfyui-embedded-docs"
-version = "0.2.6"
+version = "0.3.0"
 description = "Embedded documentation for ComfyUI nodes"
 readme = "README.md"
 requires-python = ">=3.9"
