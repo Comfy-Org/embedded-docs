@@ -5,7 +5,7 @@ Este nodo está diseñado para modificar el atributo de fuerza de un conjunto de
 | Parameter | Data Type | Description |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | El conjunto de acondicionamiento a modificar, que representa el estado actual de acondicionamiento que influye en el proceso de generación. |
-| `strength` | `FLOAT` | El valor de fuerza que se aplicará al conjunto de acondicionamiento, dictando la intensidad de su influencia. |
+| `fuerza` | `FLOAT` | El valor de fuerza que se aplicará al conjunto de acondicionamiento, dictando la intensidad de su influencia. |
 
 ## Salidas
 

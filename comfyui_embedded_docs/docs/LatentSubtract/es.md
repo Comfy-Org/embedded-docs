@@ -5,8 +5,8 @@ El nodo LatentSubtract está diseñado para restar una representación latente d
 
 | Parámetro    | Data Type | Descripción |
 |--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | El primer conjunto de muestras latentes del cual se restará. Sirve como base para la operación de resta. |
-| `samples2`   | `LATENT`    | El segundo conjunto de muestras latentes que se restará del primer conjunto. Esta operación puede alterar la salida del modelo generativo resultante eliminando atributos o características. |
+| `muestras1`   | `LATENT`    | El primer conjunto de muestras latentes del cual se restará. Sirve como base para la operación de resta. |
+| `muestras2`   | `LATENT`    | El segundo conjunto de muestras latentes que se restará del primer conjunto. Esta operación puede alterar la salida del modelo generativo resultante eliminando atributos o características. |
 
 ## Salidas
 

@@ -8,7 +8,7 @@ Le nœud StyleModelLoader est conçu pour charger un modèle de style à partir 
 
 | Type | Nom | Description | Data Type | Python dtype |
 |------|-----|-------------|-------------|--------------|
-| Requis | **`style_model_name`** | Spécifie le nom du modèle de style à charger. Ce nom est utilisé pour localiser le fichier du modèle dans une structure de répertoires prédéfinie, permettant le chargement dynamique de différents modèles de style en fonction des besoins de l'utilisateur ou de l'application. | COMBO[STRING] | `str` |
+| Requis | **`nom_du_modèle_de_style`** | Spécifie le nom du modèle de style à charger. Ce nom est utilisé pour localiser le fichier du modèle dans une structure de répertoires prédéfinie, permettant le chargement dynamique de différents modèles de style en fonction des besoins de l'utilisateur ou de l'application. | COMBO[STRING] | `str` |
 
 ## Sorties
 

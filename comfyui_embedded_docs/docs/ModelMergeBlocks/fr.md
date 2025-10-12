@@ -5,11 +5,11 @@ ModelMergeBlocks est conçu pour des opérations avancées de fusion de modèles
 
 | Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `model1`  | `MODEL`     | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les patchs du second modèle sont appliqués. |
-| `model2`  | `MODEL`     | Le second modèle à partir duquel les patchs sont extraits et appliqués au premier modèle, selon les ratios de mélange spécifiés. |
-| `input`   | `FLOAT`     | Spécifie le ratio de mélange pour la couche d'entrée des modèles. Il détermine combien de la couche d'entrée du second modèle est fusionnée dans le premier modèle. |
-| `middle`  | `FLOAT`     | Définit le ratio de mélange pour les couches intermédiaires des modèles. Ce paramètre contrôle le niveau d'intégration des couches intermédiaires des modèles. |
-| `out`     | `FLOAT`     | Détermine le ratio de mélange pour la couche de sortie des modèles. Il affecte la sortie finale en ajustant la contribution de la couche de sortie du second modèle. |
+| `modèle1`  | `MODEL`     | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les patchs du second modèle sont appliqués. |
+| `modèle2`  | `MODEL`     | Le second modèle à partir duquel les patchs sont extraits et appliqués au premier modèle, selon les ratios de mélange spécifiés. |
+| `entrée`   | `FLOAT`     | Spécifie le ratio de mélange pour la couche d'entrée des modèles. Il détermine combien de la couche d'entrée du second modèle est fusionnée dans le premier modèle. |
+| `milieu`  | `FLOAT`     | Définit le ratio de mélange pour les couches intermédiaires des modèles. Ce paramètre contrôle le niveau d'intégration des couches intermédiaires des modèles. |
+| `sortie`     | `FLOAT`     | Détermine le ratio de mélange pour la couche de sortie des modèles. Il affecte la sortie finale en ajustant la contribution de la couche de sortie du second modèle. |
 
 ## Sorties
 

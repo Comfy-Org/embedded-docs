@@ -5,7 +5,7 @@ El nodo VAEDecode está diseñado para decodificar representaciones latentes en 
 
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes que se decodificarán en imágenes. Es crucial para el proceso de decodificación ya que proporciona los datos comprimidos a partir de los cuales se reconstruyen las imágenes. |
+| `muestras` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes que se decodificarán en imágenes. Es crucial para el proceso de decodificación ya que proporciona los datos comprimidos a partir de los cuales se reconstruyen las imágenes. |
 | `vae`     | VAE       | El parámetro 'vae' especifica el modelo de Autoencoder Variacional que se utilizará para decodificar las representaciones latentes en imágenes. Es esencial para determinar el mecanismo de decodificación y la calidad de las imágenes reconstruidas. |
 
 ## Salidas

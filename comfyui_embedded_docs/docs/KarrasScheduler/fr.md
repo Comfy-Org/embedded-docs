@@ -5,7 +5,7 @@ Le nœud KarrasScheduler est conçu pour générer une séquence de niveaux de b
 
 | Paramètre   | Data Type | Description                                                                                      |
 |-------------|-------------|------------------------------------------------------------------------------------------------|
-| `steps`     | INT         | Spécifie le nombre d'étapes dans le calendrier de bruit, affectant la granularité de la séquence de sigmas générée. |
+| `étapes`     | INT         | Spécifie le nombre d'étapes dans le calendrier de bruit, affectant la granularité de la séquence de sigmas générée. |
 | `sigma_max` | FLOAT       | La valeur maximale de sigma dans le calendrier de bruit, définissant la limite supérieure des niveaux de bruit.                    |
 | `sigma_min` | FLOAT       | La valeur minimale de sigma dans le calendrier de bruit, définissant la limite inférieure des niveaux de bruit.                    |
 | `rho`       | FLOAT       | Un paramètre qui contrôle la forme de la courbe du calendrier de bruit, influençant la progression des niveaux de bruit de sigma_min à sigma_max. |

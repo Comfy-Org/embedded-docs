@@ -8,7 +8,7 @@ El nodo unCLIPCheckpointLoader está diseñado para cargar checkpoints específi
 
 | Campo      | Comfy dtype       | Descripción                                                                       |
 |------------|-------------------|-----------------------------------------------------------------------------------|
-| `ckpt_name`| `COMBO[STRING]`    | Especifica el nombre del checkpoint a cargar, identificando y recuperando el archivo de checkpoint correcto desde un directorio predefinido, determinando la inicialización de modelos y configuraciones. |
+| `nombre_ckpt`| `COMBO[STRING]`    | Especifica el nombre del checkpoint a cargar, identificando y recuperando el archivo de checkpoint correcto desde un directorio predefinido, determinando la inicialización de modelos y configuraciones. |
 
 ## Salidas
 

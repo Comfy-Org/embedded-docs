@@ -5,7 +5,7 @@ Le nœud PolyexponentialScheduler est conçu pour générer une séquence de niv
 
 | Paramètre   | Data Type | Description                                                                                                                                                        |
 | ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `steps`     | INT         | Spécifie le nombre d'étapes dans le processus de diffusion, affectant la granularité des niveaux de bruit générés.                                                 |
+| `étapes`     | INT         | Spécifie le nombre d'étapes dans le processus de diffusion, affectant la granularité des niveaux de bruit générés.                                                 |
 | `sigma_max` | FLOAT       | Le niveau de bruit maximal, fixant la limite supérieure du calendrier de bruit.                                                                                    |
 | `sigma_min` | FLOAT       | Le niveau de bruit minimal, fixant la limite inférieure du calendrier de bruit.                                                                                    |
 | `rho`       | FLOAT       | Un paramètre qui contrôle la forme du calendrier de bruit polyexponentiel, influençant la progression des niveaux de bruit entre les valeurs minimale et maximale. |

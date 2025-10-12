@@ -18,5 +18,5 @@ Ce nœud applique des transformations avancées de réseau de contrôle aux donn
 
 | Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `positive` | `CONDITIONING` | Les données de conditionnement positives modifiées après l'application des transformations du réseau de contrôle, reflétant les améliorations effectuées en fonction des paramètres d'entrée. |
+| `negative` | `CONDITIONING` | Les données de conditionnement positives modifiées après l'application des transformations du réseau de contrôle, reflétant les améliorations effectuées en fonction des paramètres d'entrée. |
 | `negative` | `CONDITIONING` | Les données de conditionnement négatives modifiées après l'application des transformations du réseau de contrôle, reflétant la suppression ou le retrait de caractéristiques spécifiques en fonction des paramètres d'entrée. |

@@ -5,7 +5,7 @@ Le nœud VPScheduler est conçu pour générer une séquence de niveaux de bruit
 
 | Paramètre   | Data Type | Description                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `steps`     | INT         | Spécifie le nombre d'étapes dans le processus de diffusion, affectant la granularité des niveaux de bruit générés.                              |
+| `étapes`     | INT         | Spécifie le nombre d'étapes dans le processus de diffusion, affectant la granularité des niveaux de bruit générés.                              |
 | `beta_d`    | FLOAT       | Détermine la distribution globale du niveau de bruit, influençant la variance des niveaux de bruit générés.                                 |
 | `beta_min`  | FLOAT       | Définit la limite minimale pour le niveau de bruit, garantissant que le bruit ne descend pas en dessous d'un certain seuil.                              |
 | `eps_s`     | FLOAT       | Ajuste la valeur epsilon de départ, affinant le niveau de bruit initial dans le processus de diffusion.                                    |

@@ -6,7 +6,7 @@ Le nœud `ImageColorToMask` est conçu pour convertir une couleur spécifiée da
 | Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `image`   | `IMAGE`     | Le paramètre 'image' représente l'image d'entrée à traiter. Il est crucial pour déterminer les zones de l'image qui correspondent à la couleur spécifiée à convertir en masque. |
-| `color`   | `INT`       | Le paramètre 'color' spécifie la couleur cible dans l'image à convertir en masque. Il joue un rôle clé dans l'identification des zones de couleur spécifiques à mettre en évidence dans le masque résultant. |
+| `couleur`   | `INT`       | Le paramètre 'color' spécifie la couleur cible dans l'image à convertir en masque. Il joue un rôle clé dans l'identification des zones de couleur spécifiques à mettre en évidence dans le masque résultant. |
 
 ## Sorties
 

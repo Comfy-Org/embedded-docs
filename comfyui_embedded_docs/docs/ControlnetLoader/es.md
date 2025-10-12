@@ -6,7 +6,7 @@ El nodo ControlNetLoader está diseñado para cargar un modelo ControlNet desde 
 
 | Campo             | Comfy dtype       | Descripción                                                                       |
 |-------------------|-------------------|-----------------------------------------------------------------------------------|
-| `control_net_name`| `COMBO[STRING]`    | Especifica el nombre del modelo ControlNet a cargar, utilizado para localizar el archivo del modelo dentro de una estructura de directorios predefinida. |
+| `nombre_control_net`| `COMBO[STRING]`    | Especifica el nombre del modelo ControlNet a cargar, utilizado para localizar el archivo del modelo dentro de una estructura de directorios predefinida. |
 
 ## Salidas
 

@@ -8,7 +8,7 @@ Le nœud VAELoader est conçu pour charger des modèles d'Autoencodeur Variation
 
 | Champ   | Comfy dtype       | Description                                                                                   |
 |---------|-------------------|-----------------------------------------------------------------------------------------------|
-| `vae_name` | `COMBO[STRING]`    | Spécifie le nom du VAE à charger, déterminant quel modèle VAE est récupéré et chargé, avec prise en charge d'une gamme de noms de VAE prédéfinis, y compris 'taesd' et 'taesdxl'. |
+| `nom_vae` | `COMBO[STRING]`    | Spécifie le nom du VAE à charger, déterminant quel modèle VAE est récupéré et chargé, avec prise en charge d'une gamme de noms de VAE prédéfinis, y compris 'taesd' et 'taesdxl'. |
 
 ## Sorties
 

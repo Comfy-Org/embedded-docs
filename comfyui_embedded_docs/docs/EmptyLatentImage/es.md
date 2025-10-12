@@ -4,9 +4,9 @@ El nodo `EmptyLatentImage` está diseñado para generar una representación de e
 
 | Parámetro   | Data Type | Descripción |
 |-------------|-------------|-------------|
-| `width`     | `INT`       | Especifica el ancho de la imagen latente a generar. Este parámetro influye directamente en las dimensiones espaciales de la representación latente resultante. |
-| `height`    | `INT`       | Determina la altura de la imagen latente a generar. Este parámetro es crucial para definir las dimensiones espaciales de la representación del espacio latente. |
-| `batch_size`| `INT`       | Controla el número de imágenes latentes a generar en un solo lote. Esto permite la generación de múltiples representaciones latentes simultáneamente, facilitando el procesamiento por lotes. |
+| `ancho`     | `INT`       | Especifica el ancho de la imagen latente a generar. Este parámetro influye directamente en las dimensiones espaciales de la representación latente resultante. |
+| `altura`    | `INT`       | Determina la altura de la imagen latente a generar. Este parámetro es crucial para definir las dimensiones espaciales de la representación del espacio latente. |
+| `tamaño_del_lote`| `INT`       | Controla el número de imágenes latentes a generar en un solo lote. Esto permite la generación de múltiples representaciones latentes simultáneamente, facilitando el procesamiento por lotes. |
 
 ## Salidas
 

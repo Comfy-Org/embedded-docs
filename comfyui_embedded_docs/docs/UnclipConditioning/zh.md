@@ -5,9 +5,9 @@
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
 | `CONDITIONING` | CONDITIONING | 基础条件数据，将向其添加CLIP视觉输出，作为进一步修改的基础。 |
-| `clip_vision_output` | `CLIP_VISION_OUTPUT` | 来自CLIP视觉模型的输出，提供被整合进条件的视觉上下文。 |
-| `strength` | `FLOAT` | 确定CLIP视觉输出对条件影响的强度。 |
-| `noise_augmentation` | `FLOAT` | 指定在将CLIP视觉输出整合进条件之前应用的噪声增强水平。 |
+| `CLIP视觉输出` | `CLIP_VISION_OUTPUT` | 来自CLIP视觉模型的输出，提供被整合进条件的视觉上下文。 |
+| `强度` | `FLOAT` | 确定CLIP视觉输出对条件影响的强度。 |
+| `噪波增强` | `FLOAT` | 指定在将CLIP视觉输出整合进条件之前应用的噪声增强水平。 |
 
 ## 输出
 

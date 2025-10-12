@@ -6,8 +6,8 @@ Le nœud DiffControlNetLoader est conçu pour charger des réseaux de contrôle 
 
 | Champ               | Comfy dtype       | Description                                                                                 |
 |---------------------|-------------------|---------------------------------------------------------------------------------------------|
-| `model`             | `MODEL`           | Le modèle de base auquel le réseau de contrôle différentiel sera appliqué, permettant la personnalisation du comportement du modèle. |
-| `control_net_name`  | `COMBO[STRING]`    | Identifie le réseau de contrôle différentiel spécifique à charger et à appliquer au modèle de base pour modifier son comportement. |
+| `modèle`             | `MODEL`           | Le modèle de base auquel le réseau de contrôle différentiel sera appliqué, permettant la personnalisation du comportement du modèle. |
+| `nom_control_net`  | `COMBO[STRING]`    | Identifie le réseau de contrôle différentiel spécifique à charger et à appliquer au modèle de base pour modifier son comportement. |
 
 ## Sorties
 

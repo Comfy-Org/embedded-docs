@@ -6,8 +6,8 @@ Imaginez que vous cuisinez un plat, `conditioning_to` est la recette de base, et
 
 | Paramètre             | Comfy dtype        | Description |
 |-----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | Représente l'ensemble principal de vecteurs de conditionnement auquel les vecteurs 'conditioning_from' seront concaténés. Il sert de base pour le processus de concaténation. |
-| `conditioning_from`   | `CONDITIONING`     | Se compose de vecteurs de conditionnement qui doivent être concaténés aux vecteurs 'conditioning_to'. Ce paramètre permet d'intégrer des informations de conditionnement supplémentaires dans l'ensemble existant. |
+| `conditionnement_vers`     | `CONDITIONING`     | Représente l'ensemble principal de vecteurs de conditionnement auquel les vecteurs 'conditioning_from' seront concaténés. Il sert de base pour le processus de concaténation. |
+| `conditionnement_de`   | `CONDITIONING`     | Se compose de vecteurs de conditionnement qui doivent être concaténés aux vecteurs 'conditioning_to'. Ce paramètre permet d'intégrer des informations de conditionnement supplémentaires dans l'ensemble existant. |
 
 ## Sorties
 

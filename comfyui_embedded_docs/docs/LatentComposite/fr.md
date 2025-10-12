@@ -5,11 +5,11 @@ Le nœud LatentComposite est conçu pour mélanger ou fusionner deux représenta
 
 | Paramètre    | Data Type | Description |
 |--------------|-------------|-------------|
-| `samples_to` | `LATENT`    | La représentation latente 'samples_to' où 'samples_from' sera composé. Elle sert de base pour l'opération de composition. |
-| `samples_from` | `LATENT` | La représentation latente 'samples_from' à composer sur 'samples_to'. Elle apporte ses caractéristiques ou ses traits à la sortie composite finale. |
+| `échantillons_vers` | `LATENT`    | La représentation latente 'samples_to' où 'samples_from' sera composé. Elle sert de base pour l'opération de composition. |
+| `échantillons_de` | `LATENT` | La représentation latente 'samples_from' à composer sur 'samples_to'. Elle apporte ses caractéristiques ou ses traits à la sortie composite finale. |
 | `x`          | `INT`      | La coordonnée x (position horizontale) où la latente 'samples_from' sera placée sur 'samples_to'. Elle détermine l'alignement horizontal du composite. |
 | `y`          | `INT`      | La coordonnée y (position verticale) où la latente 'samples_from' sera placée sur 'samples_to'. Elle détermine l'alignement vertical du composite. |
-| `feather`    | `INT`      | Un booléen indiquant si la latente 'samples_from' doit être redimensionnée pour correspondre à 'samples_to' avant la composition. Cela peut affecter l'échelle et la proportion du résultat composite. |
+| `plume`    | `INT`      | Un booléen indiquant si la latente 'samples_from' doit être redimensionnée pour correspondre à 'samples_to' avant la composition. Cela peut affecter l'échelle et la proportion du résultat composite. |
 
 ## Sorties
 

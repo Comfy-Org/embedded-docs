@@ -5,8 +5,8 @@ Le nœud ImageScaleToTotalPixels est conçu pour redimensionner les images à un
 | Paramètre       | Data Type | Description                                                                |
 |-----------------|-------------|----------------------------------------------------------------------------|
 | `image`         | `IMAGE`     | L'image d'entrée à agrandir au nombre total de pixels spécifié.            |
-| `upscale_method`| COMBO[STRING] | La méthode utilisée pour agrandir l'image. Elle affecte la qualité et les caractéristiques de l'image agrandie. |
-| `megapixels`    | `FLOAT`     | La taille cible de l'image en mégapixels. Cela détermine le nombre total de pixels dans l'image agrandie. |
+| `méthode_d'agrandissement`| COMBO[STRING] | La méthode utilisée pour agrandir l'image. Elle affecte la qualité et les caractéristiques de l'image agrandie. |
+| `mégapixels`    | `FLOAT`     | La taille cible de l'image en mégapixels. Cela détermine le nombre total de pixels dans l'image agrandie. |
 
 ## Sorties
 

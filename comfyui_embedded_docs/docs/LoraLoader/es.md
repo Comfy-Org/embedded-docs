@@ -13,15 +13,15 @@ Si necesita cargar múltiples modelos LoRA, puede encadenar directamente varios 
 
 | Nombre del Parámetro | Tipo de Datos | Función |
 | --- | --- | --- |
-| `model` | MODEL | Típicamente usado para conectar al modelo base |
+| `modelo` | MODEL | Típicamente usado para conectar al modelo base |
 | `clip` | CLIP | Típicamente usado para conectar al modelo CLIP |
-| `lora_name` | COMBO[STRING] | Seleccionar el nombre del modelo LoRA a utilizar |
-| `strength_model` | FLOAT | Rango de valores de -100.0 a 100.0, típicamente usado entre 0~1 para la generación diaria de imágenes. Valores más altos resultan en efectos de ajuste más pronunciados |
-| `strength_clip` | FLOAT | Rango de valores de -100.0 a 100.0, típicamente usado entre 0~1 para la generación diaria de imágenes. Valores más altos resultan en efectos de ajuste más pronunciados |
+| `nombre_lora` | COMBO[STRING] | Seleccionar el nombre del modelo LoRA a utilizar |
+| `fuerza_modelo` | FLOAT | Rango de valores de -100.0 a 100.0, típicamente usado entre 0~1 para la generación diaria de imágenes. Valores más altos resultan en efectos de ajuste más pronunciados |
+| `fuerza_clip` | FLOAT | Rango de valores de -100.0 a 100.0, típicamente usado entre 0~1 para la generación diaria de imágenes. Valores más altos resultan en efectos de ajuste más pronunciados |
 
 ## Salidas
 
 | Nombre del Parámetro | Tipo de Datos | Función |
 | --- | --- | --- |
-| `model` | MODEL | El modelo con ajustes LoRA aplicados |
+| `modelo` | MODEL | El modelo con ajustes LoRA aplicados |
 | `clip` | CLIP | La instancia CLIP con ajustes LoRA aplicados |

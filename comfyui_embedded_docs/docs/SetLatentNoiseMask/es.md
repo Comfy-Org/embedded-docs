@@ -5,8 +5,8 @@ Este nodo está diseñado para aplicar una máscara de ruido a un conjunto de mu
 
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | Las muestras latentes a las que se aplicará la máscara de ruido. Este parámetro es crucial para determinar el contenido base que será modificado. |
-| `mask`    | `MASK`      | La máscara que se aplicará a las muestras latentes. Define las áreas e intensidad de la alteración de ruido dentro de las muestras. |
+| `muestras` | `LATENT`    | Las muestras latentes a las que se aplicará la máscara de ruido. Este parámetro es crucial para determinar el contenido base que será modificado. |
+| `máscara`    | `MASK`      | La máscara que se aplicará a las muestras latentes. Define las áreas e intensidad de la alteración de ruido dentro de las muestras. |
 
 ## Salidas
 

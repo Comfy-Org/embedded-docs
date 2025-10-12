@@ -7,9 +7,9 @@ Le paramètre `ratio` détermine le ratio de mélange entre les deux modèles. L
 
 | Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `model1`  | `MODEL`     | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les patchs du second modèle sont appliqués. |
-| `model2`  | `MODEL`     | Le second modèle dont les patchs sont appliqués au premier modèle, influencés par le ratio spécifié. |
-| `ratio`   | `FLOAT`     | Lorsque cette valeur est 1, le modèle de sortie est 100% `model1`, et lorsque cette valeur est 0, le modèle de sortie est 100% `model2`. |
+| `modèle1`  | `MODEL`     | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les patchs du second modèle sont appliqués. |
+| `modèle2`  | `MODEL`     | Le second modèle dont les patchs sont appliqués au premier modèle, influencés par le ratio spécifié. |
+| `ratio`   | `FLOAT`     | Lorsque cette valeur est 1, le modèle de sortie est 100% `modèle1`, et lorsque cette valeur est 0, le modèle de sortie est 100% `modèle2`. |
 
 ## Sorties
 

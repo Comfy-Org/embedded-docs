@@ -8,7 +8,7 @@ El nodo VAELoader está diseñado para cargar modelos de Autoencoder Variacional
 
 | Campo   | Comfy dtype       | Descripción                                                                                   |
 |---------|-------------------|-----------------------------------------------------------------------------------------------|
-| `vae_name` | `COMBO[STRING]`    | Especifica el nombre del VAE a cargar, determinando qué modelo VAE se obtiene y carga, con soporte para una gama de nombres de VAE predefinidos, incluyendo 'taesd' y 'taesdxl'. |
+| `nombre_vae` | `COMBO[STRING]`    | Especifica el nombre del VAE a cargar, determinando qué modelo VAE se obtiene y carga, con soporte para una gama de nombres de VAE predefinidos, incluyendo 'taesd' y 'taesdxl'. |
 
 ## Salidas
 

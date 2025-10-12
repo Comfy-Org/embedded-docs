@@ -5,7 +5,7 @@ Le nœud LatentRotate est conçu pour faire pivoter les représentations latente
 
 | Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | Le paramètre 'samples' représente les représentations latentes des images à faire pivoter. Il est crucial pour déterminer le point de départ de l'opération de rotation. |
+| `échantillons` | `LATENT`    | Le paramètre 'samples' représente les représentations latentes des images à faire pivoter. Il est crucial pour déterminer le point de départ de l'opération de rotation. |
 | `rotation` | COMBO[STRING] | Le paramètre 'rotation' spécifie l'angle selon lequel les images latentes doivent être pivotées. Il influence directement l'orientation des images résultantes. |
 
 ## Sorties

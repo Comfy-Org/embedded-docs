@@ -5,9 +5,9 @@ Ce nœud est conçu pour extraire un sous-ensemble spécifique d'échantillons l
 
 | Paramètre     | Type de Donnée | Description |
 |---------------|-------------|-------------|
-| `samples`     | `LATENT`    | La collection d'échantillons latents à partir de laquelle un sous-ensemble sera extrait. Ce paramètre est crucial pour déterminer le lot source des échantillons à traiter. |
-| `batch_index` | `INT`       | Spécifie l'index de départ dans le lot à partir duquel le sous-ensemble d'échantillons commencera. Ce paramètre permet l'extraction ciblée d'échantillons à partir de positions spécifiques dans le lot. |
-| `length`      | `INT`       | Définit le nombre d'échantillons à extraire à partir de l'index de départ spécifié. Ce paramètre contrôle la taille du sous-ensemble à traiter, permettant une manipulation flexible des segments de lot. |
+| `échantillons`     | `LATENT`    | La collection d'échantillons latents à partir de laquelle un sous-ensemble sera extrait. Ce paramètre est crucial pour déterminer le lot source des échantillons à traiter. |
+| `index_de_batch` | `INT`       | Spécifie l'index de départ dans le lot à partir duquel le sous-ensemble d'échantillons commencera. Ce paramètre permet l'extraction ciblée d'échantillons à partir de positions spécifiques dans le lot. |
+| `longueur`      | `INT`       | Définit le nombre d'échantillons à extraire à partir de l'index de départ spécifié. Ce paramètre contrôle la taille du sous-ensemble à traiter, permettant une manipulation flexible des segments de lot. |
 
 ## Sorties
 

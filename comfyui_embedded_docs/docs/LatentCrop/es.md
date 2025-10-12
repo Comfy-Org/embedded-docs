@@ -5,9 +5,9 @@ El nodo LatentCrop está diseñado para realizar operaciones de recorte en repre
 
 | Parámetro | Data Type | Descripción |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes a recortar. Es crucial para definir los datos sobre los que se realizará la operación de recorte. |
-| `width`   | `INT`       | Especifica el ancho del área de recorte. Influye directamente en las dimensiones de la representación latente de salida. |
-| `height`  | `INT`       | Especifica la altura del área de recorte, afectando el tamaño de la representación latente recortada resultante. |
+| `muestras` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes a recortar. Es crucial para definir los datos sobre los que se realizará la operación de recorte. |
+| `ancho`   | `INT`       | Especifica el ancho del área de recorte. Influye directamente en las dimensiones de la representación latente de salida. |
+| `altura`  | `INT`       | Especifica la altura del área de recorte, afectando el tamaño de la representación latente recortada resultante. |
 | `x`       | `INT`       | Determina la coordenada x inicial del área de recorte, influyendo en la posición del recorte dentro de la representación latente original. |
 | `y`       | `INT`       | Determina la coordenada y inicial del área de recorte, estableciendo la posición del recorte dentro de la representación latente original. |
 

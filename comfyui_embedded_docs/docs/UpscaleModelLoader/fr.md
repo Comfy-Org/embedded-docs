@@ -8,7 +8,7 @@ Le nœud UpscaleModelLoader est conçu pour charger des modèles d'agrandissemen
 
 | Champ          | Comfy dtype       | Description                                                                       |
 |----------------|-------------------|-----------------------------------------------------------------------------------|
-| `model_name`   | `COMBO[STRING]`    | Spécifie le nom du modèle d'agrandissement à charger, identifiant et récupérant le fichier de modèle correct dans le répertoire des modèles d'agrandissement. |
+| `nom_du_modèle`   | `COMBO[STRING]`    | Spécifie le nom du modèle d'agrandissement à charger, identifiant et récupérant le fichier de modèle correct dans le répertoire des modèles d'agrandissement. |
 
 ## Sorties
 

@@ -5,8 +5,8 @@ El nodo RebatchImages está diseñado para reorganizar un lote de imágenes en u
 
 | Campo       | Data Type | Descripción                                                                         |
 |-------------|-------------|-------------------------------------------------------------------------------------|
-| `images`    | `IMAGE`     | Una lista de imágenes que se reorganizarán. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de reorganización. |
-| `batch_size`| `INT`       | Especifica el tamaño deseado de los lotes de salida. Este parámetro influye directamente en cómo se agrupan y procesan las imágenes de entrada, impactando la estructura de la salida. |
+| `imagenes`    | `IMAGE`     | Una lista de imágenes que se reorganizarán. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de reorganización. |
+| `tamaño_lote`| `INT`       | Especifica el tamaño deseado de los lotes de salida. Este parámetro influye directamente en cómo se agrupan y procesan las imágenes de entrada, impactando la estructura de la salida. |
 
 ## Salidas
 

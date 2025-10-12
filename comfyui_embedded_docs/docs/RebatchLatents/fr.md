@@ -6,7 +6,7 @@ Le nœud RebatchLatents est conçu pour réorganiser un lot de représentations 
 | Paramètre    | Data Type | Description |
 |--------------|-------------|-------------|
 | `latents`    | `LATENT`    | Le paramètre 'latents' représente les représentations latentes d'entrée à réorganiser. Il est crucial pour déterminer la structure et le contenu du lot de sortie. |
-| `batch_size` | `INT`       | Le paramètre 'batch_size' spécifie le nombre souhaité d'échantillons par lot dans la sortie. Il influence directement le regroupement et la division des latents d'entrée en nouveaux lots. |
+| `taille_de_lot` | `INT`       | Le paramètre 'batch_size' spécifie le nombre souhaité d'échantillons par lot dans la sortie. Il influence directement le regroupement et la division des latents d'entrée en nouveaux lots. |
 
 ## Sorties
 

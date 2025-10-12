@@ -4,8 +4,8 @@ El nodo ConditioningConcat está diseñado para concatenar vectores de condicion
 
 | Parámetro             | Comfy dtype        | Descripción |
 |-----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | Representa el conjunto principal de vectores de condicionamiento al que se concatenarán los vectores 'conditioning_from'. Sirve como base para el proceso de concatenación. |
-| `conditioning_from`   | `CONDITIONING`     | Consiste en vectores de condicionamiento que se concatenarán a los vectores 'conditioning_to'. Este parámetro permite integrar información de condicionamiento adicional en el conjunto existente. |
+| `acondicionamiento_a`     | `CONDITIONING`     | Representa el conjunto principal de vectores de condicionamiento al que se concatenarán los vectores 'conditioning_from'. Sirve como base para el proceso de concatenación. |
+| `acondicionamiento_de`   | `CONDITIONING`     | Consiste en vectores de condicionamiento que se concatenarán a los vectores 'conditioning_to'. Este parámetro permite integrar información de condicionamiento adicional en el conjunto existente. |
 
 ## Salidas
 

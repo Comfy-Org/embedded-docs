@@ -5,9 +5,9 @@ Ce nœud est conçu pour des opérations avancées de fusion de modèles, spéci
 
 | Paramètre     | Type de Donnée | Description |
 |---------------|--------------|-------------|
-| `model1`      | `MODEL`     | Le modèle de base dont les paramètres seront soustraits. |
-| `model2`      | `MODEL`     | Le modèle dont les paramètres seront soustraits du modèle de base. |
-| `multiplier`  | `FLOAT`     | Une valeur flottante qui échelle l'effet de soustraction sur les paramètres du modèle de base. |
+| `modèle1`      | `MODEL`     | Le modèle de base dont les paramètres seront soustraits. |
+| `modèle2`      | `MODEL`     | Le modèle dont les paramètres seront soustraits du modèle de base. |
+| `multiplicateur`  | `FLOAT`     | Une valeur flottante qui échelle l'effet de soustraction sur les paramètres du modèle de base. |
 
 ## Sorties
 

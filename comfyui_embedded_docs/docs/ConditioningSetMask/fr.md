@@ -7,9 +7,9 @@ Ce nœud est conçu pour modifier le conditionnement d'un modèle génératif en
 | Paramètre     | Type de Donnée | Description |
 |---------------|--------------|-------------|
 | `CONDITIONING` | CONDITIONING | Les données de conditionnement à modifier. Elles servent de base pour appliquer les ajustements de masque et de force. |
-| `mask`        | `MASK`       | Un tenseur de masque qui spécifie les zones à modifier au sein du conditionnement. |
-| `strength`    | `FLOAT`      | La force de l'effet du masque sur le conditionnement, permettant un ajustement précis des modifications appliquées. |
-| `set_cond_area` | COMBO[STRING] | Détermine si l'effet du masque est appliqué à la zone par défaut ou limité par le masque lui-même, offrant une flexibilité dans le ciblage de régions spécifiques. |
+| `masque`        | `MASK`       | Un tenseur de masque qui spécifie les zones à modifier au sein du conditionnement. |
+| `force`    | `FLOAT`      | La force de l'effet du masque sur le conditionnement, permettant un ajustement précis des modifications appliquées. |
+| `définir_zone_cond` | COMBO[STRING] | Détermine si l'effet du masque est appliqué à la zone par défaut ou limité par le masque lui-même, offrant une flexibilité dans le ciblage de régions spécifiques. |
 
 ## Sorties
 
