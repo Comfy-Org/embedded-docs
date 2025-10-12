@@ -13,6 +13,7 @@
 | `mode` | COMBO | Non | Plusieurs options disponibles | La configuration à utiliser pour la génération de vidéo suivant le format : mode / durée / nom_du_modèle. (par défaut : troisième option parmi les modes disponibles) |
 
 **Contraintes des images :**
+
 - `start_frame` et `end_frame` doivent tous deux être fournis et ne peuvent pas dépasser 10 Mo
 - Résolution minimale : 300×300 pixels pour les deux images
 - Le ratio d'aspect de `start_frame` doit être compris entre 1:2,5 et 2,5:1

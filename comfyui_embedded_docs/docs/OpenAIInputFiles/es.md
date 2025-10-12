@@ -10,6 +10,7 @@ Carga y formatea archivos de entrada para la API de OpenAI. Este nodo prepara ar
 | `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | No | N/A | Archivo(s) adicional opcional para agrupar junto con el archivo cargado desde este nodo. Permite encadenar archivos de entrada para que un solo mensaje pueda incluir múltiples archivos de entrada. |
 
 **Restricciones de Archivos:**
+
 - Solo se admiten archivos .txt y .pdf
 - Tamaño máximo de archivo: 32MB
 - Los archivos se cargan desde el directorio de entrada

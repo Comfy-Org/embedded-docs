@@ -11,6 +11,7 @@ Kling Lip Sync Audio to Video 节点能够将视频文件中的口型动作与�
 | `语音语言` | COMBO | 否 | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | 音频文件中人声的语言（默认值："en"） |
 
 **重要限制条件：**
+
 - 音频文件大小不得超过 5MB
 - 视频文件大小不得超过 100MB
 - 视频尺寸的高/宽应在 720px 至 1920px 之间

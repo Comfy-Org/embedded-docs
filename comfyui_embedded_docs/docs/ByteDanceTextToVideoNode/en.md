@@ -16,6 +16,7 @@ The ByteDance Text to Video node generates videos using ByteDance models through
 | `watermark` | BOOLEAN | Boolean | True | - | Whether to add an "AI generated" watermark to the video. (Optional) |
 
 **Parameter Constraints:**
+
 - The `prompt` parameter must contain at least 1 character after whitespace removal
 - The `prompt` parameter cannot contain the following text parameters: "resolution", "ratio", "duration", "seed", "camerafixed", "watermark"
 - The `duration` parameter is limited to values between 3 and 12 seconds

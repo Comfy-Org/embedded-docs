@@ -13,6 +13,7 @@ The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models b
 | `empty_padding` | COMBO | Selection | - | ["none", "empty_prompt"] | Controls how empty text inputs are handled |
 
 **Parameter Constraints:**
+
 - When `empty_padding` is set to "none", empty text inputs for `clip_g`, `clip_l`, or `t5xxl` will result in empty token lists instead of padding
 - The node automatically balances token lengths between `clip_l` and `clip_g` inputs by padding the shorter one with empty tokens when lengths differ
 - All text inputs support dynamic prompts and multiline text entry

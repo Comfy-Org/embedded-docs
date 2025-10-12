@@ -24,6 +24,7 @@ WanAnimateToVideoノードは、ポーズ参照、顔の表情、背景要素な
 | `video_frame_offset` | INT | いいえ | 0 から MAX_RESOLUTION | すべての入力動画でシークするフレーム数。チャンク単位でより長い動画を生成するために使用されます。動画を拡張するには、前のノードのvideo_frame_offset出力に接続してください。（デフォルト: 0, ステップ: 1） |
 
 **パラメータの制約:**
+
 - `pose_video`が提供され、`trim_to_pose_video`ロジックがアクティブな場合、出力の長さはポーズ動画の長さに合わせて調整されます
 - `face_video`は処理時に自動的に512x512解像度にリサイズされます
 - `continue_motion`フレームは`continue_motion_max_frames`パラメータによって制限されます

@@ -16,6 +16,7 @@ Le nœud HunyuanImageToVideo convertit des images en représentations latentes v
 | `image_de_départ` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la génération vidéo |
 
 **Note :** Lorsque `start_image` est fournie, le nœud utilise différentes méthodes de guidage selon le `guidance_type` sélectionné :
+
 - "v1 (concat)" : Concatène le latent d'image avec le latent vidéo
 - "v2 (replace)" : Remplace les images vidéo initiales par le latent d'image
 - "custom" : Utilise l'image comme latent de référence pour le guidage

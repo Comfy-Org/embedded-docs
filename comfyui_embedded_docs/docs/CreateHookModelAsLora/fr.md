@@ -12,6 +12,7 @@ Ce nœud crée un modèle hook sous forme de LoRA (Adaptation Bas-Rang) en charg
 | `crochets_precedents` | HOOKS | Non | - | Hooks précédents optionnels à combiner avec les nouveaux hooks LoRA créés |
 
 **Contraintes des paramètres :**
+
 - Le paramètre `ckpt_name` charge les points de contrôle à partir du dossier des points de contrôle disponibles
 - Les deux paramètres de force acceptent des valeurs de -20.0 à 20.0 avec des incréments de 0.01
 - Lorsque `prev_hooks` n'est pas fourni, le nœud crée un nouveau groupe de hooks

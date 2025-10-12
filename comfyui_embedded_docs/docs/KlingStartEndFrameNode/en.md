@@ -15,6 +15,7 @@ Kling Start-End Frame to Video node creates a video sequence that transitions be
 | `mode` | COMBO | No | Multiple options available | The configuration to use for the video generation following the format: mode / duration / model_name. (default: third option from available modes) |
 
 **Image Constraints:**
+
 - Both `start_frame` and `end_frame` must be provided and cannot exceed 10MB file size
 - Minimum resolution: 300×300 pixels for both images
 - `start_frame` aspect ratio must be between 1:2.5 and 2.5:1

@@ -15,6 +15,7 @@ The Moonvalley Marey Image to Video node transforms a reference image into a vid
 | `steps` | INT | No | 1 - 100 | Number of denoising steps (default: 33, step: 1) |
 
 **Constraints:**
+
 - The input image must have dimensions between 300x300 pixels and the maximum allowed height/width
 - Prompt and negative prompt text length is limited to the Moonvalley Marey maximum prompt length
 

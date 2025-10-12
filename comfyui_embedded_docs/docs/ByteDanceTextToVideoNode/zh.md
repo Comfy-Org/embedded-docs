@@ -16,6 +16,7 @@
 | `watermark` | BOOLEAN | 布尔值 | True | - | 是否在视频上添加"AI生成"水印。（可选） |
 
 **参数约束：**
+
 - `prompt` 参数在去除空白字符后必须至少包含 1 个字符
 - `prompt` 参数不能包含以下文本参数："resolution"、"ratio"、"duration"、"seed"、"camerafixed"、"watermark"
 - `duration` 参数限制在 3 到 12 秒之间的值

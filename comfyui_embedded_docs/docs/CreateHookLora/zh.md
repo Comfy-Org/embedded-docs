@@ -12,6 +12,7 @@ Create Hook LoRA 节点用于生成钩子对象，以便对模型应用 LoRA（�
 | `前一个约束` | HOOKS | 否 | 不适用 | 可选的现有钩子组，将与新创建的 LoRA 钩子组合 |
 
 **参数约束：**
+
 - 当 `strength_model` 和 `strength_clip` 同时设置为 0 时，节点将跳过创建新 LoRA 钩子并直接返回现有钩子
 - 节点会缓存最后加载的 LoRA 文件，在重复使用相同 LoRA 时优化性能
 

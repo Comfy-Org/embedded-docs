@@ -14,6 +14,7 @@ El nodo Runway First-Last-Frame to Video genera videos cargando fotogramas clave
 | `seed` | INT | No | 0-4294967295 | Semilla aleatoria para la generación (valor por defecto: 0) |
 
 **Restricciones de Parámetros:**
+
 - El `prompt` debe contener al menos 1 carácter
 - Tanto `start_frame` como `end_frame` deben tener dimensiones máximas de 7999x7999 píxeles
 - Tanto `start_frame` como `end_frame` deben tener relaciones de aspecto entre 0.5 y 2.0

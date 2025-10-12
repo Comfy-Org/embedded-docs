@@ -14,6 +14,7 @@ Runway First-Last-Frame to Video 노드는 첫 번째와 마지막 키프레임�
 | `seed` | INT | 아니오 | 0-4294967295 | 생성을 위한 랜덤 시드 (기본값: 0) |
 
 **매개변수 제약 조건:**
+
 - `prompt`는 최소 1자 이상을 포함해야 합니다
 - `start_frame`과 `end_frame` 모두 최대 크기가 7999x7999 픽셀이어야 합니다
 - `start_frame`과 `end_frame` 모두 화면비가 0.5에서 2.0 사이여야 합니다

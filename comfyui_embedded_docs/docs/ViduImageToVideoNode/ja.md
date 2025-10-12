@@ -15,6 +15,7 @@ Vidu Image To Video Generationノードは、開始画像とオプションの�
 | `movement_amplitude` | COMBO | いいえ | `auto`<br>*その他のMovementAmplitudeオプション* | フレーム内のオブジェクトの動きの振幅（デフォルト: auto） |
 
 **制約事項:**
+
 - 入力画像は1つのみ許可されます（複数の画像を処理できません）
 - 入力画像のアスペクト比は1:4から4:1の間である必要があります
 

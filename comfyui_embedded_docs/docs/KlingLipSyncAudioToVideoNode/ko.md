@@ -11,6 +11,7 @@ Kling Lip Sync Audio to Video 노드는 비디오 파일의 입 모양을 오디
 | `음성 언어` | COMBO | 아니오 | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | 오디오 파일 내 음성의 언어 (기본값: "en") |
 
 **중요 제약사항:**
+
 - 오디오 파일 크기는 5MB를 초과할 수 없음
 - 비디오 파일 크기는 100MB를 초과할 수 없음
 - 비디오 해상도는 높이/너비 기준 720px에서 1920px 사이여야 함

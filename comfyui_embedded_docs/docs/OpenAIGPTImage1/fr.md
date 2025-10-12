@@ -16,6 +16,7 @@ Génère des images de manière synchrone via le point de terminaison GPT Image 
 | `mask` | MASK | Non | - | Masque optionnel pour l'inpainting (les zones blanches seront remplacées) (par défaut : Aucune) |
 
 **Contraintes des paramètres :**
+
 - Lorsque `image` est fournie, le nœud passe en mode édition d'image
 - `mask` ne peut être utilisé que lorsque `image` est fournie
 - Lors de l'utilisation de `mask`, seules les images uniques sont prises en charge (la taille du lot doit être de 1)

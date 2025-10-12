@@ -15,6 +15,7 @@ El nodo Generación de Video a partir de Imagen Vidu crea videos a partir de una
 | `movement_amplitude` | COMBO | No | `auto`<br>*Otras opciones de MovementAmplitude* | La amplitud de movimiento de los objetos en el fotograma (por defecto: auto) |
 
 **Restricciones:**
+
 - Solo se permite una imagen de entrada (no puede procesar múltiples imágenes)
 - La imagen de entrada debe tener una relación de aspecto entre 1:4 y 4:1
 

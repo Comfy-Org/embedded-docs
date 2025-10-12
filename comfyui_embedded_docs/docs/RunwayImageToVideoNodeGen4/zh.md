@@ -13,6 +13,7 @@ Runway Image to Video (Gen4 Turbo) 节点使用 Runway 的 Gen4 Turbo 模型，�
 | `seed` | INT | 否 | 0 到 4294967295 | 用于生成的随机种子（默认：0） |
 
 **参数约束：**
+
 - `start_frame` 图像的尺寸不得超过 7999x7999 像素
 - `start_frame` 图像的宽高比必须在 0.5 到 2.0 之间
 - `prompt` 必须至少包含一个字符

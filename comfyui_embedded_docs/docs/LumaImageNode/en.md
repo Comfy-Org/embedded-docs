@@ -16,6 +16,7 @@ Generates images synchronously based on prompt and aspect ratio. This node creat
 | `character_image` | IMAGE | No | - | Character reference images; can be a batch of multiple, up to 4 images can be considered |
 
 **Parameter Constraints:**
+
 - The `image_luma_ref` parameter can accept up to 4 reference images
 - The `character_image` parameter can accept up to 4 character reference images
 - The `style_image` parameter accepts only 1 style reference image

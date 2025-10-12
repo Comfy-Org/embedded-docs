@@ -13,6 +13,7 @@ Le nœud CLIPTextEncodeSD3 traite les entrées textuelles pour les modèles Stab
 | `remplissage_vide` | COMBO | Sélection | - | ["none", "empty_prompt"] | Contrôle la gestion des entrées textuelles vides |
 
 **Contraintes des paramètres :**
+
 - Lorsque `empty_padding` est défini sur "none", les entrées textuelles vides pour `clip_g`, `clip_l` ou `t5xxl` entraîneront des listes de tokens vides au lieu d'un remplissage
 - Le nœud équilibre automatiquement les longueurs de tokens entre les entrées `clip_l` et `clip_g` en complétant la plus courte avec des tokens vides lorsque les longueurs diffèrent
 - Toutes les entrées textuelles prennent en charge les invites dynamiques et la saisie de texte multiligne

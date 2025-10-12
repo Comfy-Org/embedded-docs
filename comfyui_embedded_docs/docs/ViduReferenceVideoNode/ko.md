@@ -16,6 +16,7 @@ Vidu Reference Video 노드는 여러 참조 이미지와 텍스트 프롬프트
 | `movement_amplitude` | COMBO | 아니오 | `"auto"`<br>`"low"`<br>`"medium"`<br>`"high"` | 프레임 내 객체의 움직임 진폭 (기본값: "auto") |
 
 **제약 사항 및 한계:**
+
 - `prompt` 필드는 필수이며 비워둘 수 없음
 - 참조용 이미지는 최대 7개까지 허용
 - 각 이미지는 1:4에서 4:1 사이의 화면 비율을 가져야 함

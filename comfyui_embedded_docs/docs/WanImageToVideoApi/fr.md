@@ -19,6 +19,7 @@ Le nœud Wan Image to Video génère du contenu vidéo à partir d'une seule ima
 | `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane "Généré par IA" au résultat (par défaut : Vrai) |
 
 **Contraintes :**
+
 - Exactement une image d'entrée est requise pour la génération vidéo
 - Le paramètre de durée n'accepte que les valeurs de 5 ou 10 secondes
 - Lorsqu'un audio est fourni, il doit avoir une durée comprise entre 3,0 et 29,0 secondes

@@ -13,6 +13,7 @@ CLIPTextEncodeSD3 节点通过使用不同的 CLIP 模型对多个文本提示�
 | `空白填充` | COMBO | 选择 | - | ["none", "empty_prompt"] | 控制如何处理空文本输入 |
 
 **参数约束：**
+
 - 当 `empty_padding` 设置为 "none" 时，`clip_g`、`clip_l` 或 `t5xxl` 的空文本输入将产生空令牌列表而不是填充
 - 当长度不同时，节点通过用空令牌填充较短的那个，自动平衡 `clip_l` 和 `clip_g` 输入之间的令牌长度
 - 所有文本输入都支持动态提示和多行文本输入

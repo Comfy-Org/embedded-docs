@@ -16,6 +16,7 @@ El nodo ByteDance Text to Video genera videos utilizando modelos de ByteDance a 
 | `watermark` | BOOLEAN | Boolean | True | - | Si se debe agregar una marca de agua de "Generado por IA" al video. (Opcional) |
 
 **Restricciones de Parámetros:**
+
 - El parámetro `prompt` debe contener al menos 1 carácter después de la eliminación de espacios en blanco
 - El parámetro `prompt` no puede contener los siguientes parámetros de texto: "resolution", "ratio", "duration", "seed", "camerafixed", "watermark"
 - El parámetro `duration` está limitado a valores entre 3 y 12 segundos

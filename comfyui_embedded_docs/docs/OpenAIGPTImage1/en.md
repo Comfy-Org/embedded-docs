@@ -16,6 +16,7 @@ Generates images synchronously via OpenAI's GPT Image 1 endpoint. This node can 
 | `mask` | MASK | No | - | Optional mask for inpainting (white areas will be replaced) (default: None) |
 
 **Parameter Constraints:**
+
 - When `image` is provided, the node switches to image editing mode
 - `mask` can only be used when `image` is provided
 - When using `mask`, only single images are supported (batch size must be 1)

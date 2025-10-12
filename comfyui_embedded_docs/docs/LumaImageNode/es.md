@@ -16,6 +16,7 @@ Genera imágenes de forma síncrona basándose en el prompt y la relación de as
 | `character_image` | IMAGE | No | - | Imágenes de referencia de personajes; puede ser un lote de múltiples imágenes, se pueden considerar hasta 4 imágenes |
 
 **Restricciones de Parámetros:**
+
 - El parámetro `image_luma_ref` puede aceptar hasta 4 imágenes de referencia
 - El parámetro `character_image` puede aceptar hasta 4 imágenes de referencia de personajes
 - El parámetro `style_image` acepta solo 1 imagen de referencia de estilo

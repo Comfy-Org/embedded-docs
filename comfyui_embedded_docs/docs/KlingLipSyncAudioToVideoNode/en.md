@@ -11,6 +11,7 @@ Kling Lip Sync Audio to Video Node synchronizes mouth movements in a video file 
 | `voice_language` | COMBO | No | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | The language of the voice in the audio file (default: "en") |
 
 **Important Constraints:**
+
 - The audio file should not be larger than 5MB
 - The video file should not be larger than 100MB
 - Video dimensions should be between 720px and 1920px in height/width

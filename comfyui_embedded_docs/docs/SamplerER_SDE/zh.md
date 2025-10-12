@@ -12,6 +12,7 @@ SamplerER_SDE 节点为扩散模型提供专门的采样方法，提供不同的
 | `s_noise` | FLOAT | 是 | 0.0-100.0 | 采样过程的噪声缩放因子（默认：1.0）。控制采样过程中应用的噪声量。 |
 
 **参数约束：**
+
 - 当 `solver_type` 设置为 "ODE" 或使用 "Reverse-time SDE" 且 `eta`=0 时，无论用户输入值如何，`eta` 和 `s_noise` 都会自动设置为 0。
 - `eta` 参数仅影响 "Reverse-time SDE" 求解器类型，对 "ER-SDE" 求解器类型没有影响。
 

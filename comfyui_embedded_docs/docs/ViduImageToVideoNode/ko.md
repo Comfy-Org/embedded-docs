@@ -15,6 +15,7 @@ Vidu Image To Video Generation 노드는 시작 이미지와 선택적인 텍스
 | `movement_amplitude` | COMBO | 아니오 | `auto`<br>*기타 MovementAmplitude 옵션* | 프레임 내 객체의 움직임 진폭 (기본값: auto) |
 
 **제약 조건:**
+
 - 하나의 입력 이미지만 허용됨 (여러 이미지 처리 불가)
 - 입력 이미지는 1:4에서 4:1 사이의 종횡비를 가져야 함
 

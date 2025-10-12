@@ -16,6 +16,7 @@ Génère des images de manière synchrone en fonction de l'invite et du rapport 
 | `image_de_personnage` | IMAGE | Non | - | Images de référence de personnage ; peut être un lot de plusieurs images, jusqu'à 4 images peuvent être prises en compte |
 
 **Contraintes des paramètres :**
+
 - Le paramètre `image_luma_ref` peut accepter jusqu'à 4 images de référence
 - Le paramètre `character_image` peut accepter jusqu'à 4 images de référence de personnage
 - Le paramètre `style_image` n'accepte qu'une seule image de référence de style

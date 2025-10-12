@@ -15,6 +15,7 @@ The Vidu Image To Video Generation node creates videos from a starting image and
 | `movement_amplitude` | COMBO | No | `auto`<br>*Other MovementAmplitude options* | The movement amplitude of objects in the frame (default: auto) |
 
 **Constraints:**
+
 - Only one input image is allowed (cannot process multiple images)
 - The input image must have an aspect ratio between 1:4 and 4:1
 

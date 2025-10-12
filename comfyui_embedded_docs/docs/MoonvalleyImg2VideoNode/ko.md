@@ -15,6 +15,7 @@ Moonvalley Marey Image to Video 노드는 참조 이미지를 Moonvalley API를 
 | `steps` | INT | 아니오 | 1 - 100 | 디노이징 단계 수 (기본값: 33, 단계: 1) |
 
 **제약 조건:**
+
 - 입력 이미지의 크기는 300x300 픽셀에서 허용되는 최대 높이/너비 사이여야 합니다
 - 프롬프트와 네거티브 프롬프트 텍스트 길이는 Moonvalley Marey 최대 프롬프트 길이로 제한됩니다
 

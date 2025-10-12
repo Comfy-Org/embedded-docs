@@ -12,6 +12,7 @@ El nodo Kling Lip Sync Text to Video sincroniza los movimientos de la boca en un
 | `velocidad_de_voz` | FLOAT | No | 0.8-2.0 | Velocidad del habla. Rango válido: 0.8~2.0, preciso a un decimal. (por defecto: 1) |
 
 **Requisitos del Video:**
+
 - El archivo de video no debe ser mayor a 100MB
 - La altura/ancho debe estar entre 720px y 1920px
 - La duración debe estar entre 2s y 10s

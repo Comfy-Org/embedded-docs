@@ -19,6 +19,7 @@ The Ideogram V3 node generates images using the Ideogram V3 model. It supports b
 | `character_mask` | MASK | No | - | Optional mask for character reference image |
 
 **Parameter Constraints:**
+
 - When both `image` and `mask` are provided, the node switches to editing mode
 - If only one of `image` or `mask` is provided, an error will occur
 - `character_mask` requires `character_image` to be present

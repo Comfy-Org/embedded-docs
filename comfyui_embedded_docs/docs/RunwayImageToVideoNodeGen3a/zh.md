@@ -13,6 +13,7 @@ Runway Image to Video (Gen3a Turbo) 节点使用 Runway 的 Gen3a Turbo 模型�
 | `seed` | INT | 否 | 0-4294967295 | 用于生成的随机种子（默认：0） |
 
 **参数约束：**
+
 - `start_frame` 的尺寸不得超过 7999x7999 像素
 - `start_frame` 的宽高比必须在 0.5 到 2.0 之间
 - `prompt` 必须包含至少一个字符（不能为空）

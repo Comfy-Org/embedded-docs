@@ -11,6 +11,7 @@ Le nœud Kling Lip Sync Audio to Video synchronise les mouvements de la bouche d
 | `langue de la voix` | COMBO | Non | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | La langue de la voix dans le fichier audio (par défaut : "en") |
 
 **Contraintes importantes :**
+
 - Le fichier audio ne doit pas dépasser 5 Mo
 - Le fichier vidéo ne doit pas dépasser 100 Mo
 - Les dimensions de la vidéo doivent être comprises entre 720px et 1920px en hauteur/largeur

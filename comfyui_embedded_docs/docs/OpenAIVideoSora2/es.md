@@ -14,6 +14,7 @@ El nodo OpenAIVideoSora2 genera videos utilizando los modelos Sora de OpenAI. Cr
 | `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
 
 **Restricciones y Limitaciones:**
+
 - El modelo "sora-2" solo admite resoluciones "720x1280" y "1280x720"
 - Solo se admite una imagen de entrada cuando se utiliza el parámetro image
 - Los resultados son no deterministas independientemente del valor de la semilla

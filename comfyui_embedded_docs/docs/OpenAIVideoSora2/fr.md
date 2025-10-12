@@ -14,6 +14,7 @@ Le nœud OpenAIVideoSora2 génère des vidéos en utilisant les modèles Sora d'
 | `seed` | INT | Non | 0 à 2147483647 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
 
 **Contraintes et limitations :**
+
 - Le modèle "sora-2" ne prend en charge que les résolutions "720x1280" et "1280x720"
 - Une seule image d'entrée est prise en charge lors de l'utilisation du paramètre `image`
 - Les résultats sont non déterministes quelle que soit la valeur de la graine

@@ -16,6 +16,7 @@ Le nœud ByteDance Text to Video génère des vidéos en utilisant les modèles 
 | `watermark` | BOOLEAN | Boolean | True | - | Indique s'il faut ajouter un filigrane "Généré par IA" à la vidéo. (Optionnel) |
 
 **Contraintes des paramètres :**
+
 - Le paramètre `prompt` doit contenir au moins 1 caractère après suppression des espaces blancs
 - Le paramètre `prompt` ne peut pas contenir les paramètres textuels suivants : "resolution", "ratio", "duration", "seed", "camerafixed", "watermark"
 - Le paramètre `duration` est limité aux valeurs entre 3 et 12 secondes

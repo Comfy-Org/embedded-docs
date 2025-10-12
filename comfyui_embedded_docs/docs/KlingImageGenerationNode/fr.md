@@ -17,6 +17,7 @@ Le nœud Kling Image Generation génère des images à partir de prompts texte a
 | `image` | IMAGE | Non | - | Image de référence optionnelle |
 
 **Contraintes des paramètres :**
+
 - Le paramètre `image` est optionnel, mais lorsqu'il est fourni, le modèle kling-v1 ne prend pas en charge les images de référence
 - Les prompts positif et négatif ont des limitations de longueur maximale (MAX_PROMPT_LENGTH_IMAGE_GEN)
 - Lorsqu'aucune image de référence n'est fournie, le paramètre `image_type` est automatiquement défini sur None

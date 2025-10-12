@@ -16,6 +16,7 @@ El nodo HunyuanImageToVideo convierte imágenes en representaciones latentes de 
 | `imagen_inicial` | IMAGE | No | - | Imagen inicial opcional para inicializar la generación del video |
 
 **Nota:** Cuando se proporciona `start_image`, el nodo utiliza diferentes métodos de guía según el `guidance_type` seleccionado:
+
 - "v1 (concat)": Concatena el latente de la imagen con el latente del video
 - "v2 (replace)": Reemplaza los fotogramas iniciales del video con el latente de la imagen
 - "custom": Utiliza la imagen como latente de referencia para la guía

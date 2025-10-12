@@ -19,6 +19,7 @@ The Wan Image to Video node generates video content starting from a single input
 | `watermark` | BOOLEAN | No | - | Whether to add an "AI generated" watermark to the result (default: True) |
 
 **Constraints:**
+
 - Exactly one input image is required for video generation
 - Duration parameter only accepts values of 5 or 10 seconds
 - When audio is provided, it must be between 3.0 and 29.0 seconds in duration

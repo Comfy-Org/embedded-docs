@@ -12,6 +12,7 @@ El nodo Create Hook LoRA genera objetos hook para aplicar modificaciones LoRA (L
 | `prev_hooks` | HOOKS | No | N/A | Grupo de hooks existente opcional para combinar con los nuevos hooks LoRA |
 
 **Restricciones de Parámetros:**
+
 - Si tanto `strength_model` como `strength_clip` se establecen en 0, el nodo omitirá la creación de nuevos hooks LoRA y devolverá los hooks existentes sin cambios
 - El nodo almacena en caché el último archivo LoRA cargado para optimizar el rendimiento cuando se usa el mismo LoRA repetidamente
 

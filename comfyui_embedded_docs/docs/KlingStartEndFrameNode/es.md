@@ -15,6 +15,7 @@ El nodo Kling Inicio-Fin de Fotograma a Video crea una secuencia de video que tr
 | `mode` | COMBO | No | Múltiples opciones disponibles | La configuración a utilizar para la generación del video siguiendo el formato: modo / duración / nombre_del_modelo. (valor por defecto: tercera opción de los modos disponibles) |
 
 **Restricciones de Imagen:**
+
 - Tanto `start_frame` como `end_frame` deben ser proporcionados y no pueden exceder 10MB de tamaño de archivo
 - Resolución mínima: 300×300 píxeles para ambas imágenes
 - La relación de aspecto de `start_frame` debe estar entre 1:2.5 y 2.5:1

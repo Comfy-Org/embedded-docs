@@ -14,6 +14,7 @@ The OpenAIVideoSora2 node generates videos using OpenAI's Sora models. It create
 | `seed` | INT | No | 0 to 2147483647 | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed (default: 0) |
 
 **Constraints and Limitations:**
+
 - The "sora-2" model only supports "720x1280" and "1280x720" resolutions
 - Only one input image is supported when using the image parameter
 - Results are nondeterministic regardless of the seed value

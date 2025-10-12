@@ -15,6 +15,7 @@ Le nœud Vidu Image To Video Generation crée des vidéos à partir d'une image 
 | `movement_amplitude` | COMBO | Non | `auto`<br>*Autres options MovementAmplitude* | L'amplitude de mouvement des objets dans le cadre (par défaut : auto) |
 
 **Contraintes :**
+
 - Une seule image d'entrée est autorisée (ne peut pas traiter plusieurs images)
 - L'image d'entrée doit avoir un rapport d'aspect compris entre 1:4 et 4:1
 

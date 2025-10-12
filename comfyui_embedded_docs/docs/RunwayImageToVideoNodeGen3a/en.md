@@ -13,6 +13,7 @@ The Runway Image to Video (Gen3a Turbo) node generates a video from a single sta
 | `seed` | INT | No | 0-4294967295 | Random seed for generation (default: 0) |
 
 **Parameter Constraints:**
+
 - The `start_frame` must have dimensions not exceeding 7999x7999 pixels
 - The `start_frame` must have an aspect ratio between 0.5 and 2.0
 - The `prompt` must contain at least one character (cannot be empty)

@@ -24,6 +24,7 @@ WanAnimateToVideo 节点通过结合包括姿态参考、面部表情和背景�
 | `video_frame_offset` | INT | 否 | 0 至 MAX_RESOLUTION | 在所有输入视频中跳过的帧数。用于分块生成长视频。连接到前一个节点的 video_frame_offset 输出以扩展视频。（默认：0，步长：1） |
 
 **参数约束：**
+
 - 当提供 `pose_video` 且 `trim_to_pose_video` 逻辑激活时，输出长度将调整为匹配姿态视频时长
 - `face_video` 在处理时会自动调整为 512x512 分辨率
 - `continue_motion` 帧数受 `continue_motion_max_frames` 参数限制

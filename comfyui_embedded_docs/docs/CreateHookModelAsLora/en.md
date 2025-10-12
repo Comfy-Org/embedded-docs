@@ -12,6 +12,7 @@ This node creates a hook model as a LoRA (Low-Rank Adaptation) by loading checkp
 | `prev_hooks` | HOOKS | No | - | Optional previous hooks to combine with the newly created LoRA hooks |
 
 **Parameter Constraints:**
+
 - The `ckpt_name` parameter loads checkpoints from the available checkpoints folder
 - Both strength parameters accept values from -20.0 to 20.0 with 0.01 step increments
 - When `prev_hooks` is not provided, the node creates a new hook group

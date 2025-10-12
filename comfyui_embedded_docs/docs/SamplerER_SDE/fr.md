@@ -12,6 +12,7 @@ Le nœud SamplerER_SDE fournit des méthodes d'échantillonnage spécialisées p
 | `s_noise` | FLOAT | Oui | 0.0-100.0 | Facteur d'échelle du bruit pour le processus d'échantillonnage (par défaut : 1.0). Contrôle la quantité de bruit appliquée pendant l'échantillonnage. |
 
 **Contraintes des paramètres :**
+
 - Lorsque `solver_type` est défini sur "ODE" ou lors de l'utilisation de "Reverse-time SDE" avec `eta`=0, `eta` et `s_noise` sont automatiquement définis à 0 indépendamment des valeurs saisies par l'utilisateur.
 - Le paramètre `eta` n'affecte que le type de solveur "Reverse-time SDE" et n'a aucun effet sur le type de solveur "ER-SDE".
 

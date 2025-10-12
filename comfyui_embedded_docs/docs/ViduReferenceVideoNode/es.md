@@ -16,6 +16,7 @@ El nodo Vidu Reference Video genera videos a partir de múltiples imágenes de r
 | `movement_amplitude` | COMBO | No | `"auto"`<br>`"low"`<br>`"medium"`<br>`"high"` | La amplitud de movimiento de los objetos en el cuadro (por defecto: "auto") |
 
 **Restricciones y Limitaciones:**
+
 - El campo `prompt` es obligatorio y no puede estar vacío
 - Se permite un máximo de 7 imágenes como referencia
 - Cada imagen debe tener una relación de aspecto entre 1:4 y 4:1

@@ -12,6 +12,7 @@ Kling Lip Sync Text to Video Node synchronise les mouvements de bouche dans un f
 | `vitesse de la voix` | FLOAT | Non | 0.8-2.0 | Vitesse d'élocution. Plage valide : 0.8~2.0, précise à une décimale. (par défaut : 1) |
 
 **Exigences pour la vidéo :**
+
 - Le fichier vidéo ne doit pas dépasser 100 Mo
 - La hauteur/largeur doit être comprise entre 720px et 1920px
 - La durée doit être comprise entre 2s et 10s

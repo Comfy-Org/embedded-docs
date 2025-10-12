@@ -12,6 +12,7 @@ Create Hook LoRA 노드는 LoRA(Low-Rank Adaptation) 수정을 모델에 적용�
 | `이전 후크` | HOOKS | 아니오 | 해당 없음 | 새로운 LoRA 훅과 결합할 선택적 기존 훅 그룹 |
 
 **매개변수 제약 조건:**
+
 - `strength_model`과 `strength_clip`이 모두 0으로 설정된 경우, 노드는 새로운 LoRA 훅 생성을 건너뛰고 기존 훅을 변경 없이 반환합니다
 - 노드는 동일한 LoRA가 반복적으로 사용될 때 성능을 최적화하기 위해 마지막으로 로드된 LoRA 파일을 캐싱합니다
 

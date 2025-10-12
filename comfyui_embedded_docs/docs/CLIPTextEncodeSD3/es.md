@@ -13,6 +13,7 @@ El nodo CLIPTextEncodeSD3 procesa entradas de texto para modelos Stable Diffusio
 | `empty_padding` | COMBO | Selección | - | ["none", "empty_prompt"] | Controla cómo se manejan las entradas de texto vacías |
 
 **Restricciones de Parámetros:**
+
 - Cuando `empty_padding` se establece en "none", las entradas de texto vacías para `clip_g`, `clip_l` o `t5xxl` resultarán en listas de tokens vacías en lugar de relleno
 - El nodo automáticamente equilibra las longitudes de tokens entre las entradas `clip_l` y `clip_g` rellenando la más corta con tokens vacíos cuando las longitudes difieren
 - Todas las entradas de texto admiten prompts dinámicos y entrada de texto multilínea

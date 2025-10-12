@@ -13,6 +13,7 @@ El nodo Runway Image to Video (Gen4 Turbo) genera un video a partir de una únic
 | `seed` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación (valor por defecto: 0) |
 
 **Restricciones de Parámetros:**
+
 - La imagen `start_frame` debe tener dimensiones que no excedan 7999x7999 píxeles
 - La imagen `start_frame` debe tener una relación de aspecto entre 0.5 y 2.0
 - El `prompt` debe contener al menos un carácter

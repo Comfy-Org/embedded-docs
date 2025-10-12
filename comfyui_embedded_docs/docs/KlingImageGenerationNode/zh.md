@@ -17,6 +17,7 @@ Kling 图像生成节点能够根据文本提示生成图像，并可选使用�
 | `image` | IMAGE | 否 | - | 可选的参考图像 |
 
 **参数约束：**
+
 - `image` 参数是可选的，但当提供参考图像时，kling-v1 模型不支持参考图像功能
 - 正向提示和负向提示有最大长度限制（MAX_PROMPT_LENGTH_IMAGE_GEN）
 - 当未提供参考图像时，`image_type` 参数会自动设置为 None

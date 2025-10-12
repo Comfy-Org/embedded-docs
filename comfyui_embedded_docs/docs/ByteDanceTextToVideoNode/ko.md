@@ -16,6 +16,7 @@ ByteDance Text to Video 노드는 텍스트 프롬프트를 기반으로 API를 
 | `watermark` | BOOLEAN | 불린 | True | - | 동영상에 "AI 생성" 워터마크를 추가할지 여부입니다. (선택 사항) |
 
 **매개변수 제약 조건:**
+
 - `prompt` 매개변수는 공백 제거 후 최소 1자 이상을 포함해야 합니다.
 - `prompt` 매개변수는 다음 텍스트 매개변수를 포함할 수 없습니다: "resolution", "ratio", "duration", "seed", "camerafixed", "watermark"
 - `duration` 매개변수는 3초에서 12초 사이의 값으로 제한됩니다.

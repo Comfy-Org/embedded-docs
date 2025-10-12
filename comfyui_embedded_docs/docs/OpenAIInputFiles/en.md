@@ -10,6 +10,7 @@ Loads and formats input files for OpenAI API. This node prepares text and PDF fi
 | `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | No | N/A | An optional additional file(s) to batch together with the file loaded from this node. Allows chaining of input files so that a single message can include multiple input files. |
 
 **File Constraints:**
+
 - Only .txt and .pdf files are supported
 - Maximum file size: 32MB
 - Files are loaded from the input directory

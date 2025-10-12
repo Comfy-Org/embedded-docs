@@ -16,6 +16,7 @@ The Context Windows (Manual) node allows you to manually configure context windo
 | `dim` | INT | No | 0-5 | The dimension to apply the context windows to (default: 0). |
 
 **Parameter Constraints:**
+
 - `context_stride` is only used when uniform schedules are selected
 - `closed_loop` is only applicable to looped schedules
 - `dim` must be between 0 and 5 inclusive

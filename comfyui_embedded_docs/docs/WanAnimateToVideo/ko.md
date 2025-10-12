@@ -24,6 +24,7 @@ WanAnimateToVideo 노드는 포즈 참조, 얼굴 표정, 배경 요소 등 여�
 | `video_frame_offset` | INT | 아니오 | 0 to MAX_RESOLUTION | 모든 입력 비디오에서 탐색할 프레임 수. 청크 방식으로 더 긴 비디오를 생성하는 데 사용됩니다. 비디오를 확장하기 위해 이전 노드의 video_frame_offset 출력에 연결하세요. (기본값: 0, 단계: 1) |
 
 **매개변수 제약 조건:**
+
 - `pose_video`가 제공되고 `trim_to_pose_video` 로직이 활성화된 경우, 출력 길이는 포즈 비디오 지속 시간에 맞게 조정됩니다
 - `face_video`는 처리 시 자동으로 512x512 해상도로 크기 조정됩니다
 - `continue_motion` 프레임은 `continue_motion_max_frames` 매개변수에 의해 제한됩니다

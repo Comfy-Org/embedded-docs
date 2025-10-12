@@ -17,6 +17,7 @@ Kling Image Generation Node generates images from text prompts with the option t
 | `image` | IMAGE | No | - | Optional reference image |
 
 **Parameter Constraints:**
+
 - The `image` parameter is optional, but when provided, the kling-v1 model does not support reference images
 - Prompt and negative prompt have maximum length limitations (MAX_PROMPT_LENGTH_IMAGE_GEN)
 - When no reference image is provided, the `image_type` parameter is automatically set to None

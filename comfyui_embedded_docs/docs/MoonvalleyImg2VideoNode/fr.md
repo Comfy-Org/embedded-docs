@@ -15,6 +15,7 @@ Le nœud Moonvalley Marey Image to Video transforme une image de référence en 
 | `steps` | INT | Non | 1 - 100 | Nombre d'étapes de débruitage (par défaut : 33, pas : 1) |
 
 **Contraintes :**
+
 - L'image d'entrée doit avoir des dimensions comprises entre 300x300 pixels et la hauteur/largeur maximale autorisée
 - La longueur du texte de l'invite et de l'invite négative est limitée à la longueur maximale d'invite de Moonvalley Marey
 

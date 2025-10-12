@@ -19,6 +19,7 @@ El nodo Ideogram V3 genera imágenes utilizando el modelo Ideogram V3. Soporta t
 | `character_mask` | MASK | No | - | Máscara opcional para la imagen de referencia de personaje |
 
 **Restricciones de Parámetros:**
+
 - Cuando se proporcionan tanto `image` como `mask`, el nodo cambia al modo de edición
 - Si solo se proporciona uno de `image` o `mask`, ocurrirá un error
 - `character_mask` requiere que `character_image` esté presente

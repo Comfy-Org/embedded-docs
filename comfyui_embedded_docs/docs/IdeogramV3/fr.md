@@ -19,6 +19,7 @@ Le nœud Ideogram V3 génère des images en utilisant le modèle Ideogram V3. Il
 | `character_mask` | MASK | Non | - | Masque optionnel pour l'image de référence de caractère |
 
 **Contraintes des paramètres :**
+
 - Lorsque `image` et `mask` sont tous deux fournis, le nœud passe en mode édition
 - Si seulement l'un des deux paramètres `image` ou `mask` est fourni, une erreur se produira
 - `character_mask` nécessite que `character_image` soit présent

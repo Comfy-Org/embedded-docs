@@ -19,6 +19,7 @@ El nodo Wan Image to Video genera contenido de video a partir de una única imag
 | `watermark` | BOOLEAN | No | - | Si se debe agregar una marca de agua "AI generated" al resultado (por defecto: True) |
 
 **Restricciones:**
+
 - Se requiere exactamente una imagen de entrada para la generación de video
 - El parámetro de duración solo acepta valores de 5 o 10 segundos
 - Cuando se proporciona audio, debe tener una duración entre 3.0 y 29.0 segundos

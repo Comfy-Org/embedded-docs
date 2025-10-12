@@ -24,6 +24,7 @@ El nodo WanAnimateToVideo genera contenido de video combinando múltiples entrad
 | `video_frame_offset` | INT | No | 0 a MAX_RESOLUTION | La cantidad de fotogramas a buscar en todos los videos de entrada. Se utiliza para generar videos más largos por fragmentos. Conectar a la salida video_frame_offset del nodo anterior para extender un video. (valor por defecto: 0, paso: 1) |
 
 **Restricciones de Parámetros:**
+
 - Cuando se proporciona `pose_video` y la lógica `trim_to_pose_video` está activa, la longitud de salida se ajustará para coincidir con la duración del video de pose
 - `face_video` se redimensiona automáticamente a una resolución de 512x512 cuando se procesa
 - Los fotogramas de `continue_motion` están limitados por el parámetro `continue_motion_max_frames`

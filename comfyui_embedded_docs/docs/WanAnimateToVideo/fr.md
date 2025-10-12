@@ -24,6 +24,7 @@ Le nœud WanAnimateToVideo génère du contenu vidéo en combinant plusieurs ent
 | `video_frame_offset` | INT | Non | 0 à MAX_RESOLUTION | Le nombre d'images à avancer dans toutes les vidéos d'entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez à la sortie video_frame_offset du nœud précédent pour étendre une vidéo. (par défaut : 0, pas : 1) |
 
 **Contraintes des paramètres :**
+
 - Lorsque `pose_video` est fourni et que la logique `trim_to_pose_video` est active, la longueur de sortie sera ajustée pour correspondre à la durée de la vidéo de pose
 - `face_video` est automatiquement redimensionné à une résolution de 512x512 lors du traitement
 - Les images de `continue_motion` sont limitées par le paramètre `continue_motion_max_frames`

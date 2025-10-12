@@ -15,6 +15,7 @@ El nodo Moonvalry Marey Image to Video transforma una imagen de referencia en un
 | `steps` | INT | No | 1 - 100 | Número de pasos de eliminación de ruido (valor por defecto: 33, paso: 1) |
 
 **Restricciones:**
+
 - La imagen de entrada debe tener dimensiones entre 300x300 píxeles y la altura/ancho máxima permitida
 - La longitud del texto de indicación e indicación negativa está limitada a la longitud máxima de indicación de Moonvalley Marey
 

@@ -12,6 +12,7 @@ Kling Lip Sync Text to Video Node synchronizes mouth movements in a video file t
 | `voice_speed` | FLOAT | No | 0.8-2.0 | Speech Rate. Valid range: 0.8~2.0, accurate to one decimal place. (default: 1) |
 
 **Video Requirements:**
+
 - Video file should not be larger than 100MB
 - Height/width should be between 720px and 1920px
 - Duration should be between 2s and 10s

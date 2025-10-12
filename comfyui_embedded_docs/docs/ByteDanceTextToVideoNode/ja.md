@@ -16,6 +16,7 @@ ByteDance Text to Videoノードは、テキストプロンプトに基づいて
 | `watermark` | BOOLEAN | ブール値 | True | - | 動画に「AI生成」の透かしを追加するかどうかです。（任意） |
 
 **パラメータ制約:**
+
 - `prompt` パラメータは、空白を除去した後に少なくとも1文字以上を含む必要があります
 - `prompt` パラメータには、以下のテキストパラメータを含めることはできません："resolution"、"ratio"、"duration"、"seed"、"camerafixed"、"watermark"
 - `duration` パラメータは3秒から12秒の間の値に制限されています

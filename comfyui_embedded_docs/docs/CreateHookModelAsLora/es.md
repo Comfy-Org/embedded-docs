@@ -12,6 +12,7 @@ Este nodo crea un modelo de enlace como LoRA (Adaptación de Bajo Rango) cargand
 | `prev_hooks` | HOOKS | No | - | Enlaces anteriores opcionales para combinar con los nuevos enlaces LoRA creados |
 
 **Restricciones de Parámetros:**
+
 - El parámetro `ckpt_name` carga checkpoints desde la carpeta de checkpoints disponibles
 - Ambos parámetros de intensidad aceptan valores de -20.0 a 20.0 con incrementos de 0.01
 - Cuando no se proporciona `prev_hooks`, el nodo crea un nuevo grupo de enlaces

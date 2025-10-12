@@ -12,6 +12,7 @@ The SamplerER_SDE node provides specialized sampling methods for diffusion model
 | `s_noise` | FLOAT | Yes | 0.0-100.0 | Noise scaling factor for the sampling process (default: 1.0). Controls the amount of noise applied during sampling. |
 
 **Parameter Constraints:**
+
 - When `solver_type` is set to "ODE" or when using "Reverse-time SDE" with `eta`=0, both `eta` and `s_noise` are automatically set to 0 regardless of user input values.
 - The `eta` parameter only affects "Reverse-time SDE" solver type and has no effect on "ER-SDE" solver type.
 

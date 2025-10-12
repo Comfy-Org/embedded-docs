@@ -12,6 +12,7 @@ Le nœud Create Hook LoRA génère des objets hook pour appliquer des modificati
 | `crochets_precedents` | HOOKS | Non | N/A | Groupe de hooks existant optionnel à combiner avec les nouveaux hooks LoRA |
 
 **Contraintes des paramètres :**
+
 - Si `strength_model` et `strength_clip` sont tous deux définis sur 0, le nœud ignorera la création de nouveaux hooks LoRA et renverra les hooks existants inchangés
 - Le nœud met en cache le dernier fichier LoRA chargé pour optimiser les performances lorsque le même LoRA est utilisé répétitivement
 

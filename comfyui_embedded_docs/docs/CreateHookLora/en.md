@@ -12,6 +12,7 @@ The Create Hook LoRA node generates hook objects for applying LoRA (Low-Rank Ada
 | `prev_hooks` | HOOKS | No | N/A | Optional existing hook group to combine with the new LoRA hooks |
 
 **Parameter Constraints:**
+
 - If both `strength_model` and `strength_clip` are set to 0, the node will skip creating new LoRA hooks and return the existing hooks unchanged
 - The node caches the last loaded LoRA file to optimize performance when the same LoRA is used repeatedly
 

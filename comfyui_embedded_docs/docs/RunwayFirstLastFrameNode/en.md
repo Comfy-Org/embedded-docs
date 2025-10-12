@@ -14,6 +14,7 @@ The Runway First-Last-Frame to Video node generates videos by uploading first an
 | `seed` | INT | No | 0-4294967295 | Random seed for generation (default: 0) |
 
 **Parameter Constraints:**
+
 - The `prompt` must contain at least 1 character
 - Both `start_frame` and `end_frame` must have maximum dimensions of 7999x7999 pixels
 - Both `start_frame` and `end_frame` must have aspect ratios between 0.5 and 2.0

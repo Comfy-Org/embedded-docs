@@ -24,6 +24,7 @@ The WanAnimateToVideo node generates video content by combining multiple conditi
 | `video_frame_offset` | INT | No | 0 to MAX_RESOLUTION | The amount of frames to seek in all the input videos. Used for generating longer videos by chunk. Connect to the video_frame_offset output of the previous node for extending a video. (default: 0, step: 1) |
 
 **Parameter Constraints:**
+
 - When `pose_video` is provided and `trim_to_pose_video` logic is active, the output length will be adjusted to match the pose video duration
 - `face_video` is automatically resized to 512x512 resolution when processed
 - `continue_motion` frames are limited by `continue_motion_max_frames` parameter

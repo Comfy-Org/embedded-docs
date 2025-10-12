@@ -12,6 +12,7 @@ El nodo SamplerER_SDE proporciona métodos de muestreo especializados para model
 | `s_noise` | FLOAT | Sí | 0.0-100.0 | Factor de escala de ruido para el proceso de muestreo (por defecto: 1.0). Controla la cantidad de ruido aplicado durante el muestreo. |
 
 **Restricciones de Parámetros:**
+
 - Cuando `solver_type` está configurado como "ODE" o cuando se usa "Reverse-time SDE" con `eta`=0, tanto `eta` como `s_noise` se establecen automáticamente en 0 independientemente de los valores ingresados por el usuario.
 - El parámetro `eta` solo afecta al tipo de solucionador "Reverse-time SDE" y no tiene efecto en el tipo de solucionador "ER-SDE".
 

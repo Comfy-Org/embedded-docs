@@ -16,6 +16,7 @@ Le nœud Vidu Reference Video génère des vidéos à partir de plusieurs images
 | `movement_amplitude` | COMBO | Non | `"auto"`<br>`"low"`<br>`"medium"`<br>`"high"` | L'amplitude du mouvement des objets dans le cadre (par défaut : "auto") |
 
 **Contraintes et limitations :**
+
 - Le champ `prompt` est requis et ne peut pas être vide
 - Maximum de 7 images autorisées pour référence
 - Chaque image doit avoir un format d'image compris entre 1:4 et 4:1

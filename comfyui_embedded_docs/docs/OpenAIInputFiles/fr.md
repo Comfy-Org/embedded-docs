@@ -10,6 +10,7 @@ Charge et formate les fichiers d'entrée pour l'API OpenAI. Ce nœud prépare le
 | `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Non | N/A | Fichier(s) supplémentaire(s) optionnel(s) à regrouper avec le fichier chargé depuis ce nœud. Permet le chaînage des fichiers d'entrée afin qu'un seul message puisse inclure plusieurs fichiers d'entrée. |
 
 **Contraintes des fichiers :**
+
 - Seuls les fichiers .txt et .pdf sont pris en charge
 - Taille maximale des fichiers : 32 Mo
 - Les fichiers sont chargés depuis le répertoire d'entrée

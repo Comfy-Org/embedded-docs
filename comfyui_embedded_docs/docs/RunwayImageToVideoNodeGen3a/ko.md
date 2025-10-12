@@ -13,6 +13,7 @@ Runway Image to Video (Gen3a Turbo) 노드는 Runway의 Gen3a Turbo 모델을 �
 | `seed` | INT | 아니오 | 0-4294967295 | 생성을 위한 랜덤 시드 (기본값: 0) |
 
 **매개변수 제약 조건:**
+
 - `start_frame`의 크기는 7999x7999 픽셀을 초과하지 않아야 합니다
 - `start_frame`의 화면 비율은 0.5에서 2.0 사이여야 합니다
 - `prompt`는 최소 한 문자 이상을 포함해야 합니다 (비어 있을 수 없음)

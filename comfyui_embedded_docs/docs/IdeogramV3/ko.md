@@ -19,6 +19,7 @@ Ideogram V3 노드는 Ideogram V3 모델을 사용하여 이미지를 생성합�
 | `character_mask` | MASK | 아니오 | - | 캐릭터 참조 이미지에 대한 선택적 마스크 |
 
 **매개변수 제약 조건:**
+
 - `image`와 `mask`가 모두 제공되면 노드는 편집 모드로 전환됩니다.
 - `image` 또는 `mask` 중 하나만 제공되면 오류가 발생합니다.
 - `character_mask`는 `character_image`가 존재해야 사용할 수 있습니다.

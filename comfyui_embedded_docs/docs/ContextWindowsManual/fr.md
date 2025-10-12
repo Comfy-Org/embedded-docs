@@ -16,6 +16,7 @@ Le nœud Context Windows (Manual) permet de configurer manuellement les fenêtre
 | `dim` | INT | Non | 0-5 | La dimension à laquelle appliquer les fenêtres de contexte (par défaut : 0). |
 
 **Contraintes des paramètres :**
+
 - `context_stride` n'est utilisé que lorsque les planifications uniformes sont sélectionnées
 - `closed_loop` n'est applicable qu'aux planifications en boucle
 - `dim` doit être compris entre 0 et 5 inclus

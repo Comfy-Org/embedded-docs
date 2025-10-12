@@ -16,6 +16,7 @@ The Vidu Reference Video Node generates videos from multiple reference images an
 | `movement_amplitude` | COMBO | No | `"auto"`<br>`"low"`<br>`"medium"`<br>`"high"` | The movement amplitude of objects in the frame (default: "auto") |
 
 **Constraints and Limitations:**
+
 - The `prompt` field is required and cannot be empty
 - Maximum of 7 images allowed for reference
 - Each image must have an aspect ratio between 1:4 and 4:1

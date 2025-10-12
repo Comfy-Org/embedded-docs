@@ -19,6 +19,7 @@ Ideogram V3ノードは、Ideogram V3モデルを使用して画像を生成し�
 | `character_mask` | MASK | いいえ | - | キャラクター参照画像用のオプションのマスク |
 
 **パラメータ制約:**
+
 - `image`と`mask`の両方が提供されると、ノードは編集モードに切り替わります
 - `image`または`mask`のいずれかのみが提供された場合、エラーが発生します
 - `character_mask`を使用するには`character_image`が存在する必要があります

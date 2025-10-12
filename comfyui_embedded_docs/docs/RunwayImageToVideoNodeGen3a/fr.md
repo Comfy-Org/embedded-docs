@@ -13,6 +13,7 @@ Le nœud Runway Image to Video (Gen3a Turbo) génère une vidéo à partir d'une
 | `seed` | INT | Non | 0-4294967295 | Graine aléatoire pour la génération (par défaut : 0) |
 
 **Contraintes des paramètres :**
+
 - La `start_frame` doit avoir des dimensions ne dépassant pas 7999x7999 pixels
 - La `start_frame` doit avoir un format d'image compris entre 0,5 et 2,0
 - Le `prompt` doit contenir au moins un caractère (ne peut pas être vide)

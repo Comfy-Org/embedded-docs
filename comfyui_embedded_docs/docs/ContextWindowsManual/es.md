@@ -16,6 +16,7 @@ El nodo Ventanas de Contexto (Manual) permite configurar manualmente ventanas de
 | `dim` | INT | No | 0-5 | La dimensión a la que aplicar las ventanas de contexto (por defecto: 0). |
 
 **Restricciones de Parámetros:**
+
 - `context_stride` solo se usa cuando se seleccionan programaciones uniformes
 - `closed_loop` solo es aplicable a programaciones en bucle
 - `dim` debe estar entre 0 y 5 inclusive

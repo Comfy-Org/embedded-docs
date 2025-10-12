@@ -17,6 +17,7 @@ El nodo Kling Image Generation genera imágenes a partir de prompts de texto con
 | `image` | IMAGE | No | - | Imagen de referencia opcional |
 
 **Restricciones de Parámetros:**
+
 - El parámetro `image` es opcional, pero cuando se proporciona, el modelo kling-v1 no admite imágenes de referencia
 - El prompt y el prompt negativo tienen limitaciones de longitud máxima (MAX_PROMPT_LENGTH_IMAGE_GEN)
 - Cuando no se proporciona una imagen de referencia, el parámetro `image_type` se establece automáticamente en None

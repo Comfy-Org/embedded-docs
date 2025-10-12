@@ -13,6 +13,7 @@ Runway Image to Video (Gen4 Turbo) 노드는 Runway의 Gen4 Turbo 모델을 사�
 | `seed` | INT | 아니오 | 0부터 4294967295까지 | 생성을 위한 랜덤 시드 (기본값: 0) |
 
 **매개변수 제약 조건:**
+
 - `start_frame` 이미지의 크기는 7999x7999 픽셀을 초과할 수 없음
 - `start_frame` 이미지의 화면 비율은 0.5에서 2.0 사이여야 함
 - `prompt`는 최소 한 글자 이상을 포함해야 함

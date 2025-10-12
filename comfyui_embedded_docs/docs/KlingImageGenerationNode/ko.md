@@ -17,6 +17,7 @@ Kling Image Generation Node는 텍스트 프롬프트에서 이미지를 생성�
 | `이미지` | IMAGE | 아니오 | - | 선택적 참조 이미지 |
 
 **매개변수 제약사항:**
+
 - `image` 매개변수는 선택사항이지만, 제공될 경우 kling-v1 모델은 참조 이미지를 지원하지 않음
 - 프롬프트와 부정 프롬프트에는 최대 길이 제한이 있음 (MAX_PROMPT_LENGTH_IMAGE_GEN)
 - 참조 이미지가 제공되지 않을 경우, `image_type` 매개변수는 자동으로 None으로 설정됨
