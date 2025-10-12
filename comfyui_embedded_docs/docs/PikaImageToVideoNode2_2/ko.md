@@ -1,0 +1,20 @@
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PikaImageToVideoNode2_2/ko.md)
+
+Pika Image to Video 노드는 이미지와 텍스트 프롬프트를 Pika API 버전 2.2로 전송하여 비디오를 생성합니다. 제공된 설명과 설정을 기반으로 입력 이미지를 비디오 형식으로 변환합니다. 이 노드는 API 통신을 처리하고 생성된 비디오를 출력으로 반환합니다.
+
+## 입력
+
+| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | 예 | - | 비디오로 변환할 이미지 |
+| `prompt_text` | STRING | 예 | - | 비디오 생성을 안내하는 텍스트 설명 |
+| `negative_prompt` | STRING | 예 | - | 비디오에서 피해야 할 내용을 설명하는 텍스트 |
+| `seed` | INT | 예 | - | 재현 가능한 결과를 위한 랜덤 시드 값 |
+| `resolution` | STRING | 예 | - | 출력 비디오 해상도 설정 |
+| `duration` | INT | 예 | - | 생성된 비디오의 길이(초 단위) |
+
+## 출력
+
+| 출력 이름 | 데이터 타입 | 설명 |
+|-------------|-----------|-------------|
+| `output` | VIDEO | 생성된 비디오 파일 |

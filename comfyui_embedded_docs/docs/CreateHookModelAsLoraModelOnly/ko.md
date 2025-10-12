@@ -1,0 +1,17 @@
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookModelAsLoraModelOnly/ko.md)
+
+이 노드는 신경망의 모델 구성 요소만 수정하기 위해 LoRA(Low-Rank Adaptation) 모델을 적용하는 훅을 생성합니다. 체크포인트 파일을 로드하고 지정된 강도로 모델에 적용하며 CLIP 구성 요소는 변경하지 않습니다. 이는 기본 CreateHookModelAsLora 클래스의 기능을 확장하는 실험적 노드입니다.
+
+## 입력
+
+| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+|-----------|-----------|----------|-------|-------------|
+| `ckpt_name` | STRING | 예 | 사용 가능한 여러 옵션 | LoRA 모델로 로드할 체크포인트 파일. 사용 가능한 옵션은 체크포인트 폴더 내용에 따라 다릅니다. |
+| `strength_model` | FLOAT | 예 | -20.0 ~ 20.0 | 모델 구성 요소에 LoRA를 적용하기 위한 강도 배수 (기본값: 1.0) |
+| `prev_hooks` | HOOKS | 아니오 | - | 이 훅과 연결할 선택적 이전 훅들 |
+
+## 출력
+
+| 출력 이름 | 데이터 타입 | 설명 |
+|-------------|-----------|-------------|
+| `hooks` | HOOKS | LoRA 모델 수정을 포함하는 생성된 훅 그룹 |

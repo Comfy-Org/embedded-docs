@@ -1,0 +1,26 @@
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/ko.md)
+
+WanFunInpaintToVideo 노드는 시작 이미지와 종료 이미지 사이를 인페인팅하여 비디오 시퀀스를 생성합니다. 긍정 및 부정 조건화와 선택적 프레임 이미지를 입력받아 비디오 잠재 표현을 생성합니다. 이 노드는 구성 가능한 크기와 길이 매개변수로 비디오 생성을 처리합니다.
+
+## 입력
+
+| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+|-----------|-----------|----------|-------|-------------|
+| `positive` | CONDITIONING | 예 | - | 비디오 생성을 위한 긍정 조건화 프롬프트 |
+| `negative` | CONDITIONING | 예 | - | 비디오 생성에서 피할 부정 조건화 프롬프트 |
+| `vae` | VAE | 예 | - | 인코딩/디코딩 작업을 위한 VAE 모델 |
+| `width` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오 너비 (픽셀 단위, 기본값: 832, 단계: 16) |
+| `height` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오 높이 (픽셀 단위, 기본값: 480, 단계: 16) |
+| `length` | INT | 예 | 1 ~ MAX_RESOLUTION | 비디오 시퀀스의 프레임 수 (기본값: 81, 단계: 4) |
+| `batch_size` | INT | 예 | 1 ~ 4096 | 한 배치에서 생성할 비디오 수 (기본값: 1) |
+| `clip_vision_output` | CLIP_VISION_OUTPUT | 아니오 | - | 추가 조건화를 위한 선택적 CLIP 비전 출력 |
+| `start_image` | IMAGE | 아니오 | - | 비디오 생성을 위한 선택적 시작 프레임 이미지 |
+| `end_image` | IMAGE | 아니오 | - | 비디오 생성을 위한 선택적 종료 프레임 이미지 |
+
+## 출력
+
+| 출력 이름 | 데이터 타입 | 설명 |
+|-------------|-----------|-------------|
+| `positive` | CONDITIONING | 처리된 긍정 조건화 출력 |
+| `negative` | CONDITIONING | 처리된 부정 조건화 출력 |
+| `latent` | LATENT | 생성된 비디오 잠재 표현 |
