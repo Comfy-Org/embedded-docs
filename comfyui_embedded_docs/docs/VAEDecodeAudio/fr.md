@@ -6,7 +6,7 @@ Le nœud VAEDecodeAudio convertit les représentations latentes en formes d'onde
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Oui | - | Les échantillons audio encodés dans l'espace latent qui seront décodés en forme d'onde audio |
+| `échantillons` | LATENT | Oui | - | Les échantillons audio encodés dans l'espace latent qui seront décodés en forme d'onde audio |
 | `vae` | VAE | Oui | - | Le modèle d'Autoencodeur Variationnel utilisé pour décoder les échantillons latents en audio |
 
 ## Sorties

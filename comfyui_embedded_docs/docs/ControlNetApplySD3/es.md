@@ -8,18 +8,18 @@ Este nodo aplica guía ControlNet al acondicionamiento de Stable Diffusion 3. To
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | El acondicionamiento positivo al que aplicar la guía ControlNet |
-| `negative` | CONDITIONING | Sí | - | El acondicionamiento negativo al que aplicar la guía ControlNet |
+| `positivo` | CONDITIONING | Sí | - | El acondicionamiento positivo al que aplicar la guía ControlNet |
+| `negativo` | CONDITIONING | Sí | - | El acondicionamiento negativo al que aplicar la guía ControlNet |
 | `control_net` | CONTROL_NET | Sí | - | El modelo ControlNet a utilizar para la guía |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado en el proceso |
-| `image` | IMAGE | Sí | - | La imagen de entrada que ControlNet utilizará como guía |
-| `strength` | FLOAT | Sí | 0.0 - 10.0 | La fuerza del efecto ControlNet (valor por defecto: 1.0) |
-| `start_percent` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio en el proceso de generación donde ControlNet comienza a aplicarse (valor por defecto: 0.0) |
-| `end_percent` | FLOAT | Sí | 0.0 - 1.0 | El punto final en el proceso de generación donde ControlNet deja de aplicarse (valor por defecto: 1.0) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que ControlNet utilizará como guía |
+| `fuerza` | FLOAT | Sí | 0.0 - 10.0 | La fuerza del efecto ControlNet (valor por defecto: 1.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio en el proceso de generación donde ControlNet comienza a aplicarse (valor por defecto: 0.0) |
+| `porcentaje_final` | FLOAT | Sí | 0.0 - 1.0 | El punto final en el proceso de generación donde ControlNet deja de aplicarse (valor por defecto: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | El acondicionamiento positivo modificado con la guía ControlNet aplicada |
-| `negative` | CONDITIONING | El acondicionamiento negativo modificado con la guía ControlNet aplicada |
+| `negativo` | CONDITIONING | El acondicionamiento positivo modificado con la guía ControlNet aplicada |
+| `negativo` | CONDITIONING | El acondicionamiento negativo modificado con la guía ControlNet aplicada |

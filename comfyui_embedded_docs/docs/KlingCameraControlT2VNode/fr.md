@@ -14,8 +14,8 @@
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La vidéo générée avec les effets de contrôle de caméra |
-| `video_id` | STRING | L'identifiant unique de la vidéo générée |
+| `video_id` | VIDEO | La vidéo générée avec les effets de contrôle de caméra |
+| `duration` | STRING | L'identifiant unique de la vidéo générée |
 | `duration` | STRING | La durée de la vidéo générée |
 
 Le nœud Kling Text to Video Camera Control transforme du texte en vidéos cinématographiques avec des mouvements de caméra professionnels qui simulent une cinématographie réelle. Ce nœud permet de contrôler les actions de caméra virtuelle incluant le zoom, la rotation, le panoramique, l'inclinaison et la vue à la première personne, tout en maintenant la focalisation sur votre texte original. La durée, le mode et le nom du modèle sont codés en dur car le contrôle de caméra n'est pris en charge qu'en mode pro avec le modèle kling-v1-5 pour une durée de 5 secondes.

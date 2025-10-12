@@ -6,7 +6,7 @@
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `style_id` | STRING | 예 | 유효한 UUID | Infinite Style Library에서 가져온 스타일의 UUID입니다. |
+| `스타일 ID` | STRING | 예 | 유효한 UUID | Infinite Style Library에서 가져온 스타일의 UUID입니다. |
 
 **참고:** `style_id` 입력은 비워둘 수 없습니다. 빈 문자열이 제공되면 노드에서 예외가 발생합니다.
 

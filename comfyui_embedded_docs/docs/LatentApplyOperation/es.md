@@ -6,8 +6,8 @@ El nodo LatentApplyOperation aplica una operación específica a muestras latent
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Sí | - | Las muestras latentes que serán procesadas por la operación |
-| `operation` | LATENT_OPERATION | Sí | - | La operación a aplicar a las muestras latentes |
+| `muestras` | LATENT | Sí | - | Las muestras latentes que serán procesadas por la operación |
+| `operación` | LATENT_OPERATION | Sí | - | La operación a aplicar a las muestras latentes |
 
 ## Salidas
 

@@ -6,14 +6,14 @@ Génère des vidéos basées sur l'invite et la taille de sortie. Ce nœud crée
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `first_frame` | IMAGE | Oui | - | L'image de départ pour la transition vidéo |
-| `last_frame` | IMAGE | Oui | - | L'image de fin pour la transition vidéo |
+| `première image` | IMAGE | Oui | - | L'image de départ pour la transition vidéo |
+| `dernière image` | IMAGE | Oui | - | L'image de fin pour la transition vidéo |
 | `prompt` | STRING | Oui | - | Invite pour la génération de la vidéo (par défaut : chaîne vide) |
-| `quality` | COMBO | Oui | Options de qualité disponibles dans l'énumération PixverseQuality<br>Par défaut : res_540p | Paramètre de qualité vidéo |
-| `duration_seconds` | COMBO | Oui | Options de durée disponibles dans l'énumération PixverseDuration | Durée de la vidéo en secondes |
-| `motion_mode` | COMBO | Oui | Options de mode de mouvement disponibles dans l'énumération PixverseMotionMode | Style de mouvement pour la transition |
+| `qualité` | COMBO | Oui | Options de qualité disponibles dans l'énumération PixverseQuality<br>Par défaut : res_540p | Paramètre de qualité vidéo |
+| `durée (secondes)` | COMBO | Oui | Options de durée disponibles dans l'énumération PixverseDuration | Durée de la vidéo en secondes |
+| `mode de mouvement` | COMBO | Oui | Options de mode de mouvement disponibles dans l'énumération PixverseMotionMode | Style de mouvement pour la transition |
 | `seed` | INT | Oui | 0 à 2147483647 | Graine pour la génération de vidéo (par défaut : 0) |
-| `negative_prompt` | STRING | Non | - | Une description textuelle optionnelle des éléments indésirables sur une image (par défaut : chaîne vide) |
+| `prompt négatif` | STRING | Non | - | Une description textuelle optionnelle des éléments indésirables sur une image (par défaut : chaîne vide) |
 
 **Note :** Lors de l'utilisation de la qualité 1080p, le mode de mouvement est automatiquement défini sur normal et la durée est limitée à 5 secondes. Pour les durées autres que 5 secondes, le mode de mouvement est également automatiquement défini sur normal.
 

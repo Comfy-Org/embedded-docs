@@ -6,10 +6,10 @@ Ce nœud désactive complètement la fonctionnalité d'intégration de guidage p
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Oui | - | Les données de conditionnement à traiter et dont il faut supprimer le guidage |
+| `conditionnement` | CONDITIONING | Oui | - | Les données de conditionnement à traiter et dont il faut supprimer le guidage |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Les données de conditionnement modifiées avec le guidage désactivé |
+| `conditionnement` | CONDITIONING | Les données de conditionnement modifiées avec le guidage désactivé |

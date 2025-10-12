@@ -6,12 +6,12 @@ LoraSave 노드는 모델 간 차이에서 LoRA(Low-Rank Adaptation) 파일을 �
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `filename_prefix` | STRING | 예 | - | 출력 파일 이름의 접두사 (기본값: "loras/ComfyUI_extracted_lora") |
-| `rank` | INT | 예 | 1-4096 | LoRA의 랭크 값으로, 크기와 복잡도를 제어합니다 (기본값: 8) |
-| `lora_type` | COMBO | 예 | 여러 옵션 사용 가능 | 생성할 LoRA의 유형으로, 다양한 옵션을 사용할 수 있습니다 |
-| `bias_diff` | BOOLEAN | 예 | - | LoRA 계산에 바이어스 차이를 포함할지 여부 (기본값: True) |
-| `model_diff` | MODEL | 아니오 | - | LoRA로 변환할 ModelSubtract 출력 |
-| `text_encoder_diff` | CLIP | 아니오 | - | LoRA로 변환할 CLIPSubtract 출력 |
+| `파일명 접두사` | STRING | 예 | - | 출력 파일 이름의 접두사 (기본값: "loras/ComfyUI_extracted_lora") |
+| `순위` | INT | 예 | 1-4096 | LoRA의 랭크 값으로, 크기와 복잡도를 제어합니다 (기본값: 8) |
+| `LoRA 유형` | COMBO | 예 | 여러 옵션 사용 가능 | 생성할 LoRA의 유형으로, 다양한 옵션을 사용할 수 있습니다 |
+| `차이 편향` | BOOLEAN | 예 | - | LoRA 계산에 바이어스 차이를 포함할지 여부 (기본값: True) |
+| `모델 차이` | MODEL | 아니오 | - | LoRA로 변환할 ModelSubtract 출력 |
+| `텍스트 인코더 차이` | CLIP | 아니오 | - | LoRA로 변환할 CLIPSubtract 출력 |
 
 **참고:** 노드가 기능하려면 `model_diff` 또는 `text_encoder_diff` 중 적어도 하나가 제공되어야 합니다. 둘 다 생략하면 노드는 출력을 생성하지 않습니다.
 

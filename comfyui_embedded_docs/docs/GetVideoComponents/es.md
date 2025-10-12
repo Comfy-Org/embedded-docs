@@ -12,6 +12,6 @@ El nodo Get Video Components extrae todos los elementos principales de un archiv
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `images` | IMAGE | Los fotogramas individuales extraídos del video como imágenes separadas. |
-| `audio` | AUDIO | La pista de audio extraída del video. |
+| `audio` | IMAGE | Los fotogramas individuales extraídos del video como imágenes separadas. |
+| `fps` | AUDIO | La pista de audio extraída del video. |
 | `fps` | FLOAT | La tasa de fotogramas del video en fotogramas por segundo. |

@@ -10,15 +10,15 @@ Le nœud PairConditioningSetPropertiesAndCombine modifie et combine des paires d
 | `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif d'origine |
 | `positive_NEW` | CONDITIONING | Oui | - | Le nouveau conditionnement positif à appliquer |
 | `negative_NEW` | CONDITIONING | Oui | - | Le nouveau conditionnement négatif à appliquer |
-| `strength` | FLOAT | Oui | 0.0 à 10.0 | Le facteur de force pour l'application du nouveau conditionnement (par défaut : 1.0) |
+| `force` | FLOAT | Oui | 0.0 à 10.0 | Le facteur de force pour l'application du nouveau conditionnement (par défaut : 1.0) |
 | `set_cond_area` | STRING | Oui | "default"<br>"mask bounds" | Contrôle la manière dont la zone de conditionnement est appliquée |
-| `mask` | MASK | Non | - | Masque optionnel pour contraindre la zone d'application du conditionnement |
-| `hooks` | HOOKS | Non | - | Groupe de hooks optionnel pour un contrôle avancé |
-| `timesteps` | TIMESTEPS_RANGE | Non | - | Spécification optionnelle de la plage de pas de temps |
+| `masque` | MASK | Non | - | Masque optionnel pour contraindre la zone d'application du conditionnement |
+| `crochets` | HOOKS | Non | - | Groupe de hooks optionnel pour un contrôle avancé |
+| `pas de temps` | TIMESTEPS_RANGE | Non | - | Spécification optionnelle de la plage de pas de temps |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | La sortie de conditionnement positif combiné |
+| `negative` | CONDITIONING | La sortie de conditionnement positif combiné |
 | `negative` | CONDITIONING | La sortie de conditionnement négatif combiné |

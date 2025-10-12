@@ -8,12 +8,12 @@ Le nœud HunyuanImageToVideo convertit des images en représentations latentes v
 |-----------|-----------|----------|-------|-------------|
 | `positive` | CONDITIONING | Oui | - | Entrée de conditionnement positive pour guider la génération vidéo |
 | `vae` | VAE | Oui | - | Modèle VAE utilisé pour encoder les images dans l'espace latent |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 848, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la vidéo de sortie (par défaut : 53, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
-| `guidance_type` | COMBO | Oui | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Méthode d'incorporation de l'image de départ dans la génération vidéo |
-| `start_image` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la génération vidéo |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 848, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la vidéo de sortie (par défaut : 53, pas : 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
+| `type_de_guidage` | COMBO | Oui | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Méthode d'incorporation de l'image de départ dans la génération vidéo |
+| `image_de_départ` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la génération vidéo |
 
 **Note :** Lorsque `start_image` est fournie, le nœud utilise différentes méthodes de guidage selon le `guidance_type` sélectionné :
 - "v1 (concat)" : Concatène le latent d'image avec le latent vidéo
@@ -24,5 +24,5 @@ Le nœud HunyuanImageToVideo convertit des images en représentations latentes v
 
 | Nom de la sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec le guidage d'image appliqué lorsque start_image est fournie |
+| `latent` | CONDITIONING | Conditionnement positif modifié avec le guidage d'image appliqué lorsque start_image est fournie |
 | `latent` | LATENT | Représentation latente vidéo prête pour un traitement ultérieur par les modèles de génération vidéo |

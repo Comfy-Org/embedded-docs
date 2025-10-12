@@ -7,7 +7,7 @@ El nodo SamplerEulerAncestralCFGPP crea un muestreador especializado para genera
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Sí | 0.0 - 1.0 | Controla el tamaño del paso durante el muestreo, donde valores más altos resultan en actualizaciones más agresivas (valor por defecto: 1.0) |
-| `s_noise` | FLOAT | Sí | 0.0 - 10.0 | Ajusta la cantidad de ruido añadido durante el proceso de muestreo (valor por defecto: 1.0) |
+| `s_ruido` | FLOAT | Sí | 0.0 - 10.0 | Ajusta la cantidad de ruido añadido durante el proceso de muestreo (valor por defecto: 1.0) |
 
 ## Salidas
 

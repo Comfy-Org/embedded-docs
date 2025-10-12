@@ -7,14 +7,14 @@ Le nœud WanImageToVideo prépare les conditionnements et les représentations l
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `positive` | CONDITIONING | Oui | - | Conditionnement positif pour guider la génération |
-| `negative` | CONDITIONING | Oui | - | Conditionnement négatif pour guider la génération |
+| `négatif` | CONDITIONING | Oui | - | Conditionnement négatif pour guider la génération |
 | `vae` | VAE | Oui | - | Modèle VAE pour encoder les images dans l'espace latent |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo en sortie (par défaut : 832, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo en sortie (par défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la vidéo (par défaut : 81, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer dans un lot (par défaut : 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Non | - | Sortie de vision CLIP optionnelle pour un conditionnement supplémentaire |
-| `start_image` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la génération vidéo |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo en sortie (par défaut : 832, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo en sortie (par défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la vidéo (par défaut : 81, pas : 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer dans un lot (par défaut : 1) |
+| `sortie_vision_clip` | CLIP_VISION_OUTPUT | Non | - | Sortie de vision CLIP optionnelle pour un conditionnement supplémentaire |
+| `image_de_départ` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la génération vidéo |
 
 **Note :** Lorsque `start_image` est fournie, le nœud encode la séquence d'images et applique un masquage aux entrées de conditionnement. Le paramètre `clip_vision_output`, lorsqu'il est fourni, ajoute un conditionnement basé sur la vision aux entrées positives et négatives.
 
@@ -22,6 +22,6 @@ Le nœud WanImageToVideo prépare les conditionnements et les représentations l
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec incorporation des données d'image et de vision |
-| `negative` | CONDITIONING | Conditionnement négatif modifié avec incorporation des données d'image et de vision |
+| `négatif` | CONDITIONING | Conditionnement positif modifié avec incorporation des données d'image et de vision |
+| `latent` | CONDITIONING | Conditionnement négatif modifié avec incorporation des données d'image et de vision |
 | `latent` | LATENT | Tenseur d'espace latent vide prêt pour la génération vidéo |

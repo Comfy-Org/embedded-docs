@@ -6,9 +6,9 @@ Le nœud LatentBlend combine deux échantillons latents en les fusionnant à l'a
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `samples1` | LATENT | Oui | - | Le premier échantillon latent à mélanger |
-| `samples2` | LATENT | Oui | - | Le deuxième échantillon latent à mélanger |
-| `blend_factor` | FLOAT | Oui | 0 à 1 | Contrôle le ratio de mélange entre les deux échantillons (par défaut : 0.5) |
+| `échantillons1` | LATENT | Oui | - | Le premier échantillon latent à mélanger |
+| `échantillons2` | LATENT | Oui | - | Le deuxième échantillon latent à mélanger |
+| `facteur_de_mélange` | FLOAT | Oui | 0 à 1 | Contrôle le ratio de mélange entre les deux échantillons (par défaut : 0.5) |
 
 **Note :** Si `samples1` et `samples2` ont des formes différentes, `samples2` sera automatiquement redimensionné pour correspondre aux dimensions de `samples1` en utilisant une interpolation bicubique avec rognage central.
 

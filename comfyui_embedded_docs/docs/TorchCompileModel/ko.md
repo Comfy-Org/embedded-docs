@@ -6,11 +6,11 @@ TorchCompileModel 노드는 모델의 성능을 최적화하기 위해 PyTorch �
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | - | 컴파일 및 최적화할 모델 |
-| `backend` | STRING | 예 | "inductor"<br>"cudagraphs" | 최적화에 사용할 PyTorch 컴파일 백엔드 |
+| `모델` | MODEL | 예 | - | 컴파일 및 최적화할 모델 |
+| `백엔드` | STRING | 예 | "inductor"<br>"cudagraphs" | 최적화에 사용할 PyTorch 컴파일 백엔드 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model` | MODEL | PyTorch 컴파일이 적용된 컴파일된 모델 |
+| `모델` | MODEL | PyTorch 컴파일이 적용된 컴파일된 모델 |

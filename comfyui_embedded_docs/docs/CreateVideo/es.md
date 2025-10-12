@@ -6,7 +6,7 @@ El nodo Create Video genera un archivo de video a partir de una secuencia de im�
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Sí | - | Las imágenes a partir de las cuales crear un video. |
+| `imágenes` | IMAGE | Sí | - | Las imágenes a partir de las cuales crear un video. |
 | `fps` | FLOAT | Sí | 1.0 - 120.0 | Los fotogramas por segundo para la velocidad de reproducción del video (valor por defecto: 30.0). |
 | `audio` | AUDIO | No | - | El audio para añadir al video. |
 

@@ -17,6 +17,6 @@ Kling Video Extendノードは、他のKlingノードで作成された動画を
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Kling APIによって生成された拡張動画 |
-| `video_id` | STRING | 拡張動画の一意の識別子 |
+| `video_id` | VIDEO | Kling APIによって生成された拡張動画 |
+| `duration` | STRING | 拡張動画の一意の識別子 |
 | `duration` | STRING | 拡張動画の再生時間 |

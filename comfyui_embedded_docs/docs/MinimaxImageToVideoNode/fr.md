@@ -7,9 +7,9 @@ Génère des vidéos de manière synchrone à partir d'une image et d'une descri
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Oui | - | Image à utiliser comme première frame de la génération vidéo |
-| `prompt_text` | STRING | Oui | - | Description textuelle pour guider la génération de la vidéo (par défaut : chaîne vide) |
-| `model` | COMBO | Oui | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" | Modèle à utiliser pour la génération vidéo (par défaut : "I2V-01") |
-| `seed` | INT | Non | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit (par défaut : 0) |
+| `texte d'invite` | STRING | Oui | - | Description textuelle pour guider la génération de la vidéo (par défaut : chaîne vide) |
+| `modèle` | COMBO | Oui | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" | Modèle à utiliser pour la génération vidéo (par défaut : "I2V-01") |
+| `graine` | INT | Non | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit (par défaut : 0) |
 
 ## Sorties
 

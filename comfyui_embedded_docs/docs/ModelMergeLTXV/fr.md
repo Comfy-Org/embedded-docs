@@ -39,7 +39,7 @@ Le nœud ModelMergeLTXV effectue des opérations avancées de fusion de modèles
 | `transformer_blocks.25.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation pour le bloc transformeur 25 (par défaut : 1.0) |
 | `transformer_blocks.26.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation pour le bloc transformeur 26 (par défaut : 1.0) |
 | `transformer_blocks.27.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation pour le bloc transformeur 27 (par défaut : 1.0) |
-| `scale_shift_table` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation pour la table de décalage d'échelle (par défaut : 1.0) |
+| `table_de_décalage_d'échelle` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation pour la table de décalage d'échelle (par défaut : 1.0) |
 | `proj_out.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation pour les couches de projection de sortie (par défaut : 1.0) |
 
 ## Sorties

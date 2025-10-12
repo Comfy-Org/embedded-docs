@@ -4,12 +4,12 @@ Este nodo aplica un modelo de estilo a una condición dada, mejorando o alterand
 
 | Parameter             | Comfy dtype          | Description |
 |-----------------------|-----------------------|-------------|
-| `conditioning`        | `CONDITIONING`       | Los datos de condición originales a los que se aplicará la condición del modelo de estilo. Es crucial para definir el contexto base o estilo que será mejorado o alterado. |
-| `style_model`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar una nueva condición basada en la salida del modelo de visión CLIP. Juega un papel clave en la definición del nuevo estilo que se aplicará. |
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que es utilizada por el modelo de estilo para generar una nueva condición. Proporciona el contexto visual necesario para la aplicación del estilo. |
+| `acondicionamiento`        | `CONDITIONING`       | Los datos de condición originales a los que se aplicará la condición del modelo de estilo. Es crucial para definir el contexto base o estilo que será mejorado o alterado. |
+| `modelo_de_estilo`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar una nueva condición basada en la salida del modelo de visión CLIP. Juega un papel clave en la definición del nuevo estilo que se aplicará. |
+| `salida_de_clip_vision`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que es utilizada por el modelo de estilo para generar una nueva condición. Proporciona el contexto visual necesario para la aplicación del estilo. |
 
 ## Salidas
 
 | Parameter            | Comfy dtype           | Description |
 |----------------------|-----------------------|-------------|
-| `conditioning`       | `CONDITIONING`        | La condición mejorada o alterada, incorporando la salida del modelo de estilo. Representa la condición final estilizada lista para un procesamiento o generación adicional. |
+| `acondicionamiento`       | `CONDITIONING`        | La condición mejorada o alterada, incorporando la salida del modelo de estilo. Representa la condición final estilizada lista para un procesamiento o generación adicional. |

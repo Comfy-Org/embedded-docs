@@ -7,8 +7,8 @@ El nodo SamplerDPMPP_3M_SDE crea un sampler DPM++ 3M SDE para usar en el proceso
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Sí | 0.0 - 100.0 | Controla la estocasticidad del proceso de muestreo (valor por defecto: 1.0) |
-| `s_noise` | FLOAT | Sí | 0.0 - 100.0 | Controla la cantidad de ruido añadido durante el muestreo (valor por defecto: 1.0) |
-| `noise_device` | COMBO | Sí | "gpu"<br>"cpu" | Selecciona el dispositivo para los cálculos de ruido, ya sea GPU o CPU |
+| `s_ruido` | FLOAT | Sí | 0.0 - 100.0 | Controla la cantidad de ruido añadido durante el muestreo (valor por defecto: 1.0) |
+| `dispositivo_ruido` | COMBO | Sí | "gpu"<br>"cpu" | Selecciona el dispositivo para los cálculos de ruido, ya sea GPU o CPU |
 
 ## Salidas
 

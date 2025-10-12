@@ -6,8 +6,8 @@ El nodo EmptyLatentAudio crea tensores latentes vacíos para procesamiento de au
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `seconds` | FLOAT | Sí | 1.0 - 1000.0 | La duración del audio en segundos (valor por defecto: 47.6) |
-| `batch_size` | INT | Sí | 1 - 4096 | El número de imágenes latentes en el lote (valor por defecto: 1) |
+| `segundos` | FLOAT | Sí | 1.0 - 1000.0 | La duración del audio en segundos (valor por defecto: 47.6) |
+| `tamaño_del_lote` | INT | Sí | 1 - 4096 | El número de imágenes latentes en el lote (valor por defecto: 1) |
 
 ## Salidas
 

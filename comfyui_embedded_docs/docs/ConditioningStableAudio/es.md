@@ -6,14 +6,14 @@ El nodo ConditioningStableAudio agrega información de temporización tanto a la
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que se modificará con información de temporización de audio |
-| `negative` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que se modificará con información de temporización de audio |
-| `seconds_start` | FLOAT | Sí | 0.0 a 1000.0 | El tiempo de inicio en segundos para la generación de audio (valor por defecto: 0.0) |
-| `seconds_total` | FLOAT | Sí | 0.0 a 1000.0 | La duración total en segundos para la generación de audio (valor por defecto: 47.0) |
+| `positivo` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que se modificará con información de temporización de audio |
+| `negativo` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que se modificará con información de temporización de audio |
+| `segundos_inicio` | FLOAT | Sí | 0.0 a 1000.0 | El tiempo de inicio en segundos para la generación de audio (valor por defecto: 0.0) |
+| `segundos_total` | FLOAT | Sí | 0.0 a 1000.0 | La duración total en segundos para la generación de audio (valor por defecto: 47.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo modificado con la información de temporización de audio aplicada |
-| `negative` | CONDITIONING | El condicionamiento negativo modificado con la información de temporización de audio aplicada |
+| `negativo` | CONDITIONING | El condicionamiento positivo modificado con la información de temporización de audio aplicada |
+| `negativo` | CONDITIONING | El condicionamiento negativo modificado con la información de temporización de audio aplicada |

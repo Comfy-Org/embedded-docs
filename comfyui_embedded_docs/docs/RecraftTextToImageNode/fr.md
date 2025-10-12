@@ -7,7 +7,7 @@ Génère des images de manière synchrone en fonction de l'invite et de la réso
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite pour la génération d'image. (défaut : "") |
-| `size` | COMBO | Oui | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | La taille de l'image générée. (défaut : "1024x1024") |
+| `taille` | COMBO | Oui | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | La taille de l'image générée. (défaut : "1024x1024") |
 | `n` | INT | Oui | 1-6 | Le nombre d'images à générer. (défaut : 1) |
 | `seed` | INT | Oui | 0-18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine. (défaut : 0) |
 | `recraft_style` | COMBO | Non | Options multiples disponibles | Sélection de style optionnelle pour la génération d'image. |

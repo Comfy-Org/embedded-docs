@@ -8,11 +8,11 @@ El nodo ConditioningSetPropertiesAndCombine modifica los datos de condicionamien
 |-----------|-----------|------------|---------|-------|-------------|
 | `cond` | CONDITIONING | Requerido | - | - | Los datos de condicionamiento originales que se modificarán |
 | `cond_NEW` | CONDITIONING | Requerido | - | - | Los nuevos datos de condicionamiento que proporcionan las propiedades a aplicar |
-| `strength` | FLOAT | Requerido | 1.0 | 0.0 - 10.0 | Controla la intensidad de las nuevas propiedades de condicionamiento |
-| `set_cond_area` | STRING | Requerido | default | ["default", "mask bounds"] | Determina cómo se aplica el área de condicionamiento |
-| `mask` | MASK | Opcional | - | - | Máscara opcional para definir áreas específicas para el condicionamiento |
-| `hooks` | HOOKS | Opcional | - | - | Funciones de hook opcionales para procesamiento personalizado |
-| `timesteps` | TIMESTEPS_RANGE | Opcional | - | - | Rango de pasos de tiempo opcional para controlar cuándo se aplica el condicionamiento |
+| `fuerza` | FLOAT | Requerido | 1.0 | 0.0 - 10.0 | Controla la intensidad de las nuevas propiedades de condicionamiento |
+| `establecer_area_cond` | STRING | Requerido | default | ["default", "mask bounds"] | Determina cómo se aplica el área de condicionamiento |
+| `máscara` | MASK | Opcional | - | - | Máscara opcional para definir áreas específicas para el condicionamiento |
+| `ganchos` | HOOKS | Opcional | - | - | Funciones de hook opcionales para procesamiento personalizado |
+| `pasos_de_tiempo` | TIMESTEPS_RANGE | Opcional | - | - | Rango de pasos de tiempo opcional para controlar cuándo se aplica el condicionamiento |
 
 **Nota:** Cuando se proporciona `mask`, el parámetro `set_cond_area` puede usar "mask bounds" para restringir la aplicación del condicionamiento a las regiones enmascaradas.
 

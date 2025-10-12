@@ -8,7 +8,7 @@ Crea una secuencia de fotogramas clave de enlace con valores de fuerza interpola
 |-----------|-----------|----------|-------|-------------|
 | `strength_start` | FLOAT | Sí | 0.0 - 10.0 | El valor de fuerza inicial para la secuencia de interpolación (valor por defecto: 1.0) |
 | `strength_end` | FLOAT | Sí | 0.0 - 10.0 | El valor de fuerza final para la secuencia de interpolación (valor por defecto: 1.0) |
-| `interpolation` | COMBO | Sí | Múltiples opciones disponibles | El método de interpolación utilizado para transicionar entre los valores de fuerza |
+| `interpolación` | COMBO | Sí | Múltiples opciones disponibles | El método de interpolación utilizado para transicionar entre los valores de fuerza |
 | `start_percent` | FLOAT | Sí | 0.0 - 1.0 | La posición porcentual inicial en el proceso de generación (valor por defecto: 0.0) |
 | `end_percent` | FLOAT | Sí | 0.0 - 1.0 | La posición porcentual final en el proceso de generación (valor por defecto: 1.0) |
 | `keyframes_count` | INT | Sí | 2 - 100 | El número de fotogramas clave a generar en la secuencia de interpolación (valor por defecto: 5) |

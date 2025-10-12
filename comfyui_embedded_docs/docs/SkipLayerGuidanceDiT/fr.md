@@ -6,13 +6,13 @@ Améliore le guidage vers une structure détaillée en utilisant un autre ensemb
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par couches ignorées |
-| `double_layers` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs doubles à ignorer (par défaut : "7, 8, 9") |
-| `single_layers` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs simples à ignorer (par défaut : "7, 8, 9") |
-| `scale` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle du guidage (par défaut : 3.0) |
-| `start_percent` | FLOAT | Oui | 0.0 - 1.0 | Pourcentage de départ pour l'application du guidage (par défaut : 0.01) |
-| `end_percent` | FLOAT | Oui | 0.0 - 1.0 | Pourcentage de fin pour l'application du guidage (par défaut : 0.15) |
-| `rescaling_scale` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle de re-dimensionnement (par défaut : 0.0) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par couches ignorées |
+| `double_couches` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs doubles à ignorer (par défaut : "7, 8, 9") |
+| `couches_simples` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs simples à ignorer (par défaut : "7, 8, 9") |
+| `échelle` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle du guidage (par défaut : 3.0) |
+| `pourcentage_de_départ` | FLOAT | Oui | 0.0 - 1.0 | Pourcentage de départ pour l'application du guidage (par défaut : 0.01) |
+| `pourcentage_de_fin` | FLOAT | Oui | 0.0 - 1.0 | Pourcentage de fin pour l'application du guidage (par défaut : 0.15) |
+| `échelle_de_redimensionnement` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle de re-dimensionnement (par défaut : 0.0) |
 
 **Note :** Si `double_layers` et `single_layers` sont vides (ne contiennent aucun numéro de couche), le nœud retourne le modèle original sans appliquer de guidage.
 
@@ -20,4 +20,4 @@ Améliore le guidage vers une structure détaillée en utilisant un autre ensemb
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec le guidage par couches ignorées appliqué |
+| `modèle` | MODEL | Le modèle modifié avec le guidage par couches ignorées appliqué |

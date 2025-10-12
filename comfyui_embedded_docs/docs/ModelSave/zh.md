@@ -8,8 +8,8 @@ ModelSave 节点可将训练或修改后的模型保存至计算机存储设备�
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 需要保存到磁盘的模型 |
-| `filename_prefix` | STRING | 是 | - | 保存模型文件的文件名和路径前缀（默认值："diffusion_models/ComfyUI"） |
+| `模型` | MODEL | 是 | - | 需要保存到磁盘的模型 |
+| `文件名前缀` | STRING | 是 | - | 保存模型文件的文件名和路径前缀（默认值："diffusion_models/ComfyUI"） |
 | `prompt` | PROMPT | 否 | - | 工作流提示信息（自动提供） |
 | `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 额外的工作流元数据（自动提供） |
 

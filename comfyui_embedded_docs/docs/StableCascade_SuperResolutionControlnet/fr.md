@@ -13,6 +13,6 @@ Le nœud StableCascade_SuperResolutionControlnet prépare les entrées pour le t
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | La représentation encodée de l'image adaptée pour l'entrée controlnet |
-| `stage_c` | LATENT | Représentation latente de substitution pour l'étape C du traitement Stable Cascade |
+| `étape_c` | IMAGE | La représentation encodée de l'image adaptée pour l'entrée controlnet |
+| `étape_b` | LATENT | Représentation latente de substitution pour l'étape C du traitement Stable Cascade |
 | `stage_b` | LATENT | Représentation latente de substitution pour l'étape B du traitement Stable Cascade |

@@ -6,14 +6,14 @@ Le nœud SkipLayerGuidanceSD3 améliore le guidage vers une structure détaillé
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par couches ignorées |
-| `layers` | STRING | Oui | - | Liste d'indices de couches à ignorer, séparés par des virgules (par défaut : "7, 8, 9") |
-| `scale` | FLOAT | Oui | 0.0 - 10.0 | L'intensité de l'effet de guidage par couches ignorées (par défaut : 3.0) |
-| `start_percent` | FLOAT | Oui | 0.0 - 1.0 | Le point de départ de l'application du guidage en pourcentage du nombre total d'étapes (par défaut : 0.01) |
-| `end_percent` | FLOAT | Oui | 0.0 - 1.0 | Le point d'arrêt de l'application du guidage en pourcentage du nombre total d'étapes (par défaut : 0.15) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par couches ignorées |
+| `couches` | STRING | Oui | - | Liste d'indices de couches à ignorer, séparés par des virgules (par défaut : "7, 8, 9") |
+| `échelle` | FLOAT | Oui | 0.0 - 10.0 | L'intensité de l'effet de guidage par couches ignorées (par défaut : 3.0) |
+| `pourcentage_de_départ` | FLOAT | Oui | 0.0 - 1.0 | Le point de départ de l'application du guidage en pourcentage du nombre total d'étapes (par défaut : 0.01) |
+| `pourcentage_de_fin` | FLOAT | Oui | 0.0 - 1.0 | Le point d'arrêt de l'application du guidage en pourcentage du nombre total d'étapes (par défaut : 0.15) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec le guidage par couches ignorées appliqué |
+| `modèle` | MODEL | Le modèle modifié avec le guidage par couches ignorées appliqué |

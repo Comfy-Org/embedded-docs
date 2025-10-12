@@ -6,19 +6,19 @@ PairConditioningSetPropertiesAndCombine 노드는 기존의 긍정적 및 부정
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 예 | - | 원본 긍정적 조건 입력 |
-| `negative` | CONDITIONING | 예 | - | 원본 부정적 조건 입력 |
-| `positive_NEW` | CONDITIONING | 예 | - | 적용할 새로운 긍정적 조건 |
-| `negative_NEW` | CONDITIONING | 예 | - | 적용할 새로운 부정적 조건 |
-| `strength` | FLOAT | 예 | 0.0 ~ 10.0 | 새로운 조건을 적용하기 위한 강도 계수 (기본값: 1.0) |
-| `set_cond_area` | STRING | 예 | "default"<br>"mask bounds" | 조건 영역 적용 방식을 제어합니다 |
-| `mask` | MASK | 아니오 | - | 조건 적용 영역을 제한하기 위한 선택적 마스크 |
-| `hooks` | HOOKS | 아니오 | - | 고급 제어를 위한 선택적 후크 그룹 |
-| `timesteps` | TIMESTEPS_RANGE | 아니오 | - | 선택적 타임스텝 범위 지정 |
+| `긍정 조건` | CONDITIONING | 예 | - | 원본 긍정적 조건 입력 |
+| `부정 조건` | CONDITIONING | 예 | - | 원본 부정적 조건 입력 |
+| `새 긍정 조건` | CONDITIONING | 예 | - | 적용할 새로운 긍정적 조건 |
+| `새 부정 조건` | CONDITIONING | 예 | - | 적용할 새로운 부정적 조건 |
+| `강도` | FLOAT | 예 | 0.0 ~ 10.0 | 새로운 조건을 적용하기 위한 강도 계수 (기본값: 1.0) |
+| `조건 영역 설정` | STRING | 예 | "default"<br>"mask bounds" | 조건 영역 적용 방식을 제어합니다 |
+| `마스크` | MASK | 아니오 | - | 조건 적용 영역을 제한하기 위한 선택적 마스크 |
+| `후크` | HOOKS | 아니오 | - | 고급 제어를 위한 선택적 후크 그룹 |
+| `타임스텝 범위` | TIMESTEPS_RANGE | 아니오 | - | 선택적 타임스텝 범위 지정 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 결합된 긍정적 조건 출력 |
-| `negative` | CONDITIONING | 결합된 부정적 조건 출력 |
+| `부정 조건` | CONDITIONING | 결합된 긍정적 조건 출력 |
+| `부정 조건` | CONDITIONING | 결합된 부정적 조건 출력 |

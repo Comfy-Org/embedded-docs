@@ -6,8 +6,8 @@ Le nœud ModelSave permet de sauvegarder des modèles entraînés ou modifiés d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle à sauvegarder sur le disque |
-| `filename_prefix` | STRING | Oui | - | Le préfixe du nom de fichier et du chemin pour le fichier de modèle sauvegardé (par défaut : "diffusion_models/ComfyUI") |
+| `modèle` | MODEL | Oui | - | Le modèle à sauvegarder sur le disque |
+| `préfixe_fichier` | STRING | Oui | - | Le préfixe du nom de fichier et du chemin pour le fichier de modèle sauvegardé (par défaut : "diffusion_models/ComfyUI") |
 | `prompt` | PROMPT | Non | - | Informations du prompt du workflow (fournies automatiquement) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Non | - | Métadonnées supplémentaires du workflow (fournies automatiquement) |
 

@@ -6,13 +6,13 @@ El nodo LTXVConditioning agrega información de tasa de cuadros (frame rate) tan
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que recibirá la información de tasa de cuadros |
-| `negative` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que recibirá la información de tasa de cuadros |
-| `frame_rate` | FLOAT | No | 0.0 - 1000.0 | El valor de tasa de cuadros a aplicar a ambos conjuntos de condicionamiento (valor por defecto: 25.0) |
+| `positivo` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que recibirá la información de tasa de cuadros |
+| `negativo` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que recibirá la información de tasa de cuadros |
+| `tasa_fotogramas` | FLOAT | No | 0.0 - 1000.0 | El valor de tasa de cuadros a aplicar a ambos conjuntos de condicionamiento (valor por defecto: 25.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo con la información de tasa de cuadros aplicada |
-| `negative` | CONDITIONING | El condicionamiento negativo con la información de tasa de cuadros aplicada |
+| `negativo` | CONDITIONING | El condicionamiento positivo con la información de tasa de cuadros aplicada |
+| `negativo` | CONDITIONING | El condicionamiento negativo con la información de tasa de cuadros aplicada |

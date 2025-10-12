@@ -9,7 +9,7 @@ LatentCompositeノードは、2つの潜在表現を1つの出力にブレンド
 | `samples_from` | `LATENT` | 'samples_to'に合成される'samples_from'の潜在表現です。最終的な合成出力にその特徴や特性を提供します。 |
 | `x`          | `INT`      | 'samples_from'の潜在が'samples_to'に配置されるx座標（水平位置）です。合成の水平位置を決定します。 |
 | `y`          | `INT`      | 'samples_from'の潜在が'samples_to'に配置されるy座標（垂直位置）です。合成の垂直位置を決定します。 |
-| `feather`    | `INT`      | 'samples_from'の潜在を合成前に'samples_to'に合わせてリサイズするかどうかを示すブール値です。これにより、合成結果のスケールと比率に影響を与えることができます。 |
+| `フェザー`    | `INT`      | 'samples_from'の潜在を合成前に'samples_to'に合わせてリサイズするかどうかを示すブール値です。これにより、合成結果のスケールと比率に影響を与えることができます。 |
 
 ## 出力
 

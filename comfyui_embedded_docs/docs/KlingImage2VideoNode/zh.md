@@ -19,6 +19,6 @@ Kling Image to Video 节点能够基于起始图像，通过文本提示生成�
 
 | 输出名称 | 数据类型 | 输出说明 |
 |----------|----------|----------|
-| `output` | VIDEO | 生成的视频输出。 |
-| `video_id` | STRING | 生成视频的唯一标识符。 |
+| `video_id` | VIDEO | 生成的视频输出。 |
+| `duration` | STRING | 生成视频的唯一标识符。 |
 | `duration` | STRING | 生成视频的时长信息。 |

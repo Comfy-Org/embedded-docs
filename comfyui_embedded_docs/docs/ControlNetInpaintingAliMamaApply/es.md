@@ -6,15 +6,15 @@ El nodo ControlNetInpaintingAliMamaApply aplica el acondicionamiento ControlNet 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | El acondicionamiento positivo que guía la generación hacia el contenido deseado |
-| `negative` | CONDITIONING | Sí | - | El acondicionamiento negativo que guía la generación lejos del contenido no deseado |
+| `positivo` | CONDITIONING | Sí | - | El acondicionamiento positivo que guía la generación hacia el contenido deseado |
+| `negativo` | CONDITIONING | Sí | - | El acondicionamiento negativo que guía la generación lejos del contenido no deseado |
 | `control_net` | CONTROL_NET | Sí | - | El modelo ControlNet que proporciona control adicional sobre la generación |
 | `vae` | VAE | Sí | - | El VAE (Autoencoder Variacional) utilizado para codificar y decodificar imágenes |
-| `image` | IMAGE | Sí | - | La imagen de entrada que sirve como guía de control para el ControlNet |
-| `mask` | MASK | Sí | - | La máscara que define qué áreas de la imagen deben ser rellenadas |
-| `strength` | FLOAT | Sí | 0.0 a 10.0 | La fuerza del efecto ControlNet (valor por defecto: 1.0) |
-| `start_percent` | FLOAT | Sí | 0.0 a 1.0 | El punto de inicio (como porcentaje) de cuándo comienza la influencia del ControlNet durante la generación (valor por defecto: 0.0) |
-| `end_percent` | FLOAT | Sí | 0.0 a 1.0 | El punto final (como porcentaje) de cuándo se detiene la influencia del ControlNet durante la generación (valor por defecto: 1.0) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que sirve como guía de control para el ControlNet |
+| `máscara` | MASK | Sí | - | La máscara que define qué áreas de la imagen deben ser rellenadas |
+| `fuerza` | FLOAT | Sí | 0.0 a 10.0 | La fuerza del efecto ControlNet (valor por defecto: 1.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 a 1.0 | El punto de inicio (como porcentaje) de cuándo comienza la influencia del ControlNet durante la generación (valor por defecto: 0.0) |
+| `porcentaje_final` | FLOAT | Sí | 0.0 a 1.0 | El punto final (como porcentaje) de cuándo se detiene la influencia del ControlNet durante la generación (valor por defecto: 1.0) |
 
 **Nota:** Cuando el ControlNet tiene `concat_mask` habilitado, la máscara se invierte y se aplica a la imagen antes del procesamiento, y la máscara se incluye en los datos de concatenación adicionales enviados al ControlNet.
 
@@ -22,5 +22,5 @@ El nodo ControlNetInpaintingAliMamaApply aplica el acondicionamiento ControlNet 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | El acondicionamiento positivo modificado con ControlNet aplicado para inpainting |
-| `negative` | CONDITIONING | El acondicionamiento negativo modificado con ControlNet aplicado para inpainting |
+| `negativo` | CONDITIONING | El acondicionamiento positivo modificado con ControlNet aplicado para inpainting |
+| `negativo` | CONDITIONING | El acondicionamiento negativo modificado con ControlNet aplicado para inpainting |

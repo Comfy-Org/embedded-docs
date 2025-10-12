@@ -8,9 +8,9 @@
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `human_image` | IMAGE | 예 | - | 의상을 입혀 볼 인물 이미지 |
-| `cloth_image` | IMAGE | 예 | - | 인물에게 입혀 볼 의류 이미지 |
-| `model_name` | STRING | 예 | `"kolors-virtual-try-on-v1"` | 사용할 가상 피팅 모델 (기본값: "kolors-virtual-try-on-v1") |
+| `사람 이미지` | IMAGE | 예 | - | 의상을 입혀 볼 인물 이미지 |
+| `의상 이미지` | IMAGE | 예 | - | 인물에게 입혀 볼 의류 이미지 |
+| `모델 명` | STRING | 예 | `"kolors-virtual-try-on-v1"` | 사용할 가상 피팅 모델 (기본값: "kolors-virtual-try-on-v1") |
 
 ## 출력
 

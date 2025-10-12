@@ -7,9 +7,9 @@ El nodo SaveVideo guarda contenido de video de entrada en tu directorio de salid
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Sí | - | El video a guardar. |
-| `filename_prefix` | STRING | No | - | El prefijo para el archivo a guardar. Puede incluir información de formato como %date:yyyy-MM-dd% o %Empty Latent Image.width% para incluir valores de nodos (por defecto: "video/ComfyUI"). |
-| `format` | COMBO | No | Múltiples opciones disponibles | El formato para guardar el video (por defecto: "auto"). |
-| `codec` | COMBO | No | Múltiples opciones disponibles | El códec a utilizar para el video (por defecto: "auto"). |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el archivo a guardar. Puede incluir información de formato como %date:yyyy-MM-dd% o %Empty Latent Image.width% para incluir valores de nodos (por defecto: "video/ComfyUI"). |
+| `formato` | COMBO | No | Múltiples opciones disponibles | El formato para guardar el video (por defecto: "auto"). |
+| `códec` | COMBO | No | Múltiples opciones disponibles | El códec a utilizar para el video (por defecto: "auto"). |
 
 ## Salidas
 

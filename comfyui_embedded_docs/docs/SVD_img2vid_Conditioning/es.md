@@ -7,19 +7,19 @@ El nodo SVD_img2vid_Conditioning prepara los datos de condicionamiento para la g
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `clip_vision` | CLIP_VISION | Sí | - | Modelo CLIP vision para codificar la imagen de entrada |
-| `init_image` | IMAGE | Sí | - | Imagen inicial que se utilizará como punto de partida para la generación de video |
+| `imagen_inicial` | IMAGE | Sí | - | Imagen inicial que se utilizará como punto de partida para la generación de video |
 | `vae` | VAE | Sí | - | Modelo VAE para codificar la imagen en el espacio latente |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida (predeterminado: 1024, paso: 8) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Altura del video de salida (predeterminado: 576, paso: 8) |
-| `video_frames` | INT | Sí | 1 a 4096 | Número de cuadros a generar en el video (predeterminado: 14) |
-| `motion_bucket_id` | INT | Sí | 1 a 1023 | Controla la cantidad de movimiento en el video generado (predeterminado: 127) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida (predeterminado: 1024, paso: 8) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION | Altura del video de salida (predeterminado: 576, paso: 8) |
+| `cuadros_de_video` | INT | Sí | 1 a 4096 | Número de cuadros a generar en el video (predeterminado: 14) |
+| `id_del_cubeta_de_movimiento` | INT | Sí | 1 a 1023 | Controla la cantidad de movimiento en el video generado (predeterminado: 127) |
 | `fps` | INT | Sí | 1 a 1024 | Cuadros por segundo para el video generado (predeterminado: 6) |
-| `augmentation_level` | FLOAT | Sí | 0.0 a 10.0 | Nivel de aumento de ruido a aplicar a la imagen de entrada (predeterminado: 0.0, paso: 0.01) |
+| `nivel_de_aumento` | FLOAT | Sí | 0.0 a 10.0 | Nivel de aumento de ruido a aplicar a la imagen de entrada (predeterminado: 0.0, paso: 0.01) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de video |
-| `negative` | CONDITIONING | Datos de condicionamiento negativo con incrustaciones anuladas y parámetros de video |
+| `negativo` | CONDITIONING | Datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de video |
+| `latente` | CONDITIONING | Datos de condicionamiento negativo con incrustaciones anuladas y parámetros de video |
 | `latent` | LATENT | Tensor de espacio latente vacío listo para la generación de video |

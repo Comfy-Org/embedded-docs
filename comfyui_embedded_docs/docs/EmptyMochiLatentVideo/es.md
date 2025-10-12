@@ -6,10 +6,10 @@ El nodo EmptyMochiLatentVideo crea un tensor de video latente vacío con dimensi
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | El ancho del video latente en píxeles (por defecto: 848, debe ser divisible por 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | El alto del video latente en píxeles (por defecto: 480, debe ser divisible por 16) |
-| `length` | INT | Sí | 7 a MAX_RESOLUTION | El número de fotogramas en el video latente (por defecto: 25) |
-| `batch_size` | INT | No | 1 a 4096 | El número de videos latentes a generar en un lote (por defecto: 1) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | El ancho del video latente en píxeles (por defecto: 848, debe ser divisible por 16) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION | El alto del video latente en píxeles (por defecto: 480, debe ser divisible por 16) |
+| `longitud` | INT | Sí | 7 a MAX_RESOLUTION | El número de fotogramas en el video latente (por defecto: 25) |
+| `tamaño_del_lote` | INT | No | 1 a 4096 | El número de videos latentes a generar en un lote (por defecto: 1) |
 
 **Nota:** Las dimensiones latentes reales se calculan como ancho/8 y alto/8, y la dimensión temporal se calcula como ((longitud - 1) // 6) + 1.
 

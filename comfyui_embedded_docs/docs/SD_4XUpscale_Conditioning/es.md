@@ -6,16 +6,16 @@ El nodo SD_4XUpscale_Conditioning prepara datos de condicionamiento para el esca
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Sí | - | Imágenes de entrada que se van a escalar |
-| `positive` | CONDITIONING | Sí | - | Datos de condicionamiento positivo que guían la generación hacia el contenido deseado |
-| `negative` | CONDITIONING | Sí | - | Datos de condicionamiento negativo que alejan la generación del contenido no deseado |
-| `scale_ratio` | FLOAT | No | 0.0 - 10.0 | Factor de escalado aplicado a las imágenes de entrada (valor por defecto: 4.0) |
-| `noise_augmentation` | FLOAT | No | 0.0 - 1.0 | Cantidad de ruido a añadir durante el proceso de escalado (valor por defecto: 0.0) |
+| `imágenes` | IMAGE | Sí | - | Imágenes de entrada que se van a escalar |
+| `positivo` | CONDITIONING | Sí | - | Datos de condicionamiento positivo que guían la generación hacia el contenido deseado |
+| `negativo` | CONDITIONING | Sí | - | Datos de condicionamiento negativo que alejan la generación del contenido no deseado |
+| `relación_escala` | FLOAT | No | 0.0 - 10.0 | Factor de escalado aplicado a las imágenes de entrada (valor por defecto: 4.0) |
+| `aumento_ruido` | FLOAT | No | 0.0 - 1.0 | Cantidad de ruido a añadir durante el proceso de escalado (valor por defecto: 0.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo modificado con información de escalado aplicada |
-| `negative` | CONDITIONING | Condicionamiento negativo modificado con información de escalado aplicada |
+| `negativo` | CONDITIONING | Condicionamiento positivo modificado con información de escalado aplicada |
+| `latente` | CONDITIONING | Condicionamiento negativo modificado con información de escalado aplicada |
 | `latent` | LATENT | Representación latente vacía que coincide con las dimensiones escaladas |

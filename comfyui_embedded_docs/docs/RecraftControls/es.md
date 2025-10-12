@@ -6,8 +6,8 @@ Crea controles Recraft para personalizar la generación Recraft. Este nodo permi
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `colors` | COLOR | No | - | Configuración de color para los elementos principales |
-| `background_color` | COLOR | No | - | Configuración del color de fondo |
+| `colores` | COLOR | No | - | Configuración de color para los elementos principales |
+| `color_de_fondo` | COLOR | No | - | Configuración del color de fondo |
 
 ## Salidas
 

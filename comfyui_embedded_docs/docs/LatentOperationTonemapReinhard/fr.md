@@ -6,7 +6,7 @@ Le nœud LatentOperationTonemapReinhard applique un mappage de ton Reinhard aux 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `multiplier` | FLOAT | Non | 0.0 à 100.0 | Contrôle l'intensité de l'effet de mappage de ton (par défaut : 1.0) |
+| `multiplicateur` | FLOAT | Non | 0.0 à 100.0 | Contrôle l'intensité de l'effet de mappage de ton (par défaut : 1.0) |
 
 ## Sorties
 

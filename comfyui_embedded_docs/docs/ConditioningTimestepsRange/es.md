@@ -6,13 +6,13 @@ El nodo ConditioningTimestepsRange crea tres rangos de pasos temporales distinto
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `start_percent` | FLOAT | Sí | 0.0 - 1.0 | El porcentaje de inicio del rango de pasos temporales (por defecto: 0.0) |
-| `end_percent` | FLOAT | Sí | 0.0 - 1.0 | El porcentaje de fin del rango de pasos temporales (por defecto: 1.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 - 1.0 | El porcentaje de inicio del rango de pasos temporales (por defecto: 0.0) |
+| `porcentaje_fin` | FLOAT | Sí | 0.0 - 1.0 | El porcentaje de fin del rango de pasos temporales (por defecto: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | El rango principal de pasos temporales definido por start_percent y end_percent |
-| `BEFORE_RANGE` | TIMESTEPS_RANGE | El rango de pasos temporales desde 0.0 hasta start_percent |
+| `ANTES_DE_RANGO` | TIMESTEPS_RANGE | El rango principal de pasos temporales definido por start_percent y end_percent |
+| `DESPUÉS_DE_RANGO` | TIMESTEPS_RANGE | El rango de pasos temporales desde 0.0 hasta start_percent |
 | `AFTER_RANGE` | TIMESTEPS_RANGE | El rango de pasos temporales desde end_percent hasta 1.0 |

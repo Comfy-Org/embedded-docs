@@ -9,9 +9,9 @@ Restaure l'image basée sur un masque et une instruction. Ce nœud utilise le mo
 | `image` | IMAGE | Oui | - | L'image d'entrée à restaurer |
 | `mask` | MASK | Oui | - | Le masque définissant les zones de l'image à remplir |
 | `prompt` | STRING | Non | - | Instruction pour la génération d'image (par défaut : chaîne vide) |
-| `prompt_upsampling` | BOOLEAN | Non | - | Détermine si un suréchantillonnage doit être appliqué à l'instruction. Si actif, modifie automatiquement l'instruction pour une génération plus créative, mais les résultats sont non déterministes (la même graîne ne produira pas exactement le même résultat). (par défaut : false) |
-| `guidance` | FLOAT | Non | 1.5-100 | Intensité de guidage pour le processus de génération d'image (par défaut : 60) |
-| `steps` | INT | Non | 15-50 | Nombre d'étapes pour le processus de génération d'image (par défaut : 50) |
+| `suréchantillonnage du prompt` | BOOLEAN | Non | - | Détermine si un suréchantillonnage doit être appliqué à l'instruction. Si actif, modifie automatiquement l'instruction pour une génération plus créative, mais les résultats sont non déterministes (la même graîne ne produira pas exactement le même résultat). (par défaut : false) |
+| `guidage` | FLOAT | Non | 1.5-100 | Intensité de guidage pour le processus de génération d'image (par défaut : 60) |
+| `étapes` | INT | Non | 15-50 | Nombre d'étapes pour le processus de génération d'image (par défaut : 50) |
 | `seed` | INT | Non | 0-18446744073709551615 | La graîne aléatoire utilisée pour créer le bruit. (par défaut : 0) |
 
 ## Sorties

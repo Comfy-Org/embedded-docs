@@ -15,7 +15,7 @@ A veces, es posible que necesites **refrescar la interfaz de ComfyUI** para que 
 
 | Campo               | Descripción                                                                                                                                                                                                 |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `style_model_name`  | Especifica el nombre del modelo de estilo a cargar. Este nombre se utiliza para localizar el archivo del modelo dentro de una estructura de directorios predefinida, permitiendo la carga dinámica de diferentes modelos de estilo.                  |
+| `nombre_del_modelo_de_estilo`  | Especifica el nombre del modelo de estilo a cargar. Este nombre se utiliza para localizar el archivo del modelo dentro de una estructura de directorios predefinida, permitiendo la carga dinámica de diferentes modelos de estilo.                  |
 | Comfy dtype         | `COMBO[STRING]`                                                                                                                                                                                             |
 | Python dtype        | `str`                                                                                                                                                                                                       |
 

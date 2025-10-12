@@ -6,11 +6,11 @@ TorchCompileModel 节点对模型应用 PyTorch 编译以优化其性能。它�
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 待编译和优化的模型 |
-| `backend` | STRING | 是 | "inductor"<br>"cudagraphs" | 用于优化的 PyTorch 编译后端 |
+| `模型` | MODEL | 是 | - | 待编译和优化的模型 |
+| `后端` | STRING | 是 | "inductor"<br>"cudagraphs" | 用于优化的 PyTorch 编译后端 |
 
 ## 输出结果
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 应用了 PyTorch 编译的已编译模型 |
+| `模型` | MODEL | 应用了 PyTorch 编译的已编译模型 |

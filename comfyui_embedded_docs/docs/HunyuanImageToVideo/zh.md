@@ -6,14 +6,14 @@ HunyuanImageToVideo 节点使用混元视频模型将图像转换为视频潜在
 
 | 参数名 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 是 | - | 用于引导视频生成的正向条件输入 |
+| `正向` | CONDITIONING | 是 | - | 用于引导视频生成的正向条件输入 |
 | `vae` | VAE | 是 | - | 用于将图像编码到潜在空间的 VAE 模型 |
-| `width` | INT | 是 | 16 至 MAX_RESOLUTION | 输出视频的宽度（单位：像素，默认值：848，步长：16） |
-| `height` | INT | 是 | 16 至 MAX_RESOLUTION | 输出视频的高度（单位：像素，默认值：480，步长：16） |
-| `length` | INT | 是 | 1 至 MAX_RESOLUTION | 输出视频的帧数（默认值：53，步长：4） |
-| `batch_size` | INT | 是 | 1 至 4096 | 同时生成的视频数量（默认值：1） |
-| `guidance_type` | COMBO | 是 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 将起始图像融入视频生成的方法 |
-| `start_image` | IMAGE | 否 | - | 用于初始化视频生成的可选起始图像 |
+| `宽度` | INT | 是 | 16 至 MAX_RESOLUTION | 输出视频的宽度（单位：像素，默认值：848，步长：16） |
+| `高度` | INT | 是 | 16 至 MAX_RESOLUTION | 输出视频的高度（单位：像素，默认值：480，步长：16） |
+| `长度` | INT | 是 | 1 至 MAX_RESOLUTION | 输出视频的帧数（默认值：53，步长：4） |
+| `批量大小` | INT | 是 | 1 至 4096 | 同时生成的视频数量（默认值：1） |
+| `指导类型` | COMBO | 是 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 将起始图像融入视频生成的方法 |
+| `起始图像` | IMAGE | 否 | - | 用于初始化视频生成的可选起始图像 |
 
 **注意：** 当提供 `start_image` 时，节点会根据选择的 `guidance_type` 使用不同的引导方法：
 - "v1 (concat)"：将图像潜在表示与视频潜在表示进行拼接
@@ -24,5 +24,5 @@ HunyuanImageToVideo 节点使用混元视频模型将图像转换为视频潜在
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 应用了图像引导的修改后正向条件（当提供 start_image 时） |
+| `潜在空间` | CONDITIONING | 应用了图像引导的修改后正向条件（当提供 start_image 时） |
 | `latent` | LATENT | 准备供视频生成模型进一步处理的视频潜在表示 |

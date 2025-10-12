@@ -8,7 +8,7 @@
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `control_net_name` | COMBO[STRING] | 指定要加载的ControlNet模型的名称。此名称用于在预定义的目录结构中定位模型文件。 |
+| `ControlNet名称` | COMBO[STRING] | 指定要加载的ControlNet模型的名称。此名称用于在预定义的目录结构中定位模型文件。 |
 
 ## 输出
 

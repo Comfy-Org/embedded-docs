@@ -17,6 +17,6 @@ Kling Single Image Video Effect Nodeは、単一の参照画像に基づいて�
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | エフェクトが適用された生成動画 |
-| `video_id` | STRING | 生成された動画の一意の識別子 |
+| `video_id` | VIDEO | エフェクトが適用された生成動画 |
+| `duration` | STRING | 生成された動画の一意の識別子 |
 | `duration` | STRING | 生成された動画の長さ |

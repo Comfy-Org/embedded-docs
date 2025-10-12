@@ -6,10 +6,10 @@ El nodo EmptyLTXVLatentVideo crea un tensor latente vacío para procesamiento de
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sí | 64 a MAX_RESOLUTION | El ancho del tensor latente de video (valor por defecto: 768, paso: 32) |
-| `height` | INT | Sí | 64 a MAX_RESOLUTION | El alto del tensor latente de video (valor por defecto: 512, paso: 32) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | El número de fotogramas en el video latente (valor por defecto: 97, paso: 8) |
-| `batch_size` | INT | No | 1 a 4096 | El número de videos latentes a generar en un lote (valor por defecto: 1) |
+| `ancho` | INT | Sí | 64 a MAX_RESOLUTION | El ancho del tensor latente de video (valor por defecto: 768, paso: 32) |
+| `altura` | INT | Sí | 64 a MAX_RESOLUTION | El alto del tensor latente de video (valor por defecto: 512, paso: 32) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | El número de fotogramas en el video latente (valor por defecto: 97, paso: 8) |
+| `tamaño_del_lote` | INT | No | 1 a 4096 | El número de videos latentes a generar en un lote (valor por defecto: 1) |
 
 ## Salidas
 

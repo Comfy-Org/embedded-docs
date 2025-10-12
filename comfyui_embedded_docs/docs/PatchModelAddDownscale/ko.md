@@ -6,17 +6,17 @@ PatchModelAddDownscale 노드는 Kohya Deep Shrink 기능을 구현하여 모델
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | - | 다운스케일 패치를 적용할 모델 |
-| `block_number` | INT | 아니오 | 1-32 | 다운스케일링이 적용될 특정 블록 번호 (기본값: 3) |
-| `downscale_factor` | FLOAT | 아니오 | 0.1-9.0 | 특징맵을 다운스케일할 비율 (기본값: 2.0) |
-| `start_percent` | FLOAT | 아니오 | 0.0-1.0 | 디노이징 과정에서 다운스케일링이 시작되는 지점 (기본값: 0.0) |
-| `end_percent` | FLOAT | 아니오 | 0.0-1.0 | 디노이징 과정에서 다운스케일링이 종료되는 지점 (기본값: 0.35) |
-| `downscale_after_skip` | BOOLEAN | 아니오 | - | 스킵 연결 이후에 다운스케일링을 적용할지 여부 (기본값: True) |
-| `downscale_method` | COMBO | 아니오 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 다운스케일링 작업에 사용되는 보간 방법 |
-| `upscale_method` | COMBO | 아니오 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 업스케일링 작업에 사용되는 보간 방법 |
+| `모델` | MODEL | 예 | - | 다운스케일 패치를 적용할 모델 |
+| `블록 번호` | INT | 아니오 | 1-32 | 다운스케일링이 적용될 특정 블록 번호 (기본값: 3) |
+| `다운스케일 배율` | FLOAT | 아니오 | 0.1-9.0 | 특징맵을 다운스케일할 비율 (기본값: 2.0) |
+| `시작 퍼센트` | FLOAT | 아니오 | 0.0-1.0 | 디노이징 과정에서 다운스케일링이 시작되는 지점 (기본값: 0.0) |
+| `종료 퍼센트` | FLOAT | 아니오 | 0.0-1.0 | 디노이징 과정에서 다운스케일링이 종료되는 지점 (기본값: 0.35) |
+| `스킵 후 다운스케일` | BOOLEAN | 아니오 | - | 스킵 연결 이후에 다운스케일링을 적용할지 여부 (기본값: True) |
+| `다운스케일 방법` | COMBO | 아니오 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 다운스케일링 작업에 사용되는 보간 방법 |
+| `업스케일 방법` | COMBO | 아니오 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 업스케일링 작업에 사용되는 보간 방법 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 다운스케일 패치가 적용된 수정된 모델 |
+| `모델` | MODEL | 다운스케일 패치가 적용된 수정된 모델 |

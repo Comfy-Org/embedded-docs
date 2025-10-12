@@ -18,6 +18,6 @@ Kling Text to Video Camera Control ノードは、テキストを映画のよう
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | カメラ制御効果が適用された生成ビデオ |
-| `video_id` | STRING | 生成されたビデオの一意の識別子 |
+| `video_id` | VIDEO | カメラ制御効果が適用された生成ビデオ |
+| `duration` | STRING | 生成されたビデオの一意の識別子 |
 | `duration` | STRING | 生成されたビデオの再生時間 |

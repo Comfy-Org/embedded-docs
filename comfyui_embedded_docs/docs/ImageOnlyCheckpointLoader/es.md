@@ -6,7 +6,7 @@ Este nodo se especializa en cargar checkpoints específicamente para modelos bas
 
 | Campo      | Data Type | Descripción                                                                       |
 |------------|-------------|-----------------------------------------------------------------------------------|
-| `ckpt_name`| COMBO[STRING] | Especifica el nombre del checkpoint a cargar, crucial para identificar y recuperar el archivo de checkpoint correcto de una lista predefinida. |
+| `nombre_ckpt`| COMBO[STRING] | Especifica el nombre del checkpoint a cargar, crucial para identificar y recuperar el archivo de checkpoint correcto de una lista predefinida. |
 
 ## Salidas
 

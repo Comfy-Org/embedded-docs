@@ -6,10 +6,10 @@ Le nœud EmptyLTXVLatentVideo crée un tenseur latent vide pour le traitement vi
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Oui | 64 à MAX_RESOLUTION | La largeur du tenseur vidéo latent (par défaut : 768, pas : 32) |
-| `height` | INT | Oui | 64 à MAX_RESOLUTION | La hauteur du tenseur vidéo latent (par défaut : 512, pas : 32) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Le nombre d'images dans la vidéo latente (par défaut : 97, pas : 8) |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre de vidéos latentes à générer dans un lot (par défaut : 1) |
+| `largeur` | INT | Oui | 64 à MAX_RESOLUTION | La largeur du tenseur vidéo latent (par défaut : 768, pas : 32) |
+| `hauteur` | INT | Oui | 64 à MAX_RESOLUTION | La hauteur du tenseur vidéo latent (par défaut : 512, pas : 32) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Le nombre d'images dans la vidéo latente (par défaut : 97, pas : 8) |
+| `taille_du_lot` | INT | Non | 1 à 4096 | Le nombre de vidéos latentes à générer dans un lot (par défaut : 1) |
 
 ## Sorties
 

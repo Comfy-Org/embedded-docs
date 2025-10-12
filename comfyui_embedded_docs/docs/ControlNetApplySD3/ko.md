@@ -8,18 +8,18 @@
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 예 | - | ControlNet 지도를 적용할 긍정적 조건화 |
-| `negative` | CONDITIONING | 예 | - | ControlNet 지도를 적용할 부정적 조건화 |
-| `control_net` | CONTROL_NET | 예 | - | 지도에 사용할 ControlNet 모델 |
+| `긍정 조건` | CONDITIONING | 예 | - | ControlNet 지도를 적용할 긍정적 조건화 |
+| `부정 조건` | CONDITIONING | 예 | - | ControlNet 지도를 적용할 부정적 조건화 |
+| `컨트롤넷` | CONTROL_NET | 예 | - | 지도에 사용할 ControlNet 모델 |
 | `vae` | VAE | 예 | - | 과정에서 사용되는 VAE 모델 |
-| `image` | IMAGE | 예 | - | ControlNet이 지도로 사용할 입력 이미지 |
-| `strength` | FLOAT | 예 | 0.0 - 10.0 | ControlNet 효과의 강도 (기본값: 1.0) |
-| `start_percent` | FLOAT | 예 | 0.0 - 1.0 | ControlNet 적용이 시작되는 생성 과정의 지점 (기본값: 0.0) |
-| `end_percent` | FLOAT | 예 | 0.0 - 1.0 | ControlNet 적용이 중단되는 생성 과정의 지점 (기본값: 1.0) |
+| `이미지` | IMAGE | 예 | - | ControlNet이 지도로 사용할 입력 이미지 |
+| `강도` | FLOAT | 예 | 0.0 - 10.0 | ControlNet 효과의 강도 (기본값: 1.0) |
+| `시작 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | ControlNet 적용이 시작되는 생성 과정의 지점 (기본값: 0.0) |
+| `종료 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | ControlNet 적용이 중단되는 생성 과정의 지점 (기본값: 1.0) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | ControlNet 지도가 적용된 수정된 긍정적 조건화 |
-| `negative` | CONDITIONING | ControlNet 지도가 적용된 수정된 부정적 조건화 |
+| `부정 조건` | CONDITIONING | ControlNet 지도가 적용된 수정된 긍정적 조건화 |
+| `부정 조건` | CONDITIONING | ControlNet 지도가 적용된 수정된 부정적 조건화 |

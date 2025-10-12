@@ -6,7 +6,7 @@ Ce nœud vous permet de sélectionner le style de rasterisation du logo et de ch
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Oui | Plusieurs options disponibles | Le sous-style de rasterisation de logo spécifique à appliquer pour la génération du logo |
+| `sous-style` | STRING | Oui | Plusieurs options disponibles | Le sous-style de rasterisation de logo spécifique à appliquer pour la génération du logo |
 
 ## Sorties
 

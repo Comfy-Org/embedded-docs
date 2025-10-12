@@ -6,7 +6,7 @@ Le nœud Load Video charge les fichiers vidéo depuis le répertoire d'entrée e
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `file` | STRING | Oui | Plusieurs options disponibles | Le fichier vidéo à charger depuis le répertoire d'entrée |
+| `fichier` | STRING | Oui | Plusieurs options disponibles | Le fichier vidéo à charger depuis le répertoire d'entrée |
 
 **Note :** Les options disponibles pour le paramètre `file` sont dynamiquement peuplées à partir des fichiers vidéo présents dans le répertoire d'entrée. Seuls les fichiers vidéo avec des types de contenu pris en charge sont affichés.
 

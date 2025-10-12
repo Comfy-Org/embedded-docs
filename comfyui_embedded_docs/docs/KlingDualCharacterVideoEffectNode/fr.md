@@ -17,5 +17,5 @@ Le nœud Kling Dual Character Video Effect crée des vidéos avec des effets sp�
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La vidéo générée avec des effets à double personnage |
+| `duration` | VIDEO | La vidéo générée avec des effets à double personnage |
 | `duration` | STRING | Les informations de durée de la vidéo générée |

@@ -6,14 +6,14 @@ El nodo HyperTile aplica una técnica de mosaico al mecanismo de atención en lo
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que aplicar la optimización HyperTile |
-| `tile_size` | INT | No | 1-2048 | El tamaño objetivo del mosaico para el procesamiento (por defecto: 256) |
-| `swap_size` | INT | No | 1-128 | Controla cómo se reorganizan los mosaicos durante el procesamiento (por defecto: 2) |
-| `max_depth` | INT | No | 0-10 | Nivel máximo de profundidad para aplicar el mosaico (por defecto: 0) |
-| `scale_depth` | BOOLEAN | No | - | Si escalar el tamaño del mosaico basándose en el nivel de profundidad (por defecto: False) |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que aplicar la optimización HyperTile |
+| `tamaño_de_mosaico` | INT | No | 1-2048 | El tamaño objetivo del mosaico para el procesamiento (por defecto: 256) |
+| `tamaño_de_intercambio` | INT | No | 1-128 | Controla cómo se reorganizan los mosaicos durante el procesamiento (por defecto: 2) |
+| `profundidad_máxima` | INT | No | 0-10 | Nivel máximo de profundidad para aplicar el mosaico (por defecto: 0) |
+| `escala_de_profundidad` | BOOLEAN | No | - | Si escalar el tamaño del mosaico basándose en el nivel de profundidad (por defecto: False) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con la optimización HyperTile aplicada |
+| `modelo` | MODEL | El modelo modificado con la optimización HyperTile aplicada |

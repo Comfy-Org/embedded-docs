@@ -6,13 +6,13 @@ ConditioningTimestepsRangeノードは、生成プロセス中にコンディシ
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `start_percent` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の開始パーセンテージ（デフォルト: 0.0） |
-| `end_percent` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の終了パーセンテージ（デフォルト: 1.0） |
+| `開始パーセント` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の開始パーセンテージ（デフォルト: 0.0） |
+| `終了パーセント` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の終了パーセンテージ（デフォルト: 1.0） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | start_percentとend_percentで定義されるメインのタイムステップ範囲 |
-| `BEFORE_RANGE` | TIMESTEPS_RANGE | 0.0からstart_percentまでのタイムステップ範囲 |
+| `範囲前` | TIMESTEPS_RANGE | start_percentとend_percentで定義されるメインのタイムステップ範囲 |
+| `範囲後` | TIMESTEPS_RANGE | 0.0からstart_percentまでのタイムステップ範囲 |
 | `AFTER_RANGE` | TIMESTEPS_RANGE | end_percentから1.0までのタイムステップ範囲 |

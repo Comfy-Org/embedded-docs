@@ -7,9 +7,9 @@ Genera imágenes de forma síncrona basándose en un prompt y una resolución. E
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sí | - | Prompt para la generación de imágenes. (valor por defecto: "") |
-| `size` | COMBO | Sí | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | El tamaño de la imagen generada. (valor por defecto: "1024x1024") |
+| `tamaño` | COMBO | Sí | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | El tamaño de la imagen generada. (valor por defecto: "1024x1024") |
 | `n` | INT | Sí | 1-6 | El número de imágenes a generar. (valor por defecto: 1) |
-| `seed` | INT | Sí | 0-18446744073709551615 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no determinísticos independientemente de la semilla. (valor por defecto: 0) |
+| `semilla` | INT | Sí | 0-18446744073709551615 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no determinísticos independientemente de la semilla. (valor por defecto: 0) |
 | `recraft_style` | COMBO | No | Múltiples opciones disponibles | Selección de estilo opcional para la generación de imágenes. |
 | `negative_prompt` | STRING | No | - | Una descripción de texto opcional de elementos no deseados en una imagen. (valor por defecto: "") |
 | `recraft_controls` | COMBO | No | Múltiples opciones disponibles | Controles adicionales opcionales sobre la generación a través del nodo Recraft Controls. |

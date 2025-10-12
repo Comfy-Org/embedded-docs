@@ -6,21 +6,21 @@ WanFunInpaintToVideo 노드는 시작 이미지와 종료 이미지 사이를 �
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 예 | - | 비디오 생성을 위한 긍정 조건화 프롬프트 |
-| `negative` | CONDITIONING | 예 | - | 비디오 생성에서 피할 부정 조건화 프롬프트 |
+| `긍정 조건` | CONDITIONING | 예 | - | 비디오 생성을 위한 긍정 조건화 프롬프트 |
+| `부정 조건` | CONDITIONING | 예 | - | 비디오 생성에서 피할 부정 조건화 프롬프트 |
 | `vae` | VAE | 예 | - | 인코딩/디코딩 작업을 위한 VAE 모델 |
-| `width` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오 너비 (픽셀 단위, 기본값: 832, 단계: 16) |
-| `height` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오 높이 (픽셀 단위, 기본값: 480, 단계: 16) |
-| `length` | INT | 예 | 1 ~ MAX_RESOLUTION | 비디오 시퀀스의 프레임 수 (기본값: 81, 단계: 4) |
-| `batch_size` | INT | 예 | 1 ~ 4096 | 한 배치에서 생성할 비디오 수 (기본값: 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | 아니오 | - | 추가 조건화를 위한 선택적 CLIP 비전 출력 |
-| `start_image` | IMAGE | 아니오 | - | 비디오 생성을 위한 선택적 시작 프레임 이미지 |
-| `end_image` | IMAGE | 아니오 | - | 비디오 생성을 위한 선택적 종료 프레임 이미지 |
+| `너비` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오 너비 (픽셀 단위, 기본값: 832, 단계: 16) |
+| `높이` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오 높이 (픽셀 단위, 기본값: 480, 단계: 16) |
+| `길이` | INT | 예 | 1 ~ MAX_RESOLUTION | 비디오 시퀀스의 프레임 수 (기본값: 81, 단계: 4) |
+| `배치 크기` | INT | 예 | 1 ~ 4096 | 한 배치에서 생성할 비디오 수 (기본값: 1) |
+| `clip_vision 출력` | CLIP_VISION_OUTPUT | 아니오 | - | 추가 조건화를 위한 선택적 CLIP 비전 출력 |
+| `시작 이미지` | IMAGE | 아니오 | - | 비디오 생성을 위한 선택적 시작 프레임 이미지 |
+| `종료 이미지` | IMAGE | 아니오 | - | 비디오 생성을 위한 선택적 종료 프레임 이미지 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 처리된 긍정 조건화 출력 |
-| `negative` | CONDITIONING | 처리된 부정 조건화 출력 |
+| `부정 조건` | CONDITIONING | 처리된 긍정 조건화 출력 |
+| `latent` | CONDITIONING | 처리된 부정 조건화 출력 |
 | `latent` | LATENT | 생성된 비디오 잠재 표현 |

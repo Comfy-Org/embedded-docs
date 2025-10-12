@@ -12,5 +12,5 @@ Hunyuan3Dv2Conditioning 노드는 CLIP 비전 출력을 처리하여 비디오 �
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | CLIP 비전 임베딩을 포함하는 긍정적 조건화 데이터 |
+| `부정 조건` | CONDITIONING | CLIP 비전 임베딩을 포함하는 긍정적 조건화 데이터 |
 | `negative` | CONDITIONING | 긍정적 임베딩 형태와 일치하는 0값 임베딩을 포함하는 부정적 조건화 데이터 |

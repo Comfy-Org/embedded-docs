@@ -6,14 +6,14 @@ Le nœud HyperTile applique une technique de tuilage au mécanisme d'attention d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer l'optimisation HyperTile |
-| `tile_size` | INT | Non | 1-2048 | La taille de tuile cible pour le traitement (par défaut : 256) |
-| `swap_size` | INT | Non | 1-128 | Contrôle la manière dont les tuiles sont réorganisées pendant le traitement (par défaut : 2) |
-| `max_depth` | INT | Non | 0-10 | Niveau de profondeur maximum auquel appliquer le tuilage (par défaut : 0) |
-| `scale_depth` | BOOLEAN | Non | - | Détermine si la taille des tuiles doit être mise à l'échelle en fonction du niveau de profondeur (par défaut : False) |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer l'optimisation HyperTile |
+| `taille_tuile` | INT | Non | 1-2048 | La taille de tuile cible pour le traitement (par défaut : 256) |
+| `taille_échange` | INT | Non | 1-128 | Contrôle la manière dont les tuiles sont réorganisées pendant le traitement (par défaut : 2) |
+| `profondeur_max` | INT | Non | 0-10 | Niveau de profondeur maximum auquel appliquer le tuilage (par défaut : 0) |
+| `échelle_profondeur` | BOOLEAN | Non | - | Détermine si la taille des tuiles doit être mise à l'échelle en fonction du niveau de profondeur (par défaut : False) |
 
 ## Sorties
 
 | Sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec l'optimisation HyperTile appliquée |
+| `modèle` | MODEL | Le modèle modifié avec l'optimisation HyperTile appliquée |

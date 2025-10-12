@@ -6,14 +6,14 @@ El nodo LTXVCropGuides procesa entradas de condicionamiento y latentes para la g
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que contiene información de guía para la generación |
-| `negative` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que contiene información de guía sobre qué evitar en la generación |
-| `latent` | LATENT | Sí | - | La representación latente que contiene muestras de imagen y datos de máscara de ruido |
+| `positivo` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que contiene información de guía para la generación |
+| `negativo` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que contiene información de guía sobre qué evitar en la generación |
+| `latente` | LATENT | Sí | - | La representación latente que contiene muestras de imagen y datos de máscara de ruido |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo procesado con los índices de fotogramas clave limpiados |
-| `negative` | CONDITIONING | El condicionamiento negativo procesado con los índices de fotogramas clave limpiados |
-| `latent` | LATENT | La representación latente recortada con muestras y máscara de ruido ajustadas |
+| `negativo` | CONDITIONING | El condicionamiento positivo procesado con los índices de fotogramas clave limpiados |
+| `latente` | CONDITIONING | El condicionamiento negativo procesado con los índices de fotogramas clave limpiados |
+| `latente` | LATENT | La representación latente recortada con muestras y máscara de ruido ajustadas |

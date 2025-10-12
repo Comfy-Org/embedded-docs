@@ -6,7 +6,7 @@ El nodo Booleano proporciona una forma sencilla de pasar valores booleanos (verd
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `value` | BOOLEAN | Sí | true<br>false | El valor booleano que se pasará a través del nodo |
+| `valor` | BOOLEAN | Sí | true<br>false | El valor booleano que se pasará a través del nodo |
 
 ## Salidas
 

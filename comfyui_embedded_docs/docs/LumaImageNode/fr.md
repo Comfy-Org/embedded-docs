@@ -6,14 +6,14 @@ Génère des images de manière synchrone en fonction de l'invite et du rapport 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Oui | - | Invite pour la génération d'image (par défaut : chaîne vide) |
-| `model` | COMBO | Oui | Plusieurs options disponibles | Sélection du modèle pour la génération d'image |
-| `aspect_ratio` | COMBO | Oui | Plusieurs options disponibles | Rapport d'aspect pour l'image générée (par défaut : ratio 16:9) |
-| `seed` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
-| `style_image_weight` | FLOAT | Non | 0.0 à 1.0 | Poids de l'image de style. Ignoré si aucune `style_image` n'est fournie (par défaut : 1.0) |
-| `image_luma_ref` | LUMA_REF | Non | - | Connexion au nœud de référence Luma pour influencer la génération avec des images d'entrée ; jusqu'à 4 images peuvent être prises en compte |
-| `style_image` | IMAGE | Non | - | Image de référence de style ; seule 1 image sera utilisée |
-| `character_image` | IMAGE | Non | - | Images de référence de personnage ; peut être un lot de plusieurs images, jusqu'à 4 images peuvent être prises en compte |
+| `invite` | STRING | Oui | - | Invite pour la génération d'image (par défaut : chaîne vide) |
+| `modèle` | COMBO | Oui | Plusieurs options disponibles | Sélection du modèle pour la génération d'image |
+| `ratio_d'aspect` | COMBO | Oui | Plusieurs options disponibles | Rapport d'aspect pour l'image générée (par défaut : ratio 16:9) |
+| `graine` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
+| `poids_image_de_style` | FLOAT | Non | 0.0 à 1.0 | Poids de l'image de style. Ignoré si aucune `image_de_style` n'est fournie (par défaut : 1.0) |
+| `référence_image_luma` | LUMA_REF | Non | - | Connexion au nœud de référence Luma pour influencer la génération avec des images d'entrée ; jusqu'à 4 images peuvent être prises en compte |
+| `image_de_style` | IMAGE | Non | - | Image de référence de style ; seule 1 image sera utilisée |
+| `image_de_personnage` | IMAGE | Non | - | Images de référence de personnage ; peut être un lot de plusieurs images, jusqu'à 4 images peuvent être prises en compte |
 
 **Contraintes des paramètres :**
 - Le paramètre `image_luma_ref` peut accepter jusqu'à 4 images de référence

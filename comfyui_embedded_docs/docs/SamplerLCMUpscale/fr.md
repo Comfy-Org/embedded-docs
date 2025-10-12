@@ -6,9 +6,9 @@ Le nœud SamplerLCMUpscale fournit une méthode d'échantillonnage spécialisée
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `scale_ratio` | FLOAT | Non | 0,1 - 20,0 | Le facteur d'échelle à appliquer pendant le suréchantillonnage (par défaut : 1,0) |
-| `scale_steps` | INT | Non | -1 - 1000 | Le nombre d'étapes à utiliser pour le processus de suréchantillonnage. Utilisez -1 pour un calcul automatique (par défaut : -1) |
-| `upscale_method` | COMBO | Oui | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | La méthode d'interpolation utilisée pour le suréchantillonnage de l'image |
+| `ratio_échelle` | FLOAT | Non | 0,1 - 20,0 | Le facteur d'échelle à appliquer pendant le suréchantillonnage (par défaut : 1,0) |
+| `étapes_échelle` | INT | Non | -1 - 1000 | Le nombre d'étapes à utiliser pour le processus de suréchantillonnage. Utilisez -1 pour un calcul automatique (par défaut : -1) |
+| `méthode_agrandissement` | COMBO | Oui | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | La méthode d'interpolation utilisée pour le suréchantillonnage de l'image |
 
 ## Sorties
 

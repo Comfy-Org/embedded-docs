@@ -4,12 +4,12 @@ Le nœud `GLIGENTextBoxApply` est conçu pour intégrer le conditionnement basé
 
 | Paramètre            | Comfy dtype        | Description |
 |----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | Spécifie l'entrée de conditionnement initiale à laquelle les paramètres de la boîte de texte et les informations textuelles encodées seront ajoutés. Il joue un rôle crucial dans la détermination du résultat final en intégrant de nouvelles données de conditionnement. |
+| `conditionnement_à`     | `CONDITIONING`     | Spécifie l'entrée de conditionnement initiale à laquelle les paramètres de la boîte de texte et les informations textuelles encodées seront ajoutés. Il joue un rôle crucial dans la détermination du résultat final en intégrant de nouvelles données de conditionnement. |
 | `clip`               | `CLIP`             | Le modèle CLIP utilisé pour encoder le texte fourni dans un format qui peut être utilisé par le modèle génératif. Il est essentiel pour convertir les informations textuelles en un format de conditionnement compatible. |
-| `gligen_textbox_model` | `GLIGEN`         | Représente la configuration spécifique du modèle GLIGEN à utiliser pour générer la boîte de texte. Il est crucial pour s'assurer que la boîte de texte est générée selon les spécifications souhaitées. |
-| `text`               | `STRING`           | Le contenu textuel à encoder et intégrer dans le conditionnement. Il fournit l'information sémantique qui guide le modèle génératif. |
-| `width`              | `INT`              | La largeur de la boîte de texte en pixels. Elle définit la dimension spatiale de la boîte de texte dans l'image générée. |
-| `height`             | `INT`              | La hauteur de la boîte de texte en pixels. Comme la largeur, elle définit la dimension spatiale de la boîte de texte dans l'image générée. |
+| `modèle_boîte_texte_gligen` | `GLIGEN`         | Représente la configuration spécifique du modèle GLIGEN à utiliser pour générer la boîte de texte. Il est crucial pour s'assurer que la boîte de texte est générée selon les spécifications souhaitées. |
+| `texte`               | `STRING`           | Le contenu textuel à encoder et intégrer dans le conditionnement. Il fournit l'information sémantique qui guide le modèle génératif. |
+| `largeur`              | `INT`              | La largeur de la boîte de texte en pixels. Elle définit la dimension spatiale de la boîte de texte dans l'image générée. |
+| `hauteur`             | `INT`              | La hauteur de la boîte de texte en pixels. Comme la largeur, elle définit la dimension spatiale de la boîte de texte dans l'image générée. |
 | `x`                  | `INT`              | La coordonnée x du coin supérieur gauche de la boîte de texte dans l'image générée. Elle spécifie la position horizontale de la boîte de texte. |
 | `y`                  | `INT`              | La coordonnée y du coin supérieur gauche de la boîte de texte dans l'image générée. Elle spécifie la position verticale de la boîte de texte. |
 

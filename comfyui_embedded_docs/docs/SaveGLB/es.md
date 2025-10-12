@@ -6,8 +6,8 @@ El nodo SaveGLB guarda datos de mallas 3D como archivos GLB, que es un formato c
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `mesh` | MESH | Sí | - | Los datos de malla 3D que se guardarán como archivo GLB |
-| `filename_prefix` | STRING | No | - | El prefijo para el nombre de archivo de salida (predeterminado: "mesh/ComfyUI") |
+| `malla` | MESH | Sí | - | Los datos de malla 3D que se guardarán como archivo GLB |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el nombre de archivo de salida (predeterminado: "mesh/ComfyUI") |
 
 ## Salidas
 

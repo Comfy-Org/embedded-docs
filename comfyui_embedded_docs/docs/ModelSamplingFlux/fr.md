@@ -6,14 +6,14 @@ Le nœud ModelSamplingFlux applique l'échantillonnage de modèle Flux à un mod
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer l'échantillonnage Flux |
-| `max_shift` | FLOAT | Oui | 0.0 - 100.0 | Valeur de décalage maximale pour le calcul d'échantillonnage (par défaut : 1.15) |
-| `base_shift` | FLOAT | Oui | 0.0 - 100.0 | Valeur de décalage de base pour le calcul d'échantillonnage (par défaut : 0.5) |
-| `width` | INT | Oui | 16 - MAX_RESOLUTION | Largeur de l'image cible en pixels (par défaut : 1024) |
-| `height` | INT | Oui | 16 - MAX_RESOLUTION | Hauteur de l'image cible en pixels (par défaut : 1024) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer l'échantillonnage Flux |
+| `décalage_max` | FLOAT | Oui | 0.0 - 100.0 | Valeur de décalage maximale pour le calcul d'échantillonnage (par défaut : 1.15) |
+| `décalage_base` | FLOAT | Oui | 0.0 - 100.0 | Valeur de décalage de base pour le calcul d'échantillonnage (par défaut : 0.5) |
+| `largeur` | INT | Oui | 16 - MAX_RESOLUTION | Largeur de l'image cible en pixels (par défaut : 1024) |
+| `hauteur` | INT | Oui | 16 - MAX_RESOLUTION | Hauteur de l'image cible en pixels (par défaut : 1024) |
 
 ## Sorties
 
 | Sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec la configuration d'échantillonnage Flux appliquée |
+| `modèle` | MODEL | Le modèle modifié avec la configuration d'échantillonnage Flux appliquée |

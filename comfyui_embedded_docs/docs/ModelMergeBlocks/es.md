@@ -5,11 +5,11 @@ ModelMergeBlocks está diseñado para operaciones avanzadas de fusión de modelo
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|------------|-------------|
-| `model1`  | `MODEL`    | El primer modelo a fusionar. Sirve como el modelo base sobre el cual se aplican parches del segundo modelo. |
-| `model2`  | `MODEL`    | El segundo modelo del cual se extraen parches y se aplican al primer modelo, según las proporciones de mezcla especificadas. |
-| `input`   | `FLOAT`    | Especifica la proporción de mezcla para la capa de entrada de los modelos. Determina cuánto de la capa de entrada del segundo modelo se fusiona en el primer modelo. |
-| `middle`  | `FLOAT`    | Define la proporción de mezcla para las capas intermedias de los modelos. Este parámetro controla el nivel de integración de las capas intermedias de los modelos. |
-| `out`     | `FLOAT`    | Determina la proporción de mezcla para la capa de salida de los modelos. Afecta la salida final ajustando la contribución de la capa de salida del segundo modelo. |
+| `modelo1`  | `MODEL`    | El primer modelo a fusionar. Sirve como el modelo base sobre el cual se aplican parches del segundo modelo. |
+| `modelo2`  | `MODEL`    | El segundo modelo del cual se extraen parches y se aplican al primer modelo, según las proporciones de mezcla especificadas. |
+| `entrada`   | `FLOAT`    | Especifica la proporción de mezcla para la capa de entrada de los modelos. Determina cuánto de la capa de entrada del segundo modelo se fusiona en el primer modelo. |
+| `medio`  | `FLOAT`    | Define la proporción de mezcla para las capas intermedias de los modelos. Este parámetro controla el nivel de integración de las capas intermedias de los modelos. |
+| `salida`     | `FLOAT`    | Determina la proporción de mezcla para la capa de salida de los modelos. Afecta la salida final ajustando la contribución de la capa de salida del segundo modelo. |
 
 ## Salidas
 

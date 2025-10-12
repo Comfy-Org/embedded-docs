@@ -7,10 +7,10 @@ El nodo Pikadditions te permite agregar cualquier objeto o imagen a tu video. Su
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Sí | - | El video al que se agregará una imagen. |
-| `image` | IMAGE | Sí | - | La imagen que se agregará al video. |
-| `prompt_text` | STRING | Sí | - | Descripción textual de lo que se debe agregar al video. |
-| `negative_prompt` | STRING | Sí | - | Descripción textual de lo que se debe evitar en el video. |
-| `seed` | INT | Sí | 0 a 4294967295 | Valor de semilla aleatoria para resultados reproducibles. |
+| `imagen` | IMAGE | Sí | - | La imagen que se agregará al video. |
+| `texto de indicación` | STRING | Sí | - | Descripción textual de lo que se debe agregar al video. |
+| `indicación negativa` | STRING | Sí | - | Descripción textual de lo que se debe evitar en el video. |
+| `semilla` | INT | Sí | 0 a 4294967295 | Valor de semilla aleatoria para resultados reproducibles. |
 
 ## Salidas
 

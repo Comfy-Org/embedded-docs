@@ -6,12 +6,12 @@ Le nœud VAEDecodeTiled décode les représentations latentes en images en utili
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Oui | - | La représentation latente à décoder en images |
+| `échantillons` | LATENT | Oui | - | La représentation latente à décoder en images |
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour décoder les échantillons latents |
-| `tile_size` | INT | Oui | 64-4096 (pas : 32) | La taille de chaque tuile pour le traitement (par défaut : 512) |
-| `overlap` | INT | Oui | 0-4096 (pas : 32) | La quantité de chevauchement entre les tuiles adjacentes (par défaut : 64) |
-| `temporal_size` | INT | Oui | 8-4096 (pas : 4) | Utilisé uniquement pour les VAE vidéo : Nombre de trames à décoder à la fois (par défaut : 64) |
-| `temporal_overlap` | INT | Oui | 4-4096 (pas : 4) | Utilisé uniquement pour les VAE vidéo : Nombre de trames à chevaucher (par défaut : 8) |
+| `taille_de_tuile` | INT | Oui | 64-4096 (pas : 32) | La taille de chaque tuile pour le traitement (par défaut : 512) |
+| `chevauchement` | INT | Oui | 0-4096 (pas : 32) | La quantité de chevauchement entre les tuiles adjacentes (par défaut : 64) |
+| `taille_temporelle` | INT | Oui | 8-4096 (pas : 4) | Utilisé uniquement pour les VAE vidéo : Nombre de trames à décoder à la fois (par défaut : 64) |
+| `chevauchement_temporel` | INT | Oui | 4-4096 (pas : 4) | Utilisé uniquement pour les VAE vidéo : Nombre de trames à chevaucher (par défaut : 8) |
 
 **Note :** Le nœud ajuste automatiquement les valeurs de chevauchement si elles dépassent les limites pratiques. Si `tile_size` est inférieur à 4 fois le `overlap`, le chevauchement est réduit à un quart de la taille de la tuile. De même, si `temporal_size` est inférieur à deux fois le `temporal_overlap`, le chevauchement temporel est réduit de moitié.
 

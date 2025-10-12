@@ -6,14 +6,14 @@ SkipLayerGuidanceSD3 노드는 건너뛴 레이어를 사용하여 추가적인 
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | - | skip layer guidance를 적용할 모델 |
+| `모델` | MODEL | 예 | - | skip layer guidance를 적용할 모델 |
 | `layers` | STRING | 예 | - | 건너뛸 레이어 인덱스의 쉼표로 구분된 목록 (기본값: "7, 8, 9") |
-| `scale` | FLOAT | 예 | 0.0 - 10.0 | skip layer guidance 효과의 강도 (기본값: 3.0) |
-| `start_percent` | FLOAT | 예 | 0.0 - 1.0 | 전체 단계의 백분율로 표시된 guidance 적용 시작 지점 (기본값: 0.01) |
-| `end_percent` | FLOAT | 예 | 0.0 - 1.0 | 전체 단계의 백분율로 표시된 guidance 적용 종료 지점 (기본값: 0.15) |
+| `크기` | FLOAT | 예 | 0.0 - 10.0 | skip layer guidance 효과의 강도 (기본값: 3.0) |
+| `시작 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | 전체 단계의 백분율로 표시된 guidance 적용 시작 지점 (기본값: 0.01) |
+| `종료 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | 전체 단계의 백분율로 표시된 guidance 적용 종료 지점 (기본값: 0.15) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model` | MODEL | skip layer guidance가 적용된 수정된 모델 |
+| `모델` | MODEL | skip layer guidance가 적용된 수정된 모델 |

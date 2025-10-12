@@ -6,12 +6,12 @@ El nodo Pika Image to Video envía una imagen y un texto de prompt a la API de P
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen a convertir en video |
-| `prompt_text` | STRING | Sí | - | La descripción textual que guía la generación del video |
-| `negative_prompt` | STRING | Sí | - | Texto que describe qué evitar en el video |
-| `seed` | INT | Sí | - | Valor de semilla aleatoria para resultados reproducibles |
-| `resolution` | STRING | Sí | - | Configuración de resolución del video de salida |
-| `duration` | INT | Sí | - | Duración del video generado en segundos |
+| `imagen` | IMAGE | Sí | - | La imagen a convertir en video |
+| `texto del prompt` | STRING | Sí | - | La descripción textual que guía la generación del video |
+| `prompt negativo` | STRING | Sí | - | Texto que describe qué evitar en el video |
+| `semilla` | INT | Sí | - | Valor de semilla aleatoria para resultados reproducibles |
+| `resolución` | STRING | Sí | - | Configuración de resolución del video de salida |
+| `duración` | INT | Sí | - | Duración del video generado en segundos |
 
 ## Salidas
 

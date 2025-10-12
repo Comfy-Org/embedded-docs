@@ -6,10 +6,10 @@ Hunyuan3Dv2ConditioningMultiView 노드는 3D 비디오 생성을 위한 다중 
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `front` | CLIP_VISION_OUTPUT | 아니오 | - | 전면 뷰에 대한 CLIP 비전 출력 |
-| `left` | CLIP_VISION_OUTPUT | 아니오 | - | 좌측 뷰에 대한 CLIP 비전 출력 |
-| `back` | CLIP_VISION_OUTPUT | 아니오 | - | 후면 뷰에 대한 CLIP 비전 출력 |
-| `right` | CLIP_VISION_OUTPUT | 아니오 | - | 우측 뷰에 대한 CLIP 비전 출력 |
+| `앞` | CLIP_VISION_OUTPUT | 아니오 | - | 전면 뷰에 대한 CLIP 비전 출력 |
+| `왼쪽` | CLIP_VISION_OUTPUT | 아니오 | - | 좌측 뷰에 대한 CLIP 비전 출력 |
+| `뒤` | CLIP_VISION_OUTPUT | 아니오 | - | 후면 뷰에 대한 CLIP 비전 출력 |
+| `오른쪽` | CLIP_VISION_OUTPUT | 아니오 | - | 우측 뷰에 대한 CLIP 비전 출력 |
 
 **참고:** 노드가 기능하려면 최소한 하나의 뷰 입력이 제공되어야 합니다. 노드는 유효한 CLIP 비전 출력 데이터를 포함하는 뷰만 처리합니다.
 
@@ -17,5 +17,5 @@ Hunyuan3Dv2ConditioningMultiView 노드는 3D 비디오 생성을 위한 다중 
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 위치 인코딩과 결합된 다중 뷰 임베딩을 포함하는 긍정 조건화 |
+| `부정 조건` | CONDITIONING | 위치 인코딩과 결합된 다중 뷰 임베딩을 포함하는 긍정 조건화 |
 | `negative` | CONDITIONING | 대조 학습을 위한 제로 값으로 구성된 부정 조건화 |

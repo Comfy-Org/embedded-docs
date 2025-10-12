@@ -6,10 +6,10 @@ Le nœud ImageOnlyCheckpointSave enregistre un fichier de point de contrôle con
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle à sauvegarder dans le point de contrôle |
+| `modèle` | MODEL | Oui | - | Le modèle à sauvegarder dans le point de contrôle |
 | `clip_vision` | CLIP_VISION | Oui | - | L'encodeur de vision CLIP à sauvegarder dans le point de contrôle |
 | `vae` | VAE | Oui | - | Le VAE (Autoencodeur variationnel) à sauvegarder dans le point de contrôle |
-| `filename_prefix` | STRING | Oui | - | Le préfixe pour le nom de fichier de sortie (par défaut : "checkpoints/ComfyUI") |
+| `préfixe_de_nom_de_fichier` | STRING | Oui | - | Le préfixe pour le nom de fichier de sortie (par défaut : "checkpoints/ComfyUI") |
 | `prompt` | PROMPT | Non | - | Paramètre caché pour les données d'invite de workflow |
 | `extra_pnginfo` | EXTRA_PNGINFO | Non | - | Paramètre caché pour les métadonnées PNG supplémentaires |
 

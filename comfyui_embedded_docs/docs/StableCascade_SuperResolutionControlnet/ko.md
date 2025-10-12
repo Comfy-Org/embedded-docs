@@ -6,13 +6,13 @@ StableCascade_SuperResolutionControlnet 노드는 Stable Cascade 초해상도 �
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 예 | - | 초해상도 처리를 위해 처리될 입력 이미지 |
+| `이미지` | IMAGE | 예 | - | 초해상도 처리를 위해 처리될 입력 이미지 |
 | `vae` | VAE | 예 | - | 입력 이미지를 인코딩하는 데 사용되는 VAE 모델 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | controlnet 입력에 적합한 인코딩된 이미지 표현 |
-| `stage_c` | LATENT | Stable Cascade 처리의 stage C를 위한 플레이스홀더 잠재 표현 |
+| `StageC 잠재 이미지` | IMAGE | controlnet 입력에 적합한 인코딩된 이미지 표현 |
+| `StageB 잠재 이미지` | LATENT | Stable Cascade 처리의 stage C를 위한 플레이스홀더 잠재 표현 |
 | `stage_b` | LATENT | Stable Cascade 처리의 stage B를 위한 플레이스홀더 잠재 표현 |

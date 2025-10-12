@@ -6,9 +6,9 @@ Le nœud TripleCLIPLoader charge simultanément trois modèles d'encodeur de tex
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name1` | STRING | Oui | Plusieurs options disponibles | Le premier modèle d'encodeur de texte à charger parmi les encodeurs de texte disponibles |
-| `clip_name2` | STRING | Oui | Plusieurs options disponibles | Le deuxième modèle d'encodeur de texte à charger parmi les encodeurs de texte disponibles |
-| `clip_name3` | STRING | Oui | Plusieurs options disponibles | Le troisième modèle d'encodeur de texte à charger parmi les encodeurs de texte disponibles |
+| `nom_clip1` | STRING | Oui | Plusieurs options disponibles | Le premier modèle d'encodeur de texte à charger parmi les encodeurs de texte disponibles |
+| `nom_clip2` | STRING | Oui | Plusieurs options disponibles | Le deuxième modèle d'encodeur de texte à charger parmi les encodeurs de texte disponibles |
+| `nom_clip3` | STRING | Oui | Plusieurs options disponibles | Le troisième modèle d'encodeur de texte à charger parmi les encodeurs de texte disponibles |
 
 **Note :** Les trois paramètres d'encodeur de texte doivent être sélectionnés parmi les modèles d'encodeur de texte disponibles dans votre système. Le nœud chargera les trois modèles et les combinera en un seul modèle CLIP pour le traitement.
 

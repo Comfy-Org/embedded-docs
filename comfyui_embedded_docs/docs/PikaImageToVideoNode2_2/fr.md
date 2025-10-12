@@ -7,11 +7,11 @@ Le nœud Pika Image to Video envoie une image et une invite texte à l'API Pika 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image à convertir en vidéo |
-| `prompt_text` | STRING | Oui | - | La description textuelle guidant la génération de la vidéo |
-| `negative_prompt` | STRING | Oui | - | Texte décrivant ce qu'il faut éviter dans la vidéo |
-| `seed` | INT | Oui | - | Valeur de seed aléatoire pour des résultats reproductibles |
-| `resolution` | STRING | Oui | - | Paramètre de résolution de la vidéo en sortie |
-| `duration` | INT | Oui | - | Durée de la vidéo générée en secondes |
+| `texte de l'invite` | STRING | Oui | - | La description textuelle guidant la génération de la vidéo |
+| `invite négative` | STRING | Oui | - | Texte décrivant ce qu'il faut éviter dans la vidéo |
+| `graine` | INT | Oui | - | Valeur de seed aléatoire pour des résultats reproductibles |
+| `résolution` | STRING | Oui | - | Paramètre de résolution de la vidéo en sortie |
+| `durée` | INT | Oui | - | Durée de la vidéo générée en secondes |
 
 ## Sorties
 

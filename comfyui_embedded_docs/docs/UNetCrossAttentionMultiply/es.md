@@ -6,14 +6,14 @@ El nodo UNetCrossAttentionMultiply aplica factores de multiplicación al mecanis
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo UNet a modificar con factores de escalado de atención |
+| `modelo` | MODEL | Sí | - | El modelo UNet a modificar con factores de escalado de atención |
 | `q` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de consulta en atención cruzada (valor por defecto: 1.0) |
 | `k` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de clave en atención cruzada (valor por defecto: 1.0) |
 | `v` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de valor en atención cruzada (valor por defecto: 1.0) |
-| `out` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de salida en atención cruzada (valor por defecto: 1.0) |
+| `salida` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de salida en atención cruzada (valor por defecto: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo UNet modificado con componentes de atención cruzada escalados |
+| `modelo` | MODEL | El modelo UNet modificado con componentes de atención cruzada escalados |

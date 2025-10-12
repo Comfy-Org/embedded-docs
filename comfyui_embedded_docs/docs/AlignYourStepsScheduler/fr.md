@@ -6,9 +6,9 @@ Le nœud AlignYourStepsScheduler génère des valeurs sigma pour le processus de
 
 | Paramètre | Type de données | Type d'entrée | Défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model_type` | STRING | COMBO | - | SD1, SDXL, SVD | Spécifie le type de modèle à utiliser pour le calcul des sigma |
-| `steps` | INT | INT | 10 | 1-10000 | Le nombre total d'étapes d'échantillonnage à générer |
-| `denoise` | FLOAT | FLOAT | 1.0 | 0.0-1.0 | Contrôle le niveau de débruitage de l'image, où 1.0 utilise toutes les étapes et les valeurs inférieures utilisent moins d'étapes |
+| `type_de_modèle` | STRING | COMBO | - | SD1, SDXL, SVD | Spécifie le type de modèle à utiliser pour le calcul des sigma |
+| `étapes` | INT | INT | 10 | 1-10000 | Le nombre total d'étapes d'échantillonnage à générer |
+| `débruitage` | FLOAT | FLOAT | 1.0 | 0.0-1.0 | Contrôle le niveau de débruitage de l'image, où 1.0 utilise toutes les étapes et les valeurs inférieures utilisent moins d'étapes |
 
 ## Sorties
 

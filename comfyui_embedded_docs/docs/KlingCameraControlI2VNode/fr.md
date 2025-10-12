@@ -15,6 +15,6 @@
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La vidéo générée en sortie |
-| `video_id` | STRING | Identifiant unique pour la vidéo générée |
+| `video_id` | VIDEO | La vidéo générée en sortie |
+| `duration` | STRING | Identifiant unique pour la vidéo générée |
 | `duration` | STRING | Durée de la vidéo générée |

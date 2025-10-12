@@ -7,9 +7,9 @@ El nodo TextEncodeHunyuanVideo_ImageToVideo crea datos de condicionamiento para 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `clip` | CLIP | Sí | - | El modelo CLIP utilizado para la tokenización y codificación |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Sí | - | Las incrustaciones visuales de un modelo de visión CLIP que proporcionan contexto de imagen |
-| `prompt` | STRING | Sí | - | La descripción textual para guiar la generación del video, admite entrada multilínea y prompts dinámicos |
-| `image_interleave` | INT | Sí | 1-512 | Cuánto influye la imagen frente al prompt de texto. Un número más alto significa mayor influencia del prompt de texto. (valor por defecto: 2) |
+| `salida_de_clip_vision` | CLIP_VISION_OUTPUT | Sí | - | Las incrustaciones visuales de un modelo de visión CLIP que proporcionan contexto de imagen |
+| `indicación` | STRING | Sí | - | La descripción textual para guiar la generación del video, admite entrada multilínea y prompts dinámicos |
+| `entrelazado_de_imagen` | INT | Sí | 1-512 | Cuánto influye la imagen frente al prompt de texto. Un número más alto significa mayor influencia del prompt de texto. (valor por defecto: 2) |
 
 ## Salidas
 

@@ -6,12 +6,12 @@ El nodo Morfología aplica diversas operaciones morfológicas a imágenes, las c
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada a procesar |
-| `operation` | STRING | Sí | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | La operación morfológica a aplicar |
-| `kernel_size` | INT | No | 3-999 | El tamaño del kernel del elemento estructurante (por defecto: 3) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada a procesar |
+| `operacion` | STRING | Sí | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | La operación morfológica a aplicar |
+| `tamaño_kernel` | INT | No | 3-999 | El tamaño del kernel del elemento estructurante (por defecto: 3) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `image` | IMAGE | La imagen procesada después de aplicar la operación morfológica |
+| `imagen` | IMAGE | La imagen procesada después de aplicar la operación morfológica |

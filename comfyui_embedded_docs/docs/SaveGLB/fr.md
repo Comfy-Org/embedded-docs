@@ -6,8 +6,8 @@ Le nœud SaveGLB sauvegarde les données de maillage 3D au format GLB, un format
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `mesh` | MESH | Oui | - | Les données de maillage 3D à sauvegarder en tant que fichier GLB |
-| `filename_prefix` | STRING | Non | - | Le préfixe pour le nom de fichier de sortie (par défaut : "mesh/ComfyUI") |
+| `maillage` | MESH | Oui | - | Les données de maillage 3D à sauvegarder en tant que fichier GLB |
+| `préfixe_du_nom_de_fichier` | STRING | Non | - | Le préfixe pour le nom de fichier de sortie (par défaut : "mesh/ComfyUI") |
 
 ## Sorties
 

@@ -17,6 +17,6 @@ Kling Image to Video Camera Control ノードは、静止画像をプロフェ�
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 生成された動画出力 |
-| `video_id` | STRING | 生成された動画の一意の識別子 |
+| `video_id` | VIDEO | 生成された動画出力 |
+| `duration` | STRING | 生成された動画の一意の識別子 |
 | `duration` | STRING | 生成された動画の再生時間 |

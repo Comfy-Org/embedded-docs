@@ -17,6 +17,6 @@ El nodo Kling Image to Video Camera Control transforma imágenes fijas en videos
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La salida de video generada |
-| `video_id` | STRING | Identificador único para el video generado |
+| `video_id` | VIDEO | La salida de video generada |
+| `duration` | STRING | Identificador único para el video generado |
 | `duration` | STRING | Duración del video generado |

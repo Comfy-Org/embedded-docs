@@ -7,12 +7,12 @@ Genera videos de forma síncrona basándose en el prompt y la configuración de 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sí | - | Prompt para la generación del video (valor por defecto: cadena vacía) |
-| `model` | COMBO | Sí | Múltiples opciones disponibles | El modelo de generación de video a utilizar |
-| `aspect_ratio` | COMBO | Sí | Múltiples opciones disponibles | La relación de aspecto para el video generado (valor por defecto: 16:9) |
-| `resolution` | COMBO | Sí | Múltiples opciones disponibles | La resolución de salida para el video (valor por defecto: 540p) |
-| `duration` | COMBO | Sí | Múltiples opciones disponibles | La duración del video generado |
-| `loop` | BOOLEAN | Sí | - | Si el video debe reproducirse en bucle (valor por defecto: False) |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (valor por defecto: 0) |
+| `modelo` | COMBO | Sí | Múltiples opciones disponibles | El modelo de generación de video a utilizar |
+| `relación de aspecto` | COMBO | Sí | Múltiples opciones disponibles | La relación de aspecto para el video generado (valor por defecto: 16:9) |
+| `resolución` | COMBO | Sí | Múltiples opciones disponibles | La resolución de salida para el video (valor por defecto: 540p) |
+| `duración` | COMBO | Sí | Múltiples opciones disponibles | La duración del video generado |
+| `bucle` | BOOLEAN | Sí | - | Si el video debe reproducirse en bucle (valor por defecto: False) |
+| `semilla` | INT | Sí | 0 a 18446744073709551615 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (valor por defecto: 0) |
 | `luma_concepts` | CUSTOM | No | - | Conceptos de Cámara opcionales para dictar el movimiento de cámara a través del nodo Luma Concepts |
 
 **Nota:** Cuando se utiliza el modelo `ray_1_6`, los parámetros `duration` y `resolution` se establecen automáticamente en None y no afectan la generación.

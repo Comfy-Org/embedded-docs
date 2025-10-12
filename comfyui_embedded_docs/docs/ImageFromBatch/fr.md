@@ -5,8 +5,8 @@ Le nœud `ImageFromBatch` est conçu pour extraire un segment spécifique d'imag
 | Champ          | Data Type | Description                                                                           |
 |----------------|-------------|---------------------------------------------------------------------------------------|
 | `image`        | `IMAGE`     | Le lot d'images à partir duquel un segment sera extrait. Ce paramètre est crucial pour spécifier le lot source. |
-| `batch_index`  | `INT`       | L'index de départ dans le lot à partir duquel l'extraction commence. Il détermine la position initiale du segment à extraire du lot. |
-| `length`       | `INT`       | Le nombre d'images à extraire du lot à partir du batch_index. Ce paramètre définit la taille du segment à extraire. |
+| `index_de_lot`  | `INT`       | L'index de départ dans le lot à partir duquel l'extraction commence. Il détermine la position initiale du segment à extraire du lot. |
+| `longueur`       | `INT`       | Le nombre d'images à extraire du lot à partir du batch_index. Ce paramètre définit la taille du segment à extraire. |
 
 ## Sorties
 

@@ -6,12 +6,12 @@ Le nœud Pika Swaps vous permet de remplacer des objets ou des régions dans vot
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Oui | - | La vidéo dans laquelle remplacer un objet. |
+| `vidéo` | VIDEO | Oui | - | La vidéo dans laquelle remplacer un objet. |
 | `image` | IMAGE | Oui | - | L'image utilisée pour remplacer l'objet masqué dans la vidéo. |
 | `mask` | MASK | Oui | - | Utilisez le masque pour définir les zones de la vidéo à remplacer. |
-| `prompt_text` | STRING | Oui | - | Prompt textuel décrivant le remplacement souhaité. |
-| `negative_prompt` | STRING | Oui | - | Prompt textuel décrivant ce qu'il faut éviter dans le remplacement. |
-| `seed` | INT | Oui | 0 à 4294967295 | Valeur de seed aléatoire pour des résultats cohérents. |
+| `texte d’invite` | STRING | Oui | - | Prompt textuel décrivant le remplacement souhaité. |
+| `invite négative` | STRING | Oui | - | Prompt textuel décrivant ce qu'il faut éviter dans le remplacement. |
+| `graine` | INT | Oui | 0 à 4294967295 | Valeur de seed aléatoire pour des résultats cohérents. |
 
 **Note :** Ce nœud nécessite que tous les paramètres d'entrée soient fournis. La `video`, l'`image` et le `mask` fonctionnent ensemble pour définir l'opération de remplacement, où le masque spécifie les zones de la vidéo qui seront remplacées par l'image fournie.
 

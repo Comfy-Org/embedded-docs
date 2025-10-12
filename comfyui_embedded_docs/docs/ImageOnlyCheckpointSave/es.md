@@ -6,10 +6,10 @@ El nodo ImageOnlyCheckpointSave guarda un archivo de checkpoint que contiene un 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo que se guardará en el checkpoint |
+| `modelo` | MODEL | Sí | - | El modelo que se guardará en el checkpoint |
 | `clip_vision` | CLIP_VISION | Sí | - | El codificador de visión CLIP que se guardará en el checkpoint |
 | `vae` | VAE | Sí | - | El VAE (Autoencoder Variacional) que se guardará en el checkpoint |
-| `filename_prefix` | STRING | Sí | - | El prefijo para el nombre del archivo de salida (por defecto: "checkpoints/ComfyUI") |
+| `prefijo_nombre_archivo` | STRING | Sí | - | El prefijo para el nombre del archivo de salida (por defecto: "checkpoints/ComfyUI") |
 | `prompt` | PROMPT | No | - | Parámetro oculto para los datos del prompt del flujo de trabajo |
 | `extra_pnginfo` | EXTRA_PNGINFO | No | - | Parámetro oculto para metadatos PNG adicionales |
 

@@ -6,11 +6,11 @@ Le nœud ModelSamplingAuraFlow applique une configuration d'échantillonnage sp�
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer la configuration d'échantillonnage AuraFlow |
-| `shift` | FLOAT | Oui | 0.0 - 100.0 | La valeur de décalage à appliquer à la distribution d'échantillonnage (par défaut : 1.73) |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer la configuration d'échantillonnage AuraFlow |
+| `décalage` | FLOAT | Oui | 0.0 - 100.0 | La valeur de décalage à appliquer à la distribution d'échantillonnage (par défaut : 1.73) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec la configuration d'échantillonnage AuraFlow appliquée |
+| `modèle` | MODEL | Le modèle modifié avec la configuration d'échantillonnage AuraFlow appliquée |

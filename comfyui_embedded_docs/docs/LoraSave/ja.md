@@ -6,12 +6,12 @@ LoraSaveノードは、モデルの差分からLoRA（Low-Rank Adaptation）フ�
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `filename_prefix` | STRING | はい | - | 出力ファイル名のプレフィックス（デフォルト: "loras/ComfyUI_extracted_lora"） |
-| `rank` | INT | はい | 1-4096 | LoRAのランク値。サイズと複雑さを制御します（デフォルト: 8） |
+| `ファイル名のプレフィックス` | STRING | はい | - | 出力ファイル名のプレフィックス（デフォルト: "loras/ComfyUI_extracted_lora"） |
+| `ランク` | INT | はい | 1-4096 | LoRAのランク値。サイズと複雑さを制御します（デフォルト: 8） |
 | `lora_type` | COMBO | はい | 複数のオプションが利用可能 | 作成するLoRAのタイプ。様々なオプションが利用できます |
-| `bias_diff` | BOOLEAN | はい | - | LoRA計算にバイアスの差分を含めるかどうか（デフォルト: True） |
-| `model_diff` | MODEL | いいえ | - | LoRAに変換するModelSubtractの出力 |
-| `text_encoder_diff` | CLIP | いいえ | - | LoRAに変換するCLIPSubtractの出力 |
+| `バイアスの差` | BOOLEAN | はい | - | LoRA計算にバイアスの差分を含めるかどうか（デフォルト: True） |
+| `モデルの差` | MODEL | いいえ | - | LoRAに変換するModelSubtractの出力 |
+| `テキストエンコーダの差` | CLIP | いいえ | - | LoRAに変換するCLIPSubtractの出力 |
 
 **注意:** ノードが機能するためには、`model_diff` または `text_encoder_diff` の少なくとも一方を指定する必要があります。両方が省略された場合、ノードは出力を生成しません。
 

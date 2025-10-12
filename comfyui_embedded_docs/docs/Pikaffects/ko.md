@@ -6,11 +6,11 @@ Pikaffects 노드는 입력 이미지에 다양한 시각 효과를 적용하여
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 예 | - | Pikaffect를 적용할 참조 이미지입니다. |
+| `이미지` | IMAGE | 예 | - | Pikaffect를 적용할 참조 이미지입니다. |
 | `pikaffect` | COMBO | 예 | "Cake-ify"<br>"Crumble"<br>"Crush"<br>"Decapitate"<br>"Deflate"<br>"Dissolve"<br>"Explode"<br>"Eye-pop"<br>"Inflate"<br>"Levitate"<br>"Melt"<br>"Peel"<br>"Poke"<br>"Squish"<br>"Ta-da"<br>"Tear" | 이미지에 적용할 특정 시각 효과입니다 (기본값: "Cake-ify"). |
-| `prompt_text` | STRING | 예 | - | 비디오 생성을 안내하는 텍스트 설명입니다. |
-| `negative_prompt` | STRING | 예 | - | 생성된 비디오에서 피해야 할 내용에 대한 텍스트 설명입니다. |
-| `seed` | INT | 예 | 0부터 4294967295까지 | 재현 가능한 결과를 위한 랜덤 시드 값입니다. |
+| `프롬프트 텍스트` | STRING | 예 | - | 비디오 생성을 안내하는 텍스트 설명입니다. |
+| `부정 프롬프트` | STRING | 예 | - | 생성된 비디오에서 피해야 할 내용에 대한 텍스트 설명입니다. |
+| `시드` | INT | 예 | 0부터 4294967295까지 | 재현 가능한 결과를 위한 랜덤 시드 값입니다. |
 
 ## 출력
 

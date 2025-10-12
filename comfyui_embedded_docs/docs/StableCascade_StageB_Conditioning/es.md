@@ -6,8 +6,8 @@ El nodo StableCascade_StageB_Conditioning prepara los datos de condicionamiento 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Sí | - | Los datos de condicionamiento que serán modificados con la información previa de la Etapa C |
-| `stage_c` | LATENT | Sí | - | La representación latente de la Etapa C que contiene las muestras previas para el condicionamiento |
+| `acondicionamiento` | CONDITIONING | Sí | - | Los datos de condicionamiento que serán modificados con la información previa de la Etapa C |
+| `etapa_c` | LATENT | Sí | - | La representación latente de la Etapa C que contiene las muestras previas para el condicionamiento |
 
 ## Salidas
 

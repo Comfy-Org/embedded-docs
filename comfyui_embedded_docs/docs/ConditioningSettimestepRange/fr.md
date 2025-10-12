@@ -5,8 +5,8 @@ Ce nœud est conçu pour ajuster l'aspect temporel du conditionnement en défini
 | Paramètre | Type de Donnée | Description |
 | --- | --- | --- |
 | `CONDITIONING` | CONDITIONING | L'entrée de conditionnement représente l'état actuel du processus de génération, que ce nœud modifie en définissant une plage spécifique de pas de temps. |
-| `start` | `FLOAT` | Le paramètre de début spécifie le commencement de la plage de pas de temps en pourcentage du processus de génération total, permettant un contrôle précis du moment où les effets de conditionnement commencent. |
-| `end` | `FLOAT` | Le paramètre de fin définit le point final de la plage de pas de temps en pourcentage, permettant un contrôle précis de la durée et de la conclusion des effets de conditionnement. |
+| `début` | `FLOAT` | Le paramètre de début spécifie le commencement de la plage de pas de temps en pourcentage du processus de génération total, permettant un contrôle précis du moment où les effets de conditionnement commencent. |
+| `fin` | `FLOAT` | Le paramètre de fin définit le point final de la plage de pas de temps en pourcentage, permettant un contrôle précis de la durée et de la conclusion des effets de conditionnement. |
 
 ## Sorties
 

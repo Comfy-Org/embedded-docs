@@ -6,14 +6,14 @@ El nodo HunyuanImageToVideo convierte imágenes en representaciones latentes de 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Entrada de condicionamiento positivo para guiar la generación del video |
+| `positivo` | CONDITIONING | Sí | - | Entrada de condicionamiento positivo para guiar la generación del video |
 | `vae` | VAE | Sí | - | Modelo VAE utilizado para codificar imágenes en el espacio latente |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (por defecto: 848, paso: 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (por defecto: 480, paso: 16) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en el video de salida (por defecto: 53, paso: 4) |
-| `batch_size` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (por defecto: 1) |
-| `guidance_type` | COMBO | Sí | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Método para incorporar la imagen inicial en la generación de video |
-| `start_image` | IMAGE | No | - | Imagen inicial opcional para inicializar la generación del video |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (por defecto: 848, paso: 16) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (por defecto: 480, paso: 16) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en el video de salida (por defecto: 53, paso: 4) |
+| `tamaño_del_lote` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (por defecto: 1) |
+| `tipo_de_orientación` | COMBO | Sí | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Método para incorporar la imagen inicial en la generación de video |
+| `imagen_inicial` | IMAGE | No | - | Imagen inicial opcional para inicializar la generación del video |
 
 **Nota:** Cuando se proporciona `start_image`, el nodo utiliza diferentes métodos de guía según el `guidance_type` seleccionado:
 - "v1 (concat)": Concatena el latente de la imagen con el latente del video
@@ -24,5 +24,5 @@ El nodo HunyuanImageToVideo convierte imágenes en representaciones latentes de 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo modificado con la guía de imagen aplicada cuando se proporciona start_image |
+| `latente` | CONDITIONING | Condicionamiento positivo modificado con la guía de imagen aplicada cuando se proporciona start_image |
 | `latent` | LATENT | Representación latente de video lista para su posterior procesamiento por modelos de generación de video |

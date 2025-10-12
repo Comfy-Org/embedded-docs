@@ -6,17 +6,17 @@ Le nœud ConditioningSetAreaPercentageVideo modifie les données de conditionnem
 
 | Paramètre | Type de données | Type d'entrée | Par défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
-| `conditioning` | CONDITIONING | Requis | - | - | Les données de conditionnement à modifier |
-| `width` | FLOAT | Requis | 1.0 | 0.0 - 1.0 | La largeur de la zone en pourcentage de la largeur totale |
-| `height` | FLOAT | Requis | 1.0 | 0.0 - 1.0 | La hauteur de la zone en pourcentage de la hauteur totale |
-| `temporal` | FLOAT | Requis | 1.0 | 0.0 - 1.0 | La durée temporelle de la zone en pourcentage de la longueur totale de la vidéo |
+| `conditionnement` | CONDITIONING | Requis | - | - | Les données de conditionnement à modifier |
+| `largeur` | FLOAT | Requis | 1.0 | 0.0 - 1.0 | La largeur de la zone en pourcentage de la largeur totale |
+| `hauteur` | FLOAT | Requis | 1.0 | 0.0 - 1.0 | La hauteur de la zone en pourcentage de la hauteur totale |
+| `temporel` | FLOAT | Requis | 1.0 | 0.0 - 1.0 | La durée temporelle de la zone en pourcentage de la longueur totale de la vidéo |
 | `x` | FLOAT | Requis | 0.0 | 0.0 - 1.0 | La position de départ horizontale de la zone en pourcentage |
 | `y` | FLOAT | Requis | 0.0 | 0.0 - 1.0 | La position de départ verticale de la zone en pourcentage |
 | `z` | FLOAT | Requis | 0.0 | 0.0 - 1.0 | La position de départ temporelle de la zone en pourcentage de la timeline vidéo |
-| `strength` | FLOAT | Requis | 1.0 | 0.0 - 10.0 | Le multiplicateur de force appliqué au conditionnement dans la zone définie |
+| `force` | FLOAT | Requis | 1.0 | 0.0 - 10.0 | Le multiplicateur de force appliqué au conditionnement dans la zone définie |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Les données de conditionnement modifiées avec les paramètres de zone et de force spécifiés appliqués |
+| `conditionnement` | CONDITIONING | Les données de conditionnement modifiées avec les paramètres de zone et de force spécifiés appliqués |

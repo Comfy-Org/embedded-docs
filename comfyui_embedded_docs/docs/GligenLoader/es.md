@@ -6,7 +6,7 @@ El nodo `GLIGENLoader` está diseñado para cargar modelos GLIGEN, que son model
 
 | Campo         | Comfy dtype       | Descripción                                                                       |
 |---------------|-------------------|-----------------------------------------------------------------------------------|
-| `gligen_name` | `COMBO[STRING]`   | El nombre del modelo GLIGEN a cargar, especificando qué archivo de modelo recuperar y cargar, crucial para la inicialización del modelo GLIGEN. |
+| `nombre_gligen` | `COMBO[STRING]`   | El nombre del modelo GLIGEN a cargar, especificando qué archivo de modelo recuperar y cargar, crucial para la inicialización del modelo GLIGEN. |
 
 ## Salidas
 

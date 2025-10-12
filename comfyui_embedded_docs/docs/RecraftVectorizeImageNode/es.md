@@ -6,7 +6,7 @@ Genera SVG de forma síncrona a partir de una imagen de entrada. Este nodo convi
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada a convertir a formato SVG |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada a convertir a formato SVG |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | No | - | Token de autenticación para acceso a la API |
 | `comfy_api_key` | API_KEY_COMFY_ORG | No | - | Clave API para servicios de Comfy.org |
 

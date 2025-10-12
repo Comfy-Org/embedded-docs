@@ -6,8 +6,8 @@ Le nœud ModelMergeSD3_2B permet de fusionner deux modèles Stable Diffusion 3 2
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | Oui | - | Le premier modèle à fusionner |
-| `model2` | MODEL | Oui | - | Le deuxième modèle à fusionner |
+| `modèle1` | MODEL | Oui | - | Le premier modèle à fusionner |
+| `modèle2` | MODEL | Oui | - | Le deuxième modèle à fusionner |
 | `pos_embed.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation de l'embedding de position (par défaut : 1.0) |
 | `x_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation de l'embedding d'entrée (par défaut : 1.0) |
 | `context_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids d'interpolation de l'embedding de contexte (par défaut : 1.0) |

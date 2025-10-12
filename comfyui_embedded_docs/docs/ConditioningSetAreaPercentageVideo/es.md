@@ -6,17 +6,17 @@ El nodo ConditioningSetAreaPercentageVideo modifica los datos de condicionamient
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Por Defecto | Rango | Descripción |
 |-----------|-----------|------------|---------|-------|-------------|
-| `conditioning` | CONDITIONING | Requerido | - | - | Los datos de condicionamiento que serán modificados |
-| `width` | FLOAT | Requerido | 1.0 | 0.0 - 1.0 | El ancho del área como porcentaje del ancho total |
-| `height` | FLOAT | Requerido | 1.0 | 0.0 - 1.0 | La altura del área como porcentaje de la altura total |
+| `acondicionamiento` | CONDITIONING | Requerido | - | - | Los datos de condicionamiento que serán modificados |
+| `ancho` | FLOAT | Requerido | 1.0 | 0.0 - 1.0 | El ancho del área como porcentaje del ancho total |
+| `alto` | FLOAT | Requerido | 1.0 | 0.0 - 1.0 | La altura del área como porcentaje de la altura total |
 | `temporal` | FLOAT | Requerido | 1.0 | 0.0 - 1.0 | La duración temporal del área como porcentaje de la longitud total del video |
 | `x` | FLOAT | Requerido | 0.0 | 0.0 - 1.0 | La posición horizontal inicial del área como porcentaje |
 | `y` | FLOAT | Requerido | 0.0 | 0.0 - 1.0 | La posición vertical inicial del área como porcentaje |
 | `z` | FLOAT | Requerido | 0.0 | 0.0 - 1.0 | La posición temporal inicial del área como porcentaje de la línea de tiempo del video |
-| `strength` | FLOAT | Requerido | 1.0 | 0.0 - 10.0 | El multiplicador de fuerza aplicado al condicionamiento dentro del área definida |
+| `fuerza` | FLOAT | Requerido | 1.0 | 0.0 - 10.0 | El multiplicador de fuerza aplicado al condicionamiento dentro del área definida |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Los datos de condicionamiento modificados con la configuración de área y fuerza especificada aplicada |
+| `acondicionamiento` | CONDITIONING | Los datos de condicionamiento modificados con la configuración de área y fuerza especificada aplicada |

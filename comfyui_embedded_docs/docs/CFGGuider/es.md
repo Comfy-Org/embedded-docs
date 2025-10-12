@@ -6,9 +6,9 @@ El nodo CFGGuider crea un sistema de guía para controlar el proceso de muestreo
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Por Defecto | Rango | Descripción |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Requerido | - | - | El modelo que se utilizará para la guía |
-| `positive` | CONDITIONING | Requerido | - | - | El condicionamiento positivo que guía la generación hacia el contenido deseado |
-| `negative` | CONDITIONING | Requerido | - | - | El condicionamiento negativo que aleja la generación del contenido no deseado |
+| `modelo` | MODEL | Requerido | - | - | El modelo que se utilizará para la guía |
+| `positivo` | CONDITIONING | Requerido | - | - | El condicionamiento positivo que guía la generación hacia el contenido deseado |
+| `negativo` | CONDITIONING | Requerido | - | - | El condicionamiento negativo que aleja la generación del contenido no deseado |
 | `cfg` | FLOAT | Requerido | 8.0 | 0.0 - 100.0 | La escala de guía libre de clasificador que controla qué tan fuerte influye el condicionamiento en la generación |
 
 ## Salidas

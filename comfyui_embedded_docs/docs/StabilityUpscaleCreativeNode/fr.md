@@ -8,10 +8,10 @@ Améliore la résolution d'une image avec des altérations minimales jusqu'à la
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à améliorer |
 | `prompt` | STRING | Oui | - | Ce que vous souhaitez voir dans l'image de sortie. Un prompt fort et descriptif qui définit clairement les éléments, les couleurs et les sujets donnera de meilleurs résultats. (par défaut : chaîne vide) |
-| `creativity` | FLOAT | Oui | 0.1-0.5 | Contrôle la probabilité de créer des détails supplémentaires non fortement conditionnés par l'image initiale. (par défaut : 0.3) |
-| `style_preset` | COMBO | Oui | Plusieurs options disponibles | Style souhaité optionnel de l'image générée. Les options incluent divers préréglages de style de Stability AI. |
-| `seed` | INT | Oui | 0-4294967294 | La graine aléatoire utilisée pour créer le bruit. (par défaut : 0) |
-| `negative_prompt` | STRING | Non | - | Mots-clés de ce que vous ne souhaitez pas voir dans l'image de sortie. Il s'agit d'une fonctionnalité avancée. (par défaut : chaîne vide) |
+| `créativité` | FLOAT | Oui | 0.1-0.5 | Contrôle la probabilité de créer des détails supplémentaires non fortement conditionnés par l'image initiale. (par défaut : 0.3) |
+| `style_prédéfini` | COMBO | Oui | Plusieurs options disponibles | Style souhaité optionnel de l'image générée. Les options incluent divers préréglages de style de Stability AI. |
+| `graine` | INT | Oui | 0-4294967294 | La graine aléatoire utilisée pour créer le bruit. (par défaut : 0) |
+| `prompt_négatif` | STRING | Non | - | Mots-clés de ce que vous ne souhaitez pas voir dans l'image de sortie. Il s'agit d'une fonctionnalité avancée. (par défaut : chaîne vide) |
 
 ## Sorties
 

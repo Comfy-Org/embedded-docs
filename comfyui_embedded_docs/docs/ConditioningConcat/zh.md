@@ -4,8 +4,8 @@
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `conditioning_to` | `CONDITIONING` | 表示'conditioning_from'向量将被连接到的主要条件向量集。它作为连接过程的基础。 |
-| `conditioning_from` | `CONDITIONING` | 包含要连接到'conditioning_to'向量的条件向量。此参数允许将额外的条件信息集成到现有的集。 |
+| `条件到` | `CONDITIONING` | 表示'conditioning_from'向量将被连接到的主要条件向量集。它作为连接过程的基础。 |
+| `条件从` | `CONDITIONING` | 包含要连接到'conditioning_to'向量的条件向量。此参数允许将额外的条件信息集成到现有的集。 |
 
 ## 输出
 

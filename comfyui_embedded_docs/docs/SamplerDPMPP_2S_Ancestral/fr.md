@@ -7,7 +7,7 @@ Le nœud SamplerDPMPP_2S_Ancestral crée un échantillonneur qui utilise la mét
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Oui | 0.0 - 100.0 | Contrôle la quantité de bruit stochastique ajouté pendant l'échantillonnage (par défaut : 1.0) |
-| `s_noise` | FLOAT | Oui | 0.0 - 100.0 | Contrôle l'échelle du bruit appliqué pendant le processus d'échantillonnage (par défaut : 1.0) |
+| `s_bruit` | FLOAT | Oui | 0.0 - 100.0 | Contrôle l'échelle du bruit appliqué pendant le processus d'échantillonnage (par défaut : 1.0) |
 
 ## Sorties
 

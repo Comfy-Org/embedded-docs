@@ -7,7 +7,7 @@ El nodo VoxelToMeshBasic convierte datos de vóxeles 3D en geometría de malla. 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `voxel` | VOXEL | Sí | - | Los datos de vóxeles 3D a convertir en una malla |
-| `threshold` | FLOAT | Sí | -1.0 a 1.0 | El valor de umbral utilizado para determinar qué vóxeles forman parte de la superficie de la malla (valor por defecto: 0.6) |
+| `umbral` | FLOAT | Sí | -1.0 a 1.0 | El valor de umbral utilizado para determinar qué vóxeles forman parte de la superficie de la malla (valor por defecto: 0.6) |
 
 ## Salidas
 

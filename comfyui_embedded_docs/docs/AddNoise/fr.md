@@ -12,10 +12,10 @@ Le nœud prend une image latente et lui applique un bruit basé sur le générat
 
 | Paramètre | Type de données | Type d'entrée | Par défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Requis | - | - | Le modèle contenant les paramètres d'échantillonnage et les fonctions de traitement |
-| `noise` | NOISE | Requis | - | - | Le générateur de bruit qui produit le motif de bruit de base |
+| `modèle` | MODEL | Requis | - | - | Le modèle contenant les paramètres d'échantillonnage et les fonctions de traitement |
+| `bruit` | NOISE | Requis | - | - | Le générateur de bruit qui produit le motif de bruit de base |
 | `sigmas` | SIGMAS | Requis | - | - | Les valeurs sigma contrôlant l'intensité de la mise à l'échelle du bruit |
-| `latent_image` | LATENT | Requis | - | - | La représentation latente d'entrée à laquelle le bruit sera ajouté |
+| `image_latente` | LATENT | Requis | - | - | La représentation latente d'entrée à laquelle le bruit sera ajouté |
 
 ## Sorties
 

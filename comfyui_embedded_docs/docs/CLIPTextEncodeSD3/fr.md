@@ -10,7 +10,7 @@ Le nœud CLIPTextEncodeSD3 traite les entrées textuelles pour les modèles Stab
 | `clip_l` | STRING | Multiligne, Invites dynamiques | - | - | Entrée texte pour le modèle CLIP local |
 | `clip_g` | STRING | Multiligne, Invites dynamiques | - | - | Entrée texte pour le modèle CLIP global |
 | `t5xxl` | STRING | Multiligne, Invites dynamiques | - | - | Entrée texte pour le modèle T5-XXL |
-| `empty_padding` | COMBO | Sélection | - | ["none", "empty_prompt"] | Contrôle la gestion des entrées textuelles vides |
+| `remplissage_vide` | COMBO | Sélection | - | ["none", "empty_prompt"] | Contrôle la gestion des entrées textuelles vides |
 
 **Contraintes des paramètres :**
 - Lorsque `empty_padding` est défini sur "none", les entrées textuelles vides pour `clip_g`, `clip_l` ou `t5xxl` entraîneront des listes de tokens vides au lieu d'un remplissage

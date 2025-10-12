@@ -7,8 +7,8 @@ Le nœud VoxelToMesh convertit des données voxel 3D en géométrie maillée en 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `voxel` | VOXEL | Oui | - | Les données voxel d'entrée à convertir en géométrie maillée |
-| `algorithm` | COMBO | Oui | "surface net"<br>"basic" | L'algorithme utilisé pour la conversion de maillage à partir des données voxel |
-| `threshold` | FLOAT | Oui | -1.0 à 1.0 | La valeur de seuil pour l'extraction de surface (par défaut : 0.6) |
+| `algorithme` | COMBO | Oui | "surface net"<br>"basic" | L'algorithme utilisé pour la conversion de maillage à partir des données voxel |
+| `seuil` | FLOAT | Oui | -1.0 à 1.0 | La valeur de seuil pour l'extraction de surface (par défaut : 0.6) |
 
 ## Sorties
 

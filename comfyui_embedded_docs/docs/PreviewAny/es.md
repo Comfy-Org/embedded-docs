@@ -6,7 +6,7 @@ El nodo PreviewAny muestra una vista previa de cualquier tipo de dato de entrada
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `source` | ANY | Sí | Cualquier tipo de dato | Acepta cualquier tipo de dato de entrada para mostrar en la vista previa |
+| `fuente` | ANY | Sí | Cualquier tipo de dato | Acepta cualquier tipo de dato de entrada para mostrar en la vista previa |
 
 ## Salidas
 

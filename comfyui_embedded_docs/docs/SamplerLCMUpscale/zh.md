@@ -8,9 +8,9 @@ SamplerLCMUpscale 节点提供了一种专门的采样方法，将潜在一致�
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |------|-----------|------|----------|------|
-| `scale_ratio` | FLOAT | 否 | 0.1 - 20.0 | 放大过程中应用的缩放因子（默认：1.0） |
-| `scale_steps` | INT | 否 | -1 - 1000 | 放大过程使用的步数。使用 -1 表示自动计算（默认：-1） |
-| `upscale_method` | COMBO | 是 | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | 用于图像放大的插值方法 |
+| `缩放比例` | FLOAT | 否 | 0.1 - 20.0 | 放大过程中应用的缩放因子（默认：1.0） |
+| `缩放步数` | INT | 否 | -1 - 1000 | 放大过程使用的步数。使用 -1 表示自动计算（默认：-1） |
+| `缩放方法` | COMBO | 是 | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | 用于图像放大的插值方法 |
 
 ## 输出结果
 

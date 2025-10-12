@@ -6,11 +6,11 @@ Le nœud TorchCompileModel applique la compilation PyTorch à un modèle pour op
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle à compiler et optimiser |
+| `modèle` | MODEL | Oui | - | Le modèle à compiler et optimiser |
 | `backend` | STRING | Oui | "inductor"<br>"cudagraphs" | Le backend de compilation PyTorch à utiliser pour l'optimisation |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle compilé avec la compilation PyTorch appliquée |
+| `modèle` | MODEL | Le modèle compilé avec la compilation PyTorch appliquée |

@@ -6,14 +6,14 @@
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | はい | - | 動画生成のためのプロンプト（デフォルト: ""） |
-| `aspect_ratio` | COMBO | はい | PixverseAspectRatioのオプション | 生成動画のアスペクト比 |
-| `quality` | COMBO | はい | PixverseQualityのオプション | 動画品質設定（デフォルト: PixverseQuality.res_540p） |
-| `duration_seconds` | COMBO | はい | PixverseDurationのオプション | 生成動画の秒単位の長さ |
-| `motion_mode` | COMBO | はい | PixverseMotionModeのオプション | 動画生成のモーションスタイル |
-| `seed` | INT | はい | 0 から 2147483647 | 動画生成のシード値（デフォルト: 0） |
-| `negative_prompt` | STRING | いいえ | - | 画像上で望ましくない要素のオプションのテキスト記述（デフォルト: ""） |
-| `pixverse_template` | CUSTOM | いいえ | - | 生成スタイルに影響を与えるオプションのテンプレート。PixVerse Templateノードによって作成されます |
+| `プロンプト` | STRING | はい | - | 動画生成のためのプロンプト（デフォルト: ""） |
+| `アスペクト比` | COMBO | はい | PixverseAspectRatioのオプション | 生成動画のアスペクト比 |
+| `品質` | COMBO | はい | PixverseQualityのオプション | 動画品質設定（デフォルト: PixverseQuality.res_540p） |
+| `秒数` | COMBO | はい | PixverseDurationのオプション | 生成動画の秒単位の長さ |
+| `モーションモード` | COMBO | はい | PixverseMotionModeのオプション | 動画生成のモーションスタイル |
+| `シード` | INT | はい | 0 から 2147483647 | 動画生成のシード値（デフォルト: 0） |
+| `ネガティブプロンプト` | STRING | いいえ | - | 画像上で望ましくない要素のオプションのテキスト記述（デフォルト: ""） |
+| `PixVerse テンプレート` | CUSTOM | いいえ | - | 生成スタイルに影響を与えるオプションのテンプレート。PixVerse Templateノードによって作成されます |
 
 **注意:** 1080p品質を使用する場合、モーションモードは自動的に通常に設定され、長さは5秒に制限されます。5秒以外の長さの場合も、モーションモードは自動的に通常に設定されます。
 

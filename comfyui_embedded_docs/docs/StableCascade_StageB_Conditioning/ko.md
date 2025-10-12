@@ -6,8 +6,8 @@ StableCascade_StageB_Conditioning 노드는 Stage C의 사전 잠재 표현과 �
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 예 | - | Stage C 사전 정보로 수정될 조건 데이터 |
-| `stage_c` | LATENT | 예 | - | 조건 설정을 위한 사전 샘플을 포함하는 Stage C의 잠재 표현 |
+| `조건` | CONDITIONING | 예 | - | Stage C 사전 정보로 수정될 조건 데이터 |
+| `StageC 잠재 이미지` | LATENT | 예 | - | 조건 설정을 위한 사전 샘플을 포함하는 Stage C의 잠재 표현 |
 
 ## 출력
 

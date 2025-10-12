@@ -6,9 +6,9 @@ El nodo EmptySD3LatentImage crea un tensor de imagen latente en blanco específi
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | El ancho de la imagen latente de salida en píxeles (por defecto: 1024) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | La altura de la imagen latente de salida en píxeles (por defecto: 1024) |
-| `batch_size` | INT | Sí | 1 a 4096 | El número de imágenes latentes a generar en un lote (por defecto: 1) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | El ancho de la imagen latente de salida en píxeles (por defecto: 1024) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | La altura de la imagen latente de salida en píxeles (por defecto: 1024) |
+| `tamaño_del_lote` | INT | Sí | 1 a 4096 | El número de imágenes latentes a generar en un lote (por defecto: 1) |
 
 ## Salidas
 

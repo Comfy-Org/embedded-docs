@@ -6,9 +6,9 @@ Le nœud EmptySD3LatentImage crée un tenseur d'image latente vide spécifiqueme
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La largeur de l'image latente de sortie en pixels (par défaut : 1024) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La hauteur de l'image latente de sortie en pixels (par défaut : 1024) |
-| `batch_size` | INT | Oui | 1 à 4096 | Le nombre d'images latentes à générer dans un lot (par défaut : 1) |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La largeur de l'image latente de sortie en pixels (par défaut : 1024) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La hauteur de l'image latente de sortie en pixels (par défaut : 1024) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Le nombre d'images latentes à générer dans un lot (par défaut : 1) |
 
 ## Sorties
 

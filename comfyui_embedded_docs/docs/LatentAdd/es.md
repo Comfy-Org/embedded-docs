@@ -4,8 +4,8 @@ El nodo LatentAdd está diseñado para la suma de dos representaciones latentes.
 
 | Parámetro    | Data Type | Descripción |
 |--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | El primer conjunto de muestras latentes a sumar. Representa una de las entradas cuyas características se combinarán con otro conjunto de muestras latentes. |
-| `samples2`   | `LATENT`    | El segundo conjunto de muestras latentes a sumar. Sirve como la otra entrada cuyas características se combinan con el primer conjunto de muestras latentes mediante la suma elemento a elemento. |
+| `muestras1`   | `LATENT`    | El primer conjunto de muestras latentes a sumar. Representa una de las entradas cuyas características se combinarán con otro conjunto de muestras latentes. |
+| `muestras2`   | `LATENT`    | El segundo conjunto de muestras latentes a sumar. Sirve como la otra entrada cuyas características se combinan con el primer conjunto de muestras latentes mediante la suma elemento a elemento. |
 
 ## Salidas
 

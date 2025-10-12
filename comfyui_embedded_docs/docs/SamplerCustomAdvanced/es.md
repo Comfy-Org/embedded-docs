@@ -6,15 +6,15 @@ El nodo SamplerCustomAdvanced realiza un muestreo avanzado en el espacio latente
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `noise` | NOISE | Sí | - | El generador de ruido que proporciona el patrón de ruido inicial y la semilla para el proceso de muestreo |
-| `guider` | GUIDER | Sí | - | El modelo de guía que dirige el proceso de muestreo hacia las salidas deseadas |
-| `sampler` | SAMPLER | Sí | - | El algoritmo de muestreo que define cómo se recorre el espacio latente durante la generación |
+| `ruido` | NOISE | Sí | - | El generador de ruido que proporciona el patrón de ruido inicial y la semilla para el proceso de muestreo |
+| `guía` | GUIDER | Sí | - | El modelo de guía que dirige el proceso de muestreo hacia las salidas deseadas |
+| `muestreador` | SAMPLER | Sí | - | El algoritmo de muestreo que define cómo se recorre el espacio latente durante la generación |
 | `sigmas` | SIGMAS | Sí | - | La programación de sigma que controla los niveles de ruido a lo largo de los pasos de muestreo |
-| `latent_image` | LATENT | Sí | - | La representación latente inicial que sirve como punto de partida para el muestreo |
+| `imagen_latente` | LATENT | Sí | - | La representación latente inicial que sirve como punto de partida para el muestreo |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `output` | LATENT | La representación latente muestreada final después de completar el proceso de muestreo |
+| `salida_denoised` | LATENT | La representación latente muestreada final después de completar el proceso de muestreo |
 | `denoised_output` | LATENT | Una versión sin ruido de la salida cuando está disponible, de lo contrario devuelve lo mismo que la salida |

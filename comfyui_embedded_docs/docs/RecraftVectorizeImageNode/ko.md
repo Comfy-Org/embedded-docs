@@ -6,7 +6,7 @@
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 예 | - | SVG 형식으로 변환할 입력 이미지 |
+| `이미지` | IMAGE | 예 | - | SVG 형식으로 변환할 입력 이미지 |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | 아니오 | - | API 접근을 위한 인증 토큰 |
 | `comfy_api_key` | API_KEY_COMFY_ORG | 아니오 | - | Comfy.org 서비스를 위한 API 키 |
 

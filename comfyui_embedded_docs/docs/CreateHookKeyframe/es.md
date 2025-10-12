@@ -6,8 +6,8 @@ El nodo Create Hook Keyframe permite definir puntos específicos en un proceso d
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `strength_mult` | FLOAT | Sí | -20.0 a 20.0 | Multiplicador para la intensidad del hook en este keyframe (valor por defecto: 1.0) |
-| `start_percent` | FLOAT | Sí | 0.0 a 1.0 | El punto porcentual en el proceso de generación donde este keyframe entra en efecto (valor por defecto: 0.0) |
+| `multiplicador_fuerza` | FLOAT | Sí | -20.0 a 20.0 | Multiplicador para la intensidad del hook en este keyframe (valor por defecto: 1.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 a 1.0 | El punto porcentual en el proceso de generación donde este keyframe entra en efecto (valor por defecto: 0.0) |
 | `prev_hook_kf` | HOOK_KEYFRAMES | No | - | Grupo opcional de keyframes de hook anterior al que añadir este keyframe |
 
 ## Salidas

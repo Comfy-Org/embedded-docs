@@ -6,17 +6,17 @@ WanFirstLastFrameToVideo 노드는 시작 프레임과 종료 프레임을 텍�
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 예 | - | 비디오 생성을 안내하는 긍정적 텍스트 조건화 |
-| `negative` | CONDITIONING | 예 | - | 비디오 생성을 안내하는 부정적 텍스트 조건화 |
+| `긍정 조건` | CONDITIONING | 예 | - | 비디오 생성을 안내하는 긍정적 텍스트 조건화 |
+| `부정 조건` | CONDITIONING | 예 | - | 비디오 생성을 안내하는 부정적 텍스트 조건화 |
 | `vae` | VAE | 예 | - | 이미지를 잠재 공간으로 인코딩하는 데 사용되는 VAE 모델 |
-| `width` | INT | 아니오 | 16부터 MAX_RESOLUTION까지 | 출력 비디오 너비 (기본값: 832, 단계: 16) |
-| `height` | INT | 아니오 | 16부터 MAX_RESOLUTION까지 | 출력 비디오 높이 (기본값: 480, 단계: 16) |
-| `length` | INT | 아니오 | 1부터 MAX_RESOLUTION까지 | 비디오 시퀀스의 프레임 수 (기본값: 81, 단계: 4) |
-| `batch_size` | INT | 아니오 | 1부터 4096까지 | 동시에 생성할 비디오 수 (기본값: 1) |
-| `clip_vision_start_image` | CLIP_VISION_OUTPUT | 아니오 | - | 시작 이미지에서 추출된 CLIP 비전 특징 |
-| `clip_vision_end_image` | CLIP_VISION_OUTPUT | 아니오 | - | 종료 이미지에서 추출된 CLIP 비전 특징 |
-| `start_image` | IMAGE | 아니오 | - | 비디오 시퀀스를 위한 시작 프레임 이미지 |
-| `end_image` | IMAGE | 아니오 | - | 비디오 시퀀스를 위한 종료 프레임 이미지 |
+| `너비` | INT | 아니오 | 16부터 MAX_RESOLUTION까지 | 출력 비디오 너비 (기본값: 832, 단계: 16) |
+| `높이` | INT | 아니오 | 16부터 MAX_RESOLUTION까지 | 출력 비디오 높이 (기본값: 480, 단계: 16) |
+| `길이` | INT | 아니오 | 1부터 MAX_RESOLUTION까지 | 비디오 시퀀스의 프레임 수 (기본값: 81, 단계: 4) |
+| `배치 크기` | INT | 아니오 | 1부터 4096까지 | 동시에 생성할 비디오 수 (기본값: 1) |
+| `clip 비전 시작 이미지` | CLIP_VISION_OUTPUT | 아니오 | - | 시작 이미지에서 추출된 CLIP 비전 특징 |
+| `clip 비전 종료 이미지` | CLIP_VISION_OUTPUT | 아니오 | - | 종료 이미지에서 추출된 CLIP 비전 특징 |
+| `시작 이미지` | IMAGE | 아니오 | - | 비디오 시퀀스를 위한 시작 프레임 이미지 |
+| `종료 이미지` | IMAGE | 아니오 | - | 비디오 시퀀스를 위한 종료 프레임 이미지 |
 
 **참고:** `start_image`와 `end_image`가 모두 제공되면, 이 노드는 이 두 프레임 사이를 전환하는 비디오 시퀀스를 생성합니다. `clip_vision_start_image`와 `clip_vision_end_image` 매개변수는 선택 사항이지만 제공될 경우, 해당 CLIP 비전 특징이 연결되어 긍정적 및 부정적 조건화 모두에 적용됩니다.
 
@@ -24,6 +24,6 @@ WanFirstLastFrameToVideo 노드는 시작 프레임과 종료 프레임을 텍�
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 비디오 프레임 인코딩과 CLIP 비전 특징이 적용된 긍정적 조건화 |
-| `negative` | CONDITIONING | 비디오 프레임 인코딩과 CLIP 비전 특징이 적용된 부정적 조건화 |
+| `부정 조건` | CONDITIONING | 비디오 프레임 인코딩과 CLIP 비전 특징이 적용된 긍정적 조건화 |
+| `latent` | CONDITIONING | 비디오 프레임 인코딩과 CLIP 비전 특징이 적용된 부정적 조건화 |
 | `latent` | LATENT | 지정된 비디오 매개변수와 일치하는 차원을 가진 빈 잠재 텐서 |

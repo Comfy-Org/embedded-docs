@@ -8,7 +8,7 @@
 
 | 参数名称 | 数据类型 | 作用 |
 | --- | --- | --- |
-| `vae_name` | COMBO[STRING] | 指定要加载的VAE的名称。此参数决定了将获取和加载哪个VAE模型，支持一系列预定义的VAE名称，包括 'taesd' 和 'taesdxl'。 |
+| `vae名称` | COMBO[STRING] | 指定要加载的VAE的名称。此参数决定了将获取和加载哪个VAE模型，支持一系列预定义的VAE名称，包括 'taesd' 和 'taesdxl'。 |
 
 ## 输出
 

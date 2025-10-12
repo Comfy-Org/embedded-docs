@@ -6,14 +6,14 @@ Self-Attention Guidance 노드는 샘플링 과정에서 어텐션 메커니즘�
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | - | Self-attention guidance를 적용할 확산 모델 |
-| `scale` | FLOAT | 아니오 | -2.0 ~ 5.0 | Self-attention guidance 효과의 강도 (기본값: 0.5) |
-| `blur_sigma` | FLOAT | 아니오 | 0.0 ~ 10.0 | Guidance 맵 생성에 적용되는 흐림의 정도 (기본값: 2.0) |
+| `모델` | MODEL | 예 | - | Self-attention guidance를 적용할 확산 모델 |
+| `스케일` | FLOAT | 아니오 | -2.0 ~ 5.0 | Self-attention guidance 효과의 강도 (기본값: 0.5) |
+| `블러 시그마` | FLOAT | 아니오 | 0.0 ~ 10.0 | Guidance 맵 생성에 적용되는 흐림의 정도 (기본값: 2.0) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model` | MODEL | Self-attention guidance가 적용된 수정된 모델 |
+| `모델` | MODEL | Self-attention guidance가 적용된 수정된 모델 |
 
 **참고:** 이 노드는 현재 실험적 단계이며 청크된 배치에서 제한 사항이 있습니다. 하나의 UNet 호출에서만 어텐션 점수를 저장할 수 있으며 더 큰 배치 크기에서는 제대로 작동하지 않을 수 있습니다.

@@ -6,8 +6,8 @@ Le nœud CheckpointLoader charge un point de contrôle de modèle pré-entraîn�
 
 | Paramètre | Type de données | Type d'entrée | Par défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
-| `config_name` | STRING | COMBO | - | Fichiers de configuration disponibles | Le fichier de configuration qui définit l'architecture et les paramètres du modèle |
-| `ckpt_name` | STRING | COMBO | - | Fichiers de point de contrôle disponibles | Le fichier de point de contrôle contenant les poids et paramètres entraînés du modèle |
+| `nom_config` | STRING | COMBO | - | Fichiers de configuration disponibles | Le fichier de configuration qui définit l'architecture et les paramètres du modèle |
+| `nom_ckpt` | STRING | COMBO | - | Fichiers de point de contrôle disponibles | Le fichier de point de contrôle contenant les poids et paramètres entraînés du modèle |
 
 **Note :** Ce nœud nécessite la sélection à la fois d'un fichier de configuration et d'un fichier de point de contrôle. Le fichier de configuration doit correspondre à l'architecture du fichier de point de contrôle chargé.
 

@@ -6,10 +6,10 @@ Este nodo desactiva completamente la funcionalidad de incrustación de guía par
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Sí | - | Los datos de condicionamiento a procesar y de los cuales eliminar la guía |
+| `acondicionamiento` | CONDITIONING | Sí | - | Los datos de condicionamiento a procesar y de los cuales eliminar la guía |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Los datos de condicionamiento modificados con la guía desactivada |
+| `acondicionamiento` | CONDITIONING | Los datos de condicionamiento modificados con la guía desactivada |

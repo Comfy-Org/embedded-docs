@@ -6,11 +6,11 @@ El nodo PerturbedAttentionGuidance aplica guía de atención perturbada a un mod
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que aplicar la guía de atención perturbada |
-| `scale` | FLOAT | No | 0.0 - 100.0 | La intensidad del efecto de guía de atención perturbada (por defecto: 3.0) |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que aplicar la guía de atención perturbada |
+| `escala` | FLOAT | No | 0.0 - 100.0 | La intensidad del efecto de guía de atención perturbada (por defecto: 3.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con la guía de atención perturbada aplicada |
+| `modelo` | MODEL | El modelo modificado con la guía de atención perturbada aplicada |

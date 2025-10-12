@@ -6,9 +6,9 @@ El nodo LatentOperationSharpen aplica un efecto de realce a las representaciones
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `sharpen_radius` | INT | No | 1-31 | El radio del kernel de realce (por defecto: 9) |
+| `radio_afilado` | INT | No | 1-31 | El radio del kernel de realce (por defecto: 9) |
 | `sigma` | FLOAT | No | 0.1-10.0 | La desviación estándar para el kernel gaussiano (por defecto: 1.0) |
-| `alpha` | FLOAT | No | 0.0-5.0 | El factor de intensidad del realce (por defecto: 0.1) |
+| `alfa` | FLOAT | No | 0.0-5.0 | El factor de intensidad del realce (por defecto: 0.1) |
 
 ## Salidas
 

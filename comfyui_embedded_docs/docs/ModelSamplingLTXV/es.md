@@ -6,13 +6,13 @@ El nodo ModelSamplingLTXV aplica parámetros de muestreo avanzados a un modelo b
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de entrada al que se aplicarán los parámetros de muestreo |
-| `max_shift` | FLOAT | No | 0.0 a 100.0 | El valor de desplazamiento máximo utilizado en el cálculo (por defecto: 2.05) |
-| `base_shift` | FLOAT | No | 0.0 a 100.0 | El valor de desplazamiento base utilizado en el cálculo (por defecto: 0.95) |
-| `latent` | LATENT | No | - | Entrada latente opcional utilizada para determinar el recuento de tokens para el cálculo de desplazamiento |
+| `modelo` | MODEL | Sí | - | El modelo de entrada al que se aplicarán los parámetros de muestreo |
+| `desplazamiento_max` | FLOAT | No | 0.0 a 100.0 | El valor de desplazamiento máximo utilizado en el cálculo (por defecto: 2.05) |
+| `desplazamiento_base` | FLOAT | No | 0.0 a 100.0 | El valor de desplazamiento base utilizado en el cálculo (por defecto: 0.95) |
+| `latente` | LATENT | No | - | Entrada latente opcional utilizada para determinar el recuento de tokens para el cálculo de desplazamiento |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con los parámetros de muestreo aplicados |
+| `modelo` | MODEL | El modelo modificado con los parámetros de muestreo aplicados |

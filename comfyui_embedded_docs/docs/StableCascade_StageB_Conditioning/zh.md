@@ -6,8 +6,8 @@ StableCascade_StageB_Conditioning 节点通过将现有条件信息与来自 Sta
 
 | 参数名 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 是 | - | 待修改的条件数据，将加入 Stage C 先验信息 |
-| `stage_c` | LATENT | 是 | - | 来自 Stage C 的潜在表示，包含用于条件处理的先验样本 |
+| `条件` | CONDITIONING | 是 | - | 待修改的条件数据，将加入 Stage C 先验信息 |
+| `阶段c` | LATENT | 是 | - | 来自 Stage C 的潜在表示，包含用于条件处理的先验样本 |
 
 ## 输出结果
 

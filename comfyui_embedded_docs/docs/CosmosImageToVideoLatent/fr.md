@@ -7,12 +7,12 @@ Le nœud CosmosImageToVideoLatent crée des représentations latentes vidéo à 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour encoder les images dans l'espace latent |
-| `width` | INT | Non | 16 à MAX_RESOLUTION | La largeur de la vidéo de sortie en pixels (par défaut : 1280) |
-| `height` | INT | Non | 16 à MAX_RESOLUTION | La hauteur de la vidéo de sortie en pixels (par défaut : 704) |
-| `length` | INT | Non | 1 à MAX_RESOLUTION | Le nombre d'images dans la séquence vidéo (par défaut : 121) |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre de lots latents à générer (par défaut : 1) |
-| `start_image` | IMAGE | Non | - | Image optionnelle à encoder au début de la séquence vidéo |
-| `end_image` | IMAGE | Non | - | Image optionnelle à encoder à la fin de la séquence vidéo |
+| `largeur` | INT | Non | 16 à MAX_RESOLUTION | La largeur de la vidéo de sortie en pixels (par défaut : 1280) |
+| `hauteur` | INT | Non | 16 à MAX_RESOLUTION | La hauteur de la vidéo de sortie en pixels (par défaut : 704) |
+| `longueur` | INT | Non | 1 à MAX_RESOLUTION | Le nombre d'images dans la séquence vidéo (par défaut : 121) |
+| `taille_du_lot` | INT | Non | 1 à 4096 | Le nombre de lots latents à générer (par défaut : 1) |
+| `image_de_départ` | IMAGE | Non | - | Image optionnelle à encoder au début de la séquence vidéo |
+| `image_de_fin` | IMAGE | Non | - | Image optionnelle à encoder à la fin de la séquence vidéo |
 
 **Note :** Lorsque ni `start_image` ni `end_image` ne sont fournis, le nœud retourne un latent vierge sans aucun masque de bruit. Lorsqu'une image est fournie, les sections correspondantes du latent sont encodées et masquées en conséquence.
 

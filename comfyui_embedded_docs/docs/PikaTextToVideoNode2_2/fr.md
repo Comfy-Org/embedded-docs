@@ -6,12 +6,12 @@ Le nœud Pika Text2Video v2.2 envoie une requête textuelle à l'API Pika versio
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `prompt_text` | STRING | Oui | - | La description textuelle principale qui décrit ce que vous souhaitez générer dans la vidéo |
-| `negative_prompt` | STRING | Oui | - | Texte décrivant ce que vous ne voulez pas voir apparaître dans la vidéo générée |
-| `seed` | INT | Oui | - | Un nombre qui contrôle l'aléatoire de la génération pour des résultats reproductibles |
-| `resolution` | STRING | Oui | - | Le paramètre de résolution pour la vidéo de sortie |
-| `duration` | INT | Oui | - | La longueur de la vidéo en secondes |
-| `aspect_ratio` | FLOAT | Non | 0.4 - 2.5 | Format (largeur / hauteur) (par défaut : 1.7777777777777777) |
+| `texte de l'invite` | STRING | Oui | - | La description textuelle principale qui décrit ce que vous souhaitez générer dans la vidéo |
+| `invite négative` | STRING | Oui | - | Texte décrivant ce que vous ne voulez pas voir apparaître dans la vidéo générée |
+| `graine` | INT | Oui | - | Un nombre qui contrôle l'aléatoire de la génération pour des résultats reproductibles |
+| `résolution` | STRING | Oui | - | Le paramètre de résolution pour la vidéo de sortie |
+| `durée` | INT | Oui | - | La longueur de la vidéo en secondes |
+| `rapport d'aspect` | FLOAT | Non | 0.4 - 2.5 | Format (largeur / hauteur) (par défaut : 1.7777777777777777) |
 
 ## Sorties
 

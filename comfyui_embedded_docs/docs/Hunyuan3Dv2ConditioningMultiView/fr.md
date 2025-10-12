@@ -6,10 +6,10 @@ Le nœud Hunyuan3Dv2ConditioningMultiView traite les embeddings visuels CLIP mul
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `front` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue avant |
-| `left` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue gauche |
-| `back` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue arrière |
-| `right` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue droite |
+| `avant` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue avant |
+| `gauche` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue gauche |
+| `arrière` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue arrière |
+| `droite` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision pour la vue droite |
 
 **Remarque :** Au moins une entrée de vue doit être fournie pour que le nœud fonctionne. Le nœud ne traitera que les vues contenant des données valides de sortie CLIP vision.
 
@@ -17,5 +17,5 @@ Le nœud Hunyuan3Dv2ConditioningMultiView traite les embeddings visuels CLIP mul
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif contenant les embeddings multi-vues combinés avec l'encodage positionnel |
+| `négatif` | CONDITIONING | Conditionnement positif contenant les embeddings multi-vues combinés avec l'encodage positionnel |
 | `negative` | CONDITIONING | Conditionnement négatif avec des valeurs nulles pour l'apprentissage contrastif |

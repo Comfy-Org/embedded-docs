@@ -6,11 +6,11 @@ Pikaffectsノードは、入力画像にさまざまなビジュアルエフェ�
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | はい | - | Pikaffectを適用する参照画像。 |
-| `pikaffect` | COMBO | はい | "Cake-ify"<br>"Crumble"<br>"Crush"<br>"Decapitate"<br>"Deflate"<br>"Dissolve"<br>"Explode"<br>"Eye-pop"<br>"Inflate"<br>"Levitate"<br>"Melt"<br>"Peel"<br>"Poke"<br>"Squish"<br>"Ta-da"<br>"Tear" | 画像に適用する特定のビジュアルエフェクト（デフォルト: "Cake-ify"）。 |
-| `prompt_text` | STRING | はい | - | 動画生成を導くテキストによる説明。 |
-| `negative_prompt` | STRING | はい | - | 生成される動画で避けるべき内容のテキストによる説明。 |
-| `seed` | INT | はい | 0 ～ 4294967295 | 再現可能な結果を得るためのランダムシード値。 |
+| `画像` | IMAGE | はい | - | Pikaffectを適用する参照画像。 |
+| `Pikaffect` | COMBO | はい | "Cake-ify"<br>"Crumble"<br>"Crush"<br>"Decapitate"<br>"Deflate"<br>"Dissolve"<br>"Explode"<br>"Eye-pop"<br>"Inflate"<br>"Levitate"<br>"Melt"<br>"Peel"<br>"Poke"<br>"Squish"<br>"Ta-da"<br>"Tear" | 画像に適用する特定のビジュアルエフェクト（デフォルト: "Cake-ify"）。 |
+| `プロンプトテキスト` | STRING | はい | - | 動画生成を導くテキストによる説明。 |
+| `ネガティブプロンプト` | STRING | はい | - | 生成される動画で避けるべき内容のテキストによる説明。 |
+| `シード` | INT | はい | 0 ～ 4294967295 | 再現可能な結果を得るためのランダムシード値。 |
 
 ## 出力
 

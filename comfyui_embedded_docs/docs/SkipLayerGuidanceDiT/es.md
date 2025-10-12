@@ -6,13 +6,13 @@ Mejora la guía hacia estructuras detalladas utilizando otro conjunto de CFG neg
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que aplicar la guía de capas omitidas |
-| `double_layers` | STRING | Sí | - | Números de capa separados por comas para bloques dobles a omitir (por defecto: "7, 8, 9") |
-| `single_layers` | STRING | Sí | - | Números de capa separados por comas para bloques simples a omitir (por defecto: "7, 8, 9") |
-| `scale` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de guía (por defecto: 3.0) |
-| `start_percent` | FLOAT | Sí | 0.0 - 1.0 | Porcentaje inicial para la aplicación de guía (por defecto: 0.01) |
-| `end_percent` | FLOAT | Sí | 0.0 - 1.0 | Porcentaje final para la aplicación de guía (por defecto: 0.15) |
-| `rescaling_scale` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de reescalado (por defecto: 0.0) |
+| `modelo` | MODEL | Sí | - | El modelo al que aplicar la guía de capas omitidas |
+| `capas_dobles` | STRING | Sí | - | Números de capa separados por comas para bloques dobles a omitir (por defecto: "7, 8, 9") |
+| `capas_simples` | STRING | Sí | - | Números de capa separados por comas para bloques simples a omitir (por defecto: "7, 8, 9") |
+| `escala` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de guía (por defecto: 3.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 - 1.0 | Porcentaje inicial para la aplicación de guía (por defecto: 0.01) |
+| `porcentaje_final` | FLOAT | Sí | 0.0 - 1.0 | Porcentaje final para la aplicación de guía (por defecto: 0.15) |
+| `escala_reescalado` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de reescalado (por defecto: 0.0) |
 
 **Nota:** Si tanto `double_layers` como `single_layers` están vacíos (no contienen números de capa), el nodo devuelve el modelo original sin aplicar ninguna guía.
 
@@ -20,4 +20,4 @@ Mejora la guía hacia estructuras detalladas utilizando otro conjunto de CFG neg
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con la guía de capas omitidas aplicada |
+| `modelo` | MODEL | El modelo modificado con la guía de capas omitidas aplicada |

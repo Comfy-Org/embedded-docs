@@ -6,7 +6,7 @@ Le nœud SamplerDPMAdaptative implémente un échantillonneur DPM (Diffusion Pro
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `order` | INT | Oui | 2-3 | L'ordre de la méthode d'échantillonnage (par défaut : 3) |
+| `ordre` | INT | Oui | 2-3 | L'ordre de la méthode d'échantillonnage (par défaut : 3) |
 | `rtol` | FLOAT | Oui | 0.0-100.0 | Tolérance relative pour le contrôle d'erreur (par défaut : 0.05) |
 | `atol` | FLOAT | Oui | 0.0-100.0 | Tolérance absolue pour le contrôle d'erreur (par défaut : 0.0078) |
 | `h_init` | FLOAT | Oui | 0.0-100.0 | Taille de pas initiale (par défaut : 0.05) |
@@ -15,7 +15,7 @@ Le nœud SamplerDPMAdaptative implémente un échantillonneur DPM (Diffusion Pro
 | `dcoeff` | FLOAT | Oui | 0.0-100.0 | Coefficient dérivé pour le contrôle de la taille des pas (par défaut : 0.0) |
 | `accept_safety` | FLOAT | Oui | 0.0-100.0 | Facteur de sécurité pour l'acceptation des pas (par défaut : 0.81) |
 | `eta` | FLOAT | Oui | 0.0-100.0 | Paramètre de stochasticité (par défaut : 0.0) |
-| `s_noise` | FLOAT | Oui | 0.0-100.0 | Facteur d'échelle du bruit (par défaut : 1.0) |
+| `s_bruit` | FLOAT | Oui | 0.0-100.0 | Facteur d'échelle du bruit (par défaut : 1.0) |
 
 ## Sorties
 

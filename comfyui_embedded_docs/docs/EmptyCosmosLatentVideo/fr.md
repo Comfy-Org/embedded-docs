@@ -6,10 +6,10 @@ Le nœud EmptyCosmosLatentVideo crée un tenseur vidéo latent vide avec des dim
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | La largeur de la vidéo latente en pixels (par défaut : 1280, doit être divisible par 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | La hauteur de la vidéo latente en pixels (par défaut : 704, doit être divisible par 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Le nombre d'images dans la vidéo latente (par défaut : 121) |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre de vidéos latentes à générer dans un lot (par défaut : 1) |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | La largeur de la vidéo latente en pixels (par défaut : 1280, doit être divisible par 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | La hauteur de la vidéo latente en pixels (par défaut : 704, doit être divisible par 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Le nombre d'images dans la vidéo latente (par défaut : 121) |
+| `taille_du_lot` | INT | Non | 1 à 4096 | Le nombre de vidéos latentes à générer dans un lot (par défaut : 1) |
 
 ## Sorties
 

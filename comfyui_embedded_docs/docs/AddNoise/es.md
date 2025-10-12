@@ -12,10 +12,10 @@ El nodo toma una imagen latente y le aplica ruido basándose en el generador de 
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Por Defecto | Rango | Descripción |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Requerido | - | - | El modelo que contiene los parámetros de muestreo y las funciones de procesamiento |
-| `noise` | NOISE | Requerido | - | - | El generador de ruido que produce el patrón de ruido base |
+| `modelo` | MODEL | Requerido | - | - | El modelo que contiene los parámetros de muestreo y las funciones de procesamiento |
+| `ruido` | NOISE | Requerido | - | - | El generador de ruido que produce el patrón de ruido base |
 | `sigmas` | SIGMAS | Requerido | - | - | Valores sigma que controlan la intensidad de la escala de ruido |
-| `latent_image` | LATENT | Requerido | - | - | La representación latente de entrada a la que se le agregará ruido |
+| `imagen_latente` | LATENT | Requerido | - | - | La representación latente de entrada a la que se le agregará ruido |
 
 ## Salidas
 

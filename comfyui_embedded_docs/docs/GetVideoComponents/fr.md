@@ -6,12 +6,12 @@ Le nœud Get Video Components extrait tous les éléments principaux d'un fichie
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Oui | - | La vidéo depuis laquelle extraire les composants. |
+| `vidéo` | VIDEO | Oui | - | La vidéo depuis laquelle extraire les composants. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `images` | IMAGE | Les images individuelles extraites de la vidéo sous forme d'images séparées. |
-| `audio` | AUDIO | La piste audio extraite de la vidéo. |
+| `audio` | IMAGE | Les images individuelles extraites de la vidéo sous forme d'images séparées. |
+| `ips` | AUDIO | La piste audio extraite de la vidéo. |
 | `fps` | FLOAT | La fréquence d'images de la vidéo en images par seconde. |

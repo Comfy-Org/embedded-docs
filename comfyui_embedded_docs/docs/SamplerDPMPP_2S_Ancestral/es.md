@@ -7,7 +7,7 @@ El nodo SamplerDPMPP_2S_Ancestral crea un muestreador que utiliza el método de 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Sí | 0.0 - 100.0 | Controla la cantidad de ruido estocástico añadido durante el muestreo (valor por defecto: 1.0) |
-| `s_noise` | FLOAT | Sí | 0.0 - 100.0 | Controla la escala del ruido aplicado durante el proceso de muestreo (valor por defecto: 1.0) |
+| `s_ruido` | FLOAT | Sí | 0.0 - 100.0 | Controla la escala del ruido aplicado durante el proceso de muestreo (valor por defecto: 1.0) |
 
 ## Salidas
 

@@ -6,7 +6,7 @@ El nodo Plantilla de PixVerse te permite seleccionar entre las plantillas dispon
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `template` | STRING | Sí | Múltiples opciones disponibles | La plantilla a utilizar para la generación de videos de PixVerse. Las opciones disponibles corresponden a plantillas predefinidas en el sistema PixVerse. |
+| `plantilla` | STRING | Sí | Múltiples opciones disponibles | La plantilla a utilizar para la generación de videos de PixVerse. Las opciones disponibles corresponden a plantillas predefinidas en el sistema PixVerse. |
 
 ## Salidas
 

@@ -6,7 +6,7 @@ Ce nœud crée une configuration de style d'image réaliste pour utilisation ave
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Oui | Plusieurs options disponibles | Le sous-style spécifique à appliquer au style réaliste_image. Si défini sur "None", aucun sous-style ne sera appliqué. |
+| `sous-style` | STRING | Oui | Plusieurs options disponibles | Le sous-style spécifique à appliquer au style réaliste_image. Si défini sur "None", aucun sous-style ne sera appliqué. |
 
 ## Sorties
 

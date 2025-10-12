@@ -6,8 +6,8 @@ El nodo ModelSave guarda modelos entrenados o modificados en el almacenamiento d
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo que se guardará en el disco |
-| `filename_prefix` | STRING | Sí | - | El prefijo de nombre de archivo y ruta para el archivo de modelo guardado (por defecto: "diffusion_models/ComfyUI") |
+| `modelo` | MODEL | Sí | - | El modelo que se guardará en el disco |
+| `prefijo_nombre_archivo` | STRING | Sí | - | El prefijo de nombre de archivo y ruta para el archivo de modelo guardado (por defecto: "diffusion_models/ComfyUI") |
 | `prompt` | PROMPT | No | - | Información del prompt del flujo de trabajo (proporcionada automáticamente) |
 | `extra_pnginfo` | EXTRA_PNGINFO | No | - | Metadatos adicionales del flujo de trabajo (proporcionados automáticamente) |
 

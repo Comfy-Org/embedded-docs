@@ -9,9 +9,9 @@ Le nœud ModelMergeAuraflow vous permet de fusionner deux modèles différents e
 | `model1` | MODEL | Oui | - | Premier modèle à fusionner |
 | `model2` | MODEL | Oui | - | Deuxième modèle à fusionner |
 | `init_x_linear.` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour la transformation linéaire initiale (par défaut : 1.0) |
-| `positional_encoding` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour les composants d'encodage positionnel (par défaut : 1.0) |
+| `codage_positionnel` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour les composants d'encodage positionnel (par défaut : 1.0) |
 | `cond_seq_linear.` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour les couches linéaires de séquence conditionnelle (par défaut : 1.0) |
-| `register_tokens` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour les composants d'enregistrement de tokens (par défaut : 1.0) |
+| `enregistrer_tokens` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour les composants d'enregistrement de tokens (par défaut : 1.0) |
 | `t_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour les composants d'intégration temporelle (par défaut : 1.0) |
 | `double_layers.0.` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour le groupe de couches doubles 0 (par défaut : 1.0) |
 | `double_layers.1.` | FLOAT | Oui | 0.0 - 1.0 | Poids de mélange pour le groupe de couches doubles 1 (par défaut : 1.0) |

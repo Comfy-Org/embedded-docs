@@ -6,10 +6,10 @@ Le nœud VAEDecodeHunyuan3D convertit des représentations latentes en données 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Oui | - | La représentation latente à décoder en données voxel 3D |
+| `échantillons` | LATENT | Oui | - | La représentation latente à décoder en données voxel 3D |
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour décoder les échantillons latents |
-| `num_chunks` | INT | Oui | 1000-500000 | Le nombre de segments pour diviser le traitement afin de gérer la mémoire (par défaut : 8000) |
-| `octree_resolution` | INT | Oui | 16-512 | La résolution de la structure d'octree utilisée pour la génération de voxels 3D (par défaut : 256) |
+| `nombre_de_morceaux` | INT | Oui | 1000-500000 | Le nombre de segments pour diviser le traitement afin de gérer la mémoire (par défaut : 8000) |
+| `résolution_octree` | INT | Oui | 16-512 | La résolution de la structure d'octree utilisée pour la génération de voxels 3D (par défaut : 256) |
 
 ## Sorties
 

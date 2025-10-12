@@ -6,10 +6,10 @@ Hunyuan3Dv2ConditioningMultiViewノードは、3Dビデオ生成のためのマ�
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `front` | CLIP_VISION_OUTPUT | いいえ | - | 正面ビューのCLIPビジョン出力 |
-| `left` | CLIP_VISION_OUTPUT | いいえ | - | 左側ビューのCLIPビジョン出力 |
-| `back` | CLIP_VISION_OUTPUT | いいえ | - | 背面ビューのCLIPビジョン出力 |
-| `right` | CLIP_VISION_OUTPUT | いいえ | - | 右側ビューのCLIPビジョン出力 |
+| `フロント` | CLIP_VISION_OUTPUT | いいえ | - | 正面ビューのCLIPビジョン出力 |
+| `左` | CLIP_VISION_OUTPUT | いいえ | - | 左側ビューのCLIPビジョン出力 |
+| `バック` | CLIP_VISION_OUTPUT | いいえ | - | 背面ビューのCLIPビジョン出力 |
+| `右` | CLIP_VISION_OUTPUT | いいえ | - | 右側ビューのCLIPビジョン出力 |
 
 **注意:** ノードが機能するには、少なくとも1つのビュー入力が提供されている必要があります。ノードは有効なCLIPビジョン出力データを含むビューのみを処理します。
 
@@ -17,5 +17,5 @@ Hunyuan3Dv2ConditioningMultiViewノードは、3Dビデオ生成のためのマ�
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 位置エンコーディングと組み合わされたマルチビュー埋め込みを含むポジティブコンディショニング |
+| `ネガティブ` | CONDITIONING | 位置エンコーディングと組み合わされたマルチビュー埋め込みを含むポジティブコンディショニング |
 | `negative` | CONDITIONING | 対照学習のためのゼロ値を持つネガティブコンディショニング |

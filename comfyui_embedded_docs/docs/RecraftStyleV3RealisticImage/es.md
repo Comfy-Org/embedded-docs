@@ -6,7 +6,7 @@ Este nodo crea una configuración de estilo de imagen realista para usar con la 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Sí | Múltiples opciones disponibles | El subestilo específico a aplicar al estilo realistic_image. Si se establece en "None", no se aplicará ningún subestilo. |
+| `subestilo` | STRING | Sí | Múltiples opciones disponibles | El subestilo específico a aplicar al estilo realistic_image. Si se establece en "None", no se aplicará ningún subestilo. |
 
 ## Salidas
 

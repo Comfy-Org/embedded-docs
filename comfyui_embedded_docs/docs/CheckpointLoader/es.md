@@ -6,8 +6,8 @@ El nodo CheckpointLoader carga un checkpoint de modelo preentrenado junto con su
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Por Defecto | Rango | Descripción |
 |-----------|-----------|------------|---------|-------|-------------|
-| `config_name` | STRING | COMBO | - | Archivos de configuración disponibles | El archivo de configuración que define la arquitectura y configuraciones del modelo |
-| `ckpt_name` | STRING | COMBO | - | Archivos de checkpoint disponibles | El archivo de checkpoint que contiene los pesos y parámetros entrenados del modelo |
+| `nombre_configuración` | STRING | COMBO | - | Archivos de configuración disponibles | El archivo de configuración que define la arquitectura y configuraciones del modelo |
+| `nombre_ckpt` | STRING | COMBO | - | Archivos de checkpoint disponibles | El archivo de checkpoint que contiene los pesos y parámetros entrenados del modelo |
 
 **Nota:** Este nodo requiere que se seleccionen tanto un archivo de configuración como un archivo de checkpoint. El archivo de configuración debe coincidir con la arquitectura del archivo de checkpoint que se está cargando.
 

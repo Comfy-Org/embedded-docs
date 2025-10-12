@@ -12,9 +12,9 @@ Este nodo se conecta a la API DALL·E 2 de OpenAI para crear imágenes basadas e
 |-----------|-----------|------------|---------|-------|-------------|
 | `prompt` | STRING | requerido | "" | - | Texto descriptivo para DALL·E |
 | `seed` | INT | opcional | 0 | 0 a 2147483647 | aún no implementado en el backend |
-| `size` | COMBO | opcional | "1024x1024" | "256x256", "512x512", "1024x1024" | Tamaño de imagen |
+| `tamaño` | COMBO | opcional | "1024x1024" | "256x256", "512x512", "1024x1024" | Tamaño de imagen |
 | `n` | INT | opcional | 1 | 1 a 8 | Cuántas imágenes generar |
-| `image` | IMAGE | opcional | None | - | Imagen de referencia opcional para edición de imagen. |
+| `imagen` | IMAGE | opcional | None | - | Imagen de referencia opcional para edición de imagen. |
 | `mask` | MASK | opcional | None | - | Máscara opcional para inpainting (las áreas blancas serán reemplazadas) |
 
 ## Salidas

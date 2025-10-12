@@ -8,7 +8,7 @@ El nodo Kling Lip Sync Audio to Video sincroniza los movimientos de la boca en u
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Sí | - | El archivo de video que contiene un rostro para sincronización labial |
 | `audio` | AUDIO | Sí | - | El archivo de audio que contiene las voces para sincronizar con el video |
-| `voice_language` | COMBO | No | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | El idioma de la voz en el archivo de audio (predeterminado: "en") |
+| `idioma_de_voz` | COMBO | No | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | El idioma de la voz en el archivo de audio (predeterminado: "en") |
 
 **Restricciones Importantes:**
 - El archivo de audio no debe ser mayor a 5MB
@@ -22,6 +22,6 @@ El nodo Kling Lip Sync Audio to Video sincroniza los movimientos de la boca en u
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `output` | VIDEO | El video procesado con movimientos de boca sincronizados |
-| `video_id` | STRING | El identificador único para el video procesado |
+| `id_de_video` | VIDEO | El video procesado con movimientos de boca sincronizados |
+| `duración` | STRING | El identificador único para el video procesado |
 | `duration` | STRING | La duración del video procesado |

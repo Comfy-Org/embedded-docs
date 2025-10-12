@@ -6,11 +6,11 @@ El nodo ModelComputeDtype permite cambiar el tipo de datos computacional utiliza
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de entrada a modificar con un nuevo tipo de datos computacional |
+| `modelo` | MODEL | Sí | - | El modelo de entrada a modificar con un nuevo tipo de datos computacional |
 | `dtype` | STRING | Sí | "default"<br>"fp32"<br>"fp16"<br>"bf16" | El tipo de datos computacional a aplicar al modelo |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con el nuevo tipo de datos computacional aplicado |
+| `modelo` | MODEL | El modelo modificado con el nuevo tipo de datos computacional aplicado |

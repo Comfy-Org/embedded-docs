@@ -6,9 +6,9 @@ El nodo TripleCLIPLoader carga tres modelos diferentes de codificación de texto
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name1` | STRING | Sí | Múltiples opciones disponibles | El primer modelo de codificador de texto a cargar de los codificadores de texto disponibles |
-| `clip_name2` | STRING | Sí | Múltiples opciones disponibles | El segundo modelo de codificador de texto a cargar de los codificadores de texto disponibles |
-| `clip_name3` | STRING | Sí | Múltiples opciones disponibles | El tercer modelo de codificador de texto a cargar de los codificadores de texto disponibles |
+| `nombre_clip1` | STRING | Sí | Múltiples opciones disponibles | El primer modelo de codificador de texto a cargar de los codificadores de texto disponibles |
+| `nombre_clip2` | STRING | Sí | Múltiples opciones disponibles | El segundo modelo de codificador de texto a cargar de los codificadores de texto disponibles |
+| `nombre_clip3` | STRING | Sí | Múltiples opciones disponibles | El tercer modelo de codificador de texto a cargar de los codificadores de texto disponibles |
 
 **Nota:** Los tres parámetros de codificador de texto deben seleccionarse de los modelos de codificador de texto disponibles en su sistema. El nodo cargará los tres modelos y los combinará en un único modelo CLIP para su procesamiento.
 

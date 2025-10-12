@@ -6,8 +6,8 @@ StableCascade_StageB_Conditioningノードは、既存の条件付け情報とSt
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | はい | - | Stage Cの事前情報で修正される条件付けデータ |
-| `stage_c` | LATENT | はい | - | 条件付け用の事前サンプルを含むStage Cからの潜在表現 |
+| `コンディショニング` | CONDITIONING | はい | - | Stage Cの事前情報で修正される条件付けデータ |
+| `ステージc` | LATENT | はい | - | 条件付け用の事前サンプルを含むStage Cからの潜在表現 |
 
 ## 出力
 

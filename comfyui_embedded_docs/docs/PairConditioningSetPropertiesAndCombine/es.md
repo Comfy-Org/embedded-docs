@@ -6,19 +6,19 @@ El nodo PairConditioningSetPropertiesAndCombine modifica y combina pares de cond
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | La entrada original de condicionamiento positivo |
-| `negative` | CONDITIONING | Sí | - | La entrada original de condicionamiento negativo |
-| `positive_NEW` | CONDITIONING | Sí | - | El nuevo condicionamiento positivo a aplicar |
-| `negative_NEW` | CONDITIONING | Sí | - | El nuevo condicionamiento negativo a aplicar |
-| `strength` | FLOAT | Sí | 0.0 a 10.0 | El factor de fuerza para aplicar el nuevo condicionamiento (valor por defecto: 1.0) |
-| `set_cond_area` | STRING | Sí | "default"<br>"mask bounds" | Controla cómo se aplica el área de condicionamiento |
-| `mask` | MASK | No | - | Máscara opcional para restringir el área de aplicación del condicionamiento |
-| `hooks` | HOOKS | No | - | Grupo de hooks opcional para control avanzado |
-| `timesteps` | TIMESTEPS_RANGE | No | - | Especificación opcional del rango de pasos de tiempo |
+| `positivo` | CONDITIONING | Sí | - | La entrada original de condicionamiento positivo |
+| `negativo` | CONDITIONING | Sí | - | La entrada original de condicionamiento negativo |
+| `positivo_NUEVO` | CONDITIONING | Sí | - | El nuevo condicionamiento positivo a aplicar |
+| `negativo_NUEVO` | CONDITIONING | Sí | - | El nuevo condicionamiento negativo a aplicar |
+| `fuerza` | FLOAT | Sí | 0.0 a 10.0 | El factor de fuerza para aplicar el nuevo condicionamiento (valor por defecto: 1.0) |
+| `set_area_cond` | STRING | Sí | "default"<br>"mask bounds" | Controla cómo se aplica el área de condicionamiento |
+| `máscara` | MASK | No | - | Máscara opcional para restringir el área de aplicación del condicionamiento |
+| `ganchos` | HOOKS | No | - | Grupo de hooks opcional para control avanzado |
+| `pasos_de_tiempo` | TIMESTEPS_RANGE | No | - | Especificación opcional del rango de pasos de tiempo |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | La salida combinada de condicionamiento positivo |
-| `negative` | CONDITIONING | La salida combinada de condicionamiento negativo |
+| `negativo` | CONDITIONING | La salida combinada de condicionamiento positivo |
+| `negativo` | CONDITIONING | La salida combinada de condicionamiento negativo |

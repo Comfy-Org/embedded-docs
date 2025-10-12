@@ -6,7 +6,7 @@ Este nodo permite seleccionar el estilo de rasterizado del logotipo y elegir ent
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Sí | Múltiples opciones disponibles | El subestilo específico de rasterizado de logotipo a aplicar para la generación del logotipo |
+| `subestilo` | STRING | Sí | Múltiples opciones disponibles | El subestilo específico de rasterizado de logotipo a aplicar para la generación del logotipo |
 
 ## Salidas
 

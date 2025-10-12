@@ -6,7 +6,7 @@ El nodo FreeU_V2 aplica una mejora basada en frecuencia a los modelos de difusi�
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que aplicar la mejora FreeU |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que aplicar la mejora FreeU |
 | `b1` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de características backbone para el primer bloque (por defecto: 1.3) |
 | `b2` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de características backbone para el segundo bloque (por defecto: 1.4) |
 | `s1` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de características skip para el primer bloque (por defecto: 0.9) |
@@ -16,4 +16,4 @@ El nodo FreeU_V2 aplica una mejora basada en frecuencia a los modelos de difusi�
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo de difusión mejorado con las modificaciones FreeU aplicadas |
+| `modelo` | MODEL | El modelo de difusión mejorado con las modificaciones FreeU aplicadas |

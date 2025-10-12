@@ -13,6 +13,6 @@ Le nœud ConditioningTimestepsRange crée trois plages de pas de temps distincte
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | La plage principale de pas de temps définie par start_percent et end_percent |
-| `BEFORE_RANGE` | TIMESTEPS_RANGE | La plage de pas de temps de 0.0 à start_percent |
+| `AVANT_PLAGE` | TIMESTEPS_RANGE | La plage principale de pas de temps définie par start_percent et end_percent |
+| `APRÈS_PLAGE` | TIMESTEPS_RANGE | La plage de pas de temps de 0.0 à start_percent |
 | `AFTER_RANGE` | TIMESTEPS_RANGE | La plage de pas de temps de end_percent à 1.0 |

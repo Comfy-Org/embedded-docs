@@ -19,6 +19,6 @@ El nodo Kling Image to Video genera contenido de video a partir de una imagen in
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La salida de video generada. |
-| `video_id` | STRING | Identificador único para el video generado. |
+| `video_id` | VIDEO | La salida de video generada. |
+| `duration` | STRING | Identificador único para el video generado. |
 | `duration` | STRING | Información de duración para el video generado. |

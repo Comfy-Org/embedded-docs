@@ -6,10 +6,10 @@ Le nœud Create Hook LoRA génère des objets hook pour appliquer des modificati
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `lora_name` | STRING | Oui | Plusieurs options disponibles | Le nom du fichier LoRA à charger depuis le répertoire loras |
-| `strength_model` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour les ajustements du modèle (par défaut : 1.0) |
-| `strength_clip` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour les ajustements du CLIP (par défaut : 1.0) |
-| `prev_hooks` | HOOKS | Non | N/A | Groupe de hooks existant optionnel à combiner avec les nouveaux hooks LoRA |
+| `nom_lora` | STRING | Oui | Plusieurs options disponibles | Le nom du fichier LoRA à charger depuis le répertoire loras |
+| `force_modele` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour les ajustements du modèle (par défaut : 1.0) |
+| `force_clip` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour les ajustements du CLIP (par défaut : 1.0) |
+| `crochets_precedents` | HOOKS | Non | N/A | Groupe de hooks existant optionnel à combiner avec les nouveaux hooks LoRA |
 
 **Contraintes des paramètres :**
 - Si `strength_model` et `strength_clip` sont tous deux définis sur 0, le nœud ignorera la création de nouveaux hooks LoRA et renverra les hooks existants inchangés

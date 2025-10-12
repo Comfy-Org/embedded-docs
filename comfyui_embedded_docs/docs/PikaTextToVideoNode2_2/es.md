@@ -6,12 +6,12 @@ El nodo Pika Text2Video v2.2 envía un mensaje de texto a la API de Pika versió
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `prompt_text` | STRING | Sí | - | La descripción de texto principal que describe lo que quieres generar en el video |
-| `negative_prompt` | STRING | Sí | - | Texto que describe lo que no quieres que aparezca en el video generado |
-| `seed` | INT | Sí | - | Un número que controla la aleatoriedad de la generación para resultados reproducibles |
-| `resolution` | STRING | Sí | - | La configuración de resolución para el video de salida |
-| `duration` | INT | Sí | - | La longitud del video en segundos |
-| `aspect_ratio` | FLOAT | No | 0.4 - 2.5 | Relación de aspecto (ancho / alto) (por defecto: 1.7777777777777777) |
+| `texto del prompt` | STRING | Sí | - | La descripción de texto principal que describe lo que quieres generar en el video |
+| `prompt negativo` | STRING | Sí | - | Texto que describe lo que no quieres que aparezca en el video generado |
+| `semilla` | INT | Sí | - | Un número que controla la aleatoriedad de la generación para resultados reproducibles |
+| `resolución` | STRING | Sí | - | La configuración de resolución para el video de salida |
+| `duración` | INT | Sí | - | La longitud del video en segundos |
+| `relación de aspecto` | FLOAT | No | 0.4 - 2.5 | Relación de aspecto (ancho / alto) (por defecto: 1.7777777777777777) |
 
 ## Salidas
 

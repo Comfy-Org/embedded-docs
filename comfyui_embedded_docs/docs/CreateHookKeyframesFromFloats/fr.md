@@ -6,11 +6,11 @@ Ce nœud crée des images clés de hook à partir d'une liste de valeurs de forc
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `floats_strength` | FLOATS | Oui | -1 à ∞ | Une valeur flottante unique ou une liste de valeurs flottantes représentant les valeurs de force pour les images clés (par défaut : -1) |
-| `start_percent` | FLOAT | Oui | 0.0 à 1.0 | La position en pourcentage de départ pour la première image clé dans la chronologie (par défaut : 0.0) |
-| `end_percent` | FLOAT | Oui | 0.0 à 1.0 | La position en pourcentage de fin pour la dernière image clé dans la chronologie (par défaut : 1.0) |
-| `print_keyframes` | BOOLEAN | Oui | Vrai/Faux | Lorsqu'activé, affiche les informations des images clés générées dans la console (par défaut : Faux) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Non | - | Un groupe d'images clés de hook existant auquel ajouter les nouvelles images clés, ou crée un nouveau groupe si non fourni |
+| `force_flottants` | FLOATS | Oui | -1 à ∞ | Une valeur flottante unique ou une liste de valeurs flottantes représentant les valeurs de force pour les images clés (par défaut : -1) |
+| `pourcentage_debut` | FLOAT | Oui | 0.0 à 1.0 | La position en pourcentage de départ pour la première image clé dans la chronologie (par défaut : 0.0) |
+| `pourcentage_fin` | FLOAT | Oui | 0.0 à 1.0 | La position en pourcentage de fin pour la dernière image clé dans la chronologie (par défaut : 1.0) |
+| `imprimer_images_cles` | BOOLEAN | Oui | Vrai/Faux | Lorsqu'activé, affiche les informations des images clés générées dans la console (par défaut : Faux) |
+| `precedent_crochet_kf` | HOOK_KEYFRAMES | Non | - | Un groupe d'images clés de hook existant auquel ajouter les nouvelles images clés, ou crée un nouveau groupe si non fourni |
 
 **Note :** Le paramètre `floats_strength` accepte soit une valeur flottante unique, soit une liste itérable de flottants. Les images clés sont réparties linéairement entre `start_percent` et `end_percent` en fonction du nombre de valeurs de force fournies.
 

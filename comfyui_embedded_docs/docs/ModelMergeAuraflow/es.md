@@ -6,12 +6,12 @@ El nodo ModelMergeAuraflow permite combinar dos modelos diferentes ajustando pes
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | Sí | - | El primer modelo a fusionar |
-| `model2` | MODEL | Sí | - | El segundo modelo a fusionar |
+| `modelo1` | MODEL | Sí | - | El primer modelo a fusionar |
+| `modelo2` | MODEL | Sí | - | El segundo modelo a fusionar |
 | `init_x_linear.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para la transformación lineal inicial (valor por defecto: 1.0) |
-| `positional_encoding` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para componentes de codificación posicional (valor por defecto: 1.0) |
+| `codificación_posicional` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para componentes de codificación posicional (valor por defecto: 1.0) |
 | `cond_seq_linear.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para capas lineales de secuencia condicional (valor por defecto: 1.0) |
-| `register_tokens` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para componentes de registro de tokens (valor por defecto: 1.0) |
+| `registrar_tokens` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para componentes de registro de tokens (valor por defecto: 1.0) |
 | `t_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para componentes de incrustación temporal (valor por defecto: 1.0) |
 | `double_layers.0.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para grupo de capas dobles 0 (valor por defecto: 1.0) |
 | `double_layers.1.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla para grupo de capas dobles 1 (valor por defecto: 1.0) |

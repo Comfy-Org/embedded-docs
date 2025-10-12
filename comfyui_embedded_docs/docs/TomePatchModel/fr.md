@@ -6,11 +6,11 @@ Le nœud TomePatchModel applique la fusion de tokens (ToMe) à un modèle de dif
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer la fusion de tokens |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer la fusion de tokens |
 | `ratio` | FLOAT | Non | 0.0 - 1.0 | Le ratio de tokens à fusionner (par défaut : 0.3) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec la fusion de tokens appliquée |
+| `modèle` | MODEL | Le modèle modifié avec la fusion de tokens appliquée |

@@ -6,12 +6,12 @@ Le nœud DualCFGGuider crée un système de guidage pour l'échantillonnage à d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle à utiliser pour le guidage |
+| `modèle` | MODEL | Oui | - | Le modèle à utiliser pour le guidage |
 | `cond1` | CONDITIONING | Oui | - | La première entrée de conditionnement positif |
 | `cond2` | CONDITIONING | Oui | - | La deuxième entrée de conditionnement positif |
-| `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif |
+| `négatif` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif |
 | `cfg_conds` | FLOAT | Oui | 0.0 - 100.0 | Échelle de guidance pour le premier conditionnement positif (par défaut : 8.0) |
-| `cfg_cond2_negative` | FLOAT | Oui | 0.0 - 100.0 | Échelle de guidance pour le deuxième conditionnement positif et le conditionnement négatif (par défaut : 8.0) |
+| `cfg_cond2_négatif` | FLOAT | Oui | 0.0 - 100.0 | Échelle de guidance pour le deuxième conditionnement positif et le conditionnement négatif (par défaut : 8.0) |
 | `style` | COMBO | Oui | "regular"<br>"nested" | Le style de guidage à appliquer (par défaut : "regular") |
 
 ## Sorties

@@ -8,9 +8,9 @@ Génère des images de manière synchrone via le point de terminaison DALL·E 3 
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite textuelle pour DALL·E (par défaut : "") |
 | `seed` | INT | Non | 0 à 2147483647 | pas encore implémenté dans le backend (par défaut : 0) |
-| `quality` | COMBO | Non | "standard"<br>"hd" | Qualité de l'image (par défaut : "standard") |
+| `qualité` | COMBO | Non | "standard"<br>"hd" | Qualité de l'image (par défaut : "standard") |
 | `style` | COMBO | Non | "natural"<br>"vivid" | Vivid amène le modèle à privilégier la génération d'images hyper-réalistes et dramatiques. Natural amène le modèle à produire des images plus naturelles, moins hyper-réalistes. (par défaut : "natural") |
-| `size` | COMBO | Non | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Dimensions de l'image (par défaut : "1024x1024") |
+| `taille` | COMBO | Non | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Dimensions de l'image (par défaut : "1024x1024") |
 
 ## Sorties
 

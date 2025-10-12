@@ -6,17 +6,17 @@ PatchModelAddDownscale 节点通过向模型中的特定块应用下采样和上
 
 | 参数名 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 要应用下采样补丁的模型 |
-| `block_number` | INT | 否 | 1-32 | 将应用下采样的具体块编号（默认值：3） |
-| `downscale_factor` | FLOAT | 否 | 0.1-9.0 | 特征下采样的比例因子（默认值：2.0） |
-| `start_percent` | FLOAT | 否 | 0.0-1.0 | 去噪过程中开始下采样的起始点（默认值：0.0） |
-| `end_percent` | FLOAT | 否 | 0.0-1.0 | 去噪过程中停止下采样的结束点（默认值：0.35） |
-| `downscale_after_skip` | BOOLEAN | 否 | - | 是否在跳跃连接后应用下采样（默认值：True） |
-| `downscale_method` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用于下采样操作的插值方法 |
-| `upscale_method` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用于上采样操作的插值方法 |
+| `模型` | MODEL | 是 | - | 要应用下采样补丁的模型 |
+| `层编号` | INT | 否 | 1-32 | 将应用下采样的具体块编号（默认值：3） |
+| `收缩系数` | FLOAT | 否 | 0.1-9.0 | 特征下采样的比例因子（默认值：2.0） |
+| `开始百分比` | FLOAT | 否 | 0.0-1.0 | 去噪过程中开始下采样的起始点（默认值：0.0） |
+| `结束百分比` | FLOAT | 否 | 0.0-1.0 | 去噪过程中停止下采样的结束点（默认值：0.35） |
+| `跳过后收缩` | BOOLEAN | 否 | - | 是否在跳跃连接后应用下采样（默认值：True） |
+| `收缩算法` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用于下采样操作的插值方法 |
+| `放大方法` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用于上采样操作的插值方法 |
 
 ## 输出结果
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 应用了下采样补丁的修改后模型 |
+| `模型` | MODEL | 应用了下采样补丁的修改后模型 |

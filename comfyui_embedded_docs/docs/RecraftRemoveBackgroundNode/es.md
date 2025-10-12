@@ -6,7 +6,7 @@ Este nodo elimina el fondo de imágenes utilizando el servicio API de Recraft. P
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La(s) imagen(es) de entrada a procesar para eliminación de fondo |
+| `imagen` | IMAGE | Sí | - | La(s) imagen(es) de entrada a procesar para eliminación de fondo |
 | `auth_token` | STRING | No | - | Token de autenticación para acceso a la API de Recraft |
 | `comfy_api_key` | STRING | No | - | Clave API para integración con el servicio Comfy.org |
 
@@ -14,5 +14,5 @@ Este nodo elimina el fondo de imágenes utilizando el servicio API de Recraft. P
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Imágenes procesadas con fondos transparentes |
+| `imagen` | IMAGE | Imágenes procesadas con fondos transparentes |
 | `mask` | MASK | Máscaras de canal alfa que indican las áreas del fondo eliminadas |

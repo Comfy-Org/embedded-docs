@@ -6,13 +6,13 @@ El nodo StableCascade_SuperResolutionControlnet prepara las entradas para el pro
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se procesará para superresolución |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se procesará para superresolución |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar la imagen de entrada |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | La representación de imagen codificada adecuada para la entrada del controlnet |
-| `stage_c` | LATENT | Representación latente de marcador de posición para la etapa C del procesamiento de Stable Cascade |
+| `etapa_c` | IMAGE | La representación de imagen codificada adecuada para la entrada del controlnet |
+| `etapa_b` | LATENT | Representación latente de marcador de posición para la etapa C del procesamiento de Stable Cascade |
 | `stage_b` | LATENT | Representación latente de marcador de posición para la etapa B del procesamiento de Stable Cascade |

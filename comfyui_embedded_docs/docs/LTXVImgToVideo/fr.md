@@ -14,12 +14,12 @@ Le nœud LTXVImgToVideo convertit une image d'entrée en une représentation lat
 | `height` | INT | Non | 64 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 512, pas : 32) |
 | `length` | INT | Non | 9 à MAX_RESOLUTION | Nombre de trames dans la vidéo générée (par défaut : 97, pas : 8) |
 | `batch_size` | INT | Non | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
-| `strength` | FLOAT | Non | 0.0 à 1.0 | Contrôle de la modification de l'image originale pendant la génération vidéo, où 1.0 préserve la majeure partie du contenu original et 0.0 permet une modification maximale (par défaut : 1.0) |
+| `force` | FLOAT | Non | 0.0 à 1.0 | Contrôle de la modification de l'image originale pendant la génération vidéo, où 1.0 préserve la majeure partie du contenu original et 0.0 permet une modification maximale (par défaut : 1.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif traité avec application d'un masque de trame vidéo |
-| `negative` | CONDITIONING | Conditionnement négatif traité avec application d'un masque de trame vidéo |
+| `negative` | CONDITIONING | Conditionnement positif traité avec application d'un masque de trame vidéo |
+| `latent` | CONDITIONING | Conditionnement négatif traité avec application d'un masque de trame vidéo |
 | `latent` | LATENT | Représentation latente vidéo contenant les trames encodées et le masque de bruit pour la génération vidéo |

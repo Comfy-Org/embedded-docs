@@ -6,7 +6,7 @@ Le nœud LatentOperationSharpen applique un effet de netteté aux représentatio
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `sharpen_radius` | INT | Non | 1-31 | Le rayon du noyau de netteté (par défaut : 9) |
+| `rayon_d'affûtage` | INT | Non | 1-31 | Le rayon du noyau de netteté (par défaut : 9) |
 | `sigma` | FLOAT | Non | 0.1-10.0 | L'écart type pour le noyau gaussien (par défaut : 1.0) |
 | `alpha` | FLOAT | Non | 0.0-5.0 | Le facteur d'intensité de netteté (par défaut : 0.1) |
 

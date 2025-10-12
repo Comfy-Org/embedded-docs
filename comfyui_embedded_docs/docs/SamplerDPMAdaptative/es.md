@@ -6,16 +6,16 @@ El nodo SamplerDPMAdaptative implementa un muestreador DPM (Modelo Probabilísti
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `order` | INT | Sí | 2-3 | El orden del método del muestreador (por defecto: 3) |
+| `orden` | INT | Sí | 2-3 | El orden del método del muestreador (por defecto: 3) |
 | `rtol` | FLOAT | Sí | 0.0-100.0 | Tolerancia relativa para el control de errores (por defecto: 0.05) |
 | `atol` | FLOAT | Sí | 0.0-100.0 | Tolerancia absoluta para el control de errores (por defecto: 0.0078) |
 | `h_init` | FLOAT | Sí | 0.0-100.0 | Tamaño de paso inicial (por defecto: 0.05) |
 | `pcoeff` | FLOAT | Sí | 0.0-100.0 | Coeficiente proporcional para el control del tamaño de paso (por defecto: 0.0) |
 | `icoeff` | FLOAT | Sí | 0.0-100.0 | Coeficiente integral para el control del tamaño de paso (por defecto: 1.0) |
 | `dcoeff` | FLOAT | Sí | 0.0-100.0 | Coeficiente derivativo para el control del tamaño de paso (por defecto: 0.0) |
-| `accept_safety` | FLOAT | Sí | 0.0-100.0 | Factor de seguridad para la aceptación de pasos (por defecto: 0.81) |
+| `aceptar_seguridad` | FLOAT | Sí | 0.0-100.0 | Factor de seguridad para la aceptación de pasos (por defecto: 0.81) |
 | `eta` | FLOAT | Sí | 0.0-100.0 | Parámetro de estocasticidad (por defecto: 0.0) |
-| `s_noise` | FLOAT | Sí | 0.0-100.0 | Factor de escalado de ruido (por defecto: 1.0) |
+| `s_ruido` | FLOAT | Sí | 0.0-100.0 | Factor de escalado de ruido (por defecto: 1.0) |
 
 ## Salidas
 

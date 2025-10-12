@@ -21,7 +21,7 @@ Le Refiner peut être utilisé de deux manières :
 | `ascore` | FLOAT | Optional | 6.0 | 0.0-1000.0 | Contrôle la qualité visuelle et l'esthétique des images générées, similaire à la définition de standards de qualité pour l'œuvre :<br/>- Scores élevés (7.5-8.5) : Recherche des effets plus raffinés et riches en détails<br/>- Scores moyens (6.0-7.0) : Contrôle de qualité équilibré<br/>- Scores bas (2.0-3.0) : Adapté aux prompts négatifs |
 | `largeur` | INT | Required | 1024 | 64-16384 | Spécifie la largeur de l'image de sortie (pixels), doit être un multiple de 8. SDXL fonctionne mieux quand le nombre total de pixels est proche de 1024×1024 (environ 1M pixels) |
 | `hauteur` | INT | Required | 1024 | 64-16384 | Spécifie la hauteur de l'image de sortie (pixels), doit être un multiple de 8. SDXL fonctionne mieux quand le nombre total de pixels est proche de 1024×1024 (environ 1M pixels) |
-| `text` | STRING | Required | - | - | Description du prompt textuel, supporte l'entrée multi-lignes et la syntaxe de prompt dynamique. Dans Refiner, les prompts textuels doivent se concentrer davantage sur la description de la qualité visuelle désirée et les caractéristiques des détails |
+| `texte` | STRING | Required | - | - | Description du prompt textuel, supporte l'entrée multi-lignes et la syntaxe de prompt dynamique. Dans Refiner, les prompts textuels doivent se concentrer davantage sur la description de la qualité visuelle désirée et les caractéristiques des détails |
 
 ## Sorties
 

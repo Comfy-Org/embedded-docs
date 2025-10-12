@@ -24,6 +24,6 @@ Kling Start-End Frame to Videoノードは、指定された開始画像と終�
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 生成されたビデオシーケンス |
-| `video_id` | STRING | 生成されたビデオの一意の識別子 |
+| `video_id` | VIDEO | 生成されたビデオシーケンス |
+| `duration` | STRING | 生成されたビデオの一意の識別子 |
 | `duration` | STRING | 生成されたビデオの再生時間 |

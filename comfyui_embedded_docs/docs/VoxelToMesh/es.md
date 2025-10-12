@@ -7,8 +7,8 @@ El nodo VoxelToMesh convierte datos de vóxeles 3D en geometría de malla utiliz
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `voxel` | VOXEL | Sí | - | Los datos de vóxeles de entrada para convertir en geometría de malla |
-| `algorithm` | COMBO | Sí | "surface net"<br>"basic" | El algoritmo utilizado para la conversión de malla a partir de datos de vóxeles |
-| `threshold` | FLOAT | Sí | -1.0 a 1.0 | El valor de umbral para la extracción de superficie (valor por defecto: 0.6) |
+| `algoritmo` | COMBO | Sí | "surface net"<br>"basic" | El algoritmo utilizado para la conversión de malla a partir de datos de vóxeles |
+| `umbral` | FLOAT | Sí | -1.0 a 1.0 | El valor de umbral para la extracción de superficie (valor por defecto: 0.6) |
 
 ## Salidas
 

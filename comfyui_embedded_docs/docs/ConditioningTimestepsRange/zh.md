@@ -6,13 +6,13 @@ ConditioningTimestepsRange 节点创建三个不同的时间步范围，用于�
 
 | 参数 | 数据类型 | 必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `start_percent` | FLOAT | 是 | 0.0 - 1.0 | 时间步范围的起始百分比（默认值：0.0） |
-| `end_percent` | FLOAT | 是 | 0.0 - 1.0 | 时间步范围的结束百分比（默认值：1.0） |
+| `开始百分比` | FLOAT | 是 | 0.0 - 1.0 | 时间步范围的起始百分比（默认值：0.0） |
+| `结束百分比` | FLOAT | 是 | 0.0 - 1.0 | 时间步范围的结束百分比（默认值：1.0） |
 
 ## 输出结果
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | 由 start_percent 和 end_percent 定义的主时间步范围 |
-| `BEFORE_RANGE` | TIMESTEPS_RANGE | 从 0.0 到 start_percent 的时间步范围 |
+| `范围前` | TIMESTEPS_RANGE | 由 start_percent 和 end_percent 定义的主时间步范围 |
+| `范围后` | TIMESTEPS_RANGE | 从 0.0 到 start_percent 的时间步范围 |
 | `AFTER_RANGE` | TIMESTEPS_RANGE | 从 end_percent 到 1.0 的时间步范围 |

@@ -6,7 +6,7 @@ Escala rápidamente una imagen mediante una llamada a la API de Stability hasta 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
 
 ## Salidas
 

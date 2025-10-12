@@ -8,7 +8,7 @@
 
 | 参数名 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 要转换为 SVG 格式的输入图像 |
+| `图像` | IMAGE | 是 | - | 要转换为 SVG 格式的输入图像 |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | 否 | - | API 访问的认证令牌 |
 | `comfy_api_key` | API_KEY_COMFY_ORG | 否 | - | Comfy.org 服务的 API 密钥 |
 

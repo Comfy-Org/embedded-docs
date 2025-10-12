@@ -6,11 +6,11 @@ El nodo LoadImageOutput carga imágenes desde la carpeta de salida. Al hacer cli
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | COMBO | Sí | Múltiples opciones disponibles | Carga una imagen desde la carpeta de salida. Incluye una opción de carga y un botón de actualización para actualizar la lista de imágenes. |
+| `imagen` | COMBO | Sí | Múltiples opciones disponibles | Carga una imagen desde la carpeta de salida. Incluye una opción de carga y un botón de actualización para actualizar la lista de imágenes. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `image` | IMAGE | La imagen cargada desde la carpeta de salida |
+| `imagen` | IMAGE | La imagen cargada desde la carpeta de salida |
 | `mask` | MASK | La máscara asociada con la imagen cargada |

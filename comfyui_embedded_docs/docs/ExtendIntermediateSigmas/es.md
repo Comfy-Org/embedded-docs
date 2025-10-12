@@ -7,10 +7,10 @@ El nodo ExtendIntermediateSigmas toma una secuencia existente de valores sigma e
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `sigmas` | SIGMAS | Sí | - | La secuencia sigma de entrada a extender con valores intermedios |
-| `steps` | INT | Sí | 1-100 | Número de pasos intermedios a insertar entre los sigmas existentes (valor por defecto: 2) |
-| `start_at_sigma` | FLOAT | Sí | -1.0 a 20000.0 | Límite superior de sigma para la extensión - solo extiende sigmas por debajo de este valor (valor por defecto: -1.0, que significa infinito) |
-| `end_at_sigma` | FLOAT | Sí | 0.0 a 20000.0 | Límite inferior de sigma para la extensión - solo extiende sigmas por encima de este valor (valor por defecto: 12.0) |
-| `spacing` | COMBO | Sí | "linear"<br>"cosine"<br>"sine" | El método de interpolación para espaciar los valores sigma intermedios |
+| `pasos` | INT | Sí | 1-100 | Número de pasos intermedios a insertar entre los sigmas existentes (valor por defecto: 2) |
+| `comenzar_en_sigma` | FLOAT | Sí | -1.0 a 20000.0 | Límite superior de sigma para la extensión - solo extiende sigmas por debajo de este valor (valor por defecto: -1.0, que significa infinito) |
+| `terminar_en_sigma` | FLOAT | Sí | 0.0 a 20000.0 | Límite inferior de sigma para la extensión - solo extiende sigmas por encima de este valor (valor por defecto: 12.0) |
+| `espaciado` | COMBO | Sí | "linear"<br>"cosine"<br>"sine" | El método de interpolación para espaciar los valores sigma intermedios |
 
 **Nota:** El nodo solo inserta sigmas intermedios entre pares sigma existentes donde tanto el sigma actual es menor o igual a `start_at_sigma` como mayor o igual a `end_at_sigma`. Cuando `start_at_sigma` se establece en -1.0, se trata como infinito, lo que significa que solo aplica el límite inferior `end_at_sigma`.
 

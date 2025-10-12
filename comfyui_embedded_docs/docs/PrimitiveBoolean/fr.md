@@ -6,7 +6,7 @@ Le nœud Boolean fournit un moyen simple de transmettre des valeurs booléennes 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `value` | BOOLEAN | Oui | true<br>false | La valeur booléenne à transmettre à travers le nœud |
+| `valeur` | BOOLEAN | Oui | true<br>false | La valeur booléenne à transmettre à travers le nœud |
 
 ## Sorties
 

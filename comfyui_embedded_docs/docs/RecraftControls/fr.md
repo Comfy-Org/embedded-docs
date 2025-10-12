@@ -6,8 +6,8 @@ Crée des contrôles Recraft pour personnaliser la génération Recraft. Ce nœu
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `colors` | COLOR | Non | - | Paramètres de couleur pour les éléments principaux |
-| `background_color` | COLOR | Non | - | Paramètre de couleur d'arrière-plan |
+| `couleurs` | COLOR | Non | - | Paramètres de couleur pour les éléments principaux |
+| `couleur_de_fond` | COLOR | Non | - | Paramètre de couleur d'arrière-plan |
 
 ## Sorties
 

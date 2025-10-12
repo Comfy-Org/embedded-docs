@@ -6,9 +6,9 @@ El nodo BetaSamplingScheduler genera una secuencia de niveles de ruido (sigmas) 
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Por Defecto | Rango | Descripción |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Requerido | - | - | El modelo utilizado para el muestreo, que proporciona el objeto de muestreo del modelo |
-| `steps` | INT | Requerido | 20 | 1-10000 | El número de pasos de muestreo para los cuales generar sigmas |
-| `alpha` | FLOAT | Requerido | 0.6 | 0.0-50.0 | Parámetro alfa para el programador beta, que controla la curva de programación |
+| `modelo` | MODEL | Requerido | - | - | El modelo utilizado para el muestreo, que proporciona el objeto de muestreo del modelo |
+| `pasos` | INT | Requerido | 20 | 1-10000 | El número de pasos de muestreo para los cuales generar sigmas |
+| `alfa` | FLOAT | Requerido | 0.6 | 0.0-50.0 | Parámetro alfa para el programador beta, que controla la curva de programación |
 | `beta` | FLOAT | Requerido | 0.6 | 0.0-50.0 | Parámetro beta para el programador beta, que controla la curva de programación |
 
 ## Salidas

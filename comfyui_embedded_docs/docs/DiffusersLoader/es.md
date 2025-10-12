@@ -6,7 +6,7 @@ El nodo DiffusersLoader carga modelos preentrenados desde el formato diffusers. 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model_path` | STRING | Sí | Múltiples opciones disponibles<br>(autocompletado desde carpetas diffusers) | La ruta al directorio del modelo diffusers a cargar. El nodo escanea automáticamente en busca de modelos diffusers válidos en las carpetas diffusers configuradas y lista las opciones disponibles. |
+| `ruta_del_modelo` | STRING | Sí | Múltiples opciones disponibles<br>(autocompletado desde carpetas diffusers) | La ruta al directorio del modelo diffusers a cargar. El nodo escanea automáticamente en busca de modelos diffusers válidos en las carpetas diffusers configuradas y lista las opciones disponibles. |
 
 ## Salidas
 

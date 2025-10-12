@@ -6,9 +6,9 @@ Kling Virtual Try Onノード。人物画像と衣服画像を入力して、人
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `human_image` | IMAGE | はい | - | 衣服を試着する人物画像 |
-| `cloth_image` | IMAGE | はい | - | 人物に試着する衣服画像 |
-| `model_name` | STRING | はい | `"kolors-virtual-try-on-v1"` | 使用する仮想試着モデル（デフォルト: "kolors-virtual-try-on-v1"） |
+| `人物画像` | IMAGE | はい | - | 衣服を試着する人物画像 |
+| `服画像` | IMAGE | はい | - | 人物に試着する衣服画像 |
+| `モデル名` | STRING | はい | `"kolors-virtual-try-on-v1"` | 使用する仮想試着モデル（デフォルト: "kolors-virtual-try-on-v1"） |
 
 ## 出力
 

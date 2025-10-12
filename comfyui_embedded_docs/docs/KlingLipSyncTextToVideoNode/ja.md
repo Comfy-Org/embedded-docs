@@ -6,10 +6,10 @@ Kling Lip Sync Text to Videoノードは、ビデオファイル内の口の動�
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | はい | - | リップシンク用の入力ビデオファイル |
-| `text` | STRING | はい | - | リップシンクビデオ生成用のテキスト内容。modeがtext2videoの場合に必須です。最大長は120文字です。 |
-| `voice` | COMBO | いいえ | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | リップシンクオーディオ用の音声選択（デフォルト: "Melody"） |
-| `voice_speed` | FLOAT | いいえ | 0.8-2.0 | 話速。有効範囲: 0.8〜2.0、小数点第1位まで正確。（デフォルト: 1） |
+| `動画` | VIDEO | はい | - | リップシンク用の入力ビデオファイル |
+| `テキスト` | STRING | はい | - | リップシンクビデオ生成用のテキスト内容。modeがtext2videoの場合に必須です。最大長は120文字です。 |
+| `音声` | COMBO | いいえ | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | リップシンクオーディオ用の音声選択（デフォルト: "Melody"） |
+| `話速` | FLOAT | いいえ | 0.8-2.0 | 話速。有効範囲: 0.8〜2.0、小数点第1位まで正確。（デフォルト: 1） |
 
 **ビデオ要件:**
 - ビデオファイルは100MBを超えないこと
@@ -20,6 +20,6 @@ Kling Lip Sync Text to Videoノードは、ビデオファイル内の口の動�
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | リップシンクされたオーディオ付きの生成ビデオ |
-| `video_id` | STRING | 生成されたビデオの一意の識別子 |
+| `動画ID` | VIDEO | リップシンクされたオーディオ付きの生成ビデオ |
+| `再生時間` | STRING | 生成されたビデオの一意の識別子 |
 | `duration` | STRING | 生成されたビデオの長さ情報 |

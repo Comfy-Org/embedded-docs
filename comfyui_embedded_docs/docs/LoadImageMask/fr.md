@@ -6,7 +6,7 @@ Le nœud LoadImageMask est conçu pour charger des images et leurs masques assoc
 | Paramètre | Type de Donnée | Description |
 |-----------|-------------|-------------|
 | `image`   | COMBO[STRING] | Le paramètre 'image' spécifie le fichier image à charger et à traiter. Il joue un rôle crucial dans la détermination de la sortie en fournissant l'image source pour l'extraction du masque et la conversion de format. |
-| `channel` | COMBO[STRING] | Le paramètre 'channel' spécifie le canal de couleur de l'image qui sera utilisé pour générer le masque. Cela permet une flexibilité dans la création de masques basés sur différents canaux de couleur, améliorant l'utilité du nœud dans divers scénarios de traitement d'image. |
+| `canal` | COMBO[STRING] | Le paramètre 'channel' spécifie le canal de couleur de l'image qui sera utilisé pour générer le masque. Cela permet une flexibilité dans la création de masques basés sur différents canaux de couleur, améliorant l'utilité du nœud dans divers scénarios de traitement d'image. |
 
 ## Sorties
 

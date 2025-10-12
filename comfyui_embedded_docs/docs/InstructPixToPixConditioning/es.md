@@ -6,10 +6,10 @@ El nodo InstructPixToPixConditioning prepara datos de condicionamiento para la e
 
 | Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Datos de condicionamiento positivo que contienen prompts de texto y configuraciones para las características deseadas de la imagen |
-| `negative` | CONDITIONING | Sí | - | Datos de condicionamiento negativo que contienen prompts de texto y configuraciones para las características no deseadas de la imagen |
+| `positivo` | CONDITIONING | Sí | - | Datos de condicionamiento positivo que contienen prompts de texto y configuraciones para las características deseadas de la imagen |
+| `negativo` | CONDITIONING | Sí | - | Datos de condicionamiento negativo que contienen prompts de texto y configuraciones para las características no deseadas de la imagen |
 | `vae` | VAE | Sí | - | Modelo VAE utilizado para codificar las imágenes de entrada en representaciones latentes |
-| `pixels` | IMAGE | Sí | - | Imagen de entrada que será procesada y codificada en el espacio latente |
+| `píxeles` | IMAGE | Sí | - | Imagen de entrada que será procesada y codificada en el espacio latente |
 
 **Nota:** Las dimensiones de la imagen de entrada se ajustan automáticamente recortando al múltiplo más cercano de 8 píxeles tanto en ancho como en alto para garantizar compatibilidad con el proceso de codificación VAE.
 
@@ -17,6 +17,6 @@ El nodo InstructPixToPixConditioning prepara datos de condicionamiento para la e
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Datos de condicionamiento positivo con representación latente de imagen adjunta |
-| `negative` | CONDITIONING | Datos de condicionamiento negativo con representación latente de imagen adjunta |
+| `negativo` | CONDITIONING | Datos de condicionamiento positivo con representación latente de imagen adjunta |
+| `latente` | CONDITIONING | Datos de condicionamiento negativo con representación latente de imagen adjunta |
 | `latent` | LATENT | Tensor latente vacío con las mismas dimensiones que la imagen codificada |

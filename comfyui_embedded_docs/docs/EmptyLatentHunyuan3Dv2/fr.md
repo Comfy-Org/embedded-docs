@@ -6,8 +6,8 @@ Le nœud EmptyLatentHunyuan3Dv2 crée des tenseurs latents vides spécifiquement
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `resolution` | INT | Oui | 1 - 8192 | La dimension de résolution pour l'espace latent (par défaut : 3072) |
-| `batch_size` | INT | Oui | 1 - 4096 | Le nombre d'images latentes dans le lot (par défaut : 1) |
+| `résolution` | INT | Oui | 1 - 8192 | La dimension de résolution pour l'espace latent (par défaut : 3072) |
+| `taille_du_lot` | INT | Oui | 1 - 4096 | Le nombre d'images latentes dans le lot (par défaut : 1) |
 
 ## Sorties
 

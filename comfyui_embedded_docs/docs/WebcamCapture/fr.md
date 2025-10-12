@@ -7,9 +7,9 @@ Le nœud WebcamCapture capture des images à partir d'un périphérique webcam e
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | WEBCAM | Oui | - | La source d'entrée webcam pour capturer les images |
-| `width` | INT | Non | 0 à MAX_RESOLUTION | La largeur souhaitée pour l'image capturée (par défaut : 0, utilise la résolution native de la webcam) |
-| `height` | INT | Non | 0 à MAX_RESOLUTION | La hauteur souhaitée pour l'image capturée (par défaut : 0, utilise la résolution native de la webcam) |
-| `capture_on_queue` | BOOLEAN | Non | - | Lorsqu'activé, capture une nouvelle image à chaque fois que la file d'attente du workflow est traitée (par défaut : True) |
+| `largeur` | INT | Non | 0 à MAX_RESOLUTION | La largeur souhaitée pour l'image capturée (par défaut : 0, utilise la résolution native de la webcam) |
+| `hauteur` | INT | Non | 0 à MAX_RESOLUTION | La hauteur souhaitée pour l'image capturée (par défaut : 0, utilise la résolution native de la webcam) |
+| `capture_en_file_d'attente` | BOOLEAN | Non | - | Lorsqu'activé, capture une nouvelle image à chaque fois que la file d'attente du workflow est traitée (par défaut : True) |
 
 **Note :** Lorsque `width` et `height` sont tous deux définis sur 0, le nœud utilise la résolution native de la webcam. Définir l'une des dimensions sur une valeur non nulle redimensionnera l'image capturée en conséquence.
 

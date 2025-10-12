@@ -6,10 +6,10 @@ Este nodo crea fotogramas clave de enlace a partir de una lista de valores de fu
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `floats_strength` | FLOATS | Sí | -1 a ∞ | Un único valor flotante o una lista de valores flotantes que representan los valores de fuerza para los fotogramas clave (valor por defecto: -1) |
-| `start_percent` | FLOAT | Sí | 0.0 a 1.0 | La posición porcentual inicial para el primer fotograma clave en la línea de tiempo (valor por defecto: 0.0) |
-| `end_percent` | FLOAT | Sí | 0.0 a 1.0 | La posición porcentual final para el último fotograma clave en la línea de tiempo (valor por defecto: 1.0) |
-| `print_keyframes` | BOOLEAN | Sí | True/False | Cuando está habilitado, imprime la información de los fotogramas clave generados en la consola (valor por defecto: False) |
+| `fuerza_flotantes` | FLOATS | Sí | -1 a ∞ | Un único valor flotante o una lista de valores flotantes que representan los valores de fuerza para los fotogramas clave (valor por defecto: -1) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 a 1.0 | La posición porcentual inicial para el primer fotograma clave en la línea de tiempo (valor por defecto: 0.0) |
+| `porcentaje_final` | FLOAT | Sí | 0.0 a 1.0 | La posición porcentual final para el último fotograma clave en la línea de tiempo (valor por defecto: 1.0) |
+| `imprimir_keyframes` | BOOLEAN | Sí | True/False | Cuando está habilitado, imprime la información de los fotogramas clave generados en la consola (valor por defecto: False) |
 | `prev_hook_kf` | HOOK_KEYFRAMES | No | - | Un grupo existente de fotogramas clave de enlace al que agregar los nuevos fotogramas clave, o crea un nuevo grupo si no se proporciona |
 
 **Nota:** El parámetro `floats_strength` acepta un único valor flotante o una lista iterable de flotantes. Los fotogramas clave se distribuyen linealmente entre `start_percent` y `end_percent` según la cantidad de valores de fuerza proporcionados.

@@ -6,7 +6,7 @@ Ce nœud est spécialisé dans le chargement de checkpoints spécifiquement pour
 
 | Champ      | Data Type | Description                                                                       |
 |------------|-------------|-----------------------------------------------------------------------------------|
-| `ckpt_name`| COMBO[STRING] | Spécifie le nom du checkpoint à charger, crucial pour identifier et récupérer le fichier de checkpoint correct à partir d'une liste prédéfinie. |
+| `nom_ckpt`| COMBO[STRING] | Spécifie le nom du checkpoint à charger, crucial pour identifier et récupérer le fichier de checkpoint correct à partir d'une liste prédéfinie. |
 
 ## Sorties
 

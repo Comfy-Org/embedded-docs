@@ -6,11 +6,11 @@ El nodo ThresholdMask convierte una máscara en una máscara binaria aplicando u
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `mask` | MASK | Sí | - | La máscara de entrada a procesar |
-| `value` | FLOAT | Sí | 0.0 - 1.0 | El valor de umbral para la binarización (valor por defecto: 0.5) |
+| `máscara` | MASK | Sí | - | La máscara de entrada a procesar |
+| `valor` | FLOAT | Sí | 0.0 - 1.0 | El valor de umbral para la binarización (valor por defecto: 0.5) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `mask` | MASK | La máscara binaria resultante después del umbralizado |
+| `máscara` | MASK | La máscara binaria resultante después del umbralizado |

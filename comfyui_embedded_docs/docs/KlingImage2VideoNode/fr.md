@@ -19,6 +19,6 @@ Le nœud Kling Image to Video génère du contenu vidéo à partir d'une image d
 
 | Nom de la sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La sortie vidéo générée. |
-| `video_id` | STRING | Identifiant unique pour la vidéo générée. |
+| `video_id` | VIDEO | La sortie vidéo générée. |
+| `duration` | STRING | Identifiant unique pour la vidéo générée. |
 | `duration` | STRING | Informations sur la durée de la vidéo générée. |

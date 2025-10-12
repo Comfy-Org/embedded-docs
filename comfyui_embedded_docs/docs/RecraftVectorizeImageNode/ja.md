@@ -6,7 +6,7 @@
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | はい | - | SVG形式に変換する入力画像 |
+| `画像` | IMAGE | はい | - | SVG形式に変換する入力画像 |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | いいえ | - | APIアクセスのための認証トークン |
 | `comfy_api_key` | API_KEY_COMFY_ORG | いいえ | - | Comfy.orgサービスのためのAPIキー |
 

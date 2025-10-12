@@ -6,13 +6,13 @@ El nodo PikaFrames v2.2 genera videos combinando tu primer y último fotograma. 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image_start` | IMAGE | Sí | - | La primera imagen a combinar. |
-| `image_end` | IMAGE | Sí | - | La última imagen a combinar. |
-| `prompt_text` | STRING | Sí | - | Prompt de texto que describe el contenido de video deseado. |
-| `negative_prompt` | STRING | Sí | - | Texto que describe qué evitar en el video. |
-| `seed` | INT | Sí | - | Valor de semilla aleatoria para consistencia en la generación. |
-| `resolution` | STRING | Sí | - | Resolución del video de salida. |
-| `duration` | INT | Sí | - | Duración del video generado. |
+| `imagen_inicial` | IMAGE | Sí | - | La primera imagen a combinar. |
+| `imagen_final` | IMAGE | Sí | - | La última imagen a combinar. |
+| `texto_de_prompt` | STRING | Sí | - | Prompt de texto que describe el contenido de video deseado. |
+| `prompt_negativo` | STRING | Sí | - | Texto que describe qué evitar en el video. |
+| `semilla` | INT | Sí | - | Valor de semilla aleatoria para consistencia en la generación. |
+| `resolución` | STRING | Sí | - | Resolución del video de salida. |
+| `duración` | INT | Sí | - | Duración del video generado. |
 
 ## Salidas
 

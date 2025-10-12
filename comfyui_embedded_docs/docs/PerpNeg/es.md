@@ -6,14 +6,14 @@ El nodo PerpNeg aplica guía negativa perpendicular al proceso de muestreo de un
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que aplicar la guía negativa perpendicular |
-| `empty_conditioning` | CONDITIONING | Sí | - | Condicionamiento vacío utilizado para los cálculos de guía negativa |
-| `neg_scale` | FLOAT | No | 0.0 - 100.0 | Factor de escala para la guía negativa (por defecto: 1.0) |
+| `modelo` | MODEL | Sí | - | El modelo al que aplicar la guía negativa perpendicular |
+| `condicionamiento_vacío` | CONDITIONING | Sí | - | Condicionamiento vacío utilizado para los cálculos de guía negativa |
+| `escala_neg` | FLOAT | No | 0.0 - 100.0 | Factor de escala para la guía negativa (por defecto: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con la guía negativa perpendicular aplicada |
+| `modelo` | MODEL | El modelo modificado con la guía negativa perpendicular aplicada |
 
 **Nota**: Este nodo está obsoleto y ha sido reemplazado por PerpNegGuider. Está marcado como experimental y no debe utilizarse en flujos de trabajo de producción.

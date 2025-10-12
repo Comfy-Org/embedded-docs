@@ -6,11 +6,11 @@ Le nœud Differential Diffusion modifie le processus de débruitage en appliquan
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion à modifier |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion à modifier |
 | `strength` | FLOAT | Non | 0.0 - 1.0 | Contrôle la force de mélange entre le masque de débruitage original et le masque de seuil binaire (par défaut : 1.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle de diffusion modifié avec la fonction de masque de débruitage mise à jour |
+| `modèle` | MODEL | Le modèle de diffusion modifié avec la fonction de masque de débruitage mise à jour |

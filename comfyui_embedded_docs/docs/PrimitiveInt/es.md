@@ -6,7 +6,7 @@ El nodo PrimitiveInt proporciona una forma sencilla de trabajar con valores ente
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `value` | INT | Sí | -9223372036854775807 a 9223372036854775807 | El valor entero a devolver |
+| `valor` | INT | Sí | -9223372036854775807 a 9223372036854775807 | El valor entero a devolver |
 
 ## Salidas
 

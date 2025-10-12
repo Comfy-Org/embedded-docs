@@ -6,8 +6,8 @@ Le nœud LatentUpscaleBy est conçu pour agrandir les représentations latentes 
 | Paramètre     | Type de Donnée | Description |
 |---------------|--------------|-------------|
 | `samples`     | `LATENT`     | La représentation latente des images à agrandir. Ce paramètre est crucial pour déterminer les données d'entrée qui subiront le processus d'agrandissement. |
-| `upscale_method` | COMBO[STRING] | Spécifie la méthode utilisée pour agrandir les échantillons latents. Le choix de la méthode peut affecter de manière significative la qualité et les caractéristiques de la sortie agrandie. |
-| `scale_by`    | `FLOAT`      | Détermine le facteur par lequel les échantillons latents sont agrandis. Ce paramètre influence directement la résolution de la sortie, permettant un contrôle précis du processus d'agrandissement. |
+| `méthode_de_mise_à_l'échelle` | COMBO[STRING] | Spécifie la méthode utilisée pour agrandir les échantillons latents. Le choix de la méthode peut affecter de manière significative la qualité et les caractéristiques de la sortie agrandie. |
+| `mise_à_l'échelle_par`    | `FLOAT`      | Détermine le facteur par lequel les échantillons latents sont agrandis. Ce paramètre influence directement la résolution de la sortie, permettant un contrôle précis du processus d'agrandissement. |
 
 ## Sorties
 

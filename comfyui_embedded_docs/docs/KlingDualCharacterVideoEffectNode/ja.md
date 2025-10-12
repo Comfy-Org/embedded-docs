@@ -17,5 +17,5 @@ Kling Dual Character Video Effect Nodeは、選択されたシーンに基づい
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | デュアルキャラクター効果が適用された生成動画 |
+| `duration` | VIDEO | デュアルキャラクター効果が適用された生成動画 |
 | `duration` | STRING | 生成された動画の長さ情報 |

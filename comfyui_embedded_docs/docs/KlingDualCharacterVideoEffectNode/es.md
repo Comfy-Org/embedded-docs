@@ -6,16 +6,16 @@ El nodo Kling Dual Character Video Effect crea videos con efectos especiales bas
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image_left` | IMAGE | Sí | - | Imagen del lado izquierdo |
-| `image_right` | IMAGE | Sí | - | Imagen del lado derecho |
+| `imagen_izquierda` | IMAGE | Sí | - | Imagen del lado izquierdo |
+| `imagen_derecha` | IMAGE | Sí | - | Imagen del lado derecho |
 | `effect_scene` | COMBO | Sí | Múltiples opciones disponibles | El tipo de escena de efecto especial a aplicar en la generación del video |
 | `model_name` | COMBO | No | Múltiples opciones disponibles | El modelo a utilizar para los efectos de personaje (valor por defecto: "kling-v1") |
-| `mode` | COMBO | No | Múltiples opciones disponibles | El modo de generación de video (valor por defecto: "std") |
-| `duration` | COMBO | Sí | Múltiples opciones disponibles | La duración del video generado |
+| `modo` | COMBO | No | Múltiples opciones disponibles | El modo de generación de video (valor por defecto: "std") |
+| `duración` | COMBO | Sí | Múltiples opciones disponibles | La duración del video generado |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `output` | VIDEO | El video generado con efectos de doble personaje |
-| `duration` | STRING | La información de duración del video generado |
+| `duración` | VIDEO | El video generado con efectos de doble personaje |
+| `duración` | STRING | La información de duración del video generado |

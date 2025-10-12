@@ -6,12 +6,12 @@ El nodo PerpNegGuider crea un sistema de guía para controlar la generación de 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo a utilizar para la generación de guía |
-| `positive` | CONDITIONING | Sí | - | El condicionamiento positivo que guía la generación hacia el contenido deseado |
-| `negative` | CONDITIONING | Sí | - | El condicionamiento negativo que guía la generación lejos del contenido no deseado |
-| `empty_conditioning` | CONDITIONING | Sí | - | El condicionamiento vacío o neutral utilizado como referencia base |
+| `modelo` | MODEL | Sí | - | El modelo a utilizar para la generación de guía |
+| `positivo` | CONDITIONING | Sí | - | El condicionamiento positivo que guía la generación hacia el contenido deseado |
+| `negativo` | CONDITIONING | Sí | - | El condicionamiento negativo que guía la generación lejos del contenido no deseado |
+| `condicionamiento_vacío` | CONDITIONING | Sí | - | El condicionamiento vacío o neutral utilizado como referencia base |
 | `cfg` | FLOAT | No | 0.0 - 100.0 | La escala de guía libre de clasificador que controla qué tan fuerte influye el condicionamiento en la generación (valor por defecto: 8.0) |
-| `neg_scale` | FLOAT | No | 0.0 - 100.0 | El factor de escala negativa que ajusta la fuerza del condicionamiento negativo (valor por defecto: 1.0) |
+| `escala_neg` | FLOAT | No | 0.0 - 100.0 | El factor de escala negativa que ajusta la fuerza del condicionamiento negativo (valor por defecto: 1.0) |
 
 ## Salidas
 

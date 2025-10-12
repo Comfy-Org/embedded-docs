@@ -6,11 +6,11 @@ Le nœud SetUnionControlNetType vous permet de spécifier le type de réseau de 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `control_net` | CONTROL_NET | Oui | - | Le réseau de contrôle à modifier avec un nouveau paramètre de type |
+| `réseau_de_contrôle` | CONTROL_NET | Oui | - | Le réseau de contrôle à modifier avec un nouveau paramètre de type |
 | `type` | STRING | Oui | `"auto"`<br>Toutes les clés UNION_CONTROLNET_TYPES disponibles | Le type de réseau de contrôle à appliquer. Utilisez "auto" pour la détection automatique du type ou sélectionnez un type de réseau de contrôle spécifique parmi les options disponibles |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `control_net` | CONTROL_NET | Le réseau de contrôle modifié avec le paramètre de type spécifié appliqué |
+| `réseau_de_contrôle` | CONTROL_NET | Le réseau de contrôle modifié avec le paramètre de type spécifié appliqué |

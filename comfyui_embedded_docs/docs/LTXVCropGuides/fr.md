@@ -7,13 +7,13 @@ Le nœud LTXVCropGuides traite les entrées de conditionnement et latentes pour 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `positive` | CONDITIONING | Oui | - | L'entrée de conditionnement positive contenant les informations de guidage pour la génération |
-| `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négative contenant les informations de guidage sur ce qu'il faut éviter dans la génération |
+| `négatif` | CONDITIONING | Oui | - | L'entrée de conditionnement négative contenant les informations de guidage sur ce qu'il faut éviter dans la génération |
 | `latent` | LATENT | Oui | - | La représentation latente contenant les échantillons d'image et les données du masque de bruit |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif traité avec les indices de keyframe effacés |
-| `negative` | CONDITIONING | Le conditionnement négatif traité avec les indices de keyframe effacés |
+| `négatif` | CONDITIONING | Le conditionnement positif traité avec les indices de keyframe effacés |
+| `latent` | CONDITIONING | Le conditionnement négatif traité avec les indices de keyframe effacés |
 | `latent` | LATENT | La représentation latente recadrée avec les échantillons et le masque de bruit ajustés |

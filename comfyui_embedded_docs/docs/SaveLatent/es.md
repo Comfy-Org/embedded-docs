@@ -6,8 +6,8 @@ El nodo SaveLatent guarda tensores latentes en el disco como archivos para su us
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Sí | - | Las muestras latentes que se guardarán en el disco |
-| `filename_prefix` | STRING | No | - | El prefijo para el nombre del archivo de salida (por defecto: "latents/ComfyUI") |
+| `muestras` | LATENT | Sí | - | Las muestras latentes que se guardarán en el disco |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el nombre del archivo de salida (por defecto: "latents/ComfyUI") |
 | `prompt` | PROMPT | No | - | Información del prompt para incluir en los metadatos (parámetro oculto) |
 | `extra_pnginfo` | EXTRA_PNGINFO | No | - | Información PNG adicional para incluir en los metadatos (parámetro oculto) |
 

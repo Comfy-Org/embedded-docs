@@ -6,11 +6,11 @@ SetUnionControlNetType 节点允许您指定用于条件控制的控制网络类
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `control_net` | CONTROL_NET | 是 | - | 需要设置新类型参数的控制网络 |
-| `type` | STRING | 是 | `"auto"`<br>所有可用的 UNION_CONTROLNET_TYPES 键值 | 要应用的控制网络类型。使用 "auto" 进行自动类型检测，或从可用选项中选择特定的控制网络类型 |
+| `ControlNet` | CONTROL_NET | 是 | - | 需要设置新类型参数的控制网络 |
+| `类型` | STRING | 是 | `"auto"`<br>所有可用的 UNION_CONTROLNET_TYPES 键值 | 要应用的控制网络类型。使用 "auto" 进行自动类型检测，或从可用选项中选择特定的控制网络类型 |
 
 ## 输出结果
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `control_net` | CONTROL_NET | 应用了指定类型设置的修改后控制网络 |
+| `ControlNet` | CONTROL_NET | 应用了指定类型设置的修改后控制网络 |

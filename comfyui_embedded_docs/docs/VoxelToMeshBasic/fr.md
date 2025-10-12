@@ -7,7 +7,7 @@ Le nœud VoxelToMeshBasic convertit des données voxel 3D en géométrie maillé
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `voxel` | VOXEL | Oui | - | Les données voxel 3D à convertir en maillage |
-| `threshold` | FLOAT | Oui | -1.0 à 1.0 | La valeur de seuil utilisée pour déterminer quels voxels font partie de la surface du maillage (par défaut : 0.6) |
+| `seuil` | FLOAT | Oui | -1.0 à 1.0 | La valeur de seuil utilisée pour déterminer quels voxels font partie de la surface du maillage (par défaut : 0.6) |
 
 ## Sorties
 

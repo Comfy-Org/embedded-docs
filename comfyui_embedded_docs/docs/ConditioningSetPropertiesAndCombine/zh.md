@@ -8,13 +8,13 @@ ConditioningSetPropertiesAndCombine 节点通过将新条件输入中的属性�
 
 | 参数 | 数据类型 | 输入类型 | 默认值 | 范围 | 描述 |
 |-----------|-----------|------------|---------|-------|-------------|
-| `cond` | CONDITIONING | 必填 | - | - | 待修改的原始条件数据 |
-| `cond_NEW` | CONDITIONING | 必填 | - | - | 提供要应用属性的新条件数据 |
-| `strength` | FLOAT | 必填 | 1.0 | 0.0 - 10.0 | 控制新条件属性的强度 |
-| `set_cond_area` | STRING | 必填 | default | ["default", "mask bounds"] | 决定条件区域的应用方式 |
-| `mask` | MASK | 可选 | - | - | 用于定义特定条件区域的可选遮罩 |
-| `hooks` | HOOKS | 可选 | - | - | 用于自定义处理的可选钩子函数 |
-| `timesteps` | TIMESTEPS_RANGE | 可选 | - | - | 用于控制条件应用时机的可选时间步范围 |
+| `条件` | CONDITIONING | 必填 | - | - | 待修改的原始条件数据 |
+| `新条件` | CONDITIONING | 必填 | - | - | 提供要应用属性的新条件数据 |
+| `强度` | FLOAT | 必填 | 1.0 | 0.0 - 10.0 | 控制新条件属性的强度 |
+| `设置条件区域` | STRING | 必填 | default | ["default", "mask bounds"] | 决定条件区域的应用方式 |
+| `遮罩` | MASK | 可选 | - | - | 用于定义特定条件区域的可选遮罩 |
+| `约束` | HOOKS | 可选 | - | - | 用于自定义处理的可选钩子函数 |
+| `间隔` | TIMESTEPS_RANGE | 可选 | - | - | 用于控制条件应用时机的可选时间步范围 |
 
 **注意：** 当提供 `mask` 时，`set_cond_area` 参数可以使用 "mask bounds" 将条件应用限制在遮罩区域内。
 

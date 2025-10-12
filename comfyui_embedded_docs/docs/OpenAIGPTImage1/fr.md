@@ -8,9 +8,9 @@ Génère des images de manière synchrone via le point de terminaison GPT Image 
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invitation textuelle pour GPT Image 1 (par défaut : "") |
 | `seed` | INT | Non | 0 à 2147483647 | Graine aléatoire pour la génération (par défaut : 0) - pas encore implémentée dans le backend |
-| `quality` | COMBO | Non | "low"<br>"medium"<br>"high" | Qualité de l'image, affecte le coût et le temps de génération (par défaut : "low") |
-| `background` | COMBO | Non | "opaque"<br>"transparent" | Retourne l'image avec ou sans arrière-plan (par défaut : "opaque") |
-| `size` | COMBO | Non | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024" | Taille de l'image (par défaut : "auto") |
+| `qualité` | COMBO | Non | "low"<br>"medium"<br>"high" | Qualité de l'image, affecte le coût et le temps de génération (par défaut : "low") |
+| `arrière-plan` | COMBO | Non | "opaque"<br>"transparent" | Retourne l'image avec ou sans arrière-plan (par défaut : "opaque") |
+| `taille` | COMBO | Non | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024" | Taille de l'image (par défaut : "auto") |
 | `n` | INT | Non | 1 à 8 | Nombre d'images à générer (par défaut : 1) |
 | `image` | IMAGE | Non | - | Image de référence optionnelle pour l'édition d'image (par défaut : Aucune) |
 | `mask` | MASK | Non | - | Masque optionnel pour l'inpainting (les zones blanches seront remplacées) (par défaut : Aucune) |

@@ -8,13 +8,13 @@ StableCascade_SuperResolutionControlnet 节点为 Stable Cascade 超分辨率处
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 用于超分辨率处理的输入图像 |
+| `图像` | IMAGE | 是 | - | 用于超分辨率处理的输入图像 |
 | `vae` | VAE | 是 | - | 用于编码输入图像的 VAE 模型 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | 适用于控制网络输入的编码图像表示 |
-| `stage_c` | LATENT | 用于 Stable Cascade 处理 C 阶段的占位符潜在表示 |
+| `阶段C` | IMAGE | 适用于控制网络输入的编码图像表示 |
+| `阶段B` | LATENT | 用于 Stable Cascade 处理 C 阶段的占位符潜在表示 |
 | `stage_b` | LATENT | 用于 Stable Cascade 处理 B 阶段的占位符潜在表示 |

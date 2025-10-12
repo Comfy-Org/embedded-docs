@@ -5,7 +5,7 @@ Ce nœud est conçu pour agrandir les images en utilisant un modèle d'agrandiss
 
 | Paramètre         | Comfy dtype       | Description                                                                 |
 |-------------------|-------------------|----------------------------------------------------------------------------|
-| `upscale_model`   | `UPSCALE_MODEL`   | Le modèle d'agrandissement à utiliser pour agrandir l'image. Il est crucial pour définir l'algorithme d'agrandissement et ses paramètres. |
+| `modèle_d'agrandissement`   | `UPSCALE_MODEL`   | Le modèle d'agrandissement à utiliser pour agrandir l'image. Il est crucial pour définir l'algorithme d'agrandissement et ses paramètres. |
 | `image`           | `IMAGE`           | L'image à agrandir. Cette entrée est essentielle pour déterminer le contenu source qui subira le processus d'agrandissement. |
 
 ## Sorties

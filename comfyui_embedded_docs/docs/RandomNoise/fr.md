@@ -6,7 +6,7 @@ Le nœud RandomNoise génère des motifs de bruit aléatoire basés sur une vale
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `noise_seed` | INT | Oui | 0 à 18446744073709551615 | La valeur de seed utilisée pour générer le motif de bruit aléatoire (par défaut : 0). La même seed produira toujours la même sortie de bruit. |
+| `graine_de_bruit` | INT | Oui | 0 à 18446744073709551615 | La valeur de seed utilisée pour générer le motif de bruit aléatoire (par défaut : 0). La même seed produira toujours la même sortie de bruit. |
 
 ## Sorties
 

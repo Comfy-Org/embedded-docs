@@ -7,12 +7,12 @@ El nodo CosmosImageToVideoLatent crea representaciones latentes de video a parti
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar imágenes en el espacio latente |
-| `width` | INT | No | 16 a MAX_RESOLUTION | El ancho del video de salida en píxeles (predeterminado: 1280) |
-| `height` | INT | No | 16 a MAX_RESOLUTION | La altura del video de salida en píxeles (predeterminado: 704) |
-| `length` | INT | No | 1 a MAX_RESOLUTION | El número de fotogramas en la secuencia de video (predeterminado: 121) |
-| `batch_size` | INT | No | 1 a 4096 | El número de lotes latentes a generar (predeterminado: 1) |
-| `start_image` | IMAGE | No | - | Imagen opcional para codificar al inicio de la secuencia de video |
-| `end_image` | IMAGE | No | - | Imagen opcional para codificar al final de la secuencia de video |
+| `ancho` | INT | No | 16 a MAX_RESOLUTION | El ancho del video de salida en píxeles (predeterminado: 1280) |
+| `altura` | INT | No | 16 a MAX_RESOLUTION | La altura del video de salida en píxeles (predeterminado: 704) |
+| `longitud` | INT | No | 1 a MAX_RESOLUTION | El número de fotogramas en la secuencia de video (predeterminado: 121) |
+| `tamaño_lote` | INT | No | 1 a 4096 | El número de lotes latentes a generar (predeterminado: 1) |
+| `imagen_inicio` | IMAGE | No | - | Imagen opcional para codificar al inicio de la secuencia de video |
+| `imagen_final` | IMAGE | No | - | Imagen opcional para codificar al final de la secuencia de video |
 
 **Nota:** Cuando no se proporcionan ni `start_image` ni `end_image`, el nodo devuelve un latente en blanco sin ninguna máscara de ruido. Cuando se proporciona alguna imagen, las secciones correspondientes del latente se codifican y enmascaran en consecuencia.
 

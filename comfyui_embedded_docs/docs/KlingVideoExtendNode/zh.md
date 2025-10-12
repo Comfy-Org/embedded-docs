@@ -17,6 +17,6 @@ Kling 视频扩展节点允许您扩展由其他 Kling 节点创建的视频。�
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 由 Kling API 生成的扩展视频 |
-| `video_id` | STRING | 扩展视频的唯一标识符 |
+| `video_id` | VIDEO | 由 Kling API 生成的扩展视频 |
+| `duration` | STRING | 扩展视频的唯一标识符 |
 | `duration` | STRING | 扩展视频的时长 |

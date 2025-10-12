@@ -6,11 +6,11 @@ Le nœud VideoTriangleCFGGuidance applique un motif d'échelle triangulaire d'or
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle vidéo auquel appliquer l'orientation CFG triangulaire |
+| `modèle` | MODEL | Oui | - | Le modèle vidéo auquel appliquer l'orientation CFG triangulaire |
 | `min_cfg` | FLOAT | Oui | 0.0 - 100.0 | La valeur d'échelle CFG minimale pour le motif triangulaire (par défaut : 1.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec l'orientation CFG triangulaire appliquée |
+| `modèle` | MODEL | Le modèle modifié avec l'orientation CFG triangulaire appliquée |

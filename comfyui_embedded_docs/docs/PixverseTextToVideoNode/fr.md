@@ -7,13 +7,13 @@ Génère des vidéos basées sur l'invite et la taille de sortie. Ce nœud crée
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite pour la génération de vidéo (par défaut : "") |
-| `aspect_ratio` | COMBO | Oui | Options de PixverseAspectRatio | Ratio d'aspect pour la vidéo générée |
-| `quality` | COMBO | Oui | Options de PixverseQuality | Paramètre de qualité vidéo (par défaut : PixverseQuality.res_540p) |
-| `duration_seconds` | COMBO | Oui | Options de PixverseDuration | Durée de la vidéo générée en secondes |
-| `motion_mode` | COMBO | Oui | Options de PixverseMotionMode | Style de mouvement pour la génération de vidéo |
-| `seed` | INT | Oui | 0 à 2147483647 | Graine pour la génération de vidéo (par défaut : 0) |
-| `negative_prompt` | STRING | Non | - | Une description textuelle optionnelle des éléments indésirables sur une image (par défaut : "") |
-| `pixverse_template` | CUSTOM | Non | - | Un modèle optionnel pour influencer le style de génération, créé par le nœud PixVerse Template |
+| `rapport d'aspect` | COMBO | Oui | Options de PixverseAspectRatio | Ratio d'aspect pour la vidéo générée |
+| `qualité` | COMBO | Oui | Options de PixverseQuality | Paramètre de qualité vidéo (par défaut : PixverseQuality.res_540p) |
+| `durée (secondes)` | COMBO | Oui | Options de PixverseDuration | Durée de la vidéo générée en secondes |
+| `mode de mouvement` | COMBO | Oui | Options de PixverseMotionMode | Style de mouvement pour la génération de vidéo |
+| `graine` | INT | Oui | 0 à 2147483647 | Graine pour la génération de vidéo (par défaut : 0) |
+| `prompt négatif` | STRING | Non | - | Une description textuelle optionnelle des éléments indésirables sur une image (par défaut : "") |
+| `modèle PixVerse` | CUSTOM | Non | - | Un modèle optionnel pour influencer le style de génération, créé par le nœud PixVerse Template |
 
 **Note :** Lors de l'utilisation de la qualité 1080p, le mode de mouvement est automatiquement défini sur normal et la durée est limitée à 5 secondes. Pour les durées autres que 5 secondes, le mode de mouvement est également automatiquement défini sur normal.
 

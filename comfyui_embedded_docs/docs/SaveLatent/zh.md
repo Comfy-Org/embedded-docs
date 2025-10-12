@@ -8,8 +8,8 @@ SaveLatent 节点将潜在张量以文件形式保存到磁盘，供后续使用
 
 | 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | 是 | - | 需要保存到磁盘的潜在样本 |
-| `filename_prefix` | STRING | 否 | - | 输出文件名的前缀（默认："latents/ComfyUI"） |
+| `Latent` | LATENT | 是 | - | 需要保存到磁盘的潜在样本 |
+| `文件名前缀` | STRING | 否 | - | 输出文件名的前缀（默认："latents/ComfyUI"） |
 | `prompt` | PROMPT | 否 | - | 要包含在元数据中的提示信息（隐藏参数） |
 | `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 要包含在元数据中的额外PNG信息（隐藏参数） |
 

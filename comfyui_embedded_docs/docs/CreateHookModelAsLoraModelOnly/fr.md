@@ -6,9 +6,9 @@ Ce nœud crée un crochet qui applique un modèle LoRA (Low-Rank Adaptation) pou
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `ckpt_name` | STRING | Oui | Plusieurs options disponibles | Le fichier de point de contrôle à charger en tant que modèle LoRA. Les options disponibles dépendent du contenu du dossier des points de contrôle. |
-| `strength_model` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur d'intensité pour l'application du LoRA au composant modèle (par défaut : 1.0) |
-| `prev_hooks` | HOOKS | Non | - | Crochets précédents optionnels à enchaîner avec ce crochet |
+| `nom_ckpt` | STRING | Oui | Plusieurs options disponibles | Le fichier de point de contrôle à charger en tant que modèle LoRA. Les options disponibles dépendent du contenu du dossier des points de contrôle. |
+| `force_modele` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur d'intensité pour l'application du LoRA au composant modèle (par défaut : 1.0) |
+| `crochets_precedents` | HOOKS | Non | - | Crochets précédents optionnels à enchaîner avec ce crochet |
 
 ## Sorties
 

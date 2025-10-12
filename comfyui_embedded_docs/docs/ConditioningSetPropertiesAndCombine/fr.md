@@ -7,12 +7,12 @@ Le nœud ConditioningSetPropertiesAndCombine modifie les données de conditionne
 | Paramètre | Type de données | Type d'entrée | Défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
 | `cond` | CONDITIONING | Requis | - | - | Les données de conditionnement originales à modifier |
-| `cond_NEW` | CONDITIONING | Requis | - | - | Les nouvelles données de conditionnement fournissant les propriétés à appliquer |
-| `strength` | FLOAT | Requis | 1.0 | 0.0 - 10.0 | Contrôle l'intensité des nouvelles propriétés de conditionnement |
-| `set_cond_area` | STRING | Requis | default | ["default", "mask bounds"] | Détermine comment la zone de conditionnement est appliquée |
-| `mask` | MASK | Optionnel | - | - | Masque optionnel pour définir des zones spécifiques pour le conditionnement |
+| `cond_NOUVEAU` | CONDITIONING | Requis | - | - | Les nouvelles données de conditionnement fournissant les propriétés à appliquer |
+| `force` | FLOAT | Requis | 1.0 | 0.0 - 10.0 | Contrôle l'intensité des nouvelles propriétés de conditionnement |
+| `définir_zone_cond` | STRING | Requis | default | ["default", "mask bounds"] | Détermine comment la zone de conditionnement est appliquée |
+| `masque` | MASK | Optionnel | - | - | Masque optionnel pour définir des zones spécifiques pour le conditionnement |
 | `hooks` | HOOKS | Optionnel | - | - | Fonctions de hook optionnelles pour un traitement personnalisé |
-| `timesteps` | TIMESTEPS_RANGE | Optionnel | - | - | Plage de pas de temps optionnelle pour contrôler quand le conditionnement est appliqué |
+| `pas_de_temps` | TIMESTEPS_RANGE | Optionnel | - | - | Plage de pas de temps optionnelle pour contrôler quand le conditionnement est appliqué |
 
 **Note :** Lorsqu'un `mask` est fourni, le paramètre `set_cond_area` peut utiliser "mask bounds" pour limiter l'application du conditionnement aux régions masquées.
 

@@ -6,11 +6,11 @@ Le nœud Pikadditions vous permet d'ajouter n'importe quel objet ou image dans v
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Oui | - | La vidéo à laquelle ajouter une image. |
+| `vidéo` | VIDEO | Oui | - | La vidéo à laquelle ajouter une image. |
 | `image` | IMAGE | Oui | - | L'image à ajouter à la vidéo. |
-| `prompt_text` | STRING | Oui | - | Description textuelle de ce qu'il faut ajouter à la vidéo. |
-| `negative_prompt` | STRING | Oui | - | Description textuelle de ce qu'il faut éviter dans la vidéo. |
-| `seed` | INT | Oui | 0 à 4294967295 | Valeur de seed aléatoire pour des résultats reproductibles. |
+| `texte d'invite` | STRING | Oui | - | Description textuelle de ce qu'il faut ajouter à la vidéo. |
+| `invite négative` | STRING | Oui | - | Description textuelle de ce qu'il faut éviter dans la vidéo. |
+| `graine` | INT | Oui | 0 à 4294967295 | Valeur de seed aléatoire pour des résultats reproductibles. |
 
 ## Sorties
 

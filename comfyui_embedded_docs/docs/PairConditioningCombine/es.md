@@ -6,14 +6,14 @@ El nodo PairConditioningCombine combina dos pares de datos de condicionamiento (
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive_A` | CONDITIONING | Sí | - | Primera entrada de condicionamiento positivo |
-| `negative_A` | CONDITIONING | Sí | - | Primera entrada de condicionamiento negativo |
-| `positive_B` | CONDITIONING | Sí | - | Segunda entrada de condicionamiento positivo |
-| `negative_B` | CONDITIONING | Sí | - | Segunda entrada de condicionamiento negativo |
+| `positivo_A` | CONDITIONING | Sí | - | Primera entrada de condicionamiento positivo |
+| `negativo_A` | CONDITIONING | Sí | - | Primera entrada de condicionamiento negativo |
+| `positivo_B` | CONDITIONING | Sí | - | Segunda entrada de condicionamiento positivo |
+| `negativo_B` | CONDITIONING | Sí | - | Segunda entrada de condicionamiento negativo |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Salida de condicionamiento positivo combinado |
+| `negativo` | CONDITIONING | Salida de condicionamiento positivo combinado |
 | `negative` | CONDITIONING | Salida de condicionamiento negativo combinado |

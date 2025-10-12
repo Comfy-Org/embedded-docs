@@ -8,11 +8,11 @@ Hunyuan3Dv2Conditioning 节点处理 CLIP 视觉输出，为视频模型生成�
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision_output` | CLIP_VISION_OUTPUT | 是 | - | 来自 CLIP 视觉模型的输出，包含视觉嵌入表示 |
+| `clip视觉输出` | CLIP_VISION_OUTPUT | 是 | - | 来自 CLIP 视觉模型的输出，包含视觉嵌入表示 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 包含 CLIP 视觉嵌入表示的正条件数据 |
+| `反向` | CONDITIONING | 包含 CLIP 视觉嵌入表示的正条件数据 |
 | `negative` | CONDITIONING | 包含与正条件嵌入形状匹配的零值嵌入表示的负条件数据 |

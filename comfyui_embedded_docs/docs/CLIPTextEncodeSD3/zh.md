@@ -10,7 +10,7 @@ CLIPTextEncodeSD3 节点通过使用不同的 CLIP 模型对多个文本提示�
 | `clip_l` | STRING | 多行文本，动态提示 | - | - | 本地 CLIP 模型的文本输入 |
 | `clip_g` | STRING | 多行文本，动态提示 | - | - | 全局 CLIP 模型的文本输入 |
 | `t5xxl` | STRING | 多行文本，动态提示 | - | - | T5-XXL 模型的文本输入 |
-| `empty_padding` | COMBO | 选择 | - | ["none", "empty_prompt"] | 控制如何处理空文本输入 |
+| `空白填充` | COMBO | 选择 | - | ["none", "empty_prompt"] | 控制如何处理空文本输入 |
 
 **参数约束：**
 - 当 `empty_padding` 设置为 "none" 时，`clip_g`、`clip_l` 或 `t5xxl` 的空文本输入将产生空令牌列表而不是填充

@@ -6,7 +6,7 @@ SamplerEulerCFGppノードは、出力を生成するためのEuler CFG++サン�
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `version` | STRING | はい | `"regular"`<br>`"alternative"` | 使用するEuler CFG++サンプラーの実装バージョン |
+| `バージョン` | STRING | はい | `"regular"`<br>`"alternative"` | 使用するEuler CFG++サンプラーの実装バージョン |
 
 ## 出力
 

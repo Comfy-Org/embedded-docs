@@ -6,7 +6,7 @@ El nodo FreeU aplica modificaciones en el dominio de frecuencia a los bloques de
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que aplicar las modificaciones FreeU |
+| `modelo` | MODEL | Sí | - | El modelo al que aplicar las modificaciones FreeU |
 | `b1` | FLOAT | Sí | 0.0 - 10.0 | Factor de escalado backbone para características model_channels × 4 (valor por defecto: 1.1) |
 | `b2` | FLOAT | Sí | 0.0 - 10.0 | Factor de escalado backbone para características model_channels × 2 (valor por defecto: 1.2) |
 | `s1` | FLOAT | Sí | 0.0 - 10.0 | Factor de escalado de conexión de salto para características model_channels × 4 (valor por defecto: 0.9) |
@@ -16,4 +16,4 @@ El nodo FreeU aplica modificaciones en el dominio de frecuencia a los bloques de
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con los parches FreeU aplicados |
+| `modelo` | MODEL | El modelo modificado con los parches FreeU aplicados |

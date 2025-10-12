@@ -7,8 +7,8 @@ Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/diffusi
 
 | Paramètre   | Data Type | Description |
 |-------------|--------------|-------------|
-| `unet_name` | COMBO[STRING] | Spécifie le nom du modèle U-Net à charger. Ce nom est utilisé pour localiser le modèle dans une structure de répertoire prédéfinie, permettant le chargement dynamique de différents modèles U-Net. |
-| `weight_dtype` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
+| `nom_unet` | COMBO[STRING] | Spécifie le nom du modèle U-Net à charger. Ce nom est utilisé pour localiser le modèle dans une structure de répertoire prédéfinie, permettant le chargement dynamique de différents modèles U-Net. |
+| `dtype_poids` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
 
 ## Sorties  - Guide du Chargeur UNET | Charger le Modèle de Diffusion
 

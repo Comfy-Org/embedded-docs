@@ -6,7 +6,7 @@ El nodo RandomNoise genera patrones de ruido aleatorio basados en un valor de se
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `noise_seed` | INT | Sí | 0 a 18446744073709551615 | El valor de semilla utilizado para generar el patrón de ruido aleatorio (por defecto: 0). La misma semilla siempre producirá la misma salida de ruido. |
+| `semilla_ruido` | INT | Sí | 0 a 18446744073709551615 | El valor de semilla utilizado para generar el patrón de ruido aleatorio (por defecto: 0). La misma semilla siempre producirá la misma salida de ruido. |
 
 ## Salidas
 

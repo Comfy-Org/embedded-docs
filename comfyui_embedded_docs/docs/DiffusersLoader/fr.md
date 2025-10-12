@@ -6,7 +6,7 @@ Le nœud DiffusersLoader charge des modèles pré-entraînés au format diffuser
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model_path` | STRING | Oui | Plusieurs options disponibles<br>(remplissage automatique à partir des dossiers diffusers) | Le chemin vers le répertoire du modèle diffusers à charger. Le nœud scanne automatiquement les modèles diffusers valides dans les dossiers diffusers configurés et liste les options disponibles. |
+| `chemin_modèle` | STRING | Oui | Plusieurs options disponibles<br>(remplissage automatique à partir des dossiers diffusers) | Le chemin vers le répertoire du modèle diffusers à charger. Le nœud scanne automatiquement les modèles diffusers valides dans les dossiers diffusers configurés et liste les options disponibles. |
 
 ## Sorties
 

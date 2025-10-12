@@ -6,13 +6,13 @@ El nodo FreSca aplica escalado dependiente de la frecuencia a la guía durante e
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que aplicar el escalado de frecuencia |
-| `scale_low` | FLOAT | No | 0-10 | Factor de escala para componentes de baja frecuencia (por defecto: 1.0) |
-| `scale_high` | FLOAT | No | 0-10 | Factor de escala para componentes de alta frecuencia (por defecto: 1.25) |
-| `freq_cutoff` | INT | No | 1-10000 | Número de índices de frecuencia alrededor del centro a considerar como baja frecuencia (por defecto: 20) |
+| `modelo` | MODEL | Sí | - | El modelo al que aplicar el escalado de frecuencia |
+| `escala_baja` | FLOAT | No | 0-10 | Factor de escala para componentes de baja frecuencia (por defecto: 1.0) |
+| `escala_alta` | FLOAT | No | 0-10 | Factor de escala para componentes de alta frecuencia (por defecto: 1.25) |
+| `corte_frecuencia` | INT | No | 1-10000 | Número de índices de frecuencia alrededor del centro a considerar como baja frecuencia (por defecto: 20) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con escalado dependiente de la frecuencia aplicado a su función de guía |
+| `modelo` | MODEL | El modelo modificado con escalado dependiente de la frecuencia aplicado a su función de guía |

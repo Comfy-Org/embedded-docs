@@ -7,7 +7,7 @@ Le nœud LTXVPreprocess applique un prétraitement de compression aux images. Il
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à traiter |
-| `img_compression` | INT | Non | 0-100 | Quantité de compression à appliquer sur l'image (par défaut : 35) |
+| `compression_d'image` | INT | Non | 0-100 | Quantité de compression à appliquer sur l'image (par défaut : 35) |
 
 ## Sorties
 

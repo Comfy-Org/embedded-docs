@@ -9,7 +9,7 @@ Le nœud PhotoMakerEncode traite des images et du texte pour générer des donn�
 | `photomaker` | PHOTOMAKER | Oui | - | Le modèle PhotoMaker utilisé pour traiter l'image et générer les plongements |
 | `image` | IMAGE | Oui | - | L'image de référence qui fournit les caractéristiques visuelles pour le conditionnement |
 | `clip` | CLIP | Oui | - | Le modèle CLIP utilisé pour la tokenisation et l'encodage du texte |
-| `text` | STRING | Oui | - | L'invite texte pour la génération du conditionnement (par défaut : "photograph of photomaker") |
+| `texte` | STRING | Oui | - | L'invite texte pour la génération du conditionnement (par défaut : "photograph of photomaker") |
 
 **Note :** Lorsque le texte contient le mot "photomaker", le nœud applique un conditionnement basé sur l'image à cette position dans l'invite. Si "photomaker" n'est pas trouvé dans le texte, le nœud génère un conditionnement texte standard sans influence de l'image.
 

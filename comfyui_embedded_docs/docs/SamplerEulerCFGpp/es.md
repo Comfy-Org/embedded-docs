@@ -6,7 +6,7 @@ El nodo SamplerEulerCFGpp proporciona un método de muestreo Euler CFG++ para ge
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `version` | STRING | Sí | `"regular"`<br>`"alternative"` | La versión de implementación del muestreador Euler CFG++ a utilizar |
+| `versión` | STRING | Sí | `"regular"`<br>`"alternative"` | La versión de implementación del muestreador Euler CFG++ a utilizar |
 
 ## Salidas
 

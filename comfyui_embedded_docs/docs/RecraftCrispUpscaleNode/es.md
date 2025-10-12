@@ -6,7 +6,7 @@ Escala imágenes de forma síncrona. Mejora una imagen rasterizada dada utilizan
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
 | `auth_token` | STRING | No | - | Token de autenticación para la API de Recraft |
 | `comfy_api_key` | STRING | No | - | Clave API para los servicios de Comfy.org |
 
@@ -14,4 +14,4 @@ Escala imágenes de forma síncrona. Mejora una imagen rasterizada dada utilizan
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `image` | IMAGE | La imagen escalada con resolución y claridad mejoradas |
+| `imagen` | IMAGE | La imagen escalada con resolución y claridad mejoradas |

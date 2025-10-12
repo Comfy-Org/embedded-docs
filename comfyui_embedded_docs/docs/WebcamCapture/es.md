@@ -6,10 +6,10 @@ El nodo WebcamCapture captura imágenes desde un dispositivo de cámara web y la
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | WEBCAM | Sí | - | La fuente de entrada de la cámara web desde la cual capturar imágenes |
-| `width` | INT | No | 0 a MAX_RESOLUTION | El ancho deseado para la imagen capturada (por defecto: 0, usa la resolución nativa de la cámara web) |
-| `height` | INT | No | 0 a MAX_RESOLUTION | La altura deseada para la imagen capturada (por defecto: 0, usa la resolución nativa de la cámara web) |
-| `capture_on_queue` | BOOLEAN | No | - | Cuando está habilitado, captura una nueva imagen cada vez que se procesa la cola de trabajo (por defecto: True) |
+| `imagen` | WEBCAM | Sí | - | La fuente de entrada de la cámara web desde la cual capturar imágenes |
+| `ancho` | INT | No | 0 a MAX_RESOLUTION | El ancho deseado para la imagen capturada (por defecto: 0, usa la resolución nativa de la cámara web) |
+| `altura` | INT | No | 0 a MAX_RESOLUTION | La altura deseada para la imagen capturada (por defecto: 0, usa la resolución nativa de la cámara web) |
+| `captura_en_cola` | BOOLEAN | No | - | Cuando está habilitado, captura una nueva imagen cada vez que se procesa la cola de trabajo (por defecto: True) |
 
 **Nota:** Cuando tanto `width` como `height` están establecidos en 0, el nodo utiliza la resolución nativa de la cámara web. Establecer cualquier dimensión a un valor distinto de cero redimensionará la imagen capturada en consecuencia.
 

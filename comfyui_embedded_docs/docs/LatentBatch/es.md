@@ -4,8 +4,8 @@ El nodo LatentBatch está diseñado para fusionar dos conjuntos de muestras late
 
 | Parámetro    | Data Type | Descripción |
 |--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | El primer conjunto de muestras latentes a fusionar. Juega un papel crucial en la determinación de la forma final del lote fusionado. |
-| `samples2`   | `LATENT`    | El segundo conjunto de muestras latentes a fusionar. Si sus dimensiones difieren del primer conjunto, se redimensiona para asegurar la compatibilidad antes de la fusión. |
+| `muestras1`   | `LATENT`    | El primer conjunto de muestras latentes a fusionar. Juega un papel crucial en la determinación de la forma final del lote fusionado. |
+| `muestras2`   | `LATENT`    | El segundo conjunto de muestras latentes a fusionar. Si sus dimensiones difieren del primer conjunto, se redimensiona para asegurar la compatibilidad antes de la fusión. |
 
 ## Salidas
 

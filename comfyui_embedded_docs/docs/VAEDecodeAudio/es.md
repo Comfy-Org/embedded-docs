@@ -6,7 +6,7 @@ El nodo VAEDecodeAudio convierte representaciones latentes de vuelta a formas de
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Sí | - | Las muestras de audio codificadas en el espacio latente que serán decodificadas de vuelta a forma de onda de audio |
+| `muestras` | LATENT | Sí | - | Las muestras de audio codificadas en el espacio latente que serán decodificadas de vuelta a forma de onda de audio |
 | `vae` | VAE | Sí | - | El modelo de Autoencoder Variacional utilizado para decodificar las muestras latentes en audio |
 
 ## Salidas

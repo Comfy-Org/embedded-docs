@@ -6,14 +6,14 @@ PairConditioningCombine 节点将两对条件数据（正面和负面）合并�
 
 | 参数名 | 数据类型 | 必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `positive_A` | CONDITIONING | 是 | - | 第一个正面条件输入 |
-| `negative_A` | CONDITIONING | 是 | - | 第一个负面条件输入 |
-| `positive_B` | CONDITIONING | 是 | - | 第二个正面条件输入 |
-| `negative_B` | CONDITIONING | 是 | - | 第二个负面条件输入 |
+| `正面条件_A` | CONDITIONING | 是 | - | 第一个正面条件输入 |
+| `负面条件_A` | CONDITIONING | 是 | - | 第一个负面条件输入 |
+| `正面条件_B` | CONDITIONING | 是 | - | 第二个正面条件输入 |
+| `负面条件_B` | CONDITIONING | 是 | - | 第二个负面条件输入 |
 
 ## 输出结果
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 合并后的正面条件输出 |
+| `负面条件` | CONDITIONING | 合并后的正面条件输出 |
 | `negative` | CONDITIONING | 合并后的负面条件输出 |

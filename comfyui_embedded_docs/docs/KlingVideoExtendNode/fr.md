@@ -17,6 +17,6 @@ Le nœud Kling Video Extend vous permet d'étendre des vidéos créées par d'au
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `output` | VIDEO | La vidéo étendue générée par l'API Kling |
-| `video_id` | STRING | L'identifiant unique de la vidéo étendue |
+| `video_id` | VIDEO | La vidéo étendue générée par l'API Kling |
+| `duration` | STRING | L'identifiant unique de la vidéo étendue |
 | `duration` | STRING | La durée de la vidéo étendue |

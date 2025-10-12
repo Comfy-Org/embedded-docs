@@ -7,7 +7,7 @@ Le nœud SaveWEBM enregistre une séquence d'images sous forme de fichier vidéo
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `images` | IMAGE | Oui | - | Séquence d'images d'entrée à encoder comme trames vidéo |
-| `filename_prefix` | STRING | Non | - | Préfixe pour le nom de fichier de sortie (par défaut : "ComfyUI") |
+| `préfixe_de_nom_de_fichier` | STRING | Non | - | Préfixe pour le nom de fichier de sortie (par défaut : "ComfyUI") |
 | `codec` | COMBO | Oui | "vp9"<br>"av1" | Codec vidéo à utiliser pour l'encodage |
 | `fps` | FLOAT | Non | 0.01-1000.0 | Fréquence d'images pour la vidéo de sortie (par défaut : 24.0) |
 | `crf` | FLOAT | Non | 0-63.0 | Paramètre de qualité où un crf plus élevé signifie une qualité inférieure avec une taille de fichier plus petite, et un crf plus bas signifie une qualité supérieure avec une taille de fichier plus grande (par défaut : 32.0) |

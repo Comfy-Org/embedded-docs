@@ -6,13 +6,13 @@ ConditioningTimestepsRange 노드는 생성 과정에서 컨디셔닝 효과가 
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `start_percent` | FLOAT | 예 | 0.0 - 1.0 | 타임스텝 범위의 시작 백분율 (기본값: 0.0) |
-| `end_percent` | FLOAT | 예 | 0.0 - 1.0 | 타임스텝 범위의 종료 백분율 (기본값: 1.0) |
+| `시작 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | 타임스텝 범위의 시작 백분율 (기본값: 0.0) |
+| `종료 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | 타임스텝 범위의 종료 백분율 (기본값: 1.0) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | start_percent와 end_percent로 정의된 주 타임스텝 범위 |
-| `BEFORE_RANGE` | TIMESTEPS_RANGE | 0.0부터 start_percent까지의 타임스텝 범위 |
+| `이전 범위` | TIMESTEPS_RANGE | start_percent와 end_percent로 정의된 주 타임스텝 범위 |
+| `이후 범위` | TIMESTEPS_RANGE | 0.0부터 start_percent까지의 타임스텝 범위 |
 | `AFTER_RANGE` | TIMESTEPS_RANGE | end_percent부터 1.0까지의 타임스텝 범위 |

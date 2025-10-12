@@ -6,7 +6,7 @@ El nodo PrimitiveFloat crea un valor numérico de punto flotante que puede utili
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `value` | FLOAT | Sí | -sys.maxsize a sys.maxsize | El valor numérico de punto flotante a emitir |
+| `valor` | FLOAT | Sí | -sys.maxsize a sys.maxsize | El valor numérico de punto flotante a emitir |
 
 ## Salidas
 

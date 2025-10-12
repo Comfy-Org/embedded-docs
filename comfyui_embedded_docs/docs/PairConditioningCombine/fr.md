@@ -15,5 +15,5 @@ Le nœud PairConditioningCombine combine deux paires de données de conditionnem
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Sortie de conditionnement positive combinée |
+| `negative` | CONDITIONING | Sortie de conditionnement positive combinée |
 | `negative` | CONDITIONING | Sortie de conditionnement négative combinée |

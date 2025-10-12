@@ -6,9 +6,9 @@ El nodo SaveWEBM guarda una secuencia de imágenes como un archivo de video WEBM
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Sí | - | Secuencia de imágenes de entrada para codificar como cuadros de video |
-| `filename_prefix` | STRING | No | - | Prefijo para el nombre del archivo de salida (predeterminado: "ComfyUI") |
-| `codec` | COMBO | Sí | "vp9"<br>"av1" | Códec de video a utilizar para la codificación |
+| `imágenes` | IMAGE | Sí | - | Secuencia de imágenes de entrada para codificar como cuadros de video |
+| `prefijo_nombre_archivo` | STRING | No | - | Prefijo para el nombre del archivo de salida (predeterminado: "ComfyUI") |
+| `códec` | COMBO | Sí | "vp9"<br>"av1" | Códec de video a utilizar para la codificación |
 | `fps` | FLOAT | No | 0.01-1000.0 | Velocidad de cuadros para el video de salida (predeterminado: 24.0) |
 | `crf` | FLOAT | No | 0-63.0 | Configuración de calidad donde un crf más alto significa menor calidad con tamaño de archivo más pequeño, y un crf más bajo significa mayor calidad con tamaño de archivo más grande (predeterminado: 32.0) |
 

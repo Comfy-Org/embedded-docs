@@ -5,9 +5,9 @@ Este nodo está diseñado para extraer un subconjunto específico de muestras la
 
 | Parámetro     | Data Type | Descripción |
 |---------------|-------------|-------------|
-| `samples`     | `LATENT`    | La colección de muestras latentes de la cual se extraerá un subconjunto. Este parámetro es crucial para determinar el lote fuente de muestras a procesar. |
-| `batch_index` | `INT`       | Especifica el índice de inicio dentro del lote desde el cual comenzará el subconjunto de muestras. Este parámetro permite la extracción dirigida de muestras desde posiciones específicas en el lote. |
-| `length`      | `INT`       | Define el número de muestras a extraer desde el índice de inicio especificado. Este parámetro controla el tamaño del subconjunto a procesar, permitiendo una manipulación flexible de los segmentos del lote. |
+| `muestras`     | `LATENT`    | La colección de muestras latentes de la cual se extraerá un subconjunto. Este parámetro es crucial para determinar el lote fuente de muestras a procesar. |
+| `índice_lote` | `INT`       | Especifica el índice de inicio dentro del lote desde el cual comenzará el subconjunto de muestras. Este parámetro permite la extracción dirigida de muestras desde posiciones específicas en el lote. |
+| `longitud`      | `INT`       | Define el número de muestras a extraer desde el índice de inicio especificado. Este parámetro controla el tamaño del subconjunto a procesar, permitiendo una manipulación flexible de los segmentos del lote. |
 
 ## Salidas
 

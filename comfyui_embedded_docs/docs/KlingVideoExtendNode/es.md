@@ -17,6 +17,6 @@ El nodo Kling Video Extend permite extender videos creados por otros nodos Kling
 
 | Nombre de Salida | Tipo de Datos | Descripción |
 |-------------|-----------|-------------|
-| `output` | VIDEO | El video extendido generado por la API de Kling |
-| `video_id` | STRING | El identificador único para el video extendido |
+| `video_id` | VIDEO | El video extendido generado por la API de Kling |
+| `duration` | STRING | El identificador único para el video extendido |
 | `duration` | STRING | La duración del video extendido |

@@ -6,8 +6,8 @@ Le nœud BetaSamplingScheduler génère une séquence de niveaux de bruit (sigma
 
 | Paramètre | Type de données | Type d'entrée | Par défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Requis | - | - | Le modèle utilisé pour l'échantillonnage, qui fournit l'objet d'échantillonnage du modèle |
-| `steps` | INT | Requis | 20 | 1-10000 | Le nombre d'étapes d'échantillonnage pour lesquelles générer les sigmas |
+| `modèle` | MODEL | Requis | - | - | Le modèle utilisé pour l'échantillonnage, qui fournit l'objet d'échantillonnage du modèle |
+| `étapes` | INT | Requis | 20 | 1-10000 | Le nombre d'étapes d'échantillonnage pour lesquelles générer les sigmas |
 | `alpha` | FLOAT | Requis | 0.6 | 0.0-50.0 | Paramètre alpha pour le planificateur bêta, contrôlant la courbe de planification |
 | `beta` | FLOAT | Requis | 0.6 | 0.0-50.0 | Paramètre bêta pour le planificateur bêta, contrôlant la courbe de planification |
 

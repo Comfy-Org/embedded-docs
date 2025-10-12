@@ -6,10 +6,10 @@ Kling Single Image Video Effect Node는 단일 참조 이미지를 기반으로 
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 예 | - | 참조 이미지. URL 또는 Base64 인코딩 문자열 (data:image 접두사 없음). 파일 크기는 10MB를 초과할 수 없으며, 해상도는 300*300px 이상이어야 하고, 화면비는 1:2.5 ~ 2.5:1 사이여야 합니다. |
-| `effect_scene` | COMBO | 예 | KlingSingleImageEffectsScene의 옵션들 | 비디오 생성에 적용할 특수 효과 장면의 유형 |
-| `model_name` | COMBO | 예 | KlingSingleImageEffectModelName의 옵션들 | 비디오 효과 생성에 사용할 특정 모델 |
-| `duration` | COMBO | 예 | KlingVideoGenDuration의 옵션들 | 생성된 비디오의 길이 |
+| `이미지` | IMAGE | 예 | - | 참조 이미지. URL 또는 Base64 인코딩 문자열 (data:image 접두사 없음). 파일 크기는 10MB를 초과할 수 없으며, 해상도는 300*300px 이상이어야 하고, 화면비는 1:2.5 ~ 2.5:1 사이여야 합니다. |
+| `효과 장면` | COMBO | 예 | KlingSingleImageEffectsScene의 옵션들 | 비디오 생성에 적용할 특수 효과 장면의 유형 |
+| `모델 명` | COMBO | 예 | KlingSingleImageEffectModelName의 옵션들 | 비디오 효과 생성에 사용할 특정 모델 |
+| `길이` | COMBO | 예 | KlingVideoGenDuration의 옵션들 | 생성된 비디오의 길이 |
 
 **참고:** `effect_scene`, `model_name`, `duration`의 구체적인 옵션은 각각의 열거형 클래스(KlingSingleImageEffectsScene, KlingSingleImageEffectModelName, KlingVideoGenDuration)에서 사용 가능한 값에 따라 결정됩니다.
 
@@ -17,6 +17,6 @@ Kling Single Image Video Effect Node는 단일 참조 이미지를 기반으로 
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 효과가 적용된 생성된 비디오 |
-| `video_id` | STRING | 생성된 비디오의 고유 식별자 |
-| `duration` | STRING | 생성된 비디오의 지속 시간 |
+| `비디오 ID` | VIDEO | 효과가 적용된 생성된 비디오 |
+| `길이` | STRING | 생성된 비디오의 고유 식별자 |
+| `길이` | STRING | 생성된 비디오의 지속 시간 |

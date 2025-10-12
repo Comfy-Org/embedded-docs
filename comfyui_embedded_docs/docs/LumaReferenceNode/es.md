@@ -6,8 +6,8 @@ Este nodo contiene una imagen y un valor de peso para usar con el nodo Luma Gene
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | Imagen a utilizar como referencia. |
-| `weight` | FLOAT | Sí | 0.0 - 1.0 | Peso de la referencia de imagen (valor por defecto: 1.0). |
+| `imagen` | IMAGE | Sí | - | Imagen a utilizar como referencia. |
+| `peso` | FLOAT | Sí | 0.0 - 1.0 | Peso de la referencia de imagen (valor por defecto: 1.0). |
 | `luma_ref` | LUMA_REF | No | - | Cadena de referencia Luma existente opcional a la cual agregarse. |
 
 ## Salidas

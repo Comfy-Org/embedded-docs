@@ -6,14 +6,14 @@ El nodo ModelSamplingFlux aplica muestreo de modelo Flux a un modelo dado calcul
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que aplicar el muestreo Flux |
-| `max_shift` | FLOAT | Sí | 0.0 - 100.0 | Valor de desplazamiento máximo para el cálculo de muestreo (predeterminado: 1.15) |
-| `base_shift` | FLOAT | Sí | 0.0 - 100.0 | Valor de desplazamiento base para el cálculo de muestreo (predeterminado: 0.5) |
-| `width` | INT | Sí | 16 - MAX_RESOLUTION | Ancho de la imagen objetivo en píxeles (predeterminado: 1024) |
-| `height` | INT | Sí | 16 - MAX_RESOLUTION | Alto de la imagen objetivo en píxeles (predeterminado: 1024) |
+| `modelo` | MODEL | Sí | - | El modelo al que aplicar el muestreo Flux |
+| `desplazamiento_max` | FLOAT | Sí | 0.0 - 100.0 | Valor de desplazamiento máximo para el cálculo de muestreo (predeterminado: 1.15) |
+| `desplazamiento_base` | FLOAT | Sí | 0.0 - 100.0 | Valor de desplazamiento base para el cálculo de muestreo (predeterminado: 0.5) |
+| `ancho` | INT | Sí | 16 - MAX_RESOLUTION | Ancho de la imagen objetivo en píxeles (predeterminado: 1024) |
+| `altura` | INT | Sí | 16 - MAX_RESOLUTION | Alto de la imagen objetivo en píxeles (predeterminado: 1024) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo modificado con la configuración de muestreo Flux aplicada |
+| `modelo` | MODEL | El modelo modificado con la configuración de muestreo Flux aplicada |

@@ -6,11 +6,11 @@ El nodo TorchCompileModel aplica la compilación de PyTorch a un modelo para opt
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo que será compilado y optimizado |
+| `modelo` | MODEL | Sí | - | El modelo que será compilado y optimizado |
 | `backend` | STRING | Sí | "inductor"<br>"cudagraphs" | El backend de compilación de PyTorch que se utilizará para la optimización |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo compilado con la compilación de PyTorch aplicada |
+| `modelo` | MODEL | El modelo compilado con la compilación de PyTorch aplicada |

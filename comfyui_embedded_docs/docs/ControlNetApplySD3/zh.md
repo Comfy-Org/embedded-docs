@@ -10,18 +10,18 @@
 
 | 参数 | 数据类型 | 必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 是 | - | 要应用 ControlNet 引导的正向条件输入 |
-| `negative` | CONDITIONING | 是 | - | 要应用 ControlNet 引导的负向条件输入 |
-| `control_net` | CONTROL_NET | 是 | - | 用于引导的 ControlNet 模型 |
+| `正面条件` | CONDITIONING | 是 | - | 要应用 ControlNet 引导的正向条件输入 |
+| `负面条件` | CONDITIONING | 是 | - | 要应用 ControlNet 引导的负向条件输入 |
+| `ControlNet` | CONTROL_NET | 是 | - | 用于引导的 ControlNet 模型 |
 | `vae` | VAE | 是 | - | 过程中使用的 VAE 模型 |
-| `image` | IMAGE | 是 | - | ControlNet 将用作引导的输入图像 |
-| `strength` | FLOAT | 是 | 0.0 - 10.0 | ControlNet 效果的强度（默认值：1.0） |
-| `start_percent` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 开始应用的生成过程起始点（默认值：0.0） |
-| `end_percent` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 停止应用的生成过程结束点（默认值：1.0） |
+| `图像` | IMAGE | 是 | - | ControlNet 将用作引导的输入图像 |
+| `强度` | FLOAT | 是 | 0.0 - 10.0 | ControlNet 效果的强度（默认值：1.0） |
+| `开始百分比` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 开始应用的生成过程起始点（默认值：0.0） |
+| `结束百分比` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 停止应用的生成过程结束点（默认值：1.0） |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 应用了 ControlNet 引导的修改后正向条件输入 |
-| `negative` | CONDITIONING | 应用了 ControlNet 引导的修改后负向条件输入 |
+| `负面条件` | CONDITIONING | 应用了 ControlNet 引导的修改后正向条件输入 |
+| `负面条件` | CONDITIONING | 应用了 ControlNet 引导的修改后负向条件输入 |

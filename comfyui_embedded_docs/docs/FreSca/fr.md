@@ -6,13 +6,13 @@ Le nœud FreSca applique une mise à l'échelle dépendante de la fréquence au 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer la mise à l'échelle fréquentielle |
-| `scale_low` | FLOAT | Non | 0-10 | Facteur d'échelle pour les composantes basse fréquence (par défaut : 1.0) |
-| `scale_high` | FLOAT | Non | 0-10 | Facteur d'échelle pour les composantes haute fréquence (par défaut : 1.25) |
-| `freq_cutoff` | INT | Non | 1-10000 | Nombre d'indices de fréquence autour du centre à considérer comme basse fréquence (par défaut : 20) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer la mise à l'échelle fréquentielle |
+| `échelle_basse` | FLOAT | Non | 0-10 | Facteur d'échelle pour les composantes basse fréquence (par défaut : 1.0) |
+| `échelle_haute` | FLOAT | Non | 0-10 | Facteur d'échelle pour les composantes haute fréquence (par défaut : 1.25) |
+| `seuil_fréquence` | INT | Non | 1-10000 | Nombre d'indices de fréquence autour du centre à considérer comme basse fréquence (par défaut : 20) |
 
 ## Sorties
 
 | Sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `model` | MODEL | Le modèle modifié avec une mise à l'échelle dépendante de la fréquence appliquée à sa fonction de guidage |
+| `modèle` | MODEL | Le modèle modifié avec une mise à l'échelle dépendante de la fréquence appliquée à sa fonction de guidage |

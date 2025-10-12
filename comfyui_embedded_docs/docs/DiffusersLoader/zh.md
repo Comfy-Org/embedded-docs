@@ -6,7 +6,7 @@ DiffusersLoader 节点从 diffusers 格式加载预训练模型。它会搜索�
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model_path` | STRING | 是 | 提供多个选项<br>（自动从 diffusers 文件夹填充） | 要加载的 diffusers 模型目录路径。该节点会自动扫描配置的 diffusers 文件夹中的有效 diffusers 模型，并列出可用选项。 |
+| `模型路径` | STRING | 是 | 提供多个选项<br>（自动从 diffusers 文件夹填充） | 要加载的 diffusers 模型目录路径。该节点会自动扫描配置的 diffusers 文件夹中的有效 diffusers 模型，并列出可用选项。 |
 
 ## 输出结果
 

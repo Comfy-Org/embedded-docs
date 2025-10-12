@@ -7,11 +7,11 @@ Génère un SVG de manière synchrone en fonction de l'invite et de la résoluti
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite pour la génération d'image. (par défaut : "") |
-| `substyle` | COMBO | Oui | Options multiples disponibles | Le style d'illustration spécifique à utiliser pour la génération. Les options sont déterminées par les sous-styles d'illustration vectorielle disponibles dans RecraftStyleV3. |
-| `size` | COMBO | Oui | Options multiples disponibles | La taille de l'image générée. (par défaut : 1024x1024) |
+| `sous-style` | COMBO | Oui | Options multiples disponibles | Le style d'illustration spécifique à utiliser pour la génération. Les options sont déterminées par les sous-styles d'illustration vectorielle disponibles dans RecraftStyleV3. |
+| `taille` | COMBO | Oui | Options multiples disponibles | La taille de l'image générée. (par défaut : 1024x1024) |
 | `n` | INT | Oui | 1-6 | Le nombre d'images à générer. (par défaut : 1, min : 1, max : 6) |
 | `seed` | INT | Oui | 0-18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine. (par défaut : 0, min : 0, max : 18446744073709551615) |
-| `negative_prompt` | STRING | Non | - | Une description textuelle facultative des éléments indésirables sur une image. (par défaut : "") |
+| `prompt négatif` | STRING | Non | - | Une description textuelle facultative des éléments indésirables sur une image. (par défaut : "") |
 | `recraft_controls` | CONTROLS | Non | - | Contrôles supplémentaires facultatifs sur la génération via le nœud Recraft Controls. |
 
 **Note :** Le paramètre `seed` contrôle uniquement quand le nœud se réexécute mais ne rend pas les résultats de génération déterministes.

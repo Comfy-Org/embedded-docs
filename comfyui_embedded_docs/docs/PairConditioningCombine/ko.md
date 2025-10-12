@@ -6,14 +6,14 @@ PairConditioningCombine 노드는 두 쌍의 조건화 데이터(긍정적, 부�
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive_A` | CONDITIONING | 예 | - | 첫 번째 긍정적 조건화 입력 |
-| `negative_A` | CONDITIONING | 예 | - | 첫 번째 부정적 조건화 입력 |
-| `positive_B` | CONDITIONING | 예 | - | 두 번째 긍정적 조건화 입력 |
-| `negative_B` | CONDITIONING | 예 | - | 두 번째 부정적 조건화 입력 |
+| `긍정 조건 A` | CONDITIONING | 예 | - | 첫 번째 긍정적 조건화 입력 |
+| `부정 조건 A` | CONDITIONING | 예 | - | 첫 번째 부정적 조건화 입력 |
+| `긍정 조건 B` | CONDITIONING | 예 | - | 두 번째 긍정적 조건화 입력 |
+| `부정 조건 B` | CONDITIONING | 예 | - | 두 번째 부정적 조건화 입력 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 결합된 긍정적 조건화 출력 |
+| `부정 조건` | CONDITIONING | 결합된 긍정적 조건화 출력 |
 | `negative` | CONDITIONING | 결합된 부정적 조건화 출력 |

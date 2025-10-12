@@ -5,13 +5,13 @@
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `positive` | CONDITIONING | Oui | - | L'entrée de conditionnement positive à modifier avec les informations de timing audio |
-| `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négative à modifier avec les informations de timing audio |
-| `seconds_start` | FLOAT | Oui | 0.0 à 1000.0 | Le temps de départ en secondes pour la génération audio (par défaut : 0.0) |
-| `seconds_total` | FLOAT | Oui | 0.0 à 1000.0 | La durée totale en secondes pour la génération audio (par défaut : 47.0) |
+| `négative` | CONDITIONING | Oui | - | L'entrée de conditionnement négative à modifier avec les informations de timing audio |
+| `secondes_début` | FLOAT | Oui | 0.0 à 1000.0 | Le temps de départ en secondes pour la génération audio (par défaut : 0.0) |
+| `secondes_total` | FLOAT | Oui | 0.0 à 1000.0 | La durée totale en secondes pour la génération audio (par défaut : 47.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif modifié avec les informations de timing audio appliquées |
-| `negative` | CONDITIONING | Le conditionnement négatif modifié avec les informations de timing audio appliquées |
+| `négative` | CONDITIONING | Le conditionnement positif modifié avec les informations de timing audio appliquées |
+| `négative` | CONDITIONING | Le conditionnement négatif modifié avec les informations de timing audio appliquées |

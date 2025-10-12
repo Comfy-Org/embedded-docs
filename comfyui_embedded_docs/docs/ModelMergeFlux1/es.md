@@ -10,7 +10,7 @@ El nodo ModelMergeFlux1 fusiona dos modelos de difusión combinando sus componen
 | `model2` | MODEL | Sí | - | Segundo modelo fuente a fusionar |
 | `img_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de entrada de imagen (por defecto: 1.0) |
 | `time_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de incrustación temporal (por defecto: 1.0) |
-| `guidance_in` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del mecanismo de guía (por defecto: 1.0) |
+| `orientación_in` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del mecanismo de guía (por defecto: 1.0) |
 | `vector_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de entrada vectorial (por defecto: 1.0) |
 | `txt_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del codificador de texto (por defecto: 1.0) |
 | `double_blocks.0.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 0 (por defecto: 1.0) |

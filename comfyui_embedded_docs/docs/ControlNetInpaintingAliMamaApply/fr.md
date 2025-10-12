@@ -22,5 +22,5 @@ Le nœud ControlNetInpaintingAliMamaApply applique un conditionnement ControlNet
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif modifié avec ControlNet appliqué pour l'inpainting |
+| `negative` | CONDITIONING | Le conditionnement positif modifié avec ControlNet appliqué pour l'inpainting |
 | `negative` | CONDITIONING | Le conditionnement négatif modifié avec ControlNet appliqué pour l'inpainting |

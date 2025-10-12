@@ -10,7 +10,7 @@ El nodo CLIPAttentionMultiply permite ajustar el mecanismo de atención en los m
 | `q` | FLOAT | requerido | 1.0 | 0.0 - 10.0 | Factor de multiplicación para pesos y sesgos de proyección de consulta |
 | `k` | FLOAT | requerido | 1.0 | 0.0 - 10.0 | Factor de multiplicación para pesos y sesgos de proyección de clave |
 | `v` | FLOAT | requerido | 1.0 | 0.0 - 10.0 | Factor de multiplicación para pesos y sesgos de proyección de valor |
-| `out` | FLOAT | requerido | 1.0 | 0.0 - 10.0 | Factor de multiplicación para pesos y sesgos de proyección de salida |
+| `salida` | FLOAT | requerido | 1.0 | 0.0 - 10.0 | Factor de multiplicación para pesos y sesgos de proyección de salida |
 
 ## Salidas
 

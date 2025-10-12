@@ -6,13 +6,13 @@ ModelSamplingContinuousV 节点通过应用连续 V-prediction 采样参数来�
 
 | 参数 | 数据类型 | 必需 | 取值范围 | 描述 |
 |------|-----------|------|----------|------|
-| `model` | MODEL | 是 | - | 要应用连续 V-prediction 采样进行修改的输入模型 |
-| `sampling` | STRING | 是 | "v_prediction" | 要应用的采样方法（当前仅支持 V-prediction） |
-| `sigma_max` | FLOAT | 是 | 0.0 - 1000.0 | 采样的最大 sigma 值（默认：500.0） |
-| `sigma_min` | FLOAT | 是 | 0.0 - 1000.0 | 采样的最小 sigma 值（默认：0.03） |
+| `模型` | MODEL | 是 | - | 要应用连续 V-prediction 采样进行修改的输入模型 |
+| `采样` | STRING | 是 | "v_prediction" | 要应用的采样方法（当前仅支持 V-prediction） |
+| `最大西格玛` | FLOAT | 是 | 0.0 - 1000.0 | 采样的最大 sigma 值（默认：500.0） |
+| `最小西格玛` | FLOAT | 是 | 0.0 - 1000.0 | 采样的最小 sigma 值（默认：0.03） |
 
 ## 输出结果
 
 | 输出名称 | 数据类型 | 描述 |
 |----------|-----------|------|
-| `model` | MODEL | 已应用连续 V-prediction 采样的修改后模型 |
+| `模型` | MODEL | 已应用连续 V-prediction 采样的修改后模型 |

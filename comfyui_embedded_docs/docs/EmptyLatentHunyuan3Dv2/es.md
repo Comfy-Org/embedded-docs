@@ -6,8 +6,8 @@ El nodo EmptyLatentHunyuan3Dv2 crea tensores latentes vacíos específicamente f
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `resolution` | INT | Sí | 1 - 8192 | La dimensión de resolución para el espacio latente (predeterminado: 3072) |
-| `batch_size` | INT | Sí | 1 - 4096 | El número de imágenes latentes en el lote (predeterminado: 1) |
+| `resolución` | INT | Sí | 1 - 8192 | La dimensión de resolución para el espacio latente (predeterminado: 3072) |
+| `tamaño_del_lote` | INT | Sí | 1 - 4096 | El número de imágenes latentes en el lote (predeterminado: 1) |
 
 ## Salidas
 

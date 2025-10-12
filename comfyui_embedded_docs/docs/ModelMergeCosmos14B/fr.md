@@ -6,8 +6,8 @@ Le nœud ModelMergeCosmos14B fusionne deux modèles d'IA en utilisant une approc
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | Oui | - | Premier modèle à fusionner |
-| `model2` | MODEL | Oui | - | Deuxième modèle à fusionner |
+| `modèle1` | MODEL | Oui | - | Premier modèle à fusionner |
+| `modèle2` | MODEL | Oui | - | Deuxième modèle à fusionner |
 | `pos_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de l'incorporateur de position (par défaut : 1.0) |
 | `extra_pos_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de l'incorporateur de position supplémentaire (par défaut : 1.0) |
 | `x_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de l'incorporateur X (par défaut : 1.0) |

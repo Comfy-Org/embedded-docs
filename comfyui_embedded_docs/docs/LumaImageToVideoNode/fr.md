@@ -7,13 +7,13 @@ Génère des vidéos de manière synchrone en fonction de l'invite, des images d
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite pour la génération de la vidéo (par défaut : "") |
-| `model` | COMBO | Oui | Plusieurs options disponibles | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles |
-| `resolution` | COMBO | Oui | Plusieurs options disponibles | Résolution de sortie pour la vidéo générée (par défaut : 540p) |
-| `duration` | COMBO | Oui | Plusieurs options disponibles | Durée de la vidéo générée |
-| `loop` | BOOLEAN | Oui | - | Détermine si la vidéo générée doit être en boucle (par défaut : False) |
+| `modèle` | COMBO | Oui | Plusieurs options disponibles | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles |
+| `résolution` | COMBO | Oui | Plusieurs options disponibles | Résolution de sortie pour la vidéo générée (par défaut : 540p) |
+| `durée` | COMBO | Oui | Plusieurs options disponibles | Durée de la vidéo générée |
+| `boucle` | BOOLEAN | Oui | - | Détermine si la vidéo générée doit être en boucle (par défaut : False) |
 | `seed` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine. (par défaut : 0) |
-| `first_image` | IMAGE | Non | - | Première image de la vidéo générée. (optionnel) |
-| `last_image` | IMAGE | Non | - | Dernière image de la vidéo générée. (optionnel) |
+| `première_image` | IMAGE | Non | - | Première image de la vidéo générée. (optionnel) |
+| `dernière_image` | IMAGE | Non | - | Dernière image de la vidéo générée. (optionnel) |
 | `luma_concepts` | CUSTOM | Non | - | Concepts de caméra optionnels pour dicter le mouvement de la caméra via le nœud Luma Concepts. (optionnel) |
 
 **Note :** Au moins l'un des paramètres `first_image` ou `last_image` doit être fourni. Le nœud générera une exception si les deux sont manquants.

@@ -8,7 +8,7 @@ El nodo UpscaleModelLoader está diseñado para cargar modelos de escalado desde
 
 | Campo         | Comfy dtype       | Descripción                                                                       |
 |---------------|-------------------|-----------------------------------------------------------------------------------|
-| `model_name`  | `COMBO[STRING]`   | Especifica el nombre del modelo de escalado a cargar, identificando y recuperando el archivo de modelo correcto del directorio de modelos de escalado. |
+| `nombre_modelo`  | `COMBO[STRING]`   | Especifica el nombre del modelo de escalado a cargar, identificando y recuperando el archivo de modelo correcto del directorio de modelos de escalado. |
 
 ## Salidas
 

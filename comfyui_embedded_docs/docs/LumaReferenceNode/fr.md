@@ -7,7 +7,7 @@ Ce nœud contient une image et une valeur de poids pour utilisation avec le nœu
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Oui | - | Image à utiliser comme référence. |
-| `weight` | FLOAT | Oui | 0.0 - 1.0 | Poids de la référence d'image (par défaut : 1.0). |
+| `poids` | FLOAT | Oui | 0.0 - 1.0 | Poids de la référence d'image (par défaut : 1.0). |
 | `luma_ref` | LUMA_REF | Non | - | Chaîne de référence Luma existante optionnelle à laquelle s'ajouter. |
 
 ## Sorties

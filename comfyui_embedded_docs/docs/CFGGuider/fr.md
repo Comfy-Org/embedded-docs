@@ -6,9 +6,9 @@ Le nœud CFGGuider crée un système de guidage pour contrôler le processus d'�
 
 | Paramètre | Type de données | Type d'entrée | Par défaut | Plage | Description |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Requis | - | - | Le modèle à utiliser pour le guidage |
+| `modèle` | MODEL | Requis | - | - | Le modèle à utiliser pour le guidage |
 | `positive` | CONDITIONING | Requis | - | - | Le conditionnement positif qui guide la génération vers le contenu souhaité |
-| `negative` | CONDITIONING | Requis | - | - | Le conditionnement négatif qui éloigne la génération du contenu indésirable |
+| `négative` | CONDITIONING | Requis | - | - | Le conditionnement négatif qui éloigne la génération du contenu indésirable |
 | `cfg` | FLOAT | Requis | 8.0 | 0.0 - 100.0 | L'échelle de guidage sans classificateur qui contrôle la force d'influence du conditionnement sur la génération |
 
 ## Sorties

@@ -14,5 +14,5 @@ Le nœud StableCascade_StageC_VAEEncode traite les images via un encodeur VAE po
 
 | Nom de sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `stage_c` | LATENT | La représentation latente encodée pour l'étape C du modèle Stable Cascade |
+| `stage_b` | LATENT | La représentation latente encodée pour l'étape C du modèle Stable Cascade |
 | `stage_b` | LATENT | Une représentation latente réservée pour l'étape B (retourne actuellement des zéros) |
