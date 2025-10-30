@@ -1,0 +1,57 @@
+Workflow Verification Summary
+==============================
+
+✅ Workflow File Created: auto-pr-to-comfyui.yml
+
+Key Features:
+-------------
+1. Triggers: When pyproject.toml changes on main branch
+2. Version Detection: Automatically compares current vs previous version
+3. Changelog Generation: Extracts commits and merged PRs
+4. Fork Operations: Updates requirements.txt in comfyui-wiki/ComfyUI
+5. PR Creation: Creates draft PR to comfyanonymous/ComfyUI
+6. Notifications: GitHub will send notifications automatically
+
+Target Repositories:
+-------------------
+- Source: Comfy-Org/embedded-docs
+- Fork: comfyui-wiki/ComfyUI  
+- Target: comfyanonymous/ComfyUI (base: master)
+
+Required Setup:
+--------------
+1. Create GitHub PAT with permissions:
+   - Repository access to comfyui-wiki/ComfyUI
+   - Contents: Read and write
+   - Pull requests: Read and write
+
+2. Add secret to embedded-docs repository:
+   - Name: COMFYUI_FORK_TOKEN
+   - Value: Your PAT from step 1
+
+3. Ensure ComfyUI fork has requirements.txt file
+
+Branch Naming:
+-------------
+Format: update-docs-{VERSION}-{TIMESTAMP}
+Example: update-docs-0.3.1-20251030-143022
+
+PR Title Format:
+---------------
+"Update docs to v{VERSION}"
+Example: "Update docs to v0.3.1"
+
+Changelog Includes:
+------------------
+- PyPI package link
+- GitHub release link
+- Merged pull requests since last version
+- Individual commits since last version
+
+Next Steps:
+----------
+1. Add COMFYUI_FORK_TOKEN to repository secrets
+2. Test with a version bump (e.g., 0.3.0 → 0.3.1)
+3. Verify draft PR is created successfully
+4. Check GitHub notifications
+
