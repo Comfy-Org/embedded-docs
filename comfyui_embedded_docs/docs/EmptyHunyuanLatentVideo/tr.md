@@ -6,10 +6,10 @@
 
 | Parametre    | Comfy Türü | Açıklama                                                                                |
 | ----------- | ---------- | ------------------------------------------------------------------------------------------ |
-| `width`     | `INT`      | Video genişliği, varsayılan 848, minimum 16, maksimum `nodes.MAX_RESOLUTION`, artış miktarı 16. |
-| `height`    | `INT`      | Video yüksekliği, varsayılan 480, minimum 16, maksimum `nodes.MAX_RESOLUTION`, artış miktarı 16. |
-| `length`    | `INT`      | Video uzunluğu, varsayılan 25, minimum 1, maksimum `nodes.MAX_RESOLUTION`, artış miktarı 4.     |
-| `batch_size`| `INT`      | Toplu iş boyutu, varsayılan 1, minimum 1, maksimum 4096.                                           |
+| `genişlik`     | `INT`      | Video genişliği, varsayılan 848, minimum 16, maksimum `nodes.MAX_RESOLUTION`, artış miktarı 16. |
+| `yükseklik`    | `INT`      | Video yüksekliği, varsayılan 480, minimum 16, maksimum `nodes.MAX_RESOLUTION`, artış miktarı 16. |
+| `uzunluk`    | `INT`      | Video uzunluğu, varsayılan 25, minimum 1, maksimum `nodes.MAX_RESOLUTION`, artış miktarı 4.     |
+| `toplu_boyut`| `INT`      | Toplu iş boyutu, varsayılan 1, minimum 1, maksimum 4096.                                           |
 
 ## Çıktılar
 

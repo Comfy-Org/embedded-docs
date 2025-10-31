@@ -7,7 +7,7 @@ TorchCompileModel düğümü, bir modelin performansını optimize etmek için P
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Derlenecek ve optimize edilecek model |
-| `backend` | STRING | Evet | "inductor"<br>"cudagraphs" | Optimizasyon için kullanılacak PyTorch derleme backend'i |
+| `arka_uç` | STRING | Evet | "inductor"<br>"cudagraphs" | Optimizasyon için kullanılacak PyTorch derleme backend'i |
 
 ## Çıktılar
 

@@ -6,10 +6,10 @@ Hunyuan3Dv2ConditioningMultiView düğümü, 3D video üretimi için çok görü
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `front` | CLIP_VISION_OUTPUT | Hayır | - | Ön görüntü için CLIP görüntü çıktısı |
-| `left` | CLIP_VISION_OUTPUT | Hayır | - | Sol görüntü için CLIP görüntü çıktısı |
-| `back` | CLIP_VISION_OUTPUT | Hayır | - | Arka görüntü için CLIP görüntü çıktısı |
-| `right` | CLIP_VISION_OUTPUT | Hayır | - | Sağ görüntü için CLIP görüntü çıktısı |
+| `ön` | CLIP_VISION_OUTPUT | Hayır | - | Ön görüntü için CLIP görüntü çıktısı |
+| `sol` | CLIP_VISION_OUTPUT | Hayır | - | Sol görüntü için CLIP görüntü çıktısı |
+| `arka` | CLIP_VISION_OUTPUT | Hayır | - | Arka görüntü için CLIP görüntü çıktısı |
+| `sağ` | CLIP_VISION_OUTPUT | Hayır | - | Sağ görüntü için CLIP görüntü çıktısı |
 
 **Not:** Düğümün çalışması için en az bir görüntü girdisi sağlanmalıdır. Düğüm yalnızca geçerli CLIP görüntü çıktı verisi içeren görüntüleri işleyecektir.
 
@@ -17,5 +17,5 @@ Hunyuan3Dv2ConditioningMultiView düğümü, 3D video üretimi için çok görü
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Konumsal kodlama ile birleştirilmiş çok görüntülü yerleştirmeleri içeren pozitif koşullandırma |
+| `negatif` | CONDITIONING | Konumsal kodlama ile birleştirilmiş çok görüntülü yerleştirmeleri içeren pozitif koşullandırma |
 | `negative` | CONDITIONING | Karşılaştırmalı öğrenme için sıfır değerlerle negatif koşullandırma |

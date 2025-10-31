@@ -6,11 +6,11 @@ OpenAI'nin DALL·E 3 uç noktası aracılığıyla görüntüleri eşzamanlı ol
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | DALL·E için metin istemi (varsayılan: "") |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı (varsayılan: 0) |
-| `quality` | COMBO | Hayır | "standard"<br>"hd" | Görüntü kalitesi (varsayılan: "standard") |
-| `style` | COMBO | Hayır | "natural"<br>"vivid" | Canlı (Vivid) stil, modelin hiper gerçekçi ve dramatik görüntüler oluşturmaya yönelmesine neden olur. Doğal (Natural) stil ise modelin daha doğal, daha az hiper gerçekçi görünen görüntüler üretmesine neden olur. (varsayılan: "natural") |
-| `size` | COMBO | Hayır | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Görüntü boyutu (varsayılan: "1024x1024") |
+| `istem` | STRING | Evet | - | DALL·E için metin istemi (varsayılan: "") |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı (varsayılan: 0) |
+| `kalite` | COMBO | Hayır | "standard"<br>"hd" | Görüntü kalitesi (varsayılan: "standard") |
+| `stil` | COMBO | Hayır | "natural"<br>"vivid" | Canlı (Vivid) stil, modelin hiper gerçekçi ve dramatik görüntüler oluşturmaya yönelmesine neden olur. Doğal (Natural) stil ise modelin daha doğal, daha az hiper gerçekçi görünen görüntüler üretmesine neden olur. (varsayılan: "natural") |
+| `boyut` | COMBO | Hayır | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Görüntü boyutu (varsayılan: "1024x1024") |
 
 ## Çıktılar
 

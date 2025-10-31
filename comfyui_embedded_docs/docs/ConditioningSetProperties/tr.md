@@ -6,12 +6,12 @@ ConditioningSetProperties düğümü, koşullandırma verilerinin özelliklerini
 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `cond_NEW` | CONDITIONING | Gerekli | - | - | Değiştirilecek koşullandırma verisi |
-| `strength` | FLOAT | Gerekli | 1.0 | 0.0-10.0 | Koşullandırma etkisinin yoğunluğunu kontrol eder |
-| `set_cond_area` | STRING | Gerekli | default | ["default", "mask bounds"] | Koşullandırma alanının nasıl uygulanacağını belirler |
-| `mask` | MASK | İsteğe Bağlı | - | - | Koşullandırmanın nerede uygulanacağını kısıtlamak için isteğe bağlı maske |
-| `hooks` | HOOKS | İsteğe Bağlı | - | - | Özel işleme için isteğe bağlı kanca fonksiyonları |
-| `timesteps` | TIMESTEPS_RANGE | İsteğe Bağlı | - | - | Koşullandırmanın ne zaman aktif olacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
+| `yeni_koşul` | CONDITIONING | Gerekli | - | - | Değiştirilecek koşullandırma verisi |
+| `güç` | FLOAT | Gerekli | 1.0 | 0.0-10.0 | Koşullandırma etkisinin yoğunluğunu kontrol eder |
+| `koşul_alanı_ayarla` | STRING | Gerekli | default | ["default", "mask bounds"] | Koşullandırma alanının nasıl uygulanacağını belirler |
+| `maske` | MASK | İsteğe Bağlı | - | - | Koşullandırmanın nerede uygulanacağını kısıtlamak için isteğe bağlı maske |
+| `kancalar` | HOOKS | İsteğe Bağlı | - | - | Özel işleme için isteğe bağlı kanca fonksiyonları |
+| `zaman_adımları` | TIMESTEPS_RANGE | İsteğe Bağlı | - | - | Koşullandırmanın ne zaman aktif olacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
 
 **Not:** Bir `mask` sağlandığında, `set_cond_area` parametresi, koşullandırma uygulamasını yalnızca maskelenmiş bölgeyle kısıtlamak için "mask bounds" olarak ayarlanabilir.
 

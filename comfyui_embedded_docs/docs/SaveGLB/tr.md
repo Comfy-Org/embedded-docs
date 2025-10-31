@@ -6,8 +6,8 @@ SaveGLB düğümü, 3B mesh verilerini GLB dosyaları olarak kaydeder; bu, 3B mo
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `mesh` | MESH | Evet | - | GLB dosyası olarak kaydedilecek 3B mesh verisi |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için önek (varsayılan: "mesh/ComfyUI") |
+| `ağ` | MESH | Evet | - | GLB dosyası olarak kaydedilecek 3B mesh verisi |
+| `dosyaadı_öneki` | STRING | Hayır | - | Çıktı dosya adı için önek (varsayılan: "mesh/ComfyUI") |
 
 ## Çıktılar
 

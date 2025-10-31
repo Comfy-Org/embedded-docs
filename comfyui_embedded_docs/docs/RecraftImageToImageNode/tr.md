@@ -6,14 +6,14 @@ Bu düğüm, mevcut bir görseli metin istemi ve güç parametresine dayanarak d
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Değiştirilecek giriş görseli |
-| `prompt` | STRING | Evet | - | Görsel oluşturma için istem (varsayılan: "") |
+| `görüntü` | IMAGE | Evet | - | Değiştirilecek giriş görseli |
+| `istem` | STRING | Evet | - | Görsel oluşturma için istem (varsayılan: "") |
 | `n` | INT | Evet | 1-6 | Oluşturulacak görsel sayısı (varsayılan: 1) |
-| `strength` | FLOAT | Evet | 0.0-1.0 | Orijinal görselden farkı tanımlar, [0, 1] aralığında olmalıdır; 0 neredeyse aynı, 1 ise çok az benzerlik anlamına gelir (varsayılan: 0.5) |
-| `seed` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak belirleyici değildir (varsayılan: 0) |
-| `recraft_style` | STYLEV3 | Hayır | - | Görsel oluşturma için isteğe bağlı stil seçimi |
-| `negative_prompt` | STRING | Hayır | - | Bir görselde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: "") |
-| `recraft_controls` | CONTROLS | Hayır | - | Recraft Kontroller düğümü aracılığıyla oluşturma üzerinde isteğe bağlı ek kontroller |
+| `güç` | FLOAT | Evet | 0.0-1.0 | Orijinal görselden farkı tanımlar, [0, 1] aralığında olmalıdır; 0 neredeyse aynı, 1 ise çok az benzerlik anlamına gelir (varsayılan: 0.5) |
+| `tohum` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak belirleyici değildir (varsayılan: 0) |
+| `recraft_stili` | STYLEV3 | Hayır | - | Görsel oluşturma için isteğe bağlı stil seçimi |
+| `negatif_istem` | STRING | Hayır | - | Bir görselde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: "") |
+| `recraft_kontrolleri` | CONTROLS | Hayır | - | Recraft Kontroller düğümü aracılığıyla oluşturma üzerinde isteğe bağlı ek kontroller |
 
 **Not:** `seed` parametresi yalnızca düğümün yeniden yürütülmesini tetikler ancak belirleyici sonuçları garanti etmez. Güç parametresi dahili olarak 2 ondalık basamağa yuvarlanır.
 
@@ -21,4 +21,4 @@ Bu düğüm, mevcut bir görseli metin istemi ve güç parametresine dayanarak d
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Giriş görseli ve isteme dayalı olarak oluşturulan görsel(ler) |
+| `görüntü` | IMAGE | Giriş görseli ve isteme dayalı olarak oluşturulan görsel(ler) |

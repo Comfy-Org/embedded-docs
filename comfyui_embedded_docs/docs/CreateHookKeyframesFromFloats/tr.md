@@ -6,11 +6,11 @@ Bu düğüm, belirtilen başlangıç ve bitiş yüzdeleri arasında eşit şekil
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `floats_strength` | FLOATS | Evet | -1 ile ∞ | Kareler için kuvvet değerlerini temsil eden tek bir kayan nokta değeri veya kayan nokta değerleri listesi (varsayılan: -1) |
-| `start_percent` | FLOAT | Evet | 0.0 ile 1.0 | Zaman çizelgesindeki ilk karenin başlangıç yüzdelik konumu (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Evet | 0.0 ile 1.0 | Zaman çizelgesindeki son karenin bitiş yüzdelik konumu (varsayılan: 1.0) |
-| `print_keyframes` | BOOLEAN | Evet | Doğru/Yanlış | Etkinleştirildiğinde, oluşturulan kare bilgilerini konsola yazdırır (varsayılan: Yanlış) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Hayır | - | Yeni karelerin ekleneceği mevcut bir kanca kare grubu veya sağlanmazsa yeni bir grup oluşturur |
+| `ondalık_güç` | FLOATS | Evet | -1 ile ∞ | Kareler için kuvvet değerlerini temsil eden tek bir kayan nokta değeri veya kayan nokta değerleri listesi (varsayılan: -1) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 ile 1.0 | Zaman çizelgesindeki ilk karenin başlangıç yüzdelik konumu (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 ile 1.0 | Zaman çizelgesindeki son karenin bitiş yüzdelik konumu (varsayılan: 1.0) |
+| `anahtar_kareleri_yazdır` | BOOLEAN | Evet | Doğru/Yanlış | Etkinleştirildiğinde, oluşturulan kare bilgilerini konsola yazdırır (varsayılan: Yanlış) |
+| `önceki_kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Yeni karelerin ekleneceği mevcut bir kanca kare grubu veya sağlanmazsa yeni bir grup oluşturur |
 
 **Not:** `floats_strength` parametresi, tek bir kayan nokta değeri veya yinelenebilir bir kayan nokta listesi kabul eder. Kareler, sağlanan kuvvet değerlerinin sayısına bağlı olarak `start_percent` ve `end_percent` arasında doğrusal olarak dağıtılır.
 

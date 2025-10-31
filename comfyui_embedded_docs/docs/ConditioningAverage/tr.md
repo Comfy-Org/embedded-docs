@@ -10,9 +10,9 @@ Aşağıda gösterildiği gibi, `conditioning_to` parametresinin gücünü ayarl
 
 | Parametre               | Comfy Veri Türü | Açıklama |
 |------------------------|---------------|-------------|
-| `conditioning_to`      | `CONDITIONING`| Ağırlıklı ortalamanın ana temeli olarak hizmet eden hedef koşullandırma vektörü. |
-| `conditioning_from`    | `CONDITIONING`| Belirli bir ağırlığa göre hedefe harmanlanacak olan kaynak koşullandırma vektörü. |
-| `conditioning_to_strength` | `FLOAT`    | Hedef koşullandırmanın gücü, aralık 0.0-1.0, varsayılan 1.0, adım 0.01. |
+| `hedef_koşullandırma`      | `CONDITIONING`| Ağırlıklı ortalamanın ana temeli olarak hizmet eden hedef koşullandırma vektörü. |
+| `kaynak_koşullandırma`    | `CONDITIONING`| Belirli bir ağırlığa göre hedefe harmanlanacak olan kaynak koşullandırma vektörü. |
+| `hedef_koşullandırma_gücü` | `FLOAT`    | Hedef koşullandırmanın gücü, aralık 0.0-1.0, varsayılan 1.0, adım 0.01. |
 
 ## Çıktılar
 

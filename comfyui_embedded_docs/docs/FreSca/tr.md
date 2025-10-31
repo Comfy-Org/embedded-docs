@@ -7,9 +7,9 @@ FreSca düğümü, örnekleme sürecinde frekansa bağlı ölçeklendirme uygula
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Frekans ölçeklendirmesinin uygulanacağı model |
-| `scale_low` | FLOAT | Hayır | 0-10 | Düşük frekanslı bileşenler için ölçeklendirme faktörü (varsayılan: 1.0) |
-| `scale_high` | FLOAT | Hayır | 0-10 | Yüksek frekanslı bileşenler için ölçeklendirme faktörü (varsayılan: 1.25) |
-| `freq_cutoff` | INT | Hayır | 1-10000 | Düşük frekans olarak değerlendirilecek merkez etrafındaki frekans indekslerinin sayısı (varsayılan: 20) |
+| `düşük_ölçek` | FLOAT | Hayır | 0-10 | Düşük frekanslı bileşenler için ölçeklendirme faktörü (varsayılan: 1.0) |
+| `yüksek_ölçek` | FLOAT | Hayır | 0-10 | Yüksek frekanslı bileşenler için ölçeklendirme faktörü (varsayılan: 1.25) |
+| `frekans_kesme` | INT | Hayır | 1-10000 | Düşük frekans olarak değerlendirilecek merkez etrafındaki frekans indekslerinin sayısı (varsayılan: 20) |
 
 ## Çıktılar
 

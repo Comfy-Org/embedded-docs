@@ -6,9 +6,9 @@ Create Hook Keyframe düğümü, bir oluşturma sürecinde hook davranışının
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `strength_mult` | FLOAT | Evet | -20.0 - 20.0 | Bu kare animasyonundaki hook gücü için çarpan (varsayılan: 1.0) |
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | Bu kare animasyonunun etkili olduğu oluşturma sürecindeki yüzdelik nokta (varsayılan: 0.0) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Hayır | - | Bu kare animasyonunu eklemek için isteğe bağlı önceki hook kare animasyonu grubu |
+| `güç_çarpanı` | FLOAT | Evet | -20.0 - 20.0 | Bu kare animasyonundaki hook gücü için çarpan (varsayılan: 1.0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Bu kare animasyonunun etkili olduğu oluşturma sürecindeki yüzdelik nokta (varsayılan: 0.0) |
+| `önceki_kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Bu kare animasyonunu eklemek için isteğe bağlı önceki hook kare animasyonu grubu |
 
 ## Çıkışlar
 

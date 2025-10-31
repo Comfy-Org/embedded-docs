@@ -7,11 +7,11 @@ Bu düğüm, koşullandırma bağlamı içinde belirli alanları ayarlayarak ko�
 | Parametre | Veri Tipi | Açıklama |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma verisi. Uzamsal ayarlamaların uygulanması için temel oluşturur. |
-| `width`   | `INT`      | Koşullandırma bağlamı içinde ayarlanacak alanın genişliğini belirtir ve ayarın yatay kapsamını etkiler. |
-| `height`  | `INT`      | Ayarlanacak alanın yüksekliğini belirler ve koşullandırma değişikliğinin dikey kapsamını etkiler. |
+| `genişlik`   | `INT`      | Koşullandırma bağlamı içinde ayarlanacak alanın genişliğini belirtir ve ayarın yatay kapsamını etkiler. |
+| `yükseklik`  | `INT`      | Ayarlanacak alanın yüksekliğini belirler ve koşullandırma değişikliğinin dikey kapsamını etkiler. |
 | `x`       | `INT`      | Ayarlanacak alanın yatay başlangıç noktasıdır ve ayarı koşullandırma bağlamı içinde konumlandırır. |
 | `y`       | `INT`      | Alan ayarı için dikey başlangıç noktasıdır ve koşullandırma bağlamı içindeki konumunu belirler. |
-| `strength`| `FLOAT`    | Belirtilen alan içindeki koşullandırma değişikliğinin yoğunluğunu tanımlar ve ayarın etkisi üzerinde nüanslı kontrol sağlar. |
+| `güç`| `FLOAT`    | Belirtilen alan içindeki koşullandırma değişikliğinin yoğunluğunu tanımlar ve ayarın etkisi üzerinde nüanslı kontrol sağlar. |
 
 ## Çıktılar
 

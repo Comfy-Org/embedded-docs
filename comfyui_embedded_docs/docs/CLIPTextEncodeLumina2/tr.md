@@ -6,8 +6,8 @@ CLIP Text Encode for Lumina2 düğümü, bir sistem istemi ve kullanıcı istemi
 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `system_prompt` | STRING | COMBO | - | "superior", "alignment" | Lumina2 iki tür sistem istemi sağlar: Superior: Metin istemleri veya kullanıcı istemlerine dayanarak üstün derecede görüntü-metin uyumuna sahip üstün görüntüler oluşturmak için tasarlanmış bir asistansınız. Alignment: Metin istemlerine dayanarak en yüksek derecede görüntü-metin uyumuna sahip yüksek kaliteli görüntüler oluşturmak için tasarlanmış bir asistansınız. |
-| `user_prompt` | STRING | STRING | - | - | Kodlanacak metin. |
+| `sistem_istemi` | STRING | COMBO | - | "superior", "alignment" | Lumina2 iki tür sistem istemi sağlar: Superior: Metin istemleri veya kullanıcı istemlerine dayanarak üstün derecede görüntü-metin uyumuna sahip üstün görüntüler oluşturmak için tasarlanmış bir asistansınız. Alignment: Metin istemlerine dayanarak en yüksek derecede görüntü-metin uyumuna sahip yüksek kaliteli görüntüler oluşturmak için tasarlanmış bir asistansınız. |
+| `kullanıcı_istemi` | STRING | STRING | - | - | Kodlanacak metin. |
 | `clip` | CLIP | CLIP | - | - | Metni kodlamak için kullanılan CLIP modeli. |
 
 **Not:** `clip` girdisi gereklidir ve None olamaz. Eğer clip girdisi geçersizse, düğüm kontrol noktasının geçerli bir CLIP veya metin kodlayıcı modeli içermeyebileceğini belirten bir hata verecektir.

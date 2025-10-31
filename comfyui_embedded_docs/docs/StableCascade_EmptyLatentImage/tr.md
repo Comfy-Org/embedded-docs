@@ -6,14 +6,14 @@ StableCascade_EmptyLatentImage düğümü, Stable Cascade modelleri için boş l
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 256 - MAX_RESOLUTION | Çıktı görselinin piksel cinsinden genişliği (varsayılan: 1024, adım: 8) |
-| `height` | INT | Evet | 256 - MAX_RESOLUTION | Çıktı görselinin piksel cinsinden yüksekliği (varsayılan: 1024, adım: 8) |
-| `compression` | INT | Evet | 4 - 128 | C aşaması için latent boyutları belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1) |
-| `batch_size` | INT | Hayır | 1 - 4096 | Bir toplu işte üretilecek latent örnek sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 256 - MAX_RESOLUTION | Çıktı görselinin piksel cinsinden genişliği (varsayılan: 1024, adım: 8) |
+| `yükseklik` | INT | Evet | 256 - MAX_RESOLUTION | Çıktı görselinin piksel cinsinden yüksekliği (varsayılan: 1024, adım: 8) |
+| `sıkıştırma` | INT | Evet | 4 - 128 | C aşaması için latent boyutları belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1) |
+| `toplu_boyut` | INT | Hayır | 1 - 4096 | Bir toplu işte üretilecek latent örnek sayısı (varsayılan: 1) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `stage_c` | LATENT | [batch_size, 16, height//compression, width//compression] boyutlarında C aşaması latent tensörü |
+| `aşama_b` | LATENT | [batch_size, 16, height//compression, width//compression] boyutlarında C aşaması latent tensörü |
 | `stage_b` | LATENT | [batch_size, 4, height//4, width//4] boyutlarında B aşaması latent tensörü |

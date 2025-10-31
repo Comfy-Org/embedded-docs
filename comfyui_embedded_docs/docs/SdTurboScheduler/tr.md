@@ -7,8 +7,8 @@ SDTurboScheduler, görüntü örneklemesi için bir sigma değerleri dizisi olu�
 | Parametre | Veri Tipi | Açıklama |
 | --- | --- | --- |
 | `model` | `MODEL` | Model parametresi, sigma değeri üretimi için kullanılacak olan üretken modeli belirtir. Zamanlayıcının belirli örnekleme davranışını ve yeteneklerini belirlemede çok önemlidir. |
-| `steps` | `INT` | Adımlar parametresi, oluşturulacak sigma dizisinin uzunluğunu belirler ve gürültü giderme işleminin detay seviyesini doğrudan etkiler. |
-| `denoise` | `FLOAT` | Gürültü giderme parametresi, sigma dizisinin başlangıç noktasını ayarlayarak, görüntü oluşturma sırasında uygulanan gürültü giderme seviyesi üzerinde daha hassas kontrol sağlar. |
+| `adımlar` | `INT` | Adımlar parametresi, oluşturulacak sigma dizisinin uzunluğunu belirler ve gürültü giderme işleminin detay seviyesini doğrudan etkiler. |
+| `gürültü_azaltma` | `FLOAT` | Gürültü giderme parametresi, sigma dizisinin başlangıç noktasını ayarlayarak, görüntü oluşturma sırasında uygulanan gürültü giderme seviyesi üzerinde daha hassas kontrol sağlar. |
 
 ## Çıktılar
 

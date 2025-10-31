@@ -6,12 +6,12 @@ VAEDecodeTiled düğümü, büyük görüntüleri verimli bir şekilde işlemek 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | Görüntülere dönüştürülecek gizli temsil |
+| `örnekler` | LATENT | Evet | - | Görüntülere dönüştürülecek gizli temsil |
 | `vae` | VAE | Evet | - | Gizli örnekleri dönüştürmek için kullanılan VAE modeli |
-| `tile_size` | INT | Evet | 64-4096 (adım: 32) | İşleme için her bir karonun boyutu (varsayılan: 512) |
-| `overlap` | INT | Evet | 0-4096 (adım: 32) | Bitişik karolar arasındaki örtüşme miktarı (varsayılan: 64) |
-| `temporal_size` | INT | Evet | 8-4096 (adım: 4) | Sadece video VAE'leri için kullanılır: Aynı anda dönüştürülecek kare miktarı (varsayılan: 64) |
-| `temporal_overlap` | INT | Evet | 4-4096 (adım: 4) | Sadece video VAE'leri için kullanılır: Örtüştürülecek kare miktarı (varsayılan: 8) |
+| `döşeme_boyutu` | INT | Evet | 64-4096 (adım: 32) | İşleme için her bir karonun boyutu (varsayılan: 512) |
+| `örtüşme` | INT | Evet | 0-4096 (adım: 32) | Bitişik karolar arasındaki örtüşme miktarı (varsayılan: 64) |
+| `zamansal_boyut` | INT | Evet | 8-4096 (adım: 4) | Sadece video VAE'leri için kullanılır: Aynı anda dönüştürülecek kare miktarı (varsayılan: 64) |
+| `zamansal_örtüşme` | INT | Evet | 4-4096 (adım: 4) | Sadece video VAE'leri için kullanılır: Örtüştürülecek kare miktarı (varsayılan: 8) |
 
 **Not:** Düğüm, örtüşme değerleri pratik sınırları aştığında bunları otomatik olarak ayarlar. Eğer `tile_size`, `overlap` değerinin 4 katından az ise, örtüşme karo boyutunun dörtte birine indirilir. Benzer şekilde, eğer `temporal_size`, `temporal_overlap` değerinin iki katından az ise, zamansal örtüşme yarıya indirilir.
 

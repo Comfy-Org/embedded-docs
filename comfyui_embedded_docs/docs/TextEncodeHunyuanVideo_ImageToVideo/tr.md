@@ -7,9 +7,9 @@ TextEncodeHunyuanVideo_ImageToVideo düğümü, metin istemlerini görsel yerle�
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `clip` | CLIP | Evet | - | Token oluşturma ve kodlama için kullanılan CLIP modeli |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Evet | - | Görsel bağlam sağlayan bir CLIP görüntü modelinden gelen görsel yerleştirmeler |
-| `prompt` | STRING | Evet | - | Video üretimine rehberlik edecek metin açıklaması, çok satırlı girişi ve dinamik istemleri destekler |
-| `image_interleave` | INT | Evet | 1-512 | Görüntünün, metin istemine kıyasla ne kadar etkili olacağını belirler. Daha yüksek sayı, metin isteminden daha fazla etki anlamına gelir. (varsayılan: 2) |
+| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Evet | - | Görsel bağlam sağlayan bir CLIP görüntü modelinden gelen görsel yerleştirmeler |
+| `istem` | STRING | Evet | - | Video üretimine rehberlik edecek metin açıklaması, çok satırlı girişi ve dinamik istemleri destekler |
+| `görüntü_serpiştirme` | INT | Evet | 1-512 | Görüntünün, metin istemine kıyasla ne kadar etkili olacağını belirler. Daha yüksek sayı, metin isteminden daha fazla etki anlamına gelir. (varsayılan: 2) |
 
 ## Çıkışlar
 

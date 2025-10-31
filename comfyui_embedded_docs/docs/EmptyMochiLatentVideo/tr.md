@@ -6,10 +6,10 @@ EmptyMochiLatentVideo düğümü, belirtilen boyutlarda boş bir gizli video ten
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 16 - MAX_RESOLUTION | Gizli videonun piksel cinsinden genişliği (varsayılan: 848, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16 - MAX_RESOLUTION | Gizli videonun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Evet | 7 - MAX_RESOLUTION | Gizli videodaki kare sayısı (varsayılan: 25) |
-| `batch_size` | INT | Hayır | 1 - 4096 | Toplu işlemde oluşturulacak gizli video sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 16 - MAX_RESOLUTION | Gizli videonun piksel cinsinden genişliği (varsayılan: 848, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16 - MAX_RESOLUTION | Gizli videonun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Evet | 7 - MAX_RESOLUTION | Gizli videodaki kare sayısı (varsayılan: 25) |
+| `toplu_boyut` | INT | Hayır | 1 - 4096 | Toplu işlemde oluşturulacak gizli video sayısı (varsayılan: 1) |
 
 **Not:** Gerçek gizli boyutlar genişlik/8 ve yükseklik/8 olarak hesaplanır ve zamansal boyut ((uzunluk - 1) // 6) + 1 olarak hesaplanır.
 

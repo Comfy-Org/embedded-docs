@@ -6,9 +6,9 @@ Kling Sanal Giyim Node. Bir insan görüntüsü ve bir giysi görntüsü girerek
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `human_image` | IMAGE | Evet | - | Üzerine giysi denenecak insan görüntüsü |
-| `cloth_image` | IMAGE | Evet | - | İnsanın üzerinde denenecek giysi görüntüsü |
-| `model_name` | STRING | Evet | `"kolors-virtual-try-on-v1"` | Kullanılacak sanal giydirme modeli (varsayılan: "kolors-virtual-try-on-v1") |
+| `insan_görüntüsü` | IMAGE | Evet | - | Üzerine giysi denenecak insan görüntüsü |
+| `kıyafet_görüntüsü` | IMAGE | Evet | - | İnsanın üzerinde denenecek giysi görüntüsü |
+| `model_adı` | STRING | Evet | `"kolors-virtual-try-on-v1"` | Kullanılacak sanal giydirme modeli (varsayılan: "kolors-virtual-try-on-v1") |
 
 ## Çıktılar
 

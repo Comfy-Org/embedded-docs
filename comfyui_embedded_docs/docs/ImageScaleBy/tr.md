@@ -6,12 +6,12 @@ ImageScaleBy düğümü, çeşitli enterpolasyon yöntemleri kullanarak görünt
 
 | Parametre       | Veri Tipi    | Açıklama                                                                 |
 |-----------------|-------------|----------------------------------------------------------------------------|
-| `image`         | `IMAGE`     | Büyütülecek girdi görüntüsü. Bu parametre, büyütme işlemine tabi tutulacak temel görüntüyü sağladığı için çok önemlidir. |
-| `upscale_method`| COMBO[STRING] | Büyütme için kullanılacak enterpolasyon yöntemini belirtir. Yöntem seçimi, büyütülmüş görüntünün kalitesini ve özelliklerini etkileyebilir. |
-| `scale_by`      | `FLOAT`     | Görüntünün büyütüleceği faktör. Bu, çıktı görüntüsünün boyutunun girdi görüntüsüne göre ne kadar artacağını belirler. |
+| `görüntü`         | `IMAGE`     | Büyütülecek girdi görüntüsü. Bu parametre, büyütme işlemine tabi tutulacak temel görüntüyü sağladığı için çok önemlidir. |
+| `büyütme_yöntemi`| COMBO[STRING] | Büyütme için kullanılacak enterpolasyon yöntemini belirtir. Yöntem seçimi, büyütülmüş görüntünün kalitesini ve özelliklerini etkileyebilir. |
+| `oranla_büyüt`      | `FLOAT`     | Görüntünün büyütüleceği faktör. Bu, çıktı görüntüsünün boyutunun girdi görüntüsüne göre ne kadar artacağını belirler. |
 
 ## Çıktılar
 
 | Parametre | Veri Tipi | Açıklama                                                   |
 |-----------|-------------|---------------------------------------------------------------|
-| `image`   | `IMAGE`     | Belirtilen ölçek faktörü ve enterpolasyon yöntemine göre girdi görüntüsünden daha büyük olan büyütülmüş görüntü. |
+| `görüntü`   | `IMAGE`     | Belirtilen ölçek faktörü ve enterpolasyon yöntemine göre girdi görüntüsünden daha büyük olan büyütülmüş görüntü. |

@@ -6,10 +6,10 @@ VAEDecodeHunyuan3D düğümü, gizli temsilleri bir VAE kod çözücü kullanara
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | 3B voksel verisine dönüştürülecek gizli temsil |
+| `örnekler` | LATENT | Evet | - | 3B voksel verisine dönüştürülecek gizli temsil |
 | `vae` | VAE | Evet | - | Gizli örnekleri çözmek için kullanılan VAE modeli |
-| `num_chunks` | INT | Evet | 1000-500000 | Bellek yönetimi için işlemi bölmek üzere kullanılan parça sayısı (varsayılan: 8000) |
-| `octree_resolution` | INT | Evet | 16-512 | 3B voksel oluşturma için kullanılan sekizli ağaç yapısının çözünürlüğü (varsayılan: 256) |
+| `parça_sayısı` | INT | Evet | 1000-500000 | Bellek yönetimi için işlemi bölmek üzere kullanılan parça sayısı (varsayılan: 8000) |
+| `sekizli_ağaç_çözünürlüğü` | INT | Evet | 16-512 | 3B voksel oluşturma için kullanılan sekizli ağaç yapısının çözünürlüğü (varsayılan: 256) |
 
 ## Çıktılar
 

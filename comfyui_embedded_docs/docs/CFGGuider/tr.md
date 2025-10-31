@@ -7,8 +7,8 @@ CFGGuider düğümü, görüntü oluşturma sürecindeki örnekleme işlemini ko
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `model` | MODEL | Gerekli | - | - | Kılavuzluk için kullanılacak model |
-| `positive` | CONDITIONING | Gerekli | - | - | Oluşturma işlemini istenen içeriğe yönlendiren olumlu koşullandırma |
-| `negative` | CONDITIONING | Gerekli | - | - | Oluşturma işlemini istenmeyen içerikten uzaklaştıran olumsuz koşullandırma |
+| `pozitif` | CONDITIONING | Gerekli | - | - | Oluşturma işlemini istenen içeriğe yönlendiren olumlu koşullandırma |
+| `negatif` | CONDITIONING | Gerekli | - | - | Oluşturma işlemini istenmeyen içerikten uzaklaştıran olumsuz koşullandırma |
 | `cfg` | FLOAT | Gerekli | 8.0 | 0.0 - 100.0 | Koşullandırmanın oluşturma işlemini ne kadar güçlü etkilediğini kontrol eden sınıflandırıcısız kılavuzluk ölçeği |
 
 ## Çıktılar

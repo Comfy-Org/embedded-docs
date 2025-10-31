@@ -6,16 +6,16 @@ SD_4XUpscale_Conditioning düğümü, difüzyon modellerini kullanarak görünt�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | - | Yukarı ölçeklenecek girdi görüntüleri |
-| `positive` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verileri |
-| `negative` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verileri |
-| `scale_ratio` | FLOAT | Hayır | 0.0 - 10.0 | Girdi görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) |
-| `noise_augmentation` | FLOAT | Hayır | 0.0 - 1.0 | Yukarı ölçeklendirme sürecinde eklenen gürültü miktarı (varsayılan: 0.0) |
+| `görüntüler` | IMAGE | Evet | - | Yukarı ölçeklenecek girdi görüntüleri |
+| `pozitif` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verileri |
+| `negatif` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verileri |
+| `ölçek_oranı` | FLOAT | Hayır | 0.0 - 10.0 | Girdi görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) |
+| `gürültü_artırımı` | FLOAT | Hayır | 0.0 - 1.0 | Yukarı ölçeklendirme sürecinde eklenen gürültü miktarı (varsayılan: 0.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Yukarı ölçeklendirme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Yukarı ölçeklendirme bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | Yukarı ölçeklendirme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
+| `gizli` | CONDITIONING | Yukarı ölçeklendirme bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
 | `latent` | LATENT | Yukarı ölçeklenmiş boyutlarla eşleşen boş gizli temsil |

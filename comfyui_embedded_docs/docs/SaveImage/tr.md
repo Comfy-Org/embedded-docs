@@ -7,8 +7,8 @@ Varsayılan kayıt konumu: `ComfyUI/output/`
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `images` | `IMAGE` | Kaydedilecek görüntüler. Bu parametre, doğrudan işlenecek ve diske kaydedilecek görüntü verilerini içerdiği için çok önemlidir. |
-| `filename_prefix` | STRING   | `ComfyUI/output/` klasörüne kaydedilen görüntüler için dosya adı öneki. Varsayılan değer `ComfyUI`'dır, ancak özelleştirebilirsiniz. |
+| `görüntüler` | `IMAGE` | Kaydedilecek görüntüler. Bu parametre, doğrudan işlenecek ve diske kaydedilecek görüntü verilerini içerdiği için çok önemlidir. |
+| `dosyaadı_öneki` | STRING   | `ComfyUI/output/` klasörüne kaydedilen görüntüler için dosya adı öneki. Varsayılan değer `ComfyUI`'dır, ancak özelleştirebilirsiniz. |
 
 ## Sağ Tıklama Menü Seçenekleri
 

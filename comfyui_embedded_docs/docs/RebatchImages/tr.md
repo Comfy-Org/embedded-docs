@@ -6,8 +6,8 @@ RebatchImages düğümü, bir grup görseli yeni bir grup konfigürasyonuna gör
 
 | Alan        | Veri Türü | Açıklama                                                                         |
 |-------------|-------------|-------------------------------------------------------------------------------------|
-| `images`    | `IMAGE`     | Yeniden gruplandırılacak görsellerin listesi. Bu parametre, yeniden gruplandırma işlemine tabi tutulacak girdi verilerini belirlemek için çok önemlidir. |
-| `batch_size`| `INT`       | Çıktı gruplarının istenen boyutunu belirtir. Bu parametre, girdi görsellerinin nasıl gruplandırılıp işlendiğini doğrudan etkileyerek çıktının yapısını etkiler. |
+| `görüntüler`    | `IMAGE`     | Yeniden gruplandırılacak görsellerin listesi. Bu parametre, yeniden gruplandırma işlemine tabi tutulacak girdi verilerini belirlemek için çok önemlidir. |
+| `toplu_boyut`| `INT`       | Çıktı gruplarının istenen boyutunu belirtir. Bu parametre, girdi görsellerinin nasıl gruplandırılıp işlendiğini doğrudan etkileyerek çıktının yapısını etkiler. |
 
 ## Çıktılar
 

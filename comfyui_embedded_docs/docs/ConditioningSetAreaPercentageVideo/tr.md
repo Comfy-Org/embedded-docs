@@ -6,17 +6,17 @@ ConditioningSetAreaPercentageVideo düğümü, video üretimi için belirli bir 
 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `conditioning` | CONDITIONING | Gerekli | - | - | Değiştirilecek koşullandırma verisi |
-| `width` | FLOAT | Gerekli | 1.0 | 0.0 - 1.0 | Alanın genişliği, toplam genişliğin yüzdesi olarak |
-| `height` | FLOAT | Gerekli | 1.0 | 0.0 - 1.0 | Alanın yüksekliği, toplam yüksekliğin yüzdesi olarak |
-| `temporal` | FLOAT | Gerekli | 1.0 | 0.0 - 1.0 | Alanın zamansal süresi, toplam video uzunluğunun yüzdesi olarak |
+| `koşullandırma` | CONDITIONING | Gerekli | - | - | Değiştirilecek koşullandırma verisi |
+| `genişlik` | FLOAT | Gerekli | 1.0 | 0.0 - 1.0 | Alanın genişliği, toplam genişliğin yüzdesi olarak |
+| `yükseklik` | FLOAT | Gerekli | 1.0 | 0.0 - 1.0 | Alanın yüksekliği, toplam yüksekliğin yüzdesi olarak |
+| `zamansal` | FLOAT | Gerekli | 1.0 | 0.0 - 1.0 | Alanın zamansal süresi, toplam video uzunluğunun yüzdesi olarak |
 | `x` | FLOAT | Gerekli | 0.0 | 0.0 - 1.0 | Alanın yatay başlangıç konumu, yüzde olarak |
 | `y` | FLOAT | Gerekli | 0.0 | 0.0 - 1.0 | Alanın dikey başlangıç konumu, yüzde olarak |
 | `z` | FLOAT | Gerekli | 0.0 | 0.0 - 1.0 | Alanın zamansal başlangıç konumu, video zaman çizelgesinin yüzdesi olarak |
-| `strength` | FLOAT | Gerekli | 1.0 | 0.0 - 10.0 | Tanımlanan alan içindeki koşullandırmaya uygulanan güç çarpanı |
+| `güç` | FLOAT | Gerekli | 1.0 | 0.0 - 10.0 | Tanımlanan alan içindeki koşullandırmaya uygulanan güç çarpanı |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Belirtilen alan ve güç ayarları uygulanmış olarak değiştirilmiş koşullandırma verisi |
+| `koşullandırma` | CONDITIONING | Belirtilen alan ve güç ayarları uygulanmış olarak değiştirilmiş koşullandırma verisi |

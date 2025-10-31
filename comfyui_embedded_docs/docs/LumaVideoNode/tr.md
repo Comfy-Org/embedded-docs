@@ -6,14 +6,14 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize) |
+| `istem` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize) |
 | `model` | COMBO | Evet | Birden fazla seçenek mevcut | Kullanılacak video oluşturma modeli |
-| `aspect_ratio` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan video için en-boy oranı (varsayılan: 16:9) |
-| `resolution` | COMBO | Evet | Birden fazla seçenek mevcut | Video için çıktı çözünürlüğü (varsayılan: 540p) |
-| `duration` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi |
-| `loop` | BOOLEAN | Evet | - | Videoda döngü olup olmayacağı (varsayılan: False) |
-| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohuma bakılmaksızın belirsizdir (varsayılan: 0) |
-| `luma_concepts` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları |
+| `en_boy_oranı` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan video için en-boy oranı (varsayılan: 16:9) |
+| `çözünürlük` | COMBO | Evet | Birden fazla seçenek mevcut | Video için çıktı çözünürlüğü (varsayılan: 540p) |
+| `süre` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi |
+| `döngü` | BOOLEAN | Evet | - | Videoda döngü olup olmayacağı (varsayılan: False) |
+| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohuma bakılmaksızın belirsizdir (varsayılan: 0) |
+| `luma_kavramları` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları |
 
 **Not:** `ray_1_6` modeli kullanılırken, `duration` ve `resolution` parametreleri otomatik olarak None olarak ayarlanır ve oluşturma işlemini etkilemez.
 

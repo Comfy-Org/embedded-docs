@@ -7,7 +7,7 @@ RescaleCFG düğümü, bir modelin çıktısındaki koşullandırma ve koşulsuz
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `model`   | MODEL     | Model parametresi, ayarlanacak olan üretim modelini temsil eder. Düğümün model çıktısına bir yeniden ölçeklendirme işlevi uygulaması nedeniyle kritik öneme sahiptir ve bu doğrudan üretim sürecini etkiler. |
-| `multiplier` | `FLOAT` | Multiplier parametresi, model çıktısına uygulanan yeniden ölçeklendirme miktarını kontrol eder. Orijinal ve yeniden ölçeklendirilmiş bileşenler arasındaki dengeyi belirleyerek, nihai çıktının özelliklerini etkiler. |
+| `çarpan` | `FLOAT` | Multiplier parametresi, model çıktısına uygulanan yeniden ölçeklendirme miktarını kontrol eder. Orijinal ve yeniden ölçeklendirilmiş bileşenler arasındaki dengeyi belirleyerek, nihai çıktının özelliklerini etkiler. |
 
 ## Çıktılar
 

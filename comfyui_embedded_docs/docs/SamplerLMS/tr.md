@@ -6,7 +6,7 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `order` | INT | Evet | 1 - 100 | LMS örnekleyici algoritması için sıra parametresi; sayısal yöntemin doğruluğunu ve kararlılığını kontrol eder (varsayılan: 4) |
+| `sıra` | INT | Evet | 1 - 100 | LMS örnekleyici algoritması için sıra parametresi; sayısal yöntemin doğruluğunu ve kararlılığını kontrol eder (varsayılan: 4) |
 
 ## Çıktılar
 

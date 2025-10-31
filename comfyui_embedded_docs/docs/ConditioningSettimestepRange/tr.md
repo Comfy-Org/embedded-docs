@@ -7,8 +7,8 @@ Bu düğüm, belirli bir zaman adımı aralığı ayarlayarak koşullandırmanı
 | Parametre | Veri Türü | Açıklama |
 | --- | --- | --- |
 | `CONDITIONING` | CONDITIONING | Koşullandırma girdisi, üretim sürecinin mevcut durumunu temsil eder ve bu düğüm, belirli bir zaman adımı aralığı ayarlayarak bu durumu değiştirir. |
-| `start` | `FLOAT` | Başlangıç parametresi, zaman adımı aralığının başlangıcını, toplam üretim sürecinin yüzdesi olarak belirler ve koşullandırma etkilerinin ne zaman başlayacağı üzerinde hassas kontrol sağlar. |
-| `end` | `FLOAT` | Bitiş parametresi, zaman adımı aralığının bitiş noktasını yüzde olarak tanımlar ve koşullandırma etkilerinin süresi ve sonlanması üzerinde hassas kontrol sağlar. |
+| `başlangıç` | `FLOAT` | Başlangıç parametresi, zaman adımı aralığının başlangıcını, toplam üretim sürecinin yüzdesi olarak belirler ve koşullandırma etkilerinin ne zaman başlayacağı üzerinde hassas kontrol sağlar. |
+| `bitiş` | `FLOAT` | Bitiş parametresi, zaman adımı aralığının bitiş noktasını yüzde olarak tanımlar ve koşullandırma etkilerinin süresi ve sonlanması üzerinde hassas kontrol sağlar. |
 
 ## Çıktılar
 

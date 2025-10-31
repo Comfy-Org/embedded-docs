@@ -7,13 +7,13 @@ PatchModelAddDownscale düğümü, Kohya Deep Shrink işlevselliğini bir modeld
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Küçültme yaması uygulanacak model |
-| `block_number` | INT | Hayır | 1-32 | Küçültmenin uygulanacağı belirli blok numarası (varsayılan: 3) |
-| `downscale_factor` | FLOAT | Hayır | 0.1-9.0 | Özelliklerin küçültüleceği faktör (varsayılan: 2.0) |
-| `start_percent` | FLOAT | Hayır | 0.0-1.0 | Küçültmenin başladığı gürültü giderme işlemi başlangıç noktası (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Hayır | 0.0-1.0 | Küçültmenin durduğu gürültü giderme işlemi bitiş noktası (varsayılan: 0.35) |
-| `downscale_after_skip` | BOOLEAN | Hayır | - | Atlama bağlantılarından sonra küçültme uygulanıp uygulanmayacağı (varsayılan: True) |
-| `downscale_method` | COMBO | Hayır | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | Küçültme işlemleri için kullanılan enterpolasyon yöntemi |
-| `upscale_method` | COMBO | Hayır | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | Büyütme işlemleri için kullanılan enterpolasyon yöntemi |
+| `blok_numarası` | INT | Hayır | 1-32 | Küçültmenin uygulanacağı belirli blok numarası (varsayılan: 3) |
+| `küçültme_faktörü` | FLOAT | Hayır | 0.1-9.0 | Özelliklerin küçültüleceği faktör (varsayılan: 2.0) |
+| `başlangıç_yüzdesi` | FLOAT | Hayır | 0.0-1.0 | Küçültmenin başladığı gürültü giderme işlemi başlangıç noktası (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Hayır | 0.0-1.0 | Küçültmenin durduğu gürültü giderme işlemi bitiş noktası (varsayılan: 0.35) |
+| `atlamadan_sonra_küçült` | BOOLEAN | Hayır | - | Atlama bağlantılarından sonra küçültme uygulanıp uygulanmayacağı (varsayılan: True) |
+| `küçültme_yöntemi` | COMBO | Hayır | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | Küçültme işlemleri için kullanılan enterpolasyon yöntemi |
+| `büyütme_yöntemi` | COMBO | Hayır | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | Büyütme işlemleri için kullanılan enterpolasyon yöntemi |
 
 ## Çıktılar
 

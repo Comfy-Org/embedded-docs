@@ -6,11 +6,11 @@ SplitSigmas düğümü, bir sigma değerleri dizisini belirtilen bir adıma gör
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `sigmas`  | `SIGMAS`    | 'sigmas' parametresi, bölünecek olan sigma değerleri dizisini temsil eder. Bölünme noktasını ve ortaya çıkan iki sigma değerleri dizisini belirlemek için esastır, düğümün yürütülmesini ve sonuçlarını etkiler. |
-| `step`    | `INT`       | 'step' parametresi, sigma dizisinin hangi indekste bölüneceğini belirtir. Ortaya çıkan iki sigma dizisi arasındaki sınırı tanımlamada kritik bir rol oynar, düğümün işlevselliğini ve çıktıların özelliklerini etkiler. |
+| `sigmalar`  | `SIGMAS`    | 'sigmas' parametresi, bölünecek olan sigma değerleri dizisini temsil eder. Bölünme noktasını ve ortaya çıkan iki sigma değerleri dizisini belirlemek için esastır, düğümün yürütülmesini ve sonuçlarını etkiler. |
+| `adım`    | `INT`       | 'step' parametresi, sigma dizisinin hangi indekste bölüneceğini belirtir. Ortaya çıkan iki sigma dizisi arasındaki sınırı tanımlamada kritik bir rol oynar, düğümün işlevselliğini ve çıktıların özelliklerini etkiler. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `sigmas`  | `SIGMAS`    | Düğüm, her biri orijinal dizinin belirtilen adımda bölünmüş bir kısmını temsil eden iki sigma değerleri dizisi çıktılar. Bu çıktılar, sigma değerlerinin farklılaştırılmış bir şekilde ele alınmasını gerektiren sonraki operasyonlar için çok önemlidir. |
+| `düşük_sigmalar`  | `SIGMAS`    | Düğüm, her biri orijinal dizinin belirtilen adımda bölünmüş bir kısmını temsil eden iki sigma değerleri dizisi çıktılar. Bu çıktılar, sigma değerlerinin farklılaştırılmış bir şekilde ele alınmasını gerektiren sonraki operasyonlar için çok önemlidir. |

@@ -7,10 +7,10 @@ UNetTemporalAttentionMultiply düğümü, zamansal bir UNet modelindeki farklı 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Dikkat çarpanları ile değiştirilecek giriş modeli |
-| `self_structural` | FLOAT | Hayır | 0.0 - 10.0 | Öz-dikkat yapısal bileşenleri için çarpan (varsayılan: 1.0) |
-| `self_temporal` | FLOAT | Hayır | 0.0 - 10.0 | Öz-dikkat zamansal bileşenleri için çarpan (varsayılan: 1.0) |
-| `cross_structural` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkat yapısal bileşenleri için çarpan (varsayılan: 1.0) |
-| `cross_temporal` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkat zamansal bileşenleri için çarpan (varsayılan: 1.0) |
+| `öz_yapısal` | FLOAT | Hayır | 0.0 - 10.0 | Öz-dikkat yapısal bileşenleri için çarpan (varsayılan: 1.0) |
+| `öz_zamansal` | FLOAT | Hayır | 0.0 - 10.0 | Öz-dikkat zamansal bileşenleri için çarpan (varsayılan: 1.0) |
+| `çapraz_yapısal` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkat yapısal bileşenleri için çarpan (varsayılan: 1.0) |
+| `çapraz_zamansal` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkat zamansal bileşenleri için çarpan (varsayılan: 1.0) |
 
 ## Çıkışlar
 

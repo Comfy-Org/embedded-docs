@@ -6,11 +6,11 @@ Bu düğüm, kompozitleme işlemleri için tasarlanmıştır ve özellikle bir g
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Alfa maskesiyle birleştirilecek ana görsel içerik. Şeffaflık bilgisi olmayan görüntüyü temsil eder. |
-| `alpha`   | `MASK`      | İlgili görüntünün şeffaflığını tanımlayan alfa maskesi. Görüntünün hangi kısımlarının şeffaf veya yarı şeffaf olması gerektiğini belirlemek için kullanılır. |
+| `görüntü`   | `IMAGE`     | Alfa maskesiyle birleştirilecek ana görsel içerik. Şeffaflık bilgisi olmayan görüntüyü temsil eder. |
+| `alfa`   | `MASK`      | İlgili görüntünün şeffaflığını tanımlayan alfa maskesi. Görüntünün hangi kısımlarının şeffaf veya yarı şeffaf olması gerektiğini belirlemek için kullanılır. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Çıktı, girdi görüntüsünü alfa maskesiyle birleştiren ve görsel içeriğe şeffaflık bilgisi katılmış tek bir görüntüdür. |
+| `görüntü`   | `IMAGE`     | Çıktı, girdi görüntüsünü alfa maskesiyle birleştiren ve görsel içeriğe şeffaflık bilgisi katılmış tek bir görüntüdür. |

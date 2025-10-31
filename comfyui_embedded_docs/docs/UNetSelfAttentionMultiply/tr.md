@@ -10,7 +10,7 @@ UNetSelfAttentionMultiply düğümü, bir UNet modelindeki öz-dikkat mekanizmas
 | `q` | FLOAT | Hayır | 0.0 - 10.0 | Sorgu bileşeni için çarpım faktörü (varsayılan: 1.0) |
 | `k` | FLOAT | Hayır | 0.0 - 10.0 | Anahtar bileşeni için çarpım faktörü (varsayılan: 1.0) |
 | `v` | FLOAT | Hayır | 0.0 - 10.0 | Değer bileşeni için çarpım faktörü (varsayılan: 1.0) |
-| `out` | FLOAT | Hayır | 0.0 - 10.0 | Çıktı bileşeni için çarpım faktörü (varsayılan: 1.0) |
+| `çıktı` | FLOAT | Hayır | 0.0 - 10.0 | Çıktı bileşeni için çarpım faktörü (varsayılan: 1.0) |
 
 ## Çıktılar
 

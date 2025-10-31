@@ -7,7 +7,7 @@
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Kararlı kademeli örneklemenin uygulanacağı girdi modeli |
-| `shift` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme parametrelerine uygulanacak kaydırma değeri (varsayılan: 2.0) |
+| `kaydırma` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme parametrelerine uygulanacak kaydırma değeri (varsayılan: 2.0) |
 
 ## Çıktılar
 

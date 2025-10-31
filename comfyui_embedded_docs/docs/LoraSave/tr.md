@@ -6,12 +6,12 @@ LoraSave düğümü, model farklılıklarından LoRA (Low-Rank Adaptation) dosya
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `filename_prefix` | STRING | Evet | - | Çıktı dosya adı için önek (varsayılan: "loras/ComfyUI_extracted_lora") |
-| `rank` | INT | Evet | 1-4096 | LoRA için rank değeri, boyutu ve karmaşıklığı kontrol eder (varsayılan: 8) |
-| `lora_type` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulacak LoRA'nın türü, çeşitli mevcut seçeneklerle |
-| `bias_diff` | BOOLEAN | Evet | - | LoRA hesaplamasında bias farklılıklarının dahil edilip edilmeyeceği (varsayılan: True) |
-| `model_diff` | MODEL | Hayır | - | Bir loraya dönüştürülecek ModelSubtract çıktısı |
-| `text_encoder_diff` | CLIP | Hayır | - | Bir loraya dönüştürülecek CLIPSubtract çıktısı |
+| `dosyaadı_öneki` | STRING | Evet | - | Çıktı dosya adı için önek (varsayılan: "loras/ComfyUI_extracted_lora") |
+| `rütbe` | INT | Evet | 1-4096 | LoRA için rank değeri, boyutu ve karmaşıklığı kontrol eder (varsayılan: 8) |
+| `lora_türü` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulacak LoRA'nın türü, çeşitli mevcut seçeneklerle |
+| `yanlılık_farkı` | BOOLEAN | Evet | - | LoRA hesaplamasında bias farklılıklarının dahil edilip edilmeyeceği (varsayılan: True) |
+| `model_farkı` | MODEL | Hayır | - | Bir loraya dönüştürülecek ModelSubtract çıktısı |
+| `metin_kodlayıcı_farkı` | CLIP | Hayır | - | Bir loraya dönüştürülecek CLIPSubtract çıktısı |
 
 **Not:** Düğümün çalışması için `model_diff` veya `text_encoder_diff` parametrelerinden en az birinin sağlanması gerekir. Eğer her ikisi de atlanırsa, düğüm herhangi bir çıktı üretmeyecektir.
 

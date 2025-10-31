@@ -7,8 +7,8 @@ Self-Attention Guidance düğümü, örnekleme süreci boyunca dikkat mekanizmas
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Self-attention guidance uygulanacak yayılım modeli |
-| `scale` | FLOAT | Hayır | -2.0 - 5.0 | Self-attention guidance etkisinin gücü (varsayılan: 0.5) |
-| `blur_sigma` | FLOAT | Hayır | 0.0 - 10.0 | Kılavuzluk haritasını oluşturmak için uygulanan bulanıklık miktarı (varsayılan: 2.0) |
+| `ölçek` | FLOAT | Hayır | -2.0 - 5.0 | Self-attention guidance etkisinin gücü (varsayılan: 0.5) |
+| `bulanıklık_sigma` | FLOAT | Hayır | 0.0 - 10.0 | Kılavuzluk haritasını oluşturmak için uygulanan bulanıklık miktarı (varsayılan: 2.0) |
 
 ## Çıktılar
 

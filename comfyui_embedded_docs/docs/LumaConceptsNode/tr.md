@@ -6,11 +6,11 @@ Luma Text to Video ve Luma Image to Video düğümleriyle kullanılmak üzere bi
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `concept1` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden ilk kamera konsepti seçimi |
-| `concept2` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden ikinci kamera konsepti seçimi |
-| `concept3` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden üçüncü kamera konsepti seçimi |
-| `concept4` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden dördüncü kamera konsepti seçimi |
-| `luma_concepts` | LUMA_CONCEPTS | Hayır | Yok | Burada seçilenlere eklemek için isteğe bağlı Kamera Konseptleri |
+| `kavram1` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden ilk kamera konsepti seçimi |
+| `kavram2` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden ikinci kamera konsepti seçimi |
+| `kavram3` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden üçüncü kamera konsepti seçimi |
+| `kavram4` | STRING | Evet | Birden fazla seçenek mevcut<br>"None" seçeneği dahil | Mevcut Luma konseptlerinden dördüncü kamera konsepti seçimi |
+| `luma_kavramları` | LUMA_CONCEPTS | Hayır | Yok | Burada seçilenlere eklemek için isteğe bağlı Kamera Konseptleri |
 
 **Not:** Dört konsept yuvasının tamamını kullanmak istemiyorsanız, tüm konsept parametreleri (`concept1` ila `concept4`) "None" olarak ayarlanabilir. Düğüm, sağlanan `luma_concepts` değerlerini seçilen konseptlerle birleştirerek kombine bir konsept zinciri oluşturacaktır.
 
@@ -18,4 +18,4 @@ Luma Text to Video ve Luma Image to Video düğümleriyle kullanılmak üzere bi
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `luma_concepts` | LUMA_CONCEPTS | Seçilen tüm konseptleri içeren birleştirilmiş kamera konsepti zinciri |
+| `luma_kavramları` | LUMA_CONCEPTS | Seçilen tüm konseptleri içeren birleştirilmiş kamera konsepti zinciri |

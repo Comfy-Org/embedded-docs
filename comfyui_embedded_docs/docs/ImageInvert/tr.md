@@ -6,10 +6,10 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | 'image' parametresi, tersine çevrilecek giriş görüntüsünü temsil eder. Renkleri tersine çevrilecek hedef görüntüyü belirtmek için çok önemlidir, bu da düğümün yürütülmesini ve ters çevirme işleminin görsel sonucunu etkiler. |
+| `görüntü`   | `IMAGE`     | 'image' parametresi, tersine çevrilecek giriş görüntüsünü temsil eder. Renkleri tersine çevrilecek hedef görüntüyü belirtmek için çok önemlidir, bu da düğümün yürütülmesini ve ters çevirme işleminin görsel sonucunu etkiler. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Çıktı, giriş görüntüsünün ters çevrilmiş halidir; her pikselin renk değeri tamamlayıcı rengine dönüştürülmüştür. |
+| `görüntü`   | `IMAGE`     | Çıktı, giriş görüntüsünün ters çevrilmiş halidir; her pikselin renk değeri tamamlayıcı rengine dönüştürülmüştür. |

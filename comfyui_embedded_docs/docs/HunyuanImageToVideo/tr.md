@@ -6,14 +6,14 @@ HunyuanImageToVideo düğümü, Hunyuan video modelini kullanarak görüntüleri
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi |
+| `pozitif` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi |
 | `vae` | VAE | Evet | - | Görüntüleri gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Evet | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, adım: 16) |
-| `height` | INT | Evet | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
-| `length` | INT | Evet | 1'den MAX_RESOLUTION'a | Çıktı videosundaki kare sayısı (varsayılan: 53, adım: 4) |
-| `batch_size` | INT | Evet | 1'den 4096'ya | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
-| `guidance_type` | COMBO | Evet | "v1 (birleştir)"<br>"v2 (değiştir)"<br>"özel" | Başlangıç görüntüsünü video oluşturmaya dahil etme yöntemi |
-| `start_image` | IMAGE | Hayır | - | Video oluşturmayı başlatmak için isteğe bağlı başlangıç görüntüsü |
+| `genişlik` | INT | Evet | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, adım: 16) |
+| `yükseklik` | INT | Evet | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
+| `uzunluk` | INT | Evet | 1'den MAX_RESOLUTION'a | Çıktı videosundaki kare sayısı (varsayılan: 53, adım: 4) |
+| `toplu_boyut` | INT | Evet | 1'den 4096'ya | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
+| `rehberlik_türü` | COMBO | Evet | "v1 (birleştir)"<br>"v2 (değiştir)"<br>"özel" | Başlangıç görüntüsünü video oluşturmaya dahil etme yöntemi |
+| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video oluşturmayı başlatmak için isteğe bağlı başlangıç görüntüsü |
 
 **Not:** `start_image` sağlandığında, düğüm seçilen `guidance_type`'a göre farklı rehberlik yöntemleri kullanır:
 
@@ -25,5 +25,5 @@ HunyuanImageToVideo düğümü, Hunyuan video modelini kullanarak görüntüleri
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | start_image sağlandığında görüntü rehberliği uygulanmış değiştirilmiş pozitif koşullandırma |
+| `gizli` | CONDITIONING | start_image sağlandığında görüntü rehberliği uygulanmış değiştirilmiş pozitif koşullandırma |
 | `latent` | LATENT | Video oluşturma modelleri tarafından daha fazla işlenmeye hazır video gizli temsili |

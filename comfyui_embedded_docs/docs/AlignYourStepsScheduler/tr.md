@@ -6,9 +6,9 @@ AlignYourStepsScheduler düğümü, farklı model türlerine dayalı olarak gür
 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model_type` | STRING | COMBO | - | SD1, SDXL, SVD | Sigma hesaplamasında kullanılacak model türünü belirtir |
-| `steps` | INT | INT | 10 | 1-10000 | Üretilecek toplam örnekleme adımı sayısı |
-| `denoise` | FLOAT | FLOAT | 1.0 | 0.0-1.0 | Görüntünün ne kadar gürültüsünün giderileceğini kontrol eder; 1.0 tüm adımları kullanır, daha düşük değerler daha az adım kullanır |
+| `model_türü` | STRING | COMBO | - | SD1, SDXL, SVD | Sigma hesaplamasında kullanılacak model türünü belirtir |
+| `adımlar` | INT | INT | 10 | 1-10000 | Üretilecek toplam örnekleme adımı sayısı |
+| `gürültü_azaltma` | FLOAT | FLOAT | 1.0 | 0.0-1.0 | Görüntünün ne kadar gürültüsünün giderileceğini kontrol eder; 1.0 tüm adımları kullanır, daha düşük değerler daha az adım kullanır |
 
 ## Çıktılar
 

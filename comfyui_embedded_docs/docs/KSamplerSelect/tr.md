@@ -6,7 +6,7 @@ KSamplerSelect düğümü, belirtilen örnekleyici adına dayalı olarak belirli
 
 | Parametre         | Veri Tipi      | Açıklama                                                                                      |
 |-------------------|----------------|------------------------------------------------------------------------------------------------|
-| `sampler_name`    | COMBO[STRING] | Seçilecek örnekleyicinin adını belirtir. Bu parametre, genel örnekleme davranışını ve sonuçlarını etkileyen hangi örnekleme stratejisinin kullanılacağını belirler. |
+| `örnekleyici_adı`    | COMBO[STRING] | Seçilecek örnekleyicinin adını belirtir. Bu parametre, genel örnekleme davranışını ve sonuçlarını etkileyen hangi örnekleme stratejisinin kullanılacağını belirler. |
 
 ## Çıktılar
 

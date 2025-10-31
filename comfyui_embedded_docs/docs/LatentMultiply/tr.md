@@ -6,8 +6,8 @@ LatentMultiply düğümü, örneklerin gizli temsilini belirtilen bir çarpanla 
 
 | Parametre    | Veri Türü   | Açıklama |
 |--------------|-------------|-------------|
-| `samples`    | `LATENT`    | 'samples' parametresi, ölçeklendirilecek gizli temsilleri ifade eder. Çarpma işleminin gerçekleştirileceği girdi verisini tanımlamak için çok önemlidir. |
-| `multiplier` | `FLOAT`     | 'multiplier' parametresi, gizli örneklere uygulanacak ölçeklendirme faktörünü belirtir. Gizli özelliklerin büyüklüğünü ayarlayarak, üretilen çıktı üzerinde nüanslı kontrol sağlamada kilit rol oynar. |
+| `örnekler`    | `LATENT`    | 'samples' parametresi, ölçeklendirilecek gizli temsilleri ifade eder. Çarpma işleminin gerçekleştirileceği girdi verisini tanımlamak için çok önemlidir. |
+| `çarpan` | `FLOAT`     | 'multiplier' parametresi, gizli örneklere uygulanacak ölçeklendirme faktörünü belirtir. Gizli özelliklerin büyüklüğünü ayarlayarak, üretilen çıktı üzerinde nüanslı kontrol sağlamada kilit rol oynar. |
 
 ## Çıktılar
 

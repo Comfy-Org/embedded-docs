@@ -7,10 +7,10 @@ ModelSamplingFlux düğümü, görüntü boyutlarına dayalı olarak bir kaydır
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Flux örneklemesi uygulanacak model |
-| `max_shift` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme hesaplaması için maksimum kaydırma değeri (varsayılan: 1.15) |
-| `base_shift` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme hesaplaması için temel kaydırma değeri (varsayılan: 0.5) |
-| `width` | INT | Evet | 16 - MAX_RESOLUTION | Hedef görüntünün piksel cinsinden genişliği (varsayılan: 1024) |
-| `height` | INT | Evet | 16 - MAX_RESOLUTION | Hedef görüntünün piksel cinsinden yüksekliği (varsayılan: 1024) |
+| `maks_kaydırma` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme hesaplaması için maksimum kaydırma değeri (varsayılan: 1.15) |
+| `temel_kaydırma` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme hesaplaması için temel kaydırma değeri (varsayılan: 0.5) |
+| `genişlik` | INT | Evet | 16 - MAX_RESOLUTION | Hedef görüntünün piksel cinsinden genişliği (varsayılan: 1024) |
+| `yükseklik` | INT | Evet | 16 - MAX_RESOLUTION | Hedef görüntünün piksel cinsinden yüksekliği (varsayılan: 1024) |
 
 ## Çıkışlar
 

@@ -6,11 +6,11 @@ SetFirstSigma düğümü, bir sigma değerleri dizisini, dizideki ilk sigma değ
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `sigmas` | SIGMAS | Evet | - | Değiştirilecek sigma değerlerinin girdi dizisi |
+| `sigmalar` | SIGMAS | Evet | - | Değiştirilecek sigma değerlerinin girdi dizisi |
 | `sigma` | FLOAT | Evet | 0.0 - 20000.0 | Dizideki ilk eleman olarak ayarlanacak yeni sigma değeri (varsayılan: 136.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `sigmas` | SIGMAS | İlk elemanı özel sigma değeri ile değiştirilmiş olan düzenlenmiş sigma dizisi |
+| `sigmalar` | SIGMAS | İlk elemanı özel sigma değeri ile değiştirilmiş olan düzenlenmiş sigma dizisi |

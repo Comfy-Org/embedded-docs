@@ -6,12 +6,12 @@ Bu düğüm, bir dizi görüntüyü animasyonlu bir WEBP dosyası olarak kaydetm
 
 | Alan              | Veri Türü   | Açıklama                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
-| `images`          | `IMAGE`     | Animasyonlu WEBP içinde kare olarak kaydedilecek görüntü listesi. Bu parametre, animasyonun görsel içeriğini tanımlamak için gereklidir. |
-| `filename_prefix` | `STRING`    | Çıktı dosyası için, bir sayaç ve '.webp' uzantısı eklenmiş olacak şekilde temel adı belirtir. Bu parametre, kaydedilen dosyaları tanımlamak ve düzenlemek için çok önemlidir. |
+| `görüntüler`          | `IMAGE`     | Animasyonlu WEBP içinde kare olarak kaydedilecek görüntü listesi. Bu parametre, animasyonun görsel içeriğini tanımlamak için gereklidir. |
+| `dosyaadı_öneki` | `STRING`    | Çıktı dosyası için, bir sayaç ve '.webp' uzantısı eklenmiş olacak şekilde temel adı belirtir. Bu parametre, kaydedilen dosyaları tanımlamak ve düzenlemek için çok önemlidir. |
 | `fps`             | `FLOAT`     | Animasyonun saniye başına kare hızı, oynatma hızını etkiler. |
-| `lossless`        | `BOOLEAN`   | Kayıpsız sıkıştırma kullanılıp kullanılmayacağını belirten bir boolean değer, dosya boyutunu ve animasyonun kalitesini etkiler. |
-| `quality`         | `INT`       | 0 ile 100 arasında bir değer olup, sıkıştırma kalite seviyesini belirler; daha yüksek değerler daha iyi görüntü kalitesi ancak daha büyük dosya boyutları ile sonuçlanır. |
-| `method`          | COMBO[STRING] | Kullanılacak sıkıştırma yöntemini belirtir; bu, kodlama hızını ve dosya boyutunu etkileyebilir. |
+| `kayıpsız`        | `BOOLEAN`   | Kayıpsız sıkıştırma kullanılıp kullanılmayacağını belirten bir boolean değer, dosya boyutunu ve animasyonun kalitesini etkiler. |
+| `kalite`         | `INT`       | 0 ile 100 arasında bir değer olup, sıkıştırma kalite seviyesini belirler; daha yüksek değerler daha iyi görüntü kalitesi ancak daha büyük dosya boyutları ile sonuçlanır. |
+| `yöntem`          | COMBO[STRING] | Kullanılacak sıkıştırma yöntemini belirtir; bu, kodlama hızını ve dosya boyutunu etkileyebilir. |
 
 ## Çıktılar
 

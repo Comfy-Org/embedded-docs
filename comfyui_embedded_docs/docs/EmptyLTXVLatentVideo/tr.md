@@ -6,10 +6,10 @@ EmptyLTXVLatentVideo düğümü, video işleme için boş bir latent tensör olu
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 64 - MAX_RESOLUTION | Latent video tensörünün genişliği (varsayılan: 768, adım: 32) |
-| `height` | INT | Evet | 64 - MAX_RESOLUTION | Latent video tensörünün yüksekliği (varsayılan: 512, adım: 32) |
-| `length` | INT | Evet | 1 - MAX_RESOLUTION | Latent videodaki kare sayısı (varsayılan: 97, adım: 8) |
-| `batch_size` | INT | Hayır | 1 - 4096 | Toplu işte oluşturulacak latent video sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 64 - MAX_RESOLUTION | Latent video tensörünün genişliği (varsayılan: 768, adım: 32) |
+| `yükseklik` | INT | Evet | 64 - MAX_RESOLUTION | Latent video tensörünün yüksekliği (varsayılan: 512, adım: 32) |
+| `uzunluk` | INT | Evet | 1 - MAX_RESOLUTION | Latent videodaki kare sayısı (varsayılan: 97, adım: 8) |
+| `toplu_boyut` | INT | Hayır | 1 - 4096 | Toplu işte oluşturulacak latent video sayısı (varsayılan: 1) |
 
 ## Çıktılar
 

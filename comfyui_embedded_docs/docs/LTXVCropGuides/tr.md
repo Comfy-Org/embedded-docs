@@ -6,14 +6,14 @@ LTXVCropGuides düğümü, video üretimi için koşullandırma ve gizli girdile
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Üretim için rehberlik bilgilerini içeren pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Üretim sırasında kaçınılması gerekenleri belirten rehberlik bilgilerini içeren negatif koşullandırma girdisi |
-| `latent` | LATENT | Evet | - | Görüntü örneklerini ve gürültü maskesi verilerini içeren gizli temsil |
+| `pozitif` | CONDITIONING | Evet | - | Üretim için rehberlik bilgilerini içeren pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Üretim sırasında kaçınılması gerekenleri belirten rehberlik bilgilerini içeren negatif koşullandırma girdisi |
+| `gizli` | LATENT | Evet | - | Görüntü örneklerini ve gürültü maskesi verilerini içeren gizli temsil |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Anahtar kare indeksleri temizlenmiş işlenmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Anahtar kare indeksleri temizlenmiş işlenmiş negatif koşullandırma |
-| `latent` | LATENT | Ayarlanmış örnekler ve gürültü maskesi ile kırpılmış gizli temsil |
+| `negatif` | CONDITIONING | Anahtar kare indeksleri temizlenmiş işlenmiş pozitif koşullandırma |
+| `gizli` | CONDITIONING | Anahtar kare indeksleri temizlenmiş işlenmiş negatif koşullandırma |
+| `gizli` | LATENT | Ayarlanmış örnekler ve gürültü maskesi ile kırpılmış gizli temsil |

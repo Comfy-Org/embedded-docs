@@ -7,9 +7,9 @@ Kling Lip Sync Text to Video Node, bir video dosyasındaki ağız hareketlerini 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | Dudak senkronizasyonu için girdi video dosyası |
-| `text` | STRING | Evet | - | Dudak Senkronizasyonlu Video Üretimi için Metin İçeriği. Mod text2video olduğunda gereklidir. Maksimum uzunluk 120 karakterdir. |
-| `voice` | COMBO | Hayır | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Dudak senkronizasyonu sesi için ses seçimi (varsayılan: "Melody") |
-| `voice_speed` | FLOAT | Hayır | 0.8-2.0 | Konuşma Hızı. Geçerli aralık: 0.8~2.0, bir ondalık basamağa kadar hassas. (varsayılan: 1) |
+| `metin` | STRING | Evet | - | Dudak Senkronizasyonlu Video Üretimi için Metin İçeriği. Mod text2video olduğunda gereklidir. Maksimum uzunluk 120 karakterdir. |
+| `ses` | COMBO | Hayır | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Dudak senkronizasyonu sesi için ses seçimi (varsayılan: "Melody") |
+| `ses_hızı` | FLOAT | Hayır | 0.8-2.0 | Konuşma Hızı. Geçerli aralık: 0.8~2.0, bir ondalık basamağa kadar hassas. (varsayılan: 1) |
 
 **Video Gereksinimleri:**
 
@@ -21,6 +21,6 @@ Kling Lip Sync Text to Video Node, bir video dosyasındaki ağız hareketlerini 
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Dudak senkronizasyonlu ses ile oluşturulan video |
-| `video_id` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Dudak senkronizasyonlu ses ile oluşturulan video |
+| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
 | `duration` | STRING | Oluşturulan video için süre bilgisi |

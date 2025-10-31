@@ -6,9 +6,9 @@ EmptySD3LatentImage düğümü, Stable Diffusion 3 modelleri için özel olarak 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) | Çıktı latent görüntüsünün piksel cinsinden genişliği (varsayılan: 1024) |
-| `height` | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) | Çıktı latent görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024) |
-| `batch_size` | INT | Evet | 1 - 4096 | Bir toplu işte oluşturulacak latent görüntü sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) | Çıktı latent görüntüsünün piksel cinsinden genişliği (varsayılan: 1024) |
+| `yükseklik` | INT | Evet | 16 - MAX_RESOLUTION (adım: 16) | Çıktı latent görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024) |
+| `toplu_boyut` | INT | Evet | 1 - 4096 | Bir toplu işte oluşturulacak latent görüntü sayısı (varsayılan: 1) |
 
 ## Çıktılar
 

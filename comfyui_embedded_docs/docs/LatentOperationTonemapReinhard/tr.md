@@ -6,7 +6,7 @@ LatentOperationTonemapReinhard düğümü, gizli vektörlere Reinhard ton eşlem
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `multiplier` | FLOAT | Hayır | 0.0 - 100.0 | Ton eşleme efektinin yoğunluğunu kontrol eder (varsayılan: 1.0) |
+| `çarpan` | FLOAT | Hayır | 0.0 - 100.0 | Ton eşleme efektinin yoğunluğunu kontrol eder (varsayılan: 1.0) |
 
 ## Çıktılar
 

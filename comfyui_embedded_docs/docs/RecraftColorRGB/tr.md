@@ -6,13 +6,13 @@ Belirli RGB değerlerini seçerek Recraft Rengi oluşturun. Bu düğüm, bireyse
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `r` | INT | Evet | 0-255 | Rengin kırmızı değeri (varsayılan: 0) |
-| `g` | INT | Evet | 0-255 | Rengin yeşil değeri (varsayılan: 0) |
-| `b` | INT | Evet | 0-255 | Rengin mavi değeri (varsayılan: 0) |
-| `recraft_color` | COLOR | Hayır | - | Genişletmek için isteğe bağlı mevcut Recraft rengi |
+| `k` | INT | Evet | 0-255 | Rengin kırmızı değeri (varsayılan: 0) |
+| `y` | INT | Evet | 0-255 | Rengin yeşil değeri (varsayılan: 0) |
+| `m` | INT | Evet | 0-255 | Rengin mavi değeri (varsayılan: 0) |
+| `recraft_rengi` | COLOR | Hayır | - | Genişletmek için isteğe bağlı mevcut Recraft rengi |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `recraft_color` | COLOR | Belirtilen RGB değerlerini içeren oluşturulmuş Recraft renk nesnesi |
+| `recraft_rengi` | COLOR | Belirtilen RGB değerlerini içeren oluşturulmuş Recraft renk nesnesi |

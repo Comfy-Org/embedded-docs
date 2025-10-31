@@ -6,12 +6,12 @@ Pika Image to Video düğümü, bir görüntüyü ve metin istemini Pika API sü
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Videoya dönüştürülecek görüntü |
-| `prompt_text` | STRING | Evet | - | Video oluşturmayı yönlendiren metin açıklaması |
-| `negative_prompt` | STRING | Evet | - | Videoda nelerden kaçınılması gerektiğini açıklayan metin |
-| `seed` | INT | Evet | - | Tekrarlanabilir sonuçlar için rastgele tohum değeri |
-| `resolution` | STRING | Evet | - | Çıktı videosu çözünürlük ayarı |
-| `duration` | INT | Evet | - | Oluşturulan videonun saniye cinsinden uzunluğu |
+| `görüntü` | IMAGE | Evet | - | Videoya dönüştürülecek görüntü |
+| `istem_metni` | STRING | Evet | - | Video oluşturmayı yönlendiren metin açıklaması |
+| `negatif_istem` | STRING | Evet | - | Videoda nelerden kaçınılması gerektiğini açıklayan metin |
+| `tohum` | INT | Evet | - | Tekrarlanabilir sonuçlar için rastgele tohum değeri |
+| `çözünürlük` | STRING | Evet | - | Çıktı videosu çözünürlük ayarı |
+| `süre` | INT | Evet | - | Oluşturulan videonun saniye cinsinden uzunluğu |
 
 ## Çıktılar
 

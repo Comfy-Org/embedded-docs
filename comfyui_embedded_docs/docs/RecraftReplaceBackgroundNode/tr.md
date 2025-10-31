@@ -6,12 +6,12 @@ Sağlanan açıklamaya dayanarak görselin arka planını değiştirir. Bu düğ
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | İşlenecek girdi görseli |
-| `prompt` | STRING | Evet | - | Görsel oluşturma için açıklama (varsayılan: boş) |
+| `görüntü` | IMAGE | Evet | - | İşlenecek girdi görseli |
+| `istem` | STRING | Evet | - | Görsel oluşturma için açıklama (varsayılan: boş) |
 | `n` | INT | Evet | 1-6 | Oluşturulacak görsel sayısı (varsayılan: 1) |
-| `seed` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0) |
-| `recraft_style` | STYLEV3 | Hayır | - | Oluşturulan arka plan için isteğe bağlı stil seçimi |
-| `negative_prompt` | STRING | Hayır | - | Bir görselde istenmeyen unsurların isteğe bağlı metin açıklaması (varsayılan: boş) |
+| `tohum` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0) |
+| `recraft_stili` | STYLEV3 | Hayır | - | Oluşturulan arka plan için isteğe bağlı stil seçimi |
+| `negatif_istem` | STRING | Hayır | - | Bir görselde istenmeyen unsurların isteğe bağlı metin açıklaması (varsayılan: boş) |
 
 **Not:** `seed` parametresi, düğümün ne zaman yeniden yürütüleceğini kontrol eder ancak harici API'nın doğası gereği deterministik sonuçları garanti etmez.
 

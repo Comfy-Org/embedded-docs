@@ -6,10 +6,10 @@ Bu düğüm, kontrol noktası ağırlıklarını yükleyerek ve hem model hem de
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `ckpt_name` | COMBO | Evet | Birden fazla seçenek mevcut | Ağırlıkların yükleneceği kontrol noktası dosyası (mevcut kontrol noktalarından seçin) |
-| `strength_model` | FLOAT | Evet | -20.0 - 20.0 | Model ağırlıklarına uygulanan güç çarpanı (varsayılan: 1.0) |
-| `strength_clip` | FLOAT | Evet | -20.0 - 20.0 | CLIP ağırlıklarına uygulanan güç çarpanı (varsayılan: 1.0) |
-| `prev_hooks` | HOOKS | Hayır | - | Yeni oluşturulan LoRA kancalarıyla birleştirmek için isteğe bağlı önceki kancalar |
+| `ckpt_adı` | COMBO | Evet | Birden fazla seçenek mevcut | Ağırlıkların yükleneceği kontrol noktası dosyası (mevcut kontrol noktalarından seçin) |
+| `model_gücü` | FLOAT | Evet | -20.0 - 20.0 | Model ağırlıklarına uygulanan güç çarpanı (varsayılan: 1.0) |
+| `clip_gücü` | FLOAT | Evet | -20.0 - 20.0 | CLIP ağırlıklarına uygulanan güç çarpanı (varsayılan: 1.0) |
+| `önceki_kancalar` | HOOKS | Hayır | - | Yeni oluşturulan LoRA kancalarıyla birleştirmek için isteğe bağlı önceki kancalar |
 
 **Parametre Kısıtlamaları:**
 

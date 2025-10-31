@@ -6,8 +6,8 @@ CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını 
 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `config_name` | STRING | COMBO | - | Mevcut yapılandırma dosyaları | Model mimarisini ve ayarlarını tanımlayan yapılandırma dosyası |
-| `ckpt_name` | STRING | COMBO | - | Mevcut kontrol noktası dosyaları | Eğitilmiş model ağırlıklarını ve parametrelerini içeren kontrol noktası dosyası |
+| `yapılandırma_adı` | STRING | COMBO | - | Mevcut yapılandırma dosyaları | Model mimarisini ve ayarlarını tanımlayan yapılandırma dosyası |
+| `ckpt_adı` | STRING | COMBO | - | Mevcut kontrol noktası dosyaları | Eğitilmiş model ağırlıklarını ve parametrelerini içeren kontrol noktası dosyası |
 
 **Not:** Bu düğümün çalışması için hem bir yapılandırma dosyasının hem de bir kontrol noktası dosyasının seçilmesi gerekmektedir. Yapılandırma dosyası, yüklenen kontrol noktası dosyasının mimarisiyle eşleşmelidir.
 

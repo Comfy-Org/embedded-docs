@@ -7,7 +7,7 @@ VAESave düğümü, VAE modellerini ve bunlara ait istemleri ve ek PNG bilgileri
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `vae`     | VAE       | Kaydedilecek VAE modeli. Serileştirilecek ve depolanacak modeli temsil ettiği için bu parametre hayati öneme sahiptir. |
-| `filename_prefix` | STRING   | Modelin ve meta verilerinin altında kaydedileceği dosya adı için bir önek. Bu, modellerin düzenli bir şekilde depolanmasına ve kolayca geri getirilmesine olanak tanır. |
+| `dosyaadı_öneki` | STRING   | Modelin ve meta verilerinin altında kaydedileceği dosya adı için bir önek. Bu, modellerin düzenli bir şekilde depolanmasına ve kolayca geri getirilmesine olanak tanır. |
 
 ## Çıktılar
 

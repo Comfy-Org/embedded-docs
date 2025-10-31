@@ -4,8 +4,8 @@
 
 | Parametre | Veri Türü | Açıklama |
 |----------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Girdi koşullandırma verisi, genellikle önceki kodlama veya işleme adımlarından gelir |
-| `guidance` | FLOAT | Metin ipuçlarının görüntü oluşturma üzerindeki etkisini kontrol eder, 0.0 ile 100.0 arasında ayarlanabilir bir aralık |
+| `koşullandırma` | CONDITIONING | Girdi koşullandırma verisi, genellikle önceki kodlama veya işleme adımlarından gelir |
+| `rehberlik` | FLOAT | Metin ipuçlarının görüntü oluşturma üzerindeki etkisini kontrol eder, 0.0 ile 100.0 arasında ayarlanabilir bir aralık |
 
 ## Çıkışlar
 

@@ -6,11 +6,11 @@ ThresholdMask düğümü, bir maskeyi bir eşik değeri uygulayarak ikili maskey
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `mask` | MASK | Evet | - | İşlenecek girdi maskesi |
-| `value` | FLOAT | Evet | 0.0 - 1.0 | İkilileştirme için eşik değeri (varsayılan: 0.5) |
+| `maske` | MASK | Evet | - | İşlenecek girdi maskesi |
+| `değer` | FLOAT | Evet | 0.0 - 1.0 | İkilileştirme için eşik değeri (varsayılan: 0.5) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `mask` | MASK | Eşikleme işlemi sonrasında elde edilen ikili maske |
+| `maske` | MASK | Eşikleme işlemi sonrasında elde edilen ikili maske |

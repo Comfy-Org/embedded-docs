@@ -13,9 +13,9 @@ Düğüm, bir gizli görüntü alır ve sağlanan gürültü üreteci ve sigma d
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `model` | MODEL | Gerekli | - | - | Örnekleme parametrelerini ve işleme fonksiyonlarını içeren model |
-| `noise` | NOISE | Gerekli | - | - | Temel gürültü desenini üreten gürültü üreteci |
-| `sigmas` | SIGMAS | Gerekli | - | - | Gürültü ölçeklendirme yoğunluğunu kontrol eden sigma değerleri |
-| `latent_image` | LATENT | Gerekli | - | - | Gürültünün ekleneceği girdi gizli temsili |
+| `gürültü` | NOISE | Gerekli | - | - | Temel gürültü desenini üreten gürültü üreteci |
+| `sigmalar` | SIGMAS | Gerekli | - | - | Gürültü ölçeklendirme yoğunluğunu kontrol eden sigma değerleri |
+| `gizli_görüntü` | LATENT | Gerekli | - | - | Gürültünün ekleneceği girdi gizli temsili |
 
 ## Çıktılar
 

@@ -6,9 +6,9 @@ TripleCLIPLoader düğümü, üç farklı metin kodlayıcı modelini aynı anda 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name1` | STRING | Evet | Birden fazla seçenek mevcut | Mevcut metin kodlayıcılar arasından yüklenecek ilk metin kodlayıcı modeli |
-| `clip_name2` | STRING | Evet | Birden fazla seçenek mevcut | Mevcut metin kodlayıcılar arasından yüklenecek ikinci metin kodlayıcı modeli |
-| `clip_name3` | STRING | Evet | Birden fazla seçenek mevcut | Mevcut metin kodlayıcılar arasından yüklenecek üçüncü metin kodlayıcı modeli |
+| `clip_adı1` | STRING | Evet | Birden fazla seçenek mevcut | Mevcut metin kodlayıcılar arasından yüklenecek ilk metin kodlayıcı modeli |
+| `clip_adı2` | STRING | Evet | Birden fazla seçenek mevcut | Mevcut metin kodlayıcılar arasından yüklenecek ikinci metin kodlayıcı modeli |
+| `clip_adı3` | STRING | Evet | Birden fazla seçenek mevcut | Mevcut metin kodlayıcılar arasından yüklenecek üçüncü metin kodlayıcı modeli |
 
 **Not:** Üç metin kodlayıcı parametresinin de sisteminizde mevcut olan metin kodlayıcı modelleri arasından seçilmesi gerekir. Düğüm, her üç modeli de yükleyecek ve işleme için bunları tek bir CLIP modelinde birleştirecektir.
 

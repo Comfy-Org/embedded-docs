@@ -6,10 +6,10 @@ EmptyCosmosLatentVideo düğümü, belirtilen boyutlarda boş bir gizli video te
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 16'dan MAX_RESOLUTION'a | Gizli videonun piksel cinsinden genişliği (varsayılan: 1280, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16'dan MAX_RESOLUTION'a | Gizli videonun piksel cinsinden yüksekliği (varsayılan: 704, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Evet | 1'den MAX_RESOLUTION'a | Gizli videodaki kare sayısı (varsayılan: 121) |
-| `batch_size` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak gizli video sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 16'dan MAX_RESOLUTION'a | Gizli videonun piksel cinsinden genişliği (varsayılan: 1280, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16'dan MAX_RESOLUTION'a | Gizli videonun piksel cinsinden yüksekliği (varsayılan: 704, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Evet | 1'den MAX_RESOLUTION'a | Gizli videodaki kare sayısı (varsayılan: 121) |
+| `toplu_boyut` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak gizli video sayısı (varsayılan: 1) |
 
 ## Çıktılar
 

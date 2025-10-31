@@ -6,8 +6,8 @@ EmptyLatentAudio düğümü, ses işleme için boş latent tensörler oluşturur
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `seconds` | FLOAT | Evet | 1.0 - 1000.0 | Saniye cinsinden ses süresi (varsayılan: 47.6) |
-| `batch_size` | INT | Evet | 1 - 4096 | Batch içindeki latent görüntülerin sayısı (varsayılan: 1) |
+| `saniye` | FLOAT | Evet | 1.0 - 1000.0 | Saniye cinsinden ses süresi (varsayılan: 47.6) |
+| `toplu_boyut` | INT | Evet | 1 - 4096 | Batch içindeki latent görüntülerin sayısı (varsayılan: 1) |
 
 ## Çıktılar
 

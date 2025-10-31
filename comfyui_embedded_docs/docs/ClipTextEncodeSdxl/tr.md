@@ -7,14 +7,14 @@ Bu düğüm, SDXL mimarisi için özelleştirilmiş bir CLIP modeli kullanarak m
 | Parametre | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
 | `clip` | CLIP | Metin kodlama için kullanılan CLIP model örneği. |
-| `width` | INT | Görüntü genişliğini piksel cinsinden belirtir, varsayılan 1024. |
-| `height` | INT | Görüntü yüksekliğini piksel cinsinden belirtir, varsayılan 1024. |
-| `crop_w` | INT | Kırpma alanının genişliği (piksel), varsayılan 0. |
-| `crop_h` | INT | Kırpma alanının yüksekliği (piksel), varsayılan 0. |
-| `target_width` | INT | Çıktı görüntüsü için hedef genişlik, varsayılan 1024. |
-| `target_height` | INT | Çıktı görüntüsü için hedef yükseklik, varsayılan 1024. |
-| `text_g` | STRING | Genel sahne açıklaması için global metin açıklaması. |
-| `text_l` | STRING | Detay açıklaması için lokal metin açıklaması. |
+| `genişlik` | INT | Görüntü genişliğini piksel cinsinden belirtir, varsayılan 1024. |
+| `yükseklik` | INT | Görüntü yüksekliğini piksel cinsinden belirtir, varsayılan 1024. |
+| `kırpma_g` | INT | Kırpma alanının genişliği (piksel), varsayılan 0. |
+| `kırpma_y` | INT | Kırpma alanının yüksekliği (piksel), varsayılan 0. |
+| `hedef_genişlik` | INT | Çıktı görüntüsü için hedef genişlik, varsayılan 1024. |
+| `hedef_yükseklik` | INT | Çıktı görüntüsü için hedef yükseklik, varsayılan 1024. |
+| `metin_g` | STRING | Genel sahne açıklaması için global metin açıklaması. |
+| `metin_l` | STRING | Detay açıklaması için lokal metin açıklaması. |
 
 ## Çıktılar
 

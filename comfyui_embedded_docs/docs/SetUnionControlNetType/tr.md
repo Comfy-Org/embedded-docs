@@ -6,11 +6,11 @@ SetUnionControlNetType düğümü, koşullandırma için kullanılacak kontrol a
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `control_net` | CONTROL_NET | Evet | - | Yeni bir tür ayarıyla değiştirilecek kontrol ağı |
-| `type` | STRING | Evet | `"auto"`<br>Tüm mevcut UNION_CONTROLNET_TYPES anahtarları | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçeneklerden belirli bir kontrol ağı türü seçin |
+| `kontrol_ağı` | CONTROL_NET | Evet | - | Yeni bir tür ayarıyla değiştirilecek kontrol ağı |
+| `tür` | STRING | Evet | `"auto"`<br>Tüm mevcut UNION_CONTROLNET_TYPES anahtarları | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçeneklerden belirli bir kontrol ağı türü seçin |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `control_net` | CONTROL_NET | Belirtilen tür ayarı uygulanmış değiştirilmiş kontrol ağı |
+| `kontrol_ağı` | CONTROL_NET | Belirtilen tür ayarı uygulanmış değiştirilmiş kontrol ağı |

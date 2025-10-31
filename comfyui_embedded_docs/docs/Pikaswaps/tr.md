@@ -7,11 +7,11 @@ Pika Swaps düğümü, videonuzdaki nesneleri veya bölgeleri yeni görüntüler
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | İçindeki bir nesnenin değiştirileceği video. |
-| `image` | IMAGE | Evet | - | Videodaki maskelenmiş nesneyi değiştirmek için kullanılan görüntü. |
-| `mask` | MASK | Evet | - | Videoda değiştirilecek alanları tanımlamak için maskeyi kullanın. |
-| `prompt_text` | STRING | Evet | - | İstenen değişikliği tanımlayan metin istemi. |
-| `negative_prompt` | STRING | Evet | - | Değişiklikte nelerden kaçınılması gerektiğini tanımlayan metin istemi. |
-| `seed` | INT | Evet | 0 - 4294967295 | Tutarlı sonuçlar için rastgele tohum değeri. |
+| `görüntü` | IMAGE | Evet | - | Videodaki maskelenmiş nesneyi değiştirmek için kullanılan görüntü. |
+| `maske` | MASK | Evet | - | Videoda değiştirilecek alanları tanımlamak için maskeyi kullanın. |
+| `istem_metni` | STRING | Evet | - | İstenen değişikliği tanımlayan metin istemi. |
+| `negatif_istem` | STRING | Evet | - | Değişiklikte nelerden kaçınılması gerektiğini tanımlayan metin istemi. |
+| `tohum` | INT | Evet | 0 - 4294967295 | Tutarlı sonuçlar için rastgele tohum değeri. |
 
 **Not:** Bu düğüm, tüm giriş parametrelerinin sağlanmasını gerektirir. `video`, `image` ve `mask` birlikte çalışarak değiştirme işlemini tanımlar; burada maske, videonun hangi alanlarının sağlanan görüntü ile değiştirileceğini belirtir.
 

@@ -7,7 +7,7 @@ Bu düğüm, belirli bir koşullandırma setinin güç özelliğini değiştirme
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma seti; üretim sürecini etkileyen mevcut koşullandırma durumunu temsil eder. |
-| `strength` | `FLOAT` | Koşullandırma setine uygulanacak güç değeri; koşullandırmanın etki yoğunluğunu belirler. |
+| `güç` | `FLOAT` | Koşullandırma setine uygulanacak güç değeri; koşullandırmanın etki yoğunluğunu belirler. |
 
 ## Çıktılar
 

@@ -7,7 +7,7 @@ ModelSave düğümü, eğitilmiş veya değiştirilmiş modelleri bilgisayarın�
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Diske kaydedilecek model |
-| `filename_prefix` | STRING | Evet | - | Kaydedilen model dosyası için dosya adı ve yol öneki (varsayılan: "diffusion_models/ComfyUI") |
+| `dosyaadı_öneki` | STRING | Evet | - | Kaydedilen model dosyası için dosya adı ve yol öneki (varsayılan: "diffusion_models/ComfyUI") |
 | `prompt` | PROMPT | Hayır | - | İş akışı istem bilgileri (otomatik olarak sağlanır) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Hayır | - | Ek iş akışı üst verisi (otomatik olarak sağlanır) |
 

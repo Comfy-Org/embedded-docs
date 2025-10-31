@@ -6,14 +6,14 @@ PairConditioningCombine düğümü, iki koşullandırma verisi çiftini (pozitif
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive_A` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girdisi |
-| `negative_A` | CONDITIONING | Evet | - | İlk negatif koşullandırma girdisi |
-| `positive_B` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girdisi |
-| `negative_B` | CONDITIONING | Evet | - | İkinci negatif koşullandırma girdisi |
+| `pozitif_A` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girdisi |
+| `negatif_A` | CONDITIONING | Evet | - | İlk negatif koşullandırma girdisi |
+| `pozitif_B` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girdisi |
+| `negatif_B` | CONDITIONING | Evet | - | İkinci negatif koşullandırma girdisi |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Birleştirilmiş pozitif koşullandırma çıktısı |
+| `negatif` | CONDITIONING | Birleştirilmiş pozitif koşullandırma çıktısı |
 | `negative` | CONDITIONING | Birleştirilmiş negatif koşullandırma çıktısı |

@@ -6,7 +6,7 @@ Bu düğüm, önceden var olan bir UUID kullanarak Recraft'ın Sonsuz Stil Küt�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `style_id` | STRING | Evet | Geçerli herhangi bir UUID | Sonsuz Stil Kütüphanesi'nden stil UUID'si. |
+| `stil_kimliği` | STRING | Evet | Geçerli herhangi bir UUID | Sonsuz Stil Kütüphanesi'nden stil UUID'si. |
 
 **Not:** `style_id` girdisi boş olamaz. Boş bir dize sağlanırsa, düğüm bir istisna oluşturacaktır.
 

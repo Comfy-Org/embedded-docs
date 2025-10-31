@@ -6,8 +6,8 @@ Recraft oluşturmayı özelleştirmek için Recraft Kontrolleri oluşturur. Bu d
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `colors` | COLOR | Hayır | - | Ana elemanlar için renk ayarları |
-| `background_color` | COLOR | Hayır | - | Arka plan rengi ayarı |
+| `renkler` | COLOR | Hayır | - | Ana elemanlar için renk ayarları |
+| `arka_plan_rengi` | COLOR | Hayır | - | Arka plan rengi ayarı |
 
 ## Çıktılar
 

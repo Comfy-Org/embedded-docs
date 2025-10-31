@@ -6,8 +6,8 @@ EmptyLatentHunyuan3Dv2 düğümü, Hunyuan3Dv2 3B üretim modelleri için özel 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `resolution` | INT | Evet | 1 - 8192 | Latent uzay için çözünürlük boyutu (varsayılan: 3072) |
-| `batch_size` | INT | Evet | 1 - 4096 | Toplu işteki latent görüntü sayısı (varsayılan: 1) |
+| `çözünürlük` | INT | Evet | 1 - 8192 | Latent uzay için çözünürlük boyutu (varsayılan: 3072) |
+| `toplu_boyut` | INT | Evet | 1 - 4096 | Toplu işteki latent görüntü sayısı (varsayılan: 1) |
 
 ## Çıktılar
 

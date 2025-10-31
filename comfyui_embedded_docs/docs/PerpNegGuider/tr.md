@@ -7,11 +7,11 @@ PerpNegGuider düğümü, dik negatif koşullandırma kullanarak görüntü olu�
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Kılavuzluk oluşturma için kullanılacak model |
-| `positive` | CONDITIONING | Evet | - | Oluşturmayı istenen içeriğe yönlendiren pozitif koşullandırma |
-| `negative` | CONDITIONING | Evet | - | Oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma |
-| `empty_conditioning` | CONDITIONING | Evet | - | Temel referans olarak kullanılan boş veya nötr koşullandırma |
+| `pozitif` | CONDITIONING | Evet | - | Oluşturmayı istenen içeriğe yönlendiren pozitif koşullandırma |
+| `negatif` | CONDITIONING | Evet | - | Oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma |
+| `boş_koşullandırma` | CONDITIONING | Evet | - | Temel referans olarak kullanılan boş veya nötr koşullandırma |
 | `cfg` | FLOAT | Hayır | 0.0 - 100.0 | Koşullandırmanın oluşturma üzerindeki etkisinin ne kadar güçlü olduğunu kontrol eden sınıflandırıcısız kılavuzluk ölçeği (varsayılan: 8.0) |
-| `neg_scale` | FLOAT | Hayır | 0.0 - 100.0 | Negatif koşullandırmanın gücünü ayarlayan negatif ölçeklendirme faktörü (varsayılan: 1.0) |
+| `neg_ölçek` | FLOAT | Hayır | 0.0 - 100.0 | Negatif koşullandırmanın gücünü ayarlayan negatif ölçeklendirme faktörü (varsayılan: 1.0) |
 
 ## Çıktılar
 

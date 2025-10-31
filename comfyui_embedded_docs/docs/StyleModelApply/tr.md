@@ -8,12 +8,12 @@ Bu düğüm, bir stil modelini belirli bir koşullandırmaya uygulayarak, bir CL
 
 | Parametre            | Comfy dtype          | Açıklama |
 |-----------------------|-----------------------|-------------|
-| `conditioning`        | `CONDITIONING`       | Stil modelinin koşullandırmasının uygulanacağı orijinal koşullandırma verisi. Geliştirilecek veya değiştirilecek temel bağlamı veya stili tanımlamak için çok önemlidir. |
-| `style_model`         | `STYLE_MODEL`        | CLIP görüntü modelinin çıktısına dayalı olarak yeni koşullandırma oluşturmak için kullanılan stil modeli. Uygulanacak yeni stili tanımlamada kilit rol oynar. |
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT` | Stil modeli tarafından yeni koşullandırma oluşturmak için kullanılan, bir CLIP görüntü modelinden gelen çıktı. Stil uygulaması için gerekli olan görsel bağlamı sağlar. |
+| `koşullandırma`        | `CONDITIONING`       | Stil modelinin koşullandırmasının uygulanacağı orijinal koşullandırma verisi. Geliştirilecek veya değiştirilecek temel bağlamı veya stili tanımlamak için çok önemlidir. |
+| `stil_modeli`         | `STYLE_MODEL`        | CLIP görüntü modelinin çıktısına dayalı olarak yeni koşullandırma oluşturmak için kullanılan stil modeli. Uygulanacak yeni stili tanımlamada kilit rol oynar. |
+| `clip_görü_çıktısı`  | `CLIP_VISION_OUTPUT` | Stil modeli tarafından yeni koşullandırma oluşturmak için kullanılan, bir CLIP görüntü modelinden gelen çıktı. Stil uygulaması için gerekli olan görsel bağlamı sağlar. |
 
 ## Çıktılar
 
 | Parametre          | Comfy dtype           | Açıklama |
 |----------------------|-----------------------|-------------|
-| `conditioning`       | `CONDITIONING`        | Stil modelinin çıktısını içeren, geliştirilmiş veya değiştirilmiş koşullandırma. Daha fazla işleme veya üretim için hazır, nihai, stillendirilmiş koşullandırmayı temsil eder. |
+| `koşullandırma`       | `CONDITIONING`        | Stil modelinin çıktısını içeren, geliştirilmiş veya değiştirilmiş koşullandırma. Daha fazla işleme veya üretim için hazır, nihai, stillendirilmiş koşullandırmayı temsil eder. |

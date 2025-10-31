@@ -6,10 +6,10 @@ SamplerDPMPP_2M_SDE düğümü, difüzyon modelleri için bir DPM++ 2M SDE örne
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `solver_type` | STRING | Evet | `"midpoint"`<br>`"heun"` | Örnekleme süreci için kullanılacak diferansiyel denklem çözücüsünün türü |
+| `çözücü_türü` | STRING | Evet | `"midpoint"`<br>`"heun"` | Örnekleme süreci için kullanılacak diferansiyel denklem çözücüsünün türü |
 | `eta` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sürecinin stokastikliğini kontrol eder (varsayılan: 1.0) |
-| `s_noise` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
-| `noise_device` | STRING | Evet | `"gpu"`<br>`"cpu"` | Gürültü hesaplamalarının gerçekleştirildiği aygıt |
+| `s_gürültü` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
+| `gürültü_cihazı` | STRING | Evet | `"gpu"`<br>`"cpu"` | Gürültü hesaplamalarının gerçekleştirildiği aygıt |
 
 ## Çıktılar
 

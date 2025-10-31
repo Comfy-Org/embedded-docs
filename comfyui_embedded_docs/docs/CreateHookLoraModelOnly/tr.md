@@ -6,9 +6,9 @@ Bu düğüm, yalnızca model bileşenine uygulanan bir LoRA (Düşük Dereceli U
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `lora_name` | STRING | Evet | Birden fazla seçenek mevcut | loras klasöründen yüklenecek LoRA dosyasının adı |
-| `strength_model` | FLOAT | Evet | -20.0 ile 20.0 arası | Model bileşenine LoRA uygulama güç çarpanı (varsayılan: 1.0) |
-| `prev_hooks` | HOOKS | Hayır | - | Bu kanca ile zincirlenecek isteğe bağlı önceki kancalar |
+| `lora_adı` | STRING | Evet | Birden fazla seçenek mevcut | loras klasöründen yüklenecek LoRA dosyasının adı |
+| `model_gücü` | FLOAT | Evet | -20.0 ile 20.0 arası | Model bileşenine LoRA uygulama güç çarpanı (varsayılan: 1.0) |
+| `önceki_kancalar` | HOOKS | Hayır | - | Bu kanca ile zincirlenecek isteğe bağlı önceki kancalar |
 
 ## Çıktılar
 

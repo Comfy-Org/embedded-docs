@@ -25,9 +25,9 @@ En son model dosyası yükleme hakkında daha fazla ayrıntı için lütfen [fol
 
 | Parametre     | Veri Tipi     | Açıklama |
 |---------------|---------------|-------------|
-| `clip_name`   | COMBO[STRING] | Yüklenecek CLIP modelinin adını belirtir. Bu ad, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
-| `type`        | COMBO[STRING] | Yüklenecek CLIP modelinin türünü belirler. ComfyUI daha fazla modeli destekledikçe, buraya yeni türler eklenecektir. Ayrıntılar için lütfen [node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py) dosyasındaki `CLIPLoader` sınıf tanımına bakın. |
-| `device`      | COMBO[STRING] | CLIP modelini yüklemek için kullanılacak cihazı seçin. `default` modeli GPU üzerinde çalıştırır, `CPU` seçmek ise modelin CPU üzerinde yüklenmesini zorlar. |
+| `clip_adı`   | COMBO[STRING] | Yüklenecek CLIP modelinin adını belirtir. Bu ad, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
+| `tür`        | COMBO[STRING] | Yüklenecek CLIP modelinin türünü belirler. ComfyUI daha fazla modeli destekledikçe, buraya yeni türler eklenecektir. Ayrıntılar için lütfen [node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py) dosyasındaki `CLIPLoader` sınıf tanımına bakın. |
+| `cihaz`      | COMBO[STRING] | CLIP modelini yüklemek için kullanılacak cihazı seçin. `default` modeli GPU üzerinde çalıştırır, `CPU` seçmek ise modelin CPU üzerinde yüklenmesini zorlar. |
 
 ### Cihaz Seçenekleri Açıklaması
 

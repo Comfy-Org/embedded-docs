@@ -6,16 +6,16 @@ StableZero123_Conditioning_Batched düğümü, bir giriş görüntüsünü işle
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için kullanılan CLIP vision modeli |
-| `init_image` | IMAGE | Evet | - | İşlenecek ve kodlanacak olan başlangıç giriş görüntüsü |
+| `clip_görü` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için kullanılan CLIP vision modeli |
+| `başlangıç_görüntüsü` | IMAGE | Evet | - | İşlenecek ve kodlanacak olan başlangıç giriş görüntüsü |
 | `vae` | VAE | Evet | - | Görüntü piksellerini gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Hayır | 16'dan MAX_RESOLUTION'a | İşlenen görüntü için çıkış genişliği (varsayılan: 256, 8'e bölünebilir olmalı) |
-| `height` | INT | Hayır | 16'dan MAX_RESOLUTION'a | İşlenen görüntü için çıkış yüksekliği (varsayılan: 256, 8'e bölünebilir olmalı) |
-| `batch_size` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak koşullandırma örneklerinin sayısı (varsayılan: 1) |
-| `elevation` | FLOAT | Hayır | -180.0 ile 180.0 arası | Başlangıç kamera yükseklik açısı (derece cinsinden, varsayılan: 0.0) |
-| `azimuth` | FLOAT | Hayır | -180.0 ile 180.0 arası | Başlangıç kamera azimut açısı (derece cinsinden, varsayılan: 0.0) |
-| `elevation_batch_increment` | FLOAT | Hayır | -180.0 ile 180.0 arası | Her toplu iş öğesi için yüksekliği artırma miktarı (varsayılan: 0.0) |
-| `azimuth_batch_increment` | FLOAT | Hayır | -180.0 ile 180.0 arası | Her toplu iş öğesi için azimutu artırma miktarı (varsayılan: 0.0) |
+| `genişlik` | INT | Hayır | 16'dan MAX_RESOLUTION'a | İşlenen görüntü için çıkış genişliği (varsayılan: 256, 8'e bölünebilir olmalı) |
+| `yükseklik` | INT | Hayır | 16'dan MAX_RESOLUTION'a | İşlenen görüntü için çıkış yüksekliği (varsayılan: 256, 8'e bölünebilir olmalı) |
+| `toplu_boyut` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak koşullandırma örneklerinin sayısı (varsayılan: 1) |
+| `yükseklik` | FLOAT | Hayır | -180.0 ile 180.0 arası | Başlangıç kamera yükseklik açısı (derece cinsinden, varsayılan: 0.0) |
+| `azimut` | FLOAT | Hayır | -180.0 ile 180.0 arası | Başlangıç kamera azimut açısı (derece cinsinden, varsayılan: 0.0) |
+| `yükseklik_toplu_artışı` | FLOAT | Hayır | -180.0 ile 180.0 arası | Her toplu iş öğesi için yüksekliği artırma miktarı (varsayılan: 0.0) |
+| `azimut_toplu_artışı` | FLOAT | Hayır | -180.0 ile 180.0 arası | Her toplu iş öğesi için azimutu artırma miktarı (varsayılan: 0.0) |
 
 **Not:** `width` ve `height` parametreleri 8'e bölünebilir olmalıdır, çünkü düğüm bu boyutları dahili olarak gizli uzay oluşturma için 8'e böler.
 

@@ -6,8 +6,8 @@ LatentBatch düğümü, iki farklı gizli örnek setini tek bir toplu işlemde b
 
 | Parametre   | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `samples1`  | `LATENT`  | Birleştirilecek ilk gizli örnek seti. Birleştirilmiş toplu işlemin nihai şeklinin belirlenmesinde kritik bir rol oynar. |
-| `samples2`  | `LATENT`  | Birleştirilecek ikinci gizli örnek seti. Boyutları ilk setten farklıysa, birleştirme işleminden önce uyumluluğu sağlamak için yeniden boyutlandırılır. |
+| `örnekler1`  | `LATENT`  | Birleştirilecek ilk gizli örnek seti. Birleştirilmiş toplu işlemin nihai şeklinin belirlenmesinde kritik bir rol oynar. |
+| `örnekler2`  | `LATENT`  | Birleştirilecek ikinci gizli örnek seti. Boyutları ilk setten farklıysa, birleştirme işleminden önce uyumluluğu sağlamak için yeniden boyutlandırılır. |
 
 ## Çıktılar
 

@@ -6,7 +6,7 @@ PreviewAudio düğümü, arayüzde görüntülenebilen geçici bir ses önizleme
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | - | Önizlenecek ses verisi |
+| `ses` | AUDIO | Evet | - | Önizlenecek ses verisi |
 | `prompt` | PROMPT | Hayır | - | Dahili kullanım için gizli parametre |
 | `extra_pnginfo` | EXTRA_PNGINFO | Hayır | - | Dahili kullanım için gizli parametre |
 

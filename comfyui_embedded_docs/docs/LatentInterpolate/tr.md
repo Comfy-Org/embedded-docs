@@ -6,9 +6,9 @@ LatentInterpolate düğümü, belirli bir orana dayalı olarak iki gizli örnek 
 
 | Parametre   | Veri Türü   | Açıklama |
 |-------------|-------------|-------------|
-| `samples1`  | `LATENT`    | Enterpolasyon işlemi için kullanılacak ilk gizli örnek setidir. Enterpolasyon sürecinin başlangıç noktasını oluşturur. |
-| `samples2`  | `LATENT`    | Enterpolasyon işlemi için kullanılacak ikinci gizli örnek setidir. Enterpolasyon sürecinin bitiş noktasını oluşturur. |
-| `ratio`     | `FLOAT`     | Enterpole edilmiş çıktıda her örnek setinin ağırlığını belirleyen bir kayan nokta değeridir. 0 oranı ilk setin bir kopyasını üretirken, 1 oranı ikinci setin bir kopyasını üretir. |
+| `örnekler1`  | `LATENT`    | Enterpolasyon işlemi için kullanılacak ilk gizli örnek setidir. Enterpolasyon sürecinin başlangıç noktasını oluşturur. |
+| `örnekler2`  | `LATENT`    | Enterpolasyon işlemi için kullanılacak ikinci gizli örnek setidir. Enterpolasyon sürecinin bitiş noktasını oluşturur. |
+| `oran`     | `FLOAT`     | Enterpole edilmiş çıktıda her örnek setinin ağırlığını belirleyen bir kayan nokta değeridir. 0 oranı ilk setin bir kopyasını üretirken, 1 oranı ikinci setin bir kopyasını üretir. |
 
 ## Çıktılar
 

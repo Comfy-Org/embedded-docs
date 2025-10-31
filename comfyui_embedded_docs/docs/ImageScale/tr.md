@@ -6,14 +6,14 @@ ImageScale düğümü, görüntüleri belirli boyutlara yeniden boyutlandırmak 
 
 | Parametre       | Veri Tipi    | Açıklama                                                                           |
 |-----------------|-------------|---------------------------------------------------------------------------------------|
-| `image`         | `IMAGE`     | Yükseltilecek girdi görüntüsü. Bu parametre, düğümün işleyişinde merkezi bir role sahiptir ve yeniden boyutlandırma dönüşümlerinin uygulandığı birincil veri olarak hizmet eder. Çıktı görüntüsünün kalitesi ve boyutları, orijinal görüntünün özelliklerinden doğrudan etkilenir. |
-| `upscale_method`| COMBO[STRING] | Görüntüyü yükseltmek için kullanılan yöntemi belirtir. Yöntem seçimi, yükseltilmiş görüntünün kalitesini ve özelliklerini etkileyerek, yeniden boyutlandırılmış çıktıdaki görsel doğruluğu ve olası yapay bozulmaları etkiler. |
-| `width`         | `INT`       | Yükseltilmiş görüntü için hedef genişlik. Bu parametre, çıktı görüntüsünün boyutlarını doğrudan etkileyerek, yeniden boyutlandırma işleminin yatay ölçeğini belirler. |
-| `height`        | `INT`       | Yükseltilmiş görüntü için hedef yükseklik. Bu parametre, çıktı görüntüsünün boyutlarını doğrudan etkileyerek, yeniden boyutlandırma işleminin dikey ölçeğini belirler. |
-| `crop`          | COMBO[STRING] | Yükseltilmiş görüntünün kırpılıp kırpılmayacağını ve nasıl kırpılacağını belirler; kırpmanın devre dışı bırakılması veya merkezden kırpma seçenekleri sunar. Bu, belirtilen boyutlara sığdırmak için kenarları potansiyel olarak kaldırarak görüntünün nihai kompozisyonunu etkiler. |
+| `görüntü`         | `IMAGE`     | Yükseltilecek girdi görüntüsü. Bu parametre, düğümün işleyişinde merkezi bir role sahiptir ve yeniden boyutlandırma dönüşümlerinin uygulandığı birincil veri olarak hizmet eder. Çıktı görüntüsünün kalitesi ve boyutları, orijinal görüntünün özelliklerinden doğrudan etkilenir. |
+| `büyütme_yöntemi`| COMBO[STRING] | Görüntüyü yükseltmek için kullanılan yöntemi belirtir. Yöntem seçimi, yükseltilmiş görüntünün kalitesini ve özelliklerini etkileyerek, yeniden boyutlandırılmış çıktıdaki görsel doğruluğu ve olası yapay bozulmaları etkiler. |
+| `genişlik`         | `INT`       | Yükseltilmiş görüntü için hedef genişlik. Bu parametre, çıktı görüntüsünün boyutlarını doğrudan etkileyerek, yeniden boyutlandırma işleminin yatay ölçeğini belirler. |
+| `yükseklik`        | `INT`       | Yükseltilmiş görüntü için hedef yükseklik. Bu parametre, çıktı görüntüsünün boyutlarını doğrudan etkileyerek, yeniden boyutlandırma işleminin dikey ölçeğini belirler. |
+| `kırp`          | COMBO[STRING] | Yükseltilmiş görüntünün kırpılıp kırpılmayacağını ve nasıl kırpılacağını belirler; kırpmanın devre dışı bırakılması veya merkezden kırpma seçenekleri sunar. Bu, belirtilen boyutlara sığdırmak için kenarları potansiyel olarak kaldırarak görüntünün nihai kompozisyonunu etkiler. |
 
 ## Çıktılar
 
 | Parametre | Veri Tipi | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Yükseltilmiş (ve isteğe bağlı olarak kırpılmış) görüntü, daha fazla işleme veya görselleştirmeye hazır. |
+| `görüntü`   | `IMAGE`     | Yükseltilmiş (ve isteğe bağlı olarak kırpılmış) görüntü, daha fazla işleme veya görselleştirmeye hazır. |

@@ -7,8 +7,8 @@ BetaSamplingScheduler düğümü, beta zamanlama algoritmasını kullanarak örn
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `model` | MODEL | Gerekli | - | - | Model örnekleme nesnesini sağlayan, örnekleme için kullanılan model |
-| `steps` | INT | Gerekli | 20 | 1-10000 | Sigmaların oluşturulacağı örnekleme adım sayısı |
-| `alpha` | FLOAT | Gerekli | 0.6 | 0.0-50.0 | Beta zamanlayıcı için alfa parametresi, zamanlama eğrisini kontrol eder |
+| `adımlar` | INT | Gerekli | 20 | 1-10000 | Sigmaların oluşturulacağı örnekleme adım sayısı |
+| `alfa` | FLOAT | Gerekli | 0.6 | 0.0-50.0 | Beta zamanlayıcı için alfa parametresi, zamanlama eğrisini kontrol eder |
 | `beta` | FLOAT | Gerekli | 0.6 | 0.0-50.0 | Beta zamanlayıcı için beta parametresi, zamanlama eğrisini kontrol eder |
 
 ## Çıktılar

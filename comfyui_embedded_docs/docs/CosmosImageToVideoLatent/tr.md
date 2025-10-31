@@ -7,12 +7,12 @@ CosmosImageToVideoLatent düğümü, girdi görüntülerinden video latent temsi
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | Evet | - | Görüntüleri latent uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 1280) |
-| `height` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 704) |
-| `length` | INT | Hayır | 1'den MAX_RESOLUTION'a | Video dizisindeki kare sayısı (varsayılan: 121) |
-| `batch_size` | INT | Hayır | 1'den 4096'ya | Oluşturulacak latent batch sayısı (varsayılan: 1) |
-| `start_image` | IMAGE | Hayır | - | Video dizisinin başına kodlanacak isteğe bağlı görüntü |
-| `end_image` | IMAGE | Hayır | - | Video dizisinin sonuna kodlanacak isteğe bağlı görüntü |
+| `genişlik` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 1280) |
+| `yükseklik` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 704) |
+| `uzunluk` | INT | Hayır | 1'den MAX_RESOLUTION'a | Video dizisindeki kare sayısı (varsayılan: 121) |
+| `toplu_boyut` | INT | Hayır | 1'den 4096'ya | Oluşturulacak latent batch sayısı (varsayılan: 1) |
+| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video dizisinin başına kodlanacak isteğe bağlı görüntü |
+| `bitiş_görüntüsü` | IMAGE | Hayır | - | Video dizisinin sonuna kodlanacak isteğe bağlı görüntü |
 
 **Not:** Ne `start_image` ne de `end_image` sağlanmadığında, düğüm herhangi bir gürültü maskesi olmadan boş bir latent döndürür. Görüntülerden herhangi biri sağlandığında, latentin ilgili bölümleri kodlanır ve buna göre maskelenir.
 

@@ -6,9 +6,9 @@ Bu düğüm, bir sinir ağının yalnızca model bileşenini değiştirmek için
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `ckpt_name` | STRING | Evet | Birden fazla seçenek mevcut | LoRA modeli olarak yüklenecek kontrol noktası dosyası. Mevcut seçenekler kontrol noktaları klasörünün içeriğine bağlıdır. |
-| `strength_model` | FLOAT | Evet | -20.0 - 20.0 | LoRA'nın model bileşenine uygulanması için güç çarpanı (varsayılan: 1.0) |
-| `prev_hooks` | HOOKS | Hayır | - | Bu kanca ile zincirlenecek isteğe bağlı önceki kancalar |
+| `ckpt_adı` | STRING | Evet | Birden fazla seçenek mevcut | LoRA modeli olarak yüklenecek kontrol noktası dosyası. Mevcut seçenekler kontrol noktaları klasörünün içeriğine bağlıdır. |
+| `model_gücü` | FLOAT | Evet | -20.0 - 20.0 | LoRA'nın model bileşenine uygulanması için güç çarpanı (varsayılan: 1.0) |
+| `önceki_kancalar` | HOOKS | Hayır | - | Bu kanca ile zincirlenecek isteğe bağlı önceki kancalar |
 
 ## Çıkışlar
 

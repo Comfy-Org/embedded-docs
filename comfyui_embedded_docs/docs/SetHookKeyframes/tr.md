@@ -6,11 +6,11 @@ Set Hook Keyframes düğümü, mevcut hook gruplarına kare animasyonu planlama 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `hooks` | HOOKS | Evet | - | Kare animasyonu planlamasının uygulanacağı hook grubu |
-| `hook_kf` | HOOK_KEYFRAMES | Hayır | - | Hook çalıştırma için zamanlama bilgisi içeren isteğe bağlı kare animasyonu grubu |
+| `kancalar` | HOOKS | Evet | - | Kare animasyonu planlamasının uygulanacağı hook grubu |
+| `kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Hook çalıştırma için zamanlama bilgisi içeren isteğe bağlı kare animasyonu grubu |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `hooks` | HOOKS | Kare animasyonu planlaması uygulanmış değiştirilmiş hook grubu (kare animasyonları sağlandıysa klonlanmış) |
+| `kancalar` | HOOKS | Kare animasyonu planlaması uygulanmış değiştirilmiş hook grubu (kare animasyonları sağlandıysa klonlanmış) |

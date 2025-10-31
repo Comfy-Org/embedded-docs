@@ -6,14 +6,14 @@ Bir başlangıç ve bitiş noktası arasında enterpolasyonlu güç değerlerine
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `strength_start` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için başlangıç güç değeri (varsayılan: 1.0) |
-| `strength_end` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için bitiş güç değeri (varsayılan: 1.0) |
-| `interpolation` | COMBO | Evet | Birden fazla seçenek mevcut | Güç değerleri arasında geçiş yapmak için kullanılan enterpolasyon yöntemi |
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki başlangıç yüzdelik konumu (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki bitiş yüzdelik konumu (varsayılan: 1.0) |
-| `keyframes_count` | INT | Evet | 2 - 100 | Enterpolasyon dizisinde oluşturulacak kare sayısı (varsayılan: 5) |
-| `print_keyframes` | BOOLEAN | Evet | Doğru/Yanlış | Oluşturulan kare bilgilerini günlüğe yazdırıp yazdırmayacağı (varsayılan: Yanlış) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Hayır | - | Eklenecek isteğe bağlı önceki kanca kareleri grubu |
+| `başlangıç_gücü` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için başlangıç güç değeri (varsayılan: 1.0) |
+| `bitiş_gücü` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için bitiş güç değeri (varsayılan: 1.0) |
+| `enterpolasyon` | COMBO | Evet | Birden fazla seçenek mevcut | Güç değerleri arasında geçiş yapmak için kullanılan enterpolasyon yöntemi |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki başlangıç yüzdelik konumu (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki bitiş yüzdelik konumu (varsayılan: 1.0) |
+| `anahtar_kare_sayısı` | INT | Evet | 2 - 100 | Enterpolasyon dizisinde oluşturulacak kare sayısı (varsayılan: 5) |
+| `anahtar_kareleri_yazdır` | BOOLEAN | Evet | Doğru/Yanlış | Oluşturulan kare bilgilerini günlüğe yazdırıp yazdırmayacağı (varsayılan: Yanlış) |
+| `önceki_kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Eklenecek isteğe bağlı önceki kanca kareleri grubu |
 
 ## Çıkışlar
 

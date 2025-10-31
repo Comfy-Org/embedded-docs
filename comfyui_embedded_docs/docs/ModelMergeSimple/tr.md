@@ -10,7 +10,7 @@ ModelMergeSimple düğümü, iki modelin parametrelerini belirli bir orana göre
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | Birleştirilecek ilk model. İkinci modelden alınan yamaların uygulandığı temel model olarak hizmet eder. |
 | `model2`  | `MODEL`     | Yamaları, belirtilen orandan etkilenerek ilk modelin üzerine uygulanan ikinci model. |
-| `ratio`   | `FLOAT`     | Bu değer 1 olduğunda, çıktı modeli %100 `model1` olur ve bu değer 0 olduğunda, çıktı modeli %100 `model2` olur. |
+| `oran`   | `FLOAT`     | Bu değer 1 olduğunda, çıktı modeli %100 `model1` olur ve bu değer 0 olduğunda, çıktı modeli %100 `model2` olur. |
 
 ## Çıktılar
 

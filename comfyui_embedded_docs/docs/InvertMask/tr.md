@@ -6,10 +6,10 @@ InvertMask düğümü, belirli bir maskenin değerlerini tersine çevirmek için
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `mask`    | MASK      | 'mask' parametresi, tersine çevrilecek girdi maskesini temsil eder. Tersine çevirme işleminde hangi alanların değiştirileceğini belirlemek için kritik öneme sahiptir. |
+| `maske`    | MASK      | 'mask' parametresi, tersine çevrilecek girdi maskesini temsil eder. Tersine çevirme işleminde hangi alanların değiştirileceğini belirlemek için kritik öneme sahiptir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `mask`    | MASK      | Çıktı, girdi maskesinin tersine çevrilmiş halidir; önceden maskelenmiş alanlar maskesiz hale gelir ve bunun tersi de geçerlidir. |
+| `maske`    | MASK      | Çıktı, girdi maskesinin tersine çevrilmiş halidir; önceden maskelenmiş alanlar maskesiz hale gelir ve bunun tersi de geçerlidir. |

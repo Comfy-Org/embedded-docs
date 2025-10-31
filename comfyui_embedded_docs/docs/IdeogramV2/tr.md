@@ -6,15 +6,15 @@ Ideogram V2 düğümü, Ideogram V2 AI modelini kullanarak görüntüler oluştu
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Görüntü oluşturma için prompt (varsayılan: boş string) |
+| `istem` | STRING | Evet | - | Görüntü oluşturma için prompt (varsayılan: boş string) |
 | `turbo` | BOOLEAN | Hayır | - | Turbo modunun kullanılıp kullanılmayacağı (daha hızlı oluşturma, potansiyel olarak daha düşük kalite) (varsayılan: False) |
-| `aspect_ratio` | COMBO | Hayır | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | Görüntü oluşturma için en-boy oranı. Çözünürlük AUTO olarak ayarlanmamışsa dikkate alınmaz. (varsayılan: "1:1") |
-| `resolution` | COMBO | Hayır | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | Görüntü oluşturma için çözünürlük. AUTO olarak ayarlanmazsa, bu ayar aspect_ratio ayarını geçersiz kılar. (varsayılan: "Auto") |
-| `magic_prompt_option` | COMBO | Hayır | "AUTO"<br>"ON"<br>"OFF" | Oluşturmada MagicPrompt'un kullanılıp kullanılmayacağını belirler (varsayılan: "AUTO") |
-| `seed` | INT | Hayır | 0-2147483647 | Oluşturma için rastgele seed değeri (varsayılan: 0) |
-| `style_type` | COMBO | Hayır | "AUTO"<br>"GENERAL"<br>"REALISTIC"<br>"DESIGN"<br>"RENDER_3D"<br>"ANIME" | Oluşturma için stil türü (sadece V2) (varsayılan: "NONE") |
-| `negative_prompt` | STRING | Hayır | - | Görüntüde nelerin hariç tutulacağının açıklaması (varsayılan: boş string) |
-| `num_images` | INT | Hayır | 1-8 | Oluşturulacak görüntü sayısı (varsayılan: 1) |
+| `en_boy_oranı` | COMBO | Hayır | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | Görüntü oluşturma için en-boy oranı. Çözünürlük AUTO olarak ayarlanmamışsa dikkate alınmaz. (varsayılan: "1:1") |
+| `çözünürlük` | COMBO | Hayır | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | Görüntü oluşturma için çözünürlük. AUTO olarak ayarlanmazsa, bu ayar aspect_ratio ayarını geçersiz kılar. (varsayılan: "Auto") |
+| `sihirli_istem_seçeneği` | COMBO | Hayır | "AUTO"<br>"ON"<br>"OFF" | Oluşturmada MagicPrompt'un kullanılıp kullanılmayacağını belirler (varsayılan: "AUTO") |
+| `tohum` | INT | Hayır | 0-2147483647 | Oluşturma için rastgele seed değeri (varsayılan: 0) |
+| `stil_türü` | COMBO | Hayır | "AUTO"<br>"GENERAL"<br>"REALISTIC"<br>"DESIGN"<br>"RENDER_3D"<br>"ANIME" | Oluşturma için stil türü (sadece V2) (varsayılan: "NONE") |
+| `negatif_istem` | STRING | Hayır | - | Görüntüde nelerin hariç tutulacağının açıklaması (varsayılan: boş string) |
+| `görüntü_sayısı` | INT | Hayır | 1-8 | Oluşturulacak görüntü sayısı (varsayılan: 1) |
 
 **Not:** `resolution` "Auto" olarak ayarlanmadığında, `aspect_ratio` ayarını geçersiz kılar. `num_images` parametresinin oluşturma başına maksimum 8 görüntü limiti vardır.
 

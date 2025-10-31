@@ -10,7 +10,7 @@ CLIPAttentionMultiply düğümü, CLIP modellerindeki dikkat mekanizmasını, ö
 | `q` | FLOAT | gerekli | 1.0 | 0.0 - 10.0 | Sorgu projeksiyonu ağırlıkları ve önyargıları için çarpım faktörü |
 | `k` | FLOAT | gerekli | 1.0 | 0.0 - 10.0 | Anahtar projeksiyonu ağırlıkları ve önyargıları için çarpım faktörü |
 | `v` | FLOAT | gerekli | 1.0 | 0.0 - 10.0 | Değer projeksiyonu ağırlıkları ve önyargıları için çarpım faktörü |
-| `out` | FLOAT | gerekli | 1.0 | 0.0 - 10.0 | Çıktı projeksiyonu ağırlıkları ve önyargıları için çarpım faktörü |
+| `çıktı` | FLOAT | gerekli | 1.0 | 0.0 - 10.0 | Çıktı projeksiyonu ağırlıkları ve önyargıları için çarpım faktörü |
 
 ## Çıktılar
 

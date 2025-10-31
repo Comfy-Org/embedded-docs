@@ -7,7 +7,7 @@ ModelComputeDtype düğümü, bir modelin çıkarım sırasında kullandığı h
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Yeni bir hesaplama veri türü uygulanacak girdi modeli |
-| `dtype` | STRING | Evet | "default"<br>"fp32"<br>"fp16"<br>"bf16" | Modele uygulanacak hesaplama veri türü |
+| `veri_türü` | STRING | Evet | "default"<br>"fp32"<br>"fp16"<br>"bf16" | Modele uygulanacak hesaplama veri türü |
 
 ## Çıktılar
 

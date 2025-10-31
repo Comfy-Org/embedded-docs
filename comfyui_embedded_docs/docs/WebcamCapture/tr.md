@@ -6,10 +6,10 @@ WebcamCapture düğümü, bir web kamerası cihazından görüntü yakalar ve Co
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | WEBCAM | Evet | - | Görüntülerin yakalanacağı web kamerası giriş kaynağı |
-| `width` | INT | Hayır | 0 - MAX_RESOLUTION | Yakalanan görüntü için istenen genişlik (varsayılan: 0, web kameranın yerel çözünürlüğünü kullanır) |
-| `height` | INT | Hayır | 0 - MAX_RESOLUTION | Yakalanan görüntü için istenen yükseklik (varsayılan: 0, web kameranın yerel çözünürlüğünü kullanır) |
-| `capture_on_queue` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, iş akışı kuyruğu her işlendiğinde yeni bir görüntü yakalar (varsayılan: True) |
+| `görüntü` | WEBCAM | Evet | - | Görüntülerin yakalanacağı web kamerası giriş kaynağı |
+| `genişlik` | INT | Hayır | 0 - MAX_RESOLUTION | Yakalanan görüntü için istenen genişlik (varsayılan: 0, web kameranın yerel çözünürlüğünü kullanır) |
+| `yükseklik` | INT | Hayır | 0 - MAX_RESOLUTION | Yakalanan görüntü için istenen yükseklik (varsayılan: 0, web kameranın yerel çözünürlüğünü kullanır) |
+| `kuyrukta_yakala` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, iş akışı kuyruğu her işlendiğinde yeni bir görüntü yakalar (varsayılan: True) |
 
 **Not:** Hem `width` hem de `height` 0 olarak ayarlandığında, düğüm web kameranın yerel çözünürlüğünü kullanır. Boyutlardan herhangi birini sıfır olmayan bir değere ayarlamak, yakalanan görüntüyü buna göre yeniden boyutlandıracaktır.
 

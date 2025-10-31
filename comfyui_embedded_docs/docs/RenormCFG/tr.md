@@ -7,8 +7,8 @@ RenormCFG düğümü, yayılım modellerinde sınıflandırıcısız kılavuzluk
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Yeniden normalleştirilmiş CFG uygulanacak yayılım modeli |
-| `cfg_trunc` | FLOAT | Hayır | 0.0 - 100.0 | CFG ölçeklendirmesinin uygulanacağı zaman adımı eşiği (varsayılan: 100.0) |
-| `renorm_cfg` | FLOAT | Hayır | 0.0 - 100.0 | Koşullu kılavuzluk gücünü kontrol etmek için yeniden normalleştirme faktörü (varsayılan: 1.0) |
+| `cfg_kesme` | FLOAT | Hayır | 0.0 - 100.0 | CFG ölçeklendirmesinin uygulanacağı zaman adımı eşiği (varsayılan: 100.0) |
+| `yenidenorm_cfg` | FLOAT | Hayır | 0.0 - 100.0 | Koşullu kılavuzluk gücünü kontrol etmek için yeniden normalleştirme faktörü (varsayılan: 1.0) |
 
 ## Çıktılar
 

@@ -6,13 +6,13 @@ PikaFrames v2.2 Düğümü, ilk ve son karelerinizi birleştirerek videolar olu�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image_start` | IMAGE | Evet | - | Birleştirilecek ilk resim. |
-| `image_end` | IMAGE | Evet | - | Birleştirilecek son resim. |
-| `prompt_text` | STRING | Evet | - | İstenen video içeriğini tanımlayan metin istemi. |
-| `negative_prompt` | STRING | Evet | - | Videoda nelerden kaçınılması gerektiğini açıklayan metin. |
-| `seed` | INT | Evet | - | Üretim tutarlılığı için rastgele tohum değeri. |
-| `resolution` | STRING | Evet | - | Çıktı videosunun çözünürlüğü. |
-| `duration` | INT | Evet | - | Oluşturulan videonun süresi. |
+| `başlangıç_görüntüsü` | IMAGE | Evet | - | Birleştirilecek ilk resim. |
+| `bitiş_görüntüsü` | IMAGE | Evet | - | Birleştirilecek son resim. |
+| `istem_metni` | STRING | Evet | - | İstenen video içeriğini tanımlayan metin istemi. |
+| `negatif_istem` | STRING | Evet | - | Videoda nelerden kaçınılması gerektiğini açıklayan metin. |
+| `tohum` | INT | Evet | - | Üretim tutarlılığı için rastgele tohum değeri. |
+| `çözünürlük` | STRING | Evet | - | Çıktı videosunun çözünürlüğü. |
+| `süre` | INT | Evet | - | Oluşturulan videonun süresi. |
 
 ## Çıktılar
 

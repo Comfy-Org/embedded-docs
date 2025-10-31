@@ -6,8 +6,8 @@ LatentApplyOperation düğümü, belirtilen bir işlemi gizli örnekler üzerine
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | İşlem tarafından işlenecek gizli örnekler |
-| `operation` | LATENT_OPERATION | Evet | - | Gizli örneklere uygulanacak işlem |
+| `örnekler` | LATENT | Evet | - | İşlem tarafından işlenecek gizli örnekler |
+| `işlem` | LATENT_OPERATION | Evet | - | Gizli örneklere uygulanacak işlem |
 
 ## Çıktılar
 

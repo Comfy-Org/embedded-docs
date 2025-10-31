@@ -11,12 +11,12 @@ Bu düğüm, metin açıklamalarına dayalı görüntüler oluşturmak için Ope
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `prompt` | STRING | gerekli | "" | - | DALL·E için metin istemi |
-| `seed` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
-| `size` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görüntü boyutu |
+| `istem` | STRING | gerekli | "" | - | DALL·E için metin istemi |
+| `tohum` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
+| `boyut` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görüntü boyutu |
 | `n` | INT | isteğe bağlı | 1 | 1 ile 8 arası | Kaç adet görüntü oluşturulacağı |
-| `image` | IMAGE | isteğe bağlı | Yok | - | Görüntü düzenleme için isteğe bağlı referans görüntüsü. |
-| `mask` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
+| `görüntü` | IMAGE | isteğe bağlı | Yok | - | Görüntü düzenleme için isteğe bağlı referans görüntüsü. |
+| `maske` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
 
 ## Çıkışlar
 

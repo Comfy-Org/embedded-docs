@@ -10,7 +10,7 @@ Bu düğüm, iki CLIP modelini belirli bir orana göre birleştirerek özellikle
 |-----------|-----------|-------------|
 | `clip1`   | CLIP      | Birleştirilecek ilk CLIP modeli. Birleştirme işlemi için temel model olarak hizmet eder. |
 | `clip2`   | CLIP      | Birleştirilecek ikinci CLIP modeli. Konum kimlikleri ve logit ölçeği hariç, anahtar yamaları, belirtilen orana bağlı olarak ilk modele uygulanır. |
-| `ratio`   | FLOAT     | Aralık `0.0 - 1.0`, ikinci modelin özelliklerinden ilk modele karıştırılacak oranı belirler. 1.0 oranı, ikinci modelin özelliklerinin tamamen benimsendiği, 0.0 oranı ise yalnızca ilk modelin özelliklerinin korunduğu anlamına gelir. |
+| `oran`   | FLOAT     | Aralık `0.0 - 1.0`, ikinci modelin özelliklerinden ilk modele karıştırılacak oranı belirler. 1.0 oranı, ikinci modelin özelliklerinin tamamen benimsendiği, 0.0 oranı ise yalnızca ilk modelin özelliklerinin korunduğu anlamına gelir. |
 
 ## Çıktılar
 

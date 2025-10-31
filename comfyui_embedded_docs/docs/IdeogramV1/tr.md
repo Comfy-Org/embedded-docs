@@ -6,13 +6,13 @@ IdeogramV1 düğümü, bir API aracılığıyla Ideogram V1 modelini kullanarak 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Görüntü oluşturma için istem (varsayılan: boş) |
+| `istem` | STRING | Evet | - | Görüntü oluşturma için istem (varsayılan: boş) |
 | `turbo` | BOOLEAN | Evet | - | Turbo modunun kullanılıp kullanılmayacağı (daha hızlı oluşturma, potansiyel olarak daha düşük kalite) (varsayılan: False) |
-| `aspect_ratio` | COMBO | Hayır | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | Görüntü oluşturma için en-boy oranı (varsayılan: "1:1") |
-| `magic_prompt_option` | COMBO | Hayır | "AUTO"<br>"ON"<br>"OFF" | Oluşturmada MagicPrompt'un kullanılıp kullanılmayacağını belirleme (varsayılan: "AUTO") |
-| `seed` | INT | Hayır | 0-2147483647 | Oluşturma için rastgele tohum değeri (varsayılan: 0) |
-| `negative_prompt` | STRING | Hayır | - | Görüntüden neyin hariç tutulacağının açıklaması (varsayılan: boş) |
-| `num_images` | INT | Hayır | 1-8 | Oluşturulacak görüntü sayısı (varsayılan: 1) |
+| `en_boy_oranı` | COMBO | Hayır | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | Görüntü oluşturma için en-boy oranı (varsayılan: "1:1") |
+| `sihirli_istem_seçeneği` | COMBO | Hayır | "AUTO"<br>"ON"<br>"OFF" | Oluşturmada MagicPrompt'un kullanılıp kullanılmayacağını belirleme (varsayılan: "AUTO") |
+| `tohum` | INT | Hayır | 0-2147483647 | Oluşturma için rastgele tohum değeri (varsayılan: 0) |
+| `negatif_istem` | STRING | Hayır | - | Görüntüden neyin hariç tutulacağının açıklaması (varsayılan: boş) |
+| `görüntü_sayısı` | INT | Hayır | 1-8 | Oluşturulacak görüntü sayısı (varsayılan: 1) |
 
 **Not:** `num_images` parametresinin, oluşturma isteği başına maksimum 8 görüntü sınırı vardır.
 

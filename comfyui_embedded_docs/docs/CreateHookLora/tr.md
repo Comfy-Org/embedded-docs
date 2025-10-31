@@ -6,10 +6,10 @@ Create Hook LoRA düğümü, modellere LoRA (Düşük Ranklı Adaptasyon) deği�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `lora_name` | STRING | Evet | Birden fazla seçenek mevcut | loras dizininden yüklenecek LoRA dosyasının adı |
-| `strength_model` | FLOAT | Evet | -20.0 ile 20.0 arası | Model ayarlamaları için güç çarpanı (varsayılan: 1.0) |
-| `strength_clip` | FLOAT | Evet | -20.0 ile 20.0 arası | CLIP ayarlamaları için güç çarpanı (varsayılan: 1.0) |
-| `prev_hooks` | HOOKS | Hayır | Yok | Yeni LoRA kancalarıyla birleştirilecek isteğe bağlı mevcut kanca grubu |
+| `lora_adı` | STRING | Evet | Birden fazla seçenek mevcut | loras dizininden yüklenecek LoRA dosyasının adı |
+| `model_gücü` | FLOAT | Evet | -20.0 ile 20.0 arası | Model ayarlamaları için güç çarpanı (varsayılan: 1.0) |
+| `clip_gücü` | FLOAT | Evet | -20.0 ile 20.0 arası | CLIP ayarlamaları için güç çarpanı (varsayılan: 1.0) |
+| `önceki_kancalar` | HOOKS | Hayır | Yok | Yeni LoRA kancalarıyla birleştirilecek isteğe bağlı mevcut kanca grubu |
 
 **Parametre Kısıtlamaları:**
 

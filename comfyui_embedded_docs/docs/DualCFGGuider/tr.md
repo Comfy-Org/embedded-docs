@@ -7,11 +7,11 @@ DualCFGGuider düğümü, çift sınıflandırıcısız kılavuzluk örneklemesi
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Kılavuzluk için kullanılacak model |
-| `cond1` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girişi |
-| `cond2` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girişi |
-| `negative` | CONDITIONING | Evet | - | Negatif koşullandırma girişi |
-| `cfg_conds` | FLOAT | Evet | 0.0 - 100.0 | İlk pozitif koşullandırma için kılavuzluk ölçeği (varsayılan: 8.0) |
-| `cfg_cond2_negative` | FLOAT | Evet | 0.0 - 100.0 | İkinci pozitif ve negatif koşullandırma için kılavuzluk ölçeği (varsayılan: 8.0) |
+| `koşul1` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girişi |
+| `koşul2` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girişi |
+| `negatif` | CONDITIONING | Evet | - | Negatif koşullandırma girişi |
+| `cfg_koşulları` | FLOAT | Evet | 0.0 - 100.0 | İlk pozitif koşullandırma için kılavuzluk ölçeği (varsayılan: 8.0) |
+| `cfg_koşul2_negatif` | FLOAT | Evet | 0.0 - 100.0 | İkinci pozitif ve negatif koşullandırma için kılavuzluk ölçeği (varsayılan: 8.0) |
 | `style` | COMBO | Evet | "regular"<br>"nested" | Uygulanacak kılavuzluk stili (varsayılan: "regular") |
 
 ## Çıktılar

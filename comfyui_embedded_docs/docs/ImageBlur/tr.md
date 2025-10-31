@@ -6,12 +6,12 @@
 
 | Alan          | Veri Türü | Açıklama                                                                   |
 |----------------|-------------|-------------------------------------------------------------------------------|
-| `image`        | `IMAGE`     | Bulanıklaştırılacak girdi görüntüsü. Bu, bulanıklık efektinin temel hedefidir. |
-| `blur_radius`  | `INT`       | Bulanıklık efektinin yarıçapını belirler. Daha büyük bir yarıçap, daha belirgin bir bulanıklık ile sonuçlanır. |
+| `görüntü`        | `IMAGE`     | Bulanıklaştırılacak girdi görüntüsü. Bu, bulanıklık efektinin temel hedefidir. |
+| `bulanıklık_yarıçapı`  | `INT`       | Bulanıklık efektinin yarıçapını belirler. Daha büyük bir yarıçap, daha belirgin bir bulanıklık ile sonuçlanır. |
 | `sigma`        | `FLOAT`     | Bulanıklığın yayılımını kontrol eder. Daha yüksek bir sigma değeri, bulanıklığın her piksel etrafında daha geniş bir alanı etkileyeceği anlamına gelir. |
 
 ## Çıktılar
 
 | Alan | Veri Türü | Açıklama                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
-| `image`| `IMAGE`     | Çıktı, girdi parametreleri tarafından belirlenen bulanıklık derecesine sahip, girdi görüntüsünün bulanıklaştırılmış halidir. |
+| `görüntü`| `IMAGE`     | Çıktı, girdi parametreleri tarafından belirlenen bulanıklık derecesine sahip, girdi görüntüsünün bulanıklaştırılmış halidir. |

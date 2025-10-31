@@ -6,17 +6,17 @@ Kling Görüntüden Videoya Kamera Kontrol Düğümü, sabit görüntüleri prof
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `start_frame` | IMAGE | Evet | - | Referans Görüntü - URL veya Base64 kodlanmış dize, 10MB'ı aşamaz, çözünürlük 300*300px'den az olamaz, en-boy oranı 1:2.5 ~ 2.5:1 arasında olmalıdır. Base64, data:image önekini içermemelidir. |
-| `prompt` | STRING | Evet | - | Olumlu metin istemi |
-| `negative_prompt` | STRING | Evet | - | Olumsuz metin istemi |
-| `cfg_scale` | FLOAT | Hayır | 0.0-1.0 | Metin kılavuzluğunun gücünü kontrol eder (varsayılan: 0.75) |
-| `aspect_ratio` | COMBO | Hayır | Birden fazla seçenek mevcut | Video en-boy oranı seçimi (varsayılan: 16:9) |
-| `camera_control` | CAMERA_CONTROL | Evet | - | Kling Kamera Kontrolleri düğümü kullanılarak oluşturulabilir. Video oluşturma sırasındaki kamera hareketini ve devinimi kontrol eder. |
+| `başlangıç_karesi` | IMAGE | Evet | - | Referans Görüntü - URL veya Base64 kodlanmış dize, 10MB'ı aşamaz, çözünürlük 300*300px'den az olamaz, en-boy oranı 1:2.5 ~ 2.5:1 arasında olmalıdır. Base64, data:image önekini içermemelidir. |
+| `istem` | STRING | Evet | - | Olumlu metin istemi |
+| `negatif_istem` | STRING | Evet | - | Olumsuz metin istemi |
+| `cfg_ölçeği` | FLOAT | Hayır | 0.0-1.0 | Metin kılavuzluğunun gücünü kontrol eder (varsayılan: 0.75) |
+| `en_boy_oranı` | COMBO | Hayır | Birden fazla seçenek mevcut | Video en-boy oranı seçimi (varsayılan: 16:9) |
+| `kamera_kontrolü` | CAMERA_CONTROL | Evet | - | Kling Kamera Kontrolleri düğümü kullanılarak oluşturulabilir. Video oluşturma sırasındaki kamera hareketini ve devinimi kontrol eder. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video çıktısı |
-| `video_id` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Oluşturulan video çıktısı |
+| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
 | `duration` | STRING | Oluşturulan videonun süresi |

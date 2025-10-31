@@ -6,7 +6,7 @@ LoadAudio düğümü, giriş dizininden ses dosyalarını yükler ve ComfyUI'dek
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | Giriş dizinindeki desteklenen tüm ses/video dosyaları | Giriş dizininden yüklenecek ses dosyası |
+| `ses` | AUDIO | Evet | Giriş dizinindeki desteklenen tüm ses/video dosyaları | Giriş dizininden yüklenecek ses dosyası |
 
 **Not:** Düğüm yalnızca ComfyUI'nin giriş dizininde bulunan ses ve video dosyalarını kabul eder. Dosyanın başarılı bir şekilde yüklenebilmesi için mevcut ve erişilebilir olması gerekir.
 

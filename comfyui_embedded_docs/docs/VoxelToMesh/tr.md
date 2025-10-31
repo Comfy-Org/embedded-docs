@@ -6,9 +6,9 @@ VoxelToMesh düğümü, 3B voksel verilerini farklı algoritmalar kullanarak mes
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `voxel` | VOXEL | Evet | - | Mesh geometrisine dönüştürülecek giriş voksel verisi |
-| `algorithm` | COMBO | Evet | "surface net"<br>"basic" | Voksel verisinden mesh dönüşümü için kullanılan algoritma |
-| `threshold` | FLOAT | Evet | -1.0 - 1.0 | Yüzey çıkarımı için eşik değeri (varsayılan: 0.6) |
+| `voksel` | VOXEL | Evet | - | Mesh geometrisine dönüştürülecek giriş voksel verisi |
+| `algoritma` | COMBO | Evet | "surface net"<br>"basic" | Voksel verisinden mesh dönüşümü için kullanılan algoritma |
+| `eşik` | FLOAT | Evet | -1.0 - 1.0 | Yüzey çıkarımı için eşik değeri (varsayılan: 0.6) |
 
 ## Çıktılar
 

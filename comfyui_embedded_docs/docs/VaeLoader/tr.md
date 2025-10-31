@@ -8,7 +8,7 @@ VAELoader düğümü, Varyasyonel Otokodlayıcı (VAE) modellerini yüklemek iç
 
 | Alan       | Comfy Veri Türü   | Açıklama                                                                                   |
 |------------|-------------------|-----------------------------------------------------------------------------------------------|
-| `vae_name` | `COMBO[STRING]`    | Yüklenecek VAE'nin adını belirtir, hangi VAE modelinin getirileceğini ve yükleneceğini belirler; 'taesd' ve 'taesdxl' dahil olmak üzere bir dizi önceden tanımlanmış VAE adını destekler. |
+| `vae_adı` | `COMBO[STRING]`    | Yüklenecek VAE'nin adını belirtir, hangi VAE modelinin getirileceğini ve yükleneceğini belirler; 'taesd' ve 'taesdxl' dahil olmak üzere bir dizi önceden tanımlanmış VAE adını destekler. |
 
 ## Çıktılar
 

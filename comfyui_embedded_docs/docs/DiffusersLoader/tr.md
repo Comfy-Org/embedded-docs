@@ -6,7 +6,7 @@ DiffusersLoader düğümü, önceden eğitilmiş modelleri diffusers formatında
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model_path` | STRING | Evet | Birden fazla seçenek mevcut<br>(diffusers klasörlerinden otomatik doldurulur) | Yüklenecek diffusers model dizininin yolu. Düğüm, yapılandırılmış diffusers klasörlerinde geçerli diffusers modellerini otomatik olarak tarar ve mevcut seçenekleri listeler. |
+| `model_yolu` | STRING | Evet | Birden fazla seçenek mevcut<br>(diffusers klasörlerinden otomatik doldurulur) | Yüklenecek diffusers model dizininin yolu. Düğüm, yapılandırılmış diffusers klasörlerinde geçerli diffusers modellerini otomatik olarak tarar ve mevcut seçenekleri listeler. |
 
 ## Çıkışlar
 

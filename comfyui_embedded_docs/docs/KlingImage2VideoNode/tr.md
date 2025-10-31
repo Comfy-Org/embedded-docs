@@ -6,19 +6,19 @@ Kling Görüntüden Videoya Düğümü, başlangıç görüntüsünden metin ist
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `start_frame` | IMAGE | Evet | - | Videoyu oluşturmak için kullanılan referans görüntü. |
-| `prompt` | STRING | Evet | - | Olumlu metin istemi. |
-| `negative_prompt` | STRING | Evet | - | Olumsuz metin istemi. |
-| `model_name` | COMBO | Evet | Birden fazla seçenek mevcut | Video oluşturma için model seçimi (varsayılan: "kling-v2-master"). |
-| `cfg_scale` | FLOAT | Evet | 0.0-1.0 | Yapılandırma ölçeği parametresi (varsayılan: 0.8). |
-| `mode` | COMBO | Evet | Birden fazla seçenek mevcut | Video oluşturma modu seçimi (varsayılan: std). |
-| `aspect_ratio` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan video için en-boy oranı (varsayılan: field_16_9). |
-| `duration` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi (varsayılan: field_5). |
+| `başlangıç_karesi` | IMAGE | Evet | - | Videoyu oluşturmak için kullanılan referans görüntü. |
+| `istem` | STRING | Evet | - | Olumlu metin istemi. |
+| `negatif_istem` | STRING | Evet | - | Olumsuz metin istemi. |
+| `model_adı` | COMBO | Evet | Birden fazla seçenek mevcut | Video oluşturma için model seçimi (varsayılan: "kling-v2-master"). |
+| `cfg_ölçeği` | FLOAT | Evet | 0.0-1.0 | Yapılandırma ölçeği parametresi (varsayılan: 0.8). |
+| `mod` | COMBO | Evet | Birden fazla seçenek mevcut | Video oluşturma modu seçimi (varsayılan: std). |
+| `en_boy_oranı` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan video için en-boy oranı (varsayılan: field_16_9). |
+| `süre` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi (varsayılan: field_5). |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video çıktısı. |
-| `video_id` | STRING | Oluşturulan video için benzersiz tanımlayıcı. |
-| `duration` | STRING | Oluşturulan video için süre bilgisi. |
+| `video_kimliği` | VIDEO | Oluşturulan video çıktısı. |
+| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı. |
+| `süre` | STRING | Oluşturulan video için süre bilgisi. |

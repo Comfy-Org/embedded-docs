@@ -8,7 +8,7 @@ ControlNetLoader düğümü, belirtilen bir yoldan bir ControlNet modeli yüklem
 
 | Alan             | Comfy dtype       | Açıklama                                                                       |
 |-------------------|-------------------|---------------------------------------------------------------------------------|
-| `control_net_name`| `COMBO[STRING]`    | Yüklenecek ControlNet modelinin adını belirtir, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
+| `kontrol_ağı_adı`| `COMBO[STRING]`    | Yüklenecek ControlNet modelinin adını belirtir, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
 
 ## Çıktılar
 

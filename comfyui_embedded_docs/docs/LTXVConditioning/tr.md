@@ -6,13 +6,13 @@ LTXVConditioning düğümü, video üretim modelleri için hem pozitif hem de ne
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Kare hızı bilgisi eklenecek pozitif koşullandırma girişi |
-| `negative` | CONDITIONING | Evet | - | Kare hızı bilgisi eklenecek negatif koşullandırma girişi |
-| `frame_rate` | FLOAT | Hayır | 0.0 - 1000.0 | Her iki koşullandırma setine uygulanacak kare hızı değeri (varsayılan: 25.0) |
+| `pozitif` | CONDITIONING | Evet | - | Kare hızı bilgisi eklenecek pozitif koşullandırma girişi |
+| `negatif` | CONDITIONING | Evet | - | Kare hızı bilgisi eklenecek negatif koşullandırma girişi |
+| `kare_hızı` | FLOAT | Hayır | 0.0 - 1000.0 | Her iki koşullandırma setine uygulanacak kare hızı değeri (varsayılan: 25.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Kare hızı bilgisi uygulanmış pozitif koşullandırma |
-| `negative` | CONDITIONING | Kare hızı bilgisi uygulanmış negatif koşullandırma |
+| `negatif` | CONDITIONING | Kare hızı bilgisi uygulanmış pozitif koşullandırma |
+| `negatif` | CONDITIONING | Kare hızı bilgisi uygulanmış negatif koşullandırma |

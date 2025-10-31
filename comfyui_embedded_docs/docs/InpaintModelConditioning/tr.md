@@ -6,16 +6,16 @@ InpaintModelConditioning düğümü, inpaint modelleri için koşullandırma sü
 
 | Parametre | Comfy türü        | Açıklama |
 |-----------|--------------------|-------------|
-| `positive`| `CONDITIONING`     | Inpaint modeline uygulanacak pozitif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, inpaint işleminin hangi bağlam veya kısıtlamalar altında gerçekleştirileceğini tanımlamak için çok önemli olup, nihai çıktıyı önemli ölçüde etkiler. |
-| `negative`| `CONDITIONING`     | Inpaint modeline uygulanacak negatif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, inpaint sürecinde kaçınılması gereken koşulları veya bağlamları belirtmek için temeldir ve böylece nihai çıktıyı etkiler. |
+| `pozitif`| `CONDITIONING`     | Inpaint modeline uygulanacak pozitif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, inpaint işleminin hangi bağlam veya kısıtlamalar altında gerçekleştirileceğini tanımlamak için çok önemli olup, nihai çıktıyı önemli ölçüde etkiler. |
+| `negatif`| `CONDITIONING`     | Inpaint modeline uygulanacak negatif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, inpaint sürecinde kaçınılması gereken koşulları veya bağlamları belirtmek için temeldir ve böylece nihai çıktıyı etkiler. |
 | `vae`     | `VAE`              | Koşullandırma sürecinde kullanılacak VAE modelini belirtir. Bu girdi, kullanılacak VAE modelinin belirli mimarisini ve parametrelerini belirlemek için çok önemlidir. |
-| `pixels`  | `IMAGE`            | İşlenecek görüntünün piksel verilerini temsil eder. Bu girdi, inpaint görevi için gerekli olan görsel bağlamı sağlamak açısından temeldir. |
-| `mask`    | `MASK`             | Görüntüye uygulanacak ve inpaint yapılacak alanları gösteren maskeyi belirtir. Bu girdi, görüntü içinde inpaint gerektiren belirli bölgeleri tanımlamak için çok önemlidir. |
+| `pikseller`  | `IMAGE`            | İşlenecek görüntünün piksel verilerini temsil eder. Bu girdi, inpaint görevi için gerekli olan görsel bağlamı sağlamak açısından temeldir. |
+| `maske`    | `MASK`             | Görüntüye uygulanacak ve inpaint yapılacak alanları gösteren maskeyi belirtir. Bu girdi, görüntü içinde inpaint gerektiren belirli bölgeleri tanımlamak için çok önemlidir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü      | Açıklama |
 |-----------|--------------|-------------|
-| `positive`| `CONDITIONING` | İşlendikten sonra değiştirilmiş pozitif koşullandırma bilgisi, inpaint modeline uygulanmaya hazırdır. Bu çıktı, belirtilen pozitif koşullara göre inpaint sürecini yönlendirmek için temeldir. |
-| `negative`| `CONDITIONING` | İşlendikten sonra değiştirilmiş negatif koşullandırma bilgisi, inpaint modeline uygulanmaya hazırdır. Bu çıktı, belirtilen negatif koşullara göre inpaint sürecini yönlendirmek için temeldir. |
+| `negatif`| `CONDITIONING` | İşlendikten sonra değiştirilmiş pozitif koşullandırma bilgisi, inpaint modeline uygulanmaya hazırdır. Bu çıktı, belirtilen pozitif koşullara göre inpaint sürecini yönlendirmek için temeldir. |
+| `gizli`| `CONDITIONING` | İşlendikten sonra değiştirilmiş negatif koşullandırma bilgisi, inpaint modeline uygulanmaya hazırdır. Bu çıktı, belirtilen negatif koşullara göre inpaint sürecini yönlendirmek için temeldir. |
 | `latent`  | `LATENT`     | Koşullandırma sürecinden türetilen gizli temsildir. Bu çıktı, işlenmekte olan görüntünün altında yatan özellikleri ve karakteristikleri anlamak için çok önemlidir. |

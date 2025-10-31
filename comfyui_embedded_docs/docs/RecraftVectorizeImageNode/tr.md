@@ -6,7 +6,7 @@ Girdi görüntüsünden SVG'yi eşzamanlı olarak oluşturur. Bu düğüm, pikse
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | SVG formatına dönüştürülecek girdi görüntüsü |
+| `görüntü` | IMAGE | Evet | - | SVG formatına dönüştürülecek girdi görüntüsü |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | Hayır | - | API erişimi için kimlik doğrulama belirteci |
 | `comfy_api_key` | API_KEY_COMFY_ORG | Hayır | - | Comfy.org servisleri için API anahtarı |
 

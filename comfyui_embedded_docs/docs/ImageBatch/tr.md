@@ -6,8 +6,8 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image1`  | `IMAGE`     | Toplu işleme birleştirilecek ilk görüntü. Gerekirse ikinci görüntünün ayarlanacağı boyutlar için referans görevi görür. |
-| `image2`  | `IMAGE`     | Toplu işleme birleştirilecek ikinci görüntü. Farklılık gösteriyorsa, ilk görüntünün boyutlarına uyacak şekilde otomatik olarak yeniden ölçeklendirilir. |
+| `görüntü1`  | `IMAGE`     | Toplu işleme birleştirilecek ilk görüntü. Gerekirse ikinci görüntünün ayarlanacağı boyutlar için referans görevi görür. |
+| `görüntü2`  | `IMAGE`     | Toplu işleme birleştirilecek ikinci görüntü. Farklılık gösteriyorsa, ilk görüntünün boyutlarına uyacak şekilde otomatik olarak yeniden ölçeklendirilir. |
 
 ## Çıktılar
 

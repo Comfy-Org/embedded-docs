@@ -7,10 +7,10 @@ HyperTile düğümü, görüntü oluşturma sırasında bellek kullanımını op
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | HyperTile optimizasyonunun uygulanacağı yayılım modeli |
-| `tile_size` | INT | Hayır | 1-2048 | İşleme için hedef karoların boyutu (varsayılan: 256) |
-| `swap_size` | INT | Hayır | 1-128 | İşleme sırasında karoların nasıl yeniden düzenleneceğini kontrol eder (varsayılan: 2) |
-| `max_depth` | INT | Hayır | 0-10 | Döşemenin uygulanacağı maksimum derinlik seviyesi (varsayılan: 0) |
-| `scale_depth` | BOOLEAN | Hayır | - | Karonun boyutunun derinlik seviyesine göre ölçeklenip ölçeklenmeyeceği (varsayılan: False) |
+| `döşeme_boyutu` | INT | Hayır | 1-2048 | İşleme için hedef karoların boyutu (varsayılan: 256) |
+| `değiştirme_boyutu` | INT | Hayır | 1-128 | İşleme sırasında karoların nasıl yeniden düzenleneceğini kontrol eder (varsayılan: 2) |
+| `maks_derinlik` | INT | Hayır | 0-10 | Döşemenin uygulanacağı maksimum derinlik seviyesi (varsayılan: 0) |
+| `ölçek_derinliği` | BOOLEAN | Hayır | - | Karonun boyutunun derinlik seviyesine göre ölçeklenip ölçeklenmeyeceği (varsayılan: False) |
 
 ## Çıktılar
 

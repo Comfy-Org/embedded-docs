@@ -18,15 +18,15 @@ Nihai çıktı, siyah beyaz bir görüntüdür; beyaz kısımlar tespit edilen k
 
 | Parametre Adı    | Veri Türü | Girdi Türü | Varsayılan | Aralık     | İşlev Açıklaması |
 |------------------|-----------|------------|---------|-----------|------------------|
-| `image`          | IMAGE     | Girdi      | -       | -         | Kenar çıkarımı gerektiren orijinal fotoğraf |
-| `low_threshold`  | FLOAT     | Widget     | 0.4     | 0.01-0.99 | Düşük eşik, ne kadar zayıf kenarların göz ardı edileceğini belirler. Daha düşük değerler daha fazla detay korur ancak gürültü üretebilir |
-| `high_threshold` | FLOAT     | Widget     | 0.8     | 0.01-0.99 | Yüksek eşik, ne kadar güçlü kenarların korunacağını belirler. Daha yüksek değerler sadece en belirgin kontur çizgilerini tutar |
+| `görüntü`          | IMAGE     | Girdi      | -       | -         | Kenar çıkarımı gerektiren orijinal fotoğraf |
+| `düşük_eşik`  | FLOAT     | Widget     | 0.4     | 0.01-0.99 | Düşük eşik, ne kadar zayıf kenarların göz ardı edileceğini belirler. Daha düşük değerler daha fazla detay korur ancak gürültü üretebilir |
+| `yüksek_eşik` | FLOAT     | Widget     | 0.8     | 0.01-0.99 | Yüksek eşik, ne kadar güçlü kenarların korunacağını belirler. Daha yüksek değerler sadece en belirgin kontur çizgilerini tutar |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image`   | IMAGE     | Siyah beyaz kenar görüntüsü, beyaz çizgiler tespit edilen kenarlar, siyah alanlar kenar olmayan kısımlardır |
+| `görüntü`   | IMAGE     | Siyah beyaz kenar görüntüsü, beyaz çizgiler tespit edilen kenarlar, siyah alanlar kenar olmayan kısımlardır |
 
 ## Parametre Karşılaştırması
 

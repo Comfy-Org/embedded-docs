@@ -6,14 +6,14 @@ ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negati
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Ses zamanlama bilgisi ile değiştirilecek pozitif koşullandırma girişi |
-| `negative` | CONDITIONING | Evet | - | Ses zamanlama bilgisi ile değiştirilecek negatif koşullandırma girişi |
-| `seconds_start` | FLOAT | Evet | 0.0 - 1000.0 | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0.0) |
-| `seconds_total` | FLOAT | Evet | 0.0 - 1000.0 | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47.0) |
+| `pozitif` | CONDITIONING | Evet | - | Ses zamanlama bilgisi ile değiştirilecek pozitif koşullandırma girişi |
+| `negatif` | CONDITIONING | Evet | - | Ses zamanlama bilgisi ile değiştirilecek negatif koşullandırma girişi |
+| `saniye_başlangıç` | FLOAT | Evet | 0.0 - 1000.0 | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0.0) |
+| `saniye_toplam` | FLOAT | Evet | 0.0 - 1000.0 | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47.0) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türı | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
+| `pozitif` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
+| `negatif` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma |

@@ -17,9 +17,9 @@ Birden fazla LoRA modeli yüklemeniz gerekiyorsa, aşağıda gösterildiği gibi
 | --- | --- | --- |
 | `model` | MODEL | Genellikle temel modeli bağlamak için kullanılır |
 | `clip` | CLIP | Genellikle CLIP modelini bağlamak için kullanılır |
-| `lora_name` | COMBO[STRING] | Kullanılacak LoRA modelinin adını seçin |
-| `strength_model` | FLOAT | -100.0 ile 100.0 arasında değer aralığı, günlük görüntü oluşturma için genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama etkilerini daha belirgin hale getirir |
-| `strength_clip` | FLOAT | -100.0 ile 100.0 arasında değer aralığı, günlük görüntü oluşturma için genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama etkilerini daha belirgin hale getirir |
+| `lora_adı` | COMBO[STRING] | Kullanılacak LoRA modelinin adını seçin |
+| `model_gücü` | FLOAT | -100.0 ile 100.0 arasında değer aralığı, günlük görüntü oluşturma için genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama etkilerini daha belirgin hale getirir |
+| `clip_gücü` | FLOAT | -100.0 ile 100.0 arasında değer aralığı, günlük görüntü oluşturma için genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama etkilerini daha belirgin hale getirir |
 
 ## Çıktılar
 

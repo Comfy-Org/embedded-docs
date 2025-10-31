@@ -8,7 +8,7 @@ UpscaleModelLoader düğümü, belirli bir dizinden yükseltme modellerini yükl
 
 | Alan          | Comfy Veri Türü    | Açıklama                                                                       |
 |----------------|-------------------|---------------------------------------------------------------------------------|
-| `model_name`   | `COMBO[STRING]`    | Yüklenecek yükseltme modelinin adını belirtir; yükseltme modelleri dizininden doğru model dosyasını tanımlar ve alır. |
+| `model_adı`   | `COMBO[STRING]`    | Yüklenecek yükseltme modelinin adını belirtir; yükseltme modelleri dizininden doğru model dosyasını tanımlar ve alır. |
 
 ## Çıktılar
 

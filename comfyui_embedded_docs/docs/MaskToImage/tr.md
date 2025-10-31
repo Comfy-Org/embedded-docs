@@ -6,7 +6,7 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | `MASK`      | Maske girdisi, dönüşüm işlemi için temel teşkil eder ve görüntü formatına dönüştürülecek kaynak veri olarak hizmet eder. Bu girdi, ortaya çıkan görüntünün şeklini ve içeriğini belirler. |
+| `maske`    | `MASK`      | Maske girdisi, dönüşüm işlemi için temel teşkil eder ve görüntü formatına dönüştürülecek kaynak veri olarak hizmet eder. Bu girdi, ortaya çıkan görüntünün şeklini ve içeriğini belirler. |
 
 ## Çıktılar
 

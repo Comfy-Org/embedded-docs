@@ -6,12 +6,12 @@
 
 | Parametre           | Comfy dtype        | Açıklama |
 |---------------------|--------------------|-------------|
-| `conditioning_to`   | `CONDITIONING`     | Metin kutusu parametrelerinin ve kodlanmış metin bilgisinin ekleneceği başlangıç koşullandırma girdisini belirtir. Yeni koşullandırma verilerini entegre ederek nihai çıktının belirlenmesinde kritik bir rol oynar. |
+| `hedef_koşullandırma`   | `CONDITIONING`     | Metin kutusu parametrelerinin ve kodlanmış metin bilgisinin ekleneceği başlangıç koşullandırma girdisini belirtir. Yeni koşullandırma verilerini entegre ederek nihai çıktının belirlenmesinde kritik bir rol oynar. |
 | `clip`              | `CLIP`             | Sağlanan metni, üretken model tarafından kullanılabilecek bir formata kodlamak için kullanılan CLIP modelidir. Metin bilgisini uyumlu bir koşullandırma formatına dönüştürmek için gereklidir. |
-| `gligen_textbox_model` | `GLIGEN`        | Metin kutusunu oluşturmak için kullanılacak spesifik GLIGEN model konfigürasyonunu temsil eder. Metin kutusunun istenen özelliklere göre oluşturulmasını sağlamak için çok önemlidir. |
-| `text`              | `STRING`           | Kodlanacak ve koşullandırmaya entegre edilecek metin içeriğidir. Üretken modeli yönlendiren anlamsal bilgiyi sağlar. |
-| `width`             | `INT`              | Metin kutusunun piksel cinsinden genişliğidir. Oluşturulan görüntü içindeki metin kutusunun mekansal boyutunu tanımlar. |
-| `height`            | `INT`              | Metin kutusunun piksel cinsinden yüksekliğidir. Genişliğe benzer şekilde, oluşturulan görüntü içindeki metin kutusunun mekansal boyutunu tanımlar. |
+| `gligen_metinkutusu_modeli` | `GLIGEN`        | Metin kutusunu oluşturmak için kullanılacak spesifik GLIGEN model konfigürasyonunu temsil eder. Metin kutusunun istenen özelliklere göre oluşturulmasını sağlamak için çok önemlidir. |
+| `metin`              | `STRING`           | Kodlanacak ve koşullandırmaya entegre edilecek metin içeriğidir. Üretken modeli yönlendiren anlamsal bilgiyi sağlar. |
+| `genişlik`             | `INT`              | Metin kutusunun piksel cinsinden genişliğidir. Oluşturulan görüntü içindeki metin kutusunun mekansal boyutunu tanımlar. |
+| `yükseklik`            | `INT`              | Metin kutusunun piksel cinsinden yüksekliğidir. Genişliğe benzer şekilde, oluşturulan görüntü içindeki metin kutusunun mekansal boyutunu tanımlar. |
 | `x`                 | `INT`              | Metin kutusunun oluşturulan görüntü içindeki sol üst köşesinin x koordinatıdır. Metin kutusunun yatay konumunu belirtir. |
 | `y`                 | `INT`              | Metin kutusunun oluşturulan görüntü içindeki sol üst köşesinin y koordinatıdır. Metin kutusunun dikey konumunu belirtir. |
 

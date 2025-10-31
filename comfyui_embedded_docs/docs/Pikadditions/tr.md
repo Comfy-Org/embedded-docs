@@ -7,10 +7,10 @@ Pikadditions düğümü, videonuza herhangi bir nesne veya görüntü eklemenize
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | Üzerine görüntü eklenecek video. |
-| `image` | IMAGE | Evet | - | Videoya eklenecek görüntü. |
-| `prompt_text` | STRING | Evet | - | Videoya ne ekleneceğine dair metin açıklaması. |
-| `negative_prompt` | STRING | Evet | - | Videoda nelerden kaçınılacağına dair metin açıklaması. |
-| `seed` | INT | Evet | 0 - 4294967295 | Tekrarlanabilir sonuçlar için rastgele tohum değeri. |
+| `görüntü` | IMAGE | Evet | - | Videoya eklenecek görüntü. |
+| `istem_metni` | STRING | Evet | - | Videoya ne ekleneceğine dair metin açıklaması. |
+| `negatif_istem` | STRING | Evet | - | Videoda nelerden kaçınılacağına dair metin açıklaması. |
+| `tohum` | INT | Evet | 0 - 4294967295 | Tekrarlanabilir sonuçlar için rastgele tohum değeri. |
 
 ## Çıktılar
 

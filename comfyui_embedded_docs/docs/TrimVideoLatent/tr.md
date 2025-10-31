@@ -6,8 +6,8 @@ TrimVideoLatent düğümü, video latent temsilinin başından kareleri kaldır�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | Kırpılacak video karelerini içeren girdi latent video temsili |
-| `trim_amount` | INT | Hayır | 0 ila 99999 | Videonun başından kaldırılacak kare sayısı (varsayılan: 0) |
+| `örnekler` | LATENT | Evet | - | Kırpılacak video karelerini içeren girdi latent video temsili |
+| `kırpma_miktarı` | INT | Hayır | 0 ila 99999 | Videonun başından kaldırılacak kare sayısı (varsayılan: 0) |
 
 ## Çıktılar
 

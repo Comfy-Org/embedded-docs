@@ -6,8 +6,8 @@ ConditioningConcat düğümü, koşullandırma vektörlerini birleştirmek üzer
 
 | Parametre            | Comfy dtype        | Açıklama |
 |-----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | 'conditioning_from' vektörlerinin ekleneceği birincil koşullandırma vektörleri kümesini temsil eder. Birleştirme işlemi için temel oluşturur. |
-| `conditioning_from`   | `CONDITIONING`     | 'conditioning_to' vektörlerine eklenecek olan koşullandırma vektörlerinden oluşur. Bu parametre, mevcut kümeye ek koşullandırma bilgilerinin entegre edilmesine olanak tanır. |
+| `hedef_koşullandırma`     | `CONDITIONING`     | 'conditioning_from' vektörlerinin ekleneceği birincil koşullandırma vektörleri kümesini temsil eder. Birleştirme işlemi için temel oluşturur. |
+| `kaynak_koşullandırma`   | `CONDITIONING`     | 'conditioning_to' vektörlerine eklenecek olan koşullandırma vektörlerinden oluşur. Bu parametre, mevcut kümeye ek koşullandırma bilgilerinin entegre edilmesine olanak tanır. |
 
 ## Çıktılar
 

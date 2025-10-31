@@ -6,9 +6,9 @@ SamplerLCMUpscale düğümü, Gizli Tutarlılık Modeli (LCM) örneklemesini gö
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `scale_ratio` | FLOAT | Hayır | 0.1 - 20.0 | Büyütme sırasında uygulanacak ölçeklendirme faktörü (varsayılan: 1.0) |
-| `scale_steps` | INT | Hayır | -1 - 1000 | Büyütme işlemi için kullanılacak adım sayısı. Otomatik hesaplama için -1 kullanın (varsayılan: -1) |
-| `upscale_method` | COMBO | Evet | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | Görüntüyü büyütmek için kullanılan enterpolasyon yöntemi |
+| `ölçek_oranı` | FLOAT | Hayır | 0.1 - 20.0 | Büyütme sırasında uygulanacak ölçeklendirme faktörü (varsayılan: 1.0) |
+| `ölçek_adımları` | INT | Hayır | -1 - 1000 | Büyütme işlemi için kullanılacak adım sayısı. Otomatik hesaplama için -1 kullanın (varsayılan: -1) |
+| `büyütme_yöntemi` | COMBO | Evet | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | Görüntüyü büyütmek için kullanılan enterpolasyon yöntemi |
 
 ## Çıktılar
 

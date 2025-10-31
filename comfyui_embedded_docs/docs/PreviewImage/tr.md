@@ -6,7 +6,7 @@ PreviewImage düğümü, geçici önizleme görüntüleri oluşturmak için tasa
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `images`  | `IMAGE`     | 'images' girdisi, işlenecek ve geçici önizleme görüntüleri olarak kaydedilecek görüntüleri belirtir. Bu, düğümün birincil girdisidir ve hangi görüntülerin önizleme oluşturma sürecinden geçeceğini belirler. |
+| `görüntüler`  | `IMAGE`     | 'images' girdisi, işlenecek ve geçici önizleme görüntüleri olarak kaydedilecek görüntüleri belirtir. Bu, düğümün birincil girdisidir ve hangi görüntülerin önizleme oluşturma sürecinden geçeceğini belirler. |
 
 ## Çıktılar
 

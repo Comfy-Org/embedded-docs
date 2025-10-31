@@ -6,12 +6,12 @@ Pika Text2Video v2.2 Düğümü, bir video oluşturmak için bir metin istemini 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt_text` | STRING | Evet | - | Videoda oluşturmak istediğiniz içeriği tanımlayan ana metin açıklaması |
-| `negative_prompt` | STRING | Evet | - | Oluşturulan videoda görünmesini istemediğiniz unsurları tanımlayan metin |
-| `seed` | INT | Evet | - | Tekrarlanabilir sonuçlar için oluşturmanın rastgeleliğini kontrol eden bir sayı |
-| `resolution` | STRING | Evet | - | Çıktı videosu için çözünürlük ayarı |
-| `duration` | INT | Evet | - | Videoyun saniye cinsinden uzunluğu |
-| `aspect_ratio` | FLOAT | Hayır | 0.4 - 2.5 | En-boy oranı (genişlik / yükseklik) (varsayılan: 1.7777777777777777) |
+| `istem_metni` | STRING | Evet | - | Videoda oluşturmak istediğiniz içeriği tanımlayan ana metin açıklaması |
+| `negatif_istem` | STRING | Evet | - | Oluşturulan videoda görünmesini istemediğiniz unsurları tanımlayan metin |
+| `tohum` | INT | Evet | - | Tekrarlanabilir sonuçlar için oluşturmanın rastgeleliğini kontrol eden bir sayı |
+| `çözünürlük` | STRING | Evet | - | Çıktı videosu için çözünürlük ayarı |
+| `süre` | INT | Evet | - | Videoyun saniye cinsinden uzunluğu |
+| `en_boy_oranı` | FLOAT | Hayır | 0.4 - 2.5 | En-boy oranı (genişlik / yükseklik) (varsayılan: 1.7777777777777777) |
 
 ## Çıktılar
 

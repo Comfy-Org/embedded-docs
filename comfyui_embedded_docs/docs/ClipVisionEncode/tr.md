@@ -12,9 +12,9 @@
 
 | Parametre Adı | Veri Türü    | Açıklama                                                      |
 | -------------- | -----------  | --------------------------------------------------------------- |
-| `clip_vision`  | CLIP_VISION  | CLIP görü modeli, genellikle CLIPVisionLoader düğümü aracılığıyla yüklenir |
-| `image`        | IMAGE        | Kodlanacak giriş görüntüsü                                     |
-| `crop`         | Dropdown     | Görüntü kırpma yöntemi, seçenekler: center (merkezden kırpma), none (kırpma yok) |
+| `clip_görü`  | CLIP_VISION  | CLIP görü modeli, genellikle CLIPVisionLoader düğümü aracılığıyla yüklenir |
+| `görüntü`        | IMAGE        | Kodlanacak giriş görüntüsü                                     |
+| `kırp`         | Dropdown     | Görüntü kırpma yöntemi, seçenekler: center (merkezden kırpma), none (kırpma yok) |
 
 ## Çıkışlar
 

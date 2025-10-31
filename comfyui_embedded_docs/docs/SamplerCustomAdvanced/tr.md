@@ -6,15 +6,15 @@ SamplerCustomAdvanced düğümü, özel gürültü, yönlendirme ve örnekleme y
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `noise` | NOISE | Evet | - | Örnekleme süreci için başlangıç gürültü desenini ve seed değerini sağlayan gürültü üreteci |
-| `guider` | GUIDER | Evet | - | Örnekleme sürecini istenen çıktılara yönlendiren yönlendirme modeli |
-| `sampler` | SAMPLER | Evet | - | Üretim sırasında latent uzayın nasıl gezinileceğini tanımlayan örnekleme algoritması |
-| `sigmas` | SIGMAS | Evet | - | Örnekleme adımları boyunca gürültü seviyelerini kontrol eden sigma çizelgesi |
-| `latent_image` | LATENT | Evet | - | Örnekleme için başlangıç noktası olarak hizmet eden başlangıç latent temsili |
+| `gürültü` | NOISE | Evet | - | Örnekleme süreci için başlangıç gürültü desenini ve seed değerini sağlayan gürültü üreteci |
+| `rehber` | GUIDER | Evet | - | Örnekleme sürecini istenen çıktılara yönlendiren yönlendirme modeli |
+| `örnekleyici` | SAMPLER | Evet | - | Üretim sırasında latent uzayın nasıl gezinileceğini tanımlayan örnekleme algoritması |
+| `sigmalar` | SIGMAS | Evet | - | Örnekleme adımları boyunca gürültü seviyelerini kontrol eden sigma çizelgesi |
+| `gizli_görüntü` | LATENT | Evet | - | Örnekleme için başlangıç noktası olarak hizmet eden başlangıç latent temsili |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | LATENT | Örnekleme süreci tamamlandıktan sonra elde edilen nihai örneklenmiş latent temsil |
+| `gürültüsü_alınmış_çıktı` | LATENT | Örnekleme süreci tamamlandıktan sonra elde edilen nihai örneklenmiş latent temsil |
 | `denoised_output` | LATENT | Mevcut olduğunda çıktının gürültüsüzleştirilmiş bir versiyonu, aksi takdirde çıktı ile aynısını döndürür |

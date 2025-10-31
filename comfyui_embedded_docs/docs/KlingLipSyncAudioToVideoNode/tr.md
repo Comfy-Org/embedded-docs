@@ -7,8 +7,8 @@ Kling Lip Sync Audio to Video Node, bir video dosyasındaki ağız hareketlerini
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | Dudak senkronizasyonu uygulanacak bir yüz içeren video dosyası |
-| `audio` | AUDIO | Evet | - | Video ile senkronize edilecek vokaller içeren ses dosyası |
-| `voice_language` | COMBO | Hayır | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | Ses dosyasındaki konuşmanın dili (varsayılan: "en") |
+| `ses` | AUDIO | Evet | - | Video ile senkronize edilecek vokaller içeren ses dosyası |
+| `ses_dili` | COMBO | Hayır | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | Ses dosyasındaki konuşmanın dili (varsayılan: "en") |
 
 **Önemli Kısıtlamalar:**
 
@@ -23,6 +23,6 @@ Kling Lip Sync Audio to Video Node, bir video dosyasındaki ağız hareketlerini
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Dudak senkronizasyonu uygulanmış ağız hareketlerine sahip işlenmiş video |
-| `video_id` | STRING | İşlenmiş video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Dudak senkronizasyonu uygulanmış ağız hareketlerine sahip işlenmiş video |
+| `süre` | STRING | İşlenmiş video için benzersiz tanımlayıcı |
 | `duration` | STRING | İşlenmiş videonun süresi |

@@ -6,14 +6,14 @@ StableZero123_Conditioning düğümü, bir giriş görüntüsünü ve kamera aç
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision` | CLIP_VISION | Evet | - | Görüntü özelliklerini kodlamak için kullanılan CLIP görüntü modeli |
-| `init_image` | IMAGE | Evet | - | İşlenecek ve kodlanacak giriş görüntüsü |
+| `clip_görü` | CLIP_VISION | Evet | - | Görüntü özelliklerini kodlamak için kullanılan CLIP görüntü modeli |
+| `başlangıç_görüntüsü` | IMAGE | Evet | - | İşlenecek ve kodlanacak giriş görüntüsü |
 | `vae` | VAE | Evet | - | Pikselleri gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Gizli temsil için çıkış genişliği (varsayılan: 256, 8'e bölünebilir olmalı) |
-| `height` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Gizli temsil için çıkış yüksekliği (varsayılan: 256, 8'e bölünebilir olmalı) |
-| `batch_size` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak örnek sayısı (varsayılan: 1) |
-| `elevation` | FLOAT | Hayır | -180.0 ile 180.0 arası | Kamera yükseklik açısı (derece cinsinden, varsayılan: 0.0) |
-| `azimuth` | FLOAT | Hayır | -180.0 ile 180.0 arası | Kamera azimut açısı (derece cinsinden, varsayılan: 0.0) |
+| `genişlik` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Gizli temsil için çıkış genişliği (varsayılan: 256, 8'e bölünebilir olmalı) |
+| `yükseklik` | INT | Hayır | 16'dan MAX_RESOLUTION'a | Gizli temsil için çıkış yüksekliği (varsayılan: 256, 8'e bölünebilir olmalı) |
+| `toplu_boyut` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak örnek sayısı (varsayılan: 1) |
+| `yükseklik` | FLOAT | Hayır | -180.0 ile 180.0 arası | Kamera yükseklik açısı (derece cinsinden, varsayılan: 0.0) |
+| `azimut` | FLOAT | Hayır | -180.0 ile 180.0 arası | Kamera azimut açısı (derece cinsinden, varsayılan: 0.0) |
 
 **Not:** `width` ve `height` parametreleri 8'e bölünebilir olmalıdır, çünkü düğüm gizli temsil boyutlarını oluşturmak için bunları otomatik olarak 8'e böler.
 

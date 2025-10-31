@@ -6,11 +6,11 @@ LatentComposite düğümü, iki gizli temsili birleştirmek veya tek bir çıkt�
 
 | Parametre    | Veri Türü | Açıklama |
 |--------------|-------------|-------------|
-| `samples_to` | `LATENT`    | 'samples_from'in üzerine yerleştirileceği temel gizli temsildir. Kompozit işlemi için taban görevi görür. |
-| `samples_from` | `LATENT` | 'samples_to' üzerine yerleştirilecek olan gizli temsildir. Özelliklerini veya karakterini nihai kompozit çıktıya katkıda bulunur. |
+| `hedef_örnekler` | `LATENT`    | 'samples_from'in üzerine yerleştirileceği temel gizli temsildir. Kompozit işlemi için taban görevi görür. |
+| `kaynak_örnekler` | `LATENT` | 'samples_to' üzerine yerleştirilecek olan gizli temsildir. Özelliklerini veya karakterini nihai kompozit çıktıya katkıda bulunur. |
 | `x`          | `INT`      | 'samples_from' gizli temsilinin 'samples_to' üzerinde yerleştirileceği x-koordinatı (yatay konum). Kompozitin yatay hizalamasını belirler. |
 | `y`          | `INT`      | 'samples_from' gizli temsilinin 'samples_to' üzerinde yerleştirileceği y-koordinatı (dikey konum). Kompozitin dikey hizalamasını belirler. |
-| `feather`    | `INT`      | 'samples_from' gizli temsilinin, kompozit işleminden önce 'samples_to' ile eşleşecek şekilde yeniden boyutlandırılıp boyutlandırılmayacağını belirten bir boole değeri. Bu, kompozit sonucunun ölçeğini ve oranını etkileyebilir. |
+| `yumuşatma`    | `INT`      | 'samples_from' gizli temsilinin, kompozit işleminden önce 'samples_to' ile eşleşecek şekilde yeniden boyutlandırılıp boyutlandırılmayacağını belirten bir boole değeri. Bu, kompozit sonucunun ölçeğini ve oranını etkileyebilir. |
 
 ## Çıktılar
 

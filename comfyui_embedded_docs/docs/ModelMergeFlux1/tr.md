@@ -10,7 +10,7 @@ ModelMergeFlux1 düğümü, iki difüzyon modelini bileşenlerini ağırlıklı 
 | `model2` | MODEL | Evet | - | Birleştirilecek ikinci kaynak model |
 | `img_in.` | FLOAT | Evet | 0.0 - 1.0 | Görüntü girişi enterpolasyon ağırlığı (varsayılan: 1.0) |
 | `time_in.` | FLOAT | Evet | 0.0 - 1.0 | Zaman gömme enterpolasyon ağırlığı (varsayılan: 1.0) |
-| `guidance_in` | FLOAT | Evet | 0.0 - 1.0 | Rehberlik mekanizması enterpolasyon ağırlığı (varsayılan: 1.0) |
+| `rehberlik_girişi` | FLOAT | Evet | 0.0 - 1.0 | Rehberlik mekanizması enterpolasyon ağırlığı (varsayılan: 1.0) |
 | `vector_in.` | FLOAT | Evet | 0.0 - 1.0 | Vektör girişi enterpolasyon ağırlığı (varsayılan: 1.0) |
 | `txt_in.` | FLOAT | Evet | 0.0 - 1.0 | Metin kodlayıcı enterpolasyon ağırlığı (varsayılan: 1.0) |
 | `double_blocks.0.` | FLOAT | Evet | 0.0 - 1.0 | Çift blok 0 enterpolasyon ağırlığı (varsayılan: 1.0) |

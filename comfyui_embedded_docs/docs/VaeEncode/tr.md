@@ -6,7 +6,7 @@ Bu düğüm, belirli bir VAE modeli kullanarak görüntüleri gizli (latent) uza
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `pixels`  | `IMAGE`     | 'pixels' parametresi, gizli uzaya kodlanacak görüntü verisini temsil eder. Kodlama süreci için doğrudan girdi olarak hizmet ederek, çıktı gizli temsilin belirlenmesinde çok önemli bir rol oynar. |
+| `pikseller`  | `IMAGE`     | 'pixels' parametresi, gizli uzaya kodlanacak görüntü verisini temsil eder. Kodlama süreci için doğrudan girdi olarak hizmet ederek, çıktı gizli temsilin belirlenmesinde çok önemli bir rol oynar. |
 | `vae`     | VAE       | 'vae' parametresi, görüntü verisini gizli uzaya kodlamak için kullanılacak Varyasyonel Otokodlayıcı (Variational Autoencoder) modelini belirtir. Kodlama mekanizmasını ve oluşturulan gizli temsilin özelliklerini tanımlamak için gereklidir. |
 
 ## Çıktılar

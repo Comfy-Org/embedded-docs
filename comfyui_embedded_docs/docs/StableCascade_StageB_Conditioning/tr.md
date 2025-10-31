@@ -6,8 +6,8 @@ StableCascade_StageB_Conditioning düğümü, mevcut koşullandırma bilgilerini
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Evet | - | Stage C önceki bilgileri ile değiştirilecek koşullandırma verisi |
-| `stage_c` | LATENT | Evet | - | Koşullandırma için önceki örnekleri içeren Stage C'den gelen gizli temsil |
+| `koşullandırma` | CONDITIONING | Evet | - | Stage C önceki bilgileri ile değiştirilecek koşullandırma verisi |
+| `aşama_c` | LATENT | Evet | - | Koşullandırma için önceki örnekleri içeren Stage C'den gelen gizli temsil |
 
 ## Çıktılar
 

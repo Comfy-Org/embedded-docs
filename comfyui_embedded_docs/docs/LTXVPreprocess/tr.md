@@ -6,8 +6,8 @@ LTXVPreprocess düğümü, görüntülere sıkıştırma ön işleme uygular. Gi
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | İşlenecek girdi görüntüsü |
-| `img_compression` | INT | Hayır | 0-100 | Görüntüye uygulanacak sıkıştırma miktarı (varsayılan: 35) |
+| `görüntü` | IMAGE | Evet | - | İşlenecek girdi görüntüsü |
+| `görüntü_sıkıştırma` | INT | Hayır | 0-100 | Görüntüye uygulanacak sıkıştırma miktarı (varsayılan: 35) |
 
 ## Çıktılar
 

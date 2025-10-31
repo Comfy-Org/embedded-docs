@@ -8,7 +8,7 @@ Bu düğüm, `ComfyUI/models/gligen` klasöründe bulunan modelleri tespit edece
 
 | Alan        | Comfy Veri Türü   | Açıklama                                                                           |
 |-------------|-------------------|-----------------------------------------------------------------------------------|
-| `gligen_name`| `COMBO[STRING]`    | Yüklenecek GLIGEN modelinin adı. Hangi model dosyasının alınacağını ve yükleneceğini belirtir, GLIGEN modelinin başlatılması için çok önemlidir. |
+| `gligen_adı`| `COMBO[STRING]`    | Yüklenecek GLIGEN modelinin adı. Hangi model dosyasının alınacağını ve yükleneceğini belirtir, GLIGEN modelinin başlatılması için çok önemlidir. |
 
 ## Çıktılar
 

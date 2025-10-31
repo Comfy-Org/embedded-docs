@@ -6,12 +6,12 @@ Morphology düğümü, görüntülerdeki şekilleri işlemek ve analiz etmek iç
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
-| `operation` | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | Uygulanacak morfolojik işlem |
-| `kernel_size` | INT | Hayır | 3-999 | Yapılandırıcı eleman çekirdeğinin boyutu (varsayılan: 3) |
+| `görüntü` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
+| `işlem` | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | Uygulanacak morfolojik işlem |
+| `çekirdek_boyutu` | INT | Hayır | 3-999 | Yapılandırıcı eleman çekirdeğinin boyutu (varsayılan: 3) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türı | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Morfolojik işlem uygulandıktan sonra işlenmiş görüntü |
+| `görüntü` | IMAGE | Morfolojik işlem uygulandıktan sonra işlenmiş görüntü |

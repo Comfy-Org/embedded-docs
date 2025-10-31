@@ -6,15 +6,15 @@ Kling Image Generation Node, metin prompt'larından görüntüler oluşturur ve 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Olumlu metin prompt'u |
-| `negative_prompt` | STRING | Evet | - | Olumsuz metin prompt'u |
-| `image_type` | COMBO | Evet | KlingImageGenImageReferenceType'dan seçenekler<br>(kaynak kodundan çıkarılmıştır) | Görsel referans türü seçimi |
-| `image_fidelity` | FLOAT | Evet | 0.0 - 1.0 | Kullanıcı tarafından yüklenen görseller için referans yoğunluğu (varsayılan: 0.5) |
-| `human_fidelity` | FLOAT | Evet | 0.0 - 1.0 | Konu referans benzerliği (varsayılan: 0.45) |
-| `model_name` | COMBO | Evet | "kling-v1"<br>(ve KlingImageGenModelName'den diğer seçenekler) | Görsel oluşturma için model seçimi (varsayılan: "kling-v1") |
-| `aspect_ratio` | COMBO | Evet | "16:9"<br>(ve KlingImageGenAspectRatio'dan diğer seçenekler) | Oluşturulan görseller için en-boy oranı (varsayılan: "16:9") |
+| `istem` | STRING | Evet | - | Olumlu metin prompt'u |
+| `negatif_istem` | STRING | Evet | - | Olumsuz metin prompt'u |
+| `görüntü_türü` | COMBO | Evet | KlingImageGenImageReferenceType'dan seçenekler<br>(kaynak kodundan çıkarılmıştır) | Görsel referans türü seçimi |
+| `görüntü_sadakati` | FLOAT | Evet | 0.0 - 1.0 | Kullanıcı tarafından yüklenen görseller için referans yoğunluğu (varsayılan: 0.5) |
+| `insan_sadakati` | FLOAT | Evet | 0.0 - 1.0 | Konu referans benzerliği (varsayılan: 0.45) |
+| `model_adı` | COMBO | Evet | "kling-v1"<br>(ve KlingImageGenModelName'den diğer seçenekler) | Görsel oluşturma için model seçimi (varsayılan: "kling-v1") |
+| `en_boy_oranı` | COMBO | Evet | "16:9"<br>(ve KlingImageGenAspectRatio'dan diğer seçenekler) | Oluşturulan görseller için en-boy oranı (varsayılan: "16:9") |
 | `n` | INT | Evet | 1 - 9 | Oluşturulan görsel sayısı (varsayılan: 1) |
-| `image` | IMAGE | Hayır | - | İsteğe bağlı referans görseli |
+| `görüntü` | IMAGE | Hayır | - | İsteğe bağlı referans görseli |
 
 **Parametre Kısıtlamaları:**
 

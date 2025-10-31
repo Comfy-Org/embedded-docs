@@ -6,7 +6,7 @@ String düğümü, iş akışınızda metin verilerini girmek ve iletmek için b
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `value` | STRING | Evet | Herhangi bir metin | Düğüm üzerinden iletilmek üzere olan metin dizesi |
+| `değer` | STRING | Evet | Herhangi bir metin | Düğüm üzerinden iletilmek üzere olan metin dizesi |
 
 ## Çıktılar
 

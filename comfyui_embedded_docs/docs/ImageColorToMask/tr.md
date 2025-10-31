@@ -6,8 +6,8 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | 'image' parametresi, işlenecek giriş görüntüsünü temsil eder. Görüntünün, belirtilen renkle eşleşen ve maske'ye dönüştürülecek alanlarını belirlemede çok önemlidir. |
-| `color`   | `INT`       | 'color' parametresi, görüntüde maske'ye dönüştürülecek hedef rengi belirtir. Ortaya çıkan maskede vurgulanacak belirli renk alanlarını tanımlamada kilit rol oynar. |
+| `görüntü`   | `IMAGE`     | 'image' parametresi, işlenecek giriş görüntüsünü temsil eder. Görüntünün, belirtilen renkle eşleşen ve maske'ye dönüştürülecek alanlarını belirlemede çok önemlidir. |
+| `renk`   | `INT`       | 'color' parametresi, görüntüde maske'ye dönüştürülecek hedef rengi belirtir. Ortaya çıkan maskede vurgulanacak belirli renk alanlarını tanımlamada kilit rol oynar. |
 
 ## Çıktılar
 

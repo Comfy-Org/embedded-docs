@@ -7,8 +7,8 @@ CLIPTextEncodeControlnet düğümü, metin girişini bir CLIP modeli kullanarak 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `clip` | CLIP | Gerekli | - | - | Metin tokenizasyonu ve kodlama için kullanılan CLIP modeli |
-| `conditioning` | CONDITIONING | Gerekli | - | - | Controlnet parametreleriyle geliştirilecek mevcut koşullandırma verisi |
-| `text` | STRING | Çok Satırlı, Dinamik İstemler | - | - | CLIP modeli tarafından işlenecek metin girdisi |
+| `koşullandırma` | CONDITIONING | Gerekli | - | - | Controlnet parametreleriyle geliştirilecek mevcut koşullandırma verisi |
+| `metin` | STRING | Çok Satırlı, Dinamik İstemler | - | - | CLIP modeli tarafından işlenecek metin girdisi |
 
 **Not:** Bu düğümün düzgün çalışması için hem `clip` hem de `conditioning` girdileri gereklidir. `text` girdisi, esnek metin işleme için dinamik istemleri ve çok satırlı metni destekler.
 

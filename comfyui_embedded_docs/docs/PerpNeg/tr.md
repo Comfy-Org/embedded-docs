@@ -7,8 +7,8 @@ PerpNeg düğümü, bir modelin örnekleme sürecine dik negatif yönlendirme uy
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Dik negatif yönlendirme uygulanacak model |
-| `empty_conditioning` | CONDITIONING | Evet | - | Negatif yönlendirme hesaplamalarında kullanılan boş koşullandırma |
-| `neg_scale` | FLOAT | Hayır | 0.0 - 100.0 | Negatif yönlendirme için ölçeklendirme faktörü (varsayılan: 1.0) |
+| `boş_koşullandırma` | CONDITIONING | Evet | - | Negatif yönlendirme hesaplamalarında kullanılan boş koşullandırma |
+| `neg_ölçek` | FLOAT | Hayır | 0.0 - 100.0 | Negatif yönlendirme için ölçeklendirme faktörü (varsayılan: 1.0) |
 
 ## Çıktılar
 

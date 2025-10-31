@@ -7,7 +7,7 @@ PerturbedAttentionGuidance düğümü, üretim kalitesini artırmak için bir di
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Bozulmuş dikkat kılavuzluğu uygulanacak difüzyon modeli |
-| `scale` | FLOAT | Hayır | 0.0 - 100.0 | Bozulmuş dikkat kılavuzluğu etkisinin gücü (varsayılan: 3.0) |
+| `ölçek` | FLOAT | Hayır | 0.0 - 100.0 | Bozulmuş dikkat kılavuzluğu etkisinin gücü (varsayılan: 3.0) |
 
 ## Çıktılar
 

@@ -6,10 +6,10 @@ SaveAnimatedPNG düğümü, bir dizi kareden animasyonlu PNG görselleri oluştu
 
 | Alan              | Veri Türü | Açıklama                                                                         |
 |-------------------|-----------|----------------------------------------------------------------------------------|
-| `images`          | `IMAGE`   | İşlenecek ve animasyonlu PNG olarak kaydedilecek bir görüntü listesi. Listedeki her bir görüntü, animasyonda bir kareyi temsil eder. |
-| `filename_prefix` | `STRING`  | Çıktı dosyası için temel adı belirtir; bu, oluşturulan animasyonlu PNG dosyaları için bir önek olarak kullanılacaktır. |
+| `görüntüler`          | `IMAGE`   | İşlenecek ve animasyonlu PNG olarak kaydedilecek bir görüntü listesi. Listedeki her bir görüntü, animasyonda bir kareyi temsil eder. |
+| `dosyaadı_öneki` | `STRING`  | Çıktı dosyası için temel adı belirtir; bu, oluşturulan animasyonlu PNG dosyaları için bir önek olarak kullanılacaktır. |
 | `fps`             | `FLOAT`   | Animasyonun saniye başına kare hızı; karelerin ne kadar hızlı görüntüleneceğini kontrol eder. |
-| `compress_level`  | `INT`     | Animasyonlu PNG dosyalarına uygulanan sıkıştırma seviyesi; dosya boyutunu ve görüntü netliğini etkiler. |
+| `sıkıştırma_seviyesi`  | `INT`     | Animasyonlu PNG dosyalarına uygulanan sıkıştırma seviyesi; dosya boyutunu ve görüntü netliğini etkiler. |
 
 ## Çıktılar
 

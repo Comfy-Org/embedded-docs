@@ -7,7 +7,7 @@ BasicGuider düğümü, örnekleme süreci için basit bir kılavuzluk mekanizma
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `model` | MODEL | gerekli | - | - | Kılavuzluk için kullanılacak model |
-| `conditioning` | CONDITIONING | gerekli | - | - | Üretim sürecine kılavuzluk eden koşullandırma verisi |
+| `koşullandırma` | CONDITIONING | gerekli | - | - | Üretim sürecine kılavuzluk eden koşullandırma verisi |
 
 ## Çıktılar
 

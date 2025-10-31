@@ -6,7 +6,7 @@ PixVerse Template düğümü, PixVerse video oluşturma için mevcut şablonlard
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `template` | STRING | Evet | Birden fazla seçenek mevcut | PixVerse video oluşturma için kullanılacak şablon. Mevcut seçenekler, PixVerse sistemindeki önceden tanımlanmış şablonlara karşılık gelir. |
+| `şablon` | STRING | Evet | Birden fazla seçenek mevcut | PixVerse video oluşturma için kullanılacak şablon. Mevcut seçenekler, PixVerse sistemindeki önceden tanımlanmış şablonlara karşılık gelir. |
 
 ## Çıktılar
 

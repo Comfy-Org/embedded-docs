@@ -6,7 +6,7 @@ VAEDecodeAudio düğümü, gizli temsilleri varyasyonel otokodlayıcı kullanara
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | Ses dalga formuna geri çözülecek, gizli uzaydaki kodlanmış ses örnekleri |
+| `örnekler` | LATENT | Evet | - | Ses dalga formuna geri çözülecek, gizli uzaydaki kodlanmış ses örnekleri |
 | `vae` | VAE | Evet | - | Gizli örnekleri sese çözmek için kullanılan Varyasyonel Otokodlayıcı modeli |
 
 ## Çıktılar

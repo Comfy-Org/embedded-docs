@@ -6,7 +6,7 @@ Bu düğüm, Recraft API servisini kullanarak görüntülerden arka planı kald�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Arka plan kaldırma işlemi için işlenecek girdi görüntü(leri) |
+| `görüntü` | IMAGE | Evet | - | Arka plan kaldırma işlemi için işlenecek girdi görüntü(leri) |
 | `auth_token` | STRING | Hayır | - | Recraft API erişimi için kimlik doğrulama belirteci |
 | `comfy_api_key` | STRING | Hayır | - | Comfy.org servis entegrasyonu için API anahtarı |
 
@@ -14,5 +14,5 @@ Bu düğüm, Recraft API servisini kullanarak görüntülerden arka planı kald�
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Şeffaf arka plana sahip işlenmiş görüntüler |
+| `görüntü` | IMAGE | Şeffaf arka plana sahip işlenmiş görüntüler |
 | `mask` | MASK | Kaldırılan arka plan alanlarını gösteren alfa kanalı maskeleri |

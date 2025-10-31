@@ -20,7 +20,7 @@ CLIP modelini 24 katmanlı bir akıllı beyin olarak hayal edin:
 | Parametre | Veri Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|---------|--------|-------------|
 | `clip` | CLIP | - | - | Değiştirilecek CLIP modeli |
-| `stop_at_clip_layer` | INT | -1 | -24 ila -1 | Hangi katmanda durulacağını belirtir, -1 tüm katmanları kullanır, -24 sadece ilk katmanı kullanır |
+| `clip_katmanında_dur` | INT | -1 | -24 ila -1 | Hangi katmanda durulacağını belirtir, -1 tüm katmanları kullanır, -24 sadece ilk katmanı kullanır |
 
 ## Çıkışlar
 

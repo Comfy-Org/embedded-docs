@@ -7,7 +7,7 @@ ModelSamplingSD3 düğümü, bir modele Stable Diffusion 3 örnekleme parametrel
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | SD3 örnekleme parametrelerinin uygulanacağı giriş modeli |
-| `shift` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme shift parametresini kontrol eder (varsayılan: 3.0) |
+| `kaydırma` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme shift parametresini kontrol eder (varsayılan: 3.0) |
 
 ## Çıkışlar
 

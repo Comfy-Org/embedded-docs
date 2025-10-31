@@ -6,8 +6,8 @@ VoxelToMeshBasic düğümü, 3B voksel verilerini mesh geometrisine dönüştür
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `voxel` | VOXEL | Evet | - | Mesh'e dönüştürülecek 3B voksel verisi |
-| `threshold` | FLOAT | Evet | -1.0 - 1.0 | Hangi voksellerin mesh yüzeyinin parçası haline geleceğini belirlemek için kullanılan eşik değeri (varsayılan: 0.6) |
+| `voksel` | VOXEL | Evet | - | Mesh'e dönüştürülecek 3B voksel verisi |
+| `eşik` | FLOAT | Evet | -1.0 - 1.0 | Hangi voksellerin mesh yüzeyinin parçası haline geleceğini belirlemek için kullanılan eşik değeri (varsayılan: 0.6) |
 
 ## Çıktılar
 

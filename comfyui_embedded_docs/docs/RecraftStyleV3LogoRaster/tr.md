@@ -6,7 +6,7 @@ Bu düğüm, logo tarama stilini seçmenize ve mevcut alt stiller arasından ter
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Evet | Birden fazla seçenek mevcut | Logo oluşturma için uygulanacak belirli logo tarama alt stili |
+| `alt_stil` | STRING | Evet | Birden fazla seçenek mevcut | Logo oluşturma için uygulanacak belirli logo tarama alt stili |
 
 ## Çıktılar
 

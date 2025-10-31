@@ -6,9 +6,9 @@ Bu düğüm, belirli bir toplu işlemden, belirtilen toplu işlem indeksi ve uzu
 
 | Parametre     | Veri Tipi | Açıklama |
 |---------------|-------------|-------------|
-| `samples`     | `LATENT`    | İçinden bir alt kümenin çıkarılacağı gizli örnekler koleksiyonu. Bu parametre, işlenecek kaynak örnek toplu işlemini belirlemek için çok önemlidir. |
-| `batch_index` | `INT`       | Örnek alt kümesinin başlayacağı, toplu işlem içindeki başlangıç indeksini belirtir. Bu parametre, toplu işlemdeki belirli konumlardan örneklerin hedeflenmiş şekilde çıkarılmasını sağlar. |
-| `length`      | `INT`       | Belirtilen başlangıç indeksinden itibaren çıkarılacak örnek sayısını tanımlar. Bu parametre, işlenecek alt kümenin boyutunu kontrol ederek, toplu işlem bölümlerinin esnek bir şekilde manipüle edilmesine olanak tanır. |
+| `örnekler`     | `LATENT`    | İçinden bir alt kümenin çıkarılacağı gizli örnekler koleksiyonu. Bu parametre, işlenecek kaynak örnek toplu işlemini belirlemek için çok önemlidir. |
+| `toplu_indeks` | `INT`       | Örnek alt kümesinin başlayacağı, toplu işlem içindeki başlangıç indeksini belirtir. Bu parametre, toplu işlemdeki belirli konumlardan örneklerin hedeflenmiş şekilde çıkarılmasını sağlar. |
+| `uzunluk`      | `INT`       | Belirtilen başlangıç indeksinden itibaren çıkarılacak örnek sayısını tanımlar. Bu parametre, işlenecek alt kümenin boyutunu kontrol ederek, toplu işlem bölümlerinin esnek bir şekilde manipüle edilmesine olanak tanır. |
 
 ## Çıktılar
 

@@ -8,7 +8,7 @@ StyleModelLoader düğümü, belirli bir yoldan bir stil modeli yüklemek için 
 
 | Parametre Adı      | Comfy dtype     | Python dtype | Açıklama                                                                                       |
 |---------------------|-----------------|--------------|---------------------------------------------------------------------------------------------------|
-| `style_model_name`  | COMBO[STRING] | `str`        | Yüklenecek stil modelinin adını belirtir. Bu ad, kullanıcı girdisine veya uygulama ihtiyaçlarına dayalı olarak farklı stil modellerinin dinamik olarak yüklenmesine olanak tanımak için, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
+| `stil_modeli_adı`  | COMBO[STRING] | `str`        | Yüklenecek stil modelinin adını belirtir. Bu ad, kullanıcı girdisine veya uygulama ihtiyaçlarına dayalı olarak farklı stil modellerinin dinamik olarak yüklenmesine olanak tanımak için, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
 
 ## Çıktılar
 

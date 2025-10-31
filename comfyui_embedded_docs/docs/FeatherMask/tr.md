@@ -6,14 +6,14 @@
 
 | Parametre | Veri Tipi | Açıklama |
 |-----------|-----------|-------------|
-| `mask`    | MASK      | Tüylendirme efektinin uygulanacağı maske. Tüylendirmenin etkileyeceği görüntü alanını belirler. |
-| `left`    | INT       | Tüylendirme efektinin uygulanacağı sol kenardan itibaren olan mesafeyi belirtir. |
-| `top`     | INT       | Tüylendirme efektinin uygulanacağı üst kenardan itibaren olan mesafeyi belirtir. |
-| `right`   | INT       | Tüylendirme efektinin uygulanacağı sağ kenardan itibaren olan mesafeyi belirtir. |
-| `bottom`  | INT       | Tüylendirme efektinin uygulanacağı alt kenardan itibaren olan mesafeyi belirtir. |
+| `maske`    | MASK      | Tüylendirme efektinin uygulanacağı maske. Tüylendirmenin etkileyeceği görüntü alanını belirler. |
+| `sol`    | INT       | Tüylendirme efektinin uygulanacağı sol kenardan itibaren olan mesafeyi belirtir. |
+| `üst`     | INT       | Tüylendirme efektinin uygulanacağı üst kenardan itibaren olan mesafeyi belirtir. |
+| `sağ`   | INT       | Tüylendirme efektinin uygulanacağı sağ kenardan itibaren olan mesafeyi belirtir. |
+| `alt`  | INT       | Tüylendirme efektinin uygulanacağı alt kenardan itibaren olan mesafeyi belirtir. |
 
 ## Çıktılar
 
 | Parametre | Veri Tipi | Açıklama |
 |-----------|-----------|-------------|
-| `mask`    | MASK      | Çıktı, kenarlarına tüylendirme efekti uygulanmış, girdi maskesinin değiştirilmiş bir versiyonudur. |
+| `maske`    | MASK      | Çıktı, kenarlarına tüylendirme efekti uygulanmış, girdi maskesinin değiştirilmiş bir versiyonudur. |

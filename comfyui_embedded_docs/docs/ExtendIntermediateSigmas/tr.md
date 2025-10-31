@@ -6,11 +6,11 @@ ExtendIntermediateSigmas düğümü, mevcut bir sigma değerleri dizisini alır 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `sigmas` | SIGMAS | Evet | - | Ara değerlerle genişletilecek giriş sigma dizisi |
-| `steps` | INT | Evet | 1-100 | Mevcut sigmalar arasına eklenecek ara adım sayısı (varsayılan: 2) |
-| `start_at_sigma` | FLOAT | Evet | -1.0 - 20000.0 | Uzatma için üst sigma sınırı - yalnızca bu değerin altındaki sigmaları genişletir (varsayılan: -1.0, bu sonsuz anlamına gelir) |
-| `end_at_sigma` | FLOAT | Evet | 0.0 - 20000.0 | Uzatma için alt sigma sınırı - yalnızca bu değerin üstündeki sigmaları genişletir (varsayılan: 12.0) |
-| `spacing` | COMBO | Evet | "linear"<br>"cosine"<br>"sine" | Ara sigma değerlerinin aralıklı yerleştirilmesi için enterpolasyon yöntemi |
+| `sigmalar` | SIGMAS | Evet | - | Ara değerlerle genişletilecek giriş sigma dizisi |
+| `adımlar` | INT | Evet | 1-100 | Mevcut sigmalar arasına eklenecek ara adım sayısı (varsayılan: 2) |
+| `sigma_başlangıcı` | FLOAT | Evet | -1.0 - 20000.0 | Uzatma için üst sigma sınırı - yalnızca bu değerin altındaki sigmaları genişletir (varsayılan: -1.0, bu sonsuz anlamına gelir) |
+| `sigma_bitişi` | FLOAT | Evet | 0.0 - 20000.0 | Uzatma için alt sigma sınırı - yalnızca bu değerin üstündeki sigmaları genişletir (varsayılan: 12.0) |
+| `aralık` | COMBO | Evet | "linear"<br>"cosine"<br>"sine" | Ara sigma değerlerinin aralıklı yerleştirilmesi için enterpolasyon yöntemi |
 
 **Not:** Düğüm yalnızca, hem mevcut sigma değerinin `start_at_sigma` değerinden küçük veya eşit olduğu hem de `end_at_sigma` değerinden büyük veya eşit olduğu mevcut sigma çiftleri arasına ara sigmalar ekler. `start_at_sigma` -1.0 olarak ayarlandığında, bu sonsuz olarak kabul edilir, yani yalnızca `end_at_sigma` alt sınırı uygulanır.
 
@@ -18,4 +18,4 @@ ExtendIntermediateSigmas düğümü, mevcut bir sigma değerleri dizisini alır 
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `sigmas` | SIGMAS | Ek ara değerlerin eklendiği genişletilmiş sigma dizisi |
+| `sigmalar` | SIGMAS | Ek ara değerlerin eklendiği genişletilmiş sigma dizisi |

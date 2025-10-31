@@ -6,13 +6,13 @@ StableCascade_SuperResolutionControlnet düğümü, Stable Cascade süper çöz�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Süper çözünürlük için işlenecek girdi görüntüsü |
+| `görüntü` | IMAGE | Evet | - | Süper çözünürlük için işlenecek girdi görüntüsü |
 | `vae` | VAE | Evet | - | Girdi görüntüsünü kodlamak için kullanılan VAE modeli |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | Kontrol ağı girdisi için uygun kodlanmış görüntü temsili |
-| `stage_c` | LATENT | Stable Cascade işlemenin C aşaması için yer tutucu gizli temsil |
+| `aşama_c` | IMAGE | Kontrol ağı girdisi için uygun kodlanmış görüntü temsili |
+| `aşama_b` | LATENT | Stable Cascade işlemenin C aşaması için yer tutucu gizli temsil |
 | `stage_b` | LATENT | Stable Cascade işlemenin B aşaması için yer tutucu gizli temsil |

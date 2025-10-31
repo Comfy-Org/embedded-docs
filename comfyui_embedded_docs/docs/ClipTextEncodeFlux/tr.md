@@ -15,7 +15,7 @@ Bu düğüm, bir çift kodlayıcı işbirliği mekanizmasına dayanır:
 | `clip`    | CLIP     | Düğüm girişi  | Yok    | -     | Hem CLIP-L hem de T5XXL kodlayıcılarını içeren, Flux mimarisini destekleyen bir CLIP modeli olmalıdır |
 | `clip_l`  | STRING   | Metin kutusu    | Yok    | En fazla 77 token | Kısa anahtar kelime açıklamaları için uygundur, stil veya tema gibi |
 | `t5xxl`   | STRING   | Metin kutusu    | Yok    | Neredeyse sınırsız | Ayrıntılı doğal dil açıklamaları için uygundur, karmaşık sahneleri ve detayları ifade eder |
-| `guidance`| FLOAT    | Sürgü      | 3.5     | 0.0 - 100.0 | Metin koşullarının oluşturma süreci üzerindeki etkisini kontrol eder; daha yüksek değerler metne daha sıkı bağlılık anlamına gelir |
+| `rehberlik`| FLOAT    | Sürgü      | 3.5     | 0.0 - 100.0 | Metin koşullarının oluşturma süreci üzerindeki etkisini kontrol eder; daha yüksek değerler metne daha sıkı bağlılık anlamına gelir |
 
 ## Çıkışlar
 

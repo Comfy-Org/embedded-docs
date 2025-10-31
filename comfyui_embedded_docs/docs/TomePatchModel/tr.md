@@ -7,7 +7,7 @@ TomePatchModel düğümü, çıkarım sırasında hesaplama gereksinimlerini aza
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Token birleştirme uygulanacak difüzyon modeli |
-| `ratio` | FLOAT | Hayır | 0.0 - 1.0 | Birleştirilecek token'ların oranı (varsayılan: 0.3) |
+| `oran` | FLOAT | Hayır | 0.0 - 1.0 | Birleştirilecek token'ların oranı (varsayılan: 0.3) |
 
 ## Çıkışlar
 

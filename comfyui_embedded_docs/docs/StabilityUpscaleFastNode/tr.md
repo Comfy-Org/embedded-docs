@@ -6,7 +6,7 @@ Görüntüleri Stability API çağrısı ile hızlı bir şekilde orijinal boyut
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Büyütülecek giriş görüntüsü |
+| `görüntü` | IMAGE | Evet | - | Büyütülecek giriş görüntüsü |
 
 ## Çıktılar
 

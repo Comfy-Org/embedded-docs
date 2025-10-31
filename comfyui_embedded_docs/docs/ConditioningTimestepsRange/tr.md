@@ -6,8 +6,8 @@ ConditioningTimestepsRange düğümü, üretim süreci boyunca koşullandırma e
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | Zaman adımı aralığının başlangıç yüzdesi (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Evet | 0.0 - 1.0 | Zaman adımı aralığının bitiş yüzdesi (varsayılan: 1.0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Zaman adımı aralığının başlangıç yüzdesi (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Zaman adımı aralığının bitiş yüzdesi (varsayılan: 1.0) |
 
 ## Çıkışlar
 

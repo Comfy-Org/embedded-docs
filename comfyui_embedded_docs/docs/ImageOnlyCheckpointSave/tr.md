@@ -7,9 +7,9 @@ ImageOnlyCheckpointSave düğümü, bir model, CLIP görüntü kodlayıcı ve VA
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Kontrol noktasına kaydedilecek model |
-| `clip_vision` | CLIP_VISION | Evet | - | Kontrol noktasına kaydedilecek CLIP görüntü kodlayıcı |
+| `clip_görü` | CLIP_VISION | Evet | - | Kontrol noktasına kaydedilecek CLIP görüntü kodlayıcı |
 | `vae` | VAE | Evet | - | Kontrol noktasına kaydedilecek VAE (Değişimli Otokodlayıcı) |
-| `filename_prefix` | STRING | Evet | - | Çıktı dosya adı için önek (varsayılan: "checkpoints/ComfyUI") |
+| `dosyaadı_öneki` | STRING | Evet | - | Çıktı dosya adı için önek (varsayılan: "checkpoints/ComfyUI") |
 | `prompt` | PROMPT | Hayır | - | İş akışı istem verileri için gizli parametre |
 | `extra_pnginfo` | EXTRA_PNGINFO | Hayır | - | Ek PNG üst verileri için gizli parametre |
 

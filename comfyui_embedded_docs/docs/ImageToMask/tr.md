@@ -6,8 +6,8 @@ ImageToMask düğümü, bir görüntüyü belirli bir renk kanalına dayalı ola
 
 | Parametre   | Veri Tipi   | Açıklama                                                                                                          |
 |-------------|-------------|----------------------------------------------------------------------------------------------------------------------|
-| `image`     | `IMAGE`     | 'image' parametresi, belirtilen renk kanalına dayalı olarak bir maske oluşturulacak girdi görüntüsünü temsil eder. Ortaya çıkan maskenin içeriğini ve özelliklerini belirlemede çok önemli bir rol oynar. |
-| `channel`   | COMBO[STRING] | 'channel' parametresi, maskeyi oluşturmak için girdi görüntüsünün hangi renk kanalının (kırmızı, yeşil, mavi veya alfa) kullanılacağını belirtir. Bu seçim, maskenin görünümünü ve görüntünün hangi kısımlarının vurgulandığını veya maskelendiğini doğrudan etkiler. |
+| `görüntü`     | `IMAGE`     | 'image' parametresi, belirtilen renk kanalına dayalı olarak bir maske oluşturulacak girdi görüntüsünü temsil eder. Ortaya çıkan maskenin içeriğini ve özelliklerini belirlemede çok önemli bir rol oynar. |
+| `kanal`   | COMBO[STRING] | 'channel' parametresi, maskeyi oluşturmak için girdi görüntüsünün hangi renk kanalının (kırmızı, yeşil, mavi veya alfa) kullanılacağını belirtir. Bu seçim, maskenin görünümünü ve görüntünün hangi kısımlarının vurgulandığını veya maskelendiğini doğrudan etkiler. |
 
 ## Çıktılar
 

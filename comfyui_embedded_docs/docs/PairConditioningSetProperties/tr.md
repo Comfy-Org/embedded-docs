@@ -6,13 +6,13 @@ PairConditioningSetProperties düğümü, hem pozitif hem de negatif koşulland�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive_NEW` | CONDITIONING | Evet | - | Değiştirilecek pozitif koşullandırma girişi |
-| `negative_NEW` | CONDITIONING | Evet | - | Değiştirilecek negatif koşullandırma girişi |
-| `strength` | FLOAT | Evet | 0.0 - 10.0 | Koşullandırmaya uygulanan güç çarpanı (varsayılan: 1.0) |
-| `set_cond_area` | STRING | Evet | "default"<br>"mask bounds" | Koşullandırma alanının nasıl hesaplandığını belirler |
-| `mask` | MASK | Hayır | - | Koşullandırma alanını kısıtlamak için isteğe bağlı maske |
-| `hooks` | HOOKS | Hayır | - | Gelişmiş koşullandırma değişiklikleri için isteğe bağlı kanca grubu |
-| `timesteps` | TIMESTEPS_RANGE | Hayır | - | Koşullandırmanın ne zaman uygulanacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
+| `yeni_pozitif` | CONDITIONING | Evet | - | Değiştirilecek pozitif koşullandırma girişi |
+| `yeni_negatif` | CONDITIONING | Evet | - | Değiştirilecek negatif koşullandırma girişi |
+| `güç` | FLOAT | Evet | 0.0 - 10.0 | Koşullandırmaya uygulanan güç çarpanı (varsayılan: 1.0) |
+| `koşul_alanı_ayarla` | STRING | Evet | "default"<br>"mask bounds" | Koşullandırma alanının nasıl hesaplandığını belirler |
+| `maske` | MASK | Hayır | - | Koşullandırma alanını kısıtlamak için isteğe bağlı maske |
+| `kancalar` | HOOKS | Hayır | - | Gelişmiş koşullandırma değişiklikleri için isteğe bağlı kanca grubu |
+| `zaman_adımları` | TIMESTEPS_RANGE | Hayır | - | Koşullandırmanın ne zaman uygulanacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
 
 ## Çıkışlar
 

@@ -20,10 +20,10 @@ Refiner iki şekilde kullanılabilir:
 | Parametre Adı | Veri Türü | Girdi Türü | Varsayılan Değer | Değer Aralığı | Açıklama |
 |----------------|-----------|------------|---------------|-------------|-------------|
 | `clip` | CLIP | Gerekli | - | - | Metin tokenizasyonu ve kodlama için kullanılan CLIP model örneği, metni model tarafından anlaşılabilir formata dönüştüren çekirdek bileşen |
-| `ascore` | FLOAT | İsteğe Bağlı | 6.0 | 0.0-1000.0 | Oluşturulan görüntülerin görsel kalitesini ve estetiğini kontrol eder, bir sanat eseri için kalite standartları belirlemek gibidir:<br/>- Yüksek puanlar (7.5-8.5): Daha rafine, detay zengini efektler hedefler<br/>- Orta puanlar (6.0-7.0): Dengeli kalite kontrolü<br/>- Düşük puanlar (2.0-3.0): Negatif prompt'lar için uygundur |
-| `width` | INT | Gerekli | 1024 | 64-16384 | Çıktı görüntü genişliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir |
-| `height` | INT | Gerekli | 1024 | 64-16384 | Çıktı görüntü yüksekliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir |
-| `text` | STRING | Gerekli | - | - | Metin prompt açıklaması, çok satırlı girişi ve dinamik prompt sözdizimini destekler. Refiner'da, metin prompt'ları istenen görsel kalite ve detay özelliklerini tanımlamaya daha fazla odaklanmalıdır |
+| `askor` | FLOAT | İsteğe Bağlı | 6.0 | 0.0-1000.0 | Oluşturulan görüntülerin görsel kalitesini ve estetiğini kontrol eder, bir sanat eseri için kalite standartları belirlemek gibidir:<br/>- Yüksek puanlar (7.5-8.5): Daha rafine, detay zengini efektler hedefler<br/>- Orta puanlar (6.0-7.0): Dengeli kalite kontrolü<br/>- Düşük puanlar (2.0-3.0): Negatif prompt'lar için uygundur |
+| `genişlik` | INT | Gerekli | 1024 | 64-16384 | Çıktı görüntü genişliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir |
+| `yükseklik` | INT | Gerekli | 1024 | 64-16384 | Çıktı görüntü yüksekliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir |
+| `metin` | STRING | Gerekli | - | - | Metin prompt açıklaması, çok satırlı girişi ve dinamik prompt sözdizimini destekler. Refiner'da, metin prompt'ları istenen görsel kalite ve detay özelliklerini tanımlamaya daha fazla odaklanmalıdır |
 
 ## Çıktılar
 

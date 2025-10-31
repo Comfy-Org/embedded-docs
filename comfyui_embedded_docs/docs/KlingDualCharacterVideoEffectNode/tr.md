@@ -6,16 +6,16 @@ Kling Dual Character Video Effect Node, seçilen sahneye dayalı özel efektler 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image_left` | IMAGE | Evet | - | Sol taraf görüntüsü |
-| `image_right` | IMAGE | Evet | - | Sağ taraf görüntüsü |
-| `effect_scene` | COMBO | Evet | Birden fazla seçenek mevcut | Video oluşturmaya uygulanacak özel efekt sahnesi türü |
-| `model_name` | COMBO | Hayır | Birden fazla seçenek mevcut | Karakter efektleri için kullanılacak model (varsayılan: "kling-v1") |
-| `mode` | COMBO | Hayır | Birden fazla seçenek mevcut | Video oluşturma modu (varsayılan: "std") |
-| `duration` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi |
+| `sol_görüntü` | IMAGE | Evet | - | Sol taraf görüntüsü |
+| `sağ_görüntü` | IMAGE | Evet | - | Sağ taraf görüntüsü |
+| `efekt_sahnesi` | COMBO | Evet | Birden fazla seçenek mevcut | Video oluşturmaya uygulanacak özel efekt sahnesi türü |
+| `model_adı` | COMBO | Hayır | Birden fazla seçenek mevcut | Karakter efektleri için kullanılacak model (varsayılan: "kling-v1") |
+| `mod` | COMBO | Hayır | Birden fazla seçenek mevcut | Video oluşturma modu (varsayılan: "std") |
+| `süre` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | VIDEO | Çift karakter efektli oluşturulan video |
-| `duration` | STRING | Oluşturulan videonun süre bilgisi |
+| `süre` | STRING | Oluşturulan videonun süre bilgisi |

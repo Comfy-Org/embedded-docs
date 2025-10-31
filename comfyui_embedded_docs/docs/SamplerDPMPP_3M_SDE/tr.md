@@ -7,8 +7,8 @@ SamplerDPMPP_3M_SDE düğümü, örnekleme sürecinde kullanılmak üzere bir DP
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sürecinin stokastikliğini kontrol eder (varsayılan: 1.0) |
-| `s_noise` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
-| `noise_device` | COMBO | Evet | "gpu"<br>"cpu" | Gürültü hesaplamaları için cihazı seçer, GPU veya CPU |
+| `s_gürültü` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
+| `gürültü_cihazı` | COMBO | Evet | "gpu"<br>"cpu" | Gürültü hesaplamaları için cihazı seçer, GPU veya CPU |
 
 ## Çıkışlar
 

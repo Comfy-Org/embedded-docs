@@ -6,13 +6,13 @@ ImageSharpen düğümü, bir görüntünün kenarlarını ve detaylarını belir
 
 | Alan          | Veri Türü | Açıklama                                                                                   |
 |----------------|-------------|-----------------------------------------------------------------------------------------------|
-| `image`        | `IMAGE`     | Keskinleştirilecek giriş görüntüsü. Bu parametre, keskinleştirme etkisinin uygulanacağı temel görüntüyü belirlediği için çok önemlidir. |
-| `sharpen_radius`| `INT`       | Keskinleştirme etkisinin yarıçapını tanımlar. Daha büyük bir yarıçap, kenar etrafındaki daha fazla pikselin etkileneceği ve daha belirgin bir keskinleştirme etkisi oluşacağı anlamına gelir. |
+| `görüntü`        | `IMAGE`     | Keskinleştirilecek giriş görüntüsü. Bu parametre, keskinleştirme etkisinin uygulanacağı temel görüntüyü belirlediği için çok önemlidir. |
+| `keskinleştirme_yarıçapı`| `INT`       | Keskinleştirme etkisinin yarıçapını tanımlar. Daha büyük bir yarıçap, kenar etrafındaki daha fazla pikselin etkileneceği ve daha belirgin bir keskinleştirme etkisi oluşacağı anlamına gelir. |
 | `sigma`        | `FLOAT`     | Keskinleştirme etkisinin yayılmasını kontrol eder. Daha yüksek bir sigma değeri, kenarlarda daha yumuşak bir geçişle sonuçlanırken, daha düşük bir sigma keskinleştirmeyi daha lokalize hale getirir. |
-| `alpha`        | `FLOAT`     | Keskinleştirme etkisinin yoğunluğunu ayarlar. Daha yüksek alfa değerleri, daha güçlü bir keskinleştirme etkisiyle sonuçlanır. |
+| `alfa`        | `FLOAT`     | Keskinleştirme etkisinin yoğunluğunu ayarlar. Daha yüksek alfa değerleri, daha güçlü bir keskinleştirme etkisiyle sonuçlanır. |
 
 ## Çıktılar
 
 | Alan | Veri Türü | Açıklama                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
-| `image`| `IMAGE`     | Geliştirilmiş kenarlara ve detaylara sahip, daha fazla işleme veya görüntülemeye hazır, keskinleştirilmiş görüntü. |
+| `görüntü`| `IMAGE`     | Geliştirilmiş kenarlara ve detaylara sahip, daha fazla işleme veya görüntülemeye hazır, keskinleştirilmiş görüntü. |

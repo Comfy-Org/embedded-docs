@@ -6,10 +6,10 @@ Kling Video Extend Node, diğer Kling düğümleri tarafından oluşturulan vide
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Hayır | - | Video genişletmeyi yönlendirmek için olumlu metin prompt'u |
-| `negative_prompt` | STRING | Hayır | - | Genişletilmiş videoda kaçınılacak öğeler için olumsuz metin prompt'u |
-| `cfg_scale` | FLOAT | Hayır | 0.0 - 1.0 | Prompt rehberliğinin gücünü kontrol eder (varsayılan: 0.5) |
-| `video_id` | STRING | Evet | - | Genişletilecek videonun ID'si. Metinden videoya, görüntüden videoya ve önceki video genişletme işlemleri tarafından oluşturulan videoları destekler. Genişletmeden sonra toplam süre 3 dakikayı aşamaz. |
+| `istem` | STRING | Hayır | - | Video genişletmeyi yönlendirmek için olumlu metin prompt'u |
+| `negatif_istem` | STRING | Hayır | - | Genişletilmiş videoda kaçınılacak öğeler için olumsuz metin prompt'u |
+| `cfg_ölçeği` | FLOAT | Hayır | 0.0 - 1.0 | Prompt rehberliğinin gücünü kontrol eder (varsayılan: 0.5) |
+| `video_kimliği` | STRING | Evet | - | Genişletilecek videonun ID'si. Metinden videoya, görüntüden videoya ve önceki video genişletme işlemleri tarafından oluşturulan videoları destekler. Genişletmeden sonra toplam süre 3 dakikayı aşamaz. |
 
 **Not:** `video_id` parametresi, diğer Kling düğümleri tarafından oluşturulmuş bir videoyu referans almalıdır ve genişletmeden sonraki toplam süre 3 dakikayı aşamaz.
 
@@ -17,6 +17,6 @@ Kling Video Extend Node, diğer Kling düğümleri tarafından oluşturulan vide
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Kling API'si tarafından oluşturulan genişletilmiş video |
-| `video_id` | STRING | Genişletilmiş video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Kling API'si tarafından oluşturulan genişletilmiş video |
+| `süre` | STRING | Genişletilmiş video için benzersiz tanımlayıcı |
 | `duration` | STRING | Genişletilmiş videonun süresi |

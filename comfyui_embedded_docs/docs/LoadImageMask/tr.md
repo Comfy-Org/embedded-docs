@@ -6,8 +6,8 @@ LoadImageMask düğümü, belirli bir yoldan görüntüleri ve bunlarla ilişkil
 
 | Parametre | Veri Tipi | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | COMBO[STRING] | 'image' parametresi, yüklenecek ve işlenecek görüntü dosyasını belirtir. Maske çıkarımı ve format dönüşümü için kaynak görüntüyü sağlayarak çıktıyı belirlemede çok önemli bir rol oynar. |
-| `channel` | COMBO[STRING] | 'channel' parametresi, maskeyi oluşturmak için kullanılacak olan görüntünün renk kanalını belirtir. Bu, farklı renk kanallarına dayalı maske oluşturmada esneklik sağlayarak düğümün çeşitli görüntü işleme senaryolarındaki kullanışlılığını artırır. |
+| `görüntü`   | COMBO[STRING] | 'image' parametresi, yüklenecek ve işlenecek görüntü dosyasını belirtir. Maske çıkarımı ve format dönüşümü için kaynak görüntüyü sağlayarak çıktıyı belirlemede çok önemli bir rol oynar. |
+| `kanal` | COMBO[STRING] | 'channel' parametresi, maskeyi oluşturmak için kullanılacak olan görüntünün renk kanalını belirtir. Bu, farklı renk kanallarına dayalı maske oluşturmada esneklik sağlayarak düğümün çeşitli görüntü işleme senaryolarındaki kullanışlılığını artırır. |
 
 ## Çıktılar
 

@@ -10,7 +10,7 @@ CLIPTextEncodeSD3 düğümü, Stable Diffusion 3 modelleri için metin girişler
 | `clip_l` | STRING | Çok Satırlı, Dinamik İstemler | - | - | Yerel CLIP modeli için metin girişi |
 | `clip_g` | STRING | Çok Satırlı, Dinamik İstemler | - | - | Global CLIP modeli için metin girişi |
 | `t5xxl` | STRING | Çok Satırlı, Dinamik İstemler | - | - | T5-XXL modeli için metin girişi |
-| `empty_padding` | COMBO | Seçim | - | ["none", "empty_prompt"] | Boş metin girişlerinin nasıl işleneceğini kontrol eder |
+| `boş_dolgu` | COMBO | Seçim | - | ["none", "empty_prompt"] | Boş metin girişlerinin nasıl işleneceğini kontrol eder |
 
 **Parametre Kısıtlamaları:**
 

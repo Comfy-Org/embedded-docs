@@ -6,9 +6,9 @@ LatentOperationSharpen düğümü, Gauss çekirdeği kullanarak gizli temsillere
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `sharpen_radius` | INT | Hayır | 1-31 | Keskinleştirme çekirdeğinin yarıçapı (varsayılan: 9) |
+| `keskinleştirme_yarıçapı` | INT | Hayır | 1-31 | Keskinleştirme çekirdeğinin yarıçapı (varsayılan: 9) |
 | `sigma` | FLOAT | Hayır | 0.1-10.0 | Gauss çekirdeği için standart sapma (varsayılan: 1.0) |
-| `alpha` | FLOAT | Hayır | 0.0-5.0 | Keskinleştirme yoğunluk faktörü (varsayılan: 0.1) |
+| `alfa` | FLOAT | Hayır | 0.0-5.0 | Keskinleştirme yoğunluk faktörü (varsayılan: 0.1) |
 
 ## Çıktılar
 

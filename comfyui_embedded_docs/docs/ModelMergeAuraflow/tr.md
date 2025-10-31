@@ -9,9 +9,9 @@ ModelMergeAuraflow düğümü, iki farklı modeli çeşitli model bileşenleri i
 | `model1` | MODEL | Evet | - | Birleştirilecek ilk model |
 | `model2` | MODEL | Evet | - | Birleştirilecek ikinci model |
 | `init_x_linear.` | FLOAT | Evet | 0.0 - 1.0 | Başlangıç doğrusal dönüşüm için karıştırma ağırlığı (varsayılan: 1.0) |
-| `positional_encoding` | FLOAT | Evet | 0.0 - 1.0 | Konumsal kodlama bileşenleri için karıştırma ağırlığı (varsayılan: 1.0) |
+| `konumsal_kodlama` | FLOAT | Evet | 0.0 - 1.0 | Konumsal kodlama bileşenleri için karıştırma ağırlığı (varsayılan: 1.0) |
 | `cond_seq_linear.` | FLOAT | Evet | 0.0 - 1.0 | Koşullu dizi doğrusal katmanları için karıştırma ağırlığı (varsayılan: 1.0) |
-| `register_tokens` | FLOAT | Evet | 0.0 - 1.0 | Token kayıt bileşenleri için karıştırma ağırlığı (varsayılan: 1.0) |
+| `kayıt_jetonları` | FLOAT | Evet | 0.0 - 1.0 | Token kayıt bileşenleri için karıştırma ağırlığı (varsayılan: 1.0) |
 | `t_embedder.` | FLOAT | Evet | 0.0 - 1.0 | Zaman gömme bileşenleri için karıştırma ağırlığı (varsayılan: 1.0) |
 | `double_layers.0.` | FLOAT | Evet | 0.0 - 1.0 | Çift katman grubu 0 için karıştırma ağırlığı (varsayılan: 1.0) |
 | `double_layers.1.` | FLOAT | Evet | 0.0 - 1.0 | Çift katman grubu 1 için karıştırma ağırlığı (varsayılan: 1.0) |

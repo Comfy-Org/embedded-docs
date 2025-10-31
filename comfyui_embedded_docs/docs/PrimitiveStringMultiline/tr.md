@@ -6,7 +6,7 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `value` | STRING | Evet | Yok | Birden fazla satıra yayılabilen metin giriş değeri |
+| `değer` | STRING | Evet | Yok | Birden fazla satıra yayılabilen metin giriş değeri |
 
 ## Çıkışlar
 

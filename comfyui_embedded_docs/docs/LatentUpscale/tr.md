@@ -6,11 +6,11 @@ LatentUpscale düğümü, görüntülerin gizli temsillerini (latent representat
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | Büyütülecek görüntünün gizli temsili. Bu parametre, büyütme işleminin başlangıç noktasını belirlemek için çok önemlidir. |
-| `upscale_method` | COMBO[STRING] | Gizli görüntüyü büyütmek için kullanılacak yöntemi belirtir. Farklı yöntemler, büyütülmüş görüntünün kalitesini ve özelliklerini etkileyebilir. |
-| `width`   | `INT`       | Büyütülmüş görüntünün istenen genişliği. 0 olarak ayarlanırsa, en-boy oranını korumak için yüksekliğe dayalı olarak hesaplanacaktır. |
-| `height`  | `INT`       | Büyütülmüş görüntünün istenen yüksekliği. 0 olarak ayarlanırsa, en-boy oranını korumak için genişliğe dayalı olarak hesaplanacaktır. |
-| `crop`    | COMBO[STRING] | Büyütülmüş görüntünün nasıl kırpılacağını (crop) belirler; bu, çıktının nihai görünümünü ve boyutlarını etkiler. |
+| `örnekler` | `LATENT`    | Büyütülecek görüntünün gizli temsili. Bu parametre, büyütme işleminin başlangıç noktasını belirlemek için çok önemlidir. |
+| `büyütme_yöntemi` | COMBO[STRING] | Gizli görüntüyü büyütmek için kullanılacak yöntemi belirtir. Farklı yöntemler, büyütülmüş görüntünün kalitesini ve özelliklerini etkileyebilir. |
+| `genişlik`   | `INT`       | Büyütülmüş görüntünün istenen genişliği. 0 olarak ayarlanırsa, en-boy oranını korumak için yüksekliğe dayalı olarak hesaplanacaktır. |
+| `yükseklik`  | `INT`       | Büyütülmüş görüntünün istenen yüksekliği. 0 olarak ayarlanırsa, en-boy oranını korumak için genişliğe dayalı olarak hesaplanacaktır. |
+| `kırp`    | COMBO[STRING] | Büyütülmüş görüntünün nasıl kırpılacağını (crop) belirler; bu, çıktının nihai görünümünü ve boyutlarını etkiler. |
 
 ## Çıktılar
 

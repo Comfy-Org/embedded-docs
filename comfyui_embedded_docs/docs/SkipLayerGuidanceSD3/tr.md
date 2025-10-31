@@ -7,10 +7,10 @@ SkipLayerGuidanceSD3 düğümü, atlanan katmanlarla ek bir sınıflandırıcıs
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Atlama katmanı yönlendirmesi uygulanacak model |
-| `layers` | STRING | Evet | - | Atlanacak katman indekslerinin virgülle ayrılmış listesi (varsayılan: "7, 8, 9") |
-| `scale` | FLOAT | Evet | 0.0 - 10.0 | Atlama katmanı yönlendirme etkisinin gücü (varsayılan: 3.0) |
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | Yönlendirme uygulamasının başlangıç noktası, toplam adımların yüzdesi olarak (varsayılan: 0.01) |
-| `end_percent` | FLOAT | Evet | 0.0 - 1.0 | Yönlendirme uygulamasının bitiş noktası, toplam adımların yüzdesi olarak (varsayılan: 0.15) |
+| `katmanlar` | STRING | Evet | - | Atlanacak katman indekslerinin virgülle ayrılmış listesi (varsayılan: "7, 8, 9") |
+| `ölçek` | FLOAT | Evet | 0.0 - 10.0 | Atlama katmanı yönlendirme etkisinin gücü (varsayılan: 3.0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Yönlendirme uygulamasının başlangıç noktası, toplam adımların yüzdesi olarak (varsayılan: 0.01) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Yönlendirme uygulamasının bitiş noktası, toplam adımların yüzdesi olarak (varsayılan: 0.15) |
 
 ## Çıktılar
 

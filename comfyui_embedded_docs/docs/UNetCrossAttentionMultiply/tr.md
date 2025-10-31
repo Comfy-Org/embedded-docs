@@ -10,7 +10,7 @@ UNetCrossAttentionMultiply düğümü, bir UNet modelindeki çapraz dikkat mekan
 | `q` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkatteki sorgu bileşenleri için ölçeklendirme faktörü (varsayılan: 1.0) |
 | `k` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkatteki anahtar bileşenleri için ölçeklendirme faktörü (varsayılan: 1.0) |
 | `v` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkatteki değer bileşenleri için ölçeklendirme faktörü (varsayılan: 1.0) |
-| `out` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkatteki çıktı bileşenleri için ölçeklendirme faktörü (varsayılan: 1.0) |
+| `çıktı` | FLOAT | Hayır | 0.0 - 10.0 | Çapraz dikkatteki çıktı bileşenleri için ölçeklendirme faktörü (varsayılan: 1.0) |
 
 ## Çıktılar
 

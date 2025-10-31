@@ -7,9 +7,9 @@ ModelSamplingLTXV düğümü, bir modele belirteç sayısına dayalı gelişmiş
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Örnekleme parametrelerinin uygulanacağı girdi modeli |
-| `max_shift` | FLOAT | Hayır | 0.0 - 100.0 | Hesaplamada kullanılan maksimum kaydırma değeri (varsayılan: 2.05) |
-| `base_shift` | FLOAT | Hayır | 0.0 - 100.0 | Hesaplamada kullanılan temel kaydırma değeri (varsayılan: 0.95) |
-| `latent` | LATENT | Hayır | - | Kaydırma hesaplaması için belirteç sayısını belirlemek üzere kullanılan isteğe bağlı gizli değişken girdisi |
+| `maks_kaydırma` | FLOAT | Hayır | 0.0 - 100.0 | Hesaplamada kullanılan maksimum kaydırma değeri (varsayılan: 2.05) |
+| `temel_kaydırma` | FLOAT | Hayır | 0.0 - 100.0 | Hesaplamada kullanılan temel kaydırma değeri (varsayılan: 0.95) |
+| `gizli` | LATENT | Hayır | - | Kaydırma hesaplaması için belirteç sayısını belirlemek üzere kullanılan isteğe bağlı gizli değişken girdisi |
 
 ## Çıktılar
 

@@ -6,7 +6,7 @@ PreviewAny düğümü, herhangi bir giriş veri türünün önizlemesini metin f
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `source` | ANY | Evet | Herhangi bir veri türü | Önizleme görüntüsü için herhangi bir giriş veri türünü kabul eder |
+| `kaynak` | ANY | Evet | Herhangi bir veri türü | Önizleme görüntüsü için herhangi bir giriş veri türünü kabul eder |
 
 ## Çıkışlar
 

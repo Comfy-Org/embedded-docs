@@ -12,7 +12,7 @@ Bu düğüm, `ComfyUI/models/checkpoints` klasöründeki tüm model dosyaların�
 
 | Parametre    | Veri Türü | Girdi Türü | Varsayılan | Aralık                           | Açıklama                                                                                             |
 |--------------|-----------|------------|------------|----------------------------------|------------------------------------------------------------------------------------------------------|
-| `ckpt_name`  | STRING    | Widget     | null       | checkpoints klasöründeki tüm model dosyaları | Yüklenecek kontrol noktası model dosya adını seçin; bu, sonraki görüntü oluşturma için kullanılacak AI modelini belirler |
+| `ckpt_adı`  | STRING    | Widget     | null       | checkpoints klasöründeki tüm model dosyaları | Yüklenecek kontrol noktası model dosya adını seçin; bu, sonraki görüntü oluşturma için kullanılacak AI modelini belirler |
 
 ## Çıktılar
 

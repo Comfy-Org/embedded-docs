@@ -6,7 +6,7 @@ Bu düğüm, `ComfyUI/models/clip_vision` klasöründe bulunan modelleri ve `ext
 
 | Alan        | Veri Tipi      | Açıklama |
 |-------------|---------------|-------------|
-| `clip_name` | COMBO[STRING]  | `ComfyUI/models/clip_vision` klasöründeki desteklenen tüm model dosyalarını listeler. |
+| `clip_adı` | COMBO[STRING]  | `ComfyUI/models/clip_vision` klasöründeki desteklenen tüm model dosyalarını listeler. |
 
 ## Çıktılar
 

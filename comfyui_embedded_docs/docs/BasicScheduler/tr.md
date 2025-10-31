@@ -7,9 +7,9 @@
 | Parametre   | Veri Türü     | Girdi Türü | Varsayılan | Aralık     | Metafor Açıklaması           | Teknik Amaç                |
 | ----------- | ------------- | ---------- | ------- | --------- | ------------------------------ | ---------------------------- |
 | `model`     | MODEL         | Input      | -       | -         | **Tuval Türü**: Farklı tuval malzemeleri farklı boya formülleri gerektirir | Yayılım model nesnesi, sigma hesaplama temelini belirler |
-| `scheduler` | COMBO[STRING] | Widget     | -       | 9 seçenek | **Karıştırma Tekniği**: Boya konsantrasyonunun nasıl değişeceğini seçin | Zamanlama algoritması, gürültü azalma modunu kontrol eder |
-| `steps`     | INT           | Widget     | 20      | 1-10000   | **Karıştırma Sayısı**: 20 karıştırma ile 50 karıştırmanın hassasiyet farkı | Örnekleme adımları, oluşturma kalitesini ve hızını etkiler |
-| `denoise`   | FLOAT         | Widget     | 1.0     | 0.0-1.0   | **Oluşturma Yoğunluğu**: İnce ayardan yeniden boyamaya kadar kontrol seviyesi | Gürültü giderme gücü, kısmi yeniden boyama senaryolarını destekler |
+| `zamanlayıcı` | COMBO[STRING] | Widget     | -       | 9 seçenek | **Karıştırma Tekniği**: Boya konsantrasyonunun nasıl değişeceğini seçin | Zamanlama algoritması, gürültü azalma modunu kontrol eder |
+| `adımlar`     | INT           | Widget     | 20      | 1-10000   | **Karıştırma Sayısı**: 20 karıştırma ile 50 karıştırmanın hassasiyet farkı | Örnekleme adımları, oluşturma kalitesini ve hızını etkiler |
+| `gürültü_azaltma`   | FLOAT         | Widget     | 1.0     | 0.0-1.0   | **Oluşturma Yoğunluğu**: İnce ayardan yeniden boyamaya kadar kontrol seviyesi | Gürültü giderme gücü, kısmi yeniden boyama senaryolarını destekler |
 
 ### Zamanlayıcı Türleri
 

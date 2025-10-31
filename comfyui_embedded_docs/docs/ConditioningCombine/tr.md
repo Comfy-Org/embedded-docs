@@ -6,14 +6,14 @@ Bu düğüm, iki koşullandırma girdisini tek bir çıktıda birleştirerek bil
 
 | Parametre Adı        | Veri Türü          | Açıklama |
 |----------------------|--------------------|-------------|
-| `conditioning_1`     | `CONDITIONING`     | Birleştirilecek ilk koşullandırma girdisi. Birleştirme işleminde `conditioning_2` ile eşit öneme sahiptir. |
-| `conditioning_2`     | `CONDITIONING`     | Birleştirilecek ikinci koşullandırma girdisi. Birleştirme işleminde `conditioning_1` ile eşit öneme sahiptir. |
+| `koşullandırma_1`     | `CONDITIONING`     | Birleştirilecek ilk koşullandırma girdisi. Birleştirme işleminde `koşullandırma_2` ile eşit öneme sahiptir. |
+| `koşullandırma_2`     | `CONDITIONING`     | Birleştirilecek ikinci koşullandırma girdisi. Birleştirme işleminde `koşullandırma_1` ile eşit öneme sahiptir. |
 
 ## Çıktılar
 
 | Parametre Adı        | Veri Türü          | Açıklama |
 |----------------------|--------------------|-------------|
-| `conditioning`       | `CONDITIONING`     | `conditioning_1` ve `conditioning_2`'nin birleştirilmesi sonucu, birleştirilmiş bilgiyi kapsayan çıktı. |
+| `conditioning`       | `CONDITIONING`     | `koşullandırma_1` ve `koşullandırma_2`'nin birleştirilmesi sonucu, birleştirilmiş bilgiyi kapsayan çıktı. |
 
 ## Kullanım Senaryoları
 

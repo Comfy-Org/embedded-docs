@@ -6,7 +6,7 @@ Görüntüyü senkron olarak büyütür. Verilen bir raster görüntüyü 'crisp
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Büyütülecek giriş görüntüsü |
+| `görüntü` | IMAGE | Evet | - | Büyütülecek giriş görüntüsü |
 | `auth_token` | STRING | Hayır | - | Recraft API için kimlik doğrulama token'ı |
 | `comfy_api_key` | STRING | Hayır | - | Comfy.org servisleri için API anahtarı |
 
@@ -14,4 +14,4 @@ Görüntüyü senkron olarak büyütür. Verilen bir raster görüntüyü 'crisp
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Geliştirilmiş çözünürlük ve netliğe sahip büyütülmüş görüntü |
+| `görüntü` | IMAGE | Geliştirilmiş çözünürlük ve netliğe sahip büyütülmüş görüntü |

@@ -6,12 +6,12 @@ ImageScaleToTotalPixels düğümü, görüntüleri en-boy oranını koruyarak be
 
 | Parametre       | Veri Türü    | Açıklama                                                                |
 |-----------------|-------------|----------------------------------------------------------------------------|
-| `image`         | `IMAGE`     | Belirtilen toplam piksel sayısına yükseltilecek olan girdi görüntüsü.    |
-| `upscale_method`| COMBO[STRING] | Görüntüyü yukarı ölçeklendirmek için kullanılan yöntem. Bu, yükseltilmiş görüntünün kalitesini ve özelliklerini etkiler. |
-| `megapixels`    | `FLOAT`     | Görüntünün megapiksel cinsinden hedef boyutu. Bu, yükseltilmiş görüntüdeki toplam piksel sayısını belirler. |
+| `görüntü`         | `IMAGE`     | Belirtilen toplam piksel sayısına yükseltilecek olan girdi görüntüsü.    |
+| `büyütme_yöntemi`| COMBO[STRING] | Görüntüyü yukarı ölçeklendirmek için kullanılan yöntem. Bu, yükseltilmiş görüntünün kalitesini ve özelliklerini etkiler. |
+| `megapiksel`    | `FLOAT`     | Görüntünün megapiksel cinsinden hedef boyutu. Bu, yükseltilmiş görüntüdeki toplam piksel sayısını belirler. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama                                                           |
 |-----------|-------------|-----------------------------------------------------------------------|
-| `image`   | `IMAGE`     | Orijinal en-boy oranı korunarak, belirtilen toplam piksel sayısına sahip yükseltilmiş görüntü. |
+| `görüntü`   | `IMAGE`     | Orijinal en-boy oranı korunarak, belirtilen toplam piksel sayısına sahip yükseltilmiş görüntü. |

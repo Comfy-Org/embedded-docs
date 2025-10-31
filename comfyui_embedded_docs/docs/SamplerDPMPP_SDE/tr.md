@@ -7,9 +7,9 @@ SamplerDPMPP_SSE düğümü, örnekleme sürecinde kullanılmak üzere bir DPM++
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sürecinin stokastikliğini kontrol eder (varsayılan: 1.0) |
-| `s_noise` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
+| `s_gürültü` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
 | `r` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme davranışını etkileyen bir parametre (varsayılan: 0.5) |
-| `noise_device` | COMBO | Evet | "gpu"<br>"cpu" | Gürültü hesaplamalarının yapılacağı cihazı seçer |
+| `gürültü_cihazı` | COMBO | Evet | "gpu"<br>"cpu" | Gürültü hesaplamalarının yapılacağı cihazı seçer |
 
 ## Çıkışlar
 

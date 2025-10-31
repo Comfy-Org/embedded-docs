@@ -6,8 +6,8 @@ RepeatLatentBatch düğümü, belirli sayıda gizli temsil grubunu çoğaltmak v
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | 'samples' parametresi, çoğaltılacak olan gizli temsilleri temsil eder. Tekrarlanacak veriyi tanımlamak için esastır. |
-| `amount`  | `INT`       | 'amount' parametresi, girdi örneklerinin kaç kez tekrarlanacağını belirtir. Çıktı grubunun boyutunu doğrudan etkileyerek hesaplama yükünü ve üretilen verinin çeşitliliğini etkiler. |
+| `örnekler` | `LATENT`    | 'samples' parametresi, çoğaltılacak olan gizli temsilleri temsil eder. Tekrarlanacak veriyi tanımlamak için esastır. |
+| `miktar`  | `INT`       | 'amount' parametresi, girdi örneklerinin kaç kez tekrarlanacağını belirtir. Çıktı grubunun boyutunu doğrudan etkileyerek hesaplama yükünü ve üretilen verinin çeşitliliğini etkiler. |
 
 ## Çıktılar
 

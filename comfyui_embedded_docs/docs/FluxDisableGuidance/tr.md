@@ -6,10 +6,10 @@ Bu düğüm, Flux ve benzeri modeller için kılavuz gömme işlevini tamamen de
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Evet | - | İşlenecek ve kılavuzdan arındırılacak koşullandırma verisi |
+| `koşullandırma` | CONDITIONING | Evet | - | İşlenecek ve kılavuzdan arındırılacak koşullandırma verisi |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Kılavuzu devre dışı bırakılmış şekilde değiştirilmiş koşullandırma verisi |
+| `koşullandırma` | CONDITIONING | Kılavuzu devre dışı bırakılmış şekilde değiştirilmiş koşullandırma verisi |

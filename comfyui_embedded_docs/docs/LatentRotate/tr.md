@@ -6,8 +6,8 @@ LatentRotate düğümü, görüntülerin gizli temsillerini belirtilen açılarl
 
 | Parametre | Veri Tipi | Açıklama |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | 'samples' parametresi, döndürülecek görüntülerin gizli temsillerini temsil eder. Döndürme işleminin başlangıç noktasını belirlemede çok önemlidir. |
-| `rotation` | COMBO[STRING] | 'rotation' parametresi, gizli görüntülerin hangi açıyla döndürüleceğini belirtir. Ortaya çıkan görüntülerin yönelimi üzerinde doğrudan etkiye sahiptir. |
+| `örnekler` | `LATENT`    | 'samples' parametresi, döndürülecek görüntülerin gizli temsillerini temsil eder. Döndürme işleminin başlangıç noktasını belirlemede çok önemlidir. |
+| `döndürme` | COMBO[STRING] | 'rotation' parametresi, gizli görüntülerin hangi açıyla döndürüleceğini belirtir. Ortaya çıkan görüntülerin yönelimi üzerinde doğrudan etkiye sahiptir. |
 
 ## Çıktılar
 

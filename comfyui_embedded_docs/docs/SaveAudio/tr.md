@@ -6,8 +6,8 @@ SaveAudio düğümü, ses verilerini FLAC formatında bir dosyaya kaydeder. Ses 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | - | Kaydedilecek ses verisi |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için önek (varsayılan: "audio/ComfyUI") |
+| `ses` | AUDIO | Evet | - | Kaydedilecek ses verisi |
+| `dosyaadı_öneki` | STRING | Hayır | - | Çıktı dosya adı için önek (varsayılan: "audio/ComfyUI") |
 
 *Not: `prompt` ve `extra_pnginfo` parametreleri gizlidir ve sistem tarafından otomatik olarak işlenir.*
 

@@ -6,13 +6,13 @@ LTXVAddGuide düğümü, girdi görüntülerini veya videolarını kodlayarak ve
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Ana kare kılavuzu ile değiştirilecek pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Ana kare kılavuzu ile değiştirilecek negatif koşullandırma girdisi |
+| `pozitif` | CONDITIONING | Evet | - | Ana kare kılavuzu ile değiştirilecek pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Ana kare kılavuzu ile değiştirilecek negatif koşullandırma girdisi |
 | `vae` | VAE | Evet | - | Girdi görüntüsünün/video karelerinin kodlanmasında kullanılan VAE modeli |
-| `latent` | LATENT | Evet | - | Koşullandırma karelerini alacak olan girdi gizli dizisi |
-| `image` | IMAGE | Evet | - | Gizli videoyu koşullandırmak için kullanılan görüntü veya video. 8*n + 1 kare olmalıdır. Video 8*n + 1 kare değilse, en yakın 8*n + 1 kareye kırpılacaktır. |
-| `frame_idx` | INT | Hayır | -9999 - 9999 | Koşullandırmanın başlayacağı kare indeksi. Tek kareli görüntüler veya 1-8 kareye sahip videolar için herhangi bir frame_idx değeri kabul edilebilir. 9+ kareye sahip videolar için frame_idx 8'e bölünebilir olmalıdır, aksi takdirde en yakın 8 katına aşağı yuvarlanacaktır. Negatif değerler videonun sonundan sayılır. (varsayılan: 0) |
-| `strength` | FLOAT | Hayır | 0.0 - 1.0 | Koşullandırma etkisinin gücü; 1.0 tam koşullandırma uygular, 0.0 ise hiç koşullandırma uygulamaz (varsayılan: 1.0) |
+| `gizli` | LATENT | Evet | - | Koşullandırma karelerini alacak olan girdi gizli dizisi |
+| `görüntü` | IMAGE | Evet | - | Gizli videoyu koşullandırmak için kullanılan görüntü veya video. 8*n + 1 kare olmalıdır. Video 8*n + 1 kare değilse, en yakın 8*n + 1 kareye kırpılacaktır. |
+| `kare_indeksi` | INT | Hayır | -9999 - 9999 | Koşullandırmanın başlayacağı kare indeksi. Tek kareli görüntüler veya 1-8 kareye sahip videolar için herhangi bir frame_idx değeri kabul edilebilir. 9+ kareye sahip videolar için frame_idx 8'e bölünebilir olmalıdır, aksi takdirde en yakın 8 katına aşağı yuvarlanacaktır. Negatif değerler videonun sonundan sayılır. (varsayılan: 0) |
+| `güç` | FLOAT | Hayır | 0.0 - 1.0 | Koşullandırma etkisinin gücü; 1.0 tam koşullandırma uygular, 0.0 ise hiç koşullandırma uygulamaz (varsayılan: 1.0) |
 
 **Not:** Girdi görüntüsü/videosu 8*n + 1 desenini takip eden bir kare sayısına sahip olmalıdır (örneğin, 1, 9, 17, 25 kare). Girdi bu deseni aşarsa, otomatik olarak en yakın geçerli kare sayısına kırpılacaktır.
 
@@ -20,6 +20,6 @@ LTXVAddGuide düğümü, girdi görüntülerini veya videolarını kodlayarak ve
 
 | Çıktı Adı | Veri Türı | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Ana kare kılavuz bilgisi ile güncellenmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Ana kare kılavuz bilgisi ile güncellenmiş negatif koşullandırma |
-| `latent` | LATENT | Birleştirilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi içeren gizli dizi |
+| `negatif` | CONDITIONING | Ana kare kılavuz bilgisi ile güncellenmiş pozitif koşullandırma |
+| `gizli` | CONDITIONING | Ana kare kılavuz bilgisi ile güncellenmiş negatif koşullandırma |
+| `gizli` | LATENT | Birleştirilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi içeren gizli dizi |

@@ -6,15 +6,15 @@ Bu düğüm, Stability AI'nin Stable Diffusion 3.5 modelini kullanarak görünt�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Çıktı görüntüsünde görmek istediğiniz şey. Öğeleri, renkleri ve konuları net bir şekilde tanımlayan güçlü, betimleyici bir prompt daha iyi sonuçlara yol açacaktır. (varsayılan: boş string) |
+| `istem` | STRING | Evet | - | Çıktı görüntüsünde görmek istediğiniz şey. Öğeleri, renkleri ve konuları net bir şekilde tanımlayan güçlü, betimleyici bir prompt daha iyi sonuçlara yol açacaktır. (varsayılan: boş string) |
 | `model` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturma için kullanılacak Stable Diffusion 3.5 modeli. |
-| `aspect_ratio` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan görüntünün en-boy oranı. (varsayılan: 1:1 oranı) |
-| `style_preset` | COMBO | Hayır | Birden fazla seçenek mevcut | İsteğe bağlı olarak oluşturulan görüntünün istediğiniz stili. |
-| `cfg_scale` | FLOAT | Evet | 1.0 - 10.0 | Difüzyon sürecinin prompt metnine ne kadar sıkı bir şekilde bağlı kaldığı (daha yüksek değerler görüntünüzü prompt'unuza daha yakın tutar). (varsayılan: 4.0) |
-| `seed` | INT | Evet | 0 - 4294967294 | Gürültü oluşturmak için kullanılan rastgele seed değeri. (varsayılan: 0) |
-| `image` | IMAGE | Hayır | - | Görüntüden-görüntüye oluşturma için isteğe bağlı girdi görüntüsü. |
-| `negative_prompt` | STRING | Hayır | - | Çıktı görüntüsünde görmek istemediğiniz şeylerin anahtar kelimeleri. Bu gelişmiş bir özelliktir. (varsayılan: boş string) |
-| `image_denoise` | FLOAT | Hayır | 0.0 - 1.0 | Girdi görüntüsünün gürültü giderme seviyesi; 0.0 girdiyle aynı görüntüyü verir, 1.0 ise hiç görüntü sağlanmamış gibi davranır. (varsayılan: 0.5) |
+| `en_boy_oranı` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan görüntünün en-boy oranı. (varsayılan: 1:1 oranı) |
+| `stil_önayarı` | COMBO | Hayır | Birden fazla seçenek mevcut | İsteğe bağlı olarak oluşturulan görüntünün istediğiniz stili. |
+| `cfg_ölçeği` | FLOAT | Evet | 1.0 - 10.0 | Difüzyon sürecinin prompt metnine ne kadar sıkı bir şekilde bağlı kaldığı (daha yüksek değerler görüntünüzü prompt'unuza daha yakın tutar). (varsayılan: 4.0) |
+| `tohum` | INT | Evet | 0 - 4294967294 | Gürültü oluşturmak için kullanılan rastgele seed değeri. (varsayılan: 0) |
+| `görüntü` | IMAGE | Hayır | - | Görüntüden-görüntüye oluşturma için isteğe bağlı girdi görüntüsü. |
+| `negatif_istem` | STRING | Hayır | - | Çıktı görüntüsünde görmek istemediğiniz şeylerin anahtar kelimeleri. Bu gelişmiş bir özelliktir. (varsayılan: boş string) |
+| `görüntü_gürültü_azaltma` | FLOAT | Hayır | 0.0 - 1.0 | Girdi görüntüsünün gürültü giderme seviyesi; 0.0 girdiyle aynı görüntüyü verir, 1.0 ise hiç görüntü sağlanmamış gibi davranır. (varsayılan: 0.5) |
 
 **Not:** Bir `image` sağlandığında, düğüm görüntüden-görüntüye oluşturma moduna geçer ve `aspect_ratio` parametresi otomatik olarak girdi görüntüsünden belirlenir. Hiç `image` sağlanmadığında, `image_denoise` parametresi dikkate alınmaz.
 
@@ -22,4 +22,4 @@ Bu düğüm, Stability AI'nin Stable Diffusion 3.5 modelini kullanarak görünt�
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Oluşturulan veya değiştirilen görüntü. |
+| `görüntü` | IMAGE | Oluşturulan veya değiştirilen görüntü. |

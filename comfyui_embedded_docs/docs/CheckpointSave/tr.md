@@ -11,7 +11,7 @@ Save Checkpoint düğümü öncelikle model birleştirme iş akışlarında kull
 | `model` | MODEL | model parametresi, durumu kaydedilecek olan birincil modeli temsil eder. Modelin mevcut durumunu gelecekteki geri yükleme veya analiz için yakalamak için gereklidir. |
 | `clip` | CLIP | clip parametresi, birincil model ile ilişkili CLIP modeli içindir ve bu modelin durumunun ana modelle birlikte kaydedilmesine olanak tanır. |
 | `vae` | VAE | vae parametresi, Varyasyonel Otokodlayıcı (VAE) modeli içindir; bu modelin durumunun ana model ve CLIP ile birlikte gelecekteki kullanım veya analiz için kaydedilmesini sağlar. |
-| `filename_prefix` | STRING | Bu parametre, kontrol noktasının kaydedileceği dosya adı için ön eki belirtir. |
+| `dosyaadı_öneki` | STRING | Bu parametre, kontrol noktasının kaydedileceği dosya adı için ön eki belirtir. |
 
 Ek olarak, düğümün meta veriler için iki gizli girdisi vardır:
 

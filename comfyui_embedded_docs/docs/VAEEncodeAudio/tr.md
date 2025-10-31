@@ -6,7 +6,7 @@ VAEEncodeAudio düğümü, ses verilerini Varyasyonel Otokodlayıcı (VAE) kulla
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | - | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgisini içerir |
+| `ses` | AUDIO | Evet | - | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgisini içerir |
 | `vae` | VAE | Evet | - | Sesi gizli uzaya kodlamak için kullanılan Varyasyonel Otokodlayıcı modeli |
 
 **Not:** Orijinal örnekleme hızı bu değerden farklıysa, ses girişi otomatik olarak 44100 Hz'e yeniden örneklenir.

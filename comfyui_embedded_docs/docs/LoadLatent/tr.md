@@ -6,7 +6,7 @@ LoadLatent düğümü, giriş dizinindeki .latent dosyalarından önceden kayded
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `latent` | STRING | Evet | Giriş dizinindeki tüm .latent dosyaları | Giriş dizinindeki mevcut dosyalardan hangi .latent dosyasının yükleneceğini seçer |
+| `gizli` | STRING | Evet | Giriş dizinindeki tüm .latent dosyaları | Giriş dizinindeki mevcut dosyalardan hangi .latent dosyasının yükleneceğini seçer |
 
 ## Çıktılar
 

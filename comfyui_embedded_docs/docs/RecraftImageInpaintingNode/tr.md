@@ -6,13 +6,13 @@ Bu düğüm, görüntüleri bir metin istemi ve maske temelinde değiştirir. Re
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Değiştirilecek giriş görüntüsü |
-| `mask` | MASK | Evet | - | Görüntünün hangi alanlarının değiştirileceğini tanımlayan maske |
-| `prompt` | STRING | Evet | - | Görüntü oluşturma için istem (varsayılan: boş dize) |
+| `görüntü` | IMAGE | Evet | - | Değiştirilecek giriş görüntüsü |
+| `maske` | MASK | Evet | - | Görüntünün hangi alanlarının değiştirileceğini tanımlayan maske |
+| `istem` | STRING | Evet | - | Görüntü oluşturma için istem (varsayılan: boş dize) |
 | `n` | INT | Evet | 1-6 | Oluşturulacak görüntü sayısı (varsayılan: 1, minimum: 1, maksimum: 6) |
-| `seed` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak belirsizdir (varsayılan: 0, minimum: 0, maksimum: 18446744073709551615) |
-| `recraft_style` | STYLEV3 | Hayır | - | Recraft API'si için isteğe bağlı stil parametresi |
-| `negative_prompt` | STRING | Hayır | - | Bir görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) |
+| `tohum` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohumdan bağımsız olarak belirsizdir (varsayılan: 0, minimum: 0, maksimum: 18446744073709551615) |
+| `recraft_stili` | STYLEV3 | Hayır | - | Recraft API'si için isteğe bağlı stil parametresi |
+| `negatif_istem` | STRING | Hayır | - | Bir görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) |
 
 *Not: Boyama işleminin çalışması için `image` ve `mask` birlikte sağlanmalıdır. Maske, görüntü boyutlarına uyacak şekilde otomatik olarak yeniden boyutlandırılacaktır.*
 
@@ -20,4 +20,4 @@ Bu düğüm, görüntüleri bir metin istemi ve maske temelinde değiştirir. Re
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | İstem ve maske temelinde oluşturulan değiştirilmiş görüntü(ler) |
+| `görüntü` | IMAGE | İstem ve maske temelinde oluşturulan değiştirilmiş görüntü(ler) |

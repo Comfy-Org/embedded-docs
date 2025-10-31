@@ -6,7 +6,7 @@ Video Yükle düğümü, giriş dizininden video dosyalarını yükler ve iş ak
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `file` | STRING | Evet | Birden fazla seçenek mevcut | Giriş dizininden yüklenecek video dosyası |
+| `dosya` | STRING | Evet | Birden fazla seçenek mevcut | Giriş dizininden yüklenecek video dosyası |
 
 **Not:** `file` parametresi için mevcut seçenekler, giriş dizininde bulunan video dosyalarından dinamik olarak doldurulur. Yalnızca desteklenen içerik türlerine sahip video dosyaları görüntülenir.
 

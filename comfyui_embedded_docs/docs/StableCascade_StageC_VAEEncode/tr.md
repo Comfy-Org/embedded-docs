@@ -6,13 +6,13 @@ StableCascade_StageC_VAEEncode düğümü, görüntüleri bir VAE kodlayıcı ar
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Gizli uzaya kodlanacak girdi görüntüsü |
+| `görüntü` | IMAGE | Evet | - | Gizli uzaya kodlanacak girdi görüntüsü |
 | `vae` | VAE | Evet | - | Görüntüyü kodlamak için kullanılan VAE modeli |
-| `compression` | INT | Hayır | 4-128 | Görüntü kodlanmadan önce uygulanan sıkıştırma faktörü (varsayılan: 42) |
+| `sıkıştırma` | INT | Hayır | 4-128 | Görüntü kodlanmadan önce uygulanan sıkıştırma faktörü (varsayılan: 42) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `stage_c` | LATENT | Stable Cascade modelinin C aşaması için kodlanmış gizli temsil |
+| `aşama_b` | LATENT | Stable Cascade modelinin C aşaması için kodlanmış gizli temsil |
 | `stage_b` | LATENT | B aşaması için bir yer tutucu gizli temsil (şu anda sıfır değerler döndürür) |

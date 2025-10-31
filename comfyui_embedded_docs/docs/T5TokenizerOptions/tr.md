@@ -7,8 +7,8 @@ T5TokenizerOptions düğümü, çeşitli T5 model türleri için tokenizer ayarl
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `clip` | CLIP | Evet | - | Tokenizer seçeneklerini yapılandırmak için kullanılacak CLIP modeli |
-| `min_padding` | INT | Hayır | 0-10000 | Tüm T5 model türleri için ayarlanacak minimum dolgu değeri (varsayılan: 0) |
-| `min_length` | INT | Hayır | 0-10000 | Tüm T5 model türleri için ayarlanacak minimum uzunluk değeri (varsayılan: 0) |
+| `min_dolgu` | INT | Hayır | 0-10000 | Tüm T5 model türleri için ayarlanacak minimum dolgu değeri (varsayılan: 0) |
+| `min_uzunluk` | INT | Hayır | 0-10000 | Tüm T5 model türleri için ayarlanacak minimum uzunluk değeri (varsayılan: 0) |
 
 ## Çıkışlar
 

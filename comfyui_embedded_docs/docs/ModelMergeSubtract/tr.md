@@ -8,7 +8,7 @@ Bu düğüm, gelişmiş model birleştirme işlemleri için tasarlanmıştır ve
 |---------------|-----------|-------------|
 | `model1`      | `MODEL`   | Parametrelerin çıkarılacağı temel model. |
 | `model2`      | `MODEL`   | Temel modelden çıkarılacak parametrelere sahip model. |
-| `multiplier`  | `FLOAT`   | Temel modelin parametreleri üzerindeki çıkarma etkisini ölçeklendiren kayan noktalı değer. |
+| `çarpan`  | `FLOAT`   | Temel modelin parametreleri üzerindeki çıkarma etkisini ölçeklendiren kayan noktalı değer. |
 
 ## Çıktılar
 

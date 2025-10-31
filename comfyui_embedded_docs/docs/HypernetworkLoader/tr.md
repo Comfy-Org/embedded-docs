@@ -9,8 +9,8 @@ HypernetworkLoader düğümü, bir hiper ağ uygulayarak belirli bir modelin yet
 | Alan                 | Comfy Veri Türü   | Açıklama                                                                                  |
 |-----------------------|-------------------|----------------------------------------------------------------------------------------------|
 | `model`               | `MODEL`           | Hiper ağın uygulanacağı, geliştirilecek veya değiştirilecek mimariyi belirleyen temel model. |
-| `hypernetwork_name`  | `COMBO[STRING]`   | Modele yüklenecek ve uygulanacak, modelin değiştirilmiş davranışını veya performansını etkileyen hiper ağın adı. |
-| `strength`            | `FLOAT`           | Hiper ağın model üzerindeki etkisinin yoğunluğunu ayarlayan, değişikliklerin ince ayarına olanak tanıyan bir skaler değer. |
+| `hiperağ_adı`  | `COMBO[STRING]`   | Modele yüklenecek ve uygulanacak, modelin değiştirilmiş davranışını veya performansını etkileyen hiper ağın adı. |
+| `güç`            | `FLOAT`           | Hiper ağın model üzerindeki etkisinin yoğunluğunu ayarlayan, değişikliklerin ince ayarına olanak tanıyan bir skaler değer. |
 
 ## Çıktılar
 

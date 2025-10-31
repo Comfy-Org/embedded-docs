@@ -6,12 +6,12 @@ ImageRGBToYUV düğümü, RGB renkli görüntüleri YUV renk uzayına dönüşt�
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | YUV renk uzayına dönüştürülecek girdi RGB görüntüsü |
+| `görüntü` | IMAGE | Evet | - | YUV renk uzayına dönüştürülecek girdi RGB görüntüsü |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `Y` | IMAGE | YUV renk uzayının parlaklık bileşeni |
-| `U` | IMAGE | YUV renk uzayının mavi çıkıntı bileşeni |
+| `U` | IMAGE | YUV renk uzayının parlaklık bileşeni |
+| `V` | IMAGE | YUV renk uzayının mavi çıkıntı bileşeni |
 | `V` | IMAGE | YUV renk uzayının kırmızı çıkıntı bileşeni |

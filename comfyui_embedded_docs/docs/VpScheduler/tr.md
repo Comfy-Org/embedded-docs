@@ -6,7 +6,7 @@ VPScheduler düğümü, Varyans Koruma (VP) planlama yöntemine dayalı olarak b
 
 | Parametre   | Veri Türü | Açıklama                                                                                                                                      |
 |-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `steps`     | INT         | Difüzyon işlemindeki adım sayısını belirtir ve oluşturulan gürültü seviyelerinin detay düzeyini etkiler.                              |
+| `adımlar`     | INT         | Difüzyon işlemindeki adım sayısını belirtir ve oluşturulan gürültü seviyelerinin detay düzeyini etkiler.                              |
 | `beta_d`    | FLOAT       | Genel gürültü seviyesi dağılımını belirler ve oluşturulan gürültü seviyelerinin varyansını etkiler.                                 |
 | `beta_min`  | FLOAT       | Gürültü seviyesi için minimum sınırı ayarlar ve gürültünün belirli bir eşiğin altına düşmemesini sağlar.                              |
 | `eps_s`     | FLOAT       | Başlangıç epsilon değerini ayarlayarak difüzyon işlemindeki başlangıç gürültü seviyesini ince ayarlar.                                    |

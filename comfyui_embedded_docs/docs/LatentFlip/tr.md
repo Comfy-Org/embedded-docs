@@ -6,8 +6,8 @@ LatentFlip düğümü, gizli temsilleri dikey veya yatay olarak çevirmek için 
 
 | Parametre     | Veri Tipi    | Açıklama |
 |---------------|--------------|-------------|
-| `samples`     | `LATENT`     | 'samples' parametresi, çevrilecek gizli temsilleri temsil eder. Çevirme işlemi, bu temsilleri 'flip_method' parametresine bağlı olarak dikey veya yatay olarak değiştirir ve böylece gizli uzaydaki veriyi dönüştürür. |
-| `flip_method` | COMBO[STRING] | 'flip_method' parametresi, gizli örneklerin hangi eksen boyunca çevrileceğini belirtir. Bu, 'x-axis: vertically' (dikey) veya 'y-axis: horizontally' (yatay) olabilir ve çevirme yönünü, dolayısıyla gizli temsillere uygulanan dönüşümün doğasını belirler. |
+| `örnekler`     | `LATENT`     | 'samples' parametresi, çevrilecek gizli temsilleri temsil eder. Çevirme işlemi, bu temsilleri 'flip_method' parametresine bağlı olarak dikey veya yatay olarak değiştirir ve böylece gizli uzaydaki veriyi dönüştürür. |
+| `çevirme_yöntemi` | COMBO[STRING] | 'flip_method' parametresi, gizli örneklerin hangi eksen boyunca çevrileceğini belirtir. Bu, 'x-axis: vertically' (dikey) veya 'y-axis: horizontally' (yatay) olabilir ve çevirme yönünü, dolayısıyla gizli temsillere uygulanan dönüşümün doğasını belirler. |
 
 ## Çıktılar
 

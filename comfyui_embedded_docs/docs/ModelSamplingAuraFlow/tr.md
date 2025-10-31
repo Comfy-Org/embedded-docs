@@ -7,7 +7,7 @@ ModelSamplingAuraFlow düğümü, difüzyon modellerine özel olarak AuraFlow mo
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | AuraFlow örnekleme yapılandırmasının uygulanacağı difüzyon modeli |
-| `shift` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme dağılımına uygulanacak kaydırma değeri (varsayılan: 1.73) |
+| `kaydırma` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme dağılımına uygulanacak kaydırma değeri (varsayılan: 1.73) |
 
 ## Çıktılar
 

@@ -6,12 +6,12 @@
 
 | Alan          | Veri Türü | Açıklama                                                                           |
 |----------------|-------------|---------------------------------------------------------------------------------------|
-| `image`        | `IMAGE`     | İçinden bir bölümün çıkarılacağı resim grubu. Bu parametre, kaynak grubu belirtmek için çok önemlidir. |
-| `batch_index`  | `INT`       | Çıkarma işleminin başlayacağı, grup içindeki başlangıç indeksi. Çıkarılacak bölümün gruptaki başlangıç konumunu belirler. |
-| `length`       | `INT`       | `batch_index`'ten başlayarak gruptan çıkarılacak resim sayısı. Bu parametre, çıkarılacak bölümün boyutunu tanımlar. |
+| `görüntü`        | `IMAGE`     | İçinden bir bölümün çıkarılacağı resim grubu. Bu parametre, kaynak grubu belirtmek için çok önemlidir. |
+| `toplu_indeks`  | `INT`       | Çıkarma işleminin başlayacağı, grup içindeki başlangıç indeksi. Çıkarılacak bölümün gruptaki başlangıç konumunu belirler. |
+| `uzunluk`       | `INT`       | `toplu_indeks`'ten başlayarak gruptan çıkarılacak resim sayısı. Bu parametre, çıkarılacak bölümün boyutunu tanımlar. |
 
 ## Çıktılar
 
 | Alan | Veri Türü | Açıklama                                                                                   |
 |-------|-------------|-----------------------------------------------------------------------------------------------|
-| `image` | `IMAGE`    | Belirtilen gruptan çıkarılan resim bölümü. Bu çıktı, orijinal grubun `batch_index` ve `length` parametreleri tarafından belirlenen bir alt kümesini temsil eder. |
+| `görüntü` | `IMAGE`    | Belirtilen gruptan çıkarılan resim bölümü. Bu çıktı, orijinal grubun `toplu_indeks` ve `uzunluk` parametreleri tarafından belirlenen bir alt kümesini temsil eder. |

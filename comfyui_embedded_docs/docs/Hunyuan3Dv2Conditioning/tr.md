@@ -6,11 +6,11 @@ Hunyuan3Dv2Conditioning düğümü, video modelleri için koşullandırma verisi
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Evet | - | Görsel yerleştirmeler içeren bir CLIP görüntü modeli çıktısı |
+| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Evet | - | Görsel yerleştirmeler içeren bir CLIP görüntü modeli çıktısı |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | CLIP görüntü yerleştirmelerini içeren pozitif koşullandırma verisi |
+| `negatif` | CONDITIONING | CLIP görüntü yerleştirmelerini içeren pozitif koşullandırma verisi |
 | `negative` | CONDITIONING | Pozitif yerleştirmelerin şekliyle eşleşen sıfır değerli yerleştirmeler içeren negatif koşullandırma verisi |

@@ -6,10 +6,10 @@ Bir görüntü, metin açıklaması ve isteğe bağlı parametreler kullanarak M
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Video oluşturmanın ilk karesi olarak kullanılacak görüntü |
-| `prompt_text` | STRING | Evet | - | Video oluşturmayı yönlendiren metin açıklaması (varsayılan: boş dize) |
+| `görüntü` | IMAGE | Evet | - | Video oluşturmanın ilk karesi olarak kullanılacak görüntü |
+| `istem_metni` | STRING | Evet | - | Video oluşturmayı yönlendiren metin açıklaması (varsayılan: boş dize) |
 | `model` | COMBO | Evet | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" | Video oluşturma için kullanılacak model (varsayılan: "I2V-01") |
-| `seed` | INT | Hayır | 0 ila 18446744073709551615 | Gürültü oluşturmak için kullanılan rastgele tohum değeri (varsayılan: 0) |
+| `tohum` | INT | Hayır | 0 ila 18446744073709551615 | Gürültü oluşturmak için kullanılan rastgele tohum değeri (varsayılan: 0) |
 
 ## Çıkışlar
 

@@ -7,8 +7,8 @@ ModelSamplingContinuousV düğümü, bir modelin örnekleme davranışını sür
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Sürekli V-tahmini örnekleme ile değiştirilecek girdi modeli |
-| `sampling` | STRING | Evet | "v_prediction" | Uygulanacak örnekleme yöntemi (şu anda yalnızca V-tahmini desteklenmektedir) |
-| `sigma_max` | FLOAT | Evet | 0.0 - 1000.0 | Örnekleme için maksimum sigma değeri (varsayılan: 500.0) |
+| `örnekleme` | STRING | Evet | "v_prediction" | Uygulanacak örnekleme yöntemi (şu anda yalnızca V-tahmini desteklenmektedir) |
+| `sigma_maks` | FLOAT | Evet | 0.0 - 1000.0 | Örnekleme için maksimum sigma değeri (varsayılan: 500.0) |
 | `sigma_min` | FLOAT | Evet | 0.0 - 1000.0 | Örnekleme için minimum sigma değeri (varsayılan: 0.03) |
 
 ## Çıktılar

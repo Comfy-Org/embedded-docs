@@ -6,12 +6,12 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | Değiştirilecek giriş maskesi. Bu parametre, düğümün işlemi için merkezi bir öneme sahiptir ve maskenin genişletilmesi veya daraltılması için temel oluşturur. |
-| `expand`  | INT         | Maske değişikliğinin büyüklüğünü ve yönünü belirler. Pozitif değerler maskenin genişlemesine, negatif değerler ise daralmasına neden olur. Bu parametre, maskenin nihai boyutunu doğrudan etkiler. |
-| `tapered_corners` | BOOLEAN    | True olarak ayarlandığında, maske değiştirilirken köşelere kademeli bir efekt uygulayan bir boolean bayrağı. Bu seçenek, daha yumuşak geçişler ve görsel olarak daha hoş sonuçlar sağlar. |
+| `maske`    | MASK        | Değiştirilecek giriş maskesi. Bu parametre, düğümün işlemi için merkezi bir öneme sahiptir ve maskenin genişletilmesi veya daraltılması için temel oluşturur. |
+| `genişlet`  | INT         | Maske değişikliğinin büyüklüğünü ve yönünü belirler. Pozitif değerler maskenin genişlemesine, negatif değerler ise daralmasına neden olur. Bu parametre, maskenin nihai boyutunu doğrudan etkiler. |
+| `sivri_köşeler` | BOOLEAN    | True olarak ayarlandığında, maske değiştirilirken köşelere kademeli bir efekt uygulayan bir boolean bayrağı. Bu seçenek, daha yumuşak geçişler ve görsel olarak daha hoş sonuçlar sağlar. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | Belirtilen genişletme/daraltma ve isteğe bağlı kademeli köşe efektinin uygulanmasından sonra değiştirilmiş maske. |
+| `maske`    | MASK        | Belirtilen genişletme/daraltma ve isteğe bağlı kademeli köşe efektinin uygulanmasından sonra değiştirilmiş maske. |

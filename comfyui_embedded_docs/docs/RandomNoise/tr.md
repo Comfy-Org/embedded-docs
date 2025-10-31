@@ -6,7 +6,7 @@ RandomNoise düğümü, bir seed değerine dayalı olarak rastgele gürültü de
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `noise_seed` | INT | Evet | 0 ile 18446744073709551615 | Rastgele gürültü desenini oluşturmak için kullanılan seed değeri (varsayılan: 0). Aynı seed değeri her zaman aynı gürültü çıktısını üretecektir. |
+| `gürültü_tohumu` | INT | Evet | 0 ile 18446744073709551615 | Rastgele gürültü desenini oluşturmak için kullanılan seed değeri (varsayılan: 0). Aynı seed değeri her zaman aynı gürültü çıktısını üretecektir. |
 
 ## Çıktılar
 

@@ -6,15 +6,15 @@ ControlNetInpaintingAliMamaApply düğümü, pozitif ve negatif koşullandırmay
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma |
-| `negative` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma |
-| `control_net` | CONTROL_NET | Evet | - | Üretim üzerinde ek kontrol sağlayan ControlNet modeli |
+| `pozitif` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma |
+| `negatif` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma |
+| `kontrol_ağı` | CONTROL_NET | Evet | - | Üretim üzerinde ek kontrol sağlayan ControlNet modeli |
 | `vae` | VAE | Evet | - | Görüntüleri kodlamak ve kodunu çözmek için kullanılan VAE (Varyasyonel Otokodlayıcı) |
-| `image` | IMAGE | Evet | - | ControlNet için kontrol kılavuzu olarak hizmet veren girdi görüntüsü |
-| `mask` | MASK | Evet | - | Görüntünün hangi alanlarının boyanması gerektiğini tanımlayan maske |
-| `strength` | FLOAT | Evet | 0.0 - 10.0 | ControlNet etkisinin gücü (varsayılan: 1.0) |
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | ControlNet etkisinin üretim sırasında başladığı başlangıç noktası (yüzde olarak) (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Evet | 0.0 - 1.0 | ControlNet etkisinin üretim sırasında durduğu bitiş noktası (yüzde olarak) (varsayılan: 1.0) |
+| `görüntü` | IMAGE | Evet | - | ControlNet için kontrol kılavuzu olarak hizmet veren girdi görüntüsü |
+| `maske` | MASK | Evet | - | Görüntünün hangi alanlarının boyanması gerektiğini tanımlayan maske |
+| `güç` | FLOAT | Evet | 0.0 - 10.0 | ControlNet etkisinin gücü (varsayılan: 1.0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | ControlNet etkisinin üretim sırasında başladığı başlangıç noktası (yüzde olarak) (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | ControlNet etkisinin üretim sırasında durduğu bitiş noktası (yüzde olarak) (varsayılan: 1.0) |
 
 **Not:** ControlNet'te `concat_mask` etkinleştirildiğinde, maske ters çevrilir ve işlemeden önce görüntüye uygulanır ve maske, ControlNet'e gönderilen ek birleştirme verilerine dahil edilir.
 
@@ -22,5 +22,5 @@ ControlNetInpaintingAliMamaApply düğümü, pozitif ve negatif koşullandırmay
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Boyama için ControlNet uygulanmış değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Boyama için ControlNet uygulanmış değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | Boyama için ControlNet uygulanmış değiştirilmiş pozitif koşullandırma |
+| `negatif` | CONDITIONING | Boyama için ControlNet uygulanmış değiştirilmiş negatif koşullandırma |
