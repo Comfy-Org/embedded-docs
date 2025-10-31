@@ -1,0 +1,18 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicGuider/zh-TW.md)
+
+{heading_overview}
+
+BasicGuider 節點為取樣過程建立一個簡單的引導機制。它接收模型和條件資料作為輸入，並產生一個引導器物件，可在取樣過程中用於引導生成過程。此節點提供了受控生成所需的基本引導功能。
+
+{heading_inputs}
+
+| 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 描述 |
+|-----------|-----------|------------|---------|-------|-------------|
+| `model` | MODEL | 必填 | - | - | 用於引導的模型 |
+| `條件設定` | CONDITIONING | 必填 | - | - | 引導生成過程的條件資料 |
+
+{heading_outputs}
+
+| 輸出名稱 | 資料類型 | 描述 |
+|-------------|-----------|-------------|
+| `GUIDER` | GUIDER | 可在取樣過程中用於引導生成的引導器物件 |

@@ -1,0 +1,22 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentage/zh-TW.md)
+
+{heading_overview}
+
+ConditioningSetAreaPercentage 節點專門用於根據百分比值調整條件化元素的影響區域。它允許以總圖像尺寸的百分比來指定區域的尺寸和位置，同時提供強度參數來調節條件化效果的強度。
+
+{heading_inputs}
+
+| 參數名稱 | 資料類型 | 描述 |
+|-----------|-------------|-------------|
+| `CONDITIONING` | CONDITIONING | 代表要修改的條件化元素，作為應用區域和強度調整的基礎。 |
+| `width`   | `FLOAT`     | 以總圖像寬度的百分比指定區域的寬度，影響條件化在水平方向上對圖像的作用範圍。 |
+| `height`  | `FLOAT`     | 以總圖像高度的百分比確定區域的高度，影響條件化在垂直方向上的作用範圍。 |
+| `x`       | `FLOAT`     | 以總圖像寬度的百分比表示區域的水平起始點，用於定位條件化效果。 |
+| `y`       | `FLOAT`     | 以總圖像高度的百分比指定區域的垂直起始點，用於定位條件化效果。 |
+| `strength`| `FLOAT`     | 控制指定區域內條件化效果的強度，允許對其影響進行微調。 |
+
+{heading_outputs}
+
+| 參數名稱 | 資料類型 | 描述 |
+|-----------|-------------|-------------|
+| `CONDITIONING` | CONDITIONING | 返回經過修改的條件化元素，其中包含更新後的區域和強度參數，準備進行進一步處理或應用。 |

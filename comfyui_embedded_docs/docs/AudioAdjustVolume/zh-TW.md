@@ -1,0 +1,18 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioAdjustVolume/zh-TW.md)
+
+{heading_overview}
+
+AudioAdjustVolume 節點透過以分貝為單位進行音量調整來修改音訊的響度。它接收音訊輸入並根據指定的音量水平應用增益因子，正值增加音量，負值則降低音量。該節點返回與原始音訊相同採樣率的處理後音訊。
+
+{heading_inputs}
+
+| 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 描述 |
+|-----------|-----------|------------|---------|-------|-------------|
+| `audio` | AUDIO | 必填 | - | - | 要處理的音訊輸入 |
+| `volume` | INT | 必填 | 1.0 | -100 到 100 | 以分貝 (dB) 為單位的音量調整。0 = 無變化，+6 = 兩倍，-6 = 一半，依此類推 |
+
+{heading_outputs}
+
+| 輸出名稱 | 資料類型 | 描述 |
+|-------------|-----------|-------------|
+| `audio` | AUDIO | 經過音量調整處理後的音訊 |
