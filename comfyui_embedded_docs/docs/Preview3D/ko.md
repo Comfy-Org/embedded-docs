@@ -55,7 +55,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 ### 1. 뷰 조작
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   사용 중인 브라우저는 동영상 재생을 지원하지 않습니다.
 </video>
 
@@ -68,7 +68,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 ### 2. 왼쪽 메뉴 기능
 
-![Menu](../Load3D/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 미리보기 영역에서는 일부 뷰 조작 관련 메뉴가 메뉴 버튼에 숨겨져 있습니다. 메뉴 버튼을 클릭하면 다양한 메뉴가 펼쳐집니다.
 
@@ -80,7 +80,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 #### 장면(Scene)
 
-![scene menu](../Load3D/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 장면 메뉴는 장면의 기본 설정 기능을 제공합니다
 
@@ -91,7 +91,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 #### 모델(Model)
 
-![Menu_Scene](../Load3D/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 모델 메뉴는 모델 관련 기능을 제공합니다
 
@@ -100,7 +100,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 #### 카메라(Camera)
 
-![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 이 메뉴는 직교 뷰와 원근 뷰 전환, 시야각(FOV) 설정을 제공합니다
 
@@ -109,13 +109,13 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 
 #### 빛(Light)
 
-![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 이 메뉴에서 전체 조명 강도를 빠르게 조절할 수 있습니다
 
 #### 내보내기(Export)
 
-![menu_export](../Load3D/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 이 메뉴는 모델을 다른 포맷(GLB, OBJ, STL)으로 변환 및 내보내기 기능을 제공합니다
 

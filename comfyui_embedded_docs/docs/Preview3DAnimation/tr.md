@@ -38,7 +38,7 @@ Tuval alanı çeşitli görünüm işlemlerini içerir, örneğin:
 ### 1. Görünüm İşlemleri
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   Tarayıcınız video oynatmayı desteklemiyor.
 </video>
 
@@ -51,7 +51,7 @@ Görünüm kontrol işlemleri:
 
 ### 2. Sol Menü İşlevleri
 
-![Menu](../Load3D/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 Önizleme alanında, bazı görünüm işlem menüleri menü içinde gizlidir. Menü düğmesine tıklayarak farklı menüleri genişletebilirsiniz.
 
@@ -63,7 +63,7 @@ Görünüm kontrol işlemleri:
 
 #### Sahne
 
-![scene menu](../Load3D/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 Sahne menüsü bazı temel sahne ayar işlevleri sağlar:
 
@@ -74,7 +74,7 @@ Sahne menüsü bazı temel sahne ayar işlevleri sağlar:
 
 #### Model
 
-![Menu_Scene](../Load3D/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 Model menüsü bazı modelle ilgili işlevler sağlar:
 
@@ -83,7 +83,7 @@ Model menüsü bazı modelle ilgili işlevler sağlar:
 
 #### Kamera
 
-![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 Bu menü, ortografik ve perspektif görünümler arasında geçiş yapma ve perspektif açısı boyutu ayarları sağlar:
 
@@ -92,12 +92,12 @@ Bu menü, ortografik ve perspektif görünümler arasında geçiş yapma ve pers
 
 #### Işık
 
-![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 Bu menü aracılığıyla, sahnenin genel aydınlatma yoğunluğunu hızlıca ayarlayabilirsiniz
 
 #### Dışa Aktar
 
-![menu_export](../Load3D/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Bu menü, model formatlarını hızlıca dönüştürme ve dışa aktarma yeteneği sağlar

@@ -122,7 +122,7 @@ Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어
 ### 3. 오른쪽 메뉴 기능
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   사용 중인 브라우저는 동영상 재생을 지원하지 않습니다.
 </video>
 

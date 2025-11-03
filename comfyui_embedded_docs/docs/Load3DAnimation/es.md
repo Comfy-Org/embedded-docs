@@ -58,7 +58,7 @@ El área Canvas del nodo Load3D contiene numerosas operaciones de vista, incluye
 ### 1. Operaciones de vista
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   Tu navegador no soporta la reproducción de video.
 </video>
 
@@ -71,7 +71,7 @@ Operaciones de control de vista:
 
 ### 2. Funciones del menú izquierdo
 
-![Menu](../Load3D/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 En el área de previsualización, algunos menús relacionados con operaciones de vista están ocultos en el menú. Haz clic en el botón de menú para expandir los diferentes menús
 
@@ -83,7 +83,7 @@ En el área de previsualización, algunos menús relacionados con operaciones de
 
 #### Escena (Scene)
 
-![scene menu](../Load3D/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 El menú Escena proporciona algunas funciones básicas de configuración de la escena
 
@@ -94,7 +94,7 @@ El menú Escena proporciona algunas funciones básicas de configuración de la e
 
 #### Modelo (Model)
 
-![Menu_Scene](../Load3D/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 El menú Modelo proporciona algunas funciones relacionadas con el modelo
 
@@ -103,7 +103,7 @@ El menú Modelo proporciona algunas funciones relacionadas con el modelo
 
 #### Cámara (Camera)
 
-![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el ángulo de perspectiva
 
@@ -112,13 +112,13 @@ Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el
 
 #### Luz (Light)
 
-![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 A través de este menú puedes ajustar rápidamente la intensidad de la iluminación global de la escena
 
 #### Exportar (Export)
 
-![menu_export](../Load3D/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Este menú permite convertir y exportar rápidamente formatos de modelo
 
