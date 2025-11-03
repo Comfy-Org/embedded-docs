@@ -7,7 +7,7 @@ SaveAudioOpus 節點將音訊資料儲存為 Opus 格式檔案。它接收音訊
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
 |-----------|-----------|----------|-------|-------------|
 | `audio` | AUDIO | 是 | - | 要儲存為 Opus 檔案的音訊資料 |
-| `filename_prefix` | STRING | 否 | - | 輸出檔名的前綴（預設值："audio/ComfyUI"） |
+| `filename_prefix` | STRING | 否 | - | 輸出檔案名稱的前綴（預設值："audio/ComfyUI"） |
 | `quality` | COMBO | 否 | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | Opus 檔案的音訊品質設定（預設值："128k"） |
 
 ## 輸出結果

@@ -1,13 +1,13 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmos7B/zh-TW.md)
 
-ModelMergeCosmos7B 節點使用特定元件的加權混合方式將兩個 AI 模型合併在一起。它透過調整位置嵌入、轉換器區塊和最終層的個別權重，讓您能精細控制模型不同部分的合併方式。
+ModelMergeCosmos7B 節點使用特定元件的加權混合方式將兩個 AI 模型合併在一起。它透過調整位置嵌入、轉換器區塊和最終層的個別權重，提供對模型不同部分合併方式的細粒度控制。
 
 ## 輸入參數
 
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `模型 1` | MODEL | 是 | - | 要合併的第一個模型 |
-| `模型 2` | MODEL | 是 | - | 要合併的第二個模型 |
+| `model1` | MODEL | 是 | - | 要合併的第一個模型 |
+| `model2` | MODEL | 是 | - | 要合併的第二個模型 |
 | `pos_embedder.` | FLOAT | 是 | 0.0 - 1.0 | 位置嵌入器元件的權重（預設值：1.0） |
 | `extra_pos_embedder.` | FLOAT | 是 | 0.0 - 1.0 | 額外位置嵌入器元件的權重（預設值：1.0） |
 | `x_embedder.` | FLOAT | 是 | 0.0 - 1.0 | x 嵌入器元件的權重（預設值：1.0） |

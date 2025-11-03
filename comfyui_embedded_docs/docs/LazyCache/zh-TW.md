@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LazyCache/zh-TW.md)
 
-LazyCache 是 EasyCache 的自製版本，提供了更簡易的實作方式。它能與 ComfyUI 中的任何模型搭配使用，並加入快取功能以減少取樣過程中的計算量。雖然其表現通常不如 EasyCache，但在某些罕見情況下可能更為有效，且具備通用相容性。
+LazyCache 是 EasyCache 的自製版本，提供了更簡易的實作方式。它能與 ComfyUI 中的任何模型協同工作，並加入快取功能以減少取樣過程中的計算量。雖然其表現通常不如 EasyCache，但在某些罕見情況下可能更為有效，並具備通用相容性。
 
 ## 輸入參數
 

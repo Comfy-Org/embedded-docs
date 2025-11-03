@@ -8,7 +8,7 @@ StableCascade_SuperResolutionControlnet 節點為 Stable Cascade 超解析度處
 
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `影像` | IMAGE | 是 | - | 要用於超解析度處理的輸入圖像 |
+| `image` | IMAGE | 是 | - | 要用於超解析度處理的輸入圖像 |
 | `vae` | VAE | 是 | - | 用於編碼輸入圖像的 VAE 模型 |
 
 {heading_outputs}

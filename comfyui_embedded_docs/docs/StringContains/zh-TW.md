@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringContains/zh-TW.md)
 
-StringContains 節點用於檢查給定字串是否包含指定的子字串。它可以執行區分大小寫或不區分大小寫的匹配檢查，並返回一個布林值結果，指示是否在主字串中找到該子字串。
+此節點檢查給定字串是否包含指定的子字串。它可以執行區分大小寫或不區分大小寫的比對檢查，並返回一個布林值結果，指示是否在主字串中找到子字串。
 
 ## 輸入參數
 

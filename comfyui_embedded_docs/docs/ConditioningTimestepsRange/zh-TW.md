@@ -6,13 +6,13 @@ ConditioningTimestepsRange 節點會建立三個不同的時間步長範圍，�
 
 | 參數名稱 | 資料類型 | 是否必填 | 數值範圍 | 參數說明 |
 |-----------|-----------|----------|-------|-------------|
-| `start_percent` | FLOAT | 是 | 0.0 - 1.0 | 時間步長範圍的起始百分比（預設值：0.0） |
-| `end_percent` | FLOAT | 是 | 0.0 - 1.0 | 時間步長範圍的結束百分比（預設值：1.0） |
+| `起始百分比` | FLOAT | 是 | 0.0 - 1.0 | 時間步長範圍的起始百分比（預設值：0.0） |
+| `結束百分比` | FLOAT | 是 | 0.0 - 1.0 | 時間步長範圍的結束百分比（預設值：1.0） |
 
 ## 輸出參數
 
 | 輸出名稱 | 資料類型 | 參數說明 |
 |-------------|-----------|-------------|
-| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | 由 `start_percent` 和 `end_percent` 定義的主要時間步長範圍 |
-| `BEFORE_RANGE` | TIMESTEPS_RANGE | 從 0.0 到 `start_percent` 的時間步長範圍 |
-| `AFTER_RANGE` | TIMESTEPS_RANGE | 從 `end_percent` 到 1.0 的時間步長範圍 |
+| `範圍之前` | TIMESTEPS_RANGE | 由 `起始百分比` 和 `結束百分比` 定義的主要時間步長範圍 |
+| `範圍之後` | TIMESTEPS_RANGE | 從 0.0 到 `起始百分比` 的時間步長範圍 |
+| `AFTER_RANGE` | TIMESTEPS_RANGE | 從 `結束百分比` 到 1.0 的時間步長範圍 |

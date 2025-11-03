@@ -10,7 +10,7 @@ SamplingPercentToSigma 節點使用模型的採樣參數將採樣百分比值轉
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | 是 | - | 包含用於轉換的採樣參數的模型 |
 | `sampling_percent` | FLOAT | 是 | 0.0 至 1.0 | 要轉換為 sigma 的採樣百分比（預設值：0.0） |
-| `return_actual_sigma` | BOOLEAN | 是 | - | 返回實際的 sigma 值而非用於區間檢查的值。這僅影響 0.0 和 1.0 處的結果。（預設值：False） |
+| `return_actual_sigma` | BOOLEAN | 是 | - | 返回實際 sigma 值而非用於區間檢查的值。這僅影響 0.0 和 1.0 處的結果。（預設值：False） |
 
 {heading_outputs}
 

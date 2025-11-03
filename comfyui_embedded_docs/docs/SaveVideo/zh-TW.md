@@ -1,17 +1,19 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveVideo/zh-TW.md)
 
-SaveVideo 節點將輸入的影片內容儲存到您的 ComfyUI 輸出目錄中。它允許您指定儲存檔案的檔案名稱前綴、影片格式和編解碼器。該節點會自動處理帶有計數器遞增的檔案命名，並可以在儲存的影片中包含工作流程元資料。
+{heading_overview}
 
-## 輸入參數
+SaveVideo 節點將輸入的影片內容儲存到您的 ComfyUI 輸出目錄中。它允許您指定儲存檔案的檔案名稱前綴、影片格式和編解碼器。該節點會自動處理帶有計數器遞增的檔案命名，並可在儲存的影片中包含工作流程元數據。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+{heading_inputs}
+
+| 參數名稱 | 資料類型 | 必填 | 範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | 是 | - | 要儲存的影片。 |
-| `檔名前綴` | STRING | 否 | - | 儲存檔案的檔案名稱前綴。這可以包含格式化資訊，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%` 以包含來自節點的值（預設值："video/ComfyUI"）。 |
-| `格式` | COMBO | 否 | 提供多個選項 | 儲存影片的格式（預設值："auto"）。 |
-| `編碼器` | COMBO | 否 | 提供多個選項 | 用於影片的編解碼器（預設值："auto"）。 |
+| `filename_prefix` | STRING | 否 | - | 儲存檔案的檔案名稱前綴。可以包含格式化資訊，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%` 以包含來自節點的值（預設值："video/ComfyUI"）。 |
+| `format` | COMBO | 否 | 多個選項可用 | 儲存影片的格式（預設值："auto"）。 |
+| `codec` | COMBO | 否 | 多個選項可用 | 用於影片的編解碼器（預設值："auto"）。 |
 
-## 輸出結果
+{heading_outputs}
 
 | 輸出名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|

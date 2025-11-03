@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Detail/zh-TW.md)
 
-Rodin 3D Detail 節點使用 Rodin API 生成詳細的 3D 資產。它接收輸入圖像並通過 Rodin 服務進行處理，以創建具有精細幾何結構和材質的高品質 3D 模型。該節點處理從任務創建到最終 3D 模型文件下載的整個工作流程。
+Rodin 3D Detail 節點使用 Rodin API 生成詳細的 3D 資產。它接收輸入圖像並透過 Rodin 服務進行處理，以創建具有精細幾何結構和材質的高品質 3D 模型。該節點處理從任務創建到最終 3D 模型檔案下載的完整工作流程。
 
 ## 輸入參數
 
@@ -15,4 +15,4 @@ Rodin 3D Detail 節點使用 Rodin API 生成詳細的 3D 資產。它接收輸�
 
 | 輸出名稱 | 資料類型 | 輸出說明 |
 |-------------|-----------|-------------|
-| `3D Model Path` | STRING | 生成的 3D 模型文件路徑 |
+| `3D Model Path` | STRING | 生成的 3D 模型檔案路徑 |

@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLoraModelOnly/zh-TW.md)
 
-此節點建立一個僅應用於模型組件的 LoRA（低秩適應）掛鉤，讓您能夠修改模型行為而不影響 CLIP 組件。它會載入一個 LoRA 檔案並以指定的強度應用於模型，同時保持 CLIP 組件不變。此節點可與先前的掛鉤鏈結，以建立複雜的修改管線。
+此節點建立一個僅應用於模型組件的 LoRA（低秩適應）掛鉤，讓您能夠修改模型行為而不影響 CLIP 組件。它會載入 LoRA 檔案並以指定的強度應用於模型，同時保持 CLIP 組件不變。此節點可與先前的掛鉤鏈結，以建立複雜的修改管線。
 
 ## 輸入參數
 

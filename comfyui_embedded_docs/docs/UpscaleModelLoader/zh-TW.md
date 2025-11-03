@@ -2,7 +2,7 @@
 
 {heading_overview}
 
-此節點會偵測位於 `ComfyUI/models/upscale_models` 資料夾中的模型，同時也會從 extra_model_paths.yaml 檔案中設定的其他路徑讀取模型。有時您可能需要**重新整理 ComfyUI 介面**，讓它能夠從相應的資料夾讀取模型檔案。
+此節點會偵測位於 `ComfyUI/models/upscale_models` 資料夾中的模型，同時也會從 extra_model_paths.yaml 檔案中設定的其他路徑讀取模型。有時您可能需要**重新整理 ComfyUI 介面**，以便讓它從相應的資料夾讀取模型檔案。
 
 UpscaleModelLoader 節點專為從指定目錄載入超解析度模型而設計。它協助擷取和準備用於影像超解析度任務的模型，確保模型正確載入並配置以進行評估。
 
@@ -16,4 +16,4 @@ UpscaleModelLoader 節點專為從指定目錄載入超解析度模型而設計�
 
 | 欄位            | Comfy 資料類型       | 描述                                                              |
 |-----------------|---------------------|-------------------------------------------------------------------|
-| `upscale_model` | `UPSCALE_MODEL`     | 返回已載入並準備就緒的超解析度模型，可用於影像超解析度任務。 |
+| `upscale_model` | `UPSCALE_MODEL`     | 傳回已載入並準備就緒的超解析度模型，可用於影像超解析度任務。 |

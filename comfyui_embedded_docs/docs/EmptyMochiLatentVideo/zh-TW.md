@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyMochiLatentVideo/zh-TW.md)
 
-EmptyMochiLatentVideo 節點會建立具有指定尺寸的空潛在影片張量。它會生成一個填滿零的潛在表示，可作為影片生成工作流程的起點。該節點允許您定義潛在影片張量的寬度、高度、長度和批次大小。
+EmptyMochiLatentVideo 節點會建立具有指定尺寸的空潛在影片張量。它會生成一個填滿零的潛在表示，可作為影片生成工作流程的起點。此節點允許您定義潛在影片張量的寬度、高度、長度和批次大小。
 
 ## 輸入參數
 
@@ -11,7 +11,7 @@ EmptyMochiLatentVideo 節點會建立具有指定尺寸的空潛在影片張量�
 | `長度` | INT | 是 | 7 至 MAX_RESOLUTION | 潛在影片的幀數（預設值：25） |
 | `批次大小` | INT | 否 | 1 至 4096 | 批次中要生成的潛在影片數量（預設值：1） |
 
-**注意：** 實際的潛在維度計算方式為寬度/8 和高度/8，時間維度計算方式為 ((長度 - 1) // 6) + 1。
+**注意：** 實際潛在維度的計算方式為寬度/8 和高度/8，時間維度的計算方式為 ((length - 1) // 6) + 1。
 
 ## 輸出結果
 

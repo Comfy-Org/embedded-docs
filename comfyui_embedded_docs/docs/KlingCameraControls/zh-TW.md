@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControls/zh-TW.md)
 
-Kling Camera Controls 節點允許您配置各種攝影機移動和旋轉參數，用於在影片生成中創建運動控制效果。它提供對攝影機定位、旋轉和縮放的控制，以模擬不同的攝影機運動。
+Kling Camera Controls 節點允許您配置各種攝影機移動和旋轉參數，用於在影片生成中創建運動控制效果。它提供攝影機定位、旋轉和縮放的控制，以模擬不同的攝影機運動。
 
 ## 輸入參數
 
@@ -14,7 +14,7 @@ Kling Camera Controls 節點允許您配置各種攝影機移動和旋轉參數�
 | `roll` | FLOAT | 否 | -10.0 至 10.0 | 控制攝影機的滾動量（z軸）。負值表示逆時針，正值表示順時針（預設值：0.0） |
 | `zoom` | FLOAT | 否 | -10.0 至 10.0 | 控制攝影機焦距的變化。負值表示較窄的視野，正值表示較寬的視野（預設值：0.0） |
 
-**注意：** 至少有一個攝影機控制參數（`horizontal_movement`、`vertical_movement`、`pan`、`tilt`、`roll` 或 `zoom`）必須具有非零值，配置才有效。
+**注意：** 至少有一個攝影機控制參數（`horizontal_movement`、`vertical_movement`、`pan`、`tilt`、`roll` 或 `zoom`）必須具有非零值，配置才會有效。
 
 ## 輸出結果
 

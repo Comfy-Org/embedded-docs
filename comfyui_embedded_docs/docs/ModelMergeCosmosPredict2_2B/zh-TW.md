@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/zh-TW.md)
 
-ModelMergeCosmosPredict2_2B 節點使用基於區塊的方法合併兩個擴散模型，並對不同模型組件提供細粒度控制。它允許您透過調整位置嵌入器、時間嵌入器、轉換器區塊和最終層的插值權重，來混合兩個模型的特定部分。這提供了對每個模型中不同架構組件如何影響最終合併結果的精確控制。
+ModelMergeCosmosPredict2_2B 節點使用基於區塊的方法合併兩個擴散模型，並對不同模型組件提供細粒度控制。它允許您透過調整位置嵌入器、時間嵌入器、轉換器區塊和最終層的插值權重，來混合兩個模型的特定部分。這提供了對每個模型中不同架構組件如何貢獻於最終合併結果的精確控制。
 
 ## 輸入參數
 

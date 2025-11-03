@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageYUVToRGB/zh-TW.md)
 
-ImageYUVToRGB 節點可將 YUV 色彩空間的影像轉換為 RGB 色彩空間。它接收分別代表 Y（亮度）、U（藍色投影）和 V（紅色投影）通道的三個輸入影像，並透過色彩空間轉換將它們合併為單一的 RGB 影像。
+ImageYUVToRGB 節點將 YUV 色彩空間的影像轉換為 RGB 色彩空間。它接收三個分別代表 Y（亮度）、U（藍色投影）和 V（紅色投影）通道的輸入影像，並透過色彩空間轉換將它們組合成單一的 RGB 影像。
 
 ## 輸入參數
 
@@ -10,7 +10,7 @@ ImageYUVToRGB 節點可將 YUV 色彩空間的影像轉換為 RGB 色彩空間�
 | `U` | IMAGE | 是 | - | U（藍色投影）通道的輸入影像 |
 | `V` | IMAGE | 是 | - | V（紅色投影）通道的輸入影像 |
 
-**注意：** 所有三個輸入影像（Y、U 和 V）必須同時提供，且應具有相容的尺寸以確保正確轉換。
+**注意：** 所有三個輸入影像（Y、U 和 V）必須同時提供，並且應具有相容的尺寸以確保正確轉換。
 
 ## 輸出結果
 

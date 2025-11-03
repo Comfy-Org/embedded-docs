@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerAncestral/zh-TW.md)
 
-SamplerEulerAncestral 節點建立了一個用於生成影像的 Euler Ancestral 取樣器。此取樣器採用特定的數學方法，結合了歐拉積分與祖先取樣技術來產生影像變化。該節點允許您透過調整控制生成過程中隨機性和步長大小的參數來配置取樣行為。
+SamplerEulerAncestral 節點用於建立 Euler Ancestral 取樣器以生成圖像。此取樣器採用特定的數學方法，結合了歐拉積分與祖先取樣技術來產生圖像變體。該節點允許您透過調整控制生成過程中隨機性和步長大小的參數來配置取樣行為。
 
 ## 輸入參數
 

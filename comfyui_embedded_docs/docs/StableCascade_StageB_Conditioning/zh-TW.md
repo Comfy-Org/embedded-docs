@@ -6,7 +6,7 @@ StableCascade_StageB_Conditioning 節點透過將現有的調節資訊與來自 
 
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `條件設定` | CONDITIONING | 是 | - | 將使用 Stage C 先驗資訊進行修改的調節資料 |
+| `conditioning` | CONDITIONING | 是 | - | 將使用 Stage C 先驗資訊進行修改的調節資料 |
 | `stage_c` | LATENT | 是 | - | 來自 Stage C 的潛在表示，包含用於調節的先驗樣本 |
 
 ## 輸出結果

@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffusersLoader/zh-TW.md)
 
-DiffusersLoader 節點從 diffusers 格式載入預訓練模型。它會搜尋包含 model_index.json 檔案的有效 diffusers 模型目錄，並將其載入為 MODEL、CLIP 和 VAE 元件，以供在流程中使用。此節點屬於已棄用的載入器類別，並提供與 Hugging Face diffusers 模型的相容性。
+DiffusersLoader 節點從 diffusers 格式載入預訓練模型。它會搜尋包含 model_index.json 檔案的有效 diffusers 模型目錄，並將其載入為 MODEL、CLIP 和 VAE 元件，以便在流程中使用。此節點屬於已棄用的載入器類別，並提供與 Hugging Face diffusers 模型的相容性。
 
 ## 輸入參數
 
@@ -10,7 +10,7 @@ DiffusersLoader 節點從 diffusers 格式載入預訓練模型。它會搜尋�
 
 ## 輸出參數
 
-| 輸出名稱 | 資料類型 | 參數說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `MODEL` | MODEL | 從 diffusers 格式載入的模型元件 |
 | `CLIP` | CLIP | 從 diffusers 格式載入的 CLIP 模型元件 |

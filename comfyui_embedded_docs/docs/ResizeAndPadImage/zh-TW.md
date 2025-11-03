@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeAndPadImage/zh-TW.md)
 
-ResizeAndPadImage 節點會將圖片調整大小以符合指定尺寸，同時保持其原始長寬比。它會按比例縮小圖片以符合目標寬度和高度，然後在邊緣添加填充以填補任何剩餘空間。填充顏色和插值方法可以自定義，以控制填充區域的外觀和調整大小的品質。
+ResizeAndPadImage 節點會將圖片調整大小以符合指定尺寸，同時保持其原始長寬比。它會按比例縮小圖片以符合目標寬度和高度，然後在邊緣周圍添加填充以填補任何剩餘空間。填充顏色和插值方法可以自定義，以控制填充區域的外觀和調整大小的品質。
 
 ## 輸入參數
 

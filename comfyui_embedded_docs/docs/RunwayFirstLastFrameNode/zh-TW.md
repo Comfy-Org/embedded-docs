@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayFirstLastFrameNode/zh-TW.md)
 
-Runway First-Last-Frame to Video 節點透過上傳首尾關鍵影格及文字提示來生成影片。它使用 Runway 的 Gen-3 模型在提供的起始影格和結束影格之間建立平滑過渡。這在結束影格與起始影格差異較大的複雜過渡場景中特別有用。
+Runway First-Last-Frame to Video 節點透過上傳首尾關鍵影格及文字提示來生成影片。它使用 Runway 的 Gen-3 模型在提供的起始影格和結束影格之間建立平滑過渡。這在結束影格與起始影格差異顯著的複雜過渡場景中特別有用。
 
 ## 輸入參數
 

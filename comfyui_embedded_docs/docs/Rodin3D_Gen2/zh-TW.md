@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen2/zh-TW.md)
 
-Rodin3D_Gen2 節點使用 Rodin API 來生成 3D 資產。它接收輸入圖像並將其轉換為具有各種材質類型和多邊形數量的 3D 模型。此節點會自動處理整個生成過程，包括任務創建、狀態輪詢和檔案下載。
+Rodin3D_Gen2 節點使用 Rodin API 來生成 3D 資產。它接收輸入圖像並將其轉換為具有各種材質類型和多邊形數量的 3D 模型。此節點會自動處理整個生成過程，包括任務建立、狀態輪詢和檔案下載。
 
 ## 輸入參數
 

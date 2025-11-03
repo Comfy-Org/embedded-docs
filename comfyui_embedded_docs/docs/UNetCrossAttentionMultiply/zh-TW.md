@@ -16,4 +16,4 @@ UNetCrossAttentionMultiply 節點對 UNet 模型中的交叉注意力機制應�
 
 | 輸出名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 帶有縮放後交叉注意力組件的修改版 UNet 模型 |
+| `model` | MODEL | 具有縮放後交叉注意力組件的修改後 UNet 模型 |

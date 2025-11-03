@@ -7,8 +7,8 @@ SetClipHooks 節點允許您對 CLIP 模型應用自定義掛鉤，從而實現�
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
 |-----------|-----------|----------|-------|-------------|
 | `clip` | CLIP | 是 | - | 要應用掛鉤的 CLIP 模型 |
-| `套用至條件` | BOOLEAN | 是 | - | 是否將掛鉤應用於條件輸出（預設值：True） |
-| `排程 clip` | BOOLEAN | 是 | - | 是否啟用 CLIP 排程功能（預設值：False） |
+| `apply_to_conds` | BOOLEAN | 是 | - | 是否對條件輸出應用掛鉤（預設值：True） |
+| `schedule_clip` | BOOLEAN | 是 | - | 是否啟用 CLIP 排程功能（預設值：False） |
 | `hooks` | HOOKS | 否 | - | 可選的掛鉤群組，將應用於 CLIP 模型 |
 
 ## 輸出結果

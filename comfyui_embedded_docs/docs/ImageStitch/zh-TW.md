@@ -7,8 +7,8 @@
 | 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 描述 |
 |---------------|-----------|-------------|---------|--------|-------------|
 | `image1` | IMAGE | 必填 | - | - | 要拼接的第一張圖片 |
-| `image2` | IMAGE | 選填 | None | - | 要拼接的第二張圖片，如未提供則僅返回第一張圖片 |
-| `direction` | STRING | 必填 | right | right/down/left/up | 拼接第二張圖片的方向：右側、下方、左側或上方 |
+| `image2` | IMAGE | 選填 | 無 | - | 要拼接的第二張圖片，如未提供則僅返回第一張圖片 |
+| `direction` | STRING | 必填 | right | right/down/left/up | 拼接第二張圖片的方向：右、下、左或上 |
 | `match_image_size` | BOOLEAN | 必填 | True | True/False | 是否調整第二張圖片尺寸以匹配第一張圖片的尺寸 |
 | `spacing_width` | INT | 必填 | 0 | 0-1024 | 圖片間距的寬度，必須為偶數 |
 | `spacing_color` | STRING | 必填 | white | white/black/red/green/blue | 拼接圖片間距的顏色 |
@@ -29,7 +29,7 @@
 - image2: 400x250  
 - image3: 300x300
 
-![工作流程](./asset/workflow.webp)
+![workflow](./asset/workflow.webp)
 
 **第一個圖片拼接節點**
 
@@ -40,7 +40,7 @@
 
 輸出圖片 1：
 
-![輸出1](./asset/output-1.webp)
+![output1](./asset/output-1.webp)
 
 **第二個圖片拼接節點**
 
@@ -51,4 +51,4 @@
 
 輸出圖片 2：
 
-![輸出2](./asset/output-2.webp)
+![output2](./asset/output-2.webp)

@@ -10,7 +10,7 @@ CLIPTextEncodeSD3 節點透過使用不同的 CLIP 模型編碼多個文字提�
 | `clip_l` | STRING | 多行文字，動態提示 | - | - | 用於本地 CLIP 模型的文字輸入 |
 | `clip_g` | STRING | 多行文字，動態提示 | - | - | 用於全域 CLIP 模型的文字輸入 |
 | `t5xxl` | STRING | 多行文字，動態提示 | - | - | 用於 T5-XXL 模型的文字輸入 |
-| `empty_padding` | COMBO | 選擇 | - | ["none", "empty_prompt"] | 控制如何處理空白文字輸入 |
+| `空白填充` | COMBO | 選擇 | - | ["none", "empty_prompt"] | 控制如何處理空白文字輸入 |
 
 **參數限制：**
 

@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMPP_2M_SDE/zh-TW.md)
 
-SamplerDPMPP_2M_SDE 節點用於為擴散模型創建 DPM++ 2M SDE 取樣器。此取樣器使用帶有隨機微分方程的二階微分方程求解器來生成樣本。它提供不同的求解器類型和噪聲處理選項來控制取樣過程。
+SamplerDPMPP_2M_SDE 節點為擴散模型創建一個 DPM++ 2M SDE 取樣器。此取樣器使用帶有隨機微分方程的二階微分方程求解器來生成樣本。它提供不同的求解器類型和噪聲處理選項來控制取樣過程。
 
 ## 輸入參數
 

@@ -1,16 +1,16 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/tr.md)
 
-**{heading_overview}**
+**## Genel Bakış**
 
 Get Video Components düğümü, bir video dosyasından tüm ana bileşenleri çıkarır. Videoyu tek tek karelere ayırır, ses parçasını çıkarır ve video kare hızı bilgisini sağlar. Bu, her bir bileşen üzerinde bağımsız olarak çalışarak ileri işleme veya analiz yapmanıza olanak tanır.
 
-## {heading_inputs}
+## ## Girdiler
 
 | Parametre | Veri Tipi | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | Bileşenlerin çıkarılacağı video. |
 
-## {heading_outputs}
+## ## Çıktılar
 
 | Çıktı Adı | Veri Tipi | Açıklama |
 |-------------|-----------|-------------|

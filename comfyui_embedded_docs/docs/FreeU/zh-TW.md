@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU/zh-TW.md)
 
-FreeU 節點透過對模型的輸出區塊進行頻域修改來提升影像生成品質。它透過縮放不同的通道群組並對特定特徵圖應用傅立葉濾波來實現，讓使用者在生成過程中能夠對模型行為進行細緻調控。
+FreeU 節點對模型的輸出區塊進行頻域修改，以提升影像生成品質。它透過對不同通道群組進行縮放，並對特定特徵圖應用傅立葉濾波，從而在生成過程中實現對模型行為的細微控制。
 
 ## 輸入參數
 

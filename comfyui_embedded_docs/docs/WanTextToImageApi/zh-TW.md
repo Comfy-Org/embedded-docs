@@ -13,7 +13,7 @@ Wan Text to Image 節點根據文字描述生成圖像。它使用 AI 模型從�
 | `height` | INT | 否 | 768-1440 | 圖像高度（像素）（預設：1024，步長：32） |
 | `seed` | INT | 否 | 0-2147483647 | 用於生成的種子值（預設：0） |
 | `prompt_extend` | BOOLEAN | 否 | - | 是否使用 AI 輔助增強提示（預設：True） |
-| `watermark` | BOOLEAN | 否 | - | 是否在結果中添加"AI 生成"浮水印（預設：True） |
+| `watermark` | BOOLEAN | 否 | - | 是否在結果中添加「AI 生成」浮水印（預設：True） |
 
 ## 輸出結果
 

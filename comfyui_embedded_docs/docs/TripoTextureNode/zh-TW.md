@@ -13,7 +13,7 @@ TripoTextureNode 使用 Tripo API 生成帶有紋理的 3D 模型。它接收一
 | `texture_quality` | COMBO | 否 | "standard"<br>"detailed" | 紋理生成的品質等級（預設值："standard"） |
 | `texture_alignment` | COMBO | 否 | "original_image"<br>"geometry" | 紋理對齊的方法（預設值："original_image"） |
 
-*注意：此節點需要驗證令牌和 API 金鑰，這些已由系統自動處理。*
+*注意：此節點需要驗證令牌和 API 金鑰，這些由系統自動處理。*
 
 ## 輸出結果
 

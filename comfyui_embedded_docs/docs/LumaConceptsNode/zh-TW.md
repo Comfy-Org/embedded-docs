@@ -10,9 +10,9 @@
 | `concept2` | STRING | 是 | 提供多個選項<br>包含「None」選項 | 從可用的 Luma 概念中選擇第二個攝影機概念 |
 | `concept3` | STRING | 是 | 提供多個選項<br>包含「None」選項 | 從可用的 Luma 概念中選擇第三個攝影機概念 |
 | `concept4` | STRING | 是 | 提供多個選項<br>包含「None」選項 | 從可用的 Luma 概念中選擇第四個攝影機概念 |
-| `luma_concepts` | LUMA_CONCEPTS | 否 | 不適用 | 可選的攝影機概念，用於與此處選擇的概念合併 |
+| `luma_concepts` | LUMA_CONCEPTS | 否 | 不適用 | 可選的攝影機概念，將與此處選擇的概念合併 |
 
-**注意：** 如果您不想使用全部四個概念插槽，所有概念參數（`concept1` 至 `concept4`）都可以設為「None」。此節點會將任何提供的 `luma_concepts` 與所選概念合併，以建立組合的概念鏈。
+**注意：** 如果您不想使用全部四個概念插槽，所有概念參數（`concept1` 至 `concept4`）都可以設為「None」。此節點會將任何提供的 `luma_concepts` 與選定的概念合併，以建立一個組合的概念鏈。
 
 ## 輸出結果
 

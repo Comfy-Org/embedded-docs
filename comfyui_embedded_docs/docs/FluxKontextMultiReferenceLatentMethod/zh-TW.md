@@ -4,13 +4,13 @@ FluxKontextMultiReferenceLatentMethod 節點透過設定特定的參考潛在空
 
 ## 輸入參數
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 是 | - | 要使用參考潛在空間方法修改的條件化資料 |
-| `reference_latents_method` | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"` | 用於參考潛在空間處理的方法。如果選擇 "uxo" 或 "uso"，將被轉換為 "uxo" |
+| `conditioning` | CONDITIONING | 是 | - | 將要使用參考潛在空間方法修改的條件化資料 |
+| `reference_latents_method` | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"` | 用於參考潛在空間處理的方法。如果選擇 "uxo" 或 "uso"，將會被轉換為 "uxo" |
 
 ## 輸出結果
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `conditioning` | CONDITIONING | 已應用參考潛在空間方法的修改後條件化資料 |

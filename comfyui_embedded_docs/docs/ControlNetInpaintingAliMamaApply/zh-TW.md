@@ -6,15 +6,15 @@ ControlNetInpaintingAliMamaApply 節點透過結合正負向條件與控制圖�
 
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 是 | - | 引導生成朝向期望內容的正向條件 |
-| `negative` | CONDITIONING | 是 | - | 引導生成遠離非期望內容的負向條件 |
+| `正向` | CONDITIONING | 是 | - | 引導生成朝向期望內容的正向條件 |
+| `負向` | CONDITIONING | 是 | - | 引導生成遠離非期望內容的負向條件 |
 | `control_net` | CONTROL_NET | 是 | - | 提供生成過程額外控制的 ControlNet 模型 |
 | `vae` | VAE | 是 | - | 用於圖像編碼與解碼的變分自編碼器 |
-| `image` | IMAGE | 是 | - | 作為 ControlNet 控制引導的輸入圖像 |
-| `mask` | MASK | 是 | - | 定義圖像中哪些區域需要進行修補的遮罩 |
-| `strength` | FLOAT | 是 | 0.0 至 10.0 | ControlNet 效果的強度（預設值：1.0） |
-| `start_percent` | FLOAT | 是 | 0.0 至 1.0 | ControlNet 影響在生成過程中開始的起始點百分比（預設值：0.0） |
-| `end_percent` | FLOAT | 是 | 0.0 至 1.0 | ControlNet 影響在生成過程中結束的終點百分比（預設值：1.0） |
+| `影像` | IMAGE | 是 | - | 作為 ControlNet 控制引導的輸入圖像 |
+| `遮罩` | MASK | 是 | - | 定義圖像中哪些區域需要進行修補的遮罩 |
+| `強度` | FLOAT | 是 | 0.0 至 10.0 | ControlNet 效果的強度（預設值：1.0） |
+| `起始百分比` | FLOAT | 是 | 0.0 至 1.0 | ControlNet 影響在生成過程中開始的起始點百分比（預設值：0.0） |
+| `結束百分比` | FLOAT | 是 | 0.0 至 1.0 | ControlNet 影響在生成過程中結束的終點百分比（預設值：1.0） |
 
 **注意事項：** 當 ControlNet 啟用 `concat_mask` 功能時，遮罩會經過反轉處理並應用至圖像後再進行處理，同時遮罩會包含在傳送給 ControlNet 的額外串接資料中。
 
@@ -22,5 +22,5 @@ ControlNetInpaintingAliMamaApply 節點透過結合正負向條件與控制圖�
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 應用於修補任務並帶有 ControlNet 的修改後正向條件 |
-| `negative` | CONDITIONING | 應用於修補任務並帶有 ControlNet 的修改後負向條件 |
+| `負向` | CONDITIONING | 應用於修補任務並帶有 ControlNet 的修改後正向條件 |
+| `負向` | CONDITIONING | 應用於修補任務並帶有 ControlNet 的修改後負向條件 |

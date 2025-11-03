@@ -1,10 +1,10 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CombineHooks/tr.md)
 
-**{heading_overview}**
+**## Genel Bakış**
 
 Combine Hooks [2] düğümü, iki kanca grubunu tek bir birleşik kanca grubunda birleştirir. İki isteğe bağlı kanca girişi alır ve bunları ComfyUI'nin kanca birleştirme işlevselliğini kullanarak birleştirir. Bu, birden fazla kanca yapılandırmasını, süreçleri daha verimli hale getirmek için birleştirmenize olanak tanır.
 
-## {heading_inputs}
+## ## Girdiler
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
@@ -13,7 +13,7 @@ Combine Hooks [2] düğümü, iki kanca grubunu tek bir birleşik kanca grubunda
 
 **Not:** Her iki giriş de isteğe bağlıdır, ancak düğümün çalışması için en az bir kanca grubu sağlanmalıdır. Eğer sadece bir kanca grubu sağlanırsa, bu grup değiştirilmeden döndürülür.
 
-## {heading_outputs}
+## ## Çıktılar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|

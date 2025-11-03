@@ -6,7 +6,7 @@
 
 | 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `style_id` | STRING | 是 | 任何有效的 UUID | Infinite Style Library 中樣式的 UUID。 |
+| `style_id` | STRING | 是 | 任何有效的 UUID | 來自 Infinite Style Library 的樣式 UUID。 |
 
 **注意：** `style_id` 輸入不能為空。如果提供空字串，節點將引發異常。
 

@@ -8,4 +8,4 @@ Quadruple CLIP Loader（QuadrupleCLIPLoader）是 ComfyUI 的核心節點之一�
 
 此節點會偵測位於 `ComfyUI/models/text_encoders` 資料夾中的模型，
 同時也會從 extra_model_paths.yaml 檔案中配置的額外路徑讀取模型。
-有時在添加模型後，您可能需要**重新載入 ComfyUI 介面**，讓它能夠讀取相應資料夾中的模型檔案。
+有時在添加模型後，您可能需要**重新載入 ComfyUI 介面**，以便讓它讀取相應資料夾中的模型檔案。

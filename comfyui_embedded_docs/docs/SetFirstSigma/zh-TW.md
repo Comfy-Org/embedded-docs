@@ -1,6 +1,6 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetFirstSigma/zh-TW.md)
 
-SetFirstSigma 節點透過將序列中的第一個 sigma 值替換為自定義值來修改 sigma 值序列。它接收現有的 sigma 序列和新的 sigma 值作為輸入，然後返回一個新的 sigma 序列，其中僅第一個元素被更改，而所有其他 sigma 值保持不變。
+SetFirstSigma 節點透過將序列中的第一個 sigma 值替換為自定義值，來修改 sigma 值序列。它接收現有的 sigma 序列和一個新的 sigma 值作為輸入，然後返回一個新的 sigma 序列，其中僅第一個元素被更改，而所有其他 sigma 值保持不變。
 
 ## 輸入參數
 
