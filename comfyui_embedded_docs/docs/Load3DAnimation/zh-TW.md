@@ -60,7 +60,7 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 ### 1. 檢視操作
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   您的瀏覽器不支援影片播放。
 </video>
 
@@ -73,7 +73,7 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 
 ### 2. 左側選單功能
 
-![選單](../Load3D/asset/menu.webp)
+![選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 在畫布中，一些設定隱藏在選單內。點擊選單按鈕可展開不同的選單
 
@@ -85,7 +85,7 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 
 #### 場景
 
-![場景選單](../Load3D/asset/menu_scene.webp)
+![場景選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 場景選單提供一些基本的場景設定功能
 
@@ -96,7 +96,7 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 
 #### 模型
 
-![模型選單](../Load3D/asset/menu_model.webp)
+![模型選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 模型選單提供一些與模型相關的功能
 
@@ -105,7 +105,7 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 
 #### 攝影機
 
-![攝影機選單](../Load3D/asset/menu_camera.webp)
+![攝影機選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 此選單提供正交檢視和透視檢視之間的切換，以及透視角度大小設定
 
@@ -114,13 +114,13 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 
 #### 光源
 
-![光源選單](../Load3D/asset/menu_light.webp)
+![光源選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 透過此選單，您可以快速調整場景的全域光照強度
 
 #### 匯出
 
-![匯出選單](../Load3D/asset/menu_export.webp)
+![匯出選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 此選單提供快速轉換和匯出模型格式的功能
 

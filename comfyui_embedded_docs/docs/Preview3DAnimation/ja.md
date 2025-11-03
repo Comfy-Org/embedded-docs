@@ -36,7 +36,7 @@ Preview3DAnimationノードは、3Dモデルの出力をプレビューするた
 ### 1. ビュー操作
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   お使いのブラウザは動画再生に対応していません。
 </video>
 
@@ -49,7 +49,7 @@ Preview3DAnimationノードは、3Dモデルの出力をプレビューするた
 
 ### 2. 左側メニュー機能
 
-![Menu](../Load3D/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 プレビューエリアでは、一部のビュー操作関連メニューがメニュー内に隠れています。メニューボタンをクリックすると各種メニューが展開されます。
 
@@ -61,7 +61,7 @@ Preview3DAnimationノードは、3Dモデルの出力をプレビューするた
 
 #### シーン（Scene）
 
-![scene menu](../Load3D/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 シーンメニューは、シーンの基本設定機能を提供します：
 
@@ -72,7 +72,7 @@ Preview3DAnimationノードは、3Dモデルの出力をプレビューするた
 
 #### モデル（Model）
 
-![Menu_Scene](../Load3D/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 モデルメニューは、モデル関連の機能を提供します：
 
@@ -81,7 +81,7 @@ Preview3DAnimationノードは、3Dモデルの出力をプレビューするた
 
 #### カメラ（Camera）
 
-![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 このメニューは、オーソグラフィックビューとパースビューの切り替え、視野角設定を提供します：
 
@@ -90,12 +90,12 @@ Preview3DAnimationノードは、3Dモデルの出力をプレビューするた
 
 #### ライト（Light）
 
-![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 このメニューでシーン全体のグローバル照明強度を調整できます
 
 #### エクスポート（Export）
 
-![menu_export](../Load3D/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 このメニューは、モデルを他の形式（GLB、OBJ、STL）に変換・エクスポートできます

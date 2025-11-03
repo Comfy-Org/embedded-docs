@@ -1,4 +1,4 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon> Scaling/ko.md)
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EpsilonScaling/ko.md)
 
 "Epsilon Scaling" 연구 논문에서 제안된 방법을 구현합니다. 이 방법은 샘플링 과정에서 예측된 노이즈를 스케일링하여 샘플 품질을 향상시킵니다. 확산 모델의 노출 편향을 완화하기 위해 균일한 스케줄을 사용합니다.
 

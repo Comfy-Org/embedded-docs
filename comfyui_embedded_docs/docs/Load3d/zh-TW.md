@@ -124,7 +124,7 @@ Load3D 節點的畫布區域包含眾多檢視操作，包括：
 ### 3. 右側選單功能
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   您的瀏覽器不支援影片播放。
 </video>
 

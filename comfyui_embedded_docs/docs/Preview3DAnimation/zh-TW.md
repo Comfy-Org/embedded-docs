@@ -38,7 +38,7 @@ Preview3DAnimation 節點主要用於預覽 3D 模型輸出。此節點接收兩
 ### 1. 視圖操作
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   您的瀏覽器不支援影片播放。
 </video>
 
@@ -51,7 +51,7 @@ Preview3DAnimation 節點主要用於預覽 3D 模型輸出。此節點接收兩
 
 ### 2. 左側選單功能
 
-![選單](../Load3D/asset/menu.webp)
+![選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 在預覽區域中，一些視圖操作選單隱藏在選單中。點擊選單按鈕可展開不同的選單。
 
@@ -63,7 +63,7 @@ Preview3DAnimation 節點主要用於預覽 3D 模型輸出。此節點接收兩
 
 #### 場景
 
-![場景選單](../Load3D/asset/menu_scene.webp)
+![場景選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 場景選單提供一些基本場景設定功能：
 
@@ -74,7 +74,7 @@ Preview3DAnimation 節點主要用於預覽 3D 模型輸出。此節點接收兩
 
 #### 模型
 
-![模型選單](../Load3D/asset/menu_model.webp)
+![模型選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 模型選單提供一些模型相關功能：
 
@@ -83,7 +83,7 @@ Preview3DAnimation 節點主要用於預覽 3D 模型輸出。此節點接收兩
 
 #### 攝影機
 
-![攝影機選單](../Load3D/asset/menu_camera.webp)
+![攝影機選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 此選單提供正交和透視視圖的切換，以及透視角度大小設定：
 
@@ -92,12 +92,12 @@ Preview3DAnimation 節點主要用於預覽 3D 模型輸出。此節點接收兩
 
 #### 光源
 
-![光源選單](../Load3D/asset/menu_light.webp)
+![光源選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 透過此選單，可以快速調整場景的全域光照強度
 
 #### 匯出
 
-![匯出選單](../Load3D/asset/menu_export.webp)
+![匯出選單](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 此選單提供快速轉換和匯出模型格式的功能

@@ -36,7 +36,7 @@ Canvas 区域包含了诸多的视图操作，包括：
 ### 1. 视图操作
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   您的浏览器不支持视频播放。
 </video>
 
@@ -49,7 +49,7 @@ Canvas 区域包含了诸多的视图操作，包括：
 
 ### 2. 左侧菜单功能
 
-![Menu](../Load3D/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 在预览区域，有些视图操作相关的菜单被隐藏在了菜单里，点击菜单按钮可以展开对应不同的菜单
 
@@ -61,7 +61,7 @@ Canvas 区域包含了诸多的视图操作，包括：
 
 #### 场景（Scene）
 
-![scene menu](../Load3D/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 场景菜单提供了对场景的一些基础设置功能
 
@@ -72,7 +72,7 @@ Canvas 区域包含了诸多的视图操作，包括：
 
 #### 模型(Model)
 
-![Menu_Scene](../Load3D/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 模型菜单提供了一些模型的相关功能
 
@@ -81,7 +81,7 @@ Canvas 区域包含了诸多的视图操作，包括：
 
 #### 摄像机（Camera）
 
-![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 该菜单提供了轴测视图和透视视图切换、透视视角大小设置
 
@@ -90,12 +90,12 @@ Canvas 区域包含了诸多的视图操作，包括：
 
 #### 灯光（Light）
 
-![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 通过该菜单可以快速调节模型场景的全局光照强度
 
 #### 导出（Export）
 
-![menu_export](../Load3D/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 该菜单提供了一个快速转换模型格式并导出的能力

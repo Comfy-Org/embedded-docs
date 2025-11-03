@@ -38,7 +38,7 @@
 ### 1. عمليات العرض
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   المتصفح الخاص بك لا يدعم تشغيل الفيديو.
 </video>
 
@@ -51,7 +51,7 @@
 
 ### 2. وظائف القائمة اليسرى
 
-![القائمة](../Load3D/asset/menu.webp)
+![القائمة](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 في منطقة المعاينة، يتم إخفاء بعض قوائم عمليات العرض في القائمة. انقر على زر القائمة لتوسيع القوائم المختلفة.
 
@@ -63,7 +63,7 @@
 
 #### المشهد
 
-![قائمة المشهد](../Load3D/asset/menu_scene.webp)
+![قائمة المشهد](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 توفر قائمة المشهد بعض وظائف إعدادات المشهد الأساسية:
 
@@ -74,7 +74,7 @@
 
 #### النموذج
 
-![قائمة النموذج](../Load3D/asset/menu_model.webp)
+![قائمة النموذج](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 توفر قائمة النموذج بعض الوظائف المتعلقة بالنموذج:
 
@@ -83,7 +83,7 @@
 
 #### الكاميرا
 
-![قائمة الكاميرا](../Load3D/asset/menu_camera.webp)
+![قائمة الكاميرا](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 توفر هذه القائمة التبديل بين وضعي العرض المتوازي والمنظوري، وإعدادات حجم زاوية المنظور:
 
@@ -92,12 +92,12 @@
 
 #### الضوء
 
-![قائمة الضوء](../Load3D/asset/menu_light.webp)
+![قائمة الضوء](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 من خلال هذه القائمة، يمكنك ضبط شدة الإضاءة العامة للمشهد بسرعة
 
 #### التصدير
 
-![قائمة التصدير](../Load3D/asset/menu_export.webp)
+![قائمة التصدير](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 توفر هذه القائمة القدرة على تحويل تنسيقات النماذج وتصديرها بسرعة

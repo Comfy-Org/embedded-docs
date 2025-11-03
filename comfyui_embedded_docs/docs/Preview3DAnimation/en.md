@@ -36,7 +36,7 @@ The Canvas area includes various view operations, such as:
 ### 1. View Operations
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   Your browser does not support video playback.
 </video>
 
@@ -49,7 +49,7 @@ View control operations:
 
 ### 2. Left Menu Functions
 
-![Menu](../Load3D/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
 In the preview area, some view operation menus are hidden in the menu. Click the menu button to expand different menus.
 
@@ -61,7 +61,7 @@ In the preview area, some view operation menus are hidden in the menu. Click the
 
 #### Scene
 
-![scene menu](../Load3D/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 The Scene menu provides some basic scene setting functions:
 
@@ -72,7 +72,7 @@ The Scene menu provides some basic scene setting functions:
 
 #### Model
 
-![Menu_Scene](../Load3D/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 The Model menu provides some model-related functions:
 
@@ -81,7 +81,7 @@ The Model menu provides some model-related functions:
 
 #### Camera
 
-![menu_modelmenu_camera](../Load3D/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
 This menu provides switching between orthographic and perspective views, and perspective angle size settings:
 
@@ -90,12 +90,12 @@ This menu provides switching between orthographic and perspective views, and per
 
 #### Light
 
-![menu_modelmenu_camera](../Load3D/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
 Through this menu, you can quickly adjust the scene's global illumination intensity
 
 #### Export
 
-![menu_export](../Load3D/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 This menu provides the ability to quickly convert and export model formats

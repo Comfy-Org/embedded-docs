@@ -124,7 +124,7 @@ Bu menü, model biçimlerini hızlıca dönüştürme ve dışa aktarma yeteneğ
 ### 3. Sağ Menü İşlevleri
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   Tarayıcınız video oynatmayı desteklemiyor.
 </video>
 

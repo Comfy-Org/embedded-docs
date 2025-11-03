@@ -121,7 +121,7 @@ Load 3D 节点的 Canvas 区域包含了诸多的视图操作，包括：
 ### 3. 右侧菜单功能
 
 <video controls width="640" height="360">
-  <source src="./asset/recording.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
   您的浏览器不支持视频播放。
 </video>
 
