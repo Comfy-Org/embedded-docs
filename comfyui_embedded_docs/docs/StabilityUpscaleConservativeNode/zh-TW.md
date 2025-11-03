@@ -1,0 +1,21 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleConservativeNode/zh-TW.md)
+
+{heading_overview}
+
+將影像以最小變更的方式放大至 4K 解析度。此節點使用 Stability AI 的保守式放大技術來提升影像解析度，同時保留原始內容並僅進行細微調整。
+
+{heading_inputs}
+
+| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | 是 | - | 要進行放大的輸入影像 |
+| `prompt` | STRING | 是 | - | 您希望在輸出影像中看到的內容。一個強而有力、描述性的提示，能明確定義元素、顏色和主題，將帶來更好的結果。（預設值：空字串） |
+| `creativity` | FLOAT | 是 | 0.2-0.5 | 控制產生不受初始影像強烈制約之額外細節的可能性。（預設值：0.35） |
+| `seed` | INT | 是 | 0-4294967294 | 用於產生雜訊的隨機種子。（預設值：0） |
+| `negative_prompt` | STRING | 否 | - | 您不希望出現在輸出影像中的關鍵字。這是一項進階功能。（預設值：空字串） |
+
+{heading_outputs}
+
+| 輸出名稱 | 資料類型 | 描述 |
+|-------------|-----------|-------------|
+| `image` | IMAGE | 放大至 4K 解析度的影像 |

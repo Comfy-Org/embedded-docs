@@ -1,0 +1,20 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PikaTextToVideoNode2_2/zh-TW.md)
+
+Pika Text2Video v2.2 節點會將文字提示發送到 Pika API 2.2 版本以生成影片。它使用 Pika 的 AI 影片生成服務，將您的文字描述轉換為影片。此節點允許您自訂影片生成過程的各個方面，包括長寬比、持續時間和解析度。
+
+## 輸入參數
+
+| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt_text` | STRING | 是 | - | 主要文字描述，說明您希望在影片中生成的內容 |
+| `negative_prompt` | STRING | 是 | - | 描述您不希望出現在生成影片中的內容的文字 |
+| `seed` | INT | 是 | - | 控制生成隨機性的數字，用於實現可重現的結果 |
+| `resolution` | STRING | 是 | - | 輸出影片的解析度設定 |
+| `duration` | INT | 是 | - | 影片的長度（以秒為單位） |
+| `aspect_ratio` | FLOAT | 否 | 0.4 - 2.5 | 長寬比（寬度 / 高度）（預設值：1.7777777777777777） |
+
+## 輸出結果
+
+| 輸出名稱 | 資料類型 | 說明 |
+|-------------|-----------|-------------|
+| `output` | VIDEO | 從 Pika API 返回的已生成影片檔案 |

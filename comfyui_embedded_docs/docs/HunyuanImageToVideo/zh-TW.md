@@ -1,0 +1,29 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/zh-TW.md)
+
+HunyuanImageToVideo 節點使用 Hunyuan 影片模型將圖像轉換為影片潛在表示。它接收條件輸入和可選的起始圖像，生成可供影片生成模型進一步處理的影片潛在內容。該節點支援不同的引導類型，用於控制起始圖像如何影響影片生成過程。
+
+## 輸入參數
+
+| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+|-----------|-----------|----------|-------|-------------|
+| `positive` | CONDITIONING | 是 | - | 用於引導影片生成的正向條件輸入 |
+| `vae` | VAE | 是 | - | 用於將圖像編碼到潛在空間的 VAE 模型 |
+| `width` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的寬度（單位：像素，預設值：848，間距：16） |
+| `height` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的高度（單位：像素，預設值：480，間距：16） |
+| `length` | INT | 是 | 1 至 MAX_RESOLUTION | 輸出影片的幀數（預設值：53，間距：4） |
+| `batch_size` | INT | 是 | 1 至 4096 | 同時生成的影片數量（預設值：1） |
+| `guidance_type` | COMBO | 是 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 將起始圖像納入影片生成的方法 |
+| `start_image` | IMAGE | 否 | - | 用於初始化影片生成的可選起始圖像 |
+
+**注意：** 當提供 `start_image` 時，節點會根據選擇的 `guidance_type` 使用不同的引導方法：
+
+- "v1 (concat)"：將圖像潛在內容與影片潛在內容串聯
+- "v2 (replace)"：用圖像潛在內容替換初始影片幀
+- "custom"：使用圖像作為參考潛在內容進行引導
+
+## 輸出結果
+
+| 輸出名稱 | 資料類型 | 輸出說明 |
+|-------------|-----------|-------------|
+| `positive` | CONDITIONING | 當提供起始圖像時，套用圖像引導後的修改正向條件 |
+| `latent` | LATENT | 準備供影片生成模型進一步處理的影片潛在表示 |
