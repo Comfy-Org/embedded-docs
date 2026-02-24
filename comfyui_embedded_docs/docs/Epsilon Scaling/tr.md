@@ -1,4 +1,4 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon> Scaling/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon%20Scaling/tr.md)
 
 Bu düğüm, "Difüzyon Modellerinde Maruz Kalma Yanlılığını Açıklama" araştırma makalesinden Epsilon Ölçeklendirme yöntemini uygular. Örnekleme sürecinde tahmin edilen gürültüyü ölçeklendirerek, oluşturulan görüntülerde kaliteyi artırmaya yardımcı olabilecek maruz kalma yanlılığını azaltmaya çalışır. Bu uygulama, makale tarafından önerilen "tekdüze programı" kullanır.
 

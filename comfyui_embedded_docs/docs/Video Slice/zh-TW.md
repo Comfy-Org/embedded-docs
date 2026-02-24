@@ -1,4 +1,4 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video%20Slice/zh-TW.md)
 
 Video Slice 節點可讓您從影片中擷取特定片段。您可以定義開始時間和持續時間來修剪影片，或直接跳過開頭的影格。若要求的持續時間超過影片剩餘長度，此節點可選擇返回可用內容或引發錯誤。
 

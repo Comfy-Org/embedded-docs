@@ -1,4 +1,4 @@
-> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/zh.md)
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video%20Slice/zh.md)
 
 Video Slice 节点允许您从视频中提取特定片段。您可以定义起始时间和持续时间来裁剪视频，或直接跳过开头的帧。如果请求的持续时间超过剩余视频长度，该节点可以返回可用部分或引发错误。
 

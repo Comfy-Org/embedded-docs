@@ -1,4 +1,4 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/es.md)
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video%20Slice/es.md)
 
 El nodo Video Slice permite extraer un segmento específico de un vídeo. Puedes definir un tiempo de inicio y una duración para recortar el vídeo, o simplemente omitir los fotogramas iniciales. Si la duración solicitada es mayor que el vídeo restante, el nodo puede devolver lo que esté disponible o generar un error.
 

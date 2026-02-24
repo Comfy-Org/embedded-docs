@@ -1,4 +1,4 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/fr.md)
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video%20Slice/fr.md)
 
 Le nœud Video Slice permet d'extraire un segment spécifique d'une vidéo. Vous pouvez définir un temps de début et une durée pour rogner la vidéo, ou simplement ignorer les images du début. Si la durée demandée est plus longue que le reste de la vidéo, le nœud peut soit renvoyer ce qui est disponible, soit générer une erreur.
 
