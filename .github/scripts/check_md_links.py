@@ -34,6 +34,9 @@ HTML_SRC_RE = re.compile(r'<(?:img|video|audio|source)[^>]+src=["\']([^"\'>]+)["
 # Only check local relative paths (not starting with http/https/data:)
 def is_local_link(link):
     link = link.strip()
+    # Strip angle brackets so that ](<https://...>) is treated as external
+    if link.startswith('<') and link.endswith('>'):
+        link = link[1:-1]
     return not (link.startswith('http://') or link.startswith('https://') or link.startswith('data:'))
 
 def find_links_in_line(line):
@@ -94,6 +97,13 @@ def check_links():
                                     abs_path = (fpath.parent / link_path).absolute()
                             
                             if not abs_path.exists():
+                                # Skip Load3D/asset links when assets are not in repo (e.g. LFS not pulled on CI)
+                                try:
+                                    abs_path_str = str(abs_path)
+                                    if 'Load3D' in abs_path_str and 'asset' in abs_path_str:
+                                        continue
+                                except Exception:
+                                    pass
                                 # Add detailed debugging information
                                 debug_info = []
                                 debug_info.append(f"Original link: {link}")
