@@ -17,14 +17,16 @@ ElevenLabs Metinden Sese düğümü, ElevenLabs API'sini kullanarak yazılı met
 
 **Modele Özgü Parametreler:**
 `model` parametresi `"eleven_multilingual_v2"` olarak ayarlandığında, aşağıdaki ek parametreler kullanılabilir hale gelir:
-*   `speed`: Konuşma hızı. 1.0 normaldir, <1.0 daha yavaş, >1.0 daha hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
-*   `similarity_boost`: Benzerlik artırımı. Daha yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
-*   `use_speaker_boost`: Orijinal konuşmacı sesine benzerliği artırır (varsayılan: False).
-*   `style`: Stil abartısı. Daha yüksek değerler stilistik ifadeyi artırır ancak kararlılığı azaltabilir (varsayılan: 0.0, aralık: 0.0 - 0.2).
+
+* `speed`: Konuşma hızı. 1.0 normaldir, <1.0 daha yavaş, >1.0 daha hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
+* `similarity_boost`: Benzerlik artırımı. Daha yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
+* `use_speaker_boost`: Orijinal konuşmacı sesine benzerliği artırır (varsayılan: False).
+* `style`: Stil abartısı. Daha yüksek değerler stilistik ifadeyi artırır ancak kararlılığı azaltabilir (varsayılan: 0.0, aralık: 0.0 - 0.2).
 
 `model` parametresi `"eleven_v3"` olarak ayarlandığında, aşağıdaki ek parametreler kullanılabilir hale gelir:
-*   `speed`: Konuşma hızı. 1.0 normaldir, <1.0 daha yavaş, >1.0 daha hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
-*   `similarity_boost`: Benzerlik artırımı. Daha yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
+
+* `speed`: Konuşma hızı. 1.0 normaldir, <1.0 daha yavaş, >1.0 daha hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
+* `similarity_boost`: Benzerlik artırımı. Daha yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
 
 ## Çıktılar
 

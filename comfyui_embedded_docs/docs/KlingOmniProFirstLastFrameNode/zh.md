@@ -15,12 +15,13 @@
 | `resolution` | COMBO | 否 | `"1080p"`<br>`"720p"` | 生成视频的输出分辨率（默认："1080p"）。 |
 
 **重要限制：**
-*   `end_frame` 输入不能与 `reference_images` 输入同时使用。
-*   如果您不提供 `end_frame` 或任何 `reference_images`，则 `duration` 只能设置为 5 或 10 秒。
-*   所有输入图像（`first_frame`、`end_frame` 以及任何 `reference_images`）的宽度和高度都必须至少为 300 像素。
-*   所有输入图像的宽高比必须在 1:2.5 到 2.5:1 之间。
-*   通过 `reference_images` 输入最多可提供 6 张图像。
-*   `prompt` 文本的长度必须在 1 到 2500 个字符之间。
+
+* `end_frame` 输入不能与 `reference_images` 输入同时使用。
+* 如果您不提供 `end_frame` 或任何 `reference_images`，则 `duration` 只能设置为 5 或 10 秒。
+* 所有输入图像（`first_frame`、`end_frame` 以及任何 `reference_images`）的宽度和高度都必须至少为 300 像素。
+* 所有输入图像的宽高比必须在 1:2.5 到 2.5:1 之间。
+* 通过 `reference_images` 输入最多可提供 6 张图像。
+* `prompt` 文本的长度必须在 1 到 2500 个字符之间。
 
 ## 输出参数
 

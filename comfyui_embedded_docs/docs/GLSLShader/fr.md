@@ -15,10 +15,11 @@ Le nœud GLSL Shader applique un code de nuanceur de fragments GLSL ES personnal
 | `ints` | INT | Non | 0 à 8 entiers | Valeurs uniformes entières pour le nuanceur. Les entiers sont disponibles sous les noms `u_int0` à `u_int7` dans le code du nuanceur. Par défaut : 0. |
 
 **Notes :**
-*   Les paramètres `width` et `height` ne sont requis et visibles que lorsque `size_mode` est défini sur `"custom"`.
-*   Au moins une image d'entrée est requise.
-*   Le code du nuanceur a toujours accès à une variable uniforme `u_resolution` (vec2) contenant les dimensions de sortie.
-*   Un maximum de 8 images d'entrée, 8 uniformes float et 8 uniformes integer peut être fourni.
+
+* Les paramètres `width` et `height` ne sont requis et visibles que lorsque `size_mode` est défini sur `"custom"`.
+* Au moins une image d'entrée est requise.
+* Le code du nuanceur a toujours accès à une variable uniforme `u_resolution` (vec2) contenant les dimensions de sortie.
+* Un maximum de 8 images d'entrée, 8 uniformes float et 8 uniformes integer peut être fourni.
 
 ## Sorties
 

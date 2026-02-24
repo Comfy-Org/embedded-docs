@@ -17,8 +17,9 @@ O GeminiImage2Node gera ou edita imagens usando o modelo Gemini da Vertex AI do 
 | `system_prompt` | STRING | Não | N/A | Instruções fundamentais que ditam o comportamento de uma IA. Padrão: Um prompt de sistema predefinido para geração de imagens. |
 
 **Restrições:**
-*   A entrada `images` suporta um máximo de 14 imagens. Se mais forem fornecidas, um erro será gerado.
-*   A entrada `files` deve ser conectada a um nó que emita o tipo de dados `GEMINI_INPUT_FILES`.
+
+* A entrada `images` suporta um máximo de 14 imagens. Se mais forem fornecidas, um erro será gerado.
+* A entrada `files` deve ser conectada a um nó que emita o tipo de dados `GEMINI_INPUT_FILES`.
 
 ## Saídas
 

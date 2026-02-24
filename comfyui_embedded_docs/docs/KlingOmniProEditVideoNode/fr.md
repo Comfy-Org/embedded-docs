@@ -14,12 +14,13 @@ Le nœud Kling Omni Edit Video (Pro) utilise un modèle d'IA pour modifier une v
 | `resolution` | COMBO | Non | `"1080p"`<br>`"720p"` | La résolution pour la vidéo de sortie (par défaut : "1080p"). |
 
 **Contraintes et limitations :**
-*   Le `prompt` doit compter entre 1 et 2500 caractères.
-*   La `video` d'entrée doit avoir une durée comprise entre 3,0 et 10,05 secondes.
-*   Les dimensions de la `video` d'entrée doivent être comprises entre 720x720 et 2160x2160 pixels.
-*   Un maximum de 4 `reference_images` peut être fourni lorsqu'une vidéo est utilisée.
-*   Chaque `reference_image` doit mesurer au moins 300x300 pixels.
-*   Chaque `reference_image` doit avoir un rapport d'aspect compris entre 1:2,5 et 2,5:1.
+
+* Le `prompt` doit compter entre 1 et 2500 caractères.
+* La `video` d'entrée doit avoir une durée comprise entre 3,0 et 10,05 secondes.
+* Les dimensions de la `video` d'entrée doivent être comprises entre 720x720 et 2160x2160 pixels.
+* Un maximum de 4 `reference_images` peut être fourni lorsqu'une vidéo est utilisée.
+* Chaque `reference_image` doit mesurer au moins 300x300 pixels.
+* Chaque `reference_image` doit avoir un rapport d'aspect compris entre 1:2,5 et 2,5:1.
 
 ## Sorties
 

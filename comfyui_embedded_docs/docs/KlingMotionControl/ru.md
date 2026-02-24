@@ -14,8 +14,9 @@
 | `mode` | COMBO | Нет | `"pro"`<br>`"std"` | Режим генерации для использования. |
 
 **Ограничения:**
-*   Длительность `reference_video` должна составлять от 3 до 30 секунд, когда `character_orientation` установлен в `"video"`.
-*   Длительность `reference_video` должна составлять от 3 до 10 секунд, когда `character_orientation` установлен в `"image"`.
+
+* Длительность `reference_video` должна составлять от 3 до 30 секунд, когда `character_orientation` установлен в `"video"`.
+* Длительность `reference_video` должна составлять от 3 до 10 секунд, когда `character_orientation` установлен в `"image"`.
 
 ## Выходы
 

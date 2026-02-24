@@ -1,4 +1,4 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/pt-BR.md)
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/pt-BR.md)
 
 O nó Video Slice permite extrair um segmento específico de um vídeo. Você pode definir um horário de início e uma duração para cortar o vídeo, ou simplesmente pular os quadros iniciais. Se a duração solicitada for maior que o restante do vídeo, o nó pode retornar o que estiver disponível ou gerar um erro.
 

@@ -15,16 +15,18 @@
 | `start_frame` | IMAGE | 否 | - | 可選的起始圖片。當連接此輸入時，節點會從文字轉影片模式切換到圖片轉影片模式，對提供的圖片進行動畫處理。 |
 
 **`multi_shot` 模式下的輸入：**
-*   當 `multi_shot` 設為 **"disabled"** 時，會出現以下輸入：
-    *   `prompt` (STRING): 影片的主要文字描述。必填。長度必須在 1 到 2500 個字元之間。
-    *   `negative_prompt` (STRING): 描述影片中不應出現內容的文字。可選。
-    *   `duration` (INT): 影片的長度（秒）。必須在 3 到 15 秒之間。預設為 `5`。
-*   當 `multi_shot` 設為故事板選項（例如 `"3 storyboards"`）時，會出現每個故事板分段的輸入（例如 `storyboard_1_prompt`、`storyboard_1_duration`）。每個提示的長度必須在 1 到 512 個字元之間。**所有故事板時長的總和**必須在 3 到 15 秒之間。
+
+* 當 `multi_shot` 設為 **"disabled"** 時，會出現以下輸入：
+  * `prompt` (STRING): 影片的主要文字描述。必填。長度必須在 1 到 2500 個字元之間。
+  * `negative_prompt` (STRING): 描述影片中不應出現內容的文字。可選。
+  * `duration` (INT): 影片的長度（秒）。必須在 3 到 15 秒之間。預設為 `5`。
+* 當 `multi_shot` 設為故事板選項（例如 `"3 storyboards"`）時，會出現每個故事板分段的輸入（例如 `storyboard_1_prompt`、`storyboard_1_duration`）。每個提示的長度必須在 1 到 512 個字元之間。**所有故事板時長的總和**必須在 3 到 15 秒之間。
 
 **限制條件：**
-*   當 `start_frame` 未連接時，節點在**文字轉影片**模式下運作。在此模式下，它使用 `model.aspect_ratio` 設定。
-*   當 `start_frame` 連接時，節點在**圖片轉影片**模式下運作。`model.aspect_ratio` 設定會被忽略。輸入圖片必須至少為 300x300 像素，且長寬比在 1:2.5 到 2.5:1 之間。
-*   在故事板模式（`multi_shot` 不為 "disabled"）下，主要的 `prompt` 和 `negative_prompt` 輸入會被隱藏且不被使用。
+
+* 當 `start_frame` 未連接時，節點在**文字轉影片**模式下運作。在此模式下，它使用 `model.aspect_ratio` 設定。
+* 當 `start_frame` 連接時，節點在**圖片轉影片**模式下運作。`model.aspect_ratio` 設定會被忽略。輸入圖片必須至少為 300x300 像素，且長寬比在 1:2.5 到 2.5:1 之間。
+* 在故事板模式（`multi_shot` 不為 "disabled"）下，主要的 `prompt` 和 `negative_prompt` 輸入會被隱藏且不被使用。
 
 ## 輸出結果
 

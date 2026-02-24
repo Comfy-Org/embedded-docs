@@ -11,9 +11,10 @@ The ElevenLabs Text to Sound Effects node generates audio sound effects from a t
 | `output_format` | COMBO | Yes | `"mp3_44100_192"`<br>`"opus_48000_192"` | Audio output format. |
 
 **Parameter Details:**
-*   **`model["duration"]`**: Duration of the generated sound in seconds. Default is 5.0, with a minimum of 0.5 and a maximum of 30.0.
-*   **`model["loop"]`**: When enabled, creates a smoothly looping sound effect. Default is False.
-*   **`model["prompt_influence"]`**: Controls how closely the generation follows the text prompt. Higher values make the sound follow the text more closely. Default is 0.3, with a range from 0.0 to 1.0.
+
+* **`model["duration"]`**: Duration of the generated sound in seconds. Default is 5.0, with a minimum of 0.5 and a maximum of 30.0.
+* **`model["loop"]`**: When enabled, creates a smoothly looping sound effect. Default is False.
+* **`model["prompt_influence"]`**: Controls how closely the generation follows the text prompt. Higher values make the sound follow the text more closely. Default is 0.3, with a range from 0.0 to 1.0.
 
 ## Outputs
 

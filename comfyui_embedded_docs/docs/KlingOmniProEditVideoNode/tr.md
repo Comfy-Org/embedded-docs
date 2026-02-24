@@ -14,12 +14,13 @@ Kling Omni Edit Video (Pro) düğümü, mevcut bir videoyu metin açıklamasına
 | `resolution` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Çıktı videosu için çözünürlük (varsayılan: "1080p"). |
 
 **Kısıtlamalar ve Sınırlamalar:**
-*   `prompt` 1 ile 2500 karakter arasında olmalıdır.
-*   Giriş `video` süresi 3.0 ile 10.05 saniye arasında olmalıdır.
-*   Giriş `video` boyutları 720x720 ile 2160x2160 piksel arasında olmalıdır.
-*   Bir video kullanıldığında en fazla 4 `reference_images` sağlanabilir.
-*   Her bir `reference_image` en az 300x300 piksel olmalıdır.
-*   Her bir `reference_image` en boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
+
+* `prompt` 1 ile 2500 karakter arasında olmalıdır.
+* Giriş `video` süresi 3.0 ile 10.05 saniye arasında olmalıdır.
+* Giriş `video` boyutları 720x720 ile 2160x2160 piksel arasında olmalıdır.
+* Bir video kullanıldığında en fazla 4 `reference_images` sağlanabilir.
+* Her bir `reference_image` en az 300x300 piksel olmalıdır.
+* Her bir `reference_image` en boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
 
 ## Çıkışlar
 

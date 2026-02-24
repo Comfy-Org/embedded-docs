@@ -15,16 +15,18 @@
 | `start_frame` | IMAGE | 否 | - | 可选的起始图像。当连接此输入时，节点将从文本到视频模式切换到图像到视频模式，对提供的图像进行动画处理。 |
 
 **`multi_shot` 模式下的输入：**
-*   当 `multi_shot` 设置为 **"disabled"** 时，会出现以下输入：
-    *   `prompt` (STRING): 视频的主要文本描述。必填。长度必须在 1 到 2500 个字符之间。
-    *   `negative_prompt` (STRING): 描述视频中不应出现内容的文本。可选。
-    *   `duration` (INT): 视频时长（秒）。必须在 3 到 15 秒之间。默认值为 `5`。
-*   当 `multi_shot` 设置为故事板选项（例如 `"3 storyboards"`）时，会出现每个故事板片段的输入（例如 `storyboard_1_prompt`、`storyboard_1_duration`）。每个提示的长度必须在 1 到 512 个字符之间。**所有故事板时长的总和**必须在 3 到 15 秒之间。
+
+* 当 `multi_shot` 设置为 **"disabled"** 时，会出现以下输入：
+  * `prompt` (STRING): 视频的主要文本描述。必填。长度必须在 1 到 2500 个字符之间。
+  * `negative_prompt` (STRING): 描述视频中不应出现内容的文本。可选。
+  * `duration` (INT): 视频时长（秒）。必须在 3 到 15 秒之间。默认值为 `5`。
+* 当 `multi_shot` 设置为故事板选项（例如 `"3 storyboards"`）时，会出现每个故事板片段的输入（例如 `storyboard_1_prompt`、`storyboard_1_duration`）。每个提示的长度必须在 1 到 512 个字符之间。**所有故事板时长的总和**必须在 3 到 15 秒之间。
 
 **约束条件：**
-*   当 `start_frame` 未连接时，节点在**文本到视频**模式下运行。在此模式下，它使用 `model.aspect_ratio` 设置。
-*   当 `start_frame` 连接时，节点在**图像到视频**模式下运行。`model.aspect_ratio` 设置将被忽略。输入图像必须至少为 300x300 像素，且宽高比在 1:2.5 到 2.5:1 之间。
-*   在故事板模式下（`multi_shot` 不为 "disabled"），主 `prompt` 和 `negative_prompt` 输入将被隐藏且不被使用。
+
+* 当 `start_frame` 未连接时，节点在**文本到视频**模式下运行。在此模式下，它使用 `model.aspect_ratio` 设置。
+* 当 `start_frame` 连接时，节点在**图像到视频**模式下运行。`model.aspect_ratio` 设置将被忽略。输入图像必须至少为 300x300 像素，且宽高比在 1:2.5 到 2.5:1 之间。
+* 在故事板模式下（`multi_shot` 不为 "disabled"），主 `prompt` 和 `negative_prompt` 输入将被隐藏且不被使用。
 
 ## 输出参数
 

@@ -15,16 +15,18 @@ This node generates videos using the Kling V3 model. It supports two primary mod
 | `start_frame` | IMAGE | No | - | An optional starting image. When connected, the node switches from text-to-video to image-to-video mode, animating the provided image. |
 
 **Inputs for `multi_shot` mode:**
-*   When `multi_shot` is set to **"disabled"**, the following inputs appear:
-    *   `prompt` (STRING): The main text description for the video. Required. Must be between 1 and 2500 characters.
-    *   `negative_prompt` (STRING): Text describing what should not appear in the video. Optional.
-    *   `duration` (INT): The length of the video in seconds. Must be between 3 and 15. Default is `5`.
-*   When `multi_shot` is set to a storyboard option (e.g., `"3 storyboards"`), inputs for each storyboard segment appear (e.g., `storyboard_1_prompt`, `storyboard_1_duration`). Each prompt must be between 1 and 512 characters. The **total sum of all storyboard durations** must be between 3 and 15 seconds.
+
+* When `multi_shot` is set to **"disabled"**, the following inputs appear:
+  * `prompt` (STRING): The main text description for the video. Required. Must be between 1 and 2500 characters.
+  * `negative_prompt` (STRING): Text describing what should not appear in the video. Optional.
+  * `duration` (INT): The length of the video in seconds. Must be between 3 and 15. Default is `5`.
+* When `multi_shot` is set to a storyboard option (e.g., `"3 storyboards"`), inputs for each storyboard segment appear (e.g., `storyboard_1_prompt`, `storyboard_1_duration`). Each prompt must be between 1 and 512 characters. The **total sum of all storyboard durations** must be between 3 and 15 seconds.
 
 **Constraints:**
-*   The node operates in **text-to-video** mode when `start_frame` is not connected. It uses the `model.aspect_ratio` setting in this mode.
-*   The node operates in **image-to-video** mode when `start_frame` is connected. The `model.aspect_ratio` setting is ignored. The input image must be at least 300x300 pixels and have an aspect ratio between 1:2.5 and 2.5:1.
-*   In storyboard mode (`multi_shot` not "disabled"), the main `prompt` and `negative_prompt` inputs are hidden and not used.
+
+* The node operates in **text-to-video** mode when `start_frame` is not connected. It uses the `model.aspect_ratio` setting in this mode.
+* The node operates in **image-to-video** mode when `start_frame` is connected. The `model.aspect_ratio` setting is ignored. The input image must be at least 300x300 pixels and have an aspect ratio between 1:2.5 and 2.5:1.
+* In storyboard mode (`multi_shot` not "disabled"), the main `prompt` and `negative_prompt` inputs are hidden and not used.
 
 ## Outputs
 

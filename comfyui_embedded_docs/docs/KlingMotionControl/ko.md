@@ -14,8 +14,9 @@ Kling Motion Control 노드는 참조 비디오의 동작, 표정, 카메라 움
 | `mode` | COMBO | 아니요 | `"pro"`<br>`"std"` | 사용할 생성 모드입니다. |
 
 **제약 조건:**
-*   `character_orientation`이 `"video"`로 설정된 경우, `reference_video`의 지속 시간은 3초에서 30초 사이여야 합니다.
-*   `character_orientation`이 `"image"`로 설정된 경우, `reference_video`의 지속 시간은 3초에서 10초 사이여야 합니다.
+
+* `character_orientation`이 `"video"`로 설정된 경우, `reference_video`의 지속 시간은 3초에서 30초 사이여야 합니다.
+* `character_orientation`이 `"image"`로 설정된 경우, `reference_video`의 지속 시간은 3초에서 10초 사이여야 합니다.
 
 ## 출력
 

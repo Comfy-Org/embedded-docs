@@ -11,8 +11,9 @@ El nodo ReplaceVideoLatentFrames inserta fotogramas de un vídeo latente fuente 
 | `index` | INT | No | -MAX_RESOLUTION a MAX_RESOLUTION | El índice de fotograma latente inicial en el latente destino donde se colocarán los fotogramas del latente fuente. Los valores negativos cuentan desde el final (por defecto: 0). |
 
 **Restricciones:**
-*   El `index` debe estar dentro de los límites del número de fotogramas del latente destino. Si no lo está, se registra una advertencia y se devuelve el destino sin cambios.
-*   Los fotogramas del latente fuente deben caber dentro de los fotogramas del latente destino a partir del `index` especificado. Si no es así, se registra una advertencia y se devuelve el destino sin cambios.
+
+* El `index` debe estar dentro de los límites del número de fotogramas del latente destino. Si no lo está, se registra una advertencia y se devuelve el destino sin cambios.
+* Los fotogramas del latente fuente deben caber dentro de los fotogramas del latente destino a partir del `index` especificado. Si no es así, se registra una advertencia y se devuelve el destino sin cambios.
 
 ## Salidas
 

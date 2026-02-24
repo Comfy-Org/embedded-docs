@@ -1,4 +1,4 @@
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/ja.md)
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/ja.md)
 
 Video Sliceノードは、動画から特定のセグメントを抽出することができます。開始時間と継続時間を定義して動画をトリミングしたり、単に最初のフレームをスキップしたりできます。要求された継続時間が残りの動画よりも長い場合、ノードは利用可能な部分を返すか、エラーを発生させることができます。
 

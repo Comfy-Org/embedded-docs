@@ -17,14 +17,16 @@ El nodo ElevenLabs Text to Speech convierte texto escrito en audio hablado utili
 
 **Parámetros Específicos del Modelo:**
 Cuando el parámetro `model` se establece en `"eleven_multilingual_v2"`, los siguientes parámetros adicionales están disponibles:
-*   `speed`: Velocidad del habla. 1.0 es normal, <1.0 más lento, >1.0 más rápido (por defecto: 1.0, rango: 0.7 - 1.3).
-*   `similarity_boost`: Refuerzo de similitud. Valores más altos hacen que la voz sea más similar a la original (por defecto: 0.75, rango: 0.0 - 1.0).
-*   `use_speaker_boost`: Refuerza la similitud con la voz original del hablante (por defecto: False).
-*   `style`: Exageración del estilo. Valores más altos aumentan la expresión estilística pero pueden reducir la estabilidad (por defecto: 0.0, rango: 0.0 - 0.2).
+
+* `speed`: Velocidad del habla. 1.0 es normal, <1.0 más lento, >1.0 más rápido (por defecto: 1.0, rango: 0.7 - 1.3).
+* `similarity_boost`: Refuerzo de similitud. Valores más altos hacen que la voz sea más similar a la original (por defecto: 0.75, rango: 0.0 - 1.0).
+* `use_speaker_boost`: Refuerza la similitud con la voz original del hablante (por defecto: False).
+* `style`: Exageración del estilo. Valores más altos aumentan la expresión estilística pero pueden reducir la estabilidad (por defecto: 0.0, rango: 0.0 - 0.2).
 
 Cuando el parámetro `model` se establece en `"eleven_v3"`, los siguientes parámetros adicionales están disponibles:
-*   `speed`: Velocidad del habla. 1.0 es normal, <1.0 más lento, >1.0 más rápido (por defecto: 1.0, rango: 0.7 - 1.3).
-*   `similarity_boost`: Refuerzo de similitud. Valores más altos hacen que la voz sea más similar a la original (por defecto: 0.75, rango: 0.0 - 1.0).
+
+* `speed`: Velocidad del habla. 1.0 es normal, <1.0 más lento, >1.0 más rápido (por defecto: 1.0, rango: 0.7 - 1.3).
+* `similarity_boost`: Refuerzo de similitud. Valores más altos hacen que la voz sea más similar a la original (por defecto: 0.75, rango: 0.0 - 1.0).
 
 ## Salidas
 

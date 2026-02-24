@@ -17,8 +17,9 @@ The GeminiImage2Node generates or edits images using Google's Vertex AI Gemini m
 | `system_prompt` | STRING | No | N/A | Foundational instructions that dictate an AI's behavior. Default: A pre-defined system prompt for image generation. |
 
 **Constraints:**
-*   The `images` input supports a maximum of 14 images. If more are provided, an error will be raised.
-*   The `files` input must be connected to a node that outputs the `GEMINI_INPUT_FILES` data type.
+
+* The `images` input supports a maximum of 14 images. If more are provided, an error will be raised.
+* The `files` input must be connected to a node that outputs the `GEMINI_INPUT_FILES` data type.
 
 ## Outputs
 

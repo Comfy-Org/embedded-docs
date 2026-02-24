@@ -1,4 +1,4 @@
-> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/en.md)
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon> Scaling/en.md)
 
 This node implements the Epsilon Scaling method from the research paper "Elucidating the Exposure Bias in Diffusion Models." It works by scaling the predicted noise during the sampling process to help reduce exposure bias, which can lead to improved quality in the generated images. This implementation uses the "uniform schedule" recommended by the paper.
 

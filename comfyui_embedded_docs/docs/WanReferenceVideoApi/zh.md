@@ -17,8 +17,9 @@ Wan Reference to Video 节点利用一个或多个输入参考视频的视觉外
 | `watermark` | BOOLEAN | 否 | - | 启用后，会在最终视频上添加一个 AI 生成的水印（默认值：False）。 |
 
 **约束条件：**
-*   `reference_videos` 中提供的每个视频时长必须在 2 到 30 秒之间。
-*   `duration` 参数仅限于特定值（5 或 10 秒）。
+
+* `reference_videos` 中提供的每个视频时长必须在 2 到 30 秒之间。
+* `duration` 参数仅限于特定值（5 或 10 秒）。
 
 ## 输出参数
 

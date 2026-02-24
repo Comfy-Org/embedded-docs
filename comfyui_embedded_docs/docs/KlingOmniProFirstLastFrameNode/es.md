@@ -15,12 +15,13 @@ Este nodo utiliza el modelo Kling AI para generar un vídeo. Requiere una imagen
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | La resolución de salida para el vídeo generado (valor por defecto: "1080p"). |
 
 **Restricciones importantes:**
-*   La entrada `end_frame` no se puede utilizar al mismo tiempo que la entrada `reference_images`.
-*   Si no se proporciona un `end_frame` ni ninguna `reference_images`, la `duration` solo se puede establecer en 5 o 10 segundos.
-*   Todas las imágenes de entrada (`first_frame`, `end_frame` y cualquier `reference_images`) deben tener una dimensión mínima de 300 píxeles tanto en ancho como en alto.
-*   La relación de aspecto de todas las imágenes de entrada debe estar entre 1:2.5 y 2.5:1.
-*   Se pueden proporcionar un máximo de 6 imágenes a través de la entrada `reference_images`.
-*   El texto del `prompt` debe tener una longitud de entre 1 y 2500 caracteres.
+
+* La entrada `end_frame` no se puede utilizar al mismo tiempo que la entrada `reference_images`.
+* Si no se proporciona un `end_frame` ni ninguna `reference_images`, la `duration` solo se puede establecer en 5 o 10 segundos.
+* Todas las imágenes de entrada (`first_frame`, `end_frame` y cualquier `reference_images`) deben tener una dimensión mínima de 300 píxeles tanto en ancho como en alto.
+* La relación de aspecto de todas las imágenes de entrada debe estar entre 1:2.5 y 2.5:1.
+* Se pueden proporcionar un máximo de 6 imágenes a través de la entrada `reference_images`.
+* El texto del `prompt` debe tener una longitud de entre 1 y 2500 caracteres.
 
 ## Salidas
 

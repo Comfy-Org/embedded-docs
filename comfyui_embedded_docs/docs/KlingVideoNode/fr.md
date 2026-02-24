@@ -15,16 +15,18 @@ Ce nœud génère des vidéos en utilisant le modèle Kling V3. Il prend en char
 | `start_frame` | IMAGE | Non | - | Une image de départ optionnelle. Lorsqu'elle est connectée, le nœud passe du mode texte-à-vidéo au mode image-à-vidéo, animant l'image fournie. |
 
 **Entrées pour le mode `multi_shot` :**
-*   Lorsque `multi_shot` est défini sur **"disabled"**, les entrées suivantes apparaissent :
-    *   `prompt` (STRING) : La description textuelle principale pour la vidéo. Requise. Doit contenir entre 1 et 2500 caractères.
-    *   `negative_prompt` (STRING) : Texte décrivant ce qui ne doit pas apparaître dans la vidéo. Optionnel.
-    *   `duration` (INT) : La longueur de la vidéo en secondes. Doit être comprise entre 3 et 15. La valeur par défaut est `5`.
-*   Lorsque `multi_shot` est défini sur une option de storyboard (par ex., `"3 storyboards"`), des entrées pour chaque segment de storyboard apparaissent (par ex., `storyboard_1_prompt`, `storyboard_1_duration`). Chaque prompt doit contenir entre 1 et 512 caractères. **La somme totale de toutes les durées des storyboards** doit être comprise entre 3 et 15 secondes.
+
+* Lorsque `multi_shot` est défini sur **"disabled"**, les entrées suivantes apparaissent :
+  * `prompt` (STRING) : La description textuelle principale pour la vidéo. Requise. Doit contenir entre 1 et 2500 caractères.
+  * `negative_prompt` (STRING) : Texte décrivant ce qui ne doit pas apparaître dans la vidéo. Optionnel.
+  * `duration` (INT) : La longueur de la vidéo en secondes. Doit être comprise entre 3 et 15. La valeur par défaut est `5`.
+* Lorsque `multi_shot` est défini sur une option de storyboard (par ex., `"3 storyboards"`), des entrées pour chaque segment de storyboard apparaissent (par ex., `storyboard_1_prompt`, `storyboard_1_duration`). Chaque prompt doit contenir entre 1 et 512 caractères. **La somme totale de toutes les durées des storyboards** doit être comprise entre 3 et 15 secondes.
 
 **Contraintes :**
-*   Le nœud fonctionne en mode **texte-à-vidéo** lorsque `start_frame` n'est pas connecté. Il utilise le paramètre `model.aspect_ratio` dans ce mode.
-*   Le nœud fonctionne en mode **image-à-vidéo** lorsque `start_frame` est connecté. Le paramètre `model.aspect_ratio` est ignoré. L'image d'entrée doit mesurer au moins 300x300 pixels et avoir un format d'image compris entre 1:2.5 et 2.5:1.
-*   En mode storyboard (`multi_shot` différent de "disabled"), les entrées principales `prompt` et `negative_prompt` sont masquées et non utilisées.
+
+* Le nœud fonctionne en mode **texte-à-vidéo** lorsque `start_frame` n'est pas connecté. Il utilise le paramètre `model.aspect_ratio` dans ce mode.
+* Le nœud fonctionne en mode **image-à-vidéo** lorsque `start_frame` est connecté. Le paramètre `model.aspect_ratio` est ignoré. L'image d'entrée doit mesurer au moins 300x300 pixels et avoir un format d'image compris entre 1:2.5 et 2.5:1.
+* En mode storyboard (`multi_shot` différent de "disabled"), les entrées principales `prompt` et `negative_prompt` sont masquées et non utilisées.
 
 ## Sorties
 

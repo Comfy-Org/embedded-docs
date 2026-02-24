@@ -11,9 +11,10 @@ ElevenLabs Text to Sound Effects düğümü, bir metin açıklamasından ses efe
 | `output_format` | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
 
 **Parametre Detayları:**
-*   **`model["duration"]`**: Oluşturulan sesin saniye cinsinden süresi. Varsayılan 5.0'dır, minimum 0.5 ve maksimum 30.0'dır.
-*   **`model["loop"]`**: Etkinleştirildiğinde, sorunsuz bir şekilde döngü yapan bir ses efekti oluşturur. Varsayılan değer False'dur.
-*   **`model["prompt_influence"]`**: Oluşturmanın metin istemini ne kadar yakından takip ettiğini kontrol eder. Daha yüksek değerler, sesin metni daha yakından takip etmesini sağlar. Varsayılan 0.3'tür ve aralığı 0.0 ila 1.0'dır.
+
+* **`model["duration"]`**: Oluşturulan sesin saniye cinsinden süresi. Varsayılan 5.0'dır, minimum 0.5 ve maksimum 30.0'dır.
+* **`model["loop"]`**: Etkinleştirildiğinde, sorunsuz bir şekilde döngü yapan bir ses efekti oluşturur. Varsayılan değer False'dur.
+* **`model["prompt_influence"]`**: Oluşturmanın metin istemini ne kadar yakından takip ettiğini kontrol eder. Daha yüksek değerler, sesin metni daha yakından takip etmesini sağlar. Varsayılan 0.3'tür ve aralığı 0.0 ila 1.0'dır.
 
 ## Çıktılar
 

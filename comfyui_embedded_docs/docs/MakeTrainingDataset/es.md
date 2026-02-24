@@ -12,7 +12,8 @@ Este nodo prepara datos para entrenamiento codificando imágenes y texto. Toma u
 | `texts` | STRING | No | N/A | Lista de descripciones de texto. Puede tener longitud n (igualando imágenes), 1 (repetida para todas), u omitirse (usa cadena vacía). |
 
 **Restricciones de Parámetros:**
-*   El número de elementos en la lista `texts` debe ser 0, 1, o coincidir exactamente con el número de elementos en la lista `images`. Si es 0, se usa una cadena vacía para todas las imágenes. Si es 1, ese texto único se repite para todas las imágenes.
+
+* El número de elementos en la lista `texts` debe ser 0, 1, o coincidir exactamente con el número de elementos en la lista `images`. Si es 0, se usa una cadena vacía para todas las imágenes. Si es 1, ese texto único se repite para todas las imágenes.
 
 ## Salidas
 

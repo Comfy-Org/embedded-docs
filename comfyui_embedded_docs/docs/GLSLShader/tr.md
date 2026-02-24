@@ -15,10 +15,11 @@ GLSL Shader düğümü, özel GLSL ES fragment shader kodunu giriş görüntüle
 | `ints` | INT | Hayır | 0 - 8 tamsayı | Shader için tamsayı uniform değerler. Tamsayılar, shader kodunda `u_int0` ile `u_int7` olarak kullanılabilir. Varsayılan: 0. |
 
 **Notlar:**
-*   `width` ve `height` parametreleri yalnızca `size_mode` `"custom"` olarak ayarlandığında gerekli ve görünür olur.
-*   En az bir giriş görüntüsü gereklidir.
-*   Shader kodu her zaman çıktı boyutlarını içeren bir `u_resolution` (vec2) uniform değişkenine erişebilir.
-*   Maksimum 8 giriş görüntüsü, 8 float uniform ve 8 tamsayı uniform sağlanabilir.
+
+* `width` ve `height` parametreleri yalnızca `size_mode` `"custom"` olarak ayarlandığında gerekli ve görünür olur.
+* En az bir giriş görüntüsü gereklidir.
+* Shader kodu her zaman çıktı boyutlarını içeren bir `u_resolution` (vec2) uniform değişkenine erişebilir.
+* Maksimum 8 giriş görüntüsü, 8 float uniform ve 8 tamsayı uniform sağlanabilir.
 
 ## Çıktılar
 

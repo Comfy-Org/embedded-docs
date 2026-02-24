@@ -14,12 +14,13 @@ The Kling Omni Edit Video (Pro) node uses an AI model to edit an existing video 
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | The resolution for the output video (default: "1080p"). |
 
 **Constraints and Limitations:**
-*   The `prompt` must be between 1 and 2500 characters long.
-*   The input `video` must be between 3.0 and 10.05 seconds in duration.
-*   The input `video` dimensions must be between 720x720 and 2160x2160 pixels.
-*   A maximum of 4 `reference_images` can be provided when a video is used.
-*   Each `reference_image` must be at least 300x300 pixels.
-*   Each `reference_image` must have an aspect ratio between 1:2.5 and 2.5:1.
+
+* The `prompt` must be between 1 and 2500 characters long.
+* The input `video` must be between 3.0 and 10.05 seconds in duration.
+* The input `video` dimensions must be between 720x720 and 2160x2160 pixels.
+* A maximum of 4 `reference_images` can be provided when a video is used.
+* Each `reference_image` must be at least 300x300 pixels.
+* Each `reference_image` must have an aspect ratio between 1:2.5 and 2.5:1.
 
 ## Outputs
 

@@ -15,12 +15,13 @@
 | `resolution` | COMBO | 否 | `"1080p"`<br>`"720p"` | 生成影片的輸出解析度（預設值："1080p"）。 |
 
 **重要限制：**
-*   `end_frame` 輸入不能與 `reference_images` 輸入同時使用。
-*   如果您沒有提供 `end_frame` 或任何 `reference_images`，則 `duration` 只能設定為 5 或 10 秒。
-*   所有輸入圖片（`first_frame`、`end_frame` 以及任何 `reference_images`）的寬度和高度都必須至少為 300 像素。
-*   所有輸入圖片的長寬比必須在 1:2.5 到 2.5:1 之間。
-*   透過 `reference_images` 輸入最多可提供 6 張圖片。
-*   `prompt` 文字的長度必須在 1 到 2500 個字元之間。
+
+* `end_frame` 輸入不能與 `reference_images` 輸入同時使用。
+* 如果您沒有提供 `end_frame` 或任何 `reference_images`，則 `duration` 只能設定為 5 或 10 秒。
+* 所有輸入圖片（`first_frame`、`end_frame` 以及任何 `reference_images`）的寬度和高度都必須至少為 300 像素。
+* 所有輸入圖片的長寬比必須在 1:2.5 到 2.5:1 之間。
+* 透過 `reference_images` 輸入最多可提供 6 張圖片。
+* `prompt` 文字的長度必須在 1 到 2500 個字元之間。
 
 ## 輸出結果
 

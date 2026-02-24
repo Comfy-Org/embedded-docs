@@ -17,8 +17,9 @@ Le nœud Wan Reference to Video utilise l'apparence visuelle et la voix d'une ou
 | `watermark` | BOOLEAN | Non | - | Lorsqu'activé, un filigrane généré par IA est ajouté à la vidéo finale (par défaut : Faux). |
 
 **Contraintes :**
-*   Chaque vidéo fournie dans `reference_videos` doit avoir une durée comprise entre 2 et 30 secondes.
-*   Le paramètre `duration` est limité à des valeurs spécifiques (5 ou 10 secondes).
+
+* Chaque vidéo fournie dans `reference_videos` doit avoir une durée comprise entre 2 et 30 secondes.
+* Le paramètre `duration` est limité à des valeurs spécifiques (5 ou 10 secondes).
 
 ## Sorties
 

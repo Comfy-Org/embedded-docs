@@ -12,8 +12,9 @@
 | `generate_audio` | BOOLEAN | Non | - | Lorsqu'activé, la vidéo générée inclura un audio généré par IA correspondant à la scène (par défaut : Faux). |
 
 **Contraintes importantes :**
-*   Le `prompt` doit contenir entre 1 et 10 000 caractères.
-*   Si vous sélectionnez une `duration` supérieure à 10 secondes, vous devez également utiliser le modèle `"LTX-2 (Fast)"`, une résolution de `"1920x1080"` et un `fps` de `25`. Cette combinaison est requise pour les vidéos plus longues.
+
+* Le `prompt` doit contenir entre 1 et 10 000 caractères.
+* Si vous sélectionnez une `duration` supérieure à 10 secondes, vous devez également utiliser le modèle `"LTX-2 (Fast)"`, une résolution de `"1920x1080"` et un `fps` de `25`. Cette combinaison est requise pour les vidéos plus longues.
 
 ## Sorties
 

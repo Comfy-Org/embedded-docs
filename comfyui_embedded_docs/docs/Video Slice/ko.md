@@ -1,4 +1,4 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/ko.md)
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](<https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video> Slice/ko.md)
 
 Video Slice 노드를 사용하면 비디오에서 특정 구간을 추출할 수 있습니다. 시작 시간과 지속 시간을 정의하여 비디오를 자르거나, 단순히 시작 프레임을 건너뛸 수 있습니다. 요청한 지속 시간이 남은 비디오 길이보다 길 경우, 노드는 사용 가능한 부분을 반환하거나 오류를 발생시킬 수 있습니다.
 

@@ -14,8 +14,9 @@ The Kling Motion Control node generates a video by applying the motion, expressi
 | `mode` | COMBO | No | `"pro"`<br>`"std"` | The generation mode to use. |
 
 **Constraints:**
-*   The `reference_video` duration must be between 3 and 30 seconds when `character_orientation` is set to `"video"`.
-*   The `reference_video` duration must be between 3 and 10 seconds when `character_orientation` is set to `"image"`.
+
+* The `reference_video` duration must be between 3 and 30 seconds when `character_orientation` is set to `"video"`.
+* The `reference_video` duration must be between 3 and 10 seconds when `character_orientation` is set to `"image"`.
 
 ## Outputs
 

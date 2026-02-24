@@ -16,8 +16,9 @@ El DCTestNode es un nodo lógico que devuelve diferentes tipos de datos según l
 | `mask1` | MASK | No | - | Un campo de entrada para máscaras. Este campo solo está activo cuando `combo` está configurado en `"option4"` y `subcombo` está configurado en `"opt2"`. Es opcional. |
 
 **Restricciones de Parámetros:**
-*   El parámetro `combo` controla la visibilidad y el requerimiento de todos los demás campos de entrada. Solo se mostrarán y serán obligatorios los campos asociados a la opción seleccionada en `combo` (excepto `mask1`, que es opcional).
-*   Cuando `combo` está configurado en `"option4"`, el parámetro `subcombo` se vuelve obligatorio y controla un segundo conjunto de entradas anidadas (`float_x`/`float_y` o `mask1`).
+
+* El parámetro `combo` controla la visibilidad y el requerimiento de todos los demás campos de entrada. Solo se mostrarán y serán obligatorios los campos asociados a la opción seleccionada en `combo` (excepto `mask1`, que es opcional).
+* Cuando `combo` está configurado en `"option4"`, el parámetro `subcombo` se vuelve obligatorio y controla un segundo conjunto de entradas anidadas (`float_x`/`float_y` o `mask1`).
 
 ## Salidas
 

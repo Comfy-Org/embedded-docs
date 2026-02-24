@@ -6,14 +6,14 @@ Bu düğüm, SDXL Refiner modeli için özel olarak tasarlanmış olup, metin pr
 
 SDXL Refiner, SDXL temel modeli temel alınarak görüntü detaylarını ve kalitesini geliştirmeye odaklanan özel bir iyileştirme modelidir. Bu süreç, bir sanat rötüşçüsüne sahip olmak gibidir:
 
-1.  İlk olarak, temel model tarafından oluşturulan ön görüntüleri veya metin açıklamalarını alır
-2.  Ardından, kesin estetik puanlama ve boyutsal parametreler aracılığıyla iyileştirme sürecini yönlendirir
-3.  Son olarak, genel kaliteyi artırmak için yüksek frekanslı görüntü detaylarının işlenmesine odaklanır
+1. İlk olarak, temel model tarafından oluşturulan ön görüntüleri veya metin açıklamalarını alır
+2. Ardından, kesin estetik puanlama ve boyutsal parametreler aracılığıyla iyileştirme sürecini yönlendirir
+3. Son olarak, genel kaliteyi artırmak için yüksek frekanslı görüntü detaylarının işlenmesine odaklanır
 
 Refiner iki şekilde kullanılabilir:
 
--   Temel model tarafından oluşturulan görüntüler için son işlem olarak bağımsız bir iyileştirme adımı olarak
--   Uzman bir entegrasyon sisteminin parçası olarak, üretimin düşük gürültülü aşamasında işlemi devralarak
+- Temel model tarafından oluşturulan görüntüler için son işlem olarak bağımsız bir iyileştirme adımı olarak
+- Uzman bir entegrasyon sisteminin parçası olarak, üretimin düşük gürültülü aşamasında işlemi devralarak
 
 ## Girdiler
 
@@ -33,8 +33,8 @@ Refiner iki şekilde kullanılabilir:
 
 ## Notlar
 
-1.  Bu düğüm, SDXL Refiner modeli için özel olarak optimize edilmiştir ve normal CLIPTextEncode düğümlerinden farklıdır
-2.  7.5 estetik puanı, temel değer olarak önerilir; bu, SDXL eğitiminde kullanılan standart ayardır
-3.  Tüm boyutsal parametreler 8'in katı olmalıdır ve toplam piksel sayısının 1024×1024'e (yaklaşık 1M piksel) yakın olması önerilir
-4.  Refiner modeli, görüntü detaylarını ve kalitesini geliştirmeye odaklandığından, metin prompt'ları sahne içeriğinden ziyade istenen görsel efektleri vurgulamalıdır
-5.  Pratik kullanımda, Refiner tipik olarak üretimin sonraki aşamalarında (yaklaşık son adımların %20'si) kullanılır ve detay optimizasyonuna odaklanır
+1. Bu düğüm, SDXL Refiner modeli için özel olarak optimize edilmiştir ve normal CLIPTextEncode düğümlerinden farklıdır
+2. 7.5 estetik puanı, temel değer olarak önerilir; bu, SDXL eğitiminde kullanılan standart ayardır
+3. Tüm boyutsal parametreler 8'in katı olmalıdır ve toplam piksel sayısının 1024×1024'e (yaklaşık 1M piksel) yakın olması önerilir
+4. Refiner modeli, görüntü detaylarını ve kalitesini geliştirmeye odaklandığından, metin prompt'ları sahne içeriğinden ziyade istenen görsel efektleri vurgulamalıdır
+5. Pratik kullanımda, Refiner tipik olarak üretimin sonraki aşamalarında (yaklaşık son adımların %20'si) kullanılır ve detay optimizasyonuna odaklanır

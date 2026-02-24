@@ -14,8 +14,9 @@ O nó LTXV Text To Video gera vídeos de qualidade profissional a partir de uma 
 | `generate_audio` | BOOLEAN | Não | - | Quando ativado, o vídeo gerado incluirá áudio gerado por IA que combina com a cena (padrão: Falso). |
 
 **Restrições Importantes:**
-*   O `prompt` deve ter entre 1 e 10.000 caracteres.
-*   Se você selecionar uma `duration` maior que 10 segundos, também deverá usar o modelo `"LTX-2 (Fast)"`, uma resolução de `"1920x1080"` e um `fps` de `25`. Esta combinação é obrigatória para vídeos mais longos.
+
+* O `prompt` deve ter entre 1 e 10.000 caracteres.
+* Se você selecionar uma `duration` maior que 10 segundos, também deverá usar o modelo `"LTX-2 (Fast)"`, uma resolução de `"1920x1080"` e um `fps` de `25`. Esta combinação é obrigatória para vídeos mais longos.
 
 ## Saídas
 

@@ -11,9 +11,10 @@ O nó ElevenLabs Text to Sound Effects gera efeitos sonoros em áudio a partir d
 | `output_format` | COMBO | Sim | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de saída do áudio. |
 
 **Detalhes dos Parâmetros:**
-*   **`model["duration"]`**: Duração do som gerado em segundos. O padrão é 5.0, com um mínimo de 0.5 e um máximo de 30.0.
-*   **`model["loop"]`**: Quando ativado, cria um efeito sonoro com loop suave. O padrão é False.
-*   **`model["prompt_influence"]`**: Controla o quão fielmente a geração segue o prompt de texto. Valores mais altos fazem o som seguir o texto mais de perto. O padrão é 0.3, com um intervalo de 0.0 a 1.0.
+
+* **`model["duration"]`**: Duração do som gerado em segundos. O padrão é 5.0, com um mínimo de 0.5 e um máximo de 30.0.
+* **`model["loop"]`**: Quando ativado, cria um efeito sonoro com loop suave. O padrão é False.
+* **`model["prompt_influence"]`**: Controla o quão fielmente a geração segue o prompt de texto. Valores mais altos fazem o som seguir o texto mais de perto. O padrão é 0.3, com um intervalo de 0.0 a 1.0.
 
 ## Saídas
 

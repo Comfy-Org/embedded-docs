@@ -17,8 +17,9 @@ Wan Referanstan Video düğümü, bir veya daha fazla girdi referans videosundan
 | `watermark` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, son videoya AI tarafından oluşturulmuş bir filigran eklenir (varsayılan: False). |
 
 **Kısıtlamalar:**
-*   `reference_videos` içinde sağlanan her video 2 ila 30 saniye arasında bir süreye sahip olmalıdır.
-*   `duration` parametresi belirli değerlerle (5 veya 10 saniye) sınırlıdır.
+
+* `reference_videos` içinde sağlanan her video 2 ila 30 saniye arasında bir süreye sahip olmalıdır.
+* `duration` parametresi belirli değerlerle (5 veya 10 saniye) sınırlıdır.
 
 ## Çıktılar
 

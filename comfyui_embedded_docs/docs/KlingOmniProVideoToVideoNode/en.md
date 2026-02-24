@@ -16,10 +16,11 @@ This node uses the Kling AI model to generate a new video based on an input vide
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | The resolution for the generated video (default: "1080p"). |
 
 **Parameter Constraints:**
-*   The `prompt` must be between 1 and 2500 characters long.
-*   The `reference_video` must be between 3.0 and 10.05 seconds in duration.
-*   The `reference_video` must have dimensions between 720x720 and 2160x2160 pixels.
-*   A maximum of 4 `reference_images` can be provided. Each image must be at least 300x300 pixels and have an aspect ratio between 1:2.5 and 2.5:1.
+
+* The `prompt` must be between 1 and 2500 characters long.
+* The `reference_video` must be between 3.0 and 10.05 seconds in duration.
+* The `reference_video` must have dimensions between 720x720 and 2160x2160 pixels.
+* A maximum of 4 `reference_images` can be provided. Each image must be at least 300x300 pixels and have an aspect ratio between 1:2.5 and 2.5:1.
 
 ## Outputs
 

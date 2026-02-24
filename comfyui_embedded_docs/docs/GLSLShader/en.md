@@ -15,10 +15,11 @@ The GLSL Shader node applies custom GLSL ES fragment shader code to input images
 | `ints` | INT | No | 0 to 8 integers | Integer uniform values for the shader. Ints are available as `u_int0` to `u_int7` in the shader code. Default: 0. |
 
 **Notes:**
-*   The `width` and `height` parameters are only required and visible when `size_mode` is set to `"custom"`.
-*   At least one input image is required.
-*   The shader code always has access to a `u_resolution` (vec2) uniform containing the output dimensions.
-*   A maximum of 8 input images, 8 float uniforms, and 8 integer uniforms can be provided.
+
+* The `width` and `height` parameters are only required and visible when `size_mode` is set to `"custom"`.
+* At least one input image is required.
+* The shader code always has access to a `u_resolution` (vec2) uniform containing the output dimensions.
+* A maximum of 8 input images, 8 float uniforms, and 8 integer uniforms can be provided.
 
 ## Outputs
 

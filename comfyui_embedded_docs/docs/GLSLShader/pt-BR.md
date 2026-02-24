@@ -15,10 +15,11 @@ O nó GLSL Shader aplica código personalizado de fragment shader GLSL ES a imag
 | `ints` | INT | Não | 0 a 8 inteiros | Valores uniformes inteiros para o shader. Os inteiros estão disponíveis como `u_int0` a `u_int7` no código do shader. Padrão: 0. |
 
 **Observações:**
-*   Os parâmetros `width` e `height` são obrigatórios e visíveis apenas quando `size_mode` está definido como `"custom"`.
-*   Pelo menos uma imagem de entrada é necessária.
-*   O código do shader sempre tem acesso a um uniforme `u_resolution` (vec2) contendo as dimensões da saída.
-*   Um máximo de 8 imagens de entrada, 8 uniformes float e 8 uniformes inteiros pode ser fornecido.
+
+* Os parâmetros `width` e `height` são obrigatórios e visíveis apenas quando `size_mode` está definido como `"custom"`.
+* Pelo menos uma imagem de entrada é necessária.
+* O código do shader sempre tem acesso a um uniforme `u_resolution` (vec2) contendo as dimensões da saída.
+* Um máximo de 8 imagens de entrada, 8 uniformes float e 8 uniformes inteiros pode ser fornecido.
 
 ## Saídas
 

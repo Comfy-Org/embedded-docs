@@ -15,16 +15,18 @@ Este nó gera vídeos usando o modelo Kling V3. Ele suporta dois modos principai
 | `start_frame` | IMAGE | Não | - | Uma imagem inicial opcional. Quando conectada, o nó alterna do modo texto-para-vídeo para o modo imagem-para-vídeo, animando a imagem fornecida. |
 
 **Entradas para o modo `multi_shot`:**
-*   Quando `multi_shot` está definido como **"disabled"**, as seguintes entradas aparecem:
-    *   `prompt` (STRING): A descrição textual principal para o vídeo. Obrigatória. Deve ter entre 1 e 2500 caracteres.
-    *   `negative_prompt` (STRING): Texto descrevendo o que não deve aparecer no vídeo. Opcional.
-    *   `duration` (INT): A duração do vídeo em segundos. Deve ser entre 3 e 15. O padrão é `5`.
-*   Quando `multi_shot` está definido como uma opção de storyboard (ex.: `"3 storyboards"`), entradas para cada segmento do storyboard aparecem (ex.: `storyboard_1_prompt`, `storyboard_1_duration`). Cada prompt deve ter entre 1 e 512 caracteres. A **soma total de todas as durações dos storyboards** deve ser entre 3 e 15 segundos.
+
+* Quando `multi_shot` está definido como **"disabled"**, as seguintes entradas aparecem:
+  * `prompt` (STRING): A descrição textual principal para o vídeo. Obrigatória. Deve ter entre 1 e 2500 caracteres.
+  * `negative_prompt` (STRING): Texto descrevendo o que não deve aparecer no vídeo. Opcional.
+  * `duration` (INT): A duração do vídeo em segundos. Deve ser entre 3 e 15. O padrão é `5`.
+* Quando `multi_shot` está definido como uma opção de storyboard (ex.: `"3 storyboards"`), entradas para cada segmento do storyboard aparecem (ex.: `storyboard_1_prompt`, `storyboard_1_duration`). Cada prompt deve ter entre 1 e 512 caracteres. A **soma total de todas as durações dos storyboards** deve ser entre 3 e 15 segundos.
 
 **Restrições:**
-*   O nó opera no modo **texto-para-vídeo** quando `start_frame` não está conectado. Ele usa a configuração `model.aspect_ratio` neste modo.
-*   O nó opera no modo **imagem-para-vídeo** quando `start_frame` está conectado. A configuração `model.aspect_ratio` é ignorada. A imagem de entrada deve ter pelo menos 300x300 pixels e ter uma proporção de aspecto entre 1:2.5 e 2.5:1.
-*   No modo storyboard (`multi_shot` não é "disabled"), as entradas principais `prompt` e `negative_prompt` ficam ocultas e não são usadas.
+
+* O nó opera no modo **texto-para-vídeo** quando `start_frame` não está conectado. Ele usa a configuração `model.aspect_ratio` neste modo.
+* O nó opera no modo **imagem-para-vídeo** quando `start_frame` está conectado. A configuração `model.aspect_ratio` é ignorada. A imagem de entrada deve ter pelo menos 300x300 pixels e ter uma proporção de aspecto entre 1:2.5 e 2.5:1.
+* No modo storyboard (`multi_shot` não é "disabled"), as entradas principais `prompt` e `negative_prompt` ficam ocultas e não são usadas.
 
 ## Saídas
 

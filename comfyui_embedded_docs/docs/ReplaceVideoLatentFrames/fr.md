@@ -13,8 +13,9 @@ Le nœud ReplaceVideoLatentFrames insère des trames d'une vidéo latente source
 | `index` | INT | Non | -MAX_RESOLUTION à MAX_RESOLUTION | L'index de la trame latente de départ dans la destination latente où les trames de la source latente seront placées. Les valeurs négatives comptent à partir de la fin (par défaut : 0). |
 
 **Contraintes :**
-*   L'`index` doit être dans les limites du nombre de trames de la destination latente. Si ce n'est pas le cas, un avertissement est enregistré et la destination est renvoyée inchangée.
-*   Les trames de la source latente doivent pouvoir tenir dans les trames de la destination latente à partir de l'`index` spécifié. Si ce n'est pas le cas, un avertissement est enregistré et la destination est renvoyée inchangée.
+
+* L'`index` doit être dans les limites du nombre de trames de la destination latente. Si ce n'est pas le cas, un avertissement est enregistré et la destination est renvoyée inchangée.
+* Les trames de la source latente doivent pouvoir tenir dans les trames de la destination latente à partir de l'`index` spécifié. Si ce n'est pas le cas, un avertissement est enregistré et la destination est renvoyée inchangée.
 
 ## Sorties
 

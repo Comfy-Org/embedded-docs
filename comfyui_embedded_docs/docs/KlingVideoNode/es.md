@@ -15,16 +15,18 @@ Este nodo genera videos utilizando el modelo Kling V3. Admite dos modos principa
 | `start_frame` | IMAGE | No | - | Una imagen de inicio opcional. Cuando está conectada, el nodo cambia del modo texto a video al modo imagen a video, animando la imagen proporcionada. |
 
 **Entradas para el modo `multi_shot`:**
-*   Cuando `multi_shot` está configurado en **"disabled"**, aparecen las siguientes entradas:
-    *   `prompt` (STRING): La descripción de texto principal para el video. Obligatoria. Debe tener entre 1 y 2500 caracteres.
-    *   `negative_prompt` (STRING): Texto que describe lo que no debe aparecer en el video. Opcional.
-    *   `duration` (INT): La duración del video en segundos. Debe estar entre 3 y 15. El valor predeterminado es `5`.
-*   Cuando `multi_shot` está configurado en una opción de storyboard (ej., `"3 storyboards"`), aparecen entradas para cada segmento del storyboard (ej., `storyboard_1_prompt`, `storyboard_1_duration`). Cada prompt debe tener entre 1 y 512 caracteres. **La suma total de todas las duraciones de los storyboards** debe estar entre 3 y 15 segundos.
+
+* Cuando `multi_shot` está configurado en **"disabled"**, aparecen las siguientes entradas:
+  * `prompt` (STRING): La descripción de texto principal para el video. Obligatoria. Debe tener entre 1 y 2500 caracteres.
+  * `negative_prompt` (STRING): Texto que describe lo que no debe aparecer en el video. Opcional.
+  * `duration` (INT): La duración del video en segundos. Debe estar entre 3 y 15. El valor predeterminado es `5`.
+* Cuando `multi_shot` está configurado en una opción de storyboard (ej., `"3 storyboards"`), aparecen entradas para cada segmento del storyboard (ej., `storyboard_1_prompt`, `storyboard_1_duration`). Cada prompt debe tener entre 1 y 512 caracteres. **La suma total de todas las duraciones de los storyboards** debe estar entre 3 y 15 segundos.
 
 **Restricciones:**
-*   El nodo opera en modo **texto a video** cuando `start_frame` no está conectado. Utiliza la configuración `model.aspect_ratio` en este modo.
-*   El nodo opera en modo **imagen a video** cuando `start_frame` está conectado. La configuración `model.aspect_ratio` se ignora. La imagen de entrada debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1.
-*   En el modo storyboard (`multi_shot` no es "disabled"), las entradas principales `prompt` y `negative_prompt` están ocultas y no se utilizan.
+
+* El nodo opera en modo **texto a video** cuando `start_frame` no está conectado. Utiliza la configuración `model.aspect_ratio` en este modo.
+* El nodo opera en modo **imagen a video** cuando `start_frame` está conectado. La configuración `model.aspect_ratio` se ignora. La imagen de entrada debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1.
+* En el modo storyboard (`multi_shot` no es "disabled"), las entradas principales `prompt` y `negative_prompt` están ocultas y no se utilizan.
 
 ## Salidas
 

@@ -11,9 +11,10 @@ Le nœud ElevenLabs Text to Sound Effects génère des effets sonores audio à p
 | `output_format` | COMBO | Oui | `"mp3_44100_192"`<br>`"opus_48000_192"` | Format de sortie audio. |
 
 **Détails des paramètres :**
-*   **`model["duration"]`** : Durée du son généré en secondes. La valeur par défaut est 5.0, avec un minimum de 0.5 et un maximum de 30.0.
-*   **`model["loop"]`** : Lorsqu'il est activé, crée un effet sonore qui boucle de manière fluide. La valeur par défaut est False.
-*   **`model["prompt_influence"]`** : Contrôle à quel point la génération suit fidèlement le prompt textuel. Des valeurs plus élevées font que le son suit le texte de plus près. La valeur par défaut est 0.3, avec une plage de 0.0 à 1.0.
+
+* **`model["duration"]`** : Durée du son généré en secondes. La valeur par défaut est 5.0, avec un minimum de 0.5 et un maximum de 30.0.
+* **`model["loop"]`** : Lorsqu'il est activé, crée un effet sonore qui boucle de manière fluide. La valeur par défaut est False.
+* **`model["prompt_influence"]`** : Contrôle à quel point la génération suit fidèlement le prompt textuel. Des valeurs plus élevées font que le son suit le texte de plus près. La valeur par défaut est 0.3, avec une plage de 0.0 à 1.0.
 
 ## Sorties
 

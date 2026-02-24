@@ -14,8 +14,9 @@ LTXV Metinden Videoya düğümü, metin açıklamasından profesyonel kalitede v
 | `generate_audio` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, oluşturulan video sahneye uyan AI tarafından oluşturulmuş ses içerecektir (varsayılan: False). |
 
 **Önemli Kısıtlamalar:**
-*   `prompt` 1 ile 10.000 karakter arasında olmalıdır.
-*   10 saniyeden uzun bir `duration` seçerseniz, aynı zamanda `"LTX-2 (Hızlı)"` modelini, `"1920x1080"` çözünürlüğünü ve `25` `fps` değerini kullanmalısınız. Bu kombinasyon daha uzun videolar için gereklidir.
+
+* `prompt` 1 ile 10.000 karakter arasında olmalıdır.
+* 10 saniyeden uzun bir `duration` seçerseniz, aynı zamanda `"LTX-2 (Hızlı)"` modelini, `"1920x1080"` çözünürlüğünü ve `25` `fps` değerini kullanmalısınız. Bu kombinasyon daha uzun videolar için gereklidir.
 
 ## Çıktılar
 

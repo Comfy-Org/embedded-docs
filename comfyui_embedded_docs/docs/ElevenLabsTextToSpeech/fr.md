@@ -17,14 +17,16 @@ Le nœud ElevenLabs Text to Speech convertit du texte écrit en audio parlé en 
 
 **Paramètres spécifiques au modèle :**
 Lorsque le paramètre `model` est défini sur `"eleven_multilingual_v2"`, les paramètres supplémentaires suivants deviennent disponibles :
-*   `speed` : Vitesse de la parole. 1.0 est normal, <1.0 plus lent, >1.0 plus rapide (par défaut : 1.0, plage : 0.7 - 1.3).
-*   `similarity_boost` : Boost de similarité. Des valeurs plus élevées rendent la voix plus similaire à l'originale (par défaut : 0.75, plage : 0.0 - 1.0).
-*   `use_speaker_boost` : Boost de la similarité avec la voix originale du locuteur (par défaut : False).
-*   `style` : Exagération du style. Des valeurs plus élevées augmentent l'expression stylistique mais peuvent réduire la stabilité (par défaut : 0.0, plage : 0.0 - 0.2).
+
+* `speed` : Vitesse de la parole. 1.0 est normal, <1.0 plus lent, >1.0 plus rapide (par défaut : 1.0, plage : 0.7 - 1.3).
+* `similarity_boost` : Boost de similarité. Des valeurs plus élevées rendent la voix plus similaire à l'originale (par défaut : 0.75, plage : 0.0 - 1.0).
+* `use_speaker_boost` : Boost de la similarité avec la voix originale du locuteur (par défaut : False).
+* `style` : Exagération du style. Des valeurs plus élevées augmentent l'expression stylistique mais peuvent réduire la stabilité (par défaut : 0.0, plage : 0.0 - 0.2).
 
 Lorsque le paramètre `model` est défini sur `"eleven_v3"`, les paramètres supplémentaires suivants deviennent disponibles :
-*   `speed` : Vitesse de la parole. 1.0 est normal, <1.0 plus lent, >1.0 plus rapide (par défaut : 1.0, plage : 0.7 - 1.3).
-*   `similarity_boost` : Boost de similarité. Des valeurs plus élevées rendent la voix plus similaire à l'originale (par défaut : 0.75, plage : 0.0 - 1.0).
+
+* `speed` : Vitesse de la parole. 1.0 est normal, <1.0 plus lent, >1.0 plus rapide (par défaut : 1.0, plage : 0.7 - 1.3).
+* `similarity_boost` : Boost de similarité. Des valeurs plus élevées rendent la voix plus similaire à l'originale (par défaut : 0.75, plage : 0.0 - 1.0).
 
 ## Sorties
 

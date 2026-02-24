@@ -15,16 +15,18 @@ Bu düğüm, Kling V3 modelini kullanarak videolar oluşturur. İki ana modu des
 | `start_frame` | IMAGE | Hayır | - | İsteğe bağlı bir başlangıç görüntüsü. Bağlandığında, düğüm metinden videoya modundan görüntüden videoya moduna geçer ve sağlanan görüntüyü canlandırır. |
 
 **`multi_shot` modu için girişler:**
-*   `multi_shot` **"disabled"** olarak ayarlandığında, aşağıdaki girişler görünür:
-    *   `prompt` (STRING): Video için ana metin açıklaması. Zorunlu. 1 ile 2500 karakter arasında olmalıdır.
-    *   `negative_prompt` (STRING): Videoda görünmemesi gerekenleri tanımlayan metin. İsteğe bağlı.
-    *   `duration` (INT): Video uzunluğu saniye cinsinden. 3 ile 15 arasında olmalıdır. Varsayılan `5`'tir.
-*   `multi_shot` bir storyboard seçeneğine ayarlandığında (örneğin, `"3 storyboards"`), her bir storyboard bölümü için girişler görünür (örneğin, `storyboard_1_prompt`, `storyboard_1_duration`). Her komut 1 ile 512 karakter arasında olmalıdır. **Tüm storyboard sürelerinin toplamı** 3 ile 15 saniye arasında olmalıdır.
+
+* `multi_shot` **"disabled"** olarak ayarlandığında, aşağıdaki girişler görünür:
+  * `prompt` (STRING): Video için ana metin açıklaması. Zorunlu. 1 ile 2500 karakter arasında olmalıdır.
+  * `negative_prompt` (STRING): Videoda görünmemesi gerekenleri tanımlayan metin. İsteğe bağlı.
+  * `duration` (INT): Video uzunluğu saniye cinsinden. 3 ile 15 arasında olmalıdır. Varsayılan `5`'tir.
+* `multi_shot` bir storyboard seçeneğine ayarlandığında (örneğin, `"3 storyboards"`), her bir storyboard bölümü için girişler görünür (örneğin, `storyboard_1_prompt`, `storyboard_1_duration`). Her komut 1 ile 512 karakter arasında olmalıdır. **Tüm storyboard sürelerinin toplamı** 3 ile 15 saniye arasında olmalıdır.
 
 **Kısıtlamalar:**
-*   Düğüm, `start_frame` bağlı olmadığında **metinden videoya** modunda çalışır. Bu modda `model.aspect_ratio` ayarını kullanır.
-*   Düğüm, `start_frame` bağlı olduğunda **görüntüden videoya** modunda çalışır. `model.aspect_ratio` ayarı dikkate alınmaz. Giriş görüntüsü en az 300x300 piksel olmalı ve en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
-*   Storyboard modunda (`multi_shot` "disabled" değil), ana `prompt` ve `negative_prompt` girişleri gizlidir ve kullanılmaz.
+
+* Düğüm, `start_frame` bağlı olmadığında **metinden videoya** modunda çalışır. Bu modda `model.aspect_ratio` ayarını kullanır.
+* Düğüm, `start_frame` bağlı olduğunda **görüntüden videoya** modunda çalışır. `model.aspect_ratio` ayarı dikkate alınmaz. Giriş görüntüsü en az 300x300 piksel olmalı ve en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
+* Storyboard modunda (`multi_shot` "disabled" değil), ana `prompt` ve `negative_prompt` girişleri gizlidir ve kullanılmaz.
 
 ## Çıkışlar
 

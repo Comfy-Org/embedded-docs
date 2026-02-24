@@ -17,8 +17,9 @@ El nodo GeminiImage2Node genera o edita imágenes utilizando el modelo Gemini de
 | `system_prompt` | STRING | No | N/A | Instrucciones fundamentales que dictan el comportamiento de una IA. Por defecto: Un mensaje de sistema predefinido para generación de imágenes. |
 
 **Restricciones:**
-*   La entrada `images` admite un máximo de 14 imágenes. Si se proporcionan más, se generará un error.
-*   La entrada `files` debe estar conectada a un nodo que emita el tipo de dato `GEMINI_INPUT_FILES`.
+
+* La entrada `images` admite un máximo de 14 imágenes. Si se proporcionan más, se generará un error.
+* La entrada `files` debe estar conectada a un nodo que emita el tipo de dato `GEMINI_INPUT_FILES`.
 
 ## Salidas
 

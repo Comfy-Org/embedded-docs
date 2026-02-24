@@ -15,12 +15,13 @@ Bu düğüm, bir video oluşturmak için Kling AI modelini kullanır. Bir başla
 | `resolution` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Oluşturulan video için çıktı çözünürlüğü (varsayılan: "1080p"). |
 
 **Önemli Kısıtlamalar:**
-*   `end_frame` girdisi, `reference_images` girdisi ile aynı anda kullanılamaz.
-*   Bir `end_frame` veya herhangi bir `reference_images` sağlamazsanız, `duration` yalnızca 5 veya 10 saniye olarak ayarlanabilir.
-*   Tüm girdi görselleri (`first_frame`, `end_frame` ve herhangi bir `reference_images`) hem genişlik hem de yükseklikte minimum 300 piksel boyutuna sahip olmalıdır.
-*   Tüm girdi görsellerinin en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
-*   `reference_images` girdisi aracılığıyla en fazla 6 görsel sağlanabilir.
-*   `prompt` metni 1 ile 2500 karakter uzunluğunda olmalıdır.
+
+* `end_frame` girdisi, `reference_images` girdisi ile aynı anda kullanılamaz.
+* Bir `end_frame` veya herhangi bir `reference_images` sağlamazsanız, `duration` yalnızca 5 veya 10 saniye olarak ayarlanabilir.
+* Tüm girdi görselleri (`first_frame`, `end_frame` ve herhangi bir `reference_images`) hem genişlik hem de yükseklikte minimum 300 piksel boyutuna sahip olmalıdır.
+* Tüm girdi görsellerinin en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
+* `reference_images` girdisi aracılığıyla en fazla 6 görsel sağlanabilir.
+* `prompt` metni 1 ile 2500 karakter uzunluğunda olmalıdır.
 
 ## Çıktılar
 

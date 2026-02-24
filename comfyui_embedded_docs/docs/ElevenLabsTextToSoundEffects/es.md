@@ -11,9 +11,10 @@ El nodo ElevenLabs Text to Sound Effects genera efectos de sonido a partir de un
 | `output_format` | COMBO | Sí | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio. |
 
 **Detalles de los Parámetros:**
-*   **`model["duration"]`**: Duración del sonido generado en segundos. El valor por defecto es 5.0, con un mínimo de 0.5 y un máximo de 30.0.
-*   **`model["loop"]`**: Cuando está habilitado, crea un efecto de sonido que se repite suavemente en bucle. El valor por defecto es False.
-*   **`model["prompt_influence"]`**: Controla qué tan fielmente sigue la generación a la indicación de texto. Valores más altos hacen que el sonido siga el texto más de cerca. El valor por defecto es 0.3, con un rango de 0.0 a 1.0.
+
+* **`model["duration"]`**: Duración del sonido generado en segundos. El valor por defecto es 5.0, con un mínimo de 0.5 y un máximo de 30.0.
+* **`model["loop"]`**: Cuando está habilitado, crea un efecto de sonido que se repite suavemente en bucle. El valor por defecto es False.
+* **`model["prompt_influence"]`**: Controla qué tan fielmente sigue la generación a la indicación de texto. Valores más altos hacen que el sonido siga el texto más de cerca. El valor por defecto es 0.3, con un rango de 0.0 a 1.0.
 
 ## Salidas
 
