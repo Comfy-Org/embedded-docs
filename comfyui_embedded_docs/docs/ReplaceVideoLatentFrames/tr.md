@@ -11,8 +11,9 @@ ReplaceVideoLatentFrames düğümü, bir kaynak gizli videodan alınan kareleri,
 | `index` | INT | Hayır | -MAX_RESOLUTION to MAX_RESOLUTION | Kaynak gizli video karelerinin yerleştirileceği, hedef gizli videodaki başlangıç gizli kare indeksi. Negatif değerler sondan sayılır (varsayılan: 0). |
 
 **Kısıtlamalar:**
-*   `index`, hedef gizli videonun kare sayısı sınırları içinde olmalıdır. Değilse, bir uyarı kaydedilir ve hedef video değiştirilmeden döndürülür.
-*   Kaynak gizli video kareleri, belirtilen `index`'ten başlayarak hedef gizli video kareleri içine sığmalıdır. Sığmazsa, bir uyarı kaydedilir ve hedef video değiştirilmeden döndürülür.
+
+* `index`, hedef gizli videonun kare sayısı sınırları içinde olmalıdır. Değilse, bir uyarı kaydedilir ve hedef video değiştirilmeden döndürülür.
+* Kaynak gizli video kareleri, belirtilen `index`'ten başlayarak hedef gizli video kareleri içine sığmalıdır. Sığmazsa, bir uyarı kaydedilir ve hedef video değiştirilmeden döndürülür.
 
 ## Çıkışlar
 

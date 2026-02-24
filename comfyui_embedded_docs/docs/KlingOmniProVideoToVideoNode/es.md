@@ -16,10 +16,11 @@ Este nodo utiliza el modelo Kling AI para generar un nuevo video basado en un vi
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | La resolución para el video generado (por defecto: "1080p"). |
 
 **Restricciones de Parámetros:**
-*   El `prompt` debe tener entre 1 y 2500 caracteres de longitud.
-*   El `reference_video` debe tener una duración entre 3.0 y 10.05 segundos.
-*   El `reference_video` debe tener dimensiones entre 720x720 y 2160x2160 píxeles.
-*   Se pueden proporcionar un máximo de 4 `reference_images`. Cada imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1.
+
+* El `prompt` debe tener entre 1 y 2500 caracteres de longitud.
+* El `reference_video` debe tener una duración entre 3.0 y 10.05 segundos.
+* El `reference_video` debe tener dimensiones entre 720x720 y 2160x2160 píxeles.
+* Se pueden proporcionar un máximo de 4 `reference_images`. Cada imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1.
 
 ## Salidas
 

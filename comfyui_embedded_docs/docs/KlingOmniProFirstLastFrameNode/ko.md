@@ -15,12 +15,13 @@
 | `resolution` | COMBO | 아니요 | `"1080p"`<br>`"720p"` | 생성된 비디오의 출력 해상도입니다 (기본값: "1080p"). |
 
 **중요 제약사항:**
-*   `end_frame` 입력은 `reference_images` 입력과 동시에 사용할 수 없습니다.
-*   `end_frame`이나 `reference_images`를 제공하지 않으면 `duration`은 5초 또는 10초로만 설정할 수 있습니다.
-*   모든 입력 이미지(`first_frame`, `end_frame`, `reference_images`)는 너비와 높이 모두 최소 300픽셀의 크기를 가져야 합니다.
-*   모든 입력 이미지의 종횡비는 1:2.5에서 2.5:1 사이여야 합니다.
-*   `reference_images` 입력을 통해 최대 6개의 이미지를 제공할 수 있습니다.
-*   `prompt` 텍스트는 길이가 1자에서 2500자 사이여야 합니다.
+
+* `end_frame` 입력은 `reference_images` 입력과 동시에 사용할 수 없습니다.
+* `end_frame`이나 `reference_images`를 제공하지 않으면 `duration`은 5초 또는 10초로만 설정할 수 있습니다.
+* 모든 입력 이미지(`first_frame`, `end_frame`, `reference_images`)는 너비와 높이 모두 최소 300픽셀의 크기를 가져야 합니다.
+* 모든 입력 이미지의 종횡비는 1:2.5에서 2.5:1 사이여야 합니다.
+* `reference_images` 입력을 통해 최대 6개의 이미지를 제공할 수 있습니다.
+* `prompt` 텍스트는 길이가 1자에서 2500자 사이여야 합니다.
 
 ## 출력
 

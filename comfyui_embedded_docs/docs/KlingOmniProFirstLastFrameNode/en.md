@@ -15,12 +15,13 @@ This node uses the Kling AI model to generate a video. It requires a starting im
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | The output resolution for the generated video (default: "1080p"). |
 
 **Important Constraints:**
-*   The `end_frame` input cannot be used at the same time as the `reference_images` input.
-*   If you do not provide an `end_frame` or any `reference_images`, the `duration` can only be set to 5 or 10 seconds.
-*   All input images (`first_frame`, `end_frame`, and any `reference_images`) must have a minimum dimension of 300 pixels in both width and height.
-*   The aspect ratio of all input images must be between 1:2.5 and 2.5:1.
-*   A maximum of 6 images can be provided via the `reference_images` input.
-*   The `prompt` text must be between 1 and 2500 characters in length.
+
+* The `end_frame` input cannot be used at the same time as the `reference_images` input.
+* If you do not provide an `end_frame` or any `reference_images`, the `duration` can only be set to 5 or 10 seconds.
+* All input images (`first_frame`, `end_frame`, and any `reference_images`) must have a minimum dimension of 300 pixels in both width and height.
+* The aspect ratio of all input images must be between 1:2.5 and 2.5:1.
+* A maximum of 6 images can be provided via the `reference_images` input.
+* The `prompt` text must be between 1 and 2500 characters in length.
 
 ## Outputs
 

@@ -12,7 +12,8 @@ Bu düğüm, görüntüleri ve metni kodlayarak eğitim için veri hazırlar. Bi
 | `texts` | STRING | Hayır | Yok | Metin açıklamaları listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için tekrarlanan) olabilir veya atlanabilir (boş dize kullanılır). |
 
 **Parametre Kısıtlamaları:**
-*   `texts` listesindeki öğe sayısı 0, 1 olmalı veya `images` listesindeki öğe sayısıyla tam olarak eşleşmelidir. 0 ise, tüm görüntüler için boş bir dize kullanılır. 1 ise, o tek metin tüm görüntüler için tekrarlanır.
+
+* `texts` listesindeki öğe sayısı 0, 1 olmalı veya `images` listesindeki öğe sayısıyla tam olarak eşleşmelidir. 0 ise, tüm görüntüler için boş bir dize kullanılır. 1 ise, o tek metin tüm görüntüler için tekrarlanır.
 
 ## Çıkışlar
 

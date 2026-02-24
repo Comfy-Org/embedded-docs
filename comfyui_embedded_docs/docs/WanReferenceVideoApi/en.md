@@ -17,8 +17,9 @@ The Wan Reference to Video node uses the visual appearance and voice from one or
 | `watermark` | BOOLEAN | No | - | When enabled, an AI-generated watermark is added to the final video (default: False). |
 
 **Constraints:**
-*   Each video provided in `reference_videos` must be between 2 and 30 seconds in duration.
-*   The `duration` parameter is limited to specific values (5 or 10 seconds).
+
+* Each video provided in `reference_videos` must be between 2 and 30 seconds in duration.
+* The `duration` parameter is limited to specific values (5 or 10 seconds).
 
 ## Outputs
 

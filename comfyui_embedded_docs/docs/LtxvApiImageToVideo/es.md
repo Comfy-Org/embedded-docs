@@ -15,9 +15,10 @@ El nodo LTXV Image To Video genera un video de calidad profesional a partir de u
 | `generate_audio` | BOOLEAN | No | - | Cuando es verdadero, el video generado incluirá audio generado por IA que coincide con la escena (por defecto: Falso). |
 
 **Restricciones Importantes:**
-*   La entrada `image` debe contener exactamente una imagen.
-*   El `prompt` debe tener entre 1 y 10,000 caracteres de longitud.
-*   Si selecciona una `duration` mayor a 10 segundos, debe usar el modelo **"LTX-2 (Fast)"**, una resolución de **"1920x1080"** y **25** FPS. Esta combinación es obligatoria para videos más largos.
+
+* La entrada `image` debe contener exactamente una imagen.
+* El `prompt` debe tener entre 1 y 10,000 caracteres de longitud.
+* Si selecciona una `duration` mayor a 10 segundos, debe usar el modelo **"LTX-2 (Fast)"**, una resolución de **"1920x1080"** y **25** FPS. Esta combinación es obligatoria para videos más largos.
 
 ## Salidas
 

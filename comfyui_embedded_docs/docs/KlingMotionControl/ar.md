@@ -12,8 +12,9 @@
 | `mode` | COMBO | لا | `"pro"`<br>`"std"` | وضع التوليد المراد استخدامه. |
 
 **القيود:**
-*   يجب أن تكون مدة `reference_video` بين 3 و 30 ثانية عندما يكون `character_orientation` مضبوطًا على `"video"`.
-*   يجب أن تكون مدة `reference_video` بين 3 و 10 ثوانٍ عندما يكون `character_orientation` مضبوطًا على `"image"`.
+
+* يجب أن تكون مدة `reference_video` بين 3 و 30 ثانية عندما يكون `character_orientation` مضبوطًا على `"video"`.
+* يجب أن تكون مدة `reference_video` بين 3 و 10 ثوانٍ عندما يكون `character_orientation` مضبوطًا على `"image"`.
 
 ## المخرجات
 

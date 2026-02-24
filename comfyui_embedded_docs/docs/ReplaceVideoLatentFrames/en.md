@@ -11,8 +11,9 @@ The ReplaceVideoLatentFrames node inserts frames from a source latent video into
 | `index` | INT | No | -MAX_RESOLUTION to MAX_RESOLUTION | The starting latent frame index in the destination latent where the source latent frames will be placed. Negative values count from the end (default: 0). |
 
 **Constraints:**
-*   The `index` must be within the bounds of the destination latent's frame count. If it is not, a warning is logged and the destination is returned unchanged.
-*   The source latent frames must fit within the destination latent frames starting from the specified `index`. If they do not, a warning is logged and the destination is returned unchanged.
+
+* The `index` must be within the bounds of the destination latent's frame count. If it is not, a warning is logged and the destination is returned unchanged.
+* The source latent frames must fit within the destination latent frames starting from the specified `index`. If they do not, a warning is logged and the destination is returned unchanged.
 
 ## Outputs
 

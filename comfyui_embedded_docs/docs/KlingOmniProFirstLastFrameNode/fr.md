@@ -15,12 +15,13 @@ Ce nœud utilise le modèle Kling AI pour générer une vidéo. Il nécessite un
 | `resolution` | COMBO | Non | `"1080p"`<br>`"720p"` | La résolution de sortie pour la vidéo générée (par défaut : "1080p"). |
 
 **Contraintes importantes :**
-*   L'entrée `end_frame` ne peut pas être utilisée en même temps que l'entrée `reference_images`.
-*   Si vous ne fournissez pas d'`end_frame` ou d'`reference_images`, la `duration` ne peut être définie qu'à 5 ou 10 secondes.
-*   Toutes les images d'entrée (`first_frame`, `end_frame` et toutes les `reference_images`) doivent avoir une dimension minimale de 300 pixels en largeur et en hauteur.
-*   Le rapport d'aspect de toutes les images d'entrée doit être compris entre 1:2,5 et 2,5:1.
-*   Un maximum de 6 images peut être fourni via l'entrée `reference_images`.
-*   Le texte du `prompt` doit comporter entre 1 et 2500 caractères.
+
+* L'entrée `end_frame` ne peut pas être utilisée en même temps que l'entrée `reference_images`.
+* Si vous ne fournissez pas d'`end_frame` ou d'`reference_images`, la `duration` ne peut être définie qu'à 5 ou 10 secondes.
+* Toutes les images d'entrée (`first_frame`, `end_frame` et toutes les `reference_images`) doivent avoir une dimension minimale de 300 pixels en largeur et en hauteur.
+* Le rapport d'aspect de toutes les images d'entrée doit être compris entre 1:2,5 et 2,5:1.
+* Un maximum de 6 images peut être fourni via l'entrée `reference_images`.
+* Le texte du `prompt` doit comporter entre 1 et 2500 caractères.
 
 ## Sorties
 

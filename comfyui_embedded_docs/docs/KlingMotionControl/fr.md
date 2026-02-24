@@ -12,8 +12,9 @@
 | `mode` | COMBO | Non | `"pro"`<br>`"std"` | Le mode de génération à utiliser. |
 
 **Contraintes :**
-*   La durée de la `reference_video` doit être comprise entre 3 et 30 secondes lorsque `character_orientation` est défini sur `"video"`.
-*   La durée de la `reference_video` doit être comprise entre 3 et 10 secondes lorsque `character_orientation` est défini sur `"image"`.
+
+* La durée de la `reference_video` doit être comprise entre 3 et 30 secondes lorsque `character_orientation` est défini sur `"video"`.
+* La durée de la `reference_video` doit être comprise entre 3 et 10 secondes lorsque `character_orientation` est défini sur `"image"`.
 
 ## Sorties
 

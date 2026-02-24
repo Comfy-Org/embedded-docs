@@ -16,8 +16,9 @@ DCTestNode, kullanıcının dinamik bir birleşik giriş kutusundan yaptığı s
 | `mask1` | MASK | Hayır | - | Bir maske giriş alanı. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt2"` olarak ayarlandığında etkindir. İsteğe bağlıdır. |
 
 **Parametre Kısıtlamaları:**
-*   `combo` parametresi, diğer tüm giriş alanlarının görünürlüğünü ve zorunluluğunu kontrol eder. Yalnızca seçilen `combo` seçeneğiyle ilişkili girişler gösterilecek ve zorunlu olacaktır (`mask1` hariç, bu isteğe bağlıdır).
-*   `combo` `"option4"` olarak ayarlandığında, `subcombo` parametresi zorunlu hale gelir ve ikinci bir iç içe giriş kümesini (`float_x`/`float_y` veya `mask1`) kontrol eder.
+
+* `combo` parametresi, diğer tüm giriş alanlarının görünürlüğünü ve zorunluluğunu kontrol eder. Yalnızca seçilen `combo` seçeneğiyle ilişkili girişler gösterilecek ve zorunlu olacaktır (`mask1` hariç, bu isteğe bağlıdır).
+* `combo` `"option4"` olarak ayarlandığında, `subcombo` parametresi zorunlu hale gelir ve ikinci bir iç içe giriş kümesini (`float_x`/`float_y` veya `mask1`) kontrol eder.
 
 ## Çıkışlar
 

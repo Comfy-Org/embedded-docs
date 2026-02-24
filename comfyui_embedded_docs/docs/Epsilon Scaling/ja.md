@@ -1,4 +1,4 @@
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/ja.md)
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon%20Scaling/ja.md)
 
 このノードは、研究論文「Elucidating the Exposure Bias in Diffusion Models」で提案されたEpsilon Scaling（イプシロンスケーリング）手法を実装しています。サンプリングプロセス中に予測されたノイズをスケーリングすることで、生成画像の品質向上につながる可能性のある「露光バイアス（exposure bias）」の低減を助けます。この実装では、論文で推奨されている「均一スケジュール（uniform schedule）」を使用しています。
 

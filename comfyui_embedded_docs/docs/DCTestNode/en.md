@@ -16,8 +16,9 @@ The DCTestNode is a logic node that returns different types of data based on a u
 | `mask1` | MASK | No | - | A mask input field. This field is only active when `combo` is set to `"option4"` and `subcombo` is set to `"opt2"`. It is optional. |
 
 **Parameter Constraints:**
-*   The `combo` parameter controls the visibility and requirement of all other input fields. Only the inputs associated with the selected `combo` option will be shown and are required (except for `mask1` which is optional).
-*   When `combo` is set to `"option4"`, the `subcombo` parameter becomes required and controls a second set of nested inputs (`float_x`/`float_y` or `mask1`).
+
+* The `combo` parameter controls the visibility and requirement of all other input fields. Only the inputs associated with the selected `combo` option will be shown and are required (except for `mask1` which is optional).
+* When `combo` is set to `"option4"`, the `subcombo` parameter becomes required and controls a second set of nested inputs (`float_x`/`float_y` or `mask1`).
 
 ## Outputs
 

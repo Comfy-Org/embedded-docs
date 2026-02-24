@@ -4,9 +4,9 @@ Bu, model dosyalarını belirtilen konumlardan yükleyen ve bunları üç temel 
 
 Bu düğüm, `ComfyUI/models/checkpoints` klasöründeki tüm model dosyalarını ve `extra_model_paths.yaml` dosyanızda yapılandırılan ek yolları otomatik olarak algılar.
 
-1.  **Model Uyumluluğu**: Seçilen modelin iş akışınızla uyumlu olduğundan emin olun. Farklı model türleri (SD1.5, SDXL, Flux vb.), karşılık gelen örnekleyiciler ve diğer düğümlerle eşleştirilmelidir.
-2.  **Dosya Yönetimi**: Model dosyalarını `ComfyUI/models/checkpoints` klasörüne yerleştirin veya `extra_model_paths.yaml` aracılığıyla diğer yolları yapılandırın.
-3.  **Arayüz Yenileme**: ComfyUI çalışırken yeni model dosyaları eklendiyse, açılır listede yeni dosyaları görmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
+1. **Model Uyumluluğu**: Seçilen modelin iş akışınızla uyumlu olduğundan emin olun. Farklı model türleri (SD1.5, SDXL, Flux vb.), karşılık gelen örnekleyiciler ve diğer düğümlerle eşleştirilmelidir.
+2. **Dosya Yönetimi**: Model dosyalarını `ComfyUI/models/checkpoints` klasörüne yerleştirin veya `extra_model_paths.yaml` aracılığıyla diğer yolları yapılandırın.
+3. **Arayüz Yenileme**: ComfyUI çalışırken yeni model dosyaları eklendiyse, açılır listede yeni dosyaları görmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
 
 ## Girdiler
 

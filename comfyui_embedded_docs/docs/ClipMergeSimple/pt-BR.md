@@ -24,19 +24,19 @@ Este nó é especializado em mesclar dois modelos CLIP com base em uma proporç�
 
 O nó utiliza uma média ponderada para mesclar os dois modelos:
 
-1.  **Clonar Modelo Base**: Primeiro clona `clip1` como modelo base.
-2.  **Obter *Patches***: Obtém todos os *patches* principais de `clip2`.
-3.  **Filtrar Chaves Especiais**: Ignora chaves que terminam com `.position_ids` e `.logit_scale`.
-4.  **Aplicar Fusão Ponderada**: Usa a fórmula `(1.0 - ratio) * clip1 + ratio * clip2`.
+1. **Clonar Modelo Base**: Primeiro clona `clip1` como modelo base.
+2. **Obter *Patches***: Obtém todos os *patches* principais de `clip2`.
+3. **Filtrar Chaves Especiais**: Ignora chaves que terminam com `.position_ids` e `.logit_scale`.
+4. **Aplicar Fusão Ponderada**: Usa a fórmula `(1.0 - ratio) * clip1 + ratio * clip2`.
 
 ### Explicação do Parâmetro Ratio
 
--   **ratio = 0.0**: Usa totalmente o clip1, ignora o clip2.
--   **ratio = 0.5**: Contribuição de 50% de cada modelo.
--   **ratio = 1.0**: Usa totalmente o clip2, ignora o clip1.
+- **ratio = 0.0**: Usa totalmente o clip1, ignora o clip2.
+- **ratio = 0.5**: Contribuição de 50% de cada modelo.
+- **ratio = 1.0**: Usa totalmente o clip2, ignora o clip1.
 
 ## Casos de Uso
 
-1.  **Fusão de Estilos de Modelo**: Combinar características de modelos CLIP treinados em dados diferentes.
-2.  **Otimização de Desempenho**: Equilibrar pontos fortes e fracos de diferentes modelos.
-3.  **Pesquisa Experimental**: Explorar combinações de diferentes codificadores CLIP.
+1. **Fusão de Estilos de Modelo**: Combinar características de modelos CLIP treinados em dados diferentes.
+2. **Otimização de Desempenho**: Equilibrar pontos fortes e fracos de diferentes modelos.
+3. **Pesquisa Experimental**: Explorar combinações de diferentes codificadores CLIP.

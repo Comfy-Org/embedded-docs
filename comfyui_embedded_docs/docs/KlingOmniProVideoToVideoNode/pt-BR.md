@@ -16,10 +16,11 @@ Este nó utiliza o modelo Kling AI para gerar um novo vídeo com base em um víd
 | `resolution` | COMBO | Não | `"1080p"`<br>`"720p"` | A resolução para o vídeo gerado (padrão: "1080p"). |
 
 **Restrições dos Parâmetros:**
-*   O `prompt` deve ter entre 1 e 2500 caracteres.
-*   O `reference_video` deve ter uma duração entre 3,0 e 10,05 segundos.
-*   O `reference_video` deve ter dimensões entre 720x720 e 2160x2160 pixels.
-*   Um máximo de 4 `reference_images` pode ser fornecido. Cada imagem deve ter pelo menos 300x300 pixels e uma proporção de tela entre 1:2,5 e 2,5:1.
+
+* O `prompt` deve ter entre 1 e 2500 caracteres.
+* O `reference_video` deve ter uma duração entre 3,0 e 10,05 segundos.
+* O `reference_video` deve ter dimensões entre 720x720 e 2160x2160 pixels.
+* Um máximo de 4 `reference_images` pode ser fornecido. Cada imagem deve ter pelo menos 300x300 pixels e uma proporção de tela entre 1:2,5 e 2,5:1.
 
 ## Saídas
 

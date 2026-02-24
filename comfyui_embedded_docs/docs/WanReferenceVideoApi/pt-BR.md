@@ -17,8 +17,9 @@ O nó Wan Reference to Video utiliza a aparência visual e a voz de um ou mais v
 | `watermark` | BOOLEAN | Não | - | Quando habilitado, uma marca d'água gerada por IA é adicionada ao vídeo final (padrão: Falso). |
 
 **Restrições:**
-*   Cada vídeo fornecido em `reference_videos` deve ter entre 2 e 30 segundos de duração.
-*   O parâmetro `duration` está limitado a valores específicos (5 ou 10 segundos).
+
+* Cada vídeo fornecido em `reference_videos` deve ter entre 2 e 30 segundos de duração.
+* O parâmetro `duration` está limitado a valores específicos (5 ou 10 segundos).
 
 ## Saídas
 

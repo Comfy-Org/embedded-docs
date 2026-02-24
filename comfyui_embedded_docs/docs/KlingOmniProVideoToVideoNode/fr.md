@@ -16,10 +16,11 @@ Ce nœud utilise le modèle Kling AI pour générer une nouvelle vidéo à parti
 | `resolution` | COMBO | Non | `"1080p"`<br>`"720p"` | La résolution pour la vidéo générée (par défaut : "1080p"). |
 
 **Contraintes des paramètres :**
-*   Le `prompt` doit contenir entre 1 et 2500 caractères.
-*   La `reference_video` doit avoir une durée comprise entre 3,0 et 10,05 secondes.
-*   La `reference_video` doit avoir des dimensions comprises entre 720x720 et 2160x2160 pixels.
-*   Un maximum de 4 `reference_images` peut être fourni. Chaque image doit mesurer au moins 300x300 pixels et avoir un format d'image compris entre 1:2,5 et 2,5:1.
+
+* Le `prompt` doit contenir entre 1 et 2500 caractères.
+* La `reference_video` doit avoir une durée comprise entre 3,0 et 10,05 secondes.
+* La `reference_video` doit avoir des dimensions comprises entre 720x720 et 2160x2160 pixels.
+* Un maximum de 4 `reference_images` peut être fourni. Chaque image doit mesurer au moins 300x300 pixels et avoir un format d'image compris entre 1:2,5 et 2,5:1.
 
 ## Sorties
 

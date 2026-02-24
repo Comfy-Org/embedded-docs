@@ -14,8 +14,9 @@ El nodo Kling Motion Control genera un vídeo aplicando el movimiento, las expre
 | `mode` | COMBO | No | `"pro"`<br>`"std"` | El modo de generación a utilizar. |
 
 **Restricciones:**
-*   La duración del `reference_video` debe estar entre 3 y 30 segundos cuando `character_orientation` está configurado en `"video"`.
-*   La duración del `reference_video` debe estar entre 3 y 10 segundos cuando `character_orientation` está configurado en `"image"`.
+
+* La duración del `reference_video` debe estar entre 3 y 30 segundos cuando `character_orientation` está configurado en `"video"`.
+* La duración del `reference_video` debe estar entre 3 y 10 segundos cuando `character_orientation` está configurado en `"image"`.
 
 ## Salidas
 

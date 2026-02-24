@@ -24,19 +24,19 @@ Bu düğüm, iki CLIP modelini belirli bir orana göre birleştirerek özellikle
 
 Düğüm, iki modeli birleştirmek için ağırlıklı ortalamayı kullanır:
 
-1.  **Temel Modeli Klonla**: İlk olarak `clip1` temel model olarak klonlanır.
-2.  **Yamaları Al**: `clip2`'den tüm anahtar yamaları alınır.
-3.  **Özel Anahtarları Filtrele**: Sonu `.position_ids` ve `.logit_scale` ile biten anahtarlar atlanır.
-4.  **Ağırlıklı Birleştirmeyi Uygula**: `(1.0 - ratio) * clip1 + ratio * clip2` formülü kullanılır.
+1. **Temel Modeli Klonla**: İlk olarak `clip1` temel model olarak klonlanır.
+2. **Yamaları Al**: `clip2`'den tüm anahtar yamaları alınır.
+3. **Özel Anahtarları Filtrele**: Sonu `.position_ids` ve `.logit_scale` ile biten anahtarlar atlanır.
+4. **Ağırlıklı Birleştirmeyi Uygula**: `(1.0 - ratio) * clip1 + ratio * clip2` formülü kullanılır.
 
 ### Oran Parametresi Açıklaması
 
--   **ratio = 0.0**: Tamamen `clip1` kullanır, `clip2`'yi yok sayar.
--   **ratio = 0.5**: Her modelden %50 katkı.
--   **ratio = 1.0**: Tamamen `clip2` kullanır, `clip1`'i yok sayar.
+- **ratio = 0.0**: Tamamen `clip1` kullanır, `clip2`'yi yok sayar.
+- **ratio = 0.5**: Her modelden %50 katkı.
+- **ratio = 1.0**: Tamamen `clip2` kullanır, `clip1`'i yok sayar.
 
 ## Kullanım Alanları
 
-1.  **Model Stili Füzyonu**: Farklı veriler üzerinde eğitilmiş CLIP modellerinin özelliklerini birleştirin.
-2.  **Performans Optimizasyonu**: Farklı modellerin güçlü ve zayıf yönlerini dengeleyin.
-3.  **Deneysel Araştırma**: Farklı CLIP kodlayıcıların kombinasyonlarını keşfedin.
+1. **Model Stili Füzyonu**: Farklı veriler üzerinde eğitilmiş CLIP modellerinin özelliklerini birleştirin.
+2. **Performans Optimizasyonu**: Farklı modellerin güçlü ve zayıf yönlerini dengeleyin.
+3. **Deneysel Araştırma**: Farklı CLIP kodlayıcıların kombinasyonlarını keşfedin.

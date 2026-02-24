@@ -16,10 +16,11 @@ Bu düğüm, bir giriş videosu ve isteğe bağlı referans görsellerine dayana
 | `resolution` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Oluşturulan video için çözünürlük (varsayılan: "1080p"). |
 
 **Parametre Kısıtlamaları:**
-*   `prompt` 1 ile 2500 karakter arasında olmalıdır.
-*   `reference_video` süresi 3.0 ile 10.05 saniye arasında olmalıdır.
-*   `reference_video` boyutları 720x720 ile 2160x2160 piksel arasında olmalıdır.
-*   En fazla 4 `reference_images` sağlanabilir. Her görsel en az 300x300 piksel olmalı ve en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
+
+* `prompt` 1 ile 2500 karakter arasında olmalıdır.
+* `reference_video` süresi 3.0 ile 10.05 saniye arasında olmalıdır.
+* `reference_video` boyutları 720x720 ile 2160x2160 piksel arasında olmalıdır.
+* En fazla 4 `reference_images` sağlanabilir. Her görsel en az 300x300 piksel olmalı ve en-boy oranı 1:2.5 ile 2.5:1 arasında olmalıdır.
 
 ## Çıktılar
 

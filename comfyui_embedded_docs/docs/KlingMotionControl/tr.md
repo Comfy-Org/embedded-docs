@@ -14,8 +14,9 @@ Kling Motion Control düğümü, bir referans videodaki hareketi, ifadeleri ve k
 | `mode` | COMBO | Hayır | `"pro"`<br>`"std"` | Kullanılacak oluşturma modu. |
 
 **Kısıtlamalar:**
-*   `character_orientation` `"video"` olarak ayarlandığında, `reference_video` süresi 3 ile 30 saniye arasında olmalıdır.
-*   `character_orientation` `"image"` olarak ayarlandığında, `reference_video` süresi 3 ile 10 saniye arasında olmalıdır.
+
+* `character_orientation` `"video"` olarak ayarlandığında, `reference_video` süresi 3 ile 30 saniye arasında olmalıdır.
+* `character_orientation` `"image"` olarak ayarlandığında, `reference_video` süresi 3 ile 10 saniye arasında olmalıdır.
 
 ## Çıkışlar
 

@@ -15,9 +15,10 @@ LTXV Image To Video düğümü, tek bir başlangıç görselinden profesyonel ka
 | `generate_audio` | BOOLEAN | Hayır | - | True olduğunda, oluşturulan video sahneye uyan AI tarafından üretilmiş sesi içerecektir (varsayılan: False). |
 
 **Önemli Kısıtlamalar:**
-*   `image` girişi tam olarak bir görsel içermelidir.
-*   `prompt` 1 ile 10.000 karakter arasında bir uzunlukta olmalıdır.
-*   10 saniyeden uzun bir `duration` seçerseniz, **"LTX-2 (Hızlı)"** modelini, **"1920x1080"** çözünürlüğünü ve **25** FPS değerini kullanmalısınız. Bu kombinasyon daha uzun videolar için gereklidir.
+
+* `image` girişi tam olarak bir görsel içermelidir.
+* `prompt` 1 ile 10.000 karakter arasında bir uzunlukta olmalıdır.
+* 10 saniyeden uzun bir `duration` seçerseniz, **"LTX-2 (Hızlı)"** modelini, **"1920x1080"** çözünürlüğünü ve **25** FPS değerini kullanmalısınız. Bu kombinasyon daha uzun videolar için gereklidir.
 
 ## Çıkışlar
 

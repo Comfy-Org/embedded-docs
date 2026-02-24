@@ -17,8 +17,9 @@ GeminiImage2Node, Google'ın Vertex AI Gemini modelini kullanarak görüntüler 
 | `system_prompt` | STRING | Hayır | Yok | Bir yapay zekanın davranışını belirleyen temel talimatlar. Varsayılan: Görüntü oluşturma için önceden tanımlanmış bir sistem istemi. |
 
 **Kısıtlamalar:**
-*   `images` girişi maksimum 14 görüntüyü destekler. Daha fazlası sağlanırsa bir hata oluşur.
-*   `files` girişi, `GEMINI_INPUT_FILES` veri türünü çıktı olarak veren bir düğüme bağlanmalıdır.
+
+* `images` girişi maksimum 14 görüntüyü destekler. Daha fazlası sağlanırsa bir hata oluşur.
+* `files` girişi, `GEMINI_INPUT_FILES` veri türünü çıktı olarak veren bir düğüme bağlanmalıdır.
 
 ## Çıkışlar
 

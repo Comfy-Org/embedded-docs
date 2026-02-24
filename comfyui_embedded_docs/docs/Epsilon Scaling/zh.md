@@ -1,4 +1,4 @@
-> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/zh.md)
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon%20Scaling/zh.md)
 
 此节点实现了研究论文《阐明扩散模型中的曝光偏差》中提出的 Epsilon Scaling 方法。它通过在采样过程中缩放预测噪声来帮助减少曝光偏差，从而提升生成图像的质量。此实现采用了论文推荐的“均匀调度”方案。
 

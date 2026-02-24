@@ -17,8 +17,9 @@ Le nœud GeminiImage2Node génère ou modifie des images en utilisant le modèle
 | `system_prompt` | STRING | Non | N/A | Instructions fondamentales qui dictent le comportement de l'IA. Par défaut : Une instruction système prédéfinie pour la génération d'images. |
 
 **Contraintes :**
-*   L'entrée `images` supporte un maximum de 14 images. Si plus sont fournies, une erreur sera levée.
-*   L'entrée `files` doit être connectée à un nœud qui produit le type de données `GEMINI_INPUT_FILES`.
+
+* L'entrée `images` supporte un maximum de 14 images. Si plus sont fournies, une erreur sera levée.
+* L'entrée `files` doit être connectée à un nœud qui produit le type de données `GEMINI_INPUT_FILES`.
 
 ## Sorties
 

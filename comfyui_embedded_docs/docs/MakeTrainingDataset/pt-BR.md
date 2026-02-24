@@ -12,7 +12,8 @@ Este nó prepara dados para treinamento codificando imagens e texto. Ele recebe 
 | `texts` | STRING | Não | N/A | Lista de legendas de texto. Pode ter comprimento n (correspondendo às imagens), 1 (repetido para todas) ou ser omitida (usa string vazia). |
 
 **Restrições dos Parâmetros:**
-*   O número de itens na lista `texts` deve ser 0, 1 ou corresponder exatamente ao número de itens na lista `images`. Se for 0, uma string vazia é usada para todas as imagens. Se for 1, esse texto único é repetido para todas as imagens.
+
+* O número de itens na lista `texts` deve ser 0, 1 ou corresponder exatamente ao número de itens na lista `images`. Se for 0, uma string vazia é usada para todas as imagens. Se for 1, esse texto único é repetido para todas as imagens.
 
 ## Saídas
 

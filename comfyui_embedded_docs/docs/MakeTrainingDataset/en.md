@@ -12,7 +12,8 @@ This node prepares data for training by encoding images and text. It takes a lis
 | `texts` | STRING | No | N/A | List of text captions. Can be length n (matching images), 1 (repeated for all), or omitted (uses empty string). |
 
 **Parameter Constraints:**
-*   The number of items in the `texts` list must be 0, 1, or exactly match the number of items in the `images` list. If it is 0, an empty string is used for all images. If it is 1, that single text is repeated for all images.
+
+* The number of items in the `texts` list must be 0, 1, or exactly match the number of items in the `images` list. If it is 0, an empty string is used for all images. If it is 1, that single text is repeated for all images.
 
 ## Outputs
 

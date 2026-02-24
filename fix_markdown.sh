@@ -24,27 +24,29 @@ else
     target_folder="$base_path"
 fi
 
-# Find all markdown files in the target folder and subfolders
-markdown_files=$(find "$target_folder" -type f -name "*.md")
+# Find all markdown files (null-delimited for paths with spaces)
+markdown_files=()
+while IFS= read -r -d '' f; do markdown_files+=("$f"); done < <(find "$target_folder" -type f -name "*.md" -print0 2>/dev/null)
 
 # Check if any markdown files were found
-if [ -z "$markdown_files" ]; then
+if [ ${#markdown_files[@]} -eq 0 ]; then
     echo "No markdown files found"
     exit 0
 fi
 
-echo "Fixing markdown files..."
+total=${#markdown_files[@]}
+# Batch size to stay under system ARG_MAX (command-line length limit)
+BATCH_SIZE=500
+echo "Fixing $total markdown files (batches of $BATCH_SIZE)..."
 
-# Loop through each markdown file and fix linting issues
-for file in $markdown_files; do
-    # Run markdownlint and capture its output
-    output=$(markdownlint --fix "$file" 2>&1)
-    
-    # Only show output if the file was modified
-    if [ -n "$output" ]; then
-        relative_path=${file#$base_path/}
-        echo "Updated: $relative_path"
+batch=()
+for f in "${markdown_files[@]}"; do
+    batch+=("$f")
+    if [ ${#batch[@]} -ge "$BATCH_SIZE" ]; then
+        markdownlint --fix "${batch[@]}" 2>/dev/null || true
+        batch=()
     fi
 done
+[ ${#batch[@]} -gt 0 ] && markdownlint --fix "${batch[@]}" 2>/dev/null || true
 
 echo "Done!"

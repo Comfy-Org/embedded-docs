@@ -11,8 +11,9 @@ O nó ReplaceVideoLatentFrames insere quadros de um vídeo latente de origem em 
 | `index` | INT | Não | -MAX_RESOLUTION a MAX_RESOLUTION | O índice do quadro latente inicial no latente de destino onde os quadros do latente de origem serão colocados. Valores negativos contam a partir do final (padrão: 0). |
 
 **Restrições:**
-*   O `index` deve estar dentro dos limites da contagem de quadros do latente de destino. Caso contrário, um aviso é registrado e o destino é retornado inalterado.
-*   Os quadros do latente de origem devem caber dentro dos quadros do latente de destino a partir do `index` especificado. Caso contrário, um aviso é registrado e o destino é retornado inalterado.
+
+* O `index` deve estar dentro dos limites da contagem de quadros do latente de destino. Caso contrário, um aviso é registrado e o destino é retornado inalterado.
+* Os quadros do latente de origem devem caber dentro dos quadros do latente de destino a partir do `index` especificado. Caso contrário, um aviso é registrado e o destino é retornado inalterado.
 
 ## Saídas
 

@@ -12,7 +12,8 @@ Ce nœud prépare des données pour l'entraînement en encodant des images et du
 | `texts` | STRING | Non | N/A | Liste des légendes textuelles. Peut avoir une longueur n (correspondant aux images), 1 (répétée pour toutes) ou être omise (utilise une chaîne vide). |
 
 **Contraintes des paramètres :**
-*   Le nombre d'éléments dans la liste `texts` doit être 0, 1, ou correspondre exactement au nombre d'éléments dans la liste `images`. S'il est 0, une chaîne vide est utilisée pour toutes les images. S'il est 1, ce texte unique est répété pour toutes les images.
+
+* Le nombre d'éléments dans la liste `texts` doit être 0, 1, ou correspondre exactement au nombre d'éléments dans la liste `images`. S'il est 0, une chaîne vide est utilisée pour toutes les images. S'il est 1, ce texte unique est répété pour toutes les images.
 
 ## Sorties
 
