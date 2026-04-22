@@ -44,6 +44,38 @@ The publishing workflow:
 1. Builds the package using `python -m build`
 2. Publishes to PyPI using the configured PYPI_TOKEN secret
 
+## Syncing to Comfy docs
+
+The script `doc_automation/sync_to_comfy_docs.py` syncs embedded-docs (en.md, zh.md, and assets) to the [comfy/docs](https://github.com/Comfy-Org/comfy/tree/main/docs) repository as built-in node MDX files and updates the navigation (`docs.json`).
+
+**Environment variables (optional):**
+
+- `EMBEDDED_DOCS_PATH` – Path to this repo (default: parent of `doc_automation`)
+- `COMFYUI_PATH` – Path to the ComfyUI repo (used to read node category from source)
+- `TARGET_DOCS` – Path to the comfy/docs root (e.g. `/path/to/comfy/docs`)
+
+**Category mapping:** The sync script uses each node’s ComfyUI category to put it in the right docs.json group. For the most complete categories (including API nodes and nodes that get category from a base class), run the node scanner once so it can write `doc_automation/all_nodes_info.json`; the sync script will prefer that file when present.
+
+```sh
+# Optional: run scanner first to build all_nodes_info.json (better category coverage)
+python doc_automation/scan_missing_nodes.py
+```
+
+**Run from repo root:**
+
+```sh
+# Test mode: sync first 10 nodes (dry run: no writes)
+python doc_automation/sync_to_comfy_docs.py --mode test --count 10 --dry-run
+
+# Sync all nodes with en.md and update docs.json
+python doc_automation/sync_to_comfy_docs.py --mode all
+
+# Sync a single node
+python doc_automation/sync_to_comfy_docs.py --node Load3D
+```
+
+You can also use the interactive menu: run `python doc_automation/main.py` and choose option **5) 同步到 Comfy 文档 (Sync to Comfy docs)**.
+
 ## Linting
 
 To ensure minimal consistency across nodes documentation, it is recommended to follow the Markdown linting principles. Some of the linting issues can be fixed automatically with the shell script below. Note this requires to install `markdownlint-cli`.

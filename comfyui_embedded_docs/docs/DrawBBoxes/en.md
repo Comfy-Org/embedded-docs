@@ -1,0 +1,21 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/en.md)
+
+The DrawBBoxes node visualizes object detection results by drawing bounding boxes, labels, and confidence scores onto an image. If no input image is provided, it creates a blank canvas large enough to contain all the drawn boxes. It supports batch processing, allowing you to draw different sets of detections for multiple images or repeat the same detections across a batch.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | No | - | The input image(s) to draw the bounding boxes onto. If not provided, a blank canvas will be generated. |
+| `bboxes` | BOUNDINGBOX | Yes | - | A list of bounding box dictionaries. Each dictionary should contain keys for `x`, `y`, `width`, `height`, and optionally `label` and `score`. |
+
+**Input Constraints:**
+*   The `bboxes` input is required and must be provided.
+*   The node automatically handles different input formats for `bboxes`. A single dictionary will be applied to all images in the batch. A flat list of dictionaries will be treated as the same set of detections for every image. A list of lists allows you to specify different detections for each image in the batch.
+*   If an `image` is not provided, the node will create a blank image with dimensions large enough to fit all provided bounding boxes, with a default minimum size of 640x640.
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `out_image` | IMAGE | The output image(s) with the drawn bounding boxes, labels, and confidence scores overlaid. |
