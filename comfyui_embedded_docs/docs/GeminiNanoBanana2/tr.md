@@ -1,0 +1,56 @@
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2/tr.md)
+
+ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+
+## Çeviri Kuralları
+
+1. **Çevrilmemesi gereken içerik:**
+   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
+   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
+   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
+   - Kod, dosya yolları
+
+2. **Çevrilmesi gereken içerik:**
+   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
+   - Tüm açıklayıcı metinler
+   - Parametre açıklamaları
+
+3. **Çeviri kalitesi:**
+   - Standart Türkçe kullanın
+   - Profesyonel ama anlaşılır bir üslup koruyun
+   - Teknik doğruluğu sağlayın
+   - Standart Türkçe teknik terminolojiyi kullanın
+
+4. **Format:**
+   - Tüm Markdown biçimlendirmesini koruyun
+   - Tablo yapısını koruyun
+   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
+
+Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
+
+GeminiNanoBanana2 düğümü, Google'ın Vertex AI Gemini modelini kullanarak görseller oluşturur veya düzenler. Bir metin istemini, isteğe bağlı referans görselleri veya dosyalarla birlikte API'ye göndererek çalışır ve oluşturulan görseli ve varsa eşlik eden metni döndürür.
+
+## Girişler
+
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | Evet | Yok | Oluşturulacak görseli veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin uyması gereken kısıtlamaları, stilleri veya detayları ekleyin. |
+| `model` | COMBO | Evet | `"Nano Banana 2 (Gemini 3.1 Flash Image)"` | Görsel oluşturma için kullanılacak belirli Gemini modeli. |
+| `seed` | INT | Evet | 0 - 18446744073709551615 | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan istekler için aynı yanıtı vermeye çalışır. Belirleyici çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır. (varsayılan: 42) |
+| `aspect_ratio` | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"21:9"` | 'auto' olarak ayarlanırsa, giriş görselinizin en boy oranıyla eşleşir; hiçbir görsel sağlanmazsa, genellikle 16:9 kare oluşturulur. (varsayılan: "auto") |
+| `resolution` | COMBO | Evet | `"1K"`<br>`"2K"`<br>`"4K"` | Hedef çıktı çözünürlüğü. 2K/4K için yerel Gemini yükseltici kullanılır. |
+| `response_modalities` | COMBO | Evet | `"IMAGE"`<br>`"IMAGE+TEXT"` | Modelin döndüreceği içerik türünü belirler. (gelişmiş) |
+| `thinking_level` | COMBO | Evet | `"MINIMAL"`<br>`"HIGH"` | Modelin akıl yürütme sürecinin derinliğini kontrol eder. |
+| `images` | IMAGE | Hayır | Yok | İsteğe bağlı referans görsel(ler)i. Birden fazla görsel eklemek için Toplu Görseller düğümünü kullanın (en fazla 14). |
+| `files` | CUSTOM | Hayır | Yok | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini İçerik Oluşturma Giriş Dosyaları düğümünden girişleri kabul eder. |
+| `system_prompt` | STRING | Hayır | Yok | Bir yapay zekanın davranışını belirleyen temel talimatlar. (gelişmiş) |
+
+**Not:** `images` girişi en fazla 14 görseli destekler. Daha fazlası sağlanırsa, düğüm bir hata verecektir.
+
+## Çıktılar
+
+| Çıktı Adı | Veri Türü | Açıklama |
+|-------------|-----------|-------------|
+| `image` | IMAGE | Model tarafından oluşturulan veya düzenlenen ana görsel. |
+| `string` | STRING | Model tarafından döndürülen herhangi bir metin içeriği. |
+| `thought_image` | IMAGE | Modelin düşünme sürecinden ilk görsel. Yalnızca thinking_level HIGH ve IMAGE+TEXT modalitesi ile kullanılabilir. |

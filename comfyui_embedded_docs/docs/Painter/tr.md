@@ -1,0 +1,50 @@
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Painter/tr.md)
+
+ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+
+## Çeviri Kuralları
+
+1. **Çevrilmemesi gereken içerik:**
+   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
+   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
+   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
+   - Kod, dosya yolları
+
+2. **Çevrilmesi gereken içerik:**
+   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
+   - Tüm açıklayıcı metinler
+   - Parametre açıklamaları
+
+3. **Çeviri kalitesi:**
+   - Standart Türkçe kullanın
+   - Profesyonel ama anlaşılır bir üslup koruyun
+   - Teknik doğruluğu sağlayın
+   - Standart Türkçe teknik terminolojiyi kullanın
+
+4. **Format:**
+   - Tüm Markdown biçimlendirmesini koruyun
+   - Tablo yapısını koruyun
+   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
+
+Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
+
+Painter düğümü, ComfyUI içinde doğrudan görüntü veya maske oluşturmak veya düzenlemek için etkileşimli bir tuval sağlar. Boş bir tuvalle veya mevcut bir görüntüyle başlamanıza, bir fırça aracı kullanarak üzerine boyama yapmanıza ve hem ortaya çıkan görüntüyü hem de karşılık gelen bir alfa maskesini çıktı olarak vermenize olanak tanır. Maske, boyanan alanları tanımlar ve bu alanlar daha sonra temel görüntü veya arka plan rengi üzerine yerleştirilir (kompozitlenir).
+
+## Girişler
+
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | Hayır | - | Üzerine boyama yapılacak isteğe bağlı temel görüntü. Sağlanmazsa, belirtilen arka plan rengi, genişlik ve yükseklik kullanılarak boş bir tuval oluşturulur. |
+| `mask` | STRING | Evet | - | Genellikle düğümün yerleşik etkileşimli aracı tarafından oluşturulan boyama verisi. Bu parametre, arayüzün boyama aracı tarafından yönetilir ve standart bir sokete bağlanması amaçlanmamıştır. |
+| `width` | INT | Evet | 64 ila 4096 | Tuvalin piksel cinsinden genişliği, temel bir `image` sağlanmadığında kullanılır. Değer 64'ün katı olmalıdır. Varsayılan 512'dir. |
+| `height` | INT | Evet | 64 ila 4096 | Tuvalin piksel cinsinden yüksekliği, temel bir `image` sağlanmadığında kullanılır. Değer 64'ün katı olmalıdır. Varsayılan 512'dir. |
+| `bg_color` | COLOR | Evet | - | Tuval için arka plan rengi, onaltılık kod olarak belirtilir (örn. #000000). Bu yalnızca temel bir `image` sağlanmadığında kullanılır. Varsayılan siyahtır (#000000). |
+
+**Not:** `mask` girişi, düğümün özel arayüz aracıyla çalışacak şekilde tasarlanmıştır. Tuval üzerinde boyama yaptığınızda, araç bu değeri otomatik olarak doldurur. `width` ve `height` girişleri standart arayüzde gizlidir ancak yeni bir görüntü oluştururken tuval boyutlarını tanımlar.
+
+## Çıktılar
+
+| Çıktı Adı | Veri Türü | Açıklama |
+|-------------|-----------|-------------|
+| `IMAGE` | IMAGE | Nihai birleştirilmiş (kompozit) görüntü. Bu, boyanan alanların (`mask`'tan) sağlanan temel `image` veya renkli arka plan üzerine harmanlanmasının sonucudur. |
+| `MASK` | MASK | Boyamadan çıkarılan alfa kanalı (saydamlık) maskesi. Beyaz alanlar boyanan bölgeleri, siyah alanlar ise dokunulmamış arka planı temsil eder. |

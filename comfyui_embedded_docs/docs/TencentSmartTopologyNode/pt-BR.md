@@ -1,0 +1,20 @@
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentSmartTopologyNode/pt-BR.md)
+
+Este nó realiza retopologia inteligente em um modelo 3D, que é o processo de criar automaticamente uma nova malha mais limpa com uma contagem menor de polígonos. Ele se conecta a uma API Tencent Hunyuan 3D para processar o modelo, suportando os formatos de arquivo GLB e OBJ. O nó retorna o modelo processado como um arquivo OBJ.
+
+## Entradas
+
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
+| `model_3d` | FILE3D | Sim | - | Modelo 3D de entrada (GLB ou OBJ). O arquivo deve estar nos formatos GLB ou OBJ e não pode exceder 200MB. |
+| `polygon_type` | STRING | Sim | `"triangle"`<br>`"quadrilateral"` | Tipo de composição da superfície. |
+| `face_level` | STRING | Sim | `"medium"`<br>`"high"`<br>`"low"` | Nível de redução de polígonos. |
+| `seed` | INT | Não | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) |
+
+**Observação:** O parâmetro `seed` é usado para acionar uma nova execução do nó, mas a saída final não é garantida de ser a mesma para o mesmo valor de semente.
+
+## Saídas
+
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `OBJ` | FILE3D | O modelo 3D processado com topologia otimizada, retornado no formato OBJ. |

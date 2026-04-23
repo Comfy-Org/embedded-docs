@@ -12,3 +12,4 @@ dist
 
 # Doc automation outputs
 /doc_automation
+.claude/

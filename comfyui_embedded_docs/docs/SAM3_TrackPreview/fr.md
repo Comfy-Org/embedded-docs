@@ -1,0 +1,22 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackPreview/fr.md)
+
+Voici la traduction en français de la documentation du nœud ComfyUI, en respectant toutes les règles spécifiées :
+
+## Aperçu
+
+Ce nœud crée un aperçu vidéo des objets suivis, en dessinant chaque objet suivi avec une superposition de couleur distincte et une étiquette numérique. Il ne produit aucun tenseur d'image ou de vidéo — à la place, il enregistre directement la vidéo d'aperçu résultante dans un fichier temporaire.
+
+## Entrées
+
+| Paramètre | Type de données | Requis | Plage | Description |
+|-----------|-----------------|--------|-------|-------------|
+| `track_data` | TRACK_DATA | Oui | - | Les données de suivi contenant les masques compressés et les informations d'objets provenant d'un nœud de suivi SAM3. |
+| `images` | IMAGE | Non | - | Images d'entrée facultatives à utiliser comme arrière-plan pour l'aperçu. Si non fournies, un arrière-plan noir est utilisé. |
+| `opacity` | FLOAT | Non | 0,0 à 1,0 (pas : 0,05) | L'opacité de la superposition de couleur appliquée aux objets suivis (par défaut : 0,5). |
+| `fps` | FLOAT | Non | 1,0 à 120,0 (pas : 1,0) | La fréquence d'images de la vidéo de sortie (par défaut : 24,0). |
+
+## Sorties
+
+| Nom de sortie | Type de données | Description |
+|---------------|-----------------|-------------|
+| `ui` | PREVIEW_VIDEO | Un élément d'interface utilisateur qui affiche la vidéo d'aperçu générée. Aucune donnée tensorielle n'est retournée. |

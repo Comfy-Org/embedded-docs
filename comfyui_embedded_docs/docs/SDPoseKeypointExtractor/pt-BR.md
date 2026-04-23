@@ -1,0 +1,25 @@
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseKeypointExtractor/pt-BR.md)
+
+O nó SDPoseKeypointExtractor detecta pontos-chave de pose humana a partir de imagens de entrada usando o modelo SDPose. Ele pode processar imagens completas ou regiões específicas definidas por caixas delimitadoras e gera os pontos-chave detectados no formato OpenPose, que inclui as coordenadas para cada pessoa e uma pontuação de confiança para cada ponto-chave.
+
+## Entradas
+
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
+| `model` | MODEL | Sim | - | O modelo SDPose usado para detecção de pontos-chave. Deve ser um modelo com o atributo `heatmap_head`, especificamente do repositório SDPose. |
+| `vae` | VAE | Sim | - | O modelo VAE usado para codificar as imagens de entrada no espaço latente para processamento. |
+| `image` | IMAGE | Sim | - | A imagem de entrada ou lote de imagens do qual extrair os pontos-chave de pose. |
+| `batch_size` | INT | Não | 1 a 10000 | O número de imagens a serem processadas de uma vez ao executar no modo de imagem completa (ou seja, quando `bboxes` não é fornecido). Isso pode acelerar o processamento. (padrão: 16) |
+| `bboxes` | BOUNDINGBOX | Não | - | Caixas delimitadoras opcionais para detecções mais precisas. Necessário para detecção de múltiplas pessoas. Se fornecido, o nó extrairá pontos-chave de cada região especificada. |
+
+**Restrições dos Parâmetros:**
+*   A entrada `model` deve ser um modelo SDPose específico. Se o modelo fornecido não tiver o atributo `heatmap_head`, o nó gerará um erro.
+*   O nó opera em dois modos distintos com base na entrada `bboxes`:
+    1.  **Modo Caixa Delimitadora:** Quando `bboxes` é fornecido, ele processa cada região especificada individualmente. Isso é necessário para detectar várias pessoas em uma única imagem.
+    2.  **Modo Imagem Completa:** Quando `bboxes` não é fornecido, ele processa a imagem inteira como um lote. O parâmetro `batch_size` se aplica apenas neste modo.
+
+## Saídas
+
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `keypoints` | POSE_KEYPOINT | Pontos-chave no formato de quadro OpenPose (largura_tela, altura_tela, pessoas). A saída contém as pessoas detectadas, cada uma com uma matriz de coordenadas de pontos-chave (x, y) e suas respectivas pontuações de confiança. |

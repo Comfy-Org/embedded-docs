@@ -1,0 +1,22 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/zh.md)
+
+Reve Image Create 节点使用 Reve AI 模型，根据文本描述生成图像。它将文本提示发送到 Reve API 并返回生成的图像。您可以控制图像的宽高比，并应用可选的后处理效果，如放大。
+
+## 输入参数
+
+| 参数 | 数据类型 | 必填 | 范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | 是 | N/A | 期望图像的文本描述。最多 2560 个字符。 |
+| `model` | COMBO | 是 | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | 用于生成的模型版本和宽高比。第一个选项选择模型，后续选项定义图像的宽高比。 |
+| `upscale` | COMBO | 否 | `"disabled"`<br>`"enabled"` | 启用或禁用放大的后处理步骤。启用时，还必须选择一个放大因子。 |
+| `upscale_factor` | COMBO | 否 | `2`<br>`3`<br>`4` | 图像分辨率增加的倍数。此参数仅在 `upscale` 设置为 `"enabled"` 时生效。 |
+| `remove_background` | BOOLEAN | 否 | N/A | 启用后，对生成的图像应用背景移除的后处理步骤。 |
+| `seed` | INT | 否 | 0 到 2147483647 | 控制节点是否应重新运行的种子值。注意：无论种子值如何，结果都是非确定性的。默认值：0。 |
+
+**注意：** `upscale_factor` 参数依赖于 `upscale` 参数被设置为 `"enabled"`。`seed` 参数不保证输出是确定性的。
+
+## 输出
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `image` | IMAGE | 由 Reve 模型根据输入提示生成的图像。 |

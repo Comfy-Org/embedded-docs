@@ -1,0 +1,50 @@
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/tr.md)
+
+ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+
+## Çeviri Kuralları
+
+1. **Çevrilmemesi gereken içerik:**
+   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
+   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
+   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
+   - Kod, dosya yolları
+
+2. **Çevrilmesi gereken içerik:**
+   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
+   - Tüm açıklayıcı metinler
+   - Parametre açıklamaları
+
+3. **Çeviri kalitesi:**
+   - Standart Türkçe kullanın
+   - Profesyonel ama anlaşılır bir üslup koruyun
+   - Teknik doğruluğu sağlayın
+   - Standart Türkçe teknik terminolojiyi kullanın
+
+4. **Format:**
+   - Tüm Markdown biçimlendirmesini koruyun
+   - Tablo yapısını koruyun
+   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
+
+Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
+
+Reve Image Create düğümü, Reve AI modelini kullanarak metin açıklamalarından görseller oluşturur. Bir metin istemini Reve API'sine gönderir ve oluşturulan görseli döndürür. Görselin en-boy oranını kontrol edebilir ve yükseltme gibi isteğe bağlı son işleme efektleri uygulayabilirsiniz.
+
+## Girişler
+
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | Evet | Yok | İstenen görselin metin açıklaması. Maksimum 2560 karakter. |
+| `model` | COMBO | Evet | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Oluşturma için kullanılacak model sürümü ve en-boy oranı. İlk seçenek modeli seçer, sonraki seçenekler ise görselin en-boy oranını tanımlar. |
+| `upscale` | COMBO | Hayır | `"disabled"`<br>`"enabled"` | Yükseltme son işleme adımını etkinleştirir veya devre dışı bırakır. Etkinleştirildiğinde, bir yükseltme faktörü de seçmelisiniz. |
+| `upscale_factor` | COMBO | Hayır | `2`<br>`3`<br>`4` | Görselin çözünürlüğünün artırılacağı faktör. Bu parametre yalnızca `upscale` `"enabled"` olarak ayarlandığında etkindir. |
+| `remove_background` | BOOLEAN | Hayır | Yok | Etkinleştirildiğinde, oluşturulan görsele bir arka plan kaldırma son işleme adımı uygular. |
+| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eden bir tohum değeri. Not: Tohum değerinden bağımsız olarak sonuçlar deterministik değildir. Varsayılan: 0. |
+
+**Not:** `upscale_factor` parametresi, `upscale` parametresinin `"enabled"` olarak ayarlanmasına bağlıdır. `seed` parametresi deterministik çıktıları garanti etmez.
+
+## Çıktılar
+
+| Çıktı Adı | Veri Türü | Açıklama |
+|-------------|-----------|-------------|
+| `image` | IMAGE | Giriş istemine dayalı olarak Reve modeli tarafından oluşturulan görsel. |
