@@ -1,0 +1,22 @@
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyMathExpression/tr.md)
+
+ComfyMathExpression düğümü, bir dizi girdi değeri kullanarak matematiksel bir formülü değerlendirir. Değişken adları (örneğin `a`, `b`, `c`) kullanarak bir ifade yazabilirsiniz ve düğüm sonucu hesaplar. Hesaplamanız için gerektiği kadar girdi değerini dinamik olarak eklemeyi destekler.
+
+## Girdiler
+
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|---------|--------|----------|
+| `expression` | STRING | Evet | Yok | Değerlendirilecek matematiksel formül. Girdi değerlerine karşılık gelen değişken adlarını kullanabilirsiniz (varsayılan: "a + b"). |
+| `values` | FLOAT, INT | Hayır | Yok | Dinamik olarak eklenebilen bir dizi sayısal girdi. Her girdiye, ifadede değişken olarak kullanılmak üzere alfabeden bir harf (a, b, c, ...) atanır. |
+
+**Parametre Kısıtlamaları:**
+*   `expression` parametresi boş olamaz veya yalnızca boşluk karakterlerinden oluşamaz.
+*   İfade, sonlu bir sayısal sonuç (INT veya FLOAT) vermelidir. Boolean veya diğer sayısal olmayan sonuçlar hataya neden olur.
+*   `values` parametresi için girdi değerleri geçerli sayılar (INT veya FLOAT) olmalıdır.
+
+## Çıktılar
+
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `FLOAT` | FLOAT | Matematiksel ifadenin kayan noktalı sayı olarak sonucu. |
+| `INT` | INT | Matematiksel ifadenin tam sayı olarak sonucu. |

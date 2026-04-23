@@ -1,0 +1,21 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingAvatarNode/en.md)
+
+The Kling Avatar 2.0 node generates broadcast-style digital human videos. It uses a single reference photo and an audio file to create a talking avatar video. An optional text prompt can be used to define the avatar's actions, emotions, and camera movements.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | Yes | - | Avatar reference image. Width and height must be at least 300px. Aspect ratio must be between 1:2.5 and 2.5:1. |
+| `sound_file` | AUDIO | Yes | - | Audio input. Must be between 2 and 300 seconds in duration. |
+| `mode` | COMBO | Yes | `"std"`<br>`"pro"` | The generation mode to use. |
+| `prompt` | STRING | No | - | Optional prompt to define avatar actions, emotions, and camera movements. (default: empty string) |
+| `seed` | INT | Yes | 0 to 2147483647 | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. (default: 0) |
+
+**Note:** The `image` and `sound_file` inputs have specific validation requirements. The image must be at least 300x300 pixels with an aspect ratio between 1:2.5 and 2.5:1. The audio file must be between 2 and 300 seconds long.
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `output` | VIDEO | The generated digital human video. |

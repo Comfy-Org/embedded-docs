@@ -1,0 +1,31 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSCAILToVideo/en.md)
+
+The WanSCAILToVideo node prepares conditioning and an empty latent space for video generation. It processes optional inputs like reference images, pose videos, and CLIP vision outputs, embedding them into the positive and negative conditioning for a video model. The node outputs the modified conditioning and a blank latent tensor of the specified video dimensions.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `positive` | CONDITIONING | Yes | - | The positive conditioning input. |
+| `negative` | CONDITIONING | Yes | - | The negative conditioning input. |
+| `vae` | VAE | Yes | - | The VAE model used for encoding images and video frames. |
+| `width` | INT | Yes | 32 to MAX_RESOLUTION | The width of the output video in pixels (default: 512). Must be divisible by 8. |
+| `height` | INT | Yes | 32 to MAX_RESOLUTION | The height of the output video in pixels (default: 896). Must be divisible by 8. |
+| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the video (default: 81). |
+| `batch_size` | INT | Yes | 1 to 4096 | The number of videos to generate in a batch (default: 1). |
+| `clip_vision_output` | CLIP_VISION_OUTPUT | No | - | Optional CLIP vision output for conditioning. |
+| `reference_image` | IMAGE | No | - | An optional reference image for conditioning. |
+| `pose_video` | IMAGE | No | - | Video used for pose conditioning. Will be downscaled to half the resolution of the main video. |
+| `pose_strength` | FLOAT | Yes | 0.0 to 10.0 | Strength of the pose latent (default: 1.0). |
+| `pose_start` | FLOAT | Yes | 0.0 to 1.0 | Start step to use pose conditioning (default: 0.0). |
+| `pose_end` | FLOAT | Yes | 0.0 to 1.0 | End step to use pose conditioning (default: 1.0). |
+
+**Note:** The `pose_video` input is processed only for the first `length` frames. The `reference_image` is processed only for the first image in the batch.
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `positive` | CONDITIONING | The modified positive conditioning, potentially containing embedded reference image latents, CLIP vision output, or pose video latents. |
+| `negative` | CONDITIONING | The modified negative conditioning, potentially containing embedded reference image latents, CLIP vision output, or pose video latents. |
+| `latent` | LATENT | An empty latent tensor of shape `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. |

@@ -1,0 +1,31 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/en.md)
+
+The ColorTransfer node adjusts the color palette of a target image to match the colors of a reference image. It uses different mathematical algorithms to analyze and transfer the color characteristics, such as brightness, contrast, and hue distribution, from the reference to the target. This is useful for creating visual consistency across multiple images or applying a specific color grade.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `image_target` | IMAGE | Yes | - | Image(s) to apply the color transform to. |
+| `image_ref` | IMAGE | No | - | Reference image(s) to match colors to. If not provided, processing is skipped and the target image is returned unchanged. |
+| `method` | COMBO | Yes | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` | The color transfer algorithm to use. |
+| `source_stats` | DYNAMICCOMBO | Yes | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` | Determines how color statistics are calculated from the source (target) image(s). |
+| `strength` | FLOAT | Yes | 0.0 to 10.0 | The intensity of the color transfer effect. A value of 1.0 applies the full transform, while 0.0 returns the original image. Default: 1.0 |
+
+**Parameter Details:**
+*   **`source_stats` Options:**
+    *   **`per_frame`**: Each frame in a batch is matched to the `image_ref` individually.
+    *   **`uniform`**: Color statistics are pooled across all source frames to create a single baseline, which is then matched to the `image_ref`.
+    *   **`target_frame`**: Uses one chosen frame from the target batch as the baseline for computing the transform to the `image_ref`. This transform is then applied uniformly to all frames, which preserves the relative color differences between them. When this option is selected, an additional `target_index` parameter becomes available.
+*   **`target_index`** (appears when `source_stats` is `"target_frame"`): The frame index (starting from 0) used as the source baseline for computing the transform. Default: 0. Must be between 0 and 10000.
+
+**Constraints:**
+*   If `image_ref` is not provided or `strength` is set to 0.0, the node returns the original `image_target` without processing.
+*   When `source_stats` is set to `"target_frame"`, the `target_index` must be a valid index within the batch of `image_target`. If it exceeds the number of frames, the last frame is used.
+*   For the `histogram` method with `source_stats` set to `"per_frame"`, if the batch size of `image_ref` is greater than 1, each target frame is matched to the corresponding reference frame by index. If the reference batch has only one frame, it is used for all target frames.
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `image` | IMAGE | The resulting image(s) after the color transfer has been applied. |
