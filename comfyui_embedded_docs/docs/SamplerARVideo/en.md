@@ -1,0 +1,17 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerARVideo/en.md)
+
+# Sampler AR Video
+
+The Sampler AR Video node provides a specialized sampling method for autoregressive video models, such as those using Causal Forcing or Self-Forcing techniques. It manages all parameters related to the autoregressive (AR) loop directly within the workflow, making it easy to configure how the model generates video frames one step at a time.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `num_frame_per_block` | INT | Yes | 1 to 64 | Frames per autoregressive block. A value of 1 means the model generates one frame at a time (framewise), while a value of 3 means it generates three frames together (chunkwise). This setting must match the checkpoint's training mode. Default: 1. |
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `SAMPLER` | SAMPLER | A configured sampler object that uses the "ar_video" sampling function with the specified autoregressive parameters. |

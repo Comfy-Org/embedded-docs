@@ -4,10 +4,10 @@ The AudioAdjustVolume node modifies the loudness of audio by applying volume adj
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `audio` | AUDIO | required | - | - | The audio input to be processed |
-| `volume` | INT | required | 1.0 | -100 to 100 | Volume adjustment in decibels (dB). 0 = no change, +6 = double, -6 = half, etc |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `audio` | AUDIO | Yes | - | The audio input to be processed |
+| `volume` | INT | Yes | -100 to 100 | Volume adjustment in decibels (dB). 0 = no change, +6 = double, -6 = half, etc (default: 1) |
 
 ## Outputs
 

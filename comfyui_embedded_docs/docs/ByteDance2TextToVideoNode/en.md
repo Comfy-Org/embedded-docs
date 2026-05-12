@@ -8,7 +8,7 @@ This node uses ByteDance's Seedance 2.0 API to generate a video from a text desc
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Yes | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | The model to use for video generation. Selecting a model will reveal additional required inputs for the prompt, resolution, aspect ratio, duration, and audio generation. "Seedance 2.0" is for maximum quality; "Seedance 2.0 Fast" is for speed optimization. |
 | `seed` | INT | No | 0 to 2147483647 | A seed value (default: 0). The node will re-run if this value changes, but the results are non-deterministic regardless of the seed. |
-| `watermark` | BOOLEAN | No | `True` / `False` | Whether to add a watermark to the video (default: False). This is an advanced setting. |
+| `watermark` | BOOLEAN | No | True / False | Whether to add a watermark to the video (default: False). This is an advanced setting. |
 
 **Note:** The `model` parameter is a dynamic combo. When you select a model, it will reveal several required sub-parameters that must be filled in, including the text prompt, resolution, aspect ratio, duration, and whether to generate audio. The prompt text must be at least 1 character long after removing whitespace.
 

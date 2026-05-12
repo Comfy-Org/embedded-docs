@@ -6,8 +6,7 @@ The Batch Latents node combines multiple latent inputs into a single batch. It t
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `latents` | LATENT | Yes | N/A | The first latent sample to be included in the batch. |
-| `latent_2` to `latent_50` | LATENT | No | N/A | Additional latent samples to be included in the batch. You can add between 2 and 50 latent inputs in total. |
+| `latents` | LATENT | Yes | 2 to 50 inputs | A set of latent samples to be combined into a single batch. You must provide at least two latents, and you can add up to 50. The node automatically creates input slots as you connect more latents. |
 
 **Note:** You must provide at least two latent inputs for the node to function. The node will automatically create input slots as you connect more latents, up to a maximum of 50.
 

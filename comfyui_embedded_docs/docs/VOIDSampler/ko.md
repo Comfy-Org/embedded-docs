@@ -1,0 +1,19 @@
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDSampler/ko.md)
+
+## 개요
+
+VOIDSampler 노드는 VOID 인페인팅 모델을 위해 특별히 설계된 전용 DDIM 샘플링 방식을 제공합니다. 표준 KSampler가 적용하는 노이즈 스케일링 없이, VOID 모델 학습 시 사용된 것과 동일한 노이즈 제거 프로세스를 구현합니다. 이 노드는 SamplerCustom 또는 SamplerCustomAdvanced 노드와 함께 사용하기 위한 것이며, RandomNoise 또는 VOIDWarpedNoiseSource와 함께 사용해야 합니다.
+
+## 입력
+
+이 노드는 구성 가능한 입력 매개변수가 없습니다. 고정된 DDIM 샘플링 알고리즘을 적용하는 독립형 샘플러입니다.
+
+| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+|-----------|-----------|----------|-------|-------------|
+| *입력 없음* | - | - | - | 이 노드는 어떠한 입력 매개변수도 허용하지 않습니다. |
+
+## 출력
+
+| 출력 이름 | 데이터 타입 | 설명 |
+|-------------|-----------|-------------|
+| `SAMPLER` | SAMPLER | VOID DDIM 알고리즘을 구현한 샘플러 객체로, SamplerCustom 또는 SamplerCustomAdvanced 노드에 연결할 수 있습니다. |

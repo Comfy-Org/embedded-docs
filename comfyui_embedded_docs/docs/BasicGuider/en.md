@@ -4,10 +4,10 @@ The BasicGuider node creates a simple guidance mechanism for the sampling proces
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | required | - | - | The model to be used for guidance |
-| `conditioning` | CONDITIONING | required | - | - | The conditioning data that guides the generation process |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Yes | - | The model to be used for guidance |
+| `conditioning` | CONDITIONING | Yes | - | The conditioning data that guides the generation process |
 
 ## Outputs
 

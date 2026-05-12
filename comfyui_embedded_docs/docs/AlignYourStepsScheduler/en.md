@@ -4,11 +4,11 @@ The AlignYourStepsScheduler node generates sigma values for the denoising proces
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model_type` | STRING | COMBO | - | SD1, SDXL, SVD | Specifies the type of model to use for sigma calculation |
-| `steps` | INT | INT | 10 | 1-10000 | The total number of sampling steps to generate |
-| `denoise` | FLOAT | FLOAT | 1.0 | 0.0-1.0 | Controls how much to denoise the image, where 1.0 uses all steps and lower values use fewer steps |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model_type` | STRING | Yes | `"SD1"`<br>`"SDXL"`<br>`"SVD"` | Specifies the type of model to use for sigma calculation (default: "SD1") |
+| `steps` | INT | Yes | 1 to 10000 | The total number of sampling steps to generate (default: 10) |
+| `denoise` | FLOAT | Yes | 0.0 to 1.0 | Controls how much to denoise the image, where 1.0 uses all steps and lower values use fewer steps (default: 1.0) |
 
 ## Outputs
 

@@ -1,0 +1,24 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseReferenceVideoApi/zh.md)
+
+## 概述
+
+此节点使用 HappyHorse 模型，基于参考图像生成包含人物或物体的视频。它支持创建单个角色或多个角色互动的视频。
+
+## 输入
+
+| 参数 | 数据类型 | 必填 | 范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `model` | COMBO | 是 | `"happyhorse-1.0-r2v"` | 用于视频生成的 HappyHorse 模型。 |
+| `prompt` | STRING | 是 | 不适用 | 您想要生成的视频的文字描述。使用 'character1' 和 'character2' 等标识符来指代参考角色。 |
+| `resolution` | COMBO | 是 | `"720P"`<br>`"1080P"` | 生成视频的分辨率。 |
+| `ratio` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | 生成视频的宽高比。 |
+| `duration` | INT | 是 | 3 到 15 | 生成视频的时长（秒），默认值为 5。 |
+| `reference_images` | IMAGE | 是 | 1 到 9 | 视频中人物或物体的一张或多张参考图像。您必须至少提供一张图像。 |
+| `seed` | INT | 否 | 0 到 2147483647 | 用于可重复生成的种子值（默认值为 0）。种子可设置为每次生成后自动更改。 |
+| `watermark` | BOOLEAN | 否 | True 或 False | 是否在生成的视频中添加 AI 生成的水印（默认值为 False）。 |
+
+## 输出
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `VIDEO` | VIDEO | 生成的视频文件。 |
