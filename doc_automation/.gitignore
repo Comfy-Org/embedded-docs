@@ -1,0 +1,22 @@
+.venv
+dist
+*.egg-info
+*.DS_Store
+.ref/
+.cursorrules
+.gemini/
+
+# Environment variables
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Doc automation outputs (whole tree local-only; never commit)
+logs/
+ai_input/
+translation_batches/
+*.backup

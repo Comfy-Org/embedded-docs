@@ -1,0 +1,4893 @@
+{
+  "total": 719,
+  "nodes": {
+    "APG": {
+      "file": "comfy_extras/nodes_apg.py",
+      "type": "new_api",
+      "class_name": "APG",
+      "node_id": "APG",
+      "category": "sampling/custom_sampling"
+    },
+    "ARVideoI2V": {
+      "file": "comfy_extras/nodes_ar_video.py",
+      "type": "new_api",
+      "class_name": "ARVideoI2V",
+      "node_id": "ARVideoI2V",
+      "category": "conditioning/video_models"
+    },
+    "AddNoise": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "AddNoise",
+      "node_id": "AddNoise",
+      "category": "experimental/custom_sampling/noise"
+    },
+    "AddTextPrefix": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "AddTextPrefixNode",
+      "node_id": "AddTextPrefix",
+      "category": "dataset/text"
+    },
+    "AddTextSuffix": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "AddTextSuffixNode",
+      "node_id": "AddTextSuffix",
+      "category": "dataset/text"
+    },
+    "AdjustBrightness": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "AdjustBrightnessNode",
+      "node_id": "AdjustBrightness",
+      "category": "dataset/image"
+    },
+    "AdjustContrast": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "AdjustContrastNode",
+      "node_id": "AdjustContrast",
+      "category": "dataset/image"
+    },
+    "AlignYourStepsScheduler": {
+      "file": "comfy_extras/nodes_align_your_steps.py",
+      "type": "new_api",
+      "class_name": "AlignYourStepsScheduler",
+      "node_id": "AlignYourStepsScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "AudioAdjustVolume": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "AudioAdjustVolume",
+      "node_id": "AudioAdjustVolume",
+      "category": "audio"
+    },
+    "AudioConcat": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "AudioConcat",
+      "node_id": "AudioConcat",
+      "category": "audio"
+    },
+    "AudioEncoderEncode": {
+      "file": "comfy_extras/nodes_audio_encoder.py",
+      "type": "new_api",
+      "class_name": "AudioEncoderEncode",
+      "node_id": "AudioEncoderEncode",
+      "category": "conditioning"
+    },
+    "AudioEncoderLoader": {
+      "file": "comfy_extras/nodes_audio_encoder.py",
+      "type": "new_api",
+      "class_name": "AudioEncoderLoader",
+      "node_id": "AudioEncoderLoader",
+      "category": "loaders"
+    },
+    "AudioEqualizer3Band": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "AudioEqualizer3Band",
+      "node_id": "AudioEqualizer3Band",
+      "category": "audio"
+    },
+    "AudioMerge": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "AudioMerge",
+      "node_id": "AudioMerge",
+      "category": "audio"
+    },
+    "AutogrowNamesTestNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "AutogrowNamesTestNode",
+      "node_id": "AutogrowNamesTestNode",
+      "category": "logic"
+    },
+    "AutogrowPrefixTestNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "AutogrowPrefixTestNode",
+      "node_id": "AutogrowPrefixTestNode",
+      "category": "logic"
+    },
+    "BasicGuider": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "BasicGuider",
+      "node_id": "BasicGuider",
+      "category": "sampling/custom_sampling/guiders"
+    },
+    "BasicScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "BasicScheduler",
+      "node_id": "BasicScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "BatchImagesMasksLatentsNode": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "BatchImagesMasksLatentsNode",
+      "node_id": "BatchImagesMasksLatentsNode",
+      "category": "util"
+    },
+    "BatchImagesNode": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "BatchImagesNode"
+    },
+    "BatchLatentsNode": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "BatchLatentsNode",
+      "node_id": "BatchLatentsNode",
+      "category": "latent"
+    },
+    "BatchMasksNode": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "BatchMasksNode",
+      "node_id": "BatchMasksNode",
+      "category": "mask"
+    },
+    "BetaSamplingScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "BetaSamplingScheduler",
+      "node_id": "BetaSamplingScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "BriaImageEditNode": {
+      "file": "comfy_api_nodes/nodes_bria.py",
+      "type": "new_api",
+      "class_name": "BriaImageEditNode",
+      "node_id": "BriaImageEditNode",
+      "category": "api node/image/Bria"
+    },
+    "BriaRemoveImageBackground": {
+      "file": "comfy_api_nodes/nodes_bria.py",
+      "type": "new_api",
+      "class_name": "BriaRemoveImageBackground",
+      "node_id": "BriaRemoveImageBackground",
+      "category": "api node/image/Bria"
+    },
+    "BriaRemoveVideoBackground": {
+      "file": "comfy_api_nodes/nodes_bria.py",
+      "type": "new_api",
+      "class_name": "BriaRemoveVideoBackground",
+      "node_id": "BriaRemoveVideoBackground",
+      "category": "api node/video/Bria"
+    },
+    "ByteDance2FirstLastFrameNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDance2FirstLastFrameNode",
+      "node_id": "ByteDance2FirstLastFrameNode",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDance2ReferenceNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDance2ReferenceNode",
+      "node_id": "ByteDance2ReferenceNode",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDance2TextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDance2TextToVideoNode",
+      "node_id": "ByteDance2TextToVideoNode",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDanceCreateImageAsset": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceCreateImageAsset",
+      "node_id": "ByteDanceCreateImageAsset",
+      "category": "api node/image/ByteDance"
+    },
+    "ByteDanceCreateVideoAsset": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceCreateVideoAsset",
+      "node_id": "ByteDanceCreateVideoAsset",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDanceFirstLastFrameNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceFirstLastFrameNode",
+      "node_id": "ByteDanceFirstLastFrameNode",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDanceImageNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceImageNode",
+      "node_id": "ByteDanceImageNode",
+      "category": "api node/image/ByteDance"
+    },
+    "ByteDanceImageReferenceNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceImageReferenceNode",
+      "node_id": "ByteDanceImageReferenceNode",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDanceImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceImageToVideoNode",
+      "node_id": "ByteDanceImageToVideoNode",
+      "category": "api node/video/ByteDance"
+    },
+    "ByteDanceSeedreamNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceSeedreamNode",
+      "node_id": "ByteDanceSeedreamNode",
+      "category": "api node/image/ByteDance"
+    },
+    "ByteDanceSeedreamNodeV2": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceSeedreamNodeV2",
+      "node_id": "ByteDanceSeedreamNodeV2",
+      "category": "api node/image/ByteDance"
+    },
+    "ByteDanceTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_bytedance.py",
+      "type": "new_api",
+      "class_name": "ByteDanceTextToVideoNode",
+      "node_id": "ByteDanceTextToVideoNode",
+      "category": "api node/video/ByteDance"
+    },
+    "CFGGuider": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "CFGGuider",
+      "node_id": "CFGGuider",
+      "category": "sampling/custom_sampling/guiders"
+    },
+    "CFGNorm": {
+      "file": "comfy_extras/nodes_cfg.py",
+      "type": "new_api",
+      "class_name": "CFGNorm",
+      "node_id": "CFGNorm",
+      "category": "advanced/guidance"
+    },
+    "CFGZeroStar": {
+      "file": "comfy_extras/nodes_cfg.py",
+      "type": "new_api",
+      "class_name": "CFGZeroStar",
+      "node_id": "CFGZeroStar",
+      "category": "advanced/guidance"
+    },
+    "CLIPAttentionMultiply": {
+      "file": "comfy_extras/nodes_attention_multiply.py",
+      "type": "new_api",
+      "class_name": "CLIPAttentionMultiply",
+      "node_id": "CLIPAttentionMultiply",
+      "category": "experimental/attention_experiments"
+    },
+    "CLIPLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CLIPLoader",
+      "category": "advanced/loaders"
+    },
+    "CLIPMergeAdd": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "CLIPAdd",
+      "category": "advanced/model_merging"
+    },
+    "CLIPMergeSimple": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "CLIPMergeSimple",
+      "category": "advanced/model_merging"
+    },
+    "CLIPMergeSubtract": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "CLIPSubtract",
+      "category": "advanced/model_merging"
+    },
+    "CLIPSave": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "CLIPSave",
+      "category": "advanced/model_merging"
+    },
+    "CLIPSetLastLayer": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CLIPSetLastLayer",
+      "category": "conditioning"
+    },
+    "CLIPTextEncode": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CLIPTextEncode",
+      "category": "conditioning"
+    },
+    "CLIPTextEncodeControlnet": {
+      "file": "comfy_extras/nodes_cond.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeControlnet",
+      "node_id": "CLIPTextEncodeControlnet",
+      "category": "experimental/conditioning"
+    },
+    "CLIPTextEncodeFlux": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeFlux",
+      "node_id": "CLIPTextEncodeFlux",
+      "category": "advanced/conditioning/flux"
+    },
+    "CLIPTextEncodeHiDream": {
+      "file": "comfy_extras/nodes_hidream.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeHiDream",
+      "node_id": "CLIPTextEncodeHiDream",
+      "category": "advanced/conditioning"
+    },
+    "CLIPTextEncodeHunyuanDiT": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeHunyuanDiT",
+      "node_id": "CLIPTextEncodeHunyuanDiT",
+      "category": "advanced/conditioning"
+    },
+    "CLIPTextEncodeKandinsky5": {
+      "file": "comfy_extras/nodes_kandinsky5.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeKandinsky5",
+      "node_id": "CLIPTextEncodeKandinsky5",
+      "category": "advanced/conditioning/kandinsky5"
+    },
+    "CLIPTextEncodeLumina2": {
+      "file": "comfy_extras/nodes_lumina2.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeLumina2",
+      "node_id": "CLIPTextEncodeLumina2",
+      "category": "conditioning"
+    },
+    "CLIPTextEncodePixArtAlpha": {
+      "file": "comfy_extras/nodes_pixart.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodePixArtAlpha",
+      "node_id": "CLIPTextEncodePixArtAlpha",
+      "category": "advanced/conditioning"
+    },
+    "CLIPTextEncodeSD3": {
+      "file": "comfy_extras/nodes_sd3.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeSD3",
+      "node_id": "CLIPTextEncodeSD3",
+      "category": "advanced/conditioning"
+    },
+    "CLIPTextEncodeSDXL": {
+      "file": "comfy_extras/nodes_clip_sdxl.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeSDXL",
+      "node_id": "CLIPTextEncodeSDXL",
+      "category": "advanced/conditioning"
+    },
+    "CLIPTextEncodeSDXLRefiner": {
+      "file": "comfy_extras/nodes_clip_sdxl.py",
+      "type": "new_api",
+      "class_name": "CLIPTextEncodeSDXLRefiner",
+      "node_id": "CLIPTextEncodeSDXLRefiner",
+      "category": "advanced/conditioning"
+    },
+    "CLIPVisionEncode": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CLIPVisionEncode",
+      "category": "conditioning"
+    },
+    "CLIPVisionLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CLIPVisionLoader",
+      "category": "loaders"
+    },
+    "Canny": {
+      "file": "comfy_extras/nodes_canny.py",
+      "type": "new_api",
+      "class_name": "Canny",
+      "node_id": "Canny",
+      "category": "image/preprocessors"
+    },
+    "CaseConverter": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "CaseConverter",
+      "node_id": "CaseConverter",
+      "category": "text"
+    },
+    "CenterCropImages": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "CenterCropImagesNode",
+      "node_id": "CenterCropImages",
+      "category": "dataset/image"
+    },
+    "CheckpointLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CheckpointLoader",
+      "category": "advanced/loaders"
+    },
+    "CheckpointLoaderSimple": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "CheckpointLoaderSimple",
+      "category": "loaders"
+    },
+    "CheckpointSave": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "CheckpointSave",
+      "category": "advanced/model_merging"
+    },
+    "ChromaRadianceOptions": {
+      "file": "comfy_extras/nodes_chroma_radiance.py",
+      "type": "new_api",
+      "class_name": "ChromaRadianceOptions",
+      "node_id": "ChromaRadianceOptions",
+      "category": "model_patches/chroma_radiance"
+    },
+    "ColorToRGBInt": {
+      "file": "comfy_extras/nodes_color.py",
+      "type": "new_api",
+      "class_name": "ColorToRGBInt",
+      "node_id": "ColorToRGBInt",
+      "category": "utils"
+    },
+    "ColorTransfer": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "ColorTransfer",
+      "node_id": "ColorTransfer",
+      "category": "image/postprocessing"
+    },
+    "CombineHooks": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CombineHooks",
+      "category": "advanced/hooks/combine"
+    },
+    "CombineHooksEight": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CombineHooksEight",
+      "category": "advanced/hooks/combine"
+    },
+    "CombineHooksFour": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CombineHooksFour",
+      "category": "advanced/hooks/combine"
+    },
+    "ComboOptionTestNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "ComboOutputTestNode",
+      "node_id": "ComboOptionTestNode",
+      "category": "logic"
+    },
+    "ComfyMathExpression": {
+      "file": "comfy_extras/nodes_math.py",
+      "type": "new_api",
+      "class_name": "MathExpressionNode",
+      "node_id": "ComfyMathExpression",
+      "category": "logic"
+    },
+    "ComfyNumberConvert": {
+      "file": "comfy_extras/nodes_number_convert.py",
+      "type": "new_api",
+      "class_name": "NumberConvertNode",
+      "node_id": "ComfyNumberConvert",
+      "category": "utils"
+    },
+    "ComfySoftSwitchNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "SoftSwitchNode",
+      "node_id": "ComfySoftSwitchNode",
+      "category": "logic"
+    },
+    "ComfySwitchNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "SwitchNode",
+      "node_id": "ComfySwitchNode",
+      "category": "logic"
+    },
+    "ConditioningAverage": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "ConditioningAverage"
+    },
+    "ConditioningAverage ": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "ConditioningAverage "
+    },
+    "ConditioningCombine": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningCombine",
+      "category": "Image Generation"
+    },
+    "ConditioningConcat": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningConcat",
+      "category": "conditioning"
+    },
+    "ConditioningSetArea": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningSetArea",
+      "category": "conditioning"
+    },
+    "ConditioningSetAreaPercentage": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningSetAreaPercentage",
+      "category": "conditioning"
+    },
+    "ConditioningSetAreaPercentageVideo": {
+      "file": "comfy_extras/nodes_video_model.py",
+      "type": "classic",
+      "class_name": "ConditioningSetAreaPercentageVideo",
+      "category": "conditioning"
+    },
+    "ConditioningSetAreaStrength": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningSetAreaStrength",
+      "category": "conditioning"
+    },
+    "ConditioningSetDefaultAndCombine": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "ConditioningSetDefaultAndCombine",
+      "category": "advanced/hooks/cond single"
+    },
+    "ConditioningSetMask": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningSetMask",
+      "category": "conditioning"
+    },
+    "ConditioningSetProperties": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "ConditioningSetProperties",
+      "category": "advanced/hooks/cond single"
+    },
+    "ConditioningSetPropertiesAndCombine": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "ConditioningSetPropertiesAndCombine",
+      "category": "advanced/hooks/cond single"
+    },
+    "ConditioningSetTimestepRange": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningSetTimestepRange",
+      "category": "advanced/conditioning"
+    },
+    "ConditioningStableAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "ConditioningStableAudio",
+      "node_id": "ConditioningStableAudio",
+      "category": "conditioning"
+    },
+    "ConditioningTimestepsRange": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "ConditioningTimestepsRange",
+      "category": "advanced/hooks"
+    },
+    "ConditioningZeroOut": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ConditioningZeroOut",
+      "category": "advanced/conditioning"
+    },
+    "ContextWindowsManual": {
+      "file": "comfy_extras/nodes_context_windows.py",
+      "type": "new_api",
+      "class_name": "ContextWindowsManualNode",
+      "node_id": "ContextWindowsManual",
+      "category": "model_patches"
+    },
+    "ControlNetApply": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ControlNetApply",
+      "category": "conditioning/controlnet"
+    },
+    "ControlNetApplyAdvanced": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ControlNetApplyAdvanced",
+      "category": "conditioning/controlnet"
+    },
+    "ControlNetApplySD3": {
+      "file": "comfy_extras/nodes_sd3.py",
+      "type": "new_api",
+      "class_name": "ControlNetApplySD3",
+      "node_id": "ControlNetApplySD3",
+      "category": "conditioning/controlnet"
+    },
+    "ControlNetInpaintingAliMamaApply": {
+      "file": "comfy_extras/nodes_controlnet.py",
+      "type": "new_api",
+      "class_name": "ControlNetInpaintingAliMamaApply",
+      "node_id": "ControlNetInpaintingAliMamaApply",
+      "category": "conditioning/controlnet"
+    },
+    "ControlNetLoader": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "ControlNetLoader"
+    },
+    "ConvertStringToComboNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "ConvertStringToComboNode",
+      "node_id": "ConvertStringToComboNode",
+      "category": "logic"
+    },
+    "CosmosImageToVideoLatent": {
+      "file": "comfy_extras/nodes_cosmos.py",
+      "type": "new_api",
+      "class_name": "CosmosImageToVideoLatent",
+      "node_id": "CosmosImageToVideoLatent",
+      "category": "conditioning/inpaint"
+    },
+    "CosmosPredict2ImageToVideoLatent": {
+      "file": "comfy_extras/nodes_cosmos.py",
+      "type": "new_api",
+      "class_name": "CosmosPredict2ImageToVideoLatent",
+      "node_id": "CosmosPredict2ImageToVideoLatent",
+      "category": "conditioning/inpaint"
+    },
+    "CreateHookKeyframe": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookKeyframe",
+      "category": "advanced/hooks/scheduling"
+    },
+    "CreateHookKeyframesFromFloats": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookKeyframesFromFloats",
+      "category": "advanced/hooks/scheduling"
+    },
+    "CreateHookKeyframesInterpolated": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookKeyframesInterpolated",
+      "category": "advanced/hooks/scheduling"
+    },
+    "CreateHookLora": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookLora",
+      "category": "advanced/hooks/create"
+    },
+    "CreateHookLoraModelOnly": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookLoraModelOnly",
+      "category": "advanced/hooks/create"
+    },
+    "CreateHookModelAsLora": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookModelAsLora",
+      "category": "advanced/hooks/create"
+    },
+    "CreateHookModelAsLoraModelOnly": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "CreateHookModelAsLoraModelOnly",
+      "category": "advanced/hooks/create"
+    },
+    "CreateList": {
+      "file": "comfy_extras/nodes_toolkit.py",
+      "type": "new_api",
+      "class_name": "CreateList",
+      "node_id": "CreateList",
+      "category": "logic"
+    },
+    "CreateVideo": {
+      "file": "comfy_extras/nodes_video.py",
+      "type": "new_api",
+      "class_name": "CreateVideo",
+      "node_id": "CreateVideo",
+      "category": "video"
+    },
+    "CropByBBoxes": {
+      "file": "comfy_extras/nodes_sdpose.py",
+      "type": "new_api",
+      "class_name": "CropByBBoxes",
+      "node_id": "CropByBBoxes",
+      "category": "image/preprocessors"
+    },
+    "CropMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "CropMask",
+      "node_id": "CropMask",
+      "category": "mask"
+    },
+    "CurveEditor": {
+      "file": "comfy_extras/nodes_curve.py",
+      "type": "new_api",
+      "class_name": "CurveEditor",
+      "node_id": "CurveEditor",
+      "category": "utils"
+    },
+    "CustomCombo": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "CustomComboNode",
+      "node_id": "CustomCombo",
+      "category": "utils"
+    },
+    "DCTestNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "DCValues",
+      "node_id": "DCTestNode",
+      "category": "logic"
+    },
+    "DiffControlNetLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "DiffControlNetLoader",
+      "category": "loaders"
+    },
+    "DifferentialDiffusion": {
+      "file": "comfy_extras/nodes_differential_diffusion.py",
+      "type": "new_api",
+      "class_name": "DifferentialDiffusion",
+      "node_id": "DifferentialDiffusion",
+      "category": "experimental"
+    },
+    "DiffusersLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "DiffusersLoader",
+      "category": "advanced/loaders/deprecated"
+    },
+    "DisableNoise": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "DisableNoise",
+      "node_id": "DisableNoise",
+      "category": "sampling/custom_sampling/noise"
+    },
+    "DrawBBoxes": {
+      "file": "comfy_extras/nodes_rtdetr.py",
+      "type": "new_api",
+      "class_name": "DrawBBoxes",
+      "node_id": "DrawBBoxes",
+      "category": "detection"
+    },
+    "DualCFGGuider": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "DualCFGGuider",
+      "node_id": "DualCFGGuider",
+      "category": "sampling/custom_sampling/guiders"
+    },
+    "DualCLIPLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "DualCLIPLoader",
+      "category": "advanced/loaders"
+    },
+    "EasyCache": {
+      "file": "comfy_extras/nodes_easycache.py",
+      "type": "new_api",
+      "class_name": "EasyCacheNode",
+      "node_id": "EasyCache",
+      "category": "advanced/debug/model"
+    },
+    "ElevenLabsAudioIsolation": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsAudioIsolation",
+      "node_id": "ElevenLabsAudioIsolation",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsInstantVoiceClone": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsInstantVoiceClone",
+      "node_id": "ElevenLabsInstantVoiceClone",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsSpeechToSpeech": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsSpeechToSpeech",
+      "node_id": "ElevenLabsSpeechToSpeech",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsSpeechToText": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsSpeechToText",
+      "node_id": "ElevenLabsSpeechToText",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsTextToDialogue": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsTextToDialogue",
+      "node_id": "ElevenLabsTextToDialogue",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsTextToSoundEffects": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsTextToSoundEffects",
+      "node_id": "ElevenLabsTextToSoundEffects",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsTextToSpeech": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsTextToSpeech",
+      "node_id": "ElevenLabsTextToSpeech",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "ElevenLabsVoiceSelector": {
+      "file": "comfy_api_nodes/nodes_elevenlabs.py",
+      "type": "new_api",
+      "class_name": "ElevenLabsVoiceSelector",
+      "node_id": "ElevenLabsVoiceSelector",
+      "category": "api node/audio/ElevenLabs"
+    },
+    "EmptyARVideoLatent": {
+      "file": "comfy_extras/nodes_ar_video.py",
+      "type": "new_api",
+      "class_name": "EmptyARVideoLatent",
+      "node_id": "EmptyARVideoLatent",
+      "category": "latent/video"
+    },
+    "EmptyAceStep1.5LatentAudio": {
+      "file": "comfy_extras/nodes_ace.py",
+      "type": "new_api",
+      "class_name": "EmptyAceStep15LatentAudio",
+      "node_id": "EmptyAceStep1.5LatentAudio",
+      "category": "latent/audio"
+    },
+    "EmptyAceStepLatentAudio": {
+      "file": "comfy_extras/nodes_ace.py",
+      "type": "new_api",
+      "class_name": "EmptyAceStepLatentAudio",
+      "node_id": "EmptyAceStepLatentAudio",
+      "category": "latent/audio"
+    },
+    "EmptyAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "EmptyAudio",
+      "node_id": "EmptyAudio",
+      "category": "audio"
+    },
+    "EmptyChromaRadianceLatentImage": {
+      "file": "comfy_extras/nodes_chroma_radiance.py",
+      "type": "new_api",
+      "class_name": "EmptyChromaRadianceLatentImage",
+      "node_id": "EmptyChromaRadianceLatentImage",
+      "category": "latent/chroma_radiance"
+    },
+    "EmptyCosmosLatentVideo": {
+      "file": "comfy_extras/nodes_cosmos.py",
+      "type": "new_api",
+      "class_name": "EmptyCosmosLatentVideo",
+      "node_id": "EmptyCosmosLatentVideo",
+      "category": "latent/video"
+    },
+    "EmptyFlux2LatentImage": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "EmptyFlux2LatentImage",
+      "node_id": "EmptyFlux2LatentImage",
+      "category": "latent"
+    },
+    "EmptyHunyuanImageLatent": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "EmptyHunyuanImageLatent",
+      "node_id": "EmptyHunyuanImageLatent",
+      "category": "latent"
+    },
+    "EmptyHunyuanLatentVideo": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "EmptyHunyuanLatentVideo",
+      "node_id": "EmptyHunyuanLatentVideo",
+      "category": "latent/video"
+    },
+    "EmptyHunyuanVideo15Latent": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "EmptyHunyuanVideo15Latent",
+      "node_id": "EmptyHunyuanVideo15Latent",
+      "category": "latent/video"
+    },
+    "EmptyImage": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "EmptyImage",
+      "category": "image"
+    },
+    "EmptyLTXVLatentVideo": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "EmptyLTXVLatentVideo",
+      "node_id": "EmptyLTXVLatentVideo",
+      "category": "latent/video/ltxv"
+    },
+    "EmptyLatentAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "EmptyLatentAudio",
+      "node_id": "EmptyLatentAudio",
+      "category": "latent/audio"
+    },
+    "EmptyLatentHunyuan3Dv2": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "EmptyLatentHunyuan3Dv2",
+      "node_id": "EmptyLatentHunyuan3Dv2",
+      "category": "latent/3d"
+    },
+    "EmptyLatentImage": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "EmptyLatentImage",
+      "category": "latent"
+    },
+    "EmptyMochiLatentVideo": {
+      "file": "comfy_extras/nodes_mochi.py",
+      "type": "new_api",
+      "class_name": "EmptyMochiLatentVideo",
+      "node_id": "EmptyMochiLatentVideo",
+      "category": "latent/video"
+    },
+    "EmptyQwenImageLayeredLatentImage": {
+      "file": "comfy_extras/nodes_qwen.py",
+      "type": "new_api",
+      "class_name": "EmptyQwenImageLayeredLatentImage",
+      "node_id": "EmptyQwenImageLayeredLatentImage",
+      "category": "latent/qwen"
+    },
+    "EmptySD3LatentImage": {
+      "file": "comfy_extras/nodes_sd3.py",
+      "type": "new_api",
+      "class_name": "EmptySD3LatentImage",
+      "node_id": "EmptySD3LatentImage",
+      "category": "latent/sd3"
+    },
+    "Epsilon Scaling": {
+      "file": "comfy_extras/nodes_eps.py",
+      "type": "new_api",
+      "class_name": "EpsilonScaling",
+      "node_id": "Epsilon Scaling",
+      "category": "model_patches/unet"
+    },
+    "ExponentialScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "ExponentialScheduler",
+      "node_id": "ExponentialScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "ExtendIntermediateSigmas": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "ExtendIntermediateSigmas",
+      "node_id": "ExtendIntermediateSigmas",
+      "category": "sampling/custom_sampling/sigmas"
+    },
+    "FeatherMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "FeatherMask",
+      "node_id": "FeatherMask",
+      "category": "mask"
+    },
+    "FlipSigmas": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "FlipSigmas",
+      "node_id": "FlipSigmas",
+      "category": "sampling/custom_sampling/sigmas"
+    },
+    "Flux2ImageNode": {
+      "file": "comfy_api_nodes/nodes_bfl.py",
+      "type": "new_api",
+      "class_name": "Flux2ImageNode",
+      "node_id": "Flux2ImageNode",
+      "category": "api node/image/BFL"
+    },
+    "Flux2Scheduler": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "Flux2Scheduler",
+      "node_id": "Flux2Scheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "FluxDisableGuidance": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "FluxDisableGuidance",
+      "node_id": "FluxDisableGuidance",
+      "category": "advanced/conditioning/flux"
+    },
+    "FluxGuidance": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "FluxGuidance",
+      "node_id": "FluxGuidance",
+      "category": "advanced/conditioning/flux"
+    },
+    "FluxKVCache": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "FluxKVCache",
+      "node_id": "FluxKVCache"
+    },
+    "FluxKontextImageScale": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "FluxKontextImageScale",
+      "node_id": "FluxKontextImageScale",
+      "category": "advanced/conditioning/flux"
+    },
+    "FluxKontextMultiReferenceLatentMethod": {
+      "file": "comfy_extras/nodes_flux.py",
+      "type": "new_api",
+      "class_name": "FluxKontextMultiReferenceLatentMethod",
+      "node_id": "FluxKontextMultiReferenceLatentMethod",
+      "category": "advanced/conditioning/flux"
+    },
+    "FluxProExpandNode": {
+      "file": "comfy_api_nodes/nodes_bfl.py",
+      "type": "new_api",
+      "class_name": "FluxProExpandNode",
+      "node_id": "FluxProExpandNode",
+      "category": "api node/image/BFL"
+    },
+    "FluxProFillNode": {
+      "file": "comfy_api_nodes/nodes_bfl.py",
+      "type": "new_api",
+      "class_name": "FluxProFillNode",
+      "node_id": "FluxProFillNode",
+      "category": "api node/image/BFL"
+    },
+    "FluxProUltraImageNode": {
+      "file": "comfy_api_nodes/nodes_bfl.py",
+      "type": "new_api",
+      "class_name": "FluxProUltraImageNode",
+      "node_id": "FluxProUltraImageNode",
+      "category": "api node/image/BFL"
+    },
+    "FrameInterpolate": {
+      "file": "comfy_extras/nodes_frame_interpolation.py",
+      "type": "new_api",
+      "class_name": "FrameInterpolate",
+      "node_id": "FrameInterpolate",
+      "category": "video"
+    },
+    "FrameInterpolationModelLoader": {
+      "file": "comfy_extras/nodes_frame_interpolation.py",
+      "type": "new_api",
+      "class_name": "FrameInterpolationModelLoader",
+      "node_id": "FrameInterpolationModelLoader",
+      "category": "loaders"
+    },
+    "FreSca": {
+      "file": "comfy_extras/nodes_fresca.py",
+      "type": "new_api",
+      "class_name": "FreSca",
+      "node_id": "FreSca",
+      "category": "experimental"
+    },
+    "FreeU": {
+      "file": "comfy_extras/nodes_freelunch.py",
+      "type": "new_api",
+      "class_name": "FreeU",
+      "node_id": "FreeU",
+      "category": "model_patches/unet"
+    },
+    "FreeU_V2": {
+      "file": "comfy_extras/nodes_freelunch.py",
+      "type": "new_api",
+      "class_name": "FreeU_V2",
+      "node_id": "FreeU_V2",
+      "category": "model_patches/unet"
+    },
+    "GITSScheduler": {
+      "file": "comfy_extras/nodes_gits.py",
+      "type": "new_api",
+      "class_name": "GITSScheduler",
+      "node_id": "GITSScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "GLIGENLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "GLIGENLoader",
+      "category": "loaders"
+    },
+    "GLIGENTextBoxApply": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "GLIGENTextBoxApply",
+      "category": "conditioning/gligen"
+    },
+    "GLSLShader": {
+      "file": "comfy_extras/nodes_glsl.py",
+      "type": "new_api",
+      "class_name": "GLSLShader",
+      "node_id": "GLSLShader",
+      "category": "image/shader"
+    },
+    "GeminiImage2Node": {
+      "file": "comfy_api_nodes/nodes_gemini.py",
+      "type": "new_api",
+      "class_name": "GeminiImage2",
+      "node_id": "GeminiImage2Node",
+      "category": "api node/image/Gemini"
+    },
+    "GeminiImageNode": {
+      "file": "comfy_api_nodes/nodes_gemini.py",
+      "type": "new_api",
+      "class_name": "GeminiImage",
+      "node_id": "GeminiImageNode",
+      "category": "api node/image/Gemini"
+    },
+    "GeminiInputFiles": {
+      "file": "comfy_api_nodes/nodes_gemini.py",
+      "type": "new_api",
+      "class_name": "GeminiInputFiles",
+      "node_id": "GeminiInputFiles",
+      "category": "api node/text/Gemini"
+    },
+    "GeminiNanoBanana2": {
+      "file": "comfy_api_nodes/nodes_gemini.py",
+      "type": "new_api",
+      "class_name": "GeminiNanoBanana2",
+      "node_id": "GeminiNanoBanana2",
+      "category": "api node/image/Gemini"
+    },
+    "GeminiNanoBanana2V2": {
+      "file": "comfy_api_nodes/nodes_gemini.py",
+      "type": "new_api",
+      "class_name": "GeminiNanoBanana2V2",
+      "node_id": "GeminiNanoBanana2V2",
+      "category": "api node/image/Gemini"
+    },
+    "GeminiNode": {
+      "file": "comfy_api_nodes/nodes_gemini.py",
+      "type": "new_api",
+      "class_name": "GeminiNode",
+      "node_id": "GeminiNode",
+      "category": "api node/text/Gemini"
+    },
+    "GenerateTracks": {
+      "file": "comfy_extras/nodes_wanmove.py",
+      "type": "new_api",
+      "class_name": "GenerateTracks",
+      "node_id": "GenerateTracks",
+      "category": "conditioning/video_models"
+    },
+    "GetImageSize": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "GetImageSize",
+      "node_id": "GetImageSize",
+      "category": "image"
+    },
+    "GetVideoComponents": {
+      "file": "comfy_extras/nodes_video.py",
+      "type": "new_api",
+      "class_name": "GetVideoComponents",
+      "node_id": "GetVideoComponents",
+      "category": "video"
+    },
+    "GrokImageEditNode": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokImageEditNode",
+      "node_id": "GrokImageEditNode",
+      "category": "api node/image/Grok"
+    },
+    "GrokImageEditNodeV2": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokImageEditNodeV2",
+      "node_id": "GrokImageEditNodeV2",
+      "category": "api node/image/Grok"
+    },
+    "GrokImageNode": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokImageNode",
+      "node_id": "GrokImageNode",
+      "category": "api node/image/Grok"
+    },
+    "GrokVideoEditNode": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokVideoEditNode",
+      "node_id": "GrokVideoEditNode",
+      "category": "api node/video/Grok"
+    },
+    "GrokVideoExtendNode": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokVideoExtendNode",
+      "node_id": "GrokVideoExtendNode",
+      "category": "api node/video/Grok"
+    },
+    "GrokVideoNode": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokVideoNode",
+      "node_id": "GrokVideoNode",
+      "category": "api node/video/Grok"
+    },
+    "GrokVideoReferenceNode": {
+      "file": "comfy_api_nodes/nodes_grok.py",
+      "type": "new_api",
+      "class_name": "GrokVideoReferenceNode",
+      "node_id": "GrokVideoReferenceNode",
+      "category": "api node/video/Grok"
+    },
+    "GrowMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "GrowMask",
+      "node_id": "GrowMask",
+      "category": "mask"
+    },
+    "HappyHorseImageToVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "HappyHorseImageToVideoApi",
+      "node_id": "HappyHorseImageToVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "HappyHorseReferenceVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "HappyHorseReferenceVideoApi",
+      "node_id": "HappyHorseReferenceVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "HappyHorseTextToVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "HappyHorseTextToVideoApi",
+      "node_id": "HappyHorseTextToVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "HappyHorseVideoEditApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "HappyHorseVideoEditApi",
+      "node_id": "HappyHorseVideoEditApi",
+      "category": "api node/video/Wan"
+    },
+    "HitPawGeneralImageEnhance": {
+      "file": "comfy_api_nodes/nodes_hitpaw.py",
+      "type": "new_api",
+      "class_name": "HitPawGeneralImageEnhance",
+      "node_id": "HitPawGeneralImageEnhance",
+      "category": "api node/image/HitPaw"
+    },
+    "HitPawVideoEnhance": {
+      "file": "comfy_api_nodes/nodes_hitpaw.py",
+      "type": "new_api",
+      "class_name": "HitPawVideoEnhance",
+      "node_id": "HitPawVideoEnhance",
+      "category": "api node/video/HitPaw"
+    },
+    "Hunyuan3Dv2Conditioning": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "Hunyuan3Dv2Conditioning",
+      "node_id": "Hunyuan3Dv2Conditioning",
+      "category": "conditioning/3d_models"
+    },
+    "Hunyuan3Dv2ConditioningMultiView": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "Hunyuan3Dv2ConditioningMultiView",
+      "node_id": "Hunyuan3Dv2ConditioningMultiView",
+      "category": "conditioning/3d_models"
+    },
+    "HunyuanImageToVideo": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "HunyuanImageToVideo",
+      "node_id": "HunyuanImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "HunyuanRefinerLatent": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "HunyuanRefinerLatent",
+      "node_id": "HunyuanRefinerLatent",
+      "category": "conditioning/video_models"
+    },
+    "HunyuanVideo15ImageToVideo": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "HunyuanVideo15ImageToVideo",
+      "node_id": "HunyuanVideo15ImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "HunyuanVideo15LatentUpscaleWithModel": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "HunyuanVideo15LatentUpscaleWithModel",
+      "node_id": "HunyuanVideo15LatentUpscaleWithModel",
+      "category": "latent"
+    },
+    "HunyuanVideo15SuperResolution": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "HunyuanVideo15SuperResolution",
+      "node_id": "HunyuanVideo15SuperResolution",
+      "category": "conditioning/video_models"
+    },
+    "HyperTile": {
+      "file": "comfy_extras/nodes_hypertile.py",
+      "type": "new_api",
+      "class_name": "HyperTile",
+      "node_id": "HyperTile",
+      "category": "model_patches/unet"
+    },
+    "HypernetworkLoader": {
+      "file": "comfy_extras/nodes_hypernetwork.py",
+      "type": "new_api",
+      "class_name": "HypernetworkLoader",
+      "node_id": "HypernetworkLoader",
+      "category": "loaders"
+    },
+    "IdeogramV1": {
+      "file": "comfy_api_nodes/nodes_ideogram.py",
+      "type": "new_api",
+      "class_name": "IdeogramV1",
+      "node_id": "IdeogramV1",
+      "category": "api node/image/Ideogram"
+    },
+    "IdeogramV2": {
+      "file": "comfy_api_nodes/nodes_ideogram.py",
+      "type": "new_api",
+      "class_name": "IdeogramV2",
+      "node_id": "IdeogramV2",
+      "category": "api node/image/Ideogram"
+    },
+    "IdeogramV3": {
+      "file": "comfy_api_nodes/nodes_ideogram.py",
+      "type": "new_api",
+      "class_name": "IdeogramV3",
+      "node_id": "IdeogramV3",
+      "category": "api node/image/Ideogram"
+    },
+    "ImageAddNoise": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageAddNoise",
+      "node_id": "ImageAddNoise",
+      "category": "image/postprocessing"
+    },
+    "ImageBatch": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "ImageBatch"
+    },
+    "ImageBlend": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "Blend",
+      "node_id": "ImageBlend",
+      "category": "image/postprocessing"
+    },
+    "ImageBlur": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "Blur",
+      "node_id": "ImageBlur",
+      "category": "image/postprocessing"
+    },
+    "ImageColorToMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "ImageColorToMask",
+      "node_id": "ImageColorToMask",
+      "category": "mask"
+    },
+    "ImageCompare": {
+      "file": "comfy_extras/nodes_image_compare.py",
+      "type": "new_api",
+      "class_name": "ImageCompare",
+      "node_id": "ImageCompare",
+      "category": "image"
+    },
+    "ImageCompositeMasked": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "ImageCompositeMasked",
+      "node_id": "ImageCompositeMasked",
+      "category": "image"
+    },
+    "ImageCrop": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageCrop",
+      "node_id": "ImageCrop",
+      "category": "image/transform"
+    },
+    "ImageCropV2": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageCropV2",
+      "node_id": "ImageCropV2",
+      "category": "image/transform"
+    },
+    "ImageDeduplication": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ImageDeduplicationNode",
+      "node_id": "ImageDeduplication",
+      "category": "dataset/image"
+    },
+    "ImageFlip": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageFlip",
+      "node_id": "ImageFlip",
+      "category": "image/transform"
+    },
+    "ImageFromBatch": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageFromBatch",
+      "node_id": "ImageFromBatch",
+      "category": "image/batch"
+    },
+    "ImageGrid": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ImageGridNode",
+      "node_id": "ImageGrid",
+      "category": "dataset/image"
+    },
+    "ImageHistogram": {
+      "file": "comfy_extras/nodes_curve.py",
+      "type": "new_api",
+      "class_name": "ImageHistogram",
+      "node_id": "ImageHistogram",
+      "category": "utils"
+    },
+    "ImageInvert": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ImageInvert",
+      "category": "Image Tools"
+    },
+    "ImageMergeTileList": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageMergeTileList",
+      "node_id": "ImageMergeTileList",
+      "category": "image/batch"
+    },
+    "ImageOnlyCheckpointLoader": {
+      "file": "comfy_extras/nodes_video_model.py",
+      "type": "classic",
+      "class_name": "ImageOnlyCheckpointLoader",
+      "category": "loaders"
+    },
+    "ImageOnlyCheckpointSave": {
+      "file": "comfy_extras/nodes_video_model.py",
+      "type": "classic",
+      "class_name": "ImageOnlyCheckpointSave",
+      "category": "advanced/model_merging"
+    },
+    "ImagePadForOutpaint": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ImagePadForOutpaint",
+      "category": "image/transform"
+    },
+    "ImageQuantize": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "Quantize",
+      "node_id": "ImageQuantize",
+      "category": "image/postprocessing"
+    },
+    "ImageRGBToYUV": {
+      "file": "comfy_extras/nodes_morphology.py",
+      "type": "new_api",
+      "class_name": "ImageRGBToYUV",
+      "node_id": "ImageRGBToYUV",
+      "category": "image/color"
+    },
+    "ImageRotate": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageRotate",
+      "node_id": "ImageRotate",
+      "category": "image/transform"
+    },
+    "ImageScale": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "ImageScale",
+      "category": "image/upscaling"
+    },
+    "ImageScaleBy": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "ImageScaleBy"
+    },
+    "ImageScaleToMaxDimension": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageScaleToMaxDimension",
+      "node_id": "ImageScaleToMaxDimension",
+      "category": "image/upscaling"
+    },
+    "ImageScaleToTotalPixels": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "ImageScaleToTotalPixels",
+      "node_id": "ImageScaleToTotalPixels",
+      "category": "image/upscaling"
+    },
+    "ImageSharpen": {
+      "file": "comfy_extras/nodes_post_processing.py",
+      "type": "new_api",
+      "class_name": "Sharpen",
+      "node_id": "ImageSharpen",
+      "category": "image/postprocessing"
+    },
+    "ImageStitch": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ImageStitch",
+      "node_id": "ImageStitch",
+      "category": "image/transform"
+    },
+    "ImageToMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "ImageToMask",
+      "node_id": "ImageToMask",
+      "category": "mask"
+    },
+    "ImageUpscaleWithModel": {
+      "file": "comfy_extras/nodes_upscale_model.py",
+      "type": "new_api",
+      "class_name": "ImageUpscaleWithModel",
+      "node_id": "ImageUpscaleWithModel",
+      "category": "image/upscaling"
+    },
+    "ImageYUVToRGB": {
+      "file": "comfy_extras/nodes_morphology.py",
+      "type": "new_api",
+      "class_name": "ImageYUVToRGB",
+      "node_id": "ImageYUVToRGB",
+      "category": "image/color"
+    },
+    "InpaintModelConditioning": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "InpaintModelConditioning",
+      "category": "conditioning/inpaint"
+    },
+    "InstructPixToPixConditioning": {
+      "file": "comfy_extras/nodes_ip2p.py",
+      "type": "new_api",
+      "class_name": "InstructPixToPixConditioning",
+      "node_id": "InstructPixToPixConditioning",
+      "category": "conditioning/instructpix2pix"
+    },
+    "InvertBooleanNode": {
+      "file": "comfy_extras/nodes_logic.py",
+      "type": "new_api",
+      "class_name": "InvertBooleanNode",
+      "node_id": "InvertBooleanNode",
+      "category": "logic"
+    },
+    "InvertMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "InvertMask",
+      "node_id": "InvertMask",
+      "category": "mask"
+    },
+    "JoinAudioChannels": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "JoinAudioChannels",
+      "node_id": "JoinAudioChannels",
+      "category": "audio"
+    },
+    "JoinImageWithAlpha": {
+      "file": "comfy_extras/nodes_compositing.py",
+      "type": "new_api",
+      "class_name": "JoinImageWithAlpha",
+      "node_id": "JoinImageWithAlpha",
+      "category": "mask/compositing"
+    },
+    "JsonExtractString": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "JsonExtractString",
+      "node_id": "JsonExtractString",
+      "category": "text"
+    },
+    "KSampler": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "KSampler",
+      "category": "sampling"
+    },
+    "KSamplerAdvanced": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "KSamplerAdvanced",
+      "category": "sampling"
+    },
+    "KSamplerSelect": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "KSamplerSelect",
+      "node_id": "KSamplerSelect",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "Kandinsky5ImageToVideo": {
+      "file": "comfy_extras/nodes_kandinsky5.py",
+      "type": "new_api",
+      "class_name": "Kandinsky5ImageToVideo",
+      "node_id": "Kandinsky5ImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "KarrasScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "KarrasScheduler",
+      "node_id": "KarrasScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "KlingAvatarNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingAvatarNode",
+      "node_id": "KlingAvatarNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingCameraControlI2VNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingCameraControlI2VNode",
+      "node_id": "KlingCameraControlI2VNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingCameraControlT2VNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingCameraControlT2VNode",
+      "node_id": "KlingCameraControlT2VNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingCameraControls": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingCameraControls",
+      "node_id": "KlingCameraControls",
+      "category": "api node/video/Kling"
+    },
+    "KlingDualCharacterVideoEffectNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingDualCharacterVideoEffectNode",
+      "node_id": "KlingDualCharacterVideoEffectNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingFirstLastFrameNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingFirstLastFrameNode",
+      "node_id": "KlingFirstLastFrameNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingImage2VideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingImage2VideoNode",
+      "node_id": "KlingImage2VideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingImageGenerationNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingImageGenerationNode",
+      "node_id": "KlingImageGenerationNode",
+      "category": "api node/image/Kling"
+    },
+    "KlingImageToVideoWithAudio": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "ImageToVideoWithAudio",
+      "node_id": "KlingImageToVideoWithAudio",
+      "category": "api node/video/Kling"
+    },
+    "KlingLipSyncAudioToVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingLipSyncAudioToVideoNode",
+      "node_id": "KlingLipSyncAudioToVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingLipSyncTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingLipSyncTextToVideoNode",
+      "node_id": "KlingLipSyncTextToVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingMotionControl": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "MotionControl",
+      "node_id": "KlingMotionControl",
+      "category": "api node/video/Kling"
+    },
+    "KlingOmniProEditVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "OmniProEditVideoNode",
+      "node_id": "KlingOmniProEditVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingOmniProFirstLastFrameNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "OmniProFirstLastFrameNode",
+      "node_id": "KlingOmniProFirstLastFrameNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingOmniProImageNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "OmniProImageNode",
+      "node_id": "KlingOmniProImageNode",
+      "category": "api node/image/Kling"
+    },
+    "KlingOmniProImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "OmniProImageToVideoNode",
+      "node_id": "KlingOmniProImageToVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingOmniProTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "OmniProTextToVideoNode",
+      "node_id": "KlingOmniProTextToVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingOmniProVideoToVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "OmniProVideoToVideoNode",
+      "node_id": "KlingOmniProVideoToVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingSingleImageVideoEffectNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingSingleImageVideoEffectNode",
+      "node_id": "KlingSingleImageVideoEffectNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingStartEndFrameNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingStartEndFrameNode",
+      "node_id": "KlingStartEndFrameNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingTextToVideoNode",
+      "node_id": "KlingTextToVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingTextToVideoWithAudio": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "TextToVideoWithAudio",
+      "node_id": "KlingTextToVideoWithAudio",
+      "category": "api node/video/Kling"
+    },
+    "KlingVideoExtendNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingVideoExtendNode",
+      "node_id": "KlingVideoExtendNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingVideoNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingVideoNode",
+      "node_id": "KlingVideoNode",
+      "category": "api node/video/Kling"
+    },
+    "KlingVirtualTryOnNode": {
+      "file": "comfy_api_nodes/nodes_kling.py",
+      "type": "new_api",
+      "class_name": "KlingVirtualTryOnNode",
+      "node_id": "KlingVirtualTryOnNode",
+      "category": "api node/image/Kling"
+    },
+    "LTXAVTextEncoderLoader": {
+      "file": "comfy_extras/nodes_lt_audio.py",
+      "type": "new_api",
+      "class_name": "LTXAVTextEncoderLoader",
+      "node_id": "LTXAVTextEncoderLoader",
+      "category": "advanced/loaders"
+    },
+    "LTXVAddGuide": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVAddGuide",
+      "node_id": "LTXVAddGuide",
+      "category": "conditioning/video_models"
+    },
+    "LTXVAudioVAEDecode": {
+      "file": "comfy_extras/nodes_lt_audio.py",
+      "type": "new_api",
+      "class_name": "LTXVAudioVAEDecode",
+      "node_id": "LTXVAudioVAEDecode",
+      "category": "audio"
+    },
+    "LTXVAudioVAEEncode": {
+      "file": "comfy_extras/nodes_lt_audio.py",
+      "type": "new_api",
+      "class_name": "LTXVAudioVAEEncode",
+      "node_id": "LTXVAudioVAEEncode",
+      "category": "audio"
+    },
+    "LTXVAudioVAELoader": {
+      "file": "comfy_extras/nodes_lt_audio.py",
+      "type": "new_api",
+      "class_name": "LTXVAudioVAELoader",
+      "node_id": "LTXVAudioVAELoader",
+      "category": "audio"
+    },
+    "LTXVConcatAVLatent": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVConcatAVLatent",
+      "node_id": "LTXVConcatAVLatent",
+      "category": "latent/video/ltxv"
+    },
+    "LTXVConditioning": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVConditioning",
+      "node_id": "LTXVConditioning",
+      "category": "conditioning/video_models"
+    },
+    "LTXVCropGuides": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVCropGuides",
+      "node_id": "LTXVCropGuides",
+      "category": "conditioning/video_models"
+    },
+    "LTXVEmptyLatentAudio": {
+      "file": "comfy_extras/nodes_lt_audio.py",
+      "type": "new_api",
+      "class_name": "LTXVEmptyLatentAudio",
+      "node_id": "LTXVEmptyLatentAudio",
+      "category": "latent/audio"
+    },
+    "LTXVImgToVideo": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVImgToVideo",
+      "node_id": "LTXVImgToVideo",
+      "category": "conditioning/video_models"
+    },
+    "LTXVImgToVideoInplace": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVImgToVideoInplace",
+      "node_id": "LTXVImgToVideoInplace",
+      "category": "conditioning/video_models"
+    },
+    "LTXVLatentUpsampler": {
+      "file": "comfy_extras/nodes_lt_upsampler.py",
+      "type": "classic",
+      "class_name": "LTXVLatentUpsampler",
+      "category": "latent/video"
+    },
+    "LTXVPreprocess": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVPreprocess",
+      "node_id": "LTXVPreprocess",
+      "category": "video/preprocessors"
+    },
+    "LTXVReferenceAudio": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVReferenceAudio",
+      "node_id": "LTXVReferenceAudio",
+      "category": "conditioning/audio"
+    },
+    "LTXVScheduler": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVScheduler",
+      "node_id": "LTXVScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "LTXVSeparateAVLatent": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "LTXVSeparateAVLatent",
+      "node_id": "LTXVSeparateAVLatent",
+      "category": "latent/video/ltxv"
+    },
+    "LaplaceScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "LaplaceScheduler",
+      "node_id": "LaplaceScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "LatentAdd": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentAdd",
+      "node_id": "LatentAdd",
+      "category": "latent/advanced"
+    },
+    "LatentApplyOperation": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentApplyOperation",
+      "node_id": "LatentApplyOperation",
+      "category": "latent/advanced/operations"
+    },
+    "LatentApplyOperationCFG": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentApplyOperationCFG",
+      "node_id": "LatentApplyOperationCFG",
+      "category": "latent/advanced/operations"
+    },
+    "LatentBatch": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentBatch",
+      "node_id": "LatentBatch",
+      "category": "latent/batch"
+    },
+    "LatentBatchSeedBehavior": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentBatchSeedBehavior",
+      "node_id": "LatentBatchSeedBehavior",
+      "category": "latent/advanced"
+    },
+    "LatentBlend": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentBlend",
+      "category": "experimental"
+    },
+    "LatentComposite": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentComposite",
+      "category": "latent"
+    },
+    "LatentCompositeMasked": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "LatentCompositeMasked",
+      "node_id": "LatentCompositeMasked",
+      "category": "latent"
+    },
+    "LatentConcat": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentConcat",
+      "node_id": "LatentConcat",
+      "category": "latent/advanced"
+    },
+    "LatentCrop": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentCrop",
+      "category": "latent/transform"
+    },
+    "LatentCut": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentCut",
+      "node_id": "LatentCut",
+      "category": "latent/advanced"
+    },
+    "LatentCutToBatch": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentCutToBatch",
+      "node_id": "LatentCutToBatch",
+      "category": "latent/advanced"
+    },
+    "LatentFlip": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentFlip",
+      "category": "latent/transform"
+    },
+    "LatentFromBatch": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentFromBatch",
+      "category": "latent/batch"
+    },
+    "LatentInterpolate": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentInterpolate",
+      "node_id": "LatentInterpolate",
+      "category": "latent/advanced"
+    },
+    "LatentMultiply": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentMultiply",
+      "node_id": "LatentMultiply",
+      "category": "latent/advanced"
+    },
+    "LatentOperationSharpen": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentOperationSharpen",
+      "node_id": "LatentOperationSharpen",
+      "category": "latent/advanced/operations"
+    },
+    "LatentOperationTonemapReinhard": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentOperationTonemapReinhard",
+      "node_id": "LatentOperationTonemapReinhard",
+      "category": "latent/advanced/operations"
+    },
+    "LatentRotate": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentRotate",
+      "category": "latent/transform"
+    },
+    "LatentSubtract": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "LatentSubtract",
+      "node_id": "LatentSubtract",
+      "category": "latent/advanced"
+    },
+    "LatentUpscale": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentUpscale",
+      "category": "latent"
+    },
+    "LatentUpscaleBy": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LatentUpscaleBy",
+      "category": "latent"
+    },
+    "LatentUpscaleModelLoader": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "LatentUpscaleModelLoader",
+      "node_id": "LatentUpscaleModelLoader",
+      "category": "loaders"
+    },
+    "LazyCache": {
+      "file": "comfy_extras/nodes_easycache.py",
+      "type": "new_api",
+      "class_name": "LazyCacheNode",
+      "node_id": "LazyCache",
+      "category": "advanced/debug/model"
+    },
+    "Load3D": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "Load3D"
+    },
+    "Load3DAnimation": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "Load3DAnimation"
+    },
+    "LoadAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "LoadAudio",
+      "node_id": "LoadAudio",
+      "category": "audio"
+    },
+    "LoadBackgroundRemovalModel": {
+      "file": "comfy_extras/nodes_bg_removal.py",
+      "type": "new_api",
+      "class_name": "LoadBackgroundRemovalModel",
+      "node_id": "LoadBackgroundRemovalModel",
+      "category": "loaders"
+    },
+    "LoadImage": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LoadImage",
+      "category": "image"
+    },
+    "LoadImageDataSetFromFolder": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "LoadImageDataSetFromFolderNode",
+      "node_id": "LoadImageDataSetFromFolder",
+      "category": "dataset"
+    },
+    "LoadImageMask": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LoadImageMask",
+      "category": "Image Tools"
+    },
+    "LoadImageOutput": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LoadImageOutput",
+      "category": "image"
+    },
+    "LoadImageTextDataSetFromFolder": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "LoadImageTextDataSetFromFolderNode",
+      "node_id": "LoadImageTextDataSetFromFolder",
+      "category": "dataset"
+    },
+    "LoadLatent": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LoadLatent",
+      "category": "experimental"
+    },
+    "LoadTrainingDataset": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "LoadTrainingDataset",
+      "node_id": "LoadTrainingDataset",
+      "category": "dataset"
+    },
+    "LoadVideo": {
+      "file": "comfy_extras/nodes_video.py",
+      "type": "new_api",
+      "class_name": "LoadVideo",
+      "node_id": "LoadVideo",
+      "category": "video"
+    },
+    "LoraLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LoraLoader",
+      "category": "Image Generation"
+    },
+    "LoraLoaderBypass": {
+      "file": "comfy_extras/nodes_lora_debug.py",
+      "type": "classic",
+      "class_name": "LoraLoaderBypass",
+      "category": "loaders"
+    },
+    "LoraLoaderBypassModelOnly": {
+      "file": "comfy_extras/nodes_lora_debug.py",
+      "type": "classic",
+      "class_name": "LoraLoaderBypassModelOnly",
+      "category": "loaders"
+    },
+    "LoraLoaderModelOnly": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "LoraLoaderModelOnly",
+      "category": "Image Generation"
+    },
+    "LoraModelLoader": {
+      "file": "comfy_extras/nodes_train.py",
+      "type": "new_api",
+      "class_name": "LoraModelLoader",
+      "node_id": "LoraModelLoader",
+      "category": "loaders"
+    },
+    "LoraSave": {
+      "file": "comfy_extras/nodes_lora_extract.py",
+      "type": "new_api",
+      "class_name": "LoraSave",
+      "node_id": "LoraSave",
+      "category": "experimental"
+    },
+    "LossGraphNode": {
+      "file": "comfy_extras/nodes_train.py",
+      "type": "new_api",
+      "class_name": "LossGraphNode",
+      "node_id": "LossGraphNode",
+      "category": "training"
+    },
+    "LotusConditioning": {
+      "file": "comfy_extras/nodes_lotus.py",
+      "type": "new_api",
+      "class_name": "LotusConditioning",
+      "node_id": "LotusConditioning",
+      "category": "conditioning/lotus"
+    },
+    "LtxvApiImageToVideo": {
+      "file": "comfy_api_nodes/nodes_ltxv.py",
+      "type": "new_api",
+      "class_name": "ImageToVideoNode",
+      "node_id": "LtxvApiImageToVideo",
+      "category": "api node/video/LTXV"
+    },
+    "LtxvApiTextToVideo": {
+      "file": "comfy_api_nodes/nodes_ltxv.py",
+      "type": "new_api",
+      "class_name": "TextToVideoNode",
+      "node_id": "LtxvApiTextToVideo",
+      "category": "api node/video/LTXV"
+    },
+    "LumaConceptsNode": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaConceptsNode",
+      "node_id": "LumaConceptsNode",
+      "category": "api node/video/Luma"
+    },
+    "LumaImageEditNode2": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaImageEditNode",
+      "node_id": "LumaImageEditNode2",
+      "category": "api node/image/Luma"
+    },
+    "LumaImageModifyNode": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaImageModifyNode",
+      "node_id": "LumaImageModifyNode",
+      "category": "api node/image/Luma"
+    },
+    "LumaImageNode": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaImageGenerationNode",
+      "node_id": "LumaImageNode",
+      "category": "api node/image/Luma"
+    },
+    "LumaImageNode2": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaImageNode",
+      "node_id": "LumaImageNode2",
+      "category": "api node/image/Luma"
+    },
+    "LumaImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaImageToVideoGenerationNode",
+      "node_id": "LumaImageToVideoNode",
+      "category": "api node/video/Luma"
+    },
+    "LumaReferenceNode": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaReferenceNode",
+      "node_id": "LumaReferenceNode",
+      "category": "api node/image/Luma"
+    },
+    "LumaVideoNode": {
+      "file": "comfy_api_nodes/nodes_luma.py",
+      "type": "new_api",
+      "class_name": "LumaTextToVideoGenerationNode",
+      "node_id": "LumaVideoNode",
+      "category": "api node/video/Luma"
+    },
+    "MagnificImageRelightNode": {
+      "file": "comfy_api_nodes/nodes_magnific.py",
+      "type": "new_api",
+      "class_name": "MagnificImageRelightNode",
+      "node_id": "MagnificImageRelightNode",
+      "category": "api node/image/Magnific"
+    },
+    "MagnificImageSkinEnhancerNode": {
+      "file": "comfy_api_nodes/nodes_magnific.py",
+      "type": "new_api",
+      "class_name": "MagnificImageSkinEnhancerNode",
+      "node_id": "MagnificImageSkinEnhancerNode",
+      "category": "api node/image/Magnific"
+    },
+    "MagnificImageStyleTransferNode": {
+      "file": "comfy_api_nodes/nodes_magnific.py",
+      "type": "new_api",
+      "class_name": "MagnificImageStyleTransferNode",
+      "node_id": "MagnificImageStyleTransferNode",
+      "category": "api node/image/Magnific"
+    },
+    "MagnificImageUpscalerCreativeNode": {
+      "file": "comfy_api_nodes/nodes_magnific.py",
+      "type": "new_api",
+      "class_name": "MagnificImageUpscalerCreativeNode",
+      "node_id": "MagnificImageUpscalerCreativeNode",
+      "category": "api node/image/Magnific"
+    },
+    "MagnificImageUpscalerPreciseV2Node": {
+      "file": "comfy_api_nodes/nodes_magnific.py",
+      "type": "new_api",
+      "class_name": "MagnificImageUpscalerPreciseV2Node",
+      "node_id": "MagnificImageUpscalerPreciseV2Node",
+      "category": "api node/image/Magnific"
+    },
+    "Mahiro": {
+      "file": "comfy_extras/nodes_mahiro.py",
+      "type": "new_api",
+      "class_name": "Mahiro",
+      "node_id": "Mahiro",
+      "category": "experimental"
+    },
+    "MakeTrainingDataset": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "MakeTrainingDataset",
+      "node_id": "MakeTrainingDataset",
+      "category": "dataset"
+    },
+    "ManualSigmas": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "ManualSigmas",
+      "node_id": "ManualSigmas",
+      "category": "experimental/custom_sampling"
+    },
+    "MaskComposite": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "MaskComposite",
+      "node_id": "MaskComposite",
+      "category": "mask"
+    },
+    "MaskPreview": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "MaskPreview",
+      "node_id": "MaskPreview",
+      "category": "mask"
+    },
+    "MaskToImage": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "MaskToImage",
+      "node_id": "MaskToImage",
+      "category": "mask"
+    },
+    "MergeImageLists": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "MergeImageListsNode",
+      "node_id": "MergeImageLists",
+      "category": "dataset/image"
+    },
+    "MergeTextLists": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "MergeTextListsNode",
+      "node_id": "MergeTextLists",
+      "category": "dataset/text"
+    },
+    "MeshyAnimateModelNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyAnimateModelNode",
+      "node_id": "MeshyAnimateModelNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MeshyImageToModelNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyImageToModelNode",
+      "node_id": "MeshyImageToModelNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MeshyMultiImageToModelNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyMultiImageToModelNode",
+      "node_id": "MeshyMultiImageToModelNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MeshyRefineNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyRefineNode",
+      "node_id": "MeshyRefineNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MeshyRigModelNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyRigModelNode",
+      "node_id": "MeshyRigModelNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MeshyTextToModelNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyTextToModelNode",
+      "node_id": "MeshyTextToModelNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MeshyTextureNode": {
+      "file": "comfy_api_nodes/nodes_meshy.py",
+      "type": "new_api",
+      "class_name": "MeshyTextureNode",
+      "node_id": "MeshyTextureNode",
+      "category": "api node/3d/Meshy"
+    },
+    "MinimaxHailuoVideoNode": {
+      "file": "comfy_api_nodes/nodes_minimax.py",
+      "type": "new_api",
+      "class_name": "MinimaxHailuoVideoNode",
+      "node_id": "MinimaxHailuoVideoNode",
+      "category": "api node/video/MiniMax"
+    },
+    "MinimaxImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_minimax.py",
+      "type": "new_api",
+      "class_name": "MinimaxImageToVideoNode",
+      "node_id": "MinimaxImageToVideoNode",
+      "category": "api node/video/MiniMax"
+    },
+    "MinimaxSubjectToVideoNode": {
+      "file": "comfy_api_nodes/nodes_minimax.py",
+      "type": "new_api",
+      "class_name": "MinimaxSubjectToVideoNode",
+      "node_id": "MinimaxSubjectToVideoNode",
+      "category": "api node/video/MiniMax"
+    },
+    "MinimaxTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_minimax.py",
+      "type": "new_api",
+      "class_name": "MinimaxTextToVideoNode",
+      "node_id": "MinimaxTextToVideoNode",
+      "category": "api node/video/MiniMax"
+    },
+    "ModelComputeDtype": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelComputeDtype",
+      "category": "advanced/debug/model"
+    },
+    "ModelMergeAdd": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "ModelAdd",
+      "category": "advanced/model_merging"
+    },
+    "ModelMergeAuraflow": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeAuraflow",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeBlocks": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "ModelMergeBlocks",
+      "category": "advanced/model_merging"
+    },
+    "ModelMergeCosmos14B": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeCosmos14B",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeCosmos7B": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeCosmos7B",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeCosmosPredict2_14B": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeCosmosPredict2_14B",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeCosmosPredict2_2B": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeCosmosPredict2_2B",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeFlux1": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeFlux1",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeLTXV": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeLTXV",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeMochiPreview": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeMochiPreview",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeQwenImage": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeQwenImage",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeSD1": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeSD1",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeSD35_Large": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeSD35_Large",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeSD3_2B": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeSD3_2B",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeSDXL": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeSDXL",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelMergeSimple": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "ModelMergeSimple",
+      "category": "advanced/model_merging"
+    },
+    "ModelMergeSubtract": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "ModelSubtract",
+      "category": "advanced/model_merging"
+    },
+    "ModelMergeWAN2_1": {
+      "file": "comfy_extras/nodes_model_merging_model_specific.py",
+      "type": "classic",
+      "class_name": "ModelMergeWAN2_1",
+      "category": "advanced/model_merging/model_specific"
+    },
+    "ModelPatchLoader": {
+      "file": "comfy_extras/nodes_model_patch.py",
+      "type": "classic",
+      "class_name": "ModelPatchLoader",
+      "category": "advanced/loaders"
+    },
+    "ModelSamplingAuraFlow": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingAuraFlow",
+      "category": "advanced/model"
+    },
+    "ModelSamplingContinuousEDM": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingContinuousEDM",
+      "category": "advanced/model"
+    },
+    "ModelSamplingContinuousV": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingContinuousV",
+      "category": "advanced/model"
+    },
+    "ModelSamplingDiscrete": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingDiscrete",
+      "category": "advanced/model"
+    },
+    "ModelSamplingFlux": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingFlux",
+      "category": "advanced/model"
+    },
+    "ModelSamplingLTXV": {
+      "file": "comfy_extras/nodes_lt.py",
+      "type": "new_api",
+      "class_name": "ModelSamplingLTXV",
+      "node_id": "ModelSamplingLTXV",
+      "category": "advanced/model"
+    },
+    "ModelSamplingSD3": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingSD3",
+      "category": "advanced/model"
+    },
+    "ModelSamplingStableCascade": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "ModelSamplingStableCascade",
+      "category": "advanced/model"
+    },
+    "ModelSave": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "ModelSave",
+      "category": "advanced/model_merging"
+    },
+    "Morphology": {
+      "file": "comfy_extras/nodes_morphology.py",
+      "type": "new_api",
+      "class_name": "Morphology",
+      "node_id": "Morphology",
+      "category": "image/postprocessing"
+    },
+    "NAGuidance": {
+      "file": "comfy_extras/nodes_nag.py",
+      "type": "new_api",
+      "class_name": "NAGuidance",
+      "node_id": "NAGuidance",
+      "category": "advanced/guidance"
+    },
+    "NormalizeImages": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "NormalizeImagesNode",
+      "node_id": "NormalizeImages",
+      "category": "dataset/image"
+    },
+    "NormalizeVideoLatentStart": {
+      "file": "comfy_extras/nodes_kandinsky5.py",
+      "type": "new_api",
+      "class_name": "NormalizeVideoLatentStart",
+      "node_id": "NormalizeVideoLatentStart",
+      "category": "conditioning/video_models"
+    },
+    "OpenAIChatConfig": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIChatConfig",
+      "node_id": "OpenAIChatConfig",
+      "category": "api node/text/OpenAI"
+    },
+    "OpenAIChatNode": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIChatNode",
+      "node_id": "OpenAIChatNode",
+      "category": "api node/text/OpenAI"
+    },
+    "OpenAIDalle2": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIDalle2",
+      "node_id": "OpenAIDalle2",
+      "category": "api node/image/OpenAI"
+    },
+    "OpenAIDalle3": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIDalle3",
+      "node_id": "OpenAIDalle3",
+      "category": "api node/image/OpenAI"
+    },
+    "OpenAIGPTImage1": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIGPTImage1",
+      "node_id": "OpenAIGPTImage1",
+      "category": "api node/image/OpenAI"
+    },
+    "OpenAIGPTImageNodeV2": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIGPTImageNodeV2",
+      "node_id": "OpenAIGPTImageNodeV2",
+      "category": "api node/image/OpenAI"
+    },
+    "OpenAIInputFiles": {
+      "file": "comfy_api_nodes/nodes_openai.py",
+      "type": "new_api",
+      "class_name": "OpenAIInputFiles",
+      "node_id": "OpenAIInputFiles",
+      "category": "api node/text/OpenAI"
+    },
+    "OpenAIVideoSora2": {
+      "file": "comfy_api_nodes/nodes_sora.py",
+      "type": "new_api",
+      "class_name": "OpenAIVideoSora2",
+      "node_id": "OpenAIVideoSora2",
+      "category": "api node/video/Sora"
+    },
+    "OpticalFlowLoader": {
+      "file": "comfy_extras/nodes_void.py",
+      "type": "new_api",
+      "class_name": "OpticalFlowLoader",
+      "node_id": "OpticalFlowLoader",
+      "category": "loaders"
+    },
+    "OptimalStepsScheduler": {
+      "file": "comfy_extras/nodes_optimalsteps.py",
+      "type": "new_api",
+      "class_name": "OptimalStepsScheduler",
+      "node_id": "OptimalStepsScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "Painter": {
+      "file": "comfy_extras/nodes_painter.py",
+      "type": "new_api",
+      "class_name": "PainterNode",
+      "node_id": "Painter",
+      "category": "image"
+    },
+    "PairConditioningCombine": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "PairConditioningCombine",
+      "category": "advanced/hooks/cond pair"
+    },
+    "PairConditioningSetDefaultAndCombine": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "PairConditioningSetDefaultAndCombine",
+      "category": "advanced/hooks/cond pair"
+    },
+    "PairConditioningSetProperties": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "PairConditioningSetProperties",
+      "category": "advanced/hooks/cond pair"
+    },
+    "PairConditioningSetPropertiesAndCombine": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "PairConditioningSetPropertiesAndCombine",
+      "category": "advanced/hooks/cond pair"
+    },
+    "PatchModelAddDownscale": {
+      "file": "comfy_extras/nodes_model_downscale.py",
+      "type": "new_api",
+      "class_name": "PatchModelAddDownscale",
+      "node_id": "PatchModelAddDownscale",
+      "category": "model_patches/unet"
+    },
+    "PerpNeg": {
+      "file": "comfy_extras/nodes_perpneg.py",
+      "type": "new_api",
+      "class_name": "PerpNeg",
+      "node_id": "PerpNeg",
+      "category": "experimental"
+    },
+    "PerpNegGuider": {
+      "file": "comfy_extras/nodes_perpneg.py",
+      "type": "new_api",
+      "class_name": "PerpNegGuider",
+      "node_id": "PerpNegGuider",
+      "category": "experimental"
+    },
+    "PerturbedAttentionGuidance": {
+      "file": "comfy_extras/nodes_pag.py",
+      "type": "new_api",
+      "class_name": "PerturbedAttentionGuidance",
+      "node_id": "PerturbedAttentionGuidance",
+      "category": "model_patches/unet"
+    },
+    "PhotoMakerEncode": {
+      "file": "comfy_extras/nodes_photomaker.py",
+      "type": "new_api",
+      "class_name": "PhotoMakerEncode",
+      "node_id": "PhotoMakerEncode",
+      "category": "experimental/photomaker"
+    },
+    "PhotoMakerLoader": {
+      "file": "comfy_extras/nodes_photomaker.py",
+      "type": "new_api",
+      "class_name": "PhotoMakerLoader",
+      "node_id": "PhotoMakerLoader",
+      "category": "experimental/photomaker"
+    },
+    "PixverseImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_pixverse.py",
+      "type": "new_api",
+      "class_name": "PixverseImageToVideoNode",
+      "node_id": "PixverseImageToVideoNode",
+      "category": "api node/video/PixVerse"
+    },
+    "PixverseTemplateNode": {
+      "file": "comfy_api_nodes/nodes_pixverse.py",
+      "type": "new_api",
+      "class_name": "PixverseTemplateNode",
+      "node_id": "PixverseTemplateNode",
+      "category": "api node/video/PixVerse"
+    },
+    "PixverseTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_pixverse.py",
+      "type": "new_api",
+      "class_name": "PixverseTextToVideoNode",
+      "node_id": "PixverseTextToVideoNode",
+      "category": "api node/video/PixVerse"
+    },
+    "PixverseTransitionVideoNode": {
+      "file": "comfy_api_nodes/nodes_pixverse.py",
+      "type": "new_api",
+      "class_name": "PixverseTransitionVideoNode",
+      "node_id": "PixverseTransitionVideoNode",
+      "category": "api node/video/PixVerse"
+    },
+    "PolyexponentialScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "PolyexponentialScheduler",
+      "node_id": "PolyexponentialScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "PorterDuffImageComposite": {
+      "file": "comfy_extras/nodes_compositing.py",
+      "type": "new_api",
+      "class_name": "PorterDuffImageComposite",
+      "node_id": "PorterDuffImageComposite",
+      "category": "mask/compositing"
+    },
+    "Preview3D": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "Preview3D"
+    },
+    "Preview3DAnimation": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "Preview3DAnimation"
+    },
+    "PreviewAny": {
+      "file": "comfy_extras/nodes_preview_any.py",
+      "type": "classic",
+      "class_name": "PreviewAny",
+      "category": "utils"
+    },
+    "PreviewAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "PreviewAudio",
+      "node_id": "PreviewAudio",
+      "category": "audio"
+    },
+    "PreviewImage": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "PreviewImage",
+      "category": "image"
+    },
+    "PrimitiveBoolean": {
+      "file": "comfy_extras/nodes_primitive.py",
+      "type": "new_api",
+      "class_name": "Boolean",
+      "node_id": "PrimitiveBoolean",
+      "category": "utils/primitive"
+    },
+    "PrimitiveBoundingBox": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "BoundingBox",
+      "node_id": "PrimitiveBoundingBox",
+      "category": "utils/primitive"
+    },
+    "PrimitiveFloat": {
+      "file": "comfy_extras/nodes_primitive.py",
+      "type": "new_api",
+      "class_name": "Float",
+      "node_id": "PrimitiveFloat",
+      "category": "utils/primitive"
+    },
+    "PrimitiveInt": {
+      "file": "comfy_extras/nodes_primitive.py",
+      "type": "new_api",
+      "class_name": "Int",
+      "node_id": "PrimitiveInt",
+      "category": "utils/primitive"
+    },
+    "PrimitiveString": {
+      "file": "comfy_extras/nodes_primitive.py",
+      "type": "new_api",
+      "class_name": "String",
+      "node_id": "PrimitiveString",
+      "category": "utils/primitive"
+    },
+    "PrimitiveStringMultiline": {
+      "file": "comfy_extras/nodes_primitive.py",
+      "type": "new_api",
+      "class_name": "StringMultiline",
+      "node_id": "PrimitiveStringMultiline",
+      "category": "utils/primitive"
+    },
+    "QuadrupleCLIPLoader": {
+      "file": "comfy_extras/nodes_hidream.py",
+      "type": "new_api",
+      "class_name": "QuadrupleCLIPLoader",
+      "node_id": "QuadrupleCLIPLoader",
+      "category": "advanced/loaders"
+    },
+    "QuiverImageToSVGNode": {
+      "file": "comfy_api_nodes/nodes_quiver.py",
+      "type": "new_api",
+      "class_name": "QuiverImageToSVGNode",
+      "node_id": "QuiverImageToSVGNode",
+      "category": "api node/image/Quiver"
+    },
+    "QuiverTextToSVGNode": {
+      "file": "comfy_api_nodes/nodes_quiver.py",
+      "type": "new_api",
+      "class_name": "QuiverTextToSVGNode",
+      "node_id": "QuiverTextToSVGNode",
+      "category": "api node/image/Quiver"
+    },
+    "QwenImageDiffsynthControlnet": {
+      "file": "comfy_extras/nodes_model_patch.py",
+      "type": "classic",
+      "class_name": "QwenImageDiffsynthControlnet",
+      "category": "advanced/loaders/qwen"
+    },
+    "RTDETR_detect": {
+      "file": "comfy_extras/nodes_rtdetr.py",
+      "type": "new_api",
+      "class_name": "RTDETR_detect",
+      "node_id": "RTDETR_detect",
+      "category": "detection"
+    },
+    "RandomCropImages": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "RandomCropImagesNode",
+      "node_id": "RandomCropImages",
+      "category": "dataset/image"
+    },
+    "RandomNoise": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "RandomNoise",
+      "node_id": "RandomNoise",
+      "category": "sampling/custom_sampling/noise"
+    },
+    "RebatchImages": {
+      "file": "comfy_extras/nodes_rebatch.py",
+      "type": "new_api",
+      "class_name": "ImageRebatch",
+      "node_id": "RebatchImages",
+      "category": "image/batch"
+    },
+    "RebatchLatents": {
+      "file": "comfy_extras/nodes_rebatch.py",
+      "type": "new_api",
+      "class_name": "LatentRebatch",
+      "node_id": "RebatchLatents",
+      "category": "latent/batch"
+    },
+    "RecordAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "RecordAudio",
+      "node_id": "RecordAudio",
+      "category": "audio"
+    },
+    "RecraftColorRGB": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftColorRGBNode",
+      "node_id": "RecraftColorRGB",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftControls": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftControlsNode",
+      "node_id": "RecraftControls",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftCreateStyleNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftCreateStyleNode",
+      "node_id": "RecraftCreateStyleNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftCreativeUpscaleNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftCreativeUpscaleNode",
+      "node_id": "RecraftCreativeUpscaleNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftCrispUpscaleNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftCrispUpscaleNode",
+      "node_id": "RecraftCrispUpscaleNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftImageInpaintingNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftImageInpaintingNode",
+      "node_id": "RecraftImageInpaintingNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftImageToImageNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftImageToImageNode",
+      "node_id": "RecraftImageToImageNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftRemoveBackgroundNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftRemoveBackgroundNode",
+      "node_id": "RecraftRemoveBackgroundNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftReplaceBackgroundNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftReplaceBackgroundNode",
+      "node_id": "RecraftReplaceBackgroundNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftStyleV3DigitalIllustration": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftStyleV3DigitalIllustrationNode",
+      "node_id": "RecraftStyleV3DigitalIllustration",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftStyleV3InfiniteStyleLibrary": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftStyleInfiniteStyleLibrary",
+      "node_id": "RecraftStyleV3InfiniteStyleLibrary",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftStyleV3LogoRaster": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftStyleV3LogoRasterNode",
+      "node_id": "RecraftStyleV3LogoRaster",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftStyleV3RealisticImage": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftStyleV3RealisticImageNode",
+      "node_id": "RecraftStyleV3RealisticImage",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftStyleV3VectorIllustrationNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftStyleV3VectorIllustrationNode",
+      "node_id": "RecraftStyleV3VectorIllustrationNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftTextToImageNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftTextToImageNode",
+      "node_id": "RecraftTextToImageNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftTextToVectorNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftTextToVectorNode",
+      "node_id": "RecraftTextToVectorNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftV4TextToImageNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftV4TextToImageNode",
+      "node_id": "RecraftV4TextToImageNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftV4TextToVectorNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftV4TextToVectorNode",
+      "node_id": "RecraftV4TextToVectorNode",
+      "category": "api node/image/Recraft"
+    },
+    "RecraftVectorizeImageNode": {
+      "file": "comfy_api_nodes/nodes_recraft.py",
+      "type": "new_api",
+      "class_name": "RecraftVectorizeImageNode",
+      "node_id": "RecraftVectorizeImageNode",
+      "category": "api node/image/Recraft"
+    },
+    "ReferenceLatent": {
+      "file": "comfy_extras/nodes_edit_model.py",
+      "type": "new_api",
+      "class_name": "ReferenceLatent",
+      "node_id": "ReferenceLatent",
+      "category": "advanced/conditioning/edit_models"
+    },
+    "ReferenceTimbreAudio": {
+      "file": "comfy_extras/nodes_ace.py",
+      "type": "new_api",
+      "class_name": "ReferenceAudio",
+      "node_id": "ReferenceTimbreAudio",
+      "category": "advanced/conditioning/audio"
+    },
+    "RegexExtract": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "RegexExtract",
+      "node_id": "RegexExtract",
+      "category": "text"
+    },
+    "RegexMatch": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "RegexMatch",
+      "node_id": "RegexMatch",
+      "category": "text"
+    },
+    "RegexReplace": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "RegexReplace",
+      "node_id": "RegexReplace",
+      "category": "text"
+    },
+    "RemoveBackground": {
+      "file": "comfy_extras/nodes_bg_removal.py",
+      "type": "new_api",
+      "class_name": "RemoveBackground",
+      "node_id": "RemoveBackground",
+      "category": "image/background removal"
+    },
+    "RenormCFG": {
+      "file": "comfy_extras/nodes_lumina2.py",
+      "type": "new_api",
+      "class_name": "RenormCFG",
+      "node_id": "RenormCFG",
+      "category": "advanced/model"
+    },
+    "RepeatImageBatch": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "RepeatImageBatch",
+      "node_id": "RepeatImageBatch",
+      "category": "image/batch"
+    },
+    "RepeatLatentBatch": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "RepeatLatentBatch",
+      "category": "latent/batch"
+    },
+    "ReplaceText": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ReplaceTextNode",
+      "node_id": "ReplaceText",
+      "category": "dataset/text"
+    },
+    "ReplaceVideoLatentFrames": {
+      "file": "comfy_extras/nodes_latent.py",
+      "type": "new_api",
+      "class_name": "ReplaceVideoLatentFrames",
+      "node_id": "ReplaceVideoLatentFrames",
+      "category": "latent/batch"
+    },
+    "RescaleCFG": {
+      "file": "comfy_extras/nodes_model_advanced.py",
+      "type": "classic",
+      "class_name": "RescaleCFG",
+      "category": "advanced/model"
+    },
+    "ResizeAndPadImage": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "ResizeAndPadImage",
+      "node_id": "ResizeAndPadImage",
+      "category": "image/transform"
+    },
+    "ResizeImageMaskNode": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "ResizeImageMaskNode"
+    },
+    "ResizeImagesByLongerEdge": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ResizeImagesByLongerEdgeNode",
+      "node_id": "ResizeImagesByLongerEdge",
+      "category": "dataset/image"
+    },
+    "ResizeImagesByShorterEdge": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ResizeImagesByShorterEdgeNode",
+      "node_id": "ResizeImagesByShorterEdge",
+      "category": "dataset/image"
+    },
+    "ResolutionBucket": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ResolutionBucket",
+      "node_id": "ResolutionBucket",
+      "category": "dataset"
+    },
+    "ResolutionSelector": {
+      "file": "comfy_extras/nodes_resolution.py",
+      "type": "new_api",
+      "class_name": "ResolutionSelector",
+      "node_id": "ResolutionSelector",
+      "category": "utils"
+    },
+    "ReveImageCreateNode": {
+      "file": "comfy_api_nodes/nodes_reve.py",
+      "type": "new_api",
+      "class_name": "ReveImageCreateNode",
+      "node_id": "ReveImageCreateNode",
+      "category": "api node/image/Reve"
+    },
+    "ReveImageEditNode": {
+      "file": "comfy_api_nodes/nodes_reve.py",
+      "type": "new_api",
+      "class_name": "ReveImageEditNode",
+      "node_id": "ReveImageEditNode",
+      "category": "api node/image/Reve"
+    },
+    "ReveImageRemixNode": {
+      "file": "comfy_api_nodes/nodes_reve.py",
+      "type": "new_api",
+      "class_name": "ReveImageRemixNode",
+      "node_id": "ReveImageRemixNode",
+      "category": "api node/image/Reve"
+    },
+    "Rodin3D_Detail": {
+      "file": "comfy_api_nodes/nodes_rodin.py",
+      "type": "new_api",
+      "class_name": "Rodin3D_Detail",
+      "node_id": "Rodin3D_Detail",
+      "category": "api node/3d/Rodin"
+    },
+    "Rodin3D_Gen2": {
+      "file": "comfy_api_nodes/nodes_rodin.py",
+      "type": "new_api",
+      "class_name": "Rodin3D_Gen2",
+      "node_id": "Rodin3D_Gen2",
+      "category": "api node/3d/Rodin"
+    },
+    "Rodin3D_Regular": {
+      "file": "comfy_api_nodes/nodes_rodin.py",
+      "type": "new_api",
+      "class_name": "Rodin3D_Regular",
+      "node_id": "Rodin3D_Regular",
+      "category": "api node/3d/Rodin"
+    },
+    "Rodin3D_Sketch": {
+      "file": "comfy_api_nodes/nodes_rodin.py",
+      "type": "new_api",
+      "class_name": "Rodin3D_Sketch",
+      "node_id": "Rodin3D_Sketch",
+      "category": "api node/3d/Rodin"
+    },
+    "Rodin3D_Smooth": {
+      "file": "comfy_api_nodes/nodes_rodin.py",
+      "type": "new_api",
+      "class_name": "Rodin3D_Smooth",
+      "node_id": "Rodin3D_Smooth",
+      "category": "api node/3d/Rodin"
+    },
+    "RunwayFirstLastFrameNode": {
+      "file": "comfy_api_nodes/nodes_runway.py",
+      "type": "new_api",
+      "class_name": "RunwayFirstLastFrameNode",
+      "node_id": "RunwayFirstLastFrameNode",
+      "category": "api node/video/Runway"
+    },
+    "RunwayImageToVideoNodeGen3a": {
+      "file": "comfy_api_nodes/nodes_runway.py",
+      "type": "new_api",
+      "class_name": "RunwayImageToVideoNodeGen3a",
+      "node_id": "RunwayImageToVideoNodeGen3a",
+      "category": "api node/video/Runway"
+    },
+    "RunwayImageToVideoNodeGen4": {
+      "file": "comfy_api_nodes/nodes_runway.py",
+      "type": "new_api",
+      "class_name": "RunwayImageToVideoNodeGen4",
+      "node_id": "RunwayImageToVideoNodeGen4",
+      "category": "api node/video/Runway"
+    },
+    "RunwayTextToImageNode": {
+      "file": "comfy_api_nodes/nodes_runway.py",
+      "type": "new_api",
+      "class_name": "RunwayTextToImageNode",
+      "node_id": "RunwayTextToImageNode",
+      "category": "api node/image/Runway"
+    },
+    "SAM3_Detect": {
+      "file": "comfy_extras/nodes_sam3.py",
+      "type": "new_api",
+      "class_name": "SAM3_Detect",
+      "node_id": "SAM3_Detect",
+      "category": "detection"
+    },
+    "SAM3_TrackPreview": {
+      "file": "comfy_extras/nodes_sam3.py",
+      "type": "new_api",
+      "class_name": "SAM3_TrackPreview",
+      "node_id": "SAM3_TrackPreview",
+      "category": "detection"
+    },
+    "SAM3_TrackToMask": {
+      "file": "comfy_extras/nodes_sam3.py",
+      "type": "new_api",
+      "class_name": "SAM3_TrackToMask",
+      "node_id": "SAM3_TrackToMask",
+      "category": "detection"
+    },
+    "SAM3_VideoTrack": {
+      "file": "comfy_extras/nodes_sam3.py",
+      "type": "new_api",
+      "class_name": "SAM3_VideoTrack",
+      "node_id": "SAM3_VideoTrack",
+      "category": "detection"
+    },
+    "SDPoseDrawKeypoints": {
+      "file": "comfy_extras/nodes_sdpose.py",
+      "type": "new_api",
+      "class_name": "SDPoseDrawKeypoints",
+      "node_id": "SDPoseDrawKeypoints",
+      "category": "image/preprocessors"
+    },
+    "SDPoseFaceBBoxes": {
+      "file": "comfy_extras/nodes_sdpose.py",
+      "type": "new_api",
+      "class_name": "SDPoseFaceBBoxes",
+      "node_id": "SDPoseFaceBBoxes",
+      "category": "image/preprocessors"
+    },
+    "SDPoseKeypointExtractor": {
+      "file": "comfy_extras/nodes_sdpose.py",
+      "type": "new_api",
+      "class_name": "SDPoseKeypointExtractor",
+      "node_id": "SDPoseKeypointExtractor",
+      "category": "image/preprocessors"
+    },
+    "SDTurboScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SDTurboScheduler",
+      "node_id": "SDTurboScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "SDV_img2vid_Conditioning": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "SDV_img2vid_Conditioning"
+    },
+    "SD_4XUpscale_Conditioning": {
+      "file": "comfy_extras/nodes_sdupscale.py",
+      "type": "new_api",
+      "class_name": "SD_4XUpscale_Conditioning",
+      "node_id": "SD_4XUpscale_Conditioning",
+      "category": "conditioning/upscale_diffusion"
+    },
+    "SUPIRApply": {
+      "file": "comfy_extras/nodes_model_patch.py",
+      "type": "new_api",
+      "class_name": "SUPIRApply",
+      "node_id": "SUPIRApply",
+      "category": "model_patches/supir"
+    },
+    "SV3D_Conditioning": {
+      "file": "comfy_extras/nodes_stable3d.py",
+      "type": "new_api",
+      "class_name": "SV3D_Conditioning",
+      "node_id": "SV3D_Conditioning",
+      "category": "conditioning/3d_models"
+    },
+    "SVD_img2vid_Conditioning": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "SVD_img2vid_Conditioning"
+    },
+    "SamplerARVideo": {
+      "file": "comfy_extras/nodes_ar_video.py",
+      "type": "new_api",
+      "class_name": "SamplerARVideo",
+      "node_id": "SamplerARVideo",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerCustom": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerCustom",
+      "node_id": "SamplerCustom",
+      "category": "sampling/custom_sampling"
+    },
+    "SamplerCustomAdvanced": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerCustomAdvanced",
+      "node_id": "SamplerCustomAdvanced",
+      "category": "sampling/custom_sampling"
+    },
+    "SamplerDPMAdaptative": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerDPMAdaptative",
+      "node_id": "SamplerDPMAdaptative",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerDPMPP_2M_SDE": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerDPMPP_2M_SDE",
+      "node_id": "SamplerDPMPP_2M_SDE",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerDPMPP_2S_Ancestral": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerDPMPP_2S_Ancestral",
+      "node_id": "SamplerDPMPP_2S_Ancestral",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerDPMPP_3M_SDE": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerDPMPP_3M_SDE",
+      "node_id": "SamplerDPMPP_3M_SDE",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerDPMPP_SDE": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerDPMPP_SDE",
+      "node_id": "SamplerDPMPP_SDE",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerER_SDE": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerER_SDE",
+      "node_id": "SamplerER_SDE",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerEulerAncestral": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerEulerAncestral",
+      "node_id": "SamplerEulerAncestral",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerEulerAncestralCFGPP": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerEulerAncestralCFGPP",
+      "node_id": "SamplerEulerAncestralCFGPP",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerEulerCFGpp": {
+      "file": "comfy_extras/nodes_advanced_samplers.py",
+      "type": "new_api",
+      "class_name": "SamplerEulerCFGpp",
+      "node_id": "SamplerEulerCFGpp",
+      "category": "experimental"
+    },
+    "SamplerLCMUpscale": {
+      "file": "comfy_extras/nodes_advanced_samplers.py",
+      "type": "new_api",
+      "class_name": "SamplerLCMUpscale",
+      "node_id": "SamplerLCMUpscale",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerLMS": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerLMS",
+      "node_id": "SamplerLMS",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerSASolver": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerSASolver",
+      "node_id": "SamplerSASolver",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplerSEEDS2": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplerSEEDS2",
+      "node_id": "SamplerSEEDS2",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "SamplingPercentToSigma": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SamplingPercentToSigma",
+      "node_id": "SamplingPercentToSigma",
+      "category": "sampling/custom_sampling/sigmas"
+    },
+    "SaveAnimatedPNG": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "SaveAnimatedPNG",
+      "node_id": "SaveAnimatedPNG",
+      "category": "image/animation"
+    },
+    "SaveAnimatedWEBP": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "SaveAnimatedWEBP",
+      "node_id": "SaveAnimatedWEBP",
+      "category": "image/animation"
+    },
+    "SaveAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "SaveAudio",
+      "node_id": "SaveAudio",
+      "category": "audio"
+    },
+    "SaveAudioMP3": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "SaveAudioMP3",
+      "node_id": "SaveAudioMP3",
+      "category": "audio"
+    },
+    "SaveAudioOpus": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "SaveAudioOpus",
+      "node_id": "SaveAudioOpus",
+      "category": "audio"
+    },
+    "SaveGLB": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "SaveGLB",
+      "node_id": "SaveGLB",
+      "category": "3d"
+    },
+    "SaveImage": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "SaveImage",
+      "category": "image"
+    },
+    "SaveImageDataSetToFolder": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "SaveImageDataSetToFolderNode",
+      "node_id": "SaveImageDataSetToFolder",
+      "category": "dataset"
+    },
+    "SaveImageTextDataSetToFolder": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "SaveImageTextDataSetToFolderNode",
+      "node_id": "SaveImageTextDataSetToFolder",
+      "category": "dataset"
+    },
+    "SaveLatent": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "SaveLatent",
+      "category": "experimental"
+    },
+    "SaveLoRA": {
+      "file": "comfy_extras/nodes_train.py",
+      "type": "new_api",
+      "class_name": "SaveLoRA",
+      "node_id": "SaveLoRA",
+      "category": "advanced/model_merging"
+    },
+    "SaveSVGNode": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "SaveSVGNode",
+      "node_id": "SaveSVGNode",
+      "category": "image/save"
+    },
+    "SaveTrainingDataset": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "SaveTrainingDataset",
+      "node_id": "SaveTrainingDataset",
+      "category": "dataset"
+    },
+    "SaveVideo": {
+      "file": "comfy_extras/nodes_video.py",
+      "type": "new_api",
+      "class_name": "SaveVideo",
+      "node_id": "SaveVideo",
+      "category": "video"
+    },
+    "SaveWEBM": {
+      "file": "comfy_extras/nodes_video.py",
+      "type": "new_api",
+      "class_name": "SaveWEBM",
+      "node_id": "SaveWEBM",
+      "category": "video"
+    },
+    "ScaleROPE": {
+      "file": "comfy_extras/nodes_rope.py",
+      "type": "new_api",
+      "class_name": "ScaleROPE",
+      "node_id": "ScaleROPE",
+      "category": "advanced/model_patches"
+    },
+    "SelfAttentionGuidance": {
+      "file": "comfy_extras/nodes_sag.py",
+      "type": "new_api",
+      "class_name": "SelfAttentionGuidance",
+      "node_id": "SelfAttentionGuidance",
+      "category": "experimental"
+    },
+    "SetClipHooks": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "SetClipHooks",
+      "category": "advanced/hooks/clip"
+    },
+    "SetFirstSigma": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SetFirstSigma",
+      "node_id": "SetFirstSigma",
+      "category": "sampling/custom_sampling/sigmas"
+    },
+    "SetHookKeyframes": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "SetHookKeyframes",
+      "category": "advanced/hooks/scheduling"
+    },
+    "SetLatentNoiseMask": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "SetLatentNoiseMask",
+      "category": "latent/inpaint"
+    },
+    "SetModelHooksOnCond": {
+      "file": "comfy_extras/nodes_hooks.py",
+      "type": "classic",
+      "class_name": "SetModelHooksOnCond",
+      "category": "advanced/hooks/manual"
+    },
+    "SetUnionControlNetType": {
+      "file": "comfy_extras/nodes_controlnet.py",
+      "type": "new_api",
+      "class_name": "SetUnionControlNetType",
+      "node_id": "SetUnionControlNetType",
+      "category": "conditioning/controlnet"
+    },
+    "ShuffleDataset": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ShuffleDatasetNode",
+      "node_id": "ShuffleDataset",
+      "category": "dataset/image"
+    },
+    "ShuffleImageTextDataset": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "ShuffleImageTextDatasetNode",
+      "node_id": "ShuffleImageTextDataset",
+      "category": "dataset/image"
+    },
+    "SkipLayerGuidanceDiT": {
+      "file": "comfy_extras/nodes_slg.py",
+      "type": "new_api",
+      "class_name": "SkipLayerGuidanceDiT",
+      "node_id": "SkipLayerGuidanceDiT",
+      "category": "advanced/guidance"
+    },
+    "SkipLayerGuidanceDiTSimple": {
+      "file": "comfy_extras/nodes_slg.py",
+      "type": "new_api",
+      "class_name": "SkipLayerGuidanceDiTSimple",
+      "node_id": "SkipLayerGuidanceDiTSimple",
+      "category": "advanced/guidance"
+    },
+    "SkipLayerGuidanceSD3": {
+      "file": "comfy_extras/nodes_sd3.py",
+      "type": "new_api",
+      "class_name": "SkipLayerGuidanceSD3",
+      "node_id": "SkipLayerGuidanceSD3",
+      "category": "advanced/guidance"
+    },
+    "SolidMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "SolidMask",
+      "node_id": "SolidMask",
+      "category": "mask"
+    },
+    "SoniloTextToMusic": {
+      "file": "comfy_api_nodes/nodes_sonilo.py",
+      "type": "new_api",
+      "class_name": "SoniloTextToMusic",
+      "node_id": "SoniloTextToMusic",
+      "category": "api node/audio/Sonilo"
+    },
+    "SoniloVideoToMusic": {
+      "file": "comfy_api_nodes/nodes_sonilo.py",
+      "type": "new_api",
+      "class_name": "SoniloVideoToMusic",
+      "node_id": "SoniloVideoToMusic",
+      "category": "api node/audio/Sonilo"
+    },
+    "SplitAudioChannels": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "SplitAudioChannels",
+      "node_id": "SplitAudioChannels",
+      "category": "audio"
+    },
+    "SplitImageToTileList": {
+      "file": "comfy_extras/nodes_images.py",
+      "type": "new_api",
+      "class_name": "SplitImageToTileList",
+      "node_id": "SplitImageToTileList",
+      "category": "image/batch"
+    },
+    "SplitImageWithAlpha": {
+      "file": "comfy_extras/nodes_compositing.py",
+      "type": "new_api",
+      "class_name": "SplitImageWithAlpha",
+      "node_id": "SplitImageWithAlpha",
+      "category": "mask/compositing"
+    },
+    "SplitSigmas": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SplitSigmas",
+      "node_id": "SplitSigmas",
+      "category": "sampling/custom_sampling/sigmas"
+    },
+    "SplitSigmasDenoise": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "SplitSigmasDenoise",
+      "node_id": "SplitSigmasDenoise",
+      "category": "sampling/custom_sampling/sigmas"
+    },
+    "StabilityAudioInpaint": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityAudioInpaint",
+      "node_id": "StabilityAudioInpaint",
+      "category": "api node/audio/Stability AI"
+    },
+    "StabilityAudioToAudio": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityAudioToAudio",
+      "node_id": "StabilityAudioToAudio",
+      "category": "api node/audio/Stability AI"
+    },
+    "StabilityStableImageSD_3_5Node": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityStableImageSD_3_5Node",
+      "node_id": "StabilityStableImageSD_3_5Node",
+      "category": "api node/image/Stability AI"
+    },
+    "StabilityStableImageUltraNode": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityStableImageUltraNode",
+      "node_id": "StabilityStableImageUltraNode",
+      "category": "api node/image/Stability AI"
+    },
+    "StabilityTextToAudio": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityTextToAudio",
+      "node_id": "StabilityTextToAudio",
+      "category": "api node/audio/Stability AI"
+    },
+    "StabilityUpscaleConservativeNode": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityUpscaleConservativeNode",
+      "node_id": "StabilityUpscaleConservativeNode",
+      "category": "api node/image/Stability AI"
+    },
+    "StabilityUpscaleCreativeNode": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityUpscaleCreativeNode",
+      "node_id": "StabilityUpscaleCreativeNode",
+      "category": "api node/image/Stability AI"
+    },
+    "StabilityUpscaleFastNode": {
+      "file": "comfy_api_nodes/nodes_stability.py",
+      "type": "new_api",
+      "class_name": "StabilityUpscaleFastNode",
+      "node_id": "StabilityUpscaleFastNode",
+      "category": "api node/image/Stability AI"
+    },
+    "StableCascade_EmptyLatentImage": {
+      "file": "comfy_extras/nodes_stable_cascade.py",
+      "type": "new_api",
+      "class_name": "StableCascade_EmptyLatentImage",
+      "node_id": "StableCascade_EmptyLatentImage",
+      "category": "latent/stable_cascade"
+    },
+    "StableCascade_StageB_Conditioning": {
+      "file": "comfy_extras/nodes_stable_cascade.py",
+      "type": "new_api",
+      "class_name": "StableCascade_StageB_Conditioning",
+      "node_id": "StableCascade_StageB_Conditioning",
+      "category": "conditioning/stable_cascade"
+    },
+    "StableCascade_StageC_VAEEncode": {
+      "file": "comfy_extras/nodes_stable_cascade.py",
+      "type": "new_api",
+      "class_name": "StableCascade_StageC_VAEEncode",
+      "node_id": "StableCascade_StageC_VAEEncode",
+      "category": "latent/stable_cascade"
+    },
+    "StableCascade_SuperResolutionControlnet": {
+      "file": "comfy_extras/nodes_stable_cascade.py",
+      "type": "new_api",
+      "class_name": "StableCascade_SuperResolutionControlnet",
+      "node_id": "StableCascade_SuperResolutionControlnet",
+      "category": "experimental/stable_cascade"
+    },
+    "StableZero123_Conditioning": {
+      "file": "comfy_extras/nodes_stable3d.py",
+      "type": "new_api",
+      "class_name": "StableZero123_Conditioning",
+      "node_id": "StableZero123_Conditioning",
+      "category": "conditioning/3d_models"
+    },
+    "StableZero123_Conditioning_Batched": {
+      "file": "comfy_extras/nodes_stable3d.py",
+      "type": "new_api",
+      "class_name": "StableZero123_Conditioning_Batched",
+      "node_id": "StableZero123_Conditioning_Batched",
+      "category": "conditioning/3d_models"
+    },
+    "StringCompare": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringCompare",
+      "node_id": "StringCompare",
+      "category": "text"
+    },
+    "StringConcatenate": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringConcatenate",
+      "node_id": "StringConcatenate",
+      "category": "text"
+    },
+    "StringContains": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringContains",
+      "node_id": "StringContains",
+      "category": "text"
+    },
+    "StringLength": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringLength",
+      "node_id": "StringLength",
+      "category": "text"
+    },
+    "StringReplace": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringReplace",
+      "node_id": "StringReplace",
+      "category": "text"
+    },
+    "StringSubstring": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringSubstring",
+      "node_id": "StringSubstring",
+      "category": "text"
+    },
+    "StringTrim": {
+      "file": "comfy_extras/nodes_string.py",
+      "type": "new_api",
+      "class_name": "StringTrim",
+      "node_id": "StringTrim",
+      "category": "text"
+    },
+    "StripWhitespace": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "StripWhitespaceNode",
+      "node_id": "StripWhitespace",
+      "category": "dataset/text"
+    },
+    "StyleModelApply": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "StyleModelApply",
+      "category": "conditioning/style_model"
+    },
+    "StyleModelLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "StyleModelLoader",
+      "category": "loaders"
+    },
+    "T2IAdapterLoader": {
+      "file": "comfy_extras/nodes_replacements.py",
+      "type": "new_api",
+      "class_name": "Unknown",
+      "node_id": "T2IAdapterLoader"
+    },
+    "T5TokenizerOptions": {
+      "file": "comfy_extras/nodes_cond.py",
+      "type": "new_api",
+      "class_name": "T5TokenizerOptions",
+      "node_id": "T5TokenizerOptions",
+      "category": "experimental/conditioning"
+    },
+    "TCFG": {
+      "file": "comfy_extras/nodes_tcfg.py",
+      "type": "new_api",
+      "class_name": "TCFG",
+      "node_id": "TCFG",
+      "category": "advanced/guidance"
+    },
+    "TemporalScoreRescaling": {
+      "file": "comfy_extras/nodes_eps.py",
+      "type": "new_api",
+      "class_name": "TemporalScoreRescaling",
+      "node_id": "TemporalScoreRescaling",
+      "category": "model_patches/unet"
+    },
+    "Tencent3DPartNode": {
+      "file": "comfy_api_nodes/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "Tencent3DPartNode",
+      "node_id": "Tencent3DPartNode",
+      "category": "api node/3d/Tencent"
+    },
+    "Tencent3DTextureEditNode": {
+      "file": "comfy_api_nodes/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "Tencent3DTextureEditNode",
+      "node_id": "Tencent3DTextureEditNode",
+      "category": "api node/3d/Tencent"
+    },
+    "TencentImageToModelNode": {
+      "file": "comfy_api_nodes/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "TencentImageToModelNode",
+      "node_id": "TencentImageToModelNode",
+      "category": "api node/3d/Tencent"
+    },
+    "TencentModelTo3DUVNode": {
+      "file": "comfy_api_nodes/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "TencentModelTo3DUVNode",
+      "node_id": "TencentModelTo3DUVNode",
+      "category": "api node/3d/Tencent"
+    },
+    "TencentSmartTopologyNode": {
+      "file": "comfy_api_nodes/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "TencentSmartTopologyNode",
+      "node_id": "TencentSmartTopologyNode",
+      "category": "api node/3d/Tencent"
+    },
+    "TencentTextToModelNode": {
+      "file": "comfy_api_nodes/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "TencentTextToModelNode",
+      "node_id": "TencentTextToModelNode",
+      "category": "api node/3d/Tencent"
+    },
+    "TextEncodeAceStepAudio": {
+      "file": "comfy_extras/nodes_ace.py",
+      "type": "new_api",
+      "class_name": "TextEncodeAceStepAudio",
+      "node_id": "TextEncodeAceStepAudio",
+      "category": "conditioning"
+    },
+    "TextEncodeAceStepAudio1.5": {
+      "file": "comfy_extras/nodes_ace.py",
+      "type": "new_api",
+      "class_name": "TextEncodeAceStepAudio15",
+      "node_id": "TextEncodeAceStepAudio1.5",
+      "category": "conditioning"
+    },
+    "TextEncodeHunyuanVideo_ImageToVideo": {
+      "file": "comfy_extras/nodes_hunyuan.py",
+      "type": "new_api",
+      "class_name": "TextEncodeHunyuanVideo_ImageToVideo",
+      "node_id": "TextEncodeHunyuanVideo_ImageToVideo",
+      "category": "advanced/conditioning"
+    },
+    "TextEncodeQwenImageEdit": {
+      "file": "comfy_extras/nodes_qwen.py",
+      "type": "new_api",
+      "class_name": "TextEncodeQwenImageEdit",
+      "node_id": "TextEncodeQwenImageEdit",
+      "category": "advanced/conditioning"
+    },
+    "TextEncodeQwenImageEditPlus": {
+      "file": "comfy_extras/nodes_qwen.py",
+      "type": "new_api",
+      "class_name": "TextEncodeQwenImageEditPlus",
+      "node_id": "TextEncodeQwenImageEditPlus",
+      "category": "advanced/conditioning"
+    },
+    "TextEncodeZImageOmni": {
+      "file": "comfy_extras/nodes_zimage.py",
+      "type": "new_api",
+      "class_name": "TextEncodeZImageOmni",
+      "node_id": "TextEncodeZImageOmni",
+      "category": "advanced/conditioning"
+    },
+    "TextGenerate": {
+      "file": "comfy_extras/nodes_textgen.py",
+      "type": "new_api",
+      "class_name": "TextGenerate",
+      "node_id": "TextGenerate",
+      "category": "text"
+    },
+    "TextGenerateLTX2Prompt": {
+      "file": "comfy_extras/nodes_textgen.py",
+      "type": "new_api",
+      "class_name": "TextGenerateLTX2Prompt",
+      "node_id": "TextGenerateLTX2Prompt",
+      "category": "text"
+    },
+    "TextToLowercase": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "TextToLowercaseNode",
+      "node_id": "TextToLowercase",
+      "category": "dataset/text"
+    },
+    "TextToUppercase": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "TextToUppercaseNode",
+      "node_id": "TextToUppercase",
+      "category": "dataset/text"
+    },
+    "ThresholdMask": {
+      "file": "comfy_extras/nodes_mask.py",
+      "type": "new_api",
+      "class_name": "ThresholdMask",
+      "node_id": "ThresholdMask",
+      "category": "mask"
+    },
+    "TomePatchModel": {
+      "file": "comfy_extras/nodes_tomesd.py",
+      "type": "new_api",
+      "class_name": "TomePatchModel",
+      "node_id": "TomePatchModel",
+      "category": "model_patches/unet"
+    },
+    "TopazImageEnhance": {
+      "file": "comfy_api_nodes/nodes_topaz.py",
+      "type": "new_api",
+      "class_name": "TopazImageEnhance",
+      "node_id": "TopazImageEnhance",
+      "category": "api node/image/Topaz"
+    },
+    "TopazVideoEnhance": {
+      "file": "comfy_api_nodes/nodes_topaz.py",
+      "type": "new_api",
+      "class_name": "TopazVideoEnhance",
+      "node_id": "TopazVideoEnhance",
+      "category": "api node/video/Topaz"
+    },
+    "TopazVideoEnhanceV2": {
+      "file": "comfy_api_nodes/nodes_topaz.py",
+      "type": "new_api",
+      "class_name": "TopazVideoEnhanceV2",
+      "node_id": "TopazVideoEnhanceV2",
+      "category": "api node/video/Topaz"
+    },
+    "TorchCompileModel": {
+      "file": "comfy_extras/nodes_torch_compile.py",
+      "type": "new_api",
+      "class_name": "TorchCompileModel",
+      "node_id": "TorchCompileModel",
+      "category": "experimental"
+    },
+    "TrainLoraNode": {
+      "file": "comfy_extras/nodes_train.py",
+      "type": "new_api",
+      "class_name": "TrainLoraNode",
+      "node_id": "TrainLoraNode",
+      "category": "training"
+    },
+    "TrimAudioDuration": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "TrimAudioDuration",
+      "node_id": "TrimAudioDuration",
+      "category": "audio"
+    },
+    "TrimVideoLatent": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "TrimVideoLatent",
+      "node_id": "TrimVideoLatent",
+      "category": "latent/video"
+    },
+    "TripleCLIPLoader": {
+      "file": "comfy_extras/nodes_sd3.py",
+      "type": "new_api",
+      "class_name": "TripleCLIPLoader",
+      "node_id": "TripleCLIPLoader",
+      "category": "advanced/loaders"
+    },
+    "TripoConversionNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoConversionNode",
+      "node_id": "TripoConversionNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoImageToModelNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoImageToModelNode",
+      "node_id": "TripoImageToModelNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoMultiviewToModelNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoMultiviewToModelNode",
+      "node_id": "TripoMultiviewToModelNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoRefineNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoRefineNode",
+      "node_id": "TripoRefineNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoRetargetNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoRetargetNode",
+      "node_id": "TripoRetargetNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoRigNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoRigNode",
+      "node_id": "TripoRigNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoTextToModelNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoTextToModelNode",
+      "node_id": "TripoTextToModelNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TripoTextureNode": {
+      "file": "comfy_api_nodes/nodes_tripo.py",
+      "type": "new_api",
+      "class_name": "TripoTextureNode",
+      "node_id": "TripoTextureNode",
+      "category": "api node/3d/Tripo"
+    },
+    "TruncateText": {
+      "file": "comfy_extras/nodes_dataset.py",
+      "type": "new_api",
+      "class_name": "TruncateTextNode",
+      "node_id": "TruncateText",
+      "category": "dataset/text"
+    },
+    "UNETLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "UNETLoader",
+      "category": "advanced/loaders"
+    },
+    "UNetCrossAttentionMultiply": {
+      "file": "comfy_extras/nodes_attention_multiply.py",
+      "type": "new_api",
+      "class_name": "UNetCrossAttentionMultiply",
+      "node_id": "UNetCrossAttentionMultiply",
+      "category": "experimental/attention_experiments"
+    },
+    "UNetSelfAttentionMultiply": {
+      "file": "comfy_extras/nodes_attention_multiply.py",
+      "type": "new_api",
+      "class_name": "UNetSelfAttentionMultiply",
+      "node_id": "UNetSelfAttentionMultiply",
+      "category": "experimental/attention_experiments"
+    },
+    "UNetTemporalAttentionMultiply": {
+      "file": "comfy_extras/nodes_attention_multiply.py",
+      "type": "new_api",
+      "class_name": "UNetTemporalAttentionMultiply",
+      "node_id": "UNetTemporalAttentionMultiply",
+      "category": "experimental/attention_experiments"
+    },
+    "USOStyleReference": {
+      "file": "comfy_extras/nodes_model_patch.py",
+      "type": "classic",
+      "class_name": "USOStyleReference",
+      "category": "advanced/model_patches/flux"
+    },
+    "UpscaleModelLoader": {
+      "file": "comfy_extras/nodes_upscale_model.py",
+      "type": "new_api",
+      "class_name": "UpscaleModelLoader",
+      "node_id": "UpscaleModelLoader",
+      "category": "loaders"
+    },
+    "VAEDecode": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "VAEDecode",
+      "category": "latent"
+    },
+    "VAEDecodeAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "VAEDecodeAudio",
+      "node_id": "VAEDecodeAudio",
+      "category": "latent/audio"
+    },
+    "VAEDecodeAudioTiled": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "VAEDecodeAudioTiled",
+      "node_id": "VAEDecodeAudioTiled",
+      "category": "latent/audio"
+    },
+    "VAEDecodeHunyuan3D": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "VAEDecodeHunyuan3D",
+      "node_id": "VAEDecodeHunyuan3D",
+      "category": "latent/3d"
+    },
+    "VAEDecodeTiled": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "VAEDecodeTiled",
+      "category": "experimental"
+    },
+    "VAEEncode": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "VAEEncode",
+      "category": "latent"
+    },
+    "VAEEncodeAudio": {
+      "file": "comfy_extras/nodes_audio.py",
+      "type": "new_api",
+      "class_name": "VAEEncodeAudio",
+      "node_id": "VAEEncodeAudio",
+      "category": "latent/audio"
+    },
+    "VAEEncodeForInpaint": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "VAEEncodeForInpaint",
+      "category": "latent/inpaint"
+    },
+    "VAEEncodeTiled": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "VAEEncodeTiled",
+      "category": "experimental"
+    },
+    "VAELoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "VAELoader",
+      "category": "loaders"
+    },
+    "VAESave": {
+      "file": "comfy_extras/nodes_model_merging.py",
+      "type": "classic",
+      "class_name": "VAESave",
+      "category": "advanced/model_merging"
+    },
+    "VOIDInpaintConditioning": {
+      "file": "comfy_extras/nodes_void.py",
+      "type": "new_api",
+      "class_name": "VOIDInpaintConditioning",
+      "node_id": "VOIDInpaintConditioning",
+      "category": "conditioning/video_models"
+    },
+    "VOIDQuadmaskPreprocess": {
+      "file": "comfy_extras/nodes_void.py",
+      "type": "new_api",
+      "class_name": "VOIDQuadmaskPreprocess",
+      "node_id": "VOIDQuadmaskPreprocess",
+      "category": "mask/video"
+    },
+    "VOIDSampler": {
+      "file": "comfy_extras/nodes_void.py",
+      "type": "new_api",
+      "class_name": "VOIDSampler",
+      "node_id": "VOIDSampler",
+      "category": "sampling/custom_sampling/samplers"
+    },
+    "VOIDWarpedNoise": {
+      "file": "comfy_extras/nodes_void.py",
+      "type": "new_api",
+      "class_name": "VOIDWarpedNoise",
+      "node_id": "VOIDWarpedNoise",
+      "category": "latent/video"
+    },
+    "VOIDWarpedNoiseSource": {
+      "file": "comfy_extras/nodes_void.py",
+      "type": "new_api",
+      "class_name": "VOIDWarpedNoiseSource",
+      "node_id": "VOIDWarpedNoiseSource",
+      "category": "sampling/custom_sampling/noise"
+    },
+    "VPScheduler": {
+      "file": "comfy_extras/nodes_custom_sampler.py",
+      "type": "new_api",
+      "class_name": "VPScheduler",
+      "node_id": "VPScheduler",
+      "category": "sampling/custom_sampling/schedulers"
+    },
+    "Veo3FirstLastFrameNode": {
+      "file": "comfy_api_nodes/nodes_veo2.py",
+      "type": "new_api",
+      "class_name": "Veo3FirstLastFrameNode",
+      "node_id": "Veo3FirstLastFrameNode",
+      "category": "api node/video/Veo"
+    },
+    "Veo3VideoGenerationNode": {
+      "file": "comfy_api_nodes/nodes_veo2.py",
+      "type": "new_api",
+      "class_name": "Veo3VideoGenerationNode",
+      "node_id": "Veo3VideoGenerationNode",
+      "category": "api node/video/Veo"
+    },
+    "VeoVideoGenerationNode": {
+      "file": "comfy_api_nodes/nodes_veo2.py",
+      "type": "new_api",
+      "class_name": "VeoVideoGenerationNode",
+      "node_id": "VeoVideoGenerationNode",
+      "category": "api node/video/Veo"
+    },
+    "Video Slice": {
+      "file": "comfy_extras/nodes_video.py",
+      "type": "new_api",
+      "class_name": "VideoSlice",
+      "node_id": "Video Slice",
+      "category": "video"
+    },
+    "VideoLinearCFGGuidance": {
+      "file": "comfy_extras/nodes_video_model.py",
+      "type": "classic",
+      "class_name": "VideoLinearCFGGuidance",
+      "category": "sampling/video_models"
+    },
+    "VideoTriangleCFGGuidance": {
+      "file": "comfy_extras/nodes_video_model.py",
+      "type": "classic",
+      "class_name": "VideoTriangleCFGGuidance",
+      "category": "sampling/video_models"
+    },
+    "Vidu2ImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu2ImageToVideoNode",
+      "node_id": "Vidu2ImageToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "Vidu2ReferenceVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu2ReferenceVideoNode",
+      "node_id": "Vidu2ReferenceVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "Vidu2StartEndToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu2StartEndToVideoNode",
+      "node_id": "Vidu2StartEndToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "Vidu2TextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu2TextToVideoNode",
+      "node_id": "Vidu2TextToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "Vidu3ImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu3ImageToVideoNode",
+      "node_id": "Vidu3ImageToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "Vidu3StartEndToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu3StartEndToVideoNode",
+      "node_id": "Vidu3StartEndToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "Vidu3TextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "Vidu3TextToVideoNode",
+      "node_id": "Vidu3TextToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "ViduExtendVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "ViduExtendVideoNode",
+      "node_id": "ViduExtendVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "ViduImageToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "ViduImageToVideoNode",
+      "node_id": "ViduImageToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "ViduMultiFrameVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "ViduMultiFrameVideoNode",
+      "node_id": "ViduMultiFrameVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "ViduReferenceVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "ViduReferenceVideoNode",
+      "node_id": "ViduReferenceVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "ViduStartEndToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "ViduStartEndToVideoNode",
+      "node_id": "ViduStartEndToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "ViduTextToVideoNode": {
+      "file": "comfy_api_nodes/nodes_vidu.py",
+      "type": "new_api",
+      "class_name": "ViduTextToVideoNode",
+      "node_id": "ViduTextToVideoNode",
+      "category": "api node/video/Vidu"
+    },
+    "VoxelToMesh": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "VoxelToMesh",
+      "node_id": "VoxelToMesh",
+      "category": "3d"
+    },
+    "VoxelToMeshBasic": {
+      "file": "comfy_extras/nodes_hunyuan3d.py",
+      "type": "new_api",
+      "class_name": "VoxelToMeshBasic",
+      "node_id": "VoxelToMeshBasic",
+      "category": "3d"
+    },
+    "Wan22FunControlToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan22FunControlToVideo",
+      "node_id": "Wan22FunControlToVideo",
+      "category": "conditioning/video_models"
+    },
+    "Wan22ImageToVideoLatent": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan22ImageToVideoLatent",
+      "node_id": "Wan22ImageToVideoLatent",
+      "category": "conditioning/inpaint"
+    },
+    "Wan2ImageToVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan2ImageToVideoApi",
+      "node_id": "Wan2ImageToVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "Wan2ReferenceVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan2ReferenceVideoApi",
+      "node_id": "Wan2ReferenceVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "Wan2TextToVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan2TextToVideoApi",
+      "node_id": "Wan2TextToVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "Wan2VideoContinuationApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan2VideoContinuationApi",
+      "node_id": "Wan2VideoContinuationApi",
+      "category": "api node/video/Wan"
+    },
+    "Wan2VideoEditApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "Wan2VideoEditApi",
+      "node_id": "Wan2VideoEditApi",
+      "category": "api node/video/Wan"
+    },
+    "WanAnimateToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanAnimateToVideo",
+      "node_id": "WanAnimateToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanCameraEmbedding": {
+      "file": "comfy_extras/nodes_camera_trajectory.py",
+      "type": "new_api",
+      "class_name": "WanCameraEmbedding",
+      "node_id": "WanCameraEmbedding",
+      "category": "conditioning/video_models"
+    },
+    "WanCameraImageToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanCameraImageToVideo",
+      "node_id": "WanCameraImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanContextWindowsManual": {
+      "file": "comfy_extras/nodes_context_windows.py",
+      "type": "new_api",
+      "class_name": "WanContextWindowsManualNode",
+      "node_id": "WanContextWindowsManual",
+      "category": "model_patches"
+    },
+    "WanDancerEncodeAudio": {
+      "file": "comfy_extras/nodes_wandancer.py",
+      "type": "new_api",
+      "class_name": "WanDancerEncodeAudio",
+      "node_id": "WanDancerEncodeAudio",
+      "category": "conditioning/video_models"
+    },
+    "WanDancerPadKeyframes": {
+      "file": "comfy_extras/nodes_wandancer.py",
+      "type": "new_api",
+      "class_name": "WanDancerPadKeyframes",
+      "node_id": "WanDancerPadKeyframes",
+      "category": "image/video"
+    },
+    "WanDancerPadKeyframesList": {
+      "file": "comfy_extras/nodes_wandancer.py",
+      "type": "new_api",
+      "class_name": "WanDancerPadKeyframesList",
+      "node_id": "WanDancerPadKeyframesList",
+      "category": "image/video"
+    },
+    "WanDancerVideo": {
+      "file": "comfy_extras/nodes_wandancer.py",
+      "type": "new_api",
+      "class_name": "WanDancerVideo",
+      "node_id": "WanDancerVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanFirstLastFrameToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanFirstLastFrameToVideo",
+      "node_id": "WanFirstLastFrameToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanFunControlToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanFunControlToVideo",
+      "node_id": "WanFunControlToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanFunInpaintToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanFunInpaintToVideo",
+      "node_id": "WanFunInpaintToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanHuMoImageToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanHuMoImageToVideo",
+      "node_id": "WanHuMoImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanImageToImageApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanImageToImageApi",
+      "node_id": "WanImageToImageApi",
+      "category": "api node/image/Wan"
+    },
+    "WanImageToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanImageToVideo",
+      "node_id": "WanImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanImageToVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanImageToVideoApi",
+      "node_id": "WanImageToVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "WanInfiniteTalkToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "DCValues",
+      "node_id": "WanInfiniteTalkToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanMoveConcatTrack": {
+      "file": "comfy_extras/nodes_wanmove.py",
+      "type": "new_api",
+      "class_name": "WanMoveConcatTrack",
+      "node_id": "WanMoveConcatTrack",
+      "category": "conditioning/video_models"
+    },
+    "WanMoveTrackToVideo": {
+      "file": "comfy_extras/nodes_wanmove.py",
+      "type": "new_api",
+      "class_name": "WanMoveTrackToVideo",
+      "node_id": "WanMoveTrackToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanMoveTracksFromCoords": {
+      "file": "comfy_extras/nodes_wanmove.py",
+      "type": "new_api",
+      "class_name": "WanMoveTracksFromCoords",
+      "node_id": "WanMoveTracksFromCoords",
+      "category": "conditioning/video_models"
+    },
+    "WanMoveVisualizeTracks": {
+      "file": "comfy_extras/nodes_wanmove.py",
+      "type": "new_api",
+      "class_name": "WanMoveVisualizeTracks",
+      "node_id": "WanMoveVisualizeTracks",
+      "category": "conditioning/video_models"
+    },
+    "WanPhantomSubjectToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanPhantomSubjectToVideo",
+      "node_id": "WanPhantomSubjectToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanReferenceVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanReferenceVideoApi",
+      "node_id": "WanReferenceVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "WanSCAILToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanSCAILToVideo",
+      "node_id": "WanSCAILToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanSoundImageToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanSoundImageToVideo",
+      "node_id": "WanSoundImageToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanSoundImageToVideoExtend": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanSoundImageToVideoExtend",
+      "node_id": "WanSoundImageToVideoExtend",
+      "category": "conditioning/video_models"
+    },
+    "WanTextToImageApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanTextToImageApi",
+      "node_id": "WanTextToImageApi",
+      "category": "api node/image/Wan"
+    },
+    "WanTextToVideoApi": {
+      "file": "comfy_api_nodes/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanTextToVideoApi",
+      "node_id": "WanTextToVideoApi",
+      "category": "api node/video/Wan"
+    },
+    "WanTrackToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanTrackToVideo",
+      "node_id": "WanTrackToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WanVaceToVideo": {
+      "file": "comfy_extras/nodes_wan.py",
+      "type": "new_api",
+      "class_name": "WanVaceToVideo",
+      "node_id": "WanVaceToVideo",
+      "category": "conditioning/video_models"
+    },
+    "WavespeedFlashVSRNode": {
+      "file": "comfy_api_nodes/nodes_wavespeed.py",
+      "type": "new_api",
+      "class_name": "WavespeedFlashVSRNode",
+      "node_id": "WavespeedFlashVSRNode",
+      "category": "api node/video/WaveSpeed"
+    },
+    "WavespeedImageUpscaleNode": {
+      "file": "comfy_api_nodes/nodes_wavespeed.py",
+      "type": "new_api",
+      "class_name": "WavespeedImageUpscaleNode",
+      "node_id": "WavespeedImageUpscaleNode",
+      "category": "api node/image/WaveSpeed"
+    },
+    "WebcamCapture": {
+      "file": "comfy_extras/nodes_webcam.py",
+      "type": "classic",
+      "class_name": "WebcamCapture",
+      "category": "image"
+    },
+    "ZImageFunControlnet": {
+      "file": "comfy_extras/nodes_model_patch.py",
+      "type": "classic",
+      "class_name": "ZImageFunControlnet",
+      "category": "advanced/loaders/zimage"
+    },
+    "unCLIPCheckpointLoader": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "unCLIPCheckpointLoader",
+      "category": "loaders"
+    },
+    "unCLIPConditioning": {
+      "file": "nodes.py",
+      "type": "classic",
+      "class_name": "unCLIPConditioning",
+      "category": "conditioning"
+    },
+    "wanBlockSwap": {
+      "file": "comfy_extras/nodes_nop.py",
+      "type": "new_api",
+      "class_name": "wanBlockSwap",
+      "node_id": "wanBlockSwap"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+# ComfyUI Node Documentation Translation Rules
+
+## Translation Principles
+
+1. **Accuracy First**
+   - Maintain technical accuracy
+   - Preserve all parameter names in backticks (`)
+   - Keep data types in ENGLISH (IMAGE, STRING, INT, FLOAT, etc.)
+   - Do not translate code, node names, or technical identifiers
+
+2. **Natural Language**
+   - Use natural, fluent expressions in target language
+   - Adapt metaphors and examples to local culture when appropriate
+   - Maintain professional but accessible tone
+
+3. **Consistency**
+   - Use consistent terminology throughout
+   - Follow language-specific conventions for technical documentation
+   - Maintain the same structure as the English version
+
+4. **Preserve Formatting**
+   - Keep all Markdown formatting intact
+   - Preserve table structures
+   - Maintain line breaks and spacing
+   - Keep backticks around parameter names
+
+## What to Translate
+
+✅ **DO translate:**
+- Section headings (Overview, Inputs, Outputs)
+- Parameter descriptions
+- Explanatory text
+- Usage notes and tips
+- Constraint descriptions
+
+❌ **DO NOT translate:**
+- Parameter names (keep in backticks: `image`, `seed`, `model`)
+- Data types (IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.)
+- Values in Range column (numbers, "auto", option names)
+- Code snippets
+- File paths
+- URLs (except in the disclaimer header)
+
+## Language-Specific Requirements
+
+### Chinese (zh)
+- Use simplified Chinese characters
+- Technical terms: use commonly accepted Chinese translations
+- Headings: 概述, 输入, 输出
+- Tone: professional but accessible
+
+### Spanish (es)
+- Use standard Spanish (neutral, not regional dialects)
+- Headings: Descripción general, Entradas, Salidas
+- Maintain formal "usted" form where appropriate
+
+### French (fr)
+- Use standard French
+- Headings: Aperçu général, Entrées, Sorties
+- Maintain formal tone
+
+### Japanese (ja)
+- Use polite form (です/ます体)
+- Headings: 概要, 入力, 出力
+- Technical terms: use katakana for foreign technical terms when appropriate
+
+### Korean (ko)
+- Use formal polite form (합니다체)
+- Headings: 개요, 입력, 출력
+- Technical terms: use Hangul or keep English when standard
+
+### Russian (ru)
+- Use standard Russian
+- Headings: Обзор, Входы, Выходы
+- Maintain formal tone
+
+## Table Structure
+
+Maintain the exact table structure:
+
+**Inputs:**
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+
+**Outputs:**
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+
+## Example Translation
+
+**English:**
+> This node combines two CLIP models by adding the second model to the first.
+
+**Chinese:**
+> 此节点通过将第二个 CLIP 模型添加到第一个模型来组合两个 CLIP 模型。
+
+**Spanish:**
+> Este nodo combina dos modelos CLIP añadiendo el segundo modelo al primero.
+
+**French:**
+> Ce nœud combine deux modèles CLIP en ajoutant le second modèle au premier.
+
+**Japanese:**
+> このノードは、2番目のCLIPモデルを1番目に追加することで、2つのCLIPモデルを結合します。
+
+**Korean:**
+> 이 노드는 두 번째 CLIP 모델을 첫 번째 모델에 추가하여 두 개의 CLIP 모델을 결합합니다。
+
+**Russian:**
+> Этот узел объединяет две модели CLIP, добавляя вторую модель к первой.
+
+## Quality Checklist
+
+Before finalizing translation, verify:
+- [ ] All parameter names remain in English within backticks
+- [ ] All data types remain in English (uppercase)
+- [ ] Table structure is intact
+- [ ] Markdown formatting is preserved
+- [ ] Technical accuracy is maintained
+- [ ] Language sounds natural to native speakers
+- [ ] No English text remains except parameter names, data types, and values
+

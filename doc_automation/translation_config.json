@@ -1,0 +1,91 @@
+{
+  "zh": {
+    "name": "简体中文",
+    "heading_overview": "概述",
+    "heading_inputs": "输入",
+    "heading_outputs": "输出",
+    "disclaimer": "本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！",
+    "prompt_template": "你是一位专业的技术文档翻译专家，专门负责将 ComfyUI 节点文档从英文翻译成简体中文。\n\n## 翻译规则\n\n1. **必须保持不变的内容：**\n   - 参数名必须保持英文，用反引号包裹：`image`、`seed`、`model`\n   - 数据类型必须保持英文大写：IMAGE、STRING、INT、FLOAT、MODEL、CONDITIONING 等\n   - Range 列中的值保持不变：数字、\"auto\"、选项名称\n   - 不要翻译任何代码、文件路径\n\n2. **需要翻译的内容：**\n   - 章节标题翻译为：{heading_overview}、{heading_inputs}、{heading_outputs}\n   - 所有描述性文字和说明\n   - 参数描述\n\n3. **翻译质量要求：**\n   - 使用自然流畅的简体中文\n   - 保持专业但易懂的语气\n   - 确保技术准确性\n   - 使用中文技术文档的标准术语\n\n4. **格式要求：**\n   - 保持所有 Markdown 格式不变\n   - 保持表格结构完整\n   - 不要在文档开头添加任何说明或链接（这将由系统自动添加）\n\n## 翻译示例\n\n**英文：**\nThis node combines two CLIP models by adding the second model to the first.\n\n**中文：**\n此节点通过将第二个 CLIP 模型添加到第一个模型来组合两个 CLIP 模型。\n\n请将以下英文文档翻译成简体中文，不要包含文档开头的说明："
+  },
+  "es": {
+    "name": "Español",
+    "heading_overview": "Descripción general",
+    "heading_inputs": "Entradas",
+    "heading_outputs": "Salidas",
+    "disclaimer": "Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir!",
+    "prompt_template": "Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.\n\n## Reglas de Traducción\n\n1. **Contenido que NO debe traducirse:**\n   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`\n   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.\n   - Valores en columna Range: números, \"auto\", nombres de opciones\n   - Código, rutas de archivos\n\n2. **Contenido que SÍ debe traducirse:**\n   - Títulos de secciones: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - Todo el texto descriptivo y explicativo\n   - Descripciones de parámetros\n\n3. **Calidad de traducción:**\n   - Usar español estándar y neutral\n   - Mantener tono profesional pero accesible\n   - Asegurar precisión técnica\n   - Usar terminología técnica estándar en español\n\n4. **Formato:**\n   - Mantener todo el formato Markdown\n   - Preservar estructura de tablas\n   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)\n\nPor favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:"
+  },
+  "fr": {
+    "name": "Français",
+    "heading_overview": "Aperçu général",
+    "heading_inputs": "Entrées",
+    "heading_outputs": "Sorties",
+    "disclaimer": "Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer !",
+    "prompt_template": "Vous êtes un expert en traduction technique spécialisé dans la documentation des nœuds ComfyUI de l'anglais vers le français.\n\n## Règles de Traduction\n\n1. **Contenu à NE PAS traduire:**\n   - Noms de paramètres entre backticks: `image`, `seed`, `model`\n   - Types de données en MAJUSCULES: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.\n   - Valeurs dans la colonne Range: nombres, \"auto\", noms d'options\n   - Code, chemins de fichiers\n\n2. **Contenu à traduire:**\n   - Titres de sections: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - Tout le texte descriptif et explicatif\n   - Descriptions des paramètres\n\n3. **Qualité de traduction:**\n   - Utiliser le français standard\n   - Maintenir un ton professionnel mais accessible\n   - Assurer la précision technique\n   - Utiliser la terminologie technique standard en français\n\n4. **Format:**\n   - Conserver tout le formatage Markdown\n   - Préserver la structure des tableaux\n   - Ne pas ajouter de note ou lien au début du document (sera ajouté automatiquement)\n\nVeuillez traduire la documentation suivante en français, sans inclure la note initiale du document:"
+  },
+  "ja": {
+    "name": "日本語",
+    "heading_overview": "概要",
+    "heading_inputs": "入力",
+    "heading_outputs": "出力",
+    "disclaimer": "このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！",
+    "prompt_template": "あなたは ComfyUI ノードドキュメントを英語から日本語に翻訳する技術翻訳の専門家です。\n\n## 翻訳ルール\n\n1. **翻訳してはいけない内容：**\n   - バッククォートで囲まれたパラメータ名：`image`、`seed`、`model`\n   - 大文字のデータ型：IMAGE、STRING、INT、FLOAT、MODEL、CONDITIONING など\n   - Range列の値：数値、\"auto\"、オプション名\n   - コード、ファイルパス\n\n2. **翻訳する内容：**\n   - セクション見出し：{heading_overview}、{heading_inputs}、{heading_outputs}\n   - すべての説明文\n   - パラメータの説明\n\n3. **翻訳品質：**\n   - 丁寧語（です・ます体）を使用\n   - 専門的でありながらわかりやすい表現\n   - 技術的な正確性を保つ\n   - 標準的な日本語技術用語を使用\n\n4. **フォーマット：**\n   - すべての Markdown フォーマットを保持\n   - 表の構造を維持\n   - ドキュメントの冒頭にメモやリンクを追加しない（自動的に追加されます）\n\n以下の英語ドキュメントを日本語に翻訳してください（ドキュメント冒頭のメモは含めないでください）："
+  },
+  "ko": {
+    "name": "한국어",
+    "heading_overview": "개요",
+    "heading_inputs": "입력",
+    "heading_outputs": "출력",
+    "disclaimer": "이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요!",
+    "prompt_template": "당신은 ComfyUI 노드 문서를 영어에서 한국어로 번역하는 기술 번역 전문가입니다.\n\n## 번역 규칙\n\n1. **번역하지 말아야 할 내용:**\n   - 백틱으로 둘러싸인 매개변수 이름: `image`, `seed`, `model`\n   - 대문자 데이터 타입: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING 등\n   - Range 열의 값: 숫자, \"auto\", 옵션 이름\n   - 코드, 파일 경로\n\n2. **번역해야 할 내용:**\n   - 섹션 제목: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - 모든 설명 텍스트\n   - 매개변수 설명\n\n3. **번역 품질:**\n   - 정중한 격식체(합니다체) 사용\n   - 전문적이면서도 이해하기 쉬운 표현\n   - 기술적 정확성 유지\n   - 표준 한국어 기술 용어 사용\n\n4. **형식:**\n   - 모든 Markdown 형식 유지\n   - 표 구조 보존\n   - 문서 시작 부분에 메모나 링크를 추가하지 마세요 (자동으로 추가됩니다)\n\n다음 영어 문서를 한국어로 번역해주세요 (문서 시작 부분의 메모는 포함하지 마세요):"
+  },
+  "ru": {
+    "name": "Русский",
+    "heading_overview": "Обзор",
+    "heading_inputs": "Входы",
+    "heading_outputs": "Выходы",
+    "disclaimer": "Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад!",
+    "prompt_template": "Вы эксперт по техническому переводу документации узлов ComfyUI с английского на русский язык.\n\n## Правила Перевода\n\n1. **Что НЕ переводить:**\n   - Имена параметров в обратных кавычках: `image`, `seed`, `model`\n   - Типы данных ЗАГЛАВНЫМИ буквами: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING и т.д.\n   - Значения в колонке Range: числа, \"auto\", названия опций\n   - Код, пути к файлам\n\n2. **Что переводить:**\n   - Заголовки разделов: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - Весь описательный текст\n   - Описания параметров\n\n3. **Качество перевода:**\n   - Использовать стандартный русский язык\n   - Поддерживать профессиональный, но доступный тон\n   - Обеспечить техническую точность\n   - Использовать стандартную техническую терминологию на русском\n\n4. **Формат:**\n   - Сохранить всё форматирование Markdown\n   - Сохранить структуру таблиц\n   - Не добавлять примечание или ссылку в начале документа (будет добавлено автоматически)\n\nПожалуйста, переведите следующую документацию на русский язык (не включайте начальное примечание документа):"
+  },
+  "zh-TW": {
+    "name": "繁體中文",
+    "heading_overview": "概述",
+    "heading_inputs": "輸入",
+    "heading_outputs": "輸出",
+    "disclaimer": "本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！",
+    "prompt_template": "你是一位專業的技術文檔翻譯專家，專門負責將 ComfyUI 節點文檔從英文翻譯成繁體中文。\n\n## 翻譯規則\n\n1. **必須保持不變的內容：**\n   - 參數名必須保持英文，用反引號包裹：`image`、`seed`、`model`\n   - 資料類型必須保持英文大寫：IMAGE、STRING、INT、FLOAT、MODEL、CONDITIONING 等\n   - Range 列中的值保持不變：數字、\"auto\"、選項名稱\n   - 不要翻譯任何程式碼、檔案路徑\n\n2. **需要翻譯的內容：**\n   - 章節標題翻譯為：{heading_overview}、{heading_inputs}、{heading_outputs}\n   - 所有描述性文字和說明\n   - 參數描述\n\n3. **翻譯質量要求：**\n   - 使用自然流暢的繁體中文\n   - 保持專業但易懂的語氣\n   - 確保技術準確性\n   - 使用繁體中文技術文檔的標準術語\n\n4. **格式要求：**\n   - 保持所有 Markdown 格式不變\n   - 保持表格結構完整\n   - 不要在文檔開頭添加任何說明或連結（這將由系統自動添加）\n\n## 翻譯示例\n\n**英文：**\nThis node combines two CLIP models by adding the second model to the first.\n\n**繁體中文：**\n此節點透過將第二個 CLIP 模型添加到第一個模型來組合兩個 CLIP 模型。\n\n請將以下英文文檔翻譯成繁體中文，不要包含文檔開頭的說明："
+  },
+  "ar": {
+    "name": "العربية",
+    "heading_overview": "نظرة عامة",
+    "heading_inputs": "المدخلات",
+    "heading_outputs": "المخرجات",
+    "disclaimer": "تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة!",
+    "prompt_template": "أنت خبير في الترجمة التقنية متخصص في توثيق عُقد ComfyUI من الإنجليزية إلى العربية.\n\n## قواعد الترجمة\n\n1. **المحتوى الذي يجب عدم ترجمته:**\n   - أسماء المعاملات بين علامات الاقتباس الخلفية: `image`, `seed`, `model`\n   - أنواع البيانات بالأحرف الكبيرة: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, إلخ\n   - القيم في عمود Range: الأرقام، \"auto\"، أسماء الخيارات\n   - الكود، مسارات الملفات\n\n2. **المحتوى الذي يجب ترجمته:**\n   - عناوين الأقسام: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - جميع النصوص الوصفية والتوضيحية\n   - أوصاف المعاملات\n\n3. **جودة الترجمة:**\n   - استخدام اللغة العربية الفصحى المعاصرة\n   - الحفاظ على نبرة احترافية ولكن سهلة الفهم\n   - ضمان الدقة التقنية\n   - استخدام المصطلحات التقنية العربية القياسية\n\n4. **التنسيق:**\n   - الحفاظ على جميع تنسيقات Markdown\n   - الحفاظ على بنية الجداول\n   - عدم إضافة أي ملاحظة أو رابط في بداية الوثيقة (سيتم إضافتها تلقائيًا)\n\nالرجاء ترجمة الوثيقة التالية إلى العربية، دون تضمين الملاحظة الأولية للوثيقة:"
+  },
+  "tr": {
+    "name": "Türkçe",
+    "heading_overview": "Genel Bakış",
+    "heading_inputs": "Girdiler",
+    "heading_outputs": "Çıktılar",
+    "disclaimer": "Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin!",
+    "prompt_template": "ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.\n\n## Çeviri Kuralları\n\n1. **Çevrilmemesi gereken içerik:**\n   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`\n   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.\n   - Range sütunundaki değerler: sayılar, \"auto\", seçenek adları\n   - Kod, dosya yolları\n\n2. **Çevrilmesi gereken içerik:**\n   - Bölüm başlıkları: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - Tüm açıklayıcı metinler\n   - Parametre açıklamaları\n\n3. **Çeviri kalitesi:**\n   - Standart Türkçe kullanın\n   - Profesyonel ama anlaşılır bir üslup koruyun\n   - Teknik doğruluğu sağlayın\n   - Standart Türkçe teknik terminolojiyi kullanın\n\n4. **Format:**\n   - Tüm Markdown biçimlendirmesini koruyun\n   - Tablo yapısını koruyun\n   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)\n\nLütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):"
+  },
+  "pt-BR": {
+    "name": "Português (BR)",
+    "heading_overview": "Visão Geral",
+    "heading_inputs": "Entradas",
+    "heading_outputs": "Saídas",
+    "disclaimer": "Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir!",
+    "prompt_template": "Você é um especialista em tradução técnica especializado em documentação de nós ComfyUI do inglês para português brasileiro.\n\n## Regras de Tradução\n\n1. **Conteúdo que NÃO deve ser traduzido:**\n   - Nomes de parâmetros entre crases: `image`, `seed`, `model`\n   - Tipos de dados em MAIÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.\n   - Valores na coluna Range: números, \"auto\", nomes de opções\n   - Código, caminhos de arquivos\n\n2. **Conteúdo que DEVE ser traduzido:**\n   - Títulos de seções: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - Todo o texto descritivo e explicativo\n   - Descrições de parâmetros\n\n3. **Qualidade da tradução:**\n   - Use português brasileiro padrão\n   - Mantenha um tom profissional mas acessível\n   - Garanta precisão técnica\n   - Use terminologia técnica padrão em português brasileiro\n\n4. **Formato:**\n   - Mantenha toda a formatação Markdown\n   - Preserve a estrutura das tabelas\n   - Não adicione nenhuma nota ou link no início do documento (será adicionado automaticamente)\n\nPor favor, traduza a seguinte documentação para português brasileiro, sem incluir a nota inicial do documento:"
+  },
+  "fa": {
+    "name": "فارسی",
+    "heading_overview": "نمای کلی",
+    "heading_inputs": "ورودی‌ها",
+    "heading_outputs": "خروجی‌ها",
+    "disclaimer": "این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید!",
+    "prompt_template": "شما یک مترجم فنی متخصص هستید که اسناد گره‌های ComfyUI را از انگلیسی به فارسی برمی‌گردانید.\n\n## قوانین ترجمه\n\n1. **محتوایی که نباید ترجمه شود:**\n   - نام پارامترها در بک‌تیک: `image`, `seed`, `model`\n   - نوع‌های داده با حروف بزرگ انگلیسی: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING و غیره\n   - مقادیر ستون Range: اعداد، \"auto\", نام گزینه‌ها\n   - کد، مسیر فایل\n\n2. **محتوایی که باید ترجمه شود:**\n   - عناوین بخش‌ها: {heading_overview}, {heading_inputs}, {heading_outputs}\n   - تمام متن توضیحی\n   - توضیحات پارامترها\n\n3. **کیفیت ترجمه:**\n   - فارسی رسمی معاصر و روان بنویسید\n   - لحن حرفه‌ای ولی قابل‌فهم\n   - دقت فنی را حفظ کنید\n\n4. **قالب:**\n   - قالب Markdown و ساختار جدول دست‌نخورده بماند\n   - توضیح یا لینک در ابتدای سند اضافه نکنید (به‌صورت خودکار افزوده می‌شود)\n\nلطفاً سند انگلیسی زیر را به فارسی برگردانید؛ یادداشت ابتدای سند را در خروجی نگنجانید:"
+  }
+}
+

@@ -1,0 +1,155 @@
+# ComfyUI Node Documentation Rules
+
+## Document Structure
+
+Required sections in order:
+
+1. **Overview** (first paragraph, no heading)
+   - 1-3 sentences concisely explaining what the node does and how it works
+   - Use simple, easy-to-understand everyday vocabulary
+   - Avoid technical jargon
+   - Extract from class docstring if available
+   - Focus on what the node does, not lengthy explanations
+
+2. **Inputs** (## Inputs)
+   - The bundle may contain: (a) `# --- preceding context (same-file, AST-filtered unless PREAMBLE_MODE=full) ---` with only imports/helpers/constants referenced by this node class; (b) optional `# --- cross-file context` snippets with resolved callee source from `COMFYUI_PATH`; (c) `# --- node class ---` with the node's class definition. Use preamble and resolved snippets only to clarify behavior (parameters, loaders, checkpoints), not unrelated modules.
+
+   - Complete parameter table with format:
+     | Parameter | Data Type | Required | Range | Description |
+     |-----------|-----------|----------|-------|-------------|
+   
+   - Parameter names use backticks: `parameter_name`
+   - Data types in PLAIN TEXT (no backticks): IMAGE, STRING, INT, FLOAT, MODEL, etc.
+   - Required column: "Yes" for required parameters, "No" for optional parameters
+   - Extract all information from source code including tooltips
+   - Description should be factual and based on tooltips/source code
+   - If a parameter has a default value, mention it in the Description
+   
+   **Special Formatting for COMBO Parameters:**
+   - For parameters with multiple options (COMBO type):
+     * List ALL available options in the Range column
+     * Use `<br>` tags to separate each option for better readability
+     * In Description column, explain what the parameter does and mention default if applicable
+     * Example Range: `"UPPERCASE"<br>"lowercase"<br>"Capitalize"<br>"Title Case"`
+     * Example Description: The case conversion mode to apply (default: "UPPERCASE")
+   
+   - If there are many options (>5), you can either:
+     * List all with `<br>` if they're important
+     * Or mention "Multiple options available" and explain in Description
+   
+   - Extract option values from the source code:
+     * Look for `options=[...]` in INPUT_TYPES
+     * Look for `options=[...]` in comfy_io.Combo.Input
+     * Include all options exactly as they appear in code
+   
+   **IMPORTANT - Parameter Constraints:**
+   - Analyze the source code for parameter constraints and limitations
+   - If multiple images/inputs are allowed, specify the maximum count
+   - If parameters have dependencies (e.g., param A requires param B), mention this clearly
+   - If certain parameter combinations are required together, explain this
+   - If there are mutual exclusions (e.g., can't use A and B together), note this
+   - Look for validation logic in the code (e.g., "if image and mask", "max=8", etc.)
+   - Include these constraints in the parameter descriptions or add a note after the table
+
+3. **Outputs** (## Outputs)
+   - Output table with format:
+     | Output Name | Data Type | Description |
+     |-------------|-----------|-------------|
+   
+   - Output names use backticks: `OUTPUT_NAME`
+   - Data types in PLAIN TEXT
+   - Description should explain what data is returned
+
+## Document Header
+
+Every generated document must start with a disclaimer in the corresponding language:
+
+**English:**
+```
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/<NODE_NAME>/en.md)
+```
+
+Replace `<NODE_NAME>` with the actual node name.
+
+## Data Type Rules
+
+**CRITICAL: Do NOT translate data types**
+
+Always keep these in English:
+- IMAGE
+- FLOAT
+- INT
+- STRING
+- MODEL
+- CONDITIONING
+- LATENT
+- MASK
+- CLIP
+- VAE
+- CONTROL_NET
+- etc.
+
+## Language Style
+
+- **Simple and easy to understand**: Assume reader is non-technical
+- **Clear and concise**: Avoid long complex sentences
+- **Accurate and consistent**: Use terminology consistently
+- **Clear structure**: Logical hierarchy, easy to reference
+
+## What to Avoid
+
+❌ Do NOT use emojis
+❌ Do NOT include source code snippets in documentation
+❌ Do NOT use overly technical terminology
+❌ Do NOT translate data type names
+❌ Do NOT use level-one headings (#)
+❌ Do NOT add speculative usage tips or suggestions beyond what's in the source code
+❌ Do NOT make assumptions about how users should use the node
+
+## What to Include
+
+✅ Extract information from class docstrings
+✅ Use tooltip text exactly as provided for parameter descriptions
+✅ Include default values and ranges from source code
+✅ Stick to factual descriptions based on the source code
+✅ Use simple analogies ONLY when they directly clarify the node's function
+
+## Special Notes
+
+- If the node has a docstring, use it as foundation for the function description
+- Extract ALL parameter information including tooltips, defaults, min/max values
+- For COMBO type parameters, include the list of available options in the description
+- Keep descriptions factual - base them on tooltips and source code comments
+- Avoid speculation about best practices or usage scenarios
+- Match the professional yet accessible tone of existing documentation
+- Focus on objective functionality rather than subjective recommendations
+
+## Critical: Parameter Constraints and Limitations
+
+**Analyze the source code carefully for:**
+
+1. **Numeric Limits**: 
+   - Maximum/minimum values (e.g., `max=8` means "maximum 8 images")
+   - Batch size limitations
+   - Array/list length restrictions
+
+2. **Parameter Dependencies**:
+   - Required combinations (e.g., "image and mask must both be provided")
+   - Conditional requirements (e.g., "if mode=X, then param Y is required")
+   - Mutual exclusions (e.g., "cannot use both A and B")
+
+3. **Validation Logic**:
+   - Look for `if` statements that validate parameters
+   - Check for exceptions/errors raised (e.g., "raises Exception if X and Y...")
+   - Note any size/dimension matching requirements
+
+4. **Mode Switching**:
+   - If different parameter combinations trigger different behaviors
+   - Example: "When image and mask are provided, switches to editing mode"
+
+**How to Document:**
+- Add constraints directly in the parameter's Description column
+- If multiple parameters have related constraints, add a note section after the table
+- Use clear, factual language: "Required when...", "Must match...", "Maximum of..."
+- Base everything on actual code logic, not assumptions
+

@@ -10,6 +10,5 @@ dist
 .env
 *.env.local
 
-# Doc automation outputs
-/doc_automation
+# Local tooling (doc_automation app code is tracked; generated paths use doc_automation/.gitignore)
 .claude/
