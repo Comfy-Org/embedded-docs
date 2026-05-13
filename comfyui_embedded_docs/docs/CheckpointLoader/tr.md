@@ -1,22 +1,25 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoader/tr.md)
 
-CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını ve yapılandırma dosyasını yükler. Bir yapılandırma dosyası ve bir kontrol noktası dosyasını girdi olarak alır ve iş akışında kullanılmak üzere yüklenen ana model, CLIP modeli ve VAE modeli bileşenlerini döndürür.
+CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını (checkpoint) ve yapılandırma dosyasını yükler. Giriş olarak bir yapılandırma dosyası ve bir kontrol noktası dosyası alır; çıktı olarak ise ana model, CLIP modeli ve VAE modeli dahil olmak üzere yüklenen model bileşenlerini iş akışında kullanılmak üzere döndürür.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `yapılandırma_adı` | STRING | COMBO | - | Mevcut yapılandırma dosyaları | Model mimarisini ve ayarlarını tanımlayan yapılandırma dosyası |
-| `ckpt_adı` | STRING | COMBO | - | Mevcut kontrol noktası dosyaları | Eğitilmiş model ağırlıklarını ve parametrelerini içeren kontrol noktası dosyası |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|--------|----------|
+| `config_name` | STRING | Evet | Kullanılabilir yapılandırma dosyaları | Model mimarisini ve ayarlarını tanımlayan yapılandırma dosyası |
+| `ckpt_name` | STRING | Evet | Kullanılabilir kontrol noktası dosyaları | Eğitilmiş model ağırlıklarını ve parametrelerini içeren kontrol noktası dosyası |
 
-**Not:** Bu düğümün çalışması için hem bir yapılandırma dosyasının hem de bir kontrol noktası dosyasının seçilmesi gerekmektedir. Yapılandırma dosyası, yüklenen kontrol noktası dosyasının mimarisiyle eşleşmelidir.
+**Not:** Bu düğüm, hem bir yapılandırma dosyası hem de bir kontrol noktası dosyasının seçilmesini gerektirir. Yapılandırma dosyası, yüklenen kontrol noktası dosyasının mimarisiyle eşleşmelidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `MODEL` | MODEL | Çıkarım için hazır yüklenmiş ana model bileşeni |
-| `CLIP` | CLIP | Metin kodlama için yüklenmiş CLIP modeli bileşeni |
-| `VAE` | VAE | Görüntü kodlama ve kod çözme için yüklenmiş VAE modeli bileşeni |
+|-----------|-----------|----------|
+| `MODEL` | MODEL | Çıkarım için hazır, yüklenmiş ana model bileşeni |
+| `CLIP` | CLIP | Metin kodlama için yüklenmiş CLIP model bileşeni |
+| `VAE` | VAE | Görüntü kodlama ve kod çözme için yüklenmiş VAE model bileşeni |
 
-**Önemli Not:** Bu düğüm kullanımdan kaldırılmış (deprecated) olarak işaretlenmiştir ve gelecek sürümlerde kaldırılabilir. Yeni iş akışları için alternatif yükleme düğümlerini kullanmayı düşünün.
+**Önemli Not:** Bu düğüm kullanımdan kaldırılmış olarak işaretlenmiştir ve gelecek sürümlerde kaldırılabilir. Yeni iş akışları için alternatif yükleme düğümlerini kullanmayı değerlendirin.
+
+---
+**Source fingerprint (SHA-256):** `9977bda5e124a9d10566839cbee868c74fab120c454141f27ce145efa60105e9`

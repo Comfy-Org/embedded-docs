@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTextToVideoNode/en.md)
 
-Generates videos based on prompt and output_size. This node creates video content using text descriptions and various generation parameters, producing video output through the PixVerse API.
+Generates videos based on a text prompt and various generation parameters. This node creates video content using the PixVerse API, allowing control over aspect ratio, quality, duration, motion style, and more.
 
 ## Inputs
 
@@ -22,3 +22,6 @@ Generates videos based on prompt and output_size. This node creates video conten
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video file |
+
+---
+**Source fingerprint (SHA-256):** `ab9264668f48533cb139abfb322e9a6e425a2ad7280da103a7fe0a7704158762`

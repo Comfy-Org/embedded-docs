@@ -1,27 +1,29 @@
-Este nodo detecta automáticamente los modelos ubicados en la carpeta LoRA (incluyendo subcarpetas) con la ruta del modelo correspondiente `ComfyUI\models\loras`.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/es.md)
 
-El nodo Cargador LoRA se utiliza principalmente para cargar modelos LoRA. Puede pensar en los modelos LoRA como filtros que pueden dar a sus imágenes estilos, contenidos y detalles específicos:
+Este nodo detecta automáticamente los modelos ubicados en la carpeta LoRA (incluyendo subcarpetas), siendo la ruta de modelo correspondiente `ComfyUI\models\loras`. Para más información, consulta Instalación de modelos LoRA.
 
-- Aplicar estilos artísticos específicos (como pintura a tinta)
-- Añadir características de ciertos personajes (como personajes de juegos)
-- Añadir detalles específicos a la imagen
-Todo esto se puede lograr a través de LoRA.
+El nodo Cargador de LoRA se utiliza principalmente para cargar modelos LoRA. Puedes pensar en los modelos LoRA como filtros que pueden dar a tus imágenes estilos, contenido y detalles específicos:
 
-Si necesita cargar múltiples modelos LoRA, puede encadenar directamente varios nodos, como se muestra a continuación:
+- Aplicar estilos artísticos concretos (como pintura con tinta)
+- Añadir características de ciertos personajes (como personajes de videojuegos)
+- Agregar detalles específicos a la imagen
+Todo esto se puede lograr mediante LoRA.
+
+Si necesitas cargar múltiples modelos LoRA, puedes encadenar directamente varios nodos, como se muestra a continuación:
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Datos | Función |
+| Parámetro | Tipo de dato | Descripción |
 | --- | --- | --- |
-| `modelo` | MODEL | Típicamente usado para conectar al modelo base |
-| `clip` | CLIP | Típicamente usado para conectar al modelo CLIP |
-| `nombre_lora` | COMBO[STRING] | Seleccionar el nombre del modelo LoRA a utilizar |
-| `fuerza_modelo` | FLOAT | Rango de valores de -100.0 a 100.0, típicamente usado entre 0~1 para la generación diaria de imágenes. Valores más altos resultan en efectos de ajuste más pronunciados |
-| `fuerza_clip` | FLOAT | Rango de valores de -100.0 a 100.0, típicamente usado entre 0~1 para la generación diaria de imágenes. Valores más altos resultan en efectos de ajuste más pronunciados |
+| `model` | MODEL | Normalmente se utiliza para conectar al modelo base |
+| `clip` | CLIP | Normalmente se utiliza para conectar al modelo CLIP |
+| `lora_name` | COMBO[STRING] | Selecciona el nombre del modelo LoRA a utilizar |
+| `strength_model` | FLOAT | Rango de valores de -100.0 a 100.0, normalmente se usa entre 0~1 para la generación diaria de imágenes. Valores más altos producen efectos de ajuste del modelo más pronunciados |
+| `strength_clip` | FLOAT | Rango de valores de -100.0 a 100.0, normalmente se usa entre 0~1 para la generación diaria de imágenes. Valores más altos producen efectos de ajuste del modelo más pronunciados |
 
 ## Salidas
 
-| Nombre del Parámetro | Tipo de Datos | Función |
+| Parámetro | Tipo de dato | Descripción |
 | --- | --- | --- |
-| `modelo` | MODEL | El modelo con ajustes LoRA aplicados |
-| `clip` | CLIP | La instancia CLIP con ajustes LoRA aplicados |
+| `model` | MODEL | El modelo con los ajustes LoRA aplicados |
+| `clip` | CLIP | La instancia CLIP con los ajustes LoRA aplicados |

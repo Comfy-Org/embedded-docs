@@ -22,3 +22,6 @@ This node generates a video featuring a person or object based on reference imag
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `VIDEO` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `9162e150aef4cbafa42d59055bdff953e9c21b1e5fbf7c800629e570ee4cd0f9`

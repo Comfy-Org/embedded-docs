@@ -15,3 +15,6 @@ The Resolution Selector node calculates the pixel width and height for an image 
 |-------------|-----------|-------------|
 | `width` | INT | The calculated width in pixels, which is a multiple of 8. |
 | `height` | INT | The calculated height in pixels, which is a multiple of 8. |
+
+---
+**Source fingerprint (SHA-256):** `221d38fa72c9989e06b706d33fd3e0dc4caa0f741dd2931864c58a6bd7f52613`

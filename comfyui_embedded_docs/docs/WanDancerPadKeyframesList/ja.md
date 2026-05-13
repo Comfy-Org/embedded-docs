@@ -1,6 +1,8 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/ja.md)
 
-以下が翻訳結果です。
+以下は、指定されたルールに従って翻訳した日本語版ドキュメントです。
+
+---
 
 ## 概要
 
@@ -13,12 +15,15 @@
 | `images` | IMAGE | はい | なし | セグメントに分割する入力画像シーケンス。 |
 | `segment_length` | INT | はい | 1 ～ 10000 | 各セグメントのフレーム長（デフォルト：149）。 |
 | `num_segments` | INT | はい | 1 ～ 100 | リストとして出力するパディング済みセグメントの数（デフォルト：1）。 |
-| `audio` | AUDIO | いいえ | なし | 出力される各セグメント用にスライスするオーディオ。 |
+| `audio` | AUDIO | いいえ | なし | 出力される各セグメントに対応してスライスするオーディオ。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `keyframes_sequence` | IMAGE | 各セグメントに対応するパディング済みキーフレームシーケンスのリスト。 |
-| `keyframes_mask` | MASK | 各セグメントの有効フレームを示すマスクのリスト。 |
+| `keyframes_mask` | MASK | 各セグメントの有効なフレームを示すマスクのリスト。 |
 | `audio_segment` | AUDIO | 各動画セグメントに対応するオーディオセグメントのリスト。 |
+
+---
+**Source fingerprint (SHA-256):** `c6a3ddca3fd61fcdb287fecb6969796eebd65e70f1174abdab57912586d27d00`

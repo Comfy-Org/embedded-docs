@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentConcat/en.md)
 
-The LatentConcat node combines two latent samples along a specified dimension. It takes two latent inputs and concatenates them together along the chosen axis (x, y, or t dimension). The node automatically adjusts the batch size of the second input to match the first input before performing the concatenation operation.
+The LatentConcat node combines two latent samples by joining them together along a chosen dimension. It takes two latent inputs and concatenates them along the x, y, or t axis, with the option to control which sample comes first. The node automatically adjusts the batch size of the second input to match the first before performing the concatenation.
 
 ## Inputs
 
@@ -8,7 +8,7 @@ The LatentConcat node combines two latent samples along a specified dimension. I
 |-----------|-----------|----------|-------|-------------|
 | `samples1` | LATENT | Yes | - | The first latent sample to concatenate |
 | `samples2` | LATENT | Yes | - | The second latent sample to concatenate |
-| `dim` | COMBO | Yes | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | The dimension along which to concatenate the latent samples. Positive values concatenate samples1 before samples2, negative values concatenate samples2 before samples1 |
+| `dim` | COMBO | Yes | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | The dimension along which to concatenate the latent samples. Positive values (x, y, t) place samples1 before samples2 in the result. Negative values (-x, -y, -t) place samples2 before samples1. The dimension mapping is: x = width, y = height, t = time/frames |
 
 **Note:** The second latent sample (`samples2`) is automatically adjusted to match the batch size of the first latent sample (`samples1`) before concatenation.
 
@@ -17,3 +17,6 @@ The LatentConcat node combines two latent samples along a specified dimension. I
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | LATENT | The concatenated latent samples resulting from combining the two input samples along the specified dimension |
+
+---
+**Source fingerprint (SHA-256):** `46514ef85887279ec577ad88ac46f1c20f428903ee63b076888d7d5df09fde77`

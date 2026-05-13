@@ -4,8 +4,8 @@ Este nó cria um ativo de vídeo pessoal para o Seedance 2.0. Ele faz upload do 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
+|-----------|---------------|-------------|-----------|-----------|
 | `video` | VIDEO | Sim | - | Vídeo a ser registrado como ativo pessoal. |
 | `group_id` | STRING | Não | - | Reutiliza um ID de grupo de ativos Seedance existente para evitar verificação humana repetida para a mesma pessoa. Deixe vazio para executar a autenticação de pessoa real no navegador e criar um novo grupo. (padrão: string vazia) |
 
@@ -22,3 +22,6 @@ Este nó cria um ativo de vídeo pessoal para o Seedance 2.0. Ele faz upload do 
 |---------------|---------------|-----------|
 | `asset_id` | STRING | O identificador único para o ativo de vídeo recém-criado. |
 | `group_id` | STRING | O identificador do grupo de ativos que contém o novo vídeo. Será o `group_id` fornecido ou um recém-criado. |
+
+---
+**Source fingerprint (SHA-256):** `9da0872cf8df32765e3fb1eef50bc24f53b65e069d8ef2609de1075d89edd605`

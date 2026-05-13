@@ -20,3 +20,6 @@ The InstructPixToPixConditioning node prepares conditioning data for InstructPix
 | `positive` | CONDITIONING | Positive conditioning data with attached latent image representation |
 | `negative` | CONDITIONING | Negative conditioning data with attached latent image representation |
 | `latent` | LATENT | Empty latent tensor with the same dimensions as the encoded image |
+
+---
+**Source fingerprint (SHA-256):** `4b2383c9d64efdb558758359bf544fc5a1be65c12b23b54152e2df79a6dd8d79`

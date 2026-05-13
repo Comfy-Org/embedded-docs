@@ -15,3 +15,6 @@ The ComboOptionTestNode is a logic node designed to test and pass through combo 
 |-------------|-----------|-------------|
 | `output_1` | COMBO | Outputs the value selected from the first combo box (`combo`). |
 | `output_2` | COMBO | Outputs the value selected from the second combo box (`combo2`). |
+
+---
+**Source fingerprint (SHA-256):** `2f5a73eb7c2962a983b12688159e52d4d05f569d67909f536956ab18a6cc87d7`

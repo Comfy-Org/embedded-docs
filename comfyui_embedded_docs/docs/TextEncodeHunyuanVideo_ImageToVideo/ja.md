@@ -1,18 +1,23 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeHunyuanVideo_ImageToVideo/ja.md)
 
-TextEncodeHunyuanVideo_ImageToVideoノードは、テキストプロンプトと画像埋め込みを組み合わせることで、動画生成のためのコンディショニングデータを作成します。CLIPモデルを使用してテキスト入力とCLIPビジョン出力からの視覚情報の両方を処理し、指定された画像インターリーブ設定に従ってこれら2つのソースをブレンドしたトークンを生成します。
+このドキュメントはAI生成です。誤りや改善のご提案がございましたら、ぜひご協力ください。[GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeHunyuanVideo_ImageToVideo/en.md)
+
+TextEncodeHunyuanVideo_ImageToVideo ノードは、テキストプロンプトと画像埋め込みを組み合わせることで、動画生成用の条件付けデータを作成します。CLIPモデルを使用してテキスト入力とCLIPビジョン出力からの視覚情報の両方を処理し、指定された画像インターリーブ設定に従ってこれら2つの情報源を融合したトークンを生成します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `clip` | CLIP | はい | - | トークン化とエンコードに使用されるCLIPモデル |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | はい | - | 画像コンテキストを提供するCLIPビジョンモデルからの視覚的埋め込み |
-| `プロンプト` | STRING | はい | - | 動画生成をガイドするテキスト記述。複数行入力と動的プロンプトをサポート |
-| `画像インターリーブ` | INT | はい | 1-512 | 画像がテキストプロンプトに対してどれだけ影響を与えるか。数値が高いほどテキストプロンプトからの影響が強くなります。（デフォルト: 2） |
+| `clip` | CLIP | はい | - | トークン化とエンコードに使用するCLIPモデル |
+| `clip_vision_output` | CLIP_VISION_OUTPUT | はい | - | 画像コンテキストを提供するCLIPビジョンモデルからの視覚埋め込み |
+| `prompt` | STRING | はい | - | 動画生成をガイドするテキスト説明。複数行入力と動的プロンプトに対応 |
+| `image_interleave` | INT | はい | 1-512 | テキストプロンプトと比較して画像が結果に与える影響の度合い。数値が大きいほどテキストプロンプトの影響が強くなります。（デフォルト：2） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | テキストと画像情報を組み合わせた動画生成のためのコンディショニングデータ |
+| `CONDITIONING` | CONDITIONING | 動画生成のためにテキストと画像情報を組み合わせた条件付けデータ |
+
+---
+**Source fingerprint (SHA-256):** `ee748bd1fb1733593eb4cb1187c5cc279171163cfbc389f039378d0e366fc231`

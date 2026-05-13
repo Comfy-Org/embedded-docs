@@ -1,19 +1,24 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LazyCache/ja.md)
 
-LazyCacheは、EasyCacheの独自実装版であり、さらに簡単な実装を提供します。ComfyUIのあらゆるモデルで動作し、サンプリング中の計算を削減するキャッシュ機能を追加します。一般的にはEasyCacheよりも性能が劣りますが、一部の稀なケースではより効果的であり、普遍的な互換性を提供します。
+以下が翻訳結果です。
+
+LazyCache は、EasyCache の自家製バージョンであり、さらに簡単な実装を提供します。ComfyUI の任意のモデルで動作し、キャッシュ機能を追加してサンプリング中の計算を削減します。一般的には EasyCache よりも性能が劣りますが、まれに効果が高い場合があり、ユニバーサルな互換性を備えています。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | はい | - | LazyCacheを追加するモデル。 |
-| `reuse_threshold` | FLOAT | いいえ | 0.0 - 3.0 | キャッシュされたステップを再利用するしきい値（デフォルト: 0.2）。 |
-| `start_percent` | FLOAT | いいえ | 0.0 - 1.0 | LazyCacheの使用を開始する相対的なサンプリングステップ（デフォルト: 0.15）。 |
-| `end_percent` | FLOAT | いいえ | 0.0 - 1.0 | LazyCacheの使用を終了する相対的なサンプリングステップ（デフォルト: 0.95）。 |
-| `verbose` | BOOLEAN | いいえ | - | 詳細情報をログ出力するかどうか（デフォルト: False）。 |
+| `model` | MODEL | はい | - | LazyCache を追加するモデル。 |
+| `reuse_threshold` | FLOAT | いいえ | 0.0 - 3.0 | キャッシュされたステップを再利用するためのしきい値（デフォルト: 0.2）。 |
+| `start_percent` | FLOAT | いいえ | 0.0 - 1.0 | LazyCache の使用を開始する相対サンプリングステップ（デフォルト: 0.15）。 |
+| `end_percent` | FLOAT | いいえ | 0.0 - 1.0 | LazyCache の使用を終了する相対サンプリングステップ（デフォルト: 0.95）。 |
+| `verbose` | BOOLEAN | いいえ | - | 詳細情報をログに出力するかどうか（デフォルト: False）。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | LazyCache機能が追加されたモデル。 |
+| `model` | MODEL | LazyCache 機能が追加されたモデル。 |
+
+---
+**Source fingerprint (SHA-256):** `72a5e85b7cf517e88583fc1b75d3ab4a5d40fe8604d50c34f555e677d2ea9e51`

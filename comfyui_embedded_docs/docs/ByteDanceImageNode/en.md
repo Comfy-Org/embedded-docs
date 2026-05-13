@@ -22,3 +22,6 @@ The ByteDance Image node generates images using ByteDance models through an API 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `IMAGE` | IMAGE | The generated image returned from the ByteDance API as a tensor. |
+
+---
+**Source fingerprint (SHA-256):** `6ad3011ae942e81bc5e5296fa7120ee89637ef7487e2f12822d84b6917ec211e`

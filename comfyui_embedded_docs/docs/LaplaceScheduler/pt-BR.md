@@ -1,11 +1,11 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LaplaceScheduler/pt-BR.md)
 
-O nó LaplaceScheduler gera uma sequência de valores sigma seguindo uma distribuição de Laplace para uso na amostragem de difusão. Ele cria um cronograma de níveis de ruído que diminuem gradualmente de um valor máximo para um mínimo, utilizando parâmetros da distribuição de Laplace para controlar a progressão. Este agendador é comumente usado em fluxos de trabalho de amostragem personalizados para definir o cronograma de ruído para modelos de difusão.
+O nó LaplaceScheduler gera uma sequência de valores sigma seguindo uma distribuição de Laplace para uso na amostragem por difusão. Ele cria um cronograma de níveis de ruído que diminuem gradualmente de um valor máximo para um mínimo, usando parâmetros da distribuição de Laplace para controlar a progressão. Este agendador é comumente usado em fluxos de trabalho de amostragem personalizados para definir o cronograma de ruído para modelos de difusão.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
 | `steps` | INT | Sim | 1 a 10000 | Número de etapas de amostragem no cronograma (padrão: 20) |
 | `sigma_max` | FLOAT | Sim | 0.0 a 5000.0 | Valor sigma máximo no início do cronograma (padrão: 14.614642) |
 | `sigma_min` | FLOAT | Sim | 0.0 a 5000.0 | Valor sigma mínimo no final do cronograma (padrão: 0.0291675) |
@@ -14,6 +14,9 @@ O nó LaplaceScheduler gera uma sequência de valores sigma seguindo uma distrib
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `SIGMAS` | SIGMAS | Uma sequência de valores sigma seguindo um cronograma de distribuição de Laplace |
+
+---
+**Source fingerprint (SHA-256):** `9d8cacb93d0bb1872a368821fd3cad5d6d373817a923436af9f62a7648d5d735`

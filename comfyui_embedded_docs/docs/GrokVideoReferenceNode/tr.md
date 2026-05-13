@@ -28,7 +28,7 @@ ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış 
 
 Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
 
-Grok Referanstan-Videoya düğümü, çıktının stilini ve içeriğini yönlendirmek için en fazla yedi referans görseli kullanarak bir metin istemine dayalı video oluşturur. Videoyu oluşturmak için harici bir API'ye bağlanır; oluşturulan video indirilir ve döndürülür.
+Grok Referanstan-Videoya düğümü, çıktının stilini ve içeriğini yönlendirmek için en fazla yedi referans görseli kullanarak bir metin istemine dayalı video oluşturur. Videoyu oluşturmak için harici bir API'ye bağlanır, ardından video indirilir ve döndürülür.
 
 ## Girişler
 
@@ -49,3 +49,6 @@ Grok Referanstan-Videoya düğümü, çıktının stilini ve içeriğini yönlen
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `video` | VIDEO | Oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `e368769b869b7a0d0be8e6fdcc2b82774c11805483b2e83a448b6985a6dd9f96`

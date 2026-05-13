@@ -1,7 +1,11 @@
-워크플로에 주석을 추가하는 노드입니다. 마크다운 구문을 사용한 텍스트 서식 지정을 지원합니다.
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MarkdownNote/ko.md)
 
-## 입력
+# ## 개요
 
-## 출력
+워크플로우에 주석을 추가하는 노드입니다. Markdown 구문을 사용한 텍스트 서식을 지원합니다.
 
-이 노드는 출력 유형이 없습니다.
+# ## 입력
+
+# ## 출력
+
+이 노드는 출력이 없습니다.

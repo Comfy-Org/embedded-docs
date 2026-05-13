@@ -24,3 +24,6 @@ The ControlNetInpaintingAliMamaApply node applies ControlNet conditioning for in
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | The modified positive conditioning with ControlNet applied for inpainting |
 | `negative` | CONDITIONING | The modified negative conditioning with ControlNet applied for inpainting |
+
+---
+**Source fingerprint (SHA-256):** `30b49991b5ead039122a282fb48e3ed30477f89ce1430c371529bc42f921020d`

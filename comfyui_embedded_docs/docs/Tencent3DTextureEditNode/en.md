@@ -17,4 +17,8 @@ This node uses the Tencent Hunyuan3D API to edit the textures of a 3D model. You
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `GLB` | FILE3D | The processed 3D model in GLB format. |
-| `FBX` | FILE3D | The processed 3D model in FBX format. |
+| `OBJ` | FILE3D | The processed 3D model in OBJ format. |
+| `texture_image` | IMAGE | The newly generated texture image for the 3D model. |
+
+---
+**Source fingerprint (SHA-256):** `c8e81fcfc24707746b8d1291d31aff325523cd93a627b896402ce1b5a96c7e87`

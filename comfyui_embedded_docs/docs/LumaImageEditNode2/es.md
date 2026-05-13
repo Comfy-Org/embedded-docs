@@ -4,7 +4,7 @@ Esta documentación fue generada por IA. Si encuentras algún error o tienes sug
 
 ## Resumen
 
-Este nodo edita una imagen existente utilizando un prompt de texto, impulsado por el modelo Luma UNI-1. Toma una imagen de origen y una descripción del cambio deseado, luego genera una nueva versión editada de la imagen.
+Este nodo edita una imagen existente utilizando un mensaje de texto, impulsado por el modelo Luma UNI-1. Toma una imagen de origen y una descripción del cambio deseado, luego genera una nueva versión editada de la imagen.
 
 ## Entradas
 
@@ -24,3 +24,6 @@ Este nodo edita una imagen existente utilizando un prompt de texto, impulsado po
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
 | `image` | IMAGE | La imagen editada generada por el modelo Luma UNI-1. |
+
+---
+**Source fingerprint (SHA-256):** `7026e3ce818b0a9710624bd071fc2049950290f89c7d0365ff44236e9ad5eaed`

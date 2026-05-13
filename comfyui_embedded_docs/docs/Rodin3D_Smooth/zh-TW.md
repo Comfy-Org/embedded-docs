@@ -1,18 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Smooth/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Smooth/zh-TW.md)
 
-Rodin 3D Smooth 節點透過處理輸入圖像並將其轉換為平滑的 3D 模型，使用 Rodin API 來生成 3D 資源。它接收多張圖像作為輸入，並產生一個可下載的 3D 模型檔案。此節點會自動處理整個生成過程，包括任務建立、狀態輪詢和檔案下載。
+# Rodin 3D Smooth 節點
 
-## 輸入參數
+Rodin 3D Smooth 節點透過處理輸入影像並將其轉換為平滑的 3D 模型，使用 Rodin API 來生成 3D 資產。它接收多張影像作為輸入，並產生可下載的 3D 模型檔案。此節點會自動處理整個生成過程，包括任務建立、狀態輪詢和檔案下載。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | 是 | - | 用於 3D 模型生成的輸入圖像 |
-| `Seed` | INT | 是 | - | 用於生成一致性的隨機種子值 |
-| `Material_Type` | STRING | 是 | - | 應用於 3D 模型的材質類型 |
-| `Polygon_count` | STRING | 是 | - | 生成 3D 模型的目標多邊形數量 |
+| `Images` | IMAGE | 是 | - | 用於 3D 模型生成的輸入影像。可提供多張影像。 |
+| `Seed` | INT | 是 | - | 用於生成一致性的隨機種子值。 |
+| `Material_Type` | STRING | 是 | - | 應用於 3D 模型的材質類型。 |
+| `Polygon_count` | STRING | 是 | - | 生成的 3D 模型的目標多邊形數量。決定網格品質和細節層級。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `3D Model Path` | STRING | 已下載 3D 模型的檔案路徑 |
+| `3D Model Path` | STRING | 已下載 3D 模型的檔案路徑（僅為向後相容性保留）。 |
+| `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型。 |
+
+---
+**Source fingerprint (SHA-256):** `18783d4a3010234a3640d20c73cdd78e35a0eef7090bd433dba0fcc58e35ad3f`

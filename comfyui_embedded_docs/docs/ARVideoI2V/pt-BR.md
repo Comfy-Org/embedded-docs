@@ -4,7 +4,7 @@ Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver su
 
 ## Visão Geral
 
-Este nó prepara uma configuração de geração de vídeo a partir de imagem para modelos de vídeo AR (Auto-Regressivos). Ele recebe uma imagem inicial, a codifica no espaço latente usando um VAE e armazena a imagem codificada na configuração do modelo. Isso permite que o processo de amostragem de vídeo utilize a imagem como primeiro quadro, efetivamente iniciando a geração sem a necessidade de uma arquitetura de modelo separada de imagem para vídeo.
+Este nó prepara uma configuração de geração de vídeo a partir de imagem para modelos de vídeo AR (Auto-Regressivos). Ele recebe uma imagem inicial, a codifica no espaço latente usando um VAE e armazena a imagem codificada na configuração do modelo. Isso permite que o processo de amostragem de vídeo utilize a imagem como primeiro quadro, efetivamente semeando a geração sem a necessidade de uma arquitetura de modelo separada de imagem para vídeo.
 
 ## Entradas
 
@@ -24,3 +24,6 @@ Este nó prepara uma configuração de geração de vídeo a partir de imagem pa
 |---------------|--------------|-----------|
 | `MODEL` | MODEL | O modelo clonado com a imagem inicial codificada armazenada em sua configuração para geração de vídeo. |
 | `LATENT` | LATENT | Um tensor latente vazio com as dimensões corretas para o processo de geração de vídeo. |
+
+---
+**Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`

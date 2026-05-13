@@ -17,3 +17,6 @@ The Image Grid node combines multiple images into a single, organized grid or co
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The single output image containing all the input images arranged in a grid. |
+
+---
+**Source fingerprint (SHA-256):** `79d0942c79d3966d06fe804f839c1d677764cef90265bd621bf915fe6de0ad46`

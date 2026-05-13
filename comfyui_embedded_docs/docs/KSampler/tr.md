@@ -1,33 +1,33 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/tr.md)
 
-KSampler şu şekilde çalışır: sağlanan orijinal gizli görüntü bilgisini belirli bir model ve hem pozitif hem de negatif koşullara dayanarak değiştirir.
-İlk olarak, ayarlanan **seed** ve **denoise strength** değerlerine göre orijinal görüntü verisine gürültü ekler, ardından önceden ayarlanmış **Model**'i **pozitif** ve **negatif** yönlendirme koşullarıyla birleştirerek görüntüyü oluşturmak için kullanır.
+KSampler şu şekilde çalışır: Belirtilen modele ve hem pozitif hem de negatif koşullara dayanarak sağlanan orijinal gizli (latent) görüntü bilgisini değiştirir.
+İlk olarak, belirlenen **seed** (tohum) ve **denoise** (gürültü giderme) gücüne göre orijinal görüntü verisine gürültü ekler, ardından önceden ayarlanmış **Model**'i **pozitif** ve **negatif** yönlendirme koşullarıyla birleştirerek görüntüyü oluşturur.
 
-## Girdiler
+## Girişler
 
-| Parametre Adı          | Veri Türü    | Zorunlu  | Varsayılan | Aralık/Seçenekler         | Açıklama                                                                           |
-| ---------------------- | ------------ | -------- | ------- | ------------------------ | ---------------------------------------------------------------------------------- |
-| Model                  | checkpoint   | Evet     | Yok     | -                        | Gürültü giderme işlemi için kullanılan giriş modeli                                |
-| seed                   | Int          | Evet     | 0       | 0 ~ 18446744073709551615 | Rastgele gürültü oluşturmak için kullanılır, aynı "seed" değeri aynı görüntüleri üretir |
-| steps                  | Int          | Evet     | 20      | 1 ~ 10000                | Gürültü giderme işleminde kullanılacak adım sayısı, daha fazla adım daha doğru sonuçlar anlamına gelir |
-| cfg                    | float        | Evet     | 8.0     | 0.0 ~ 100.0              | Oluşturulan görüntünün giriş koşullarına ne kadar yakın eşleşeceğini kontrol eder, 6-8 önerilir |
-| sampler_name           | UI Option    | Evet     | Yok     | Çoklu algoritmalar       | Gürültü giderme için örnekleyici seçin, üretim hızını ve stilini etkiler           |
-| scheduler              | UI Option    | Evet     | Yok     | Çoklu planlayıcılar      | Gürültünün nasıl kaldırılacağını kontrol eder, üretim sürecini etkiler             |
-| Positive               | conditioning | Evet     | Yok     | -                        | Gürültü gidermeyi yönlendiren pozitif koşullar, görüntüde görünmesini istediğiniz öğeler |
-| Negative               | conditioning | Evet     | Yok     | -                        | Gürültü gidermeyi yönlendiren negatif koşullar, görüntüde olmasını istemediğiniz öğeler |
-| Latent_Image           | Latent       | Evet     | Yok     | -                        | Gürültü giderme için kullanılan gizli görüntü                                       |
-| denoise                | float        | Hayır    | 1.0     | 0.0 ~ 1.0                | Gürültü kaldırma oranını belirler, düşük değerler giriş görüntüsüyle daha az bağlantı anlamına gelir |
-| control_after_generate | UI Option    | Hayır    | Yok     | Rastgele/Artır/Azalt/Koru | Her prompt sonrasında seed değerini değiştirme yeteneği sağlar                     |
+| Parametre Adı          | Veri Türü     | Zorunlu | Varsayılan | Aralık/Seçenekler          | Açıklama                                                                             |
+| ---------------------- | ------------- | ------- | ---------- | -------------------------- | ------------------------------------------------------------------------------------ |
+| Model                  | checkpoint    | Evet    | Yok        | -                          | Gürültü giderme işlemi için kullanılan giriş modeli                                  |
+| seed                   | INT           | Evet    | 0          | 0 ~ 18446744073709551615   | Rastgele gürültü oluşturmak için kullanılır, aynı "seed" aynı görüntüleri üretir     |
+| steps                  | INT           | Evet    | 20         | 1 ~ 10000                  | Gürültü giderme işleminde kullanılacak adım sayısı, daha fazla adım daha doğru sonuç  |
+| cfg                    | FLOAT         | Evet    | 8.0        | 0.0 ~ 100.0                | Oluşturulan görüntünün giriş koşullarına ne kadar yakın olacağını kontrol eder, 6-8 önerilir |
+| sampler_name           | UI Seçeneği   | Evet    | Yok        | Birden çok algoritma       | Gürültü giderme için örnekleyici seçin, üretim hızını ve stilini etkiler             |
+| scheduler              | UI Seçeneği   | Evet    | Yok        | Birden çok zamanlayıcı     | Gürültünün nasıl kaldırılacağını kontrol eder, üretim sürecini etkiler               |
+| Positive               | conditioning  | Evet    | Yok        | -                          | Gürültü gidermeyi yönlendiren pozitif koşullar, görüntüde görmek istedikleriniz      |
+| Negative               | conditioning  | Evet    | Yok        | -                          | Gürültü gidermeyi yönlendiren negatif koşullar, görüntüde istemedikleriniz           |
+| Latent_Image           | Latent        | Evet    | Yok        | -                          | Gürültü giderme için kullanılan gizli (latent) görüntü                                |
+| denoise                | FLOAT         | Hayır   | 1.0        | 0.0 ~ 1.0                  | Gürültü giderme oranını belirler, düşük değerler giriş görüntüsüyle daha az bağlantı |
+| control_after_generate | UI Seçeneği   | Hayır   | Yok        | Rastgele/Artır/Azalt/Sabit | Her istemden sonra seed'i değiştirme imkanı sağlar                                   |
 
 ## Çıktı
 
-| Parametre | İşlev                                   |
-| -------------- | ------------------------------------------ |
-| Latent         | Örnekleyici gürültü gidermesinden sonraki gizli çıktıyı verir |
+| Parametre | İşlev                                              |
+| -------------- | -------------------------------------------------- |
+| Latent         | Örnekleyici gürültü giderme işleminden sonra gizli (latent) çıktıyı verir |
 
 ## Kaynak Kodu
 
-[15 Mayıs 2025 tarihinde güncellendi]
+[15 Mayıs 2025'te Güncellendi]
 
 ```Python
 
@@ -58,25 +58,25 @@ class KSampler:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "model": ("MODEL", {"tooltip": "The model used for denoising the input latent."}),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "The random seed used for creating the noise."}),
-                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "The number of steps used in the denoising process."}),
-                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "The Classifier-Free Guidance scale balances creativity and adherence to the prompt. Higher values result in images more closely matching the prompt however too high values will negatively impact quality."}),
-                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "The algorithm used when sampling, this can affect the quality, speed, and style of the generated output."}),
-                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "The scheduler controls how noise is gradually removed to form the image."}),
-                "positive": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to include in the image."}),
-                "negative": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to exclude from the image."}),
-                "latent_image": ("LATENT", {"tooltip": "The latent image to denoise."}),
-                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "The amount of denoising applied, lower values will maintain the structure of the initial image allowing for image to image sampling."}),
+                "model": ("MODEL", {"tooltip": "Giriş gizli (latent) görüntüsünün gürültüsünü gidermek için kullanılan model."}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "Gürültü oluşturmak için kullanılan rastgele tohum (seed)."}),
+                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "Gürültü giderme işleminde kullanılan adım sayısı."}),
+                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "Sınıflandırıcısız Kılavuzluk (CFG) ölçeği, yaratıcılık ile isteme bağlılık arasındaki dengeyi sağlar. Daha yüksek değerler, görüntülerin istemle daha yakından eşleşmesini sağlar ancak çok yüksek değerler kaliteyi olumsuz etkileyebilir."}),
+                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "Örnekleme sırasında kullanılan algoritma, oluşturulan çıktının kalitesini, hızını ve stilini etkileyebilir."}),
+                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "Zamanlayıcı, görüntüyü oluşturmak için gürültünün kademeli olarak nasıl kaldırılacağını kontrol eder."}),
+                "positive": ("CONDITIONING", {"tooltip": "Görüntüye dahil etmek istediğiniz nitelikleri tanımlayan koşullandırma."}),
+                "negative": ("CONDITIONING", {"tooltip": "Görüntüden çıkarmak istediğiniz nitelikleri tanımlayan koşullandırma."}),
+                "latent_image": ("LATENT", {"tooltip": "Gürültüsü giderilecek gizli (latent) görüntü."}),
+                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "Uygulanan gürültü giderme miktarı, daha düşük değerler ilk görüntünün yapısını koruyarak görüntüden görüntüye örneklemeye olanak tanır."}),
             }
         }
 
     RETURN_TYPES = ("LATENT",)
-    OUTPUT_TOOLTIPS = ("The denoised latent.",)
+    OUTPUT_TOOLTIPS = ("Gürültüsü giderilmiş gizli (latent) görüntü.",)
     FUNCTION = "sample"
 
     CATEGORY = "sampling"
-    DESCRIPTION = "Uses the provided model, positive and negative conditioning to denoise the latent image."
+    DESCRIPTION = "Gizli (latent) görüntünün gürültüsünü gidermek için sağlanan modeli, pozitif ve negatif koşullandırmayı kullanır."
 
     def sample(self, model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=1.0):
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)

@@ -1,22 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToImageApi/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToImageApi/zh-TW.md)
 
-Wan Image to Image 節點根據一或兩張輸入圖片和文字提示生成圖像。它會根據您提供的描述來轉換輸入圖片，創建一個保持原始輸入長寬比的新圖像。無論輸入尺寸為何，輸出圖像都固定為 160 萬像素。
+# Wan 圖像到圖像節點
 
-## 輸入參數
+Wan 圖像到圖像節點可根據一張或兩張輸入圖像以及文字提示來生成圖像。它會根據您提供的描述轉換輸入圖像，創建一張保持原始輸入圖像長寬比的新圖像。無論輸入尺寸為何，輸出圖像固定為 1.6 百萬像素。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | "wan2.5-i2i-preview" | 使用的模型（預設值："wan2.5-i2i-preview"）。 |
-| `image` | IMAGE | 是 | - | 單圖編輯或多圖融合，最多 2 張圖片。 |
-| `prompt` | STRING | 是 | - | 用於描述元素和視覺特徵的提示詞，支援英文/中文（預設值：空）。 |
-| `negative_prompt` | STRING | 否 | - | 負向文字提示詞，用於指導應避免的內容（預設值：空）。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 用於生成的種子值（預設值：0）。 |
-| `watermark` | BOOLEAN | 否 | - | 是否在結果中添加「AI 生成」浮水印（預設值：true）。 |
+| `model` | COMBO | 是 | "wan2.5-i2i-preview" | 要使用的模型（預設值："wan2.5-i2i-preview"）。 |
+| `image` | IMAGE | 是 | - | 單張圖像編輯或多張圖像融合，最多 2 張圖像。 |
+| `prompt` | STRING | 是 | - | 描述元素和視覺特徵的提示詞。支援英文和中文（預設值：空白）。 |
+| `negative_prompt` | STRING | 否 | - | 描述要避免內容的負面提示詞（預設值：空白）。 |
+| `seed` | INT | 否 | 0 至 2147483647 | 用於生成的隨機種子（預設值：0）。 |
+| `watermark` | BOOLEAN | 否 | - | 是否在結果中添加 AI 生成浮水印（預設值：false）。 |
 
-**注意：** 此節點僅接受恰好 1 或 2 張輸入圖片。如果您提供超過 2 張圖片或完全沒有圖片，節點將返回錯誤。
+**注意：** 此節點僅接受 1 或 2 張輸入圖像。如果您提供超過 2 張圖像或完全未提供圖像，節點將返回錯誤。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 根據輸入圖片和文字提示生成的圖像。 |
+| `image` | IMAGE | 根據輸入圖像和文字提示生成的圖像。 |
+
+---
+**Source fingerprint (SHA-256):** `d69811ddaba718e5468f539fb9b25827efdf79f3ee9cbf31ad8f9387cea9b9be`

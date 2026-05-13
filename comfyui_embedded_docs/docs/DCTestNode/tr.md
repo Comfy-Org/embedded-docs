@@ -1,27 +1,58 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DCTestNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DCTestNode/tr.md)
 
-DCTestNode, kullanıcının dinamik bir birleşik giriş kutusundan yaptığı seçime bağlı olarak farklı veri türleri döndüren bir mantık düğümüdür. Seçilen seçeneğin hangi giriş alanının etkin olacağını ve düğümün ne tür bir değer çıktılayacağını belirlediği bir koşullu yönlendirici gibi çalışır.
+ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
+
+## Çeviri Kuralları
+
+1. **Çevrilmemesi gereken içerik:**
+   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
+   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
+   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
+   - Kod, dosya yolları
+
+2. **Çevrilmesi gereken içerik:**
+   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
+   - Tüm açıklayıcı metinler
+   - Parametre açıklamaları
+
+3. **Çeviri kalitesi:**
+   - Standart Türkçe kullanın
+   - Profesyonel ama anlaşılır bir üslup koruyun
+   - Teknik doğruluğu sağlayın
+   - Standart Türkçe teknik terminolojiyi kullanın
+
+4. **Format:**
+   - Tüm Markdown biçimlendirmesini koruyun
+   - Tablo yapısını koruyun
+   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
+
+Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
+
+DCTestNode, kullanıcının dinamik bir birleşik giriş kutusundan yaptığı seçime göre farklı türlerde veri döndüren bir mantık düğümüdür. Seçilen seçeneğin hangi giriş alanının aktif olacağını ve düğümün hangi türde değer çıktısı vereceğini belirlediği koşullu bir yönlendirici görevi görür.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `combo` | COMBO | Evet | `"option1"`<br>`"option2"`<br>`"option3"`<br>`"option4"` | Hangi giriş alanının etkin olacağını ve düğümün ne çıktılayacağını belirleyen ana seçim. |
-| `string` | STRING | Hayır | - | Bir metin giriş alanı. Bu alan yalnızca `combo` `"option1"` olarak ayarlandığında etkin ve zorunludur. |
-| `integer` | INT | Hayır | - | Bir tam sayı giriş alanı. Bu alan yalnızca `combo` `"option2"` olarak ayarlandığında etkin ve zorunludur. |
-| `image` | IMAGE | Hayır | - | Bir görüntü giriş alanı. Bu alan yalnızca `combo` `"option3"` olarak ayarlandığında etkin ve zorunludur. |
-| `subcombo` | COMBO | Hayır | `"opt1"`<br>`"opt2"` | `combo` `"option4"` olarak ayarlandığında görünen ikincil bir seçim. Hangi iç içe giriş alanlarının etkin olacağını belirler. |
-| `float_x` | FLOAT | Hayır | - | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında etkin ve zorunludur. |
-| `float_y` | FLOAT | Hayır | - | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında etkin ve zorunludur. |
-| `mask1` | MASK | Hayır | - | Bir maske giriş alanı. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt2"` olarak ayarlandığında etkindir. İsteğe bağlıdır. |
+| `combo` | COMBO | Evet | `"option1"`<br>`"option2"`<br>`"option3"`<br>`"option4"` | Hangi giriş alanının aktif olacağını ve düğümün ne çıktı vereceğini belirleyen ana seçim. |
+| `string` | STRING | Hayır | - | Bir metin giriş alanı. Bu alan yalnızca `combo` `"option1"` olarak ayarlandığında aktif ve zorunludur. |
+| `integer` | INT | Hayır | - | Bir tam sayı giriş alanı. Bu alan yalnızca `combo` `"option2"` olarak ayarlandığında aktif ve zorunludur. |
+| `image` | IMAGE | Hayır | - | Bir görsel giriş alanı. Bu alan yalnızca `combo` `"option3"` olarak ayarlandığında aktif ve zorunludur. |
+| `subcombo` | COMBO | Hayır | `"opt1"`<br>`"opt2"` | `combo` `"option4"` olarak ayarlandığında görünen ikincil bir seçim. Hangi iç içe giriş alanlarının aktif olacağını belirler. |
+| `float_x` | FLOAT | Hayır | - | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında aktif ve zorunludur. |
+| `float_y` | FLOAT | Hayır | - | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında aktif ve zorunludur. |
+| `mask1` | MASK | Hayır | - | Bir maske giriş alanı. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt2"` olarak ayarlandığında aktiftir. İsteğe bağlıdır. |
 
 **Parametre Kısıtlamaları:**
 
-* `combo` parametresi, diğer tüm giriş alanlarının görünürlüğünü ve zorunluluğunu kontrol eder. Yalnızca seçilen `combo` seçeneğiyle ilişkili girişler gösterilecek ve zorunlu olacaktır (`mask1` hariç, bu isteğe bağlıdır).
+* `combo` parametresi, diğer tüm giriş alanlarının görünürlüğünü ve zorunluluğunu kontrol eder. Yalnızca seçili `combo` seçeneğiyle ilişkili girişler gösterilir ve zorunludur (`mask1` isteğe bağlı olduğu için hariç).
 * `combo` `"option4"` olarak ayarlandığında, `subcombo` parametresi zorunlu hale gelir ve ikinci bir iç içe giriş kümesini (`float_x`/`float_y` veya `mask1`) kontrol eder.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | ANYTYPE | Çıktı, seçilen `combo` seçeneğine bağlıdır. Bir STRING (`"option1"`), bir INT (`"option2"`), bir IMAGE (`"option3"`) veya `subcombo` sözlüğünün bir dize temsili (`"option4"`) olabilir. |
+
+---
+**Source fingerprint (SHA-256):** `98c4ca2100a27594df360935cc1507960480fe75a76ca0df2af75925d399be00`

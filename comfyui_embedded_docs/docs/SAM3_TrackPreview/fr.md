@@ -1,6 +1,6 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackPreview/fr.md)
 
-Voici la traduction en français de la documentation du nœud ComfyUI, en respectant toutes les règles spécifiées :
+Voici la traduction en français de la documentation technique du nœud ComfyUI :
 
 ## Aperçu
 
@@ -20,3 +20,6 @@ Ce nœud crée un aperçu vidéo des objets suivis, en dessinant chaque objet su
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
 | `ui` | PREVIEW_VIDEO | Un élément d'interface utilisateur qui affiche la vidéo d'aperçu générée. Aucune donnée tensorielle n'est retournée. |
+
+---
+**Source fingerprint (SHA-256):** `8300d4fa89c7bbc481ac9a59868ede0e3c9413faa63d56c16a4f603ef878e877`

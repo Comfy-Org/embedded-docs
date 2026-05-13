@@ -1,16 +1,17 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentFromBatch/es.md)
 
-Este nodo está diseñado para extraer un subconjunto específico de muestras latentes de un lote dado basado en el índice de lote y la longitud especificados. Permite el procesamiento selectivo de muestras latentes, facilitando operaciones en segmentos más pequeños del lote para eficiencia o manipulación dirigida.
+Este nodo está diseñado para extraer un subconjunto específico de muestras latentes de un lote determinado, según el índice y la longitud del lote especificados. Permite el procesamiento selectivo de muestras latentes, facilitando operaciones en segmentos más pequeños del lote para lograr eficiencia o manipulación dirigida.
 
 ## Entradas
 
-| Parámetro     | Data Type | Descripción |
+| Parámetro      | Tipo de dato | Descripción |
 |---------------|-------------|-------------|
-| `muestras`     | `LATENT`    | La colección de muestras latentes de la cual se extraerá un subconjunto. Este parámetro es crucial para determinar el lote fuente de muestras a procesar. |
-| `índice_lote` | `INT`       | Especifica el índice de inicio dentro del lote desde el cual comenzará el subconjunto de muestras. Este parámetro permite la extracción dirigida de muestras desde posiciones específicas en el lote. |
-| `longitud`      | `INT`       | Define el número de muestras a extraer desde el índice de inicio especificado. Este parámetro controla el tamaño del subconjunto a procesar, permitiendo una manipulación flexible de los segmentos del lote. |
+| `samples`     | `LATENT`    | La colección de muestras latentes de la cual se extraerá un subconjunto. Este parámetro es crucial para determinar el lote fuente de muestras a procesar. |
+| `batch_index` | `INT`       | Especifica el índice inicial dentro del lote desde el cual comenzará el subconjunto de muestras. Este parámetro permite la extracción dirigida de muestras desde posiciones específicas en el lote. |
+| `length`      | `INT`       | Define la cantidad de muestras que se extraerán a partir del índice inicial especificado. Este parámetro controla el tamaño del subconjunto a procesar, permitiendo una manipulación flexible de los segmentos del lote. |
 
 ## Salidas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | El subconjunto extraído de muestras latentes, ahora disponible para un procesamiento o análisis posterior. |
+| `latent`  | `LATENT`    | El subconjunto extraído de muestras latentes, ahora disponible para su posterior procesamiento o análisis. |

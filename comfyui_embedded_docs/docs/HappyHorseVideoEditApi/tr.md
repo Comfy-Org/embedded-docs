@@ -2,20 +2,20 @@
 
 ## Genel Bakış
 
-HappyHorse modelini kullanarak metin talimatları veya referans görselleriyle video düzenleyin. Çıktı süresi, giriş videosuyla eşleşir (3-15 saniye) ve 15 saniyeden uzun girişler otomatik olarak kısaltılır.
+HappyHorse modelini kullanarak bir videoyu metin talimatları veya referans görsellerle düzenleyin. Çıktı süresi 3-15 saniye arasındadır ve giriş videosuyla eşleşir; 15 saniyeden uzun girişler kısaltılır.
 
-## Girişler
+## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | DICT | Evet | Aşağıya bakın | Model seçimi, istem, çözünürlük, en-boy oranı ve isteğe bağlı referans görsellerini içeren model yapılandırması. |
 | `video` | VIDEO | Evet | - | Düzenlenecek video. |
 | `seed` | INT | Evet | 0 ile 2147483647 arası | Üretim için kullanılacak tohum değeri (varsayılan: 0). |
-| `watermark` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş filigran eklenip eklenmeyeceği (varsayılan: False). |
+| `watermark` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). |
 
 ### `model` Parametre Detayları
 
-`model` parametresi, aşağıdaki alanları içeren bir sözlüktür:
+`model` parametresi aşağıdaki alanları içeren bir sözlüktür:
 
 | Alan | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-------|-----------|----------|-------|-------------|
@@ -30,3 +30,6 @@ HappyHorse modelini kullanarak metin talimatları veya referans görselleriyle v
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `video` | VIDEO | Düzenlenmiş video çıktısı. |
+
+---
+**Source fingerprint (SHA-256):** `af6747efbea1c65e4909d35dad009cbc2ffaad787d0f2031581c227deb9bf53c`

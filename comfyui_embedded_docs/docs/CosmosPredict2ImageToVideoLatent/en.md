@@ -22,3 +22,6 @@ The CosmosPredict2ImageToVideoLatent node creates video latent representations f
 |-------------|-----------|-------------|
 | `samples` | LATENT | The generated video latent representation containing the encoded video sequence |
 | `noise_mask` | LATENT | A mask indicating which parts of the latent should be preserved during generation |
+
+---
+**Source fingerprint (SHA-256):** `55fab16180c0e3fa254bcc77694dbc666810b28522e61b9c613f720fae66bd0c`

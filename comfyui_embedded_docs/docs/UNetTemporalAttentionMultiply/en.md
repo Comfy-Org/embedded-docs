@@ -17,3 +17,6 @@ The UNetTemporalAttentionMultiply node applies multiplication factors to differe
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with adjusted attention weights |
+
+---
+**Source fingerprint (SHA-256):** `98d62fb28a0cdf62154ae4e0b672b3a7bcb9ed61186a164a43992263c1f9439a`

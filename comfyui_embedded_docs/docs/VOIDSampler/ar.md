@@ -2,7 +2,7 @@
 
 نظرة عامة
 
-توفر عُقدة VOIDSampler طريقة أخذ عينات DDIM متخصصة مصممة خصيصًا لنماذج الترميم الداخلي VOID. وهي تطبق نفس عملية إزالة الضوضاء المستخدمة أثناء تدريب نموذج VOID، دون تحجيم الضوضاء الذي تطبقه عُقد KSamplers القياسية. صُممت هذه العقدة للاستخدام مع عُقد SamplerCustom أو SamplerCustomAdvanced، ويجب إقرانها بـ RandomNoise أو VOIDWarpedNoiseSource.
+توفر عقدة VOIDSampler طريقة أخذ عينات DDIM متخصصة مصممة خصيصًا لنماذج الترميم الداخلي VOID. تطبق هذه العقدة نفس عملية إزالة الضوضاء المستخدمة أثناء تدريب نموذج VOID، دون تحجيم الضوضاء الذي تطبقه عينات K القياسية. صُممت هذه العقدة للاستخدام مع عقد SamplerCustom أو SamplerCustomAdvanced، ويجب إقرانها مع RandomNoise أو VOIDWarpedNoiseSource.
 
 المدخلات
 
@@ -16,4 +16,7 @@
 
 | اسم المخرج | نوع البيانات | الوصف |
 |-------------|-----------|-------------|
-| `SAMPLER` | SAMPLER | كائن عينة يطبق خوارزمية VOID DDIM، وجاهز للاتصال بعُقد SamplerCustom أو SamplerCustomAdvanced. |
+| `SAMPLER` | SAMPLER | كائن عينة يطبق خوارزمية VOID DDIM، جاهز للتوصيل بعقد SamplerCustom أو SamplerCustomAdvanced. |
+
+---
+**Source fingerprint (SHA-256):** `c6f1be9a90003906c54cced20e8136ab7e4f7e7118e63b67ce366eeb7f790dca`

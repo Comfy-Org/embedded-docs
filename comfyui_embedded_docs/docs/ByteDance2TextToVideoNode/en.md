@@ -17,3 +17,6 @@ This node uses ByteDance's Seedance 2.0 API to generate a video from a text desc
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `f8552e47667ff4b1ad3c8c1c074d70bdc45227b79b026b4b3c06986443655473`

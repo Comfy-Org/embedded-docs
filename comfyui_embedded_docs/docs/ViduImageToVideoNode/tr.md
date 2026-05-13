@@ -1,26 +1,29 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduImageToVideoNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduImageToVideoNode/tr.md)
 
-Vidu Image To Video Generation düğümü, bir başlangıç görüntüsünden ve isteğe bağlı bir metin açıklamasından video oluşturur. Sağlanan görüntü karesinden genişleyen video içeriği üretmek için AI modellerini kullanır. Düğüm, görüntüyü ve parametreleri harici bir servise gönderir ve oluşturulan videoyu döndürür.
+Vidu Görüntüden Videoya Dönüştürme düğümü, bir başlangıç görüntüsü ve isteğe bağlı bir metin açıklaması kullanarak kısa bir video oluşturur. Sağlanan görüntü karesinden devam eden video içeriği üretmek için bir yapay zeka modeli kullanır ve sonuçta oluşan videoyu döndürür.
 
 ## Girişler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Evet | `vidu_q1`<br>*Diğer VideoModelName seçenekleri* | Model adı (varsayılan: vidu_q1) |
-| `image` | IMAGE | Evet | - | Oluşturulan videonun başlangıç karesi olarak kullanılacak bir görüntü |
+| `model` | COMBO | Evet | `viduq1` | Model adı (varsayılan: viduq1) |
+| `image` | IMAGE | Evet | - | Oluşturulacak videonun başlangıç karesi olarak kullanılacak bir görüntü |
 | `prompt` | STRING | Hayır | - | Video oluşturma için metinsel açıklama (varsayılan: boş) |
-| `duration` | INT | Hayır | 5-5 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5, 5 saniyede sabit) |
-| `seed` | INT | Hayır | 0-2147483647 | Video oluşturma için seed değeri (0 rastgele için) (varsayılan: 0) |
-| `resolution` | COMBO | Hayır | `r_1080p`<br>*Diğer Resolution seçenekleri* | Desteklenen değerler modele ve süreye göre değişebilir (varsayılan: r_1080p) |
-| `movement_amplitude` | COMBO | Hayır | `auto`<br>*Diğer MovementAmplitude seçenekleri* | Karedeki nesnelerin hareket genliği (varsayılan: auto) |
+| `duration` | INT | Hayır | 5-5 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5, 5 saniyeye sabitlenmiştir) |
+| `seed` | INT | Hayır | 0-2147483647 | Video oluşturma için tohum değeri (0 rastgele anlamına gelir) (varsayılan: 0) |
+| `resolution` | COMBO | Hayır | `1080p` | Desteklenen değerler modele ve süreye göre değişiklik gösterebilir (varsayılan: 1080p) |
+| `movement_amplitude` | COMBO | Hayır | `auto`<br>`small`<br>`medium`<br>`large` | Karedeki nesnelerin hareket genliği (varsayılan: auto) |
 
 **Kısıtlamalar:**
 
-- Yalnızca bir giriş görüntüsüne izin verilir (birden fazla görüntü işlenemez)
-- Giriş görüntüsünün en-boy oranı 1:4 ile 4:1 arasında olmalıdır
+- Yalnızca bir giriş görüntüsüne izin verilir (birden fazla görüntü işlenemez).
+- Giriş görüntüsünün en-boy oranı 1:4 ile 4:1 arasında olmalıdır.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | VIDEO | Oluşturulan video çıktısı |
+
+---
+**Source fingerprint (SHA-256):** `064b3efba8219770595e68a6607a6f8113d1be7c9f3863a4740ee5c3a146d91e`

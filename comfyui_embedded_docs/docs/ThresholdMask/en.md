@@ -14,3 +14,6 @@ The ThresholdMask node converts a mask to a binary mask by applying a threshold 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `mask` | MASK | The resulting binary mask after thresholding |
+
+---
+**Source fingerprint (SHA-256):** `5c61433c05ef8106d928306b64035078e7598605512f20aaf992255f7b166456`

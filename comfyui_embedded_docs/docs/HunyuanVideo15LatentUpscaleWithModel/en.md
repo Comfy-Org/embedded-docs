@@ -20,3 +20,6 @@ The Hunyuan Video 15 Latent Upscale With Model node increases the resolution of 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `LATENT` | LATENT | The upscaled and model-refined latent image representation. |
+
+---
+**Source fingerprint (SHA-256):** `1de9e157c1a0433f1b3d5ff4d428a1aa392fd65da5e314e6e818ce66495d5ef4`

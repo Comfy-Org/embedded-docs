@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConvertStringToComboNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConvertStringToComboNode/tr.md)
 
-Convert String to Combo düğümü, bir metin dizisini girdi olarak alır ve onu bir Combo veri türüne dönüştürür. Bu, bir metin değerini, Combo girdisi gerektiren diğer düğümler için bir seçim olarak kullanmanıza olanak tanır. Dize değerini değiştirmeden aktarır, ancak veri türünü değiştirir.
+Dizeyi Combo'ya Dönüştür düğümü, girdi olarak bir metin dizesi alır ve bunu Combo veri türüne dönüştürür. Bu, bir Combo girdisi gerektiren diğer düğümler için bir metin değerini seçim olarak kullanmanıza olanak tanır. Dize değerini değiştirmeden iletir ancak veri türünü değiştirir.
 
 ## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | Yok | Combo türüne dönüştürülecek metin dizisi. |
+| `string` | STRING | Evet | Yok | Combo türüne dönüştürülecek metin dizesi. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | COMBO | Girdi dizisi, artık Combo veri türü olarak biçimlendirilmiş şekilde. |
+| `output` | COMBO | Artık bir Combo veri türü olarak biçimlendirilmiş girdi dizesi. |
+
+---
+**Source fingerprint (SHA-256):** `37bd7db5a5ce2657db30a3a24da90c1c1e5c4a3f7089b4d03a0528b7770e9fe1`

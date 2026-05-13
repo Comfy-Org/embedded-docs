@@ -11,7 +11,7 @@ The WanSCAILToVideo node prepares conditioning and an empty latent space for vid
 | `vae` | VAE | Yes | - | The VAE model used for encoding images and video frames. |
 | `width` | INT | Yes | 32 to MAX_RESOLUTION | The width of the output video in pixels (default: 512). Must be divisible by 8. |
 | `height` | INT | Yes | 32 to MAX_RESOLUTION | The height of the output video in pixels (default: 896). Must be divisible by 8. |
-| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the video (default: 81). |
+| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the video (default: 81). Must be divisible by 4. |
 | `batch_size` | INT | Yes | 1 to 4096 | The number of videos to generate in a batch (default: 1). |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | - | Optional CLIP vision output for conditioning. |
 | `reference_image` | IMAGE | No | - | An optional reference image for conditioning. |
@@ -20,7 +20,7 @@ The WanSCAILToVideo node prepares conditioning and an empty latent space for vid
 | `pose_start` | FLOAT | Yes | 0.0 to 1.0 | Start step to use pose conditioning (default: 0.0). |
 | `pose_end` | FLOAT | Yes | 0.0 to 1.0 | End step to use pose conditioning (default: 1.0). |
 
-**Note:** The `pose_video` input is processed only for the first `length` frames. The `reference_image` is processed only for the first image in the batch.
+**Note:** The `pose_video` input is processed only for the first `length` frames. The `reference_image` is processed only for the first image in the batch. When `reference_image` is provided, a zero-filled latent of the same size is used for the negative conditioning. When `clip_vision_output` is provided, it is applied to both positive and negative conditioning.
 
 ## Outputs
 
@@ -29,3 +29,6 @@ The WanSCAILToVideo node prepares conditioning and an empty latent space for vid
 | `positive` | CONDITIONING | The modified positive conditioning, potentially containing embedded reference image latents, CLIP vision output, or pose video latents. |
 | `negative` | CONDITIONING | The modified negative conditioning, potentially containing embedded reference image latents, CLIP vision output, or pose video latents. |
 | `latent` | LATENT | An empty latent tensor of shape `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. |
+
+---
+**Source fingerprint (SHA-256):** `63de4b6fe41fc23ea81c21965a2dbfc82120bb1bad6785b2130af824e015fbcb`

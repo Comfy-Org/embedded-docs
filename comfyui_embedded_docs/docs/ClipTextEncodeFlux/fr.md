@@ -1,43 +1,23 @@
-`CLIPTextEncodeFlux` est un nœud avancé d'encodage de texte dans ComfyUI, spécialement conçu pour l'architecture Flux. Il utilise un mécanisme à double encodeur (CLIP-L et T5XXL) pour traiter à la fois des mots-clés structurés et des descriptions détaillées en langage naturel, offrant au modèle Flux une compréhension textuelle plus précise et complète pour améliorer la qualité de la génération d'images à partir de texte.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeFlux/fr.md)
 
-Ce nœud repose sur la collaboration de deux encodeurs :
+Voici la traduction en français de la documentation du nœud `CLIPTextEncodeFlux`, en respectant vos règles :
 
-1. L'entrée `clip_l` est traitée par l'encodeur CLIP-L, extrayant des caractéristiques telles que le style et le thème, idéale pour des descriptions concises.
-2. L'entrée `t5xxl` est traitée par l'encodeur T5XXL, spécialisé dans la compréhension de descriptions complexes et détaillées en langage naturel.
-3. Les résultats des deux encodeurs sont fusionnés et, combinés avec le paramètre `guidance`, génèrent un embedding conditionnel unifié (`CONDITIONNEMENT`) pour les nœuds de sampling Flux, contrôlant le degré de correspondance entre le contenu généré et la description textuelle.
+`CLIPTextEncodeFlux` est un nœud d'encodage de texte avancé conçu pour l'architecture Flux. Il traite deux entrées de texte distinctes via différents encodeurs — CLIP-L et T5XXL — et les combine avec une échelle de guidage pour produire un conditionnement unifié destiné à la génération d'images.
 
 ## Entrées
 
-| Nom du paramètre | Type de donnée | Méthode d'entrée | Valeur par défaut | Plage | Fonction |
-|------------------|----------------|------------------|-------------------|-------|----------|
-| `clip`           | CLIP           | Entrée de nœud   | Aucun             | -     | Doit être un modèle CLIP compatible Flux, incluant les encodeurs CLIP-L et T5XXL |
-| `clip_l`         | STRING         | Champ texte      | Aucun             | Jusqu'à 77 tokens | Adapté pour des descriptions concises de mots-clés, comme le style ou le thème |
-| `t5xxl`          | STRING         | Champ texte      | Aucun             | Pratiquement illimité | Adapté pour des descriptions détaillées en langage naturel, exprimant des scènes et des détails complexes |
-| `guidance`       | FLOAT          | Curseur          | 3.5               | 0.0 - 100.0 | Contrôle l'influence des conditions textuelles sur le processus de génération ; des valeurs plus élevées signifient un respect plus strict du texte |
+| Paramètre | Type de données | Requis | Plage | Description |
+|-----------|-----------------|--------|-------|-------------|
+| `clip` | CLIP | Oui | - | Un modèle CLIP prenant en charge l'architecture Flux, incluant les encodeurs CLIP-L et T5XXL. |
+| `clip_l` | STRING | Oui | - | Texte d'entrée traité par l'encodeur CLIP-L. Adapté aux descriptions concises par mots-clés, comme le style ou le thème. Prend en charge les entrées multilignes et les invites dynamiques. |
+| `t5xxl` | STRING | Oui | - | Texte d'entrée traité par l'encodeur T5XXL. Adapté aux descriptions détaillées en langage naturel, exprimant des scènes et des détails complexes. Prend en charge les entrées multilignes et les invites dynamiques. |
+| `guidance` | FLOAT | Oui | 0.0 - 100.0 | Contrôle l'influence des conditions textuelles sur le processus de génération. Des valeurs plus élevées signifient une adhérence plus stricte au texte. Valeur par défaut : 3.5. |
 
 ## Sorties
 
-| Nom de sortie      | Type de donnée   | Fonction |
-|--------------------|------------------|----------|
-| `CONDITIONNEMENT`  | CONDITIONING     | Contient l'embedding fusionné des deux encodeurs et le paramètre de guidance, utilisé pour la génération conditionnelle d'images |
+| Nom de la sortie | Type de données | Description |
+|------------------|-----------------|-------------|
+| `CONDITIONING` | CONDITIONING | Contient les embeddings fusionnés des deux encodeurs et le paramètre de guidage, utilisés pour la génération conditionnelle d'images. |
 
-## Exemples d'utilisation
-
-### Exemples de prompts
-
-- **Entrée clip_l** (mots-clés) :
-  - Utilisez des combinaisons structurées et concises de mots-clés
-  - Exemple : `masterpiece, best quality, portrait, oil painting, dramatic lighting`
-  - Concentrez-vous sur le style, la qualité et le sujet principal
-
-- **Entrée t5xxl** (description en langage naturel) :
-  - Utilisez des descriptions complètes et fluides de la scène
-  - Exemple : `A highly detailed portrait in oil painting style, featuring dramatic chiaroscuro lighting that creates deep shadows and bright highlights, emphasizing the subject's features with renaissance-inspired composition.`
-  - Concentrez-vous sur les détails de la scène, les relations spatiales et les effets de lumière
-
-### Remarques
-
-1. Assurez-vous d'utiliser un modèle CLIP compatible avec l'architecture Flux
-2. Il est recommandé de remplir à la fois `clip_l` et `t5xxl` pour profiter de l'avantage du double encodeur
-3. Notez la limite de 77 tokens pour `clip_l`
-4. Ajustez le paramètre `guidance` selon les résultats générés
+---
+**Source fingerprint (SHA-256):** `f168610123410a44f9c5c5c18773603bd47bc7b44b21e65910a6026f86d7eb04`

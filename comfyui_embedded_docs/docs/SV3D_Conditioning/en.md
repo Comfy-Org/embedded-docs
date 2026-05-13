@@ -21,3 +21,6 @@ The SV3D_Conditioning node prepares conditioning data for 3D video generation us
 | `positive` | CONDITIONING | The positive conditioning data containing image embeddings and camera parameters for generation |
 | `negative` | CONDITIONING | The negative conditioning data with zeroed embeddings for contrastive generation |
 | `latent` | LATENT | An empty latent tensor with dimensions matching the specified video frames and resolution |
+
+---
+**Source fingerprint (SHA-256):** `be02939aa4cdd1785eb445034a27d08a90e390a497fa9697fb769f0ce26e6d2f`

@@ -21,3 +21,6 @@ This node prepares data for training by encoding images and text. It takes a lis
 |-------------|-----------|-------------|
 | `latents` | LATENT | List of latent dicts. |
 | `conditioning` | CONDITIONING | List of conditioning lists. |
+
+---
+**Source fingerprint (SHA-256):** `95947c03f140f527f3db54d0b0131d956646055542ddb546ae5eaa82e4e8cefa`

@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSubtract/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSubtract/tr.md)
 
-Bu düğüm, gelişmiş model birleştirme işlemleri için tasarlanmıştır ve özellikle bir modelin parametrelerini belirtilen bir çarpan değerine göre başka bir modelden çıkarmak için kullanılır. Bir modelin parametrelerinin diğeri üzerindeki etkisini ayarlayarak model davranışlarının özelleştirilmesine olanak tanır ve bu sayede yeni, hibrit modellerin oluşturulmasını kolaylaştırır.
+Bu düğüm, gelişmiş model birleştirme işlemleri için tasarlanmış olup, özellikle bir modelin parametrelerini belirtilen bir çarpan doğrultusunda diğer modelden çıkarmaya yarar. Bir modelin parametrelerinin diğeri üzerindeki etkisini ayarlayarak model davranışlarının özelleştirilmesini sağlar ve yeni, hibrit modellerin oluşturulmasını kolaylaştırır.
 
-## Girdiler
+## Girişler
 
 | Parametre     | Veri Türü | Açıklama |
-|---------------|-----------|-------------|
-| `model1`      | `MODEL`   | Parametrelerin çıkarılacağı temel model. |
-| `model2`      | `MODEL`   | Temel modelden çıkarılacak parametrelere sahip model. |
-| `çarpan`  | `FLOAT`   | Temel modelin parametreleri üzerindeki çıkarma etkisini ölçeklendiren kayan noktalı değer. |
+|---------------|--------------|-------------|
+| `model1`      | `MODEL`     | Parametrelerin çıkarılacağı temel model. |
+| `model2`      | `MODEL`     | Parametreleri temel modelden çıkarılacak olan model. |
+| `multiplier`  | `FLOAT`     | Temel modelin parametreleri üzerindeki çıkarma etkisini ölçekleyen ondalıklı sayı değeri. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
-|-----------|-----------|-------------|
-| `model`   | MODEL     | Bir modelin parametrelerini diğerinden çıkarıp çarpan değeri ile ölçeklendirdikten sonra elde edilen model. |
+|-----------|-------------|-------------|
+| `model`   | MODEL     | Bir modelin parametrelerinin diğer modelden çıkarılması ve çarpan ile ölçeklenmesi sonucu elde edilen model. |

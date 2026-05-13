@@ -21,3 +21,6 @@ The IdeogramV1 node generates images using the Ideogram V1 model through an API.
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | IMAGE | The generated image(s) from the Ideogram V1 model |
+
+---
+**Source fingerprint (SHA-256):** `7e453cd54b5db48588ed899b0754e0d06fdcfbaed248d13fb74b7049f0f25b8f`

@@ -1,24 +1,29 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTransitionVideoNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTransitionVideoNode/zh-TW.md)
 
-根據提示和輸出尺寸生成影片。此節點使用 PixVerse API 在兩個輸入圖像之間建立轉場影片，允許您指定影片品質、持續時間、動畫風格和生成參數。
+# PixVerse 轉場影片節點
 
-## 輸入參數
+使用 PixVerse API 在兩張輸入圖片之間生成轉場影片。您提供起始圖片和結束圖片，此節點會根據您的文字提示和所選設定，創建從一張圖片平滑過渡到另一張圖片的影片。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `第一幀` | IMAGE | 是 | - | 影片轉場的起始圖像 |
-| `最後一幀` | IMAGE | 是 | - | 影片轉場的結束圖像 |
-| `提示詞` | STRING | 是 | - | 影片生成的提示詞（預設：空字串） |
-| `品質` | COMBO | 是 | 來自 PixverseQuality 枚舉的可用品質選項<br>預設：res_540p | 影片品質設定 |
-| `持續秒數` | COMBO | 是 | 來自 PixverseDuration 枚舉的可用持續時間選項 | 影片持續時間（秒） |
-| `動作模式` | COMBO | 是 | 來自 PixverseMotionMode 枚舉的可用動畫模式選項 | 轉場的動畫風格 |
-| `種子值` | INT | 是 | 0 到 2147483647 | 影片生成的種子值（預設：0） |
-| `負向提示詞` | STRING | 否 | - | 圖像中不希望出現元素的文字描述（可選，預設：空字串） |
+| `first_frame` | IMAGE | 是 | - | 影片轉場的起始圖片 |
+| `last_frame` | IMAGE | 是 | - | 影片轉場的結束圖片 |
+| `prompt` | STRING | 是 | - | 影片生成的提示詞（預設值：空字串） |
+| `quality` | COMBO | 是 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` | 影片品質設定（預設值：`"540p"`） |
+| `duration_seconds` | COMBO | 是 | `5`<br>`8` | 影片長度（秒） |
+| `motion_mode` | COMBO | 是 | `"normal"`<br>`"fast"` | 轉場的動態風格（預設值：`"normal"`） |
+| `seed` | INT | 是 | 0 至 2147483647 | 影片生成的隨機種子（預設值：0） |
+| `negative_prompt` | STRING | 否 | - | 可選的文字描述，用於指定圖片中不希望出現的元素（預設值：空字串） |
 
-**注意：** 使用 1080p 品質時，動畫模式會自動設定為 normal，且持續時間限制為 5 秒。對於非 5 秒的持續時間，動畫模式也會自動設定為 normal。
+**關於參數限制的說明：** 使用 1080p 品質時，動態模式會自動設定為 `"normal"`，且影片長度限制為 5 秒。對於任何非 5 秒的影片長度，動態模式也會自動設定為 `"normal"`。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成的轉場影片 |
+
+---
+**Source fingerprint (SHA-256):** `0b7f1e11d513c543df144031452bd9cd80e73c596aee8ffe9701bf471bf5983c`

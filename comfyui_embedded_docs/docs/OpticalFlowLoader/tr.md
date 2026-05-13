@@ -2,7 +2,7 @@
 
 ## Genel Bakış
 
-`models/optical_flow/` klasöründen bir optik akış modeli yükler. Şu anda yalnızca torchvision'ın RAFT-large formatı desteklenmektedir; bu format VOIDWarpedNoise düğümü tarafından kullanılan modeldir. ComfyUI, optik akış ağırlıklarını otomatik olarak indirmez; kontrol noktası dosyasını manuel olarak `models/optical_flow/` dizinine yerleştirmeniz gerekir.
+`models/optical_flow/` klasöründen bir optik akış modeli yükler. Şu anda yalnızca VOIDWarpedNoise düğümü tarafından kullanılan torchvision'ın RAFT-large formatı desteklenmektedir. ComfyUI, optik akış ağırlıklarını otomatik olarak indirmez; kontrol noktası dosyasını manuel olarak `models/optical_flow/` dizinine yerleştirmeniz gerekir.
 
 ## Girdiler
 
@@ -15,3 +15,6 @@
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
 | `OPTICAL_FLOW` | MODEL | Yüklenen optik akış modeli, diğer düğümlerle kullanılmak üzere bir ModelPatcher ile sarılmıştır. |
+
+---
+**Source fingerprint (SHA-256):** `94bab0bb7e2b9d9b3f343337799eccc744f79275b72a6fad9681b408b4a0820b`

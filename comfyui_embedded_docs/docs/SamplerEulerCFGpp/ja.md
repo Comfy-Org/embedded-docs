@@ -1,15 +1,22 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerCFGpp/ja.md)
 
-SamplerEulerCFGppノードは、出力を生成するためのEuler CFG++サンプリング手法を提供します。このノードは、ユーザーの好みに基づいて選択可能な2つの異なる実装バージョンのEuler CFG++サンプラーを提供します。
+以下が翻訳結果です。
+
+---
+
+SamplerEulerCFGppノードは、出力を生成するためのEuler CFG++サンプリング手法を提供します。このノードは、ユーザーの好みに応じて選択可能な2つの異なる実装バージョンのEuler CFG++サンプラーを備えています。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `バージョン` | STRING | はい | `"regular"`<br>`"alternative"` | 使用するEuler CFG++サンプラーの実装バージョン |
+| `version` | STRING | はい | `"regular"`<br>`"alternative"` | 使用するEuler CFG++サンプラーの実装バージョン（デフォルト："regular"） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | 設定済みのEuler CFG++サンプラーインスタンスを返します |
+
+---
+**Source fingerprint (SHA-256):** `f01732fc39a76fca697aaddefc8cec58d54ba9761eb8d93da806ddd162d42513`

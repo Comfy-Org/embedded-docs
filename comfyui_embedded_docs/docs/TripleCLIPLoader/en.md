@@ -17,3 +17,6 @@ The TripleCLIPLoader node loads three different text encoder models simultaneous
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CLIP` | CLIP | A combined CLIP model containing all three loaded text encoders |
+
+---
+**Source fingerprint (SHA-256):** `7a9e61090d9d3b0a776d49006dddece08bc4b463b2acd0a9a0f808170ebde348`

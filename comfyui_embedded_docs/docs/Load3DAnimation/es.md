@@ -1,135 +1,165 @@
-El nodo Load3DAnimation es un nodo principal para cargar y procesar archivos de modelos 3D. Al cargar el nodo, obtiene automáticamente los recursos 3D disponibles en `ComfyUI/input/3d/`. También puedes subir archivos 3D compatibles para previsualizarlos usando la función de carga.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/es.md)
 
-> - La mayoría de las funciones de este nodo son iguales a las del nodo Load 3D, pero este nodo permite cargar modelos con animaciones y puedes previsualizar las animaciones correspondientes en el nodo.
-> - El contenido de esta documentación es el mismo que el del nodo Load3D, ya que, excepto por la previsualización y reproducción de animaciones, sus capacidades son idénticas.
+Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
-**Formatos soportados**
-Actualmente, este nodo soporta varios formatos de archivos 3D, incluyendo `.gltf`, `.glb`, `.obj`, `.fbx` y `.stl`.
+## Reglas de Traducción
+
+1. **Contenido que NO debe traducirse:**
+   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
+   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
+   - Valores en columna Range: números, "auto", nombres de opciones
+   - Código, rutas de archivos
+
+2. **Contenido que SÍ debe traducirse:**
+   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
+   - Todo el texto descriptivo y explicativo
+   - Descripciones de parámetros
+
+3. **Calidad de traducción:**
+   - Usar español estándar y neutral
+   - Mantener tono profesional pero accesible
+   - Asegurar precisión técnica
+   - Usar terminología técnica estándar en español
+
+4. **Formato:**
+   - Mantener todo el formato Markdown
+   - Preservar estructura de tablas
+   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
+
+Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
+
+El nodo Load3DAnimation es un nodo central para cargar y procesar archivos de modelos 3D. Al cargar el nodo, recupera automáticamente los recursos 3D disponibles de `ComfyUI/input/3d/`. También puedes cargar archivos 3D compatibles para previsualizarlos usando la función de carga.
+
+> - La mayoría de las funciones de este nodo son las mismas que las del nodo Load 3D, pero este nodo admite la carga de modelos con animaciones, y puedes previsualizar las animaciones correspondientes en el nodo.
+> - El contenido de esta documentación es el mismo que el del nodo Load3D, porque excepto por la previsualización y reproducción de animaciones, sus capacidades son idénticas.
+
+**Formatos compatibles**
+Actualmente, este nodo admite múltiples formatos de archivo 3D, incluyendo `.gltf`, `.glb`, `.obj`, `.fbx` y `.stl`.
 
 **Preferencias del nodo 3D**
-Algunas preferencias relacionadas con los nodos 3D se pueden configurar en el menú de configuración de ComfyUI. Consulta el siguiente documento para ver los ajustes correspondientes:
+Algunas preferencias relacionadas con los nodos 3D se pueden configurar en el menú de ajustes de ComfyUI. Consulta la siguiente documentación para las configuraciones correspondientes:
 
-[Menú de configuración](https://docs.comfy.org/interface/settings/3d)
+[Menú de Ajustes](https://docs.comfy.org/interface/settings/3d)
 
-Además de las salidas habituales del nodo, Load3D tiene muchas opciones relacionadas con la vista 3D en el menú del área de previsualización.
+Además de las salidas regulares del nodo, Load3D tiene muchas configuraciones relacionadas con la vista 3D en el menú del lienzo.
 
 ## Entradas
 
-| Nombre del parámetro | Tipo           | Descripción                                                        | Predeterminado | Rango         |
-|---------------------|----------------|--------------------------------------------------------------------|----------------|---------------|
-| model_file          | File Selection | Ruta del archivo del modelo 3D, soporta carga, por defecto lee archivos de `ComfyUI/input/3d/` | -              | Formatos soportados |
-| width               | INT            | Ancho de renderizado del lienzo                                    | 1024           | 1-4096        |
-| height              | INT            | Alto de renderizado del lienzo                                     | 1024           | 1-4096        |
+| Nombre del parámetro | Tipo     | Descripción                     | Valor por defecto | Rango        |
+|---------------|----------|---------------------------------|---------|--------------|
+| model_file    | Selección de archivo | Ruta del archivo de modelo 3D, admite carga, por defecto lee archivos de modelo de `ComfyUI/input/3d/` | - | Formatos compatibles |
+| width         | INT      | Ancho de renderizado del lienzo          | 1024    | 1-4096      |
+| height        | INT      | Alto de renderizado del lienzo         | 1024    | 1-4096      |
 
 ## Salidas
 
-| Nombre de salida    | Tipo de dato   | Descripción                                                        |
-|--------------------|----------------|--------------------------------------------------------------------|
-| image              | IMAGE          | Imagen renderizada en el lienzo                                    |
-| mask               | MASK           | Máscara que contiene la posición actual del modelo                 |
-| mesh_path          | STRING         | Ruta del archivo del modelo (dentro de la carpeta `ComfyUI/input`) |
-| normal             | IMAGE          | Mapa de normales                                                   |
-| lineart            | IMAGE          | Salida de imagen de dibujo lineal, el `edge_threshold` se puede ajustar en el menú de modelo del lienzo |
-| camera_info        | LOAD3D_CAMERA  | Información de la cámara                                           |
-| recording_video    | VIDEO          | Video grabado (solo si existe grabación)                           |
+| Nombre del parámetro   | Tipo de dato      | Descripción                        |
+|-----------------|----------------|------------------------------------|
+| image           | IMAGE          | Imagen renderizada del lienzo              |
+| mask            | MASK           | Máscara que contiene la posición actual del modelo |
+| mesh_path       | STRING         | Ruta del archivo del modelo                   |
+| normal          | IMAGE          | Mapa de normales                         |
+| lineart         | IMAGE          | Salida de imagen de arte lineal, el `edge_threshold` correspondiente se puede ajustar en el menú del modelo del lienzo |
+| camera_info     | LOAD3D_CAMERA  | Información de la cámara                 |
+| recording_video | VIDEO          | Video grabado (solo cuando existe una grabación) |
 
 Vista previa de todas las salidas:
-![Demostración de operaciones de vista](../Load3D/asset/load3d_outputs.webp)
+![Demostración de operación de vista](../Load3D/asset/load3d_outputs.webp)
 
-## Descripción del área de lienzo (Canvas)
+## Descripción del Área del Lienzo
 
-El área Canvas del nodo Load3D contiene numerosas operaciones de vista, incluyendo:
+El área del Lienzo del nodo Load3D contiene numerosas operaciones de vista, incluyendo:
 
-- Configuración de vista previa (cuadrícula, color de fondo, vista previa)
-- Control de cámara: controlar FOV, tipo de cámara
-- Intensidad de iluminación global: ajustar la intensidad de la luz
-- Grabación de video: grabar y exportar videos
-- Exportación de modelo: soporta formatos `GLB`, `OBJ`, `STL`
-- Etc.
+- Configuración de la vista previa (cuadrícula, color de fondo, vista previa)
+- Control de cámara: Controlar FOV, tipo de cámara
+- Intensidad de iluminación global: Ajustar la intensidad de la luz
+- Grabación de video: Grabar y exportar videos
+- Exportación de modelo: Admite formatos `GLB`, `OBJ`, `STL`
+- Y más
 
-![UI del nodo Load 3D](../Load3D/asset/load3d_ui.jpg)
+![Interfaz de usuario del nodo Load 3D](../Load3D/asset/load3d_ui.jpg)
 
-1. Incluye varios menús y menús ocultos del nodo Load 3D
-2. Menú para redimensionar la ventana de previsualización y grabar video del lienzo
-3. Eje de operaciones de vista 3D
-4. Miniatura de previsualización
-5. Configuración del tamaño de la previsualización, ajusta la visualización de la vista previa configurando dimensiones y luego redimensionando la ventana
+1. Contiene múltiples menús y menús ocultos del nodo Load 3D
+2. Menú para `redimensionar la ventana de vista previa` y `grabación de video del lienzo`
+3. Eje de operación de la vista 3D
+4. Miniatura de vista previa
+5. Configuración del tamaño de vista previa, escala la visualización de la vista previa estableciendo dimensiones y luego redimensionando la ventana
 
-### 1. Operaciones de vista
+### 1. Operaciones de Vista
 
 <video controls width="640" height="360">
   <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
-  Tu navegador no soporta la reproducción de video.
+  Tu navegador no admite la reproducción de video.
 </video>
 
 Operaciones de control de vista:
 
-- Clic izquierdo + arrastrar: rotar la vista
-- Clic derecho + arrastrar: mover la vista
-- Rueda del ratón o clic central: acercar/alejar
-- Eje de coordenadas: cambiar de vista
+- Clic izquierdo + arrastrar: Rotar la vista
+- Clic derecho + arrastrar: Desplazar la vista
+- Desplazamiento de la rueda central o clic central + arrastrar: Acercar/Alejar
+- Eje de coordenadas: Cambiar vistas
 
-### 2. Funciones del menú izquierdo
+### 2. Funciones del Menú Izquierdo
 
-![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![Menú](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
-En el área de previsualización, algunos menús relacionados con operaciones de vista están ocultos en el menú. Haz clic en el botón de menú para expandir los diferentes menús
+En el lienzo, algunas configuraciones están ocultas en el menú. Haz clic en el botón del menú para expandir diferentes menús
 
-- 1. Escena (Scene): incluye cuadrícula de la ventana de previsualización, color de fondo, configuración de miniatura
-- 2. Modelo (Model): modo de renderizado del modelo, materiales de textura, configuración de dirección superior
-- 3. Cámara (Camera): cambiar entre vista ortográfica y perspectiva, y ajustar el ángulo de perspectiva
-- 4. Luz (Light): intensidad de iluminación global de la escena
-- 5. Exportar (Export): exportar el modelo a otros formatos (GLB, OBJ, STL)
+- 1. Escena: Contiene cuadrícula de la ventana de vista previa, color de fondo, configuraciones de vista previa
+- 2. Modelo: Modo de renderizado del modelo, materiales de textura, configuración de dirección hacia arriba
+- 3. Cámara: Cambiar entre vistas ortográfica y perspectiva, y establecer el tamaño del ángulo de perspectiva
+- 4. Luz: Intensidad de iluminación global de la escena
+- 5. Exportar: Exportar modelo a otros formatos (GLB, OBJ, STL)
 
-#### Escena (Scene)
+#### Escena
 
-![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![menú de escena](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
 El menú Escena proporciona algunas funciones básicas de configuración de la escena
 
-1. Mostrar/ocultar cuadrícula
+1. Mostrar/Ocultar cuadrícula
 2. Establecer color de fondo
-3. Subir imagen de fondo
-4. Ocultar miniatura de previsualización
+3. Haz clic para cargar una imagen de fondo
+4. Ocultar la vista previa
 
-#### Modelo (Model)
+#### Modelo
 
-![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![Menú_Modelo](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
 El menú Modelo proporciona algunas funciones relacionadas con el modelo
 
-1. **Dirección superior (Up direction)**: determina qué eje es la dirección superior del modelo
-2. **Modo de material (Material mode)**: cambiar modos de renderizado del modelo - Original, Normal, Malla, Dibujo lineal
+1. **Dirección hacia arriba**: Determinar qué eje es la dirección hacia arriba para el modelo
+2. **Modo de material**: Cambiar los modos de renderizado del modelo - Original, Normal, Alámbrico, Arte lineal
 
-#### Cámara (Camera)
+#### Cámara
 
-![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![menú_cámara](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
-Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el ángulo de perspectiva
+Este menú proporciona el cambio entre vistas ortográfica y perspectiva, y la configuración del tamaño del ángulo de perspectiva
 
-1. **Cámara (Camera)**: cambiar rápidamente entre vistas ortográfica y perspectiva
-2. **FOV**: ajustar el ángulo FOV
+1. **Cámara**: Cambiar rápidamente entre vista ortográfica y perspectiva
+2. **FOV**: Ajustar el ángulo FOV
 
-#### Luz (Light)
+#### Luz
 
-![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![menú_luz](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
-A través de este menú puedes ajustar rápidamente la intensidad de la iluminación global de la escena
+A través de este menú, puedes ajustar rápidamente la intensidad de iluminación global de la escena
 
-#### Exportar (Export)
+#### Exportar
 
-![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![menú_exportar](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
-Este menú permite convertir y exportar rápidamente formatos de modelo
+Este menú proporciona la capacidad de convertir y exportar rápidamente formatos de modelo
 
-### 3. Funciones del menú derecho
+### 3. Funciones del Menú Derecho
 
 <video controls width="640" height="360">
   <source src="../Load3D/asset/recording.mp4" type="video/mp4">
-  Tu navegador no soporta la reproducción de video.
+  Tu navegador no admite la reproducción de video.
 </video>
 
 El menú derecho tiene dos funciones principales:
 
-1. **Restablecer proporción de vista**: al hacer clic en el botón, la vista ajustará la proporción del área de renderizado del lienzo según el ancho y alto establecidos
-2. **Grabación de video**: permite grabar las operaciones actuales de vista 3D como video, permite importar y puede ser salida como `recording_video` a nodos posteriores
+1. **Restablecer relación de aspecto de la vista**: Después de hacer clic en el botón, la vista ajustará la relación del área de renderizado del lienzo según el ancho y alto establecidos
+2. **Grabación de video**: Te permite grabar las operaciones actuales de la vista 3D como video, permite la importación, y se puede emitir como `recording_video` a nodos posteriores

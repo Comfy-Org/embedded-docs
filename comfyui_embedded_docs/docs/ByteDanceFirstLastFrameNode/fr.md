@@ -1,24 +1,28 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/fr.md)
 
-Ce nœud génère une vidéo à l'aide d'une instruction textuelle ainsi que des images de première et dernière frame. Il utilise votre description et les deux images clés pour créer une séquence vidéo complète qui effectue une transition entre elles. Le nœud offre diverses options pour contrôler la résolution, le format, la durée et autres paramètres de génération de la vidéo.
+Ce nœud génère une vidéo à partir d'une invite textuelle ainsi que d'images de première et dernière images. Il prend votre description et les deux images clés pour créer une séquence vidéo complète qui effectue une transition entre elles. Le nœud offre diverses options pour contrôler la résolution, le rapport hauteur/largeur, la durée et d'autres paramètres de génération de la vidéo.
 
 ## Entrées
 
-| Paramètre | Type de données | Type d'entrée | Défaut | Plage | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | COMBO | combo | seedance_1_lite | seedance_1_lite | Nom du modèle |
-| `prompt` | STRING | string | - | - | L'instruction textuelle utilisée pour générer la vidéo. |
-| `first_frame` | IMAGE | image | - | - | Première frame à utiliser pour la vidéo. |
-| `last_frame` | IMAGE | image | - | - | Dernière frame à utiliser pour la vidéo. |
-| `resolution` | COMBO | combo | - | 480p, 720p, 1080p | La résolution de la vidéo de sortie. |
-| `aspect_ratio` | COMBO | combo | - | adaptive, 16:9, 4:3, 1:1, 3:4, 9:16, 21:9 | Le format de la vidéo de sortie. |
-| `duration` | INT | slider | 5 | 3-12 | La durée de la vidéo de sortie en secondes. |
-| `seed` | INT | number | 0 | 0-2147483647 | Graine à utiliser pour la génération. (optionnel) |
-| `camera_fixed` | BOOLEAN | boolean | False | - | Spécifie s'il faut fixer la caméra. La plateforme ajoute une instruction pour fixer la caméra à votre prompt, mais ne garantit pas l'effet réel. (optionnel) |
-| `watermark` | BOOLEAN | boolean | True | - | Indique s'il faut ajouter un filigrane "Généré par IA" à la vidéo. (optionnel) |
+| Paramètre | Type de données | Requis | Plage | Description |
+|-----------|-----------------|--------|-------|-------------|
+| `model` | COMBO | Oui | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"` | Le modèle à utiliser pour la génération vidéo (par défaut : `"seedance-1-0-lite-i2v-250428"`). |
+| `prompt` | STRING | Oui | - | L'invite textuelle utilisée pour générer la vidéo. |
+| `first_frame` | IMAGE | Oui | - | Première image à utiliser pour la vidéo. Doit être comprise entre 300x300 et 6000x6000 pixels, avec un rapport hauteur/largeur compris entre 0,4 et 2,5. |
+| `last_frame` | IMAGE | Oui | - | Dernière image à utiliser pour la vidéo. Doit être comprise entre 300x300 et 6000x6000 pixels, avec un rapport hauteur/largeur compris entre 0,4 et 2,5. |
+| `resolution` | COMBO | Oui | `"480p"`<br>`"720p"`<br>`"1080p"` | La résolution de la vidéo de sortie. |
+| `aspect_ratio` | COMBO | Oui | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Le rapport hauteur/largeur de la vidéo de sortie (par défaut : `"adaptive"`). |
+| `duration` | INT | Oui | 3 - 12 | La durée de la vidéo de sortie en secondes (par défaut : 5). Remarque : Pour le modèle `seedance-1-5-pro-251215`, la durée minimale prise en charge est de 4 secondes. |
+| `seed` | INT | Non | 0 - 2147483647 | La graine à utiliser pour la génération (par défaut : 0). |
+| `camera_fixed` | BOOLEAN | Non | - | Spécifie s'il faut fixer la caméra. La plateforme ajoute une instruction pour fixer la caméra à votre invite, mais ne garantit pas l'effet réel (par défaut : False). |
+| `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane "Généré par IA" à la vidéo (par défaut : False). |
+| `generate_audio` | BOOLEAN | Non | - | Ce paramètre est ignoré pour tous les modèles sauf `seedance-1-5-pro-251215` (par défaut : False). |
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
+| Nom de la sortie | Type de données | Description |
+|------------------|-----------------|-------------|
 | `output` | VIDEO | Le fichier vidéo généré |
+
+---
+**Source fingerprint (SHA-256):** `2da7b8ad2bc818a21988c028155ba2b466452a1655ac506fcef01c143dda7450`

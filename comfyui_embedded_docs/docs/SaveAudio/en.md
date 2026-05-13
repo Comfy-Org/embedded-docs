@@ -16,3 +16,6 @@ The SaveAudio node saves audio data to a file in FLAC format. It takes audio inp
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | *None* | - | This node does not return any output data but saves the audio file to the output directory |
+
+---
+**Source fingerprint (SHA-256):** `16242dfc45d0f2808a5615e9c1bfe4de4d19e2f5f6b28370f631439021dc72e5`

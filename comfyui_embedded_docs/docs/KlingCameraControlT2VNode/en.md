@@ -19,3 +19,6 @@ Kling Text to Video Camera Control Node transforms text into cinematic videos wi
 | `output` | VIDEO | The generated video with camera control effects |
 | `video_id` | STRING | The unique identifier for the generated video |
 | `duration` | STRING | The duration of the generated video |
+
+---
+**Source fingerprint (SHA-256):** `4ebdd6af31f9e5c0816c4bcba886179b3f7d2b5030ff4fa3ddad6df25c528af7`

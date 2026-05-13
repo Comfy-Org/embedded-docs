@@ -4,8 +4,8 @@ Gere música a partir de vídeo usando o modelo de IA da Sonilo. Este nó analis
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
 | `video` | VIDEO | Sim | - | Vídeo de entrada para gerar música. Duração máxima: 6 minutos. |
 | `prompt` | STRING | Não | - | Texto opcional para orientar a geração musical. Deixe vazio para melhor qualidade — o modelo analisará completamente o conteúdo do vídeo. (padrão: string vazia) |
 | `seed` | INT | Não | 0 a 18446744073709551615 | Semente para reprodutibilidade. Atualmente ignorada pelo serviço Sonilo, mas mantida para consistência do grafo. (padrão: 0) |
@@ -15,3 +15,6 @@ Gere música a partir de vídeo usando o modelo de IA da Sonilo. Este nó analis
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `audio` | AUDIO | A música gerada como um arquivo de áudio. |
+
+---
+**Source fingerprint (SHA-256):** `542fff1d8db8e48156bf9d1ff4690c91a7d71676332eef4708a6d36686abb31e`

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Edit a video using text instructions or reference images with the HappyHorse model. The output duration matches the input video (3-15 seconds), and inputs longer than 15 seconds are automatically truncated.
+Edit a video using text instructions or reference images with the HappyHorse model. The output duration is 3-15 seconds and matches the input video; inputs longer than 15 seconds are truncated.
 
 ## Inputs
 
@@ -30,3 +30,6 @@ The `model` parameter is a dictionary with the following fields:
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The edited video output. |
+
+---
+**Source fingerprint (SHA-256):** `af6747efbea1c65e4909d35dad009cbc2ffaad787d0f2031581c227deb9bf53c`

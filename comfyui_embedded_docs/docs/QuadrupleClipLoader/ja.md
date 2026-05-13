@@ -1,7 +1,11 @@
-四重CLIPローダーQuadrupleCLIPLoaderはComfyUIのコアノードの一つで、最初にHiDream I1バージョンのモデルサポートのために追加されました。このノードが欠けている場合は、ComfyUIを最新バージョンに更新してノードのサポートを確認してください。
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/ja.md)
 
-このノードは4つのCLIPモデルを必要とし、それぞれ`clip_name1`、`clip_name2`、`clip_name3`、`clip_name4`という4つのパラメータに対応し、後続のノードで使用するためのCLIPモデル出力を提供します。
+以下は、ご指定の翻訳ルールに従った日本語訳です。
 
-このノードは`ComfyUI/models/text_encoders`フォルダーにあるモデルを検出し、
-また、extra_model_paths.yamlファイルで設定された追加パスのモデルも読み取ります。
-モデルを追加した後は、**ComfyUIインターフェースを再読み込み**する必要がある場合があります。
+---
+
+Quadruple CLIP Loader（QuadrupleCLIPLoader）は、ComfyUI のコアノードの1つであり、HiDream I1 バージョンモデルをサポートするために初めて追加されました。このノードが見つからない場合は、ComfyUI を最新バージョンに更新して、ノードがサポートされていることを確認してください。
+
+このノードは4つのCLIPモデルを必要とし、パラメータ `clip_name1`、`clip_name2`、`clip_name3`、`clip_name4` に対応します。また、後続のノードにCLIPモデルの出力を提供します。
+
+このノードは、`ComfyUI/models/text_encoders` フォルダ内にあるモデルを検出します。さらに、extra_model_paths.yaml ファイルで設定された追加パスからもモデルを読み取ります。モデルを追加した後は、**ComfyUI インターフェースをリロード**して、対応するフォルダ内のモデルファイルを読み取らせる必要がある場合があります。

@@ -1,31 +1,38 @@
-`CLIP 저장` 노드는 CLIP 텍스트 인코더 모델을 SafeTensors 형식으로 저장하도록 설계되었습니다. 이 노드는 고급 모델 병합 워크플로우의 일부이며, 일반적으로 `CLIPMergeSimple` 및 `CLIPMergeAdd`와 같은 노드와 함께 사용됩니다. 저장된 파일은 보안 및 호환성을 보장하기 위해 SafeTensors 형식을 사용합니다.
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/ko.md)
+
+`CLIPSave` 노드는 CLIP 텍스트 인코더 모델을 SafeTensors 형식으로 디스크에 저장합니다. 고급 모델 병합 워크플로우를 위해 설계되었으며, 모델의 내부 구조에 따라 CLIP 모델을 구성 요소(예: CLIP-L, CLIP-G 또는 T5XXL)로 자동 분리하여 각 구성 요소를 별도의 파일로 저장합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 유형 | 필수 | 기본값 | 설명 |
-|----------|------------|-------|--------|------|
-| clip | CLIP | 예 | - | 저장할 CLIP 모델 |
-| 파일명 접두사 | STRING | 예 | "clip/ComfyUI" | 저장할 파일의 접두사 경로 |
-| prompt | PROMPT | 숨김 | - | 워크플로우 프롬프트 정보 (메타데이터용) |
-| extra_pnginfo | EXTRA_PNGINFO | 숨김 | - | 추가 PNG 정보 (메타데이터용) |
+| 매개변수 | 데이터 타입 | 입력 타입 | 기본값 | 범위 | 설명 |
+|-----------|-----------|------------|---------|-------|-------------|
+| `clip` | CLIP | 필수 | - | - | 저장할 CLIP 모델입니다. |
+| `filename_prefix` | STRING | 필수 | `clip/ComfyUI` | - | 저장할 파일의 접두사 경로 및 파일 이름입니다. 노드는 구성 요소 접미사(예: `_clip_l`, `_clip_g`)와 카운터를 추가하여 고유한 파일 이름을 생성합니다. |
+| `prompt` | PROMPT | 숨김 | - | - | 워크플로우 프롬프트 정보로, 출력 파일에 메타데이터로 저장됩니다. |
+| `extra_pnginfo` | EXTRA_PNGINFO | 숨김 | - | - | 추가 메타데이터로, 출력 파일에 키-값 쌍으로 저장됩니다. |
 
 ## 출력
 
-이 노드는 정의된 출력 유형이 없습니다. 처리된 파일은 `ComfyUI/output/` 폴더에 저장됩니다.
+이 노드는 출력 연결이 없습니다. 처리된 파일을 `ComfyUI/output/` 디렉토리에 직접 저장합니다.
 
-### 다중 파일 저장 전략
+### 저장된 파일 세부 정보
 
-이 노드는 CLIP 모델 유형에 따라 다른 구성 요소를 저장합니다:
+이 노드는 CLIP 모델의 상태 사전을 분석하고 감지된 각 구성 요소에 대해 별도의 SafeTensors 파일을 저장합니다. 구성 요소는 매개변수 키의 접두사로 식별됩니다. 다음 접두사가 확인됩니다:
 
-| 접두사 유형 | 파일 접미사 | 설명 |
-|------------|------------|------|
-| `clip_l.` | `_clip_l` | CLIP-L 텍스트 인코더 |
-| `clip_g.` | `_clip_g` | CLIP-G 텍스트 인코더 |
-| 접두사 없음 | 접미사 없음 | 기타 CLIP 구성 요소 |
+- `clip_l.` (CLIP-L 텍스트 인코더)
+- `clip_g.` (CLIP-G 텍스트 인코더)
+- `clip_h.` (CLIP-H 텍스트 인코더)
+- `t5xxl.` (T5-XXL 텍스트 인코더)
+- `pile_t5xl.` (Pile-T5-XL 텍스트 인코더)
+- `mt5xl.` (mT5-XL 텍스트 인코더)
+- `umt5xxl.` (UMT5-XXL 텍스트 인코더)
+- `t5base.` (T5-Base 텍스트 인코더)
+- `gemma2_2b.` (Gemma 2 2B 텍스트 인코더)
+- `llama.` (LLaMA 텍스트 인코더)
+- `hydit_clip.` (Hydit CLIP 텍스트 인코더)
+- 빈 접두사 (기타 CLIP 구성 요소)
 
-## 사용 참고사항
+감지된 각 구성 요소에 대해 노드는 `{filename_prefix}_{counter:05}_.safetensors` 형식의 파일을 생성하며, 여기서 구성 요소 접두사가 파일 이름 접두사에 추가됩니다(예: `clip/ComfyUI_clip_l_00001_.safetensors`). 저장 중에 `transformer.` 접두사는 매개변수 키에서 제거됩니다.
 
-1. **파일 위치**: 모든 파일은 `ComfyUI/output/` 디렉토리에 저장됩니다
-2. **파일 형식**: 모델은 보안을 위해 SafeTensors 형식으로 저장됩니다
-3. **메타데이터**: 워크플로우 정보 및 사용 가능한 경우 PNG 메타데이터가 포함됩니다
-4. **명명 규칙**: 모델 유형에 따라 지정된 접두사와 적절한 접미사를 사용합니다
+---
+**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

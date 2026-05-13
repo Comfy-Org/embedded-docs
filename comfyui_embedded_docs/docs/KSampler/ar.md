@@ -1,33 +1,33 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/ar.md)
 
-يعمل مُعين العينات KSampler بالطريقة التالية: يقوم بتعديل معلومات الصورة الكامنة الأصلية المُقدمة بناءً على نموذج محدد وكل من الشروط الإيجابية والسلبية.
-أولاً، يضيف ضوضاء إلى بيانات الصورة الأصلية وفقًا لـ **البذرة** المحددة و**قوة إزالة الضوضاء**، ثم يُدخل **النموذج** المحدد مسبقًا مدمجًا مع شروط التوجيه **الإيجابية** و**السلبية** لتوليد الصورة.
+يعمل مُحوّل العيّنات (KSampler) على النحو التالي: فهو يُعدّل معلومات الصورة الكامنة الأصلية المُقدّمة بناءً على نموذج مُحدّد وشروط إيجابية وسلبية.
+أولاً، يُضيف تشويشاً إلى بيانات الصورة الأصلية وفقاً لقيمتَي **البذرة (seed)** و**قوة إزالة التشويش (denoise strength)** المُحدّدتَين، ثم يُدخل **النموذج (Model)** المُعدّ مُسبقاً مع شروط التوجيه **الإيجابية (positive)** و**السلبية (negative)** لتوليد الصورة.
 
 ## المدخلات
 
-| اسم المعامل          | نوع البيانات | مطلوب | الافتراضي | النطاق/الخيارات           | الوصف                                                                               |
-| --------------------- | ------------- | ------ | --------- | ------------------------- | ----------------------------------------------------------------------------------- |
-| Model                 | checkpoint    | نعم    | None      | -                         | النموذج المدخل المستخدم في عملية إزالة الضوضاء                                      |
-| seed                  | Int           | نعم    | 0         | 0 ~ 18446744073709551615 | يُستخدم لتوليد ضوضاء عشوائية، استخدام نفس "البذرة" ينتج صورًا متطابقة              |
-| steps                 | Int           | نعم    | 20        | 1 ~ 10000                 | عدد الخطوات المستخدمة في عملية إزالة الضوضاء، المزيد من الخطوات يعني نتائج أكثر دقة |
-| cfg                   | float         | نعم    | 8.0       | 0.0 ~ 100.0               | يتحكم في مدى تطابق الصورة المُنشأة مع شروط الإدخال، يُوصى بـ 6-8                     |
-| sampler_name          | UI Option     | نعم    | None      | خوارزميات متعددة          | اختر مُعين العينات لإزالة الضوضاء، يؤثر على سرعة التوليد والأسلوب                   |
-| scheduler             | UI Option     | نعم    | None      | مُجدولات متعددة           | يتحكم في كيفية إزالة الضوضاء، يؤثر على عملية التوليد                                 |
-| Positive              | conditioning  | نعم    | None      | -                         | الشروط الإيجابية التي توجه عملية إزالة الضوضاء، ما تريد ظهوره في الصورة            |
-| Negative              | conditioning  | نعم    | None      | -                         | الشروط السلبية التي توجه عملية إزالة الضوضاء، ما لا تريد ظهوره في الصورة           |
-| Latent_Image          | Latent        | نعم    | None      | -                         | الصورة الكامنة المستخدمة في إزالة الضوضاء                                           |
-| denoise               | float         | لا     | 1.0       | 0.0 ~ 1.0                 | يحدد نسبة إزالة الضوضاء، القيم الأقل تعني ارتباطًا أقل بالصورة المدخلة              |
-| control_after_generate| UI Option     | لا     | None      | عشوائي/زيادة/نقصان/حفظ   | يوفر القدرة على تغيير البذرة بعد كل أمر                                             |
+| اسم المُعامل | نوع البيانات | إلزامي | القيمة الافتراضية | النطاق/الخيارات | الوصف |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `Model` | checkpoint | نعم | لا يوجد | - | النموذج المُدخل المُستخدم في عملية إزالة التشويش |
+| `seed` | Int | نعم | 0 | 0 ~ 18446744073709551615 | يُستخدم لتوليد تشويش عشوائي؛ استخدام نفس "البذرة" يُنتج صوراً متطابقة |
+| `steps` | Int | نعم | 20 | 1 ~ 10000 | عدد الخطوات المستخدمة في عملية إزالة التشويش؛ كلما زادت الخطوات، كانت النتائج أكثر دقة |
+| `cfg` | float | نعم | 8.0 | 0.0 ~ 100.0 | يتحكم في مدى تطابق الصورة المُولّدة مع شروط الإدخال؛ يُوصى باستخدام القيم بين 6-8 |
+| `sampler_name` | UI Option | نعم | لا يوجد | خوارزميات متعددة | اختيار أداة أخذ العيّنات لإزالة التشويش، مما يؤثر على سرعة التوليد وأسلوبه |
+| `scheduler` | UI Option | نعم | لا يوجد | جداول متعددة | يتحكم في كيفية إزالة التشويش، مما يؤثر على عملية التوليد |
+| `Positive` | conditioning | نعم | لا يوجد | - | الشروط الإيجابية التي تُوجّه عملية إزالة التشويش، أي ما تريد ظهوره في الصورة |
+| `Negative` | conditioning | نعم | لا يوجد | - | الشروط السلبية التي تُوجّه عملية إزالة التشويش، أي ما لا تريد ظهوره في الصورة |
+| `Latent_Image` | Latent | نعم | لا يوجد | - | الصورة الكامنة المستخدمة في عملية إزالة التشويش |
+| `denoise` | float | لا | 1.0 | 0.0 ~ 1.0 | يُحدد نسبة إزالة التشويش؛ القيم الأقل تعني ارتباطاً أضعف بالصورة المُدخلة |
+| `control_after_generate` | UI Option | لا | لا يوجد | Random/Inc/Dec/Keep | يُتيح إمكانية تغيير البذرة بعد كل طلب توليد |
 
 ## المخرجات
 
-| المعامل     | الوظيفة                                     |
-| ----------- | ------------------------------------------- |
-| Latent      | يُخرج الصورة الكامنة بعد إزالة الضوضاء بواسطة المُعين |
+| المُعامل | الوظيفة |
+| :--- | :--- |
+| `Latent` | يُخرج البيانات الكامنة بعد إزالة التشويش بواسطة أداة أخذ العيّنات |
 
 ## الكود المصدري
 
-[تم التحديث في 15 مايو 2025]
+[آخر تحديث: 15 مايو 2025]
 
 ```Python
 
@@ -58,25 +58,25 @@ class KSampler:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "model": ("MODEL", {"tooltip": "The model used for denoising the input latent."}),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "The random seed used for creating the noise."}),
-                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "The number of steps used in the denoising process."}),
-                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "The Classifier-Free Guidance scale balances creativity and adherence to the prompt. Higher values result in images more closely matching the prompt however too high values will negatively impact quality."}),
-                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "The algorithm used when sampling, this can affect the quality, speed, and style of the generated output."}),
-                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "The scheduler controls how noise is gradually removed to form the image."}),
-                "positive": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to include in the image."}),
-                "negative": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to exclude from the image."}),
-                "latent_image": ("LATENT", {"tooltip": "The latent image to denoise."}),
-                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "The amount of denoising applied, lower values will maintain the structure of the initial image allowing for image to image sampling."}),
+                "model": ("MODEL", {"tooltip": "النموذج المستخدم لإزالة التشويش من البيانات الكامنة المُدخلة."}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "البذرة العشوائية المستخدمة لإنشاء التشويش."}),
+                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "عدد الخطوات المستخدمة في عملية إزالة التشويش."}),
+                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "مقياس التوجيه الخالي من المُصنّف (CFG) يُوازن بين الإبداع والالتزام بالنص التوجيهي. القيم الأعلى تُنتج صوراً أكثر تطابقاً مع النص التوجيهي، لكن القيم المرتفعة جداً ستؤثر سلباً على الجودة."}),
+                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "الخوارزمية المستخدمة عند أخذ العيّنات، يمكن أن تؤثر على جودة وسرعة وأسلوب المخرجات المُولّدة."}),
+                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "الجدول الزمني (scheduler) يتحكم في كيفية إزالة التشويش تدريجياً لتكوين الصورة."}),
+                "positive": ("CONDITIONING", {"tooltip": "التوجيه (conditioning) الذي يصف السمات التي تريد تضمينها في الصورة."}),
+                "negative": ("CONDITIONING", {"tooltip": "التوجيه (conditioning) الذي يصف السمات التي تريد استبعادها من الصورة."}),
+                "latent_image": ("LATENT", {"tooltip": "الصورة الكامنة المراد إزالة التشويش منها."}),
+                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "مقدار إزالة التشويش المُطبّق؛ القيم الأقل ستحافظ على بنية الصورة الأولية مما يسمح بأخذ عيّنات من صورة إلى صورة (image to image)."}),
             }
         }
 
     RETURN_TYPES = ("LATENT",)
-    OUTPUT_TOOLTIPS = ("The denoised latent.",)
+    OUTPUT_TOOLTIPS = ("البيانات الكامنة بعد إزالة التشويش.",)
     FUNCTION = "sample"
 
     CATEGORY = "sampling"
-    DESCRIPTION = "Uses the provided model, positive and negative conditioning to denoise the latent image."
+    DESCRIPTION = "يستخدم النموذج المُقدّم والتوجيه الإيجابي والسلبي لإزالة التشويش من الصورة الكامنة."
 
     def sample(self, model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=1.0):
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)

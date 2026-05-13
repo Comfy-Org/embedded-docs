@@ -16,3 +16,6 @@ El nodo Remove Background utiliza un modelo de eliminación de fondo para genera
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
 | `mask` | MASK | Máscara de primer plano generada que resalta el sujeto principal de la imagen de entrada |
+
+---
+**Source fingerprint (SHA-256):** `cd19134e6afed4d31096b613dd534eacad39afe7de2c8b74feab512bd5f09f66`

@@ -1,15 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/zh-TW.md)
 
-PhotoMakerLoader 節點會從可用的模型檔案中載入 PhotoMaker 模型。它會讀取指定的模型檔案，並準備好用於基於身份識別的影像生成任務的 PhotoMaker ID 編碼器。此節點標記為實驗性，僅供測試用途。
+## 概述
 
-## 輸入參數
+PhotoMakerLoader 節點可從可用的模型檔案中載入 PhotoMaker 模型。它會讀取指定的模型檔案，並準備好 PhotoMaker ID 編碼器，以供基於身份識別的影像生成任務使用。此節點標記為實驗性功能，僅供測試用途。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `photomaker_model_name` | STRING | 是 | 提供多個選項 | 要載入的 PhotoMaker 模型檔案名稱。可用選項由 photomaker 資料夾中的模型檔案決定。 |
+| `photomaker_model_name` | STRING | 是 | 多個可用選項 | 要載入的 PhotoMaker 模型檔案名稱。可用選項取決於 `photomaker` 資料夾中存在的模型檔案。 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `photomaker_model` | PHOTOMAKER | 已載入的 PhotoMaker 模型，包含 ID 編碼器，準備用於身份編碼操作。 |
+| `photomaker_model` | PHOTOMAKER | 已載入的 PhotoMaker 模型，包含 ID 編碼器，可用於身份編碼操作。 |
+
+---
+**Source fingerprint (SHA-256):** `4c55abacf8462d8de3d1f2a728d4b09ab1d1c8c6476d25cc4af5089508a721da`

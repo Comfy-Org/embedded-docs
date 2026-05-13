@@ -7,10 +7,13 @@ The FluxKontextMultiReferenceLatentMethod node modifies conditioning data by set
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `conditioning` | CONDITIONING | Yes | - | The conditioning data to be modified with the reference latents method |
-| `reference_latents_method` | STRING | Yes | `"offset"`<br>`"index"`<br>`"uxo/uno"` | The method to use for reference latents processing. If "uxo" or "uso" is selected, it will be converted to "uxo" |
+| `reference_latents_method` | STRING | Yes | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | The method to use for reference latents processing. If "uxo" or "uso" is selected, it will be converted to "uxo". This parameter is marked as advanced. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `conditioning` | CONDITIONING | The modified conditioning data with the reference latents method applied |
+
+---
+**Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

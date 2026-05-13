@@ -19,3 +19,6 @@ The ScaleROPE node allows you to modify the Rotary Position Embedding (ROPE) of 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The model with the new ROPE scaling and shifting parameters applied. |
+
+---
+**Source fingerprint (SHA-256):** `c5ca193a46faa9477a2e6c99b905205685e8add8faa2f2d161c7c384b3dc2441`

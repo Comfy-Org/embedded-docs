@@ -4,18 +4,21 @@ El nodo ElevenLabs Speech to Speech transforma un archivo de audio de entrada de
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `voice` | CUSTOM | Sí | - | Voz objetivo para la transformación. Conectar desde el Selector de Voz o Clonación Instantánea de Voz. |
-| `audio` | AUDIO | Sí | - | Audio fuente a transformar. |
-| `stability` | FLOAT | No | 0.0 - 1.0 | Estabilidad de la voz. Valores más bajos dan un rango emocional más amplio, valores más altos producen un habla más consistente pero potencialmente monótona (por defecto: 0.5). |
-| `model` | DYNAMICCOMBO | No | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` | Modelo a utilizar para la transformación de habla a habla. Cada opción proporciona un conjunto específico de ajustes de voz (similarity_boost, style, use_speaker_boost, speed). |
-| `output_format` | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio (por defecto: "mp3_44100_192"). |
-| `seed` | INT | No | 0 - 4294967295 | Semilla para reproducibilidad (por defecto: 0). |
-| `remove_background_noise` | BOOLEAN | No | - | Eliminar ruido de fondo del audio de entrada usando aislamiento de audio (por defecto: False). |
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `voice` | CUSTOM | Sí | - | Voz de destino para la transformación. Conéctelo desde el Selector de Voz o Clonación Instantánea de Voz. |
+| `audio` | AUDIO | Sí | - | Audio de origen a transformar. |
+| `stability` | FLOAT | No | 0.0 - 1.0 | Estabilidad de la voz. Valores más bajos brindan un rango emocional más amplio; valores más altos producen un habla más consistente pero potencialmente monótona (predeterminado: 0.5). |
+| `model` | DYNAMICCOMBO | No | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` | Modelo a utilizar para la transformación de voz a voz. Cada opción proporciona un conjunto específico de ajustes de voz (similarity_boost, style, use_speaker_boost, speed). |
+| `output_format` | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio (predeterminado: "mp3_44100_192"). |
+| `seed` | INT | No | 0 - 4294967295 | Semilla para reproducibilidad (predeterminado: 0). |
+| `remove_background_noise` | BOOLEAN | No | - | Eliminar el ruido de fondo del audio de entrada mediante aislamiento de audio (predeterminado: Falso). |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+| Nombre de salida | Tipo de dato | Descripción |
+|------------------|--------------|-------------|
 | `audio` | AUDIO | El archivo de audio transformado en el formato de salida especificado. |
+
+---
+**Source fingerprint (SHA-256):** `118fe6e85b146d0649b104d814abb518d37f69ade2e53becac365a0ec90146fd`

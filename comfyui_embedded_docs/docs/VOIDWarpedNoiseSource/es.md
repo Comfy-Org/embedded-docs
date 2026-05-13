@@ -28,18 +28,21 @@ Eres un experto en traducción técnica especializado en documentación de nodos
 
 Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
 
-## Resumen
+## Descripción general
 
 Este nodo convierte un LATENT (como la salida del nodo VOIDWarpedNoise) en una fuente de NOISE. Esto permite utilizar el ruido deformado con el nodo SamplerCustomAdvanced para una generación de imágenes más controlada.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `warped_noise` | LATENT | Sí | N/A | Latent de ruido deformado proveniente de VOIDWarpedNoise |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
+| Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
 | `NOISE` | NOISE | Una fuente de ruido que puede utilizarse con SamplerCustomAdvanced |
+
+---
+**Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`

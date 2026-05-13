@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageBatch/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageBatch/tr.md)
 
-`ImageBatch` düğümü, iki görüntüyü tek bir toplu işlemde birleştirmek için tasarlanmıştır. Görüntülerin boyutları eşleşmiyorsa, bunları birleştirmeden önce ikinci görüntüyü otomatik olarak ilkinin boyutlarına yeniden ölçeklendirir.
+`ImageBatch` düğümü, iki görüntüyü tek bir toplu işte birleştirmek için tasarlanmıştır. Görüntülerin boyutları eşleşmezse, birleştirmeden önce ikinci görüntüyü otomatik olarak birinci görüntünün boyutlarına uyacak şekilde yeniden ölçeklendirir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `görüntü1`  | `IMAGE`     | Toplu işleme birleştirilecek ilk görüntü. Gerekirse ikinci görüntünün ayarlanacağı boyutlar için referans görevi görür. |
-| `görüntü2`  | `IMAGE`     | Toplu işleme birleştirilecek ikinci görüntü. Farklılık gösteriyorsa, ilk görüntünün boyutlarına uyacak şekilde otomatik olarak yeniden ölçeklendirilir. |
+| `image1`  | `IMAGE`     | Toplu işe eklenecek ilk görüntü. Gerekirse ikinci görüntünün ayarlanacağı boyutlar için referans görevi görür. |
+| `image2`  | `IMAGE`     | Toplu işe eklenecek ikinci görüntü. Birinci görüntünün boyutlarından farklıysa, otomatik olarak bu boyutlara uyacak şekilde yeniden ölçeklendirilir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Birleştirilmiş görüntü toplu işlemi. Gerekirse ikinci görüntü, ilkinin boyutlarına uyacak şekilde yeniden ölçeklendirilmiştir. |
+| `image`   | `IMAGE`     | Birleştirilmiş toplu görüntü; gerekirse ikinci görüntü, birinci görüntünün boyutlarına uyacak şekilde yeniden ölçeklendirilir. |

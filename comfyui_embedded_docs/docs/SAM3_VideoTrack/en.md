@@ -13,7 +13,7 @@ Track objects across video frames using SAM3's memory-based tracker. This node p
 | `initial_mask` | MASK | No | One mask per object | Mask(s) for the first frame to track (one per object). Required if `conditioning` is not provided. |
 | `conditioning` | CONDITIONING | No | Text conditioning | Text conditioning for detecting new objects during tracking. Required if `initial_mask` is not provided. |
 | `detection_threshold` | FLOAT | No | 0.0 to 1.0 (default: 0.5) | Score threshold for text-prompted detection |
-| `max_objects` | INT | No | 0 to unlimited (default: 0) | Max tracked objects (0=unlimited). Initial masks count toward this limit. |
+| `max_objects` | INT | No | 0 to 64 (default: 0) | Max tracked objects. Initial masks count toward this limit. 0 uses the internal cap of 64. |
 | `detect_interval` | INT | No | 1 to unlimited (default: 1) | Run detection every N frames (1=every frame). Higher values save compute. |
 
 **Note:** Either `initial_mask` or `conditioning` must be provided. If both are omitted, the node will raise an error.
@@ -23,3 +23,6 @@ Track objects across video frames using SAM3's memory-based tracker. This node p
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `track_data` | SAM3TrackData | Tracking data containing object masks and metadata across all video frames |
+
+---
+**Source fingerprint (SHA-256):** `30768bdf5839c1d7b984675e68a127a27f21b17724a2dc885e27f00c272db3cb`

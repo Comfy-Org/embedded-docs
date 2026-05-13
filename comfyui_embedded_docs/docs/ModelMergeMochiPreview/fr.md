@@ -1,16 +1,16 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeMochiPreview/fr.md)
 
-Ce nœud fusionne deux modèles d'IA en utilisant une approche basée sur des blocs avec un contrôle précis des différentes composantes du modèle. Il permet de mélanger des modèles en ajustant les poids d'interpolation pour des sections spécifiques incluant les fréquences positionnelles, les couches d'embedding et les blocs de transformateurs individuels. Le processus de fusion combine les architectures et paramètres des deux modèles d'entrée selon les valeurs de poids spécifiées.
+Ce nœud fusionne deux modèles d'IA en utilisant une approche par blocs avec un contrôle fin sur différents composants du modèle. Il vous permet de mélanger des modèles en ajustant les poids d'interpolation pour des sections spécifiques, notamment les fréquences positionnelles, les couches d'incorporation (embedding) et les blocs de transformeur individuels. Le processus de fusion combine les architectures et les paramètres des deux modèles d'entrée selon les valeurs de poids spécifiées.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
-| `modèle1` | MODEL | Oui | - | Premier modèle à fusionner |
-| `modèle2` | MODEL | Oui | - | Second modèle à fusionner |
+|-----------|-----------------|--------|-------|-------------|
+| `model1` | MODEL | Oui | - | Premier modèle à fusionner |
+| `model2` | MODEL | Oui | - | Second modèle à fusionner |
 | `pos_frequencies.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation des fréquences positionnelles (par défaut : 1.0) |
-| `t_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de l'embedding temporel (par défaut : 1.0) |
-| `t5_y_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de l'embedding T5-Y (par défaut : 1.0) |
+| `t_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de l'incorporateur temporel (par défaut : 1.0) |
+| `t5_y_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de l'incorporateur T5-Y (par défaut : 1.0) |
 | `t5_yproj.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de la projection T5-Y (par défaut : 1.0) |
 | `blocks.0.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation du bloc 0 (par défaut : 1.0) |
 | `blocks.1.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation du bloc 1 (par défaut : 1.0) |
@@ -64,6 +64,9 @@ Ce nœud fusionne deux modèles d'IA en utilisant une approche basée sur des bl
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
+| Nom de la sortie | Type de données | Description |
+|------------------|-----------------|-------------|
 | `model` | MODEL | Le modèle fusionné combinant les caractéristiques des deux modèles d'entrée selon les poids spécifiés |
+
+---
+**Source fingerprint (SHA-256):** `aebf536f3f89ca8c81141ac871b1b612082c3bd38a29984168b05eccf0cb57e3`

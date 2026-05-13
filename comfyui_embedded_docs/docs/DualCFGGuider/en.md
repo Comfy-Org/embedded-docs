@@ -12,10 +12,13 @@ The DualCFGGuider node creates a guidance system for dual classifier-free guidan
 | `negative` | CONDITIONING | Yes | - | The negative conditioning input |
 | `cfg_conds` | FLOAT | Yes | 0.0 - 100.0 | Guidance scale for the first positive conditioning (default: 8.0) |
 | `cfg_cond2_negative` | FLOAT | Yes | 0.0 - 100.0 | Guidance scale for the second positive and negative conditioning (default: 8.0) |
-| `style` | COMBO | Yes | "regular"<br>"nested" | The guidance style to apply (default: "regular") |
+| `style` | COMBO | Yes | "regular"<br>"nested" | The guidance style to apply (default: "regular"). When set to "nested", the guidance is applied in a nested fashion |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `GUIDER` | GUIDER | A configured guidance system ready for use with sampling |
+
+---
+**Source fingerprint (SHA-256):** `802e07f2e64dc2d55e86290db7e94dffd46079a9180480a560035d0bb6350325`

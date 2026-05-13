@@ -1,17 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchImagesMasksLatentsNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchImagesMasksLatentsNode/zh-TW.md)
 
-此節點將多個相同類型的輸入組合成單一批次。它會自動檢測輸入是圖像、遮罩還是潛在表示，並使用適當的批次處理方法。這對於準備多個項目以供接受批次輸入的節點處理非常有用。
+批次影像/遮罩/潛在空間節點可將多個相同類型的輸入組合成單一批次。它會自動偵測輸入為影像、遮罩或潛在表示，並使用適當的批次處理方法。此功能有助於準備多個項目，供接受批次輸入的節點進行處理。
 
-## 輸入參數
+## 輸入
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `inputs` | IMAGE、MASK 或 LATENT | 是 | 1 到 50 個輸入 | 要組合成批次的動態輸入列表。您可以添加 1 到 50 個項目。所有項目必須是相同類型（全部為圖像、全部為遮罩或全部為潛在表示）。 |
+| `inputs` | IMAGE、MASK 或 LATENT | 是 | 1 至 50 個輸入 | 要組合成批次的動態輸入清單。您可以新增 1 到 50 個項目。所有項目必須為相同類型（全部為影像、全部為遮罩或全部為潛在空間）。 |
 
-**注意：** 此節點會根據 `inputs` 列表中的第一個項目自動決定資料類型（IMAGE、MASK 或 LATENT）。所有後續項目必須與此類型匹配。如果您嘗試混合不同的資料類型，節點將會失敗。
+**注意：** 節點會根據 `inputs` 清單中的第一個項目自動判斷資料類型（IMAGE、MASK 或 LATENT）。所有後續項目必須與此類型相符。若嘗試混合不同資料類型，節點將會失敗。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | IMAGE、MASK 或 LATENT | 單一批次輸出。資料類型與輸入類型匹配（批次化的 IMAGE、批次化的 MASK 或批次化的 LATENT）。 |
+| `output` | IMAGE、MASK 或 LATENT | 單一批次輸出。資料類型與輸入類型相符（批次 IMAGE、批次 MASK 或批次 LATENT）。 |
+
+---
+**Source fingerprint (SHA-256):** `6f3037bc00fd8526f42ad2d79a0f27434f58bd6dd0338a585cc707a771ac0989`

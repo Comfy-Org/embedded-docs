@@ -4,13 +4,16 @@ O nó ImageFlip inverte imagens ao longo de diferentes eixos. Ele pode inverter 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada a ser invertida |
-| `flip_method` | STRING | Sim | "x-axis: vertically"<br>"y-axis: horizontally" | A direção de inversão a ser aplicada |
+| `flip_method` | STRING | Sim | "x-axis: vertically"<br>"y-axis: horizontally" | A direção da inversão a ser aplicada (padrão: "x-axis: vertically") |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+|---------------|---------------|-----------|
 | `image` | IMAGE | A imagem de saída invertida |
+
+---
+**Source fingerprint (SHA-256):** `5cb9949c53653192b1a696179351976c3a87e2e7afc4634624b4d827ad75b527`

@@ -13,3 +13,6 @@ The StringLength node calculates the number of characters in a text string. It t
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `length` | INT | The total number of characters in the input string, including spaces and special characters. |
+
+---
+**Source fingerprint (SHA-256):** `dd72fac8330002e5e0ef2673ff208de36c6cf31aeec22a1c231495c742df62e3`

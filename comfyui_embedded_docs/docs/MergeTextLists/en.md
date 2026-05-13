@@ -15,3 +15,6 @@ This node merges multiple text lists into a single, combined list. It is designe
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `texts` | STRING | The single, merged list containing all the input texts. |
+
+---
+**Source fingerprint (SHA-256):** `043a39a373d03f1ff79dd0746070171bab4d5d915c985e4e64fd35f802b09f69`

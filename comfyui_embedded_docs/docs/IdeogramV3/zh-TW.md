@@ -1,34 +1,39 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramV3/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramV3/zh-TW.md)
 
-Ideogram V3 節點使用 Ideogram V3 模型生成影像。它支援基於文字提示的常規影像生成，以及在提供影像和遮罩時的影像編輯功能。該節點提供多種控制選項，包括長寬比、解析度、生成速度以及可選的角色參考影像。
+# Ideogram V3 節點
 
-## 輸入參數
+此節點使用 Ideogram V3 模型生成圖像。它支援從文字提示進行常規圖像生成，以及在同時提供圖像和遮罩時進行圖像編輯。該節點提供多種控制選項，包括長寬比、解析度、生成速度和可選的角色參考圖像。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `提示詞` | STRING | 是 | - | 用於影像生成或編輯的提示文字 (預設: 空值) |
-| `參考影像` | IMAGE | 否 | - | 用於影像編輯的參考影像 (可選) |
-| `遮罩` | MASK | 否 | - | 用於局部重繪的遮罩 (可選，白色區域將被替換) |
-| `長寬比` | COMBO | 否 | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | 影像生成的長寬比。如果解析度未設定為 Auto 則忽略此設定 (預設: "1:1") |
-| `解析度` | COMBO | 否 | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | 影像生成的解析度。如果未設定為 Auto，將覆蓋 aspect_ratio 設定 (預設: "Auto") |
-| `MagicPrompt 選項` | COMBO | 否 | "AUTO"<br>"ON"<br>"OFF" | 決定是否在生成過程中使用 MagicPrompt (預設: "AUTO") |
-| `種子值` | INT | 否 | 0-2147483647 | 生成隨機數的種子值 (預設: 0) |
-| `影像數量` | INT | 否 | 1-8 | 要生成的影像數量 (預設: 1) |
-| `生成速度` | COMBO | 否 | "DEFAULT"<br>"TURBO"<br>"QUALITY" | 控制生成速度與品質之間的平衡 (預設: "DEFAULT") |
-| `character_image` | IMAGE | 否 | - | 用作角色參考的影像 |
-| `character_mask` | MASK | 否 | - | 角色參考影像的遮罩 (可選) |
+| `prompt` | STRING | 是 | - | 用於圖像生成或編輯的提示詞（預設：空） |
+| `image` | IMAGE | 否 | - | 用於圖像編輯的參考圖像（可選） |
+| `mask` | MASK | 否 | - | 用於修復的遮罩（白色區域將被替換）（可選） |
+| `aspect_ratio` | COMBO | 否 | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | 圖像生成的長寬比。若解析度未設為自動則忽略此設定（預設："1:1"） |
+| `resolution` | COMBO | 否 | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | 圖像生成的解析度。若未設為自動，則此設定會覆蓋長寬比設定（預設："Auto"） |
+| `magic_prompt_option` | COMBO | 否 | "AUTO"<br>"ON"<br>"OFF" | 決定生成時是否使用 MagicPrompt（預設："AUTO"） |
+| `seed` | INT | 否 | 0-2147483647 | 用於生成的隨機種子（預設：0） |
+| `num_images` | INT | 否 | 1-8 | 要生成的圖像數量（預設：1） |
+| `rendering_speed` | COMBO | 否 | "DEFAULT"<br>"TURBO"<br>"QUALITY" | 控制生成速度與品質之間的權衡（預設："DEFAULT"） |
+| `character_image` | IMAGE | 否 | - | 用作角色參考的圖像 |
+| `character_mask` | MASK | 否 | - | 角色參考圖像的可選遮罩 |
 
-**參數限制條件:**
+**參數限制：**
 
-- 當同時提供 `image` 和 `mask` 時，節點將切換到編輯模式
-- 如果僅提供 `image` 或 `mask` 其中一項，將會發生錯誤
-- `character_mask` 需要同時存在 `character_image`
-- 當 `resolution` 未設定為 "Auto" 時，`aspect_ratio` 參數將被忽略
-- 在局部重繪過程中，遮罩中的白色區域將被替換
-- 角色遮罩和角色影像必須具有相同尺寸
+- 當同時提供 `image` 和 `mask` 時，節點會切換到編輯模式
+- 如果只提供了 `image` 或 `mask` 其中一個，將會發生錯誤
+- `character_mask` 需要 `character_image` 同時存在
+- 當 `resolution` 未設為 "Auto" 時，`aspect_ratio` 參數將被忽略
+- 遮罩中的白色區域將在修復過程中被替換
+- 角色遮罩和角色圖像必須具有相同尺寸
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | IMAGE | 生成或編輯後的影像 |
+| `output` | IMAGE | 生成或編輯後的圖像 |
+
+---
+**Source fingerprint (SHA-256):** `0d0058cc8483c453100d8d9dfcb9a31ae5e686f38ced77ed7e472cd083c3464b`

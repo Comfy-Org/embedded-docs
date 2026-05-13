@@ -13,3 +13,6 @@ The RecordAudio node loads audio files that have been recorded or selected throu
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `AUDIO` | AUDIO | The processed audio data containing waveform and sample rate information |
+
+---
+**Source fingerprint (SHA-256):** `3648f3c71f60f69e9ca117e25e9706187470866a1869ba9b8e5feceb42a7493a`

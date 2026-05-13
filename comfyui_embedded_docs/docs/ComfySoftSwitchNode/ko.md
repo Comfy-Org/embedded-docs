@@ -1,19 +1,22 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySoftSwitchNode/ko.md)
 
-Soft Switch 노드는 불리언 조건에 따라 두 가지 가능한 입력 값 중 하나를 선택합니다. `switch`가 참일 때는 `on_true` 입력의 값을 출력하고, `switch`가 거짓일 때는 `on_false` 입력의 값을 출력합니다. 이 노드는 지연 평가 방식으로 설계되어, 스위치 상태에 따라 필요한 입력만 평가합니다.
+소프트 스위치 노드는 부울 조건에 따라 두 개의 입력 값 중 하나를 선택합니다. `switch`가 참(true)이면 `on_true` 입력의 값을 출력하고, `switch`가 거짓(false)이면 `on_false` 입력의 값을 출력합니다. 이 노드는 지연 평가(lazy) 방식으로 설계되어, 스위치 상태에 따라 필요한 입력만 평가합니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `switch` | BOOLEAN | 예 | | 어떤 입력을 통과시킬지 결정하는 불리언 조건입니다. 참일 때는 `on_true` 입력이 선택되고, 거짓일 때는 `on_false` 입력이 선택됩니다. |
-| `on_false` | MATCH_TYPE | 아니요 | | `switch` 조건이 거짓일 때 출력할 값입니다. 이 입력은 선택 사항이지만, `on_false` 또는 `on_true` 중 적어도 하나는 연결되어야 합니다. |
-| `on_true` | MATCH_TYPE | 아니요 | | `switch` 조건이 참일 때 출력할 값입니다. 이 입력은 선택 사항이지만, `on_false` 또는 `on_true` 중 적어도 하나는 연결되어야 합니다. |
+| `switch` | BOOLEAN | 예 | | 통과시킬 입력을 결정하는 부울 조건입니다. 참(true)이면 `on_true` 입력이 선택되고, 거짓(false)이면 `on_false` 입력이 선택됩니다. |
+| `on_false` | MATCH_TYPE | 아니요 | | `switch` 조건이 거짓(false)일 때 출력할 값입니다. 이 입력은 선택 사항이지만, `on_false` 또는 `on_true` 중 하나는 반드시 연결되어야 합니다. |
+| `on_true` | MATCH_TYPE | 아니요 | | `switch` 조건이 참(true)일 때 출력할 값입니다. 이 입력은 선택 사항이지만, `on_false` 또는 `on_true` 중 하나는 반드시 연결되어야 합니다. |
 
-**참고:** `on_false`와 `on_true` 입력은 노드의 내부 템플릿에 정의된 대로 동일한 데이터 타입이어야 합니다. 노드가 작동하려면 이 두 입력 중 적어도 하나가 연결되어야 합니다.
+**참고:** `on_false`와 `on_true` 입력은 노드의 내부 템플릿에 정의된 대로 동일한 데이터 타입이어야 합니다. 노드가 작동하려면 이 두 입력 중 하나 이상이 연결되어 있어야 합니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
 | `output` | MATCH_TYPE | 선택된 값입니다. 연결된 `on_false` 또는 `on_true` 입력의 데이터 타입과 일치합니다. |
+
+---
+**Source fingerprint (SHA-256):** `f5e40e7f43948b81b5442c885c3e1ff15e38f8f7ddda00ef3be42225765bfd1c`

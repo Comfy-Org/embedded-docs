@@ -8,11 +8,11 @@ The Moonvalley Marey Video to Video node transforms an input video into a new vi
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | - | Describes the video to generate (multiline input) |
 | `negative_prompt` | STRING | No | - | Negative prompt text (default: extensive list of negative descriptors) |
-| `seed` | INT | Yes | 0-4294967295 | Random seed value (default: 9) |
+| `seed` | INT | Yes | 0 to 4294967295 | Random seed value (default: 9) |
 | `video` | VIDEO | Yes | - | The reference video used to generate the output video. Must be at least 5 seconds long. Videos longer than 5s will be automatically trimmed. Only MP4 format supported. |
 | `control_type` | COMBO | No | "Motion Transfer"<br>"Pose Transfer" | Control type selection (default: "Motion Transfer") |
-| `motion_intensity` | INT | No | 0-100 | Only used if control_type is 'Motion Transfer' (default: 100) |
-| `steps` | INT | Yes | 1-100 | Number of inference steps (default: 33) |
+| `motion_intensity` | INT | No | 0 to 100 | Only used if control_type is "Motion Transfer" (default: 100) |
+| `steps` | INT | Yes | 1 to 100 | Number of inference steps (default: 33) |
 
 **Note:** The `motion_intensity` parameter is only applied when `control_type` is set to "Motion Transfer". When using "Pose Transfer", this parameter is ignored.
 
@@ -21,3 +21,6 @@ The Moonvalley Marey Video to Video node transforms an input video into a new vi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video output |
+
+---
+**Source fingerprint (SHA-256):** `8202a4be469afa16d77b9e0287c290b9c3f390347fc60f23878f50fd95a758e0`

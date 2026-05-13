@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentInterpolate/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentInterpolate/tr.md)
 
-LatentInterpolate düğümü, belirli bir orana dayalı olarak iki gizli örnek seti arasında enterpolasyon gerçekleştirmek üzere tasarlanmıştır ve her iki setin özelliklerini harmanlayarak yeni, ara bir gizli örnek seti oluşturur.
+LatentInterpolate düğümü, iki latent örnek kümesi arasında belirtilen bir orana göre enterpolasyon yaparak, her iki kümenin özelliklerini harmanlayan yeni, ara bir latent örnek kümesi oluşturmak için tasarlanmıştır.
 
-## Girdiler
+## Girişler
 
-| Parametre   | Veri Türü   | Açıklama |
-|-------------|-------------|-------------|
-| `örnekler1`  | `LATENT`    | Enterpolasyon işlemi için kullanılacak ilk gizli örnek setidir. Enterpolasyon sürecinin başlangıç noktasını oluşturur. |
-| `örnekler2`  | `LATENT`    | Enterpolasyon işlemi için kullanılacak ikinci gizli örnek setidir. Enterpolasyon sürecinin bitiş noktasını oluşturur. |
-| `oran`     | `FLOAT`     | Enterpole edilmiş çıktıda her örnek setinin ağırlığını belirleyen bir kayan nokta değeridir. 0 oranı ilk setin bir kopyasını üretirken, 1 oranı ikinci setin bir kopyasını üretir. |
+| Parametre    | Veri Türü | Açıklama |
+|--------------|-------------|-------------|
+| `samples1`   | `LATENT`    | Enterpolasyon yapılacak ilk latent örnek kümesi. Enterpolasyon işlemi için başlangıç noktası görevi görür. |
+| `samples2`   | `LATENT`    | Enterpolasyon yapılacak ikinci latent örnek kümesi. Enterpolasyon işlemi için bitiş noktası görevi görür. |
+| `ratio`      | `FLOAT`     | Enterpolasyon çıktısında her bir örnek kümesinin ağırlığını belirleyen ondalık sayı değeri. 0 oranı, ilk kümenin bir kopyasını üretirken, 1 oranı ikinci kümenin bir kopyasını üretir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | Çıktı, belirtilen orana dayalı olarak iki girdi seti arasında enterpole edilmiş bir durumu temsil eden yeni bir gizli örnek setidir. |
+| `latent`  | `LATENT`    | Çıktı, belirtilen orana bağlı olarak iki giriş kümesi arasında enterpolasyon durumunu temsil eden yeni bir latent örnek kümesidir. |

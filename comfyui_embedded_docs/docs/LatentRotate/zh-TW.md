@@ -1,16 +1,15 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentRotate/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentRotate/zh-TW.md)
 
-LatentRotate 節點專為將圖片的潛在表徵按指定角度旋轉而設計。它抽象化了操作潛在空間以實現旋轉效果的複雜性，讓使用者能夠輕鬆地在生成模型的潛在空間中轉換圖片。
+## 概述
+LatentRotate 節點旨在將圖像的潛在表示旋轉至指定角度。它抽象化了在潛在空間中操作以實現旋轉效果的複雜性，讓使用者能夠輕鬆地在生成模型的潛在空間中轉換圖像。
 
-## 輸入參數
-
-| 參數名稱 | 資料類型 | 描述 |
+## 輸入
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
-| `樣本` | `LATENT`    | 此參數代表待旋轉圖片的潛在表徵，對於決定旋轉操作的起始點至關重要。 |
-| `旋轉角度` | COMBO[STRING] | 此參數指定潛在圖片應旋轉的角度，直接影響最終圖片的朝向。 |
+| `samples` | `LATENT`    | `samples` 參數代表要旋轉的圖像潛在表示。它對於決定旋轉操作的起點至關重要。 |
+| `rotation` | COMBO[STRING] | `rotation` 參數指定潛在圖像應旋轉的角度。它直接影響最終圖像的方向。 |
 
-## 輸出參數
-
-| 參數名稱 | 資料類型 | 描述 |
+## 輸出
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | 輸出為輸入潛在表徵經過指定角度旋轉後的修改版本。 |
+| `latent`  | `LATENT`    | 輸出是輸入潛在表示的修改版本，已按指定角度旋轉。 |

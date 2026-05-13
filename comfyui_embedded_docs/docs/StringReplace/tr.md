@@ -1,17 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringReplace/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringReplace/tr.md)
 
-StringReplace düğümü, giriş dizeleri üzerinde metin değiştirme işlemleri gerçekleştirir. Giriş metni içinde belirli bir alt dizeyi arar ve tüm bulunan örneklerini farklı bir alt dizeyle değiştirir. Bu düğüm, tüm değiştirmelerin uygulandığı değiştirilmiş diziyi döndürür.
+StringReplace düğümü, girdi dizeleri üzerinde metin değiştirme işlemleri gerçekleştirir. Girdi metni içinde belirtilen bir alt dizeyi arar ve tüm bulunan örnekleri farklı bir alt dizeyle değiştirir. Bu düğüm, tüm değiştirmeler uygulanmış şekilde değiştirilmiş dizeyi döndürür.
 
-## Girişler
+## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | - | Değiştirme işlemlerinin yapılacağı giriş metin dizesi |
-| `find` | STRING | Evet | - | Giriş metni içinde aranacak alt dize |
+| `string` | STRING | Evet | - | Değiştirme işlemlerinin yapılacağı girdi metin dizesi |
+| `find` | STRING | Evet | - | Girdi metni içinde aranacak alt dize |
 | `replace` | STRING | Evet | - | Bulunan tüm örneklerin yerine geçecek değiştirme metni |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | STRING | Bulunan metnin tüm örneklerinin değiştirme metniyle değiştirildiği değiştirilmiş dize |
+
+---
+**Source fingerprint (SHA-256):** `72159dba72261efe9df283c1ea3f789651eade923efdaeb108bacc1d0da663f8`

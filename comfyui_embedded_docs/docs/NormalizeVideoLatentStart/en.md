@@ -7,8 +7,8 @@ This node adjusts the first few frames of a video latent to make them look more 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `latent` | LATENT | Yes | - | The video latent representation to process. |
-| `start_frame_count` | INT | No | 1 to 16384 | Number of latent frames to normalize, counted from the start (default: 4). |
-| `reference_frame_count` | INT | No | 1 to 16384 | Number of latent frames after the start frames to use as reference (default: 5). |
+| `start_frame_count` | INT | Yes | 1 to 16384 | Number of latent frames to normalize, counted from the start (default: 4). |
+| `reference_frame_count` | INT | Yes | 1 to 16384 | Number of latent frames after the start frames to use as reference (default: 5). |
 
 **Note:** The `reference_frame_count` is automatically limited to the number of frames available after the starting frames. If the video latent is only 1 frame long, no normalization is performed and the original latent is returned unchanged.
 
@@ -17,3 +17,6 @@ This node adjusts the first few frames of a video latent to make them look more 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `latent` | LATENT | The processed video latent with the starting frames normalized. |
+
+---
+**Source fingerprint (SHA-256):** `64844f3bf1735952334dcca3a829e8f666fd89e817ab66cf3c2dc04ecbbdff56`

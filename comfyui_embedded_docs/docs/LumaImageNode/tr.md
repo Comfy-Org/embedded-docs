@@ -1,29 +1,33 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode/tr.md)
 
-Görüntüleri eşzamanlı olarak prompt ve en-boy oranına dayalı olarak oluşturur. Bu düğüm, metin açıklamalarını kullanarak görüntüler oluşturur ve çeşitli referans girdileri aracılığıyla görüntü boyutlarını ve stilini kontrol etmenize olanak tanır.
+Bir metin istemi ve en-boy oranına göre eşzamanlı olarak görseller oluşturur. Bu düğüm, metin açıklamalarını kullanarak görseller oluşturur ve karakter ile stil görselleri dahil olmak üzere çeşitli referans girdileri aracılığıyla görsel boyutlarını ve stilini kontrol etmenize olanak tanır.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | - | Görüntü oluşturma için prompt (varsayılan: boş string) |
-| `model` | COMBO | Evet | Birden fazla seçenek mevcut | Görüntü oluşturma için model seçimi |
-| `en_boy_oranı` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan görüntü için en-boy oranı (varsayılan: 16:9 oranı) |
-| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen seed; gerçek sonuçlar seed'den bağımsız olarak belirsizdir (varsayılan: 0) |
-| `stil_görüntüsü_ağırlığı` | FLOAT | Hayır | 0.0 ile 1.0 arası | Stil görüntüsünün ağırlığı. style_image sağlanmazsa dikkate alınmaz (varsayılan: 1.0) |
-| `görüntü_luma_referansı` | LUMA_REF | Hayır | - | Girdi görüntüleriyle oluşturmayı etkilemek için Luma Referans düğüm bağlantısı; en fazla 4 görüntü dikkate alınabilir |
-| `stil_görüntüsü` | IMAGE | Hayır | - | Stil referans görüntüsü; sadece 1 görüntü kullanılacaktır |
-| `karakter_görüntüsü` | IMAGE | Hayır | - | Karakter referans görüntüleri; birden fazla görüntüden oluşan bir batch olabilir, en fazla 4 görüntü dikkate alınabilir |
+| `prompt` | STRING | Evet | - | Görsel oluşturma için istem (varsayılan: boş dize). En az 3 karakter uzunluğunda olmalıdır. |
+| `model` | COMBO | Evet | `photon-flash-1`<br>`photon-1`<br>`photon` | Görsel oluşturma için model seçimi. Farklı modellerin farklı maliyetleri vardır. |
+| `aspect_ratio` | COMBO | Evet | `16:9`<br>`1:1`<br>`4:3`<br>`3:2`<br>`21:9`<br>`9:16`<br>`3:4`<br>`2:3`<br>`9:21` | Oluşturulan görsel için en-boy oranı (varsayılan: `16:9`) |
+| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; tohumdan bağımsız olarak gerçek sonuçlar deterministik değildir (varsayılan: 0) |
+| `style_image_weight` | FLOAT | Hayır | 0.0 ile 1.0 arası | Stil görselinin ağırlığı. `style_image` sağlanmazsa yok sayılır (varsayılan: 1.0) |
+| `image_luma_ref` | LUMA_REF | Hayır | - | Girdi görselleriyle oluşturmayı etkilemek için Luma Referans düğümü bağlantısı; en fazla 4 görsel dikkate alınabilir. |
+| `style_image` | IMAGE | Hayır | - | Stil referans görseli; yalnızca 1 görsel kullanılacaktır. |
+| `character_image` | IMAGE | Hayır | - | Karakter referans görselleri; birden fazla görselden oluşan bir grup olabilir, en fazla 4 görsel dikkate alınabilir. |
 
 **Parametre Kısıtlamaları:**
 
-- `image_luma_ref` parametresi en fazla 4 referans görüntüsü kabul edebilir
-- `character_image` parametresi en fazla 4 karakter referans görüntüsü kabul edebilir
-- `style_image` parametresi sadece 1 stil referans görüntüsü kabul eder
-- `style_image_weight` parametresi sadece `style_image` sağlandığında kullanılır
+- `prompt` parametresi, boşluklar temizlendikten sonra en az 3 karakter uzunluğunda olmalıdır.
+- `image_luma_ref` parametresi en fazla 4 referans görseli kabul edebilir.
+- `character_image` parametresi en fazla 4 karakter referans görseli kabul edebilir.
+- `style_image` parametresi yalnızca 1 stil referans görseli kabul eder.
+- `style_image_weight` parametresi yalnızca `style_image` sağlandığında kullanılır.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türı | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | IMAGE | Girdi parametrelerine dayalı olarak oluşturulan görüntü |
+| `output` | IMAGE | Girdi parametrelerine göre oluşturulan görsel. |
+
+---
+**Source fingerprint (SHA-256):** `f7878cd4df62c2f364e4e404215b18bf2f5745fb071ae2cd931d5e34b84eab46`

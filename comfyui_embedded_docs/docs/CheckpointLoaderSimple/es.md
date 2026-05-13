@@ -1,21 +1,24 @@
-Este es un nodo cargador de modelos que carga archivos de modelos desde ubicaciones específicas y los descompone en tres componentes principales: el modelo principal, el codificador de texto y el codificador/decodificador de imágenes.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoaderSimple/es.md)
 
-Este nodo detecta automáticamente todos los archivos de modelos en la carpeta `ComfyUI/models/checkpoints`, así como rutas adicionales configuradas en tu archivo `extra_model_paths.yaml`.
+## Descripción general
 
-1. **Compatibilidad del modelo**: Asegúrate de que el modelo seleccionado sea compatible con tu flujo de trabajo. Diferentes tipos de modelos (como SD1.5, SDXL, Flux, etc.) necesitan ser emparejados con los samplers correspondientes y otros nodos
-2. **Gestión de archivos**: Coloca los archivos de modelos en la carpeta `ComfyUI/models/checkpoints`, o configura otras rutas a través de extra_model_paths.yaml
-3. **Actualización de interfaz**: Si se agregan nuevos archivos de modelos mientras ComfyUI está ejecutándose, necesitas actualizar el navegador (Ctrl+R) para ver los nuevos archivos en la lista desplegable
+Carga un archivo de modelo de difusión (checkpoint) y lo descompone en tres componentes principales: el modelo principal utilizado para eliminar el ruido de los latentes, el codificador de texto CLIP y el codificador/decodificador de imágenes VAE. Este nodo detecta automáticamente todos los archivos de modelo en la carpeta `ComfyUI/models/checkpoints` y cualquier ruta adicional configurada en tu archivo `extra_model_paths.yaml`.
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Datos | Método de Entrada | Valor Predeterminado | Rango de Valores | Descripción |
-|----------------------|---------------|-------------------|----------------------|------------------|-------------|
-| nombre_ckpt | STRING | Selección Desplegable | null | Todos los archivos de modelos en la carpeta checkpoints | Selecciona el nombre del archivo de checkpoint del modelo a cargar, que determina el modelo de IA utilizado para la generación posterior de imágenes |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `ckpt_name` | STRING | Sí | Todos los archivos de modelo en la carpeta de checkpoints | El nombre del checkpoint (modelo) a cargar. Selecciona el nombre del archivo del checkpoint, que determina el modelo de IA utilizado para la generación de imágenes posterior. |
+
+**Nota:** Si se agregan nuevos archivos de modelo mientras ComfyUI está en ejecución, es necesario actualizar el navegador (Ctrl+R) para ver los nuevos archivos en la lista desplegable.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Datos | Descripción |
-|------------------|---------------|-------------|
-| MODELO | MODEL | El modelo de difusión principal utilizado para la generación de imágenes por eliminación de ruido, el componente central de la creación de imágenes con IA |
-| CLIP | CLIP | El modelo utilizado para codificar prompts de texto, convirtiendo descripciones de texto en información que la IA puede entender |
-| VAE | VAE | El modelo utilizado para la codificación y decodificación de imágenes, responsable de convertir entre el espacio de píxeles y el espacio latente |
+| Nombre de Salida | Tipo de Dato | Descripción |
+|------------------|--------------|-------------|
+| `MODEL` | MODEL | El modelo utilizado para eliminar el ruido de los latentes. Este es el modelo de difusión principal utilizado para la generación de imágenes. |
+| `CLIP` | CLIP | El modelo CLIP utilizado para codificar indicaciones de texto, convirtiendo descripciones textuales en información que la IA puede entender. |
+| `VAE` | VAE | El modelo VAE utilizado para codificar y decodificar imágenes hacia y desde el espacio latente. |
+
+---
+**Source fingerprint (SHA-256):** `2fd8866ae659f8080f46c16d3a9864fa563d2090815d897ea2f42ba8d66d9b39`

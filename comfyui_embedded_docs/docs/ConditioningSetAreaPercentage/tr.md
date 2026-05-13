@@ -1,20 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentage/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentage/tr.md)
 
-ConditioningSetAreaPercentage düğümü, koşullandırma elemanlarının etki alanını yüzde değerlerine göre ayarlamada uzmanlaşmıştır. Koşullandırma etkisinin yoğunluğunu modüle eden bir güç parametresinin yanı sıra, alanın boyutlarını ve konumunu toplam görüntü boyutunun yüzdeleri olarak belirlemeye olanak tanır.
+ConditioningSetAreaPercentage düğümü, koşullandırma öğelerinin etki alanını yüzde değerlerine göre ayarlama konusunda uzmanlaşmıştır. Alanın boyutlarını ve konumunu toplam görüntü boyutunun yüzdesi olarak belirtmeye olanak tanır; ayrıca koşullandırma etkisinin yoğunluğunu ayarlamak için bir güç parametresi içerir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma elemanlarını temsil eder; alan ve güç ayarlamalarının uygulanması için temel oluşturur. |
-| `genişlik`   | `FLOAT`     | Alanın genişliğini, toplam görüntü genişliğinin bir yüzdesi olarak belirler; koşullandırmanın görüntüyü yatay olarak ne kadar etkilediğini belirler. |
-| `yükseklik`  | `FLOAT`     | Alanın yüksekliğini, toplam görüntü yüksekliğinin bir yüzdesi olarak belirler; koşullandırmanın dikey etki kapsamını etkiler. |
-| `x`       | `FLOAT`     | Alanın yatay başlangıç noktasını, toplam görüntü genişliğinin bir yüzdesi olarak belirterek koşullandırma etkisinin konumlandırılmasını sağlar. |
-| `y`       | `FLOAT`     | Alanın dikey başlangıç noktasını, toplam görüntü yüksekliğinin bir yüzdesi olarak belirterek koşullandırma etkisinin konumlandırılmasını sağlar. |
-| `güç`| `FLOAT`     | Belirtilen alan içindeki koşullandırma etkisinin yoğunluğunu kontrol eder; etkisinin ince ayar yapılmasına olanak tanır. |
+| `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma öğelerini temsil eder; alan ve güç ayarlamalarının uygulanması için temel görevi görür. |
+| `width`   | `FLOAT`     | Alanın genişliğini toplam görüntü genişliğinin yüzdesi olarak belirtir; koşullandırmanın görüntüyü yatay olarak ne kadar etkileyeceğini belirler. |
+| `height`  | `FLOAT`     | Alanın yüksekliğini toplam görüntü yüksekliğinin yüzdesi olarak belirler; koşullandırma etkisinin dikey kapsamını etkiler. |
+| `x`       | `FLOAT`     | Alanın yatay başlangıç noktasını toplam görüntü genişliğinin yüzdesi olarak belirtir; koşullandırma etkisini konumlandırır. |
+| `y`       | `FLOAT`     | Alanın dikey başlangıç noktasını toplam görüntü yüksekliğinin yüzdesi olarak belirtir; koşullandırma etkisini konumlandırır. |
+| `strength`| `FLOAT`     | Belirtilen alan içindeki koşullandırma etkisinin yoğunluğunu kontrol eder; etkisinin ince ayarının yapılmasına olanak tanır. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `CONDITIONING` | CONDITIONING | Güncellenmiş alan ve güç parametreleriyle değiştirilmiş koşullandırma elemanlarını döndürür; daha fazla işleme veya uygulama için hazırdır. |
+| `CONDITIONING` | CONDITIONING | Güncellenmiş alan ve güç parametreleriyle değiştirilmiş koşullandırma öğelerini döndürür; daha fazla işleme veya uygulamaya hazırdır. |

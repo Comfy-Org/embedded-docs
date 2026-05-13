@@ -7,8 +7,6 @@ This node removes the background from images using the Recraft API service. It p
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image(s) to process for background removal |
-| `auth_token` | STRING | No | - | Authentication token for Recraft API access |
-| `comfy_api_key` | STRING | No | - | API key for Comfy.org service integration |
 
 ## Outputs
 
@@ -16,3 +14,6 @@ This node removes the background from images using the Recraft API service. It p
 |-------------|-----------|-------------|
 | `image` | IMAGE | Processed images with transparent backgrounds |
 | `mask` | MASK | Alpha channel masks indicating the removed background areas |
+
+---
+**Source fingerprint (SHA-256):** `9e3f1a0471da3afda6b8de26de3b7e78c1070c49ab49e4fc8b6b79bb10ff77de`

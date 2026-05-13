@@ -13,3 +13,6 @@ The AudioEncoderLoader node loads an audio encoder model from a file in your aud
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio_encoder` | AUDIO_ENCODER | The loaded audio encoder model, ready for use in audio processing workflows |
+
+---
+**Source fingerprint (SHA-256):** `24cbd45198db7d950633358c29de57f56c999bc33534fabe80404528d194163c`

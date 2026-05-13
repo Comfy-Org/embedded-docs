@@ -1,17 +1,19 @@
-Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/checkpoints`, et il peut également lire les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageOnlyCheckpointLoader/fr.md)
 
-Ce nœud est spécialisé dans le chargement de checkpoints spécifiquement pour les modèles basés sur l'image dans les flux de travail de génération vidéo. Il récupère et configure efficacement les composants nécessaires à partir d'un checkpoint donné, en se concentrant sur les aspects liés à l'image du modèle.
+Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/checkpoints`, et lit également les modèles depuis les chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
+
+Ce nœud est spécialisé dans le chargement de points de contrôle (checkpoints) spécifiquement pour les modèles basés sur l'image au sein de workflows de génération vidéo. Il récupère et configure efficacement les composants nécessaires à partir d'un point de contrôle donné, en se concentrant sur les aspects liés à l'image du modèle.
 
 ## Entrées
 
-| Champ      | Data Type | Description                                                                       |
-|------------|-------------|-----------------------------------------------------------------------------------|
-| `nom_ckpt`| COMBO[STRING] | Spécifie le nom du checkpoint à charger, crucial pour identifier et récupérer le fichier de checkpoint correct à partir d'une liste prédéfinie. |
+| Champ       | Type de données | Description                                                                                          |
+|-------------|-----------------|------------------------------------------------------------------------------------------------------|
+| `ckpt_name` | COMBO[STRING]   | Spécifie le nom du point de contrôle à charger, essentiel pour identifier et récupérer le fichier de point de contrôle correct depuis une liste prédéfinie. |
 
 ## Sorties
 
-| Champ     | Data Type | Description                                                                                   |
-|-----------|-------------|-----------------------------------------------------------------------------------------------|
-| `model`   | MODEL     | Retourne le modèle principal chargé à partir du checkpoint, configuré pour le traitement d'image dans les contextes de génération vidéo. |
-| `clip_vision` | `CLIP_VISION` | Fournit le composant CLIP vision du checkpoint, adapté pour la compréhension de l'image et l'extraction de caractéristiques. |
-| `vae`     | VAE       | Fournit le composant Autoencodeur Variationnel (VAE), essentiel pour les tâches de manipulation et de génération d'images. |
+| Champ         | Type de données | Description                                                                                                           |
+|---------------|-----------------|-----------------------------------------------------------------------------------------------------------------------|
+| `model`       | MODEL           | Renvoie le modèle principal chargé depuis le point de contrôle, configuré pour le traitement d'image dans des contextes de génération vidéo. |
+| `clip_vision` | `CLIP_VISION`   | Fournit le composant CLIP vision du point de contrôle, adapté à la compréhension d'image et à l'extraction de caractéristiques. |
+| `vae`         | VAE             | Délivre le composant Autoencodeur Variationnel (VAE), essentiel pour les tâches de manipulation et de génération d'image. |

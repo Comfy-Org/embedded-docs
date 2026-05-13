@@ -1,18 +1,23 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodePixArtAlpha/ja.md)
 
-テキストをエンコードし、PixArt Alphaの解像度条件付けを設定します。このノードはテキスト入力を処理し、幅と高さの情報を追加して、PixArt Alphaモデル専用の条件付けデータを作成します。PixArt Sigmaモデルには適用されません。
+このドキュメントはAIによって生成されました。誤りや改善のご提案がございましたら、ぜひご協力ください。[GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodePixArtAlpha/en.md)
+
+PixArt Alpha用にテキストをエンコードし、解像度の条件付けを設定します。このノードはテキスト入力を処理し、幅と高さの情報を追加して、PixArt Alphaモデル専用の条件付けデータを作成します。PixArt Sigmaモデルには適用されません。
 
 ## 入力
 
-| パラメータ | データ型 | 入力タイプ | デフォルト | 範囲 | 説明 |
-|-----------|-----------|------------|---------|-------|-------------|
-| `幅` | INT | 入力 | 1024 | 0 ～ MAX_RESOLUTION | 解像度条件付けのための幅の次元 |
-| `高さ` | INT | 入力 | 1024 | 0 ～ MAX_RESOLUTION | 解像度条件付けのための高さの次元 |
-| `テキスト` | STRING | 入力 | - | - | エンコードされるテキスト入力。複数行入力と動的プロンプトをサポートします |
-| `clip` | CLIP | 入力 | - | - | トークン化とエンコードに使用されるCLIPモデル |
+| パラメータ | データ型 | 必須 | 範囲 | 説明 |
+|-----------|-----------|----------|-------|-------------|
+| `width` | INT | はい | 0 ～ MAX_RESOLUTION | 解像度条件付けの幅寸法（デフォルト：1024） |
+| `height` | INT | はい | 0 ～ MAX_RESOLUTION | 解像度条件付けの高さ寸法（デフォルト：1024） |
+| `text` | STRING | はい | - | エンコードするテキスト入力。複数行入力と動的プロンプトに対応しています |
+| `clip` | CLIP | はい | - | トークン化とエンコードに使用するCLIPモデル |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | テキストトークンと解像度情報を含むエンコードされた条件付けデータ |
+| `CONDITIONING` | CONDITIONING | テキストトークンと解像度情報を含むエンコード済み条件付けデータ |
+
+---
+**Source fingerprint (SHA-256):** `d15df3c7bcca10ec85f0689d6631a6b89aa89e609193c36b658b1bc97f90ee9a`

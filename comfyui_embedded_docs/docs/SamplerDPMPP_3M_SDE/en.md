@@ -8,10 +8,13 @@ The SamplerDPMPP_3M_SDE node creates a DPM++ 3M SDE sampler for use in the sampl
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Yes | 0.0 - 100.0 | Controls the stochasticity of the sampling process (default: 1.0) |
 | `s_noise` | FLOAT | Yes | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0) |
-| `noise_device` | COMBO | Yes | "gpu"<br>"cpu" | Selects the device for noise calculations, either GPU or CPU |
+| `noise_device` | COMBO | Yes | "gpu"<br>"cpu" | Selects the device for noise calculations, either GPU or CPU (default: "gpu") |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | Returns a configured sampler object for use in sampling workflows |
+
+---
+**Source fingerprint (SHA-256):** `817ce8c12245063e5f2f3421f57dd55801aae96dfd8fe1bf3f88f814799b830a`

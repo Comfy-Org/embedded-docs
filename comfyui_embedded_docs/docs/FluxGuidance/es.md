@@ -1,12 +1,14 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxGuidance/es.md)
+
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Dato | Función |
-|----------------------|---------------|---------|
-| condicionamiento     | CONDITIONING  | Datos de condicionamiento de entrada, típicamente de pasos de codificación o procesamiento previos |
-| guía                 | FLOAT         | Controla la influencia de los mensajes de texto en la generación de imágenes, rango ajustable de 0.0 a 100.0 |
+| Parámetro | Tipo de Dato | Descripción |
+|----------------|-----------|-------------|
+| `conditioning` | CONDITIONING | Datos de condicionamiento de entrada, típicamente provenientes de pasos previos de codificación o procesamiento |
+| `guidance` | FLOAT | Controla la influencia de las indicaciones de texto en la generación de imágenes, con un rango ajustable de 0.0 a 100.0 |
 
 ## Salidas
 
-| Nombre del Parámetro | Tipo de Dato | Función |
-|----------------------|---------------|---------|
-| CONDITIONING         | CONDITIONING  | Datos de condicionamiento actualizados, que contienen el nuevo valor de guía |
+| Parámetro | Tipo de Dato | Descripción |
+|----------------|-----------|-------------|
+| CONDITIONING | CONDITIONING | Datos de condicionamiento actualizados, que contienen el nuevo valor de guidance |

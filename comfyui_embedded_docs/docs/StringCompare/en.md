@@ -8,7 +8,7 @@ The StringCompare node compares two text strings using different comparison meth
 |-----------|-----------|----------|-------|-------------|
 | `string_a` | STRING | Yes | - | The first string to compare |
 | `string_b` | STRING | Yes | - | The second string to compare against |
-| `mode` | COMBO | Yes | "Starts With"<br>"Ends With"<br>"Equal" | The comparison method to use |
+| `mode` | COMBO | Yes | "Starts With"<br>"Ends With"<br>"Equal" | The comparison method to use (default: "Starts With") |
 | `case_sensitive` | BOOLEAN | No | - | Whether to consider letter case during comparison (default: true) |
 
 ## Outputs
@@ -16,3 +16,6 @@ The StringCompare node compares two text strings using different comparison meth
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | BOOLEAN | Returns true if the comparison condition is met, false otherwise |
+
+---
+**Source fingerprint (SHA-256):** `4491e4acd2c1881e9c924c6ae51d764dec5f46279094d173fe551e9ee9256597`

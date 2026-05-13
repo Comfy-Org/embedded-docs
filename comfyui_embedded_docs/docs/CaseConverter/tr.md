@@ -1,16 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CaseConverter/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CaseConverter/tr.md)
 
-Case Converter düğümü, metin dizilerini farklı harf büyüklüğü formatlarına dönüştürür. Bir giriş dizisi alır ve seçilen moda göre dönüştürerek, belirtilen büyük/küçük harf biçimlendirmesi uygulanmış bir çıkış dizisi üretir. Düğüm, metninizin büyük/küçük harf kullanımını değiştirmek için dört farklı büyük/küçük harf dönüşüm seçeneğini destekler.
+**Genel Bakış**
 
-## Girişler
+Case Converter düğümü, metin dizelerini farklı harf büyüklüğü biçimlerine dönüştürür. Bir girdi dizesi alır ve seçilen moda göre dönüştürerek, belirtilen büyüklük biçiminin uygulandığı bir çıktı dizesi üretir. Düğüm, metninizin büyük/küçük harf kullanımını değiştirmek için dört farklı büyüklük dönüştürme seçeneğini destekler.
 
-| Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `string` | STRING | String | - | - | Farklı bir büyük/küçük harf formatına dönüştürülecek metin dizisi |
-| `mode` | STRING | Combo | - | ["UPPERCASE", "lowercase", "Capitalize", "Title Case"] | Uygulanacak büyük/küçük harf dönüşüm modu: UPPERCASE tüm harfleri büyük harfe dönüştürür, lowercase tüm harfleri küçük harfe dönüştürür, Capitalize yalnızca ilk harfi büyük yapar, Title Case her kelimenin ilk harfini büyük yapar |
+## Girdiler
 
-## Çıkışlar
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+|-----------|-----------|----------|--------|----------|
+| `string` | STRING | Evet | - | Farklı bir büyüklük biçimine dönüştürülecek metin dizesi |
+| `mode` | STRING | Evet | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | Uygulanacak büyüklük dönüştürme modu (varsayılan: `"UPPERCASE"`) |
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | STRING | Belirtilen büyük/küçük harf formatına dönüştürülmüş giriş dizisi |
+## Çıktılar
+
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `output` | STRING | Belirtilen büyüklük biçimine dönüştürülmüş girdi dizesi |
+
+---
+**Source fingerprint (SHA-256):** `2493daccd5bdd86ce3fb24c6658057f5e50c2d6ed7616785f40806826f9a60dc`

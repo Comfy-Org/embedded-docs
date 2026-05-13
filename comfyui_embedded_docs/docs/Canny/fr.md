@@ -1,40 +1,42 @@
-Extrait toutes les lignes de contour des photos, comme utiliser un stylo pour contourner une photo, en dessinant les contours et les limites de détails des objets.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/fr.md)
 
-## Principe de Fonctionnement
+Extrayez toutes les lignes de contour des photos, comme si vous traciez le contour d'une photo avec un stylo, en dessinant les limites des objets et les détails de leurs contours.
 
-Imaginez que vous êtes un artiste qui doit utiliser un stylo pour contourner une photo. Le nœud Canny agit comme un assistant intelligent, vous aidant à décider où dessiner des lignes (contours) et où ne pas le faire.
+## Principe de fonctionnement
 
-Ce processus est comme un travail de filtrage :
+Imaginez que vous êtes un artiste devant tracer le contour d'une photo avec un stylo. Le nœud Canny agit comme un assistant intelligent, vous aidant à décider où tracer des lignes (contours) et où ne pas en tracer.
 
-- **Seuil haut** est le "standard de ligne obligatoire" : seules les lignes de contour très évidentes et claires seront dessinées, comme les contours faciaux des personnes et les cadres de bâtiments
-- **Seuil bas** est le "standard de définitivement ne pas dessiner de ligne" : les contours qui sont trop faibles seront ignorés pour éviter de dessiner du bruit et des lignes sans signification
-- **Zone intermédiaire** : les contours entre les deux standards seront dessinés ensemble s'ils se connectent aux "lignes obligatoires", mais ne seront pas dessinés s'ils sont isolés
+Ce processus s'apparente à un travail de filtrage :
 
-La sortie finale est une image en noir et blanc, où les parties blanches sont les lignes de contour détectées et les parties noires sont les zones sans contours.
+- **Seuil haut** correspond à la « norme de tracé obligatoire » : seules les lignes de contour très évidentes et nettes seront tracées, comme les contours du visage d'une personne ou les structures d'un bâtiment.
+- **Seuil bas** correspond à la « norme de non-tracé absolu » : les contours trop faibles seront ignorés pour éviter de tracer du bruit et des lignes sans signification.
+- **Zone intermédiaire** : les contours situés entre les deux seuils seront tracés ensemble s'ils sont connectés à des « lignes de tracé obligatoire », mais ne seront pas tracés s'ils sont isolés.
+
+Le résultat final est une image en noir et blanc, où les parties blanches sont les lignes de contour détectées et les parties noires sont les zones sans contour.
 
 ## Entrées
 
-| Nom du Paramètre | Type de Données | Méthode d'Entrée | Valeur par Défaut | Plage de Valeurs | Description de Fonction |
-|-------------------|----------------|------------------|-------------------|------------------|-------------------------|
-| image | IMAGE | Connexion | - | - | Photo originale nécessitant l'extraction de contours |
-| seuil_bas | FLOAT | Saisie Manuelle | 0.4 | 0.01-0.99 | Seuil bas, détermine quels contours faibles ignorer. Des valeurs plus faibles préservent plus de détails mais peuvent produire du bruit |
-| seuil_haut | FLOAT | Saisie Manuelle | 0.8 | 0.01-0.99 | Seuil haut, détermine quels contours forts préserver. Des valeurs plus élevées ne gardent que les lignes de contour les plus évidentes |
+| Nom du paramètre | Type de données | Type d'entrée | Valeur par défaut | Plage      | Description de la fonction |
+|------------------|-----------------|---------------|-------------------|------------|----------------------------|
+| `image`          | IMAGE           | Entrée        | -                 | -          | Photo originale nécessitant une extraction des contours |
+| `low_threshold`  | FLOAT           | Widget        | 0.4               | 0.01-0.99  | Seuil bas, détermine quels contours faibles ignorer. Des valeurs plus basses préservent plus de détails mais peuvent générer du bruit |
+| `high_threshold` | FLOAT           | Widget        | 0.8               | 0.01-0.99  | Seuil haut, détermine quels contours forts conserver. Des valeurs plus élevées ne conservent que les lignes de contour les plus évidentes |
 
-## Résultats de Sortie
+## Sorties
 
-| Nom de Sortie | Type de Données | Description |
-|---------------|----------------|-------------|
-| image | IMAGE | Image de contours en noir et blanc, les lignes blanches sont les contours détectés, les zones noires sont les parties sans contours |
+| Nom de sortie | Type de données | Description |
+|---------------|-----------------|-------------|
+| `image`       | IMAGE           | Image de contour en noir et blanc, les lignes blanches sont les contours détectés, les zones noires sont les parties sans contour |
 
-## Comparaison des Paramètres
+## Comparaison des paramètres
 
-![Image Originale](./asset/input.webp)
+![Image originale](./asset/input.webp)
 
-![Comparaison des Paramètres](./asset/compare.webp)
+![Comparaison des paramètres](./asset/compare.webp)
 
-**Problèmes Courants :**
+**Problèmes courants :**
 
-- Contours brisés : Essayez de réduire le seuil haut
-- Trop de bruit : Augmentez le seuil bas
-- Détails importants manqués : Réduisez le seuil bas
-- Contours trop rugueux : Vérifiez la qualité et la résolution de l'image d'entrée
+- Contours brisés : essayez d'abaisser le seuil haut
+- Trop de bruit : augmentez le seuil bas
+- Détails importants manquants : abaissez le seuil bas
+- Contours trop grossiers : vérifiez la qualité et la résolution de l'image d'entrée

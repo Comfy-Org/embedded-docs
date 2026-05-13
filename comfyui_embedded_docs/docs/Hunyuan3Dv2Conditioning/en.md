@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2Conditioning/en.md)
 
-The Hunyuan3Dv2Conditioning node processes CLIP vision output to generate conditioning data for video models. It extracts the last hidden state embeddings from the vision output and creates both positive and negative conditioning pairs. The positive conditioning uses the actual embeddings while the negative conditioning uses zero-valued embeddings of the same shape.
+The Hunyuan3Dv2Conditioning node processes CLIP vision output to generate conditioning data for 3D models. It extracts the last hidden state embeddings from the vision output and creates both positive and negative conditioning pairs. The positive conditioning uses the actual embeddings while the negative conditioning uses zero-valued embeddings of the same shape.
 
 ## Inputs
 
@@ -14,3 +14,6 @@ The Hunyuan3Dv2Conditioning node processes CLIP vision output to generate condit
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | Positive conditioning data containing the CLIP vision embeddings |
 | `negative` | CONDITIONING | Negative conditioning data containing zero-valued embeddings matching the positive embeddings shape |
+
+---
+**Source fingerprint (SHA-256):** `3a32967d62a0645b0c375b17ab96e20805c2e0005e585dddf5a3a77d35994fec`

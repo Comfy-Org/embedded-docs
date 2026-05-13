@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicGuider/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicGuider/tr.md)
 
-BasicGuider düğümü, örnekleme süreci için basit bir kılavuzluk mekanizması oluşturur. Bir model ve koşullandırma verisini girdi olarak alır ve örnekleme sırasında üretim sürecini yönlendirmek için kullanılabilecek bir kılavuz nesnesi üretir. Bu düğüm, kontrollü üretim için gerekli temel kılavuzluk işlevselliğini sağlar.
+BasicGuider düğümü, örnekleme süreci için basit bir yönlendirme mekanizması oluşturur. Giriş olarak bir model ve koşullandırma verisi alır ve örnekleme sırasında üretim sürecini yönlendirmek için kullanılabilecek bir yönlendirici nesnesi üretir. Bu düğüm, kontrollü üretim için gereken temel yönlendirme işlevselliğini sağlar.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | gerekli | - | - | Kılavuzluk için kullanılacak model |
-| `koşullandırma` | CONDITIONING | gerekli | - | - | Üretim sürecine kılavuzluk eden koşullandırma verisi |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Evet | - | Yönlendirme için kullanılacak model |
+| `conditioning` | CONDITIONING | Evet | - | Üretim sürecini yönlendiren koşullandırma verisi |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `GUIDER` | GUIDER | Örnekleme sürecinde üretimi yönlendirmek için kullanılabilecek bir kılavuz nesnesi |
+| `GUIDER` | GUIDER | Örnekleme sürecinde üretimi yönlendirmek için kullanılabilecek bir yönlendirici nesnesi |
+
+---
+**Source fingerprint (SHA-256):** `012171caea6aacfadaabacb746be104ca783ae5ea5834cc4a67088233b835654`

@@ -17,3 +17,6 @@ Generates high-quality music and sound effects from text descriptions. This node
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The generated audio file based on the text prompt |
+
+---
+**Source fingerprint (SHA-256):** `5185241ca7a9b4bc38dfa8bafdae63ec3c151a3038a26ffe8e35492c0550fa88`

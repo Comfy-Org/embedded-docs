@@ -17,3 +17,6 @@ HappyHorse modelini kullanarak bir metin istemine dayalı video oluşturur. Bu d
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `VIDEO` | VIDEO | Oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `8c6a7c0c2b10bbc65ca54abc991e1f12e8846b31701ed65b49c5d71f1b2a63ec`

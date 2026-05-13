@@ -1,6 +1,6 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode2/pt-BR.md)
 
-Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode2/en.md)
+Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode2/en.md)
 
 ## Visão Geral
 
@@ -12,7 +12,7 @@ Este nó gera imagens a partir de descrições textuais usando o modelo Luma UNI
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | 1–6000 caracteres | Descrição textual da imagem desejada. |
 | `model` | COMBO | Sim | `"uni-1"`<br>`"uni-1-max"` | Modelo a ser usado para a geração. Selecionar um modelo revela configurações adicionais para aquele modelo. |
-| `seed` | INT | Sim | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não-determinísticos independentemente da semente. (padrão: 0) |
+| `seed` | INT | Sim | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) |
 
 ### Entradas Específicas do Modelo
 
@@ -25,10 +25,13 @@ Quando `"uni-1"` ou `"uni-1-max"` é selecionado para o parâmetro `model`, as s
 | `web_search` | BOOLEAN | Sim | Verdadeiro / Falso | Se o modelo pode pesquisar na web por contexto adicional. (padrão: Falso) |
 | `image_ref` | IMAGE | Não | Até 9 imagens | Imagens de referência para guiar a geração. |
 
-**Observação sobre restrições de `style` e `aspect_ratio`:** Se `style` for definido como `"manga"`, a `aspect_ratio` deve ser `"auto"` ou uma das seguintes proporções de retrato: `"2:3"`, `"9:16"`, `"1:2"`, `"1:3"`. Usar uma proporção paisagem ou quadrada com o estilo `"manga"` causará um erro.
+**Nota sobre restrições de `style` e `aspect_ratio`:** Se `style` for definido como `"manga"`, a `aspect_ratio` deve ser `"auto"` ou uma das seguintes proporções de retrato: `"2:3"`, `"9:16"`, `"1:2"`, `"1:3"`. Usar uma proporção paisagem ou quadrada com o estilo `"manga"` causará um erro.
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `image` | IMAGE | A imagem gerada como um tensor. |
+
+---
+**Source fingerprint (SHA-256):** `0a71bcd7c68c3610c162601b4c3f700034e47af8f16cf7853606753ad270c96e`

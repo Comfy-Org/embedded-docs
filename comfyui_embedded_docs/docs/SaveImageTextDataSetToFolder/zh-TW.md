@@ -1,20 +1,25 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/zh-TW.md)
 
-此節點將圖像列表及其對應的文字描述儲存到 ComfyUI 輸出目錄內的指定資料夾中。對於每個儲存為 PNG 檔案的圖像，都會建立一個具有相同基礎名稱的匹配文字檔案來儲存其描述。這對於建立生成圖像及其描述的有組織資料集非常有用。
+# 將圖片與文字數據集儲存至資料夾
 
-## 輸入參數
+將圖片與文字數據集儲存至資料夾節點會將圖片列表及其對應的文字說明儲存到 ComfyUI 輸出目錄中的指定資料夾。對於每張儲存為 PNG 檔案的圖片，系統會建立一個相同基本名稱的對應文字檔案來儲存其說明。這對於建立生成圖片及其描述的組織化數據集非常有用。
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 是 | - | 要儲存的圖像列表。 |
-| `texts` | STRING | 是 | - | 要儲存的文字描述列表。 |
-| `folder_name` | STRING | 否 | - | 用於儲存圖像的資料夾名稱（位於輸出目錄內）。(預設值: "dataset") |
-| `filename_prefix` | STRING | 否 | - | 已儲存圖像檔案名稱的前綴。(預設值: "image") |
+| `images` | IMAGE | 是 | - | 要儲存的圖片列表。 |
+| `texts` | STRING | 是 | - | 要儲存的文字說明列表。 |
+| `folder_name` | STRING | 否 | - | 儲存圖片的資料夾名稱（位於輸出目錄內）。（預設值："dataset"） |
+| `filename_prefix` | STRING | 否 | - | 儲存圖片檔案名稱的前綴。（預設值："image"） |
 
-**注意：** `images` 和 `texts` 輸入是列表。節點期望文字描述的數量與提供的圖像數量相符。每個描述將被儲存在一個與其配對圖像相對應的 `.txt` 檔案中。
+**注意：** `images` 和 `texts` 輸入皆為列表。節點預期文字說明的數量與提供的圖片數量相符。每個說明將儲存在與其對應圖片配對的 `.txt` 檔案中。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| - | - | 此節點沒有任何輸出。它直接將檔案儲存到檔案系統。 |
+| - | - | 此節點沒有任何輸出。它會直接將檔案儲存到檔案系統中。 |
+
+---
+**Source fingerprint (SHA-256):** `0c76f623e97b1502c850e0a59dc9edd7c241bcd823f5e32a8dcdd8b8160d2e44`

@@ -25,3 +25,6 @@ The Kandinsky5ImageToVideo node prepares conditioning and latent space data for 
 | `negative` | CONDITIONING | The modified negative conditioning, potentially updated with encoded start image data. |
 | `latent` | LATENT | An empty video latent tensor with zeros, shaped for the specified dimensions. |
 | `cond_latent` | LATENT | The clean, encoded latent representation of the provided start images. This is used internally to replace the noisy beginning of the generated video latents. |
+
+---
+**Source fingerprint (SHA-256):** `19d3b60be18f5adcd659563329988bce2511a1b27b33fd0ab3a9d93e265557f2`

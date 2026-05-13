@@ -14,3 +14,6 @@ The TomePatchModel node applies Token Merging (ToMe) to a diffusion model to red
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with token merging applied |
+
+---
+**Source fingerprint (SHA-256):** `23d63ffa1b468a8a41533cc926125f4ef566b13edd1d95a6ef1ae63096a9d878`

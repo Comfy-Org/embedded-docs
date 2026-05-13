@@ -1,6 +1,6 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ReferenceVideoApi/pt-BR.md)
 
-Este nó gera um vídeo apresentando uma pessoa ou objeto com base em materiais de referência fornecidos. Ele utiliza o modelo Wan 2.7 para criar vídeos a partir de um prompt de texto, suportando performances de personagem único e interações com múltiplos personagens. Você deve fornecer pelo menos um vídeo ou imagem de referência para que a geração funcione.
+Este nó gera um vídeo apresentando uma pessoa ou objeto com base em materiais de referência fornecidos. Ele utiliza o modelo Wan 2.7 para criar vídeos a partir de um prompt de texto, suportando performances de um único personagem e interações de múltiplos personagens. Você deve fornecer pelo menos um vídeo ou imagem de referência para que a geração funcione.
 
 ## Entradas
 
@@ -15,7 +15,7 @@ Este nó gera um vídeo apresentando uma pessoa ou objeto com base em materiais 
 | `model.reference_videos` | VIDEO | Não | - | Uma lista de vídeos de referência. Você pode adicionar até 3 vídeos. |
 | `model.reference_images` | IMAGE | Não | - | Uma lista de imagens de referência. Você pode adicionar até 5 imagens. |
 | `seed` | INT | Não | 0 a 2147483647 | Semente a ser usada para geração, que ajuda a controlar a aleatoriedade da saída (padrão: 0). |
-| `watermark` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água de IA ao resultado (padrão: False). Esta é uma configuração avançada. |
+| `watermark` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). Esta é uma configuração avançada. |
 
 **Restrições Importantes:**
 *   Você deve fornecer pelo menos um vídeo de referência ou imagem de referência nas entradas `model.reference_videos` ou `model.reference_images`.
@@ -26,3 +26,6 @@ Este nó gera um vídeo apresentando uma pessoa ou objeto com base em materiais 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `output` | VIDEO | O arquivo de vídeo gerado. |
+
+---
+**Source fingerprint (SHA-256):** `f28a765e310410fc62241e11dbfe25562c7ae16e8e6ffbfb004face7a7e2b727`

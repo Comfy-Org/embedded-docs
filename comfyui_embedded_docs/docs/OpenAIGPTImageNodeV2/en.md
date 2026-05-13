@@ -33,3 +33,6 @@ This node generates images using OpenAI's GPT Image API. It supports multiple mo
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The generated image or images. |
+
+---
+**Source fingerprint (SHA-256):** `a757208cf6cc151594599b35b0ef73f2caf7274189e948799211c0714a6a8f89`

@@ -34,7 +34,7 @@ Bir metin istemi ve isteğe bağlı referans görselleri kullanarak Flux.2 [pro]
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Evet | Yok | Görsel oluşturma veya düzenleme için istem (varsayılan: boş dize). |
 | `model` | COMBO | Evet | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | Kullanılacak Flux.2 model sürümü. Bir model seçmek, genişlik, yükseklik ve isteğe bağlı referans görselleri için ek parametrelerin kilidini açar. |
@@ -44,7 +44,7 @@ Bir metin istemi ve isteğe bağlı referans görselleri kullanarak Flux.2 [pro]
 
 Bir model seçtiğinizde aşağıdaki parametreler kullanılabilir hale gelir:
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model.width` | INT | Evet | 256 ile 1440 arası | Oluşturulan görselin piksel cinsinden genişliği. |
 | `model.height` | INT | Evet | 256 ile 1440 arası | Oluşturulan görselin piksel cinsinden yüksekliği. |
@@ -58,4 +58,7 @@ Bir model seçtiğinizde aşağıdaki parametreler kullanılabilir hale gelir:
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | BFL API sonucundan indirilen, oluşturulan görselin tensör olarak ifadesi. |
+| `image` | IMAGE | BFL API sonucundan indirilen, tensör olarak oluşturulan görsel. |
+
+---
+**Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`

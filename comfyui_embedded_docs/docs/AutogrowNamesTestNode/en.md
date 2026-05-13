@@ -15,3 +15,6 @@ This node is a test for the Autogrow input feature. It takes a dynamic number of
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | A single string containing the values from all provided float inputs, joined together with commas. |
+
+---
+**Source fingerprint (SHA-256):** `33e8b2e2c369d06979415c31ef2623cff55d98ecf49137c5cafbeba7cc3b0451`

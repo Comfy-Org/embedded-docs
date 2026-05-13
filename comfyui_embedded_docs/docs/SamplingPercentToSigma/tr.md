@@ -1,17 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/tr.md)
 
-SamplingPercentToSigma düğümü, bir örnekleme yüzdesi değerini modelin örnekleme parametrelerini kullanarak karşılık gelen bir sigma değerine dönüştürür. 0.0 ile 1.0 arasında bir yüzde değeri alır ve bunu modelin gürültü zamanlamasındaki uygun sigma değerine eşler; sınırlarda hesaplanan sigma değerini veya gerçek maksimum/minimum sigma değerlerini döndürme seçenekleri mevcuttur.
+## Genel Bakış SamplingPercentToSigma düğümü, modelin örnekleme parametrelerini kullanarak bir örnekleme yüzde değerini karşılık gelen sigma değerine dönüştürür. 0.0 ile 1.0 arasında bir yüzde değeri alır ve bunu modelin gürültü planındaki uygun sigma değerine eşler; sınırlarda hesaplanan sigma veya gerçek maksimum/minimum sigma değerlerini döndürme seçenekleri sunar.
 
-## Girişler
+## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Dönüşüm için kullanılan örnekleme parametrelerini içeren model |
-| `sampling_percent` | FLOAT | Evet | 0.0 - 1.0 | Sigma'ya dönüştürülecek örnekleme yüzdesi (varsayılan: 0.0) |
-| `return_actual_sigma` | BOOLEAN | Evet | - | Aralık kontrolleri için kullanılan değer yerine gerçek sigma değerini döndürür. Bu yalnızca 0.0 ve 1.0 değerlerindeki sonuçları etkiler. (varsayılan: False) |
+| `sampling_percent` | FLOAT | Evet | 0.0 ile 1.0 | Sigma'ya dönüştürülecek örnekleme yüzdesi (varsayılan: 0.0) |
+| `return_actual_sigma` | BOOLEAN | Evet | - | Aralık kontrolleri için kullanılan değer yerine gerçek sigma değerini döndürür. Bu yalnızca 0.0 ve 1.0'daki sonuçları etkiler. (varsayılan: False) |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `sigma_value` | FLOAT | Giriş örnekleme yüzdesine karşılık gelen dönüştürülmüş sigma değeri |
+
+---
+**Source fingerprint (SHA-256):** `88ecea0528dfeff75248a8dfee8381e1f73d1a2d9ee3e7f8e37fef0f2b2499ec`

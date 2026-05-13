@@ -1,15 +1,16 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentMultiply/es.md)
 
-El nodo LatentMultiply está diseñado para escalar la representación latente de muestras mediante un multiplicador especificado. Esta operación permite ajustar la intensidad o magnitud de las características dentro del espacio latente, habilitando el ajuste fino del contenido generado o la exploración de variaciones dentro de una dirección latente dada.
+El nodo LatentMultiply está diseñado para escalar la representación latente de muestras mediante un multiplicador específico. Esta operación permite ajustar la intensidad o magnitud de las características dentro del espacio latente, posibilitando el refinamiento del contenido generado o la exploración de variaciones en una dirección latente determinada.
 
 ## Entradas
 
-| Parámetro    | Data Type | Descripción |
+| Parámetro    | Tipo de Dato | Descripción |
 |--------------|-------------|-------------|
-| `muestras`    | `LATENT`    | El parámetro 'samples' representa las representaciones latentes a escalar. Es crucial para definir los datos de entrada sobre los cuales se realizará la operación de multiplicación. |
-| `multiplicador` | `FLOAT`     | El parámetro 'multiplier' especifica el factor de escala que se aplicará a las muestras latentes. Juega un papel clave en el ajuste de la magnitud de las características latentes, permitiendo un control matizado sobre la salida generada. |
+| `samples`    | `LATENT`    | El parámetro 'samples' representa las representaciones latentes que se escalarán. Es fundamental para definir los datos de entrada sobre los cuales se realizará la operación de multiplicación. |
+| `multiplier` | `FLOAT`     | El parámetro 'multiplier' especifica el factor de escala que se aplicará a las muestras latentes. Desempeña un papel clave en el ajuste de la magnitud de las características latentes, permitiendo un control preciso sobre la salida generada. |
 
 ## Salidas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | La salida es una versión modificada de las muestras latentes de entrada, escaladas por el multiplicador especificado. Esto permite la exploración de variaciones dentro del espacio latente ajustando la intensidad de sus características. |
+| `latent`  | `LATENT`    | La salida es una versión modificada de las muestras latentes de entrada, escaladas por el multiplicador especificado. Esto permite explorar variaciones dentro del espacio latente ajustando la intensidad de sus características. |

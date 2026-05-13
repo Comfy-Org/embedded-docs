@@ -1,17 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CenterCropImages/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CenterCropImages/tr.md)
 
-Center Crop Images düğümü, bir görüntüyü merkezinden belirtilen bir genişlik ve yüksekliğe kırpar. Girdi görüntüsünün merkezi bölgesini hesaplar ve tanımlanan boyutlarda dikdörtgen bir alan çıkarır. İstenen kırpma boyutu görüntüden büyükse, kırpma işlemi görüntünün sınırlarıyla kısıtlanır.
+Merkezi Kırpma Görselleri düğümü, bir görseli merkezinden belirtilen genişlik ve yüksekliğe kırpar. Giriş görselinin merkez bölgesini hesaplar ve tanımlanan boyutlarda dikdörtgen bir alan çıkarır. İstenen kırpma boyutu görselden büyükse, kırpma işlemi görselin sınırlarıyla kısıtlanır.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Kırpılacak girdi görüntüsü. |
-| `width` | INT | Hayır | 1 - 8192 | Kırpma alanının genişliği (varsayılan: 512). |
-| `height` | INT | Hayır | 1 - 8192 | Kırpma alanının yüksekliği (varsayılan: 512). |
+|-----------|-----------|---------|--------|----------|
+| `image` | IMAGE | Evet | - | Kırpılacak giriş görseli. |
+| `width` | INT | Evet | 1 ila 8192 | Kırpma alanının genişliği (varsayılan: 512). |
+| `height` | INT | Evet | 1 ila 8192 | Kırpma alanının yüksekliği (varsayılan: 512). |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `image` | IMAGE | Merkez kırpma işlemi sonucunda elde edilen görüntü. |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `image` | IMAGE | Merkezi kırpma işlemi sonucunda elde edilen görsel. |
+
+---
+**Source fingerprint (SHA-256):** `4361b6630ab1833e035d6ab04a130fb36fff33cddc36b54ff5a2d8e04534a555`

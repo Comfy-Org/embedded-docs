@@ -8,14 +8,17 @@ O nó Quiver Text to SVG gera uma imagem de Vetor Gráfico Escalável (SVG) a pa
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Descrição textual da saída SVG desejada. Esta é a instrução principal para o que deve ser gerado. |
 | `instructions` | STRING | Não | N/A | Orientação adicional de estilo ou formatação. Este é um parâmetro avançado e opcional. |
-| `reference_images` | IMAGE | Não | N/A | Até 4 imagens de referência para orientar a geração. Esta é uma entrada opcional. |
-| `model` | COMBO | Sim | Múltiplas opções disponíveis | Modelo a ser usado para a geração do SVG. As opções disponíveis são determinadas pela API Quiver. |
+| `reference_images` | IMAGE | Não | 0 a 4 imagens | Até 4 imagens de referência para orientar a geração. Esta é uma entrada opcional. |
+| `model` | COMBO | Sim | `"Quiver SVG v1"`<br>`"Quiver SVG v1 Max"`<br>`"Quiver SVG v1 Preview"` | Modelo a ser usado para a geração do SVG. As opções disponíveis são determinadas pela API Quiver. |
 | `seed` | INT | Sim | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente. Padrão: 0. |
 
-**Observação:** A entrada `reference_images` aceita no máximo 4 imagens. Se mais forem fornecidas, o nó gerará um erro.
+**Nota:** A entrada `reference_images` aceita no máximo 4 imagens. Se mais forem fornecidas, o nó gerará um erro.
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `SVG` | SVG | A imagem de Vetor Gráfico Escalável (SVG) gerada. |
+
+---
+**Source fingerprint (SHA-256):** `634758797a59e5a409424deee808e1d8b5b5852a86eac4bccd7f2634a19fb743`

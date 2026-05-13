@@ -20,3 +20,6 @@ This node takes a sequence of images and an optional audio track, and splits the
 | `keyframes_sequence` | IMAGE | A list of padded keyframe sequences, one for each segment. |
 | `keyframes_mask` | MASK | A list of masks indicating valid frames for each segment. |
 | `audio_segment` | AUDIO | A list of audio segments, one for each video segment. |
+
+---
+**Source fingerprint (SHA-256):** `c6a3ddca3fd61fcdb287fecb6969796eebd65e70f1174abdab57912586d27d00`

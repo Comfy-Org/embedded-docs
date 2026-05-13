@@ -30,15 +30,15 @@ Por favor traduce la siguiente documentación al español, sin incluir la nota i
 
 ## Resumen
 
-Genera imágenes utilizando el modelo Flux.2 [pro] o Flux.2 [max] a partir de un texto de indicación e imágenes de referencia opcionales. Este nodo envía tu solicitud a la API de BFL, consulta el resultado y devuelve la imagen generada como un tensor.
+Genera imágenes utilizando el modelo Flux.2 [pro] o Flux.2 [max] a partir de un texto de instrucción (prompt) e imágenes de referencia opcionales. Este nodo envía tu solicitud a la API de BFL, consulta el resultado y devuelve la imagen generada como un tensor.
 
 ## Entradas
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | N/A | Indicación para la generación o edición de la imagen (valor predeterminado: cadena vacía). |
-| `model` | COMBO | Sí | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La versión del modelo Flux.2 a utilizar. Al seleccionar un modelo se desbloquean parámetros adicionales para ancho, alto e imágenes de referencia opcionales. |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | La semilla aleatoria utilizada para crear el ruido. Se puede configurar para aleatorizar después de cada generación (valor predeterminado: 0). |
+| `prompt` | STRING | Sí | N/A | Instrucción para la generación o edición de la imagen (por defecto: cadena vacía). |
+| `model` | COMBO | Sí | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La versión del modelo Flux.2 a utilizar. La selección de un modelo desbloquea parámetros adicionales para ancho, alto e imágenes de referencia opcionales. |
+| `seed` | INT | Sí | 0 a 18446744073709551615 | La semilla aleatoria utilizada para crear el ruido. Se puede configurar para aleatorizar después de cada generación (por defecto: 0). |
 
 **Parámetros Adicionales (desbloqueados por la selección de `model`):**
 
@@ -52,10 +52,13 @@ Cuando seleccionas un modelo, los siguientes parámetros estarán disponibles:
 
 **Restricciones:**
 - El número máximo de imágenes de referencia es 8. Si se proporcionan más de 8 imágenes, se generará un error.
-- Los valores de `model.width` y `model.height` afectan el costo de la generación (consulta la lógica de la etiqueta de precio en el código fuente).
+- Los valores de `model.width` y `model.height` afectan el costo de la generación (consulta la lógica de la insignia de precio en el código fuente).
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
 | `image` | IMAGE | La imagen generada como un tensor, descargada desde el resultado de la API de BFL. |
+
+---
+**Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`

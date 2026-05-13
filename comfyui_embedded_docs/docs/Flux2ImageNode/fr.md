@@ -4,7 +4,7 @@ Voici la traduction en français de la documentation du nœud ComfyUI, en respec
 
 ## Aperçu
 
-Générez des images en utilisant le modèle Flux.2 [pro] ou Flux.2 [max] à partir d'une invite textuelle et d'images de référence optionnelles. Ce nœud envoie votre requête à l'API BFL, interroge le résultat et retourne l'image générée sous forme de tenseur.
+Générez des images en utilisant le modèle Flux.2 [pro] ou Flux.2 [max] à partir d'une invite textuelle et d'images de référence optionnelles. Ce nœud envoie votre requête à l'API BFL, interroge le résultat et renvoie l'image générée sous forme de tenseur.
 
 ## Entrées
 
@@ -33,3 +33,6 @@ Lorsque vous sélectionnez un modèle, les paramètres suivants deviennent dispo
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
 | `image` | IMAGE | L'image générée sous forme de tenseur, téléchargée depuis le résultat de l'API BFL. |
+
+---
+**Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`

@@ -1,19 +1,19 @@
-Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/loras`,
-et lira également les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml.
-Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderModelOnly/fr.md)
 
-Ce nœud est spécialisé dans le chargement d'un modèle LoRA sans nécessiter de modèle CLIP, en se concentrant sur l'amélioration ou la modification d'un modèle donné basé sur les paramètres LoRA. Il permet l'ajustement dynamique de la force du modèle via les paramètres LoRA, facilitant un contrôle précis du comportement du modèle.
+Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/loras`, et lit également les modèles depuis les chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
-## Entrées - Lora Loader Model Only
+Ce nœud est spécialisé dans le chargement d'un modèle LoRA sans nécessiter de modèle CLIP, en se concentrant sur l'amélioration ou la modification d'un modèle donné en fonction des paramètres LoRA. Il permet un ajustement dynamique de la puissance du modèle via les paramètres LoRA, facilitant un contrôle fin du comportement du modèle.
 
-| Champ             | Comfy dtype       | Description                                                                                   |
+## Entrées
+
+| Champ             | Type Comfy        | Description                                                                                   |
 |-------------------|-------------------|-----------------------------------------------------------------------------------------------|
-| `model`           | `MODEL`           | Le modèle de base pour les modifications, auquel les ajustements LoRA seront appliqués.        |
-| `lora_name`       | `COMBO[STRING]`   | Le nom du fichier LoRA à charger, spécifiant les ajustements à appliquer au modèle.            |
-| `strength_model`  | `FLOAT`           | Détermine l'intensité des ajustements LoRA, des valeurs plus élevées indiquant des modifications plus fortes. |
+| `model`           | `MODEL`           | Le modèle de base à modifier, auquel les ajustements LoRA seront appliqués.                   |
+| `lora_name`       | `COMBO[STRING]`   | Le nom du fichier LoRA à charger, spécifiant les ajustements à appliquer au modèle.           |
+| `strength_model`  | `FLOAT`           | Détermine l'intensité des ajustements LoRA, les valeurs plus élevées indiquant des modifications plus fortes. |
 
-## Sorties - Lora Loader Model Only
+## Sorties
 
-| Champ   | Data Type | Description                                                              |
-|---------|-------------|--------------------------------------------------------------------------|
-| `model` | `MODEL`     | Le modèle modifié avec les ajustements LoRA appliqués, reflétant les changements de comportement ou de capacités du modèle. |
+| Champ   | Type de données | Description                                                              |
+|---------|-----------------|--------------------------------------------------------------------------|
+| `model` | `MODEL`         | Le modèle modifié avec les ajustements LoRA appliqués, reflétant les changements de comportement ou de capacités du modèle. |

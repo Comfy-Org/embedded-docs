@@ -1,15 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecordAudio/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecordAudio/zh-TW.md)
 
-RecordAudio 節點載入透過音訊錄製介面錄製或選取的音訊檔案。它會處理音訊檔案並將其轉換為波形格式，供工作流程中其他音訊處理節點使用。此節點會自動偵測取樣率並準備音訊資料以供後續處理。
+## 概述
 
-## 輸入參數
+RecordAudio 節點會載入透過音訊錄製介面所錄製或選取的音訊檔案。它會處理音訊檔案，並將其轉換為工作流程中其他音訊處理節點可使用的波形格式。此節點會自動偵測取樣率，並準備好音訊資料以供後續處理。
 
-| 參數名稱 | 資料類型 | 是否必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO_RECORD | 是 | N/A | 來自音訊錄製介面的音訊錄製輸入 |
+| `audio` | AUDIO_RECORD | 是 | 不適用 | 來自音訊錄製介面的音訊錄製輸入 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `AUDIO` | AUDIO | 包含波形和取樣率資訊的已處理音訊資料 |
+| `AUDIO` | AUDIO | 包含波形與取樣率資訊的已處理音訊資料 |
+
+---
+**Source fingerprint (SHA-256):** `3648f3c71f60f69e9ca117e25e9706187470866a1869ba9b8e5feceb42a7493a`

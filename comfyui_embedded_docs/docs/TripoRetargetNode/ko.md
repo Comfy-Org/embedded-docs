@@ -1,20 +1,26 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/ko.md)
 
-TripoRetargetNode는 사전 정의된 애니메이션을 3D 캐릭터 모델에 적용하기 위해 모션 데이터를 리타겟팅합니다. 이전에 처리된 3D 모델을 입력받아 여러 프리셋 애니메이션 중 하나를 적용하여 애니메이션이 적용된 3D 모델 파일을 생성합니다. 이 노드는 Tripo API와 통신하여 애니메이션 리타겟팅 작업을 처리합니다.
+# TripoRetargetNode
+
+TripoRetargetNode는 사전 정의된 애니메이션을 3D 캐릭터 모델에 적용하여 모션 데이터를 리타겟팅합니다. 이 노드는 이전에 리깅된 3D 모델을 입력받아 여러 사전 설정 애니메이션 중 하나를 적용하고, 애니메이션이 적용된 3D 모델 파일을 출력으로 생성합니다. Tripo API와 통신하여 애니메이션 리타겟팅 작업을 처리합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | RIG_TASK_ID | 예 | - | 애니메이션을 적용할 이전에 처리된 3D 모델의 작업 ID |
-| `animation` | STRING | 예 | "preset:idle"<br>"preset:walk"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn" | 3D 모델에 적용할 애니메이션 프리셋 |
-| `auth_token` | AUTH_TOKEN_COMFY_ORG | 아니오 | - | Comfy.org API 접근을 위한 인증 토큰 |
-| `comfy_api_key` | API_KEY_COMFY_ORG | 아니오 | - | Comfy.org 서비스 접근을 위한 API 키 |
-| `unique_id` | UNIQUE_ID | 아니오 | - | 작업 추적을 위한 고유 식별자 |
+| `original_model_task_id` | RIG_TASK_ID | 예 | - | 애니메이션을 적용할 이전에 리깅된 3D 모델의 작업 ID |
+| `animation` | STRING | 예 | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | 3D 모델에 적용할 애니메이션 사전 설정입니다. 옵션에는 인간형 애니메이션(대기, 걷기, 달리기, 다이빙, 오르기, 점프, 베기, 쏘기, 피해, 넘어짐, 회전)과 생물체 애니메이션(사족보행 걷기, 육각보행 걷기, 팔각보행 걷기, 뱀형 행진, 수중 행진)이 포함됩니다. |
+| `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | 아니요 | - | Comfy.org API 접근을 위한 인증 토큰(숨김 매개변수) |
+| `api_key_comfy_org` | API_KEY_COMFY_ORG | 아니요 | - | Comfy.org 서비스 접근을 위한 API 키(숨김 매개변수) |
+| `unique_id` | UNIQUE_ID | 아니요 | - | 작업 추적을 위한 고유 식별자(숨김 매개변수) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 생성된 애니메이션 3D 모델 파일 |
+| `model_file` | STRING | 생성된 애니메이션 3D 모델 파일(하위 호환성 전용) |
 | `retarget task_id` | RETARGET_TASK_ID | 리타겟팅 작업 추적을 위한 작업 ID |
+| `GLB` | FILE3DGLB | GLB 형식의 애니메이션 3D 모델 |
+
+---
+**Source fingerprint (SHA-256):** `304326afdc1fa3e8c3593f151f771f93520e061802c831838c58ebc401b9e9e2`

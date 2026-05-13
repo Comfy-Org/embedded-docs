@@ -6,10 +6,13 @@ The SamplerEulerCFGpp node provides an Euler CFG++ sampling method for generatin
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `version` | STRING | Yes | `"regular"`<br>`"alternative"` | The implementation version of the Euler CFG++ sampler to use |
+| `version` | STRING | Yes | `"regular"`<br>`"alternative"` | The implementation version of the Euler CFG++ sampler to use (default: "regular") |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | Returns a configured Euler CFG++ sampler instance |
+
+---
+**Source fingerprint (SHA-256):** `f01732fc39a76fca697aaddefc8cec58d54ba9761eb8d93da806ddd162d42513`

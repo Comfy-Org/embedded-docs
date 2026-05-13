@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SolidMask/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SolidMask/tr.md)
 
-SolidMask düğümü, belirli bir değere sahip düzgün bir maske oluşturur. Belirli boyutlarda ve yoğunlukta maskeler oluşturmak için tasarlanmıştır ve çeşitli görüntü işleme ve maskeleme görevlerinde kullanışlıdır.
+SolidMask düğümü, tüm alanı boyunca belirtilen değerde tek tip bir maske oluşturur. Belirli boyutlarda ve yoğunlukta maskeler oluşturmak için tasarlanmıştır; çeşitli görüntü işleme ve maskeleme görevlerinde kullanışlıdır.
 
 ## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `değer`   | FLOAT       | Maskenin yoğunluk değerini belirler ve sonraki işlemlerde genel görünümünü ve kullanışlılığını etkiler. |
-| `genişlik`   | INT         | Oluşturulan maskenin genişliğini belirler ve doğrudan boyutunu ve en-boy oranını etkiler. |
-| `yükseklik`  | INT         | Oluşturulan maskenin yüksekliğini belirler ve boyutunu ile en-boy oranını etkiler. |
+| `value`   | FLOAT       | Maskenin yoğunluk değerini belirtir; genel görünümünü ve sonraki işlemlerdeki kullanışlılığını etkiler. |
+| `width`   | INT         | Oluşturulan maskenin genişliğini belirler; boyutunu ve en-boy oranını doğrudan etkiler. |
+| `height`  | INT         | Oluşturulan maskenin yüksekliğini ayarlar; boyutunu ve en-boy oranını etkiler. |
 
-## Çıkışlar
+## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | Belirtilen boyutlarda ve değerde düzgün bir maske çıktısı verir. |
+| `mask`    | MASK        | Belirtilen boyutlarda ve değerde tek tip bir maske çıktısı verir. |

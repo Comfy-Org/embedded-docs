@@ -13,3 +13,6 @@ The CFGZeroStar node applies a specialized guidance scaling technique to diffusi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `patched_model` | MODEL | The modified model with CFGZeroStar guidance scaling applied |
+
+---
+**Source fingerprint (SHA-256):** `1f5fcd1377c64609e28d85e453aaaa0bcc8f3ac322b7b7240f34f71aa113562a`

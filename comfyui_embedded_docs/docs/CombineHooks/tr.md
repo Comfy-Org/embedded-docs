@@ -1,20 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CombineHooks/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CombineHooks/tr.md)
 
-**## Genel Bakış**
+**Kancaları Birleştir [2]** düğümü, iki kanca grubunu tek bir birleşik kanca grubunda birleştirir. İki isteğe bağlı kanca girişi alır ve ComfyUI'nin kanca birleştirme işlevini kullanarak bunları birleştirir. Bu, işlemleri kolaylaştırmak için birden çok kanca yapılandırmasını tek bir noktada toplamanıza olanak tanır.
 
-Combine Hooks [2] düğümü, iki kanca grubunu tek bir birleşik kanca grubunda birleştirir. İki isteğe bağlı kanca girişi alır ve bunları ComfyUI'nin kanca birleştirme işlevselliğini kullanarak birleştirir. Bu, birden fazla kanca yapılandırmasını, süreçleri daha verimli hale getirmek için birleştirmenize olanak tanır.
+## Girişler
 
-## ## Girdiler
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `hooks_A` | HOOKS | Hayır | - | Birleştirilecek ilk kanca grubu |
+| `hooks_B` | HOOKS | Hayır | - | Birleştirilecek ikinci kanca grubu |
 
-| Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `hooks_A` | HOOKS | İsteğe Bağlı | Yok | - | Birleştirilecek ilk kanca grubu |
-| `hooks_B` | HOOKS | İsteğe Bağlı | Yok | - | Birleştirilecek ikinci kanca grubu |
+**Not:** Her iki giriş de isteğe bağlıdır, ancak düğümün çalışması için en az bir kanca grubu sağlanmalıdır. Yalnızca bir kanca grubu sağlanırsa, bu grup değiştirilmeden döndürülür.
 
-**Not:** Her iki giriş de isteğe bağlıdır, ancak düğümün çalışması için en az bir kanca grubu sağlanmalıdır. Eğer sadece bir kanca grubu sağlanırsa, bu grup değiştirilmeden döndürülür.
-
-## ## Çıktılar
+## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `hooks` | HOOKS | Her iki giriş grubundaki tüm kancaları içeren birleşik kanca grubu |
+
+---
+**Source fingerprint (SHA-256):** `558ceef1cebedd0b7e045b7d1eb1afa4316ea6a3c35f982968af132dca164126`

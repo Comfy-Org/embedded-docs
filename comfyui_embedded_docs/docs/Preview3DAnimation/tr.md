@@ -1,39 +1,39 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/tr.md)
 
-Preview3DAnimation düğümü öncelikle 3D model çıktılarını önizlemek için kullanılır. Bu düğüm iki girdi alır: biri Load3D düğümünden gelen `camera_info`, diğeri ise 3D model dosyasının yoludur. Model dosya yolu `ComfyUI/output` klasörü altında bulunmalıdır.
+Preview3DAnimation düğümü, temel olarak 3B model çıktılarını önizlemek için kullanılır. Bu düğüm iki girdi alır: biri Load3D düğümünden gelen `camera_info`, diğeri ise 3B model dosyasının yoludur. Model dosya yolu `ComfyUI/output` klasöründe bulunmalıdır.
 
 **Desteklenen Formatlar**
-Şu anda bu düğüm, `.gltf`, `.glb`, `.obj`, `.fbx` ve `.stl` dahil olmak üzere birden fazla 3D dosya formatını desteklemektedir.
+Şu anda bu düğüm, `.gltf`, `.glb`, `.obj`, `.fbx` ve `.stl` dahil olmak üzere birden çok 3B dosya formatını destekler.
 
-**3D Düğüm Tercihleri**
-3D düğümlerle ilgili bazı tercihler ComfyUI'nin ayarlar menüsünde yapılandırılabilir. Lütfen ilgili ayarlar için aşağıdaki belgelere başvurun:
+**3B Düğüm Tercihleri**
+3B düğümleriyle ilgili bazı tercihler, ComfyUI'nin ayarlar menüsünden yapılandırılabilir. İlgili ayarlar için lütfen aşağıdaki belgelere bakın:
 [Ayarlar Menüsü](https://docs.comfy.org/interface/settings/3d)
 
 ## Girdiler
 
-| Parametre Adı | Tür           | Açıklama                                  |
-| -------------- | -------------- | -------------------------------------------- |
-| camera_info    | LOAD3D_CAMERA  | Kamera bilgisi                           |
-| model_file     | STRING  | `ComfyUI/output/` altındaki model dosya yolu      |
+| Parametre Adı | Tür            | Açıklama                                  |
+| ------------- | -------------- | ----------------------------------------- |
+| camera_info   | LOAD3D_CAMERA  | Kamera bilgisi                            |
+| model_file    | STRING         | `ComfyUI/output/` altındaki model dosya yolu |
 
 ## Tuval Alanı Açıklaması
 
-Şu anda, ComfyUI ön yüzündeki 3D ile ilgili düğümler aynı tuval bileşenini paylaşır, bu nedenle bazı işlevsel farklılıklar dışında temel işlemleri büyük ölçüde tutarlıdır.
+Şu anda, ComfyUI ön yüzündeki 3B ile ilgili düğümler aynı tuval bileşenini paylaşır, bu nedenle bazı işlevsel farklılıklar dışında temel işlemleri büyük ölçüde tutarlıdır.
 
-> Aşağıdaki içerik ve arayüz esas olarak Load3D düğümüne dayanmaktadır. Lütfen belirli özellikler için gerçek düğüm arayüzüne başvurun.
+> Aşağıdaki içerik ve arayüz temel olarak Load3D düğümüne dayanmaktadır. Belirli özellikler için lütfen gerçek düğüm arayüzüne bakın.
 
-Tuval alanı çeşitli görünüm işlemlerini içerir, örneğin:
+Tuval alanı, aşağıdakiler gibi çeşitli görünüm işlemlerini içerir:
 
 - Önizleme görünümü ayarları (ızgara, arka plan rengi, önizleme görünümü)
-- Kamera kontrolü: Görüş Alanı (FOV), kamera türü
-- Genel aydınlatma yoğunluğu: ışık ayarı
+- Kamera kontrolü: Görüş alanı (FOV), kamera türü
+- Küresel aydınlatma yoğunluğu: aydınlatmayı ayarlama
 - Model dışa aktarma: `GLB`, `OBJ`, `STL` formatlarını destekler
 - vb.
 
-![Load 3D Node UI](../Preview3D/asset/preview3d_canvas.jpg)
+![Load 3D Düğümü Arayüzü](../Preview3D/asset/preview3d_canvas.jpg)
 
-1. Load 3D düğümünün birden fazla menüsünü ve gizli menülerini içerir
-2. 3D görünüm işlem ekseni
+1. Load 3D düğümünün birden çok menüsünü ve gizli menülerini içerir
+2. 3B görünüm işlem ekseni
 
 ### 1. Görünüm İşlemleri
 
@@ -44,60 +44,60 @@ Tuval alanı çeşitli görünüm işlemlerini içerir, örneğin:
 
 Görünüm kontrol işlemleri:
 
-- Sol tıklama + sürükleme: Görünümü döndür
-- Sağ tıklama + sürükleme: Görünümü kaydır
-- Orta tekerlek kaydırma veya orta tıklama + sürükleme: Yakınlaştır/Uzaklaştır
-- Koordinat ekseni: Görünümleri değiştir
+- Sol tık + sürükle: Görünümü döndürme
+- Sağ tık + sürükle: Görünümü kaydırma
+- Orta tekerlek kaydırma veya orta tık + sürükle: Yakınlaştırma/uzaklaştırma
+- Koordinat ekseni: Görünümleri değiştirme
 
 ### 2. Sol Menü İşlevleri
 
-![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![Menü](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
 
-Önizleme alanında, bazı görünüm işlem menüleri menü içinde gizlidir. Menü düğmesine tıklayarak farklı menüleri genişletebilirsiniz.
+Önizleme alanında, bazı görünüm işlem menüleri menüde gizlidir. Farklı menüleri genişletmek için menü düğmesine tıklayın.
 
 - 1. Sahne: Önizleme penceresi ızgarası, arka plan rengi, küçük resim ayarlarını içerir
-- 2. Model: Model işleme modu, doku malzemesi, yukarı yön ayarları
-- 3. Kamera: Ortografik ve perspektif görünümler arasında geçiş yap, perspektif açısını ayarla
-- 4. Işık: Sahne genel aydınlatma yoğunluğu
-- 5. Dışa Aktar: Modeli diğer formatlara dışa aktar (GLB, OBJ, STL)
+- 2. Model: Model oluşturma modu, doku malzemesi, yukarı yön ayarları
+- 3. Kamera: Dik ve perspektif görünümler arasında geçiş yapma, perspektif açısını ayarlama
+- 4. Işık: Sahne küresel aydınlatma yoğunluğu
+- 5. Dışa Aktar: Modeli diğer formatlara dışa aktarma (GLB, OBJ, STL)
 
 #### Sahne
 
-![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![sahne menüsü](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
 
-Sahne menüsü bazı temel sahne ayar işlevleri sağlar:
+Sahne menüsü, bazı temel sahne ayarlama işlevleri sağlar:
 
-1. Izgarayı Göster/Gizle
-2. Arka plan rengini ayarla
-3. Arka plan resmi yüklemek için tıkla
-4. Önizleme küçük resmini gizle
+1. Izgarayı göster/gizle
+2. Arka plan rengini ayarlama
+3. Arka plan resmi yüklemek için tıklama
+4. Önizleme küçük resmini gizleme
 
 #### Model
 
-![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![Menü_Sahne](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
 
-Model menüsü bazı modelle ilgili işlevler sağlar:
+Model menüsü, modelle ilgili bazı işlevler sağlar:
 
-1. **Yukarı yön**: Model için hangi eksenin yukarı yön olduğunu belirle
-2. **Malzeme modu**: Model işleme modlarını değiştir - Orijinal, Normal, Tel Kafes, Çizgi Sanatı
+1. **Yukarı yön**: Model için hangi eksenin yukarı yön olduğunu belirleme
+2. **Malzeme modu**: Model oluşturma modlarını değiştirme - Orijinal, Normal, Tel Kafes, Çizgi Sanatı
 
 #### Kamera
 
-![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![menü_modelmenü_kamera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
 
-Bu menü, ortografik ve perspektif görünümler arasında geçiş yapma ve perspektif açısı boyutu ayarları sağlar:
+Bu menü, dik ve perspektif görünümler arasında geçiş ve perspektif açısı boyutu ayarları sağlar:
 
-1. **Kamera**: Ortografik ve perspektif görünümler arasında hızlıca geçiş yap
-2. **Görüş Alanı (FOV)**: Görüş Alanı açısını ayarla
+1. **Kamera**: Dik ve perspektif görünümler arasında hızlı geçiş
+2. **FOV**: Görüş alanı (FOV) açısını ayarlama
 
 #### Işık
 
-![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![menü_modelmenü_kamera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
 
-Bu menü aracılığıyla, sahnenin genel aydınlatma yoğunluğunu hızlıca ayarlayabilirsiniz
+Bu menü aracılığıyla sahnenin küresel aydınlatma yoğunluğunu hızlıca ayarlayabilirsiniz
 
 #### Dışa Aktar
 
-![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![menü_dışa_aktar](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
-Bu menü, model formatlarını hızlıca dönüştürme ve dışa aktarma yeteneği sağlar
+Bu menü, model formatlarını hızlıca dönüştürme ve dışa aktarma olanağı sağlar

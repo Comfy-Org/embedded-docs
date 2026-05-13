@@ -1,19 +1,20 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/ar.md)
 
-# ترجمة وثيقة OpticalFlowLoader
-
 ## نظرة عامة
 
-يقوم بتحميل نموذج التدفق البصري من مجلد `models/optical_flow/`. حالياً، يتم دعم تنسيق RAFT-large الخاص بمكتبة torchvision فقط، وهو النموذج المستخدم في عقدة VOIDWarpedNoise. لا يقوم ComfyUI بتنزيل أوزان التدفق البصري تلقائياً؛ يجب عليك وضع ملف نقطة التحقق يدوياً في دليل `models/optical_flow/`.
+يقوم بتحميل نموذج التدفق البصري من مجلد `models/optical_flow/`. في الوقت الحالي، يتم دعم تنسيق RAFT-large الخاص بمكتبة torchvision فقط، وهو النموذج المستخدم في عقدة VOIDWarpedNoise. لا يقوم ComfyUI بتنزيل أوزان التدفق البصري تلقائيًا؛ يجب عليك وضع ملف نقطة التحقق يدويًا في دليل `models/optical_flow/`.
 
 ## المدخلات
 
 | المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
 |---------|--------------|--------|--------|-------|
-| `model_name` | STRING | نعم | قائمة الملفات في مجلد `models/optical_flow/` | نموذج التدفق البصري المراد تحميله. يجب وضع الملفات في مجلد `optical_flow`. حالياً، يتم دعم ملف `raft_large.pth` الخاص بمكتبة torchvision فقط. |
+| `model_name` | STRING | نعم | قائمة الملفات في مجلد `models/optical_flow/` | نموذج التدفق البصري المراد تحميله. يجب وضع الملفات في مجلد `optical_flow`. في الوقت الحالي، يتم دعم ملف `raft_large.pth` الخاص بمكتبة torchvision فقط. |
 
 ## المخرجات
 
 | اسم المخرج | نوع البيانات | الوصف |
 |------------|--------------|-------|
-| `OPTICAL_FLOW` | MODEL | نموذج التدفق البصري المُحمَّل، مغلف في ModelPatcher لاستخدامه مع العقد الأخرى. |
+| `OPTICAL_FLOW` | MODEL | نموذج التدفق البصري المحمّل، مغلف في ModelPatcher لاستخدامه مع العقد الأخرى. |
+
+---
+**Source fingerprint (SHA-256):** `94bab0bb7e2b9d9b3f343337799eccc744f79275b72a6fad9681b408b4a0820b`

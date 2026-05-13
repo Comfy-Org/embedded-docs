@@ -19,3 +19,6 @@ This node removes the background from an image using the Bria RMBG 2.0 service. 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The processed image with its background removed. |
+
+---
+**Source fingerprint (SHA-256):** `2b2dd3ca0d026af1a2bf3f7222165928527b05b65817073b50230ff18d39bc6c`

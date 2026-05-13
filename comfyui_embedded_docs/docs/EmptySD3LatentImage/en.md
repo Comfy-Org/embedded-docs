@@ -14,4 +14,7 @@ The EmptySD3LatentImage node creates a blank latent image tensor specifically fo
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `LATENT` | LATENT | A latent tensor containing blank samples with SD3-compatible dimensions |
+| `LATENT` | LATENT | A latent tensor containing blank samples with SD3-compatible dimensions. The tensor has 16 channels and is spatially downscaled by a factor of 8 compared to the input width and height. |
+
+---
+**Source fingerprint (SHA-256):** `21eb5b6385b9b0db95d48fa2f4b85eafe44f865af11ee194945ab7ffe54b6acc`

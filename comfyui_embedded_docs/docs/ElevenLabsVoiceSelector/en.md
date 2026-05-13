@@ -13,3 +13,6 @@ The ElevenLabs Voice Selector node allows you to choose a specific voice from a 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `voice` | STRING | The unique identifier for the selected ElevenLabs voice, which can be passed to other nodes for text-to-speech generation. |
+
+---
+**Source fingerprint (SHA-256):** `b87f5b2b8accca87d0593ab1f4bcfccaa84b393ddb3fd9121758a87871592cee`

@@ -20,3 +20,6 @@ Le nœud EmptyARVideoLatent crée une représentation latente vide pour la gén�
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
 | `LATENT` | LATENT | Un tenseur latent rempli de zéros, représentant un espace latent vidéo vide avec les dimensions, la longueur et la taille de lot spécifiées. La forme du tenseur est [batch_size, 16, lat_t, height/8, width/8], où lat_t est calculé à partir de la longueur. |
+
+---
+**Source fingerprint (SHA-256):** `5ae25e2ccb24e627eae583d14c5bcba8b576a227b7a489f3cd4bc56738928513`

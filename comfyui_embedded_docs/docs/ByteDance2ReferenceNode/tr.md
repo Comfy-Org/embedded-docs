@@ -28,23 +28,29 @@ ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış 
 
 Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
 
-ByteDance Seedance 2.0 Referans Videoya düğümü, metin isteminize ve sağlanan referans materyallerine dayanarak videolar oluşturmak, düzenlemek veya uzatmak için Seedance 2.0 AI modelini kullanır. Oluşturma sürecine rehberlik etmesi için referans olarak görseller, videolar ve ses kullanabilir; video düzenleme ve uzatma gibi görevleri destekler.
+ByteDance Seedance 2.0 Referans Videoya düğümü, metin isteminize ve sağlanan referans materyallerine dayanarak videolar oluşturmak, düzenlemek veya genişletmek için Seedance 2.0 AI modelini kullanır. Oluşturma sürecini yönlendirmek için referans olarak görseller, videolar ve ses kullanabilir; video düzenleme ve genişletme gibi görevleri destekler.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Evet | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | Kullanılacak AI modeli. Seedance 2.0 maksimum kalite içindir, Seedance 2.0 Fast ise hız için optimize edilmiştir. Bir model seçmek, `prompt`, `resolution`, `duration`, `ratio`, `generate_audio` için ek zorunlu girdileri ve `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` ile `auto_downscale` için isteğe bağlı girdileri ortaya çıkarır. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol etmek için kullanılan bir sayı. Seed değerinden bağımsız olarak sonuçlar deterministik değildir (varsayılan: 0). |
+| `model` | COMBO | Evet | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | Kullanılacak AI modeli. Seedance 2.0 maksimum kalite içindir, Seedance 2.0 Fast ise hız için optimize edilmiştir. Bir model seçmek, `prompt`, `resolution`, `duration`, `ratio`, `generate_audio` için ek zorunlu girişleri ve `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` ve `auto_downscale` için isteğe bağlı girişleri ortaya çıkarır. |
+| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol etmek için kullanılan bir sayı. Tohum değerinden bağımsız olarak sonuçlar deterministik değildir (varsayılan: 0). |
 | `watermark` | BOOLEAN | Hayır | `True` / `False` | Oluşturulan videoya filigran eklenip eklenmeyeceği (varsayılan: False). |
 
 **Önemli Kısıtlamalar:**
-*   Düğümün çalışması için en az bir referans görseli veya videosu (`reference_images`, `reference_videos` veya `reference_assets` girdileri aracılığıyla sağlanan) gereklidir.
-*   Her referans videosu en az 1,8 saniye uzunluğunda olmalıdır. Tüm referans videolarının birleşik süresi 15,1 saniyeyi geçemez.
-*   Her referans ses klibi en az 1,8 saniye uzunluğunda olmalıdır. Tüm referans seslerinin birleşik süresi 15,1 saniyeyi geçemez.
+*   Düğümün çalışması için en az bir referans görseli veya videosu (`reference_images`, `reference_videos` veya `reference_assets` girişleri aracılığıyla sağlanan) gereklidir.
+*   Toplamda en fazla 9 referans görseli kullanılabilir (`reference_images` ve `reference_assets` kaynaklarındakiler dahil).
+*   Toplamda en fazla 3 referans videosu kullanılabilir (`reference_videos` ve `reference_assets` kaynaklarındakiler dahil).
+*   Toplamda en fazla 3 referans ses klibi kullanılabilir (`reference_audios` ve `reference_assets` kaynaklarındakiler dahil).
+*   Her referans videosu en az 1,8 saniye uzunluğunda olmalıdır. Tüm referans videolarının toplam süresi 15,1 saniyeyi geçemez.
+*   Her referans ses klibi en az 1,8 saniye uzunluğunda olmalıdır. Tüm referans seslerinin toplam süresi 15,1 saniyeyi geçemez.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `video` | VIDEO | Oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `72c8a2f821b9fb9853a4d0428785c432d0852ae562080292817f8a7d52967c7f`

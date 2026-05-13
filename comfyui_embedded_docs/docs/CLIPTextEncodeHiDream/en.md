@@ -1,21 +1,24 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/en.md)
 
-The CLIPTextEncodeHiDream node processes multiple text inputs using different language models and combines them into a single conditioning output. It tokenizes text from four different sources (CLIP-L, CLIP-G, T5-XXL, and LLaMA) and encodes them using a scheduled encoding approach. This allows for more sophisticated text conditioning by leveraging multiple language models simultaneously.
+The CLIPTextEncodeHiDream node processes four separate text inputs using different language models (CLIP-L, CLIP-G, T5-XXL, and LLaMA) and combines them into a single conditioning output. It tokenizes each text input with its corresponding model and encodes them together using a scheduled encoding approach, enabling more sophisticated text conditioning by leveraging multiple language models simultaneously.
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | Required Input | - | - | The CLIP model used for tokenization and encoding |
-| `clip_l` | STRING | Multiline Text | - | - | Text input for CLIP-L model processing |
-| `clip_g` | STRING | Multiline Text | - | - | Text input for CLIP-G model processing |
-| `t5xxl` | STRING | Multiline Text | - | - | Text input for T5-XXL model processing |
-| `llama` | STRING | Multiline Text | - | - | Text input for LLaMA model processing |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `clip` | CLIP | Yes | - | The CLIP model used for tokenization and encoding |
+| `clip_l` | STRING | Yes | - | Text input for CLIP-L model processing. Supports multiline text and dynamic prompts. |
+| `clip_g` | STRING | Yes | - | Text input for CLIP-G model processing. Supports multiline text and dynamic prompts. |
+| `t5xxl` | STRING | Yes | - | Text input for T5-XXL model processing. Supports multiline text and dynamic prompts. |
+| `llama` | STRING | Yes | - | Text input for LLaMA model processing. Supports multiline text and dynamic prompts. |
 
-**Note:** All text inputs support dynamic prompts and multiline text entry. The node requires all four text parameters to be provided for proper functioning, as each contributes to the final conditioning output through the scheduled encoding process.
+**Note:** All four text inputs (`clip_l`, `clip_g`, `t5xxl`, and `llama`) are required for proper functioning, as each contributes to the final conditioning output through the scheduled encoding process.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | The combined conditioning output from all processed text inputs |
+| `CONDITIONING` | CONDITIONING | The combined conditioning output from all processed text inputs, encoded using the scheduled encoding method |
+
+---
+**Source fingerprint (SHA-256):** `51d117d82a9d833f095e874bf442d5cf8c46a12313fda6b98e628fa988797565`

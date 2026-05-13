@@ -1,25 +1,28 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/tr.md)
 
-LTXVAddGuide düğümü, girdi görüntülerini veya videolarını kodlayarak ve bunları koşullandırma verilerine ana kareler olarak dahil ederek, gizli dizilere video koşullandırma kılavuzu ekler. Girdiyi bir VAE kodlayıcı aracılığıyla işler ve ortaya çıkan gizli öğeleri belirtilen kare konumlarına stratejik olarak yerleştirirken, hem pozitif hem de negatif koşullandırmayı ana kare bilgileriyle günceller. Düğüm, kare hizalama kısıtlamalarını ele alır ve koşullandırma etkisinin gücü üzerinde kontrol sağlar.
+LTXVAddGuide düğümü, giriş görüntülerini veya videolarını kodlayarak ve bunları kare anahtarları olarak koşullandırma verilerine dahil ederek, latent dizilere video koşullandırma yönlendirmesi ekler. Girişi bir VAE kodlayıcı aracılığıyla işler ve ortaya çıkan latentleri, belirtilen kare konumlarına stratejik olarak yerleştirirken, hem pozitif hem de negatif koşullandırmayı kare anahtarı bilgileriyle günceller. Düğüm, kare hizalama kısıtlamalarını yönetir ve koşullandırma etkisinin gücü üzerinde kontrol sağlar.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `pozitif` | CONDITIONING | Evet | - | Ana kare kılavuzu ile değiştirilecek pozitif koşullandırma girdisi |
-| `negatif` | CONDITIONING | Evet | - | Ana kare kılavuzu ile değiştirilecek negatif koşullandırma girdisi |
-| `vae` | VAE | Evet | - | Girdi görüntüsünün/video karelerinin kodlanmasında kullanılan VAE modeli |
-| `gizli` | LATENT | Evet | - | Koşullandırma karelerini alacak olan girdi gizli dizisi |
-| `görüntü` | IMAGE | Evet | - | Gizli videoyu koşullandırmak için kullanılan görüntü veya video. 8*n + 1 kare olmalıdır. Video 8*n + 1 kare değilse, en yakın 8*n + 1 kareye kırpılacaktır. |
-| `kare_indeksi` | INT | Hayır | -9999 - 9999 | Koşullandırmanın başlayacağı kare indeksi. Tek kareli görüntüler veya 1-8 kareye sahip videolar için herhangi bir frame_idx değeri kabul edilebilir. 9+ kareye sahip videolar için frame_idx 8'e bölünebilir olmalıdır, aksi takdirde en yakın 8 katına aşağı yuvarlanacaktır. Negatif değerler videonun sonundan sayılır. (varsayılan: 0) |
-| `güç` | FLOAT | Hayır | 0.0 - 1.0 | Koşullandırma etkisinin gücü; 1.0 tam koşullandırma uygular, 0.0 ise hiç koşullandırma uygulamaz (varsayılan: 1.0) |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+|-----------|-----------|---------|--------|----------|
+| `positive` | CONDITIONING | Evet | - | Kare anahtarı yönlendirmesi ile değiştirilecek pozitif koşullandırma girişi |
+| `negative` | CONDITIONING | Evet | - | Kare anahtarı yönlendirmesi ile değiştirilecek negatif koşullandırma girişi |
+| `vae` | VAE | Evet | - | Giriş görüntüsünü/video karelerini kodlamak için kullanılan VAE modeli |
+| `latent` | LATENT | Evet | - | Koşullandırma karelerini alacak giriş latent dizisi |
+| `image` | IMAGE | Evet | - | Latent videonun koşullandırılacağı görüntü veya video. 8*n + 1 kare olmalıdır. Video 8*n + 1 kare değilse, en yakın 8*n + 1 kareye kırpılır. |
+| `frame_idx` | INT | Hayır | -9999 ila 9999 | Koşullandırmanın başlatılacağı kare dizini. Tek kareli görüntüler veya 1-8 kareli videolar için herhangi bir frame_idx değeri kabul edilebilir. 9+ kareli videolar için frame_idx, 8'e bölünebilir olmalıdır, aksi takdirde 8'in en yakın katına yuvarlanır. Negatif değerler videonun sonundan itibaren sayılır. (varsayılan: 0) |
+| `strength` | FLOAT | Hayır | 0.0 ila 1.0 | Koşullandırma etkisinin gücü; 1.0 tam koşullandırma uygularken, 0.0 hiç koşullandırma uygulamaz (varsayılan: 1.0) |
 
-**Not:** Girdi görüntüsü/videosu 8*n + 1 desenini takip eden bir kare sayısına sahip olmalıdır (örneğin, 1, 9, 17, 25 kare). Girdi bu deseni aşarsa, otomatik olarak en yakın geçerli kare sayısına kırpılacaktır.
+**Not:** Giriş görüntüsü/videosu, 8*n + 1 desenini izleyen bir kare sayısına sahip olmalıdır (örneğin, 1, 9, 17, 25 kare). Giriş bu deseni aşarsa, otomatik olarak en yakın geçerli kare sayısına kırpılır.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türı | Açıklama |
-|-------------|-----------|-------------|
-| `negatif` | CONDITIONING | Ana kare kılavuz bilgisi ile güncellenmiş pozitif koşullandırma |
-| `gizli` | CONDITIONING | Ana kare kılavuz bilgisi ile güncellenmiş negatif koşullandırma |
-| `gizli` | LATENT | Birleştirilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi içeren gizli dizi |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `positive` | CONDITIONING | Kare anahtarı yönlendirme bilgileriyle güncellenmiş pozitif koşullandırma |
+| `negative` | CONDITIONING | Kare anahtarı yönlendirme bilgileriyle güncellenmiş negatif koşullandırma |
+| `latent` | LATENT | Dahil edilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi ile latent dizi |
+
+---
+**Source fingerprint (SHA-256):** `e7f4e6ed25cddd4b50b98341c63fc9915afc4956317ac7a5a9121fdc53c03a2d`

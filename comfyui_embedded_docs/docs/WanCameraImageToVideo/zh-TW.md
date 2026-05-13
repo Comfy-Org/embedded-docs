@@ -1,28 +1,33 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/zh-TW.md)
 
-WanCameraImageToVideo 節點透過生成用於影片生成的潛在表徵，將圖像轉換為影片序列。它處理條件輸入和可選的起始圖像，以創建可用於影片模型的影片潛在表徵。該節點支援相機條件和 CLIP 視覺輸出，以增強影片生成的控制。
+# WanCameraImageToVideo 節點文檔
 
-## 輸入參數
+WanCameraImageToVideo 節點透過生成用於影片生成的潛在表示，將影像轉換為影片序列。它處理條件化輸入和可選的起始影像，以建立可與影片模型搭配使用的影片潛在變數。該節點支援攝影機條件和 CLIP 視覺輸出，以增強對影片生成的控制。
 
-| 參數名稱 | 資料類型 | 是否必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 是 | - | 用於影片生成的正面條件提示 |
-| `negative` | CONDITIONING | 是 | - | 在影片生成中要避免的負面條件提示 |
-| `vae` | VAE | 是 | - | 用於將圖像編碼到潛在空間的 VAE 模型 |
-| `width` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的寬度（像素）（預設值：832，間隔：16） |
-| `height` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的高度（像素）（預設值：480，間隔：16） |
-| `length` | INT | 是 | 1 至 MAX_RESOLUTION | 影片序列中的幀數（預設值：81，間隔：4） |
+| `positive` | CONDITIONING | 是 | - | 用於影片生成的正向條件化提示 |
+| `negative` | CONDITIONING | 是 | - | 用於影片生成中要避免的負向條件化提示 |
+| `vae` | VAE | 是 | - | 用於將影像編碼到潛在空間的 VAE 模型 |
+| `width` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片寬度（像素）（預設值：832，步進值：16） |
+| `height` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片高度（像素）（預設值：480，步進值：16） |
+| `length` | INT | 是 | 1 至 MAX_RESOLUTION | 影片序列中的影格數（預設值：81，步進值：4） |
 | `batch_size` | INT | 是 | 1 至 4096 | 同時生成的影片數量（預設值：1） |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | 否 | - | 可選的 CLIP 視覺輸出，用於附加條件控制 |
-| `start_image` | IMAGE | 否 | - | 可選的起始圖像，用於初始化影片序列 |
-| `camera_conditions` | WAN_CAMERA_EMBEDDING | 否 | - | 可選的相機嵌入條件，用於影片生成 |
+| `clip_vision_output` | CLIP_VISION_OUTPUT | 否 | - | 可選的 CLIP 視覺輸出，用於額外的條件化處理 |
+| `start_image` | IMAGE | 否 | - | 可選的起始影像，用於初始化影片序列。當提供此參數時，影片的前幾個影格將基於此影像，並套用遮罩來混合起始影格與生成的內容。該影像會調整大小以符合指定的寬度和高度。 |
+| `camera_conditions` | WAN_CAMERA_EMBEDDING | 否 | - | 可選的攝影機嵌入條件，用於影片生成。當提供此參數時，這些條件會同時應用於正向和負向條件化處理。 |
 
-**注意：** 當提供 `start_image` 時，該節點會使用它來初始化影片序列，並應用遮罩將起始幀與生成的內容混合。`camera_conditions` 和 `clip_vision_output` 參數是可選的，但當提供時，它們會修改正面和負面提示的條件。
+**注意：** 當提供 `start_image` 時，節點會使用它來初始化影片序列，並套用遮罩來混合起始影格與生成的內容。`camera_conditions` 和 `clip_vision_output` 參數為可選項，但當提供時，它們會修改正向和負向提示的條件化處理。
 
-## 輸出參數
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 應用相機條件和 CLIP 視覺輸出後的修改版正面條件 |
-| `negative` | CONDITIONING | 應用相機條件和 CLIP 視覺輸出後的修改版負面條件 |
-| `latent` | LATENT | 生成的影片潛在表徵，可供影片模型使用 |
+| `positive` | CONDITIONING | 已套用攝影機條件和 CLIP 視覺輸出的修改後正向條件化處理 |
+| `negative` | CONDITIONING | 已套用攝影機條件和 CLIP 視覺輸出的修改後負向條件化處理 |
+| `latent` | LATENT | 生成的影片潛在表示，用於與影片模型搭配使用。潛在張量的維度為 [batch_size, 16, frames, height/8, width/8]，其中 frames 的計算方式為 ((length - 1) // 4) + 1。 |
+
+---
+**Source fingerprint (SHA-256):** `19d76097d580b14663afd0aab58810f9dc1685cd32e8f67aa43c820be65239e7`

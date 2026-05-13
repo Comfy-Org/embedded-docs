@@ -1,19 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/zh-TW.md)
 
-{heading_overview}
+## 概述
 
-PreviewAudio 節點會生成一個臨時音訊預覽檔案，可在介面中顯示。它繼承自 SaveAudio，但會將檔案儲存到臨時目錄並使用隨機檔案名稱前綴。這讓使用者能夠快速預覽音訊輸出，而無需建立永久檔案。
+PreviewAudio 節點會建立一個臨時的音訊預覽，可直接在介面中播放。此節點接收音訊資料作為輸入，並產生預覽小工具，讓使用者無需儲存永久檔案即可聆聽音訊輸出。
 
-{heading_inputs}
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `音訊` | AUDIO | 是 | - | 要預覽的音訊資料 |
-| `prompt` | PROMPT | 否 | - | 內部使用的隱藏參數 |
-| `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 內部使用的隱藏參數 |
+| `audio` | AUDIO | 是 | - | 要預覽的音訊資料 |
 
-{heading_outputs}
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `ui` | UI | 在介面中顯示音訊預覽 |
+| `ui` | UI | 在介面中顯示音訊播放器小工具，用於預覽音訊 |
+
+---
+**Source fingerprint (SHA-256):** `3f4b38e9768abde9d7f406c5442660679b80532799dfff8af20b2ea178268582`

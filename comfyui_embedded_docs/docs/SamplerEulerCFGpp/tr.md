@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerCFGpp/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerCFGpp/tr.md)
 
-SamplerEulerCFGpp düğümü, çıktılar oluşturmak için bir Euler CFG++ örnekleme yöntemi sağlar. Bu düğüm, kullanıcı tercihine göre seçilebilen iki farklı Euler CFG++ örnekleyici uygulama versiyonu sunar.
+SamplerEulerCFGpp düğümü, çıktı üretmek için bir Euler CFG++ örnekleme yöntemi sağlar. Bu düğüm, Euler CFG++ örnekleyicisinin kullanıcı tercihine göre seçilebilen iki farklı uygulama sürümünü sunar.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `sürüm` | STRING | Evet | `"regular"`<br>`"alternative"` | Kullanılacak Euler CFG++ örnekleyicinin uygulama versiyonu |
+| `version` | STRING | Evet | `"regular"`<br>`"alternative"` | Kullanılacak Euler CFG++ örnekleyicisinin uygulama sürümü (varsayılan: "regular") |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | Yapılandırılmış bir Euler CFG++ örnekleyici örneği döndürür |
+
+---
+**Source fingerprint (SHA-256):** `f01732fc39a76fca697aaddefc8cec58d54ba9761eb8d93da806ddd162d42513`

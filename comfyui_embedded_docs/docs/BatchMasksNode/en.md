@@ -17,3 +17,6 @@ The Batch Masks node combines multiple individual mask inputs into a single batc
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | MASK | A single batched mask containing all the input masks stacked together. |
+
+---
+**Source fingerprint (SHA-256):** `8eb7a2a2d8108b619387b049d92348b8e9fc6d5e94e78c856c8520b88cdf77f2`

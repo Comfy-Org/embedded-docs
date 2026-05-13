@@ -22,3 +22,6 @@ This node prepares an image-to-video generation setup for AR (Auto-Regressive) v
 |-------------|-----------|-------------|
 | `MODEL` | MODEL | The cloned model with the encoded start image stored in its configuration for video generation. |
 | `LATENT` | LATENT | An empty latent tensor with the correct dimensions for the video generation process. |
+
+---
+**Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`

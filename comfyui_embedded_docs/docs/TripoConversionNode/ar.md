@@ -1,22 +1,40 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoConversionNode/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoConversionNode/ar.md)
 
-يُحوّل TripoConversionNode نماذج ثلاثية الأبعاد بين تنسيقات الملفات المختلفة باستخدام Tripo API. يأخذ معرف مهمة من عملية Tripo سابقة ويحول النموذج الناتج إلى التنسيق المطلوب مع خيارات تصدير متنوعة.
+بالتأكيد، إليك الترجمة العربية للوثيقة التقنية الخاصة بـ TripoConversionNode مع الالتزام التام بقواعد الترجمة المحددة:
+
+تقوم عقدة TripoConversionNode بتحويل النماذج ثلاثية الأبعاد بين صيغ ملفات مختلفة باستخدام واجهة برمجة تطبيقات Tripo. تأخذ هذه العقدة معرف مهمة من عملية Tripo سابقة (توليد نموذج، أو تجهيزه بالهيكل العظمي، أو إعادة توجيهه) وتحول النموذج الناتج إلى الصيغة التي تريدها مع خيارات تصدير متنوعة.
 
 ## المدخلات
 
-| المعامل | نوع البيانات | مطلوب | النطاق | الوصف |
+| المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | نعم | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | معرف المهمة من عملية Tripo سابقة (إنشاء نموذج، أو إعداد الهيكل، أو إعادة الاستهداف) |
-| `format` | COMBO | نعم | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | تنسيق الملف الهدف للنموذج ثلاثي الأبعاد المحوّل |
-| `quad` | BOOLEAN | لا | صحيح/خطأ | ما إذا كان يجب تحويل المثلثات إلى رباعيات (الافتراضي: خطأ) |
-| `face_limit` | INT | لا | -1 إلى 500000 | الحد الأقصى لعدد الأوجه في النموذج الناتج، استخدم -1 لعدم وجود حد (الافتراضي: -1) |
+| `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | نعم | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | معرف المهمة من عملية Tripo سابقة (توليد نموذج، أو تجهيزه بالهيكل العظمي، أو إعادة توجيهه) |
+| `format` | COMBO | نعم | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | صيغة الملف الهدف للنموذج ثلاثي الأبعاد المحول |
+| `quad` | BOOLEAN | لا | True/False | هل سيتم تحويل المثلثات إلى أشكال رباعية (الافتراضي: False) |
+| `face_limit` | INT | لا | -1 إلى 2000000 | الحد الأقصى لعدد الأسطح في النموذج الناتج، استخدم -1 لعدم وجود حد (الافتراضي: -1) |
 | `texture_size` | INT | لا | 128 إلى 4096 | حجم القوام الناتج بالبكسل (الافتراضي: 4096) |
-| `texture_format` | COMBO | لا | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | تنسيق القوام المُصدّر (الافتراضي: JPEG) |
+| `texture_format` | COMBO | لا | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | صيغة القوام المصدرة (الافتراضي: JPEG) |
+| `force_symmetry` | BOOLEAN | لا | True/False | هل سيتم فرض التماثل على النموذج (الافتراضي: False) |
+| `flatten_bottom` | BOOLEAN | لا | True/False | هل سيتم تسوية الجزء السفلي من النموذج (الافتراضي: False) |
+| `flatten_bottom_threshold` | FLOAT | لا | 0.0 إلى 1.0 | عتبة تسوية الجزء السفلي (الافتراضي: 0.0) |
+| `pivot_to_center_bottom` | BOOLEAN | لا | True/False | هل سيتم نقل نقطة الارتكاز إلى منتصف الجزء السفلي من النموذج (الافتراضي: False) |
+| `scale_factor` | FLOAT | لا | 0.0 فما فوق | عامل القياس المطبق على النموذج (الافتراضي: 1.0) |
+| `with_animation` | BOOLEAN | لا | True/False | هل سيتم تضمين بيانات الرسوم المتحركة في التصدير (الافتراضي: False) |
+| `pack_uv` | BOOLEAN | لا | True/False | هل سيتم حزم إحداثيات UV (الافتراضي: False) |
+| `bake` | BOOLEAN | لا | True/False | هل سيتم خبز القوام (الافتراضي: False) |
+| `part_names` | STRING | لا | قائمة مفصولة بفواصل | قائمة بأسماء الأجزاء المراد تضمينها في التصدير، مفصولة بفواصل (الافتراضي: "") |
+| `fbx_preset` | COMBO | لا | blender<br>mixamo<br>3dsmax | الإعداد المسبق لتصدير FBX المراد استخدامه (الافتراضي: blender) |
+| `export_vertex_colors` | BOOLEAN | لا | True/False | هل سيتم تصدير ألوان الرؤوس (الافتراضي: False) |
+| `export_orientation` | COMBO | لا | align_image<br>default | وضع اتجاه التصدير (الافتراضي: default) |
+| `animate_in_place` | BOOLEAN | لا | True/False | هل سيتم تحريك النموذج في مكانه (الافتراضي: False) |
 
-**ملاحظة:** يجب أن يكون `original_model_task_id` معرف مهمة صالحًا من عملية Tripo سابقة (إنشاء نموذج، أو إعداد الهيكل، أو إعادة الاستهداف).
+**ملاحظة:** يجب أن يكون `original_model_task_id` معرف مهمة صالحًا من عملية Tripo سابقة (توليد نموذج، أو تجهيزه بالهيكل العظمي، أو إعادة توجيهه). المعاملات الموسومة بأنها "متقدمة" اختيارية ولا تحتاج إلى تكوين إلا لمتطلبات تصدير محددة.
 
 ## المخرجات
 
 | اسم المخرج | نوع البيانات | الوصف |
 |-------------|-----------|-------------|
-| *لا توجد مخرجات مسماة* | - | تعالج هذه العقدة عملية التحويل بشكل غير متزامن وتُرجع النتيجة من خلال نظام Tripo API |
+| *لا توجد مخرجات مسماة* | - | تقوم هذه العقدة بمعالجة التحويل بشكل غير متزامن وتعيد النتيجة من خلال نظام واجهة برمجة تطبيقات Tripo |
+
+---
+**Source fingerprint (SHA-256):** `b11ecab98701b7153a350f5e4980ddc2f446c0a12be3402ca98a5e6de60bd7ce`

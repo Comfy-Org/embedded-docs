@@ -6,11 +6,14 @@ The Empty Ace Step 1.5 Latent Audio node creates an empty latent tensor designed
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `seconds` | FLOAT | No | 1.0 - 1000.0 | The duration of the audio to generate, in seconds (default: 120.0). |
-| `batch_size` | INT | No | 1 - 4096 | The number of latent images in the batch (default: 1). |
+| `seconds` | FLOAT | Yes | 1.0 - 1000.0 | The duration of the audio to generate, in seconds (default: 120.0). |
+| `batch_size` | INT | Yes | 1 - 4096 | The number of latent images in the batch (default: 1). |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `LATENT` | LATENT | An empty latent tensor representing silent audio, with a type identifier of "audio". |
+
+---
+**Source fingerprint (SHA-256):** `8d2b0b8ea110362d5e43a72a27df0ff2012a8577fbaa4fef2bd7905c9c64bd6a`

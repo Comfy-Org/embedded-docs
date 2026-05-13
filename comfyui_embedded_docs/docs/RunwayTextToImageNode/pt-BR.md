@@ -4,8 +4,8 @@ O nó Runway Text to Image gera imagens a partir de prompts de texto usando o mo
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Prompt de texto para a geração (padrão: "") |
 | `ratio` | COMBO | Sim | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Proporção de aspecto para a imagem gerada |
 | `reference_image` | IMAGE | Não | - | Imagem de referência opcional para orientar a geração |
@@ -15,5 +15,8 @@ O nó Runway Text to Image gera imagens a partir de prompts de texto usando o mo
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
+|---------------|--------------|-----------|
 | `output` | IMAGE | A imagem gerada com base no prompt de texto e na imagem de referência opcional |
+
+---
+**Source fingerprint (SHA-256):** `140f8e6b07216892d84f2d7fbc3afaf1c390e98ddedf27d4926032066a783f67`

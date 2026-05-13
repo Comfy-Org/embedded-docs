@@ -1,24 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetProperties/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetProperties/zh-TW.md)
 
-## 概述
+# ConditioningSetProperties 節點
 
-ConditioningSetProperties 節點透過調整強度、區域設定以及應用可選的遮罩或時間步範圍，來修改條件化資料的屬性。它允許您設定特定參數來控制條件化資料在圖像生成過程中的應用方式，從而影響條件化對生成過程的作用。
+ConditioningSetProperties 節點透過調整強度、區域設定以及應用可選遮罩、鉤子或時間步範圍來修改條件資料的屬性。它允許您透過設定特定參數來控制條件如何影響生成過程，這些參數會影響條件資料在圖像生成期間的應用方式。
 
 ## 輸入
 
-| 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 描述 |
+| 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 說明 |
 |-----------|-----------|------------|---------|-------|-------------|
-| `cond_NEW` | CONDITIONING | 必填 | - | - | 要修改的條件化資料 |
-| `強度` | FLOAT | 必填 | 1.0 | 0.0-10.0 | 控制條件化效果的強度 |
-| `設定條件區域` | STRING | 必填 | default | ["default", "mask bounds"] | 決定條件化區域的應用方式 |
-| `遮罩` | MASK | 可選 | - | - | 用於限制條件化應用區域的可選遮罩 |
-| `hooks` | HOOKS | 可選 | - | - | 用於自定義處理的可選掛鉤函數 |
-| `時間步驟` | TIMESTEPS_RANGE | 可選 | - | - | 用於限制條件化生效時間的可選時間步範圍 |
+| `cond_NEW` | CONDITIONING | 必要 | - | - | 要修改的條件資料 |
+| `strength` | FLOAT | 必要 | 1.0 | 0.0 - 10.0 (步長: 0.01) | 控制條件效果的強度 |
+| `set_cond_area` | STRING | 必要 | default | ["default", "mask bounds"] | 決定條件區域的應用方式。選擇 "default" 使用標準行為，或選擇 "mask bounds" 限制在遮罩區域內 |
+| `mask` | MASK | 可選 | - | - | 可選遮罩，用於限制條件應用的區域 |
+| `hooks` | HOOKS | 可選 | - | - | 用於自訂處理的可選鉤子函數 |
+| `timesteps` | TIMESTEPS_RANGE | 可選 | - | - | 可選時間步範圍，用於限制條件生效的時間 |
 
-**注意：** 當提供 `mask` 時，可將 `set_cond_area` 參數設定為 "mask bounds"，以將條件化應用限制在遮罩區域內。
+**注意：** 當提供 `mask` 時，可以將 `set_cond_area` 參數設定為 "mask bounds"，以將條件應用限制在遮罩區域內。`hooks` 參數允許透過鉤子函數進行自訂處理，而 `timesteps` 則將條件效果限制在生成過程中的特定時間步範圍內。
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | 具有更新屬性的修改後條件化資料 |
+| `CONDITIONING` | CONDITIONING | 已更新屬性的修改後條件資料 |
+
+---
+**Source fingerprint (SHA-256):** `5e3f5348f6df8f2fa1c1d42b883efcab3ee07d933e219f11fa48730aacc168d7`

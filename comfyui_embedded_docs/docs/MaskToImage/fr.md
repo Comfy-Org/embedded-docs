@@ -1,14 +1,15 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskToImage/fr.md)
 
-Le nœud `MaskToImage` est conçu pour convertir un masque en format image. Cette transformation permet la visualisation et le traitement ultérieur des masques en tant qu'images, facilitant ainsi un pont entre les opérations basées sur les masques et les applications basées sur les images.
+Le nœud `MaskToImage` est conçu pour convertir un masque au format image. Cette transformation permet la visualisation et le traitement ultérieur des masques sous forme d'images, facilitant ainsi le pont entre les opérations basées sur les masques et les applications basées sur les images.
 
 ## Entrées
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `masque`    | `MASK`      | L'entrée du masque est essentielle pour le processus de conversion, servant de données source qui seront transformées en format image. Cette entrée dicte la forme et le contenu de l'image résultante. |
+| Paramètre | Type de données | Description |
+|-----------|-----------------|-------------|
+| `mask`    | `MASK`          | L'entrée du masque est essentielle au processus de conversion, servant de source de données qui sera transformée au format image. Cette entrée détermine la forme et le contenu de l'image résultante. |
 
 ## Sorties
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La sortie est une représentation image du masque d'entrée, permettant l'inspection visuelle et d'autres manipulations basées sur l'image. |
+| Paramètre | Type de données | Description |
+|-----------|-----------------|-------------|
+| `image`   | `IMAGE`         | La sortie est une représentation image du masque d'entrée, permettant une inspection visuelle et des manipulations ultérieures basées sur l'image. |

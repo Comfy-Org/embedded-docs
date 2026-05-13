@@ -17,3 +17,6 @@ Este nodo carga un modelo de interpolación de fotogramas desde un archivo y lo 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
 | `FRAME_INTERPOLATION_MODEL` | MODEL | El modelo de interpolación de fotogramas cargado y configurado, listo para usar en otros nodos. |
+
+---
+**Source fingerprint (SHA-256):** `497c20d5123bcbfd321dc4a659250ce3e0903e55c3a0274d3ed45710d75573d9`

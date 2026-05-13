@@ -1,25 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/zh-TW.md)
 
-{heading_overview}
+## 輸入
 
-SV3D_Conditioning 節點用於為 SV3D 模型的 3D 影片生成準備條件資料。它接收初始圖像，並透過 CLIP 視覺和 VAE 編碼器進行處理，以創建正向和負向條件資料，以及潛在表示。該節點根據指定的影片幀數生成用於多幀影片生成的攝影機仰角和方位角序列。
-
-{heading_inputs}
-
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `clip_vision` | CLIP_VISION | 是 | - | 用於編碼輸入圖像的 CLIP 視覺模型 |
-| `初始影像` | IMAGE | 是 | - | 作為 3D 影片生成起點的初始圖像 |
+| `init_image` | IMAGE | 是 | - | 作為 3D 影片生成起點的初始圖像 |
 | `vae` | VAE | 是 | - | 用於將圖像編碼到潛在空間的 VAE 模型 |
-| `寬度` | INT | 否 | 16 至 MAX_RESOLUTION | 生成影片幀的輸出寬度（預設值：576，必須能被 8 整除） |
-| `高度` | INT | 否 | 16 至 MAX_RESOLUTION | 生成影片幀的輸出高度（預設值：576，必須能被 8 整除） |
-| `影片幀數` | INT | 否 | 1 至 4096 | 為影片序列生成的幀數（預設值：21） |
-| `仰角` | FLOAT | 否 | -90.0 至 90.0 | 3D 視圖中攝影機的仰角角度（單位：度，預設值：0.0） |
+| `width` | INT | 否 | 16 至 MAX_RESOLUTION | 生成影片畫面的輸出寬度（預設值：576，必須為 8 的倍數） |
+| `height` | INT | 否 | 16 至 MAX_RESOLUTION | 生成影片畫面的輸出高度（預設值：576，必須為 8 的倍數） |
+| `video_frames` | INT | 否 | 1 至 4096 | 影片序列要生成的影格數（預設值：21） |
+| `elevation` | FLOAT | 否 | -90.0 至 90.0 | 3D 視角的相機俯仰角度（預設值：0.0） |
 
-{heading_outputs}
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 包含圖像嵌入和攝影機參數的正向條件資料，用於生成 |
-| `negative` | CONDITIONING | 帶有零值嵌入的負向條件資料，用於對比生成 |
-| `latent` | LATENT | 一個空的潛在張量，其維度與指定的影片幀數和解析度相匹配 |
+| `positive` | CONDITIONING | 正向條件化資料，包含用於生成的圖像嵌入和相機參數 |
+| `negative` | CONDITIONING | 負向條件化資料，嵌入值歸零，用於對比生成 |
+| `latent` | LATENT | 空白的潛在張量，其維度與指定的影片影格數和解析度相符 |
+
+---
+**Source fingerprint (SHA-256):** `be02939aa4cdd1785eb445034a27d08a90e390a497fa9697fb769f0ce26e6d2f`

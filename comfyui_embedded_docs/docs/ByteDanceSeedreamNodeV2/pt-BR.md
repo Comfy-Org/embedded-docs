@@ -4,7 +4,7 @@ Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver su
 
 ## Visão Geral
 
-Este nó gera ou edita imagens usando os modelos Seedream da ByteDance (versões 4.0, 4.5 e 5.0). Ele pode criar novas imagens a partir de um prompt de texto ou editar imagens existentes fornecendo imagens de referência, suportando resoluções de até 4K.
+Este nó gera ou edita imagens usando os modelos Seedream da ByteDance (versões 4.0, 4.5 e 5.0 Lite). Ele pode criar novas imagens a partir de um prompt de texto ou editar imagens existentes fornecendo imagens de referência, suportando resoluções de até 4K.
 
 ## Entradas
 
@@ -22,7 +22,7 @@ Ao selecionar um modelo, parâmetros adicionais ficam disponíveis:
 - **Predefinição de Tamanho**: Um menu suspenso para selecionar uma resolução de imagem predefinida (ex.: "2048x2048", "1024x1024"). As predefinições disponíveis dependem do modelo selecionado.
 - **Largura**: A largura da imagem gerada em pixels (padrão: 2048).
 - **Altura**: A altura da imagem gerada em pixels (padrão: 2048).
-- **Máximo de Imagens**: O número máximo de imagens a serem geradas (padrão: 1). Quando definido como 1, a geração sequencial de imagens é desabilitada.
+- **Máximo de Imagens**: O número máximo de imagens a serem geradas (padrão: 1). Quando definido como 1, a geração sequencial de imagens é desativada.
 - **Imagens de Referência**: Até 10 (para Seedream 4.0 e 4.5) ou 14 (para Seedream 5.0 Lite) imagens de referência para edição. As imagens devem ter uma proporção entre 1:3 e 3:1.
 - **Falhar em Parcial**: Se ativado, o nó gerará um erro se nem todas as imagens solicitadas forem geradas com sucesso (padrão: Falso).
 
@@ -43,3 +43,6 @@ Ao selecionar um modelo, parâmetros adicionais ficam disponíveis:
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `image` | IMAGE | A imagem gerada ou editada como um tensor. Se múltiplas imagens foram solicitadas, elas são concatenadas em um único lote. |
+
+---
+**Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`

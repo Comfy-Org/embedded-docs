@@ -17,3 +17,6 @@ The ImageHistogram node analyzes the color distribution of an input image. It ca
 | `red` | HISTOGRAM | A histogram showing the distribution of pixel intensities in the red color channel. |
 | `green` | HISTOGRAM | A histogram showing the distribution of pixel intensities in the green color channel. |
 | `blue` | HISTOGRAM | A histogram showing the distribution of pixel intensities in the blue color channel. |
+
+---
+**Source fingerprint (SHA-256):** `9bfcdb2907ab1e5cb2a9a736671fb9286b0e6ce6439fab95187f691b969ea53d`

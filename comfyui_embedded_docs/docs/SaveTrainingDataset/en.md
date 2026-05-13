@@ -16,3 +16,6 @@ This node saves a prepared training dataset to your computer's hard drive. It ta
 ## Outputs
 
 This node does not produce any output data. Its function is to save files to your disk.
+
+---
+**Source fingerprint (SHA-256):** `1b0108be7362c0cb8ba16ffbf94cf42be2d04159aacbabe1ff0890083d1733b3`

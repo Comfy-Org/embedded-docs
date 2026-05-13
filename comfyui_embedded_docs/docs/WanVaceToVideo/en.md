@@ -28,3 +28,6 @@ The WanVaceToVideo node processes video conditioning data for video generation m
 | `negative` | CONDITIONING | Negative conditioning with video control data applied |
 | `latent` | LATENT | Empty latent tensor ready for video generation |
 | `trim_latent` | INT | Number of latent frames to trim when reference image is used |
+
+---
+**Source fingerprint (SHA-256):** `66e50a360dc99ac49cac8f3f1c8649bf4298da2934c1bd9a0bc7cfbec620b291`

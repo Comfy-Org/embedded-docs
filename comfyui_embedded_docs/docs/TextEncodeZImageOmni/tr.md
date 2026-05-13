@@ -1,24 +1,27 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeZImageOmni/tr.md)
 
-TextEncodeZImageOmni düğümü, bir metin istemini ve isteğe bağlı referans görsellerini, görsel üretim modelleri için uygun bir koşullandırma formatına kodlayan gelişmiş bir koşullandırma düğümüdür. En fazla üç görseli işleyebilir, bunları isteğe bağlı olarak bir görsel kodlayıcı ve/veya bir VAE ile kodlayarak referans latents (gizli temsiller) üretebilir ve bu görsel referansları, belirli bir şablon yapısı kullanarak metin istemiyle bütünleştirir.
+TextEncodeZImageOmni düğümü, bir metin istemini ve isteğe bağlı referans görüntülerini, görüntü oluşturma modelleri için uygun bir koşullandırma formatına kodlayan gelişmiş bir koşullandırma düğümüdür. En fazla üç görüntüyü işleyebilir, bunları isteğe bağlı olarak bir görüntü kodlayıcı ve/veya VAE ile kodlayarak referans gizil değişkenler üretebilir ve bu görsel referansları belirli bir şablon yapısı kullanarak metin istemiyle bütünleştirir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip` | CLIP | Evet | | Metin istemini tokenize etmek ve kodlamak için kullanılan CLIP modeli. |
-| `image_encoder` | CLIPVision | Hayır | | İsteğe bağlı bir görsel kodlayıcı model. Sağlandığında, giriş görsellerini kodlamak için kullanılacak ve ortaya çıkan gömme vektörleri (embedding) koşullandırmaya eklenecektir. |
-| `prompt` | STRING | Evet | | Kodlanacak metin istemi. Bu alan çok satırlı giriş ve dinamik istemleri destekler. |
-| `auto_resize_images` | BOOLEAN | Hayır | | Etkinleştirildiğinde (varsayılan: True), giriş görselleri VAE ile kodlanmadan önce piksel alanlarına göre otomatik olarak yeniden boyutlandırılacaktır. |
-| `vae` | VAE | Hayır | | İsteğe bağlı bir VAE modeli. Sağlandığında, giriş görsellerini gizli temsillere (latent) kodlamak için kullanılacak ve bu temsiller referans latents olarak koşullandırmaya eklenecektir. |
-| `image1` | IMAGE | Hayır | | Birinci isteğe bağlı referans görseli. |
-| `image2` | IMAGE | Hayır | | İkinci isteğe bağlı referans görseli. |
-| `image3` | IMAGE | Hayır | | Üçüncü isteğe bağlı referans görseli. |
+| `clip` | CLIP | Evet | | Metin istemini tokenleştirmek ve kodlamak için kullanılan CLIP modeli. |
+| `image_encoder` | CLIPVision | Hayır | | İsteğe bağlı bir görüntü kodlayıcı modeli. Sağlanırsa, giriş görüntülerini kodlamak için kullanılır ve elde edilen gömme vektörleri koşullandırmaya eklenir. |
+| `prompt` | STRING | Evet | | Kodlanacak metin istemi. Bu alan çok satırlı girişi ve dinamik istemleri destekler. |
+| `auto_resize_images` | BOOLEAN | Hayır | | Etkinleştirildiğinde (varsayılan: True), giriş görüntüleri VAE'ye kodlanmak üzere gönderilmeden önce piksel alanlarına göre otomatik olarak yeniden boyutlandırılır. |
+| `vae` | VAE | Hayır | | İsteğe bağlı bir VAE modeli. Sağlanırsa, giriş görüntülerini gizil temsillere kodlamak için kullanılır ve bu temsiller referans gizil değişkenler olarak koşullandırmaya eklenir. |
+| `image1` | IMAGE | Hayır | | İlk isteğe bağlı referans görüntüsü. |
+| `image2` | IMAGE | Hayır | | İkinci isteğe bağlı referans görüntüsü. |
+| `image3` | IMAGE | Hayır | | Üçüncü isteğe bağlı referans görüntüsü. |
 
-**Not:** Düğüm en fazla üç görsel (`image1`, `image2`, `image3`) kabul edebilir. `image_encoder` ve `vae` girişleri yalnızca en az bir görsel sağlandığında kullanılır. `auto_resize_images` True ve bir `vae` bağlı olduğunda, görseller kodlanmadan önce toplam piksel alanı yaklaşık 1024x1024 olacak şekilde yeniden boyutlandırılır.
+**Not:** Düğüm en fazla üç görüntü kabul edebilir (`image1`, `image2`, `image3`). `image_encoder` ve `vae` girişleri yalnızca en az bir görüntü sağlanmışsa kullanılır. `auto_resize_images` True olduğunda ve bir `vae` bağlıyken, görüntüler kodlamadan önce toplam piksel alanı 1024x1024'e yakın olacak şekilde yeniden boyutlandırılır.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | Kodlanmış metin istemini içeren ve görsel sağlandıysa kodlanmış görsel gömme vektörlerini ve/veya referans latents'ı içerebilen nihai koşullandırma çıktısı. |
+| `CONDITIONING` | CONDITIONING | Kodlanmış metin istemini içeren ve görüntü sağlanmışsa kodlanmış görüntü gömme vektörlerini ve/veya referans gizil değişkenlerini içerebilen nihai koşullandırma çıktısı. |
+
+---
+**Source fingerprint (SHA-256):** `daa4205acdf72503180eeedb4142708d239d4ff0f689012a298264ae2d8ea949`

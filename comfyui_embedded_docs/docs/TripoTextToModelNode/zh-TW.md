@@ -1,29 +1,36 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextToModelNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextToModelNode/zh-TW.md)
 
-使用 Tripo 的 API，根據文字提示同步生成 3D 模型。此節點接收文字描述並創建具有可選紋理和材質屬性的 3D 模型。
+# Tripo 文字轉模型節點
 
-## 輸入參數
+根據文字提示使用 Tripo API 同步生成 3D 模型。此節點接收文字描述，並建立具有可選紋理和材質屬性的 3D 模型。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | 是 | - | 用於生成 3D 模型的文字描述（多行輸入） |
-| `negative_prompt` | STRING | 否 | - | 描述在生成模型中應避免內容的文字（多行輸入） |
-| `model_version` | COMBO | 否 | 多個選項可用 | 用於生成的 Tripo 模型版本 |
-| `style` | COMBO | 否 | 多個選項可用 | 生成模型的風格設定（預設："None"） |
+| `negative_prompt` | STRING | 否 | - | 描述生成模型中應避免內容的文字（多行輸入） |
+| `model_version` | COMBO | 否 | 提供多個選項 | 用於生成的 Tripo 模型版本（預設：v2.5-20250123） |
+| `style` | COMBO | 否 | 提供多個選項 | 生成模型的樣式設定（預設："None"） |
 | `texture` | BOOLEAN | 否 | - | 是否為模型生成紋理（預設：True） |
 | `pbr` | BOOLEAN | 否 | - | 是否生成 PBR（基於物理的渲染）材質（預設：True） |
-| `image_seed` | INT | 否 | - | 圖像生成的隨機種子（預設：42） |
+| `image_seed` | INT | 否 | - | 影像生成的隨機種子（預設：42） |
 | `model_seed` | INT | 否 | - | 模型生成的隨機種子（預設：42） |
 | `texture_seed` | INT | 否 | - | 紋理生成的隨機種子（預設：42） |
 | `texture_quality` | COMBO | 否 | "standard"<br>"detailed" | 紋理生成的品質等級（預設："standard"） |
-| `face_limit` | INT | 否 | -1 到 500000 | 生成模型中的最大面數，-1 表示無限制（預設：-1） |
-| `quad` | BOOLEAN | 否 | - | 是否生成基於四邊形的幾何體而非三角形（預設：False） |
+| `face_limit` | INT | 否 | -1 至 2000000 | 生成模型中的最大面數，-1 表示無限制（預設：-1） |
+| `quad` | BOOLEAN | 否 | - | 是否生成四邊形幾何體而非三角形（預設：False） |
+| `geometry_quality` | COMBO | 否 | "standard"<br>"detailed" | 幾何體生成的品質等級（預設："standard"） |
 
-**注意：** `prompt` 參數為必填項，不能為空。如果未提供提示，節點將引發錯誤。
+**注意：** `prompt` 參數為必要參數，不可為空。若未提供提示詞，此節點將會引發錯誤。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成的 3D 模型檔案 |
+| `model_file` | STRING | 生成的 3D 模型檔案（僅為向後相容性保留） |
 | `model task_id` | MODEL_TASK_ID | 模型生成過程的唯一任務識別碼 |
+| `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型 |
+
+---
+**Source fingerprint (SHA-256):** `f73316e0a50adfb6fe22ca6a20a2a5b36a6597abf0f4ddae9183d9e4a45cb46d`

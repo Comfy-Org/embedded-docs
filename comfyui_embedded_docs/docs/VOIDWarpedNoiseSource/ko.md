@@ -15,3 +15,6 @@
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
 | `NOISE` | NOISE | SamplerCustomAdvanced와 함께 사용할 수 있는 노이즈 소스 |
+
+---
+**Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`

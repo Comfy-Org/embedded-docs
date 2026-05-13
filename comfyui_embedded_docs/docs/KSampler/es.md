@@ -1,22 +1,84 @@
-El nodo KSampler está diseñado para operaciones avanzadas de muestreo dentro de modelos generativos, permitiendo la personalización de los procesos de muestreo a través de varios parámetros. Facilita la generación de nuevas muestras de datos manipulando representaciones de espacio latente, aprovechando el condicionamiento y ajustando los niveles de ruido.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/es.md)
+
+El KSampler funciona de la siguiente manera: modifica la información de la imagen latente original proporcionada basándose en un modelo específico y condiciones tanto positivas como negativas.
+Primero, añade ruido a los datos de la imagen original según la **semilla** y la **fuerza de eliminación de ruido** establecidas, luego introduce el **Modelo** predefinido combinado con las condiciones de guía **positiva** y **negativa** para generar la imagen.
 
 ## Entradas
 
-| Parámetro       | Data Type | Descripción                                                                                                               |
-|-----------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
-| `modelo`         | `MODEL`     | Especifica el modelo generativo a utilizar para el muestreo, desempeñando un papel crucial en la determinación de las características de las muestras generadas. |
-| `semilla`          | `INT`       | Controla la aleatoriedad del proceso de muestreo, asegurando la reproducibilidad de los resultados cuando se establece en un valor específico.                         |
-| `pasos`         | `INT`       | Determina el número de pasos a realizar en el proceso de muestreo, afectando el detalle y calidad de las muestras generadas.           |
-| `cfg`           | `FLOAT`     | Ajusta el factor de condicionamiento, influyendo en la dirección y fuerza del condicionamiento aplicado durante el muestreo.                     |
-| `nombre_muestreador`  | COMBO[STRING] | Selecciona el algoritmo de muestreo específico a utilizar, impactando el comportamiento y resultado del proceso de muestreo.                     |
-| `programador`     | COMBO[STRING] | Elige el algoritmo de programación para controlar el proceso de muestreo, afectando la progresión y dinámica del muestreo.           |
-| `positivo`      | `CONDITIONING` | Define el condicionamiento positivo para guiar el muestreo hacia atributos o características deseadas.                                         |
-| `negativo`      | `CONDITIONING` | Especifica el condicionamiento negativo para desviar el muestreo de ciertos atributos o características.                                     |
-| `imagen_latente`  | `LATENT`    | Proporciona una representación de espacio latente para ser utilizada como punto de partida o referencia para el proceso de muestreo.                            |
-| `deshacer_ruido`       | `FLOAT`     | Controla el nivel de eliminación de ruido aplicado a las muestras, afectando la claridad y nitidez de las imágenes generadas.                   |
+| Nombre del Parámetro  | Tipo de Dato  | Obligatorio | Por Defecto | Rango/Opciones           | Descripción                                                                                          |
+| --------------------- | ------------- | ----------- | ----------- | ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| Model                 | checkpoint    | Sí          | Ninguno     | -                        | Modelo de entrada utilizado para el proceso de eliminación de ruido                                  |
+| seed                  | Int           | Sí          | 0           | 0 ~ 18446744073709551615 | Se utiliza para generar ruido aleatorio; usar la misma "semilla" genera imágenes idénticas           |
+| steps                 | Int           | Sí          | 20          | 1 ~ 10000                | Número de pasos a utilizar en el proceso de eliminación de ruido; más pasos significan resultados más precisos |
+| cfg                   | float         | Sí          | 8.0         | 0.0 ~ 100.0              | Controla qué tan fielmente la imagen generada coincide con las condiciones de entrada; se recomienda 6-8 |
+| sampler_name          | Opción de UI  | Sí          | Ninguno     | Múltiples algoritmos     | Elija el muestreador para la eliminación de ruido; afecta la velocidad y el estilo de generación     |
+| scheduler             | Opción de UI  | Sí          | Ninguno     | Múltiples programadores  | Controla cómo se elimina el ruido; afecta el proceso de generación                                   |
+| Positive              | conditioning  | Sí          | Ninguno     | -                        | Condiciones positivas que guían la eliminación de ruido; lo que desea que aparezca en la imagen      |
+| Negative              | conditioning  | Sí          | Ninguno     | -                        | Condiciones negativas que guían la eliminación de ruido; lo que no desea en la imagen                |
+| Latent_Image          | Latent        | Sí          | Ninguno     | -                        | Imagen latente utilizada para la eliminación de ruido                                                |
+| denoise               | float         | No          | 1.0         | 0.0 ~ 1.0                | Determina la proporción de eliminación de ruido; valores más bajos significan menos conexión con la imagen de entrada |
+| control_after_generate | Opción de UI  | No          | Ninguno     | Random/Inc/Dec/Keep      | Proporciona la capacidad de cambiar la semilla después de cada indicación                            |
 
-## Salidas
+## Salida
 
-| Parámetro   | Data Type | Descripción |
-|-------------|-------------|-------------|
-| `latent`    | `LATENT`    | Representa la salida del espacio latente del proceso de muestreo, encapsulando las muestras generadas. |
+| Parámetro | Función                                    |
+| --------- | ------------------------------------------ |
+| Latent    | Genera el latente después de la eliminación de ruido del muestreador |
+
+## Código Fuente
+
+[Actualizado el 15 de mayo de 2025]
+
+```Python
+
+def common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent, denoise=1.0, disable_noise=False, start_step=None, last_step=None, force_full_denoise=False):
+    latent_image = latent["samples"]
+    latent_image = comfy.sample.fix_empty_latent_channels(model, latent_image)
+
+    if disable_noise:
+        noise = torch.zeros(latent_image.size(), dtype=latent_image.dtype, layout=latent_image.layout, device="cpu")
+    else:
+        batch_inds = latent["batch_index"] if "batch_index" in latent else None
+        noise = comfy.sample.prepare_noise(latent_image, seed, batch_inds)
+
+    noise_mask = None
+    if "noise_mask" in latent:
+        noise_mask = latent["noise_mask"]
+
+    callback = latent_preview.prepare_callback(model, steps)
+    disable_pbar = not comfy.utils.PROGRESS_BAR_ENABLED
+    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
+                                  denoise=denoise, disable_noise=disable_noise, start_step=start_step, last_step=last_step,
+                                  force_full_denoise=force_full_denoise, noise_mask=noise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
+    out = latent.copy()
+    out["samples"] = samples
+    return (out, )
+class KSampler:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "model": ("MODEL", {"tooltip": "El modelo utilizado para eliminar el ruido del latente de entrada."}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "La semilla aleatoria utilizada para crear el ruido."}),
+                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "El número de pasos utilizados en el proceso de eliminación de ruido."}),
+                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "La escala de Guía Sin Clasificador equilibra la creatividad y la adherencia a la indicación. Los valores más altos resultan en imágenes que coinciden más estrechamente con la indicación, sin embargo, valores demasiado altos afectarán negativamente la calidad."}),
+                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "El algoritmo utilizado al muestrear, esto puede afectar la calidad, velocidad y estilo de la salida generada."}),
+                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "El programador controla cómo se elimina gradualmente el ruido para formar la imagen."}),
+                "positive": ("CONDITIONING", {"tooltip": "El condicionamiento que describe los atributos que desea incluir en la imagen."}),
+                "negative": ("CONDITIONING", {"tooltip": "El condicionamiento que describe los atributos que desea excluir de la imagen."}),
+                "latent_image": ("LATENT", {"tooltip": "La imagen latente a la que se le eliminará el ruido."}),
+                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "La cantidad de eliminación de ruido aplicada; los valores más bajos mantendrán la estructura de la imagen inicial permitiendo el muestreo de imagen a imagen."}),
+            }
+        }
+
+    RETURN_TYPES = ("LATENT",)
+    OUTPUT_TOOLTIPS = ("El latente con ruido eliminado.",)
+    FUNCTION = "sample"
+
+    CATEGORY = "sampling"
+    DESCRIPTION = "Utiliza el modelo proporcionado, el condicionamiento positivo y negativo para eliminar el ruido de la imagen latente."
+
+    def sample(self, model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=1.0):
+        return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
+
+```

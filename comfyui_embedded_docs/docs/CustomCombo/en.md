@@ -1,12 +1,13 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/en.md)
 
-The Custom Combo node allows you to create a custom dropdown menu with your own list of text options. It is a frontend-focused node that provides a backend representation to ensure compatibility within your workflow. When you select an option from the dropdown, the node outputs that text as a string.
+The Custom Combo node allows you to create a custom dropdown menu with your own list of text options. It is a frontend-focused node that provides a backend representation to ensure compatibility within your workflow. When you select an option from the dropdown, the node outputs that text as a string and its index position.
 
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `choice` | COMBO | Yes | User-defined | The text option selected from the custom dropdown. The list of available options is defined by the user in the node's frontend interface. |
+| `index` | INT | No | 0 | An integer value that can be used to specify an index. Default: 0. |
 
 **Note:** The validation for this node's input is intentionally disabled. This allows you to define any custom text options you want in the frontend without the backend checking if your selection is from a predefined list.
 
@@ -14,4 +15,8 @@ The Custom Combo node allows you to create a custom dropdown menu with your own 
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `output` | STRING | The text string of the option selected from the custom combo box. |
+| `STRING` | STRING | The text string of the option selected from the custom combo box. |
+| `INDEX` | INT | The index position of the selected option in the dropdown list. |
+
+---
+**Source fingerprint (SHA-256):** `d950207b94deee37abce294eb3dab035e622925dc1118fe37f9c874784dc1672`

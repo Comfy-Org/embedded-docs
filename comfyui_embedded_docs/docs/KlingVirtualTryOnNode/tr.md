@@ -1,17 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVirtualTryOnNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVirtualTryOnNode/tr.md)
 
-Kling Sanal Giyim Node. Bir insan görüntüsü ve bir giysi görntüsü girerek, giysinin insanın üzerinde denenmiş halini elde edin. Birden fazla giysi parçasının resmini beyaz bir arka planda tek bir görüntüde birleştirebilirsiniz.
+Kling Sanal Deneme Düğümü. Bir insan görseli ve bir kıyafet görseli girin; kıyafeti insan üzerinde deneyin. Birden fazla kıyafet parçası görselini beyaz arka planlı tek bir görselde birleştirebilirsiniz.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `insan_görüntüsü` | IMAGE | Evet | - | Üzerine giysi denenecak insan görüntüsü |
-| `kıyafet_görüntüsü` | IMAGE | Evet | - | İnsanın üzerinde denenecek giysi görüntüsü |
-| `model_adı` | STRING | Evet | `"kolors-virtual-try-on-v1"` | Kullanılacak sanal giydirme modeli (varsayılan: "kolors-virtual-try-on-v1") |
+| `human_image` | IMAGE | Evet | - | Kıyafet denenecek insan görseli |
+| `cloth_image` | IMAGE | Evet | - | İnsan üzerinde denenecek kıyafet görseli |
+| `model_name` | STRING | Evet | `"kolors-virtual-try-on-v1"` | Kullanılacak sanal deneme modeli (varsayılan: "kolors-virtual-try-on-v1") |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türu | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | IMAGE | Giysi parçasının insanın üzerinde denenmiş halini gösteren sonuç görüntüsü |
+| `output` | IMAGE | Kıyafet parçasının insan üzerinde denendiğini gösteren sonuç görseli |
+
+---
+**Source fingerprint (SHA-256):** `bfd0da440d3ad85e15ce16851313f2e75421a8a3eb5e4c651350432955afc731`

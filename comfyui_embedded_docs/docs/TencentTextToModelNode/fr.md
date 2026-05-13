@@ -5,21 +5,25 @@ Ce nœud utilise l'API Hunyuan3D Pro de Tencent pour générer un modèle 3D à 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
+|-----------|-----------------|--------|-------|-------------|
 | `model` | COMBO | Oui | `"3.0"`<br>`"3.1"` | La version du modèle Hunyuan3D à utiliser. L'option LowPoly n'est pas disponible pour le modèle `3.1`. |
 | `prompt` | STRING | Oui | - | La description textuelle du modèle 3D à générer. Prend en charge jusqu'à 1024 caractères. |
-| `face_count` | INT | Oui | 40000 - 1500000 | Le nombre cible de faces pour le modèle 3D généré. Par défaut : 500000. |
-| `generate_type` | DYNAMICCOMBO | Oui | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | Le type de modèle 3D à générer. Les options disponibles et leurs paramètres associés sont :<br>- **Normal** : Génère un modèle standard. Inclut un paramètre `pbr` (par défaut : `False`).<br>- **LowPoly** : Génère un modèle à faible polygones. Inclut les paramètres `polygon_type` (`"triangle"` ou `"quadrilateral"`) et `pbr` (par défaut : `False`).<br>- **Geometry** : Génère un modèle uniquement géométrique. |
-| `seed` | INT | Non | 0 - 2147483647 | Une valeur de seed pour la génération. Les résultats sont non déterministes, quel que soit le seed. Définir un nouveau seed contrôle si le nœud doit être réexécuté. Par défaut : 0. |
+| `face_count` | INT | Oui | 3000 - 1500000 | Le nombre cible de faces pour le modèle 3D généré. Valeur par défaut : 500000. |
+| `generate_type` | DYNAMICCOMBO | Oui | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | Le type de modèle 3D à générer. Les options disponibles et leurs paramètres associés sont :<br>- **Normal** : Génère un modèle standard. Inclut un paramètre `pbr` (par défaut : `False`).<br>- **LowPoly** : Génère un modèle à faible nombre de polygones. Inclut les paramètres `polygon_type` (`"triangle"` ou `"quadrilateral"`) et `pbr` (par défaut : `False`).<br>- **Geometry** : Génère un modèle géométrique uniquement. |
+| `seed` | INT | Non | 0 - 2147483647 | Une valeur de graine pour la génération. Les résultats ne sont pas déterministes quelle que soit la graine. Définir une nouvelle graine contrôle si le nœud doit être réexécuté. Valeur par défaut : 0. |
 
-**Note :** Le paramètre `generate_type` est dynamique. Sélectionner `"LowPoly"` révélera des entrées supplémentaires pour `polygon_type` et `pbr`. Sélectionner `"Normal"` révélera une entrée pour `pbr`. Sélectionner `"Geometry"` ne révélera aucune entrée supplémentaire.
+**Remarque :** Le paramètre `generate_type` est dynamique. La sélection de `"LowPoly"` révèlera des entrées supplémentaires pour `polygon_type` et `pbr`. La sélection de `"Normal"` révèlera une entrée pour `pbr`. La sélection de `"Geometry"` ne révélera aucune entrée supplémentaire.
 
 **Contrainte :** Le type de génération `"LowPoly"` ne peut pas être utilisé avec le modèle `"3.1"`.
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|-------------|-----------|-------------|
+| Nom de sortie | Type de données | Description |
+|---------------|-----------------|-------------|
 | `model_file` | STRING | Une sortie héritée pour la rétrocompatibilité. |
 | `GLB` | FILE3DGLB | Le modèle 3D généré au format de fichier GLB. |
 | `OBJ` | FILE3DOBJ | Le modèle 3D généré au format de fichier OBJ. |
+| `texture_image` | IMAGE | L'image de texture extraite du fichier OBJ généré, si disponible. |
+
+---
+**Source fingerprint (SHA-256):** `e35f5165941cc7761639dd72e78141326d37d5e169be9a0e326afcbcdc572b7d`

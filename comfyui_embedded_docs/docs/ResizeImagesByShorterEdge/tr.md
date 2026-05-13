@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByShorterEdge/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByShorterEdge/tr.md)
 
-Bu düğüm, görüntülerin boyutlarını, kısa kenarın uzunluğu belirtilen bir hedef değerle eşleşecek şekilde ayarlayarak yeniden boyutlandırır. Orijinal görüntünün en-boy oranını korumak için yeni boyutları hesaplar. Yeniden boyutlandırılmış görüntü döndürülür.
+Bu düğüm, görselleri orijinal en-boy oranını koruyarak kısa kenarı belirtilen uzunluğa denk gelecek şekilde yeniden boyutlandırır. Kısa kenar için hedef uzunluğa göre yeni boyutları hesaplar ve yeniden boyutlandırılmış görseli döndürür.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Yeniden boyutlandırılacak giriş görüntüsü. |
-| `shorter_edge` | INT | Hayır | 1 - 8192 | Kısa kenar için hedef uzunluk. (varsayılan: 512) |
+|-----------|-----------|----------|--------|----------|
+| `image` | IMAGE | Evet | - | Yeniden boyutlandırılacak giriş görseli. |
+| `shorter_edge` | INT | Hayır | 1 ile 8192 arası | Kısa kenar için hedef uzunluk. (varsayılan: 512) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `image` | IMAGE | Yeniden boyutlandırılmış görüntü. |
+|-----------|-----------|----------|
+| `image` | IMAGE | Kısa kenarı belirtilen hedef uzunluğa denk gelecek şekilde yeniden boyutlandırılmış görsel. |
+
+---
+**Source fingerprint (SHA-256):** `011949390faa9032587aec210d9e38d55b79e474c7a6dcd5d3c0e75594a1fc29`

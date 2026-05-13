@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecode/tr.md)
 
-VAEDecode düğümü, belirli bir Varyasyonel Otokodlayıcı (VAE) kullanarak gizli temsilleri görüntülere dönüştürmek için tasarlanmıştır. Amacı, sıkıştırılmış veri temsillerinden görüntüler oluşturmak ve gizli uzay kodlamalarından görüntülerin yeniden yapılandırılmasını sağlamaktır.
+VAEDecode düğümü, belirtilen bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak gizli temsilleri (latent representations) görüntülere çözmek için tasarlanmıştır. Sıkıştırılmış veri temsillerinden görüntüler oluşturma ve görüntülerin gizli uzay kodlamalarından yeniden yapılandırılmasını sağlama amacına hizmet eder.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `örnekler` | `LATENT`    | 'samples' parametresi, görüntülere dönüştürülecek gizli temsilleri belirtir. Kod çözme işlemi için kritik öneme sahiptir çünkü görüntülerin yeniden oluşturulduğu sıkıştırılmış veriyi sağlar. |
-| `vae`     | VAE       | 'vae' parametresi, gizli temsilleri görüntülere dönüştürmek için kullanılacak Varyasyonel Otokodlayıcı modelini belirtir. Kod çözme mekanizmasını ve yeniden oluşturulan görüntülerin kalitesini belirlemede esastır. |
+| `samples` | `LATENT`    | 'samples' parametresi, görüntülere çözülecek gizli temsilleri temsil eder. Görüntülerin yeniden oluşturulduğu sıkıştırılmış verileri sağladığı için kod çözme işlemi için kritik öneme sahiptir. |
+| `vae`     | VAE       | 'vae' parametresi, gizli temsilleri görüntülere çözmek için kullanılacak Varyasyonel Otomatik Kodlayıcı modelini belirtir. Kod çözme mekanizmasının ve yeniden oluşturulan görüntülerin kalitesinin belirlenmesi için gereklidir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Çıktı, belirtilen VAE modeli kullanılarak sağlanan gizli temsilden yeniden oluşturulmuş bir görüntüdür. |
+| `image`   | `IMAGE`     | Çıktı, belirtilen VAE modeli kullanılarak sağlanan gizli temsilden yeniden oluşturulan bir görüntüdür. |

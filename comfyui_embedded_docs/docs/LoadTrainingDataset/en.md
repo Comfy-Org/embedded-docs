@@ -6,7 +6,7 @@ This node loads an encoded training dataset that has been previously saved to di
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `folder_name` | STRING | No | N/A | Name of the folder containing the saved dataset, located inside the ComfyUI output directory (default: "training_dataset"). |
+| `folder_name` | STRING | Yes | N/A | Name of the folder containing the saved dataset, located inside the ComfyUI output directory (default: "training_dataset"). |
 
 ## Outputs
 
@@ -14,3 +14,6 @@ This node loads an encoded training dataset that has been previously saved to di
 |-------------|-----------|-------------|
 | `latents` | LATENT | A list of latent dictionaries, where each dictionary contains a `"samples"` key with a tensor. |
 | `conditioning` | CONDITIONING | A list of conditioning lists, where each inner list contains conditioning data for a corresponding sample. |
+
+---
+**Source fingerprint (SHA-256):** `0a07c97e2c6a32f77cd21ea7dbdd33e06fad82285696b88122fef369307e133d`

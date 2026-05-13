@@ -13,3 +13,6 @@ This node is deprecated and serves no function. It accepts a model as input and 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The same model that was provided as input, unchanged. |
+
+---
+**Source fingerprint (SHA-256):** `a7ab11efa864c6692b5acc2e75fada19e14a97690b809f02a2da0473a18a5164`

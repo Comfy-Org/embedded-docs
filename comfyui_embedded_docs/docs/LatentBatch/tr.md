@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentBatch/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentBatch/tr.md)
 
-LatentBatch düğümü, iki farklı gizli örnek setini tek bir toplu işlemde birleştirmek üzere tasarlanmıştır ve birleştirme işleminden önce setlerden birinin boyutlarını diğerine uyacak şekilde yeniden boyutlandırabilir. Bu işlem, daha fazla işleme veya üretim görevleri için farklı gizli temsillerin birleştirilmesini kolaylaştırır.
+LatentBatch düğümü, iki latent örnek kümesini tek bir parti halinde birleştirmek ve birleştirme öncesinde gerekirse bir kümeyi diğerinin boyutlarına uyacak şekilde yeniden boyutlandırmak için tasarlanmıştır. Bu işlem, farklı latent temsillerin daha ileri işleme veya üretim görevleri için birleştirilmesini kolaylaştırır.
 
-## Girdiler
+## Girişler
 
-| Parametre   | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `örnekler1`  | `LATENT`  | Birleştirilecek ilk gizli örnek seti. Birleştirilmiş toplu işlemin nihai şeklinin belirlenmesinde kritik bir rol oynar. |
-| `örnekler2`  | `LATENT`  | Birleştirilecek ikinci gizli örnek seti. Boyutları ilk setten farklıysa, birleştirme işleminden önce uyumluluğu sağlamak için yeniden boyutlandırılır. |
+| Parametre    | Veri Türü | Açıklama |
+|--------------|-------------|-------------|
+| `samples1`   | `LATENT`    | Birleştirilecek ilk latent örnek kümesi. Birleştirilmiş partinin nihai şeklinin belirlenmesinde önemli bir rol oynar. |
+| `samples2`   | `LATENT`    | Birleştirilecek ikinci latent örnek kümesi. Boyutları ilk kümeden farklıysa, birleştirme öncesinde uyumluluğu sağlamak için yeniden boyutlandırılır. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
-|-----------|-----------|-------------|
-| `latent`  | `LATENT`  | Gizli örneklerin birleştirilmiş seti; artık daha fazla işleme için tek bir toplu işlem halinde bir araya getirilmiştir. |
+|-----------|-------------|-------------|
+| `latent`  | `LATENT`    | Artık daha ileri işleme için tek bir partide birleştirilmiş olan latent örneklerin birleştirilmiş kümesi. |

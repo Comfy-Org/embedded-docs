@@ -64,6 +64,7 @@ Data types should be represented using plain text, not styled text.
 - Japanese (ja)
 - Korean (ko)
 - Russian (ru)
+- Persian/Farsi (fa), when aligning with ComfyUI frontend locale `fa`
 
 ### Translation Principles
 - Only translate when explicitly requested by the user
@@ -142,3 +143,4 @@ When users provide language files and request translation to corresponding langu
 | ko.md    | 입력     | 출력     |
 | zh.md    | 输入     | 输出     |
 | ru.md    | Входы    | Выходы   |
+| fa.md    | ورودی‌ها | خروجی‌ها |

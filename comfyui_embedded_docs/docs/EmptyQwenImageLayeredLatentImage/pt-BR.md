@@ -1,10 +1,10 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyQwenImageLayeredLatentImage/pt-BR.md)
 
-O nó **Empty Qwen Image Layered Latent** cria uma representação latente em branco e multicamadas para uso com modelos de imagem Qwen. Ele gera um tensor preenchido com zeros, estruturado com um número especificado de camadas, tamanho do lote e dimensões espaciais. Este latente vazio serve como ponto de partida para fluxos de trabalho subsequentes de geração ou manipulação de imagem.
+O nó Empty Qwen Image Layered Latent cria uma representação latente em branco e multicamadas para uso com modelos de imagem Qwen. Ele gera um tensor preenchido com zeros, estruturado com um número específico de camadas, tamanho de lote e dimensões espaciais. Essa latente vazia serve como ponto de partida para fluxos de trabalho subsequentes de geração ou manipulação de imagens.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `width` | INT | Sim | 16 a MAX_RESOLUTION | A largura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) |
 | `height` | INT | Sim | 16 a MAX_RESOLUTION | A altura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) |
@@ -18,3 +18,6 @@ O nó **Empty Qwen Image Layered Latent** cria uma representação latente em br
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
 | `samples` | LATENT | Um tensor latente preenchido com zeros. Sua forma é `[batch_size, 16, layers + 1, height // 8, width // 8]`. |
+
+---
+**Source fingerprint (SHA-256):** `99497e3e4a67bf7b3f650573e7b8eb2d7fad6be5819b7ebbbb8736291dc44e0c`

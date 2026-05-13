@@ -1,21 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/zh-TW.md)
 
-ScaleROPE 節點允許您透過對模型的 X、Y 和 T（時間）分量分別應用縮放和偏移因子，來修改模型的旋轉位置嵌入（ROPE）。這是一個用於調整模型位置編碼行為的高級實驗性節點。
+ScaleROPE 節點允許您透過對模型的 X、Y 和 T（時間）分量分別應用縮放和偏移因子，來修改模型的旋轉位置編碼（ROPE）。這是一個進階的實驗性節點，用於調整模型的位置編碼行為。
 
-## 輸入參數
+## 輸入
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | 是 | - | 將要修改其 ROPE 參數的模型。 |
-| `scale_x` | FLOAT | 否 | 0.0 - 100.0 | 應用於 ROPE X 分量的縮放因子（預設值：1.0）。 |
-| `shift_x` | FLOAT | 否 | -256.0 - 256.0 | 應用於 ROPE X 分量的偏移值（預設值：0.0）。 |
-| `scale_y` | FLOAT | 否 | 0.0 - 100.0 | 應用於 ROPE Y 分量的縮放因子（預設值：1.0）。 |
-| `shift_y` | FLOAT | 否 | -256.0 - 256.0 | 應用於 ROPE Y 分量的偏移值（預設值：0.0）。 |
-| `scale_t` | FLOAT | 否 | 0.0 - 100.0 | 應用於 ROPE T（時間）分量的縮放因子（預設值：1.0）。 |
-| `shift_t` | FLOAT | 否 | -256.0 - 256.0 | 應用於 ROPE T（時間）分量的偏移值（預設值：0.0）。 |
+| `scale_x` | FLOAT | 否 | 0.0 - 100.0 | 應用於 ROPE 之 X 分量的縮放因子（預設值：1.0）。 |
+| `shift_x` | FLOAT | 否 | -256.0 - 256.0 | 應用於 ROPE 之 X 分量的偏移值（預設值：0.0）。 |
+| `scale_y` | FLOAT | 否 | 0.0 - 100.0 | 應用於 ROPE 之 Y 分量的縮放因子（預設值：1.0）。 |
+| `shift_y` | FLOAT | 否 | -256.0 - 256.0 | 應用於 ROPE 之 Y 分量的偏移值（預設值：0.0）。 |
+| `scale_t` | FLOAT | 否 | 0.0 - 100.0 | 應用於 ROPE 之 T（時間）分量的縮放因子（預設值：1.0）。 |
+| `shift_t` | FLOAT | 否 | -256.0 - 256.0 | 應用於 ROPE 之 T（時間）分量的偏移值（預設值：0.0）。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已應用新的 ROPE 縮放和偏移參數的模型。 |
+| `model` | MODEL | 已套用新的 ROPE 縮放與偏移參數的模型。 |
+
+---
+**Source fingerprint (SHA-256):** `c5ca193a46faa9477a2e6c99b905205685e8add8faa2f2d161c7c384b3dc2441`

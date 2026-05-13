@@ -1,22 +1,25 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeTiled/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeTiled/tr.md)
 
-VAEDecodeTiled düğümü, büyük görüntüleri verimli bir şekilde işlemek için karo yaklaşımını kullanarak gizli temsilleri görüntülere dönüştürür. Girdiyi, görüntü kalitesini korurken bellek kullanımını yönetmek için daha küçük karolar halinde işler. Düğüm ayrıca, akıcı geçişler için örtüşmeli parçalar halinde zamansal kareleri işleyerek video VAE'lerini destekler.
+VAEDecodeTiled düğümü, gizli temsilleri (latent representations) görüntülere dönüştürmek için döşemeli (tiled) bir yaklaşım kullanarak büyük görüntüleri verimli bir şekilde işler. Giriş verilerini daha küçük döşemeler halinde işleyerek bellek kullanımını yönetir ve görüntü kalitesini korur. Düğüm ayrıca, geçişlerin yumuşak olması için zamansal kareleri örtüşmeli parçalar halinde işleyerek video VAE'lerini de destekler.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `örnekler` | LATENT | Evet | - | Görüntülere dönüştürülecek gizli temsil |
-| `vae` | VAE | Evet | - | Gizli örnekleri dönüştürmek için kullanılan VAE modeli |
-| `döşeme_boyutu` | INT | Evet | 64-4096 (adım: 32) | İşleme için her bir karonun boyutu (varsayılan: 512) |
-| `örtüşme` | INT | Evet | 0-4096 (adım: 32) | Bitişik karolar arasındaki örtüşme miktarı (varsayılan: 64) |
-| `zamansal_boyut` | INT | Evet | 8-4096 (adım: 4) | Sadece video VAE'leri için kullanılır: Aynı anda dönüştürülecek kare miktarı (varsayılan: 64) |
-| `zamansal_örtüşme` | INT | Evet | 4-4096 (adım: 4) | Sadece video VAE'leri için kullanılır: Örtüştürülecek kare miktarı (varsayılan: 8) |
+| `samples` | LATENT | Evet | - | Görüntülere dönüştürülecek gizli temsil |
+| `vae` | VAE | Evet | - | Gizli örnekleri çözmek için kullanılan VAE modeli |
+| `tile_size` | INT | Evet | 64-4096 (adım: 32) | İşleme için her bir döşemenin boyutu (varsayılan: 512) |
+| `overlap` | INT | Evet | 0-4096 (adım: 32) | Bitişik döşemeler arasındaki örtüşme miktarı (varsayılan: 64) |
+| `temporal_size` | INT | Evet | 8-4096 (adım: 4) | Yalnızca video VAE'leri için kullanılır: Bir seferde çözülecek kare sayısı (varsayılan: 64) |
+| `temporal_overlap` | INT | Evet | 4-4096 (adım: 4) | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare sayısı (varsayılan: 8) |
 
-**Not:** Düğüm, örtüşme değerleri pratik sınırları aştığında bunları otomatik olarak ayarlar. Eğer `tile_size`, `overlap` değerinin 4 katından az ise, örtüşme karo boyutunun dörtte birine indirilir. Benzer şekilde, eğer `temporal_size`, `temporal_overlap` değerinin iki katından az ise, zamansal örtüşme yarıya indirilir.
+**Not:** Düğüm, örtüşme değerleri pratik sınırları aşarsa bunları otomatik olarak ayarlar. `tile_size`, `overlap` değerinin 4 katından küçükse, örtüşme döşeme boyutunun dörtte birine düşürülür. Benzer şekilde, `temporal_size`, `temporal_overlap` değerinin iki katından küçükse, zamansal örtüşme yarıya indirilir. Düğüm ayrıca, hem uzamsal hem de zamansal boyutlar için döşeme ve örtüşme boyutlarını hesaplarken VAE'nin dahili sıkıştırma oranlarını da dikkate alır.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `IMAGE` | IMAGE | Gizli temsilden oluşturulan dönüştürülmüş görüntü veya görüntüler |
+|-----------|-----------|-------------|
+| `IMAGE` | IMAGE | Gizli temsilden oluşturulan çözülmüş görüntü veya görüntüler |
+
+---
+**Source fingerprint (SHA-256):** `193d5cb219d66855ae581d3e4488b7b6ae3a45b735fb0f9f784fea1f5d466e46`

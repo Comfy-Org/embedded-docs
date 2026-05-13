@@ -1,18 +1,23 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveTrainingDataset/ko.md)
 
-이 노드는 준비된 학습 데이터셋을 컴퓨터 하드 드라이브에 저장합니다. 이미지 잠재 표현과 해당 텍스트 조건화를 포함하는 인코딩된 데이터를 가져와서, 더 쉬운 관리를 위해 샤드라고 불리는 여러 개의 작은 파일로 구성합니다. 노드는 출력 디렉토리에 폴더를 자동으로 생성하고 데이터 파일과 데이터셋을 설명하는 메타데이터 파일을 모두 저장합니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveTrainingDataset/en.md)
+
+이 노드는 준비된 학습 데이터셋을 컴퓨터의 하드 드라이브에 저장합니다. 이미지 잠재(latent)와 해당 텍스트 조건(conditioning)을 포함하는 인코딩된 데이터를 받아, 관리가 용이하도록 여러 개의 작은 파일(샤드)로 구성합니다. 노드는 출력 디렉토리에 자동으로 폴더를 생성하고, 데이터 파일과 데이터셋을 설명하는 메타데이터 파일을 저장합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `latents` | LATENT | 예 | 해당 없음 | MakeTrainingDataset에서 가져온 잠재 딕셔너리 목록입니다. |
-| `conditioning` | CONDITIONING | 예 | 해당 없음 | MakeTrainingDataset에서 가져온 조건화 목록의 목록입니다. |
-| `folder_name` | STRING | 아니요 | 해당 없음 | 데이터셋을 저장할 폴더 이름(출력 디렉토리 내부)입니다. (기본값: "training_dataset") |
+| `latents` | LATENT | 예 | 해당 없음 | MakeTrainingDataset에서 생성된 잠재 딕셔너리 목록입니다. |
+| `conditioning` | CONDITIONING | 예 | 해당 없음 | MakeTrainingDataset에서 생성된 조건 리스트 목록입니다. |
+| `folder_name` | STRING | 아니요 | 해당 없음 | 데이터셋을 저장할 폴더 이름입니다(출력 디렉토리 내에 생성됨). (기본값: "training_dataset") |
 | `shard_size` | INT | 아니요 | 1 ~ 100000 | 샤드 파일당 샘플 수입니다. (기본값: 1000) |
 
-**참고:** `latents` 목록의 항목 수는 `conditioning` 목록의 항목 수와 정확히 일치해야 합니다. 이 수치가 일치하지 않으면 노드에서 오류가 발생합니다.
+**참고:** `latents` 목록의 항목 수는 `conditioning` 목록의 항목 수와 정확히 일치해야 합니다. 이 개수가 일치하지 않으면 노드에서 오류가 발생합니다.
 
 ## 출력
 
-이 노드는 어떠한 출력 데이터도 생성하지 않습니다. 이 노드의 기능은 파일을 디스크에 저장하는 것입니다.
+이 노드는 출력 데이터를 생성하지 않습니다. 디스크에 파일을 저장하는 기능을 수행합니다.
+
+---
+**Source fingerprint (SHA-256):** `1b0108be7362c0cb8ba16ffbf94cf42be2d04159aacbabe1ff0890083d1733b3`

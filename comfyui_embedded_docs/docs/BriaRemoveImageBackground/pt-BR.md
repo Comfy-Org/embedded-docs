@@ -4,18 +4,21 @@ Este nó remove o fundo de uma imagem usando o serviço Bria RMBG 2.0. Ele envia
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada da qual o fundo será removido. |
 | `moderation` | COMBO | Não | `"false"`<br>`"true"` | Configurações de moderação. Quando definido como `"true"`, opções adicionais de moderação ficam disponíveis. |
-| `visual_input_moderation` | BOOLEAN | Não | - | Habilita a moderação de conteúdo visual na imagem de entrada. Este parâmetro só está disponível quando `moderation` está definido como `"true"`. Padrão: `False`. |
-| `visual_output_moderation` | BOOLEAN | Não | - | Habilita a moderação de conteúdo visual na imagem de saída. Este parâmetro só está disponível quando `moderation` está definido como `"true"`. Padrão: `True`. |
-| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente que controla se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente. Padrão: `0`. |
+| `visual_input_moderation` | BOOLEAN | Não | - | Ativa a moderação de conteúdo visual na imagem de entrada. Este parâmetro está disponível apenas quando `moderation` está definido como `"true"`. Padrão: `False`. |
+| `visual_output_moderation` | BOOLEAN | Não | - | Ativa a moderação de conteúdo visual na imagem de saída. Este parâmetro está disponível apenas quando `moderation` está definido como `"true"`. Padrão: `True`. |
+| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente que controla se o nó deve ser executado novamente. Os resultados são não determinísticos independentemente do valor da semente. Padrão: `0`. |
 
-**Observação:** Os parâmetros `visual_input_moderation` e `visual_output_moderation` dependem do parâmetro `moderation`. Eles só estão ativos e são obrigatórios se `moderation` estiver definido como `"true"`.
+**Observação:** Os parâmetros `visual_input_moderation` e `visual_output_moderation` dependem do parâmetro `moderation`. Eles só ficam ativos e são necessários se `moderation` estiver definido como `"true"`.
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `image` | IMAGE | A imagem processada com seu fundo removido. |
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `image` | IMAGE | A imagem processada com o fundo removido. |
+
+---
+**Source fingerprint (SHA-256):** `2b2dd3ca0d026af1a2bf3f7222165928527b05b65817073b50230ff18d39bc6c`

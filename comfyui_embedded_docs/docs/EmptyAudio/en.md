@@ -7,7 +7,7 @@ The EmptyAudio node generates a silent audio clip with specified duration, sampl
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `duration` | FLOAT | Yes | 0.0 to 1.8446744073709552e+19 | Duration of the empty audio clip in seconds (default: 60.0) |
-| `sample_rate` | INT | Yes | - | Sample rate of the empty audio clip (default: 44100) |
+| `sample_rate` | INT | Yes | 1 to 192000 | Sample rate of the empty audio clip (default: 44100) |
 | `channels` | INT | Yes | 1 to 2 | Number of audio channels (1 for mono, 2 for stereo) (default: 2) |
 
 ## Outputs
@@ -15,3 +15,6 @@ The EmptyAudio node generates a silent audio clip with specified duration, sampl
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `AUDIO` | AUDIO | The generated silent audio clip containing waveform data and sample rate information |
+
+---
+**Source fingerprint (SHA-256):** `61b9cd6c8e518f28533b7586fdd1f909e5c356c7f2f7690da4e1ec7965d53c5d`

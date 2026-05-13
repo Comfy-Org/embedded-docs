@@ -4,12 +4,15 @@ Este nodo está obsoleto y no cumple ninguna función. Acepta un modelo como ent
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | | El modelo que se pasará a través del nodo. |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `model` | MODEL | Sí | | El modelo que se pasa a través del nodo. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+|------------------|--------------|-------------|
 | `model` | MODEL | El mismo modelo que se proporcionó como entrada, sin cambios. |
+
+---
+**Source fingerprint (SHA-256):** `a7ab11efa864c6692b5acc2e75fada19e14a97690b809f02a2da0473a18a5164`

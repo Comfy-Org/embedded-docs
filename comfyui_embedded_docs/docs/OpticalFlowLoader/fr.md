@@ -10,10 +10,13 @@ Charge un modèle de flux optique depuis le dossier `models/optical_flow/`. Actu
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_name` | STRING | Oui | Liste des fichiers dans le dossier `models/optical_flow/` | Modèle de flux optique à charger. Les fichiers doivent être placés dans le dossier `optical_flow`. Actuellement, seul le fichier `raft_large.pth` de torchvision est pris en charge. |
+| `model_name` | STRING | Oui | Liste des fichiers dans le dossier `models/optical_flow/` | Modèle de flux optique à charger. Les fichiers doivent être placés dans le dossier `optical_flow`. Actuellement, seul `raft_large.pth` de torchvision est pris en charge. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `OPTICAL_FLOW` | MODEL | Le modèle de flux optique chargé, encapsulé dans un ModelPatcher pour une utilisation avec d'autres nœuds. |
+| `OPTICAL_FLOW` | MODEL | Le modèle de flux optique chargé, encapsulé dans un ModelPatcher pour être utilisé avec d'autres nœuds. |
+
+---
+**Source fingerprint (SHA-256):** `94bab0bb7e2b9d9b3f343337799eccc744f79275b72a6fad9681b408b4a0820b`

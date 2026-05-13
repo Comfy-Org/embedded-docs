@@ -1,16 +1,19 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeAdd/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeAdd/zh-TW.md)
 
-CLIPMergeAdd 節點透過將第二個 CLIP 模型中的修補程式添加到第一個模型來合併兩個 CLIP 模型。它會建立第一個 CLIP 模型的副本，並選擇性地整合第二個模型中的關鍵修補程式，排除位置 ID 和 logit 縮放參數。這讓您可以在保留基礎模型結構的同時合併 CLIP 模型元件。
+CLIPMergeAdd 節點透過將第二個 CLIP 模型的修補程式（patches）添加到第一個模型，來組合兩個 CLIP 模型。它會建立第一個 CLIP 模型的副本，並選擇性地納入第二個模型的關鍵修補程式，排除位置 ID（position IDs）與 logit 尺度參數（logit scale parameters）。這讓您能夠在保留基礎模型結構的同時，合併 CLIP 模型的元件。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `clip1` | CLIP | 是 | - | 將被克隆並作為合併基礎的 CLIP 基礎模型 |
-| `clip2` | CLIP | 是 | - | 提供要添加到基礎模型中的關鍵修補程式的次要 CLIP 模型 |
+| `clip1` | CLIP | 是 | - | 將被複製並作為合併基礎的基底 CLIP 模型 |
+| `clip2` | CLIP | 是 | - | 提供要添加到基底模型之關鍵修補程式的次要 CLIP 模型 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `CLIP` | CLIP | 包含基礎模型結構並添加了次要模型修補程式的合併 CLIP 模型 |
+| `CLIP` | CLIP | 一個合併後的 CLIP 模型，包含基底模型的結構，並添加了來自次要模型的修補程式 |
+
+---
+**Source fingerprint (SHA-256):** `f212c2750f317ad51516a10a1a03a838b75bc878333381348d5eb388a2faf516`

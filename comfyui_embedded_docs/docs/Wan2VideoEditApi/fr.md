@@ -1,6 +1,6 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2VideoEditApi/fr.md)
 
-Le nœud Wan2VideoEditApi utilise le modèle Wan 2.7 pour éditer une vidéo selon des instructions textuelles, des images de référence ou un transfert de style. Il traite la vidéo d'entrée et génère une nouvelle vidéo en fonction des paramètres spécifiés tels que la résolution, la durée et le rapport hauteur/largeur.
+Le nœud Wan2VideoEditApi utilise le modèle Wan 2.7 pour éditer une vidéo en fonction d'instructions textuelles, d'images de référence ou d'un transfert de style. Il traite la vidéo d'entrée et génère une nouvelle vidéo selon les paramètres spécifiés, tels que la résolution, la durée et le rapport hauteur/largeur.
 
 ## Entrées
 
@@ -11,7 +11,7 @@ Le nœud Wan2VideoEditApi utilise le modèle Wan 2.7 pour éditer une vidéo sel
 | `model.resolution` | COMBO | Oui | `"720P"`<br>`"1080P"` | La résolution de la vidéo de sortie. |
 | `model.ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | Le rapport hauteur/largeur de la vidéo de sortie. S'il n'est pas modifié, il se rapproche du rapport de la vidéo d'entrée. |
 | `model.duration` | COMBO | Oui | `"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` | La durée de sortie en secondes. 'auto' correspond à la durée de la vidéo d'entrée. Une valeur spécifique tronque la vidéo à partir du début. (par défaut : "auto") |
-| `model.reference_images` | IMAGE | Non | - | Une liste d'au maximum 4 images de référence pour guider l'édition. |
+| `model.reference_images` | IMAGE | Non | - | Une liste d'au plus 4 images de référence pour guider l'édition. |
 | `video` | VIDEO | Oui | - | La vidéo à éditer. |
 | `seed` | INT | Non | 0 à 2147483647 | La graine à utiliser pour la génération. (par défaut : 0) |
 | `audio_setting` | COMBO | Non | `"auto"`<br>`"origin"` | 'auto' : le modèle décide s'il doit régénérer l'audio en fonction de l'invite. 'origin' : préserve l'audio original de la vidéo d'entrée. (par défaut : "auto") |
@@ -27,3 +27,6 @@ Le nœud Wan2VideoEditApi utilise le modèle Wan 2.7 pour éditer une vidéo sel
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
 | `output` | VIDEO | La vidéo éditée générée par le modèle. |
+
+---
+**Source fingerprint (SHA-256):** `d2dd65d743358c6a357e75076774e93c52c39893fbb376da2f4395446f440a20`

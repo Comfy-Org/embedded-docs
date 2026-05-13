@@ -25,4 +25,7 @@ O nó GeminiNanoBanana2 gera ou edita imagens usando o modelo Gemini do Google V
 |---------------|--------------|-----------|
 | `image` | IMAGE | A imagem principal gerada ou editada pelo modelo. |
 | `string` | STRING | Qualquer conteúdo de texto retornado pelo modelo. |
-| `thought_image` | IMAGE | Primeira imagem do processo de raciocínio do modelo. Disponível apenas com thinking_level HIGH e modalidade IMAGE+TEXT. |
+| `thought_image` | IMAGE | Primeira imagem do processo de raciocínio do modelo. Disponível apenas com `thinking_level` HIGH e modalidade IMAGE+TEXT. |
+
+---
+**Source fingerprint (SHA-256):** `bd53363da73ff0db66a872fc04f1af8ce4dfee1191ca01bd813701b5ad5e4f17`

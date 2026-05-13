@@ -1,16 +1,19 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentAudio/fr.md)
 
-Le nœud EmptyLatentAudio crée des tenseurs latents vides pour le traitement audio. Il génère une représentation latente audio vierge avec une durée et une taille de lot spécifiées, qui peut être utilisée comme entrée pour des workflows de génération ou de traitement audio. Le nœud calcule les dimensions latentes appropriées en fonction de la durée audio et du taux d'échantillonnage.
+Le nœud EmptyLatentAudio crée un tenseur latent vide pour le traitement audio. Il génère une représentation audio latente vierge avec une durée et une taille de lot spécifiées, pouvant servir de point de départ pour des workflows de génération ou de traitement audio. Le nœud calcule automatiquement les dimensions latentes appropriées en fonction de la durée audio et du taux d'échantillonnage.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
-| `secondes` | FLOAT | Oui | 1.0 - 1000.0 | La durée de l'audio en secondes (par défaut : 47.6) |
-| `taille_du_lot` | INT | Oui | 1 - 4096 | Le nombre d'images latentes dans le lot (par défaut : 1) |
+|-----------|-----------------|--------|-------|-------------|
+| `seconds` | FLOAT | Oui | 1,0 - 1000,0 | La durée de l'audio en secondes (par défaut : 47,6) |
+| `batch_size` | INT | Oui | 1 - 4096 | Le nombre d'images latentes dans le lot (par défaut : 1) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
-| `LATENT` | LATENT | Retourne un tenseur latent vide pour le traitement audio avec la durée et la taille de lot spécifiées |
+|---------------|-----------------|-------------|
+| `LATENT` | LATENT | Renvoie un tenseur latent vide pour le traitement audio avec la durée et la taille de lot spécifiées. Le tenseur a une forme de [batch_size, 64, length], où length est calculé à partir de la durée audio et du taux d'échantillonnage. |
+
+---
+**Source fingerprint (SHA-256):** `004f730131b179fe5ac072afe81b2e01a3937fceca5a260b4ae66f92774e96d9`

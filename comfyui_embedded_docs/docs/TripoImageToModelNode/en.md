@@ -18,6 +18,7 @@ Generates 3D models synchronously based on a single image using Tripo's API. Thi
 | `texture_alignment` | COMBO | No | "original_image"<br>"geometry" | Alignment method for texture mapping (default: "original_image") |
 | `face_limit` | INT | No | -1 to 500000 | Maximum number of faces in the generated model, -1 for no limit (default: -1) |
 | `quad` | BOOLEAN | No | - | Whether to use quadrilateral faces instead of triangles (default: False) |
+| `geometry_quality` | COMBO | No | "standard"<br>"detailed" | Quality level for geometry generation (default: "standard") |
 
 **Note:** The `image` parameter is required and must be provided for the node to function. If no image is provided, the node will raise a RuntimeError.
 
@@ -25,5 +26,9 @@ Generates 3D models synchronously based on a single image using Tripo's API. Thi
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `model_file` | STRING | The generated 3D model file |
+| `model_file` | STRING | The generated 3D model file (for backward compatibility only) |
 | `model task_id` | MODEL_TASK_ID | The task ID for tracking the model generation process |
+| `GLB` | FILE3DGLB | The generated 3D model in GLB format |
+
+---
+**Source fingerprint (SHA-256):** `1342de2f9788fac504fa0cfa248d011c04a8874307bb26dac86a7ced43a2809e`

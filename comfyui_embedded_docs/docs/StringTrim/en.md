@@ -14,3 +14,6 @@ The StringTrim node removes whitespace characters from the beginning, end, or bo
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The trimmed text string with whitespace removed according to the selected mode. |
+
+---
+**Source fingerprint (SHA-256):** `29b4da100373585af8a672ccfbd4c0b597705c1d8c176b2f88f3e878c1192460`

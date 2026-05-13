@@ -1,16 +1,17 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentFlip/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentFlip/zh-TW.md)
 
-LatentFlip 節點旨在透過垂直或水平翻轉來操作潛在表徵。此操作可對潛在空間進行轉換，有可能在資料中發掘新的變化或視角。
+## 概述
+LatentFlip 節點旨在透過垂直或水平翻轉來操控潛在表示。此操作允許轉換潛在空間，可能發掘資料中的新變化或視角。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱      | 資料類型       | 描述 |
-|---------------|----------------|------|
-| `樣本`     | `LATENT`       | 此參數代表將被翻轉的潛在表徵。翻轉操作會根據 'flip_method' 參數垂直或水平地改變這些表徵，從而轉換潛在空間中的資料。 |
-| `翻轉方法` | COMBO[STRING] | 此參數指定潛在樣本將沿哪個軸進行翻轉。可選 'x-axis: vertically'（垂直）或 'y-axis: horizontally'（水平），決定了翻轉方向以及對潛在表徵施加的轉換性質。 |
+| 參數 | 資料類型 | 說明 |
+|---------------|--------------|-------------|
+| `samples` | `LATENT` | 「samples」參數代表要進行翻轉的潛在表示。翻轉操作會根據「flip_method」參數，垂直或水平地改變這些表示，從而轉換潛在空間中的資料。 |
+| `flip_method` | COMBO[STRING] | 「flip_method」參數指定潛在樣本將沿哪個軸進行翻轉。可以是「x-axis: vertically」（x軸：垂直）或「y-axis: horizontally」（y軸：水平），決定翻轉的方向，進而決定應用於潛在表示的轉換性質。 |
 
-## 輸出參數
+## 輸出
 
-| 參數名稱 | 資料類型 | 描述 |
-|----------|----------|------|
-| `latent` | `LATENT` | 輸出是輸入潛在表徵的修改版本，已根據指定方法進行翻轉。此轉換可在潛在空間中引入新的變化。 |
+| 參數 | 資料類型 | 說明 |
+|-----------|-------------|-------------|
+| `latent` | `LATENT` | 輸出是輸入潛在表示的修改版本，已根據指定的方法進行翻轉。此轉換可以在潛在空間中引入新的變化。 |

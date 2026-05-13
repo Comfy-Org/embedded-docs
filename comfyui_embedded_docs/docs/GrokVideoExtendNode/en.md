@@ -8,7 +8,7 @@ The Grok Video Extend node uses an AI model to create a seamless continuation of
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | N/A | Text description of what should happen next in the video. |
 | `video` | VIDEO | Yes | N/A | Source video to extend. MP4 format, 2-15 seconds. |
-| `model` | COMBO | Yes | `"grok-imagine-video"` | The model to use for video extension. When selected, it reveals a `duration` parameter. |
+| `model` | COMBO | Yes | `"grok-imagine-video"` | The model to use for video extension. When selected, it reveals a nested `duration` parameter. |
 | `seed` | INT | No | 0 to 2147483647 | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed (default: 0). |
 
 **Parameter Constraints:**
@@ -21,3 +21,6 @@ The Grok Video Extend node uses an AI model to create a seamless continuation of
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The newly generated video extension. |
+
+---
+**Source fingerprint (SHA-256):** `a33383be0eb6857538a75e1b901ee58df0153dfeaf95a7ee19933d651b745b5f`

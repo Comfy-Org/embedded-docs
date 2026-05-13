@@ -1,7 +1,5 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddNoise/en.md)
 
-# AddNoise
-
 This node adds controlled noise to a latent image using a specified noise generator and sigma values. It processes the input through the model's sampling system to apply noise scaling appropriate for the given sigma range, returning a new latent representation with the noise applied.
 
 ## Inputs
@@ -18,3 +16,6 @@ This node adds controlled noise to a latent image using a specified noise genera
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `LATENT` | LATENT | The modified latent representation with added noise. Any NaN or infinite values in the output are converted to zeros for stability. |
+
+---
+**Source fingerprint (SHA-256):** `8f387f95aeec2780d27bee5b954ad2c6cd6daa9242a1ea15697455b157bc80d5`

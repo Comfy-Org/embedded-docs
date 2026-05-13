@@ -1,17 +1,19 @@
-Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/hypernetworks`, y también leerá los modelos de las rutas adicionales que hayas configurado en el archivo extra_model_paths.yaml. A veces, es posible que necesites **refrescar la interfaz de ComfyUI** para que pueda leer los archivos de modelo en la carpeta correspondiente.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HypernetworkLoader/es.md)
 
-El nodo HypernetworkLoader está diseñado para mejorar o modificar las capacidades de un modelo dado aplicando un hypernetwork. Carga un hypernetwork especificado y lo aplica al modelo, alterando potencialmente su comportamiento o rendimiento basado en el parámetro de fuerza. Este proceso permite ajustes dinámicos a la arquitectura o parámetros del modelo, habilitando sistemas de IA más flexibles y adaptativos.
+Este nodo detecta los modelos ubicados en la carpeta `ComfyUI/models/hypernetworks`, y también lee modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo de la carpeta correspondiente.
+
+El nodo HypernetworkLoader está diseñado para mejorar o modificar las capacidades de un modelo determinado mediante la aplicación de una hiperred. Carga una hiperred específica y la aplica al modelo, alterando potencialmente su comportamiento o rendimiento según el parámetro de intensidad. Este proceso permite realizar ajustes dinámicos en la arquitectura o los parámetros del modelo, posibilitando sistemas de IA más flexibles y adaptativos.
 
 ## Entradas
 
-| Campo                 | Comfy dtype       | Descripción                                                                                  |
-|-----------------------|-------------------|----------------------------------------------------------------------------------------------|
-| `modelo`               | `MODEL`           | El modelo base al que se aplicará el hypernetwork, determinando la arquitectura a mejorar o modificar. |
-| `nombre_hypernetwork`  | `COMBO[STRING]`   | El nombre del hypernetwork que se cargará y aplicará al modelo, impactando el comportamiento o rendimiento modificado del modelo. |
-| `fuerza`            | `FLOAT`           | Un escalar que ajusta la intensidad del efecto del hypernetwork en el modelo, permitiendo un ajuste fino de las alteraciones. |
+| Campo                | Tipo Comfy        | Descripción                                                                                  |
+|----------------------|-------------------|----------------------------------------------------------------------------------------------|
+| `model`              | `MODEL`           | El modelo base al que se aplicará la hiperred, determinando la arquitectura que se mejorará o modificará. |
+| `hypernetwork_name`  | `COMBO[STRING]`   | El nombre de la hiperred que se cargará y aplicará al modelo, afectando el comportamiento o rendimiento modificado del modelo. |
+| `strength`           | `FLOAT`           | Un escalar que ajusta la intensidad del efecto de la hiperred sobre el modelo, permitiendo un ajuste fino de las alteraciones. |
 
 ## Salidas
 
-| Campo   | Data Type | Descripción                                                              |
-|---------|-------------|--------------------------------------------------------------------------|
-| `modelo` | `MODEL`     | El modelo modificado después de que el hypernetwork ha sido aplicado, mostrando el impacto del hypernetwork en el modelo original. |
+| Campo    | Tipo de Dato | Descripción                                                              |
+|----------|--------------|--------------------------------------------------------------------------|
+| `model`  | `MODEL`      | El modelo modificado después de aplicar la hiperred, mostrando el impacto de la hiperred sobre el modelo original. |

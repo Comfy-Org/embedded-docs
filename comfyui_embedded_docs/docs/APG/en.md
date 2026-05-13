@@ -16,3 +16,6 @@ The APG (Adaptive Projected Guidance) node modifies the sampling process by adju
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | Returns the modified model with adaptive projected guidance applied to its sampling process |
+
+---
+**Source fingerprint (SHA-256):** `89e2486bf08f750f82608db93c389f0b25ce0be766f62faa8704d19bd7e41654`

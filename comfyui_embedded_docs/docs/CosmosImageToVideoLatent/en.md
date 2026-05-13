@@ -7,10 +7,10 @@ The CosmosImageToVideoLatent node creates video latent representations from inpu
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | Yes | - | The VAE model used for encoding images into latent space |
-| `width` | INT | No | 16 to MAX_RESOLUTION | The width of the output video in pixels (default: 1280) |
-| `height` | INT | No | 16 to MAX_RESOLUTION | The height of the output video in pixels (default: 704) |
-| `length` | INT | No | 1 to MAX_RESOLUTION | The number of frames in the video sequence (default: 121) |
-| `batch_size` | INT | No | 1 to 4096 | The number of latent batches to generate (default: 1) |
+| `width` | INT | Yes | 16 to MAX_RESOLUTION | The width of the output video in pixels (default: 1280) |
+| `height` | INT | Yes | 16 to MAX_RESOLUTION | The height of the output video in pixels (default: 704) |
+| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the video sequence (default: 121) |
+| `batch_size` | INT | Yes | 1 to 4096 | The number of latent batches to generate (default: 1) |
 | `start_image` | IMAGE | No | - | Optional image to encode at the beginning of the video sequence |
 | `end_image` | IMAGE | No | - | Optional image to encode at the end of the video sequence |
 
@@ -21,3 +21,6 @@ The CosmosImageToVideoLatent node creates video latent representations from inpu
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `latent` | LATENT | The generated video latent representation with optional encoded images and corresponding noise masks |
+
+---
+**Source fingerprint (SHA-256):** `31ce4dc577c672e0b3dc0bfb6644b2ef7ab737f6c4ee5e0677973b6a4efdd66d`

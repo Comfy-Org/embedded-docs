@@ -1,17 +1,19 @@
-Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/checkpoints`, y también leerá los modelos de las rutas adicionales configuradas en el archivo extra_model_paths.yaml. A veces, es posible que necesites **refrescar la interfaz de ComfyUI** para permitir que lea los archivos de modelo de la carpeta correspondiente.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageOnlyCheckpointLoader/es.md)
 
-Este nodo se especializa en cargar checkpoints específicamente para modelos basados en imágenes dentro de flujos de trabajo de generación de video. Recupera y configura eficientemente los componentes necesarios de un checkpoint dado, centrándose en los aspectos relacionados con la imagen del modelo.
+Este nodo detecta los modelos ubicados en la carpeta `ComfyUI/models/checkpoints`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para permitir que lea los archivos de modelo desde la carpeta correspondiente.
+
+Este nodo se especializa en cargar puntos de control específicamente para modelos basados en imágenes dentro de flujos de trabajo de generación de video. Recupera y configura de manera eficiente los componentes necesarios de un punto de control determinado, centrándose en los aspectos relacionados con imágenes del modelo.
 
 ## Entradas
 
-| Campo      | Data Type | Descripción                                                                       |
-|------------|-------------|-----------------------------------------------------------------------------------|
-| `nombre_ckpt`| COMBO[STRING] | Especifica el nombre del checkpoint a cargar, crucial para identificar y recuperar el archivo de checkpoint correcto de una lista predefinida. |
+| Campo        | Tipo de Dato | Descripción                                                                                     |
+|--------------|---------------|-------------------------------------------------------------------------------------------------|
+| `ckpt_name`  | COMBO[STRING] | Especifica el nombre del punto de control a cargar, crucial para identificar y recuperar el archivo de punto de control correcto de una lista predefinida. |
 
 ## Salidas
 
-| Campo     | Data Type | Descripción                                                                                   |
-|-----------|-------------|-----------------------------------------------------------------------------------------------|
-| `model`   | MODEL     | Devuelve el modelo principal cargado desde el checkpoint, configurado para el procesamiento de imágenes dentro de contextos de generación de video. |
-| `clip_vision` | `CLIP_VISION` | Proporciona el componente de visión CLIP del checkpoint, adaptado para la comprensión de imágenes y la extracción de características. |
-| `vae`     | VAE       | Entrega el componente Autoencoder Variacional (VAE), esencial para tareas de manipulación y generación de imágenes. |
+| Campo         | Tipo de Dato | Descripción                                                                                                   |
+|---------------|---------------|---------------------------------------------------------------------------------------------------------------|
+| `model`       | MODEL         | Devuelve el modelo principal cargado desde el punto de control, configurado para el procesamiento de imágenes en contextos de generación de video. |
+| `clip_vision` | `CLIP_VISION` | Proporciona el componente de visión CLIP del punto de control, adaptado para la comprensión de imágenes y la extracción de características. |
+| `vae`         | VAE           | Entrega el componente de Autoencoder Variacional (VAE), esencial para tareas de manipulación y generación de imágenes. |

@@ -17,3 +17,6 @@ Este nó carrega um modelo de interpolação de quadros a partir de um arquivo e
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `FRAME_INTERPOLATION_MODEL` | MODEL | O modelo de interpolação de quadros carregado e configurado, pronto para uso em outros nós. |
+
+---
+**Source fingerprint (SHA-256):** `497c20d5123bcbfd321dc4a659250ce3e0903e55c3a0274d3ed45710d75573d9`

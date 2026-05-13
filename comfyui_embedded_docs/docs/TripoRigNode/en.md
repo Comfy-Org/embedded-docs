@@ -15,5 +15,9 @@ The TripoRigNode generates a rigged 3D model from an original model task ID. It 
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `model_file` | STRING | The generated rigged 3D model file |
+| `model_file` | STRING | The generated rigged 3D model file (kept for backward compatibility) |
 | `rig task_id` | RIG_TASK_ID | The task ID for tracking the rig generation process |
+| `GLB` | FILE3DGLB | The generated rigged 3D model in GLB format |
+
+---
+**Source fingerprint (SHA-256):** `621a4d08f3b8a349c3afff3dbf888b20d524eb3337685769b7a7badcb28986e4`

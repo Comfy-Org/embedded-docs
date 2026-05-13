@@ -33,3 +33,6 @@ The Magnific Image Relight node adjusts the lighting of an input image. It can a
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The relit image. |
+
+---
+**Source fingerprint (SHA-256):** `c260b7c88a267a20fdea7f436404fe96ede782bc522ab29da36e94c20f7330cd`

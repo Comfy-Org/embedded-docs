@@ -13,3 +13,6 @@ This node takes a single boolean (true/false) input and outputs the opposite val
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | BOOLEAN | The inverted boolean value. |
+
+---
+**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`

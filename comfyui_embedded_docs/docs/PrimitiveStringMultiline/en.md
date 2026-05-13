@@ -13,3 +13,6 @@ The PrimitiveStringMultiline node provides a multiline text input field for ente
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The same string value that was provided as input |
+
+---
+**Source fingerprint (SHA-256):** `a2faaf366d6316d659b749ec6077b944f9b0f1ad702d699acc3897aef842b937`

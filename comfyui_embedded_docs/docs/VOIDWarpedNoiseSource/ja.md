@@ -4,16 +4,19 @@
 
 ## 概要
 
-このノードは、LATENT（例：VOIDWarpedNoiseノードの出力）をNOISEソースに変換します。これにより、歪みノイズをSamplerCustomAdvancedノードで使用し、より制御された画像生成が可能になります。
+このノードは、LATENT（VOIDWarpedNoiseノードの出力など）をNOISEソースに変換します。これにより、歪みノイズをSamplerCustomAdvancedノードで使用し、より制御された画像生成が可能になります。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
-|-----------|-----------|----------|-------|-------------|
+|-----------|----------|------|------|------|
 | `warped_noise` | LATENT | はい | なし | VOIDWarpedNoiseからの歪みノイズの潜在表現 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
-|-------------|-----------|-------------|
-| `NOISE` | NOISE | SamplerCustomAdvancedで使用可能なノイズソース |
+|--------|----------|------|
+| `NOISE` | NOISE | SamplerCustomAdvancedで使用できるノイズソース |
+
+---
+**Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`

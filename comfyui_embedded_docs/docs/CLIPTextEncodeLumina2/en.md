@@ -4,11 +4,11 @@ The CLIP Text Encode for Lumina2 node encodes a system prompt and a user prompt 
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `system_prompt` | STRING | COMBO | - | "superior", "alignment" | Lumina2 provide two types of system prompts: Superior: You are an assistant designed to generate superior images with the superior degree of image-text alignment based on textual prompts or user prompts. Alignment: You are an assistant designed to generate high-quality images with the highest degree of image-text alignment based on textual prompts. |
-| `user_prompt` | STRING | STRING | - | - | The text to be encoded. |
-| `clip` | CLIP | CLIP | - | - | The CLIP model used for encoding the text. |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `system_prompt` | STRING | Yes | `"superior"`<br>`"alignment"` | Lumina2 provides two types of system prompts: "superior" generates images with superior image-text alignment; "alignment" generates high-quality images with the highest degree of image-text alignment. |
+| `user_prompt` | STRING | Yes | N/A | The text to be encoded. Supports multiline input and dynamic prompts. |
+| `clip` | CLIP | Yes | N/A | The CLIP model used for encoding the text. |
 
 **Note:** The `clip` input is required and cannot be None. If the clip input is invalid, the node will raise an error indicating that the checkpoint may not contain a valid CLIP or text encoder model.
 
@@ -17,3 +17,6 @@ The CLIP Text Encode for Lumina2 node encodes a system prompt and a user prompt 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | A conditioning containing the embedded text used to guide the diffusion model. |
+
+---
+**Source fingerprint (SHA-256):** `fcc0802180ffc2c0757b395850d54632da011473da0c6b1c5268b42da3747024`

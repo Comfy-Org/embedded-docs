@@ -15,3 +15,6 @@ The Get Video Components node extracts all the main elements from a video file. 
 | `images` | IMAGE | The individual frames extracted from the video as separate images. |
 | `audio` | AUDIO | The audio track extracted from the video. |
 | `fps` | FLOAT | The framerate of the video in frames per second. |
+
+---
+**Source fingerprint (SHA-256):** `7b8419d6614d5be0ec15ccfeb48ee9813c74b28b0b405d62c03496c133c92f53`

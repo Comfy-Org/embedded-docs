@@ -1,8 +1,8 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/tr.md)
 
-Bu düğüm, Seedance 2.0 için kişisel bir video varlığı oluşturur. Girdi videonuzu yükler ve belirtilen bir varlık grubuna kaydeder. Bir grup kimliği sağlamazsanız, önce yeni bir grup oluşturmak için tarayıcınızda bir gerçek kişi doğrulama sürecinden geçmenizi sağlar.
+Bu düğüm, Seedance 2.0 için kişisel bir video varlığı oluşturur. Giriş videonuzu yükler ve belirtilen bir varlık grubuna kaydeder. Bir grup kimliği sağlamazsanız, önce yeni bir grup oluşturmak için tarayıcınızda bir gerçek kişi doğrulama sürecinden geçmenizi sağlar.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
@@ -22,3 +22,6 @@ Bu düğüm, Seedance 2.0 için kişisel bir video varlığı oluşturur. Girdi 
 |-------------|-----------|-------------|
 | `asset_id` | STRING | Yeni oluşturulan video varlığı için benzersiz tanımlayıcı. |
 | `group_id` | STRING | Yeni videoyu içeren varlık grubunun tanımlayıcısı. Bu, sağlanan `group_id` veya yeni oluşturulan bir kimlik olacaktır. |
+
+---
+**Source fingerprint (SHA-256):** `9da0872cf8df32765e3fb1eef50bc24f53b65e069d8ef2609de1075d89edd605`

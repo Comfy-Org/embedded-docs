@@ -14,3 +14,6 @@ This node sets a reference audio timbre for use in the "ace step 1.5" process. I
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `conditioning` | CONDITIONING | The modified conditioning data, now containing the reference audio timbre latents if the optional `latent` input was provided. |
+
+---
+**Source fingerprint (SHA-256):** `2d39399eb79cfe76b72d01326b89863e2553bc23414b1166d310e5222b215b29`

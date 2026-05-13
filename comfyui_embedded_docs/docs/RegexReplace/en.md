@@ -19,3 +19,6 @@ The RegexReplace node finds and replaces text in strings using regular expressio
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The modified string with the specified replacements applied |
+
+---
+**Source fingerprint (SHA-256):** `4a4d4b317ee23314a4ac26cf3b58a2cc904bfb8111608f88345c1014b801ea00`

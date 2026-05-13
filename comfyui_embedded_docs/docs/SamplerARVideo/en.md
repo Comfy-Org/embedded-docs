@@ -1,7 +1,5 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerARVideo/en.md)
 
-# Sampler AR Video
-
 The Sampler AR Video node provides a specialized sampling method for autoregressive video models, such as those using Causal Forcing or Self-Forcing techniques. It manages all parameters related to the autoregressive (AR) loop directly within the workflow, making it easy to configure how the model generates video frames one step at a time.
 
 ## Inputs
@@ -15,3 +13,6 @@ The Sampler AR Video node provides a specialized sampling method for autoregress
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `SAMPLER` | SAMPLER | A configured sampler object that uses the "ar_video" sampling function with the specified autoregressive parameters. |
+
+---
+**Source fingerprint (SHA-256):** `5b735f98fdde074ee9483503fee0e2322d510aed846336b382a8ea89a363c9e4`

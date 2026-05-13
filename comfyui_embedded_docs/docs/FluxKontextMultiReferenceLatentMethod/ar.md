@@ -1,18 +1,21 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/ar.md)
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/ar.md)
 
-# FluxKontextMultiReferenceLatentMethod
+# ترجمة وثيقة FluxKontextMultiReferenceLatentMethod
 
-تُعد عقدة `FluxKontextMultiReferenceLatentMethod` بيانات التكييف عن طريق تعيين طريقة محددة للاتجاهات المرجعية. تقوم بإلحاق الطريقة المختارة بمدخلات التكييف، مما يؤثر على كيفية معالجة الاتجاهات المرجعية في خطوات التوليد اللاحقة. تم تصنيف هذه العقدة على أنها تجريبية وهي جزء من نظام تكييف Flux.
+عقدة FluxKontextMultiReferenceLatentMethod تقوم بتعديل بيانات التكييف عن طريق تعيين طريقة محددة لللاتينات المرجعية. تقوم هذه العقدة بإلحاق الطريقة المختارة بمدخل التكييف، مما يؤثر على كيفية معالجة اللاتينات المرجعية في خطوات التوليد اللاحقة. تم وضع علامة تجريبية على هذه العقدة وهي جزء من نظام تكييف Flux.
 
 ## المدخلات
 
-| المعامل | نوع البيانات | مطلوب | النطاق | الوصف |
+| المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | نعم | - | بيانات التكييف التي سيتم تعديلها بطريقة الاتجاهات المرجعية |
-| `reference_latents_method` | STRING | نعم | `"offset"`<br>`"index"`<br>`"uxo/uno"` | الطريقة المستخدمة لمعالجة الاتجاهات المرجعية. إذا تم اختيار "uxo" أو "uso"، فسيتم تحويلها إلى "uxo" |
+| `conditioning` | CONDITIONING | نعم | - | بيانات التكييف المراد تعديلها باستخدام طريقة اللاتينات المرجعية |
+| `reference_latents_method` | STRING | نعم | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | الطريقة المستخدمة لمعالجة اللاتينات المرجعية. إذا تم اختيار "uxo" أو "uso"، فسيتم تحويلها إلى "uxo". تم وضع علامة متقدمة على هذا المعامل. |
 
 ## المخرجات
 
 | اسم المخرج | نوع البيانات | الوصف |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | بيانات التكييف المعدلة مع تطبيق طريقة الاتجاهات المرجعية |
+| `conditioning` | CONDITIONING | بيانات التكييف المعدلة مع تطبيق طريقة اللاتينات المرجعية |
+
+---
+**Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

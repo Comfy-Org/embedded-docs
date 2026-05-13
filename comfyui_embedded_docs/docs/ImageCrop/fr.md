@@ -1,17 +1,19 @@
-Le nœud `ImageCrop` est conçu pour recadrer les images à une largeur et une hauteur spécifiées à partir d'une coordonnée x et y donnée. Cette fonctionnalité est essentielle pour se concentrer sur des régions spécifiques d'une image ou pour ajuster la taille de l'image afin de répondre à certaines exigences.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCrop/fr.md)
+
+Le nœud `ImageCrop` est conçu pour recadrer des images selon une largeur et une hauteur spécifiées, à partir de coordonnées x et y données. Cette fonctionnalité est essentielle pour se concentrer sur des zones spécifiques d'une image ou pour ajuster sa taille afin de répondre à certaines exigences.
 
 ## Entrées
 
-| Champ | Data Type | Description                                                                                   |
-|-------|-------------|-----------------------------------------------------------------------------------------------|
-| `image` | `IMAGE` | L'image d'entrée à recadrer. Ce paramètre est crucial car il définit l'image source à partir de laquelle une région sera extraite en fonction des dimensions et des coordonnées spécifiées. |
-| `largeur` | `INT` | Spécifie la largeur de l'image recadrée. Ce paramètre détermine la largeur de l'image recadrée résultante. |
-| `hauteur` | `INT` | Spécifie la hauteur de l'image recadrée. Ce paramètre détermine la hauteur de l'image recadrée résultante. |
+| Champ | Type de données | Description                                                                                   |
+|-------|-----------------|-----------------------------------------------------------------------------------------------|
+| `image` | `IMAGE` | L'image d'entrée à recadrer. Ce paramètre est crucial car il définit l'image source à partir de laquelle une région sera extraite en fonction des dimensions et coordonnées spécifiées. |
+| `width` | `INT` | Spécifie la largeur de l'image recadrée. Ce paramètre détermine la largeur de l'image résultante après recadrage. |
+| `height` | `INT` | Spécifie la hauteur de l'image recadrée. Ce paramètre détermine la hauteur de l'image résultante après recadrage. |
 | `x` | `INT` | La coordonnée x du coin supérieur gauche de la zone de recadrage. Ce paramètre définit le point de départ pour la dimension de largeur du recadrage. |
 | `y` | `INT` | La coordonnée y du coin supérieur gauche de la zone de recadrage. Ce paramètre définit le point de départ pour la dimension de hauteur du recadrage. |
 
 ## Sorties
 
-| Champ | Data Type | Description                                                                   |
-|-------|-------------|-------------------------------------------------------------------------------|
-| `image` | `IMAGE` | L'image recadrée résultant de l'opération de recadrage. Cette sortie est significative pour un traitement ou une analyse ultérieure de la région d'image spécifiée. |
+| Champ | Type de données | Description                                                                   |
+|-------|-----------------|-------------------------------------------------------------------------------|
+| `image` | `IMAGE` | L'image recadrée résultant de l'opération de recadrage. Cette sortie est importante pour un traitement ou une analyse ultérieure de la région d'image spécifiée. |

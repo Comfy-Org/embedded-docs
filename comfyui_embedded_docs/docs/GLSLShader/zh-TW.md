@@ -1,31 +1,36 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLSLShader/zh-TW.md)
 
-GLSL Shader 節點將自訂的 GLSL ES 片段著色器程式碼套用至輸入圖像。它允許您編寫能夠處理多個圖像並接受統一參數（浮點數和整數）的著色器程式，以創造複雜的視覺效果。輸出尺寸可以由第一個輸入圖像決定或手動設定。
+GLSL 著色器節點可將自訂的 GLSL ES 片段著色器程式碼應用於輸入影像。它允許您編寫能夠處理多張影像並接受統一參數（浮點數、整數、布林值和曲線）的著色器程式，以建立複雜的視覺效果。輸出尺寸可由第一張輸入影像決定，或手動設定。
 
-## 輸入參數
+## 輸入
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `fragment_shader` | STRING | 是 | N/A | GLSL 片段著色器原始碼（相容於 GLSL ES 3.00 / WebGL 2.0）。預設值：一個輸出第一個輸入圖像的基本著色器。 |
-| `size_mode` | COMBO | 是 | `"from_input"`<br>`"custom"` | 輸出尺寸模式：'from_input' 使用第一個輸入圖像的尺寸，'custom' 允許手動設定尺寸。 |
-| `width` | INT | 否 | 1 至 16384 | 當 `size_mode` 設定為 `"custom"` 時，輸出圖像的寬度。預設值：512。 |
-| `height` | INT | 否 | 1 至 16384 | 當 `size_mode` 設定為 `"custom"` 時，輸出圖像的高度。預設值：512。 |
-| `images` | IMAGE | 是 | 1 至 8 個圖像 | 要由著色器處理的輸入圖像。圖像在著色器程式碼中作為 `u_image0` 到 `u_image7` (sampler2D) 使用。 |
-| `floats` | FLOAT | 否 | 0 至 8 個浮點數 | 提供給著色器的浮點數統一參數值。浮點數在著色器程式碼中作為 `u_float0` 到 `u_float7` 使用。預設值：0.0。 |
-| `ints` | INT | 否 | 0 至 8 個整數 | 提供給著色器的整數統一參數值。整數在著色器程式碼中作為 `u_int0` 到 `u_int7` 使用。預設值：0。 |
+| `fragment_shader` | STRING | 是 | N/A | GLSL 片段著色器原始碼（相容 GLSL ES 3.00 / WebGL 2.0）。預設值：一個輸出第一張輸入影像的基本著色器。 |
+| `size_mode` | COMBO | 是 | `"from_input"`<br>`"custom"` | 輸出尺寸：'from_input' 使用第一張輸入影像的尺寸，'custom' 允許手動設定尺寸。 |
+| `width` | INT | 否 | 1 至 16384 | 當 `size_mode` 設為 `"custom"` 時，輸出影像的寬度。預設值：512。 |
+| `height` | INT | 否 | 1 至 16384 | 當 `size_mode` 設為 `"custom"` 時，輸出影像的高度。預設值：512。 |
+| `images` | IMAGE | 是 | 1 至 8 張影像 | 要由著色器處理的輸入影像。在著色器程式碼中，影像可作為 `u_image0` 到 `u_image7`（sampler2D）使用。 |
+| `floats` | FLOAT | 否 | 0 至 8 個浮點數 | 著色器的浮點數統一值。在著色器程式碼中，浮點數可作為 `u_float0` 到 `u_float7` 使用。預設值：0.0。 |
+| `ints` | INT | 否 | 0 至 8 個整數 | 著色器的整數統一值。在著色器程式碼中，整數可作為 `u_int0` 到 `u_int7` 使用。預設值：0。 |
+| `bools` | BOOLEAN | 否 | 0 至 8 個布林值 | 著色器的布林統一值。在著色器程式碼中，布林值可作為 `u_bool0` 到 `u_bool7`（bool）使用。預設值：False。 |
+| `curves` | CURVE | 否 | 0 至 8 條曲線 | 著色器的曲線統一值。在著色器程式碼中，曲線可作為 `u_curve0` 到 `u_curve7`（sampler2D，1D LUT）使用。使用 `texture(u_curve0, vec2(x, 0.5)).r` 進行取樣。 |
 
 **注意事項：**
 
-* `width` 和 `height` 參數僅在 `size_mode` 設定為 `"custom"` 時才需要且可見。
-* 至少需要一個輸入圖像。
-* 著色器程式碼始終可以存取一個包含輸出尺寸的 `u_resolution` (vec2) 統一參數。
-* 最多可以提供 8 個輸入圖像、8 個浮點數統一參數和 8 個整數統一參數。
+* 僅在 `size_mode` 設為 `"custom"` 時，`width` 和 `height` 參數才為必要且可見。
+* 至少需要一張輸入影像。
+* 著色器程式碼始終可以存取包含輸出尺寸的 `u_resolution`（vec2）統一值。
+* 最多可提供 8 張輸入影像、8 個浮點數統一值、8 個整數統一值、8 個布林統一值和 8 條曲線統一值。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `IMAGE0` | IMAGE | 來自著色器的第一個輸出圖像。在著色器程式碼中可透過 `layout(location = 0) out vec4 fragColor0` 存取。 |
-| `IMAGE1` | IMAGE | 來自著色器的第二個輸出圖像。在著色器程式碼中可透過 `layout(location = 1) out vec4 fragColor1` 存取。 |
-| `IMAGE2` | IMAGE | 來自著色器的第三個輸出圖像。在著色器程式碼中可透過 `layout(location = 2) out vec4 fragColor2` 存取。 |
-| `IMAGE3` | IMAGE | 來自著色器的第四個輸出圖像。在著色器程式碼中可透過 `layout(location = 3) out vec4 fragColor3` 存取。 |
+| `IMAGE0` | IMAGE | 來自著色器的第一張輸出影像。可透過著色器程式碼中的 `layout(location = 0) out vec4 fragColor0` 使用。 |
+| `IMAGE1` | IMAGE | 來自著色器的第二張輸出影像。可透過著色器程式碼中的 `layout(location = 1) out vec4 fragColor1` 使用。 |
+| `IMAGE2` | IMAGE | 來自著色器的第三張輸出影像。可透過著色器程式碼中的 `layout(location = 2) out vec4 fragColor2` 使用。 |
+| `IMAGE3` | IMAGE | 來自著色器的第四張輸出影像。可透過著色器程式碼中的 `layout(location = 3) out vec4 fragColor3` 使用。 |
+
+---
+**Source fingerprint (SHA-256):** `7830977409a5efab205b7c927eb83499a9e1e8299959b34643c9c3f1f586c058`

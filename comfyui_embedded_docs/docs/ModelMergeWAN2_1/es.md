@@ -1,11 +1,11 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeWAN2_1/es.md)
 
-El nodo ModelMergeWAN2_1 fusiona dos modelos combinando sus componentes mediante promedios ponderados. Soporta diferentes tamaños de modelos, incluyendo modelos de 1.3B con 30 bloques y modelos de 14B con 40 bloques, con manejo especial para modelos de imagen a video que incluyen un componente adicional de incrustación de imagen. Cada componente de los modelos puede ponderarse individualmente para controlar la proporción de mezcla entre los dos modelos de entrada.
+El nodo `ModelMergeWAN2_1` fusiona dos modelos WAN2.1 combinando sus componentes mediante promedios ponderados. Admite diferentes tamaños de modelo, incluidos modelos de 1.3B con 30 bloques y modelos de 14B con 40 bloques, con manejo especial para modelos de imagen a video que incluyen un componente adicional de incrustación de imagen. Cada componente de los modelos puede ponderarse individualmente para controlar la proporción de fusión entre los dos modelos de entrada.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|---------------|-------------|-------|-------------|
 | `model1` | MODEL | Sí | - | Primer modelo a fusionar |
 | `model2` | MODEL | Sí | - | Segundo modelo a fusionar |
 | `patch_embedding.` | FLOAT | Sí | 0.0 - 1.0 | Peso para el componente de incrustación de parches (predeterminado: 1.0) |
@@ -53,12 +53,15 @@ El nodo ModelMergeWAN2_1 fusiona dos modelos combinando sus componentes mediante
 | `blocks.37.` | FLOAT | Sí | 0.0 - 1.0 | Peso para el bloque 37 (predeterminado: 1.0) |
 | `blocks.38.` | FLOAT | Sí | 0.0 - 1.0 | Peso para el bloque 38 (predeterminado: 1.0) |
 | `blocks.39.` | FLOAT | Sí | 0.0 - 1.0 | Peso para el bloque 39 (predeterminado: 1.0) |
-| `head.` | FLOAT | Sí | 0.0 - 1.0 | Peso para el componente de cabeza (predeterminado: 1.0) |
+| `head.` | FLOAT | Sí | 0.0 - 1.0 | Peso para el componente de cabecera (predeterminado: 1.0) |
 
-**Nota:** Todos los parámetros de peso utilizan un rango de 0.0 a 1.0 con incrementos de 0.01. El nodo soporta hasta 40 bloques para acomodar diferentes tamaños de modelos, donde los modelos de 1.3B utilizan 30 bloques y los modelos de 14B utilizan 40 bloques. El parámetro `img_emb.` es específicamente para modelos de imagen a video.
+**Nota:** Todos los parámetros de peso utilizan un rango de 0.0 a 1.0 con incrementos de 0.01. El nodo admite hasta 40 bloques para adaptarse a diferentes tamaños de modelo, donde los modelos de 1.3B utilizan 30 bloques y los modelos de 14B utilizan 40 bloques. El parámetro `img_emb.` es específico para modelos de imagen a video.
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+|------------------|---------------|-------------|
 | `model` | MODEL | El modelo fusionado que combina componentes de ambos modelos de entrada según los pesos especificados |
+
+---
+**Source fingerprint (SHA-256):** `d550a2f62bbcb4b46ccdd8a04fab80e93f96ea63426d48acb3515d51175efc99`

@@ -1,33 +1,38 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/zh-TW.md)
 
-{heading_overview}
+# Wan 圖片轉影片節點
 
-Wan Image to Video 節點從單一輸入圖像和文字提示開始生成影片內容。它透過根據提供的描述延伸初始畫面來創建影片序列，並提供控制影片品質、持續時間和音訊整合的選項。
+Wan 圖片轉影片節點可從單張輸入圖片和文字提示生成影片。它將提供的圖片作為第一幀，並根據描述建立影片序列，提供解析度、時長、音訊及其他進階設定的選項。
 
-{heading_inputs}
+## 輸入
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | "wan2.5-i2v-preview"<br>"wan2.5-i2v-preview" | 使用的模型（預設："wan2.5-i2v-preview"） |
-| `image` | IMAGE | 是 | - | 作為影片生成第一幀的輸入圖像 |
-| `prompt` | STRING | 是 | - | 用於描述元素和視覺特徵的提示，支援英文/中文（預設：空） |
-| `negative_prompt` | STRING | 否 | - | 用於指導應避免內容的負向文字提示（預設：空） |
-| `resolution` | COMBO | 否 | "480P"<br>"720P"<br>"1080P" | 影片解析度品質（預設："480P"） |
-| `duration` | INT | 否 | 5-10 | 可用持續時間：5 和 10 秒（預設：5） |
-| `audio` | AUDIO | 否 | - | 音訊必須包含清晰、響亮的聲音，無雜音、背景音樂 |
-| `seed` | INT | 否 | 0-2147483647 | 用於生成的種子值（預設：0） |
-| `generate_audio` | BOOLEAN | 否 | - | 如果沒有音訊輸入，是否自動生成音訊（預設：False） |
-| `prompt_extend` | BOOLEAN | 否 | - | 是否使用 AI 輔助增強提示（預設：True） |
-| `watermark` | BOOLEAN | 否 | - | 是否在結果中添加「AI 生成」浮水印（預設：True） |
+| `model` | COMBO | 是 | "wan2.5-i2v-preview"<br>"wan2.6-i2v" | 要使用的模型（預設值："wan2.6-i2v"） |
+| `image` | IMAGE | 是 | - | 作為影片生成第一幀的輸入圖片。需要恰好一張圖片。 |
+| `prompt` | STRING | 是 | - | 描述元素和視覺特徵的提示詞。支援英文和中文（預設值：空）。 |
+| `negative_prompt` | STRING | 否 | - | 描述要避免內容的負面提示詞（預設值：空）。 |
+| `resolution` | COMBO | 否 | "480P"<br>"720P"<br>"1080P" | 影片解析度品質（預設值："720P"）。Wan 2.6 模型不支援 480P。 |
+| `duration` | INT | 否 | 5-15（步長：5） | 生成影片的時長（秒）。15 秒時長僅 Wan 2.6 模型支援（預設值：5）。 |
+| `audio` | AUDIO | 否 | - | 音訊必須包含清晰、響亮的語音，無雜訊或背景音樂。提供時，音訊時長必須在 3.0 到 29.0 秒之間。 |
+| `seed` | INT | 否 | 0-2147483647 | 用於生成的種子值（預設值：0）。 |
+| `generate_audio` | BOOLEAN | 否 | - | 若未提供音訊輸入，則自動生成音訊（預設值：False）。 |
+| `prompt_extend` | BOOLEAN | 否 | - | 是否使用 AI 輔助增強提示詞（預設值：True）。 |
+| `watermark` | BOOLEAN | 否 | - | 是否在結果中添加 AI 生成浮水印（預設值：False）。 |
+| `shot_type` | COMBO | 否 | "single"<br>"multi" | 指定生成影片的鏡頭類型，即影片是單一連續鏡頭還是包含切換的多個鏡頭。此參數僅在 prompt_extend 為 True 時生效（預設值："single"）。 |
 
 **限制條件：**
 
-- 影片生成需要恰好一張輸入圖像
-- 持續時間參數僅接受 5 或 10 秒的值
-- 當提供音訊時，其持續時間必須在 3.0 到 29.0 秒之間
+- 影片生成需要恰好一張輸入圖片。
+- Wan 2.6 模型（`wan2.6-i2v`）不支援 480P 解析度。
+- 15 秒時長僅 Wan 2.6 模型（`wan2.6-i2v`）支援。
+- 提供音訊時，其時長必須在 3.0 到 29.0 秒之間。
 
-{heading_outputs}
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 基於輸入圖像和提示生成的影片 |
+| `output` | VIDEO | 根據輸入圖片和提示詞生成的影片。 |
+
+---
+**Source fingerprint (SHA-256):** `ad4947dbb9c12ebb97ace99cd447431ba6db88a3b74239099fcbea501cff71f0`

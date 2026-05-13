@@ -16,3 +16,6 @@ The Remove Background node uses a background removal model to generate a mask th
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `mask` | MASK | Generated foreground mask that highlights the main subject of the input image |
+
+---
+**Source fingerprint (SHA-256):** `cd19134e6afed4d31096b613dd534eacad39afe7de2c8b74feab512bd5f09f66`

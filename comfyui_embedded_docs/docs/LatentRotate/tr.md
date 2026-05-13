@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentRotate/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentRotate/tr.md)
 
-LatentRotate düğümü, görüntülerin gizli temsillerini belirtilen açılarla döndürmek için tasarlanmıştır. Döndürme efektleri elde etmek için gizli uzayın manipülasyonunun karmaşıklığını soyutlar ve kullanıcıların bir üretken modelin gizli uzayındaki görüntüleri kolayca dönüştürmesine olanak tanır.
+LatentRotate düğümü, görüntülerin gizli uzay temsillerini belirtilen açılarla döndürmek için tasarlanmıştır. Döndürme efektleri elde etmek için gizli uzayı manipüle etmenin karmaşıklığını soyutlayarak, kullanıcıların üretken bir modelin gizli uzayında görüntüleri kolayca dönüştürmesine olanak tanır.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Tipi | Açıklama |
+| Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `örnekler` | `LATENT`    | 'samples' parametresi, döndürülecek görüntülerin gizli temsillerini temsil eder. Döndürme işleminin başlangıç noktasını belirlemede çok önemlidir. |
-| `döndürme` | COMBO[STRING] | 'rotation' parametresi, gizli görüntülerin hangi açıyla döndürüleceğini belirtir. Ortaya çıkan görüntülerin yönelimi üzerinde doğrudan etkiye sahiptir. |
+| `samples` | `LATENT`    | 'samples' parametresi, döndürülecek görüntülerin gizli uzay temsillerini temsil eder. Döndürme işleminin başlangıç noktasını belirlemek için kritik öneme sahiptir. |
+| `rotation` | COMBO[STRING] | 'rotation' parametresi, gizli görüntülerin hangi açıyla döndürülmesi gerektiğini belirtir. Ortaya çıkan görüntülerin yönünü doğrudan etkiler. |
 
 ## Çıktılar
 
-| Parametre | Veri Tipi | Açıklama |
+| Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | Çıktı, girdi olarak verilen gizli temsillerin, belirtilen açıyla döndürülmüş halidir. |
+| `latent`  | `LATENT`    | Çıktı, girdi gizli uzay temsillerinin belirtilen açıyla döndürülmüş değiştirilmiş bir sürümüdür. |

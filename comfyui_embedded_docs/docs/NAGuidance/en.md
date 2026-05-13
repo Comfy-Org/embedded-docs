@@ -16,3 +16,6 @@ The NAGuidance node applies Normalized Attention Guidance to a model. This techn
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The patched model with Normalized Attention Guidance enabled. |
+
+---
+**Source fingerprint (SHA-256):** `ea3d7fea94e62c8a0784887f3df9d8a503c3dbaa552bf860bd4dde1ae576fa9c`

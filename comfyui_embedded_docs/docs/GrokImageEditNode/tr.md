@@ -1,22 +1,28 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokImageEditNode/tr.md)
 
-Grok Image Edit düğümü, mevcut bir görseli bir metin istemine dayanarak düzenler. Girdinizin varyasyonları olan bir veya daha fazla yeni görsel oluşturmak için Grok API'sini kullanır ve bu süreç açıklamanız tarafından yönlendirilir.
+Grok Görüntü Düzenleme düğümü, bir metin istemine dayanarak mevcut bir görüntüyü değiştirir. Girdi görüntünüzün varyasyonları olan bir veya daha fazla yeni görüntü oluşturmak için Grok API'sini kullanır; bu süreç açıklamanız tarafından yönlendirilir.
 
 ## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Evet | `"grok-imagine-image-beta"` | Görsel düzenleme için kullanılacak belirli yapay zeka modeli. |
-| `image` | IMAGE | Evet | | Düzenlenecek girdi görseli. Yalnızca bir görsel desteklenir. |
-| `prompt` | STRING | Evet | | Düzenlenmiş görseli oluşturmak için kullanılan metin istemi. |
-| `resolution` | COMBO | Evet | `"1K"` | Çıktı görseli için çözünürlük. |
-| `number_of_images` | INT | Hayır | 1 - 10 | Oluşturulacak düzenlenmiş görsel sayısı (varsayılan: 1). |
-| `seed` | INT | Hayır | 0 - 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak belirleyici değildir (varsayılan: 0). |
+| `model` | COMBO | Evet | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"`<br>`"grok-imagine-image-beta"` | Görüntü düzenleme için kullanılacak belirli AI modeli. |
+| `image` | IMAGE | Evet | | Düzenlenecek girdi görüntüsü/görüntüleri. "Pro" modeli yalnızca 1 görüntüyü desteklerken, diğer modeller en fazla 3 girdi görüntüsünü destekler. |
+| `prompt` | STRING | Evet | | Düzenlenmiş görüntüyü oluşturmak için kullanılan metin istemi. Boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır. |
+| `resolution` | COMBO | Evet | `"1K"`<br>`"2K"` | Çıktı görüntüsünün çözünürlüğü. |
+| `number_of_images` | INT | Hayır | 1 ila 10 | Oluşturulacak düzenlenmiş görüntü sayısı (varsayılan: 1). |
+| `seed` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `aspect_ratio` | COMBO | Hayır | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | Çıktı görüntüsünün en-boy oranı. Yalnızca görüntü girişine birden fazla görüntü bağlandığında izin verilir. "auto" olarak ayarlanırsa, en-boy oranı otomatik olarak belirlenir (varsayılan: "auto"). |
 
-**Not:** `image` girdisi tam olarak bir görsel içermelidir. Birden fazla görsel sağlamak bir hataya neden olacaktır.
+**Önemli kısıtlamalar:**
+- `image` girişi, `grok-imagine-image-pro` modeli kullanılırken yalnızca 1 girdi görüntüsünü destekler; diğer modellerde en fazla 3 görüntü desteklenir.
+- `aspect_ratio` parametresi, yalnızca `image` girişine birden fazla görüntü bağlandığında özel bir değere ("auto" dışında) ayarlanabilir. Tek bir girdi görüntüsüyle özel bir en-boy oranı ayarlamak hataya neden olur.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | IMAGE | Düğüm tarafından oluşturulan düzenlenmiş görsel(ler). Eğer `number_of_images` 1'den büyükse, çıktılar bir toplu iş halinde birleştirilir. |
+| `output` | IMAGE | Düğüm tarafından oluşturulan düzenlenmiş görüntü(ler). `number_of_images` 1'den büyükse, çıktılar bir toplu iş halinde birleştirilir. |
+
+---
+**Source fingerprint (SHA-256):** `021d867e9e04451c0c4ef035c19fa86ebc8d4a3f64572aff33f493324d7fe308`

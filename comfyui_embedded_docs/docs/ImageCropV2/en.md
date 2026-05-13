@@ -16,3 +16,6 @@ The Image Crop node extracts a rectangular section from an input image. You defi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The cropped section of the original input image. |
+
+---
+**Source fingerprint (SHA-256):** `9d3543aa8396ae2ab0353accc3c89ae6be6495f6fdcefbb5439fa865a5d3059f`

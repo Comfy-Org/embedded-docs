@@ -6,10 +6,13 @@ The PrimitiveInt node provides a simple way to work with integer values in your 
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `value` | INT | Yes | -9223372036854775807 to 9223372036854775807 | The integer value to output |
+| `value` | INT | Yes | -9223372036854775807 to 9223372036854775807 | The integer value to output (default: 0) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | INT | The input integer value passed through unchanged |
+
+---
+**Source fingerprint (SHA-256):** `13b5ff6703498fd37ae48d574e010cf78aa2bfc514b68c34b2cf6740ed75c834`

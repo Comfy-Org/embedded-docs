@@ -6,7 +6,7 @@ The Kling Camera Controls node allows you to configure various camera movement a
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `camera_control_type` | COMBO | Yes | Multiple options available | Specifies the type of camera control configuration to use |
+| `camera_control_type` | COMBO | Yes | `"simple"`<br>`"advanced"` | Specifies the type of camera control configuration to use |
 | `horizontal_movement` | FLOAT | No | -10.0 to 10.0 | Controls camera's movement along horizontal axis (x-axis). Negative indicates left, positive indicates right (default: 0.0) |
 | `vertical_movement` | FLOAT | No | -10.0 to 10.0 | Controls camera's movement along vertical axis (y-axis). Negative indicates downward, positive indicates upward (default: 0.0) |
 | `pan` | FLOAT | No | -10.0 to 10.0 | Controls camera's rotation in vertical plane (x-axis). Negative indicates downward rotation, positive indicates upward rotation (default: 0.5) |
@@ -21,3 +21,6 @@ The Kling Camera Controls node allows you to configure various camera movement a
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `camera_control` | CAMERA_CONTROL | Returns the configured camera control settings for use in video generation |
+
+---
+**Source fingerprint (SHA-256):** `4e1d826518ae17afd2c0aa22ebf6cce67b3ef33bb1730f0ce5ead5b9431cd548`

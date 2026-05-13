@@ -1,35 +1,33 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/zh-TW.md)
 
-## 節點概述
+KSampler 的運作方式如下：它根據指定的模型以及正向與負向條件，來修改所提供的原始潛在影像資訊。
+首先，它會根據設定的 **seed** 和 **denoise** 強度，將雜訊添加到原始影像資料中，然後輸入預設的 **Model** 以及 **positive** 和 **negative** 引導條件來生成影像。
 
-KSampler 的工作原理如下：它根據特定的模型以及正面和負面條件來修改提供的原始潛在圖像資訊。
-首先，它根據設定的 **seed** 和 **denoise** 強度向原始圖像資料添加噪聲，然後輸入預設的 **Model** 結合 **positive** 和 **negative** 引導條件來生成圖像。
+## 輸入
 
-## 輸入參數
-
-| 參數名稱 | 資料類型 | 必填 | 預設值 | 範圍/選項 | 描述 |
+| 參數名稱 | 資料類型 | 必要 | 預設值 | 範圍/選項 | 說明 |
 | ---------------------- | ------------ | -------- | ------- | ------------------------ | ---------------------------------------------------------------------------------- |
-| `Model` | CHECKPOINT | 是 | 無 | - | 用於去噪過程的輸入模型 |
-| `種子` | INT | 是 | 0 | 0 ~ 18446744073709551615 | 用於生成隨機噪聲，使用相同的 "seed" 會生成相同的圖像 |
-| `步驟數` | INT | 是 | 20 | 1 ~ 10000 | 去噪過程中使用的步數，步數越多結果越精確 |
-| `cfg` | FLOAT | 是 | 8.0 | 0.0 ~ 100.0 | 控制生成圖像與輸入條件的匹配程度，建議值為 6-8 |
-| `取樣器` | UI_OPTION | 是 | 無 | 多種演算法 | 選擇用於去噪的取樣器，影響生成速度和風格 |
-| `排程器` | UI_OPTION | 是 | 無 | 多種排程器 | 控制噪聲的移除方式，影響生成過程 |
-| `Positive` | CONDITIONING | 是 | 無 | - | 引導去噪的正面條件，即您希望在圖像中出現的內容 |
-| `Negative` | CONDITIONING | 是 | 無 | - | 引導去噪的負面條件，即您不希望出現在圖像中的內容 |
-| `Latent_Image` | LATENT | 是 | 無 | - | 用於去噪的潛在圖像 |
-| `去雜訊強度` | FLOAT | 否 | 1.0 | 0.0 ~ 1.0 | 決定噪聲移除比例，較低的值表示與輸入圖像的關聯較少 |
-| `生成後控制` | UI_OPTION | 否 | 無 | Random/Inc/Dec/Keep | 提供在每次提示後更改種子的能力 |
+| Model                  | checkpoint   | 是      | 無    | -                        | 用於去噪過程的輸入模型 |
+| seed                   | Int          | 是      | 0       | 0 ~ 18446744073709551615 | 用於生成隨機雜訊，使用相同的「seed」會生成完全相同的影像 |
+| steps                  | Int          | 是      | 20      | 1 ~ 10000                | 去噪過程中使用的步數，步數越多結果越精確 |
+| cfg                    | float        | 是      | 8.0     | 0.0 ~ 100.0              | 控制生成影像與輸入條件的符合程度，建議值為 6-8 |
+| sampler_name           | UI Option    | 是      | 無    | 多種演算法 | 選擇用於去噪的取樣器，會影響生成速度與風格 |
+| scheduler              | UI Option    | 是      | 無    | 多種排程器 | 控制雜訊的移除方式，影響生成過程 |
+| Positive               | conditioning | 是      | 無    | -                        | 引導去噪的正向條件，即你希望影像中出現的內容 |
+| Negative               | conditioning | 是      | 無    | -                        | 引導去噪的負向條件，即你不希望影像中出現的內容 |
+| Latent_Image           | Latent       | 是      | 無    | -                        | 用於去噪的潛在影像 |
+| denoise                | float        | 否       | 1.0     | 0.0 ~ 1.0                | 決定雜訊移除的比例，數值越低表示與輸入影像的關聯性越低 |
+| control_after_generate | UI Option    | 否       | 無    | Random/Inc/Dec/Keep      | 提供在每次提示後更改 seed 的能力 |
 
-## 輸出結果
+## 輸出
 
 | 參數 | 功能 |
 | -------------- | ------------------------------------------ |
-| `Latent` | 輸出取樣器去噪後的潛在圖像 |
+| Latent         | 輸出取樣器去噪後的潛在資料 |
 
 ## 原始碼
 
-[更新於 2025年5月15日]
+[更新於 2025 年 5 月 15 日]
 
 ```Python
 
@@ -60,25 +58,25 @@ class KSampler:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "model": ("MODEL", {"tooltip": "The model used for denoising the input latent."}),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "The random seed used for creating the noise."}),
-                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "The number of steps used in the denoising process."}),
-                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "The Classifier-Free Guidance scale balances creativity and adherence to the prompt. Higher values result in images more closely matching the prompt however too high values will negatively impact quality."}),
-                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "The algorithm used when sampling, this can affect the quality, speed, and style of the generated output."}),
-                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "The scheduler controls how noise is gradually removed to form the image."}),
-                "positive": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to include in the image."}),
-                "negative": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to exclude from the image."}),
-                "latent_image": ("LATENT", {"tooltip": "The latent image to denoise."}),
-                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "The amount of denoising applied, lower values will maintain the structure of the initial image allowing for image to image sampling."}),
+                "model": ("MODEL", {"tooltip": "用於對輸入潛在影像進行去噪的模型。"}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "用於創建雜訊的隨機種子。"}),
+                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "去噪過程中使用的步數。"}),
+                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "無分類器引導尺度，用於平衡創造力與對提示的遵循程度。數值越高，生成的影像越符合提示，但過高會對品質產生負面影響。"}),
+                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "取樣時使用的演算法，會影響生成輸出的品質、速度和風格。"}),
+                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "排程器控制如何逐步移除雜訊以形成影像。"}),
+                "positive": ("CONDITIONING", {"tooltip": "描述你希望影像中包含的屬性的條件。"}),
+                "negative": ("CONDITIONING", {"tooltip": "描述你希望從影像中排除的屬性的條件。"}),
+                "latent_image": ("LATENT", {"tooltip": "要進行去噪的潛在影像。"}),
+                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "應用的去噪量，較低的值將保持初始影像的結構，允許進行影像到影像的取樣。"}),
             }
         }
 
     RETURN_TYPES = ("LATENT",)
-    OUTPUT_TOOLTIPS = ("The denoised latent.",)
+    OUTPUT_TOOLTIPS = ("去噪後的潛在資料。",)
     FUNCTION = "sample"
 
     CATEGORY = "sampling"
-    DESCRIPTION = "Uses the provided model, positive and negative conditioning to denoise the latent image."
+    DESCRIPTION = "使用提供的模型、正向和負向條件對潛在影像進行去噪。"
 
     def sample(self, model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=1.0):
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)

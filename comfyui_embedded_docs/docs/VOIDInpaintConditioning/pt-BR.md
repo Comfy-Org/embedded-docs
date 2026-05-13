@@ -5,12 +5,12 @@ O nó VOIDInpaintConditioning prepara os dados de condicionamento necessários p
 ## Entradas
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|-----------|----------|-------|-------------|
+|-----------|--------------|-------------|-------|-----------|
 | `positive` | CONDITIONING | Sim | - | O condicionamento positivo a ser aumentado com as informações latentes de inpaint |
 | `negative` | CONDITIONING | Sim | - | O condicionamento negativo a ser aumentado com as informações latentes de inpaint |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar a máscara e o vídeo mascarado no espaço latente |
-| `video` | IMAGE | Sim | - | Quadros do vídeo fonte no formato [T, H, W, 3] |
-| `quadmask` | MASK | Sim | - | Quadmask pré-processada do VOIDQuadmaskPreprocess no formato [T, H, W] |
+| `video` | IMAGE | Sim | - | Quadros do vídeo fonte [T, H, W, 3] |
+| `quadmask` | MASK | Sim | - | Quadmask pré-processada do VOIDQuadmaskPreprocess [T, H, W] |
 | `width` | INT | Sim | 16 a MAX_RESOLUTION (passo: 8) | A largura para redimensionar o vídeo e a máscara (padrão: 672) |
 | `height` | INT | Sim | 16 a MAX_RESOLUTION (passo: 8) | A altura para redimensionar o vídeo e a máscara (padrão: 384) |
 | `length` | INT | Sim | 1 a MAX_RESOLUTION (passo: 1) | Número de quadros de pixel a processar. Para CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t deve ser par — comprimentos que produzem latent_t ímpar são arredondados para baixo (ex.: 49 → 45) (padrão: 45) |
@@ -19,7 +19,10 @@ O nó VOIDInpaintConditioning prepara os dados de condicionamento necessários p
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
+|---------------|--------------|-----------|
 | `positive` | CONDITIONING | O condicionamento positivo com as informações latentes de inpaint adicionadas |
 | `negative` | CONDITIONING | O condicionamento negativo com as informações latentes de inpaint adicionadas |
 | `latent` | LATENT | Um tensor de ruído latente preenchido com zeros com formato [batch_size, 16, latent_t, latent_h, latent_w] |
+
+---
+**Source fingerprint (SHA-256):** `a1fe36376d7930286c7a288f261dcf2961d6b13cc412d1a0d42af8a4f9ebeeaf`

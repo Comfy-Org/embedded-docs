@@ -1,23 +1,31 @@
-El nodo EmptyImage se utiliza para crear imágenes en blanco con dimensiones y colores especificados. Puede generar imágenes de fondo de color sólido, comúnmente utilizadas como puntos de partida o imágenes de fondo para flujos de trabajo de procesamiento de imágenes.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyImage/es.md)
+
+## Descripción de la Función
+
+El nodo EmptyImage se utiliza para crear imágenes en blanco con dimensiones y colores específicos. Puede generar imágenes de fondo de color sólido, comúnmente utilizadas como puntos de partida o imágenes de fondo para flujos de trabajo de procesamiento de imágenes.
+
+## Principio de Funcionamiento
+
+Así como un pintor prepara un lienzo en blanco antes de comenzar a crear, el nodo EmptyImage le proporciona un "lienzo digital". Puede especificar el tamaño del lienzo (ancho y alto), elegir el color base del lienzo e incluso preparar varios lienzos de las mismas especificaciones a la vez. Este nodo es como una tienda inteligente de suministros de arte que puede crear lienzos estandarizados que cumplen perfectamente con sus requisitos de tamaño y color.
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Datos | Descripción |
-|---------------------|---------------|-------------|
-| `ancho` | INT | Establece el ancho de la imagen generada (en píxeles), determinando las dimensiones horizontales del lienzo |
-| `altura` | INT | Establece la altura de la imagen generada (en píxeles), determinando las dimensiones verticales del lienzo |
-| `tamaño_del_lote` | INT | El número de imágenes a generar a la vez, utilizado para la creación en lote de imágenes con las mismas especificaciones |
-| `color` | INT | El color de fondo de la imagen. Puedes ingresar configuraciones de color hexadecimal, que se convertirán automáticamente a decimal |
+| Nombre del Parámetro | Tipo de Dato | Descripción |
+|----------------------|--------------|-------------|
+| `width` | INT | Establece el ancho de la imagen generada (en píxeles), determinando las dimensiones horizontales del lienzo |
+| `height` | INT | Establece la altura de la imagen generada (en píxeles), determinando las dimensiones verticales del lienzo |
+| `batch_size` | INT | La cantidad de imágenes a generar a la vez, utilizada para la creación por lotes de imágenes con las mismas especificaciones |
+| `color` | INT | El color de fondo de la imagen. Puede ingresar configuraciones de color hexadecimal, que se convertirán automáticamente a decimal |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Datos | Descripción |
-|------------------|---------------|-------------|
-| `image` | IMAGE | El tensor de imagen en blanco generado, formateado como [tamaño_del_lote, altura, ancho, 3], que contiene tres canales de color RGB |
+| Nombre de Salida | Tipo de Dato | Descripción |
+|------------------|--------------|-------------|
+| `image` | IMAGE | El tensor de imagen en blanco generado, con formato [batch_size, height, width, 3], que contiene los tres canales de color RGB |
 
-## Valores de Referencia de Colores Comunes
+## Valores de Color Comunes de Referencia
 
-Dado que la entrada de color actual para este nodo no es amigable para el usuario, con todos los valores de color siendo convertidos a decimal, aquí hay algunos valores de color comunes que se pueden usar directamente para aplicación rápida.
+Dado que la entrada de color actual de este nodo no es fácil de usar, ya que todos los valores de color se convierten a decimal, aquí se presentan algunos valores de color comunes que se pueden usar directamente para una aplicación rápida.
 
 | Nombre del Color | Valor Hexadecimal |
 |------------------|-------------------|

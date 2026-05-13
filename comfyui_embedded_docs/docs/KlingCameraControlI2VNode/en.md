@@ -6,11 +6,11 @@ The Kling Image to Video Camera Control Node transforms still images into cinema
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `start_frame` | IMAGE | Yes | - | Reference Image - URL or Base64 encoded string, cannot exceed 10MB, resolution not less than 300*300px, aspect ratio between 1:2.5 ~ 2.5:1. Base64 should not include data:image prefix. |
-| `prompt` | STRING | Yes | - | Positive text prompt |
-| `negative_prompt` | STRING | Yes | - | Negative text prompt |
-| `cfg_scale` | FLOAT | No | 0.0-1.0 | Controls the strength of text guidance (default: 0.75) |
-| `aspect_ratio` | COMBO | No | Multiple options available | Video aspect ratio selection (default: 16:9) |
+| `start_frame` | IMAGE | Yes | - | Reference Image - URL or Base64 encoded string, cannot exceed 10MB, resolution not less than 300x300px, aspect ratio between 1:2.5 and 2.5:1. Base64 should not include data:image prefix. |
+| `prompt` | STRING | Yes | - | Positive text prompt describing the desired video content |
+| `negative_prompt` | STRING | Yes | - | Negative text prompt describing what to avoid in the generated video |
+| `cfg_scale` | FLOAT | No | 0.0 to 1.0 | Controls the strength of text guidance. Higher values make the output more closely follow the prompt (default: 0.75) |
+| `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"1:1"` | The aspect ratio of the generated video (default: "16:9") |
 | `camera_control` | CAMERA_CONTROL | Yes | - | Can be created using the Kling Camera Controls node. Controls the camera movement and motion during the video generation. |
 
 ## Outputs
@@ -20,3 +20,6 @@ The Kling Image to Video Camera Control Node transforms still images into cinema
 | `output` | VIDEO | The generated video output |
 | `video_id` | STRING | Unique identifier for the generated video |
 | `duration` | STRING | Duration of the generated video |
+
+---
+**Source fingerprint (SHA-256):** `a2965975cd484768298f4c7e504423f782ea032dfb5ef304579715be9c27cb79`

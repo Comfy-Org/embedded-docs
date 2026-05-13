@@ -1,21 +1,26 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverTextToSVGNode/zh.md)
 
-Quiver Text to SVG 节点使用 Quiver AI 的模型，根据文本描述生成可缩放矢量图形（SVG）图像。您可以选择性地提供参考图像和风格指令来引导生成过程。
+# Quiver 文本转 SVG 节点
 
-## 输入参数
+此节点使用 Quiver AI 的模型，根据文本描述生成可缩放矢量图形（SVG）图像。您可以选择提供参考图像和样式指令来指导生成过程。
 
-| 参数 | 数据类型 | 必填 | 取值范围 | 描述 |
+## 输入
+
+| 参数 | 数据类型 | 是否必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | 不适用 | 期望 SVG 输出的文本描述。这是生成内容的主要指令。 |
-| `instructions` | STRING | 否 | 不适用 | 额外的风格或格式指导。这是一个可选的高级参数。 |
-| `reference_images` | IMAGE | 否 | 不适用 | 最多 4 张用于引导生成的参考图像。这是一个可选输入。 |
-| `model` | COMBO | 是 | 提供多个选项 | 用于 SVG 生成的模型。可用选项由 Quiver API 决定。 |
-| `seed` | INT | 是 | 0 到 2147483647 | 用于确定节点是否应重新运行的种子；无论种子如何，实际结果都是非确定性的。默认值：0。 |
+| `prompt` | STRING | 是 | 不适用 | 所需 SVG 输出的文本描述。这是指定生成内容的主要指令。 |
+| `instructions` | STRING | 否 | 不适用 | 额外的样式或格式指导。这是一个可选的高级参数。 |
+| `reference_images` | IMAGE | 否 | 0 到 4 张图像 | 最多 4 张参考图像，用于指导生成过程。这是一个可选输入。 |
+| `model` | COMBO | 是 | `"Quiver SVG v1"`<br>`"Quiver SVG v1 Max"`<br>`"Quiver SVG v1 Preview"` | 用于 SVG 生成的模型。可用选项由 Quiver API 决定。 |
+| `seed` | INT | 是 | 0 到 2147483647 | 用于确定节点是否应重新运行的种子；实际结果与种子无关，具有非确定性。默认值：0。 |
 
-**注意：** `reference_images` 输入最多接受 4 张图像。如果提供更多，节点将引发错误。
+**注意：** `reference_images` 输入最多接受 4 张图像。如果提供更多图像，节点将报错。
 
-## 输出结果
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
 | `SVG` | SVG | 生成的可缩放矢量图形（SVG）图像。 |
+
+---
+**Source fingerprint (SHA-256):** `634758797a59e5a409424deee808e1d8b5b5852a86eac4bccd7f2634a19fb743`

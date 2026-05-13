@@ -6,7 +6,7 @@ The SaveLoRA node saves a LoRA (Low-Rank Adaptation) model to a file. It takes a
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `lora` | MODEL | Yes | N/A | The LoRA model to save. Do not use the model with LoRA layers. |
+| `lora` | LORA_MODEL | Yes | N/A | The LoRA model to save. Do not use the model with LoRA layers. |
 | `prefix` | STRING | Yes | N/A | The prefix to use for the saved LoRA file (default: "loras/ComfyUI_trained_lora"). |
 | `steps` | INT | No | N/A | Optional: The number of steps the LoRA has been trained for, used to name the saved file. |
 
@@ -17,3 +17,6 @@ The SaveLoRA node saves a LoRA (Low-Rank Adaptation) model to a file. It takes a
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | *None* | N/A | This node does not output any data to the workflow. It is an output node that saves a file to disk. |
+
+---
+**Source fingerprint (SHA-256):** `e68a449d741c908f23fc1585d848254d78c310ad19efbd139c33c9ddef3145c7`

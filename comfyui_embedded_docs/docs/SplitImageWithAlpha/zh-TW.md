@@ -1,16 +1,18 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitImageWithAlpha/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitImageWithAlpha/zh-TW.md)
 
-SplitImageWithAlpha 節點專門用於分離影像的色彩與透明度元件。它會處理輸入的影像張量，提取 RGB 通道作為色彩元件，並提取 Alpha 通道作為透明度元件，方便後續需要分別處理這些影像屬性的操作。
+# 分割圖像含透明度節點
 
-## 輸入參數
+SplitImageWithAlpha 節點旨在分離圖像的色彩和透明度分量。它處理輸入的圖像張量，提取 RGB 通道作為色彩分量，以及 Alpha 通道作為透明度分量，以便於需要分別操作這些不同圖像方面的處理流程。
 
-| 參數名稱 | 資料類型 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
-| `影像`   | `IMAGE`     | 此 `影像` 參數代表輸入影像張量，系統將從中分離 RGB 與 Alpha 通道。此參數對操作至關重要，因為它提供了分離處理的源數據。 |
+| `image`   | `IMAGE`     | 'image' 參數代表要從中分離 RGB 和 Alpha 通道的輸入圖像張量。此參數對於操作至關重要，因為它提供了分割所需的來源資料。 |
 
-## 輸出參數
+## 輸出
 
-| 參數名稱 | 資料類型 | 描述 |
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
-| `影像`   | `IMAGE`     | 此 `影像` 輸出代表輸入影像經分離後的 RGB 通道，提供不含透明度資訊的色彩元件。 |
-| `mask`    | `MASK`      | 此 `mask` 輸出代表輸入影像經分離後的 Alpha 通道，提供透明度資訊。 |
+| `image`   | `IMAGE`     | 'image' 輸出代表輸入圖像中分離出的 RGB 通道，提供不含透明度資訊的色彩分量。 |
+| `mask`    | `MASK`      | 'mask' 輸出代表輸入圖像中分離出的 Alpha 通道，提供透明度資訊。 |

@@ -1,17 +1,17 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDTurboScheduler/zh-TW.md)
 
-SDTurboScheduler 專為生成圖像採樣用的 sigma 值序列而設計，能根據指定的降噪等級和步驟數量調整序列。它利用特定模型的採樣能力來產生這些 sigma 值，這些值對於控制圖像生成過程中的降噪處理至關重要。
+SDTurboScheduler 旨在生成用於影像取樣的 sigma 值序列，並根據指定的去噪程度與步驟數量調整該序列。它利用特定模型的取樣能力來產生這些 sigma 值，這對於控制影像生成過程中的去噪流程至關重要。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 描述 |
+| 參數 | 資料類型 | 說明 |
 | --- | --- | --- |
-| `model` | `MODEL` | 此參數指定用於生成 sigma 值的生成模型，對於決定調度器的具體採樣行為和能力至關重要。 |
-| `步驟` | `INT` | 此參數決定要生成的 sigma 序列長度，直接影響降噪過程的細緻程度。 |
-| `去雜訊強度` | `FLOAT` | 此參數調整 sigma 序列的起始點，可對圖像生成過程中應用的降噪等級進行更精細的控制。 |
+| `model` | `MODEL` | 此 model 參數指定用於產生 sigma 值的生成模型，對於決定排程器的特定取樣行為與能力至關重要。 |
+| `steps` | `INT` | 此 steps 參數決定要生成的 sigma 序列長度，直接影響去噪過程的細緻程度。 |
+| `denoise` | `FLOAT` | 此 denoise 參數調整 sigma 序列的起始點，讓您能更精細地控制影像生成時所應用的去噪程度。 |
 
-## 輸出參數
+## 輸出
 
-| 參數名稱 | 資料類型 | 描述 |
+| 參數 | 資料類型 | 說明 |
 | --- | --- | --- |
-| `sigmas` | `SIGMAS` | 根據指定的模型、步驟數和降噪等級生成的 sigma 值序列，這些值對於控制圖像生成過程中的降噪處理至關重要。 |
+| `sigmas` | `SIGMAS` | 根據指定的 model、steps 與 denoise 程度所產生的 sigma 值序列。這些數值對於控制影像生成中的去噪過程至關重要。 |

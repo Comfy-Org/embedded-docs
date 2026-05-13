@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageMask/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageMask/tr.md)
 
-LoadImageMask düğümü, belirli bir yoldan görüntüleri ve bunlarla ilişkili maskeleri yüklemek, bunları daha sonraki görüntü işleme veya analiz görevleriyle uyumluluğunu sağlamak için işlemek üzere tasarlanmıştır. Maskeler için alfa kanalı varlığı gibi çeşitli görüntü formatları ve koşullarını ele almaya odaklanır ve görüntüleri standart bir formata dönüştürerek aşağı yönlü işleme hazırlar.
+LoadImageMask düğümü, belirtilen bir yoldan görüntüleri ve bunlara ait maskeleri yüklemek, bunları daha ileri düzey görüntü işleme veya analiz görevleriyle uyumlu hale getirmek için işlemek üzere tasarlanmıştır. Maskeleme için alfa kanalının varlığı gibi çeşitli görüntü formatlarını ve koşullarını ele alır ve görüntüleri ve maskeleri standart bir formata dönüştürerek sonraki işlemlere hazırlar.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Tipi | Açıklama |
+| Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `görüntü`   | COMBO[STRING] | 'image' parametresi, yüklenecek ve işlenecek görüntü dosyasını belirtir. Maske çıkarımı ve format dönüşümü için kaynak görüntüyü sağlayarak çıktıyı belirlemede çok önemli bir rol oynar. |
-| `kanal` | COMBO[STRING] | 'channel' parametresi, maskeyi oluşturmak için kullanılacak olan görüntünün renk kanalını belirtir. Bu, farklı renk kanallarına dayalı maske oluşturmada esneklik sağlayarak düğümün çeşitli görüntü işleme senaryolarındaki kullanışlılığını artırır. |
+| `image`   | COMBO[STRING] | 'image' parametresi, yüklenecek ve işlenecek görüntü dosyasını belirtir. Maske çıkarma ve format dönüştürme için kaynak görüntüyü sağlayarak çıktının belirlenmesinde önemli bir rol oynar. |
+| `channel` | COMBO[STRING] | 'channel' parametresi, maskeyi oluşturmak için kullanılacak görüntünün renk kanalını belirtir. Bu, farklı renk kanallarına dayalı olarak maske oluşturmada esneklik sağlayarak düğümün çeşitli görüntü işleme senaryolarındaki kullanışlılığını artırır. |
 
 ## Çıktılar
 
-| Parametre | Veri Tipi | Açıklama |
+| Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | `MASK`      | Bu düğüm, belirtilen görüntü ve kanaldan oluşturulan, görüntü işleme görevlerinde daha fazla işleme uygun standart formatta hazırlanmış maskeyi çıkarır. |
+| `mask`    | `MASK`      | Bu düğüm, belirtilen görüntü ve kanaldan oluşturulan, görüntü işleme görevlerinde daha ileri düzey işlemler için uygun, standart bir formatta hazırlanmış maskeyi çıktı olarak verir. |

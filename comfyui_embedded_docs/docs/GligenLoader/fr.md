@@ -1,15 +1,17 @@
-Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/gligen` et lit également les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml. Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLIGENLoader/fr.md)
 
-Le nœud `GLIGENLoader` est conçu pour charger des modèles GLIGEN, qui sont des modèles génératifs spécialisés. Il facilite le processus de récupération et d'initialisation de ces modèles à partir de chemins spécifiés, les rendant prêts pour des tâches génératives ultérieures.
+Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/gligen`, et il lit également les modèles depuis des chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut être nécessaire de **rafraîchir l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
+
+Le nœud `GLIGENLoader` est conçu pour charger des modèles GLIGEN, qui sont des modèles génératifs spécialisés. Il facilite le processus de récupération et d'initialisation de ces modèles à partir de chemins spécifiés, les rendant prêts pour d'autres tâches génératives.
 
 ## Entrées
 
-| Champ       | Comfy dtype       | Description                                                                       |
-|-------------|-------------------|-----------------------------------------------------------------------------------|
-| `nom_gligen`| `COMBO[STRING]`    | Le nom du modèle GLIGEN à charger, spécifiant quel fichier de modèle récupérer et charger, crucial pour l'initialisation du modèle GLIGEN. |
+| Champ          | Type Comfy        | Description                                                                                     |
+|----------------|-------------------|-------------------------------------------------------------------------------------------------|
+| `gligen_name`  | `COMBO[STRING]`   | Le nom du modèle GLIGEN à charger, spécifiant quel fichier de modèle récupérer et charger, essentiel pour l'initialisation du modèle GLIGEN. |
 
 ## Sorties
 
-| Champ    | Data Type | Description                                                              |
-|----------|-------------|--------------------------------------------------------------------------|
-| `gligen` | `GLIGEN`    | Le modèle GLIGEN chargé, prêt à être utilisé dans des tâches génératives, représentant le modèle entièrement initialisé chargé à partir du chemin spécifié. |
+| Champ     | Type de données | Description                                                                                     |
+|-----------|-----------------|-------------------------------------------------------------------------------------------------|
+| `gligen`  | `GLIGEN`        | Le modèle GLIGEN chargé, prêt à être utilisé dans des tâches génératives, représentant le modèle entièrement initialisé chargé depuis le chemin spécifié. |

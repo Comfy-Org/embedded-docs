@@ -22,3 +22,6 @@ Outpaints image based on prompt. This node expands an image by adding pixels to 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The expanded output image |
+
+---
+**Source fingerprint (SHA-256):** `15b21f1de8a98a6bcde131a61c01b062434c6a959bc563550d613972412973fe`

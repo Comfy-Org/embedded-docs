@@ -23,3 +23,6 @@ The ByteDance Seedance 2.0 Reference to Video node uses the Seedance 2.0 AI mode
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `72c8a2f821b9fb9853a4d0428785c432d0852ae562080292817f8a7d52967c7f`

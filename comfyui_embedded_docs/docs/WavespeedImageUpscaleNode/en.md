@@ -17,3 +17,6 @@ The WaveSpeed Image Upscale node uses an external AI service to increase the res
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The upscaled, high-resolution output image. |
+
+---
+**Source fingerprint (SHA-256):** `b14056f981f6e34c67d8126391acc11878f92f5f406559afbac803c86da42bcc`

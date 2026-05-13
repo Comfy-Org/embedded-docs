@@ -4,14 +4,17 @@ Este nó salva uma lista de imagens em uma pasta especificada dentro do diretór
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `images` | IMAGE | Sim | N/A | Lista de imagens a serem salvas. |
 | `folder_name` | STRING | Não | N/A | Nome da pasta para salvar as imagens (dentro do diretório de saída). O valor padrão é "dataset". |
 | `filename_prefix` | STRING | Não | N/A | Prefixo para os nomes dos arquivos de imagem salvos. O valor padrão é "image". |
 
-**Observação:** A entrada `images` é uma lista, o que significa que pode receber e processar múltiplas imagens de uma vez. Os parâmetros `folder_name` e `filename_prefix` são valores escalares; se uma lista for conectada, apenas o primeiro valor dessa lista será utilizado.
+**Observação:** A entrada `images` é uma lista, o que significa que pode receber e processar múltiplas imagens de uma só vez. Os parâmetros `folder_name` e `filename_prefix` são valores escalares; se uma lista for conectada, apenas o primeiro valor dessa lista será utilizado.
 
 ## Saídas
 
-Este nó não possui nenhuma saída. É um nó de saída que executa uma operação de salvamento no sistema de arquivos.
+Este nó não possui saídas. É um nó de saída que realiza uma operação de salvamento no sistema de arquivos.
+
+---
+**Source fingerprint (SHA-256):** `65c7905caa8ff2811054bec2830c1359d0c441b5d93f50bc4d0bf10645046556`

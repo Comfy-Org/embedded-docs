@@ -16,3 +16,6 @@ The VOIDQuadmaskPreprocess node prepares a mask for VOID inpainting by convertin
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `quadmask` | MASK | The preprocessed quadmask with values in [0, 1], representing four discrete levels: 1.0 (primary object to remove), ~0.75 (overlap of primary and affected), ~0.50 (affected region), and 0.0 (background to keep). |
+
+---
+**Source fingerprint (SHA-256):** `12dc5ab215b80d81289942457ce2ddffcb9ec41fc738a53ca5fbf1e9181ed439`

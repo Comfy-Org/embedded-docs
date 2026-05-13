@@ -7,7 +7,7 @@ The GeminiImage node generates text and image responses from Google's Gemini AI 
 | Parameter | Data Type | Input Type | Default | Range | Description |
 |-----------|-----------|------------|---------|-------|-------------|
 | `prompt` | STRING | required | "" | - | Text prompt for generation |
-| `model` | COMBO | required | gemini_2_5_flash_image_preview | Available Gemini models<br>Options extracted from GeminiImageModel enum | The Gemini model to use for generating responses. |
+| `model` | COMBO | required | gemini_2_5_flash_image_preview | `gemini_2_5_flash_image_preview`<br>`gemini_2_5_pro_exp_03_25`<br>`gemini_2_0_flash_exp_image_generation` | The Gemini model to use for generating responses. |
 | `seed` | INT | required | 42 | 0 to 18446744073709551615 | When seed is fixed to a specific value, the model makes a best effort to provide the same response for repeated requests. Deterministic output isn't guaranteed. Also, changing the model or parameter settings, such as the temperature, can cause variations in the response even when you use the same seed value. By default, a random seed value is used. |
 | `images` | IMAGE | optional | None | - | Optional image(s) to use as context for the model. To include multiple images, you can use the Batch Images node. |
 | `files` | GEMINI_INPUT_FILES | optional | None | - | Optional file(s) to use as context for the model. Accepts inputs from the Gemini Generate Content Input Files node. |
@@ -20,3 +20,6 @@ The GeminiImage node generates text and image responses from Google's Gemini AI 
 |-------------|-----------|-------------|
 | `IMAGE` | IMAGE | The generated image response from the Gemini model |
 | `STRING` | STRING | The generated text response from the Gemini model |
+
+---
+**Source fingerprint (SHA-256):** `bf55ec4f5a869a6bc5a15366f55f86ad25f9498c14056acc80951d3637bf08f2`

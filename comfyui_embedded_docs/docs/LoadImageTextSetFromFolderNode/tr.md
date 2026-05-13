@@ -1,22 +1,27 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextSetFromFolderNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextSetFromFolderNode/tr.md)
 
-Belirtilen bir dizinden eğitim amacıyla bir grup görüntüyü ve bunlara karşılık gelen metin açıklamalarını yükler. Bu düğüm, görüntü dosyalarını ve bunlarla ilişkili metin açıklama dosyalarını otomatik olarak arar, görüntüleri belirtilen yeniden boyutlandırma ayarlarına göre işler ve açıklamaları sağlanan CLIP modelini kullanarak kodlar.
+Belirtilen eğitim amaçlı dizinden bir grup görsel ve bunlara karşılık gelen metin açıklamalarını yükler. Düğüm, görsel dosyalarını ve ilişkili açıklama metin dosyalarını otomatik olarak arar, belirtilen yeniden boyutlandırma ayarlarına göre görselleri işler ve sağlanan CLIP modelini kullanarak açıklamaları kodlar.
 
-## Girişler
+## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `folder` | STRING | Evet | - | Görüntülerin yükleneceği klasör. |
+| `folder` | STRING | Evet | - | Görsellerin yükleneceği klasör. |
 | `clip` | CLIP | Evet | - | Metni kodlamak için kullanılan CLIP modeli. |
-| `resize_method` | COMBO | Hayır | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | Görüntüleri yeniden boyutlandırmak için kullanılan yöntem (varsayılan: "None"). |
-| `width` | INT | Hayır | -1 - 10000 | Görüntülerin yeniden boyutlandırılacağı genişlik. -1, orijinal genişliği kullan anlamına gelir (varsayılan: -1). |
-| `height` | INT | Hayır | -1 - 10000 | Görüntülerin yeniden boyutlandırılacağı yükseklik. -1, orijinal yüksekliği kullan anlamına gelir (varsayılan: -1). |
+| `resize_method` | COMBO | Hayır | "Yok"<br>"Uzat"<br>"Kırp"<br>"Doldur" | Görselleri yeniden boyutlandırmak için kullanılan yöntem (varsayılan: "Yok"). |
+| `width` | INT | Hayır | -1 ila 10000 | Görsellerin yeniden boyutlandırılacağı genişlik. -1, orijinal genişliğin kullanılacağı anlamına gelir (varsayılan: -1). |
+| `height` | INT | Hayır | -1 ila 10000 | Görsellerin yeniden boyutlandırılacağı yükseklik. -1, orijinal yüksekliğin kullanılacağı anlamına gelir (varsayılan: -1). |
 
-**Not:** CLIP girişi geçerli olmalıdır ve None olamaz. CLIP modeli bir kontrol noktası yükleyici düğümünden geliyorsa, kontrol noktasının geçerli bir CLIP veya metin kodlayıcı modeli içerdiğinden emin olun.
+**Not:** CLIP girdisi geçerli olmalıdır ve Yok (None) olamaz. CLIP modeli bir kontrol noktası yükleyici düğümünden geliyorsa, kontrol noktasının geçerli bir CLIP veya metin kodlayıcı modeli içerdiğinden emin olun.
 
-## Çıkışlar
+**Klasör yapısı hakkında not:** Düğüm, kohya-ss/sd-scripts klasör yapısını destekler. Bir alt klasörün adı, ardından bir alt çizgi ile birlikte bir sayı ile başlıyorsa (örneğin, `5_myclass`), bu sayı bir tekrar sayısı olarak kullanılır ve o alt klasörün içindeki görseller bu sayı kadar yüklenir.
 
-| Çıkış Adı | Veri Türü | Açıklama |
+## Çıktılar
+
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | Yüklenen ve işlenen görüntülerin grubu. |
-| `CONDITIONING` | CONDITIONING | Metin açıklamalarından elde edilen kodlanmış koşullandırma verileri. |
+| `IMAGE` | IMAGE | Yüklenen ve işlenen görsel grubu. |
+| `CONDITIONING` | CONDITIONING | Metin açıklamalarından kodlanmış koşullandırma verileri. |
+
+---
+**Source fingerprint (SHA-256):** `ffd6399783fc281a58bae811112d9ecacb51ab8ea3b512befa9b9fab2c6860de`

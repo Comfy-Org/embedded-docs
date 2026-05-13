@@ -1,6 +1,8 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseReferenceVideoApi/fr.md)
 
-Voici la traduction en français de la documentation du nœud ComfyUI :
+Voici la traduction de la documentation technique du nœud ComfyUI :
+
+---
 
 ## Aperçu
 
@@ -24,3 +26,6 @@ Ce nœud génère une vidéo mettant en scène une personne ou un objet à parti
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
 | `VIDEO` | VIDEO | Le fichier vidéo généré. |
+
+---
+**Source fingerprint (SHA-256):** `9162e150aef4cbafa42d59055bdff953e9c21b1e5fbf7c800629e570ee4cd0f9`

@@ -23,3 +23,6 @@ The SDPoseKeypointExtractor node detects human pose keypoints from input images 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `keypoints` | POSE_KEYPOINT | Keypoints in OpenPose frame format (canvas_width, canvas_height, people). The output contains the detected persons, each with an array of keypoint coordinates (x, y) and their corresponding confidence scores. |
+
+---
+**Source fingerprint (SHA-256):** `7903b51c9137aa08bb8843362740fcf93cea9c09d142bd1db3b5eee945c853e4`

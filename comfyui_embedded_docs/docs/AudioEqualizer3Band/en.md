@@ -22,3 +22,6 @@ The Audio Equalizer (3-Band) node allows you to adjust the bass, mid, and treble
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The processed audio data with the equalization applied, containing the modified waveform and the original sample rate. |
+
+---
+**Source fingerprint (SHA-256):** `7aeaec2959f1af6144e46d8e6c558a16193669846923df1db23ae9d47e5cc173`

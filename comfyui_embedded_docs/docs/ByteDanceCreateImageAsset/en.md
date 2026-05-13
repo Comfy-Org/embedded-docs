@@ -20,3 +20,6 @@ This node creates a personal image asset for ByteDance's Seedance 2.0 service. I
 |-------------|-----------|-------------|
 | `asset_id` | STRING | The unique identifier for the newly created image asset. |
 | `group_id` | STRING | The identifier for the asset group. This will be the provided `group_id` or a newly created one. |
+
+---
+**Source fingerprint (SHA-256):** `b8b7b4cbbc16a8bb0102982757496ad4e8140bd87155902668c0be0d8b4d3d98`

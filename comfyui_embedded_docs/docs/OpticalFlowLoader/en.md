@@ -15,3 +15,6 @@ Loads an optical flow model from the `models/optical_flow/` folder. Currently, o
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `OPTICAL_FLOW` | MODEL | The loaded optical flow model, wrapped in a ModelPatcher for use with other nodes. |
+
+---
+**Source fingerprint (SHA-256):** `94bab0bb7e2b9d9b3f343337799eccc744f79275b72a6fad9681b408b4a0820b`

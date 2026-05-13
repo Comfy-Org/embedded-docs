@@ -6,7 +6,7 @@ The HitPaw Video Enhance node uses an external API to improve the quality of vid
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | DYNAMIC COMBO | Yes | Multiple options available | The AI model to use for video enhancement. Selecting a model reveals a nested `resolution` parameter. |
+| `model` | DYNAMIC COMBO | Yes | Multiple options available | The AI model to use for video enhancement. Selecting a model reveals a nested `resolution` parameter. The available models and their supported resolutions vary. |
 | `model.resolution` | COMBO | Yes | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | The target resolution for the enhanced video. Some options may be unavailable depending on the selected `model`. |
 | `video` | VIDEO | Yes | N/A | The input video file to be enhanced. |
 
@@ -20,3 +20,6 @@ The HitPaw Video Enhance node uses an external API to improve the quality of vid
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The enhanced video file. |
+
+---
+**Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`

@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreativeUpscaleNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreativeUpscaleNode/tr.md)
 
-Recraft Creative Upscale Image düğümü, bir tarama görüntüsünün çözünürlüğünü artırarak geliştirir. Görüntü içindeki küçük detaylara ve yüzlere odaklanan bir "yaratıcı yükseltme" işlemi kullanır. Bu işlem, harici bir API üzerinden eşzamanlı olarak gerçekleştirilir.
+Recraft Creative Upscale Image düğümü, bir raster görüntüyü çözünürlüğünü artırarak iyileştirir. Görüntüdeki küçük detayları ve yüzleri iyileştirmeye odaklanan "yaratıcı büyütme" sürecini kullanır. Bu işlem, harici bir API aracılığıyla eşzamanlı olarak gerçekleştirilir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `görüntü` | IMAGE | Evet | | Yükseltilecek girdi görüntüsü. |
+| `image` | IMAGE | Evet | | Büyütülecek giriş görüntüsü. |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `görüntü` | IMAGE | Geliştirilmiş detaylara sahip, yükseltilmiş sonuç görüntüsü. |
+| `image` | IMAGE | İyileştirilmiş detaylarla birlikte elde edilen büyütülmüş görüntü. |
+
+---
+**Source fingerprint (SHA-256):** `b638dd926e144c47ad2c2968cf49f3d322cbdddfcb8b2e86edb3ae9558a1ded6`

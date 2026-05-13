@@ -1,16 +1,21 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/ko.md)
 
-이 노드는 사용자 정의 훅을 조건화 데이터에 연결하여 모델 실행 중 조건화 프로세스를 가로채고 수정할 수 있도록 합니다. 일련의 훅을 가져와 제공된 조건화 데이터에 적용하여 텍스트-이미지 생성 워크플로우의 고급 사용자 정의를 가능하게 합니다. 훅이 연결된 수정된 조건화 데이터는 이후 처리 단계에서 사용하기 위해 반환됩니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/en.md)
+
+이 노드는 조건화 데이터에 사용자 정의 후크를 연결하여 모델 실행 중 조건화 프로세스를 가로채고 수정할 수 있도록 합니다. 후크 집합을 가져와 제공된 조건화 데이터에 적용함으로써 텍스트-이미지 생성 워크플로우의 고급 사용자 정의를 가능하게 합니다. 후크가 연결된 수정된 조건화 데이터는 이후 처리 단계에서 사용하기 위해 반환됩니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 예 | - | 훅이 연결될 조건화 데이터 |
-| `hooks` | HOOKS | 예 | - | 조건화 데이터에 적용될 훅 정의 |
+| `conditioning` | CONDITIONING | 예 | - | 후크가 연결될 조건화 데이터입니다 |
+| `hooks` | HOOKS | 예 | - | 조건화 데이터에 적용될 후크 정의입니다 |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | 훅이 연결된 수정된 조건화 데이터 |
+| `conditioning` | CONDITIONING | 후크가 연결된 수정된 조건화 데이터입니다 |
+
+---
+**Source fingerprint (SHA-256):** `a6e63a3a4d94d1b66a82d449af5ae001e1fc4a04f0f81d9fb5c4f8c13e5bdf8b`

@@ -1,19 +1,22 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentConcat/pt-BR.md)
 
-O nó LatentConcat combina duas amostras latentes ao longo de uma dimensão especificada. Ele recebe duas entradas latentes e as concatena ao longo do eixo escolhido (dimensão x, y ou t). O nó ajusta automaticamente o tamanho do lote da segunda entrada para corresponder ao da primeira antes de realizar a operação de concatenação.
+O nó LatentConcat combina duas amostras latentes unindo-as ao longo de uma dimensão escolhida. Ele recebe duas entradas latentes e as concatena ao longo do eixo x, y ou t, com a opção de controlar qual amostra vem primeiro. O nó ajusta automaticamente o tamanho do lote da segunda entrada para corresponder ao da primeira antes de realizar a concatenação.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `samples1` | LATENT | Sim | - | A primeira amostra latente a ser concatenada |
 | `samples2` | LATENT | Sim | - | A segunda amostra latente a ser concatenada |
-| `dim` | COMBO | Sim | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | A dimensão ao longo da qual as amostras latentes serão concatenadas. Valores positivos concatenam `samples1` antes de `samples2`, valores negativos concatenam `samples2` antes de `samples1` |
+| `dim` | COMBO | Sim | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | A dimensão ao longo da qual concatenar as amostras latentes. Valores positivos (x, y, t) colocam samples1 antes de samples2 no resultado. Valores negativos (-x, -y, -t) colocam samples2 antes de samples1. O mapeamento das dimensões é: x = largura, y = altura, t = tempo/quadros |
 
-**Observação:** A segunda amostra latente (`samples2`) é automaticamente ajustada para corresponder ao tamanho do lote da primeira amostra latente (`samples1`) antes da concatenação.
+**Observação:** A segunda amostra latente (`samples2`) é ajustada automaticamente para corresponder ao tamanho do lote da primeira amostra latente (`samples1`) antes da concatenação.
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
+| Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
 | `output` | LATENT | As amostras latentes concatenadas resultantes da combinação das duas amostras de entrada ao longo da dimensão especificada |
+
+---
+**Source fingerprint (SHA-256):** `46514ef85887279ec577ad88ac46f1c20f428903ee63b076888d7d5df09fde77`

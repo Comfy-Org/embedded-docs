@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleBy/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleBy/tr.md)
 
-ImageScaleBy düğümü, çeşitli enterpolasyon yöntemleri kullanarak görüntüleri belirli bir ölçek faktörüyle büyütmek için tasarlanmıştır. Görüntü boyutunu esnek bir şekilde ayarlamaya olanak tanır ve farklı büyütme ihtiyaçlarına hitap eder.
+ImageScaleBy düğümü, belirtilen bir ölçek faktörü kullanarak çeşitli enterpolasyon yöntemleriyle görüntüleri büyütmek için tasarlanmıştır. Farklı büyütme ihtiyaçlarına hitap ederek görüntü boyutunun esnek bir şekilde ayarlanmasına olanak tanır.
 
-## Girdiler
+## Girişler
 
-| Parametre       | Veri Tipi    | Açıklama                                                                 |
-|-----------------|-------------|----------------------------------------------------------------------------|
-| `görüntü`         | `IMAGE`     | Büyütülecek girdi görüntüsü. Bu parametre, büyütme işlemine tabi tutulacak temel görüntüyü sağladığı için çok önemlidir. |
-| `büyütme_yöntemi`| COMBO[STRING] | Büyütme için kullanılacak enterpolasyon yöntemini belirtir. Yöntem seçimi, büyütülmüş görüntünün kalitesini ve özelliklerini etkileyebilir. |
-| `oranla_büyüt`      | `FLOAT`     | Görüntünün büyütüleceği faktör. Bu, çıktı görüntüsünün boyutunun girdi görüntüsüne göre ne kadar artacağını belirler. |
+| Parametre        | Veri Türü   | Açıklama                                                                 |
+|------------------|-------------|--------------------------------------------------------------------------|
+| `image`          | `IMAGE`     | Büyütülecek giriş görüntüsü. Bu parametre, büyütme işlemine tabi tutulacak temel görüntüyü sağladığı için kritik öneme sahiptir. |
+| `upscale_method` | COMBO[STRING] | Büyütme için kullanılacak enterpolasyon yöntemini belirtir. Yöntem seçimi, büyütülmüş görüntünün kalitesini ve özelliklerini etkileyebilir. |
+| `scale_by`       | `FLOAT`     | Görüntünün büyütüleceği faktör. Bu, çıktı görüntüsünün boyutundaki artışı giriş görüntüsüne göre belirler. |
 
 ## Çıktılar
 
-| Parametre | Veri Tipi | Açıklama                                                   |
-|-----------|-------------|---------------------------------------------------------------|
-| `görüntü`   | `IMAGE`     | Belirtilen ölçek faktörü ve enterpolasyon yöntemine göre girdi görüntüsünden daha büyük olan büyütülmüş görüntü. |
+| Parametre | Veri Türü   | Açıklama                                                   |
+|-----------|-------------|------------------------------------------------------------|
+| `image`   | `IMAGE`     | Belirtilen ölçek faktörü ve enterpolasyon yöntemine göre giriş görüntüsünden daha büyük olan büyütülmüş görüntü. |

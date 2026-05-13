@@ -36,17 +36,17 @@ Este nodo genera imágenes utilizando la API de OpenAI GPT Image. Es compatible 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | N/A | Instrucción de texto para GPT Image (por defecto: ""). |
-| `model` | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | El modelo OpenAI GPT Image a utilizar. Al seleccionar un modelo se muestran parámetros adicionales específicos de ese modelo. |
-| `model.size` | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` | Tamaño de la imagen. Seleccione 'Custom' para usar ancho y alto personalizados (por defecto: "auto"). Solo disponible para `gpt-image-2`. |
-| `model.custom_width` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (por defecto: 1024). Solo disponible para `gpt-image-2`. |
-| `model.custom_height` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (por defecto: 1024). Solo disponible para `gpt-image-2`. |
-| `model.background` | COMBO | Sí | `"auto"`<br>`"opaque"` | Devuelve la imagen con o sin fondo (por defecto: "auto"). Solo disponible para `gpt-image-2`. |
+| `prompt` | STRING | Sí | N/A | Texto de instrucción para GPT Image (valor predeterminado: ""). |
+| `model` | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | El modelo OpenAI GPT Image a utilizar. Seleccionar un modelo revela parámetros adicionales específicos de ese modelo. |
+| `model.size` | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` | Tamaño de la imagen. Seleccione 'Custom' para usar ancho y alto personalizados (valor predeterminado: "auto"). Solo disponible para `gpt-image-2`. |
+| `model.custom_width` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (valor predeterminado: 1024). Solo disponible para `gpt-image-2`. |
+| `model.custom_height` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (valor predeterminado: 1024). Solo disponible para `gpt-image-2`. |
+| `model.background` | COMBO | Sí | `"auto"`<br>`"opaque"` | Devuelve la imagen con o sin fondo (valor predeterminado: "auto"). Solo disponible para `gpt-image-2`. |
 | `model.quality` | COMBO | Sí | `"standard"`<br>`"hd"` | La calidad de la imagen generada. Solo disponible para `gpt-image-2`. |
 | `model.images` | IMAGE | No | N/A | Imágenes de entrada para edición. Solo disponible para `gpt-image-2`. |
 | `model.mask` | MASK | No | N/A | Una máscara para especificar qué partes de la imagen de entrada editar. Solo disponible para `gpt-image-2`. |
-| `n` | INT | Sí | 1 a 8 | Cuántas imágenes generar (por defecto: 1). |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla para reproducibilidad (por defecto: 0). Nota: aún no implementada en el backend. |
+| `n` | INT | Sí | 1 a 8 | Cuántas imágenes generar (valor predeterminado: 1). |
+| `seed` | INT | Sí | 0 a 2147483647 | Semilla para reproducibilidad (valor predeterminado: 0). Nota: aún no implementado en el backend. |
 
 **Restricciones y limitaciones de los parámetros:**
 
@@ -61,3 +61,6 @@ Este nodo genera imágenes utilizando la API de OpenAI GPT Image. Es compatible 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
 | `image` | IMAGE | La imagen o imágenes generadas. |
+
+---
+**Source fingerprint (SHA-256):** `a757208cf6cc151594599b35b0ef73f2caf7274189e948799211c0714a6a8f89`

@@ -17,3 +17,6 @@ The EmptyFlux2LatentImage node creates a blank, empty latent representation. It 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `samples` | LATENT | A latent tensor filled with zeros. The shape is `[batch_size, 128, height // 16, width // 16]`. |
+
+---
+**Source fingerprint (SHA-256):** `e3616ad0e283a318bbe441d84f687883e59ab311e72c5e5edd16ddabde10988e`

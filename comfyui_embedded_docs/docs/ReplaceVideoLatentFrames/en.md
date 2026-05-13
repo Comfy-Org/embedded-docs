@@ -8,7 +8,7 @@ The ReplaceVideoLatentFrames node inserts frames from a source latent video into
 |-----------|-----------|----------|-------|-------------|
 | `destination` | LATENT | Yes | - | The destination latent where frames will be replaced. |
 | `source` | LATENT | No | - | The source latent providing frames to insert into the destination latent. If not provided, the destination latent is returned unchanged. |
-| `index` | INT | No | -MAX_RESOLUTION to MAX_RESOLUTION | The starting latent frame index in the destination latent where the source latent frames will be placed. Negative values count from the end (default: 0). |
+| `index` | INT | Yes | -MAX_RESOLUTION to MAX_RESOLUTION | The starting latent frame index in the destination latent where the source latent frames will be placed. Negative values count from the end (default: 0). |
 
 **Constraints:**
 
@@ -20,3 +20,6 @@ The ReplaceVideoLatentFrames node inserts frames from a source latent video into
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | LATENT | The resulting latent video after the frame replacement operation. |
+
+---
+**Source fingerprint (SHA-256):** `b4e2b3dcdaa5c400fefc30262ae05cd1849896e6cb6bbb3a1bd6ce4d31583e23`

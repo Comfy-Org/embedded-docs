@@ -1,15 +1,16 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageToMask/fr.md)
 
-Le nœud ImageToMask est conçu pour convertir une image en un masque basé sur un canal de couleur spécifié. Il permet l'extraction de couches de masque correspondant aux canaux rouge, vert, bleu ou alpha d'une image, facilitant les opérations nécessitant un masquage ou un traitement spécifique à un canal.
+Le nœud ImageToMask est conçu pour convertir une image en masque en fonction d'un canal de couleur spécifié. Il permet d'extraire des couches de masque correspondant aux canaux rouge, vert, bleu ou alpha d'une image, facilitant les opérations nécessitant un masquage ou un traitement spécifique à un canal.
 
 ## Entrées
 
-| Paramètre   | Data Type | Description                                                                                                          |
+| Paramètre | Type de données | Description |
 |-------------|-------------|----------------------------------------------------------------------------------------------------------------------|
-| `image`     | `IMAGE`     | Le paramètre 'image' représente l'image d'entrée à partir de laquelle un masque sera généré en fonction du canal de couleur spécifié. Il joue un rôle crucial dans la détermination du contenu et des caractéristiques du masque résultant. |
-| `canal`   | COMBO[STRING] | Le paramètre 'channel' spécifie quel canal de couleur (rouge, vert, bleu ou alpha) de l'image d'entrée doit être utilisé pour générer le masque. Ce choix influence directement l'apparence du masque et les parties de l'image qui sont mises en évidence ou masquées. |
+| `image` | `IMAGE` | Le paramètre `image` représente l'image d'entrée à partir de laquelle un masque sera généré en fonction du canal de couleur spécifié. Il joue un rôle crucial dans la détermination du contenu et des caractéristiques du masque résultant. |
+| `channel` | COMBO[STRING] | Le paramètre `channel` spécifie quel canal de couleur (rouge, vert, bleu ou alpha) de l'image d'entrée doit être utilisé pour générer le masque. Ce choix influence directement l'apparence du masque et les parties de l'image qui sont mises en évidence ou masquées. |
 
 ## Sorties
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `mask`    | `MASK`      | La sortie 'mask' est une représentation binaire ou en niveaux de gris du canal de couleur spécifié de l'image d'entrée, utile pour un traitement d'image ou des opérations de masquage ultérieurs. |
+| Paramètre | Type de données | Description |
+|-----------|-------------|----------------------------------------------------------------------------------------------------------------------|
+| `mask` | `MASK` | Le masque de sortie `mask` est une représentation binaire ou en niveaux de gris du canal de couleur spécifié provenant de l'image d'entrée, utile pour d'autres opérations de traitement d'image ou de masquage. |

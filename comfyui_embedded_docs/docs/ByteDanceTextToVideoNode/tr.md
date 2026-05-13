@@ -1,29 +1,34 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/tr.md)
 
-ByteDance Text to Video düğümü, metin istemlerine dayalı olarak bir API aracılığıyla ByteDance modellerini kullanarak videolar oluşturur. Bir metin açıklaması ve çeşitli video ayarlarını girdi olarak alır, ardından sağlanan özelliklere uygun bir video oluşturur. Düğüm, API iletişimini yönetir ve oluşturulan videoyu çıktı olarak döndürür.
+ByteDance Metinden Videoya düğümü, metin istemlerine dayalı olarak bir API aracılığıyla ByteDance modellerini kullanarak videolar oluşturur. Giriş olarak bir metin açıklaması ve çeşitli video ayarlarını alır, ardından sağlanan özelliklerle eşleşen bir video oluşturur. Düğüm, API iletişimini yönetir ve oluşturulan videoyu çıktı olarak döndürür.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | STRING | Combo | seedance_1_pro | Text2VideoModelName seçenekleri | Model adı |
-| `prompt` | STRING | String | - | - | Videoyu oluşturmak için kullanılan metin istemi. |
-| `resolution` | STRING | Combo | - | ["480p", "720p", "1080p"] | Çıktı videosunun çözünürlüğü. |
-| `aspect_ratio` | STRING | Combo | - | ["16:9", "4:3", "1:1", "3:4", "9:16", "21:9"] | Çıktı videosunun en-boy oranı. |
-| `duration` | INT | Int | 5 | 3-12 | Çıktı videosunun saniye cinsinden süresi. |
-| `seed` | INT | Int | 0 | 0-2147483647 | Oluşturma için kullanılacak seed değeri. (İsteğe bağlı) |
-| `camera_fixed` | BOOLEAN | Boolean | False | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, kamerayı sabitleme talimatını isteminize ekler, ancak gerçek etkiyi garanti etmez. (İsteğe bağlı) |
-| `watermark` | BOOLEAN | Boolean | True | - | Videoya "AI generated" (Yapay Zeka ile Oluşturuldu) filigranı eklenip eklenmeyeceği. (İsteğe bağlı) |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `model` | STRING | Evet | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-t2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` | Oluşturma için kullanılacak ByteDance modeli (varsayılan: `"seedance-1-0-pro-fast-251015"`). |
+| `prompt` | STRING | Evet | - | Videoyu oluşturmak için kullanılan metin istemi. |
+| `resolution` | STRING | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
+| `aspect_ratio` | STRING | Evet | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en-boy oranı. |
+| `duration` | INT | Evet | 3 ila 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). |
+| `seed` | INT | Hayır | 0 ila 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
+| `camera_fixed` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler ancak gerçek etkiyi garanti etmez (varsayılan: False). |
+| `watermark` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
+| `generate_audio` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
 
 **Parametre Kısıtlamaları:**
 
-- `prompt` parametresi, boşluklar kaldırıldıktan sonra en az 1 karakter içermelidir
-- `prompt` parametresi şu metin parametrelerini içeremez: "resolution", "ratio", "duration", "seed", "camerafixed", "watermark"
-- `duration` parametresi 3 ile 12 saniye arasındaki değerlerle sınırlıdır
-- `seed` parametresi 0 ile 2,147,483,647 arasındaki değerleri kabul eder
+- `prompt` parametresi, boşluklar kaldırıldıktan sonra en az 1 karakter içermelidir.
+- `prompt` parametresi şu metin parametrelerini içeremez: "resolution", "ratio", "duration", "seed", "camerafixed", "watermark".
+- `duration` parametresi 3 ile 12 saniye arasındaki değerlerle sınırlıdır. `seedance-1-5-pro-251215` modeli için desteklenen minimum süre 4 saniyedir.
+- `seed` parametresi 0 ile 2.147.483.647 arasında değerler kabul eder.
+- `generate_audio` parametresi yalnızca `model` `seedance-1-5-pro-251215` olarak ayarlandığında etkilidir; diğer tüm modeller için yok sayılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | VIDEO | Oluşturulan video dosyası |
+
+---
+**Source fingerprint (SHA-256):** `44ea3e40b99b337340cc39be1c5b6c903680591f1de49b1f2e82f398979355c5`

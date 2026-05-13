@@ -1,27 +1,23 @@
-Esta documentación es para el nodo original `Apply ControlNet(Advanced)`. El nodo más antiguo `Apply ControlNet` ha sido renombrado a `Apply ControlNet(Old)`. Aunque aún puedes ver el nodo `Apply ControlNet(Old)` en muchas carpetas de flujo de trabajo que descargues de comfyui.org por razones de compatibilidad, ya no puedes encontrar el nodo `Apply ControlNet(Old)` a través de búsqueda o lista de nodos. Por favor, usa el nodo `Apply ControlNet` en su lugar.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/es.md)
 
-Este nodo aplica un ControlNet a una imagen y acondicionamiento dados, ajustando los atributos de la imagen según los parámetros de la red de control y una fuerza especificada, como Depth, OpenPose, Canny, HED, etc.
-
-El uso de controlNet requiere preprocesamiento de imágenes de entrada. Como los nodos iniciales de ComfyUI no vienen con preprocesadores y modelos controlNet, primero instale los preprocesadores ContrlNet [descargue los preprocesadores aquí](https://github.com/Fannovel16/comfy_controlnet_preprocessors) y los modelos controlNet correspondientes.
+El uso de ControlNet requiere el preprocesamiento de las imágenes de entrada. Dado que los nodos iniciales de ComfyUI no incluyen preprocesadores ni modelos ControlNet, instale primero los preprocesadores de ControlNet [descargue los preprocesadores aquí](https://github.com/Fannovel16/comfy_controlnet_preprocessors) y los modelos ControlNet correspondientes.
 
 ## Entradas
 
-| Parámetro | Tipo de datos | Función |
+| Parámetro | Tipo de Dato | Función |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | Datos de acondicionamiento positivo, del `Codificador de texto CLIP u otras entradas de acondicionamiento |
-| `negative` | `CONDITIONING` | Datos de acondicionamiento negativo, del `Codificador de texto CLIP` u otras entradas de acondicionamiento |
-| `control_net` | `CONTROL_NET` | El modelo controlNet a aplicar, típicamente entrada desde el `Cargador de ControlNet` |
-| `imagen` | `IMAGE` | Imagen para aplicación de controlNet, necesita ser procesada por el preprocesador |
-| `vae` | `VAE` | Entrada del modelo Vae |
-| `fuerza` | `FLOAT` | Controla la fuerza de los ajustes de la red, rango de valores 0~10. Los valores recomendados entre 0.5~1.5 son razonables. Valores más bajos permiten más libertad al modelo, valores más altos imponen restricciones más estrictas. Valores demasiado altos pueden resultar en imágenes extrañas. |
-| `start_percent` | `FLOAT` | Valor 0.000~1.000, determina cuándo comenzar a aplicar controlNet como porcentaje, por ejemplo, 0.2 significa que la guía de ControlNet comenzará a influir en la generación de imágenes al 20% del proceso de difusión |
-| `end_percent` | `FLOAT` | Valor 0.000~1.000, determina cuándo dejar de aplicar controlNet como porcentaje, por ejemplo, 0.8 significa que la guía de ControlNet dejará de influir en la generación de imágenes al 80% del proceso de difusión |
+| `positive` | `CONDITIONING` | Datos de condicionamiento positivo, provenientes del Codificador de Texto CLIP u otras entradas de condicionamiento |
+| `negative` | `CONDITIONING` | Datos de condicionamiento negativo, provenientes del Codificador de Texto CLIP u otras entradas de condicionamiento |
+| `control_net` | `CONTROL_NET` | El modelo ControlNet a aplicar, generalmente ingresado desde el Cargador de ControlNet |
+| `image` | `IMAGE` | Imagen para la aplicación de ControlNet, debe ser procesada por un preprocesador |
+| `vae` | `VAE` | Entrada del modelo VAE |
+| `strength` | `FLOAT` | Controla la fuerza de los ajustes de la red, rango de valores 0~10. Se recomiendan valores entre 0.5~1.5 como razonables. Valores más bajos permiten mayor libertad al modelo; valores más altos imponen restricciones más estrictas. Valores demasiado altos pueden generar imágenes extrañas. Puede probar y ajustar este valor para afinar la influencia de la red de control. |
+| `start_percent` | `FLOAT` | Valor 0.000~1.000, determina cuándo comenzar a aplicar ControlNet como porcentaje. Por ejemplo, 0.2 significa que la guía de ControlNet comenzará a influir en la generación de la imagen al 20% del proceso de difusión |
+| `end_percent` | `FLOAT` | Valor 0.000~1.000, determina cuándo detener la aplicación de ControlNet como porcentaje. Por ejemplo, 0.8 significa que la guía de ControlNet dejará de influir en la generación de la imagen al 80% del proceso de difusión |
 
-## Salidas
+### Salidas
 
-| Parámetro | Tipo de datos | Función |
+| Parámetro | Tipo de Dato | Función |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | Datos de acondicionamiento positivo procesados por ControlNet, pueden enviarse a los siguientes nodos ControlNet o K Sampler |
-| `negative` | `CONDITIONING` | Datos de acondicionamiento negativo procesados por ControlNet, pueden enviarse a los siguientes nodos ControlNet o K Sampler |
-
-Si desea usar **modelos de estilo T2IAdaptor**, utilice el nodo `Apply Style Model` en su lugar
+| `positive` | `CONDITIONING` | Datos de condicionamiento positivo procesados por ControlNet, pueden enviarse al siguiente nodo de ControlNet o al Muestreador K |
+| `negative` | `CONDITIONING` | Datos de condicionamiento negativo procesados por ControlNet, pueden enviarse al siguiente nodo de ControlNet o al Muestreador K |

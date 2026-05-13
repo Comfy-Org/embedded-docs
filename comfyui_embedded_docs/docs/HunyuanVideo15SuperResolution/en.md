@@ -23,3 +23,6 @@ The HunyuanVideo15SuperResolution node prepares conditioning data for a video su
 | `positive` | CONDITIONING | The modified positive conditioning, now containing the concatenated latent, noise augmentation, and optional CLIP vision data. |
 | `negative` | CONDITIONING | The modified negative conditioning, now containing the concatenated latent, noise augmentation, and optional CLIP vision data. |
 | `latent` | LATENT | The input latent is passed through unchanged. |
+
+---
+**Source fingerprint (SHA-256):** `f913327a81d034997fa8a485ca4b3691f75ba1d3c5c6e2e73ab107021b58a52a`

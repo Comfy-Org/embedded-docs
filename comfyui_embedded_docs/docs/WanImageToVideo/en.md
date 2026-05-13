@@ -25,3 +25,6 @@ The WanImageToVideo node prepares conditioning and latent representations for vi
 | `positive` | CONDITIONING | Modified positive conditioning with image and vision data incorporated |
 | `negative` | CONDITIONING | Modified negative conditioning with image and vision data incorporated |
 | `latent` | LATENT | Empty latent space tensor ready for video generation |
+
+---
+**Source fingerprint (SHA-256):** `e9f4350c43e48351523c04d82675c24f868df7b2109530c32b8e752a3ab61e8b`

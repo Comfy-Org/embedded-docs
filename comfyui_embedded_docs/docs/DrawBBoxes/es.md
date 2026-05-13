@@ -1,15 +1,15 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/es.md)
 
-El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando cuadros delimitadores, etiquetas y puntuaciones de confianza sobre una imagen. Si no se proporciona una imagen de entrada, crea un lienzo en blanco lo suficientemente grande como para contener todos los cuadros dibujados. Admite procesamiento por lotes, lo que permite dibujar diferentes conjuntos de detecciones para múltiples imágenes o repetir las mismas detecciones a lo largo de un lote.
+El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando cuadros delimitadores, etiquetas y puntuaciones de confianza sobre una imagen. Si no se proporciona una imagen de entrada, crea un lienzo en blanco lo suficientemente grande para contener todos los cuadros dibujados. Admite procesamiento por lotes, lo que permite dibujar diferentes conjuntos de detecciones para múltiples imágenes o repetir las mismas detecciones en un lote.
 
 ## Entradas
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | No | - | La(s) imagen(es) de entrada sobre la(s) cual(es) dibujar los cuadros delimitadores. Si no se proporciona, se generará un lienzo en blanco. |
-| `bboxes` | BOUNDINGBOX | Sí | - | Una lista de diccionarios de cuadros delimitadores. Cada diccionario debe contener las claves `x`, `y`, `width`, `height`, y opcionalmente `label` y `score`. |
+|-----------|--------------|-------------|-------|-------------|
+| `image` | IMAGE | No | - | La(s) imagen(es) de entrada sobre las que se dibujarán los cuadros delimitadores. Si no se proporciona, se generará un lienzo en blanco. |
+| `bboxes` | BOUNDINGBOX | Sí | - | Una lista de diccionarios de cuadros delimitadores. Cada diccionario debe contener las claves `x`, `y`, `width`, `height` y, opcionalmente, `label` y `score`. |
 
-**Restricciones de Entrada:**
+**Restricciones de entrada:**
 *   La entrada `bboxes` es obligatoria y debe proporcionarse.
 *   El nodo maneja automáticamente diferentes formatos de entrada para `bboxes`. Un solo diccionario se aplicará a todas las imágenes del lote. Una lista plana de diccionarios se tratará como el mismo conjunto de detecciones para cada imagen. Una lista de listas permite especificar diferentes detecciones para cada imagen del lote.
 *   Si no se proporciona una `image`, el nodo creará una imagen en blanco con dimensiones lo suficientemente grandes para ajustar todos los cuadros delimitadores proporcionados, con un tamaño mínimo predeterminado de 640x640.
@@ -17,5 +17,8 @@ El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando c
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `out_image` | IMAGE | La(s) imagen(es) de salida con los cuadros delimitadores, etiquetas y puntuaciones de confianza dibujados superpuestos. |
+|------------------|--------------|-------------|
+| `out_image` | IMAGE | La(s) imagen(es) de salida con los cuadros delimitadores, etiquetas y puntuaciones de confianza superpuestos. |
+
+---
+**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`

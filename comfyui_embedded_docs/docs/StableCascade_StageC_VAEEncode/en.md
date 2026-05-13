@@ -16,3 +16,6 @@ The StableCascade_StageC_VAEEncode node processes images through a VAE encoder t
 |-------------|-----------|-------------|
 | `stage_c` | LATENT | The encoded latent representation for stage C of the Stable Cascade model |
 | `stage_b` | LATENT | A placeholder latent representation for stage B (currently returns zeros) |
+
+---
+**Source fingerprint (SHA-256):** `e7b9bd83d263903567ab06c00324575e01b79b50881fa807cd6f006955935c63`

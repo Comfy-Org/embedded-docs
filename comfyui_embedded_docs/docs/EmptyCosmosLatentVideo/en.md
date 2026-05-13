@@ -8,7 +8,7 @@ The EmptyCosmosLatentVideo node creates an empty latent video tensor with specif
 |-----------|-----------|----------|-------|-------------|
 | `width` | INT | Yes | 16 to MAX_RESOLUTION | The width of the latent video in pixels (default: 1280, must be divisible by 16) |
 | `height` | INT | Yes | 16 to MAX_RESOLUTION | The height of the latent video in pixels (default: 704, must be divisible by 16) |
-| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the latent video (default: 121) |
+| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the latent video (default: 121, must be divisible by 8) |
 | `batch_size` | INT | No | 1 to 4096 | The number of latent videos to generate in a batch (default: 1) |
 
 ## Outputs
@@ -16,3 +16,6 @@ The EmptyCosmosLatentVideo node creates an empty latent video tensor with specif
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `samples` | LATENT | The generated empty latent video tensor with zero values |
+
+---
+**Source fingerprint (SHA-256):** `f473820af3faf7cb6992ff1959089801e333df395b4007abeb9b504962bfc73b`

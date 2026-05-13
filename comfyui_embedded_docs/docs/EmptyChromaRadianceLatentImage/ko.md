@@ -1,17 +1,22 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyChromaRadianceLatentImage/ko.md)
 
-EmptyChromaRadianceLatentImage 노드는 크로마 라디언스 워크플로우에서 사용하기 위해 지정된 크기의 빈 잠재 이미지를 생성합니다. 이 노드는 잠재 공간 연산을 위한 시작점으로 사용되는 0으로 채워진 텐서를 생성합니다. 노드를 사용하면 빈 잠재 이미지의 너비, 높이, 배치 크기를 정의할 수 있습니다.
+# EmptyChromaRadianceLatentImage 노드
+
+EmptyChromaRadianceLatentImage 노드는 크로마 래디언스 워크플로우에서 사용하기 위해 지정된 크기의 빈 잠재 이미지를 생성합니다. 이 노드는 잠재 공간 연산의 시작점으로 사용되는 0으로 채워진 텐서를 생성합니다. 빈 잠재 이미지의 너비, 높이 및 배치 크기를 정의할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | 예 | 16 ~ MAX_RESOLUTION | 잠재 이미지의 너비(픽셀 단위) (기본값: 1024, 16으로 나누어져야 함) |
-| `height` | INT | 예 | 16 ~ MAX_RESOLUTION | 잠재 이미지의 높이(픽셀 단위) (기본값: 1024, 16으로 나누어져야 함) |
-| `batch_size` | INT | 아니오 | 1 ~ 4096 | 배치로 생성할 잠재 이미지의 개수 (기본값: 1) |
+| `width` | INT | 예 | 16 ~ MAX_RESOLUTION | 잠재 이미지의 픽셀 단위 너비 (기본값: 1024, 16으로 나누어져야 함) |
+| `height` | INT | 예 | 16 ~ MAX_RESOLUTION | 잠재 이미지의 픽셀 단위 높이 (기본값: 1024, 16으로 나누어져야 함) |
+| `batch_size` | INT | 아니요 | 1 ~ 4096 | 배치로 생성할 잠재 이미지의 수 (기본값: 1) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
 | `samples` | LATENT | 지정된 크기로 생성된 빈 잠재 이미지 텐서 |
+
+---
+**Source fingerprint (SHA-256):** `f2bc90a236f91e0161142f5242647d15adc8a10c57c920d2eb97e87040ac99d4`

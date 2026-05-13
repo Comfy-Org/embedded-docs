@@ -1,17 +1,20 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenormCFG/es.md)
 
-El nodo RenormCFG modifica el proceso de guía libre de clasificador (CFG) en modelos de difusión aplicando escalado y normalización condicional. Ajusta el proceso de eliminación de ruido basándose en umbrales de paso de tiempo especificados y factores de renormalización para controlar la influencia de las predicciones condicionales versus las incondicionales durante la generación de imágenes.
+El nodo RenormCFG modifica el proceso de guía libre de clasificador (CFG) en modelos de difusión aplicando escalado condicional y normalización. Ajusta el proceso de eliminación de ruido según umbrales de paso temporal especificados y factores de renormalización para controlar la influencia de las predicciones condicionales frente a las incondicionales durante la generación de imágenes.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo de difusión al que aplicar CFG renormalizado |
-| `cfg_trunc` | FLOAT | No | 0.0 - 100.0 | Umbral de paso de tiempo para aplicar el escalado CFG (por defecto: 100.0) |
-| `renorm_cfg` | FLOAT | No | 0.0 - 100.0 | Factor de renormalización para controlar la fuerza de la guía condicional (por defecto: 1.0) |
+| `model` | MODEL | Sí | - | El modelo de difusión al que se aplicará la CFG renormalizada |
+| `cfg_trunc` | FLOAT | No | 0.0 - 100.0 | Umbral de paso temporal para aplicar el escalado CFG. Cuando el paso temporal actual está por debajo de este valor, se aplica el escalado CFG; de lo contrario, solo se utiliza la predicción condicional (predeterminado: 100.0) |
+| `renorm_cfg` | FLOAT | No | 0.0 - 100.0 | Factor de renormalización que limita la norma máxima de la predicción escalada por CFG en relación con la predicción condicional original. Un valor de 0.0 desactiva la renormalización (predeterminado: 1.0) |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
+| Nombre de salida | Tipo de dato | Descripción |
 |-------------|-----------|-------------|
-| `modelo` | MODEL | El modelo modificado con la función CFG renormalizada aplicada |
+| `model` | MODEL | El modelo modificado con la función CFG renormalizada aplicada |
+
+---
+**Source fingerprint (SHA-256):** `b59929606f7519574b7ad14a3caacee51e4f141dd6be3abb594217bcfdbc401e`

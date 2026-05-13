@@ -6,7 +6,7 @@ Transforms part of an existing audio sample using text instructions. This node a
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Yes | "stable-audio-2.5"<br> | The AI model to use for audio inpainting. |
+| `model` | COMBO | Yes | "stable-audio-2.5" | The AI model to use for audio inpainting. |
 | `prompt` | STRING | Yes |  | Text description guiding how the audio should be transformed (default: empty). |
 | `audio` | AUDIO | Yes |  | Input audio file to transform. Audio must be between 6 and 190 seconds long. |
 | `duration` | INT | No | 1-190 | Controls the duration in seconds of the generated audio (default: 190). |
@@ -22,3 +22,6 @@ Transforms part of an existing audio sample using text instructions. This node a
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The transformed audio output with the specified section modified according to the prompt. |
+
+---
+**Source fingerprint (SHA-256):** `6589fdbff8387e403055c711a61bb3000d87e5f8cd3753d6e665b723be6f43e2`

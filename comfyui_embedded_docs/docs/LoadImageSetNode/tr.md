@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageSetNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageSetNode/tr.md)
 
-LoadImageSetNode, toplu işleme ve eğitim amaçları için giriş dizininden birden fazla görüntü yükler. Çeşitli görüntü formatlarını destekler ve isteğe bağlı olarak görüntüleri farklı yöntemlerle yeniden boyutlandırabilir. Bu düğüm, seçilen tüm görüntüleri bir toplu iş olarak işler ve tek bir tensör olarak döndürür.
+Giriş dizininden birden çok görseli toplu işleme ve eğitim amaçları için yükler. Çeşitli görsel formatlarını destekler ve isteğe bağlı olarak farklı yöntemler kullanarak görselleri yeniden boyutlandırabilir. Bu düğüm, seçilen tüm görselleri bir toplu iş olarak işler ve bunları tek bir tensör olarak döndürür.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | Birden fazla görüntü dosyası | Giriş dizininden birden fazla görüntü seçin. PNG, JPG, JPEG, WEBP, BMP, GIF, JPE, APNG, TIF ve TIFF formatlarını destekler. Görüntülerin toplu seçimine izin verir. |
-| `resize_method` | STRING | Hayır | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | Yüklenen görüntüleri yeniden boyutlandırmak için isteğe bağlı yöntem (varsayılan: "None"). Orijinal boyutları korumak için "None", zorla yeniden boyutlandırmak için "Stretch", en-boy oranını koruyarak kırpmak için "Crop" veya en-boy oranını koruyarak dolgu eklemek için "Pad" seçeneğini belirleyin. |
+| `images` | IMAGE | Evet | Birden çok görsel dosyası | Giriş dizininden birden çok görsel seçin. PNG, JPG, JPEG, WEBP, BMP, GIF, JPE, APNG, TIF ve TIFF formatlarını destekler. Görsellerin toplu seçimine izin verir. |
+| `resize_method` | STRING | Hayır | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | Yüklenen görselleri yeniden boyutlandırmak için isteğe bağlı yöntem (varsayılan: "None"). Orijinal boyutları korumak için "None", zorla yeniden boyutlandırmak için "Stretch", kırparak en-boy oranını korumak için "Crop" veya dolgu ekleyerek en-boy oranını korumak için "Pad" seçeneğini belirleyin. |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | Daha fazla işleme için yüklenen tüm görüntüleri bir toplu iş olarak içeren bir tensör. |
+| `IMAGE` | IMAGE | Daha ileri işlemler için yüklenen tüm görselleri bir toplu iş olarak içeren bir tensör. |
+
+---
+**Source fingerprint (SHA-256):** `acf0255bcf170ef3ac3b86a3f3e060c3b81064ca8924918a026ec8e3b86f7ac0`

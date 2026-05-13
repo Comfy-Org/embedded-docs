@@ -17,15 +17,15 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 | `model.quality` | COMBO | Evet | `"standard"`<br>`"hd"` | Oluşturulan görselin kalitesi. Yalnızca `gpt-image-2` için kullanılabilir. |
 | `model.images` | IMAGE | Hayır | Yok | Düzenleme için giriş görselleri. Yalnızca `gpt-image-2` için kullanılabilir. |
 | `model.mask` | MASK | Hayır | Yok | Giriş görselinin hangi bölümlerinin düzenleneceğini belirten bir maske. Yalnızca `gpt-image-2` için kullanılabilir. |
-| `n` | INT | Evet | 1 - 8 | Oluşturulacak görsel sayısı (varsayılan: 1). |
+| `n` | INT | Evet | 1 - 8 | Kaç adet görsel oluşturulacağı (varsayılan: 1). |
 | `seed` | INT | Evet | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). Not: Henüz arka uçta uygulanmamıştır. |
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 
-- `gpt-image-2` ile `model.size` "Custom" olarak kullanıldığında, `custom_width` ve `custom_height` değerleri 16'nın katı olmalı, maksimum kenar <= 3840 olmalı, en-boy oranı 3:1'i geçmemeli ve toplam piksel sayısı 655.360 ile 8.294.400 arasında olmalıdır.
-- Bir `mask` sağlanırsa, bir giriş görseli (`model.images`) gereklidir. Maske, giriş görseli olmadan kullanılamaz.
-- Bir maske, birden fazla giriş görseli ile kullanılamaz.
-- Bir maske sağlandığında, maske boyutları giriş görseli boyutlarıyla eşleşmelidir.
+- `gpt-image-2` kullanılırken `model.size` değeri "Custom" olduğunda, `custom_width` ve `custom_height` değerleri 16'nın katı olmalı, maksimum kenar <= 3840 olmalı, en-boy oranı 3:1'i geçmemeli ve toplam piksel sayısı 655.360 ile 8.294.400 arasında olmalıdır.
+- Bir `mask` sağlanmışsa, bir giriş görseli (`model.images`) gereklidir. Giriş görseli olmadan maske kullanılamaz.
+- Birden fazla giriş görseli ile maske kullanılamaz.
+- Maske sağlandığında, maske boyutları giriş görseli boyutlarıyla eşleşmelidir.
 - `seed` parametresi şu anda işlevsel değildir.
 
 ## Çıktılar
@@ -33,3 +33,6 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `image` | IMAGE | Oluşturulan görsel veya görseller. |
+
+---
+**Source fingerprint (SHA-256):** `a757208cf6cc151594599b35b0ef73f2caf7274189e948799211c0714a6a8f89`

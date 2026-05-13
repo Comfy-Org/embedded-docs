@@ -1,22 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVScheduler/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVScheduler/zh-TW.md)
 
-LTXVScheduler 節點為自定義採樣過程生成 sigma 值。它根據輸入潛空間中的 token 數量計算噪聲調度參數，並應用 sigmoid 轉換來創建採樣調度。該節點可以選擇性地拉伸生成的 sigma 值以匹配指定的終端值。
+## 概述
 
-## 輸入參數
+LTXVScheduler 節點用於生成自訂取樣過程的 sigma 值。它根據輸入潛在空間中的 token 數量計算噪聲排程參數，並應用 sigmoid 轉換來建立取樣排程。此節點可以選擇性地拉伸生成的 sigma 值，以匹配指定的終端值。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `步驟數` | INT | 是 | 1-10000 | 採樣步數（預設值：20） |
-| `最大偏移` | FLOAT | 是 | 0.0-100.0 | 用於 sigma 計算的最大偏移值（預設值：2.05） |
-| `基礎偏移` | FLOAT | 是 | 0.0-100.0 | 用於 sigma 計算的基礎偏移值（預設值：0.95） |
-| `拉伸` | BOOLEAN | 是 | True/False | 將 sigma 值拉伸至 [terminal, 1] 範圍內（預設值：True） |
-| `終值` | FLOAT | 是 | 0.0-0.99 | 拉伸後 sigma 值的最終值（預設值：0.1） |
-| `潛在空間` | LATENT | 否 | - | 可選的潛空間輸入，用於計算 token 數量以進行 sigma 調整 |
+| `steps` | INT | 是 | 1-10000 | 取樣步數（預設值：20） |
+| `max_shift` | FLOAT | 是 | 0.0-100.0 | sigma 計算的最大偏移值（預設值：2.05） |
+| `base_shift` | FLOAT | 是 | 0.0-100.0 | sigma 計算的基礎偏移值（預設值：0.95） |
+| `stretch` | BOOLEAN | 是 | True/False | 拉伸 sigma 值使其落在 [terminal, 1] 範圍內（預設值：True） |
+| `terminal` | FLOAT | 是 | 0.0-0.99 | 拉伸後 sigma 值的終端值（預設值：0.1） |
+| `latent` | LATENT | 否 | - | 可選的潛在空間輸入，用於計算 sigma 調整所需的 token 數量 |
 
-**注意：** `latent` 參數為可選項。當未提供時，節點將使用預設的 4096 個 token 數量進行計算。
+**注意：** `latent` 參數為可選項。若未提供，節點將使用預設的 token 數量 4096 進行計算。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `sigmas` | SIGMAS | 為採樣過程生成的 sigma 值 |
+| `sigmas` | SIGMAS | 為取樣過程生成的 sigma 值 |
+
+---
+**Source fingerprint (SHA-256):** `3c7e8721fd75bfb0a253c38cd29e2ee1905bfe08193aa97dbaa959550aba34bc`

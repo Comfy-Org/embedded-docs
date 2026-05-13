@@ -13,3 +13,6 @@ The Recraft Creative Upscale Image node enhances a raster image by increasing it
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The resulting upscaled image with enhanced details. |
+
+---
+**Source fingerprint (SHA-256):** `b638dd926e144c47ad2c2968cf49f3d322cbdddfcb8b2e86edb3ae9558a1ded6`

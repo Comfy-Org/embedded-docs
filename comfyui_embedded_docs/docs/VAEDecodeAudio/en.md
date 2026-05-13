@@ -14,3 +14,6 @@ The VAEDecodeAudio node converts latent representations back into audio waveform
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `AUDIO` | AUDIO | The decoded audio waveform with normalized volume and 44100 Hz sample rate |
+
+---
+**Source fingerprint (SHA-256):** `15848d3763324cbae986949146d57352c68369713cd99a27d216797560836824`

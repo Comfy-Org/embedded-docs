@@ -20,3 +20,6 @@ The Painter node provides an interactive canvas for creating or editing images a
 |-------------|-----------|-------------|
 | `IMAGE` | IMAGE | The final composited image. This is the result of blending the painted areas (from the `mask`) over the provided base `image` or the colored background. |
 | `MASK` | MASK | The alpha channel (transparency) mask extracted from the painting. White areas represent the painted regions, and black areas represent the untouched background. |
+
+---
+**Source fingerprint (SHA-256):** `ae926b6d30aab65737bd99a58cb7de5a71fa36e61a677dbc97fc30b8ef8d2418`

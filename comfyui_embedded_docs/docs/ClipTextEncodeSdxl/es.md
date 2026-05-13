@@ -1,21 +1,23 @@
-Ce nœud est conçu pour encoder le texte d'entrée en utilisant un modèle CLIP spécialement adapté pour l'architecture SDXL. Il utilise un système de double encodeur (CLIP-L et CLIP-G) pour traiter les descriptions textuelles, permettant une génération d'images plus précise.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXL/es.md)
 
-## Entrées
+Este nodo está diseñado para codificar texto de entrada utilizando un modelo CLIP específicamente personalizado para la arquitectura SDXL. Emplea un sistema de codificación dual (CLIP-L y CLIP-G) para procesar descripciones textuales, lo que resulta en una generación de imágenes más precisa.
 
-| Paramètre | Data Type | Description |
-|-----------|-----------|-------------|
-| `clip` | CLIP | Instance du modèle CLIP utilisée pour l'encodage du texte. |
-| `width` | INT | Spécifie la largeur de l'image en pixels, par défaut 1024. |
-| `height` | INT | Spécifie la hauteur de l'image en pixels, par défaut 1024. |
-| `crop_w` | INT | Largeur de la zone de recadrage en pixels, par défaut 0. |
-| `crop_h` | INT | Hauteur de la zone de recadrage en pixels, par défaut 0. |
-| `target_width` | INT | Largeur cible pour l'image de sortie, par défaut 1024. |
-| `target_height` | INT | Hauteur cible pour l'image de sortie, par défaut 1024. |
-| `text_g` | STRING | Description textuelle globale pour la description générale de la scène. |
-| `text_l` | STRING | Description textuelle locale pour les détails. |
+## Entradas
 
-## Sorties
+| Parámetro | Tipo de Dato | Descripción |
+|-----------|--------------|-------------|
+| `clip` | CLIP | Instancia del modelo CLIP utilizada para la codificación de texto. |
+| `width` | INT | Especifica el ancho de la imagen en píxeles, valor predeterminado 1024. |
+| `height` | INT | Especifica la altura de la imagen en píxeles, valor predeterminado 1024. |
+| `crop_w` | INT | Ancho del área de recorte en píxeles, valor predeterminado 0. |
+| `crop_h` | INT | Altura del área de recorte en píxeles, valor predeterminado 0. |
+| `target_width` | INT | Ancho objetivo para la imagen de salida, valor predeterminado 1024. |
+| `target_height` | INT | Altura objetivo para la imagen de salida, valor predeterminado 1024. |
+| `text_g` | STRING | Descripción textual global para la descripción general de la escena. |
+| `text_l` | STRING | Descripción textual local para la descripción de detalles. |
 
-| Paramètre | Data Type | Description |
-|-----------|-----------|-------------|
-| `ACONDICIONAMIENTO` | CONDITIONING | Contient le texte encodé et les informations conditionnelles nécessaires à la génération d'images. |
+## Salidas
+
+| Parámetro | Tipo de Dato | Descripción |
+|-----------|--------------|-------------|
+| `CONDITIONING` | CONDITIONING | Contiene el texto codificado y la información condicional necesaria para la generación de imágenes. |

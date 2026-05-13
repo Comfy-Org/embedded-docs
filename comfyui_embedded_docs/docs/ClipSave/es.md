@@ -1,31 +1,38 @@
-El nodo `Guardar CLIP` está diseñado para guardar modelos de codificador de texto CLIP en formato SafeTensors. Este nodo forma parte de flujos de trabajo avanzados de fusión de modelos y se utiliza típicamente en conjunto con nodos como `CLIPMergeSimple` y `CLIPMergeAdd`. Los archivos guardados utilizan el formato SafeTensors para garantizar la seguridad y compatibilidad.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/es.md)
+
+El nodo `CLIPSave` guarda un modelo de codificador de texto CLIP en disco en formato SafeTensors. Está diseñado para flujos de trabajo avanzados de fusión de modelos y separa automáticamente el modelo CLIP en sus partes componentes (como CLIP-L, CLIP-G o T5XXL) según la estructura interna del modelo, guardando cada componente como un archivo separado.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Valor Predeterminado | Descripción |
-|-----------|--------------|-----------|---------------------|-------------|
-| clip | CLIP | Sí | - | El modelo CLIP que se va a guardar |
-| prefijo_nombre_archivo | STRING | Sí | "clip/ComfyUI" | La ruta del prefijo para el archivo guardado |
-| prompt | PROMPT | Oculto | - | Información del prompt del flujo de trabajo (para metadatos) |
-| extra_pnginfo | EXTRA_PNGINFO | Oculto | - | Información adicional de PNG (para metadatos) |
+| Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
+|-----------|--------------|-----------------|-------------------|-------|-------------|
+| `clip` | CLIP | Requerido | - | - | El modelo CLIP que se va a guardar. |
+| `filename_prefix` | STRING | Requerido | `clip/ComfyUI` | - | La ruta de prefijo y nombre de archivo para los archivos guardados. El nodo añadirá un sufijo de componente (ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos. |
+| `prompt` | PROMPT | Oculto | - | - | La información del prompt del flujo de trabajo, guardada como metadatos en el archivo de salida. |
+| `extra_pnginfo` | EXTRA_PNGINFO | Oculto | - | - | Metadatos adicionales, guardados como pares clave-valor en el archivo de salida. |
 
 ## Salidas
 
-Este nodo no tiene tipos de salida definidos. Guarda los archivos procesados en la carpeta `ComfyUI/output/`.
+Este nodo no tiene conexiones de salida. Guarda los archivos procesados directamente en el directorio `ComfyUI/output/`.
 
-### Estrategia de Guardado Múltiple
+### Detalles del Archivo Guardado
 
-El nodo guarda diferentes componentes según el tipo de modelo CLIP:
+El nodo analiza el diccionario de estado del modelo CLIP y guarda archivos SafeTensors separados para cada componente detectado. El componente se identifica por el prefijo de sus claves de parámetros. Se verifican los siguientes prefijos:
 
-| Tipo de Prefijo | Sufijo del Archivo | Descripción |
-|-----------------|-------------------|-------------|
-| `clip_l.` | `_clip_l` | Codificador de texto CLIP-L |
-| `clip_g.` | `_clip_g` | Codificador de texto CLIP-G |
-| Prefijo vacío | Sin sufijo | Otros componentes CLIP |
+- `clip_l.` (codificador de texto CLIP-L)
+- `clip_g.` (codificador de texto CLIP-G)
+- `clip_h.` (codificador de texto CLIP-H)
+- `t5xxl.` (codificador de texto T5-XXL)
+- `pile_t5xl.` (codificador de texto Pile-T5-XL)
+- `mt5xl.` (codificador de texto mT5-XL)
+- `umt5xxl.` (codificador de texto UMT5-XXL)
+- `t5base.` (codificador de texto T5-Base)
+- `gemma2_2b.` (codificador de texto Gemma 2 2B)
+- `llama.` (codificador de texto LLaMA)
+- `hydit_clip.` (codificador de texto Hydit CLIP)
+- Prefijo vacío (otros componentes CLIP)
 
-## Notas de Uso
+Para cada componente detectado, el nodo crea un archivo con el nombre `{filename_prefix}_{contador:05}_.safetensors`, donde el prefijo del componente se añade al prefijo del nombre de archivo (ej., `clip/ComfyUI_clip_l_00001_.safetensors`). El prefijo `transformer.` se elimina de las claves de parámetros durante el guardado.
 
-1. **Ubicación de Archivos**: Todos los archivos se guardan en el directorio `ComfyUI/output/`
-2. **Formato de Archivo**: Los modelos se guardan en formato SafeTensors para seguridad
-3. **Metadatos**: Incluye información del flujo de trabajo y metadatos PNG si están disponibles
-4. **Convención de Nombres**: Utiliza el prefijo especificado más los sufijos apropiados según el tipo de modelo
+---
+**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

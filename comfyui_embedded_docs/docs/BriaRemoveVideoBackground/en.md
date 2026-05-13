@@ -17,3 +17,6 @@ This node removes the background from a video using the Bria AI service. It proc
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The processed video file with the background removed and replaced by the selected color. |
+
+---
+**Source fingerprint (SHA-256):** `51499fc006d3fd3fd45f8aad686d92537d399255b3a583fd54b77c5a0698a068`

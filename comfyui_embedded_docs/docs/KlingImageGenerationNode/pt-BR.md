@@ -1,29 +1,36 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImageGenerationNode/pt-BR.md)
 
-O nó Kling Image Generation gera imagens a partir de prompts de texto com a opção de usar uma imagem de referência para orientação. Ele cria uma ou mais imagens com base na sua descrição textual e configurações de referência, retornando as imagens geradas como saída.
+Este documento foi gerado por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImageGenerationNode/en.md)
+
+O Nó de Geração de Imagens Kling gera imagens a partir de prompts de texto, com a opção de usar uma imagem de referência como guia. Ele cria uma ou mais imagens com base na sua descrição textual e nas configurações de referência, retornando as imagens geradas como saída.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Prompt de texto positivo |
 | `negative_prompt` | STRING | Sim | - | Prompt de texto negativo |
-| `image_type` | COMBO | Sim | Opções de KlingImageGenImageReferenceType<br>(extraídas do código-fonte) | Seleção do tipo de referência de imagem |
-| `image_fidelity` | FLOAT | Sim | 0.0 - 1.0 | Intensidade de referência para imagens enviadas pelo usuário (padrão: 0.5) |
-| `human_fidelity` | FLOAT | Sim | 0.0 - 1.0 | Similaridade de referência do assunto (padrão: 0.45) |
-| `model_name` | COMBO | Sim | "kling-v1"<br>(e outras opções de KlingImageGenModelName) | Seleção do modelo para geração de imagem (padrão: "kling-v1") |
-| `aspect_ratio` | COMBO | Sim | "16:9"<br>(e outras opções de KlingImageGenAspectRatio) | Proporção da imagem gerada (padrão: "16:9") |
+| `image_type` | COMBO | Sim | `"subject_reference"`<br>`"style_reference"` | Seleção do tipo de referência de imagem (avançado). Obrigatório quando uma imagem de referência é fornecida. |
+| `image_fidelity` | FLOAT | Sim | 0.0 - 1.0 | Intensidade da referência para imagens enviadas pelo usuário (padrão: 0.5, avançado) |
+| `human_fidelity` | FLOAT | Sim | 0.0 - 1.0 | Similaridade da referência ao sujeito (padrão: 0.45, avançado) |
+| `model_name` | COMBO | Sim | `"kling-v3"`<br>`"kling-v2"`<br>`"kling-v1-5"` | Seleção do modelo para geração de imagens (padrão: "kling-v3") |
+| `aspect_ratio` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Proporção de aspecto para as imagens geradas (padrão: "16:9") |
 | `n` | INT | Sim | 1 - 9 | Número de imagens geradas (padrão: 1) |
 | `image` | IMAGE | Não | - | Imagem de referência opcional |
+| `seed` | INT | Não | 0 - 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 0) |
 
 **Restrições dos Parâmetros:**
 
-- O parâmetro `image` é opcional, mas quando fornecido, o modelo kling-v1 não suporta imagens de referência
-- O prompt e o prompt negativo têm limitações de comprimento máximo (MAX_PROMPT_LENGTH_IMAGE_GEN)
-- Quando nenhuma imagem de referência é fornecida, o parâmetro `image_type` é automaticamente definido como None
+- O parâmetro `image` é opcional. Quando uma imagem de referência é fornecida, o parâmetro `image_type` deve ser definido como `"subject_reference"` ou `"style_reference"`.
+- Quando nenhuma imagem de referência é fornecida, os parâmetros `image_type`, `image_fidelity` e `human_fidelity` não são utilizados.
+- O prompt e o prompt negativo têm um comprimento máximo de `MAX_PROMPT_LENGTH_IMAGE_GEN` caracteres.
+- O parâmetro `seed` é opcional e não garante resultados determinísticos.
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `output` | IMAGE | Imagem(ns) gerada(s) com base nos parâmetros de entrada |
+
+---
+**Source fingerprint (SHA-256):** `f25164f4007b1f62285e76519238b5061b63597e1a06365acf93d4289063bd3a`

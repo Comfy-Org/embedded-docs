@@ -16,3 +16,6 @@ Save SVG files on disk. This node takes SVG data as input and saves it to your o
 | `ui` | DICT | Returns file information including filename, subfolder, and type for display in the ComfyUI interface |
 
 **Note:** This node automatically embeds workflow metadata (prompt and extra PNG information) into the SVG file when available. The metadata is inserted as a CDATA section within the SVG's metadata element.
+
+---
+**Source fingerprint (SHA-256):** `a294103d8d2306ce6765912a98c5572323bb5394909ee384591534b0b404ea70`

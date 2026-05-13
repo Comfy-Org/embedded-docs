@@ -1,25 +1,30 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/fr.md)
 
-Génère des vidéos de manière synchrone en fonction de l'invite, des images d'entrée et de la taille de sortie. Ce nœud crée des vidéos en utilisant l'API Luma en fournissant des invites textuelles et des images de début/fin optionnelles pour définir le contenu et la structure de la vidéo.
+Voici la traduction en français de la documentation du nœud LumaImageToVideoNode :
+
+Génère des vidéos de manière synchrone à partir d'une invite textuelle et d'images de début/fin optionnelles. Ce nœud utilise l'API Luma pour créer des vidéos, vous permettant de définir le contenu de la vidéo via une invite et de spécifier éventuellement la première et/ou la dernière image pour contrôler la structure de la vidéo.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Oui | - | Invite pour la génération de la vidéo (par défaut : "") |
-| `modèle` | COMBO | Oui | Plusieurs options disponibles | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles |
-| `résolution` | COMBO | Oui | Plusieurs options disponibles | Résolution de sortie pour la vidéo générée (par défaut : 540p) |
-| `durée` | COMBO | Oui | Plusieurs options disponibles | Durée de la vidéo générée |
-| `boucle` | BOOLEAN | Oui | - | Détermine si la vidéo générée doit être en boucle (par défaut : False) |
-| `seed` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine. (par défaut : 0) |
-| `première_image` | IMAGE | Non | - | Première image de la vidéo générée. (optionnel) |
-| `dernière_image` | IMAGE | Non | - | Dernière image de la vidéo générée. (optionnel) |
+|-----------|-----------------|--------|-------|-------------|
+| `prompt` | STRING | Oui | - | Invite pour la génération vidéo (par défaut : "") |
+| `model` | COMBO | Oui | Plusieurs options disponibles | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles |
+| `resolution` | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Résolution de sortie pour la vidéo générée (par défaut : "540p"). Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. |
+| `duration` | COMBO | Oui | `"5s"`<br>`"9s"` | Durée de la vidéo générée. Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. |
+| `loop` | BOOLEAN | Oui | - | Indique si la vidéo générée doit boucler (par défaut : False) |
+| `seed` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine. (par défaut : 0) |
+| `first_image` | IMAGE | Non | - | Première image de la vidéo générée. (optionnel) |
+| `last_image` | IMAGE | Non | - | Dernière image de la vidéo générée. (optionnel) |
 | `luma_concepts` | CUSTOM | Non | - | Concepts de caméra optionnels pour dicter le mouvement de la caméra via le nœud Luma Concepts. (optionnel) |
 
-**Note :** Au moins l'un des paramètres `first_image` ou `last_image` doit être fourni. Le nœud générera une exception si les deux sont manquants.
+**Remarque :** Au moins l'une des images `first_image` ou `last_image` doit être fournie. Le nœud lèvera une exception si les deux sont absentes. Les paramètres `resolution` et `duration` sont ignorés lorsque le `model` est défini sur `ray-1-6`.
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
+|---------------|-----------------|-------------|
 | `output` | VIDEO | Le fichier vidéo généré |
+
+---
+**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`

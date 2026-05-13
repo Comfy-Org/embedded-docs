@@ -38,7 +38,7 @@ Bu düğüm, AR (Otoregresif) video modelleri için bir görüntüden videoya ol
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Oluşturma için kullanılacak AR video modeli. |
 | `vae` | VAE | Evet | - | Başlangıç görüntüsünü gizli uzaya kodlamak için kullanılan VAE modeli. |
-| `start_image` | IMAGE | Evet | - | Oluşturulan videonun ilk karesi olarak işlev görecek başlangıç görüntüsü. |
+| `start_image` | IMAGE | Evet | - | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. |
 | `width` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin genişliği (varsayılan: 832). |
 | `height` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). |
 | `length` | INT | Evet | 1 ila 1024 (adım: 4) | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). |
@@ -50,3 +50,6 @@ Bu düğüm, AR (Otoregresif) video modelleri için bir görüntüden videoya ol
 |-------------|-----------|-------------|
 | `MODEL` | MODEL | Video oluşturma için yapılandırmasında kodlanmış başlangıç görüntüsü bulunan klonlanmış model. |
 | `LATENT` | LATENT | Video oluşturma süreci için doğru boyutlara sahip boş bir gizli tensör. |
+
+---
+**Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`

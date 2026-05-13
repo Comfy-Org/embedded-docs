@@ -1,13 +1,15 @@
-このノードは、`ComfyUI/models/clip_vision` フォルダーにあるモデルを自動的に検出し、`extra_model_paths.yaml` ファイルで設定された追加パスからのモデルも読み取ります。ComfyUIの起動後にモデルを追加した場合は、**ComfyUIのインターフェースを更新**して、最新のモデルファイルリストを取得してください。
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/ja.md)
+
+このノードは、`ComfyUI/models/clip_vision` フォルダ内に配置されたモデルと、`extra_model_paths.yaml` ファイルで設定された追加のモデルパスを自動的に検出します。ComfyUI 起動後にモデルを追加した場合は、**ComfyUI インターフェースを更新**して、最新のモデルファイルが一覧表示されるようにしてください。
 
 ## 入力
 
-| フィールド       | Data Type      | 説明 |
-|------------------|---------------|------|
-| クリップ名       | COMBO[STRING]  | `ComfyUI/models/clip_vision` フォルダー内のすべての対応モデルファイルを一覧表示します。 |
+| フィールド      | データ型        | 説明 |
+|-------------|---------------|-------------|
+| `clip_name` | COMBO[STRING]  | `ComfyUI/models/clip_vision` フォルダ内のサポートされているすべてのモデルファイルを一覧表示します。 |
 
 ## 出力
 
-| フィールド      | Data Type    | 説明 |
-|-----------------|--------------|------|
-| clip_vision     | CLIP_VISION  | 画像のエンコードや他のビジョン関連タスクに使用できる、ロードされたCLIP Visionモデル。 |
+| フィールド       | データ型        | 説明 |
+|--------------|--------------|-------------|
+| `clip_vision` | CLIP_VISION  | 読み込まれた CLIP Vision モデルです。画像のエンコードやその他のビジョン関連タスクに使用できます。 |

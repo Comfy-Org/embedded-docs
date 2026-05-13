@@ -1,17 +1,20 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringContains/es.md)
 
-El nodo StringContains verifica si una cadena dada contiene una subcadena específica. Puede realizar esta verificación con coincidencias que distinguen entre mayúsculas y minúsculas o que no distinguen, devolviendo un resultado booleano que indica si se encontró la subcadena dentro de la cadena principal.
+El nodo StringContains verifica si una cadena de texto determinada contiene una subcadena especificada. Puede realizar esta verificación con coincidencia sensible a mayúsculas/minúsculas o insensible, devolviendo un resultado booleano que indica si la subcadena fue encontrada dentro de la cadena principal.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto principal en la que se va a buscar |
-| `substring` | STRING | Sí | - | El texto que se va a buscar dentro de la cadena principal |
-| `case_sensitive` | BOOLEAN | No | - | Determina si la búsqueda debe distinguir entre mayúsculas y minúsculas (valor por defecto: true) |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `string` | STRING | Sí | - | La cadena de texto principal en la que buscar |
+| `substring` | STRING | Sí | - | El texto a buscar dentro de la cadena principal |
+| `case_sensitive` | BOOLEAN | No | - | Determina si la búsqueda debe ser sensible a mayúsculas/minúsculas (valor predeterminado: true) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `contains` | BOOLEAN | Devuelve true si se encuentra la subcadena en la cadena, false en caso contrario |
+|------------------|--------------|-------------|
+| `contains` | BOOLEAN | Devuelve true si la subcadena se encuentra en la cadena, false en caso contrario |
+
+---
+**Source fingerprint (SHA-256):** `ef7329ca8586e0f894306d93835490edb948a346db1e0cb011e4da5a6fe44202`

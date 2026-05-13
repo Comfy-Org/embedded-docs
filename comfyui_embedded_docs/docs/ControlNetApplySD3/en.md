@@ -23,3 +23,6 @@ This node applies ControlNet guidance to Stable Diffusion 3 conditioning. It tak
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | The modified positive conditioning with ControlNet guidance applied |
 | `negative` | CONDITIONING | The modified negative conditioning with ControlNet guidance applied |
+
+---
+**Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

@@ -19,3 +19,6 @@ Holds one or more Camera Concepts for use with Luma Text to Video and Luma Image
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `luma_concepts` | LUMA_CONCEPTS | Combined camera concept chain containing all selected concepts |
+
+---
+**Source fingerprint (SHA-256):** `d0e334104884eadab86987f188dff079e11ee4a3de05d2537d88fa9d2a30534a`

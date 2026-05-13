@@ -4,13 +4,16 @@ El nodo ModelSamplingSD3 aplica parámetros de muestreo de Stable Diffusion 3 a 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo de entrada al que aplicar los parámetros de muestreo SD3 |
-| `desplazamiento` | FLOAT | Sí | 0.0 - 100.0 | Controla el parámetro de desplazamiento del muestreo (valor por defecto: 3.0) |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `model` | MODEL | Sí | - | El modelo de entrada al que se aplicarán los parámetros de muestreo SD3 |
+| `shift` | FLOAT | Sí | 0.0 - 100.0 | Controla el parámetro de desplazamiento del muestreo (valor predeterminado: 3.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `modelo` | MODEL | El modelo modificado con los parámetros de muestreo SD3 aplicados |
+|------------------|--------------|-------------|
+| `model` | MODEL | El modelo modificado con los parámetros de muestreo SD3 aplicados |
+
+---
+**Source fingerprint (SHA-256):** `aa2172d578badffb0a728308b0d3aae4d048db074336963965264d5e512a0d93`

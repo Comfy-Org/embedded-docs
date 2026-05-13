@@ -18,3 +18,6 @@ This node processes an audio input to extract features that can be used to guide
 |-------------|-----------|-------------|
 | `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | A dictionary containing the processed audio features, the calculated frame rate (fps), and the audio injection scale. This output is used to condition the video generation model. |
 | `fps_string` | STRING | A text string describing the calculated frame rate (fps) based on the audio length and the number of video frames. This string is intended to be used in the prompt for the video model. |
+
+---
+**Source fingerprint (SHA-256):** `ef230c92b23a04369708041b2e5d03c1b2928edf746dc43020bae777f9f0b589`

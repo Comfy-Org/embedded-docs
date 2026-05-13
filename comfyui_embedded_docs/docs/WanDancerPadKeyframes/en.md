@@ -20,3 +20,6 @@ This node prepares a sequence of keyframes for a specific segment of a longer vi
 | `keyframes_sequence` | IMAGE | Padded keyframe sequence for the specified segment. |
 | `keyframes_mask` | MASK | Mask indicating valid frames (1 for keyframe positions, 0 for padded positions). |
 | `audio_segment` | AUDIO | Audio segment for this video segment. |
+
+---
+**Source fingerprint (SHA-256):** `5a104b45faaa870727d4c45e6327e7233110b40dc5a13515a29e5f14de2050e0`

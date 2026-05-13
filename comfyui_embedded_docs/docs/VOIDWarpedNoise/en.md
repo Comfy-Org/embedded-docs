@@ -22,3 +22,6 @@ Generates temporally-correlated noise for the second pass of the VOID video refi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `warped_noise` | LATENT | A 5D tensor (B, C, T, H, W) containing optical-flow warped Gaussian noise, ready for use as the initial latent in VOID Pass 2. |
+
+---
+**Source fingerprint (SHA-256):** `a0f986e54bcc6c455220f89f5d840585a9eae081e522ea11e0ce37ab46821bd9`

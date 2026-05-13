@@ -6,14 +6,14 @@ The Vidu Reference Video Node generates videos from multiple reference images an
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Yes | `"vidu_q1"` | Model name for video generation (default: "vidu_q1") |
+| `model` | COMBO | Yes | `"viduq1"` | Model name for video generation (default: "viduq1") |
 | `images` | IMAGE | Yes | - | Images to use as references to generate a video with consistent subjects (maximum 7 images) |
 | `prompt` | STRING | Yes | - | A textual description for video generation |
 | `duration` | INT | No | 5-5 | Duration of the output video in seconds (default: 5) |
 | `seed` | INT | No | 0-2147483647 | Seed for video generation (0 for random) (default: 0) |
-| `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | The aspect ratio of the output video (default: "16:9") |
-| `resolution` | COMBO | No | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"1440p"`<br>`"2160p"` | Supported values may vary by model & duration (default: "1080p") |
-| `movement_amplitude` | COMBO | No | `"auto"`<br>`"low"`<br>`"medium"`<br>`"high"` | The movement amplitude of objects in the frame (default: "auto") |
+| `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"1:1"` | The aspect ratio of the output video (default: "16:9") |
+| `resolution` | COMBO | No | `"1080p"` | Supported values may vary by model & duration (default: "1080p") |
+| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | The movement amplitude of objects in the frame (default: "auto") |
 
 **Constraints and Limitations:**
 
@@ -28,3 +28,6 @@ The Vidu Reference Video Node generates videos from multiple reference images an
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video based on the reference images and prompt |
+
+---
+**Source fingerprint (SHA-256):** `11a7de2f50658467f63d284ef6b95d91dcdd39b4e6e5cea3b8d2f2a5d63a3020`

@@ -8,16 +8,21 @@ Reve Image Edit düğümü, mevcut bir görseli metin açıklamasına göre değ
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Evet | - | Düzenlenecek görsel. |
 | `edit_instruction` | STRING | Evet | - | Görselin nasıl düzenleneceğine dair metin açıklaması. Maksimum 2560 karakter. |
-| `model` | MODEL | Evet | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"`<br>`"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Düzenleme için kullanılacak model sürümü. Seçenekler arasında belirli model sürümleri ve en-boy oranı ayarları bulunur. |
+| `model` | MODEL | Evet | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` | Düzenleme için kullanılacak model sürümü. |
+| `model.aspect_ratio` | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Düzenlenmiş görsel için en-boy oranı. "auto" olarak ayarlandığında en-boy oranı otomatik olarak belirlenir. |
+| `model.test_time_scaling` | FLOAT | Hayır | - | Model için test zamanı ölçekleme faktörü. Daha yüksek değerler kaliteyi artırabilir ancak işlem süresini uzatır. |
 | `upscale` | COMBO | Hayır | `"disabled"`<br>`"enabled"` | Oluşturulan görselin yükseltilip yükseltilmeyeceğini kontrol eder. |
-| `upscale_factor` | FLOAT | Hayır | - | Yükseltme etkinleştirildiğinde görselin yükseltme faktörü. |
+| `upscale.upscale_factor` | FLOAT | Hayır | - | Yükseltme etkinleştirildiğinde görselin yükseltme faktörü. |
 | `remove_background` | BOOLEAN | Hayır | - | Oluşturulan görselden arka planın kaldırılıp kaldırılmayacağını kontrol eder. |
 | `seed` | INT | Hayır | 0 ile 2147483647 arası | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) |
 
-**Not:** `upscale_factor` parametresi yalnızca `upscale` parametresi `"enabled"` olarak ayarlandığında geçerlidir.
+**Not:** `upscale.upscale_factor` parametresi yalnızca `upscale` parametresi `"enabled"` olarak ayarlandığında geçerlidir.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|-------------|
+|-------------|-----------|-------------|
 | `image` | IMAGE | Talimata göre oluşturulan düzenlenmiş görsel. |
+
+---
+**Source fingerprint (SHA-256):** `0a9504ae5e8b7216d309fe3ba95c014da32eadbf11cfc5701247ba5973dd98be`

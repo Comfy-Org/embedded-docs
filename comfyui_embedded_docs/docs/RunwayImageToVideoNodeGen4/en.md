@@ -8,8 +8,8 @@ The Runway Image to Video (Gen4 Turbo) node generates a video from a single star
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | - | Text prompt for the generation (default: empty string) |
 | `start_frame` | IMAGE | Yes | - | Start frame to be used for the video |
-| `duration` | COMBO | Yes | Multiple options available | Video duration selection from available duration options |
-| `ratio` | COMBO | Yes | Multiple options available | Aspect ratio selection from available Gen4 Turbo aspect ratio options |
+| `duration` | COMBO | Yes | `"5"`<br>`"10"` | Video duration in seconds (default: "5") |
+| `ratio` | COMBO | Yes | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Aspect ratio for the generated video (default: "1024:1024") |
 | `seed` | INT | No | 0 to 4294967295 | Random seed for generation (default: 0) |
 
 **Parameter Constraints:**
@@ -23,3 +23,6 @@ The Runway Image to Video (Gen4 Turbo) node generates a video from a single star
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video based on the input frame and prompt |
+
+---
+**Source fingerprint (SHA-256):** `ebb5f1cd5e6bf6e0fcfb4910c774c087980daf9a1987900ad966120608b924e7`

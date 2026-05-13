@@ -1,15 +1,15 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSamplerSelect/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSamplerSelect/tr.md)
 
-KSamplerSelect düğümü, belirtilen örnekleyici adına dayalı olarak belirli bir örnekleyiciyi seçmek için tasarlanmıştır. Örnekleyici seçiminin karmaşıklığını soyutlayarak, kullanıcıların görevleri için farklı örnekleme stratejileri arasında kolayca geçiş yapmasına olanak tanır.
+KSamplerSelect düğümü, sağlanan örnekleyici adına göre belirli bir örnekleyici seçmek için tasarlanmıştır. Örnekleyici seçiminin karmaşıklığını soyutlayarak kullanıcıların görevleri için farklı örnekleme stratejileri arasında kolayca geçiş yapmasına olanak tanır.
 
-## Girdiler
+## Girişler
 
-| Parametre         | Veri Tipi      | Açıklama                                                                                      |
-|-------------------|----------------|------------------------------------------------------------------------------------------------|
-| `örnekleyici_adı`    | COMBO[STRING] | Seçilecek örnekleyicinin adını belirtir. Bu parametre, genel örnekleme davranışını ve sonuçlarını etkileyen hangi örnekleme stratejisinin kullanılacağını belirler. |
+| Parametre         | Veri Türü | Açıklama                                                                                      |
+|-------------------|-------------|------------------------------------------------------------------------------------------------|
+| `sampler_name`    | COMBO[STRING] | Seçilecek örnekleyicinin adını belirtir. Bu parametre hangi örnekleme stratejisinin kullanılacağını belirleyerek genel örnekleme davranışını ve sonuçlarını etkiler. |
 
-## Çıktılar
+## Çıkışlar
 
-| Parametre   | Veri Tipi   | Açıklama                                                                 |
+| Parametre   | Veri Türü | Açıklama                                                                 |
 |-------------|-------------|-----------------------------------------------------------------------------|
-| `sampler`   | `SAMPLER`   | Seçilen örnekleyici nesnesini döndürür, örnekleme görevlerinde kullanılmaya hazırdır. |
+| `sampler`   | `SAMPLER`   | Örnekleme görevlerinde kullanılmaya hazır, seçilen örnekleyici nesnesini döndürür. |

@@ -1,17 +1,22 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleToMaxDimension/ja.md)
 
-ImageScaleToMaxDimensionノードは、元のアスペクト比を維持しながら、指定された最大寸法内に収まるように画像のサイズを変更します。画像が縦向きか横向きかを判断し、大きな方の寸法をターゲットサイズに合わせてスケーリングし、小さな方の寸法は比例して調整します。このノードは、さまざまな品質とパフォーマンスの要件に対応するために、複数のアップスケーリング方法をサポートしています。
+このドキュメントはAI生成です。誤りや改善の提案がございましたら、ぜひご協力ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleToMaxDimension/en.md)
+
+ImageScaleToMaxDimensionノードは、画像を指定された最大寸法に収まるようにリサイズし、元のアスペクト比を維持します。画像が縦向きか横向きかを判定し、大きい方の寸法をターゲットサイズに合わせて拡大・縮小し、小さい方の寸法も比例して調整します。このノードは、品質とパフォーマンスの要件に応じて複数のアップスケーリング方法をサポートしています。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | はい | - | スケーリングする入力画像 |
-| `upscale_method` | STRING | はい | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bicubic" | 画像のスケーリングに使用する補間方法 |
-| `largest_size` | INT | はい | 0 ～ 16384 | スケーリング後の画像の最大寸法（デフォルト: 512） |
+| `upscale_method` | STRING | はい | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | 画像のスケーリングに使用する補間方法（デフォルト："area"） |
+| `largest_size` | INT | はい | 0～16384 | スケーリング後の画像の最大寸法（デフォルト：512） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `image` | IMAGE | 最大寸法が指定されたサイズに一致するようにスケーリングされた画像 |
+
+---
+**Source fingerprint (SHA-256):** `be113c1a98ab9d884b2c728b790c41fb236857d59af567e43e2be0ef0362cc5e`

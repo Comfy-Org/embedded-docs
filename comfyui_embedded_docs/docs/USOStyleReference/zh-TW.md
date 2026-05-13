@@ -1,17 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/zh-TW.md)
 
-此節點使用來自 CLIP 視覺輸出的編碼圖像特徵，將風格參考修補程式應用至模型。它透過整合從視覺輸入中提取的風格資訊，創建輸入模型的修改版本，從而實現風格轉換或基於參考的生成功能。
+USOStyleReference 節點使用從 CLIP 視覺輸出編碼的圖像特徵，將樣式參考修補程式套用至模型。它透過納入從視覺輸入中提取的樣式資訊，建立輸入模型的修改版本，從而實現樣式轉換或基於參考的生成能力。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 要應用風格參考修補程式的基礎模型 |
-| `model_patch` | MODEL_PATCH | 是 | - | 包含風格參考資訊的模型修補程式 |
+| `model` | MODEL | 是 | - | 要套用樣式參考修補程式的基本模型 |
+| `model_patch` | MODEL_PATCH | 是 | - | 包含樣式參考資訊的模型修補程式 |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | 是 | - | 從 CLIP 視覺處理中提取的編碼視覺特徵 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已應用風格參考修補程式的修改後模型 |
+| `model` | MODEL | 已套用樣式參考修補程式的修改模型 |
+
+---
+**Source fingerprint (SHA-256):** `fd800fb927677da29e148bfa1b287efed82895860ce4b0241d662579d2c07ff4`

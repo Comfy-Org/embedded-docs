@@ -1,19 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/tr.md)
 
-PairConditioningCombine düğümü, iki koşullandırma verisi çiftini (pozitif ve negatif) tek bir çift halinde birleştirir. İki ayrı koşullandırma çiftini girdi olarak alır ve ComfyUI'nin dahili koşullandırma birleştirme mantığını kullanarak bunları birleştirir. Bu düğüm deneyseldir ve öncelikle gelişmiş koşullandırma manipülasyonu iş akışlarında kullanılır.
+PairConditioningCombine düğümü, iki ayrı koşullandırma çiftini (her biri bir pozitif ve bir negatif koşullandırmadan oluşur) tek bir birleşik çift halinde birleştirir. İki farklı kaynaktan gelen pozitif ve negatif koşullandırmaları alır ve ComfyUI'nin dahili mantığını kullanarak birleştirir; çıktı olarak tek bir nihai pozitif ve tek bir nihai negatif koşullandırma üretir. Bu düğüm deneyseldir ve ileri düzey koşullandırma manipülasyonu iş akışları için tasarlanmıştır.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `pozitif_A` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girdisi |
-| `negatif_A` | CONDITIONING | Evet | - | İlk negatif koşullandırma girdisi |
-| `pozitif_B` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girdisi |
-| `negatif_B` | CONDITIONING | Evet | - | İkinci negatif koşullandırma girdisi |
+| `positive_A` | CONDITIONING | Evet | - | Birinci pozitif koşullandırma girişi |
+| `negative_A` | CONDITIONING | Evet | - | Birinci negatif koşullandırma girişi |
+| `positive_B` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girişi |
+| `negative_B` | CONDITIONING | Evet | - | İkinci negatif koşullandırma girişi |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `negatif` | CONDITIONING | Birleştirilmiş pozitif koşullandırma çıktısı |
+|-----------|-----------|----------|
+| `positive` | CONDITIONING | Birleştirilmiş pozitif koşullandırma çıktısı |
 | `negative` | CONDITIONING | Birleştirilmiş negatif koşullandırma çıktısı |
+
+---
+**Source fingerprint (SHA-256):** `34c14207930ba31fea054b2e641e9666e738ed786aa117449c4a27667bde41b1`

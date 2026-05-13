@@ -15,3 +15,6 @@ The LatentOperationSharpen node applies a sharpening effect to latent representa
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `operation` | LATENT_OPERATION | Returns a sharpening operation that can be applied to latent data |
+
+---
+**Source fingerprint (SHA-256):** `542754746ab462eb27229ab9b949bb66054ab4c87c77cc59d405b35a2cc27bce`

@@ -1,27 +1,32 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxvApiImageToVideo/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxvApiImageToVideo/zh-TW.md)
 
-LTXV 圖片轉影片節點能從單張起始圖片生成專業品質的影片。它使用外部 API，根據您的文字提示建立影片序列，並允許您自訂影片的持續時間、解析度和幀率。
+# LTXV 圖片轉影片節點
 
-## 輸入參數
+LTXV 圖片轉影片節點可從單張起始圖片生成專業品質的影片。它使用外部 API 根據您的文字提示建立影片序列，讓您能夠自訂影片長度、解析度和影格率。
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 用於影片的第一幀圖片。 |
-| `model` | COMBO | 是 | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` | 用於影片生成的 AI 模型。"Fast" 模型針對速度進行了優化，而 "Quality" 模型則優先考慮視覺保真度。 |
+| `image` | IMAGE | 是 | - | 用作影片的第一個影格。 |
+| `model` | COMBO | 是 | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` | 用於影片生成的 AI 模型。「Fast」模型針對速度進行最佳化，而「Quality」模型則優先考慮視覺保真度。 |
 | `prompt` | STRING | 是 | - | 引導生成影片內容和動態的文字描述。 |
-| `duration` | COMBO | 是 | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | 影片的長度，單位為秒（預設值：8）。 |
+| `duration` | COMBO | 是 | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | 影片的長度（秒），預設值：8。 |
 | `resolution` | COMBO | 是 | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | 生成影片的輸出解析度。 |
-| `fps` | COMBO | 是 | `25`<br>`50` | 影片的每秒幀數（預設值：25）。 |
-| `generate_audio` | BOOLEAN | 否 | - | 設為 true 時，生成的影片將包含與場景匹配的 AI 生成音訊（預設值：False）。 |
+| `fps` | COMBO | 是 | `25`<br>`50` | 影片的影格率（每秒影格數），預設值：25。 |
+| `generate_audio` | BOOLEAN | 否 | - | 啟用時，生成的影片將包含與場景匹配的 AI 生成音訊（預設值：False）。 |
 
 **重要限制：**
 
 * `image` 輸入必須恰好包含一張圖片。
 * `prompt` 的長度必須在 1 到 10,000 個字元之間。
-* 如果您選擇的 `duration` 超過 10 秒，則必須使用 **"LTX-2 (Fast)"** 模型、**"1920x1080"** 解析度和 **25** FPS。此組合是生成較長影片的必要條件。
+* 如果您選擇的 `duration` 超過 10 秒，則必須使用 **"LTX-2 (Fast)"** 模型、**"1920x1080"** 解析度和 **25** FPS。較長的影片需要此組合。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `video` | VIDEO | 生成的影片檔案。 |
+
+---
+**Source fingerprint (SHA-256):** `af891b45997173c3210d3de4f7b6bd05b14e9d3bf8a94dcb2c1ce08038b7d99d`

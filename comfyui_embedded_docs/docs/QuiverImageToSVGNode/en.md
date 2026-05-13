@@ -16,3 +16,6 @@ This node converts a raster image into a scalable vector graphic (SVG) using Qui
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `SVG` | SVG | The vectorized SVG output. |
+
+---
+**Source fingerprint (SHA-256):** `4539277fd6c23aef149c44eeafca4d373cad658d85872de0883245eb4f2479e8`

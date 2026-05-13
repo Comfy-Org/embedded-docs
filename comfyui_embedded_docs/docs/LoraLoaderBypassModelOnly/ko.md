@@ -1,17 +1,22 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderBypassModelOnly/ko.md)
 
-이 노드는 LoRA(Low-Rank Adaptation)를 모델에 적용하여 동작을 수정하지만, 모델 구성 요소 자체에만 영향을 미칩니다. 지정된 LoRA 파일을 로드하고 주어진 강도로 모델 가중치를 조정하며, CLIP 텍스트 인코더와 같은 다른 구성 요소는 변경하지 않습니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderBypassModelOnly/en.md)
+
+이 노드는 LoRA(저차원 적응)를 모델에 적용하여 동작을 수정하지만, 모델 구성 요소 자체에만 영향을 미칩니다. 지정된 LoRA 파일을 로드하고 주어진 강도로 모델의 가중치를 조정하며, CLIP 텍스트 인코더와 같은 다른 구성 요소는 변경하지 않습니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | 예 | - | LoRA 조정이 적용될 기본 모델입니다. |
-| `lora_name` | STRING | 예 | (사용 가능한 LoRA 파일 목록) | 로드하여 적용할 LoRA 파일의 이름입니다. 옵션은 `loras` 디렉토리의 파일들로부터 채워집니다. |
-| `strength_model` | FLOAT | 예 | -100.0 ~ 100.0 | 모델 가중치에 대한 LoRA 효과의 강도입니다. 양수 값은 LoRA를 적용하고, 음수 값은 역방향으로 적용하며, 0 값은 효과가 없습니다 (기본값: 1.0). |
+| `lora_name` | STRING | 예 | (사용 가능한 LoRA 파일 목록) | 로드하여 적용할 LoRA 파일의 이름입니다. 옵션은 `loras` 디렉토리의 파일로 채워집니다. |
+| `strength_model` | FLOAT | 예 | -100.0 ~ 100.0 | 모델 가중치에 대한 LoRA 효과의 강도입니다. 양수 값은 LoRA를 적용하고, 음수 값은 역방향을 적용하며, 0 값은 효과가 없습니다(기본값: 1.0). |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model` | MODEL | LoRA 조정이 가중치에 적용된 수정된 모델입니다. |
+| `model` | MODEL | 가중치에 LoRA 조정이 적용된 수정된 모델입니다. |
+
+---
+**Source fingerprint (SHA-256):** `e0e1ad2d6481a1b9771d7eae833ffab0737a967d4af6e57b946d1b2223fe45bf`

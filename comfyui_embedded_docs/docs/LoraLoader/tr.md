@@ -1,27 +1,27 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/tr.md)
 
-Bu düğüm, LoRA klasöründeki (alt klasörler dahil) modelleri otomatik olarak algılar. İlgili model yolu `ComfyUI\models\loras` şeklindedir. Daha fazla bilgi için LoRA Modellerini Yükleme bölümüne bakınız.
+Bu düğüm, LoRA klasöründe (alt klasörler dahil) bulunan modelleri, ilgili model yolu `ComfyUI\models\loras` olacak şekilde otomatik olarak algılar. Daha fazla bilgi için lütfen LoRA Modellerini Yükleme bölümüne bakın.
 
-LoRA Yükleyici düğümü, temel olarak LoRA modellerini yüklemek için kullanılır. LoRA modellerini, görüntülerinize belirli stiller, içerikler ve detaylar katabilen filtreler olarak düşünebilirsiniz:
+LoRA Yükleyici düğümü, öncelikle LoRA modellerini yüklemek için kullanılır. LoRA modellerini, görsellerinize belirli stiller, içerikler ve detaylar kazandırabilen filtreler olarak düşünebilirsiniz:
 
-- Belirli sanatsal stiller uygulama (mürekkep boyama gibi)
-- Belirli karakterlerin özelliklerini ekleme (oyun karakterleri gibi)
-- Görüntüye spesifik detaylar ekleme
-Bunların tümü LoRA aracılığıyla gerçekleştirilebilir.
+- Belirli sanatsal stiller uygulayın (mürekkep boyama gibi)
+- Belirli karakterlerin özelliklerini ekleyin (oyun karakterleri gibi)
+- Görsele belirli detaylar ekleyin
+Tüm bunlar LoRA aracılığıyla elde edilebilir.
 
-Birden fazla LoRA modeli yüklemeniz gerekiyorsa, aşağıda gösterildiği gibi doğrudan birden fazla düğümü birbirine zincirleyebilirsiniz:
+Birden fazla LoRA modeli yüklemeniz gerekiyorsa, aşağıda gösterildiği gibi birden fazla düğümü doğrudan birbirine bağlayabilirsiniz:
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 | --- | --- | --- |
-| `model` | MODEL | Genellikle temel modeli bağlamak için kullanılır |
-| `clip` | CLIP | Genellikle CLIP modelini bağlamak için kullanılır |
-| `lora_adı` | COMBO[STRING] | Kullanılacak LoRA modelinin adını seçin |
-| `model_gücü` | FLOAT | -100.0 ile 100.0 arasında değer aralığı, günlük görüntü oluşturma için genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama etkilerini daha belirgin hale getirir |
-| `clip_gücü` | FLOAT | -100.0 ile 100.0 arasında değer aralığı, günlük görüntü oluşturma için genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama etkilerini daha belirgin hale getirir |
+| `model` | MODEL | Genellikle temel modele bağlanmak için kullanılır |
+| `clip` | CLIP | Genellikle CLIP modeline bağlanmak için kullanılır |
+| `lora_name` | COMBO[STRING] | Kullanılacak LoRA modelinin adını seçin |
+| `strength_model` | FLOAT | Değer aralığı -100,0 ile 100,0 arasındadır, günlük görsel üretiminde genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama efektlerinin daha belirgin olmasını sağlar |
+| `strength_clip` | FLOAT | Değer aralığı -100,0 ile 100,0 arasındadır, günlük görsel üretiminde genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama efektlerinin daha belirgin olmasını sağlar |
 
-## Çıktılar
+## Çıkışlar
 
 | Parametre | Veri Türü | Açıklama |
 | --- | --- | --- |

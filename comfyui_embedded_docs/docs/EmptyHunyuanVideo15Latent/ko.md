@@ -1,20 +1,25 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyHunyuanVideo15Latent/ko.md)
 
-이 노드는 HunyuanVideo 1.5 모델 사용을 위해 특별히 포맷된 빈 잠재 텐서를 생성합니다. 모델의 잠재 공간에 맞는 올바른 채널 수와 공간 차원을 가진 0으로 구성된 텐서를 할당하여 비디오 생성을 위한 빈 시작점을 만들어냅니다.
+이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyHunyuanVideo15Latent/en.md)
+
+이 노드는 HunyuanVideo 1.5 모델에 특화된 형식의 빈 잠재 텐서를 생성합니다. 모델의 잠재 공간에 적합한 채널 수와 공간 차원을 가진 0으로 채워진 텐서를 할당하여 비디오 생성을 위한 빈 시작점을 만듭니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | 예 | - | 비디오 프레임의 너비(픽셀 단위). |
-| `height` | INT | 예 | - | 비디오 프레임의 높이(픽셀 단위). |
-| `length` | INT | 예 | - | 비디오 시퀀스의 프레임 수. |
-| `batch_size` | INT | 아니요 | - | 배치에서 생성할 비디오 샘플의 수 (기본값: 1). |
+| `width` | INT | 예 | - | 비디오 프레임의 가로 너비(픽셀 단위)입니다. |
+| `height` | INT | 예 | - | 비디오 프레임의 세로 높이(픽셀 단위)입니다. |
+| `length` | INT | 예 | - | 비디오 시퀀스의 프레임 수입니다. |
+| `batch_size` | INT | 아니요 | - | 한 번에 생성할 비디오 샘플 수입니다(기본값: 1). |
 
-**참고:** 생성된 잠재 텐서의 공간 차원은 입력된 `width`와 `height`를 16으로 나누어 계산됩니다. 시간적 차원(프레임)은 `((length - 1) // 4) + 1`로 계산됩니다.
+**참고:** 생성된 잠재 텐서의 공간 차원은 입력된 `width`와 `height`를 16으로 나누어 계산됩니다. 시간 차원(프레임)은 `((length - 1) // 4) + 1`로 계산됩니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `samples` | LATENT | HunyuanVideo 1.5 모델에 적합한 차원을 가진 빈 잠재 텐서입니다. 텐서의 형태는 `[batch_size, 32, frames, height//16, width//16]`입니다. |
+| `samples` | LATENT | HunyuanVideo 1.5 모델에 적합한 차원을 가진 빈 잠재 텐서입니다. 텐서의 형태는 `[batch_size, 32, frames, height//16, width//16]`입니다. 출력에는 16의 `downscale_ratio_spacial` 값도 포함됩니다. |
+
+---
+**Source fingerprint (SHA-256):** `eebc131adfe63f6bc8367f2a96b3ac7f3f3223c5b1fb308eda3ec09c94fff2ee`

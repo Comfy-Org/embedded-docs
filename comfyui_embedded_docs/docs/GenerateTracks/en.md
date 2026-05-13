@@ -29,3 +29,6 @@ The `GenerateTracks` node creates multiple parallel motion paths for video gener
 |-------------|-----------|-------------|
 | `TRACKS` | TRACKS | A tracks object containing the generated path coordinates and visibility information for all tracks across all frames. |
 | `track_length` | INT | The number of frames for which tracks were generated, matching the input `num_frames`. |
+
+---
+**Source fingerprint (SHA-256):** `3dca1cabaee8738e2a68acafed47ad347019d03c9b7f0d1392b3fdf97d0e8add`

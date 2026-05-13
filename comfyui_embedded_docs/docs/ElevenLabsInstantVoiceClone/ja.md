@@ -1,18 +1,25 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/ja.md)
 
-ElevenLabs Instant Voice Cloneノードは、人物の声の1～8個の音声録音を分析することで、新しい独自の音声モデルを作成します。これらのサンプルをElevenLabs APIに送信し、処理を行うことで、テキスト読み上げ合成に使用できる音声クローンを生成します。
+以下が翻訳結果です。
+
+このドキュメントは AI によって生成されました。誤りを見つけた場合や改善の提案がある場合は、ぜひご協力ください！ [GitHub で編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/en.md)
+
+ElevenLabs Instant Voice Clone ノードは、1 ～ 8 件の音声録音を分析して、新しい独自の音声モデルを作成します。これらのサンプルを ElevenLabs API に送信し、API が処理を行うことで、テキスト読み上げ合成に使用できる音声クローンが生成されます。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
-|-----------|-----------|----------|-------|-------------|
-| `audio_*` | AUDIO | はい | 1～8ファイル | 音声クローニング用の音声録音です。1個から8個の音声ファイルを提供する必要があります。 |
-| `remove_background_noise` | BOOLEAN | いいえ | True / False | 音声分離を使用して音声サンプルから背景ノイズを除去します。（デフォルト: False） |
+|-----------|----------|------|-------|------|
+| `audio_*` | AUDIO | はい | 1 ～ 8 ファイル | 音声クローン作成用の音声録音です。1 ～ 8 個の音声ファイルを提供する必要があります。 |
+| `remove_background_noise` | BOOLEAN | いいえ | True / False | 音声分離を使用して、音声サンプルから背景ノイズを除去します。（デフォルト：False） |
 
-**注意:** 少なくとも1つの音声ファイルを提供する必要があり、最大8個まで提供できます。追加した音声ファイルに対して、ノードは自動的に入力スロットを作成します。
+**注記：** 少なくとも 1 つの音声ファイルを提供する必要があり、最大 8 つまで提供できます。ノードは、追加した音声ファイルに対して自動的に入力スロットを作成します。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
-|-------------|-----------|-------------|
-| `voice` | ELEVENLABS_VOICE | 新しく作成されたクローン音声モデルの一意の識別子です。この出力は他のElevenLabsテキスト読み上げノードに接続できます。 |
+|---------|----------|------|
+| `voice` | ELEVENLABS_VOICE | 新しく作成されたクローン音声モデルの一意の識別子です。この出力は、他の ElevenLabs テキスト読み上げノードに接続できます。 |
+
+---
+**Source fingerprint (SHA-256):** `297598e183df3ccddabc75d6903c5c69f10648adeea430e546f9c5f6df49bdb2`

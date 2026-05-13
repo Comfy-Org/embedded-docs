@@ -18,3 +18,6 @@ The TextEncodeQwenImageEdit node processes text prompts and optional images to g
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | Conditioning data containing text tokens and optional reference latents for image generation |
+
+---
+**Source fingerprint (SHA-256):** `143af2c93aa56ace3594ecb257cac9dbaef2666665f3fb6dfd7a987cd2ea326f`

@@ -1,15 +1,15 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/tr.md)
 
-Düğüm Adı: Reroute Düğümü
-Düğüm Amacı: Esas olarak, ComfyUI iş akışında aşırı uzun bağlantı hatlarının mantığını düzenlemek için kullanılır.
+Node Name: Reroute Node  
+Node Purpose: Temel olarak ComfyUI iş akışında aşırı uzun bağlantı hatlarının mantığını düzenlemek için kullanılır.
 
 ## Reroute Düğümleri Nasıl Kullanılır
 
 | Menü Seçenekleri | Açıklama |
 | --- | --- |
-| Türü Göster | Düğümün tür özelliğini görüntüler |
-| Türü Varsayılan Olarak Gizle | Düğümün tür özelliğini varsayılan olarak gizler |
-| Dikey Ayarla | Düğümün bağlantı yönünü dikey olarak ayarlar |
-| Yatay Ayarla | Düğümün bağlantı yönünü yatay olarak ayarlar |
+| Show Type | Düğümün tür özelliğini görüntüle |
+| Hide Type By Default | Düğümün tür özelliğini varsayılan olarak gizle |
+| Set Vertical | Düğümün kablolama yönünü dikey olarak ayarla |
+| Set Horizontal | Düğümün kablolama yönünü yatay olarak ayarla |
 
-Bağlantı mantığınız çok uzun ve karmaşıksa ve arayüzü düzenlemek istiyorsanız, iki bağlantı noktası arasına bir ```Reroute``` düğümü ekleyebilirsiniz. Bu düğümün giriş ve çıkışı tür kısıtlamasına tabi değildir ve varsayılan stili yataydır. Bağlantı yönünü sağ tıklama menüsü üzerinden dikey olarak değiştirebilirsiniz.
+Kablolama mantığınız çok uzun ve karmaşık olduğunda ve arayüzü düzenlemek istediğinizde, iki bağlantı noktası arasına bir ```Reroute``` düğümü ekleyebilirsiniz. Bu düğümün giriş ve çıkışı tür kısıtlamasına tabi değildir ve varsayılan stili yataydır. Sağ tıklama menüsü aracılığıyla kablolama yönünü dikey olarak değiştirebilirsiniz.

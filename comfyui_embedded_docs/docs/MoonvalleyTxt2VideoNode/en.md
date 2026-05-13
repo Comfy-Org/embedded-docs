@@ -18,3 +18,6 @@ The Moonvalley Marey Text to Video node generates video content from text descri
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The generated video output based on the text prompt |
+
+---
+**Source fingerprint (SHA-256):** `3654043567d7aca3af741d706ee07a8d2e28dbeb4b5b8755514b790aa7c1bd41`

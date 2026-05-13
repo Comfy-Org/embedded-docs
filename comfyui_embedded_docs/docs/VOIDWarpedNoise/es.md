@@ -2,14 +2,14 @@
 
 # Descripción general
 
-Genera ruido correlacionado temporalmente para la segunda pasada del proceso de refinamiento de video VOID. Toma el video de salida de la Pasada 1 y distorsiona el ruido gaussiano a lo largo de los vectores de flujo óptico, creando ruido que se mueve de manera consistente con el contenido del video. Este ruido distorsionado se utiliza como latente inicial para la Pasada 2, lo que mejora la consistencia temporal en la salida final.
+Genera ruido con correlación temporal para la segunda pasada del proceso de refinamiento de video VOID. Toma el video de salida de la Pasada 1 y distorsiona el ruido gaussiano siguiendo los vectores de flujo óptico, creando ruido que se mueve de forma coherente con el contenido del video. Este ruido distorsionado se utiliza como latente inicial para la Pasada 2, lo que mejora la consistencia temporal en el resultado final.
 
 ## Entradas
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `optical_flow` | MODEL | Sí | - | Modelo de flujo óptico de OpticalFlowLoader (RAFT-large). |
-| `video` | IMAGE | Sí | - | Fotogramas del video de salida de la Pasada 1 [T, H, W, 3]. |
+| `optical_flow` | MODEL | Sí | - | Modelo de flujo óptico proveniente de OpticalFlowLoader (RAFT-large). |
+| `video` | IMAGE | Sí | - | Fotogramas del video de salida de la Pasada 1 [T, A, L, 3]. |
 | `width` | INT | Sí | 16 a MAX_RESOLUTION (paso 8) | Ancho del latente de salida (predeterminado: 672). |
 | `height` | INT | Sí | 16 a MAX_RESOLUTION (paso 8) | Alto del latente de salida (predeterminado: 384). |
 | `length` | INT | Sí | 1 a MAX_RESOLUTION (paso 1) | Número de fotogramas de píxeles. Se redondea hacia abajo para que latent_t sea par (requisito de patch_size_t=2), ej. 49 → 45 (predeterminado: 45). |
@@ -21,4 +21,7 @@ Genera ruido correlacionado temporalmente para la segunda pasada del proceso de 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `warped_noise` | LATENT | Un tensor 5D (B, C, T, H, W) que contiene ruido gaussiano distorsionado por flujo óptico, listo para usar como latente inicial en la Pasada 2 de VOID. |
+| `warped_noise` | LATENT | Un tensor 5D (B, C, T, A, L) que contiene ruido gaussiano distorsionado por flujo óptico, listo para usarse como latente inicial en la Pasada 2 de VOID. |
+
+---
+**Source fingerprint (SHA-256):** `a0f986e54bcc6c455220f89f5d840585a9eae081e522ea11e0ce37ab46821bd9`

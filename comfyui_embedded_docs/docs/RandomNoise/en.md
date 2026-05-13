@@ -13,3 +13,6 @@ The RandomNoise node generates random noise patterns based on a seed value. It c
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `noise` | NOISE | The generated random noise pattern based on the provided seed value. |
+
+---
+**Source fingerprint (SHA-256):** `893d3eefdef78592ba3cc403ec1e4bf3a672607abe79f05db1b65078d6b9ea20`

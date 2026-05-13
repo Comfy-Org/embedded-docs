@@ -15,3 +15,6 @@ The StringConcatenate node combines two text strings into one by joining them wi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The combined string with the delimiter inserted between string_a and string_b |
+
+---
+**Source fingerprint (SHA-256):** `8e33665fb14a53f6c3bbfb6a4553ac7effa96d7d16d9ab2a9d4a1249abfc62e4`

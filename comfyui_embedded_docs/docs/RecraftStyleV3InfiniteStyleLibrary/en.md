@@ -15,3 +15,6 @@ This node allows you to select a style from Recraft's Infinite Style Library usi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `recraft_style` | STYLEV3 | The selected style object from Recraft's Infinite Style Library |
+
+---
+**Source fingerprint (SHA-256):** `37d7d9eff1232cc17912c6fca908dc5b8c404c0b6cf0a36e8fecc837ff2a1eea`

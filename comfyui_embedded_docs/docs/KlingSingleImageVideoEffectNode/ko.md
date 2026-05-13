@@ -1,22 +1,27 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingSingleImageVideoEffectNode/ko.md)
 
-Kling Single Image Video Effect Node는 단일 참조 이미지를 기반으로 다양한 특수 효과가 적용된 비디오를 생성합니다. 다양한 시각 효과와 장면을 적용하여 정적 이미지를 동적인 비디오 콘텐츠로 변환합니다. 이 노드는 원하는 시각적 결과를 달성하기 위해 다양한 효과 장면, 모델 옵션 및 비디오 지속 시간을 지원합니다.
+# Kling 단일 이미지 비디오 효과 노드
+
+Kling 단일 이미지 비디오 효과 노드는 단일 참조 이미지를 기반으로 다양한 특수 효과가 적용된 비디오를 생성합니다. 다양한 시각적 효과와 장면을 적용하여 정적 이미지를 동적 비디오 콘텐츠로 변환합니다. 이 노드는 다양한 효과 장면, 모델 옵션 및 비디오 길이를 지원하여 원하는 시각적 결과를 얻을 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `이미지` | IMAGE | 예 | - | 참조 이미지. URL 또는 Base64 인코딩 문자열 (data:image 접두사 없음). 파일 크기는 10MB를 초과할 수 없으며, 해상도는 300*300px 이상이어야 하고, 화면비는 1:2.5 ~ 2.5:1 사이여야 합니다. |
-| `효과 장면` | COMBO | 예 | KlingSingleImageEffectsScene의 옵션들 | 비디오 생성에 적용할 특수 효과 장면의 유형 |
-| `모델 명` | COMBO | 예 | KlingSingleImageEffectModelName의 옵션들 | 비디오 효과 생성에 사용할 특정 모델 |
-| `길이` | COMBO | 예 | KlingVideoGenDuration의 옵션들 | 생성된 비디오의 길이 |
+| `image` | IMAGE | 예 | - | 참조 이미지. URL 또는 Base64로 인코딩된 문자열(data:image 접두사 제외). 파일 크기는 10MB를 초과할 수 없으며, 해상도는 300x300px 이상, 종횡비는 1:2.5에서 2.5:1 사이여야 합니다 |
+| `effect_scene` | COMBO | 예 | `"dizzydizzy"`<br>`"bloombloom"`<br>`"neon"`<br>`"cartoon"`<br>`"sketch"`<br>`"oil"`<br>`"watercolor"`<br>`"3d"` | 비디오 생성에 적용할 특수 효과 장면의 유형입니다. 일부 효과는 가격이 다를 수 있습니다. |
+| `model_name` | COMBO | 예 | `"kling-v1-5"`<br>`"kling-v1-6"` | 비디오 효과 생성에 사용할 특정 모델 버전입니다. |
+| `duration` | COMBO | 예 | `"5"`<br>`"10"` | 생성된 비디오의 길이(초)입니다. |
 
-**참고:** `effect_scene`, `model_name`, `duration`의 구체적인 옵션은 각각의 열거형 클래스(KlingSingleImageEffectsScene, KlingSingleImageEffectModelName, KlingVideoGenDuration)에서 사용 가능한 값에 따라 결정됩니다.
+**참고:** `effect_scene` 매개변수는 노드의 가격에 영향을 미칩니다. `dizzydizzy` 및 `bloombloom` 효과는 생성당 0.49 USD이며, 다른 모든 효과는 생성당 0.28 USD입니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `비디오 ID` | VIDEO | 효과가 적용된 생성된 비디오 |
-| `길이` | STRING | 생성된 비디오의 고유 식별자 |
-| `길이` | STRING | 생성된 비디오의 지속 시간 |
+| `output` | VIDEO | 효과가 적용된 생성된 비디오 |
+| `video_id` | STRING | 생성된 비디오의 고유 식별자 |
+| `duration` | STRING | 생성된 비디오의 길이 |
+
+---
+**Source fingerprint (SHA-256):** `519db2f7185f200140c746bdebf89383523e0342bbfb61538adac063295d365d`

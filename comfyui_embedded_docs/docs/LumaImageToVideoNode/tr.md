@@ -1,25 +1,28 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageToVideoNode/tr.md)
 
-İstem, giriş görüntüleri ve çıktı boyutuna dayalı olarak senkronize bir şekilde video oluşturur. Bu düğüm, video içeriğini ve yapısını tanımlamak için metin istemleri ve isteğe bağlı başlangıç/bitiş görüntüleri sağlayarak Luma API'sini kullanarak videolar oluşturur.
+Bir metin istemi ve isteğe bağlı başlangıç/bitiş görsellerine dayanarak eşzamanlı olarak videolar oluşturur. Bu düğüm, video içeriğini bir istem aracılığıyla tanımlamanıza ve isteğe bağlı olarak videonun yapısını kontrol etmek için ilk ve/veya son kareyi belirtmenize olanak tanıyan Luma API'sini kullanır.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | - | Video oluşturma için istem (varsayılan: "") |
-| `model` | COMBO | Evet | Birden fazla seçenek mevcut | Mevcut Luma modellerinden video oluşturma modelini seçer |
-| `çözünürlük` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan video için çıktı çözünürlüğü (varsayılan: 540p) |
-| `süre` | COMBO | Evet | Birden fazla seçenek mevcut | Oluşturulan videonun süresi |
-| `döngü` | BOOLEAN | Evet | - | Oluşturulan videonun döngü yapıp yapmayacağı (varsayılan: False) |
-| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar tohuma bakılmaksızın belirsizdir. (varsayılan: 0) |
-| `ilk_görüntü` | IMAGE | Hayır | - | Oluşturulan videonun ilk karesi. (isteğe bağlı) |
-| `son_görüntü` | IMAGE | Hayır | - | Oluşturulan videonun son karesi. (isteğe bağlı) |
-| `luma_kavramları` | CUSTOM | Hayır | - | Luma Kavramlar düğümü aracılığıyla kamera hareketini yönlendirmek için isteğe bağlı Kamera Kavramları. (isteğe bağlı) |
+|-----------|-----------|----------|--------|----------|
+| `prompt` | STRING | Evet | - | Video oluşturma için istem (varsayılan: "") |
+| `model` | COMBO | Evet | Birden çok seçenek mevcut | Mevcut Luma modelleri arasından video oluşturma modelini seçer |
+| `resolution` | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Oluşturulan video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. |
+| `duration` | COMBO | Evet | `"5s"`<br>`"9s"` | Oluşturulan videonun süresi. Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. |
+| `loop` | BOOLEAN | Evet | - | Oluşturulan videonun döngüye girip girmeyeceği (varsayılan: False) |
+| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
+| `first_image` | IMAGE | Hayır | - | Oluşturulan videonun ilk karesi. (isteğe bağlı) |
+| `last_image` | IMAGE | Hayır | - | Oluşturulan videonun son karesi. (isteğe bağlı) |
+| `luma_concepts` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları. (isteğe bağlı) |
 
-**Not:** `first_image` veya `last_image` parametrelerinden en az biri sağlanmalıdır. Her ikisi de eksikse düğüm bir istisna oluşturacaktır.
+**Not:** `first_image` veya `last_image` öğelerinden en az biri sağlanmalıdır. Her ikisi de eksikse düğüm bir istisna oluşturacaktır. `model` `ray-1-6` olarak ayarlandığında `resolution` ve `duration` parametreleri dikkate alınmaz.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
+|-----------|-----------|----------|
 | `output` | VIDEO | Oluşturulan video dosyası |
+
+---
+**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`

@@ -9,11 +9,11 @@ Bu düğüm, HappyHorse modelini kullanarak tek bir başlangıç görüntüsünd
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"happyhorse-1.0-i2v"` | Video oluşturma için kullanılacak HappyHorse modeli. |
-| `model.prompt` | STRING | Hayır | Yok | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çince destekler. (varsayılan: "") |
+| `model.prompt` | STRING | Hayır | Yok | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler. (varsayılan: "") |
 | `model.resolution` | COMBO | Evet | `"720P"`<br>`"1080P"` | Çıktı video çözünürlüğü. (varsayılan: "720P") |
-| `model.duration` | INT | Evet | 3 ile 15 | Oluşturulan videonun saniye cinsinden süresi. (varsayılan: 5) |
+| `model.duration` | INT | Evet | 3 ila 15 | Oluşturulan videonun saniye cinsinden süresi. (varsayılan: 5) |
 | `first_frame` | IMAGE | Evet | Yok | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. |
-| `seed` | INT | Hayır | 0 ile 2147483647 | Oluşturma için kullanılacak tohum değeri. (varsayılan: 0) |
+| `seed` | INT | Hayır | 0 ila 2147483647 | Oluşturma için kullanılacak tohum değeri. (varsayılan: 0) |
 | `watermark` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
 
 ## Çıktılar
@@ -21,3 +21,6 @@ Bu düğüm, HappyHorse modelini kullanarak tek bir başlangıç görüntüsünd
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `video` | VIDEO | Oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `e10ad61abd92df7ad6dd3ac70cc6af35faf0413798f4cff32c81194695bb0bed`

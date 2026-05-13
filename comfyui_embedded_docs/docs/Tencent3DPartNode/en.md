@@ -16,3 +16,6 @@ This node uses the Tencent Hunyuan3D API to automatically analyze a 3D model and
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `FBX` | FILE3DFBX | The processed 3D model, returned as an FBX file. |
+
+---
+**Source fingerprint (SHA-256):** `eae7d0197d4391af1f5f24f120c64f1045649182108affad10b9a00f329310fe`

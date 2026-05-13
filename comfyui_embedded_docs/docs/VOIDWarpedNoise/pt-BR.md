@@ -1,8 +1,8 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoise/pt-BR.md)
 
-## Visão Geral
+# Visão Geral
 
-Gera ruído temporalmente correlacionado para a segunda passagem do processo de refinamento de vídeo VOID. Ele recebe o vídeo de saída da Passagem 1 e distorce o ruído Gaussiano ao longo dos vetores de fluxo óptico, criando ruído que se move de forma consistente com o conteúdo do vídeo. Este ruído distorcido é usado como latente inicial para a Passagem 2, que melhora a consistência temporal na saída final.
+Gera ruído temporalmente correlacionado para a segunda passagem do processo de refinamento de vídeo VOID. Ele recebe o vídeo de saída da Passagem 1 e distorce o ruído Gaussiano ao longo dos vetores de fluxo óptico, criando ruído que se move de forma consistente com o conteúdo do vídeo. Este ruído distorcido é usado como o latente inicial para a Passagem 2, o que melhora a consistência temporal na saída final.
 
 ## Entradas
 
@@ -22,3 +22,6 @@ Gera ruído temporalmente correlacionado para a segunda passagem do processo de 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `warped_noise` | LATENT | Um tensor 5D (B, C, T, H, W) contendo ruído Gaussiano distorcido por fluxo óptico, pronto para uso como latente inicial na Passagem 2 do VOID. |
+
+---
+**Source fingerprint (SHA-256):** `a0f986e54bcc6c455220f89f5d840585a9eae081e522ea11e0ce37ab46821bd9`

@@ -10,7 +10,7 @@ Este nodo prepara una secuencia de fotogramas clave para un segmento específico
 |-----------|---------------|-------------|-------|-------------|
 | `images` | IMAGE | Sí | Lote de imágenes | Las imágenes de entrada que se distribuirán como fotogramas clave. |
 | `segment_length` | INT | Sí | 1 a 10000 | Longitud de este segmento en fotogramas (predeterminado: 149). |
-| `segment_index` | INT | Sí | 0 a 100 | Índice del segmento (0 para el primero, 1 para el segundo, etc., predeterminado: 0). |
+| `segment_index` | INT | Sí | 0 a 100 | Número de segmento (0 para el primero, 1 para el segundo, etc., predeterminado: 0). |
 | `audio` | AUDIO | Sí | Datos de audio | Audio para calcular el total de fotogramas de salida y extraer el audio del segmento. |
 
 ## Salidas
@@ -20,3 +20,6 @@ Este nodo prepara una secuencia de fotogramas clave para un segmento específico
 | `keyframes_sequence` | IMAGE | Secuencia de fotogramas clave rellenada para el segmento especificado. |
 | `keyframes_mask` | MASK | Máscara que indica los fotogramas válidos (1 para posiciones de fotogramas clave, 0 para posiciones rellenadas). |
 | `audio_segment` | AUDIO | Segmento de audio correspondiente a este segmento de video. |
+
+---
+**Source fingerprint (SHA-256):** `5a104b45faaa870727d4c45e6327e7233110b40dc5a13515a29e5f14de2050e0`

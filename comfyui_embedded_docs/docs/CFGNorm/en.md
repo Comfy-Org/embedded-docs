@@ -14,3 +14,6 @@ The CFGNorm node applies a normalization technique to the classifier-free guidan
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `patched_model` | MODEL | Returns the modified model with CFG normalization applied to its sampling process |
+
+---
+**Source fingerprint (SHA-256):** `af9e5f965500b959ff46f781e9329524fc0a4b94af2ce6d74116fe27b0e9005e`

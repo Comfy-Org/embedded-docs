@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingAvatarNode/en.md)
 
-The Kling Avatar 2.0 node generates broadcast-style digital human videos. It uses a single reference photo and an audio file to create a talking avatar video. An optional text prompt can be used to define the avatar's actions, emotions, and camera movements.
+The Kling Avatar 2.0 node generates broadcast-style digital human videos from a single reference photo and an audio file. It creates a talking avatar video with an optional text prompt to define the avatar's actions, emotions, and camera movements.
 
 ## Inputs
 
@@ -19,3 +19,6 @@ The Kling Avatar 2.0 node generates broadcast-style digital human videos. It use
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated digital human video. |
+
+---
+**Source fingerprint (SHA-256):** `85793d3820a89ef98bb54cb930486847d4fd64cce5470ba34574ec319f8ea8c6`

@@ -1,10 +1,10 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/fr.md)
 
-Voici la traduction en français de la documentation technique du nœud ComfyUI :
+Voici la traduction de la documentation technique du nœud ComfyUI, en respectant les règles établies :
 
 ## Aperçu
 
-Ce nœud prépare une séquence d'images clés pour un segment spécifique d'un processus de génération vidéo plus long. Il prend un lot d'images d'entrée et une piste audio, calcule le nombre total d'images que la vidéo complète doit avoir en fonction de la durée audio, puis distribue les images d'entrée comme images clés sur le segment choisi, en complétant le reste avec des images vides. Il extrait également la partie correspondante de l'audio pour ce segment.
+Ce nœud prépare une séquence d'images clés pour un segment spécifique d'un processus de génération vidéo plus long. Il prend un lot d'images d'entrée et une piste audio, calcule le nombre total d'images que la vidéo complète doit avoir en fonction de la durée audio, puis distribue les images d'entrée comme images clés sur le segment choisi, en complétant le reste avec des images vides. Il extrait également la portion correspondante de l'audio pour ce segment.
 
 ## Entrées
 
@@ -21,4 +21,7 @@ Ce nœud prépare une séquence d'images clés pour un segment spécifique d'un 
 |---------------|-----------------|-------------|
 | `keyframes_sequence` | IMAGE | Séquence d'images clés complétée pour le segment spécifié. |
 | `keyframes_mask` | MASK | Masque indiquant les images valides (1 pour les positions d'images clés, 0 pour les positions complétées). |
-| `audio_segment` | AUDIO | Segment audio correspondant à ce segment vidéo. |
+| `audio_segment` | AUDIO | Segment audio pour ce segment vidéo. |
+
+---
+**Source fingerprint (SHA-256):** `5a104b45faaa870727d4c45e6327e7233110b40dc5a13515a29e5f14de2050e0`

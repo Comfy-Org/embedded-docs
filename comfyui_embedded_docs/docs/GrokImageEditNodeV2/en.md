@@ -25,3 +25,6 @@ Modify an existing image based on a text prompt. This node sends your images and
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `IMAGE` | IMAGE | The edited image(s) returned by the Grok API. If a single image is generated, it is returned directly. If multiple images are generated, they are concatenated into a single batch tensor. |
+
+---
+**Source fingerprint (SHA-256):** `b041b40bb5712a67b09dcb0c841f00cbdd9ef77b9e4f3fdc6b2c4038be447ba5`

@@ -1,15 +1,15 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningZeroOut/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningZeroOut/tr.md)
 
-Bu düğüm, koşullandırma veri yapısı içindeki belirli öğeleri sıfırlayarak, bunların sonraki işlem adımlarındaki etkisini etkisiz hale getirir. Koşullandırmanın dahili temsilinin doğrudan manipülasyonunun gerekli olduğu gelişmiş koşullandırma işlemleri için tasarlanmıştır.
+Bu düğüm, koşullandırma veri yapısı içindeki belirli öğeleri sıfırlayarak, bunların sonraki işleme adımlarındaki etkisini etkili bir şekilde ortadan kaldırır. Koşullandırmanın dahili temsilinin doğrudan manipülasyonunun gerektiği ileri düzey koşullandırma işlemleri için tasarlanmıştır.
 
-## Girdiler
+## Girişler
 
-| Parametre | Comfy dtype                | Açıklama |
-|-----------|----------------------------|-------------|
-| `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma veri yapısı. Bu düğüm, her bir koşullandırma girişi içindeki 'pooled_output' öğelerini, eğer mevcutsa, sıfırlar. |
+| Parametre | Comfy veri türü | Açıklama |
+|-----------|------------------|-------------|
+| `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma veri yapısı. Bu düğüm, varsa her koşullandırma girişindeki 'pooled_output' öğelerini sıfırlar. |
 
-## Çıktılar
+## Çıkışlar
 
-| Parametre | Comfy dtype                | Açıklama |
-|-----------|----------------------------|-------------|
-| `CONDITIONING` | CONDITIONING | Değiştirilmiş koşullandırma veri yapısı; uygulanabilir olduğu durumlarda 'pooled_output' öğeleri sıfıra ayarlanmış halde. |
+| Parametre | Comfy veri türü | Açıklama |
+|-----------|------------------|-------------|
+| `CONDITIONING` | CONDITIONING | 'pooled_output' öğelerinin uygun yerlerde sıfırlandığı, değiştirilmiş koşullandırma veri yapısı. |

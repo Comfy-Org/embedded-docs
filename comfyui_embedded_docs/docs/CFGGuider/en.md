@@ -4,15 +4,18 @@ The CFGGuider node creates a guidance system for controlling the sampling proces
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Required | - | - | The model to be used for guidance |
-| `positive` | CONDITIONING | Required | - | - | The positive conditioning that guides the generation toward desired content |
-| `negative` | CONDITIONING | Required | - | - | The negative conditioning that steers the generation away from unwanted content |
-| `cfg` | FLOAT | Required | 8.0 | 0.0 - 100.0 | The classifier-free guidance scale that controls how strongly the conditioning influences the generation |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Yes | - | The model to be used for guidance |
+| `positive` | CONDITIONING | Yes | - | The positive conditioning that guides the generation toward desired content |
+| `negative` | CONDITIONING | Yes | - | The negative conditioning that steers the generation away from unwanted content |
+| `cfg` | FLOAT | Yes | 0.0 to 100.0 | The classifier-free guidance scale that controls how strongly the conditioning influences the generation (default: 8.0) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `GUIDER` | GUIDER | A guider object that can be passed to sampling nodes to control the generation process |
+
+---
+**Source fingerprint (SHA-256):** `80c1f733dc26717c5762655404b9c36b53bb9059ceb6a8531ef1a853e2fe2380`

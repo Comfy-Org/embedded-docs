@@ -1,19 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageYUVToRGB/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageYUVToRGB/tr.md)
 
-ImageYUVToRGB düğümü, YUV renk uzayındaki görüntüleri RGB renk uzayına dönüştürür. Y (parlaklık), U (mavi çıkıntı) ve V (kırmızı çıkıntı) kanallarını temsil eden üç ayrı girdi görüntüsünü alır ve bunları renk uzayı dönüşümü kullanarak tek bir RGB görüntüsünde birleştirir.
+ImageYUVToRGB düğümü, YUV renk uzayındaki görüntüleri RGB renk uzayına dönüştürür. Y (parlaklık), U (mavi izdüşüm) ve V (kırmızı izdüşüm) kanallarını temsil eden üç ayrı giriş görüntüsünü alır ve renk uzayı dönüşümü kullanarak bunları tek bir RGB görüntüsünde birleştirir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `Y` | IMAGE | Evet | - | Y (parlaklık) kanalı girdi görüntüsü |
-| `U` | IMAGE | Evet | - | U (mavi çıkıntı) kanalı girdi görüntüsü |
-| `V` | IMAGE | Evet | - | V (kırmızı çıkıntı) kanalı girdi görüntüsü |
+| `Y` | IMAGE | Evet | - | Y (parlaklık) kanalı giriş görüntüsü |
+| `U` | IMAGE | Evet | - | U (mavi izdüşüm) kanalı giriş görüntüsü |
+| `V` | IMAGE | Evet | - | V (kırmızı izdüşüm) kanalı giriş görüntüsü |
 
-**Not:** Üç girdi görüntüsünün (Y, U ve V) tamamı birlikte sağlanmalı ve uygun dönüşüm için uyumlu boyutlara sahip olmalıdır.
+**Not:** Üç giriş görüntüsünün (Y, U ve V) tümü birlikte sağlanmalı ve doğru dönüşüm için uyumlu boyutlara sahip olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | IMAGE | Dönüştürülmüş RGB görüntü |
+|-----------|-----------|-------------|
+| `output` | IMAGE | Dönüştürülmüş RGB görüntüsü |
+
+---
+**Source fingerprint (SHA-256):** `ee160be21fce75b3a3e41e25dc1cb0b20305383ff26f9698f07b93d42f98c64f`

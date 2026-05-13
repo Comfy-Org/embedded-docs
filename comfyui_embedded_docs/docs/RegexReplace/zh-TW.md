@@ -1,21 +1,26 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexReplace/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexReplace/zh-TW.md)
 
-RegexReplace 節點使用正規表示式模式在字串中尋找並取代文字。它允許您搜尋文字模式並將其替換為新文字，並提供控制模式匹配行為的選項，包括大小寫敏感度、多行匹配以及限制替換次數。
+# RegexReplace 節點
 
-## 輸入參數
+RegexReplace 節點使用正則表達式模式在字串中尋找並取代文字。它允許您搜尋文字模式並將其替換為新文字，並提供選項來控制模式匹配的運作方式，包括區分大小寫、多行匹配以及限制替換次數。
 
-| 參數名稱 | 資料類型 | 是否必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | 是 | - | 要進行搜尋和替換的輸入文字字串 |
-| `regex_pattern` | STRING | 是 | - | 要在輸入字串中搜尋的正規表示式模式 |
-| `replace` | STRING | 是 | - | 用於替換匹配模式的文字 |
-| `case_insensitive` | BOOLEAN | 否 | - | 啟用時，模式匹配將忽略大小寫差異（預設值：True） |
-| `multiline` | BOOLEAN | 否 | - | 啟用時，會改變 ^ 和 $ 的行為，使其匹配每行的開頭/結尾，而不僅僅是整個字串的開頭/結尾（預設值：False） |
-| `dotall` | BOOLEAN | 否 | - | 啟用時，點（.）字元將匹配包括換行符在內的任何字元。停用時，點不會匹配換行符（預設值：False） |
-| `count` | INT | 否 | 0-100 | 最大替換次數。設定為 0 可替換所有出現的匹配（預設值）。設定為 1 僅替換第一個匹配，2 替換前兩個匹配，依此類推（預設值：0） |
+| `string` | STRING | 是 | - | 要進行搜尋和取代的輸入文字字串 |
+| `regex_pattern` | STRING | 是 | - | 要在輸入字串中搜尋的正則表達式模式 |
+| `replace` | STRING | 是 | - | 用於取代匹配模式的替換文字 |
+| `case_insensitive` | BOOLEAN | 否 | - | 啟用時，使模式匹配忽略大小寫差異（預設：True） |
+| `multiline` | BOOLEAN | 否 | - | 啟用時，改變 ^ 和 $ 的行為，使其匹配每一行的開頭/結尾，而不僅僅是整個字串的開頭/結尾（預設：False） |
+| `dotall` | BOOLEAN | 否 | - | 啟用時，點號 (.) 字元將匹配任何字元，包括換行符號。停用時，點號不匹配換行符號（預設：False） |
+| `count` | INT | 否 | 0-100 | 要進行的最大替換次數。設為 0 可取代所有匹配項（預設）。設為 1 僅取代第一個匹配項，設為 2 取代前兩個匹配項，以此類推。（預設：0） |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | STRING | 應用指定替換後的修改字串 |
+| `output` | STRING | 已套用指定替換後的修改字串 |
+
+---
+**Source fingerprint (SHA-256):** `4a4d4b317ee23314a4ac26cf3b58a2cc904bfb8111608f88345c1014b801ea00`

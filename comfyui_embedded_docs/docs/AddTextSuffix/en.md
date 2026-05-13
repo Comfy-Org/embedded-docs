@@ -14,3 +14,6 @@ This node appends a specified suffix to the end of an input text string. It take
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `text` | STRING | The resulting text after the suffix has been appended. |
+
+---
+**Source fingerprint (SHA-256):** `5dd75a9a29709a35343ec0dce144d2eb27a6e7aef5cb0b9245329c678897a763`

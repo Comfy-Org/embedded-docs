@@ -1,18 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyCosmosLatentVideo/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyCosmosLatentVideo/tr.md)
 
-EmptyCosmosLatentVideo düğümü, belirtilen boyutlarda boş bir gizli video tensörü oluşturur. Video üretimi iş akışları için bir başlangıç noktası olarak kullanılabilecek, sıfırlarla doldurulmuş bir gizli temsil oluşturur ve yapılandırılabilir genişlik, yükseklik, uzunluk ve toplu iş boyutu parametrelerine sahiptir.
+EmptyCosmosLatentVideo düğümü, belirtilen boyutlarda boş bir latent video tensörü oluşturur. Sıfırlarla doldurulmuş bir latent temsil üretir; bu temsil, yapılandırılabilir genişlik, yükseklik, uzunluk ve toplu iş boyutu parametreleriyle video oluşturma iş akışları için başlangıç noktası olarak kullanılabilir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `genişlik` | INT | Evet | 16'dan MAX_RESOLUTION'a | Gizli videonun piksel cinsinden genişliği (varsayılan: 1280, 16'ya bölünebilir olmalıdır) |
-| `yükseklik` | INT | Evet | 16'dan MAX_RESOLUTION'a | Gizli videonun piksel cinsinden yüksekliği (varsayılan: 704, 16'ya bölünebilir olmalıdır) |
-| `uzunluk` | INT | Evet | 1'den MAX_RESOLUTION'a | Gizli videodaki kare sayısı (varsayılan: 121) |
-| `toplu_boyut` | INT | Hayır | 1'den 4096'ya | Toplu işte oluşturulacak gizli video sayısı (varsayılan: 1) |
+| `width` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden genişliği (varsayılan: 1280, 16'ya bölünebilir olmalıdır) |
+| `height` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden yüksekliği (varsayılan: 704, 16'ya bölünebilir olmalıdır) |
+| `length` | INT | Evet | 1 ile MAX_RESOLUTION arası | Latent videodaki kare sayısı (varsayılan: 121, 8'e bölünebilir olmalıdır) |
+| `batch_size` | INT | Hayır | 1 ile 4096 arası | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `samples` | LATENT | Sıfır değerlerle oluşturulan boş gizli video tensörü |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|-------------|
+| `samples` | LATENT | Sıfır değerlerine sahip oluşturulan boş latent video tensörü |
+
+---
+**Source fingerprint (SHA-256):** `f473820af3faf7cb6992ff1959089801e333df395b4007abeb9b504962bfc73b`

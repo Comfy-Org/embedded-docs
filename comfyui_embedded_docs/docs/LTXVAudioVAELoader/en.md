@@ -13,3 +13,6 @@ The LTXV Audio VAE Loader node loads a pre-trained Audio Variational Autoencoder
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `Audio VAE` | VAE | The loaded Audio Variational Autoencoder model, ready to be connected to other audio processing nodes. |
+
+---
+**Source fingerprint (SHA-256):** `44e79f694eed796a83f3ac25c56946baaa12b016568bd8824eb179bf79e50588`

@@ -1,20 +1,25 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImageToVideoWithAudio/ko.md)
 
-Kling Image(First Frame) to Video with Audio 노드는 Kling AI 모델을 사용하여 단일 시작 이미지와 텍스트 프롬프트로부터 짧은 동영상을 생성합니다. 제공된 이미지로 시작하는 동영상 시퀀스를 생성하며, 선택적으로 시각적 요소와 함께 재생될 AI 생성 오디오를 포함할 수 있습니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImageToVideoWithAudio/en.md)
+
+Kling Image(첫 번째 프레임) to Video with Audio 노드는 Kling AI 모델을 사용하여 단일 시작 이미지와 텍스트 프롬프트로 짧은 비디오를 생성합니다. 제공된 이미지로 시작하는 비디오 시퀀스를 만들며, 선택적으로 AI 생성 오디오를 시각 자료와 함께 포함할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | 예 | `"kling-v2-6"` | 동영상 생성에 사용할 Kling AI 모델의 특정 버전입니다. |
-| `start_frame` | IMAGE | 예 | - | 생성된 동영상의 첫 번째 프레임으로 사용될 이미지입니다. 이미지는 최소 300x300 픽셀이어야 하며, 가로세로 비율이 1:2.5에서 2.5:1 사이여야 합니다. |
-| `prompt` | STRING | 예 | - | 긍정적 텍스트 프롬프트입니다. 생성하려는 동영상 내용을 설명합니다. 프롬프트는 1자에서 2500자 사이여야 합니다. |
-| `mode` | COMBO | 예 | `"pro"` | 동영상 생성을 위한 운영 모드입니다. |
-| `duration` | COMBO | 예 | `5`<br>`10` | 생성할 동영상의 길이(초 단위)입니다. |
-| `generate_audio` | BOOLEAN | 아니요 | - | 활성화하면 노드가 동영상에 함께 재생될 오디오를 생성합니다. 비활성화하면 동영상은 무음입니다. (기본값: True) |
+| `model_name` | COMBO | 예 | `"kling-v2-6"` | 비디오 생성에 사용할 Kling AI 모델의 특정 버전입니다. |
+| `start_frame` | IMAGE | 예 | - | 생성된 비디오의 첫 번째 프레임으로 사용될 이미지입니다. 이미지는 최소 300x300픽셀이어야 하며, 종횡비가 1:2.5에서 2.5:1 사이여야 합니다. |
+| `prompt` | STRING | 예 | - | 긍정 텍스트 프롬프트입니다. 생성하려는 비디오 콘텐츠를 설명합니다. 프롬프트는 1자에서 2500자 사이여야 합니다. |
+| `mode` | COMBO | 예 | `"pro"` | 비디오 생성을 위한 작동 모드입니다. |
+| `duration` | COMBO | 예 | `5`<br>`10` | 생성할 비디오의 길이(초)입니다. |
+| `generate_audio` | BOOLEAN | 아니요 | - | 활성화하면 노드가 비디오와 함께 오디오를 생성합니다. 비활성화하면 비디오가 무음이 됩니다. (기본값: True) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `video` | VIDEO | 생성된 동영상 파일입니다. `generate_audio` 입력에 따라 오디오가 포함될 수 있습니다. |
+| `video` | VIDEO | 생성된 비디오 파일로, `generate_audio` 입력에 따라 오디오가 포함될 수 있습니다. |
+
+---
+**Source fingerprint (SHA-256):** `f161eedbc5d780805e3d0ca32b6be94cc78afcd2749e065c032ea20991b782fc`

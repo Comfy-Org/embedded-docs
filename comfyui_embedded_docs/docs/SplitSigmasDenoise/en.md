@@ -15,3 +15,6 @@ The SplitSigmasDenoise node divides a sequence of sigma values into two parts ba
 |-------------|-----------|-------------|
 | `high_sigmas` | SIGMAS | The first portion of the sigma sequence containing higher sigma values |
 | `low_sigmas` | SIGMAS | The second portion of the sigma sequence containing lower sigma values |
+
+---
+**Source fingerprint (SHA-256):** `fda53efe2fcaed9244376b7360d8b0b76ce7395d594de4c2ecc48a8f243d7ca6`

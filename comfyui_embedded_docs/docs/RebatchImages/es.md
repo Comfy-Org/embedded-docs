@@ -1,15 +1,16 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RebatchImages/es.md)
 
-El nodo RebatchImages está diseñado para reorganizar un lote de imágenes en una nueva configuración de lote, ajustando el tamaño del lote según lo especificado. Este proceso es esencial para gestionar y optimizar el procesamiento de datos de imágenes en operaciones por lotes, asegurando que las imágenes se agrupen según el tamaño de lote deseado para un manejo eficiente.
+El nodo RebatchImages está diseñado para reorganizar un lote de imágenes en una nueva configuración de lotes, ajustando el tamaño del lote según lo especificado. Este proceso es esencial para gestionar y optimizar el procesamiento de datos de imagen en operaciones por lotes, garantizando que las imágenes se agrupen según el tamaño de lote deseado para un manejo eficiente.
 
 ## Entradas
 
-| Campo       | Data Type | Descripción                                                                         |
-|-------------|-------------|-------------------------------------------------------------------------------------|
-| `imagenes`    | `IMAGE`     | Una lista de imágenes que se reorganizarán. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de reorganización. |
-| `tamaño_lote`| `INT`       | Especifica el tamaño deseado de los lotes de salida. Este parámetro influye directamente en cómo se agrupan y procesan las imágenes de entrada, impactando la estructura de la salida. |
+| Campo         | Tipo de Dato | Descripción                                                                         |
+|---------------|---------------|-------------------------------------------------------------------------------------|
+| `images`      | `IMAGE`       | Una lista de imágenes que se reorganizarán en lotes. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de reorganización. |
+| `batch_size`  | `INT`         | Especifica el tamaño deseado de los lotes de salida. Este parámetro influye directamente en cómo se agrupan y procesan las imágenes de entrada, afectando la estructura de la salida. |
 
 ## Salidas
 
-| Campo | Data Type | Descripción                                                                   |
-|-------|-------------|-------------------------------------------------------------------------------|
-| `image`| `IMAGE`     | La salida consiste en una lista de lotes de imágenes, reorganizados según el tamaño de lote especificado. Esto permite un procesamiento flexible y eficiente de los datos de imágenes en operaciones por lotes. |
+| Campo  | Tipo de Dato | Descripción                                                                   |
+|--------|---------------|-------------------------------------------------------------------------------|
+| `image`| `IMAGE`       | La salida consiste en una lista de lotes de imágenes, reorganizados según el tamaño de lote especificado. Esto permite un procesamiento flexible y eficiente de los datos de imagen en operaciones por lotes. |

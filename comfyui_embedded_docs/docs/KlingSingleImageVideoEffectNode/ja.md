@@ -1,22 +1,29 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingSingleImageVideoEffectNode/ja.md)
 
-Kling Single Image Video Effect Nodeは、単一の参照画像に基づいてさまざまな特殊効果を持つ動画を作成します。静的な画像を動的な動画コンテンツに変換するために、様々な視覚効果とシーンを適用します。このノードは、異なるエフェクトシーン、モデルオプション、動画の長さをサポートしており、目的の視覚的結果を達成することができます。
+以下は、ご依頼いただいたComfyUIノードドキュメントの日本語翻訳です。
+
+---
+
+Kling 単一画像ビデオエフェクトノードは、1枚の参照画像に基づいて、さまざまな特殊効果を適用した動画を生成します。さまざまな視覚効果やシーンを適用することで、静止画像をダイナミックな動画コンテンツに変換します。このノードは、異なるエフェクトシーン、モデルオプション、動画の長さをサポートしており、目的の視覚的アウトプットを実現します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | はい | - | 参照画像。URLまたはBase64エンコードされた文字列（data:imageプレフィックスなし）。ファイルサイズは10MBを超えず、解像度は300*300px以上、アスペクト比は1:2.5 ～ 2.5:1の間である必要があります。 |
-| `effect_scene` | COMBO | はい | KlingSingleImageEffectsSceneからのオプション | 動画生成に適用する特殊効果シーンのタイプ |
-| `model_name` | COMBO | はい | KlingSingleImageEffectModelNameからのオプション | 動画エフェクトの生成に使用する特定のモデル |
-| `duration` | COMBO | はい | KlingVideoGenDurationからのオプション | 生成される動画の長さ |
+| `image` | IMAGE | はい | - | 参照画像。URL、またはBase64エンコードされた文字列（`data:image`プレフィックスは不要）。ファイルサイズは10MB以下、解像度は300x300px以上、アスペクト比は1:2.5から2.5:1の間である必要があります。 |
+| `effect_scene` | COMBO | はい | `"dizzydizzy"`<br>`"bloombloom"`<br>`"neon"`<br>`"cartoon"`<br>`"sketch"`<br>`"oil"`<br>`"watercolor"`<br>`"3d"` | 動画生成に適用する特殊効果シーンの種類。一部のエフェクトは異なる料金が設定されている場合があります。 |
+| `model_name` | COMBO | はい | `"kling-v1-5"`<br>`"kling-v1-6"` | 動画エフェクトの生成に使用する特定のモデルバージョン。 |
+| `duration` | COMBO | はい | `"5"`<br>`"10"` | 生成される動画の長さ（秒単位）。 |
 
-**注意:** `effect_scene`、`model_name`、`duration`の具体的なオプションは、それぞれの列挙型クラス（KlingSingleImageEffectsScene、KlingSingleImageEffectModelName、KlingVideoGenDuration）で利用可能な値によって決定されます。
+**注記:** `effect_scene`パラメータは、ノードの料金に影響します。エフェクト`dizzydizzy`と`bloombloom`は1回の生成あたり0.49米ドル、その他のエフェクトは1回の生成あたり0.28米ドルです。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `video_id` | VIDEO | エフェクトが適用された生成動画 |
-| `duration` | STRING | 生成された動画の一意の識別子 |
+| `output` | VIDEO | エフェクトが適用された生成済み動画 |
+| `video_id` | STRING | 生成された動画の一意識別子 |
 | `duration` | STRING | 生成された動画の長さ |
+
+---
+**Source fingerprint (SHA-256):** `519db2f7185f200140c746bdebf89383523e0342bbfb61538adac063295d365d`

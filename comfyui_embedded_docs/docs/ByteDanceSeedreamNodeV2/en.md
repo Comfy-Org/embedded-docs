@@ -2,7 +2,7 @@
 
 ## Overview
 
-This node generates or edits images using ByteDance's Seedream models (versions 4.0, 4.5, and 5.0). It can create new images from a text prompt or edit existing images by providing reference images, supporting resolutions up to 4K.
+This node generates or edits images using ByteDance's Seedream models (versions 4.0, 4.5, and 5.0 Lite). It can create new images from a text prompt or edit existing images by providing reference images, supporting resolutions up to 4K.
 
 ## Inputs
 
@@ -41,3 +41,6 @@ When you select a model, additional parameters become available:
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The generated or edited image as a tensor. If multiple images were requested, they are concatenated into a single batch. |
+
+---
+**Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`

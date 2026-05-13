@@ -1,18 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetImageSize/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetImageSize/tr.md)
 
-GetImageSize düğümü, bir giriş görüntüsünden boyut ve toplu işlem bilgilerini çıkarır. Görüntünün genişliğini, yüksekliğini ve toplu işlem boyutunu döndürürken, bu bilgiyi aynı zamanda düğüm arayüzünde ilerleme metni olarak görüntüler. Orijinal görüntü verisi değişmeden geçer.
+## Genel Bakış
 
-## Girişler
+GetImageSize düğümü, bir giriş görüntüsünden boyut ve toplu iş bilgilerini çıkarır. Görüntünün genişlik, yükseklik ve toplu iş boyutunu döndürürken, bu bilgileri düğüm arayüzünde ilerleme metni olarak da görüntüler. Orijinal görüntü verileri değişmeden geçer.
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+## Girdiler
+
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Boyut bilgisi çıkarılacak giriş görüntüsü |
-| `unique_id` | UNIQUE_ID | Hayır | - | İlerleme bilgilerini görüntülemek için kullanılan dahili tanımlayıcı |
+| `image` | IMAGE | Evet | - | Boyut bilgisinin çıkarılacağı giriş görüntüsü |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `width` | INT | Giriş görüntüsünün piksel cinsinden genişliği |
 | `height` | INT | Giriş görüntüsünün piksel cinsinden yüksekliği |
-| `batch_size` | INT | Toplu işlemdeki görüntü sayısı |
+| `batch_size` | INT | Toplu işteki görüntü sayısı |
+
+---
+**Source fingerprint (SHA-256):** `5cd19ae762d2403c6c5d0740cd5f8c17913daea737fddcff8f0d9da2210e82ab`

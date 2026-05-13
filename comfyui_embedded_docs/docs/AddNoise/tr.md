@@ -1,24 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddNoise/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddNoise/tr.md)
 
-# AddNoise
+Bu düğüm, belirtilen bir gürültü üreteci ve sigma değerlerini kullanarak gizli bir görüntüye kontrollü gürültü ekler. Girişi, modelin örnekleme sistemi aracılığıyla işleyerek verilen sigma aralığına uygun gürültü ölçeklendirmesi uygular ve gürültünün eklendiği yeni bir gizli temsil döndürür.
 
-Bu düğüm, belirli gürültü parametreleri ve sigma değerleri kullanarak bir gizli görüntüye kontrollü gürültü ekler. Girdiyi, verilen sigma aralığı için uygun olan gürültü ölçeklendirmesini uygulamak üzere modelin örnekleme sistemi aracılığıyla işler.
+## Girişler
 
-## Nasıl Çalışır
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|--------|----------|
+| `model` | MODEL | Evet | - | Örnekleme parametrelerini ve işleme fonksiyonlarını içeren model |
+| `noise` | NOISE | Evet | - | Temel gürültü desenini üreten gürültü üreteci |
+| `sigmas` | SIGMAS | Evet | - | Gürültü ölçeklendirme yoğunluğunu kontrol eden sigma değerleri. Boşsa, düğüm orijinal gizli görüntüyü değiştirmeden döndürür. Birden fazla sigma sağlandığında, gürültü ölçeği ilk ve son sigma değerleri arasındaki mutlak fark olarak hesaplanır. Yalnızca bir sigma sağlandığında, bu değer doğrudan ölçek olarak kullanılır. |
+| `latent_image` | LATENT | Evet | - | Gürültü eklenecek giriş gizli temsili. Yalnızca sıfırlardan oluşan boş gizli görüntüler işleme sırasında kaydırılmaz. |
 
-Düğüm, bir gizli görüntü alır ve sağlanan gürültü üreteci ve sigma değerlerine dayanarak ona gürültü uygular. İlk olarak herhangi bir sigma sağlanıp sağlanmadığını kontrol eder - eğer yoksa, orijinal gizli görüntüyü değiştirilmeden döndürür. Düğüm daha sonra gizli görüntüyü işlemek ve ölçeklendirilmiş gürültü uygulamak için modelin örnekleme sistemini kullanır. Gürültü ölçeklendirmesi, birden fazla sigma sağlandığında ilk ve son sigma değerleri arasındaki farkla veya yalnızca bir sigma mevcut olduğunda tek bir sigma değeriyle belirlenir. Boş gizli görüntüler (yalnızca sıfırlar içeren) işleme sırasında kaydırılmaz. Son çıktı, uygulanan gürültüye sahip yeni bir gizli temsildir ve kararlılık için herhangi bir NaN veya sonsuz değer sıfıra dönüştürülür.
+## Çıkışlar
 
-## Girdiler
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `LATENT` | LATENT | Gürültü eklenmiş, değiştirilmiş gizli temsil. Çıkıştaki NaN veya sonsuz değerler, kararlılık için sıfıra dönüştürülür. |
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Gerekli | - | - | Örnekleme parametrelerini ve işleme fonksiyonlarını içeren model |
-| `gürültü` | NOISE | Gerekli | - | - | Temel gürültü desenini üreten gürültü üreteci |
-| `sigmalar` | SIGMAS | Gerekli | - | - | Gürültü ölçeklendirme yoğunluğunu kontrol eden sigma değerleri |
-| `gizli_görüntü` | LATENT | Gerekli | - | - | Gürültünün ekleneceği girdi gizli temsili |
-
-## Çıktılar
-
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `LATENT` | LATENT | Eklenen gürültü ile değiştirilmiş gizli temsil |
+---
+**Source fingerprint (SHA-256):** `8f387f95aeec2780d27bee5b954ad2c6cd6daa9242a1ea15697455b157bc80d5`

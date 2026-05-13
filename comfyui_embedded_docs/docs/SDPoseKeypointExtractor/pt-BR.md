@@ -4,8 +4,8 @@ O nó SDPoseKeypointExtractor detecta pontos-chave de pose humana a partir de im
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
 | `model` | MODEL | Sim | - | O modelo SDPose usado para detecção de pontos-chave. Deve ser um modelo com o atributo `heatmap_head`, especificamente do repositório SDPose. |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar as imagens de entrada no espaço latente para processamento. |
 | `image` | IMAGE | Sim | - | A imagem de entrada ou lote de imagens do qual extrair os pontos-chave de pose. |
@@ -22,4 +22,7 @@ O nó SDPoseKeypointExtractor detecta pontos-chave de pose humana a partir de im
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `keypoints` | POSE_KEYPOINT | Pontos-chave no formato de quadro OpenPose (largura_tela, altura_tela, pessoas). A saída contém as pessoas detectadas, cada uma com uma matriz de coordenadas de pontos-chave (x, y) e suas respectivas pontuações de confiança. |
+| `keypoints` | POSE_KEYPOINT | Pontos-chave no formato de quadro OpenPose (largura_do_canvas, altura_do_canvas, pessoas). A saída contém as pessoas detectadas, cada uma com uma matriz de coordenadas de pontos-chave (x, y) e suas respectivas pontuações de confiança. |
+
+---
+**Source fingerprint (SHA-256):** `7903b51c9137aa08bb8843362740fcf93cea9c09d142bd1db3b5eee945c853e4`

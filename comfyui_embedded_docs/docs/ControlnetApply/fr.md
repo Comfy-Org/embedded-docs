@@ -1,26 +1,23 @@
-Cette documentation concerne le nœud original `Apply ControlNet(Advanced)`. Le plus ancien nœud `Apply ControlNet` a été renommé en `Apply ControlNet(Old)`. Bien que vous puissiez encore voir le nœud `Apply ControlNet(Old)` dans de nombreux dossiers de workflow que vous téléchargez depuis comfyui.org pour des raisons de compatibilité, vous ne pouvez plus trouver le nœud `Apply ControlNet(Old)` via la recherche ou la liste des nœuds. Veuillez utiliser le nœud `Apply ControlNet` à la place.
-Ce nœud applique ControlNet à une image et à un conditionnement donnés, ajustant les attributs de l'image selon les paramètres et la force spécifiés des réseaux de contrôle tels que Depth, OpenPose, Canny, HED.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/fr.md)
 
-Pour utiliser ControlNet, un prétraitement de l'image d'entrée est nécessaire. Les nœuds initiaux de ComfyUI n'incluent pas de préprocesseurs ni de modèles ControlNet, vous devez donc d'abord installer le préprocesseur ContrlNet [Télécharger le préprocesseur](https://github.com/Fannovel16/comfy_controlnet_preprocessors) et le modèle ControlNet correspondant.
+L'utilisation de ControlNet nécessite un prétraitement des images d'entrée. Étant donné que les nœuds initiaux de ComfyUI ne sont pas fournis avec des préprocesseurs et des modèles ControlNet, veuillez d'abord installer les préprocesseurs ControlNet [télécharger les préprocesseurs ici](https://github.com/Fannovel16/comfy_controlnet_preprocessors) ainsi que les modèles ControlNet correspondants.
 
-### Entrées
+## Entrées
 
 | Paramètre | Type de données | Fonction |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | Données de conditionnement positif provenant de `l'encodeur de texte CLIP` ou d'autres entrées de conditionnement |
-| `negative` | `CONDITIONING` | Données de conditionnement négatif provenant de `l'encodeur de texte CLIP]` ou d'autres entrées de conditionnement |
-| `control_net` | `CONTROL_NET` | Modèle ControlNet à appliquer, généralement en entrée depuis le `chargeur ControlNet` |
-| `image` | `IMAGE` | Image pour l'application de ControlNet, nécessite un traitement par préprocesseur |
-| `vae` | `VAE` | Entrée du modèle Vae |
-| `strength` | `FLOAT` | Contrôle l'intensité de l'ajustement du réseau, plage de valeurs 0~10. Les valeurs recommandées se situent entre 0,5 et 1,5. Des valeurs plus basses donnent plus de liberté au modèle, des valeurs plus élevées imposent des contraintes plus strictes. Des valeurs trop élevées peuvent générer des images étranges. |
-| `start_percent` | `FLOAT` | Valeur 0.000~1.000, détermine le point de départ de l'application de ControlNet en pourcentage, par exemple 0.2 signifie que le guide ControlNet commence à influencer la génération d'image au point 20% du processus de diffusion |
-| `end_percent` | `FLOAT` | Valeur 0.000~1.000, détermine le point final de l'application de ControlNet en pourcentage, par exemple 0.8 signifie que le guide ControlNet cesse d'influencer la génération d'image au point 80% du processus de diffusion |
+| `positive` | `CONDITIONING` | Données de conditionnement positives, provenant de l'encodeur de texte CLIP ou d'autres entrées de conditionnement |
+| `negative` | `CONDITIONING` | Données de conditionnement négatives, provenant de l'encodeur de texte CLIP ou d'autres entrées de conditionnement |
+| `control_net` | `CONTROL_NET` | Le modèle ControlNet à appliquer, généralement saisi à partir du chargeur ControlNet |
+| `image` | `IMAGE` | Image pour l'application de ControlNet, doit être traitée par un préprocesseur |
+| `vae` | `VAE` | Entrée du modèle VAE |
+| `strength` | `FLOAT` | Contrôle la force des ajustements du réseau, plage de valeurs 0~10. Les valeurs recommandées entre 0,5~1,5 sont raisonnables. Des valeurs plus faibles permettent plus de liberté au modèle, des valeurs plus élevées imposent des contraintes plus strictes. Des valeurs trop élevées peuvent produire des images étranges. Vous pouvez tester et ajuster cette valeur pour affiner l'influence du réseau de contrôle. |
+| `start_percent` | `FLOAT` | Valeur 0,000~1,000, détermine le moment de début d'application de ControlNet en pourcentage, par exemple 0,2 signifie que le guidage ControlNet commencera à influencer la génération d'image à 20 % du processus de diffusion |
+| `end_percent` | `FLOAT` | Valeur 0,000~1,000, détermine le moment d'arrêt de l'application de ControlNet en pourcentage, par exemple 0,8 signifie que le guidage ControlNet cessera d'influencer la génération d'image à 80 % du processus de diffusion |
 
 ### Sorties
 
 | Paramètre | Type de données | Fonction |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | Données de conditionnement positif traitées par ControlNet, peuvent être transmises au nœud ControlNet suivant ou au nœud K Sampler |
-| `negative` | `CONDITIONING` | Données de conditionnement négatif traitées par ControlNet, peuvent être transmises au nœud ControlNet suivant ou au nœud K Sampler |
-
-Pour les modèles de style **T2IAdaptor**, utilisez plutôt le nœud `Apply Style Model`
+| `positive` | `CONDITIONING` | Données de conditionnement positives traitées par ControlNet, peuvent être transmises au nœud ControlNet suivant ou aux nœuds K Sampler |
+| `negative` | `CONDITIONING` | Données de conditionnement négatives traitées par ControlNet, peuvent être transmises au nœud ControlNet suivant ou aux nœuds K Sampler |

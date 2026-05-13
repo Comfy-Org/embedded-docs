@@ -2,7 +2,7 @@
 
 ## Genel Bakış
 
-Bu düğüm, bir LATENT'i (VOIDWarpedNoise düğümünün çıktısı gibi) bir NOISE kaynağına dönüştürür. Bu sayede, çarpıtılmış gürültüyü SamplerCustomAdvanced düğümüyle kullanarak daha kontrollü görüntü üretimi yapabilirsiniz.
+Bu düğüm, bir LATENT'i (VOIDWarpedNoise düğümünün çıktısı gibi) bir NOISE kaynağına dönüştürür. Bu sayede, daha kontrollü görüntü üretimi için çarpıtılmış gürültüyü SamplerCustomAdvanced düğümüyle kullanabilirsiniz.
 
 ## Girdiler
 
@@ -13,5 +13,8 @@ Bu düğüm, bir LATENT'i (VOIDWarpedNoise düğümünün çıktısı gibi) bir 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|-------------|
+|-------------|-----------|-------------|
 | `NOISE` | NOISE | SamplerCustomAdvanced ile kullanılabilen bir gürültü kaynağı |
+
+---
+**Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`

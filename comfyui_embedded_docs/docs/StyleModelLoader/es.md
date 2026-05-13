@@ -1,28 +1,17 @@
-Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/style_models`,
-y también leerá los modelos de las rutas adicionales que hayas configurado en el archivo extra_model_paths.yaml.
-A veces, es posible que necesites **refrescar la interfaz de ComfyUI** para que pueda leer los archivos de modelo en la carpeta correspondiente.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StyleModelLoader/es.md)
 
-## Documentación
+Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/style_models`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo desde la carpeta correspondiente.
 
-| Campo                | Descripción                                                                                                                                                                                                 |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre de la clase   | `StyleModelLoader`                                                                                                                                                                                          |
-| Categoría            | `loaders`                                                                                                                                                                                                   |
-| Nodo de salida       | `False`                                                                                                                                                                                                     |
-| Descripción          | El nodo StyleModelLoader está diseñado para cargar un modelo de estilo desde una ruta especificada. Se centra en recuperar e inicializar modelos de estilo que pueden usarse para aplicar estilos artísticos específicos a las imágenes.            |
+El nodo StyleModelLoader está diseñado para cargar un modelo de estilo desde una ruta especificada. Se enfoca en recuperar e inicializar modelos de estilo que pueden usarse para aplicar estilos artísticos específicos a las imágenes, permitiendo así la personalización de las salidas visuales según el modelo de estilo cargado.
 
 ## Entradas
 
-| Campo               | Descripción                                                                                                                                                                                                 |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `nombre_del_modelo_de_estilo`  | Especifica el nombre del modelo de estilo a cargar. Este nombre se utiliza para localizar el archivo del modelo dentro de una estructura de directorios predefinida, permitiendo la carga dinámica de diferentes modelos de estilo.                  |
-| Comfy dtype         | `COMBO[STRING]`                                                                                                                                                                                             |
-| Python dtype        | `str`                                                                                                                                                                                                       |
+| Nombre del parámetro | Tipo Comfy     | Tipo Python | Descripción                                                                                       |
+|----------------------|----------------|-------------|---------------------------------------------------------------------------------------------------|
+| `style_model_name`   | COMBO[STRING] | `str`       | Especifica el nombre del modelo de estilo que se va a cargar. Este nombre se utiliza para localizar el archivo del modelo dentro de una estructura de directorios predefinida, lo que permite la carga dinámica de diferentes modelos de estilo según la entrada del usuario o las necesidades de la aplicación. |
 
 ## Salidas
 
-| Campo               | Descripción                                                                                                                                                                                                 |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `style_model`       | Devuelve el modelo de estilo cargado, listo para su uso en la aplicación de estilos a imágenes. Esto permite la personalización dinámica de los resultados visuales aplicando diferentes estilos artísticos.                                        |
-| Comfy dtype         | `STYLE_MODEL`                                                                                                                                                                                               |
-| Python dtype        | `StyleModel`                                                                                                                                                                                                |
+| Nombre del parámetro | Tipo Comfy     | Tipo Python | Descripción                                                                                       |
+|----------------------|----------------|-------------|---------------------------------------------------------------------------------------------------|
+| `style_model`        | `STYLE_MODEL` | `StyleModel`| Devuelve el modelo de estilo cargado, listo para usar en la aplicación de estilos a las imágenes. Esto permite la personalización dinámica de las salidas visuales mediante la aplicación de diferentes estilos artísticos. |

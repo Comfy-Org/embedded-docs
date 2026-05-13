@@ -11,7 +11,7 @@ The **Topaz Video Enhance V2** node allows you to upscale and enhance video usin
 | `video` | VIDEO | Yes | - | The input video to be processed. Must be in MP4 container format. |
 | `upscaler_model` | COMBO | Yes | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` | The AI model used for upscaling the video. Selecting "Disabled" means no upscaling will be applied. |
 | `upscaler_model.upscaler_resolution` | COMBO | Conditional | `"FullHD (1080p)"`<br>`"4K (2160p)"` | The target output resolution for the upscaler. This parameter is required when an upscaler model is selected (not "Disabled"). |
-| `upscaler_model.creativity` | FLOAT | Conditional | 0.0 to 1.0 (step 0.1) | Creative strength of the upscale. Available only for "Astra 2" and "Starlight (Astra) Creative" models. Default: 0.5 for Astra 2, "low" for Starlight Creative. |
+| `upscaler_model.creativity` | FLOAT / COMBO | Conditional | Astra 2: 0.0 to 1.0 (step 0.1)<br>Starlight Creative: `"low"`<br>`"middle"`<br>`"high"` | Creative strength of the upscale. Available only for "Astra 2" and "Starlight (Astra) Creative" models. For Astra 2, it's a slider (default: 0.5). For Starlight Creative, it's a combo (default: "low"). |
 | `upscaler_model.prompt` | STRING | No | - | Optional descriptive (not instructive) scene prompt. Only available for the "Astra 2" model. Capped at 500 input frames (~15s @ 30fps) when set. Default: empty. |
 | `upscaler_model.sharp` | FLOAT | No | 0.0 to 1.0 (step 0.01) | Pre-enhance sharpness: 0.0=Gaussian blur, 0.5=passthrough (default), 1.0=USM sharpening. Only available for the "Astra 2" model. Default: 0.5. |
 | `upscaler_model.realism` | FLOAT | No | 0.0 to 1.0 (step 0.01) | Pulls output toward photographic realism. Leave at 0 for the model default. Only available for the "Astra 2" model. Default: 0.0. |
@@ -34,3 +34,6 @@ The **Topaz Video Enhance V2** node allows you to upscale and enhance video usin
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The enhanced video output after applying the selected upscaling and/or interpolation filters. |
+
+---
+**Source fingerprint (SHA-256):** `29b7538206327c35866126c1862c1d1ccea872ba84fbb9c84126114a06e2b00f`

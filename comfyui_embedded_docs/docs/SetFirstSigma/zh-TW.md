@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetFirstSigma/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetFirstSigma/zh-TW.md)
 
-SetFirstSigma 節點透過將序列中的第一個 sigma 值替換為自定義值，來修改 sigma 值序列。它接收現有的 sigma 序列和一個新的 sigma 值作為輸入，然後返回一個新的 sigma 序列，其中僅第一個元素被更改，而所有其他 sigma 值保持不變。
+## 概述
 
-## 輸入參數
+SetFirstSigma 節點透過將序列中的第一個 sigma 值替換為自訂值來修改 sigma 值序列。它接收現有的 sigma 序列和一個新的 sigma 值作為輸入，然後回傳一個新的 sigma 序列，其中僅第一個元素已被更改，而所有其他 sigma 值保持不變。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `sigmas` | SIGMAS | 是 | - | 待修改的輸入 sigma 值序列 |
 | `sigma` | FLOAT | 是 | 0.0 至 20000.0 | 要設定為序列中第一個元素的新 sigma 值（預設值：136.0） |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `sigmas` | SIGMAS | 經修改的 sigma 序列，其中第一個元素已被自定義 sigma 值替換 |
+| `sigmas` | SIGMAS | 已修改的 sigma 序列，其中第一個元素已被自訂 sigma 值取代 |
+
+---
+**Source fingerprint (SHA-256):** `2414acd7f3f42032c12bae2c581de4721f4c1daa912255fa0956caaa567291d5`

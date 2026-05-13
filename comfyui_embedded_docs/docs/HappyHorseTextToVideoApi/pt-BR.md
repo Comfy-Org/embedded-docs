@@ -10,8 +10,8 @@ Gera um vídeo com base em um prompt de texto usando o modelo HappyHorse. Este n
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | DICT | Sim | Ver Descrição | Um dicionário contendo a seleção do modelo e seus parâmetros associados. O modelo deve ser `"happyhorse-1.0-t2v"`. Este dicionário inclui os seguintes subparâmetros:<br><br>**`prompt`** (STRING): A descrição textual do vídeo que você deseja gerar. Suporta inglês e chinês. (padrão: "").<br>**`resolution`** (COMBO): A resolução do vídeo de saída. Opções: `"720P"`, `"1080P"`.<br>**`ratio`** (COMBO): A proporção de aspecto do vídeo de saída. Opções: `"16:9"`, `"9:16"`, `"1:1"`, `"4:3"`, `"3:4"`.<br>**`duration`** (INT): A duração do vídeo em segundos. (padrão: 5, mínimo: 3, máximo: 15, passo: 1). |
-| `seed` | INT | Sim | 0 a 2147483647 | Semente a ser usada para geração. Usar a mesma semente com as mesmas entradas produzirá o mesmo resultado. (padrão: 0). |
+| `model` | DICT | Sim | Ver Descrição | Um dicionário contendo a seleção do modelo e seus parâmetros associados. O modelo deve ser `"happyhorse-1.0-t2v"`. Este dicionário inclui os seguintes subparâmetros:<br><br>**`prompt`** (STRING): A descrição em texto do vídeo que você deseja gerar. Suporta inglês e chinês. (padrão: "").<br>**`resolution`** (COMBO): A resolução do vídeo de saída. Opções: `"720P"`, `"1080P"`.<br>**`ratio`** (COMBO): A proporção de aspecto do vídeo de saída. Opções: `"16:9"`, `"9:16"`, `"1:1"`, `"4:3"`, `"3:4"`.<br>**`duration`** (INT): A duração do vídeo em segundos. (padrão: 5, mínimo: 3, máximo: 15, passo: 1). |
+| `seed` | INT | Sim | 0 a 2147483647 | Semente a ser usada para a geração. Usar a mesma semente com as mesmas entradas produzirá o mesmo resultado. (padrão: 0). |
 | `watermark` | BOOLEAN | Não | Verdadeiro / Falso | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: Falso). |
 
 ## Saídas
@@ -19,3 +19,6 @@ Gera um vídeo com base em um prompt de texto usando o modelo HappyHorse. Este n
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `VIDEO` | VIDEO | O arquivo de vídeo gerado. |
+
+---
+**Source fingerprint (SHA-256):** `8c6a7c0c2b10bbc65ca54abc991e1f12e8846b31701ed65b49c5d71f1b2a63ec`

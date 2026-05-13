@@ -1,22 +1,27 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraSave/ja.md)
 
-LoraSaveノードは、モデルの差分からLoRA（Low-Rank Adaptation）ファイルを抽出して保存します。拡散モデルの差分、テキストエンコーダーの差分、またはその両方を処理し、指定されたランクとタイプでLoRA形式に変換することができます。生成されたLoRAファイルは出力ディレクトリに保存され、後で使用することができます。
+このドキュメントはAI生成です。誤りや改善の提案がありましたら、ぜひご協力ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraSave/en.md)
+
+LoraSaveノードは、モデルの差分からLoRA（Low-Rank Adaptation）ファイルを抽出して保存します。拡散モデルの差分、テキストエンコーダの差分、またはその両方を処理し、指定されたランクとタイプでLoRA形式に変換します。生成されたLoRAファイルは、後で使用するために出力ディレクトリに保存されます。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `ファイル名のプレフィックス` | STRING | はい | - | 出力ファイル名のプレフィックス（デフォルト: "loras/ComfyUI_extracted_lora"） |
-| `ランク` | INT | はい | 1-4096 | LoRAのランク値。サイズと複雑さを制御します（デフォルト: 8） |
-| `lora_type` | COMBO | はい | 複数のオプションが利用可能 | 作成するLoRAのタイプ。様々なオプションが利用できます |
-| `バイアスの差` | BOOLEAN | はい | - | LoRA計算にバイアスの差分を含めるかどうか（デフォルト: True） |
-| `モデルの差` | MODEL | いいえ | - | LoRAに変換するModelSubtractの出力 |
-| `テキストエンコーダの差` | CLIP | いいえ | - | LoRAに変換するCLIPSubtractの出力 |
+| `filename_prefix` | STRING | はい | - | 出力ファイル名のプレフィックス（デフォルト："loras/ComfyUI_extracted_lora"） |
+| `rank` | INT | はい | 1-4096 | LoRAのランク値。サイズと複雑さを制御します（デフォルト：8） |
+| `lora_type` | COMBO | はい | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | 作成するLoRAのタイプ（デフォルト："standard"） |
+| `bias_diff` | BOOLEAN | はい | - | LoRA計算にバイアス差分を含めるかどうか（デフォルト：True） |
+| `model_diff` | MODEL | いいえ | - | LoRAに変換するModelSubtractの出力 |
+| `text_encoder_diff` | CLIP | いいえ | - | LoRAに変換するCLIPSubtractの出力 |
 
-**注意:** ノードが機能するためには、`model_diff` または `text_encoder_diff` の少なくとも一方を指定する必要があります。両方が省略された場合、ノードは出力を生成しません。
+**注記：** ノードを機能させるには、`model_diff`または`text_encoder_diff`の少なくとも一方を指定する必要があります。両方を省略した場合、ノードは出力を生成しません。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | - | - | このノードはLoRAファイルを出力ディレクトリに保存しますが、ワークフローを通じてデータを返しません |
+
+---
+**Source fingerprint (SHA-256):** `fdf020915ee233cf68250dcdcf87e7862d13ccc4fa73d8da8245727fdac46015`

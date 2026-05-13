@@ -1,13 +1,13 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ImageToVideoApi/tr.md)
 
-Wan 2.7 Görüntüden Videoya düğümü, bir ilk kare görüntüsünden başlayarak bir video oluşturur. İsteğe bağlı olarak, iki kare arasında geçiş oluşturmak için bir son kare görüntüsü veya videonun hareketini ve zamanlamasını yönlendirmek için bir ses dosyası sağlayabilirsiniz. Düğüm, metin açıklamanıza dayanarak sahneyi canlandırmak için bir yapay zeka modeli kullanır.
+Wan 2.7 Görüntüden Videoya düğümü, bir başlangıç karesi görüntüsünden başlayarak bir video oluşturur. İsteğe bağlı olarak, iki kare arasında geçiş oluşturmak için bir bitiş karesi görüntüsü veya videonun hareketini ve zamanlamasını yönlendirmek için bir ses dosyası sağlayabilirsiniz. Düğüm, metin açıklamanıza dayanarak sahneyi canlandırmak için bir yapay zeka modeli kullanır.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
+|-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"wan2.7-i2v"` | Video oluşturma için kullanılacak yapay zeka modeli. |
-| `model.prompt` | STRING | Evet | - | Videoda istediğiniz öğelerin ve görsel özelliklerin metin açıklaması. İngilizce ve Çinceyi destekler. |
+| `model.prompt` | STRING | Evet | - | Videoda görmek istediğiniz öğelerin ve görsel özelliklerin metin açıklaması. İngilizce ve Çinceyi destekler. |
 | `model.negative_prompt` | STRING | Evet | - | Modelin kaçınmasını istediğiniz öğelerin veya özelliklerin metin açıklaması. |
 | `model.resolution` | COMBO | Evet | `"720P"`<br>`"1080P"` | Çıktı videosunun çözünürlüğü. |
 | `model.duration` | INT | Evet | 2 ila 15 | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). |
@@ -23,5 +23,8 @@ Wan 2.7 Görüntüden Videoya düğümü, bir ilk kare görüntüsünden başlay
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
+|-------------|-----------|-------------|
 | `output` | VIDEO | Oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `ccd18dca3b191f2cbe64b6c2b941a7efcf281e4f327329d932cec27fd8234133`

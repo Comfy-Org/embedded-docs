@@ -1,15 +1,18 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/zh-TW.md)
 
-此節點允許您選擇標誌點陣樣式並從可用的子樣式中進行選擇。它專門用於生成具有點陣樣式選項的標誌設計，為標誌創作提供多種視覺處理方式。
+此節點用於選擇標誌點陣樣式及可選的子樣式，以生成標誌圖像。它專注於透過點陣式視覺處理來創建標誌設計。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `子風格` | STRING | 是 | 提供多個選項 | 用於標誌生成的特定標誌點陣子樣式 |
+| `substyle` | STRING | 是 | 提供多個選項 | 用於標誌生成的特定標誌點陣子樣式 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | IMAGE | 應用所選點陣樣式後生成的標誌圖像 |
+| `recraft_style` | CUSTOM | 所選的 Recraft 樣式配置，包含標誌點陣樣式及選擇的子樣式 |
+
+---
+**Source fingerprint (SHA-256):** `cf4a7953e36ea824b4ddd00060174ede017d30640a70099b106b6de7f49fefbb`

@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentSmartTopologyNode/en.md)
 
-This node performs smart retopology on a 3D model, which is the process of automatically creating a new, cleaner mesh with a lower polygon count. It connects to a Tencent Hunyuan 3D API to process the model, supporting GLB and OBJ file formats. The node returns the processed model as an OBJ file.
+This node performs smart retopology on a 3D model, automatically creating a new, cleaner mesh with optimized polygon count. It connects to a Tencent Hunyuan 3D API to process the model, supporting GLB and OBJ file formats up to 200MB. The node returns the processed model as an OBJ file.
 
 ## Inputs
 
@@ -18,3 +18,6 @@ This node performs smart retopology on a 3D model, which is the process of autom
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `OBJ` | FILE3D | The processed 3D model with optimized topology, returned in OBJ format. |
+
+---
+**Source fingerprint (SHA-256):** `13c2dce5f5fbc46a505d0366d8da1c4e762d3a64d11fae1bcceebd510b273f62`

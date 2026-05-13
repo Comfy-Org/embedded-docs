@@ -24,3 +24,6 @@ When you select a value for `frames` (e.g., "3"), the node will show a correspon
 | Output Name | Data Type | Description |
 | :--- | :--- | :--- |
 | `output` | VIDEO | The generated video file containing all the animated transitions. |
+
+---
+**Source fingerprint (SHA-256):** `02ddbb1e041b6d9e6654ab6c3cc25f4c2e5bc1545d84a30624608edc85e51f96`

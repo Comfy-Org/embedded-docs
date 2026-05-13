@@ -16,4 +16,8 @@ The Rodin3D_Gen2 node generates 3D assets using the Rodin API. It takes input im
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `3D Model Path` | STRING | File path to the generated 3D model |
+| `3D Model Path` | STRING | File path to the generated 3D model (for backward compatibility) |
+| `GLB` | FILE3DGLB | The generated 3D model in GLB format |
+
+---
+**Source fingerprint (SHA-256):** `940712a9a40f4cb07050f3ed7ac502469b30bd364f86bb42b9dd8bf63eb912a2`

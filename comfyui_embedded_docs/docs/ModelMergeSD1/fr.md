@@ -1,15 +1,15 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/fr.md)
 
-Le nœud ModelMergeSD1 vous permet de fusionner deux modèles Stable Diffusion 1.x en ajustant l'influence des différents composants du modèle. Il offre un contrôle individuel sur l'embedding temporel, l'embedding de label et tous les blocs d'entrée, intermédiaires et de sortie, permettant une fusion de modèles affinée pour des cas d'utilisation spécifiques.
+Le nœud ModelMergeSD1 vous permet de fusionner deux modèles Stable Diffusion 1.x en ajustant l'influence de différents composants du modèle. Il offre un contrôle individuel sur l'intégration temporelle, l'intégration d'étiquettes, ainsi que tous les blocs d'entrée, intermédiaires et de sortie, permettant un fusionnement de modèles finement ajusté pour des cas d'utilisation spécifiques.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
 | `model1` | MODEL | Oui | - | Le premier modèle à fusionner |
-| `model2` | MODEL | Oui | - | Le deuxième modèle à fusionner |
-| `time_embed.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de la couche d'embedding temporel (par défaut : 1.0) |
-| `label_emb.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de la couche d'embedding de label (par défaut : 1.0) |
+| `model2` | MODEL | Oui | - | Le second modèle à fusionner |
+| `time_embed.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de la couche d'intégration temporelle (par défaut : 1.0) |
+| `label_emb.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de la couche d'intégration d'étiquettes (par défaut : 1.0) |
 | `input_blocks.0.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion du bloc d'entrée 0 (par défaut : 1.0) |
 | `input_blocks.1.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion du bloc d'entrée 1 (par défaut : 1.0) |
 | `input_blocks.2.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion du bloc d'entrée 2 (par défaut : 1.0) |
@@ -41,6 +41,9 @@ Le nœud ModelMergeSD1 vous permet de fusionner deux modèles Stable Diffusion 1
 
 ## Sorties
 
-| Sortie | Type de données | Description |
+| Nom de la sortie | Type de données | Description |
 |-------------|-----------|-------------|
 | `MODEL` | MODEL | Le modèle fusionné combinant les caractéristiques des deux modèles d'entrée |
+
+---
+**Source fingerprint (SHA-256):** `512c62fb5a4e1b7f90f5ad5b80de5818659a20c8f4b024cfa33ca13b823efad8`

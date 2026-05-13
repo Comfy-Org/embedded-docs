@@ -1,19 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FeatherMask/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FeatherMask/tr.md)
 
-`FeatherMask` düğümü, verilen bir maskenin kenarlarına tüylendirme efekti uygular, her kenardan belirtilen mesafelere göre opaklıklarını ayarlayarak maskenin kenarlarını yumuşak bir şekilde geçiş yaptırır. Bu, daha yumuşak, daha harmanlanmış bir kenar efekti oluşturur.
+`FeatherMask` düğümü, belirtilen bir maskenin kenarlarına yumuşatma efekti uygulayarak, maskenin kenarlarını her bir kenardan belirtilen mesafelere göre opaklıklarını ayarlayarak kademeli olarak geçiş yapar. Bu, daha yumuşak ve daha harmanlanmış bir kenar efekti oluşturur.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Tipi | Açıklama |
-|-----------|-----------|-------------|
-| `maske`    | MASK      | Tüylendirme efektinin uygulanacağı maske. Tüylendirmenin etkileyeceği görüntü alanını belirler. |
-| `sol`    | INT       | Tüylendirme efektinin uygulanacağı sol kenardan itibaren olan mesafeyi belirtir. |
-| `üst`     | INT       | Tüylendirme efektinin uygulanacağı üst kenardan itibaren olan mesafeyi belirtir. |
-| `sağ`   | INT       | Tüylendirme efektinin uygulanacağı sağ kenardan itibaren olan mesafeyi belirtir. |
-| `alt`  | INT       | Tüylendirme efektinin uygulanacağı alt kenardan itibaren olan mesafeyi belirtir. |
+| Parametre | Veri Türü | Açıklama |
+|-----------|--------------|-------------|
+| `mask`    | MASK         | Yumuşatma efektinin uygulanacağı maske. Yumuşatmadan etkilenecek görüntü alanını belirler. |
+| `left`    | INT          | Yumuşatma efektinin uygulanacağı sol kenardan olan mesafeyi belirtir. |
+| `top`     | INT          | Yumuşatma efektinin uygulanacağı üst kenardan olan mesafeyi belirtir. |
+| `right`   | INT          | Yumuşatma efektinin uygulanacağı sağ kenardan olan mesafeyi belirtir. |
+| `bottom`  | INT          | Yumuşatma efektinin uygulanacağı alt kenardan olan mesafeyi belirtir. |
 
 ## Çıktılar
 
-| Parametre | Veri Tipi | Açıklama |
-|-----------|-----------|-------------|
-| `maske`    | MASK      | Çıktı, kenarlarına tüylendirme efekti uygulanmış, girdi maskesinin değiştirilmiş bir versiyonudur. |
+| Parametre | Veri Türü | Açıklama |
+|-----------|--------------|-------------|
+| `mask`    | MASK         | Çıktı, kenarlarına yumuşatma efekti uygulanmış, giriş maskesinin değiştirilmiş bir sürümüdür. |

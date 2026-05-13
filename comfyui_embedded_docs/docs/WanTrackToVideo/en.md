@@ -28,3 +28,6 @@ The WanTrackToVideo node converts motion tracking data into video sequences by p
 | `positive` | CONDITIONING | Positive conditioning with motion track information applied |
 | `negative` | CONDITIONING | Negative conditioning with motion track information applied |
 | `latent` | LATENT | Generated video latent representation |
+
+---
+**Source fingerprint (SHA-256):** `b3e12492d3dafa100266f6be8fe05e4d62b827f1a2bdb4029f804b107dc691ed`

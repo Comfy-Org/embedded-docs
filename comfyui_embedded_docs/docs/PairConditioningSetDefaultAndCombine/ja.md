@@ -1,20 +1,23 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetDefaultAndCombine/ja.md)
 
-PairConditioningSetDefaultAndCombineノードは、デフォルトのコンディショニング値を設定し、入力されたコンディショニングデータと結合します。このノードは、ポジティブおよびネガティブなコンディショニング入力と、それらに対応するデフォルト値を取り込み、ComfyUIのフックシステムを通じて処理し、デフォルト値を組み込んだ最終的なコンディショニング出力を生成します。
+**PairConditioningSetDefaultAndCombine** ノードは、デフォルトの条件付け値を設定し、それを入力条件付けデータと結合します。ポジティブおよびネガティブの条件付け入力と、それぞれに対応するデフォルト値を受け取り、ComfyUIのフックシステムを通じて処理することで、デフォルト値を組み込んだ最終的な条件付け出力を生成します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | はい | - | 処理対象の主要なポジティブコンディショニング入力 |
-| `negative` | CONDITIONING | はい | - | 処理対象の主要なネガティブコンディショニング入力 |
-| `positive_DEFAULT` | CONDITIONING | はい | - | フォールバックとして使用されるデフォルトのポジティブコンディショニング値 |
-| `negative_DEFAULT` | CONDITIONING | はい | - | フォールバックとして使用されるデフォルトのネガティブコンディショニング値 |
+| `positive` | CONDITIONING | はい | - | 処理対象となる主要なポジティブ条件付け入力 |
+| `negative` | CONDITIONING | はい | - | 処理対象となる主要なネガティブ条件付け入力 |
+| `positive_DEFAULT` | CONDITIONING | はい | - | フォールバックとして使用されるデフォルトのポジティブ条件付け値 |
+| `negative_DEFAULT` | CONDITIONING | はい | - | フォールバックとして使用されるデフォルトのネガティブ条件付け値 |
 | `hooks` | HOOKS | いいえ | - | カスタム処理ロジックのためのオプションのフックグループ |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | デフォルト値が組み込まれた処理済みのポジティブコンディショニング |
-| `negative` | CONDITIONING | デフォルト値が組み込まれた処理済みのネガティブコンディショニング |
+| `positive` | CONDITIONING | デフォルト値が組み込まれた、処理済みのポジティブ条件付け |
+| `negative` | CONDITIONING | デフォルト値が組み込まれた、処理済みのネガティブ条件付け |
+
+---
+**Source fingerprint (SHA-256):** `dfa47d0fe02e81db8b68d20ae9b765c2518773f4f7fc8caf774cb870267dbb21`

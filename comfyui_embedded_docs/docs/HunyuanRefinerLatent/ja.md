@@ -1,20 +1,27 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/ja.md)
 
-HunyuanRefinerLatentノードは、条件付けと潜在入力を処理して精緻化操作を行うノードです。潜在画像データを組み込みながら、ポジティブ条件付けとネガティブ条件付けの両方にノイズ拡張を適用し、さらなる処理のために特定の次元を持つ新しい潜在出力を生成します。
+以下が翻訳結果です。
+
+---
+
+HunyuanRefinerLatent ノードは、リファインメント処理のために conditioning と潜在変数の入力を処理します。ポジティブおよびネガティブの両方の conditioning にノイズ拡張を適用し、潜在画像データを組み込みながら、さらなる処理のための特定の次元を持つ新しい潜在変数出力を生成します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | はい | - | 処理対象のポジティブ条件付け入力 |
-| `negative` | CONDITIONING | はい | - | 処理対象のネガティブ条件付け入力 |
-| `latent` | LATENT | はい | - | 潜在表現入力 |
+| `positive` | CONDITIONING | はい | - | 処理されるポジティブ conditioning 入力 |
+| `negative` | CONDITIONING | はい | - | 処理されるネガティブ conditioning 入力 |
+| `latent` | LATENT | はい | - | 潜在表現の入力 |
 | `noise_augmentation` | FLOAT | はい | 0.0 - 1.0 | 適用するノイズ拡張の量（デフォルト: 0.10） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | ノイズ拡張と潜在画像連結が適用された処理済みポジティブ条件付け |
-| `negative` | CONDITIONING | ノイズ拡張と潜在画像連結が適用された処理済みネガティブ条件付け |
-| `latent` | LATENT | [バッチサイズ, 32, 高さ, 幅, チャンネル] の次元を持つ新しい潜在出力 |
+| `positive` | CONDITIONING | ノイズ拡張と潜在画像の結合が適用された、処理済みのポジティブ conditioning |
+| `negative` | CONDITIONING | ノイズ拡張と潜在画像の結合が適用された、処理済みのネガティブ conditioning |
+| `latent` | LATENT | 次元 [batch_size, 32, height, width, channels] を持つ新しい潜在変数出力 |
+
+---
+**Source fingerprint (SHA-256):** `f097b58f1948e5c0801f81b51a5189619695a6afa189368aff4c64b126fc5ce5`

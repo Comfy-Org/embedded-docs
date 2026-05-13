@@ -7,9 +7,9 @@ O nó Painter fornece uma tela interativa para criar ou editar imagens e máscar
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
 | `image` | IMAGE | Não | - | Imagem base opcional para pintar por cima. Se não for fornecida, uma tela em branco é criada usando a cor de fundo, largura e altura especificadas. |
-| `mask` | STRING | Sim | - | Os dados de pintura, normalmente gerados pelo widget interativo integrado do nó. Este parâmetro é gerenciado pela ferramenta de pintura da interface e não deve ser conectado a um soquete padrão. |
-| `width` | INT | Sim | 64 a 4096 | A largura da tela em pixels, usada quando nenhuma `image` base é fornecida. O valor deve ser múltiplo de 64. O padrão é 512. |
-| `height` | INT | Sim | 64 a 4096 | A altura da tela em pixels, usada quando nenhuma `image` base é fornecida. O valor deve ser múltiplo de 64. O padrão é 512. |
+| `mask` | STRING | Sim | - | Os dados da pintura, normalmente gerados pelo widget interativo integrado do nó. Este parâmetro é gerenciado pela ferramenta de pintura da interface e não deve ser conectado a um soquete padrão. |
+| `width` | INT | Sim | 64 a 4096 | A largura da tela em pixels, usada quando nenhuma `image` base é fornecida. O valor deve ser um múltiplo de 64. O padrão é 512. |
+| `height` | INT | Sim | 64 a 4096 | A altura da tela em pixels, usada quando nenhuma `image` base é fornecida. O valor deve ser um múltiplo de 64. O padrão é 512. |
 | `bg_color` | COLOR | Sim | - | A cor de fundo da tela, especificada como um código hexadecimal (ex.: #000000). Isso é usado apenas quando nenhuma `image` base é fornecida. O padrão é preto (#000000). |
 
 **Observação:** A entrada `mask` foi projetada para funcionar com o widget de interface especializado do nó. Quando você pinta na tela, o widget preenche automaticamente esse valor. As entradas `width` e `height` ficam ocultas na interface padrão, mas definem as dimensões da tela ao criar uma nova imagem.
@@ -20,3 +20,6 @@ O nó Painter fornece uma tela interativa para criar ou editar imagens e máscar
 |---------------|---------------|-----------|
 | `IMAGE` | IMAGE | A imagem final composta. Este é o resultado da mesclagem das áreas pintadas (da `mask`) sobre a `image` base fornecida ou o fundo colorido. |
 | `MASK` | MASK | A máscara de canal alfa (transparência) extraída da pintura. As áreas brancas representam as regiões pintadas, e as áreas pretas representam o fundo não modificado. |
+
+---
+**Source fingerprint (SHA-256):** `ae926b6d30aab65737bd99a58cb7de5a71fa36e61a677dbc97fc30b8ef8d2418`

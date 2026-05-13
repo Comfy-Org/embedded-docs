@@ -2,6 +2,8 @@
 
 The OpenAIVideoSora2 node generates videos using OpenAI's Sora models. It creates video content based on text prompts and optional input images, then returns the generated video output. The node supports different video durations and resolutions depending on the selected model.
 
+**DEPRECATION NOTICE:** OpenAI will stop serving the Sora v2 API in September 2026. This node will be removed from ComfyUI at that time.
+
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
@@ -24,3 +26,6 @@ The OpenAIVideoSora2 node generates videos using OpenAI's Sora models. It create
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video output |
+
+---
+**Source fingerprint (SHA-256):** `c87b696dd92c6a6a929f49d189a375b1ebed80bf47f24667ee17c0b210330e55`

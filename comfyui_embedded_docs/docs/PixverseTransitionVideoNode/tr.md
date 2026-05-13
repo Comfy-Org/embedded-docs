@@ -1,24 +1,27 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTransitionVideoNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTransitionVideoNode/tr.md)
 
-Prompt ve output_size değerlerine dayalı olarak video oluşturur. Bu düğüm, PixVerse API'sini kullanarak iki giriş görüntüsü arasında geçiş videoları oluşturur ve video kalitesi, süresi, hareket stili ve oluşturma parametrelerini belirtmenize olanak tanır.
+PixVerse API'sini kullanarak iki giriş görüntüsü arasında bir geçiş videosu oluşturur. Bir başlangıç görüntüsü ve bir bitiş görüntüsü sağlarsınız; düğüm, metin isteminiz ve seçtiğiniz ayarlar doğrultusunda birinden diğerine yumuşak bir geçiş yapan bir video oluşturur.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `ilk_kare` | IMAGE | Evet | - | Video geçişi için başlangıç görüntüsü |
-| `son_kare` | IMAGE | Evet | - | Video geçişi için bitiş görüntüsü |
-| `istem` | STRING | Evet | - | Video oluşturma için prompt (varsayılan: boş string) |
-| `kalite` | COMBO | Evet | PixVerseQuality enum'undan mevcut kalite seçenekleri<br>Varsayılan: res_540p | Video kalite ayarı |
-| `süre_saniye` | COMBO | Evet | PixVerseDuration enum'undan mevcut süre seçenekleri | Video süresi saniye cinsinden |
-| `hareket_modu` | COMBO | Evet | PixVerseMotionMode enum'undan mevcut hareket modu seçenekleri | Geçiş için hareket stili |
-| `tohum` | INT | Evet | 0 ile 2147483647 arası | Video oluşturma için seed değeri (varsayılan: 0) |
-| `negatif_istem` | STRING | Hayır | - | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş string) |
+| `first_frame` | IMAGE | Evet | - | Video geçişi için başlangıç görüntüsü |
+| `last_frame` | IMAGE | Evet | - | Video geçişi için bitiş görüntüsü |
+| `prompt` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize) |
+| `quality` | COMBO | Evet | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` | Video kalite ayarı (varsayılan: `"540p"`) |
+| `duration_seconds` | COMBO | Evet | `5`<br>`8` | Video süresi (saniye cinsinden) |
+| `motion_mode` | COMBO | Evet | `"normal"`<br>`"fast"` | Geçiş için hareket stili (varsayılan: `"normal"`) |
+| `seed` | INT | Evet | 0 ile 2147483647 arası | Video oluşturma için tohum değeri (varsayılan: 0) |
+| `negative_prompt` | STRING | Hayır | - | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) |
 
-**Not:** 1080p kalite kullanıldığında, hareket modu otomatik olarak normal olarak ayarlanır ve süre 5 saniye ile sınırlandırılır. 5 saniye olmayan süreler için hareket modu da otomatik olarak normal olarak ayarlanır.
+**Parametre kısıtlamalarına ilişkin not:** 1080p kalitesi kullanıldığında, hareket modu otomatik olarak `"normal"` olarak ayarlanır ve süre 5 saniye ile sınırlandırılır. 5 saniye dışındaki herhangi bir süre için hareket modu da otomatik olarak `"normal"` olarak ayarlanır.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | VIDEO | Oluşturulan geçiş videosu |
+
+---
+**Source fingerprint (SHA-256):** `0b7f1e11d513c543df144031452bd9cd80e73c596aee8ffe9701bf471bf5983c`

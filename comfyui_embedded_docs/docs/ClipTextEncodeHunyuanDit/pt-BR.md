@@ -1,18 +1,20 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHunyuanDiT/pt-BR.md)
 
-O nó `CLIPTextEncodeHunyuanDiT` tem como função principal converter texto de entrada em uma forma que o modelo possa compreender. É um nó de condicionamento avançado, projetado especificamente para a arquitetura de codificador de texto duplo do modelo HunyuanDiT.
-Seu papel principal é semelhante ao de um tradutor, convertendo nossas descrições textuais em "linguagem de máquina" que o modelo de IA possa entender. As entradas `bert` e `mt5xl` preferem tipos diferentes de entrada de prompt.
+O nó `CLIPTextEncodeHunyuanDiT` converte descrições textuais em um formato compreensível para o modelo HunyuanDiT. É um nó de condicionamento avançado projetado para a arquitetura de codificador de texto duplo do HunyuanDiT, processando duas entradas de texto separadas por meio de diferentes tokenizadores.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Descrição |
-|-----------|-----------|-------------|
-| `clip` | CLIP | Uma instância do modelo CLIP usada para tokenização e codificação de texto, sendo essencial para gerar as condições. |
-| `bert` | STRING | Entrada de texto para codificação, prefere frases e palavras-chave, suporta múltiplas linhas e prompts dinâmicos. |
-| `mt5xl` | STRING | Outra entrada de texto para codificação, suporta múltiplas linhas e prompts dinâmicos (multilíngue), pode usar frases completas e descrições complexas. |
+| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
+|-----------|---------------|-------------|-----------|-----------|
+| `clip` | CLIP | Sim | - | Uma instância do modelo CLIP usada para tokenização e codificação de texto, essencial para gerar condições. |
+| `bert` | STRING | Sim | - | Entrada de texto para codificação via tokenizador BERT. Prefere frases e palavras-chave. Suporta múltiplas linhas e prompts dinâmicos. |
+| `mt5xl` | STRING | Sim | - | Entrada de texto para codificação via tokenizador mT5-XL. Suporta múltiplas linhas e prompts dinâmicos (multilíngue). Pode usar frases completas e descrições complexas. |
 
 ## Saídas
 
-| Parâmetro | Tipo de Dados | Descrição |
-|-----------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | A saída condicional codificada, usada para processamento posterior em tarefas de geração. |
+| Nome da Saída | Tipo de Dados | Descrição |
+|---------------|---------------|-----------|
+| `CONDITIONING` | CONDITIONING | A saída de condicionamento codificada, combinando o texto tokenizado tanto do BERT quanto do mT5-XL, usada para processamento adicional em tarefas de geração. |
+
+---
+**Source fingerprint (SHA-256):** `6a8d649708b315c42b7933b52fad7e0b45aa34c168616f18a2178041148eeea1`

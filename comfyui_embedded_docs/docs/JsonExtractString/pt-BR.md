@@ -6,15 +6,18 @@ O nó JsonExtractString lê uma string de texto contendo dados JSON e extrai o v
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `json_string` | STRING | Sim | N/A | O texto contendo os dados JSON a serem analisados. |
 | `key` | STRING | Sim | N/A | A chave específica cujo valor em string você deseja extrair do objeto JSON. |
 
-**Observação:** O nó extrai apenas valores de objetos JSON (dicionários). Se o JSON analisado não for um objeto ou se a chave especificada não existir dentro dele, a saída será uma string vazia.
+**Nota:** O nó extrai apenas valores de objetos JSON (dicionários). Se o JSON analisado não for um objeto ou se a chave especificada não existir dentro dele, a saída será uma string vazia.
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `output` | STRING | O valor em string extraído do JSON para a chave especificada, ou uma string vazia se a extração falhar. |
+
+---
+**Source fingerprint (SHA-256):** `f05e2d9fd4888870a844c85ac7543d6c38c1c56f2ef22a402fc93ee716743612`

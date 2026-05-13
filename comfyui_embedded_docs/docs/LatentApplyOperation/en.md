@@ -14,3 +14,6 @@ The LatentApplyOperation node applies a specified operation to latent samples. I
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | LATENT | The modified latent samples after applying the operation |
+
+---
+**Source fingerprint (SHA-256):** `77147b480fe8cb48eb26a31f6f0c7bc038e07d26e628ebe361861394946d8678`

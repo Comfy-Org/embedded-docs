@@ -28,17 +28,17 @@ ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış 
 
 Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
 
-Reve Image Create düğümü, Reve AI modelini kullanarak metin açıklamalarından görseller oluşturur. Bir metin istemini Reve API'sine gönderir ve oluşturulan görseli döndürür. Görselin en-boy oranını kontrol edebilir ve yükseltme gibi isteğe bağlı son işleme efektleri uygulayabilirsiniz.
+Reve Image Create düğümü, Reve AI modelini kullanarak metin açıklamalarından görseller oluşturur. Bir metin istemini Reve API'sine gönderir ve oluşturulan görseli döndürür. Görselin en boy oranını kontrol edebilir ve yükseltme gibi isteğe bağlı işlem sonrası efektler uygulayabilirsiniz.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Evet | Yok | İstenen görselin metin açıklaması. Maksimum 2560 karakter. |
-| `model` | COMBO | Evet | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Oluşturma için kullanılacak model sürümü ve en-boy oranı. İlk seçenek modeli seçer, sonraki seçenekler ise görselin en-boy oranını tanımlar. |
-| `upscale` | COMBO | Hayır | `"disabled"`<br>`"enabled"` | Yükseltme son işleme adımını etkinleştirir veya devre dışı bırakır. Etkinleştirildiğinde, bir yükseltme faktörü de seçmelisiniz. |
-| `upscale_factor` | COMBO | Hayır | `2`<br>`3`<br>`4` | Görselin çözünürlüğünün artırılacağı faktör. Bu parametre yalnızca `upscale` `"enabled"` olarak ayarlandığında etkindir. |
-| `remove_background` | BOOLEAN | Hayır | Yok | Etkinleştirildiğinde, oluşturulan görsele bir arka plan kaldırma son işleme adımı uygular. |
+| `model` | COMBO | Evet | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Oluşturma için kullanılacak model sürümü ve en boy oranı. İlk seçenek modeli seçer, sonraki seçenekler görselin en boy oranını tanımlar. |
+| `upscale` | COMBO | Hayır | `"disabled"`<br>`"enabled"` | Yükseltme işlem sonrası adımını etkinleştirir veya devre dışı bırakır. Etkinleştirildiğinde, bir yükseltme faktörü de seçmelisiniz. |
+| `upscale_factor` | COMBO | Hayır | `2`<br>`3`<br>`4` | Görselin çözünürlüğünü artırma faktörü. Bu parametre yalnızca `upscale` `"enabled"` olarak ayarlandığında etkindir. |
+| `remove_background` | BOOLEAN | Hayır | Yok | Etkinleştirildiğinde, oluşturulan görsele arka plan kaldırma işlem sonrası adımı uygular. |
 | `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eden bir tohum değeri. Not: Tohum değerinden bağımsız olarak sonuçlar deterministik değildir. Varsayılan: 0. |
 
 **Not:** `upscale_factor` parametresi, `upscale` parametresinin `"enabled"` olarak ayarlanmasına bağlıdır. `seed` parametresi deterministik çıktıları garanti etmez.
@@ -48,3 +48,6 @@ Reve Image Create düğümü, Reve AI modelini kullanarak metin açıklamaların
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `image` | IMAGE | Giriş istemine dayalı olarak Reve modeli tarafından oluşturulan görsel. |
+
+---
+**Source fingerprint (SHA-256):** `56cb32ad254d39609d9795ca29f1ccba1db2c5a7ac5bb530475298306ec4ea19`

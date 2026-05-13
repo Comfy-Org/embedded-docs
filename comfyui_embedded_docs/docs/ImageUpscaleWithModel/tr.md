@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageUpscaleWithModel/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageUpscaleWithModel/tr.md)
 
-Bu düğüm, belirli bir yükseltme modeli kullanarak görüntüleri yükseltmek için tasarlanmıştır. Görüntüyü uygun cihaza ayarlayarak, bellek kullanımını optimize ederek ve olası bellek yetersizliği hatalarını önlemek için yükseltme modelini mozaik yöntemiyle uygulayarak yükseltme işlemini verimli bir şekilde yönetir.
+Bu düğüm, belirtilen bir yükseltme modelini kullanarak görüntüleri yükseltmek için tasarlanmıştır. Görüntüyü uygun cihaza ayarlayarak, bellek kullanımını optimize ederek ve olası bellek taşması hatalarını önlemek için yükseltme modelini döşemeli bir şekilde uygulayarak yükseltme sürecini verimli bir şekilde yönetir.
 
 ## Girişler
 
-| Parametre         | Comfy Veri Türü   | Açıklama                                                                 |
+| Parametre         | Comfy dtype       | Açıklama                                                                 |
 |-------------------|-------------------|----------------------------------------------------------------------------|
-| `büyütme_modeli`   | `UPSCALE_MODEL`   | Görüntüyü yükseltmek için kullanılacak yükseltme modeli. Yükseltme algoritmasını ve parametrelerini tanımlamak için çok önemlidir. |
-| `görüntü`           | `IMAGE`           | Yükseltilecek görüntü. Bu giriş, yükseltme işlemine tabi tutulacak kaynak içeriği belirlemek için gereklidir. |
+| `upscale_model`   | `UPSCALE_MODEL`   | Görüntüyü yükseltmek için kullanılacak yükseltme modeli. Yükseltme algoritmasını ve parametrelerini tanımlamak için çok önemlidir. |
+| `image`           | `IMAGE`           | Yükseltilecek görüntü. Bu girdi, yükseltme işlemine tabi tutulacak kaynak içeriğin belirlenmesi için gereklidir. |
 
-## Çıkışlar
+## Çıktılar
 
-| Parametre | Veri Türü   | Açıklama                                        |
+| Parametre | Veri Türü | Açıklama                                        |
 |-----------|-------------|----------------------------------------------------|
-| `görüntü`   | `IMAGE`     | Yükseltme modeli tarafından işlenen yükseltilmiş görüntü. Bu çıktı, yükseltme işleminin sonucu olup, geliştirilmiş çözünürlüğü veya kaliteyi sergiler. |
+| `image`   | `IMAGE`     | Yükseltme modeli tarafından işlenmiş, yükseltilmiş görüntü. Bu çıktı, yükseltme işleminin sonucudur ve geliştirilmiş çözünürlük veya kaliteyi sergiler. |

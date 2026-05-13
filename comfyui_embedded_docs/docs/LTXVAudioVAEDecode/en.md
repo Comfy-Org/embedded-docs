@@ -15,4 +15,7 @@ The LTXV Audio VAE Decode node converts a latent representation of audio back in
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `Audio` | AUDIO | The decoded audio waveform and its associated sample rate. |
+| `Audio` | AUDIO | The decoded audio waveform and its associated sample rate. The waveform is a tensor moved to the same device as the input latent, and the sample rate is determined by the Audio VAE model. |
+
+---
+**Source fingerprint (SHA-256):** `e9df1da8ca0424cfc7ce97951e65154df845d98c3b73f76725fa657d851a3a07`

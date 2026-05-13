@@ -5,12 +5,12 @@ O nó `ImageBatch` é projetado para combinar duas imagens em um único lote. Se
 ## Entradas
 
 | Parâmetro | Tipo de Dados | Descrição |
-|-----------|-------------|-------------|
-| `image1`  | `IMAGE`     | A primeira imagem a ser combinada no lote. Serve como referência para as dimensões às quais a segunda imagem será ajustada, se necessário. |
-| `image2`  | `IMAGE`     | A segunda imagem a ser combinada no lote. É redimensionada automaticamente para corresponder às dimensões da primeira imagem se elas forem diferentes. |
+|-----------|---------------|-----------|
+| `image1`  | `IMAGE`       | A primeira imagem a ser combinada no lote. Ela serve como referência para as dimensões às quais a segunda imagem será ajustada, se necessário. |
+| `image2`  | `IMAGE`       | A segunda imagem a ser combinada no lote. Ela é automaticamente redimensionada para corresponder às dimensões da primeira imagem, caso sejam diferentes. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
-|-----------|-------------|-------------|
-| `image`   | `IMAGE`     | O lote combinado de imagens, com a segunda imagem redimensionada para corresponder às dimensões da primeira, se necessário. |
+|-----------|---------------|-----------|
+| `image`   | `IMAGE`       | O lote combinado de imagens, com a segunda imagem redimensionada para corresponder às dimensões da primeira, se necessário. |

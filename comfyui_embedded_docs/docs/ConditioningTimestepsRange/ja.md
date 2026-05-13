@@ -1,18 +1,21 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/ja.md)
 
-ConditioningTimestepsRangeノードは、生成プロセス中にコンディショニング効果が適用されるタイミングを制御するための3つの異なるタイムステップ範囲を作成します。開始パーセンテージと終了パーセンテージの値を受け取り、タイムステップの全範囲（0.0から1.0）を3つのセグメントに分割します：指定されたパーセンテージ間のメイン範囲、開始パーセンテージ前の範囲、および終了パーセンテージ後の範囲です。
+ConditioningTimestepsRange ノードは、生成プロセス中にコンディショニング効果を適用するタイミングを制御するための、3つの異なるタイムステップ範囲を作成します。開始パーセント値と終了パーセント値を受け取り、タイムステップ全体の範囲（0.0 から 1.0）を次の3つのセグメントに分割します：指定されたパーセンテージ間のメイン範囲、開始パーセンテージより前の範囲、および終了パーセンテージより後の範囲です。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `開始パーセント` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の開始パーセンテージ（デフォルト: 0.0） |
-| `終了パーセント` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の終了パーセンテージ（デフォルト: 1.0） |
+| `start_percent` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の開始パーセンテージ（デフォルト：0.0） |
+| `end_percent` | FLOAT | はい | 0.0 - 1.0 | タイムステップ範囲の終了パーセンテージ（デフォルト：1.0） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `範囲前` | TIMESTEPS_RANGE | start_percentとend_percentで定義されるメインのタイムステップ範囲 |
-| `範囲後` | TIMESTEPS_RANGE | 0.0からstart_percentまでのタイムステップ範囲 |
-| `AFTER_RANGE` | TIMESTEPS_RANGE | end_percentから1.0までのタイムステップ範囲 |
+| `TIMESTEPS_RANGE` | TIMESTEPS_RANGE | start_percent と end_percent によって定義されるメインのタイムステップ範囲 |
+| `BEFORE_RANGE` | TIMESTEPS_RANGE | 0.0 から start_percent までのタイムステップ範囲 |
+| `AFTER_RANGE` | TIMESTEPS_RANGE | end_percent から 1.0 までのタイムステップ範囲 |
+
+---
+**Source fingerprint (SHA-256):** `dee21b5ac80fabdeacf3f4a985550fff795702e02911400ae49a97baae834e5e`

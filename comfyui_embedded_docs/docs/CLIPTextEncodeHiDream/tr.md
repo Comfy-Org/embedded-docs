@@ -1,21 +1,24 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/tr.md)
 
-CLIPTextEncodeHiDream düğümü, birden fazla metin girişini farklı dil modelleri kullanarak işler ve bunları tek bir koşullandırma çıktısında birleştirir. Dört farklı kaynaktan (CLIP-L, CLIP-G, T5-XXL ve LLaMA) gelen metinleri tokenleştirir ve planlanmış bir kodlama yaklaşımı kullanarak bunları kodlar. Bu, birden fazla dil modelinden aynı anda yararlanarak daha karmaşık metin koşullandırmasına olanak tanır.
+CLIPTextEncodeHiDream düğümü, dört ayrı metin girdisini farklı dil modelleri (CLIP-L, CLIP-G, T5-XXL ve LLaMA) kullanarak işler ve bunları tek bir koşullama çıktısında birleştirir. Her metin girdisini karşılık gelen modeliyle tokenleştirir ve zamanlanmış kodlama yaklaşımı kullanarak birlikte kodlar. Bu sayede, birden fazla dil modelini aynı anda kullanarak daha karmaşık metin koşullaması sağlanır.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | Gerekli Girdi | - | - | Tokenleştirme ve kodlama için kullanılan CLIP modeli |
-| `clip_l` | STRING | Çok Satırlı Metin | - | - | CLIP-L modeli işlemesi için metin girişi |
-| `clip_g` | STRING | Çok Satırlı Metin | - | - | CLIP-G modeli işlemesi için metin girişi |
-| `t5xxl` | STRING | Çok Satırlı Metin | - | - | T5-XXL modeli işlemesi için metin girişi |
-| `llama` | STRING | Çok Satırlı Metin | - | - | LLaMA modeli işlemesi için metin girişi |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|---------|--------|----------|
+| `clip` | CLIP | Evet | - | Tokenleştirme ve kodlama için kullanılan CLIP modeli |
+| `clip_l` | STRING | Evet | - | CLIP-L modeli işlemesi için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
+| `clip_g` | STRING | Evet | - | CLIP-G modeli işlemesi için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
+| `t5xxl` | STRING | Evet | - | T5-XXL modeli işlemesi için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
+| `llama` | STRING | Evet | - | LLaMA modeli işlemesi için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
 
-**Not:** Tüm metin girdileri dinamik prompt'ları ve çok satırlı metin girişini destekler. Düğüm, planlanmış kodlama süreci aracılığıyla her birinin nihai koşullandırma çıktısına katkıda bulunması nedeniyle, düzgün çalışması için dört metin parametresinin de sağlanmasını gerektirir.
+**Not:** Dört metin girdisinin tamamı (`clip_l`, `clip_g`, `t5xxl` ve `llama`) düzgün çalışma için gereklidir, çünkü her biri zamanlanmış kodlama süreci aracılığıyla nihai koşullama çıktısına katkıda bulunur.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | İşlenen tüm metin girdilerinden birleştirilmiş koşullandırma çıktısı |
+|-----------|-----------|----------|
+| `CONDITIONING` | CONDITIONING | Zamanlanmış kodlama yöntemi kullanılarak kodlanmış, işlenen tüm metin girdilerinden elde edilen birleşik koşullama çıktısı |
+
+---
+**Source fingerprint (SHA-256):** `51d117d82a9d833f095e874bf442d5cf8c46a12313fda6b98e628fa988797565`

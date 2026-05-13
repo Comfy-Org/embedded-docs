@@ -13,3 +13,6 @@ The ManualSigmas node allows you to manually define a custom sequence of noise l
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sigmas` | SIGMAS | The tensor containing the sequence of sigma values extracted from the input string. |
+
+---
+**Source fingerprint (SHA-256):** `b815633dfea8f529f487f46b2d0464fa8c1045df8c4d4ef586bd36ad6f4a28db`

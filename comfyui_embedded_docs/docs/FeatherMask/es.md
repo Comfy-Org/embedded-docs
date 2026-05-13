@@ -1,17 +1,19 @@
-El nodo `FeatherMask` aplica un efecto de desvanecimiento a los bordes de una máscara dada, haciendo una transición suave de los bordes de la máscara al ajustar su opacidad según las distancias especificadas desde cada borde. Esto crea un efecto de borde más suave y difuminado.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FeatherMask/es.md)
+
+El nodo `FeatherMask` aplica un efecto de difuminado en los bordes de una máscara determinada, suavizando la transición de sus bordes al ajustar su opacidad según distancias especificadas desde cada borde. Esto crea un efecto de borde más suave y difuminado.
 
 ## Entradas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|--------------|-------------|
-| `máscara`    | MASK         | La máscara a la que se aplicará el efecto de desvanecimiento. Determina el área de la imagen que se verá afectada por el desvanecimiento. |
-| `izquierda`    | INT          | Especifica la distancia desde el borde izquierdo dentro de la cual se aplicará el efecto de desvanecimiento. |
-| `arriba`     | INT          | Especifica la distancia desde el borde superior dentro de la cual se aplicará el efecto de desvanecimiento. |
-| `derecha`   | INT          | Especifica la distancia desde el borde derecho dentro de la cual se aplicará el efecto de desvanecimiento. |
-| `abajo`  | INT          | Especifica la distancia desde el borde inferior dentro de la cual se aplicará el efecto de desvanecimiento. |
+| `mask`    | MASK         | La máscara a la que se aplicará el efecto de difuminado. Determina el área de la imagen que se verá afectada por el difuminado. |
+| `left`    | INT          | Especifica la distancia desde el borde izquierdo dentro de la cual se aplicará el efecto de difuminado. |
+| `top`     | INT          | Especifica la distancia desde el borde superior dentro de la cual se aplicará el efecto de difuminado. |
+| `right`   | INT          | Especifica la distancia desde el borde derecho dentro de la cual se aplicará el efecto de difuminado. |
+| `bottom`  | INT          | Especifica la distancia desde el borde inferior dentro de la cual se aplicará el efecto de difuminado. |
 
 ## Salidas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|--------------|-------------|
-| `máscara`    | MASK         | La salida es una versión modificada de la máscara de entrada con un efecto de desvanecimiento aplicado a sus bordes. |
+| `mask`    | MASK         | La salida es una versión modificada de la máscara de entrada con un efecto de difuminado aplicado en sus bordes. |

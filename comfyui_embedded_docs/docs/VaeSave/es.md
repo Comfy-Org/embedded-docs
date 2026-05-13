@@ -1,12 +1,13 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAESave/es.md)
 
-El nodo VAESave está diseñado para guardar modelos VAE junto con sus metadatos, incluyendo prompts e información adicional en PNG, en un directorio de salida especificado. Este nodo encapsula la funcionalidad para serializar el estado del modelo y la información asociada en un archivo, facilitando la preservación y el intercambio de modelos entrenados.
+El nodo VAESave está diseñado para guardar modelos VAE junto con sus metadatos, incluyendo indicaciones e información adicional de PNG, en un directorio de salida especificado. Encapsula la funcionalidad de serializar el estado del modelo y la información asociada en un archivo, facilitando la preservación y el intercambio de modelos entrenados.
 
 ## Entradas
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `vae`     | VAE       | El modelo VAE que se va a guardar. Este parámetro es crucial ya que representa el modelo cuyo estado se va a serializar y almacenar. |
-| `prefijo_nombre_archivo` | STRING   | Un prefijo para el nombre del archivo bajo el cual se guardarán el modelo y sus metadatos. Esto permite un almacenamiento organizado y una fácil recuperación de los modelos. |
+| `vae`     | VAE       | El modelo VAE que se va a guardar. Este parámetro es crucial, ya que representa el modelo cuyo estado se serializará y almacenará. |
+| `filename_prefix` | STRING   | Un prefijo para el nombre del archivo bajo el cual se guardarán el modelo y sus metadatos. Esto permite un almacenamiento organizado y una fácil recuperación de los modelos. |
 
 ## Salidas
 

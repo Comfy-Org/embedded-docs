@@ -6,12 +6,15 @@ The Load Video node loads video files from the input directory and makes them av
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `file` | STRING | Yes | Multiple options available | The video file to load from the input directory |
+| `file` | STRING | Yes | Multiple options available | The video file to load from the input directory. The dropdown list is dynamically populated with all video files found in the ComfyUI input folder. |
 
-**Note:** The available options for the `file` parameter are dynamically populated from the video files present in the input directory. Only video files with supported content types are displayed.
+**Note:** The available options for the `file` parameter are dynamically populated from the video files present in the input directory. Only video files with supported content types are displayed. You can also upload a new video file directly through the node's file picker interface.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `video` | VIDEO | The loaded video data that can be passed to other video processing nodes |
+| `video` | VIDEO | The loaded video data that can be passed to other video processing nodes for further manipulation or analysis. |
+
+---
+**Source fingerprint (SHA-256):** `e3d18eb43cba34734761b5b147d9fee91fe3ca99db21f9e19a130efc3349cecb`

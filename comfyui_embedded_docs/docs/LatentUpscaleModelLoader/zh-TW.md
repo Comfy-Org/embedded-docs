@@ -1,15 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentUpscaleModelLoader/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentUpscaleModelLoader/zh-TW.md)
 
-此節點載入專為潛在表徵放大設計的模型。它從系統指定資料夾讀取模型檔案，並自動偵測其類型（720p、1080p 或其他），以實例化並配置正確的內部模型架構。載入的模型隨後可供其他節點用於潛在空間超解析度任務。
+## 概述
 
-## 輸入參數
+LatentUpscaleModelLoader 節點會載入一個專門設計用於放大潛在表示（latent representations）的模型。它從系統指定的資料夾中讀取模型檔案，並自動偵測其類型（720p、1080p 或其他），以實例化並設定正確的內部模型架構。載入後的模型即可供其他節點用於潛在空間的超解析度任務。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | STRING | 是 | *`latent_upscale_models` 資料夾中的所有檔案* | 要載入的潛在放大模型檔案名稱。可用選項會根據您 ComfyUI 的 `latent_upscale_models` 目錄中的檔案動態產生。 |
+| `model_name` | STRING | 是 | *`latent_upscale_models` 資料夾中的所有檔案* | 要載入的潛在放大模型檔案名稱。可用選項會根據 ComfyUI 的 `latent_upscale_models` 目錄中存在的檔案動態產生。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | LATENT_UPSCALE_MODEL | 已載入的潛在放大模型，已配置並準備就緒可供使用。 |
+| `model` | LATENT_UPSCALE_MODEL | 已載入的潛在放大模型，已設定完成並可供使用。 |
+
+---
+**Source fingerprint (SHA-256):** `bd97f3ec1422aaabbd60779aa4112be44791daddc6307de53ae0e4219a90ab0e`

@@ -1,23 +1,26 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetPropertiesAndCombine/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetPropertiesAndCombine/tr.md)
 
-ConditioningSetPropertiesAndCombine düğümü, yeni bir koşullandırma girişinden gelen özellikleri mevcut bir koşullandırma girişine uygulayarak koşullandırma verilerini değiştirir. İki koşullandırma kümesini birleştirirken, yeni koşullandırmanın gücünü kontrol eder ve koşullandırma alanının nasıl uygulanacağını belirtir.
+ConditioningSetPropertiesAndCombine düğümü, mevcut bir koşullandırma girdisine yeni bir koşullandırma girdisinden özellikler uygulayarak koşullandırma verilerini değiştirir. Yeni koşullandırmanın gücünü kontrol ederken ve koşullandırma alanının nasıl uygulanacağını belirtirken iki koşullandırma kümesini birleştirir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `koşul` | CONDITIONING | Gerekli | - | - | Değiştirilecek orijinal koşullandırma verisi |
-| `yeni_koşul` | CONDITIONING | Gerekli | - | - | Uygulanacak özellikleri sağlayan yeni koşullandırma verisi |
-| `güç` | FLOAT | Gerekli | 1.0 | 0.0 - 10.0 | Yeni koşullandırma özelliklerinin yoğunluğunu kontrol eder |
-| `koşul_alanı_ayarla` | STRING | Gerekli | default | ["default", "mask bounds"] | Koşullandırma alanının nasıl uygulanacağını belirler |
-| `maske` | MASK | İsteğe Bağlı | - | - | Koşullandırma için belirli alanları tanımlayan isteğe bağlı maske |
-| `kancalar` | HOOKS | İsteğe Bağlı | - | - | Özel işleme için isteğe bağlı kanca fonksiyonları |
-| `zaman_adımları` | TIMESTEPS_RANGE | İsteğe Bağlı | - | - | Koşullandırmanın ne zaman uygulanacağını kontrol etmek için isteğe bağlı zaman adımı aralığı |
+| `cond` | CONDITIONING | Zorunlu | - | - | Değiştirilecek orijinal koşullandırma verileri |
+| `cond_NEW` | CONDITIONING | Zorunlu | - | - | Uygulanacak özellikleri sağlayan yeni koşullandırma verileri |
+| `strength` | FLOAT | Zorunlu | 1.0 | 0.0 - 10.0 | Yeni koşullandırma özelliklerinin yoğunluğunu kontrol eder |
+| `set_cond_area` | STRING | Zorunlu | default | ["default", "mask bounds"] | Koşullandırma alanının nasıl uygulanacağını belirler |
+| `mask` | MASK | İsteğe bağlı | - | - | Koşullandırma için belirli alanları tanımlamak üzere isteğe bağlı maske |
+| `hooks` | HOOKS | İsteğe bağlı | - | - | Özel işleme için isteğe bağlı kanca işlevleri |
+| `timesteps` | TIMESTEPS_RANGE | İsteğe bağlı | - | - | Koşullandırmanın ne zaman uygulanacağını kontrol etmek için isteğe bağlı zaman adımı aralığı |
 
-**Not:** `mask` sağlandığında, `set_cond_area` parametresi, koşullandırma uygulamasını maskelenmiş bölgelere sınırlamak için "mask bounds" kullanabilir.
+**Not:** `mask` sağlandığında, `set_cond_area` parametresi "mask bounds" kullanarak koşullandırma uygulamasını maskelenmiş bölgelerle sınırlayabilir.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | Değiştirilmiş özelliklere sahip birleştirilmiş koşullandırma verisi |
+| `CONDITIONING` | CONDITIONING | Değiştirilmiş özelliklerle birleştirilmiş koşullandırma verileri |
+
+---
+**Source fingerprint (SHA-256):** `da57eeae428a103cbad77af063419ed0e85aeaa0b8805c8c197df27613477fa8`

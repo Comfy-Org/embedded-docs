@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/tr.md)
 
-Bu düğüm, logo tarama stilini seçmenize ve mevcut alt stiller arasından tercih yapmanıza olanak tanır. Logo oluşturma için çeşitli görsel işlemler sunarak, tarama tabanlı stil seçenekleriyle logo tasarımları oluşturmada uzmanlaşmıştır.
+Bu düğüm, logo görselleri oluşturmak için logo raster stilini ve isteğe bağlı bir alt stili seçer. Raster tabanlı görsel işlemlerle logo tasarımları oluşturma konusunda uzmanlaşmıştır.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `alt_stil` | STRING | Evet | Birden fazla seçenek mevcut | Logo oluşturma için uygulanacak belirli logo tarama alt stili |
+|-----------|-----------|----------|--------|----------|
+| `substyle` | STRING | Evet | Birden çok seçenek mevcut | Logo oluşturma için uygulanacak belirli logo raster alt stili |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | IMAGE | Seçilen tarama stili uygulanmış olarak oluşturulan logo görüntüsü |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `recraft_style` | CUSTOM | Seçilen Recraft stil yapılandırması; logo raster stilini ve seçilen alt stili içerir |
+
+---
+**Source fingerprint (SHA-256):** `cf4a7953e36ea824b4ddd00060174ede017d30640a70099b106b6de7f49fefbb`

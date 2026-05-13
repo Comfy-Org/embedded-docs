@@ -4,8 +4,8 @@ O nó RT-DETR Detect realiza detecção de objetos em imagens de entrada usando 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
+|-----------|---------------|-------------|-----------|-----------|
 | `model` | MODEL | Sim | N/A | O modelo RT-DETR usado para detecção de objetos. |
 | `image` | IMAGE | Sim | N/A | A(s) imagem(ns) de entrada para detectar objetos. O nó processa imagens em lotes de até 32. |
 | `threshold` | FLOAT | Não | N/A | A pontuação mínima de confiança que uma detecção deve ter para ser incluída nos resultados (padrão: 0,5). |
@@ -17,3 +17,6 @@ O nó RT-DETR Detect realiza detecção de objetos em imagens de entrada usando 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
 | `bboxes` | BOUNDINGBOX | Uma lista de caixas delimitadoras para cada imagem de entrada. Cada caixa contém coordenadas (x, y, largura, altura), um rótulo de classe e uma pontuação de confiança. |
+
+---
+**Source fingerprint (SHA-256):** `0c32aa9e17b8ea81e52cb45df2a40f7c1faeb39fdf18dfc643d1d31ed0bfdefd`

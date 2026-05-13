@@ -1,18 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/zh-TW.md)
 
-Rodin 3D Regular 節點使用 Rodin API 來生成 3D 資產。它接收輸入圖像並透過 Rodin 服務進行處理，以創建 3D 模型。此節點處理從任務創建到最終 3D 模型檔案下載的整個工作流程。
+# Rodin 3D Regular 節點
 
-## 輸入參數
+Rodin 3D Regular 節點使用 Rodin API 生成 3D 資產。它接收輸入影像，並透過 Rodin 服務進行處理以建立 3D 模型。此節點處理從任務建立到下載最終 3D 模型檔案的完整工作流程。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | 是 | - | 用於生成 3D 模型的輸入圖像 |
-| `Seed` | INT | 是 | - | 用於可重現結果的隨機種子值 |
-| `Material_Type` | STRING | 是 | - | 應用於 3D 模型的材質類型 |
-| `Polygon_count` | STRING | 是 | - | 生成 3D 模型的目標多邊形數量 |
+| `Images` | IMAGE | 是 | - | 用於 3D 模型生成的輸入影像。可提供多張影像。 |
+| `Seed` | INT | 是 | - | 用於可重現結果的隨機種子值。 |
+| `Material_Type` | STRING | 是 | - | 應用於 3D 模型的材質類型。 |
+| `Polygon_count` | STRING | 是 | - | 生成 3D 模型的目標多邊形數量。此參數決定品質模式和網格複雜度。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `3D Model Path` | STRING | 生成的 3D 模型檔案路徑 |
+| `3D Model Path` | STRING | 生成的 3D 模型檔案路徑（為保持向後相容性而保留）。 |
+| `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型。 |
+
+---
+**Source fingerprint (SHA-256):** `f937be3aa579baf4407434839e741141d6bd63c09b7e0bdc49a9e92a10d7a130`

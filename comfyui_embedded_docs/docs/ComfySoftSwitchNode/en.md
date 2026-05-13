@@ -17,3 +17,6 @@ The Soft Switch node selects between two possible input values based on a boolea
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | MATCH_TYPE | The selected value. It will match the data type of the connected `on_false` or `on_true` input. |
+
+---
+**Source fingerprint (SHA-256):** `f5e40e7f43948b81b5442c885c3e1ff15e38f8f7ddda00ef3be42225765bfd1c`

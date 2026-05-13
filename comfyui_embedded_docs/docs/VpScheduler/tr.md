@@ -1,18 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VPScheduler/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VPScheduler/tr.md)
 
-VPScheduler düğümü, Varyans Koruma (VP) planlama yöntemine dayalı olarak bir gürültü seviyeleri dizisi (sigmas) oluşturmak için tasarlanmıştır. Bu dizi, difüzyon modellerinde gürültü giderme işlemini yönlendirmek için çok önemli olup, kontrollü bir şekilde görüntü veya diğer veri türlerinin oluşturulmasını sağlar.
+VPScheduler düğümü, Varyans Koruyan (VP) zamanlama yöntemine dayalı olarak bir dizi gürültü seviyesi (sigma) oluşturmak için tasarlanmıştır. Bu dizi, difüzyon modellerinde gürültü giderme sürecini yönlendirmek için kritik öneme sahiptir ve görüntüler veya diğer veri türlerinin kontrollü bir şekilde üretilmesine olanak tanır.
 
-## Girdiler
+## Girişler
 
-| Parametre   | Veri Türü | Açıklama                                                                                                                                      |
-|-------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `adımlar`     | INT         | Difüzyon işlemindeki adım sayısını belirtir ve oluşturulan gürültü seviyelerinin detay düzeyini etkiler.                              |
-| `beta_d`    | FLOAT       | Genel gürültü seviyesi dağılımını belirler ve oluşturulan gürültü seviyelerinin varyansını etkiler.                                 |
-| `beta_min`  | FLOAT       | Gürültü seviyesi için minimum sınırı ayarlar ve gürültünün belirli bir eşiğin altına düşmemesini sağlar.                              |
-| `eps_s`     | FLOAT       | Başlangıç epsilon değerini ayarlayarak difüzyon işlemindeki başlangıç gürültü seviyesini ince ayarlar.                                    |
+| Parametre   | Veri Türü | Açıklama                                                                                                                              |
+|-------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| `steps`     | INT         | Difüzyon sürecindeki adım sayısını belirler, oluşturulan gürültü seviyelerinin ayrıntı düzeyini etkiler.                              |
+| `beta_d`    | FLOAT       | Genel gürültü seviyesi dağılımını belirler, oluşturulan gürültü seviyelerinin varyansını etkiler.                                 |
+| `beta_min`  | FLOAT       | Gürültü seviyesi için minimum sınırı ayarlar, gürültünün belirli bir eşiğin altına düşmemesini sağlar.                              |
+| `eps_s`     | FLOAT       | Başlangıç epsilon değerini ayarlar, difüzyon sürecindeki ilk gürültü seviyesini ince ayarlar.                                    |
 
-## Çıktılar
+## Çıkışlar
 
-| Parametre   | Veri Türü | Açıklama                                                                                   |
-|-------------|-------------|-----------------------------------------------------------------------------------------------|
-| `sigmas`    | SIGMAS      | VP planlama yöntemine dayalı olarak oluşturulan bir gürültü seviyeleri dizisi (sigmas), difüzyon modellerinde gürültü giderme işlemini yönlendirmek için kullanılır. |
+| Parametre   | Veri Türü | Açıklama                                                                                                                       |
+|-------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `sigmas`    | SIGMAS      | VP zamanlama yöntemine dayalı olarak oluşturulan bir dizi gürültü seviyesi (sigma), difüzyon modellerinde gürültü giderme sürecini yönlendirmek için kullanılır. |

@@ -1,20 +1,21 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Sd4xupscaleConditioning/fr.md)
 
-Ce nœud est spécialisé dans l'amélioration de la résolution des images grâce à un processus de mise à l'échelle 4x, en intégrant des éléments de conditionnement pour affiner le résultat. Il utilise des techniques de diffusion pour mettre à l'échelle les images tout en permettant l'ajustement du ratio d'échelle et l'augmentation du bruit pour affiner le processus d'amélioration.
+Ce nœud est spécialisé dans l'amélioration de la résolution des images via un processus de suréchantillonnage 4x, intégrant des éléments de conditionnement pour affiner le résultat. Il exploite des techniques de diffusion pour agrandir les images tout en permettant d'ajuster le rapport d'échelle et l'augmentation du bruit afin de peaufiner le processus d'amélioration.
 
 ## Entrées
 
-| Paramètre            | Comfy dtype        | Description |
+| Paramètre            | Type Comfy        | Description |
 |----------------------|--------------------|-------------|
-| `images`             | `IMAGE`            | Les images d'entrée à mettre à l'échelle. Ce paramètre est crucial car il influence directement la qualité et la résolution des images de sortie. |
-| `positive`           | `CONDITIONING`     | Éléments de conditionnement positifs qui guident le processus de mise à l'échelle vers les attributs ou caractéristiques souhaités dans les images de sortie. |
-| `negative`           | `CONDITIONING`     | Éléments de conditionnement négatifs que le processus de mise à l'échelle doit éviter, aidant à orienter la sortie loin des attributs ou caractéristiques indésirables. |
-| `scale_ratio`        | `FLOAT`            | Détermine le facteur par lequel la résolution de l'image est augmentée. Un ratio d'échelle plus élevé se traduit par une image de sortie plus grande, permettant plus de détails et de clarté. |
-| `noise_augmentation` | `FLOAT`            | Contrôle le niveau d'augmentation du bruit appliqué pendant le processus de mise à l'échelle. Cela peut être utilisé pour introduire de la variabilité et améliorer la robustesse des images de sortie. |
+| `images`             | `IMAGE`            | Les images d'entrée à suréchantillonner. Ce paramètre est crucial car il influence directement la qualité et la résolution des images de sortie. |
+| `positive`           | `CONDITIONNEMENT`     | Éléments de conditionnement positifs qui guident le processus de suréchantillonnage vers les attributs ou caractéristiques souhaités dans les images de sortie. |
+| `negative`           | `CONDITIONNEMENT`     | Éléments de conditionnement négatifs que le processus de suréchantillonnage doit éviter, aidant à orienter la sortie loin des attributs ou caractéristiques indésirables. |
+| `scale_ratio`        | `FLOAT`            | Détermine le facteur d'augmentation de la résolution de l'image. Un rapport d'échelle plus élevé produit une image de sortie plus grande, permettant davantage de détails et de netteté. |
+| `noise_augmentation` | `FLOAT`            | Contrôle le niveau d'augmentation du bruit appliqué pendant le processus de suréchantillonnage. Cela peut être utilisé pour introduire de la variabilité et améliorer la robustesse des images de sortie. |
 
 ## Sorties
 
-| Paramètre     | Type de Donnée | Description |
+| Paramètre     | Type de données | Description |
 |---------------|--------------|-------------|
-| `positive`    | `CONDITIONING` | Les éléments de conditionnement positifs raffinés résultant du processus de mise à l'échelle. |
-| `negative`    | `CONDITIONING` | Les éléments de conditionnement négatifs raffinés résultant du processus de mise à l'échelle. |
-| `latent`      | `LATENT`     | Une représentation latente générée pendant le processus de mise à l'échelle, qui peut être utilisée dans un traitement ultérieur ou pour l'entraînement du modèle. |
+| `positive`    | `CONDITIONNEMENT` | Les éléments de conditionnement positifs affinés résultant du processus de suréchantillonnage. |
+| `negative`    | `CONDITIONNEMENT` | Les éléments de conditionnement négatifs affinés résultant du processus de suréchantillonnage. |
+| `latent`      | `LATENT`     | Une représentation latente générée pendant le processus de suréchantillonnage, qui peut être utilisée dans un traitement ultérieur ou l'entraînement d'un modèle. |

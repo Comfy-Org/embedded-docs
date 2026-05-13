@@ -15,3 +15,6 @@ The ImageRGBToYUV node converts RGB color images to the YUV color space. It take
 | `Y` | IMAGE | The luminance (brightness) component of the YUV color space |
 | `U` | IMAGE | The blue projection component of the YUV color space |
 | `V` | IMAGE | The red projection component of the YUV color space |
+
+---
+**Source fingerprint (SHA-256):** `119cba119b62c7b46ffdd2c0feca932a9af1ec41c338fead23c21fdf76a6abb2`

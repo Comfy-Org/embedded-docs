@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/tr.md)
 
-VideoLinearCFGGuidance düğümü, bir video modeline doğrusal koşullandırma kılavuz ölçeği uygulayarak, koşullandırılmış ve koşullandırılmamış bileşenlerin etkisini belirli bir aralıkta ayarlar. Bu, üretim süreci üzerinde dinamik kontrol sağlayarak modelin çıktısını istenen koşullandırma seviyesine göre hassas bir şekilde ayarlamaya olanak tanır.
+VideoLinearCFGGuidance düğümü, bir video modeline doğrusal koşullandırma yönlendirme ölçeği uygulayarak, belirtilen bir aralıkta koşullandırılmış ve koşullandırılmamış bileşenlerin etkisini ayarlar. Bu, üretim süreci üzerinde dinamik kontrol sağlayarak, model çıktısının istenen koşullandırma seviyesine göre ince ayar yapılmasına olanak tanır.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | Model parametresi, doğrusal CFG kılavuzunun uygulanacağı video modelini temsil eder. Kılavuz ölçeği ile değiştirilecek temel modeli tanımlamak için çok önemlidir. |
-| `min_cfg` | `FLOAT`     | min_cfg parametresi, uygulanacak minimum koşullandırma kılavuz ölçeğini belirtir ve doğrusal ölçek ayarının başlangıç noktası olarak hizmet eder. Kılavuz ölçeğinin alt sınırını belirlemede ve modelin çıktısını etkilemede kilit rol oynar. |
+| `model`   | MODEL     | Model parametresi, doğrusal CFG yönlendirmesinin uygulanacağı video modelini temsil eder. Yönlendirme ölçeği ile değiştirilecek temel modeli tanımlamak için kritik öneme sahiptir. |
+| `min_cfg` | `FLOAT`     | min_cfg parametresi, uygulanacak minimum koşullandırma yönlendirme ölçeğini belirtir ve doğrusal ölçek ayarlaması için başlangıç noktası görevi görür. Yönlendirme ölçeğinin alt sınırını belirlemede kilit rol oynar ve model çıktısını etkiler. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | Çıktı, doğrusal CFG kılavuz ölçeği uygulanmış giriş modelinin değiştirilmiş bir versiyonudur. Bu ayarlanmış model, belirtilen kılavuz ölçeğine dayalı olarak değişen derecelerde koşullandırmaya sahip çıktılar üretebilir. |
+| `model`   | MODEL     | Çıktı, doğrusal CFG yönlendirme ölçeğinin uygulandığı, giriş modelinin değiştirilmiş bir sürümüdür. Bu ayarlanmış model, belirtilen yönlendirme ölçeğine bağlı olarak, değişen derecelerde koşullandırma ile çıktılar üretebilir. |

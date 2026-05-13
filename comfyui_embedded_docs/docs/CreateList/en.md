@@ -15,3 +15,6 @@ The Create List node combines multiple inputs into a single, sequential list. It
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `list` | Varies | A single list containing all the items from the connected inputs, concatenated in the order they were provided. The output data type matches the input data type. |
+
+---
+**Source fingerprint (SHA-256):** `d0e10c4d1186e694a72b18407c34cc1df74f77d02c989b507af75594c1a0794e`

@@ -15,3 +15,6 @@ The Batch Latents node combines multiple latent inputs into a single batch. It t
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | LATENT | A single latent output containing all the input latents combined into one batch. |
+
+---
+**Source fingerprint (SHA-256):** `215e7e2df43e902815dd87d228e8d5e09f18f6f52002cc3e861551fc207a9896`

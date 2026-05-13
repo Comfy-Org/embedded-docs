@@ -1,16 +1,21 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/ja.md)
 
-FluxKontextMultiReferenceLatentMethodノードは、特定の参照潜在表現メソッドを設定することで条件付けデータを変更します。このノードは選択されたメソッドを条件付け入力に追加し、後続の生成ステップにおける参照潜在表現の処理方法に影響を与えます。このノードは実験的としてマークされており、Flux条件付けシステムの一部です。
+このドキュメントはAI生成です。誤りや改善の提案がありましたら、ぜひご協力ください！[GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/en.md)
+
+FluxKontextMultiReferenceLatentMethod ノードは、特定の参照潜在変数メソッドを設定することで条件付けデータを変更します。選択されたメソッドを条件付け入力に追加し、その後の生成ステップで参照潜在変数がどのように処理されるかに影響を与えます。このノードは実験的機能としてマークされており、Flux 条件付けシステムの一部です。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | はい | - | 参照潜在表現メソッドで修正される条件付けデータ |
-| `reference_latents_method` | STRING | はい | `"offset"`<br>`"index"`<br>`"uxo/uno"` | 参照潜在表現処理に使用するメソッド。"uxo"または"uso"が選択された場合、"uxo"に変換されます |
+| `conditioning` | CONDITIONING | はい | - | 参照潜在変数メソッドで変更される条件付けデータ |
+| `reference_latents_method` | STRING | はい | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 参照潜在変数の処理に使用するメソッド。"uxo" または "uso" が選択された場合は、"uxo" に変換されます。このパラメータは高度な設定としてマークされています。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | 参照潜在表現メソッドが適用された修正済み条件付けデータ |
+| `conditioning` | CONDITIONING | 参照潜在変数メソッドが適用された変更後の条件付けデータ |
+
+---
+**Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

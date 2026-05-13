@@ -1,35 +1,40 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSpeech/tr.md)
 
-ElevenLabs Metinden Sese düğümü, ElevenLabs API'sini kullanarak yazılı metni konuşulan sese dönüştürür. Belirli bir ses seçmenize ve kararlılık, hız ve stil gibi çeşitli konuşma özelliklerini ince ayarlayarak özelleştirilmiş bir ses çıktısı oluşturmanıza olanak tanır.
+# ElevenLabs Metin-Konuşma Düğümü
 
-## Girdiler
+ElevenLabs Metin-Konuşma düğümü, yazılı metni ElevenLabs API'sini kullanarak sesli konuşmaya dönüştürür. Belirli bir ses seçmenize ve stabilite, hız ve stil gibi çeşitli konuşma özelliklerini ince ayarlayarak özelleştirilmiş bir ses çıktısı oluşturmanıza olanak tanır.
+
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `voice` | CUSTOM | Evet | N/A | Konuşma sentezi için kullanılacak ses. Ses Seçici veya Anında Ses Klonlama düğümünden bağlayın. |
-| `text` | STRING | Evet | N/A | Sese dönüştürülecek metin. |
-| `stability` | FLOAT | Hayır | 0.0 - 1.0 | Ses kararlılığı. Düşük değerler daha geniş bir duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton bir konuşma üretir (varsayılan: 0.5). |
-| `apply_text_normalization` | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` | Metin normalleştirme modu. 'auto' sisteme karar verme izni verir, 'on' her zaman normalleştirme uygular, 'off' atlar. |
-| `model` | DYNAMICCOMBO | Hayır | `"eleven_multilingual_v2"`<br>`"eleven_v3"` | Metinden sese dönüşüm için kullanılacak model. Bir model seçmek, o modele özgü parametreleri görünür kılar. |
-| `language_code` | STRING | Hayır | N/A | ISO-639-1 veya ISO-639-3 dil kodu (örn. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın (varsayılan: ""). |
-| `seed` | INT | Hayır | 0 - 2147483647 | Tekrarlanabilirlik için tohum (determinizm garanti edilmez) (varsayılan: 1). |
+|-----------|-----------|----------|--------|----------|
+| `voice` | CUSTOM | Evet | Yok | Ses sentezi için kullanılacak ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlayın. |
+| `text` | STRING | Evet | Yok | Sese dönüştürülecek metin. |
+| `stability` | FLOAT | Hayır | 0.0 - 1.0 | Ses stabilitesi. Düşük değerler daha geniş duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). |
+| `apply_text_normalization` | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` | Metin normalizasyon modu. 'auto' sistemin karar vermesini sağlar, 'on' her zaman normalizasyon uygular, 'off' atlar. |
+| `model` | DYNAMICCOMBO | Hayır | `"eleven_multilingual_v2"`<br>`"eleven_v3"` | Metin-konuşma için kullanılacak model. Bir model seçmek, o modele özgü parametreleri gösterir. |
+| `language_code` | STRING | Hayır | Yok | ISO-639-1 veya ISO-639-3 dil kodu (örn. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın (varsayılan: ""). |
+| `seed` | INT | Hayır | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (determinizm garanti edilmez) (varsayılan: 1). |
 | `output_format` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
 
 **Modele Özgü Parametreler:**
 `model` parametresi `"eleven_multilingual_v2"` olarak ayarlandığında, aşağıdaki ek parametreler kullanılabilir hale gelir:
 
-* `speed`: Konuşma hızı. 1.0 normaldir, <1.0 daha yavaş, >1.0 daha hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
-* `similarity_boost`: Benzerlik artırımı. Daha yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
+* `speed`: Konuşma hızı. 1.0 normal, <1.0 yavaş, >1.0 hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
+* `similarity_boost`: Benzerlik artırma. Yüksek değerler sesi orijinale daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
 * `use_speaker_boost`: Orijinal konuşmacı sesine benzerliği artırır (varsayılan: False).
-* `style`: Stil abartısı. Daha yüksek değerler stilistik ifadeyi artırır ancak kararlılığı azaltabilir (varsayılan: 0.0, aralık: 0.0 - 0.2).
+* `style`: Stil abartma. Yüksek değerler stilistik ifadeyi artırır ancak stabiliteyi azaltabilir (varsayılan: 0.0, aralık: 0.0 - 0.2).
 
 `model` parametresi `"eleven_v3"` olarak ayarlandığında, aşağıdaki ek parametreler kullanılabilir hale gelir:
 
-* `speed`: Konuşma hızı. 1.0 normaldir, <1.0 daha yavaş, >1.0 daha hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
-* `similarity_boost`: Benzerlik artırımı. Daha yüksek değerler sesi orijinaline daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
+* `speed`: Konuşma hızı. 1.0 normal, <1.0 yavaş, >1.0 hızlı (varsayılan: 1.0, aralık: 0.7 - 1.3).
+* `similarity_boost`: Benzerlik artırma. Yüksek değerler sesi orijinale daha benzer hale getirir (varsayılan: 0.75, aralık: 0.0 - 1.0).
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `audio` | AUDIO | Metinden sese dönüşümden elde edilen oluşturulmuş ses. |
+|-----------|-----------|----------|
+| `audio` | AUDIO | Metin-konuşma dönüşümünden oluşturulan ses. |
+
+---
+**Source fingerprint (SHA-256):** `d11d4ffa2d1f11dfd5ce378d9496cd9788d2197bf7f4135092ecefb287f3c2f7`

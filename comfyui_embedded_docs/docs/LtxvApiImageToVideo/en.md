@@ -25,3 +25,6 @@ The LTXV Image To Video node generates a professional-quality video from a singl
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `af891b45997173c3210d3de4f7b6bd05b14e9d3bf8a94dcb2c1ce08038b7d99d`

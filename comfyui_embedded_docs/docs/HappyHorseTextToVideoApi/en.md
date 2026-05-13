@@ -17,3 +17,6 @@ Generates a video based on a text prompt using the HappyHorse model. This node s
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `VIDEO` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `8c6a7c0c2b10bbc65ca54abc991e1f12e8846b31701ed65b49c5d71f1b2a63ec`

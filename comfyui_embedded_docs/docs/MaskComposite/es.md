@@ -1,18 +1,19 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskComposite/es.md)
 
-Este nodo se especializa en combinar dos entradas de máscara a través de una variedad de operaciones como adición, sustracción y operaciones lógicas, para producir una nueva máscara modificada. Maneja abstractamente la manipulación de datos de máscara para lograr efectos de enmascaramiento complejos, sirviendo como un componente crucial en flujos de trabajo de edición y procesamiento de imágenes basados en máscaras.
+Este nodo se especializa en combinar dos máscaras de entrada mediante diversas operaciones como suma, resta y operaciones lógicas, para producir una nueva máscara modificada. Maneja de forma abstracta la manipulación de datos de máscara para lograr efectos de enmascaramiento complejos, sirviendo como un componente crucial en flujos de trabajo de edición y procesamiento de imágenes basados en máscaras.
 
 ## Entradas
 
-| Parámetro    | Data Type | Descripción                                                                                                                                      |
-| ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `destino`| MASK        | La máscara principal que se modificará en función de la operación con la máscara fuente. Juega un papel central en la operación de composición, actuando como base para las modificaciones. |
-| `fuente`     | MASK        | La máscara secundaria que se utilizará junto con la máscara de destino para realizar la operación especificada, influyendo en la máscara de salida final. |
-| `x`          | INT         | El desplazamiento horizontal en el que se aplicará la máscara fuente a la máscara de destino, afectando la posición del resultado compuesto.       |
-| `y`          | INT         | El desplazamiento vertical en el que se aplicará la máscara fuente a la máscara de destino, afectando la posición del resultado compuesto.         |
-| `operación`  | COMBO[STRING]| Especifica el tipo de operación a aplicar entre las máscaras de destino y fuente, como 'add', 'subtract', u operaciones lógicas, determinando la naturaleza del efecto compuesto. |
+| Parámetro     | Tipo de Dato | Descripción                                                                                                                                      |
+| ------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `destination` | MASK         | La máscara principal que se modificará según la operación con la máscara de origen. Desempeña un papel central en la operación compuesta, actuando como base para las modificaciones. |
+| `source`      | MASK         | La máscara secundaria que se utilizará junto con la máscara de destino para realizar la operación especificada, influyendo en la máscara final de salida. |
+| `x`           | INT          | El desplazamiento horizontal en el que se aplicará la máscara de origen sobre la máscara de destino, afectando el posicionamiento del resultado compuesto. |
+| `y`           | INT          | El desplazamiento vertical en el que se aplicará la máscara de origen sobre la máscara de destino, afectando el posicionamiento del resultado compuesto. |
+| `operation`   | COMBO[STRING]| Especifica el tipo de operación a aplicar entre las máscaras de destino y origen, como 'sumar', 'restar' u operaciones lógicas, determinando la naturaleza del efecto compuesto. |
 
 ## Salidas
 
-| Parámetro | Data Type | Descripción                                                                 |
+| Parámetro | Tipo de Dato | Descripción                                                                 |
 | --------- | ------------ | ---------------------------------------------------------------------------- |
-| `mask`    | MASK        | La máscara resultante después de aplicar la operación especificada entre las máscaras de destino y fuente, representando el resultado compuesto. |
+| `mask`    | MASK         | La máscara resultante tras aplicar la operación especificada entre las máscaras de destino y origen, representando el resultado compuesto. |
