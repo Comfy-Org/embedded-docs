@@ -6,7 +6,7 @@ Le nœud UNetTemporalAttentionMultiply applique des facteurs de multiplication �
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle d'entrée à modifier avec les multiplicateurs d'attention |
+| `modèle` | MODEL | Oui | - | Le modèle d'entrée à modifier avec les multiplicateurs d'attention |
 | `self_structural` | FLOAT | Non | 0.0 - 10.0 | Multiplicateur pour les composants structurels de l'auto-attention (par défaut : 1.0) |
 | `self_temporal` | FLOAT | Non | 0.0 - 10.0 | Multiplicateur pour les composants temporels de l'auto-attention (par défaut : 1.0) |
 | `cross_structural` | FLOAT | Non | 0.0 - 10.0 | Multiplicateur pour les composants structurels de l'attention croisée (par défaut : 1.0) |
@@ -16,7 +16,7 @@ Le nœud UNetTemporalAttentionMultiply applique des facteurs de multiplication �
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec des poids d'attention ajustés |
+| `modèle` | MODEL | Le modèle modifié avec des poids d'attention ajustés |
 
 ---
 **Source fingerprint (SHA-256):** `98d62fb28a0cdf62154ae4e0b672b3a7bcb9ed61186a164a43992263c1f9439a`

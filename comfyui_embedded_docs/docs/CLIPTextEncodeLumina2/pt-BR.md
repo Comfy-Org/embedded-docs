@@ -8,8 +8,8 @@ O nó CLIP Text Encode for Lumina2 codifica um prompt de sistema e um prompt de 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `system_prompt` | STRING | Sim | `"superior"`<br>`"alignment"` | O Lumina2 oferece dois tipos de prompts de sistema: "superior" gera imagens com alinhamento superior entre imagem e texto; "alignment" gera imagens de alta qualidade com o mais alto grau de alinhamento entre imagem e texto. |
-| `user_prompt` | STRING | Sim | N/A | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. |
+| `prompt_do_sistema` | STRING | Sim | `"superior"`<br>`"alignment"` | O Lumina2 oferece dois tipos de prompts de sistema: "superior" gera imagens com alinhamento superior entre imagem e texto; "alignment" gera imagens de alta qualidade com o mais alto grau de alinhamento entre imagem e texto. |
+| `prompt_do_usuário` | STRING | Sim | N/A | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. |
 | `clip` | CLIP | Sim | N/A | O modelo CLIP usado para codificar o texto. |
 
 **Nota:** A entrada `clip` é obrigatória e não pode ser Nula. Se a entrada clip for inválida, o nó gerará um erro indicando que o checkpoint pode não conter um modelo CLIP ou codificador de texto válido.

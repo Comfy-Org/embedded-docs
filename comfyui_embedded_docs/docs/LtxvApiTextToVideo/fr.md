@@ -6,12 +6,12 @@ Le nœud LTXV Texte vers Vidéo génère des vidéos de qualité professionnelle
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"LTX-2 (Rapide)"`<br>`"LTX-2 (Qualité)"`<br>`"LTX-2 (Turbo)"` | Le modèle d'IA à utiliser pour la génération vidéo. Les modèles disponibles sont mappés à partir de la `MODELS_MAP` du code source. |
+| `modèle` | COMBO | Oui | `"LTX-2 (Rapide)"`<br>`"LTX-2 (Qualité)"`<br>`"LTX-2 (Turbo)"` | Le modèle d'IA à utiliser pour la génération vidéo. Les modèles disponibles sont mappés à partir de la `MODELS_MAP` du code source. |
 | `prompt` | STRING | Oui | - | La description textuelle que l'IA utilisera pour générer la vidéo. Ce champ prend en charge plusieurs lignes de texte. |
-| `duration` | COMBO | Oui | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La durée de la vidéo générée en secondes (par défaut : 8). |
-| `resolution` | COMBO | Oui | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | Les dimensions en pixels (largeur x hauteur) de la vidéo de sortie. |
-| `fps` | COMBO | Oui | `25`<br>`50` | Le nombre d'images par seconde de la vidéo (par défaut : 25). |
-| `generate_audio` | BOOLEAN | Non | - | Lorsqu'il est activé, la vidéo générée inclura un son généré par IA correspondant à la scène (par défaut : Faux). |
+| `durée` | COMBO | Oui | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La durée de la vidéo générée en secondes (par défaut : 8). |
+| `résolution` | COMBO | Oui | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | Les dimensions en pixels (largeur x hauteur) de la vidéo de sortie. |
+| `ips` | COMBO | Oui | `25`<br>`50` | Le nombre d'images par seconde de la vidéo (par défaut : 25). |
+| `générer_audio` | BOOLEAN | Non | - | Lorsqu'il est activé, la vidéo générée inclura un son généré par IA correspondant à la scène (par défaut : Faux). |
 
 **Contraintes importantes :**
 

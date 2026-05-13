@@ -7,9 +7,9 @@ El nodo SamplerDPMPP_SDE crea un muestreador DPM++ SDE (Ecuación Diferencial Es
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `eta` | FLOAT | Sí | 0.0 - 100.0 | Controla la estocasticidad del proceso de muestreo (predeterminado: 1.0) |
-| `s_noise` | FLOAT | Sí | 0.0 - 100.0 | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0) |
+| `s_ruido` | FLOAT | Sí | 0.0 - 100.0 | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0) |
 | `r` | FLOAT | Sí | 0.0 - 100.0 | Un parámetro que influye en el comportamiento del muestreo (predeterminado: 0.5) |
-| `noise_device` | COMBO | Sí | "gpu"<br>"cpu" | Selecciona el dispositivo donde se realizan los cálculos de ruido (predeterminado: "gpu") |
+| `dispositivo_ruido` | COMBO | Sí | "gpu"<br>"cpu" | Selecciona el dispositivo donde se realizan los cálculos de ruido (predeterminado: "gpu") |
 
 ## Salidas
 

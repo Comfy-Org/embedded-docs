@@ -7,8 +7,8 @@ O nó CLIPTextEncodeControlnet processa a entrada de texto usando um modelo CLIP
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `clip` | CLIP | Sim | - | O modelo CLIP usado para tokenização e codificação de texto |
-| `conditioning` | CONDITIONING | Sim | - | Dados de condicionamento existentes a serem aprimorados com parâmetros de controlnet |
-| `text` | STRING | Sim | - | Texto de entrada a ser processado pelo modelo CLIP. Suporta texto multilinha e prompts dinâmicos |
+| `condicionamento` | CONDITIONING | Sim | - | Dados de condicionamento existentes a serem aprimorados com parâmetros de controlnet |
+| `texto` | STRING | Sim | - | Texto de entrada a ser processado pelo modelo CLIP. Suporta texto multilinha e prompts dinâmicos |
 
 **Nota:** Este nó requer todas as três entradas (`clip`, `conditioning` e `text`) para funcionar corretamente. A entrada `text` suporta prompts dinâmicos e texto multilinha para processamento flexível de texto.
 

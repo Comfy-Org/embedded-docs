@@ -20,7 +20,7 @@ Ce nœud crée un actif vidéo personnel pour Seedance 2.0. Il télécharge votr
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `asset_id` | STRING | L'identifiant unique du nouvel actif vidéo créé. |
+| `group_id` | STRING | L'identifiant unique du nouvel actif vidéo créé. |
 | `group_id` | STRING | L'identifiant du groupe d'actifs contenant la nouvelle vidéo. Il s'agira du `group_id` fourni ou d'un nouvel identifiant créé. |
 
 ---

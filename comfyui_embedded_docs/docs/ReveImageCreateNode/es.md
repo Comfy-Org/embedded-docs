@@ -7,11 +7,11 @@ El nodo Crear Imagen Reve genera imágenes a partir de descripciones textuales u
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Descripción textual de la imagen deseada. Máximo 2560 caracteres. |
-| `model` | COMBO | Sí | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Versión del modelo y relación de aspecto a utilizar para la generación. La primera opción selecciona el modelo, y las opciones siguientes definen la relación de aspecto de la imagen. |
-| `upscale` | COMBO | No | `"disabled"`<br>`"enabled"` | Activa o desactiva el paso de posprocesamiento de escalado. Cuando está activado, también debes seleccionar un factor de escalado. |
-| `upscale_factor` | COMBO | No | `2`<br>`3`<br>`4` | El factor por el cual se incrementa la resolución de la imagen. Este parámetro solo está activo cuando `upscale` está configurado como `"enabled"`. |
-| `remove_background` | BOOLEAN | No | N/A | Cuando está activado, aplica un paso de posprocesamiento de eliminación de fondo a la imagen generada. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla que controla si el nodo debe reejecutarse. Nota: Los resultados no son deterministas independientemente del valor de la semilla. Valor predeterminado: 0. |
+| `modelo` | COMBO | Sí | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Versión del modelo y relación de aspecto a utilizar para la generación. La primera opción selecciona el modelo, y las opciones siguientes definen la relación de aspecto de la imagen. |
+| `escalar` | COMBO | No | `"disabled"`<br>`"enabled"` | Activa o desactiva el paso de posprocesamiento de escalado. Cuando está activado, también debes seleccionar un factor de escalado. |
+| `upscale_factor` | COMBO | No | `2`<br>`3`<br>`4` | El factor por el cual se incrementa la resolución de la imagen. Este parámetro solo está activo cuando `escalar` está configurado como `"enabled"`. |
+| `eliminar_fondo` | BOOLEAN | No | N/A | Cuando está activado, aplica un paso de posprocesamiento de eliminación de fondo a la imagen generada. |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla que controla si el nodo debe reejecutarse. Nota: Los resultados no son deterministas independientemente del valor de la semilla. Valor predeterminado: 0. |
 
 **Nota:** El parámetro `upscale_factor` depende de que el parámetro `upscale` esté configurado como `"enabled"`. El parámetro `seed` no garantiza resultados deterministas.
 

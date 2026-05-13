@@ -6,12 +6,12 @@ El nodo LatentCompositeMasked está diseñado para combinar dos representaciones
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `destination` | `LATENT`    | La representación latente sobre la cual se compondrá otra representación latente. Actúa como la capa base para la operación de composición. |
-| `source` | `LATENT`    | La representación latente que se va a componer sobre el destino. Esta capa de origen puede redimensionarse y posicionarse según los parámetros especificados. |
+| `destino` | `LATENT`    | La representación latente sobre la cual se compondrá otra representación latente. Actúa como la capa base para la operación de composición. |
+| `fuente` | `LATENT`    | La representación latente que se va a componer sobre el destino. Esta capa de origen puede redimensionarse y posicionarse según los parámetros especificados. |
 | `x` | `INT`       | La coordenada x en la representación latente de destino donde se colocará el origen. Permite un posicionamiento preciso de la capa de origen. |
 | `y` | `INT`       | La coordenada y en la representación latente de destino donde se colocará el origen, lo que permite una superposición precisa. |
-| `resize_source` | `BOOLEAN` | Un indicador booleano que determina si la representación latente de origen debe redimensionarse para coincidir con las dimensiones del destino antes de la composición. |
-| `mask` | `MASK`     | Una máscara opcional que puede utilizarse para controlar la mezcla del origen sobre el destino. La máscara define qué partes del origen serán visibles en la composición final. |
+| `redimensionar_fuente` | `BOOLEAN` | Un indicador booleano que determina si la representación latente de origen debe redimensionarse para coincidir con las dimensiones del destino antes de la composición. |
+| `máscara` | `MASK`     | Una máscara opcional que puede utilizarse para controlar la mezcla del origen sobre el destino. La máscara define qué partes del origen serán visibles en la composición final. |
 
 ## Salidas
 

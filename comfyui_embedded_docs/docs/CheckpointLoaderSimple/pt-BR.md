@@ -8,7 +8,7 @@ Carrega um arquivo de checkpoint de modelo de difusão e o decompõe em três co
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `ckpt_name` | STRING | Sim | Todos os arquivos de modelo na pasta checkpoints | O nome do checkpoint (modelo) a ser carregado. Selecione o nome do arquivo do checkpoint, que determina o modelo de IA usado para a geração de imagem subsequente. |
+| `nome_ckpt` | STRING | Sim | Todos os arquivos de modelo na pasta checkpoints | O nome do checkpoint (modelo) a ser carregado. Selecione o nome do arquivo do checkpoint, que determina o modelo de IA usado para a geração de imagem subsequente. |
 
 **Observação:** Se novos arquivos de modelo forem adicionados enquanto o ComfyUI estiver em execução, você precisará atualizar o navegador (Ctrl+R) para ver os novos arquivos na lista suspensa.
 

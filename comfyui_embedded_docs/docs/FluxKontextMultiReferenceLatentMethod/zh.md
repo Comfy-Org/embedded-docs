@@ -6,14 +6,14 @@ FluxKontextMultiReferenceLatentMethod 节点通过设置特定的参考潜空间
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 是 | - | 待使用参考潜空间方法修改的条件数据 |
-| `reference_latents_method` | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 用于参考潜空间处理的方法。如果选择 "uxo" 或 "uso"，则会转换为 "uxo"。此参数标记为高级参数。 |
+| `条件化` | CONDITIONING | 是 | - | 待使用参考潜空间方法修改的条件数据 |
+| `参考潜在方法` | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 用于参考潜空间处理的方法。如果选择 "uxo" 或 "uso"，则会转换为 "uxo"。此参数标记为高级参数。 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | 已应用参考潜空间方法的修改后条件数据 |
+| `条件化` | CONDITIONING | 已应用参考潜空间方法的修改后条件数据 |
 
 ---
 **Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

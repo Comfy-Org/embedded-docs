@@ -8,8 +8,8 @@ Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deu
 
 | Paramètre    | Type de données | Description |
 |--------------|-----------------|-------------|
-| `samples1`   | `LATENT`        | Le premier ensemble d'échantillons latents à interpoler. Il sert de point de départ pour le processus d'interpolation. |
-| `samples2`   | `LATENT`        | Le second ensemble d'échantillons latents à interpoler. Il sert de point d'arrivée pour le processus d'interpolation. |
+| `échantillons1`   | `LATENT`        | Le premier ensemble d'échantillons latents à interpoler. Il sert de point de départ pour le processus d'interpolation. |
+| `échantillons2`   | `LATENT`        | Le second ensemble d'échantillons latents à interpoler. Il sert de point d'arrivée pour le processus d'interpolation. |
 | `ratio`      | `FLOAT`         | Une valeur à virgule flottante qui détermine le poids de chaque ensemble d'échantillons dans la sortie interpolée. Un rapport de 0 produit une copie du premier ensemble, tandis qu'un rapport de 1 produit une copie du second ensemble. |
 
 ## Sorties

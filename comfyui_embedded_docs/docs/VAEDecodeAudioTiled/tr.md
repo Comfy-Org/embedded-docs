@@ -6,10 +6,10 @@ Bu düğüm, sıkıştırılmış bir ses temsilini (latent örnekler) bir Deği
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | Yok | Kod çözülecek sesin sıkıştırılmış latent temsili. |
+| `örnekler` | LATENT | Evet | Yok | Kod çözülecek sesin sıkıştırılmış latent temsili. |
 | `vae` | VAE | Evet | Yok | Kod çözme işlemini gerçekleştirmek için kullanılan Değişken Otomatik Kodlayıcı modeli. |
-| `tile_size` | INT | Evet | 32 ila 8192 | Her bir işleme tile'ının boyutu. Ses, belleği korumak için bu uzunluktaki bölümler halinde kod çözülür (varsayılan: 512). |
-| `overlap` | INT | Evet | 0 ila 1024 | Bitişik tile'ların örtüştüğü örnek sayısı. Bu, tile'lar arasındaki sınırlardaki yapaylıkları azaltmaya yardımcı olur (varsayılan: 64). |
+| `döşeme boyutu` | INT | Evet | 32 ila 8192 | Her bir işleme tile'ının boyutu. Ses, belleği korumak için bu uzunluktaki bölümler halinde kod çözülür (varsayılan: 512). |
+| `örtüşme` | INT | Evet | 0 ila 1024 | Bitişik tile'ların örtüştüğü örnek sayısı. Bu, tile'lar arasındaki sınırlardaki yapaylıkları azaltmaya yardımcı olur (varsayılan: 64). |
 
 ## Çıkışlar
 

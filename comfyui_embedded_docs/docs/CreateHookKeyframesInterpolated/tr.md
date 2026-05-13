@@ -6,14 +6,14 @@ Bir başlangıç ve bitiş noktası arasında enterpolasyonlu güç değerlerine
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `strength_start` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için başlangıç güç değeri (varsayılan: 1.0) |
-| `strength_end` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için bitiş güç değeri (varsayılan: 1.0) |
-| `interpolation` | COMBO | Evet | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | Güç değerleri arasında geçiş yapmak için kullanılan enterpolasyon yöntemi (varsayılan: LINEAR) |
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki başlangıç yüzde konumu (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki bitiş yüzde konumu (varsayılan: 1.0) |
-| `keyframes_count` | INT | Evet | 2 - 100 | Enterpolasyon dizisinde oluşturulacak anahtar kare sayısı (varsayılan: 5) |
-| `print_keyframes` | BOOLEAN | Evet | True/False | Oluşturulan anahtar kare bilgilerinin günlüğe yazdırılıp yazdırılmayacağı (varsayılan: False) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Hayır | - | Eklenecek isteğe bağlı önceki kanca anahtar kareleri grubu |
+| `başlangıç_gücü` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için başlangıç güç değeri (varsayılan: 1.0) |
+| `bitiş_gücü` | FLOAT | Evet | 0.0 - 10.0 | Enterpolasyon dizisi için bitiş güç değeri (varsayılan: 1.0) |
+| `enterpolasyon` | COMBO | Evet | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | Güç değerleri arasında geçiş yapmak için kullanılan enterpolasyon yöntemi (varsayılan: LINEAR) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki başlangıç yüzde konumu (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | Üretim sürecindeki bitiş yüzde konumu (varsayılan: 1.0) |
+| `anahtar_kare_sayısı` | INT | Evet | 2 - 100 | Enterpolasyon dizisinde oluşturulacak anahtar kare sayısı (varsayılan: 5) |
+| `anahtar_kareleri_yazdır` | BOOLEAN | Evet | True/False | Oluşturulan anahtar kare bilgilerinin günlüğe yazdırılıp yazdırılmayacağı (varsayılan: False) |
+| `önceki_kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Eklenecek isteğe bağlı önceki kanca anahtar kareleri grubu |
 
 ## Çıktılar
 

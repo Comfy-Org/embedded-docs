@@ -6,10 +6,10 @@ El nodo RegexMatch verifica si una cadena de texto contiene una coincidencia con
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto en la que buscar coincidencias |
-| `regex_pattern` | STRING | Sí | - | El patrón de expresión regular para comparar con la cadena |
-| `case_insensitive` | BOOLEAN | No | - | Si se debe ignorar mayúsculas/minúsculas al coincidir (valor predeterminado: True) |
-| `multiline` | BOOLEAN | No | - | Si se debe habilitar el modo multilínea para la coincidencia de expresiones regulares (valor predeterminado: False) |
+| `cadena` | STRING | Sí | - | La cadena de texto en la que buscar coincidencias |
+| `patrón_regex` | STRING | Sí | - | El patrón de expresión regular para comparar con la cadena |
+| `insensible_a_mayúsculas` | BOOLEAN | No | - | Si se debe ignorar mayúsculas/minúsculas al coincidir (valor predeterminado: True) |
+| `multilínea` | BOOLEAN | No | - | Si se debe habilitar el modo multilínea para la coincidencia de expresiones regulares (valor predeterminado: False) |
 | `dotall` | BOOLEAN | No | - | Si se debe habilitar el modo dotall para la coincidencia de expresiones regulares (valor predeterminado: False) |
 
 ## Salidas

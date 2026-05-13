@@ -6,7 +6,7 @@ El nodo Mahiro modifica la función de guía para enfocarse más en la direcció
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | | El modelo a parchear con la función de guía modificada |
+| `modelo` | MODEL | Sí | | El modelo a parchear con la función de guía modificada |
 
 ## Salidas
 

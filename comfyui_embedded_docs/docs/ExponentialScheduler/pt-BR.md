@@ -6,7 +6,7 @@ O nó `ExponentialScheduler` foi projetado para gerar uma sequência de valores 
 
 | Parâmetro   | Tipo de Dado | Descrição                                                                                   |
 |-------------|--------------|---------------------------------------------------------------------------------------------|
-| `steps`     | INT          | Especifica o número de etapas no processo de difusão. Influencia o comprimento da sequência de sigma gerada e, consequentemente, a granularidade da aplicação do ruído. |
+| `passos`     | INT          | Especifica o número de etapas no processo de difusão. Influencia o comprimento da sequência de sigma gerada e, consequentemente, a granularidade da aplicação do ruído. |
 | `sigma_max` | FLOAT        | Define o valor máximo de sigma, estabelecendo o limite superior da intensidade do ruído no processo de difusão. Desempenha um papel crucial na determinação da faixa de níveis de ruído aplicados. |
 | `sigma_min` | FLOAT        | Define o valor mínimo de sigma, estabelecendo o limite inferior da intensidade do ruído. Este parâmetro ajuda no ajuste fino do ponto inicial da aplicação do ruído. |
 

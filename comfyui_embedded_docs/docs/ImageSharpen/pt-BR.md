@@ -6,13 +6,13 @@ O nó **ImageSharpen** melhora a nitidez de uma imagem acentuando suas bordas e 
 
 | Campo            | Tipo de Dados | Descrição                                                                                   |
 |------------------|---------------|---------------------------------------------------------------------------------------------|
-| `image`          | `IMAGE`       | A imagem de entrada a ser nitidada. Este parâmetro é crucial, pois determina a imagem base na qual o efeito de nitidez será aplicado. |
-| `sharpen_radius` | `INT`         | Define o raio do efeito de nitidez. Um raio maior significa que mais pixels ao redor da borda serão afetados, resultando em um efeito de nitidez mais pronunciado. |
+| `imagem`          | `IMAGE`       | A imagem de entrada a ser nitidada. Este parâmetro é crucial, pois determina a imagem base na qual o efeito de nitidez será aplicado. |
+| `raio de nitidez` | `INT`         | Define o raio do efeito de nitidez. Um raio maior significa que mais pixels ao redor da borda serão afetados, resultando em um efeito de nitidez mais pronunciado. |
 | `sigma`          | `FLOAT`       | Controla a dispersão do efeito de nitidez. Um valor de sigma mais alto resulta em uma transição mais suave nas bordas, enquanto um sigma mais baixo torna a nitidez mais localizada. |
-| `alpha`          | `FLOAT`       | Ajusta a intensidade do efeito de nitidez. Valores de alpha mais altos resultam em um efeito de nitidez mais forte. |
+| `alfa`          | `FLOAT`       | Ajusta a intensidade do efeito de nitidez. Valores de alpha mais altos resultam em um efeito de nitidez mais forte. |
 
 ## Saídas
 
 | Campo   | Tipo de Dados | Descrição                                                              |
 |---------|---------------|------------------------------------------------------------------------|
-| `image` | `IMAGE`       | A imagem nitidada, com bordas e detalhes realçados, pronta para processamento ou exibição adicional. |
+| `imagem` | `IMAGE`       | A imagem nitidada, com bordas e detalhes realçados, pronta para processamento ou exibição adicional. |

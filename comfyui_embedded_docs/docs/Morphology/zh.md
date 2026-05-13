@@ -6,15 +6,15 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 待处理的输入图像 |
-| `operation` | STRING | 是 | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | 要应用的形态学运算（默认值："erode"） |
-| `kernel_size` | INT | 是 | 3-999 | 结构元素内核的大小（默认值：3）。必须为奇数。 |
+| `图像` | IMAGE | 是 | - | 待处理的输入图像 |
+| `操作` | STRING | 是 | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | 要应用的形态学运算（默认值："erode"） |
+| `核心大小` | INT | 是 | 3-999 | 结构元素内核的大小（默认值：3）。必须为奇数。 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 应用形态学运算后处理完成的图像 |
+| `图像` | IMAGE | 应用形态学运算后处理完成的图像 |
 
 ---
 **Source fingerprint (SHA-256):** `7f6224a0e58fbb7263267b377394e119c6f8d65d16af4ce492ca9504654af7b4`

@@ -8,9 +8,9 @@ Create Hook Keyframe düğümü, üretim sürecinde kanca davranışının deği
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `strength_mult` | FLOAT | Evet | -20.0 ila 20.0 | Bu anahtar karedeki kanca gücü çarpanı (varsayılan: 1.0) |
-| `start_percent` | FLOAT | Evet | 0.0 ila 1.0 | Bu anahtar karenin etkili olduğu üretim sürecindeki yüzde noktası (varsayılan: 0.0) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Hayır | - | Bu anahtar kareyi eklemek için isteğe bağlı önceki kanca anahtar kare grubu |
+| `güç_çarpanı` | FLOAT | Evet | -20.0 ila 20.0 | Bu anahtar karedeki kanca gücü çarpanı (varsayılan: 1.0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 ila 1.0 | Bu anahtar karenin etkili olduğu üretim sürecindeki yüzde noktası (varsayılan: 0.0) |
+| `önceki_kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Bu anahtar kareyi eklemek için isteğe bağlı önceki kanca anahtar kare grubu |
 
 ## Çıkışlar
 

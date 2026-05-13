@@ -6,7 +6,7 @@ El nodo FreeU aplica modificaciones en el dominio de la frecuencia a los bloques
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que se le aplicarán las modificaciones FreeU |
+| `modelo` | MODEL | Sí | - | El modelo al que se le aplicarán las modificaciones FreeU |
 | `b1` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala del backbone para características de model_channels × 4 (predeterminado: 1.1) |
 | `b2` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala del backbone para características de model_channels × 2 (predeterminado: 1.2) |
 | `s1` | FLOAT | Sí | 0.0 - 10.0 | Factor de escala de conexión de salto para características de model_channels × 4 (predeterminado: 0.9) |
@@ -16,7 +16,7 @@ El nodo FreeU aplica modificaciones en el dominio de la frecuencia a los bloques
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `model` | MODEL | El modelo modificado con los parches FreeU aplicados |
+| `modelo` | MODEL | El modelo modificado con los parches FreeU aplicados |
 
 ---
 **Source fingerprint (SHA-256):** `449a02a4bb5b42eb37fab394bcdc6375e08e369961d633618211ebc5f737ab51`

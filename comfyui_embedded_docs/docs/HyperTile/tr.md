@@ -7,10 +7,10 @@ HyperTile düğümü, görüntü oluşturma sırasında bellek kullanımını op
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | HyperTile optimizasyonunun uygulanacağı difüzyon modeli |
-| `tile_size` | INT | Hayır | 1 - 2048 | İşleme için hedef döşeme boyutu (varsayılan: 256). Etkin döşeme boyutu, 8'in katına yuvarlanır ve minimum 32'dir. |
-| `swap_size` | INT | Hayır | 1 - 128 | Verimliliği artırmak için işleme sırasında döşemelerin nasıl yeniden düzenleneceğini kontrol eder (varsayılan: 2) |
-| `max_depth` | INT | Hayır | 0 - 10 | Döşemenin uygulanacağı maksimum derinlik seviyesi (çözünürlük ölçeği). 0 değeri, döşemeyi yalnızca en yüksek çözünürlükte uygular (varsayılan: 0) |
-| `scale_depth` | BOOLEAN | Hayır | True / False | Etkinleştirildiğinde, döşeme boyutu daha derin derinlik seviyelerinde orantılı olarak ölçeklenir. Bu, daha düşük çözünürlüklerde kalitenin korunmasına yardımcı olabilir (varsayılan: False) |
+| `döşeme_boyutu` | INT | Hayır | 1 - 2048 | İşleme için hedef döşeme boyutu (varsayılan: 256). Etkin döşeme boyutu, 8'in katına yuvarlanır ve minimum 32'dir. |
+| `değiştirme_boyutu` | INT | Hayır | 1 - 128 | Verimliliği artırmak için işleme sırasında döşemelerin nasıl yeniden düzenleneceğini kontrol eder (varsayılan: 2) |
+| `maks_derinlik` | INT | Hayır | 0 - 10 | Döşemenin uygulanacağı maksimum derinlik seviyesi (çözünürlük ölçeği). 0 değeri, döşemeyi yalnızca en yüksek çözünürlükte uygular (varsayılan: 0) |
+| `ölçek_derinliği` | BOOLEAN | Hayır | True / False | Etkinleştirildiğinde, döşeme boyutu daha derin derinlik seviyelerinde orantılı olarak ölçeklenir. Bu, daha düşük çözünürlüklerde kalitenin korunmasına yardımcı olabilir (varsayılan: False) |
 
 ## Çıktılar
 

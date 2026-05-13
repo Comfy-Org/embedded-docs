@@ -7,7 +7,7 @@ Parlaklık Ayarla düğümü, bir giriş görüntüsünün parlaklığını değ
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `image` | IMAGE | Evet | - | Ayarlanacak giriş görüntüsü. |
-| `factor` | FLOAT | Hayır | 0.0 - 2.0 | Parlaklık faktörü. 1.0 = değişiklik yok, <1.0 = daha koyu, >1.0 = daha parlak. (varsayılan: 1.0) |
+| `faktör` | FLOAT | Hayır | 0.0 - 2.0 | Parlaklık faktörü. 1.0 = değişiklik yok, <1.0 = daha koyu, >1.0 = daha parlak. (varsayılan: 1.0) |
 
 ## Çıkışlar
 

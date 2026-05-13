@@ -6,10 +6,10 @@ EmptyMochiLatentVideo düğümü, belirtilen boyutlarda boş bir latent video te
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `width` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden genişliği (varsayılan: 848, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Evet | 7 ile MAX_RESOLUTION arası | Latent videodaki kare sayısı (varsayılan: 25, 1 çıkarıldıktan sonra 6'ya bölünebilir olmalıdır) |
-| `batch_size` | INT | Hayır | 1 ile 4096 arası | Bir toplu işlemde oluşturulacak latent video sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden genişliği (varsayılan: 848, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Evet | 7 ile MAX_RESOLUTION arası | Latent videodaki kare sayısı (varsayılan: 25, 1 çıkarıldıktan sonra 6'ya bölünebilir olmalıdır) |
+| `toplu_boyut` | INT | Hayır | 1 ile 4096 arası | Bir toplu işlemde oluşturulacak latent video sayısı (varsayılan: 1) |
 
 **Not:** Gerçek latent boyutları genişlik/8 ve yükseklik/8 olarak hesaplanır; zamansal boyut ise ((uzunluk - 1) // 6) + 1 olarak hesaplanır. `length` parametresi, `(length - 1)` ifadesinin 6'ya bölünebilir olmasını gerektirir; yani geçerli değerler 7, 13, 19, 25 vb. şeklindedir.
 

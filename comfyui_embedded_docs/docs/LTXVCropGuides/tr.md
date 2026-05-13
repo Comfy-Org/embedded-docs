@@ -6,17 +6,17 @@ LTXVCropGuides düğümü, ana kare bilgilerini kaldırarak ve gizli boyutları 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Oluşturma için yönlendirme bilgisi içeren pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Oluşturmada kaçınılması gerekenler hakkında yönlendirme bilgisi içeren negatif koşullandırma girdisi |
-| `latent` | LATENT | Evet | - | Görüntü örnekleri ve gürültü maskesi verilerini içeren gizli temsil |
+| `pozitif` | CONDITIONING | Evet | - | Oluşturma için yönlendirme bilgisi içeren pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Oluşturmada kaçınılması gerekenler hakkında yönlendirme bilgisi içeren negatif koşullandırma girdisi |
+| `gizli` | LATENT | Evet | - | Görüntü örnekleri ve gürültü maskesi verilerini içeren gizli temsil |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş negatif koşullandırma |
-| `latent` | LATENT | Ana kare bölümlerinin kaldırıldığı, ayarlanmış örnekler ve gürültü maskesi ile kırpılmış gizli temsil |
+| `negatif` | CONDITIONING | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş pozitif koşullandırma |
+| `gizli` | CONDITIONING | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş negatif koşullandırma |
+| `gizli` | LATENT | Ana kare bölümlerinin kaldırıldığı, ayarlanmış örnekler ve gürültü maskesi ile kırpılmış gizli temsil |
 
 ---
 **Source fingerprint (SHA-256):** `029309c260e09221cc9a046897589d99498f6e8ad984ef6052e50be9a0ea7b6d`

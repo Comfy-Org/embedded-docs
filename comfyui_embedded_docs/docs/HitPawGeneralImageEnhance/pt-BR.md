@@ -6,10 +6,10 @@ Este nó melhora imagens de baixa resolução, aumentando-as para super-resoluç
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | STRING | Sim | `"generative_portrait"`<br>`"generative"` | O modelo de aprimoramento a ser usado. O modelo `generative_portrait` é otimizado para retratos, enquanto `generative` é um modelo de uso geral. |
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser aprimorada. |
-| `upscale_factor` | INT | Sim | `1`<br>`2`<br>`4` | O fator pelo qual aumentar as dimensões da imagem. Um fator de 1 significa sem aumento, 2 dobra as dimensões e 4 quadruplica. |
-| `auto_downscale` | BOOLEAN | Não | - | Redimensionar automaticamente a imagem de entrada se a saída exceder o limite. Quando ativado, o nó tentará reduzir o tamanho da imagem de entrada para caber no limite de saída de 4 megapixels antes de aplicar o fator de aumento solicitado. (padrão: `False`) |
+| `modelo` | STRING | Sim | `"generative_portrait"`<br>`"generative"` | O modelo de aprimoramento a ser usado. O modelo `generative_portrait` é otimizado para retratos, enquanto `generative` é um modelo de uso geral. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser aprimorada. |
+| `fator_de_upscale` | INT | Sim | `1`<br>`2`<br>`4` | O fator pelo qual aumentar as dimensões da imagem. Um fator de 1 significa sem aumento, 2 dobra as dimensões e 4 quadruplica. |
+| `auto_redimensionar` | BOOLEAN | Não | - | Redimensionar automaticamente a imagem de entrada se a saída exceder o limite. Quando ativado, o nó tentará reduzir o tamanho da imagem de entrada para caber no limite de saída de 4 megapixels antes de aplicar o fator de aumento solicitado. (padrão: `False`) |
 
 **Nota:** O nó gerará um erro se o tamanho de saída calculado (altura da entrada × fator de aumento × largura da entrada × fator de aumento) exceder 4.000.000 pixels (4MP) e `auto_downscale` estiver desativado. Quando `auto_downscale` estiver ativado, o nó tentará reduzir a imagem de entrada para caber no limite antes de aplicar o fator de aumento solicitado. Se for necessário reduzir em mais de 2x, o nó reduzirá o fator de aumento.
 
@@ -17,7 +17,7 @@ Este nó melhora imagens de baixa resolução, aumentando-as para super-resoluç
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem de saída aprimorada e ampliada. |
+| `imagem` | IMAGE | A imagem de saída aprimorada e ampliada. |
 
 ---
 **Source fingerprint (SHA-256):** `29f927d39777acdfba2aad107027672d281c202ec78e04942e405c2cc64fcee4`

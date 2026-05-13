@@ -6,20 +6,20 @@ Bu düğüm, bir nesnenin farklı açılardan görüntülerini gösteren en fazl
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `image` | IMAGE | Evet | - | Nesnenin ön görünüm görüntüsü (zorunlu) |
-| `image_left` | IMAGE | Hayır | - | Nesnenin sol görünüm görüntüsü |
-| `image_back` | IMAGE | Hayır | - | Nesnenin arka görünüm görüntüsü |
-| `image_right` | IMAGE | Hayır | - | Nesnenin sağ görünüm görüntüsü |
-| `model_version` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturma için kullanılacak model sürümü |
-| `orientation` | COMBO | Hayır | Birden çok seçenek mevcut | 3B model için yönlendirme ayarı (varsayılan: "default") |
-| `texture` | BOOLEAN | Hayır | - | Model için doku oluşturulup oluşturulmayacağı (varsayılan: True) |
+| `görüntü` | IMAGE | Evet | - | Nesnenin ön görünüm görüntüsü (zorunlu) |
+| `sol_görüntü` | IMAGE | Hayır | - | Nesnenin sol görünüm görüntüsü |
+| `arka_görüntü` | IMAGE | Hayır | - | Nesnenin arka görünüm görüntüsü |
+| `sağ_görüntü` | IMAGE | Hayır | - | Nesnenin sağ görünüm görüntüsü |
+| `model_versiyonu` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturma için kullanılacak model sürümü |
+| `yönlendirme` | COMBO | Hayır | Birden çok seçenek mevcut | 3B model için yönlendirme ayarı (varsayılan: "default") |
+| `doku` | BOOLEAN | Hayır | - | Model için doku oluşturulup oluşturulmayacağı (varsayılan: True) |
 | `pbr` | BOOLEAN | Hayır | - | PBR (Fiziksel Tabanlı İşleme) malzemelerinin oluşturulup oluşturulmayacağı (varsayılan: True) |
-| `model_seed` | INT | Hayır | - | Model oluşturma için rastgele tohum (varsayılan: 42) |
-| `texture_seed` | INT | Hayır | - | Doku oluşturma için rastgele tohum (varsayılan: 42) |
-| `texture_quality` | COMBO | Hayır | `"standard"`<br>`"detailed"` | Doku oluşturma için kalite seviyesi (varsayılan: "standard") |
-| `texture_alignment` | COMBO | Hayır | `"original_image"`<br>`"geometry"` | Dokuların modele hizalanma yöntemi (varsayılan: "original_image") |
-| `face_limit` | INT | Hayır | -1 ila 500000 | Oluşturulan modeldeki maksimum yüz sayısı. Sınırsız için -1 olarak ayarlayın (varsayılan: -1) |
-| `quad` | BOOLEAN | Hayır | - | Bu parametre kullanımdan kaldırılmıştır ve hiçbir işlevi yoktur (varsayılan: False) |
+| `model_tohumu` | INT | Hayır | - | Model oluşturma için rastgele tohum (varsayılan: 42) |
+| `doku_tohumu` | INT | Hayır | - | Doku oluşturma için rastgele tohum (varsayılan: 42) |
+| `doku_kalitesi` | COMBO | Hayır | `"standard"`<br>`"detailed"` | Doku oluşturma için kalite seviyesi (varsayılan: "standard") |
+| `doku_hizalama` | COMBO | Hayır | `"original_image"`<br>`"geometry"` | Dokuların modele hizalanma yöntemi (varsayılan: "original_image") |
+| `yüz_sınırı` | INT | Hayır | -1 ila 500000 | Oluşturulan modeldeki maksimum yüz sayısı. Sınırsız için -1 olarak ayarlayın (varsayılan: -1) |
+| `dörtgen` | BOOLEAN | Hayır | - | Bu parametre kullanımdan kaldırılmıştır ve hiçbir işlevi yoktur (varsayılan: False) |
 | `geometry_quality` | COMBO | Hayır | `"standard"`<br>`"detailed"` | Geometri oluşturma için kalite seviyesi (varsayılan: "standard") |
 
 **Not:** Ön görüntü (`image`) her zaman zorunludur. Çoklu görünüm işleme için en az bir ek görünüm görüntüsü (`image_left`, `image_back` veya `image_right`) sağlanmalıdır.
@@ -28,8 +28,8 @@ Bu düğüm, bir nesnenin farklı açılardan görüntülerini gösteren en fazl
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `model_file` | STRING | Oluşturulan 3B model için dosya yolu veya tanımlayıcı (yalnızca geriye dönük uyumluluk için) |
-| `model task_id` | MODEL_TASK_ID | Model oluşturma sürecini izlemek için görev tanımlayıcı |
+| `model_görev_id` | STRING | Oluşturulan 3B model için dosya yolu veya tanımlayıcı (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | MODEL_TASK_ID | Model oluşturma sürecini izlemek için görev tanımlayıcı |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan 3B model dosyası |
 
 ---

@@ -10,18 +10,18 @@ HunyuanRefinerLatent ノードは、リファインメント処理のために c
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | はい | - | 処理されるポジティブ conditioning 入力 |
-| `negative` | CONDITIONING | はい | - | 処理されるネガティブ conditioning 入力 |
-| `latent` | LATENT | はい | - | 潜在表現の入力 |
-| `noise_augmentation` | FLOAT | はい | 0.0 - 1.0 | 適用するノイズ拡張の量（デフォルト: 0.10） |
+| `ポジティブ` | CONDITIONING | はい | - | 処理されるポジティブ conditioning 入力 |
+| `ネガティブ` | CONDITIONING | はい | - | 処理されるネガティブ conditioning 入力 |
+| `潜在表現` | LATENT | はい | - | 潜在表現の入力 |
+| `ノイズ増強` | FLOAT | はい | 0.0 - 1.0 | 適用するノイズ拡張の量（デフォルト: 0.10） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | ノイズ拡張と潜在画像の結合が適用された、処理済みのポジティブ conditioning |
-| `negative` | CONDITIONING | ノイズ拡張と潜在画像の結合が適用された、処理済みのネガティブ conditioning |
-| `latent` | LATENT | 次元 [batch_size, 32, height, width, channels] を持つ新しい潜在変数出力 |
+| `ネガティブ` | CONDITIONING | ノイズ拡張と潜在画像の結合が適用された、処理済みのポジティブ conditioning |
+| `潜在表現` | CONDITIONING | ノイズ拡張と潜在画像の結合が適用された、処理済みのネガティブ conditioning |
+| `潜在表現` | LATENT | 次元 [batch_size, 32, height, width, channels] を持つ新しい潜在変数出力 |
 
 ---
 **Source fingerprint (SHA-256):** `f097b58f1948e5c0801f81b51a5189619695a6afa189368aff4c64b126fc5ce5`

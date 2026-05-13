@@ -6,14 +6,14 @@ Este nó combina duas entradas de condicionamento em uma única saída, mescland
 
 | Nome do Parâmetro   | Tipo de Dado        | Descrição |
 |----------------------|--------------------|-------------|
-| `conditioning_1`     | `CONDITIONING`     | A primeira entrada de condicionamento a ser combinada. Tem importância igual à `conditioning_2` no processo de combinação. |
-| `conditioning_2`     | `CONDITIONING`     | A segunda entrada de condicionamento a ser combinada. Tem importância igual à `conditioning_1` no processo de combinação. |
+| `condicionamento_1`     | `CONDITIONING`     | A primeira entrada de condicionamento a ser combinada. Tem importância igual à `condicionamento_2` no processo de combinação. |
+| `condicionamento_2`     | `CONDITIONING`     | A segunda entrada de condicionamento a ser combinada. Tem importância igual à `condicionamento_1` no processo de combinação. |
 
 ## Saídas
 
 | Nome do Parâmetro   | Tipo de Dado        | Descrição |
 |----------------------|--------------------|-------------|
-| `conditioning`       | `CONDITIONING`     | O resultado da combinação de `conditioning_1` e `conditioning_2`, encapsulando as informações mescladas. |
+| `conditioning`       | `CONDITIONING`     | O resultado da combinação de `condicionamento_1` e `condicionamento_2`, encapsulando as informações mescladas. |
 
 ## Cenários de Uso
 

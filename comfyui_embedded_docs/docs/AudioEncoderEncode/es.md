@@ -6,7 +6,7 @@ El nodo AudioEncoderEncode procesa datos de audio codificándolos mediante un mo
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Por Defecto | Rango | Descripción |
 |-----------|--------------|-----------------|-------------|-------|-------------|
-| `audio_encoder` | AUDIO_ENCODER | Requerido | - | - | El modelo de codificador de audio utilizado para procesar la entrada de audio |
+| `codificador_audio` | AUDIO_ENCODER | Requerido | - | - | El modelo de codificador de audio utilizado para procesar la entrada de audio |
 | `audio` | AUDIO | Requerido | - | - | Los datos de audio que contienen información de forma de onda y frecuencia de muestreo |
 
 ## Salidas

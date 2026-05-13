@@ -16,8 +16,8 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `GLB` | FILE3D | 处理后的 GLB 格式 3D 模型。 |
-| `OBJ` | FILE3D | 处理后的 OBJ 格式 3D 模型。 |
+| `OBJ` | FILE3D | 处理后的 GLB 格式 3D 模型。 |
+| `texture_image` | FILE3D | 处理后的 OBJ 格式 3D 模型。 |
 | `texture_image` | IMAGE | 为 3D 模型新生成的纹理图像。 |
 
 ---

@@ -8,7 +8,7 @@ Carga un archivo de modelo de difusión (checkpoint) y lo descompone en tres com
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `ckpt_name` | STRING | Sí | Todos los archivos de modelo en la carpeta de checkpoints | El nombre del checkpoint (modelo) a cargar. Selecciona el nombre del archivo del checkpoint, que determina el modelo de IA utilizado para la generación de imágenes posterior. |
+| `nombre_ckpt` | STRING | Sí | Todos los archivos de modelo en la carpeta de checkpoints | El nombre del checkpoint (modelo) a cargar. Selecciona el nombre del archivo del checkpoint, que determina el modelo de IA utilizado para la generación de imágenes posterior. |
 
 **Nota:** Si se agregan nuevos archivos de modelo mientras ComfyUI está en ejecución, es necesario actualizar el navegador (Ctrl+R) para ver los nuevos archivos en la lista desplegable.
 

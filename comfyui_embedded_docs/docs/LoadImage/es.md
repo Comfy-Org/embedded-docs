@@ -6,11 +6,11 @@ El nodo LoadImage está diseñado para cargar y preprocesar imágenes desde una 
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|--------------|-------------|
-| `image`   | COMBO[STRING] | El parámetro `image` especifica el identificador de la imagen que se cargará y procesará. Es fundamental para determinar la ruta al archivo de imagen y, posteriormente, cargar la imagen para su transformación y normalización. |
+| `imagen`   | COMBO[STRING] | El parámetro `imagen` especifica el identificador de la imagen que se cargará y procesará. Es fundamental para determinar la ruta al archivo de imagen y, posteriormente, cargar la imagen para su transformación y normalización. |
 
 ## Salidas
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La imagen procesada, con valores de píxeles normalizados y transformaciones aplicadas según sea necesario. Está lista para su posterior procesamiento o análisis. |
+| `imagen`   | `IMAGE`     | La imagen procesada, con valores de píxeles normalizados y transformaciones aplicadas según sea necesario. Está lista para su posterior procesamiento o análisis. |
 | `mask`    | `MASK`      | Una salida opcional que proporciona una máscara para la imagen, útil en escenarios donde la imagen incluye un canal alfa para transparencia. |

@@ -8,11 +8,11 @@ Este nó utiliza a API Hunyuan3D Pro da Tencent para gerar um modelo 3D a partir
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `model` | COMBO | Sim | `"3.0"`<br>`"3.1"` | A versão do modelo Hunyuan3D a ser utilizada. A opção LowPoly não está disponível para o modelo `3.1`. |
+| `modelo` | COMBO | Sim | `"3.0"`<br>`"3.1"` | A versão do modelo Hunyuan3D a ser utilizada. A opção LowPoly não está disponível para o modelo `3.1`. |
 | `prompt` | STRING | Sim | - | A descrição textual do modelo 3D a ser gerado. Suporta até 1024 caracteres. |
-| `face_count` | INT | Sim | 3000 - 1500000 | O número alvo de faces para o modelo 3D gerado. Padrão: 500000. |
-| `generate_type` | DYNAMICCOMBO | Sim | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | O tipo de modelo 3D a ser gerado. As opções disponíveis e seus parâmetros associados são:<br>- **Normal**: Gera um modelo padrão. Inclui um parâmetro `pbr` (padrão: `False`).<br>- **LowPoly**: Gera um modelo de baixa poligonagem. Inclui os parâmetros `polygon_type` (`"triangle"` ou `"quadrilateral"`) e `pbr` (padrão: `False`).<br>- **Geometry**: Gera um modelo apenas com geometria. |
-| `seed` | INT | Não | 0 - 2147483647 | Um valor de semente para a geração. Os resultados não são determinísticos independentemente da semente. Definir uma nova semente controla se o nó deve ser executado novamente. Padrão: 0. |
+| `número_de_faces` | INT | Sim | 3000 - 1500000 | O número alvo de faces para o modelo 3D gerado. Padrão: 500000. |
+| `tipo_de_geração` | DYNAMICCOMBO | Sim | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | O tipo de modelo 3D a ser gerado. As opções disponíveis e seus parâmetros associados são:<br>- **Normal**: Gera um modelo padrão. Inclui um parâmetro `pbr` (padrão: `False`).<br>- **LowPoly**: Gera um modelo de baixa poligonagem. Inclui os parâmetros `polygon_type` (`"triangle"` ou `"quadrilateral"`) e `pbr` (padrão: `False`).<br>- **Geometry**: Gera um modelo apenas com geometria. |
+| `semente` | INT | Não | 0 - 2147483647 | Um valor de semente para a geração. Os resultados não são determinísticos independentemente da semente. Definir uma nova semente controla se o nó deve ser executado novamente. Padrão: 0. |
 
 **Observação:** O parâmetro `generate_type` é dinâmico. Selecionar `"LowPoly"` revelará entradas adicionais para `polygon_type` e `pbr`. Selecionar `"Normal"` revelará uma entrada para `pbr`. Selecionar `"Geometry"` não revelará entradas adicionais.
 

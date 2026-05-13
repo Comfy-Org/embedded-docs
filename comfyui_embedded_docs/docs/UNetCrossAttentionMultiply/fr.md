@@ -6,17 +6,17 @@ Le nœud UNetCrossAttentionMultiply applique des facteurs de multiplication au m
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle UNet à modifier avec des facteurs d'échelle d'attention |
+| `modèle` | MODEL | Oui | - | Le modèle UNet à modifier avec des facteurs d'échelle d'attention |
 | `q` | FLOAT | Non | 0,0 - 10,0 | Facteur d'échelle pour les composants de requête dans l'attention croisée (par défaut : 1,0) |
 | `k` | FLOAT | Non | 0,0 - 10,0 | Facteur d'échelle pour les composants de clé dans l'attention croisée (par défaut : 1,0) |
 | `v` | FLOAT | Non | 0,0 - 10,0 | Facteur d'échelle pour les composants de valeur dans l'attention croisée (par défaut : 1,0) |
-| `out` | FLOAT | Non | 0,0 - 10,0 | Facteur d'échelle pour les composants de sortie dans l'attention croisée (par défaut : 1,0) |
+| `sortie` | FLOAT | Non | 0,0 - 10,0 | Facteur d'échelle pour les composants de sortie dans l'attention croisée (par défaut : 1,0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle UNet modifié avec des composants d'attention croisée mis à l'échelle |
+| `modèle` | MODEL | Le modèle UNet modifié avec des composants d'attention croisée mis à l'échelle |
 
 ---
 **Source fingerprint (SHA-256):** `2623858c11e93ab5952194670c9e4ea74bba4e2ea32089540665eea361dc1491`

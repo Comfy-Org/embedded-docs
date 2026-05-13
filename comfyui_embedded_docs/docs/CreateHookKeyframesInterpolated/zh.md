@@ -8,14 +8,14 @@
 
 | 参数 | 数据类型 | 必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `strength_start` | FLOAT | 是 | 0.0 - 10.0 | 插值序列的起始强度值（默认值：1.0） |
-| `strength_end` | FLOAT | 是 | 0.0 - 10.0 | 插值序列的结束强度值（默认值：1.0） |
-| `interpolation` | COMBO | 是 | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | 用于在强度值之间过渡的插值方法（默认值：LINEAR） |
-| `start_percent` | FLOAT | 是 | 0.0 - 1.0 | 生成过程中的起始百分比位置（默认值：0.0） |
-| `end_percent` | FLOAT | 是 | 0.0 - 1.0 | 生成过程中的结束百分比位置（默认值：1.0） |
-| `keyframes_count` | INT | 是 | 2 - 100 | 在插值序列中生成的关键帧数量（默认值：5） |
-| `print_keyframes` | BOOLEAN | 是 | True/False | 是否将生成的关键帧信息打印到日志中（默认值：False） |
-| `prev_hook_kf` | HOOK_KEYFRAMES | 否 | - | 可选的先前钩子关键帧组，用于追加到其后 |
+| `开始强度` | FLOAT | 是 | 0.0 - 10.0 | 插值序列的起始强度值（默认值：1.0） |
+| `结束强度` | FLOAT | 是 | 0.0 - 10.0 | 插值序列的结束强度值（默认值：1.0） |
+| `插值` | COMBO | 是 | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | 用于在强度值之间过渡的插值方法（默认值：LINEAR） |
+| `开始百分比` | FLOAT | 是 | 0.0 - 1.0 | 生成过程中的起始百分比位置（默认值：0.0） |
+| `结束百分比` | FLOAT | 是 | 0.0 - 1.0 | 生成过程中的结束百分比位置（默认值：1.0） |
+| `关键帧数量` | INT | 是 | 2 - 100 | 在插值序列中生成的关键帧数量（默认值：5） |
+| `打印关键帧` | BOOLEAN | 是 | True/False | 是否将生成的关键帧信息打印到日志中（默认值：False） |
+| `前一个约束关键帧` | HOOK_KEYFRAMES | 否 | - | 可选的先前钩子关键帧组，用于追加到其后 |
 
 ## 输出
 

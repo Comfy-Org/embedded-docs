@@ -8,7 +8,7 @@ El nodo AudioConcat combina dos entradas de audio uniéndolas. Toma dos entradas
 |-----------|--------------|-------------|-------|-------------|
 | `audio1` | AUDIO | Sí | - | La primera entrada de audio que se concatenará |
 | `audio2` | AUDIO | Sí | - | La segunda entrada de audio que se concatenará |
-| `direction` | COMBO | Sí | `"after"`<br>`"before"` | Si se añade audio2 después o antes de audio1 (predeterminado: "after") |
+| `dirección` | COMBO | Sí | `"after"`<br>`"before"` | Si se añade audio2 después o antes de audio1 (predeterminado: "after") |
 
 ## Salidas
 

@@ -12,9 +12,9 @@
 
 | 参数名 | 数据类型 | 描述 |
 | -------------- | ----------- | --------------------------------------------------------------- |
-| `clip_vision` | CLIP_VISION | CLIP 视觉模型，通常通过 CLIPVisionLoader 节点加载 |
-| `image` | IMAGE | 待编码的输入图像 |
-| `crop` | Dropdown | 图像裁剪方式，选项：center（中心裁剪）、none（不裁剪） |
+| `clip视觉` | CLIP_VISION | CLIP 视觉模型，通常通过 CLIPVisionLoader 节点加载 |
+| `图像` | IMAGE | 待编码的输入图像 |
+| `裁剪` | Dropdown | 图像裁剪方式，选项：center（中心裁剪）、none（不裁剪） |
 
 ## 输出
 

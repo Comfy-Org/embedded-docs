@@ -6,8 +6,8 @@ Le nœud LatentFlip est conçu pour manipuler les représentations latentes en l
 
 | Paramètre     | Type de données | Description |
 |---------------|--------------|-------------|
-| `samples`     | `LATENT`     | Le paramètre `samples` représente les représentations latentes à retourner. L'opération de retournement modifie ces représentations, soit verticalement, soit horizontalement, selon le paramètre `flip_method`, transformant ainsi les données dans l'espace latent. |
-| `flip_method` | COMBO[STRING] | Le paramètre `flip_method` spécifie l'axe selon lequel les échantillons latents seront retournés. Il peut être défini sur 'x-axis: vertically' (axe x : verticalement) ou 'y-axis: horizontally' (axe y : horizontalement), déterminant la direction du retournement et donc la nature de la transformation appliquée aux représentations latentes. |
+| `échantillons`     | `LATENT`     | Le paramètre `échantillons` représente les représentations latentes à retourner. L'opération de retournement modifie ces représentations, soit verticalement, soit horizontalement, selon le paramètre `méthode_de_retournement`, transformant ainsi les données dans l'espace latent. |
+| `méthode_de_retournement` | COMBO[STRING] | Le paramètre `méthode_de_retournement` spécifie l'axe selon lequel les échantillons latents seront retournés. Il peut être défini sur 'x-axis: vertically' (axe x : verticalement) ou 'y-axis: horizontally' (axe y : horizontalement), déterminant la direction du retournement et donc la nature de la transformation appliquée aux représentations latentes. |
 
 ## Sorties
 

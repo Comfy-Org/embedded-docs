@@ -6,7 +6,7 @@ Bu düğüm, Recraft API'sini kullanarak gerçekçi görseller oluşturmak için
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Evet | Birden çok seçenek mevcuttur (Recraft API tarafından belirlenir) | realistic_image stiline uygulanacak belirli alt stildir. "None" olarak ayarlanırsa, hiçbir alt stil uygulanmaz. |
+| `alt_stil` | STRING | Evet | Birden çok seçenek mevcuttur (Recraft API tarafından belirlenir) | realistic_image stiline uygulanacak belirli alt stildir. "None" olarak ayarlanırsa, hiçbir alt stil uygulanmaz. |
 
 ## Çıktılar
 

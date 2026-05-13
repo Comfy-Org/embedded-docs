@@ -7,7 +7,7 @@ Le nœud SaveImage enregistre les images qu'il reçoit dans votre répertoire `C
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `images` | IMAGE | Oui | - | Les images à sauvegarder. |
-| `filename_prefix` | STRING | Oui | - | Le préfixe du fichier à sauvegarder. Peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant de nœuds (par défaut : "ComfyUI"). |
+| `préfixe_du_nom_de_fichier` | STRING | Oui | - | Le préfixe du fichier à sauvegarder. Peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant de nœuds (par défaut : "ComfyUI"). |
 
 ## Sorties
 

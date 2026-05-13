@@ -8,7 +8,7 @@ TCFG (Guidage CFG à Amortissement Tangentiel) affine les prédictions inconditi
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer le guidage CFG à amortissement tangentiel |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer le guidage CFG à amortissement tangentiel |
 
 ## Sorties
 

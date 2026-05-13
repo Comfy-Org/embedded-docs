@@ -8,7 +8,7 @@ O nó RandomNoise gera padrões de ruído aleatório com base em um valor de sem
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `noise_seed` | INT | Sim | 0 a 18446744073709551615 | O valor da semente usado para gerar o padrão de ruído aleatório (padrão: 0). A mesma semente sempre produzirá a mesma saída de ruído. |
+| `semente do ruído` | INT | Sim | 0 a 18446744073709551615 | O valor da semente usado para gerar o padrão de ruído aleatório (padrão: 0). A mesma semente sempre produzirá a mesma saída de ruído. |
 
 ## Saídas
 

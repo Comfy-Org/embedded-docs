@@ -36,9 +36,9 @@ Bu düğüm, izlenen nesnelerin bir video önizlemesini oluşturur; her izlenen 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `track_data` | TRACK_DATA | Evet | - | Bir SAM3 izleme düğümünden paketlenmiş maskeler ve nesne bilgilerini içeren izleme verileri. |
-| `images` | IMAGE | Hayır | - | Önizleme için arka plan olarak kullanılacak isteğe bağlı giriş görüntüleri. Sağlanmazsa siyah bir arka plan kullanılır. |
-| `opacity` | FLOAT | Hayır | 0,0 ile 1,0 arası (adım: 0,05) | İzlenen nesnelere uygulanan renk katmanının opaklığı (varsayılan: 0,5). |
+| `iz_verisi` | TRACK_DATA | Evet | - | Bir SAM3 izleme düğümünden paketlenmiş maskeler ve nesne bilgilerini içeren izleme verileri. |
+| `görüntüler` | IMAGE | Hayır | - | Önizleme için arka plan olarak kullanılacak isteğe bağlı giriş görüntüleri. Sağlanmazsa siyah bir arka plan kullanılır. |
+| `opaklık` | FLOAT | Hayır | 0,0 ile 1,0 arası (adım: 0,05) | İzlenen nesnelere uygulanan renk katmanının opaklığı (varsayılan: 0,5). |
 | `fps` | FLOAT | Hayır | 1,0 ile 120,0 arası (adım: 1,0) | Çıktı videosunun kare hızı (varsayılan: 24,0). |
 
 ## Çıktılar

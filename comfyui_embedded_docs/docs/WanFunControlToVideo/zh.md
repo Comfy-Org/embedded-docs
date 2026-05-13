@@ -14,21 +14,21 @@ WanFunControlToVideo节点是ComfyUI的一个扩展，旨在支持Wan Fun Contro
 
 | 参数名 | 是否必需 | 数据类型 | 描述 | 默认值 |
 |:---|:---|:---|:---|:---|
-| `positive` | 是 | CONDITIONING | 标准的ComfyUI正向调节数据，通常来自"CLIP Text Encode"节点。正向提示描述了用户期望生成视频的内容、主题和艺术风格。 | 无 |
-| `negative` | 是 | CONDITIONING | 标准的ComfyUI负向调节数据，通常由"CLIP Text Encode"节点生成。负向提示指定了用户希望在生成视频中避免的元素、风格或伪影。 | 无 |
+| `正向` | 是 | CONDITIONING | 标准的ComfyUI正向调节数据，通常来自"CLIP Text Encode"节点。正向提示描述了用户期望生成视频的内容、主题和艺术风格。 | 无 |
+| `负向` | 是 | CONDITIONING | 标准的ComfyUI负向调节数据，通常由"CLIP Text Encode"节点生成。负向提示指定了用户希望在生成视频中避免的元素、风格或伪影。 | 无 |
 | `vae` | 是 | VAE | 需要与Wan 2.1 Fun模型系列兼容的VAE（变分自编码器）模型，用于编码和解码图像/视频数据。 | 无 |
-| `width` | 是 | INT | 输出视频帧的期望宽度（像素），默认值为832，最小值为16，最大值由nodes.MAX_RESOLUTION决定，步长为16。 | 832 |
-| `height` | 是 | INT | 输出视频帧的期望高度（像素），默认值为480，最小值为16，最大值由nodes.MAX_RESOLUTION决定，步长为16。 | 480 |
-| `length` | 是 | INT | 生成视频的总帧数，默认值为81，最小值为1，最大值由nodes.MAX_RESOLUTION决定，步长为4。 | 81 |
-| `batch_size` | 是 | INT | 单次批处理生成的视频数量，默认值为1，最小值为1，最大值为4096。 | 1 |
-| `clip_vision_output` | 否 | CLIP_VISION_OUTPUT | （可选）由CLIP视觉模型提取的视觉特征，用于视觉风格和内容引导。 | 无 |
-| `start_image` | 否 | IMAGE | （可选）影响生成视频开头的初始图像。 | 无 |
-| `control_video` | 否 | IMAGE | （可选）允许用户提供预处理的ControlNet参考视频，用于引导生成视频的运动和潜在结构。 | 无 |
+| `宽度` | 是 | INT | 输出视频帧的期望宽度（像素），默认值为832，最小值为16，最大值由nodes.MAX_RESOLUTION决定，步长为16。 | 832 |
+| `高度` | 是 | INT | 输出视频帧的期望高度（像素），默认值为480，最小值为16，最大值由nodes.MAX_RESOLUTION决定，步长为16。 | 480 |
+| `长度` | 是 | INT | 生成视频的总帧数，默认值为81，最小值为1，最大值由nodes.MAX_RESOLUTION决定，步长为4。 | 81 |
+| `批量大小` | 是 | INT | 单次批处理生成的视频数量，默认值为1，最小值为1，最大值为4096。 | 1 |
+| `CLIP视觉输出` | 否 | CLIP_VISION_OUTPUT | （可选）由CLIP视觉模型提取的视觉特征，用于视觉风格和内容引导。 | 无 |
+| `起始图像` | 否 | IMAGE | （可选）影响生成视频开头的初始图像。 | 无 |
+| `控制视频` | 否 | IMAGE | （可选）允许用户提供预处理的ControlNet参考视频，用于引导生成视频的运动和潜在结构。 | 无 |
 
 ## 输出
 
 | 参数名 | 数据类型 | 描述 |
 |:---|:---|:---|
-| `positive` | CONDITIONING | 提供增强后的正向调节数据，包含编码后的start_image和control_video。 |
-| `negative` | CONDITIONING | 提供同样经过增强的负向调节数据，包含相同的concat_latent_image。 |
+| `负向` | CONDITIONING | 提供增强后的正向调节数据，包含编码后的start_image和control_video。 |
+| `latent` | CONDITIONING | 提供同样经过增强的负向调节数据，包含相同的concat_latent_image。 |
 | `latent` | LATENT | 一个包含空潜在张量的字典，键为"samples"。 |

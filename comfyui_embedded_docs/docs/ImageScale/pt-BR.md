@@ -6,14 +6,14 @@ O nó ImageScale foi projetado para redimensionar imagens para dimensões espec�
 
 | Parâmetro       | Tipo de Dado | Descrição                                                                           |
 |-----------------|--------------|---------------------------------------------------------------------------------------|
-| `image`         | `IMAGE`      | A imagem de entrada a ser ampliada. Este parâmetro é central para a operação do nó, servindo como o dado principal sobre o qual as transformações de redimensionamento são aplicadas. A qualidade e as dimensões da imagem de saída são diretamente influenciadas pelas propriedades da imagem original. |
-| `upscale_method`| COMBO[STRING] | Especifica o método usado para ampliar a imagem. A escolha do método pode afetar a qualidade e as características da imagem ampliada, influenciando a fidelidade visual e possíveis artefatos na saída redimensionada. |
-| `width`         | `INT`        | A largura desejada para a imagem ampliada. Este parâmetro influencia diretamente as dimensões da imagem de saída, determinando a escala horizontal da operação de redimensionamento. |
-| `height`        | `INT`        | A altura desejada para a imagem ampliada. Este parâmetro influencia diretamente as dimensões da imagem de saída, determinando a escala vertical da operação de redimensionamento. |
-| `crop`          | COMBO[STRING] | Determina se e como a imagem ampliada deve ser cortada, oferecendo opções para corte desativado ou corte centralizado. Isso afeta a composição final da imagem, potencialmente removendo bordas para se ajustar às dimensões especificadas. |
+| `imagem`         | `IMAGE`      | A imagem de entrada a ser ampliada. Este parâmetro é central para a operação do nó, servindo como o dado principal sobre o qual as transformações de redimensionamento são aplicadas. A qualidade e as dimensões da imagem de saída são diretamente influenciadas pelas propriedades da imagem original. |
+| `método de upscaling`| COMBO[STRING] | Especifica o método usado para ampliar a imagem. A escolha do método pode afetar a qualidade e as características da imagem ampliada, influenciando a fidelidade visual e possíveis artefatos na saída redimensionada. |
+| `largura`         | `INT`        | A largura desejada para a imagem ampliada. Este parâmetro influencia diretamente as dimensões da imagem de saída, determinando a escala horizontal da operação de redimensionamento. |
+| `altura`        | `INT`        | A altura desejada para a imagem ampliada. Este parâmetro influencia diretamente as dimensões da imagem de saída, determinando a escala vertical da operação de redimensionamento. |
+| `cortar`          | COMBO[STRING] | Determina se e como a imagem ampliada deve ser cortada, oferecendo opções para corte desativado ou corte centralizado. Isso afeta a composição final da imagem, potencialmente removendo bordas para se ajustar às dimensões especificadas. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dado | Descrição |
 |-----------|--------------|-----------|
-| `image`   | `IMAGE`      | A imagem ampliada (e opcionalmente cortada), pronta para processamento adicional ou visualização. |
+| `imagem`   | `IMAGE`      | A imagem ampliada (e opcionalmente cortada), pronta para processamento adicional ou visualização. |

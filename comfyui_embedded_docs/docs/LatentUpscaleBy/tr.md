@@ -6,9 +6,9 @@ LatentUpscaleBy düğümü, görüntülerin gizli (latent) temsillerini büyütm
 
 | Parametre | Veri Türü | Açıklama |
 |---------------|--------------|-------------|
-| `samples` | `LATENT` | Büyütülecek görüntülerin gizli temsilidir. Bu parametre, büyütme işlemine girecek giriş verilerini belirlemek için çok önemlidir. |
-| `upscale_method` | COMBO[STRING] | Gizli örnekleri büyütmek için kullanılan yöntemi belirtir. Yöntem seçimi, büyütülmüş çıktının kalitesini ve özelliklerini önemli ölçüde etkileyebilir. |
-| `scale_by` | `FLOAT` | Gizli örneklerin hangi faktörle ölçeklendirileceğini belirler. Bu parametre, çıktının çözünürlüğünü doğrudan etkileyerek büyütme işlemi üzerinde hassas kontrol sağlar. |
+| `örnekler` | `LATENT` | Büyütülecek görüntülerin gizli temsilidir. Bu parametre, büyütme işlemine girecek giriş verilerini belirlemek için çok önemlidir. |
+| `büyütme_yöntemi` | COMBO[STRING] | Gizli örnekleri büyütmek için kullanılan yöntemi belirtir. Yöntem seçimi, büyütülmüş çıktının kalitesini ve özelliklerini önemli ölçüde etkileyebilir. |
+| `oranla_büyüt` | `FLOAT` | Gizli örneklerin hangi faktörle ölçeklendirileceğini belirler. Bu parametre, çıktının çözünürlüğünü doğrudan etkileyerek büyütme işlemi üzerinde hassas kontrol sağlar. |
 
 ## Çıktılar
 

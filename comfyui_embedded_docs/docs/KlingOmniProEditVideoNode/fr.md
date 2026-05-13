@@ -7,11 +7,11 @@ Le nœud Kling Omni Edit Video (Pro) utilise un modèle d'IA pour éditer une vi
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `model_name` | COMBO | Oui | `"kling-v3-omni"`<br>`"kling-video-o1"` | Le modèle d'IA à utiliser pour l'édition vidéo (par défaut : `"kling-v3-omni"`). |
-| `prompt` | STRING | Oui | | Un prompt textuel décrivant le contenu vidéo. Cela peut inclure des descriptions à la fois positives et négatives. |
-| `video` | VIDEO | Oui | | Vidéo à éditer. La durée de la vidéo de sortie sera identique. |
-| `keep_original_sound` | BOOLEAN | Oui | | Détermine si l'audio original de la vidéo d'entrée est conservé dans la sortie (par défaut : True). |
-| `reference_images` | IMAGE | Non | | Jusqu'à 4 images de référence supplémentaires. |
-| `resolution` | COMBO | Non | `"1080p"`<br>`"720p"` | La résolution de la vidéo de sortie (par défaut : `"1080p"`). |
+| `invite` | STRING | Oui | | Un prompt textuel décrivant le contenu vidéo. Cela peut inclure des descriptions à la fois positives et négatives. |
+| `vidéo` | VIDEO | Oui | | Vidéo à éditer. La durée de la vidéo de sortie sera identique. |
+| `garder_son_original` | BOOLEAN | Oui | | Détermine si l'audio original de la vidéo d'entrée est conservé dans la sortie (par défaut : True). |
+| `images_de_référence` | IMAGE | Non | | Jusqu'à 4 images de référence supplémentaires. |
+| `résolution` | COMBO | Non | `"1080p"`<br>`"720p"` | La résolution de la vidéo de sortie (par défaut : `"1080p"`). |
 | `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). |
 
 **Contraintes et limitations :**
@@ -27,7 +27,7 @@ Le nœud Kling Omni Edit Video (Pro) utilise un modèle d'IA pour éditer une vi
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `video` | VIDEO | La vidéo éditée générée par le modèle d'IA. |
+| `vidéo` | VIDEO | La vidéo éditée générée par le modèle d'IA. |
 
 ---
 **Source fingerprint (SHA-256):** `ddc3fdc8c97cdcdd34f16a0916b13ffe6adeb46e58e2933516c9a6aef7c36730`

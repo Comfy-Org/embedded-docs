@@ -6,7 +6,7 @@ Le nœud SamplerLMS crée un échantillonneur par moindres carrés moyens (LMS) 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `order` | INT | Oui | 1 à 100 | Le paramètre d'ordre pour l'algorithme de l'échantillonneur LMS, qui contrôle la précision et la stabilité de la méthode numérique (valeur par défaut : 4) |
+| `ordre` | INT | Oui | 1 à 100 | Le paramètre d'ordre pour l'algorithme de l'échantillonneur LMS, qui contrôle la précision et la stabilité de la méthode numérique (valeur par défaut : 4) |
 
 ## Sorties
 

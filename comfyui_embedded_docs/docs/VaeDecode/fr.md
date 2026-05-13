@@ -6,7 +6,7 @@ Le nœud VAEDecode est conçu pour décoder des représentations latentes en ima
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `samples` | `LATENT`        | Le paramètre `samples` représente les représentations latentes à décoder en images. Il est essentiel au processus de décodage car il fournit les données compressées à partir desquelles les images sont reconstruites. |
+| `échantillons` | `LATENT`        | Le paramètre `échantillons` représente les représentations latentes à décoder en images. Il est essentiel au processus de décodage car il fournit les données compressées à partir desquelles les images sont reconstruites. |
 | `vae`     | VAE             | Le paramètre `vae` spécifie le modèle d'autoencodeur variationnel à utiliser pour décoder les représentations latentes en images. Il est indispensable pour déterminer le mécanisme de décodage et la qualité des images reconstruites. |
 
 ## Sorties

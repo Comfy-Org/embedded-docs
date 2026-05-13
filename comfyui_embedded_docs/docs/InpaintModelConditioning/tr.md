@@ -6,16 +6,16 @@ InpaintModelConditioning düğümü, rötuş (inpainting) modelleri için koşul
 
 | Parametre | Comfy Veri Türü | Açıklama |
 |-----------|-----------------|----------|
-| `positive`| `CONDITIONING`  | Rötuş modeline uygulanacak pozitif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, rötuş işleminin gerçekleştirilmesi gereken bağlamı veya kısıtlamaları tanımlamak için çok önemlidir ve nihai çıktıyı önemli ölçüde etkiler. |
-| `negative`| `CONDITIONING`  | Rötuş modeline uygulanacak negatif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, rötuş işlemi sırasında kaçınılması gereken koşulları veya bağlamları belirtmek için gereklidir ve böylece nihai çıktıyı etkiler. |
+| `pozitif`| `CONDITIONING`  | Rötuş modeline uygulanacak pozitif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, rötuş işleminin gerçekleştirilmesi gereken bağlamı veya kısıtlamaları tanımlamak için çok önemlidir ve nihai çıktıyı önemli ölçüde etkiler. |
+| `negatif`| `CONDITIONING`  | Rötuş modeline uygulanacak negatif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, rötuş işlemi sırasında kaçınılması gereken koşulları veya bağlamları belirtmek için gereklidir ve böylece nihai çıktıyı etkiler. |
 | `vae`     | `VAE`           | Koşullandırma sürecinde kullanılacak VAE modelini belirtir. Bu girdi, kullanılacak VAE modelinin belirli mimarisini ve parametrelerini belirlemek için çok önemlidir. |
-| `pixels`  | `IMAGE`         | Rötuş yapılacak görüntünün piksel verilerini temsil eder. Bu girdi, rötuş görevi için gerekli görsel bağlamı sağlamak açısından gereklidir. |
-| `mask`    | `MASK`          | Görüntüye uygulanacak ve rötuş yapılacak alanları gösteren maskeyi belirtir. Bu girdi, görüntü içinde rötuş gerektiren belirli bölgeleri tanımlamak için çok önemlidir. |
+| `pikseller`  | `IMAGE`         | Rötuş yapılacak görüntünün piksel verilerini temsil eder. Bu girdi, rötuş görevi için gerekli görsel bağlamı sağlamak açısından gereklidir. |
+| `maske`    | `MASK`          | Görüntüye uygulanacak ve rötuş yapılacak alanları gösteren maskeyi belirtir. Bu girdi, görüntü içinde rötuş gerektiren belirli bölgeleri tanımlamak için çok önemlidir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|--------------|----------|
-| `positive`| `CONDITIONING` | İşlem sonrası değiştirilmiş pozitif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen pozitif koşullara göre yönlendirmek için gereklidir. |
-| `negative`| `CONDITIONING` | İşlem sonrası değiştirilmiş negatif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen negatif koşullara göre yönlendirmek için gereklidir. |
+| `negatif`| `CONDITIONING` | İşlem sonrası değiştirilmiş pozitif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen pozitif koşullara göre yönlendirmek için gereklidir. |
+| `gizli`| `CONDITIONING` | İşlem sonrası değiştirilmiş negatif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen negatif koşullara göre yönlendirmek için gereklidir. |
 | `latent`  | `LATENT`       | Koşullandırma sürecinden elde edilen gizli (latent) temsildir. Bu çıktı, rötuş yapılan görüntünün temel özelliklerini ve karakteristiklerini anlamak için çok önemlidir. |

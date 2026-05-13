@@ -27,9 +27,9 @@ GLSL Shader düğümü, giriş görüntülerine özel GLSL ES fragment shader ko
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `IMAGE0` | IMAGE | Shader'dan gelen ilk çıktı görüntüsü. Shader kodunda `layout(location = 0) out vec4 fragColor0` ile kullanılabilir. |
-| `IMAGE1` | IMAGE | Shader'dan gelen ikinci çıktı görüntüsü. Shader kodunda `layout(location = 1) out vec4 fragColor1` ile kullanılabilir. |
-| `IMAGE2` | IMAGE | Shader'dan gelen üçüncü çıktı görüntüsü. Shader kodunda `layout(location = 2) out vec4 fragColor2` ile kullanılabilir. |
+| `IMAGE1` | IMAGE | Shader'dan gelen ilk çıktı görüntüsü. Shader kodunda `layout(location = 0) out vec4 fragColor0` ile kullanılabilir. |
+| `IMAGE2` | IMAGE | Shader'dan gelen ikinci çıktı görüntüsü. Shader kodunda `layout(location = 1) out vec4 fragColor1` ile kullanılabilir. |
+| `IMAGE3` | IMAGE | Shader'dan gelen üçüncü çıktı görüntüsü. Shader kodunda `layout(location = 2) out vec4 fragColor2` ile kullanılabilir. |
 | `IMAGE3` | IMAGE | Shader'dan gelen dördüncü çıktı görüntüsü. Shader kodunda `layout(location = 3) out vec4 fragColor3` ile kullanılabilir. |
 
 ---

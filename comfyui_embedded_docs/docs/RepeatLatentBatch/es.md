@@ -6,8 +6,8 @@ El nodo RepeatLatentBatch está diseñado para replicar un lote determinado de r
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes que se replicarán. Es esencial para definir los datos que se someterán a repetición. |
-| `amount`  | `INT`       | El parámetro 'amount' especifica el número de veces que se deben repetir las muestras de entrada. Influye directamente en el tamaño del lote de salida, afectando así la carga computacional y la diversidad de los datos generados. |
+| `muestras` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes que se replicarán. Es esencial para definir los datos que se someterán a repetición. |
+| `cantidad`  | `INT`       | El parámetro 'amount' especifica el número de veces que se deben repetir las muestras de entrada. Influye directamente en el tamaño del lote de salida, afectando así la carga computacional y la diversidad de los datos generados. |
 
 ## Salidas
 

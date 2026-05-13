@@ -6,13 +6,13 @@ Kling Kamera Kontrolleri düğümü, video oluşturmada hareket kontrol efektler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `camera_control_type` | COMBO | Evet | `"simple"`<br>`"advanced"` | Kullanılacak kamera kontrol yapılandırmasının türünü belirtir |
-| `horizontal_movement` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın yatay eksen (x ekseni) boyunca hareketini kontrol eder. Negatif değer sola, pozitif değer sağa hareketi belirtir (varsayılan: 0,0) |
-| `vertical_movement` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın dikey eksen (y ekseni) boyunca hareketini kontrol eder. Negatif değer aşağı, pozitif değer yukarı hareketi belirtir (varsayılan: 0,0) |
-| `pan` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın dikey düzlemdeki (x ekseni) dönüşünü kontrol eder. Negatif değer aşağı, pozitif değer yukarı dönüşü belirtir (varsayılan: 0,5) |
-| `tilt` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın yatay düzlemdeki (y ekseni) dönüşünü kontrol eder. Negatif değer sola, pozitif değer sağa dönüşü belirtir (varsayılan: 0,0) |
-| `roll` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın yuvarlanma miktarını (z ekseni) kontrol eder. Negatif değer saat yönünün tersine, pozitif değer saat yönünde dönüşü belirtir (varsayılan: 0,0) |
-| `zoom` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın odak uzaklığındaki değişimi kontrol eder. Negatif değer daha dar, pozitif değer daha geniş görüş alanını belirtir (varsayılan: 0,0) |
+| `kamera_kontrol_türü` | COMBO | Evet | `"simple"`<br>`"advanced"` | Kullanılacak kamera kontrol yapılandırmasının türünü belirtir |
+| `yatay_hareket` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın yatay eksen (x ekseni) boyunca hareketini kontrol eder. Negatif değer sola, pozitif değer sağa hareketi belirtir (varsayılan: 0,0) |
+| `dikey_hareket` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın dikey eksen (y ekseni) boyunca hareketini kontrol eder. Negatif değer aşağı, pozitif değer yukarı hareketi belirtir (varsayılan: 0,0) |
+| `kaydırma` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın dikey düzlemdeki (x ekseni) dönüşünü kontrol eder. Negatif değer aşağı, pozitif değer yukarı dönüşü belirtir (varsayılan: 0,5) |
+| `eğme` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın yatay düzlemdeki (y ekseni) dönüşünü kontrol eder. Negatif değer sola, pozitif değer sağa dönüşü belirtir (varsayılan: 0,0) |
+| `yuvarlanma` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın yuvarlanma miktarını (z ekseni) kontrol eder. Negatif değer saat yönünün tersine, pozitif değer saat yönünde dönüşü belirtir (varsayılan: 0,0) |
+| `yakınlaştırma` | FLOAT | Hayır | -10,0 ila 10,0 | Kameranın odak uzaklığındaki değişimi kontrol eder. Negatif değer daha dar, pozitif değer daha geniş görüş alanını belirtir (varsayılan: 0,0) |
 
 **Not:** Yapılandırmanın geçerli olması için kamera kontrol parametrelerinden (`horizontal_movement`, `vertical_movement`, `pan`, `tilt`, `roll` veya `zoom`) en az birinin sıfır olmayan bir değere sahip olması gerekir.
 

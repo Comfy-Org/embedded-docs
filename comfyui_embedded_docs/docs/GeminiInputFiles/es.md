@@ -6,8 +6,8 @@ Carga y formatea archivos de entrada para su uso con la API de Gemini. Este nodo
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `file` | COMBO | Sí | Múltiples opciones disponibles | Archivos de entrada para incluir como contexto del modelo. Por ahora solo acepta archivos de texto (.txt) y PDF (.pdf). Los archivos deben ser más pequeños que el límite máximo de tamaño de archivo de entrada. |
-| `GEMINI_INPUT_FILES` | GEMINI_INPUT_FILES | No | N/A | Un archivo(s) adicional opcional para agrupar junto con el archivo cargado desde este nodo. Permite encadenar archivos de entrada para que un solo mensaje pueda incluir múltiples archivos de entrada. |
+| `archivo` | COMBO | Sí | Múltiples opciones disponibles | Archivos de entrada para incluir como contexto del modelo. Por ahora solo acepta archivos de texto (.txt) y PDF (.pdf). Los archivos deben ser más pequeños que el límite máximo de tamaño de archivo de entrada. |
+| `ARCHIVOS_DE_ENTRADA_GEMINI` | GEMINI_INPUT_FILES | No | N/A | Un archivo(s) adicional opcional para agrupar junto con el archivo cargado desde este nodo. Permite encadenar archivos de entrada para que un solo mensaje pueda incluir múltiples archivos de entrada. |
 
 **Nota:** El parámetro `file` solo muestra archivos de texto (.txt) y PDF (.pdf) que sean más pequeños que el límite máximo de tamaño de archivo de entrada. Los archivos se filtran y ordenan automáticamente por nombre.
 
@@ -15,7 +15,7 @@ Carga y formatea archivos de entrada para su uso con la API de Gemini. Este nodo
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `GEMINI_INPUT_FILES` | GEMINI_INPUT_FILES | Datos de archivo formateados listos para usar con nodos Gemini LLM, que contienen el contenido del archivo cargado en el formato adecuado de la API. |
+| `ARCHIVOS_DE_ENTRADA_GEMINI` | GEMINI_INPUT_FILES | Datos de archivo formateados listos para usar con nodos Gemini LLM, que contienen el contenido del archivo cargado en el formato adecuado de la API. |
 
 ---
 **Source fingerprint (SHA-256):** `54da8696d144513efa9660fbc5ddbf5480da12eafe4d2791c8e81cd207ef8a52`

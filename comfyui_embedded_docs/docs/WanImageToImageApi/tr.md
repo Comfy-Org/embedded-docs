@@ -7,11 +7,11 @@ WanImageToImageApi düğümü, bir veya iki giriş görüntüsü ve bir metin is
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | "wan2.5-i2i-preview" | Kullanılacak model (varsayılan: "wan2.5-i2i-preview"). |
-| `image` | IMAGE | Evet | - | Tek görüntü düzenleme veya çoklu görüntü birleştirme, en fazla 2 görüntü. |
-| `prompt` | STRING | Evet | - | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler (varsayılan: boş). |
-| `negative_prompt` | STRING | Hayır | - | Kaçınılması gerekenleri tanımlayan olumsuz istem (varsayılan: boş). |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Oluşturma için kullanılacak tohum (varsayılan: 0). |
-| `watermark` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: false). |
+| `görsel` | IMAGE | Evet | - | Tek görüntü düzenleme veya çoklu görüntü birleştirme, en fazla 2 görüntü. |
+| `istem` | STRING | Evet | - | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler (varsayılan: boş). |
+| `negatif_istem` | STRING | Hayır | - | Kaçınılması gerekenleri tanımlayan olumsuz istem (varsayılan: boş). |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Oluşturma için kullanılacak tohum (varsayılan: 0). |
+| `filigran` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: false). |
 
 **Not:** Bu düğüm tam olarak 1 veya 2 giriş görüntüsü kabul eder. 2'den fazla görüntü veya hiç görüntü sağlamamanız durumunda düğüm bir hata döndürecektir.
 
@@ -19,7 +19,7 @@ WanImageToImageApi düğümü, bir veya iki giriş görüntüsü ve bir metin is
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `image` | IMAGE | Giriş görüntülerine ve metin istemlerine dayalı olarak oluşturulan görüntü. |
+| `görsel` | IMAGE | Giriş görüntülerine ve metin istemlerine dayalı olarak oluşturulan görüntü. |
 
 ---
 **Source fingerprint (SHA-256):** `d69811ddaba718e5468f539fb9b25827efdf79f3ee9cbf31ad8f9387cea9b9be`

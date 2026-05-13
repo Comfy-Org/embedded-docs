@@ -6,8 +6,8 @@ O nó **Join Audio Channels** combina duas entradas de áudio mono separadas em 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `audio_left` | AUDIO | Sim | | Os dados de áudio mono a serem usados como canal esquerdo no áudio estéreo resultante. |
-| `audio_right` | AUDIO | Sim | | Os dados de áudio mono a serem usados como canal direito no áudio estéreo resultante. |
+| `áudio_esquerdo` | AUDIO | Sim | | Os dados de áudio mono a serem usados como canal esquerdo no áudio estéreo resultante. |
+| `áudio_direito` | AUDIO | Sim | | Os dados de áudio mono a serem usados como canal direito no áudio estéreo resultante. |
 
 **Observação:** Ambos os fluxos de áudio de entrada devem ser mono (canal único). Se tiverem taxas de amostragem diferentes, o canal com a taxa mais baixa será automaticamente reamostrado para corresponder à taxa mais alta. Se os fluxos de áudio tiverem durações diferentes, eles serão cortados para a duração do mais curto.
 

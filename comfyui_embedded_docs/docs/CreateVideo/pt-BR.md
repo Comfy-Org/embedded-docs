@@ -8,9 +8,9 @@ O nó Criar Vídeo gera um arquivo de vídeo a partir de uma sequência de image
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | As imagens para criar um vídeo. |
+| `imagens` | IMAGE | Sim | - | As imagens para criar um vídeo. |
 | `fps` | FLOAT | Sim | 1.0 - 120.0 | Os quadros por segundo para a velocidade de reprodução do vídeo (padrão: 30.0). |
-| `audio` | AUDIO | Não | - | O áudio a ser adicionado ao vídeo. |
+| `áudio` | AUDIO | Não | - | O áudio a ser adicionado ao vídeo. |
 
 ## Saídas
 

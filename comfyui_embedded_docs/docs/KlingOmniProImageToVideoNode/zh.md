@@ -6,15 +6,15 @@
 
 | 参数 | 数据类型 | 必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用于视频生成的特定 Kling 模型（默认值："kling-v3-omni"）。 |
-| `prompt` | STRING | 是 | - | 描述视频内容的文本提示。可包含正面和负面描述。文本会自动标准化，长度需在 1 到 2500 个字符之间。启用故事板时此参数将被忽略。 |
-| `aspect_ratio` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 生成视频所需的宽高比。 |
-| `duration` | INT | 是 | 3 到 15 | 视频时长（秒）。可通过滑块调整数值（默认值：5）。 |
-| `reference_images` | IMAGE | 是 | - | 最多 7 张参考图像。每张图像至少为 300x300 像素，宽高比需在 1:2.5 到 2.5:1 之间。 |
-| `resolution` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 视频的输出分辨率。此参数为可选项（默认值："1080p"）。 |
-| `storyboards` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列带有独立提示和时长的视频片段。仅 `kling-v3-omni` 模型支持。启用时，全局 `prompt` 将被忽略，所有故事板片段的总时长必须等于全局 `duration`。 |
-| `generate_audio` | BOOLEAN | 否 | `true`<br>`false` | 为视频生成音频。仅 `kling-v3-omni` 模型支持（默认值：false）。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 种子控制节点是否应重新运行；无论种子如何，结果均非确定性（默认值：0）。 |
+| `模型` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用于视频生成的特定 Kling 模型（默认值："kling-v3-omni"）。 |
+| `提示词` | STRING | 是 | - | 描述视频内容的文本提示。可包含正面和负面描述。文本会自动标准化，长度需在 1 到 2500 个字符之间。启用故事板时此参数将被忽略。 |
+| `宽高比` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 生成视频所需的宽高比。 |
+| `时长` | INT | 是 | 3 到 15 | 视频时长（秒）。可通过滑块调整数值（默认值：5）。 |
+| `参考图像` | IMAGE | 是 | - | 最多 7 张参考图像。每张图像至少为 300x300 像素，宽高比需在 1:2.5 到 2.5:1 之间。 |
+| `分辨率` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 视频的输出分辨率。此参数为可选项（默认值："1080p"）。 |
+| `分镜` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列带有独立提示和时长的视频片段。仅 `kling-v3-omni` 模型支持。启用时，全局 `提示词` 将被忽略，所有故事板片段的总时长必须等于全局 `时长`。 |
+| `生成音频` | BOOLEAN | 否 | `true`<br>`false` | 为视频生成音频。仅 `kling-v3-omni` 模型支持（默认值：false）。 |
+| `种子` | INT | 否 | 0 到 2147483647 | 种子控制节点是否应重新运行；无论种子如何，结果均非确定性（默认值：0）。 |
 
 **注意：** `reference_images` 输入最多接受 7 张图像。如果提供更多图像，节点将报错。每张图像都会验证最小尺寸和宽高比。
 

@@ -6,15 +6,15 @@ Le nœud SamplerSASolver implémente un algorithme d'échantillonnage personnali
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion à utiliser pour l'échantillonnage |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion à utiliser pour l'échantillonnage |
 | `eta` | FLOAT | Non | 0,0 - 10,0 | Contrôle le facteur d'échelle de la taille du pas (par défaut : 1,0) |
-| `sde_start_percent` | FLOAT | Non | 0,0 - 1,0 | Le pourcentage de départ pour l'échantillonnage SDE (par défaut : 0,2) |
-| `sde_end_percent` | FLOAT | Non | 0,0 - 1,0 | Le pourcentage de fin pour l'échantillonnage SDE (par défaut : 0,8) |
-| `s_noise` | FLOAT | Non | 0,0 - 100,0 | Contrôle la quantité de bruit ajoutée lors de l'échantillonnage (par défaut : 1,0) |
-| `predictor_order` | INT | Non | 1 - 6 | L'ordre du composant prédicteur dans le solveur (par défaut : 3) |
-| `corrector_order` | INT | Non | 0 - 6 | L'ordre du composant correcteur dans le solveur (par défaut : 4) |
-| `use_pece` | BOOLEAN | Non | - | Active ou désactive la méthode PECE (Prédire-Évaluer-Corriger-Évaluer) |
-| `simple_order_2` | BOOLEAN | Non | - | Active ou désactive les calculs simplifiés de second ordre |
+| `pourcent_début_sde` | FLOAT | Non | 0,0 - 1,0 | Le pourcentage de départ pour l'échantillonnage SDE (par défaut : 0,2) |
+| `pourcent_fin_sde` | FLOAT | Non | 0,0 - 1,0 | Le pourcentage de fin pour l'échantillonnage SDE (par défaut : 0,8) |
+| `s_bruit` | FLOAT | Non | 0,0 - 100,0 | Contrôle la quantité de bruit ajoutée lors de l'échantillonnage (par défaut : 1,0) |
+| `ordre_prédicteur` | INT | Non | 1 - 6 | L'ordre du composant prédicteur dans le solveur (par défaut : 3) |
+| `ordre_correcteur` | INT | Non | 0 - 6 | L'ordre du composant correcteur dans le solveur (par défaut : 4) |
+| `utiliser_pece` | BOOLEAN | Non | - | Active ou désactive la méthode PECE (Prédire-Évaluer-Corriger-Évaluer) |
+| `ordre_simple_2` | BOOLEAN | Non | - | Active ou désactive les calculs simplifiés de second ordre |
 
 ## Sorties
 

@@ -8,12 +8,12 @@ O nó de Controle de Câmera do Kling Image to Video transforma imagens estátic
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `start_frame` | IMAGE | Sim | - | Imagem de Referência - URL ou string codificada em Base64, não pode exceder 10MB, resolução mínima de 300x300px, proporção entre 1:2.5 e 2.5:1. O Base64 não deve incluir o prefixo data:image. |
+| `quadro_inicial` | IMAGE | Sim | - | Imagem de Referência - URL ou string codificada em Base64, não pode exceder 10MB, resolução mínima de 300x300px, proporção entre 1:2.5 e 2.5:1. O Base64 não deve incluir o prefixo data:image. |
 | `prompt` | STRING | Sim | - | Prompt de texto positivo descrevendo o conteúdo desejado do vídeo |
-| `negative_prompt` | STRING | Sim | - | Prompt de texto negativo descrevendo o que evitar no vídeo gerado |
+| `prompt_negativo` | STRING | Sim | - | Prompt de texto negativo descrevendo o que evitar no vídeo gerado |
 | `cfg_scale` | FLOAT | Não | 0.0 a 1.0 | Controla a intensidade da orientação do texto. Valores mais altos fazem com que a saída siga mais fielmente o prompt (padrão: 0.75) |
-| `aspect_ratio` | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"1:1"` | A proporção de aspecto do vídeo gerado (padrão: "16:9") |
-| `camera_control` | CAMERA_CONTROL | Sim | - | Pode ser criado usando o nó de Controles de Câmera Kling. Controla o movimento e a ação da câmera durante a geração do vídeo. |
+| `proporcao` | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"1:1"` | A proporção de aspecto do vídeo gerado (padrão: "16:9") |
+| `controle_de_camera` | CAMERA_CONTROL | Sim | - | Pode ser criado usando o nó de Controles de Câmera Kling. Controla o movimento e a ação da câmera durante a geração do vídeo. |
 
 ## Saídas
 

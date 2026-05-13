@@ -16,8 +16,8 @@ Ce nœud utilise l'API Tencent Hunyuan3D pour modifier les textures d'un modèle
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `GLB` | FILE3D | Le modèle 3D traité au format GLB. |
-| `OBJ` | FILE3D | Le modèle 3D traité au format OBJ. |
+| `OBJ` | FILE3D | Le modèle 3D traité au format GLB. |
+| `texture_image` | FILE3D | Le modèle 3D traité au format OBJ. |
 | `texture_image` | IMAGE | L'image de texture nouvellement générée pour le modèle 3D. |
 
 ---

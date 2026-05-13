@@ -8,11 +8,11 @@ O nó RegexReplace localiza e substitui texto em strings usando padrões de expr
 |-----------|--------------|-------------|-----------|-----------|
 | `string` | STRING | Sim | - | A string de texto de entrada para pesquisar e substituir |
 | `regex_pattern` | STRING | Sim | - | O padrão de expressão regular para pesquisar na string de entrada |
-| `replace` | STRING | Sim | - | O texto de substituição para substituir os padrões correspondentes |
-| `case_insensitive` | BOOLEAN | Não | - | Quando ativado, faz com que a correspondência de padrões ignore diferenças entre maiúsculas e minúsculas (padrão: Verdadeiro) |
-| `multiline` | BOOLEAN | Não | - | Quando ativado, altera o comportamento de ^ e $ para corresponder ao início/fim de cada linha, em vez de apenas ao início/fim de toda a string (padrão: Falso) |
+| `substituir` | STRING | Sim | - | O texto de substituição para substituir os padrões correspondentes |
+| `ignorar_maiusculas_minusculas` | BOOLEAN | Não | - | Quando ativado, faz com que a correspondência de padrões ignore diferenças entre maiúsculas e minúsculas (padrão: Verdadeiro) |
+| `multilinha` | BOOLEAN | Não | - | Quando ativado, altera o comportamento de ^ e $ para corresponder ao início/fim de cada linha, em vez de apenas ao início/fim de toda a string (padrão: Falso) |
 | `dotall` | BOOLEAN | Não | - | Quando ativado, o caractere ponto (.) corresponderá a qualquer caractere, incluindo caracteres de nova linha. Quando desativado, os pontos não corresponderão a novas linhas (padrão: Falso) |
-| `count` | INT | Não | 0-100 | Número máximo de substituições a serem feitas. Defina como 0 para substituir todas as ocorrências (padrão). Defina como 1 para substituir apenas a primeira correspondência, 2 para as duas primeiras correspondências, etc. (padrão: 0) |
+| `quantidade` | INT | Não | 0-100 | Número máximo de substituições a serem feitas. Defina como 0 para substituir todas as ocorrências (padrão). Defina como 1 para substituir apenas a primeira correspondência, 2 para as duas primeiras correspondências, etc. (padrão: 0) |
 
 ## Saídas
 

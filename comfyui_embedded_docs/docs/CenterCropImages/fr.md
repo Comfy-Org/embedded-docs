@@ -7,8 +7,8 @@ Le nœud Center Crop Images découpe une image à partir de son centre selon une
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à découper. |
-| `width` | INT | Oui | 1 à 8192 | La largeur de la zone de découpe (par défaut : 512). |
-| `height` | INT | Oui | 1 à 8192 | La hauteur de la zone de découpe (par défaut : 512). |
+| `largeur` | INT | Oui | 1 à 8192 | La largeur de la zone de découpe (par défaut : 512). |
+| `hauteur` | INT | Oui | 1 à 8192 | La hauteur de la zone de découpe (par défaut : 512). |
 
 ## Sorties
 

@@ -6,8 +6,8 @@ O nó SaveAudio salva dados de áudio em um arquivo no formato FLAC. Ele recebe 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | - | Os dados de áudio a serem salvos |
-| `filename_prefix` | STRING | Não | - | O prefixo para o nome do arquivo de saída (padrão: "audio/ComfyUI") |
+| `áudio` | AUDIO | Sim | - | Os dados de áudio a serem salvos |
+| `prefixo_do_arquivo` | STRING | Não | - | O prefixo para o nome do arquivo de saída (padrão: "audio/ComfyUI") |
 
 *Nota: Os parâmetros `prompt` e `extra_pnginfo` são ocultos e gerenciados automaticamente pelo sistema.*
 

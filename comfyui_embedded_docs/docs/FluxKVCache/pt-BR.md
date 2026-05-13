@@ -6,13 +6,13 @@ O nó Flux KV Cache permite uma otimização de Cache de Chave-Valor (KV) para m
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | | O modelo no qual aplicar a otimização de Cache KV. |
+| `modelo` | MODEL | Sim | | O modelo no qual aplicar a otimização de Cache KV. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com a otimização de Cache KV ativada. |
+| `modelo` | MODEL | O modelo modificado com a otimização de Cache KV ativada. |
 
 ---
 **Source fingerprint (SHA-256):** `530c660ae23607d4035815826ae73cdcbebe7693ba47a3b0fe98e69f329b9e86`

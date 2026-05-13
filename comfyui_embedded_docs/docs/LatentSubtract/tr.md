@@ -6,8 +6,8 @@ LatentSubtract düğümü, bir gizli temsilin diğerinden çıkarılması için 
 
 | Parametre    | Veri Türü | Açıklama |
 |--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | Çıkarma işleminin yapılacağı ilk gizli örnek kümesi. Çıkarma işlemi için temel görevi görür. |
-| `samples2`   | `LATENT`    | İlk kümeden çıkarılacak ikinci gizli örnek kümesi. Bu işlem, nitelikleri veya özellikleri kaldırarak ortaya çıkan üretken modelin çıktısını değiştirebilir. |
+| `örnekler1`   | `LATENT`    | Çıkarma işleminin yapılacağı ilk gizli örnek kümesi. Çıkarma işlemi için temel görevi görür. |
+| `örnekler2`   | `LATENT`    | İlk kümeden çıkarılacak ikinci gizli örnek kümesi. Bu işlem, nitelikleri veya özellikleri kaldırarak ortaya çıkan üretken modelin çıktısını değiştirebilir. |
 
 ## Çıktılar
 

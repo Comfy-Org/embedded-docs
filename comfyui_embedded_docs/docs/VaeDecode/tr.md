@@ -6,7 +6,7 @@ VAEDecode düğümü, belirtilen bir Varyasyonel Otomatik Kodlayıcı (VAE) kull
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | 'samples' parametresi, görüntülere çözülecek gizli temsilleri temsil eder. Görüntülerin yeniden oluşturulduğu sıkıştırılmış verileri sağladığı için kod çözme işlemi için kritik öneme sahiptir. |
+| `örnekler` | `LATENT`    | 'samples' parametresi, görüntülere çözülecek gizli temsilleri temsil eder. Görüntülerin yeniden oluşturulduğu sıkıştırılmış verileri sağladığı için kod çözme işlemi için kritik öneme sahiptir. |
 | `vae`     | VAE       | 'vae' parametresi, gizli temsilleri görüntülere çözmek için kullanılacak Varyasyonel Otomatik Kodlayıcı modelini belirtir. Kod çözme mekanizmasının ve yeniden oluşturulan görüntülerin kalitesinin belirlenmesi için gereklidir. |
 
 ## Çıktılar

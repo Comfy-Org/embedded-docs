@@ -19,8 +19,8 @@ WanSoundImageToVideoExtend düğümü, mevcut bir video latentini, isteğe bağl
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `positive` | CONDITIONING | Video bağlamı uygulanmış işlenmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Video bağlamı uygulanmış işlenmiş negatif koşullandırma |
+| `negative` | CONDITIONING | Video bağlamı uygulanmış işlenmiş pozitif koşullandırma |
+| `latent` | CONDITIONING | Video bağlamı uygulanmış işlenmiş negatif koşullandırma |
 | `latent` | LATENT | Genişletilmiş video dizisini içeren oluşturulmuş video latent temsili |
 
 ---

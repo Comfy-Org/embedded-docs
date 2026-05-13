@@ -10,7 +10,7 @@ Le TripoRefineNode affine les modèles 3D bruts créés spécifiquement par les 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | Oui | - | Doit être un modèle Tripo v1.4 |
+| `ID_tâche_modèle` | MODEL_TASK_ID | Oui | - | Doit être un modèle Tripo v1.4 |
 
 **Remarque :** Ce nœud accepte uniquement les modèles bruts créés par les modèles Tripo v1.4. L'utilisation de modèles provenant d'autres versions peut entraîner des erreurs.
 
@@ -18,8 +18,8 @@ Le TripoRefineNode affine les modèles 3D bruts créés spécifiquement par les 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model_file` | STRING | Le chemin d'accès ou la référence au modèle affiné (uniquement pour la rétrocompatibilité) |
-| `model task_id` | MODEL_TASK_ID | L'identifiant de tâche pour l'opération du modèle affiné |
+| `modèle task_id` | STRING | Le chemin d'accès ou la référence au modèle affiné (uniquement pour la rétrocompatibilité) |
+| `GLB` | MODEL_TASK_ID | L'identifiant de tâche pour l'opération du modèle affiné |
 | `GLB` | FILE3DGLB | Le modèle 3D affiné au format GLB |
 
 ---

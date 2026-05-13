@@ -6,21 +6,21 @@ Le nœud WanSoundImageToVideoExtend étend un latent vidéo existant en généra
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | Prompts de conditionnement positif qui guident le contenu de la vidéo |
-| `negative` | CONDITIONING | Oui | - | Prompts de conditionnement négatif qui spécifient ce que la vidéo doit éviter |
+| `positif` | CONDITIONING | Oui | - | Prompts de conditionnement positif qui guident le contenu de la vidéo |
+| `négatif` | CONDITIONING | Oui | - | Prompts de conditionnement négatif qui spécifient ce que la vidéo doit éviter |
 | `vae` | VAE | Oui | - | Autoencodeur variationnel utilisé pour encoder et décoder les trames vidéo |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre total de trames à générer pour la séquence vidéo (par défaut : 77, pas : 4) |
-| `video_latent` | LATENT | Oui | - | Représentation latente vidéo initiale servant de point de départ pour l'extension |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | Non | - | Plongements audio optionnels pouvant influencer la génération vidéo en fonction des caractéristiques sonores |
-| `ref_image` | IMAGE | Non | - | Image de référence optionnelle fournissant un guidage visuel pour la génération vidéo |
-| `control_video` | IMAGE | Non | - | Vidéo de contrôle optionnelle pouvant guider le mouvement et le style de la vidéo générée |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre total de trames à générer pour la séquence vidéo (par défaut : 77, pas : 4) |
+| `latent vidéo` | LATENT | Oui | - | Représentation latente vidéo initiale servant de point de départ pour l'extension |
+| `sortie de l'encodeur audio` | AUDIOENCODEROUTPUT | Non | - | Plongements audio optionnels pouvant influencer la génération vidéo en fonction des caractéristiques sonores |
+| `image de référence` | IMAGE | Non | - | Image de référence optionnelle fournissant un guidage visuel pour la génération vidéo |
+| `vidéo de contrôle` | IMAGE | Non | - | Vidéo de contrôle optionnelle pouvant guider le mouvement et le style de la vidéo générée |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif traité avec le contexte vidéo appliqué |
-| `negative` | CONDITIONING | Conditionnement négatif traité avec le contexte vidéo appliqué |
+| `négatif` | CONDITIONING | Conditionnement positif traité avec le contexte vidéo appliqué |
+| `latent` | CONDITIONING | Conditionnement négatif traité avec le contexte vidéo appliqué |
 | `latent` | LATENT | Représentation latente vidéo générée contenant la séquence vidéo étendue |
 
 ---

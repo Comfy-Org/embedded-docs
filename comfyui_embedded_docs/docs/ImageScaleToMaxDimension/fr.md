@@ -7,8 +7,8 @@ Le nœud ImageScaleToMaxDimension redimensionne les images pour qu'elles s'adapt
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à redimensionner |
-| `upscale_method` | STRING | Oui | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | La méthode d'interpolation utilisée pour redimensionner l'image (par défaut : "area") |
-| `largest_size` | INT | Oui | 0 à 16384 | La dimension maximale pour l'image redimensionnée (par défaut : 512) |
+| `méthode_d'agrandissement` | STRING | Oui | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | La méthode d'interpolation utilisée pour redimensionner l'image (par défaut : "area") |
+| `taille_maximale` | INT | Oui | 0 à 16384 | La dimension maximale pour l'image redimensionnée (par défaut : 512) |
 
 ## Sorties
 

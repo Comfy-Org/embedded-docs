@@ -8,11 +8,11 @@ O nó OpenAIVideoSora2 gera vídeos usando os modelos Sora da OpenAI. Ele cria c
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | "sora-2"<br>"sora-2-pro" | O modelo OpenAI Sora a ser usado para geração de vídeo (padrão: "sora-2") |
+| `modelo` | COMBO | Sim | "sora-2"<br>"sora-2-pro" | O modelo OpenAI Sora a ser usado para geração de vídeo (padrão: "sora-2") |
 | `prompt` | STRING | Sim | - | Texto de orientação; pode estar vazio se uma imagem de entrada estiver presente (padrão: vazio) |
-| `size` | COMBO | Sim | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | A resolução do vídeo gerado (padrão: "1280x720") |
-| `duration` | COMBO | Sim | 4<br>8<br>12 | A duração do vídeo gerado em segundos (padrão: 8) |
-| `image` | IMAGE | Não | - | Imagem de entrada opcional para geração de vídeo |
+| `tamanho` | COMBO | Sim | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | A resolução do vídeo gerado (padrão: "1280x720") |
+| `duração` | COMBO | Sim | 4<br>8<br>12 | A duração do vídeo gerado em segundos (padrão: 8) |
+| `imagem` | IMAGE | Não | - | Imagem de entrada opcional para geração de vídeo |
 | `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos, independentemente da semente (padrão: 0) |
 
 **Restrições e Limitações:**

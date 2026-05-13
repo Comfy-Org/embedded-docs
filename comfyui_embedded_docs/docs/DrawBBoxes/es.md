@@ -6,7 +6,7 @@ El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando c
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | No | - | La(s) imagen(es) de entrada sobre las que se dibujarán los cuadros delimitadores. Si no se proporciona, se generará un lienzo en blanco. |
+| `imagen` | IMAGE | No | - | La(s) imagen(es) de entrada sobre las que se dibujarán los cuadros delimitadores. Si no se proporciona, se generará un lienzo en blanco. |
 | `bboxes` | BOUNDINGBOX | Sí | - | Una lista de diccionarios de cuadros delimitadores. Cada diccionario debe contener las claves `x`, `y`, `width`, `height` y, opcionalmente, `label` y `score`. |
 
 **Restricciones de entrada:**

@@ -6,10 +6,10 @@ O nó PairConditioningCombine mescla dois pares de condicionamento separados (ca
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `positive_A` | CONDITIONING | Sim | - | Primeira entrada de condicionamento positivo |
-| `negative_A` | CONDITIONING | Sim | - | Primeira entrada de condicionamento negativo |
-| `positive_B` | CONDITIONING | Sim | - | Segunda entrada de condicionamento positivo |
-| `negative_B` | CONDITIONING | Sim | - | Segunda entrada de condicionamento negativo |
+| `positivo_A` | CONDITIONING | Sim | - | Primeira entrada de condicionamento positivo |
+| `negativo_A` | CONDITIONING | Sim | - | Primeira entrada de condicionamento negativo |
+| `positivo_B` | CONDITIONING | Sim | - | Segunda entrada de condicionamento positivo |
+| `negativo_B` | CONDITIONING | Sim | - | Segunda entrada de condicionamento negativo |
 
 ## Saídas
 

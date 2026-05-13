@@ -6,10 +6,10 @@ El nodo `BasicScheduler` está diseñado para calcular una secuencia de valores 
 
 | Parámetro   | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango     | Descripción Metafórica           | Propósito Técnico            |
 | ----------- | ------------ | --------------- | ----------------- | --------- | -------------------------------- | ---------------------------- |
-| `model`     | MODEL        | Entrada         | -                 | -         | **Tipo de Lienzo**: Diferentes materiales de lienzo necesitan diferentes fórmulas de pintura | Objeto del modelo de difusión, determina la base de cálculo de sigma |
-| `scheduler` | COMBO[STRING]| Widget          | -                 | 9 opciones| **Técnica de Mezcla**: Elige cómo cambia la concentración de pintura | Algoritmo de programación, controla el modo de disminución del ruido |
-| `steps`     | INT          | Widget          | 20                | 1-10000   | **Cantidad de Mezclas**: Diferencia de precisión entre 20 y 50 mezclas | Pasos de muestreo, afecta la calidad y velocidad de generación |
-| `denoise`   | FLOAT        | Widget          | 1.0               | 0.0-1.0   | **Intensidad de Creación**: Controla el nivel desde ajuste fino hasta repintado | Fuerza de eliminación de ruido, admite escenarios de repintado parcial |
+| `modelo`     | MODEL        | Entrada         | -                 | -         | **Tipo de Lienzo**: Diferentes materiales de lienzo necesitan diferentes fórmulas de pintura | Objeto del modelo de difusión, determina la base de cálculo de sigma |
+| `programador` | COMBO[STRING]| Widget          | -                 | 9 opciones| **Técnica de Mezcla**: Elige cómo cambia la concentración de pintura | Algoritmo de programación, controla el modo de disminución del ruido |
+| `pasos`     | INT          | Widget          | 20                | 1-10000   | **Cantidad de Mezclas**: Diferencia de precisión entre 20 y 50 mezclas | Pasos de muestreo, afecta la calidad y velocidad de generación |
+| `desruido`   | FLOAT        | Widget          | 1.0               | 0.0-1.0   | **Intensidad de Creación**: Controla el nivel desde ajuste fino hasta repintado | Fuerza de eliminación de ruido, admite escenarios de repintado parcial |
 
 ### Tipos de Programador
 

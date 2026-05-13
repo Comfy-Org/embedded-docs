@@ -6,7 +6,7 @@ O nó ImageHistogram analisa a distribuição de cores de uma imagem de entrada.
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | N/A | A imagem de entrada para análise. O nó processa a primeira imagem do lote. |
+| `imagem` | IMAGE | Sim | N/A | A imagem de entrada para análise. O nó processa a primeira imagem do lote. |
 
 ## Saídas
 

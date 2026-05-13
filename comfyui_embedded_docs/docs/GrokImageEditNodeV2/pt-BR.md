@@ -11,8 +11,8 @@ Modifica uma imagem existente com base em um prompt de texto. Este nó envia sua
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | O prompt de texto usado para gerar a imagem. Deve ter pelo menos 1 caractere após a remoção de espaços em branco. |
-| `model` | MODEL | Sim | Ver Descrição | O modelo de imagem Grok a ser utilizado. Este parâmetro possui várias subopções que aparecem após a seleção de um modelo. Modelos disponíveis: `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image`. Cada modelo possui capacidades diferentes (veja a nota abaixo). |
-| `seed` | INT | Sim | 0 a 2147483647 | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos, independentemente da semente. (padrão: 0) |
+| `modelo` | MODEL | Sim | Ver Descrição | O modelo de imagem Grok a ser utilizado. Este parâmetro possui várias subopções que aparecem após a seleção de um modelo. Modelos disponíveis: `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image`. Cada modelo possui capacidades diferentes (veja a nota abaixo). |
+| `semente` | INT | Sim | 0 a 2147483647 | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos, independentemente da semente. (padrão: 0) |
 
 **Nota sobre as restrições do parâmetro `model`:**
 - O parâmetro `model` é uma combinação dinâmica que inclui subopções para `resolution`, `number_of_images`, `images` e `aspect_ratio`.

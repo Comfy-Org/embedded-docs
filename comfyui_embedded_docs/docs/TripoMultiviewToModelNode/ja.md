@@ -20,7 +20,7 @@
 | `texture_alignment` | COMBO | いいえ | `"original_image"`<br>`"geometry"` | テクスチャをモデルに合わせる方法（デフォルト："original_image"） |
 | `face_limit` | INT | いいえ | -1 ～ 500000 | 生成モデルの最大面数。-1を設定すると制限なし（デフォルト：-1） |
 | `quad` | BOOLEAN | いいえ | - | このパラメータは非推奨であり、何も行いません（デフォルト：False） |
-| `geometry_quality` | COMBO | いいえ | `"standard"`<br>`"detailed"` | ジオメトリ生成の品質レベル（デフォルト："standard"） |
+| `ジオメトリ品質` | COMBO | いいえ | `"standard"`<br>`"detailed"` | ジオメトリ生成の品質レベル（デフォルト："standard"） |
 
 **注記：** 正面画像（`image`）は常に必須です。マルチビュー処理のためには、少なくとも1つの追加ビュー画像（`image_left`、`image_back`、または`image_right`）を提供する必要があります。
 
@@ -28,8 +28,8 @@
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成された3Dモデルのファイルパスまたは識別子（下位互換性のため） |
-| `model task_id` | MODEL_TASK_ID | モデル生成プロセスを追跡するためのタスク識別子 |
+| `モデルタスクID` | STRING | 生成された3Dモデルのファイルパスまたは識別子（下位互換性のため） |
+| `GLB` | MODEL_TASK_ID | モデル生成プロセスを追跡するためのタスク識別子 |
 | `GLB` | FILE3DGLB | GLB形式で生成された3Dモデルファイル |
 
 ---

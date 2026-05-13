@@ -6,12 +6,12 @@
 
 | 参数名 | 数据类型 | 输入类型 | 默认值 | 取值范围 | 说明 |
 |---------------|-----------|-------------|---------|--------|-------------|
-| `image1` | IMAGE | 必需 | - | - | 第一张待拼接图像 |
-| `image2` | IMAGE | 可选 | 无 | - | 第二张待拼接图像，若未提供则仅返回第一张图像 |
-| `direction` | STRING | 必需 | right | right/down/left/up | 拼接第二张图像的方向：右、下、左或上 |
-| `match_image_size` | BOOLEAN | 必需 | True | True/False | 是否将第二张图像缩放至与第一张图像尺寸匹配 |
-| `spacing_width` | INT | 必需 | 0 | 0-1024 | 图像之间的间距宽度，必须为偶数 |
-| `spacing_color` | STRING | 必需 | white | white/black/red/green/blue | 拼接图像之间间距的颜色 |
+| `图像1` | IMAGE | 必需 | - | - | 第一张待拼接图像 |
+| `图像2` | IMAGE | 可选 | 无 | - | 第二张待拼接图像，若未提供则仅返回第一张图像 |
+| `方向` | STRING | 必需 | right | right/down/left/up | 拼接第二张图像的方向：右、下、左或上 |
+| `匹配图像尺寸` | BOOLEAN | 必需 | True | True/False | 是否将第二张图像缩放至与第一张图像尺寸匹配 |
+| `间距宽度` | INT | 必需 | 0 | 0-1024 | 图像之间的间距宽度，必须为偶数 |
+| `间距颜色` | STRING | 必需 | white | white/black/red/green/blue | 拼接图像之间间距的颜色 |
 
 > 对于 `spacing_color`，当使用"white/black"以外的颜色时，若 `match_image_size` 设置为 `false`，则填充区域将显示为黑色
 

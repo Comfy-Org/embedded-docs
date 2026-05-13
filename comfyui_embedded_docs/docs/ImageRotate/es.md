@@ -6,14 +6,14 @@ El nodo ImageRotate rota una imagen de entrada según ángulos especificados. Ad
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a rotar |
-| `rotation` | STRING | Sí | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" | El ángulo de rotación que se aplicará a la imagen (predeterminado: "none") |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a rotar |
+| `rotación` | STRING | Sí | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" | El ángulo de rotación que se aplicará a la imagen (predeterminado: "none") |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen de salida rotada |
+| `imagen` | IMAGE | La imagen de salida rotada |
 
 ---
 **Source fingerprint (SHA-256):** `068946b31ebe87b2524a1e628b5bc0a3da7367d7252fa7afafe96bcbb174747d`

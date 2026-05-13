@@ -8,8 +8,8 @@ O nó APG (Adaptive Projected Guidance) modifica o processo de amostragem ajusta
 |-----------|--------------|-------------|-----------|-----------|
 | `model` | MODEL | Sim | - | O modelo de difusão ao qual aplicar a orientação projetada adaptativa |
 | `eta` | FLOAT | Sim | -10.0 a 10.0 | Controla a escala do vetor de orientação paralelo. Comportamento CFG padrão na configuração 1 (padrão: 1.0). |
-| `norm_threshold` | FLOAT | Sim | 0.0 a 50.0 | Normaliza o vetor de orientação para este valor; a normalização é desativada na configuração 0 (padrão: 5.0). |
-| `momentum` | FLOAT | Sim | -5.0 a 1.0 | Controla uma média móvel da orientação durante a difusão; desativado na configuração 0 (padrão: 0.0). |
+| `limite_normalização` | FLOAT | Sim | 0.0 a 50.0 | Normaliza o vetor de orientação para este valor; a normalização é desativada na configuração 0 (padrão: 5.0). |
+| `momento` | FLOAT | Sim | -5.0 a 1.0 | Controla uma média móvel da orientação durante a difusão; desativado na configuração 0 (padrão: 0.0). |
 
 ## Saídas
 

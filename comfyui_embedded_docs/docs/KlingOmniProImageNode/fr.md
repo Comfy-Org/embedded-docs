@@ -10,7 +10,7 @@ Le nœud Kling Omni Image (Pro) crée ou modifie des images à l'aide du dernier
 | `prompt` | STRING | Oui | - | Une description textuelle du contenu de l'image. Cela peut inclure des descriptions à la fois positives et négatives. Le texte doit contenir entre 1 et 2500 caractères. |
 | `resolution` | COMBO | Oui | `"1K"`<br>`"2K"`<br>`"4K"` | La résolution cible de l'image générée. Remarque : la résolution 4K n'est pas prise en charge pour le modèle `kling-image-o1`. |
 | `aspect_ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"21:9"` | Le rapport hauteur/largeur souhaité (largeur par rapport à la hauteur) pour l'image générée. |
-| `series_amount` | COMBO | Oui | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Générer une série d'images. Cette fonctionnalité n'est pas prise en charge pour le modèle `kling-image-o1`. (par défaut : "disabled") |
+| `nombre de séries` | COMBO | Oui | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Générer une série d'images. Cette fonctionnalité n'est pas prise en charge pour le modèle `kling-image-o1`. (par défaut : "disabled") |
 | `reference_images` | IMAGE | Non | - | Jusqu'à 10 images de référence supplémentaires. Chaque image doit avoir une largeur et une hauteur d'au moins 300 pixels, et son rapport hauteur/largeur doit être compris entre 1:2,5 et 2,5:1. |
 | `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. (par défaut : 0) |
 

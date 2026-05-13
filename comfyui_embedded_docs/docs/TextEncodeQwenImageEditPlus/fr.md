@@ -9,7 +9,7 @@ Le nœud TextEncodeQwenImageEditPlus traite des instructions textuelles et des i
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | - | Le modèle CLIP utilisé pour la tokenisation et l'encodage |
-| `prompt` | STRING | Oui | - | Instruction textuelle décrivant la modification d'image souhaitée (prend en charge les entrées multilignes et les instructions dynamiques) |
+| `invite` | STRING | Oui | - | Instruction textuelle décrivant la modification d'image souhaitée (prend en charge les entrées multilignes et les instructions dynamiques) |
 | `vae` | VAE | Non | - | Modèle VAE optionnel pour générer des latents de référence à partir des images d'entrée |
 | `image1` | IMAGE | Non | - | Première image d'entrée optionnelle pour l'analyse et la modification |
 | `image2` | IMAGE | Non | - | Deuxième image d'entrée optionnelle pour l'analyse et la modification |

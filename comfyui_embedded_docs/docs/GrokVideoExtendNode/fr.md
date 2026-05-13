@@ -6,10 +6,10 @@ Le nœud Grok Video Extend utilise un modèle d’IA pour créer une continuatio
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | N/A | Description textuelle de ce qui doit se passer ensuite dans la vidéo. |
-| `video` | VIDEO | Oui | N/A | Vidéo source à étendre. Format MP4, 2 à 15 secondes. |
-| `model` | COMBO | Oui | `"grok-imagine-video"` | Le modèle à utiliser pour l’extension vidéo. Lorsqu’il est sélectionné, il révèle un paramètre `duration` imbriqué. |
-| `seed` | INT | Non | 0 à 2147483647 | Graine déterminant si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). |
+| `invite` | STRING | Oui | N/A | Description textuelle de ce qui doit se passer ensuite dans la vidéo. |
+| `vidéo` | VIDEO | Oui | N/A | Vidéo source à étendre. Format MP4, 2 à 15 secondes. |
+| `modèle` | COMBO | Oui | `"grok-imagine-video"` | Le modèle à utiliser pour l’extension vidéo. Lorsqu’il est sélectionné, il révèle un paramètre `duration` imbriqué. |
+| `graine` | INT | Non | 0 à 2147483647 | Graine déterminant si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). |
 
 **Contraintes des paramètres :**
 *   L’entrée `video` doit être un fichier MP4 d’une durée comprise entre 2 et 15 secondes et ne peut pas dépasser 50 Mo.

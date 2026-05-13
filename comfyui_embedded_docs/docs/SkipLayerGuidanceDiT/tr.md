@@ -11,12 +11,12 @@ Atlanmış katmanlara sahip başka bir CFG negatif seti kullanarak ayrıntılı 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | MODEL | Evet | - | Katman atlama yönlendirmesinin uygulanacağı model |
-| `double_layers` | STRING | Evet | - | Atlanacak çift bloklar için virgülle ayrılmış katman numaraları (varsayılan: "7, 8, 9") |
-| `single_layers` | STRING | Evet | - | Atlanacak tek bloklar için virgülle ayrılmış katman numaraları (varsayılan: "7, 8, 9") |
-| `scale` | FLOAT | Evet | 0,0 - 10,0 | Yönlendirme ölçek faktörü (varsayılan: 3,0) |
-| `start_percent` | FLOAT | Evet | 0,0 - 1,0 | Yönlendirme uygulaması için başlangıç yüzdesi (varsayılan: 0,01) |
-| `end_percent` | FLOAT | Evet | 0,0 - 1,0 | Yönlendirme uygulaması için bitiş yüzdesi (varsayılan: 0,15) |
-| `rescaling_scale` | FLOAT | Evet | 0,0 - 10,0 | Çıktı büyüklüğünü ayarlamak için yeniden ölçeklendirme faktörü (varsayılan: 0,0, yeniden ölçeklendirme yapılmaz) |
+| `çift_katmanlar` | STRING | Evet | - | Atlanacak çift bloklar için virgülle ayrılmış katman numaraları (varsayılan: "7, 8, 9") |
+| `tek_katmanlar` | STRING | Evet | - | Atlanacak tek bloklar için virgülle ayrılmış katman numaraları (varsayılan: "7, 8, 9") |
+| `ölçek` | FLOAT | Evet | 0,0 - 10,0 | Yönlendirme ölçek faktörü (varsayılan: 3,0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0,0 - 1,0 | Yönlendirme uygulaması için başlangıç yüzdesi (varsayılan: 0,01) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0,0 - 1,0 | Yönlendirme uygulaması için bitiş yüzdesi (varsayılan: 0,15) |
+| `yeniden_ölçeklendirme_ölçeği` | FLOAT | Evet | 0,0 - 10,0 | Çıktı büyüklüğünü ayarlamak için yeniden ölçeklendirme faktörü (varsayılan: 0,0, yeniden ölçeklendirme yapılmaz) |
 
 **Not:** Hem `double_layers` hem de `single_layers` boşsa (hiçbir katman numarası içermiyorsa), düğüm herhangi bir yönlendirme uygulamadan orijinal modeli döndürür.
 

@@ -6,9 +6,9 @@ GITSScheduler düğümü, GITS (Generative Iterative Time Steps - Üretken Yinel
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `coeff` | FLOAT | Evet | 0.80 - 1.50 | Gürültü planı eğrisini kontrol eden katsayı değeri (varsayılan: 1.20) |
-| `steps` | INT | Evet | 2 - 1000 | Sigma değerlerinin üretileceği toplam örnekleme adım sayısı (varsayılan: 10) |
-| `denoise` | FLOAT | Evet | 0.0 - 1.0 | Kullanılan adım sayısını azaltan gürültü giderme faktörü (varsayılan: 1.0) |
+| `katsayı` | FLOAT | Evet | 0.80 - 1.50 | Gürültü planı eğrisini kontrol eden katsayı değeri (varsayılan: 1.20) |
+| `adımlar` | INT | Evet | 2 - 1000 | Sigma değerlerinin üretileceği toplam örnekleme adım sayısı (varsayılan: 10) |
+| `gürültü_azaltma` | FLOAT | Evet | 0.0 - 1.0 | Kullanılan adım sayısını azaltan gürültü giderme faktörü (varsayılan: 1.0) |
 
 **Not:** `denoise` değeri 0.0 olarak ayarlandığında, düğüm boş bir tensör döndürür. `denoise` değeri 1.0'dan küçük olduğunda, kullanılan gerçek adım sayısı `round(steps * denoise)` olarak hesaplanır. Adım sayısı 20'den büyük olduğunda, düğüm, önceden tanımlanmış gürültü seviyelerini istenen adım sayısına genişletmek için log-doğrusal enterpolasyon kullanır.
 

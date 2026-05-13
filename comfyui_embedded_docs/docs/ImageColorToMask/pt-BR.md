@@ -6,8 +6,8 @@ O nó `ImageColorToMask` é projetado para converter uma cor específica em uma 
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | O parâmetro 'image' representa a imagem de entrada a ser processada. É crucial para determinar as áreas da imagem que correspondem à cor especificada a ser convertida em uma máscara. |
-| `color`   | `INT`         | O parâmetro 'color' especifica a cor alvo na imagem a ser convertida em uma máscara. Ele desempenha um papel fundamental na identificação das áreas de cor específicas a serem destacadas na máscara resultante. |
+| `imagem`   | `IMAGE`       | O parâmetro 'image' representa a imagem de entrada a ser processada. É crucial para determinar as áreas da imagem que correspondem à cor especificada a ser convertida em uma máscara. |
+| `cor`   | `INT`         | O parâmetro 'color' especifica a cor alvo na imagem a ser convertida em uma máscara. Ele desempenha um papel fundamental na identificação das áreas de cor específicas a serem destacadas na máscara resultante. |
 
 ## Saídas
 

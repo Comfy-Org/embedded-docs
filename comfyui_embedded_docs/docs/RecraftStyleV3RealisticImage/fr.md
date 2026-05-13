@@ -8,7 +8,7 @@ Ce nœud crée une configuration de style pour générer des images réalistes �
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `substyle` | STRING | Oui | Plusieurs options disponibles (déterminées par l'API Recraft) | Le sous-style spécifique à appliquer au style realistic_image. Si défini sur "None", aucun sous-style ne sera appliqué. |
+| `sous-style` | STRING | Oui | Plusieurs options disponibles (déterminées par l'API Recraft) | Le sous-style spécifique à appliquer au style realistic_image. Si défini sur "None", aucun sous-style ne sera appliqué. |
 
 ## Sorties
 

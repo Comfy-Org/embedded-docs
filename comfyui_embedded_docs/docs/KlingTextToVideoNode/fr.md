@@ -18,8 +18,8 @@ Le nœud Kling Texte vers Vidéo convertit des descriptions textuelles en conten
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `output` | VIDEO | La sortie vidéo générée |
-| `video_id` | STRING | Identifiant unique de la vidéo générée |
+| `video_id` | VIDEO | La sortie vidéo générée |
+| `duration` | STRING | Identifiant unique de la vidéo générée |
 | `duration` | STRING | Informations sur la durée de la vidéo générée |
 
 ---

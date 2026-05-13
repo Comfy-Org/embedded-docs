@@ -7,7 +7,7 @@ Le nœud ImageQuantize est conçu pour réduire le nombre de couleurs d'une imag
 | Champ    | Type de données | Description                                                                                          |
 |----------|-----------------|------------------------------------------------------------------------------------------------------|
 | `image`  | `IMAGE`         | Le tenseur d'image d'entrée à quantifier. Il affecte l'exécution du nœud en étant la donnée principale sur laquelle la réduction des couleurs est effectuée. |
-| `colors` | `INT`           | Spécifie le nombre de couleurs auquel réduire l'image. Il influence directement le processus de quantification en déterminant la taille de la palette de couleurs. |
+| `couleurs` | `INT`           | Spécifie le nombre de couleurs auquel réduire l'image. Il influence directement le processus de quantification en déterminant la taille de la palette de couleurs. |
 | `dither` | COMBO[STRING]   | Détermine la technique de tramage à appliquer lors de la quantification, affectant la qualité visuelle et l'apparence de l'image de sortie. |
 
 ## Sorties

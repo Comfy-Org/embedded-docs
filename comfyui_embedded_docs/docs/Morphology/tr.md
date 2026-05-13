@@ -6,15 +6,15 @@ Morphology düğümü, görüntülerdeki şekilleri işlemek ve analiz etmek iç
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `image` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
-| `operation` | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | Uygulanacak morfolojik işlem (varsayılan: "erode") |
-| `kernel_size` | INT | Evet | 3-999 | Yapılandırma elemanı çekirdeğinin boyutu (varsayılan: 3). Tek sayı olmalıdır. |
+| `görüntü` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
+| `işlem` | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | Uygulanacak morfolojik işlem (varsayılan: "erode") |
+| `çekirdek_boyutu` | INT | Evet | 3-999 | Yapılandırma elemanı çekirdeğinin boyutu (varsayılan: 3). Tek sayı olmalıdır. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | Morfolojik işlem uygulandıktan sonraki işlenmiş görüntü |
+| `görüntü` | IMAGE | Morfolojik işlem uygulandıktan sonraki işlenmiş görüntü |
 
 ---
 **Source fingerprint (SHA-256):** `7f6224a0e58fbb7263267b377394e119c6f8d65d16af4ce492ca9504654af7b4`

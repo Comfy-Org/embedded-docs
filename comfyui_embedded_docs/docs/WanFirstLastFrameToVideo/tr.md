@@ -6,17 +6,17 @@ WanFirstLastFrameToVideo düğümü, başlangıç ve bitiş karelerini metin ist
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için olumlu metin koşullandırması |
-| `negative` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için olumsuz metin koşullandırması |
+| `pozitif` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için olumlu metin koşullandırması |
+| `negatif` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için olumsuz metin koşullandırması |
 | `vae` | VAE | Evet | - | Görüntüleri gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Evet | 16 - MAKSİMUM ÇÖZÜNÜRLÜK | Çıktı videosu genişliği (varsayılan: 832, adım: 16) |
-| `height` | INT | Evet | 16 - MAKSİMUM ÇÖZÜNÜRLÜK | Çıktı videosu yüksekliği (varsayılan: 480, adım: 16) |
-| `length` | INT | Evet | 1 - MAKSİMUM ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
-| `batch_size` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
-| `clip_vision_start_image` | CLIP_VISION_OUTPUT | Hayır | - | Başlangıç görüntüsünden çıkarılan CLIP görüntü özellikleri |
-| `clip_vision_end_image` | CLIP_VISION_OUTPUT | Hayır | - | Bitiş görüntüsünden çıkarılan CLIP görüntü özellikleri |
-| `start_image` | IMAGE | Hayır | - | Video dizisi için başlangıç kare görüntüsü |
-| `end_image` | IMAGE | Hayır | - | Video dizisi için bitiş kare görüntüsü |
+| `genişlik` | INT | Evet | 16 - MAKSİMUM ÇÖZÜNÜRLÜK | Çıktı videosu genişliği (varsayılan: 832, adım: 16) |
+| `yükseklik` | INT | Evet | 16 - MAKSİMUM ÇÖZÜNÜRLÜK | Çıktı videosu yüksekliği (varsayılan: 480, adım: 16) |
+| `uzunluk` | INT | Evet | 1 - MAKSİMUM ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
+| `toplu_boyut` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
+| `clip_görü_başlangıç_görüntüsü` | CLIP_VISION_OUTPUT | Hayır | - | Başlangıç görüntüsünden çıkarılan CLIP görüntü özellikleri |
+| `clip_görü_bitiş_görüntüsü` | CLIP_VISION_OUTPUT | Hayır | - | Bitiş görüntüsünden çıkarılan CLIP görüntü özellikleri |
+| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video dizisi için başlangıç kare görüntüsü |
+| `bitiş_görüntüsü` | IMAGE | Hayır | - | Video dizisi için bitiş kare görüntüsü |
 
 **Not:** Hem `start_image` hem de `end_image` sağlandığında, düğüm bu iki kare arasında geçiş yapan bir video dizisi oluşturur. `clip_vision_start_image` ve `clip_vision_end_image` parametreleri isteğe bağlıdır ancak sağlandıklarında, CLIP görüntü özellikleri birleştirilir ve hem olumlu hem de olumsuz koşullandırmaya uygulanır. `start_image`, işlemeden önce ilk `length` kareye, `end_image` ise son `length` kareye kırpılır.
 
@@ -24,8 +24,8 @@ WanFirstLastFrameToVideo düğümü, başlangıç ve bitiş karelerini metin ist
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumlu koşullandırma |
-| `negative` | CONDITIONING | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumsuz koşullandırma |
+| `negatif` | CONDITIONING | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumlu koşullandırma |
+| `gizli` | CONDITIONING | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumsuz koşullandırma |
 | `latent` | LATENT | Boyutları belirtilen video parametreleriyle eşleşen boş gizli tensör |
 
 ---

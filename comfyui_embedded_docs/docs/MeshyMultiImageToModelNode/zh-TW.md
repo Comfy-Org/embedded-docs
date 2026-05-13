@@ -30,9 +30,9 @@
 
 | 輸出名稱 | 資料類型 | 說明 |
 | :--- | :--- | :--- |
-| `model_file` | STRING | 生成的 GLB 模型檔案名稱。此輸出是為了向後相容而提供。 |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy API 任務的唯一識別碼。 |
-| `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型。 |
+| `meshy 任務 ID` | STRING | 生成的 GLB 模型檔案名稱。此輸出是為了向後相容而提供。 |
+| `GLB` | MESHY_TASK_ID | Meshy API 任務的唯一識別碼。 |
+| `FBX` | FILE3DGLB | 以 GLB 格式生成的 3D 模型。 |
 | `FBX` | FILE3DFBX | 以 FBX 格式生成的 3D 模型。 |
 
 ---

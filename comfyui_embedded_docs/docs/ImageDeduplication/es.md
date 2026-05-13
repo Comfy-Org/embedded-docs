@@ -6,14 +6,14 @@ Este nodo elimina imágenes duplicadas o muy similares de un lote. Funciona crea
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `images` | IMAGE | Sí | - | El lote de imágenes a procesar para la deduplicación. |
-| `similarity_threshold` | FLOAT | No | 0.0 - 1.0 | Umbral de similitud (0-1). Un valor más alto indica mayor similitud. Las imágenes por encima de este umbral se consideran duplicados. (predeterminado: 0.95) |
+| `imágenes` | IMAGE | Sí | - | El lote de imágenes a procesar para la deduplicación. |
+| `umbral_de_similitud` | FLOAT | No | 0.0 - 1.0 | Umbral de similitud (0-1). Un valor más alto indica mayor similitud. Las imágenes por encima de este umbral se consideran duplicados. (predeterminado: 0.95) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `images` | IMAGE | La lista filtrada de imágenes con los duplicados eliminados. |
+| `imágenes` | IMAGE | La lista filtrada de imágenes con los duplicados eliminados. |
 
 ---
 **Source fingerprint (SHA-256):** `8904f9dee4ca911821e76d2317983cbc230c4821a9ee7876180bd7dbe42b9a54`

@@ -7,7 +7,7 @@ Le nœud Ajuster la Luminosité modifie la luminosité d'une image d'entrée. Il
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à ajuster. |
-| `factor` | FLOAT | Non | 0,0 - 2,0 | Facteur de luminosité. 1,0 = aucun changement, <1,0 = plus sombre, >1,0 = plus clair. (par défaut : 1,0) |
+| `facteur` | FLOAT | Non | 0,0 - 2,0 | Facteur de luminosité. 1,0 = aucun changement, <1,0 = plus sombre, >1,0 = plus clair. (par défaut : 1,0) |
 
 ## Sorties
 

@@ -6,17 +6,17 @@ El nodo ConditioningStableAudio agrega información de temporización a las entr
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que se modificará con información de temporización de audio |
-| `negative` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que se modificará con información de temporización de audio |
-| `seconds_start` | FLOAT | Sí | 0.0 a 1000.0 | El tiempo de inicio en segundos para la generación de audio (predeterminado: 0.0) |
-| `seconds_total` | FLOAT | Sí | 0.0 a 1000.0 | La duración total en segundos para la generación de audio (predeterminado: 47.0) |
+| `positivo` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que se modificará con información de temporización de audio |
+| `negativo` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que se modificará con información de temporización de audio |
+| `segundos_inicio` | FLOAT | Sí | 0.0 a 1000.0 | El tiempo de inicio en segundos para la generación de audio (predeterminado: 0.0) |
+| `segundos_total` | FLOAT | Sí | 0.0 a 1000.0 | La duración total en segundos para la generación de audio (predeterminado: 47.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo modificado con información de temporización de audio aplicada |
-| `negative` | CONDITIONING | El condicionamiento negativo modificado con información de temporización de audio aplicada |
+| `negativo` | CONDITIONING | El condicionamiento positivo modificado con información de temporización de audio aplicada |
+| `negativo` | CONDITIONING | El condicionamiento negativo modificado con información de temporización de audio aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `ad4fdb2ac536e4f9cc23c044a7a63333e3f3530cc782937eaedc1565cc7c5d0e`

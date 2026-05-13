@@ -6,17 +6,17 @@ O nó ResizeAndPadImage redimensiona uma imagem para caber dentro de dimensões 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser redimensionada e preenchida |
-| `target_width` | INT | Sim | 1 a MAX_RESOLUTION | A largura desejada da imagem de saída (padrão: 512) |
-| `target_height` | INT | Sim | 1 a MAX_RESOLUTION | A altura desejada da imagem de saída (padrão: 512) |
-| `padding_color` | COMBO | Sim | "white"<br>"black" | A cor a ser usada para as áreas de preenchimento ao redor da imagem redimensionada (padrão: "white") |
-| `interpolation` | COMBO | Sim | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" | O método de interpolação usado para redimensionar a imagem (padrão: "area") |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser redimensionada e preenchida |
+| `largura_alvo` | INT | Sim | 1 a MAX_RESOLUTION | A largura desejada da imagem de saída (padrão: 512) |
+| `altura_alvo` | INT | Sim | 1 a MAX_RESOLUTION | A altura desejada da imagem de saída (padrão: 512) |
+| `cor_do_preenchimento` | COMBO | Sim | "white"<br>"black" | A cor a ser usada para as áreas de preenchimento ao redor da imagem redimensionada (padrão: "white") |
+| `interpolação` | COMBO | Sim | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" | O método de interpolação usado para redimensionar a imagem (padrão: "area") |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem de saída redimensionada e preenchida |
+| `imagem` | IMAGE | A imagem de saída redimensionada e preenchida |
 
 ---
 **Source fingerprint (SHA-256):** `01566327d46043d1ff9ce404b4df8f49e853d0b01d07cc189fb843157dac1cac`

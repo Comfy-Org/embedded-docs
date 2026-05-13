@@ -6,11 +6,11 @@ El nodo RescaleCFG está diseñado para ajustar las escalas de condicionamiento 
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | El parámetro `model` representa el modelo generativo que se va a ajustar. Es crucial, ya que el nodo aplica una función de reescalado a la salida del modelo, influyendo directamente en el proceso de generación. |
-| `multiplier` | `FLOAT` | El parámetro `multiplier` controla el grado de reescalado aplicado a la salida del modelo. Determina el equilibrio entre los componentes originales y reescalados, afectando las características finales de la salida. |
+| `modelo`   | MODEL     | El parámetro `modelo` representa el modelo generativo que se va a ajustar. Es crucial, ya que el nodo aplica una función de reescalado a la salida del modelo, influyendo directamente en el proceso de generación. |
+| `multiplicador` | `FLOAT` | El parámetro `multiplicador` controla el grado de reescalado aplicado a la salida del modelo. Determina el equilibrio entre los componentes originales y reescalados, afectando las características finales de la salida. |
 
 ## Salidas
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | El modelo modificado con escalas de condicionamiento y no condicionamiento ajustadas. Se espera que este modelo produzca salidas con características potencialmente mejoradas debido al reescalado aplicado. |
+| `modelo`   | MODEL     | El modelo modificado con escalas de condicionamiento y no condicionamiento ajustadas. Se espera que este modelo produzca salidas con características potencialmente mejoradas debido al reescalado aplicado. |

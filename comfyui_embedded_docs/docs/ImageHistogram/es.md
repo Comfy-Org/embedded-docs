@@ -6,16 +6,16 @@ El nodo ImageHistogram analiza la distribución de color de una imagen de entrad
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | N/A | La imagen de entrada a analizar. El nodo procesa la primera imagen del lote. |
+| `imagen` | IMAGE | Sí | N/A | La imagen de entrada a analizar. El nodo procesa la primera imagen del lote. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `rgb` | HISTOGRAM | Un histograma compuesto que representa la intensidad promedio de píxeles en los canales rojo, verde y azul. |
-| `luminance` | HISTOGRAM | Un histograma del brillo percibido de la imagen, calculado utilizando la fórmula de luminancia estándar ITU-R BT.709. |
-| `red` | HISTOGRAM | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color rojo. |
-| `green` | HISTOGRAM | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color verde. |
+| `luminancia` | HISTOGRAM | Un histograma compuesto que representa la intensidad promedio de píxeles en los canales rojo, verde y azul. |
+| `rojo` | HISTOGRAM | Un histograma del brillo percibido de la imagen, calculado utilizando la fórmula de luminancia estándar ITU-R BT.709. |
+| `verde` | HISTOGRAM | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color rojo. |
+| `azul` | HISTOGRAM | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color verde. |
 | `blue` | HISTOGRAM | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color azul. |
 
 ---

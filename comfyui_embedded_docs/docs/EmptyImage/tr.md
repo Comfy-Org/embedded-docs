@@ -12,10 +12,10 @@ Tıpkı bir ressamın yaratmaya başlamadan önce boş bir tuval hazırlaması g
 
 | Parametre Adı | Veri Türü | Açıklama |
 |---------------|-----------|----------|
-| `width` | INT | Oluşturulan görüntünün genişliğini (piksel cinsinden) ayarlar, tuvalin yatay boyutlarını belirler |
-| `height` | INT | Oluşturulan görüntünün yüksekliğini (piksel cinsinden) ayarlar, tuvalin dikey boyutlarını belirler |
-| `batch_size` | INT | Aynı anda oluşturulacak görüntü sayısı, aynı özelliklere sahip görüntülerin toplu olarak oluşturulması için kullanılır |
-| `color` | INT | Görüntünün arka plan rengi. Onaltılık renk ayarları girebilirsiniz, bunlar otomatik olarak ondalık sisteme dönüştürülür |
+| `genişlik` | INT | Oluşturulan görüntünün genişliğini (piksel cinsinden) ayarlar, tuvalin yatay boyutlarını belirler |
+| `yükseklik` | INT | Oluşturulan görüntünün yüksekliğini (piksel cinsinden) ayarlar, tuvalin dikey boyutlarını belirler |
+| `toplu_boyut` | INT | Aynı anda oluşturulacak görüntü sayısı, aynı özelliklere sahip görüntülerin toplu olarak oluşturulması için kullanılır |
+| `renk` | INT | Görüntünün arka plan rengi. Onaltılık renk ayarları girebilirsiniz, bunlar otomatik olarak ondalık sisteme dönüştürülür |
 
 ## Çıktılar
 

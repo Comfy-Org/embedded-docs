@@ -6,8 +6,8 @@ O nó InstructPixToPixConditioning prepara dados de condicionamento para ediçã
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | Dados de condicionamento positivo contendo prompts de texto e configurações para características desejadas da imagem |
-| `negative` | CONDITIONING | Sim | - | Dados de condicionamento negativo contendo prompts de texto e configurações para características indesejadas da imagem |
+| `positivo` | CONDITIONING | Sim | - | Dados de condicionamento positivo contendo prompts de texto e configurações para características desejadas da imagem |
+| `negativo` | CONDITIONING | Sim | - | Dados de condicionamento negativo contendo prompts de texto e configurações para características indesejadas da imagem |
 | `vae` | VAE | Sim | - | Modelo VAE usado para codificar imagens de entrada em representações latentes |
 | `pixels` | IMAGE | Sim | - | Imagem de entrada a ser processada e codificada no espaço latente |
 
@@ -17,8 +17,8 @@ O nó InstructPixToPixConditioning prepara dados de condicionamento para ediçã
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | Dados de condicionamento positivo com representação de imagem latente anexada |
-| `negative` | CONDITIONING | Dados de condicionamento negativo com representação de imagem latente anexada |
+| `positivo` | CONDITIONING | Dados de condicionamento positivo com representação de imagem latente anexada |
+| `negativo` | CONDITIONING | Dados de condicionamento negativo com representação de imagem latente anexada |
 | `latent` | LATENT | Tensor latente vazio com as mesmas dimensões da imagem codificada |
 
 ---

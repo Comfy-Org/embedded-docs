@@ -10,7 +10,7 @@ Charge un fichier de point de contrôle (checkpoint) de modèle de diffusion et 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `ckpt_name` | STRING | Oui | Tous les fichiers de modèle dans le dossier checkpoints | Le nom du point de contrôle (modèle) à charger. Sélectionnez le nom du fichier du modèle de point de contrôle, qui détermine le modèle d'IA utilisé pour la génération d'images ultérieure. |
+| `nom_ckpt` | STRING | Oui | Tous les fichiers de modèle dans le dossier checkpoints | Le nom du point de contrôle (modèle) à charger. Sélectionnez le nom du fichier du modèle de point de contrôle, qui détermine le modèle d'IA utilisé pour la génération d'images ultérieure. |
 
 **Remarque :** Si de nouveaux fichiers de modèle sont ajoutés pendant que ComfyUI est en cours d'exécution, vous devez actualiser le navigateur (Ctrl+R) pour voir les nouveaux fichiers dans la liste déroulante.
 

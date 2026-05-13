@@ -8,7 +8,7 @@ Este nó foi projetado para operações avançadas de mesclagem de modelos, espe
 |--------------|--------------|-------------|
 | `model1`     | `MODEL`      | O modelo base do qual os parâmetros serão subtraídos. |
 | `model2`     | `MODEL`      | O modelo cujos parâmetros serão subtraídos do modelo base. |
-| `multiplier` | `FLOAT`      | Um valor de ponto flutuante que escala o efeito da subtração nos parâmetros do modelo base. |
+| `multiplicador` | `FLOAT`      | Um valor de ponto flutuante que escala o efeito da subtração nos parâmetros do modelo base. |
 
 ## Saídas
 

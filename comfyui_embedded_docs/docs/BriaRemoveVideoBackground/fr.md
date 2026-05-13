@@ -8,9 +8,9 @@ Ce nœud supprime l'arrière-plan d'une vidéo à l'aide du service IA Bria. Il 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | N/D | Le fichier vidéo d'entrée dont l'arrière-plan sera supprimé. |
-| `background_color` | STRING | Oui | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` | La couleur unie à utiliser comme nouvel arrière-plan pour la vidéo de sortie. |
-| `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine qui contrôle si le nœud doit être réexécuté. Les résultats sont non déterministes, quelle que soit la valeur de la graine. (par défaut : 0) |
+| `vidéo` | VIDEO | Oui | N/D | Le fichier vidéo d'entrée dont l'arrière-plan sera supprimé. |
+| `couleur d’arrière-plan` | STRING | Oui | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` | La couleur unie à utiliser comme nouvel arrière-plan pour la vidéo de sortie. |
+| `graine` | INT | Non | 0 à 2147483647 | Une valeur de graine qui contrôle si le nœud doit être réexécuté. Les résultats sont non déterministes, quelle que soit la valeur de la graine. (par défaut : 0) |
 
 **Remarque :** La vidéo d'entrée doit avoir une durée de 60 secondes ou moins.
 

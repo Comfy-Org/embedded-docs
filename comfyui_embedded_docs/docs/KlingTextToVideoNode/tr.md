@@ -6,18 +6,18 @@ ComfyUI Kling Metinden Videoya Düğümü, metin açıklamalarını video içeri
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Olumlu metin istemi |
-| `negative_prompt` | STRING | Evet | - | Olumsuz metin istemi |
-| `cfg_scale` | FLOAT | Hayır | 0.0 ile 1.0 arası | Yapılandırma ölçek değeri (varsayılan: 1.0) |
-| `aspect_ratio` | COMBO | Hayır | KlingVideoGenAspectRatio seçenekleri | Video en boy oranı ayarı (varsayılan: "16:9") |
-| `mode` | COMBO | Hayır | Birden çok seçenek mevcut | Video oluşturma için kullanılacak yapılandırma. Biçim: mod / süre / model_adı. (varsayılan: modes[8]) |
+| `istem` | STRING | Evet | - | Olumlu metin istemi |
+| `negatif_istem` | STRING | Evet | - | Olumsuz metin istemi |
+| `cfg_ölçeği` | FLOAT | Hayır | 0.0 ile 1.0 arası | Yapılandırma ölçek değeri (varsayılan: 1.0) |
+| `en_boy_oranı` | COMBO | Hayır | KlingVideoGenAspectRatio seçenekleri | Video en boy oranı ayarı (varsayılan: "16:9") |
+| `mod` | COMBO | Hayır | Birden çok seçenek mevcut | Video oluşturma için kullanılacak yapılandırma. Biçim: mod / süre / model_adı. (varsayılan: modes[8]) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video çıktısı |
-| `video_id` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Oluşturulan video çıktısı |
+| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
 | `duration` | STRING | Oluşturulan videonun süre bilgisi |
 
 ---

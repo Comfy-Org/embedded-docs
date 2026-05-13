@@ -6,14 +6,14 @@ O nó HunyuanImageToVideo converte imagens em representações latentes de víde
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | Entrada de condicionamento positivo para orientar a geração do vídeo |
+| `positivo` | CONDITIONING | Sim | - | Entrada de condicionamento positivo para orientar a geração do vídeo |
 | `vae` | VAE | Sim | - | Modelo VAE usado para codificar imagens no espaço latente |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída em pixels (padrão: 848, passo: 16) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros no vídeo de saída (padrão: 53, passo: 4) |
-| `batch_size` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados simultaneamente (padrão: 1) |
-| `guidance_type` | COMBO | Sim | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Método para incorporar a imagem inicial na geração do vídeo (padrão: "v1 (concat)") |
-| `start_image` | IMAGE | Não | - | Imagem inicial opcional para inicializar a geração do vídeo |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída em pixels (padrão: 848, passo: 16) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) |
+| `duração` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros no vídeo de saída (padrão: 53, passo: 4) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados simultaneamente (padrão: 1) |
+| `tipo_de_guia` | COMBO | Sim | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Método para incorporar a imagem inicial na geração do vídeo (padrão: "v1 (concat)") |
+| `imagem_inicial` | IMAGE | Não | - | Imagem inicial opcional para inicializar a geração do vídeo |
 
 **Observação:** Quando `start_image` é fornecida, o nó utiliza diferentes métodos de orientação com base no `guidance_type` selecionado:
 
@@ -25,7 +25,7 @@ O nó HunyuanImageToVideo converte imagens em representações latentes de víde
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | Condicionamento positivo modificado com orientação de imagem aplicada quando start_image é fornecida |
+| `positivo` | CONDITIONING | Condicionamento positivo modificado com orientação de imagem aplicada quando start_image é fornecida |
 | `latent` | LATENT | Representação latente do vídeo pronta para processamento adicional por modelos de geração de vídeo |
 
 ---

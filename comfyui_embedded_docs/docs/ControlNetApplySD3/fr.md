@@ -23,7 +23,7 @@ Ce nœud applique le guidage ControlNet au conditionnement de Stable Diffusion 3
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif modifié avec le guidage ControlNet appliqué |
+| `negative` | CONDITIONING | Le conditionnement positif modifié avec le guidage ControlNet appliqué |
 | `negative` | CONDITIONING | Le conditionnement négatif modifié avec le guidage ControlNet appliqué |
 
 ---

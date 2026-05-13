@@ -6,15 +6,15 @@ WanImageToVideo düğümü, video oluşturma görevleri için conditioning ve la
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için pozitif conditioning girdisi |
-| `negative` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için negatif conditioning girdisi |
+| `pozitif` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için pozitif conditioning girdisi |
+| `negatif` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için negatif conditioning girdisi |
 | `vae` | VAE | Evet | - | Görüntüleri latent alana kodlamak için VAE modeli |
-| `width` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun genişliği (varsayılan: 832, adım: 16) |
-| `height` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun yüksekliği (varsayılan: 480, adım: 16) |
-| `length` | INT | Evet | 1 ile MAX_RESOLUTION | Videodaki kare sayısı (varsayılan: 81, adım: 4) |
-| `batch_size` | INT | Evet | 1 ile 4096 | Bir grupta oluşturulacak video sayısı (varsayılan: 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Hayır | - | Ek conditioning için isteğe bağlı CLIP görüş çıktısı |
-| `start_image` | IMAGE | Hayır | - | Video oluşturmayı başlatmak için isteğe bağlı başlangıç görüntüsü |
+| `genişlik` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun genişliği (varsayılan: 832, adım: 16) |
+| `yükseklik` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun yüksekliği (varsayılan: 480, adım: 16) |
+| `uzunluk` | INT | Evet | 1 ile MAX_RESOLUTION | Videodaki kare sayısı (varsayılan: 81, adım: 4) |
+| `toplu_boyut` | INT | Evet | 1 ile 4096 | Bir grupta oluşturulacak video sayısı (varsayılan: 1) |
+| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Hayır | - | Ek conditioning için isteğe bağlı CLIP görüş çıktısı |
+| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video oluşturmayı başlatmak için isteğe bağlı başlangıç görüntüsü |
 
 **Not:** `start_image` sağlandığında, düğüm görüntü dizisini kodlar ve conditioning girdilerine maskeleme uygular. `clip_vision_output` parametresi sağlandığında, hem pozitif hem de negatif girdilere görüş tabanlı conditioning ekler.
 
@@ -22,8 +22,8 @@ WanImageToVideo düğümü, video oluşturma görevleri için conditioning ve la
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş pozitif conditioning |
-| `negative` | CONDITIONING | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş negatif conditioning |
+| `negatif` | CONDITIONING | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş pozitif conditioning |
+| `gizli` | CONDITIONING | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş negatif conditioning |
 | `latent` | LATENT | Video oluşturma için hazır, boş latent alan tensörü |
 
 ---

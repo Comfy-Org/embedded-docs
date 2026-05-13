@@ -7,8 +7,8 @@ El nodo SaveAudioMP3 guarda datos de audio como un archivo MP3. Toma una entrada
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `audio` | AUDIO | Sí | - | Los datos de audio que se guardarán como archivo MP3 |
-| `filename_prefix` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") |
-| `quality` | STRING | No | "V0"<br>"128k"<br>"320k" | La configuración de calidad de audio para el archivo MP3 (predeterminado: "V0") |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") |
+| `calidad` | STRING | No | "V0"<br>"128k"<br>"320k" | La configuración de calidad de audio para el archivo MP3 (predeterminado: "V0") |
 | `prompt` | PROMPT | No | - | Datos internos de la instrucción (proporcionados automáticamente por el sistema) |
 | `extra_pnginfo` | EXTRA_PNGINFO | No | - | Información adicional PNG (proporcionada automáticamente por el sistema) |
 

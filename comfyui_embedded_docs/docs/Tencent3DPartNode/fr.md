@@ -6,8 +6,8 @@ Ce nœud utilise l'API Tencent Hunyuan3D pour analyser automatiquement un modèl
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_3d` | FILE3D | Oui | FBX, Tous | Le modèle 3D à traiter. Le modèle doit être au format FBX et comporter moins de 30 000 faces. |
-| `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine pour contrôler si le nœud doit être réexécuté. Les résultats sont non déterministes, quelle que soit la valeur de la graine. (par défaut : 0) |
+| `modèle_3d` | FILE3D | Oui | FBX, Tous | Le modèle 3D à traiter. Le modèle doit être au format FBX et comporter moins de 30 000 faces. |
+| `graine` | INT | Non | 0 à 2147483647 | Une valeur de graine pour contrôler si le nœud doit être réexécuté. Les résultats sont non déterministes, quelle que soit la valeur de la graine. (par défaut : 0) |
 
 **Remarque :** L'entrée `model_3d` ne prend en charge que les fichiers au format FBX. Si un autre format de fichier 3D est fourni, le nœud générera une erreur.
 

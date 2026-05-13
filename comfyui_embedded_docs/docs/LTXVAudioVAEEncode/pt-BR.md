@@ -6,7 +6,7 @@ O nó LTXV Audio VAE Encode recebe uma entrada de áudio e a comprime em uma rep
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | - | O áudio a ser codificado. |
+| `áudio` | AUDIO | Sim | - | O áudio a ser codificado. |
 | `audio_vae` | VAE | Sim | - | O modelo Audio VAE a ser usado para codificação. |
 
 ## Saídas

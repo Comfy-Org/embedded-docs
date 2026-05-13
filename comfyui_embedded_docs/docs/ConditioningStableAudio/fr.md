@@ -7,16 +7,16 @@ Le nœud ConditioningStableAudio ajoute des informations de synchronisation aux 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `positive` | CONDITIONING | Oui | - | L'entrée de conditionnement positif à modifier avec les informations de synchronisation audio |
-| `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif à modifier avec les informations de synchronisation audio |
-| `seconds_start` | FLOAT | Oui | 0,0 à 1000,0 | Le temps de début en secondes pour la génération audio (par défaut : 0,0) |
-| `seconds_total` | FLOAT | Oui | 0,0 à 1000,0 | La durée totale en secondes pour la génération audio (par défaut : 47,0) |
+| `négative` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif à modifier avec les informations de synchronisation audio |
+| `secondes_début` | FLOAT | Oui | 0,0 à 1000,0 | Le temps de début en secondes pour la génération audio (par défaut : 0,0) |
+| `secondes_total` | FLOAT | Oui | 0,0 à 1000,0 | La durée totale en secondes pour la génération audio (par défaut : 47,0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif modifié avec les informations de synchronisation audio appliquées |
-| `negative` | CONDITIONING | Le conditionnement négatif modifié avec les informations de synchronisation audio appliquées |
+| `négatif` | CONDITIONING | Le conditionnement positif modifié avec les informations de synchronisation audio appliquées |
+| `négative` | CONDITIONING | Le conditionnement négatif modifié avec les informations de synchronisation audio appliquées |
 
 ---
 **Source fingerprint (SHA-256):** `ad4fdb2ac536e4f9cc23c044a7a63333e3f3530cc782937eaedc1565cc7c5d0e`

@@ -9,13 +9,13 @@ Le nœud **StableZero123_Conditioning_Batched** traite une image d'entrée et g�
 | `clip_vision` | CLIP_VISION | Oui | - | Le modèle CLIP vision utilisé pour encoder l'image d'entrée |
 | `init_image` | IMAGE | Oui | - | L'image d'entrée initiale à traiter et encoder |
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour encoder les pixels de l'image dans l'espace latent |
-| `width` | INT | Non | 16 à MAX_RESOLUTION | La largeur de sortie pour l'image traitée (par défaut : 256, doit être divisible par 8) |
-| `height` | INT | Non | 16 à MAX_RESOLUTION | La hauteur de sortie pour l'image traitée (par défaut : 256, doit être divisible par 8) |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre d'échantillons de conditionnement à générer dans le lot (par défaut : 1) |
-| `elevation` | FLOAT | Non | -180.0 à 180.0 | L'angle d'élévation initial de la caméra en degrés (par défaut : 0.0) |
-| `azimuth` | FLOAT | Non | -180.0 à 180.0 | L'angle d'azimut initial de la caméra en degrés (par défaut : 0.0) |
-| `elevation_batch_increment` | FLOAT | Non | -180.0 à 180.0 | L'incrément d'élévation pour chaque élément du lot (par défaut : 0.0) |
-| `azimuth_batch_increment` | FLOAT | Non | -180.0 à 180.0 | L'incrément d'azimut pour chaque élément du lot (par défaut : 0.0) |
+| `largeur` | INT | Non | 16 à MAX_RESOLUTION | La largeur de sortie pour l'image traitée (par défaut : 256, doit être divisible par 8) |
+| `hauteur` | INT | Non | 16 à MAX_RESOLUTION | La hauteur de sortie pour l'image traitée (par défaut : 256, doit être divisible par 8) |
+| `taille_lot` | INT | Non | 1 à 4096 | Le nombre d'échantillons de conditionnement à générer dans le lot (par défaut : 1) |
+| `élévation` | FLOAT | Non | -180.0 à 180.0 | L'angle d'élévation initial de la caméra en degrés (par défaut : 0.0) |
+| `azimut` | FLOAT | Non | -180.0 à 180.0 | L'angle d'azimut initial de la caméra en degrés (par défaut : 0.0) |
+| `incrément_lot_élévation` | FLOAT | Non | -180.0 à 180.0 | L'incrément d'élévation pour chaque élément du lot (par défaut : 0.0) |
+| `incrément_lot_azimut` | FLOAT | Non | -180.0 à 180.0 | L'incrément d'azimut pour chaque élément du lot (par défaut : 0.0) |
 
 **Remarque :** Les paramètres `width` et `height` doivent être divisibles par 8, car le nœud divise ces dimensions par 8 pour la génération de l'espace latent.
 
@@ -23,8 +23,8 @@ Le nœud **StableZero123_Conditioning_Batched** traite une image d'entrée et g�
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Les données de conditionnement positif contenant les embeddings d'image et les paramètres de caméra |
-| `negative` | CONDITIONING | Les données de conditionnement négatif avec des embeddings initialisés à zéro |
+| `négatif` | CONDITIONING | Les données de conditionnement positif contenant les embeddings d'image et les paramètres de caméra |
+| `latent` | CONDITIONING | Les données de conditionnement négatif avec des embeddings initialisés à zéro |
 | `latent` | LATENT | La représentation latente de l'image traitée avec les informations d'indexation par lot |
 
 ---

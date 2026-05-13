@@ -19,8 +19,8 @@ Ce nœud prépare une séquence d'images clés pour un segment spécifique d'un 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `keyframes_sequence` | IMAGE | Séquence d'images clés complétée pour le segment spécifié. |
-| `keyframes_mask` | MASK | Masque indiquant les images valides (1 pour les positions d'images clés, 0 pour les positions complétées). |
+| `keyframes_mask` | IMAGE | Séquence d'images clés complétée pour le segment spécifié. |
+| `audio_segment` | MASK | Masque indiquant les images valides (1 pour les positions d'images clés, 0 pour les positions complétées). |
 | `audio_segment` | AUDIO | Segment audio pour ce segment vidéo. |
 
 ---

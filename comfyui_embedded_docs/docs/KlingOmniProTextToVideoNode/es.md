@@ -12,8 +12,8 @@ Este nodo utiliza el modelo Kling AI más reciente para generar un video a parti
 | `duration` | INT | Sí | 3 a 15 segundos | La duración del video en segundos (predeterminado: 5). |
 | `resolution` | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` | La calidad o resolución en píxeles del video (predeterminado: `"1080p"`). |
 | `storyboards` | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Genera una serie de segmentos de video con indicaciones y duraciones individuales. Se ignora para el modelo o1. |
-| `generate_audio` | BOOLEAN | No | Verdadero / Falso | Si se debe generar audio para el video (predeterminado: Falso). |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
+| `generar_audio` | BOOLEAN | No | Verdadero / Falso | Si se debe generar audio para el video (predeterminado: Falso). |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
 
 ### Restricciones y Limitaciones de los Parámetros
 

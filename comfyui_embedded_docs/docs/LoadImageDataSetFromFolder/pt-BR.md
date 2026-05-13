@@ -6,7 +6,7 @@ Este nó carrega múltiplas imagens de uma subpasta específica dentro do diret�
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `folder` | STRING | Sim | *Múltiplas opções disponíveis* | A pasta de onde carregar as imagens. As opções são as subpastas presentes no diretório principal de entrada do ComfyUI. |
+| `pasta` | STRING | Sim | *Múltiplas opções disponíveis* | A pasta de onde carregar as imagens. As opções são as subpastas presentes no diretório principal de entrada do ComfyUI. |
 
 ## Saídas
 

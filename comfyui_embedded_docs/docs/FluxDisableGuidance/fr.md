@@ -6,13 +6,13 @@ Ce nœud désactive complètement la fonction d'intégration du guidage pour Flu
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `conditioning` | CONDITIONING | Oui | - | Les données de conditionnement à traiter et dont le guidage doit être supprimé |
+| `conditionnement` | CONDITIONING | Oui | - | Les données de conditionnement à traiter et dont le guidage doit être supprimé |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `conditioning` | CONDITIONING | Les données de conditionnement modifiées avec le guidage désactivé |
+| `conditionnement` | CONDITIONING | Les données de conditionnement modifiées avec le guidage désactivé |
 
 ---
 **Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`

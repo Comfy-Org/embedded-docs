@@ -6,13 +6,13 @@ O nó de Geração de Vídeo de Texto para Vídeo Vidu2 cria um vídeo a partir 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"viduq2"` | O modelo de IA a ser usado para geração de vídeo. Atualmente, apenas um modelo está disponível. |
+| `modelo` | COMBO | Sim | `"viduq2"` | O modelo de IA a ser usado para geração de vídeo. Atualmente, apenas um modelo está disponível. |
 | `prompt` | STRING | Sim | - | Uma descrição textual para geração de vídeo, com comprimento máximo de 2000 caracteres. |
-| `duration` | INT | Não | 1 a 10 | A duração do vídeo gerado em segundos. O valor pode ser ajustado usando um controle deslizante (padrão: 5). |
-| `seed` | INT | Não | 0 a 2147483647 | Um número usado para controlar a aleatoriedade da geração, permitindo resultados reproduzíveis. Pode ser controlado após a geração (padrão: 1). |
-| `aspect_ratio` | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | A relação proporcional entre a largura e a altura do vídeo. |
-| `resolution` | COMBO | Não | `"720p"`<br>`"1080p"` | As dimensões em pixels do vídeo gerado. Este é um parâmetro avançado. |
-| `background_music` | BOOLEAN | Não | - | Se deve adicionar música de fundo ao vídeo gerado (padrão: False). Este é um parâmetro avançado. |
+| `duração` | INT | Não | 1 a 10 | A duração do vídeo gerado em segundos. O valor pode ser ajustado usando um controle deslizante (padrão: 5). |
+| `semente` | INT | Não | 0 a 2147483647 | Um número usado para controlar a aleatoriedade da geração, permitindo resultados reproduzíveis. Pode ser controlado após a geração (padrão: 1). |
+| `proporção` | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | A relação proporcional entre a largura e a altura do vídeo. |
+| `resolução` | COMBO | Não | `"720p"`<br>`"1080p"` | As dimensões em pixels do vídeo gerado. Este é um parâmetro avançado. |
+| `música_de_fundo` | BOOLEAN | Não | - | Se deve adicionar música de fundo ao vídeo gerado (padrão: False). Este é um parâmetro avançado. |
 
 ## Saídas
 

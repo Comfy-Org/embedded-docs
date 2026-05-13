@@ -8,12 +8,12 @@ Este nodo se especializa en cargar un modelo LoRA sin requerir un modelo CLIP, e
 
 | Campo             | Tipo Comfy        | Descripción                                                                                   |
 |-------------------|-------------------|-----------------------------------------------------------------------------------------------|
-| `model`           | `MODEL`           | El modelo base para las modificaciones, al cual se aplicarán los ajustes de LoRA.              |
-| `lora_name`       | `COMBO[STRING]`   | El nombre del archivo LoRA que se cargará, especificando los ajustes a aplicar al modelo.      |
-| `strength_model`  | `FLOAT`           | Determina la intensidad de los ajustes de LoRA; valores más altos indican modificaciones más fuertes. |
+| `modelo`           | `MODEL`           | El modelo base para las modificaciones, al cual se aplicarán los ajustes de LoRA.              |
+| `nombre_lora`       | `COMBO[STRING]`   | El nombre del archivo LoRA que se cargará, especificando los ajustes a aplicar al modelo.      |
+| `fuerza_modelo`  | `FLOAT`           | Determina la intensidad de los ajustes de LoRA; valores más altos indican modificaciones más fuertes. |
 
 ## Salidas
 
 | Campo   | Tipo de Dato | Descripción                                                              |
 |---------|-------------|--------------------------------------------------------------------------|
-| `model` | `MODEL`     | El modelo modificado con los ajustes de LoRA aplicados, reflejando cambios en el comportamiento o las capacidades del modelo. |
+| `modelo` | `MODEL`     | El modelo modificado con los ajustes de LoRA aplicados, reflejando cambios en el comportamiento o las capacidades del modelo. |

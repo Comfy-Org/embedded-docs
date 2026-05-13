@@ -14,7 +14,7 @@ Bu düğüm, belirtilen bir klasörden görüntüleri ve bunlara karşılık gel
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `images` | IMAGE | Yüklenen görüntü tensörlerinin bir listesi. |
+| `texts` | IMAGE | Yüklenen görüntü tensörlerinin bir listesi. |
 | `texts` | STRING | Yüklenen her görüntüye karşılık gelen metin açıklamalarının bir listesi. |
 
 ---

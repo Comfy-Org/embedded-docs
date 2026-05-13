@@ -8,18 +8,18 @@ El nodo Wan Image to Video genera un video a partir de una sola imagen de entrad
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sí | "wan2.5-i2v-preview"<br>"wan2.6-i2v" | Modelo a utilizar (predeterminado: "wan2.6-i2v") |
-| `image` | IMAGE | Sí | - | Imagen de entrada que sirve como primer fotograma para la generación del video. Se requiere exactamente una imagen. |
-| `prompt` | STRING | Sí | - | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío). |
-| `negative_prompt` | STRING | No | - | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío). |
-| `resolution` | COMBO | No | "480P"<br>"720P"<br>"1080P" | Calidad de resolución del video (predeterminado: "720P"). El modelo Wan 2.6 no admite 480P. |
-| `duration` | INT | No | 5-15 (paso: 5) | Duración del video generado en segundos. Una duración de 15 segundos solo es compatible con el modelo Wan 2.6 (predeterminado: 5). |
+| `modelo` | COMBO | Sí | "wan2.5-i2v-preview"<br>"wan2.6-i2v" | Modelo a utilizar (predeterminado: "wan2.6-i2v") |
+| `imagen` | IMAGE | Sí | - | Imagen de entrada que sirve como primer fotograma para la generación del video. Se requiere exactamente una imagen. |
+| `texto` | STRING | Sí | - | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío). |
+| `texto_negativo` | STRING | No | - | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío). |
+| `resolución` | COMBO | No | "480P"<br>"720P"<br>"1080P" | Calidad de resolución del video (predeterminado: "720P"). El modelo Wan 2.6 no admite 480P. |
+| `duración` | INT | No | 5-15 (paso: 5) | Duración del video generado en segundos. Una duración de 15 segundos solo es compatible con el modelo Wan 2.6 (predeterminado: 5). |
 | `audio` | AUDIO | No | - | El audio debe contener una voz clara y fuerte, sin ruidos extraños ni música de fondo. Cuando se proporciona, la duración del audio debe estar entre 3.0 y 29.0 segundos. |
-| `seed` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
-| `generate_audio` | BOOLEAN | No | - | Si no se proporciona una entrada de audio, generar audio automáticamente (predeterminado: False). |
-| `prompt_extend` | BOOLEAN | No | - | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). |
-| `watermark` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). |
-| `shot_type` | COMBO | No | "single"<br>"multi" | Especifica el tipo de toma para el video generado, es decir, si el video es una sola toma continua o múltiples tomas con cortes. Este parámetro solo tiene efecto cuando prompt_extend es True (predeterminado: "single"). |
+| `semilla` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
+| `generar_audio` | BOOLEAN | No | - | Si no se proporciona una entrada de audio, generar audio automáticamente (predeterminado: False). |
+| `extender_texto` | BOOLEAN | No | - | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). |
+| `marca_agua` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). |
+| `tipo_de_toma` | COMBO | No | "single"<br>"multi" | Especifica el tipo de toma para el video generado, es decir, si el video es una sola toma continua o múltiples tomas con cortes. Este parámetro solo tiene efecto cuando prompt_extend es True (predeterminado: "single"). |
 
 **Restricciones:**
 

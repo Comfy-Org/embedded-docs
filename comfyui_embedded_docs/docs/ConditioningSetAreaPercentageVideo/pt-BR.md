@@ -6,20 +6,20 @@ O nó ConditioningSetAreaPercentageVideo modifica os dados de condicionamento de
 
 | Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
 |-----------|---------------|-----------------|--------|-------|-------------|
-| `conditioning` | CONDITIONING | Obrigatório | - | - | Os dados de condicionamento a serem modificados |
-| `width` | FLOAT | Obrigatório | 1.0 | 0.0 - 1.0 | A largura da área como uma porcentagem da largura total |
-| `height` | FLOAT | Obrigatório | 1.0 | 0.0 - 1.0 | A altura da área como uma porcentagem da altura total |
+| `condicionamento` | CONDITIONING | Obrigatório | - | - | Os dados de condicionamento a serem modificados |
+| `largura` | FLOAT | Obrigatório | 1.0 | 0.0 - 1.0 | A largura da área como uma porcentagem da largura total |
+| `altura` | FLOAT | Obrigatório | 1.0 | 0.0 - 1.0 | A altura da área como uma porcentagem da altura total |
 | `temporal` | FLOAT | Obrigatório | 1.0 | 0.0 - 1.0 | A duração temporal da área como uma porcentagem da duração total do vídeo |
 | `x` | FLOAT | Obrigatório | 0.0 | 0.0 - 1.0 | A posição inicial horizontal da área como uma porcentagem |
 | `y` | FLOAT | Obrigatório | 0.0 | 0.0 - 1.0 | A posição inicial vertical da área como uma porcentagem |
 | `z` | FLOAT | Obrigatório | 0.0 | 0.0 - 1.0 | A posição inicial temporal da área como uma porcentagem da linha do tempo do vídeo |
-| `strength` | FLOAT | Obrigatório | 1.0 | 0.0 - 10.0 | O multiplicador de intensidade aplicado ao condicionamento dentro da área definida |
+| `força` | FLOAT | Obrigatório | 1.0 | 0.0 - 10.0 | O multiplicador de intensidade aplicado ao condicionamento dentro da área definida |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `conditioning` | CONDITIONING | Os dados de condicionamento modificados com a área e as configurações de intensidade especificadas aplicadas |
+| `condicionamento` | CONDITIONING | Os dados de condicionamento modificados com a área e as configurações de intensidade especificadas aplicadas |
 
 ---
 **Source fingerprint (SHA-256):** `72d4bef4f8ddc4765cf69863f7ad03d34992f0ff30a963dbe2dc1b7d69815410`

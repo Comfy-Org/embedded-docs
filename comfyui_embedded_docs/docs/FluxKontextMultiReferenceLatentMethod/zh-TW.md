@@ -8,14 +8,14 @@ FluxKontextMultiReferenceLatentMethod 節點透過設定特定的參考潛在方
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 是 | - | 要使用參考潛在方法修改的條件化資料 |
-| `reference_latents_method` | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 用於參考潛在處理的方法。如果選擇 "uxo" 或 "uso"，將被轉換為 "uxo"。此參數標記為進階選項。 |
+| `條件化` | CONDITIONING | 是 | - | 要使用參考潛在方法修改的條件化資料 |
+| `參考潛在方法` | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 用於參考潛在處理的方法。如果選擇 "uxo" 或 "uso"，將被轉換為 "uxo"。此參數標記為進階選項。 |
 
 ## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | 已套用參考潛在方法的修改後條件化資料 |
+| `條件化` | CONDITIONING | 已套用參考潛在方法的修改後條件化資料 |
 
 ---
 **Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

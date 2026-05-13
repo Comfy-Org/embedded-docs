@@ -6,8 +6,8 @@ El nodo NAGuidance aplica Guía de Atención Normalizada a un modelo. Esta técn
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que se aplicará la Guía de Atención Normalizada. |
-| `nag_scale` | FLOAT | Sí | 0.0 - 50.0 | Factor de escala de la guía. Valores más altos alejan más la generación de la indicación negativa. (predeterminado: 5.0) |
+| `modelo` | MODEL | Sí | - | El modelo al que se aplicará la Guía de Atención Normalizada. |
+| `escala_nag` | FLOAT | Sí | 0.0 - 50.0 | Factor de escala de la guía. Valores más altos alejan más la generación de la indicación negativa. (predeterminado: 5.0) |
 | `nag_alpha` | FLOAT | Sí | 0.0 - 1.0 | Factor de mezcla para la atención normalizada. Un valor de 1.0 reemplaza completamente la atención original, mientras que 0.0 no tiene efecto. (predeterminado: 0.5) |
 | `nag_tau` | FLOAT | Sí | 1.0 - 10.0 | Factor de escala utilizado para limitar la relación de normalización. (predeterminado: 1.5) |
 
@@ -15,7 +15,7 @@ El nodo NAGuidance aplica Guía de Atención Normalizada a un modelo. Esta técn
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con la Guía de Atención Normalizada habilitada. |
+| `modelo` | MODEL | El modelo modificado con la Guía de Atención Normalizada habilitada. |
 
 ---
 **Source fingerprint (SHA-256):** `ea3d7fea94e62c8a0784887f3df9d8a503c3dbaa552bf860bd4dde1ae576fa9c`

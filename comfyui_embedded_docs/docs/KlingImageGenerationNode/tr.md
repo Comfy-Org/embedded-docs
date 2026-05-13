@@ -6,15 +6,15 @@ Kling Görüntü Oluşturma Düğümü, metin istemlerinden görüntüler oluşt
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Olumlu metin istemi |
-| `negative_prompt` | STRING | Evet | - | Olumsuz metin istemi |
-| `image_type` | COMBO | Evet | `"subject_reference"`<br>`"style_reference"` | Görüntü referans türü seçimi (gelişmiş). Bir referans görüntüsü sağlandığında gereklidir. |
-| `image_fidelity` | FLOAT | Evet | 0.0 - 1.0 | Kullanıcı tarafından yüklenen görüntüler için referans yoğunluğu (varsayılan: 0.5, gelişmiş) |
-| `human_fidelity` | FLOAT | Evet | 0.0 - 1.0 | Konu referans benzerliği (varsayılan: 0.45, gelişmiş) |
-| `model_name` | COMBO | Evet | `"kling-v3"`<br>`"kling-v2"`<br>`"kling-v1-5"` | Görüntü oluşturma için model seçimi (varsayılan: "kling-v3") |
-| `aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Oluşturulan görüntüler için en-boy oranı (varsayılan: "16:9") |
+| `istem` | STRING | Evet | - | Olumlu metin istemi |
+| `negatif_istem` | STRING | Evet | - | Olumsuz metin istemi |
+| `görüntü_türü` | COMBO | Evet | `"subject_reference"`<br>`"style_reference"` | Görüntü referans türü seçimi (gelişmiş). Bir referans görüntüsü sağlandığında gereklidir. |
+| `görüntü_sadakati` | FLOAT | Evet | 0.0 - 1.0 | Kullanıcı tarafından yüklenen görüntüler için referans yoğunluğu (varsayılan: 0.5, gelişmiş) |
+| `insan_sadakati` | FLOAT | Evet | 0.0 - 1.0 | Konu referans benzerliği (varsayılan: 0.45, gelişmiş) |
+| `model_adı` | COMBO | Evet | `"kling-v3"`<br>`"kling-v2"`<br>`"kling-v1-5"` | Görüntü oluşturma için model seçimi (varsayılan: "kling-v3") |
+| `en_boy_oranı` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Oluşturulan görüntüler için en-boy oranı (varsayılan: "16:9") |
 | `n` | INT | Evet | 1 - 9 | Oluşturulan görüntü sayısı (varsayılan: 1) |
-| `image` | IMAGE | Hayır | - | İsteğe bağlı referans görüntüsü |
+| `görüntü` | IMAGE | Hayır | - | İsteğe bağlı referans görüntüsü |
 | `seed` | INT | Hayır | 0 - 2147483647 | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0) |
 
 **Parametre Kısıtlamaları:**

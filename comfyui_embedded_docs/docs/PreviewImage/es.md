@@ -6,7 +6,7 @@ El nodo PreviewImage está diseñado para crear imágenes de vista previa tempor
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `images`  | `IMAGE`     | La entrada 'images' especifica las imágenes que se procesarán y guardarán como imágenes de vista previa temporales. Esta es la entrada principal del nodo, que determina qué imágenes se someterán al proceso de generación de vista previa. |
+| `imagenes`  | `IMAGE`     | La entrada 'images' especifica las imágenes que se procesarán y guardarán como imágenes de vista previa temporales. Esta es la entrada principal del nodo, que determina qué imágenes se someterán al proceso de generación de vista previa. |
 
 ## Salidas
 

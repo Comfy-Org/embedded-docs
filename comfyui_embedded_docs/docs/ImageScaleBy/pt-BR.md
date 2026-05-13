@@ -6,12 +6,12 @@ O nó **ImageScaleBy** foi projetado para redimensionar imagens com base em um f
 
 | Parâmetro       | Tipo de Dado | Descrição                                                                 |
 |-----------------|--------------|---------------------------------------------------------------------------|
-| `image`         | `IMAGE`      | A imagem de entrada a ser redimensionada. Este parâmetro é essencial, pois fornece a imagem base que passará pelo processo de redimensionamento. |
-| `upscale_method`| COMBO[STRING]| Especifica o método de interpolação a ser usado para o redimensionamento. A escolha do método pode afetar a qualidade e as características da imagem redimensionada. |
-| `scale_by`      | `FLOAT`      | O fator pelo qual a imagem será redimensionada. Isso determina o aumento no tamanho da imagem de saída em relação à imagem de entrada. |
+| `imagem`         | `IMAGE`      | A imagem de entrada a ser redimensionada. Este parâmetro é essencial, pois fornece a imagem base que passará pelo processo de redimensionamento. |
+| `método de upscaling`| COMBO[STRING]| Especifica o método de interpolação a ser usado para o redimensionamento. A escolha do método pode afetar a qualidade e as características da imagem redimensionada. |
+| `fator de escala`      | `FLOAT`      | O fator pelo qual a imagem será redimensionada. Isso determina o aumento no tamanho da imagem de saída em relação à imagem de entrada. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dado | Descrição                                                   |
 |-----------|--------------|-------------------------------------------------------------|
-| `image`   | `IMAGE`      | A imagem redimensionada, que é maior que a imagem de entrada de acordo com o fator de escala e o método de interpolação especificados. |
+| `imagem`   | `IMAGE`      | A imagem redimensionada, que é maior que a imagem de entrada de acordo com o fator de escala e o método de interpolação especificados. |

@@ -6,17 +6,17 @@ O nó UNetTemporalAttentionMultiply aplica fatores de multiplicação a diferent
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `model` | MODEL | Sim | - | O modelo de entrada a ser modificado com multiplicadores de atenção |
-| `self_structural` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes estruturais de autoatenção (padrão: 1.0) |
-| `self_temporal` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes temporais de autoatenção (padrão: 1.0) |
-| `cross_structural` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes estruturais de atenção cruzada (padrão: 1.0) |
-| `cross_temporal` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes temporais de atenção cruzada (padrão: 1.0) |
+| `modelo` | MODEL | Sim | - | O modelo de entrada a ser modificado com multiplicadores de atenção |
+| `auto_estrutural` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes estruturais de autoatenção (padrão: 1.0) |
+| `auto_temporal` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes temporais de autoatenção (padrão: 1.0) |
+| `cruzado_estrutural` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes estruturais de atenção cruzada (padrão: 1.0) |
+| `cruzado_temporal` | FLOAT | Não | 0.0 - 10.0 | Multiplicador para componentes temporais de atenção cruzada (padrão: 1.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com pesos de atenção ajustados |
+| `modelo` | MODEL | O modelo modificado com pesos de atenção ajustados |
 
 ---
 **Source fingerprint (SHA-256):** `98d62fb28a0cdf62154ae4e0b672b3a7bcb9ed61186a164a43992263c1f9439a`

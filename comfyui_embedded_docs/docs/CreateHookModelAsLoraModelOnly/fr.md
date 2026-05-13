@@ -6,9 +6,9 @@ Ce nœud crée un hook qui applique un modèle LoRA (Low-Rank Adaptation) pour m
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `ckpt_name` | STRING | Oui | Plusieurs options disponibles | Le fichier de point de contrôle à charger en tant que modèle LoRA. Les options disponibles dépendent du contenu du dossier des points de contrôle. |
-| `strength_model` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour appliquer le LoRA à la composante modèle (par défaut : 1.0) |
-| `prev_hooks` | HOOKS | Non | - | Hooks précédents optionnels à chaîner avec ce hook |
+| `nom_ckpt` | STRING | Oui | Plusieurs options disponibles | Le fichier de point de contrôle à charger en tant que modèle LoRA. Les options disponibles dépendent du contenu du dossier des points de contrôle. |
+| `force_modele` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour appliquer le LoRA à la composante modèle (par défaut : 1.0) |
+| `crochets_precedents` | HOOKS | Non | - | Hooks précédents optionnels à chaîner avec ce hook |
 
 ## Sorties
 

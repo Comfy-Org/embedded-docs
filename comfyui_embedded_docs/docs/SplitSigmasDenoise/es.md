@@ -13,7 +13,7 @@ El nodo SplitSigmasDenoise divide una secuencia de valores sigma en dos partes b
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `high_sigmas` | SIGMAS | La primera parte de la secuencia sigma que contiene valores sigma más altos |
+| `sigmas_bajos` | SIGMAS | La primera parte de la secuencia sigma que contiene valores sigma más altos |
 | `low_sigmas` | SIGMAS | La segunda parte de la secuencia sigma que contiene valores sigma más bajos |
 
 ---

@@ -6,16 +6,16 @@ StableCascade_EmptyLatentImage 节点用于为 Stable Cascade 模型创建空的
 
 | 参数 | 数据类型 | 必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | 是 | 256 至 MAX_RESOLUTION | 输出图像的宽度（像素），默认值：1024，步长：8 |
-| `height` | INT | 是 | 256 至 MAX_RESOLUTION | 输出图像的高度（像素），默认值：1024，步长：8 |
-| `compression` | INT | 是 | 4 至 128 | 决定阶段 C 潜空间维度的压缩因子，默认值：42，步长：1 |
-| `batch_size` | INT | 否 | 1 至 4096 | 每批生成的潜空间样本数量，默认值：1 |
+| `宽度` | INT | 是 | 256 至 MAX_RESOLUTION | 输出图像的宽度（像素），默认值：1024，步长：8 |
+| `高度` | INT | 是 | 256 至 MAX_RESOLUTION | 输出图像的高度（像素），默认值：1024，步长：8 |
+| `压缩` | INT | 是 | 4 至 128 | 决定阶段 C 潜空间维度的压缩因子，默认值：42，步长：1 |
+| `批量大小` | INT | 否 | 1 至 4096 | 每批生成的潜空间样本数量，默认值：1 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `stage_c` | LATENT | 阶段 C 的潜空间张量，维度为 [batch_size, 16, height//compression, width//compression] |
+| `阶段B` | LATENT | 阶段 C 的潜空间张量，维度为 [batch_size, 16, height//compression, width//compression] |
 | `stage_b` | LATENT | 阶段 B 的潜空间张量，维度为 [batch_size, 4, height//4, width//4] |
 
 ---

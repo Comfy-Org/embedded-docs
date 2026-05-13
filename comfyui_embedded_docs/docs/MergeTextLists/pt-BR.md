@@ -8,7 +8,7 @@ Este nó mescla múltiplas listas de texto em uma única lista combinada. Ele fo
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `texts` | STRING | Sim | N/A | As listas de texto a serem mescladas. Múltiplas listas podem ser conectadas à entrada e serão concatenadas em uma única lista. |
+| `textos` | STRING | Sim | N/A | As listas de texto a serem mescladas. Múltiplas listas podem ser conectadas à entrada e serão concatenadas em uma única lista. |
 
 **Observação:** Este nó é configurado como um processo de grupo (`is_group_process = True`), o que significa que ele gerencia automaticamente múltiplas entradas de lista, concatenando-as antes que a função principal de processamento seja executada.
 
@@ -16,7 +16,7 @@ Este nó mescla múltiplas listas de texto em uma única lista combinada. Ele fo
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `texts` | STRING | A única lista mesclada contendo todos os textos de entrada. |
+| `textos` | STRING | A única lista mesclada contendo todos os textos de entrada. |
 
 ---
 **Source fingerprint (SHA-256):** `043a39a373d03f1ff79dd0746070171bab4d5d915c985e4e64fd35f802b09f69`

@@ -6,11 +6,11 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 将从中移除背景的输入图像。 |
-| `moderation` | COMBO | 否 | `"false"`<br>`"true"` | 审核设置。当设置为 `"true"` 时，将提供额外的审核选项。 |
-| `visual_input_moderation` | BOOLEAN | 否 | - | 对输入图像启用视觉内容审核。此参数仅在 `moderation` 设置为 `"true"` 时可用。默认值：`False`。 |
-| `visual_output_moderation` | BOOLEAN | 否 | - | 对输出图像启用视觉内容审核。此参数仅在 `moderation` 设置为 `"true"` 时可用。默认值：`True`。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 控制节点是否应重新运行的种子值。无论种子值如何，结果都是非确定性的。默认值：`0`。 |
+| `图像` | IMAGE | 是 | - | 将从中移除背景的输入图像。 |
+| `内容审核` | COMBO | 否 | `"false"`<br>`"true"` | 审核设置。当设置为 `"true"` 时，将提供额外的审核选项。 |
+| `visual_input_moderation` | BOOLEAN | 否 | - | 对输入图像启用视觉内容审核。此参数仅在 `内容审核` 设置为 `"true"` 时可用。默认值：`False`。 |
+| `visual_output_moderation` | BOOLEAN | 否 | - | 对输出图像启用视觉内容审核。此参数仅在 `内容审核` 设置为 `"true"` 时可用。默认值：`True`。 |
+| `种子` | INT | 否 | 0 到 2147483647 | 控制节点是否应重新运行的种子值。无论种子值如何，结果都是非确定性的。默认值：`0`。 |
 
 **注意：** `visual_input_moderation` 和 `visual_output_moderation` 参数依赖于 `moderation` 参数。它们仅在 `moderation` 设置为 `"true"` 时处于活动状态且为必填项。
 
@@ -18,7 +18,7 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 已移除背景的处理后图像。 |
+| `图像` | IMAGE | 已移除背景的处理后图像。 |
 
 ---
 **Source fingerprint (SHA-256):** `2b2dd3ca0d026af1a2bf3f7222165928527b05b65817073b50230ff18d39bc6c`

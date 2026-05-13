@@ -20,8 +20,8 @@ VOIDInpaintConditioning 节点用于准备 CogVideoX 模型进行修复所需的
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 已添加修复潜在信息的正向 conditioning |
-| `negative` | CONDITIONING | 已添加修复潜在信息的负向 conditioning |
+| `negative` | CONDITIONING | 已添加修复潜在信息的正向 conditioning |
+| `latent` | CONDITIONING | 已添加修复潜在信息的负向 conditioning |
 | `latent` | LATENT | 形状为 [batch_size, 16, latent_t, latent_h, latent_w] 的零填充噪声潜在张量 |
 
 ---

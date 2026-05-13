@@ -6,10 +6,10 @@ Le nœud `BasicScheduler` est conçu pour calculer une séquence de valeurs sigm
 
 | Paramètre   | Type de données | Type d'entrée | Valeur par défaut | Plage     | Description Métaphorique           | Objectif Technique            |
 | ----------- | --------------- | ------------- | ----------------- | --------- | ---------------------------------- | ----------------------------- |
-| `model`     | MODEL           | Entrée        | -                 | -         | **Type de toile** : Différents matériaux de toile nécessitent différentes formules de peinture | Objet modèle de diffusion, détermine la base de calcul des sigma |
-| `scheduler` | COMBO[STRING]   | Widget        | -                 | 9 options | **Technique de mélange** : Choisir comment la concentration de peinture change | Algorithme de planification, contrôle le mode de décroissance du bruit |
-| `steps`     | INT             | Widget        | 20                | 1-10000   | **Nombre de mélanges** : Précision entre 20 mélanges et 50 mélanges | Étapes d'échantillonnage, affecte la qualité et la vitesse de génération |
-| `denoise`   | FLOAT           | Widget        | 1.0               | 0.0-1.0   | **Intensité de création** : Contrôle le niveau, du réglage fin à la repeinture | Force de débruitage, prend en charge les scénarios de repeinture partielle |
+| `modèle`     | MODEL           | Entrée        | -                 | -         | **Type de toile** : Différents matériaux de toile nécessitent différentes formules de peinture | Objet modèle de diffusion, détermine la base de calcul des sigma |
+| `planificateur` | COMBO[STRING]   | Widget        | -                 | 9 options | **Technique de mélange** : Choisir comment la concentration de peinture change | Algorithme de planification, contrôle le mode de décroissance du bruit |
+| `étapes`     | INT             | Widget        | 20                | 1-10000   | **Nombre de mélanges** : Précision entre 20 mélanges et 50 mélanges | Étapes d'échantillonnage, affecte la qualité et la vitesse de génération |
+| `débruitage`   | FLOAT           | Widget        | 1.0               | 0.0-1.0   | **Intensité de création** : Contrôle le niveau, du réglage fin à la repeinture | Force de débruitage, prend en charge les scénarios de repeinture partielle |
 
 ### Types de planificateurs
 

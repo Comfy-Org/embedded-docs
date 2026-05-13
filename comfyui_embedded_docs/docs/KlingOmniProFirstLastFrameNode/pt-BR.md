@@ -14,8 +14,8 @@ Este nó utiliza o modelo mais recente da Kling AI para gerar um vídeo a partir
 | `reference_images` | IMAGE | Não | - | Até 6 imagens de referência adicionais. |
 | `resolution` | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` | A resolução de saída para o vídeo gerado (padrão: "1080p"). |
 | `storyboards` | DYNAMIC_COMBO | Não | `"desativado"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando ativado, cada storyboard requer um prompt e uma duração. |
-| `generate_audio` | BOOLEAN | Não | Verdadeiro / Falso | Gera áudio para o vídeo (padrão: Falso). Suportado apenas para `kling-v3-omni`. |
-| `seed` | INT | Não | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 0). |
+| `gerar_áudio` | BOOLEAN | Não | Verdadeiro / Falso | Gera áudio para o vídeo (padrão: Falso). Suportado apenas para `kling-v3-omni`. |
+| `semente` | INT | Não | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 0). |
 
 **Restrições Importantes:**
 

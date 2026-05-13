@@ -34,14 +34,14 @@ Este nodo implementa el método de Escalado Épsilon del artículo de investigac
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al cual se le aplicará el parche de escalado épsilon. |
-| `scaling_factor` | FLOAT | No | 0.5 - 1.5 | El factor por el cual se escala el ruido predicho. Un valor mayor que 1.0 reduce el ruido, mientras que un valor menor que 1.0 lo aumenta (valor predeterminado: 1.005). |
+| `modelo` | MODEL | Sí | - | El modelo al cual se le aplicará el parche de escalado épsilon. |
+| `factor_escala` | FLOAT | No | 0.5 - 1.5 | El factor por el cual se escala el ruido predicho. Un valor mayor que 1.0 reduce el ruido, mientras que un valor menor que 1.0 lo aumenta (valor predeterminado: 1.005). |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | Una versión parcheada del modelo de entrada con la función de escalado épsilon aplicada a su proceso de muestreo. |
+| `modelo` | MODEL | Una versión parcheada del modelo de entrada con la función de escalado épsilon aplicada a su proceso de muestreo. |
 
 ---
 **Source fingerprint (SHA-256):** `85c464ce0b2ec2a031a01d9eef5d50fd300be3012499cc061705fb7964110882`

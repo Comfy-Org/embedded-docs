@@ -7,7 +7,7 @@ El nodo **Añadir Prefijo de Texto** modifica un texto añadiendo una cadena esp
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `text` | STRING | Sí | | El texto al que se le añadirá el prefijo. |
-| `prefix` | STRING | No | | La cadena que se añadirá al inicio del texto (por defecto: ""). |
+| `prefijo` | STRING | No | | La cadena que se añadirá al inicio del texto (por defecto: ""). |
 
 ## Salidas
 

@@ -6,8 +6,8 @@ Le nœud SaveVideo enregistre le contenu vidéo d’entrée dans votre répertoi
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | - | La vidéo à sauvegarder. |
-| `filename_prefix` | STRING | Non | - | Le préfixe pour le fichier à sauvegarder. Peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant de nœuds (par défaut : "video/ComfyUI"). |
+| `vidéo` | VIDEO | Oui | - | La vidéo à sauvegarder. |
+| `préfixe_nom_fichier` | STRING | Non | - | Le préfixe pour le fichier à sauvegarder. Peut inclure des informations de formatage telles que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` pour inclure des valeurs provenant de nœuds (par défaut : "video/ComfyUI"). |
 | `format` | COMBO | Non | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` | Le format de sauvegarde de la vidéo (par défaut : "auto"). |
 | `codec` | COMBO | Non | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` | Le codec à utiliser pour la vidéo (par défaut : "auto"). |
 

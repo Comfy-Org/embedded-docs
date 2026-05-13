@@ -6,7 +6,7 @@ Le nœud Custom Combo vous permet de créer un menu déroulant personnalisé ave
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `choice` | COMBO | Oui | Défini par l'utilisateur | L'option textuelle sélectionnée dans le menu déroulant personnalisé. La liste des options disponibles est définie par l'utilisateur dans l'interface utilisateur du nœud. |
+| `choix` | COMBO | Oui | Défini par l'utilisateur | L'option textuelle sélectionnée dans le menu déroulant personnalisé. La liste des options disponibles est définie par l'utilisateur dans l'interface utilisateur du nœud. |
 | `index` | INT | Non | 0 | Une valeur entière pouvant être utilisée pour spécifier un index. Valeur par défaut : 0. |
 
 **Remarque :** La validation de l'entrée de ce nœud est intentionnellement désactivée. Cela vous permet de définir toutes les options textuelles personnalisées souhaitées dans l'interface utilisateur sans que le backend ne vérifie si votre sélection provient d'une liste prédéfinie.
@@ -15,7 +15,7 @@ Le nœud Custom Combo vous permet de créer un menu déroulant personnalisé ave
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `STRING` | STRING | La chaîne de caractères correspondant à l'option sélectionnée dans la zone de liste déroulante personnalisée. |
+| `INDEX` | STRING | La chaîne de caractères correspondant à l'option sélectionnée dans la zone de liste déroulante personnalisée. |
 | `INDEX` | INT | La position d'index de l'option sélectionnée dans la liste déroulante. |
 
 ---

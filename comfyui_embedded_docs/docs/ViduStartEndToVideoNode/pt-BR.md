@@ -6,14 +6,14 @@ O nó Vidu Start End To Video Generation cria um vídeo gerando quadros entre um
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"viduq1"` | Nome do modelo |
-| `first_frame` | IMAGE | Sim | - | Quadro inicial |
-| `end_frame` | IMAGE | Sim | - | Quadro final |
+| `modelo` | COMBO | Sim | `"viduq1"` | Nome do modelo |
+| `quadro inicial` | IMAGE | Sim | - | Quadro inicial |
+| `quadro final` | IMAGE | Sim | - | Quadro final |
 | `prompt` | STRING | Não | - | Uma descrição textual para a geração do vídeo |
-| `duration` | INT | Não | 5-5 | Duração do vídeo de saída em segundos (padrão: 5, fixado em 5 segundos) |
-| `seed` | INT | Não | 0-2147483647 | Semente para a geração do vídeo (0 para aleatório) (padrão: 0) |
-| `resolution` | COMBO | Não | `"1080p"` | Os valores suportados podem variar conforme o modelo e a duração (padrão: "1080p") |
-| `movement_amplitude` | COMBO | Não | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | A amplitude de movimento dos objetos no quadro (padrão: "auto") |
+| `duração` | INT | Não | 5-5 | Duração do vídeo de saída em segundos (padrão: 5, fixado em 5 segundos) |
+| `semente` | INT | Não | 0-2147483647 | Semente para a geração do vídeo (0 para aleatório) (padrão: 0) |
+| `resolução` | COMBO | Não | `"1080p"` | Os valores suportados podem variar conforme o modelo e a duração (padrão: "1080p") |
+| `amplitude de movimento` | COMBO | Não | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | A amplitude de movimento dos objetos no quadro (padrão: "auto") |
 
 **Observação:** Os quadros inicial e final devem ter proporções de aspecto compatíveis (validadas com tolerância de proporção min_rel=0,8, max_rel=1,25).
 

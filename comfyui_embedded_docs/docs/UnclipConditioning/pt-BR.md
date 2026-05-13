@@ -6,13 +6,13 @@ Este nó foi projetado para integrar as saídas de visão do CLIP no processo de
 
 | Parâmetro              | Tipo Comfy            | Descrição |
 |------------------------|------------------------|-------------|
-| `conditioning`         | `CONDITIONING`         | Os dados de condicionamento base aos quais as saídas de visão do CLIP serão adicionadas, servindo como base para modificações posteriores. |
+| `condicionamento`         | `CONDITIONING`         | Os dados de condicionamento base aos quais as saídas de visão do CLIP serão adicionadas, servindo como base para modificações posteriores. |
 | `clip_vision_output`   | `CLIP_VISION_OUTPUT`   | A saída de um modelo de visão CLIP, fornecendo contexto visual que é integrado ao condicionamento. |
-| `strength`             | `FLOAT`                | Determina a intensidade da influência da saída de visão do CLIP sobre o condicionamento. |
-| `noise_augmentation`   | `FLOAT`                | Especifica o nível de aumento de ruído a ser aplicado à saída de visão do CLIP antes de integrá-la ao condicionamento. |
+| `força`             | `FLOAT`                | Determina a intensidade da influência da saída de visão do CLIP sobre o condicionamento. |
+| `aumento_ruído`   | `FLOAT`                | Especifica o nível de aumento de ruído a ser aplicado à saída de visão do CLIP antes de integrá-la ao condicionamento. |
 
 ## Saídas
 
 | Parâmetro             | Tipo Comfy            | Descrição |
 |-----------------------|------------------------|-------------|
-| `conditioning`         | `CONDITIONING`         | Os dados de condicionamento enriquecidos, agora contendo saídas de visão do CLIP integradas com intensidade e aumento de ruído aplicados. |
+| `condicionamento`         | `CONDITIONING`         | Os dados de condicionamento enriquecidos, agora contendo saídas de visão do CLIP integradas com intensidade e aumento de ruído aplicados. |

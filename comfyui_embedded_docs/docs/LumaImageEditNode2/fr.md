@@ -11,9 +11,9 @@ Ce nœud modifie une image existante à l'aide d'une invite textuelle, propulsé
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `source` | IMAGE | Oui | - | Image source à modifier. |
-| `prompt` | STRING | Oui | 1–6000 caractères | Description de la modification souhaitée. Par défaut : "" (chaîne vide). |
-| `model` | MODEL | Oui | `"uni-1"`<br>`"uni-1-max"` | Modèle à utiliser pour la modification. |
-| `seed` | INT | Oui | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. |
+| `invite` | STRING | Oui | 1–6000 caractères | Description de la modification souhaitée. Par défaut : "" (chaîne vide). |
+| `modèle` | MODEL | Oui | `"uni-1"`<br>`"uni-1-max"` | Modèle à utiliser pour la modification. |
+| `graine` | INT | Oui | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. |
 
 **Contraintes des paramètres :**
 - Le `prompt` doit avoir une longueur comprise entre 1 et 6000 caractères.

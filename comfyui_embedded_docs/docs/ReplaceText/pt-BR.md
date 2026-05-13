@@ -7,14 +7,14 @@ O nó Replace Text realiza uma substituição simples de texto. Ele procura por 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `text` | STRING | Sim | - | O texto a ser processado. |
-| `find` | STRING | Sim | - | Texto a ser encontrado (padrão: string vazia). |
-| `replace` | STRING | Sim | - | Texto para substituir (padrão: string vazia). |
+| `procurar` | STRING | Sim | - | Texto a ser encontrado (padrão: string vazia). |
+| `substituir` | STRING | Sim | - | Texto para substituir (padrão: string vazia). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `text` | STRING | O texto processado com todas as ocorrências do texto `find` substituídas pelo texto `replace`. |
+| `text` | STRING | O texto processado com todas as ocorrências do texto `procurar` substituídas pelo texto `substituir`. |
 
 ---
 **Source fingerprint (SHA-256):** `e9d4681e638c5ca2732ec254282243e9e9cdd01cc985af8bbfa41dea208cb7dd`

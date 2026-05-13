@@ -10,13 +10,13 @@ Rastrea objetos a través de fotogramas de video utilizando el rastreador basado
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `images` | IMAGE | Sí | Fotogramas de video por lotes | Fotogramas de video como imágenes por lotes |
-| `model` | MODEL | Sí | Modelo SAM3 | El modelo SAM3 a utilizar para el rastreo |
-| `initial_mask` | MASK | No | Una máscara por objeto | Máscara(s) para el primer fotograma a rastrear (una por objeto). Obligatorio si no se proporciona `conditioning`. |
-| `conditioning` | CONDITIONING | No | Condicionamiento de texto | Condicionamiento de texto para detectar nuevos objetos durante el rastreo. Obligatorio si no se proporciona `initial_mask`. |
-| `detection_threshold` | FLOAT | No | 0.0 a 1.0 (predeterminado: 0.5) | Umbral de puntuación para la detección mediante indicaciones de texto |
-| `max_objects` | INT | No | 0 a 64 (predeterminado: 0) | Máximo de objetos rastreados. Las máscaras iniciales cuentan para este límite. 0 usa el límite interno de 64. |
-| `detect_interval` | INT | No | 1 a ilimitado (predeterminado: 1) | Ejecutar detección cada N fotogramas (1=cada fotograma). Los valores más altos ahorran cómputo. |
+| `imágenes` | IMAGE | Sí | Fotogramas de video por lotes | Fotogramas de video como imágenes por lotes |
+| `modelo` | MODEL | Sí | Modelo SAM3 | El modelo SAM3 a utilizar para el rastreo |
+| `máscara_inicial` | MASK | No | Una máscara por objeto | Máscara(s) para el primer fotograma a rastrear (una por objeto). Obligatorio si no se proporciona `condicionamiento`. |
+| `condicionamiento` | CONDITIONING | No | Condicionamiento de texto | Condicionamiento de texto para detectar nuevos objetos durante el rastreo. Obligatorio si no se proporciona `máscara_inicial`. |
+| `umbral_de_detección` | FLOAT | No | 0.0 a 1.0 (predeterminado: 0.5) | Umbral de puntuación para la detección mediante indicaciones de texto |
+| `máx_objetos` | INT | No | 0 a 64 (predeterminado: 0) | Máximo de objetos rastreados. Las máscaras iniciales cuentan para este límite. 0 usa el límite interno de 64. |
+| `intervalo_de_detección` | INT | No | 1 a ilimitado (predeterminado: 1) | Ejecutar detección cada N fotogramas (1=cada fotograma). Los valores más altos ahorran cómputo. |
 
 **Nota:** Se debe proporcionar `initial_mask` o `conditioning`. Si se omiten ambos, el nodo generará un error.
 

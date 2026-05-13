@@ -6,14 +6,14 @@ Le nœud **Obtenir les composants vidéo** extrait tous les éléments principau
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | - | La vidéo dont extraire les composants. |
+| `vidéo` | VIDEO | Oui | - | La vidéo dont extraire les composants. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `images` | IMAGE | Les images individuelles extraites de la vidéo sous forme d'images séparées. |
-| `audio` | AUDIO | La piste audio extraite de la vidéo. |
+| `audio` | IMAGE | Les images individuelles extraites de la vidéo sous forme d'images séparées. |
+| `ips` | AUDIO | La piste audio extraite de la vidéo. |
 | `fps` | FLOAT | La fréquence d'images de la vidéo en images par seconde. |
 
 ---

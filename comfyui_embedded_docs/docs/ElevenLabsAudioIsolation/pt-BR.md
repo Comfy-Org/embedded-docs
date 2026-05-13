@@ -8,13 +8,13 @@ O nó de Isolamento de Voz ElevenLabs remove o ruído de fundo de um arquivo de 
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | | Áudio a ser processado para remoção de ruído de fundo. |
+| `áudio` | AUDIO | Sim | | Áudio a ser processado para remoção de ruído de fundo. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `audio` | AUDIO | O áudio processado com o ruído de fundo removido. |
+| `áudio` | AUDIO | O áudio processado com o ruído de fundo removido. |
 
 ---
 **Source fingerprint (SHA-256):** `eca7919ff853fe48f8419a4135a99589e350d3d113631e27f6e7cb3cbb3faa3b`

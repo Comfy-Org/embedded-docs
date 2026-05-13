@@ -11,11 +11,11 @@ Remplace l'arrière-plan d'une image en fonction d'une invite textuelle. Ce nœu
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à traiter |
-| `prompt` | STRING | Oui | - | Invite pour la génération de l'image (par défaut : vide) |
+| `invite` | STRING | Oui | - | Invite pour la génération de l'image (par défaut : vide) |
 | `n` | INT | Oui | 1-6 | Le nombre d'images à générer (par défaut : 1) |
-| `seed` | INT | Oui | 0-18446744073709551615 | Graine déterminant si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
+| `graine` | INT | Oui | 0-18446744073709551615 | Graine déterminant si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
 | `recraft_style` | STYLEV3 | Non | - | Sélection facultative du style pour l'arrière-plan généré. Si non fourni, utilise par défaut le style "realistic_image" |
-| `negative_prompt` | STRING | Non | - | Description textuelle facultative des éléments indésirables sur une image (par défaut : vide) |
+| `invite négative` | STRING | Non | - | Description textuelle facultative des éléments indésirables sur une image (par défaut : vide) |
 
 **Remarque :** Le paramètre `seed` contrôle le moment où le nœud se réexécute mais ne garantit pas des résultats déterministes en raison de la nature de l'API externe.
 

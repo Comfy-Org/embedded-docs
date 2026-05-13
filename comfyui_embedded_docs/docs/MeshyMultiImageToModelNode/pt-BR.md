@@ -8,18 +8,18 @@ Este nó utiliza a API Meshy para gerar um modelo 3D a partir de múltiplas imag
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `model` | COMBO | Sim | `"latest"` | Especifica a versão do modelo de IA a ser utilizada. |
-| `images` | IMAGE | Sim | 2 a 4 imagens | Um conjunto de imagens usado para gerar o modelo 3D. Você deve fornecer entre 2 e 4 imagens. |
-| `should_remesh` | COMBO | Sim | `"true"`<br>`"false"` | Determina se a malha gerada deve ser processada. Quando definido como `"false"`, o nó retorna uma malha triangular não processada. |
-| `topology` | COMBO | Não | `"triangle"`<br>`"quad"` | O tipo de polígono alvo para a saída remalhada. Este parâmetro está disponível e é obrigatório apenas quando `should_remesh` está definido como `"true"`. |
-| `target_polycount` | INT | Não | 100 a 300000 | O número alvo de polígonos para o modelo remalhado (padrão: 300000). Este parâmetro está disponível apenas quando `should_remesh` está definido como `"true"`. |
-| `symmetry_mode` | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` | Controla se a simetria é aplicada ao modelo gerado. |
-| `should_texture` | COMBO | Sim | `"true"`<br>`"false"` | Determina se as texturas são geradas. Definir como `"false"` pula a fase de texturização e retorna uma malha sem texturas. |
-| `enable_pbr` | BOOLEAN | Não | Verdadeiro / Falso | Quando `should_texture` é `"true"`, esta opção gera Mapas PBR (metálico, rugosidade, normal) além da cor base (padrão: Falso). |
-| `texture_prompt` | STRING | Não | - | Um prompt de texto para guiar o processo de texturização (máximo de 600 caracteres). Não pode ser usado ao mesmo tempo que `texture_image`. Este parâmetro está disponível apenas quando `should_texture` está definido como `"true"`. |
-| `texture_image` | IMAGE | Não | - | Uma imagem para guiar o processo de texturização. Apenas um dos parâmetros `texture_image` ou `texture_prompt` pode ser usado por vez. Este parâmetro está disponível apenas quando `should_texture` está definido como `"true"`. |
-| `pose_mode` | COMBO | Sim | `""` (vazio)<br>`"A-pose"`<br>`"T-pose"` | Especifica o modo de pose para o modelo gerado. |
-| `seed` | INT | Sim | 0 a 2147483647 | Um valor de semente para o processo de geração (padrão: 0). Os resultados são não determinísticos independentemente da semente, mas alterar a semente pode fazer com que o nó seja executado novamente. |
+| `modelo` | COMBO | Sim | `"latest"` | Especifica a versão do modelo de IA a ser utilizada. |
+| `imagens` | IMAGE | Sim | 2 a 4 imagens | Um conjunto de imagens usado para gerar o modelo 3D. Você deve fornecer entre 2 e 4 imagens. |
+| `refazer_malha` | COMBO | Sim | `"true"`<br>`"false"` | Determina se a malha gerada deve ser processada. Quando definido como `"false"`, o nó retorna uma malha triangular não processada. |
+| `topology` | COMBO | Não | `"triangle"`<br>`"quad"` | O tipo de polígono alvo para a saída remalhada. Este parâmetro está disponível e é obrigatório apenas quando `refazer_malha` está definido como `"true"`. |
+| `target_polycount` | INT | Não | 100 a 300000 | O número alvo de polígonos para o modelo remalhado (padrão: 300000). Este parâmetro está disponível apenas quando `refazer_malha` está definido como `"true"`. |
+| `modo_de_simetria` | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` | Controla se a simetria é aplicada ao modelo gerado. |
+| `gerar_textura` | COMBO | Sim | `"true"`<br>`"false"` | Determina se as texturas são geradas. Definir como `"false"` pula a fase de texturização e retorna uma malha sem texturas. |
+| `enable_pbr` | BOOLEAN | Não | Verdadeiro / Falso | Quando `gerar_textura` é `"true"`, esta opção gera Mapas PBR (metálico, rugosidade, normal) além da cor base (padrão: Falso). |
+| `texture_prompt` | STRING | Não | - | Um prompt de texto para guiar o processo de texturização (máximo de 600 caracteres). Não pode ser usado ao mesmo tempo que `texture_image`. Este parâmetro está disponível apenas quando `gerar_textura` está definido como `"true"`. |
+| `texture_image` | IMAGE | Não | - | Uma imagem para guiar o processo de texturização. Apenas um dos parâmetros `texture_image` ou `texture_prompt` pode ser usado por vez. Este parâmetro está disponível apenas quando `gerar_textura` está definido como `"true"`. |
+| `modo_de_pose` | COMBO | Sim | `""` (vazio)<br>`"A-pose"`<br>`"T-pose"` | Especifica o modo de pose para o modelo gerado. |
+| `semente` | INT | Sim | 0 a 2147483647 | Um valor de semente para o processo de geração (padrão: 0). Os resultados são não determinísticos independentemente da semente, mas alterar a semente pode fazer com que o nó seja executado novamente. |
 
 **Restrições dos Parâmetros:**
 

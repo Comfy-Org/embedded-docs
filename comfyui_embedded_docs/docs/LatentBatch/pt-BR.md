@@ -6,8 +6,8 @@ O nó **LatentBatch** é projetado para mesclar dois conjuntos de amostras laten
 
 | Parâmetro   | Tipo de Dado | Descrição |
 |-------------|--------------|-----------|
-| `samples1`  | `LATENT`     | O primeiro conjunto de amostras latentes a ser mesclado. Ele desempenha um papel crucial na determinação da forma final do lote mesclado. |
-| `samples2`  | `LATENT`     | O segundo conjunto de amostras latentes a ser mesclado. Se suas dimensões diferirem do primeiro conjunto, ele é redimensionado para garantir compatibilidade antes da mesclagem. |
+| `amostras1`  | `LATENT`     | O primeiro conjunto de amostras latentes a ser mesclado. Ele desempenha um papel crucial na determinação da forma final do lote mesclado. |
+| `amostras2`  | `LATENT`     | O segundo conjunto de amostras latentes a ser mesclado. Se suas dimensões diferirem do primeiro conjunto, ele é redimensionado para garantir compatibilidade antes da mesclagem. |
 
 ## Saídas
 

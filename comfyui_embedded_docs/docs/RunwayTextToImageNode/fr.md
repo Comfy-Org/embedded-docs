@@ -6,9 +6,9 @@ Le nœud Runway Text to Image génère des images à partir de descriptions text
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | - | Description textuelle pour la génération (par défaut : "") |
+| `invite` | STRING | Oui | - | Description textuelle pour la génération (par défaut : "") |
 | `ratio` | COMBO | Oui | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Format d'image pour l'image générée |
-| `reference_image` | IMAGE | Non | - | Image de référence optionnelle pour guider la génération |
+| `image_référence` | IMAGE | Non | - | Image de référence optionnelle pour guider la génération |
 
 **Remarque :** L'image de référence ne doit pas dépasser 7999x7999 pixels et doit avoir un format d'image compris entre 0,5 et 2,0. Lorsqu'une image de référence est fournie, elle guide le processus de génération d'image.
 

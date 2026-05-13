@@ -6,14 +6,14 @@ O nó FluxKontextMultiReferenceLatentMethod modifica dados de condicionamento de
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `conditioning` | CONDITIONING | Sim | - | Os dados de condicionamento a serem modificados com o método de latentes de referência |
-| `reference_latents_method` | STRING | Sim | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | O método a ser usado para processamento de latentes de referência. Se "uxo" ou "uso" for selecionado, será convertido para "uxo". Este parâmetro é marcado como avançado. |
+| `condicionamento` | CONDITIONING | Sim | - | Os dados de condicionamento a serem modificados com o método de latentes de referência |
+| `método_de_latent_de_referência` | STRING | Sim | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | O método a ser usado para processamento de latentes de referência. Se "uxo" ou "uso" for selecionado, será convertido para "uxo". Este parâmetro é marcado como avançado. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `conditioning` | CONDITIONING | Os dados de condicionamento modificados com o método de latentes de referência aplicado |
+| `condicionamento` | CONDITIONING | Os dados de condicionamento modificados com o método de latentes de referência aplicado |
 
 ---
 **Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

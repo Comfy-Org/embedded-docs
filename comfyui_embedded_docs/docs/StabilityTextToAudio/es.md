@@ -6,11 +6,11 @@ Genera música y efectos de sonido de alta calidad a partir de descripciones tex
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"stable-audio-2.5"` | El modelo de generación de audio a utilizar (predeterminado: "stable-audio-2.5") |
+| `modelo` | COMBO | Sí | `"stable-audio-2.5"` | El modelo de generación de audio a utilizar (predeterminado: "stable-audio-2.5") |
 | `prompt` | STRING | Sí | - | La descripción textual utilizada para generar contenido de audio (predeterminado: cadena vacía) |
-| `duration` | INT | No | 1-190 | Controla la duración en segundos del audio generado (predeterminado: 190) |
-| `seed` | INT | No | 0-4294967294 | La semilla aleatoria utilizada para la generación (predeterminado: 0) |
-| `steps` | INT | No | 4-8 | Controla el número de pasos de muestreo (predeterminado: 8) |
+| `duración` | INT | No | 1-190 | Controla la duración en segundos del audio generado (predeterminado: 190) |
+| `semilla` | INT | No | 0-4294967294 | La semilla aleatoria utilizada para la generación (predeterminado: 0) |
+| `pasos` | INT | No | 4-8 | Controla el número de pasos de muestreo (predeterminado: 8) |
 
 ## Salidas
 

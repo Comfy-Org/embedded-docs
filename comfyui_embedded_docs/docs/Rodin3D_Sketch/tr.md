@@ -6,14 +6,14 @@ Bu düğüm, Rodin API'sini kullanarak 3D varlıklar oluşturur. Giriş görünt
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Evet | - | 3D modellere dönüştürülecek giriş görüntüleri. Birden fazla görüntü sağlanabilir. |
-| `Seed` | INT | Hayır | 0-65535 | Oluşturma için rastgele tohum değeri (varsayılan: 0). Rastgele tohum için 0 olarak ayarlayın. |
+| `Görseller` | IMAGE | Evet | - | 3D modellere dönüştürülecek giriş görüntüleri. Birden fazla görüntü sağlanabilir. |
+| `Tohum` | INT | Hayır | 0-65535 | Oluşturma için rastgele tohum değeri (varsayılan: 0). Rastgele tohum için 0 olarak ayarlayın. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `3D Model Yolu` | STRING | Oluşturulan 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | STRING | Oluşturulan 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için) |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan 3D model |
 
 ---

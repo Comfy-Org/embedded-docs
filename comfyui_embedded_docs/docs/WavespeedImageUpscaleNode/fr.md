@@ -8,9 +8,9 @@ Le nœud WaveSpeed Image Upscale utilise un service d'IA externe pour augmenter 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | STRING | Oui | `"SeedVR2"`<br>`"Ultimate"` | Le modèle d'IA à utiliser pour l'agrandissement. "SeedVR2" et "Ultimate" offrent différents niveaux de qualité et de tarification. |
+| `modèle` | STRING | Oui | `"SeedVR2"`<br>`"Ultimate"` | Le modèle d'IA à utiliser pour l'agrandissement. "SeedVR2" et "Ultimate" offrent différents niveaux de qualité et de tarification. |
 | `image` | IMAGE | Oui | | L'image d'entrée à agrandir. |
-| `target_resolution` | STRING | Oui | `"2K"`<br>`"4K"`<br>`"8K"` | La résolution de sortie souhaitée pour l'image agrandie. |
+| `résolution cible` | STRING | Oui | `"2K"`<br>`"4K"`<br>`"8K"` | La résolution de sortie souhaitée pour l'image agrandie. |
 
 **Remarque :** Ce nœud nécessite exactement une image en entrée. La fourniture d'un lot d'images entraînera une erreur.
 

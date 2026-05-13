@@ -6,7 +6,7 @@ O nó KSamplerSelect foi projetado para selecionar um sampler específico com ba
 
 | Parâmetro         | Tipo de Dado | Descrição                                                                                      |
 |-------------------|--------------|------------------------------------------------------------------------------------------------|
-| `sampler_name`    | COMBO[STRING] | Especifica o nome do sampler a ser selecionado. Este parâmetro determina qual estratégia de amostragem será utilizada, impactando o comportamento geral da amostragem e os resultados. |
+| `nome_do_sampler`    | COMBO[STRING] | Especifica o nome do sampler a ser selecionado. Este parâmetro determina qual estratégia de amostragem será utilizada, impactando o comportamento geral da amostragem e os resultados. |
 
 ## Saídas
 

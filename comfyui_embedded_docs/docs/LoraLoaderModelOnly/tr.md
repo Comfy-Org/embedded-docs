@@ -9,8 +9,8 @@ Bu düğüm, bir CLIP modeli gerektirmeden bir LoRA modeli yükleme konusunda uz
 | Alan               | Comfy Veri Türü   | Açıklama                                                                                   |
 |-------------------|-------------------|-----------------------------------------------------------------------------------------------|
 | `model`           | `MODEL`           | Değişiklikler için temel model; LoRA ayarlamaları bu modele uygulanacaktır.                   |
-| `lora_name`       | `COMBO[STRING]`   | Yüklenecek LoRA dosyasının adı; modele uygulanacak ayarlamaları belirtir.      |
-| `strength_model`  | `FLOAT`           | LoRA ayarlamalarının yoğunluğunu belirler; daha yüksek değerler daha güçlü değişiklikleri ifade eder. |
+| `lora_adı`       | `COMBO[STRING]`   | Yüklenecek LoRA dosyasının adı; modele uygulanacak ayarlamaları belirtir.      |
+| `model_gücü`  | `FLOAT`           | LoRA ayarlamalarının yoğunluğunu belirler; daha yüksek değerler daha güçlü değişiklikleri ifade eder. |
 
 ## Çıkışlar
 

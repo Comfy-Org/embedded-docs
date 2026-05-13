@@ -21,9 +21,9 @@ Le Refiner peut être utilisé de deux manières :
 |------------------|-----------------|---------------|-------------------|------------------|-------------|
 | `clip` | CLIP | Requis | - | - | Instance du modèle CLIP utilisée pour la tokenisation et l'encodage du texte, composant central pour convertir le texte en un format compréhensible par le modèle |
 | `ascore` | FLOAT | Optionnel | 6.0 | 0.0-1000.0 | Contrôle la qualité visuelle et l'esthétique des images générées, similaire à la définition de normes de qualité pour une œuvre d'art :<br/>- Scores élevés (7.5-8.5) : Recherche d'effets plus raffinés et riches en détails<br/>- Scores moyens (6.0-7.0) : Contrôle de qualité équilibré<br/>- Scores faibles (2.0-3.0) : Adapté aux invites négatives |
-| `width` | INT | Requis | 1024 | 64-16384 | Spécifie la largeur de l'image de sortie (en pixels), doit être un multiple de 8. SDXL donne les meilleurs résultats lorsque le nombre total de pixels est proche de 1024×1024 (environ 1 million de pixels) |
-| `height` | INT | Requis | 1024 | 64-16384 | Spécifie la hauteur de l'image de sortie (en pixels), doit être un multiple de 8. SDXL donne les meilleurs résultats lorsque le nombre total de pixels est proche de 1024×1024 (environ 1 million de pixels) |
-| `text` | STRING | Requis | - | - | Description textuelle de l'invite, prend en charge la saisie multi-lignes et la syntaxe d'invite dynamique. Dans le Refiner, les invites textuelles doivent se concentrer davantage sur la description de la qualité visuelle et des caractéristiques de détail souhaitées |
+| `largeur` | INT | Requis | 1024 | 64-16384 | Spécifie la largeur de l'image de sortie (en pixels), doit être un multiple de 8. SDXL donne les meilleurs résultats lorsque le nombre total de pixels est proche de 1024×1024 (environ 1 million de pixels) |
+| `hauteur` | INT | Requis | 1024 | 64-16384 | Spécifie la hauteur de l'image de sortie (en pixels), doit être un multiple de 8. SDXL donne les meilleurs résultats lorsque le nombre total de pixels est proche de 1024×1024 (environ 1 million de pixels) |
+| `texte` | STRING | Requis | - | - | Description textuelle de l'invite, prend en charge la saisie multi-lignes et la syntaxe d'invite dynamique. Dans le Refiner, les invites textuelles doivent se concentrer davantage sur la description de la qualité visuelle et des caractéristiques de détail souhaitées |
 
 ## Sorties
 

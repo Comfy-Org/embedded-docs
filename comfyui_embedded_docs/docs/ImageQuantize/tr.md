@@ -6,12 +6,12 @@ ImageQuantize düğümü, bir görüntüdeki renk sayısını belirtilen sayıya
 
 | Alan    | Veri Türü | Açıklama                                                                       |
 |---------|-------------|-----------------------------------------------------------------------------------|
-| `image` | `IMAGE`     | Nicemlenecek giriş görüntü tensörü. Renk azaltma işleminin gerçekleştirildiği birincil veri olduğu için düğümün yürütülmesini etkiler. |
-| `colors`| `INT`       | Görüntünün indirgeneceği renk sayısını belirtir. Renk paleti boyutunu belirleyerek nicemleme sürecini doğrudan etkiler. |
-| `dither`| COMBO[STRING] | Nicemleme sırasında uygulanacak renk taklidi tekniğini belirler; çıktı görüntüsünün görsel kalitesini ve görünümünü etkiler. |
+| `görüntü` | `IMAGE`     | Nicemlenecek giriş görüntü tensörü. Renk azaltma işleminin gerçekleştirildiği birincil veri olduğu için düğümün yürütülmesini etkiler. |
+| `renkler`| `INT`       | Görüntünün indirgeneceği renk sayısını belirtir. Renk paleti boyutunu belirleyerek nicemleme sürecini doğrudan etkiler. |
+| `titreşim`| COMBO[STRING] | Nicemleme sırasında uygulanacak renk taklidi tekniğini belirler; çıktı görüntüsünün görsel kalitesini ve görünümünü etkiler. |
 
 ## Çıktılar
 
 | Alan   | Veri Türü | Açıklama                                                                   |
 |---------|-------------|-------------------------------------------------------------------------------|
-| `image`| `IMAGE`     | Giriş görüntüsünün nicemlenmiş sürümü; azaltılmış renk karmaşıklığına sahiptir ve görsel kaliteyi korumak için isteğe bağlı olarak renk taklidi uygulanmıştır. |
+| `görüntü`| `IMAGE`     | Giriş görüntüsünün nicemlenmiş sürümü; azaltılmış renk karmaşıklığına sahiptir ve görsel kaliteyi korumak için isteğe bağlı olarak renk taklidi uygulanmıştır. |

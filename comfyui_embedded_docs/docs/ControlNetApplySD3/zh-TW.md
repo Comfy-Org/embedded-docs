@@ -10,21 +10,21 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 是 | - | 要套用 ControlNet 引導的正向條件設定 |
-| `negative` | CONDITIONING | 是 | - | 要套用 ControlNet 引導的負向條件設定 |
+| `正向` | CONDITIONING | 是 | - | 要套用 ControlNet 引導的正向條件設定 |
+| `負向` | CONDITIONING | 是 | - | 要套用 ControlNet 引導的負向條件設定 |
 | `control_net` | CONTROL_NET | 是 | - | 用於引導的 ControlNet 模型 |
 | `vae` | VAE | 是 | - | 過程中使用的 VAE 模型 |
-| `image` | IMAGE | 是 | - | ControlNet 將用作引導的輸入影像 |
-| `strength` | FLOAT | 是 | 0.0 - 10.0 | ControlNet 效果的強度（預設值：1.0） |
-| `start_percent` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 開始應用的生成過程起點（預設值：0.0） |
-| `end_percent` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 停止應用的生成過程終點（預設值：1.0） |
+| `影像` | IMAGE | 是 | - | ControlNet 將用作引導的輸入影像 |
+| `強度` | FLOAT | 是 | 0.0 - 10.0 | ControlNet 效果的強度（預設值：1.0） |
+| `起始百分比` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 開始應用的生成過程起點（預設值：0.0） |
+| `結束百分比` | FLOAT | 是 | 0.0 - 1.0 | ControlNet 停止應用的生成過程終點（預設值：1.0） |
 
 ## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 已套用 ControlNet 引導的修改後正向條件設定 |
-| `negative` | CONDITIONING | 已套用 ControlNet 引導的修改後負向條件設定 |
+| `負向` | CONDITIONING | 已套用 ControlNet 引導的修改後正向條件設定 |
+| `負向` | CONDITIONING | 已套用 ControlNet 引導的修改後負向條件設定 |
 
 ---
 **Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

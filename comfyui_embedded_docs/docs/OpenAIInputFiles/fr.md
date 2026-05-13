@@ -6,8 +6,8 @@ Charge et formate les fichiers d'entrée pour l'API OpenAI. Ce nœud prépare le
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `file` | COMBO | Oui | Plusieurs options disponibles (tous les fichiers .txt et .pdf dans le répertoire d'entrée de moins de 32 Mo) | Fichiers d'entrée à inclure comme contexte pour le modèle. Accepte uniquement les fichiers texte (.txt) et PDF (.pdf) pour le moment. Les fichiers doivent être inférieurs à 32 Mo. |
-| `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Non | N/D | Un ou plusieurs fichiers supplémentaires facultatifs à regrouper avec le fichier chargé depuis ce nœud. Permet le chaînage de fichiers d'entrée afin qu'un seul message puisse inclure plusieurs fichiers d'entrée. |
+| `fichier` | COMBO | Oui | Plusieurs options disponibles (tous les fichiers .txt et .pdf dans le répertoire d'entrée de moins de 32 Mo) | Fichiers d'entrée à inclure comme contexte pour le modèle. Accepte uniquement les fichiers texte (.txt) et PDF (.pdf) pour le moment. Les fichiers doivent être inférieurs à 32 Mo. |
+| `FICHIERS_ENTRÉE_OPENAI` | OPENAI_INPUT_FILES | Non | N/D | Un ou plusieurs fichiers supplémentaires facultatifs à regrouper avec le fichier chargé depuis ce nœud. Permet le chaînage de fichiers d'entrée afin qu'un seul message puisse inclure plusieurs fichiers d'entrée. |
 
 **Contraintes des fichiers :**
 
@@ -19,7 +19,7 @@ Charge et formate les fichiers d'entrée pour l'API OpenAI. Ce nœud prépare le
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Fichiers d'entrée formatés, prêts à être utilisés comme contexte pour les appels API OpenAI. |
+| `FICHIERS_ENTRÉE_OPENAI` | OPENAI_INPUT_FILES | Fichiers d'entrée formatés, prêts à être utilisés comme contexte pour les appels API OpenAI. |
 
 ---
 **Source fingerprint (SHA-256):** `e5e92f6628072da9af787867e38c89dde3db853b7289ef6c607a066cd04c1cc9`

@@ -6,7 +6,7 @@ El nodo `LatentOperationTonemapReinhard` aplica el mapeo de tonos Reinhard a vec
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `multiplier` | FLOAT | No | 0.0 a 100.0 | Controla la intensidad del efecto de mapeo de tonos (predeterminado: 1.0) |
+| `multiplicador` | FLOAT | No | 0.0 a 100.0 | Controla la intensidad del efecto de mapeo de tonos (predeterminado: 1.0) |
 
 ## Salidas
 

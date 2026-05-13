@@ -6,8 +6,8 @@ Le nœud CFGNorm applique une technique de normalisation au processus de guidage
 
 | Paramètre | Type de données | Type d'entrée | Valeur par défaut | Plage | Description |
 |-----------|-----------------|---------------|-------------------|-------|-------------|
-| `model` | MODEL | requis | - | - | Le modèle de diffusion auquel appliquer la normalisation CFG |
-| `strength` | FLOAT | requis | 1.0 | 0.0 - 100.0 | Contrôle l'intensité de l'effet de normalisation appliqué à la mise à l'échelle CFG |
+| `modèle` | MODEL | requis | - | - | Le modèle de diffusion auquel appliquer la normalisation CFG |
+| `intensité` | FLOAT | requis | 1.0 | 0.0 - 100.0 | Contrôle l'intensité de l'effet de normalisation appliqué à la mise à l'échelle CFG |
 
 ## Sorties
 

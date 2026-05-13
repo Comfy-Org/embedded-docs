@@ -24,9 +24,9 @@ Meshy：文字轉模型節點使用 Meshy API 從文字描述生成 3D 模型。
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成的 GLB 模型檔案名稱。此輸出提供用於向後相容。 |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy API 任務的唯一識別碼。 |
-| `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型檔案。 |
+| `meshy_task_id` | STRING | 生成的 GLB 模型檔案名稱。此輸出提供用於向後相容。 |
+| `GLB` | MESHY_TASK_ID | Meshy API 任務的唯一識別碼。 |
+| `FBX` | FILE3DGLB | 以 GLB 格式生成的 3D 模型檔案。 |
 | `FBX` | FILE3DFBX | 以 FBX 格式生成的 3D 模型檔案。 |
 
 ---

@@ -34,17 +34,17 @@ El nodo Wan 2.7 Image to Video genera un video a partir de una imagen de primer 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"wan2.7-i2v"` | El modelo de IA a utilizar para la generación de video. |
+| `modelo` | COMBO | Sí | `"wan2.7-i2v"` | El modelo de IA a utilizar para la generación de video. |
 | `model.prompt` | STRING | Sí | - | Una descripción textual de los elementos y características visuales que deseas en el video. Admite inglés y chino. |
 | `model.negative_prompt` | STRING | Sí | - | Una descripción textual de elementos o características que deseas que el modelo evite. |
 | `model.resolution` | COMBO | Sí | `"720P"`<br>`"1080P"` | La resolución del video de salida. |
 | `model.duration` | INT | Sí | 2 a 15 | La duración del video generado en segundos (predeterminado: 5). |
-| `first_frame` | IMAGE | Sí | - | La imagen que se usará como primer fotograma del video. La relación de aspecto del video de salida se deriva de esta imagen. |
-| `last_frame` | IMAGE | No | - | Una imagen opcional para usar como último fotograma. Al proporcionarla, el modelo genera un video que realiza una transición desde el primer fotograma hasta este último. |
+| `primer_fotograma` | IMAGE | Sí | - | La imagen que se usará como primer fotograma del video. La relación de aspecto del video de salida se deriva de esta imagen. |
+| `último_fotograma` | IMAGE | No | - | Una imagen opcional para usar como último fotograma. Al proporcionarla, el modelo genera un video que realiza una transición desde el primer fotograma hasta este último. |
 | `audio` | AUDIO | No | - | Un archivo de audio opcional para guiar la generación del video, útil para sincronización labial o movimiento sincronizado con el ritmo. La duración debe estar entre 2 y 30 segundos. Si no se proporciona, el modelo generará música de fondo o efectos de sonido acordes. |
-| `seed` | INT | Sí | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 0). |
-| `prompt_extend` | BOOLEAN | Sí | - | Cuando está habilitado, el nodo utilizará asistencia de IA para mejorar tu prompt de texto (predeterminado: True). Esta es una configuración avanzada. |
-| `watermark` | BOOLEAN | Sí | - | Cuando está habilitado, se añadirá una marca de agua generada por IA al video final (predeterminado: False). Esta es una configuración avanzada. |
+| `semilla` | INT | Sí | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 0). |
+| `extender_prompt` | BOOLEAN | Sí | - | Cuando está habilitado, el nodo utilizará asistencia de IA para mejorar tu prompt de texto (predeterminado: True). Esta es una configuración avanzada. |
+| `marca_de_agua` | BOOLEAN | Sí | - | Cuando está habilitado, se añadirá una marca de agua generada por IA al video final (predeterminado: False). Esta es una configuración avanzada. |
 
 **Nota:** La entrada `audio` tiene una restricción de duración. Si se proporciona, el archivo de audio debe tener una duración de entre 2 y 30 segundos.
 

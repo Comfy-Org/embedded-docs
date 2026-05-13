@@ -6,8 +6,8 @@ El nodo ModelMergeAdd está diseñado para fusionar dos modelos añadiendo parch
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `model1`  | `MODEL`     | El primer modelo que se clonará y al cual se le añadirán los parches del segundo modelo. Sirve como modelo base para el proceso de fusión. |
-| `model2`  | `MODEL`     | El segundo modelo del cual se extraen parches clave y se añaden al primer modelo. Aporta características o comportamientos adicionales al modelo fusionado. |
+| `modelo1`  | `MODEL`     | El primer modelo que se clonará y al cual se le añadirán los parches del segundo modelo. Sirve como modelo base para el proceso de fusión. |
+| `modelo2`  | `MODEL`     | El segundo modelo del cual se extraen parches clave y se añaden al primer modelo. Aporta características o comportamientos adicionales al modelo fusionado. |
 
 ## Salidas
 

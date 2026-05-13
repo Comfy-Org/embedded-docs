@@ -6,13 +6,13 @@ Ce nœud est obsolète et ne remplit aucune fonction. Il accepte un modèle en e
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | | Le modèle à faire passer à travers le nœud. |
+| `modèle` | MODEL | Oui | | Le modèle à faire passer à travers le nœud. |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model` | MODEL | Le même modèle que celui fourni en entrée, inchangé. |
+| `modèle` | MODEL | Le même modèle que celui fourni en entrée, inchangé. |
 
 ---
 **Source fingerprint (SHA-256):** `a7ab11efa864c6692b5acc2e75fada19e14a97690b809f02a2da0473a18a5164`

@@ -6,14 +6,14 @@ El nodo Editor de Curvas proporciona una interfaz visual para ajustar y refinar 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `curve` | CURVE | Sí | N/A | La curva de entrada que se va a editar. |
-| `histogram` | HISTOGRAM | No | N/A | Un histograma opcional para mostrar junto a la curva como referencia visual. |
+| `curva` | CURVE | Sí | N/A | La curva de entrada que se va a editar. |
+| `histograma` | HISTOGRAM | No | N/A | Un histograma opcional para mostrar junto a la curva como referencia visual. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `curve` | CURVE | La curva editada después de realizar los ajustes en la interfaz del nodo. |
+| `curva` | CURVE | La curva editada después de realizar los ajustes en la interfaz del nodo. |
 
 ---
 **Source fingerprint (SHA-256):** `34cf36a5b934c44ebfce0b81e7c515f1b31fb17f3b7e1ad52255d1d72f68240b`

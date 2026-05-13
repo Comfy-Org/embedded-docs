@@ -6,14 +6,14 @@ El nodo ModelSamplingStableCascade aplica un muestreo en cascada estable a un mo
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de entrada al que se aplicará el muestreo en cascada estable |
-| `shift` | FLOAT | Sí | 0.0 - 100.0 | El valor de desplazamiento a aplicar a los parámetros de muestreo (predeterminado: 2.0) |
+| `modelo` | MODEL | Sí | - | El modelo de entrada al que se aplicará el muestreo en cascada estable |
+| `desplazamiento` | FLOAT | Sí | 0.0 - 100.0 | El valor de desplazamiento a aplicar a los parámetros de muestreo (predeterminado: 2.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con el muestreo en cascada estable aplicado |
+| `modelo` | MODEL | El modelo modificado con el muestreo en cascada estable aplicado |
 
 ---
 **Source fingerprint (SHA-256):** `2d0a342fff05434c8fe78999187bd31dbee7deb6f4447759a489102a8ce277de`

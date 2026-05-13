@@ -9,9 +9,9 @@ El uso de ControlNet requiere el preprocesamiento de las imágenes de entrada. D
 | `positive` | `CONDITIONING` | Datos de condicionamiento positivo, provenientes del Codificador de Texto CLIP u otras entradas de condicionamiento |
 | `negative` | `CONDITIONING` | Datos de condicionamiento negativo, provenientes del Codificador de Texto CLIP u otras entradas de condicionamiento |
 | `control_net` | `CONTROL_NET` | El modelo ControlNet a aplicar, generalmente ingresado desde el Cargador de ControlNet |
-| `image` | `IMAGE` | Imagen para la aplicación de ControlNet, debe ser procesada por un preprocesador |
+| `imagen` | `IMAGE` | Imagen para la aplicación de ControlNet, debe ser procesada por un preprocesador |
 | `vae` | `VAE` | Entrada del modelo VAE |
-| `strength` | `FLOAT` | Controla la fuerza de los ajustes de la red, rango de valores 0~10. Se recomiendan valores entre 0.5~1.5 como razonables. Valores más bajos permiten mayor libertad al modelo; valores más altos imponen restricciones más estrictas. Valores demasiado altos pueden generar imágenes extrañas. Puede probar y ajustar este valor para afinar la influencia de la red de control. |
+| `fuerza` | `FLOAT` | Controla la fuerza de los ajustes de la red, rango de valores 0~10. Se recomiendan valores entre 0.5~1.5 como razonables. Valores más bajos permiten mayor libertad al modelo; valores más altos imponen restricciones más estrictas. Valores demasiado altos pueden generar imágenes extrañas. Puede probar y ajustar este valor para afinar la influencia de la red de control. |
 | `start_percent` | `FLOAT` | Valor 0.000~1.000, determina cuándo comenzar a aplicar ControlNet como porcentaje. Por ejemplo, 0.2 significa que la guía de ControlNet comenzará a influir en la generación de la imagen al 20% del proceso de difusión |
 | `end_percent` | `FLOAT` | Valor 0.000~1.000, determina cuándo detener la aplicación de ControlNet como porcentaje. Por ejemplo, 0.8 significa que la guía de ControlNet dejará de influir en la generación de la imagen al 80% del proceso de difusión |
 

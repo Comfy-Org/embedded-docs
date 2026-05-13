@@ -6,10 +6,10 @@ Gera vídeos de forma síncrona com base em uma imagem e um prompt, além de par
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | Imagem a ser usada como primeiro quadro da geração de vídeo |
-| `prompt_text` | STRING | Sim | - | Prompt textual para guiar a geração do vídeo (padrão: string vazia) |
-| `model` | COMBO | Sim | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" | Modelo a ser usado para a geração de vídeo (padrão: "I2V-01") |
-| `seed` | INT | Não | 0 a 18446744073709551615 | Semente aleatória usada para criar o ruído (padrão: 0) |
+| `imagem` | IMAGE | Sim | - | Imagem a ser usada como primeiro quadro da geração de vídeo |
+| `prompt_texto` | STRING | Sim | - | Prompt textual para guiar a geração do vídeo (padrão: string vazia) |
+| `modelo` | COMBO | Sim | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" | Modelo a ser usado para a geração de vídeo (padrão: "I2V-01") |
+| `semente` | INT | Não | 0 a 18446744073709551615 | Semente aleatória usada para criar o ruído (padrão: 0) |
 
 ## Saídas
 

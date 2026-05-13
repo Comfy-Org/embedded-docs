@@ -6,7 +6,7 @@ Le nœud ColorToRGBInt convertit une couleur spécifiée au format hexadécimal 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `color` | STRING | Oui | N/A | Une valeur de couleur au format hexadécimal `#RRGGBB`. |
+| `couleur` | STRING | Oui | N/A | Une valeur de couleur au format hexadécimal `#RRGGBB`. |
 
 **Remarque :** La chaîne `color` en entrée doit comporter exactement 7 caractères et commencer par le symbole `#`, suivie de six chiffres hexadécimaux (par exemple, `#FF0000` pour le rouge). Le nœud générera une erreur si le format est incorrect.
 

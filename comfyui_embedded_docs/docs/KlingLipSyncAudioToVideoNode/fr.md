@@ -8,9 +8,9 @@ Nœud Kling Lip Sync Audio to Video synchronise les mouvements des lèvres dans 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | - | Le fichier vidéo contenant un visage à synchroniser |
+| `vidéo` | VIDEO | Oui | - | Le fichier vidéo contenant un visage à synchroniser |
 | `audio` | AUDIO | Oui | - | Le fichier audio contenant les voix à synchroniser avec la vidéo |
-| `voice_language` | COMBO | Oui | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | La langue de la voix dans le fichier audio (par défaut : "en") |
+| `langue de la voix` | COMBO | Oui | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | La langue de la voix dans le fichier audio (par défaut : "en") |
 
 **Contraintes importantes :**
 
@@ -25,8 +25,8 @@ Nœud Kling Lip Sync Audio to Video synchronise les mouvements des lèvres dans 
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `output` | VIDEO | La vidéo traitée avec les mouvements des lèvres synchronisés |
-| `video_id` | STRING | L'identifiant unique de la vidéo traitée |
+| `id_vidéo` | VIDEO | La vidéo traitée avec les mouvements des lèvres synchronisés |
+| `durée` | STRING | L'identifiant unique de la vidéo traitée |
 | `duration` | STRING | La durée de la vidéo traitée |
 
 ---

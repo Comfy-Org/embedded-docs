@@ -6,13 +6,13 @@ Bu düğüm, Recraft API hizmetini kullanarak görüntülerin arka planını kal
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Arka planı kaldırılacak giriş görüntüsü/görüntüleri |
+| `görüntü` | IMAGE | Evet | - | Arka planı kaldırılacak giriş görüntüsü/görüntüleri |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Şeffaf arka planlı işlenmiş görüntüler |
+| `görüntü` | IMAGE | Şeffaf arka planlı işlenmiş görüntüler |
 | `mask` | MASK | Kaldırılan arka plan alanlarını gösteren alfa kanalı maskeleri |
 
 ---

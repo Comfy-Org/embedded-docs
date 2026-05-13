@@ -12,10 +12,10 @@
 | `model` | COMBO | 예 | `gemini-2.5-pro-preview-05-06`<br>`gemini-2.5-flash-preview-04-17`<br>`gemini-2.5-pro`<br>`gemini-2.5-flash`<br>`gemini-3-pro-preview`<br>`gemini-3-1-pro`<br>`gemini-3-1-flash-lite` | 응답 생성에 사용할 Gemini 모델입니다. 기본값: gemini-3-1-pro. |
 | `seed` | INT | 예 | 0 ~ 18446744073709551615 | 시드가 특정 값으로 고정되면 모델은 반복 요청에 대해 동일한 응답을 제공하기 위해 최선을 다합니다. 결정론적 출력은 보장되지 않습니다. 또한 모델이나 temperature와 같은 매개변수 설정을 변경하면 동일한 시드 값을 사용하더라도 응답에 차이가 발생할 수 있습니다. 기본적으로 무작위 시드 값이 사용됩니다. 기본값: 42. |
 | `images` | IMAGE | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 이미지입니다. 여러 이미지를 포함하려면 이미지 일괄 처리(Batch Images) 노드를 사용할 수 있습니다. 기본값: 없음. |
-| `audio` | AUDIO | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 오디오입니다. 기본값: 없음. |
-| `video` | VIDEO | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 비디오입니다. 기본값: 없음. |
-| `files` | GEMINI_INPUT_FILES | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 파일입니다. Gemini 콘텐츠 생성 입력 파일(Gemini Generate Content Input Files) 노드의 입력을 허용합니다. 기본값: 없음. |
-| `system_prompt` | STRING | 아니요 | - | AI의 동작을 지시하는 기본 지침입니다. 기본값: 빈 문자열. 이는 고급 매개변수입니다. |
+| `오디오` | AUDIO | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 오디오입니다. 기본값: 없음. |
+| `비디오` | VIDEO | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 비디오입니다. 기본값: 없음. |
+| `파일` | GEMINI_INPUT_FILES | 아니요 | - | 모델의 컨텍스트로 사용할 선택적 파일입니다. Gemini 콘텐츠 생성 입력 파일(Gemini Generate Content Input Files) 노드의 입력을 허용합니다. 기본값: 없음. |
+| `시스템 프롬프트` | STRING | 아니요 | - | AI의 동작을 지시하는 기본 지침입니다. 기본값: 빈 문자열. 이는 고급 매개변수입니다. |
 
 ## 출력
 

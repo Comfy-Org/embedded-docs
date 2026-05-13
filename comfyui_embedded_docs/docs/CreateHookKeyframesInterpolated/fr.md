@@ -6,14 +6,14 @@ Crée une séquence d'images clés de hook avec des valeurs de force interpolée
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `strength_start` | FLOAT | Oui | 0.0 - 10.0 | La valeur de force de départ pour la séquence d'interpolation (par défaut : 1.0) |
-| `strength_end` | FLOAT | Oui | 0.0 - 10.0 | La valeur de force d'arrivée pour la séquence d'interpolation (par défaut : 1.0) |
+| `force_debut` | FLOAT | Oui | 0.0 - 10.0 | La valeur de force de départ pour la séquence d'interpolation (par défaut : 1.0) |
+| `force_fin` | FLOAT | Oui | 0.0 - 10.0 | La valeur de force d'arrivée pour la séquence d'interpolation (par défaut : 1.0) |
 | `interpolation` | COMBO | Oui | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | La méthode d'interpolation utilisée pour transiter entre les valeurs de force (par défaut : LINEAR) |
-| `start_percent` | FLOAT | Oui | 0.0 - 1.0 | La position en pourcentage de départ dans le processus de génération (par défaut : 0.0) |
-| `end_percent` | FLOAT | Oui | 0.0 - 1.0 | La position en pourcentage d'arrivée dans le processus de génération (par défaut : 1.0) |
-| `keyframes_count` | INT | Oui | 2 - 100 | Le nombre d'images clés à générer dans la séquence d'interpolation (par défaut : 5) |
-| `print_keyframes` | BOOLEAN | Oui | True/False | Indique s'il faut imprimer les informations des images clés générées dans le journal (par défaut : False) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Non | - | Groupe d'images clés de hook précédent facultatif auquel ajouter la séquence |
+| `pourcentage_debut` | FLOAT | Oui | 0.0 - 1.0 | La position en pourcentage de départ dans le processus de génération (par défaut : 0.0) |
+| `pourcentage_fin` | FLOAT | Oui | 0.0 - 1.0 | La position en pourcentage d'arrivée dans le processus de génération (par défaut : 1.0) |
+| `compte_images_cles` | INT | Oui | 2 - 100 | Le nombre d'images clés à générer dans la séquence d'interpolation (par défaut : 5) |
+| `imprimer_images_cles` | BOOLEAN | Oui | True/False | Indique s'il faut imprimer les informations des images clés générées dans le journal (par défaut : False) |
+| `precedent_crochet_kf` | HOOK_KEYFRAMES | Non | - | Groupe d'images clés de hook précédent facultatif auquel ajouter la séquence |
 
 ## Sorties
 

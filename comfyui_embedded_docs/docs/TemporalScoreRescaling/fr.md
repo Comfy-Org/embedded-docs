@@ -8,7 +8,7 @@ Ce nœud applique un rééchelonnement temporel des scores (TSR) à un modèle d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion à patcher avec la fonction TSR. |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion à patcher avec la fonction TSR. |
 | `tsr_k` | FLOAT | Non | 0,01 - 100,0 | Contrôle la force du rééchelonnement. Une valeur k plus faible produit des résultats plus détaillés ; une valeur k plus élevée produit des résultats plus lisses dans la génération d'images. Définir k = 1 désactive le rééchelonnement. (valeur par défaut : 0,95) |
 | `tsr_sigma` | FLOAT | Non | 0,01 - 100,0 | Contrôle le moment où le rééchelonnement prend effet. Des valeurs plus élevées prennent effet plus tôt. (valeur par défaut : 1,0) |
 

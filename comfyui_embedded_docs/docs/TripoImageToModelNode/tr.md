@@ -6,18 +6,18 @@ TripoImageToModelNode düğümü, Tripo'nun API'sini kullanarak tek bir görünt
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | 3D model oluşturmak için kullanılan giriş görüntüsü |
-| `model_version` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturma için kullanılacak Tripo modelinin sürümü |
-| `style` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturulan model için stil ayarı (varsayılan: "Yok") |
-| `texture` | BOOLEAN | Hayır | - | Model için doku oluşturulup oluşturulmayacağı (varsayılan: True) |
+| `görüntü` | IMAGE | Evet | - | 3D model oluşturmak için kullanılan giriş görüntüsü |
+| `model_sürümü` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturma için kullanılacak Tripo modelinin sürümü |
+| `stil` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturulan model için stil ayarı (varsayılan: "Yok") |
+| `doku` | BOOLEAN | Hayır | - | Model için doku oluşturulup oluşturulmayacağı (varsayılan: True) |
 | `pbr` | BOOLEAN | Hayır | - | Fiziksel Tabanlı İşleme (PBR) kullanılıp kullanılmayacağı (varsayılan: True) |
-| `model_seed` | INT | Hayır | - | Model oluşturma için rastgele tohum değeri (varsayılan: 42) |
-| `orientation` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturulan model için yönlendirme ayarı |
-| `texture_seed` | INT | Hayır | - | Doku oluşturma için rastgele tohum değeri (varsayılan: 42) |
-| `texture_quality` | COMBO | Hayır | "standard"<br>"detailed" | Doku oluşturma için kalite seviyesi (varsayılan: "standard") |
-| `texture_alignment` | COMBO | Hayır | "original_image"<br>"geometry" | Doku eşleme için hizalama yöntemi (varsayılan: "original_image") |
-| `face_limit` | INT | Hayır | -1 ila 500000 | Oluşturulan modeldeki maksimum yüz sayısı, -1 sınırsız anlamına gelir (varsayılan: -1) |
-| `quad` | BOOLEAN | Hayır | - | Üçgenler yerine dörtgen yüzler kullanılıp kullanılmayacağı (varsayılan: False) |
+| `model_tohumu` | INT | Hayır | - | Model oluşturma için rastgele tohum değeri (varsayılan: 42) |
+| `yönlendirme` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturulan model için yönlendirme ayarı |
+| `doku_tohumu` | INT | Hayır | - | Doku oluşturma için rastgele tohum değeri (varsayılan: 42) |
+| `doku_kalitesi` | COMBO | Hayır | "standard"<br>"detailed" | Doku oluşturma için kalite seviyesi (varsayılan: "standard") |
+| `doku_hizalama` | COMBO | Hayır | "original_image"<br>"geometry" | Doku eşleme için hizalama yöntemi (varsayılan: "original_image") |
+| `yüz_sınırı` | INT | Hayır | -1 ila 500000 | Oluşturulan modeldeki maksimum yüz sayısı, -1 sınırsız anlamına gelir (varsayılan: -1) |
+| `dörtlü` | BOOLEAN | Hayır | - | Üçgenler yerine dörtgen yüzler kullanılıp kullanılmayacağı (varsayılan: False) |
 | `geometry_quality` | COMBO | Hayır | "standard"<br>"detailed" | Geometri oluşturma için kalite seviyesi (varsayılan: "standard") |
 
 **Not:** `image` parametresi zorunludur ve düğümün çalışması için sağlanmalıdır. Hiçbir görüntü sağlanmazsa, düğüm bir RuntimeError (Çalışma Zamanı Hatası) yükseltecektir.
@@ -26,8 +26,8 @@ TripoImageToModelNode düğümü, Tripo'nun API'sini kullanarak tek bir görünt
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Oluşturulan 3D model dosyası (yalnızca geriye dönük uyumluluk için) |
-| `model task_id` | MODEL_TASK_ID | Model oluşturma sürecini izlemek için görev kimliği |
+| `model_görev_id` | STRING | Oluşturulan 3D model dosyası (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | MODEL_TASK_ID | Model oluşturma sürecini izlemek için görev kimliği |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan 3D model |
 
 ---

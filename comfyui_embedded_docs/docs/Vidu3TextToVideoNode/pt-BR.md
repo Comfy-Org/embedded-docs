@@ -6,13 +6,13 @@ O nó de Geração de Texto para Vídeo Vidu Q3 cria um vídeo a partir de uma d
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modelo a ser usado para geração de vídeo. A seleção de um modelo revela parâmetros de configuração adicionais para proporção de aspecto, resolução, duração e áudio. |
-| `model.aspect_ratio` | COMBO | Sim* | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | A proporção de aspecto do vídeo de saída. Este parâmetro é revelado quando um `model` é selecionado. |
-| `model.resolution` | COMBO | Sim* | `"720p"`<br>`"1080p"` | Resolução do vídeo de saída. Este parâmetro é revelado quando um `model` é selecionado. |
-| `model.duration` | INTEIRO | Sim* | 1 a 16 | Duração do vídeo de saída em segundos (padrão: 5). Este parâmetro é revelado quando um `model` é selecionado. |
-| `model.audio` | BOOLEANO | Sim* | Verdadeiro/Falso | Quando ativado, gera vídeo com som (incluindo diálogo e efeitos sonoros) (padrão: Falso). Este parâmetro é revelado quando um `model` é selecionado. |
+| `modelo` | COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modelo a ser usado para geração de vídeo. A seleção de um modelo revela parâmetros de configuração adicionais para proporção de aspecto, resolução, duração e áudio. |
+| `model.aspect_ratio` | COMBO | Sim* | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | A proporção de aspecto do vídeo de saída. Este parâmetro é revelado quando um `modelo` é selecionado. |
+| `model.resolution` | COMBO | Sim* | `"720p"`<br>`"1080p"` | Resolução do vídeo de saída. Este parâmetro é revelado quando um `modelo` é selecionado. |
+| `model.duration` | INTEIRO | Sim* | 1 a 16 | Duração do vídeo de saída em segundos (padrão: 5). Este parâmetro é revelado quando um `modelo` é selecionado. |
+| `model.audio` | BOOLEANO | Sim* | Verdadeiro/Falso | Quando ativado, gera vídeo com som (incluindo diálogo e efeitos sonoros) (padrão: Falso). Este parâmetro é revelado quando um `modelo` é selecionado. |
 | `prompt` | STRING | Sim | N/A | Uma descrição textual para geração de vídeo, com comprimento máximo de 2000 caracteres. |
-| `seed` | INTEIRO | Não | 0 a 2147483647 | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). |
+| `semente` | INTEIRO | Não | 0 a 2147483647 | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). |
 
 *Nota: Os parâmetros `aspect_ratio`, `resolution`, `duration` e `audio` são obrigatórios assim que um `model` é selecionado, pois fazem parte de sua configuração.
 

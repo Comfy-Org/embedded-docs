@@ -6,14 +6,14 @@ Le nœud `FeatherMask` applique un effet de fondu aux bords d'un masque donné, 
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `mask`    | MASK            | Le masque auquel l'effet de fondu sera appliqué. Il détermine la zone de l'image qui sera affectée par l'estompage. |
-| `left`    | INT             | Spécifie la distance depuis le bord gauche à l'intérieur de laquelle l'effet de fondu sera appliqué. |
-| `top`     | INT             | Spécifie la distance depuis le bord supérieur à l'intérieur de laquelle l'effet de fondu sera appliqué. |
-| `right`   | INT             | Spécifie la distance depuis le bord droit à l'intérieur de laquelle l'effet de fondu sera appliqué. |
-| `bottom`  | INT             | Spécifie la distance depuis le bord inférieur à l'intérieur de laquelle l'effet de fondu sera appliqué. |
+| `masque`    | MASK            | Le masque auquel l'effet de fondu sera appliqué. Il détermine la zone de l'image qui sera affectée par l'estompage. |
+| `gauche`    | INT             | Spécifie la distance depuis le bord gauche à l'intérieur de laquelle l'effet de fondu sera appliqué. |
+| `haut`     | INT             | Spécifie la distance depuis le bord supérieur à l'intérieur de laquelle l'effet de fondu sera appliqué. |
+| `droite`   | INT             | Spécifie la distance depuis le bord droit à l'intérieur de laquelle l'effet de fondu sera appliqué. |
+| `bas`  | INT             | Spécifie la distance depuis le bord inférieur à l'intérieur de laquelle l'effet de fondu sera appliqué. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `mask`    | MASK            | La sortie est une version modifiée du masque d'entrée avec un effet de fondu appliqué à ses bords. |
+| `masque`    | MASK            | La sortie est une version modifiée du masque d'entrée avec un effet de fondu appliqué à ses bords. |

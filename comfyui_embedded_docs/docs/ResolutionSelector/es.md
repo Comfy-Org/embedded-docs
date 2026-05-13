@@ -6,14 +6,14 @@ El nodo Selector de Resolución calcula el ancho y alto en píxeles de una image
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `aspect_ratio` | COMBO | Sí | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | La relación de aspecto para las dimensiones de salida (predeterminado: `"SQUARE"`). |
-| `megapixels` | FLOAT | Sí | 0.1 - 16.0 | Total de megapíxeles objetivo. 1.0 MP ≈ 1024×1024 para una relación de aspecto cuadrada (predeterminado: 1.0). |
+| `relación_de_aspecto` | COMBO | Sí | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | La relación de aspecto para las dimensiones de salida (predeterminado: `"SQUARE"`). |
+| `megapíxeles` | FLOAT | Sí | 0.1 - 16.0 | Total de megapíxeles objetivo. 1.0 MP ≈ 1024×1024 para una relación de aspecto cuadrada (predeterminado: 1.0). |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `width` | INT | El ancho calculado en píxeles, que es un múltiplo de 8. |
+| `alto` | INT | El ancho calculado en píxeles, que es un múltiplo de 8. |
 | `height` | INT | La altura calculada en píxeles, que es un múltiplo de 8. |
 
 ---

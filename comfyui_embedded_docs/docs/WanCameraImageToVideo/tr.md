@@ -6,16 +6,16 @@ WanCameraImageToVideo düğümü, video oluşturma için gizil temsiller üreter
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Video oluşturma için pozitif koşullandırma yönlendirmeleri |
-| `negative` | CONDITIONING | Evet | - | Video oluşturmada kaçınılması gereken negatif koşullandırma yönlendirmeleri |
+| `pozitif` | CONDITIONING | Evet | - | Video oluşturma için pozitif koşullandırma yönlendirmeleri |
+| `negatif` | CONDITIONING | Evet | - | Video oluşturmada kaçınılması gereken negatif koşullandırma yönlendirmeleri |
 | `vae` | VAE | Evet | - | Görüntüleri gizil uzaya kodlamak için VAE modeli |
-| `width` | INT | Evet | 16 - MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) |
-| `height` | INT | Evet | 16 - MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
-| `length` | INT | Evet | 1 - MAKSİMUM_ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
-| `batch_size` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Hayır | - | Ek koşullandırma için isteğe bağlı CLIP vision çıktısı |
-| `start_image` | IMAGE | Hayır | - | Video dizisini başlatmak için isteğe bağlı başlangıç görüntüsü. Sağlandığında, videonun ilk kareleri bu görüntüye dayanır ve başlangıç karelerini oluşturulan içerikle harmanlamak için bir maske uygulanır. Görüntü, belirtilen genişlik ve yüksekliğe uyacak şekilde yeniden boyutlandırılır. |
-| `camera_conditions` | WAN_CAMERA_EMBEDDING | Hayır | - | Video oluşturma için isteğe bağlı kamera gömme koşulları. Sağlandığında, bu koşullar hem pozitif hem de negatif koşullandırmaya uygulanır. |
+| `genişlik` | INT | Evet | 16 - MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) |
+| `yükseklik` | INT | Evet | 16 - MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
+| `uzunluk` | INT | Evet | 1 - MAKSİMUM_ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
+| `toplu_iş_boyutu` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
+| `clip_vision_çıktısı` | CLIP_VISION_OUTPUT | Hayır | - | Ek koşullandırma için isteğe bağlı CLIP vision çıktısı |
+| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video dizisini başlatmak için isteğe bağlı başlangıç görüntüsü. Sağlandığında, videonun ilk kareleri bu görüntüye dayanır ve başlangıç karelerini oluşturulan içerikle harmanlamak için bir maske uygulanır. Görüntü, belirtilen genişlik ve yüksekliğe uyacak şekilde yeniden boyutlandırılır. |
+| `kamera_koşulları` | WAN_CAMERA_EMBEDDING | Hayır | - | Video oluşturma için isteğe bağlı kamera gömme koşulları. Sağlandığında, bu koşullar hem pozitif hem de negatif koşullandırmaya uygulanır. |
 
 **Not:** `start_image` sağlandığında, düğüm video dizisini başlatmak için bunu kullanır ve başlangıç karelerini oluşturulan içerikle harmanlamak için maskeleme uygular. `camera_conditions` ve `clip_vision_output` parametreleri isteğe bağlıdır ancak sağlandıklarında hem pozitif hem de negatif yönlendirmeler için koşullandırmayı değiştirirler.
 
@@ -23,8 +23,8 @@ WanCameraImageToVideo düğümü, video oluşturma için gizil temsiller üreter
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş pozitif koşullandırma |
+| `latent` | CONDITIONING | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş negatif koşullandırma |
 | `latent` | LATENT | Video modelleriyle kullanım için oluşturulan video gizil temsili. Gizil tensör, [batch_size, 16, frames, height/8, width/8] boyutlarına sahiptir; burada frames, ((length - 1) // 4) + 1 olarak hesaplanır. |
 
 ---

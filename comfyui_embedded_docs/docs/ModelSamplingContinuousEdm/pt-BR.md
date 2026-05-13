@@ -6,13 +6,13 @@ Este nó foi projetado para aprimorar as capacidades de amostragem de um modelo,
 
 | Parâmetro   | Tipo de Dado | Tipo Python        | Descrição |
 |-------------|--------------|----------------------|-------------|
-| `model`     | `MODEL`     | `torch.nn.Module`   | O modelo a ser aprimorado com capacidades contínuas de amostragem EDM. Serve como base para a aplicação das técnicas avançadas de amostragem. |
-| `sampling`  | COMBO[STRING] | `str`             | Especifica o tipo de amostragem a ser aplicado: 'eps' para amostragem épsilon ou 'v_prediction' para predição de velocidade, influenciando o comportamento do modelo durante o processo de amostragem. |
-| `sigma_max` | `FLOAT`     | `float`             | O valor máximo de sigma para o nível de ruído, permitindo o controle do limite superior no processo de injeção de ruído durante a amostragem. |
-| `sigma_min` | `FLOAT`     | `float`             | O valor mínimo de sigma para o nível de ruído, definindo o limite inferior para a injeção de ruído, afetando assim a precisão da amostragem do modelo. |
+| `modelo`     | `MODEL`     | `torch.nn.Module`   | O modelo a ser aprimorado com capacidades contínuas de amostragem EDM. Serve como base para a aplicação das técnicas avançadas de amostragem. |
+| `amostragem`  | COMBO[STRING] | `str`             | Especifica o tipo de amostragem a ser aplicado: 'eps' para amostragem épsilon ou 'v_prediction' para predição de velocidade, influenciando o comportamento do modelo durante o processo de amostragem. |
+| `sigma_máx` | `FLOAT`     | `float`             | O valor máximo de sigma para o nível de ruído, permitindo o controle do limite superior no processo de injeção de ruído durante a amostragem. |
+| `sigma_mín` | `FLOAT`     | `float`             | O valor mínimo de sigma para o nível de ruído, definindo o limite inferior para a injeção de ruído, afetando assim a precisão da amostragem do modelo. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dado | Tipo Python        | Descrição |
 |-----------|-------------|----------------------|-------------|
-| `model`   | MODEL     | `torch.nn.Module`   | O modelo aprimorado com capacidades contínuas de amostragem EDM integradas, pronto para uso em tarefas de geração. |
+| `modelo`   | MODEL     | `torch.nn.Module`   | O modelo aprimorado com capacidades contínuas de amostragem EDM integradas, pronto para uso em tarefas de geração. |

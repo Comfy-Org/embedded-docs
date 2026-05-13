@@ -10,7 +10,7 @@ CLIPTextEncodeSD3 düğümü, birden fazla metin istemini farklı CLIP modelleri
 | `clip_l` | STRING | Evet | - | Yerel CLIP modeli için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
 | `clip_g` | STRING | Evet | - | Global CLIP modeli için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
 | `t5xxl` | STRING | Evet | - | T5-XXL modeli için metin girdisi. Çok satırlı metin ve dinamik istemleri destekler. |
-| `empty_padding` | COMBO | Evet | `"none"`<br>`"empty_prompt"` | Boş metin girdilerinin nasıl işleneceğini kontrol eder. "none" olarak ayarlandığında, `clip_g`, `clip_l` veya `t5xxl` için boş metin girdileri dolgu yerine boş token listeleriyle sonuçlanır. Bu gelişmiş bir parametredir (varsayılan: "none"). |
+| `boş_dolgu` | COMBO | Evet | `"none"`<br>`"empty_prompt"` | Boş metin girdilerinin nasıl işleneceğini kontrol eder. "none" olarak ayarlandığında, `clip_g`, `clip_l` veya `t5xxl` için boş metin girdileri dolgu yerine boş token listeleriyle sonuçlanır. Bu gelişmiş bir parametredir (varsayılan: "none"). |
 
 **Parametre Kısıtlamaları:**
 

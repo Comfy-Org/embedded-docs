@@ -8,8 +8,8 @@ O nó StringCompare compara duas strings de texto usando diferentes métodos de 
 |-----------|---------------|-------------|-------|-----------|
 | `string_a` | STRING | Sim | - | A primeira string a ser comparada |
 | `string_b` | STRING | Sim | - | A segunda string para comparação |
-| `mode` | COMBO | Sim | "Starts With"<br>"Ends With"<br>"Equal" | O método de comparação a ser usado (padrão: "Starts With") |
-| `case_sensitive` | BOOLEAN | Não | - | Se deve considerar diferenças entre maiúsculas e minúsculas durante a comparação (padrão: true) |
+| `modo` | COMBO | Sim | "Starts With"<br>"Ends With"<br>"Equal" | O método de comparação a ser usado (padrão: "Starts With") |
+| `diferenciar_maiusculas_minusculas` | BOOLEAN | Não | - | Se deve considerar diferenças entre maiúsculas e minúsculas durante a comparação (padrão: true) |
 
 ## Saídas
 

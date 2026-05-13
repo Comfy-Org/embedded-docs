@@ -34,9 +34,9 @@ El nodo CLIPLoader carga un modelo codificador de texto (CLIP, T5 o similar) des
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name` | STRING | Sí | Lista de archivos encontrados en la carpeta `text_encoders` | El nombre del archivo del modelo codificador de texto a cargar. Este debe ser un archivo ubicado en el directorio `ComfyUI/models/text_encoders/` o `ComfyUI/models/clip/`. |
-| `type` | STRING | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | El tipo de arquitectura del modelo que se está cargando. Esto determina qué variante de codificador específica usar. El valor predeterminado es `"stable_diffusion"`. |
-| `device` | STRING | No | `"default"`<br>`"cpu"` | El dispositivo en el que cargar el modelo. `"default"` usa la GPU si está disponible, mientras que `"cpu"` fuerza la carga en CPU. Esta es una opción avanzada (predeterminado: `"default"`). |
+| `nombre_clip` | STRING | Sí | Lista de archivos encontrados en la carpeta `text_encoders` | El nombre del archivo del modelo codificador de texto a cargar. Este debe ser un archivo ubicado en el directorio `ComfyUI/models/text_encoders/` o `ComfyUI/models/clip/`. |
+| `tipo` | STRING | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | El tipo de arquitectura del modelo que se está cargando. Esto determina qué variante de codificador específica usar. El valor predeterminado es `"stable_diffusion"`. |
+| `dispositivo` | STRING | No | `"default"`<br>`"cpu"` | El dispositivo en el que cargar el modelo. `"default"` usa la GPU si está disponible, mientras que `"cpu"` fuerza la carga en CPU. Esta es una opción avanzada (predeterminado: `"default"`). |
 
 ### Mapeos Compatibles de Tipo a Codificador
 

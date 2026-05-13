@@ -9,24 +9,24 @@
 | پارامتر | نوع داده | اجباری | محدوده | توضیحات |
 |-----------|-----------|----------|-------|-------------|
 | `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | بله | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | شناسه وظیفه از یک عملیات قبلی Tripo (تولید مدل، ریگینگ یا ریتارگتینگ) |
-| `format` | COMBO | بله | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | فرمت فایل مقصد برای مدل سه‌بعدی تبدیل‌شده |
+| `فرمت` | COMBO | بله | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | فرمت فایل مقصد برای مدل سه‌بعدی تبدیل‌شده |
 | `quad` | BOOLEAN | خیر | True/False | آیا مثلث‌ها به چهارضلعی تبدیل شوند (پیش‌فرض: False) |
-| `face_limit` | INT | خیر | 1- تا 2000000 | حداکثر تعداد وجه در مدل خروجی، از 1- برای بدون محدودیت استفاده کنید (پیش‌فرض: 1-) |
-| `texture_size` | INT | خیر | 128 تا 4096 | اندازه بافت‌های خروجی بر حسب پیکسل (پیش‌فرض: 4096) |
-| `texture_format` | COMBO | خیر | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | فرمت بافت‌های خروجی (پیش‌فرض: JPEG) |
-| `force_symmetry` | BOOLEAN | خیر | True/False | آیا تقارن روی مدل اعمال شود (پیش‌فرض: False) |
-| `flatten_bottom` | BOOLEAN | خیر | True/False | آیا کف مدل صاف شود (پیش‌فرض: False) |
-| `flatten_bottom_threshold` | FLOAT | خیر | 0.0 تا 1.0 | آستانه صاف‌سازی کف (پیش‌فرض: 0.0) |
-| `pivot_to_center_bottom` | BOOLEAN | خیر | True/False | آیا نقطه محوری به مرکز پایین مدل منتقل شود (پیش‌فرض: False) |
-| `scale_factor` | FLOAT | خیر | 0.0 و بالاتر | ضریب مقیاس اعمال‌شده روی مدل (پیش‌فرض: 1.0) |
-| `with_animation` | BOOLEAN | خیر | True/False | آیا داده‌های انیمیشن در خروجی گنجانده شود (پیش‌فرض: False) |
-| `pack_uv` | BOOLEAN | خیر | True/False | آیا مختصات UV بسته‌بندی شود (پیش‌فرض: False) |
-| `bake` | BOOLEAN | خیر | True/False | آیا بافت‌ها پخت شوند (پیش‌فرض: False) |
-| `part_names` | STRING | خیر | لیست جدا شده با کاما | لیست جدا شده با کاما از نام قطعات برای گنجاندن در خروجی (پیش‌فرض: "") |
-| `fbx_preset` | COMBO | خیر | blender<br>mixamo<br>3dsmax | پیش‌تنظیم خروجی FBX (پیش‌فرض: blender) |
-| `export_vertex_colors` | BOOLEAN | خیر | True/False | آیا رنگ‌های رأس صادر شود (پیش‌فرض: False) |
-| `export_orientation` | COMBO | خیر | align_image<br>default | حالت جهت‌گیری خروجی (پیش‌فرض: default) |
-| `animate_in_place` | BOOLEAN | خیر | True/False | آیا مدل در مکان خود انیمیت شود (پیش‌فرض: False) |
+| `محدودیت چهره` | INT | خیر | 1- تا 2000000 | حداکثر تعداد وجه در مدل خروجی، از 1- برای بدون محدودیت استفاده کنید (پیش‌فرض: 1-) |
+| `اندازه تکسچر` | INT | خیر | 128 تا 4096 | اندازه بافت‌های خروجی بر حسب پیکسل (پیش‌فرض: 4096) |
+| `فرمت تکسچر` | COMBO | خیر | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | فرمت بافت‌های خروجی (پیش‌فرض: JPEG) |
+| `اجبار تقارن` | BOOLEAN | خیر | True/False | آیا تقارن روی مدل اعمال شود (پیش‌فرض: False) |
+| `تخت کردن پایین` | BOOLEAN | خیر | True/False | آیا کف مدل صاف شود (پیش‌فرض: False) |
+| `آستانه تخت کردن پایین` | FLOAT | خیر | 0.0 تا 1.0 | آستانه صاف‌سازی کف (پیش‌فرض: 0.0) |
+| `محور به مرکز پایین` | BOOLEAN | خیر | True/False | آیا نقطه محوری به مرکز پایین مدل منتقل شود (پیش‌فرض: False) |
+| `ضریب مقیاس` | FLOAT | خیر | 0.0 و بالاتر | ضریب مقیاس اعمال‌شده روی مدل (پیش‌فرض: 1.0) |
+| `با انیمیشن` | BOOLEAN | خیر | True/False | آیا داده‌های انیمیشن در خروجی گنجانده شود (پیش‌فرض: False) |
+| `بسته‌بندی UV` | BOOLEAN | خیر | True/False | آیا مختصات UV بسته‌بندی شود (پیش‌فرض: False) |
+| `بِیک` | BOOLEAN | خیر | True/False | آیا بافت‌ها پخت شوند (پیش‌فرض: False) |
+| `نام بخش‌ها` | STRING | خیر | لیست جدا شده با کاما | لیست جدا شده با کاما از نام قطعات برای گنجاندن در خروجی (پیش‌فرض: "") |
+| `پیش‌تنظیم FBX` | COMBO | خیر | blender<br>mixamo<br>3dsmax | پیش‌تنظیم خروجی FBX (پیش‌فرض: blender) |
+| `خروجی رنگ رأس‌ها` | BOOLEAN | خیر | True/False | آیا رنگ‌های رأس صادر شود (پیش‌فرض: False) |
+| `خروجی جهت` | COMBO | خیر | align_image<br>default | حالت جهت‌گیری خروجی (پیش‌فرض: default) |
+| `انیمیشن در محل` | BOOLEAN | خیر | True/False | آیا مدل در مکان خود انیمیت شود (پیش‌فرض: False) |
 
 **توجه:** `original_model_task_id` باید یک شناسه وظیفه معتبر از یک عملیات قبلی Tripo (تولید مدل، ریگینگ یا ریتارگتینگ) باشد. پارامترهای علامت‌گذاری‌شده به عنوان "پیشرفته" اختیاری هستند و فقط برای نیازهای خاص خروجی باید پیکربندی شوند.
 

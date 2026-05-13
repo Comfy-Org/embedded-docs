@@ -6,10 +6,10 @@ SaveAnimatedPNG düğümü, bir dizi kareden oluşan hareketli PNG görüntüler
 
 | Alan              | Veri Türü  | Açıklama                                                                           |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
-| `images`          | `IMAGE`     | İşlenecek ve hareketli PNG olarak kaydedilecek görüntülerin listesi. Listedeki her görüntü, animasyonda bir kareyi temsil eder. |
-| `filename_prefix` | `STRING`    | Çıktı dosyası için temel adı belirtir; oluşturulan hareketli PNG dosyaları için ön ek olarak kullanılır. |
+| `görüntüler`          | `IMAGE`     | İşlenecek ve hareketli PNG olarak kaydedilecek görüntülerin listesi. Listedeki her görüntü, animasyonda bir kareyi temsil eder. |
+| `dosyaadı_öneki` | `STRING`    | Çıktı dosyası için temel adı belirtir; oluşturulan hareketli PNG dosyaları için ön ek olarak kullanılır. |
 | `fps`             | `FLOAT`     | Animasyonun saniyedeki kare sayısı (FPS) değeri; karelerin ne kadar hızlı görüntüleneceğini kontrol eder. |
-| `compress_level`  | `INT`       | Hareketli PNG dosyalarına uygulanan sıkıştırma seviyesi; dosya boyutunu ve görüntü netliğini etkiler. |
+| `sıkıştırma_seviyesi`  | `INT`       | Hareketli PNG dosyalarına uygulanan sıkıştırma seviyesi; dosya boyutunu ve görüntü netliğini etkiler. |
 
 ## Çıktılar
 

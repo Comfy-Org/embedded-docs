@@ -7,12 +7,12 @@ Ce nœud est conçu pour encoder une entrée textuelle à l'aide d'un modèle CL
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
 | `clip` | CLIP | Instance du modèle CLIP utilisée pour l'encodage du texte. |
-| `width` | INT | Spécifie la largeur de l'image en pixels, valeur par défaut 1024. |
-| `height` | INT | Spécifie la hauteur de l'image en pixels, valeur par défaut 1024. |
+| `largeur` | INT | Spécifie la largeur de l'image en pixels, valeur par défaut 1024. |
+| `hauteur` | INT | Spécifie la hauteur de l'image en pixels, valeur par défaut 1024. |
 | `crop_w` | INT | Largeur de la zone de recadrage en pixels, valeur par défaut 0. |
 | `crop_h` | INT | Hauteur de la zone de recadrage en pixels, valeur par défaut 0. |
-| `target_width` | INT | Largeur cible pour l'image de sortie, valeur par défaut 1024. |
-| `target_height` | INT | Hauteur cible pour l'image de sortie, valeur par défaut 1024. |
+| `largeur_cible` | INT | Largeur cible pour l'image de sortie, valeur par défaut 1024. |
+| `hauteur_cible` | INT | Hauteur cible pour l'image de sortie, valeur par défaut 1024. |
 | `text_g` | STRING | Description textuelle globale pour la description générale de la scène. |
 | `text_l` | STRING | Description textuelle locale pour la description des détails. |
 

@@ -8,7 +8,7 @@ O nó UpscaleModelLoader foi projetado para carregar modelos de upscale de um di
 
 | Campo          | Tipo Comfy       | Descrição                                                                       |
 |----------------|-------------------|-----------------------------------------------------------------------------------|
-| `model_name`   | `COMBO[STRING]`    | Especifica o nome do modelo de upscale a ser carregado, identificando e recuperando o arquivo de modelo correto do diretório de modelos de upscale. |
+| `nome_modelo`   | `COMBO[STRING]`    | Especifica o nome do modelo de upscale a ser carregado, identificando e recuperando o arquivo de modelo correto do diretório de modelos de upscale. |
 
 ## Saídas
 

@@ -7,12 +7,12 @@ Ce nœud modifie une image existante en fonction d'un prompt textuel et d'un par
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à modifier |
-| `prompt` | STRING | Oui | - | Prompt pour la génération d'image (par défaut : "", longueur maximale : 1000 caractères) |
+| `invite` | STRING | Oui | - | Prompt pour la génération d'image (par défaut : "", longueur maximale : 1000 caractères) |
 | `n` | INT | Oui | 1-6 | Le nombre d'images à générer (par défaut : 1) |
-| `strength` | FLOAT | Oui | 0.0-1.0 | Définit la différence avec l'image originale, doit se situer dans [0, 1], où 0 signifie presque identique et 1 signifie une similarité très faible (par défaut : 0.5) |
-| `seed` | INT | Oui | 0-18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
+| `intensité` | FLOAT | Oui | 0.0-1.0 | Définit la différence avec l'image originale, doit se situer dans [0, 1], où 0 signifie presque identique et 1 signifie une similarité très faible (par défaut : 0.5) |
+| `graine` | INT | Oui | 0-18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
 | `recraft_style` | STYLEV3 | Non | - | Sélection facultative du style pour la génération d'image. Si non fourni, la valeur par défaut est `realistic_image` |
-| `negative_prompt` | STRING | Non | - | Une description textuelle facultative des éléments indésirables sur une image (par défaut : "") |
+| `invite_négative` | STRING | Non | - | Une description textuelle facultative des éléments indésirables sur une image (par défaut : "") |
 | `recraft_controls` | CONTROLS | Non | - | Contrôles supplémentaires facultatifs sur la génération via le nœud Contrôles Recraft |
 
 **Remarque :** Le paramètre `seed` déclenche uniquement la réexécution du nœud mais ne garantit pas des résultats déterministes. Le paramètre de force est arrondi à 2 décimales en interne. Le prompt est validé et ne doit pas dépasser 1000 caractères. Si `recraft_style` n'est pas fourni, le nœud utilise par défaut le style `realistic_image`.

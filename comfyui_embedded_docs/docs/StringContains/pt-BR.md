@@ -8,7 +8,7 @@ O nó StringContains verifica se uma determinada string contém uma substring es
 |-----------|---------------|-------------|-------|-----------|
 | `string` | STRING | Sim | - | A string de texto principal a ser pesquisada |
 | `substring` | STRING | Sim | - | O texto a ser procurado dentro da string principal |
-| `case_sensitive` | BOOLEAN | Não | - | Determina se a pesquisa deve ser sensível a maiúsculas/minúsculas (padrão: verdadeiro) |
+| `diferenciar_maiusculas_minusculas` | BOOLEAN | Não | - | Determina se a pesquisa deve ser sensível a maiúsculas/minúsculas (padrão: verdadeiro) |
 
 ## Saídas
 

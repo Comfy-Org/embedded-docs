@@ -8,12 +8,12 @@ Le nœud Wan Image to Image génère une image à partir d'une ou deux images d'
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | "wan2.5-i2i-preview" | Modèle à utiliser (par défaut : "wan2.5-i2i-preview"). |
+| `modèle` | COMBO | Oui | "wan2.5-i2i-preview" | Modèle à utiliser (par défaut : "wan2.5-i2i-preview"). |
 | `image` | IMAGE | Oui | - | Édition d'une seule image ou fusion de plusieurs images, maximum 2 images. |
-| `prompt` | STRING | Oui | - | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois (par défaut : vide). |
-| `negative_prompt` | STRING | Non | - | Invite négative décrivant ce qu'il faut éviter (par défaut : vide). |
-| `seed` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
-| `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : false). |
+| `invite` | STRING | Oui | - | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois (par défaut : vide). |
+| `invite_négative` | STRING | Non | - | Invite négative décrivant ce qu'il faut éviter (par défaut : vide). |
+| `graine` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
+| `filigrane` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : false). |
 
 **Remarque :** Ce nœud accepte exactement 1 ou 2 images d'entrée. Si vous fournissez plus de 2 images ou aucune image, le nœud renverra une erreur.
 

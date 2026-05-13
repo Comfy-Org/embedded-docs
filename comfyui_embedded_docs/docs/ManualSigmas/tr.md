@@ -6,13 +6,13 @@ ManualSigmas düğümü, örnekleme süreci için özel bir gürültü seviyesi 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `sigmas` | STRING | Evet | Virgül veya boşlukla ayrılmış herhangi bir sayı | Sigma değerlerini içeren bir dize. Düğüm, bu dizedeki tüm sayıları çıkarır. Örneğin, "1, 0.5, 0.1" veya "1 0.5 0.1". Varsayılan değer "1, 0.5" şeklindedir. |
+| `sigmalar` | STRING | Evet | Virgül veya boşlukla ayrılmış herhangi bir sayı | Sigma değerlerini içeren bir dize. Düğüm, bu dizedeki tüm sayıları çıkarır. Örneğin, "1, 0.5, 0.1" veya "1 0.5 0.1". Varsayılan değer "1, 0.5" şeklindedir. |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `sigmas` | SIGMAS | Giriş dizesinden çıkarılan sigma değerleri dizisini içeren tensör. |
+| `sigmalar` | SIGMAS | Giriş dizesinden çıkarılan sigma değerleri dizisini içeren tensör. |
 
 ---
 **Source fingerprint (SHA-256):** `b815633dfea8f529f487f46b2d0464fa8c1045df8c4d4ef586bd36ad6f4a28db`

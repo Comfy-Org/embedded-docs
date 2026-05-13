@@ -6,7 +6,7 @@ El nodo Convertir Número transforma varios tipos de datos de entrada en valores
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `value` | INT, FLOAT, STRING, BOOLEAN | Sí | N/A | El valor que se convertirá en salidas numéricas. Acepta un número entero, un número de punto flotante, una cadena de texto o un valor booleano verdadero/falso. |
+| `valor` | INT, FLOAT, STRING, BOOLEAN | Sí | N/A | El valor que se convertirá en salidas numéricas. Acepta un número entero, un número de punto flotante, una cadena de texto o un valor booleano verdadero/falso. |
 
 **Nota:** Cuando la entrada es una cadena de texto, no debe estar vacía y debe contener una representación válida de un número (por ejemplo, `"123"`, `"3.14"`). El nodo generará un error para cadenas vacías, texto que no pueda interpretarse como un número o valores que no sean finitos (como `"inf"` o `"nan"`). Para entradas booleanas, `true` se convierte en 1.0 (FLOAT) y 1 (INT), mientras que `false` se convierte en 0.0 (FLOAT) y 0 (INT). Para entradas flotantes, la salida entera se obtiene truncando la parte decimal.
 

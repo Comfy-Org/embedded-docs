@@ -12,7 +12,7 @@ Ce nœud charge un ensemble de données d'entraînement encodé préalablement s
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `latents` | LATENT | Une liste de dictionnaires latents, où chaque dictionnaire contient une clé `"samples"` avec un tenseur. |
+| `conditioning` | LATENT | Une liste de dictionnaires latents, où chaque dictionnaire contient une clé `"samples"` avec un tenseur. |
 | `conditioning` | CONDITIONING | Une liste de listes de conditionnement, où chaque liste interne contient les données de conditionnement pour un échantillon correspondant. |
 
 ---

@@ -8,9 +8,9 @@ Frame Interpolate düğümü, bir görüntü dizisindeki mevcut kareler arasına
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `interp_model` | MODEL | Evet | - | Ara kareler oluşturmak için kullanılacak kare enterpolasyon modeli |
-| `images` | IMAGE | Evet | - | Enterpolasyon yapılacak ardışık görüntüler (kareler) topluluğu. En az 2 görüntü gerektirir. |
-| `multiplier` | INT | Evet | 2 ila 16 | Kare sayısının çarpılacağı katsayı. Örneğin, 2 çarpanı kare sayısını ikiye katlar. (varsayılan: 2) |
+| `enterpolasyon_modeli` | MODEL | Evet | - | Ara kareler oluşturmak için kullanılacak kare enterpolasyon modeli |
+| `görseller` | IMAGE | Evet | - | Enterpolasyon yapılacak ardışık görüntüler (kareler) topluluğu. En az 2 görüntü gerektirir. |
+| `çarpan` | INT | Evet | 2 ila 16 | Kare sayısının çarpılacağı katsayı. Örneğin, 2 çarpanı kare sayısını ikiye katlar. (varsayılan: 2) |
 
 ## Çıktılar
 

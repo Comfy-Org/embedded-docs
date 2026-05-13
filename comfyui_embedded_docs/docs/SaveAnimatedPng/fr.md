@@ -7,9 +7,9 @@ Le nœud SaveAnimatedPNG est conçu pour créer et enregistrer des images PNG an
 | Champ             | Type de données | Description                                                                         |
 |-------------------|-----------------|-------------------------------------------------------------------------------------|
 | `images`          | `IMAGE`         | Une liste d'images à traiter et à enregistrer sous forme de PNG animé. Chaque image de la liste représente une image de l'animation. |
-| `filename_prefix` | `STRING`        | Spécifie le nom de base du fichier de sortie, qui sera utilisé comme préfixe pour les fichiers PNG animés générés. |
+| `préfixe_nom_fichier` | `STRING`        | Spécifie le nom de base du fichier de sortie, qui sera utilisé comme préfixe pour les fichiers PNG animés générés. |
 | `fps`             | `FLOAT`         | Le taux d'images par seconde de l'animation, contrôlant la vitesse d'affichage des images. |
-| `compress_level`  | `INT`           | Le niveau de compression appliqué aux fichiers PNG animés, affectant la taille du fichier et la clarté de l'image. |
+| `niveau_compression`  | `INT`           | Le niveau de compression appliqué aux fichiers PNG animés, affectant la taille du fichier et la clarté de l'image. |
 
 ## Sorties
 

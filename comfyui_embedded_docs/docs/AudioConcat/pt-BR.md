@@ -10,7 +10,7 @@ O nó AudioConcat combina duas entradas de áudio unindo-as. Ele recebe duas ent
 |-----------|---------------|-------------|-------|-----------|
 | `audio1` | AUDIO | Sim | - | A primeira entrada de áudio a ser concatenada |
 | `audio2` | AUDIO | Sim | - | A segunda entrada de áudio a ser concatenada |
-| `direction` | COMBO | Sim | `"after"`<br>`"before"` | Se deve anexar audio2 após ou antes de audio1 (padrão: "after") |
+| `direção` | COMBO | Sim | `"after"`<br>`"before"` | Se deve anexar audio2 após ou antes de audio1 (padrão: "after") |
 
 ## Saídas
 

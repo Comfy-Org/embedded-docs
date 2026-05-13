@@ -34,7 +34,7 @@ TCFG (Amortiguación Tangencial CFG) refina las predicciones incondicionales (ne
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que se le aplicará la amortiguación tangencial CFG |
+| `modelo` | MODEL | Sí | - | El modelo al que se le aplicará la amortiguación tangencial CFG |
 
 ## Salidas
 

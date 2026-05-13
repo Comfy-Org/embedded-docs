@@ -6,9 +6,9 @@ Le nœud `EmptyLatentImage` est conçu pour générer une représentation vierge
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `width`   | `INT`           | Spécifie la largeur de l'image latente à générer. Ce paramètre influence directement les dimensions spatiales de la représentation latente résultante. |
-| `height`  | `INT`           | Détermine la hauteur de l'image latente à générer. Ce paramètre est crucial pour définir les dimensions spatiales de la représentation dans l'espace latent. |
-| `batch_size` | `INT`        | Contrôle le nombre d'images latentes à générer en un seul lot. Cela permet de générer simultanément plusieurs représentations latentes, facilitant ainsi le traitement par lots. |
+| `largeur`   | `INT`           | Spécifie la largeur de l'image latente à générer. Ce paramètre influence directement les dimensions spatiales de la représentation latente résultante. |
+| `hauteur`  | `INT`           | Détermine la hauteur de l'image latente à générer. Ce paramètre est crucial pour définir les dimensions spatiales de la représentation dans l'espace latent. |
+| `taille_du_lot` | `INT`        | Contrôle le nombre d'images latentes à générer en un seul lot. Cela permet de générer simultanément plusieurs représentations latentes, facilitant ainsi le traitement par lots. |
 
 ## Sorties
 

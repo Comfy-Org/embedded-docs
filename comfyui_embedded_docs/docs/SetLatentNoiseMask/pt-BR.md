@@ -6,7 +6,7 @@ Este nó é projetado para aplicar uma máscara de ruído a um conjunto de amost
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | As amostras latentes às quais a máscara de ruído será aplicada. Este parâmetro é crucial para determinar o conteúdo base que será modificado. |
+| `amostras` | `LATENT`    | As amostras latentes às quais a máscara de ruído será aplicada. Este parâmetro é crucial para determinar o conteúdo base que será modificado. |
 | `mask`    | `MASK`      | A máscara a ser aplicada às amostras latentes. Ela define as áreas e a intensidade da alteração de ruído dentro das amostras. |
 
 ## Saídas

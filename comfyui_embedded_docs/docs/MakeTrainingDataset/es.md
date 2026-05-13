@@ -6,10 +6,10 @@ Este nodo prepara datos para entrenamiento codificando imágenes y texto. Toma u
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Sí | N/A | Lista de imágenes a codificar. |
+| `imágenes` | IMAGE | Sí | N/A | Lista de imágenes a codificar. |
 | `vae` | VAE | Sí | N/A | Modelo VAE para codificar imágenes a latentes. |
 | `clip` | CLIP | Sí | N/A | Modelo CLIP para codificar texto a condicionamiento. |
-| `texts` | STRING | No | N/A | Lista de descripciones textuales. Puede tener longitud n (coincidiendo con las imágenes), 1 (repetida para todas), u omitirse (usa cadena vacía). |
+| `textos` | STRING | No | N/A | Lista de descripciones textuales. Puede tener longitud n (coincidiendo con las imágenes), 1 (repetida para todas), u omitirse (usa cadena vacía). |
 
 **Restricciones de Parámetros:**
 
@@ -19,7 +19,7 @@ Este nodo prepara datos para entrenamiento codificando imágenes y texto. Toma u
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `latents` | LATENT | Lista de diccionarios latentes. |
+| `acondicionamiento` | LATENT | Lista de diccionarios latentes. |
 | `conditioning` | CONDITIONING | Lista de listas de condicionamiento. |
 
 ---

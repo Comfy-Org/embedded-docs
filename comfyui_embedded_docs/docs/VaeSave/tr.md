@@ -7,7 +7,7 @@ The VAESave node is designed for saving VAE models along with their metadata, in
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `vae`     | VAE       | Kaydedilecek VAE modeli. Bu parametre, durumu serileştirilip depolanacak modeli temsil ettiği için kritik öneme sahiptir. |
-| `filename_prefix` | STRING   | Modelin ve meta verilerinin kaydedileceği dosya adı için bir ön ek. Bu, düzenli depolama ve modellerin kolayca bulunmasını sağlar. |
+| `dosyaadı_öneki` | STRING   | Modelin ve meta verilerinin kaydedileceği dosya adı için bir ön ek. Bu, düzenli depolama ve modellerin kolayca bulunmasını sağlar. |
 
 ## Çıktılar
 

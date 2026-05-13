@@ -6,14 +6,14 @@ El nodo Set Hook Keyframes permite aplicar programación de fotogramas clave a g
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `hooks` | HOOKS | Sí | - | El grupo de hooks al que se aplicará la programación de fotogramas clave |
-| `hook_kf` | HOOK_KEYFRAMES | No | - | Grupo opcional de fotogramas clave que contiene información de temporización para la ejecución de hooks |
+| `ganchos` | HOOKS | Sí | - | El grupo de hooks al que se aplicará la programación de fotogramas clave |
+| `gancho_kf` | HOOK_KEYFRAMES | No | - | Grupo opcional de fotogramas clave que contiene información de temporización para la ejecución de hooks |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `hooks` | HOOKS | El grupo de hooks modificado con la programación de fotogramas clave aplicada (clonado si se proporcionaron fotogramas clave) |
+| `ganchos` | HOOKS | El grupo de hooks modificado con la programación de fotogramas clave aplicada (clonado si se proporcionaron fotogramas clave) |
 
 ---
 **Source fingerprint (SHA-256):** `48908e5247b18e5b7b1d894c2f1adcf6403e499125b0c3eb05978584b3d5759b`

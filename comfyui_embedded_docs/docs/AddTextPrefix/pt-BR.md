@@ -7,7 +7,7 @@ O nó Adicionar Prefixo de Texto modifica o texto adicionando uma string especif
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `text` | STRING | Sim | | O texto ao qual o prefixo será adicionado. |
-| `prefix` | STRING | Não | | A string a ser adicionada ao início do texto (padrão: ""). |
+| `prefixo` | STRING | Não | | A string a ser adicionada ao início do texto (padrão: ""). |
 
 ## Saídas
 

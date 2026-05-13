@@ -6,10 +6,10 @@ Ce nœud convertit une représentation audio compressée (échantillons latents)
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `samples` | LATENT | Oui | N/D | La représentation latente compressée de l'audio à décoder. |
+| `échantillons` | LATENT | Oui | N/D | La représentation latente compressée de l'audio à décoder. |
 | `vae` | VAE | Oui | N/D | Le modèle d'autoencodeur variationnel utilisé pour effectuer le décodage. |
-| `tile_size` | INT | Oui | 32 à 8192 | La taille de chaque tuile de traitement. L'audio est décodé en sections de cette longueur pour économiser la mémoire (par défaut : 512). |
-| `overlap` | INT | Oui | 0 à 1024 | Le nombre d'échantillons sur lesquels les tuiles adjacentes se chevauchent. Cela permet de réduire les artefacts aux limites entre les tuiles (par défaut : 64). |
+| `taille de tuile` | INT | Oui | 32 à 8192 | La taille de chaque tuile de traitement. L'audio est décodé en sections de cette longueur pour économiser la mémoire (par défaut : 512). |
+| `chevauchement` | INT | Oui | 0 à 1024 | Le nombre d'échantillons sur lesquels les tuiles adjacentes se chevauchent. Cela permet de réduire les artefacts aux limites entre les tuiles (par défaut : 64). |
 
 ## Sorties
 

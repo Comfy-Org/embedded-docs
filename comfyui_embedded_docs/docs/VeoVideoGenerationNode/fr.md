@@ -16,7 +16,7 @@ Génère des vidéos à partir de descriptions textuelles en utilisant l'API Goo
 | `person_generation` | COMBO | Non | "ALLOW"<br>"BLOCK" | Indique s'il faut autoriser la génération de personnes dans la vidéo (par défaut : "ALLOW"). Il s'agit d'un paramètre avancé. |
 | `seed` | INT | Non | 0-4294967295 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0). Il s'agit d'un paramètre avancé. |
 | `image` | IMAGE | Non | - | Image de référence optionnelle pour guider la génération vidéo |
-| `model` | COMBO | Non | "veo-2.0-generate-001" | Modèle Veo 2 à utiliser pour la génération vidéo (par défaut : "veo-2.0-generate-001") |
+| `modèle` | COMBO | Non | "veo-2.0-generate-001" | Modèle Veo 2 à utiliser pour la génération vidéo (par défaut : "veo-2.0-generate-001") |
 
 **Remarque :** Le paramètre `generate_audio` est uniquement disponible pour les modèles Veo 3.0 et est automatiquement géré par le nœud en fonction du modèle sélectionné. Lors de l'utilisation de modèles Veo 3.0, le paramètre `enhance_prompt` est forcé à True.
 

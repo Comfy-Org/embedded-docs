@@ -6,12 +6,12 @@ Este nodo te permite unir dos imágenes en una dirección especificada (arriba, 
 
 | Nombre del Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
 |---------------|-----------|-------------|---------|--------|-------------|
-| `image1` | IMAGE | Requerida | - | - | La primera imagen que se va a unir |
-| `image2` | IMAGE | Opcional | None | - | La segunda imagen que se va a unir; si no se proporciona, devuelve solo la primera imagen |
-| `direction` | STRING | Requerida | right | right/down/left/up | La dirección para unir la segunda imagen: derecha, abajo, izquierda o arriba |
-| `match_image_size` | BOOLEAN | Requerida | True | True/False | Si se debe redimensionar la segunda imagen para que coincida con las dimensiones de la primera imagen |
-| `spacing_width` | INT | Requerida | 0 | 0-1024 | Ancho del espacio entre imágenes, debe ser un número par |
-| `spacing_color` | STRING | Requerida | white | white/black/red/green/blue | Color del espacio entre las imágenes unidas |
+| `imagen1` | IMAGE | Requerida | - | - | La primera imagen que se va a unir |
+| `imagen2` | IMAGE | Opcional | None | - | La segunda imagen que se va a unir; si no se proporciona, devuelve solo la primera imagen |
+| `dirección` | STRING | Requerida | right | right/down/left/up | La dirección para unir la segunda imagen: derecha, abajo, izquierda o arriba |
+| `coincidir_tamaño_imagen` | BOOLEAN | Requerida | True | True/False | Si se debe redimensionar la segunda imagen para que coincida con las dimensiones de la primera imagen |
+| `ancho_espaciado` | INT | Requerida | 0 | 0-1024 | Ancho del espacio entre imágenes, debe ser un número par |
+| `color_espaciado` | STRING | Requerida | white | white/black/red/green/blue | Color del espacio entre las imágenes unidas |
 
 > Para `spacing_color`, al usar colores distintos a "white/black", si `match_image_size` está configurado como `false`, el área de relleno se completará con negro
 

@@ -6,7 +6,7 @@ Le nœud PrimitiveInt offre un moyen simple de manipuler des valeurs entières d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `value` | INT | Oui | -9223372036854775807 à 9223372036854775807 | La valeur entière à produire en sortie (par défaut : 0) |
+| `valeur` | INT | Oui | -9223372036854775807 à 9223372036854775807 | La valeur entière à produire en sortie (par défaut : 0) |
 
 ## Sorties
 

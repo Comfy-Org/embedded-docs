@@ -6,7 +6,7 @@ Le nœud ModelPatchLoader charge des correctifs de modèle spécialisés depuis 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `name` | STRING | Oui | Tous les fichiers de correctifs de modèle disponibles dans le dossier model_patches | Le nom du fichier de correctif de modèle à charger depuis le répertoire model_patches |
+| `nom` | STRING | Oui | Tous les fichiers de correctifs de modèle disponibles dans le dossier model_patches | Le nom du fichier de correctif de modèle à charger depuis le répertoire model_patches |
 
 ## Sorties
 

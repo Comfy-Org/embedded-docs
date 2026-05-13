@@ -6,11 +6,11 @@ Le nœud ConditioningConcat est conçu pour concaténer des vecteurs de conditio
 
 | Paramètre           | Type Comfy        | Description |
 |---------------------|-------------------|-------------|
-| `conditioning_to`   | `CONDITIONING`    | Représente l'ensemble principal de vecteurs de conditionnement auquel les vecteurs `conditioning_from` seront concaténés. Il sert de base au processus de concaténation. |
-| `conditioning_from` | `CONDITIONING`    | Contient les vecteurs de conditionnement qui doivent être concaténés aux vecteurs `conditioning_to`. Ce paramètre permet d'intégrer des informations de conditionnement supplémentaires à l'ensemble existant. |
+| `conditionnement_vers`   | `CONDITIONING`    | Représente l'ensemble principal de vecteurs de conditionnement auquel les vecteurs `conditionnement_de` seront concaténés. Il sert de base au processus de concaténation. |
+| `conditionnement_de` | `CONDITIONING`    | Contient les vecteurs de conditionnement qui doivent être concaténés aux vecteurs `conditionnement_vers`. Ce paramètre permet d'intégrer des informations de conditionnement supplémentaires à l'ensemble existant. |
 
 ## Sorties
 
 | Paramètre          | Type Comfy        | Description |
 |--------------------|-------------------|-------------|
-| `conditioning`     | `CONDITIONING`    | La sortie est un ensemble unifié de vecteurs de conditionnement, résultant de la concaténation des vecteurs `conditioning_from` dans les vecteurs `conditioning_to`. |
+| `conditioning`     | `CONDITIONING`    | La sortie est un ensemble unifié de vecteurs de conditionnement, résultant de la concaténation des vecteurs `conditionnement_de` dans les vecteurs `conditionnement_vers`. |

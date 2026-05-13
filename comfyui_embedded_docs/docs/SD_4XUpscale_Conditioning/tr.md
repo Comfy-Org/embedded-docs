@@ -6,18 +6,18 @@ SD_4XUpscale_Conditioning düğümü, difüzyon modelleri kullanarak görüntül
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | - | Büyütülecek giriş görüntüleri |
-| `positive` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verileri |
-| `negative` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verileri |
-| `scale_ratio` | FLOAT | Hayır | 0.0 - 10.0 | Giriş görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) |
-| `noise_augmentation` | FLOAT | Hayır | 0.0 - 1.0 | Büyütme işlemi sırasında eklenecek gürültü miktarı (varsayılan: 0.0) |
+| `görüntüler` | IMAGE | Evet | - | Büyütülecek giriş görüntüleri |
+| `pozitif` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verileri |
+| `negatif` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verileri |
+| `ölçek_oranı` | FLOAT | Hayır | 0.0 - 10.0 | Giriş görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) |
+| `gürültü_artırımı` | FLOAT | Hayır | 0.0 - 1.0 | Büyütme işlemi sırasında eklenecek gürültü miktarı (varsayılan: 0.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `positive` | CONDITIONING | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
+| `gizli` | CONDITIONING | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
 | `latent` | LATENT | Büyütülmüş boyutlarla eşleşen boş gizli temsil |
 
 ---

@@ -6,8 +6,8 @@ Le nœud **Join Audio Channels** combine deux entrées audio mono distinctes en 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `audio_left` | AUDIO | Oui | | Les données audio mono à utiliser comme canal gauche dans l'audio stéréo résultant. |
-| `audio_right` | AUDIO | Oui | | Les données audio mono à utiliser comme canal droit dans l'audio stéréo résultant. |
+| `audio gauche` | AUDIO | Oui | | Les données audio mono à utiliser comme canal gauche dans l'audio stéréo résultant. |
+| `audio droit` | AUDIO | Oui | | Les données audio mono à utiliser comme canal droit dans l'audio stéréo résultant. |
 
 **Remarque :** Les deux flux audio en entrée doivent être mono (monocanal). S'ils ont des fréquences d'échantillonnage différentes, le canal avec la fréquence la plus basse sera automatiquement rééchantillonné pour correspondre à la fréquence la plus élevée. Si les flux audio ont des longueurs différentes, ils seront tronqués à la longueur du plus court.
 

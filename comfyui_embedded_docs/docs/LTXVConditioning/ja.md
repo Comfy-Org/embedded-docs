@@ -8,16 +8,16 @@ LTXVConditioning ノードは、動画生成モデル向けに、ポジティブ
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | はい | - | フレームレート情報を受け取るポジティブ conditioning 入力 |
-| `negative` | CONDITIONING | はい | - | フレームレート情報を受け取るネガティブ conditioning 入力 |
-| `frame_rate` | FLOAT | はい | 0.0 - 1000.0 | 両方の conditioning セットに適用するフレームレート値（デフォルト：25.0） |
+| `ポジティブ` | CONDITIONING | はい | - | フレームレート情報を受け取るポジティブ conditioning 入力 |
+| `ネガティブ` | CONDITIONING | はい | - | フレームレート情報を受け取るネガティブ conditioning 入力 |
+| `フレームレート` | FLOAT | はい | 0.0 - 1000.0 | 両方の conditioning セットに適用するフレームレート値（デフォルト：25.0） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | フレームレート情報が適用されたポジティブ conditioning |
-| `negative` | CONDITIONING | フレームレート情報が適用されたネガティブ conditioning |
+| `ネガティブ` | CONDITIONING | フレームレート情報が適用されたポジティブ conditioning |
+| `ネガティブ` | CONDITIONING | フレームレート情報が適用されたネガティブ conditioning |
 
 ---
 **Source fingerprint (SHA-256):** `e8c18b73eb009c1b3ebcc2cb8be3dee4e065d75908607a5cf15d41f89963ee09`

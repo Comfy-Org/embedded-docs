@@ -6,14 +6,14 @@ ImageRotate düğümü, giriş görüntüsünü belirtilen açılarla döndürü
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `image` | IMAGE | Evet | - | Döndürülecek giriş görüntüsü |
-| `rotation` | STRING | Evet | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" | Görüntüye uygulanacak döndürme açısı (varsayılan: "none") |
+| `görüntü` | IMAGE | Evet | - | Döndürülecek giriş görüntüsü |
+| `döndürme` | STRING | Evet | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" | Görüntüye uygulanacak döndürme açısı (varsayılan: "none") |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | Döndürülmüş çıktı görüntüsü |
+| `görüntü` | IMAGE | Döndürülmüş çıktı görüntüsü |
 
 ---
 **Source fingerprint (SHA-256):** `068946b31ebe87b2524a1e628b5bc0a3da7367d7252fa7afafe96bcbb174747d`

@@ -6,8 +6,8 @@ El nodo EmptyAceStepLatentAudio crea muestras de audio latente vacías de una du
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `seconds` | FLOAT | Sí | 1.0 - 1000.0 | La duración del audio en segundos (predeterminado: 120.0) |
-| `batch_size` | INT | Sí | 1 - 4096 | El número de imágenes latentes en el lote (predeterminado: 1) |
+| `segundos` | FLOAT | Sí | 1.0 - 1000.0 | La duración del audio en segundos (predeterminado: 120.0) |
+| `tamaño_del_lote` | INT | Sí | 1 - 4096 | El número de imágenes latentes en el lote (predeterminado: 1) |
 
 ## Salidas
 

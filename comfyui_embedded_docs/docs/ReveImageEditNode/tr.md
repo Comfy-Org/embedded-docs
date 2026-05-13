@@ -6,8 +6,8 @@ Reve Image Edit düğümü, mevcut bir görseli metin açıklamasına göre değ
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Düzenlenecek görsel. |
-| `edit_instruction` | STRING | Evet | - | Görselin nasıl düzenleneceğine dair metin açıklaması. Maksimum 2560 karakter. |
+| `görsel` | IMAGE | Evet | - | Düzenlenecek görsel. |
+| `düzenleme_talimatı` | STRING | Evet | - | Görselin nasıl düzenleneceğine dair metin açıklaması. Maksimum 2560 karakter. |
 | `model` | MODEL | Evet | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` | Düzenleme için kullanılacak model sürümü. |
 | `model.aspect_ratio` | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Düzenlenmiş görsel için en-boy oranı. "auto" olarak ayarlandığında en-boy oranı otomatik olarak belirlenir. |
 | `model.test_time_scaling` | FLOAT | Hayır | - | Model için test zamanı ölçekleme faktörü. Daha yüksek değerler kaliteyi artırabilir ancak işlem süresini uzatır. |
@@ -22,7 +22,7 @@ Reve Image Edit düğümü, mevcut bir görseli metin açıklamasına göre değ
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Talimata göre oluşturulan düzenlenmiş görsel. |
+| `görsel` | IMAGE | Talimata göre oluşturulan düzenlenmiş görsel. |
 
 ---
 **Source fingerprint (SHA-256):** `0a9504ae5e8b7216d309fe3ba95c014da32eadbf11cfc5701247ba5973dd98be`

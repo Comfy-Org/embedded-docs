@@ -6,8 +6,8 @@ El nodo LatentRotate está diseñado para rotar representaciones latentes de im�
 
 | Parámetro  | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes de las imágenes a rotar. Es crucial para determinar el punto de inicio de la operación de rotación. |
-| `rotation` | COMBO[STRING] | El parámetro 'rotation' especifica el ángulo con el que deben rotarse las imágenes latentes. Influye directamente en la orientación de las imágenes resultantes. |
+| `muestras` | `LATENT`    | El parámetro 'samples' representa las representaciones latentes de las imágenes a rotar. Es crucial para determinar el punto de inicio de la operación de rotación. |
+| `rotación` | COMBO[STRING] | El parámetro 'rotation' especifica el ángulo con el que deben rotarse las imágenes latentes. Influye directamente en la orientación de las imágenes resultantes. |
 
 ## Salidas
 

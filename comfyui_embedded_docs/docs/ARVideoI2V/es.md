@@ -8,13 +8,13 @@ Este nodo prepara una configuración de generación de imagen a video para model
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de video AR que se utilizará para la generación. |
+| `modelo` | MODEL | Sí | - | El modelo de video AR que se utilizará para la generación. |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar la imagen inicial en el espacio latente. |
-| `start_image` | IMAGE | Sí | - | La imagen inicial que servirá como primer fotograma del video generado. |
-| `width` | INT | Sí | 16 a 8192 (paso: 16) | El ancho de los fotogramas del video generado (predeterminado: 832). |
-| `height` | INT | Sí | 16 a 8192 (paso: 16) | La altura de los fotogramas del video generado (predeterminado: 480). |
-| `length` | INT | Sí | 1 a 1024 (paso: 4) | El número total de fotogramas en el video generado (predeterminado: 81). |
-| `batch_size` | INT | Sí | 1 a 64 | La cantidad de secuencias de video a generar en un solo lote (predeterminado: 1). |
+| `imagen_inicial` | IMAGE | Sí | - | La imagen inicial que servirá como primer fotograma del video generado. |
+| `ancho` | INT | Sí | 16 a 8192 (paso: 16) | El ancho de los fotogramas del video generado (predeterminado: 832). |
+| `alto` | INT | Sí | 16 a 8192 (paso: 16) | La altura de los fotogramas del video generado (predeterminado: 480). |
+| `longitud` | INT | Sí | 1 a 1024 (paso: 4) | El número total de fotogramas en el video generado (predeterminado: 81). |
+| `tamaño_de_lote` | INT | Sí | 1 a 64 | La cantidad de secuencias de video a generar en un solo lote (predeterminado: 1). |
 
 ## Salidas
 

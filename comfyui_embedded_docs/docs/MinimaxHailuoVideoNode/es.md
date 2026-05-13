@@ -34,12 +34,12 @@ Genera videos a partir de indicaciones de texto utilizando el modelo MiniMax Hai
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `prompt_text` | STRING | Sí | - | Indicación de texto para guiar la generación del video. |
-| `seed` | INT | No | 0 a 18446744073709551615 | Semilla aleatoria utilizada para crear el ruido (predeterminado: 0). |
-| `first_frame_image` | IMAGE | No | - | Imagen opcional para usar como primer fotograma y generar un video. |
-| `prompt_optimizer` | BOOLEAN | No | - | Optimizar la indicación para mejorar la calidad de generación cuando sea necesario (predeterminado: True). |
-| `duration` | COMBO | No | `6`<br>`10` | Duración del video de salida en segundos (predeterminado: 6). |
-| `resolution` | COMBO | No | `"768P"`<br>`"1080P"` | Dimensiones de la visualización del video. 1080p es 1920x1080, 768p es 1366x768 (predeterminado: "768P"). |
+| `texto_del_prompt` | STRING | Sí | - | Indicación de texto para guiar la generación del video. |
+| `semilla` | INT | No | 0 a 18446744073709551615 | Semilla aleatoria utilizada para crear el ruido (predeterminado: 0). |
+| `imagen_primer_fotograma` | IMAGE | No | - | Imagen opcional para usar como primer fotograma y generar un video. |
+| `optimizador_de_prompt` | BOOLEAN | No | - | Optimizar la indicación para mejorar la calidad de generación cuando sea necesario (predeterminado: True). |
+| `duración` | COMBO | No | `6`<br>`10` | Duración del video de salida en segundos (predeterminado: 6). |
+| `resolución` | COMBO | No | `"768P"`<br>`"1080P"` | Dimensiones de la visualización del video. 1080p es 1920x1080, 768p es 1366x768 (predeterminado: "768P"). |
 
 **Nota:** Al usar el modelo MiniMax-Hailuo-02 con resolución 1080P, la duración está limitada a 6 segundos.
 

@@ -6,12 +6,12 @@ El nodo **Meshy: Texture** aplica texturas generadas por IA a un modelo 3D. Toma
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"latest"` | La versión del modelo de IA a utilizar para texturizar. Actualmente, solo está disponible la versión "latest". |
+| `modelo` | COMBO | Sí | `"latest"` | La versión del modelo de IA a utilizar para texturizar. Actualmente, solo está disponible la versión "latest". |
 | `meshy_task_id` | MESHY_TASK_ID | Sí | - | El identificador único (ID de tarea) de una tarea anterior de generación o conversión 3D de Meshy. Esto proporciona el modelo 3D base que se va a texturizar. |
-| `enable_original_uv` | BOOLEAN | No | - | Utiliza el UV original del modelo en lugar de generar nuevos UV. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad del resultado podría no ser óptima. |
+| `habilitar_uv_original` | BOOLEAN | No | - | Utiliza el UV original del modelo en lugar de generar nuevos UV. Cuando está habilitado (predeterminado: `True`), Meshy conserva las texturas existentes del modelo cargado. Si el modelo no tiene UV original, la calidad del resultado podría no ser óptima. |
 | `pbr` | BOOLEAN | No | - | Habilita la salida de material de Renderizado Basado en Física (PBR) para el modelo texturizado (predeterminado: `False`). |
-| `text_style_prompt` | STRING | No | - | Describe el estilo de textura deseado del objeto usando texto. Máximo 600 caracteres. No puede usarse al mismo tiempo que `image_style`. |
-| `image_style` | IMAGE | No | - | Una imagen 2D para guiar el proceso de texturizado. No puede usarse al mismo tiempo que `text_style_prompt`. |
+| `estilo_texto` | STRING | No | - | Describe el estilo de textura deseado del objeto usando texto. Máximo 600 caracteres. No puede usarse al mismo tiempo que `estilo_imagen`. |
+| `estilo_imagen` | IMAGE | No | - | Una imagen 2D para guiar el proceso de texturizado. No puede usarse al mismo tiempo que `estilo_texto`. |
 
 **Restricciones de parámetros:**
 
@@ -22,9 +22,9 @@ El nodo **Meshy: Texture** aplica texturas generadas por IA a un modelo 3D. Toma
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model_file` | STRING | El nombre del archivo del modelo GLB generado. Esta salida se proporciona para compatibilidad con versiones anteriores. |
-| `meshy_task_id` | MODEL_TASK_ID | El identificador único de la tarea para este trabajo de texturizado, que puede usarse para hacer referencia al resultado. |
-| `GLB` | FILE3DGLB | El modelo 3D texturizado guardado en el formato de archivo GLB. |
+| `meshy_task_id` | STRING | El nombre del archivo del modelo GLB generado. Esta salida se proporciona para compatibilidad con versiones anteriores. |
+| `GLB` | MODEL_TASK_ID | El identificador único de la tarea para este trabajo de texturizado, que puede usarse para hacer referencia al resultado. |
+| `FBX` | FILE3DGLB | El modelo 3D texturizado guardado en el formato de archivo GLB. |
 | `FBX` | FILE3DFBX | El modelo 3D texturizado guardado en el formato de archivo FBX. |
 
 ---

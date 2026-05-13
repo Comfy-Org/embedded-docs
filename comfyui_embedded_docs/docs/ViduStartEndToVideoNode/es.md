@@ -34,14 +34,14 @@ El nodo Vidu Start End To Video Generation crea un video generando fotogramas en
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq1"` | Nombre del modelo |
-| `first_frame` | IMAGE | Sí | - | Fotograma inicial |
-| `end_frame` | IMAGE | Sí | - | Fotograma final |
+| `modelo` | COMBO | Sí | `"viduq1"` | Nombre del modelo |
+| `primer_cuadro` | IMAGE | Sí | - | Fotograma inicial |
+| `cuadro_final` | IMAGE | Sí | - | Fotograma final |
 | `prompt` | STRING | No | - | Una descripción textual para la generación del video |
-| `duration` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5, fijo en 5 segundos) |
-| `seed` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
-| `resolution` | COMBO | No | `"1080p"` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: "1080p") |
-| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma (predeterminado: "auto") |
+| `duración` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5, fijo en 5 segundos) |
+| `semilla` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
+| `resolución` | COMBO | No | `"1080p"` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: "1080p") |
+| `amplitud_de_movimiento` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma (predeterminado: "auto") |
 
 **Nota:** Los fotogramas inicial y final deben tener relaciones de aspecto compatibles (validadas con una tolerancia de relación min_rel=0.8, max_rel=1.25).
 

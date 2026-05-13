@@ -6,7 +6,7 @@ El nodo Combinar Listas de Imágenes fusiona múltiples listas separadas de imá
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `images` | IMAGE | Sí | - | Una lista de imágenes que se fusionarán. Esta entrada puede aceptar múltiples conexiones, y cada lista conectada se concatenará en la salida final. |
+| `imágenes` | IMAGE | Sí | - | Una lista de imágenes que se fusionarán. Esta entrada puede aceptar múltiples conexiones, y cada lista conectada se concatenará en la salida final. |
 
 **Nota:** Este nodo está diseñado para recibir múltiples entradas. Puedes conectar varias listas de imágenes a un único conector de entrada `images`. El nodo concatenará automáticamente todas las imágenes de todas las listas conectadas en una única lista de salida.
 
@@ -14,7 +14,7 @@ El nodo Combinar Listas de Imágenes fusiona múltiples listas separadas de imá
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `images` | IMAGE | La única lista fusionada que contiene todas las imágenes de cada lista de entrada conectada. |
+| `imágenes` | IMAGE | La única lista fusionada que contiene todas las imágenes de cada lista de entrada conectada. |
 
 ---
 **Source fingerprint (SHA-256):** `8fc53091b817a5036aae022aa841ba11fae0ed3242a969f5ae9072f48e061366`

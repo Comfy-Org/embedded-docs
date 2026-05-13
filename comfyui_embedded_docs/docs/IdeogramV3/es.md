@@ -15,8 +15,8 @@ El nodo Ideogram V3 genera imágenes utilizando el modelo Ideogram V3. Admite ta
 | `seed` | INT | No | 0-2147483647 | Semilla aleatoria para la generación (predeterminado: 0) |
 | `num_images` | INT | No | 1-8 | Número de imágenes a generar (predeterminado: 1) |
 | `rendering_speed` | COMBO | No | "DEFAULT"<br>"TURBO"<br>"QUALITY" | Controla la compensación entre velocidad de generación y calidad (predeterminado: "DEFAULT") |
-| `character_image` | IMAGE | No | - | Imagen para usar como referencia de personaje |
-| `character_mask` | MASK | No | - | Máscara opcional para la imagen de referencia de personaje |
+| `imagen_personaje` | IMAGE | No | - | Imagen para usar como referencia de personaje |
+| `máscara_personaje` | MASK | No | - | Máscara opcional para la imagen de referencia de personaje |
 
 **Restricciones de parámetros:**
 

@@ -6,9 +6,9 @@ O nó **StableCascade_StageC_VAEEncode** processa imagens através de um codific
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser codificada no espaço latente |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser codificada no espaço latente |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar a imagem |
-| `compression` | INT | Não | 4-128 | O fator de compressão aplicado à imagem antes da codificação (padrão: 42) |
+| `compressão` | INT | Não | 4-128 | O fator de compressão aplicado à imagem antes da codificação (padrão: 42) |
 
 ## Saídas
 

@@ -7,18 +7,18 @@ Ce nœud génère des modèles 3D de manière synchrone en utilisant l'API de Tr
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | Image de face de l'objet (requise) |
-| `image_left` | IMAGE | Non | - | Image de la vue gauche de l'objet |
-| `image_back` | IMAGE | Non | - | Image de la vue arrière de l'objet |
-| `image_right` | IMAGE | Non | - | Image de la vue droite de l'objet |
-| `model_version` | COMBO | Non | Plusieurs options disponibles | Version du modèle à utiliser pour la génération |
+| `image_gauche` | IMAGE | Non | - | Image de la vue gauche de l'objet |
+| `image_arrière` | IMAGE | Non | - | Image de la vue arrière de l'objet |
+| `image_droite` | IMAGE | Non | - | Image de la vue droite de l'objet |
+| `version_modèle` | COMBO | Non | Plusieurs options disponibles | Version du modèle à utiliser pour la génération |
 | `orientation` | COMBO | Non | Plusieurs options disponibles | Réglage d'orientation pour le modèle 3D (par défaut : "default") |
 | `texture` | BOOLEAN | Non | - | Indique s'il faut générer des textures pour le modèle (par défaut : True) |
 | `pbr` | BOOLEAN | Non | - | Indique s'il faut générer des matériaux PBR (Rendu Basé Physiquement) (par défaut : True) |
-| `model_seed` | INT | Non | - | Graine aléatoire pour la génération du modèle (par défaut : 42) |
-| `texture_seed` | INT | Non | - | Graine aléatoire pour la génération de la texture (par défaut : 42) |
-| `texture_quality` | COMBO | Non | `"standard"`<br>`"detailed"` | Niveau de qualité pour la génération de texture (par défaut : "standard") |
-| `texture_alignment` | COMBO | Non | `"original_image"`<br>`"geometry"` | Méthode d'alignement des textures sur le modèle (par défaut : "original_image") |
-| `face_limit` | INT | Non | -1 à 500000 | Nombre maximum de faces dans le modèle généré. Définir sur -1 pour aucune limite (par défaut : -1) |
+| `graine_modèle` | INT | Non | - | Graine aléatoire pour la génération du modèle (par défaut : 42) |
+| `graine_texture` | INT | Non | - | Graine aléatoire pour la génération de la texture (par défaut : 42) |
+| `qualité_texture` | COMBO | Non | `"standard"`<br>`"detailed"` | Niveau de qualité pour la génération de texture (par défaut : "standard") |
+| `alignement_texture` | COMBO | Non | `"original_image"`<br>`"geometry"` | Méthode d'alignement des textures sur le modèle (par défaut : "original_image") |
+| `limite_visage` | INT | Non | -1 à 500000 | Nombre maximum de faces dans le modèle généré. Définir sur -1 pour aucune limite (par défaut : -1) |
 | `quad` | BOOLEAN | Non | - | Ce paramètre est obsolète et n'a aucun effet (par défaut : False) |
 | `geometry_quality` | COMBO | Non | `"standard"`<br>`"detailed"` | Niveau de qualité pour la génération de la géométrie (par défaut : "standard") |
 
@@ -28,8 +28,8 @@ Ce nœud génère des modèles 3D de manière synchrone en utilisant l'API de Tr
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model_file` | STRING | Chemin du fichier ou identifiant du modèle 3D généré (uniquement pour la rétrocompatibilité) |
-| `model task_id` | MODEL_TASK_ID | Identifiant de tâche pour suivre le processus de génération du modèle |
+| `modèle task_id` | STRING | Chemin du fichier ou identifiant du modèle 3D généré (uniquement pour la rétrocompatibilité) |
+| `GLB` | MODEL_TASK_ID | Identifiant de tâche pour suivre le processus de génération du modèle |
 | `GLB` | FILE3DGLB | Fichier du modèle 3D généré au format GLB |
 
 ---

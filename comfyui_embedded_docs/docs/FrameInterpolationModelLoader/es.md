@@ -10,7 +10,7 @@ Este nodo carga un modelo de interpolación de fotogramas desde un archivo y lo 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model_name` | STRING | Sí | Lista de archivos de modelo en la carpeta `frame_interpolation` | Selecciona un modelo de interpolación de fotogramas para cargar. Los modelos deben colocarse en la carpeta 'frame_interpolation'. |
+| `nombre del modelo` | STRING | Sí | Lista de archivos de modelo en la carpeta `frame_interpolation` | Selecciona un modelo de interpolación de fotogramas para cargar. Los modelos deben colocarse en la carpeta 'frame_interpolation'. |
 
 ## Salidas
 

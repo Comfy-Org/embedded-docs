@@ -6,13 +6,13 @@ Görüntüyü maske ve istem doğrultusunda yeniden boyar. Bu düğüm, Flux.1 m
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Yeniden boyanacak giriş görüntüsü |
-| `mask` | MASK | Evet | - | Görüntünün hangi alanlarının doldurulacağını tanımlayan maske |
-| `prompt` | STRING | Hayır | - | Görüntü oluşturma için istem (varsayılan: boş dize) |
-| `prompt_upsampling` | BOOLEAN | Hayır | - | İstem üzerinde yukarı örnekleme yapılıp yapılmayacağı. Etkinleştirilirse, daha yaratıcı üretim için istemi otomatik olarak değiştirir, ancak sonuçlar deterministik değildir (aynı tohum aynı sonucu üretmez). (varsayılan: false) |
-| `guidance` | FLOAT | Hayır | 1,5-100 | Görüntü oluşturma süreci için rehberlik gücü (varsayılan: 60) |
-| `steps` | INT | Hayır | 15-50 | Görüntü oluşturma süreci için adım sayısı (varsayılan: 50) |
-| `seed` | INT | Hayır | 0-18446744073709551615 | Gürültü oluşturmak için kullanılan rastgele tohum. (varsayılan: 0) |
+| `görüntü` | IMAGE | Evet | - | Yeniden boyanacak giriş görüntüsü |
+| `maske` | MASK | Evet | - | Görüntünün hangi alanlarının doldurulacağını tanımlayan maske |
+| `istem` | STRING | Hayır | - | Görüntü oluşturma için istem (varsayılan: boş dize) |
+| `istem_yükseltme` | BOOLEAN | Hayır | - | İstem üzerinde yukarı örnekleme yapılıp yapılmayacağı. Etkinleştirilirse, daha yaratıcı üretim için istemi otomatik olarak değiştirir, ancak sonuçlar deterministik değildir (aynı tohum aynı sonucu üretmez). (varsayılan: false) |
+| `rehberlik` | FLOAT | Hayır | 1,5-100 | Görüntü oluşturma süreci için rehberlik gücü (varsayılan: 60) |
+| `adımlar` | INT | Hayır | 15-50 | Görüntü oluşturma süreci için adım sayısı (varsayılan: 50) |
+| `tohum` | INT | Hayır | 0-18446744073709551615 | Gürültü oluşturmak için kullanılan rastgele tohum. (varsayılan: 0) |
 
 ## Çıktılar
 

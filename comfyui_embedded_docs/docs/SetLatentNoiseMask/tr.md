@@ -6,8 +6,8 @@ Bu düğüm, bir dizi gizli örneğe (latent sample) bir gürültü maskesi uygu
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | Gürültü maskesinin uygulanacağı gizli örnekler. Bu parametre, değiştirilecek temel içeriğin belirlenmesi için çok önemlidir. |
-| `mask`    | `MASK`      | Gizli örneklere uygulanacak maske. Örnekler içindeki gürültü değişikliğinin alanlarını ve yoğunluğunu tanımlar. |
+| `örnekler` | `LATENT`    | Gürültü maskesinin uygulanacağı gizli örnekler. Bu parametre, değiştirilecek temel içeriğin belirlenmesi için çok önemlidir. |
+| `maske`    | `MASK`      | Gizli örneklere uygulanacak maske. Örnekler içindeki gürültü değişikliğinin alanlarını ve yoğunluğunu tanımlar. |
 
 ## Çıktılar
 

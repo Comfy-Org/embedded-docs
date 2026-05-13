@@ -6,7 +6,7 @@ O nó LTXV Audio VAE Decode converte uma representação latente de áudio de vo
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `samples` | LATENT | Sim | N/A | O latente a ser decodificado. |
+| `amostras` | LATENT | Sim | N/A | O latente a ser decodificado. |
 | `audio_vae` | VAE | Sim | N/A | O modelo Audio VAE usado para decodificar o latente. |
 
 **Nota:** Se o latente fornecido for aninhado (contiver múltiplos latentes), o nó usará automaticamente o último latente da sequência para a decodificação.

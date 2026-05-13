@@ -9,13 +9,13 @@ Este nó encurta um texto cortando-o em um comprimento máximo especificado. Ele
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `text` | STRING | Sim | N/A | A string de texto a ser truncada. |
-| `max_length` | INT | Sim | 1 a 10000 | Comprimento máximo do texto. O texto será cortado após esse número de caracteres (padrão: 77). |
+| `comprimento_máximo` | INT | Sim | 1 a 10000 | Comprimento máximo do texto. O texto será cortado após esse número de caracteres (padrão: 77). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `string` | STRING | O texto truncado, contendo apenas os primeiros `max_length` caracteres da entrada. |
+| `string` | STRING | O texto truncado, contendo apenas os primeiros `comprimento_máximo` caracteres da entrada. |
 
 ---
 **Source fingerprint (SHA-256):** `271a77a910967c4fd86a07485449679fb8db89f6b3f2bf0a8fa2ff224ea2f7b2`

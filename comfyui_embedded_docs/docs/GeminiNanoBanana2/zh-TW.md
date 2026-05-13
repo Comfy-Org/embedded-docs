@@ -26,7 +26,7 @@ GeminiNanoBanana2 節點使用 Google 的 Vertex AI Gemini 模型來生成或編
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `image` | IMAGE | 模型生成或編輯的主要圖像。 |
-| `string` | STRING | 模型返回的任何文字內容。 |
+| `thought_image` | STRING | 模型返回的任何文字內容。 |
 | `thought_image` | IMAGE | 來自模型思考過程的第一張圖像。僅在 `thinking_level` 設為 HIGH 且 `response_modalities` 設為 IMAGE+TEXT 時可用。 |
 
 ---

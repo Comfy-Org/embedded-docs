@@ -8,7 +8,7 @@ ImageAddNoise düğümü, bir giriş görüntüsüne rastgele gürültü ekler. 
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Evet | - | Gürültü eklenecek giriş görüntüsü |
 | `seed` | INT | Evet | 0 - 18446744073709551615 | Gürültü oluşturmak için kullanılan rastgele tohum değeri (varsayılan: 0) |
-| `strength` | FLOAT | Evet | 0,0 - 1,0 | Gürültü efektinin yoğunluğunu kontrol eder (varsayılan: 0,5) |
+| `güç` | FLOAT | Evet | 0,0 - 1,0 | Gürültü efektinin yoğunluğunu kontrol eder (varsayılan: 0,5) |
 
 ## Çıktılar
 

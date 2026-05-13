@@ -8,10 +8,10 @@ ControlNet kullanımı, giriş görüntülerinin ön işlenmesini gerektirir. Co
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | CLIP Metin Kodlayıcı veya diğer koşullandırma girişlerinden gelen pozitif koşullandırma verileri |
 | `negative` | `CONDITIONING` | CLIP Metin Kodlayıcı veya diğer koşullandırma girişlerinden gelen negatif koşullandırma verileri |
-| `control_net` | `CONTROL_NET` | Uygulanacak ControlNet modeli, genellikle ControlNet Yükleyici'den gelen giriş |
-| `image` | `IMAGE` | ControlNet uygulaması için görüntü, ön işlemci tarafından işlenmesi gerekir |
+| `kontrol_ağı` | `CONTROL_NET` | Uygulanacak ControlNet modeli, genellikle ControlNet Yükleyici'den gelen giriş |
+| `görüntü` | `IMAGE` | ControlNet uygulaması için görüntü, ön işlemci tarafından işlenmesi gerekir |
 | `vae` | `VAE` | VAE model girişi |
-| `strength` | `FLOAT` | Ağ ayarlamalarının gücünü kontrol eder, değer aralığı 0~10. Önerilen değerler 0.5~1.5 arası makuldür. Düşük değerler modele daha fazla özgürlük tanır, yüksek değerler daha katı kısıtlamalar uygular. Çok yüksek değerler garip görüntülere neden olabilir. Kontrol ağının etkisini ince ayarlamak için bu değeri test edip ayarlayabilirsiniz. |
+| `güç` | `FLOAT` | Ağ ayarlamalarının gücünü kontrol eder, değer aralığı 0~10. Önerilen değerler 0.5~1.5 arası makuldür. Düşük değerler modele daha fazla özgürlük tanır, yüksek değerler daha katı kısıtlamalar uygular. Çok yüksek değerler garip görüntülere neden olabilir. Kontrol ağının etkisini ince ayarlamak için bu değeri test edip ayarlayabilirsiniz. |
 | `start_percent` | `FLOAT` | Değer 0.000~1.000, ControlNet uygulamasının başlama zamanını yüzde olarak belirler, örn. 0.2, ControlNet yönlendirmesinin difüzyon sürecinin %20'sinde görüntü oluşturmayı etkilemeye başlayacağı anlamına gelir |
 | `end_percent` | `FLOAT` | Değer 0.000~1.000, ControlNet uygulamasının durma zamanını yüzde olarak belirler, örn. 0.8, ControlNet yönlendirmesinin difüzyon sürecinin %80'inde görüntü oluşturmayı etkilemeyi bırakacağı anlamına gelir |
 

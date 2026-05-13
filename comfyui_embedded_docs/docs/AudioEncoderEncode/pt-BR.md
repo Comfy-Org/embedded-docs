@@ -7,7 +7,7 @@ O nó AudioEncoderEncode processa dados de áudio codificando-os usando um model
 | Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Intervalo | Descrição |
 |-----------|---------------|-----------------|--------|-----------|-----------|
 | `audio_encoder` | AUDIO_ENCODER | Obrigatório | - | - | O modelo de codificador de áudio usado para processar a entrada de áudio |
-| `audio` | AUDIO | Obrigatório | - | - | Os dados de áudio contendo informações de forma de onda e taxa de amostragem |
+| `áudio` | AUDIO | Obrigatório | - | - | Os dados de áudio contendo informações de forma de onda e taxa de amostragem |
 
 ## Saídas
 

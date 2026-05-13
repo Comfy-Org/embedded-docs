@@ -6,15 +6,15 @@ O nó SamplerSASolver implementa um algoritmo de amostragem personalizado para m
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo de difusão a ser usado para amostragem |
+| `modelo` | MODEL | Sim | - | O modelo de difusão a ser usado para amostragem |
 | `eta` | FLOAT | Não | 0,0 - 10,0 | Controla o fator de escala do tamanho do passo (padrão: 1,0) |
-| `sde_start_percent` | FLOAT | Não | 0,0 - 1,0 | A porcentagem inicial para amostragem SDE (padrão: 0,2) |
-| `sde_end_percent` | FLOAT | Não | 0,0 - 1,0 | A porcentagem final para amostragem SDE (padrão: 0,8) |
+| `percentual_inicial_sde` | FLOAT | Não | 0,0 - 1,0 | A porcentagem inicial para amostragem SDE (padrão: 0,2) |
+| `percentual_final_sde` | FLOAT | Não | 0,0 - 1,0 | A porcentagem final para amostragem SDE (padrão: 0,8) |
 | `s_noise` | FLOAT | Não | 0,0 - 100,0 | Controla a quantidade de ruído adicionada durante a amostragem (padrão: 1,0) |
-| `predictor_order` | INT | Não | 1 - 6 | A ordem do componente preditor no solucionador (padrão: 3) |
-| `corrector_order` | INT | Não | 0 - 6 | A ordem do componente corretor no solucionador (padrão: 4) |
-| `use_pece` | BOOLEAN | Não | - | Ativa ou desativa o método PECE (Predict-Evaluate-Correct-Evaluate) |
-| `simple_order_2` | BOOLEAN | Não | - | Ativa ou desativa cálculos simplificados de segunda ordem |
+| `ordem_do_preditor` | INT | Não | 1 - 6 | A ordem do componente preditor no solucionador (padrão: 3) |
+| `ordem_do_corretor` | INT | Não | 0 - 6 | A ordem do componente corretor no solucionador (padrão: 4) |
+| `usar_pece` | BOOLEAN | Não | - | Ativa ou desativa o método PECE (Predict-Evaluate-Correct-Evaluate) |
+| `ordem_simples_2` | BOOLEAN | Não | - | Ativa ou desativa cálculos simplificados de segunda ordem |
 
 ## Saídas
 

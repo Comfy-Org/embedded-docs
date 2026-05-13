@@ -6,14 +6,14 @@ ThresholdMask düğümü, bir eşik değeri uygulayarak maskeyi ikili (binary) m
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `mask` | MASK | Evet | - | İşlenecek giriş maskesi |
-| `value` | FLOAT | Evet | 0.0 - 1.0 | İkili hale getirme için eşik değeri (varsayılan: 0.5) |
+| `maske` | MASK | Evet | - | İşlenecek giriş maskesi |
+| `değer` | FLOAT | Evet | 0.0 - 1.0 | İkili hale getirme için eşik değeri (varsayılan: 0.5) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `mask` | MASK | Eşikleme sonrası elde edilen ikili maske |
+| `maske` | MASK | Eşikleme sonrası elde edilen ikili maske |
 
 ---
 **Source fingerprint (SHA-256):** `5c61433c05ef8106d928306b64035078e7598605512f20aaf992255f7b166456`

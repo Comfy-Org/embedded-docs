@@ -6,13 +6,13 @@ O nó ZImageFunControlnet aplica uma rede de controle especializada para influen
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo base utilizado no processo de geração. |
-| `model_patch` | MODEL_PATCH | Sim | - | Um patch de modelo especializado que aplica a orientação da rede de controle. |
+| `modelo` | MODEL | Sim | - | O modelo base utilizado no processo de geração. |
+| `patch_do_modelo` | MODEL_PATCH | Sim | - | Um patch de modelo especializado que aplica a orientação da rede de controle. |
 | `vae` | VAE | Sim | - | O Autoencoder Variacional usado para codificar e decodificar imagens. |
-| `strength` | FLOAT | Sim | -10.0 a 10.0 | A intensidade da influência da rede de controle. Valores positivos aplicam o efeito, enquanto valores negativos podem invertê-lo (padrão: 1.0). |
-| `image` | IMAGE | Não | - | Uma imagem base opcional para guiar o processo de geração. |
-| `inpaint_image` | IMAGE | Não | - | Uma imagem opcional usada especificamente para inpaint em áreas definidas por uma máscara. |
-| `mask` | MASK | Não | - | Uma máscara opcional que define quais áreas de uma imagem devem ser editadas ou receber inpaint. |
+| `força` | FLOAT | Sim | -10.0 a 10.0 | A intensidade da influência da rede de controle. Valores positivos aplicam o efeito, enquanto valores negativos podem invertê-lo (padrão: 1.0). |
+| `imagem` | IMAGE | Não | - | Uma imagem base opcional para guiar o processo de geração. |
+| `imagem_para_retouch` | IMAGE | Não | - | Uma imagem opcional usada especificamente para inpaint em áreas definidas por uma máscara. |
+| `máscara` | MASK | Não | - | Uma máscara opcional que define quais áreas de uma imagem devem ser editadas ou receber inpaint. |
 
 **Observação:** O parâmetro `inpaint_image` é tipicamente usado em conjunto com uma `mask` para especificar o conteúdo do inpaint. O comportamento do nó pode mudar com base em quais entradas opcionais são fornecidas (por exemplo, usando `image` para orientação ou usando `image`, `mask` e `inpaint_image` para inpaint).
 
@@ -20,7 +20,7 @@ O nó ZImageFunControlnet aplica uma rede de controle especializada para influen
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo com o patch da rede de controle aplicado, pronto para uso em um pipeline de amostragem. |
+| `modelo` | MODEL | O modelo com o patch da rede de controle aplicado, pronto para uso em um pipeline de amostragem. |
 | `positive` | CONDITIONING | O condicionamento positivo, potencialmente modificado pelas entradas da rede de controle. |
 | `negative` | CONDITIONING | O condicionamento negativo, potencialmente modificado pelas entradas da rede de controle. |
 

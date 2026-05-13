@@ -13,8 +13,8 @@ Este nodo utiliza el modelo Kling AI para generar un video basado en un texto de
 | `reference_images` | IMAGE | Sí | - | Hasta 7 imágenes de referencia. Cada imagen debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. |
 | `resolution` | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución de salida del video. Este parámetro es opcional (predeterminado: "1080p"). |
 | `storyboards` | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Genera una serie de segmentos de video con indicaciones y duraciones individuales. Solo compatible con `kling-v3-omni`. Cuando está habilitado, se ignora el `prompt` global y la duración total de todos los segmentos del guión gráfico debe ser igual a la `duration` global. |
-| `generate_audio` | BOOLEAN | No | `true`<br>`false` | Genera audio para el video. Solo compatible con `kling-v3-omni` (predeterminado: false). |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
+| `generar_audio` | BOOLEAN | No | `true`<br>`false` | Genera audio para el video. Solo compatible con `kling-v3-omni` (predeterminado: false). |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
 
 **Nota:** La entrada `reference_images` acepta un máximo de 7 imágenes. Si se proporcionan más, el nodo generará un error. Cada imagen se valida según las dimensiones mínimas y la relación de aspecto.
 

@@ -8,7 +8,7 @@ Escala rápidamente una imagen mediante una llamada a la API de Stability, aumen
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
 
 ## Salidas
 

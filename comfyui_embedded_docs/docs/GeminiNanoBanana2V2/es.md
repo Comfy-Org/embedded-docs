@@ -23,7 +23,7 @@ Este nodo genera o edita imágenes enviando un mensaje de texto a la API de Vert
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
 | `IMAGE` | IMAGE | La imagen generada o editada. |
-| `STRING` | STRING | Una descripción de texto o leyenda generada por el modelo. |
+| `thought_image` | STRING | Una descripción de texto o leyenda generada por el modelo. |
 | `thought_image` | IMAGE | Primera imagen del proceso de pensamiento del modelo. Solo disponible con nivel de pensamiento ALTO y modalidad IMAGE+TEXT. |
 
 ---

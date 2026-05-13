@@ -7,11 +7,11 @@ O nó "Primeiro-Último Quadro para Vídeo" do Runway gera vídeos a partir do u
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sim | N/A | Prompt de texto para a geração (padrão: string vazia) |
-| `start_frame` | IMAGE | Sim | N/A | Quadro inicial a ser usado para o vídeo |
-| `end_frame` | IMAGE | Sim | N/A | Quadro final a ser usado para o vídeo. Suportado apenas para gen3a_turbo. |
-| `duration` | COMBO | Sim | `"5"`<br>`"10"` | Duração do vídeo em segundos (padrão: "5") |
-| `ratio` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Proporção de aspecto para o vídeo gerado (padrão: "16:9") |
-| `seed` | INT | Não | 0 a 4294967295 | Semente aleatória para geração. Defina como 0 para semente aleatória (padrão: 0). |
+| `quadro_inicial` | IMAGE | Sim | N/A | Quadro inicial a ser usado para o vídeo |
+| `quadro_final` | IMAGE | Sim | N/A | Quadro final a ser usado para o vídeo. Suportado apenas para gen3a_turbo. |
+| `duração` | COMBO | Sim | `"5"`<br>`"10"` | Duração do vídeo em segundos (padrão: "5") |
+| `proporção` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Proporção de aspecto para o vídeo gerado (padrão: "16:9") |
+| `semente` | INT | Não | 0 a 4294967295 | Semente aleatória para geração. Defina como 0 para semente aleatória (padrão: 0). |
 
 **Restrições dos Parâmetros:**
 

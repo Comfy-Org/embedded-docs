@@ -6,12 +6,12 @@ O nó **Hunyuan Video 15 Latent Upscale With Model** aumenta a resolução de um
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | LATENT_UPSCALE_MODEL | Sim | N/A | O modelo de redimensionamento latente Hunyuan Video 1.5 usado para refinar as amostras redimensionadas. |
-| `samples` | LATENT | Sim | N/A | A representação latente da imagem a ser redimensionada. |
-| `upscale_method` | COMBO | Não | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` | O algoritmo de interpolação usado na etapa inicial de redimensionamento (padrão: `"bilinear"`). |
-| `width` | INT | Não | 0 a 16384 | A largura alvo para o latente redimensionado, em pixels. Um valor 0 calculará a largura automaticamente com base na altura alvo e na proporção original. A largura final da saída será um múltiplo de 16 (padrão: 1280). |
-| `height` | INT | Não | 0 a 16384 | A altura alvo para o latente redimensionado, em pixels. Um valor 0 calculará a altura automaticamente com base na largura alvo e na proporção original. A altura final da saída será um múltiplo de 16 (padrão: 720). |
-| `crop` | COMBO | Não | `"disabled"`<br>`"center"` | Determina como o latente redimensionado é cortado para se ajustar às dimensões alvo. |
+| `modelo` | LATENT_UPSCALE_MODEL | Sim | N/A | O modelo de redimensionamento latente Hunyuan Video 1.5 usado para refinar as amostras redimensionadas. |
+| `amostras` | LATENT | Sim | N/A | A representação latente da imagem a ser redimensionada. |
+| `método_de_upscale` | COMBO | Não | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"bislerp"` | O algoritmo de interpolação usado na etapa inicial de redimensionamento (padrão: `"bilinear"`). |
+| `largura` | INT | Não | 0 a 16384 | A largura alvo para o latente redimensionado, em pixels. Um valor 0 calculará a largura automaticamente com base na altura alvo e na proporção original. A largura final da saída será um múltiplo de 16 (padrão: 1280). |
+| `altura` | INT | Não | 0 a 16384 | A altura alvo para o latente redimensionado, em pixels. Um valor 0 calculará a altura automaticamente com base na largura alvo e na proporção original. A altura final da saída será um múltiplo de 16 (padrão: 720). |
+| `corte` | COMBO | Não | `"disabled"`<br>`"center"` | Determina como o latente redimensionado é cortado para se ajustar às dimensões alvo. |
 
 **Observação sobre Dimensões:** Se tanto `width` quanto `height` forem definidos como 0, o nó retorna as `samples` de entrada inalteradas. Se apenas uma dimensão for definida como 0, a outra dimensão é calculada para preservar a proporção original. As dimensões finais são sempre ajustadas para terem pelo menos 64 pixels e serem divisíveis por 16.
 

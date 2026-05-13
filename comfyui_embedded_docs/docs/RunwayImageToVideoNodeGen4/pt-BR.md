@@ -9,10 +9,10 @@ O nó Runway Image to Video (Gen4 Turbo) gera um vídeo a partir de um único qu
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Prompt de texto para a geração (padrão: string vazia) |
-| `start_frame` | IMAGE | Sim | - | Quadro inicial a ser usado para o vídeo |
-| `duration` | COMBO | Sim | `"5"`<br>`"10"` | Duração do vídeo em segundos (padrão: "5") |
-| `ratio` | COMBO | Sim | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Proporção de aspecto para o vídeo gerado (padrão: "1024:1024") |
-| `seed` | INT | Não | 0 a 4294967295 | Semente aleatória para a geração (padrão: 0) |
+| `quadro_inicial` | IMAGE | Sim | - | Quadro inicial a ser usado para o vídeo |
+| `duração` | COMBO | Sim | `"5"`<br>`"10"` | Duração do vídeo em segundos (padrão: "5") |
+| `proporção` | COMBO | Sim | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Proporção de aspecto para o vídeo gerado (padrão: "1024:1024") |
+| `semente` | INT | Não | 0 a 4294967295 | Semente aleatória para a geração (padrão: 0) |
 
 **Restrições dos Parâmetros:**
 

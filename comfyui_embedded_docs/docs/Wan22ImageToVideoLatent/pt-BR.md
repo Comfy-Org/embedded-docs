@@ -7,11 +7,11 @@ O nó Wan22ImageToVideoLatent cria representações latentes de vídeo a partir 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar imagens no espaço latente |
-| `width` | INT | Sim | 32 a MAX_RESOLUTION | A largura do vídeo de saída em pixels (padrão: 1280, passo: 32) |
-| `height` | INT | Sim | 32 a MAX_RESOLUTION | A altura do vídeo de saída em pixels (padrão: 704, passo: 32) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | O número de quadros na sequência de vídeo (padrão: 49, passo: 4) |
-| `batch_size` | INT | Sim | 1 a 4096 | O número de lotes a serem gerados (padrão: 1) |
-| `start_image` | IMAGE | Não | - | Sequência de imagem inicial opcional para codificar no vídeo latente |
+| `largura` | INT | Sim | 32 a MAX_RESOLUTION | A largura do vídeo de saída em pixels (padrão: 1280, passo: 32) |
+| `altura` | INT | Sim | 32 a MAX_RESOLUTION | A altura do vídeo de saída em pixels (padrão: 704, passo: 32) |
+| `duração` | INT | Sim | 1 a MAX_RESOLUTION | O número de quadros na sequência de vídeo (padrão: 49, passo: 4) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | O número de lotes a serem gerados (padrão: 1) |
+| `imagem_inicial` | IMAGE | Não | - | Sequência de imagem inicial opcional para codificar no vídeo latente |
 
 **Observação:** Quando `start_image` é fornecido, o nó codifica a sequência de imagem nos primeiros quadros do espaço latente e gera uma máscara de ruído correspondente. Os parâmetros de largura e altura devem ser divisíveis por 16 para dimensões adequadas do espaço latente. O parâmetro `length` determina o número de quadros no vídeo latente; a dimensão temporal do espaço latente é calculada como `((length - 1) // 4) + 1`.
 

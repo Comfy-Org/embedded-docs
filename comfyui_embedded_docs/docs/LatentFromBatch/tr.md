@@ -6,9 +6,9 @@ Bu düğüm, belirtilen batch indeksi ve uzunluğa göre belirli bir latent örn
 
 | Parametre      | Veri Türü  | Açıklama |
 |----------------|------------|----------|
-| `samples`      | `LATENT`   | İçinden bir alt kümenin çıkarılacağı latent örneklerin koleksiyonu. Bu parametre, işlenecek kaynak örnek grubunun belirlenmesi için kritiktir. |
-| `batch_index`  | `INT`      | Alt kümenin başlayacağı grup içindeki başlangıç indeksini belirtir. Bu parametre, gruptaki belirli konumlardan hedefli örnek çıkarımına olanak tanır. |
-| `length`       | `INT`      | Belirtilen başlangıç indeksinden itibaren çıkarılacak örnek sayısını tanımlar. Bu parametre, işlenecek alt kümenin boyutunu kontrol ederek grup bölümlerinin esnek bir şekilde yönetilmesini sağlar. |
+| `örnekler`      | `LATENT`   | İçinden bir alt kümenin çıkarılacağı latent örneklerin koleksiyonu. Bu parametre, işlenecek kaynak örnek grubunun belirlenmesi için kritiktir. |
+| `toplu_indeks`  | `INT`      | Alt kümenin başlayacağı grup içindeki başlangıç indeksini belirtir. Bu parametre, gruptaki belirli konumlardan hedefli örnek çıkarımına olanak tanır. |
+| `uzunluk`       | `INT`      | Belirtilen başlangıç indeksinden itibaren çıkarılacak örnek sayısını tanımlar. Bu parametre, işlenecek alt kümenin boyutunu kontrol ederek grup bölümlerinin esnek bir şekilde yönetilmesini sağlar. |
 
 ## Çıktılar
 

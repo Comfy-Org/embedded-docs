@@ -10,19 +10,19 @@
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | はい | - | 処理する入力動画。MP4 コンテナ形式である必要があります。 |
-| `upscaler_model` | COMBO | はい | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` | 動画のアップスケールに使用する AI モデル。"Disabled" を選択するとアップスケールは適用されません。 |
+| `ビデオ` | VIDEO | はい | - | 処理する入力動画。MP4 コンテナ形式である必要があります。 |
+| `アップスケーラーモデル` | COMBO | はい | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` | 動画のアップスケールに使用する AI モデル。"Disabled" を選択するとアップスケールは適用されません。 |
 | `upscaler_model.upscaler_resolution` | COMBO | 条件付き | `"FullHD (1080p)"`<br>`"4K (2160p)"` | アップスケーラーの目標出力解像度。このパラメータは、アップスケーラーモデルが選択されている場合（"Disabled" 以外）に必須です。 |
 | `upscaler_model.creativity` | FLOAT / COMBO | 条件付き | Astra 2: 0.0 ～ 1.0（ステップ 0.1）<br>Starlight Creative: `"low"`<br>`"middle"`<br>`"high"` | アップスケールのクリエイティブ強度。"Astra 2" および "Starlight (Astra) Creative" モデルでのみ使用可能です。Astra 2 の場合はスライダー（デフォルト: 0.5）、Starlight Creative の場合はコンボボックス（デフォルト: "low"）です。 |
 | `upscaler_model.prompt` | STRING | いいえ | - | オプションの説明的（指示的ではない）シーンプロンプト。"Astra 2" モデルでのみ使用可能です。設定時は最大 500 入力フレーム（30fps で約 15 秒）に制限されます。デフォルト: 空。 |
 | `upscaler_model.sharp` | FLOAT | いいえ | 0.0 ～ 1.0（ステップ 0.01） | 事前エンハンスメントのシャープネス: 0.0=ガウスぼかし、0.5=パススルー（デフォルト）、1.0=USM シャープニング。"Astra 2" モデルでのみ使用可能です。デフォルト: 0.5。 |
 | `upscaler_model.realism` | FLOAT | いいえ | 0.0 ～ 1.0（ステップ 0.01） | 出力を写真のような写実性に引き寄せます。モデルのデフォルトを使用する場合は 0 のままにします。"Astra 2" モデルでのみ使用可能です。デフォルト: 0.0。 |
-| `interpolation_model` | COMBO | はい | `"Disabled"`<br>`"apo-8"` | フレーム補間に使用する AI モデル。"Disabled" を選択すると補間は適用されません。 |
+| `補間モデル` | COMBO | はい | `"Disabled"`<br>`"apo-8"` | フレーム補間に使用する AI モデル。"Disabled" を選択すると補間は適用されません。 |
 | `interpolation_model.interpolation_frame_rate` | INT | 条件付き | 15 ～ 240 | 出力フレームレート。補間モデルが "apo-8" の場合に必須です。デフォルト: 60。 |
 | `interpolation_model.interpolation_slowmo` | INT | いいえ | 1 ～ 16 | 入力動画に適用するスローモーション係数。例えば、2 に設定すると出力は 2 倍遅くなり、再生時間も 2 倍になります。デフォルト: 1。 |
 | `interpolation_model.interpolation_duplicate` | BOOLEAN | いいえ | True/False | 入力内の重複フレームを分析し、削除します。デフォルト: False。 |
 | `interpolation_model.interpolation_duplicate_threshold` | FLOAT | いいえ | 0.001 ～ 0.1（ステップ 0.001） | 重複フレームの検出感度。デフォルト: 0.01。 |
-| `dynamic_compression_level` | COMBO | いいえ | `"Low"`<br>`"Mid"`<br>`"High"` | 動画圧縮の CQP レベル。デフォルト: "Low"。 |
+| `ダイナミック圧縮レベル` | COMBO | いいえ | `"Low"`<br>`"Mid"`<br>`"High"` | 動画圧縮の CQP レベル。デフォルト: "Low"。 |
 
 **重要な制約事項:**
 - `upscaler_model` または `interpolation_model` の少なくとも一方は有効（"Disabled" 以外）である必要があります。そうでない場合はエラーが発生します。
@@ -35,7 +35,7 @@
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `video` | VIDEO | 選択されたアップスケールおよび/または補間フィルターを適用した後のエンハンスされた動画出力。 |
+| `ビデオ` | VIDEO | 選択されたアップスケールおよび/または補間フィルターを適用した後のエンハンスされた動画出力。 |
 
 ---
 **Source fingerprint (SHA-256):** `29b7538206327c35866126c1862c1d1ccea872ba84fbb9c84126114a06e2b00f`

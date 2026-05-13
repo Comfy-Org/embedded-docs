@@ -7,11 +7,11 @@ ConditioningSetAreaPercentage düğümü, koşullandırma öğelerinin etki alan
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma öğelerini temsil eder; alan ve güç ayarlamalarının uygulanması için temel görevi görür. |
-| `width`   | `FLOAT`     | Alanın genişliğini toplam görüntü genişliğinin yüzdesi olarak belirtir; koşullandırmanın görüntüyü yatay olarak ne kadar etkileyeceğini belirler. |
-| `height`  | `FLOAT`     | Alanın yüksekliğini toplam görüntü yüksekliğinin yüzdesi olarak belirler; koşullandırma etkisinin dikey kapsamını etkiler. |
+| `genişlik`   | `FLOAT`     | Alanın genişliğini toplam görüntü genişliğinin yüzdesi olarak belirtir; koşullandırmanın görüntüyü yatay olarak ne kadar etkileyeceğini belirler. |
+| `yükseklik`  | `FLOAT`     | Alanın yüksekliğini toplam görüntü yüksekliğinin yüzdesi olarak belirler; koşullandırma etkisinin dikey kapsamını etkiler. |
 | `x`       | `FLOAT`     | Alanın yatay başlangıç noktasını toplam görüntü genişliğinin yüzdesi olarak belirtir; koşullandırma etkisini konumlandırır. |
 | `y`       | `FLOAT`     | Alanın dikey başlangıç noktasını toplam görüntü yüksekliğinin yüzdesi olarak belirtir; koşullandırma etkisini konumlandırır. |
-| `strength`| `FLOAT`     | Belirtilen alan içindeki koşullandırma etkisinin yoğunluğunu kontrol eder; etkisinin ince ayarının yapılmasına olanak tanır. |
+| `güç`| `FLOAT`     | Belirtilen alan içindeki koşullandırma etkisinin yoğunluğunu kontrol eder; etkisinin ince ayarının yapılmasına olanak tanır. |
 
 ## Çıktılar
 

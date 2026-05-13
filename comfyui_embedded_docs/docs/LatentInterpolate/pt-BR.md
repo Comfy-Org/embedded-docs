@@ -6,9 +6,9 @@ O nó LatentInterpolate foi projetado para realizar interpolação entre dois co
 
 | Parâmetro   | Tipo de Dado | Descrição |
 |-------------|--------------|-----------|
-| `samples1`  | `LATENT`     | O primeiro conjunto de amostras latentes a ser interpolado. Serve como ponto de partida para o processo de interpolação. |
-| `samples2`  | `LATENT`     | O segundo conjunto de amostras latentes a ser interpolado. Serve como ponto final para o processo de interpolação. |
-| `ratio`     | `FLOAT`      | Um valor de ponto flutuante que determina o peso de cada conjunto de amostras na saída interpolada. Uma proporção de 0 produz uma cópia do primeiro conjunto, enquanto uma proporção de 1 produz uma cópia do segundo conjunto. |
+| `amostras1`  | `LATENT`     | O primeiro conjunto de amostras latentes a ser interpolado. Serve como ponto de partida para o processo de interpolação. |
+| `amostras2`  | `LATENT`     | O segundo conjunto de amostras latentes a ser interpolado. Serve como ponto final para o processo de interpolação. |
+| `proporção`     | `FLOAT`      | Um valor de ponto flutuante que determina o peso de cada conjunto de amostras na saída interpolada. Uma proporção de 0 produz uma cópia do primeiro conjunto, enquanto uma proporção de 1 produz uma cópia do segundo conjunto. |
 
 ## Saídas
 

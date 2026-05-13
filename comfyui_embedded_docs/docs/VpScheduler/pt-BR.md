@@ -6,7 +6,7 @@ O nó VPScheduler foi projetado para gerar uma sequência de níveis de ruído (
 
 | Parâmetro   | Tipo de Dado | Descrição                                                                                                                                      |
 |-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `steps`     | INT           | Especifica o número de etapas no processo de difusão, afetando a granularidade dos níveis de ruído gerados.                              |
+| `etapas`     | INT           | Especifica o número de etapas no processo de difusão, afetando a granularidade dos níveis de ruído gerados.                              |
 | `beta_d`    | FLOAT         | Determina a distribuição geral do nível de ruído, influenciando a variância dos níveis de ruído gerados.                                 |
 | `beta_min`  | FLOAT         | Define o limite mínimo para o nível de ruído, garantindo que o ruído não fique abaixo de um determinado patamar.                              |
 | `eps_s`     | FLOAT         | Ajusta o valor épsilon inicial, refinando o nível de ruído inicial no processo de difusão.                                    |

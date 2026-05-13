@@ -6,9 +6,9 @@ LatentInterpolate düğümü, iki latent örnek kümesi arasında belirtilen bir
 
 | Parametre    | Veri Türü | Açıklama |
 |--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | Enterpolasyon yapılacak ilk latent örnek kümesi. Enterpolasyon işlemi için başlangıç noktası görevi görür. |
-| `samples2`   | `LATENT`    | Enterpolasyon yapılacak ikinci latent örnek kümesi. Enterpolasyon işlemi için bitiş noktası görevi görür. |
-| `ratio`      | `FLOAT`     | Enterpolasyon çıktısında her bir örnek kümesinin ağırlığını belirleyen ondalık sayı değeri. 0 oranı, ilk kümenin bir kopyasını üretirken, 1 oranı ikinci kümenin bir kopyasını üretir. |
+| `örnekler1`   | `LATENT`    | Enterpolasyon yapılacak ilk latent örnek kümesi. Enterpolasyon işlemi için başlangıç noktası görevi görür. |
+| `örnekler2`   | `LATENT`    | Enterpolasyon yapılacak ikinci latent örnek kümesi. Enterpolasyon işlemi için bitiş noktası görevi görür. |
+| `oran`      | `FLOAT`     | Enterpolasyon çıktısında her bir örnek kümesinin ağırlığını belirleyen ondalık sayı değeri. 0 oranı, ilk kümenin bir kopyasını üretirken, 1 oranı ikinci kümenin bir kopyasını üretir. |
 
 ## Çıktılar
 

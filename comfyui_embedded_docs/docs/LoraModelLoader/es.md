@@ -6,9 +6,9 @@ El nodo LoraModelLoader aplica pesos de LoRA (Adaptación de Bajo Rango) entrena
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que se aplicará el LoRA. |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que se aplicará el LoRA. |
 | `lora` | LORA_MODEL | Sí | - | El modelo LoRA que se aplicará al modelo de difusión. |
-| `strength_model` | FLOAT | Sí | -100.0 a 100.0 | La intensidad con la que modificar el modelo de difusión. Este valor puede ser negativo (predeterminado: 1.0). |
+| `fuerza_modelo` | FLOAT | Sí | -100.0 a 100.0 | La intensidad con la que modificar el modelo de difusión. Este valor puede ser negativo (predeterminado: 1.0). |
 | `bypass` | BOOLEAN | Sí | Verdadero o Falso | Cuando está habilitado, aplica LoRA en modo de omisión sin modificar los pesos del modelo base. Útil para entrenamiento y cuando los pesos del modelo están descargados (predeterminado: Falso). |
 
 **Nota:** Cuando `strength_model` se establece en 0, el nodo devuelve el modelo original sin aplicar ninguna modificación de LoRA.
@@ -17,7 +17,7 @@ El nodo LoraModelLoader aplica pesos de LoRA (Adaptación de Bajo Rango) entrena
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo de difusión modificado con los pesos de LoRA aplicados. |
+| `modelo` | MODEL | El modelo de difusión modificado con los pesos de LoRA aplicados. |
 
 ---
 **Source fingerprint (SHA-256):** `82afa7dbbc990f1a9f202f920aaf8fad7fe69dc35e75ed8a95eb63c9dec74961`

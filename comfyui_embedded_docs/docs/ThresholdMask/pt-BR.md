@@ -7,7 +7,7 @@ O nó ThresholdMask converte uma máscara em uma máscara binária aplicando um 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `mask` | MASK | Sim | - | A máscara de entrada a ser processada |
-| `value` | FLOAT | Sim | 0.0 - 1.0 | O valor de limiar para binarização (padrão: 0.5) |
+| `valor` | FLOAT | Sim | 0.0 - 1.0 | O valor de limiar para binarização (padrão: 0.5) |
 
 ## Saídas
 

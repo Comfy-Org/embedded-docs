@@ -8,14 +8,14 @@ O nó TorchCompileModel aplica a compilação PyTorch a um modelo para otimizar 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo a ser compilado e otimizado |
+| `modelo` | MODEL | Sim | - | O modelo a ser compilado e otimizado |
 | `backend` | STRING | Sim | "inductor"<br>"cudagraphs" | O backend de compilação PyTorch a ser usado para otimização (padrão: "inductor") |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo compilado com a compilação PyTorch aplicada |
+| `modelo` | MODEL | O modelo compilado com a compilação PyTorch aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `923e71b528e6e53468916f74c2a02924bf51738f29e36638312c6da6357fcedb`

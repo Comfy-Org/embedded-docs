@@ -7,9 +7,9 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Descrição textual do que deve acontecer em seguida no vídeo. |
-| `video` | VIDEO | Sim | N/A | Vídeo de origem a ser estendido. Formato MP4, de 2 a 15 segundos. |
-| `model` | COMBO | Sim | `"grok-imagine-video"` | O modelo a ser usado para extensão de vídeo. Quando selecionado, revela um parâmetro `duration` aninhado. |
-| `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). |
+| `vídeo` | VIDEO | Sim | N/A | Vídeo de origem a ser estendido. Formato MP4, de 2 a 15 segundos. |
+| `modelo` | COMBO | Sim | `"grok-imagine-video"` | O modelo a ser usado para extensão de vídeo. Quando selecionado, revela um parâmetro `duration` aninhado. |
+| `semente` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). |
 
 **Restrições dos Parâmetros:**
 *   A entrada `video` deve ser um arquivo MP4 com duração entre 2 e 15 segundos e não pode exceder 50 MB de tamanho.

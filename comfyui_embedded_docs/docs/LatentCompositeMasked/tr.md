@@ -6,12 +6,12 @@ LatentCompositeMasked düğümü, iki gizli temsilin (latent representation) bel
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `destination` | `LATENT`    | Üzerine başka bir gizli temsilin yerleştirileceği temel gizli temsili ifade eder. Birleştirme işlemi için alt katman görevi görür. |
-| `source` | `LATENT`    | Hedef (destination) üzerine yerleştirilecek olan gizli temsili ifade eder. Bu kaynak katman, belirtilen parametrelere göre yeniden boyutlandırılabilir ve konumlandırılabilir. |
+| `hedef` | `LATENT`    | Üzerine başka bir gizli temsilin yerleştirileceği temel gizli temsili ifade eder. Birleştirme işlemi için alt katman görevi görür. |
+| `kaynak` | `LATENT`    | Hedef (destination) üzerine yerleştirilecek olan gizli temsili ifade eder. Bu kaynak katman, belirtilen parametrelere göre yeniden boyutlandırılabilir ve konumlandırılabilir. |
 | `x` | `INT`       | Kaynağın yerleştirileceği hedef gizli temsilindeki x koordinatını belirtir. Kaynak katmanın hassas bir şekilde konumlandırılmasını sağlar. |
 | `y` | `INT`       | Kaynağın yerleştirileceği hedef gizli temsilindeki y koordinatını belirtir ve doğru bindirme konumlandırmasına olanak tanır. |
-| `resize_source` | `BOOLEAN` | Kaynak gizli temsilinin, birleştirme öncesinde hedefin boyutlarına uyacak şekilde yeniden boyutlandırılıp boyutlandırılmayacağını belirten bir boolean bayrağıdır. |
-| `mask` | `MASK`     | Kaynağın hedef üzerine harmanlanmasını kontrol etmek için kullanılabilecek isteğe bağlı bir maskedir. Maske, nihai birleşimde kaynağın hangi bölümlerinin görünür olacağını tanımlar. |
+| `kaynağı_yeniden_boyutlandır` | `BOOLEAN` | Kaynak gizli temsilinin, birleştirme öncesinde hedefin boyutlarına uyacak şekilde yeniden boyutlandırılıp boyutlandırılmayacağını belirten bir boolean bayrağıdır. |
+| `maske` | `MASK`     | Kaynağın hedef üzerine harmanlanmasını kontrol etmek için kullanılabilecek isteğe bağlı bir maskedir. Maske, nihai birleşimde kaynağın hangi bölümlerinin görünür olacağını tanımlar. |
 
 ## Çıkışlar
 

@@ -6,7 +6,7 @@ ModelPatchLoader 노드는 model_patches 폴더에서 특화된 모델 패치를
 
 | 매개변수 | 데이터 유형 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `name` | STRING | 예 | model_patches 폴더의 모든 사용 가능한 모델 패치 파일 | model_patches 디렉터리에서 로드할 모델 패치의 파일 이름입니다. |
+| `이름` | STRING | 예 | model_patches 폴더의 모든 사용 가능한 모델 패치 파일 | model_patches 디렉터리에서 로드할 모델 패치의 파일 이름입니다. |
 
 ## 출력
 

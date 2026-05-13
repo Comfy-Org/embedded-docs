@@ -8,21 +8,21 @@ Bu düğüm, Stable Diffusion 3 koşullandırmasına ControlNet yönlendirmesi u
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | ControlNet yönlendirmesinin uygulanacağı pozitif koşullandırma |
-| `negative` | CONDITIONING | Evet | - | ControlNet yönlendirmesinin uygulanacağı negatif koşullandırma |
-| `control_net` | CONTROL_NET | Evet | - | Yönlendirme için kullanılacak ControlNet modeli |
+| `pozitif` | CONDITIONING | Evet | - | ControlNet yönlendirmesinin uygulanacağı pozitif koşullandırma |
+| `negatif` | CONDITIONING | Evet | - | ControlNet yönlendirmesinin uygulanacağı negatif koşullandırma |
+| `kontrol_ağı` | CONTROL_NET | Evet | - | Yönlendirme için kullanılacak ControlNet modeli |
 | `vae` | VAE | Evet | - | Süreçte kullanılan VAE modeli |
-| `image` | IMAGE | Evet | - | ControlNet'in yönlendirme olarak kullanacağı girdi görüntüsü |
-| `strength` | FLOAT | Evet | 0.0 - 10.0 | ControlNet etkisinin gücü (varsayılan: 1.0) |
-| `start_percent` | FLOAT | Evet | 0.0 - 1.0 | ControlNet'in uygulanmaya başladığı üretim sürecindeki başlangıç noktası (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Evet | 0.0 - 1.0 | ControlNet'in uygulanmasının durduğu üretim sürecindeki bitiş noktası (varsayılan: 1.0) |
+| `görüntü` | IMAGE | Evet | - | ControlNet'in yönlendirme olarak kullanacağı girdi görüntüsü |
+| `güç` | FLOAT | Evet | 0.0 - 10.0 | ControlNet etkisinin gücü (varsayılan: 1.0) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | ControlNet'in uygulanmaya başladığı üretim sürecindeki başlangıç noktası (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0.0 - 1.0 | ControlNet'in uygulanmasının durduğu üretim sürecindeki bitiş noktası (varsayılan: 1.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `positive` | CONDITIONING | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | ControlNet yönlendirmesi uygulanmış değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma |
+| `negatif` | CONDITIONING | ControlNet yönlendirmesi uygulanmış değiştirilmiş negatif koşullandırma |
 
 ---
 **Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

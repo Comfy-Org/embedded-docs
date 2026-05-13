@@ -6,11 +6,11 @@ El nodo LatentComposite está diseñado para fusionar o combinar dos representac
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `samples_to` | `LATENT` | La representación latente 'samples_to' sobre la cual se compondrá 'samples_from'. Sirve como base para la operación de composición. |
-| `samples_from` | `LATENT` | La representación latente 'samples_from' que se compondrá sobre 'samples_to'. Aporta sus características o propiedades al resultado compuesto final. |
+| `muestras_a` | `LATENT` | La representación latente 'samples_to' sobre la cual se compondrá 'samples_from'. Sirve como base para la operación de composición. |
+| `muestras_de` | `LATENT` | La representación latente 'samples_from' que se compondrá sobre 'samples_to'. Aporta sus características o propiedades al resultado compuesto final. |
 | `x` | `INT` | La coordenada x (posición horizontal) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación horizontal de la composición. |
 | `y` | `INT` | La coordenada y (posición vertical) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación vertical de la composición. |
-| `feather` | `INT` | Un valor booleano que indica si la latente 'samples_from' debe redimensionarse para coincidir con 'samples_to' antes de la composición. Esto puede afectar la escala y proporción del resultado compuesto. |
+| `pluma` | `INT` | Un valor booleano que indica si la latente 'samples_from' debe redimensionarse para coincidir con 'samples_to' antes de la composición. Esto puede afectar la escala y proporción del resultado compuesto. |
 
 ## Salidas
 

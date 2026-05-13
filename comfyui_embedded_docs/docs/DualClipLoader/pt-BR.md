@@ -8,9 +8,9 @@ Este nó detectará modelos localizados na pasta `ComfyUI/models/text_encoders`.
 
 | Parâmetro     | Tipo Comfy    | Descrição                                                                                                                                                                                      |
 | ------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `clip_name1` | COMBO[STRING] | Especifica o nome do primeiro modelo CLIP a ser carregado. Este parâmetro é crucial para identificar e recuperar o modelo correto de uma lista predefinida de modelos CLIP disponíveis.        |
-| `clip_name2` | COMBO[STRING] | Especifica o nome do segundo modelo CLIP a ser carregado. Este parâmetro permite o carregamento de um segundo modelo CLIP distinto para análise comparativa ou integrativa junto ao primeiro. |
-| `type`       | `option`      | Escolha entre "sdxl", "sd3", "flux" para se adaptar a diferentes modelos.                                                                                                                      |
+| `clip_nome1` | COMBO[STRING] | Especifica o nome do primeiro modelo CLIP a ser carregado. Este parâmetro é crucial para identificar e recuperar o modelo correto de uma lista predefinida de modelos CLIP disponíveis.        |
+| `clip_nome2` | COMBO[STRING] | Especifica o nome do segundo modelo CLIP a ser carregado. Este parâmetro permite o carregamento de um segundo modelo CLIP distinto para análise comparativa ou integrativa junto ao primeiro. |
+| `tipo`       | `option`      | Escolha entre "sdxl", "sd3", "flux" para se adaptar a diferentes modelos.                                                                                                                      |
 
 * A ordem de carregamento não afeta o resultado final
 

@@ -8,12 +8,12 @@ Tripo紋理節點使用 Tripo API 生成帶有紋理的 3D 模型。它接收一
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | 是 | - | 要應用紋理的模型任務 ID |
-| `texture` | BOOLEAN | 否 | - | 是否生成紋理（預設：True） |
-| `pbr` | BOOLEAN | 否 | - | 是否生成 PBR（基於物理的渲染）材質（預設：True） |
-| `texture_seed` | INT | 否 | - | 紋理生成的隨機種子（預設：42） |
-| `texture_quality` | COMBO | 否 | "standard"<br>"detailed" | 紋理生成的品質等級（預設："standard"）。"detailed" 選項費用為 0.20 美元，"standard" 費用為 0.10 美元。 |
-| `texture_alignment` | COMBO | 否 | "original_image"<br>"geometry" | 紋理的對齊方法（預設："original_image"）。"original_image" 將紋理對齊到原始輸入影像，而 "geometry" 則將其對齊到 3D 幾何體。 |
+| `模型任務ID` | MODEL_TASK_ID | 是 | - | 要應用紋理的模型任務 ID |
+| `紋理` | BOOLEAN | 否 | - | 是否生成紋理（預設：True） |
+| `PBR材質` | BOOLEAN | 否 | - | 是否生成 PBR（基於物理的渲染）材質（預設：True） |
+| `紋理種子` | INT | 否 | - | 紋理生成的隨機種子（預設：42） |
+| `紋理品質` | COMBO | 否 | "standard"<br>"detailed" | 紋理生成的品質等級（預設："standard"）。"detailed" 選項費用為 0.20 美元，"standard" 費用為 0.10 美元。 |
+| `紋理對齊` | COMBO | 否 | "original_image"<br>"geometry" | 紋理的對齊方法（預設："original_image"）。"original_image" 將紋理對齊到原始輸入影像，而 "geometry" 則將其對齊到 3D 幾何體。 |
 
 *注意：此節點需要驗證令牌和 API 金鑰，這些將由系統自動處理。*
 
@@ -21,8 +21,8 @@ Tripo紋理節點使用 Tripo API 生成帶有紋理的 3D 模型。它接收一
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 已應用紋理的生成模型檔案（僅為向後相容性保留） |
-| `model task_id` | MODEL_TASK_ID | 用於追蹤紋理生成過程的任務 ID |
+| `模型任務 ID` | STRING | 已應用紋理的生成模型檔案（僅為向後相容性保留） |
+| `GLB` | MODEL_TASK_ID | 用於追蹤紋理生成過程的任務 ID |
 | `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型，已應用紋理 |
 
 ---

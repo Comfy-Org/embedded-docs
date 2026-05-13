@@ -6,7 +6,7 @@ O nó GetImageSize extrai as dimensões e informações de lote de uma imagem de
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada da qual extrair informações de tamanho |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada da qual extrair informações de tamanho |
 
 ## Saídas
 

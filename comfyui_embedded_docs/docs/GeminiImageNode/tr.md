@@ -34,11 +34,11 @@ GeminiImage düğümü, Google'ın Gemini AI modellerinden metin ve görüntü y
 
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|------------|--------|----------|
-| `prompt` | STRING | zorunlu | "" | - | Üretim için metin istemi |
+| `istek` | STRING | zorunlu | "" | - | Üretim için metin istemi |
 | `model` | COMBO | zorunlu | gemini_2_5_flash_image_preview | Kullanılabilir Gemini modelleri<br>Seçenekler GeminiImageModel enum'undan alınır | Yanıtları üretmek için kullanılacak Gemini modeli |
-| `seed` | INT | zorunlu | 42 | 0 ile 18446744073709551615 arası | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan istekler için aynı yanıtı sağlamak üzere en iyi çabayı gösterir. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır |
-| `images` | IMAGE | isteğe bağlı | Yok | - | Model için bağlam olarak kullanılacak isteğe bağlı görüntü(ler). Birden fazla görüntü eklemek için Batch Images düğümünü kullanabilirsiniz |
-| `files` | GEMINI_INPUT_FILES | isteğe bağlı | Yok | - | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini Generate Content Input Files düğümünden girdileri kabul eder |
+| `tohum` | INT | zorunlu | 42 | 0 ile 18446744073709551615 arası | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan istekler için aynı yanıtı sağlamak üzere en iyi çabayı gösterir. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır |
+| `görseller` | IMAGE | isteğe bağlı | Yok | - | Model için bağlam olarak kullanılacak isteğe bağlı görüntü(ler). Birden fazla görüntü eklemek için Batch Images düğümünü kullanabilirsiniz |
+| `dosyalar` | GEMINI_INPUT_FILES | isteğe bağlı | Yok | - | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini Generate Content Input Files düğümünden girdileri kabul eder |
 
 *Not: Düğüm, sistem tarafından otomatik olarak işlenen ve kullanıcı girdisi gerektirmeyen gizli parametreler (`auth_token`, `comfy_api_key`, `unique_id`) içerir.*
 

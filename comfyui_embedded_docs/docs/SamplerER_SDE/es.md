@@ -6,10 +6,10 @@ El nodo SamplerER_SDE proporciona métodos de muestreo especializados para model
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `solver_type` | COMBO | Sí | "ER-SDE"<br>"SDE de tiempo inverso"<br>"ODE" | El tipo de solucionador a utilizar para el muestreo. Determina el enfoque matemático para el proceso de difusión. |
-| `max_stage` | INT | No | 1-3 | El número máximo de etapas para el proceso de muestreo (predeterminado: 3). Controla la complejidad computacional y la calidad. |
+| `tipo_solucionador` | COMBO | Sí | "ER-SDE"<br>"SDE de tiempo inverso"<br>"ODE" | El tipo de solucionador a utilizar para el muestreo. Determina el enfoque matemático para el proceso de difusión. |
+| `etapa_máxima` | INT | No | 1-3 | El número máximo de etapas para el proceso de muestreo (predeterminado: 3). Controla la complejidad computacional y la calidad. |
 | `eta` | FLOAT | No | 0.0-100.0 | Fuerza estocástica del SDE de tiempo inverso (predeterminado: 1.0). Cuando eta=0, se reduce a ODE determinista. Esta configuración no aplica al tipo de solucionador ER-SDE. |
-| `s_noise` | FLOAT | No | 0.0-100.0 | Factor de escalado de ruido para el proceso de muestreo (predeterminado: 1.0). Controla la cantidad de ruido aplicada durante el muestreo. |
+| `s_ruido` | FLOAT | No | 0.0-100.0 | Factor de escalado de ruido para el proceso de muestreo (predeterminado: 1.0). Controla la cantidad de ruido aplicada durante el muestreo. |
 
 **Restricciones de parámetros:**
 

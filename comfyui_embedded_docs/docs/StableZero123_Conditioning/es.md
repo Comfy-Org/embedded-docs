@@ -6,14 +6,14 @@ El nodo StableZero123_Conditioning procesa una imagen de entrada y ángulos de c
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `clip_vision` | CLIP_VISION | Sí | - | El modelo de visión CLIP utilizado para codificar las características de la imagen |
-| `init_image` | IMAGE | Sí | - | La imagen de entrada a procesar y codificar |
+| `visión_clip` | CLIP_VISION | Sí | - | El modelo de visión CLIP utilizado para codificar las características de la imagen |
+| `imagen_inicial` | IMAGE | Sí | - | La imagen de entrada a procesar y codificar |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar píxeles al espacio latente |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho de salida para la representación latente (predeterminado: 256, debe ser divisible por 8) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Alto de salida para la representación latente (predeterminado: 256, debe ser divisible por 8) |
-| `batch_size` | INT | Sí | 1 a 4096 | Número de muestras a generar en el lote (predeterminado: 1) |
-| `elevation` | FLOAT | Sí | -180.0 a 180.0 | Ángulo de elevación de la cámara en grados (predeterminado: 0.0) |
-| `azimuth` | FLOAT | Sí | -180.0 a 180.0 | Ángulo de azimut de la cámara en grados (predeterminado: 0.0) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho de salida para la representación latente (predeterminado: 256, debe ser divisible por 8) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION | Alto de salida para la representación latente (predeterminado: 256, debe ser divisible por 8) |
+| `tamaño_del_lote` | INT | Sí | 1 a 4096 | Número de muestras a generar en el lote (predeterminado: 1) |
+| `elevación` | FLOAT | Sí | -180.0 a 180.0 | Ángulo de elevación de la cámara en grados (predeterminado: 0.0) |
+| `acimut` | FLOAT | Sí | -180.0 a 180.0 | Ángulo de azimut de la cámara en grados (predeterminado: 0.0) |
 
 **Nota:** Los parámetros `width` y `height` deben ser divisibles por 8, ya que el nodo los divide automáticamente entre 8 para crear las dimensiones de la representación latente.
 
@@ -21,8 +21,8 @@ El nodo StableZero123_Conditioning procesa una imagen de entrada y ángulos de c
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `positive` | CONDITIONING | Datos de condicionamiento positivo que combinan características de imagen e incrustaciones de cámara |
-| `negative` | CONDITIONING | Datos de condicionamiento negativo con características inicializadas en cero |
+| `negativo` | CONDITIONING | Datos de condicionamiento positivo que combinan características de imagen e incrustaciones de cámara |
+| `latente` | CONDITIONING | Datos de condicionamiento negativo con características inicializadas en cero |
 | `latent` | LATENT | Representación latente con dimensiones [batch_size, 4, height//8, width//8] |
 
 ---

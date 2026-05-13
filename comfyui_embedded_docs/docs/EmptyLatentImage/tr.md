@@ -6,9 +6,9 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `width`   | `INT`       | Oluşturulacak gizli görüntünün genişliğini belirtir. Bu parametre, elde edilen gizli temsilin uzamsal boyutlarını doğrudan etkiler. |
-| `height`  | `INT`       | Oluşturulacak gizli görüntünün yüksekliğini belirler. Bu parametre, gizli uzay temsilinin uzamsal boyutlarını tanımlamak için çok önemlidir. |
-| `batch_size` | `INT` | Tek bir toplu işlemde oluşturulacak gizli görüntü sayısını kontrol eder. Bu, aynı anda birden fazla gizli temsilin oluşturulmasına olanak tanıyarak toplu işlemeyi kolaylaştırır. |
+| `genişlik`   | `INT`       | Oluşturulacak gizli görüntünün genişliğini belirtir. Bu parametre, elde edilen gizli temsilin uzamsal boyutlarını doğrudan etkiler. |
+| `yükseklik`  | `INT`       | Oluşturulacak gizli görüntünün yüksekliğini belirler. Bu parametre, gizli uzay temsilinin uzamsal boyutlarını tanımlamak için çok önemlidir. |
+| `toplu_boyut` | `INT` | Tek bir toplu işlemde oluşturulacak gizli görüntü sayısını kontrol eder. Bu, aynı anda birden fazla gizli temsilin oluşturulmasına olanak tanıyarak toplu işlemeyi kolaylaştırır. |
 
 ## Çıktılar
 

@@ -6,8 +6,8 @@ RebatchImages düğümü, bir grup görseli belirtilen toplu iş boyutuna göre 
 
 | Alan        | Veri Türü | Açıklama                                                                           |
 |-------------|-------------|-------------------------------------------------------------------------------------|
-| `images`    | `IMAGE`     | Yeniden toplu işlenecek görsellerin listesi. Bu parametre, yeniden toplu işleme sürecine girecek giriş verilerini belirlemek için kritiktir. |
-| `batch_size`| `INT`       | Çıktı toplu işlerinin istenen boyutunu belirtir. Bu parametre, giriş görsellerinin nasıl gruplandırılacağını ve işleneceğini doğrudan etkileyerek çıktının yapısını şekillendirir. |
+| `görüntüler`    | `IMAGE`     | Yeniden toplu işlenecek görsellerin listesi. Bu parametre, yeniden toplu işleme sürecine girecek giriş verilerini belirlemek için kritiktir. |
+| `toplu_boyut`| `INT`       | Çıktı toplu işlerinin istenen boyutunu belirtir. Bu parametre, giriş görsellerinin nasıl gruplandırılacağını ve işleneceğini doğrudan etkileyerek çıktının yapısını şekillendirir. |
 
 ## Çıktılar
 

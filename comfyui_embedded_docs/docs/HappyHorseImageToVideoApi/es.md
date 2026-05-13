@@ -8,13 +8,13 @@ Este nodo genera un video corto a partir de una única imagen inicial utilizando
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"happyhorse-1.0-i2v"` | El modelo HappyHorse a utilizar para la generación de video. |
+| `modelo` | COMBO | Sí | `"happyhorse-1.0-i2v"` | El modelo HappyHorse a utilizar para la generación de video. |
 | `model.prompt` | STRING | No | N/A | Mensaje que describe los elementos y características visuales. Compatible con inglés y chino. (predeterminado: "") |
 | `model.resolution` | COMBO | Sí | `"720P"`<br>`"1080P"` | La resolución del video de salida. (predeterminado: "720P") |
 | `model.duration` | INT | Sí | 3 a 15 | La duración del video generado en segundos. (predeterminado: 5) |
-| `first_frame` | IMAGE | Sí | N/A | Imagen del primer fotograma. La relación de aspecto de salida se deriva de esta imagen. |
-| `seed` | INT | No | 0 a 2147483647 | Semilla a utilizar para la generación. (predeterminado: 0) |
-| `watermark` | BOOLEAN | No | Verdadero / Falso | Si se debe agregar una marca de agua de IA generada al resultado. (predeterminado: Falso) |
+| `primer fotograma` | IMAGE | Sí | N/A | Imagen del primer fotograma. La relación de aspecto de salida se deriva de esta imagen. |
+| `semilla` | INT | No | 0 a 2147483647 | Semilla a utilizar para la generación. (predeterminado: 0) |
+| `marca de agua` | BOOLEAN | No | Verdadero / Falso | Si se debe agregar una marca de agua de IA generada al resultado. (predeterminado: Falso) |
 
 ## Salidas
 

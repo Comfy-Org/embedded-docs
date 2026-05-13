@@ -7,9 +7,9 @@ Este nó adiciona ruído controlado a uma imagem latente usando um gerador de ru
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `model` | MODEL | Sim | - | O modelo contendo parâmetros de amostragem e funções de processamento |
-| `noise` | NOISE | Sim | - | O gerador de ruído que produz o padrão de ruído base |
+| `ruído` | NOISE | Sim | - | O gerador de ruído que produz o padrão de ruído base |
 | `sigmas` | SIGMAS | Sim | - | Valores sigma que controlam a intensidade da escala de ruído. Se vazio, o nó retorna a imagem latente original inalterada. Quando múltiplos sigmas são fornecidos, a escala de ruído é calculada como a diferença absoluta entre o primeiro e o último valor sigma. Quando apenas um sigma é fornecido, esse valor é usado diretamente como escala. |
-| `latent_image` | LATENT | Sim | - | A representação latente de entrada à qual o ruído será adicionado. Imagens latentes vazias (contendo apenas zeros) não são deslocadas durante o processamento. |
+| `imagem_latente` | LATENT | Sim | - | A representação latente de entrada à qual o ruído será adicionado. Imagens latentes vazias (contendo apenas zeros) não são deslocadas durante o processamento. |
 
 ## Saídas
 

@@ -8,10 +8,10 @@
 
 | پارامتر | نوع داده | ضروری | محدوده | توضیحات |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | بله | - | فایل ویدیویی ورودی برای هماهنگ‌سازی لب |
-| `text` | STRING | بله | - | محتوای متنی برای تولید ویدیوی هماهنگ‌سازی لب. هنگامی که حالت text2video است الزامی است. حداکثر طول ۱۲۰ کاراکتر. |
-| `voice` | COMBO | خیر | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | انتخاب صدا برای صدای هماهنگ‌سازی لب (پیش‌فرض: "Melody") |
-| `voice_speed` | FLOAT | خیر | 0.8-2.0 | سرعت گفتار. محدوده معتبر: 0.8~2.0، دقیق تا یک رقم اعشار. (پیش‌فرض: 1) |
+| `ویدیو` | VIDEO | بله | - | فایل ویدیویی ورودی برای هماهنگ‌سازی لب |
+| `متن` | STRING | بله | - | محتوای متنی برای تولید ویدیوی هماهنگ‌سازی لب. هنگامی که حالت text2video است الزامی است. حداکثر طول ۱۲۰ کاراکتر. |
+| `صدا` | COMBO | خیر | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | انتخاب صدا برای صدای هماهنگ‌سازی لب (پیش‌فرض: "Melody") |
+| `سرعت صدا` | FLOAT | خیر | 0.8-2.0 | سرعت گفتار. محدوده معتبر: 0.8~2.0، دقیق تا یک رقم اعشار. (پیش‌فرض: 1) |
 
 **الزامات ویدیو:**
 

@@ -6,7 +6,7 @@ El nodo StringLength calcula la cantidad de caracteres en una cadena de texto. T
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string` | STRING | Sí | N/A | La cadena de texto cuya longitud se va a medir. Admite entrada multilínea. |
+| `cadena` | STRING | Sí | N/A | La cadena de texto cuya longitud se va a medir. Admite entrada multilínea. |
 
 ## Salidas
 

@@ -6,11 +6,11 @@ Le nœud VideoLinearCFGGuidance applique une échelle de guidage conditionnel li
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model`   | MODEL           | Le paramètre `model` représente le modèle vidéo auquel le guidage CFG linéaire sera appliqué. Il est essentiel pour définir le modèle de base qui sera modifié avec l'échelle de guidage. |
+| `modèle`   | MODEL           | Le paramètre `modèle` représente le modèle vidéo auquel le guidage CFG linéaire sera appliqué. Il est essentiel pour définir le modèle de base qui sera modifié avec l'échelle de guidage. |
 | `min_cfg` | `FLOAT`         | Le paramètre `min_cfg` spécifie l'échelle de guidage conditionnel minimale à appliquer, servant de point de départ pour l'ajustement linéaire de l'échelle. Il joue un rôle clé dans la détermination de la limite inférieure de l'échelle de guidage, influençant la sortie du modèle. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model`   | MODEL           | La sortie est une version modifiée du modèle d'entrée, avec l'échelle de guidage CFG linéaire appliquée. Ce modèle ajusté est capable de générer des sorties avec différents degrés de conditionnement, en fonction de l'échelle de guidage spécifiée. |
+| `modèle`   | MODEL           | La sortie est une version modifiée du modèle d'entrée, avec l'échelle de guidage CFG linéaire appliquée. Ce modèle ajusté est capable de générer des sorties avec différents degrés de conditionnement, en fonction de l'échelle de guidage spécifiée. |

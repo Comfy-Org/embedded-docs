@@ -7,7 +7,7 @@ O nó SplitSigmas foi projetado para dividir uma sequência de valores sigma em 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
 | `sigmas`  | `SIGMAS`      | O parâmetro 'sigmas' representa a sequência de valores sigma a ser dividida. Ele é essencial para determinar o ponto de divisão e as duas sequências resultantes de valores sigma, impactando a execução do nó e seus resultados. |
-| `step`    | `INT`         | O parâmetro 'step' especifica o índice no qual a sequência sigma deve ser dividida. Ele desempenha um papel crítico na definição do limite entre as duas sequências sigma resultantes, influenciando a funcionalidade do nó e as características da saída. |
+| `passo`    | `INT`         | O parâmetro 'step' especifica o índice no qual a sequência sigma deve ser dividida. Ele desempenha um papel crítico na definição do limite entre as duas sequências sigma resultantes, influenciando a funcionalidade do nó e as características da saída. |
 
 ## Saídas
 

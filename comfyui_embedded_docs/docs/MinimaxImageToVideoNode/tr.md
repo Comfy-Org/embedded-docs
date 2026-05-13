@@ -34,10 +34,10 @@ MiniMax'ın API'sini kullanarak bir görsel ve metin istemine dayalı olarak, is
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Video oluşturmanın ilk karesi olarak kullanılacak görsel |
-| `prompt_text` | STRING | Evet | - | Video oluşturmayı yönlendirecek metin istemi (varsayılan: boş dize) |
+| `görüntü` | IMAGE | Evet | - | Video oluşturmanın ilk karesi olarak kullanılacak görsel |
+| `istem_metni` | STRING | Evet | - | Video oluşturmayı yönlendirecek metin istemi (varsayılan: boş dize) |
 | `model` | COMBO | Evet | "I2V-01-Direktör"<br>"I2V-01"<br>"I2V-01-canlı" | Video oluşturma için kullanılacak model (varsayılan: "I2V-01") |
-| `seed` | INT | Hayır | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum (varsayılan: 0) |
+| `tohum` | INT | Hayır | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum (varsayılan: 0) |
 
 ## Çıktılar
 

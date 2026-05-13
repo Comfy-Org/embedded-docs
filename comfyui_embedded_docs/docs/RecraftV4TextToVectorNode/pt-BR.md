@@ -9,11 +9,11 @@ O nó Recraft V4 Text to Vector gera ilustrações em Scalable Vector Graphics (
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Prompt para a geração da imagem. Máximo de 10.000 caracteres. |
-| `negative_prompt` | STRING | Não | N/A | Uma descrição textual opcional de elementos indesejados em uma imagem. |
-| `model` | COMBO | Sim | `"recraftv4"`<br>`"recraftv4_pro"` | O modelo a ser usado para geração. Selecionar um modelo altera as opções disponíveis de `size`. |
-| `size` | COMBO | Sim | Para `recraftv4`: `"1024x1024"`, `"1152x896"`, `"896x1152"`, `"1216x832"`, `"832x1216"`, `"1344x768"`, `"768x1344"`, `"1536x640"`, `"640x1536"`<br>Para `recraftv4_pro`: `"2048x2048"`, `"2304x1792"`, `"1792x2304"`, `"2432x1664"`, `"1664x2432"`, `"2688x1536"`, `"1536x2688"`, `"3072x1280"`, `"1280x3072"` | O tamanho da imagem gerada. As opções disponíveis dependem do `model` selecionado. O padrão é `"1024x1024"` para `recraftv4` e `"2048x2048"` para `recraftv4_pro`. |
+| `prompt_negativo` | STRING | Não | N/A | Uma descrição textual opcional de elementos indesejados em uma imagem. |
+| `modelo` | COMBO | Sim | `"recraftv4"`<br>`"recraftv4_pro"` | O modelo a ser usado para geração. Selecionar um modelo altera as opções disponíveis de `size`. |
+| `size` | COMBO | Sim | Para `recraftv4`: `"1024x1024"`, `"1152x896"`, `"896x1152"`, `"1216x832"`, `"832x1216"`, `"1344x768"`, `"768x1344"`, `"1536x640"`, `"640x1536"`<br>Para `recraftv4_pro`: `"2048x2048"`, `"2304x1792"`, `"1792x2304"`, `"2432x1664"`, `"1664x2432"`, `"2688x1536"`, `"1536x2688"`, `"3072x1280"`, `"1280x3072"` | O tamanho da imagem gerada. As opções disponíveis dependem do `modelo` selecionado. O padrão é `"1024x1024"` para `recraftv4` e `"2048x2048"` para `recraftv4_pro`. |
 | `n` | INT | Sim | 1 a 6 | O número de imagens a serem geradas (padrão: 1). |
-| `seed` | INT | Sim | 0 a 18446744073709551615 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos, independentemente da semente. |
+| `semente` | INT | Sim | 0 a 18446744073709551615 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos, independentemente da semente. |
 | `recraft_controls` | CUSTOM | Não | N/A | Controles adicionais opcionais sobre a geração através do nó Recraft Controls. |
 
 **Nota:** O parâmetro `size` é uma entrada dinâmica cujas opções disponíveis mudam com base no `model` selecionado. O valor de `seed` não garante resultados reproduzíveis da API externa.

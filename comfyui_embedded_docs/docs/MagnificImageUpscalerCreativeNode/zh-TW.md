@@ -6,16 +6,16 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 要放大和增強的輸入圖像。 |
-| `prompt` | STRING | 否 | - | 用於引導圖像創意增強的文字描述。此為選填（預設：空白）。 |
-| `scale_factor` | COMBO | 是 | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | 放大圖像尺寸的倍率。 |
-| `optimized_for` | COMBO | 是 | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | 要針對哪種風格或內容類型來最佳化增強過程。 |
-| `creativity` | INT | 否 | -10 到 10 | 控制應用於圖像的創意詮釋程度（預設：0）。 |
-| `hdr` | INT | 否 | -10 到 10 | 定義和細節的層級（預設：0）。 |
-| `resemblance` | INT | 否 | -10 到 10 | 與原始圖像的相似度層級（預設：0）。 |
-| `fractality` | INT | 否 | -10 到 10 | 提示強度與每平方像素的複雜度（預設：0）。 |
-| `engine` | COMBO | 是 | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | 用於處理的特定 AI 引擎。這是一個進階參數。 |
-| `auto_downscale` | BOOLEAN | 否 | - | 啟用時，如果請求的放大倍率會超過最大允許輸出尺寸（25.3 百萬像素），節點將自動縮小輸入圖像。這是一個進階參數（預設：False）。 |
+| `影像` | IMAGE | 是 | - | 要放大和增強的輸入圖像。 |
+| `提示詞` | STRING | 否 | - | 用於引導圖像創意增強的文字描述。此為選填（預設：空白）。 |
+| `放大倍率` | COMBO | 是 | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | 放大圖像尺寸的倍率。 |
+| `最佳化目標` | COMBO | 是 | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | 要針對哪種風格或內容類型來最佳化增強過程。 |
+| `創意` | INT | 否 | -10 到 10 | 控制應用於圖像的創意詮釋程度（預設：0）。 |
+| `HDR` | INT | 否 | -10 到 10 | 定義和細節的層級（預設：0）。 |
+| `相似度` | INT | 否 | -10 到 10 | 與原始圖像的相似度層級（預設：0）。 |
+| `複雜度` | INT | 否 | -10 到 10 | 提示強度與每平方像素的複雜度（預設：0）。 |
+| `引擎` | COMBO | 是 | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | 用於處理的特定 AI 引擎。這是一個進階參數。 |
+| `自動降尺寸` | BOOLEAN | 否 | - | 啟用時，如果請求的放大倍率會超過最大允許輸出尺寸（25.3 百萬像素），節點將自動縮小輸入圖像。這是一個進階參數（預設：False）。 |
 
 **限制條件：**
 
@@ -28,7 +28,7 @@
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 經過創意增強和放大後的輸出圖像。 |
+| `影像` | IMAGE | 經過創意增強和放大後的輸出圖像。 |
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

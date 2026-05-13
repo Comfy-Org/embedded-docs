@@ -6,9 +6,9 @@ O nó ElevenLabs Text to Sound Effects gera efeitos sonoros de áudio a partir d
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `text` | STRING | Sim | N/A | Descrição textual do efeito sonoro a ser gerado. Este é um campo obrigatório. |
-| `model` | COMBO | Sim | `"eleven_sfx_v2"` | Modelo a ser usado para a geração do efeito sonoro. Selecionar este modelo revela parâmetros adicionais: `duration` (padrão: 5,0, intervalo: 0,5 a 30,0 segundos), `loop` (padrão: Falso) e `prompt_influence` (padrão: 0,3, intervalo: 0,0 a 1,0). |
-| `output_format` | COMBO | Sim | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de saída do áudio. |
+| `texto` | STRING | Sim | N/A | Descrição textual do efeito sonoro a ser gerado. Este é um campo obrigatório. |
+| `modelo` | COMBO | Sim | `"eleven_sfx_v2"` | Modelo a ser usado para a geração do efeito sonoro. Selecionar este modelo revela parâmetros adicionais: `duration` (padrão: 5,0, intervalo: 0,5 a 30,0 segundos), `loop` (padrão: Falso) e `prompt_influence` (padrão: 0,3, intervalo: 0,0 a 1,0). |
+| `formato_saida` | COMBO | Sim | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de saída do áudio. |
 
 **Detalhes dos Parâmetros:**
 

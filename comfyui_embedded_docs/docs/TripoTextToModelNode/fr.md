@@ -6,17 +6,17 @@ Génère des modèles 3D de manière synchrone à partir d’une description tex
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | - | Description textuelle pour générer le modèle 3D (saisie multiligne) |
-| `negative_prompt` | STRING | Non | - | Description textuelle de ce qu’il faut éviter dans le modèle généré (saisie multiligne) |
-| `model_version` | COMBO | Non | Plusieurs options disponibles | Version du modèle Tripo à utiliser pour la génération (par défaut : v2.5-20250123) |
+| `invite` | STRING | Oui | - | Description textuelle pour générer le modèle 3D (saisie multiligne) |
+| `invite_négative` | STRING | Non | - | Description textuelle de ce qu’il faut éviter dans le modèle généré (saisie multiligne) |
+| `version_modèle` | COMBO | Non | Plusieurs options disponibles | Version du modèle Tripo à utiliser pour la génération (par défaut : v2.5-20250123) |
 | `style` | COMBO | Non | Plusieurs options disponibles | Réglage de style pour le modèle généré (par défaut : "Aucun") |
 | `texture` | BOOLEAN | Non | - | Indique s’il faut générer des textures pour le modèle (par défaut : Vrai) |
 | `pbr` | BOOLEAN | Non | - | Indique s’il faut générer des matériaux PBR (Rendu Physiquement Réaliste) (par défaut : Vrai) |
-| `image_seed` | INT | Non | - | Graine aléatoire pour la génération d’image (par défaut : 42) |
-| `model_seed` | INT | Non | - | Graine aléatoire pour la génération du modèle (par défaut : 42) |
-| `texture_seed` | INT | Non | - | Graine aléatoire pour la génération de texture (par défaut : 42) |
-| `texture_quality` | COMBO | Non | "standard"<br>"détaillée" | Niveau de qualité pour la génération de texture (par défaut : "standard") |
-| `face_limit` | INT | Non | -1 à 2 000 000 | Nombre maximum de faces dans le modèle généré, -1 pour aucune limite (par défaut : -1) |
+| `graine_image` | INT | Non | - | Graine aléatoire pour la génération d’image (par défaut : 42) |
+| `modèle_graine` | INT | Non | - | Graine aléatoire pour la génération du modèle (par défaut : 42) |
+| `texture_graine` | INT | Non | - | Graine aléatoire pour la génération de texture (par défaut : 42) |
+| `qualité_texture` | COMBO | Non | "standard"<br>"détaillée" | Niveau de qualité pour la génération de texture (par défaut : "standard") |
+| `limite_visage` | INT | Non | -1 à 2 000 000 | Nombre maximum de faces dans le modèle généré, -1 pour aucune limite (par défaut : -1) |
 | `quad` | BOOLEAN | Non | - | Indique s’il faut générer une géométrie à base de quadrangles au lieu de triangles (par défaut : Faux) |
 | `geometry_quality` | COMBO | Non | "standard"<br>"détaillée" | Niveau de qualité pour la génération de géométrie (par défaut : "standard") |
 
@@ -26,8 +26,8 @@ Génère des modèles 3D de manière synchrone à partir d’une description tex
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model_file` | STRING | Fichier du modèle 3D généré (uniquement pour la rétrocompatibilité) |
-| `model task_id` | MODEL_TASK_ID | Identifiant unique de la tâche pour le processus de génération du modèle |
+| `modèle task_id` | STRING | Fichier du modèle 3D généré (uniquement pour la rétrocompatibilité) |
+| `GLB` | MODEL_TASK_ID | Identifiant unique de la tâche pour le processus de génération du modèle |
 | `GLB` | FILE3DGLB | Modèle 3D généré au format GLB |
 
 ---

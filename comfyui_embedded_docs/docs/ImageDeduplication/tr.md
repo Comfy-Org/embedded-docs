@@ -6,14 +6,14 @@ Bu düğüm, bir gruptaki yinelenen veya çok benzer görselleri kaldırır. Her
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `images` | IMAGE | Evet | - | Yinelenenleri kaldırmak için işlenecek görsel grubu. |
-| `similarity_threshold` | FLOAT | Hayır | 0.0 - 1.0 | Benzerlik eşiği (0-1). Daha yüksek değer daha benzer anlamına gelir. Bu eşiğin üzerindeki görseller yinelenen olarak kabul edilir. (varsayılan: 0.95) |
+| `görseller` | IMAGE | Evet | - | Yinelenenleri kaldırmak için işlenecek görsel grubu. |
+| `benzerlik_eşiği` | FLOAT | Hayır | 0.0 - 1.0 | Benzerlik eşiği (0-1). Daha yüksek değer daha benzer anlamına gelir. Bu eşiğin üzerindeki görseller yinelenen olarak kabul edilir. (varsayılan: 0.95) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `images` | IMAGE | Yinelenenlerin kaldırıldığı filtrelenmiş görsel listesi. |
+| `görseller` | IMAGE | Yinelenenlerin kaldırıldığı filtrelenmiş görsel listesi. |
 
 ---
 **Source fingerprint (SHA-256):** `8904f9dee4ca911821e76d2317983cbc230c4821a9ee7876180bd7dbe42b9a54`

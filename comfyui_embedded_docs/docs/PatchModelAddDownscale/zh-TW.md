@@ -9,13 +9,13 @@ PatchModelAddDownscale 節點透過對模型中的特定區塊執行降採樣和
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | 是 | - | 要套用降採樣修補的模型 |
-| `block_number` | INT | 否 | 1-32 | 將套用降採樣的特定區塊編號（預設值：3） |
-| `downscale_factor` | FLOAT | 否 | 0.1-9.0 | 降採樣特徵的倍數（預設值：2.0） |
-| `start_percent` | FLOAT | 否 | 0.0-1.0 | 降採樣開始的降噪過程起始點（預設值：0.0） |
-| `end_percent` | FLOAT | 否 | 0.0-1.0 | 降採樣結束的降噪過程終止點（預設值：0.35） |
-| `downscale_after_skip` | BOOLEAN | 否 | - | 是否在跳躍連接後套用降採樣（預設值：True） |
-| `downscale_method` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用於降採樣操作的插值方法 |
-| `upscale_method` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用於升採樣操作的插值方法 |
+| `區塊編號` | INT | 否 | 1-32 | 將套用降採樣的特定區塊編號（預設值：3） |
+| `縮小比例` | FLOAT | 否 | 0.1-9.0 | 降採樣特徵的倍數（預設值：2.0） |
+| `起始百分比` | FLOAT | 否 | 0.0-1.0 | 降採樣開始的降噪過程起始點（預設值：0.0） |
+| `結束百分比` | FLOAT | 否 | 0.0-1.0 | 降採樣結束的降噪過程終止點（預設值：0.35） |
+| `跳過後縮小` | BOOLEAN | 否 | - | 是否在跳躍連接後套用降採樣（預設值：True） |
+| `縮小方法` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用於降採樣操作的插值方法 |
+| `放大方法` | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" | 用於升採樣操作的插值方法 |
 
 ## 輸出
 

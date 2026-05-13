@@ -7,12 +7,12 @@ Este nó permite que usuários interajam com os modelos de IA Gemini do Google p
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Entradas de texto para o modelo, usadas para gerar uma resposta. Você pode incluir instruções detalhadas, perguntas ou contexto para o modelo. Padrão: string vazia. |
-| `model` | COMBO | Sim | `gemini-2.5-pro-preview-05-06`<br>`gemini-2.5-flash-preview-04-17`<br>`gemini-2.5-pro`<br>`gemini-2.5-flash`<br>`gemini-3-pro-preview`<br>`gemini-3-1-pro`<br>`gemini-3-1-flash-lite` | O modelo Gemini a ser usado para gerar respostas. Padrão: gemini-3-1-pro. |
-| `seed` | INT | Sim | 0 a 18446744073709551615 | Quando a semente é fixada em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para solicitações repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo quando você usa o mesmo valor de semente. Por padrão, um valor de semente aleatório é usado. Padrão: 42. |
-| `images` | IMAGE | Não | - | Imagem(ns) opcional(is) para usar como contexto para o modelo. Para incluir várias imagens, você pode usar o nó Batch Images. Padrão: Nenhum. |
-| `audio` | AUDIO | Não | - | Áudio opcional para usar como contexto para o modelo. Padrão: Nenhum. |
-| `video` | VIDEO | Não | - | Vídeo opcional para usar como contexto para o modelo. Padrão: Nenhum. |
-| `files` | GEMINI_INPUT_FILES | Não | - | Arquivo(s) opcional(is) para usar como contexto para o modelo. Aceita entradas do nó Gemini Generate Content Input Files. Padrão: Nenhum. |
+| `modelo` | COMBO | Sim | `gemini-2.5-pro-preview-05-06`<br>`gemini-2.5-flash-preview-04-17`<br>`gemini-2.5-pro`<br>`gemini-2.5-flash`<br>`gemini-3-pro-preview`<br>`gemini-3-1-pro`<br>`gemini-3-1-flash-lite` | O modelo Gemini a ser usado para gerar respostas. Padrão: gemini-3-1-pro. |
+| `semente` | INT | Sim | 0 a 18446744073709551615 | Quando a semente é fixada em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para solicitações repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo quando você usa o mesmo valor de semente. Por padrão, um valor de semente aleatório é usado. Padrão: 42. |
+| `imagens` | IMAGE | Não | - | Imagem(ns) opcional(is) para usar como contexto para o modelo. Para incluir várias imagens, você pode usar o nó Batch Images. Padrão: Nenhum. |
+| `áudio` | AUDIO | Não | - | Áudio opcional para usar como contexto para o modelo. Padrão: Nenhum. |
+| `vídeo` | VIDEO | Não | - | Vídeo opcional para usar como contexto para o modelo. Padrão: Nenhum. |
+| `arquivos` | GEMINI_INPUT_FILES | Não | - | Arquivo(s) opcional(is) para usar como contexto para o modelo. Aceita entradas do nó Gemini Generate Content Input Files. Padrão: Nenhum. |
 | `system_prompt` | STRING | Não | - | Instruções fundamentais que ditam o comportamento de uma IA. Padrão: string vazia. Este é um parâmetro avançado. |
 
 ## Saídas

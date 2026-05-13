@@ -8,7 +8,7 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | STRING | 是 | `frame_interpolation` 資料夾中的模型檔案列表 | 選擇要載入的影格插值模型。模型必須放置在 'frame_interpolation' 資料夾中。 |
+| `模型名稱` | STRING | 是 | `frame_interpolation` 資料夾中的模型檔案列表 | 選擇要載入的影格插值模型。模型必須放置在 'frame_interpolation' 資料夾中。 |
 
 ## 輸出
 

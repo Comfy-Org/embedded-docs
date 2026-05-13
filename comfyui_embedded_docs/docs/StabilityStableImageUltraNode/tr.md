@@ -36,13 +36,13 @@ Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu d
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Çıktı görselinde görmek istediğiniz şey. Öğeleri, renkleri ve konuları net bir şekilde tanımlayan güçlü, betimleyici bir istem daha iyi sonuçlar verecektir. Belirli bir kelimenin ağırlığını kontrol etmek için `(kelime:ağırlık)` biçimini kullanın; burada `kelime` ağırlığını kontrol etmek istediğiniz kelime ve `ağırlık` 0 ile 1 arasında bir değerdir. Örneğin: `Gökyüzü net bir (mavi:0.3) ve (yeşil:0.8) idi` ifadesi, mavi ve yeşil olan ancak maviden daha yeşil bir gökyüzünü belirtir. |
-| `aspect_ratio` | COMBO | Evet | `"1:1"`<br>`"16:9"`<br>`"21:9"`<br>`"2:3"`<br>`"3:2"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"9:21"` | Oluşturulan görselin en-boy oranı (varsayılan: "1:1"). |
-| `style_preset` | COMBO | Hayır | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | Oluşturulan görselin isteğe bağlı istenen stili. Herhangi bir stil ön ayarı uygulamamak için "Yok" seçeneğini seçin. |
-| `seed` | INT | Evet | 0 - 4294967294 | Gürültü oluşturmak için kullanılan rastgele tohum değeri. |
-| `image` | IMAGE | Hayır | - | Görselden görsele oluşturma için isteğe bağlı giriş görseli. |
-| `negative_prompt` | STRING | Hayır | - | Çıktı görselinde görmek istemediğiniz şeyi tanımlayan bir metin parçası. Bu gelişmiş bir özelliktir. |
-| `image_denoise` | FLOAT | Hayır | 0.0 - 1.0 | Giriş görselinin gürültü giderme oranı; 0.0, girişle aynı görseli verir, 1.0 ise hiç görsel sağlanmamış gibidir (varsayılan: 0.5). |
+| `istem` | STRING | Evet | - | Çıktı görselinde görmek istediğiniz şey. Öğeleri, renkleri ve konuları net bir şekilde tanımlayan güçlü, betimleyici bir istem daha iyi sonuçlar verecektir. Belirli bir kelimenin ağırlığını kontrol etmek için `(kelime:ağırlık)` biçimini kullanın; burada `kelime` ağırlığını kontrol etmek istediğiniz kelime ve `ağırlık` 0 ile 1 arasında bir değerdir. Örneğin: `Gökyüzü net bir (mavi:0.3) ve (yeşil:0.8) idi` ifadesi, mavi ve yeşil olan ancak maviden daha yeşil bir gökyüzünü belirtir. |
+| `en_boy_oranı` | COMBO | Evet | `"1:1"`<br>`"16:9"`<br>`"21:9"`<br>`"2:3"`<br>`"3:2"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"9:21"` | Oluşturulan görselin en-boy oranı (varsayılan: "1:1"). |
+| `stil_önayarı` | COMBO | Hayır | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | Oluşturulan görselin isteğe bağlı istenen stili. Herhangi bir stil ön ayarı uygulamamak için "Yok" seçeneğini seçin. |
+| `tohum` | INT | Evet | 0 - 4294967294 | Gürültü oluşturmak için kullanılan rastgele tohum değeri. |
+| `görüntü` | IMAGE | Hayır | - | Görselden görsele oluşturma için isteğe bağlı giriş görseli. |
+| `negatif_istem` | STRING | Hayır | - | Çıktı görselinde görmek istemediğiniz şeyi tanımlayan bir metin parçası. Bu gelişmiş bir özelliktir. |
+| `görüntü_gürültü_azaltma` | FLOAT | Hayır | 0.0 - 1.0 | Giriş görselinin gürültü giderme oranı; 0.0, girişle aynı görseli verir, 1.0 ise hiç görsel sağlanmamış gibidir (varsayılan: 0.5). |
 
 **Not:** Bir giriş görseli sağlanmadığında, `image_denoise` parametresi otomatik olarak devre dışı bırakılır ve yok sayılır.
 

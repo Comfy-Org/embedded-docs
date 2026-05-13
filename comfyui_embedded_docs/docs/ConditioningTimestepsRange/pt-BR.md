@@ -6,8 +6,8 @@ O nó **ConditioningTimestepsRange** cria três faixas de timesteps distintas pa
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `start_percent` | FLOAT | Sim | 0.0 - 1.0 | Percentual inicial da faixa de timesteps (padrão: 0.0) |
-| `end_percent` | FLOAT | Sim | 0.0 - 1.0 | Percentual final da faixa de timesteps (padrão: 1.0) |
+| `percentual_inicial` | FLOAT | Sim | 0.0 - 1.0 | Percentual inicial da faixa de timesteps (padrão: 0.0) |
+| `percentual_final` | FLOAT | Sim | 0.0 - 1.0 | Percentual final da faixa de timesteps (padrão: 1.0) |
 
 ## Saídas
 

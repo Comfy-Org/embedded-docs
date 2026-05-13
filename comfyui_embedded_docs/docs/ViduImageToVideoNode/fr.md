@@ -8,13 +8,13 @@ Le nœud Vidu Image To Video Generation crée une courte vidéo à partir d'une 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `viduq1` | Nom du modèle (par défaut : viduq1) |
+| `modèle` | COMBO | Oui | `viduq1` | Nom du modèle (par défaut : viduq1) |
 | `image` | IMAGE | Oui | - | Image utilisée comme première image de la vidéo générée |
 | `prompt` | STRING | Non | - | Description textuelle pour la génération vidéo (par défaut : vide) |
-| `duration` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5, fixée à 5 secondes) |
-| `seed` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
-| `resolution` | COMBO | Non | `1080p` | Les valeurs prises en charge peuvent varier selon le modèle et la durée (par défaut : 1080p) |
-| `movement_amplitude` | COMBO | Non | `auto`<br>`small`<br>`medium`<br>`large` | L'amplitude de mouvement des objets dans l'image (par défaut : auto) |
+| `durée` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5, fixée à 5 secondes) |
+| `graine` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
+| `résolution` | COMBO | Non | `1080p` | Les valeurs prises en charge peuvent varier selon le modèle et la durée (par défaut : 1080p) |
+| `amplitude_mouvement` | COMBO | Non | `auto`<br>`small`<br>`medium`<br>`large` | L'amplitude de mouvement des objets dans l'image (par défaut : auto) |
 
 **Contraintes :**
 

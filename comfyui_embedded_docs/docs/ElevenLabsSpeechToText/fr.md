@@ -25,8 +25,8 @@ Le nœud ElevenLabs Speech to Text transcrit des fichiers audio en texte. Il uti
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `text` | STRING | Le texte transcrit à partir de l'audio. |
-| `language_code` | STRING | Le code de langue détecté de l'audio. |
+| `language_code` | STRING | Le texte transcrit à partir de l'audio. |
+| `words_json` | STRING | Le code de langue détecté de l'audio. |
 | `words_json` | STRING | Une chaîne formatée en JSON contenant des informations détaillées au niveau des mots, y compris les horodatages et les étiquettes de locuteur si activés. |
 
 ---

@@ -6,7 +6,7 @@ Stability API çağrısıyla bir görüntüyü orijinal boyutunun 4 katına hız
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Yükseltilecek giriş görüntüsü |
+| `görüntü` | IMAGE | Evet | - | Yükseltilecek giriş görüntüsü |
 
 ## Çıkışlar
 

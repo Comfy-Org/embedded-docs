@@ -6,9 +6,9 @@ O nó AlignYourStepsScheduler gera valores sigma para o processo de remoção de
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model_type` | STRING | Sim | `"SD1"`<br>`"SDXL"`<br>`"SVD"` | Especifica o tipo de modelo a ser usado para o cálculo sigma (padrão: "SD1") |
-| `steps` | INT | Sim | 1 a 10000 | O número total de etapas de amostragem a serem geradas (padrão: 10) |
-| `denoise` | FLOAT | Sim | 0.0 a 1.0 | Controla o quanto remover o ruído da imagem, onde 1.0 usa todas as etapas e valores menores usam menos etapas (padrão: 1.0) |
+| `tipo_de_modelo` | STRING | Sim | `"SD1"`<br>`"SDXL"`<br>`"SVD"` | Especifica o tipo de modelo a ser usado para o cálculo sigma (padrão: "SD1") |
+| `passos` | INT | Sim | 1 a 10000 | O número total de etapas de amostragem a serem geradas (padrão: 10) |
+| `reduzir_ruído` | FLOAT | Sim | 0.0 a 1.0 | Controla o quanto remover o ruído da imagem, onde 1.0 usa todas as etapas e valores menores usam menos etapas (padrão: 1.0) |
 
 ## Saídas
 

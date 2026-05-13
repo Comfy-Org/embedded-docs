@@ -6,7 +6,7 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `choice` | COMBO | Evet | Kullanıcı tanımlı | Özel açılır menüden seçilen metin seçeneği. Kullanılabilir seçeneklerin listesi, düğümün ön uç arayüzünde kullanıcı tarafından tanımlanır. |
+| `seçim` | COMBO | Evet | Kullanıcı tanımlı | Özel açılır menüden seçilen metin seçeneği. Kullanılabilir seçeneklerin listesi, düğümün ön uç arayüzünde kullanıcı tarafından tanımlanır. |
 | `index` | INT | Hayır | 0 | Bir dizin belirtmek için kullanılabilen bir tamsayı değeri. Varsayılan: 0. |
 
 **Not:** Bu düğümün girişi için doğrulama kasıtlı olarak devre dışı bırakılmıştır. Bu, arka uç seçiminizin önceden tanımlanmış bir listeden olup olmadığını kontrol etmeden ön uçta istediğiniz herhangi bir özel metin seçeneğini tanımlamanıza olanak tanır.
@@ -15,7 +15,7 @@
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `STRING` | STRING | Özel bileşen kutusundan seçilen seçeneğin metin dizesi. |
+| `INDEX` | STRING | Özel bileşen kutusundan seçilen seçeneğin metin dizesi. |
 | `INDEX` | INT | Seçilen seçeneğin açılır listedeki dizin konumu. |
 
 ---

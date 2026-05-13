@@ -7,8 +7,8 @@ Este nodo ajusta los valores de píxeles de una imagen de entrada mediante un pr
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `image` | IMAGE | Sí | - | La imagen de entrada que se va a normalizar. |
-| `mean` | FLOAT | No | 0.0 - 1.0 | Valor medio para la normalización (predeterminado: 0.5). |
-| `std` | FLOAT | No | 0.001 - 1.0 | Desviación estándar para la normalización (predeterminado: 0.5). |
+| `media` | FLOAT | No | 0.0 - 1.0 | Valor medio para la normalización (predeterminado: 0.5). |
+| `desviación estándar` | FLOAT | No | 0.001 - 1.0 | Desviación estándar para la normalización (predeterminado: 0.5). |
 
 ## Salidas
 

@@ -8,15 +8,15 @@ O nó ImageAddNoise adiciona ruído aleatório a uma imagem de entrada. Ele usa 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada à qual o ruído será adicionado |
-| `seed` | INT | Sim | 0 a 18446744073709551615 | A semente aleatória usada para criar o ruído (padrão: 0) |
-| `strength` | FLOAT | Sim | 0.0 a 1.0 | Controla a intensidade do efeito de ruído (padrão: 0.5) |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada à qual o ruído será adicionado |
+| `semente` | INT | Sim | 0 a 18446744073709551615 | A semente aleatória usada para criar o ruído (padrão: 0) |
+| `intensidade` | FLOAT | Sim | 0.0 a 1.0 | Controla a intensidade do efeito de ruído (padrão: 0.5) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem de saída com ruído adicionado aplicado |
+| `imagem` | IMAGE | A imagem de saída com ruído adicionado aplicado |
 
 ---
 **Source fingerprint (SHA-256):** `8abfc64500e5ff8fe7589763a07c15d771e9a5a6a61bae9ec4d819be9bf71810`

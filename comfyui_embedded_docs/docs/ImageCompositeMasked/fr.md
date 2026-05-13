@@ -12,8 +12,8 @@ Le nœud `ImageCompositeMasked` est conçu pour le compositing d'images, permett
 | `source` | `IMAGE` | L'image source à composer sur l'image de destination. Cette image peut éventuellement être redimensionnée pour correspondre aux dimensions de l'image de destination. |
 | `x` | `INT` | La coordonnée x dans l'image de destination où sera placé le coin supérieur gauche de l'image source. |
 | `y` | `INT` | La coordonnée y dans l'image de destination où sera placé le coin supérieur gauche de l'image source. |
-| `resize_source` | `BOOLEAN` | Un indicateur booléen indiquant si l'image source doit être redimensionnée pour correspondre aux dimensions de l'image de destination. |
-| `mask` | `MASK` | Un masque optionnel qui spécifie quelles parties de l'image source doivent être compositées sur l'image de destination. Cela permet des opérations de compositing plus complexes, telles que le fondu ou les superpositions partielles. |
+| `redimensionner_source` | `BOOLEAN` | Un indicateur booléen indiquant si l'image source doit être redimensionnée pour correspondre aux dimensions de l'image de destination. |
+| `masque` | `MASK` | Un masque optionnel qui spécifie quelles parties de l'image source doivent être compositées sur l'image de destination. Cela permet des opérations de compositing plus complexes, telles que le fondu ou les superpositions partielles. |
 
 ## Sorties
 

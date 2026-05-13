@@ -7,15 +7,15 @@ Le nœud InpaintModelConditioning est conçu pour faciliter le processus de cond
 | Paramètre | Type Comfy        | Description |
 |-----------|--------------------|-------------|
 | `positive`| `CONDITIONING`     | Représente les informations ou paramètres de conditionnement positif à appliquer au modèle d'infilling. Cette entrée est cruciale pour définir le contexte ou les contraintes dans lesquels l'opération d'infilling doit être effectuée, affectant considérablement le résultat final. |
-| `negative`| `CONDITIONING`     | Représente les informations ou paramètres de conditionnement négatif à appliquer au modèle d'infilling. Cette entrée est essentielle pour spécifier les conditions ou contextes à éviter pendant le processus d'infilling, influençant ainsi le résultat final. |
+| `négatif`| `CONDITIONING`     | Représente les informations ou paramètres de conditionnement négatif à appliquer au modèle d'infilling. Cette entrée est essentielle pour spécifier les conditions ou contextes à éviter pendant le processus d'infilling, influençant ainsi le résultat final. |
 | `vae`     | `VAE`              | Spécifie le modèle VAE à utiliser dans le processus de conditionnement. Cette entrée est cruciale pour déterminer l'architecture et les paramètres spécifiques du modèle VAE qui sera utilisé. |
 | `pixels`  | `IMAGE`            | Représente les données de pixels de l'image à traiter par infilling. Cette entrée est essentielle pour fournir le contexte visuel nécessaire à la tâche d'infilling. |
-| `mask`    | `MASK`             | Spécifie le masque à appliquer à l'image, indiquant les zones à traiter par infilling. Cette entrée est cruciale pour définir les régions spécifiques de l'image nécessitant un infilling. |
+| `masque`    | `MASK`             | Spécifie le masque à appliquer à l'image, indiquant les zones à traiter par infilling. Cette entrée est cruciale pour définir les régions spécifiques de l'image nécessitant un infilling. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|--------------|-------------|
-| `positive`| `CONDITIONING` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions positives spécifiées. |
-| `negative`| `CONDITIONING` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions négatives spécifiées. |
+| `négatif`| `CONDITIONING` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions positives spécifiées. |
+| `latent`| `CONDITIONING` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions négatives spécifiées. |
 | `latent`  | `LATENT`     | La représentation latente dérivée du processus de conditionnement. Cette sortie est cruciale pour comprendre les caractéristiques et attributs sous-jacents de l'image en cours de traitement par infilling. |

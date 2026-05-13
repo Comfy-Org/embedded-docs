@@ -30,9 +30,9 @@
 
 | 出力名 | データ型 | 説明 |
 | :--- | :--- | :--- |
-| `model_file` | STRING | 生成されたGLBモデルのファイル名です。この出力は後方互換性のために提供されています。 |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy APIタスクの一意の識別子です。 |
-| `GLB` | FILE3DGLB | GLB形式で生成された3Dモデルです。 |
+| `meshy_task_id` | STRING | 生成されたGLBモデルのファイル名です。この出力は後方互換性のために提供されています。 |
+| `GLB` | MESHY_TASK_ID | Meshy APIタスクの一意の識別子です。 |
+| `FBX` | FILE3DGLB | GLB形式で生成された3Dモデルです。 |
 | `FBX` | FILE3DFBX | FBX形式で生成された3Dモデルです。 |
 
 ---

@@ -6,11 +6,11 @@ Le nœud UNetSelfAttentionMultiply applique des facteurs de multiplication aux c
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle UNet à modifier avec des facteurs d'échelle d'attention |
+| `modèle` | MODEL | Oui | - | Le modèle UNet à modifier avec des facteurs d'échelle d'attention |
 | `q` | FLOAT | Non | 0.0 - 10.0 | Facteur de multiplication pour le composant requête (par défaut : 1.0) |
 | `k` | FLOAT | Non | 0.0 - 10.0 | Facteur de multiplication pour le composant clé (par défaut : 1.0) |
 | `v` | FLOAT | Non | 0.0 - 10.0 | Facteur de multiplication pour le composant valeur (par défaut : 1.0) |
-| `out` | FLOAT | Non | 0.0 - 10.0 | Facteur de multiplication pour le composant de sortie (par défaut : 1.0) |
+| `sortie` | FLOAT | Non | 0.0 - 10.0 | Facteur de multiplication pour le composant de sortie (par défaut : 1.0) |
 
 ## Sorties
 

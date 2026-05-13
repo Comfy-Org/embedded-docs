@@ -6,14 +6,14 @@ Le nœud TomePatchModel applique la technique de fusion de tokens (ToMe) à un m
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer la fusion de tokens |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer la fusion de tokens |
 | `ratio` | FLOAT | Non | 0.0 - 1.0 | Le ratio de tokens à fusionner (par défaut : 0.3) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec la fusion de tokens appliquée |
+| `modèle` | MODEL | Le modèle modifié avec la fusion de tokens appliquée |
 
 ---
 **Source fingerprint (SHA-256):** `23d63ffa1b468a8a41533cc926125f4ef566b13edd1d95a6ef1ae63096a9d878`

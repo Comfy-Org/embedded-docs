@@ -12,7 +12,7 @@ Ce nœud utilise le dernier modèle d'IA Kling pour générer une vidéo à part
 | `duration` | INT | Oui | 3 à 15 secondes | La durée de la vidéo en secondes (par défaut : 5). |
 | `resolution` | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` | La qualité ou la résolution en pixels de la vidéo (par défaut : `"1080p"`). |
 | `storyboards` | DYNAMIC_COMBO | Non | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Génère une série de segments vidéo avec des prompts et durées individuels. Ignoré pour le modèle o1. |
-| `generate_audio` | BOOLEAN | Non | Vrai / Faux | Indique s'il faut générer l'audio pour la vidéo (par défaut : Faux). |
+| `générer l'audio` | BOOLEAN | Non | Vrai / Faux | Indique s'il faut générer l'audio pour la vidéo (par défaut : Faux). |
 | `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). |
 
 ### Contraintes et limitations des paramètres

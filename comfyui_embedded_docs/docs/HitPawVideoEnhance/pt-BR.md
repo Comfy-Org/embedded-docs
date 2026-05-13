@@ -8,9 +8,9 @@ O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | DYNAMIC COMBO | Sim | Múltiplas opções disponíveis | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. |
-| `model.resolution` | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | A resolução alvo para o vídeo aprimorado. Algumas opções podem não estar disponíveis dependendo do `model` selecionado. |
-| `video` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada a ser aprimorado. |
+| `modelo` | DYNAMIC COMBO | Sim | Múltiplas opções disponíveis | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. |
+| `model.resolution` | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | A resolução alvo para o vídeo aprimorado. Algumas opções podem não estar disponíveis dependendo do `modelo` selecionado. |
+| `vídeo` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada a ser aprimorado. |
 
 **Restrições:**
 
@@ -21,7 +21,7 @@ O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de 
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `video` | VIDEO | O arquivo de vídeo aprimorado. |
+| `vídeo` | VIDEO | O arquivo de vídeo aprimorado. |
 
 ---
 **Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`

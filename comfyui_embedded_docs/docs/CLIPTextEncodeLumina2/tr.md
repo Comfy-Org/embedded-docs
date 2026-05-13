@@ -6,8 +6,8 @@ CLIP Metin Kodlama (Lumina2) düğümü, bir sistem yönergesini ve bir kullanı
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `system_prompt` | STRING | Evet | `"superior"`<br>`"alignment"` | Lumina2 iki tür sistem yönergesi sağlar: "superior" üstün görüntü-metin uyumuna sahip görüntüler üretir; "alignment" ise en yüksek derecede görüntü-metin uyumuna sahip yüksek kaliteli görüntüler üretir. |
-| `user_prompt` | STRING | Evet | Yok | Kodlanacak metin. Çok satırlı girişi ve dinamik yönergeleri destekler. |
+| `sistem_istemi` | STRING | Evet | `"superior"`<br>`"alignment"` | Lumina2 iki tür sistem yönergesi sağlar: "superior" üstün görüntü-metin uyumuna sahip görüntüler üretir; "alignment" ise en yüksek derecede görüntü-metin uyumuna sahip yüksek kaliteli görüntüler üretir. |
+| `kullanıcı_istemi` | STRING | Evet | Yok | Kodlanacak metin. Çok satırlı girişi ve dinamik yönergeleri destekler. |
 | `clip` | CLIP | Evet | Yok | Metni kodlamak için kullanılan CLIP modeli. |
 
 **Not:** `clip` girişi zorunludur ve boş (None) olamaz. clip girişi geçersizse, düğüm kontrol noktasının (checkpoint) geçerli bir CLIP veya metin kodlayıcı modeli içermeyebileceğini belirten bir hata verecektir.

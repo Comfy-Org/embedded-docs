@@ -6,17 +6,17 @@ Rodin3D_Gen2 düğümü, Rodin API'sini kullanarak 3D varlıklar üretir. Giriş
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Evet | - | 3D model üretimi için kullanılacak giriş görüntüleri |
-| `Seed` | INT | Hayır | 0-65535 | Üretim için rastgele tohum değeri (varsayılan: 0) |
-| `Material_Type` | COMBO | Hayır | "PBR"<br>"Shaded" | 3D modele uygulanacak malzeme türü (varsayılan: "PBR") |
-| `Polygon_count` | COMBO | Hayır | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" | Üretilen 3D model için hedef çokgen sayısı (varsayılan: "500K-Triangle") |
-| `TAPose` | BOOLEAN | Hayır | - | TAPose işleminin uygulanıp uygulanmayacağı (varsayılan: False) |
+| `Görseller` | IMAGE | Evet | - | 3D model üretimi için kullanılacak giriş görüntüleri |
+| `Tohum` | INT | Hayır | 0-65535 | Üretim için rastgele tohum değeri (varsayılan: 0) |
+| `Malzeme_Türü` | COMBO | Hayır | "PBR"<br>"Shaded" | 3D modele uygulanacak malzeme türü (varsayılan: "PBR") |
+| `Poligon_sayısı` | COMBO | Hayır | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" | Üretilen 3D model için hedef çokgen sayısı (varsayılan: "500K-Triangle") |
+| `TAPoz` | BOOLEAN | Hayır | - | TAPose işleminin uygulanıp uygulanmayacağı (varsayılan: False) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `3D Model Yolu` | STRING | Üretilen 3D modele giden dosya yolu (geriye dönük uyumluluk için) |
+| `GLB` | STRING | Üretilen 3D modele giden dosya yolu (geriye dönük uyumluluk için) |
 | `GLB` | FILE3DGLB | GLB formatında üretilen 3D model |
 
 ---

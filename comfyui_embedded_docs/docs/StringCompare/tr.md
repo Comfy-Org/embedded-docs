@@ -6,10 +6,10 @@ StringCompare düğümü, iki metin dizesini farklı karşılaştırma yöntemle
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string_a` | STRING | Evet | - | Karşılaştırılacak ilk dize |
-| `string_b` | STRING | Evet | - | Karşılaştırma yapılacak ikinci dize |
-| `mode` | COMBO | Evet | "İle Başlar"<br>"İle Biter"<br>"Eşit" | Kullanılacak karşılaştırma yöntemi (varsayılan: "İle Başlar") |
-| `case_sensitive` | BOOLEAN | Hayır | - | Karşılaştırma sırasında harf büyüklüğünün dikkate alınıp alınmayacağı (varsayılan: true) |
+| `dize_a` | STRING | Evet | - | Karşılaştırılacak ilk dize |
+| `dize_b` | STRING | Evet | - | Karşılaştırma yapılacak ikinci dize |
+| `mod` | COMBO | Evet | "İle Başlar"<br>"İle Biter"<br>"Eşit" | Kullanılacak karşılaştırma yöntemi (varsayılan: "İle Başlar") |
+| `büyük/küçük harf duyarlı` | BOOLEAN | Hayır | - | Karşılaştırma sırasında harf büyüklüğünün dikkate alınıp alınmayacağı (varsayılan: true) |
 
 ## Çıkışlar
 

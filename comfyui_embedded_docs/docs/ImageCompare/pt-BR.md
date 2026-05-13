@@ -6,8 +6,8 @@ O nó Image Compare fornece uma interface visual para comparar duas imagens lado
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image_a` | IMAGE | Não | - | A primeira imagem a ser comparada. |
-| `image_b` | IMAGE | Não | - | A segunda imagem a ser comparada. |
+| `imagem_a` | IMAGE | Não | - | A primeira imagem a ser comparada. |
+| `imagem_b` | IMAGE | Não | - | A segunda imagem a ser comparada. |
 | `compare_view` | IMAGECOMPARE | Sim | - | O controle que habilita a visualização de comparação com controle deslizante na interface. |
 
 **Observação:** Este nó é um nó de saída. Embora `image_a` e `image_b` sejam opcionais, pelo menos uma imagem deve ser fornecida para que o nó tenha um efeito visível. O nó exibirá uma área vazia para qualquer entrada de imagem que não estiver conectada.

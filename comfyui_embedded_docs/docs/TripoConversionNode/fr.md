@@ -8,12 +8,12 @@ Le TripoConversionNode convertit des modèles 3D entre différents formats de fi
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Oui | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | L'ID de tâche d'une opération Tripo précédente (génération de modèle, rigging ou retargeting) |
+| `id_tâche_modèle_original` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Oui | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | L'ID de tâche d'une opération Tripo précédente (génération de modèle, rigging ou retargeting) |
 | `format` | COMBO | Oui | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | Le format de fichier cible pour le modèle 3D converti |
 | `quad` | BOOLEAN | Non | Vrai/Faux | Convertir les triangles en quads (par défaut : Faux) |
-| `face_limit` | INT | Non | -1 à 2000000 | Nombre maximal de faces dans le modèle de sortie, utiliser -1 pour aucune limite (par défaut : -1) |
-| `texture_size` | INT | Non | 128 à 4096 | Taille des textures de sortie en pixels (par défaut : 4096) |
-| `texture_format` | COMBO | Non | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Format des textures exportées (par défaut : JPEG) |
+| `limite_faces` | INT | Non | -1 à 2000000 | Nombre maximal de faces dans le modèle de sortie, utiliser -1 pour aucune limite (par défaut : -1) |
+| `taille_texture` | INT | Non | 128 à 4096 | Taille des textures de sortie en pixels (par défaut : 4096) |
+| `format_texture` | COMBO | Non | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Format des textures exportées (par défaut : JPEG) |
 | `force_symmetry` | BOOLEAN | Non | Vrai/Faux | Forcer la symétrie sur le modèle (par défaut : Faux) |
 | `flatten_bottom` | BOOLEAN | Non | Vrai/Faux | Aplatir le bas du modèle (par défaut : Faux) |
 | `flatten_bottom_threshold` | FLOAT | Non | 0.0 à 1.0 | Seuil pour l'aplatissement du bas (par défaut : 0.0) |

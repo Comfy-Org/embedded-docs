@@ -7,14 +7,14 @@ Vidu2 Referans-Görüntüden-Video Oluşturma düğümü, bir metin istemi ve bi
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"viduq2"` | Video oluşturma için kullanılacak AI modeli. |
-| `subjects` | AUTOGROW | Evet | Yok | Her özne için en fazla 3 referans görüntü sağlayın (tüm özneler için toplam 7 görüntü). İstemlerde `@subject{subject_id}` ile bunlara başvurun. |
-| `prompt` | STRING | Evet | Yok | Video oluşturmayı yönlendirmek için kullanılan metin açıklaması. `audio` parametresi etkinleştirildiğinde, video bu isteme dayalı olarak oluşturulan konuşma ve arka plan müziği içerecektir. |
-| `audio` | BOOLEAN | Hayır | Yok | Etkinleştirildiğinde, video isteme dayalı olarak oluşturulan konuşma ve arka plan müziği içerecektir (varsayılan: `False`). |
-| `duration` | INT | Hayır | 1 ila 10 | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: `5`). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Tekrarlanabilir sonuçlar için oluşturmanın rastgeleliğini kontrol etmek için kullanılan sayı (varsayılan: `1`). |
-| `aspect_ratio` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Video çerçevesinin şekli. |
-| `resolution` | COMBO | Hayır | `"720p"`<br>`"1080p"` | Çıktı videosunun piksel çözünürlüğü. |
-| `movement_amplitude` | COMBO | Hayır | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Çerçevedeki nesnelerin hareket genliğini kontrol eder. |
+| `konular` | AUTOGROW | Evet | Yok | Her özne için en fazla 3 referans görüntü sağlayın (tüm özneler için toplam 7 görüntü). İstemlerde `@subject{subject_id}` ile bunlara başvurun. |
+| `istem` | STRING | Evet | Yok | Video oluşturmayı yönlendirmek için kullanılan metin açıklaması. `ses` parametresi etkinleştirildiğinde, video bu isteme dayalı olarak oluşturulan konuşma ve arka plan müziği içerecektir. |
+| `ses` | BOOLEAN | Hayır | Yok | Etkinleştirildiğinde, video isteme dayalı olarak oluşturulan konuşma ve arka plan müziği içerecektir (varsayılan: `False`). |
+| `süre` | INT | Hayır | 1 ila 10 | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: `5`). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Tekrarlanabilir sonuçlar için oluşturmanın rastgeleliğini kontrol etmek için kullanılan sayı (varsayılan: `1`). |
+| `en-boy_oranı` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Video çerçevesinin şekli. |
+| `çözünürlük` | COMBO | Hayır | `"720p"`<br>`"1080p"` | Çıktı videosunun piksel çözünürlüğü. |
+| `hareket_genliği` | COMBO | Hayır | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Çerçevedeki nesnelerin hareket genliğini kontrol eder. |
 
 **Kısıtlamalar:**
 

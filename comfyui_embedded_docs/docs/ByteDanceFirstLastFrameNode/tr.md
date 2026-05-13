@@ -10,15 +10,15 @@ Bu düğüm, bir metin istemi ile birlikte ilk ve son kare görüntülerini kull
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"` | Video oluşturma için kullanılacak model (varsayılan: `"seedance-1-0-lite-i2v-250428"`). |
 | `prompt` | STRING | Evet | - | Videoyu oluşturmak için kullanılan metin istemi. |
-| `first_frame` | IMAGE | Evet | - | Video için kullanılacak ilk kare. 300x300 ile 6000x6000 piksel arasında olmalı ve en boy oranı 0,4 ile 2,5 arasında olmalıdır. |
-| `last_frame` | IMAGE | Evet | - | Video için kullanılacak son kare. 300x300 ile 6000x6000 piksel arasında olmalı ve en boy oranı 0,4 ile 2,5 arasında olmalıdır. |
-| `resolution` | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
-| `aspect_ratio` | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en boy oranı (varsayılan: `"adaptive"`). |
-| `duration` | INT | Evet | 3 - 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). Not: `seedance-1-5-pro-251215` modeli için desteklenen minimum süre 4 saniyedir. |
-| `seed` | INT | Hayır | 0 - 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
-| `camera_fixed` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler, ancak gerçek etkiyi garanti etmez (varsayılan: False). |
-| `watermark` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
-| `generate_audio` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
+| `ilk_kare` | IMAGE | Evet | - | Video için kullanılacak ilk kare. 300x300 ile 6000x6000 piksel arasında olmalı ve en boy oranı 0,4 ile 2,5 arasında olmalıdır. |
+| `son_kare` | IMAGE | Evet | - | Video için kullanılacak son kare. 300x300 ile 6000x6000 piksel arasında olmalı ve en boy oranı 0,4 ile 2,5 arasında olmalıdır. |
+| `çözünürlük` | COMBO | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
+| `en_boy_oranı` | COMBO | Evet | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en boy oranı (varsayılan: `"adaptive"`). |
+| `süre` | INT | Evet | 3 - 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). Not: `seedance-1-5-pro-251215` modeli için desteklenen minimum süre 4 saniyedir. |
+| `tohum` | INT | Hayır | 0 - 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
+| `sabit_kamera` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler, ancak gerçek etkiyi garanti etmez (varsayılan: False). |
+| `filigran` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
+| `ses_oluştur` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
 
 ## Çıktılar
 

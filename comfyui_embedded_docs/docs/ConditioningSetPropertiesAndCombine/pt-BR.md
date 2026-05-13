@@ -7,12 +7,12 @@ O nó **ConditioningSetPropertiesAndCombine** modifica dados de condicionamento 
 | Parâmetro | Tipo de Dado | Tipo de Entrada | Padrão | Faixa | Descrição |
 |-----------|--------------|-----------------|--------|-------|-----------|
 | `cond` | CONDITIONING | Obrigatório | - | - | Os dados de condicionamento originais a serem modificados |
-| `cond_NEW` | CONDITIONING | Obrigatório | - | - | Os novos dados de condicionamento que fornecem as propriedades a serem aplicadas |
-| `strength` | FLOAT | Obrigatório | 1.0 | 0.0 - 10.0 | Controla a intensidade das novas propriedades de condicionamento |
-| `set_cond_area` | STRING | Obrigatório | default | ["default", "mask bounds"] | Determina como a área de condicionamento é aplicada |
+| `cond_NOVO` | CONDITIONING | Obrigatório | - | - | Os novos dados de condicionamento que fornecem as propriedades a serem aplicadas |
+| `força` | FLOAT | Obrigatório | 1.0 | 0.0 - 10.0 | Controla a intensidade das novas propriedades de condicionamento |
+| `definir_área_cond` | STRING | Obrigatório | default | ["default", "mask bounds"] | Determina como a área de condicionamento é aplicada |
 | `mask` | MASK | Opcional | - | - | Máscara opcional para definir áreas específicas para condicionamento |
-| `hooks` | HOOKS | Opcional | - | - | Funções de hook opcionais para processamento personalizado |
-| `timesteps` | TIMESTEPS_RANGE | Opcional | - | - | Faixa de timesteps opcional para controlar quando o condicionamento é aplicado |
+| `ganchos` | HOOKS | Opcional | - | - | Funções de hook opcionais para processamento personalizado |
+| `etapas_de_tempo` | TIMESTEPS_RANGE | Opcional | - | - | Faixa de timesteps opcional para controlar quando o condicionamento é aplicado |
 
 **Observação:** Quando `mask` é fornecida, o parâmetro `set_cond_area` pode usar "mask bounds" para restringir a aplicação do condicionamento às regiões mascaradas.
 

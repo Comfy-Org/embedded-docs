@@ -6,8 +6,8 @@
 
 | Parametre   | Veri Türü | Açıklama                                                                                   |
 |-------------|-------------|---------------------------------------------------------------------------------------------|
-| `steps`     | INT         | Difüzyon sürecindeki adım sayısını belirtir. Oluşturulan sigma dizisinin uzunluğunu ve dolayısıyla gürültü uygulamasının ayrıntı düzeyini etkiler. |
-| `sigma_max` | FLOAT       | Maksimum sigma değerini tanımlayarak difüzyon sürecindeki gürültü yoğunluğunun üst sınırını belirler. Uygulanan gürültü seviyelerinin aralığının belirlenmesinde önemli bir rol oynar. |
+| `adımlar`     | INT         | Difüzyon sürecindeki adım sayısını belirtir. Oluşturulan sigma dizisinin uzunluğunu ve dolayısıyla gürültü uygulamasının ayrıntı düzeyini etkiler. |
+| `sigma_maks` | FLOAT       | Maksimum sigma değerini tanımlayarak difüzyon sürecindeki gürültü yoğunluğunun üst sınırını belirler. Uygulanan gürültü seviyelerinin aralığının belirlenmesinde önemli bir rol oynar. |
 | `sigma_min` | FLOAT       | Minimum sigma değerini ayarlayarak gürültü yoğunluğunun alt sınırını oluşturur. Bu parametre, gürültü uygulamasının başlangıç noktasının ince ayarının yapılmasına yardımcı olur. |
 
 ## Çıktılar

@@ -6,7 +6,7 @@ VAEDecodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `samples` | LATENT | Evet | - | Ses dalga formuna geri çözülecek olan, gizli uzaydaki kodlanmış ses örnekleri |
+| `örnekler` | LATENT | Evet | - | Ses dalga formuna geri çözülecek olan, gizli uzaydaki kodlanmış ses örnekleri |
 | `vae` | VAE | Evet | - | Gizli örnekleri sese çözmek için kullanılan Varyasyonel Otomatik Kodlayıcı modeli |
 
 ## Çıkışlar

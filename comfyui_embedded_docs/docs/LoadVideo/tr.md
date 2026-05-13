@@ -6,7 +6,7 @@ Video Yükle düğümü, giriş dizininden video dosyalarını yükler ve bunlar
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `file` | STRING | Evet | Birden çok seçenek mevcut | Giriş dizininden yüklenecek video dosyası. Açılır liste, ComfyUI giriş klasöründe bulunan tüm video dosyalarıyla dinamik olarak doldurulur. |
+| `dosya` | STRING | Evet | Birden çok seçenek mevcut | Giriş dizininden yüklenecek video dosyası. Açılır liste, ComfyUI giriş klasöründe bulunan tüm video dosyalarıyla dinamik olarak doldurulur. |
 
 **Not:** `file` parametresi için mevcut seçenekler, giriş dizininde bulunan video dosyalarından dinamik olarak doldurulur. Yalnızca desteklenen içerik türlerine sahip video dosyaları görüntülenir. Ayrıca düğümün dosya seçici arayüzü aracılığıyla doğrudan yeni bir video dosyası yükleyebilirsiniz.
 

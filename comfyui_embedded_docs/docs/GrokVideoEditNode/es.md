@@ -6,10 +6,10 @@ Este nodo utiliza la API de Grok para editar un video existente basándose en un
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | El modelo de IA a utilizar para la edición de video (predeterminado: `"grok-imagine-video"`). |
-| `prompt` | STRING | Sí | N/A | Descripción textual del video deseado. |
+| `modelo` | COMBO | Sí | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | El modelo de IA a utilizar para la edición de video (predeterminado: `"grok-imagine-video"`). |
+| `indicación` | STRING | Sí | N/A | Descripción textual del video deseado. |
 | `video` | VIDEO | Sí | N/A | El video de entrada que se va a editar. La duración máxima admitida es de 8.7 segundos y el tamaño máximo de archivo es de 50 MB. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla para determinar si el nodo debe ejecutarse nuevamente. Los resultados reales son no deterministas independientemente del valor de la semilla (predeterminado: 0). |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla para determinar si el nodo debe ejecutarse nuevamente. Los resultados reales son no deterministas independientemente del valor de la semilla (predeterminado: 0). |
 
 **Restricciones:**
 

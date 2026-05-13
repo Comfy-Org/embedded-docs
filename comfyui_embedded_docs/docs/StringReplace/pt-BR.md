@@ -7,14 +7,14 @@ O nó StringReplace realiza operações de substituição de texto em strings de
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `string` | STRING | Sim | - | A string de texto de entrada onde as substituições serão realizadas |
-| `find` | STRING | Sim | - | A substring a ser procurada dentro do texto de entrada |
-| `replace` | STRING | Sim | - | O texto de substituição que substituirá todas as ocorrências encontradas |
+| `encontrar` | STRING | Sim | - | A substring a ser procurada dentro do texto de entrada |
+| `substituir` | STRING | Sim | - | O texto de substituição que substituirá todas as ocorrências encontradas |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `output` | STRING | A string modificada com todas as ocorrências do texto `find` substituídas pelo texto `replace` |
+| `output` | STRING | A string modificada com todas as ocorrências do texto `encontrar` substituídas pelo texto `substituir` |
 
 ---
 **Source fingerprint (SHA-256):** `72159dba72261efe9df283c1ea3f789651eade923efdaeb108bacc1d0da663f8`

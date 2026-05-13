@@ -14,7 +14,7 @@ El nodo SplitAudioChannels separa el audio estéreo en canales individuales izqu
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `left` | AUDIO | El audio del canal izquierdo separado |
+| `derecho` | AUDIO | El audio del canal izquierdo separado |
 | `right` | AUDIO | El audio del canal derecho separado |
 
 ---

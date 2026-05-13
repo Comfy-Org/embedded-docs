@@ -14,7 +14,7 @@ Ce nœud utilise le dernier modèle d'IA Kling pour générer une vidéo à part
 | `reference_images` | IMAGE | Non | - | Jusqu'à 6 images de référence supplémentaires. |
 | `resolution` | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` | La résolution de sortie pour la vidéo générée (par défaut : "1080p"). |
 | `storyboards` | DYNAMIC_COMBO | Non | `"désactivé"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Génère une série de segments vidéo avec des prompts et des durées individuels. Uniquement pris en charge pour `kling-v3-omni`. Lorsque cette option est activée, chaque storyboard nécessite un prompt et une durée. |
-| `generate_audio` | BOOLEAN | Non | Vrai / Faux | Génère l'audio pour la vidéo (par défaut : Faux). Uniquement pris en charge pour `kling-v3-omni`. |
+| `générer l'audio` | BOOLEAN | Non | Vrai / Faux | Génère l'audio pour la vidéo (par défaut : Faux). Uniquement pris en charge pour `kling-v3-omni`. |
 | `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). |
 
 **Contraintes importantes :**

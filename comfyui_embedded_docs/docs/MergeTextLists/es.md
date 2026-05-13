@@ -6,7 +6,7 @@ Este nodo combina múltiples listas de texto en una única lista combinada. Est�
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `texts` | STRING | Sí | N/A | Las listas de texto que se van a combinar. Se pueden conectar múltiples listas a la entrada, y se concatenarán en una sola. |
+| `textos` | STRING | Sí | N/A | Las listas de texto que se van a combinar. Se pueden conectar múltiples listas a la entrada, y se concatenarán en una sola. |
 
 **Nota:** Este nodo está configurado como un proceso grupal (`is_group_process = True`), lo que significa que maneja automáticamente múltiples entradas de lista concatenándolas antes de que se ejecute la función de procesamiento principal.
 
@@ -14,7 +14,7 @@ Este nodo combina múltiples listas de texto en una única lista combinada. Est�
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `texts` | STRING | La única lista combinada que contiene todos los textos de entrada. |
+| `textos` | STRING | La única lista combinada que contiene todos los textos de entrada. |
 
 ---
 **Source fingerprint (SHA-256):** `043a39a373d03f1ff79dd0746070171bab4d5d915c985e4e64fd35f802b09f69`

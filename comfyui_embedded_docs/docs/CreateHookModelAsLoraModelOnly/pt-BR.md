@@ -9,8 +9,8 @@ Este nó cria um hook que aplica um modelo LoRA (Adaptação de Baixa Classifica
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `ckpt_name` | STRING | Sim | Múltiplas opções disponíveis | O arquivo de checkpoint a ser carregado como modelo LoRA. As opções disponíveis dependem do conteúdo da pasta de checkpoints. |
-| `strength_model` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade para aplicar a LoRA ao componente do modelo (padrão: 1.0) |
-| `prev_hooks` | HOOKS | Não | - | Hooks anteriores opcionais para encadear com este hook |
+| `força_modelo` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade para aplicar a LoRA ao componente do modelo (padrão: 1.0) |
+| `hooks_anteriores` | HOOKS | Não | - | Hooks anteriores opcionais para encadear com este hook |
 
 ## Saídas
 

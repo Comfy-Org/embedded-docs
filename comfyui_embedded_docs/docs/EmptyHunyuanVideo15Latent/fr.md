@@ -6,10 +6,10 @@ Ce nœud crée un tenseur latent vide spécialement formaté pour être utilisé
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `width` | INT | Oui | - | La largeur de l'image vidéo en pixels. |
-| `height` | INT | Oui | - | La hauteur de l'image vidéo en pixels. |
-| `length` | INT | Oui | - | Le nombre d'images dans la séquence vidéo. |
-| `batch_size` | INT | Non | - | Le nombre d'échantillons vidéo à générer dans un lot (par défaut : 1). |
+| `largeur` | INT | Oui | - | La largeur de l'image vidéo en pixels. |
+| `hauteur` | INT | Oui | - | La hauteur de l'image vidéo en pixels. |
+| `longueur` | INT | Oui | - | Le nombre d'images dans la séquence vidéo. |
+| `taille_lot` | INT | Non | - | Le nombre d'échantillons vidéo à générer dans un lot (par défaut : 1). |
 
 **Remarque :** Les dimensions spatiales du tenseur latent généré sont calculées en divisant la `width` et la `height` d'entrée par 16. La dimension temporelle (images) est calculée comme suit : `((length - 1) // 4) + 1`.
 

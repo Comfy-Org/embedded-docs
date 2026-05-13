@@ -7,9 +7,9 @@ Este nó salva um conjunto de dados de treinamento preparado no disco rígido do
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
 | `latents` | LATENT | Sim | N/A | Lista de dicionários latentes do MakeTrainingDataset. |
-| `conditioning` | CONDITIONING | Sim | N/A | Lista de listas de condicionamento do MakeTrainingDataset. |
-| `folder_name` | STRING | Não | N/A | Nome da pasta para salvar o conjunto de dados (dentro do diretório de saída). (padrão: "training_dataset") |
-| `shard_size` | INT | Não | 1 a 100000 | Número de amostras por arquivo *shard*. (padrão: 1000) |
+| `condicionamento` | CONDITIONING | Sim | N/A | Lista de listas de condicionamento do MakeTrainingDataset. |
+| `nome_da_pasta` | STRING | Não | N/A | Nome da pasta para salvar o conjunto de dados (dentro do diretório de saída). (padrão: "training_dataset") |
+| `tamanho_do_fragmento` | INT | Não | 1 a 100000 | Número de amostras por arquivo *shard*. (padrão: 1000) |
 
 **Observação:** O número de itens na lista `latents` deve corresponder exatamente ao número de itens na lista `conditioning`. O nó gerará um erro se essas contagens não coincidirem.
 

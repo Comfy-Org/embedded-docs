@@ -6,9 +6,9 @@ Le nœud Flux2Scheduler génère une séquence de niveaux de bruit (sigmas) pour
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `steps` | INT | Oui | 1 à 4096 | Le nombre d'étapes de débruitage à effectuer. Une valeur plus élevée produit généralement des résultats plus détaillés, mais le traitement prend plus de temps (par défaut : 20). |
-| `width` | INT | Oui | 16 à 16384 | La largeur de l'image à générer, en pixels. Cette valeur influence le calcul de l'échantillonnage du bruit (par défaut : 1024). |
-| `height` | INT | Oui | 16 à 16384 | La hauteur de l'image à générer, en pixels. Cette valeur influence le calcul de l'échantillonnage du bruit (par défaut : 1024). |
+| `étapes` | INT | Oui | 1 à 4096 | Le nombre d'étapes de débruitage à effectuer. Une valeur plus élevée produit généralement des résultats plus détaillés, mais le traitement prend plus de temps (par défaut : 20). |
+| `largeur` | INT | Oui | 16 à 16384 | La largeur de l'image à générer, en pixels. Cette valeur influence le calcul de l'échantillonnage du bruit (par défaut : 1024). |
+| `hauteur` | INT | Oui | 16 à 16384 | La hauteur de l'image à générer, en pixels. Cette valeur influence le calcul de l'échantillonnage du bruit (par défaut : 1024). |
 
 ## Sorties
 

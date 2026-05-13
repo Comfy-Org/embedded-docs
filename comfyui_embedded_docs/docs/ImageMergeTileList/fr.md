@@ -6,10 +6,10 @@ Ce nœud prend une liste de tuiles d'image et les fusionne en une seule image pl
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `image_list` | IMAGE | Oui | N/A | Une liste de tuiles d'image à fusionner. La première tuile de la liste est utilisée pour déterminer les dimensions des tuiles et le type de données pour l'ensemble du processus. |
-| `final_width` | INT | Oui | 64 - 32768 | La largeur de l'image fusionnée finale en pixels (valeur par défaut : 1024). |
-| `final_height` | INT | Oui | 64 - 32768 | La hauteur de l'image fusionnée finale en pixels (valeur par défaut : 1024). |
-| `overlap` | INT | Oui | 0 - 4096 | La quantité de chevauchement entre les tuiles adjacentes en pixels. Une valeur supérieure à 0 permet un effet de mélange homogène aux jonctions des tuiles (valeur par défaut : 128). |
+| `liste_d'images` | IMAGE | Oui | N/A | Une liste de tuiles d'image à fusionner. La première tuile de la liste est utilisée pour déterminer les dimensions des tuiles et le type de données pour l'ensemble du processus. |
+| `largeur_finale` | INT | Oui | 64 - 32768 | La largeur de l'image fusionnée finale en pixels (valeur par défaut : 1024). |
+| `hauteur_finale` | INT | Oui | 64 - 32768 | La hauteur de l'image fusionnée finale en pixels (valeur par défaut : 1024). |
+| `chevauchement` | INT | Oui | 0 - 4096 | La quantité de chevauchement entre les tuiles adjacentes en pixels. Une valeur supérieure à 0 permet un effet de mélange homogène aux jonctions des tuiles (valeur par défaut : 128). |
 
 **Remarque :** `image_list` est une liste d'entrée dynamique. Le nœud traite les tuiles dans l'ordre où elles sont fournies, jusqu'au nombre nécessaire pour remplir la grille définie par `final_width`, `final_height` et les dimensions de la première tuile. Si la liste contient plus de tuiles que nécessaire, les tuiles supplémentaires sont ignorées.
 

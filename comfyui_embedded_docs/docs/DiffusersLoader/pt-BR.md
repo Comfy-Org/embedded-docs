@@ -6,7 +6,7 @@ O nó DiffusersLoader carrega modelos pré-treinados no formato diffusers. Ele b
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model_path` | STRING | Sim | Múltiplas opções disponíveis<br>(preenchidas automaticamente a partir das pastas diffusers) | O caminho para o diretório do modelo diffusers a ser carregado. O nó verifica automaticamente se há modelos diffusers válidos nas pastas diffusers configuradas e lista as opções disponíveis. |
+| `caminho_do_modelo` | STRING | Sim | Múltiplas opções disponíveis<br>(preenchidas automaticamente a partir das pastas diffusers) | O caminho para o diretório do modelo diffusers a ser carregado. O nó verifica automaticamente se há modelos diffusers válidos nas pastas diffusers configuradas e lista as opções disponíveis. |
 
 ## Saídas
 

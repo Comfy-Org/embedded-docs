@@ -6,11 +6,11 @@ RepeatImageBatch düğümü, belirtilen bir görseli belirli sayıda çoğaltara
 
 | Alan    | Veri Türü | Açıklama                                                                 |
 |---------|-------------|-------------------------------------------------------------------------|
-| `image` | `IMAGE`     | 'image' parametresi, çoğaltılacak görseli temsil eder. Grup boyunca kopyalanacak içeriğin tanımlanması açısından kritik öneme sahiptir. |
-| `amount`| `INT`       | 'amount' parametresi, giriş görselinin kaç kez çoğaltılacağını belirtir. Çıktı grubunun boyutunu doğrudan etkileyerek esnek grup oluşturulmasını sağlar. |
+| `görüntü` | `IMAGE`     | 'image' parametresi, çoğaltılacak görseli temsil eder. Grup boyunca kopyalanacak içeriğin tanımlanması açısından kritik öneme sahiptir. |
+| `miktar`| `INT`       | 'amount' parametresi, giriş görselinin kaç kez çoğaltılacağını belirtir. Çıktı grubunun boyutunu doğrudan etkileyerek esnek grup oluşturulmasını sağlar. |
 
 ## Çıktılar
 
 | Alan  | Veri Türü | Açıklama                                                              |
 |-------|-------------|--------------------------------------------------------------------------|
-| `image`| `IMAGE`     | Çıktı, her biri giriş görseliyle aynı olan ve belirtilen 'amount' değerine göre çoğaltılmış bir görsel grubudur. |
+| `görüntü`| `IMAGE`     | Çıktı, her biri giriş görseliyle aynı olan ve belirtilen 'amount' değerine göre çoğaltılmış bir görsel grubudur. |

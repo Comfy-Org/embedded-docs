@@ -6,8 +6,8 @@ O nó SaveLatent salva tensores latentes em disco como arquivos para uso posteri
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `samples` | LATENT | Sim | - | As amostras latentes a serem salvas em disco |
-| `filename_prefix` | STRING | Não | - | O prefixo para o nome do arquivo de saída (padrão: "latents/ComfyUI") |
+| `amostras` | LATENT | Sim | - | As amostras latentes a serem salvas em disco |
+| `prefixo_do_arquivo` | STRING | Não | - | O prefixo para o nome do arquivo de saída (padrão: "latents/ComfyUI") |
 | `prompt` | PROMPT | Não | - | Informações do prompt a serem incluídas nos metadados (parâmetro oculto) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Não | - | Informações PNG adicionais a serem incluídas nos metadados (parâmetro oculto) |
 

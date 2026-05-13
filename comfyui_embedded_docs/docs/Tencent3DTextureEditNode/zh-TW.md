@@ -16,8 +16,8 @@
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `GLB` | FILE3D | 處理後的3D模型，格式為GLB。 |
-| `OBJ` | FILE3D | 處理後的3D模型，格式為OBJ。 |
+| `OBJ` | FILE3D | 處理後的3D模型，格式為GLB。 |
+| `texture_image` | FILE3D | 處理後的3D模型，格式為OBJ。 |
 | `texture_image` | IMAGE | 為3D模型新生成的紋理影像。 |
 
 ---

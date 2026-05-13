@@ -6,14 +6,14 @@ SetUnionControlNetType düğümü, koşullandırma için kullanılacak kontrol a
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `control_net` | CONTROL_NET | Evet | - | Yeni bir tür ayarıyla değiştirilecek kontrol ağı |
-| `type` | STRING | Evet | `"auto"`<br>Mevcut tüm UNION_CONTROLNET_TYPES anahtarları | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçenekler arasından belirli bir kontrol ağı türü seçin |
+| `kontrol_ağı` | CONTROL_NET | Evet | - | Yeni bir tür ayarıyla değiştirilecek kontrol ağı |
+| `tür` | STRING | Evet | `"auto"`<br>Mevcut tüm UNION_CONTROLNET_TYPES anahtarları | Uygulanacak kontrol ağı türü. Otomatik tür algılama için "auto" kullanın veya mevcut seçenekler arasından belirli bir kontrol ağı türü seçin |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `control_net` | CONTROL_NET | Belirtilen tür ayarı uygulanmış değiştirilmiş kontrol ağı |
+| `kontrol_ağı` | CONTROL_NET | Belirtilen tür ayarı uygulanmış değiştirilmiş kontrol ağı |
 
 ---
 **Source fingerprint (SHA-256):** `a64308aec96784f08b6f3f8e96e85f532bd1c536301739e7252b2c7978921b5a`

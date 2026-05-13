@@ -11,12 +11,12 @@ Suivez des objets à travers les images d'une vidéo à l'aide du tracker basé 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `images` | IMAGE | Oui | Images vidéo par lots | Images vidéo sous forme d'images par lots |
-| `model` | MODEL | Oui | Modèle SAM3 | Le modèle SAM3 à utiliser pour le suivi |
-| `initial_mask` | MASK | Non | Un masque par objet | Masque(s) pour la première image à suivre (un par objet). Requis si `conditioning` n'est pas fourni. |
-| `conditioning` | CONDITIONING | Non | Conditionnement textuel | Conditionnement textuel pour détecter de nouveaux objets pendant le suivi. Requis si `initial_mask` n'est pas fourni. |
-| `detection_threshold` | FLOAT | Non | 0.0 à 1.0 (par défaut : 0.5) | Seuil de score pour la détection par invite textuelle |
-| `max_objects` | INT | Non | 0 à 64 (par défaut : 0) | Nombre maximal d'objets suivis. Les masques initiaux comptent dans cette limite. 0 utilise la limite interne de 64. |
-| `detect_interval` | INT | Non | 1 à illimité (par défaut : 1) | Exécute la détection toutes les N images (1 = chaque image). Des valeurs plus élevées économisent des ressources de calcul. |
+| `modèle` | MODEL | Oui | Modèle SAM3 | Le modèle SAM3 à utiliser pour le suivi |
+| `masque_initial` | MASK | Non | Un masque par objet | Masque(s) pour la première image à suivre (un par objet). Requis si `conditionnement` n'est pas fourni. |
+| `conditionnement` | CONDITIONING | Non | Conditionnement textuel | Conditionnement textuel pour détecter de nouveaux objets pendant le suivi. Requis si `masque_initial` n'est pas fourni. |
+| `seuil_de_détection` | FLOAT | Non | 0.0 à 1.0 (par défaut : 0.5) | Seuil de score pour la détection par invite textuelle |
+| `objets_max` | INT | Non | 0 à 64 (par défaut : 0) | Nombre maximal d'objets suivis. Les masques initiaux comptent dans cette limite. 0 utilise la limite interne de 64. |
+| `intervalle_de_détection` | INT | Non | 1 à illimité (par défaut : 1) | Exécute la détection toutes les N images (1 = chaque image). Des valeurs plus élevées économisent des ressources de calcul. |
 
 **Remarque :** `initial_mask` ou `conditioning` doit être fourni. Si les deux sont omis, le nœud générera une erreur.
 

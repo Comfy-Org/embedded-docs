@@ -8,7 +8,7 @@ Este nó aplica um modelo de estilo a um condicionamento fornecido, aprimorando 
 
 | Parâmetro            | Tipo Comfy           | Descrição |
 |----------------------|----------------------|-----------|
-| `conditioning`       | `CONDITIONING`       | Os dados de condicionamento originais aos quais o condicionamento do modelo de estilo será aplicado. É essencial para definir o contexto base ou estilo que será aprimorado ou alterado. |
+| `condicionamento`       | `CONDITIONING`       | Os dados de condicionamento originais aos quais o condicionamento do modelo de estilo será aplicado. É essencial para definir o contexto base ou estilo que será aprimorado ou alterado. |
 | `style_model`        | `STYLE_MODEL`        | O modelo de estilo usado para gerar novo condicionamento com base na saída do modelo de visão CLIP. Ele desempenha um papel fundamental na definição do novo estilo a ser aplicado. |
 | `clip_vision_output` | `CLIP_VISION_OUTPUT` | A saída de um modelo de visão CLIP, que é usada pelo modelo de estilo para gerar novo condicionamento. Ela fornece o contexto visual necessário para a aplicação do estilo. |
 
@@ -16,4 +16,4 @@ Este nó aplica um modelo de estilo a um condicionamento fornecido, aprimorando 
 
 | Parâmetro            | Tipo Comfy           | Descrição |
 |----------------------|----------------------|-----------|
-| `conditioning`       | `CONDITIONING`       | O condicionamento aprimorado ou alterado, incorporando a saída do modelo de estilo. Representa o condicionamento final estilizado, pronto para processamento ou geração adicional. |
+| `condicionamento`       | `CONDITIONING`       | O condicionamento aprimorado ou alterado, incorporando a saída do modelo de estilo. Representa o condicionamento final estilizado, pronto para processamento ou geração adicional. |

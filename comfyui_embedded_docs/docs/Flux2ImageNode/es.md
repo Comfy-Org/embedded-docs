@@ -37,8 +37,8 @@ Genera imágenes utilizando el modelo Flux.2 [pro] o Flux.2 [max] a partir de un
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Instrucción para la generación o edición de la imagen (por defecto: cadena vacía). |
-| `model` | COMBO | Sí | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La versión del modelo Flux.2 a utilizar. La selección de un modelo desbloquea parámetros adicionales para ancho, alto e imágenes de referencia opcionales. |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | La semilla aleatoria utilizada para crear el ruido. Se puede configurar para aleatorizar después de cada generación (por defecto: 0). |
+| `modelo` | COMBO | Sí | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La versión del modelo Flux.2 a utilizar. La selección de un modelo desbloquea parámetros adicionales para ancho, alto e imágenes de referencia opcionales. |
+| `semilla` | INT | Sí | 0 a 18446744073709551615 | La semilla aleatoria utilizada para crear el ruido. Se puede configurar para aleatorizar después de cada generación (por defecto: 0). |
 
 **Parámetros Adicionales (desbloqueados por la selección de `model`):**
 

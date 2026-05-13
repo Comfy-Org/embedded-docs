@@ -7,7 +7,7 @@ O nó Case Converter transforma strings de texto em diferentes formatos de capit
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `string` | STRING | Sim | - | A string de texto a ser convertida para um formato de capitalização diferente |
-| `mode` | STRING | Sim | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | O modo de conversão de capitalização a ser aplicado (padrão: `"UPPERCASE"`) |
+| `modo` | STRING | Sim | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | O modo de conversão de capitalização a ser aplicado (padrão: `"UPPERCASE"`) |
 
 ## Saídas
 

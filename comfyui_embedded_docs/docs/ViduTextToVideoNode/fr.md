@@ -8,13 +8,13 @@ Le nœud Vidu Text To Video Generation crée des vidéos à partir de descriptio
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `viduq1` | Nom du modèle |
-| `prompt` | STRING | Oui | - | Description textuelle pour la génération vidéo |
-| `duration` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5) |
-| `seed` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
-| `aspect_ratio` | COMBO | Non | `16:9`<br>`9:16`<br>`1:1` | Rapport hauteur/largeur de la vidéo de sortie |
-| `resolution` | COMBO | Non | `1080p` | Les valeurs prises en charge peuvent varier selon le modèle et la durée |
-| `movement_amplitude` | COMBO | Non | `auto`<br>`small`<br>`medium`<br>`large` | Amplitude de mouvement des objets dans le cadre |
+| `modèle` | COMBO | Oui | `viduq1` | Nom du modèle |
+| `description` | STRING | Oui | - | Description textuelle pour la génération vidéo |
+| `durée` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5) |
+| `graine` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
+| `ratio_aspect` | COMBO | Non | `16:9`<br>`9:16`<br>`1:1` | Rapport hauteur/largeur de la vidéo de sortie |
+| `résolution` | COMBO | Non | `1080p` | Les valeurs prises en charge peuvent varier selon le modèle et la durée |
+| `amplitude_mouvement` | COMBO | Non | `auto`<br>`small`<br>`medium`<br>`large` | Amplitude de mouvement des objets dans le cadre |
 
 **Remarque :** Le champ `prompt` est obligatoire et ne peut pas être vide. Le paramètre `duration` est actuellement fixé à 5 secondes.
 

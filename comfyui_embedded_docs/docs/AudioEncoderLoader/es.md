@@ -6,7 +6,7 @@ El nodo `AudioEncoderLoader` carga un modelo de codificador de audio desde un ar
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `audio_encoder_name` | STRING | Sí | Lista de archivos de codificador de audio disponibles en la carpeta audio_encoders | Selecciona qué archivo de modelo de codificador de audio cargar |
+| `nombre_codificador_audio` | STRING | Sí | Lista de archivos de codificador de audio disponibles en la carpeta audio_encoders | Selecciona qué archivo de modelo de codificador de audio cargar |
 
 ## Salidas
 

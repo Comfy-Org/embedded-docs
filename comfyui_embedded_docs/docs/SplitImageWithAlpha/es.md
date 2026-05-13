@@ -6,11 +6,11 @@ El nodo **SplitImageWithAlpha** está diseñado para separar los componentes de 
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | El parámetro `image` representa el tensor de imagen de entrada del cual se separarán los canales RGB y alfa. Es fundamental para la operación, ya que proporciona los datos de origen para la separación. |
+| `imagen`   | `IMAGE`     | El parámetro `imagen` representa el tensor de imagen de entrada del cual se separarán los canales RGB y alfa. Es fundamental para la operación, ya que proporciona los datos de origen para la separación. |
 
 ## Salidas
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La salida `image` representa los canales RGB separados de la imagen de entrada, proporcionando el componente de color sin la información de transparencia. |
+| `imagen`   | `IMAGE`     | La salida `imagen` representa los canales RGB separados de la imagen de entrada, proporcionando el componente de color sin la información de transparencia. |
 | `mask`    | `MASK`      | La salida `mask` representa el canal alfa separado de la imagen de entrada, proporcionando la información de transparencia. |

@@ -8,12 +8,12 @@ O nó HypernetworkLoader foi projetado para aprimorar ou modificar as capacidade
 
 | Campo                | Tipo Comfy        | Descrição                                                                                  |
 |----------------------|-------------------|--------------------------------------------------------------------------------------------|
-| `model`              | `MODEL`           | O modelo base ao qual a hiper-rede será aplicada, determinando a arquitetura a ser aprimorada ou modificada. |
-| `hypernetwork_name` | `COMBO[STRING]`   | O nome da hiper-rede a ser carregada e aplicada ao modelo, impactando o comportamento ou desempenho modificado do modelo. |
-| `strength`           | `FLOAT`           | Um escalar que ajusta a intensidade do efeito da hiper-rede no modelo, permitindo o ajuste fino das alterações. |
+| `modelo`              | `MODEL`           | O modelo base ao qual a hiper-rede será aplicada, determinando a arquitetura a ser aprimorada ou modificada. |
+| `nome_da_hypernetwork` | `COMBO[STRING]`   | O nome da hiper-rede a ser carregada e aplicada ao modelo, impactando o comportamento ou desempenho modificado do modelo. |
+| `força`           | `FLOAT`           | Um escalar que ajusta a intensidade do efeito da hiper-rede no modelo, permitindo o ajuste fino das alterações. |
 
 ## Saídas
 
 | Campo    | Tipo de Dado | Descrição                                                              |
 |----------|--------------|------------------------------------------------------------------------|
-| `model`  | `MODEL`      | O modelo modificado após a aplicação da hiper-rede, demonstrando o impacto da hiper-rede no modelo original. |
+| `modelo`  | `MODEL`      | O modelo modificado após a aplicação da hiper-rede, demonstrando o impacto da hiper-rede no modelo original. |

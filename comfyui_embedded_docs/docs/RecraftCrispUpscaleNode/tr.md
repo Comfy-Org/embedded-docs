@@ -8,13 +8,13 @@ Görüntüyü eşzamanlı olarak büyütür. 'Keskin büyütme' aracını kullan
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Büyütülecek giriş görüntüsü. Bir görüntü grubunu kabul eder. |
+| `görüntü` | IMAGE | Evet | - | Büyütülecek giriş görüntüsü. Bir görüntü grubunu kabul eder. |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Geliştirilmiş çözünürlük ve netlikle büyütülmüş görüntü. Giriş olarak bir grup sağlanmışsa, bir görüntü grubu döndürür. |
+| `görüntü` | IMAGE | Geliştirilmiş çözünürlük ve netlikle büyütülmüş görüntü. Giriş olarak bir grup sağlanmışsa, bir görüntü grubu döndürür. |
 
 ---
 **Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`

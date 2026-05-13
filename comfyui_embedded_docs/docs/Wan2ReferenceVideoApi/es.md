@@ -6,7 +6,7 @@ Este nodo genera un video con una persona u objeto basado en materiales de refer
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"wan2.7-r2v"` | El modelo específico a utilizar para la generación de video. |
+| `modelo` | COMBO | Sí | `"wan2.7-r2v"` | El modelo específico a utilizar para la generación de video. |
 | `model.prompt` | STRING | Sí | - | Prompt que describe el video. Usa identificadores como 'character1' y 'character2' para referirte a los personajes de referencia. |
 | `model.negative_prompt` | STRING | No | - | Prompt negativo que describe lo que se debe evitar en el video generado (predeterminado: vacío). |
 | `model.resolution` | COMBO | Sí | `"720P"`<br>`"1080P"` | La resolución del video de salida. |
@@ -14,8 +14,8 @@ Este nodo genera un video con una persona u objeto basado en materiales de refer
 | `model.duration` | INT | Sí | 2 a 10 | La duración del video generado en segundos (predeterminado: 5). |
 | `model.reference_videos` | VIDEO | No | - | Una lista de videos de referencia. Puedes agregar hasta 3 videos. |
 | `model.reference_images` | IMAGE | No | - | Una lista de imágenes de referencia. Puedes agregar hasta 5 imágenes. |
-| `seed` | INT | No | 0 a 2147483647 | Semilla a utilizar para la generación, que ayuda a controlar la aleatoriedad del resultado (predeterminado: 0). |
-| `watermark` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. |
+| `semilla` | INT | No | 0 a 2147483647 | Semilla a utilizar para la generación, que ayuda a controlar la aleatoriedad del resultado (predeterminado: 0). |
+| `marca_de_agua` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). Esta es una configuración avanzada. |
 
 **Restricciones importantes:**
 *   Debes proporcionar al menos un video de referencia o una imagen de referencia en las entradas `model.reference_videos` o `model.reference_images`.

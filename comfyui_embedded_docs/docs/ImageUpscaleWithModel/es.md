@@ -6,11 +6,11 @@ Este nodo está diseñado para escalar imágenes utilizando un modelo de escalad
 
 | Parámetro         | Tipo Comfy        | Descripción                                                                 |
 |-------------------|-------------------|----------------------------------------------------------------------------|
-| `upscale_model`   | `UPSCALE_MODEL`   | El modelo de escalado que se utilizará para escalar la imagen. Es fundamental para definir el algoritmo de escalado y sus parámetros. |
-| `image`           | `IMAGE`           | La imagen que se va a escalar. Esta entrada es esencial para determinar el contenido de origen que se someterá al proceso de escalado. |
+| `modelo_ampliacion`   | `UPSCALE_MODEL`   | El modelo de escalado que se utilizará para escalar la imagen. Es fundamental para definir el algoritmo de escalado y sus parámetros. |
+| `imagen`           | `IMAGE`           | La imagen que se va a escalar. Esta entrada es esencial para determinar el contenido de origen que se someterá al proceso de escalado. |
 
 ## Salidas
 
 | Parámetro | Tipo de Dato | Descripción                                        |
 |-----------|-------------|----------------------------------------------------|
-| `image`   | `IMAGE`     | La imagen escalada, procesada por el modelo de escalado. Esta salida es el resultado de la operación de escalado, mostrando la resolución o calidad mejorada. |
+| `imagen`   | `IMAGE`     | La imagen escalada, procesada por el modelo de escalado. Esta salida es el resultado de la operación de escalado, mostrando la resolución o calidad mejorada. |

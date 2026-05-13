@@ -6,13 +6,13 @@ O nó **PairConditioningSetProperties** permite modificar propriedades de pares 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive_NEW` | CONDITIONING | Sim | - | A entrada de condicionamento positivo a ser modificada |
-| `negative_NEW` | CONDITIONING | Sim | - | A entrada de condicionamento negativo a ser modificada |
-| `strength` | FLOAT | Sim | 0.0 a 10.0 | O multiplicador de intensidade aplicado ao condicionamento (padrão: 1.0) |
-| `set_cond_area` | STRING | Sim | "default"<br>"mask bounds" | Determina como a área de condicionamento é calculada (padrão: "default") |
-| `mask` | MASK | Não | - | Máscara opcional para restringir a área de condicionamento |
-| `hooks` | HOOKS | Não | - | Grupo opcional de hooks para modificações avançadas de condicionamento |
-| `timesteps` | TIMESTEPS_RANGE | Não | - | Faixa opcional de timesteps para limitar quando o condicionamento é aplicado |
+| `positivo_NOVO` | CONDITIONING | Sim | - | A entrada de condicionamento positivo a ser modificada |
+| `negativo_NOVO` | CONDITIONING | Sim | - | A entrada de condicionamento negativo a ser modificada |
+| `força` | FLOAT | Sim | 0.0 a 10.0 | O multiplicador de intensidade aplicado ao condicionamento (padrão: 1.0) |
+| `definir_área_cond` | STRING | Sim | "default"<br>"mask bounds" | Determina como a área de condicionamento é calculada (padrão: "default") |
+| `máscara` | MASK | Não | - | Máscara opcional para restringir a área de condicionamento |
+| `ganchos` | HOOKS | Não | - | Grupo opcional de hooks para modificações avançadas de condicionamento |
+| `etapas` | TIMESTEPS_RANGE | Não | - | Faixa opcional de timesteps para limitar quando o condicionamento é aplicado |
 
 ## Saídas
 

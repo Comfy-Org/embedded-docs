@@ -8,10 +8,10 @@ Ce nœud utilise l'API Grok pour éditer une vidéo existante en fonction d'une 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | Le modèle d'IA à utiliser pour l'édition vidéo (par défaut : `"grok-imagine-video"`). |
-| `prompt` | STRING | Oui | N/A | Description textuelle de la vidéo souhaitée. |
-| `video` | VIDEO | Oui | N/A | La vidéo d'entrée à éditer. La durée maximale prise en charge est de 8,7 secondes et la taille du fichier est limitée à 50 Mo. |
-| `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine pour déterminer si le nœud doit être réexécuté. Les résultats réels sont non déterministes, quelle que soit la valeur de la graine (par défaut : 0). |
+| `modèle` | COMBO | Oui | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | Le modèle d'IA à utiliser pour l'édition vidéo (par défaut : `"grok-imagine-video"`). |
+| `invite` | STRING | Oui | N/A | Description textuelle de la vidéo souhaitée. |
+| `vidéo` | VIDEO | Oui | N/A | La vidéo d'entrée à éditer. La durée maximale prise en charge est de 8,7 secondes et la taille du fichier est limitée à 50 Mo. |
+| `graine` | INT | Non | 0 à 2147483647 | Une valeur de graine pour déterminer si le nœud doit être réexécuté. Les résultats réels sont non déterministes, quelle que soit la valeur de la graine (par défaut : 0). |
 
 **Contraintes :**
 
@@ -23,7 +23,7 @@ Ce nœud utilise l'API Grok pour éditer une vidéo existante en fonction d'une 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `video` | VIDEO | La vidéo éditée générée par le modèle d'IA. |
+| `vidéo` | VIDEO | La vidéo éditée générée par le modèle d'IA. |
 
 ---
 **Source fingerprint (SHA-256):** `dfe52a089f7bfe7abc7f40ef113c44aef2dded828221d9d1acf0ddb6a167c33f`

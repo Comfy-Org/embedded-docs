@@ -6,19 +6,19 @@ WanSCAILToVideo düğümü, video üretimi için koşullandırma (conditioning) 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Pozitif koşullandırma girdisi. |
-| `negative` | CONDITIONING | Evet | - | Negatif koşullandırma girdisi. |
+| `pozitif` | CONDITIONING | Evet | - | Pozitif koşullandırma girdisi. |
+| `negatif` | CONDITIONING | Evet | - | Negatif koşullandırma girdisi. |
 | `vae` | VAE | Evet | - | Görüntüleri ve video karelerini kodlamak için kullanılan VAE modeli. |
-| `width` | INT | Evet | 32 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 512). 8'e bölünebilir olmalıdır. |
-| `height` | INT | Evet | 32 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 896). 8'e bölünebilir olmalıdır. |
-| `length` | INT | Evet | 1 - MAX_RESOLUTION | Videodaki kare sayısı (varsayılan: 81). 4'e bölünebilir olmalıdır. |
-| `batch_size` | INT | Evet | 1 - 4096 | Bir grupta (batch) oluşturulacak video sayısı (varsayılan: 1). |
+| `genişlik` | INT | Evet | 32 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 512). 8'e bölünebilir olmalıdır. |
+| `yükseklik` | INT | Evet | 32 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 896). 8'e bölünebilir olmalıdır. |
+| `uzunluk` | INT | Evet | 1 - MAX_RESOLUTION | Videodaki kare sayısı (varsayılan: 81). 4'e bölünebilir olmalıdır. |
+| `toplu_boyutu` | INT | Evet | 1 - 4096 | Bir grupta (batch) oluşturulacak video sayısı (varsayılan: 1). |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Hayır | - | Koşullandırma için isteğe bağlı CLIP görüş çıktısı. |
-| `reference_image` | IMAGE | Hayır | - | Koşullandırma için isteğe bağlı bir referans görüntüsü. |
-| `pose_video` | IMAGE | Hayır | - | Poz koşullandırması için kullanılan video. Ana videonun çözünürlüğünün yarısına ölçeklenecektir. |
-| `pose_strength` | FLOAT | Evet | 0.0 - 10.0 | Poz latentinin gücü (varsayılan: 1.0). |
-| `pose_start` | FLOAT | Evet | 0.0 - 1.0 | Poz koşullandırmasını kullanmaya başlama adımı (varsayılan: 0.0). |
-| `pose_end` | FLOAT | Evet | 0.0 - 1.0 | Poz koşullandırmasını kullanmayı bitirme adımı (varsayılan: 1.0). |
+| `referans_görsel` | IMAGE | Hayır | - | Koşullandırma için isteğe bağlı bir referans görüntüsü. |
+| `poz_videosu` | IMAGE | Hayır | - | Poz koşullandırması için kullanılan video. Ana videonun çözünürlüğünün yarısına ölçeklenecektir. |
+| `poz_gücü` | FLOAT | Evet | 0.0 - 10.0 | Poz latentinin gücü (varsayılan: 1.0). |
+| `poz_başlangıcı` | FLOAT | Evet | 0.0 - 1.0 | Poz koşullandırmasını kullanmaya başlama adımı (varsayılan: 0.0). |
+| `poz_bitişi` | FLOAT | Evet | 0.0 - 1.0 | Poz koşullandırmasını kullanmayı bitirme adımı (varsayılan: 1.0). |
 
 **Not:** `pose_video` girdisi yalnızca ilk `length` kare için işlenir. `reference_image` girdisi ise yalnızca gruptaki ilk görüntü için işlenir. `reference_image` sağlandığında, negatif koşullandırma için aynı boyutta sıfırlarla doldurulmuş bir latent kullanılır. `clip_vision_output` sağlandığında, hem pozitif hem de negatif koşullandırmaya uygulanır.
 
@@ -26,8 +26,8 @@ WanSCAILToVideo düğümü, video üretimi için koşullandırma (conditioning) 
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Potansiyel olarak gömülü referans görüntü latentleri, CLIP görüş çıktısı veya poz video latentleri içeren değiştirilmiş pozitif koşullandırma. |
-| `negative` | CONDITIONING | Potansiyel olarak gömülü referans görüntü latentleri, CLIP görüş çıktısı veya poz video latentleri içeren değiştirilmiş negatif koşullandırma. |
+| `negatif` | CONDITIONING | Potansiyel olarak gömülü referans görüntü latentleri, CLIP görüş çıktısı veya poz video latentleri içeren değiştirilmiş pozitif koşullandırma. |
+| `latent` | CONDITIONING | Potansiyel olarak gömülü referans görüntü latentleri, CLIP görüş çıktısı veya poz video latentleri içeren değiştirilmiş negatif koşullandırma. |
 | `latent` | LATENT | Şekli `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]` olan boş bir latent tensörü. |
 
 ---

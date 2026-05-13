@@ -7,10 +7,10 @@ EasyCache düğümü, örnekleme işlemi sırasında önceden hesaplanmış adı
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | EasyCache eklenecek model. |
-| `reuse_threshold` | FLOAT | Hayır | 0.0 - 3.0 | Önbelleğe alınmış adımların yeniden kullanımı için eşik değeri (varsayılan: 0.2). |
-| `start_percent` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımının başlayacağı göreceli örnekleme adımı (varsayılan: 0.15). |
-| `end_percent` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımının sona ereceği göreceli örnekleme adımı (varsayılan: 0.95). |
-| `verbose` | BOOLEAN | Hayır | - | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği (varsayılan: False). |
+| `yeniden_kullanım_eşiği` | FLOAT | Hayır | 0.0 - 3.0 | Önbelleğe alınmış adımların yeniden kullanımı için eşik değeri (varsayılan: 0.2). |
+| `başlangıç_yüzdesi` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımının başlayacağı göreceli örnekleme adımı (varsayılan: 0.15). |
+| `bitiş_yüzdesi` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımının sona ereceği göreceli örnekleme adımı (varsayılan: 0.95). |
+| `ayrıntılı` | BOOLEAN | Hayır | - | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği (varsayılan: False). |
 
 ## Çıkışlar
 

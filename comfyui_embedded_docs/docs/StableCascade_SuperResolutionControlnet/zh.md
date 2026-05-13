@@ -6,15 +6,15 @@ StableCascade_SuperResolutionControlnet 节点用于准备 Stable Cascade 超分
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 用于超分辨率处理的输入图像 |
+| `图像` | IMAGE | 是 | - | 用于超分辨率处理的输入图像 |
 | `vae` | VAE | 是 | - | 用于编码输入图像的 VAE 模型 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | 适用于 controlnet 输入的编码图像表示 |
-| `stage_c` | LATENT | Stable Cascade 处理阶段 C 的占位潜空间表示 |
+| `阶段C` | IMAGE | 适用于 controlnet 输入的编码图像表示 |
+| `阶段B` | LATENT | Stable Cascade 处理阶段 C 的占位潜空间表示 |
 | `stage_b` | LATENT | Stable Cascade 处理阶段 B 的占位潜空间表示 |
 
 ---

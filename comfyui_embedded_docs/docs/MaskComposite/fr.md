@@ -10,7 +10,7 @@ Ce nœud est spécialisé dans la combinaison de deux entrées de masque via div
 | `source`      | MASK            | Le masque secondaire qui sera utilisé conjointement avec le masque de destination pour effectuer l'opération spécifiée, influençant le masque de sortie final. |
 | `x`           | INT             | Le décalage horizontal auquel le masque source sera appliqué au masque de destination, affectant le positionnement du résultat composite.       |
 | `y`           | INT             | Le décalage vertical auquel le masque source sera appliqué au masque de destination, affectant le positionnement du résultat composite.         |
-| `operation`   | COMBO[STRING]   | Spécifie le type d'opération à appliquer entre les masques de destination et source, comme 'add' (addition), 'subtract' (soustraction) ou des opérations logiques, déterminant la nature de l'effet composite. |
+| `opération`   | COMBO[STRING]   | Spécifie le type d'opération à appliquer entre les masques de destination et source, comme 'add' (addition), 'subtract' (soustraction) ou des opérations logiques, déterminant la nature de l'effet composite. |
 
 ## Sorties
 

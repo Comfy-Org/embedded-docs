@@ -8,8 +8,8 @@ Case Converter düğümü, metin dizelerini farklı harf büyüklüğü biçimle
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `string` | STRING | Evet | - | Farklı bir büyüklük biçimine dönüştürülecek metin dizesi |
-| `mode` | STRING | Evet | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | Uygulanacak büyüklük dönüştürme modu (varsayılan: `"UPPERCASE"`) |
+| `dize` | STRING | Evet | - | Farklı bir büyüklük biçimine dönüştürülecek metin dizesi |
+| `mod` | STRING | Evet | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | Uygulanacak büyüklük dönüştürme modu (varsayılan: `"UPPERCASE"`) |
 
 ## Çıktılar
 

@@ -8,17 +8,17 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `input` | IMAGE 或 MASK | 是 | 不适用 | 要调整大小的图像或遮罩。 |
-| `resize_type` | COMBO | 是 | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` | 用于确定新尺寸的方法。所需参数会根据所选类型而变化。 |
-| `multiplier` | FLOAT | 否 | 0.01 到 8.0 | 缩放因子。当 `resize_type` 为 `SCALE_BY` 时必填（默认值：1.00）。 |
-| `width` | INT | 否 | 0 到 8192 | 目标宽度（像素）。当 `resize_type` 为 `SCALE_DIMENSIONS` 或 `SCALE_WIDTH` 时必填（默认值：512）。 |
-| `height` | INT | 否 | 0 到 8192 | 目标高度（像素）。当 `resize_type` 为 `SCALE_DIMENSIONS` 或 `SCALE_HEIGHT` 时必填（默认值：512）。 |
-| `crop` | COMBO | 否 | `"disabled"`<br>`"center"` | 当尺寸与宽高比不匹配时应用的裁剪方法。仅当 `resize_type` 为 `SCALE_DIMENSIONS` 或 `MATCH_SIZE` 时可用（默认值："center"）。 |
-| `longer_size` | INT | 否 | 0 到 8192 | 图像较长边的目标尺寸。当 `resize_type` 为 `SCALE_LONGER_DIMENSION` 时必填（默认值：512）。 |
-| `shorter_size` | INT | 否 | 0 到 8192 | 图像较短边的目标尺寸。当 `resize_type` 为 `SCALE_SHORTER_DIMENSION` 时必填（默认值：512）。 |
-| `megapixels` | FLOAT | 否 | 0.01 到 16.0 | 目标总百万像素数。当 `resize_type` 为 `SCALE_TOTAL_PIXELS` 时必填（默认值：1.0）。 |
-| `match` | IMAGE 或 MASK | 否 | 不适用 | 一个图像或遮罩，输入的尺寸将调整为与其匹配。当 `resize_type` 为 `MATCH_SIZE` 时必填。 |
-| `scale_method` | COMBO | 是 | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` | 用于缩放的插值算法（默认值："area"）。 |
+| `输入` | IMAGE 或 MASK | 是 | 不适用 | 要调整大小的图像或遮罩。 |
+| `调整类型` | COMBO | 是 | `SCALE_BY`<br>`SCALE_DIMENSIONS`<br>`SCALE_LONGER_DIMENSION`<br>`SCALE_SHORTER_DIMENSION`<br>`SCALE_WIDTH`<br>`SCALE_HEIGHT`<br>`SCALE_TOTAL_PIXELS`<br>`MATCH_SIZE` | 用于确定新尺寸的方法。所需参数会根据所选类型而变化。 |
+| `multiplier` | FLOAT | 否 | 0.01 到 8.0 | 缩放因子。当 `调整类型` 为 `SCALE_BY` 时必填（默认值：1.00）。 |
+| `width` | INT | 否 | 0 到 8192 | 目标宽度（像素）。当 `调整类型` 为 `SCALE_DIMENSIONS` 或 `SCALE_WIDTH` 时必填（默认值：512）。 |
+| `height` | INT | 否 | 0 到 8192 | 目标高度（像素）。当 `调整类型` 为 `SCALE_DIMENSIONS` 或 `SCALE_HEIGHT` 时必填（默认值：512）。 |
+| `crop` | COMBO | 否 | `"disabled"`<br>`"center"` | 当尺寸与宽高比不匹配时应用的裁剪方法。仅当 `调整类型` 为 `SCALE_DIMENSIONS` 或 `MATCH_SIZE` 时可用（默认值："center"）。 |
+| `longer_size` | INT | 否 | 0 到 8192 | 图像较长边的目标尺寸。当 `调整类型` 为 `SCALE_LONGER_DIMENSION` 时必填（默认值：512）。 |
+| `shorter_size` | INT | 否 | 0 到 8192 | 图像较短边的目标尺寸。当 `调整类型` 为 `SCALE_SHORTER_DIMENSION` 时必填（默认值：512）。 |
+| `megapixels` | FLOAT | 否 | 0.01 到 16.0 | 目标总百万像素数。当 `调整类型` 为 `SCALE_TOTAL_PIXELS` 时必填（默认值：1.0）。 |
+| `match` | IMAGE 或 MASK | 否 | 不适用 | 一个图像或遮罩，输入的尺寸将调整为与其匹配。当 `调整类型` 为 `MATCH_SIZE` 时必填。 |
+| `缩放方法` | COMBO | 是 | `"nearest-exact"`<br>`"bilinear"`<br>`"area"`<br>`"bicubic"`<br>`"lanczos"` | 用于缩放的插值算法（默认值："area"）。 |
 
 **注意：** `crop` 参数仅在 `resize_type` 设置为 `SCALE_DIMENSIONS` 或 `MATCH_SIZE` 时可用且相关。当使用 `SCALE_WIDTH` 或 `SCALE_HEIGHT` 时，另一个维度会自动缩放以保持原始宽高比。
 

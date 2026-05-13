@@ -6,12 +6,12 @@ Kling Omni Video Düzenleme (Pro) düğümü, mevcut bir videoyu metin açıklam
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `model_name` | COMBO | Evet | `"kling-v3-omni"`<br>`"kling-video-o1"` | Video düzenleme için kullanılacak yapay zeka modeli (varsayılan: `"kling-v3-omni"`). |
-| `prompt` | STRING | Evet | | Video içeriğini tanımlayan bir metin istemi. Bu, hem olumlu hem de olumsuz açıklamalar içerebilir. |
+| `model_adı` | COMBO | Evet | `"kling-v3-omni"`<br>`"kling-video-o1"` | Video düzenleme için kullanılacak yapay zeka modeli (varsayılan: `"kling-v3-omni"`). |
+| `istem` | STRING | Evet | | Video içeriğini tanımlayan bir metin istemi. Bu, hem olumlu hem de olumsuz açıklamalar içerebilir. |
 | `video` | VIDEO | Evet | | Düzenlenecek video. Çıktı videosunun uzunluğu aynı olacaktır. |
-| `keep_original_sound` | BOOLEAN | Evet | | Giriş videosundaki orijinal sesin çıktıda tutulup tutulmayacağını belirler (varsayılan: True). |
-| `reference_images` | IMAGE | Hayır | | En fazla 4 adet ek referans görseli. |
-| `resolution` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü (varsayılan: `"1080p"`). |
+| `orijinal_sesi_koru` | BOOLEAN | Evet | | Giriş videosundaki orijinal sesin çıktıda tutulup tutulmayacağını belirler (varsayılan: True). |
+| `referans_görseller` | IMAGE | Hayır | | En fazla 4 adet ek referans görseli. |
+| `çözünürlük` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü (varsayılan: `"1080p"`). |
 | `seed` | INT | Hayır | 0 ile 2147483647 arası | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
 
 **Kısıtlamalar ve Sınırlamalar:**

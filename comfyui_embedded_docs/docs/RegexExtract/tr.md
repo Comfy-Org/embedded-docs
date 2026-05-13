@@ -6,13 +6,13 @@ RegexExtract düğümü, düzenli ifadeler kullanarak metin içinde desenler ara
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | - | Desenlerin aranacağı giriş metni |
-| `regex_pattern` | STRING | Evet | - | Aranacak düzenli ifade deseni |
-| `mode` | COMBO | Evet | "İlk Eşleşme"<br>"Tüm Eşleşmeler"<br>"İlk Grup"<br>"Tüm Gruplar" | Çıkarma modu, eşleşmelerin hangi bölümlerinin döndürüleceğini belirler (varsayılan: "İlk Eşleşme") |
-| `case_insensitive` | BOOLEAN | Hayır | - | Eşleştirme sırasında büyük/küçük harf farkının göz ardı edilip edilmeyeceği (varsayılan: True) |
-| `multiline` | BOOLEAN | Hayır | - | Dizenin birden çok satır olarak değerlendirilip değerlendirilmeyeceği (varsayılan: False) |
-| `dotall` | BOOLEAN | Hayır | - | Nokta (.) karakterinin yeni satırlarla eşleşip eşleşmeyeceği (varsayılan: False) |
-| `group_index` | INT | Hayır | 0-100 | Grup modları kullanılırken çıkarılacak yakalama grubu dizini (varsayılan: 1) |
+| `dize` | STRING | Evet | - | Desenlerin aranacağı giriş metni |
+| `regex_deseni` | STRING | Evet | - | Aranacak düzenli ifade deseni |
+| `mod` | COMBO | Evet | "İlk Eşleşme"<br>"Tüm Eşleşmeler"<br>"İlk Grup"<br>"Tüm Gruplar" | Çıkarma modu, eşleşmelerin hangi bölümlerinin döndürüleceğini belirler (varsayılan: "İlk Eşleşme") |
+| `büyük/küçük harf duyarsız` | BOOLEAN | Hayır | - | Eşleştirme sırasında büyük/küçük harf farkının göz ardı edilip edilmeyeceği (varsayılan: True) |
+| `çok satırlı` | BOOLEAN | Hayır | - | Dizenin birden çok satır olarak değerlendirilip değerlendirilmeyeceği (varsayılan: False) |
+| `nokta her şey` | BOOLEAN | Hayır | - | Nokta (.) karakterinin yeni satırlarla eşleşip eşleşmeyeceği (varsayılan: False) |
+| `grup_indeksi` | INT | Hayır | 0-100 | Grup modları kullanılırken çıkarılacak yakalama grubu dizini (varsayılan: 1) |
 
 **Not:** "İlk Grup" veya "Tüm Gruplar" modları kullanılırken, `group_index` parametresi hangi yakalama grubunun çıkarılacağını belirtir. Grup 0 tüm eşleşmeyi temsil ederken, grup 1 ve üzeri regex deseninizdeki numaralandırılmış yakalama gruplarını temsil eder.
 

@@ -8,10 +8,10 @@ Le nœud StringCompare compare deux chaînes de texte à l'aide de différentes 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string_a` | STRING | Oui | - | La première chaîne à comparer |
-| `string_b` | STRING | Oui | - | La deuxième chaîne à comparer |
+| `chaîne_a` | STRING | Oui | - | La première chaîne à comparer |
+| `chaîne_b` | STRING | Oui | - | La deuxième chaîne à comparer |
 | `mode` | COMBO | Oui | "Commence par"<br>"Se termine par"<br>"Égal" | La méthode de comparaison à utiliser (par défaut : "Commence par") |
-| `case_sensitive` | BOOLEAN | Non | - | Indique s'il faut tenir compte de la casse lors de la comparaison (par défaut : true) |
+| `sensible_casse` | BOOLEAN | Non | - | Indique s'il faut tenir compte de la casse lors de la comparaison (par défaut : true) |
 
 ## Sorties
 

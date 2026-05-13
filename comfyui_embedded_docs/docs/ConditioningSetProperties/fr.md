@@ -6,12 +6,12 @@ Le nœud ConditioningSetProperties modifie les propriétés des données de cond
 
 | Paramètre | Type de données | Type d'entrée | Défaut | Plage | Description |
 |-----------|-----------------|---------------|--------|-------|-------------|
-| `cond_NEW` | CONDITIONING | Requis | - | - | Les données de conditionnement à modifier |
-| `strength` | FLOAT | Requis | 1.0 | 0.0 - 10.0 (pas : 0.01) | Contrôle l'intensité de l'effet de conditionnement |
-| `set_cond_area` | STRING | Requis | default | ["default", "mask bounds"] | Détermine comment la zone de conditionnement est appliquée. Choisissez "default" pour un comportement standard ou "mask bounds" pour restreindre à la région du masque |
-| `mask` | MASK | Optionnel | - | - | Masque optionnel pour restreindre l'application du conditionnement |
+| `cond_NOUVEAU` | CONDITIONING | Requis | - | - | Les données de conditionnement à modifier |
+| `force` | FLOAT | Requis | 1.0 | 0.0 - 10.0 (pas : 0.01) | Contrôle l'intensité de l'effet de conditionnement |
+| `définir_zone_cond` | STRING | Requis | default | ["default", "mask bounds"] | Détermine comment la zone de conditionnement est appliquée. Choisissez "default" pour un comportement standard ou "mask bounds" pour restreindre à la région du masque |
+| `masque` | MASK | Optionnel | - | - | Masque optionnel pour restreindre l'application du conditionnement |
 | `hooks` | HOOKS | Optionnel | - | - | Fonctions hook optionnelles pour un traitement personnalisé |
-| `timesteps` | TIMESTEPS_RANGE | Optionnel | - | - | Plage de pas de temps optionnelle pour limiter l'activation du conditionnement |
+| `pas_de_temps` | TIMESTEPS_RANGE | Optionnel | - | - | Plage de pas de temps optionnelle pour limiter l'activation du conditionnement |
 
 **Remarque :** Lorsqu'un `mask` est fourni, le paramètre `set_cond_area` peut être défini sur "mask bounds" pour restreindre l'application du conditionnement à la région masquée uniquement. Le paramètre `hooks` permet un traitement personnalisé via des fonctions hook, et `timesteps` limite l'effet de conditionnement à une plage spécifique de pas de temps pendant la génération.
 

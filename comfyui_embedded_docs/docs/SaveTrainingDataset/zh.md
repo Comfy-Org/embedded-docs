@@ -6,9 +6,9 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `latents` | LATENT | 是 | 不适用 | 来自 MakeTrainingDataset 的潜在字典列表。 |
-| `conditioning` | CONDITIONING | 是 | 不适用 | 来自 MakeTrainingDataset 的条件列表列表。 |
-| `folder_name` | STRING | 否 | 不适用 | 保存数据集的文件夹名称（位于输出目录内）。（默认值："training_dataset"） |
+| `Latent` | LATENT | 是 | 不适用 | 来自 MakeTrainingDataset 的潜在字典列表。 |
+| `条件` | CONDITIONING | 是 | 不适用 | 来自 MakeTrainingDataset 的条件列表列表。 |
+| `文件夹名` | STRING | 否 | 不适用 | 保存数据集的文件夹名称（位于输出目录内）。（默认值："training_dataset"） |
 | `shard_size` | INT | 否 | 1 到 100000 | 每个分片文件中的样本数量。（默认值：1000） |
 
 **注意：** `latents` 列表中的项目数量必须与 `conditioning` 列表中的项目数量完全一致。如果数量不匹配，节点将报错。

@@ -7,24 +7,24 @@ O TripoConversionNode converte modelos 3D entre diferentes formatos de arquivo u
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
 | `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Sim | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | O ID da tarefa de uma operação Tripo anterior (geração de modelo, rigging ou retargeting) |
-| `format` | COMBO | Sim | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | O formato de arquivo de destino para o modelo 3D convertido |
+| `formato` | COMBO | Sim | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | O formato de arquivo de destino para o modelo 3D convertido |
 | `quad` | BOOLEAN | Não | True/False | Se deve converter triângulos em quads (padrão: False) |
-| `face_limit` | INT | Não | -1 a 2000000 | Número máximo de faces no modelo de saída, use -1 para sem limite (padrão: -1) |
-| `texture_size` | INT | Não | 128 a 4096 | Tamanho das texturas de saída em pixels (padrão: 4096) |
-| `texture_format` | COMBO | Não | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Formato para texturas exportadas (padrão: JPEG) |
-| `force_symmetry` | BOOLEAN | Não | True/False | Se deve forçar simetria no modelo (padrão: False) |
-| `flatten_bottom` | BOOLEAN | Não | True/False | Se deve achatar a parte inferior do modelo (padrão: False) |
-| `flatten_bottom_threshold` | FLOAT | Não | 0.0 a 1.0 | Limiar para achatamento inferior (padrão: 0.0) |
-| `pivot_to_center_bottom` | BOOLEAN | Não | True/False | Se deve mover o ponto de pivô para o centro inferior do modelo (padrão: False) |
-| `scale_factor` | FLOAT | Não | 0.0 e acima | Fator de escala a ser aplicado ao modelo (padrão: 1.0) |
-| `with_animation` | BOOLEAN | Não | True/False | Se deve incluir dados de animação na exportação (padrão: False) |
-| `pack_uv` | BOOLEAN | Não | True/False | Se deve empacotar coordenadas UV (padrão: False) |
+| `limite_de_faces` | INT | Não | -1 a 2000000 | Número máximo de faces no modelo de saída, use -1 para sem limite (padrão: -1) |
+| `tamanho_da_textura` | INT | Não | 128 a 4096 | Tamanho das texturas de saída em pixels (padrão: 4096) |
+| `formato_da_textura` | COMBO | Não | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Formato para texturas exportadas (padrão: JPEG) |
+| `forçar_simetria` | BOOLEAN | Não | True/False | Se deve forçar simetria no modelo (padrão: False) |
+| `achatar_base` | BOOLEAN | Não | True/False | Se deve achatar a parte inferior do modelo (padrão: False) |
+| `limite_achatamento_base` | FLOAT | Não | 0.0 a 1.0 | Limiar para achatamento inferior (padrão: 0.0) |
+| `pivô_para_centro_base` | BOOLEAN | Não | True/False | Se deve mover o ponto de pivô para o centro inferior do modelo (padrão: False) |
+| `fator_de_escala` | FLOAT | Não | 0.0 e acima | Fator de escala a ser aplicado ao modelo (padrão: 1.0) |
+| `com_animação` | BOOLEAN | Não | True/False | Se deve incluir dados de animação na exportação (padrão: False) |
+| `empacotar_uv` | BOOLEAN | Não | True/False | Se deve empacotar coordenadas UV (padrão: False) |
 | `bake` | BOOLEAN | Não | True/False | Se deve assar texturas (padrão: False) |
-| `part_names` | STRING | Não | Lista separada por vírgulas | Lista separada por vírgulas de nomes de partes a serem incluídas na exportação (padrão: "") |
-| `fbx_preset` | COMBO | Não | blender<br>mixamo<br>3dsmax | Predefinição de exportação FBX a ser usada (padrão: blender) |
-| `export_vertex_colors` | BOOLEAN | Não | True/False | Se deve exportar cores de vértice (padrão: False) |
-| `export_orientation` | COMBO | Não | align_image<br>default | Modo de orientação de exportação (padrão: default) |
-| `animate_in_place` | BOOLEAN | Não | True/False | Se deve animar o modelo no lugar (padrão: False) |
+| `nomes_das_partes` | STRING | Não | Lista separada por vírgulas | Lista separada por vírgulas de nomes de partes a serem incluídas na exportação (padrão: "") |
+| `preset_fbx` | COMBO | Não | blender<br>mixamo<br>3dsmax | Predefinição de exportação FBX a ser usada (padrão: blender) |
+| `exportar_cores_dos_vértices` | BOOLEAN | Não | True/False | Se deve exportar cores de vértice (padrão: False) |
+| `exportar_orientação` | COMBO | Não | align_image<br>default | Modo de orientação de exportação (padrão: default) |
+| `animar_no_local` | BOOLEAN | Não | True/False | Se deve animar o modelo no lugar (padrão: False) |
 
 **Nota:** O `original_model_task_id` deve ser um ID de tarefa válido de uma operação Tripo anterior (geração de modelo, rigging ou retargeting). Parâmetros marcados como "avançados" são opcionais e só precisam ser configurados para requisitos específicos de exportação.
 

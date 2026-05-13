@@ -14,8 +14,8 @@ Este nodo utiliza el modelo de IA Kling más reciente para generar un video a pa
 | `reference_images` | IMAGE | No | - | Hasta 6 imágenes de referencia adicionales. |
 | `resolution` | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución de salida para el video generado (predeterminado: "1080p"). |
 | `storyboards` | DYNAMIC_COMBO | No | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Genera una serie de segmentos de video con indicaciones y duraciones individuales. Solo compatible con `kling-v3-omni`. Cuando está habilitado, cada guión gráfico requiere una indicación y una duración. |
-| `generate_audio` | BOOLEAN | No | True / False | Genera audio para el video (predeterminado: False). Solo compatible con `kling-v3-omni`. |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
+| `generar_audio` | BOOLEAN | No | True / False | Genera audio para el video (predeterminado: False). Solo compatible con `kling-v3-omni`. |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
 
 **Restricciones importantes:**
 

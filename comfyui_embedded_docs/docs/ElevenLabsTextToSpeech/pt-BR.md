@@ -6,14 +6,14 @@ O nó ElevenLabs Text to Speech converte texto escrito em áudio falado usando a
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `voice` | CUSTOM | Sim | N/A | Voz a ser usada na síntese de fala. Conecte a partir do Seletor de Voz ou Clone Instantâneo de Voz. |
-| `text` | STRING | Sim | N/A | O texto a ser convertido em fala. |
-| `stability` | FLOAT | Não | 0.0 - 1.0 | Estabilidade da voz. Valores mais baixos proporcionam uma faixa emocional mais ampla; valores mais altos produzem uma fala mais consistente, mas potencialmente monótona (padrão: 0.5). |
-| `apply_text_normalization` | COMBO | Não | `"auto"`<br>`"on"`<br>`"off"` | Modo de normalização de texto. 'auto' permite que o sistema decida, 'on' sempre aplica a normalização, 'off' a ignora. |
-| `model` | DYNAMICCOMBO | Não | `"eleven_multilingual_v2"`<br>`"eleven_v3"` | Modelo a ser usado para conversão de texto em fala. Selecionar um modelo revela seus parâmetros específicos. |
-| `language_code` | STRING | Não | N/A | Código de idioma ISO-639-1 ou ISO-639-3 (ex.: 'en', 'es', 'fra'). Deixe vazio para detecção automática (padrão: ""). |
-| `seed` | INT | Não | 0 - 2147483647 | Semente para reprodutibilidade (determinismo não garantido) (padrão: 1). |
-| `output_format` | COMBO | Não | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de saída de áudio. |
+| `voz` | CUSTOM | Sim | N/A | Voz a ser usada na síntese de fala. Conecte a partir do Seletor de Voz ou Clone Instantâneo de Voz. |
+| `texto` | STRING | Sim | N/A | O texto a ser convertido em fala. |
+| `estabilidade` | FLOAT | Não | 0.0 - 1.0 | Estabilidade da voz. Valores mais baixos proporcionam uma faixa emocional mais ampla; valores mais altos produzem uma fala mais consistente, mas potencialmente monótona (padrão: 0.5). |
+| `aplicar normalização de texto` | COMBO | Não | `"auto"`<br>`"on"`<br>`"off"` | Modo de normalização de texto. 'auto' permite que o sistema decida, 'on' sempre aplica a normalização, 'off' a ignora. |
+| `modelo` | DYNAMICCOMBO | Não | `"eleven_multilingual_v2"`<br>`"eleven_v3"` | Modelo a ser usado para conversão de texto em fala. Selecionar um modelo revela seus parâmetros específicos. |
+| `código do idioma` | STRING | Não | N/A | Código de idioma ISO-639-1 ou ISO-639-3 (ex.: 'en', 'es', 'fra'). Deixe vazio para detecção automática (padrão: ""). |
+| `semente` | INT | Não | 0 - 2147483647 | Semente para reprodutibilidade (determinismo não garantido) (padrão: 1). |
+| `formato de saída` | COMBO | Não | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de saída de áudio. |
 
 **Parâmetros Específicos do Modelo:**
 Quando o parâmetro `model` está definido como `"eleven_multilingual_v2"`, os seguintes parâmetros adicionais ficam disponíveis:

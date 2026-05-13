@@ -6,13 +6,13 @@ Le nœud Flux KV Cache permet d'activer une optimisation du cache clé-valeur (K
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | | Le modèle sur lequel appliquer l'optimisation du cache KV. |
+| `modèle` | MODEL | Oui | | Le modèle sur lequel appliquer l'optimisation du cache KV. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec l'optimisation du cache KV activée. |
+| `modèle` | MODEL | Le modèle modifié avec l'optimisation du cache KV activée. |
 
 ---
 **Source fingerprint (SHA-256):** `530c660ae23607d4035815826ae73cdcbebe7693ba47a3b0fe98e69f329b9e86`

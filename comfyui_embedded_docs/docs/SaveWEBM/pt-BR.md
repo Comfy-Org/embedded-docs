@@ -6,8 +6,8 @@ O nó SaveWEBM salva uma sequência de imagens como um arquivo de vídeo WEBM. E
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | Sequência de imagens de entrada para codificar como quadros de vídeo |
-| `filename_prefix` | STRING | Não | - | Prefixo para o nome do arquivo de saída (padrão: "ComfyUI") |
+| `imagens` | IMAGE | Sim | - | Sequência de imagens de entrada para codificar como quadros de vídeo |
+| `prefixo_do_arquivo` | STRING | Não | - | Prefixo para o nome do arquivo de saída (padrão: "ComfyUI") |
 | `codec` | COMBO | Sim | "vp9"<br>"av1" | Codec de vídeo a ser usado para codificação |
 | `fps` | FLOAT | Não | 0.01-1000.0 | Taxa de quadros para o vídeo de saída (padrão: 24.0) |
 | `crf` | FLOAT | Não | 0-63.0 | Configuração de qualidade onde um crf mais alto significa qualidade inferior com tamanho de arquivo menor, e um crf mais baixo significa qualidade superior com tamanho de arquivo maior (padrão: 32.0) |

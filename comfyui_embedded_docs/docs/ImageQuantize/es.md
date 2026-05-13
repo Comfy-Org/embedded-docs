@@ -6,12 +6,12 @@ El nodo ImageQuantize está diseñado para reducir la cantidad de colores en una
 
 | Campo   | Tipo de Dato | Descripción                                                                       |
 |---------|-------------|-----------------------------------------------------------------------------------|
-| `image` | `IMAGE`     | El tensor de imagen de entrada que se va a cuantizar. Afecta la ejecución del nodo al ser los datos principales sobre los cuales se realiza la reducción de color. |
-| `colors`| `INT`       | Especifica la cantidad de colores a los que se reducirá la imagen. Influye directamente en el proceso de cuantización al determinar el tamaño de la paleta de colores. |
-| `dither`| COMBO[STRING] | Determina la técnica de tramado que se aplicará durante la cuantización, afectando la calidad visual y la apariencia de la imagen de salida. |
+| `imagen` | `IMAGE`     | El tensor de imagen de entrada que se va a cuantizar. Afecta la ejecución del nodo al ser los datos principales sobre los cuales se realiza la reducción de color. |
+| `colores`| `INT`       | Especifica la cantidad de colores a los que se reducirá la imagen. Influye directamente en el proceso de cuantización al determinar el tamaño de la paleta de colores. |
+| `difuminado`| COMBO[STRING] | Determina la técnica de tramado que se aplicará durante la cuantización, afectando la calidad visual y la apariencia de la imagen de salida. |
 
 ## Salidas
 
 | Campo | Tipo de Dato | Descripción                                                                   |
 |-------|-------------|-------------------------------------------------------------------------------|
-| `image`| `IMAGE`     | La versión cuantizada de la imagen de entrada, con complejidad cromática reducida y opcionalmente tramada para mantener la calidad visual. |
+| `imagen`| `IMAGE`     | La versión cuantizada de la imagen de entrada, con complejidad cromática reducida y opcionalmente tramada para mantener la calidad visual. |

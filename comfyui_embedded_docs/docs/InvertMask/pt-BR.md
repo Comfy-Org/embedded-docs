@@ -6,10 +6,10 @@ O nó InvertMask foi projetado para inverter os valores de uma máscara fornecid
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `mask`    | MASK          | O parâmetro 'mask' representa a máscara de entrada a ser invertida. É crucial para determinar as áreas que serão invertidas no processo de inversão. |
+| `máscara`    | MASK          | O parâmetro 'mask' representa a máscara de entrada a ser invertida. É crucial para determinar as áreas que serão invertidas no processo de inversão. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `mask`    | MASK          | A saída é uma versão invertida da máscara de entrada, com as áreas anteriormente mascaradas tornando-se não mascaradas e vice-versa. |
+| `máscara`    | MASK          | A saída é uma versão invertida da máscara de entrada, com as áreas anteriormente mascaradas tornando-se não mascaradas e vice-versa. |

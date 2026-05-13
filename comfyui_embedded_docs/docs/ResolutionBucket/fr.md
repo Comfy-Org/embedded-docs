@@ -15,7 +15,7 @@ Ce nœud organise une liste d'images latentes et leurs données de conditionneme
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `latents` | LATENT | Liste de dictionnaires latents regroupés en lots, un par groupe de résolution. |
+| `conditioning` | LATENT | Liste de dictionnaires latents regroupés en lots, un par groupe de résolution. |
 | `conditioning` | CONDITIONING | Liste de listes de conditionnement, une par groupe de résolution. |
 
 ---

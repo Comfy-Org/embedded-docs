@@ -6,7 +6,7 @@ El nodo String proporciona una forma sencilla de ingresar y transmitir datos de 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `value` | STRING | Sí | Cualquier texto | La cadena de texto que se transmitirá a través del nodo |
+| `valor` | STRING | Sí | Cualquier texto | La cadena de texto que se transmitirá a través del nodo |
 
 ## Salidas
 

@@ -12,8 +12,8 @@ Le nœud LatentCompositeMasked est conçu pour fusionner deux représentations l
 | `source` | `LATENT` | La représentation latente à composer sur la destination. Cette couche source peut être redimensionnée et positionnée selon les paramètres spécifiés. |
 | `x` | `INT` | La coordonnée x dans la représentation latente de destination où la source sera placée. Permet un positionnement précis de la couche source. |
 | `y` | `INT` | La coordonnée y dans la représentation latente de destination où la source sera placée, permettant un positionnement précis de la superposition. |
-| `resize_source` | `BOOLEAN` | Un indicateur booléen indiquant si la représentation latente source doit être redimensionnée pour correspondre aux dimensions de la destination avant le compositing. |
-| `mask` | `MASK` | Un masque optionnel qui peut être utilisé pour contrôler la fusion de la source sur la destination. Le masque définit les parties de la source qui seront visibles dans le composite final. |
+| `redimensionner_source` | `BOOLEAN` | Un indicateur booléen indiquant si la représentation latente source doit être redimensionnée pour correspondre aux dimensions de la destination avant le compositing. |
+| `masque` | `MASK` | Un masque optionnel qui peut être utilisé pour contrôler la fusion de la source sur la destination. Le masque définit les parties de la source qui seront visibles dans le composite final. |
 
 ## Sorties
 

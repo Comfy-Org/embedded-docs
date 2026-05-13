@@ -8,8 +8,8 @@ O nó RegexMatch verifica se uma string de texto contém uma correspondência pa
 |-----------|--------------|-------------|-----------|-----------|
 | `string` | STRING | Sim | - | A string de texto a ser pesquisada por correspondências |
 | `regex_pattern` | STRING | Sim | - | O padrão de expressão regular para corresponder à string |
-| `case_insensitive` | BOOLEAN | Não | - | Se deve ignorar maiúsculas/minúsculas ao corresponder (padrão: Verdadeiro) |
-| `multiline` | BOOLEAN | Não | - | Se deve ativar o modo multilinha para correspondência regex (padrão: Falso) |
+| `ignorar_maiusculas_minusculas` | BOOLEAN | Não | - | Se deve ignorar maiúsculas/minúsculas ao corresponder (padrão: Verdadeiro) |
+| `multilinha` | BOOLEAN | Não | - | Se deve ativar o modo multilinha para correspondência regex (padrão: Falso) |
 | `dotall` | BOOLEAN | Não | - | Se deve ativar o modo dotall para correspondência regex (padrão: Falso) |
 
 ## Saídas

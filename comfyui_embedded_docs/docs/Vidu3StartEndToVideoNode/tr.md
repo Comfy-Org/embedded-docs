@@ -10,10 +10,10 @@ Bu, sağlanan bir başlangıç karesi ile bitiş karesi arasında enterpolasyon 
 | `model.resolution` | COMBO | Evet | `"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. Bu parametre, bir `model` seçildikten sonra görünür hale gelir. |
 | `model.duration` | INT | Evet | 1 ila 16 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). Bu parametre, bir `model` seçildikten sonra görünür hale gelir. |
 | `model.audio` | BOOLEAN | Evet | `True` / `False` | Etkinleştirildiğinde, videoyu sesli olarak (diyalog ve ses efektleri dahil) çıkarır (varsayılan: False). Bu parametre, bir `model` seçildikten sonra görünür hale gelir. |
-| `first_frame` | IMAGE | Evet | - | Video dizisi için başlangıç görüntüsü. |
-| `end_frame` | IMAGE | Evet | - | Video dizisi için bitiş görüntüsü. |
-| `prompt` | STRING | Evet | - | Video oluşturmayı yönlendiren metin açıklaması (maksimum 2000 karakter). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Oluşturmanın rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 1). |
+| `ilk kare` | IMAGE | Evet | - | Video dizisi için başlangıç görüntüsü. |
+| `bitiş karesi` | IMAGE | Evet | - | Video dizisi için bitiş görüntüsü. |
+| `komut istemi` | STRING | Evet | - | Video oluşturmayı yönlendiren metin açıklaması (maksimum 2000 karakter). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Oluşturmanın rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 1). |
 
 **Not:** En iyi sonuçlar için `first_frame` ve `end_frame` görüntüleri benzer en-boy oranlarına sahip olmalıdır. İki görüntünün en-boy oranı birbirinin %80 ila %125'i arasında olmalıdır (0,8 ile 1,25 arasında göreceli bir yakınlık).
 

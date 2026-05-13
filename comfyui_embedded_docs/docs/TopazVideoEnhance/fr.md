@@ -12,7 +12,7 @@ Le nœud Topaz Video Enhance utilise une API externe pour améliorer la qualité
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | - | Le fichier vidéo d'entrée à améliorer. |
+| `vidéo` | VIDEO | Oui | - | Le fichier vidéo d'entrée à améliorer. |
 | `upscaler_enabled` | BOOLEAN | Oui | - | Active ou désactive la fonction de suréchantillonnage vidéo (par défaut : True). |
 | `upscaler_model` | COMBO | Oui | `"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"` | Le modèle d'IA utilisé pour le suréchantillonnage de la vidéo. |
 | `upscaler_resolution` | COMBO | Oui | `"FullHD (1080p)"`<br>`"4K (2160p)"` | La résolution cible pour la vidéo suréchantillonnée. |
@@ -31,7 +31,7 @@ Le nœud Topaz Video Enhance utilise une API externe pour améliorer la qualité
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `video` | VIDEO | Le fichier vidéo de sortie amélioré. |
+| `vidéo` | VIDEO | Le fichier vidéo de sortie amélioré. |
 
 ---
 **Source fingerprint (SHA-256):** `70e1a6e0d7bd250f58c43beefe070fd83af19d11ac08cb9a6ac9655a9bfa839f`

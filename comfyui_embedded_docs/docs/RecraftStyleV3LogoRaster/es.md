@@ -6,7 +6,7 @@ Este nodo selecciona el estilo de logotipo rasterizado y un subestilo opcional p
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `substyle` | STRING | Sí | Múltiples opciones disponibles | El subestilo de logotipo rasterizado específico a aplicar para la generación del logotipo |
+| `subestilo` | STRING | Sí | Múltiples opciones disponibles | El subestilo de logotipo rasterizado específico a aplicar para la generación del logotipo |
 
 ## Salidas
 

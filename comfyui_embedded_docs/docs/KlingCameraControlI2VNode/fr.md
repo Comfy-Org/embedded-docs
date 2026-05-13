@@ -21,8 +21,8 @@ Le nœud de contrôle de caméra Kling Image to Video transforme des images fixe
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `output` | VIDEO | La sortie vidéo générée |
-| `video_id` | STRING | Identifiant unique de la vidéo générée |
+| `video_id` | VIDEO | La sortie vidéo générée |
+| `duration` | STRING | Identifiant unique de la vidéo générée |
 | `duration` | STRING | Durée de la vidéo générée |
 
 ---

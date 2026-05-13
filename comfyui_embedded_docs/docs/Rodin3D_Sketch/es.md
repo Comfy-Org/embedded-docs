@@ -6,14 +6,14 @@ Este nodo genera activos 3D utilizando la API de Rodin. Toma imágenes de entrad
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `Images` | IMAGE | Sí | - | Imágenes de entrada que se convertirán en modelos 3D. Se pueden proporcionar múltiples imágenes. |
-| `Seed` | INT | No | 0-65535 | Valor de semilla aleatoria para la generación (predeterminado: 0). Establecer en 0 para semilla aleatoria. |
+| `Imágenes` | IMAGE | Sí | - | Imágenes de entrada que se convertirán en modelos 3D. Se pueden proporcionar múltiples imágenes. |
+| `Semilla` | INT | No | 0-65535 | Valor de semilla aleatoria para la generación (predeterminado: 0). Establecer en 0 para semilla aleatoria. |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `3D Model Path` | STRING | Ruta del archivo al modelo 3D generado (solo para compatibilidad hacia atrás) |
+| `GLB` | STRING | Ruta del archivo al modelo 3D generado (solo para compatibilidad hacia atrás) |
 | `GLB` | FILE3DGLB | El modelo 3D generado en formato GLB |
 
 ---

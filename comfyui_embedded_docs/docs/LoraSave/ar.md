@@ -8,12 +8,12 @@
 
 | المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
 |---------|--------------|--------|--------|-------|
-| `filename_prefix` | STRING | نعم | - | بادئة اسم ملف الإخراج (الافتراضي: "loras/ComfyUI_extracted_lora") |
-| `rank` | INT | نعم | 1-4096 | قيمة الرتبة لـ LoRA، تتحكم في الحجم والتعقيد (الافتراضي: 8) |
-| `lora_type` | COMBO | نعم | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | نوع LoRA المراد إنشاؤه (الافتراضي: "standard") |
-| `bias_diff` | BOOLEAN | نعم | - | ما إذا كان سيتم تضمين فروقات الانحياز في حساب LoRA (الافتراضي: True) |
-| `model_diff` | MODEL | لا | - | مخرج ModelSubtract المراد تحويله إلى lora |
-| `text_encoder_diff` | CLIP | لا | - | مخرج CLIPSubtract المراد تحويله إلى lora |
+| `بادئة اسم الملف` | STRING | نعم | - | بادئة اسم ملف الإخراج (الافتراضي: "loras/ComfyUI_extracted_lora") |
+| `الرتبة` | INT | نعم | 1-4096 | قيمة الرتبة لـ LoRA، تتحكم في الحجم والتعقيد (الافتراضي: 8) |
+| `نوع LoRA` | COMBO | نعم | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | نوع LoRA المراد إنشاؤه (الافتراضي: "standard") |
+| `فرق الانحياز` | BOOLEAN | نعم | - | ما إذا كان سيتم تضمين فروقات الانحياز في حساب LoRA (الافتراضي: True) |
+| `فرق النموذج` | MODEL | لا | - | مخرج ModelSubtract المراد تحويله إلى lora |
+| `فرق مشفر النص` | CLIP | لا | - | مخرج CLIPSubtract المراد تحويله إلى lora |
 
 **ملاحظة:** يجب توفير واحد على الأقل من `model_diff` أو `text_encoder_diff` لكي تعمل العقدة. إذا تم حذف كليهما، فلن تنتج العقدة أي مخرجات.
 

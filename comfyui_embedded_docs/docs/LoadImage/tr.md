@@ -6,11 +6,11 @@ LoadImage düğümü, belirtilen bir yoldan görüntüleri yüklemek ve ön işl
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|--------------|-------------|
-| `image`   | COMBO[STRING] | 'image' parametresi, yüklenecek ve işlenecek görüntünün tanımlayıcısını belirtir. Görüntü dosyasının yolunu belirleme ve ardından dönüşüm ve normalleştirme için görüntüyü yükleme açısından kritik öneme sahiptir. |
+| `görüntü`   | COMBO[STRING] | 'image' parametresi, yüklenecek ve işlenecek görüntünün tanımlayıcısını belirtir. Görüntü dosyasının yolunu belirleme ve ardından dönüşüm ve normalleştirme için görüntüyü yükleme açısından kritik öneme sahiptir. |
 
 ## Çıkışlar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | Piksel değerleri normalleştirilmiş ve gerekli dönüşümler uygulanmış işlenmiş görüntü. Daha ileri işleme veya analiz için hazırdır. |
+| `görüntü`   | `IMAGE`     | Piksel değerleri normalleştirilmiş ve gerekli dönüşümler uygulanmış işlenmiş görüntü. Daha ileri işleme veya analiz için hazırdır. |
 | `mask`    | `MASK`      | Görüntü için bir maske sağlayan isteğe bağlı çıktı. Görüntünün şeffaflık için bir alfa kanalı içerdiği durumlarda kullanışlıdır. |

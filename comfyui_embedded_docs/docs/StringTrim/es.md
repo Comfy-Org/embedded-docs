@@ -6,8 +6,8 @@ El nodo `StringTrim` elimina los caracteres de espacio en blanco del inicio, fin
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto a procesar. Admite entrada multilínea. |
-| `mode` | COMBO | Sí | "Both"<br>"Left"<br>"Right" | Especifica qué lado(s) de la cadena recortar. "Both" elimina espacios en blanco de ambos extremos, "Left" solo del inicio, "Right" solo del final. |
+| `cadena` | STRING | Sí | - | La cadena de texto a procesar. Admite entrada multilínea. |
+| `modo` | COMBO | Sí | "Both"<br>"Left"<br>"Right" | Especifica qué lado(s) de la cadena recortar. "Both" elimina espacios en blanco de ambos extremos, "Left" solo del inicio, "Right" solo del final. |
 
 ## Salidas
 

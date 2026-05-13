@@ -6,11 +6,11 @@ O nó LatentComposite foi projetado para mesclar ou combinar duas representaçõ
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `samples_to` | `LATENT` | A representação latente 'samples_to' onde o 'samples_from' será sobreposto. Serve como base para a operação de composição. |
-| `samples_from` | `LATENT` | A representação latente 'samples_from' a ser sobreposta no 'samples_to'. Contribui com suas características ou propriedades para a saída composta final. |
+| `amostras_destino` | `LATENT` | A representação latente 'samples_to' onde o 'samples_from' será sobreposto. Serve como base para a operação de composição. |
+| `amostras_origem` | `LATENT` | A representação latente 'samples_from' a ser sobreposta no 'samples_to'. Contribui com suas características ou propriedades para a saída composta final. |
 | `x` | `INT` | A coordenada x (posição horizontal) onde o latente 'samples_from' será posicionado sobre o 'samples_to'. Determina o alinhamento horizontal da composição. |
 | `y` | `INT` | A coordenada y (posição vertical) onde o latente 'samples_from' será posicionado sobre o 'samples_to'. Determina o alinhamento vertical da composição. |
-| `feather` | `INT` | Um valor booleano que indica se o latente 'samples_from' deve ser redimensionado para corresponder ao 'samples_to' antes da composição. Isso pode afetar a escala e a proporção do resultado composto. |
+| `suavização` | `INT` | Um valor booleano que indica se o latente 'samples_from' deve ser redimensionado para corresponder ao 'samples_to' antes da composição. Isso pode afetar a escala e a proporção do resultado composto. |
 
 ## Saídas
 

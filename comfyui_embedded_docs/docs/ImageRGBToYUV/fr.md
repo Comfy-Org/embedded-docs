@@ -12,8 +12,8 @@ Le nœud ImageRGBToYUV convertit des images couleur RVB vers l'espace colorimét
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `Y` | IMAGE | Le composant de luminance (luminosité) de l'espace colorimétrique YUV |
-| `U` | IMAGE | Le composant de projection bleue de l'espace colorimétrique YUV |
+| `U` | IMAGE | Le composant de luminance (luminosité) de l'espace colorimétrique YUV |
+| `V` | IMAGE | Le composant de projection bleue de l'espace colorimétrique YUV |
 | `V` | IMAGE | Le composant de projection rouge de l'espace colorimétrique YUV |
 
 ---

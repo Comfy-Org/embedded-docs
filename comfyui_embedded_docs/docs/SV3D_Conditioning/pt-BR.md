@@ -7,12 +7,12 @@ O nó SV3D_Conditioning prepara dados de condicionamento para geração de víde
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
 | `clip_vision` | CLIP_VISION | Sim | - | O modelo de visão CLIP usado para codificar a imagem de entrada |
-| `init_image` | IMAGE | Sim | - | A imagem inicial que serve como ponto de partida para a geração do vídeo 3D |
+| `imagem_inicial` | IMAGE | Sim | - | A imagem inicial que serve como ponto de partida para a geração do vídeo 3D |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar a imagem no espaço latente |
-| `width` | INT | Não | 16 a MAX_RESOLUTION | A largura de saída para os quadros de vídeo gerados (padrão: 576, deve ser divisível por 8) |
-| `height` | INT | Não | 16 a MAX_RESOLUTION | A altura de saída para os quadros de vídeo gerados (padrão: 576, deve ser divisível por 8) |
-| `video_frames` | INT | Não | 1 a 4096 | O número de quadros a serem gerados para a sequência de vídeo (padrão: 21) |
-| `elevation` | FLOAT | Não | -90.0 a 90.0 | O ângulo de elevação da câmera em graus para a visualização 3D (padrão: 0.0) |
+| `largura` | INT | Não | 16 a MAX_RESOLUTION | A largura de saída para os quadros de vídeo gerados (padrão: 576, deve ser divisível por 8) |
+| `altura` | INT | Não | 16 a MAX_RESOLUTION | A altura de saída para os quadros de vídeo gerados (padrão: 576, deve ser divisível por 8) |
+| `quadros_de_vídeo` | INT | Não | 1 a 4096 | O número de quadros a serem gerados para a sequência de vídeo (padrão: 21) |
+| `elevação` | FLOAT | Não | -90.0 a 90.0 | O ângulo de elevação da câmera em graus para a visualização 3D (padrão: 0.0) |
 
 ## Saídas
 

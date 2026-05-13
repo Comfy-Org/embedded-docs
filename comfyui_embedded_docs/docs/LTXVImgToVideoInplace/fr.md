@@ -9,8 +9,8 @@ Le nœud LTXVImgToVideoInplace conditionne une représentation latente vidéo en
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour encoder l'image d'entrée dans l'espace latent. |
 | `image` | IMAGE | Oui | - | L'image d'entrée à encoder et à utiliser pour conditionner le latent vidéo. |
 | `latent` | LATENT | Oui | - | La représentation latente vidéo cible à modifier. |
-| `strength` | FLOAT | Non | 0.0 - 1.0 | Contrôle la force de fusion de l'image encodée dans le latent. Une valeur de 1.0 remplace complètement les trames initiales, tandis que des valeurs plus faibles les fusionnent. (par défaut : 1.0) |
-| `bypass` | BOOLEAN | Non | - | Ignorer le conditionnement. Lorsque cette option est activée, le nœud renvoie le latent d'entrée inchangé. (par défaut : False) |
+| `force` | FLOAT | Non | 0.0 - 1.0 | Contrôle la force de fusion de l'image encodée dans le latent. Une valeur de 1.0 remplace complètement les trames initiales, tandis que des valeurs plus faibles les fusionnent. (par défaut : 1.0) |
+| `contournement` | BOOLEAN | Non | - | Ignorer le conditionnement. Lorsque cette option est activée, le nœud renvoie le latent d'entrée inchangé. (par défaut : False) |
 
 **Remarque :** L'`image` sera automatiquement redimensionnée pour correspondre aux dimensions spatiales requises par le `vae` pour l'encodage, en fonction de la largeur et de la hauteur de l'entrée `latent`.
 

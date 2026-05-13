@@ -6,18 +6,18 @@ El nodo WanTrackToVideo convierte datos de seguimiento de movimiento en secuenci
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Acondicionamiento positivo para la generación de video |
-| `negative` | CONDITIONING | Sí | - | Acondicionamiento negativo para la generación de video |
+| `positivo` | CONDITIONING | Sí | - | Acondicionamiento positivo para la generación de video |
+| `negativo` | CONDITIONING | Sí | - | Acondicionamiento negativo para la generación de video |
 | `vae` | VAE | Sí | - | Modelo VAE para codificación y decodificación |
-| `tracks` | STRING | Sí | - | Datos de seguimiento en formato JSON como cadena multilínea (predeterminado: "[]") |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en el video de salida (predeterminado: 81, paso: 4) |
-| `batch_size` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (predeterminado: 1) |
-| `temperature` | FLOAT | Sí | 1.0 a 1000.0 | Parámetro de temperatura para el parcheo de movimiento (predeterminado: 220.0, paso: 0.1) |
+| `pistas` | STRING | Sí | - | Datos de seguimiento en formato JSON como cadena multilínea (predeterminado: "[]") |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) |
+| `alto` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en el video de salida (predeterminado: 81, paso: 4) |
+| `tamaño_lote` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (predeterminado: 1) |
+| `temperatura` | FLOAT | Sí | 1.0 a 1000.0 | Parámetro de temperatura para el parcheo de movimiento (predeterminado: 220.0, paso: 0.1) |
 | `topk` | INT | Sí | 1 a 10 | Valor top-k para el parcheo de movimiento (predeterminado: 2) |
-| `start_image` | IMAGE | No | - | Imagen inicial para la generación de video |
-| `clip_vision_output` | CLIPVISIONOUTPUT | No | - | Salida de visión CLIP para acondicionamiento adicional |
+| `imagen_inicial` | IMAGE | No | - | Imagen inicial para la generación de video |
+| `salida_vision_clip` | CLIPVISIONOUTPUT | No | - | Salida de visión CLIP para acondicionamiento adicional |
 
 **Nota:** Cuando `tracks` contiene datos de seguimiento válidos, el nodo procesa los seguimientos de movimiento para generar video. Cuando `tracks` está vacío, cambia al modo estándar de imagen a video. Si se proporciona `start_image`, inicializa el primer fotograma de la secuencia de video.
 
@@ -25,8 +25,8 @@ El nodo WanTrackToVideo convierte datos de seguimiento de movimiento en secuenci
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | Acondicionamiento positivo con información de seguimiento de movimiento aplicada |
-| `negative` | CONDITIONING | Acondicionamiento negativo con información de seguimiento de movimiento aplicada |
+| `negativo` | CONDITIONING | Acondicionamiento positivo con información de seguimiento de movimiento aplicada |
+| `latente` | CONDITIONING | Acondicionamiento negativo con información de seguimiento de movimiento aplicada |
 | `latent` | LATENT | Representación latente del video generado |
 
 ---

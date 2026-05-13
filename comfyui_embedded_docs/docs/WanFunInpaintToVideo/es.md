@@ -6,23 +6,23 @@ El nodo WanFunInpaintToVideo crea secuencias de video mediante interpolación en
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Indicaciones de condicionamiento positivo para la generación de video |
-| `negative` | CONDITIONING | Sí | - | Indicaciones de condicionamiento negativo a evitar en la generación de video |
+| `positivo` | CONDITIONING | Sí | - | Indicaciones de condicionamiento positivo para la generación de video |
+| `negativo` | CONDITIONING | Sí | - | Indicaciones de condicionamiento negativo a evitar en la generación de video |
 | `vae` | VAE | Sí | - | Modelo VAE para operaciones de codificación/decodificación |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) |
-| `batch_size` | INT | Sí | 1 a 4096 | Número de videos a generar en un lote (predeterminado: 1) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 832, paso: 16) |
+| `alto` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) |
+| `tamaño_de_lote` | INT | Sí | 1 a 4096 | Número de videos a generar en un lote (predeterminado: 1) |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP opcional para condicionamiento adicional |
-| `start_image` | IMAGE | No | - | Imagen de fotograma inicial opcional para la generación de video |
-| `end_image` | IMAGE | No | - | Imagen de fotograma final opcional para la generación de video |
+| `imagen_inicial` | IMAGE | No | - | Imagen de fotograma inicial opcional para la generación de video |
+| `imagen_final` | IMAGE | No | - | Imagen de fotograma final opcional para la generación de video |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Salida de condicionamiento positivo procesado |
-| `negative` | CONDITIONING | Salida de condicionamiento negativo procesado |
+| `negativo` | CONDITIONING | Salida de condicionamiento positivo procesado |
+| `latente` | CONDITIONING | Salida de condicionamiento negativo procesado |
 | `latent` | LATENT | Representación latente del video generado |
 
 ---

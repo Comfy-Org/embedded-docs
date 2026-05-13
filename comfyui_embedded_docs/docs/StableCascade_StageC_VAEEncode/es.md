@@ -6,15 +6,15 @@ El nodo `StableCascade_StageC_VAEEncode` procesa imágenes a través de un codif
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se codificará en el espacio latente |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se codificará en el espacio latente |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar la imagen |
-| `compression` | INT | No | 4-128 | El factor de compresión aplicado a la imagen antes de la codificación (predeterminado: 42) |
+| `compresión` | INT | No | 4-128 | El factor de compresión aplicado a la imagen antes de la codificación (predeterminado: 42) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `stage_c` | LATENT | La representación latente codificada para la etapa C del modelo Stable Cascade |
+| `etapa_b` | LATENT | La representación latente codificada para la etapa C del modelo Stable Cascade |
 | `stage_b` | LATENT | Un marcador de posición de representación latente para la etapa B (actualmente devuelve ceros) |
 
 ---

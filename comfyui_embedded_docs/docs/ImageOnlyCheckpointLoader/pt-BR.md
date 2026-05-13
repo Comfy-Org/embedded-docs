@@ -8,7 +8,7 @@ Este nó é especializado em carregar checkpoints especificamente para modelos b
 
 | Campo        | Tipo de Dado | Descrição                                                                                     |
 |--------------|--------------|-----------------------------------------------------------------------------------------------|
-| `ckpt_name`  | COMBO[STRING]| Especifica o nome do checkpoint a ser carregado, crucial para identificar e recuperar o arquivo de checkpoint correto de uma lista predefinida. |
+| `nome_do_ckpt`  | COMBO[STRING]| Especifica o nome do checkpoint a ser carregado, crucial para identificar e recuperar o arquivo de checkpoint correto de uma lista predefinida. |
 
 ## Saídas
 

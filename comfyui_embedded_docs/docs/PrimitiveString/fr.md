@@ -6,7 +6,7 @@ Le nœud String offre un moyen simple de saisir et de transmettre des données t
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `value` | STRING | Oui | Texte quelconque | La chaîne de caractères à transmettre via le nœud |
+| `valeur` | STRING | Oui | Texte quelconque | La chaîne de caractères à transmettre via le nœud |
 
 ## Sorties
 

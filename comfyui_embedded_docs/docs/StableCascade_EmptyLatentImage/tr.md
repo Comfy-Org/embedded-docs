@@ -6,16 +6,16 @@ StableCascade_EmptyLatentImage düğümü, Stable Cascade modelleri için boş g
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `width` | INT | Evet | 256 ile MAX_RESOLUTION arası | Çıktı görüntüsünün piksel cinsinden genişliği (varsayılan: 1024, adım: 8) |
-| `height` | INT | Evet | 256 ile MAX_RESOLUTION arası | Çıktı görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024, adım: 8) |
-| `compression` | INT | Evet | 4 ile 128 arası | C aşaması için gizli boyutları belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1) |
-| `batch_size` | INT | Hayır | 1 ile 4096 arası | Bir grupta oluşturulacak gizli örnek sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 256 ile MAX_RESOLUTION arası | Çıktı görüntüsünün piksel cinsinden genişliği (varsayılan: 1024, adım: 8) |
+| `yükseklik` | INT | Evet | 256 ile MAX_RESOLUTION arası | Çıktı görüntüsünün piksel cinsinden yüksekliği (varsayılan: 1024, adım: 8) |
+| `sıkıştırma` | INT | Evet | 4 ile 128 arası | C aşaması için gizli boyutları belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1) |
+| `toplu_boyut` | INT | Hayır | 1 ile 4096 arası | Bir grupta oluşturulacak gizli örnek sayısı (varsayılan: 1) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `stage_c` | LATENT | Boyutları [batch_size, 16, height//compression, width//compression] olan C aşaması gizli tensörü |
+| `aşama_b` | LATENT | Boyutları [batch_size, 16, height//compression, width//compression] olan C aşaması gizli tensörü |
 | `stage_b` | LATENT | Boyutları [batch_size, 4, height//4, width//4] olan B aşaması gizli tensörü |
 
 ---

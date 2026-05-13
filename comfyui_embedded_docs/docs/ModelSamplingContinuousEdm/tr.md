@@ -7,8 +7,8 @@ Bu düğüm, sürekli EDM (Enerji Tabanlı Difüzyon Modelleri) örnekleme tekni
 | Parametre    | Veri Türü | Python dtype        | Açıklama |
 |--------------|--------------|----------------------|-------------|
 | `model`      | `MODEL`      | `torch.nn.Module`   | Sürekli EDM örnekleme yetenekleriyle geliştirilecek model. Gelişmiş örnekleme tekniklerinin uygulanması için temel oluşturur. |
-| `sampling`   | COMBO[STRING] | `str`             | Uygulanacak örnekleme türünü belirtir: epsilon örneklemesi için 'eps' veya hız tahmini için 'v_prediction'. Örnekleme sürecinde modelin davranışını etkiler. |
-| `sigma_max`  | `FLOAT`      | `float`             | Gürültü seviyesi için maksimum sigma değeri. Örnekleme sırasında gürültü enjeksiyon sürecinde üst sınır kontrolü sağlar. |
+| `örnekleme`   | COMBO[STRING] | `str`             | Uygulanacak örnekleme türünü belirtir: epsilon örneklemesi için 'eps' veya hız tahmini için 'v_prediction'. Örnekleme sürecinde modelin davranışını etkiler. |
+| `sigma_maks`  | `FLOAT`      | `float`             | Gürültü seviyesi için maksimum sigma değeri. Örnekleme sırasında gürültü enjeksiyon sürecinde üst sınır kontrolü sağlar. |
 | `sigma_min`  | `FLOAT`      | `float`             | Gürültü seviyesi için minimum sigma değeri. Gürültü enjeksiyonu için alt sınırı belirleyerek modelin örnekleme hassasiyetini etkiler. |
 
 ## Çıkışlar

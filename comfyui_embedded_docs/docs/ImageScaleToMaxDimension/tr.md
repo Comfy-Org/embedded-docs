@@ -6,15 +6,15 @@ ImageScaleToMaxDimension düğümü, görüntüleri orijinal en-boy oranını ko
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `image` | IMAGE | Evet | - | Ölçeklenecek giriş görüntüsü |
-| `upscale_method` | STRING | Evet | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | Görüntüyü ölçeklemek için kullanılan enterpolasyon yöntemi (varsayılan: "area") |
-| `largest_size` | INT | Evet | 0 ile 16384 | Ölçeklenen görüntü için maksimum boyut (varsayılan: 512) |
+| `görüntü` | IMAGE | Evet | - | Ölçeklenecek giriş görüntüsü |
+| `ölçeklendirme yöntemi` | STRING | Evet | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | Görüntüyü ölçeklemek için kullanılan enterpolasyon yöntemi (varsayılan: "area") |
+| `en büyük boyut` | INT | Evet | 0 ile 16384 | Ölçeklenen görüntü için maksimum boyut (varsayılan: 512) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | En büyük boyutu belirtilen boyutla eşleşen ölçeklenmiş görüntü |
+| `görüntü` | IMAGE | En büyük boyutu belirtilen boyutla eşleşen ölçeklenmiş görüntü |
 
 ---
 **Source fingerprint (SHA-256):** `be113c1a98ab9d884b2c728b790c41fb236857d59af567e43e2be0ef0362cc5e`

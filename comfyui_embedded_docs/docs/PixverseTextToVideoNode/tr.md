@@ -6,14 +6,14 @@ Bir metin istemi ve çeşitli üretim parametrelerine dayalı olarak videolar ol
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Video üretimi için istem (varsayılan: "") |
-| `aspect_ratio` | COMBO | Evet | PixverseAspectRatio seçenekleri | Oluşturulan video için en boy oranı |
-| `quality` | COMBO | Evet | PixverseQuality seçenekleri | Video kalite ayarı (varsayılan: PixverseQuality.res_540p) |
-| `duration_seconds` | COMBO | Evet | PixverseDuration seçenekleri | Oluşturulan videonun saniye cinsinden süresi |
-| `motion_mode` | COMBO | Evet | PixverseMotionMode seçenekleri | Video üretimi için hareket stili |
-| `seed` | INT | Evet | 0 ila 2147483647 | Video üretimi için tohum değeri (varsayılan: 0) |
-| `negative_prompt` | STRING | Hayır | - | Bir görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: "") |
-| `pixverse_template` | CUSTOM | Hayır | - | PixVerse Şablon düğümü tarafından oluşturulan, üretim stilini etkilemek için isteğe bağlı bir şablon |
+| `istem` | STRING | Evet | - | Video üretimi için istem (varsayılan: "") |
+| `en_boy_oranı` | COMBO | Evet | PixverseAspectRatio seçenekleri | Oluşturulan video için en boy oranı |
+| `kalite` | COMBO | Evet | PixverseQuality seçenekleri | Video kalite ayarı (varsayılan: PixverseQuality.res_540p) |
+| `süre_saniye` | COMBO | Evet | PixverseDuration seçenekleri | Oluşturulan videonun saniye cinsinden süresi |
+| `hareket_modu` | COMBO | Evet | PixverseMotionMode seçenekleri | Video üretimi için hareket stili |
+| `tohum` | INT | Evet | 0 ila 2147483647 | Video üretimi için tohum değeri (varsayılan: 0) |
+| `negatif_istem` | STRING | Hayır | - | Bir görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: "") |
+| `pixverse_şablonu` | CUSTOM | Hayır | - | PixVerse Şablon düğümü tarafından oluşturulan, üretim stilini etkilemek için isteğe bağlı bir şablon |
 
 **Not:** 1080p kalite kullanıldığında, hareket modu otomatik olarak normal olarak ayarlanır ve süre 5 saniye ile sınırlandırılır. 5 saniye dışındaki süreler için de hareket modu otomatik olarak normal olarak ayarlanır.
 

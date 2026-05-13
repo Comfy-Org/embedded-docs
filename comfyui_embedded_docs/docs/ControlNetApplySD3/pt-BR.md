@@ -10,21 +10,21 @@ Este nó aplica a orientação do ControlNet ao condicionamento do Stable Diffus
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `positive` | CONDITIONING | Sim | - | O condicionamento positivo ao qual aplicar a orientação do ControlNet |
-| `negative` | CONDITIONING | Sim | - | O condicionamento negativo ao qual aplicar a orientação do ControlNet |
+| `positivo` | CONDITIONING | Sim | - | O condicionamento positivo ao qual aplicar a orientação do ControlNet |
+| `negativo` | CONDITIONING | Sim | - | O condicionamento negativo ao qual aplicar a orientação do ControlNet |
 | `control_net` | CONTROL_NET | Sim | - | O modelo ControlNet a ser usado para orientação |
 | `vae` | VAE | Sim | - | O modelo VAE utilizado no processo |
-| `image` | IMAGE | Sim | - | A imagem de entrada que o ControlNet usará como orientação |
-| `strength` | FLOAT | Sim | 0.0 - 10.0 | A intensidade do efeito do ControlNet (padrão: 1.0) |
-| `start_percent` | FLOAT | Sim | 0.0 - 1.0 | O ponto inicial no processo de geração onde o ControlNet começa a aplicar (padrão: 0.0) |
-| `end_percent` | FLOAT | Sim | 0.0 - 1.0 | O ponto final no processo de geração onde o ControlNet para de aplicar (padrão: 1.0) |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada que o ControlNet usará como orientação |
+| `força` | FLOAT | Sim | 0.0 - 10.0 | A intensidade do efeito do ControlNet (padrão: 1.0) |
+| `percentual_inicial` | FLOAT | Sim | 0.0 - 1.0 | O ponto inicial no processo de geração onde o ControlNet começa a aplicar (padrão: 0.0) |
+| `percentual_final` | FLOAT | Sim | 0.0 - 1.0 | O ponto final no processo de geração onde o ControlNet para de aplicar (padrão: 1.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | O condicionamento positivo modificado com a orientação do ControlNet aplicada |
-| `negative` | CONDITIONING | O condicionamento negativo modificado com a orientação do ControlNet aplicada |
+| `positivo` | CONDITIONING | O condicionamento positivo modificado com a orientação do ControlNet aplicada |
+| `negativo` | CONDITIONING | O condicionamento negativo modificado com a orientação do ControlNet aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

@@ -6,16 +6,16 @@ El nodo **Continuación de Video Wan 2.7** genera un nuevo segmento de video que
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| `model` | COMBO | Sí | `"wan2.7-i2v"` | El modelo de generación de video a utilizar. |
+| `modelo` | COMBO | Sí | `"wan2.7-i2v"` | El modelo de generación de video a utilizar. |
 | `model.prompt` | STRING | Sí | - | Prompt que describe los elementos y características visuales. Compatible con inglés y chino. (predeterminado: cadena vacía) |
 | `model.negative_prompt` | STRING | Sí | - | Prompt negativo que describe lo que se debe evitar. (predeterminado: cadena vacía) |
 | `model.resolution` | COMBO | Sí | `"720P"`<br>`"1080P"` | La resolución del video de salida. |
 | `model.duration` | INT | Sí | 2 a 15 | Duración total de salida en segundos. El modelo genera la continuación para llenar el tiempo restante después del clip de entrada. (predeterminado: 5) |
-| `first_clip` | VIDEO | Sí | - | Video de entrada desde el cual continuar. Duración: 2s-10s. La relación de aspecto de salida se deriva de este video. |
-| `last_frame` | IMAGE | No | - | Imagen del último fotograma. La continuación hará una transición hacia este fotograma. |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla a utilizar para la generación. (predeterminado: 0) |
-| `prompt_extend` | BOOLEAN | Sí | - | Si se debe mejorar el prompt con asistencia de IA. (predeterminado: True) |
-| `watermark` | BOOLEAN | Sí | - | Si se debe agregar una marca de agua generada por IA al resultado. (predeterminado: False) |
+| `primer_clip` | VIDEO | Sí | - | Video de entrada desde el cual continuar. Duración: 2s-10s. La relación de aspecto de salida se deriva de este video. |
+| `último_fotograma` | IMAGE | No | - | Imagen del último fotograma. La continuación hará una transición hacia este fotograma. |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla a utilizar para la generación. (predeterminado: 0) |
+| `extender_prompt` | BOOLEAN | Sí | - | Si se debe mejorar el prompt con asistencia de IA. (predeterminado: True) |
+| `marca de agua` | BOOLEAN | Sí | - | Si se debe agregar una marca de agua generada por IA al resultado. (predeterminado: False) |
 
 **Nota:** El video de entrada `first_clip` debe tener una duración de entre 2 y 10 segundos.
 

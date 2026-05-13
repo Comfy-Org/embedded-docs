@@ -6,8 +6,8 @@ Le nœud `ModelMergeCosmosPredict2_14B` fusionne deux modèles d'IA en mélangea
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model1` | MODEL | Oui | - | Le modèle de base à fusionner |
-| `model2` | MODEL | Oui | - | Le modèle secondaire à fusionner dans le modèle de base |
+| `modèle1` | MODEL | Oui | - | Le modèle de base à fusionner |
+| `modèle2` | MODEL | Oui | - | Le modèle secondaire à fusionner dans le modèle de base |
 | `pos_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de l'intégrateur de position (par défaut : 1.0) |
 | `x_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de l'intégrateur d'entrée (par défaut : 1.0) |
 | `t_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion de l'intégrateur temporel (par défaut : 1.0) |

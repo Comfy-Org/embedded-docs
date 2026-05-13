@@ -6,9 +6,9 @@ Flux2Scheduler düğümü, özellikle Flux modeli için uyarlanmış, gürültü
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `steps` | INT | Evet | 1 ila 4096 | Gerçekleştirilecek gürültü giderme adım sayısı. Daha yüksek bir değer genellikle daha ayrıntılı sonuçlar verir ancak işlemin daha uzun sürmesine neden olur (varsayılan: 20). |
-| `width` | INT | Evet | 16 ila 16384 | Oluşturulacak görüntünün piksel cinsinden genişliği. Bu değer, gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). |
-| `height` | INT | Evet | 16 ila 16384 | Oluşturulacak görüntünün piksel cinsinden yüksekliği. Bu değer, gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). |
+| `adım` | INT | Evet | 1 ila 4096 | Gerçekleştirilecek gürültü giderme adım sayısı. Daha yüksek bir değer genellikle daha ayrıntılı sonuçlar verir ancak işlemin daha uzun sürmesine neden olur (varsayılan: 20). |
+| `genişlik` | INT | Evet | 16 ila 16384 | Oluşturulacak görüntünün piksel cinsinden genişliği. Bu değer, gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). |
+| `yükseklik` | INT | Evet | 16 ila 16384 | Oluşturulacak görüntünün piksel cinsinden yüksekliği. Bu değer, gürültü zamanlaması hesaplamasını etkiler (varsayılan: 1024). |
 
 ## Çıktılar
 

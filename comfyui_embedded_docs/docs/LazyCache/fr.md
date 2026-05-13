@@ -8,17 +8,17 @@ LazyCache est une version maison d'EasyCache qui offre une implémentation encor
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel ajouter LazyCache. |
-| `reuse_threshold` | FLOAT | Non | 0,0 - 3,0 | Le seuil pour réutiliser les étapes mises en cache (par défaut : 0,2). |
-| `start_percent` | FLOAT | Non | 0,0 - 1,0 | L'étape d'échantillonnage relative pour commencer l'utilisation de LazyCache (par défaut : 0,15). |
-| `end_percent` | FLOAT | Non | 0,0 - 1,0 | L'étape d'échantillonnage relative pour terminer l'utilisation de LazyCache (par défaut : 0,95). |
-| `verbose` | BOOLEAN | Non | - | Indique s'il faut journaliser les informations détaillées (par défaut : False). |
+| `modèle` | MODEL | Oui | - | Le modèle auquel ajouter LazyCache. |
+| `seuil_réutilisation` | FLOAT | Non | 0,0 - 3,0 | Le seuil pour réutiliser les étapes mises en cache (par défaut : 0,2). |
+| `pourcentage_début` | FLOAT | Non | 0,0 - 1,0 | L'étape d'échantillonnage relative pour commencer l'utilisation de LazyCache (par défaut : 0,15). |
+| `pourcentage_fin` | FLOAT | Non | 0,0 - 1,0 | L'étape d'échantillonnage relative pour terminer l'utilisation de LazyCache (par défaut : 0,95). |
+| `verbeux` | BOOLEAN | Non | - | Indique s'il faut journaliser les informations détaillées (par défaut : False). |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle avec la fonctionnalité LazyCache ajoutée. |
+| `modèle` | MODEL | Le modèle avec la fonctionnalité LazyCache ajoutée. |
 
 ---
 **Source fingerprint (SHA-256):** `72a5e85b7cf517e88583fc1b75d3ab4a5d40fe8604d50c34f555e677d2ea9e51`

@@ -9,9 +9,9 @@ O uso do ControlNet requer o pré-processamento das imagens de entrada. Como os 
 | `positive` | `CONDITIONING` | Dados de condicionamento positivo, provenientes do CLIP Text Encoder ou outras entradas de condicionamento |
 | `negative` | `CONDITIONING` | Dados de condicionamento negativo, provenientes do CLIP Text Encoder ou outras entradas de condicionamento |
 | `control_net` | `CONTROL_NET` | O modelo ControlNet a ser aplicado, normalmente inserido a partir do ControlNet Loader |
-| `image` | `IMAGE` | Imagem para aplicação do ControlNet, precisa ser processada pelo pré-processador |
+| `imagem` | `IMAGE` | Imagem para aplicação do ControlNet, precisa ser processada pelo pré-processador |
 | `vae` | `VAE` | Entrada do modelo VAE |
-| `strength` | `FLOAT` | Controla a intensidade dos ajustes da rede, faixa de valores 0~10. Valores recomendados entre 0,5~1,5 são razoáveis. Valores menores permitem mais liberdade ao modelo, valores maiores impõem restrições mais rigorosas. Valores muito altos podem resultar em imagens estranhas. Você pode testar e ajustar esse valor para refinar a influência da rede de controle. |
+| `força` | `FLOAT` | Controla a intensidade dos ajustes da rede, faixa de valores 0~10. Valores recomendados entre 0,5~1,5 são razoáveis. Valores menores permitem mais liberdade ao modelo, valores maiores impõem restrições mais rigorosas. Valores muito altos podem resultar em imagens estranhas. Você pode testar e ajustar esse valor para refinar a influência da rede de controle. |
 | `start_percent` | `FLOAT` | Valor 0,000~1,000, determina quando começar a aplicar o ControlNet como uma porcentagem, ex.: 0,2 significa que a orientação do ControlNet começará a influenciar a geração de imagens em 20% do processo de difusão |
 | `end_percent` | `FLOAT` | Valor 0,000~1,000, determina quando parar de aplicar o ControlNet como uma porcentagem, ex.: 0,8 significa que a orientação do ControlNet deixará de influenciar a geração de imagens em 80% do processo de difusão |
 

@@ -6,7 +6,7 @@ O nó Topaz Video Enhance utiliza uma API externa para melhorar a qualidade do v
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `video` | VIDEO | Sim | - | O arquivo de vídeo de entrada a ser aprimorado. |
+| `vídeo` | VIDEO | Sim | - | O arquivo de vídeo de entrada a ser aprimorado. |
 | `upscaler_enabled` | BOOLEAN | Sim | - | Ativa ou desativa o recurso de aumento de resolução do vídeo (padrão: True). |
 | `upscaler_model` | COMBO | Sim | `"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"` | O modelo de IA usado para aumentar a resolução do vídeo. |
 | `upscaler_resolution` | COMBO | Sim | `"FullHD (1080p)"`<br>`"4K (2160p)"` | A resolução alvo para o vídeo com resolução aumentada. |
@@ -25,7 +25,7 @@ O nó Topaz Video Enhance utiliza uma API externa para melhorar a qualidade do v
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `video` | VIDEO | O arquivo de vídeo de saída aprimorado. |
+| `vídeo` | VIDEO | O arquivo de vídeo de saída aprimorado. |
 
 ---
 **Source fingerprint (SHA-256):** `70e1a6e0d7bd250f58c43beefe070fd83af19d11ac08cb9a6ac9655a9bfa839f`

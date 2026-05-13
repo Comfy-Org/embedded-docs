@@ -8,11 +8,11 @@ O nó RegexExtract busca padrões em texto usando expressões regulares. Ele pod
 |-----------|---------------|-------------|-------|-----------|
 | `string` | STRING | Sim | - | O texto de entrada para buscar padrões |
 | `regex_pattern` | STRING | Sim | - | O padrão de expressão regular a ser buscado |
-| `mode` | COMBO | Sim | "Primeira Correspondência"<br>"Todas as Correspondências"<br>"Primeiro Grupo"<br>"Todos os Grupos" | O modo de extração determina quais partes das correspondências são retornadas (padrão: "Primeira Correspondência") |
-| `case_insensitive` | BOOLEAN | Não | - | Se deve ignorar maiúsculas/minúsculas ao corresponder (padrão: Verdadeiro) |
-| `multiline` | BOOLEAN | Não | - | Se deve tratar a string como múltiplas linhas (padrão: Falso) |
+| `modo` | COMBO | Sim | "Primeira Correspondência"<br>"Todas as Correspondências"<br>"Primeiro Grupo"<br>"Todos os Grupos" | O modo de extração determina quais partes das correspondências são retornadas (padrão: "Primeira Correspondência") |
+| `ignorar_maiusculas_minusculas` | BOOLEAN | Não | - | Se deve ignorar maiúsculas/minúsculas ao corresponder (padrão: Verdadeiro) |
+| `multilinha` | BOOLEAN | Não | - | Se deve tratar a string como múltiplas linhas (padrão: Falso) |
 | `dotall` | BOOLEAN | Não | - | Se o ponto (.) corresponde a quebras de linha (padrão: Falso) |
-| `group_index` | INT | Não | 0-100 | O índice do grupo de captura a extrair ao usar modos de grupo (padrão: 1) |
+| `indice_grupo` | INT | Não | 0-100 | O índice do grupo de captura a extrair ao usar modos de grupo (padrão: 1) |
 
 **Nota:** Ao usar os modos "Primeiro Grupo" ou "Todos os Grupos", o parâmetro `group_index` especifica qual grupo de captura extrair. O grupo 0 representa a correspondência inteira, enquanto os grupos 1+ representam os grupos de captura numerados no seu padrão de regex.
 

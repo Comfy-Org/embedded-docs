@@ -7,12 +7,12 @@ El nodo CosmosPredict2ImageToVideoLatent crea representaciones latentes de video
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar imágenes en el espacio latente |
-| `width` | INT | No | 16 a MAX_RESOLUTION | El ancho del video de salida en píxeles (predeterminado: 848, debe ser divisible por 16) |
-| `height` | INT | No | 16 a MAX_RESOLUTION | La altura del video de salida en píxeles (predeterminado: 480, debe ser divisible por 16) |
-| `length` | INT | No | 1 a MAX_RESOLUTION | El número de fotogramas en la secuencia de video (predeterminado: 93, paso: 4) |
-| `batch_size` | INT | No | 1 a 4096 | El número de secuencias de video a generar (predeterminado: 1) |
-| `start_image` | IMAGE | No | - | Imagen de inicio opcional para la secuencia de video |
-| `end_image` | IMAGE | No | - | Imagen final opcional para la secuencia de video |
+| `ancho` | INT | No | 16 a MAX_RESOLUTION | El ancho del video de salida en píxeles (predeterminado: 848, debe ser divisible por 16) |
+| `alto` | INT | No | 16 a MAX_RESOLUTION | La altura del video de salida en píxeles (predeterminado: 480, debe ser divisible por 16) |
+| `longitud` | INT | No | 1 a MAX_RESOLUTION | El número de fotogramas en la secuencia de video (predeterminado: 93, paso: 4) |
+| `tamaño_del_lote` | INT | No | 1 a 4096 | El número de secuencias de video a generar (predeterminado: 1) |
+| `imagen_inicial` | IMAGE | No | - | Imagen de inicio opcional para la secuencia de video |
+| `imagen_final` | IMAGE | No | - | Imagen final opcional para la secuencia de video |
 
 **Nota:** Cuando no se proporcionan ni `start_image` ni `end_image`, el nodo genera un video latente en blanco. Cuando se proporcionan imágenes, estas se codifican y se posicionan al inicio y/o al final de la secuencia de video con el enmascaramiento adecuado.
 

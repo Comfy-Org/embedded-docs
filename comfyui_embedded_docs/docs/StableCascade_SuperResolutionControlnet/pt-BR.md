@@ -6,7 +6,7 @@ O nó **StableCascade_SuperResolutionControlnet** prepara entradas para o proces
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser processada para super-resolução |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser processada para super-resolução |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar a imagem de entrada |
 
 ## Saídas

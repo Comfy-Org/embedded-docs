@@ -13,8 +13,8 @@
 | `end_frame` | IMAGE | خیر | - | یک فریم پایان اختیاری برای ویدیو. نمی‌توان هم‌زمان با `reference_images` استفاده کرد. با استوری‌بورد کار نمی‌کند. |
 | `reference_images` | IMAGE | خیر | - | حداکثر ۶ تصویر مرجع اضافی. |
 | `resolution` | COMBO | خیر | `"4k"`<br>`"1080p"`<br>`"720p"` | وضوح خروجی برای ویدیوی تولید شده (پیش‌فرض: "1080p"). |
-| `storyboards` | DYNAMIC_COMBO | خیر | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | تولید یک سری بخش‌های ویدیویی با پرامپت و مدت‌زمان مجزا. فقط برای `kling-v3-omni` پشتیبانی می‌شود. در صورت فعال بودن، هر استوری‌بورد نیاز به ورودی پرامپت و مدت‌زمان دارد. |
-| `generate_audio` | BOOLEAN | خیر | True / False | تولید صدا برای ویدیو (پیش‌فرض: False). فقط برای `kling-v3-omni` پشتیبانی می‌شود. |
+| `استوری‌بوردها` | DYNAMIC_COMBO | خیر | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | تولید یک سری بخش‌های ویدیویی با پرامپت و مدت‌زمان مجزا. فقط برای `kling-v3-omni` پشتیبانی می‌شود. در صورت فعال بودن، هر استوری‌بورد نیاز به ورودی پرامپت و مدت‌زمان دارد. |
+| `تولید صدا` | BOOLEAN | خیر | True / False | تولید صدا برای ویدیو (پیش‌فرض: False). فقط برای `kling-v3-omni` پشتیبانی می‌شود. |
 | `seed` | INT | خیر | ۰ تا ۲۱۴۷۴۸۳۶۴۷ | Seed مشخص می‌کند که آیا گره باید دوباره اجرا شود؛ نتایج بدون توجه به seed غیرقطعی هستند (پیش‌فرض: ۰). |
 
 **محدودیت‌های مهم:**

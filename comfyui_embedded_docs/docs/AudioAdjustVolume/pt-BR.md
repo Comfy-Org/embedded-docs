@@ -6,14 +6,14 @@ O nó AudioAdjustVolume modifica o volume do áudio aplicando ajustes de ganho e
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | - | A entrada de áudio a ser processada |
+| `áudio` | AUDIO | Sim | - | A entrada de áudio a ser processada |
 | `volume` | INT | Sim | -100 a 100 | Ajuste de volume em decibéis (dB). 0 = sem alteração, +6 = dobra, -6 = reduz pela metade, etc (padrão: 1) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `audio` | AUDIO | O áudio processado com o nível de volume ajustado |
+| `áudio` | AUDIO | O áudio processado com o nível de volume ajustado |
 
 ---
 **Source fingerprint (SHA-256):** `0436765680671551239f7a89b575cdfb22590fbe662bdfe5da01bd1cd5c496ed`

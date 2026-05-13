@@ -6,10 +6,10 @@ O nó **StableCascade_EmptyLatentImage** cria tensores latentes vazios para mode
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `width` | INT | Sim | 256 a MAX_RESOLUTION | A largura da imagem de saída em pixels (padrão: 1024, passo: 8) |
-| `height` | INT | Sim | 256 a MAX_RESOLUTION | A altura da imagem de saída em pixels (padrão: 1024, passo: 8) |
-| `compression` | INT | Sim | 4 a 128 | O fator de compressão que determina as dimensões latentes para o estágio C (padrão: 42, passo: 1) |
-| `batch_size` | INT | Não | 1 a 4096 | O número de amostras latentes a serem geradas em um lote (padrão: 1) |
+| `largura` | INT | Sim | 256 a MAX_RESOLUTION | A largura da imagem de saída em pixels (padrão: 1024, passo: 8) |
+| `altura` | INT | Sim | 256 a MAX_RESOLUTION | A altura da imagem de saída em pixels (padrão: 1024, passo: 8) |
+| `compressão` | INT | Sim | 4 a 128 | O fator de compressão que determina as dimensões latentes para o estágio C (padrão: 42, passo: 1) |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de amostras latentes a serem geradas em um lote (padrão: 1) |
 
 ## Saídas
 

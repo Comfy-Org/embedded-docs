@@ -6,14 +6,14 @@ Le nœud Set Hook Keyframes vous permet d'appliquer une planification d'images c
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `hooks` | HOOKS | Oui | - | Le groupe de hooks auquel la planification d'images clés sera appliquée |
-| `hook_kf` | HOOK_KEYFRAMES | Non | - | Groupe d'images clés optionnel contenant les informations de temporisation pour l'exécution des hooks |
+| `crochets` | HOOKS | Oui | - | Le groupe de hooks auquel la planification d'images clés sera appliquée |
+| `crochet_kf` | HOOK_KEYFRAMES | Non | - | Groupe d'images clés optionnel contenant les informations de temporisation pour l'exécution des hooks |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `hooks` | HOOKS | Le groupe de hooks modifié avec la planification d'images clés appliquée (cloné si des images clés ont été fournies) |
+| `crochets` | HOOKS | Le groupe de hooks modifié avec la planification d'images clés appliquée (cloné si des images clés ont été fournies) |
 
 ---
 **Source fingerprint (SHA-256):** `48908e5247b18e5b7b1d894c2f1adcf6403e499125b0c3eb05978584b3d5759b`

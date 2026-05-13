@@ -12,7 +12,7 @@ Le nœud Frame Interpolate crée de nouvelles images entre les images existantes
 |-----------|-----------------|--------|-------|-------------|
 | `interp_model` | MODEL | Oui | - | Le modèle d'interpolation d'images à utiliser pour générer les images intermédiaires |
 | `images` | IMAGE | Oui | - | Un lot d'images consécutives (images) entre lesquelles interpoler. Nécessite au moins 2 images. |
-| `multiplier` | INT | Oui | 2 à 16 | Le nombre de fois pour multiplier le nombre d'images. Par exemple, un multiplicateur de 2 double le nombre d'images. (par défaut : 2) |
+| `multiplicateur` | INT | Oui | 2 à 16 | Le nombre de fois pour multiplier le nombre d'images. Par exemple, un multiplicateur de 2 double le nombre d'images. (par défaut : 2) |
 
 ## Sorties
 

@@ -6,17 +6,17 @@
 
 | پارامتر | نوع داده | ضروری | محدوده | توضیحات |
 |---------|----------|-------|--------|---------|
-| `positive` | CONDITIONING | بله | - | ورودی conditioning مثبت برای پردازش |
-| `negative` | CONDITIONING | بله | - | ورودی conditioning منفی برای پردازش |
+| `مثبت` | CONDITIONING | بله | - | ورودی conditioning مثبت برای پردازش |
+| `منفی` | CONDITIONING | بله | - | ورودی conditioning منفی برای پردازش |
 | `latent` | LATENT | بله | - | نمایش ورودی latent |
-| `noise_augmentation` | FLOAT | بله | 0.0 - 1.0 | میزان نویزافزایی اعمال‌شده (پیش‌فرض: 0.10) |
+| `افزایش نویز` | FLOAT | بله | 0.0 - 1.0 | میزان نویزافزایی اعمال‌شده (پیش‌فرض: 0.10) |
 
 ## خروجی‌ها
 
 | نام خروجی | نوع داده | توضیحات |
 |-----------|----------|---------|
-| `positive` | CONDITIONING | conditioning مثبت پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent |
-| `negative` | CONDITIONING | conditioning منفی پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent |
+| `مثبت` | CONDITIONING | conditioning مثبت پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent |
+| `منفی` | CONDITIONING | conditioning منفی پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent |
 | `latent` | LATENT | خروجی latent جدید با ابعاد [batch_size, 32, height, width, channels] |
 
 ---

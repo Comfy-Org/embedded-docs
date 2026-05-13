@@ -6,7 +6,7 @@ Este nó carrega um conjunto de dados de imagens e suas respectivas legendas de 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `folder` | COMBO | Sim | *Carregado dinamicamente de `folder_paths.get_input_subfolders()`* | A pasta de onde carregar as imagens. As opções disponíveis são os subdiretórios dentro do diretório de entrada do ComfyUI. |
+| `pasta` | COMBO | Sim | *Carregado dinamicamente de `folder_paths.get_input_subfolders()`* | A pasta de onde carregar as imagens. As opções disponíveis são os subdiretórios dentro do diretório de entrada do ComfyUI. |
 
 **Observação:** O nó espera uma estrutura de arquivos específica. Para cada arquivo de imagem (`.png`, `.jpg`, `.jpeg`, `.webp`), ele procurará um arquivo `.txt` com o mesmo nome para usar como legenda. Se um arquivo de legenda não for encontrado, uma string vazia é usada. O nó também suporta uma estrutura especial onde o nome de uma subpasta começa com um número e um sublinhado (por exemplo, `5_gatos`), o que fará com que todas as imagens dentro dessa subpasta sejam repetidas aquele número de vezes na lista final de saída.
 

@@ -8,14 +8,14 @@ HunyuanImageToVideo 노드는 Hunyuan 비디오 모델을 사용하여 이미지
 
 | 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 예 | - | 비디오 생성을 안내하는 긍정 조건 입력 |
+| `긍정 조건` | CONDITIONING | 예 | - | 비디오 생성을 안내하는 긍정 조건 입력 |
 | `vae` | VAE | 예 | - | 이미지를 잠재 공간으로 인코딩하는 데 사용되는 VAE 모델 |
-| `width` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오의 너비(픽셀 단위, 기본값: 848, 증가 단위: 16) |
-| `height` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오의 높이(픽셀 단위, 기본값: 480, 증가 단위: 16) |
-| `length` | INT | 예 | 1 ~ MAX_RESOLUTION | 출력 비디오의 프레임 수(기본값: 53, 증가 단위: 4) |
-| `batch_size` | INT | 예 | 1 ~ 4096 | 동시에 생성할 비디오 수(기본값: 1) |
-| `guidance_type` | COMBO | 예 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 시작 이미지를 비디오 생성에 통합하는 방법(기본값: "v1 (concat)") |
-| `start_image` | IMAGE | 아니요 | - | 비디오 생성을 초기화하는 선택적 시작 이미지 |
+| `너비` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오의 너비(픽셀 단위, 기본값: 848, 증가 단위: 16) |
+| `높이` | INT | 예 | 16 ~ MAX_RESOLUTION | 출력 비디오의 높이(픽셀 단위, 기본값: 480, 증가 단위: 16) |
+| `길이` | INT | 예 | 1 ~ MAX_RESOLUTION | 출력 비디오의 프레임 수(기본값: 53, 증가 단위: 4) |
+| `배치 크기` | INT | 예 | 1 ~ 4096 | 동시에 생성할 비디오 수(기본값: 1) |
+| `가이던스 유형` | COMBO | 예 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 시작 이미지를 비디오 생성에 통합하는 방법(기본값: "v1 (concat)") |
+| `시작 이미지` | IMAGE | 아니요 | - | 비디오 생성을 초기화하는 선택적 시작 이미지 |
 
 **참고:** `start_image`가 제공되면 노드는 선택한 `guidance_type`에 따라 다양한 안내 방법을 사용합니다:
 
@@ -27,7 +27,7 @@ HunyuanImageToVideo 노드는 Hunyuan 비디오 모델을 사용하여 이미지
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | start_image가 제공될 때 이미지 안내가 적용된 수정된 긍정 조건 |
+| `잠재 비디오` | CONDITIONING | start_image가 제공될 때 이미지 안내가 적용된 수정된 긍정 조건 |
 | `latent` | LATENT | 비디오 생성 모델에서 추가 처리를 위해 준비된 비디오 잠재 표현 |
 
 ---

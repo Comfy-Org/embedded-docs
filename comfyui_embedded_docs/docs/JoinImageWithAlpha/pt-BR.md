@@ -6,11 +6,11 @@ Este nó é projetado para operações de composição, especificamente para uni
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | O conteúdo visual principal a ser combinado com uma máscara alfa. Representa a imagem sem informações de transparência. |
-| `alpha`   | `MASK`        | A máscara alfa que define a transparência da imagem correspondente. É usada para determinar quais partes da imagem devem ser transparentes ou semitransparentes. |
+| `imagem`   | `IMAGE`       | O conteúdo visual principal a ser combinado com uma máscara alfa. Representa a imagem sem informações de transparência. |
+| `alfa`   | `MASK`        | A máscara alfa que define a transparência da imagem correspondente. É usada para determinar quais partes da imagem devem ser transparentes ou semitransparentes. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | A saída é uma única imagem que combina a imagem de entrada com a máscara alfa, incorporando informações de transparência ao conteúdo visual. |
+| `imagem`   | `IMAGE`       | A saída é uma única imagem que combina a imagem de entrada com a máscara alfa, incorporando informações de transparência ao conteúdo visual. |

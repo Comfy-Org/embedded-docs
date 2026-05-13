@@ -6,11 +6,11 @@ Bu düğüm, belirtilen bir yükseltme modelini kullanarak görüntüleri yükse
 
 | Parametre         | Comfy dtype       | Açıklama                                                                 |
 |-------------------|-------------------|----------------------------------------------------------------------------|
-| `upscale_model`   | `UPSCALE_MODEL`   | Görüntüyü yükseltmek için kullanılacak yükseltme modeli. Yükseltme algoritmasını ve parametrelerini tanımlamak için çok önemlidir. |
-| `image`           | `IMAGE`           | Yükseltilecek görüntü. Bu girdi, yükseltme işlemine tabi tutulacak kaynak içeriğin belirlenmesi için gereklidir. |
+| `büyütme_modeli`   | `UPSCALE_MODEL`   | Görüntüyü yükseltmek için kullanılacak yükseltme modeli. Yükseltme algoritmasını ve parametrelerini tanımlamak için çok önemlidir. |
+| `görüntü`           | `IMAGE`           | Yükseltilecek görüntü. Bu girdi, yükseltme işlemine tabi tutulacak kaynak içeriğin belirlenmesi için gereklidir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama                                        |
 |-----------|-------------|----------------------------------------------------|
-| `image`   | `IMAGE`     | Yükseltme modeli tarafından işlenmiş, yükseltilmiş görüntü. Bu çıktı, yükseltme işleminin sonucudur ve geliştirilmiş çözünürlük veya kaliteyi sergiler. |
+| `görüntü`   | `IMAGE`     | Yükseltme modeli tarafından işlenmiş, yükseltilmiş görüntü. Bu çıktı, yükseltme işleminin sonucudur ve geliştirilmiş çözünürlük veya kaliteyi sergiler. |

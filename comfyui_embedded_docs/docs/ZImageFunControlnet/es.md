@@ -6,13 +6,13 @@ El nodo ZImageFunControlnet aplica una red de control especializada para influir
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo base utilizado para el proceso de generación. |
-| `model_patch` | MODEL_PATCH | Sí | - | Un modelo de parche especializado que aplica la guía de la red de control. |
+| `modelo` | MODEL | Sí | - | El modelo base utilizado para el proceso de generación. |
+| `parche_de_modelo` | MODEL_PATCH | Sí | - | Un modelo de parche especializado que aplica la guía de la red de control. |
 | `vae` | VAE | Sí | - | El Autoencoder Variacional utilizado para codificar y decodificar imágenes. |
-| `strength` | FLOAT | Sí | -10.0 a 10.0 | La intensidad de la influencia de la red de control. Los valores positivos aplican el efecto, mientras que los valores negativos pueden invertirlo (valor predeterminado: 1.0). |
-| `image` | IMAGE | No | - | Una imagen base opcional para guiar el proceso de generación. |
-| `inpaint_image` | IMAGE | No | - | Una imagen opcional utilizada específicamente para el inpainting de áreas definidas por una máscara. |
-| `mask` | MASK | No | - | Una máscara opcional que define qué áreas de una imagen deben editarse o repararse mediante inpainting. |
+| `fuerza` | FLOAT | Sí | -10.0 a 10.0 | La intensidad de la influencia de la red de control. Los valores positivos aplican el efecto, mientras que los valores negativos pueden invertirlo (valor predeterminado: 1.0). |
+| `imagen` | IMAGE | No | - | Una imagen base opcional para guiar el proceso de generación. |
+| `imagen_relleno` | IMAGE | No | - | Una imagen opcional utilizada específicamente para el inpainting de áreas definidas por una máscara. |
+| `máscara` | MASK | No | - | Una máscara opcional que define qué áreas de una imagen deben editarse o repararse mediante inpainting. |
 
 **Nota:** El parámetro `inpaint_image` se utiliza típicamente junto con una `mask` para especificar el contenido del inpainting. El comportamiento del nodo puede cambiar según las entradas opcionales proporcionadas (por ejemplo, usando `image` como guía o usando `image`, `mask` e `inpaint_image` para inpainting).
 
@@ -20,7 +20,7 @@ El nodo ZImageFunControlnet aplica una red de control especializada para influir
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo con el parche de red de control aplicado, listo para usar en un pipeline de muestreo. |
+| `modelo` | MODEL | El modelo con el parche de red de control aplicado, listo para usar en un pipeline de muestreo. |
 | `positive` | CONDITIONING | El condicionamiento positivo, potencialmente modificado por las entradas de la red de control. |
 | `negative` | CONDITIONING | El condicionamiento negativo, potencialmente modificado por las entradas de la red de control. |
 

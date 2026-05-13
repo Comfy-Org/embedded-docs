@@ -6,7 +6,7 @@ O nó VAEEncodeAudio converte dados de áudio em uma representação latente usa
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `audio` | AUDIO | Sim | - | Os dados de áudio a serem codificados, contendo informações de forma de onda e taxa de amostragem |
+| `áudio` | AUDIO | Sim | - | Os dados de áudio a serem codificados, contendo informações de forma de onda e taxa de amostragem |
 | `vae` | VAE | Sim | - | O modelo de Autoencoder Variacional usado para codificar o áudio no espaço latente |
 
 **Observação:** A entrada de áudio é reamostrada automaticamente para corresponder à taxa de amostragem esperada pelo VAE (padrão: 44100 Hz) se a taxa de amostragem original for diferente deste valor.

@@ -6,14 +6,14 @@ Le nœud ModelSamplingSD3 applique les paramètres d'échantillonnage de Stable 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle d'entrée auquel appliquer les paramètres d'échantillonnage SD3 |
-| `shift` | FLOAT | Oui | 0.0 - 100.0 | Contrôle le paramètre de décalage d'échantillonnage (valeur par défaut : 3.0) |
+| `modèle` | MODEL | Oui | - | Le modèle d'entrée auquel appliquer les paramètres d'échantillonnage SD3 |
+| `décalage` | FLOAT | Oui | 0.0 - 100.0 | Contrôle le paramètre de décalage d'échantillonnage (valeur par défaut : 3.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec les paramètres d'échantillonnage SD3 appliqués |
+| `modèle` | MODEL | Le modèle modifié avec les paramètres d'échantillonnage SD3 appliqués |
 
 ---
 **Source fingerprint (SHA-256):** `aa2172d578badffb0a728308b0d3aae4d048db074336963965264d5e512a0d93`

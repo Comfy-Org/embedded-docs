@@ -6,17 +6,17 @@ Le nœud HyperTile applique une technique de tuilage au mécanisme d'attention d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer l'optimisation HyperTile |
-| `tile_size` | INT | Non | 1 - 2048 | La taille cible des tuiles pour le traitement (par défaut : 256). La taille effective des tuiles est arrondie à l'inférieur à un multiple de 8, avec un minimum de 32. |
-| `swap_size` | INT | Non | 1 - 128 | Contrôle la façon dont les tuiles sont réarrangées pendant le traitement pour améliorer l'efficacité (par défaut : 2) |
-| `max_depth` | INT | Non | 0 - 10 | Le niveau de profondeur maximal (échelle de résolution) auquel appliquer le tuilage. Une valeur de 0 applique le tuilage uniquement à la résolution la plus élevée (par défaut : 0) |
-| `scale_depth` | BOOLEAN | Non | Vrai / Faux | Lorsque cette option est activée, la taille des tuiles est mise à l'échelle proportionnellement aux niveaux de profondeur plus profonds. Cela peut aider à maintenir la qualité aux résolutions inférieures (par défaut : Faux) |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer l'optimisation HyperTile |
+| `taille_tuile` | INT | Non | 1 - 2048 | La taille cible des tuiles pour le traitement (par défaut : 256). La taille effective des tuiles est arrondie à l'inférieur à un multiple de 8, avec un minimum de 32. |
+| `taille_échange` | INT | Non | 1 - 128 | Contrôle la façon dont les tuiles sont réarrangées pendant le traitement pour améliorer l'efficacité (par défaut : 2) |
+| `profondeur_max` | INT | Non | 0 - 10 | Le niveau de profondeur maximal (échelle de résolution) auquel appliquer le tuilage. Une valeur de 0 applique le tuilage uniquement à la résolution la plus élevée (par défaut : 0) |
+| `échelle_profondeur` | BOOLEAN | Non | Vrai / Faux | Lorsque cette option est activée, la taille des tuiles est mise à l'échelle proportionnellement aux niveaux de profondeur plus profonds. Cela peut aider à maintenir la qualité aux résolutions inférieures (par défaut : Faux) |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec l'optimisation HyperTile appliquée |
+| `modèle` | MODEL | Le modèle modifié avec l'optimisation HyperTile appliquée |
 
 ---
 **Source fingerprint (SHA-256):** `d3c55e6a38abecc8fe612dbb91a3ba26de9bc5cf8a187f01cf4746550f62f40a`

@@ -8,19 +8,19 @@ Kling 듀얼 캐릭터 비디오 효과 노드는 선택한 장면에 따라 특
 
 | 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `image_left` | IMAGE | 예 | - | 왼쪽 이미지 |
-| `image_right` | IMAGE | 예 | - | 오른쪽 이미지 |
-| `effect_scene` | COMBO | 예 | `"chat"`<br>`"dance"`<br>`"hug"`<br>`"kill"`<br>`"kiss"`<br>`"pat"`<br>`"punch"`<br>`"shrug"`<br>`"slap"`<br>`"tickle"` | 비디오 생성에 적용할 특수 효과 장면 유형 |
-| `model_name` | COMBO | 아니요 | `"kling-v1"`<br>`"kling-v1-5"`<br>`"kling-v1-6"` | 캐릭터 효과에 사용할 모델 (기본값: "kling-v1") |
-| `mode` | COMBO | 아니요 | `"std"`<br>`"pro"` | 비디오 생성 모드 (기본값: "std") |
-| `duration` | COMBO | 예 | `"5"`<br>`"10"` | 생성된 비디오의 길이(초) |
+| `왼쪽 이미지` | IMAGE | 예 | - | 왼쪽 이미지 |
+| `오른쪽 이미지` | IMAGE | 예 | - | 오른쪽 이미지 |
+| `효과 장면` | COMBO | 예 | `"chat"`<br>`"dance"`<br>`"hug"`<br>`"kill"`<br>`"kiss"`<br>`"pat"`<br>`"punch"`<br>`"shrug"`<br>`"slap"`<br>`"tickle"` | 비디오 생성에 적용할 특수 효과 장면 유형 |
+| `모델명` | COMBO | 아니요 | `"kling-v1"`<br>`"kling-v1-5"`<br>`"kling-v1-6"` | 캐릭터 효과에 사용할 모델 (기본값: "kling-v1") |
+| `모드` | COMBO | 아니요 | `"std"`<br>`"pro"` | 비디오 생성 모드 (기본값: "std") |
+| `길이` | COMBO | 예 | `"5"`<br>`"10"` | 생성된 비디오의 길이(초) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 듀얼 캐릭터 효과가 적용된 생성된 비디오 |
-| `duration` | STRING | 생성된 비디오의 길이 정보 |
+| `길이` | VIDEO | 듀얼 캐릭터 효과가 적용된 생성된 비디오 |
+| `길이` | STRING | 생성된 비디오의 길이 정보 |
 
 ---
 **Source fingerprint (SHA-256):** `4ee0c3cd834e1c70e41b40b66ac98d15a8b88993e7dc9d9df9fb4fadb868f079`

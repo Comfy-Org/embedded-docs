@@ -35,11 +35,11 @@ QwenImageDiffsynthControlnet düğümü, bir temel modelin davranışını deği
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Kontrol ağı ile yamalanacak temel model |
-| `model_patch` | MODEL_PATCH | Evet | - | Temel modele uygulanacak kontrol ağı yama modeli |
+| `model_yaması` | MODEL_PATCH | Evet | - | Temel modele uygulanacak kontrol ağı yama modeli |
 | `vae` | VAE | Evet | - | Difüzyon sürecinde kullanılan VAE (Varyasyonel Otomatik Kodlayıcı) |
-| `image` | IMAGE | Evet | - | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü (yalnızca RGB kanalları kullanılır) |
-| `strength` | FLOAT | Evet | -10.0 ila 10.0 | Kontrol ağı etkisinin gücü (varsayılan: 1.0) |
-| `mask` | MASK | Hayır | - | Kontrol ağının uygulanması gereken alanları tanımlayan isteğe bağlı maske (dahili olarak ters çevrilir) |
+| `görsel` | IMAGE | Evet | - | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü (yalnızca RGB kanalları kullanılır) |
+| `güç` | FLOAT | Evet | -10.0 ila 10.0 | Kontrol ağı etkisinin gücü (varsayılan: 1.0) |
+| `maske` | MASK | Hayır | - | Kontrol ağının uygulanması gereken alanları tanımlayan isteğe bağlı maske (dahili olarak ters çevrilir) |
 
 **Not:** Bir maske sağlandığında, otomatik olarak ters çevrilir (1.0 - mask) ve kontrol ağı işlemesi için beklenen boyutlara uyacak şekilde yeniden şekillendirilir. Düğüm, model yamasının bir ZImage Kontrol türü mü yoksa standart bir DiffSynth kontrol ağı mı olduğuna bağlı olarak farklı dahili işleme yöntemleri kullanır.
 

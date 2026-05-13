@@ -10,7 +10,7 @@ CLIPAttentionMultiply düğümü, CLIP modellerinde öz-dikkat katmanlarının f
 | `q` | FLOAT | Evet | 0.0 - 10.0 | Sorgu projeksiyon ağırlıkları ve biasları için çarpma faktörü (varsayılan: 1.0) |
 | `k` | FLOAT | Evet | 0.0 - 10.0 | Anahtar projeksiyon ağırlıkları ve biasları için çarpma faktörü (varsayılan: 1.0) |
 | `v` | FLOAT | Evet | 0.0 - 10.0 | Değer projeksiyon ağırlıkları ve biasları için çarpma faktörü (varsayılan: 1.0) |
-| `out` | FLOAT | Evet | 0.0 - 10.0 | Çıktı projeksiyon ağırlıkları ve biasları için çarpma faktörü (varsayılan: 1.0) |
+| `çıktı` | FLOAT | Evet | 0.0 - 10.0 | Çıktı projeksiyon ağırlıkları ve biasları için çarpma faktörü (varsayılan: 1.0) |
 
 ## Çıktılar
 

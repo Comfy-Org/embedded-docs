@@ -6,7 +6,7 @@
 
 | 字段 | 数据类型 | 描述 |
 |-------------|---------------|-------------|
-| `clip_name` | COMBO[STRING] | 列出 `ComfyUI/models/clip_vision` 文件夹中所有支持的模型文件。 |
+| `clip名称` | COMBO[STRING] | 列出 `ComfyUI/models/clip_vision` 文件夹中所有支持的模型文件。 |
 
 ## 输出
 

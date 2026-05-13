@@ -8,8 +8,8 @@ Bu düğüm, referans görseller yükleyerek görüntü oluşturma için özel b
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `style` | STRING | Evet | `"realistic_image"`<br>`"digital_illustration"` | Oluşturulan görsellerin temel stili. |
-| `images` | IMAGE | Evet | 1 ila 5 görsel | Özel stili oluşturmak için kullanılan 1 ila 5 referans görselden oluşan bir küme. |
+| `stil` | STRING | Evet | `"realistic_image"`<br>`"digital_illustration"` | Oluşturulan görsellerin temel stili. |
+| `görseller` | IMAGE | Evet | 1 ila 5 görsel | Özel stili oluşturmak için kullanılan 1 ila 5 referans görselden oluşan bir küme. |
 
 **Not:** `images` girişindeki tüm görsellerin toplam dosya boyutu 5 MB'tan az olmalıdır. Bu sınır aşılırsa düğüm başarısız olur.
 

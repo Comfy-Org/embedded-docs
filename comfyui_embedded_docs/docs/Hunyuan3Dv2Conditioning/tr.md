@@ -6,7 +6,7 @@ Hunyuan3Dv2Conditioning düğümü, 3B modeller için koşullandırma verileri o
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Evet | - | Görsel yerleştirmeler içeren bir CLIP görüntü modelinin çıktısı |
+| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Evet | - | Görsel yerleştirmeler içeren bir CLIP görüntü modelinin çıktısı |
 
 ## Çıkışlar
 

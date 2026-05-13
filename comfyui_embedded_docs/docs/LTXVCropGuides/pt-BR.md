@@ -6,16 +6,16 @@ O nó LTXVCropGuides processa entradas de condicionamento e latentes para geraç
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | A entrada de condicionamento positivo contendo informações de orientação para a geração |
-| `negative` | CONDITIONING | Sim | - | A entrada de condicionamento negativo contendo informações sobre o que evitar na geração |
+| `positivo` | CONDITIONING | Sim | - | A entrada de condicionamento positivo contendo informações de orientação para a geração |
+| `negativo` | CONDITIONING | Sim | - | A entrada de condicionamento negativo contendo informações sobre o que evitar na geração |
 | `latent` | LATENT | Sim | - | A representação latente contendo amostras de imagem e dados de máscara de ruído |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | O condicionamento positivo processado com índices de keyframes e entradas de atenção guiada limpos |
-| `negative` | CONDITIONING | O condicionamento negativo processado com índices de keyframes e entradas de atenção guiada limpos |
+| `positivo` | CONDITIONING | O condicionamento positivo processado com índices de keyframes e entradas de atenção guiada limpos |
+| `negativo` | CONDITIONING | O condicionamento negativo processado com índices de keyframes e entradas de atenção guiada limpos |
 | `latent` | LATENT | A representação latente recortada com amostras e máscara de ruído ajustadas, onde as seções de keyframes foram removidas |
 
 ---

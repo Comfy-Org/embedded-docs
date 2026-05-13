@@ -15,8 +15,8 @@ HunyuanRefinerLatent düğümü, iyileştirme işlemleri için conditioning ve l
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `positive` | CONDITIONING | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş pozitif conditioning |
-| `negative` | CONDITIONING | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş negatif conditioning |
+| `negative` | CONDITIONING | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş pozitif conditioning |
+| `latent` | CONDITIONING | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş negatif conditioning |
 | `latent` | LATENT | [batch_size, 32, height, width, channels] boyutlarında yeni bir latent çıktısı |
 
 ---

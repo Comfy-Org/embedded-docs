@@ -6,15 +6,15 @@ El nodo Vidu2 de Generación de Video a partir de Referencia crea un video a par
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq2"` | El modelo de IA a utilizar para la generación de video. |
-| `subjects` | AUTOGROW | Sí | N/A | Para cada sujeto, proporciona hasta 3 imágenes de referencia (7 imágenes en total entre todos los sujetos). Haz referencia a ellos en los mensajes mediante `@subject{subject_id}`. |
+| `modelo` | COMBO | Sí | `"viduq2"` | El modelo de IA a utilizar para la generación de video. |
+| `sujetos` | AUTOGROW | Sí | N/A | Para cada sujeto, proporciona hasta 3 imágenes de referencia (7 imágenes en total entre todos los sujetos). Haz referencia a ellos en los mensajes mediante `@subject{subject_id}`. |
 | `prompt` | STRING | Sí | N/A | La descripción textual utilizada para guiar la generación del video. Cuando el parámetro `audio` está habilitado, el video incluirá voz generada y música de fondo basada en este mensaje. |
 | `audio` | BOOLEAN | No | N/A | Cuando está habilitado, el video contendrá voz generada y música de fondo basada en el mensaje (valor predeterminado: `False`). |
-| `duration` | INT | No | 1 a 10 | La duración del video generado en segundos (valor predeterminado: `5`). |
-| `seed` | INT | No | 0 a 2147483647 | Número utilizado para controlar la aleatoriedad de la generación y obtener resultados reproducibles (valor predeterminado: `1`). |
-| `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | La forma del cuadro de video. |
-| `resolution` | COMBO | No | `"720p"`<br>`"1080p"` | La resolución en píxeles del video de salida. |
-| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Controla la amplitud de movimiento de los objetos en el cuadro. |
+| `duración` | INT | No | 1 a 10 | La duración del video generado en segundos (valor predeterminado: `5`). |
+| `semilla` | INT | No | 0 a 2147483647 | Número utilizado para controlar la aleatoriedad de la generación y obtener resultados reproducibles (valor predeterminado: `1`). |
+| `relación_de_aspecto` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | La forma del cuadro de video. |
+| `resolución` | COMBO | No | `"720p"`<br>`"1080p"` | La resolución en píxeles del video de salida. |
+| `amplitud_de_movimiento` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Controla la amplitud de movimiento de los objetos en el cuadro. |
 
 **Restricciones:**
 

@@ -6,7 +6,7 @@ O nó ImageRGBToYUV converte imagens coloridas RGB para o espaço de cores YUV. 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `image` | IMAGE | Sim | - | A imagem RGB de entrada a ser convertida para o espaço de cores YUV |
+| `imagem` | IMAGE | Sim | - | A imagem RGB de entrada a ser convertida para o espaço de cores YUV |
 
 ## Saídas
 

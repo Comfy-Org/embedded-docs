@@ -8,7 +8,7 @@ ModelPatchLoader 節點會從 model_patches 資料夾載入專門的模型修補
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `name` | STRING | 是 | model_patches 資料夾中所有可用的模型修補程式檔案 | 要從 model_patches 目錄載入的模型修補程式檔案名稱 |
+| `名稱` | STRING | 是 | model_patches 資料夾中所有可用的模型修補程式檔案 | 要從 model_patches 目錄載入的模型修補程式檔案名稱 |
 
 ## 輸出
 

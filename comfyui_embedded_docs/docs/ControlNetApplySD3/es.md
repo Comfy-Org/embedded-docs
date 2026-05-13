@@ -8,21 +8,21 @@ Este nodo aplica la guía de ControlNet al condicionamiento de Stable Diffusion 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | El condicionamiento positivo al que se aplicará la guía de ControlNet |
-| `negative` | CONDITIONING | Sí | - | El condicionamiento negativo al que se aplicará la guía de ControlNet |
+| `positivo` | CONDITIONING | Sí | - | El condicionamiento positivo al que se aplicará la guía de ControlNet |
+| `negativo` | CONDITIONING | Sí | - | El condicionamiento negativo al que se aplicará la guía de ControlNet |
 | `control_net` | CONTROL_NET | Sí | - | El modelo ControlNet que se utilizará para la guía |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado en el proceso |
-| `image` | IMAGE | Sí | - | La imagen de entrada que ControlNet utilizará como guía |
-| `strength` | FLOAT | Sí | 0.0 - 10.0 | La intensidad del efecto de ControlNet (predeterminado: 1.0) |
-| `start_percent` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio en el proceso de generación donde ControlNet comienza a aplicarse (predeterminado: 0.0) |
-| `end_percent` | FLOAT | Sí | 0.0 - 1.0 | El punto final en el proceso de generación donde ControlNet deja de aplicarse (predeterminado: 1.0) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que ControlNet utilizará como guía |
+| `fuerza` | FLOAT | Sí | 0.0 - 10.0 | La intensidad del efecto de ControlNet (predeterminado: 1.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio en el proceso de generación donde ControlNet comienza a aplicarse (predeterminado: 0.0) |
+| `porcentaje_final` | FLOAT | Sí | 0.0 - 1.0 | El punto final en el proceso de generación donde ControlNet deja de aplicarse (predeterminado: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo modificado con la guía de ControlNet aplicada |
-| `negative` | CONDITIONING | El condicionamiento negativo modificado con la guía de ControlNet aplicada |
+| `negativo` | CONDITIONING | El condicionamiento positivo modificado con la guía de ControlNet aplicada |
+| `negativo` | CONDITIONING | El condicionamiento negativo modificado con la guía de ControlNet aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

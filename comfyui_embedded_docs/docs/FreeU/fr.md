@@ -8,7 +8,7 @@ Le nœud FreeU applique des modifications dans le domaine fréquentiel aux blocs
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer les modifications FreeU |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer les modifications FreeU |
 | `b1` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle du backbone pour les caractéristiques model_channels × 4 (par défaut : 1.1) |
 | `b2` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle du backbone pour les caractéristiques model_channels × 2 (par défaut : 1.2) |
 | `s1` | FLOAT | Oui | 0.0 - 10.0 | Facteur d'échelle de la connexion de saut pour les caractéristiques model_channels × 4 (par défaut : 0.9) |
@@ -18,7 +18,7 @@ Le nœud FreeU applique des modifications dans le domaine fréquentiel aux blocs
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec les correctifs FreeU appliqués |
+| `modèle` | MODEL | Le modèle modifié avec les correctifs FreeU appliqués |
 
 ---
 **Source fingerprint (SHA-256):** `449a02a4bb5b42eb37fab394bcdc6375e08e369961d633618211ebc5f737ab51`

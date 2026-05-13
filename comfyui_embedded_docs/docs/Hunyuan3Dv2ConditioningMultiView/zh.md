@@ -6,10 +6,10 @@ Hunyuan3Dv2ConditioningMultiView 节点处理用于 3D 视频生成的多视角 
 
 | 参数 | 数据类型 | 是否必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `front` | CLIP_VISION_OUTPUT | 否 | - | 正面视角的 CLIP 视觉输出 |
-| `left` | CLIP_VISION_OUTPUT | 否 | - | 左侧视角的 CLIP 视觉输出 |
-| `back` | CLIP_VISION_OUTPUT | 否 | - | 背面视角的 CLIP 视觉输出 |
-| `right` | CLIP_VISION_OUTPUT | 否 | - | 右侧视角的 CLIP 视觉输出 |
+| `前` | CLIP_VISION_OUTPUT | 否 | - | 正面视角的 CLIP 视觉输出 |
+| `左` | CLIP_VISION_OUTPUT | 否 | - | 左侧视角的 CLIP 视觉输出 |
+| `后` | CLIP_VISION_OUTPUT | 否 | - | 背面视角的 CLIP 视觉输出 |
+| `右` | CLIP_VISION_OUTPUT | 否 | - | 右侧视角的 CLIP 视觉输出 |
 
 **注意：** 节点正常运行至少需要提供一个视角输入。节点仅处理包含有效 CLIP 视觉输出数据的视角。
 
@@ -17,7 +17,7 @@ Hunyuan3Dv2ConditioningMultiView 节点处理用于 3D 视频生成的多视角 
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 包含组合后的多视角嵌入及位置编码的正向条件数据 |
+| `反向` | CONDITIONING | 包含组合后的多视角嵌入及位置编码的正向条件数据 |
 | `negative` | CONDITIONING | 用于对比学习的、值为零的负向条件数据 |
 
 ---

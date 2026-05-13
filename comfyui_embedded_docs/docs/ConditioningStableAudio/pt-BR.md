@@ -6,17 +6,17 @@ O nó ConditioningStableAudio adiciona informações de temporização às entra
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | A entrada de condicionamento positivo a ser modificada com informações de temporização de áudio |
-| `negative` | CONDITIONING | Sim | - | A entrada de condicionamento negativo a ser modificada com informações de temporização de áudio |
-| `seconds_start` | FLOAT | Sim | 0.0 a 1000.0 | O tempo de início em segundos para geração de áudio (padrão: 0.0) |
-| `seconds_total` | FLOAT | Sim | 0.0 a 1000.0 | A duração total em segundos para geração de áudio (padrão: 47.0) |
+| `positivo` | CONDITIONING | Sim | - | A entrada de condicionamento positivo a ser modificada com informações de temporização de áudio |
+| `negativo` | CONDITIONING | Sim | - | A entrada de condicionamento negativo a ser modificada com informações de temporização de áudio |
+| `segundos_início` | FLOAT | Sim | 0.0 a 1000.0 | O tempo de início em segundos para geração de áudio (padrão: 0.0) |
+| `segundos_total` | FLOAT | Sim | 0.0 a 1000.0 | A duração total em segundos para geração de áudio (padrão: 47.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | O condicionamento positivo modificado com informações de temporização de áudio aplicadas |
-| `negative` | CONDITIONING | O condicionamento negativo modificado com informações de temporização de áudio aplicadas |
+| `positivo` | CONDITIONING | O condicionamento positivo modificado com informações de temporização de áudio aplicadas |
+| `negativo` | CONDITIONING | O condicionamento negativo modificado com informações de temporização de áudio aplicadas |
 
 ---
 **Source fingerprint (SHA-256):** `ad4fdb2ac536e4f9cc23c044a7a63333e3f3530cc782937eaedc1565cc7c5d0e`

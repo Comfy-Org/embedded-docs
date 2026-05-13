@@ -8,10 +8,10 @@ Le nœud Save Checkpoint est principalement utilisé dans les workflows de fusio
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model` | MODEL | Le paramètre model représente le modèle principal dont l'état doit être sauvegardé. Il est essentiel pour capturer l'état actuel du modèle en vue d'une restauration ou d'une analyse ultérieure. |
+| `modèle` | MODEL | Le paramètre model représente le modèle principal dont l'état doit être sauvegardé. Il est essentiel pour capturer l'état actuel du modèle en vue d'une restauration ou d'une analyse ultérieure. |
 | `clip` | CLIP | Le paramètre clip est destiné au modèle CLIP associé au modèle principal, permettant de sauvegarder son état en même temps que le modèle principal. |
 | `vae` | VAE | Le paramètre vae est destiné au modèle d'autoencodeur variationnel (VAE), permettant de sauvegarder son état pour une utilisation ou une analyse future, en même temps que le modèle principal et le CLIP. |
-| `filename_prefix` | STRING | Ce paramètre spécifie le préfixe du nom de fichier sous lequel le point de contrôle sera sauvegardé. |
+| `préfixe_nom_fichier` | STRING | Ce paramètre spécifie le préfixe du nom de fichier sous lequel le point de contrôle sera sauvegardé. |
 
 De plus, le nœud dispose de deux entrées cachées pour les métadonnées :
 

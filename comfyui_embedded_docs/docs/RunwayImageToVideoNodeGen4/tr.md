@@ -7,10 +7,10 @@ Runway Görüntüden Videoya (Gen4 Turbo) düğümü, Runway'in Gen4 Turbo model
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Evet | - | Oluşturma için metin istemi (varsayılan: boş dize) |
-| `start_frame` | IMAGE | Evet | - | Video için kullanılacak başlangıç karesi |
-| `duration` | COMBO | Evet | `"5"`<br>`"10"` | Video süresi saniye cinsinden (varsayılan: "5") |
-| `ratio` | COMBO | Evet | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Oluşturulan video için en boy oranı (varsayılan: "1024:1024") |
-| `seed` | INT | Hayır | 0 ile 4294967295 arası | Oluşturma için rastgele tohum değeri (varsayılan: 0) |
+| `başlangıç_karesi` | IMAGE | Evet | - | Video için kullanılacak başlangıç karesi |
+| `süre` | COMBO | Evet | `"5"`<br>`"10"` | Video süresi saniye cinsinden (varsayılan: "5") |
+| `oran` | COMBO | Evet | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Oluşturulan video için en boy oranı (varsayılan: "1024:1024") |
+| `tohum` | INT | Hayır | 0 ile 4294967295 arası | Oluşturma için rastgele tohum değeri (varsayılan: 0) |
 
 **Parametre Kısıtlamaları:**
 

@@ -7,12 +7,12 @@ ScaleROPE düğümü, bir modelin Döner Konum Gömme (ROPE) parametrelerini X, 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | ROPE parametreleri değiştirilecek model. |
-| `scale_x` | FLOAT | Hayır | 0.0 - 100.0 | ROPE'un X bileşenine uygulanacak ölçekleme faktörü (varsayılan: 1.0). |
-| `shift_x` | FLOAT | Hayır | -256.0 - 256.0 | ROPE'un X bileşenine uygulanacak kaydırma değeri (varsayılan: 0.0). |
-| `scale_y` | FLOAT | Hayır | 0.0 - 100.0 | ROPE'un Y bileşenine uygulanacak ölçekleme faktörü (varsayılan: 1.0). |
-| `shift_y` | FLOAT | Hayır | -256.0 - 256.0 | ROPE'un Y bileşenine uygulanacak kaydırma değeri (varsayılan: 0.0). |
-| `scale_t` | FLOAT | Hayır | 0.0 - 100.0 | ROPE'un T (zaman) bileşenine uygulanacak ölçekleme faktörü (varsayılan: 1.0). |
-| `shift_t` | FLOAT | Hayır | -256.0 - 256.0 | ROPE'un T (zaman) bileşenine uygulanacak kaydırma değeri (varsayılan: 0.0). |
+| `x_ölçeği` | FLOAT | Hayır | 0.0 - 100.0 | ROPE'un X bileşenine uygulanacak ölçekleme faktörü (varsayılan: 1.0). |
+| `x_kaydırma` | FLOAT | Hayır | -256.0 - 256.0 | ROPE'un X bileşenine uygulanacak kaydırma değeri (varsayılan: 0.0). |
+| `y_ölçeği` | FLOAT | Hayır | 0.0 - 100.0 | ROPE'un Y bileşenine uygulanacak ölçekleme faktörü (varsayılan: 1.0). |
+| `y_kaydırma` | FLOAT | Hayır | -256.0 - 256.0 | ROPE'un Y bileşenine uygulanacak kaydırma değeri (varsayılan: 0.0). |
+| `t_ölçeği` | FLOAT | Hayır | 0.0 - 100.0 | ROPE'un T (zaman) bileşenine uygulanacak ölçekleme faktörü (varsayılan: 1.0). |
+| `t_kaydırma` | FLOAT | Hayır | -256.0 - 256.0 | ROPE'un T (zaman) bileşenine uygulanacak kaydırma değeri (varsayılan: 0.0). |
 
 ## Çıktılar
 

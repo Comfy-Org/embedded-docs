@@ -6,13 +6,13 @@ Este nodo desactiva por completo la funcionalidad de guía integrada para Flux y
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `conditioning` | CONDITIONING | Sí | - | Los datos de condicionamiento a procesar y de los cuales eliminar la guía |
+| `acondicionamiento` | CONDITIONING | Sí | - | Los datos de condicionamiento a procesar y de los cuales eliminar la guía |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `conditioning` | CONDITIONING | Los datos de condicionamiento modificados con la guía desactivada |
+| `acondicionamiento` | CONDITIONING | Los datos de condicionamiento modificados con la guía desactivada |
 
 ---
 **Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`

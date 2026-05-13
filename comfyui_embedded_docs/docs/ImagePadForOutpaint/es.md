@@ -6,16 +6,16 @@ Este nodo está diseñado para preparar imágenes para el proceso de outpainting
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La entrada 'image' es la imagen principal que se preparará para outpainting, sirviendo como base para las operaciones de relleno. |
-| `left`    | `INT`       | Especifica la cantidad de relleno que se añadirá al lado izquierdo de la imagen, influyendo en el área expandida para outpainting. |
-| `top`     | `INT`       | Determina la cantidad de relleno que se añadirá en la parte superior de la imagen, afectando la expansión vertical para outpainting. |
-| `right`   | `INT`       | Define la cantidad de relleno que se añadirá al lado derecho de la imagen, impactando la expansión horizontal para outpainting. |
-| `bottom`  | `INT`       | Indica la cantidad de relleno que se añadirá en la parte inferior de la imagen, contribuyendo a la expansión vertical para outpainting. |
-| `feathering` | `INT` | Controla la suavidad de la transición entre la imagen original y el relleno añadido, mejorando la integración visual para outpainting. |
+| `imagen`   | `IMAGE`     | La entrada 'image' es la imagen principal que se preparará para outpainting, sirviendo como base para las operaciones de relleno. |
+| `izquierda`    | `INT`       | Especifica la cantidad de relleno que se añadirá al lado izquierdo de la imagen, influyendo en el área expandida para outpainting. |
+| `arriba`     | `INT`       | Determina la cantidad de relleno que se añadirá en la parte superior de la imagen, afectando la expansión vertical para outpainting. |
+| `derecha`   | `INT`       | Define la cantidad de relleno que se añadirá al lado derecho de la imagen, impactando la expansión horizontal para outpainting. |
+| `abajo`  | `INT`       | Indica la cantidad de relleno que se añadirá en la parte inferior de la imagen, contribuyendo a la expansión vertical para outpainting. |
+| `difuminado` | `INT` | Controla la suavidad de la transición entre la imagen original y el relleno añadido, mejorando la integración visual para outpainting. |
 
 ## Outputs
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La salida 'image' representa la imagen con relleno, lista para el proceso de outpainting. |
+| `imagen`   | `IMAGE`     | La salida 'image' representa la imagen con relleno, lista para el proceso de outpainting. |
 | `mask`    | `MASK`      | La salida 'mask' indica las áreas de la imagen original y el relleno añadido, útil para guiar los algoritmos de outpainting. |

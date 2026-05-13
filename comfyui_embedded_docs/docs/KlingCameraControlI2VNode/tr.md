@@ -34,19 +34,19 @@ Kling Görüntüden Videoya Kamera Kontrol Düğümü, hareketsiz görüntüleri
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `start_frame` | IMAGE | Evet | - | Referans Görüntü - URL veya Base64 kodlanmış dize, 10MB'ı geçemez, çözünürlük 300x300 pikselden az olamaz, en boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. Base64, data:image önekini içermemelidir. |
-| `prompt` | STRING | Evet | - | İstenen video içeriğini tanımlayan olumlu metin istemi |
-| `negative_prompt` | STRING | Evet | - | Oluşturulan videoda nelerden kaçınılacağını tanımlayan olumsuz metin istemi |
-| `cfg_scale` | FLOAT | Hayır | 0,0 ile 1,0 | Metin yönlendirmesinin gücünü kontrol eder. Daha yüksek değerler, çıktının istemi daha yakından takip etmesini sağlar (varsayılan: 0,75) |
-| `aspect_ratio` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan videonun en boy oranı (varsayılan: "16:9") |
-| `camera_control` | CAMERA_CONTROL | Evet | - | Kling Kamera Kontrolleri düğümü kullanılarak oluşturulabilir. Video oluşturma sırasında kamera hareketini ve hareketliliği kontrol eder. |
+| `başlangıç_karesi` | IMAGE | Evet | - | Referans Görüntü - URL veya Base64 kodlanmış dize, 10MB'ı geçemez, çözünürlük 300x300 pikselden az olamaz, en boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. Base64, data:image önekini içermemelidir. |
+| `istem` | STRING | Evet | - | İstenen video içeriğini tanımlayan olumlu metin istemi |
+| `negatif_istem` | STRING | Evet | - | Oluşturulan videoda nelerden kaçınılacağını tanımlayan olumsuz metin istemi |
+| `cfg_ölçeği` | FLOAT | Hayır | 0,0 ile 1,0 | Metin yönlendirmesinin gücünü kontrol eder. Daha yüksek değerler, çıktının istemi daha yakından takip etmesini sağlar (varsayılan: 0,75) |
+| `en_boy_oranı` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan videonun en boy oranı (varsayılan: "16:9") |
+| `kamera_kontrolü` | CAMERA_CONTROL | Evet | - | Kling Kamera Kontrolleri düğümü kullanılarak oluşturulabilir. Video oluşturma sırasında kamera hareketini ve hareketliliği kontrol eder. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video çıktısı |
-| `video_id` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Oluşturulan video çıktısı |
+| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
 | `duration` | STRING | Oluşturulan videonun süresi |
 
 ---

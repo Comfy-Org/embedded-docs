@@ -16,7 +16,7 @@ Ce nœud mélange une liste d'images et une liste de textes ensemble, tout en co
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `images` | IMAGE | La liste mélangée d'images. |
+| `texts` | IMAGE | La liste mélangée d'images. |
 | `texts` | STRING | La liste mélangée de textes, conservant leurs appariements d'origine avec les images. |
 
 ---

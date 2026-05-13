@@ -8,17 +8,17 @@ Bu düğüm, bir dizi görüntüyü ve isteğe bağlı bir ses parçasını alar
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `images` | IMAGE | Evet | Yok | Parçalara ayrılacak giriş görüntü dizisi. |
-| `segment_length` | INT | Evet | 1 ila 10000 | Kare cinsinden her parçanın uzunluğu (varsayılan: 149). |
-| `num_segments` | INT | Evet | 1 ila 100 | Liste olarak yayınlanacak dolgulu parça sayısı (varsayılan: 1). |
-| `audio` | AUDIO | Hayır | Yok | Yayınlanan her parça için dilimlenecek ses. |
+| `görseller` | IMAGE | Evet | Yok | Parçalara ayrılacak giriş görüntü dizisi. |
+| `segment_uzunluğu` | INT | Evet | 1 ila 10000 | Kare cinsinden her parçanın uzunluğu (varsayılan: 149). |
+| `segment_sayısı` | INT | Evet | 1 ila 100 | Liste olarak yayınlanacak dolgulu parça sayısı (varsayılan: 1). |
+| `ses` | AUDIO | Hayır | Yok | Yayınlanan her parça için dilimlenecek ses. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `keyframes_sequence` | IMAGE | Her parça için bir tane olmak üzere dolgulu anahtar kare dizilerinin listesi. |
-| `keyframes_mask` | MASK | Her parça için geçerli kareleri belirten maskelerin listesi. |
+| `anahtar_kare_maskeleri` | IMAGE | Her parça için bir tane olmak üzere dolgulu anahtar kare dizilerinin listesi. |
+| `ses_segmenti` | MASK | Her parça için geçerli kareleri belirten maskelerin listesi. |
 | `audio_segment` | AUDIO | Her video parçası için bir tane olmak üzere ses parçalarının listesi. |
 
 ---

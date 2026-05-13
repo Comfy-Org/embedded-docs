@@ -7,8 +7,8 @@ Ce nœud ajuste les valeurs des pixels d'une image d'entrée en utilisant un pro
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à normaliser. |
-| `mean` | FLOAT | Non | 0,0 - 1,0 | Valeur moyenne pour la normalisation (par défaut : 0,5). |
-| `std` | FLOAT | Non | 0,001 - 1,0 | Écart type pour la normalisation (par défaut : 0,5). |
+| `moyenne` | FLOAT | Non | 0,0 - 1,0 | Valeur moyenne pour la normalisation (par défaut : 0,5). |
+| `écart_type` | FLOAT | Non | 0,001 - 1,0 | Écart type pour la normalisation (par défaut : 0,5). |
 
 ## Sorties
 

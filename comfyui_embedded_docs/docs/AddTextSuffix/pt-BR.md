@@ -7,7 +7,7 @@ Este nó anexa um sufixo especificado ao final de uma string de texto de entrada
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `text` | STRING | Sim | | O texto original ao qual o sufixo será adicionado. |
-| `suffix` | STRING | Não | | O sufixo a ser adicionado ao texto (padrão: ""). |
+| `sufixo` | STRING | Não | | O sufixo a ser adicionado ao texto (padrão: ""). |
 
 ## Saídas
 

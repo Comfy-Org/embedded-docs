@@ -6,7 +6,7 @@ AudioEncoderLoader düğümü, ses kodlayıcılar klasörünüzdeki bir dosyadan
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio_encoder_name` | STRING | Evet | audio_encoders klasöründeki mevcut ses kodlayıcı dosyalarının listesi | Hangi ses kodlayıcı model dosyasının yükleneceğini seçer |
+| `ses_kodlayıcı_adı` | STRING | Evet | audio_encoders klasöründeki mevcut ses kodlayıcı dosyalarının listesi | Hangi ses kodlayıcı model dosyasının yükleneceğini seçer |
 
 ## Çıktılar
 

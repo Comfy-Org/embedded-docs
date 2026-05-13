@@ -10,10 +10,10 @@ Le nœud Kling Lip Sync Text to Video synchronise les mouvements des lèvres dan
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | - | Fichier vidéo d'entrée pour la synchronisation labiale |
-| `text` | STRING | Oui | - | Contenu textuel pour la génération vidéo labiale synchronisée. Requis lorsque le mode est text2video. Longueur maximale de 120 caractères. |
-| `voice` | COMBO | Non | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Sélection de la voix pour l'audio de synchronisation labiale (par défaut : "Melody") |
-| `voice_speed` | FLOAT | Non | 0.8-2.0 | Débit de parole. Plage valide : 0,8~2,0, précis à une décimale près. (par défaut : 1) |
+| `vidéo` | VIDEO | Oui | - | Fichier vidéo d'entrée pour la synchronisation labiale |
+| `texte` | STRING | Oui | - | Contenu textuel pour la génération vidéo labiale synchronisée. Requis lorsque le mode est text2video. Longueur maximale de 120 caractères. |
+| `voix` | COMBO | Non | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Sélection de la voix pour l'audio de synchronisation labiale (par défaut : "Melody") |
+| `vitesse de la voix` | FLOAT | Non | 0.8-2.0 | Débit de parole. Plage valide : 0,8~2,0, précis à une décimale près. (par défaut : 1) |
 
 **Exigences vidéo :**
 
@@ -25,8 +25,8 @@ Le nœud Kling Lip Sync Text to Video synchronise les mouvements des lèvres dan
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `output` | VIDEO | Vidéo générée avec audio synchronisé sur les lèvres |
-| `video_id` | STRING | Identifiant unique de la vidéo générée |
+| `id_vidéo` | VIDEO | Vidéo générée avec audio synchronisé sur les lèvres |
+| `durée` | STRING | Identifiant unique de la vidéo générée |
 | `duration` | STRING | Informations sur la durée de la vidéo générée |
 
 ---

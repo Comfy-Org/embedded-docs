@@ -6,8 +6,8 @@ Le nœud WanMoveTracksFromCoords crée des trajectoires de mouvement à partir d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `track_coords` | STRING | Non | N/A | Une chaîne au format JSON contenant les données de coordonnées pour les trajectoires. La valeur par défaut est une liste vide (`"[]"`). |
-| `track_mask` | MASK | Non | N/A | Un masque optionnel. Lorsqu'il est fourni, le nœud l'utilise pour déterminer la visibilité de chaque trajectoire par image. |
+| `coordonnées_piste` | STRING | Non | N/A | Une chaîne au format JSON contenant les données de coordonnées pour les trajectoires. La valeur par défaut est une liste vide (`"[]"`). |
+| `masque_piste` | MASK | Non | N/A | Un masque optionnel. Lorsqu'il est fourni, le nœud l'utilise pour déterminer la visibilité de chaque trajectoire par image. |
 
 **Remarque :** L'entrée `track_coords` attend une structure JSON spécifique. Il doit s'agir d'une liste de trajectoires, où chaque trajectoire est une liste d'images, et chaque image est un objet avec des coordonnées `x` et `y`. Le nombre d'images doit être cohérent pour toutes les trajectoires.
 
@@ -15,7 +15,7 @@ Le nœud WanMoveTracksFromCoords crée des trajectoires de mouvement à partir d
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `tracks` | TRACKS | Les données de trajectoire générées, contenant les coordonnées du chemin et les informations de visibilité pour chaque trajectoire. |
+| `longueur_piste` | TRACKS | Les données de trajectoire générées, contenant les coordonnées du chemin et les informations de visibilité pour chaque trajectoire. |
 | `track_length` | INT | Le nombre total d'images dans les trajectoires générées. |
 
 ---

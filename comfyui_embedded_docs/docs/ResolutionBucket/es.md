@@ -6,8 +6,8 @@ Este nodo organiza una lista de imágenes latentes y sus datos de condicionamien
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `latents` | LATENT | Sí | N/A | Lista de diccionarios latentes para agrupar por resolución. |
-| `conditioning` | CONDITIONING | Sí | N/A | Lista de listas de condicionamiento (debe coincidir con la longitud de latentes). |
+| `latentes` | LATENT | Sí | N/A | Lista de diccionarios latentes para agrupar por resolución. |
+| `condicionamiento` | CONDITIONING | Sí | N/A | Lista de listas de condicionamiento (debe coincidir con la longitud de latentes). |
 
 **Nota:** La cantidad de elementos en la lista `latents` debe coincidir exactamente con la cantidad de elementos en la lista `conditioning`. Cada diccionario latente puede contener un lote de muestras, y la lista de condicionamiento correspondiente debe contener una cantidad coincidente de elementos de condicionamiento para ese lote.
 
@@ -15,8 +15,8 @@ Este nodo organiza una lista de imágenes latentes y sus datos de condicionamien
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `latents` | LATENT | Lista de diccionarios latentes agrupados en lotes, uno por grupo de resolución. |
-| `conditioning` | CONDITIONING | Lista de listas de condicionamiento, una por grupo de resolución. |
+| `condicionamiento` | LATENT | Lista de diccionarios latentes agrupados en lotes, uno por grupo de resolución. |
+| `condicionamiento` | CONDITIONING | Lista de listas de condicionamiento, una por grupo de resolución. |
 
 ---
 **Source fingerprint (SHA-256):** `2858de5f0827812002ca72ba5d7ce56411d1ef97e9a12a65fc4bea193a1a0ec0`

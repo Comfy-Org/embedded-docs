@@ -7,9 +7,9 @@ Video Slice düğümü, bir videodan belirli bir bölümü çıkarmanızı sağl
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | Kırpılacak giriş videosu. |
-| `start_time` | FLOAT | Hayır | -1e5 ila 1e5 | Saniye cinsinden başlangıç zamanı (varsayılan: 0.0). |
-| `duration` | FLOAT | Hayır | 0.0 ve üzeri | Saniye cinsinden süre veya sınırsız süre için 0 (varsayılan: 0.0). |
-| `strict_duration` | BOOLEAN | Hayır | - | True ise, belirtilen süre mümkün olmadığında bir hata oluşturulur (varsayılan: False). |
+| `başlangıç zamanı` | FLOAT | Hayır | -1e5 ila 1e5 | Saniye cinsinden başlangıç zamanı (varsayılan: 0.0). |
+| `süre` | FLOAT | Hayır | 0.0 ve üzeri | Saniye cinsinden süre veya sınırsız süre için 0 (varsayılan: 0.0). |
+| `kesin süre` | BOOLEAN | Hayır | - | True ise, belirtilen süre mümkün olmadığında bir hata oluşturulur (varsayılan: False). |
 
 ## Çıkışlar
 

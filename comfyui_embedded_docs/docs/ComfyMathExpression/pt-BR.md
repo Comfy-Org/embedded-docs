@@ -6,8 +6,8 @@ O nó ComfyMathExpression avalia uma fórmula matemática usando um conjunto de 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `expression` | STRING | Sim | N/A | A fórmula matemática a ser avaliada. Você pode usar nomes de variáveis que correspondam aos valores de entrada (padrão: "a + b"). |
-| `values` | FLOAT, INT, BOOLEAN | Não | N/A | Um conjunto de entradas numéricas ou booleanas que podem ser adicionadas dinamicamente. Cada entrada recebe uma letra do alfabeto (a, b, c, ...) para ser usada como variável na expressão. |
+| `expressão` | STRING | Sim | N/A | A fórmula matemática a ser avaliada. Você pode usar nomes de variáveis que correspondam aos valores de entrada (padrão: "a + b"). |
+| `valores` | FLOAT, INT, BOOLEAN | Não | N/A | Um conjunto de entradas numéricas ou booleanas que podem ser adicionadas dinamicamente. Cada entrada recebe uma letra do alfabeto (a, b, c, ...) para ser usada como variável na expressão. |
 
 **Restrições dos Parâmetros:**
 *   O parâmetro `expression` não pode estar vazio ou conter apenas espaços em branco.

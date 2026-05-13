@@ -7,7 +7,7 @@ El nodo `CLIPSave` guarda un modelo de codificador de texto CLIP en disco en for
 | Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
 |-----------|--------------|-----------------|-------------------|-------|-------------|
 | `clip` | CLIP | Requerido | - | - | El modelo CLIP que se va a guardar. |
-| `filename_prefix` | STRING | Requerido | `clip/ComfyUI` | - | La ruta de prefijo y nombre de archivo para los archivos guardados. El nodo añadirá un sufijo de componente (ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos. |
+| `prefijo_nombre_archivo` | STRING | Requerido | `clip/ComfyUI` | - | La ruta de prefijo y nombre de archivo para los archivos guardados. El nodo añadirá un sufijo de componente (ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos. |
 | `prompt` | PROMPT | Oculto | - | - | La información del prompt del flujo de trabajo, guardada como metadatos en el archivo de salida. |
 | `extra_pnginfo` | EXTRA_PNGINFO | Oculto | - | - | Metadatos adicionales, guardados como pares clave-valor en el archivo de salida. |
 

@@ -7,8 +7,8 @@ Le nœud ImageAddNoise ajoute un bruit aléatoire à une image d'entrée. Il uti
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à laquelle le bruit sera ajouté |
-| `seed` | INT | Oui | 0 à 18446744073709551615 | La graine aléatoire utilisée pour générer le bruit (par défaut : 0) |
-| `strength` | FLOAT | Oui | 0.0 à 1.0 | Contrôle l'intensité de l'effet de bruit (par défaut : 0.5) |
+| `graine` | INT | Oui | 0 à 18446744073709551615 | La graine aléatoire utilisée pour générer le bruit (par défaut : 0) |
+| `intensité` | FLOAT | Oui | 0.0 à 1.0 | Contrôle l'intensité de l'effet de bruit (par défaut : 0.5) |
 
 ## Sorties
 

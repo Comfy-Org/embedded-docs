@@ -7,13 +7,13 @@ El nodo `TextEncodeZImageOmni` es un nodo de condicionamiento avanzado que codif
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
 | `clip` | CLIP | Sí | | El modelo CLIP utilizado para tokenizar y codificar el mensaje de texto. |
-| `image_encoder` | CLIPVision | No | | Un modelo de codificador de visión opcional. Si se proporciona, se utilizará para codificar las imágenes de entrada, y las incrustaciones resultantes se agregarán al condicionamiento. |
-| `prompt` | STRING | Sí | | El mensaje de texto a codificar. Este campo admite entrada multilínea y mensajes dinámicos. |
-| `auto_resize_images` | BOOLEAN | No | | Cuando está habilitado (por defecto: Verdadero), las imágenes de entrada se redimensionarán automáticamente según su área de píxeles antes de pasarse al VAE para su codificación. |
+| `codificador_de_imagen` | CLIPVision | No | | Un modelo de codificador de visión opcional. Si se proporciona, se utilizará para codificar las imágenes de entrada, y las incrustaciones resultantes se agregarán al condicionamiento. |
+| `instrucción` | STRING | Sí | | El mensaje de texto a codificar. Este campo admite entrada multilínea y mensajes dinámicos. |
+| `auto_redimensionar_imágenes` | BOOLEAN | No | | Cuando está habilitado (por defecto: Verdadero), las imágenes de entrada se redimensionarán automáticamente según su área de píxeles antes de pasarse al VAE para su codificación. |
 | `vae` | VAE | No | | Un modelo VAE opcional. Si se proporciona, se utilizará para codificar las imágenes de entrada en representaciones latentes, que se agregan al condicionamiento como latentes de referencia. |
-| `image1` | IMAGE | No | | La primera imagen de referencia opcional. |
-| `image2` | IMAGE | No | | La segunda imagen de referencia opcional. |
-| `image3` | IMAGE | No | | La tercera imagen de referencia opcional. |
+| `imagen1` | IMAGE | No | | La primera imagen de referencia opcional. |
+| `imagen2` | IMAGE | No | | La segunda imagen de referencia opcional. |
+| `imagen3` | IMAGE | No | | La tercera imagen de referencia opcional. |
 
 **Nota:** El nodo puede aceptar un máximo de tres imágenes (`image1`, `image2`, `image3`). Las entradas `image_encoder` y `vae` solo se utilizan si se proporciona al menos una imagen. Cuando `auto_resize_images` es Verdadero y hay un `vae` conectado, las imágenes se redimensionan para tener un área total de píxeles cercana a 1024x1024 antes de la codificación.
 

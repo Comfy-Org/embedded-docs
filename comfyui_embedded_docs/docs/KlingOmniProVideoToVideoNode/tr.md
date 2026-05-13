@@ -14,7 +14,7 @@ Bu düğüm, bir girdi videosu ve isteğe bağlı referans görüntülerine daya
 | `keep_original_sound` | BOOLEAN | Evet | Yok | Referans videodaki sesin çıktıda korunup korunmayacağını belirler (varsayılan: True). |
 | `reference_images` | IMAGE | Hayır | Yok | En fazla 4 adet ek referans görüntüsü. |
 | `resolution` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Oluşturulan video için çözünürlük (varsayılan: "1080p"). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Tohum (seed), düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Tohum (seed), düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
 
 **Parametre Kısıtlamaları:**
 

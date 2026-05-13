@@ -6,16 +6,16 @@ PairConditioningCombine düğümü, iki ayrı koşullandırma çiftini (her biri
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive_A` | CONDITIONING | Evet | - | Birinci pozitif koşullandırma girişi |
-| `negative_A` | CONDITIONING | Evet | - | Birinci negatif koşullandırma girişi |
-| `positive_B` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girişi |
-| `negative_B` | CONDITIONING | Evet | - | İkinci negatif koşullandırma girişi |
+| `pozitif_A` | CONDITIONING | Evet | - | Birinci pozitif koşullandırma girişi |
+| `negatif_A` | CONDITIONING | Evet | - | Birinci negatif koşullandırma girişi |
+| `pozitif_B` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girişi |
+| `negatif_B` | CONDITIONING | Evet | - | İkinci negatif koşullandırma girişi |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `positive` | CONDITIONING | Birleştirilmiş pozitif koşullandırma çıktısı |
+| `negatif` | CONDITIONING | Birleştirilmiş pozitif koşullandırma çıktısı |
 | `negative` | CONDITIONING | Birleştirilmiş negatif koşullandırma çıktısı |
 
 ---

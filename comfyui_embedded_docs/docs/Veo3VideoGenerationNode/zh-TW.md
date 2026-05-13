@@ -6,16 +6,16 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 影片的文字描述（預設值：""） |
-| `aspect_ratio` | COMBO | 是 | "16:9"<br>"9:16" | 輸出影片的長寬比（預設值："16:9"） |
-| `resolution` | COMBO | 否 | "720p"<br>"1080p"<br>"4k" | 輸出影片解析度。veo-3.1-lite 和 veo-3.0 模型不支援 4K。（預設值："720p"） |
-| `negative_prompt` | STRING | 否 | - | 負面文字提示，用於引導影片中應避免的內容（預設值：""） |
-| `duration_seconds` | INT | 否 | 4-8 | 輸出影片的持續時間（秒），以 2 為步進單位（預設值：8） |
-| `enhance_prompt` | BOOLEAN | 否 | - | 此參數已棄用且被忽略。（預設值：True） |
-| `person_generation` | COMBO | 否 | "ALLOW"<br>"BLOCK" | 是否允許在影片中生成人物（預設值："ALLOW"） |
-| `seed` | INT | 否 | 0-4294967295 | 影片生成的隨機種子（0 表示隨機）（預設值：0） |
-| `image` | IMAGE | 否 | - | 可選的參考圖片，用於引導影片生成 |
-| `model` | COMBO | 否 | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | 用於影片生成的 Veo 3 模型（預設值："veo-3.0-generate-001"） |
+| `提示詞` | STRING | 是 | - | 影片的文字描述（預設值：""） |
+| `長寬比` | COMBO | 是 | "16:9"<br>"9:16" | 輸出影片的長寬比（預設值："16:9"） |
+| `解析度` | COMBO | 否 | "720p"<br>"1080p"<br>"4k" | 輸出影片解析度。veo-3.1-lite 和 veo-3.0 模型不支援 4K。（預設值："720p"） |
+| `負向提示詞` | STRING | 否 | - | 負面文字提示，用於引導影片中應避免的內容（預設值：""） |
+| `持續時間（秒）` | INT | 否 | 4-8 | 輸出影片的持續時間（秒），以 2 為步進單位（預設值：8） |
+| `增強提示詞` | BOOLEAN | 否 | - | 此參數已棄用且被忽略。（預設值：True） |
+| `人物生成` | COMBO | 否 | "ALLOW"<br>"BLOCK" | 是否允許在影片中生成人物（預設值："ALLOW"） |
+| `種子值` | INT | 否 | 0-4294967295 | 影片生成的隨機種子（0 表示隨機）（預設值：0） |
+| `圖片` | IMAGE | 否 | - | 可選的參考圖片，用於引導影片生成 |
+| `模型` | COMBO | 否 | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | 用於影片生成的 Veo 3 模型（預設值："veo-3.0-generate-001"） |
 | `generate_audio` | BOOLEAN | 否 | - | 為影片生成音訊。所有 Veo 3 模型均支援。（預設值：False） |
 
 **注意：** `enhance_prompt` 參數已棄用，其值會被忽略。節點始終在內部增強提示。此外，`resolution` 參數僅在使用 veo-3.1 模型時生效；對於 veo-3.0 模型則會被忽略。

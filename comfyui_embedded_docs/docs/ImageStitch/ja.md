@@ -6,12 +6,12 @@
 
 | パラメータ名 | データ型 | 入力タイプ | デフォルト | 範囲 | 説明 |
 |------------|----------|------------|-----------|------|------|
-| `image1` | IMAGE | 必須 | - | - | 結合される最初の画像 |
-| `image2` | IMAGE | オプション | None | - | 結合される2番目の画像。指定しない場合は最初の画像のみを返します |
-| `direction` | STRING | 必須 | right | right/down/left/up | 2番目の画像を結合する方向：右、下、左、または上 |
-| `match_image_size` | BOOLEAN | 必須 | True | True/False | 2番目の画像を最初の画像の寸法に合わせてリサイズするかどうか |
-| `spacing_width` | INT | 必須 | 0 | 0-1024 | 画像間のスペースの幅。偶数である必要があります |
-| `spacing_color` | STRING | 必須 | white | white/black/red/green/blue | 結合された画像間のスペースの色 |
+| `画像1` | IMAGE | 必須 | - | - | 結合される最初の画像 |
+| `画像2` | IMAGE | オプション | None | - | 結合される2番目の画像。指定しない場合は最初の画像のみを返します |
+| `方向` | STRING | 必須 | right | right/down/left/up | 2番目の画像を結合する方向：右、下、左、または上 |
+| `画像サイズを一致させる` | BOOLEAN | 必須 | True | True/False | 2番目の画像を最初の画像の寸法に合わせてリサイズするかどうか |
+| `間隔の幅` | INT | 必須 | 0 | 0-1024 | 画像間のスペースの幅。偶数である必要があります |
+| `間隔の色` | STRING | 必須 | white | white/black/red/green/blue | 結合された画像間のスペースの色 |
 
 > `spacing_color`について、"white/black"以外の色を使用する場合、`match_image_size`が`false`に設定されていると、パディング領域は黒で塗りつぶされます
 

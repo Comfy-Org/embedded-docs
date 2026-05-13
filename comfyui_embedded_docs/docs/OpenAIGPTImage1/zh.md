@@ -6,17 +6,17 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | GPT 图像的文本提示（默认：""） |
-| `seed` | INT | 否 | 0 到 2147483647 | 生成的随机种子（默认：0）——后端尚未实现 |
-| `quality` | COMBO | 否 | "low"<br>"medium"<br>"high" | 图像质量，影响成本和生成时间（默认："low"） |
-| `background` | COMBO | 否 | "auto"<br>"opaque"<br>"transparent" | 返回带或不带背景的图像（默认："auto"） |
-| `size` | COMBO | 否 | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | 图像尺寸。选择"Custom"以使用自定义宽度和高度（仅限 GPT Image 2）（默认："auto"） |
-| `n` | INT | 否 | 1 到 8 | 生成图像的数量（默认：1） |
-| `image` | IMAGE | 否 | - | 用于图像编辑的可选参考图像 |
-| `mask` | MASK | 否 | - | 用于修复的可选遮罩（白色区域将被替换） |
-| `model` | COMBO | 否 | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | 使用的 GPT 图像模型（默认："gpt-image-2"） |
-| `custom_width` | INT | 否 | 1024 到 3840 | 仅当 `size` 为"Custom"时使用。必须是 16 的倍数（仅限 GPT Image 2）（默认：1024） |
-| `custom_height` | INT | 否 | 1024 到 3840 | 仅当 `size` 为"Custom"时使用。必须是 16 的倍数（仅限 GPT Image 2）（默认：1024） |
+| `提示词` | STRING | 是 | - | GPT 图像的文本提示（默认：""） |
+| `种子` | INT | 否 | 0 到 2147483647 | 生成的随机种子（默认：0）——后端尚未实现 |
+| `质量` | COMBO | 否 | "low"<br>"medium"<br>"high" | 图像质量，影响成本和生成时间（默认："low"） |
+| `背景` | COMBO | 否 | "auto"<br>"opaque"<br>"transparent" | 返回带或不带背景的图像（默认："auto"） |
+| `尺寸` | COMBO | 否 | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | 图像尺寸。选择"Custom"以使用自定义宽度和高度（仅限 GPT Image 2）（默认："auto"） |
+| `数量` | INT | 否 | 1 到 8 | 生成图像的数量（默认：1） |
+| `参考图像` | IMAGE | 否 | - | 用于图像编辑的可选参考图像 |
+| `遮罩` | MASK | 否 | - | 用于修复的可选遮罩（白色区域将被替换） |
+| `模型` | COMBO | 否 | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | 使用的 GPT 图像模型（默认："gpt-image-2"） |
+| `custom_width` | INT | 否 | 1024 到 3840 | 仅当 `尺寸` 为"Custom"时使用。必须是 16 的倍数（仅限 GPT Image 2）（默认：1024） |
+| `custom_height` | INT | 否 | 1024 到 3840 | 仅当 `尺寸` 为"Custom"时使用。必须是 16 的倍数（仅限 GPT Image 2）（默认：1024） |
 
 **参数约束：**
 

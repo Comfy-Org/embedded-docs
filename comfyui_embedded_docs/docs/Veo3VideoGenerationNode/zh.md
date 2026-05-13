@@ -8,17 +8,17 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 视频的文本描述（默认值：""） |
-| `aspect_ratio` | COMBO | 是 | "16:9"<br>"9:16" | 输出视频的宽高比（默认值："16:9"） |
-| `resolution` | COMBO | 否 | "720p"<br>"1080p"<br>"4k" | 输出视频的分辨率。veo-3.1-lite 和 veo-3.0 模型不支持 4K 分辨率。（默认值："720p"） |
-| `negative_prompt` | STRING | 否 | - | 负面文本提示，用于指导视频中应避免的内容（默认值：""） |
-| `duration_seconds` | INT | 否 | 4-8 | 输出视频的时长（秒），步长为 2（默认值：8） |
-| `enhance_prompt` | BOOLEAN | 否 | - | 此参数已弃用，其值将被忽略。（默认值：True） |
-| `person_generation` | COMBO | 否 | "ALLOW"<br>"BLOCK" | 是否允许在视频中生成人物（默认值："ALLOW"） |
-| `seed` | INT | 否 | 0-4294967295 | 视频生成的随机种子（0 表示随机）（默认值：0） |
-| `image` | IMAGE | 否 | - | 可选的参考图像，用于指导视频生成 |
-| `model` | COMBO | 否 | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | 用于视频生成的 Veo 3 模型（默认值："veo-3.0-generate-001"） |
-| `generate_audio` | BOOLEAN | 否 | - | 为视频生成音频。所有 Veo 3 模型均支持此功能。（默认值：False） |
+| `提示词` | STRING | 是 | - | 视频的文本描述（默认值：""） |
+| `宽高比` | COMBO | 是 | "16:9"<br>"9:16" | 输出视频的宽高比（默认值："16:9"） |
+| `分辨率` | COMBO | 否 | "720p"<br>"1080p"<br>"4k" | 输出视频的分辨率。veo-3.1-lite 和 veo-3.0 模型不支持 4K 分辨率。（默认值："720p"） |
+| `负面提示词` | STRING | 否 | - | 负面文本提示，用于指导视频中应避免的内容（默认值：""） |
+| `时长` | INT | 否 | 4-8 | 输出视频的时长（秒），步长为 2（默认值：8） |
+| `优化提示词` | BOOLEAN | 否 | - | 此参数已弃用，其值将被忽略。（默认值：True） |
+| `生成人类` | COMBO | 否 | "ALLOW"<br>"BLOCK" | 是否允许在视频中生成人物（默认值："ALLOW"） |
+| `随机种` | INT | 否 | 0-4294967295 | 视频生成的随机种子（0 表示随机）（默认值：0） |
+| `图像` | IMAGE | 否 | - | 可选的参考图像，用于指导视频生成 |
+| `模型` | COMBO | 否 | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | 用于视频生成的 Veo 3 模型（默认值："veo-3.0-generate-001"） |
+| `生成音频` | BOOLEAN | 否 | - | 为视频生成音频。所有 Veo 3 模型均支持此功能。（默认值：False） |
 
 **注意：** `enhance_prompt` 参数已弃用，其值将被忽略。节点始终在内部增强提示词。此外，`resolution` 参数仅在使用 veo-3.1 模型时生效；对于 veo-3.0 模型，该参数将被忽略。
 

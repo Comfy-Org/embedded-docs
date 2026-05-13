@@ -7,9 +7,9 @@ SetClipHooks düğümü, bir CLIP modeline özel kancalar (hooks) uygulamanıza 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `clip` | CLIP | Evet | - | Kanca uygulanacak CLIP modeli |
-| `apply_to_conds` | BOOLEAN | Evet | - | Koşullandırma çıktılarına kanca uygulanıp uygulanmayacağı (varsayılan: True) |
-| `schedule_clip` | BOOLEAN | Evet | - | Clip zamanlamasının etkinleştirilip etkinleştirilmeyeceği (varsayılan: False) |
-| `hooks` | HOOKS | Hayır | - | CLIP modeline uygulanacak isteğe bağlı kanca grubu |
+| `koşullara_uygula` | BOOLEAN | Evet | - | Koşullandırma çıktılarına kanca uygulanıp uygulanmayacağı (varsayılan: True) |
+| `zamanlama_klibi` | BOOLEAN | Evet | - | Clip zamanlamasının etkinleştirilip etkinleştirilmeyeceği (varsayılan: False) |
+| `kancalar` | HOOKS | Hayır | - | CLIP modeline uygulanacak isteğe bağlı kanca grubu |
 
 ## Çıktılar
 

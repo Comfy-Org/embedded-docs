@@ -8,10 +8,10 @@
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"latest"` | Doku oluşturma için kullanılacak yapay zeka modeli sürümü. Şu anda yalnızca "latest" (en son) sürüm mevcuttur. |
 | `meshy_task_id` | MESHY_TASK_ID | Evet | - | Önceki bir Meshy 3D oluşturma veya dönüştürme görevinden alınan benzersiz tanımlayıcı (görev kimliği). Doku oluşturulacak temel 3D modeli sağlar. |
-| `enable_original_uv` | BOOLEAN | Hayır | - | Yeni UV'ler oluşturmak yerine modelin orijinal UV'sini kullanın. Etkinleştirildiğinde (varsayılan: `True`), Meshy yüklenen modeldeki mevcut dokuları korur. Modelin orijinal UV'si yoksa, çıktının kalitesi iyi olmayabilir. |
+| `orijinal UV'yi etkinleştir` | BOOLEAN | Hayır | - | Yeni UV'ler oluşturmak yerine modelin orijinal UV'sini kullanın. Etkinleştirildiğinde (varsayılan: `True`), Meshy yüklenen modeldeki mevcut dokuları korur. Modelin orijinal UV'si yoksa, çıktının kalitesi iyi olmayabilir. |
 | `pbr` | BOOLEAN | Hayır | - | Dokulu model için Fiziksel Tabanlı İşleme (PBR) malzeme çıktısını etkinleştirir (varsayılan: `False`). |
-| `text_style_prompt` | STRING | Hayır | - | Nesnenin istediğiniz doku stilini metin kullanarak tanımlayın. Maksimum 600 karakter. `image_style` ile aynı anda kullanılamaz. |
-| `image_style` | IMAGE | Hayır | - | Doku oluşturma sürecine rehberlik edecek 2D bir görsel. `text_style_prompt` ile aynı anda kullanılamaz. |
+| `metin stil istemi` | STRING | Hayır | - | Nesnenin istediğiniz doku stilini metin kullanarak tanımlayın. Maksimum 600 karakter. `görsel stil` ile aynı anda kullanılamaz. |
+| `görsel stil` | IMAGE | Hayır | - | Doku oluşturma sürecine rehberlik edecek 2D bir görsel. `metin stil istemi` ile aynı anda kullanılamaz. |
 
 **Parametre Kısıtlamaları:**
 
@@ -22,9 +22,9 @@
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. |
-| `meshy_task_id` | MODEL_TASK_ID | Sonuca başvurmak için kullanılabilen, bu doku oluşturma işine ait benzersiz görev tanımlayıcısı. |
-| `GLB` | FILE3DGLB | GLB dosya formatında kaydedilmiş dokulu 3D model. |
+| `meshy_görev_id` | STRING | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. |
+| `GLB` | MODEL_TASK_ID | Sonuca başvurmak için kullanılabilen, bu doku oluşturma işine ait benzersiz görev tanımlayıcısı. |
+| `FBX` | FILE3DGLB | GLB dosya formatında kaydedilmiş dokulu 3D model. |
 | `FBX` | FILE3DFBX | FBX dosya formatında kaydedilmiş dokulu 3D model. |
 
 ---

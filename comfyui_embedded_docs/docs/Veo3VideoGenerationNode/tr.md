@@ -6,17 +6,17 @@ Google'ın Veo 3 API'sini kullanarak metin istemlerinden videolar oluşturur. Bu
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `prompt` | STRING | Evet | - | Videonun metin açıklaması (varsayılan: "") |
-| `aspect_ratio` | COMBO | Evet | "16:9"<br>"9:16" | Çıktı videosunun en-boy oranı (varsayılan: "16:9") |
-| `resolution` | COMBO | Hayır | "720p"<br>"1080p"<br>"4k" | Çıktı video çözünürlüğü. 4K, veo-3.1-lite ve veo-3.0 modellerinde kullanılamaz. (varsayılan: "720p") |
-| `negative_prompt` | STRING | Hayır | - | Videoda nelerden kaçınılacağını belirten olumsuz metin istemi (varsayılan: "") |
-| `duration_seconds` | INT | Hayır | 4-8 | Çıktı videosunun saniye cinsinden süresi, 2'şer adımlarla (varsayılan: 8) |
-| `enhance_prompt` | BOOLEAN | Hayır | - | Bu parametre kullanımdan kaldırılmıştır ve yok sayılır. (varsayılan: True) |
-| `person_generation` | COMBO | Hayır | "ALLOW"<br>"BLOCK" | Videoda kişi oluşturmaya izin verilip verilmeyeceği (varsayılan: "ALLOW") |
-| `seed` | INT | Hayır | 0-4294967295 | Video oluşturma için tohum değeri (0 rastgele anlamına gelir) (varsayılan: 0) |
-| `image` | IMAGE | Hayır | - | Video oluşturmaya rehberlik etmesi için isteğe bağlı referans görseli |
+| `istem` | STRING | Evet | - | Videonun metin açıklaması (varsayılan: "") |
+| `en_boy_oranı` | COMBO | Evet | "16:9"<br>"9:16" | Çıktı videosunun en-boy oranı (varsayılan: "16:9") |
+| `çözünürlük` | COMBO | Hayır | "720p"<br>"1080p"<br>"4k" | Çıktı video çözünürlüğü. 4K, veo-3.1-lite ve veo-3.0 modellerinde kullanılamaz. (varsayılan: "720p") |
+| `negatif_istem` | STRING | Hayır | - | Videoda nelerden kaçınılacağını belirten olumsuz metin istemi (varsayılan: "") |
+| `süre_saniye` | INT | Hayır | 4-8 | Çıktı videosunun saniye cinsinden süresi, 2'şer adımlarla (varsayılan: 8) |
+| `istem_geliştir` | BOOLEAN | Hayır | - | Bu parametre kullanımdan kaldırılmıştır ve yok sayılır. (varsayılan: True) |
+| `kişi_oluşturma` | COMBO | Hayır | "ALLOW"<br>"BLOCK" | Videoda kişi oluşturmaya izin verilip verilmeyeceği (varsayılan: "ALLOW") |
+| `tohum` | INT | Hayır | 0-4294967295 | Video oluşturma için tohum değeri (0 rastgele anlamına gelir) (varsayılan: 0) |
+| `görsel` | IMAGE | Hayır | - | Video oluşturmaya rehberlik etmesi için isteğe bağlı referans görseli |
 | `model` | COMBO | Hayır | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | Video oluşturma için kullanılacak Veo 3 modeli (varsayılan: "veo-3.0-generate-001") |
-| `generate_audio` | BOOLEAN | Hayır | - | Video için ses oluştur. Tüm Veo 3 modelleri tarafından desteklenir. (varsayılan: False) |
+| `ses_oluştur` | BOOLEAN | Hayır | - | Video için ses oluştur. Tüm Veo 3 modelleri tarafından desteklenir. (varsayılan: False) |
 
 **Not:** `enhance_prompt` parametresi kullanımdan kaldırılmıştır ve değeri yok sayılır. Düğüm, istemi dahili olarak her zaman geliştirir. Ayrıca, `resolution` parametresi yalnızca veo-3.1 modeli kullanılırken uygulanır; veo-3.0 modelleri için yok sayılır.
 

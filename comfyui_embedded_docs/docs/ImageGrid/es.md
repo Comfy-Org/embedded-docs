@@ -6,11 +6,11 @@ El nodo **Cuadrícula de Imágenes** combina múltiples imágenes en una única 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `images` | IMAGE | Sí | - | Lista de imágenes que se organizarán en la cuadrícula. El nodo requiere al menos una imagen para funcionar. |
-| `columns` | INT | No | 1 - 20 | Número de columnas en la cuadrícula (valor predeterminado: 4). |
-| `cell_width` | INT | No | 32 - 2048 | Ancho, en píxeles, de cada celda en la cuadrícula (valor predeterminado: 256). |
-| `cell_height` | INT | No | 32 - 2048 | Alto, en píxeles, de cada celda en la cuadrícula (valor predeterminado: 256). |
-| `padding` | INT | No | 0 - 50 | Cantidad de relleno, en píxeles, que se colocará entre las imágenes en la cuadrícula (valor predeterminado: 4). |
+| `imágenes` | IMAGE | Sí | - | Lista de imágenes que se organizarán en la cuadrícula. El nodo requiere al menos una imagen para funcionar. |
+| `columnas` | INT | No | 1 - 20 | Número de columnas en la cuadrícula (valor predeterminado: 4). |
+| `ancho_de_celda` | INT | No | 32 - 2048 | Ancho, en píxeles, de cada celda en la cuadrícula (valor predeterminado: 256). |
+| `alto_de_celda` | INT | No | 32 - 2048 | Alto, en píxeles, de cada celda en la cuadrícula (valor predeterminado: 256). |
+| `espaciado` | INT | No | 0 - 50 | Cantidad de relleno, en píxeles, que se colocará entre las imágenes en la cuadrícula (valor predeterminado: 4). |
 
 ## Salidas
 

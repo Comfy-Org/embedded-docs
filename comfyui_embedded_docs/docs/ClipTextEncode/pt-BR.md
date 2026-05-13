@@ -8,7 +8,7 @@ Pense nisso como se comunicar com um artista que fala um idioma diferente. O mod
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `text` | STRING | Sim | Qualquer texto | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. |
+| `texto` | STRING | Sim | Qualquer texto | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. |
 | `clip` | CLIP | Sim | Modelos CLIP carregados | O modelo CLIP usado para codificar o texto. |
 
 ## Saídas

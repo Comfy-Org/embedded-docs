@@ -8,18 +8,18 @@
 
 | 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 예 | - | 업스케일할 입력 이미지 |
-| `prompt` | STRING | 예 | - | 출력 이미지에서 보고 싶은 내용입니다. 요소, 색상 및 대상을 명확히 정의하는 강력하고 설명적인 프롬프트가 더 나은 결과를 이끌어냅니다. (기본값: 빈 문자열) |
-| `creativity` | FLOAT | 예 | 0.1-0.5 | 초기 이미지에 크게 조건화되지 않은 추가 디테일을 생성할 가능성을 제어합니다. (기본값: 0.3) |
-| `style_preset` | STRING | 예 | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 생성된 이미지의 원하는 스타일입니다(선택 사항). (기본값: "None") |
-| `seed` | INT | 예 | 0-4294967294 | 노이즈 생성에 사용되는 무작위 시드입니다. (기본값: 0) |
-| `negative_prompt` | STRING | 아니요 | - | 출력 이미지에서 보고 싶지 않은 키워드입니다. 고급 기능입니다. (기본값: 빈 문자열) |
+| `이미지` | IMAGE | 예 | - | 업스케일할 입력 이미지 |
+| `프롬프트` | STRING | 예 | - | 출력 이미지에서 보고 싶은 내용입니다. 요소, 색상 및 대상을 명확히 정의하는 강력하고 설명적인 프롬프트가 더 나은 결과를 이끌어냅니다. (기본값: 빈 문자열) |
+| `창의성` | FLOAT | 예 | 0.1-0.5 | 초기 이미지에 크게 조건화되지 않은 추가 디테일을 생성할 가능성을 제어합니다. (기본값: 0.3) |
+| `스타일 프리셋` | STRING | 예 | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 생성된 이미지의 원하는 스타일입니다(선택 사항). (기본값: "None") |
+| `시드` | INT | 예 | 0-4294967294 | 노이즈 생성에 사용되는 무작위 시드입니다. (기본값: 0) |
+| `부정 프롬프트` | STRING | 아니요 | - | 출력 이미지에서 보고 싶지 않은 키워드입니다. 고급 기능입니다. (기본값: 빈 문자열) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 4K 해상도로 업스케일된 이미지 |
+| `이미지` | IMAGE | 4K 해상도로 업스케일된 이미지 |
 
 ---
 **Source fingerprint (SHA-256):** `46f7bdd3cb4254b6305407f43e4a9a69a54fd3a0ac285d784c899dbf52edd552`

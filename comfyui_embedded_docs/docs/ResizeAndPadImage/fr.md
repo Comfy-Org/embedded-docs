@@ -7,9 +7,9 @@ Le nœud ResizeAndPadImage redimensionne une image pour qu'elle s'adapte à des 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à redimensionner et à remplir |
-| `target_width` | INT | Oui | 1 à MAX_RESOLUTION | La largeur souhaitée de l'image de sortie (par défaut : 512) |
-| `target_height` | INT | Oui | 1 à MAX_RESOLUTION | La hauteur souhaitée de l'image de sortie (par défaut : 512) |
-| `padding_color` | COMBO | Oui | "white"<br>"black" | La couleur à utiliser pour les zones de remplissage autour de l'image redimensionnée (par défaut : "white") |
+| `largeur_cible` | INT | Oui | 1 à MAX_RESOLUTION | La largeur souhaitée de l'image de sortie (par défaut : 512) |
+| `hauteur_cible` | INT | Oui | 1 à MAX_RESOLUTION | La hauteur souhaitée de l'image de sortie (par défaut : 512) |
+| `couleur_rembourrage` | COMBO | Oui | "white"<br>"black" | La couleur à utiliser pour les zones de remplissage autour de l'image redimensionnée (par défaut : "white") |
 | `interpolation` | COMBO | Oui | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" | La méthode d'interpolation utilisée pour redimensionner l'image (par défaut : "area") |
 
 ## Sorties

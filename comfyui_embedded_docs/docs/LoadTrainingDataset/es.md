@@ -14,7 +14,7 @@ Este nodo carga un conjunto de datos de entrenamiento codificado que ha sido gua
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `latents` | LATENT | Una lista de diccionarios latentes, donde cada diccionario contiene una clave `"samples"` con un tensor. |
+| `conditioning` | LATENT | Una lista de diccionarios latentes, donde cada diccionario contiene una clave `"samples"` con un tensor. |
 | `conditioning` | CONDITIONING | Una lista de listas de condicionamiento, donde cada lista interna contiene datos de condicionamiento para una muestra correspondiente. |
 
 ---

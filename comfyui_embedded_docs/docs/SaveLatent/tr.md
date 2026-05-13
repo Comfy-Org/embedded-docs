@@ -6,8 +6,8 @@ SaveLatent düğümü, gizli tensörleri dosya olarak diske kaydederek daha sonr
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `samples` | LATENT | Evet | - | Diske kaydedilecek gizli örnekler |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "latents/ComfyUI") |
+| `örnekler` | LATENT | Evet | - | Diske kaydedilecek gizli örnekler |
+| `dosyaadı_öneki` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "latents/ComfyUI") |
 | `prompt` | PROMPT | Hayır | - | Meta verilere dahil edilecek bilgi istemi bilgisi (gizli parametre) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Hayır | - | Meta verilere dahil edilecek ek PNG bilgisi (gizli parametre) |
 

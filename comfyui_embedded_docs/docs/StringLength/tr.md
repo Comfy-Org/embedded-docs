@@ -6,7 +6,7 @@ StringLength düğümü, bir metin dizisindeki karakter sayısını hesaplar. He
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `string` | STRING | Evet | Yok | Uzunluğu ölçülecek metin dizisi. Çok satırlı girişi destekler. |
+| `dize` | STRING | Evet | Yok | Uzunluğu ölçülecek metin dizisi. Çok satırlı girişi destekler. |
 
 ## Çıkışlar
 

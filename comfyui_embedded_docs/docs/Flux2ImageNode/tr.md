@@ -36,9 +36,9 @@ Bir metin istemi ve isteğe bağlı referans görselleri kullanarak Flux.2 [pro]
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | Görsel oluşturma veya düzenleme için istem (varsayılan: boş dize). |
+| `istem` | STRING | Evet | Yok | Görsel oluşturma veya düzenleme için istem (varsayılan: boş dize). |
 | `model` | COMBO | Evet | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | Kullanılacak Flux.2 model sürümü. Bir model seçmek, genişlik, yükseklik ve isteğe bağlı referans görselleri için ek parametrelerin kilidini açar. |
-| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum. Her oluşturmadan sonra rastgele hale getirilecek şekilde ayarlanabilir (varsayılan: 0). |
+| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum. Her oluşturmadan sonra rastgele hale getirilecek şekilde ayarlanabilir (varsayılan: 0). |
 
 **Ek Parametreler (`model` seçimiyle etkinleştirilir):**
 

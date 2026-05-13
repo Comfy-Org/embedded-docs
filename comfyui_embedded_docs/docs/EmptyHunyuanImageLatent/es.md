@@ -6,9 +6,9 @@ El nodo EmptyHunyuanImageLatent crea un tensor latente vacío con dimensiones es
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `width` | INT | Sí | 64 a MAX_RESOLUTION | El ancho de la imagen latente generada en píxeles (predeterminado: 2048, incremento: 32) |
-| `height` | INT | Sí | 64 a MAX_RESOLUTION | El alto de la imagen latente generada en píxeles (predeterminado: 2048, incremento: 32) |
-| `batch_size` | INT | Sí | 1 a 4096 | El número de muestras latentes a generar en un lote (predeterminado: 1) |
+| `ancho` | INT | Sí | 64 a MAX_RESOLUTION | El ancho de la imagen latente generada en píxeles (predeterminado: 2048, incremento: 32) |
+| `alto` | INT | Sí | 64 a MAX_RESOLUTION | El alto de la imagen latente generada en píxeles (predeterminado: 2048, incremento: 32) |
+| `tamaño_lote` | INT | Sí | 1 a 4096 | El número de muestras latentes a generar en un lote (predeterminado: 1) |
 
 ## Salidas
 

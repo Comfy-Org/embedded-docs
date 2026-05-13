@@ -11,10 +11,10 @@ DualCFGGuider 節點建立了一個用於雙重無分類器引導取樣的引導
 | `model` | MODEL | 是 | - | 用於引導的模型 |
 | `cond1` | CONDITIONING | 是 | - | 第一個正向條件輸入 |
 | `cond2` | CONDITIONING | 是 | - | 第二個正向條件輸入 |
-| `negative` | CONDITIONING | 是 | - | 負向條件輸入 |
-| `cfg_conds` | FLOAT | 是 | 0.0 - 100.0 | 第一個正向條件的引導尺度（預設值：8.0） |
-| `cfg_cond2_negative` | FLOAT | 是 | 0.0 - 100.0 | 第二個正向與負向條件的引導尺度（預設值：8.0） |
-| `style` | COMBO | 是 | "regular"<br>"nested" | 要套用的引導風格（預設值："regular"）。設為 "nested" 時，引導將以巢狀方式套用 |
+| `負面` | CONDITIONING | 是 | - | 負向條件輸入 |
+| `cfg 條件` | FLOAT | 是 | 0.0 - 100.0 | 第一個正向條件的引導尺度（預設值：8.0） |
+| `cfg cond2 負面` | FLOAT | 是 | 0.0 - 100.0 | 第二個正向與負向條件的引導尺度（預設值：8.0） |
+| `風格` | COMBO | 是 | "regular"<br>"nested" | 要套用的引導風格（預設值："regular"）。設為 "nested" 時，引導將以巢狀方式套用 |
 
 ## 輸出
 

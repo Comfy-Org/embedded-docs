@@ -10,10 +10,10 @@ Le nœud EmptyARVideoLatent crée une représentation latente vide pour la gén�
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `width` | INT | Oui | 16 à 8192 (pas : 16) | La largeur des images vidéo en pixels (par défaut : 832) |
-| `height` | INT | Oui | 16 à 8192 (pas : 16) | La hauteur des images vidéo en pixels (par défaut : 480) |
-| `length` | INT | Oui | 1 à 1024 (pas : 4) | Le nombre d'images dans la vidéo (par défaut : 81) |
-| `batch_size` | INT | Oui | 1 à 64 | Le nombre de vidéos à générer en un seul lot (par défaut : 1) |
+| `largeur` | INT | Oui | 16 à 8192 (pas : 16) | La largeur des images vidéo en pixels (par défaut : 832) |
+| `hauteur` | INT | Oui | 16 à 8192 (pas : 16) | La hauteur des images vidéo en pixels (par défaut : 480) |
+| `longueur` | INT | Oui | 1 à 1024 (pas : 4) | Le nombre d'images dans la vidéo (par défaut : 81) |
+| `taille_du_lot` | INT | Oui | 1 à 64 | Le nombre de vidéos à générer en un seul lot (par défaut : 1) |
 
 ## Sorties
 

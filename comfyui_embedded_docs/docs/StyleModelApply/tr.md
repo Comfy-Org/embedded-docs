@@ -8,12 +8,12 @@ Bu düğüm, bir CLIP görme modelinin çıktısına dayanarak belirli bir koşu
 
 | Parametre            | Comfy veri türü      | Açıklama |
 |-----------------------|-----------------------|-------------|
-| `conditioning`        | `CONDITIONING`       | Stil modelinin koşullandırmasının uygulanacağı orijinal koşullandırma verisi. Geliştirilecek veya değiştirilecek temel bağlamı veya stili tanımlamak için çok önemlidir. |
-| `style_model`         | `STYLE_MODEL`        | CLIP görme modelinin çıktısına dayanarak yeni koşullandırma oluşturmak için kullanılan stil modeli. Uygulanacak yeni stili tanımlamada anahtar rol oynar. |
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT` | Stil modelinin yeni koşullandırma oluşturmak için kullandığı bir CLIP görme modelinin çıktısı. Stil uygulaması için gerekli görsel bağlamı sağlar. |
+| `koşullandırma`        | `CONDITIONING`       | Stil modelinin koşullandırmasının uygulanacağı orijinal koşullandırma verisi. Geliştirilecek veya değiştirilecek temel bağlamı veya stili tanımlamak için çok önemlidir. |
+| `stil_modeli`         | `STYLE_MODEL`        | CLIP görme modelinin çıktısına dayanarak yeni koşullandırma oluşturmak için kullanılan stil modeli. Uygulanacak yeni stili tanımlamada anahtar rol oynar. |
+| `clip_görü_çıktısı`  | `CLIP_VISION_OUTPUT` | Stil modelinin yeni koşullandırma oluşturmak için kullandığı bir CLIP görme modelinin çıktısı. Stil uygulaması için gerekli görsel bağlamı sağlar. |
 
 ## Çıktılar
 
 | Parametre            | Comfy veri türü      | Açıklama |
 |----------------------|-----------------------|-------------|
-| `conditioning`       | `CONDITIONING`        | Stil modelinin çıktısını içeren, geliştirilmiş veya değiştirilmiş koşullandırma. Daha sonraki işlemlere veya üretime hazır, son halini almış, stillendirilmiş koşullandırmayı temsil eder. |
+| `koşullandırma`       | `CONDITIONING`        | Stil modelinin çıktısını içeren, geliştirilmiş veya değiştirilmiş koşullandırma. Daha sonraki işlemlere veya üretime hazır, son halini almış, stillendirilmiş koşullandırmayı temsil eder. |

@@ -6,10 +6,10 @@ El nodo EmptyMochiLatentVideo crea un tensor de video latente vacío con dimensi
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | El ancho del video latente en píxeles (valor predeterminado: 848, debe ser divisible entre 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | El alto del video latente en píxeles (valor predeterminado: 480, debe ser divisible entre 16) |
-| `length` | INT | Sí | 7 a MAX_RESOLUTION | El número de fotogramas en el video latente (valor predeterminado: 25, debe ser divisible entre 6 después de restar 1) |
-| `batch_size` | INT | No | 1 a 4096 | La cantidad de videos latentes a generar en un lote (valor predeterminado: 1) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | El ancho del video latente en píxeles (valor predeterminado: 848, debe ser divisible entre 16) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION | El alto del video latente en píxeles (valor predeterminado: 480, debe ser divisible entre 16) |
+| `longitud` | INT | Sí | 7 a MAX_RESOLUTION | El número de fotogramas en el video latente (valor predeterminado: 25, debe ser divisible entre 6 después de restar 1) |
+| `tamaño_del_lote` | INT | No | 1 a 4096 | La cantidad de videos latentes a generar en un lote (valor predeterminado: 1) |
 
 **Nota:** Las dimensiones latentes reales se calculan como ancho/8 y alto/8, y la dimensión temporal se calcula como ((duración - 1) // 6) + 1. El parámetro `length` debe cumplir que `(length - 1)` sea divisible entre 6, lo que significa que los valores válidos son 7, 13, 19, 25, etc.
 

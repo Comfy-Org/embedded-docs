@@ -7,7 +7,7 @@ O nó Ajustar Contraste modifica o nível de contraste de uma imagem de entrada.
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada que terá seu contraste ajustado. |
-| `factor` | FLOAT | Não | 0,0 - 2,0 | Fator de contraste. 1,0 = sem alteração, <1,0 = menos contraste, >1,0 = mais contraste. (padrão: 1,0) |
+| `fator` | FLOAT | Não | 0,0 - 2,0 | Fator de contraste. 1,0 = sem alteração, <1,0 = menos contraste, >1,0 = mais contraste. (padrão: 1,0) |
 
 ## Saídas
 

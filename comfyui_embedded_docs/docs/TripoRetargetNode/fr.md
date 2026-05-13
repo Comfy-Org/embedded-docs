@@ -8,7 +8,7 @@ Le TripoRetargetNode applique des animations prédéfinies à des modèles de pe
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `original_model_task_id` | RIG_TASK_ID | Oui | - | L'ID de tâche du modèle 3D riggé précédemment traité auquel appliquer l'animation |
+| `ID_tâche_modèle_original` | RIG_TASK_ID | Oui | - | L'ID de tâche du modèle 3D riggé précédemment traité auquel appliquer l'animation |
 | `animation` | STRING | Oui | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | L'animation prédéfinie à appliquer au modèle 3D. Les options incluent les animations humanoïdes (idle, walk, run, dive, climb, jump, slash, shoot, hurt, fall, turn) et les animations de créatures (quadruped walk, hexapod walk, octopod walk, serpentine march, aquatic march). |
 | `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | Non | - | Jeton d'authentification pour l'accès à l'API Comfy.org (paramètre caché) |
 | `api_key_comfy_org` | API_KEY_COMFY_ORG | Non | - | Clé API pour l'accès au service Comfy.org (paramètre caché) |
@@ -18,8 +18,8 @@ Le TripoRetargetNode applique des animations prédéfinies à des modèles de pe
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model_file` | STRING | Le fichier de modèle 3D animé généré (uniquement pour la rétrocompatibilité) |
-| `retarget task_id` | RETARGET_TASK_ID | L'ID de tâche pour le suivi de l'opération de réaffectation |
+| `retarget task_id` | STRING | Le fichier de modèle 3D animé généré (uniquement pour la rétrocompatibilité) |
+| `GLB` | RETARGET_TASK_ID | L'ID de tâche pour le suivi de l'opération de réaffectation |
 | `GLB` | FILE3DGLB | Le modèle 3D animé au format GLB |
 
 ---

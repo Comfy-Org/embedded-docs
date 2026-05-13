@@ -7,7 +7,7 @@ Le nœud Ajouter un Préfixe de Texte modifie un texte en ajoutant une chaîne s
 | Paramètre | Type de Données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `text` | STRING | Oui | | Le texte auquel le préfixe sera ajouté. |
-| `prefix` | STRING | Non | | La chaîne à ajouter au début du texte (par défaut : ""). |
+| `préfixe` | STRING | Non | | La chaîne à ajouter au début du texte (par défaut : ""). |
 
 ## Sorties
 

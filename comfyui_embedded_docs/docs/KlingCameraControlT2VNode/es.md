@@ -44,8 +44,8 @@ El nodo de Control de Cámara para Video de Texto a Video de Kling transforma te
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `output` | VIDEO | El video generado con efectos de control de cámara |
-| `video_id` | STRING | El identificador único para el video generado |
+| `video_id` | VIDEO | El video generado con efectos de control de cámara |
+| `duration` | STRING | El identificador único para el video generado |
 | `duration` | STRING | La duración del video generado |
 
 ---

@@ -8,14 +8,14 @@ Le nœud de génération vidéo Vidu Start End To Video crée une vidéo en gén
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"viduq1"` | Nom du modèle |
-| `first_frame` | IMAGE | Oui | - | Image de début |
-| `end_frame` | IMAGE | Oui | - | Image de fin |
-| `prompt` | STRING | Non | - | Description textuelle pour la génération vidéo |
-| `duration` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5, fixée à 5 secondes) |
-| `seed` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
-| `resolution` | COMBO | Non | `"1080p"` | Les valeurs prises en charge peuvent varier selon le modèle et la durée (par défaut : "1080p") |
-| `movement_amplitude` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | L'amplitude de mouvement des objets dans l'image (par défaut : "auto") |
+| `modèle` | COMBO | Oui | `"viduq1"` | Nom du modèle |
+| `première_image` | IMAGE | Oui | - | Image de début |
+| `image_fin` | IMAGE | Oui | - | Image de fin |
+| `description` | STRING | Non | - | Description textuelle pour la génération vidéo |
+| `durée` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5, fixée à 5 secondes) |
+| `graine` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
+| `résolution` | COMBO | Non | `"1080p"` | Les valeurs prises en charge peuvent varier selon le modèle et la durée (par défaut : "1080p") |
+| `amplitude_mouvement` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | L'amplitude de mouvement des objets dans l'image (par défaut : "auto") |
 
 **Remarque :** Les images de début et de fin doivent avoir des rapports d'aspect compatibles (validés avec une tolérance de ratio min_rel=0,8, max_rel=1,25).
 

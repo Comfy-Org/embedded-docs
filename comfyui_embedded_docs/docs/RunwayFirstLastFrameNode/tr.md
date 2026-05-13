@@ -7,11 +7,11 @@ Runway İlk-Son Kare'den Video'ya düğümü, ilk ve son ana kareleri bir metin 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `prompt` | STRING | Evet | Yok | Oluşturma için metin istemi (varsayılan: boş dize) |
-| `start_frame` | IMAGE | Evet | Yok | Video için kullanılacak başlangıç karesi |
-| `end_frame` | IMAGE | Evet | Yok | Video için kullanılacak bitiş karesi. Yalnızca gen3a_turbo için desteklenir. |
-| `duration` | COMBO | Evet | `"5"`<br>`"10"` | Video süresi saniye cinsinden (varsayılan: "5") |
-| `ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan video için en boy oranı (varsayılan: "16:9") |
-| `seed` | INT | Hayır | 0 ile 4294967295 arası | Oluşturma için rastgele tohum değeri. Rastgele tohum için 0 olarak ayarlayın (varsayılan: 0). |
+| `başlangıç_karesi` | IMAGE | Evet | Yok | Video için kullanılacak başlangıç karesi |
+| `bitiş_karesi` | IMAGE | Evet | Yok | Video için kullanılacak bitiş karesi. Yalnızca gen3a_turbo için desteklenir. |
+| `süre` | COMBO | Evet | `"5"`<br>`"10"` | Video süresi saniye cinsinden (varsayılan: "5") |
+| `oran` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan video için en boy oranı (varsayılan: "16:9") |
+| `tohum` | INT | Hayır | 0 ile 4294967295 arası | Oluşturma için rastgele tohum değeri. Rastgele tohum için 0 olarak ayarlayın (varsayılan: 0). |
 
 **Parametre Kısıtlamaları:**
 

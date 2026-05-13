@@ -18,15 +18,15 @@ La salida final es una imagen en blanco y negro, donde las partes blancas son la
 
 | Nombre del Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango     | Descripción de la Función |
 |----------------------|--------------|-----------------|-------------------|-----------|---------------------------|
-| `image`              | IMAGE        | Entrada         | -                 | -         | Foto original que necesita extracción de bordes |
-| `low_threshold`      | FLOAT        | Widget          | 0.4               | 0.01-0.99 | Umbral bajo, determina qué bordes débiles ignorar. Valores más bajos conservan más detalles pero pueden generar ruido |
-| `high_threshold`     | FLOAT        | Widget          | 0.8               | 0.01-0.99 | Umbral alto, determina qué bordes fuertes conservar. Valores más altos solo mantienen las líneas de contorno más obvias |
+| `imagen`              | IMAGE        | Entrada         | -                 | -         | Foto original que necesita extracción de bordes |
+| `umbral_bajo`      | FLOAT        | Widget          | 0.4               | 0.01-0.99 | Umbral bajo, determina qué bordes débiles ignorar. Valores más bajos conservan más detalles pero pueden generar ruido |
+| `umbral_alto`     | FLOAT        | Widget          | 0.8               | 0.01-0.99 | Umbral alto, determina qué bordes fuertes conservar. Valores más altos solo mantienen las líneas de contorno más obvias |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image`          | IMAGE        | Imagen de bordes en blanco y negro, las líneas blancas son bordes detectados, las áreas negras son partes sin bordes |
+| `imagen`          | IMAGE        | Imagen de bordes en blanco y negro, las líneas blancas son bordes detectados, las áreas negras son partes sin bordes |
 
 ## Comparación de Parámetros
 

@@ -37,7 +37,7 @@ TextEncodeQwenImageEdit düğümü, görüntü oluşturma veya düzenleme için 
 | `clip` | CLIP | Evet | - | Metin ve görüntü tokenleştirme için kullanılan CLIP modeli |
 | `prompt` | STRING | Evet | - | Koşullama oluşturma için metin istemi, çok satırlı girişi ve dinamik istemleri destekler |
 | `vae` | VAE | Hayır | - | Referans görüntülerini gizil değişkenlere kodlamak için isteğe bağlı VAE modeli |
-| `image` | IMAGE | Hayır | - | Referans veya düzenleme amaçlı isteğe bağlı giriş görüntüsü |
+| `görüntü` | IMAGE | Hayır | - | Referans veya düzenleme amaçlı isteğe bağlı giriş görüntüsü |
 
 **Not:** Hem `image` hem de `vae` sağlandığında, düğüm görüntüyü referans gizil değişkenlerine kodlar ve bunları koşullama çıktısına ekler. Görüntü, yaklaşık 1024x1024 piksel tutarlı bir işleme ölçeğini korumak için otomatik olarak yeniden boyutlandırılır.
 

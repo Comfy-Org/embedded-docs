@@ -6,23 +6,23 @@ O nó WanFunInpaintToVideo cria sequências de vídeo por meio de inpaint entre 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sim | - | Prompts de condicionamento positivo para geração de vídeo |
-| `negative` | CONDITIONING | Sim | - | Prompts de condicionamento negativo a serem evitados na geração de vídeo |
+| `positivo` | CONDITIONING | Sim | - | Prompts de condicionamento positivo para geração de vídeo |
+| `negativo` | CONDITIONING | Sim | - | Prompts de condicionamento negativo a serem evitados na geração de vídeo |
 | `vae` | VAE | Sim | - | Modelo VAE para operações de codificação/decodificação |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) |
-| `batch_size` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados em um lote (padrão: 1) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) |
+| `duração` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados em um lote (padrão: 1) |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP opcional para condicionamento adicional |
-| `start_image` | IMAGE | Não | - | Imagem de quadro inicial opcional para geração de vídeo |
-| `end_image` | IMAGE | Não | - | Imagem de quadro final opcional para geração de vídeo |
+| `imagem_inicial` | IMAGE | Não | - | Imagem de quadro inicial opcional para geração de vídeo |
+| `imagem_final` | IMAGE | Não | - | Imagem de quadro final opcional para geração de vídeo |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Saída de condicionamento positivo processada |
-| `negative` | CONDITIONING | Saída de condicionamento negativo processada |
+| `positivo` | CONDITIONING | Saída de condicionamento positivo processada |
+| `negativo` | CONDITIONING | Saída de condicionamento negativo processada |
 | `latent` | LATENT | Representação latente do vídeo gerado |
 
 ---

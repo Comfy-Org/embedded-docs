@@ -8,7 +8,7 @@ Carrega um modelo de remoção de fundo a partir de um arquivo. Este nó prepara
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `bg_removal_name` | STRING | Sim | Lista de arquivos de modelo disponíveis | O modelo usado para remover fundos de imagens. Selecione na lista de arquivos de modelo de remoção de fundo disponíveis. |
+| `nome_remoção_fundo` | STRING | Sim | Lista de arquivos de modelo disponíveis | O modelo usado para remover fundos de imagens. Selecione na lista de arquivos de modelo de remoção de fundo disponíveis. |
 
 ## Saídas
 

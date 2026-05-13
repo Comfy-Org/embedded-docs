@@ -6,16 +6,16 @@ O nó ModelSamplingContinuousV modifica o comportamento de amostragem de um mode
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo de entrada a ser modificado com amostragem de previsão V contínua |
-| `sampling` | STRING | Sim | `"v_prediction"` | O método de amostragem a ser aplicado (atualmente apenas previsão V é suportada) |
-| `sigma_max` | FLOAT | Sim | 0.0 - 1000.0 | O valor sigma máximo para amostragem (padrão: 500.0) |
-| `sigma_min` | FLOAT | Sim | 0.0 - 1000.0 | O valor sigma mínimo para amostragem (padrão: 0.03) |
+| `modelo` | MODEL | Sim | - | O modelo de entrada a ser modificado com amostragem de previsão V contínua |
+| `amostragem` | STRING | Sim | `"v_prediction"` | O método de amostragem a ser aplicado (atualmente apenas previsão V é suportada) |
+| `sigma_máx` | FLOAT | Sim | 0.0 - 1000.0 | O valor sigma máximo para amostragem (padrão: 500.0) |
+| `sigma_mín` | FLOAT | Sim | 0.0 - 1000.0 | O valor sigma mínimo para amostragem (padrão: 0.03) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `model` | MODEL | O modelo modificado com amostragem de previsão V contínua aplicada |
+| `modelo` | MODEL | O modelo modificado com amostragem de previsão V contínua aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `8095b5024c0d33011f6a81ed496cf1711981701e0f35f9527646b150f5033d45`

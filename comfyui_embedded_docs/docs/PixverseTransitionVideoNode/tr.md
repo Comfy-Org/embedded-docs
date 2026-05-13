@@ -6,14 +6,14 @@ PixVerse API'sini kullanarak iki giriş görüntüsü arasında bir geçiş vide
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `first_frame` | IMAGE | Evet | - | Video geçişi için başlangıç görüntüsü |
-| `last_frame` | IMAGE | Evet | - | Video geçişi için bitiş görüntüsü |
-| `prompt` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize) |
-| `quality` | COMBO | Evet | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` | Video kalite ayarı (varsayılan: `"540p"`) |
-| `duration_seconds` | COMBO | Evet | `5`<br>`8` | Video süresi (saniye cinsinden) |
-| `motion_mode` | COMBO | Evet | `"normal"`<br>`"fast"` | Geçiş için hareket stili (varsayılan: `"normal"`) |
-| `seed` | INT | Evet | 0 ile 2147483647 arası | Video oluşturma için tohum değeri (varsayılan: 0) |
-| `negative_prompt` | STRING | Hayır | - | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) |
+| `ilk_kare` | IMAGE | Evet | - | Video geçişi için başlangıç görüntüsü |
+| `son_kare` | IMAGE | Evet | - | Video geçişi için bitiş görüntüsü |
+| `istem` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize) |
+| `kalite` | COMBO | Evet | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` | Video kalite ayarı (varsayılan: `"540p"`) |
+| `süre_saniye` | COMBO | Evet | `5`<br>`8` | Video süresi (saniye cinsinden) |
+| `hareket_modu` | COMBO | Evet | `"normal"`<br>`"fast"` | Geçiş için hareket stili (varsayılan: `"normal"`) |
+| `tohum` | INT | Evet | 0 ile 2147483647 arası | Video oluşturma için tohum değeri (varsayılan: 0) |
+| `negatif_istem` | STRING | Hayır | - | Görüntüde istenmeyen öğelerin isteğe bağlı metin açıklaması (varsayılan: boş dize) |
 
 **Parametre kısıtlamalarına ilişkin not:** 1080p kalitesi kullanıldığında, hareket modu otomatik olarak `"normal"` olarak ayarlanır ve süre 5 saniye ile sınırlandırılır. 5 saniye dışındaki herhangi bir süre için hareket modu da otomatik olarak `"normal"` olarak ayarlanır.
 

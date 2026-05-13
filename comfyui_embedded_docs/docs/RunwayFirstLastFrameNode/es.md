@@ -7,11 +7,11 @@ El nodo Runway Primer-Último Fotograma a Video genera videos subiendo fotograma
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Mensaje de texto para la generación (predeterminado: cadena vacía) |
-| `start_frame` | IMAGE | Sí | N/A | Fotograma inicial que se utilizará para el video |
-| `end_frame` | IMAGE | Sí | N/A | Fotograma final que se utilizará para el video. Solo compatible con gen3a_turbo. |
-| `duration` | COMBO | Sí | `"5"`<br>`"10"` | Duración del video en segundos (predeterminado: "5") |
-| `ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Relación de aspecto para el video generado (predeterminado: "16:9") |
-| `seed` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación. Establecer en 0 para semilla aleatoria (predeterminado: 0). |
+| `fotograma_inicial` | IMAGE | Sí | N/A | Fotograma inicial que se utilizará para el video |
+| `fotograma_final` | IMAGE | Sí | N/A | Fotograma final que se utilizará para el video. Solo compatible con gen3a_turbo. |
+| `duración` | COMBO | Sí | `"5"`<br>`"10"` | Duración del video en segundos (predeterminado: "5") |
+| `relación` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Relación de aspecto para el video generado (predeterminado: "16:9") |
+| `semilla` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación. Establecer en 0 para semilla aleatoria (predeterminado: 0). |
 
 **Restricciones de Parámetros:**
 

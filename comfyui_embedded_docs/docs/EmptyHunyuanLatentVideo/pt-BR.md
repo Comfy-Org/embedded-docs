@@ -6,10 +6,10 @@ O nó `EmptyHunyuanLatentVideo` é semelhante ao nó `EmptyLatentImage`. Você p
 
 | Parâmetro     | Tipo Comfy | Descrição                                                                                |
 | ------------ | ---------- | ---------------------------------------------------------------------------------------- |
-| `width`      | `INT`      | Largura do vídeo, padrão 848, mínimo 16, máximo `nodes.MAX_RESOLUTION`, tamanho do passo 16. |
-| `height`     | `INT`      | Altura do vídeo, padrão 480, mínimo 16, máximo `nodes.MAX_RESOLUTION`, tamanho do passo 16. |
-| `length`     | `INT`      | Comprimento do vídeo, padrão 25, mínimo 1, máximo `nodes.MAX_RESOLUTION`, tamanho do passo 4. |
-| `batch_size` | `INT`      | Tamanho do lote, padrão 1, mínimo 1, máximo 4096.                                        |
+| `largura`      | `INT`      | Largura do vídeo, padrão 848, mínimo 16, máximo `nodes.MAX_RESOLUTION`, tamanho do passo 16. |
+| `altura`     | `INT`      | Altura do vídeo, padrão 480, mínimo 16, máximo `nodes.MAX_RESOLUTION`, tamanho do passo 16. |
+| `duração`     | `INT`      | Comprimento do vídeo, padrão 25, mínimo 1, máximo `nodes.MAX_RESOLUTION`, tamanho do passo 4. |
+| `tamanho_do_lote` | `INT`      | Tamanho do lote, padrão 1, mínimo 1, máximo 4096.                                        |
 
 ## Saídas
 

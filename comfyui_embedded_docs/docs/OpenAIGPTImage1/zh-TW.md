@@ -8,17 +8,17 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | GPT Image 的文字提示（預設：""） |
-| `seed` | INT | 否 | 0 至 2147483647 | 生成用的隨機種子（預設：0）- 後端尚未實作 |
-| `quality` | COMBO | 否 | "low"<br>"medium"<br>"high" | 影像品質，影響成本和生成時間（預設："low"） |
-| `background` | COMBO | 否 | "auto"<br>"opaque"<br>"transparent" | 回傳有或無背景的影像（預設："auto"） |
-| `size` | COMBO | 否 | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | 影像尺寸。選擇"Custom"以使用自訂寬度和高度（僅限 GPT Image 2）（預設："auto"） |
-| `n` | INT | 否 | 1 至 8 | 要生成的影像數量（預設：1） |
-| `image` | IMAGE | 否 | - | 用於影像編輯的選用參考影像 |
-| `mask` | MASK | 否 | - | 用於局部重繪的選用遮罩（白色區域將被替換） |
+| `提示詞` | STRING | 是 | - | GPT Image 的文字提示（預設：""） |
+| `種子值` | INT | 否 | 0 至 2147483647 | 生成用的隨機種子（預設：0）- 後端尚未實作 |
+| `品質` | COMBO | 否 | "low"<br>"medium"<br>"high" | 影像品質，影響成本和生成時間（預設："low"） |
+| `背景` | COMBO | 否 | "auto"<br>"opaque"<br>"transparent" | 回傳有或無背景的影像（預設："auto"） |
+| `尺寸` | COMBO | 否 | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | 影像尺寸。選擇"Custom"以使用自訂寬度和高度（僅限 GPT Image 2）（預設："auto"） |
+| `數量` | INT | 否 | 1 至 8 | 要生成的影像數量（預設：1） |
+| `參考影像` | IMAGE | 否 | - | 用於影像編輯的選用參考影像 |
+| `遮罩` | MASK | 否 | - | 用於局部重繪的選用遮罩（白色區域將被替換） |
 | `model` | COMBO | 否 | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | 要使用的 GPT Image 模型（預設："gpt-image-2"） |
-| `custom_width` | INT | 否 | 1024 至 3840 | 僅在 `size` 為"Custom"時使用。必須是 16 的倍數（僅限 GPT Image 2）（預設：1024） |
-| `custom_height` | INT | 否 | 1024 至 3840 | 僅在 `size` 為"Custom"時使用。必須是 16 的倍數（僅限 GPT Image 2）（預設：1024） |
+| `custom_width` | INT | 否 | 1024 至 3840 | 僅在 `尺寸` 為"Custom"時使用。必須是 16 的倍數（僅限 GPT Image 2）（預設：1024） |
+| `custom_height` | INT | 否 | 1024 至 3840 | 僅在 `尺寸` 為"Custom"時使用。必須是 16 的倍數（僅限 GPT Image 2）（預設：1024） |
 
 **參數限制：**
 

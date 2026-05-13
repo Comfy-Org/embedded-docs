@@ -6,9 +6,9 @@ Este nó salva uma lista de imagens em uma pasta especificada dentro do diretór
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | N/A | Lista de imagens a serem salvas. |
-| `folder_name` | STRING | Não | N/A | Nome da pasta para salvar as imagens (dentro do diretório de saída). O valor padrão é "dataset". |
-| `filename_prefix` | STRING | Não | N/A | Prefixo para os nomes dos arquivos de imagem salvos. O valor padrão é "image". |
+| `imagens` | IMAGE | Sim | N/A | Lista de imagens a serem salvas. |
+| `nome_da_pasta` | STRING | Não | N/A | Nome da pasta para salvar as imagens (dentro do diretório de saída). O valor padrão é "dataset". |
+| `prefixo_do_arquivo` | STRING | Não | N/A | Prefixo para os nomes dos arquivos de imagem salvos. O valor padrão é "image". |
 
 **Observação:** A entrada `images` é uma lista, o que significa que pode receber e processar múltiplas imagens de uma só vez. Os parâmetros `folder_name` e `filename_prefix` são valores escalares; se uma lista for conectada, apenas o primeiro valor dessa lista será utilizado.
 

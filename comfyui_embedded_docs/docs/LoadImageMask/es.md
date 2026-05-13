@@ -6,8 +6,8 @@ El nodo LoadImageMask está diseñado para cargar imágenes y sus máscaras asoc
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | COMBO[STRING] | El parámetro `image` especifica el archivo de imagen que se cargará y procesará. Desempeña un papel crucial en la determinación de la salida al proporcionar la imagen de origen para la extracción de la máscara y la conversión de formato. |
-| `channel` | COMBO[STRING] | El parámetro `channel` especifica el canal de color de la imagen que se utilizará para generar la máscara. Esto permite flexibilidad en la creación de máscaras basadas en diferentes canales de color, mejorando la utilidad del nodo en diversos escenarios de procesamiento de imágenes. |
+| `imagen`   | COMBO[STRING] | El parámetro `imagen` especifica el archivo de imagen que se cargará y procesará. Desempeña un papel crucial en la determinación de la salida al proporcionar la imagen de origen para la extracción de la máscara y la conversión de formato. |
+| `canal` | COMBO[STRING] | El parámetro `canal` especifica el canal de color de la imagen que se utilizará para generar la máscara. Esto permite flexibilidad en la creación de máscaras basadas en diferentes canales de color, mejorando la utilidad del nodo en diversos escenarios de procesamiento de imágenes. |
 
 ## Salidas
 

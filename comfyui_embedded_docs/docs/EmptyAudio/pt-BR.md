@@ -6,9 +6,9 @@ O nó EmptyAudio gera um clipe de áudio silencioso com duração, taxa de amost
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `duration` | FLOAT | Sim | 0,0 a 1,8446744073709552e+19 | Duração do clipe de áudio vazio em segundos (padrão: 60,0) |
-| `sample_rate` | INT | Sim | 1 a 192000 | Taxa de amostragem do clipe de áudio vazio (padrão: 44100) |
-| `channels` | INT | Sim | 1 a 2 | Número de canais de áudio (1 para mono, 2 para estéreo) (padrão: 2) |
+| `duração` | FLOAT | Sim | 0,0 a 1,8446744073709552e+19 | Duração do clipe de áudio vazio em segundos (padrão: 60,0) |
+| `taxa_de_amostragem` | INT | Sim | 1 a 192000 | Taxa de amostragem do clipe de áudio vazio (padrão: 44100) |
+| `canais` | INT | Sim | 1 a 2 | Número de canais de áudio (1 para mono, 2 para estéreo) (padrão: 2) |
 
 ## Saídas
 

@@ -6,8 +6,8 @@ El nodo CFGNorm aplica una técnica de normalización al proceso de guía sin cl
 
 | Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
 |-----------|--------------|-----------------|-------------------|-------|-------------|
-| `model` | MODEL | requerido | - | - | El modelo de difusión al que se le aplicará la normalización CFG |
-| `strength` | FLOAT | requerido | 1.0 | 0.0 - 100.0 | Controla la intensidad del efecto de normalización aplicado al escalado CFG |
+| `modelo` | MODEL | requerido | - | - | El modelo de difusión al que se le aplicará la normalización CFG |
+| `intensidad` | FLOAT | requerido | 1.0 | 0.0 - 100.0 | Controla la intensidad del efecto de normalización aplicado al escalado CFG |
 
 ## Salidas
 

@@ -27,8 +27,8 @@ Le nœud Kling Start-End Frame to Video crée une séquence vidéo qui effectue 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `output` | VIDEO | La séquence vidéo générée |
-| `video_id` | STRING | Identifiant unique de la vidéo générée |
+| `video_id` | VIDEO | La séquence vidéo générée |
+| `duration` | STRING | Identifiant unique de la vidéo générée |
 | `duration` | STRING | Durée de la vidéo générée |
 
 ---

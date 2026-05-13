@@ -6,15 +6,15 @@ Le nœud Wan22FunControlToVideo prépare les représentations de conditionnement
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | Entrée de conditionnement positif pour guider la génération vidéo |
-| `negative` | CONDITIONING | Oui | - | Entrée de conditionnement négatif pour guider la génération vidéo |
+| `positif` | CONDITIONING | Oui | - | Entrée de conditionnement positif pour guider la génération vidéo |
+| `négatif` | CONDITIONING | Oui | - | Entrée de conditionnement négatif pour guider la génération vidéo |
 | `vae` | VAE | Oui | - | Modèle VAE utilisé pour encoder les images dans l'espace latent |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (défaut : 832, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la séquence vidéo (défaut : 81, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de séquences vidéo à générer (défaut : 1) |
-| `ref_image` | IMAGE | Non | - | Image de référence optionnelle pour fournir un guidage visuel |
-| `control_video` | IMAGE | Non | - | Vidéo de contrôle optionnelle pour guider le processus de génération |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (défaut : 832, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la séquence vidéo (défaut : 81, pas : 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Nombre de séquences vidéo à générer (défaut : 1) |
+| `image_de_référence` | IMAGE | Non | - | Image de référence optionnelle pour fournir un guidage visuel |
+| `vidéo_de_contrôle` | IMAGE | Non | - | Vidéo de contrôle optionnelle pour guider le processus de génération |
 
 **Remarque :** Le paramètre `length` est traité par blocs de 4 images, et le nœud gère automatiquement la mise à l'échelle temporelle pour l'espace latent. Lorsque `ref_image` est fourni, il influence le conditionnement via les latentes de référence. Lorsque `control_video` est fourni, il affecte directement la représentation latente concaténée utilisée dans le conditionnement. Le paramètre `start_image` n'est pas exposé en tant qu'entrée dans le schéma de ce nœud, mais est référencé dans la logique d'exécution.
 
@@ -22,8 +22,8 @@ Le nœud Wan22FunControlToVideo prépare les représentations de conditionnement
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles |
-| `negative` | CONDITIONING | Conditionnement négatif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles |
+| `négatif` | CONDITIONING | Conditionnement positif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles |
+| `latent` | CONDITIONING | Conditionnement négatif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles |
 | `latent` | LATENT | Tenseur latent vide avec des dimensions appropriées pour la génération vidéo, basé sur la taille du lot, les canaux latents et la mise à l'échelle spatiale/temporelle |
 
 ---

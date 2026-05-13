@@ -6,8 +6,8 @@ Este nó cria um estilo personalizado para geração de imagens através do uplo
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `style` | STRING | Sim | `"realistic_image"`<br>`"digital_illustration"` | O estilo base das imagens geradas. |
-| `images` | IMAGE | Sim | 1 a 5 imagens | Um conjunto de 1 a 5 imagens de referência usadas para criar o estilo personalizado. |
+| `estilo` | STRING | Sim | `"realistic_image"`<br>`"digital_illustration"` | O estilo base das imagens geradas. |
+| `imagens` | IMAGE | Sim | 1 a 5 imagens | Um conjunto de 1 a 5 imagens de referência usadas para criar o estilo personalizado. |
 
 **Observação:** O tamanho total do arquivo de todas as imagens na entrada `images` deve ser inferior a 5 MB. O nó falhará se esse limite for excedido.
 

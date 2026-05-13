@@ -6,10 +6,10 @@ O nó LatentCut extrai uma seção específica de amostras latentes ao longo de 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `samples` | LATENT | Sim | - | As amostras latentes de entrada das quais extrair |
-| `dim` | COMBO | Sim | "x"<br>"y"<br>"t" | A dimensão ao longo da qual cortar as amostras latentes |
-| `index` | INT | Sim | -16384 a 16384 | A posição inicial para o corte (padrão: 0). Valores positivos contam a partir do início, valores negativos contam a partir do final. O nó ajusta automaticamente o índice para permanecer dentro do intervalo válido das amostras latentes |
-| `amount` | INT | Sim | 1 a 16384 | O número de elementos a extrair ao longo da dimensão especificada (padrão: 1). O nó reduz automaticamente esse valor se exceder os dados disponíveis além do índice inicial |
+| `amostras` | LATENT | Sim | - | As amostras latentes de entrada das quais extrair |
+| `dimensão` | COMBO | Sim | "x"<br>"y"<br>"t" | A dimensão ao longo da qual cortar as amostras latentes |
+| `índice` | INT | Sim | -16384 a 16384 | A posição inicial para o corte (padrão: 0). Valores positivos contam a partir do início, valores negativos contam a partir do final. O nó ajusta automaticamente o índice para permanecer dentro do intervalo válido das amostras latentes |
+| `quantidade` | INT | Sim | 1 a 16384 | O número de elementos a extrair ao longo da dimensão especificada (padrão: 1). O nó reduz automaticamente esse valor se exceder os dados disponíveis além do índice inicial |
 
 ## Saídas
 

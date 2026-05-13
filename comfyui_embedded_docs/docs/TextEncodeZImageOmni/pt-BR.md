@@ -7,13 +7,13 @@ O nó TextEncodeZImageOmni é um nó de condicionamento avançado que codifica u
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `clip` | CLIP | Sim | | O modelo CLIP usado para tokenizar e codificar o prompt de texto. |
-| `image_encoder` | CLIPVision | Não | | Um modelo de codificador de visão opcional. Se fornecido, será usado para codificar as imagens de entrada, e os embeddings resultantes serão adicionados ao condicionamento. |
+| `codificador_de_imagem` | CLIPVision | Não | | Um modelo de codificador de visão opcional. Se fornecido, será usado para codificar as imagens de entrada, e os embeddings resultantes serão adicionados ao condicionamento. |
 | `prompt` | STRING | Sim | | O prompt de texto a ser codificado. Este campo suporta entrada multilinha e prompts dinâmicos. |
-| `auto_resize_images` | BOOLEAN | Não | | Quando ativado (padrão: Verdadeiro), as imagens de entrada serão redimensionadas automaticamente com base em sua área de pixels antes de serem passadas para o VAE para codificação. |
+| `redimensionar_imagens_automaticamente` | BOOLEAN | Não | | Quando ativado (padrão: Verdadeiro), as imagens de entrada serão redimensionadas automaticamente com base em sua área de pixels antes de serem passadas para o VAE para codificação. |
 | `vae` | VAE | Não | | Um modelo VAE opcional. Se fornecido, será usado para codificar as imagens de entrada em representações latentes, que são adicionadas ao condicionamento como latentes de referência. |
-| `image1` | IMAGE | Não | | A primeira imagem de referência opcional. |
-| `image2` | IMAGE | Não | | A segunda imagem de referência opcional. |
-| `image3` | IMAGE | Não | | A terceira imagem de referência opcional. |
+| `imagem1` | IMAGE | Não | | A primeira imagem de referência opcional. |
+| `imagem2` | IMAGE | Não | | A segunda imagem de referência opcional. |
+| `imagem3` | IMAGE | Não | | A terceira imagem de referência opcional. |
 
 **Nota:** O nó pode aceitar no máximo três imagens (`image1`, `image2`, `image3`). As entradas `image_encoder` e `vae` só são utilizadas se pelo menos uma imagem for fornecida. Quando `auto_resize_images` está ativado e um `vae` está conectado, as imagens são redimensionadas para ter uma área total de pixels próxima a 1024x1024 antes da codificação.
 

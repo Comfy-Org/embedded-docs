@@ -6,13 +6,13 @@ Gera vídeos baseados em uma imagem de entrada e um prompt de texto. Este nó re
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | Imagem de entrada para transformar em vídeo |
+| `imagem` | IMAGE | Sim | - | Imagem de entrada para transformar em vídeo |
 | `prompt` | STRING | Sim | - | Prompt para a geração do vídeo |
-| `quality` | COMBO | Sim | `res_540p`<br>`res_1080p` | Configuração de qualidade do vídeo (padrão: res_540p) |
-| `duration_seconds` | COMBO | Sim | `dur_2`<br>`dur_5`<br>`dur_10` | Duração do vídeo gerado em segundos |
-| `motion_mode` | COMBO | Sim | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` | Estilo de movimento aplicado à geração do vídeo |
-| `seed` | INT | Sim | 0-2147483647 | Semente para geração do vídeo (padrão: 0) |
-| `negative_prompt` | STRING | Não | - | Uma descrição textual opcional de elementos indesejados na imagem |
+| `qualidade` | COMBO | Sim | `res_540p`<br>`res_1080p` | Configuração de qualidade do vídeo (padrão: res_540p) |
+| `duração_segundos` | COMBO | Sim | `dur_2`<br>`dur_5`<br>`dur_10` | Duração do vídeo gerado em segundos |
+| `modo_de_movimento` | COMBO | Sim | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` | Estilo de movimento aplicado à geração do vídeo |
+| `semente` | INT | Sim | 0-2147483647 | Semente para geração do vídeo (padrão: 0) |
+| `prompt_negativo` | STRING | Não | - | Uma descrição textual opcional de elementos indesejados na imagem |
 | `pixverse_template` | CUSTOM | Não | - | Um modelo opcional para influenciar o estilo da geração, criado pelo nó PixVerse Template |
 
 **Observação:** Ao usar qualidade 1080p, o modo de movimento é automaticamente definido como normal e a duração é limitada a 5 segundos. Para durações diferentes de 5 segundos, o modo de movimento também é automaticamente definido como normal.

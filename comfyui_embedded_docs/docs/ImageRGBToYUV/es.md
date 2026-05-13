@@ -6,14 +6,14 @@ El nodo ImageRGBToYUV convierte imágenes en color RGB al espacio de color YUV. 
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen RGB de entrada que se convertirá al espacio de color YUV |
+| `imagen` | IMAGE | Sí | - | La imagen RGB de entrada que se convertirá al espacio de color YUV |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `Y` | IMAGE | El componente de luminancia (brillo) del espacio de color YUV |
-| `U` | IMAGE | El componente de proyección azul del espacio de color YUV |
+| `U` | IMAGE | El componente de luminancia (brillo) del espacio de color YUV |
+| `V` | IMAGE | El componente de proyección azul del espacio de color YUV |
 | `V` | IMAGE | El componente de proyección roja del espacio de color YUV |
 
 ---

@@ -8,13 +8,13 @@ Transforme des échantillons audio existants en nouvelles compositions de haute 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | "stable-audio-2.5" | Le modèle d'IA à utiliser pour la transformation audio |
-| `prompt` | STRING | Oui | | Instructions textuelles décrivant comment transformer l'audio (par défaut : vide) |
+| `modèle` | COMBO | Oui | "stable-audio-2.5" | Le modèle d'IA à utiliser pour la transformation audio |
+| `consigne` | STRING | Oui | | Instructions textuelles décrivant comment transformer l'audio (par défaut : vide) |
 | `audio` | AUDIO | Oui | | L'audio doit durer entre 6 et 190 secondes |
-| `duration` | INT | Non | 1-190 | Contrôle la durée en secondes de l'audio généré (par défaut : 190) |
-| `seed` | INT | Non | 0-4294967294 | La graine aléatoire utilisée pour la génération (par défaut : 0) |
-| `steps` | INT | Non | 4-8 | Contrôle le nombre d'étapes d'échantillonnage (par défaut : 8) |
-| `strength` | FLOAT | Non | 0.01-1.0 | Ce paramètre contrôle l'influence du paramètre audio sur l'audio généré (par défaut : 1.0) |
+| `durée` | INT | Non | 1-190 | Contrôle la durée en secondes de l'audio généré (par défaut : 190) |
+| `graine` | INT | Non | 0-4294967294 | La graine aléatoire utilisée pour la génération (par défaut : 0) |
+| `étapes` | INT | Non | 4-8 | Contrôle le nombre d'étapes d'échantillonnage (par défaut : 8) |
+| `intensité` | FLOAT | Non | 0.01-1.0 | Ce paramètre contrôle l'influence du paramètre audio sur l'audio généré (par défaut : 1.0) |
 
 **Remarque :** L'audio d'entrée doit durer entre 6 et 190 secondes.
 

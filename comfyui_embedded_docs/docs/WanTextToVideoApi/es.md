@@ -34,17 +34,17 @@ El nodo Wan Text to Video genera contenido de video basado en descripciones text
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | "wan2.5-t2v-preview"<br>"wan2.6-t2v" | Modelo a utilizar (predeterminado: "wan2.6-t2v") |
-| `prompt` | STRING | Sí | - | Indicación que describe los elementos y características visuales. Admite inglés y chino (predeterminado: "") |
-| `negative_prompt` | STRING | No | - | Indicación negativa que describe lo que se debe evitar (predeterminado: "") |
-| `size` | COMBO | No | "480p: 1:1 (624x624)"<br>"480p: 16:9 (832x480)"<br>"480p: 9:16 (480x832)"<br>"720p: 1:1 (960x960)"<br>"720p: 16:9 (1280x720)"<br>"720p: 9:16 (720x1280)"<br>"720p: 4:3 (1088x832)"<br>"720p: 3:4 (832x1088)"<br>"1080p: 1:1 (1440x1440)"<br>"1080p: 16:9 (1920x1080)"<br>"1080p: 9:16 (1080x1920)"<br>"1080p: 4:3 (1632x1248)"<br>"1080p: 3:4 (1248x1632)" | Resolución y relación de aspecto del video (predeterminado: "720p: 1:1 (960x960)") |
-| `duration` | INT | No | 5-15 (en incrementos de 5) | Duración del video en segundos. Una duración de 15 segundos solo está disponible para el modelo Wan 2.6 (predeterminado: 5) |
+| `modelo` | COMBO | Sí | "wan2.5-t2v-preview"<br>"wan2.6-t2v" | Modelo a utilizar (predeterminado: "wan2.6-t2v") |
+| `texto_descriptivo` | STRING | Sí | - | Indicación que describe los elementos y características visuales. Admite inglés y chino (predeterminado: "") |
+| `texto_negativo` | STRING | No | - | Indicación negativa que describe lo que se debe evitar (predeterminado: "") |
+| `tamaño` | COMBO | No | "480p: 1:1 (624x624)"<br>"480p: 16:9 (832x480)"<br>"480p: 9:16 (480x832)"<br>"720p: 1:1 (960x960)"<br>"720p: 16:9 (1280x720)"<br>"720p: 9:16 (720x1280)"<br>"720p: 4:3 (1088x832)"<br>"720p: 3:4 (832x1088)"<br>"1080p: 1:1 (1440x1440)"<br>"1080p: 16:9 (1920x1080)"<br>"1080p: 9:16 (1080x1920)"<br>"1080p: 4:3 (1632x1248)"<br>"1080p: 3:4 (1248x1632)" | Resolución y relación de aspecto del video (predeterminado: "720p: 1:1 (960x960)") |
+| `duración` | INT | No | 5-15 (en incrementos de 5) | Duración del video en segundos. Una duración de 15 segundos solo está disponible para el modelo Wan 2.6 (predeterminado: 5) |
 | `audio` | AUDIO | No | - | El audio debe contener una voz clara y fuerte, sin ruidos extraños ni música de fondo |
-| `seed` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0) |
-| `generate_audio` | BOOLEAN | No | - | Si no se proporciona entrada de audio, generar audio automáticamente (predeterminado: False) |
-| `prompt_extend` | BOOLEAN | No | - | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) |
-| `watermark` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False) |
-| `shot_type` | COMBO | No | "single"<br>"multi" | Especifica el tipo de toma para el video generado, es decir, si el video es una sola toma continua o múltiples tomas con cortes. Este parámetro solo tiene efecto cuando prompt_extend es True (predeterminado: "single") |
+| `semilla` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0) |
+| `generar_audio` | BOOLEAN | No | - | Si no se proporciona entrada de audio, generar audio automáticamente (predeterminado: False) |
+| `extender_texto` | BOOLEAN | No | - | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) |
+| `marca_de_agua` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False) |
+| `tipo_de_toma` | COMBO | No | "single"<br>"multi" | Especifica el tipo de toma para el video generado, es decir, si el video es una sola toma continua o múltiples tomas con cortes. Este parámetro solo tiene efecto cuando prompt_extend es True (predeterminado: "single") |
 
 **Nota:** El modelo Wan 2.6 no admite resoluciones 480p. Una duración de 15 segundos solo es compatible con el modelo Wan 2.6. Al proporcionar entrada de audio, esta debe tener una duración entre 3.0 y 29.0 segundos y contener voz clara sin ruido de fondo ni música.
 

@@ -7,7 +7,7 @@ Bu düğüm, bir modele ayrık örnekleme stratejisi uygulayarak modelin örnekl
 | Parametre | Veri Türü | Python dtype     | Açıklama |
 |-----------|--------------|-------------------|-------------|
 | `model`   | MODEL     | `torch.nn.Module` | Ayrık örnekleme stratejisinin uygulanacağı model. Bu parametre, değişikliğe uğrayacak temel modeli tanımladığı için kritik öneme sahiptir. |
-| `sampling`| COMBO[STRING] | `str`           | Modele uygulanacak ayrık örnekleme yöntemini belirtir. Yöntem seçimi, modelin örnekleri nasıl oluşturduğunu etkiler ve örnekleme için farklı stratejiler sunar. |
+| `örnekleme`| COMBO[STRING] | `str`           | Modele uygulanacak ayrık örnekleme yöntemini belirtir. Yöntem seçimi, modelin örnekleri nasıl oluşturduğunu etkiler ve örnekleme için farklı stratejiler sunar. |
 | `zsnr`    | `BOOLEAN`   | `bool`           | Etkinleştirildiğinde, modelin gürültü azaltma stratejisini sıfır atışlı gürültü oranına göre ayarlayan bir boolean işaretidir. Bu, oluşturulan örneklerin kalitesini ve özelliklerini etkileyebilir. |
 
 ## Çıktılar

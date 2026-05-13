@@ -6,7 +6,7 @@ Le nœud Mahiro modifie la fonction de guidage pour se concentrer davantage sur 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | | Le modèle à patcher avec la fonction de guidage modifiée |
+| `modèle` | MODEL | Oui | | Le modèle à patcher avec la fonction de guidage modifiée |
 
 ## Sorties
 

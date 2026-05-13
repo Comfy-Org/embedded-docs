@@ -7,12 +7,12 @@ DualCFGGuider düğümü, çift sınıflandırıcısız yönlendirme örneklemes
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|----------|
 | `model` | MODEL | Evet | - | Yönlendirme için kullanılacak model |
-| `cond1` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girdisi |
-| `cond2` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Negatif koşullandırma girdisi |
-| `cfg_conds` | FLOAT | Evet | 0.0 - 100.0 | İlk pozitif koşullandırma için yönlendirme ölçeği (varsayılan: 8.0) |
-| `cfg_cond2_negative` | FLOAT | Evet | 0.0 - 100.0 | İkinci pozitif ve negatif koşullandırma için yönlendirme ölçeği (varsayılan: 8.0) |
-| `style` | COMBO | Evet | "regular"<br>"nested" | Uygulanacak yönlendirme stili (varsayılan: "regular"). "nested" olarak ayarlandığında yönlendirme iç içe bir şekilde uygulanır |
+| `koşul1` | CONDITIONING | Evet | - | İlk pozitif koşullandırma girdisi |
+| `koşul2` | CONDITIONING | Evet | - | İkinci pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Negatif koşullandırma girdisi |
+| `cfg_koşulları` | FLOAT | Evet | 0.0 - 100.0 | İlk pozitif koşullandırma için yönlendirme ölçeği (varsayılan: 8.0) |
+| `cfg_koşul2_negatif` | FLOAT | Evet | 0.0 - 100.0 | İkinci pozitif ve negatif koşullandırma için yönlendirme ölçeği (varsayılan: 8.0) |
+| `stil` | COMBO | Evet | "regular"<br>"nested" | Uygulanacak yönlendirme stili (varsayılan: "regular"). "nested" olarak ayarlandığında yönlendirme iç içe bir şekilde uygulanır |
 
 ## Çıktılar
 

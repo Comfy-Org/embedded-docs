@@ -6,10 +6,10 @@ LatentCut düğümü, gizli örneklerden seçilen bir boyut boyunca belirli bir 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | Çıkarım yapılacak giriş gizli örnekleri |
-| `dim` | COMBO | Evet | "x"<br>"y"<br>"t" | Gizli örneklerin hangi boyut boyunca kesileceği |
-| `index` | INT | Evet | -16384 ila 16384 | Kesme işlemi için başlangıç konumu (varsayılan: 0). Pozitif değerler baştan, negatif değerler sondan sayar. Düğüm, indeksi gizli örneklerin geçerli aralığında kalacak şekilde otomatik olarak sınırlar |
-| `amount` | INT | Evet | 1 ila 16384 | Belirtilen boyut boyunca çıkarılacak öğe sayısı (varsayılan: 1). Düğüm, bu değer başlangıç indeksinin ötesindeki mevcut veriyi aşarsa otomatik olarak azaltır |
+| `örnekler` | LATENT | Evet | - | Çıkarım yapılacak giriş gizli örnekleri |
+| `boyut` | COMBO | Evet | "x"<br>"y"<br>"t" | Gizli örneklerin hangi boyut boyunca kesileceği |
+| `dizin` | INT | Evet | -16384 ila 16384 | Kesme işlemi için başlangıç konumu (varsayılan: 0). Pozitif değerler baştan, negatif değerler sondan sayar. Düğüm, indeksi gizli örneklerin geçerli aralığında kalacak şekilde otomatik olarak sınırlar |
+| `miktar` | INT | Evet | 1 ila 16384 | Belirtilen boyut boyunca çıkarılacak öğe sayısı (varsayılan: 1). Düğüm, bu değer başlangıç indeksinin ötesindeki mevcut veriyi aşarsa otomatik olarak azaltır |
 
 ## Çıkışlar
 

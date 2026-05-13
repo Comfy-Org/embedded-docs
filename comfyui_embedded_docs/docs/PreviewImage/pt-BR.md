@@ -6,7 +6,7 @@ O nó PreviewImage é projetado para criar imagens de pré-visualização tempor
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `images`  | `IMAGE`       | A entrada 'images' especifica as imagens a serem processadas e salvas como imagens de pré-visualização temporárias. Esta é a entrada principal do nó, determinando quais imagens passarão pelo processo de geração de pré-visualização. |
+| `imagens`  | `IMAGE`       | A entrada 'images' especifica as imagens a serem processadas e salvas como imagens de pré-visualização temporárias. Esta é a entrada principal do nó, determinando quais imagens passarão pelo processo de geração de pré-visualização. |
 
 ## Saídas
 

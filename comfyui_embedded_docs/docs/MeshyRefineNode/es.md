@@ -6,11 +6,11 @@ El nodo **Meshy: Refinar Modelo Borrador** toma un modelo 3D borrador generado p
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"latest"` | Especifica el modelo de IA a utilizar para el refinamiento. Actualmente, solo está disponible el modelo "latest". |
+| `modelo` | COMBO | Sí | `"latest"` | Especifica el modelo de IA a utilizar para el refinamiento. Actualmente, solo está disponible el modelo "latest". |
 | `meshy_task_id` | MESHY_TASK_ID | Sí | - | El ID de tarea único del modelo borrador que deseas refinar. |
-| `enable_pbr` | BOOLEAN | No | - | Generar mapas PBR (metálico, rugosidad, normal) además del color base. Nota: debe establecerse en falso al usar el estilo Escultura, ya que este estilo genera su propio conjunto de mapas PBR. (predeterminado: `False`) |
-| `texture_prompt` | STRING | No | - | Proporciona un prompt de texto para guiar el proceso de texturizado. Máximo 600 caracteres. No puede usarse al mismo tiempo que `texture_image`. (predeterminado: cadena vacía) |
-| `texture_image` | IMAGE | No | - | Solo se puede usar uno de los dos: `texture_image` o `texture_prompt` al mismo tiempo. |
+| `habilitar_pbr` | BOOLEAN | No | - | Generar mapas PBR (metálico, rugosidad, normal) además del color base. Nota: debe establecerse en falso al usar el estilo Escultura, ya que este estilo genera su propio conjunto de mapas PBR. (predeterminado: `False`) |
+| `texto_de_textura` | STRING | No | - | Proporciona un prompt de texto para guiar el proceso de texturizado. Máximo 600 caracteres. No puede usarse al mismo tiempo que `imagen_de_textura`. (predeterminado: cadena vacía) |
+| `imagen_de_textura` | IMAGE | No | - | Solo se puede usar uno de los dos: `imagen_de_textura` o `texto_de_textura` al mismo tiempo. |
 
 **Nota:** Las entradas `texture_prompt` y `texture_image` son mutuamente excluyentes. No puedes proporcionar tanto un prompt de texto como una imagen para texturizar en la misma operación.
 
@@ -18,9 +18,9 @@ El nodo **Meshy: Refinar Modelo Borrador** toma un modelo 3D borrador generado p
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model_file` | STRING | El nombre del archivo del modelo GLB generado. (Solo por compatibilidad hacia atrás) |
-| `meshy_task_id` | MESHY_TASK_ID | El ID de tarea único para el trabajo de refinamiento enviado. |
-| `GLB` | FILE3DGLB | El modelo 3D final refinado en formato GLB. |
+| `meshy_task_id` | STRING | El nombre del archivo del modelo GLB generado. (Solo por compatibilidad hacia atrás) |
+| `GLB` | MESHY_TASK_ID | El ID de tarea único para el trabajo de refinamiento enviado. |
+| `FBX` | FILE3DGLB | El modelo 3D final refinado en formato GLB. |
 | `FBX` | FILE3DFBX | El modelo 3D final refinado en formato FBX. |
 
 ---

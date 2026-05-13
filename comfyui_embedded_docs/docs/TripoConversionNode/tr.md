@@ -6,12 +6,12 @@ TripoConversionNode, Tripo API'sini kullanarak 3B modelleri farklı dosya format
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Evet | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | Önceki bir Tripo işleminden (model oluşturma, iskeletleme veya yeniden hedefleme) alınan görev kimliği |
-| `format` | COMBO | Evet | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | Dönüştürülen 3B model için hedef dosya formatı |
-| `quad` | BOOLEAN | Hayır | True/False | Üçgenlerin dörtgenlere dönüştürülüp dönüştürülmeyeceği (varsayılan: False) |
-| `face_limit` | INT | Hayır | -1 ile 2000000 | Çıktı modelindeki maksimum yüz sayısı, sınırsız için -1 kullanın (varsayılan: -1) |
-| `texture_size` | INT | Hayır | 128 ile 4096 | Çıktı dokularının piksel cinsinden boyutu (varsayılan: 4096) |
-| `texture_format` | COMBO | Hayır | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Dışa aktarılan dokular için format (varsayılan: JPEG) |
+| `orijinal_model_görev_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Evet | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | Önceki bir Tripo işleminden (model oluşturma, iskeletleme veya yeniden hedefleme) alınan görev kimliği |
+| `biçim` | COMBO | Evet | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | Dönüştürülen 3B model için hedef dosya formatı |
+| `dörtlü` | BOOLEAN | Hayır | True/False | Üçgenlerin dörtgenlere dönüştürülüp dönüştürülmeyeceği (varsayılan: False) |
+| `yüz_sınırı` | INT | Hayır | -1 ile 2000000 | Çıktı modelindeki maksimum yüz sayısı, sınırsız için -1 kullanın (varsayılan: -1) |
+| `doku_boyutu` | INT | Hayır | 128 ile 4096 | Çıktı dokularının piksel cinsinden boyutu (varsayılan: 4096) |
+| `doku_biçimi` | COMBO | Hayır | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Dışa aktarılan dokular için format (varsayılan: JPEG) |
 | `force_symmetry` | BOOLEAN | Hayır | True/False | Modelde simetrinin zorlanıp zorlanmayacağı (varsayılan: False) |
 | `flatten_bottom` | BOOLEAN | Hayır | True/False | Modelin tabanının düzleştirilip düzleştirilmeyeceği (varsayılan: False) |
 | `flatten_bottom_threshold` | FLOAT | Hayır | 0.0 ile 1.0 | Taban düzleştirme eşiği (varsayılan: 0.0) |

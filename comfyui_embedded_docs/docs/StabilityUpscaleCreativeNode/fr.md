@@ -10,10 +10,10 @@ Ce nœud agrandit l'image avec un minimum de modifications jusqu'à une résolut
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à agrandir |
 | `prompt` | STRING | Oui | - | Ce que vous souhaitez voir dans l'image de sortie. Un prompt fort et descriptif définissant clairement les éléments, couleurs et sujets donnera de meilleurs résultats. (par défaut : chaîne vide) |
-| `creativity` | FLOAT | Oui | 0.1-0.5 | Contrôle la probabilité de créer des détails supplémentaires non fortement conditionnés par l'image initiale. (par défaut : 0.3) |
-| `style_preset` | STRING | Oui | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | Style souhaité pour l'image générée (optionnel). (par défaut : "None") |
-| `seed` | INT | Oui | 0-4294967294 | La graine aléatoire utilisée pour créer le bruit. (par défaut : 0) |
-| `negative_prompt` | STRING | Non | - | Mots-clés de ce que vous ne souhaitez pas voir dans l'image de sortie. Il s'agit d'une fonctionnalité avancée. (par défaut : chaîne vide) |
+| `créativité` | FLOAT | Oui | 0.1-0.5 | Contrôle la probabilité de créer des détails supplémentaires non fortement conditionnés par l'image initiale. (par défaut : 0.3) |
+| `style_prédéfini` | STRING | Oui | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | Style souhaité pour l'image générée (optionnel). (par défaut : "None") |
+| `graine` | INT | Oui | 0-4294967294 | La graine aléatoire utilisée pour créer le bruit. (par défaut : 0) |
+| `prompt_négatif` | STRING | Non | - | Mots-clés de ce que vous ne souhaitez pas voir dans l'image de sortie. Il s'agit d'une fonctionnalité avancée. (par défaut : chaîne vide) |
 
 ## Sorties
 

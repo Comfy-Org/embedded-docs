@@ -7,7 +7,7 @@ Este nodo añade un sufijo especificado al final de una cadena de texto de entra
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `text` | STRING | Sí | | El texto original al que se añadirá el sufijo. |
-| `suffix` | STRING | No | | El sufijo que se añadirá al texto (predeterminado: ""). |
+| `sufijo` | STRING | No | | El sufijo que se añadirá al texto (predeterminado: ""). |
 
 ## Salidas
 

@@ -20,7 +20,7 @@ Este nodo crea un activo de video personal para Seedance 2.0. Carga tu video de 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `asset_id` | STRING | El identificador único para el activo de video recién creado. |
+| `group_id` | STRING | El identificador único para el activo de video recién creado. |
 | `group_id` | STRING | El identificador del grupo de activos que contiene el nuevo video. Será el `group_id` proporcionado o uno recién creado. |
 
 ---

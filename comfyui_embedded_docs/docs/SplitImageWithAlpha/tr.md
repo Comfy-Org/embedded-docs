@@ -6,11 +6,11 @@ SplitImageWithAlpha düğümü, bir görüntünün renk ve alfa bileşenlerini a
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | 'image' parametresi, RGB ve alfa kanallarının ayrılacağı giriş görüntü tensorunu temsil eder. Ayırma işlemi için kaynak veriyi sağladığından işlem açısından kritik öneme sahiptir. |
+| `görüntü`   | `IMAGE`     | 'image' parametresi, RGB ve alfa kanallarının ayrılacağı giriş görüntü tensorunu temsil eder. Ayırma işlemi için kaynak veriyi sağladığından işlem açısından kritik öneme sahiptir. |
 
 ## Çıkışlar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | 'image' çıkışı, giriş görüntüsünün ayrılmış RGB kanallarını temsil eder ve saydamlık bilgisi olmadan renk bileşenini sağlar. |
+| `görüntü`   | `IMAGE`     | 'image' çıkışı, giriş görüntüsünün ayrılmış RGB kanallarını temsil eder ve saydamlık bilgisi olmadan renk bileşenini sağlar. |
 | `mask`    | `MASK`      | 'mask' çıkışı, giriş görüntüsünün ayrılmış alfa kanalını temsil eder ve saydamlık bilgisini sağlar. |

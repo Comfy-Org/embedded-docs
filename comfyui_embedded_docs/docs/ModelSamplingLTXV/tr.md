@@ -7,9 +7,9 @@ ModelSamplingLTXV düğümü, token sayısına bağlı olarak bir modele gelişm
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-----------|
 | `model` | MODEL | Evet | - | Örnekleme parametrelerinin uygulanacağı giriş modeli |
-| `max_shift` | FLOAT | Evet | 0,0 - 100,0 | Doğrusal enterpolasyon hesaplamasında kullanılan maksimum kaydırma değeri (varsayılan: 2,05) |
-| `base_shift` | FLOAT | Evet | 0,0 - 100,0 | Doğrusal enterpolasyon hesaplamasında kullanılan temel kaydırma değeri (varsayılan: 0,95) |
-| `latent` | LATENT | Hayır | - | Kaydırma hesaplaması için token sayısını belirlemek amacıyla kullanılan isteğe bağlı latent girişi. Sağlanmazsa, varsayılan token sayısı olarak 4096 kullanılır |
+| `maks_kaydırma` | FLOAT | Evet | 0,0 - 100,0 | Doğrusal enterpolasyon hesaplamasında kullanılan maksimum kaydırma değeri (varsayılan: 2,05) |
+| `temel_kaydırma` | FLOAT | Evet | 0,0 - 100,0 | Doğrusal enterpolasyon hesaplamasında kullanılan temel kaydırma değeri (varsayılan: 0,95) |
+| `gizli` | LATENT | Hayır | - | Kaydırma hesaplaması için token sayısını belirlemek amacıyla kullanılan isteğe bağlı latent girişi. Sağlanmazsa, varsayılan token sayısı olarak 4096 kullanılır |
 
 ## Çıktılar
 

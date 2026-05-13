@@ -6,9 +6,9 @@ El nodo LatentConcat combina dos muestras latentes uniéndolas a lo largo de una
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `samples1` | LATENT | Sí | - | La primera muestra latente a concatenar |
-| `samples2` | LATENT | Sí | - | La segunda muestra latente a concatenar |
-| `dim` | COMBO | Sí | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | La dimensión a lo largo de la cual concatenar las muestras latentes. Los valores positivos (x, y, t) colocan samples1 antes de samples2 en el resultado. Los valores negativos (-x, -y, -t) colocan samples2 antes de samples1. La correspondencia de dimensiones es: x = ancho, y = alto, t = tiempo/fotogramas |
+| `muestras1` | LATENT | Sí | - | La primera muestra latente a concatenar |
+| `muestras2` | LATENT | Sí | - | La segunda muestra latente a concatenar |
+| `dimensión` | COMBO | Sí | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | La dimensión a lo largo de la cual concatenar las muestras latentes. Los valores positivos (x, y, t) colocan samples1 antes de samples2 en el resultado. Los valores negativos (-x, -y, -t) colocan samples2 antes de samples1. La correspondencia de dimensiones es: x = ancho, y = alto, t = tiempo/fotogramas |
 
 **Nota:** La segunda muestra latente (`samples2`) se ajusta automáticamente para que coincida con el tamaño del lote de la primera muestra latente (`samples1`) antes de la concatenación.
 

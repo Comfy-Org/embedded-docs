@@ -6,14 +6,14 @@ Eğri Düzenleyici düğümü, bir eğriyi ayarlamak ve ince ayar yapmak için g
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `curve` | CURVE | Evet | Yok | Düzenlenecek giriş eğrisi. |
+| `eğri` | CURVE | Evet | Yok | Düzenlenecek giriş eğrisi. |
 | `histogram` | HISTOGRAM | Hayır | Yok | Görsel referans için eğrinin yanında görüntülenecek isteğe bağlı histogram. |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `curve` | CURVE | Düğüm arayüzünde yapılan ayarlamalar sonrasında düzenlenmiş eğri. |
+| `eğri` | CURVE | Düğüm arayüzünde yapılan ayarlamalar sonrasında düzenlenmiş eğri. |
 
 ---
 **Source fingerprint (SHA-256):** `34cf36a5b934c44ebfce0b81e7c515f1b31fb17f3b7e1ad52255d1d72f68240b`

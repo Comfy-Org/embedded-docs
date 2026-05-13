@@ -6,8 +6,8 @@ Este nó utiliza a API Tencent Hunyuan3D para realizar o desdobramento UV em um 
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `model_3d` | FILE3D | Sim | GLB<br>OBJ<br>FBX | Modelo 3D de entrada (GLB, OBJ ou FBX). O modelo deve ter menos de 30.000 faces. |
-| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente (padrão: 1). Isso controla se o nó deve ser executado novamente, mas os resultados são não determinísticos independentemente do valor da semente. |
+| `modelo_3d` | FILE3D | Sim | GLB<br>OBJ<br>FBX | Modelo 3D de entrada (GLB, OBJ ou FBX). O modelo deve ter menos de 30.000 faces. |
+| `semente` | INT | Não | 0 a 2147483647 | Um valor de semente (padrão: 1). Isso controla se o nó deve ser executado novamente, mas os resultados são não determinísticos independentemente do valor da semente. |
 
 ## Saídas
 

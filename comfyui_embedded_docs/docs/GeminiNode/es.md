@@ -7,12 +7,12 @@ Este nodo permite a los usuarios interactuar con los modelos de IA Gemini de Goo
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sí | - | Entradas de texto para el modelo, utilizadas para generar una respuesta. Puedes incluir instrucciones detalladas, preguntas o contexto para el modelo. Valor predeterminado: cadena vacía. |
-| `model` | COMBO | Sí | `gemini-2.5-pro-preview-05-06`<br>`gemini-2.5-flash-preview-04-17`<br>`gemini-2.5-pro`<br>`gemini-2.5-flash`<br>`gemini-3-pro-preview`<br>`gemini-3-1-pro`<br>`gemini-3-1-flash-lite` | El modelo Gemini a utilizar para generar respuestas. Valor predeterminado: gemini-3-1-pro. |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | Cuando la semilla se fija a un valor específico, el modelo hace el mejor esfuerzo para proporcionar la misma respuesta para solicitudes repetidas. No se garantiza una salida determinista. Además, cambiar el modelo o la configuración de los parámetros, como la temperatura, puede causar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. De forma predeterminada, se utiliza un valor de semilla aleatorio. Valor predeterminado: 42. |
-| `images` | IMAGE | No | - | Imagen(es) opcional(es) para usar como contexto para el modelo. Para incluir múltiples imágenes, puedes usar el nodo Batch Images. Valor predeterminado: Ninguno. |
+| `modelo` | COMBO | Sí | `gemini-2.5-pro-preview-05-06`<br>`gemini-2.5-flash-preview-04-17`<br>`gemini-2.5-pro`<br>`gemini-2.5-flash`<br>`gemini-3-pro-preview`<br>`gemini-3-1-pro`<br>`gemini-3-1-flash-lite` | El modelo Gemini a utilizar para generar respuestas. Valor predeterminado: gemini-3-1-pro. |
+| `semilla` | INT | Sí | 0 a 18446744073709551615 | Cuando la semilla se fija a un valor específico, el modelo hace el mejor esfuerzo para proporcionar la misma respuesta para solicitudes repetidas. No se garantiza una salida determinista. Además, cambiar el modelo o la configuración de los parámetros, como la temperatura, puede causar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. De forma predeterminada, se utiliza un valor de semilla aleatorio. Valor predeterminado: 42. |
+| `imágenes` | IMAGE | No | - | Imagen(es) opcional(es) para usar como contexto para el modelo. Para incluir múltiples imágenes, puedes usar el nodo Batch Images. Valor predeterminado: Ninguno. |
 | `audio` | AUDIO | No | - | Audio opcional para usar como contexto para el modelo. Valor predeterminado: Ninguno. |
 | `video` | VIDEO | No | - | Video opcional para usar como contexto para el modelo. Valor predeterminado: Ninguno. |
-| `files` | GEMINI_INPUT_FILES | No | - | Archivo(s) opcional(es) para usar como contexto para el modelo. Acepta entradas del nodo Gemini Generate Content Input Files. Valor predeterminado: Ninguno. |
+| `archivos` | GEMINI_INPUT_FILES | No | - | Archivo(s) opcional(es) para usar como contexto para el modelo. Acepta entradas del nodo Gemini Generate Content Input Files. Valor predeterminado: Ninguno. |
 | `system_prompt` | STRING | No | - | Instrucciones fundamentales que dictan el comportamiento de una IA. Valor predeterminado: cadena vacía. Este es un parámetro avanzado. |
 
 ## Salidas

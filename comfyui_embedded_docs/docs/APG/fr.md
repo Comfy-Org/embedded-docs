@@ -8,16 +8,16 @@ Le nœud APG (Guidage Projectif Adaptatif) modifie le processus d'échantillonna
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer le guidage projectif adaptatif |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer le guidage projectif adaptatif |
 | `eta` | FLOAT | Oui | -10.0 à 10.0 | Contrôle l'échelle du vecteur de guidage parallèle. Comportement CFG par défaut à un réglage de 1 (par défaut : 1.0). |
-| `norm_threshold` | FLOAT | Oui | 0.0 à 50.0 | Normalise le vecteur de guidage à cette valeur, la normalisation est désactivée à un réglage de 0 (par défaut : 5.0). |
+| `seuil_norme` | FLOAT | Oui | 0.0 à 50.0 | Normalise le vecteur de guidage à cette valeur, la normalisation est désactivée à un réglage de 0 (par défaut : 5.0). |
 | `momentum` | FLOAT | Oui | -5.0 à 1.0 | Contrôle une moyenne mobile du guidage pendant la diffusion, désactivé à un réglage de 0 (par défaut : 0.0). |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model` | MODEL | Renvoie le modèle modifié avec le guidage projectif adaptatif appliqué à son processus d'échantillonnage |
+| `modèle` | MODEL | Renvoie le modèle modifié avec le guidage projectif adaptatif appliqué à son processus d'échantillonnage |
 
 ---
 **Source fingerprint (SHA-256):** `89e2486bf08f750f82608db93c389f0b25ce0be766f62faa8704d19bd7e41654`

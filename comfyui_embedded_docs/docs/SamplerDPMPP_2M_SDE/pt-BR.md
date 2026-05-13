@@ -6,10 +6,10 @@ O nó SamplerDPMPP_2M_SDE cria um amostrador DPM++ 2M SDE para modelos de difus�
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `solver_type` | STRING | Sim | `"midpoint"`<br>`"heun"` | O tipo de solucionador de equação diferencial a ser usado no processo de amostragem |
+| `tipo_de_solvedor` | STRING | Sim | `"midpoint"`<br>`"heun"` | O tipo de solucionador de equação diferencial a ser usado no processo de amostragem |
 | `eta` | FLOAT | Sim | 0.0 - 100.0 | Controla a estocasticidade do processo de amostragem (padrão: 1.0) |
-| `s_noise` | FLOAT | Sim | 0.0 - 100.0 | Controla a quantidade de ruído adicionada durante a amostragem (padrão: 1.0) |
-| `noise_device` | STRING | Sim | `"gpu"`<br>`"cpu"` | O dispositivo onde os cálculos de ruído são realizados. Quando definido como "cpu", o amostrador usa geração de ruído baseada em CPU; quando definido como "gpu", usa geração de ruído baseada em GPU para desempenho potencialmente mais rápido |
+| `s_ruído` | FLOAT | Sim | 0.0 - 100.0 | Controla a quantidade de ruído adicionada durante a amostragem (padrão: 1.0) |
+| `dispositivo_de_ruído` | STRING | Sim | `"gpu"`<br>`"cpu"` | O dispositivo onde os cálculos de ruído são realizados. Quando definido como "cpu", o amostrador usa geração de ruído baseada em CPU; quando definido como "gpu", usa geração de ruído baseada em GPU para desempenho potencialmente mais rápido |
 
 ## Saídas
 

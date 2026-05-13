@@ -6,7 +6,7 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `latents` | LATENT | Evet | 2 ila 50 girdi | Tek bir toplu işlemde birleştirilecek bir dizi gizli değişken örneği. En az iki gizli değişken sağlamalısınız ve en fazla 50 tane ekleyebilirsiniz. Düğüm, daha fazla gizli değişken bağladıkça otomatik olarak girdi yuvaları oluşturur. |
+| `latentler` | LATENT | Evet | 2 ila 50 girdi | Tek bir toplu işlemde birleştirilecek bir dizi gizli değişken örneği. En az iki gizli değişken sağlamalısınız ve en fazla 50 tane ekleyebilirsiniz. Düğüm, daha fazla gizli değişken bağladıkça otomatik olarak girdi yuvaları oluşturur. |
 
 **Not:** Düğümün çalışması için en az iki gizli değişken girdisi sağlamalısınız. Düğüm, daha fazla gizli değişken bağladıkça, maksimum 50'ye kadar otomatik olarak girdi yuvaları oluşturacaktır.
 

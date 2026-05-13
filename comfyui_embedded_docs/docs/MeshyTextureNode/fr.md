@@ -6,12 +6,12 @@ Le nœud Meshy : Texture applique des textures générées par IA à un modèle 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"latest"` | La version du modèle IA à utiliser pour la texturation. Actuellement, seule la version "latest" est disponible. |
+| `modèle` | COMBO | Oui | `"latest"` | La version du modèle IA à utiliser pour la texturation. Actuellement, seule la version "latest" est disponible. |
 | `meshy_task_id` | MESHY_TASK_ID | Oui | - | L'identifiant unique (ID de tâche) d'une tâche précédente de génération ou de conversion 3D Meshy. Cela fournit le modèle 3D de base à texturer. |
-| `enable_original_uv` | BOOLEAN | Non | - | Utiliser l'UV d'origine du modèle au lieu d'en générer de nouveaux. Lorsqu'il est activé (par défaut : `True`), Meshy préserve les textures existantes du modèle téléchargé. Si le modèle n'a pas d'UV d'origine, la qualité du résultat risque d'être moindre. |
+| `activer_uv_original` | BOOLEAN | Non | - | Utiliser l'UV d'origine du modèle au lieu d'en générer de nouveaux. Lorsqu'il est activé (par défaut : `True`), Meshy préserve les textures existantes du modèle téléchargé. Si le modèle n'a pas d'UV d'origine, la qualité du résultat risque d'être moindre. |
 | `pbr` | BOOLEAN | Non | - | Active la sortie de matériau basée sur le rendu physiquement réaliste (PBR) pour le modèle texturé (par défaut : `False`). |
-| `text_style_prompt` | STRING | Non | - | Décrivez le style de texture souhaité pour l'objet à l'aide de texte. Maximum 600 caractères. Ne peut pas être utilisé en même temps que `image_style`. |
-| `image_style` | IMAGE | Non | - | Une image 2D pour guider le processus de texturation. Ne peut pas être utilisé en même temps que `text_style_prompt`. |
+| `invite_style_texte` | STRING | Non | - | Décrivez le style de texture souhaité pour l'objet à l'aide de texte. Maximum 600 caractères. Ne peut pas être utilisé en même temps que `style_image`. |
+| `style_image` | IMAGE | Non | - | Une image 2D pour guider le processus de texturation. Ne peut pas être utilisé en même temps que `invite_style_texte`. |
 
 **Contraintes des paramètres :**
 
@@ -22,9 +22,9 @@ Le nœud Meshy : Texture applique des textures générées par IA à un modèle 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model_file` | STRING | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour des raisons de compatibilité ascendante. |
-| `meshy_task_id` | MODEL_TASK_ID | L'identifiant unique de la tâche pour ce travail de texturation, qui peut être utilisé pour référencer le résultat. |
-| `GLB` | FILE3DGLB | Le modèle 3D texturé enregistré au format de fichier GLB. |
+| `meshy_task_id` | STRING | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour des raisons de compatibilité ascendante. |
+| `GLB` | MODEL_TASK_ID | L'identifiant unique de la tâche pour ce travail de texturation, qui peut être utilisé pour référencer le résultat. |
+| `FBX` | FILE3DGLB | Le modèle 3D texturé enregistré au format de fichier GLB. |
 | `FBX` | FILE3DFBX | Le modèle 3D texturé enregistré au format de fichier FBX. |
 
 ---

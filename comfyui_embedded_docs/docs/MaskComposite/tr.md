@@ -6,11 +6,11 @@ Bu düğüm, toplama, çıkarma ve mantıksal işlemler gibi çeşitli işlemler
 
 | Parametre    | Veri Türü | Açıklama                                                                                                                                      |
 | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `destination`| MASK        | Kaynak maske ile yapılacak işleme bağlı olarak değiştirilecek olan birincil maske. Bileşik işlemde merkezi bir rol oynar ve değişiklikler için temel görevi görür. |
-| `source`     | MASK        | Hedef maske ile birlikte belirtilen işlemi gerçekleştirmek için kullanılacak olan ikincil maske. Nihai çıktı maskesini etkiler. |
+| `hedef`| MASK        | Kaynak maske ile yapılacak işleme bağlı olarak değiştirilecek olan birincil maske. Bileşik işlemde merkezi bir rol oynar ve değişiklikler için temel görevi görür. |
+| `kaynak`     | MASK        | Hedef maske ile birlikte belirtilen işlemi gerçekleştirmek için kullanılacak olan ikincil maske. Nihai çıktı maskesini etkiler. |
 | `x`          | INT         | Kaynak maskenin hedef maskeye uygulanacağı yatay konum kayması. Bileşik sonucun konumlandırılmasını etkiler.       |
 | `y`          | INT         | Kaynak maskenin hedef maskeye uygulanacağı dikey konum kayması. Bileşik sonucun konumlandırılmasını etkiler.         |
-| `operation`  | COMBO[STRING]| Hedef ve kaynak maskeler arasında uygulanacak işlemin türünü belirtir. 'toplama', 'çıkarma' veya mantıksal işlemler gibi seçenekler, bileşik efektin doğasını belirler. |
+| `işlem`  | COMBO[STRING]| Hedef ve kaynak maskeler arasında uygulanacak işlemin türünü belirtir. 'toplama', 'çıkarma' veya mantıksal işlemler gibi seçenekler, bileşik efektin doğasını belirler. |
 
 ## Çıktılar
 

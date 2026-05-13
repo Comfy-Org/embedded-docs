@@ -6,8 +6,8 @@ El nodo `ModelMergeCosmosPredict2_14B` fusiona dos modelos de IA combinando sus 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model1` | MODEL | Sí | - | El modelo base con el que fusionar |
-| `model2` | MODEL | Sí | - | El modelo secundario para fusionar en el modelo base |
+| `modelo1` | MODEL | Sí | - | El modelo base con el que fusionar |
+| `modelo2` | MODEL | Sí | - | El modelo secundario para fusionar en el modelo base |
 | `pos_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla del integrador de posición (predeterminado: 1.0) |
 | `x_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla del integrador de entrada (predeterminado: 1.0) |
 | `t_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de mezcla del integrador de tiempo (predeterminado: 1.0) |

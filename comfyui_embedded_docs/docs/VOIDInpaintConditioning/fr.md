@@ -20,8 +20,8 @@ Le nœud VOIDInpaintConditioning prépare les données de conditionnement néces
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif avec les informations latentes d'infilling ajoutées |
-| `negative` | CONDITIONING | Le conditionnement négatif avec les informations latentes d'infilling ajoutées |
+| `negative` | CONDITIONING | Le conditionnement positif avec les informations latentes d'infilling ajoutées |
+| `latent` | CONDITIONING | Le conditionnement négatif avec les informations latentes d'infilling ajoutées |
 | `latent` | LATENT | Un tenseur de bruit latent rempli de zéros avec la forme [batch_size, 16, latent_t, latent_h, latent_w] |
 
 ---

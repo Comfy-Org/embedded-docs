@@ -36,14 +36,14 @@ ByteDance Görüntüden Videoya düğümü, bir API aracılığıyla ByteDance m
 |-----------|-----------|----------|-------|-------------|
 | `model` | STRING | Evet | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` | Video oluşturma için kullanılacak ByteDance modeli (varsayılan: `"seedance-1-0-pro-fast-251015"`). |
 | `prompt` | STRING | Evet | - | Videoyu oluşturmak için kullanılan metin istemi. Boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır. |
-| `image` | IMAGE | Evet | - | Video için kullanılacak ilk kare. 300x300 ile 6000x6000 piksel arasında olmalı ve en boy oranı 0,4 ile 2,5 arasında olmalıdır. |
-| `resolution` | STRING | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
-| `aspect_ratio` | STRING | Evet | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en boy oranı. |
-| `duration` | INT | Evet | 3 - 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). `seedance-1-5-pro-251215` modeli için desteklenen minimum süre 4 saniyedir. |
+| `görüntü` | IMAGE | Evet | - | Video için kullanılacak ilk kare. 300x300 ile 6000x6000 piksel arasında olmalı ve en boy oranı 0,4 ile 2,5 arasında olmalıdır. |
+| `çözünürlük` | STRING | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
+| `en-boy oranı` | STRING | Evet | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en boy oranı. |
+| `süre` | INT | Evet | 3 - 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). `seedance-1-5-pro-251215` modeli için desteklenen minimum süre 4 saniyedir. |
 | `seed` | INT | Hayır | 0 - 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
-| `camera_fixed` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler, ancak gerçek etkiyi garanti etmez (varsayılan: False). |
-| `watermark` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
-| `generate_audio` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
+| `sabit kamera` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler, ancak gerçek etkiyi garanti etmez (varsayılan: False). |
+| `filigran` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
+| `ses_oluştur` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
 
 **Not:** İstem, aşağıdaki kelimeleri (büyük/küçük harf duyarsız) içermemelidir: `resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`. Bu parametreler, kendilerine ayrılmış girişler aracılığıyla ayarlanır.
 

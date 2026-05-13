@@ -8,14 +8,14 @@ Este nó gera um vídeo interpolando entre um quadro inicial e um quadro final f
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | O modelo Vidu a ser usado para geração de vídeo. |
-| `first_frame` | IMAGE | Sim | - | A imagem inicial para a sequência de vídeo. Apenas uma única imagem é permitida. |
-| `end_frame` | IMAGE | Sim | - | A imagem final para a sequência de vídeo. Apenas uma única imagem é permitida. |
+| `modelo` | COMBO | Sim | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | O modelo Vidu a ser usado para geração de vídeo. |
+| `quadro_inicial` | IMAGE | Sim | - | A imagem inicial para a sequência de vídeo. Apenas uma única imagem é permitida. |
+| `quadro_final` | IMAGE | Sim | - | A imagem final para a sequência de vídeo. Apenas uma única imagem é permitida. |
 | `prompt` | STRING | Sim | - | Uma descrição textual que guia a geração do vídeo (máximo de 2000 caracteres). |
-| `duration` | INT | Não | 2 a 8 | A duração do vídeo gerado em segundos (padrão: 5). |
-| `seed` | INT | Não | 0 a 2147483647 | Um número usado para inicializar a geração aleatória para resultados reproduzíveis (padrão: 1). |
-| `resolution` | COMBO | Não | `"720p"`<br>`"1080p"` | A resolução de saída do vídeo gerado. |
-| `movement_amplitude` | COMBO | Não | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | A amplitude de movimento dos objetos no quadro. |
+| `duração` | INT | Não | 2 a 8 | A duração do vídeo gerado em segundos (padrão: 5). |
+| `semente` | INT | Não | 0 a 2147483647 | Um número usado para inicializar a geração aleatória para resultados reproduzíveis (padrão: 1). |
+| `resolução` | COMBO | Não | `"720p"`<br>`"1080p"` | A resolução de saída do vídeo gerado. |
+| `amplitude_de_movimento` | COMBO | Não | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | A amplitude de movimento dos objetos no quadro. |
 
 **Nota:** As imagens `first_frame` e `end_frame` devem ter proporções de aspecto semelhantes. O nó validará se suas proporções estão dentro de uma faixa relativa de 0,8 a 1,25.
 

@@ -10,15 +10,15 @@ Le nœud Vidu2 de génération vidéo à partir de références crée une vidéo
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"viduq2"` | Le modèle d'IA à utiliser pour la génération vidéo. |
-| `subjects` | AUTOGROW | Oui | N/A | Pour chaque sujet, fournissez jusqu'à 3 images de référence (7 images au total pour tous les sujets). Référencez-les dans les invites via `@subject{subject_id}`. |
-| `prompt` | STRING | Oui | N/A | La description textuelle utilisée pour guider la génération vidéo. Lorsque le paramètre `audio` est activé, la vidéo inclura une voix générée et une musique de fond basées sur cette invite. |
+| `modèle` | COMBO | Oui | `"viduq2"` | Le modèle d'IA à utiliser pour la génération vidéo. |
+| `sujets` | AUTOGROW | Oui | N/A | Pour chaque sujet, fournissez jusqu'à 3 images de référence (7 images au total pour tous les sujets). Référencez-les dans les invites via `@subject{subject_id}`. |
+| `invite` | STRING | Oui | N/A | La description textuelle utilisée pour guider la génération vidéo. Lorsque le paramètre `audio` est activé, la vidéo inclura une voix générée et une musique de fond basées sur cette invite. |
 | `audio` | BOOLEAN | Non | N/A | Lorsqu'il est activé, la vidéo contiendra une voix générée et une musique de fond basées sur l'invite (par défaut : `False`). |
-| `duration` | INT | Non | 1 à 10 | La durée de la vidéo générée en secondes (par défaut : `5`). |
-| `seed` | INT | Non | 0 à 2147483647 | Un nombre utilisé pour contrôler l'aléatoire de la génération afin d'obtenir des résultats reproductibles (par défaut : `1`). |
-| `aspect_ratio` | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | La forme du cadre vidéo. |
-| `resolution` | COMBO | Non | `"720p"`<br>`"1080p"` | La résolution en pixels de la vidéo de sortie. |
-| `movement_amplitude` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Contrôle l'amplitude du mouvement des objets dans le cadre. |
+| `durée` | INT | Non | 1 à 10 | La durée de la vidéo générée en secondes (par défaut : `5`). |
+| `graine` | INT | Non | 0 à 2147483647 | Un nombre utilisé pour contrôler l'aléatoire de la génération afin d'obtenir des résultats reproductibles (par défaut : `1`). |
+| `rapport d’aspect` | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | La forme du cadre vidéo. |
+| `résolution` | COMBO | Non | `"720p"`<br>`"1080p"` | La résolution en pixels de la vidéo de sortie. |
+| `amplitude du mouvement` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Contrôle l'amplitude du mouvement des objets dans le cadre. |
 
 **Contraintes :**
 

@@ -6,12 +6,12 @@ O nó Meshy: Textura aplica texturas geradas por IA a um modelo 3D. Ele recebe u
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"latest"` | A versão do modelo de IA a ser usada para texturização. Atualmente, apenas a versão "latest" está disponível. |
+| `modelo` | COMBO | Sim | `"latest"` | A versão do modelo de IA a ser usada para texturização. Atualmente, apenas a versão "latest" está disponível. |
 | `meshy_task_id` | MESHY_TASK_ID | Sim | - | O identificador único (ID da tarefa) de uma tarefa anterior de geração ou conversão 3D do Meshy. Isso fornece o modelo 3D base a ser texturizado. |
-| `enable_original_uv` | BOOLEAN | Não | - | Usar o UV original do modelo em vez de gerar novos UVs. Quando ativado (padrão: `True`), o Meshy preserva as texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. |
+| `habilitar_uv_original` | BOOLEAN | Não | - | Usar o UV original do modelo em vez de gerar novos UVs. Quando ativado (padrão: `True`), o Meshy preserva as texturas existentes do modelo enviado. Se o modelo não tiver UV original, a qualidade da saída pode não ser tão boa. |
 | `pbr` | BOOLEAN | Não | - | Ativa a saída de material de Renderização Baseada em Física (PBR) para o modelo texturizado (padrão: `False`). |
-| `text_style_prompt` | STRING | Não | - | Descreva o estilo de textura desejado do objeto usando texto. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `image_style`. |
-| `image_style` | IMAGE | Não | - | Uma imagem 2D para guiar o processo de texturização. Não pode ser usada ao mesmo tempo que `text_style_prompt`. |
+| `prompt_de_estilo_textual` | STRING | Não | - | Descreva o estilo de textura desejado do objeto usando texto. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `estilo_de_imagem`. |
+| `estilo_de_imagem` | IMAGE | Não | - | Uma imagem 2D para guiar o processo de texturização. Não pode ser usada ao mesmo tempo que `prompt_de_estilo_textual`. |
 
 **Restrições dos Parâmetros:**
 

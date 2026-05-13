@@ -6,17 +6,17 @@ O nó WanFirstLastFrameToVideo cria condicionamento de vídeo combinando quadros
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sim | - | Condicionamento de texto positivo para guiar a geração do vídeo |
-| `negative` | CONDITIONING | Sim | - | Condicionamento de texto negativo para guiar a geração do vídeo |
+| `positivo` | CONDITIONING | Sim | - | Condicionamento de texto positivo para guiar a geração do vídeo |
+| `negativo` | CONDITIONING | Sim | - | Condicionamento de texto negativo para guiar a geração do vídeo |
 | `vae` | VAE | Sim | - | Modelo VAE usado para codificar imagens para o espaço latente |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída (padrão: 832, passo: 16) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída (padrão: 480, passo: 16) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) |
-| `batch_size` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados simultaneamente (padrão: 1) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída (padrão: 832, passo: 16) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída (padrão: 480, passo: 16) |
+| `comprimento` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros na sequência de vídeo (padrão: 81, passo: 4) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados simultaneamente (padrão: 1) |
 | `clip_vision_start_image` | CLIP_VISION_OUTPUT | Não | - | Recursos de visão CLIP extraídos da imagem inicial |
 | `clip_vision_end_image` | CLIP_VISION_OUTPUT | Não | - | Recursos de visão CLIP extraídos da imagem final |
-| `start_image` | IMAGE | Não | - | Imagem do quadro inicial para a sequência de vídeo |
-| `end_image` | IMAGE | Não | - | Imagem do quadro final para a sequência de vídeo |
+| `imagem_inicial` | IMAGE | Não | - | Imagem do quadro inicial para a sequência de vídeo |
+| `imagem_final` | IMAGE | Não | - | Imagem do quadro final para a sequência de vídeo |
 
 **Observação:** Quando tanto `start_image` quanto `end_image` são fornecidos, o nó cria uma sequência de vídeo que faz a transição entre esses dois quadros. Os parâmetros `clip_vision_start_image` e `clip_vision_end_image` são opcionais, mas quando fornecidos, seus recursos de visão CLIP são concatenados e aplicados tanto ao condicionamento positivo quanto ao negativo. A `start_image` é recortada para os primeiros `length` quadros, e a `end_image` é recortada para os últimos `length` quadros antes do processamento.
 
@@ -24,8 +24,8 @@ O nó WanFirstLastFrameToVideo cria condicionamento de vídeo combinando quadros
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Condicionamento positivo com codificação de quadro de vídeo aplicada e recursos de visão CLIP |
-| `negative` | CONDITIONING | Condicionamento negativo com codificação de quadro de vídeo aplicada e recursos de visão CLIP |
+| `positivo` | CONDITIONING | Condicionamento positivo com codificação de quadro de vídeo aplicada e recursos de visão CLIP |
+| `negativo` | CONDITIONING | Condicionamento negativo com codificação de quadro de vídeo aplicada e recursos de visão CLIP |
 | `latent` | LATENT | Tensor latente vazio com dimensões correspondentes aos parâmetros de vídeo especificados |
 
 ---

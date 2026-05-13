@@ -9,8 +9,8 @@ El nodo de Interpolación de Fotogramas crea nuevos fotogramas entre los existen
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
 | `interp_model` | MODEL | Sí | - | El modelo de interpolación de fotogramas a utilizar para generar los fotogramas intermedios |
-| `images` | IMAGE | Sí | - | Un lote de imágenes consecutivas (fotogramas) entre las que interpolar. Requiere al menos 2 imágenes. |
-| `multiplier` | INT | Sí | 2 a 16 | El número de veces que se multiplicará el recuento de fotogramas. Por ejemplo, un multiplicador de 2 duplica el número de fotogramas. (predeterminado: 2) |
+| `imágenes` | IMAGE | Sí | - | Un lote de imágenes consecutivas (fotogramas) entre las que interpolar. Requiere al menos 2 imágenes. |
+| `multiplicador` | INT | Sí | 2 a 16 | El número de veces que se multiplicará el recuento de fotogramas. Por ejemplo, un multiplicador de 2 duplica el número de fotogramas. (predeterminado: 2) |
 
 ## Salidas
 

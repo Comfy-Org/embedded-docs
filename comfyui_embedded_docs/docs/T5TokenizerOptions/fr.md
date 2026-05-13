@@ -7,8 +7,8 @@ Le nœud T5TokenizerOptions vous permet de configurer les paramètres du tokeniz
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | - | Le modèle CLIP pour lequel configurer les options du tokenizer |
-| `min_padding` | INT | Non | 0 à 10000 | Valeur minimale de padding à définir pour tous les types de modèles T5 (par défaut : 0) |
-| `min_length` | INT | Non | 0 à 10000 | Valeur minimale de longueur à définir pour tous les types de modèles T5 (par défaut : 0) |
+| `remplissage_min` | INT | Non | 0 à 10000 | Valeur minimale de padding à définir pour tous les types de modèles T5 (par défaut : 0) |
+| `longueur_min` | INT | Non | 0 à 10000 | Valeur minimale de longueur à définir pour tous les types de modèles T5 (par défaut : 0) |
 
 ## Sorties
 

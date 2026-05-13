@@ -6,14 +6,14 @@ O nó HunyuanVideo15ImageToVideo prepara dados de condicionamento e espaço late
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | Os prompts de condicionamento positivo que descrevem o que o vídeo deve conter. |
-| `negative` | CONDITIONING | Sim | - | Os prompts de condicionamento negativo que descrevem o que o vídeo deve evitar. |
+| `positivo` | CONDITIONING | Sim | - | Os prompts de condicionamento positivo que descrevem o que o vídeo deve conter. |
+| `negativo` | CONDITIONING | Sim | - | Os prompts de condicionamento negativo que descrevem o que o vídeo deve evitar. |
 | `vae` | VAE | Sim | - | O modelo VAE (Autoencoder Variacional) usado para codificar a imagem inicial no espaço latente. |
-| `width` | INT | Não | 16 a MAX_RESOLUTION | A largura dos quadros do vídeo de saída em pixels. Deve ser divisível por 16. (padrão: 848) |
-| `height` | INT | Não | 16 a MAX_RESOLUTION | A altura dos quadros do vídeo de saída em pixels. Deve ser divisível por 16. (padrão: 480) |
-| `length` | INT | Não | 1 a MAX_RESOLUTION | O número total de quadros na sequência de vídeo. Deve ser múltiplo de 4. (padrão: 33) |
-| `batch_size` | INT | Não | 1 a 4096 | O número de sequências de vídeo a serem geradas em um único lote. (padrão: 1) |
-| `start_image` | IMAGE | Não | - | Uma imagem inicial opcional para iniciar a geração do vídeo. Se fornecida, é codificada e usada para condicionar os primeiros quadros. Apenas os primeiros `length` quadros da imagem são utilizados. |
+| `largura` | INT | Não | 16 a MAX_RESOLUTION | A largura dos quadros do vídeo de saída em pixels. Deve ser divisível por 16. (padrão: 848) |
+| `altura` | INT | Não | 16 a MAX_RESOLUTION | A altura dos quadros do vídeo de saída em pixels. Deve ser divisível por 16. (padrão: 480) |
+| `duração` | INT | Não | 1 a MAX_RESOLUTION | O número total de quadros na sequência de vídeo. Deve ser múltiplo de 4. (padrão: 33) |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de sequências de vídeo a serem geradas em um único lote. (padrão: 1) |
+| `imagem_inicial` | IMAGE | Não | - | Uma imagem inicial opcional para iniciar a geração do vídeo. Se fornecida, é codificada e usada para condicionar os primeiros quadros. Apenas os primeiros `duração` quadros da imagem são utilizados. |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Não | - | Embeddings opcionais do CLIP vision para fornecer condicionamento visual adicional para a geração. |
 
 **Observação:** Quando uma `start_image` é fornecida, ela é automaticamente redimensionada para corresponder à `width` e `height` especificadas usando interpolação bilinear. Os primeiros `length` quadros do lote de imagens são utilizados. A imagem codificada é então adicionada tanto ao condicionamento `positive` quanto ao `negative` como uma `concat_latent_image` com uma `concat_mask` correspondente. A máscara é definida como 0.0 para os quadros cobertos pela imagem inicial e 1.0 para os quadros restantes.
@@ -22,8 +22,8 @@ O nó HunyuanVideo15ImageToVideo prepara dados de condicionamento e espaço late
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | O condicionamento positivo modificado, que agora pode incluir a imagem inicial codificada ou a saída do CLIP vision. |
-| `negative` | CONDITIONING | O condicionamento negativo modificado, que agora pode incluir a imagem inicial codificada ou a saída do CLIP vision. |
+| `positivo` | CONDITIONING | O condicionamento positivo modificado, que agora pode incluir a imagem inicial codificada ou a saída do CLIP vision. |
+| `negativo` | CONDITIONING | O condicionamento negativo modificado, que agora pode incluir a imagem inicial codificada ou a saída do CLIP vision. |
 | `latent` | LATENT | Um tensor latente vazio com dimensões configuradas para o tamanho do lote, comprimento do vídeo, largura e altura especificados. |
 
 ---

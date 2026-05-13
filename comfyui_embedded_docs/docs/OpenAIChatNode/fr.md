@@ -6,12 +6,12 @@ Ce nœud génère des réponses textuelles à partir d’un modèle OpenAI. Il e
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | - | Saisies textuelles du modèle, utilisées pour générer une réponse (par défaut : vide) |
-| `persist_context` | BOOLEAN | Oui | - | Ce paramètre est obsolète et n’a aucun effet (par défaut : False) |
-| `model` | COMBO | Oui | Plusieurs modèles OpenAI disponibles | Le modèle utilisé pour générer la réponse |
+| `invite` | STRING | Oui | - | Saisies textuelles du modèle, utilisées pour générer une réponse (par défaut : vide) |
+| `conserver_contexte` | BOOLEAN | Oui | - | Ce paramètre est obsolète et n’a aucun effet (par défaut : False) |
+| `modèle` | COMBO | Oui | Plusieurs modèles OpenAI disponibles | Le modèle utilisé pour générer la réponse |
 | `images` | IMAGE | Non | - | Image(s) facultative(s) à utiliser comme contexte pour le modèle. Pour inclure plusieurs images, vous pouvez utiliser le nœud Batch Images |
-| `files` | OPENAI_INPUT_FILES | Non | - | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud OpenAI Chat Input Files |
-| `advanced_options` | OPENAI_CHAT_CONFIG | Non | - | Configuration facultative pour le modèle. Accepte les entrées du nœud OpenAI Chat Advanced Options |
+| `fichiers` | OPENAI_INPUT_FILES | Non | - | Fichier(s) facultatif(s) à utiliser comme contexte pour le modèle. Accepte les entrées du nœud OpenAI Chat Input Files |
+| `options_avancées` | OPENAI_CHAT_CONFIG | Non | - | Configuration facultative pour le modèle. Accepte les entrées du nœud OpenAI Chat Advanced Options |
 
 ## Sorties
 

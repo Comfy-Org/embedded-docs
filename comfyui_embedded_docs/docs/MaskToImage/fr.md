@@ -6,7 +6,7 @@ Le nœud `MaskToImage` est conçu pour convertir un masque au format image. Cett
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `mask`    | `MASK`          | L'entrée du masque est essentielle au processus de conversion, servant de source de données qui sera transformée au format image. Cette entrée détermine la forme et le contenu de l'image résultante. |
+| `masque`    | `MASK`          | L'entrée du masque est essentielle au processus de conversion, servant de source de données qui sera transformée au format image. Cette entrée détermine la forme et le contenu de l'image résultante. |
 
 ## Sorties
 

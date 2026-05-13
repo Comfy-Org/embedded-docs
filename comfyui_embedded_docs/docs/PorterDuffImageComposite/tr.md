@@ -6,11 +6,11 @@ PorterDuffImageComposite düğümü, Porter-Duff birleştirme operatörlerini ku
 
 | Parametre | Veri Türü | Açıklama |
 | --------- | ------------ | ----------- |
-| `source`  | `IMAGE`     | Hedef görüntünün üzerine birleştirilecek kaynak görüntü tensörü. Seçilen birleştirme moduna bağlı olarak nihai görsel sonucun belirlenmesinde önemli bir rol oynar. |
-| `source_alpha` | `MASK` | Kaynak görüntünün alfa kanalı; kaynak görüntüdeki her pikselin saydamlığını belirtir. Kaynak görüntünün hedef görüntüyle nasıl karışacağını etkiler. |
-| `destination` | `IMAGE` | Kaynak görüntünün üzerine birleştirildiği arka plan görevi gören hedef görüntü tensörü. Karıştırma moduna bağlı olarak birleştirilmiş nihai görüntüye katkıda bulunur. |
-| `destination_alpha` | `MASK` | Hedef görüntünün alfa kanalı; hedef görüntüdeki piksellerin saydamlığını tanımlar. Kaynak ve hedef görüntülerin karışmasını etkiler. |
-| `mode` | COMBO[STRING] | Uygulanacak Porter-Duff birleştirme modu; kaynak ve hedef görüntülerin nasıl birleştirileceğini belirler. Her mod farklı görsel efektler oluşturur. |
+| `kaynak`  | `IMAGE`     | Hedef görüntünün üzerine birleştirilecek kaynak görüntü tensörü. Seçilen birleştirme moduna bağlı olarak nihai görsel sonucun belirlenmesinde önemli bir rol oynar. |
+| `kaynak_alfa` | `MASK` | Kaynak görüntünün alfa kanalı; kaynak görüntüdeki her pikselin saydamlığını belirtir. Kaynak görüntünün hedef görüntüyle nasıl karışacağını etkiler. |
+| `hedef` | `IMAGE` | Kaynak görüntünün üzerine birleştirildiği arka plan görevi gören hedef görüntü tensörü. Karıştırma moduna bağlı olarak birleştirilmiş nihai görüntüye katkıda bulunur. |
+| `hedef_alfa` | `MASK` | Hedef görüntünün alfa kanalı; hedef görüntüdeki piksellerin saydamlığını tanımlar. Kaynak ve hedef görüntülerin karışmasını etkiler. |
+| `mod` | COMBO[STRING] | Uygulanacak Porter-Duff birleştirme modu; kaynak ve hedef görüntülerin nasıl birleştirileceğini belirler. Her mod farklı görsel efektler oluşturur. |
 
 ## Çıktılar
 

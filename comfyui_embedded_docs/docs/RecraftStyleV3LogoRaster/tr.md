@@ -6,7 +6,7 @@ Bu düğüm, logo görselleri oluşturmak için logo raster stilini ve isteğe b
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `substyle` | STRING | Evet | Birden çok seçenek mevcut | Logo oluşturma için uygulanacak belirli logo raster alt stili |
+| `alt_stil` | STRING | Evet | Birden çok seçenek mevcut | Logo oluşturma için uygulanacak belirli logo raster alt stili |
 
 ## Çıkışlar
 

@@ -8,9 +8,9 @@ Este nó processa uma entrada de áudio para extrair características que podem 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | - | A entrada de áudio a ser analisada e codificada. |
-| `video_frames` | INT | Sim | Mín: 1, Máx: 268435456 (MAX_RESOLUTION), Passo: 4 | O número de quadros no vídeo de destino. Usado para calcular a taxa de quadros para sincronização (padrão: 149). |
-| `audio_inject_scale` | FLOAT | Sim | Mín: 0.0, Máx: 10.0, Passo: 0.01 | A escala para as características de áudio quando injetadas no modelo de vídeo (padrão: 1.0). |
+| `áudio` | AUDIO | Sim | - | A entrada de áudio a ser analisada e codificada. |
+| `quadros_de_vídeo` | INT | Sim | Mín: 1, Máx: 268435456 (MAX_RESOLUTION), Passo: 4 | O número de quadros no vídeo de destino. Usado para calcular a taxa de quadros para sincronização (padrão: 149). |
+| `escala_de_injeção_de_áudio` | FLOAT | Sim | Mín: 0.0, Máx: 10.0, Passo: 0.01 | A escala para as características de áudio quando injetadas no modelo de vídeo (padrão: 1.0). |
 
 ## Saídas
 

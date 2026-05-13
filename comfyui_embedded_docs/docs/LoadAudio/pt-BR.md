@@ -8,7 +8,7 @@ O nó LoadAudio carrega arquivos de áudio do diretório de entrada e os convert
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | Todos os arquivos de áudio e vídeo suportados no diretório de entrada | O arquivo de áudio a ser carregado do diretório de entrada |
+| `áudio` | AUDIO | Sim | Todos os arquivos de áudio e vídeo suportados no diretório de entrada | O arquivo de áudio a ser carregado do diretório de entrada |
 
 **Nota:** O nó aceita apenas arquivos de áudio e vídeo que estejam presentes no diretório de entrada do ComfyUI. O arquivo deve existir e estar acessível para que o carregamento seja bem-sucedido.
 

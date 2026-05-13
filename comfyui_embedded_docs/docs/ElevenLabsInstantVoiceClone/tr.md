@@ -7,7 +7,7 @@ ElevenLabs Anlık Ses Klonlama düğümü, bir kişinin sesine ait 1 ila 8 ses k
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `audio_*` | AUDIO | Evet | 1 ila 8 dosya | Ses klonlama için ses kayıtları. 1 ile 8 arasında ses dosyası sağlamanız gerekir. |
-| `remove_background_noise` | BOOLEAN | Hayır | True / False | Ses izolasyonu kullanarak ses örneklerindeki arka plan gürültüsünü kaldırır. (varsayılan: False) |
+| `arka_plan_gürültüsünü_kaldır` | BOOLEAN | Hayır | True / False | Ses izolasyonu kullanarak ses örneklerindeki arka plan gürültüsünü kaldırır. (varsayılan: False) |
 
 **Not:** En az bir ses dosyası sağlamanız gerekir ve en fazla sekiz dosya sağlayabilirsiniz. Düğüm, eklediğiniz ses dosyaları için otomatik olarak giriş yuvaları oluşturacaktır.
 

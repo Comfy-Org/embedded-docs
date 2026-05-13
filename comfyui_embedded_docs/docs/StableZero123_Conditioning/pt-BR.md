@@ -7,13 +7,13 @@ O nó **StableZero123_Conditioning** processa uma imagem de entrada e ângulos d
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `clip_vision` | CLIP_VISION | Sim | - | O modelo de visão CLIP usado para codificar as características da imagem |
-| `init_image` | IMAGE | Sim | - | A imagem de entrada a ser processada e codificada |
+| `imagem_inicial` | IMAGE | Sim | - | A imagem de entrada a ser processada e codificada |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar pixels no espaço latente |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura de saída para a representação latente (padrão: 256, deve ser divisível por 8) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura de saída para a representação latente (padrão: 256, deve ser divisível por 8) |
-| `batch_size` | INT | Sim | 1 a 4096 | Número de amostras a serem geradas no lote (padrão: 1) |
-| `elevation` | FLOAT | Sim | -180.0 a 180.0 | Ângulo de elevação da câmera em graus (padrão: 0.0) |
-| `azimuth` | FLOAT | Sim | -180.0 a 180.0 | Ângulo de azimute da câmera em graus (padrão: 0.0) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura de saída para a representação latente (padrão: 256, deve ser divisível por 8) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura de saída para a representação latente (padrão: 256, deve ser divisível por 8) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | Número de amostras a serem geradas no lote (padrão: 1) |
+| `elevação` | FLOAT | Sim | -180.0 a 180.0 | Ângulo de elevação da câmera em graus (padrão: 0.0) |
+| `azimute` | FLOAT | Sim | -180.0 a 180.0 | Ângulo de azimute da câmera em graus (padrão: 0.0) |
 
 **Observação:** Os parâmetros `width` e `height` devem ser divisíveis por 8, pois o nó os divide automaticamente por 8 para criar as dimensões da representação latente.
 

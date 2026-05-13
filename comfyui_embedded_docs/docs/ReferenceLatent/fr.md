@@ -6,7 +6,7 @@ Ce nœud définit le latent de référence pour un modèle d'édition. Il prend 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `conditioning` | CONDITIONING | Oui | - | Les données de conditionnement à modifier avec les informations du latent de référence |
+| `conditionnement` | CONDITIONING | Oui | - | Les données de conditionnement à modifier avec les informations du latent de référence |
 | `latent` | LATENT | Non | - | Données latentes facultatives à utiliser comme référence pour le modèle d'édition |
 
 ## Sorties

@@ -8,7 +8,7 @@ SamplerEulerCFGpp 노드는 출력을 생성하기 위한 Euler CFG++ 샘플링 
 
 | 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `version` | STRING | 예 | `"regular"`<br>`"alternative"` | 사용할 Euler CFG++ 샘플러의 구현 버전입니다 (기본값: "regular") |
+| `버전` | STRING | 예 | `"regular"`<br>`"alternative"` | 사용할 Euler CFG++ 샘플러의 구현 버전입니다 (기본값: "regular") |
 
 ## 출력
 

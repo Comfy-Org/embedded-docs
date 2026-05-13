@@ -8,13 +8,13 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |------|----------|----------|------|------|
-| `positive_NEW` | CONDITIONING | 是 | - | 要修改的正向条件输入 |
-| `negative_NEW` | CONDITIONING | 是 | - | 要修改的负向条件输入 |
-| `strength` | FLOAT | 是 | 0.0 至 10.0 | 应用于条件的强度乘数（默认值：1.0） |
-| `set_cond_area` | STRING | 是 | "default"<br>"mask bounds" | 决定条件区域的计算方式（默认值："default"） |
-| `mask` | MASK | 否 | - | 可选遮罩，用于约束条件区域 |
-| `hooks` | HOOKS | 否 | - | 可选钩子组，用于高级条件修改 |
-| `timesteps` | TIMESTEPS_RANGE | 否 | - | 可选时间步范围，用于限制条件生效的时间段 |
+| `新正面条件` | CONDITIONING | 是 | - | 要修改的正向条件输入 |
+| `新负面条件` | CONDITIONING | 是 | - | 要修改的负向条件输入 |
+| `强度` | FLOAT | 是 | 0.0 至 10.0 | 应用于条件的强度乘数（默认值：1.0） |
+| `设置条件区域` | STRING | 是 | "default"<br>"mask bounds" | 决定条件区域的计算方式（默认值："default"） |
+| `遮罩` | MASK | 否 | - | 可选遮罩，用于约束条件区域 |
+| `约束` | HOOKS | 否 | - | 可选钩子组，用于高级条件修改 |
+| `间隔` | TIMESTEPS_RANGE | 否 | - | 可选时间步范围，用于限制条件生效的时间段 |
 
 ### 输出
 

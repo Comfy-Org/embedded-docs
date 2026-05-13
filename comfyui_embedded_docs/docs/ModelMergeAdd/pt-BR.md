@@ -6,8 +6,8 @@ O nó **ModelMergeAdd** foi projetado para mesclar dois modelos, adicionando pat
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `model1`  | `MODEL`       | O primeiro modelo a ser clonado e ao qual os patches do segundo modelo serão adicionados. Ele serve como modelo base para o processo de mesclagem. |
-| `model2`  | `MODEL`       | O segundo modelo do qual os patches-chave são extraídos e adicionados ao primeiro modelo. Ele contribui com características ou comportamentos adicionais para o modelo mesclado. |
+| `modelo1`  | `MODEL`       | O primeiro modelo a ser clonado e ao qual os patches do segundo modelo serão adicionados. Ele serve como modelo base para o processo de mesclagem. |
+| `modelo2`  | `MODEL`       | O segundo modelo do qual os patches-chave são extraídos e adicionados ao primeiro modelo. Ele contribui com características ou comportamentos adicionais para o modelo mesclado. |
 
 ## Saídas
 

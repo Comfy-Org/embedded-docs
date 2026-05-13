@@ -8,14 +8,14 @@ Este nó gera um vídeo interpolando entre um quadro inicial fornecido e um quad
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` | O modelo a ser usado para a geração de vídeo. Selecionar uma opção revela parâmetros de configuração adicionais para `resolution`, `duration` e `audio`. |
-| `model.resolution` | COMBO | Sim | `"720p"`<br>`"1080p"` | Resolução do vídeo de saída. Este parâmetro é revelado após selecionar um `model`. |
-| `model.duration` | INT | Sim | 1 a 16 | Duração do vídeo de saída em segundos (padrão: 5). Este parâmetro é revelado após selecionar um `model`. |
-| `model.audio` | BOOLEAN | Sim | `True` / `False` | Quando ativado, gera vídeo com som (incluindo diálogo e efeitos sonoros) (padrão: False). Este parâmetro é revelado após selecionar um `model`. |
-| `first_frame` | IMAGE | Sim | - | A imagem inicial para a sequência de vídeo. |
-| `end_frame` | IMAGE | Sim | - | A imagem final para a sequência de vídeo. |
+| `modelo` | COMBO | Sim | `"viduq3-pro"`<br>`"viduq3-turbo"` | O modelo a ser usado para a geração de vídeo. Selecionar uma opção revela parâmetros de configuração adicionais para `resolution`, `duration` e `audio`. |
+| `model.resolution` | COMBO | Sim | `"720p"`<br>`"1080p"` | Resolução do vídeo de saída. Este parâmetro é revelado após selecionar um `modelo`. |
+| `model.duration` | INT | Sim | 1 a 16 | Duração do vídeo de saída em segundos (padrão: 5). Este parâmetro é revelado após selecionar um `modelo`. |
+| `model.audio` | BOOLEAN | Sim | `True` / `False` | Quando ativado, gera vídeo com som (incluindo diálogo e efeitos sonoros) (padrão: False). Este parâmetro é revelado após selecionar um `modelo`. |
+| `quadro inicial` | IMAGE | Sim | - | A imagem inicial para a sequência de vídeo. |
+| `quadro final` | IMAGE | Sim | - | A imagem final para a sequência de vídeo. |
 | `prompt` | STRING | Sim | - | Uma descrição em texto que guia a geração do vídeo (máximo de 2000 caracteres). |
-| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). |
+| `semente` | INT | Não | 0 a 2147483647 | Um valor de semente para controlar a aleatoriedade da geração (padrão: 1). |
 
 **Nota:** As imagens `first_frame` e `end_frame` devem ter proporções de aspecto semelhantes para obter melhores resultados. A proporção de aspecto das duas imagens deve estar entre 80% e 125% uma da outra (uma proximidade relativa entre 0,8 e 1,25).
 

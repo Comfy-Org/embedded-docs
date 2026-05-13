@@ -6,12 +6,12 @@ El nodo `ImageFromBatch` está diseñado para extraer un segmento específico de
 
 | Campo           | Tipo de Dato | Descripción                                                                           |
 |-----------------|--------------|---------------------------------------------------------------------------------------|
-| `image`         | `IMAGE`      | El lote de imágenes del cual se extraerá un segmento. Este parámetro es crucial para especificar el lote de origen. |
-| `batch_index`   | `INT`        | El índice inicial dentro del lote desde el cual comienza la extracción. Determina la posición inicial del segmento a extraer del lote. |
-| `length`        | `INT`        | La cantidad de imágenes a extraer del lote a partir de `batch_index`. Este parámetro define el tamaño del segmento a extraer. |
+| `imagen`         | `IMAGE`      | El lote de imágenes del cual se extraerá un segmento. Este parámetro es crucial para especificar el lote de origen. |
+| `indice_lote`   | `INT`        | El índice inicial dentro del lote desde el cual comienza la extracción. Determina la posición inicial del segmento a extraer del lote. |
+| `longitud`        | `INT`        | La cantidad de imágenes a extraer del lote a partir de `indice_lote`. Este parámetro define el tamaño del segmento a extraer. |
 
 ## Salidas
 
 | Campo  | Tipo de Dato | Descripción                                                                                   |
 |--------|--------------|-----------------------------------------------------------------------------------------------|
-| `image`| `IMAGE`      | El segmento extraído de imágenes del lote especificado. Esta salida representa un subconjunto del lote original, determinado por los parámetros `batch_index` y `length`. |
+| `imagen`| `IMAGE`      | El segmento extraído de imágenes del lote especificado. Esta salida representa un subconjunto del lote original, determinado por los parámetros `indice_lote` y `longitud`. |

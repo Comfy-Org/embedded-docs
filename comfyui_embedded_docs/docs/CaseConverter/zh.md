@@ -6,8 +6,8 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | 是 | - | 要转换为不同大小写格式的文本字符串 |
-| `mode` | STRING | 是 | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | 要应用的大小写转换模式（默认值：`"UPPERCASE"`） |
+| `字符串` | STRING | 是 | - | 要转换为不同大小写格式的文本字符串 |
+| `模式` | STRING | 是 | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | 要应用的大小写转换模式（默认值：`"UPPERCASE"`） |
 
 ## 输出
 

@@ -8,7 +8,7 @@ Dosyadan bir arka plan kaldırma modeli yükler. Bu düğüm, modeli görüntül
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `bg_removal_name` | STRING | Evet | Mevcut model dosyalarının listesi | Görüntülerden arka planları kaldırmak için kullanılan model. Mevcut arka plan kaldırma model dosyaları listesinden seçim yapın. |
+| `arka_plan_kaldırma_adı` | STRING | Evet | Mevcut model dosyalarının listesi | Görüntülerden arka planları kaldırmak için kullanılan model. Mevcut arka plan kaldırma model dosyaları listesinden seçim yapın. |
 
 ## Çıktılar
 

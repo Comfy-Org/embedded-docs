@@ -6,13 +6,13 @@ O nó LoadImageOutput carrega imagens da pasta de saída. Ao clicar no botão de
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | COMBO | Sim | Múltiplas opções disponíveis | Carrega uma imagem da pasta de saída. Inclui uma opção de upload e um botão de atualizar para renovar a lista de imagens. Quando o botão de atualizar é clicado, o nó atualiza a lista de imagens e seleciona automaticamente a primeira, permitindo uma iteração fácil. |
+| `imagem` | COMBO | Sim | Múltiplas opções disponíveis | Carrega uma imagem da pasta de saída. Inclui uma opção de upload e um botão de atualizar para renovar a lista de imagens. Quando o botão de atualizar é clicado, o nó atualiza a lista de imagens e seleciona automaticamente a primeira, permitindo uma iteração fácil. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem carregada da pasta de saída |
+| `imagem` | IMAGE | A imagem carregada da pasta de saída |
 | `mask` | MASK | A máscara associada à imagem carregada |
 
 ---

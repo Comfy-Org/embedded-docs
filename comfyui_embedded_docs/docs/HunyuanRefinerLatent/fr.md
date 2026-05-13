@@ -6,17 +6,17 @@ Le nœud HunyuanRefinerLatent traite les entrées de conditionnement et latentes
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | L'entrée de conditionnement positif à traiter |
-| `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif à traiter |
+| `positif` | CONDITIONING | Oui | - | L'entrée de conditionnement positif à traiter |
+| `négatif` | CONDITIONING | Oui | - | L'entrée de conditionnement négatif à traiter |
 | `latent` | LATENT | Oui | - | L'entrée de représentation latente |
-| `noise_augmentation` | FLOAT | Oui | 0,0 - 1,0 | La quantité d'augmentation de bruit à appliquer (par défaut : 0,10) |
+| `augmentation_du_bruit` | FLOAT | Oui | 0,0 - 1,0 | La quantité d'augmentation de bruit à appliquer (par défaut : 0,10) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif traité avec augmentation de bruit appliquée et concaténation d'image latente |
-| `negative` | CONDITIONING | Le conditionnement négatif traité avec augmentation de bruit appliquée et concaténation d'image latente |
+| `négatif` | CONDITIONING | Le conditionnement positif traité avec augmentation de bruit appliquée et concaténation d'image latente |
+| `latent` | CONDITIONING | Le conditionnement négatif traité avec augmentation de bruit appliquée et concaténation d'image latente |
 | `latent` | LATENT | Une nouvelle sortie latente avec des dimensions [batch_size, 32, hauteur, largeur, canaux] |
 
 ---

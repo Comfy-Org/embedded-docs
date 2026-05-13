@@ -8,10 +8,10 @@ Este nó cria um tensor latente vazio especificamente formatado para uso com o m
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sim | - | A largura do quadro de vídeo em pixels. |
-| `height` | INT | Sim | - | A altura do quadro de vídeo em pixels. |
-| `length` | INT | Sim | - | O número de quadros na sequência de vídeo. |
-| `batch_size` | INT | Não | - | O número de amostras de vídeo a serem geradas em um lote (padrão: 1). |
+| `largura` | INT | Sim | - | A largura do quadro de vídeo em pixels. |
+| `altura` | INT | Sim | - | A altura do quadro de vídeo em pixels. |
+| `duração` | INT | Sim | - | O número de quadros na sequência de vídeo. |
+| `tamanho_do_lote` | INT | Não | - | O número de amostras de vídeo a serem geradas em um lote (padrão: 1). |
 
 **Nota:** As dimensões espaciais do tensor latente gerado são calculadas dividindo a `width` e `height` de entrada por 16. A dimensão temporal (quadros) é calculada como `((length - 1) // 4) + 1`.
 

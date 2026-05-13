@@ -6,9 +6,9 @@ O nó Flux2Scheduler gera uma sequência de níveis de ruído (sigmas) para o pr
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `steps` | INT | Sim | 1 a 4096 | O número de etapas de remoção de ruído a serem executadas. Um valor maior geralmente resulta em resultados mais detalhados, mas leva mais tempo para processar (padrão: 20). |
-| `width` | INT | Sim | 16 a 16384 | A largura da imagem a ser gerada, em pixels. Este valor influencia o cálculo do cronograma de ruído (padrão: 1024). |
-| `height` | INT | Sim | 16 a 16384 | A altura da imagem a ser gerada, em pixels. Este valor influencia o cálculo do cronograma de ruído (padrão: 1024). |
+| `etapas` | INT | Sim | 1 a 4096 | O número de etapas de remoção de ruído a serem executadas. Um valor maior geralmente resulta em resultados mais detalhados, mas leva mais tempo para processar (padrão: 20). |
+| `largura` | INT | Sim | 16 a 16384 | A largura da imagem a ser gerada, em pixels. Este valor influencia o cálculo do cronograma de ruído (padrão: 1024). |
+| `altura` | INT | Sim | 16 a 16384 | A altura da imagem a ser gerada, em pixels. Este valor influencia o cálculo do cronograma de ruído (padrão: 1024). |
 
 ## Saídas
 

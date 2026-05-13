@@ -7,10 +7,10 @@ Ce nœud supprime l'arrière-plan d'une image à l'aide du service Bria RMBG 2.0
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée dont l'arrière-plan sera supprimé. |
-| `moderation` | COMBO | Non | `"false"`<br>`"true"` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, des options de modération supplémentaires deviennent disponibles. |
-| `visual_input_moderation` | BOOLEAN | Non | - | Active la modération du contenu visuel sur l'image d'entrée. Ce paramètre n'est disponible que lorsque `moderation` est défini sur `"true"`. Par défaut : `False`. |
-| `visual_output_moderation` | BOOLEAN | Non | - | Active la modération du contenu visuel sur l'image de sortie. Ce paramètre n'est disponible que lorsque `moderation` est défini sur `"true"`. Par défaut : `True`. |
-| `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine qui détermine si le nœud doit être réexécuté. Les résultats sont non déterministes quelle que soit la valeur de la graine. Par défaut : `0`. |
+| `modération` | COMBO | Non | `"false"`<br>`"true"` | Paramètres de modération. Lorsqu'il est défini sur `"true"`, des options de modération supplémentaires deviennent disponibles. |
+| `visual_input_moderation` | BOOLEAN | Non | - | Active la modération du contenu visuel sur l'image d'entrée. Ce paramètre n'est disponible que lorsque `modération` est défini sur `"true"`. Par défaut : `False`. |
+| `visual_output_moderation` | BOOLEAN | Non | - | Active la modération du contenu visuel sur l'image de sortie. Ce paramètre n'est disponible que lorsque `modération` est défini sur `"true"`. Par défaut : `True`. |
+| `graine` | INT | Non | 0 à 2147483647 | Une valeur de graine qui détermine si le nœud doit être réexécuté. Les résultats sont non déterministes quelle que soit la valeur de la graine. Par défaut : `0`. |
 
 **Remarque :** Les paramètres `visual_input_moderation` et `visual_output_moderation` dépendent du paramètre `moderation`. Ils ne sont actifs et requis que si `moderation` est défini sur `"true"`.
 

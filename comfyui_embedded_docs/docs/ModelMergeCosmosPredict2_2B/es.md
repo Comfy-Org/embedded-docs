@@ -6,8 +6,8 @@ El nodo `ModelMergeCosmosPredict2_2B` fusiona dos modelos de difusión utilizand
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | Sí | - | El primer modelo a fusionar |
-| `model2` | MODEL | Sí | - | El segundo modelo a fusionar |
+| `modelo1` | MODEL | Sí | - | El primer modelo a fusionar |
+| `modelo2` | MODEL | Sí | - | El segundo modelo a fusionar |
 | `pos_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del incrustador de posición (predeterminado: 1.0) |
 | `x_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del incrustador de entrada (predeterminado: 1.0) |
 | `t_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del incrustador de tiempo (predeterminado: 1.0) |

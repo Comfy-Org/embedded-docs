@@ -6,9 +6,9 @@ CLIPLoader düğümü, bir dosyadan metin kodlayıcı modelini (CLIP, T5 veya be
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name` | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu dosya, `ComfyUI/models/text_encoders/` veya `ComfyUI/models/clip/` dizininde bulunmalıdır. |
-| `type` | STRING | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | Yüklenen modelin mimari türü. Bu, hangi belirli kodlayıcı varyantının kullanılacağını belirler. Varsayılan değer `"stable_diffusion"` şeklindedir. |
-| `device` | STRING | Hayır | `"default"`<br>`"cpu"` | Modelin yükleneceği aygıt. `"default"`, varsa GPU'yu kullanırken, `"cpu"` CPU'ya yüklemeyi zorunlu kılar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). |
+| `clip_adı` | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu dosya, `ComfyUI/models/text_encoders/` veya `ComfyUI/models/clip/` dizininde bulunmalıdır. |
+| `tür` | STRING | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | Yüklenen modelin mimari türü. Bu, hangi belirli kodlayıcı varyantının kullanılacağını belirler. Varsayılan değer `"stable_diffusion"` şeklindedir. |
+| `cihaz` | STRING | Hayır | `"default"`<br>`"cpu"` | Modelin yükleneceği aygıt. `"default"`, varsa GPU'yu kullanırken, `"cpu"` CPU'ya yüklemeyi zorunlu kılar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). |
 
 ### Desteklenen Tür-Kodlayıcı Eşleştirmeleri
 

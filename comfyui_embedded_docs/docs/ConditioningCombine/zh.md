@@ -6,14 +6,14 @@
 
 | 参数名 | 数据类型 | 描述 |
 |------|----------|-------------|
-| `conditioning_1` | `CONDITIONING` | 要合并的第一个条件输入。在合并过程中与 `conditioning_2` 具有同等重要性。 |
-| `conditioning_2` | `CONDITIONING` | 要合并的第二个条件输入。在合并过程中与 `conditioning_1` 具有同等重要性。 |
+| `条件_1` | `CONDITIONING` | 要合并的第一个条件输入。在合并过程中与 `条件_2` 具有同等重要性。 |
+| `条件_2` | `CONDITIONING` | 要合并的第二个条件输入。在合并过程中与 `条件_1` 具有同等重要性。 |
 
 ## 输出
 
 | 参数名 | 数据类型 | 描述 |
 |------|----------|-------------|
-| `conditioning` | `CONDITIONING` | `conditioning_1` 和 `conditioning_2` 合并后的结果，封装了融合后的信息。 |
+| `conditioning` | `CONDITIONING` | `条件_1` 和 `条件_2` 合并后的结果，封装了融合后的信息。 |
 
 ## 使用场景
 

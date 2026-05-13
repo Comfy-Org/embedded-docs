@@ -34,13 +34,13 @@ Kling Başlangıç-Bitiş Karesinden Video düğümü, sağladığınız başlan
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `start_frame` | IMAGE | Evet | - | Referans Görsel - URL veya Base64 kodlu dize, 10MB'ı geçemez, çözünürlük en az 300*300 piksel olmalıdır, en-boy oranı 1:2,5 ~ 2,5:1 arasında olmalıdır. Base64, data:image ön ekini içermemelidir. |
-| `end_frame` | IMAGE | Evet | - | Referans Görsel - Bitiş karesi kontrolü. URL veya Base64 kodlu dize, 10MB'ı geçemez, çözünürlük en az 300*300 piksel olmalıdır. Base64, data:image ön ekini içermemelidir. |
-| `prompt` | STRING | Evet | - | Pozitif metin istemi |
-| `negative_prompt` | STRING | Evet | - | Negatif metin istemi |
-| `cfg_scale` | FLOAT | Hayır | 0.0-1.0 | İstem yönlendirmesinin gücünü kontrol eder (varsayılan: 0.5) |
-| `aspect_ratio` | COMBO | Hayır | "16:9"<br>"9:16"<br>"1:1" | Oluşturulan video için en-boy oranı (varsayılan: "16:9") |
-| `mode` | COMBO | Hayır | Birden çok seçenek mevcut | Video oluşturma için kullanılacak yapılandırma, şu formatta: mod / süre / model_adı. (varsayılan: mevcut modlardan yedinci seçenek) |
+| `başlangıç_karesi` | IMAGE | Evet | - | Referans Görsel - URL veya Base64 kodlu dize, 10MB'ı geçemez, çözünürlük en az 300*300 piksel olmalıdır, en-boy oranı 1:2,5 ~ 2,5:1 arasında olmalıdır. Base64, data:image ön ekini içermemelidir. |
+| `bitiş_karesi` | IMAGE | Evet | - | Referans Görsel - Bitiş karesi kontrolü. URL veya Base64 kodlu dize, 10MB'ı geçemez, çözünürlük en az 300*300 piksel olmalıdır. Base64, data:image ön ekini içermemelidir. |
+| `istem` | STRING | Evet | - | Pozitif metin istemi |
+| `negatif_istem` | STRING | Evet | - | Negatif metin istemi |
+| `cfg_ölçeği` | FLOAT | Hayır | 0.0-1.0 | İstem yönlendirmesinin gücünü kontrol eder (varsayılan: 0.5) |
+| `en_boy_oranı` | COMBO | Hayır | "16:9"<br>"9:16"<br>"1:1" | Oluşturulan video için en-boy oranı (varsayılan: "16:9") |
+| `mod` | COMBO | Hayır | Birden çok seçenek mevcut | Video oluşturma için kullanılacak yapılandırma, şu formatta: mod / süre / model_adı. (varsayılan: mevcut modlardan yedinci seçenek) |
 
 **Görsel Kısıtlamaları:**
 
@@ -53,8 +53,8 @@ Kling Başlangıç-Bitiş Karesinden Video düğümü, sağladığınız başlan
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video dizisi |
-| `video_id` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Oluşturulan video dizisi |
+| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
 | `duration` | STRING | Oluşturulan videonun süresi |
 
 ---

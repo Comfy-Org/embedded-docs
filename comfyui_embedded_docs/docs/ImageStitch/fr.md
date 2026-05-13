@@ -9,9 +9,9 @@ Ce nœud vous permet d'assembler deux images dans une direction spécifiée (hau
 | `image1` | IMAGE | Requise | - | - | La première image à assembler |
 | `image2` | IMAGE | Optionnelle | None | - | La deuxième image à assembler ; si non fournie, seule la première image est renvoyée |
 | `direction` | STRING | Requise | right | right/down/left/up | La direction dans laquelle assembler la deuxième image : droite, bas, gauche ou haut |
-| `match_image_size` | BOOLEAN | Requis | True | True/False | Indique s'il faut redimensionner la deuxième image pour qu'elle corresponde aux dimensions de la première image |
-| `spacing_width` | INT | Requis | 0 | 0-1024 | Largeur de l'espacement entre les images, doit être un nombre pair |
-| `spacing_color` | STRING | Requis | white | white/black/red/green/blue | Couleur de l'espacement entre les images assemblées |
+| `correspondre_taille_image` | BOOLEAN | Requis | True | True/False | Indique s'il faut redimensionner la deuxième image pour qu'elle corresponde aux dimensions de la première image |
+| `espacement_largeur` | INT | Requis | 0 | 0-1024 | Largeur de l'espacement entre les images, doit être un nombre pair |
+| `espacement_couleur` | STRING | Requis | white | white/black/red/green/blue | Couleur de l'espacement entre les images assemblées |
 
 > Pour `spacing_color`, lors de l'utilisation de couleurs autres que "white/black", si `match_image_size` est défini sur `false`, la zone de remplissage sera remplie de noir
 

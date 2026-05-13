@@ -8,14 +8,14 @@ Le nœud Wan Texte vers Image génère des images à partir de descriptions text
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | "wan2.5-t2i-preview" | Modèle à utiliser (par défaut : "wan2.5-t2i-preview") |
-| `prompt` | STRING | Oui | - | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois (par défaut : vide) |
-| `negative_prompt` | STRING | Non | - | Invite négative décrivant ce qu'il faut éviter (par défaut : vide) |
-| `width` | INT | Non | 768-1440 | Largeur de l'image en pixels (par défaut : 1024, pas : 32) |
-| `height` | INT | Non | 768-1440 | Hauteur de l'image en pixels (par défaut : 1024, pas : 32) |
-| `seed` | INT | Non | 0-2147483647 | Graine à utiliser pour la génération (par défaut : 0) |
-| `prompt_extend` | BOOLEAN | Non | - | Indique s'il faut enrichir l'invite avec l'assistance de l'IA (par défaut : True) |
-| `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (par défaut : False) |
+| `modèle` | COMBO | Oui | "wan2.5-t2i-preview" | Modèle à utiliser (par défaut : "wan2.5-t2i-preview") |
+| `invite` | STRING | Oui | - | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois (par défaut : vide) |
+| `invite négative` | STRING | Non | - | Invite négative décrivant ce qu'il faut éviter (par défaut : vide) |
+| `largeur` | INT | Non | 768-1440 | Largeur de l'image en pixels (par défaut : 1024, pas : 32) |
+| `hauteur` | INT | Non | 768-1440 | Hauteur de l'image en pixels (par défaut : 1024, pas : 32) |
+| `graine` | INT | Non | 0-2147483647 | Graine à utiliser pour la génération (par défaut : 0) |
+| `extension d'invite` | BOOLEAN | Non | - | Indique s'il faut enrichir l'invite avec l'assistance de l'IA (par défaut : True) |
+| `filigrane` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (par défaut : False) |
 
 ## Sorties
 

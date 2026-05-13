@@ -6,7 +6,7 @@ Le nœud StringTrim supprime les caractères d'espacement (espaces, tabulations,
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte à traiter. Prend en charge les entrées multilignes. |
+| `chaîne` | STRING | Oui | - | La chaîne de texte à traiter. Prend en charge les entrées multilignes. |
 | `mode` | COMBO | Oui | "Both"<br>"Left"<br>"Right" | Spécifie le(s) côté(s) de la chaîne à couper. "Both" supprime les espaces des deux extrémités, "Left" supprime uniquement du début, "Right" supprime uniquement de la fin. |
 
 ## Sorties

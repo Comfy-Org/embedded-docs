@@ -8,14 +8,14 @@ L'éditeur de courbe fournit une interface visuelle pour ajuster et affiner une 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `curve` | CURVE | Oui | N/D | La courbe d'entrée à éditer. |
-| `histogram` | HISTOGRAM | Non | N/D | Un histogramme optionnel à afficher aux côtés de la courbe pour référence visuelle. |
+| `courbe` | CURVE | Oui | N/D | La courbe d'entrée à éditer. |
+| `histogramme` | HISTOGRAM | Non | N/D | Un histogramme optionnel à afficher aux côtés de la courbe pour référence visuelle. |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `curve` | CURVE | La courbe éditée après les ajustements effectués dans l'interface du nœud. |
+| `courbe` | CURVE | La courbe éditée après les ajustements effectués dans l'interface du nœud. |
 
 ---
 **Source fingerprint (SHA-256):** `34cf36a5b934c44ebfce0b81e7c515f1b31fb17f3b7e1ad52255d1d72f68240b`

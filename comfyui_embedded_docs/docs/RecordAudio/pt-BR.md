@@ -6,7 +6,7 @@ O nó RecordAudio carrega arquivos de áudio que foram gravados ou selecionados 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `audio` | AUDIO_RECORD | Sim | N/A | A entrada de gravação de áudio proveniente da interface de gravação de áudio |
+| `áudio` | AUDIO_RECORD | Sim | N/A | A entrada de gravação de áudio proveniente da interface de gravação de áudio |
 
 ## Saídas
 

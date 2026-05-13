@@ -13,8 +13,8 @@ Este nodo aplica una animación específica a un modelo de personaje 3D que ya h
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model_file` | STRING | Un identificador de cadena para el modelo animado. Esta salida se proporciona solo por compatibilidad con versiones anteriores. |
-| `GLB` | FILE3DGLB | El archivo de modelo 3D animado en formato GLB. |
+| `GLB` | STRING | Un identificador de cadena para el modelo animado. Esta salida se proporciona solo por compatibilidad con versiones anteriores. |
+| `FBX` | FILE3DGLB | El archivo de modelo 3D animado en formato GLB. |
 | `FBX` | FILE3DFBX | El archivo de modelo 3D animado en formato FBX. |
 
 ---

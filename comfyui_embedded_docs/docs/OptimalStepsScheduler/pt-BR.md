@@ -6,9 +6,9 @@ O nó OptimalStepsScheduler calcula os sigmas do cronograma de ruído para model
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model_type` | COMBO | Sim | "FLUX"<br>"Wan"<br>"Chroma" | O tipo de modelo de difusão a ser usado para o cálculo do nível de ruído |
-| `steps` | INT | Sim | 3-1000 | O número total de etapas de amostragem a serem calculadas (padrão: 20) |
-| `denoise` | FLOAT | Não | 0.0-1.0 | Controla a intensidade da remoção de ruído, que ajusta o número efetivo de etapas (padrão: 1.0) |
+| `tipo_de_modelo` | COMBO | Sim | "FLUX"<br>"Wan"<br>"Chroma" | O tipo de modelo de difusão a ser usado para o cálculo do nível de ruído |
+| `passos` | INT | Sim | 3-1000 | O número total de etapas de amostragem a serem calculadas (padrão: 20) |
+| `reduzir_ruído` | FLOAT | Não | 0.0-1.0 | Controla a intensidade da remoção de ruído, que ajusta o número efetivo de etapas (padrão: 1.0) |
 
 **Observação:** Quando `denoise` é definido como um valor menor que 1.0, o nó calcula as etapas efetivas como `steps * denoise`. Se `denoise` for definido como 0.0, o nó retorna um tensor vazio.
 

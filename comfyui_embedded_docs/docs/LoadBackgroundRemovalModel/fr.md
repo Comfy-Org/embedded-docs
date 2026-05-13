@@ -10,7 +10,7 @@ Charge un modèle de suppression d'arrière-plan à partir d'un fichier. Ce nœu
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `bg_removal_name` | STRING | Oui | Liste des fichiers de modèle disponibles | Le modèle utilisé pour supprimer les arrière-plans des images. Sélectionnez dans la liste des fichiers de modèle de suppression d'arrière-plan disponibles. |
+| `nom_du_modèle_de_suppression_arrière-plan` | STRING | Oui | Liste des fichiers de modèle disponibles | Le modèle utilisé pour supprimer les arrière-plans des images. Sélectionnez dans la liste des fichiers de modèle de suppression d'arrière-plan disponibles. |
 
 ## Sorties
 

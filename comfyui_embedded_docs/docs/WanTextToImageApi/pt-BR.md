@@ -6,14 +6,14 @@ O nó Wan Text to Image gera imagens com base em descrições textuais. Ele util
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sim | "wan2.5-t2i-preview" | Modelo a ser utilizado (padrão: "wan2.5-t2i-preview") |
+| `modelo` | COMBO | Sim | "wan2.5-t2i-preview" | Modelo a ser utilizado (padrão: "wan2.5-t2i-preview") |
 | `prompt` | STRING | Sim | - | Instrução descrevendo os elementos e características visuais. Suporta inglês e chinês (padrão: vazio) |
-| `negative_prompt` | STRING | Não | - | Instrução negativa descrevendo o que deve ser evitado (padrão: vazio) |
-| `width` | INT | Não | 768-1440 | Largura da imagem em pixels (padrão: 1024, passo: 32) |
-| `height` | INT | Não | 768-1440 | Altura da imagem em pixels (padrão: 1024, passo: 32) |
-| `seed` | INT | Não | 0-2147483647 | Semente a ser usada para a geração (padrão: 0) |
-| `prompt_extend` | BOOLEAN | Não | - | Se deve aprimorar a instrução com assistência de IA (padrão: Verdadeiro) |
-| `watermark` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: Falso) |
+| `prompt_negativo` | STRING | Não | - | Instrução negativa descrevendo o que deve ser evitado (padrão: vazio) |
+| `largura` | INT | Não | 768-1440 | Largura da imagem em pixels (padrão: 1024, passo: 32) |
+| `altura` | INT | Não | 768-1440 | Altura da imagem em pixels (padrão: 1024, passo: 32) |
+| `semente` | INT | Não | 0-2147483647 | Semente a ser usada para a geração (padrão: 0) |
+| `estender_prompt` | BOOLEAN | Não | - | Se deve aprimorar a instrução com assistência de IA (padrão: Verdadeiro) |
+| `marca_d'água` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: Falso) |
 
 ## Saídas
 

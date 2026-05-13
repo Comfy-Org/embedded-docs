@@ -6,8 +6,8 @@ Le nœud WavespeedFlashVSRNode est un upscaler vidéo rapide et de haute qualit�
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | N/A | Le fichier vidéo d'entrée à upscaler. Doit être au format conteneur MP4 avec une durée comprise entre 5 secondes et 10 minutes. |
-| `target_resolution` | STRING | Oui | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | La résolution souhaitée pour la vidéo de sortie upscalée. |
+| `vidéo` | VIDEO | Oui | N/A | Le fichier vidéo d'entrée à upscaler. Doit être au format conteneur MP4 avec une durée comprise entre 5 secondes et 10 minutes. |
+| `résolution cible` | STRING | Oui | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | La résolution souhaitée pour la vidéo de sortie upscalée. |
 
 **Contraintes d'entrée :**
 

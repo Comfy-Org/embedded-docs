@@ -7,12 +7,12 @@ Vidu2 Görüntüden Videoya Oluşturma düğümü, tek bir giriş görüntüsün
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | COMBO | Evet | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | Video oluşturma için kullanılacak Vidu2 modeli. Farklı modeller, hız ve kalite arasında değişen ödünleşimler sunar. |
-| `image` | IMAGE | Evet | - | Oluşturulan videonun başlangıç karesi olarak kullanılacak bir görüntü. Yalnızca bir görüntüye izin verilir. |
-| `prompt` | STRING | Hayır | - | Video oluşturma için isteğe bağlı bir metin istemi (en fazla 2000 karakter). Varsayılan değer boş bir dizedir. |
-| `duration` | INT | Evet | 1 ile 10 | Oluşturulan videonun saniye cinsinden uzunluğu. Varsayılan değer 5'tir. |
-| `seed` | INT | Hayır | 0 ile 2147483647 | Tekrarlanabilir sonuçlar elde etmek için rastgele sayı üretiminde kullanılan bir tohum değeri. Varsayılan değer 1'dir. |
-| `resolution` | COMBO | Evet | `"720p"`<br>`"1080p"` | Oluşturulan videonun çıktı çözünürlüğü. Bu parametre gelişmiştir. |
-| `movement_amplitude` | COMBO | Evet | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Karedeki nesnelerin hareket genliği. Bu parametre gelişmiştir. |
+| `görüntü` | IMAGE | Evet | - | Oluşturulan videonun başlangıç karesi olarak kullanılacak bir görüntü. Yalnızca bir görüntüye izin verilir. |
+| `istem` | STRING | Hayır | - | Video oluşturma için isteğe bağlı bir metin istemi (en fazla 2000 karakter). Varsayılan değer boş bir dizedir. |
+| `süre` | INT | Evet | 1 ile 10 | Oluşturulan videonun saniye cinsinden uzunluğu. Varsayılan değer 5'tir. |
+| `tohum` | INT | Hayır | 0 ile 2147483647 | Tekrarlanabilir sonuçlar elde etmek için rastgele sayı üretiminde kullanılan bir tohum değeri. Varsayılan değer 1'dir. |
+| `çözünürlük` | COMBO | Evet | `"720p"`<br>`"1080p"` | Oluşturulan videonun çıktı çözünürlüğü. Bu parametre gelişmiştir. |
+| `hareket_genliği` | COMBO | Evet | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Karedeki nesnelerin hareket genliği. Bu parametre gelişmiştir. |
 
 **Kısıtlamalar:**
 

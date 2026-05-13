@@ -34,9 +34,9 @@ El nodo OpenAIChatConfig permite establecer opciones de configuración adicional
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `truncation` | COMBO | Sí | `"auto"`<br>`"disabled"` | La estrategia de truncamiento a utilizar para la respuesta del modelo. auto: Si el contexto de esta respuesta y las anteriores supera el tamaño de la ventana de contexto del modelo, el modelo truncará la respuesta para ajustarse a la ventana de contexto eliminando elementos de entrada en medio de la conversación. disabled: Si una respuesta del modelo supera el tamaño de la ventana de contexto para un modelo, la solicitud fallará con un error 400 (valor predeterminado: "auto") |
-| `max_output_tokens` | INT | No | 16 a 16384 | Un límite superior para la cantidad de tokens que se pueden generar para una respuesta, incluyendo los tokens de salida visibles (valor predeterminado: 4096) |
-| `instructions` | STRING | No | - | Instrucciones para el modelo sobre cómo generar la respuesta (se admite entrada multilínea) |
+| `truncamiento` | COMBO | Sí | `"auto"`<br>`"disabled"` | La estrategia de truncamiento a utilizar para la respuesta del modelo. auto: Si el contexto de esta respuesta y las anteriores supera el tamaño de la ventana de contexto del modelo, el modelo truncará la respuesta para ajustarse a la ventana de contexto eliminando elementos de entrada en medio de la conversación. disabled: Si una respuesta del modelo supera el tamaño de la ventana de contexto para un modelo, la solicitud fallará con un error 400 (valor predeterminado: "auto") |
+| `tokens_salida_max` | INT | No | 16 a 16384 | Un límite superior para la cantidad de tokens que se pueden generar para una respuesta, incluyendo los tokens de salida visibles (valor predeterminado: 4096) |
+| `instrucciones` | STRING | No | - | Instrucciones para el modelo sobre cómo generar la respuesta (se admite entrada multilínea) |
 
 ## Salidas
 

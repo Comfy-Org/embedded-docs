@@ -6,14 +6,14 @@ El nodo TomePatchModel aplica Token Merging (ToMe) a un modelo de difusión para
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que se aplicará la fusión de tokens |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que se aplicará la fusión de tokens |
 | `ratio` | FLOAT | No | 0.0 - 1.0 | La proporción de tokens a fusionar (predeterminado: 0.3) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con la fusión de tokens aplicada |
+| `modelo` | MODEL | El modelo modificado con la fusión de tokens aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `23d63ffa1b468a8a41533cc926125f4ef566b13edd1d95a6ef1ae63096a9d878`

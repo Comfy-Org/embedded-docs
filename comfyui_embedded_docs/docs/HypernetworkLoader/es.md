@@ -8,12 +8,12 @@ El nodo HypernetworkLoader está diseñado para mejorar o modificar las capacida
 
 | Campo                | Tipo Comfy        | Descripción                                                                                  |
 |----------------------|-------------------|----------------------------------------------------------------------------------------------|
-| `model`              | `MODEL`           | El modelo base al que se aplicará la hiperred, determinando la arquitectura que se mejorará o modificará. |
-| `hypernetwork_name`  | `COMBO[STRING]`   | El nombre de la hiperred que se cargará y aplicará al modelo, afectando el comportamiento o rendimiento modificado del modelo. |
-| `strength`           | `FLOAT`           | Un escalar que ajusta la intensidad del efecto de la hiperred sobre el modelo, permitiendo un ajuste fino de las alteraciones. |
+| `modelo`              | `MODEL`           | El modelo base al que se aplicará la hiperred, determinando la arquitectura que se mejorará o modificará. |
+| `nombre_hypernetwork`  | `COMBO[STRING]`   | El nombre de la hiperred que se cargará y aplicará al modelo, afectando el comportamiento o rendimiento modificado del modelo. |
+| `fuerza`           | `FLOAT`           | Un escalar que ajusta la intensidad del efecto de la hiperred sobre el modelo, permitiendo un ajuste fino de las alteraciones. |
 
 ## Salidas
 
 | Campo    | Tipo de Dato | Descripción                                                              |
 |----------|--------------|--------------------------------------------------------------------------|
-| `model`  | `MODEL`      | El modelo modificado después de aplicar la hiperred, mostrando el impacto de la hiperred sobre el modelo original. |
+| `modelo`  | `MODEL`      | El modelo modificado después de aplicar la hiperred, mostrando el impacto de la hiperred sobre el modelo original. |

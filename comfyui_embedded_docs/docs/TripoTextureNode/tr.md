@@ -6,12 +6,12 @@ TripoTextureNode, Tripo API'sini kullanarak dokulu 3D modeller oluşturur. Bir m
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | Evet | - | Doku uygulanacak modelin görev kimliği |
-| `texture` | BOOLEAN | Hayır | - | Doku oluşturulup oluşturulmayacağı (varsayılan: True) |
+| `model_görev_id` | MODEL_TASK_ID | Evet | - | Doku uygulanacak modelin görev kimliği |
+| `doku` | BOOLEAN | Hayır | - | Doku oluşturulup oluşturulmayacağı (varsayılan: True) |
 | `pbr` | BOOLEAN | Hayır | - | PBR (Fiziksel Tabanlı İşleme) malzemelerinin oluşturulup oluşturulmayacağı (varsayılan: True) |
-| `texture_seed` | INT | Hayır | - | Doku oluşturma için rastgele tohum değeri (varsayılan: 42) |
-| `texture_quality` | COMBO | Hayır | "standard"<br>"detailed" | Doku oluşturma için kalite seviyesi (varsayılan: "standard"). "detailed" seçeneğinin maliyeti 0,20 USD, "standard" seçeneğinin maliyeti ise 0,10 USD'dir. |
-| `texture_alignment` | COMBO | Hayır | "original_image"<br>"geometry" | Dokuları hizalama yöntemi (varsayılan: "original_image"). "original_image" dokuları orijinal giriş görüntüsüne hizalarken, "geometry" onları 3D geometriye hizalar. |
+| `doku_tohumu` | INT | Hayır | - | Doku oluşturma için rastgele tohum değeri (varsayılan: 42) |
+| `doku_kalitesi` | COMBO | Hayır | "standard"<br>"detailed" | Doku oluşturma için kalite seviyesi (varsayılan: "standard"). "detailed" seçeneğinin maliyeti 0,20 USD, "standard" seçeneğinin maliyeti ise 0,10 USD'dir. |
+| `doku_hizalama` | COMBO | Hayır | "original_image"<br>"geometry" | Dokuları hizalama yöntemi (varsayılan: "original_image"). "original_image" dokuları orijinal giriş görüntüsüne hizalarken, "geometry" onları 3D geometriye hizalar. |
 
 *Not: Bu düğüm, sistem tarafından otomatik olarak yönetilen kimlik doğrulama belirteçleri ve API anahtarları gerektirir.*
 
@@ -19,8 +19,8 @@ TripoTextureNode, Tripo API'sini kullanarak dokulu 3D modeller oluşturur. Bir m
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Uygulanan dokularla oluşturulan model dosyası (yalnızca geriye dönük uyumluluk için) |
-| `model task_id` | MODEL_TASK_ID | Doku oluşturma sürecini izlemek için görev kimliği |
+| `model_görev_id` | STRING | Uygulanan dokularla oluşturulan model dosyası (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | MODEL_TASK_ID | Doku oluşturma sürecini izlemek için görev kimliği |
 | `GLB` | FILE3DGLB | Uygulanan dokularla GLB formatında oluşturulan 3D model |
 
 ---

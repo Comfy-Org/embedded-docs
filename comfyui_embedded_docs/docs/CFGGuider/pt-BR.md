@@ -6,9 +6,9 @@ O nó CFGGuider cria um sistema de orientação para controlar o processo de amo
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo a ser usado para orientação |
-| `positive` | CONDITIONING | Sim | - | O condicionamento positivo que guia a geração em direção ao conteúdo desejado |
-| `negative` | CONDITIONING | Sim | - | O condicionamento negativo que afasta a geração de conteúdo indesejado |
+| `modelo` | MODEL | Sim | - | O modelo a ser usado para orientação |
+| `positivo` | CONDITIONING | Sim | - | O condicionamento positivo que guia a geração em direção ao conteúdo desejado |
+| `negativo` | CONDITIONING | Sim | - | O condicionamento negativo que afasta a geração de conteúdo indesejado |
 | `cfg` | FLOAT | Sim | 0,0 a 100,0 | A escala de orientação livre de classificador que controla o quão fortemente o condicionamento influencia a geração (padrão: 8,0) |
 
 ## Saídas

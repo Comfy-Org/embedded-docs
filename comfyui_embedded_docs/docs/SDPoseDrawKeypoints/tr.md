@@ -6,14 +6,14 @@ SDPoseDrawKeypoints düğümü, poz tahmin verilerini (anahtar noktaları) alır
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `keypoints` | POSE_KEYPOINT | Evet | - | Çizilecek poz anahtar noktası verileri. Bu veriler tipik olarak bir poz algılama düğümünden gelir. |
-| `draw_body` | BOOLEAN | Hayır | - | Ana vücut iskeletinin çizilip çizilmeyeceğini kontrol eder (varsayılan: True). |
-| `draw_hands` | BOOLEAN | Hayır | - | El anahtar noktalarının çizilip çizilmeyeceğini kontrol eder (varsayılan: True). |
-| `draw_face` | BOOLEAN | Hayır | - | Yüz anahtar noktalarının çizilip çizilmeyeceğini kontrol eder (varsayılan: True). |
-| `draw_feet` | BOOLEAN | Hayır | - | Ayak anahtar noktalarının çizilip çizilmeyeceğini kontrol eder (varsayılan: False). |
-| `stick_width` | INT | Hayır | 1 ila 10 | Vücut iskeletini çizmek için kullanılan çizgilerin kalınlığı (varsayılan: 4). |
-| `face_point_size` | INT | Hayır | 1 ila 10 | Yüz anahtar noktalarını çizmek için kullanılan noktaların boyutu (varsayılan: 3). |
-| `score_threshold` | FLOAT | Hayır | 0.0 ila 1.0 | Bir anahtar noktanın çizilmesi için gereken minimum güven puanı. Bu değerin altındaki puanlara sahip anahtar noktaları yok sayılır (varsayılan: 0.3). |
+| `anahtar_noktalar` | POSE_KEYPOINT | Evet | - | Çizilecek poz anahtar noktası verileri. Bu veriler tipik olarak bir poz algılama düğümünden gelir. |
+| `gövde_çiz` | BOOLEAN | Hayır | - | Ana vücut iskeletinin çizilip çizilmeyeceğini kontrol eder (varsayılan: True). |
+| `elleri_çiz` | BOOLEAN | Hayır | - | El anahtar noktalarının çizilip çizilmeyeceğini kontrol eder (varsayılan: True). |
+| `yüzü_çiz` | BOOLEAN | Hayır | - | Yüz anahtar noktalarının çizilip çizilmeyeceğini kontrol eder (varsayılan: True). |
+| `ayakları_çiz` | BOOLEAN | Hayır | - | Ayak anahtar noktalarının çizilip çizilmeyeceğini kontrol eder (varsayılan: False). |
+| `çizgi_genişliği` | INT | Hayır | 1 ila 10 | Vücut iskeletini çizmek için kullanılan çizgilerin kalınlığı (varsayılan: 4). |
+| `yüz_nokta_boyutu` | INT | Hayır | 1 ila 10 | Yüz anahtar noktalarını çizmek için kullanılan noktaların boyutu (varsayılan: 3). |
+| `puan_eşiği` | FLOAT | Hayır | 0.0 ila 1.0 | Bir anahtar noktanın çizilmesi için gereken minimum güven puanı. Bu değerin altındaki puanlara sahip anahtar noktaları yok sayılır (varsayılan: 0.3). |
 
 **Not:** `keypoints` girdisi boş veya `None` ise, düğüm boş bir 64x64 görüntü çıktısı verecektir.
 

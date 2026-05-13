@@ -18,7 +18,7 @@ Bu düğüm, ByteDance'in Seedance 2.0 hizmeti için kişisel bir görsel varlı
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `asset_id` | STRING | Yeni oluşturulan görsel varlığı için benzersiz tanımlayıcı. |
+| `group_id` | STRING | Yeni oluşturulan görsel varlığı için benzersiz tanımlayıcı. |
 | `group_id` | STRING | Varlık grubu için tanımlayıcı. Bu, sağlanan `group_id` veya yeni oluşturulan bir kimlik olacaktır. |
 
 ---

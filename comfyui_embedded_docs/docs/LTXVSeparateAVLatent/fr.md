@@ -14,7 +14,7 @@ Le nœud LTXVSeparateAVLatent prend une représentation latente audiovisuelle co
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `video_latent` | LATENT | La représentation latente contenant les données vidéo séparées. |
+| `latent_audio` | LATENT | La représentation latente contenant les données vidéo séparées. |
 | `audio_latent` | LATENT | La représentation latente contenant les données audio séparées. |
 
 ---

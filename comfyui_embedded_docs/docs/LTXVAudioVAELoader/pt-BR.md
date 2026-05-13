@@ -8,7 +8,7 @@ O nó Carregador de VAE de Áudio LTXV carrega um modelo de Autoencoder Variacio
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `ckpt_name` | STRING | Sim | Todos os arquivos na pasta `checkpoints`.<br>*Exemplo: `"audio_vae.safetensors"`* | Checkpoint do VAE de áudio a ser carregado. Esta é uma lista suspensa preenchida com todos os arquivos encontrados no diretório `checkpoints` do seu ComfyUI. |
+| `nome_ckpt` | STRING | Sim | Todos os arquivos na pasta `checkpoints`.<br>*Exemplo: `"audio_vae.safetensors"`* | Checkpoint do VAE de áudio a ser carregado. Esta é uma lista suspensa preenchida com todos os arquivos encontrados no diretório `checkpoints` do seu ComfyUI. |
 
 ## Saídas
 

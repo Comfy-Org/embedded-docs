@@ -38,11 +38,11 @@ Bu düğüm, AR (Otoregresif) video modelleri için bir görüntüden videoya ol
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Oluşturma için kullanılacak AR video modeli. |
 | `vae` | VAE | Evet | - | Başlangıç görüntüsünü gizli uzaya kodlamak için kullanılan VAE modeli. |
-| `start_image` | IMAGE | Evet | - | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. |
-| `width` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin genişliği (varsayılan: 832). |
-| `height` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). |
-| `length` | INT | Evet | 1 ila 1024 (adım: 4) | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). |
-| `batch_size` | INT | Evet | 1 ila 64 | Tek bir grupta oluşturulacak video dizisi sayısı (varsayılan: 1). |
+| `başlangıç_görseli` | IMAGE | Evet | - | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. |
+| `genişlik` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin genişliği (varsayılan: 832). |
+| `yükseklik` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). |
+| `uzunluk` | INT | Evet | 1 ila 1024 (adım: 4) | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). |
+| `toplu_boyut` | INT | Evet | 1 ila 64 | Tek bir grupta oluşturulacak video dizisi sayısı (varsayılan: 1). |
 
 ## Çıktılar
 

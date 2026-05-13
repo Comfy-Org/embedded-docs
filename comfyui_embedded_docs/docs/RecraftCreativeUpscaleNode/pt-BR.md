@@ -6,13 +6,13 @@ Este nó de Ampliação Criativa de Imagem Recraft melhora uma imagem raster aum
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | | A imagem de entrada a ser ampliada. |
+| `imagem` | IMAGE | Sim | | A imagem de entrada a ser ampliada. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem ampliada resultante com detalhes aprimorados. |
+| `imagem` | IMAGE | A imagem ampliada resultante com detalhes aprimorados. |
 
 ---
 **Source fingerprint (SHA-256):** `b638dd926e144c47ad2c2968cf49f3d322cbdddfcb8b2e86edb3ae9558a1ded6`

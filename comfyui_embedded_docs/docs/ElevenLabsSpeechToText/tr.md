@@ -34,16 +34,16 @@ ElevenLabs Konuşmayı Metne Çevir düğümü, ses dosyalarını metne dönüş
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | - | Metne çevrilecek ses. |
+| `ses` | AUDIO | Evet | - | Metne çevrilecek ses. |
 | `model` | COMBO | Evet | `"scribe_v2"` | Metne çevirme için kullanılacak model. Bu modelin seçilmesi ek parametreleri ortaya çıkarır. |
 | `tag_audio_events` | BOOLEAN | Hayır | - | Metinde (kahkaha), (müzik) gibi sesleri açıklama. Bu parametre, `"scribe_v2"` modeli seçildiğinde görünür hale gelir. (varsayılan: False) |
 | `diarize` | BOOLEAN | Hayır | - | Hangi konuşmacının konuştuğunu açıklama. Bu parametre, `"scribe_v2"` modeli seçildiğinde görünür hale gelir. (varsayılan: False) |
 | `diarization_threshold` | FLOAT | Hayır | 0.1 - 0.4 | Konuşmacı ayırma hassasiyeti. Daha düşük değerler konuşmacı değişikliklerine karşı daha hassastır. Bu parametre, `"scribe_v2"` modeli seçildiğinde ve `diarize` etkinleştirildiğinde görünür hale gelir. (varsayılan: 0.22) |
 | `temperature` | FLOAT | Hayır | 0.0 - 2.0 | Rastgelelik kontrolü. 0.0 model varsayılanını kullanır. Daha yüksek değerler rastgeleliği artırır. Bu parametre, `"scribe_v2"` modeli seçildiğinde görünür hale gelir. (varsayılan: 0.0) |
 | `timestamps_granularity` | COMBO | Hayır | `"word"`<br>`"character"`<br>`"none"` | Metin kelimeleri için zamanlama hassasiyeti. Bu parametre, `"scribe_v2"` modeli seçildiğinde görünür hale gelir. (varsayılan: "word") |
-| `language_code` | STRING | Hayır | - | ISO-639-1 veya ISO-639-3 dil kodu (ör. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: "") |
-| `num_speakers` | INT | Hayır | 0 - 32 | Tahmin edilecek maksimum konuşmacı sayısı. Otomatik algılama için 0 olarak ayarlayın. (varsayılan: 0) |
-| `seed` | INT | Hayır | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (determinizm garanti edilmez). (varsayılan: 1) |
+| `dil_kodu` | STRING | Hayır | - | ISO-639-1 veya ISO-639-3 dil kodu (ör. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: "") |
+| `konuşmacı_sayısı` | INT | Hayır | 0 - 32 | Tahmin edilecek maksimum konuşmacı sayısı. Otomatik algılama için 0 olarak ayarlayın. (varsayılan: 0) |
+| `tohum` | INT | Hayır | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (determinizm garanti edilmez). (varsayılan: 1) |
 
 **Not:** `diarize` seçeneği etkinleştirildiğinde `num_speakers` parametresi 0'dan büyük bir değere ayarlanamaz. `diarize` seçeneğini devre dışı bırakmalı veya `num_speakers` değerini 0 olarak ayarlamalısınız.
 
@@ -51,8 +51,8 @@ ElevenLabs Konuşmayı Metne Çevir düğümü, ses dosyalarını metne dönüş
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `text` | STRING | Sesten metne çevrilmiş metin. |
-| `language_code` | STRING | Sesin algılanan dil kodu. |
+| `dil_kodu` | STRING | Sesten metne çevrilmiş metin. |
+| `kelimeler_json` | STRING | Sesin algılanan dil kodu. |
 | `words_json` | STRING | Zaman damgaları ve etkinleştirilmişse konuşmacı etiketleri dahil olmak üzere kelime düzeyinde ayrıntılı bilgiler içeren JSON biçimli bir dize. |
 
 ---

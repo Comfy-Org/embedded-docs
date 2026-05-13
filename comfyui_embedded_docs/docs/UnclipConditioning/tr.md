@@ -6,13 +6,13 @@ Bu düğüm, CLIP görüntü çıktılarını koşullandırma sürecine entegre 
 
 | Parametre              | Comfy dtype            | Açıklama |
 |------------------------|------------------------|-------------|
-| `conditioning`         | `CONDITIONING`         | CLIP görüntü çıktılarının ekleneceği temel koşullandırma verileri; daha sonraki değişiklikler için temel görevi görür. |
-| `clip_vision_output`   | `CLIP_VISION_OUTPUT`   | Bir CLIP görüntü modelinden gelen, koşullandırmaya entegre edilen görsel bağlamı sağlayan çıktı. |
-| `strength`             | `FLOAT`                | CLIP görüntü çıktısının koşullandırma üzerindeki etkisinin yoğunluğunu belirler. |
-| `noise_augmentation`   | `FLOAT`                | CLIP görüntü çıktısına, koşullandırmaya entegre edilmeden önce uygulanacak gürültü artırma seviyesini belirtir. |
+| `koşullandırma`         | `CONDITIONING`         | CLIP görüntü çıktılarının ekleneceği temel koşullandırma verileri; daha sonraki değişiklikler için temel görevi görür. |
+| `clip_görü_çıktısı`   | `CLIP_VISION_OUTPUT`   | Bir CLIP görüntü modelinden gelen, koşullandırmaya entegre edilen görsel bağlamı sağlayan çıktı. |
+| `güç`             | `FLOAT`                | CLIP görüntü çıktısının koşullandırma üzerindeki etkisinin yoğunluğunu belirler. |
+| `gürültü_artırımı`   | `FLOAT`                | CLIP görüntü çıktısına, koşullandırmaya entegre edilmeden önce uygulanacak gürültü artırma seviyesini belirtir. |
 
 ## Çıktılar
 
 | Parametre             | Comfy dtype            | Açıklama |
 |-----------------------|------------------------|-------------|
-| `conditioning`         | `CONDITIONING`         | Artık uygulanmış güç ve gürültü artırma ile entegre CLIP görüntü çıktılarını içeren, zenginleştirilmiş koşullandırma verileri. |
+| `koşullandırma`         | `CONDITIONING`         | Artık uygulanmış güç ve gürültü artırma ile entegre CLIP görüntü çıktılarını içeren, zenginleştirilmiş koşullandırma verileri. |

@@ -6,10 +6,10 @@ El nodo LatentCut extrae una sección específica de muestras latentes a lo larg
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `samples` | LATENT | Sí | - | Las muestras latentes de entrada de las que extraer |
-| `dim` | COMBO | Sí | "x"<br>"y"<br>"t" | La dimensión a lo largo de la cual cortar las muestras latentes |
-| `index` | INT | Sí | -16384 a 16384 | La posición inicial para el corte (predeterminado: 0). Los valores positivos cuentan desde el inicio, los valores negativos cuentan desde el final. El nodo ajusta automáticamente el índice para mantenerse dentro del rango válido de las muestras latentes |
-| `amount` | INT | Sí | 1 a 16384 | El número de elementos a extraer a lo largo de la dimensión especificada (predeterminado: 1). El nodo reduce automáticamente este valor si excede los datos disponibles más allá del índice inicial |
+| `muestras` | LATENT | Sí | - | Las muestras latentes de entrada de las que extraer |
+| `dimensión` | COMBO | Sí | "x"<br>"y"<br>"t" | La dimensión a lo largo de la cual cortar las muestras latentes |
+| `índice` | INT | Sí | -16384 a 16384 | La posición inicial para el corte (predeterminado: 0). Los valores positivos cuentan desde el inicio, los valores negativos cuentan desde el final. El nodo ajusta automáticamente el índice para mantenerse dentro del rango válido de las muestras latentes |
+| `cantidad` | INT | Sí | 1 a 16384 | El número de elementos a extraer a lo largo de la dimensión especificada (predeterminado: 1). El nodo reduce automáticamente este valor si excede los datos disponibles más allá del índice inicial |
 
 ## Salidas
 

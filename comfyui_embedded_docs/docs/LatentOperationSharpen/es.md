@@ -6,9 +6,9 @@ El nodo LatentOperationSharpen aplica un efecto de nitidez a representaciones la
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `sharpen_radius` | INT | No | 1-31 | El radio del kernel de nitidez (predeterminado: 9) |
+| `radio_afilado` | INT | No | 1-31 | El radio del kernel de nitidez (predeterminado: 9) |
 | `sigma` | FLOAT | No | 0.1-10.0 | La desviación estándar para el kernel gaussiano (predeterminado: 1.0) |
-| `alpha` | FLOAT | No | 0.0-5.0 | El factor de intensidad de nitidez (predeterminado: 0.1) |
+| `alfa` | FLOAT | No | 0.0-5.0 | El factor de intensidad de nitidez (predeterminado: 0.1) |
 
 ## Salidas
 

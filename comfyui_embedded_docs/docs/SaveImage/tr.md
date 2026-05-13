@@ -6,8 +6,8 @@ SaveImage düğümü, aldığı görselleri `ComfyUI/output` dizininize kaydeder
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `images` | IMAGE | Evet | - | Kaydedilecek görseller. |
-| `filename_prefix` | STRING | Evet | - | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). |
+| `görüntüler` | IMAGE | Evet | - | Kaydedilecek görseller. |
+| `dosyaadı_öneki` | STRING | Evet | - | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). |
 
 ## Çıktılar
 

@@ -6,8 +6,8 @@
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `samples` | LATENT | Evet | - | İşlem tarafından işlenecek latent örnekler |
-| `operation` | LATENT_OPERATION | Evet | - | Latent örneklere uygulanacak işlem |
+| `örnekler` | LATENT | Evet | - | İşlem tarafından işlenecek latent örnekler |
+| `işlem` | LATENT_OPERATION | Evet | - | Latent örneklere uygulanacak işlem |
 
 ## Çıktılar
 

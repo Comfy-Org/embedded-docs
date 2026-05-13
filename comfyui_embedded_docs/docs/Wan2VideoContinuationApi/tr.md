@@ -11,11 +11,11 @@ ComfyUI Wan2VideoContinuation düğümü, bir giriş video klibinin sonundan iti
 | `model.negative_prompt` | STRING | Evet | - | Kaçınılması gerekenleri tanımlayan olumsuz istem. (varsayılan: boş dize) |
 | `model.resolution` | COMBO | Evet | `"720P"`<br>`"1080P"` | Çıktı videosunun çözünürlüğü. |
 | `model.duration` | INT | Evet | 2 ile 15 | Saniye cinsinden toplam çıktı süresi. Model, giriş klibinden sonra kalan süreyi doldurmak için devamı oluşturur. (varsayılan: 5) |
-| `first_clip` | VIDEO | Evet | - | Devam edilecek giriş videosu. Süre: 2s-10s. Çıktının en boy oranı bu videodan alınır. |
-| `last_frame` | IMAGE | Hayır | - | Son kare görüntüsü. Devam, bu kareye doğru geçiş yapacaktır. |
-| `seed` | INT | Evet | 0 ile 2147483647 | Oluşturma için kullanılacak tohum değeri. (varsayılan: 0) |
-| `prompt_extend` | BOOLEAN | Evet | - | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği. (varsayılan: True) |
-| `watermark` | BOOLEAN | Evet | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
+| `ilk_klip` | VIDEO | Evet | - | Devam edilecek giriş videosu. Süre: 2s-10s. Çıktının en boy oranı bu videodan alınır. |
+| `son_kare` | IMAGE | Hayır | - | Son kare görüntüsü. Devam, bu kareye doğru geçiş yapacaktır. |
+| `tohum` | INT | Evet | 0 ile 2147483647 | Oluşturma için kullanılacak tohum değeri. (varsayılan: 0) |
+| `istem_genişlet` | BOOLEAN | Evet | - | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği. (varsayılan: True) |
+| `filigran` | BOOLEAN | Evet | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
 
 **Not:** `first_clip` giriş videosunun süresi 2 ile 10 saniye arasında olmalıdır.
 

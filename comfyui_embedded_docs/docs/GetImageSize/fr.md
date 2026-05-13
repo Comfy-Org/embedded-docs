@@ -12,8 +12,8 @@ Le nœud GetImageSize extrait les dimensions et les informations de lot d'une im
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `width` | INT | La largeur de l'image d'entrée en pixels |
-| `height` | INT | La hauteur de l'image d'entrée en pixels |
+| `hauteur` | INT | La largeur de l'image d'entrée en pixels |
+| `taille du lot` | INT | La hauteur de l'image d'entrée en pixels |
 | `batch_size` | INT | Le nombre d'images dans le lot |
 
 ---

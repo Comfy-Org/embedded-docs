@@ -6,14 +6,14 @@ O nó ModelSamplingSD3 aplica parâmetros de amostragem do Stable Diffusion 3 a 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `model` | MODEL | Sim | - | O modelo de entrada para aplicar os parâmetros de amostragem do SD3 |
-| `shift` | FLOAT | Sim | 0.0 - 100.0 | Controla o parâmetro de deslocamento da amostragem (padrão: 3.0) |
+| `modelo` | MODEL | Sim | - | O modelo de entrada para aplicar os parâmetros de amostragem do SD3 |
+| `deslocamento` | FLOAT | Sim | 0.0 - 100.0 | Controla o parâmetro de deslocamento da amostragem (padrão: 3.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com os parâmetros de amostragem do SD3 aplicados |
+| `modelo` | MODEL | O modelo modificado com os parâmetros de amostragem do SD3 aplicados |
 
 ---
 **Source fingerprint (SHA-256):** `aa2172d578badffb0a728308b0d3aae4d048db074336963965264d5e512a0d93`

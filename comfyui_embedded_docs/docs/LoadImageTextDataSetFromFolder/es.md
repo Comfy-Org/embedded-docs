@@ -14,7 +14,7 @@ Este nodo carga un conjunto de datos de imágenes y sus correspondientes leyenda
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `images` | IMAGE | Una lista de tensores de imágenes cargadas. |
+| `texts` | IMAGE | Una lista de tensores de imágenes cargadas. |
 | `texts` | STRING | Una lista de leyendas de texto correspondientes a cada imagen cargada. |
 
 ---

@@ -8,14 +8,14 @@ Le nœud Resolution Selector calcule la largeur et la hauteur en pixels d'une im
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `aspect_ratio` | COMBO | Oui | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | Le rapport hauteur/largeur pour les dimensions de sortie (par défaut : `"SQUARE"`). |
-| `megapixels` | FLOAT | Oui | 0,1 - 16,0 | Nombre total de mégapixels cible. 1,0 MP ≈ 1024×1024 pour un rapport hauteur/largeur carré (par défaut : 1,0). |
+| `ratio d'aspect` | COMBO | Oui | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | Le rapport hauteur/largeur pour les dimensions de sortie (par défaut : `"SQUARE"`). |
+| `mégapixels` | FLOAT | Oui | 0,1 - 16,0 | Nombre total de mégapixels cible. 1,0 MP ≈ 1024×1024 pour un rapport hauteur/largeur carré (par défaut : 1,0). |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `width` | INT | La largeur calculée en pixels, qui est un multiple de 8. |
+| `hauteur` | INT | La largeur calculée en pixels, qui est un multiple de 8. |
 | `height` | INT | La hauteur calculée en pixels, qui est un multiple de 8. |
 
 ---

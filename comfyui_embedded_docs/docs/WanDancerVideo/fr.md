@@ -6,16 +6,16 @@ Le nœud WanDancerVideo prépare les données de conditionnement et un tenseur l
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | | Le conditionnement positif pour guider la génération vidéo. |
-| `negative` | CONDITIONING | Oui | | Le conditionnement négatif pour guider la génération vidéo. |
+| `positif` | CONDITIONING | Oui | | Le conditionnement positif pour guider la génération vidéo. |
+| `négatif` | CONDITIONING | Oui | | Le conditionnement négatif pour guider la génération vidéo. |
 | `vae` | VAE | Oui | | Le VAE utilisé pour encoder l'image de départ dans l'espace latent. |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La largeur de la vidéo générée en pixels (par défaut : 480). |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La hauteur de la vidéo générée en pixels (par défaut : 832). |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION (pas : 4) | Le nombre d'images dans la vidéo générée. Doit rester à 149 pour WanDancer (par défaut : 149). |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La largeur de la vidéo générée en pixels (par défaut : 480). |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION (pas : 16) | La hauteur de la vidéo générée en pixels (par défaut : 832). |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION (pas : 4) | Le nombre d'images dans la vidéo générée. Doit rester à 149 pour WanDancer (par défaut : 149). |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Non | | Les embeddings CLIP vision pour la première image. |
 | `clip_vision_output_ref` | CLIP_VISION_OUTPUT | Non | | Les embeddings CLIP vision pour l'image de référence. |
-| `start_image` | IMAGE | Non | | La ou les images initiales à encoder. Peut être n'importe quel nombre d'images, jusqu'à la `length` spécifiée. |
-| `mask` | MASK | Non | | Masque de conditionnement d'image pour la ou les images de départ. Les zones blanches sont conservées, les zones noires sont générées. Utilisé pour les générations locales. |
+| `image_de_départ` | IMAGE | Non | | La ou les images initiales à encoder. Peut être n'importe quel nombre d'images, jusqu'à la `longueur` spécifiée. |
+| `masque` | MASK | Non | | Masque de conditionnement d'image pour la ou les images de départ. Les zones blanches sont conservées, les zones noires sont générées. Utilisé pour les générations locales. |
 | `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | Non | | La sortie d'un encodeur audio, fournissant les caractéristiques audio, le fps et l'échelle d'injection pour la génération conditionnée par l'audio. |
 
 **Remarque sur les contraintes des paramètres :**
@@ -27,8 +27,8 @@ Le nœud WanDancerVideo prépare les données de conditionnement et un tenseur l
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif avec toutes les données supplémentaires (concat latent, CLIP vision, audio) attachées. |
-| `negative` | CONDITIONING | Le conditionnement négatif avec toutes les données supplémentaires (concat latent, CLIP vision, audio) attachées. |
+| `négatif` | CONDITIONING | Le conditionnement positif avec toutes les données supplémentaires (concat latent, CLIP vision, audio) attachées. |
+| `latent` | CONDITIONING | Le conditionnement négatif avec toutes les données supplémentaires (concat latent, CLIP vision, audio) attachées. |
 | `latent` | LATENT | Un tenseur latent vide avec des dimensions correspondant à la longueur, hauteur et largeur vidéo spécifiées. |
 
 ---

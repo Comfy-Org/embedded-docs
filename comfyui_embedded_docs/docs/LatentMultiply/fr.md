@@ -6,8 +6,8 @@ Le nœud LatentMultiply est conçu pour mettre à l'échelle la représentation 
 
 | Paramètre    | Type de données | Description |
 |--------------|-----------------|-------------|
-| `samples`    | `LATENT`        | Le paramètre `samples` représente les représentations latentes à mettre à l'échelle. Il est essentiel pour définir les données d'entrée sur lesquelles l'opération de multiplication sera effectuée. |
-| `multiplier` | `FLOAT`         | Le paramètre `multiplier` spécifie le facteur d'échelle à appliquer aux échantillons latents. Il joue un rôle clé dans l'ajustement de l'amplitude des caractéristiques latentes, permettant un contrôle nuancé de la sortie générée. |
+| `échantillons`    | `LATENT`        | Le paramètre `échantillons` représente les représentations latentes à mettre à l'échelle. Il est essentiel pour définir les données d'entrée sur lesquelles l'opération de multiplication sera effectuée. |
+| `multiplicateur` | `FLOAT`         | Le paramètre `multiplicateur` spécifie le facteur d'échelle à appliquer aux échantillons latents. Il joue un rôle clé dans l'ajustement de l'amplitude des caractéristiques latentes, permettant un contrôle nuancé de la sortie générée. |
 
 ## Sorties
 

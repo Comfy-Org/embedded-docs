@@ -6,8 +6,8 @@ TrimVideoLatent düğümü, bir video gizli temsilinin başındaki kareleri kald
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `samples` | LATENT | Evet | - | Kırpılacak video karelerini içeren giriş gizli video temsili |
-| `trim_amount` | INT | Evet | 0 ila 99999 | Videonun başından kaldırılacak kare sayısı (varsayılan: 0) |
+| `örnekler` | LATENT | Evet | - | Kırpılacak video karelerini içeren giriş gizli video temsili |
+| `kırpma_miktarı` | INT | Evet | 0 ila 99999 | Videonun başından kaldırılacak kare sayısı (varsayılan: 0) |
 
 ## Çıkışlar
 

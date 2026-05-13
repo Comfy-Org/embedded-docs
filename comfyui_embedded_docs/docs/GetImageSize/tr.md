@@ -14,8 +14,8 @@ GetImageSize düğümü, bir giriş görüntüsünden boyut ve toplu iş bilgile
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `width` | INT | Giriş görüntüsünün piksel cinsinden genişliği |
-| `height` | INT | Giriş görüntüsünün piksel cinsinden yüksekliği |
+| `yükseklik` | INT | Giriş görüntüsünün piksel cinsinden genişliği |
+| `toplu_boyut` | INT | Giriş görüntüsünün piksel cinsinden yüksekliği |
 | `batch_size` | INT | Toplu işteki görüntü sayısı |
 
 ---

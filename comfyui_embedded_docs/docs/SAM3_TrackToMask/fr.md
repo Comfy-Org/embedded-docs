@@ -10,8 +10,8 @@ Sélectionne des objets suivis spécifiques à partir d'une session de suivi SAM
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `track_data` | SAM3TRACKDATA | Oui | N/D | Les données de suivi provenant d'un nœud de suivi SAM3, contenant les masques compressés et la taille d'image d'origine. |
-| `object_indices` | STRING | Non | Toute liste d'entiers séparés par des virgules | Index des objets à inclure dans le masque de sortie, séparés par des virgules (par exemple, '0,2,3'). Si laissé vide, tous les objets suivis sont inclus. |
+| `données_suivi` | SAM3TRACKDATA | Oui | N/D | Les données de suivi provenant d'un nœud de suivi SAM3, contenant les masques compressés et la taille d'image d'origine. |
+| `indices_objets` | STRING | Non | Toute liste d'entiers séparés par des virgules | Index des objets à inclure dans le masque de sortie, séparés par des virgules (par exemple, '0,2,3'). Si laissé vide, tous les objets suivis sont inclus. |
 
 ## Sorties
 

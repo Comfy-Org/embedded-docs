@@ -6,13 +6,13 @@ El nodo de generación de texto a video Vidu Q3 crea un video a partir de una de
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modelo a utilizar para la generación de video. Al seleccionar un modelo, se muestran parámetros de configuración adicionales para relación de aspecto, resolución, duración y audio. |
-| `model.aspect_ratio` | COMBO | Sí* | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | La relación de aspecto del video de salida. Este parámetro se muestra al seleccionar un `model`. |
-| `model.resolution` | COMBO | Sí* | `"720p"`<br>`"1080p"` | Resolución del video de salida. Este parámetro se muestra al seleccionar un `model`. |
-| `model.duration` | INT | Sí* | 1 a 16 | Duración del video de salida en segundos (predeterminado: 5). Este parámetro se muestra al seleccionar un `model`. |
-| `model.audio` | BOOLEANO | Sí* | Verdadero/Falso | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: Falso). Este parámetro se muestra al seleccionar un `model`. |
+| `modelo` | COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modelo a utilizar para la generación de video. Al seleccionar un modelo, se muestran parámetros de configuración adicionales para relación de aspecto, resolución, duración y audio. |
+| `model.aspect_ratio` | COMBO | Sí* | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | La relación de aspecto del video de salida. Este parámetro se muestra al seleccionar un `modelo`. |
+| `model.resolution` | COMBO | Sí* | `"720p"`<br>`"1080p"` | Resolución del video de salida. Este parámetro se muestra al seleccionar un `modelo`. |
+| `model.duration` | INT | Sí* | 1 a 16 | Duración del video de salida en segundos (predeterminado: 5). Este parámetro se muestra al seleccionar un `modelo`. |
+| `model.audio` | BOOLEANO | Sí* | Verdadero/Falso | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: Falso). Este parámetro se muestra al seleccionar un `modelo`. |
 | `prompt` | STRING | Sí | N/A | Una descripción textual para la generación de video, con una longitud máxima de 2000 caracteres. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
 
 *Nota: Los parámetros `aspect_ratio`, `resolution`, `duration` y `audio` son obligatorios una vez que se selecciona un `model`, ya que forman parte de su configuración.
 

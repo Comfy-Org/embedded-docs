@@ -8,8 +8,8 @@
 
 | پارامتر | نوع داده | اجباری | محدوده | توضیحات |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | RIG_TASK_ID | بله | - | شناسه وظیفه مدل سه‌بعدی ریگ‌شده پردازش‌شده قبلی برای اعمال انیمیشن |
-| `animation` | STRING | بله | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | پیش‌تنظیم انیمیشن برای اعمال روی مدل سه‌بعدی. گزینه‌ها شامل انیمیشن‌های انسان‌نما (ایستا، راه رفتن، دویدن، شیرجه، بالا رفتن، پریدن، ضربه با شمشیر، تیراندازی، آسیب دیدن، افتادن، چرخیدن) و انیمیشن‌های موجودات (راه رفتن چهارپا، راه رفتن شش‌پا، راه رفتن هشت‌پا، راهپیمایی مارپیچ، راهپیمایی آبزی) است. |
+| `شناسه وظیفه مدل اصلی` | RIG_TASK_ID | بله | - | شناسه وظیفه مدل سه‌بعدی ریگ‌شده پردازش‌شده قبلی برای اعمال انیمیشن |
+| `انیمیشن` | STRING | بله | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | پیش‌تنظیم انیمیشن برای اعمال روی مدل سه‌بعدی. گزینه‌ها شامل انیمیشن‌های انسان‌نما (ایستا، راه رفتن، دویدن، شیرجه، بالا رفتن، پریدن، ضربه با شمشیر، تیراندازی، آسیب دیدن، افتادن، چرخیدن) و انیمیشن‌های موجودات (راه رفتن چهارپا، راه رفتن شش‌پا، راه رفتن هشت‌پا، راهپیمایی مارپیچ، راهپیمایی آبزی) است. |
 | `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | خیر | - | توکن احراز هویت برای دسترسی به API Comfy.org (پارامتر مخفی) |
 | `api_key_comfy_org` | API_KEY_COMFY_ORG | خیر | - | کلید API برای دسترسی به سرویس Comfy.org (پارامتر مخفی) |
 | `unique_id` | UNIQUE_ID | خیر | - | شناسه یکتا برای ردیابی عملیات (پارامتر مخفی) |

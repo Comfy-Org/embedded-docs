@@ -7,13 +7,13 @@ Ce nœud génère des actifs 3D à l'aide de l'API Rodin. Il prend des images en
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `Images` | IMAGE | Oui | - | Images d'entrée à convertir en modèles 3D. Plusieurs images peuvent être fournies. |
-| `Seed` | INT | Non | 0-65535 | Valeur de graine aléatoire pour la génération (par défaut : 0). Réglez sur 0 pour une graine aléatoire. |
+| `Graine` | INT | Non | 0-65535 | Valeur de graine aléatoire pour la génération (par défaut : 0). Réglez sur 0 pour une graine aléatoire. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `Chemin du modèle 3D` | STRING | Chemin d'accès au fichier du modèle 3D généré (pour la rétrocompatibilité uniquement) |
+| `GLB` | STRING | Chemin d'accès au fichier du modèle 3D généré (pour la rétrocompatibilité uniquement) |
 | `GLB` | FILE3DGLB | Le modèle 3D généré au format GLB |
 
 ---

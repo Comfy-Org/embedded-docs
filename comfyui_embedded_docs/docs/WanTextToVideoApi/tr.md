@@ -44,7 +44,7 @@ Wan Metinden Videoya düğümü, metin açıklamalarına dayalı video içeriği
 | `generate_audio` | BOOLEAN | Hayır | - | Ses girişi sağlanmazsa, sesi otomatik olarak oluştur (varsayılan: False) |
 | `prompt_extend` | BOOLEAN | Hayır | - | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği (varsayılan: True) |
 | `watermark` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False) |
-| `shot_type` | COMBO | Hayır | "single"<br>"multi" | Oluşturulan video için çekim türünü belirtir; yani videonun tek bir sürekli çekim mi yoksa kesmeli birden çok çekim mi olduğunu belirler. Bu parametre yalnızca prompt_extend True olduğunda etkilidir (varsayılan: "single") |
+| `çekim_türü` | COMBO | Hayır | "single"<br>"multi" | Oluşturulan video için çekim türünü belirtir; yani videonun tek bir sürekli çekim mi yoksa kesmeli birden çok çekim mi olduğunu belirler. Bu parametre yalnızca prompt_extend True olduğunda etkilidir (varsayılan: "single") |
 
 **Not:** Wan 2.6 modeli 480p çözünürlükleri desteklemez. 15 saniyelik süre yalnızca Wan 2.6 modeli tarafından desteklenir. Ses girişi sağlarken, süresi 3.0 ile 29.0 saniye arasında olmalı ve arka plan gürültüsü veya müzik olmadan net bir konuşma içermelidir.
 

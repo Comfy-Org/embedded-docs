@@ -6,10 +6,10 @@ El nodo `ImageBlend` está diseñado para fusionar dos imágenes según un modo 
 
 | Campo          | Tipo de Dato | Descripción                                                                       |
 |----------------|--------------|-----------------------------------------------------------------------------------|
-| `image1`       | `IMAGE`      | La primera imagen a fusionar. Actúa como capa base para la operación de fusión.   |
-| `image2`       | `IMAGE`      | La segunda imagen a fusionar. Dependiendo del modo de fusión, modifica la apariencia de la primera imagen. |
-| `blend_factor` | `FLOAT`      | Determina el peso de la segunda imagen en la mezcla. Un factor de mezcla más alto otorga mayor prominencia a la segunda imagen en el resultado final. |
-| `blend_mode`   | COMBO[STRING] | Especifica el método de fusión de las dos imágenes. Admite modos como normal, multiplicar, pantalla, superposición, luz suave y diferencia, cada uno produciendo un efecto visual único. |
+| `imagen1`       | `IMAGE`      | La primera imagen a fusionar. Actúa como capa base para la operación de fusión.   |
+| `imagen2`       | `IMAGE`      | La segunda imagen a fusionar. Dependiendo del modo de fusión, modifica la apariencia de la primera imagen. |
+| `factor_de_mezcla` | `FLOAT`      | Determina el peso de la segunda imagen en la mezcla. Un factor de mezcla más alto otorga mayor prominencia a la segunda imagen en el resultado final. |
+| `modo_de_mezcla`   | COMBO[STRING] | Especifica el método de fusión de las dos imágenes. Admite modos como normal, multiplicar, pantalla, superposición, luz suave y diferencia, cada uno produciendo un efecto visual único. |
 
 ## Salidas
 

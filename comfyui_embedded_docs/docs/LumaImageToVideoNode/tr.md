@@ -6,15 +6,15 @@ Bir metin istemi ve isteğe bağlı başlangıç/bitiş görsellerine dayanarak 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `prompt` | STRING | Evet | - | Video oluşturma için istem (varsayılan: "") |
+| `istem` | STRING | Evet | - | Video oluşturma için istem (varsayılan: "") |
 | `model` | COMBO | Evet | Birden çok seçenek mevcut | Mevcut Luma modelleri arasından video oluşturma modelini seçer |
-| `resolution` | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Oluşturulan video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. |
-| `duration` | COMBO | Evet | `"5s"`<br>`"9s"` | Oluşturulan videonun süresi. Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. |
-| `loop` | BOOLEAN | Evet | - | Oluşturulan videonun döngüye girip girmeyeceği (varsayılan: False) |
-| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
-| `first_image` | IMAGE | Hayır | - | Oluşturulan videonun ilk karesi. (isteğe bağlı) |
-| `last_image` | IMAGE | Hayır | - | Oluşturulan videonun son karesi. (isteğe bağlı) |
-| `luma_concepts` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları. (isteğe bağlı) |
+| `çözünürlük` | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Oluşturulan video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. |
+| `süre` | COMBO | Evet | `"5s"`<br>`"9s"` | Oluşturulan videonun süresi. Bu parametre `ray-1-6` modeli kullanılırken dikkate alınmaz. |
+| `döngü` | BOOLEAN | Evet | - | Oluşturulan videonun döngüye girip girmeyeceği (varsayılan: False) |
+| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
+| `ilk_görüntü` | IMAGE | Hayır | - | Oluşturulan videonun ilk karesi. (isteğe bağlı) |
+| `son_görüntü` | IMAGE | Hayır | - | Oluşturulan videonun son karesi. (isteğe bağlı) |
+| `luma_kavramları` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları. (isteğe bağlı) |
 
 **Not:** `first_image` veya `last_image` öğelerinden en az biri sağlanmalıdır. Her ikisi de eksikse düğüm bir istisna oluşturacaktır. `model` `ray-1-6` olarak ayarlandığında `resolution` ve `duration` parametreleri dikkate alınmaz.
 

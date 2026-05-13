@@ -6,8 +6,8 @@ Le nœud BasicGuider crée un mécanisme de guidage simple pour le processus d'�
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle à utiliser pour le guidage |
-| `conditioning` | CONDITIONING | Oui | - | Les données de conditionnement qui orientent le processus de génération |
+| `modèle` | MODEL | Oui | - | Le modèle à utiliser pour le guidage |
+| `conditionnement` | CONDITIONING | Oui | - | Les données de conditionnement qui orientent le processus de génération |
 
 ## Sorties
 

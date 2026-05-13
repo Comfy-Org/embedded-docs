@@ -8,7 +8,7 @@ Bunu, farklı bir dil konuşan bir sanatçıyla iletişim kurmak gibi düşünü
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `text` | STRING | Evet | Herhangi bir metin | Kodlanacak metin. Çok satırlı girişi ve dinamik promptları destekler. |
+| `metin` | STRING | Evet | Herhangi bir metin | Kodlanacak metin. Çok satırlı girişi ve dinamik promptları destekler. |
 | `clip` | CLIP | Evet | Yüklenmiş CLIP modelleri | Metni kodlamak için kullanılan CLIP modeli. |
 
 ## Çıkışlar

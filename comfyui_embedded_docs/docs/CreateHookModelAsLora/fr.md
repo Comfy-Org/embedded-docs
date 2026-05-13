@@ -8,10 +8,10 @@ Ce nœud crée un modèle de hook en tant que LoRA (Adaptation de Bas Rang) en c
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `ckpt_name` | STRING | Oui | Plusieurs options disponibles | Le fichier de point de contrôle à partir duquel charger les poids (sélectionner parmi les points de contrôle disponibles) |
-| `strength_model` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force appliqué aux poids du modèle (par défaut : 1.0) |
-| `strength_clip` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force appliqué aux poids CLIP (par défaut : 1.0) |
-| `prev_hooks` | HOOKS | Non | - | Hooks précédents facultatifs à combiner avec les nouveaux hooks LoRA créés |
+| `nom_ckpt` | STRING | Oui | Plusieurs options disponibles | Le fichier de point de contrôle à partir duquel charger les poids (sélectionner parmi les points de contrôle disponibles) |
+| `force_modele` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force appliqué aux poids du modèle (par défaut : 1.0) |
+| `force_clip` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force appliqué aux poids CLIP (par défaut : 1.0) |
+| `crochets_precedents` | HOOKS | Non | - | Hooks précédents facultatifs à combiner avec les nouveaux hooks LoRA créés |
 
 **Contraintes des paramètres :**
 

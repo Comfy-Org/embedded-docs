@@ -15,7 +15,7 @@ Rodina 3D Düzgün düğümü, Rodin API'sini kullanarak giriş görüntülerini
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `3D Model Yolu` | STRING | İndirilen 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için). |
+| `GLB` | STRING | İndirilen 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için). |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan 3D model. |
 
 ---

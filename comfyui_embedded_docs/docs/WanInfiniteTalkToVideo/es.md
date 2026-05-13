@@ -6,22 +6,22 @@ El nodo WanInfiniteTalkToVideo genera secuencias de video a partir de entrada de
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `mode` | COMBO | Sí | `"single_speaker"`<br>`"two_speakers"` | El modo de entrada de audio. `"single_speaker"` utiliza una entrada de audio. `"two_speakers"` habilita entradas para un segundo hablante y sus máscaras correspondientes. |
-| `model` | MODEL | Sí | - | El modelo base de difusión de video. |
-| `model_patch` | MODELPATCH | Sí | - | El parche del modelo que contiene las capas de proyección de audio. |
-| `positive` | CONDITIONING | Sí | - | El condicionamiento positivo para guiar la generación. |
-| `negative` | CONDITIONING | Sí | - | El condicionamiento negativo para guiar la generación. |
+| `modo` | COMBO | Sí | `"single_speaker"`<br>`"two_speakers"` | El modo de entrada de audio. `"single_speaker"` utiliza una entrada de audio. `"two_speakers"` habilita entradas para un segundo hablante y sus máscaras correspondientes. |
+| `modelo` | MODEL | Sí | - | El modelo base de difusión de video. |
+| `parche de modelo` | MODELPATCH | Sí | - | El parche del modelo que contiene las capas de proyección de audio. |
+| `positivo` | CONDITIONING | Sí | - | El condicionamiento positivo para guiar la generación. |
+| `negativo` | CONDITIONING | Sí | - | El condicionamiento negativo para guiar la generación. |
 | `vae` | VAE | Sí | - | El VAE utilizado para codificar imágenes hacia y desde el espacio latente. |
-| `width` | INT | No | 16 - MAX_RESOLUTION | El ancho del video de salida en píxeles. Debe ser divisible por 16. (predeterminado: 832) |
-| `height` | INT | No | 16 - MAX_RESOLUTION | La altura del video de salida en píxeles. Debe ser divisible por 16. (predeterminado: 480) |
-| `length` | INT | No | 1 - MAX_RESOLUTION | El número de fotogramas a generar. (predeterminado: 81) |
-| `clip_vision_output` | CLIPVISIONOUTPUT | No | - | Salida opcional de CLIP vision para condicionamiento adicional. |
-| `start_image` | IMAGE | No | - | Una imagen de inicio opcional para inicializar la secuencia de video. |
-| `audio_encoder_output_1` | AUDIOENCODEROUTPUT | Sí | - | La salida principal del codificador de audio que contiene las características del primer hablante. |
-| `motion_frame_count` | INT | No | 1 - 33 | Número de fotogramas anteriores a utilizar como contexto de movimiento al extender una secuencia. (predeterminado: 9) |
-| `audio_scale` | FLOAT | No | -10.0 - 10.0 | Factor de escala aplicado al condicionamiento de audio. (predeterminado: 1.0) |
-| `previous_frames` | IMAGE | No | - | Fotogramas de video anteriores opcionales para extender la secuencia. |
-| `audio_encoder_output_2` | AUDIOENCODEROUTPUT | No | - | La segunda salida del codificador de audio. Obligatorio cuando `mode` está configurado en `"two_speakers"`. |
+| `ancho` | INT | No | 16 - MAX_RESOLUTION | El ancho del video de salida en píxeles. Debe ser divisible por 16. (predeterminado: 832) |
+| `alto` | INT | No | 16 - MAX_RESOLUTION | La altura del video de salida en píxeles. Debe ser divisible por 16. (predeterminado: 480) |
+| `longitud` | INT | No | 1 - MAX_RESOLUTION | El número de fotogramas a generar. (predeterminado: 81) |
+| `salida de clip visión` | CLIPVISIONOUTPUT | No | - | Salida opcional de CLIP vision para condicionamiento adicional. |
+| `imagen inicial` | IMAGE | No | - | Una imagen de inicio opcional para inicializar la secuencia de video. |
+| `salida codificador de audio 1` | AUDIOENCODEROUTPUT | Sí | - | La salida principal del codificador de audio que contiene las características del primer hablante. |
+| `número de fotogramas de movimiento` | INT | No | 1 - 33 | Número de fotogramas anteriores a utilizar como contexto de movimiento al extender una secuencia. (predeterminado: 9) |
+| `escala de audio` | FLOAT | No | -10.0 - 10.0 | Factor de escala aplicado al condicionamiento de audio. (predeterminado: 1.0) |
+| `fotogramas anteriores` | IMAGE | No | - | Fotogramas de video anteriores opcionales para extender la secuencia. |
+| `audio_encoder_output_2` | AUDIOENCODEROUTPUT | No | - | La segunda salida del codificador de audio. Obligatorio cuando `modo` está configurado en `"two_speakers"`. |
 | `mask_1` | MASK | No | - | Máscara para el primer hablante, obligatoria si se utilizan dos entradas de audio. |
 | `mask_2` | MASK | No | - | Máscara para el segundo hablante, obligatoria si se utilizan dos entradas de audio. |
 
@@ -36,10 +36,10 @@ El nodo WanInfiniteTalkToVideo genera secuencias de video a partir de entrada de
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo parcheado con el condicionamiento de audio aplicado. |
-| `positive` | CONDITIONING | El condicionamiento positivo, potencialmente modificado con contexto adicional (ej. imagen de inicio, CLIP vision). |
-| `negative` | CONDITIONING | El condicionamiento negativo, potencialmente modificado con contexto adicional. |
-| `latent` | LATENT | La secuencia de video generada en el espacio latente. |
+| `positivo` | MODEL | El modelo parcheado con el condicionamiento de audio aplicado. |
+| `negativo` | CONDITIONING | El condicionamiento positivo, potencialmente modificado con contexto adicional (ej. imagen de inicio, CLIP vision). |
+| `latente` | CONDITIONING | El condicionamiento negativo, potencialmente modificado con contexto adicional. |
+| `imagen recortada` | LATENT | La secuencia de video generada en el espacio latente. |
 | `trim_image` | INT | El número de fotogramas desde el inicio del contexto de movimiento que deben recortarse al extender una secuencia. |
 
 ---

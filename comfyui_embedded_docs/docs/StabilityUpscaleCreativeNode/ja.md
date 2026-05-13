@@ -8,18 +8,18 @@
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | はい | - | アップスケールする入力画像 |
-| `prompt` | STRING | はい | - | 出力画像に表示したい内容。要素、色、被写体を明確に定義した、強力で説明的なプロンプトを使用すると、より良い結果が得られます。（デフォルト：空文字列） |
-| `creativity` | FLOAT | はい | 0.1-0.5 | 初期画像に強く条件付けされていない追加のディテールを作成する可能性を制御します。（デフォルト：0.3） |
-| `style_preset` | STRING | はい | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 生成画像のオプションの希望スタイル。（デフォルト："None"） |
-| `seed` | INT | はい | 0-4294967294 | ノイズ生成に使用されるランダムシード。（デフォルト：0） |
-| `negative_prompt` | STRING | いいえ | - | 出力画像に表示したくないキーワード。これは高度な機能です。（デフォルト：空文字列） |
+| `画像` | IMAGE | はい | - | アップスケールする入力画像 |
+| `プロンプト` | STRING | はい | - | 出力画像に表示したい内容。要素、色、被写体を明確に定義した、強力で説明的なプロンプトを使用すると、より良い結果が得られます。（デフォルト：空文字列） |
+| `クリエイティビティ` | FLOAT | はい | 0.1-0.5 | 初期画像に強く条件付けされていない追加のディテールを作成する可能性を制御します。（デフォルト：0.3） |
+| `スタイルプリセット` | STRING | はい | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 生成画像のオプションの希望スタイル。（デフォルト："None"） |
+| `シード` | INT | はい | 0-4294967294 | ノイズ生成に使用されるランダムシード。（デフォルト：0） |
+| `ネガティブプロンプト` | STRING | いいえ | - | 出力画像に表示したくないキーワード。これは高度な機能です。（デフォルト：空文字列） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 4K解像度にアップスケールされた画像 |
+| `画像` | IMAGE | 4K解像度にアップスケールされた画像 |
 
 ---
 **Source fingerprint (SHA-256):** `46f7bdd3cb4254b6305407f43e4a9a69a54fd3a0ac285d784c899dbf52edd552`

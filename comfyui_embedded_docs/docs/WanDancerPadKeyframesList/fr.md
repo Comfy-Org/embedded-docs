@@ -19,8 +19,8 @@ Ce nœud prend une séquence d'images et une piste audio optionnelle, puis les d
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `keyframes_sequence` | IMAGE | Une liste de séquences d'images clés rembourrées, une pour chaque segment. |
-| `keyframes_mask` | MASK | Une liste de masques indiquant les images valides pour chaque segment. |
+| `keyframes_mask` | IMAGE | Une liste de séquences d'images clés rembourrées, une pour chaque segment. |
+| `audio_segment` | MASK | Une liste de masques indiquant les images valides pour chaque segment. |
 | `audio_segment` | AUDIO | Une liste de segments audio, un pour chaque segment vidéo. |
 
 ---

@@ -6,7 +6,7 @@ Le nœud TripoRigNode génère un modèle 3D riggé à partir de l'ID de tâche 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID | Oui | - | ID de tâche du modèle 3D original à rigger |
+| `ID_tâche_modèle_original` | MODEL_TASK_ID | Oui | - | ID de tâche du modèle 3D original à rigger |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | Non | - | Jeton d'authentification pour l'accès à l'API Comfy.org |
 | `comfy_api_key` | API_KEY_COMFY_ORG | Non | - | Clé API pour l'authentification au service Comfy.org |
 | `unique_id` | UNIQUE_ID | Non | - | Identifiant unique pour le suivi de l'opération |
@@ -15,8 +15,8 @@ Le nœud TripoRigNode génère un modèle 3D riggé à partir de l'ID de tâche 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model_file` | STRING | Fichier du modèle 3D riggé généré (conservé pour la rétrocompatibilité) |
-| `rig task_id` | RIG_TASK_ID | ID de tâche pour le suivi du processus de génération du rig |
+| `rig task_id` | STRING | Fichier du modèle 3D riggé généré (conservé pour la rétrocompatibilité) |
+| `GLB` | RIG_TASK_ID | ID de tâche pour le suivi du processus de génération du rig |
 | `GLB` | FILE3DGLB | Modèle 3D riggé généré au format GLB |
 
 ---

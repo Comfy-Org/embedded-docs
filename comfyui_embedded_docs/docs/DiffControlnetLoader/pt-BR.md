@@ -8,7 +8,7 @@ O nó DiffControlNetLoader foi projetado para carregar redes de controle diferen
 
 | Campo              | Tipo Comfy        | Descrição                                                                                 |
 |--------------------|-------------------|-------------------------------------------------------------------------------------------|
-| `model`            | `MODEL`           | O modelo base ao qual a rede de controle diferencial será aplicada, permitindo a personalização do comportamento do modelo. |
+| `modelo`            | `MODEL`           | O modelo base ao qual a rede de controle diferencial será aplicada, permitindo a personalização do comportamento do modelo. |
 | `control_net_name` | `COMBO[STRING]`   | Identifica a rede de controle diferencial específica a ser carregada e aplicada ao modelo base para modificar seu comportamento. |
 
 ## Saídas

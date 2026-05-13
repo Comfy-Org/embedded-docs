@@ -8,10 +8,10 @@ Rodin 3D Regular düğümü, Rodin API'sini kullanarak 3D varlıklar üretir. Gi
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `Images` | IMAGE | Evet | - | 3D model oluşturma için kullanılan giriş görüntüleri. Birden fazla görüntü sağlanabilir. |
-| `Seed` | INT | Evet | - | Tekrarlanabilir sonuçlar için rastgele tohum değeri. |
-| `Material_Type` | STRING | Evet | - | 3D modele uygulanacak malzeme türü. |
-| `Polygon_count` | STRING | Evet | - | Oluşturulan 3D model için hedef çokgen sayısı. Bu parametre, kalite modunu ve ağ karmaşıklığını belirler. |
+| `Görseller` | IMAGE | Evet | - | 3D model oluşturma için kullanılan giriş görüntüleri. Birden fazla görüntü sağlanabilir. |
+| `Tohum` | INT | Evet | - | Tekrarlanabilir sonuçlar için rastgele tohum değeri. |
+| `Malzeme_Türü` | STRING | Evet | - | 3D modele uygulanacak malzeme türü. |
+| `Poligon_sayısı` | STRING | Evet | - | Oluşturulan 3D model için hedef çokgen sayısı. Bu parametre, kalite modunu ve ağ karmaşıklığını belirler. |
 
 ## Çıkışlar
 

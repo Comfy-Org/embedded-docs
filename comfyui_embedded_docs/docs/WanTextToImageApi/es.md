@@ -34,14 +34,14 @@ El nodo Wan Text to Image genera imágenes basadas en descripciones textuales. U
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | "wan2.5-t2i-preview" | Modelo a utilizar (predeterminado: "wan2.5-t2i-preview") |
-| `prompt` | STRING | Sí | - | Indicación que describe los elementos y características visuales. Compatible con inglés y chino (predeterminado: vacío) |
-| `negative_prompt` | STRING | No | - | Indicación negativa que describe lo que se debe evitar (predeterminado: vacío) |
-| `width` | INT | No | 768-1440 | Ancho de la imagen en píxeles (predeterminado: 1024, incremento: 32) |
-| `height` | INT | No | 768-1440 | Alto de la imagen en píxeles (predeterminado: 1024, incremento: 32) |
-| `seed` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0) |
-| `prompt_extend` | BOOLEAN | No | - | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) |
-| `watermark` | BOOLEAN | No | - | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False) |
+| `modelo` | COMBO | Sí | "wan2.5-t2i-preview" | Modelo a utilizar (predeterminado: "wan2.5-t2i-preview") |
+| `texto_entrada` | STRING | Sí | - | Indicación que describe los elementos y características visuales. Compatible con inglés y chino (predeterminado: vacío) |
+| `texto_negativo` | STRING | No | - | Indicación negativa que describe lo que se debe evitar (predeterminado: vacío) |
+| `ancho` | INT | No | 768-1440 | Ancho de la imagen en píxeles (predeterminado: 1024, incremento: 32) |
+| `alto` | INT | No | 768-1440 | Alto de la imagen en píxeles (predeterminado: 1024, incremento: 32) |
+| `semilla` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0) |
+| `extender_texto` | BOOLEAN | No | - | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) |
+| `marca_agua` | BOOLEAN | No | - | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False) |
 
 ## Salidas
 

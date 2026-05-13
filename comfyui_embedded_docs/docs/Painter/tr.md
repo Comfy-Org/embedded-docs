@@ -34,11 +34,11 @@ Painter düğümü, ComfyUI içinde doğrudan görüntü veya maske oluşturmak 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Hayır | - | Üzerine boyanacak isteğe bağlı temel görüntü. Sağlanmazsa, belirtilen arka plan rengi, genişlik ve yükseklik kullanılarak boş bir tuval oluşturulur. |
+| `görüntü` | IMAGE | Hayır | - | Üzerine boyanacak isteğe bağlı temel görüntü. Sağlanmazsa, belirtilen arka plan rengi, genişlik ve yükseklik kullanılarak boş bir tuval oluşturulur. |
 | `mask` | STRING | Evet | - | Genellikle düğümün yerleşik etkileşimli aracı tarafından oluşturulan boyama verileri. Bu parametre, kullanıcı arayüzünün boyama aracı tarafından yönetilir ve standart bir sokete bağlanması amaçlanmamıştır. |
-| `width` | INT | Evet | 64 ila 4096 | Tuvalin piksel cinsinden genişliği, temel bir `image` sağlanmadığında kullanılır. Değer 64'ün katı olmalıdır. Varsayılan 512'dir. |
-| `height` | INT | Evet | 64 ila 4096 | Tuvalin piksel cinsinden yüksekliği, temel bir `image` sağlanmadığında kullanılır. Değer 64'ün katı olmalıdır. Varsayılan 512'dir. |
-| `bg_color` | COLOR | Evet | - | Tuval için arka plan rengi, onaltılık kod olarak belirtilir (ör. #000000). Bu yalnızca temel bir `image` sağlanmadığında kullanılır. Varsayılan siyahtır (#000000). |
+| `genişlik` | INT | Evet | 64 ila 4096 | Tuvalin piksel cinsinden genişliği, temel bir `görüntü` sağlanmadığında kullanılır. Değer 64'ün katı olmalıdır. Varsayılan 512'dir. |
+| `yükseklik` | INT | Evet | 64 ila 4096 | Tuvalin piksel cinsinden yüksekliği, temel bir `görüntü` sağlanmadığında kullanılır. Değer 64'ün katı olmalıdır. Varsayılan 512'dir. |
+| `arka_plan_rengi` | COLOR | Evet | - | Tuval için arka plan rengi, onaltılık kod olarak belirtilir (ör. #000000). Bu yalnızca temel bir `görüntü` sağlanmadığında kullanılır. Varsayılan siyahtır (#000000). |
 
 **Not:** `mask` girişi, düğümün özel kullanıcı arayüzü aracıyla çalışmak üzere tasarlanmıştır. Tuval üzerinde boyama yaptığınızda, araç bu değeri otomatik olarak doldurur. `width` ve `height` girişleri standart kullanıcı arayüzünde gizlidir ancak yeni bir görüntü oluştururken tuval boyutlarını tanımlar.
 
@@ -46,7 +46,7 @@ Painter düğümü, ComfyUI içinde doğrudan görüntü veya maske oluşturmak 
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | Nihai birleştirilmiş görüntü. Bu, boyanan alanların (`mask`'tan) sağlanan temel `image` veya renkli arka plan üzerine harmanlanmasının sonucudur. |
+| `IMAGE` | IMAGE | Nihai birleştirilmiş görüntü. Bu, boyanan alanların (`mask`'tan) sağlanan temel `görüntü` veya renkli arka plan üzerine harmanlanmasının sonucudur. |
 | `MASK` | MASK | Boyamadan çıkarılan alfa kanalı (şeffaflık) maskesi. Beyaz alanlar boyanan bölgeleri, siyah alanlar ise dokunulmamış arka planı temsil eder. |
 
 ---

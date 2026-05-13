@@ -7,14 +7,14 @@ O nó SVD_img2vid_Conditioning prepara dados de condicionamento para geração d
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `clip_vision` | CLIP_VISION | Sim | - | Modelo de visão CLIP para codificar a imagem de entrada |
-| `init_image` | IMAGE | Sim | - | Imagem inicial a ser usada como ponto de partida para a geração do vídeo |
+| `imagem_inicial` | IMAGE | Sim | - | Imagem inicial a ser usada como ponto de partida para a geração do vídeo |
 | `vae` | VAE | Sim | - | Modelo VAE para codificar a imagem no espaço latente |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída (padrão: 1024, passo: 8) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída (padrão: 576, passo: 8) |
-| `video_frames` | INT | Sim | 1 a 4096 | Número de quadros a serem gerados no vídeo (padrão: 14) |
-| `motion_bucket_id` | INT | Sim | 1 a 1023 | Controla a quantidade de movimento no vídeo gerado (padrão: 127) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída (padrão: 1024, passo: 8) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída (padrão: 576, passo: 8) |
+| `quadros_de_vídeo` | INT | Sim | 1 a 4096 | Número de quadros a serem gerados no vídeo (padrão: 14) |
+| `id_bucket_movimento` | INT | Sim | 1 a 1023 | Controla a quantidade de movimento no vídeo gerado (padrão: 127) |
 | `fps` | INT | Sim | 1 a 1024 | Quadros por segundo para o vídeo gerado (padrão: 6) |
-| `augmentation_level` | FLOAT | Sim | 0.0 a 10.0 | Nível de aumento de ruído a ser aplicado à imagem de entrada (padrão: 0.0, passo: 0.01) |
+| `nível_de_aumento` | FLOAT | Sim | 0.0 a 10.0 | Nível de aumento de ruído a ser aplicado à imagem de entrada (padrão: 0.0, passo: 0.01) |
 
 ## Saídas
 

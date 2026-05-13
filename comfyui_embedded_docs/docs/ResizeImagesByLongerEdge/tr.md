@@ -7,13 +7,13 @@ Uzun Kenara Göre Görselleri Yeniden Boyutlandır düğümü, bir veya daha faz
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `image` | IMAGE | Evet | - | Yeniden boyutlandırılacak giriş görseli veya görsel grubu. |
-| `longer_edge` | INT | Evet | 1 - 8192 | Uzun kenar için hedef uzunluk. Kısa kenar orantılı olarak ölçeklendirilecektir. (varsayılan: 1024) |
+| `uzun_kenar` | INT | Evet | 1 - 8192 | Uzun kenar için hedef uzunluk. Kısa kenar orantılı olarak ölçeklendirilecektir. (varsayılan: 1024) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | Yeniden boyutlandırılmış görsel veya görsel grubu. Çıkış, girişle aynı sayıda görsel içerir ve her birinin uzun kenarı belirtilen `longer_edge` uzunluğuna denk gelir. |
+| `image` | IMAGE | Yeniden boyutlandırılmış görsel veya görsel grubu. Çıkış, girişle aynı sayıda görsel içerir ve her birinin uzun kenarı belirtilen `uzun_kenar` uzunluğuna denk gelir. |
 
 ---
 **Source fingerprint (SHA-256):** `687d5f159967eccbf64f0ec529ae6edeb94f4707ae10a3c75a5d0b08c86dd828`

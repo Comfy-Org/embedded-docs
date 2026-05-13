@@ -7,10 +7,10 @@ LTXVImgToVideoInplace düğümü, bir giriş görüntüsünü ilk karelerine kod
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `vae` | VAE | Evet | - | Giriş görüntüsünü gizil uzaya kodlamak için kullanılan VAE modeli. |
-| `image` | IMAGE | Evet | - | Kodlanacak ve video gizilini koşullandırmak için kullanılacak giriş görüntüsü. |
+| `görüntü` | IMAGE | Evet | - | Kodlanacak ve video gizilini koşullandırmak için kullanılacak giriş görüntüsü. |
 | `latent` | LATENT | Evet | - | Değiştirilecek hedef video gizil temsili. |
-| `strength` | FLOAT | Hayır | 0.0 - 1.0 | Kodlanmış görüntünün gizile harmanlanma gücünü kontrol eder. 1.0 değeri ilk kareleri tamamen değiştirirken, daha düşük değerler harmanlama yapar. (varsayılan: 1.0) |
-| `bypass` | BOOLEAN | Hayır | - | Koşullandırmayı atlar. Etkinleştirildiğinde, düğüm giriş gizilini değiştirmeden döndürür. (varsayılan: False) |
+| `güç` | FLOAT | Hayır | 0.0 - 1.0 | Kodlanmış görüntünün gizile harmanlanma gücünü kontrol eder. 1.0 değeri ilk kareleri tamamen değiştirirken, daha düşük değerler harmanlama yapar. (varsayılan: 1.0) |
+| `atla` | BOOLEAN | Hayır | - | Koşullandırmayı atlar. Etkinleştirildiğinde, düğüm giriş gizilini değiştirmeden döndürür. (varsayılan: False) |
 
 **Not:** `image`, `latent` girişinin genişlik ve yüksekliğine bağlı olarak, `vae` tarafından kodlama için gereken uzamsal boyutlara otomatik olarak yeniden boyutlandırılır.
 

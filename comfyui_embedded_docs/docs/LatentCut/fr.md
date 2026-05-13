@@ -8,10 +8,10 @@ Le nœud LatentCut extrait une section spécifique d'échantillons latents le lo
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `samples` | LATENT | Oui | - | Les échantillons latents d'entrée à partir desquels extraire |
+| `échantillons` | LATENT | Oui | - | Les échantillons latents d'entrée à partir desquels extraire |
 | `dim` | COMBO | Oui | "x"<br>"y"<br>"t" | La dimension le long de laquelle couper les échantillons latents |
 | `index` | INT | Oui | -16384 à 16384 | La position de départ pour la coupe (par défaut : 0). Les valeurs positives comptent à partir du début, les valeurs négatives comptent à partir de la fin. Le nœud limite automatiquement l'index pour rester dans la plage valide des échantillons latents |
-| `amount` | INT | Oui | 1 à 16384 | Le nombre d'éléments à extraire le long de la dimension spécifiée (par défaut : 1). Le nœud réduit automatiquement cette valeur si elle dépasse les données disponibles au-delà de l'index de départ |
+| `quantité` | INT | Oui | 1 à 16384 | Le nombre d'éléments à extraire le long de la dimension spécifiée (par défaut : 1). Le nœud réduit automatiquement cette valeur si elle dépasse les données disponibles au-delà de l'index de départ |
 
 ## Sorties
 

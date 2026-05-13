@@ -6,21 +6,21 @@ El nodo WanSoundImageToVideoExtend extiende un latente de video existente genera
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Condicionamientos positivos que guían lo que el video debe incluir |
-| `negative` | CONDITIONING | Sí | - | Condicionamientos negativos que especifican lo que el video debe evitar |
+| `positivo` | CONDITIONING | Sí | - | Condicionamientos positivos que guían lo que el video debe incluir |
+| `negativo` | CONDITIONING | Sí | - | Condicionamientos negativos que especifican lo que el video debe evitar |
 | `vae` | VAE | Sí | - | Autoencoder variacional utilizado para codificar y decodificar fotogramas de video |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | Número total de fotogramas a generar para la secuencia de video (predeterminado: 77, paso: 4) |
-| `video_latent` | LATENT | Sí | - | Representación latente de video inicial que sirve como punto de partida para la extensión |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | No | - | Incrustaciones de audio opcionales que pueden influir en la generación de video según las características del sonido |
-| `ref_image` | IMAGE | No | - | Imagen de referencia opcional que proporciona guía visual para la generación del video |
-| `control_video` | IMAGE | No | - | Video de control opcional que puede guiar el movimiento y el estilo del video generado |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | Número total de fotogramas a generar para la secuencia de video (predeterminado: 77, paso: 4) |
+| `video_latente` | LATENT | Sí | - | Representación latente de video inicial que sirve como punto de partida para la extensión |
+| `salida_codificador_audio` | AUDIOENCODEROUTPUT | No | - | Incrustaciones de audio opcionales que pueden influir en la generación de video según las características del sonido |
+| `imagen_ref` | IMAGE | No | - | Imagen de referencia opcional que proporciona guía visual para la generación del video |
+| `video_control` | IMAGE | No | - | Video de control opcional que puede guiar el movimiento y el estilo del video generado |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo procesado con contexto de video aplicado |
-| `negative` | CONDITIONING | Condicionamiento negativo procesado con contexto de video aplicado |
+| `negativo` | CONDITIONING | Condicionamiento positivo procesado con contexto de video aplicado |
+| `latente` | CONDITIONING | Condicionamiento negativo procesado con contexto de video aplicado |
 | `latent` | LATENT | Representación latente de video generada que contiene la secuencia de video extendida |
 
 ---

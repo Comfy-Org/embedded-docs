@@ -6,17 +6,17 @@ Le nœud ModelSamplingFlux applique un échantillonnage Flux à un modèle donn�
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer l'échantillonnage Flux |
-| `max_shift` | FLOAT | Oui | 0,0 - 100,0 | Valeur de décalage maximale pour le calcul d'échantillonnage (par défaut : 1,15) |
-| `base_shift` | FLOAT | Oui | 0,0 - 100,0 | Valeur de décalage de base pour le calcul d'échantillonnage (par défaut : 0,5) |
-| `width` | INT | Oui | 16 - MAX_RESOLUTION | Largeur de l'image cible en pixels (par défaut : 1024) |
-| `height` | INT | Oui | 16 - MAX_RESOLUTION | Hauteur de l'image cible en pixels (par défaut : 1024) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer l'échantillonnage Flux |
+| `décalage_max` | FLOAT | Oui | 0,0 - 100,0 | Valeur de décalage maximale pour le calcul d'échantillonnage (par défaut : 1,15) |
+| `décalage_base` | FLOAT | Oui | 0,0 - 100,0 | Valeur de décalage de base pour le calcul d'échantillonnage (par défaut : 0,5) |
+| `largeur` | INT | Oui | 16 - MAX_RESOLUTION | Largeur de l'image cible en pixels (par défaut : 1024) |
+| `hauteur` | INT | Oui | 16 - MAX_RESOLUTION | Hauteur de l'image cible en pixels (par défaut : 1024) |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec la configuration d'échantillonnage Flux appliquée |
+| `modèle` | MODEL | Le modèle modifié avec la configuration d'échantillonnage Flux appliquée |
 
 ---
 **Source fingerprint (SHA-256):** `35733ab0cd032884ceada13715cf51e626586844e8e575471a5ba7cf8a1e5e49`

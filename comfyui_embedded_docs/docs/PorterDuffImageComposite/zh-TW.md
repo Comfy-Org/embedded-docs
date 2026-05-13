@@ -10,7 +10,7 @@ PorterDuffImageComposite 節點旨在使用 Porter-Duff 合成運算子執行影
 | `source_alpha` | `MASK` | 來源影像的 Alpha 通道，指定來源影像中每個像素的透明度。它會影響來源影像與目標影像的混合方式。 |
 | `destination` | `IMAGE` | 作為背景的目標影像張量，來源影像將合成於其上。根據混合模式，它會對最終合成影像產生貢獻。 |
 | `destination_alpha` | `MASK` | 目標影像的 Alpha 通道，定義目標影像像素的透明度。它會影響來源影像與目標影像的混合。 |
-| `mode` | COMBO[STRING] | 要套用的 Porter-Duff 合成模式，決定來源影像與目標影像如何混合在一起。每種模式都會產生不同的視覺效果。 |
+| `模式` | COMBO[STRING] | 要套用的 Porter-Duff 合成模式，決定來源影像與目標影像如何混合在一起。每種模式都會產生不同的視覺效果。 |
 
 ## 輸出
 

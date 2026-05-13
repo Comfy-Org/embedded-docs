@@ -6,17 +6,17 @@ WanDancerVideo 节点用于为 WanDancer 模型的视频生成准备 conditionin
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 是 | | 用于引导视频生成的正向 conditioning。 |
-| `negative` | CONDITIONING | 是 | | 用于引导视频生成的负向 conditioning。 |
+| `正向` | CONDITIONING | 是 | | 用于引导视频生成的正向 conditioning。 |
+| `负向` | CONDITIONING | 是 | | 用于引导视频生成的负向 conditioning。 |
 | `vae` | VAE | 是 | | 用于将起始图像编码到潜空间的 VAE。 |
-| `width` | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） | 生成视频的宽度（像素），默认值：480。 |
-| `height` | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） | 生成视频的高度（像素），默认值：832。 |
-| `length` | INT | 是 | 1 至 MAX_RESOLUTION（步长：4） | 生成视频的帧数。对于 WanDancer 应保持为 149（默认值：149）。 |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | 否 | | 第一帧的 CLIP 视觉嵌入。 |
-| `clip_vision_output_ref` | CLIP_VISION_OUTPUT | 否 | | 参考图像的 CLIP 视觉嵌入。 |
-| `start_image` | IMAGE | 否 | | 待编码的初始图像。可以是任意数量的帧，最多不超过指定的 `length`。 |
-| `mask` | MASK | 否 | | 起始图像的 conditioning 遮罩。白色区域保留，黑色区域生成。用于局部生成。 |
-| `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | 否 | | 音频编码器的输出，提供音频特征、fps 和注入比例，用于音频条件生成。 |
+| `宽度` | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） | 生成视频的宽度（像素），默认值：480。 |
+| `高度` | INT | 是 | 16 至 MAX_RESOLUTION（步长：16） | 生成视频的高度（像素），默认值：832。 |
+| `长度` | INT | 是 | 1 至 MAX_RESOLUTION（步长：4） | 生成视频的帧数。对于 WanDancer 应保持为 149（默认值：149）。 |
+| `clip视觉输出` | CLIP_VISION_OUTPUT | 否 | | 第一帧的 CLIP 视觉嵌入。 |
+| `clip视觉参考输出` | CLIP_VISION_OUTPUT | 否 | | 参考图像的 CLIP 视觉嵌入。 |
+| `起始图像` | IMAGE | 否 | | 待编码的初始图像。可以是任意数量的帧，最多不超过指定的 `长度`。 |
+| `掩码` | MASK | 否 | | 起始图像的 conditioning 遮罩。白色区域保留，黑色区域生成。用于局部生成。 |
+| `音频编码器输出` | AUDIO_ENCODER_OUTPUT | 否 | | 音频编码器的输出，提供音频特征、fps 和注入比例，用于音频条件生成。 |
 
 **参数约束说明：**
 - `start_image` 和 `mask` 输入为可选，但可同时使用。当提供 `start_image` 时，它会被编码并与潜空间张量拼接。如果同时提供 `mask`，则控制起始图像的哪些部分保留（白色）以及哪些部分重新生成（黑色）。如果未提供 `mask`，则整个起始图像区域将作为 conditioning 引导。
@@ -27,8 +27,8 @@ WanDancerVideo 节点用于为 WanDancer 模型的视频生成准备 conditionin
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的正向 conditioning。 |
-| `negative` | CONDITIONING | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的负向 conditioning。 |
+| `负向` | CONDITIONING | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的正向 conditioning。 |
+| `latent` | CONDITIONING | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的负向 conditioning。 |
 | `latent` | LATENT | 维度与指定的视频长度、高度和宽度匹配的空潜空间张量。 |
 
 ---

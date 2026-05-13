@@ -9,13 +9,13 @@ WanMoveTrackToVideo ノードは、動画生成用のコンディショニング
 | `positive` | CONDITIONING | はい | - | 修正されるポジティブコンディショニング入力。 |
 | `negative` | CONDITIONING | はい | - | 修正されるネガティブコンディショニング入力。 |
 | `vae` | VAE | はい | - | 開始画像を潜在空間にエンコードするために使用されるVAEモデル。 |
-| `tracks` | TRACKS | いいえ | - | オブジェクトのパスを含むオプションの動き追跡データ。 |
-| `strength` | FLOAT | いいえ | 0.0 - 100.0 | トラックコンディショニングの強度。（デフォルト：1.0） |
-| `width` | INT | いいえ | 16 - MAX_RESOLUTION | 出力動画の幅。16で割り切れる必要があります。（デフォルト：832） |
-| `height` | INT | いいえ | 16 - MAX_RESOLUTION | 出力動画の高さ。16で割り切れる必要があります。（デフォルト：480） |
-| `length` | INT | いいえ | 1 - MAX_RESOLUTION | 動画シーケンスのフレーム数。（デフォルト：81） |
-| `batch_size` | INT | いいえ | 1 - 4096 | 潜在出力のバッチサイズ。（デフォルト：1） |
-| `start_image` | IMAGE | はい | - | エンコードする開始画像または画像シーケンス。 |
+| `トラック` | TRACKS | いいえ | - | オブジェクトのパスを含むオプションの動き追跡データ。 |
+| `強度` | FLOAT | いいえ | 0.0 - 100.0 | トラックコンディショニングの強度。（デフォルト：1.0） |
+| `幅` | INT | いいえ | 16 - MAX_RESOLUTION | 出力動画の幅。16で割り切れる必要があります。（デフォルト：832） |
+| `高さ` | INT | いいえ | 16 - MAX_RESOLUTION | 出力動画の高さ。16で割り切れる必要があります。（デフォルト：480） |
+| `長さ` | INT | いいえ | 1 - MAX_RESOLUTION | 動画シーケンスのフレーム数。（デフォルト：81） |
+| `バッチサイズ` | INT | いいえ | 1 - 4096 | 潜在出力のバッチサイズ。（デフォルト：1） |
+| `開始画像` | IMAGE | はい | - | エンコードする開始画像または画像シーケンス。 |
 | `clip_vision_output` | CLIPVISIONOUTPUT | いいえ | - | コンディショニングに追加するオプションのCLIPビジョンモデル出力。 |
 
 **注意:** `strength` パラメータは、`tracks` が指定された場合にのみ効果があります。`tracks` が指定されていない場合、または `strength` が 0.0 の場合は、トラックコンディショニングは適用されません。`start_image` はコンディショニング用の潜在画像とマスクを作成するために使用されます。これが指定されていない場合、ノードはコンディショニングをそのまま通過させ、空の潜在データを出力します。
@@ -24,9 +24,9 @@ WanMoveTrackToVideo ノードは、動画生成用のコンディショニング
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたポジティブコンディショニング。 |
-| `negative` | CONDITIONING | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたネガティブコンディショニング。 |
-| `latent` | LATENT | `batch_size`、`length`、`height`、`width` の入力によって形状が決定される空の潜在テンソル。 |
+| `negative` | CONDITIONING | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたポジティブコンディショニング。 |
+| `latent` | CONDITIONING | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたネガティブコンディショニング。 |
+| `latent` | LATENT | `バッチサイズ`、`長さ`、`高さ`、`幅` の入力によって形状が決定される空の潜在テンソル。 |
 
 ---
 **Source fingerprint (SHA-256):** `9677addf5b94b42efd3015f51380c1fa9b16d4a5105cc7f24de0be34c0042bbc`

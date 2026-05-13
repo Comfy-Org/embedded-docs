@@ -7,13 +7,13 @@ Este nodo utiliza el modelo Kling 3.0 para generar un video. Crea el video basá
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | La descripción textual que guía la generación del video. Debe tener entre 1 y 2500 caracteres. |
-| `duration` | INT | No | 3 a 15 | La duración del video en segundos (valor predeterminado: 5). |
-| `first_frame` | IMAGE | Sí | N/A | La imagen inicial del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. |
-| `end_frame` | IMAGE | Sí | N/A | La imagen final del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. |
-| `generate_audio` | BOOLEAN | No | N/A | Controla si se genera audio para el video (valor predeterminado: True). |
-| `model` | COMBO | No | `"kling-v3"` | Configuración del modelo y de generación. Al seleccionar esta opción se muestra un parámetro `resolution` anidado. |
-| `model.resolution` | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución del video generado. Este parámetro solo está disponible cuando el `model` está configurado en `"kling-v3"` (valor predeterminado: `"1080p"`). |
-| `seed` | INT | No | 0 a 2147483647 | Un número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (valor predeterminado: 0). |
+| `duración` | INT | No | 3 a 15 | La duración del video en segundos (valor predeterminado: 5). |
+| `primer_fotograma` | IMAGE | Sí | N/A | La imagen inicial del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. |
+| `último_fotograma` | IMAGE | Sí | N/A | La imagen final del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. |
+| `generar_audio` | BOOLEAN | No | N/A | Controla si se genera audio para el video (valor predeterminado: True). |
+| `modelo` | COMBO | No | `"kling-v3"` | Configuración del modelo y de generación. Al seleccionar esta opción se muestra un parámetro `resolution` anidado. |
+| `model.resolution` | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución del video generado. Este parámetro solo está disponible cuando el `modelo` está configurado en `"kling-v3"` (valor predeterminado: `"1080p"`). |
+| `semilla` | INT | No | 0 a 2147483647 | Un número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (valor predeterminado: 0). |
 
 **Nota:** Las imágenes `first_frame` y `end_frame` deben cumplir con los requisitos de tamaño mínimo y relación de aspecto especificados para que el nodo funcione correctamente.
 

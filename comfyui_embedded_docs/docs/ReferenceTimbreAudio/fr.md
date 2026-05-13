@@ -6,14 +6,14 @@ Ce nœud définit un timbre audio de référence pour une utilisation dans le pr
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `conditioning` | CONDITIONING | Oui | | Les données de conditionnement auxquelles les informations du timbre audio de référence seront attachées. |
+| `conditionnement` | CONDITIONING | Oui | | Les données de conditionnement auxquelles les informations du timbre audio de référence seront attachées. |
 | `latent` | LATENT | Non | | Une représentation latente facultative de l'audio de référence. Lorsqu'elle est fournie, ses échantillons sont ajoutés au conditionnement. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `conditioning` | CONDITIONING | Les données de conditionnement modifiées, contenant désormais les latences du timbre audio de référence si l'entrée facultative `latent` a été fournie. |
+| `conditionnement` | CONDITIONING | Les données de conditionnement modifiées, contenant désormais les latences du timbre audio de référence si l'entrée facultative `latent` a été fournie. |
 
 ---
 **Source fingerprint (SHA-256):** `2d39399eb79cfe76b72d01326b89863e2553bc23414b1166d310e5222b215b29`

@@ -6,8 +6,8 @@ O nó RebatchImages foi projetado para reorganizar um lote de imagens em uma nov
 
 | Campo         | Tipo de Dado | Descrição                                                                                     |
 |---------------|---------------|-----------------------------------------------------------------------------------------------|
-| `images`      | `IMAGE`       | Uma lista de imagens a ser reagrupada. Este parâmetro é crucial para determinar os dados de entrada que passarão pelo processo de reagrupamento. |
-| `batch_size`  | `INT`         | Especifica o tamanho desejado dos lotes de saída. Este parâmetro influencia diretamente como as imagens de entrada são agrupadas e processadas, impactando a estrutura da saída. |
+| `imagens`      | `IMAGE`       | Uma lista de imagens a ser reagrupada. Este parâmetro é crucial para determinar os dados de entrada que passarão pelo processo de reagrupamento. |
+| `tamanho do lote`  | `INT`         | Especifica o tamanho desejado dos lotes de saída. Este parâmetro influencia diretamente como as imagens de entrada são agrupadas e processadas, impactando a estrutura da saída. |
 
 ## Saídas
 

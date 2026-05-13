@@ -9,11 +9,11 @@ ConditioningSetProperties 節點透過調整強度、區域設定以及應用可
 | 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 說明 |
 |-----------|-----------|------------|---------|-------|-------------|
 | `cond_NEW` | CONDITIONING | 必要 | - | - | 要修改的條件資料 |
-| `strength` | FLOAT | 必要 | 1.0 | 0.0 - 10.0 (步長: 0.01) | 控制條件效果的強度 |
-| `set_cond_area` | STRING | 必要 | default | ["default", "mask bounds"] | 決定條件區域的應用方式。選擇 "default" 使用標準行為，或選擇 "mask bounds" 限制在遮罩區域內 |
-| `mask` | MASK | 可選 | - | - | 可選遮罩，用於限制條件應用的區域 |
+| `強度` | FLOAT | 必要 | 1.0 | 0.0 - 10.0 (步長: 0.01) | 控制條件效果的強度 |
+| `設定條件區域` | STRING | 必要 | default | ["default", "mask bounds"] | 決定條件區域的應用方式。選擇 "default" 使用標準行為，或選擇 "mask bounds" 限制在遮罩區域內 |
+| `遮罩` | MASK | 可選 | - | - | 可選遮罩，用於限制條件應用的區域 |
 | `hooks` | HOOKS | 可選 | - | - | 用於自訂處理的可選鉤子函數 |
-| `timesteps` | TIMESTEPS_RANGE | 可選 | - | - | 可選時間步範圍，用於限制條件生效的時間 |
+| `時間步驟` | TIMESTEPS_RANGE | 可選 | - | - | 可選時間步範圍，用於限制條件生效的時間 |
 
 **注意：** 當提供 `mask` 時，可以將 `set_cond_area` 參數設定為 "mask bounds"，以將條件應用限制在遮罩區域內。`hooks` 參數允許透過鉤子函數進行自訂處理，而 `timesteps` 則將條件效果限制在生成過程中的特定時間步範圍內。
 

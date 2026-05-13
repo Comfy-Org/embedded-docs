@@ -22,9 +22,9 @@ Meshy: Metinden Modele düğümü, bir metin açıklamasından 3B model oluştur
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy API görevi için benzersiz tanımlayıcı. |
-| `GLB` | FILE3DGLB | GLB formatında oluşturulan 3B model dosyası. |
+| `meshy_görev_id` | STRING | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. |
+| `GLB` | MESHY_TASK_ID | Meshy API görevi için benzersiz tanımlayıcı. |
+| `FBX` | FILE3DGLB | GLB formatında oluşturulan 3B model dosyası. |
 | `FBX` | FILE3DFBX | FBX formatında oluşturulan 3B model dosyası. |
 
 ---

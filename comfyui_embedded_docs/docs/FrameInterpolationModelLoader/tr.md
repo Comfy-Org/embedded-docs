@@ -10,7 +10,7 @@ Bu düğüm, bir dosyadan kare enterpolasyon modeli yükler ve iş akışında k
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `model_name` | STRING | Evet | `frame_interpolation` klasöründeki model dosyalarının listesi | Yüklenecek kare enterpolasyon modelini seçin. Modeller 'frame_interpolation' klasörüne yerleştirilmelidir. |
+| `model_adı` | STRING | Evet | `frame_interpolation` klasöründeki model dosyalarının listesi | Yüklenecek kare enterpolasyon modelini seçin. Modeller 'frame_interpolation' klasörüne yerleştirilmelidir. |
 
 ## Çıkışlar
 

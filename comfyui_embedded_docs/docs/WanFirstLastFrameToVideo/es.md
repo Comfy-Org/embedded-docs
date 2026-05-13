@@ -6,17 +6,17 @@ El nodo WanFirstLastFrameToVideo crea condicionamiento de video combinando fotog
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Condicionamiento de texto positivo para guiar la generación de video |
-| `negative` | CONDITIONING | Sí | - | Condicionamiento de texto negativo para guiar la generación de video |
+| `positivo` | CONDITIONING | Sí | - | Condicionamiento de texto positivo para guiar la generación de video |
+| `negativo` | CONDITIONING | Sí | - | Condicionamiento de texto negativo para guiar la generación de video |
 | `vae` | VAE | Sí | - | Modelo VAE utilizado para codificar imágenes al espacio latente |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida (predeterminado: 832, paso: 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida (predeterminado: 480, paso: 16) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) |
-| `batch_size` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (predeterminado: 1) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida (predeterminado: 832, paso: 16) |
+| `alto` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida (predeterminado: 480, paso: 16) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en la secuencia de video (predeterminado: 81, paso: 4) |
+| `tamaño_lote` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (predeterminado: 1) |
 | `clip_vision_start_image` | CLIP_VISION_OUTPUT | No | - | Características de visión CLIP extraídas de la imagen de inicio |
 | `clip_vision_end_image` | CLIP_VISION_OUTPUT | No | - | Características de visión CLIP extraídas de la imagen de fin |
-| `start_image` | IMAGE | No | - | Imagen del fotograma de inicio para la secuencia de video |
-| `end_image` | IMAGE | No | - | Imagen del fotograma de fin para la secuencia de video |
+| `imagen_inicial` | IMAGE | No | - | Imagen del fotograma de inicio para la secuencia de video |
+| `imagen_final` | IMAGE | No | - | Imagen del fotograma de fin para la secuencia de video |
 
 **Nota:** Cuando se proporcionan tanto `start_image` como `end_image`, el nodo crea una secuencia de video que realiza una transición entre estos dos fotogramas. Los parámetros `clip_vision_start_image` y `clip_vision_end_image` son opcionales, pero cuando se proporcionan, sus características de visión CLIP se concatenan y se aplican tanto al condicionamiento positivo como al negativo. La `start_image` se recorta a los primeros `length` fotogramas, y la `end_image` se recorta a los últimos `length` fotogramas antes del procesamiento.
 
@@ -24,8 +24,8 @@ El nodo WanFirstLastFrameToVideo crea condicionamiento de video combinando fotog
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP |
-| `negative` | CONDITIONING | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP |
+| `negativo` | CONDITIONING | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP |
+| `latente` | CONDITIONING | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP |
 | `latent` | LATENT | Tensor latente vacío con dimensiones que coinciden con los parámetros de video especificados |
 
 ---

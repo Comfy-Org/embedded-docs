@@ -8,13 +8,13 @@ Este nó remove o fundo de imagens usando o serviço da API Recraft. Ele process
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A(s) imagem(ns) de entrada para processar a remoção de fundo |
+| `imagem` | IMAGE | Sim | - | A(s) imagem(ns) de entrada para processar a remoção de fundo |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | Imagens processadas com fundos transparentes |
+| `imagem` | IMAGE | Imagens processadas com fundos transparentes |
 | `mask` | MASK | Máscaras do canal alfa indicando as áreas de fundo removidas |
 
 ---

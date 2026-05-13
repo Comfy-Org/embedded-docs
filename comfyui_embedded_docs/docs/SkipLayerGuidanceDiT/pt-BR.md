@@ -6,13 +6,13 @@ Melhora a orientação para detalhes estruturais usando outro conjunto de CFG ne
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo ao qual aplicar a orientação de camada ignorada |
-| `double_layers` | STRING | Sim | - | Números de camadas separados por vírgula para blocos duplos a serem ignorados (padrão: "7, 8, 9") |
-| `single_layers` | STRING | Sim | - | Números de camadas separados por vírgula para blocos simples a serem ignorados (padrão: "7, 8, 9") |
-| `scale` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala da orientação (padrão: 3.0) |
-| `start_percent` | FLOAT | Sim | 0.0 - 1.0 | Percentual inicial para aplicação da orientação (padrão: 0.01) |
-| `end_percent` | FLOAT | Sim | 0.0 - 1.0 | Percentual final para aplicação da orientação (padrão: 0.15) |
-| `rescaling_scale` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala de redimensionamento para ajustar a magnitude da saída (padrão: 0.0, significando sem redimensionamento) |
+| `modelo` | MODEL | Sim | - | O modelo ao qual aplicar a orientação de camada ignorada |
+| `camadas duplas` | STRING | Sim | - | Números de camadas separados por vírgula para blocos duplos a serem ignorados (padrão: "7, 8, 9") |
+| `camadas simples` | STRING | Sim | - | Números de camadas separados por vírgula para blocos simples a serem ignorados (padrão: "7, 8, 9") |
+| `escala` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala da orientação (padrão: 3.0) |
+| `percentual inicial` | FLOAT | Sim | 0.0 - 1.0 | Percentual inicial para aplicação da orientação (padrão: 0.01) |
+| `percentual final` | FLOAT | Sim | 0.0 - 1.0 | Percentual final para aplicação da orientação (padrão: 0.15) |
+| `escala de reescalonamento` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala de redimensionamento para ajustar a magnitude da saída (padrão: 0.0, significando sem redimensionamento) |
 
 **Nota:** Se tanto `double_layers` quanto `single_layers` estiverem vazios (não contiverem números de camadas), o nó retorna o modelo original sem aplicar nenhuma orientação.
 
@@ -20,7 +20,7 @@ Melhora a orientação para detalhes estruturais usando outro conjunto de CFG ne
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `model` | MODEL | O modelo modificado com a orientação de camada ignorada aplicada |
+| `modelo` | MODEL | O modelo modificado com a orientação de camada ignorada aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `cf494fbeb33e7bc3b3f798e9e9b025623afad4ea6340ef628caa776c7d42ba12`

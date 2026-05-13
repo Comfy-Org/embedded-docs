@@ -6,7 +6,7 @@ O nó SamplerEulerCFGpp fornece um método de amostragem Euler CFG++ para gerar 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `version` | STRING | Sim | `"regular"`<br>`"alternative"` | A versão de implementação do amostrador Euler CFG++ a ser usada (padrão: "regular") |
+| `versão` | STRING | Sim | `"regular"`<br>`"alternative"` | A versão de implementação do amostrador Euler CFG++ a ser usada (padrão: "regular") |
 
 ## Saídas
 

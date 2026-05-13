@@ -6,14 +6,14 @@ El Nodo de Video de Referencia Vidu genera videos a partir de múltiples imágen
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq1"` | Nombre del modelo para la generación de video (predeterminado: "viduq1") |
-| `images` | IMAGE | Sí | - | Imágenes para usar como referencia y generar un video con sujetos consistentes (máximo 7 imágenes) |
-| `prompt` | STRING | Sí | - | Una descripción textual para la generación del video |
-| `duration` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5) |
-| `seed` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
-| `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"1:1"` | La relación de aspecto del video de salida (predeterminado: "16:9") |
-| `resolution` | COMBO | No | `"1080p"` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: "1080p") |
-| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el encuadre (predeterminado: "auto") |
+| `modelo` | COMBO | Sí | `"viduq1"` | Nombre del modelo para la generación de video (predeterminado: "viduq1") |
+| `imágenes` | IMAGE | Sí | - | Imágenes para usar como referencia y generar un video con sujetos consistentes (máximo 7 imágenes) |
+| `texto` | STRING | Sí | - | Una descripción textual para la generación del video |
+| `duración` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5) |
+| `semilla` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
+| `relación_de_aspecto` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"1:1"` | La relación de aspecto del video de salida (predeterminado: "16:9") |
+| `resolución` | COMBO | No | `"1080p"` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: "1080p") |
+| `amplitud_de_movimiento` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el encuadre (predeterminado: "auto") |
 
 **Restricciones y Limitaciones:**
 

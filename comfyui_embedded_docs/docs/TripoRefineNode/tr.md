@@ -6,7 +6,7 @@ TripoRefineNode, özellikle v1.4 Tripo modelleri tarafından oluşturulan taslak
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `model_task_id` | MODEL_TASK_ID | Evet | - | Bir v1.4 Tripo modeli olmalıdır |
+| `model_görev_id` | MODEL_TASK_ID | Evet | - | Bir v1.4 Tripo modeli olmalıdır |
 
 **Not:** Bu düğüm yalnızca Tripo v1.4 modelleri tarafından oluşturulan taslak modelleri kabul eder. Diğer sürümlerdeki modellerin kullanılması hatalara neden olabilir.
 
@@ -14,8 +14,8 @@ TripoRefineNode, özellikle v1.4 Tripo modelleri tarafından oluşturulan taslak
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `model_file` | STRING | İyileştirilmiş modelin dosya yolu veya referansı (yalnızca geriye dönük uyumluluk için) |
-| `model task_id` | MODEL_TASK_ID | İyileştirilmiş model işlemi için görev tanımlayıcısı |
+| `model_görev_id` | STRING | İyileştirilmiş modelin dosya yolu veya referansı (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | MODEL_TASK_ID | İyileştirilmiş model işlemi için görev tanımlayıcısı |
 | `GLB` | FILE3DGLB | GLB formatında iyileştirilmiş 3B model |
 
 ---

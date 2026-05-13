@@ -8,10 +8,10 @@ StringCompare 節點使用不同的比較方法來比較兩個文字字串。它
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `string_a` | STRING | 是 | - | 要比較的第一個字串 |
-| `string_b` | STRING | 是 | - | 要比較的第二個字串 |
-| `mode` | COMBO | 是 | "Starts With"<br>"Ends With"<br>"Equal" | 使用的比較方法（預設："Starts With"） |
-| `case_sensitive` | BOOLEAN | 否 | - | 比較時是否考慮字母大小寫（預設：true） |
+| `字串_a` | STRING | 是 | - | 要比較的第一個字串 |
+| `字串_b` | STRING | 是 | - | 要比較的第二個字串 |
+| `模式` | COMBO | 是 | "Starts With"<br>"Ends With"<br>"Equal" | 使用的比較方法（預設："Starts With"） |
+| `區分大小寫` | BOOLEAN | 否 | - | 比較時是否考慮字母大小寫（預設：true） |
 
 ## 輸出
 

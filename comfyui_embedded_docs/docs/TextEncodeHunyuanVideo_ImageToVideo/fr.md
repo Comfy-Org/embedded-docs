@@ -11,9 +11,9 @@ Le nœud `TextEncodeHunyuanVideo_ImageToVideo` crée des données de conditionne
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | - | Le modèle CLIP utilisé pour la tokenisation et l'encodage |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Oui | - | Les embeddings visuels provenant d'un modèle de vision CLIP qui fournissent le contexte de l'image |
-| `prompt` | STRING | Oui | - | La description textuelle pour guider la génération vidéo, prend en charge les entrées multilignes et les invites dynamiques |
-| `image_interleave` | INT | Oui | 1-512 | Dans quelle mesure l'image influence les résultats par rapport à l'invite textuelle. Un nombre plus élevé signifie une plus grande influence de l'invite textuelle. (valeur par défaut : 2) |
+| `sortie_vision_clip` | CLIP_VISION_OUTPUT | Oui | - | Les embeddings visuels provenant d'un modèle de vision CLIP qui fournissent le contexte de l'image |
+| `invite` | STRING | Oui | - | La description textuelle pour guider la génération vidéo, prend en charge les entrées multilignes et les invites dynamiques |
+| `entrelacement_image` | INT | Oui | 1-512 | Dans quelle mesure l'image influence les résultats par rapport à l'invite textuelle. Un nombre plus élevé signifie une plus grande influence de l'invite textuelle. (valeur par défaut : 2) |
 
 ## Sorties
 

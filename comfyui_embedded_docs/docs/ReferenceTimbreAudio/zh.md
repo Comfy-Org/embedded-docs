@@ -6,14 +6,14 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | 是 | | 将附加参考音频信息的 conditioning 数据。 |
-| `latent` | LATENT | 否 | | 可选的参考音频潜在表示。提供时，其样本将被添加到 conditioning 中。 |
+| `条件` | CONDITIONING | 是 | | 将附加参考音频信息的 conditioning 数据。 |
+| `潜空间` | LATENT | 否 | | 可选的参考音频潜在表示。提供时，其样本将被添加到 conditioning 中。 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | 修改后的 conditioning 数据，如果提供了可选的 `latent` 输入，则现在包含参考音频音色潜在表示。 |
+| `条件` | CONDITIONING | 修改后的 conditioning 数据，如果提供了可选的 `潜空间` 输入，则现在包含参考音频音色潜在表示。 |
 
 ---
 **Source fingerprint (SHA-256):** `2d39399eb79cfe76b72d01326b89863e2553bc23414b1166d310e5222b215b29`

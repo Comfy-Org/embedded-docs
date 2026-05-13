@@ -6,8 +6,8 @@ AudioConcat düğümü, iki ses girişini birleştirerek tek bir ses dosyası ol
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `audio1` | AUDIO | Evet | - | Birleştirilecek ilk ses girişi |
-| `audio2` | AUDIO | Evet | - | Birleştirilecek ikinci ses girişi |
+| `ses1` | AUDIO | Evet | - | Birleştirilecek ilk ses girişi |
+| `ses2` | AUDIO | Evet | - | Birleştirilecek ikinci ses girişi |
 | `direction` | COMBO | Evet | `"after"`<br>`"before"` | audio2'nin audio1'den sonra mı yoksa önce mi ekleneceği (varsayılan: "after") |
 
 ## Çıkışlar

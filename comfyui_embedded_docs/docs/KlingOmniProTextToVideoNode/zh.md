@@ -6,14 +6,14 @@
 
 | 参数 | 数据类型 | 必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用于视频生成的特定 Kling 模型（默认值：`"kling-v3-omni"`）。 |
-| `prompt` | STRING | 是 | 0 到 2500 个字符 | 描述视频内容的文本提示词。可包含正面和负面描述。启用故事板时忽略此参数。 |
-| `aspect_ratio` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 生成视频的画幅或尺寸。 |
-| `duration` | INT | 是 | 3 到 15 秒 | 视频的时长（以秒为单位，默认值：5）。 |
-| `resolution` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 视频的质量或像素分辨率（默认值：`"1080p"`）。 |
-| `storyboards` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列带有独立提示词和时长的视频片段。o1 模型忽略此参数。 |
-| `generate_audio` | BOOLEAN | 否 | True / False | 是否为视频生成音频（默认值：False）。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 种子控制节点是否应重新运行；无论种子如何，结果均非确定性（默认值：0）。 |
+| `模型` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用于视频生成的特定 Kling 模型（默认值：`"kling-v3-omni"`）。 |
+| `提示词` | STRING | 是 | 0 到 2500 个字符 | 描述视频内容的文本提示词。可包含正面和负面描述。启用故事板时忽略此参数。 |
+| `宽高比` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 生成视频的画幅或尺寸。 |
+| `时长` | INT | 是 | 3 到 15 秒 | 视频的时长（以秒为单位，默认值：5）。 |
+| `分辨率` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 视频的质量或像素分辨率（默认值：`"1080p"`）。 |
+| `分镜` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列带有独立提示词和时长的视频片段。o1 模型忽略此参数。 |
+| `生成音频` | BOOLEAN | 否 | True / False | 是否为视频生成音频（默认值：False）。 |
+| `种子` | INT | 否 | 0 到 2147483647 | 种子控制节点是否应重新运行；无论种子如何，结果均非确定性（默认值：0）。 |
 
 ### 参数约束与限制
 

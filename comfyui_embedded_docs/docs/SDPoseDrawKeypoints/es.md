@@ -6,14 +6,14 @@ El nodo SDPoseDrawKeypoints toma datos de estimación de pose (puntos clave) y l
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `keypoints` | POSE_KEYPOINT | Sí | - | Los datos de puntos clave de la pose que se dibujarán. Estos datos provienen típicamente de un nodo de detección de pose. |
-| `draw_body` | BOOLEAN | No | - | Controla si se dibuja el esqueleto principal del cuerpo (predeterminado: True). |
-| `draw_hands` | BOOLEAN | No | - | Controla si se dibujan los puntos clave de las manos (predeterminado: True). |
-| `draw_face` | BOOLEAN | No | - | Controla si se dibujan los puntos clave del rostro (predeterminado: True). |
-| `draw_feet` | BOOLEAN | No | - | Controla si se dibujan los puntos clave de los pies (predeterminado: False). |
-| `stick_width` | INT | No | 1 a 10 | El ancho de las líneas utilizadas para dibujar el esqueleto del cuerpo (predeterminado: 4). |
-| `face_point_size` | INT | No | 1 a 10 | El tamaño de los puntos utilizados para dibujar los puntos clave del rostro (predeterminado: 3). |
-| `score_threshold` | FLOAT | No | 0.0 a 1.0 | La puntuación de confianza mínima que debe tener un punto clave para ser dibujado. Los puntos clave con puntuaciones por debajo de este valor se ignoran (predeterminado: 0.3). |
+| `puntos clave` | POSE_KEYPOINT | Sí | - | Los datos de puntos clave de la pose que se dibujarán. Estos datos provienen típicamente de un nodo de detección de pose. |
+| `dibujar cuerpo` | BOOLEAN | No | - | Controla si se dibuja el esqueleto principal del cuerpo (predeterminado: True). |
+| `dibujar manos` | BOOLEAN | No | - | Controla si se dibujan los puntos clave de las manos (predeterminado: True). |
+| `dibujar rostro` | BOOLEAN | No | - | Controla si se dibujan los puntos clave del rostro (predeterminado: True). |
+| `dibujar pies` | BOOLEAN | No | - | Controla si se dibujan los puntos clave de los pies (predeterminado: False). |
+| `ancho de línea` | INT | No | 1 a 10 | El ancho de las líneas utilizadas para dibujar el esqueleto del cuerpo (predeterminado: 4). |
+| `tamaño de punto facial` | INT | No | 1 a 10 | El tamaño de los puntos utilizados para dibujar los puntos clave del rostro (predeterminado: 3). |
+| `umbral de puntuación` | FLOAT | No | 0.0 a 1.0 | La puntuación de confianza mínima que debe tener un punto clave para ser dibujado. Los puntos clave con puntuaciones por debajo de este valor se ignoran (predeterminado: 0.3). |
 
 **Nota:** Si la entrada `keypoints` está vacía o es `None`, el nodo generará una imagen en blanco de 64x64.
 

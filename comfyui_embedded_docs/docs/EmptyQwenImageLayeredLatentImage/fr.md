@@ -8,10 +8,10 @@ Le nœud **Empty Qwen Image Layered Latent** crée une représentation latente m
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | La largeur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | La hauteur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) |
-| `layers` | INT | Oui | 0 à MAX_RESOLUTION | Le nombre de couches supplémentaires à ajouter à la structure latente. Cela définit la profondeur de la représentation latente. (par défaut : 3) |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre d'échantillons latents à générer dans un lot. (par défaut : 1) |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | La largeur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | La hauteur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) |
+| `couches` | INT | Oui | 0 à MAX_RESOLUTION | Le nombre de couches supplémentaires à ajouter à la structure latente. Cela définit la profondeur de la représentation latente. (par défaut : 3) |
+| `taille_lot` | INT | Non | 1 à 4096 | Le nombre d'échantillons latents à générer dans un lot. (par défaut : 1) |
 
 **Remarque :** Les paramètres `width` et `height` sont divisés en interne par 8 pour déterminer les dimensions spatiales du tenseur latent de sortie.
 

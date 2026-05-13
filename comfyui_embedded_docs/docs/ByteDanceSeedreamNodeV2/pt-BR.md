@@ -11,9 +11,9 @@ Este nó gera ou edita imagens usando os modelos Seedream da ByteDance (versões
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Prompt de texto para criar ou editar uma imagem. |
-| `model` | COMBO | Sim | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | A versão do modelo Seedream a ser usada para geração. Cada modelo possui diferentes capacidades e preços. |
-| `seed` | INT | Não | 0 a 2147483647 | Semente a ser usada para geração (padrão: 0). |
-| `watermark` | BOOLEAN | Não | Verdadeiro / Falso | Se deve adicionar uma marca d'água "gerado por IA" à imagem (padrão: Falso). |
+| `modelo` | COMBO | Sim | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | A versão do modelo Seedream a ser usada para geração. Cada modelo possui diferentes capacidades e preços. |
+| `semente` | INT | Não | 0 a 2147483647 | Semente a ser usada para geração (padrão: 0). |
+| `marca d'água` | BOOLEAN | Não | Verdadeiro / Falso | Se deve adicionar uma marca d'água "gerado por IA" à imagem (padrão: Falso). |
 
 ### Parâmetros Específicos do Modelo
 

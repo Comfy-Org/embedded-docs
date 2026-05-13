@@ -7,11 +7,11 @@ Le nœud Runway Première-Dernière Image vers Vidéo génère des vidéos en t�
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | N/A | Invite textuelle pour la génération (par défaut : chaîne vide) |
-| `start_frame` | IMAGE | Oui | N/A | Image de début à utiliser pour la vidéo |
-| `end_frame` | IMAGE | Oui | N/A | Image de fin à utiliser pour la vidéo. Pris en charge uniquement pour gen3a_turbo. |
-| `duration` | COMBO | Oui | `"5"`<br>`"10"` | Durée de la vidéo en secondes (par défaut : "5") |
+| `image_début` | IMAGE | Oui | N/A | Image de début à utiliser pour la vidéo |
+| `image_fin` | IMAGE | Oui | N/A | Image de fin à utiliser pour la vidéo. Pris en charge uniquement pour gen3a_turbo. |
+| `durée` | COMBO | Oui | `"5"`<br>`"10"` | Durée de la vidéo en secondes (par défaut : "5") |
 | `ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Format d’image pour la vidéo générée (par défaut : "16:9") |
-| `seed` | INT | Non | 0 à 4294967295 | Graine aléatoire pour la génération. Mettre à 0 pour une graine aléatoire (par défaut : 0). |
+| `graine` | INT | Non | 0 à 4294967295 | Graine aléatoire pour la génération. Mettre à 0 pour une graine aléatoire (par défaut : 0). |
 
 **Contraintes des paramètres :**
 

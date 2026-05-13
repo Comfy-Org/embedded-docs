@@ -8,7 +8,7 @@ Carga un modelo de eliminación de fondo desde un archivo. Este nodo prepara el 
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `bg_removal_name` | STRING | Sí | Lista de archivos de modelo disponibles | El modelo utilizado para eliminar fondos de imágenes. Seleccione de la lista de archivos de modelo de eliminación de fondo disponibles. |
+| `nombre_del_modelo_de_eliminación_de_fondo` | STRING | Sí | Lista de archivos de modelo disponibles | El modelo utilizado para eliminar fondos de imágenes. Seleccione de la lista de archivos de modelo de eliminación de fondo disponibles. |
 
 ## Salidas
 

@@ -8,8 +8,8 @@ El nodo Grok Video Extend utiliza un modelo de IA para crear una continuación f
 |-----------|---------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Descripción textual de lo que debería suceder a continuación en el video. |
 | `video` | VIDEO | Sí | N/A | Video fuente a extender. Formato MP4, de 2 a 15 segundos. |
-| `model` | COMBO | Sí | `"grok-imagine-video"` | El modelo a utilizar para la extensión de video. Al seleccionarlo, revela un parámetro anidado `duration`. |
-| `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe reejecutarse; los resultados reales son no deterministas independientemente de la semilla (valor predeterminado: 0). |
+| `modelo` | COMBO | Sí | `"grok-imagine-video"` | El modelo a utilizar para la extensión de video. Al seleccionarlo, revela un parámetro anidado `duration`. |
+| `semilla` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe reejecutarse; los resultados reales son no deterministas independientemente de la semilla (valor predeterminado: 0). |
 
 **Restricciones de Parámetros:**
 *   La entrada `video` debe ser un archivo MP4 con una duración de entre 2 y 15 segundos y no puede superar los 50 MB de tamaño.

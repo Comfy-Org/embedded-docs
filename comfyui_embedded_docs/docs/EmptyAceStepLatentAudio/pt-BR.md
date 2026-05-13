@@ -8,8 +8,8 @@ O nó EmptyAceStepLatentAudio cria amostras de áudio latente vazias com uma dur
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `seconds` | FLOAT | Sim | 1.0 - 1000.0 | A duração do áudio em segundos (padrão: 120.0) |
-| `batch_size` | INT | Sim | 1 - 4096 | O número de imagens latentes no lote (padrão: 1) |
+| `segundos` | FLOAT | Sim | 1.0 - 1000.0 | A duração do áudio em segundos (padrão: 120.0) |
+| `tamanho_do_lote` | INT | Sim | 1 - 4096 | O número de imagens latentes no lote (padrão: 1) |
 
 ## Saídas
 

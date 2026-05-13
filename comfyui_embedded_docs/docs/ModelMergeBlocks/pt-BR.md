@@ -8,9 +8,9 @@ ModelMergeBlocks foi projetado para operações avançadas de mesclagem de model
 |-----------|---------------|-----------|
 | `model1`  | `MODEL`       | O primeiro modelo a ser mesclado. Serve como modelo base sobre o qual patches do segundo modelo são aplicados. |
 | `model2`  | `MODEL`       | O segundo modelo do qual patches são extraídos e aplicados ao primeiro modelo, com base nas proporções de mesclagem especificadas. |
-| `input`   | `FLOAT`       | Especifica a proporção de mesclagem para a camada de entrada dos modelos. Determina quanto da camada de entrada do segundo modelo é mesclada ao primeiro modelo. |
-| `middle`  | `FLOAT`       | Define a proporção de mesclagem para as camadas intermediárias dos modelos. Este parâmetro controla o nível de integração das camadas intermediárias dos modelos. |
-| `out`     | `FLOAT`       | Determina a proporção de mesclagem para a camada de saída dos modelos. Afeta a saída final ao ajustar a contribuição da camada de saída do segundo modelo. |
+| `entrada`   | `FLOAT`       | Especifica a proporção de mesclagem para a camada de entrada dos modelos. Determina quanto da camada de entrada do segundo modelo é mesclada ao primeiro modelo. |
+| `meio`  | `FLOAT`       | Define a proporção de mesclagem para as camadas intermediárias dos modelos. Este parâmetro controla o nível de integração das camadas intermediárias dos modelos. |
+| `saída`     | `FLOAT`       | Determina a proporção de mesclagem para a camada de saída dos modelos. Afeta a saída final ao ajustar a contribuição da camada de saída do segundo modelo. |
 
 ## Saídas
 

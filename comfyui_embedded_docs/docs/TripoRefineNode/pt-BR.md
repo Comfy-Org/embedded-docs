@@ -6,7 +6,7 @@ O TripoRefineNode refina modelos 3D preliminares criados especificamente por mod
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | Sim | - | Deve ser um modelo Tripo v1.4 |
+| `id_da_tarefa_do_modelo` | MODEL_TASK_ID | Sim | - | Deve ser um modelo Tripo v1.4 |
 
 **Observação:** Este nó aceita apenas modelos preliminares criados por modelos Tripo v1.4. O uso de modelos de outras versões pode resultar em erros.
 

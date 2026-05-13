@@ -6,12 +6,12 @@ Este nó foi projetado para salvar uma sequência de imagens como um arquivo WEB
 
 | Campo             | Tipo de Dado | Descrição                                                                         |
 |-------------------|--------------|-----------------------------------------------------------------------------------|
-| `images`          | `IMAGE`      | Uma lista de imagens a serem salvas como quadros no WEBP animado. Este parâmetro é essencial para definir o conteúdo visual da animação. |
-| `filename_prefix` | `STRING`     | Especifica o nome base para o arquivo de saída, que será acrescido de um contador e da extensão '.webp'. Este parâmetro é crucial para identificar e organizar os arquivos salvos. |
+| `imagens`          | `IMAGE`      | Uma lista de imagens a serem salvas como quadros no WEBP animado. Este parâmetro é essencial para definir o conteúdo visual da animação. |
+| `prefixo_do_arquivo` | `STRING`     | Especifica o nome base para o arquivo de saída, que será acrescido de um contador e da extensão '.webp'. Este parâmetro é crucial para identificar e organizar os arquivos salvos. |
 | `fps`             | `FLOAT`      | A taxa de quadros por segundo da animação, influenciando a velocidade de reprodução. |
-| `lossless`        | `BOOLEAN`    | Um valor booleano que indica se deve ser usada compressão sem perdas, afetando o tamanho do arquivo e a qualidade da animação. |
-| `quality`         | `INT`        | Um valor entre 0 e 100 que define o nível de qualidade da compressão, onde valores mais altos resultam em melhor qualidade de imagem, mas arquivos maiores. |
-| `method`          | COMBO[STRING] | Especifica o método de compressão a ser utilizado, que pode impactar a velocidade de codificação e o tamanho do arquivo. |
+| `sem_perda`        | `BOOLEAN`    | Um valor booleano que indica se deve ser usada compressão sem perdas, afetando o tamanho do arquivo e a qualidade da animação. |
+| `qualidade`         | `INT`        | Um valor entre 0 e 100 que define o nível de qualidade da compressão, onde valores mais altos resultam em melhor qualidade de imagem, mas arquivos maiores. |
+| `método`          | COMBO[STRING] | Especifica o método de compressão a ser utilizado, que pode impactar a velocidade de codificação e o tamanho do arquivo. |
 
 ## Saídas
 

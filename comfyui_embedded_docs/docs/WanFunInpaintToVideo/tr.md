@@ -6,23 +6,23 @@ WanFunInpaintToVideo düğümü, başlangıç ve bitiş görüntüleri arasında
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Video oluşturma için pozitif koşullandırma yönlendirmeleri |
-| `negative` | CONDITIONING | Evet | - | Video oluşturmada kaçınılması gereken negatif koşullandırma yönlendirmeleri |
+| `pozitif` | CONDITIONING | Evet | - | Video oluşturma için pozitif koşullandırma yönlendirmeleri |
+| `negatif` | CONDITIONING | Evet | - | Video oluşturmada kaçınılması gereken negatif koşullandırma yönlendirmeleri |
 | `vae` | VAE | Evet | - | Kodlama/kod çözme işlemleri için VAE modeli |
-| `width` | INT | Evet | 16 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosu genişliği piksel cinsinden (varsayılan: 832, adım: 16) |
-| `height` | INT | Evet | 16 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosu yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) |
-| `length` | INT | Evet | 1 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
-| `batch_size` | INT | Evet | 1 ila 4096 | Bir grupta oluşturulacak video sayısı (varsayılan: 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Hayır | - | Ek koşullandırma için isteğe bağlı CLIP görüş çıktısı |
-| `start_image` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı başlangıç karesi görüntüsü |
-| `end_image` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı bitiş karesi görüntüsü |
+| `genişlik` | INT | Evet | 16 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosu genişliği piksel cinsinden (varsayılan: 832, adım: 16) |
+| `yükseklik` | INT | Evet | 16 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosu yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) |
+| `uzunluk` | INT | Evet | 1 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
+| `toplu_boyut` | INT | Evet | 1 ila 4096 | Bir grupta oluşturulacak video sayısı (varsayılan: 1) |
+| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Hayır | - | Ek koşullandırma için isteğe bağlı CLIP görüş çıktısı |
+| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı başlangıç karesi görüntüsü |
+| `bitiş_görüntüsü` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı bitiş karesi görüntüsü |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | İşlenmiş pozitif koşullandırma çıktısı |
-| `negative` | CONDITIONING | İşlenmiş negatif koşullandırma çıktısı |
+| `negatif` | CONDITIONING | İşlenmiş pozitif koşullandırma çıktısı |
+| `gizli` | CONDITIONING | İşlenmiş negatif koşullandırma çıktısı |
 | `latent` | LATENT | Oluşturulan video gizil (latent) temsili |
 
 ---

@@ -6,10 +6,10 @@ Este nodo añade ruido controlado a una imagen latente utilizando un generador d
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo que contiene los parámetros de muestreo y las funciones de procesamiento |
-| `noise` | NOISE | Sí | - | El generador de ruido que produce el patrón base de ruido |
+| `modelo` | MODEL | Sí | - | El modelo que contiene los parámetros de muestreo y las funciones de procesamiento |
+| `ruido` | NOISE | Sí | - | El generador de ruido que produce el patrón base de ruido |
 | `sigmas` | SIGMAS | Sí | - | Valores sigma que controlan la intensidad del escalado de ruido. Si está vacío, el nodo devuelve la imagen latente original sin cambios. Cuando se proporcionan múltiples sigma, la escala de ruido se calcula como la diferencia absoluta entre el primer y el último valor sigma. Cuando solo se proporciona un sigma, ese valor se utiliza directamente como escala. |
-| `latent_image` | LATENT | Sí | - | La representación latente de entrada a la que se le añadirá ruido. Las imágenes latentes vacías (que contienen solo ceros) no se desplazan durante el procesamiento. |
+| `imagen_latente` | LATENT | Sí | - | La representación latente de entrada a la que se le añadirá ruido. Las imágenes latentes vacías (que contienen solo ceros) no se desplazan durante el procesamiento. |
 
 ## Salidas
 

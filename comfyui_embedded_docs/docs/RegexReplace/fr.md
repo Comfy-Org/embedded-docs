@@ -8,13 +8,13 @@ Le nœud RegexReplace recherche et remplace du texte dans des chaînes de caract
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte d'entrée dans laquelle rechercher et remplacer |
-| `regex_pattern` | STRING | Oui | - | Le motif d'expression régulière à rechercher dans la chaîne d'entrée |
-| `replace` | STRING | Oui | - | Le texte de remplacement à substituer aux motifs correspondants |
-| `case_insensitive` | BOOLEAN | Non | - | Lorsqu'activé, rend la correspondance des motifs insensible à la casse (par défaut : True) |
-| `multiline` | BOOLEAN | Non | - | Lorsqu'activé, modifie le comportement de ^ et $ pour qu'ils correspondent au début/fin de chaque ligne plutôt qu'au début/fin de la chaîne entière (par défaut : False) |
+| `chaîne` | STRING | Oui | - | La chaîne de texte d'entrée dans laquelle rechercher et remplacer |
+| `motif_regex` | STRING | Oui | - | Le motif d'expression régulière à rechercher dans la chaîne d'entrée |
+| `remplacer` | STRING | Oui | - | Le texte de remplacement à substituer aux motifs correspondants |
+| `insensible à la casse` | BOOLEAN | Non | - | Lorsqu'activé, rend la correspondance des motifs insensible à la casse (par défaut : True) |
+| `multiligne` | BOOLEAN | Non | - | Lorsqu'activé, modifie le comportement de ^ et $ pour qu'ils correspondent au début/fin de chaque ligne plutôt qu'au début/fin de la chaîne entière (par défaut : False) |
 | `dotall` | BOOLEAN | Non | - | Lorsqu'activé, le point (.) correspond à n'importe quel caractère, y compris les sauts de ligne. Lorsque désactivé, les points ne correspondent pas aux sauts de ligne (par défaut : False) |
-| `count` | INT | Non | 0-100 | Nombre maximal de remplacements à effectuer. Mettre à 0 pour remplacer toutes les occurrences (par défaut). Mettre à 1 pour remplacer uniquement la première correspondance, 2 pour les deux premières, etc. (par défaut : 0) |
+| `nombre` | INT | Non | 0-100 | Nombre maximal de remplacements à effectuer. Mettre à 0 pour remplacer toutes les occurrences (par défaut). Mettre à 1 pour remplacer uniquement la première correspondance, 2 pour les deux premières, etc. (par défaut : 0) |
 
 ## Sorties
 

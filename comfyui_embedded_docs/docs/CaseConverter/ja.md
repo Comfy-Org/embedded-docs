@@ -8,8 +8,8 @@ Case Converterノードは、テキスト文字列を異なる文字ケース形
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | はい | - | 異なるケース形式に変換するテキスト文字列 |
-| `mode` | STRING | はい | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | 適用するケース変換モード（デフォルト: `"UPPERCASE"`） |
+| `文字列` | STRING | はい | - | 異なるケース形式に変換するテキスト文字列 |
+| `モード` | STRING | はい | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | 適用するケース変換モード（デフォルト: `"UPPERCASE"`） |
 
 ## 出力
 

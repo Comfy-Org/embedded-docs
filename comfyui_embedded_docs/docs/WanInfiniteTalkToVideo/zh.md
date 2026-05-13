@@ -6,22 +6,22 @@ WanInfiniteTalkToVideo 节点可根据音频输入生成视频序列。它使用
 
 | 参数 | 数据类型 | 是否必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `mode` | COMBO | 是 | `"single_speaker"`<br>`"two_speakers"` | 音频输入模式。`"single_speaker"` 使用一个音频输入。`"two_speakers"` 启用第二个说话者的输入及对应的遮罩。 |
-| `model` | MODEL | 是 | - | 基础视频扩散模型。 |
-| `model_patch` | MODELPATCH | 是 | - | 包含音频投影层的模型补丁。 |
-| `positive` | CONDITIONING | 是 | - | 用于引导生成的正向条件。 |
-| `negative` | CONDITIONING | 是 | - | 用于引导生成的负向条件。 |
+| `模式` | COMBO | 是 | `"single_speaker"`<br>`"two_speakers"` | 音频输入模式。`"single_speaker"` 使用一个音频输入。`"two_speakers"` 启用第二个说话者的输入及对应的遮罩。 |
+| `模型` | MODEL | 是 | - | 基础视频扩散模型。 |
+| `模型补丁` | MODELPATCH | 是 | - | 包含音频投影层的模型补丁。 |
+| `正向提示` | CONDITIONING | 是 | - | 用于引导生成的正向条件。 |
+| `负向提示` | CONDITIONING | 是 | - | 用于引导生成的负向条件。 |
 | `vae` | VAE | 是 | - | 用于将图像编码到潜在空间及从潜在空间解码的 VAE。 |
-| `width` | INT | 否 | 16 - MAX_RESOLUTION | 输出视频的宽度（像素）。必须能被 16 整除。（默认值：832） |
-| `height` | INT | 否 | 16 - MAX_RESOLUTION | 输出视频的高度（像素）。必须能被 16 整除。（默认值：480） |
-| `length` | INT | 否 | 1 - MAX_RESOLUTION | 要生成的帧数。（默认值：81） |
-| `clip_vision_output` | CLIPVISIONOUTPUT | 否 | - | 可选的 CLIP 视觉输出，用于额外的条件控制。 |
-| `start_image` | IMAGE | 否 | - | 可选的起始图像，用于初始化视频序列。 |
-| `audio_encoder_output_1` | AUDIOENCODEROUTPUT | 是 | - | 包含第一个说话者特征的主音频编码器输出。 |
-| `motion_frame_count` | INT | 否 | 1 - 33 | 扩展序列时用作运动上下文的先前帧数。（默认值：9） |
-| `audio_scale` | FLOAT | 否 | -10.0 - 10.0 | 应用于音频条件的缩放因子。（默认值：1.0） |
-| `previous_frames` | IMAGE | 否 | - | 可选的先前视频帧，用于从中扩展。 |
-| `audio_encoder_output_2` | AUDIOENCODEROUTPUT | 否 | - | 第二个音频编码器输出。当 `mode` 设置为 `"two_speakers"` 时必需。 |
+| `宽度` | INT | 否 | 16 - MAX_RESOLUTION | 输出视频的宽度（像素）。必须能被 16 整除。（默认值：832） |
+| `高度` | INT | 否 | 16 - MAX_RESOLUTION | 输出视频的高度（像素）。必须能被 16 整除。（默认值：480） |
+| `长度` | INT | 否 | 1 - MAX_RESOLUTION | 要生成的帧数。（默认值：81） |
+| `clip视觉输出` | CLIPVISIONOUTPUT | 否 | - | 可选的 CLIP 视觉输出，用于额外的条件控制。 |
+| `起始图像` | IMAGE | 否 | - | 可选的起始图像，用于初始化视频序列。 |
+| `音频编码器输出1` | AUDIOENCODEROUTPUT | 是 | - | 包含第一个说话者特征的主音频编码器输出。 |
+| `运动帧数` | INT | 否 | 1 - 33 | 扩展序列时用作运动上下文的先前帧数。（默认值：9） |
+| `音频缩放` | FLOAT | 否 | -10.0 - 10.0 | 应用于音频条件的缩放因子。（默认值：1.0） |
+| `前置帧` | IMAGE | 否 | - | 可选的先前视频帧，用于从中扩展。 |
+| `audio_encoder_output_2` | AUDIOENCODEROUTPUT | 否 | - | 第二个音频编码器输出。当 `模式` 设置为 `"two_speakers"` 时必需。 |
 | `mask_1` | MASK | 否 | - | 第一个说话者的遮罩，如果使用两个音频输入则必需。 |
 | `mask_2` | MASK | 否 | - | 第二个说话者的遮罩，如果使用两个音频输入则必需。 |
 
@@ -36,10 +36,10 @@ WanInfiniteTalkToVideo 节点可根据音频输入生成视频序列。它使用
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已应用音频条件的修补模型。 |
-| `positive` | CONDITIONING | 正向条件，可能已通过额外上下文（例如起始图像、CLIP 视觉）进行修改。 |
-| `negative` | CONDITIONING | 负向条件，可能已通过额外上下文进行修改。 |
-| `latent` | LATENT | 潜在空间中生成的视频序列。 |
+| `正向提示` | MODEL | 已应用音频条件的修补模型。 |
+| `负向提示` | CONDITIONING | 正向条件，可能已通过额外上下文（例如起始图像、CLIP 视觉）进行修改。 |
+| `latent` | CONDITIONING | 负向条件，可能已通过额外上下文进行修改。 |
+| `裁剪图像` | LATENT | 潜在空间中生成的视频序列。 |
 | `trim_image` | INT | 扩展序列时，应从运动上下文起始处裁剪的帧数。 |
 
 ---

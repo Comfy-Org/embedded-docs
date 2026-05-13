@@ -8,10 +8,10 @@ Bu düğüm, ByteDance'in Seedream modellerini (sürüm 4.0, 4.5 ve 5.0 Lite) ku
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | Görsel oluşturma veya düzenleme için metin istemi. |
+| `istem` | STRING | Evet | Yok | Görsel oluşturma veya düzenleme için metin istemi. |
 | `model` | COMBO | Evet | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | Oluşturma için kullanılacak Seedream model sürümü. Her modelin farklı yetenekleri ve fiyatlandırması vardır. |
-| `seed` | INT | Hayır | 0 - 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
-| `watermark` | BOOLEAN | Hayır | True / False | Görsele "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
+| `tohum` | INT | Hayır | 0 - 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
+| `filigran` | BOOLEAN | Hayır | True / False | Görsele "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
 
 ### Modele Özgü Parametreler
 

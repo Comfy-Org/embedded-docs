@@ -10,9 +10,9 @@ ByteDance Seedance 2.0 参照動画ノードは、Seedance 2.0 AIモデルを使
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | はい | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 使用するAIモデル。Seedance 2.0は最高品質を目指す場合、Seedance 2.0 Fastは速度を最適化したモデルです。モデルを選択すると、`prompt`、`resolution`、`duration`、`ratio`、`generate_audio`の追加必須入力と、`reference_images`、`reference_videos`、`reference_audios`、`reference_assets`、`auto_downscale`のオプション入力が表示されます。 |
-| `seed` | INT | いいえ | 0 ～ 2147483647 | ノードを再実行するかどうかを制御するために使用される数値。シード値に関係なく、結果は非決定的です（デフォルト：0）。 |
-| `watermark` | BOOLEAN | いいえ | `True` / `False` | 生成された動画に透かしを追加するかどうか（デフォルト：False）。 |
+| `モデル` | COMBO | はい | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 使用するAIモデル。Seedance 2.0は最高品質を目指す場合、Seedance 2.0 Fastは速度を最適化したモデルです。モデルを選択すると、`prompt`、`resolution`、`duration`、`ratio`、`generate_audio`の追加必須入力と、`reference_images`、`reference_videos`、`reference_audios`、`reference_assets`、`auto_downscale`のオプション入力が表示されます。 |
+| `シード` | INT | いいえ | 0 ～ 2147483647 | ノードを再実行するかどうかを制御するために使用される数値。シード値に関係なく、結果は非決定的です（デフォルト：0）。 |
+| `ウォーターマーク` | BOOLEAN | いいえ | `True` / `False` | 生成された動画に透かしを追加するかどうか（デフォルト：False）。 |
 
 **重要な制約事項：**
 *   ノードを動作させるには、少なくとも1つの参照画像または参照動画（`reference_images`、`reference_videos`、または`reference_assets`入力で提供）が必要です。

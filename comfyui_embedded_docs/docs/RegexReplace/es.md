@@ -6,13 +6,13 @@ El nodo RegexReplace busca y reemplaza texto en cadenas utilizando patrones de e
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto de entrada en la que buscar y reemplazar |
-| `regex_pattern` | STRING | Sí | - | El patrón de expresión regular para buscar en la cadena de entrada |
-| `replace` | STRING | Sí | - | El texto de reemplazo para sustituir los patrones coincidentes |
-| `case_insensitive` | BOOLEAN | No | - | Cuando está habilitado, hace que la coincidencia de patrones ignore diferencias de mayúsculas/minúsculas (predeterminado: Verdadero) |
-| `multiline` | BOOLEAN | No | - | Cuando está habilitado, cambia el comportamiento de ^ y $ para que coincidan al inicio/final de cada línea en lugar de solo al inicio/final de toda la cadena (predeterminado: Falso) |
+| `cadena` | STRING | Sí | - | La cadena de texto de entrada en la que buscar y reemplazar |
+| `patron_regex` | STRING | Sí | - | El patrón de expresión regular para buscar en la cadena de entrada |
+| `reemplazar` | STRING | Sí | - | El texto de reemplazo para sustituir los patrones coincidentes |
+| `insensible_a_mayusculas` | BOOLEAN | No | - | Cuando está habilitado, hace que la coincidencia de patrones ignore diferencias de mayúsculas/minúsculas (predeterminado: Verdadero) |
+| `multilínea` | BOOLEAN | No | - | Cuando está habilitado, cambia el comportamiento de ^ y $ para que coincidan al inicio/final de cada línea en lugar de solo al inicio/final de toda la cadena (predeterminado: Falso) |
 | `dotall` | BOOLEAN | No | - | Cuando está habilitado, el carácter punto (.) coincidirá con cualquier carácter, incluidos los caracteres de nueva línea. Cuando está deshabilitado, los puntos no coincidirán con nuevas líneas (predeterminado: Falso) |
-| `count` | INT | No | 0-100 | Número máximo de reemplazos a realizar. Establecer en 0 para reemplazar todas las ocurrencias (predeterminado). Establecer en 1 para reemplazar solo la primera coincidencia, 2 para las dos primeras coincidencias, etc. (predeterminado: 0) |
+| `contador` | INT | No | 0-100 | Número máximo de reemplazos a realizar. Establecer en 0 para reemplazar todas las ocurrencias (predeterminado). Establecer en 1 para reemplazar solo la primera coincidencia, 2 para las dos primeras coincidencias, etc. (predeterminado: 0) |
 
 ## Salidas
 

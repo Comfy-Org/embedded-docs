@@ -6,8 +6,8 @@ Ce nœud fusionne deux modèles d'IA en utilisant une approche par blocs avec un
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model1` | MODEL | Oui | - | Premier modèle à fusionner |
-| `model2` | MODEL | Oui | - | Second modèle à fusionner |
+| `modèle1` | MODEL | Oui | - | Premier modèle à fusionner |
+| `modèle2` | MODEL | Oui | - | Second modèle à fusionner |
 | `pos_frequencies.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation des fréquences positionnelles (par défaut : 1.0) |
 | `t_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de l'incorporateur temporel (par défaut : 1.0) |
 | `t5_y_embedder.` | FLOAT | Oui | 0.0 - 1.0 | Poids pour l'interpolation de l'incorporateur T5-Y (par défaut : 1.0) |

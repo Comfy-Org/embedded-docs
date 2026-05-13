@@ -6,10 +6,10 @@ Bu düğüm, HunyuanVideo 1.5 modeliyle kullanılmak üzere özel olarak biçiml
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `width` | INT | Evet | - | Video karesinin piksel cinsinden genişliği. |
-| `height` | INT | Evet | - | Video karesinin piksel cinsinden yüksekliği. |
-| `length` | INT | Evet | - | Video dizisindeki kare sayısı. |
-| `batch_size` | INT | Hayır | - | Bir grupta oluşturulacak video örneklerinin sayısı (varsayılan: 1). |
+| `genişlik` | INT | Evet | - | Video karesinin piksel cinsinden genişliği. |
+| `yükseklik` | INT | Evet | - | Video karesinin piksel cinsinden yüksekliği. |
+| `uzunluk` | INT | Evet | - | Video dizisindeki kare sayısı. |
+| `toplu_boyut` | INT | Hayır | - | Bir grupta oluşturulacak video örneklerinin sayısı (varsayılan: 1). |
 
 **Not:** Oluşturulan gizli tensörün uzamsal boyutları, giriş `width` ve `height` değerlerinin 16'ya bölünmesiyle hesaplanır. Zamansal boyut (kareler) ise `((length - 1) // 4) + 1` formülüyle hesaplanır.
 

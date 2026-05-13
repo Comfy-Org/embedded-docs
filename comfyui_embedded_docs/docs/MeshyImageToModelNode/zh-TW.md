@@ -33,9 +33,9 @@ Meshy：圖片轉模型節點使用 Meshy API 從單一輸入圖片生成 3D 模
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成的 GLB 模型檔案名稱。（為保持向後相容性而保留）。 |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy API 任務的唯一識別碼，可用於參考或故障排除。 |
-| `GLB` | FILE3DGLB | 以 GLB 檔案格式生成的 3D 模型。 |
+| `meshy 任務 ID` | STRING | 生成的 GLB 模型檔案名稱。（為保持向後相容性而保留）。 |
+| `GLB` | MESHY_TASK_ID | Meshy API 任務的唯一識別碼，可用於參考或故障排除。 |
+| `FBX` | FILE3DGLB | 以 GLB 檔案格式生成的 3D 模型。 |
 | `FBX` | FILE3DFBX | 以 FBX 檔案格式生成的 3D 模型。 |
 
 ---

@@ -6,12 +6,12 @@ O nó `ImageFromBatch` foi projetado para extrair um segmento específico de ima
 
 | Campo           | Tipo de Dado | Descrição                                                                                   |
 |-----------------|--------------|---------------------------------------------------------------------------------------------|
-| `image`         | `IMAGE`      | O lote de imagens do qual um segmento será extraído. Este parâmetro é essencial para especificar o lote de origem. |
-| `batch_index`   | `INT`        | O índice inicial dentro do lote a partir do qual a extração começa. Ele determina a posição inicial do segmento a ser extraído do lote. |
-| `length`        | `INT`        | O número de imagens a serem extraídas do lote a partir do `batch_index`. Este parâmetro define o tamanho do segmento a ser extraído. |
+| `imagem`         | `IMAGE`      | O lote de imagens do qual um segmento será extraído. Este parâmetro é essencial para especificar o lote de origem. |
+| `índice_do_lote`   | `INT`        | O índice inicial dentro do lote a partir do qual a extração começa. Ele determina a posição inicial do segmento a ser extraído do lote. |
+| `comprimento`        | `INT`        | O número de imagens a serem extraídas do lote a partir do `índice_do_lote`. Este parâmetro define o tamanho do segmento a ser extraído. |
 
 ## Saídas
 
 | Campo   | Tipo de Dado | Descrição                                                                                                   |
 |---------|--------------|-------------------------------------------------------------------------------------------------------------|
-| `image` | `IMAGE`      | O segmento extraído de imagens do lote especificado. Esta saída representa um subconjunto do lote original, determinado pelos parâmetros `batch_index` e `length`. |
+| `imagem` | `IMAGE`      | O segmento extraído de imagens do lote especificado. Esta saída representa um subconjunto do lote original, determinado pelos parâmetros `índice_do_lote` e `comprimento`. |

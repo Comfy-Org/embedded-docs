@@ -6,7 +6,7 @@ O nó LaplaceScheduler gera uma sequência de valores sigma seguindo uma distrib
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `steps` | INT | Sim | 1 a 10000 | Número de etapas de amostragem no cronograma (padrão: 20) |
+| `passos` | INT | Sim | 1 a 10000 | Número de etapas de amostragem no cronograma (padrão: 20) |
 | `sigma_max` | FLOAT | Sim | 0.0 a 5000.0 | Valor sigma máximo no início do cronograma (padrão: 14.614642) |
 | `sigma_min` | FLOAT | Sim | 0.0 a 5000.0 | Valor sigma mínimo no final do cronograma (padrão: 0.0291675) |
 | `mu` | FLOAT | Sim | -10.0 a 10.0 | Parâmetro de média para a distribuição de Laplace (padrão: 0.0) |

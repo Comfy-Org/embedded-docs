@@ -6,8 +6,8 @@ ConditioningConcat 노드는 컨디셔닝 벡터를 연결(concatenate)하도록
 
 | 매개변수               | Comfy 데이터 타입 | 설명 |
 |-----------------------|--------------------|-------------|
-| `conditioning_to`     | `CONDITIONING`     | 'conditioning_from' 벡터가 연결될 기본 컨디셔닝 벡터 세트를 나타냅니다. 연결 프로세스의 기준이 됩니다. |
-| `conditioning_from`   | `CONDITIONING`     | 'conditioning_to' 벡터에 연결될 컨디셔닝 벡터로 구성됩니다. 이 매개변수를 통해 기존 세트에 추가 컨디셔닝 정보를 통합할 수 있습니다. |
+| `대상 조건`     | `CONDITIONING`     | 'conditioning_from' 벡터가 연결될 기본 컨디셔닝 벡터 세트를 나타냅니다. 연결 프로세스의 기준이 됩니다. |
+| `추가 조건`   | `CONDITIONING`     | 'conditioning_to' 벡터에 연결될 컨디셔닝 벡터로 구성됩니다. 이 매개변수를 통해 기존 세트에 추가 컨디셔닝 정보를 통합할 수 있습니다. |
 
 ## 출력
 

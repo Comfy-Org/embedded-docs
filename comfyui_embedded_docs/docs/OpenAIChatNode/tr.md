@@ -6,12 +6,12 @@ Bu düğüm, bir OpenAI modelinden metin yanıtları oluşturur. Metin isteminiz
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Yanıt oluşturmak için modele gönderilen metin girdileri (varsayılan: boş) |
-| `persist_context` | BOOLEAN | Evet | - | Bu parametre kullanımdan kaldırılmıştır ve herhangi bir etkisi yoktur (varsayılan: False) |
+| `komut` | STRING | Evet | - | Yanıt oluşturmak için modele gönderilen metin girdileri (varsayılan: boş) |
+| `bağlamı_sürdür` | BOOLEAN | Evet | - | Bu parametre kullanımdan kaldırılmıştır ve herhangi bir etkisi yoktur (varsayılan: False) |
 | `model` | COMBO | Evet | Birden çok OpenAI modeli mevcut | Yanıtı oluşturmak için kullanılan model |
-| `images` | IMAGE | Hayır | - | Model için bağlam olarak kullanılacak isteğe bağlı görsel(ler). Birden çok görsel eklemek için Toplu Görseller düğümünü kullanabilirsiniz |
-| `files` | OPENAI_INPUT_FILES | Hayır | - | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). OpenAI Sohbet Giriş Dosyaları düğümünden girdi kabul eder |
-| `advanced_options` | OPENAI_CHAT_CONFIG | Hayır | - | Model için isteğe bağlı yapılandırma. OpenAI Sohbet Gelişmiş Seçenekler düğümünden girdi kabul eder |
+| `görseller` | IMAGE | Hayır | - | Model için bağlam olarak kullanılacak isteğe bağlı görsel(ler). Birden çok görsel eklemek için Toplu Görseller düğümünü kullanabilirsiniz |
+| `dosyalar` | OPENAI_INPUT_FILES | Hayır | - | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). OpenAI Sohbet Giriş Dosyaları düğümünden girdi kabul eder |
+| `gelişmiş_seçenekler` | OPENAI_CHAT_CONFIG | Hayır | - | Model için isteğe bağlı yapılandırma. OpenAI Sohbet Gelişmiş Seçenekler düğümünden girdi kabul eder |
 
 ## Çıkışlar
 

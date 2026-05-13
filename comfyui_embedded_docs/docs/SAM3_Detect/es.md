@@ -10,15 +10,15 @@ El nodo SAM3 Detect realiza detección y segmentación de vocabulario abierto ut
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo SAM3 a utilizar para detección y segmentación |
-| `image` | IMAGE | Sí | - | La imagen de entrada a procesar |
-| `conditioning` | CONDITIONING | No | - | Condicionamiento de texto desde CLIPTextEncode. Requerido cuando se usan indicaciones de texto para detección |
-| `bboxes` | BOUNDING_BOX | No | - | Cuadros delimitadores para segmentar dentro de ellos. Puede ser un solo cuadro (aplicado a todos los fotogramas), una lista de cuadros (aplicada a todos los fotogramas) o una lista de listas (cuadros por fotograma). Cuando se proporciona sin condicionamiento de texto, el nodo segmenta dentro de cada cuadro |
-| `positive_coords` | STRING | No | - | Indicaciones de puntos positivos en formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de píxeles. Son puntos que deseas incluir en la segmentación |
-| `negative_coords` | STRING | No | - | Indicaciones de puntos negativos en formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de píxeles. Son puntos que deseas excluir de la segmentación |
-| `threshold` | FLOAT | No | 0.0 a 1.0 | Umbral de confianza para detecciones basadas en texto. Solo se conservan las detecciones con puntuaciones superiores a este valor (predeterminado: 0.5) |
-| `refine_iterations` | INT | No | 0 a 5 | Número de pasos de refinamiento del decodificador SAM. Valores más altos pueden mejorar la calidad de las máscaras. Establecer en 0 para usar máscaras del detector sin refinamiento (predeterminado: 2) |
-| `individual_masks` | BOOLEAN | No | True/False | Cuando está habilitado, genera máscaras separadas para cada objeto detectado en lugar de combinarlas en una sola máscara (predeterminado: False) |
+| `modelo` | MODEL | Sí | - | El modelo SAM3 a utilizar para detección y segmentación |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada a procesar |
+| `condicionamiento` | CONDITIONING | No | - | Condicionamiento de texto desde CLIPTextEncode. Requerido cuando se usan indicaciones de texto para detección |
+| `cajas_delimitadoras` | BOUNDING_BOX | No | - | Cuadros delimitadores para segmentar dentro de ellos. Puede ser un solo cuadro (aplicado a todos los fotogramas), una lista de cuadros (aplicada a todos los fotogramas) o una lista de listas (cuadros por fotograma). Cuando se proporciona sin condicionamiento de texto, el nodo segmenta dentro de cada cuadro |
+| `coordenadas_positivas` | STRING | No | - | Indicaciones de puntos positivos en formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de píxeles. Son puntos que deseas incluir en la segmentación |
+| `coordenadas_negativas` | STRING | No | - | Indicaciones de puntos negativos en formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de píxeles. Son puntos que deseas excluir de la segmentación |
+| `umbral` | FLOAT | No | 0.0 a 1.0 | Umbral de confianza para detecciones basadas en texto. Solo se conservan las detecciones con puntuaciones superiores a este valor (predeterminado: 0.5) |
+| `iteraciones_de_refinamiento` | INT | No | 0 a 5 | Número de pasos de refinamiento del decodificador SAM. Valores más altos pueden mejorar la calidad de las máscaras. Establecer en 0 para usar máscaras del detector sin refinamiento (predeterminado: 2) |
+| `máscaras_individuales` | BOOLEAN | No | True/False | Cuando está habilitado, genera máscaras separadas para cada objeto detectado en lugar de combinarlas en una sola máscara (predeterminado: False) |
 
 ### Restricciones y Notas de Parámetros
 
@@ -33,8 +33,8 @@ El nodo SAM3 Detect realiza detección y segmentación de vocabulario abierto ut
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `masks` | MASK | Máscaras de segmentación. Cuando `individual_masks` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado |
-| `bboxes` | BOUNDING_BOX | Cuadros delimitadores detectados con coordenadas y puntuaciones de confianza. Cada cuadro incluye valores de `x`, `y`, `width`, `height` y `score` |
+| `cajas_delimitadoras` | MASK | Máscaras de segmentación. Cuando `máscaras_individuales` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado |
+| `cajas_delimitadoras` | BOUNDING_BOX | Cuadros delimitadores detectados con coordenadas y puntuaciones de confianza. Cada cuadro incluye valores de `x`, `y`, `width`, `height` y `score` |
 
 ---
 **Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

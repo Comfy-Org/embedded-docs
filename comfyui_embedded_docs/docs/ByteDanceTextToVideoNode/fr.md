@@ -15,8 +15,8 @@ Le nœud ByteDance Text to Video génère des vidéos en utilisant les modèles 
 | `duration` | INT | Oui | 3 à 12 | La durée de la vidéo de sortie en secondes (par défaut : 5). |
 | `seed` | INT | Non | 0 à 2147483647 | La graine à utiliser pour la génération (par défaut : 0). |
 | `camera_fixed` | BOOLEAN | Non | - | Spécifie si la caméra doit être fixe. La plateforme ajoute une instruction pour fixer la caméra à votre invite, mais ne garantit pas l'effet réel (par défaut : False). |
-| `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane "Généré par IA" à la vidéo (par défaut : False). |
-| `generate_audio` | BOOLEAN | Non | - | Ce paramètre est ignoré pour tous les modèles sauf `seedance-1-5-pro-251215` (par défaut : False). |
+| `filigrane` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane "Généré par IA" à la vidéo (par défaut : False). |
+| `générer_audio` | BOOLEAN | Non | - | Ce paramètre est ignoré pour tous les modèles sauf `seedance-1-5-pro-251215` (par défaut : False). |
 
 **Contraintes des paramètres :**
 

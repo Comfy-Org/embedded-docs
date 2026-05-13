@@ -6,13 +6,13 @@ El nodo de Generación de Video a partir de Imagen Vidu2 crea una secuencia de v
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | El modelo Vidu2 a utilizar para la generación de video. Diferentes modelos ofrecen distintas compensaciones entre velocidad y calidad. |
-| `image` | IMAGE | Sí | - | Una imagen que se usará como fotograma inicial del video generado. Solo se permite una imagen. |
+| `modelo` | COMBO | Sí | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | El modelo Vidu2 a utilizar para la generación de video. Diferentes modelos ofrecen distintas compensaciones entre velocidad y calidad. |
+| `imagen` | IMAGE | Sí | - | Una imagen que se usará como fotograma inicial del video generado. Solo se permite una imagen. |
 | `prompt` | STRING | No | - | Un mensaje de texto opcional para la generación del video (máximo 2000 caracteres). El valor predeterminado es una cadena vacía. |
-| `duration` | INT | Sí | 1 a 10 | La duración del video generado en segundos. El valor predeterminado es 5. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla para la generación de números aleatorios, con el fin de garantizar resultados reproducibles. El valor predeterminado es 1. |
-| `resolution` | COMBO | Sí | `"720p"`<br>`"1080p"` | La resolución de salida del video generado. Este parámetro es avanzado. |
-| `movement_amplitude` | COMBO | Sí | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma. Este parámetro es avanzado. |
+| `duración` | INT | Sí | 1 a 10 | La duración del video generado en segundos. El valor predeterminado es 5. |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla para la generación de números aleatorios, con el fin de garantizar resultados reproducibles. El valor predeterminado es 1. |
+| `resolución` | COMBO | Sí | `"720p"`<br>`"1080p"` | La resolución de salida del video generado. Este parámetro es avanzado. |
+| `amplitud_de_movimiento` | COMBO | Sí | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma. Este parámetro es avanzado. |
 
 **Restricciones:**
 

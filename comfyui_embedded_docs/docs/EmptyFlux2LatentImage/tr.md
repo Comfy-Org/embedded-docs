@@ -6,9 +6,9 @@ EmptyFlux2LatentImage düğümü, boş bir latent temsil oluşturur. Sıfırlarl
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `width` | INT | Evet | 16 ila 8192 | Oluşturulacak nihai görüntünün genişliği. Latent genişliği, bu değerin 16'ya bölünmesiyle elde edilir. Varsayılan değer 1024'tür. |
-| `height` | INT | Evet | 16 ila 8192 | Oluşturulacak nihai görüntünün yüksekliği. Latent yüksekliği, bu değerin 16'ya bölünmesiyle elde edilir. Varsayılan değer 1024'tür. |
-| `batch_size` | INT | Hayır | 1 ila 4096 | Tek bir grupta oluşturulacak latent örneklerinin sayısı. Varsayılan değer 1'dir. |
+| `genişlik` | INT | Evet | 16 ila 8192 | Oluşturulacak nihai görüntünün genişliği. Latent genişliği, bu değerin 16'ya bölünmesiyle elde edilir. Varsayılan değer 1024'tür. |
+| `yükseklik` | INT | Evet | 16 ila 8192 | Oluşturulacak nihai görüntünün yüksekliği. Latent yüksekliği, bu değerin 16'ya bölünmesiyle elde edilir. Varsayılan değer 1024'tür. |
+| `toplu_boyut` | INT | Hayır | 1 ila 4096 | Tek bir grupta oluşturulacak latent örneklerinin sayısı. Varsayılan değer 1'dir. |
 
 **Not:** `width` ve `height` girişleri 16'ya tam bölünebilir olmalıdır, çünkü düğüm latent boyutları oluşturmak için bu değerleri dahili olarak 16'ya böler.
 

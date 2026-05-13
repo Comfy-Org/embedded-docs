@@ -6,9 +6,9 @@ El nodo Flux2Scheduler genera una secuencia de niveles de ruido (sigmas) para el
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `steps` | INT | Sí | 1 a 4096 | El número de pasos de eliminación de ruido a realizar. Un valor más alto generalmente produce resultados más detallados, pero requiere más tiempo de procesamiento (predeterminado: 20). |
-| `width` | INT | Sí | 16 a 16384 | El ancho de la imagen a generar, en píxeles. Este valor influye en el cálculo del cronograma de ruido (predeterminado: 1024). |
-| `height` | INT | Sí | 16 a 16384 | La altura de la imagen a generar, en píxeles. Este valor influye en el cálculo del cronograma de ruido (predeterminado: 1024). |
+| `pasos` | INT | Sí | 1 a 4096 | El número de pasos de eliminación de ruido a realizar. Un valor más alto generalmente produce resultados más detallados, pero requiere más tiempo de procesamiento (predeterminado: 20). |
+| `ancho` | INT | Sí | 16 a 16384 | El ancho de la imagen a generar, en píxeles. Este valor influye en el cálculo del cronograma de ruido (predeterminado: 1024). |
+| `alto` | INT | Sí | 16 a 16384 | La altura de la imagen a generar, en píxeles. Este valor influye en el cálculo del cronograma de ruido (predeterminado: 1024). |
 
 ## Salidas
 

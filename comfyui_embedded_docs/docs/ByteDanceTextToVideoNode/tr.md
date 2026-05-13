@@ -8,13 +8,13 @@ ByteDance Metinden Videoya düğümü, metin istemlerine dayalı olarak bir API 
 |-----------|-----------|----------|-------|-------------|
 | `model` | STRING | Evet | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-t2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` | Oluşturma için kullanılacak ByteDance modeli (varsayılan: `"seedance-1-0-pro-fast-251015"`). |
 | `prompt` | STRING | Evet | - | Videoyu oluşturmak için kullanılan metin istemi. |
-| `resolution` | STRING | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
-| `aspect_ratio` | STRING | Evet | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en-boy oranı. |
-| `duration` | INT | Evet | 3 ila 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
-| `camera_fixed` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler ancak gerçek etkiyi garanti etmez (varsayılan: False). |
-| `watermark` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
-| `generate_audio` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
+| `çözünürlük` | STRING | Evet | `"480p"`<br>`"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
+| `en_boy_oranı` | STRING | Evet | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | Çıktı videosunun en-boy oranı. |
+| `süre` | INT | Evet | 3 ila 12 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
+| `sabit_kamera` | BOOLEAN | Hayır | - | Kameranın sabitlenip sabitlenmeyeceğini belirtir. Platform, isteminize kamerayı sabitlemek için bir talimat ekler ancak gerçek etkiyi garanti etmez (varsayılan: False). |
+| `filigran` | BOOLEAN | Hayır | - | Videoya "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
+| `ses_oluştur` | BOOLEAN | Hayır | - | Bu parametre, `seedance-1-5-pro-251215` dışındaki tüm modeller için yok sayılır (varsayılan: False). |
 
 **Parametre Kısıtlamaları:**
 

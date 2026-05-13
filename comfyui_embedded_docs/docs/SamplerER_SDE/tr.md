@@ -6,10 +6,10 @@ SamplerER_SDE düğümü, difüzyon modelleri için ER-SDE, Ters-zamanlı SDE ve
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `solver_type` | COMBO | Evet | "ER-SDE"<br>"Ters-zamanlı SDE"<br>"ODE" | Örnekleme için kullanılacak çözücü türü. Difüzyon süreci için matematiksel yaklaşımı belirler. |
-| `max_stage` | INT | Hayır | 1-3 | Örnekleme süreci için maksimum aşama sayısı (varsayılan: 3). Hesaplama karmaşıklığını ve kalitesini kontrol eder. |
+| `çözücü_tipi` | COMBO | Evet | "ER-SDE"<br>"Ters-zamanlı SDE"<br>"ODE" | Örnekleme için kullanılacak çözücü türü. Difüzyon süreci için matematiksel yaklaşımı belirler. |
+| `maksimum_aşama` | INT | Hayır | 1-3 | Örnekleme süreci için maksimum aşama sayısı (varsayılan: 3). Hesaplama karmaşıklığını ve kalitesini kontrol eder. |
 | `eta` | FLOAT | Hayır | 0.0-100.0 | Ters-zamanlı SDE'nin stokastik gücü (varsayılan: 1.0). eta=0 olduğunda deterministik ODE'ye indirgenir. Bu ayar ER-SDE çözücü türü için geçerli değildir. |
-| `s_noise` | FLOAT | Hayır | 0.0-100.0 | Örnekleme süreci için gürültü ölçekleme faktörü (varsayılan: 1.0). Örnekleme sırasında uygulanan gürültü miktarını kontrol eder. |
+| `s_gürültü` | FLOAT | Hayır | 0.0-100.0 | Örnekleme süreci için gürültü ölçekleme faktörü (varsayılan: 1.0). Örnekleme sırasında uygulanan gürültü miktarını kontrol eder. |
 
 **Parametre Kısıtlamaları:**
 

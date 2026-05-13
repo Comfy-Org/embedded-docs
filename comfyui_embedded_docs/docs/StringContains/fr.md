@@ -6,9 +6,9 @@ Le nœud StringContains vérifie si une chaîne de caractères donnée contient 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte principale dans laquelle effectuer la recherche |
-| `substring` | STRING | Oui | - | Le texte à rechercher dans la chaîne principale |
-| `case_sensitive` | BOOLEAN | Non | - | Détermine si la recherche doit être sensible à la casse (par défaut : true) |
+| `chaîne` | STRING | Oui | - | La chaîne de texte principale dans laquelle effectuer la recherche |
+| `sous-chaîne` | STRING | Oui | - | Le texte à rechercher dans la chaîne principale |
+| `sensible_à_la_casse` | BOOLEAN | Non | - | Détermine si la recherche doit être sensible à la casse (par défaut : true) |
 
 ## Sorties
 

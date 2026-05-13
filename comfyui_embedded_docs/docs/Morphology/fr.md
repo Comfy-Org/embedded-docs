@@ -7,8 +7,8 @@ Le nœud Morphology applique diverses opérations morphologiques aux images, qui
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à traiter |
-| `operation` | STRING | Oui | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | L'opération morphologique à appliquer (par défaut : "erode") |
-| `kernel_size` | INT | Oui | 3-999 | La taille du noyau de l'élément structurant (par défaut : 3). Doit être un nombre impair. |
+| `opération` | STRING | Oui | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | L'opération morphologique à appliquer (par défaut : "erode") |
+| `taille_noyau` | INT | Oui | 3-999 | La taille du noyau de l'élément structurant (par défaut : 3). Doit être un nombre impair. |
 
 ## Sorties
 

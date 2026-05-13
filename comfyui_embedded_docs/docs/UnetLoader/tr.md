@@ -8,8 +8,8 @@ Bu düğüm, `ComfyUI/models/diffusion_models` klasöründe bulunan modelleri al
 
 | Parametre | Veri Türü | Açıklama |
 |-------------|--------------|-------------|
-| `unet_name` | COMBO[STRING] | Yüklenecek U-Net modelinin adını belirtir. Bu ad, modeli önceden tanımlanmış bir dizin yapısı içinde konumlandırmak için kullanılır ve farklı U-Net modellerinin dinamik olarak yüklenmesini sağlar. |
-| `weight_dtype` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
+| `unet_adı` | COMBO[STRING] | Yüklenecek U-Net modelinin adını belirtir. Bu ad, modeli önceden tanımlanmış bir dizin yapısı içinde konumlandırmak için kullanılır ve farklı U-Net modellerinin dinamik olarak yüklenmesini sağlar. |
+| `ağırlık_veri_türü` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
 
 ## Çıkışlar
 

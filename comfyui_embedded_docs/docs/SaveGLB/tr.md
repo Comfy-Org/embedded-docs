@@ -6,8 +6,8 @@ SaveGLB düğümü, 3B ağ verilerini veya 3B dosyaları çıktı dizinine kayde
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|----------|
-| `mesh` | MESH veya FILE3D | Evet | - | Kaydedilecek ağ veya 3B dosya. Ağ verilerini veya GLB, GLTF, OBJ, FBX, STL ve USDZ dahil 3B dosya biçimlerini kabul eder |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "3d/ComfyUI") |
+| `ağ` | MESH veya FILE3D | Evet | - | Kaydedilecek ağ veya 3B dosya. Ağ verilerini veya GLB, GLTF, OBJ, FBX, STL ve USDZ dahil 3B dosya biçimlerini kabul eder |
+| `dosyaadı_öneki` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "3d/ComfyUI") |
 
 ## Çıktılar
 

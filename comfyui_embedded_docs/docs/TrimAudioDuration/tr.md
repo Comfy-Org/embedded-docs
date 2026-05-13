@@ -6,9 +6,9 @@ TrimAudioDuration düğümü, bir ses dosyasından belirli bir zaman dilimini ke
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `audio` | AUDIO | Evet | - | Kırpılacak ses girişi |
-| `start_index` | FLOAT | Evet | -0xffffffffffffffff ile 0xffffffffffffffff arası | Saniye cinsinden başlangıç zamanı; sondan saymak için negatif olabilir (saniyenin altındaki değerleri destekler). Varsayılan: 0.0 |
-| `duration` | FLOAT | Evet | 0.0 ile 0xffffffffffffffff arası | Saniye cinsinden süre. Varsayılan: 60.0 |
+| `ses` | AUDIO | Evet | - | Kırpılacak ses girişi |
+| `başlangıç_indeksi` | FLOAT | Evet | -0xffffffffffffffff ile 0xffffffffffffffff arası | Saniye cinsinden başlangıç zamanı; sondan saymak için negatif olabilir (saniyenin altındaki değerleri destekler). Varsayılan: 0.0 |
+| `süre` | FLOAT | Evet | 0.0 ile 0xffffffffffffffff arası | Saniye cinsinden süre. Varsayılan: 60.0 |
 
 **Not:** Başlangıç zamanı, bitiş zamanından küçük ve ses uzunluğu dahilinde olmalıdır. Negatif başlangıç değerleri, sesin sonundan geriye doğru sayar. Başlangıç zamanı negatifse, sesin sonundan itibaren sayılarak bir kare konumuna dönüştürülür. Başlangıç ve bitiş kareleri, ses sınırlarına kırpılır.
 
@@ -16,7 +16,7 @@ TrimAudioDuration düğümü, bir ses dosyasından belirli bir zaman dilimini ke
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `audio` | AUDIO | Belirtilen başlangıç zamanı ve süre ile kırpılmış ses segmenti |
+| `ses` | AUDIO | Belirtilen başlangıç zamanı ve süre ile kırpılmış ses segmenti |
 
 ---
 **Source fingerprint (SHA-256):** `695a9fe11fa086a317f94823e066688705e9f911cd6cfc5857596ff31dd539ed`

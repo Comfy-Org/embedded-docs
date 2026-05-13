@@ -6,9 +6,9 @@ El nodo **Runway Text to Image** genera imágenes a partir de indicaciones de te
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | - | Indicación de texto para la generación (predeterminado: "") |
-| `ratio` | COMBO | Sí | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Relación de aspecto para la imagen generada |
-| `reference_image` | IMAGE | No | - | Imagen de referencia opcional para guiar la generación |
+| `texto_descriptivo` | STRING | Sí | - | Indicación de texto para la generación (predeterminado: "") |
+| `proporción` | COMBO | Sí | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Relación de aspecto para la imagen generada |
+| `imagen_referencia` | IMAGE | No | - | Imagen de referencia opcional para guiar la generación |
 
 **Nota:** La imagen de referencia debe tener dimensiones que no superen los 7999x7999 píxeles y una relación de aspecto entre 0.5 y 2.0. Cuando se proporciona una imagen de referencia, esta guía el proceso de generación de la imagen.
 

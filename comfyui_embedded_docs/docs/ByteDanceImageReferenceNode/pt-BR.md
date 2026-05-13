@@ -6,14 +6,14 @@ O nó de Referência de Imagem ByteDance gera vídeos usando um prompt de texto 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | STRING | Sim | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"` | O modelo de IA a ser usado para geração de vídeo (padrão: `"seedance-1-0-lite-i2v-250428"`). |
+| `modelo` | STRING | Sim | `"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"` | O modelo de IA a ser usado para geração de vídeo (padrão: `"seedance-1-0-lite-i2v-250428"`). |
 | `prompt` | STRING | Sim | - | O prompt de texto usado para gerar o vídeo. |
-| `images` | IMAGE | Sim | - | De uma a quatro imagens. Cada imagem deve ter entre 300x300 e 6000x6000 pixels, com uma proporção de tela entre 0,4 e 2,5. |
-| `resolution` | STRING | Sim | `"480p"`<br>`"720p"` | A resolução do vídeo de saída. |
-| `aspect_ratio` | STRING | Sim | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | A proporção de tela do vídeo de saída (padrão: `"adaptive"`). |
-| `duration` | INT | Sim | 3 - 12 | A duração do vídeo de saída em segundos (padrão: 5). |
-| `seed` | INT | Não | 0 - 2147483647 | Semente a ser usada para geração (padrão: 0). |
-| `watermark` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água "gerado por IA" ao vídeo (padrão: False). |
+| `imagens` | IMAGE | Sim | - | De uma a quatro imagens. Cada imagem deve ter entre 300x300 e 6000x6000 pixels, com uma proporção de tela entre 0,4 e 2,5. |
+| `resolução` | STRING | Sim | `"480p"`<br>`"720p"` | A resolução do vídeo de saída. |
+| `proporção` | STRING | Sim | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | A proporção de tela do vídeo de saída (padrão: `"adaptive"`). |
+| `duração` | INT | Sim | 3 - 12 | A duração do vídeo de saída em segundos (padrão: 5). |
+| `semente` | INT | Não | 0 - 2147483647 | Semente a ser usada para geração (padrão: 0). |
+| `marca d'água` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água "gerado por IA" ao vídeo (padrão: False). |
 
 **Nota:** O texto do prompt não deve conter as seguintes strings de parâmetros: `--resolution`, `--ratio`, `--duration`, `--seed` ou `--watermark`. Esses valores são controlados exclusivamente através de seus widgets de entrada dedicados.
 

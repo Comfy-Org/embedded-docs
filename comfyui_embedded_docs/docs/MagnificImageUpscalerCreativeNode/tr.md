@@ -6,16 +6,16 @@ Bu düğüm, bir görseli büyütmek ve yaratıcı bir şekilde geliştirmek iç
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Büyütülecek ve geliştirilecek giriş görseli. |
+| `görüntü` | IMAGE | Evet | - | Büyütülecek ve geliştirilecek giriş görseli. |
 | `prompt` | STRING | Hayır | - | Görselin yaratıcı gelişimini yönlendirecek bir metin açıklaması. Bu isteğe bağlıdır (varsayılan: boş). |
-| `scale_factor` | COMBO | Evet | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | Görselin boyutlarının büyütüleceği faktör. |
-| `optimized_for` | COMBO | Evet | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | Geliştirme sürecinin optimize edileceği stil veya içerik türü. |
-| `creativity` | INT | Hayır | -10 ile 10 | Görsele uygulanan yaratıcı yorumlama düzeyini kontrol eder (varsayılan: 0). |
+| `ölçek_faktörü` | COMBO | Evet | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | Görselin boyutlarının büyütüleceği faktör. |
+| `için_optimize_edildi` | COMBO | Evet | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | Geliştirme sürecinin optimize edileceği stil veya içerik türü. |
+| `yaratıcılık` | INT | Hayır | -10 ile 10 | Görsele uygulanan yaratıcı yorumlama düzeyini kontrol eder (varsayılan: 0). |
 | `hdr` | INT | Hayır | -10 ile 10 | Tanımlama ve detay düzeyi (varsayılan: 0). |
-| `resemblance` | INT | Hayır | -10 ile 10 | Orijinal görsele benzerlik düzeyi (varsayılan: 0). |
-| `fractality` | INT | Hayır | -10 ile 10 | İstemin gücü ve piksel kare başına karmaşıklık (varsayılan: 0). |
-| `engine` | COMBO | Evet | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | İşleme için kullanılacak belirli AI motoru. Bu gelişmiş bir parametredir. |
-| `auto_downscale` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, istenen büyütme izin verilen maksimum çıktı boyutu olan 25,3 megapikseli aşarsa düğüm, giriş görselini otomatik olarak küçültür. Bu gelişmiş bir parametredir (varsayılan: False). |
+| `benzerlik` | INT | Hayır | -10 ile 10 | Orijinal görsele benzerlik düzeyi (varsayılan: 0). |
+| `fraktalite` | INT | Hayır | -10 ile 10 | İstemin gücü ve piksel kare başına karmaşıklık (varsayılan: 0). |
+| `motor` | COMBO | Evet | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | İşleme için kullanılacak belirli AI motoru. Bu gelişmiş bir parametredir. |
+| `otomatik_küçültme` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, istenen büyütme izin verilen maksimum çıktı boyutu olan 25,3 megapikseli aşarsa düğüm, giriş görselini otomatik olarak küçültür. Bu gelişmiş bir parametredir (varsayılan: False). |
 
 **Kısıtlamalar:**
 
@@ -28,7 +28,7 @@ Bu düğüm, bir görseli büyütmek ve yaratıcı bir şekilde geliştirmek iç
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | Yaratıcı bir şekilde geliştirilmiş ve büyütülmüş çıktı görseli. |
+| `görüntü` | IMAGE | Yaratıcı bir şekilde geliştirilmiş ve büyütülmüş çıktı görseli. |
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

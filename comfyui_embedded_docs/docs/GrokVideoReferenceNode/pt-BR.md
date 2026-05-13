@@ -9,12 +9,12 @@ O nó Grok Referência-para-Vídeo gera um vídeo com base em um prompt de texto
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Descrição textual do vídeo desejado. |
-| `model` | COMBO | Sim | `"grok-imagine-video"` | O modelo a ser usado para a geração do vídeo. |
+| `modelo` | COMBO | Sim | `"grok-imagine-video"` | O modelo a ser usado para a geração do vídeo. |
 | `model.reference_images` | IMAGE | Sim | 1 a 7 imagens | Até 7 imagens de referência para orientar a geração do vídeo. |
 | `model.resolution` | COMBO | Sim | `"480p"`<br>`"720p"` | A resolução do vídeo de saída. |
 | `model.aspect_ratio` | COMBO | Sim | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | A proporção de aspecto do vídeo de saída. |
 | `model.duration` | INT | Sim | 2 a 10 | A duração do vídeo de saída em segundos (padrão: 6). |
-| `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos, independentemente da semente (padrão: 0). |
+| `semente` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos, independentemente da semente (padrão: 0). |
 
 **Nota:** O parâmetro `model` é um grupo que contém `reference_images`, `resolution`, `aspect_ratio` e `duration`. Você deve fornecer pelo menos uma imagem de referência e pode fornecer até sete.
 

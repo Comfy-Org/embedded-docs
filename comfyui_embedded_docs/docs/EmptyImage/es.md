@@ -12,9 +12,9 @@ Así como un pintor prepara un lienzo en blanco antes de comenzar a crear, el no
 
 | Nombre del Parámetro | Tipo de Dato | Descripción |
 |----------------------|--------------|-------------|
-| `width` | INT | Establece el ancho de la imagen generada (en píxeles), determinando las dimensiones horizontales del lienzo |
-| `height` | INT | Establece la altura de la imagen generada (en píxeles), determinando las dimensiones verticales del lienzo |
-| `batch_size` | INT | La cantidad de imágenes a generar a la vez, utilizada para la creación por lotes de imágenes con las mismas especificaciones |
+| `ancho` | INT | Establece el ancho de la imagen generada (en píxeles), determinando las dimensiones horizontales del lienzo |
+| `altura` | INT | Establece la altura de la imagen generada (en píxeles), determinando las dimensiones verticales del lienzo |
+| `tamaño_del_lote` | INT | La cantidad de imágenes a generar a la vez, utilizada para la creación por lotes de imágenes con las mismas especificaciones |
 | `color` | INT | El color de fondo de la imagen. Puede ingresar configuraciones de color hexadecimal, que se convertirán automáticamente a decimal |
 
 ## Salidas

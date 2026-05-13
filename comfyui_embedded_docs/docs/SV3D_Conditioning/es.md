@@ -7,19 +7,19 @@ El nodo SV3D_Conditioning prepara datos de condicionamiento para la generación 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `clip_vision` | CLIP_VISION | Sí | - | El modelo de visión CLIP utilizado para codificar la imagen de entrada |
-| `init_image` | IMAGE | Sí | - | La imagen inicial que sirve como punto de partida para la generación de video 3D |
+| `imagen_inicial` | IMAGE | Sí | - | La imagen inicial que sirve como punto de partida para la generación de video 3D |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar la imagen en el espacio latente |
-| `width` | INT | No | 16 a MAX_RESOLUTION | El ancho de salida para los fotogramas de video generados (predeterminado: 576, debe ser divisible por 8) |
-| `height` | INT | No | 16 a MAX_RESOLUTION | La altura de salida para los fotogramas de video generados (predeterminado: 576, debe ser divisible por 8) |
-| `video_frames` | INT | No | 1 a 4096 | El número de fotogramas a generar para la secuencia de video (predeterminado: 21) |
-| `elevation` | FLOAT | No | -90.0 a 90.0 | El ángulo de elevación de la cámara en grados para la vista 3D (predeterminado: 0.0) |
+| `ancho` | INT | No | 16 a MAX_RESOLUTION | El ancho de salida para los fotogramas de video generados (predeterminado: 576, debe ser divisible por 8) |
+| `altura` | INT | No | 16 a MAX_RESOLUTION | La altura de salida para los fotogramas de video generados (predeterminado: 576, debe ser divisible por 8) |
+| `cuadros_de_video` | INT | No | 1 a 4096 | El número de fotogramas a generar para la secuencia de video (predeterminado: 21) |
+| `elevación` | FLOAT | No | -90.0 a 90.0 | El ángulo de elevación de la cámara en grados para la vista 3D (predeterminado: 0.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | Los datos de condicionamiento positivo que contienen embeddings de imagen y parámetros de cámara para la generación |
-| `negative` | CONDITIONING | Los datos de condicionamiento negativo con embeddings puestos a cero para generación contrastiva |
+| `negativo` | CONDITIONING | Los datos de condicionamiento positivo que contienen embeddings de imagen y parámetros de cámara para la generación |
+| `latente` | CONDITIONING | Los datos de condicionamiento negativo con embeddings puestos a cero para generación contrastiva |
 | `latent` | LATENT | Un tensor latente vacío con dimensiones que coinciden con los fotogramas de video y la resolución especificados |
 
 ---

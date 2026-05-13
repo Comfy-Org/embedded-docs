@@ -6,11 +6,11 @@ O nó SDPoseKeypointExtractor detecta pontos-chave de pose humana a partir de im
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `model` | MODEL | Sim | - | O modelo SDPose usado para detecção de pontos-chave. Deve ser um modelo com o atributo `heatmap_head`, especificamente do repositório SDPose. |
+| `modelo` | MODEL | Sim | - | O modelo SDPose usado para detecção de pontos-chave. Deve ser um modelo com o atributo `heatmap_head`, especificamente do repositório SDPose. |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar as imagens de entrada no espaço latente para processamento. |
-| `image` | IMAGE | Sim | - | A imagem de entrada ou lote de imagens do qual extrair os pontos-chave de pose. |
-| `batch_size` | INT | Não | 1 a 10000 | O número de imagens a serem processadas de uma vez ao executar no modo de imagem completa (ou seja, quando `bboxes` não é fornecido). Isso pode acelerar o processamento. (padrão: 16) |
-| `bboxes` | BOUNDINGBOX | Não | - | Caixas delimitadoras opcionais para detecções mais precisas. Necessário para detecção de múltiplas pessoas. Se fornecido, o nó extrairá pontos-chave de cada região especificada. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada ou lote de imagens do qual extrair os pontos-chave de pose. |
+| `tamanho_do_lote` | INT | Não | 1 a 10000 | O número de imagens a serem processadas de uma vez ao executar no modo de imagem completa (ou seja, quando `caixas_delimitadoras` não é fornecido). Isso pode acelerar o processamento. (padrão: 16) |
+| `caixas_delimitadoras` | BOUNDINGBOX | Não | - | Caixas delimitadoras opcionais para detecções mais precisas. Necessário para detecção de múltiplas pessoas. Se fornecido, o nó extrairá pontos-chave de cada região especificada. |
 
 **Restrições dos Parâmetros:**
 *   A entrada `model` deve ser um modelo SDPose específico. Se o modelo fornecido não tiver o atributo `heatmap_head`, o nó gerará um erro.

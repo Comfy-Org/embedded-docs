@@ -7,7 +7,7 @@ Bu belge, "Elucidating the Exposure Bias in Diffusion Models" (arxiv.org/abs/230
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Epsilon ölçekleme yamasının uygulanacağı model. |
-| `scaling_factor` | FLOAT | Hayır | 0.5 - 1.5 | Tahmin edilen gürültünün ölçeklendirildiği faktör. 1.0'dan büyük bir değer gürültüyü azaltırken, 1.0'dan küçük bir değer artırır (varsayılan: 1.005). |
+| `ölçeklendirme_faktörü` | FLOAT | Hayır | 0.5 - 1.5 | Tahmin edilen gürültünün ölçeklendirildiği faktör. 1.0'dan büyük bir değer gürültüyü azaltırken, 1.0'dan küçük bir değer artırır (varsayılan: 1.005). |
 
 ## Çıkışlar
 

@@ -6,9 +6,9 @@ O nó LatentBlend combina duas amostras latentes mesclando-as usando um fator de
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `samples1` | LATENT | Sim | - | A primeira amostra latente a ser mesclada |
-| `samples2` | LATENT | Sim | - | A segunda amostra latente a ser mesclada |
-| `blend_factor` | FLOAT | Sim | 0 a 1 | Controla a proporção de mesclagem entre as duas amostras (padrão: 0.5) |
+| `amostras1` | LATENT | Sim | - | A primeira amostra latente a ser mesclada |
+| `amostras2` | LATENT | Sim | - | A segunda amostra latente a ser mesclada |
+| `fator_de_mistura` | FLOAT | Sim | 0 a 1 | Controla a proporção de mesclagem entre as duas amostras (padrão: 0.5) |
 
 **Nota:** Se `samples1` e `samples2` tiverem formatos diferentes, `samples2` será redimensionado automaticamente para corresponder às dimensões de `samples1` usando interpolação bicúbica com recorte central.
 

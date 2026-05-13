@@ -8,14 +8,14 @@ TorchCompileModel ノードは、PyTorch のコンパイル機能をモデルに
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | はい | - | コンパイルおよび最適化されるモデル |
-| `backend` | STRING | はい | "inductor"<br>"cudagraphs" | 最適化に使用する PyTorch コンパイルバックエンド（デフォルト："inductor"） |
+| `モデル` | MODEL | はい | - | コンパイルおよび最適化されるモデル |
+| `バックエンド` | STRING | はい | "inductor"<br>"cudagraphs" | 最適化に使用する PyTorch コンパイルバックエンド（デフォルト："inductor"） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | PyTorch コンパイルが適用されたコンパイル済みモデル |
+| `モデル` | MODEL | PyTorch コンパイルが適用されたコンパイル済みモデル |
 
 ---
 **Source fingerprint (SHA-256):** `923e71b528e6e53468916f74c2a02924bf51738f29e36638312c6da6357fcedb`

@@ -6,9 +6,9 @@ LatentBlend düğümü, iki gizli (latent) örneği belirtilen bir karışım fa
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples1` | LATENT | Evet | - | Karıştırılacak ilk gizli örnek |
-| `samples2` | LATENT | Evet | - | Karıştırılacak ikinci gizli örnek |
-| `blend_factor` | FLOAT | Evet | 0 ile 1 | İki örnek arasındaki karışım oranını kontrol eder (varsayılan: 0.5) |
+| `örnekler1` | LATENT | Evet | - | Karıştırılacak ilk gizli örnek |
+| `örnekler2` | LATENT | Evet | - | Karıştırılacak ikinci gizli örnek |
+| `karıştırma_faktörü` | FLOAT | Evet | 0 ile 1 | İki örnek arasındaki karışım oranını kontrol eder (varsayılan: 0.5) |
 
 **Not:** `samples1` ve `samples2` farklı boyutlara sahipse, `samples2`, merkez kırpma ile bikübik enterpolasyon kullanılarak `samples1`'in boyutlarına otomatik olarak yeniden boyutlandırılır.
 

@@ -6,10 +6,10 @@ Este nodo convierte una imagen rasterizada en un gráfico vectorial escalable (S
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | N/A | Imagen de entrada para vectorizar. |
-| `auto_crop` | BOOLEAN | No | `True`<br>`False` | Recortar automáticamente al sujeto dominante. Este es un parámetro avanzado (predeterminado: `False`). |
-| `model` | DYNAMICCOMBO | Sí | Múltiples opciones disponibles | Modelo a utilizar para la vectorización SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `target_size` (destino de redimensionamiento cuadrado en píxeles, predeterminado: 1024, rango: 128-4096), `temperature`, `top_p` y `presence_penalty`. |
-| `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe reejecutarse; los resultados reales son no deterministas independientemente del valor de la semilla. Este parámetro tiene funcionalidad de "control después de generar" (predeterminado: 0). |
+| `imagen` | IMAGE | Sí | N/A | Imagen de entrada para vectorizar. |
+| `recorte_automático` | BOOLEAN | No | `True`<br>`False` | Recortar automáticamente al sujeto dominante. Este es un parámetro avanzado (predeterminado: `False`). |
+| `modelo` | DYNAMICCOMBO | Sí | Múltiples opciones disponibles | Modelo a utilizar para la vectorización SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `target_size` (destino de redimensionamiento cuadrado en píxeles, predeterminado: 1024, rango: 128-4096), `temperature`, `top_p` y `presence_penalty`. |
+| `semilla` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe reejecutarse; los resultados reales son no deterministas independientemente del valor de la semilla. Este parámetro tiene funcionalidad de "control después de generar" (predeterminado: 0). |
 
 ## Salidas
 

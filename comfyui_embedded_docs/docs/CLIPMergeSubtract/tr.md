@@ -8,7 +8,7 @@ CLIPMergeSubtract düğümü, bir CLIP modelinin ağırlıklarını diğerinden 
 |-----------|-----------|----------|-------|-------------|
 | `clip1` | CLIP | Evet | - | Klonlanacak ve değiştirilecek temel CLIP modeli |
 | `clip2` | CLIP | Evet | - | Anahtar yamaları temel modelden çıkarılacak CLIP modeli |
-| `multiplier` | FLOAT | Evet | -10.0 ile 10.0 arası | Çıkarma işleminin gücünü kontrol eder (varsayılan: 1.0) |
+| `çarpan` | FLOAT | Evet | -10.0 ile 10.0 arası | Çıkarma işleminin gücünü kontrol eder (varsayılan: 1.0) |
 
 **Not:** Düğüm, çarpan değerinden bağımsız olarak `.position_ids` ve `.logit_scale` parametrelerini çıkarma işleminden hariç tutar.
 

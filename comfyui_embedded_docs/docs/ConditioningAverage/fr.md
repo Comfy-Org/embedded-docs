@@ -10,9 +10,9 @@ Comme illustré ci-dessous, en ajustant la force de `conditioning_to`, vous pouv
 
 | Paramètre               | Type Comfy    | Description |
 |------------------------|---------------|-------------|
-| `conditioning_to`      | `CONDITIONING`| Le vecteur de conditionnement cible, servant de base principale pour la moyenne pondérée. |
-| `conditioning_from`    | `CONDITIONING`| Le vecteur de conditionnement source, qui sera fusionné dans la cible selon un certain poids. |
-| `conditioning_to_strength` | `FLOAT`    | La force du conditionnement cible, plage 0,0-1,0, valeur par défaut 1,0, pas de 0,01. |
+| `conditionnement_à`      | `CONDITIONING`| Le vecteur de conditionnement cible, servant de base principale pour la moyenne pondérée. |
+| `conditionnement_de`    | `CONDITIONING`| Le vecteur de conditionnement source, qui sera fusionné dans la cible selon un certain poids. |
+| `force_conditionnement_à` | `FLOAT`    | La force du conditionnement cible, plage 0,0-1,0, valeur par défaut 1,0, pas de 0,01. |
 
 ## Sorties
 

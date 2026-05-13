@@ -6,13 +6,13 @@ El nodo Recraft Creative Upscale Image mejora una imagen rasterizada aumentando 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | | La imagen de entrada que se va a escalar. |
+| `imagen` | IMAGE | Sí | | La imagen de entrada que se va a escalar. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen resultante escalada con detalles mejorados. |
+| `imagen` | IMAGE | La imagen resultante escalada con detalles mejorados. |
 
 ---
 **Source fingerprint (SHA-256):** `b638dd926e144c47ad2c2968cf49f3d322cbdddfcb8b2e86edb3ae9558a1ded6`

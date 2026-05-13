@@ -6,13 +6,13 @@ El nodo ElevenLabs Text to Dialogue genera un diálogo de audio con múltiples h
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `stability` | FLOAT | No | 0.0 - 1.0 | Estabilidad de la voz. Valores más bajos brindan un rango emocional más amplio, valores más altos producen un habla más consistente pero potencialmente monótona. (predeterminado: 0.5) |
-| `apply_text_normalization` | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` | Modo de normalización de texto. 'auto' permite que el sistema decida, 'on' aplica siempre la normalización, 'off' la omite. |
-| `model` | COMBO | No | `"eleven_v3"` | Modelo a utilizar para la generación del diálogo. |
-| `inputs` | DYNAMICCOMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` | Número de entradas de diálogo. Seleccionar un número generará esa cantidad de campos de entrada de texto y voz. |
-| `language_code` | STRING | No | - | Código de idioma ISO-639-1 o ISO-639-3 (ej., 'en', 'es', 'fra'). Déjelo vacío para detección automática. (predeterminado: vacío) |
-| `seed` | INT | No | 0 - 4294967295 | Semilla para reproducibilidad. (predeterminado: 1) |
-| `output_format` | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio. |
+| `estabilidad` | FLOAT | No | 0.0 - 1.0 | Estabilidad de la voz. Valores más bajos brindan un rango emocional más amplio, valores más altos producen un habla más consistente pero potencialmente monótona. (predeterminado: 0.5) |
+| `aplicar_normalización_de_texto` | COMBO | No | `"auto"`<br>`"on"`<br>`"off"` | Modo de normalización de texto. 'auto' permite que el sistema decida, 'on' aplica siempre la normalización, 'off' la omite. |
+| `modelo` | COMBO | No | `"eleven_v3"` | Modelo a utilizar para la generación del diálogo. |
+| `entradas` | DYNAMICCOMBO | Sí | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` | Número de entradas de diálogo. Seleccionar un número generará esa cantidad de campos de entrada de texto y voz. |
+| `código_de_idioma` | STRING | No | - | Código de idioma ISO-639-1 o ISO-639-3 (ej., 'en', 'es', 'fra'). Déjelo vacío para detección automática. (predeterminado: vacío) |
+| `semilla` | INT | No | 0 - 4294967295 | Semilla para reproducibilidad. (predeterminado: 1) |
+| `formato_de_salida` | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio. |
 
 **Nota:** El parámetro `inputs` es dinámico. Cuando selecciona un número (ej., "3"), el nodo mostrará tres campos de entrada `text` y `voice` correspondientes (ej., `text1`, `voice1`, `text2`, `voice2`, `text3`, `voice3`). Cada campo `text` debe contener al menos un carácter.
 

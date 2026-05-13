@@ -34,14 +34,14 @@ Este nodo genera un video interpolando entre un fotograma inicial y un fotograma
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` | El modelo a utilizar para la generación de video. Seleccionar una opción revela parámetros de configuración adicionales para `resolution`, `duration` y `audio`. |
-| `model.resolution` | COMBO | Sí | `"720p"`<br>`"1080p"` | Resolución del video de salida. Este parámetro se revela después de seleccionar un `model`. |
-| `model.duration` | INT | Sí | 1 a 16 | Duración del video de salida en segundos (predeterminado: 5). Este parámetro se revela después de seleccionar un `model`. |
-| `model.audio` | BOOLEAN | Sí | `True` / `False` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). Este parámetro se revela después de seleccionar un `model`. |
-| `first_frame` | IMAGE | Sí | - | La imagen inicial para la secuencia de video. |
-| `end_frame` | IMAGE | Sí | - | La imagen final para la secuencia de video. |
+| `modelo` | COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` | El modelo a utilizar para la generación de video. Seleccionar una opción revela parámetros de configuración adicionales para `resolution`, `duration` y `audio`. |
+| `model.resolution` | COMBO | Sí | `"720p"`<br>`"1080p"` | Resolución del video de salida. Este parámetro se revela después de seleccionar un `modelo`. |
+| `model.duration` | INT | Sí | 1 a 16 | Duración del video de salida en segundos (predeterminado: 5). Este parámetro se revela después de seleccionar un `modelo`. |
+| `model.audio` | BOOLEAN | Sí | `True` / `False` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). Este parámetro se revela después de seleccionar un `modelo`. |
+| `fotograma inicial` | IMAGE | Sí | - | La imagen inicial para la secuencia de video. |
+| `fotograma final` | IMAGE | Sí | - | La imagen final para la secuencia de video. |
 | `prompt` | STRING | Sí | - | Una descripción textual que guía la generación del video (máximo 2000 caracteres). |
-| `seed` | INT | No | 0 a 2147483647 | Un valor semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
 
 **Nota:** Las imágenes `first_frame` y `end_frame` deben tener relaciones de aspecto similares para obtener resultados óptimos. La relación de aspecto de las dos imágenes debe estar dentro del 80% al 125% una de la otra (una proximidad relativa entre 0.8 y 1.25).
 

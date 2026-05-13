@@ -7,12 +7,12 @@ Este nodo genera videos utilizando el modelo Kling V3. Admite dos modos principa
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `multi_shot` | COMBO | Sí | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Controla si se genera un solo video o una serie de segmentos con indicaciones y duraciones individuales. Cuando no está en "disabled", aparecen entradas adicionales para la indicación y duración de cada guión gráfico. |
-| `generate_audio` | BOOLEAN | Sí | `True` / `False` | Cuando está habilitado, el nodo generará audio para el video. El valor predeterminado es `True`. |
-| `model` | COMBO | Sí | `"kling-v3"` | El modelo y sus ajustes asociados. Seleccionar esta opción revela los subparámetros `resolution` y `aspect_ratio`. |
-| `model.resolution` | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución del video generado. Este ajuste está disponible cuando el `model` está configurado en "kling-v3". |
-| `model.aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` | La relación de aspecto del video generado. Este ajuste se ignora cuando se proporciona una imagen para `start_frame` (modo imagen a video). Disponible cuando el `model` está configurado en "kling-v3". |
-| `seed` | INT | Sí | 0 a 2147483647 | Un valor de semilla para la generación. Cambiar este valor hará que el nodo se ejecute nuevamente, pero los resultados no son deterministas. El valor predeterminado es `0`. |
-| `start_frame` | IMAGE | No | - | Una imagen inicial opcional. Cuando está conectada, el nodo cambia del modo texto a video al modo imagen a video, animando la imagen proporcionada. |
+| `generar audio` | BOOLEAN | Sí | `True` / `False` | Cuando está habilitado, el nodo generará audio para el video. El valor predeterminado es `True`. |
+| `modelo` | COMBO | Sí | `"kling-v3"` | El modelo y sus ajustes asociados. Seleccionar esta opción revela los subparámetros `resolution` y `aspect_ratio`. |
+| `model.resolution` | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución del video generado. Este ajuste está disponible cuando el `modelo` está configurado en "kling-v3". |
+| `model.aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` | La relación de aspecto del video generado. Este ajuste se ignora cuando se proporciona una imagen para `fotograma inicial` (modo imagen a video). Disponible cuando el `modelo` está configurado en "kling-v3". |
+| `semilla` | INT | Sí | 0 a 2147483647 | Un valor de semilla para la generación. Cambiar este valor hará que el nodo se ejecute nuevamente, pero los resultados no son deterministas. El valor predeterminado es `0`. |
+| `fotograma inicial` | IMAGE | No | - | Una imagen inicial opcional. Cuando está conectada, el nodo cambia del modo texto a video al modo imagen a video, animando la imagen proporcionada. |
 
 **Entradas para el modo `multi_shot`:**
 

@@ -6,9 +6,9 @@ El nodo SDPoseFaceBBoxes procesa datos de puntos clave de pose para detectar y g
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `keypoints` | POSE_KEYPOINT | Sí | - | Datos de puntos clave de pose que contienen información sobre personas detectadas y sus puntos de referencia corporales/faciales por fotograma. |
-| `scale` | FLOAT | No | 1.0 - 10.0 | Multiplicador del área del cuadro delimitador alrededor de cada rostro detectado. Un valor más grande crea un cuadro más grande. (predeterminado: 1.5) |
-| `force_square` | BOOLEAN | No | - | Expande el eje más corto del cuadro delimitador para que la región de recorte sea siempre cuadrada. (predeterminado: True) |
+| `puntos clave` | POSE_KEYPOINT | Sí | - | Datos de puntos clave de pose que contienen información sobre personas detectadas y sus puntos de referencia corporales/faciales por fotograma. |
+| `escala` | FLOAT | No | 1.0 - 10.0 | Multiplicador del área del cuadro delimitador alrededor de cada rostro detectado. Un valor más grande crea un cuadro más grande. (predeterminado: 1.5) |
+| `forzar cuadrado` | BOOLEAN | No | - | Expande el eje más corto del cuadro delimitador para que la región de recorte sea siempre cuadrada. (predeterminado: True) |
 
 **Nota:** La entrada `keypoints` debe estar en el formato específico producido por nodos como SDPoseKeypointExtractor, que contiene datos de `canvas_height`, `canvas_width` y `people` con `face_keypoints_2d` para cada persona.
 

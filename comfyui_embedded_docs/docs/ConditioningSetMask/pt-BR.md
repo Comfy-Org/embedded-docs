@@ -10,8 +10,8 @@ Este nó foi projetado para modificar o condicionamento de um modelo generativo 
 |---------------|--------------|-------------|
 | `CONDITIONING` | CONDITIONING | Os dados de condicionamento a serem modificados. Servem como base para aplicar a máscara e os ajustes de intensidade. |
 | `mask` | `MASK` | Um tensor de máscara que especifica as áreas dentro do condicionamento a serem modificadas. |
-| `strength` | `FLOAT` | A intensidade do efeito da máscara sobre o condicionamento, permitindo o ajuste fino das modificações aplicadas. |
-| `set_cond_area` | COMBO[STRING] | Determina se o efeito da máscara é aplicado à área padrão ou limitado pela própria máscara, oferecendo flexibilidade na segmentação de regiões específicas. |
+| `força` | `FLOAT` | A intensidade do efeito da máscara sobre o condicionamento, permitindo o ajuste fino das modificações aplicadas. |
+| `definir_área_cond` | COMBO[STRING] | Determina se o efeito da máscara é aplicado à área padrão ou limitado pela própria máscara, oferecendo flexibilidade na segmentação de regiões específicas. |
 
 ## Saídas
 

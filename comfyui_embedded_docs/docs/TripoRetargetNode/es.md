@@ -6,8 +6,8 @@ El nodo TripoRetargetNode aplica animaciones predefinidas a modelos de personaje
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `original_model_task_id` | RIG_TASK_ID | Sí | - | El ID de tarea del modelo 3D riggeado previamente procesado al que se le aplicará la animación |
-| `animation` | STRING | Sí | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | La animación preestablecida a aplicar al modelo 3D. Las opciones incluyen animaciones humanoides (inactivo, caminar, correr, bucear, escalar, saltar, cortar, disparar, herido, caer, girar) y animaciones de criaturas (caminar cuadrúpedo, caminar hexápodo, caminar octópodo, marcha serpentina, marcha acuática). |
+| `ID_de_tarea_del_modelo_original` | RIG_TASK_ID | Sí | - | El ID de tarea del modelo 3D riggeado previamente procesado al que se le aplicará la animación |
+| `animación` | STRING | Sí | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | La animación preestablecida a aplicar al modelo 3D. Las opciones incluyen animaciones humanoides (inactivo, caminar, correr, bucear, escalar, saltar, cortar, disparar, herido, caer, girar) y animaciones de criaturas (caminar cuadrúpedo, caminar hexápodo, caminar octópodo, marcha serpentina, marcha acuática). |
 | `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | No | - | Token de autenticación para acceso a la API de Comfy.org (parámetro oculto) |
 | `api_key_comfy_org` | API_KEY_COMFY_ORG | No | - | Clave API para acceso al servicio de Comfy.org (parámetro oculto) |
 | `unique_id` | UNIQUE_ID | No | - | Identificador único para el seguimiento de la operación (parámetro oculto) |
@@ -16,8 +16,8 @@ El nodo TripoRetargetNode aplica animaciones predefinidas a modelos de personaje
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model_file` | STRING | El archivo de modelo 3D animado generado (solo para compatibilidad hacia atrás) |
-| `retarget task_id` | RETARGET_TASK_ID | El ID de tarea para el seguimiento de la operación de reorientación |
+| `reasignar task_id` | STRING | El archivo de modelo 3D animado generado (solo para compatibilidad hacia atrás) |
+| `GLB` | RETARGET_TASK_ID | El ID de tarea para el seguimiento de la operación de reorientación |
 | `GLB` | FILE3DGLB | El modelo 3D animado en formato GLB |
 
 ---

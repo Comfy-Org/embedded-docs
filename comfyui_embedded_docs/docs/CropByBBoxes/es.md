@@ -6,12 +6,12 @@ El nodo CropByBBoxes extrae y redimensiona regiones rectangulares específicas d
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | El lote de imágenes de entrada a recortar. |
-| `bboxes` | BOUNDINGBOX | Sí | - | La lista de cuadros delimitadores que definen las regiones a recortar. Esta entrada es forzada, lo que significa que debe estar conectada. |
-| `output_width` | INT | No | 64 - 4096 | El ancho al que se redimensiona cada recorte (predeterminado: 512). |
-| `output_height` | INT | No | 64 - 4096 | La altura a la que se redimensiona cada recorte (predeterminado: 512). |
-| `padding` | INT | No | 0 - 1024 | Relleno adicional en píxeles añadido a cada lado del cuadro delimitador antes de recortar (predeterminado: 0). |
-| `keep_aspect` | COMBO | No | `"stretch"`<br>`"pad"` | Si estirar el recorte para que se ajuste al tamaño de salida, o rellenarlo con píxeles negros para preservar su relación de aspecto (predeterminado: "stretch"). |
+| `imagen` | IMAGE | Sí | - | El lote de imágenes de entrada a recortar. |
+| `cajas delimitadoras` | BOUNDINGBOX | Sí | - | La lista de cuadros delimitadores que definen las regiones a recortar. Esta entrada es forzada, lo que significa que debe estar conectada. |
+| `ancho de salida` | INT | No | 64 - 4096 | El ancho al que se redimensiona cada recorte (predeterminado: 512). |
+| `alto de salida` | INT | No | 64 - 4096 | La altura a la que se redimensiona cada recorte (predeterminado: 512). |
+| `relleno` | INT | No | 0 - 1024 | Relleno adicional en píxeles añadido a cada lado del cuadro delimitador antes de recortar (predeterminado: 0). |
+| `mantener_proporción` | COMBO | No | `"stretch"`<br>`"pad"` | Si estirar el recorte para que se ajuste al tamaño de salida, o rellenarlo con píxeles negros para preservar su relación de aspecto (predeterminado: "stretch"). |
 
 **Nota:** El nodo procesa un fotograma de imagen a la vez. Si se proporcionan múltiples cuadros delimitadores para un solo fotograma, calcula una única región de recorte que es la unión (el rectángulo más pequeño que contiene todos los cuadros) de todos los cuadros proporcionados. Si una región de recorte calculada no es válida (por ejemplo, ancho o altura cero), el nodo creará un recorte alternativo desde el centro-superior de la imagen.
 
@@ -19,7 +19,7 @@ El nodo CropByBBoxes extrae y redimensiona regiones rectangulares específicas d
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | Todas las regiones recortadas y redimensionadas, apiladas en un solo lote de imágenes. |
+| `imagen` | IMAGE | Todas las regiones recortadas y redimensionadas, apiladas en un solo lote de imágenes. |
 
 ---
 **Source fingerprint (SHA-256):** `9c0b3078405567911731c42e1873c57c77363e21ef6805769730667c811b0a0b`

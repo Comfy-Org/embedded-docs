@@ -8,7 +8,7 @@ PrimitiveStringMultiline düğümü, iş akışınızda dize değerleri girmek v
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `value` | STRING | Evet | Yok | Birden çok satıra yayılabilen metin giriş değeri |
+| `değer` | STRING | Evet | Yok | Birden çok satıra yayılabilen metin giriş değeri |
 
 ## Çıktılar
 

@@ -7,15 +7,15 @@ Le nœud **LTXVCropGuides** traite les entrées de conditionnement et latentes p
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `positive` | CONDITIONING | Oui | - | L'entrée de conditionnement positive contenant les informations de guidage pour la génération |
-| `negative` | CONDITIONING | Oui | - | L'entrée de conditionnement négative contenant les informations de guidage sur ce qu'il faut éviter dans la génération |
+| `négatif` | CONDITIONING | Oui | - | L'entrée de conditionnement négative contenant les informations de guidage sur ce qu'il faut éviter dans la génération |
 | `latent` | LATENT | Oui | - | La représentation latente contenant les échantillons d'image et les données du masque de bruit |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif traité avec les indices d'images clés et les entrées d'attention de guidage effacés |
-| `negative` | CONDITIONING | Le conditionnement négatif traité avec les indices d'images clés et les entrées d'attention de guidage effacés |
+| `négatif` | CONDITIONING | Le conditionnement positif traité avec les indices d'images clés et les entrées d'attention de guidage effacés |
+| `latent` | CONDITIONING | Le conditionnement négatif traité avec les indices d'images clés et les entrées d'attention de guidage effacés |
 | `latent` | LATENT | La représentation latente rognée avec les échantillons et le masque de bruit ajustés, où les sections d'images clés ont été supprimées |
 
 ---

@@ -6,10 +6,10 @@ El nodo StringCompare compara dos cadenas de texto utilizando diferentes método
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string_a` | STRING | Sí | - | La primera cadena a comparar |
-| `string_b` | STRING | Sí | - | La segunda cadena contra la que se compara |
-| `mode` | COMBO | Sí | "Comienza Con"<br>"Termina Con"<br>"Igual" | El método de comparación a utilizar (predeterminado: "Comienza Con") |
-| `case_sensitive` | BOOLEAN | No | - | Si se deben considerar las diferencias entre mayúsculas y minúsculas durante la comparación (predeterminado: verdadero) |
+| `cadena_a` | STRING | Sí | - | La primera cadena a comparar |
+| `cadena_b` | STRING | Sí | - | La segunda cadena contra la que se compara |
+| `modo` | COMBO | Sí | "Comienza Con"<br>"Termina Con"<br>"Igual" | El método de comparación a utilizar (predeterminado: "Comienza Con") |
+| `distingue mayúsculas y minúsculas` | BOOLEAN | No | - | Si se deben considerar las diferencias entre mayúsculas y minúsculas durante la comparación (predeterminado: verdadero) |
 
 ## Salidas
 

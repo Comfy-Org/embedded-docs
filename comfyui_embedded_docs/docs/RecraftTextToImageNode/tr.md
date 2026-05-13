@@ -10,13 +10,13 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Görsel oluşturma için istem. (varsayılan: "") |
-| `size` | COMBO | Evet | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | Oluşturulan görselin boyutu. (varsayılan: "1024x1024") |
+| `istem` | STRING | Evet | - | Görsel oluşturma için istem. (varsayılan: "") |
+| `boyut` | COMBO | Evet | "1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | Oluşturulan görselin boyutu. (varsayılan: "1024x1024") |
 | `n` | INT | Evet | 1-6 | Oluşturulacak görsel sayısı. (varsayılan: 1) |
-| `seed` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
-| `recraft_style` | RECRAFT_STYLE | Hayır | Birden çok seçenek mevcut | Görsel oluşturma için isteğe bağlı stil seçimi. Sağlanmadığında varsayılan olarak "realistic_image" stili kullanılır. |
-| `negative_prompt` | STRING | Hayır | - | Görselde istenmeyen öğelerin isteğe bağlı metin açıklaması. (varsayılan: "") |
-| `recraft_controls` | RECRAFT_CONTROLS | Hayır | Birden çok seçenek mevcut | Recraft Kontrolleri düğümü aracılığıyla oluşturma üzerinde isteğe bağlı ek kontroller. |
+| `tohum` | INT | Evet | 0-18446744073709551615 | Düğümün yeniden çalışıp çalışmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
+| `recraft_stili` | RECRAFT_STYLE | Hayır | Birden çok seçenek mevcut | Görsel oluşturma için isteğe bağlı stil seçimi. Sağlanmadığında varsayılan olarak "realistic_image" stili kullanılır. |
+| `negatif_istem` | STRING | Hayır | - | Görselde istenmeyen öğelerin isteğe bağlı metin açıklaması. (varsayılan: "") |
+| `recraft_kontrolleri` | RECRAFT_CONTROLS | Hayır | Birden çok seçenek mevcut | Recraft Kontrolleri düğümü aracılığıyla oluşturma üzerinde isteğe bağlı ek kontroller. |
 
 **Not:** `seed` parametresi yalnızca düğümün ne zaman yeniden çalıştırılacağını kontrol eder, görsel oluşturmayı deterministik hale getirmez. Aynı tohum değeriyle bile gerçek çıktı görselleri farklılık gösterecektir.
 

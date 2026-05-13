@@ -7,7 +7,7 @@ SamplerEulerAncestralCFGPP düğümü, görüntü oluşturma için Euler Atasal 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `eta` | FLOAT | Evet | 0.0 - 1.0 | Örnekleme sırasında adım boyutunu kontrol eder; daha yüksek değerler daha agresif güncellemelerle sonuçlanır (varsayılan: 1.0) |
-| `s_noise` | FLOAT | Evet | 0.0 - 10.0 | Örnekleme işlemi sırasında eklenen gürültü miktarını ayarlar (varsayılan: 1.0) |
+| `s_gürültü` | FLOAT | Evet | 0.0 - 10.0 | Örnekleme işlemi sırasında eklenen gürültü miktarını ayarlar (varsayılan: 1.0) |
 
 ## Çıkışlar
 

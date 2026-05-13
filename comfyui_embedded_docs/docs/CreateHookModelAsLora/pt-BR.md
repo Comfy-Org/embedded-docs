@@ -7,9 +7,9 @@ Este nó cria um modelo de hook como um LoRA (Adaptação de Baixa Classificaç�
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `ckpt_name` | STRING | Sim | Múltiplas opções disponíveis | O arquivo de checkpoint para carregar os pesos (selecione entre os checkpoints disponíveis) |
-| `strength_model` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade aplicado aos pesos do modelo (padrão: 1.0) |
-| `strength_clip` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade aplicado aos pesos do CLIP (padrão: 1.0) |
-| `prev_hooks` | HOOKS | Não | - | Hooks anteriores opcionais para combinar com os novos hooks LoRA criados |
+| `força_modelo` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade aplicado aos pesos do modelo (padrão: 1.0) |
+| `força_clip` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade aplicado aos pesos do CLIP (padrão: 1.0) |
+| `hooks_anteriores` | HOOKS | Não | - | Hooks anteriores opcionais para combinar com os novos hooks LoRA criados |
 
 **Restrições dos Parâmetros:**
 

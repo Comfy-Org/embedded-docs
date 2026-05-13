@@ -7,9 +7,9 @@ PhotoMakerEncode düğümü, yapay zeka görüntü oluşturma için koşullandı
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `photomaker` | PHOTOMAKER | Evet | - | Görseli işlemek ve gömmeler oluşturmak için kullanılan PhotoMaker modeli |
-| `image` | IMAGE | Evet | - | Koşullandırma için görsel özellikleri sağlayan referans görsel |
+| `görüntü` | IMAGE | Evet | - | Koşullandırma için görsel özellikleri sağlayan referans görsel |
 | `clip` | CLIP | Evet | - | Metin tokenizasyonu ve kodlaması için kullanılan CLIP modeli |
-| `text` | STRING | Evet | - | Koşullandırma oluşturma için metin istemi (varsayılan: "photograph of photomaker") |
+| `metin` | STRING | Evet | - | Koşullandırma oluşturma için metin istemi (varsayılan: "photograph of photomaker") |
 
 **Not:** Metin "photomaker" kelimesini içerdiğinde, düğüm istemde bu konuma görsel tabanlı koşullandırma uygular. Metinde "photomaker" bulunamazsa, düğüm görsel etkisi olmadan standart metin koşullandırması oluşturur.
 

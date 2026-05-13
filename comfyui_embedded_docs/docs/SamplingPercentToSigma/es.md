@@ -6,9 +6,9 @@ El nodo SamplingPercentToSigma convierte un valor de porcentaje de muestreo en u
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo que contiene los parámetros de muestreo utilizados para la conversión |
-| `sampling_percent` | FLOAT | Sí | 0.0 a 1.0 | El porcentaje de muestreo a convertir a sigma (predeterminado: 0.0) |
-| `return_actual_sigma` | BOOLEAN | Sí | - | Devuelve el valor sigma real en lugar del valor utilizado para comprobaciones de intervalo. Esto solo afecta los resultados en 0.0 y 1.0. (predeterminado: Falso) |
+| `modelo` | MODEL | Sí | - | El modelo que contiene los parámetros de muestreo utilizados para la conversión |
+| `porcentaje_muestreo` | FLOAT | Sí | 0.0 a 1.0 | El porcentaje de muestreo a convertir a sigma (predeterminado: 0.0) |
+| `devolver_sigma_real` | BOOLEAN | Sí | - | Devuelve el valor sigma real en lugar del valor utilizado para comprobaciones de intervalo. Esto solo afecta los resultados en 0.0 y 1.0. (predeterminado: Falso) |
 
 ## Salidas
 

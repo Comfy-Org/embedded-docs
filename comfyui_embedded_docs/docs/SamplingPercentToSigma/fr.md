@@ -6,9 +6,9 @@ Le nœud SamplingPercentToSigma convertit une valeur de pourcentage d'échantill
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle contenant les paramètres d'échantillonnage utilisés pour la conversion |
-| `sampling_percent` | FLOAT | Oui | 0,0 à 1,0 | Le pourcentage d'échantillonnage à convertir en sigma (par défaut : 0,0) |
-| `return_actual_sigma` | BOOLEAN | Oui | - | Retourne la valeur sigma réelle au lieu de la valeur utilisée pour les vérifications d'intervalle. Cela n'affecte que les résultats à 0,0 et 1,0. (par défaut : False) |
+| `modèle` | MODEL | Oui | - | Le modèle contenant les paramètres d'échantillonnage utilisés pour la conversion |
+| `pourcent_échantillonnage` | FLOAT | Oui | 0,0 à 1,0 | Le pourcentage d'échantillonnage à convertir en sigma (par défaut : 0,0) |
+| `retourner_sigma_réel` | BOOLEAN | Oui | - | Retourne la valeur sigma réelle au lieu de la valeur utilisée pour les vérifications d'intervalle. Cela n'affecte que les résultats à 0,0 et 1,0. (par défaut : False) |
 
 ## Sorties
 

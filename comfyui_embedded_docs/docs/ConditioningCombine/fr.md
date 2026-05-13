@@ -6,14 +6,14 @@ Ce nœud combine deux entrées de conditionnement en une seule sortie, fusionnan
 
 | Nom du paramètre    | Type de données    | Description |
 |---------------------|--------------------|-------------|
-| `conditioning_1`    | `CONDITIONING`     | La première entrée de conditionnement à combiner. Elle a une importance égale à `conditioning_2` dans le processus de combinaison. |
-| `conditioning_2`    | `CONDITIONING`     | La deuxième entrée de conditionnement à combiner. Elle a une importance égale à `conditioning_1` dans le processus de combinaison. |
+| `conditionnement_1`    | `CONDITIONING`     | La première entrée de conditionnement à combiner. Elle a une importance égale à `conditionnement_2` dans le processus de combinaison. |
+| `conditionnement_2`    | `CONDITIONING`     | La deuxième entrée de conditionnement à combiner. Elle a une importance égale à `conditionnement_1` dans le processus de combinaison. |
 
 ## Sorties
 
 | Nom du paramètre    | Type de données    | Description |
 |---------------------|--------------------|-------------|
-| `conditioning`      | `CONDITIONING`     | Le résultat de la combinaison de `conditioning_1` et `conditioning_2`, encapsulant les informations fusionnées. |
+| `conditioning`      | `CONDITIONING`     | Le résultat de la combinaison de `conditionnement_1` et `conditionnement_2`, encapsulant les informations fusionnées. |
 
 ## Scénarios d'utilisation
 

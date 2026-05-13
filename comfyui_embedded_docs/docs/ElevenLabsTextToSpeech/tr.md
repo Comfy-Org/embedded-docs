@@ -8,14 +8,14 @@ ElevenLabs Metin-Konuşma düğümü, yazılı metni ElevenLabs API'sini kullana
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `voice` | CUSTOM | Evet | Yok | Ses sentezi için kullanılacak ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlayın. |
-| `text` | STRING | Evet | Yok | Sese dönüştürülecek metin. |
-| `stability` | FLOAT | Hayır | 0.0 - 1.0 | Ses stabilitesi. Düşük değerler daha geniş duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). |
-| `apply_text_normalization` | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` | Metin normalizasyon modu. 'auto' sistemin karar vermesini sağlar, 'on' her zaman normalizasyon uygular, 'off' atlar. |
+| `ses` | CUSTOM | Evet | Yok | Ses sentezi için kullanılacak ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlayın. |
+| `metin` | STRING | Evet | Yok | Sese dönüştürülecek metin. |
+| `kararlılık` | FLOAT | Hayır | 0.0 - 1.0 | Ses stabilitesi. Düşük değerler daha geniş duygusal aralık sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). |
+| `metin normalizasyonunu uygula` | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` | Metin normalizasyon modu. 'auto' sistemin karar vermesini sağlar, 'on' her zaman normalizasyon uygular, 'off' atlar. |
 | `model` | DYNAMICCOMBO | Hayır | `"eleven_multilingual_v2"`<br>`"eleven_v3"` | Metin-konuşma için kullanılacak model. Bir model seçmek, o modele özgü parametreleri gösterir. |
-| `language_code` | STRING | Hayır | Yok | ISO-639-1 veya ISO-639-3 dil kodu (örn. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın (varsayılan: ""). |
-| `seed` | INT | Hayır | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (determinizm garanti edilmez) (varsayılan: 1). |
-| `output_format` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
+| `dil_kodu` | STRING | Hayır | Yok | ISO-639-1 veya ISO-639-3 dil kodu (örn. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın (varsayılan: ""). |
+| `tohum` | INT | Hayır | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (determinizm garanti edilmez) (varsayılan: 1). |
+| `çıktı_formatı` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
 
 **Modele Özgü Parametreler:**
 `model` parametresi `"eleven_multilingual_v2"` olarak ayarlandığında, aşağıdaki ek parametreler kullanılabilir hale gelir:

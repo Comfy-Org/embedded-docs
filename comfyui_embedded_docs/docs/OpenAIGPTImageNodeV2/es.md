@@ -37,7 +37,7 @@ Este nodo genera imágenes utilizando la API de OpenAI GPT Image. Es compatible 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Texto de instrucción para GPT Image (valor predeterminado: ""). |
-| `model` | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | El modelo OpenAI GPT Image a utilizar. Seleccionar un modelo revela parámetros adicionales específicos de ese modelo. |
+| `modelo` | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | El modelo OpenAI GPT Image a utilizar. Seleccionar un modelo revela parámetros adicionales específicos de ese modelo. |
 | `model.size` | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` | Tamaño de la imagen. Seleccione 'Custom' para usar ancho y alto personalizados (valor predeterminado: "auto"). Solo disponible para `gpt-image-2`. |
 | `model.custom_width` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (valor predeterminado: 1024). Solo disponible para `gpt-image-2`. |
 | `model.custom_height` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (valor predeterminado: 1024). Solo disponible para `gpt-image-2`. |
@@ -46,7 +46,7 @@ Este nodo genera imágenes utilizando la API de OpenAI GPT Image. Es compatible 
 | `model.images` | IMAGE | No | N/A | Imágenes de entrada para edición. Solo disponible para `gpt-image-2`. |
 | `model.mask` | MASK | No | N/A | Una máscara para especificar qué partes de la imagen de entrada editar. Solo disponible para `gpt-image-2`. |
 | `n` | INT | Sí | 1 a 8 | Cuántas imágenes generar (valor predeterminado: 1). |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla para reproducibilidad (valor predeterminado: 0). Nota: aún no implementado en el backend. |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla para reproducibilidad (valor predeterminado: 0). Nota: aún no implementado en el backend. |
 
 **Restricciones y limitaciones de los parámetros:**
 

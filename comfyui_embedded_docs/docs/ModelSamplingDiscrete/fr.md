@@ -6,12 +6,12 @@ Ce nœud est conçu pour modifier le comportement d'échantillonnage d'un modèl
 
 | Paramètre | Type de données | Type Python     | Description |
 |-----------|-----------------|-------------------|-------------|
-| `model`   | MODEL           | `torch.nn.Module` | Le modèle auquel la stratégie d'échantillonnage discrète sera appliquée. Ce paramètre est crucial car il définit le modèle de base qui subira la modification. |
-| `sampling`| COMBO[STRING]   | `str`             | Spécifie la méthode d'échantillonnage discrète à appliquer au modèle. Le choix de la méthode influence la façon dont le modèle génère des échantillons, offrant différentes stratégies d'échantillonnage. |
+| `modèle`   | MODEL           | `torch.nn.Module` | Le modèle auquel la stratégie d'échantillonnage discrète sera appliquée. Ce paramètre est crucial car il définit le modèle de base qui subira la modification. |
+| `échantillonnage`| COMBO[STRING]   | `str`             | Spécifie la méthode d'échantillonnage discrète à appliquer au modèle. Le choix de la méthode influence la façon dont le modèle génère des échantillons, offrant différentes stratégies d'échantillonnage. |
 | `zsnr`    | `BOOLEAN`       | `bool`            | Un indicateur booléen qui, lorsqu'il est activé, ajuste la stratégie de réduction du bruit du modèle en fonction du rapport de bruit zero-shot. Cela peut influencer la qualité et les caractéristiques des échantillons générés. |
 
 ## Sorties
 
 | Paramètre | Type de données | Type Python     | Description |
 |-----------|-----------------|-------------------|-------------|
-| `model`   | MODEL           | `torch.nn.Module` | Le modèle modifié avec la stratégie d'échantillonnage discrète appliquée. Ce modèle est désormais capable de générer des échantillons en utilisant la méthode et les ajustements spécifiés. |
+| `modèle`   | MODEL           | `torch.nn.Module` | Le modèle modifié avec la stratégie d'échantillonnage discrète appliquée. Ce modèle est désormais capable de générer des échantillons en utilisant la méthode et les ajustements spécifiés. |

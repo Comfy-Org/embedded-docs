@@ -6,10 +6,10 @@ El nodo `Hunyuan3Dv2ConditioningMultiView` procesa embeddings de visión CLIP mu
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `front` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista frontal |
-| `left` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista izquierda |
-| `back` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista trasera |
-| `right` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista derecha |
+| `frente` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista frontal |
+| `izquierda` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista izquierda |
+| `atrás` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista trasera |
+| `derecha` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista derecha |
 
 **Nota:** Se debe proporcionar al menos una entrada de vista para que el nodo funcione. El nodo solo procesará las vistas que contengan datos válidos de salida de visión CLIP.
 
@@ -17,7 +17,7 @@ El nodo `Hunyuan3Dv2ConditioningMultiView` procesa embeddings de visión CLIP mu
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo que contiene los embeddings multivista combinados con codificación posicional |
+| `negative` | CONDITIONING | Condicionamiento positivo que contiene los embeddings multivista combinados con codificación posicional |
 | `negative` | CONDITIONING | Condicionamiento negativo con valores cero para aprendizaje contrastivo |
 
 ---

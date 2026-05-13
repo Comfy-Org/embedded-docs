@@ -6,9 +6,9 @@ O nó GITSScheduler gera sigmas de agendamento de ruído para o método de amost
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `coeff` | FLOAT | Sim | 0,80 - 1,50 | O valor do coeficiente que controla a curva do agendamento de ruído (padrão: 1,20) |
-| `steps` | INT | Sim | 2 - 1000 | O número total de etapas de amostragem para gerar sigmas (padrão: 10) |
-| `denoise` | FLOAT | Sim | 0,0 - 1,0 | Fator de remoção de ruído que reduz o número de etapas utilizadas (padrão: 1,0) |
+| `coeficiente` | FLOAT | Sim | 0,80 - 1,50 | O valor do coeficiente que controla a curva do agendamento de ruído (padrão: 1,20) |
+| `etapas` | INT | Sim | 2 - 1000 | O número total de etapas de amostragem para gerar sigmas (padrão: 10) |
+| `reduzir_ruído` | FLOAT | Sim | 0,0 - 1,0 | Fator de remoção de ruído que reduz o número de etapas utilizadas (padrão: 1,0) |
 
 **Nota:** Quando `denoise` é definido como 0,0, o nó retorna um tensor vazio. Quando `denoise` é menor que 1,0, o número real de etapas utilizadas é calculado como `round(steps * denoise)`. Para etapas maiores que 20, o nó utiliza interpolação log-linear para estender os níveis de ruído predefinidos até o número desejado de etapas.
 

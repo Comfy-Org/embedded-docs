@@ -6,9 +6,9 @@ O nó `ImageCrop` foi projetado para recortar imagens em uma largura e altura es
 
 | Campo | Tipo de Dados | Descrição                                                                                   |
 |-------|---------------|---------------------------------------------------------------------------------------------|
-| `image` | `IMAGE` | A imagem de entrada a ser recortada. Este parâmetro é crucial, pois define a imagem de origem da qual uma região será extraída com base nas dimensões e coordenadas especificadas. |
-| `width` | `INT` | Especifica a largura da imagem recortada. Este parâmetro determina a largura da imagem resultante após o recorte. |
-| `height` | `INT` | Especifica a altura da imagem recortada. Este parâmetro determina a altura da imagem resultante após o recorte. |
+| `imagem` | `IMAGE` | A imagem de entrada a ser recortada. Este parâmetro é crucial, pois define a imagem de origem da qual uma região será extraída com base nas dimensões e coordenadas especificadas. |
+| `largura` | `INT` | Especifica a largura da imagem recortada. Este parâmetro determina a largura da imagem resultante após o recorte. |
+| `altura` | `INT` | Especifica a altura da imagem recortada. Este parâmetro determina a altura da imagem resultante após o recorte. |
 | `x` | `INT` | A coordenada x do canto superior esquerdo da área de recorte. Este parâmetro define o ponto inicial para a dimensão da largura do recorte. |
 | `y` | `INT` | A coordenada y do canto superior esquerdo da área de recorte. Este parâmetro define o ponto inicial para a dimensão da altura do recorte. |
 
@@ -16,4 +16,4 @@ O nó `ImageCrop` foi projetado para recortar imagens em uma largura e altura es
 
 | Campo | Tipo de Dados | Descrição                                                                   |
 |-------|---------------|-----------------------------------------------------------------------------|
-| `image` | `IMAGE` | A imagem recortada como resultado da operação de recorte. Esta saída é significativa para processamento ou análise adicional da região especificada da imagem. |
+| `imagem` | `IMAGE` | A imagem recortada como resultado da operação de recorte. Esta saída é significativa para processamento ou análise adicional da região especificada da imagem. |

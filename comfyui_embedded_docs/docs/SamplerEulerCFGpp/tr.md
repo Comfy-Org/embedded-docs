@@ -6,7 +6,7 @@ SamplerEulerCFGpp düğümü, çıktı üretmek için bir Euler CFG++ örnekleme
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `version` | STRING | Evet | `"regular"`<br>`"alternative"` | Kullanılacak Euler CFG++ örnekleyicisinin uygulama sürümü (varsayılan: "regular") |
+| `sürüm` | STRING | Evet | `"regular"`<br>`"alternative"` | Kullanılacak Euler CFG++ örnekleyicisinin uygulama sürümü (varsayılan: "regular") |
 
 ## Çıkışlar
 

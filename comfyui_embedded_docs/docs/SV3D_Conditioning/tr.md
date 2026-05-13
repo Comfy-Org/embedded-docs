@@ -6,20 +6,20 @@ SV3D_Conditioning düğümü, SV3D modelini kullanarak 3D video oluşturma için
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için kullanılan CLIP görüntü modeli |
-| `init_image` | IMAGE | Evet | - | 3D video oluşturma için başlangıç noktası olarak hizmet eden başlangıç görüntüsü |
+| `clip_görü` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için kullanılan CLIP görüntü modeli |
+| `başlangıç_görüntüsü` | IMAGE | Evet | - | 3D video oluşturma için başlangıç noktası olarak hizmet eden başlangıç görüntüsü |
 | `vae` | VAE | Evet | - | Görüntüyü gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Hayır | 16 ile MAKS_ÇÖZÜNÜRLÜK | Oluşturulan video kareleri için çıktı genişliği (varsayılan: 576, 8'e bölünebilir olmalıdır) |
-| `height` | INT | Hayır | 16 ile MAKS_ÇÖZÜNÜRLÜK | Oluşturulan video kareleri için çıktı yüksekliği (varsayılan: 576, 8'e bölünebilir olmalıdır) |
-| `video_frames` | INT | Hayır | 1 ile 4096 | Video dizisi için oluşturulacak kare sayısı (varsayılan: 21) |
-| `elevation` | FLOAT | Hayır | -90.0 ile 90.0 | 3D görünüm için kamera yükseklik açısı (derece cinsinden) (varsayılan: 0.0) |
+| `genişlik` | INT | Hayır | 16 ile MAKS_ÇÖZÜNÜRLÜK | Oluşturulan video kareleri için çıktı genişliği (varsayılan: 576, 8'e bölünebilir olmalıdır) |
+| `yükseklik` | INT | Hayır | 16 ile MAKS_ÇÖZÜNÜRLÜK | Oluşturulan video kareleri için çıktı yüksekliği (varsayılan: 576, 8'e bölünebilir olmalıdır) |
+| `video_kareleri` | INT | Hayır | 1 ile 4096 | Video dizisi için oluşturulacak kare sayısı (varsayılan: 21) |
+| `yükseklik` | FLOAT | Hayır | -90.0 ile 90.0 | 3D görünüm için kamera yükseklik açısı (derece cinsinden) (varsayılan: 0.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Oluşturma için görüntü gömmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri |
-| `negative` | CONDITIONING | Karşılaştırmalı oluşturma için sıfırlanmış gömmelere sahip negatif koşullandırma verileri |
+| `negatif` | CONDITIONING | Oluşturma için görüntü gömmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri |
+| `gizli` | CONDITIONING | Karşılaştırmalı oluşturma için sıfırlanmış gömmelere sahip negatif koşullandırma verileri |
 | `latent` | LATENT | Boyutları belirtilen video kareleri ve çözünürlükle eşleşen boş bir gizli tensör |
 
 ---

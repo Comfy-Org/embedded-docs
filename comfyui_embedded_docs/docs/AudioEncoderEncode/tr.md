@@ -6,8 +6,8 @@ AudioEncoderEncode düğümü, bir ses kodlayıcı modeli kullanarak ses veriler
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|------------|--------|----------|
-| `audio_encoder` | AUDIO_ENCODER | Zorunlu | - | - | Ses girişini işlemek için kullanılan ses kodlayıcı modeli |
-| `audio` | AUDIO | Zorunlu | - | - | Dalga formu ve örnekleme hızı bilgilerini içeren ses verisi |
+| `ses_kodlayıcı` | AUDIO_ENCODER | Zorunlu | - | - | Ses girişini işlemek için kullanılan ses kodlayıcı modeli |
+| `ses` | AUDIO | Zorunlu | - | - | Dalga formu ve örnekleme hızı bilgilerini içeren ses verisi |
 
 ## Çıkışlar
 

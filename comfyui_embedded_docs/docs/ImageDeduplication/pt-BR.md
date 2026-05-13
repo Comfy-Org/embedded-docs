@@ -6,14 +6,14 @@ Este nó remove imagens duplicadas ou muito semelhantes de um lote. Ele funciona
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | O lote de imagens a ser processado para deduplicação. |
-| `similarity_threshold` | FLOAT | Não | 0.0 - 1.0 | Limite de similaridade (0-1). Quanto maior, mais semelhante. Imagens acima deste limite são consideradas duplicatas. (padrão: 0.95) |
+| `imagens` | IMAGE | Sim | - | O lote de imagens a ser processado para deduplicação. |
+| `limite_de_semelhança` | FLOAT | Não | 0.0 - 1.0 | Limite de similaridade (0-1). Quanto maior, mais semelhante. Imagens acima deste limite são consideradas duplicatas. (padrão: 0.95) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `images` | IMAGE | A lista filtrada de imagens com duplicatas removidas. |
+| `imagens` | IMAGE | A lista filtrada de imagens com duplicatas removidas. |
 
 ---
 **Source fingerprint (SHA-256):** `8904f9dee4ca911821e76d2317983cbc230c4821a9ee7876180bd7dbe42b9a54`

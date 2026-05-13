@@ -6,10 +6,10 @@ Le nœud LTXVScheduler génère des valeurs sigma pour des processus d'échantil
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `steps` | INT | Oui | 1-10000 | Nombre d'étapes d'échantillonnage (par défaut : 20) |
-| `max_shift` | FLOAT | Oui | 0.0-100.0 | Valeur de décalage maximale pour le calcul sigma (par défaut : 2.05) |
-| `base_shift` | FLOAT | Oui | 0.0-100.0 | Valeur de décalage de base pour le calcul sigma (par défaut : 0.95) |
-| `stretch` | BOOLEAN | Oui | Vrai/Faux | Étirer les sigmas pour qu'ils soient dans la plage [terminal, 1] (par défaut : Vrai) |
+| `étapes` | INT | Oui | 1-10000 | Nombre d'étapes d'échantillonnage (par défaut : 20) |
+| `décalage_max` | FLOAT | Oui | 0.0-100.0 | Valeur de décalage maximale pour le calcul sigma (par défaut : 2.05) |
+| `décalage_base` | FLOAT | Oui | 0.0-100.0 | Valeur de décalage de base pour le calcul sigma (par défaut : 0.95) |
+| `étirement` | BOOLEAN | Oui | Vrai/Faux | Étirer les sigmas pour qu'ils soient dans la plage [terminal, 1] (par défaut : Vrai) |
 | `terminal` | FLOAT | Oui | 0.0-0.99 | Valeur terminale des sigmas après étirement (par défaut : 0.1) |
 | `latent` | LATENT | Non | - | Entrée latente facultative utilisée pour calculer le nombre de jetons pour l'ajustement sigma |
 

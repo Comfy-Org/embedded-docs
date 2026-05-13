@@ -6,14 +6,14 @@ El nodo `FeatherMask` aplica un efecto de difuminado en los bordes de una másca
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|--------------|-------------|
-| `mask`    | MASK         | La máscara a la que se aplicará el efecto de difuminado. Determina el área de la imagen que se verá afectada por el difuminado. |
-| `left`    | INT          | Especifica la distancia desde el borde izquierdo dentro de la cual se aplicará el efecto de difuminado. |
-| `top`     | INT          | Especifica la distancia desde el borde superior dentro de la cual se aplicará el efecto de difuminado. |
-| `right`   | INT          | Especifica la distancia desde el borde derecho dentro de la cual se aplicará el efecto de difuminado. |
-| `bottom`  | INT          | Especifica la distancia desde el borde inferior dentro de la cual se aplicará el efecto de difuminado. |
+| `máscara`    | MASK         | La máscara a la que se aplicará el efecto de difuminado. Determina el área de la imagen que se verá afectada por el difuminado. |
+| `izquierda`    | INT          | Especifica la distancia desde el borde izquierdo dentro de la cual se aplicará el efecto de difuminado. |
+| `arriba`     | INT          | Especifica la distancia desde el borde superior dentro de la cual se aplicará el efecto de difuminado. |
+| `derecha`   | INT          | Especifica la distancia desde el borde derecho dentro de la cual se aplicará el efecto de difuminado. |
+| `abajo`  | INT          | Especifica la distancia desde el borde inferior dentro de la cual se aplicará el efecto de difuminado. |
 
 ## Salidas
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|--------------|-------------|
-| `mask`    | MASK         | La salida es una versión modificada de la máscara de entrada con un efecto de difuminado aplicado en sus bordes. |
+| `máscara`    | MASK         | La salida es una versión modificada de la máscara de entrada con un efecto de difuminado aplicado en sus bordes. |

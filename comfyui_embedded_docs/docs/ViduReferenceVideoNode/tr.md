@@ -7,13 +7,13 @@ Vidu Referans Video Düğümü, birden fazla referans görseli ve bir metin iste
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | COMBO | Evet | `"viduq1"` | Video oluşturma için model adı (varsayılan: "viduq1") |
-| `images` | IMAGE | Evet | - | Tutarlı özneler içeren bir video oluşturmak için referans olarak kullanılacak görseller (en fazla 7 görsel) |
+| `görseller` | IMAGE | Evet | - | Tutarlı özneler içeren bir video oluşturmak için referans olarak kullanılacak görseller (en fazla 7 görsel) |
 | `prompt` | STRING | Evet | - | Video oluşturma için metinsel bir açıklama |
-| `duration` | INT | Hayır | 5-5 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5) |
-| `seed` | INT | Hayır | 0-2147483647 | Video oluşturma için tohum değeri (0 rastgele için) (varsayılan: 0) |
-| `aspect_ratio` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Çıktı videosunun en boy oranı (varsayılan: "16:9") |
-| `resolution` | COMBO | Hayır | `"1080p"` | Desteklenen değerler modele ve süreye göre değişebilir (varsayılan: "1080p") |
-| `movement_amplitude` | COMBO | Hayır | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Karedeki nesnelerin hareket genliği (varsayılan: "auto") |
+| `süre` | INT | Hayır | 5-5 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 5) |
+| `tohum` | INT | Hayır | 0-2147483647 | Video oluşturma için tohum değeri (0 rastgele için) (varsayılan: 0) |
+| `en-boy oranı` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Çıktı videosunun en boy oranı (varsayılan: "16:9") |
+| `çözünürlük` | COMBO | Hayır | `"1080p"` | Desteklenen değerler modele ve süreye göre değişebilir (varsayılan: "1080p") |
+| `hareket genliği` | COMBO | Hayır | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Karedeki nesnelerin hareket genliği (varsayılan: "auto") |
 
 **Kısıtlamalar ve Sınırlamalar:**
 
