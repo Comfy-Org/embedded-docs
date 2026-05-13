@@ -9,7 +9,7 @@ Ce nœud supprime les images en double ou très similaires d'un lot. Il fonction
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `images` | IMAGE | Oui | - | Le lot d'images à traiter pour la déduplication. |
-| `similarity_threshold` | FLOAT | Non | 0.0 - 1.0 | Seuil de similarité (0-1). Plus la valeur est élevée, plus les images sont similaires. Les images au-dessus de ce seuil sont considérées comme des doublons. (par défaut : 0.95) |
+| `seuil_de_similarité` | FLOAT | Non | 0.0 - 1.0 | Seuil de similarité (0-1). Plus la valeur est élevée, plus les images sont similaires. Les images au-dessus de ce seuil sont considérées comme des doublons. (par défaut : 0.95) |
 
 ## Sorties
 

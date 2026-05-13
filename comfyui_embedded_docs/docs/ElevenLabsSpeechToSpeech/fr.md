@@ -8,13 +8,13 @@ Le nœud ElevenLabs Speech to Speech transforme un fichier audio d'entrée d'une
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `voice` | CUSTOM | Oui | - | Voix cible pour la transformation. Connectez depuis le sélecteur de voix ou le clonage vocal instantané. |
+| `voix` | CUSTOM | Oui | - | Voix cible pour la transformation. Connectez depuis le sélecteur de voix ou le clonage vocal instantané. |
 | `audio` | AUDIO | Oui | - | Audio source à transformer. |
-| `stability` | FLOAT | Non | 0.0 - 1.0 | Stabilité de la voix. Des valeurs plus faibles offrent une gamme émotionnelle plus large, des valeurs plus élevées produisent une parole plus cohérente mais potentiellement monotone (par défaut : 0.5). |
-| `model` | DYNAMICCOMBO | Non | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` | Modèle à utiliser pour la transformation parole-à-parole. Chaque option fournit un ensemble spécifique de paramètres vocaux (similarity_boost, style, use_speaker_boost, speed). |
-| `output_format` | COMBO | Non | `"mp3_44100_192"`<br>`"opus_48000_192"` | Format de sortie audio (par défaut : "mp3_44100_192"). |
-| `seed` | INT | Non | 0 - 4294967295 | Graine pour la reproductibilité (par défaut : 0). |
-| `remove_background_noise` | BOOLEAN | Non | - | Supprimer le bruit de fond de l'audio d'entrée en utilisant l'isolation audio (par défaut : False). |
+| `stabilité` | FLOAT | Non | 0.0 - 1.0 | Stabilité de la voix. Des valeurs plus faibles offrent une gamme émotionnelle plus large, des valeurs plus élevées produisent une parole plus cohérente mais potentiellement monotone (par défaut : 0.5). |
+| `modèle` | DYNAMICCOMBO | Non | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` | Modèle à utiliser pour la transformation parole-à-parole. Chaque option fournit un ensemble spécifique de paramètres vocaux (similarity_boost, style, use_speaker_boost, speed). |
+| `format_de_sortie` | COMBO | Non | `"mp3_44100_192"`<br>`"opus_48000_192"` | Format de sortie audio (par défaut : "mp3_44100_192"). |
+| `graine` | INT | Non | 0 - 4294967295 | Graine pour la reproductibilité (par défaut : 0). |
+| `supprimer_bruit_de_fond` | BOOLEAN | Non | - | Supprimer le bruit de fond de l'audio d'entrée en utilisant l'isolation audio (par défaut : False). |
 
 ## Sorties
 

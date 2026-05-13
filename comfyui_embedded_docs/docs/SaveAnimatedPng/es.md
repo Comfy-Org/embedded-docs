@@ -6,10 +6,10 @@ El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG anima
 
 | Campo             | Tipo de Dato | Descripción                                                                         |
 |-------------------|--------------|-------------------------------------------------------------------------------------|
-| `images`          | `IMAGE`      | Una lista de imágenes que se procesarán y guardarán como un PNG animado. Cada imagen en la lista representa un fotograma de la animación. |
-| `filename_prefix` | `STRING`     | Especifica el nombre base del archivo de salida, que se utilizará como prefijo para los archivos PNG animados generados. |
+| `imágenes`          | `IMAGE`      | Una lista de imágenes que se procesarán y guardarán como un PNG animado. Cada imagen en la lista representa un fotograma de la animación. |
+| `prefijo_nombre_archivo` | `STRING`     | Especifica el nombre base del archivo de salida, que se utilizará como prefijo para los archivos PNG animados generados. |
 | `fps`             | `FLOAT`      | La velocidad de fotogramas por segundo de la animación, que controla la rapidez con la que se muestran los fotogramas. |
-| `compress_level`  | `INT`        | El nivel de compresión aplicado a los archivos PNG animados, que afecta el tamaño del archivo y la claridad de la imagen. |
+| `nivel_compresión`  | `INT`        | El nivel de compresión aplicado a los archivos PNG animados, que afecta el tamaño del archivo y la claridad de la imagen. |
 
 ## Salidas
 

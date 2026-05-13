@@ -17,8 +17,8 @@ Este nodo prepara una secuencia de fotogramas clave para un segmento específico
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `keyframes_sequence` | IMAGE | Secuencia de fotogramas clave rellenada para el segmento especificado. |
-| `keyframes_mask` | MASK | Máscara que indica los fotogramas válidos (1 para posiciones de fotogramas clave, 0 para posiciones rellenadas). |
+| `keyframes_mask` | IMAGE | Secuencia de fotogramas clave rellenada para el segmento especificado. |
+| `audio_segment` | MASK | Máscara que indica los fotogramas válidos (1 para posiciones de fotogramas clave, 0 para posiciones rellenadas). |
 | `audio_segment` | AUDIO | Segmento de audio correspondiente a este segmento de video. |
 
 ---

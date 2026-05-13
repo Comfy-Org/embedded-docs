@@ -7,9 +7,9 @@ Bu düğüm, bir 3B model üzerinde akıllı yeniden topoloji gerçekleştirerek
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model_3d` | FILE3D | Evet | - | Giriş 3B modeli (GLB veya OBJ). Dosya GLB veya OBJ formatında olmalı ve 200MB'ı geçemez. |
-| `polygon_type` | STRING | Evet | `"triangle"`<br>`"quadrilateral"` | Yüzey bileşim türü. |
-| `face_level` | STRING | Evet | `"medium"`<br>`"high"`<br>`"low"` | Çokgen azaltma seviyesi. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) |
+| `poligon_tipi` | STRING | Evet | `"triangle"`<br>`"quadrilateral"` | Yüzey bileşim türü. |
+| `yüz seviyesi` | STRING | Evet | `"medium"`<br>`"high"`<br>`"low"` | Çokgen azaltma seviyesi. |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) |
 
 **Not:** `seed` parametresi düğümün yeniden çalıştırılmasını tetiklemek için kullanılır, ancak nihai çıktının aynı tohum değeri için aynı olacağı garanti edilmez.
 

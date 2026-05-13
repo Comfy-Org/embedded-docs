@@ -6,8 +6,8 @@ O nó BasicGuider cria um mecanismo de orientação simples para o processo de a
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo a ser usado para orientação |
-| `conditioning` | CONDITIONING | Sim | - | Os dados de condicionamento que orientam o processo de geração |
+| `modelo` | MODEL | Sim | - | O modelo a ser usado para orientação |
+| `condicionamento` | CONDITIONING | Sim | - | Os dados de condicionamento que orientam o processo de geração |
 
 ## Saídas
 

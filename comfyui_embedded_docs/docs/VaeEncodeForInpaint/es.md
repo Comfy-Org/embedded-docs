@@ -6,10 +6,10 @@ Este nodo está diseñado para codificar imágenes en una representación latent
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `pixels`  | `IMAGE`     | La imagen de entrada que se va a codificar. Esta imagen se somete a un preprocesamiento y redimensionamiento para que coincida con las dimensiones de entrada esperadas por el modelo VAE antes de la codificación. |
+| `píxeles`  | `IMAGE`     | La imagen de entrada que se va a codificar. Esta imagen se somete a un preprocesamiento y redimensionamiento para que coincida con las dimensiones de entrada esperadas por el modelo VAE antes de la codificación. |
 | `vae`     | VAE       | El modelo VAE utilizado para codificar la imagen en su representación latente. Desempeña un papel crucial en el proceso de transformación, determinando la calidad y las características del espacio latente de salida. |
-| `mask`    | `MASK`      | Una máscara que indica las regiones de la imagen de entrada que se van a inpaint. Se utiliza para modificar la imagen antes de la codificación, asegurando que el VAE se centre en las áreas relevantes. |
-| `grow_mask_by` | `INT` | Especifica cuánto expandir la máscara de inpainting para garantizar transiciones sin fisuras en el espacio latente. Un valor mayor aumenta el área afectada por el inpainting. |
+| `máscara`    | `MASK`      | Una máscara que indica las regiones de la imagen de entrada que se van a inpaint. Se utiliza para modificar la imagen antes de la codificación, asegurando que el VAE se centre en las áreas relevantes. |
+| `crecer_máscara_por` | `INT` | Especifica cuánto expandir la máscara de inpainting para garantizar transiciones sin fisuras en el espacio latente. Un valor mayor aumenta el área afectada por el inpainting. |
 
 ## Salidas
 

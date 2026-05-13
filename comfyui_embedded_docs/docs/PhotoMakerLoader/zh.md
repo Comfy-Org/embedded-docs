@@ -6,7 +6,7 @@ PhotoMakerLoader 节点从可用的模型文件中加载 PhotoMaker 模型。它
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `photomaker_model_name` | STRING | 是 | 多个可用选项 | 要加载的 PhotoMaker 模型文件名。可用选项由 `photomaker` 文件夹中存在的模型文件决定。 |
+| `photomaker模型名称` | STRING | 是 | 多个可用选项 | 要加载的 PhotoMaker 模型文件名。可用选项由 `photomaker` 文件夹中存在的模型文件决定。 |
 
 ## 输出
 

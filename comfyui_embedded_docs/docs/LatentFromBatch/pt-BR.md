@@ -6,9 +6,9 @@ Este nó foi projetado para extrair um subconjunto específico de amostras laten
 
 | Parâmetro      | Tipo de Dado | Descrição |
 |----------------|--------------|-----------|
-| `samples`      | `LATENT`     | A coleção de amostras latentes da qual um subconjunto será extraído. Este parâmetro é essencial para determinar o lote de origem das amostras a serem processadas. |
-| `batch_index`  | `INT`        | Especifica o índice inicial dentro do lote a partir do qual o subconjunto de amostras começará. Este parâmetro permite a extração direcionada de amostras de posições específicas no lote. |
-| `length`       | `INT`        | Define o número de amostras a serem extraídas a partir do índice inicial especificado. Este parâmetro controla o tamanho do subconjunto a ser processado, permitindo manipulação flexível de segmentos do lote. |
+| `amostras`      | `LATENT`     | A coleção de amostras latentes da qual um subconjunto será extraído. Este parâmetro é essencial para determinar o lote de origem das amostras a serem processadas. |
+| `índice_do_lote`  | `INT`        | Especifica o índice inicial dentro do lote a partir do qual o subconjunto de amostras começará. Este parâmetro permite a extração direcionada de amostras de posições específicas no lote. |
+| `comprimento`       | `INT`        | Define o número de amostras a serem extraídas a partir do índice inicial especificado. Este parâmetro controla o tamanho do subconjunto a ser processado, permitindo manipulação flexível de segmentos do lote. |
 
 ## Saídas
 

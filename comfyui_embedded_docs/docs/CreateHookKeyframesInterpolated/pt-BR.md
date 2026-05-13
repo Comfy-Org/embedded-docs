@@ -6,14 +6,14 @@ Cria uma sequência de keyframes de hook com valores de intensidade interpolados
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `strength_start` | FLOAT | Sim | 0.0 - 10.0 | O valor inicial de intensidade para a sequência de interpolação (padrão: 1.0) |
-| `strength_end` | FLOAT | Sim | 0.0 - 10.0 | O valor final de intensidade para a sequência de interpolação (padrão: 1.0) |
-| `interpolation` | COMBO | Sim | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | O método de interpolação usado para fazer a transição entre os valores de intensidade (padrão: LINEAR) |
-| `start_percent` | FLOAT | Sim | 0.0 - 1.0 | A posição percentual inicial no processo de geração (padrão: 0.0) |
-| `end_percent` | FLOAT | Sim | 0.0 - 1.0 | A posição percentual final no processo de geração (padrão: 1.0) |
-| `keyframes_count` | INT | Sim | 2 - 100 | O número de keyframes a serem gerados na sequência de interpolação (padrão: 5) |
-| `print_keyframes` | BOOLEAN | Sim | True/False | Se deve imprimir as informações dos keyframes gerados no log (padrão: False) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Não | - | Grupo opcional de keyframes de hook anterior para anexar |
+| `força_inicial` | FLOAT | Sim | 0.0 - 10.0 | O valor inicial de intensidade para a sequência de interpolação (padrão: 1.0) |
+| `força_final` | FLOAT | Sim | 0.0 - 10.0 | O valor final de intensidade para a sequência de interpolação (padrão: 1.0) |
+| `interpolação` | COMBO | Sim | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | O método de interpolação usado para fazer a transição entre os valores de intensidade (padrão: LINEAR) |
+| `percentual_inicial` | FLOAT | Sim | 0.0 - 1.0 | A posição percentual inicial no processo de geração (padrão: 0.0) |
+| `percentual_final` | FLOAT | Sim | 0.0 - 1.0 | A posição percentual final no processo de geração (padrão: 1.0) |
+| `quantidade_keyframes` | INT | Sim | 2 - 100 | O número de keyframes a serem gerados na sequência de interpolação (padrão: 5) |
+| `imprimir_keyframes` | BOOLEAN | Sim | True/False | Se deve imprimir as informações dos keyframes gerados no log (padrão: False) |
+| `hook_kf_anterior` | HOOK_KEYFRAMES | Não | - | Grupo opcional de keyframes de hook anterior para anexar |
 
 ## Saídas
 

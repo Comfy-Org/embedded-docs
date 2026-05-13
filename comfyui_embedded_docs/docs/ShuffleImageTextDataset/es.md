@@ -16,7 +16,7 @@ Este nodo mezcla una lista de imágenes y una lista de textos de forma conjunta,
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `images` | IMAGE | La lista mezclada de imágenes. |
+| `texts` | IMAGE | La lista mezclada de imágenes. |
 | `texts` | STRING | La lista mezclada de textos, manteniendo sus emparejamientos originales con las imágenes. |
 
 ---

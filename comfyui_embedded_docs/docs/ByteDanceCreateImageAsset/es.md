@@ -18,7 +18,7 @@ Este nodo crea un activo de imagen personal para el servicio Seedance 2.0 de Byt
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `asset_id` | STRING | El identificador único para el activo de imagen recién creado. |
+| `group_id` | STRING | El identificador único para el activo de imagen recién creado. |
 | `group_id` | STRING | El identificador para el grupo de activos. Será el `group_id` proporcionado o uno recién creado. |
 
 ---

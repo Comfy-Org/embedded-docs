@@ -10,7 +10,7 @@ O nó AudioMerge combina duas faixas de áudio sobrepondo suas formas de onda. E
 |-----------|--------------|-------------|-------|-----------|
 | `audio1` | AUDIO | Sim | - | Primeira entrada de áudio a ser mesclada |
 | `audio2` | AUDIO | Sim | - | Segunda entrada de áudio a ser mesclada |
-| `merge_method` | COMBO | Sim | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | O método usado para combinar as formas de onda de áudio. |
+| `método_de_mesclagem` | COMBO | Sim | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | O método usado para combinar as formas de onda de áudio. |
 
 ## Saídas
 

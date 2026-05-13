@@ -6,13 +6,13 @@ LTXV Görüntüden Videoya düğümü, tek bir başlangıç görüntüsünden pr
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | - | Video için kullanılacak ilk kare. |
+| `görüntü` | IMAGE | Evet | - | Video için kullanılacak ilk kare. |
 | `model` | COMBO | Evet | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` | Video oluşturma için kullanılacak yapay zeka modeli. "Fast" modeli hız için optimize edilmiştir, "Quality" modeli ise görsel kaliteyi önceliklendirir. |
 | `prompt` | STRING | Evet | - | Oluşturulan videonun içeriğini ve hareketini yönlendiren bir metin açıklaması. |
-| `duration` | COMBO | Evet | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | Videonun saniye cinsinden uzunluğu (varsayılan: 8). |
-| `resolution` | COMBO | Evet | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | Oluşturulan videonun çıktı çözünürlüğü. |
+| `süre` | COMBO | Evet | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | Videonun saniye cinsinden uzunluğu (varsayılan: 8). |
+| `çözünürlük` | COMBO | Evet | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | Oluşturulan videonun çıktı çözünürlüğü. |
 | `fps` | COMBO | Evet | `25`<br>`50` | Video için saniyedeki kare sayısı (varsayılan: 25). |
-| `generate_audio` | BOOLEAN | Hayır | - | True olduğunda, oluşturulan video sahneye uygun yapay zeka tarafından oluşturulmuş ses içerecektir (varsayılan: False). |
+| `ses_oluştur` | BOOLEAN | Hayır | - | True olduğunda, oluşturulan video sahneye uygun yapay zeka tarafından oluşturulmuş ses içerecektir (varsayılan: False). |
 
 **Önemli Kısıtlamalar:**
 

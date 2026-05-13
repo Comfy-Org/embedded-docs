@@ -7,7 +7,7 @@ Le nœud `ImageBlur` applique un flou gaussien à une image, permettant d'adouci
 | Champ          | Type de données | Description                                                                   |
 |----------------|-----------------|-------------------------------------------------------------------------------|
 | `image`        | `IMAGE`         | L'image d'entrée à flouter. C'est la cible principale de l'effet de flou.     |
-| `blur_radius`  | `INT`           | Détermine le rayon de l'effet de flou. Un rayon plus important produit un flou plus prononcé. |
+| `rayon_flou`  | `INT`           | Détermine le rayon de l'effet de flou. Un rayon plus important produit un flou plus prononcé. |
 | `sigma`        | `FLOAT`         | Contrôle l'étendue du flou. Une valeur sigma plus élevée signifie que le flou affectera une zone plus large autour de chaque pixel. |
 
 ## Sorties

@@ -6,8 +6,8 @@ Cria controles Recraft para personalizar a geração Recraft. Este nó permite c
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `colors` | COLOR | Não | - | Definições de cor para os elementos principais |
-| `background_color` | COLOR | Não | - | Definição da cor de fundo |
+| `cores` | COLOR | Não | - | Definições de cor para os elementos principais |
+| `cor_de_fundo` | COLOR | Não | - | Definição da cor de fundo |
 
 ## Saídas
 

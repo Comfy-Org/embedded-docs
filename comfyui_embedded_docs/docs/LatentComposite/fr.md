@@ -6,14 +6,14 @@ Le nœud LatentComposite est conçu pour fusionner ou combiner deux représentat
 
 | Paramètre | Type de données | Description |
 |--------------|-------------|-------------|
-| `samples_to` | `LATENT`    | La représentation latente `samples_to` sur laquelle la `samples_from` sera composée. Elle sert de base à l'opération de composition. |
-| `samples_from` | `LATENT` | La représentation latente `samples_from` à composer sur la `samples_to`. Elle apporte ses caractéristiques ou propriétés à la sortie composite finale. |
-| `x`          | `INT`      | La coordonnée x (position horizontale) où la latente `samples_from` sera placée sur la `samples_to`. Elle détermine l'alignement horizontal du composite. |
-| `y`          | `INT`      | La coordonnée y (position verticale) où la latente `samples_from` sera placée sur la `samples_to`. Elle détermine l'alignement vertical du composite. |
-| `feather`    | `INT`      | Un indicateur booléen précisant si la latente `samples_from` doit être redimensionnée pour correspondre à la `samples_to` avant la composition. Cela peut affecter l'échelle et les proportions du résultat composite. |
+| `échantillons_vers` | `LATENT`    | La représentation latente `échantillons_vers` sur laquelle la `échantillons_de` sera composée. Elle sert de base à l'opération de composition. |
+| `échantillons_de` | `LATENT` | La représentation latente `échantillons_de` à composer sur la `échantillons_vers`. Elle apporte ses caractéristiques ou propriétés à la sortie composite finale. |
+| `x`          | `INT`      | La coordonnée x (position horizontale) où la latente `échantillons_de` sera placée sur la `échantillons_vers`. Elle détermine l'alignement horizontal du composite. |
+| `y`          | `INT`      | La coordonnée y (position verticale) où la latente `échantillons_de` sera placée sur la `échantillons_vers`. Elle détermine l'alignement vertical du composite. |
+| `plume`    | `INT`      | Un indicateur booléen précisant si la latente `échantillons_de` doit être redimensionnée pour correspondre à la `échantillons_vers` avant la composition. Cela peut affecter l'échelle et les proportions du résultat composite. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | La sortie est une représentation latente composite, fusionnant les caractéristiques des latentes `samples_to` et `samples_from` en fonction des coordonnées spécifiées et de l'option de redimensionnement. |
+| `latent`  | `LATENT`    | La sortie est une représentation latente composite, fusionnant les caractéristiques des latentes `échantillons_vers` et `échantillons_de` en fonction des coordonnées spécifiées et de l'option de redimensionnement. |

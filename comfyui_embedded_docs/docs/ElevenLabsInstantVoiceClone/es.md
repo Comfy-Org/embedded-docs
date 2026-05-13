@@ -7,7 +7,7 @@ El nodo de Clonación Instantánea de Voz de ElevenLabs crea un modelo de voz nu
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `audio_*` | AUDIO | Sí | 1 a 8 archivos | Grabaciones de audio para la clonación de voz. Debes proporcionar entre 1 y 8 archivos de audio. |
-| `remove_background_noise` | BOOLEAN | No | Verdadero / Falso | Elimina el ruido de fondo de las muestras de voz mediante aislamiento de audio. (predeterminado: Falso) |
+| `eliminar_ruido_de_fondo` | BOOLEAN | No | Verdadero / Falso | Elimina el ruido de fondo de las muestras de voz mediante aislamiento de audio. (predeterminado: Falso) |
 
 **Nota:** Debes proporcionar al menos un archivo de audio, y puedes proporcionar hasta ocho. El nodo creará automáticamente ranuras de entrada para los archivos de audio que agregues.
 

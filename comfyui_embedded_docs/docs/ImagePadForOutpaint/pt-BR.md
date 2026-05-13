@@ -6,16 +6,16 @@ Este nó foi projetado para preparar imagens para o processo de extrapolação (
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | A entrada 'image' é a imagem principal a ser preparada para extrapolação, servindo como base para as operações de preenchimento. |
-| `left`    | `INT`         | Especifica a quantidade de preenchimento a ser adicionada ao lado esquerdo da imagem, influenciando a área expandida para extrapolação. |
-| `top`     | `INT`         | Determina a quantidade de preenchimento a ser adicionada ao topo da imagem, afetando a expansão vertical para extrapolação. |
-| `right`   | `INT`         | Define a quantidade de preenchimento a ser adicionada ao lado direito da imagem, impactando a expansão horizontal para extrapolação. |
-| `bottom`  | `INT`         | Indica a quantidade de preenchimento a ser adicionada à parte inferior da imagem, contribuindo para a expansão vertical para extrapolação. |
-| `feathering` | `INT`      | Controla a suavidade da transição entre a imagem original e o preenchimento adicionado, melhorando a integração visual para extrapolação. |
+| `imagem`   | `IMAGE`       | A entrada 'image' é a imagem principal a ser preparada para extrapolação, servindo como base para as operações de preenchimento. |
+| `esquerda`    | `INT`         | Especifica a quantidade de preenchimento a ser adicionada ao lado esquerdo da imagem, influenciando a área expandida para extrapolação. |
+| `superior`     | `INT`         | Determina a quantidade de preenchimento a ser adicionada ao topo da imagem, afetando a expansão vertical para extrapolação. |
+| `direita`   | `INT`         | Define a quantidade de preenchimento a ser adicionada ao lado direito da imagem, impactando a expansão horizontal para extrapolação. |
+| `inferior`  | `INT`         | Indica a quantidade de preenchimento a ser adicionada à parte inferior da imagem, contribuindo para a expansão vertical para extrapolação. |
+| `suavização` | `INT`      | Controla a suavidade da transição entre a imagem original e o preenchimento adicionado, melhorando a integração visual para extrapolação. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | A saída 'image' representa a imagem com preenchimento, pronta para o processo de extrapolação. |
+| `imagem`   | `IMAGE`       | A saída 'image' representa a imagem com preenchimento, pronta para o processo de extrapolação. |
 | `mask`    | `MASK`        | A saída 'mask' indica as áreas da imagem original e do preenchimento adicionado, sendo útil para orientar os algoritmos de extrapolação. |

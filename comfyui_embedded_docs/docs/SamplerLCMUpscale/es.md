@@ -6,9 +6,9 @@ El nodo SamplerLCMUpscale proporciona un método de muestreo especializado que c
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `scale_ratio` | FLOAT | No | 0.1 - 20.0 | El factor de escala a aplicar durante la ampliación (predeterminado: 1.0) |
-| `scale_steps` | INT | No | -1 - 1000 | El número de pasos a utilizar para el proceso de ampliación. Use -1 para cálculo automático (predeterminado: -1) |
-| `upscale_method` | COMBO | Sí | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | El método de interpolación utilizado para ampliar la imagen |
+| `relación_escala` | FLOAT | No | 0.1 - 20.0 | El factor de escala a aplicar durante la ampliación (predeterminado: 1.0) |
+| `pasos_escala` | INT | No | -1 - 1000 | El número de pasos a utilizar para el proceso de ampliación. Use -1 para cálculo automático (predeterminado: -1) |
+| `método_aumento_escala` | COMBO | Sí | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | El método de interpolación utilizado para ampliar la imagen |
 
 ## Salidas
 

@@ -6,9 +6,9 @@ El nodo StringConcatenate combina dos cadenas de texto en una sola uniéndolas c
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string_a` | STRING | Sí | - | La primera cadena de texto a concatenar |
-| `string_b` | STRING | Sí | - | La segunda cadena de texto a concatenar |
-| `delimiter` | STRING | No | - | El carácter o cadena a insertar entre las dos cadenas de entrada (predeterminado: cadena vacía) |
+| `cadena_a` | STRING | Sí | - | La primera cadena de texto a concatenar |
+| `cadena_b` | STRING | Sí | - | La segunda cadena de texto a concatenar |
+| `delimitador` | STRING | No | - | El carácter o cadena a insertar entre las dos cadenas de entrada (predeterminado: cadena vacía) |
 
 ## Salidas
 

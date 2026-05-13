@@ -6,7 +6,7 @@ El nodo TripoRefineNode refina modelos 3D preliminares creados específicamente 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | Sí | - | Debe ser un modelo Tripo v1.4 |
+| `ID_de_tarea_del_modelo` | MODEL_TASK_ID | Sí | - | Debe ser un modelo Tripo v1.4 |
 
 **Nota:** Este nodo solo acepta modelos preliminares creados por modelos Tripo v1.4. El uso de modelos de otras versiones puede provocar errores.
 
@@ -14,8 +14,8 @@ El nodo TripoRefineNode refina modelos 3D preliminares creados específicamente 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model_file` | STRING | La ruta de archivo o referencia al modelo refinado (solo para compatibilidad hacia atrás) |
-| `model task_id` | MODEL_TASK_ID | El identificador de tarea para la operación del modelo refinado |
+| `id_de_tarea_de_modelo` | STRING | La ruta de archivo o referencia al modelo refinado (solo para compatibilidad hacia atrás) |
+| `GLB` | MODEL_TASK_ID | El identificador de tarea para la operación del modelo refinado |
 | `GLB` | FILE3DGLB | El modelo 3D refinado en formato GLB |
 
 ---

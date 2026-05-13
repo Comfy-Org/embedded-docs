@@ -7,7 +7,7 @@ El nodo SaveAudio guarda datos de audio en un archivo en formato FLAC. Toma una 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `audio` | AUDIO | Sí | - | Los datos de audio que se guardarán |
-| `filename_prefix` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") |
 
 *Nota: Los parámetros `prompt` y `extra_pnginfo` están ocultos y son manejados automáticamente por el sistema.*
 

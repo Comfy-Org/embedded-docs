@@ -29,9 +29,9 @@
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Oluşturulan GLB modelinin dosya adı. (Geriye dönük uyumluluk için korunmaktadır). |
-| `meshy_task_id` | MESHY_TASK_ID | Referans veya sorun giderme amacıyla kullanılabilen Meshy API görevi için benzersiz tanımlayıcı. |
-| `GLB` | FILE3DGLB | GLB dosya formatında oluşturulan 3B model. |
+| `meshy_task_id` | STRING | Oluşturulan GLB modelinin dosya adı. (Geriye dönük uyumluluk için korunmaktadır). |
+| `GLB` | MESHY_TASK_ID | Referans veya sorun giderme amacıyla kullanılabilen Meshy API görevi için benzersiz tanımlayıcı. |
+| `FBX` | FILE3DGLB | GLB dosya formatında oluşturulan 3B model. |
 | `FBX` | FILE3DFBX | FBX dosya formatında oluşturulan 3B model. |
 
 ---

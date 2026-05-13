@@ -8,13 +8,13 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive_NEW` | CONDITIONING | 是 | - | 要修改的正向條件輸入 |
-| `negative_NEW` | CONDITIONING | 是 | - | 要修改的負向條件輸入 |
-| `strength` | FLOAT | 是 | 0.0 至 10.0 | 套用於條件的強度乘數（預設值：1.0） |
-| `set_cond_area` | STRING | 是 | "default"<br>"mask bounds" | 決定條件區域的計算方式（預設值："default"） |
-| `mask` | MASK | 否 | - | 可選遮罩，用於限制條件區域 |
+| `正向_NEW` | CONDITIONING | 是 | - | 要修改的正向條件輸入 |
+| `負向_NEW` | CONDITIONING | 是 | - | 要修改的負向條件輸入 |
+| `強度` | FLOAT | 是 | 0.0 至 10.0 | 套用於條件的強度乘數（預設值：1.0） |
+| `設定條件區域` | STRING | 是 | "default"<br>"mask bounds" | 決定條件區域的計算方式（預設值："default"） |
+| `遮罩` | MASK | 否 | - | 可選遮罩，用於限制條件區域 |
 | `hooks` | HOOKS | 否 | - | 用於進階條件修改的可選鉤子群組 |
-| `timesteps` | TIMESTEPS_RANGE | 否 | - | 可選時間步範圍，用於限制條件套用的時機 |
+| `時間步驟` | TIMESTEPS_RANGE | 否 | - | 可選時間步範圍，用於限制條件套用的時機 |
 
 ### 輸出
 

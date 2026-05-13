@@ -7,9 +7,9 @@ O nó PhotoMakerEncode processa imagens e texto para gerar dados de condicioname
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `photomaker` | PHOTOMAKER | Sim | - | O modelo PhotoMaker usado para processar a imagem e gerar embeddings |
-| `image` | IMAGE | Sim | - | A imagem de referência que fornece características visuais para o condicionamento |
+| `imagem` | IMAGE | Sim | - | A imagem de referência que fornece características visuais para o condicionamento |
 | `clip` | CLIP | Sim | - | O modelo CLIP usado para tokenização e codificação de texto |
-| `text` | STRING | Sim | - | O prompt de texto para geração de condicionamento (padrão: "photograph of photomaker") |
+| `texto` | STRING | Sim | - | O prompt de texto para geração de condicionamento (padrão: "photograph of photomaker") |
 
 **Observação:** Quando o texto contém a palavra "photomaker", o nó aplica condicionamento baseado em imagem naquela posição do prompt. Se "photomaker" não for encontrado no texto, o nó gera condicionamento de texto padrão sem influência da imagem.
 

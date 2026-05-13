@@ -7,8 +7,8 @@ El nodo **Center Crop Images** recorta una imagen desde su centro hasta un ancho
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `image` | IMAGE | Sí | - | La imagen de entrada que se va a recortar. |
-| `width` | INT | Sí | 1 a 8192 | El ancho del área de recorte (predeterminado: 512). |
-| `height` | INT | Sí | 1 a 8192 | El alto del área de recorte (predeterminado: 512). |
+| `ancho` | INT | Sí | 1 a 8192 | El ancho del área de recorte (predeterminado: 512). |
+| `alto` | INT | Sí | 1 a 8192 | El alto del área de recorte (predeterminado: 512). |
 
 ## Salidas
 

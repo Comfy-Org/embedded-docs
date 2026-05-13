@@ -6,7 +6,7 @@ Le nœud `ExponentialScheduler` est conçu pour générer une séquence de valeu
 
 | Paramètre   | Type de données | Description                                                                                   |
 |-------------|-----------------|---------------------------------------------------------------------------------------------|
-| `steps`     | INT             | Spécifie le nombre d'étapes dans le processus de diffusion. Il influence la longueur de la séquence sigma générée et donc la granularité de l'application du bruit. |
+| `étapes`     | INT             | Spécifie le nombre d'étapes dans le processus de diffusion. Il influence la longueur de la séquence sigma générée et donc la granularité de l'application du bruit. |
 | `sigma_max` | FLOAT           | Définit la valeur sigma maximale, fixant la limite supérieure de l'intensité du bruit dans le processus de diffusion. Il joue un rôle crucial dans la détermination de la plage des niveaux de bruit appliqués. |
 | `sigma_min` | FLOAT           | Définit la valeur sigma minimale, établissant la limite inférieure de l'intensité du bruit. Ce paramètre permet d'affiner le point de départ de l'application du bruit. |
 

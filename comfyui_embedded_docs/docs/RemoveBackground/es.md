@@ -8,8 +8,8 @@ El nodo Remove Background utiliza un modelo de eliminación de fondo para genera
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | N/A | Imagen de entrada a la que se le eliminará el fondo |
-| `bg_removal_model` | BACKGROUND_REMOVAL_MODEL | Sí | N/A | Modelo de eliminación de fondo utilizado para generar la máscara |
+| `imagen` | IMAGE | Sí | N/A | Imagen de entrada a la que se le eliminará el fondo |
+| `modelo_de_eliminación_de_fondo` | BACKGROUND_REMOVAL_MODEL | Sí | N/A | Modelo de eliminación de fondo utilizado para generar la máscara |
 
 ## Salidas
 

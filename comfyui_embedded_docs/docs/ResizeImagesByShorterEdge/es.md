@@ -7,7 +7,7 @@ Este nodo redimensiona imágenes para que el borde más corto coincida con una l
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `image` | IMAGE | Sí | - | La imagen de entrada que se va a redimensionar. |
-| `shorter_edge` | INT | No | 1 a 8192 | Longitud objetivo para el borde más corto. (predeterminado: 512) |
+| `borde_más_corto` | INT | No | 1 a 8192 | Longitud objetivo para el borde más corto. (predeterminado: 512) |
 
 ## Salidas
 

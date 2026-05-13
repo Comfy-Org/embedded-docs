@@ -10,7 +10,7 @@ O nó CLIPTextEncodeSD3 processa entradas de texto para modelos Stable Diffusion
 | `clip_l` | STRING | Sim | - | Entrada de texto para o modelo CLIP local. Suporta texto multilinha e prompts dinâmicos. |
 | `clip_g` | STRING | Sim | - | Entrada de texto para o modelo CLIP global. Suporta texto multilinha e prompts dinâmicos. |
 | `t5xxl` | STRING | Sim | - | Entrada de texto para o modelo T5-XXL. Suporta texto multilinha e prompts dinâmicos. |
-| `empty_padding` | COMBO | Sim | `"none"`<br>`"empty_prompt"` | Controla como entradas de texto vazias são tratadas. Quando definido como "none", entradas de texto vazias para `clip_g`, `clip_l` ou `t5xxl` resultarão em listas de tokens vazias em vez de preenchimento. Este é um parâmetro avançado (padrão: "none"). |
+| `preenchimento_vazio` | COMBO | Sim | `"none"`<br>`"empty_prompt"` | Controla como entradas de texto vazias são tratadas. Quando definido como "none", entradas de texto vazias para `clip_g`, `clip_l` ou `t5xxl` resultarão em listas de tokens vazias em vez de preenchimento. Este é um parâmetro avançado (padrão: "none"). |
 
 **Restrições dos Parâmetros:**
 

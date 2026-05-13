@@ -8,7 +8,7 @@ Gera vídeos a partir de descrições textuais usando a API Veo 3 do Google. Est
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Descrição textual do vídeo (padrão: "") |
 | `aspect_ratio` | COMBO | Sim | "16:9"<br>"9:16" | Proporção de tela do vídeo de saída (padrão: "16:9") |
-| `resolution` | COMBO | Não | "720p"<br>"1080p"<br>"4k" | Resolução do vídeo de saída. 4K não está disponível para os modelos veo-3.1-lite e veo-3.0. (padrão: "720p") |
+| `resolução` | COMBO | Não | "720p"<br>"1080p"<br>"4k" | Resolução do vídeo de saída. 4K não está disponível para os modelos veo-3.1-lite e veo-3.0. (padrão: "720p") |
 | `negative_prompt` | STRING | Não | - | Prompt textual negativo para orientar o que evitar no vídeo (padrão: "") |
 | `duration_seconds` | INT | Não | 4-8 | Duração do vídeo de saída em segundos, em intervalos de 2 (padrão: 8) |
 | `enhance_prompt` | BOOLEAN | Não | - | Este parâmetro está obsoleto e é ignorado. (padrão: True) |

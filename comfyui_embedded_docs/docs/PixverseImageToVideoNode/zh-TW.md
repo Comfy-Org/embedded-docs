@@ -6,14 +6,14 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 要轉換為影片的輸入圖像 |
-| `prompt` | STRING | 是 | - | 用於影片生成的提示詞 |
-| `quality` | COMBO | 是 | `res_540p`<br>`res_1080p` | 影片品質設定（預設值：res_540p） |
-| `duration_seconds` | COMBO | 是 | `dur_2`<br>`dur_5`<br>`dur_10` | 生成影片的持續時間（秒） |
-| `motion_mode` | COMBO | 是 | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` | 套用於影片生成的動態風格 |
-| `seed` | INT | 是 | 0-2147483647 | 影片生成的隨機種子（預設值：0） |
-| `negative_prompt` | STRING | 否 | - | 對圖像中不希望出現元素的選用文字描述 |
-| `pixverse_template` | CUSTOM | 否 | - | 用於影響生成風格的選用範本，由 PixVerse 範本節點建立 |
+| `圖像` | IMAGE | 是 | - | 要轉換為影片的輸入圖像 |
+| `提示詞` | STRING | 是 | - | 用於影片生成的提示詞 |
+| `品質` | COMBO | 是 | `res_540p`<br>`res_1080p` | 影片品質設定（預設值：res_540p） |
+| `持續秒數` | COMBO | 是 | `dur_2`<br>`dur_5`<br>`dur_10` | 生成影片的持續時間（秒） |
+| `動作模式` | COMBO | 是 | `normal`<br>`fast`<br>`slow`<br>`zoom_in`<br>`zoom_out`<br>`pan_left`<br>`pan_right`<br>`pan_up`<br>`pan_down`<br>`tilt_up`<br>`tilt_down`<br>`roll_clockwise`<br>`roll_counterclockwise` | 套用於影片生成的動態風格 |
+| `種子值` | INT | 是 | 0-2147483647 | 影片生成的隨機種子（預設值：0） |
+| `負向提示詞` | STRING | 否 | - | 對圖像中不希望出現元素的選用文字描述 |
+| `PixVerse 樣板` | CUSTOM | 否 | - | 用於影響生成風格的選用範本，由 PixVerse 範本節點建立 |
 
 **注意：** 使用 1080p 品質時，動態模式會自動設為 normal，且持續時間限制為 5 秒。若持續時間非 5 秒，動態模式也會自動設為 normal。
 

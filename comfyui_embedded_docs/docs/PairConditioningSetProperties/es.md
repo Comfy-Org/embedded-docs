@@ -6,19 +6,19 @@ El nodo **PairConditioningSetProperties** permite modificar propiedades de pares
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `positive_NEW` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo a modificar |
-| `negative_NEW` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo a modificar |
-| `strength` | FLOAT | Sí | 0.0 a 10.0 | El multiplicador de intensidad aplicado al condicionamiento (predeterminado: 1.0) |
-| `set_cond_area` | STRING | Sí | "default"<br>"mask bounds" | Determina cómo se calcula el área de condicionamiento (predeterminado: "default") |
-| `mask` | MASK | No | - | Máscara opcional para restringir el área de condicionamiento |
-| `hooks` | HOOKS | No | - | Grupo de ganchos opcional para modificaciones avanzadas de condicionamiento |
-| `timesteps` | TIMESTEPS_RANGE | No | - | Rango de pasos de tiempo opcional para limitar cuándo se aplica el condicionamiento |
+| `positivo_NUEVO` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo a modificar |
+| `negativo_NUEVO` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo a modificar |
+| `fuerza` | FLOAT | Sí | 0.0 a 10.0 | El multiplicador de intensidad aplicado al condicionamiento (predeterminado: 1.0) |
+| `establecer_area_cond` | STRING | Sí | "default"<br>"mask bounds" | Determina cómo se calcula el área de condicionamiento (predeterminado: "default") |
+| `mascara` | MASK | No | - | Máscara opcional para restringir el área de condicionamiento |
+| `ganchos` | HOOKS | No | - | Grupo de ganchos opcional para modificaciones avanzadas de condicionamiento |
+| `pasos_de_tiempo` | TIMESTEPS_RANGE | No | - | Rango de pasos de tiempo opcional para limitar cuándo se aplica el condicionamiento |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo modificado con las propiedades aplicadas |
+| `negativo` | CONDITIONING | El condicionamiento positivo modificado con las propiedades aplicadas |
 | `negative` | CONDITIONING | El condicionamiento negativo modificado con las propiedades aplicadas |
 
 ---

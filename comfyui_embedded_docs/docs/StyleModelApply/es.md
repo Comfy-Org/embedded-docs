@@ -8,12 +8,12 @@ Este nodo aplica un modelo de estilo a un condicionamiento dado, mejorando o alt
 
 | Parámetro             | Tipo Comfy           | Descripción |
 |-----------------------|-----------------------|-------------|
-| `conditioning`        | `CONDITIONING`       | Los datos de condicionamiento originales a los que se aplicará el condicionamiento del modelo de estilo. Es fundamental para definir el contexto o estilo base que se mejorará o alterará. |
-| `style_model`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar un nuevo condicionamiento basado en la salida del modelo de visión CLIP. Desempeña un papel clave en la definición del nuevo estilo a aplicar. |
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que el modelo de estilo utiliza para generar un nuevo condicionamiento. Proporciona el contexto visual necesario para la aplicación del estilo. |
+| `acondicionamiento`        | `CONDITIONING`       | Los datos de condicionamiento originales a los que se aplicará el condicionamiento del modelo de estilo. Es fundamental para definir el contexto o estilo base que se mejorará o alterará. |
+| `modelo_de_estilo`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar un nuevo condicionamiento basado en la salida del modelo de visión CLIP. Desempeña un papel clave en la definición del nuevo estilo a aplicar. |
+| `salida_de_clip_vision`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que el modelo de estilo utiliza para generar un nuevo condicionamiento. Proporciona el contexto visual necesario para la aplicación del estilo. |
 
 ## Salidas
 
 | Parámetro            | Tipo Comfy           | Descripción |
 |----------------------|-----------------------|-------------|
-| `conditioning`       | `CONDITIONING`        | El condicionamiento mejorado o alterado, que incorpora la salida del modelo de estilo. Representa el condicionamiento final estilizado, listo para su posterior procesamiento o generación. |
+| `acondicionamiento`       | `CONDITIONING`        | El condicionamiento mejorado o alterado, que incorpora la salida del modelo de estilo. Representa el condicionamiento final estilizado, listo para su posterior procesamiento o generación. |

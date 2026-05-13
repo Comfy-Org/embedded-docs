@@ -8,8 +8,8 @@ Ce nœud est conçu pour encoder des images en une représentation latente adapt
 |-----------|-----------------|-------------|
 | `pixels`  | `IMAGE`         | L'image d'entrée à encoder. Cette image subit un prétraitement et un redimensionnement pour correspondre aux dimensions d'entrée attendues par le modèle VAE avant l'encodage. |
 | `vae`     | VAE             | Le modèle VAE utilisé pour encoder l'image en sa représentation latente. Il joue un rôle crucial dans le processus de transformation, déterminant la qualité et les caractéristiques de l'espace latent de sortie. |
-| `mask`    | `MASK`          | Un masque indiquant les régions de l'image d'entrée à traiter par infilling. Il est utilisé pour modifier l'image avant l'encodage, garantissant que le VAE se concentre sur les zones pertinentes. |
-| `grow_mask_by` | `INT`       | Spécifie de combien étendre le masque d'infilling pour assurer des transitions homogènes dans l'espace latent. Une valeur plus élevée augmente la zone affectée par l'infilling. |
+| `masque`    | `MASK`          | Un masque indiquant les régions de l'image d'entrée à traiter par infilling. Il est utilisé pour modifier l'image avant l'encodage, garantissant que le VAE se concentre sur les zones pertinentes. |
+| `agrandir_masque_par` | `INT`       | Spécifie de combien étendre le masque d'infilling pour assurer des transitions homogènes dans l'espace latent. Une valeur plus élevée augmente la zone affectée par l'infilling. |
 
 ## Sorties
 

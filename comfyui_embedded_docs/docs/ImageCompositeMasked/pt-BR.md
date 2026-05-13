@@ -6,12 +6,12 @@ O nó `ImageCompositeMasked` é projetado para composição de imagens, permitin
 
 | Parâmetro | Tipo de Dado | Descrição |
 |-----------|--------------|-----------|
-| `destination` | `IMAGE` | A imagem de destino sobre a qual a imagem de origem será composta. Ela serve como plano de fundo para a operação de composição. |
-| `source` | `IMAGE` | A imagem de origem a ser composta sobre a imagem de destino. Esta imagem pode opcionalmente ser redimensionada para se ajustar às dimensões da imagem de destino. |
+| `destino` | `IMAGE` | A imagem de destino sobre a qual a imagem de origem será composta. Ela serve como plano de fundo para a operação de composição. |
+| `fonte` | `IMAGE` | A imagem de origem a ser composta sobre a imagem de destino. Esta imagem pode opcionalmente ser redimensionada para se ajustar às dimensões da imagem de destino. |
 | `x` | `INT` | A coordenada x na imagem de destino onde o canto superior esquerdo da imagem de origem será posicionado. |
 | `y` | `INT` | A coordenada y na imagem de destino onde o canto superior esquerdo da imagem de origem será posicionado. |
-| `resize_source` | `BOOLEAN` | Um indicador booleano que define se a imagem de origem deve ser redimensionada para corresponder às dimensões da imagem de destino. |
-| `mask` | `MASK` | Uma máscara opcional que especifica quais partes da imagem de origem devem ser compostas sobre a imagem de destino. Isso permite operações de composição mais complexas, como mesclagem ou sobreposições parciais. |
+| `redimensionar_fonte` | `BOOLEAN` | Um indicador booleano que define se a imagem de origem deve ser redimensionada para corresponder às dimensões da imagem de destino. |
+| `máscara` | `MASK` | Uma máscara opcional que especifica quais partes da imagem de origem devem ser compostas sobre a imagem de destino. Isso permite operações de composição mais complexas, como mesclagem ou sobreposições parciais. |
 
 ## Saídas
 

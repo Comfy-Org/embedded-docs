@@ -9,8 +9,8 @@ USOStyleReference düğümü, CLIP görüntü işleme çıktısından alınan ko
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | MODEL | Evet | - | Stil referansı yamasının uygulanacağı temel model |
-| `model_patch` | MODEL_PATCH | Evet | - | Stil referansı bilgilerini içeren model yaması |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Evet | - | CLIP görüntü işlemeden çıkarılan kodlanmış görsel öznitelikler |
+| `model_yama` | MODEL_PATCH | Evet | - | Stil referansı bilgilerini içeren model yaması |
+| `clip_vision_çıktısı` | CLIP_VISION_OUTPUT | Evet | - | CLIP görüntü işlemeden çıkarılan kodlanmış görsel öznitelikler |
 
 ## Çıktılar
 

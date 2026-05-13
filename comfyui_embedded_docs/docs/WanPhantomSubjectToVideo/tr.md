@@ -6,14 +6,14 @@ WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağ
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `positive` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Belirli özelliklerden kaçınmak için negatif koşullandırma girdisi |
+| `pozitif` | CONDITIONING | Evet | - | Video oluşturmayı yönlendirmek için pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Belirli özelliklerden kaçınmak için negatif koşullandırma girdisi |
 | `vae` | VAE | Evet | - | Sağlandığında görüntüleri kodlamak için VAE modeli |
-| `width` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Evet | 1 ile MAX_RESOLUTION | Oluşturulan videodaki kare sayısı (varsayılan: 81, 4'e bölünebilir olmalıdır) |
-| `batch_size` | INT | Evet | 1 ile 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
-| `images` | IMAGE | Hayır | - | Zaman boyutlu koşullandırma için isteğe bağlı referans görüntüleri |
+| `genişlik` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Evet | 1 ile MAX_RESOLUTION | Oluşturulan videodaki kare sayısı (varsayılan: 81, 4'e bölünebilir olmalıdır) |
+| `toplu_iş_boyutu` | INT | Evet | 1 ile 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
+| `görseller` | IMAGE | Hayır | - | Zaman boyutlu koşullandırma için isteğe bağlı referans görüntüleri |
 
 **Not:** `images` sağlandığında, belirtilen `width` ve `height` değerlerine uyacak şekilde otomatik olarak yükseltilir ve işleme için yalnızca ilk `length` karesi kullanılır.
 
@@ -21,9 +21,9 @@ WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağ
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `positive` | CONDITIONING | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma |
-| `negative_text` | CONDITIONING | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma |
-| `negative_img_text` | CONDITIONING | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma |
+| `negatif_metin` | CONDITIONING | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma |
+| `negatif_img_metin` | CONDITIONING | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma |
+| `gizli` | CONDITIONING | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma |
 | `latent` | LATENT | Belirtilen boyutlar ve uzunluk ile oluşturulmuş gizli video temsili |
 
 ---

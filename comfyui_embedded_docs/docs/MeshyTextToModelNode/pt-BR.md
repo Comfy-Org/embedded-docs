@@ -6,15 +6,15 @@ O nó **Meshy: Text to Model** utiliza a API Meshy para gerar um modelo 3D a par
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"latest"` | Especifica a versão do modelo de IA a ser utilizada. Atualmente, apenas a versão "latest" está disponível. |
+| `modelo` | COMBO | Sim | `"latest"` | Especifica a versão do modelo de IA a ser utilizada. Atualmente, apenas a versão "latest" está disponível. |
 | `prompt` | STRING | Sim | - | A descrição textual do modelo 3D que você deseja gerar. Deve ter entre 1 e 600 caracteres. |
-| `style` | COMBO | Sim | `"realistic"`<br>`"sculpture"` | O estilo artístico para o modelo 3D gerado. |
-| `should_remesh` | COMBO DINÂMICO | Sim | `"true"`<br>`"false"` | Controla se a malha gerada será processada. Quando definido como "false", o nó retorna uma malha triangular não processada. Selecionar "true" revela parâmetros adicionais para topologia e contagem de polígonos. |
-| `topology` | COMBO | Não* | `"triangle"`<br>`"quad"` | O tipo de polígono alvo para o modelo remalhado. Este parâmetro só está disponível e é obrigatório quando `should_remesh` está definido como "true". |
-| `target_polycount` | INT | Não* | 100 - 300000 | O número alvo de polígonos para o modelo remalhado. O padrão é 300000. Este parâmetro só está disponível e é obrigatório quando `should_remesh` está definido como "true". |
-| `symmetry_mode` | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` | Controla a simetria no modelo gerado. |
-| `pose_mode` | COMBO | Sim | `""`<br>`"A-pose"`<br>`"T-pose"` | Especifica o modo de pose para o modelo gerado. Uma string vazia significa que nenhuma pose específica é solicitada. |
-| `seed` | INT | Sim | 0 - 2147483647 | Um valor de semente para a geração. Definir isso controla se o nó deve ser executado novamente, mas os resultados não são determinísticos, independentemente do valor da semente. O padrão é 0. |
+| `estilo` | COMBO | Sim | `"realistic"`<br>`"sculpture"` | O estilo artístico para o modelo 3D gerado. |
+| `deve_refazer_malha` | COMBO DINÂMICO | Sim | `"true"`<br>`"false"` | Controla se a malha gerada será processada. Quando definido como "false", o nó retorna uma malha triangular não processada. Selecionar "true" revela parâmetros adicionais para topologia e contagem de polígonos. |
+| `topology` | COMBO | Não* | `"triangle"`<br>`"quad"` | O tipo de polígono alvo para o modelo remalhado. Este parâmetro só está disponível e é obrigatório quando `deve_refazer_malha` está definido como "true". |
+| `target_polycount` | INT | Não* | 100 - 300000 | O número alvo de polígonos para o modelo remalhado. O padrão é 300000. Este parâmetro só está disponível e é obrigatório quando `deve_refazer_malha` está definido como "true". |
+| `modo_de_simetria` | COMBO | Sim | `"auto"`<br>`"on"`<br>`"off"` | Controla a simetria no modelo gerado. |
+| `modo_de_pose` | COMBO | Sim | `""`<br>`"A-pose"`<br>`"T-pose"` | Especifica o modo de pose para o modelo gerado. Uma string vazia significa que nenhuma pose específica é solicitada. |
+| `semente` | INT | Sim | 0 - 2147483647 | Um valor de semente para a geração. Definir isso controla se o nó deve ser executado novamente, mas os resultados não são determinísticos, independentemente do valor da semente. O padrão é 0. |
 
 *Nota: Os parâmetros `topology` e `target_polycount` são condicionalmente obrigatórios. Eles só aparecem e devem ser definidos quando o parâmetro `should_remesh` estiver definido como "true".
 

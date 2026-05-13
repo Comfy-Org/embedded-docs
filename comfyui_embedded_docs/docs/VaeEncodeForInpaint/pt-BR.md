@@ -8,8 +8,8 @@ Este nó foi projetado para codificar imagens em uma representação latente ade
 |-----------|---------------|-----------|
 | `pixels`  | `IMAGE`       | A imagem de entrada a ser codificada. Esta imagem passa por pré-processamento e redimensionamento para corresponder às dimensões de entrada esperadas pelo modelo VAE antes da codificação. |
 | `vae`     | VAE           | O modelo VAE usado para codificar a imagem em sua representação latente. Ele desempenha um papel crucial no processo de transformação, determinando a qualidade e as características do espaço latente de saída. |
-| `mask`    | `MASK`        | Uma máscara indicando as regiões da imagem de entrada a serem inpaintadas. Ela é usada para modificar a imagem antes da codificação, garantindo que o VAE se concentre nas áreas relevantes. |
-| `grow_mask_by` | `INT`    | Especifica o quanto expandir a máscara de inpaint para garantir transições suaves no espaço latente. Um valor maior aumenta a área afetada pelo inpaint. |
+| `máscara`    | `MASK`        | Uma máscara indicando as regiões da imagem de entrada a serem inpaintadas. Ela é usada para modificar a imagem antes da codificação, garantindo que o VAE se concentre nas áreas relevantes. |
+| `aumentar_máscara_em` | `INT`    | Especifica o quanto expandir a máscara de inpaint para garantir transições suaves no espaço latente. Um valor maior aumenta a área afetada pelo inpaint. |
 
 ## Saídas
 

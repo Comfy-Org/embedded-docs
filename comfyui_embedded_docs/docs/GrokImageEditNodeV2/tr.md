@@ -8,9 +8,9 @@ Bir metin istemine dayanarak mevcut bir görüntüyü değiştirin. Bu düğüm,
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `prompt` | STRING | Evet | Yok | Görüntüyü oluşturmak için kullanılan metin istemi. Boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır. |
+| `istem` | STRING | Evet | Yok | Görüntüyü oluşturmak için kullanılan metin istemi. Boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır. |
 | `model` | MODEL | Evet | Açıklamaya Bakın | Kullanılacak Grok görüntü modeli. Bu parametre, bir model seçildikten sonra görünen birden çok alt seçeneğe sahiptir. Mevcut modeller: `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image`. Her modelin farklı yetenekleri vardır (aşağıdaki nota bakın). |
-| `seed` | INT | Evet | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
+| `tohum` | INT | Evet | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir. (varsayılan: 0) |
 
 **`model` parametre kısıtlamaları hakkında not:**
 - `model` parametresi, `resolution`, `number_of_images`, `images` ve `aspect_ratio` için alt seçenekler içeren dinamik bir birleşik kutudur.

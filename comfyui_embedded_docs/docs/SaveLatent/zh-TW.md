@@ -9,7 +9,7 @@ SaveLatent 節點可將潛在張量儲存為磁碟上的檔案，以供後續使
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `samples` | LATENT | 是 | - | 要儲存到磁碟的潛在樣本 |
-| `filename_prefix` | STRING | 否 | - | 輸出檔案名稱的前綴（預設值："latents/ComfyUI"） |
+| `檔名前綴` | STRING | 否 | - | 輸出檔案名稱的前綴（預設值："latents/ComfyUI"） |
 | `prompt` | PROMPT | 否 | - | 要包含在中繼資料中的提示資訊（隱藏參數） |
 | `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 要包含在中繼資料中的額外 PNG 資訊（隱藏參數） |
 

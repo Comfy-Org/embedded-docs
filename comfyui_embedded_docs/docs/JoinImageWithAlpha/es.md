@@ -6,11 +6,11 @@ Este nodo está diseñado para operaciones de composición, específicamente par
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | El contenido visual principal que se combinará con una máscara alfa. Representa la imagen sin información de transparencia. |
-| `alpha`   | `MASK`      | La máscara alfa que define la transparencia de la imagen correspondiente. Se utiliza para determinar qué partes de la imagen deben ser transparentes o semitransparentes. |
+| `imagen`   | `IMAGE`     | El contenido visual principal que se combinará con una máscara alfa. Representa la imagen sin información de transparencia. |
+| `alfa`   | `MASK`      | La máscara alfa que define la transparencia de la imagen correspondiente. Se utiliza para determinar qué partes de la imagen deben ser transparentes o semitransparentes. |
 
 ## Salidas
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La salida es una única imagen que combina la imagen de entrada con la máscara alfa, incorporando información de transparencia en el contenido visual. |
+| `imagen`   | `IMAGE`     | La salida es una única imagen que combina la imagen de entrada con la máscara alfa, incorporando información de transparencia en el contenido visual. |

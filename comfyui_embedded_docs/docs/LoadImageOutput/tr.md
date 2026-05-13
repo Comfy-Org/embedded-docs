@@ -34,13 +34,13 @@ LoadImageOutput düğümü, çıktı klasöründen görüntüleri yükler. Yenil
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | COMBO | Evet | Birden çok seçenek mevcut | Çıktı klasöründen bir görüntü yükleyin. Görüntü listesini güncellemek için bir yükleme seçeneği ve yenile düğmesi içerir. Yenile düğmesine tıklandığında, düğüm görüntü listesini günceller ve otomatik olarak ilk görüntüyü seçerek kolay geçiş yapılmasını sağlar. |
+| `görüntü` | COMBO | Evet | Birden çok seçenek mevcut | Çıktı klasöründen bir görüntü yükleyin. Görüntü listesini güncellemek için bir yükleme seçeneği ve yenile düğmesi içerir. Yenile düğmesine tıklandığında, düğüm görüntü listesini günceller ve otomatik olarak ilk görüntüyü seçerek kolay geçiş yapılmasını sağlar. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `image` | IMAGE | Çıktı klasöründen yüklenen görüntü |
+| `görüntü` | IMAGE | Çıktı klasöründen yüklenen görüntü |
 | `mask` | MASK | Yüklenen görüntüyle ilişkili maske |
 
 ---

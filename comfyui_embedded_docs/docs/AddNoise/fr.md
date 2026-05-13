@@ -6,10 +6,10 @@ Ce nœud ajoute un bruit contrôlé à une image latente en utilisant un génér
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle contenant les paramètres d'échantillonnage et les fonctions de traitement |
-| `noise` | NOISE | Oui | - | Le générateur de bruit qui produit le motif de bruit de base |
+| `modèle` | MODEL | Oui | - | Le modèle contenant les paramètres d'échantillonnage et les fonctions de traitement |
+| `bruit` | NOISE | Oui | - | Le générateur de bruit qui produit le motif de bruit de base |
 | `sigmas` | SIGMAS | Oui | - | Valeurs sigma contrôlant l'intensité de la mise à l'échelle du bruit. Si vide, le nœud renvoie l'image latente d'origine inchangée. Lorsque plusieurs sigmas sont fournis, l'échelle de bruit est calculée comme la différence absolue entre la première et la dernière valeur sigma. Lorsqu'un seul sigma est fourni, cette valeur est utilisée directement comme échelle. |
-| `latent_image` | LATENT | Oui | - | La représentation latente d'entrée à laquelle le bruit sera ajouté. Les images latentes vides (ne contenant que des zéros) ne sont pas décalées pendant le traitement. |
+| `image_latente` | LATENT | Oui | - | La représentation latente d'entrée à laquelle le bruit sera ajouté. Les images latentes vides (ne contenant que des zéros) ne sont pas décalées pendant le traitement. |
 
 ## Sorties
 

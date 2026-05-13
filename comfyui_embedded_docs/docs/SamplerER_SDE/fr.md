@@ -8,10 +8,10 @@ Le nœud SamplerER_SDE fournit des méthodes d'échantillonnage spécialisées p
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `solver_type` | COMBO | Oui | "ER-SDE"<br>"Reverse-time SDE"<br>"ODE" | Le type de solveur à utiliser pour l'échantillonnage. Détermine l'approche mathématique du processus de diffusion. |
-| `max_stage` | INT | Non | 1-3 | Le nombre maximal d'étapes pour le processus d'échantillonnage (par défaut : 3). Contrôle la complexité de calcul et la qualité. |
+| `type_solveur` | COMBO | Oui | "ER-SDE"<br>"Reverse-time SDE"<br>"ODE" | Le type de solveur à utiliser pour l'échantillonnage. Détermine l'approche mathématique du processus de diffusion. |
+| `étape_max` | INT | Non | 1-3 | Le nombre maximal d'étapes pour le processus d'échantillonnage (par défaut : 3). Contrôle la complexité de calcul et la qualité. |
 | `eta` | FLOAT | Non | 0,0-100,0 | Force stochastique du SDE à temps inverse (par défaut : 1,0). Lorsque eta=0, il se réduit à un ODE déterministe. Ce paramètre ne s'applique pas au type de solveur ER-SDE. |
-| `s_noise` | FLOAT | Non | 0,0-100,0 | Facteur d'échelle du bruit pour le processus d'échantillonnage (par défaut : 1,0). Contrôle la quantité de bruit appliquée pendant l'échantillonnage. |
+| `s_bruit` | FLOAT | Non | 0,0-100,0 | Facteur d'échelle du bruit pour le processus d'échantillonnage (par défaut : 1,0). Contrôle la quantité de bruit appliquée pendant l'échantillonnage. |
 
 **Contraintes des paramètres :**
 

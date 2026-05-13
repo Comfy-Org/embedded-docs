@@ -6,10 +6,10 @@ Este nó realiza retopologia inteligente em um modelo 3D, criando automaticament
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model_3d` | FILE3D | Sim | - | Modelo 3D de entrada (GLB ou OBJ). O arquivo deve estar nos formatos GLB ou OBJ e não pode exceder 200MB. |
-| `polygon_type` | STRING | Sim | `"triangle"`<br>`"quadrilateral"` | Tipo de composição da superfície. |
-| `face_level` | STRING | Sim | `"medium"`<br>`"high"`<br>`"low"` | Nível de redução de polígonos. |
-| `seed` | INT | Não | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) |
+| `modelo_3d` | FILE3D | Sim | - | Modelo 3D de entrada (GLB ou OBJ). O arquivo deve estar nos formatos GLB ou OBJ e não pode exceder 200MB. |
+| `tipo_de_polígono` | STRING | Sim | `"triangle"`<br>`"quadrilateral"` | Tipo de composição da superfície. |
+| `nível_de_faces` | STRING | Sim | `"medium"`<br>`"high"`<br>`"low"` | Nível de redução de polígonos. |
+| `semente` | INT | Não | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) |
 
 **Observação:** O parâmetro `seed` é usado para acionar uma nova execução do nó, mas a saída final não é garantida de ser a mesma para o mesmo valor de semente.
 

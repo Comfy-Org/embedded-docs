@@ -8,13 +8,13 @@ Este nodo elimina el fondo de las imágenes utilizando el servicio API de Recraf
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La(s) imagen(es) de entrada para procesar la eliminación del fondo |
+| `imagen` | IMAGE | Sí | - | La(s) imagen(es) de entrada para procesar la eliminación del fondo |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | Imágenes procesadas con fondos transparentes |
+| `imagen` | IMAGE | Imágenes procesadas con fondos transparentes |
 | `mask` | MASK | Máscaras del canal alfa que indican las áreas de fondo eliminadas |
 
 ---

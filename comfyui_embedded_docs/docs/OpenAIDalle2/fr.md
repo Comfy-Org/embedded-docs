@@ -14,7 +14,7 @@ Ce nœud se connecte à l'API DALL·E 2 d'OpenAI pour créer des images à parti
 |-----------|-----------------|---------------|-------------------|-------|-------------|
 | `prompt` | STRING | requis | "" | - | Invite textuelle pour DALL·E |
 | `seed` | INT | optionnel | 0 | 0 à 2147483647 | pas encore implémenté dans le backend |
-| `size` | COMBO | optionnel | "1024x1024" | "256x256", "512x512", "1024x1024" | Taille de l'image |
+| `taille` | COMBO | optionnel | "1024x1024" | "256x256", "512x512", "1024x1024" | Taille de l'image |
 | `n` | INT | optionnel | 1 | 1 à 8 | Nombre d'images à générer |
 | `image` | IMAGE | optionnel | None | - | Image de référence optionnelle pour l'édition d'image. |
 | `mask` | MASK | optionnel | None | - | Masque optionnel pour l'incrustation (les zones blanches seront remplacées) |

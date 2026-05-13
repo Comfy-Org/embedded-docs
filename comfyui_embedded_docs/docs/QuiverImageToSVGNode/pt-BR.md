@@ -6,10 +6,10 @@ Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usa
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | N/A | Imagem de entrada para vetorizar. |
-| `auto_crop` | BOOLEAN | Não | `True`<br>`False` | Cortar automaticamente para o assunto dominante. Este é um parâmetro avançado (padrão: `False`). |
-| `model` | DYNAMICCOMBO | Sim | Múltiplas opções disponíveis | Modelo a ser usado para vetorização SVG. Selecionar um modelo revela parâmetros adicionais específicos para aquele modelo: `target_size` (redimensionamento quadrado alvo em pixels, padrão: 1024, faixa: 128-4096), `temperature`, `top_p` e `presence_penalty`. |
-| `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente do valor da semente. Este parâmetro possui funcionalidade "controle após gerar" (padrão: 0). |
+| `imagem` | IMAGE | Sim | N/A | Imagem de entrada para vetorizar. |
+| `corte_automático` | BOOLEAN | Não | `True`<br>`False` | Cortar automaticamente para o assunto dominante. Este é um parâmetro avançado (padrão: `False`). |
+| `modelo` | DYNAMICCOMBO | Sim | Múltiplas opções disponíveis | Modelo a ser usado para vetorização SVG. Selecionar um modelo revela parâmetros adicionais específicos para aquele modelo: `target_size` (redimensionamento quadrado alvo em pixels, padrão: 1024, faixa: 128-4096), `temperature`, `top_p` e `presence_penalty`. |
+| `semente` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente do valor da semente. Este parâmetro possui funcionalidade "controle após gerar" (padrão: 0). |
 
 ## Saídas
 

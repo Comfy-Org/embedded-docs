@@ -6,13 +6,13 @@ Preenche áreas de uma imagem com base em uma máscara e um prompt. Este nó uti
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser pintada |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser pintada |
 | `mask` | MASK | Sim | - | A máscara que define quais áreas da imagem devem ser preenchidas |
 | `prompt` | STRING | Não | - | Prompt para a geração da imagem (padrão: string vazia) |
-| `prompt_upsampling` | BOOLEAN | Não | - | Se deve realizar upsampling no prompt. Se ativado, modifica automaticamente o prompt para uma geração mais criativa, mas os resultados são não determinísticos (a mesma semente não produzirá exatamente o mesmo resultado). (padrão: falso) |
-| `guidance` | FLOAT | Não | 1,5-100 | Força de orientação para o processo de geração da imagem (padrão: 60) |
-| `steps` | INT | Não | 15-50 | Número de etapas para o processo de geração da imagem (padrão: 50) |
-| `seed` | INT | Não | 0-18446744073709551615 | A semente aleatória usada para criar o ruído. (padrão: 0) |
+| `aumento de prompt` | BOOLEAN | Não | - | Se deve realizar upsampling no prompt. Se ativado, modifica automaticamente o prompt para uma geração mais criativa, mas os resultados são não determinísticos (a mesma semente não produzirá exatamente o mesmo resultado). (padrão: falso) |
+| `orientação` | FLOAT | Não | 1,5-100 | Força de orientação para o processo de geração da imagem (padrão: 60) |
+| `passos` | INT | Não | 15-50 | Número de etapas para o processo de geração da imagem (padrão: 50) |
+| `semente` | INT | Não | 0-18446744073709551615 | A semente aleatória usada para criar o ruído. (padrão: 0) |
 
 ## Saídas
 

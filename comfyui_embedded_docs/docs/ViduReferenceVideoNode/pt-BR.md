@@ -8,14 +8,14 @@ O Nó de Vídeo de Referência Vidu gera vídeos a partir de múltiplas imagens 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"viduq1"` | Nome do modelo para geração de vídeo (padrão: "viduq1") |
-| `images` | IMAGE | Sim | - | Imagens a serem usadas como referência para gerar um vídeo com assuntos consistentes (máximo de 7 imagens) |
+| `modelo` | COMBO | Sim | `"viduq1"` | Nome do modelo para geração de vídeo (padrão: "viduq1") |
+| `imagens` | IMAGE | Sim | - | Imagens a serem usadas como referência para gerar um vídeo com assuntos consistentes (máximo de 7 imagens) |
 | `prompt` | STRING | Sim | - | Uma descrição textual para a geração do vídeo |
-| `duration` | INT | Não | 5-5 | Duração do vídeo de saída em segundos (padrão: 5) |
-| `seed` | INT | Não | 0-2147483647 | Semente para a geração do vídeo (0 para aleatório) (padrão: 0) |
-| `aspect_ratio` | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"1:1"` | A proporção de aspecto do vídeo de saída (padrão: "16:9") |
-| `resolution` | COMBO | Não | `"1080p"` | Os valores suportados podem variar conforme o modelo e a duração (padrão: "1080p") |
-| `movement_amplitude` | COMBO | Não | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | A amplitude de movimento dos objetos no quadro (padrão: "auto") |
+| `duração` | INT | Não | 5-5 | Duração do vídeo de saída em segundos (padrão: 5) |
+| `semente` | INT | Não | 0-2147483647 | Semente para a geração do vídeo (0 para aleatório) (padrão: 0) |
+| `proporção` | COMBO | Não | `"16:9"`<br>`"9:16"`<br>`"1:1"` | A proporção de aspecto do vídeo de saída (padrão: "16:9") |
+| `resolução` | COMBO | Não | `"1080p"` | Os valores suportados podem variar conforme o modelo e a duração (padrão: "1080p") |
+| `amplitude de movimento` | COMBO | Não | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | A amplitude de movimento dos objetos no quadro (padrão: "auto") |
 
 **Restrições e Limitações:**
 

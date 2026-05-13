@@ -6,13 +6,13 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 用于视频生成的模型。Seedance 2.0 提供最高质量，而 Seedance 2.0 Fast 则针对速度进行了优化。选择模型后，将显示 `prompt`、`resolution`、`ratio`、`duration` 和 `generate_audio` 的额外输入项。 |
-| `first_frame` | IMAGE | 否 | - | 用作视频首帧的图像。 |
-| `last_frame` | IMAGE | 否 | - | 用作视频末帧的图像。 |
-| `first_frame_asset_id` | STRING | 否 | - | 用作首帧的 Seedance asset_id。此参数不能与 `first_frame` 图像输入同时使用。默认为空字符串。 |
-| `last_frame_asset_id` | STRING | 否 | - | 用作末帧的 Seedance asset_id。此参数不能与 `last_frame` 图像输入同时使用。默认为空字符串。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 种子值。更改此种子将导致节点重新运行，但结果是非确定性的。默认为 0。 |
-| `watermark` | BOOLEAN | 否 | - | 是否为生成的视频添加水印。默认为 False。 |
+| `模型` | COMBO | 是 | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 用于视频生成的模型。Seedance 2.0 提供最高质量，而 Seedance 2.0 Fast 则针对速度进行了优化。选择模型后，将显示 `prompt`、`resolution`、`ratio`、`duration` 和 `generate_audio` 的额外输入项。 |
+| `首帧图像` | IMAGE | 否 | - | 用作视频首帧的图像。 |
+| `末帧图像` | IMAGE | 否 | - | 用作视频末帧的图像。 |
+| `first_frame_asset_id` | STRING | 否 | - | 用作首帧的 Seedance asset_id。此参数不能与 `首帧图像` 图像输入同时使用。默认为空字符串。 |
+| `last_frame_asset_id` | STRING | 否 | - | 用作末帧的 Seedance asset_id。此参数不能与 `末帧图像` 图像输入同时使用。默认为空字符串。 |
+| `种子` | INT | 否 | 0 到 2147483647 | 种子值。更改此种子将导致节点重新运行，但结果是非确定性的。默认为 0。 |
+| `水印` | BOOLEAN | 否 | - | 是否为生成的视频添加水印。默认为 False。 |
 
 **参数约束：**
 *   您必须提供 **`first_frame` 图像** 或 **`first_frame_asset_id`** 中的一项。同时提供两者将导致错误。

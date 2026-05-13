@@ -8,11 +8,11 @@ Le nœud RescaleCFG est conçu pour ajuster les échelles de conditionnement et 
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model`   | MODEL           | Le paramètre `model` représente le modèle génératif à ajuster. Il est crucial car le nœud applique une fonction de redimensionnement à la sortie du modèle, influençant directement le processus de génération. |
-| `multiplier` | `FLOAT`       | Le paramètre `multiplier` contrôle l'ampleur du redimensionnement appliqué à la sortie du modèle. Il détermine l'équilibre entre les composants d'origine et redimensionnés, affectant les caractéristiques finales de la sortie. |
+| `modèle`   | MODEL           | Le paramètre `modèle` représente le modèle génératif à ajuster. Il est crucial car le nœud applique une fonction de redimensionnement à la sortie du modèle, influençant directement le processus de génération. |
+| `multiplicateur` | `FLOAT`       | Le paramètre `multiplicateur` contrôle l'ampleur du redimensionnement appliqué à la sortie du modèle. Il détermine l'équilibre entre les composants d'origine et redimensionnés, affectant les caractéristiques finales de la sortie. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model`   | MODEL           | Le modèle modifié avec des échelles de conditionnement et de non-conditionnement ajustées. Ce modèle est censé produire des sorties aux caractéristiques potentiellement améliorées grâce au redimensionnement appliqué. |
+| `modèle`   | MODEL           | Le modèle modifié avec des échelles de conditionnement et de non-conditionnement ajustées. Ce modèle est censé produire des sorties aux caractéristiques potentiellement améliorées grâce au redimensionnement appliqué. |

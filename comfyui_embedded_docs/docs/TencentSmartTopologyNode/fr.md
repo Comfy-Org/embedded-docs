@@ -6,10 +6,10 @@ Ce nœud effectue une retopologie intelligente sur un modèle 3D, créant automa
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_3d` | FILE3D | Oui | - | Modèle 3D d'entrée (GLB ou OBJ). Le fichier doit être au format GLB ou OBJ et ne peut pas dépasser 200 Mo. |
-| `polygon_type` | STRING | Oui | `"triangle"`<br>`"quadrilateral"` | Type de composition de surface. |
-| `face_level` | STRING | Oui | `"medium"`<br>`"high"`<br>`"low"` | Niveau de réduction des polygones. |
-| `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. (valeur par défaut : 0) |
+| `modèle_3d` | FILE3D | Oui | - | Modèle 3D d'entrée (GLB ou OBJ). Le fichier doit être au format GLB ou OBJ et ne peut pas dépasser 200 Mo. |
+| `type_polygone` | STRING | Oui | `"triangle"`<br>`"quadrilateral"` | Type de composition de surface. |
+| `niveau_de_faces` | STRING | Oui | `"medium"`<br>`"high"`<br>`"low"` | Niveau de réduction des polygones. |
+| `graine` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes, quelle que soit la graine. (valeur par défaut : 0) |
 
 **Remarque :** Le paramètre `seed` est utilisé pour déclencher une nouvelle exécution du nœud, mais la sortie finale n'est pas garantie d'être identique pour une même valeur de graine.
 

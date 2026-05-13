@@ -9,7 +9,7 @@ O nó ElevenLabs Instant Voice Clone cria um novo modelo de voz único analisand
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `audio_*` | AUDIO | Sim | 1 a 8 arquivos | Gravações de áudio para clonagem de voz. Você deve fornecer entre 1 e 8 arquivos de áudio. |
-| `remove_background_noise` | BOOLEAN | Não | Verdadeiro / Falso | Remove ruído de fundo das amostras de voz usando isolamento de áudio. (padrão: Falso) |
+| `remover_ruído_de_fundo` | BOOLEAN | Não | Verdadeiro / Falso | Remove ruído de fundo das amostras de voz usando isolamento de áudio. (padrão: Falso) |
 
 **Nota:** Você deve fornecer pelo menos um arquivo de áudio e pode fornecer até oito. O nó criará automaticamente slots de entrada para os arquivos de áudio que você adicionar.
 

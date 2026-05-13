@@ -6,9 +6,9 @@ El nodo EmptyFlux2LatentImage crea una representación latente vacía y en blanc
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `width` | INT | Sí | 16 a 8192 | El ancho de la imagen final a generar. El ancho latente será este valor dividido por 16. El valor predeterminado es 1024. |
-| `height` | INT | Sí | 16 a 8192 | La altura de la imagen final a generar. La altura latente será este valor dividido por 16. El valor predeterminado es 1024. |
-| `batch_size` | INT | No | 1 a 4096 | El número de muestras latentes a generar en un solo lote. El valor predeterminado es 1. |
+| `ancho` | INT | Sí | 16 a 8192 | El ancho de la imagen final a generar. El ancho latente será este valor dividido por 16. El valor predeterminado es 1024. |
+| `alto` | INT | Sí | 16 a 8192 | La altura de la imagen final a generar. La altura latente será este valor dividido por 16. El valor predeterminado es 1024. |
+| `tamaño_lote` | INT | No | 1 a 4096 | El número de muestras latentes a generar en un solo lote. El valor predeterminado es 1. |
 
 **Nota:** Las entradas `width` y `height` deben ser divisibles por 16, ya que el nodo las divide internamente por este factor para crear las dimensiones latentes.
 

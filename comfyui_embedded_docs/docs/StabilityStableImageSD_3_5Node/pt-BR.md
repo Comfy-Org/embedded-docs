@@ -8,13 +8,13 @@ Este nó gera imagens de forma síncrona usando o modelo Stable Diffusion 3.5 da
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | O que você deseja ver na imagem de saída. Um prompt forte e descritivo que defina claramente elementos, cores e assuntos levará a melhores resultados. (padrão: string vazia) |
 | `model` | COMBO | Sim | `sd3.5-large`<br>`sd3.5-large-turbo`<br>`sd3.5-medium` | O modelo Stable Diffusion 3.5 a ser usado para geração. |
-| `aspect_ratio` | COMBO | Sim | `16:9`<br>`1:1`<br>`21:9`<br>`2:3`<br>`3:2`<br>`4:5`<br>`5:4`<br>`9:16`<br>`9:21` | Proporção de aspecto da imagem gerada. (padrão: 1:1) |
-| `style_preset` | COMBO | Não | `3d-model`<br>`analog-film`<br>`anime`<br>`cinematic`<br>`comic-book`<br>`digital-art`<br>`enhance`<br>`fantasy-art`<br>`isometric`<br>`line-art`<br>`low-poly`<br>`modeling-compound`<br>`neon-punk`<br>`origami`<br>`photographic`<br>`pixel-art`<br>`tile-texture`<br>`None` | Estilo desejado opcional da imagem gerada. Selecione "None" para nenhuma predefinição de estilo. |
+| `proporção` | COMBO | Sim | `16:9`<br>`1:1`<br>`21:9`<br>`2:3`<br>`3:2`<br>`4:5`<br>`5:4`<br>`9:16`<br>`9:21` | Proporção de aspecto da imagem gerada. (padrão: 1:1) |
+| `estilo predefinido` | COMBO | Não | `3d-model`<br>`analog-film`<br>`anime`<br>`cinematic`<br>`comic-book`<br>`digital-art`<br>`enhance`<br>`fantasy-art`<br>`isometric`<br>`line-art`<br>`low-poly`<br>`modeling-compound`<br>`neon-punk`<br>`origami`<br>`photographic`<br>`pixel-art`<br>`tile-texture`<br>`None` | Estilo desejado opcional da imagem gerada. Selecione "None" para nenhuma predefinição de estilo. |
 | `cfg_scale` | FLOAT | Sim | 1.0 a 10.0 | O quão estritamente o processo de difusão adere ao texto do prompt (valores mais altos mantêm sua imagem mais próxima do prompt). (padrão: 4.0) |
-| `seed` | INT | Sim | 0 a 4294967294 | A semente aleatória usada para criar o ruído. (padrão: 0) |
-| `image` | IMAGE | Não | - | Imagem de entrada opcional para geração imagem-para-imagem. Quando fornecida, o nó alterna para o modo imagem-para-imagem e o parâmetro `aspect_ratio` é ignorado. |
-| `negative_prompt` | STRING | Não | - | Palavras-chave do que você não deseja ver na imagem de saída. Este é um recurso avançado. (padrão: string vazia) |
-| `image_denoise` | FLOAT | Não | 0.0 a 1.0 | Redução de ruído da imagem de entrada; 0.0 produz uma imagem idêntica à entrada, 1.0 é como se nenhuma imagem tivesse sido fornecida. (padrão: 0.5) Este parâmetro é usado apenas quando uma `image` é fornecida. |
+| `semente` | INT | Sim | 0 a 4294967294 | A semente aleatória usada para criar o ruído. (padrão: 0) |
+| `imagem` | IMAGE | Não | - | Imagem de entrada opcional para geração imagem-para-imagem. Quando fornecida, o nó alterna para o modo imagem-para-imagem e o parâmetro `proporção` é ignorado. |
+| `prompt negativo` | STRING | Não | - | Palavras-chave do que você não deseja ver na imagem de saída. Este é um recurso avançado. (padrão: string vazia) |
+| `redução de ruído da imagem` | FLOAT | Não | 0.0 a 1.0 | Redução de ruído da imagem de entrada; 0.0 produz uma imagem idêntica à entrada, 1.0 é como se nenhuma imagem tivesse sido fornecida. (padrão: 0.5) Este parâmetro é usado apenas quando uma `imagem` é fornecida. |
 
 **Nota:** Quando uma `image` é fornecida, o nó alterna para o modo de geração imagem-para-imagem e o parâmetro `aspect_ratio` é determinado automaticamente a partir da imagem de entrada. Quando nenhuma `image` é fornecida, o parâmetro `image_denoise` é ignorado.
 
@@ -22,7 +22,7 @@ Este nó gera imagens de forma síncrona usando o modelo Stable Diffusion 3.5 da
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem gerada ou modificada. |
+| `imagem` | IMAGE | A imagem gerada ou modificada. |
 
 ---
 **Source fingerprint (SHA-256):** `80dbb27f19bb3286ee988f020f7f65623a73d7cac77ca0cdfc7a428254102aa3`

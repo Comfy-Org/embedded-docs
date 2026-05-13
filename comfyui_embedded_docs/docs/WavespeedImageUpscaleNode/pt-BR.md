@@ -6,9 +6,9 @@ O nó WaveSpeed Image Upscale utiliza um serviço de IA externo para aumentar a 
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `model` | STRING | Sim | `"SeedVR2"`<br>`"Ultimate"` | O modelo de IA a ser usado para o redimensionamento. "SeedVR2" e "Ultimate" oferecem diferentes níveis de qualidade e preços. |
-| `image` | IMAGE | Sim | | A imagem de entrada a ser redimensionada. |
-| `target_resolution` | STRING | Sim | `"2K"`<br>`"4K"`<br>`"8K"` | A resolução de saída desejada para a imagem redimensionada. |
+| `modelo` | STRING | Sim | `"SeedVR2"`<br>`"Ultimate"` | O modelo de IA a ser usado para o redimensionamento. "SeedVR2" e "Ultimate" oferecem diferentes níveis de qualidade e preços. |
+| `imagem` | IMAGE | Sim | | A imagem de entrada a ser redimensionada. |
+| `resolução_alvo` | STRING | Sim | `"2K"`<br>`"4K"`<br>`"8K"` | A resolução de saída desejada para a imagem redimensionada. |
 
 **Nota:** Este nó requer exatamente uma imagem de entrada. Fornecer um lote de imagens resultará em um erro.
 
@@ -16,7 +16,7 @@ O nó WaveSpeed Image Upscale utiliza um serviço de IA externo para aumentar a 
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `image` | IMAGE | A imagem de saída redimensionada em alta resolução. |
+| `imagem` | IMAGE | A imagem de saída redimensionada em alta resolução. |
 
 ---
 **Source fingerprint (SHA-256):** `b14056f981f6e34c67d8126391acc11878f92f5f406559afbac803c86da42bcc`

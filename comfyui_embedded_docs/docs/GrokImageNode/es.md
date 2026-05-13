@@ -6,12 +6,12 @@ El nodo Grok Image genera una o más imágenes basadas en una descripción textu
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sí | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"`<br>`"grok-imagine-image-beta"` | El modelo Grok específico a utilizar para la generación de imágenes. Diferentes modelos pueden ofrecer distinta calidad, velocidad o características. |
-| `prompt` | STRING | Sí | N/A | La indicación de texto utilizada para generar la imagen. Esta descripción guía a la IA sobre qué crear. Debe tener al menos 1 carácter de longitud. |
-| `aspect_ratio` | COMBO | Sí | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | La relación ancho-alto deseada para la imagen generada. |
-| `number_of_images` | INT | No | 1 a 10 | Número de imágenes a generar (predeterminado: 1). |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla para determinar si el nodo debe re-ejecutarse. Los resultados reales de la imagen son no deterministas y variarán incluso con la misma semilla (predeterminado: 0). |
-| `resolution` | COMBO | No | `"1K"`<br>`"2K"` | La resolución de salida deseada para las imágenes generadas (predeterminado: "1K"). |
+| `modelo` | COMBO | Sí | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"`<br>`"grok-imagine-image-beta"` | El modelo Grok específico a utilizar para la generación de imágenes. Diferentes modelos pueden ofrecer distinta calidad, velocidad o características. |
+| `indicación` | STRING | Sí | N/A | La indicación de texto utilizada para generar la imagen. Esta descripción guía a la IA sobre qué crear. Debe tener al menos 1 carácter de longitud. |
+| `relación de aspecto` | COMBO | Sí | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | La relación ancho-alto deseada para la imagen generada. |
+| `número de imágenes` | INT | No | 1 a 10 | Número de imágenes a generar (predeterminado: 1). |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla para determinar si el nodo debe re-ejecutarse. Los resultados reales de la imagen son no deterministas y variarán incluso con la misma semilla (predeterminado: 0). |
+| `resolución` | COMBO | No | `"1K"`<br>`"2K"` | La resolución de salida deseada para las imágenes generadas (predeterminado: "1K"). |
 
 **Nota:** El parámetro `seed` se utiliza principalmente para controlar cuándo el nodo se re-ejecuta dentro de un flujo de trabajo. Debido a la naturaleza del servicio de IA externo, las imágenes generadas no serán reproducibles ni idénticas entre ejecuciones, incluso con una semilla idéntica.
 
@@ -21,7 +21,7 @@ El nodo Grok Image genera una o más imágenes basadas en una descripción textu
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `output` | IMAGE | La imagen generada o un lote de imágenes. Si `number_of_images` es 1, se devuelve un tensor de imagen único. Si es mayor que 1, se devuelve un lote de tensores de imagen. |
+| `output` | IMAGE | La imagen generada o un lote de imágenes. Si `número de imágenes` es 1, se devuelve un tensor de imagen único. Si es mayor que 1, se devuelve un lote de tensores de imagen. |
 
 ---
 **Source fingerprint (SHA-256):** `5c8a76d3636dea8bcc6ade0d8adb6e6d1610b518a31e15fc7fce3f107fe63953`

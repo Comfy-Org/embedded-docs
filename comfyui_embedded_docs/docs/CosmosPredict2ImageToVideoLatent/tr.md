@@ -7,12 +7,12 @@ CosmosPredict2ImageToVideoLatent düğümü, video oluşturma için görüntüle
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `vae` | VAE | Evet | - | Görüntüleri gizil uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Hayır | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Hayır | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Hayır | 1 ile MAX_RESOLUTION | Video dizisindeki kare sayısı (varsayılan: 93, adım: 4) |
-| `batch_size` | INT | Hayır | 1 ile 4096 | Oluşturulacak video dizisi sayısı (varsayılan: 1) |
-| `start_image` | IMAGE | Hayır | - | Video dizisi için isteğe bağlı başlangıç görüntüsü |
-| `end_image` | IMAGE | Hayır | - | Video dizisi için isteğe bağlı bitiş görüntüsü |
+| `genişlik` | INT | Hayır | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 848, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Hayır | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Hayır | 1 ile MAX_RESOLUTION | Video dizisindeki kare sayısı (varsayılan: 93, adım: 4) |
+| `toplu_iş_boyutu` | INT | Hayır | 1 ile 4096 | Oluşturulacak video dizisi sayısı (varsayılan: 1) |
+| `başlangıç_görseli` | IMAGE | Hayır | - | Video dizisi için isteğe bağlı başlangıç görüntüsü |
+| `bitiş_görseli` | IMAGE | Hayır | - | Video dizisi için isteğe bağlı bitiş görüntüsü |
 
 **Not:** Ne `start_image` ne de `end_image` sağlanmadığında, düğüm boş bir video gizili oluşturur. Görüntüler sağlandığında, uygun maskeleme ile video dizisinin başına ve/veya sonuna konumlandırılarak kodlanır.
 

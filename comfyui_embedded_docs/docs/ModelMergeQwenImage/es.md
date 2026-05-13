@@ -6,8 +6,8 @@ El nodo ModelMergeQwenImage fusiona dos modelos de IA combinando sus componentes
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | Sí | - | El primer modelo a fusionar (predeterminado: ninguno) |
-| `model2` | MODEL | Sí | - | El segundo modelo a fusionar (predeterminado: ninguno) |
+| `modelo1` | MODEL | Sí | - | El primer modelo a fusionar (predeterminado: ninguno) |
+| `modelo2` | MODEL | Sí | - | El segundo modelo a fusionar (predeterminado: ninguno) |
 | `pos_embeds.` | FLOAT | Sí | 0.0 a 1.0 | Peso para la mezcla de incrustaciones posicionales (predeterminado: 1.0) |
 | `img_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso para la mezcla del procesamiento de entrada de imagen (predeterminado: 1.0) |
 | `txt_norm.` | FLOAT | Sí | 0.0 a 1.0 | Peso para la mezcla de normalización de texto (predeterminado: 1.0) |

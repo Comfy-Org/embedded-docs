@@ -8,9 +8,9 @@
 
 | پارامتر | نوع داده | الزامی | محدوده | توضیحات |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | بله | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | مدل هوش مصنوعی مورد استفاده. Seedance 2.0 برای حداکثر کیفیت و Seedance 2.0 Fast برای سرعت بهینه‌سازی شده است. انتخاب یک مدل، ورودی‌های اضافی الزامی برای `prompt`، `resolution`، `duration`، `ratio`، `generate_audio` و ورودی‌های اختیاری برای `reference_images`، `reference_videos`، `reference_audios`، `reference_assets` و `auto_downscale` را آشکار می‌کند. |
+| `مدل` | COMBO | بله | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | مدل هوش مصنوعی مورد استفاده. Seedance 2.0 برای حداکثر کیفیت و Seedance 2.0 Fast برای سرعت بهینه‌سازی شده است. انتخاب یک مدل، ورودی‌های اضافی الزامی برای `prompt`، `resolution`، `duration`، `ratio`، `generate_audio` و ورودی‌های اختیاری برای `reference_images`، `reference_videos`، `reference_audios`، `reference_assets` و `auto_downscale` را آشکار می‌کند. |
 | `seed` | INT | خیر | 0 تا 2147483647 | عددی برای کنترل اجرای مجدد گره. نتایج صرف‌نظر از مقدار seed غیرقطعی هستند (پیش‌فرض: 0). |
-| `watermark` | BOOLEAN | خیر | `True` / `False` | آیا به ویدئوی تولیدشده واترمارک اضافه شود (پیش‌فرض: False). |
+| `واترمارک` | BOOLEAN | خیر | `True` / `False` | آیا به ویدئوی تولیدشده واترمارک اضافه شود (پیش‌فرض: False). |
 
 **محدودیت‌های مهم:**
 *   حداقل یک تصویر یا ویدئوی مرجع (از طریق ورودی‌های `reference_images`، `reference_videos` یا `reference_assets`) برای کارکرد گره الزامی است.

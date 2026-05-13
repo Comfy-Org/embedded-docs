@@ -9,13 +9,13 @@
 | `r` | INT | 是 | 0-255 | 颜色的红色值（默认值：0） |
 | `g` | INT | 是 | 0-255 | 颜色的绿色值（默认值：0） |
 | `b` | INT | 是 | 0-255 | 颜色的蓝色值（默认值：0） |
-| `recraft_color` | COLOR | 否 | - | 可选的现有 Recraft 颜色链，用于扩展新的 RGB 颜色 |
+| `Recraft色彩` | COLOR | 否 | - | 可选的现有 Recraft 颜色链，用于扩展新的 RGB 颜色 |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `recraft_color` | COLOR | 创建的包含指定 RGB 值的 Recraft 颜色对象，若提供了现有颜色链，则为扩展后的颜色链 |
+| `Recraft色彩` | COLOR | 创建的包含指定 RGB 值的 Recraft 颜色对象，若提供了现有颜色链，则为扩展后的颜色链 |
 
 ---
 **Source fingerprint (SHA-256):** `8c3503632d085fa4c1771f92f17008b7b051e9604d9e7d1e7d352cbbbd22dddc`

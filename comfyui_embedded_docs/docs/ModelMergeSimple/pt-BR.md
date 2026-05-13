@@ -10,7 +10,7 @@ O parâmetro `ratio` determina a proporção da mesclagem entre os dois modelos.
 |-----------|---------------|-----------|
 | `model1`  | `MODEL`       | O primeiro modelo a ser mesclado. Ele serve como modelo base sobre o qual os patches do segundo modelo são aplicados. |
 | `model2`  | `MODEL`       | O segundo modelo cujos patches são aplicados sobre o primeiro modelo, influenciados pela proporção especificada. |
-| `ratio`   | `FLOAT`       | Quando esse valor é 1, o modelo de saída é 100% `model1` e, quando esse valor é 0, o modelo de saída é 100% `model2`. |
+| `proporção`   | `FLOAT`       | Quando esse valor é 1, o modelo de saída é 100% `model1` e, quando esse valor é 0, o modelo de saída é 100% `model2`. |
 
 ## Saídas
 

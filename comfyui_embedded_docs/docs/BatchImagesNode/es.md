@@ -6,7 +6,7 @@ El nodo "Combinar Imágenes" agrupa múltiples imágenes individuales en un solo
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `images` | IMAGE | Sí | 2 a 50 entradas | Una lista dinámica de entradas de imagen. Puedes agregar entre 2 y 50 imágenes para combinarlas en un lote. La interfaz del nodo te permite añadir más ranuras de entrada de imagen según sea necesario. |
+| `imágenes` | IMAGE | Sí | 2 a 50 entradas | Una lista dinámica de entradas de imagen. Puedes agregar entre 2 y 50 imágenes para combinarlas en un lote. La interfaz del nodo te permite añadir más ranuras de entrada de imagen según sea necesario. |
 
 **Nota:** Debes conectar al menos dos imágenes para que el nodo funcione. La primera ranura de entrada siempre es obligatoria, y puedes agregar más usando el botón "+" que aparece en la interfaz del nodo.
 

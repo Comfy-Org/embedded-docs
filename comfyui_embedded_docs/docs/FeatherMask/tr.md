@@ -6,14 +6,14 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|--------------|-------------|
-| `mask`    | MASK         | Yumuşatma efektinin uygulanacağı maske. Yumuşatmadan etkilenecek görüntü alanını belirler. |
-| `left`    | INT          | Yumuşatma efektinin uygulanacağı sol kenardan olan mesafeyi belirtir. |
-| `top`     | INT          | Yumuşatma efektinin uygulanacağı üst kenardan olan mesafeyi belirtir. |
-| `right`   | INT          | Yumuşatma efektinin uygulanacağı sağ kenardan olan mesafeyi belirtir. |
-| `bottom`  | INT          | Yumuşatma efektinin uygulanacağı alt kenardan olan mesafeyi belirtir. |
+| `maske`    | MASK         | Yumuşatma efektinin uygulanacağı maske. Yumuşatmadan etkilenecek görüntü alanını belirler. |
+| `sol`    | INT          | Yumuşatma efektinin uygulanacağı sol kenardan olan mesafeyi belirtir. |
+| `üst`     | INT          | Yumuşatma efektinin uygulanacağı üst kenardan olan mesafeyi belirtir. |
+| `sağ`   | INT          | Yumuşatma efektinin uygulanacağı sağ kenardan olan mesafeyi belirtir. |
+| `alt`  | INT          | Yumuşatma efektinin uygulanacağı alt kenardan olan mesafeyi belirtir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|--------------|-------------|
-| `mask`    | MASK         | Çıktı, kenarlarına yumuşatma efekti uygulanmış, giriş maskesinin değiştirilmiş bir sürümüdür. |
+| `maske`    | MASK         | Çıktı, kenarlarına yumuşatma efekti uygulanmış, giriş maskesinin değiştirilmiş bir sürümüdür. |

@@ -6,15 +6,15 @@ El nodo ImageAddNoise añade ruido aleatorio a una imagen de entrada. Utiliza un
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada a la que se le añadirá ruido |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | La semilla aleatoria utilizada para generar el ruido (predeterminado: 0) |
-| `strength` | FLOAT | Sí | 0.0 a 1.0 | Controla la intensidad del efecto de ruido (predeterminado: 0.5) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada a la que se le añadirá ruido |
+| `semilla` | INT | Sí | 0 a 18446744073709551615 | La semilla aleatoria utilizada para generar el ruido (predeterminado: 0) |
+| `intensidad` | FLOAT | Sí | 0.0 a 1.0 | Controla la intensidad del efecto de ruido (predeterminado: 0.5) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen de salida con el ruido añadido aplicado |
+| `imagen` | IMAGE | La imagen de salida con el ruido añadido aplicado |
 
 ---
 **Source fingerprint (SHA-256):** `8abfc64500e5ff8fe7589763a07c15d771e9a5a6a61bae9ec4d819be9bf71810`

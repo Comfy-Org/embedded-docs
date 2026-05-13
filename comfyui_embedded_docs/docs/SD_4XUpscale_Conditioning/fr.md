@@ -10,16 +10,16 @@ Le nœud SD_4XUpscale_Conditioning prépare les données de conditionnement pour
 |-----------|-----------------|--------|-------|-------------|
 | `images` | IMAGE | Oui | - | Images d'entrée à mettre à l'échelle |
 | `positive` | CONDITIONING | Oui | - | Données de conditionnement positif qui guident la génération vers le contenu souhaité |
-| `negative` | CONDITIONING | Oui | - | Données de conditionnement négatif qui éloignent la génération du contenu indésirable |
-| `scale_ratio` | FLOAT | Non | 0.0 - 10.0 | Facteur de mise à l'échelle appliqué aux images d'entrée (par défaut : 4.0) |
-| `noise_augmentation` | FLOAT | Non | 0.0 - 1.0 | Quantité de bruit à ajouter pendant le processus de mise à l'échelle (par défaut : 0.0) |
+| `négatif` | CONDITIONING | Oui | - | Données de conditionnement négatif qui éloignent la génération du contenu indésirable |
+| `ratio_d'échelle` | FLOAT | Non | 0.0 - 10.0 | Facteur de mise à l'échelle appliqué aux images d'entrée (par défaut : 4.0) |
+| `augmentation_du_bruit` | FLOAT | Non | 0.0 - 1.0 | Quantité de bruit à ajouter pendant le processus de mise à l'échelle (par défaut : 0.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec les informations de mise à l'échelle appliquées |
-| `negative` | CONDITIONING | Conditionnement négatif modifié avec les informations de mise à l'échelle appliquées |
+| `négatif` | CONDITIONING | Conditionnement positif modifié avec les informations de mise à l'échelle appliquées |
+| `latent` | CONDITIONING | Conditionnement négatif modifié avec les informations de mise à l'échelle appliquées |
 | `latent` | LATENT | Représentation latente vide correspondant aux dimensions mises à l'échelle |
 
 ---

@@ -8,16 +8,16 @@ Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui se po
 
 | Paramètre | Type de données | Requis | Plage | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `model` | COMBO | Oui | `"wan2.7-i2v"` | Le modèle de génération vidéo à utiliser. |
+| `modèle` | COMBO | Oui | `"wan2.7-i2v"` | Le modèle de génération vidéo à utiliser. |
 | `model.prompt` | STRING | Oui | - | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : chaîne vide) |
 | `model.negative_prompt` | STRING | Oui | - | Invite négative décrivant ce qu'il faut éviter. (par défaut : chaîne vide) |
 | `model.resolution` | COMBO | Oui | `"720P"`<br>`"1080P"` | La résolution de la vidéo de sortie. |
 | `model.duration` | INT | Oui | 2 à 15 | Durée totale de sortie en secondes. Le modèle génère la suite pour combler le temps restant après le clip d'entrée. (par défaut : 5) |
-| `first_clip` | VIDEO | Oui | - | Vidéo d'entrée à partir de laquelle continuer. Durée : 2s-10s. Le rapport hauteur/largeur de sortie est dérivé de cette vidéo. |
-| `last_frame` | IMAGE | Non | - | Image de la dernière image. La suite effectuera une transition vers cette image. |
-| `seed` | INT | Oui | 0 à 2147483647 | Graine à utiliser pour la génération. (par défaut : 0) |
-| `prompt_extend` | BOOLEAN | Oui | - | Indique s'il faut améliorer l'invite avec l'assistance de l'IA. (par défaut : True) |
-| `watermark` | BOOLEAN | Oui | - | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (par défaut : False) |
+| `premier clip` | VIDEO | Oui | - | Vidéo d'entrée à partir de laquelle continuer. Durée : 2s-10s. Le rapport hauteur/largeur de sortie est dérivé de cette vidéo. |
+| `dernière image` | IMAGE | Non | - | Image de la dernière image. La suite effectuera une transition vers cette image. |
+| `graine` | INT | Oui | 0 à 2147483647 | Graine à utiliser pour la génération. (par défaut : 0) |
+| `extension d'invite` | BOOLEAN | Oui | - | Indique s'il faut améliorer l'invite avec l'assistance de l'IA. (par défaut : True) |
+| `filigrane` | BOOLEAN | Oui | - | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (par défaut : False) |
 
 **Remarque :** La vidéo d'entrée `first_clip` doit avoir une durée comprise entre 2 et 10 secondes.
 

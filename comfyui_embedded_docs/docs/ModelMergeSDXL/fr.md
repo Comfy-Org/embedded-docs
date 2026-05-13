@@ -6,8 +6,8 @@ Le nœud ModelMergeSDXL vous permet de fusionner deux modèles SDXL en ajustant 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model1` | MODEL | Oui | - | Premier modèle SDXL à fusionner |
-| `model2` | MODEL | Oui | - | Deuxième modèle SDXL à fusionner |
+| `modèle1` | MODEL | Oui | - | Premier modèle SDXL à fusionner |
+| `modèle2` | MODEL | Oui | - | Deuxième modèle SDXL à fusionner |
 | `time_embed.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion pour les couches d'intégration temporelle (par défaut : 1.0) |
 | `label_emb.` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion pour les couches d'intégration d'étiquettes (par défaut : 1.0) |
 | `input_blocks.0` | FLOAT | Oui | 0.0 - 1.0 | Poids de fusion pour le bloc d'entrée 0 (par défaut : 1.0) |

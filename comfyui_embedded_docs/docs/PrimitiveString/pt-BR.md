@@ -8,7 +8,7 @@ O nó String fornece uma maneira simples de inserir e transmitir dados de texto 
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `value` | STRING | Sim | Qualquer texto | A string de texto a ser transmitida pelo nó |
+| `valor` | STRING | Sim | Qualquer texto | A string de texto a ser transmitida pelo nó |
 
 ## Saídas
 

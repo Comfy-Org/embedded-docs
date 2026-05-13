@@ -6,8 +6,8 @@ StringTrim düğümü, bir metin dizesinin başından, sonundan veya her iki tar
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | - | İşlenecek metin dizesi. Çok satırlı girdiyi destekler. |
-| `mode` | COMBO | Evet | "Both"<br>"Left"<br>"Right" | Dizenin hangi taraf(lar)ının kırpılacağını belirtir. "Both" her iki uçtan boşlukları kaldırır, "Left" yalnızca başlangıçtan kaldırır, "Right" yalnızca sondan kaldırır. |
+| `dize` | STRING | Evet | - | İşlenecek metin dizesi. Çok satırlı girdiyi destekler. |
+| `mod` | COMBO | Evet | "Both"<br>"Left"<br>"Right" | Dizenin hangi taraf(lar)ının kırpılacağını belirtir. "Both" her iki uçtan boşlukları kaldırır, "Left" yalnızca başlangıçtan kaldırır, "Right" yalnızca sondan kaldırır. |
 
 ## Çıktılar
 

@@ -8,13 +8,13 @@ Amplia imagem de forma síncrona. Aprimora uma imagem raster fornecida usando a 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser ampliada. Aceita um lote de imagens. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser ampliada. Aceita um lote de imagens. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem ampliada com resolução e clareza aprimoradas. Retorna um lote de imagens se um lote foi fornecido como entrada. |
+| `imagem` | IMAGE | A imagem ampliada com resolução e clareza aprimoradas. Retorna um lote de imagens se um lote foi fornecido como entrada. |
 
 ---
 **Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`

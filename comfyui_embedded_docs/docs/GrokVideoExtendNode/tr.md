@@ -6,10 +6,10 @@ Bu, mevcut bir videonun kesintisiz devamını oluşturmak için bir yapay zeka m
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | Videoda daha sonra ne olması gerektiğine dair metin açıklaması. |
+| `istem` | STRING | Evet | Yok | Videoda daha sonra ne olması gerektiğine dair metin açıklaması. |
 | `video` | VIDEO | Evet | Yok | Uzatılacak kaynak video. MP4 formatı, 2-15 saniye. |
 | `model` | COMBO | Evet | `"grok-imagine-video"` | Video uzatma için kullanılacak model. Seçildiğinde, iç içe geçmiş bir `duration` parametresini ortaya çıkarır. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar, tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar, tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
 
 **Parametre Kısıtlamaları:**
 *   `video` girişi, 2 ila 15 saniye uzunluğunda bir MP4 dosyası olmalı ve dosya boyutu 50MB'ı geçemez.

@@ -8,9 +8,9 @@ Bu düğüm, `ComfyUI/models/text_encoders` klasöründe bulunan modelleri algı
 
 | Parametre     | Comfy dtype  | Açıklama                                                                                                                                                          |
 | ------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `clip_name1`  | COMBO[STRING] | Yüklenecek ilk CLIP modelinin adını belirtir. Bu parametre, mevcut CLIP modellerinin önceden tanımlanmış listesinden doğru modeli tanımlamak ve almak için önemlidir. |
-| `clip_name2`  | COMBO[STRING] | Yüklenecek ikinci CLIP modelinin adını belirtir. Bu parametre, ilk modelin yanında karşılaştırmalı veya bütünleşik analiz için ikinci bir farklı CLIP modelinin yüklenmesini sağlar. |
-| `type`        | `option`     | Farklı modellere uyum sağlamak için "sdxl", "sd3", "flux" arasından seçim yapın.                                                                                    |
+| `clip_adı1`  | COMBO[STRING] | Yüklenecek ilk CLIP modelinin adını belirtir. Bu parametre, mevcut CLIP modellerinin önceden tanımlanmış listesinden doğru modeli tanımlamak ve almak için önemlidir. |
+| `clip_adı2`  | COMBO[STRING] | Yüklenecek ikinci CLIP modelinin adını belirtir. Bu parametre, ilk modelin yanında karşılaştırmalı veya bütünleşik analiz için ikinci bir farklı CLIP modelinin yüklenmesini sağlar. |
+| `tür`        | `option`     | Farklı modellere uyum sağlamak için "sdxl", "sd3", "flux" arasından seçim yapın.                                                                                    |
 
 * Yükleme sırası çıktı etkisini etkilemez
 

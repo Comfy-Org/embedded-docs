@@ -8,13 +8,13 @@ Le nœud Vidu Q3 Text-to-Video Generation crée une vidéo à partir d'une descr
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modèle à utiliser pour la génération vidéo. La sélection d'un modèle révèle des paramètres de configuration supplémentaires pour le rapport hauteur/largeur, la résolution, la durée et le son. |
-| `model.aspect_ratio` | COMBO | Oui* | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | Le rapport hauteur/largeur de la vidéo de sortie. Ce paramètre est révélé lorsqu'un `model` est sélectionné. |
-| `model.resolution` | COMBO | Oui* | `"720p"`<br>`"1080p"` | Résolution de la vidéo de sortie. Ce paramètre est révélé lorsqu'un `model` est sélectionné. |
-| `model.duration` | INT | Oui* | 1 à 16 | Durée de la vidéo de sortie en secondes (par défaut : 5). Ce paramètre est révélé lorsqu'un `model` est sélectionné. |
-| `model.audio` | BOOLEAN | Oui* | Vrai/Faux | Lorsqu'il est activé, produit une vidéo avec du son (incluant dialogues et effets sonores) (par défaut : Faux). Ce paramètre est révélé lorsqu'un `model` est sélectionné. |
-| `prompt` | STRING | Oui | N/A | Une description textuelle pour la génération vidéo, avec une longueur maximale de 2000 caractères. |
-| `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine pour contrôler l'aléatoire de la génération (par défaut : 1). |
+| `modèle` | COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modèle à utiliser pour la génération vidéo. La sélection d'un modèle révèle des paramètres de configuration supplémentaires pour le rapport hauteur/largeur, la résolution, la durée et le son. |
+| `model.aspect_ratio` | COMBO | Oui* | `"16:9"`<br>`"9:16"`<br>`"3:4"`<br>`"4:3"`<br>`"1:1"` | Le rapport hauteur/largeur de la vidéo de sortie. Ce paramètre est révélé lorsqu'un `modèle` est sélectionné. |
+| `model.resolution` | COMBO | Oui* | `"720p"`<br>`"1080p"` | Résolution de la vidéo de sortie. Ce paramètre est révélé lorsqu'un `modèle` est sélectionné. |
+| `model.duration` | INT | Oui* | 1 à 16 | Durée de la vidéo de sortie en secondes (par défaut : 5). Ce paramètre est révélé lorsqu'un `modèle` est sélectionné. |
+| `model.audio` | BOOLEAN | Oui* | Vrai/Faux | Lorsqu'il est activé, produit une vidéo avec du son (incluant dialogues et effets sonores) (par défaut : Faux). Ce paramètre est révélé lorsqu'un `modèle` est sélectionné. |
+| `invite` | STRING | Oui | N/A | Une description textuelle pour la génération vidéo, avec une longueur maximale de 2000 caractères. |
+| `graine` | INT | Non | 0 à 2147483647 | Une valeur de graine pour contrôler l'aléatoire de la génération (par défaut : 1). |
 
 *Remarque : Les paramètres `aspect_ratio`, `resolution`, `duration` et `audio` sont requis une fois qu'un `model` est sélectionné, car ils font partie de sa configuration.
 

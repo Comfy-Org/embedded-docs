@@ -37,11 +37,11 @@ OpenAIVideoSora2 düğümü, OpenAI'nin Sora modellerini kullanarak videolar olu
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | "sora-2"<br>"sora-2-pro" | Video oluşturma için kullanılacak OpenAI Sora modeli (varsayılan: "sora-2") |
-| `prompt` | STRING | Evet | - | Yönlendirici metin; bir giriş görüntüsü varsa boş olabilir (varsayılan: boş) |
-| `size` | COMBO | Evet | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | Oluşturulan video için çözünürlük (varsayılan: "1280x720") |
-| `duration` | COMBO | Evet | 4<br>8<br>12 | Oluşturulan videonun saniye cinsinden süresi (varsayılan: 8) |
-| `image` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı giriş görüntüsü |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar, tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0) |
+| `komut istemi` | STRING | Evet | - | Yönlendirici metin; bir giriş görüntüsü varsa boş olabilir (varsayılan: boş) |
+| `boyut` | COMBO | Evet | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | Oluşturulan video için çözünürlük (varsayılan: "1280x720") |
+| `süre` | COMBO | Evet | 4<br>8<br>12 | Oluşturulan videonun saniye cinsinden süresi (varsayılan: 8) |
+| `görsel` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı giriş görüntüsü |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar, tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0) |
 
 **Kısıtlamalar ve Sınırlamalar:**
 

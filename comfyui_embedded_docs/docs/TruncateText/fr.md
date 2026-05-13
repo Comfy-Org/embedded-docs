@@ -9,13 +9,13 @@ Ce nœud raccourcit un texte en le coupant à une longueur maximale spécifiée.
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `text` | STRING | Oui | N/D | La chaîne de texte à tronquer. |
-| `max_length` | INT | Oui | 1 à 10000 | Longueur maximale du texte. Le texte sera coupé après ce nombre de caractères (par défaut : 77). |
+| `longueur_maximale` | INT | Oui | 1 à 10000 | Longueur maximale du texte. Le texte sera coupé après ce nombre de caractères (par défaut : 77). |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `string` | STRING | Le texte tronqué, contenant uniquement les premiers `max_length` caractères de l'entrée. |
+| `string` | STRING | Le texte tronqué, contenant uniquement les premiers `longueur_maximale` caractères de l'entrée. |
 
 ---
 **Source fingerprint (SHA-256):** `271a77a910967c4fd86a07485449679fb8db89f6b3f2bf0a8fa2ff224ea2f7b2`

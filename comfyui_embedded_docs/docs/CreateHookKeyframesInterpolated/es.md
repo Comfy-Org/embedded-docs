@@ -8,7 +8,7 @@ Crea una secuencia de fotogramas clave de hook con valores de intensidad interpo
 |-----------|--------------|-------------|-------|-------------|
 | `strength_start` | FLOAT | Sí | 0.0 - 10.0 | Valor de intensidad inicial para la secuencia de interpolación (predeterminado: 1.0) |
 | `strength_end` | FLOAT | Sí | 0.0 - 10.0 | Valor de intensidad final para la secuencia de interpolación (predeterminado: 1.0) |
-| `interpolation` | COMBO | Sí | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | Método de interpolación utilizado para la transición entre valores de intensidad (predeterminado: LINEAR) |
+| `interpolación` | COMBO | Sí | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | Método de interpolación utilizado para la transición entre valores de intensidad (predeterminado: LINEAR) |
 | `start_percent` | FLOAT | Sí | 0.0 - 1.0 | Posición porcentual inicial en el proceso de generación (predeterminado: 0.0) |
 | `end_percent` | FLOAT | Sí | 0.0 - 1.0 | Posición porcentual final en el proceso de generación (predeterminado: 1.0) |
 | `keyframes_count` | INT | Sí | 2 - 100 | Número de fotogramas clave a generar en la secuencia de interpolación (predeterminado: 5) |

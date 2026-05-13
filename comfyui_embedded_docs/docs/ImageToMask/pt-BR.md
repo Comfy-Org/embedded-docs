@@ -6,8 +6,8 @@ O nó ImageToMask foi projetado para converter uma imagem em uma máscara com ba
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | O parâmetro 'image' representa a imagem de entrada a partir da qual uma máscara será gerada com base no canal de cor especificado. Ele desempenha um papel crucial na determinação do conteúdo e das características da máscara resultante. |
-| `channel` | COMBO[STRING] | O parâmetro 'channel' especifica qual canal de cor (vermelho, verde, azul ou alfa) da imagem de entrada deve ser usado para gerar a máscara. Essa escolha influencia diretamente a aparência da máscara e quais partes da imagem são destacadas ou mascaradas. |
+| `imagem`   | `IMAGE`       | O parâmetro 'image' representa a imagem de entrada a partir da qual uma máscara será gerada com base no canal de cor especificado. Ele desempenha um papel crucial na determinação do conteúdo e das características da máscara resultante. |
+| `canal` | COMBO[STRING] | O parâmetro 'channel' especifica qual canal de cor (vermelho, verde, azul ou alfa) da imagem de entrada deve ser usado para gerar a máscara. Essa escolha influencia diretamente a aparência da máscara e quais partes da imagem são destacadas ou mascaradas. |
 
 ## Saídas
 

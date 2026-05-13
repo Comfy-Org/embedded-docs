@@ -8,17 +8,17 @@ ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negati
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `positive` | CONDITIONING | Evet | - | Ses zamanlama bilgisiyle değiştirilecek pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Ses zamanlama bilgisiyle değiştirilecek negatif koşullandırma girdisi |
-| `seconds_start` | FLOAT | Evet | 0,0 - 1000,0 | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0,0) |
-| `seconds_total` | FLOAT | Evet | 0,0 - 1000,0 | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47,0) |
+| `pozitif` | CONDITIONING | Evet | - | Ses zamanlama bilgisiyle değiştirilecek pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Ses zamanlama bilgisiyle değiştirilecek negatif koşullandırma girdisi |
+| `saniye_başlangıç` | FLOAT | Evet | 0,0 - 1000,0 | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0,0) |
+| `saniye_toplam` | FLOAT | Evet | 0,0 - 1000,0 | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47,0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `positive` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
+| `negatif` | CONDITIONING | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
 
 ---
 **Source fingerprint (SHA-256):** `ad4fdb2ac536e4f9cc23c044a7a63333e3f3530cc782937eaedc1565cc7c5d0e`

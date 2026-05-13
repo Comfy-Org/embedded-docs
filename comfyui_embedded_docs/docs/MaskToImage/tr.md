@@ -6,7 +6,7 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | `MASK`      | Maske girişi, dönüşüm süreci için gereklidir ve görüntü formatına dönüştürülecek kaynak veri olarak işlev görür. Bu giriş, elde edilecek görüntünün şeklini ve içeriğini belirler. |
+| `maske`    | `MASK`      | Maske girişi, dönüşüm süreci için gereklidir ve görüntü formatına dönüştürülecek kaynak veri olarak işlev görür. Bu giriş, elde edilecek görüntünün şeklini ve içeriğini belirler. |
 
 ## Çıkışlar
 

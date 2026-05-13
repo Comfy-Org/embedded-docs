@@ -6,11 +6,11 @@ Este nó foi projetado para aumentar a resolução de imagens usando um modelo d
 
 | Parâmetro        | Tipo Comfy       | Descrição                                                                 |
 |------------------|------------------|---------------------------------------------------------------------------|
-| `upscale_model`  | `UPSCALE_MODEL`  | O modelo de upscale a ser usado para aumentar a resolução da imagem. É crucial para definir o algoritmo de upscale e seus parâmetros. |
-| `image`          | `IMAGE`          | A imagem a ser ampliada. Esta entrada é essencial para determinar o conteúdo de origem que passará pelo processo de upscale. |
+| `modelo_upscale`  | `UPSCALE_MODEL`  | O modelo de upscale a ser usado para aumentar a resolução da imagem. É crucial para definir o algoritmo de upscale e seus parâmetros. |
+| `imagem`          | `IMAGE`          | A imagem a ser ampliada. Esta entrada é essencial para determinar o conteúdo de origem que passará pelo processo de upscale. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição                                        |
 |-----------|---------------|--------------------------------------------------|
-| `image`   | `IMAGE`       | A imagem ampliada, processada pelo modelo de upscale. Esta saída é o resultado da operação de upscale, exibindo a resolução ou qualidade aprimorada. |
+| `imagem`   | `IMAGE`       | A imagem ampliada, processada pelo modelo de upscale. Esta saída é o resultado da operação de upscale, exibindo a resolução ou qualidade aprimorada. |

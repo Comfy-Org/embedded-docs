@@ -8,7 +8,7 @@ Le nœud UpscaleModelLoader est conçu pour charger des modèles de suréchantil
 
 | Champ          | Type Comfy         | Description                                                                       |
 |----------------|-------------------|-----------------------------------------------------------------------------------|
-| `model_name`   | `COMBO[STRING]`    | Spécifie le nom du modèle de suréchantillonnage à charger, identifiant et récupérant le fichier de modèle correct depuis le répertoire des modèles de suréchantillonnage. |
+| `nom_du_modèle`   | `COMBO[STRING]`    | Spécifie le nom du modèle de suréchantillonnage à charger, identifiant et récupérant le fichier de modèle correct depuis le répertoire des modèles de suréchantillonnage. |
 
 ## Sorties
 

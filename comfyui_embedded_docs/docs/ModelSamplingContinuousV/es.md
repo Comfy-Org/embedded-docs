@@ -7,7 +7,7 @@ El nodo ModelSamplingContinuousV modifica el comportamiento de muestreo de un mo
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
 | `model` | MODEL | Sí | - | El modelo de entrada que se modificará con muestreo de predicción V continua |
-| `sampling` | STRING | Sí | `"v_prediction"` | El método de muestreo a aplicar (actualmente solo se admite predicción V) |
+| `muestreo` | STRING | Sí | `"v_prediction"` | El método de muestreo a aplicar (actualmente solo se admite predicción V) |
 | `sigma_max` | FLOAT | Sí | 0.0 - 1000.0 | El valor máximo de sigma para el muestreo (predeterminado: 500.0) |
 | `sigma_min` | FLOAT | Sí | 0.0 - 1000.0 | El valor mínimo de sigma para el muestreo (predeterminado: 0.03) |
 

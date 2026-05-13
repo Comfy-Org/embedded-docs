@@ -8,13 +8,13 @@ Le nœud RegexExtract recherche des motifs dans un texte à l'aide d'expressions
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | Le texte d'entrée dans lequel rechercher des motifs |
-| `regex_pattern` | STRING | Oui | - | Le motif d'expression régulière à rechercher |
+| `chaîne` | STRING | Oui | - | Le texte d'entrée dans lequel rechercher des motifs |
+| `motif_regex` | STRING | Oui | - | Le motif d'expression régulière à rechercher |
 | `mode` | COMBO | Oui | "Première correspondance"<br>"Toutes les correspondances"<br>"Premier groupe"<br>"Tous les groupes" | Le mode d'extraction détermine quelles parties des correspondances sont renvoyées (par défaut : "Première correspondance") |
-| `case_insensitive` | BOOLEAN | Non | - | Indique s'il faut ignorer la casse lors de la correspondance (par défaut : Vrai) |
-| `multiline` | BOOLEAN | Non | - | Indique s'il faut traiter la chaîne comme plusieurs lignes (par défaut : Faux) |
+| `insensible_à_la_casse` | BOOLEAN | Non | - | Indique s'il faut ignorer la casse lors de la correspondance (par défaut : Vrai) |
+| `multiligne` | BOOLEAN | Non | - | Indique s'il faut traiter la chaîne comme plusieurs lignes (par défaut : Faux) |
 | `dotall` | BOOLEAN | Non | - | Indique si le point (.) correspond aux sauts de ligne (par défaut : Faux) |
-| `group_index` | INT | Non | 0-100 | L'index du groupe de capture à extraire lors de l'utilisation des modes de groupe (par défaut : 1) |
+| `index_groupe` | INT | Non | 0-100 | L'index du groupe de capture à extraire lors de l'utilisation des modes de groupe (par défaut : 1) |
 
 **Remarque :** Lors de l'utilisation des modes "Premier groupe" ou "Tous les groupes", le paramètre `group_index` spécifie le groupe de capture à extraire. Le groupe 0 représente la correspondance entière, tandis que les groupes 1+ représentent les groupes de capture numérotés dans votre motif regex.
 

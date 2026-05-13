@@ -8,8 +8,8 @@ O nó Remover Fundo utiliza um modelo de remoção de fundo para gerar uma másc
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | N/A | Imagem de entrada da qual o fundo será removido |
-| `bg_removal_model` | BACKGROUND_REMOVAL_MODEL | Sim | N/A | Modelo de remoção de fundo utilizado para gerar a máscara |
+| `imagem` | IMAGE | Sim | N/A | Imagem de entrada da qual o fundo será removido |
+| `modelo_remoção_fundo` | BACKGROUND_REMOVAL_MODEL | Sim | N/A | Modelo de remoção de fundo utilizado para gerar a máscara |
 
 # Saídas
 

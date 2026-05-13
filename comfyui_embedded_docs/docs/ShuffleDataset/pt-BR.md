@@ -6,14 +6,14 @@ O nó Shuffle Dataset recebe uma lista de imagens e altera aleatoriamente sua or
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | A lista de imagens a ser embaralhada. |
-| `seed` | INT | Não | 0 a 18446744073709551615 | Semente aleatória. Um valor de 0 produzirá um embaralhamento diferente a cada execução. (padrão: 0) |
+| `imagens` | IMAGE | Sim | - | A lista de imagens a ser embaralhada. |
+| `semente` | INT | Não | 0 a 18446744073709551615 | Semente aleatória. Um valor de 0 produzirá um embaralhamento diferente a cada execução. (padrão: 0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `images` | IMAGE | A mesma lista de imagens, mas em uma nova ordem aleatoriamente embaralhada. |
+| `imagens` | IMAGE | A mesma lista de imagens, mas em uma nova ordem aleatoriamente embaralhada. |
 
 ---
 **Source fingerprint (SHA-256):** `0b8442029995bdcedf1df0cb8d27d87aa529fb1021d911ed3016a6a7e788b246`

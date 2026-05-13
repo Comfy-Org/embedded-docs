@@ -8,7 +8,7 @@ Le nœud unCLIPCheckpointLoader est conçu pour charger des points de contrôle 
 
 | Champ        | Type Comfy        | Description                                                                       |
 |--------------|-------------------|-----------------------------------------------------------------------------------|
-| `ckpt_name`  | `COMBO[STRING]`   | Spécifie le nom du point de contrôle à charger, identifiant et récupérant le fichier de point de contrôle correct depuis un répertoire prédéfini, déterminant l'initialisation des modèles et des configurations. |
+| `nom_ckpt`  | `COMBO[STRING]`   | Spécifie le nom du point de contrôle à charger, identifiant et récupérant le fichier de point de contrôle correct depuis un répertoire prédéfini, déterminant l'initialisation des modèles et des configurations. |
 
 ## Sorties
 

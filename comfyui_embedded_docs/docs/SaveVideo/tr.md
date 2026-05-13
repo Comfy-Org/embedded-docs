@@ -7,7 +7,7 @@ SaveVideo düğümü, giriş video içeriğini ComfyUI çıktı dizininize kayde
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Evet | - | Kaydedilecek video. |
-| `filename_prefix` | STRING | Hayır | - | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerler eklemek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "video/ComfyUI"). |
+| `dosyaadı_öneki` | STRING | Hayır | - | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerler eklemek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "video/ComfyUI"). |
 | `format` | COMBO | Hayır | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` | Videonun kaydedileceği format (varsayılan: "auto"). |
 | `codec` | COMBO | Hayır | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` | Video için kullanılacak codec bileşeni (varsayılan: "auto"). |
 

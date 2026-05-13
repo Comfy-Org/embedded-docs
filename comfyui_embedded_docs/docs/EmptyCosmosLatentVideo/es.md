@@ -6,10 +6,10 @@ El nodo EmptyCosmosLatentVideo crea un tensor de video latente vacío con dimens
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | El ancho del video latente en píxeles (predeterminado: 1280, debe ser divisible por 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | La altura del video latente en píxeles (predeterminado: 704, debe ser divisible por 16) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | El número de fotogramas en el video latente (predeterminado: 121, debe ser divisible por 8) |
-| `batch_size` | INT | No | 1 a 4096 | La cantidad de videos latentes a generar en un lote (predeterminado: 1) |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | El ancho del video latente en píxeles (predeterminado: 1280, debe ser divisible por 16) |
+| `altura` | INT | Sí | 16 a MAX_RESOLUTION | La altura del video latente en píxeles (predeterminado: 704, debe ser divisible por 16) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | El número de fotogramas en el video latente (predeterminado: 121, debe ser divisible por 8) |
+| `tamaño_del_lote` | INT | No | 1 a 4096 | La cantidad de videos latentes a generar en un lote (predeterminado: 1) |
 
 ## Salidas
 

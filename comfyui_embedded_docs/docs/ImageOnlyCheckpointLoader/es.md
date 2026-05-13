@@ -8,7 +8,7 @@ Este nodo se especializa en cargar puntos de control específicamente para model
 
 | Campo        | Tipo de Dato | Descripción                                                                                     |
 |--------------|---------------|-------------------------------------------------------------------------------------------------|
-| `ckpt_name`  | COMBO[STRING] | Especifica el nombre del punto de control a cargar, crucial para identificar y recuperar el archivo de punto de control correcto de una lista predefinida. |
+| `nombre_ckpt`  | COMBO[STRING] | Especifica el nombre del punto de control a cargar, crucial para identificar y recuperar el archivo de punto de control correcto de una lista predefinida. |
 
 ## Salidas
 

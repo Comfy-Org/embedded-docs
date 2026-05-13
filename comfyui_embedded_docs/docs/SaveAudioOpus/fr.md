@@ -7,8 +7,8 @@ Le nœud SaveAudioOpus enregistre des données audio dans un fichier au format O
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `audio` | AUDIO | Oui | - | Les données audio à enregistrer sous forme de fichier Opus |
-| `filename_prefix` | STRING | Non | - | Le préfixe pour le nom du fichier de sortie (par défaut : "audio/ComfyUI") |
-| `quality` | COMBO | Non | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | Le paramètre de qualité audio pour le fichier Opus (par défaut : "128k") |
+| `préfixe_nom_fichier` | STRING | Non | - | Le préfixe pour le nom du fichier de sortie (par défaut : "audio/ComfyUI") |
+| `qualité` | COMBO | Non | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | Le paramètre de qualité audio pour le fichier Opus (par défaut : "128k") |
 
 ## Sorties
 

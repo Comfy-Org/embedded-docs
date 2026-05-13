@@ -6,12 +6,12 @@ El nodo TripoTextureNode genera modelos 3D texturizados utilizando la API de Tri
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | Sí | - | El ID de tarea del modelo al que se le aplicarán texturas |
-| `texture` | BOOLEAN | No | - | Si se deben generar texturas (predeterminado: True) |
+| `id_de_tarea_del_modelo` | MODEL_TASK_ID | Sí | - | El ID de tarea del modelo al que se le aplicarán texturas |
+| `textura` | BOOLEAN | No | - | Si se deben generar texturas (predeterminado: True) |
 | `pbr` | BOOLEAN | No | - | Si se deben generar materiales PBR (renderizado basado en física) (predeterminado: True) |
-| `texture_seed` | INT | No | - | Semilla aleatoria para la generación de texturas (predeterminado: 42) |
-| `texture_quality` | COMBO | No | "standard"<br>"detailed" | Nivel de calidad para la generación de texturas (predeterminado: "standard"). La opción "detailed" tiene un costo de $0.20 USD, mientras que "standard" cuesta $0.10 USD. |
-| `texture_alignment` | COMBO | No | "original_image"<br>"geometry" | Método para alinear texturas (predeterminado: "original_image"). "original_image" alinea las texturas con la imagen de entrada original, mientras que "geometry" las alinea con la geometría 3D. |
+| `semilla_de_textura` | INT | No | - | Semilla aleatoria para la generación de texturas (predeterminado: 42) |
+| `calidad_de_textura` | COMBO | No | "standard"<br>"detailed" | Nivel de calidad para la generación de texturas (predeterminado: "standard"). La opción "detailed" tiene un costo de $0.20 USD, mientras que "standard" cuesta $0.10 USD. |
+| `alineación_de_textura` | COMBO | No | "original_image"<br>"geometry" | Método para alinear texturas (predeterminado: "original_image"). "original_image" alinea las texturas con la imagen de entrada original, mientras que "geometry" las alinea con la geometría 3D. |
 
 *Nota: Este nodo requiere tokens de autenticación y claves API que son manejadas automáticamente por el sistema.*
 
@@ -19,8 +19,8 @@ El nodo TripoTextureNode genera modelos 3D texturizados utilizando la API de Tri
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `model_file` | STRING | El archivo de modelo generado con texturas aplicadas (solo para compatibilidad hacia atrás) |
-| `model task_id` | MODEL_TASK_ID | El ID de tarea para rastrear el proceso de generación de texturas |
+| `id_de_tarea_de_modelo` | STRING | El archivo de modelo generado con texturas aplicadas (solo para compatibilidad hacia atrás) |
+| `GLB` | MODEL_TASK_ID | El ID de tarea para rastrear el proceso de generación de texturas |
 | `GLB` | FILE3DGLB | El modelo 3D generado en formato GLB con texturas aplicadas |
 
 ---

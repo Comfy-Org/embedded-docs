@@ -6,12 +6,12 @@ El nodo `ImageBlur` aplica un desenfoque gaussiano a una imagen, permitiendo sua
 
 | Campo          | Tipo de Dato | Descripción                                                                   |
 |----------------|--------------|-------------------------------------------------------------------------------|
-| `image`        | `IMAGE`      | La imagen de entrada que se va a desenfocar. Este es el objetivo principal del efecto de desenfoque. |
-| `blur_radius`  | `INT`        | Determina el radio del efecto de desenfoque. Un radio mayor produce un desenfoque más pronunciado. |
+| `imagen`        | `IMAGE`      | La imagen de entrada que se va a desenfocar. Este es el objetivo principal del efecto de desenfoque. |
+| `radio_de_desenfoque`  | `INT`        | Determina el radio del efecto de desenfoque. Un radio mayor produce un desenfoque más pronunciado. |
 | `sigma`        | `FLOAT`      | Controla la propagación del desenfoque. Un valor de sigma más alto significa que el desenfoque afectará un área más amplia alrededor de cada píxel. |
 
 ## Salidas
 
 | Campo | Tipo de Dato | Descripción                                                              |
 |-------|--------------|--------------------------------------------------------------------------|
-| `image`| `IMAGE`      | La salida es la versión desenfocada de la imagen de entrada, con el grado de desenfoque determinado por los parámetros de entrada. |
+| `imagen`| `IMAGE`      | La salida es la versión desenfocada de la imagen de entrada, con el grado de desenfoque determinado por los parámetros de entrada. |

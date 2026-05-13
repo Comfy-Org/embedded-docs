@@ -9,8 +9,8 @@ O nó **CropMask** foi projetado para recortar uma área específica de uma más
 | `mask`    | MASK          | A entrada `mask` representa a imagem da máscara a ser recortada. É essencial para definir a área a ser extraída com base nas coordenadas e dimensões especificadas. |
 | `x`       | INT           | A coordenada `x` especifica o ponto inicial no eixo horizontal a partir do qual o recorte deve começar. |
 | `y`       | INT           | A coordenada `y` determina o ponto inicial no eixo vertical para a operação de recorte. |
-| `width`   | INT           | A `width` (largura) define a extensão horizontal da área de recorte a partir do ponto inicial. |
-| `height`  | INT           | A `height` (altura) especifica a extensão vertical da área de recorte a partir do ponto inicial. |
+| `largura`   | INT           | A `largura` (largura) define a extensão horizontal da área de recorte a partir do ponto inicial. |
+| `altura`  | INT           | A `altura` (altura) especifica a extensão vertical da área de recorte a partir do ponto inicial. |
 
 ## Saídas
 

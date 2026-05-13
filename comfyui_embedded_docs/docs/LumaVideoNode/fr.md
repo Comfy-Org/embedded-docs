@@ -9,12 +9,12 @@ Génère des vidéos de manière synchrone à partir d'une invite textuelle et d
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite pour la génération vidéo (par défaut : chaîne vide). Doit comporter au moins 3 caractères. |
-| `model` | COMBO | Oui | `"ray_1_6"`<br>`"ray_2"` | Le modèle de génération vidéo à utiliser. |
-| `aspect_ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Le rapport hauteur/largeur de la vidéo générée (par défaut : "16:9"). |
-| `resolution` | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"` | La résolution de sortie de la vidéo (par défaut : "540p"). Ce paramètre est ignoré lors de l'utilisation du modèle `ray_1_6`. |
-| `duration` | COMBO | Oui | `"5s"`<br>`"9s"` | La durée de la vidéo générée. Ce paramètre est ignoré lors de l'utilisation du modèle `ray_1_6`. |
-| `loop` | BOOLEAN | Oui | - | Indique si la vidéo doit boucler (par défaut : False). |
-| `seed` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). |
+| `modèle` | COMBO | Oui | `"ray_1_6"`<br>`"ray_2"` | Le modèle de génération vidéo à utiliser. |
+| `rapport d'aspect` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Le rapport hauteur/largeur de la vidéo générée (par défaut : "16:9"). |
+| `résolution` | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"` | La résolution de sortie de la vidéo (par défaut : "540p"). Ce paramètre est ignoré lors de l'utilisation du modèle `ray_1_6`. |
+| `durée` | COMBO | Oui | `"5s"`<br>`"9s"` | La durée de la vidéo générée. Ce paramètre est ignoré lors de l'utilisation du modèle `ray_1_6`. |
+| `boucle` | BOOLEAN | Oui | - | Indique si la vidéo doit boucler (par défaut : False). |
+| `graine` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). |
 | `luma_concepts` | CUSTOM | Non | - | Concepts de caméra optionnels pour dicter le mouvement de la caméra via le nœud Luma Concepts. |
 
 **Remarque :** Lors de l'utilisation du modèle `ray_1_6`, les paramètres `duration` et `resolution` sont automatiquement ignorés et n'affectent pas la génération.

@@ -8,13 +8,13 @@ Le nœud de génération d'image vers vidéo Vidu Q3 crée une séquence vidéo 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modèle à utiliser pour la génération vidéo. |
+| `modèle` | COMBO | Oui | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modèle à utiliser pour la génération vidéo. |
 | `model.resolution` | COMBO | Oui | `"720p"`<br>`"1080p"`<br>`"2K"` (viduq3-pro uniquement) | Résolution de la vidéo de sortie. Les options disponibles dépendent du modèle sélectionné. |
 | `model.duration` | INT | Oui | 1 à 16 | Durée de la vidéo de sortie en secondes (par défaut : 5). |
 | `model.audio` | BOOLEAN | Oui | `True` / `False` | Lorsqu'activé, produit une vidéo avec son (incluant dialogues et effets sonores) (par défaut : False). |
 | `image` | IMAGE | Oui | - | Image utilisée comme première image de la vidéo générée. |
-| `prompt` | STRING | Non | - | Invite textuelle facultative pour la génération vidéo (2000 caractères maximum) (par défaut : vide). |
-| `seed` | INT | Non | 0 à 2147483647 | Valeur de graine pour contrôler l'aléatoire de la génération (par défaut : 1). |
+| `invite` | STRING | Non | - | Invite textuelle facultative pour la génération vidéo (2000 caractères maximum) (par défaut : vide). |
+| `graine` | INT | Non | 0 à 2147483647 | Valeur de graine pour contrôler l'aléatoire de la génération (par défaut : 1). |
 
 **Remarque :** L'`image` doit avoir un rapport hauteur/largeur compris entre 1:4 et 4:1 (portrait à paysage). Le `prompt` est facultatif mais ne peut pas dépasser 2000 caractères. Les options de `model.resolution` dépendent du `model` sélectionné : `"viduq3-pro"` prend en charge `"720p"`, `"1080p"` et `"2K"` ; `"viduq3-turbo"` prend en charge `"720p"` et `"1080p"`.
 

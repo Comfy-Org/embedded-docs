@@ -16,7 +16,7 @@ Genera videos a partir de indicaciones de texto utilizando la API de Veo 2 de Go
 | `person_generation` | COMBO | No | "ALLOW"<br>"BLOCK" | Si se permite generar personas en el video (predeterminado: "ALLOW"). Este es un parámetro avanzado. |
 | `seed` | INT | No | 0-4294967295 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0). Este es un parámetro avanzado. |
 | `image` | IMAGE | No | - | Imagen de referencia opcional para guiar la generación del video |
-| `model` | COMBO | No | "veo-2.0-generate-001" | Modelo Veo 2 a utilizar para la generación del video (predeterminado: "veo-2.0-generate-001") |
+| `modelo` | COMBO | No | "veo-2.0-generate-001" | Modelo Veo 2 a utilizar para la generación del video (predeterminado: "veo-2.0-generate-001") |
 
 **Nota:** El parámetro `generate_audio` solo está disponible para los modelos Veo 3.0 y es manejado automáticamente por el nodo según el modelo seleccionado. Al usar modelos Veo 3.0, el parámetro `enhance_prompt` se fuerza a True.
 

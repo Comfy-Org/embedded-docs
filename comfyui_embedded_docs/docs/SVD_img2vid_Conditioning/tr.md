@@ -6,15 +6,15 @@ SVD_img2vid_Conditioning düğümü, Stable Video Diffusion kullanarak video olu
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için CLIP vision modeli |
-| `init_image` | IMAGE | Evet | - | Video oluşturma için başlangıç noktası olarak kullanılacak başlangıç görüntüsü |
+| `clip_görü` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için CLIP vision modeli |
+| `başlangıç_görüntüsü` | IMAGE | Evet | - | Video oluşturma için başlangıç noktası olarak kullanılacak başlangıç görüntüsü |
 | `vae` | VAE | Evet | - | Görüntüyü gizli uzaya kodlamak için VAE modeli |
-| `width` | INT | Evet | 16 ile MAKS_ÇÖZÜNÜRLÜK | Çıkış videosu genişliği (varsayılan: 1024, adım: 8) |
-| `height` | INT | Evet | 16 ile MAKS_ÇÖZÜNÜRLÜK | Çıkış videosu yüksekliği (varsayılan: 576, adım: 8) |
-| `video_frames` | INT | Evet | 1 ile 4096 | Videoda oluşturulacak kare sayısı (varsayılan: 14) |
-| `motion_bucket_id` | INT | Evet | 1 ile 1023 | Oluşturulan videodaki hareket miktarını kontrol eder (varsayılan: 127) |
+| `genişlik` | INT | Evet | 16 ile MAKS_ÇÖZÜNÜRLÜK | Çıkış videosu genişliği (varsayılan: 1024, adım: 8) |
+| `yükseklik` | INT | Evet | 16 ile MAKS_ÇÖZÜNÜRLÜK | Çıkış videosu yüksekliği (varsayılan: 576, adım: 8) |
+| `video_kareleri` | INT | Evet | 1 ile 4096 | Videoda oluşturulacak kare sayısı (varsayılan: 14) |
+| `hareket_kovası_kimliği` | INT | Evet | 1 ile 1023 | Oluşturulan videodaki hareket miktarını kontrol eder (varsayılan: 127) |
 | `fps` | INT | Evet | 1 ile 1024 | Oluşturulan video için saniyedeki kare sayısı (varsayılan: 6) |
-| `augmentation_level` | FLOAT | Evet | 0,0 ile 10,0 | Giriş görüntüsüne uygulanacak gürültü artırma seviyesi (varsayılan: 0,0, adım: 0,01) |
+| `artırma_seviyesi` | FLOAT | Evet | 0,0 ile 10,0 | Giriş görüntüsüne uygulanacak gürültü artırma seviyesi (varsayılan: 0,0, adım: 0,01) |
 
 ## Çıkışlar
 

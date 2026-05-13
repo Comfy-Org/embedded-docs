@@ -8,7 +8,7 @@ El nodo CLIPMergeSubtract realiza la fusión de modelos restando los pesos de un
 |-----------|--------------|-------------|-------|-------------|
 | `clip1` | CLIP | Sí | - | El modelo CLIP base que será clonado y modificado |
 | `clip2` | CLIP | Sí | - | El modelo CLIP cuyos parches clave se restarán del modelo base |
-| `multiplier` | FLOAT | Sí | -10.0 a 10.0 | Controla la intensidad de la operación de resta (predeterminado: 1.0) |
+| `multiplicador` | FLOAT | Sí | -10.0 a 10.0 | Controla la intensidad de la operación de resta (predeterminado: 1.0) |
 
 **Nota:** El nodo excluye los parámetros `.position_ids` y `.logit_scale` de la operación de resta, independientemente del valor del multiplicador.
 

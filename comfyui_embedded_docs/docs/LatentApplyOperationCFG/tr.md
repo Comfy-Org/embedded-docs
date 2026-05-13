@@ -7,7 +7,7 @@
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | CFG işleminin uygulanacağı model |
-| `operation` | LATENT_OPERATION | Evet | - | CFG örnekleme süreci sırasında uygulanacak latent işlem |
+| `işlem` | LATENT_OPERATION | Evet | - | CFG örnekleme süreci sırasında uygulanacak latent işlem |
 
 ## Çıkışlar
 

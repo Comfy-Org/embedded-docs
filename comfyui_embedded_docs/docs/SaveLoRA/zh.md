@@ -6,9 +6,9 @@ SaveLoRA 节点用于将 LoRA（低秩适配）模型保存到文件。它接收
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `lora` | LORA_MODEL | 是 | 不适用 | 要保存的 LoRA 模型。请勿使用包含 LoRA 层的基础模型。 |
-| `prefix` | STRING | 是 | 不适用 | 保存 LoRA 文件时使用的前缀（默认值："loras/ComfyUI_trained_lora"）。 |
-| `steps` | INT | 否 | 不适用 | 可选：LoRA 已训练的步数，用于命名保存的文件。 |
+| `LoRA` | LORA_MODEL | 是 | 不适用 | 要保存的 LoRA 模型。请勿使用包含 LoRA 层的基础模型。 |
+| `前缀` | STRING | 是 | 不适用 | 保存 LoRA 文件时使用的前缀（默认值："loras/ComfyUI_trained_lora"）。 |
+| `步数` | INT | 否 | 不适用 | 可选：LoRA 已训练的步数，用于命名保存的文件。 |
 
 **注意：** `lora` 输入必须是纯粹的 LoRA 模型。请勿提供已应用 LoRA 层的基础模型。
 

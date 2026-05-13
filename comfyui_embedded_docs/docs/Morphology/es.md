@@ -6,15 +6,15 @@ El nodo Morfología aplica diversas operaciones morfológicas a las imágenes, l
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada a procesar |
-| `operation` | STRING | Sí | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | La operación morfológica a aplicar (predeterminado: "erode") |
-| `kernel_size` | INT | Sí | 3-999 | El tamaño del kernel del elemento estructurante (predeterminado: 3). Debe ser un número impar. |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada a procesar |
+| `operacion` | STRING | Sí | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | La operación morfológica a aplicar (predeterminado: "erode") |
+| `tamaño_kernel` | INT | Sí | 3-999 | El tamaño del kernel del elemento estructurante (predeterminado: 3). Debe ser un número impar. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen procesada después de aplicar la operación morfológica |
+| `imagen` | IMAGE | La imagen procesada después de aplicar la operación morfológica |
 
 ---
 **Source fingerprint (SHA-256):** `7f6224a0e58fbb7263267b377394e119c6f8d65d16af4ce492ca9504654af7b4`

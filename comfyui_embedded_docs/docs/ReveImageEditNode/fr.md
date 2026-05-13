@@ -9,14 +9,14 @@ Le nœud Reve Image Edit vous permet de modifier une image existante en fonction
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image à modifier. |
-| `edit_instruction` | STRING | Oui | - | Description textuelle de la modification à apporter à l'image. Maximum 2560 caractères. |
-| `model` | MODEL | Oui | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` | Version du modèle à utiliser pour la modification. |
+| `instruction d’édition` | STRING | Oui | - | Description textuelle de la modification à apporter à l'image. Maximum 2560 caractères. |
+| `modèle` | MODEL | Oui | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` | Version du modèle à utiliser pour la modification. |
 | `model.aspect_ratio` | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Le rapport hauteur/largeur de l'image modifiée. Lorsqu'il est défini sur "auto", le rapport est déterminé automatiquement. |
 | `model.test_time_scaling` | FLOAT | Non | - | Facteur de mise à l'échelle pendant le test pour le modèle. Des valeurs plus élevées peuvent améliorer la qualité mais augmentent le temps de traitement. |
-| `upscale` | COMBO | Non | `"disabled"`<br>`"enabled"` | Contrôle si l'image générée doit être agrandie. |
+| `agrandir` | COMBO | Non | `"disabled"`<br>`"enabled"` | Contrôle si l'image générée doit être agrandie. |
 | `upscale.upscale_factor` | FLOAT | Non | - | Le facteur d'agrandissement de l'image lorsque l'agrandissement est activé. |
-| `remove_background` | BOOLEAN | Non | - | Contrôle si l'arrière-plan doit être supprimé de l'image générée. |
-| `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. (par défaut : 0) |
+| `supprimer l’arrière-plan` | BOOLEAN | Non | - | Contrôle si l'arrière-plan doit être supprimé de l'image générée. |
+| `graine` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine. (par défaut : 0) |
 
 **Remarque :** Le paramètre `upscale.upscale_factor` n'est pertinent que lorsque le paramètre `upscale` est défini sur `"enabled"`.
 

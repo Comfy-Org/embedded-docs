@@ -6,14 +6,14 @@ O nó Differential Diffusion modifica o processo de remoção de ruído aplicand
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `model` | MODEL | Sim | - | O modelo de difusão a ser modificado |
-| `strength` | FLOAT | Não | 0.0 - 1.0 | Controla a intensidade da mescla entre a máscara de remoção de ruído original e a máscara binária de limite (padrão: 1.0) |
+| `modelo` | MODEL | Sim | - | O modelo de difusão a ser modificado |
+| `força` | FLOAT | Não | 0.0 - 1.0 | Controla a intensidade da mescla entre a máscara de remoção de ruído original e a máscara binária de limite (padrão: 1.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo de difusão modificado com a função de máscara de remoção de ruído atualizada |
+| `modelo` | MODEL | O modelo de difusão modificado com a função de máscara de remoção de ruído atualizada |
 
 ---
 **Source fingerprint (SHA-256):** `3b1727baa6c546516f5dfb53e6e39f27fc7429cde2ac7fd7dfbab99eebb39816`

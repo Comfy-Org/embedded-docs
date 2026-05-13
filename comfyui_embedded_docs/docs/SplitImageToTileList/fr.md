@@ -7,9 +7,9 @@ Le nœud **Diviser l'image en liste de tuiles** divise une seule image d'entrée
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à diviser en tuiles. |
-| `tile_width` | INT | Oui | 64 à 1048576 | La largeur de chaque tuile de sortie en pixels (par défaut : 1024). |
-| `tile_height` | INT | Oui | 64 à 1048576 | La hauteur de chaque tuile de sortie en pixels (par défaut : 1024). |
-| `overlap` | INT | Oui | 0 à 4096 | Le nombre de pixels de chevauchement entre les tuiles adjacentes (par défaut : 128). |
+| `largeur_tuile` | INT | Oui | 64 à 1048576 | La largeur de chaque tuile de sortie en pixels (par défaut : 1024). |
+| `hauteur_tuile` | INT | Oui | 64 à 1048576 | La hauteur de chaque tuile de sortie en pixels (par défaut : 1024). |
+| `chevauchement` | INT | Oui | 0 à 4096 | Le nombre de pixels de chevauchement entre les tuiles adjacentes (par défaut : 128). |
 
 ## Sorties
 

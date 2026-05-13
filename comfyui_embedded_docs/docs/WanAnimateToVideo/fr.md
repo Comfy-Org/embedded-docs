@@ -8,22 +8,22 @@ Le nœud WanAnimateToVideo génère du contenu vidéo en combinant plusieurs ent
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | Conditionnement positif pour guider la génération vers le contenu souhaité |
-| `negative` | CONDITIONING | Oui | - | Conditionnement négatif pour éloigner la génération du contenu indésirable |
+| `positif` | CONDITIONING | Oui | - | Conditionnement positif pour guider la génération vers le contenu souhaité |
+| `négatif` | CONDITIONING | Oui | - | Conditionnement négatif pour éloigner la génération du contenu indésirable |
 | `vae` | VAE | Oui | - | Modèle VAE utilisé pour encoder et décoder les données d'image |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images à générer (par défaut : 77, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Non | - | Sortie facultative du modèle de vision CLIP pour un conditionnement supplémentaire |
-| `reference_image` | IMAGE | Non | - | Image de référence utilisée comme point de départ pour la génération |
-| `face_video` | IMAGE | Non | - | Entrée vidéo fournissant des indications sur les expressions faciales |
-| `pose_video` | IMAGE | Non | - | Entrée vidéo fournissant des indications sur la pose et le mouvement |
-| `continue_motion_max_frames` | INT | Oui | 1 à MAX_RESOLUTION | Nombre maximal d'images à poursuivre à partir du mouvement précédent (par défaut : 5, pas : 4) |
-| `background_video` | IMAGE | Non | - | Vidéo d'arrière-plan à composer avec le contenu généré |
-| `character_mask` | MASK | Non | - | Masque définissant les régions du personnage pour un traitement sélectif |
-| `continue_motion` | IMAGE | Non | - | Séquence de mouvement précédente à poursuivre pour la cohérence temporelle |
-| `video_frame_offset` | INT | Oui | 0 à MAX_RESOLUTION | Le nombre d'images à décaler dans toutes les vidéos d'entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez-le à la sortie `video_frame_offset` du nœud précédent pour prolonger une vidéo. (par défaut : 0, pas : 1) |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images à générer (par défaut : 77, pas : 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
+| `sortie_vision_clip` | CLIP_VISION_OUTPUT | Non | - | Sortie facultative du modèle de vision CLIP pour un conditionnement supplémentaire |
+| `image_de_référence` | IMAGE | Non | - | Image de référence utilisée comme point de départ pour la génération |
+| `vidéo_visage` | IMAGE | Non | - | Entrée vidéo fournissant des indications sur les expressions faciales |
+| `vidéo_pose` | IMAGE | Non | - | Entrée vidéo fournissant des indications sur la pose et le mouvement |
+| `images_max_poursuite_mouvement` | INT | Oui | 1 à MAX_RESOLUTION | Nombre maximal d'images à poursuivre à partir du mouvement précédent (par défaut : 5, pas : 4) |
+| `vidéo_arrière_plan` | IMAGE | Non | - | Vidéo d'arrière-plan à composer avec le contenu généré |
+| `masque_personnage` | MASK | Non | - | Masque définissant les régions du personnage pour un traitement sélectif |
+| `poursuite_mouvement` | IMAGE | Non | - | Séquence de mouvement précédente à poursuivre pour la cohérence temporelle |
+| `décalage_image_vidéo` | INT | Oui | 0 à MAX_RESOLUTION | Le nombre d'images à décaler dans toutes les vidéos d'entrée. Utilisé pour générer des vidéos plus longues par segments. Connectez-le à la sortie `décalage_image_vidéo` du nœud précédent pour prolonger une vidéo. (par défaut : 0, pas : 1) |
 
 **Contraintes des paramètres :**
 
@@ -40,12 +40,12 @@ Le nœud WanAnimateToVideo génère du contenu vidéo en combinant plusieurs ent
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale, l'image latente concaténée et le masque concaténé |
-| `negative` | CONDITIONING | Conditionnement négatif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale (inversés), l'image latente concaténée et le masque concaténé |
-| `latent` | LATENT | Contenu vidéo généré au format d'espace latent avec la forme [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] |
-| `trim_latent` | INT | Informations de rognage dans l'espace latent indiquant le nombre d'images latentes à rogner depuis le début (correspond aux images latentes de l'image de référence) |
-| `trim_image` | INT | Informations de rognage dans l'espace image pour les images de mouvement de référence, indiquant le nombre d'images à rogner depuis le début |
-| `video_frame_offset` | INT | Décalage d'images mis à jour pour poursuivre la génération vidéo par segments, calculé comme le décalage précédent plus la longueur générée |
+| `négatif` | CONDITIONING | Conditionnement positif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale, l'image latente concaténée et le masque concaténé |
+| `latent` | CONDITIONING | Conditionnement négatif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale (inversés), l'image latente concaténée et le masque concaténé |
+| `latent_rogné` | LATENT | Contenu vidéo généré au format d'espace latent avec la forme [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] |
+| `image_rognée` | INT | Informations de rognage dans l'espace latent indiquant le nombre d'images latentes à rogner depuis le début (correspond aux images latentes de l'image de référence) |
+| `décalage de trame vidéo` | INT | Informations de rognage dans l'espace image pour les images de mouvement de référence, indiquant le nombre d'images à rogner depuis le début |
+| `décalage_image_vidéo` | INT | Décalage d'images mis à jour pour poursuivre la génération vidéo par segments, calculé comme le décalage précédent plus la longueur générée |
 
 ---
 **Source fingerprint (SHA-256):** `c2ca90f4963f629d51cdd7f4bdb67e01c32ce5ca7d916b1f992ccd220f57566c`

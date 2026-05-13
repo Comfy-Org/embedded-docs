@@ -9,13 +9,13 @@ WanDancerVideo 節點為使用 WanDancer 模型進行影片生成準備條件化
 | `positive` | CONDITIONING | 是 | | 引導影片生成的正向條件化。 |
 | `negative` | CONDITIONING | 是 | | 引導影片生成的負向條件化。 |
 | `vae` | VAE | 是 | | 用於將起始影像編碼到潛在空間的 VAE。 |
-| `width` | INT | 是 | 16 至 MAX_RESOLUTION（步長：16） | 生成影片的寬度（像素），預設值：480。 |
-| `height` | INT | 是 | 16 至 MAX_RESOLUTION（步長：16） | 生成影片的高度（像素），預設值：832。 |
-| `length` | INT | 是 | 1 至 MAX_RESOLUTION（步長：4） | 生成影片的幀數。對於 WanDancer 應保持為 149（預設值：149）。 |
+| `寬度` | INT | 是 | 16 至 MAX_RESOLUTION（步長：16） | 生成影片的寬度（像素），預設值：480。 |
+| `高度` | INT | 是 | 16 至 MAX_RESOLUTION（步長：16） | 生成影片的高度（像素），預設值：832。 |
+| `長度` | INT | 是 | 1 至 MAX_RESOLUTION（步長：4） | 生成影片的幀數。對於 WanDancer 應保持為 149（預設值：149）。 |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | 否 | | 第一幀的 CLIP 視覺嵌入。 |
 | `clip_vision_output_ref` | CLIP_VISION_OUTPUT | 否 | | 參考影像的 CLIP 視覺嵌入。 |
-| `start_image` | IMAGE | 否 | | 要編碼的初始影像。可以是任意數量的幀，最多不超過指定的 `length`。 |
-| `mask` | MASK | 否 | | 起始影像的影像條件化遮罩。白色區域保留，黑色區域生成。用於局部生成。 |
+| `起始圖像` | IMAGE | 否 | | 要編碼的初始影像。可以是任意數量的幀，最多不超過指定的 `長度`。 |
+| `遮罩` | MASK | 否 | | 起始影像的影像條件化遮罩。白色區域保留，黑色區域生成。用於局部生成。 |
 | `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | 否 | | 音訊編碼器的輸出，提供音訊特徵、fps 和注入比例，用於音訊條件化生成。 |
 
 **參數限制說明：**
@@ -27,8 +27,8 @@ WanDancerVideo 節點為使用 WanDancer 模型進行影片生成準備條件化
 
 | 輸出名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的正向條件化。 |
-| `negative` | CONDITIONING | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的負向條件化。 |
+| `negative` | CONDITIONING | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的正向條件化。 |
+| `latent` | CONDITIONING | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的負向條件化。 |
 | `latent` | LATENT | 一個空的潛在張量，其維度與指定的影片長度、高度和寬度相符。 |
 
 ---

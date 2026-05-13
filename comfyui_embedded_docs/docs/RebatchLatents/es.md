@@ -6,8 +6,8 @@ El nodo RebatchLatents está diseñado para reorganizar un lote de representacio
 
 | Parámetro    | Tipo de Dato | Descripción |
 |--------------|-------------|-------------|
-| `latents`    | `LATENT`    | El parámetro 'latents' representa las representaciones latentes de entrada que se reorganizarán en lotes. Es crucial para determinar la estructura y el contenido del lote de salida. |
-| `batch_size` | `INT`      | El parámetro 'batch_size' especifica la cantidad deseada de muestras por lote en la salida. Influye directamente en la agrupación y división de las latentes de entrada en nuevos lotes. |
+| `latentes`    | `LATENT`    | El parámetro 'latents' representa las representaciones latentes de entrada que se reorganizarán en lotes. Es crucial para determinar la estructura y el contenido del lote de salida. |
+| `tamaño_lote` | `INT`      | El parámetro 'batch_size' especifica la cantidad deseada de muestras por lote en la salida. Influye directamente en la agrupación y división de las latentes de entrada en nuevos lotes. |
 
 ## Salidas
 

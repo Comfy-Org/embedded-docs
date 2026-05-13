@@ -6,9 +6,9 @@ Görüntü Karşılaştırma düğümü, sürüklenebilir bir kaydırıcı kulla
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `image_a` | IMAGE | Hayır | - | Karşılaştırılacak ilk görüntü. |
-| `image_b` | IMAGE | Hayır | - | Karşılaştırılacak ikinci görüntü. |
-| `compare_view` | IMAGECOMPARE | Evet | - | Kullanıcı arayüzünde kaydırıcı karşılaştırma görünümünü etkinleştiren kontrol. |
+| `görüntü_a` | IMAGE | Hayır | - | Karşılaştırılacak ilk görüntü. |
+| `görüntü_b` | IMAGE | Hayır | - | Karşılaştırılacak ikinci görüntü. |
+| `karşılaştırma_görünümü` | IMAGECOMPARE | Evet | - | Kullanıcı arayüzünde kaydırıcı karşılaştırma görünümünü etkinleştiren kontrol. |
 
 **Not:** Bu düğüm bir çıktı düğümüdür. `image_a` ve `image_b` isteğe bağlı olsa da, düğümün görünür bir etkiye sahip olması için en az bir görüntü sağlanmalıdır. Düğüm, bağlı olmayan herhangi bir görüntü girişi için boş bir alan görüntüleyecektir.
 

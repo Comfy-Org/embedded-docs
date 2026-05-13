@@ -7,9 +7,9 @@ El nodo **PhotoMakerEncode** procesa imágenes y texto para generar datos de con
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `photomaker` | PHOTOMAKER | Sí | - | El modelo PhotoMaker utilizado para procesar la imagen y generar *embeddings* |
-| `image` | IMAGE | Sí | - | La imagen de referencia que proporciona las características visuales para el condicionamiento |
+| `imagen` | IMAGE | Sí | - | La imagen de referencia que proporciona las características visuales para el condicionamiento |
 | `clip` | CLIP | Sí | - | El modelo CLIP utilizado para la tokenización y codificación de texto |
-| `text` | STRING | Sí | - | El mensaje de texto para la generación de condicionamiento (predeterminado: "photograph of photomaker") |
+| `texto` | STRING | Sí | - | El mensaje de texto para la generación de condicionamiento (predeterminado: "photograph of photomaker") |
 
 **Nota:** Cuando el texto contiene la palabra "photomaker", el nodo aplica el condicionamiento basado en la imagen en esa posición del mensaje. Si no se encuentra "photomaker" en el texto, el nodo genera un condicionamiento de texto estándar sin influencia de la imagen.
 

@@ -6,8 +6,8 @@ Gemini API ile kullanılmak üzere girdi dosyalarını yükler ve biçimlendirir
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `file` | COMBO | Evet | Birden çok seçenek mevcut | Modele bağlam olarak eklenecek girdi dosyaları. Şimdilik yalnızca metin (.txt) ve PDF (.pdf) dosyalarını kabul eder. Dosyalar, maksimum girdi dosyası boyut sınırından küçük olmalıdır. |
-| `GEMINI_INPUT_FILES` | GEMINI_INPUT_FILES | Hayır | Yok | Bu düğümden yüklenen dosyayla birlikte toplu olarak işlenecek isteğe bağlı ek dosya(lar). Tek bir mesajın birden çok girdi dosyası içermesi için girdi dosyalarının zincirlenmesine olanak tanır. |
+| `dosya` | COMBO | Evet | Birden çok seçenek mevcut | Modele bağlam olarak eklenecek girdi dosyaları. Şimdilik yalnızca metin (.txt) ve PDF (.pdf) dosyalarını kabul eder. Dosyalar, maksimum girdi dosyası boyut sınırından küçük olmalıdır. |
+| `GEMINI_GİRDİ_DOSYALARI` | GEMINI_INPUT_FILES | Hayır | Yok | Bu düğümden yüklenen dosyayla birlikte toplu olarak işlenecek isteğe bağlı ek dosya(lar). Tek bir mesajın birden çok girdi dosyası içermesi için girdi dosyalarının zincirlenmesine olanak tanır. |
 
 **Not:** `file` parametresi yalnızca maksimum girdi dosyası boyut sınırından küçük olan metin (.txt) ve PDF (.pdf) dosyalarını görüntüler. Dosyalar otomatik olarak filtrelenir ve ada göre sıralanır.
 
@@ -15,7 +15,7 @@ Gemini API ile kullanılmak üzere girdi dosyalarını yükler ve biçimlendirir
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `GEMINI_INPUT_FILES` | GEMINI_INPUT_FILES | Gemini LLM düğümleriyle kullanıma hazır, yüklenen dosya içeriğini uygun API biçiminde içeren biçimlendirilmiş dosya verisi. |
+| `GEMINI_GİRDİ_DOSYALARI` | GEMINI_INPUT_FILES | Gemini LLM düğümleriyle kullanıma hazır, yüklenen dosya içeriğini uygun API biçiminde içeren biçimlendirilmiş dosya verisi. |
 
 ---
 **Source fingerprint (SHA-256):** `54da8696d144513efa9660fbc5ddbf5480da12eafe4d2791c8e81cd207ef8a52`

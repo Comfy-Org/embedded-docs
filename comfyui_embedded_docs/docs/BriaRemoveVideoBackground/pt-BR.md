@@ -8,9 +8,9 @@ Este nó remove o fundo de um vídeo usando o serviço de IA da Bria. Ele proces
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `video` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada do qual o fundo será removido. |
-| `background_color` | STRING | Sim | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` | A cor sólida a ser usada como novo fundo para o vídeo de saída. |
-| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente que controla se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente. (padrão: 0) |
+| `vídeo` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada do qual o fundo será removido. |
+| `cor de fundo` | STRING | Sim | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` | A cor sólida a ser usada como novo fundo para o vídeo de saída. |
+| `semente` | INT | Não | 0 a 2147483647 | Um valor de semente que controla se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente. (padrão: 0) |
 
 **Observação:** O vídeo de entrada deve ter duração de 60 segundos ou menos.
 

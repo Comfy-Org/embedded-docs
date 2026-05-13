@@ -6,12 +6,12 @@ O nó ImageScaleToTotalPixels é projetado para redimensionar imagens para um n�
 
 | Parâmetro       | Tipo de Dado | Descrição                                                                |
 |-----------------|--------------|--------------------------------------------------------------------------|
-| `image`         | `IMAGE`      | A imagem de entrada a ser ampliada para o número total de pixels especificado. |
-| `upscale_method`| COMBO[STRING]| O método usado para ampliar a imagem. Afeta a qualidade e as características da imagem ampliada. |
+| `imagem`         | `IMAGE`      | A imagem de entrada a ser ampliada para o número total de pixels especificado. |
+| `método de upscaling`| COMBO[STRING]| O método usado para ampliar a imagem. Afeta a qualidade e as características da imagem ampliada. |
 | `megapixels`    | `FLOAT`      | O tamanho alvo da imagem em megapixels. Isso determina o número total de pixels na imagem ampliada. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dado | Descrição                                                           |
 |-----------|--------------|---------------------------------------------------------------------|
-| `image`   | `IMAGE`      | A imagem ampliada com o número total de pixels especificado, mantendo a proporção original. |
+| `imagem`   | `IMAGE`      | A imagem ampliada com o número total de pixels especificado, mantendo a proporção original. |

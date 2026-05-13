@@ -6,8 +6,8 @@ O nó LatentFlip foi projetado para manipular representações latentes, inverte
 
 | Parâmetro     | Tipo de Dado | Descrição |
 |---------------|--------------|-------------|
-| `samples`     | `LATENT`     | O parâmetro 'samples' representa as representações latentes a serem invertidas. A operação de inversão altera essas representações, vertical ou horizontalmente, dependendo do parâmetro 'flip_method', transformando assim os dados no espaço latente. |
-| `flip_method` | COMBO[STRING] | O parâmetro 'flip_method' especifica o eixo ao longo do qual as amostras latentes serão invertidas. Pode ser 'x-axis: vertically' (eixo x: verticalmente) ou 'y-axis: horizontally' (eixo y: horizontalmente), determinando a direção da inversão e, portanto, a natureza da transformação aplicada às representações latentes. |
+| `amostras`     | `LATENT`     | O parâmetro 'samples' representa as representações latentes a serem invertidas. A operação de inversão altera essas representações, vertical ou horizontalmente, dependendo do parâmetro 'flip_method', transformando assim os dados no espaço latente. |
+| `método_de_inversão` | COMBO[STRING] | O parâmetro 'flip_method' especifica o eixo ao longo do qual as amostras latentes serão invertidas. Pode ser 'x-axis: vertically' (eixo x: verticalmente) ou 'y-axis: horizontally' (eixo y: horizontalmente), determinando a direção da inversão e, portanto, a natureza da transformação aplicada às representações latentes. |
 
 ## Saídas
 

@@ -20,7 +20,7 @@ Imagina el modelo CLIP como un cerebro inteligente de 24 capas:
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `clip` | CLIP | Sí | - | El modelo CLIP que se va a modificar |
-| `stop_at_clip_layer` | INT | Sí | -24 a -1 | Especifica en qué capa detenerse. Un valor de -1 usa todas las capas, mientras que -24 usa solo la primera capa (predeterminado: -1) |
+| `detener_en_capa_clip` | INT | Sí | -24 a -1 | Especifica en qué capa detenerse. Un valor de -1 usa todas las capas, mientras que -24 usa solo la primera capa (predeterminado: -1) |
 
 ## Salidas
 

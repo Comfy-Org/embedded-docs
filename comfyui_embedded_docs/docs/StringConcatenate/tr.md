@@ -6,8 +6,8 @@ StringConcatenate düğümü, iki metin dizgesini belirtilen bir ayırıcı ile 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string_a` | STRING | Evet | - | Birleştirilecek ilk metin dizesi |
-| `string_b` | STRING | Evet | - | Birleştirilecek ikinci metin dizesi |
+| `dize_a` | STRING | Evet | - | Birleştirilecek ilk metin dizesi |
+| `dize_b` | STRING | Evet | - | Birleştirilecek ikinci metin dizesi |
 | `ayırıcı` | STRING | Hayır | - | İki girdi dizesi arasına eklenecek karakter veya dize (varsayılan: boş dize) |
 
 ## Çıktılar

@@ -8,8 +8,8 @@ JoinAudioChannels düğümü, iki ayrı mono ses girişini tek bir stereo ses ç
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `audio_left` | AUDIO | Evet | | Ortaya çıkan stereo seste sol kanal olarak kullanılacak mono ses verisi. |
-| `audio_right` | AUDIO | Evet | | Ortaya çıkan stereo seste sağ kanal olarak kullanılacak mono ses verisi. |
+| `ses_sol` | AUDIO | Evet | | Ortaya çıkan stereo seste sol kanal olarak kullanılacak mono ses verisi. |
+| `ses_sağ` | AUDIO | Evet | | Ortaya çıkan stereo seste sağ kanal olarak kullanılacak mono ses verisi. |
 
 **Not:** Her iki giriş ses akışı da mono (tek kanallı) olmalıdır. Farklı örnekleme hızlarına sahiplerse, düşük hızlı kanal otomatik olarak yüksek hıza uyacak şekilde yeniden örneklenir. Ses akışlarının uzunlukları farklıysa, kısa olanın uzunluğuna göre kırpılırlar.
 

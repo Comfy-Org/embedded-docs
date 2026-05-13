@@ -6,8 +6,8 @@ Le nœud ModelMergeQwenImage fusionne deux modèles d'IA en combinant leurs comp
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model1` | MODEL | Oui | - | Premier modèle à fusionner (par défaut : aucun) |
-| `model2` | MODEL | Oui | - | Deuxième modèle à fusionner (par défaut : aucun) |
+| `modèle1` | MODEL | Oui | - | Premier modèle à fusionner (par défaut : aucun) |
+| `modèle2` | MODEL | Oui | - | Deuxième modèle à fusionner (par défaut : aucun) |
 | `pos_embeds.` | FLOAT | Oui | 0,0 à 1,0 | Poids pour le mélange des embeddings positionnels (par défaut : 1,0) |
 | `img_in.` | FLOAT | Oui | 0,0 à 1,0 | Poids pour le mélange du traitement d'entrée d'image (par défaut : 1,0) |
 | `txt_norm.` | FLOAT | Oui | 0,0 à 1,0 | Poids pour le mélange de la normalisation de texte (par défaut : 1,0) |

@@ -24,8 +24,8 @@ HunyuanVideo15ImageToVideo 노드는 HunyuanVideo 1.5 모델을 기반으로 비
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 수정된 긍정 컨디셔닝으로, 이제 인코딩된 시작 이미지 또는 CLIP 비전 출력이 포함될 수 있습니다. |
-| `negative` | CONDITIONING | 수정된 부정 컨디셔닝으로, 이제 인코딩된 시작 이미지 또는 CLIP 비전 출력이 포함될 수 있습니다. |
+| `negative` | CONDITIONING | 수정된 긍정 컨디셔닝으로, 이제 인코딩된 시작 이미지 또는 CLIP 비전 출력이 포함될 수 있습니다. |
+| `latent` | CONDITIONING | 수정된 부정 컨디셔닝으로, 이제 인코딩된 시작 이미지 또는 CLIP 비전 출력이 포함될 수 있습니다. |
 | `latent` | LATENT | 지정된 배치 크기, 비디오 길이, 너비 및 높이에 맞게 차원이 구성된 빈 잠재 텐서입니다. |
 
 ---

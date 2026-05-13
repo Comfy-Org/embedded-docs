@@ -6,15 +6,15 @@ Le nœud WanHuMoImageToVideo convertit des images en séquences vidéo en géné
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | Entrée de conditionnement positif qui guide la génération vidéo vers le contenu souhaité |
-| `negative` | CONDITIONING | Oui | - | Entrée de conditionnement négatif qui éloigne la génération vidéo du contenu indésirable |
+| `positif` | CONDITIONING | Oui | - | Entrée de conditionnement positif qui guide la génération vidéo vers le contenu souhaité |
+| `négatif` | CONDITIONING | Oui | - | Entrée de conditionnement négatif qui éloigne la génération vidéo du contenu indésirable |
 | `vae` | VAE | Oui | - | Modèle VAE utilisé pour encoder les images de référence dans l'espace latent |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur des trames vidéo de sortie en pixels (par défaut : 832, doit être divisible par 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur des trames vidéo de sortie en pixels (par défaut : 480, doit être divisible par 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre de trames dans la séquence vidéo générée (par défaut : 97, doit être tel que (length - 1) soit divisible par 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de séquences vidéo à générer simultanément (par défaut : 1) |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | Non | - | Données d'encodage audio optionnelles pouvant influencer la génération vidéo en fonction du contenu audio |
-| `ref_image` | IMAGE | Non | - | Image de référence optionnelle utilisée pour guider le style et le contenu de la génération vidéo |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur des trames vidéo de sortie en pixels (par défaut : 832, doit être divisible par 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur des trames vidéo de sortie en pixels (par défaut : 480, doit être divisible par 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre de trames dans la séquence vidéo générée (par défaut : 97, doit être tel que (length - 1) soit divisible par 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Nombre de séquences vidéo à générer simultanément (par défaut : 1) |
+| `sortie_encodeur_audio` | AUDIOENCODEROUTPUT | Non | - | Données d'encodage audio optionnelles pouvant influencer la génération vidéo en fonction du contenu audio |
+| `image_référence` | IMAGE | Non | - | Image de référence optionnelle utilisée pour guider le style et le contenu de la génération vidéo |
 
 **Remarque :** Lorsqu'une image de référence est fournie, elle est encodée et ajoutée au conditionnement positif et négatif. Lorsque la sortie de l'encodeur audio est fournie, elle est traitée et incorporée dans les données de conditionnement. Si aucun des deux n'est fourni, des tenseurs de substitution remplis de zéros sont utilisés pour les latents de référence et les embeddings audio.
 
@@ -22,8 +22,8 @@ Le nœud WanHuMoImageToVideo convertit des images en séquences vidéo en géné
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec l'image de référence et/ou les embeddings audio incorporés |
-| `negative` | CONDITIONING | Conditionnement négatif modifié avec l'image de référence et/ou les embeddings audio incorporés |
+| `négatif` | CONDITIONING | Conditionnement positif modifié avec l'image de référence et/ou les embeddings audio incorporés |
+| `latent` | CONDITIONING | Conditionnement négatif modifié avec l'image de référence et/ou les embeddings audio incorporés |
 | `latent` | LATENT | Représentation latente générée contenant les données de la séquence vidéo |
 
 ---

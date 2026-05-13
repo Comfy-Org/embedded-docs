@@ -6,12 +6,12 @@ TripoTextureNode 使用 Tripo API 生成带纹理的 3D 模型。它接收一个
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | 是 | - | 需要应用纹理的模型任务 ID |
-| `texture` | BOOLEAN | 否 | - | 是否生成纹理（默认值：True） |
-| `pbr` | BOOLEAN | 否 | - | 是否生成 PBR（基于物理的渲染）材质（默认值：True） |
-| `texture_seed` | INT | 否 | - | 纹理生成的随机种子（默认值：42） |
-| `texture_quality` | COMBO | 否 | "standard"<br>"detailed" | 纹理生成的质量级别（默认值："standard"）。"detailed" 选项费用为 0.20 美元，而 "standard" 费用为 0.10 美元。 |
-| `texture_alignment` | COMBO | 否 | "original_image"<br>"geometry" | 纹理对齐方法（默认值："original_image"）。"original_image" 将纹理对齐到原始输入图像，而 "geometry" 将其对齐到 3D 几何体。 |
+| `模型任务ID` | MODEL_TASK_ID | 是 | - | 需要应用纹理的模型任务 ID |
+| `纹理` | BOOLEAN | 否 | - | 是否生成纹理（默认值：True） |
+| `PBR` | BOOLEAN | 否 | - | 是否生成 PBR（基于物理的渲染）材质（默认值：True） |
+| `纹理种子` | INT | 否 | - | 纹理生成的随机种子（默认值：42） |
+| `纹理质量` | COMBO | 否 | "standard"<br>"detailed" | 纹理生成的质量级别（默认值："standard"）。"detailed" 选项费用为 0.20 美元，而 "standard" 费用为 0.10 美元。 |
+| `纹理对齐` | COMBO | 否 | "original_image"<br>"geometry" | 纹理对齐方法（默认值："original_image"）。"original_image" 将纹理对齐到原始输入图像，而 "geometry" 将其对齐到 3D 几何体。 |
 
 *注意：此节点需要身份验证令牌和 API 密钥，这些由系统自动处理。*
 
@@ -19,8 +19,8 @@ TripoTextureNode 使用 Tripo API 生成带纹理的 3D 模型。它接收一个
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 已应用纹理的生成模型文件（仅用于向后兼容） |
-| `model task_id` | MODEL_TASK_ID | 用于跟踪纹理生成过程的任务 ID |
+| `模型任务ID` | STRING | 已应用纹理的生成模型文件（仅用于向后兼容） |
+| `GLB` | MODEL_TASK_ID | 用于跟踪纹理生成过程的任务 ID |
 | `GLB` | FILE3DGLB | 已应用纹理的 GLB 格式 3D 模型 |
 
 ---

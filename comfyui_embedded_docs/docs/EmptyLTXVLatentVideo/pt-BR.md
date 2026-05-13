@@ -6,10 +6,10 @@ O nó EmptyLTXVLatentVideo cria um tensor latente vazio para processamento de v�
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `width` | INT | Sim | 64 a MAX_RESOLUTION | A largura do tensor de vídeo latente (padrão: 768, passo: 32) |
-| `height` | INT | Sim | 64 a MAX_RESOLUTION | A altura do tensor de vídeo latente (padrão: 512, passo: 32) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | O número de quadros no vídeo latente (padrão: 97, passo: 8) |
-| `batch_size` | INT | Não | 1 a 4096 | O número de vídeos latentes a serem gerados em um lote (padrão: 1) |
+| `largura` | INT | Sim | 64 a MAX_RESOLUTION | A largura do tensor de vídeo latente (padrão: 768, passo: 32) |
+| `altura` | INT | Sim | 64 a MAX_RESOLUTION | A altura do tensor de vídeo latente (padrão: 512, passo: 32) |
+| `comprimento` | INT | Sim | 1 a MAX_RESOLUTION | O número de quadros no vídeo latente (padrão: 97, passo: 8) |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de vídeos latentes a serem gerados em um lote (padrão: 1) |
 
 ## Saídas
 

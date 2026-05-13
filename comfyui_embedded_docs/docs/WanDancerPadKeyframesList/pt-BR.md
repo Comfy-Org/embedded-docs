@@ -10,10 +10,10 @@ Este nó recebe uma sequência de imagens e uma faixa de áudio opcional, e as d
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | N/A | A sequência de imagens de entrada a ser dividida em segmentos. |
-| `segment_length` | INT | Sim | 1 a 10000 | Comprimento de cada segmento em quadros (padrão: 149). |
-| `num_segments` | INT | Sim | 1 a 100 | Quantos segmentos preenchidos emitir como listas (padrão: 1). |
-| `audio` | AUDIO | Não | N/A | Áudio a ser fatiado para cada segmento emitido. |
+| `imagens` | IMAGE | Sim | N/A | A sequência de imagens de entrada a ser dividida em segmentos. |
+| `comprimento_do_segmento` | INT | Sim | 1 a 10000 | Comprimento de cada segmento em quadros (padrão: 149). |
+| `número_de_segmentos` | INT | Sim | 1 a 100 | Quantos segmentos preenchidos emitir como listas (padrão: 1). |
+| `áudio` | AUDIO | Não | N/A | Áudio a ser fatiado para cada segmento emitido. |
 
 ## Saídas
 

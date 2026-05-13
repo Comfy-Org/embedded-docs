@@ -35,13 +35,13 @@ Genera videos basados en un prompt de texto y varios parámetros de generación.
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
 | `prompt` | STRING | Sí | - | Prompt para la generación del video (predeterminado: "") |
-| `aspect_ratio` | COMBO | Sí | Opciones de PixverseAspectRatio | Relación de aspecto para el video generado |
-| `quality` | COMBO | Sí | Opciones de PixverseQuality | Configuración de calidad del video (predeterminado: PixverseQuality.res_540p) |
-| `duration_seconds` | COMBO | Sí | Opciones de PixverseDuration | Duración del video generado en segundos |
-| `motion_mode` | COMBO | Sí | Opciones de PixverseMotionMode | Estilo de movimiento para la generación del video |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla para la generación del video (predeterminado: 0) |
-| `negative_prompt` | STRING | No | - | Una descripción textual opcional de elementos no deseados en una imagen (predeterminado: "") |
-| `pixverse_template` | CUSTOM | No | - | Una plantilla opcional para influir en el estilo de generación, creada por el nodo PixVerse Template |
+| `relación_de_aspecto` | COMBO | Sí | Opciones de PixverseAspectRatio | Relación de aspecto para el video generado |
+| `calidad` | COMBO | Sí | Opciones de PixverseQuality | Configuración de calidad del video (predeterminado: PixverseQuality.res_540p) |
+| `duración_segundos` | COMBO | Sí | Opciones de PixverseDuration | Duración del video generado en segundos |
+| `modo_de_movimiento` | COMBO | Sí | Opciones de PixverseMotionMode | Estilo de movimiento para la generación del video |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla para la generación del video (predeterminado: 0) |
+| `prompt_negativo` | STRING | No | - | Una descripción textual opcional de elementos no deseados en una imagen (predeterminado: "") |
+| `plantilla_pixverse` | CUSTOM | No | - | Una plantilla opcional para influir en el estilo de generación, creada por el nodo PixVerse Template |
 
 **Nota:** Al usar calidad 1080p, el modo de movimiento se establece automáticamente en normal y la duración se limita a 5 segundos. Para duraciones distintas a 5 segundos, el modo de movimiento también se establece automáticamente en normal.
 

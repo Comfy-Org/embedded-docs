@@ -6,19 +6,19 @@ Gera modelos 3D de forma síncrona com base em uma única imagem usando a API da
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | Imagem de entrada usada para gerar o modelo 3D |
-| `model_version` | COMBO | Não | Múltiplas opções disponíveis | A versão do modelo Tripo a ser usada para geração |
-| `style` | COMBO | Não | Múltiplas opções disponíveis | Configuração de estilo para o modelo gerado (padrão: "Nenhum") |
-| `texture` | BOOLEAN | Não | - | Se deve gerar texturas para o modelo (padrão: Verdadeiro) |
+| `imagem` | IMAGE | Sim | - | Imagem de entrada usada para gerar o modelo 3D |
+| `versão_do_modelo` | COMBO | Não | Múltiplas opções disponíveis | A versão do modelo Tripo a ser usada para geração |
+| `estilo` | COMBO | Não | Múltiplas opções disponíveis | Configuração de estilo para o modelo gerado (padrão: "Nenhum") |
+| `textura` | BOOLEAN | Não | - | Se deve gerar texturas para o modelo (padrão: Verdadeiro) |
 | `pbr` | BOOLEAN | Não | - | Se deve usar Renderização Baseada em Física (padrão: Verdadeiro) |
-| `model_seed` | INT | Não | - | Semente aleatória para geração do modelo (padrão: 42) |
-| `orientation` | COMBO | Não | Múltiplas opções disponíveis | Configuração de orientação para o modelo gerado |
-| `texture_seed` | INT | Não | - | Semente aleatória para geração de textura (padrão: 42) |
-| `texture_quality` | COMBO | Não | "standard"<br>"detailed" | Nível de qualidade para geração de textura (padrão: "standard") |
-| `texture_alignment` | COMBO | Não | "original_image"<br>"geometry" | Método de alinhamento para mapeamento de textura (padrão: "original_image") |
-| `face_limit` | INT | Não | -1 a 500000 | Número máximo de faces no modelo gerado, -1 para sem limite (padrão: -1) |
+| `semente_do_modelo` | INT | Não | - | Semente aleatória para geração do modelo (padrão: 42) |
+| `orientação` | COMBO | Não | Múltiplas opções disponíveis | Configuração de orientação para o modelo gerado |
+| `semente_da_textura` | INT | Não | - | Semente aleatória para geração de textura (padrão: 42) |
+| `qualidade_da_textura` | COMBO | Não | "standard"<br>"detailed" | Nível de qualidade para geração de textura (padrão: "standard") |
+| `alinhamento_da_textura` | COMBO | Não | "original_image"<br>"geometry" | Método de alinhamento para mapeamento de textura (padrão: "original_image") |
+| `limite_de_faces` | INT | Não | -1 a 500000 | Número máximo de faces no modelo gerado, -1 para sem limite (padrão: -1) |
 | `quad` | BOOLEAN | Não | - | Se deve usar faces quadriláteras em vez de triângulos (padrão: Falso) |
-| `geometry_quality` | COMBO | Não | "standard"<br>"detailed" | Nível de qualidade para geração de geometria (padrão: "standard") |
+| `qualidade_da_geometria` | COMBO | Não | "standard"<br>"detailed" | Nível de qualidade para geração de geometria (padrão: "standard") |
 
 **Observação:** O parâmetro `image` é obrigatório e deve ser fornecido para o funcionamento do nó. Se nenhuma imagem for fornecida, o nó gerará um RuntimeError.
 

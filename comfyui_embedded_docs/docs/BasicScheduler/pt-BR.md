@@ -6,10 +6,10 @@ O nó `BasicScheduler` é projetado para calcular uma sequência de valores de s
 
 | Parâmetro   | Tipo de Dado | Tipo de Entrada | Padrão | Intervalo | Descrição Metafórica           | Propósito Técnico             |
 | ----------- | ------------ | --------------- | ------ | --------- | ------------------------------ | ----------------------------- |
-| `model`     | MODEL        | Entrada         | -      | -         | **Tipo de Tela**: Diferentes materiais de tela precisam de diferentes fórmulas de tinta | Objeto do modelo de difusão, determina a base do cálculo de sigma |
-| `scheduler` | COMBO[STRING]| Widget          | -      | 9 opções  | **Técnica de Mistura**: Escolha como a concentração de tinta muda | Algoritmo de agendamento, controla o modo de decaimento do ruído |
-| `steps`     | INT          | Widget          | 20     | 1-10000   | **Quantidade de Misturas**: Diferença de precisão entre 20 e 50 misturas | Etapas de amostragem, afeta a qualidade e velocidade de geração |
-| `denoise`   | FLOAT        | Widget          | 1.0    | 0.0-1.0   | **Intensidade de Criação**: Controle o nível do ajuste fino à repintura | Força de remoção de ruído, suporta cenários de repintura parcial |
+| `modelo`     | MODEL        | Entrada         | -      | -         | **Tipo de Tela**: Diferentes materiais de tela precisam de diferentes fórmulas de tinta | Objeto do modelo de difusão, determina a base do cálculo de sigma |
+| `agendador` | COMBO[STRING]| Widget          | -      | 9 opções  | **Técnica de Mistura**: Escolha como a concentração de tinta muda | Algoritmo de agendamento, controla o modo de decaimento do ruído |
+| `etapas`     | INT          | Widget          | 20     | 1-10000   | **Quantidade de Misturas**: Diferença de precisão entre 20 e 50 misturas | Etapas de amostragem, afeta a qualidade e velocidade de geração |
+| `reduzir_ruído`   | FLOAT        | Widget          | 1.0    | 0.0-1.0   | **Intensidade de Criação**: Controle o nível do ajuste fino à repintura | Força de remoção de ruído, suporta cenários de repintura parcial |
 
 ### Tipos de Agendador
 

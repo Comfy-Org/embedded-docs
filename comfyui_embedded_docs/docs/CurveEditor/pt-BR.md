@@ -8,14 +8,14 @@ O nó Curve Editor fornece uma interface visual para ajustar e refinar uma curva
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `curve` | CURVE | Sim | N/A | A curva de entrada a ser editada. |
-| `histogram` | HISTOGRAM | Não | N/A | Um histograma opcional para exibir junto com a curva como referência visual. |
+| `curva` | CURVE | Sim | N/A | A curva de entrada a ser editada. |
+| `histograma` | HISTOGRAM | Não | N/A | Um histograma opcional para exibir junto com a curva como referência visual. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `curve` | CURVE | A curva editada após os ajustes realizados na interface do nó. |
+| `curva` | CURVE | A curva editada após os ajustes realizados na interface do nó. |
 
 ---
 **Source fingerprint (SHA-256):** `34cf36a5b934c44ebfce0b81e7c515f1b31fb17f3b7e1ad52255d1d72f68240b`

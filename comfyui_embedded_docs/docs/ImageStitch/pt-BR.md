@@ -6,12 +6,12 @@ Este nó permite unir duas imagens em uma direção especificada (cima, baixo, e
 
 | Nome do Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
 |-------------------|---------------|-----------------|--------|-------|-----------|
-| `image1` | IMAGE | Obrigatório | - | - | A primeira imagem a ser unida |
-| `image2` | IMAGE | Opcional | Nenhum | - | A segunda imagem a ser unida; se não for fornecida, retorna apenas a primeira imagem |
-| `direction` | STRING | Obrigatório | right | right/down/left/up | A direção para unir a segunda imagem: direita, baixo, esquerda ou cima |
-| `match_image_size` | BOOLEAN | Obrigatório | True | True/False | Se deve redimensionar a segunda imagem para corresponder às dimensões da primeira imagem |
-| `spacing_width` | INT | Obrigatório | 0 | 0-1024 | Largura do espaçamento entre as imagens, deve ser um número par |
-| `spacing_color` | STRING | Obrigatório | white | white/black/red/green/blue | Cor do espaçamento entre as imagens unidas |
+| `imagem1` | IMAGE | Obrigatório | - | - | A primeira imagem a ser unida |
+| `imagem2` | IMAGE | Opcional | Nenhum | - | A segunda imagem a ser unida; se não for fornecida, retorna apenas a primeira imagem |
+| `direção` | STRING | Obrigatório | right | right/down/left/up | A direção para unir a segunda imagem: direita, baixo, esquerda ou cima |
+| `ajustar_tamanho_imagem` | BOOLEAN | Obrigatório | True | True/False | Se deve redimensionar a segunda imagem para corresponder às dimensões da primeira imagem |
+| `largura_espacamento` | INT | Obrigatório | 0 | 0-1024 | Largura do espaçamento entre as imagens, deve ser um número par |
+| `cor_espacamento` | STRING | Obrigatório | white | white/black/red/green/blue | Cor do espaçamento entre as imagens unidas |
 
 > Para `spacing_color`, ao usar cores diferentes de "white/black", se `match_image_size` estiver definido como `false`, a área de preenchimento será preenchida com preto
 

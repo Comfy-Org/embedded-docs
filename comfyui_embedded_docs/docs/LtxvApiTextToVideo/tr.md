@@ -8,10 +8,10 @@ LTXV Metinden Videoya düğümü, bir metin açıklamasından profesyonel kalite
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"LTX-2 (Hızlı)"`<br>`"LTX-2 (Kaliteli)"`<br>`"LTX-2 (Turbo)"` | Video oluşturma için kullanılacak yapay zeka modeli. Mevcut modeller, kaynak koddaki `MODELS_MAP`'ten eşlenmiştir. |
 | `prompt` | STRING | Evet | - | Yapay zekanın videoyu oluşturmak için kullanacağı metin açıklaması. Bu alan birden çok satır metin destekler. |
-| `duration` | COMBO | Evet | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 8). |
-| `resolution` | COMBO | Evet | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | Çıktı videosunun piksel cinsinden boyutları (genişlik x yükseklik). |
+| `süre` | COMBO | Evet | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 8). |
+| `çözünürlük` | COMBO | Evet | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | Çıktı videosunun piksel cinsinden boyutları (genişlik x yükseklik). |
 | `fps` | COMBO | Evet | `25`<br>`50` | Video için saniyedeki kare sayısı (varsayılan: 25). |
-| `generate_audio` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, oluşturulan video sahneye uygun yapay zeka tarafından oluşturulmuş ses içerecektir (varsayılan: False). |
+| `ses_oluştur` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, oluşturulan video sahneye uygun yapay zeka tarafından oluşturulmuş ses içerecektir (varsayılan: False). |
 
 **Önemli Kısıtlamalar:**
 

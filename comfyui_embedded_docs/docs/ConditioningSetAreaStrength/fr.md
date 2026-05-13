@@ -7,7 +7,7 @@ Ce nœud est conçu pour modifier l'attribut de force d'un ensemble de condition
 | Paramètre | Type de données | Description |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | L'ensemble de conditionnement à modifier, représentant l'état actuel du conditionnement qui influence le processus de génération. |
-| `strength` | `FLOAT` | La valeur de force à appliquer à l'ensemble de conditionnement, déterminant l'intensité de son influence. |
+| `force` | `FLOAT` | La valeur de force à appliquer à l'ensemble de conditionnement, déterminant l'intensité de son influence. |
 
 ## Sorties
 

@@ -6,7 +6,7 @@ O nó ModelPatchLoader carrega patches de modelo especializados da pasta model_p
 
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
-| `name` | STRING | Sim | Todos os arquivos de patch de modelo disponíveis na pasta model_patches | O nome do arquivo de patch de modelo a ser carregado do diretório model_patches |
+| `nome` | STRING | Sim | Todos os arquivos de patch de modelo disponíveis na pasta model_patches | O nome do arquivo de patch de modelo a ser carregado do diretório model_patches |
 
 ## Saídas
 

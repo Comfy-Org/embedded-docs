@@ -8,12 +8,12 @@ Le TripoTextureNode génère des modèles 3D texturés à l'aide de l'API Tripo.
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_task_id` | MODEL_TASK_ID | Oui | - | L'ID de tâche du modèle auquel appliquer les textures |
+| `modèle_id_tâche` | MODEL_TASK_ID | Oui | - | L'ID de tâche du modèle auquel appliquer les textures |
 | `texture` | BOOLEAN | Non | - | Indique s'il faut générer des textures (par défaut : True) |
 | `pbr` | BOOLEAN | Non | - | Indique s'il faut générer des matériaux PBR (Physically Based Rendering) (par défaut : True) |
-| `texture_seed` | INT | Non | - | Graine aléatoire pour la génération de texture (par défaut : 42) |
-| `texture_quality` | COMBO | Non | "standard"<br>"detailed" | Niveau de qualité pour la génération de texture (par défaut : "standard"). L'option "detailed" coûte 0,20 USD, tandis que "standard" coûte 0,10 USD. |
-| `texture_alignment` | COMBO | Non | "original_image"<br>"geometry" | Méthode d'alignement des textures (par défaut : "original_image"). "original_image" aligne les textures sur l'image d'entrée d'origine, tandis que "geometry" les aligne sur la géométrie 3D. |
+| `texture_graine` | INT | Non | - | Graine aléatoire pour la génération de texture (par défaut : 42) |
+| `qualité_texture` | COMBO | Non | "standard"<br>"detailed" | Niveau de qualité pour la génération de texture (par défaut : "standard"). L'option "detailed" coûte 0,20 USD, tandis que "standard" coûte 0,10 USD. |
+| `alignement_texture` | COMBO | Non | "original_image"<br>"geometry" | Méthode d'alignement des textures (par défaut : "original_image"). "original_image" aligne les textures sur l'image d'entrée d'origine, tandis que "geometry" les aligne sur la géométrie 3D. |
 
 *Remarque : Ce nœud nécessite des jetons d'authentification et des clés API qui sont automatiquement gérés par le système.*
 
@@ -21,8 +21,8 @@ Le TripoTextureNode génère des modèles 3D texturés à l'aide de l'API Tripo.
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model_file` | STRING | Le fichier de modèle généré avec les textures appliquées (uniquement pour la rétrocompatibilité) |
-| `model task_id` | MODEL_TASK_ID | L'ID de tâche pour suivre le processus de génération de texture |
+| `modèle task_id` | STRING | Le fichier de modèle généré avec les textures appliquées (uniquement pour la rétrocompatibilité) |
+| `GLB` | MODEL_TASK_ID | L'ID de tâche pour suivre le processus de génération de texture |
 | `GLB` | FILE3DGLB | Le modèle 3D généré au format GLB avec les textures appliquées |
 
 ---

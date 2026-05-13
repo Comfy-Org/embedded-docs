@@ -6,8 +6,8 @@ El nodo GITSScheduler genera sigmas de programación de ruido para el método de
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `coeff` | FLOAT | Sí | 0.80 - 1.50 | El valor del coeficiente que controla la curva de programación de ruido (predeterminado: 1.20) |
-| `steps` | INT | Sí | 2 - 1000 | El número total de pasos de muestreo para generar sigmas (predeterminado: 10) |
+| `coef` | FLOAT | Sí | 0.80 - 1.50 | El valor del coeficiente que controla la curva de programación de ruido (predeterminado: 1.20) |
+| `pasos` | INT | Sí | 2 - 1000 | El número total de pasos de muestreo para generar sigmas (predeterminado: 10) |
 | `denoise` | FLOAT | Sí | 0.0 - 1.0 | Factor de eliminación de ruido que reduce el número de pasos utilizados (predeterminado: 1.0) |
 
 **Nota:** Cuando `denoise` se establece en 0.0, el nodo devuelve un tensor vacío. Cuando `denoise` es menor que 1.0, el número real de pasos utilizados se calcula como `round(steps * denoise)`. Para pasos mayores a 20, el nodo utiliza interpolación log-lineal para extender los niveles de ruido predefinidos al número deseado de pasos.

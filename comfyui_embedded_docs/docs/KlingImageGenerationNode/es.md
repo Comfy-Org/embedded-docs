@@ -15,7 +15,7 @@ El nodo de generación de imágenes Kling crea imágenes a partir de descripcion
 | `aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Relación de aspecto para las imágenes generadas (predeterminado: "16:9") |
 | `n` | INT | Sí | 1 - 9 | Número de imágenes generadas (predeterminado: 1) |
 | `image` | IMAGE | No | - | Imagen de referencia opcional |
-| `seed` | INT | No | 0 - 2147483647 | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0) |
+| `semilla` | INT | No | 0 - 2147483647 | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0) |
 
 **Restricciones de los parámetros:**
 

@@ -6,9 +6,9 @@ Le nœud StringReplace effectue des opérations de remplacement de texte sur des
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte d'entrée sur laquelle les remplacements seront effectués |
-| `find` | STRING | Oui | - | La sous-chaîne à rechercher dans le texte d'entrée |
-| `replace` | STRING | Oui | - | Le texte de remplacement qui substituera toutes les occurrences trouvées |
+| `chaîne` | STRING | Oui | - | La chaîne de texte d'entrée sur laquelle les remplacements seront effectués |
+| `rechercher` | STRING | Oui | - | La sous-chaîne à rechercher dans le texte d'entrée |
+| `remplacer` | STRING | Oui | - | Le texte de remplacement qui substituera toutes les occurrences trouvées |
 
 ## Sorties
 

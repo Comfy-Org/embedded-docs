@@ -8,14 +8,14 @@ El nodo Veo3FirstLastFrameNode utiliza el modelo Veo 3 de Google para generar un
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Descripción textual del video (valor predeterminado: cadena vacía). |
 | `negative_prompt` | STRING | No | N/A | Prompt de texto negativo para guiar qué evitar en el video (valor predeterminado: cadena vacía). |
-| `resolution` | COMBO | Sí | `"720p"`<br>`"1080p"`<br>`"4k"` | La resolución del video de salida. |
-| `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"` | Relación de aspecto del video de salida (valor predeterminado: "16:9"). |
-| `duration` | INT | No | 4 a 8 | Duración del video de salida en segundos (valor predeterminado: 8). |
-| `seed` | INT | No | 0 a 4294967295 | Semilla para la generación del video (valor predeterminado: 0). |
-| `first_frame` | IMAGE | Sí | N/A | El fotograma de inicio del video. |
-| `last_frame` | IMAGE | Sí | N/A | El fotograma final del video. |
-| `model` | COMBO | No | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` | El modelo Veo 3 específico a utilizar para la generación (valor predeterminado: "veo-3.1-generate"). |
-| `generate_audio` | BOOLEAN | No | N/A | Generar audio para el video (valor predeterminado: True). |
+| `resolución` | COMBO | Sí | `"720p"`<br>`"1080p"`<br>`"4k"` | La resolución del video de salida. |
+| `relación de aspecto` | COMBO | No | `"16:9"`<br>`"9:16"` | Relación de aspecto del video de salida (valor predeterminado: "16:9"). |
+| `duración` | INT | No | 4 a 8 | Duración del video de salida en segundos (valor predeterminado: 8). |
+| `semilla` | INT | No | 0 a 4294967295 | Semilla para la generación del video (valor predeterminado: 0). |
+| `primer_fotograma` | IMAGE | Sí | N/A | El fotograma de inicio del video. |
+| `último_fotograma` | IMAGE | Sí | N/A | El fotograma final del video. |
+| `modelo` | COMBO | No | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` | El modelo Veo 3 específico a utilizar para la generación (valor predeterminado: "veo-3.1-generate"). |
+| `generar_audio` | BOOLEAN | No | N/A | Generar audio para el video (valor predeterminado: True). |
 
 **Nota:** El modelo `veo-3.1-lite` no admite resolución 4K. Si seleccionas `veo-3.1-lite` y resolución `4k`, se producirá un error.
 

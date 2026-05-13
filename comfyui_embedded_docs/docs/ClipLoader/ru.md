@@ -8,9 +8,9 @@
 
 | Параметр | Тип данных | Обязательный | Диапазон | Описание |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name` | STRING | Да | Список файлов, найденных в папке `text_encoders` | Имя файла модели текстового энкодера для загрузки. Это должен быть файл, расположенный в директории `ComfyUI/models/text_encoders/` или `ComfyUI/models/clip/`. |
-| `type` | STRING | Да | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | Тип архитектуры загружаемой модели. Определяет, какой конкретный вариант энкодера использовать. Значение по умолчанию: `"stable_diffusion"`. |
-| `device` | STRING | Нет | `"default"`<br>`"cpu"` | Устройство для загрузки модели. `"default"` использует GPU, если он доступен, а `"cpu"` принудительно загружает модель на CPU. Это расширенная опция (по умолчанию: `"default"`). |
+| `название_clip` | STRING | Да | Список файлов, найденных в папке `text_encoders` | Имя файла модели текстового энкодера для загрузки. Это должен быть файл, расположенный в директории `ComfyUI/models/text_encoders/` или `ComfyUI/models/clip/`. |
+| `тип` | STRING | Да | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | Тип архитектуры загружаемой модели. Определяет, какой конкретный вариант энкодера использовать. Значение по умолчанию: `"stable_diffusion"`. |
+| `устройство` | STRING | Нет | `"default"`<br>`"cpu"` | Устройство для загрузки модели. `"default"` использует GPU, если он доступен, а `"cpu"` принудительно загружает модель на CPU. Это расширенная опция (по умолчанию: `"default"`). |
 
 ### Поддерживаемые соответствия типа и энкодера
 

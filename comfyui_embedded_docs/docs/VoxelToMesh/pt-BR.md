@@ -9,7 +9,7 @@ O nó VoxelToMeshBasic converte dados de voxel 3D em uma geometria de malha extr
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `voxel` | VOXEL | Sim | - | Os dados de voxel de entrada para converter em geometria de malha |
-| `threshold` | FLOAT | Sim | -1.0 a 1.0 | O valor de limite para extração de superfície (padrão: 0.6) |
+| `limiar` | FLOAT | Sim | -1.0 a 1.0 | O valor de limite para extração de superfície (padrão: 0.6) |
 
 ## Saídas
 

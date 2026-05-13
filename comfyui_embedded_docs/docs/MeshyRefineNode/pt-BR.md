@@ -6,11 +6,11 @@ O nó "Meshy: Refinar Modelo Bruto" recebe um modelo 3D bruto gerado anteriormen
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `model` | COMBO | Sim | `"latest"` | Especifica o modelo de IA a ser usado para refinamento. Atualmente, apenas o modelo "latest" está disponível. |
+| `modelo` | COMBO | Sim | `"latest"` | Especifica o modelo de IA a ser usado para refinamento. Atualmente, apenas o modelo "latest" está disponível. |
 | `meshy_task_id` | MESHY_TASK_ID | Sim | - | O ID de tarefa único do modelo bruto que você deseja refinar. |
-| `enable_pbr` | BOOLEANO | Não | - | Gera mapas PBR (metálico, rugosidade, normal) além da cor base. Nota: deve ser definido como falso ao usar o estilo Escultura, pois o estilo Escultura gera seu próprio conjunto de mapas PBR. (padrão: `Falso`) |
-| `texture_prompt` | STRING | Não | - | Forneça um prompt de texto para orientar o processo de texturização. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `texture_image`. (padrão: string vazia) |
-| `texture_image` | IMAGEM | Não | - | Apenas um dos parâmetros `texture_image` ou `texture_prompt` pode ser usado por vez. |
+| `habilitar_pbr` | BOOLEANO | Não | - | Gera mapas PBR (metálico, rugosidade, normal) além da cor base. Nota: deve ser definido como falso ao usar o estilo Escultura, pois o estilo Escultura gera seu próprio conjunto de mapas PBR. (padrão: `Falso`) |
+| `prompt_de_textura` | STRING | Não | - | Forneça um prompt de texto para orientar o processo de texturização. Máximo de 600 caracteres. Não pode ser usado ao mesmo tempo que `imagem_de_textura`. (padrão: string vazia) |
+| `imagem_de_textura` | IMAGEM | Não | - | Apenas um dos parâmetros `imagem_de_textura` ou `prompt_de_textura` pode ser usado por vez. |
 
 **Nota:** As entradas `texture_prompt` e `texture_image` são mutuamente exclusivas. Você não pode fornecer um prompt de texto e uma imagem para texturização na mesma operação.
 

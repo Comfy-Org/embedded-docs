@@ -6,9 +6,9 @@ O nó SaveVideo salva o conteúdo de vídeo de entrada no diretório de saída d
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `video` | VIDEO | Sim | - | O vídeo a ser salvo. |
-| `filename_prefix` | STRING | Não | - | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação como %date:yyyy-MM-dd% ou %Empty Latent Image.width% para incluir valores de nós (padrão: "video/ComfyUI"). |
-| `format` | COMBO | Não | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` | O formato para salvar o vídeo (padrão: "auto"). |
+| `vídeo` | VIDEO | Sim | - | O vídeo a ser salvo. |
+| `prefixo_do_arquivo` | STRING | Não | - | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação como %date:yyyy-MM-dd% ou %Empty Latent Image.width% para incluir valores de nós (padrão: "video/ComfyUI"). |
+| `formato` | COMBO | Não | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` | O formato para salvar o vídeo (padrão: "auto"). |
 | `codec` | COMBO | Não | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` | O codec a ser usado para o vídeo (padrão: "auto"). |
 
 ## Saídas

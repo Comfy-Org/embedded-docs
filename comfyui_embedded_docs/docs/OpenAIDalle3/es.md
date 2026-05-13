@@ -8,9 +8,9 @@ Genera imágenes de forma síncrona a través del endpoint DALL·E 3 de OpenAI. 
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | - | Prompt de texto para DALL·E (predeterminado: "") |
 | `seed` | INT | No | 0 a 2147483647 | Aún no implementado en el backend (predeterminado: 0) |
-| `quality` | COMBO | No | "standard"<br>"hd" | Calidad de la imagen (predeterminado: "standard") |
-| `style` | COMBO | No | "natural"<br>"vivid" | "Vivid" hace que el modelo se incline hacia la generación de imágenes hiperrealistas y dramáticas. "Natural" hace que el modelo produzca imágenes más naturales y menos hiperrealistas. (predeterminado: "natural") |
-| `size` | COMBO | No | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Tamaño de la imagen (predeterminado: "1024x1024") |
+| `calidad` | COMBO | No | "standard"<br>"hd" | Calidad de la imagen (predeterminado: "standard") |
+| `estilo` | COMBO | No | "natural"<br>"vivid" | "Vivid" hace que el modelo se incline hacia la generación de imágenes hiperrealistas y dramáticas. "Natural" hace que el modelo produzca imágenes más naturales y menos hiperrealistas. (predeterminado: "natural") |
+| `tamaño` | COMBO | No | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Tamaño de la imagen (predeterminado: "1024x1024") |
 
 ## Salidas
 

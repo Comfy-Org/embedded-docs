@@ -9,8 +9,8 @@ O nó de Interpolação de Quadros cria novos quadros entre os existentes em uma
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `interp_model` | MODEL | Sim | - | O modelo de interpolação de quadros a ser usado para gerar quadros intermediários |
-| `images` | IMAGE | Sim | - | Um lote de imagens consecutivas (quadros) para interpolar. Requer pelo menos 2 imagens. |
-| `multiplier` | INT | Sim | 2 a 16 | O número de vezes para multiplicar a contagem de quadros. Por exemplo, um multiplicador de 2 dobra o número de quadros. (padrão: 2) |
+| `imagens` | IMAGE | Sim | - | Um lote de imagens consecutivas (quadros) para interpolar. Requer pelo menos 2 imagens. |
+| `multiplicador` | INT | Sim | 2 a 16 | O número de vezes para multiplicar a contagem de quadros. Por exemplo, um multiplicador de 2 dobra o número de quadros. (padrão: 2) |
 
 ## Saídas
 

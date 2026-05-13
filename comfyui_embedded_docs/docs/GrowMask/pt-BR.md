@@ -6,12 +6,12 @@ O nó `GrowMask` foi projetado para modificar o tamanho de uma máscara fornecid
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | A máscara de entrada a ser modificada. Este parâmetro é central para a operação do nó, servindo como base sobre a qual a máscara será expandida ou contraída. |
-| `expand`  | INT         | Determina a magnitude e a direção da modificação da máscara. Valores positivos fazem a máscara expandir, enquanto valores negativos resultam em contração. Este parâmetro influencia diretamente o tamanho final da máscara. |
-| `tapered_corners` | BOOLEAN    | Um sinalizador booleano que, quando definido como True, aplica um efeito suavizado nos cantos da máscara durante a modificação. Essa opção permite transições mais suaves e resultados visualmente agradáveis. |
+| `máscara`    | MASK        | A máscara de entrada a ser modificada. Este parâmetro é central para a operação do nó, servindo como base sobre a qual a máscara será expandida ou contraída. |
+| `expandir`  | INT         | Determina a magnitude e a direção da modificação da máscara. Valores positivos fazem a máscara expandir, enquanto valores negativos resultam em contração. Este parâmetro influencia diretamente o tamanho final da máscara. |
+| `cantos arredondados` | BOOLEAN    | Um sinalizador booleano que, quando definido como True, aplica um efeito suavizado nos cantos da máscara durante a modificação. Essa opção permite transições mais suaves e resultados visualmente agradáveis. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | A máscara modificada após aplicar a expansão/contração especificada e o efeito opcional de cantos suavizados. |
+| `máscara`    | MASK        | A máscara modificada após aplicar a expansão/contração especificada e o efeito opcional de cantos suavizados. |

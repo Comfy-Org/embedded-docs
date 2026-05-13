@@ -35,12 +35,12 @@ Grok Video düğümü, bir metin açıklamasından kısa bir video oluşturur. B
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | Video oluşturma için kullanılacak model. |
-| `prompt` | STRING | Evet | - | İstenen videonun metin açıklaması. |
-| `resolution` | COMBO | Evet | `"480p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü. |
-| `aspect_ratio` | COMBO | Evet | `"auto"`<br>`"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | Çıktı videosunun en-boy oranı (varsayılan: "auto"). |
-| `duration` | INT | Evet | 1 ile 15 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). |
-| `seed` | INT | Evet | 0 ile 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
-| `image` | IMAGE | Hayır | - | Canlandırılacak isteğe bağlı bir giriş görüntüsü. |
+| `istem` | STRING | Evet | - | İstenen videonun metin açıklaması. |
+| `çözünürlük` | COMBO | Evet | `"480p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü. |
+| `en boy oranı` | COMBO | Evet | `"auto"`<br>`"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | Çıktı videosunun en-boy oranı (varsayılan: "auto"). |
+| `süre` | INT | Evet | 1 ile 15 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). |
+| `tohum` | INT | Evet | 0 ile 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `görüntü` | IMAGE | Hayır | - | Canlandırılacak isteğe bağlı bir giriş görüntüsü. |
 
 **Not:** Bir `image` sağlanırsa, yalnızca tek bir görüntü desteklenir. Birden fazla görüntü sağlanması hataya neden olur. `prompt` (istem), boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır.
 

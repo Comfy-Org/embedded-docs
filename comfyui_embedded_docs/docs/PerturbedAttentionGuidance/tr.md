@@ -7,7 +7,7 @@ PerturbedAttentionGuidance düğümü, bir difüzyon modeline bozulmuş dikkat y
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `model` | MODEL | Evet | - | Bozulmuş dikkat yönlendirmesinin uygulanacağı difüzyon modeli |
-| `scale` | FLOAT | Hayır | 0.0 - 100.0 | Bozulmuş dikkat yönlendirme etkisinin gücü (varsayılan: 3.0). 0 olarak ayarlandığında düğümün hiçbir etkisi olmaz ve orijinal gürültü giderilmiş sonucu döndürür. |
+| `ölçek` | FLOAT | Hayır | 0.0 - 100.0 | Bozulmuş dikkat yönlendirme etkisinin gücü (varsayılan: 3.0). 0 olarak ayarlandığında düğümün hiçbir etkisi olmaz ve orijinal gürültü giderilmiş sonucu döndürür. |
 
 ## Çıkışlar
 

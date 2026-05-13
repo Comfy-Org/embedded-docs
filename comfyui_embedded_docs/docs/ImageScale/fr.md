@@ -7,9 +7,9 @@ Le nœud ImageScale est conçu pour redimensionner des images à des dimensions 
 | Paramètre       | Type de données | Description                                                                           |
 |-----------------|-----------------|---------------------------------------------------------------------------------------|
 | `image`         | `IMAGE`         | L'image d'entrée à agrandir. Ce paramètre est central au fonctionnement du nœud, servant de donnée principale sur laquelle les transformations de redimensionnement sont appliquées. La qualité et les dimensions de l'image de sortie sont directement influencées par les propriétés de l'image d'origine. |
-| `upscale_method`| COMBO[STRING]   | Spécifie la méthode utilisée pour agrandir l'image. Le choix de la méthode peut affecter la qualité et les caractéristiques de l'image agrandie, influençant la fidélité visuelle et les artefacts potentiels dans la sortie redimensionnée. |
-| `width`         | `INT`           | La largeur cible pour l'image agrandie. Ce paramètre influence directement les dimensions de l'image de sortie, déterminant l'échelle horizontale de l'opération de redimensionnement. |
-| `height`        | `INT`           | La hauteur cible pour l'image agrandie. Ce paramètre influence directement les dimensions de l'image de sortie, déterminant l'échelle verticale de l'opération de redimensionnement. |
+| `méthode_d'agrandissement`| COMBO[STRING]   | Spécifie la méthode utilisée pour agrandir l'image. Le choix de la méthode peut affecter la qualité et les caractéristiques de l'image agrandie, influençant la fidélité visuelle et les artefacts potentiels dans la sortie redimensionnée. |
+| `largeur`         | `INT`           | La largeur cible pour l'image agrandie. Ce paramètre influence directement les dimensions de l'image de sortie, déterminant l'échelle horizontale de l'opération de redimensionnement. |
+| `hauteur`        | `INT`           | La hauteur cible pour l'image agrandie. Ce paramètre influence directement les dimensions de l'image de sortie, déterminant l'échelle verticale de l'opération de redimensionnement. |
 | `crop`          | COMBO[STRING]   | Détermine si et comment l'image agrandie doit être recadrée, offrant des options pour un recadrage désactivé ou un recadrage centré. Cela affecte la composition finale de l'image en supprimant potentiellement les bords pour correspondre aux dimensions spécifiées. |
 
 ## Sorties

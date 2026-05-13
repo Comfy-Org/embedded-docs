@@ -10,9 +10,9 @@ Modifie les images de manière synchrone en fonction d’un prompt textuel et du
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L’image d’entrée à modifier |
 | `prompt` | STRING | Oui | - | Prompt pour la génération de l’image (par défaut : "") |
-| `image_weight` | FLOAT | Non | 0.0-0.98 | Poids de l’image ; plus la valeur est proche de 1.0, moins l’image sera modifiée (par défaut : 0.1). En interne, cette valeur est inversée (1.0 - image_weight) et limitée entre 0.0 et 0.98. |
-| `model` | STRING | Oui | `"photon-flash-1"`<br>`"photon-1"`<br>`"photon"` | Le modèle Luma à utiliser pour la modification de l’image. Différents modèles ont des coûts différents. |
-| `seed` | INT | Non | 0-18446744073709551615 | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
+| `poids de l'image` | FLOAT | Non | 0.0-0.98 | Poids de l’image ; plus la valeur est proche de 1.0, moins l’image sera modifiée (par défaut : 0.1). En interne, cette valeur est inversée (1.0 - image_weight) et limitée entre 0.0 et 0.98. |
+| `modèle` | STRING | Oui | `"photon-flash-1"`<br>`"photon-1"`<br>`"photon"` | Le modèle Luma à utiliser pour la modification de l’image. Différents modèles ont des coûts différents. |
+| `graine` | INT | Non | 0-18446744073709551615 | Graine permettant de déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
 
 ## Sorties
 

@@ -10,19 +10,19 @@ O nó **Topaz Video Enhance V2** permite aumentar a resolução e aprimorar víd
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `video` | VIDEO | Sim | - | O vídeo de entrada a ser processado. Deve estar no formato de contêiner MP4. |
-| `upscaler_model` | COMBO | Sim | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Desabilitado"` | O modelo de IA usado para aumentar a resolução do vídeo. Selecionar "Desabilitado" significa que nenhum aumento de resolução será aplicado. |
+| `vídeo` | VIDEO | Sim | - | O vídeo de entrada a ser processado. Deve estar no formato de contêiner MP4. |
+| `modelo de upscaling` | COMBO | Sim | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Desabilitado"` | O modelo de IA usado para aumentar a resolução do vídeo. Selecionar "Desabilitado" significa que nenhum aumento de resolução será aplicado. |
 | `upscaler_model.upscaler_resolution` | COMBO | Condicional | `"FullHD (1080p)"`<br>`"4K (2160p)"` | A resolução de saída alvo para o upscaler. Este parâmetro é obrigatório quando um modelo de upscaler é selecionado (não "Desabilitado"). |
 | `upscaler_model.creativity` | FLOAT / COMBO | Condicional | Astra 2: 0.0 a 1.0 (passo 0.1)<br>Starlight Creative: `"baixa"`<br>`"média"`<br>`"alta"` | Força criativa do aumento de resolução. Disponível apenas para os modelos "Astra 2" e "Starlight (Astra) Creative". Para Astra 2, é um controle deslizante (padrão: 0.5). Para Starlight Creative, é uma combinação (padrão: "baixa"). |
 | `upscaler_model.prompt` | STRING | Não | - | Prompt de cena descritivo (não instrutivo) opcional. Disponível apenas para o modelo "Astra 2". Limitado a 500 quadros de entrada (~15s a 30fps) quando definido. Padrão: vazio. |
 | `upscaler_model.sharp` | FLOAT | Não | 0.0 a 1.0 (passo 0.01) | Nitidez de pré-aprimoramento: 0.0=desfoque gaussiano, 0.5=passagem direta (padrão), 1.0=nitidez USM. Disponível apenas para o modelo "Astra 2". Padrão: 0.5. |
 | `upscaler_model.realism` | FLOAT | Não | 0.0 a 1.0 (passo 0.01) | Direciona a saída para o realismo fotográfico. Deixe em 0 para o padrão do modelo. Disponível apenas para o modelo "Astra 2". Padrão: 0.0. |
-| `interpolation_model` | COMBO | Sim | `"Desabilitado"`<br>`"apo-8"` | O modelo de IA usado para interpolação de quadros. Selecionar "Desabilitado" significa que nenhuma interpolação será aplicada. |
+| `modelo de interpolação` | COMBO | Sim | `"Desabilitado"`<br>`"apo-8"` | O modelo de IA usado para interpolação de quadros. Selecionar "Desabilitado" significa que nenhuma interpolação será aplicada. |
 | `interpolation_model.interpolation_frame_rate` | INT | Condicional | 15 a 240 | Taxa de quadros de saída. Obrigatório quando o modelo de interpolação é "apo-8". Padrão: 60. |
 | `interpolation_model.interpolation_slowmo` | INT | Não | 1 a 16 | Fator de câmera lenta aplicado ao vídeo de entrada. Por exemplo, 2 torna a saída duas vezes mais lenta e dobra a duração. Padrão: 1. |
 | `interpolation_model.interpolation_duplicate` | BOOLEAN | Não | Verdadeiro/Falso | Analisar a entrada em busca de quadros duplicados e removê-los. Padrão: Falso. |
 | `interpolation_model.interpolation_duplicate_threshold` | FLOAT | Não | 0.001 a 0.1 (passo 0.001) | Sensibilidade de detecção para quadros duplicados. Padrão: 0.01. |
-| `dynamic_compression_level` | COMBO | Não | `"Baixo"`<br>`"Médio"`<br>`"Alto"` | Nível CQP para compressão de vídeo. Padrão: "Baixo". |
+| `nível de compressão dinâmica` | COMBO | Não | `"Baixo"`<br>`"Médio"`<br>`"Alto"` | Nível CQP para compressão de vídeo. Padrão: "Baixo". |
 
 **Restrições Importantes:**
 - Pelo menos um dos parâmetros `upscaler_model` ou `interpolation_model` deve estar habilitado (não "Desabilitado"), caso contrário, um erro será gerado.
@@ -35,7 +35,7 @@ O nó **Topaz Video Enhance V2** permite aumentar a resolução e aprimorar víd
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `video` | VIDEO | A saída de vídeo aprimorada após aplicar os filtros de aumento de resolução e/ou interpolação selecionados. |
+| `vídeo` | VIDEO | A saída de vídeo aprimorada após aplicar os filtros de aumento de resolução e/ou interpolação selecionados. |
 
 ---
 **Source fingerprint (SHA-256):** `29b7538206327c35866126c1862c1d1ccea872ba84fbb9c84126114a06e2b00f`

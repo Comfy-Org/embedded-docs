@@ -6,9 +6,9 @@ OptimalStepsScheduler düğümü, seçilen model türüne ve adım yapılandırm
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model_type` | COMBO | Evet | "FLUX"<br>"Wan"<br>"Chroma" | Gürültü seviyesi hesaplaması için kullanılacak difüzyon modelinin türü |
-| `steps` | INT | Evet | 3-1000 | Hesaplanacak toplam örnekleme adımı sayısı (varsayılan: 20) |
-| `denoise` | FLOAT | Hayır | 0.0-1.0 | Gürültü giderme gücünü kontrol eder, etkin adım sayısını ayarlar (varsayılan: 1.0) |
+| `model_türü` | COMBO | Evet | "FLUX"<br>"Wan"<br>"Chroma" | Gürültü seviyesi hesaplaması için kullanılacak difüzyon modelinin türü |
+| `adımlar` | INT | Evet | 3-1000 | Hesaplanacak toplam örnekleme adımı sayısı (varsayılan: 20) |
+| `gürültü_azaltma` | FLOAT | Hayır | 0.0-1.0 | Gürültü giderme gücünü kontrol eder, etkin adım sayısını ayarlar (varsayılan: 1.0) |
 
 **Not:** `denoise` değeri 1.0'dan küçük ayarlandığında, düğüm etkin adımları `steps * denoise` olarak hesaplar. `denoise` değeri 0.0 olarak ayarlanırsa, düğüm boş bir tensör döndürür.
 

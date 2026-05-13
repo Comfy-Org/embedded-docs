@@ -7,7 +7,7 @@ Diferansiyel Difüzyon düğümü, zaman adımı eşiklerine dayalı ikili bir m
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Değiştirilecek difüzyon modeli |
-| `strength` | FLOAT | Hayır | 0.0 - 1.0 | Orijinal gürültü giderme maskesi ile ikili eşik maskesi arasındaki geçiş gücünü kontrol eder (varsayılan: 1.0) |
+| `güç` | FLOAT | Hayır | 0.0 - 1.0 | Orijinal gürültü giderme maskesi ile ikili eşik maskesi arasındaki geçiş gücünü kontrol eder (varsayılan: 1.0) |
 
 ## Çıktılar
 

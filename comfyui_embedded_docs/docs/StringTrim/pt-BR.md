@@ -7,7 +7,7 @@ O nó StringTrim remove caracteres de espaço em branco do início, fim ou ambos
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `string` | STRING | Sim | - | A string de texto a ser processada. Suporta entrada multilinha. |
-| `mode` | COMBO | Sim | "Both"<br>"Left"<br>"Right" | Especifica qual(is) lado(s) da string deve(m) ser aparado(s). "Both" remove espaços em branco de ambas as extremidades, "Left" remove apenas do início, "Right" remove apenas do final. |
+| `modo` | COMBO | Sim | "Both"<br>"Left"<br>"Right" | Especifica qual(is) lado(s) da string deve(m) ser aparado(s). "Both" remove espaços em branco de ambas as extremidades, "Left" remove apenas do início, "Right" remove apenas do final. |
 
 ## Saídas
 

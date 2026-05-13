@@ -8,14 +8,14 @@ Este nodo genera un video interpolando entre un fotograma inicial y un fotograma
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | El modelo Vidu a utilizar para la generación del video. |
-| `first_frame` | IMAGE | Sí | - | La imagen inicial para la secuencia de video. Solo se permite una sola imagen. |
-| `end_frame` | IMAGE | Sí | - | La imagen final para la secuencia de video. Solo se permite una sola imagen. |
+| `modelo` | COMBO | Sí | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | El modelo Vidu a utilizar para la generación del video. |
+| `fotograma_inicial` | IMAGE | Sí | - | La imagen inicial para la secuencia de video. Solo se permite una sola imagen. |
+| `fotograma_final` | IMAGE | Sí | - | La imagen final para la secuencia de video. Solo se permite una sola imagen. |
 | `prompt` | STRING | Sí | - | Una descripción textual que guía la generación del video (máximo 2000 caracteres). |
-| `duration` | INT | No | 2 a 8 | La duración del video generado en segundos (valor predeterminado: 5). |
-| `seed` | INT | No | 0 a 2147483647 | Un número utilizado para inicializar la generación aleatoria y obtener resultados reproducibles (valor predeterminado: 1). |
-| `resolution` | COMBO | No | `"720p"`<br>`"1080p"` | La resolución de salida del video generado. |
-| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma. |
+| `duración` | INT | No | 2 a 8 | La duración del video generado en segundos (valor predeterminado: 5). |
+| `semilla` | INT | No | 0 a 2147483647 | Un número utilizado para inicializar la generación aleatoria y obtener resultados reproducibles (valor predeterminado: 1). |
+| `resolución` | COMBO | No | `"720p"`<br>`"1080p"` | La resolución de salida del video generado. |
+| `amplitud_de_movimiento` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma. |
 
 **Nota:** Las imágenes `first_frame` y `end_frame` deben tener relaciones de aspecto similares. El nodo validará que sus relaciones de aspecto estén dentro de un rango relativo de 0.8 a 1.25.
 

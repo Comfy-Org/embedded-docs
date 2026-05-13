@@ -8,21 +8,21 @@
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | 예 | - | ControlNet 안내를 적용할 긍정 컨디셔닝 |
-| `negative` | CONDITIONING | 예 | - | ControlNet 안내를 적용할 부정 컨디셔닝 |
-| `control_net` | CONTROL_NET | 예 | - | 안내에 사용할 ControlNet 모델 |
+| `긍정 조건` | CONDITIONING | 예 | - | ControlNet 안내를 적용할 긍정 컨디셔닝 |
+| `부정 조건` | CONDITIONING | 예 | - | ControlNet 안내를 적용할 부정 컨디셔닝 |
+| `컨트롤넷` | CONTROL_NET | 예 | - | 안내에 사용할 ControlNet 모델 |
 | `vae` | VAE | 예 | - | 프로세스에 사용되는 VAE 모델 |
-| `image` | IMAGE | 예 | - | ControlNet이 안내로 사용할 입력 이미지 |
-| `strength` | FLOAT | 예 | 0.0 - 10.0 | ControlNet 효과의 강도 (기본값: 1.0) |
-| `start_percent` | FLOAT | 예 | 0.0 - 1.0 | ControlNet이 적용되기 시작하는 생성 과정의 시작 지점 (기본값: 0.0) |
-| `end_percent` | FLOAT | 예 | 0.0 - 1.0 | ControlNet 적용이 중단되는 생성 과정의 종료 지점 (기본값: 1.0) |
+| `이미지` | IMAGE | 예 | - | ControlNet이 안내로 사용할 입력 이미지 |
+| `강도` | FLOAT | 예 | 0.0 - 10.0 | ControlNet 효과의 강도 (기본값: 1.0) |
+| `시작 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | ControlNet이 적용되기 시작하는 생성 과정의 시작 지점 (기본값: 0.0) |
+| `종료 퍼센트` | FLOAT | 예 | 0.0 - 1.0 | ControlNet 적용이 중단되는 생성 과정의 종료 지점 (기본값: 1.0) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | ControlNet 안내가 적용된 수정된 긍정 컨디셔닝 |
-| `negative` | CONDITIONING | ControlNet 안내가 적용된 수정된 부정 컨디셔닝 |
+| `부정 조건` | CONDITIONING | ControlNet 안내가 적용된 수정된 긍정 컨디셔닝 |
+| `부정 조건` | CONDITIONING | ControlNet 안내가 적용된 수정된 부정 컨디셔닝 |
 
 ---
 **Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

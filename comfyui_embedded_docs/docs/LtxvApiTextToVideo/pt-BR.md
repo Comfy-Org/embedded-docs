@@ -6,12 +6,12 @@ Este é um nó de Texto para Vídeo LTXV que gera vídeos com qualidade profissi
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sim | `"LTX-2 (Rápido)"`<br>`"LTX-2 (Qualidade)"`<br>`"LTX-2 (Turbo)"` | O modelo de IA a ser usado para geração de vídeo. Os modelos disponíveis são mapeados a partir do `MODELS_MAP` do código-fonte. |
+| `modelo` | COMBO | Sim | `"LTX-2 (Rápido)"`<br>`"LTX-2 (Qualidade)"`<br>`"LTX-2 (Turbo)"` | O modelo de IA a ser usado para geração de vídeo. Os modelos disponíveis são mapeados a partir do `MODELS_MAP` do código-fonte. |
 | `prompt` | STRING | Sim | - | A descrição textual que a IA usará para gerar o vídeo. Este campo suporta múltiplas linhas de texto. |
-| `duration` | COMBO | Sim | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | A duração do vídeo gerado em segundos (padrão: 8). |
-| `resolution` | COMBO | Sim | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | As dimensões em pixels (largura x altura) do vídeo de saída. |
+| `duração` | COMBO | Sim | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | A duração do vídeo gerado em segundos (padrão: 8). |
+| `resolução` | COMBO | Sim | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | As dimensões em pixels (largura x altura) do vídeo de saída. |
 | `fps` | COMBO | Sim | `25`<br>`50` | Os quadros por segundo do vídeo (padrão: 25). |
-| `generate_audio` | BOOLEAN | Não | - | Quando ativado, o vídeo gerado incluirá áudio gerado por IA que corresponde à cena (padrão: Falso). |
+| `gerar_áudio` | BOOLEAN | Não | - | Quando ativado, o vídeo gerado incluirá áudio gerado por IA que corresponde à cena (padrão: Falso). |
 
 **Restrições Importantes:**
 

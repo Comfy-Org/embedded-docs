@@ -7,7 +7,7 @@ O nó Ajustar Brilho modifica o brilho de uma imagem de entrada. Ele funciona mu
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada a ser ajustada. |
-| `factor` | FLOAT | Não | 0,0 - 2,0 | Fator de brilho. 1,0 = sem alteração, <1,0 = mais escuro, >1,0 = mais claro. (padrão: 1,0) |
+| `fator` | FLOAT | Não | 0,0 - 2,0 | Fator de brilho. 1,0 = sem alteração, <1,0 = mais escuro, >1,0 = mais claro. (padrão: 1,0) |
 
 ## Saídas
 

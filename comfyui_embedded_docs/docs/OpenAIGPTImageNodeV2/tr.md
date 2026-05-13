@@ -8,7 +8,7 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | GPT Image için metin istemi (varsayılan: ""). |
+| `istem` | STRING | Evet | Yok | GPT Image için metin istemi (varsayılan: ""). |
 | `model` | COMBO | Evet | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | Kullanılacak OpenAI GPT Image modeli. Bir model seçmek, o modele özgü ek parametreleri ortaya çıkarır. |
 | `model.size` | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` | Görsel boyutu. Özel genişlik ve yükseklik kullanmak için 'Custom' seçeneğini seçin (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. |
 | `model.custom_width` | INT | Hayır | 1024 - 3840 | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. |
@@ -18,7 +18,7 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 | `model.images` | IMAGE | Hayır | Yok | Düzenleme için giriş görselleri. Yalnızca `gpt-image-2` için kullanılabilir. |
 | `model.mask` | MASK | Hayır | Yok | Giriş görselinin hangi bölümlerinin düzenleneceğini belirten bir maske. Yalnızca `gpt-image-2` için kullanılabilir. |
 | `n` | INT | Evet | 1 - 8 | Kaç adet görsel oluşturulacağı (varsayılan: 1). |
-| `seed` | INT | Evet | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). Not: Henüz arka uçta uygulanmamıştır. |
+| `tohum` | INT | Evet | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). Not: Henüz arka uçta uygulanmamıştır. |
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 

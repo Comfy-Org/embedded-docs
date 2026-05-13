@@ -6,18 +6,18 @@ O nó **SD_4XUpscale_Conditioning** prepara dados de condicionamento para amplia
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | Imagens de entrada a serem ampliadas |
-| `positive` | CONDITIONING | Sim | - | Dados de condicionamento positivo que guiam a geração em direção ao conteúdo desejado |
-| `negative` | CONDITIONING | Sim | - | Dados de condicionamento negativo que afastam a geração de conteúdo indesejado |
-| `scale_ratio` | FLOAT | Não | 0.0 - 10.0 | Fator de escalonamento aplicado às imagens de entrada (padrão: 4.0) |
-| `noise_augmentation` | FLOAT | Não | 0.0 - 1.0 | Quantidade de ruído a ser adicionada durante o processo de ampliação (padrão: 0.0) |
+| `imagens` | IMAGE | Sim | - | Imagens de entrada a serem ampliadas |
+| `positivo` | CONDITIONING | Sim | - | Dados de condicionamento positivo que guiam a geração em direção ao conteúdo desejado |
+| `negativo` | CONDITIONING | Sim | - | Dados de condicionamento negativo que afastam a geração de conteúdo indesejado |
+| `fator_de_escala` | FLOAT | Não | 0.0 - 10.0 | Fator de escalonamento aplicado às imagens de entrada (padrão: 4.0) |
+| `aumento_de_ruído` | FLOAT | Não | 0.0 - 1.0 | Quantidade de ruído a ser adicionada durante o processo de ampliação (padrão: 0.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `positive` | CONDITIONING | Condicionamento positivo modificado com informações de ampliação aplicadas |
-| `negative` | CONDITIONING | Condicionamento negativo modificado com informações de ampliação aplicadas |
+| `positivo` | CONDITIONING | Condicionamento positivo modificado com informações de ampliação aplicadas |
+| `negativo` | CONDITIONING | Condicionamento negativo modificado com informações de ampliação aplicadas |
 | `latent` | LATENT | Representação latente vazia correspondente às dimensões ampliadas |
 
 ---

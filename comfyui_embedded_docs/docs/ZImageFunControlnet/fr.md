@@ -8,12 +8,12 @@ Le nœud ZImageFunControlnet applique un réseau de contrôle spécialisé pour 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de base utilisé pour le processus de génération. |
-| `model_patch` | MODEL_PATCH | Oui | - | Un modèle de correctif spécialisé qui applique les directives du réseau de contrôle. |
+| `modèle` | MODEL | Oui | - | Le modèle de base utilisé pour le processus de génération. |
+| `modèle_patch` | MODEL_PATCH | Oui | - | Un modèle de correctif spécialisé qui applique les directives du réseau de contrôle. |
 | `vae` | VAE | Oui | - | L'autoencodeur variationnel utilisé pour encoder et décoder les images. |
-| `strength` | FLOAT | Oui | -10.0 à 10.0 | La force de l'influence du réseau de contrôle. Les valeurs positives appliquent l'effet, tandis que les valeurs négatives peuvent l'inverser (par défaut : 1.0). |
+| `force` | FLOAT | Oui | -10.0 à 10.0 | La force de l'influence du réseau de contrôle. Les valeurs positives appliquent l'effet, tandis que les valeurs négatives peuvent l'inverser (par défaut : 1.0). |
 | `image` | IMAGE | Non | - | Une image de base facultative pour guider le processus de génération. |
-| `inpaint_image` | IMAGE | Non | - | Une image facultative utilisée spécifiquement pour l'incrustation dans les zones définies par un masque. |
+| `image_de_repeinture` | IMAGE | Non | - | Une image facultative utilisée spécifiquement pour l'incrustation dans les zones définies par un masque. |
 | `mask` | MASK | Non | - | Un masque facultatif qui définit les zones d'une image à éditer ou à incruster. |
 
 **Remarque :** Le paramètre `inpaint_image` est généralement utilisé conjointement avec un `mask` pour spécifier le contenu de l'incrustation. Le comportement du nœud peut changer en fonction des entrées facultatives fournies (par exemple, utiliser `image` pour le guidage ou utiliser `image`, `mask` et `inpaint_image` pour l'incrustation).
@@ -22,7 +22,7 @@ Le nœud ZImageFunControlnet applique un réseau de contrôle spécialisé pour 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle avec le correctif du réseau de contrôle appliqué, prêt à être utilisé dans un pipeline d'échantillonnage. |
+| `modèle` | MODEL | Le modèle avec le correctif du réseau de contrôle appliqué, prêt à être utilisé dans un pipeline d'échantillonnage. |
 | `positive` | CONDITIONING | Le conditionnement positif, potentiellement modifié par les entrées du réseau de contrôle. |
 | `negative` | CONDITIONING | Le conditionnement négatif, potentiellement modifié par les entrées du réseau de contrôle. |
 

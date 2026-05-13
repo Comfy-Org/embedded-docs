@@ -8,8 +8,8 @@ Le nœud **ModelMergeAdd** est conçu pour fusionner deux modèles en ajoutant d
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model1`  | `MODEL`         | Le premier modèle à cloner et auquel les correctifs du second modèle seront ajoutés. Il sert de modèle de base pour le processus de fusion. |
-| `model2`  | `MODEL`         | Le second modèle dont les correctifs clés sont extraits et ajoutés au premier modèle. Il apporte des caractéristiques ou comportements supplémentaires au modèle fusionné. |
+| `modèle1`  | `MODEL`         | Le premier modèle à cloner et auquel les correctifs du second modèle seront ajoutés. Il sert de modèle de base pour le processus de fusion. |
+| `modèle2`  | `MODEL`         | Le second modèle dont les correctifs clés sont extraits et ajoutés au premier modèle. Il apporte des caractéristiques ou comportements supplémentaires au modèle fusionné. |
 
 ## Sorties
 

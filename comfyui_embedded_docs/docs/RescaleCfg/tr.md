@@ -7,7 +7,7 @@ RescaleCFG düğümü, bir model çıktısının koşullu ve koşulsuz ölçekle
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `model`   | MODEL     | Model parametresi, ayarlanacak üretken modeli temsil eder. Düğüm, modelin çıktısına bir yeniden ölçeklendirme işlevi uyguladığından ve üretim sürecini doğrudan etkilediğinden kritik öneme sahiptir. |
-| `multiplier` | `FLOAT` | Çarpan parametresi, model çıktısına uygulanan yeniden ölçeklendirmenin kapsamını kontrol eder. Orijinal ve yeniden ölçeklendirilmiş bileşenler arasındaki dengeyi belirleyerek nihai çıktının özelliklerini etkiler. |
+| `çarpan` | `FLOAT` | Çarpan parametresi, model çıktısına uygulanan yeniden ölçeklendirmenin kapsamını kontrol eder. Orijinal ve yeniden ölçeklendirilmiş bileşenler arasındaki dengeyi belirleyerek nihai çıktının özelliklerini etkiler. |
 
 ## Çıktılar
 

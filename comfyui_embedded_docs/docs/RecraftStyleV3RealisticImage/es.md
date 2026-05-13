@@ -6,7 +6,7 @@ Este nodo crea una configuración de estilo para generar imágenes realistas uti
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-------------|-------------|-------|-------------|
-| `substyle` | STRING | Sí | Múltiples opciones disponibles (determinadas por la API de Recraft) | El subestilo específico a aplicar al estilo `realistic_image`. Si se establece en "None", no se aplicará ningún subestilo. |
+| `subestilo` | STRING | Sí | Múltiples opciones disponibles (determinadas por la API de Recraft) | El subestilo específico a aplicar al estilo `realistic_image`. Si se establece en "None", no se aplicará ningún subestilo. |
 
 ## Salidas
 

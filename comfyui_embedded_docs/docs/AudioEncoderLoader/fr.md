@@ -6,7 +6,7 @@ Le nœud AudioEncoderLoader charge un modèle d'encodeur audio à partir d'un fi
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `audio_encoder_name` | STRING | Oui | Liste des fichiers d'encodeur audio disponibles dans le dossier audio_encoders | Sélectionne le fichier de modèle d'encodeur audio à charger |
+| `nom_encodeur_audio` | STRING | Oui | Liste des fichiers d'encodeur audio disponibles dans le dossier audio_encoders | Sélectionne le fichier de modèle d'encodeur audio à charger |
 
 ## Sorties
 

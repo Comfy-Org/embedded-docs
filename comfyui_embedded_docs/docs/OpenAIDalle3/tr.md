@@ -6,11 +6,11 @@ OpenAI'nin DALL·E 3 uç noktası üzerinden eşzamanlı olarak görseller oluş
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | DALL·E için metin istemi (varsayılan: "") |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Henüz arka uçta uygulanmadı (varsayılan: 0) |
-| `quality` | COMBO | Hayır | "standard"<br>"hd" | Görsel kalitesi (varsayılan: "standard") |
-| `style` | COMBO | Hayır | "natural"<br>"vivid" | Canlı (vivid), modelin hiper-gerçekçi ve dramatik görsellere yönelmesine neden olur. Doğal (natural), modelin daha doğal, daha az hiper-gerçekçi görünümlü görseller üretmesini sağlar. (varsayılan: "natural") |
-| `size` | COMBO | Hayır | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Görsel boyutu (varsayılan: "1024x1024") |
+| `istem` | STRING | Evet | - | DALL·E için metin istemi (varsayılan: "") |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Henüz arka uçta uygulanmadı (varsayılan: 0) |
+| `kalite` | COMBO | Hayır | "standard"<br>"hd" | Görsel kalitesi (varsayılan: "standard") |
+| `stil` | COMBO | Hayır | "natural"<br>"vivid" | Canlı (vivid), modelin hiper-gerçekçi ve dramatik görsellere yönelmesine neden olur. Doğal (natural), modelin daha doğal, daha az hiper-gerçekçi görünümlü görseller üretmesini sağlar. (varsayılan: "natural") |
+| `boyut` | COMBO | Hayır | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Görsel boyutu (varsayılan: "1024x1024") |
 
 ## Çıktılar
 

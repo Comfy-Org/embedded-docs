@@ -6,10 +6,10 @@ Le nœud `EmptyHunyuanLatentVideo` est similaire au nœud `EmptyLatentImage`. Vo
 
 | Paramètre     | Type Comfy | Description                                                                                |
 | ------------ | ---------- | ------------------------------------------------------------------------------------------ |
-| `width`      | `INT`      | Largeur de la vidéo, valeur par défaut 848, minimum 16, maximum `nodes.MAX_RESOLUTION`, pas de 16.        |
-| `height`     | `INT`      | Hauteur de la vidéo, valeur par défaut 480, minimum 16, maximum `nodes.MAX_RESOLUTION`, pas de 16.       |
-| `length`     | `INT`      | Longueur de la vidéo, valeur par défaut 25, minimum 1, maximum `nodes.MAX_RESOLUTION`, pas de 4.          |
-| `batch_size` | `INT`      | Taille du lot, valeur par défaut 1, minimum 1, maximum 4096.                                           |
+| `largeur`      | `INT`      | Largeur de la vidéo, valeur par défaut 848, minimum 16, maximum `nodes.MAX_RESOLUTION`, pas de 16.        |
+| `hauteur`     | `INT`      | Hauteur de la vidéo, valeur par défaut 480, minimum 16, maximum `nodes.MAX_RESOLUTION`, pas de 16.       |
+| `longueur`     | `INT`      | Longueur de la vidéo, valeur par défaut 25, minimum 1, maximum `nodes.MAX_RESOLUTION`, pas de 4.          |
+| `taille_du_lot` | `INT`      | Taille du lot, valeur par défaut 1, minimum 1, maximum 4096.                                           |
 
 ## Sorties
 

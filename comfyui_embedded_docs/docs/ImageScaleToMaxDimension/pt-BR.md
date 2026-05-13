@@ -8,15 +8,15 @@ O nó ImageScaleToMaxDimension redimensiona imagens para caber dentro de uma dim
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser redimensionada |
-| `upscale_method` | STRING | Sim | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | O método de interpolação usado para redimensionar a imagem (padrão: "area") |
-| `largest_size` | INT | Sim | 0 a 16384 | A dimensão máxima para a imagem redimensionada (padrão: 512) |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser redimensionada |
+| `método de upscaling` | STRING | Sim | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | O método de interpolação usado para redimensionar a imagem (padrão: "area") |
+| `maior tamanho` | INT | Sim | 0 a 16384 | A dimensão máxima para a imagem redimensionada (padrão: 512) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem redimensionada com a maior dimensão correspondendo ao tamanho especificado |
+| `imagem` | IMAGE | A imagem redimensionada com a maior dimensão correspondendo ao tamanho especificado |
 
 ---
 **Source fingerprint (SHA-256):** `be113c1a98ab9d884b2c728b790c41fb236857d59af567e43e2be0ef0362cc5e`

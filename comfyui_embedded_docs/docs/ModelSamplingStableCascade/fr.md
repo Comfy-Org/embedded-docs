@@ -8,14 +8,14 @@ Le nœud **ModelSamplingStableCascade** applique un échantillonnage en cascade 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle d'entrée auquel appliquer l'échantillonnage en cascade stable |
-| `shift` | FLOAT | Oui | 0.0 - 100.0 | La valeur de décalage à appliquer aux paramètres d'échantillonnage (par défaut : 2.0) |
+| `modèle` | MODEL | Oui | - | Le modèle d'entrée auquel appliquer l'échantillonnage en cascade stable |
+| `décalage` | FLOAT | Oui | 0.0 - 100.0 | La valeur de décalage à appliquer aux paramètres d'échantillonnage (par défaut : 2.0) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec l'échantillonnage en cascade stable appliqué |
+| `modèle` | MODEL | Le modèle modifié avec l'échantillonnage en cascade stable appliqué |
 
 ---
 **Source fingerprint (SHA-256):** `2d0a342fff05434c8fe78999187bd31dbee7deb6f4447759a489102a8ce277de`

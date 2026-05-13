@@ -7,7 +7,7 @@ SamplerEulerAncestral düğümü, görüntü oluşturmak için bir Euler Atasal 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `eta` | FLOAT | Hayır | 0.0 - 100.0 | Örnekleme sürecinin adım boyutunu ve stokastikliğini kontrol eder (varsayılan: 1.0). Bu gelişmiş bir parametredir. |
-| `s_noise` | FLOAT | Hayır | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0). Bu gelişmiş bir parametredir. |
+| `s_gürültü` | FLOAT | Hayır | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0). Bu gelişmiş bir parametredir. |
 
 ## Çıktılar
 

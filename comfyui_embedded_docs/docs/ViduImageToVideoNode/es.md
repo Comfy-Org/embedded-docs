@@ -34,13 +34,13 @@ El nodo de Generación de Video a partir de Imagen de Vidu crea un video corto a
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `model` | COMBO | Sí | `viduq1` | Nombre del modelo (predeterminado: viduq1) |
-| `image` | IMAGE | Sí | - | Una imagen que se usará como fotograma inicial del video generado |
-| `prompt` | STRING | No | - | Una descripción textual para la generación del video (predeterminado: vacío) |
-| `duration` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5, fijo en 5 segundos) |
-| `seed` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
-| `resolution` | COMBO | No | `1080p` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: 1080p) |
-| `movement_amplitude` | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` | La amplitud de movimiento de los objetos en el fotograma (predeterminado: auto) |
+| `modelo` | COMBO | Sí | `viduq1` | Nombre del modelo (predeterminado: viduq1) |
+| `imagen` | IMAGE | Sí | - | Una imagen que se usará como fotograma inicial del video generado |
+| `texto` | STRING | No | - | Una descripción textual para la generación del video (predeterminado: vacío) |
+| `duración` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5, fijo en 5 segundos) |
+| `semilla` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
+| `resolución` | COMBO | No | `1080p` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: 1080p) |
+| `amplitud_movimiento` | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` | La amplitud de movimiento de los objetos en el fotograma (predeterminado: auto) |
 
 **Restricciones:**
 

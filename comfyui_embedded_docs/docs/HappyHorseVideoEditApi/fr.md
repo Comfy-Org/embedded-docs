@@ -10,10 +10,10 @@ Modifiez une vidéo à l'aide d'instructions textuelles ou d'images de référen
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | DICT | Oui | Voir ci-dessous | Configuration du modèle contenant la sélection du modèle, l'invite, la résolution, le rapport hauteur/largeur et les images de référence optionnelles. |
-| `video` | VIDEO | Oui | - | La vidéo à éditer. |
-| `seed` | INT | Oui | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
-| `watermark` | BOOLEAN | Non | Vrai / Faux | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : Faux). |
+| `modèle` | DICT | Oui | Voir ci-dessous | Configuration du modèle contenant la sélection du modèle, l'invite, la résolution, le rapport hauteur/largeur et les images de référence optionnelles. |
+| `vidéo` | VIDEO | Oui | - | La vidéo à éditer. |
+| `graine` | INT | Oui | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
+| `filigrane` | BOOLEAN | Non | Vrai / Faux | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : Faux). |
 
 ### Détails du paramètre `model`
 
@@ -21,7 +21,7 @@ Le paramètre `model` est un dictionnaire contenant les champs suivants :
 
 | Champ | Type de données | Requis | Plage | Description |
 |-------|-----------------|--------|-------|-------------|
-| `model` | STRING | Oui | `"happyhorse-1.0-video-edit"` | Le modèle d'édition vidéo HappyHorse à utiliser. |
+| `modèle` | STRING | Oui | `"happyhorse-1.0-video-edit"` | Le modèle d'édition vidéo HappyHorse à utiliser. |
 | `prompt` | STRING | Oui | - | Instructions d'édition ou exigences de transfert de style. Doit comporter au moins 1 caractère. |
 | `resolution` | STRING | Oui | `"720P"`<br>`"1080P"` | La résolution de sortie. |
 | `ratio` | STRING | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | Rapport hauteur/largeur. S'il n'est pas modifié, se rapproche du rapport de la vidéo d'entrée. |
@@ -31,7 +31,7 @@ Le paramètre `model` est un dictionnaire contenant les champs suivants :
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `video` | VIDEO | La sortie vidéo éditée. |
+| `vidéo` | VIDEO | La sortie vidéo éditée. |
 
 ---
 **Source fingerprint (SHA-256):** `af6747efbea1c65e4909d35dad009cbc2ffaad787d0f2031581c227deb9bf53c`

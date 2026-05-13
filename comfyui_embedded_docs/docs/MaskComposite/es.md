@@ -6,11 +6,11 @@ Este nodo se especializa en combinar dos máscaras de entrada mediante diversas 
 
 | Parámetro     | Tipo de Dato | Descripción                                                                                                                                      |
 | ------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `destination` | MASK         | La máscara principal que se modificará según la operación con la máscara de origen. Desempeña un papel central en la operación compuesta, actuando como base para las modificaciones. |
-| `source`      | MASK         | La máscara secundaria que se utilizará junto con la máscara de destino para realizar la operación especificada, influyendo en la máscara final de salida. |
+| `destino` | MASK         | La máscara principal que se modificará según la operación con la máscara de origen. Desempeña un papel central en la operación compuesta, actuando como base para las modificaciones. |
+| `fuente`      | MASK         | La máscara secundaria que se utilizará junto con la máscara de destino para realizar la operación especificada, influyendo en la máscara final de salida. |
 | `x`           | INT          | El desplazamiento horizontal en el que se aplicará la máscara de origen sobre la máscara de destino, afectando el posicionamiento del resultado compuesto. |
 | `y`           | INT          | El desplazamiento vertical en el que se aplicará la máscara de origen sobre la máscara de destino, afectando el posicionamiento del resultado compuesto. |
-| `operation`   | COMBO[STRING]| Especifica el tipo de operación a aplicar entre las máscaras de destino y origen, como 'sumar', 'restar' u operaciones lógicas, determinando la naturaleza del efecto compuesto. |
+| `operación`   | COMBO[STRING]| Especifica el tipo de operación a aplicar entre las máscaras de destino y origen, como 'sumar', 'restar' u operaciones lógicas, determinando la naturaleza del efecto compuesto. |
 
 ## Salidas
 

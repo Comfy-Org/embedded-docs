@@ -6,10 +6,10 @@ O nó SaveAnimatedPNG é projetado para criar e salvar imagens PNG animadas a pa
 
 | Campo             | Tipo de Dados | Descrição                                                                         |
 |-------------------|---------------|-----------------------------------------------------------------------------------|
-| `images`          | `IMAGE`       | Uma lista de imagens a serem processadas e salvas como um PNG animado. Cada imagem na lista representa um quadro na animação. |
-| `filename_prefix` | `STRING`      | Especifica o nome base para o arquivo de saída, que será usado como prefixo para os arquivos PNG animados gerados. |
+| `imagens`          | `IMAGE`       | Uma lista de imagens a serem processadas e salvas como um PNG animado. Cada imagem na lista representa um quadro na animação. |
+| `prefixo_do_arquivo` | `STRING`      | Especifica o nome base para o arquivo de saída, que será usado como prefixo para os arquivos PNG animados gerados. |
 | `fps`             | `FLOAT`       | A taxa de quadros por segundo da animação, controlando a velocidade com que os quadros são exibidos. |
-| `compress_level`  | `INT`         | O nível de compressão aplicado aos arquivos PNG animados, afetando o tamanho do arquivo e a clareza da imagem. |
+| `nível_de_compressão`  | `INT`         | O nível de compressão aplicado aos arquivos PNG animados, afetando o tamanho do arquivo e a clareza da imagem. |
 
 ## Saídas
 

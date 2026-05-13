@@ -6,7 +6,7 @@ Este nodo aplica Re-escalado de Puntuación Temporal (TSR) a un modelo de difusi
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que se le aplicará el parche con la función TSR. |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que se le aplicará el parche con la función TSR. |
 | `tsr_k` | FLOAT | No | 0.01 - 100.0 | Controla la intensidad del re-escalado. Un valor k más bajo produce resultados más detallados; un valor k más alto produce resultados más suaves en la generación de imágenes. Establecer k = 1 desactiva el re-escalado. (valor predeterminado: 0.95) |
 | `tsr_sigma` | FLOAT | No | 0.01 - 100.0 | Controla qué tan temprano surte efecto el re-escalado. Los valores más grandes surten efecto más temprano. (valor predeterminado: 1.0) |
 

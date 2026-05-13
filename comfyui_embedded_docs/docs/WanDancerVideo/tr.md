@@ -34,15 +34,15 @@ WanDancerVideo düğümü, WanDancer modeli ile video oluşturma için koşullan
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | | Video oluşturmayı yönlendiren pozitif koşullandırma. |
-| `negative` | CONDITIONING | Evet | | Video oluşturmayı yönlendiren negatif koşullandırma. |
+| `pozitif` | CONDITIONING | Evet | | Video oluşturmayı yönlendiren pozitif koşullandırma. |
+| `negatif` | CONDITIONING | Evet | | Video oluşturmayı yönlendiren negatif koşullandırma. |
 | `vae` | VAE | Evet | | Başlangıç görüntüsünü latent uzaya kodlamak için kullanılan VAE. |
-| `width` | INT | Evet | 16 ila MAX_RESOLUTION (adım: 16) | Oluşturulan videonun piksel cinsinden genişliği (varsayılan: 480). |
-| `height` | INT | Evet | 16 ila MAX_RESOLUTION (adım: 16) | Oluşturulan videonun piksel cinsinden yüksekliği (varsayılan: 832). |
-| `length` | INT | Evet | 1 ila MAX_RESOLUTION (adım: 4) | Oluşturulan videodaki kare sayısı. WanDancer için 149 olarak kalmalıdır (varsayılan: 149). |
+| `genişlik` | INT | Evet | 16 ila MAX_RESOLUTION (adım: 16) | Oluşturulan videonun piksel cinsinden genişliği (varsayılan: 480). |
+| `yükseklik` | INT | Evet | 16 ila MAX_RESOLUTION (adım: 16) | Oluşturulan videonun piksel cinsinden yüksekliği (varsayılan: 832). |
+| `uzunluk` | INT | Evet | 1 ila MAX_RESOLUTION (adım: 4) | Oluşturulan videodaki kare sayısı. WanDancer için 149 olarak kalmalıdır (varsayılan: 149). |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Hayır | | İlk kare için CLIP vision gömmeleri. |
 | `clip_vision_output_ref` | CLIP_VISION_OUTPUT | Hayır | | Referans görüntüsü için CLIP vision gömmeleri. |
-| `start_image` | IMAGE | Hayır | | Kodlanacak başlangıç görüntüsü(leri). Belirtilen `length` değerine kadar herhangi bir sayıda kare olabilir. |
+| `başlangıç görseli` | IMAGE | Hayır | | Kodlanacak başlangıç görüntüsü(leri). Belirtilen `uzunluk` değerine kadar herhangi bir sayıda kare olabilir. |
 | `mask` | MASK | Hayır | | Başlangıç görüntüsü(leri) için görüntü koşullandırma maskesi. Beyaz alanlar korunur, siyah alanlar oluşturulur. Yerel oluşturmalar için kullanılır. |
 | `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | Hayır | | Ses koşullu oluşturma için ses özellikleri, fps ve enjekte ölçeği sağlayan bir ses kodlayıcının çıktısı. |
 
@@ -55,8 +55,8 @@ WanDancerVideo düğümü, WanDancer modeli ile video oluşturma için koşullan
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş pozitif koşullandırma. |
-| `negative` | CONDITIONING | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş negatif koşullandırma. |
+| `negatif` | CONDITIONING | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş pozitif koşullandırma. |
+| `latent` | CONDITIONING | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş negatif koşullandırma. |
 | `latent` | LATENT | Boyutları belirtilen video uzunluğu, yüksekliği ve genişliğiyle eşleşen boş bir latent tensör. |
 
 ---

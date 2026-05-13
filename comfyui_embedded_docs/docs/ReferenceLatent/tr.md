@@ -6,8 +6,8 @@ Bu düğüm, bir düzenleme modeli için yönlendirici gizli değişkeni (guidin
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `conditioning` | CONDITIONING | Evet | - | Referans gizli değişken bilgisi ile değiştirilecek koşullandırma verileri |
-| `latent` | LATENT | Hayır | - | Düzenleme modeli için referans olarak kullanılacak isteğe bağlı gizli değişken verileri |
+| `koşullandırma` | CONDITIONING | Evet | - | Referans gizli değişken bilgisi ile değiştirilecek koşullandırma verileri |
+| `gizli değişken` | LATENT | Hayır | - | Düzenleme modeli için referans olarak kullanılacak isteğe bağlı gizli değişken verileri |
 
 ## Çıkışlar
 

@@ -10,8 +10,8 @@ HappyHorse modelini kullanarak bir videoyu metin talimatları veya referans gör
 |-----------|-----------|----------|-------|-------------|
 | `model` | DICT | Evet | Aşağıya bakın | Model seçimi, istem, çözünürlük, en-boy oranı ve isteğe bağlı referans görsellerini içeren model yapılandırması. |
 | `video` | VIDEO | Evet | - | Düzenlenecek video. |
-| `seed` | INT | Evet | 0 ile 2147483647 arası | Üretim için kullanılacak tohum değeri (varsayılan: 0). |
-| `watermark` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). |
+| `tohum` | INT | Evet | 0 ile 2147483647 arası | Üretim için kullanılacak tohum değeri (varsayılan: 0). |
+| `filigran` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). |
 
 ### `model` Parametre Detayları
 

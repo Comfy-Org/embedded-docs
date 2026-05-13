@@ -6,14 +6,14 @@ El nodo GetImageSize extrae las dimensiones e información de lote de una imagen
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada de la cual extraer información de tamaño |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada de la cual extraer información de tamaño |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `width` | INT | El ancho de la imagen de entrada en píxeles |
-| `height` | INT | El alto de la imagen de entrada en píxeles |
+| `alto` | INT | El ancho de la imagen de entrada en píxeles |
+| `tamaño_de_lote` | INT | El alto de la imagen de entrada en píxeles |
 | `batch_size` | INT | El número de imágenes en el lote |
 
 ---

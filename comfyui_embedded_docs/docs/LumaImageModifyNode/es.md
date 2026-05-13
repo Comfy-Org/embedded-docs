@@ -34,17 +34,17 @@ Modifica imágenes de forma síncrona basándose en un prompt de texto y la rela
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a modificar |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a modificar |
 | `prompt` | STRING | Sí | - | Prompt para la generación de la imagen (predeterminado: "") |
-| `image_weight` | FLOAT | No | 0.0-0.98 | Peso de la imagen; cuanto más cercano a 1.0, menos se modificará la imagen (predeterminado: 0.1). Internamente, este valor se invierte (1.0 - image_weight) y se limita entre 0.0 y 0.98. |
-| `model` | STRING | Sí | `"photon-flash-1"`<br>`"photon-1"`<br>`"photon"` | El modelo Luma a utilizar para la modificación de la imagen. Diferentes modelos tienen diferentes costos. |
-| `seed` | INT | No | 0-18446744073709551615 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
+| `peso_imagen` | FLOAT | No | 0.0-0.98 | Peso de la imagen; cuanto más cercano a 1.0, menos se modificará la imagen (predeterminado: 0.1). Internamente, este valor se invierte (1.0 - image_weight) y se limita entre 0.0 y 0.98. |
+| `modelo` | STRING | Sí | `"photon-flash-1"`<br>`"photon-1"`<br>`"photon"` | El modelo Luma a utilizar para la modificación de la imagen. Diferentes modelos tienen diferentes costos. |
+| `semilla` | INT | No | 0-18446744073709551615 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen modificada generada por el modelo Luma |
+| `imagen` | IMAGE | La imagen modificada generada por el modelo Luma |
 
 ---
 **Source fingerprint (SHA-256):** `078542bdba19945037c95fefa30d1b403ebf58e29270c8067dcb8ff21a99b7e0`

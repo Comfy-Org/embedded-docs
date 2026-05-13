@@ -6,9 +6,9 @@ O nó **LatentOperationSharpen** aplica um efeito de nitidez a representações 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `sharpen_radius` | INT | Não | 1-31 | O raio do kernel de nitidez (padrão: 9) |
+| `raio_de_nitidez` | INT | Não | 1-31 | O raio do kernel de nitidez (padrão: 9) |
 | `sigma` | FLOAT | Não | 0.1-10.0 | O desvio padrão para o kernel Gaussiano (padrão: 1.0) |
-| `alpha` | FLOAT | Não | 0.0-5.0 | O fator de intensidade da nitidez (padrão: 0.1) |
+| `alfa` | FLOAT | Não | 0.0-5.0 | O fator de intensidade da nitidez (padrão: 0.1) |
 
 ## Saídas
 

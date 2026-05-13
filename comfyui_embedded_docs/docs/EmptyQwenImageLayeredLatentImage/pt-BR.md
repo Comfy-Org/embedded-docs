@@ -6,10 +6,10 @@ O nó Empty Qwen Image Layered Latent cria uma representação latente em branco
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | A largura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | A altura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) |
-| `layers` | INT | Sim | 0 a MAX_RESOLUTION | O número de camadas adicionais a serem adicionadas à estrutura latente. Isso define a profundidade da representação latente. (padrão: 3) |
-| `batch_size` | INT | Não | 1 a 4096 | O número de amostras latentes a serem geradas em um lote. (padrão: 1) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | A largura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | A altura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) |
+| `camadas` | INT | Sim | 0 a MAX_RESOLUTION | O número de camadas adicionais a serem adicionadas à estrutura latente. Isso define a profundidade da representação latente. (padrão: 3) |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de amostras latentes a serem geradas em um lote. (padrão: 1) |
 
 **Observação:** Os parâmetros `width` e `height` são internamente divididos por 8 para determinar as dimensões espaciais do tensor latente de saída.
 

@@ -6,16 +6,16 @@ El nodo WanDancerVideo prepara datos de condicionamiento y un tensor latente vac
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `positive` | CONDITIONING | Sí | | El condicionamiento positivo para guiar la generación de video. |
-| `negative` | CONDITIONING | Sí | | El condicionamiento negativo para guiar la generación de video. |
+| `positivo` | CONDITIONING | Sí | | El condicionamiento positivo para guiar la generación de video. |
+| `negativo` | CONDITIONING | Sí | | El condicionamiento negativo para guiar la generación de video. |
 | `vae` | VAE | Sí | | El VAE utilizado para codificar la imagen inicial en el espacio latente. |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | El ancho del video generado en píxeles (predeterminado: 480). |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | La altura del video generado en píxeles (predeterminado: 832). |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION (paso: 4) | El número de fotogramas en el video generado. Debe permanecer en 149 para WanDancer (predeterminado: 149). |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | El ancho del video generado en píxeles (predeterminado: 480). |
+| `alto` | INT | Sí | 16 a MAX_RESOLUTION (paso: 16) | La altura del video generado en píxeles (predeterminado: 832). |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION (paso: 4) | El número de fotogramas en el video generado. Debe permanecer en 149 para WanDancer (predeterminado: 149). |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | | Las incrustaciones CLIP vision para el primer fotograma. |
 | `clip_vision_output_ref` | CLIP_VISION_OUTPUT | No | | Las incrustaciones CLIP vision para la imagen de referencia. |
-| `start_image` | IMAGE | No | | La(s) imagen(es) inicial(es) a codificar. Puede ser cualquier cantidad de fotogramas, hasta el `length` especificado. |
-| `mask` | MASK | No | | Máscara de condicionamiento de imagen para la(s) imagen(es) inicial(es). Las áreas blancas se conservan, las áreas negras se generan. Se utiliza para generaciones locales. |
+| `imagen_inicial` | IMAGE | No | | La(s) imagen(es) inicial(es) a codificar. Puede ser cualquier cantidad de fotogramas, hasta el `longitud` especificado. |
+| `máscara` | MASK | No | | Máscara de condicionamiento de imagen para la(s) imagen(es) inicial(es). Las áreas blancas se conservan, las áreas negras se generan. Se utiliza para generaciones locales. |
 | `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | No | | La salida de un codificador de audio, que proporciona características de audio, fps y escala de inyección para la generación condicionada por audio. |
 
 **Nota sobre las restricciones de parámetros:**
@@ -27,8 +27,8 @@ El nodo WanDancerVideo prepara datos de condicionamiento y un tensor latente vac
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. |
-| `negative` | CONDITIONING | El condicionamiento negativo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. |
+| `negativo` | CONDITIONING | El condicionamiento positivo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. |
+| `latente` | CONDITIONING | El condicionamiento negativo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. |
 | `latent` | LATENT | Un tensor latente vacío con dimensiones que coinciden con la longitud, altura y ancho de video especificados. |
 
 ---

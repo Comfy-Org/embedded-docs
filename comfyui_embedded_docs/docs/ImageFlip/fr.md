@@ -9,7 +9,7 @@ Le nœud ImageFlip retourne les images le long de différents axes. Il peut reto
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à retourner |
-| `flip_method` | STRING | Oui | "x-axis: vertically"<br>"y-axis: horizontally" | La direction de retournement à appliquer (par défaut : "x-axis: vertically") |
+| `méthode_de_retournement` | STRING | Oui | "x-axis: vertically"<br>"y-axis: horizontally" | La direction de retournement à appliquer (par défaut : "x-axis: vertically") |
 
 ## Sorties
 

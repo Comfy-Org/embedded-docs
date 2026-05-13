@@ -6,17 +6,17 @@ Le nœud SamplerCustomAdvanced effectue un échantillonnage avancé dans l'espac
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `noise` | NOISE | Oui | - | Le générateur de bruit qui fournit le motif de bruit initial et la graine pour le processus d'échantillonnage |
-| `guider` | GUIDER | Oui | - | Le modèle de guidage qui oriente le processus d'échantillonnage vers les résultats souhaités |
-| `sampler` | SAMPLER | Oui | - | L'algorithme d'échantillonnage qui définit la manière dont l'espace latent est parcouru pendant la génération |
+| `bruit` | NOISE | Oui | - | Le générateur de bruit qui fournit le motif de bruit initial et la graine pour le processus d'échantillonnage |
+| `guide` | GUIDER | Oui | - | Le modèle de guidage qui oriente le processus d'échantillonnage vers les résultats souhaités |
+| `échantillonneur` | SAMPLER | Oui | - | L'algorithme d'échantillonnage qui définit la manière dont l'espace latent est parcouru pendant la génération |
 | `sigmas` | SIGMAS | Oui | - | L'échéancier sigma qui contrôle les niveaux de bruit tout au long des étapes d'échantillonnage |
-| `latent_image` | LATENT | Oui | - | La représentation latente initiale qui sert de point de départ à l'échantillonnage |
+| `image_latente` | LATENT | Oui | - | La représentation latente initiale qui sert de point de départ à l'échantillonnage |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `output` | LATENT | La représentation latente finale échantillonnée après avoir terminé le processus d'échantillonnage |
+| `sortie_débruitée` | LATENT | La représentation latente finale échantillonnée après avoir terminé le processus d'échantillonnage |
 | `denoised_output` | LATENT | Une version débruitée de la sortie lorsqu'elle est disponible, sinon renvoie la même valeur que la sortie |
 
 ---

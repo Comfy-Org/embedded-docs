@@ -7,10 +7,10 @@ Le nœud SplitSigmas est conçu pour diviser une séquence de valeurs sigma en d
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
 | `sigmas`  | `SIGMAS`        | Le paramètre `sigmas` représente la séquence de valeurs sigma à diviser. Il est essentiel pour déterminer le point de division et les deux séquences de valeurs sigma résultantes, influençant l’exécution et les résultats du nœud. |
-| `step`    | `INT`           | Le paramètre `step` spécifie l’index auquel la séquence sigma doit être divisée. Il joue un rôle critique dans la définition de la frontière entre les deux séquences sigma résultantes, influençant la fonctionnalité du nœud et les caractéristiques de la sortie. |
+| `étape`    | `INT`           | Le paramètre `étape` spécifie l’index auquel la séquence sigma doit être divisée. Il joue un rôle critique dans la définition de la frontière entre les deux séquences sigma résultantes, influençant la fonctionnalité du nœud et les caractéristiques de la sortie. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `sigmas`  | `SIGMAS`        | Le nœud produit deux séquences de valeurs sigma, chacune représentant une partie de la séquence originale divisée au pas spécifié. Ces sorties sont cruciales pour les opérations ultérieures nécessitant un traitement différencié des valeurs sigma. |
+| `sigmas_bas`  | `SIGMAS`        | Le nœud produit deux séquences de valeurs sigma, chacune représentant une partie de la séquence originale divisée au pas spécifié. Ces sorties sont cruciales pour les opérations ultérieures nécessitant un traitement différencié des valeurs sigma. |

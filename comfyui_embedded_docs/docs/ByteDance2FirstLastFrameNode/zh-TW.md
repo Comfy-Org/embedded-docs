@@ -6,13 +6,13 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 用於影片生成的模型。Seedance 2.0 提供最高品質，而 Seedance 2.0 Fast 則針對速度進行了優化。選擇模型後，將顯示 `prompt`、`resolution`、`ratio`、`duration` 和 `generate_audio` 的額外輸入。 |
-| `first_frame` | IMAGE | 否 | - | 用作影片第一幀的圖像。 |
-| `last_frame` | IMAGE | 否 | - | 用作影片最後一幀的圖像。 |
-| `first_frame_asset_id` | STRING | 否 | - | 用作第一幀的 Seedance asset_id。此項不能與 `first_frame` 圖像輸入同時使用。預設為空字串。 |
-| `last_frame_asset_id` | STRING | 否 | - | 用作最後一幀的 Seedance asset_id。此項不能與 `last_frame` 圖像輸入同時使用。預設為空字串。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 種子值。更改此種子值將導致節點重新執行，但結果是非確定性的。預設為 0。 |
-| `watermark` | BOOLEAN | 否 | - | 是否為生成的影片添加浮水印。預設為 False。 |
+| `模型` | COMBO | 是 | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 用於影片生成的模型。Seedance 2.0 提供最高品質，而 Seedance 2.0 Fast 則針對速度進行了優化。選擇模型後，將顯示 `prompt`、`resolution`、`ratio`、`duration` 和 `generate_audio` 的額外輸入。 |
+| `首幀圖像` | IMAGE | 否 | - | 用作影片第一幀的圖像。 |
+| `末幀圖像` | IMAGE | 否 | - | 用作影片最後一幀的圖像。 |
+| `first_frame_asset_id` | STRING | 否 | - | 用作第一幀的 Seedance asset_id。此項不能與 `首幀圖像` 圖像輸入同時使用。預設為空字串。 |
+| `last_frame_asset_id` | STRING | 否 | - | 用作最後一幀的 Seedance asset_id。此項不能與 `末幀圖像` 圖像輸入同時使用。預設為空字串。 |
+| `種子` | INT | 否 | 0 到 2147483647 | 種子值。更改此種子值將導致節點重新執行，但結果是非確定性的。預設為 0。 |
+| `浮水印` | BOOLEAN | 否 | - | 是否為生成的影片添加浮水印。預設為 False。 |
 
 **參數限制：**
 *   您必須提供 **`first_frame` 圖像** 或 **`first_frame_asset_id`** 中的其中一項。同時提供兩者將會導致錯誤。

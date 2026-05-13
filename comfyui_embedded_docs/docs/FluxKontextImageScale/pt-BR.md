@@ -6,13 +6,13 @@ Este nó redimensiona a imagem de entrada para um tamanho ideal utilizado durant
 
 | Nome do Parâmetro | Tipo de Dados | Tipo de Entrada | Valor Padrão | Faixa de Valores | Descrição |
 |-------------------|---------------|-----------------|--------------|------------------|-----------|
-| `image` | IMAGE | Obrigatório | - | - | Imagem de entrada a ser redimensionada |
+| `imagem` | IMAGE | Obrigatório | - | - | Imagem de entrada a ser redimensionada |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `image` | IMAGE | Imagem redimensionada |
+| `imagem` | IMAGE | Imagem redimensionada |
 
 ## Lista de Tamanhos Predefinidos
 

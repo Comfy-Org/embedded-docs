@@ -14,7 +14,7 @@ Este nodo utiliza el modelo Kling AI para generar un nuevo video basado en un vi
 | `keep_original_sound` | BOOLEAN | Sí | N/A | Determina si se conserva el audio del video de referencia en la salida (predeterminado: True). |
 | `reference_images` | IMAGE | No | N/A | Hasta 4 imágenes de referencia adicionales. |
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | La resolución para el video generado (predeterminado: "1080p"). |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
 
 **Restricciones de los Parámetros:**
 

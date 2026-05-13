@@ -7,11 +7,11 @@ Este nodo genera respuestas de texto a partir de un modelo OpenAI. Envía tu ind
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | - | Entradas de texto para el modelo, utilizadas para generar una respuesta (predeterminado: vacío) |
-| `persist_context` | BOOLEAN | Sí | - | Este parámetro está obsoleto y no tiene efecto (predeterminado: Falso) |
-| `model` | COMBO | Sí | Varios modelos OpenAI disponibles | El modelo utilizado para generar la respuesta |
-| `images` | IMAGE | No | - | Imagen(es) opcional(es) para usar como contexto del modelo. Para incluir múltiples imágenes, puedes usar el nodo de Agrupar Imágenes |
-| `files` | OPENAI_INPUT_FILES | No | - | Archivo(s) opcional(es) para usar como contexto del modelo. Acepta entradas del nodo de Archivos de Entrada de Chat OpenAI |
-| `advanced_options` | OPENAI_CHAT_CONFIG | No | - | Configuración opcional para el modelo. Acepta entradas del nodo de Opciones Avanzadas de Chat OpenAI |
+| `persistir_contexto` | BOOLEAN | Sí | - | Este parámetro está obsoleto y no tiene efecto (predeterminado: Falso) |
+| `modelo` | COMBO | Sí | Varios modelos OpenAI disponibles | El modelo utilizado para generar la respuesta |
+| `imágenes` | IMAGE | No | - | Imagen(es) opcional(es) para usar como contexto del modelo. Para incluir múltiples imágenes, puedes usar el nodo de Agrupar Imágenes |
+| `archivos` | OPENAI_INPUT_FILES | No | - | Archivo(s) opcional(es) para usar como contexto del modelo. Acepta entradas del nodo de Archivos de Entrada de Chat OpenAI |
+| `opciones_avanzadas` | OPENAI_CHAT_CONFIG | No | - | Configuración opcional para el modelo. Acepta entradas del nodo de Opciones Avanzadas de Chat OpenAI |
 
 ## Salidas
 

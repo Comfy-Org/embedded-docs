@@ -7,11 +7,11 @@ El nodo Wan22ImageToVideoLatent crea representaciones latentes de video a partir
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar imágenes en el espacio latente |
-| `width` | INT | Sí | 32 a MAX_RESOLUTION | El ancho del video de salida en píxeles (predeterminado: 1280, paso: 32) |
-| `height` | INT | Sí | 32 a MAX_RESOLUTION | La altura del video de salida en píxeles (predeterminado: 704, paso: 32) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | El número de fotogramas en la secuencia de video (predeterminado: 49, paso: 4) |
-| `batch_size` | INT | Sí | 1 a 4096 | El número de lotes a generar (predeterminado: 1) |
-| `start_image` | IMAGE | No | - | Secuencia de imágenes inicial opcional para codificar en el video latente |
+| `ancho` | INT | Sí | 32 a MAX_RESOLUTION | El ancho del video de salida en píxeles (predeterminado: 1280, paso: 32) |
+| `alto` | INT | Sí | 32 a MAX_RESOLUTION | La altura del video de salida en píxeles (predeterminado: 704, paso: 32) |
+| `duración` | INT | Sí | 1 a MAX_RESOLUTION | El número de fotogramas en la secuencia de video (predeterminado: 49, paso: 4) |
+| `tamaño_lote` | INT | Sí | 1 a 4096 | El número de lotes a generar (predeterminado: 1) |
+| `imagen_inicio` | IMAGE | No | - | Secuencia de imágenes inicial opcional para codificar en el video latente |
 
 **Nota:** Cuando se proporciona `start_image`, el nodo codifica la secuencia de imágenes en los primeros fotogramas del espacio latente y genera una máscara de ruido correspondiente. Los parámetros de ancho y alto deben ser divisibles entre 16 para obtener dimensiones de espacio latente adecuadas. El parámetro `length` determina el número de fotogramas en el video latente; la dimensión temporal del espacio latente se calcula como `((length - 1) // 4) + 1`.
 

@@ -6,8 +6,8 @@ El nodo TrimVideoLatent elimina fotogramas del inicio de una representación lat
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `samples` | LATENT | Sí | - | La representación latente de video de entrada que contiene los fotogramas de video a recortar |
-| `trim_amount` | INT | Sí | 0 a 99999 | El número de fotogramas a eliminar desde el inicio del video (predeterminado: 0) |
+| `muestras` | LATENT | Sí | - | La representación latente de video de entrada que contiene los fotogramas de video a recortar |
+| `cantidad_de_recorte` | INT | Sí | 0 a 99999 | El número de fotogramas a eliminar desde el inicio del video (predeterminado: 0) |
 
 ## Salidas
 

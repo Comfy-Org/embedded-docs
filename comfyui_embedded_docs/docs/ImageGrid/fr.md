@@ -9,10 +9,10 @@ Le nœud Grille d'Images combine plusieurs images en une seule grille ou collage
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `images` | IMAGE | Oui | - | Une liste d'images à disposer dans la grille. Le nœud nécessite au moins une image pour fonctionner. |
-| `columns` | INT | Non | 1 - 20 | Le nombre de colonnes dans la grille (par défaut : 4). |
-| `cell_width` | INT | Non | 32 - 2048 | La largeur, en pixels, de chaque cellule de la grille (par défaut : 256). |
-| `cell_height` | INT | Non | 32 - 2048 | La hauteur, en pixels, de chaque cellule de la grille (par défaut : 256). |
-| `padding` | INT | Non | 0 - 50 | La quantité d'espacement, en pixels, à placer entre les images dans la grille (par défaut : 4). |
+| `colonnes` | INT | Non | 1 - 20 | Le nombre de colonnes dans la grille (par défaut : 4). |
+| `largeur_de_cellule` | INT | Non | 32 - 2048 | La largeur, en pixels, de chaque cellule de la grille (par défaut : 256). |
+| `hauteur_de_cellule` | INT | Non | 32 - 2048 | La hauteur, en pixels, de chaque cellule de la grille (par défaut : 256). |
+| `marge` | INT | Non | 0 - 50 | La quantité d'espacement, en pixels, à placer entre les images dans la grille (par défaut : 4). |
 
 ## Sorties
 

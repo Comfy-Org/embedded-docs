@@ -8,12 +8,12 @@ Genera videos de forma sincrónica basándose en un prompt de texto e imágenes 
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | - | Prompt para la generación del video (predeterminado: "") |
 | `model` | COMBO | Sí | Múltiples opciones disponibles | Selecciona el modelo de generación de video entre los modelos Luma disponibles |
-| `resolution` | COMBO | Sí | `"540p"`<br>`"720p"<br>`"1080p"`<br>`"4k"` | Resolución de salida para el video generado (predeterminado: "540p"). Este parámetro se ignora al usar el modelo `ray-1-6`. |
-| `duration` | COMBO | Sí | `"5s"`<br>`"9s"` | Duración del video generado. Este parámetro se ignora al usar el modelo `ray-1-6`. |
-| `loop` | BOOLEAN | Sí | - | Indica si el video generado debe reproducirse en bucle (predeterminado: False) |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla. (predeterminado: 0) |
-| `first_image` | IMAGE | No | - | Primer fotograma del video generado. (opcional) |
-| `last_image` | IMAGE | No | - | Último fotograma del video generado. (opcional) |
+| `resolución` | COMBO | Sí | `"540p"`<br>`"720p"<br>`"1080p"`<br>`"4k"` | Resolución de salida para el video generado (predeterminado: "540p"). Este parámetro se ignora al usar el modelo `ray-1-6`. |
+| `duración` | COMBO | Sí | `"5s"`<br>`"9s"` | Duración del video generado. Este parámetro se ignora al usar el modelo `ray-1-6`. |
+| `bucle` | BOOLEAN | Sí | - | Indica si el video generado debe reproducirse en bucle (predeterminado: False) |
+| `semilla` | INT | Sí | 0 a 18446744073709551615 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla. (predeterminado: 0) |
+| `primera_imagen` | IMAGE | No | - | Primer fotograma del video generado. (opcional) |
+| `última_imagen` | IMAGE | No | - | Último fotograma del video generado. (opcional) |
 | `luma_concepts` | CUSTOM | No | - | Conceptos de cámara opcionales para dictar el movimiento de la cámara mediante el nodo Luma Concepts. (opcional) |
 
 **Nota:** Debe proporcionarse al menos uno de los parámetros `first_image` o `last_image`. El nodo generará una excepción si ambos faltan. Los parámetros `resolution` y `duration` se ignoran cuando el `model` está configurado en `ray-1-6`.

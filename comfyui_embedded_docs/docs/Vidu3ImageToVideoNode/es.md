@@ -6,13 +6,13 @@ El nodo de generación de video a partir de imagen Vidu Q3 crea una secuencia de
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modelo a utilizar para la generación de video. |
+| `modelo` | COMBO | Sí | `"viduq3-pro"`<br>`"viduq3-turbo"` | Modelo a utilizar para la generación de video. |
 | `model.resolution` | COMBO | Sí | `"720p"`<br>`"1080p"`<br>`"2K"` (solo viduq3-pro) | Resolución del video de salida. Las opciones disponibles dependen del modelo seleccionado. |
 | `model.duration` | INT | Sí | 1 a 16 | Duración del video de salida en segundos (predeterminado: 5). |
 | `model.audio` | BOOLEAN | Sí | `True` / `False` | Cuando está habilitado, genera video con sonido (incluyendo diálogos y efectos de sonido) (predeterminado: False). |
-| `image` | IMAGE | Sí | - | Imagen que se usará como fotograma inicial del video generado. |
+| `imagen` | IMAGE | Sí | - | Imagen que se usará como fotograma inicial del video generado. |
 | `prompt` | STRING | No | - | Texto descriptivo opcional para la generación del video (máximo 2000 caracteres) (predeterminado: vacío). |
-| `seed` | INT | No | 0 a 2147483647 | Valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
+| `semilla` | INT | No | 0 a 2147483647 | Valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
 
 **Nota:** La `image` debe tener una relación de aspecto entre 1:4 y 4:1 (vertical a horizontal). El `prompt` es opcional pero no puede exceder los 2000 caracteres. Las opciones de `model.resolution` dependen del `model` seleccionado: `"viduq3-pro"` admite `"720p"`, `"1080p"` y `"2K"`; `"viduq3-turbo"` admite `"720p"` y `"1080p"`.
 

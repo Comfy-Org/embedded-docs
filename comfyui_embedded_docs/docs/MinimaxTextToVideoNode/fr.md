@@ -8,9 +8,9 @@ Génère des vidéos de manière synchrone à partir d'un prompt et de paramètr
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `prompt_text` | STRING | Oui | - | Prompt textuel pour guider la génération vidéo |
-| `model` | COMBO | Non | "T2V-01"<br>"T2V-01-Director" | Modèle à utiliser pour la génération vidéo (par défaut : "T2V-01") |
-| `seed` | INT | Non | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit (par défaut : 0) |
+| `texte d'invite` | STRING | Oui | - | Prompt textuel pour guider la génération vidéo |
+| `modèle` | COMBO | Non | "T2V-01"<br>"T2V-01-Director" | Modèle à utiliser pour la génération vidéo (par défaut : "T2V-01") |
+| `graine` | INT | Non | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit (par défaut : 0) |
 
 ## Sorties
 

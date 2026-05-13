@@ -6,14 +6,14 @@ O nó Kandinsky5ImageToVideo prepara dados de condicionamento e espaço latente 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | N/A | Os prompts de condicionamento positivo para guiar a geração do vídeo. |
-| `negative` | CONDITIONING | Sim | N/A | Os prompts de condicionamento negativo para afastar a geração do vídeo de certos conceitos. |
+| `positivo` | CONDITIONING | Sim | N/A | Os prompts de condicionamento positivo para guiar a geração do vídeo. |
+| `negativo` | CONDITIONING | Sim | N/A | Os prompts de condicionamento negativo para afastar a geração do vídeo de certos conceitos. |
 | `vae` | VAE | Sim | N/A | O modelo VAE usado para codificar a imagem inicial opcional no espaço latente. |
-| `width` | INT | Não | 16 a 8192 (passo 16) | A largura do vídeo de saída em pixels (padrão: 768). |
-| `height` | INT | Não | 16 a 8192 (passo 16) | A altura do vídeo de saída em pixels (padrão: 512). |
-| `length` | INT | Não | 1 a 8192 (passo 4) | O número de quadros no vídeo (padrão: 121). |
-| `batch_size` | INT | Não | 1 a 4096 | O número de sequências de vídeo a serem geradas simultaneamente (padrão: 1). |
-| `start_image` | IMAGE | Não | N/A | Uma imagem inicial opcional. Se fornecida, é codificada e usada para substituir o início ruidoso dos latentes de saída do modelo. |
+| `largura` | INT | Não | 16 a 8192 (passo 16) | A largura do vídeo de saída em pixels (padrão: 768). |
+| `altura` | INT | Não | 16 a 8192 (passo 16) | A altura do vídeo de saída em pixels (padrão: 512). |
+| `duração` | INT | Não | 1 a 8192 (passo 4) | O número de quadros no vídeo (padrão: 121). |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de sequências de vídeo a serem geradas simultaneamente (padrão: 1). |
+| `imagem_inicial` | IMAGE | Não | N/A | Uma imagem inicial opcional. Se fornecida, é codificada e usada para substituir o início ruidoso dos latentes de saída do modelo. |
 
 **Observação:** Quando uma `start_image` é fornecida, ela é automaticamente redimensionada para corresponder à `width` e `height` especificadas usando interpolação bilinear. Os primeiros `length` quadros do lote de imagens são usados para codificação. O latente codificado é então injetado tanto no condicionamento `positive` quanto no `negative` para guiar a aparência inicial do vídeo.
 
@@ -21,8 +21,8 @@ O nó Kandinsky5ImageToVideo prepara dados de condicionamento e espaço latente 
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | O condicionamento positivo modificado, potencialmente atualizado com dados da imagem inicial codificada. |
-| `negative` | CONDITIONING | O condicionamento negativo modificado, potencialmente atualizado com dados da imagem inicial codificada. |
+| `positivo` | CONDITIONING | O condicionamento positivo modificado, potencialmente atualizado com dados da imagem inicial codificada. |
+| `negativo` | CONDITIONING | O condicionamento negativo modificado, potencialmente atualizado com dados da imagem inicial codificada. |
 | `latent` | LATENT | Um tensor latente de vídeo vazio com zeros, formatado para as dimensões especificadas. |
 | `cond_latent` | LATENT | A representação latente limpa e codificada das imagens iniciais fornecidas. Isso é usado internamente para substituir o início ruidoso dos latentes do vídeo gerado. |
 

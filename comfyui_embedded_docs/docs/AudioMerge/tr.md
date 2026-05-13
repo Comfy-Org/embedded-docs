@@ -6,8 +6,8 @@ AudioMerge düğümü, iki ses parçasını dalga formlarını üst üste bindir
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio1` | AUDIO | Evet | - | Birleştirilecek ilk ses girişi |
-| `audio2` | AUDIO | Evet | - | Birleştirilecek ikinci ses girişi |
+| `ses1` | AUDIO | Evet | - | Birleştirilecek ilk ses girişi |
+| `ses2` | AUDIO | Evet | - | Birleştirilecek ikinci ses girişi |
 | `merge_method` | COMBO | Evet | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | Ses dalga formlarını birleştirmek için kullanılan yöntem. |
 
 ## Çıktılar

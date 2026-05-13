@@ -7,9 +7,9 @@ El nodo SaveVideo guarda contenido de video de entrada en tu directorio de salid
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `video` | VIDEO | Sí | - | El video a guardar. |
-| `filename_prefix` | STRING | No | - | El prefijo para el archivo a guardar. Puede incluir información de formato como %date:yyyy-MM-dd% o %Empty Latent Image.width% para incluir valores de nodos (predeterminado: "video/ComfyUI"). |
-| `format` | COMBO | No | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` | El formato para guardar el video (predeterminado: "auto"). |
-| `codec` | COMBO | No | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` | El códec a utilizar para el video (predeterminado: "auto"). |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el archivo a guardar. Puede incluir información de formato como %date:yyyy-MM-dd% o %Empty Latent Image.width% para incluir valores de nodos (predeterminado: "video/ComfyUI"). |
+| `formato` | COMBO | No | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` | El formato para guardar el video (predeterminado: "auto"). |
+| `códec` | COMBO | No | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` | El códec a utilizar para el video (predeterminado: "auto"). |
 
 ## Salidas
 

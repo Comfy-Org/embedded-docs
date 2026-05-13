@@ -10,14 +10,14 @@ Le nœud Veo3FirstLastFrameNode utilise le modèle Veo 3 de Google pour génére
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | N/A | Description textuelle de la vidéo (par défaut : chaîne vide). |
 | `negative_prompt` | STRING | Non | N/A | Invite textuelle négative pour guider ce qu'il faut éviter dans la vidéo (par défaut : chaîne vide). |
-| `resolution` | COMBO | Oui | `"720p"`<br>`"1080p"`<br>`"4k"` | La résolution de la vidéo de sortie. |
-| `aspect_ratio` | COMBO | Non | `"16:9"`<br>`"9:16"` | Format d'image de la vidéo de sortie (par défaut : "16:9"). |
-| `duration` | INT | Non | 4 à 8 | Durée de la vidéo de sortie en secondes (par défaut : 8). |
+| `résolution` | COMBO | Oui | `"720p"`<br>`"1080p"`<br>`"4k"` | La résolution de la vidéo de sortie. |
+| `rapport d'aspect` | COMBO | Non | `"16:9"`<br>`"9:16"` | Format d'image de la vidéo de sortie (par défaut : "16:9"). |
+| `durée` | INT | Non | 4 à 8 | Durée de la vidéo de sortie en secondes (par défaut : 8). |
 | `seed` | INT | Non | 0 à 4294967295 | Graine pour la génération vidéo (par défaut : 0). |
-| `first_frame` | IMAGE | Oui | N/A | L'image de début de la vidéo. |
-| `last_frame` | IMAGE | Oui | N/A | L'image de fin de la vidéo. |
-| `model` | COMBO | Non | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` | Le modèle Veo 3 spécifique à utiliser pour la génération (par défaut : "veo-3.1-generate"). |
-| `generate_audio` | BOOLEAN | Non | N/A | Générer l'audio pour la vidéo (par défaut : Vrai). |
+| `première image` | IMAGE | Oui | N/A | L'image de début de la vidéo. |
+| `dernière image` | IMAGE | Oui | N/A | L'image de fin de la vidéo. |
+| `modèle` | COMBO | Non | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` | Le modèle Veo 3 spécifique à utiliser pour la génération (par défaut : "veo-3.1-generate"). |
+| `générer audio` | BOOLEAN | Non | N/A | Générer l'audio pour la vidéo (par défaut : Vrai). |
 
 **Remarque :** Le modèle `veo-3.1-lite` ne prend pas en charge la résolution 4K. Si vous sélectionnez `veo-3.1-lite` et la résolution `4k`, une erreur se produira.
 

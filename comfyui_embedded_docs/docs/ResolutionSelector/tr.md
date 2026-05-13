@@ -8,14 +8,14 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `aspect_ratio` | COMBO | Evet | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | Çıktı boyutları için en-boy oranı (varsayılan: `"SQUARE"`). |
-| `megapixels` | FLOAT | Evet | 0.1 - 16.0 | Hedef toplam megapiksel. Kare en-boy oranı için 1.0 MP ≈ 1024×1024 (varsayılan: 1.0). |
+| `en_boy_orani` | COMBO | Evet | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | Çıktı boyutları için en-boy oranı (varsayılan: `"SQUARE"`). |
+| `megapiksel` | FLOAT | Evet | 0.1 - 16.0 | Hedef toplam megapiksel. Kare en-boy oranı için 1.0 MP ≈ 1024×1024 (varsayılan: 1.0). |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `width` | INT | Piksel cinsinden hesaplanan genişlik, 8'in katıdır. |
+| `yukseklik` | INT | Piksel cinsinden hesaplanan genişlik, 8'in katıdır. |
 | `height` | INT | Piksel cinsinden hesaplanan yükseklik, 8'in katıdır. |
 
 ---

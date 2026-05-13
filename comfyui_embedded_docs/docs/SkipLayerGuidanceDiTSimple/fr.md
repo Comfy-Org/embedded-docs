@@ -6,11 +6,11 @@ Version simplifiée du nœud SkipLayerGuidanceDiT qui modifie uniquement le pass
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par saut de couches |
-| `double_layers` | STRING | Non | - | Liste séparée par des virgules des indices de couches de blocs doubles à ignorer (par défaut : "7, 8, 9") |
-| `single_layers` | STRING | Non | - | Liste séparée par des virgules des indices de couches de blocs simples à ignorer (par défaut : "7, 8, 9") |
-| `start_percent` | FLOAT | Non | 0,0 - 1,0 | Pourcentage de début du processus de débruitage auquel le guidage par saut de couches commence (par défaut : 0,0) |
-| `end_percent` | FLOAT | Non | 0,0 - 1,0 | Pourcentage de fin du processus de débruitage auquel le guidage par saut de couches s'arrête (par défaut : 1,0) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par saut de couches |
+| `couches_doubles` | STRING | Non | - | Liste séparée par des virgules des indices de couches de blocs doubles à ignorer (par défaut : "7, 8, 9") |
+| `couches_simples` | STRING | Non | - | Liste séparée par des virgules des indices de couches de blocs simples à ignorer (par défaut : "7, 8, 9") |
+| `pourcentage_début` | FLOAT | Non | 0,0 - 1,0 | Pourcentage de début du processus de débruitage auquel le guidage par saut de couches commence (par défaut : 0,0) |
+| `pourcentage_fin` | FLOAT | Non | 0,0 - 1,0 | Pourcentage de fin du processus de débruitage auquel le guidage par saut de couches s'arrête (par défaut : 1,0) |
 
 **Remarque :** Le guidage par saut de couches n'est appliqué que lorsque `double_layers` et `single_layers` contiennent tous deux des indices de couches valides. Si les deux sont vides, le nœud renvoie le modèle original inchangé. Le guidage par saut de couches est actif uniquement lorsque la valeur sigma de l'étape de débruitage actuelle se situe entre `start_percent` et `end_percent` (converties en valeurs sigma en interne).
 
@@ -18,7 +18,7 @@ Version simplifiée du nœud SkipLayerGuidanceDiT qui modifie uniquement le pass
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec le guidage par saut de couches appliqué aux couches spécifiées |
+| `modèle` | MODEL | Le modèle modifié avec le guidage par saut de couches appliqué aux couches spécifiées |
 
 ---
 **Source fingerprint (SHA-256):** `6795a67a63d9aa8b2adea3d96e49272d88c21d0642bb507e175a2fcf3a125f98`

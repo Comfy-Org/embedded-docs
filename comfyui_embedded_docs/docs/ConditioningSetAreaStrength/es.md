@@ -7,7 +7,7 @@ Este nodo está diseñado para modificar el atributo de intensidad de un conjunt
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | El conjunto de condicionamiento a modificar, que representa el estado actual del condicionamiento que influye en el proceso de generación. |
-| `strength` | `FLOAT` | El valor de intensidad que se aplicará al conjunto de condicionamiento, determinando la intensidad de su influencia. |
+| `fuerza` | `FLOAT` | El valor de intensidad que se aplicará al conjunto de condicionamiento, determinando la intensidad de su influencia. |
 
 ## Salidas
 

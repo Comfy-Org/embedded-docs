@@ -6,26 +6,26 @@ TrainLoraNode 使用提供的潜空间数据和条件数据，在扩散模型上
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 要训练 LoRA 的模型。 |
-| `latents` | LATENT | 是 | - | 用于训练的潜空间数据，作为模型的数据集/输入。 |
-| `positive` | CONDITIONING | 是 | - | 用于训练的正面条件数据。 |
-| `batch_size` | INT | 是 | 1-10000 | 训练使用的批次大小（默认值：1）。 |
-| `grad_accumulation_steps` | INT | 是 | 1-1024 | 训练使用的梯度累积步数（默认值：1）。 |
-| `steps` | INT | 是 | 1-100000 | 训练 LoRA 的步数（默认值：16）。 |
-| `learning_rate` | FLOAT | 是 | 0.0000001-1.0 | 训练使用的学习率（默认值：0.0005）。 |
-| `rank` | INT | 是 | 1-128 | LoRA 层的秩（默认值：8）。 |
-| `optimizer` | COMBO | 是 | "AdamW"<br>"Adam"<br>"SGD"<br>"RMSprop" | 训练使用的优化器（默认值："AdamW"）。 |
-| `loss_function` | COMBO | 是 | "MSE"<br>"L1"<br>"Huber"<br>"SmoothL1" | 训练使用的损失函数（默认值："MSE"）。 |
-| `seed` | INT | 是 | 0-18446744073709551615 | 训练使用的随机种子（用于 LoRA 权重初始化和噪声采样的生成器）（默认值：0）。 |
-| `training_dtype` | COMBO | 是 | "bf16"<br>"fp32"<br>"none" | 训练使用的数据类型。'none' 保留模型原生的计算数据类型，而非覆盖它。对于 fp16 模型，会自动启用 GradScaler（默认值："bf16"）。 |
-| `lora_dtype` | COMBO | 是 | "bf16"<br>"fp32" | LoRA 使用的数据类型（默认值："bf16"）。 |
-| `quantized_backward` | BOOLEAN | 是 | - | 当使用 `training_dtype` 为 'none' 且在量化模型上训练时，启用后可在反向传播中使用量化矩阵乘法（默认值：False）。 |
-| `algorithm` | COMBO | 是 | 提供多个选项 | 训练使用的算法。 |
-| `gradient_checkpointing` | BOOLEAN | 是 | - | 训练时使用梯度检查点（默认值：True）。 |
+| `模型` | MODEL | 是 | - | 要训练 LoRA 的模型。 |
+| `潜变量` | LATENT | 是 | - | 用于训练的潜空间数据，作为模型的数据集/输入。 |
+| `正向条件` | CONDITIONING | 是 | - | 用于训练的正面条件数据。 |
+| `批次大小` | INT | 是 | 1-10000 | 训练使用的批次大小（默认值：1）。 |
+| `梯度累积步数` | INT | 是 | 1-1024 | 训练使用的梯度累积步数（默认值：1）。 |
+| `步数` | INT | 是 | 1-100000 | 训练 LoRA 的步数（默认值：16）。 |
+| `学习率` | FLOAT | 是 | 0.0000001-1.0 | 训练使用的学习率（默认值：0.0005）。 |
+| `秩` | INT | 是 | 1-128 | LoRA 层的秩（默认值：8）。 |
+| `优化器` | COMBO | 是 | "AdamW"<br>"Adam"<br>"SGD"<br>"RMSprop" | 训练使用的优化器（默认值："AdamW"）。 |
+| `损失函数` | COMBO | 是 | "MSE"<br>"L1"<br>"Huber"<br>"SmoothL1" | 训练使用的损失函数（默认值："MSE"）。 |
+| `种子` | INT | 是 | 0-18446744073709551615 | 训练使用的随机种子（用于 LoRA 权重初始化和噪声采样的生成器）（默认值：0）。 |
+| `训练数据类型` | COMBO | 是 | "bf16"<br>"fp32"<br>"none" | 训练使用的数据类型。'none' 保留模型原生的计算数据类型，而非覆盖它。对于 fp16 模型，会自动启用 GradScaler（默认值："bf16"）。 |
+| `LoRA 数据类型` | COMBO | 是 | "bf16"<br>"fp32" | LoRA 使用的数据类型（默认值："bf16"）。 |
+| `quantized_backward` | BOOLEAN | 是 | - | 当使用 `训练数据类型` 为 'none' 且在量化模型上训练时，启用后可在反向传播中使用量化矩阵乘法（默认值：False）。 |
+| `算法` | COMBO | 是 | 提供多个选项 | 训练使用的算法。 |
+| `梯度检查点` | BOOLEAN | 是 | - | 训练时使用梯度检查点（默认值：True）。 |
 | `checkpoint_depth` | INT | 是 | 1-5 | 梯度检查点的深度级别（默认值：1）。 |
 | `offloading` | BOOLEAN | 是 | - | 训练期间将模型权重卸载到 CPU 以节省 GPU 内存（默认值：False）。 |
-| `existing_lora` | COMBO | 是 | 提供多个选项 | 要附加到的现有 LoRA。设置为 None 以创建新的 LoRA（默认值："[None]"）。 |
-| `bucket_mode` | BOOLEAN | 是 | - | 启用分辨率桶模式。启用后，期望从 ResolutionBucket 节点接收预分桶的潜空间数据（默认值：False）。 |
+| `现有LoRA` | COMBO | 是 | 提供多个选项 | 要附加到的现有 LoRA。设置为 None 以创建新的 LoRA（默认值："[None]"）。 |
+| `bucket模式` | BOOLEAN | 是 | - | 启用分辨率桶模式。启用后，期望从 ResolutionBucket 节点接收预分桶的潜空间数据（默认值：False）。 |
 | `bypass_mode` | BOOLEAN | 是 | - | 启用训练旁路模式。启用后，适配器通过前向钩子应用，而非修改权重。对于无法直接修改权重的量化模型特别有用（默认值：False）。 |
 
 **注意：** 正面条件输入的数量必须与潜空间图像的数量匹配。如果仅提供一个正面条件但有多个图像，它将自动对所有图像重复使用。
@@ -40,9 +40,9 @@ TrainLoraNode 使用提供的潜空间数据和条件数据，在扩散模型上
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `lora` | LORA_MODEL | 训练好的 LoRA 权重，可以保存或应用于其他模型。 |
-| `loss_map` | LOSS_MAP | 一个包含随时间变化的训练损失值的字典。 |
-| `steps` | INT | 完成的总训练步数（包括来自现有 LoRA 的任何先前步数）。 |
+| `LoRA` | LORA_MODEL | 训练好的 LoRA 权重，可以保存或应用于其他模型。 |
+| `损失` | LOSS_MAP | 一个包含随时间变化的训练损失值的字典。 |
+| `步数` | INT | 完成的总训练步数（包括来自现有 LoRA 的任何先前步数）。 |
 
 ---
 **Source fingerprint (SHA-256):** `df315ef416ff3ce81e6a526af2c4e5115980e6c35830825967e7189d4f8541d8`

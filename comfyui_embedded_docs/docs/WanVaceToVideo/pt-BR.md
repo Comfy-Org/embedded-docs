@@ -6,17 +6,17 @@ O nó WanVaceToVideo processa dados de condicionamento de vídeo para modelos de
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `positive` | CONDITIONING | Sim | - | Entrada de condicionamento positivo para guiar a geração |
-| `negative` | CONDITIONING | Sim | - | Entrada de condicionamento negativo para guiar a geração |
+| `positivo` | CONDITIONING | Sim | - | Entrada de condicionamento positivo para guiar a geração |
+| `negativo` | CONDITIONING | Sim | - | Entrada de condicionamento negativo para guiar a geração |
 | `vae` | VAE | Sim | - | Modelo VAE usado para codificar imagens e quadros de vídeo |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros no vídeo (padrão: 81, passo: 4) |
-| `batch_size` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados simultaneamente (padrão: 1) |
-| `strength` | FLOAT | Sim | 0.0 a 1000.0 | Intensidade de controle para o condicionamento de vídeo (padrão: 1.0, passo: 0.01) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída em pixels (padrão: 832, passo: 16) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) |
+| `duração` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros no vídeo (padrão: 81, passo: 4) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados simultaneamente (padrão: 1) |
+| `força` | FLOAT | Sim | 0.0 a 1000.0 | Intensidade de controle para o condicionamento de vídeo (padrão: 1.0, passo: 0.01) |
 | `control_video` | IMAGE | Não | - | Vídeo de entrada opcional para condicionamento de controle |
-| `control_masks` | MASK | Não | - | Máscaras opcionais para controlar quais partes do vídeo modificar |
-| `reference_image` | IMAGE | Não | - | Imagem de referência opcional para condicionamento adicional |
+| `máscaras_de_controle` | MASK | Não | - | Máscaras opcionais para controlar quais partes do vídeo modificar |
+| `imagem_de_referência` | IMAGE | Não | - | Imagem de referência opcional para condicionamento adicional |
 
 **Observação:** Quando `control_video` é fornecido, ele será redimensionado para corresponder à largura e altura especificadas. Se `control_masks` forem fornecidas, elas devem corresponder às dimensões do vídeo de controle. A `reference_image` é codificada através do VAE e anexada ao início da sequência latente quando fornecida.
 
@@ -24,8 +24,8 @@ O nó WanVaceToVideo processa dados de condicionamento de vídeo para modelos de
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | Condicionamento positivo com dados de controle de vídeo aplicados |
-| `negative` | CONDITIONING | Condicionamento negativo com dados de controle de vídeo aplicados |
+| `positivo` | CONDITIONING | Condicionamento positivo com dados de controle de vídeo aplicados |
+| `negativo` | CONDITIONING | Condicionamento negativo com dados de controle de vídeo aplicados |
 | `latent` | LATENT | Tensor latente vazio pronto para geração de vídeo |
 | `trim_latent` | INT | Número de quadros latentes a serem cortados quando a imagem de referência é usada |
 

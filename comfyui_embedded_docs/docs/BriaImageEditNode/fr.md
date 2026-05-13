@@ -8,16 +8,16 @@ Le nœud Bria FIBO Image Edit vous permet de modifier une image existante à l'a
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"FIBO"` | La version du modèle à utiliser pour l'édition d'image. |
+| `modèle` | COMBO | Oui | `"FIBO"` | La version du modèle à utiliser pour l'édition d'image. |
 | `image` | IMAGE | Oui | - | L'image d'entrée que vous souhaitez modifier. |
-| `prompt` | STRING | Non | - | L'instruction textuelle décrivant comment modifier l'image (par défaut : vide). |
-| `negative_prompt` | STRING | Non | - | Texte décrivant ce que vous ne souhaitez pas voir apparaître dans l'image modifiée (par défaut : vide). |
-| `structured_prompt` | STRING | Non | - | Une chaîne contenant l'invite d'édition structurée au format JSON. Utilisez-la à la place de l'invite habituelle pour un contrôle précis et programmatique (par défaut : vide). |
-| `seed` | INT | Oui | 1 à 2147483647 | Un nombre utilisé pour initialiser la génération aléatoire, garantissant des résultats reproductibles (par défaut : 1). |
-| `guidance_scale` | FLOAT | Oui | 3,0 à 5,0 | Contrôle à quel point l'image générée suit l'invite. Une valeur plus élevée entraîne une adhérence plus forte (par défaut : 3,0). |
-| `steps` | INT | Oui | 20 à 50 | Le nombre d'étapes de débruitage que le modèle effectuera (par défaut : 50). |
-| `moderation` | DYNAMICCOMBO | Oui | `"false"`<br>`"true"` | Active ou désactive la modération du contenu. La sélection de `"true"` révèle des options de modération supplémentaires pour le contenu de l'invite, l'entrée visuelle et la sortie visuelle. |
-| `mask` | MASK | Non | - | Une image de masque optionnelle. Si fournie, les modifications ne seront appliquées qu'aux zones masquées de l'image. |
+| `invite` | STRING | Non | - | L'instruction textuelle décrivant comment modifier l'image (par défaut : vide). |
+| `invite négative` | STRING | Non | - | Texte décrivant ce que vous ne souhaitez pas voir apparaître dans l'image modifiée (par défaut : vide). |
+| `invite structurée` | STRING | Non | - | Une chaîne contenant l'invite d'édition structurée au format JSON. Utilisez-la à la place de l'invite habituelle pour un contrôle précis et programmatique (par défaut : vide). |
+| `graine` | INT | Oui | 1 à 2147483647 | Un nombre utilisé pour initialiser la génération aléatoire, garantissant des résultats reproductibles (par défaut : 1). |
+| `échelle de guidage` | FLOAT | Oui | 3,0 à 5,0 | Contrôle à quel point l'image générée suit l'invite. Une valeur plus élevée entraîne une adhérence plus forte (par défaut : 3,0). |
+| `étapes` | INT | Oui | 20 à 50 | Le nombre d'étapes de débruitage que le modèle effectuera (par défaut : 50). |
+| `modération` | DYNAMICCOMBO | Oui | `"false"`<br>`"true"` | Active ou désactive la modération du contenu. La sélection de `"true"` révèle des options de modération supplémentaires pour le contenu de l'invite, l'entrée visuelle et la sortie visuelle. |
+| `masque` | MASK | Non | - | Une image de masque optionnelle. Si fournie, les modifications ne seront appliquées qu'aux zones masquées de l'image. |
 
 **Contraintes importantes :**
 
@@ -29,8 +29,8 @@ Le nœud Bria FIBO Image Edit vous permet de modifier une image existante à l'a
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `IMAGE` | IMAGE | L'image modifiée renvoyée par l'API Bria. |
-| `structured_prompt` | STRING | L'invite structurée qui a été utilisée ou générée pendant le processus d'édition. |
+| `invite structurée` | IMAGE | L'image modifiée renvoyée par l'API Bria. |
+| `invite structurée` | STRING | L'invite structurée qui a été utilisée ou générée pendant le processus d'édition. |
 
 ---
 **Source fingerprint (SHA-256):** `30148261f43f5bfd14339f5ff1ec250381a615cc05c67eee21b0a2423ebe349d`

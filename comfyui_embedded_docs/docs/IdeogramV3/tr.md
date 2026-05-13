@@ -8,15 +8,15 @@ Ideogram V3 düğümü, Ideogram V3 modelini kullanarak görseller oluşturur. H
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Görsel oluşturma veya düzenleme için istem (varsayılan: boş) |
-| `image` | IMAGE | Hayır | - | Görsel düzenleme için isteğe bağlı referans görseli |
-| `mask` | MASK | Hayır | - | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
-| `aspect_ratio` | COMBO | Hayır | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | Görsel oluşturma için en boy oranı. Çözünürlük Otomatik olarak ayarlanmamışsa yok sayılır (varsayılan: "1:1") |
-| `resolution` | COMBO | Hayır | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | Görsel oluşturma için çözünürlük. Otomatik olarak ayarlanmamışsa, bu değer aspect_ratio ayarını geçersiz kılar (varsayılan: "Auto") |
-| `magic_prompt_option` | COMBO | Hayır | "AUTO"<br>"ON"<br>"OFF" | Oluşturmada MagicPrompt kullanılıp kullanılmayacağını belirler (varsayılan: "AUTO") |
-| `seed` | INT | Hayır | 0-2147483647 | Oluşturma için rastgele tohum (varsayılan: 0) |
-| `num_images` | INT | Hayır | 1-8 | Oluşturulacak görsel sayısı (varsayılan: 1) |
-| `rendering_speed` | COMBO | Hayır | "DEFAULT"<br>"TURBO"<br>"QUALITY" | Oluşturma hızı ve kalitesi arasındaki dengeyi kontrol eder (varsayılan: "DEFAULT") |
+| `istem` | STRING | Evet | - | Görsel oluşturma veya düzenleme için istem (varsayılan: boş) |
+| `görüntü` | IMAGE | Hayır | - | Görsel düzenleme için isteğe bağlı referans görseli |
+| `maske` | MASK | Hayır | - | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
+| `en_boy_oranı` | COMBO | Hayır | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | Görsel oluşturma için en boy oranı. Çözünürlük Otomatik olarak ayarlanmamışsa yok sayılır (varsayılan: "1:1") |
+| `çözünürlük` | COMBO | Hayır | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | Görsel oluşturma için çözünürlük. Otomatik olarak ayarlanmamışsa, bu değer aspect_ratio ayarını geçersiz kılar (varsayılan: "Auto") |
+| `sihirli_istem_seçeneği` | COMBO | Hayır | "AUTO"<br>"ON"<br>"OFF" | Oluşturmada MagicPrompt kullanılıp kullanılmayacağını belirler (varsayılan: "AUTO") |
+| `tohum` | INT | Hayır | 0-2147483647 | Oluşturma için rastgele tohum (varsayılan: 0) |
+| `görüntü_sayısı` | INT | Hayır | 1-8 | Oluşturulacak görsel sayısı (varsayılan: 1) |
+| `oluşturma_hızı` | COMBO | Hayır | "DEFAULT"<br>"TURBO"<br>"QUALITY" | Oluşturma hızı ve kalitesi arasındaki dengeyi kontrol eder (varsayılan: "DEFAULT") |
 | `character_image` | IMAGE | Hayır | - | Karakter referansı olarak kullanılacak görsel |
 | `character_mask` | MASK | Hayır | - | Karakter referans görseli için isteğe bağlı maske |
 

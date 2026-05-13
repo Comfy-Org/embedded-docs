@@ -7,8 +7,8 @@ LatentFlip 節點旨在透過垂直或水平翻轉來操控潛在表示。此操
 
 | 參數 | 資料類型 | 說明 |
 |---------------|--------------|-------------|
-| `samples` | `LATENT` | 「samples」參數代表要進行翻轉的潛在表示。翻轉操作會根據「flip_method」參數，垂直或水平地改變這些表示，從而轉換潛在空間中的資料。 |
-| `flip_method` | COMBO[STRING] | 「flip_method」參數指定潛在樣本將沿哪個軸進行翻轉。可以是「x-axis: vertically」（x軸：垂直）或「y-axis: horizontally」（y軸：水平），決定翻轉的方向，進而決定應用於潛在表示的轉換性質。 |
+| `樣本` | `LATENT` | 「samples」參數代表要進行翻轉的潛在表示。翻轉操作會根據「flip_method」參數，垂直或水平地改變這些表示，從而轉換潛在空間中的資料。 |
+| `翻轉方法` | COMBO[STRING] | 「flip_method」參數指定潛在樣本將沿哪個軸進行翻轉。可以是「x-axis: vertically」（x軸：垂直）或「y-axis: horizontally」（y軸：水平），決定翻轉的方向，進而決定應用於潛在表示的轉換性質。 |
 
 ## 輸出
 

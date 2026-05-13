@@ -6,8 +6,8 @@ El nodo **Unir Canales de Audio** combina dos entradas de audio mono separadas e
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `audio_left` | AUDIO | Sí | | Los datos de audio mono que se usarán como canal izquierdo en el audio estéreo resultante. |
-| `audio_right` | AUDIO | Sí | | Los datos de audio mono que se usarán como canal derecho en el audio estéreo resultante. |
+| `audio_izquierdo` | AUDIO | Sí | | Los datos de audio mono que se usarán como canal izquierdo en el audio estéreo resultante. |
+| `audio_derecho` | AUDIO | Sí | | Los datos de audio mono que se usarán como canal derecho en el audio estéreo resultante. |
 
 **Nota:** Ambas transmisiones de audio de entrada deben ser mono (un solo canal). Si tienen diferentes frecuencias de muestreo, el canal con la frecuencia más baja se remuestreará automáticamente para igualar la más alta. Si las transmisiones de audio tienen diferentes duraciones, se recortarán a la duración de la más corta.
 

@@ -6,16 +6,16 @@ El nodo LTXVConditioning añade información de velocidad de fotogramas a las en
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que recibirá la información de velocidad de fotogramas |
-| `negative` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que recibirá la información de velocidad de fotogramas |
-| `frame_rate` | FLOAT | Sí | 0.0 - 1000.0 | El valor de velocidad de fotogramas a aplicar a ambos conjuntos de condicionamiento (predeterminado: 25.0) |
+| `positivo` | CONDITIONING | Sí | - | La entrada de condicionamiento positivo que recibirá la información de velocidad de fotogramas |
+| `negativo` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo que recibirá la información de velocidad de fotogramas |
+| `tasa_fotogramas` | FLOAT | Sí | 0.0 - 1000.0 | El valor de velocidad de fotogramas a aplicar a ambos conjuntos de condicionamiento (predeterminado: 25.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo con la información de velocidad de fotogramas aplicada |
-| `negative` | CONDITIONING | El condicionamiento negativo con la información de velocidad de fotogramas aplicada |
+| `negativo` | CONDITIONING | El condicionamiento positivo con la información de velocidad de fotogramas aplicada |
+| `negativo` | CONDITIONING | El condicionamiento negativo con la información de velocidad de fotogramas aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `e8c18b73eb009c1b3ebcc2cb8be3dee4e065d75908607a5cf15d41f89963ee09`

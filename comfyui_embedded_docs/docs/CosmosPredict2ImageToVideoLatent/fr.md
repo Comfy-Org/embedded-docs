@@ -9,12 +9,12 @@ Le nœud CosmosPredict2ImageToVideoLatent crée des représentations latentes vi
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour encoder les images dans l'espace latent |
-| `width` | INT | Non | 16 à MAX_RESOLUTION | La largeur de la vidéo de sortie en pixels (défaut : 848, doit être divisible par 16) |
-| `height` | INT | Non | 16 à MAX_RESOLUTION | La hauteur de la vidéo de sortie en pixels (défaut : 480, doit être divisible par 16) |
-| `length` | INT | Non | 1 à MAX_RESOLUTION | Le nombre d'images dans la séquence vidéo (défaut : 93, pas : 4) |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre de séquences vidéo à générer (défaut : 1) |
-| `start_image` | IMAGE | Non | - | Image de début optionnelle pour la séquence vidéo |
-| `end_image` | IMAGE | Non | - | Image de fin optionnelle pour la séquence vidéo |
+| `largeur` | INT | Non | 16 à MAX_RESOLUTION | La largeur de la vidéo de sortie en pixels (défaut : 848, doit être divisible par 16) |
+| `hauteur` | INT | Non | 16 à MAX_RESOLUTION | La hauteur de la vidéo de sortie en pixels (défaut : 480, doit être divisible par 16) |
+| `longueur` | INT | Non | 1 à MAX_RESOLUTION | Le nombre d'images dans la séquence vidéo (défaut : 93, pas : 4) |
+| `taille_du_lot` | INT | Non | 1 à 4096 | Le nombre de séquences vidéo à générer (défaut : 1) |
+| `image_de_départ` | IMAGE | Non | - | Image de début optionnelle pour la séquence vidéo |
+| `image_de_fin` | IMAGE | Non | - | Image de fin optionnelle pour la séquence vidéo |
 
 **Remarque :** Lorsque ni `start_image` ni `end_image` ne sont fournis, le nœud génère une vidéo latente vierge. Lorsque des images sont fournies, elles sont encodées et positionnées au début et/ou à la fin de la séquence vidéo avec un masquage approprié.
 

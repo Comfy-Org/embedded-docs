@@ -34,12 +34,12 @@ LoraSave düğümü, model farklılıklarından LoRA (Düşük Dereceli Uyarlama
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `filename_prefix` | STRING | Evet | - | Çıktı dosya adı için ön ek (varsayılan: "loras/ComfyUI_extracted_lora") |
-| `rank` | INT | Evet | 1-4096 | LoRA için derece değeri; boyutu ve karmaşıklığı kontrol eder (varsayılan: 8) |
-| `lora_type` | COMBO | Evet | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | Oluşturulacak LoRA türü (varsayılan: "standard") |
-| `bias_diff` | BOOLEAN | Evet | - | LoRA hesaplamasına bias farklılıklarının dahil edilip edilmeyeceği (varsayılan: True) |
-| `model_diff` | MODEL | Hayır | - | LoRA'ya dönüştürülecek ModelSubtract çıktısı |
-| `text_encoder_diff` | CLIP | Hayır | - | LoRA'ya dönüştürülecek CLIPSubtract çıktısı |
+| `dosyaadı_öneki` | STRING | Evet | - | Çıktı dosya adı için ön ek (varsayılan: "loras/ComfyUI_extracted_lora") |
+| `rütbe` | INT | Evet | 1-4096 | LoRA için derece değeri; boyutu ve karmaşıklığı kontrol eder (varsayılan: 8) |
+| `lora_türü` | COMBO | Evet | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | Oluşturulacak LoRA türü (varsayılan: "standard") |
+| `yanlılık_farkı` | BOOLEAN | Evet | - | LoRA hesaplamasına bias farklılıklarının dahil edilip edilmeyeceği (varsayılan: True) |
+| `model_farkı` | MODEL | Hayır | - | LoRA'ya dönüştürülecek ModelSubtract çıktısı |
+| `metin_kodlayıcı_farkı` | CLIP | Hayır | - | LoRA'ya dönüştürülecek CLIPSubtract çıktısı |
 
 **Not:** Düğümün çalışması için `model_diff` veya `text_encoder_diff` girdilerinden en az birinin sağlanması gerekir. Her ikisi de atlanırsa, düğüm herhangi bir çıktı üretmez.
 

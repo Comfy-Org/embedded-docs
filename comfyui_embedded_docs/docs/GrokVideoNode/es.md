@@ -6,13 +6,13 @@ El nodo Grok Video genera un video corto a partir de una descripción textual. P
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sí | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | El modelo a utilizar para la generación de video. |
-| `prompt` | STRING | Sí | - | Descripción textual del video deseado. |
-| `resolution` | COMBO | Sí | `"480p"`<br>`"720p"` | La resolución del video de salida. |
-| `aspect_ratio` | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | La relación de aspecto del video de salida (predeterminado: "auto"). |
-| `duration` | INT | Sí | 1 a 15 | La duración del video de salida en segundos (predeterminado: 6). |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). |
-| `image` | IMAGE | No | - | Una imagen de entrada opcional para animar. |
+| `modelo` | COMBO | Sí | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | El modelo a utilizar para la generación de video. |
+| `indicación` | STRING | Sí | - | Descripción textual del video deseado. |
+| `resolución` | COMBO | Sí | `"480p"`<br>`"720p"` | La resolución del video de salida. |
+| `relación de aspecto` | COMBO | Sí | `"auto"`<br>`"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | La relación de aspecto del video de salida (predeterminado: "auto"). |
+| `duración` | INT | Sí | 1 a 15 | La duración del video de salida en segundos (predeterminado: 6). |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). |
+| `imagen` | IMAGE | No | - | Una imagen de entrada opcional para animar. |
 
 **Nota:** Si se proporciona una `image`, solo se admite una imagen. Proporcionar múltiples imágenes causará un error. El `prompt` debe tener al menos 1 carácter después de eliminar los espacios en blanco.
 

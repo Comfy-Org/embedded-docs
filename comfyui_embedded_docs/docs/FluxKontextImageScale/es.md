@@ -6,13 +6,13 @@ Este nodo escala la imagen de entrada a un tamaño óptimo utilizado durante el 
 
 | Nombre del Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango de Valores | Descripción |
 |----------------------|--------------|-----------------|-------------------|------------------|-------------|
-| `image` | IMAGE | Requerido | - | - | Imagen de entrada que se redimensionará |
+| `imagen` | IMAGE | Requerido | - | - | Imagen de entrada que se redimensionará |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | Imagen redimensionada |
+| `imagen` | IMAGE | Imagen redimensionada |
 
 ## Lista de Tamaños Predefinidos
 

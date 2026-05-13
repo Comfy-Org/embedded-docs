@@ -24,7 +24,7 @@ El nodo GeminiNanoBanana2 genera o edita imágenes utilizando el modelo Gemini d
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
 | `image` | IMAGE | La imagen principal generada o editada por el modelo. |
-| `string` | STRING | Cualquier contenido de texto devuelto por el modelo. |
+| `thought_image` | STRING | Cualquier contenido de texto devuelto por el modelo. |
 | `thought_image` | IMAGE | Primera imagen del proceso de pensamiento del modelo. Solo disponible con `thinking_level` HIGH y modalidad IMAGE+TEXT. |
 
 ---

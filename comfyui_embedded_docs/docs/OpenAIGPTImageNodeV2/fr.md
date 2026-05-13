@@ -11,7 +11,7 @@ Ce nœud génère des images à l'aide de l'API GPT Image d'OpenAI. Il prend en 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | N/A | Invite textuelle pour GPT Image (par défaut : ""). |
-| `model` | COMBO | Oui | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | Le modèle GPT Image OpenAI à utiliser. La sélection d'un modèle révèle des paramètres supplémentaires spécifiques à ce modèle. |
+| `modèle` | COMBO | Oui | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | Le modèle GPT Image OpenAI à utiliser. La sélection d'un modèle révèle des paramètres supplémentaires spécifiques à ce modèle. |
 | `model.size` | COMBO | Oui | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Personnalisé"` | Taille de l'image. Sélectionnez 'Personnalisé' pour utiliser la largeur et la hauteur personnalisées (par défaut : "auto"). Disponible uniquement pour `gpt-image-2`. |
 | `model.custom_width` | INT | Non | 1024 à 3840 | Utilisé uniquement lorsque `size` est 'Personnalisé'. Doit être un multiple de 16 (par défaut : 1024). Disponible uniquement pour `gpt-image-2`. |
 | `model.custom_height` | INT | Non | 1024 à 3840 | Utilisé uniquement lorsque `size` est 'Personnalisé'. Doit être un multiple de 16 (par défaut : 1024). Disponible uniquement pour `gpt-image-2`. |
@@ -20,7 +20,7 @@ Ce nœud génère des images à l'aide de l'API GPT Image d'OpenAI. Il prend en 
 | `model.images` | IMAGE | Non | N/A | Images d'entrée pour l'édition. Disponible uniquement pour `gpt-image-2`. |
 | `model.mask` | MASK | Non | N/A | Un masque pour spécifier les parties de l'image d'entrée à modifier. Disponible uniquement pour `gpt-image-2`. |
 | `n` | INT | Oui | 1 à 8 | Nombre d'images à générer (par défaut : 1). |
-| `seed` | INT | Oui | 0 à 2147483647 | Graine pour la reproductibilité (par défaut : 0). Remarque : pas encore implémentée dans le backend. |
+| `graine` | INT | Oui | 0 à 2147483647 | Graine pour la reproductibilité (par défaut : 0). Remarque : pas encore implémentée dans le backend. |
 
 **Contraintes et limitations des paramètres :**
 

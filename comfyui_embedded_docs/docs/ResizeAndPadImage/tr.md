@@ -6,17 +6,17 @@ ResizeAndPadImage düğümü, bir görüntüyü orijinal en-boy oranını koruya
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `image` | IMAGE | Evet | - | Yeniden boyutlandırılacak ve doldurulacak giriş görüntüsü |
-| `target_width` | INT | Evet | 1 ile MAX_RESOLUTION | Çıktı görüntüsünün istenen genişliği (varsayılan: 512) |
-| `target_height` | INT | Evet | 1 ile MAX_RESOLUTION | Çıktı görüntüsünün istenen yüksekliği (varsayılan: 512) |
-| `padding_color` | COMBO | Evet | "white"<br>"black" | Yeniden boyutlandırılmış görüntünün etrafındaki dolgu alanları için kullanılacak renk (varsayılan: "white") |
-| `interpolation` | COMBO | Evet | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" | Görüntüyü yeniden boyutlandırmak için kullanılan enterpolasyon yöntemi (varsayılan: "area") |
+| `görsel` | IMAGE | Evet | - | Yeniden boyutlandırılacak ve doldurulacak giriş görüntüsü |
+| `hedef_genişlik` | INT | Evet | 1 ile MAX_RESOLUTION | Çıktı görüntüsünün istenen genişliği (varsayılan: 512) |
+| `hedef_yükseklik` | INT | Evet | 1 ile MAX_RESOLUTION | Çıktı görüntüsünün istenen yüksekliği (varsayılan: 512) |
+| `dolgu_rengi` | COMBO | Evet | "white"<br>"black" | Yeniden boyutlandırılmış görüntünün etrafındaki dolgu alanları için kullanılacak renk (varsayılan: "white") |
+| `enterpolasyon` | COMBO | Evet | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" | Görüntüyü yeniden boyutlandırmak için kullanılan enterpolasyon yöntemi (varsayılan: "area") |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | Yeniden boyutlandırılmış ve doldurulmuş çıktı görüntüsü |
+| `görsel` | IMAGE | Yeniden boyutlandırılmış ve doldurulmuş çıktı görüntüsü |
 
 ---
 **Source fingerprint (SHA-256):** `01566327d46043d1ff9ce404b4df8f49e853d0b01d07cc189fb843157dac1cac`

@@ -15,7 +15,7 @@ Le nœud **PairConditioningCombine** fusionne deux paires de conditionnement dis
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Sortie de conditionnement positif combiné |
+| `negative` | CONDITIONING | Sortie de conditionnement positif combiné |
 | `negative` | CONDITIONING | Sortie de conditionnement négatif combiné |
 
 ---

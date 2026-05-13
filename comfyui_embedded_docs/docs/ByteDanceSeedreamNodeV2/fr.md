@@ -11,9 +11,9 @@ Ce nœud génère ou modifie des images à l'aide des modèles Seedream de ByteD
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | N/A | Invite textuelle pour créer ou modifier une image. |
-| `model` | COMBO | Oui | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | Version du modèle Seedream à utiliser pour la génération. Chaque modèle offre des capacités et une tarification différentes. |
-| `seed` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
-| `watermark` | BOOLEAN | Non | True / False | Indique s'il faut ajouter un filigrane "Généré par IA" à l'image (par défaut : False). |
+| `modèle` | COMBO | Oui | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | Version du modèle Seedream à utiliser pour la génération. Chaque modèle offre des capacités et une tarification différentes. |
+| `graine` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
+| `filigrane` | BOOLEAN | Non | True / False | Indique s'il faut ajouter un filigrane "Généré par IA" à l'image (par défaut : False). |
 
 ### Paramètres spécifiques au modèle
 

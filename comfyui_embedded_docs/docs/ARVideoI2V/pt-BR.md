@@ -10,13 +10,13 @@ Este nó prepara uma configuração de geração de vídeo a partir de imagem pa
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de vídeo AR a ser usado para geração. |
+| `modelo` | MODEL | Sim | - | O modelo de vídeo AR a ser usado para geração. |
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar a imagem inicial no espaço latente. |
-| `start_image` | IMAGE | Sim | - | A imagem inicial que servirá como primeiro quadro do vídeo gerado. |
-| `width` | INT | Sim | 16 a 8192 (passo: 16) | A largura dos quadros do vídeo gerado (padrão: 832). |
-| `height` | INT | Sim | 16 a 8192 (passo: 16) | A altura dos quadros do vídeo gerado (padrão: 480). |
-| `length` | INT | Sim | 1 a 1024 (passo: 4) | O número total de quadros no vídeo gerado (padrão: 81). |
-| `batch_size` | INT | Sim | 1 a 64 | O número de sequências de vídeo a serem geradas em um único lote (padrão: 1). |
+| `imagem_inicial` | IMAGE | Sim | - | A imagem inicial que servirá como primeiro quadro do vídeo gerado. |
+| `largura` | INT | Sim | 16 a 8192 (passo: 16) | A largura dos quadros do vídeo gerado (padrão: 832). |
+| `altura` | INT | Sim | 16 a 8192 (passo: 16) | A altura dos quadros do vídeo gerado (padrão: 480). |
+| `duração` | INT | Sim | 1 a 1024 (passo: 4) | O número total de quadros no vídeo gerado (padrão: 81). |
+| `tamanho_do_lote` | INT | Sim | 1 a 64 | O número de sequências de vídeo a serem geradas em um único lote (padrão: 1). |
 
 ## Saídas
 

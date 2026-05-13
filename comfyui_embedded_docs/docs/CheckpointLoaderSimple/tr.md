@@ -8,7 +8,7 @@ Bir difüzyon modeli kontrol noktası (checkpoint) dosyasını yükler ve üç t
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `ckpt_name` | STRING | Evet | Kontrol noktaları klasöründeki tüm model dosyaları | Yüklenecek kontrol noktasının (model) adı. Sonraki görüntü oluşturma için kullanılacak AI modelini belirleyen kontrol noktası model dosyası adını seçin. |
+| `ckpt_adı` | STRING | Evet | Kontrol noktaları klasöründeki tüm model dosyaları | Yüklenecek kontrol noktasının (model) adı. Sonraki görüntü oluşturma için kullanılacak AI modelini belirleyen kontrol noktası model dosyası adını seçin. |
 
 **Not:** ComfyUI çalışırken yeni model dosyaları eklenirse, açılır listede yeni dosyaları görmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
 

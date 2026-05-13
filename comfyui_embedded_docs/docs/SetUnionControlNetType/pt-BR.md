@@ -7,7 +7,7 @@ O nó SetUnionControlNetType permite especificar o tipo de rede de controle a se
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `control_net` | CONTROL_NET | Sim | - | A rede de controle a ser modificada com uma nova configuração de tipo |
-| `type` | STRING | Sim | `"auto"`<br>Todas as chaves UNION_CONTROLNET_TYPES disponíveis | O tipo de rede de controle a ser aplicado. Use "auto" para detecção automática de tipo ou selecione um tipo específico de rede de controle entre as opções disponíveis |
+| `tipo` | STRING | Sim | `"auto"`<br>Todas as chaves UNION_CONTROLNET_TYPES disponíveis | O tipo de rede de controle a ser aplicado. Use "auto" para detecção automática de tipo ou selecione um tipo específico de rede de controle entre as opções disponíveis |
 
 ## Saídas
 

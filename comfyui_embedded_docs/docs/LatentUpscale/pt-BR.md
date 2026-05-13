@@ -6,11 +6,11 @@ O nó LatentUpscale foi projetado para aumentar a resolução de representaçõe
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `samples` | `LATENT` | A representação latente de uma imagem a ser ampliada. Este parâmetro é essencial para determinar o ponto de partida do processo de ampliação. |
-| `upscale_method` | COMBO[STRING] | Especifica o método usado para ampliar a imagem latente. Diferentes métodos podem afetar a qualidade e as características da imagem ampliada. |
-| `width` | `INT` | A largura desejada para a imagem ampliada. Se definido como 0, será calculado com base na altura para manter a proporção. |
-| `height` | `INT` | A altura desejada para a imagem ampliada. Se definido como 0, será calculado com base na largura para manter a proporção. |
-| `crop` | COMBO[STRING] | Determina como a imagem ampliada deve ser cortada, afetando a aparência final e as dimensões da saída. |
+| `amostras` | `LATENT` | A representação latente de uma imagem a ser ampliada. Este parâmetro é essencial para determinar o ponto de partida do processo de ampliação. |
+| `método_de_upscale` | COMBO[STRING] | Especifica o método usado para ampliar a imagem latente. Diferentes métodos podem afetar a qualidade e as características da imagem ampliada. |
+| `largura` | `INT` | A largura desejada para a imagem ampliada. Se definido como 0, será calculado com base na altura para manter a proporção. |
+| `altura` | `INT` | A altura desejada para a imagem ampliada. Se definido como 0, será calculado com base na largura para manter a proporção. |
+| `corte` | COMBO[STRING] | Determina como a imagem ampliada deve ser cortada, afetando a aparência final e as dimensões da saída. |
 
 ## Saídas
 

@@ -10,9 +10,9 @@ El nodo Kling Omni Image (Pro) crea o edita imágenes utilizando el modelo más 
 | `prompt` | STRING | Sí | - | Una descripción textual que describe el contenido de la imagen. Puede incluir tanto descripciones positivas como negativas. El texto debe tener entre 1 y 2500 caracteres de longitud. |
 | `resolution` | COMBO | Sí | `"1K"`<br>`"2K"`<br>`"4K"` | La resolución objetivo para la imagen generada. Nota: La resolución 4K no es compatible con el modelo `kling-image-o1`. |
 | `aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"21:9"` | La relación de aspecto deseada (ancho a alto) para la imagen generada. |
-| `series_amount` | COMBO | Sí | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Generar una serie de imágenes. Esta función no es compatible con el modelo `kling-image-o1`. (valor predeterminado: "disabled") |
+| `cantidad_de_series` | COMBO | Sí | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Generar una serie de imágenes. Esta función no es compatible con el modelo `kling-image-o1`. (valor predeterminado: "disabled") |
 | `reference_images` | IMAGE | No | - | Hasta 10 imágenes de referencia adicionales. Cada imagen debe tener al menos 300 píxeles tanto de ancho como de alto, y su relación de aspecto debe estar entre 1:2.5 y 2.5:1. |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla. (valor predeterminado: 0) |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla. (valor predeterminado: 0) |
 
 ## Salidas
 

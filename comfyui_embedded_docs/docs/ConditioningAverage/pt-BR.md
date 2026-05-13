@@ -10,9 +10,9 @@ Conforme mostrado abaixo, ao ajustar a intensidade de `conditioning_to`, você p
 
 | Parâmetro               | Tipo Comfy    | Descrição |
 |------------------------|---------------|-------------|
-| `conditioning_to`      | `CONDITIONING`| O vetor de condicionamento alvo, servindo como base principal para a média ponderada. |
-| `conditioning_from`    | `CONDITIONING`| O vetor de condicionamento fonte, que será mesclado ao alvo de acordo com um determinado peso. |
-| `conditioning_to_strength` | `FLOAT`    | A intensidade do condicionamento alvo, intervalo 0.0-1.0, padrão 1.0, passo 0.01. |
+| `condicionamento_para`      | `CONDITIONING`| O vetor de condicionamento alvo, servindo como base principal para a média ponderada. |
+| `condicionamento_de`    | `CONDITIONING`| O vetor de condicionamento fonte, que será mesclado ao alvo de acordo com um determinado peso. |
+| `força_condicionamento_para` | `FLOAT`    | A intensidade do condicionamento alvo, intervalo 0.0-1.0, padrão 1.0, passo 0.01. |
 
 ## Saídas
 

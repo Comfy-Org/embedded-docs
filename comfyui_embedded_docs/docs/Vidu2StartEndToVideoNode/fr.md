@@ -6,14 +6,14 @@ Ce nœud génère une vidéo par interpolation entre une image de début et une 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | Le modèle Vidu à utiliser pour la génération vidéo. |
-| `first_frame` | IMAGE | Oui | - | L'image de départ pour la séquence vidéo. Une seule image est autorisée. |
-| `end_frame` | IMAGE | Oui | - | L'image de fin pour la séquence vidéo. Une seule image est autorisée. |
-| `prompt` | STRING | Oui | - | Une description textuelle guidant la génération vidéo (2000 caractères maximum). |
-| `duration` | INT | Non | 2 à 8 | La durée de la vidéo générée en secondes (par défaut : 5). |
-| `seed` | INT | Non | 0 à 2147483647 | Un nombre utilisé pour initialiser la génération aléatoire afin d'obtenir des résultats reproductibles (par défaut : 1). |
-| `resolution` | COMBO | Non | `"720p"`<br>`"1080p"` | La résolution de sortie de la vidéo générée. |
-| `movement_amplitude` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | L'amplitude de mouvement des objets dans le cadre. |
+| `modèle` | COMBO | Oui | `"viduq2-pro-fast"`<br>`"viduq2-pro"`<br>`"viduq2-turbo"` | Le modèle Vidu à utiliser pour la génération vidéo. |
+| `image de début` | IMAGE | Oui | - | L'image de départ pour la séquence vidéo. Une seule image est autorisée. |
+| `image de fin` | IMAGE | Oui | - | L'image de fin pour la séquence vidéo. Une seule image est autorisée. |
+| `invite` | STRING | Oui | - | Une description textuelle guidant la génération vidéo (2000 caractères maximum). |
+| `durée` | INT | Non | 2 à 8 | La durée de la vidéo générée en secondes (par défaut : 5). |
+| `graine` | INT | Non | 0 à 2147483647 | Un nombre utilisé pour initialiser la génération aléatoire afin d'obtenir des résultats reproductibles (par défaut : 1). |
+| `résolution` | COMBO | Non | `"720p"`<br>`"1080p"` | La résolution de sortie de la vidéo générée. |
+| `amplitude du mouvement` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | L'amplitude de mouvement des objets dans le cadre. |
 
 **Remarque :** Les images `first_frame` et `end_frame` doivent avoir des rapports hauteur/largeur similaires. Le nœud vérifiera que leurs rapports hauteur/largeur se situent dans une plage relative de 0,8 à 1,25.
 

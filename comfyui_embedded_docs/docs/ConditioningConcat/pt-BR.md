@@ -6,8 +6,8 @@ O nó **ConditioningConcat** foi projetado para concatenar vetores de condiciona
 
 | Parâmetro           | Tipo Comfy        | Descrição |
 |---------------------|-------------------|-----------|
-| `conditioning_to`   | `CONDITIONING`    | Representa o conjunto principal de vetores de condicionamento ao qual os vetores 'conditioning_from' serão concatenados. Serve como base para o processo de concatenação. |
-| `conditioning_from` | `CONDITIONING`    | Consiste em vetores de condicionamento que serão concatenados aos vetores 'conditioning_to'. Este parâmetro permite que informações de condicionamento adicionais sejam integradas ao conjunto existente. |
+| `condicionamento_para`   | `CONDITIONING`    | Representa o conjunto principal de vetores de condicionamento ao qual os vetores 'conditioning_from' serão concatenados. Serve como base para o processo de concatenação. |
+| `condicionamento_de` | `CONDITIONING`    | Consiste em vetores de condicionamento que serão concatenados aos vetores 'conditioning_to'. Este parâmetro permite que informações de condicionamento adicionais sejam integradas ao conjunto existente. |
 
 ## Saídas
 

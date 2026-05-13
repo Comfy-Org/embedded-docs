@@ -8,8 +8,8 @@ Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/text_en
 
 | Paramètre    | Type Comfy     | Description                                                                                                                                                                                     |
 | ------------ | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `clip_name1` | COMBO[STRING] | Spécifie le nom du premier modèle CLIP à charger. Ce paramètre est essentiel pour identifier et récupérer le modèle correct à partir d'une liste prédéfinie de modèles CLIP disponibles.       |
-| `clip_name2` | COMBO[STRING] | Spécifie le nom du second modèle CLIP à charger. Ce paramètre permet de charger un deuxième modèle CLIP distinct pour une analyse comparative ou intégrative en parallèle du premier modèle.   |
+| `nom_clip1` | COMBO[STRING] | Spécifie le nom du premier modèle CLIP à charger. Ce paramètre est essentiel pour identifier et récupérer le modèle correct à partir d'une liste prédéfinie de modèles CLIP disponibles.       |
+| `nom_clip2` | COMBO[STRING] | Spécifie le nom du second modèle CLIP à charger. Ce paramètre permet de charger un deuxième modèle CLIP distinct pour une analyse comparative ou intégrative en parallèle du premier modèle.   |
 | `type`       | `option`      | Choisissez parmi "sdxl", "sd3", "flux" pour vous adapter à différents modèles.                                                                                                                 |
 
 * L'ordre de chargement n'affecte pas le résultat final

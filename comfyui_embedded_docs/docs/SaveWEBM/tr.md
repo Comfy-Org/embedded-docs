@@ -6,8 +6,8 @@ SaveWEBM düğümü, bir dizi görüntüyü WEBM video dosyası olarak kaydeder.
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | - | Video kareleri olarak kodlanacak giriş görüntüleri dizisi |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "ComfyUI") |
+| `görüntüler` | IMAGE | Evet | - | Video kareleri olarak kodlanacak giriş görüntüleri dizisi |
+| `dosyaadı_öneki` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "ComfyUI") |
 | `codec` | COMBO | Evet | "vp9"<br>"av1" | Kodlama için kullanılacak video codec bileşeni |
 | `fps` | FLOAT | Hayır | 0,01-1000,0 | Çıktı videosu için kare hızı (varsayılan: 24,0) |
 | `crf` | FLOAT | Hayır | 0-63,0 | Kalite ayarı; daha yüksek crf, daha küçük dosya boyutuyla daha düşük kalite, daha düşük crf ise daha büyük dosya boyutuyla daha yüksek kalite anlamına gelir (varsayılan: 32,0) |

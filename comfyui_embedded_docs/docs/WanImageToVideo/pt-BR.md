@@ -8,15 +8,15 @@ O nó WanImageToVideo prepara representações de condicionamento e latentes par
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | Entrada de condicionamento positivo para orientar a geração |
-| `negative` | CONDITIONING | Sim | - | Entrada de condicionamento negativo para orientar a geração |
+| `positivo` | CONDITIONING | Sim | - | Entrada de condicionamento positivo para orientar a geração |
+| `negativo` | CONDITIONING | Sim | - | Entrada de condicionamento negativo para orientar a geração |
 | `vae` | VAE | Sim | - | Modelo VAE para codificar imagens para o espaço latente |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída (padrão: 832, passo: 16) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída (padrão: 480, passo: 16) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros no vídeo (padrão: 81, passo: 4) |
-| `batch_size` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados em um lote (padrão: 1) |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | Largura do vídeo de saída (padrão: 832, passo: 16) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | Altura do vídeo de saída (padrão: 480, passo: 16) |
+| `duração` | INT | Sim | 1 a MAX_RESOLUTION | Número de quadros no vídeo (padrão: 81, passo: 4) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | Número de vídeos a serem gerados em um lote (padrão: 1) |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Não | - | Saída opcional de visão do CLIP para condicionamento adicional |
-| `start_image` | IMAGE | Não | - | Imagem inicial opcional para inicializar a geração do vídeo |
+| `imagem_inicial` | IMAGE | Não | - | Imagem inicial opcional para inicializar a geração do vídeo |
 
 **Nota:** Quando `start_image` é fornecido, o nó codifica a sequência de imagens e aplica mascaramento às entradas de condicionamento. O parâmetro `clip_vision_output`, quando fornecido, adiciona condicionamento baseado em visão às entradas positivas e negativas.
 
@@ -24,8 +24,8 @@ O nó WanImageToVideo prepara representações de condicionamento e latentes par
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | Condicionamento positivo modificado com dados de imagem e visão incorporados |
-| `negative` | CONDITIONING | Condicionamento negativo modificado com dados de imagem e visão incorporados |
+| `positivo` | CONDITIONING | Condicionamento positivo modificado com dados de imagem e visão incorporados |
+| `negativo` | CONDITIONING | Condicionamento negativo modificado com dados de imagem e visão incorporados |
 | `latent` | LATENT | Tensor de espaço latente vazio pronto para geração de vídeo |
 
 ---

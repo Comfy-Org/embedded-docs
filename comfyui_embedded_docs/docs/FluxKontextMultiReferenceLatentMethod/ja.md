@@ -8,14 +8,14 @@ FluxKontextMultiReferenceLatentMethod ノードは、特定の参照潜在変数
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | はい | - | 参照潜在変数メソッドで変更される条件付けデータ |
-| `reference_latents_method` | STRING | はい | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 参照潜在変数の処理に使用するメソッド。"uxo" または "uso" が選択された場合は、"uxo" に変換されます。このパラメータは高度な設定としてマークされています。 |
+| `コンディショニング` | CONDITIONING | はい | - | 参照潜在変数メソッドで変更される条件付けデータ |
+| `参照潜在変数メソッド` | STRING | はい | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` | 参照潜在変数の処理に使用するメソッド。"uxo" または "uso" が選択された場合は、"uxo" に変換されます。このパラメータは高度な設定としてマークされています。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | 参照潜在変数メソッドが適用された変更後の条件付けデータ |
+| `コンディショニング` | CONDITIONING | 参照潜在変数メソッドが適用された変更後の条件付けデータ |
 
 ---
 **Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`

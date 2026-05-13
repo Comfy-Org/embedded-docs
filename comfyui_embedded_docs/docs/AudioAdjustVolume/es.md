@@ -7,7 +7,7 @@ El nodo AudioAdjustVolume modifica el volumen del audio aplicando ajustes de gan
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `audio` | AUDIO | Sí | - | La entrada de audio que se va a procesar |
-| `volume` | INT | Sí | -100 a 100 | Ajuste de volumen en decibelios (dB). 0 = sin cambios, +6 = duplicar, -6 = reducir a la mitad, etc. (valor predeterminado: 1) |
+| `volumen` | INT | Sí | -100 a 100 | Ajuste de volumen en decibelios (dB). 0 = sin cambios, +6 = duplicar, -6 = reducir a la mitad, etc. (valor predeterminado: 1) |
 
 ## Salidas
 

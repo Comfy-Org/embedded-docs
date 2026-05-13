@@ -6,7 +6,7 @@ PrimitiveInt düğümü, iş akışınızda tam sayı değerleriyle çalışmak 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `value` | INT | Evet | -9223372036854775807 ile 9223372036854775807 arası | Çıktı olarak verilecek tam sayı değeri (varsayılan: 0) |
+| `değer` | INT | Evet | -9223372036854775807 ile 9223372036854775807 arası | Çıktı olarak verilecek tam sayı değeri (varsayılan: 0) |
 
 ## Çıktılar
 

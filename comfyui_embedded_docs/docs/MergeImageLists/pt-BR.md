@@ -6,7 +6,7 @@ O nó **Merge Image Lists** combina múltiplas listas separadas de imagens em um
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `images` | IMAGE | Sim | - | Uma lista de imagens a serem mescladas. Esta entrada pode aceitar múltiplas conexões, e cada lista conectada será concatenada na saída final. |
+| `imagens` | IMAGE | Sim | - | Uma lista de imagens a serem mescladas. Esta entrada pode aceitar múltiplas conexões, e cada lista conectada será concatenada na saída final. |
 
 **Nota:** Este nó foi projetado para receber múltiplas entradas. Você pode conectar várias listas de imagens ao único soquete de entrada `images`. O nó concatenará automaticamente todas as imagens de todas as listas conectadas em uma única lista de saída.
 
@@ -14,7 +14,7 @@ O nó **Merge Image Lists** combina múltiplas listas separadas de imagens em um
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `images` | IMAGE | A única lista mesclada contendo todas as imagens de cada lista de entrada conectada. |
+| `imagens` | IMAGE | A única lista mesclada contendo todas as imagens de cada lista de entrada conectada. |
 
 ---
 **Source fingerprint (SHA-256):** `8fc53091b817a5036aae022aa841ba11fae0ed3242a969f5ae9072f48e061366`

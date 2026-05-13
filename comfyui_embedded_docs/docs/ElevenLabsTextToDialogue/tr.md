@@ -34,13 +34,13 @@ ElevenLabs Metinden Diyaloğa düğümü, metinden çok konuşmacılı bir ses d
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `stability` | FLOAT | Hayır | 0.0 - 1.0 | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlarken, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir. (varsayılan: 0.5) |
-| `apply_text_normalization` | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` | Metin normalizasyon modu. 'auto' sistemin karar vermesini sağlar, 'on' her zaman normalizasyonu uygular, 'off' atlar. |
+| `kararlılık` | FLOAT | Hayır | 0.0 - 1.0 | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlarken, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir. (varsayılan: 0.5) |
+| `metin normalizasyonunu uygula` | COMBO | Hayır | `"auto"`<br>`"on"`<br>`"off"` | Metin normalizasyon modu. 'auto' sistemin karar vermesini sağlar, 'on' her zaman normalizasyonu uygular, 'off' atlar. |
 | `model` | COMBO | Hayır | `"eleven_v3"` | Diyalog oluşturma için kullanılacak model. |
-| `inputs` | DYNAMICCOMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` | Diyalog girişi sayısı. Bir sayı seçmek, o kadar sayıda metin ve ses giriş alanı oluşturacaktır. |
-| `language_code` | STRING | Hayır | - | ISO-639-1 veya ISO-639-3 dil kodu (ör. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) |
-| `seed` | INT | Hayır | 0 - 4294967295 | Tekrarlanabilirlik için tohum değeri. (varsayılan: 1) |
-| `output_format` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
+| `girdiler` | DYNAMICCOMBO | Evet | `"1"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` | Diyalog girişi sayısı. Bir sayı seçmek, o kadar sayıda metin ve ses giriş alanı oluşturacaktır. |
+| `dil_kodu` | STRING | Hayır | - | ISO-639-1 veya ISO-639-3 dil kodu (ör. 'en', 'es', 'fra'). Otomatik algılama için boş bırakın. (varsayılan: boş) |
+| `tohum` | INT | Hayır | 0 - 4294967295 | Tekrarlanabilirlik için tohum değeri. (varsayılan: 1) |
+| `çıktı_formatı` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
 
 **Not:** `inputs` parametresi dinamiktir. Bir sayı seçtiğinizde (ör. "3"), düğüm üç adet karşılık gelen `text` ve `voice` giriş alanı görüntüleyecektir (ör. `text1`, `voice1`, `text2`, `voice2`, `text3`, `voice3`). Her `text` alanı en az bir karakter içermelidir.
 

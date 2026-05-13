@@ -6,8 +6,8 @@ VoxelToMeshBasic düğümü, 3B voxel verilerini ağ geometrisine dönüştürü
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `voxel` | VOXEL | Evet | - | Ağa dönüştürülecek 3B voxel verisi |
-| `threshold` | FLOAT | Evet | -1.0 ile 1.0 | Hangi voxellerin ağ yüzeyinin parçası olacağını belirlemek için kullanılan eşik değeri (varsayılan: 0.6) |
+| `voksel` | VOXEL | Evet | - | Ağa dönüştürülecek 3B voxel verisi |
+| `eşik` | FLOAT | Evet | -1.0 ile 1.0 | Hangi voxellerin ağ yüzeyinin parçası olacağını belirlemek için kullanılan eşik değeri (varsayılan: 0.6) |
 
 ## Çıktılar
 

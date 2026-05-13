@@ -6,8 +6,8 @@ LossGraphNode, eğitim kayıp değerlerinin zaman içindeki görsel grafiğini o
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-----------|
-| `loss` | LOSS_MAP | Evet | - | Eğitim düğümünden gelen kayıp haritası. |
-| `filename_prefix` | STRING | Evet | - | Kaydedilen kayıp grafiği görüntüsü için ön ek. (varsayılan: "loss_graph") |
+| `kayıp` | LOSS_MAP | Evet | - | Eğitim düğümünden gelen kayıp haritası. |
+| `dosya_adı_ön_eki` | STRING | Evet | - | Kaydedilen kayıp grafiği görüntüsü için ön ek. (varsayılan: "loss_graph") |
 
 ## Çıkışlar
 

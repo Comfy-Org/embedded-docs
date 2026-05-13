@@ -9,7 +9,7 @@ Enregistre les fichiers SVG sur le disque. Ce nœud prend des données SVG en en
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `svg` | SVG | Oui | - | Les données SVG à enregistrer sur le disque |
-| `filename_prefix` | STRING | Oui | - | Le préfixe du fichier à sauvegarder. Peut inclure des informations de formatage telles que %date:yyyy-MM-dd% ou %Empty Latent Image.width% pour inclure des valeurs provenant de nœuds. (par défaut : "svg/ComfyUI") |
+| `préfixe_nom_fichier` | STRING | Oui | - | Le préfixe du fichier à sauvegarder. Peut inclure des informations de formatage telles que %date:yyyy-MM-dd% ou %Empty Latent Image.width% pour inclure des valeurs provenant de nœuds. (par défaut : "svg/ComfyUI") |
 
 ## Sorties
 

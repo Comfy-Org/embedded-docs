@@ -6,7 +6,7 @@ O nó LatentOperationTonemapReinhard aplica o mapeamento tonal Reinhard a vetore
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `multiplier` | FLOAT | Não | 0.0 a 100.0 | Controla a intensidade do efeito de mapeamento tonal (padrão: 1.0) |
+| `multiplicador` | FLOAT | Não | 0.0 a 100.0 | Controla a intensidade do efeito de mapeamento tonal (padrão: 1.0) |
 
 ## Saídas
 

@@ -8,8 +8,8 @@ Le nœud `ImageBlend` est conçu pour fusionner deux images selon un mode de fus
 |----------------|-----------------|-----------------------------------------------------------------------------------|
 | `image1`       | `IMAGE`         | La première image à fusionner. Elle sert de couche de base pour l'opération de fusion. |
 | `image2`       | `IMAGE`         | La deuxième image à fusionner. Selon le mode de fusion, elle modifie l'apparence de la première image. |
-| `blend_factor` | `FLOAT`         | Détermine le poids de la deuxième image dans la fusion. Un facteur de mélange plus élevé donne plus d'importance à la deuxième image dans le résultat final. |
-| `blend_mode`   | COMBO[STRING]   | Spécifie la méthode de fusion des deux images. Prend en charge des modes comme normal, multiplier, écran, superposition, lumière tamisée et différence, chacun produisant un effet visuel unique. |
+| `facteur_mélange` | `FLOAT`         | Détermine le poids de la deuxième image dans la fusion. Un facteur de mélange plus élevé donne plus d'importance à la deuxième image dans le résultat final. |
+| `mode_mélange`   | COMBO[STRING]   | Spécifie la méthode de fusion des deux images. Prend en charge des modes comme normal, multiplier, écran, superposition, lumière tamisée et différence, chacun produisant un effet visuel unique. |
 
 ## Sorties
 

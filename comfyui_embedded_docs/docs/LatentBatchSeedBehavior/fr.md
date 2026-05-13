@@ -6,8 +6,8 @@ Le nœud LatentBatchSeedBehavior est conçu pour modifier le comportement de la 
 
 | Paramètre       | Type de données | Description |
 |-----------------|-----------------|-------------|
-| `samples`       | `LATENT`        | Le paramètre 'samples' représente le lot d'échantillons latents à traiter. Sa modification dépend du comportement de la graine choisi, affectant la cohérence ou la variabilité des résultats générés. |
-| `seed_behavior` | COMBO[STRING]   | Le paramètre 'seed_behavior' détermine si la graine du lot d'échantillons latents doit être randomisée ou fixée. Ce choix impacte significativement le processus de génération en introduisant de la variabilité ou en assurant une cohérence sur l'ensemble du lot. |
+| `échantillons`       | `LATENT`        | Le paramètre 'samples' représente le lot d'échantillons latents à traiter. Sa modification dépend du comportement de la graine choisi, affectant la cohérence ou la variabilité des résultats générés. |
+| `comportement_de_graine` | COMBO[STRING]   | Le paramètre 'seed_behavior' détermine si la graine du lot d'échantillons latents doit être randomisée ou fixée. Ce choix impacte significativement le processus de génération en introduisant de la variabilité ou en assurant une cohérence sur l'ensemble du lot. |
 
 ## Sorties
 

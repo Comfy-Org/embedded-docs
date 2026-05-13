@@ -9,13 +9,13 @@ Génère des vidéos de manière synchrone à partir d'une invite textuelle et d
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | - | Invite pour la génération vidéo (par défaut : "") |
-| `model` | COMBO | Oui | Plusieurs options disponibles | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles |
-| `resolution` | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Résolution de sortie pour la vidéo générée (par défaut : "540p"). Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. |
-| `duration` | COMBO | Oui | `"5s"`<br>`"9s"` | Durée de la vidéo générée. Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. |
-| `loop` | BOOLEAN | Oui | - | Indique si la vidéo générée doit boucler (par défaut : False) |
+| `modèle` | COMBO | Oui | Plusieurs options disponibles | Sélectionne le modèle de génération vidéo parmi les modèles Luma disponibles |
+| `résolution` | COMBO | Oui | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Résolution de sortie pour la vidéo générée (par défaut : "540p"). Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. |
+| `durée` | COMBO | Oui | `"5s"`<br>`"9s"` | Durée de la vidéo générée. Ce paramètre est ignoré lors de l'utilisation du modèle `ray-1-6`. |
+| `boucle` | BOOLEAN | Oui | - | Indique si la vidéo générée doit boucler (par défaut : False) |
 | `seed` | INT | Oui | 0 à 18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine. (par défaut : 0) |
-| `first_image` | IMAGE | Non | - | Première image de la vidéo générée. (optionnel) |
-| `last_image` | IMAGE | Non | - | Dernière image de la vidéo générée. (optionnel) |
+| `première_image` | IMAGE | Non | - | Première image de la vidéo générée. (optionnel) |
+| `dernière_image` | IMAGE | Non | - | Dernière image de la vidéo générée. (optionnel) |
 | `luma_concepts` | CUSTOM | Non | - | Concepts de caméra optionnels pour dicter le mouvement de la caméra via le nœud Luma Concepts. (optionnel) |
 
 **Remarque :** Au moins l'une des images `first_image` ou `last_image` doit être fournie. Le nœud lèvera une exception si les deux sont absentes. Les paramètres `resolution` et `duration` sont ignorés lorsque le `model` est défini sur `ray-1-6`.

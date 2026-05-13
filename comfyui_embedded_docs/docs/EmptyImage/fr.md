@@ -14,10 +14,10 @@ Tout comme un peintre prépare une toile vierge avant de commencer à créer, le
 
 | Nom du paramètre | Type de données | Description |
 |------------------|-----------------|-------------|
-| `width` | INT | Définit la largeur de l'image générée (en pixels), déterminant les dimensions horizontales de la toile |
-| `height` | INT | Définit la hauteur de l'image générée (en pixels), déterminant les dimensions verticales de la toile |
-| `batch_size` | INT | Le nombre d'images à générer en une seule fois, utilisé pour la création par lots d'images avec les mêmes spécifications |
-| `color` | INT | La couleur d'arrière-plan de l'image. Vous pouvez saisir des paramètres de couleur hexadécimaux, qui seront automatiquement convertis en décimal |
+| `largeur` | INT | Définit la largeur de l'image générée (en pixels), déterminant les dimensions horizontales de la toile |
+| `hauteur` | INT | Définit la hauteur de l'image générée (en pixels), déterminant les dimensions verticales de la toile |
+| `taille_du_lot` | INT | Le nombre d'images à générer en une seule fois, utilisé pour la création par lots d'images avec les mêmes spécifications |
+| `couleur` | INT | La couleur d'arrière-plan de l'image. Vous pouvez saisir des paramètres de couleur hexadécimaux, qui seront automatiquement convertis en décimal |
 
 ## Sorties
 

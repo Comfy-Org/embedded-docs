@@ -7,8 +7,8 @@ CFGGuider düğümü, görüntü oluşturma sürecinde örnekleme işlemini kont
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-----------|
 | `model` | MODEL | Evet | - | Yönlendirme için kullanılacak model |
-| `positive` | CONDITIONING | Evet | - | Oluşturmayı istenen içeriğe yönlendiren pozitif koşullandırma |
-| `negative` | CONDITIONING | Evet | - | Oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma |
+| `pozitif` | CONDITIONING | Evet | - | Oluşturmayı istenen içeriğe yönlendiren pozitif koşullandırma |
+| `negatif` | CONDITIONING | Evet | - | Oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma |
 | `cfg` | FLOAT | Evet | 0,0 ila 100,0 | Koşullandırmanın oluşturma üzerindeki etkisini kontrol eden sınıflandırıcısız yönlendirme ölçeği (varsayılan: 8,0) |
 
 ## Çıktılar

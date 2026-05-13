@@ -36,15 +36,15 @@ Bu düğüm, bir video oluşturma modelini yönlendirmek için kullanılabilecek
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | - | Analiz edilecek ve kodlanacak ses girişi. |
-| `video_frames` | INT | Evet | Min: 1, Maks: 268435456 (MAX_RESOLUTION), Adım: 4 | Hedef videodaki kare sayısı. Senkronizasyon için kare hızını hesaplamak amacıyla kullanılır (varsayılan: 149). |
-| `audio_inject_scale` | FLOAT | Evet | Min: 0.0, Maks: 10.0, Adım: 0.01 | Ses özelliklerinin video modeline enjekte edilirkenki ölçeği (varsayılan: 1.0). |
+| `ses` | AUDIO | Evet | - | Analiz edilecek ve kodlanacak ses girişi. |
+| `video_kareleri` | INT | Evet | Min: 1, Maks: 268435456 (MAX_RESOLUTION), Adım: 4 | Hedef videodaki kare sayısı. Senkronizasyon için kare hızını hesaplamak amacıyla kullanılır (varsayılan: 149). |
+| `ses_enjeksiyon_ölçeği` | FLOAT | Evet | Min: 0.0, Maks: 10.0, Adım: 0.01 | Ses özelliklerinin video modeline enjekte edilirkenki ölçeği (varsayılan: 1.0). |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | İşlenmiş ses özelliklerini, hesaplanan kare hızını (fps) ve ses enjeksiyon ölçeğini içeren bir sözlük. Bu çıktı, video oluşturma modelini koşullandırmak için kullanılır. |
+| `fps_dizgesi` | AUDIO_ENCODER_OUTPUT | İşlenmiş ses özelliklerini, hesaplanan kare hızını (fps) ve ses enjeksiyon ölçeğini içeren bir sözlük. Bu çıktı, video oluşturma modelini koşullandırmak için kullanılır. |
 | `fps_string` | STRING | Ses uzunluğu ve video kare sayısına göre hesaplanan kare hızını (fps) tanımlayan bir metin dizesi. Bu dize, video modeli için istemde (prompt) kullanılmak üzere tasarlanmıştır. |
 
 ---

@@ -9,7 +9,7 @@ DiffControlNetLoader düğümü, diferansiyel kontrol ağlarını yüklemek içi
 | Alan               | Comfy dtype       | Açıklama                                                                                 |
 |---------------------|-------------------|------------------------------------------------------------------------------------------|
 | `model`             | `MODEL`           | Diferansiyel kontrol ağının uygulanacağı temel model. Modelin davranışının özelleştirilmesine olanak tanır. |
-| `control_net_name`  | `COMBO[STRING]`    | Yüklenecek ve temel modele uygulanarak davranışını değiştirecek belirli diferansiyel kontrol ağını tanımlar. |
+| `kontrol_ağı_adı`  | `COMBO[STRING]`    | Yüklenecek ve temel modele uygulanarak davranışını değiştirecek belirli diferansiyel kontrol ağını tanımlar. |
 
 ## Çıkışlar
 

@@ -6,9 +6,9 @@ CLIPLoader 노드는 텍스트 인코더 모델(CLIP, T5 또는 이와 유사한
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name` | STRING | 예 | `text_encoders` 폴더에서 찾은 파일 목록 | 로드할 텍스트 인코더 모델의 파일 이름입니다. 이 파일은 `ComfyUI/models/text_encoders/` 또는 `ComfyUI/models/clip/` 디렉터리에 위치해야 합니다. |
-| `type` | STRING | 예 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | 로드 중인 모델의 아키텍처 유형입니다. 이는 사용할 특정 인코더 변형을 결정합니다. 기본값은 `"stable_diffusion"`입니다. |
-| `device` | STRING | 아니요 | `"default"`<br>`"cpu"` | 모델을 로드할 장치입니다. `"default"`는 가능한 경우 GPU를 사용하고, `"cpu"`는 CPU 로드를 강제합니다. 이는 고급 옵션입니다(기본값: `"default"`). |
+| `CLIP 파일명` | STRING | 예 | `text_encoders` 폴더에서 찾은 파일 목록 | 로드할 텍스트 인코더 모델의 파일 이름입니다. 이 파일은 `ComfyUI/models/text_encoders/` 또는 `ComfyUI/models/clip/` 디렉터리에 위치해야 합니다. |
+| `유형` | STRING | 예 | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | 로드 중인 모델의 아키텍처 유형입니다. 이는 사용할 특정 인코더 변형을 결정합니다. 기본값은 `"stable_diffusion"`입니다. |
+| `장치` | STRING | 아니요 | `"default"`<br>`"cpu"` | 모델을 로드할 장치입니다. `"default"`는 가능한 경우 GPU를 사용하고, `"cpu"`는 CPU 로드를 강제합니다. 이는 고급 옵션입니다(기본값: `"default"`). |
 
 ### 지원되는 유형-인코더 매핑
 

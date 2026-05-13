@@ -7,12 +7,12 @@ Grok Görüntü Düzenleme düğümü, bir metin istemine dayanarak mevcut bir g
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"`<br>`"grok-imagine-image-beta"` | Görüntü düzenleme için kullanılacak belirli AI modeli. |
-| `image` | IMAGE | Evet | | Düzenlenecek girdi görüntüsü/görüntüleri. "Pro" modeli yalnızca 1 görüntüyü desteklerken, diğer modeller en fazla 3 girdi görüntüsünü destekler. |
-| `prompt` | STRING | Evet | | Düzenlenmiş görüntüyü oluşturmak için kullanılan metin istemi. Boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır. |
-| `resolution` | COMBO | Evet | `"1K"`<br>`"2K"` | Çıktı görüntüsünün çözünürlüğü. |
-| `number_of_images` | INT | Hayır | 1 ila 10 | Oluşturulacak düzenlenmiş görüntü sayısı (varsayılan: 1). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
-| `aspect_ratio` | COMBO | Hayır | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | Çıktı görüntüsünün en-boy oranı. Yalnızca görüntü girişine birden fazla görüntü bağlandığında izin verilir. "auto" olarak ayarlanırsa, en-boy oranı otomatik olarak belirlenir (varsayılan: "auto"). |
+| `görüntü` | IMAGE | Evet | | Düzenlenecek girdi görüntüsü/görüntüleri. "Pro" modeli yalnızca 1 görüntüyü desteklerken, diğer modeller en fazla 3 girdi görüntüsünü destekler. |
+| `istem` | STRING | Evet | | Düzenlenmiş görüntüyü oluşturmak için kullanılan metin istemi. Boşluklar temizlendikten sonra en az 1 karakter uzunluğunda olmalıdır. |
+| `çözünürlük` | COMBO | Evet | `"1K"`<br>`"2K"` | Çıktı görüntüsünün çözünürlüğü. |
+| `görüntü sayısı` | INT | Hayır | 1 ila 10 | Oluşturulacak düzenlenmiş görüntü sayısı (varsayılan: 1). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `en-boy oranı` | COMBO | Hayır | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | Çıktı görüntüsünün en-boy oranı. Yalnızca görüntü girişine birden fazla görüntü bağlandığında izin verilir. "auto" olarak ayarlanırsa, en-boy oranı otomatik olarak belirlenir (varsayılan: "auto"). |
 
 **Önemli kısıtlamalar:**
 - `image` girişi, `grok-imagine-image-pro` modeli kullanılırken yalnızca 1 girdi görüntüsünü destekler; diğer modellerde en fazla 3 görüntü desteklenir.
@@ -22,7 +22,7 @@ Grok Görüntü Düzenleme düğümü, bir metin istemine dayanarak mevcut bir g
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | IMAGE | Düğüm tarafından oluşturulan düzenlenmiş görüntü(ler). `number_of_images` 1'den büyükse, çıktılar bir toplu iş halinde birleştirilir. |
+| `output` | IMAGE | Düğüm tarafından oluşturulan düzenlenmiş görüntü(ler). `görüntü sayısı` 1'den büyükse, çıktılar bir toplu iş halinde birleştirilir. |
 
 ---
 **Source fingerprint (SHA-256):** `021d867e9e04451c0c4ef035c19fa86ebc8d4a3f64572aff33f493324d7fe308`

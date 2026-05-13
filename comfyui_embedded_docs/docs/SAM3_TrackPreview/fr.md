@@ -10,10 +10,10 @@ Ce nœud crée un aperçu vidéo des objets suivis, en dessinant chaque objet su
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `track_data` | TRACK_DATA | Oui | - | Les données de suivi contenant les masques compressés et les informations d'objets provenant d'un nœud de suivi SAM3. |
+| `données_suivi` | TRACK_DATA | Oui | - | Les données de suivi contenant les masques compressés et les informations d'objets provenant d'un nœud de suivi SAM3. |
 | `images` | IMAGE | Non | - | Images d'entrée facultatives à utiliser comme arrière-plan pour l'aperçu. Si non fournies, un arrière-plan noir est utilisé. |
-| `opacity` | FLOAT | Non | 0,0 à 1,0 (pas : 0,05) | L'opacité de la superposition de couleur appliquée aux objets suivis (par défaut : 0,5). |
-| `fps` | FLOAT | Non | 1,0 à 120,0 (pas : 1,0) | La fréquence d'images de la vidéo de sortie (par défaut : 24,0). |
+| `opacité` | FLOAT | Non | 0,0 à 1,0 (pas : 0,05) | L'opacité de la superposition de couleur appliquée aux objets suivis (par défaut : 0,5). |
+| `ips` | FLOAT | Non | 1,0 à 120,0 (pas : 1,0) | La fréquence d'images de la vidéo de sortie (par défaut : 24,0). |
 
 ## Sorties
 

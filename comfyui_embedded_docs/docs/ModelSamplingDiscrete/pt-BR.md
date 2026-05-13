@@ -6,12 +6,12 @@ Este nó foi projetado para modificar o comportamento de amostragem de um modelo
 
 | Parâmetro | Tipo de Dados | Tipo Python     | Descrição |
 |-----------|---------------|-----------------|-----------|
-| `model`   | MODEL         | `torch.nn.Module` | O modelo ao qual a estratégia de amostragem discreta será aplicada. Este parâmetro é crucial, pois define o modelo base que passará pela modificação. |
-| `sampling`| COMBO[STRING] | `str`           | Especifica o método de amostragem discreta a ser aplicado ao modelo. A escolha do método afeta como o modelo gera amostras, oferecendo diferentes estratégias para a amostragem. |
+| `modelo`   | MODEL         | `torch.nn.Module` | O modelo ao qual a estratégia de amostragem discreta será aplicada. Este parâmetro é crucial, pois define o modelo base que passará pela modificação. |
+| `amostragem`| COMBO[STRING] | `str`           | Especifica o método de amostragem discreta a ser aplicado ao modelo. A escolha do método afeta como o modelo gera amostras, oferecendo diferentes estratégias para a amostragem. |
 | `zsnr`    | `BOOLEAN`     | `bool`          | Uma flag booleana que, quando ativada, ajusta a estratégia de redução de ruído do modelo com base na taxa de ruído zero-shot. Isso pode influenciar a qualidade e as características das amostras geradas. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Tipo Python     | Descrição |
 |-----------|---------------|-----------------|-----------|
-| `model`   | MODEL         | `torch.nn.Module` | O modelo modificado com a estratégia de amostragem discreta aplicada. Este modelo agora está apto a gerar amostras utilizando o método e os ajustes especificados. |
+| `modelo`   | MODEL         | `torch.nn.Module` | O modelo modificado com a estratégia de amostragem discreta aplicada. Este modelo agora está apto a gerar amostras utilizando o método e os ajustes especificados. |

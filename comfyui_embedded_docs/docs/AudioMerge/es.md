@@ -8,7 +8,7 @@ El nodo AudioMerge combina dos pistas de audio superponiendo sus formas de onda.
 |-----------|--------------|-------------|-------|-------------|
 | `audio1` | AUDIO | Sí | - | Primera entrada de audio a fusionar |
 | `audio2` | AUDIO | Sí | - | Segunda entrada de audio a fusionar |
-| `merge_method` | COMBO | Sí | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | Método utilizado para combinar las formas de onda de audio. |
+| `método_combinación` | COMBO | Sí | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | Método utilizado para combinar las formas de onda de audio. |
 
 ## Salidas
 

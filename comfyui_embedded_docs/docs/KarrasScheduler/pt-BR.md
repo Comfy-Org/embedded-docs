@@ -6,7 +6,7 @@ O nó KarrasScheduler é projetado para gerar uma sequência de níveis de ruíd
 
 | Parâmetro   | Tipo de Dado | Descrição                                                                                      |
 |-------------|--------------|------------------------------------------------------------------------------------------------|
-| `steps`     | INT          | Especifica o número de etapas no agendamento de ruído, afetando a granularidade da sequência de sigmas gerada. |
+| `etapas`     | INT          | Especifica o número de etapas no agendamento de ruído, afetando a granularidade da sequência de sigmas gerada. |
 | `sigma_max` | FLOAT        | O valor máximo de sigma no agendamento de ruído, definindo o limite superior dos níveis de ruído.                    |
 | `sigma_min` | FLOAT        | O valor mínimo de sigma no agendamento de ruído, definindo o limite inferior dos níveis de ruído.                    |
 | `rho`       | FLOAT        | Um parâmetro que controla a forma da curva do agendamento de ruído, influenciando como os níveis de ruído progridem de sigma_min para sigma_max. |

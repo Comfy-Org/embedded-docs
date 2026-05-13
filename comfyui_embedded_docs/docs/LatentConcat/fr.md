@@ -6,8 +6,8 @@ Le nœud LatentConcat combine deux échantillons latents en les joignant le long
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `samples1` | LATENT | Oui | - | Le premier échantillon latent à concaténer |
-| `samples2` | LATENT | Oui | - | Le deuxième échantillon latent à concaténer |
+| `échantillons1` | LATENT | Oui | - | Le premier échantillon latent à concaténer |
+| `échantillons2` | LATENT | Oui | - | Le deuxième échantillon latent à concaténer |
 | `dim` | COMBO | Oui | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | La dimension le long de laquelle concaténer les échantillons latents. Les valeurs positives (x, y, t) placent samples1 avant samples2 dans le résultat. Les valeurs négatives (-x, -y, -t) placent samples2 avant samples1. La correspondance des dimensions est : x = largeur, y = hauteur, t = temps/images |
 
 **Remarque :** Le deuxième échantillon latent (`samples2`) est automatiquement ajusté pour correspondre à la taille du lot du premier échantillon latent (`samples1`) avant la concaténation.

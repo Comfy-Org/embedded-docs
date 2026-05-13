@@ -6,17 +6,17 @@ El nodo SkipLayerGuidanceSD3 mejora la guía hacia una estructura detallada apli
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que se aplicará la guía de capas omitidas |
-| `layers` | STRING | Sí | - | Lista separada por comas de índices de capas a omitir (predeterminado: "7, 8, 9") |
-| `scale` | FLOAT | Sí | 0.0 - 10.0 | La intensidad del efecto de guía de capas omitidas (predeterminado: 3.0) |
-| `start_percent` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.01) |
-| `end_percent` | FLOAT | Sí | 0.0 - 1.0 | El punto final de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.15) |
+| `modelo` | MODEL | Sí | - | El modelo al que se aplicará la guía de capas omitidas |
+| `capas` | STRING | Sí | - | Lista separada por comas de índices de capas a omitir (predeterminado: "7, 8, 9") |
+| `escala` | FLOAT | Sí | 0.0 - 10.0 | La intensidad del efecto de guía de capas omitidas (predeterminado: 3.0) |
+| `porcentaje_inicio` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.01) |
+| `porcentaje_final` | FLOAT | Sí | 0.0 - 1.0 | El punto final de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.15) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con la guía de capas omitidas aplicada |
+| `modelo` | MODEL | El modelo modificado con la guía de capas omitidas aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `97c8220abd223bd35b4d0274c2b4536ffb6be7954ccd917943905bd22f60c1a5`

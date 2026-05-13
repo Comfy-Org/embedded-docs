@@ -6,15 +6,15 @@ Le nœud StringSubstring extrait une portion de texte d'une chaîne de caractèr
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte d'entrée à partir de laquelle extraire. Prend en charge le texte multi-lignes. |
-| `start` | INT | Oui | - | L'indice de position de début pour la sous-chaîne. Le premier caractère se trouve à l'indice 0. |
-| `end` | INT | Oui | - | L'indice de position de fin pour la sous-chaîne. Le caractère à cet indice n'est pas inclus dans le résultat. |
+| `chaîne` | STRING | Oui | - | La chaîne de texte d'entrée à partir de laquelle extraire. Prend en charge le texte multi-lignes. |
+| `début` | INT | Oui | - | L'indice de position de début pour la sous-chaîne. Le premier caractère se trouve à l'indice 0. |
+| `fin` | INT | Oui | - | L'indice de position de fin pour la sous-chaîne. Le caractère à cet indice n'est pas inclus dans le résultat. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `output` | STRING | La sous-chaîne extraite du texte d'entrée, contenant tous les caractères de la position `start` jusqu'à (mais sans inclure) la position `end`. |
+| `output` | STRING | La sous-chaîne extraite du texte d'entrée, contenant tous les caractères de la position `début` jusqu'à (mais sans inclure) la position `fin`. |
 
 ---
 **Source fingerprint (SHA-256):** `962d0b19af88b6c95b5c9d374081ecd55ee8cffbfb638de7ed38e6e378b220c5`

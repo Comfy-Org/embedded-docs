@@ -6,14 +6,14 @@ Bu düğüm, "ace step 1.5" sürecinde kullanılmak üzere bir referans ses tın
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Evet | | Referans ses bilgisinin ekleneceği koşullandırma verisi. |
+| `koşullandırma` | CONDITIONING | Evet | | Referans ses bilgisinin ekleneceği koşullandırma verisi. |
 | `latent` | LATENT | Hayır | | Referans sesin isteğe bağlı örtük temsili. Sağlandığında, örnekleri koşullandırmaya eklenir. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | İsteğe bağlı `latent` girdisi sağlanmışsa, artık referans ses tınısı örtüklerini içeren değiştirilmiş koşullandırma verisi. |
+| `koşullandırma` | CONDITIONING | İsteğe bağlı `latent` girdisi sağlanmışsa, artık referans ses tınısı örtüklerini içeren değiştirilmiş koşullandırma verisi. |
 
 ---
 **Source fingerprint (SHA-256):** `2d39399eb79cfe76b72d01326b89863e2553bc23414b1166d310e5222b215b29`

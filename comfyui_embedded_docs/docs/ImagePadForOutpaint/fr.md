@@ -7,11 +7,11 @@ Ce nœud est conçu pour préparer les images au processus d'extension par ajout
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
 | `image`   | `IMAGE`         | L'entrée 'image' est l'image principale à préparer pour l'extension, servant de base aux opérations de remplissage. |
-| `left`    | `INT`           | Spécifie la quantité de remplissage à ajouter sur le côté gauche de l'image, influençant la zone étendue pour l'extension. |
-| `top`     | `INT`           | Détermine la quantité de remplissage à ajouter en haut de l'image, affectant l'expansion verticale pour l'extension. |
-| `right`   | `INT`           | Définit la quantité de remplissage à ajouter sur le côté droit de l'image, impactant l'expansion horizontale pour l'extension. |
-| `bottom`  | `INT`           | Indique la quantité de remplissage à ajouter en bas de l'image, contribuant à l'expansion verticale pour l'extension. |
-| `feathering` | `INT`        | Contrôle la fluidité de la transition entre l'image d'origine et le remplissage ajouté, améliorant l'intégration visuelle pour l'extension. |
+| `gauche`    | `INT`           | Spécifie la quantité de remplissage à ajouter sur le côté gauche de l'image, influençant la zone étendue pour l'extension. |
+| `haut`     | `INT`           | Détermine la quantité de remplissage à ajouter en haut de l'image, affectant l'expansion verticale pour l'extension. |
+| `droite`   | `INT`           | Définit la quantité de remplissage à ajouter sur le côté droit de l'image, impactant l'expansion horizontale pour l'extension. |
+| `bas`  | `INT`           | Indique la quantité de remplissage à ajouter en bas de l'image, contribuant à l'expansion verticale pour l'extension. |
+| `adoucissement` | `INT`        | Contrôle la fluidité de la transition entre l'image d'origine et le remplissage ajouté, améliorant l'intégration visuelle pour l'extension. |
 
 ## Sorties
 

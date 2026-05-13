@@ -6,14 +6,14 @@ O nó ModelComputeDtype altera o tipo de dado computacional (precisão) usado po
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de entrada a ser modificado com um novo tipo de dado computacional |
+| `modelo` | MODEL | Sim | - | O modelo de entrada a ser modificado com um novo tipo de dado computacional |
 | `dtype` | STRING | Sim | "default"<br>"fp32"<br>"fp16"<br>"bf16" | O tipo de dado computacional a ser aplicado ao modelo (padrão: "default") |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com o novo tipo de dado computacional aplicado |
+| `modelo` | MODEL | O modelo modificado com o novo tipo de dado computacional aplicado |
 
 ---
 **Source fingerprint (SHA-256):** `bc65f1e452d0122ad175a8b95f38a36503253c9908157037c516496e65c828e6`

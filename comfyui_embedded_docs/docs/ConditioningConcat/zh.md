@@ -6,8 +6,8 @@ ConditioningConcat 节点用于拼接条件向量，具体操作是将 'conditio
 
 | 参数 | Comfy 数据类型 | 描述 |
 |------|----------------|------|
-| `conditioning_to` | `CONDITIONING` | 表示主要条件向量集，'conditioning_from' 向量将拼接至此。它作为拼接过程的基础。 |
-| `conditioning_from` | `CONDITIONING` | 包含待拼接至 'conditioning_to' 向量的条件向量。此参数允许将额外的条件信息集成到现有集合中。 |
+| `条件到` | `CONDITIONING` | 表示主要条件向量集，'conditioning_from' 向量将拼接至此。它作为拼接过程的基础。 |
+| `条件从` | `CONDITIONING` | 包含待拼接至 'conditioning_to' 向量的条件向量。此参数允许将额外的条件信息集成到现有集合中。 |
 
 ## 输出
 

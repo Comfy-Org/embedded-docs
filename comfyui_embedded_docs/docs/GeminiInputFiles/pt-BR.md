@@ -6,7 +6,7 @@ Carrega e formata arquivos de entrada para uso com a API Gemini. Este nó permit
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `file` | COMBO | Sim | Múltiplas opções disponíveis | Arquivos de entrada para incluir como contexto para o modelo. Atualmente, aceita apenas arquivos de texto (.txt) e PDF (.pdf). Os arquivos devem ser menores que o limite máximo de tamanho de arquivo de entrada. |
+| `arquivo` | COMBO | Sim | Múltiplas opções disponíveis | Arquivos de entrada para incluir como contexto para o modelo. Atualmente, aceita apenas arquivos de texto (.txt) e PDF (.pdf). Os arquivos devem ser menores que o limite máximo de tamanho de arquivo de entrada. |
 | `GEMINI_INPUT_FILES` | GEMINI_INPUT_FILES | Não | N/A | Um ou mais arquivos adicionais opcionais para agrupar junto com o arquivo carregado por este nó. Permite o encadeamento de arquivos de entrada para que uma única mensagem possa incluir múltiplos arquivos de entrada. |
 
 **Nota:** O parâmetro `file` exibe apenas arquivos de texto (.txt) e PDF (.pdf) que sejam menores que o limite máximo de tamanho de arquivo de entrada. Os arquivos são automaticamente filtrados e ordenados por nome.

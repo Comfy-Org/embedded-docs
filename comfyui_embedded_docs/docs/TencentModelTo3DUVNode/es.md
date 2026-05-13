@@ -6,15 +6,15 @@ Este nodo utiliza la API de Tencent Hunyuan3D para realizar el desplegado UV en 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model_3d` | FILE3D | Sí | GLB<br>OBJ<br>FBX | Modelo 3D de entrada (GLB, OBJ o FBX). El modelo debe tener menos de 30000 caras. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla (predeterminado: 1). Esto controla si el nodo debe volver a ejecutarse, pero los resultados no son deterministas independientemente del valor de la semilla. |
+| `modelo_3d` | FILE3D | Sí | GLB<br>OBJ<br>FBX | Modelo 3D de entrada (GLB, OBJ o FBX). El modelo debe tener menos de 30000 caras. |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla (predeterminado: 1). Esto controla si el nodo debe volver a ejecutarse, pero los resultados no son deterministas independientemente del valor de la semilla. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `OBJ` | FILE3D | El archivo de modelo 3D procesado en formato OBJ. |
-| `FBX` | FILE3D | El archivo de modelo 3D procesado en formato FBX. |
+| `FBX` | FILE3D | El archivo de modelo 3D procesado en formato OBJ. |
+| `imagen UV` | FILE3D | El archivo de modelo 3D procesado en formato FBX. |
 | `uv_image` | IMAGE | La imagen de textura UV generada. |
 
 ---

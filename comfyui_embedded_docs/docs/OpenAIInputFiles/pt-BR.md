@@ -6,7 +6,7 @@ Carrega e formata arquivos de entrada para a API OpenAI. Este nó prepara arquiv
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `file` | COMBO | Sim | Várias opções disponíveis (todos os arquivos .txt e .pdf no diretório de entrada com menos de 32MB) | Arquivos de entrada a serem incluídos como contexto para o modelo. Aceita apenas arquivos de texto (.txt) e PDF (.pdf) por enquanto. Os arquivos devem ser menores que 32MB. |
+| `arquivo` | COMBO | Sim | Várias opções disponíveis (todos os arquivos .txt e .pdf no diretório de entrada com menos de 32MB) | Arquivos de entrada a serem incluídos como contexto para o modelo. Aceita apenas arquivos de texto (.txt) e PDF (.pdf) por enquanto. Os arquivos devem ser menores que 32MB. |
 | `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Não | N/D | Um arquivo(s) adicional(is) opcional(is) para agrupar com o arquivo carregado deste nó. Permite o encadeamento de arquivos de entrada para que uma única mensagem possa incluir vários arquivos de entrada. |
 
 **Restrições de Arquivo:**

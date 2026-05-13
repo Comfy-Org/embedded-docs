@@ -6,7 +6,7 @@ El nodo LoadLatent carga representaciones latentes previamente guardadas desde a
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `latent` | STRING | Sí | Todos los archivos .latent en el directorio de entrada | Selecciona qué archivo .latent cargar de entre los archivos disponibles en el directorio de entrada |
+| `latente` | STRING | Sí | Todos los archivos .latent en el directorio de entrada | Selecciona qué archivo .latent cargar de entre los archivos disponibles en el directorio de entrada |
 
 ## Salidas
 

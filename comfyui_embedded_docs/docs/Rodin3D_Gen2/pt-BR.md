@@ -6,10 +6,10 @@ O nó Rodin3D_Gen2 gera ativos 3D usando a API Rodin. Ele recebe imagens de entr
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `Images` | IMAGE | Sim | - | Imagens de entrada para gerar o modelo 3D |
-| `Seed` | INT | Não | 0-65535 | Valor de semente aleatória para geração (padrão: 0) |
-| `Material_Type` | COMBO | Não | "PBR"<br>"Shaded" | Tipo de material a ser aplicado ao modelo 3D (padrão: "PBR") |
-| `Polygon_count` | COMBO | Não | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" | Contagem de polígonos alvo para o modelo 3D gerado (padrão: "500K-Triangle") |
+| `Imagens` | IMAGE | Sim | - | Imagens de entrada para gerar o modelo 3D |
+| `Semente` | INT | Não | 0-65535 | Valor de semente aleatória para geração (padrão: 0) |
+| `Tipo de Material` | COMBO | Não | "PBR"<br>"Shaded" | Tipo de material a ser aplicado ao modelo 3D (padrão: "PBR") |
+| `Contagem de Polígonos` | COMBO | Não | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" | Contagem de polígonos alvo para o modelo 3D gerado (padrão: "500K-Triangle") |
 | `TAPose` | BOOLEAN | Não | - | Se deve aplicar o processamento TAPose (padrão: False) |
 
 ## Saídas

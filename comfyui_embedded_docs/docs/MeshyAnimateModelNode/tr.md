@@ -13,8 +13,8 @@ Bu düğüm, Meshy hizmeti kullanılarak daha önce iskeletlendirilmiş (rig) bi
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Animasyonlu model için bir dize tanımlayıcı. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanmıştır. |
-| `GLB` | FILE3DGLB | GLB formatındaki animasyonlu 3D model dosyası. |
+| `GLB` | STRING | Animasyonlu model için bir dize tanımlayıcı. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanmıştır. |
+| `FBX` | FILE3DGLB | GLB formatındaki animasyonlu 3D model dosyası. |
 | `FBX` | FILE3DFBX | FBX formatındaki animasyonlu 3D model dosyası. |
 
 ---

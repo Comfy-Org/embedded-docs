@@ -8,8 +8,8 @@ Resolution Selector ノードは、選択したアスペクト比と目標とす
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `aspect_ratio` | COMBO | はい | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | 出力寸法のアスペクト比（デフォルト: `"SQUARE"`）。 |
-| `megapixels` | FLOAT | はい | 0.1 - 16.0 | 目標とする総メガピクセル数。1.0 MP は正方形アスペクト比の場合、約 1024×1024 に相当します（デフォルト: 1.0）。 |
+| `アスペクト比` | COMBO | はい | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | 出力寸法のアスペクト比（デフォルト: `"SQUARE"`）。 |
+| `メガピクセル` | FLOAT | はい | 0.1 - 16.0 | 目標とする総メガピクセル数。1.0 MP は正方形アスペクト比の場合、約 1024×1024 に相当します（デフォルト: 1.0）。 |
 
 ### 出力
 

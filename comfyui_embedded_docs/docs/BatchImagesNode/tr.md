@@ -8,7 +8,7 @@ Batch Images düğümü, birden fazla ayrı görüntüyü tek bir toplu iş hali
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `images` | IMAGE | Evet | 2 ila 50 giriş | Dinamik bir görüntü giriş listesi. Bir toplu iş halinde birleştirilmek üzere 2 ila 50 arasında görüntü ekleyebilirsiniz. Düğüm arayüzü, gerektiğinde daha fazla görüntü giriş yuvası eklemenize olanak tanır. |
+| `görseller` | IMAGE | Evet | 2 ila 50 giriş | Dinamik bir görüntü giriş listesi. Bir toplu iş halinde birleştirilmek üzere 2 ila 50 arasında görüntü ekleyebilirsiniz. Düğüm arayüzü, gerektiğinde daha fazla görüntü giriş yuvası eklemenize olanak tanır. |
 
 **Not:** Düğümün çalışması için en az iki görüntü bağlamanız gerekir. İlk giriş yuvası her zaman zorunludur ve düğüm arayüzünde görünen "+" düğmesini kullanarak daha fazla yuva ekleyebilirsiniz.
 

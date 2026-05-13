@@ -9,10 +9,10 @@ Le nœud LatentUpscale est conçu pour le suréchantillonnage des représentatio
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
 | `samples` | `LATENT`        | La représentation latente d'une image à suréchantillonner. Ce paramètre est crucial pour déterminer le point de départ du processus de suréchantillonnage. |
-| `upscale_method` | COMBO[STRING] | Spécifie la méthode utilisée pour suréchantillonner l'image latente. Différentes méthodes peuvent affecter la qualité et les caractéristiques de l'image suréchantillonnée. |
-| `width`   | `INT`           | La largeur souhaitée de l'image suréchantillonnée. Si définie sur 0, elle sera calculée en fonction de la hauteur pour conserver le rapport hauteur/largeur. |
-| `height`  | `INT`           | La hauteur souhaitée de l'image suréchantillonnée. Si définie sur 0, elle sera calculée en fonction de la largeur pour conserver le rapport hauteur/largeur. |
-| `crop`    | COMBO[STRING]   | Détermine comment l'image suréchantillonnée doit être recadrée, affectant l'apparence finale et les dimensions de la sortie. |
+| `méthode_de_mise_à_l'échelle` | COMBO[STRING] | Spécifie la méthode utilisée pour suréchantillonner l'image latente. Différentes méthodes peuvent affecter la qualité et les caractéristiques de l'image suréchantillonnée. |
+| `largeur`   | `INT`           | La largeur souhaitée de l'image suréchantillonnée. Si définie sur 0, elle sera calculée en fonction de la hauteur pour conserver le rapport hauteur/largeur. |
+| `hauteur`  | `INT`           | La hauteur souhaitée de l'image suréchantillonnée. Si définie sur 0, elle sera calculée en fonction de la largeur pour conserver le rapport hauteur/largeur. |
+| `recadrage`    | COMBO[STRING]   | Détermine comment l'image suréchantillonnée doit être recadrée, affectant l'apparence finale et les dimensions de la sortie. |
 
 ## Sorties
 

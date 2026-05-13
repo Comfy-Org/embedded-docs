@@ -7,12 +7,12 @@ Este nó gera vídeos usando o modelo Kling V3. Ele suporta dois modos principai
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `multi_shot` | COMBO | Sim | `"desativado"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Controla se deve gerar um único vídeo ou uma série de segmentos com descrições e durações individuais. Quando não está "desativado", entradas adicionais para a descrição e duração de cada storyboard aparecem. |
-| `generate_audio` | BOOLEANO | Sim | `Verdadeiro` / `Falso` | Quando ativado, o nó gerará áudio para o vídeo. O padrão é `Verdadeiro`. |
-| `model` | COMBO | Sim | `"kling-v3"` | O modelo e suas configurações associadas. Selecionar esta opção revela os subparâmetros `resolution` e `aspect_ratio`. |
-| `model.resolution` | COMBO | Sim | `"4k"`<br>`"1080p"`<br>`"720p"` | A resolução do vídeo gerado. Esta configuração está disponível quando o `model` está definido como "kling-v3". |
-| `model.aspect_ratio` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` | A proporção de aspecto do vídeo gerado. Esta configuração é ignorada quando uma imagem é fornecida para `start_frame` (modo imagem-para-vídeo). Disponível quando o `model` está definido como "kling-v3". |
+| `gerar áudio` | BOOLEANO | Sim | `Verdadeiro` / `Falso` | Quando ativado, o nó gerará áudio para o vídeo. O padrão é `Verdadeiro`. |
+| `modelo` | COMBO | Sim | `"kling-v3"` | O modelo e suas configurações associadas. Selecionar esta opção revela os subparâmetros `resolution` e `aspect_ratio`. |
+| `model.resolution` | COMBO | Sim | `"4k"`<br>`"1080p"`<br>`"720p"` | A resolução do vídeo gerado. Esta configuração está disponível quando o `modelo` está definido como "kling-v3". |
+| `model.aspect_ratio` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"` | A proporção de aspecto do vídeo gerado. Esta configuração é ignorada quando uma imagem é fornecida para `quadro inicial` (modo imagem-para-vídeo). Disponível quando o `modelo` está definido como "kling-v3". |
 | `seed` | INT | Sim | 0 a 2147483647 | Um valor de semente para a geração. Alterar este valor fará com que o nó seja executado novamente, mas os resultados não são determinísticos. O padrão é `0`. |
-| `start_frame` | IMAGEM | Não | - | Uma imagem inicial opcional. Quando conectada, o nó muda do modo texto-para-vídeo para o modo imagem-para-vídeo, animando a imagem fornecida. |
+| `quadro inicial` | IMAGEM | Não | - | Uma imagem inicial opcional. Quando conectada, o nó muda do modo texto-para-vídeo para o modo imagem-para-vídeo, animando a imagem fornecida. |
 
 **Entradas para o modo `multi_shot`:**
 

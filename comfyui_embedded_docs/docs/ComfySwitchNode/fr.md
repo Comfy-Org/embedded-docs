@@ -6,9 +6,9 @@ Le nœud Switch sélectionne entre deux entrées possibles en fonction d'une con
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `switch` | BOOLEAN | Oui | | Une condition booléenne qui détermine quelle entrée transmettre. Lorsqu'elle est activée (true), l'entrée `on_true` est sélectionnée. Lorsqu'elle est désactivée (false), l'entrée `on_false` est sélectionnée. |
-| `on_false` | MATCH_TYPE | Non | | Les données à transmettre à la sortie lorsque le `switch` est désactivé (false). Cette entrée n'est requise que lorsque le `switch` est false. |
-| `on_true` | MATCH_TYPE | Non | | Les données à transmettre à la sortie lorsque le `switch` est activé (true). Cette entrée n'est requise que lorsque le `switch` est true. |
+| `interrupteur` | BOOLEAN | Oui | | Une condition booléenne qui détermine quelle entrée transmettre. Lorsqu'elle est activée (true), l'entrée `vrai` est sélectionnée. Lorsqu'elle est désactivée (false), l'entrée `faux` est sélectionnée. |
+| `faux` | MATCH_TYPE | Non | | Les données à transmettre à la sortie lorsque le `interrupteur` est désactivé (false). Cette entrée n'est requise que lorsque le `interrupteur` est false. |
+| `vrai` | MATCH_TYPE | Non | | Les données à transmettre à la sortie lorsque le `interrupteur` est activé (true). Cette entrée n'est requise que lorsque le `interrupteur` est true. |
 
 **Remarque sur les exigences d'entrée :** Les entrées `on_false` et `on_true` sont conditionnellement requises. Le nœud demandera l'entrée `on_true` uniquement lorsque le `switch` est true, et l'entrée `on_false` uniquement lorsque le `switch` est false. Les deux entrées doivent être du même type de données.
 
@@ -16,7 +16,7 @@ Le nœud Switch sélectionne entre deux entrées possibles en fonction d'une con
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `output` | MATCH_TYPE | Les données sélectionnées. Il s'agira de la valeur de l'entrée `on_true` si le `switch` est true, ou de la valeur de l'entrée `on_false` si le `switch` est false. |
+| `output` | MATCH_TYPE | Les données sélectionnées. Il s'agira de la valeur de l'entrée `vrai` si le `interrupteur` est true, ou de la valeur de l'entrée `faux` si le `interrupteur` est false. |
 
 ---
 **Source fingerprint (SHA-256):** `9f3cf58c1a04116fa0cbe8007fe3ed90e93c4de2e65f6778761d03fb21a63af3`

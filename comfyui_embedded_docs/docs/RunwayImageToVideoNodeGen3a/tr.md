@@ -7,10 +7,10 @@ Runway Görüntüden Videoya (Gen3a Turbo) düğümü, Runway'in Gen3a Turbo mod
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Evet | Yok | Oluşturma için metin istemi (varsayılan: "") |
-| `start_frame` | IMAGE | Evet | Yok | Video için kullanılacak başlangıç karesi |
-| `duration` | COMBO | Evet | `"5"`<br>`"10"` | Saniye cinsinden video süresi (varsayılan: "5") |
-| `ratio` | COMBO | Evet | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Oluşturulan videonun en boy oranı (varsayılan: "1280x720") |
-| `seed` | INT | Hayır | 0 ila 4294967295 | Oluşturma için rastgele tohum (varsayılan: 0) |
+| `başlangıç_karesi` | IMAGE | Evet | Yok | Video için kullanılacak başlangıç karesi |
+| `süre` | COMBO | Evet | `"5"`<br>`"10"` | Saniye cinsinden video süresi (varsayılan: "5") |
+| `oran` | COMBO | Evet | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Oluşturulan videonun en boy oranı (varsayılan: "1280x720") |
+| `tohum` | INT | Hayır | 0 ila 4294967295 | Oluşturma için rastgele tohum (varsayılan: 0) |
 
 **Parametre Kısıtlamaları:**
 

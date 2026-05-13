@@ -8,16 +8,16 @@ Rodin 3D Detay düğümü, Rodin API'sini kullanarak detaylı 3D varlıklar üre
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `Images` | IMAGE | Evet | - | 3D model oluşturma için kullanılan girdi görüntüleri. Birden fazla görüntü sağlanabilir. |
-| `Seed` | INT | Evet | - | Tekrarlanabilir sonuçlar için rastgele tohum değeri |
-| `Material_Type` | STRING | Evet | - | 3D modele uygulanacak malzeme türü |
-| `Polygon_count` | STRING | Evet | - | Oluşturulan 3D model için hedef çokgen sayısı. Ağ kalite seviyesini belirler. |
+| `Görseller` | IMAGE | Evet | - | 3D model oluşturma için kullanılan girdi görüntüleri. Birden fazla görüntü sağlanabilir. |
+| `Tohum` | INT | Evet | - | Tekrarlanabilir sonuçlar için rastgele tohum değeri |
+| `Malzeme_Türü` | STRING | Evet | - | 3D modele uygulanacak malzeme türü |
+| `Poligon_sayısı` | STRING | Evet | - | Oluşturulan 3D model için hedef çokgen sayısı. Ağ kalite seviyesini belirler. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `3D Model Yolu` | STRING | Oluşturulan 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | STRING | Oluşturulan 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için) |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan 3D model |
 
 ---

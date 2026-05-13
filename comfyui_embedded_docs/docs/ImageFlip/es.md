@@ -6,14 +6,14 @@ El nodo ImageFlip invierte imágenes a lo largo de diferentes ejes. Puede invert
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a invertir |
-| `flip_method` | STRING | Sí | "x-axis: vertically"<br>"y-axis: horizontally" | La dirección de inversión a aplicar (predeterminado: "x-axis: vertically") |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a invertir |
+| `método_volteo` | STRING | Sí | "x-axis: vertically"<br>"y-axis: horizontally" | La dirección de inversión a aplicar (predeterminado: "x-axis: vertically") |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen de salida invertida |
+| `imagen` | IMAGE | La imagen de salida invertida |
 
 ---
 **Source fingerprint (SHA-256):** `5cb9949c53653192b1a696179351976c3a87e2e7afc4634624b4d827ad75b527`

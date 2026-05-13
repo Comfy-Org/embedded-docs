@@ -6,10 +6,10 @@ Este nodo crea un tensor latente vacío formateado específicamente para su uso 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Sí | - | El ancho del fotograma de video en píxeles. |
-| `height` | INT | Sí | - | La altura del fotograma de video en píxeles. |
-| `length` | INT | Sí | - | El número de fotogramas en la secuencia de video. |
-| `batch_size` | INT | No | - | El número de muestras de video a generar en un lote (predeterminado: 1). |
+| `ancho` | INT | Sí | - | El ancho del fotograma de video en píxeles. |
+| `alto` | INT | Sí | - | La altura del fotograma de video en píxeles. |
+| `longitud` | INT | Sí | - | El número de fotogramas en la secuencia de video. |
+| `tamaño_lote` | INT | No | - | El número de muestras de video a generar en un lote (predeterminado: 1). |
 
 **Nota:** Las dimensiones espaciales del tensor latente generado se calculan dividiendo el `width` y `height` de entrada entre 16. La dimensión temporal (fotogramas) se calcula como `((length - 1) // 4) + 1`.
 

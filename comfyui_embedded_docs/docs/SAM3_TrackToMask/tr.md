@@ -10,8 +10,8 @@ Bir SAM3 izleme oturumundan belirli izlenen nesneleri indeks numaralarına göre
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `track_data` | SAM3TRACKDATA | Evet | Yok | Bir SAM3 izleyici düğümünden gelen, paketlenmiş maskeleri ve orijinal görüntü boyutunu içeren izleme verisi çıktısı. |
-| `object_indices` | STRING | Hayır | Virgülle ayrılmış herhangi bir tam sayı listesi | Çıktı maskesine dahil edilecek, virgülle ayrılmış nesne indeksleri (örneğin, '0,2,3'). Boş bırakılırsa, izlenen tüm nesneler dahil edilir. |
+| `iz_verisi` | SAM3TRACKDATA | Evet | Yok | Bir SAM3 izleyici düğümünden gelen, paketlenmiş maskeleri ve orijinal görüntü boyutunu içeren izleme verisi çıktısı. |
+| `nesne_indeksleri` | STRING | Hayır | Virgülle ayrılmış herhangi bir tam sayı listesi | Çıktı maskesine dahil edilecek, virgülle ayrılmış nesne indeksleri (örneğin, '0,2,3'). Boş bırakılırsa, izlenen tüm nesneler dahil edilir. |
 
 ## Çıktılar
 

@@ -8,14 +8,14 @@ Transforme une partie d'un échantillon audio existant à l'aide d'instructions 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | "stable-audio-2.5" | Le modèle d'IA à utiliser pour l'inpainting audio. |
+| `modèle` | COMBO | Oui | "stable-audio-2.5" | Le modèle d'IA à utiliser pour l'inpainting audio. |
 | `prompt` | STRING | Oui |  | Description textuelle guidant la transformation de l'audio (par défaut : vide). |
 | `audio` | AUDIO | Oui |  | Fichier audio d'entrée à transformer. L'audio doit durer entre 6 et 190 secondes. |
-| `duration` | INT | Non | 1-190 | Contrôle la durée en secondes de l'audio généré (par défaut : 190). |
-| `seed` | INT | Non | 0-4294967294 | La graine aléatoire utilisée pour la génération (par défaut : 0). |
-| `steps` | INT | Non | 4-8 | Contrôle le nombre d'étapes d'échantillonnage (par défaut : 8). |
-| `mask_start` | INT | Non | 0-190 | Position de début en secondes de la section audio à transformer (par défaut : 30). |
-| `mask_end` | INT | Non | 0-190 | Position de fin en secondes de la section audio à transformer (par défaut : 190). |
+| `durée` | INT | Non | 1-190 | Contrôle la durée en secondes de l'audio généré (par défaut : 190). |
+| `graine` | INT | Non | 0-4294967294 | La graine aléatoire utilisée pour la génération (par défaut : 0). |
+| `étapes` | INT | Non | 4-8 | Contrôle le nombre d'étapes d'échantillonnage (par défaut : 8). |
+| `début_masque` | INT | Non | 0-190 | Position de début en secondes de la section audio à transformer (par défaut : 30). |
+| `fin_masque` | INT | Non | 0-190 | Position de fin en secondes de la section audio à transformer (par défaut : 190). |
 
 **Remarque :** La valeur de `mask_end` doit être supérieure à la valeur de `mask_start`. L'audio d'entrée doit avoir une durée comprise entre 6 et 190 secondes.
 

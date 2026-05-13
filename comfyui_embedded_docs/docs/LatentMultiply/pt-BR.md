@@ -6,8 +6,8 @@ O nó LatentMultiply foi projetado para escalar a representação latente de amo
 
 | Parâmetro    | Tipo de Dado | Descrição |
 |--------------|-------------|-------------|
-| `samples`    | `LATENT`    | O parâmetro 'samples' representa as representações latentes a serem escaladas. É crucial para definir os dados de entrada sobre os quais a operação de multiplicação será realizada. |
-| `multiplier` | `FLOAT`     | O parâmetro 'multiplier' especifica o fator de escala a ser aplicado às amostras latentes. Ele desempenha um papel fundamental no ajuste da magnitude das características latentes, permitindo um controle preciso sobre a saída gerada. |
+| `amostras`    | `LATENT`    | O parâmetro 'samples' representa as representações latentes a serem escaladas. É crucial para definir os dados de entrada sobre os quais a operação de multiplicação será realizada. |
+| `multiplicador` | `FLOAT`     | O parâmetro 'multiplier' especifica o fator de escala a ser aplicado às amostras latentes. Ele desempenha um papel fundamental no ajuste da magnitude das características latentes, permitindo um controle preciso sobre a saída gerada. |
 
 ## Saídas
 

@@ -8,7 +8,7 @@ Le nœud Sampler AR Video fournit une méthode d'échantillonnage spécialisée 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `num_frame_per_block` | INT | Oui | 1 à 64 | Images par bloc autorégressif. Une valeur de 1 signifie que le modèle génère une image à la fois (image par image), tandis qu'une valeur de 3 signifie qu'il génère trois images ensemble (par bloc). Ce paramètre doit correspondre au mode d'entraînement du point de contrôle. Valeur par défaut : 1. |
+| `nombre_d’images_par_bloc` | INT | Oui | 1 à 64 | Images par bloc autorégressif. Une valeur de 1 signifie que le modèle génère une image à la fois (image par image), tandis qu'une valeur de 3 signifie qu'il génère trois images ensemble (par bloc). Ce paramètre doit correspondre au mode d'entraînement du point de contrôle. Valeur par défaut : 1. |
 
 ## Sorties
 

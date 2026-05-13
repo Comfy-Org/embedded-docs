@@ -8,7 +8,7 @@ Amplia rapidamente uma imagem por meio da API Stability para 4x seu tamanho orig
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser ampliada |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser ampliada |
 
 ## Saídas
 

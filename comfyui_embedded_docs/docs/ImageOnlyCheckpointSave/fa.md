@@ -6,10 +6,10 @@
 
 | پارامتر | نوع داده | الزامی | محدوده | توضیحات |
 |---------|----------|--------|--------|---------|
-| `model` | MODEL | بله | - | مدلی که در checkpoint ذخیره می‌شود |
+| `مدل` | MODEL | بله | - | مدلی که در checkpoint ذخیره می‌شود |
 | `clip_vision` | CLIP_VISION | بله | - | رمزگذار دیداری CLIP که در checkpoint ذخیره می‌شود |
 | `vae` | VAE | بله | - | VAE (رمزگذار خودکار وردشی) که در checkpoint ذخیره می‌شود |
-| `filename_prefix` | STRING | بله | - | پیشوند نام فایل خروجی (پیش‌فرض: "checkpoints/ComfyUI") |
+| `پیشوند نام فایل` | STRING | بله | - | پیشوند نام فایل خروجی (پیش‌فرض: "checkpoints/ComfyUI") |
 | `prompt` | PROMPT | خیر | - | پارامتر پنهان برای داده‌های prompt workflow |
 | `extra_pnginfo` | EXTRA_PNGINFO | خیر | - | پارامتر پنهان برای فراداده‌های اضافی PNG |
 

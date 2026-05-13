@@ -8,8 +8,8 @@ O nó LatentApplyOperation aplica uma operação específica a amostras latentes
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `samples` | LATENT | Sim | - | As amostras latentes a serem processadas pela operação |
-| `operation` | LATENT_OPERATION | Sim | - | A operação a ser aplicada às amostras latentes |
+| `amostras` | LATENT | Sim | - | As amostras latentes a serem processadas pela operação |
+| `operação` | LATENT_OPERATION | Sim | - | A operação a ser aplicada às amostras latentes |
 
 ## Saídas
 

@@ -6,9 +6,9 @@ O nó LoraModelLoader aplica pesos de LoRA (Adaptação de Baixa Classificação
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de difusão ao qual o LoRA será aplicado. |
+| `modelo` | MODEL | Sim | - | O modelo de difusão ao qual o LoRA será aplicado. |
 | `lora` | LORA_MODEL | Sim | - | O modelo LoRA a ser aplicado ao modelo de difusão. |
-| `strength_model` | FLOAT | Sim | -100.0 a 100.0 | O quão fortemente modificar o modelo de difusão. Este valor pode ser negativo (padrão: 1.0). |
+| `força_modelo` | FLOAT | Sim | -100.0 a 100.0 | O quão fortemente modificar o modelo de difusão. Este valor pode ser negativo (padrão: 1.0). |
 | `bypass` | BOOLEAN | Sim | Verdadeiro ou Falso | Quando ativado, aplica o LoRA em modo de bypass sem modificar os pesos do modelo base. Útil para treinamento e quando os pesos do modelo são descarregados (padrão: Falso). |
 
 **Nota:** Quando `strength_model` é definido como 0, o nó retorna o modelo original sem aplicar nenhuma modificação do LoRA.
@@ -17,7 +17,7 @@ O nó LoraModelLoader aplica pesos de LoRA (Adaptação de Baixa Classificação
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo de difusão modificado com os pesos do LoRA aplicados. |
+| `modelo` | MODEL | O modelo de difusão modificado com os pesos do LoRA aplicados. |
 
 ---
 **Source fingerprint (SHA-256):** `82afa7dbbc990f1a9f202f920aaf8fad7fe69dc35e75ed8a95eb63c9dec74961`

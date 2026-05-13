@@ -8,7 +8,7 @@ Este nó carrega um conjunto de dados de treinamento codificado que foi previame
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `folder_name` | STRING | Sim | N/A | Nome da pasta que contém o conjunto de dados salvo, localizada dentro do diretório de saída do ComfyUI (padrão: "training_dataset"). |
+| `nome_da_pasta` | STRING | Sim | N/A | Nome da pasta que contém o conjunto de dados salvo, localizada dentro do diretório de saída do ComfyUI (padrão: "training_dataset"). |
 
 ## Saídas
 

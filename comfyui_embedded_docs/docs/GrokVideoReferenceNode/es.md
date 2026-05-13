@@ -7,12 +7,12 @@ El nodo Grock Referencia a Video genera un video basado en un prompt de texto, u
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Descripción textual del video deseado. |
-| `model` | COMBO | Sí | `"grok-imagine-video"` | El modelo a utilizar para la generación del video. |
+| `modelo` | COMBO | Sí | `"grok-imagine-video"` | El modelo a utilizar para la generación del video. |
 | `model.reference_images` | IMAGE | Sí | 1 a 7 imágenes | Hasta 7 imágenes de referencia para guiar la generación del video. |
 | `model.resolution` | COMBO | Sí | `"480p"`<br>`"720p"` | La resolución del video de salida. |
 | `model.aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | La relación de aspecto del video de salida. |
 | `model.duration` | INT | Sí | 2 a 10 | La duración del video de salida en segundos (predeterminado: 6). |
-| `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). |
+| `semilla` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0). |
 
 **Nota:** El parámetro `model` es un grupo que contiene `reference_images`, `resolution`, `aspect_ratio` y `duration`. Debes proporcionar al menos una imagen de referencia y puedes proporcionar hasta siete.
 

@@ -6,9 +6,9 @@ EmptyChromaRadianceLatentImage düğümü, kroma parlaklık iş akışlarında k
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 16 ile MAX_RESOLUTION arası | Gizli görüntünün piksel cinsinden genişliği (varsayılan: 1024, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16 ile MAX_RESOLUTION arası | Gizli görüntünün piksel cinsinden yüksekliği (varsayılan: 1024, 16'ya bölünebilir olmalıdır) |
-| `batch_size` | INT | Hayır | 1 ile 4096 arası | Bir toplu işte oluşturulacak gizli görüntü sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 16 ile MAX_RESOLUTION arası | Gizli görüntünün piksel cinsinden genişliği (varsayılan: 1024, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16 ile MAX_RESOLUTION arası | Gizli görüntünün piksel cinsinden yüksekliği (varsayılan: 1024, 16'ya bölünebilir olmalıdır) |
+| `toplu_iş_boyutu` | INT | Hayır | 1 ile 4096 arası | Bir toplu işte oluşturulacak gizli görüntü sayısı (varsayılan: 1) |
 
 ## Çıktılar
 

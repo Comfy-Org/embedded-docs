@@ -8,7 +8,7 @@ Bu düğüm, video oluşturma iş akışlarında özellikle görüntü tabanlı 
 
 | Alan        | Veri Türü    | Açıklama                                                                                      |
 |-------------|--------------|-----------------------------------------------------------------------------------------------|
-| `ckpt_name` | COMBO[STRING] | Yüklenecek kontrol noktasının adını belirtir. Önceden tanımlanmış bir listeden doğru kontrol noktası dosyasını tanımlamak ve almak için çok önemlidir. |
+| `ckpt_adı` | COMBO[STRING] | Yüklenecek kontrol noktasının adını belirtir. Önceden tanımlanmış bir listeden doğru kontrol noktası dosyasını tanımlamak ve almak için çok önemlidir. |
 
 ## Çıkışlar
 

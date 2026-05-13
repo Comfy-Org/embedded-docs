@@ -6,10 +6,10 @@ O nó `ImageBlend` foi projetado para mesclar duas imagens com base em um modo d
 
 | Campo          | Tipo de Dado | Descrição                                                                       |
 |----------------|--------------|---------------------------------------------------------------------------------|
-| `image1`       | `IMAGE`      | A primeira imagem a ser mesclada. Ela serve como camada base para a operação de mesclagem. |
-| `image2`       | `IMAGE`      | A segunda imagem a ser mesclada. Dependendo do modo de mesclagem, ela modifica a aparência da primeira imagem. |
-| `blend_factor` | `FLOAT`      | Determina o peso da segunda imagem na mesclagem. Um fator de mesclagem maior dá mais destaque à segunda imagem no resultado final. |
-| `blend_mode`   | COMBO[STRING]| Especifica o método de mesclagem das duas imagens. Suporta modos como normal, multiplicar, tela, sobreposição, luz suave e diferença, cada um produzindo um efeito visual único. |
+| `imagem1`       | `IMAGE`      | A primeira imagem a ser mesclada. Ela serve como camada base para a operação de mesclagem. |
+| `imagem2`       | `IMAGE`      | A segunda imagem a ser mesclada. Dependendo do modo de mesclagem, ela modifica a aparência da primeira imagem. |
+| `fator_de_mistura` | `FLOAT`      | Determina o peso da segunda imagem na mesclagem. Um fator de mesclagem maior dá mais destaque à segunda imagem no resultado final. |
+| `modo_de_mistura`   | COMBO[STRING]| Especifica o método de mesclagem das duas imagens. Suporta modos como normal, multiplicar, tela, sobreposição, luz suave e diferença, cada um produzindo um efeito visual único. |
 
 ## Saídas
 

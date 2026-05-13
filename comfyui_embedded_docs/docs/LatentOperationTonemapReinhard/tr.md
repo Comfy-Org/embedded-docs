@@ -6,7 +6,7 @@ LatentOperationTonemapReinhard düğümü, Reinhard ton eşlemesini gizli vektö
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `multiplier` | FLOAT | Hayır | 0,0 ile 100,0 arası | Ton eşleme efektinin yoğunluğunu kontrol eder (varsayılan: 1,0) |
+| `çarpan` | FLOAT | Hayır | 0,0 ile 100,0 arası | Ton eşleme efektinin yoğunluğunu kontrol eder (varsayılan: 1,0) |
 
 ## Çıkışlar
 

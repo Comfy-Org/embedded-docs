@@ -6,9 +6,9 @@ LatentConcat düğümü, iki gizli (latent) örneği seçilen bir boyut boyunca 
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples1` | LATENT | Evet | - | Birleştirilecek ilk gizli örnek |
-| `samples2` | LATENT | Evet | - | Birleştirilecek ikinci gizli örnek |
-| `dim` | COMBO | Evet | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | Gizli örneklerin birleştirileceği boyut. Pozitif değerler (x, y, t) sonuçta samples1'i samples2'den önce yerleştirir. Negatif değerler (-x, -y, -t) samples2'yi samples1'den önce yerleştirir. Boyut eşlemesi şu şekildedir: x = genişlik, y = yükseklik, t = zaman/karesayısı |
+| `örnekler1` | LATENT | Evet | - | Birleştirilecek ilk gizli örnek |
+| `örnekler2` | LATENT | Evet | - | Birleştirilecek ikinci gizli örnek |
+| `boyut` | COMBO | Evet | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | Gizli örneklerin birleştirileceği boyut. Pozitif değerler (x, y, t) sonuçta samples1'i samples2'den önce yerleştirir. Negatif değerler (-x, -y, -t) samples2'yi samples1'den önce yerleştirir. Boyut eşlemesi şu şekildedir: x = genişlik, y = yükseklik, t = zaman/karesayısı |
 
 **Not:** İkinci gizli örnek (`samples2`), birleştirme işleminden önce birinci gizli örneğin (`samples1`) grup boyutuyla eşleşecek şekilde otomatik olarak ayarlanır.
 

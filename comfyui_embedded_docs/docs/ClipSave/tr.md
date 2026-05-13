@@ -7,7 +7,7 @@
 | Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `clip` | CLIP | Zorunlu | - | - | Kaydedilecek CLIP modeli. |
-| `filename_prefix` | STRING | Zorunlu | `clip/ComfyUI` | - | Kaydedilen dosya(lar) için ön ek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (ör. `_clip_l`, `_clip_g`) ve bir sayaç ekleyecektir. |
+| `dosyaadı_öneki` | STRING | Zorunlu | `clip/ComfyUI` | - | Kaydedilen dosya(lar) için ön ek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (ör. `_clip_l`, `_clip_g`) ve bir sayaç ekleyecektir. |
 | `prompt` | PROMPT | Gizli | - | - | Çıktı dosyasında meta veri olarak kaydedilen iş akışı istem bilgisi. |
 | `extra_pnginfo` | EXTRA_PNGINFO | Gizli | - | - | Çıktı dosyasında anahtar-değer çiftleri olarak kaydedilen ek meta veriler. |
 

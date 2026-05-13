@@ -6,7 +6,7 @@ Le nœud Number Convert transforme différents types de données d'entrée en va
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `value` | INT, FLOAT, STRING, BOOLEAN | Oui | N/A | La valeur à convertir en sorties numériques. Accepte un entier, un nombre à virgule flottante, une chaîne de caractères ou un booléen vrai/faux. |
+| `valeur` | INT, FLOAT, STRING, BOOLEAN | Oui | N/A | La valeur à convertir en sorties numériques. Accepte un entier, un nombre à virgule flottante, une chaîne de caractères ou un booléen vrai/faux. |
 
 **Remarque :** Lorsque l'entrée est une chaîne de caractères, elle ne doit pas être vide et doit contenir une représentation valide d'un nombre (par exemple, `"123"`, `"3.14"`). Le nœud générera une erreur pour les chaînes vides, le texte ne pouvant pas être interprété comme un nombre, ou les valeurs qui ne sont pas finies (comme `"inf"` ou `"nan"`). Pour les entrées booléennes, `true` est converti en 1.0 (FLOAT) et 1 (INT), tandis que `false` est converti en 0.0 (FLOAT) et 0 (INT). Pour les entrées flottantes, la sortie entière est obtenue en tronquant la partie décimale.
 

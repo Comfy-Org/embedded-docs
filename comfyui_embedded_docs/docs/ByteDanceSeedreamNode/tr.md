@@ -8,15 +8,15 @@ ByteDance Seedream 4.5 & 5.0 düğümü, 4K çözünürlüğe kadar birleşik me
 |-----------|-----------|----------|-------|-------------|
 | `model` | STRING | Evet | Açıklamaya Bakın | Oluşturma için kullanılacak Seedream modeli. Mevcut modeller arasında seedream-4-0, seedream-4-5 ve seedream-5-0 varyantları bulunur. |
 | `prompt` | STRING | Evet | - | Görüntü oluşturma veya düzenleme için metin istemi. En az 1 karakter uzunluğunda olmalıdır. |
-| `image` | IMAGE | Hayır | - | Görüntüden görüntüye oluşturma için giriş görüntüsü/görüntüleri. Tek veya çoklu referans oluşturma için referans görüntüsü/görüntüleri. Çoğu model için maksimum 10 referans görüntüsü veya seedream-5-0-260128 için 14 referans görüntüsü. |
-| `size_preset` | STRING | Hayır | Birden çok seçenek mevcut | Önerilen bir boyut seçin. Aşağıdaki genişlik ve yüksekliği kullanmak için Özel'i seçin. Varsayılan: RECOMMENDED_PRESETS_SEEDREAM_4'ten ilk ön ayar. |
-| `width` | INT | Hayır | 1024 ila 6240 (adım 2) | Görüntü için özel genişlik. Değer yalnızca `size_preset` "Özel" olarak ayarlandığında çalışır. Varsayılan: 2048. |
-| `height` | INT | Hayır | 1024 ila 4992 (adım 2) | Görüntü için özel yükseklik. Değer yalnızca `size_preset` "Özel" olarak ayarlandığında çalışır. Varsayılan: 2048. |
-| `sequential_image_generation` | STRING | Hayır | "disabled"<br>"auto" | Grup görüntü oluşturma modu. "disabled" tek bir görüntü oluşturur. "auto" modelin birden çok ilgili görüntü (ör. hikaye sahneleri, karakter varyasyonları) oluşturup oluşturmayacağına karar vermesini sağlar. Varsayılan: "disabled". |
-| `max_images` | INT | Hayır | 1 ila 15 (adım 1) | sequential_image_generation='auto' olduğunda oluşturulacak maksimum görüntü sayısı. Toplam görüntü (giriş + oluşturulan) 15'i geçemez. Varsayılan: 1. |
-| `seed` | INT | Hayır | 0 ila 2147483647 (adım 1) | Oluşturma için kullanılacak tohum. Varsayılan: 0. |
-| `watermark` | BOOLEAN | Hayır | - | Görüntüye "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği. Varsayılan: Yanlış. |
-| `fail_on_partial` | BOOLEAN | Hayır | - | Etkinleştirilirse, istenen görüntülerden herhangi biri eksikse veya bir hata döndürürse yürütmeyi durdurun. Varsayılan: Doğru. |
+| `görüntü` | IMAGE | Hayır | - | Görüntüden görüntüye oluşturma için giriş görüntüsü/görüntüleri. Tek veya çoklu referans oluşturma için referans görüntüsü/görüntüleri. Çoğu model için maksimum 10 referans görüntüsü veya seedream-5-0-260128 için 14 referans görüntüsü. |
+| `boyut önayarı` | STRING | Hayır | Birden çok seçenek mevcut | Önerilen bir boyut seçin. Aşağıdaki genişlik ve yüksekliği kullanmak için Özel'i seçin. Varsayılan: RECOMMENDED_PRESETS_SEEDREAM_4'ten ilk ön ayar. |
+| `genişlik` | INT | Hayır | 1024 ila 6240 (adım 2) | Görüntü için özel genişlik. Değer yalnızca `boyut önayarı` "Özel" olarak ayarlandığında çalışır. Varsayılan: 2048. |
+| `yükseklik` | INT | Hayır | 1024 ila 4992 (adım 2) | Görüntü için özel yükseklik. Değer yalnızca `boyut önayarı` "Özel" olarak ayarlandığında çalışır. Varsayılan: 2048. |
+| `sıralı_resim_oluşturma` | STRING | Hayır | "disabled"<br>"auto" | Grup görüntü oluşturma modu. "disabled" tek bir görüntü oluşturur. "auto" modelin birden çok ilgili görüntü (ör. hikaye sahneleri, karakter varyasyonları) oluşturup oluşturmayacağına karar vermesini sağlar. Varsayılan: "disabled". |
+| `maks_resim` | INT | Hayır | 1 ila 15 (adım 1) | sequential_image_generation='auto' olduğunda oluşturulacak maksimum görüntü sayısı. Toplam görüntü (giriş + oluşturulan) 15'i geçemez. Varsayılan: 1. |
+| `tohum` | INT | Hayır | 0 ila 2147483647 (adım 1) | Oluşturma için kullanılacak tohum. Varsayılan: 0. |
+| `filigran` | BOOLEAN | Hayır | - | Görüntüye "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği. Varsayılan: Yanlış. |
+| `kısmi_hatada_durdur` | BOOLEAN | Hayır | - | Etkinleştirilirse, istenen görüntülerden herhangi biri eksikse veya bir hata döndürürse yürütmeyi durdurun. Varsayılan: Doğru. |
 
 **Parametre kısıtlamalarına ilişkin notlar:**
 - Minimum görüntü çözünürlüğü seçilen modele bağlıdır: seedream-4-5 ve seedream-5-0 modelleri için 3,68MP, seedream-4-0 modelleri için 0,92MP.

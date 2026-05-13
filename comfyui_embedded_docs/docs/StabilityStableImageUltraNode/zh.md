@@ -8,13 +8,13 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 您希望在输出图像中看到的内容。一个强烈且描述性强的提示，清晰定义元素、颜色和主体，将带来更好的效果。要控制某个词的权重，请使用格式 `(word:weight)`，其中 `word` 是您要控制权重的词，`weight` 是介于 0 和 1 之间的值。例如：`The sky was a crisp (blue:0.3) and (green:0.8)` 表示天空呈现蓝色和绿色，但绿色多于蓝色。 |
-| `aspect_ratio` | COMBO | 是 | `"1:1"`<br>`"16:9"`<br>`"21:9"`<br>`"2:3"`<br>`"3:2"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"9:21"` | 生成图像的宽高比（默认值："1:1"）。 |
-| `style_preset` | COMBO | 否 | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 生成图像的可选期望风格。选择 "None" 则不应用任何风格预设。 |
-| `seed` | INT | 是 | 0 - 4294967294 | 用于创建噪声的随机种子。 |
-| `image` | IMAGE | 否 | - | 用于图像到图像生成的可选输入图像。 |
-| `negative_prompt` | STRING | 否 | - | 描述您不希望出现在输出图像中的内容的文本。这是一个高级功能。 |
-| `image_denoise` | FLOAT | 否 | 0.0 - 1.0 | 输入图像的去噪强度；0.0 表示输出图像与输入图像完全相同，1.0 表示如同未提供任何图像（默认值：0.5）。 |
+| `提示词` | STRING | 是 | - | 您希望在输出图像中看到的内容。一个强烈且描述性强的提示，清晰定义元素、颜色和主体，将带来更好的效果。要控制某个词的权重，请使用格式 `(word:weight)`，其中 `word` 是您要控制权重的词，`weight` 是介于 0 和 1 之间的值。例如：`The sky was a crisp (blue:0.3) and (green:0.8)` 表示天空呈现蓝色和绿色，但绿色多于蓝色。 |
+| `宽高比` | COMBO | 是 | `"1:1"`<br>`"16:9"`<br>`"21:9"`<br>`"2:3"`<br>`"3:2"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"9:21"` | 生成图像的宽高比（默认值："1:1"）。 |
+| `风格预设` | COMBO | 否 | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 生成图像的可选期望风格。选择 "None" 则不应用任何风格预设。 |
+| `随机种` | INT | 是 | 0 - 4294967294 | 用于创建噪声的随机种子。 |
+| `图像` | IMAGE | 否 | - | 用于图像到图像生成的可选输入图像。 |
+| `负面提示词` | STRING | 否 | - | 描述您不希望出现在输出图像中的内容的文本。这是一个高级功能。 |
+| `降噪` | FLOAT | 否 | 0.0 - 1.0 | 输入图像的去噪强度；0.0 表示输出图像与输入图像完全相同，1.0 表示如同未提供任何图像（默认值：0.5）。 |
 
 **注意：** 当未提供输入图像时，`image_denoise` 参数会自动禁用并被忽略。
 

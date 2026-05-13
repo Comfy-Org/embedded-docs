@@ -6,11 +6,11 @@ O nó RescaleCFG foi projetado para ajustar as escalas de condicionamento e não
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | O parâmetro do modelo representa o modelo generativo a ser ajustado. Ele é crucial, pois o nó aplica uma função de redimensionamento à saída do modelo, influenciando diretamente o processo de geração. |
-| `multiplier` | `FLOAT` | O parâmetro multiplicador controla a extensão do redimensionamento aplicado à saída do modelo. Ele determina o equilíbrio entre os componentes original e redimensionado, afetando as características da saída final. |
+| `modelo`   | MODEL     | O parâmetro do modelo representa o modelo generativo a ser ajustado. Ele é crucial, pois o nó aplica uma função de redimensionamento à saída do modelo, influenciando diretamente o processo de geração. |
+| `multiplicador` | `FLOAT` | O parâmetro multiplicador controla a extensão do redimensionamento aplicado à saída do modelo. Ele determina o equilíbrio entre os componentes original e redimensionado, afetando as características da saída final. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | O modelo modificado com escalas de condicionamento e não condicionamento ajustadas. Espera-se que este modelo produza saídas com características potencialmente aprimoradas devido ao redimensionamento aplicado. |
+| `modelo`   | MODEL     | O modelo modificado com escalas de condicionamento e não condicionamento ajustadas. Espera-se que este modelo produza saídas com características potencialmente aprimoradas devido ao redimensionamento aplicado. |

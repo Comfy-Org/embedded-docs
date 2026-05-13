@@ -6,12 +6,12 @@ Este nodo está diseñado para guardar una secuencia de imágenes como un archiv
 
 | Campo             | Tipo de Dato | Descripción                                                                         |
 |-------------------|-------------|-------------------------------------------------------------------------------------|
-| `images`          | `IMAGE`     | Una lista de imágenes que se guardarán como fotogramas en el WEBP animado. Este parámetro es esencial para definir el contenido visual de la animación. |
-| `filename_prefix` | `STRING`    | Especifica el nombre base para el archivo de salida, al cual se le añadirá un contador y la extensión '.webp'. Este parámetro es crucial para identificar y organizar los archivos guardados. |
+| `imágenes`          | `IMAGE`     | Una lista de imágenes que se guardarán como fotogramas en el WEBP animado. Este parámetro es esencial para definir el contenido visual de la animación. |
+| `prefijo_nombre_archivo` | `STRING`    | Especifica el nombre base para el archivo de salida, al cual se le añadirá un contador y la extensión '.webp'. Este parámetro es crucial para identificar y organizar los archivos guardados. |
 | `fps`             | `FLOAT`     | La velocidad de fotogramas por segundo de la animación, que influye en la velocidad de reproducción. |
-| `lossless`        | `BOOLEAN`   | Un valor booleano que indica si se debe usar compresión sin pérdida, afectando el tamaño del archivo y la calidad de la animación. |
-| `quality`         | `INT`       | Un valor entre 0 y 100 que establece el nivel de calidad de compresión, donde valores más altos resultan en mejor calidad de imagen pero archivos de mayor tamaño. |
-| `method`          | COMBO[STRING] | Especifica el método de compresión a utilizar, lo que puede afectar la velocidad de codificación y el tamaño del archivo. |
+| `sin_pérdidas`        | `BOOLEAN`   | Un valor booleano que indica si se debe usar compresión sin pérdida, afectando el tamaño del archivo y la calidad de la animación. |
+| `calidad`         | `INT`       | Un valor entre 0 y 100 que establece el nivel de calidad de compresión, donde valores más altos resultan en mejor calidad de imagen pero archivos de mayor tamaño. |
+| `método`          | COMBO[STRING] | Especifica el método de compresión a utilizar, lo que puede afectar la velocidad de codificación y el tamaño del archivo. |
 
 ## Salidas
 

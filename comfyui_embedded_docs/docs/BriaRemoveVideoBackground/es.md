@@ -7,8 +7,8 @@ Este nodo elimina el fondo de un video utilizando el servicio de IA de Bria. Pro
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `video` | VIDEO | Sí | N/A | El archivo de video de entrada del cual se eliminará el fondo. |
-| `background_color` | STRING | Sí | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` | El color sólido que se usará como nuevo fondo para el video de salida. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla que controla si el nodo debe volver a ejecutarse. Los resultados no son deterministas independientemente del valor de la semilla. (predeterminado: 0) |
+| `color de fondo` | STRING | Sí | `"Black"`<br>`"White"`<br>`"Gray"`<br>`"Red"`<br>`"Green"`<br>`"Blue"`<br>`"Yellow"`<br>`"Cyan"`<br>`"Magenta"`<br>`"Orange"` | El color sólido que se usará como nuevo fondo para el video de salida. |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla que controla si el nodo debe volver a ejecutarse. Los resultados no son deterministas independientemente del valor de la semilla. (predeterminado: 0) |
 
 **Nota:** El video de entrada debe tener una duración de 60 segundos o menos.
 

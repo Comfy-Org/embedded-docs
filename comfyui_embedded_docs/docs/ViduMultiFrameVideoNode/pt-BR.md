@@ -8,11 +8,11 @@ Este nó gera um vídeo criando transições entre múltiplos quadros-chave. Ele
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `model` | COMBO | Sim | `"viduq2-pro"`<br>`"viduq2-turbo"` | O modelo Vidu a ser usado para geração de vídeo. |
-| `start_image` | IMAGE | Sim | - | A imagem do quadro inicial. A proporção deve estar entre 1:4 e 4:1. |
-| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente para geração de números aleatórios, garantindo resultados reproduzíveis (padrão: 1). |
-| `resolution` | COMBO | Sim | `"720p"`<br>`"1080p"` | A resolução do vídeo de saída. |
-| `frames` | DYNAMICCOMBO | Sim | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Número de transições de quadros-chave (2-9). Selecionar um valor revela dinamicamente as entradas necessárias para cada quadro. |
+| `modelo` | COMBO | Sim | `"viduq2-pro"`<br>`"viduq2-turbo"` | O modelo Vidu a ser usado para geração de vídeo. |
+| `imagem_inicial` | IMAGE | Sim | - | A imagem do quadro inicial. A proporção deve estar entre 1:4 e 4:1. |
+| `semente` | INT | Não | 0 a 2147483647 | Um valor de semente para geração de números aleatórios, garantindo resultados reproduzíveis (padrão: 1). |
+| `resolução` | COMBO | Sim | `"720p"`<br>`"1080p"` | A resolução do vídeo de saída. |
+| `quadros` | DYNAMICCOMBO | Sim | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Número de transições de quadros-chave (2-9). Selecionar um valor revela dinamicamente as entradas necessárias para cada quadro. |
 
 **Entradas dos Quadros (Reveladas Dinamicamente):**
 Quando você seleciona um valor para `frames` (por exemplo, "3"), o nó exibirá um conjunto correspondente de entradas obrigatórias para cada transição. Para cada quadro `i` de 1 até o número selecionado, você deve fornecer:

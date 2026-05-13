@@ -8,10 +8,10 @@ Edite un vídeo utilizando instrucciones de texto o imágenes de referencia con 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | DICT | Sí | Ver más abajo | Configuración del modelo que contiene la selección del modelo, instrucción, resolución, relación de aspecto e imágenes de referencia opcionales. |
+| `modelo` | DICT | Sí | Ver más abajo | Configuración del modelo que contiene la selección del modelo, instrucción, resolución, relación de aspecto e imágenes de referencia opcionales. |
 | `video` | VIDEO | Sí | - | El vídeo a editar. |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
-| `watermark` | BOOLEAN | No | Verdadero / Falso | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: Falso). |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
+| `marca de agua` | BOOLEAN | No | Verdadero / Falso | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: Falso). |
 
 ### Detalles del Parámetro `model`
 
@@ -19,7 +19,7 @@ El parámetro `model` es un diccionario con los siguientes campos:
 
 | Campo | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-------|--------------|-------------|-------|-------------|
-| `model` | STRING | Sí | `"happyhorse-1.0-video-edit"` | El modelo de edición de vídeo HappyHorse a utilizar. |
+| `modelo` | STRING | Sí | `"happyhorse-1.0-video-edit"` | El modelo de edición de vídeo HappyHorse a utilizar. |
 | `prompt` | STRING | Sí | - | Instrucciones de edición o requisitos de transferencia de estilo. Debe tener al menos 1 carácter de longitud. |
 | `resolution` | STRING | Sí | `"720P"`<br>`"1080P"` | La resolución de salida. |
 | `ratio` | STRING | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | Relación de aspecto. Si no se modifica, se aproxima a la relación de aspecto del vídeo de entrada. |

@@ -7,7 +7,7 @@
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `svg` | SVG | 是 | - | 要保存到磁盘的 SVG 数据 |
-| `filename_prefix` | STRING | 是 | - | 保存文件的前缀。可包含格式化信息，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`，以引用节点中的值。（默认值："svg/ComfyUI"） |
+| `文件名前缀` | STRING | 是 | - | 保存文件的前缀。可包含格式化信息，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`，以引用节点中的值。（默认值："svg/ComfyUI"） |
 
 ## 输出
 

@@ -7,7 +7,7 @@ ModelComputeDtype düğümü, bir modelin işleme sırasında kullandığı hesa
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | MODEL | Evet | - | Yeni bir hesaplama veri türüyle değiştirilecek giriş modeli |
-| `dtype` | STRING | Evet | "default"<br>"fp32"<br>"fp16"<br>"bf16" | Modele uygulanacak hesaplama veri türü (varsayılan: "default") |
+| `veri_türü` | STRING | Evet | "default"<br>"fp32"<br>"fp16"<br>"bf16" | Modele uygulanacak hesaplama veri türü (varsayılan: "default") |
 
 ## Çıktılar
 

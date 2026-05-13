@@ -7,7 +7,7 @@ Este nó redimensiona imagens de forma que a borda mais curta corresponda a um c
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada a ser redimensionada. |
-| `shorter_edge` | INT | Não | 1 a 8192 | Comprimento alvo para a borda mais curta. (padrão: 512) |
+| `borda_menor` | INT | Não | 1 a 8192 | Comprimento alvo para a borda mais curta. (padrão: 512) |
 
 ## Saídas
 

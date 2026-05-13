@@ -7,7 +7,7 @@ Bu düğüm, girdi metin dizesinin sonuna belirtilen bir sonek ekler. Orijinal m
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `text` | STRING | Evet | | Sonekin ekleneceği orijinal metin. |
-| `suffix` | STRING | Hayır | | Metne eklenecek sonek (varsayılan: ""). |
+| `son ek` | STRING | Hayır | | Metne eklenecek sonek (varsayılan: ""). |
 
 ## Çıktılar
 

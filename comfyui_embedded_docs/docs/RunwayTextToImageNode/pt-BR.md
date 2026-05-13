@@ -7,8 +7,8 @@ O nó Runway Text to Image gera imagens a partir de prompts de texto usando o mo
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Prompt de texto para a geração (padrão: "") |
-| `ratio` | COMBO | Sim | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Proporção de aspecto para a imagem gerada |
-| `reference_image` | IMAGE | Não | - | Imagem de referência opcional para orientar a geração |
+| `proporção` | COMBO | Sim | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Proporção de aspecto para a imagem gerada |
+| `imagem_de_referência` | IMAGE | Não | - | Imagem de referência opcional para orientar a geração |
 
 **Observação:** A imagem de referência deve ter dimensões que não excedam 7999x7999 pixels e uma proporção de aspecto entre 0,5 e 2,0. Quando uma imagem de referência é fornecida, ela orienta o processo de geração de imagem.
 

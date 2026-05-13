@@ -6,9 +6,9 @@ O nó **EmptyHunyuanImageLatent** cria um tensor latente vazio com dimensões es
 
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
-| `width` | INT | Sim | 64 a MAX_RESOLUTION | A largura da imagem latente gerada em pixels (padrão: 2048, incremento: 32) |
-| `height` | INT | Sim | 64 a MAX_RESOLUTION | A altura da imagem latente gerada em pixels (padrão: 2048, incremento: 32) |
-| `batch_size` | INT | Sim | 1 a 4096 | O número de amostras latentes a serem geradas em um lote (padrão: 1) |
+| `largura` | INT | Sim | 64 a MAX_RESOLUTION | A largura da imagem latente gerada em pixels (padrão: 2048, incremento: 32) |
+| `altura` | INT | Sim | 64 a MAX_RESOLUTION | A altura da imagem latente gerada em pixels (padrão: 2048, incremento: 32) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | O número de amostras latentes a serem geradas em um lote (padrão: 1) |
 
 ## Saídas
 

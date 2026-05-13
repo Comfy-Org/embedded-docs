@@ -6,16 +6,16 @@ O nó de Edição de Imagem Bria FIBO permite modificar uma imagem existente usa
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"FIBO"` | A versão do modelo a ser usada para edição de imagem. |
-| `image` | IMAGE | Sim | - | A imagem de entrada que você deseja editar. |
+| `modelo` | COMBO | Sim | `"FIBO"` | A versão do modelo a ser usada para edição de imagem. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada que você deseja editar. |
 | `prompt` | STRING | Não | - | A instrução de texto descrevendo como editar a imagem (padrão: vazio). |
-| `negative_prompt` | STRING | Não | - | Texto descrevendo o que você não deseja que apareça na imagem editada (padrão: vazio). |
-| `structured_prompt` | STRING | Não | - | Uma string contendo o prompt de edição estruturada no formato JSON. Use este campo em vez do prompt comum para controle preciso e programático (padrão: vazio). |
-| `seed` | INT | Sim | 1 a 2147483647 | Um número usado para inicializar a geração aleatória, garantindo resultados reproduzíveis (padrão: 1). |
-| `guidance_scale` | FLOAT | Sim | 3.0 a 5.0 | Controla o quão fielmente a imagem gerada segue o prompt. Um valor maior resulta em aderência mais forte (padrão: 3.0). |
-| `steps` | INT | Sim | 20 a 50 | O número de etapas de remoção de ruído que o modelo executará (padrão: 50). |
-| `moderation` | DYNAMICCOMBO | Sim | `"false"`<br>`"true"` | Ativa ou desativa a moderação de conteúdo. Selecionar `"true"` revela opções adicionais de moderação para conteúdo do prompt, entrada visual e saída visual. |
-| `mask` | MASK | Não | - | Uma imagem de máscara opcional. Se fornecida, as edições serão aplicadas apenas às áreas mascaradas da imagem. |
+| `prompt_negativo` | STRING | Não | - | Texto descrevendo o que você não deseja que apareça na imagem editada (padrão: vazio). |
+| `prompt_estruturado` | STRING | Não | - | Uma string contendo o prompt de edição estruturada no formato JSON. Use este campo em vez do prompt comum para controle preciso e programático (padrão: vazio). |
+| `semente` | INT | Sim | 1 a 2147483647 | Um número usado para inicializar a geração aleatória, garantindo resultados reproduzíveis (padrão: 1). |
+| `escala_de_guia` | FLOAT | Sim | 3.0 a 5.0 | Controla o quão fielmente a imagem gerada segue o prompt. Um valor maior resulta em aderência mais forte (padrão: 3.0). |
+| `passos` | INT | Sim | 20 a 50 | O número de etapas de remoção de ruído que o modelo executará (padrão: 50). |
+| `moderação` | DYNAMICCOMBO | Sim | `"false"`<br>`"true"` | Ativa ou desativa a moderação de conteúdo. Selecionar `"true"` revela opções adicionais de moderação para conteúdo do prompt, entrada visual e saída visual. |
+| `máscara` | MASK | Não | - | Uma imagem de máscara opcional. Se fornecida, as edições serão aplicadas apenas às áreas mascaradas da imagem. |
 
 **Restrições Importantes:**
 
@@ -28,7 +28,7 @@ O nó de Edição de Imagem Bria FIBO permite modificar uma imagem existente usa
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `IMAGE` | IMAGE | A imagem editada retornada pela API Bria. |
-| `structured_prompt` | STRING | O prompt estruturado que foi usado ou gerado durante o processo de edição. |
+| `prompt_estruturado` | STRING | O prompt estruturado que foi usado ou gerado durante o processo de edição. |
 
 ---
 **Source fingerprint (SHA-256):** `30148261f43f5bfd14339f5ff1ec250381a615cc05c67eee21b0a2423ebe349d`

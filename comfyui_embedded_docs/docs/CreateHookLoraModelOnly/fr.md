@@ -6,9 +6,9 @@ Ce nœud crée un hook LoRA (Adaptation de Bas Rang) qui s'applique uniquement a
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `lora_name` | STRING | Oui | Plusieurs options disponibles | Le nom du fichier LoRA à charger depuis le dossier loras |
-| `strength_model` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour appliquer le LoRA au composant modèle (par défaut : 1.0) |
-| `prev_hooks` | HOOKS | Non | - | Hooks précédents optionnels à chaîner avec ce hook |
+| `nom_lora` | STRING | Oui | Plusieurs options disponibles | Le nom du fichier LoRA à charger depuis le dossier loras |
+| `force_modele` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour appliquer le LoRA au composant modèle (par défaut : 1.0) |
+| `crochets_precedents` | HOOKS | Non | - | Hooks précédents optionnels à chaîner avec ce hook |
 
 ## Sorties
 

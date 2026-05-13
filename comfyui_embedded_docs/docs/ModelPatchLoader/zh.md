@@ -6,7 +6,7 @@ ModelPatchLoader 节点从 model_patches 文件夹加载专门的模型补丁。
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `name` | STRING | 是 | model_patches 文件夹中所有可用的模型补丁文件 | 从 model_patches 目录加载的模型补丁文件名 |
+| `名称` | STRING | 是 | model_patches 文件夹中所有可用的模型补丁文件 | 从 model_patches 目录加载的模型补丁文件名 |
 
 ## 输出
 

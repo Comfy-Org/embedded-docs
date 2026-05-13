@@ -6,10 +6,10 @@ Este nodo realiza una retopología inteligente en un modelo 3D, creando automát
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model_3d` | FILE3D | Sí | - | Modelo 3D de entrada (GLB u OBJ). El archivo debe estar en formato GLB u OBJ y no puede superar los 200 MB. |
-| `polygon_type` | STRING | Sí | `"triangle"`<br>`"quadrilateral"` | Tipo de composición de la superficie. |
-| `face_level` | STRING | Sí | `"medium"`<br>`"high"`<br>`"low"` | Nivel de reducción de polígonos. |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. (valor predeterminado: 0) |
+| `modelo_3d` | FILE3D | Sí | - | Modelo 3D de entrada (GLB u OBJ). El archivo debe estar en formato GLB u OBJ y no puede superar los 200 MB. |
+| `tipo_de_polígono` | STRING | Sí | `"triangle"`<br>`"quadrilateral"` | Tipo de composición de la superficie. |
+| `nivel_de_caras` | STRING | Sí | `"medium"`<br>`"high"`<br>`"low"` | Nivel de reducción de polígonos. |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. (valor predeterminado: 0) |
 
 **Nota:** El parámetro `seed` se utiliza para activar una re-ejecución del nodo, pero no se garantiza que el resultado final sea el mismo para el mismo valor de semilla.
 

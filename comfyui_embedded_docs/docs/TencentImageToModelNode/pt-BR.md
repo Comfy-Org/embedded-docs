@@ -6,16 +6,16 @@ Este nó utiliza a API Hunyuan3D Pro da Tencent para gerar um modelo 3D a partir
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `"3.0"`<br>`"3.1"` | A versão do modelo Hunyuan3D a ser utilizada. A opção LowPoly não está disponível para o modelo `3.1`. |
-| `image` | IMAGE | Sim | - | A imagem de entrada principal usada para gerar o modelo 3D. Deve ter pelo menos 128x128 pixels. |
-| `image_left` | IMAGE | Não | - | Uma imagem opcional do lado esquerdo do objeto para geração multivista. Deve ter pelo menos 128x128 pixels. |
-| `image_right` | IMAGE | Não | - | Uma imagem opcional do lado direito do objeto para geração multivista. Deve ter pelo menos 128x128 pixels. |
-| `image_back` | IMAGE | Não | - | Uma imagem opcional da parte traseira do objeto para geração multivista. Deve ter pelo menos 128x128 pixels. |
-| `face_count` | INT | Sim | 3000 - 1500000 | O número alvo de faces para o modelo 3D gerado (padrão: 500000). |
-| `generate_type` | DYNAMICCOMBO | Sim | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | O tipo de modelo 3D a ser gerado. Selecionar uma opção revela parâmetros adicionais relacionados. |
-| `generate_type.pbr` | BOOLEAN | Não | - | Ativa a geração de materiais com Renderização Baseada em Física (PBR). Este parâmetro só fica visível quando `generate_type` está definido como "Normal" ou "LowPoly" (padrão: False). |
-| `generate_type.polygon_type` | COMBO | Não | `"triangle"`<br>`"quadrilateral"` | O tipo de polígono a ser usado para a malha. Este parâmetro só fica visível quando `generate_type` está definido como "LowPoly". |
-| `seed` | INT | Sim | 0 - 2147483647 | Um valor de semente para o processo de geração. A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente (padrão: 0). |
+| `modelo` | COMBO | Sim | `"3.0"`<br>`"3.1"` | A versão do modelo Hunyuan3D a ser utilizada. A opção LowPoly não está disponível para o modelo `3.1`. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada principal usada para gerar o modelo 3D. Deve ter pelo menos 128x128 pixels. |
+| `imagem_esquerda` | IMAGE | Não | - | Uma imagem opcional do lado esquerdo do objeto para geração multivista. Deve ter pelo menos 128x128 pixels. |
+| `imagem_direita` | IMAGE | Não | - | Uma imagem opcional do lado direito do objeto para geração multivista. Deve ter pelo menos 128x128 pixels. |
+| `imagem_traseira` | IMAGE | Não | - | Uma imagem opcional da parte traseira do objeto para geração multivista. Deve ter pelo menos 128x128 pixels. |
+| `número_de_faces` | INT | Sim | 3000 - 1500000 | O número alvo de faces para o modelo 3D gerado (padrão: 500000). |
+| `tipo_de_geração` | DYNAMICCOMBO | Sim | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | O tipo de modelo 3D a ser gerado. Selecionar uma opção revela parâmetros adicionais relacionados. |
+| `generate_type.pbr` | BOOLEAN | Não | - | Ativa a geração de materiais com Renderização Baseada em Física (PBR). Este parâmetro só fica visível quando `tipo_de_geração` está definido como "Normal" ou "LowPoly" (padrão: False). |
+| `generate_type.polygon_type` | COMBO | Não | `"triangle"`<br>`"quadrilateral"` | O tipo de polígono a ser usado para a malha. Este parâmetro só fica visível quando `tipo_de_geração` está definido como "LowPoly". |
+| `semente` | INT | Sim | 0 - 2147483647 | Um valor de semente para o processo de geração. A semente controla se o nó deve ser executado novamente; os resultados não são determinísticos independentemente da semente (padrão: 0). |
 
 **Nota:** Todas as imagens de entrada devem ter largura e altura mínimas de 128 pixels. As imagens são redimensionadas automaticamente se excederem 4900 pixels no lado mais longo.
 

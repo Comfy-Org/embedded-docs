@@ -6,8 +6,8 @@ O nó TripoRetargetNode aplica animações predefinidas a modelos de personagens
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `original_model_task_id` | RIG_TASK_ID | Sim | - | O ID da tarefa do modelo 3D rigado processado anteriormente ao qual aplicar a animação |
-| `animation` | STRING | Sim | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | A predefinição de animação a ser aplicada ao modelo 3D. As opções incluem animações humanoides (parado, andar, correr, mergulhar, escalar, pular, golpear, atirar, ferido, cair, girar) e animações de criaturas (andar quadrúpede, andar hexápode, andar octópode, marcha serpentina, marcha aquática). |
+| `id_da_tarefa_do_modelo_original` | RIG_TASK_ID | Sim | - | O ID da tarefa do modelo 3D rigado processado anteriormente ao qual aplicar a animação |
+| `animação` | STRING | Sim | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | A predefinição de animação a ser aplicada ao modelo 3D. As opções incluem animações humanoides (parado, andar, correr, mergulhar, escalar, pular, golpear, atirar, ferido, cair, girar) e animações de criaturas (andar quadrúpede, andar hexápode, andar octópode, marcha serpentina, marcha aquática). |
 | `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | Não | - | Token de autenticação para acesso à API Comfy.org (parâmetro oculto) |
 | `api_key_comfy_org` | API_KEY_COMFY_ORG | Não | - | Chave de API para acesso ao serviço Comfy.org (parâmetro oculto) |
 | `unique_id` | UNIQUE_ID | Não | - | Identificador único para rastreamento da operação (parâmetro oculto) |

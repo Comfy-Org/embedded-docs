@@ -6,10 +6,10 @@ Le nœud RegexMatch vérifie si une chaîne de texte contient une correspondance
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte dans laquelle rechercher des correspondances |
-| `regex_pattern` | STRING | Oui | - | Le motif d'expression régulière à comparer avec la chaîne |
-| `case_insensitive` | BOOLEAN | Non | - | Indique s'il faut ignorer la casse lors de la correspondance (par défaut : True) |
-| `multiline` | BOOLEAN | Non | - | Indique s'il faut activer le mode multiligne pour la correspondance regex (par défaut : False) |
+| `chaîne` | STRING | Oui | - | La chaîne de texte dans laquelle rechercher des correspondances |
+| `motif_regex` | STRING | Oui | - | Le motif d'expression régulière à comparer avec la chaîne |
+| `insensible_à_la_casse` | BOOLEAN | Non | - | Indique s'il faut ignorer la casse lors de la correspondance (par défaut : True) |
+| `multiligne` | BOOLEAN | Non | - | Indique s'il faut activer le mode multiligne pour la correspondance regex (par défaut : False) |
 | `dotall` | BOOLEAN | Non | - | Indique s'il faut activer le mode dotall pour la correspondance regex (par défaut : False) |
 
 ## Sorties

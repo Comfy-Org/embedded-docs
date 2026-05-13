@@ -8,10 +8,10 @@ Nó de Vídeo de Sincronização Labial com Texto Kling sincroniza os movimentos
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Sim | - | Arquivo de vídeo de entrada para sincronização labial |
-| `text` | STRING | Sim | - | Conteúdo de texto para geração de vídeo com sincronização labial. Obrigatório quando o modo é text2video. Comprimento máximo de 120 caracteres. |
-| `voice` | COMBO | Não | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Seleção de voz para o áudio de sincronização labial (padrão: "Melody") |
-| `voice_speed` | FLOAT | Não | 0.8-2.0 | Taxa de fala. Faixa válida: 0,8~2,0, precisão de uma casa decimal. (padrão: 1) |
+| `vídeo` | VIDEO | Sim | - | Arquivo de vídeo de entrada para sincronização labial |
+| `texto` | STRING | Sim | - | Conteúdo de texto para geração de vídeo com sincronização labial. Obrigatório quando o modo é text2video. Comprimento máximo de 120 caracteres. |
+| `voz` | COMBO | Não | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Seleção de voz para o áudio de sincronização labial (padrão: "Melody") |
+| `velocidade_da_voz` | FLOAT | Não | 0.8-2.0 | Taxa de fala. Faixa válida: 0,8~2,0, precisão de uma casa decimal. (padrão: 1) |
 
 **Requisitos de Vídeo:**
 

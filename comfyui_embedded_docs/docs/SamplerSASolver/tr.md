@@ -10,13 +10,13 @@ SamplerSASolver düğümü, difüzyon modelleri için özel bir örnekleme algor
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Örnekleme için kullanılacak difüzyon modeli |
 | `eta` | FLOAT | Hayır | 0.0 - 10.0 | Adım boyutu ölçekleme faktörünü kontrol eder (varsayılan: 1.0) |
-| `sde_start_percent` | FLOAT | Hayır | 0.0 - 1.0 | SDE örneklemesi için başlangıç yüzdesi (varsayılan: 0.2) |
-| `sde_end_percent` | FLOAT | Hayır | 0.0 - 1.0 | SDE örneklemesi için bitiş yüzdesi (varsayılan: 0.8) |
-| `s_noise` | FLOAT | Hayır | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
-| `predictor_order` | INT | Hayır | 1 - 6 | Çözücüdeki tahminci bileşeninin sırası (varsayılan: 3) |
-| `corrector_order` | INT | Hayır | 0 - 6 | Çözücüdeki düzeltici bileşeninin sırası (varsayılan: 4) |
-| `use_pece` | BOOLEAN | Hayır | - | PECE (Tahmin-Değerlendir-Düzelt-Değerlendir) yöntemini etkinleştirir veya devre dışı bırakır |
-| `simple_order_2` | BOOLEAN | Hayır | - | Basitleştirilmiş ikinci derece hesaplamaları etkinleştirir veya devre dışı bırakır |
+| `sde_başlangıç_yüzdesi` | FLOAT | Hayır | 0.0 - 1.0 | SDE örneklemesi için başlangıç yüzdesi (varsayılan: 0.2) |
+| `sde_bitiş_yüzdesi` | FLOAT | Hayır | 0.0 - 1.0 | SDE örneklemesi için bitiş yüzdesi (varsayılan: 0.8) |
+| `s_gürültü` | FLOAT | Hayır | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
+| `tahminci_sırası` | INT | Hayır | 1 - 6 | Çözücüdeki tahminci bileşeninin sırası (varsayılan: 3) |
+| `düzeltici_sırası` | INT | Hayır | 0 - 6 | Çözücüdeki düzeltici bileşeninin sırası (varsayılan: 4) |
+| `pece_kullan` | BOOLEAN | Hayır | - | PECE (Tahmin-Değerlendir-Düzelt-Değerlendir) yöntemini etkinleştirir veya devre dışı bırakır |
+| `basit_sıra_2` | BOOLEAN | Hayır | - | Basitleştirilmiş ikinci derece hesaplamaları etkinleştirir veya devre dışı bırakır |
 
 ## Çıktılar
 

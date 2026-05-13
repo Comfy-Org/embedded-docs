@@ -7,10 +7,10 @@ Le nœud RepeatImageBatch est conçu pour dupliquer une image donnée un nombre 
 | Champ    | Type de données | Description                                                                 |
 |----------|-----------------|-----------------------------------------------------------------------------|
 | `image`  | `IMAGE`         | Le paramètre `image` représente l’image à dupliquer. Il est essentiel pour définir le contenu qui sera reproduit dans l’ensemble du lot. |
-| `amount` | `INT`           | Le paramètre `amount` spécifie le nombre de fois que l’image d’entrée doit être dupliquée. Il influence directement la taille du lot de sortie, permettant une création flexible de lots. |
+| `quantité` | `INT`           | Le paramètre `quantité` spécifie le nombre de fois que l’image d’entrée doit être dupliquée. Il influence directement la taille du lot de sortie, permettant une création flexible de lots. |
 
 ## Sorties
 
 | Champ   | Type de données | Description                                                              |
 |---------|-----------------|--------------------------------------------------------------------------|
-| `image` | `IMAGE`         | La sortie est un lot d’images, chacune identique à l’image d’entrée, dupliquées selon la valeur spécifiée dans `amount`. |
+| `image` | `IMAGE`         | La sortie est un lot d’images, chacune identique à l’image d’entrée, dupliquées selon la valeur spécifiée dans `quantité`. |

@@ -6,9 +6,9 @@ Le nœud EmptyFlux2LatentImage crée une représentation latente vide. Il génè
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `width` | INT | Oui | 16 à 8192 | La largeur de l'image finale à générer. La largeur latente sera cette valeur divisée par 16. La valeur par défaut est 1024. |
-| `height` | INT | Oui | 16 à 8192 | La hauteur de l'image finale à générer. La hauteur latente sera cette valeur divisée par 16. La valeur par défaut est 1024. |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre d'échantillons latents à générer en un seul lot. La valeur par défaut est 1. |
+| `largeur` | INT | Oui | 16 à 8192 | La largeur de l'image finale à générer. La largeur latente sera cette valeur divisée par 16. La valeur par défaut est 1024. |
+| `hauteur` | INT | Oui | 16 à 8192 | La hauteur de l'image finale à générer. La hauteur latente sera cette valeur divisée par 16. La valeur par défaut est 1024. |
+| `taille_lot` | INT | Non | 1 à 4096 | Le nombre d'échantillons latents à générer en un seul lot. La valeur par défaut est 1. |
 
 **Remarque :** Les entrées `width` et `height` doivent être divisibles par 16, car le nœud les divise en interne par ce facteur pour créer les dimensions latentes.
 

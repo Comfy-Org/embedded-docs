@@ -16,7 +16,7 @@ Este nodo procesa una entrada de audio para extraer características que pueden 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | Un diccionario que contiene las características de audio procesadas, la velocidad de fotogramas calculada (fps) y la escala de inyección de audio. Esta salida se utiliza para condicionar el modelo de generación de video. |
+| `fps_string` | AUDIO_ENCODER_OUTPUT | Un diccionario que contiene las características de audio procesadas, la velocidad de fotogramas calculada (fps) y la escala de inyección de audio. Esta salida se utiliza para condicionar el modelo de generación de video. |
 | `fps_string` | STRING | Una cadena de texto que describe la velocidad de fotogramas calculada (fps) basada en la duración del audio y el número de fotogramas de video. Esta cadena está diseñada para usarse en el prompt del modelo de video. |
 
 ---

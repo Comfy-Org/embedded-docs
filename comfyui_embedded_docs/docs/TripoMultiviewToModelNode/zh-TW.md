@@ -8,10 +8,10 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 物體的正面視角影像（必要） |
-| `image_left` | IMAGE | 否 | - | 物體的左側視角影像 |
-| `image_back` | IMAGE | 否 | - | 物體的背面視角影像 |
-| `image_right` | IMAGE | 否 | - | 物體的右側視角影像 |
+| `圖像` | IMAGE | 是 | - | 物體的正面視角影像（必要） |
+| `左側圖像` | IMAGE | 否 | - | 物體的左側視角影像 |
+| `後方圖像` | IMAGE | 否 | - | 物體的背面視角影像 |
+| `右側圖像` | IMAGE | 否 | - | 物體的右側視角影像 |
 | `model_version` | COMBO | 否 | 多個選項可用 | 用於生成的模型版本 |
 | `orientation` | COMBO | 否 | 多個選項可用 | 3D 模型的方向設定（預設值："default"） |
 | `texture` | BOOLEAN | 否 | - | 是否為模型生成紋理（預設值：True） |
@@ -22,7 +22,7 @@
 | `texture_alignment` | COMBO | 否 | `"original_image"`<br>`"geometry"` | 紋理對齊模型的方法（預設值："original_image"） |
 | `face_limit` | INT | 否 | -1 至 500000 | 生成模型中的最大面數。設為 -1 表示無限制（預設值：-1） |
 | `quad` | BOOLEAN | 否 | - | 此參數已棄用，無實際作用（預設值：False） |
-| `geometry_quality` | COMBO | 否 | `"standard"`<br>`"detailed"` | 幾何生成的品質等級（預設值："standard"） |
+| `幾何品質` | COMBO | 否 | `"standard"`<br>`"detailed"` | 幾何生成的品質等級（預設值："standard"） |
 
 **注意：** 正面影像（`image`）始終為必要項目。必須提供至少一個額外視角的影像（`image_left`、`image_back` 或 `image_right`）才能進行多視圖處理。
 
@@ -30,8 +30,8 @@
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成的 3D 模型檔案路徑或識別碼（僅為向後相容性保留） |
-| `model task_id` | MODEL_TASK_ID | 用於追蹤模型生成過程的任務識別碼 |
+| `模型任務 ID` | STRING | 生成的 3D 模型檔案路徑或識別碼（僅為向後相容性保留） |
+| `GLB` | MODEL_TASK_ID | 用於追蹤模型生成過程的任務識別碼 |
 | `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型檔案 |
 
 ---

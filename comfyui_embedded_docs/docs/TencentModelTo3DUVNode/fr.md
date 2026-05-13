@@ -6,15 +6,15 @@ Ce nœud utilise l'API Tencent Hunyuan3D pour effectuer un dépliage UV sur un m
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_3d` | FILE3D | Oui | GLB<br>OBJ<br>FBX | Modèle 3D d'entrée (GLB, OBJ ou FBX). Le modèle doit comporter moins de 30 000 faces. |
-| `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine (par défaut : 1). Cela contrôle si le nœud doit être réexécuté, mais les résultats sont non déterministes quelle que soit la valeur de la graine. |
+| `modèle_3d` | FILE3D | Oui | GLB<br>OBJ<br>FBX | Modèle 3D d'entrée (GLB, OBJ ou FBX). Le modèle doit comporter moins de 30 000 faces. |
+| `graine` | INT | Non | 0 à 2147483647 | Une valeur de graine (par défaut : 1). Cela contrôle si le nœud doit être réexécuté, mais les résultats sont non déterministes quelle que soit la valeur de la graine. |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `OBJ` | FILE3D | Le fichier de modèle 3D traité au format OBJ. |
-| `FBX` | FILE3D | Le fichier de modèle 3D traité au format FBX. |
+| `FBX` | FILE3D | Le fichier de modèle 3D traité au format OBJ. |
+| `uv_image` | FILE3D | Le fichier de modèle 3D traité au format FBX. |
 | `uv_image` | IMAGE | L'image de texture UV générée. |
 
 ---

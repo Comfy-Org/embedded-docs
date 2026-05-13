@@ -6,13 +6,13 @@ El nodo ViduExtendVideoNode genera fotogramas adicionales para extender la durac
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"viduq2-pro"`<br>`"viduq2-turbo"` | El modelo de IA a utilizar para la extensión de video. Al seleccionar un modelo, se muestran sus ajustes específicos de duración y resolución. |
+| `modelo` | COMBO | Sí | `"viduq2-pro"`<br>`"viduq2-turbo"` | El modelo de IA a utilizar para la extensión de video. Al seleccionar un modelo, se muestran sus ajustes específicos de duración y resolución. |
 | `model.duration` | INT | Sí | 1 a 7 | La duración del video extendido en segundos (predeterminado: 4). Este ajuste aparece después de seleccionar un modelo. |
 | `model.resolution` | COMBO | Sí | `"720p"`<br>`"1080p"` | La resolución del video de salida. Este ajuste aparece después de seleccionar un modelo. |
 | `video` | VIDEO | Sí | - | El video de origen a extender. |
 | `prompt` | STRING | No | - | Una descripción textual opcional para guiar el contenido del video extendido (máximo 2000 caracteres, predeterminado: vacío). |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
-| `end_frame` | IMAGE | No | - | Una imagen opcional para usar como fotograma final objetivo de la extensión. Si se proporciona, su relación de aspecto debe estar entre 1:4 y 4:1, y sus dimensiones deben ser de al menos 128x128 píxeles. |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 1). |
+| `fotograma_final` | IMAGE | No | - | Una imagen opcional para usar como fotograma final objetivo de la extensión. Si se proporciona, su relación de aspecto debe estar entre 1:4 y 4:1, y sus dimensiones deben ser de al menos 128x128 píxeles. |
 
 **Nota:** El `video` de origen debe tener una duración entre 4 y 55 segundos.
 

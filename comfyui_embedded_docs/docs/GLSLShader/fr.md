@@ -13,8 +13,8 @@ Le nœud Shader GLSL applique un code de fragment shader GLSL ES personnalisé a
 | `images` | IMAGE | Oui | 1 à 8 images | Images d’entrée à traiter par le shader. Les images sont accessibles sous les noms `u_image0` à `u_image7` (sampler2D) dans le code du shader. |
 | `floats` | FLOAT | Non | 0 à 8 flottants | Valeurs uniformes flottantes pour le shader. Les flottants sont accessibles sous les noms `u_float0` à `u_float7` dans le code du shader. Par défaut : 0.0. |
 | `ints` | INT | Non | 0 à 8 entiers | Valeurs uniformes entières pour le shader. Les entiers sont accessibles sous les noms `u_int0` à `u_int7` dans le code du shader. Par défaut : 0. |
-| `bools` | BOOLEAN | Non | 0 à 8 booléens | Valeurs uniformes booléennes pour le shader. Les booléens sont accessibles sous les noms `u_bool0` à `u_bool7` (bool) dans le code du shader. Par défaut : False. |
-| `curves` | CURVE | Non | 0 à 8 courbes | Valeurs uniformes de courbes pour le shader. Les courbes sont accessibles sous les noms `u_curve0` à `u_curve7` (sampler2D, LUT 1D) dans le code du shader. Échantillonnez avec `texture(u_curve0, vec2(x, 0.5)).r`. |
+| `booléens` | BOOLEAN | Non | 0 à 8 booléens | Valeurs uniformes booléennes pour le shader. Les booléens sont accessibles sous les noms `u_bool0` à `u_bool7` (bool) dans le code du shader. Par défaut : False. |
+| `courbes` | CURVE | Non | 0 à 8 courbes | Valeurs uniformes de courbes pour le shader. Les courbes sont accessibles sous les noms `u_curve0` à `u_curve7` (sampler2D, LUT 1D) dans le code du shader. Échantillonnez avec `texture(u_curve0, vec2(x, 0.5)).r`. |
 
 **Remarques :**
 
@@ -27,9 +27,9 @@ Le nœud Shader GLSL applique un code de fragment shader GLSL ES personnalisé a
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `IMAGE0` | IMAGE | Première image de sortie du shader. Accessible via `layout(location = 0) out vec4 fragColor0` dans le code du shader. |
-| `IMAGE1` | IMAGE | Deuxième image de sortie du shader. Accessible via `layout(location = 1) out vec4 fragColor1` dans le code du shader. |
-| `IMAGE2` | IMAGE | Troisième image de sortie du shader. Accessible via `layout(location = 2) out vec4 fragColor2` dans le code du shader. |
+| `IMAGE1` | IMAGE | Première image de sortie du shader. Accessible via `layout(location = 0) out vec4 fragColor0` dans le code du shader. |
+| `IMAGE2` | IMAGE | Deuxième image de sortie du shader. Accessible via `layout(location = 1) out vec4 fragColor1` dans le code du shader. |
+| `IMAGE3` | IMAGE | Troisième image de sortie du shader. Accessible via `layout(location = 2) out vec4 fragColor2` dans le code du shader. |
 | `IMAGE3` | IMAGE | Quatrième image de sortie du shader. Accessible via `layout(location = 3) out vec4 fragColor3` dans le code du shader. |
 
 ---

@@ -8,15 +8,15 @@ StableCascade_SuperResolutionControlnet 節點用於準備 Stable Cascade 超解
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 要進行超解析度處理的輸入影像 |
+| `影像` | IMAGE | 是 | - | 要進行超解析度處理的輸入影像 |
 | `vae` | VAE | 是 | - | 用於編碼輸入影像的 VAE 模型 |
 
 ## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `controlnet_input` | IMAGE | 適合 controlnet 輸入的編碼影像表示 |
-| `stage_c` | LATENT | 用於 Stable Cascade 處理階段 C 的佔位潛在表示 |
+| `stage_c` | IMAGE | 適合 controlnet 輸入的編碼影像表示 |
+| `stage_b` | LATENT | 用於 Stable Cascade 處理階段 C 的佔位潛在表示 |
 | `stage_b` | LATENT | 用於 Stable Cascade 處理階段 B 的佔位潛在表示 |
 
 ---

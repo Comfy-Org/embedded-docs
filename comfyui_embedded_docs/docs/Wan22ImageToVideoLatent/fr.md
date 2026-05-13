@@ -7,11 +7,11 @@ Le nœud Wan22ImageToVideoLatent crée des représentations latentes vidéo à p
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `vae` | VAE | Oui | - | Le modèle VAE utilisé pour encoder les images dans l'espace latent |
-| `width` | INT | Oui | 32 à MAX_RESOLUTION | La largeur de la vidéo de sortie en pixels (par défaut : 1280, pas : 32) |
-| `height` | INT | Oui | 32 à MAX_RESOLUTION | La hauteur de la vidéo de sortie en pixels (par défaut : 704, pas : 32) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Le nombre de trames dans la séquence vidéo (par défaut : 49, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Le nombre de lots à générer (par défaut : 1) |
-| `start_image` | IMAGE | Non | - | Séquence d'images de départ facultative à encoder dans la vidéo latente |
+| `largeur` | INT | Oui | 32 à MAX_RESOLUTION | La largeur de la vidéo de sortie en pixels (par défaut : 1280, pas : 32) |
+| `hauteur` | INT | Oui | 32 à MAX_RESOLUTION | La hauteur de la vidéo de sortie en pixels (par défaut : 704, pas : 32) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Le nombre de trames dans la séquence vidéo (par défaut : 49, pas : 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Le nombre de lots à générer (par défaut : 1) |
+| `image_de_départ` | IMAGE | Non | - | Séquence d'images de départ facultative à encoder dans la vidéo latente |
 
 **Remarque :** Lorsque `start_image` est fourni, le nœud encode la séquence d'images dans les premières trames de l'espace latent et génère un masque de bruit correspondant. Les paramètres de largeur et de hauteur doivent être divisibles par 16 pour des dimensions d'espace latent appropriées. Le paramètre `length` détermine le nombre de trames dans la vidéo latente ; la dimension temporelle de l'espace latent est calculée comme suit : `((length - 1) // 4) + 1`.
 

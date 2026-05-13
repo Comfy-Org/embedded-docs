@@ -35,10 +35,10 @@ El nodo Runway Image to Video (Gen3a Turbo) genera un video a partir de un únic
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | Texto de instrucción para la generación (por defecto: "") |
-| `start_frame` | IMAGE | Sí | N/A | Fotograma inicial que se utilizará para el video |
-| `duration` | COMBO | Sí | `"5"`<br>`"10"` | Duración del video en segundos (por defecto: "5") |
-| `ratio` | COMBO | Sí | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Relación de aspecto del video generado (por defecto: "1280x720") |
-| `seed` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación (por defecto: 0) |
+| `fotograma_inicial` | IMAGE | Sí | N/A | Fotograma inicial que se utilizará para el video |
+| `duración` | COMBO | Sí | `"5"`<br>`"10"` | Duración del video en segundos (por defecto: "5") |
+| `relación` | COMBO | Sí | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Relación de aspecto del video generado (por defecto: "1280x720") |
+| `semilla` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación (por defecto: 0) |
 
 **Restricciones de los parámetros:**
 

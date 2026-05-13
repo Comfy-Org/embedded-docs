@@ -7,12 +7,12 @@ O nó CosmosImageToVideoLatent cria representações latentes de vídeo a partir
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar imagens no espaço latente |
-| `width` | INT | Sim | 16 a MAX_RESOLUTION | A largura do vídeo de saída em pixels (padrão: 1280) |
-| `height` | INT | Sim | 16 a MAX_RESOLUTION | A altura do vídeo de saída em pixels (padrão: 704) |
-| `length` | INT | Sim | 1 a MAX_RESOLUTION | O número de quadros na sequência de vídeo (padrão: 121) |
-| `batch_size` | INT | Sim | 1 a 4096 | O número de lotes latentes a serem gerados (padrão: 1) |
-| `start_image` | IMAGE | Não | - | Imagem opcional para codificar no início da sequência de vídeo |
-| `end_image` | IMAGE | Não | - | Imagem opcional para codificar no final da sequência de vídeo |
+| `largura` | INT | Sim | 16 a MAX_RESOLUTION | A largura do vídeo de saída em pixels (padrão: 1280) |
+| `altura` | INT | Sim | 16 a MAX_RESOLUTION | A altura do vídeo de saída em pixels (padrão: 704) |
+| `comprimento` | INT | Sim | 1 a MAX_RESOLUTION | O número de quadros na sequência de vídeo (padrão: 121) |
+| `tamanho_do_lote` | INT | Sim | 1 a 4096 | O número de lotes latentes a serem gerados (padrão: 1) |
+| `imagem_inicial` | IMAGE | Não | - | Imagem opcional para codificar no início da sequência de vídeo |
+| `imagem_final` | IMAGE | Não | - | Imagem opcional para codificar no final da sequência de vídeo |
 
 **Observação:** Quando nem `start_image` nem `end_image` são fornecidos, o nó retorna um latente em branco sem nenhuma máscara de ruído. Quando qualquer imagem é fornecida, as seções correspondentes do latente são codificadas e mascaradas adequadamente.
 

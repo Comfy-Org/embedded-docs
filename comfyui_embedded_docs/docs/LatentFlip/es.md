@@ -6,8 +6,8 @@ El nodo LatentFlip está diseñado para manipular representaciones latentes volt
 
 | Parámetro     | Tipo de Dato | Descripción |
 |---------------|--------------|-------------|
-| `samples`     | `LATENT`     | El parámetro 'samples' representa las representaciones latentes que se van a voltear. La operación de volteo altera estas representaciones, ya sea vertical u horizontalmente, según el parámetro 'flip_method', transformando así los datos en el espacio latente. |
-| `flip_method` | COMBO[STRING] | El parámetro 'flip_method' especifica el eje a lo largo del cual se voltearán las muestras latentes. Puede ser 'x-axis: vertically' (eje X: verticalmente) o 'y-axis: horizontally' (eje Y: horizontalmente), determinando la dirección del volteo y, por lo tanto, la naturaleza de la transformación aplicada a las representaciones latentes. |
+| `muestras`     | `LATENT`     | El parámetro 'samples' representa las representaciones latentes que se van a voltear. La operación de volteo altera estas representaciones, ya sea vertical u horizontalmente, según el parámetro 'flip_method', transformando así los datos en el espacio latente. |
+| `método_volteo` | COMBO[STRING] | El parámetro 'flip_method' especifica el eje a lo largo del cual se voltearán las muestras latentes. Puede ser 'x-axis: vertically' (eje X: verticalmente) o 'y-axis: horizontally' (eje Y: horizontalmente), determinando la dirección del volteo y, por lo tanto, la naturaleza de la transformación aplicada a las representaciones latentes. |
 
 ## Salidas
 

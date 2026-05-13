@@ -6,7 +6,7 @@ El nodo LaplaceScheduler genera una secuencia de valores sigma que siguen una di
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `steps` | INT | Sí | 1 a 10000 | Número de pasos de muestreo en el programa (predeterminado: 20) |
+| `pasos` | INT | Sí | 1 a 10000 | Número de pasos de muestreo en el programa (predeterminado: 20) |
 | `sigma_max` | FLOAT | Sí | 0.0 a 5000.0 | Valor sigma máximo al inicio del programa (predeterminado: 14.614642) |
 | `sigma_min` | FLOAT | Sí | 0.0 a 5000.0 | Valor sigma mínimo al final del programa (predeterminado: 0.0291675) |
 | `mu` | FLOAT | Sí | -10.0 a 10.0 | Parámetro de media para la distribución de Laplace (predeterminado: 0.0) |

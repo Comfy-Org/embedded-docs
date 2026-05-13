@@ -34,8 +34,8 @@ El nodo WanMoveTracksFromCoords crea trayectorias de movimiento a partir de una 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `track_coords` | STRING | No | N/A | Una cadena con formato JSON que contiene los datos de coordenadas para las trayectorias. El valor predeterminado es una lista vacía (`"[]"`). |
-| `track_mask` | MASK | No | N/A | Una máscara opcional. Cuando se proporciona, el nodo la utiliza para determinar la visibilidad de cada trayectoria por fotograma. |
+| `coordenadas_de_pista` | STRING | No | N/A | Una cadena con formato JSON que contiene los datos de coordenadas para las trayectorias. El valor predeterminado es una lista vacía (`"[]"`). |
+| `máscara_de_pista` | MASK | No | N/A | Una máscara opcional. Cuando se proporciona, el nodo la utiliza para determinar la visibilidad de cada trayectoria por fotograma. |
 
 **Nota:** La entrada `track_coords` espera una estructura JSON específica. Debe ser una lista de trayectorias, donde cada trayectoria es una lista de fotogramas, y cada fotograma es un objeto con coordenadas `x` y `y`. El número de fotogramas debe ser consistente en todas las trayectorias.
 
@@ -43,7 +43,7 @@ El nodo WanMoveTracksFromCoords crea trayectorias de movimiento a partir de una 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `tracks` | TRACKS | Los datos de trayectoria generados, que contienen las coordenadas de la ruta y la información de visibilidad para cada trayectoria. |
+| `longitud_de_pista` | TRACKS | Los datos de trayectoria generados, que contienen las coordenadas de la ruta y la información de visibilidad para cada trayectoria. |
 | `track_length` | INT | El número total de fotogramas en las trayectorias generadas. |
 
 ---

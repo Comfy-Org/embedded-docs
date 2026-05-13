@@ -6,8 +6,8 @@ O nó CheckpointLoader carrega um checkpoint de modelo pré-treinado junto com s
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `config_name` | STRING | Sim | Arquivos de configuração disponíveis | O arquivo de configuração que define a arquitetura e as configurações do modelo |
-| `ckpt_name` | STRING | Sim | Arquivos de checkpoint disponíveis | O arquivo de checkpoint contendo os pesos e parâmetros do modelo treinado |
+| `nome_config` | STRING | Sim | Arquivos de configuração disponíveis | O arquivo de configuração que define a arquitetura e as configurações do modelo |
+| `nome_ckpt` | STRING | Sim | Arquivos de checkpoint disponíveis | O arquivo de checkpoint contendo os pesos e parâmetros do modelo treinado |
 
 **Observação:** Este nó exige que tanto um arquivo de configuração quanto um arquivo de checkpoint sejam selecionados. O arquivo de configuração deve corresponder à arquitetura do arquivo de checkpoint que está sendo carregado.
 

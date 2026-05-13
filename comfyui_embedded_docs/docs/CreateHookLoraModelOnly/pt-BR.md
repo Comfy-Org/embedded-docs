@@ -7,8 +7,8 @@ Este nó cria um hook LoRA (Adaptação de Baixo Posto) que se aplica apenas ao 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `lora_name` | STRING | Sim | Múltiplas opções disponíveis | O nome do arquivo LoRA a ser carregado da pasta loras |
-| `strength_model` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade para aplicar o LoRA ao componente do modelo (padrão: 1.0) |
-| `prev_hooks` | HOOKS | Não | - | Hooks anteriores opcionais para encadear com este hook |
+| `força_modelo` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de intensidade para aplicar o LoRA ao componente do modelo (padrão: 1.0) |
+| `hooks_anteriores` | HOOKS | Não | - | Hooks anteriores opcionais para encadear com este hook |
 
 ## Saídas
 

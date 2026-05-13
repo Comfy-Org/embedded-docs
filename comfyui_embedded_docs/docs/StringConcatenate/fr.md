@@ -8,7 +8,7 @@ Le nœud StringConcatenate combine deux chaînes de texte en une seule en les jo
 |-----------|-----------------|--------|-------|-------------|
 | `string_a` | STRING | Oui | - | La première chaîne de texte à concaténer |
 | `string_b` | STRING | Oui | - | La deuxième chaîne de texte à concaténer |
-| `delimiter` | STRING | Non | - | Le caractère ou la chaîne à insérer entre les deux chaînes d’entrée (par défaut : chaîne vide) |
+| `délimiteur` | STRING | Non | - | Le caractère ou la chaîne à insérer entre les deux chaînes d’entrée (par défaut : chaîne vide) |
 
 ## Sorties
 

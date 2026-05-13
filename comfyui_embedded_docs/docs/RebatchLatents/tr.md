@@ -6,8 +6,8 @@ RebatchLatents düğümü, belirtilen bir grup boyutuna göre bir dizi gizli tem
 
 | Parametre     | Veri Türü | Açıklama |
 |---------------|-------------|-------------|
-| `latents`     | `LATENT`    | 'latents' parametresi, yeniden gruplandırılacak giriş gizli temsillerini temsil eder. Çıktı grubunun yapısını ve içeriğini belirlemede kritik öneme sahiptir. |
-| `batch_size`  | `INT`       | 'batch_size' parametresi, çıktıda grup başına istenen örnek sayısını belirtir. Giriş gizli temsillerinin yeni gruplara ayrılmasını ve gruplandırılmasını doğrudan etkiler. |
+| `gizli_değişkenler`     | `LATENT`    | 'latents' parametresi, yeniden gruplandırılacak giriş gizli temsillerini temsil eder. Çıktı grubunun yapısını ve içeriğini belirlemede kritik öneme sahiptir. |
+| `toplu_boyut`  | `INT`       | 'batch_size' parametresi, çıktıda grup başına istenen örnek sayısını belirtir. Giriş gizli temsillerinin yeni gruplara ayrılmasını ve gruplandırılmasını doğrudan etkiler. |
 
 ## Çıktılar
 

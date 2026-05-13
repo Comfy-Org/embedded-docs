@@ -6,8 +6,8 @@ O nó WavespeedFlashVSRNode é um upscaler de vídeo rápido e de alta qualidade
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `video` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada a ser ampliado. Deve estar no formato contêiner MP4 com duração entre 5 segundos e 10 minutos. |
-| `target_resolution` | STRING | Sim | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | A resolução desejada para o vídeo de saída ampliado. |
+| `vídeo` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada a ser ampliado. Deve estar no formato contêiner MP4 com duração entre 5 segundos e 10 minutos. |
+| `resolução_alvo` | STRING | Sim | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | A resolução desejada para o vídeo de saída ampliado. |
 
 **Restrições de Entrada:**
 

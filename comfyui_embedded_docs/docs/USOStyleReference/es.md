@@ -6,15 +6,15 @@ El nodo USOStyleReference aplica parches de referencia de estilo a modelos utili
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo base al que se le aplicará el parche de referencia de estilo |
-| `model_patch` | MODEL_PATCH | Sí | - | El parche de modelo que contiene la información de referencia de estilo |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Sí | - | Las características visuales codificadas extraídas del procesamiento de CLIP vision |
+| `modelo` | MODEL | Sí | - | El modelo base al que se le aplicará el parche de referencia de estilo |
+| `parche_del_modelo` | MODEL_PATCH | Sí | - | El parche de modelo que contiene la información de referencia de estilo |
+| `salida_de_visión_clip` | CLIP_VISION_OUTPUT | Sí | - | Las características visuales codificadas extraídas del procesamiento de CLIP vision |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con los parches de referencia de estilo aplicados |
+| `modelo` | MODEL | El modelo modificado con los parches de referencia de estilo aplicados |
 
 ---
 **Source fingerprint (SHA-256):** `fd800fb927677da29e148bfa1b287efed82895860ce4b0241d662579d2c07ff4`

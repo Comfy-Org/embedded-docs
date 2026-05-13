@@ -6,8 +6,8 @@ Carga y formatea archivos de entrada para la API de OpenAI. Este nodo prepara ar
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `file` | COMBO | Sí | Múltiples opciones disponibles (todos los archivos .txt y .pdf en el directorio de entrada menores a 32MB) | Archivos de entrada para incluir como contexto para el modelo. Por ahora solo acepta archivos de texto (.txt) y PDF (.pdf). Los archivos deben ser menores a 32MB. |
-| `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | No | N/A | Un archivo o archivos adicionales opcionales para agrupar junto con el archivo cargado desde este nodo. Permite encadenar archivos de entrada para que un solo mensaje pueda incluir múltiples archivos de entrada. |
+| `archivo` | COMBO | Sí | Múltiples opciones disponibles (todos los archivos .txt y .pdf en el directorio de entrada menores a 32MB) | Archivos de entrada para incluir como contexto para el modelo. Por ahora solo acepta archivos de texto (.txt) y PDF (.pdf). Los archivos deben ser menores a 32MB. |
+| `ARCHIVOS_ENTRADA_OPENAI` | OPENAI_INPUT_FILES | No | N/A | Un archivo o archivos adicionales opcionales para agrupar junto con el archivo cargado desde este nodo. Permite encadenar archivos de entrada para que un solo mensaje pueda incluir múltiples archivos de entrada. |
 
 **Restricciones de Archivos:**
 
@@ -19,7 +19,7 @@ Carga y formatea archivos de entrada para la API de OpenAI. Este nodo prepara ar
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Archivos de entrada formateados listos para usarse como contexto en llamadas a la API de OpenAI. |
+| `ARCHIVOS_ENTRADA_OPENAI` | OPENAI_INPUT_FILES | Archivos de entrada formateados listos para usarse como contexto en llamadas a la API de OpenAI. |
 
 ---
 **Source fingerprint (SHA-256):** `e5e92f6628072da9af787867e38c89dde3db853b7289ef6c607a066cd04c1cc9`

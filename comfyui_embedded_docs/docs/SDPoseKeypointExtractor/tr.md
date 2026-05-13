@@ -8,9 +8,9 @@ SDPoseKeypointExtractor düğümü, SDPose modelini kullanarak giriş görüntü
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Anahtar nokta tespiti için kullanılan SDPose modeli. `heatmap_head` özelliğine sahip, özellikle SDPose deposundan bir model olmalıdır. |
 | `vae` | VAE | Evet | - | Giriş görüntülerini işleme için gizli uzaya kodlamak amacıyla kullanılan VAE modeli. |
-| `image` | IMAGE | Evet | - | Poz anahtar noktalarının çıkarılacağı giriş görüntüsü veya görüntü grubu. |
-| `batch_size` | INT | Hayır | 1 ile 10000 | Tam görüntü modunda (yani `bboxes` sağlanmadığında) aynı anda işlenecek görüntü sayısı. Bu, işlemi hızlandırabilir. (varsayılan: 16) |
-| `bboxes` | BOUNDINGBOX | Hayır | - | Daha doğru tespitler için isteğe bağlı sınırlayıcı kutular. Çoklu kişi tespiti için gereklidir. Sağlanırsa, düğüm belirtilen her bölgeden anahtar noktaları çıkarır. |
+| `görüntü` | IMAGE | Evet | - | Poz anahtar noktalarının çıkarılacağı giriş görüntüsü veya görüntü grubu. |
+| `toplu_boyut` | INT | Hayır | 1 ile 10000 | Tam görüntü modunda (yani `sınırlayıcı_kutular` sağlanmadığında) aynı anda işlenecek görüntü sayısı. Bu, işlemi hızlandırabilir. (varsayılan: 16) |
+| `sınırlayıcı_kutular` | BOUNDINGBOX | Hayır | - | Daha doğru tespitler için isteğe bağlı sınırlayıcı kutular. Çoklu kişi tespiti için gereklidir. Sağlanırsa, düğüm belirtilen her bölgeden anahtar noktaları çıkarır. |
 
 **Parametre Kısıtlamaları:**
 *   `model` girişi, belirli bir SDPose modeli olmalıdır. Sağlanan modelde `heatmap_head` özelliği yoksa, düğüm bir hata verecektir.

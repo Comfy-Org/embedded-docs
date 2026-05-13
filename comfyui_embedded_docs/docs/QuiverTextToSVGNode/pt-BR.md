@@ -7,10 +7,10 @@ O nó Quiver Text to SVG gera uma imagem de Vetor Gráfico Escalável (SVG) a pa
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Descrição textual da saída SVG desejada. Esta é a instrução principal para o que deve ser gerado. |
-| `instructions` | STRING | Não | N/A | Orientação adicional de estilo ou formatação. Este é um parâmetro avançado e opcional. |
-| `reference_images` | IMAGE | Não | 0 a 4 imagens | Até 4 imagens de referência para orientar a geração. Esta é uma entrada opcional. |
-| `model` | COMBO | Sim | `"Quiver SVG v1"`<br>`"Quiver SVG v1 Max"`<br>`"Quiver SVG v1 Preview"` | Modelo a ser usado para a geração do SVG. As opções disponíveis são determinadas pela API Quiver. |
-| `seed` | INT | Sim | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente. Padrão: 0. |
+| `instruções` | STRING | Não | N/A | Orientação adicional de estilo ou formatação. Este é um parâmetro avançado e opcional. |
+| `imagens_de_referência` | IMAGE | Não | 0 a 4 imagens | Até 4 imagens de referência para orientar a geração. Esta é uma entrada opcional. |
+| `modelo` | COMBO | Sim | `"Quiver SVG v1"`<br>`"Quiver SVG v1 Max"`<br>`"Quiver SVG v1 Preview"` | Modelo a ser usado para a geração do SVG. As opções disponíveis são determinadas pela API Quiver. |
+| `semente` | INT | Sim | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente. Padrão: 0. |
 
 **Nota:** A entrada `reference_images` aceita no máximo 4 imagens. Se mais forem fornecidas, o nó gerará um erro.
 

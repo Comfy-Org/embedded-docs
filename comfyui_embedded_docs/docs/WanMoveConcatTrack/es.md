@@ -6,8 +6,8 @@ El nodo WanMoveConcatTrack combina dos conjuntos de datos de seguimiento de movi
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `tracks_1` | TRACKS | Sí | | El primer conjunto de datos de seguimiento de movimiento que se concatenará. |
-| `tracks_2` | TRACKS | No | | Un segundo conjunto opcional de datos de seguimiento de movimiento. Si no se proporciona, `tracks_1` se pasa directamente a la salida. |
+| `pistas_1` | TRACKS | Sí | | El primer conjunto de datos de seguimiento de movimiento que se concatenará. |
+| `pistas_2` | TRACKS | No | | Un segundo conjunto opcional de datos de seguimiento de movimiento. Si no se proporciona, `pistas_1` se pasa directamente a la salida. |
 
 ## Salidas
 

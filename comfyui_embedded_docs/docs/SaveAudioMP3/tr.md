@@ -6,9 +6,9 @@ SaveAudioMP3 düğümü, ses verilerini MP3 dosyası olarak kaydeder. Ses giriş
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `audio` | AUDIO | Evet | - | MP3 dosyası olarak kaydedilecek ses verisi |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") |
-| `quality` | STRING | Hayır | "V0"<br>"128k"<br>"320k" | MP3 dosyası için ses kalite ayarı (varsayılan: "V0") |
+| `ses` | AUDIO | Evet | - | MP3 dosyası olarak kaydedilecek ses verisi |
+| `dosya_adı_ön_eki` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") |
+| `kalite` | STRING | Hayır | "V0"<br>"128k"<br>"320k" | MP3 dosyası için ses kalite ayarı (varsayılan: "V0") |
 | `prompt` | PROMPT | Hayır | - | Dahili istem verisi (sistem tarafından otomatik sağlanır) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Hayır | - | Ek PNG bilgisi (sistem tarafından otomatik sağlanır) |
 

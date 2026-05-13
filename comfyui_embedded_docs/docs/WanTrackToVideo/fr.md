@@ -12,11 +12,11 @@ Le nœud WanTrackToVideo convertit les données de suivi de mouvement en séquen
 | `negative` | CONDITIONING | Oui | - | Conditionnement négatif pour la génération vidéo |
 | `vae` | VAE | Oui | - | Modèle VAE pour l'encodage et le décodage |
 | `tracks` | STRING | Oui | - | Données de suivi au format JSON sous forme de chaîne multiligne (par défaut : "[]") |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre de trames dans la vidéo de sortie (par défaut : 81, pas : 4) |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre de trames dans la vidéo de sortie (par défaut : 81, pas : 4) |
 | `batch_size` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
-| `temperature` | FLOAT | Oui | 1.0 à 1000.0 | Paramètre de température pour le patch de mouvement (par défaut : 220.0, pas : 0.1) |
+| `température` | FLOAT | Oui | 1.0 à 1000.0 | Paramètre de température pour le patch de mouvement (par défaut : 220.0, pas : 0.1) |
 | `topk` | INT | Oui | 1 à 10 | Valeur top-k pour le patch de mouvement (par défaut : 2) |
 | `start_image` | IMAGE | Non | - | Image de départ pour la génération vidéo |
 | `clip_vision_output` | CLIPVISIONOUTPUT | Non | - | Sortie de vision CLIP pour un conditionnement supplémentaire |
@@ -27,8 +27,8 @@ Le nœud WanTrackToVideo convertit les données de suivi de mouvement en séquen
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif avec les informations de piste de mouvement appliquées |
-| `negative` | CONDITIONING | Conditionnement négatif avec les informations de piste de mouvement appliquées |
+| `negative` | CONDITIONING | Conditionnement positif avec les informations de piste de mouvement appliquées |
+| `latent` | CONDITIONING | Conditionnement négatif avec les informations de piste de mouvement appliquées |
 | `latent` | LATENT | Représentation latente de la vidéo générée |
 
 ---

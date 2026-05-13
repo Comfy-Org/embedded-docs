@@ -6,13 +6,13 @@ Bu düğüm, giriş görüntüsünü, Flux Kontext model eğitimi sırasında ku
 
 | Parametre Adı | Veri Türü | Giriş Türü | Varsayılan Değer | Değer Aralığı | Açıklama |
 |---------------|-----------|------------|-----------------|---------------|----------|
-| `image` | IMAGE | Zorunlu | - | - | Yeniden boyutlandırılacak giriş görüntüsü |
+| `görüntü` | IMAGE | Zorunlu | - | - | Yeniden boyutlandırılacak giriş görüntüsü |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | Yeniden boyutlandırılmış görüntü |
+| `görüntü` | IMAGE | Yeniden boyutlandırılmış görüntü |
 
 ## Ön Tanımlı Boyut Listesi
 

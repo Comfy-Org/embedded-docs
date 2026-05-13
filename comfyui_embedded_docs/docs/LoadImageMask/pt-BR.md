@@ -6,8 +6,8 @@ O nó LoadImageMask foi projetado para carregar imagens e suas máscaras associa
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `image`   | COMBO[STRING] | O parâmetro `image` especifica o arquivo de imagem a ser carregado e processado. Ele desempenha um papel crucial na determinação da saída, fornecendo a imagem de origem para extração da máscara e conversão de formato. |
-| `channel` | COMBO[STRING] | O parâmetro `channel` especifica o canal de cor da imagem que será usado para gerar a máscara. Isso permite flexibilidade na criação de máscaras com base em diferentes canais de cor, aumentando a utilidade do nó em vários cenários de processamento de imagem. |
+| `imagem`   | COMBO[STRING] | O parâmetro `imagem` especifica o arquivo de imagem a ser carregado e processado. Ele desempenha um papel crucial na determinação da saída, fornecendo a imagem de origem para extração da máscara e conversão de formato. |
+| `canal` | COMBO[STRING] | O parâmetro `canal` especifica o canal de cor da imagem que será usado para gerar a máscara. Isso permite flexibilidade na criação de máscaras com base em diferentes canais de cor, aumentando a utilidade do nó em vários cenários de processamento de imagem. |
 
 ## Saídas
 

@@ -6,19 +6,19 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 用于生成 3D 模型的输入图像 |
-| `model_version` | COMBO | 否 | 提供多个选项 | 用于生成的 Tripo 模型版本 |
-| `style` | COMBO | 否 | 提供多个选项 | 生成模型的样式设置（默认值："None"） |
-| `texture` | BOOLEAN | 否 | - | 是否为模型生成纹理（默认值：True） |
-| `pbr` | BOOLEAN | 否 | - | 是否使用基于物理的渲染（默认值：True） |
-| `model_seed` | INT | 否 | - | 模型生成的随机种子（默认值：42） |
-| `orientation` | COMBO | 否 | 提供多个选项 | 生成模型的朝向设置 |
-| `texture_seed` | INT | 否 | - | 纹理生成的随机种子（默认值：42） |
-| `texture_quality` | COMBO | 否 | "standard"<br>"detailed" | 纹理生成的质量等级（默认值："standard"） |
-| `texture_alignment` | COMBO | 否 | "original_image"<br>"geometry" | 纹理贴图的对齐方式（默认值："original_image"） |
-| `face_limit` | INT | 否 | -1 到 500000 | 生成模型的最大面数，-1 表示无限制（默认值：-1） |
-| `quad` | BOOLEAN | 否 | - | 是否使用四边形面而非三角形面（默认值：False） |
-| `geometry_quality` | COMBO | 否 | "standard"<br>"detailed" | 几何体生成的质量等级（默认值："standard"） |
+| `图像` | IMAGE | 是 | - | 用于生成 3D 模型的输入图像 |
+| `模型版本` | COMBO | 否 | 提供多个选项 | 用于生成的 Tripo 模型版本 |
+| `风格` | COMBO | 否 | 提供多个选项 | 生成模型的样式设置（默认值："None"） |
+| `纹理` | BOOLEAN | 否 | - | 是否为模型生成纹理（默认值：True） |
+| `PBR` | BOOLEAN | 否 | - | 是否使用基于物理的渲染（默认值：True） |
+| `模型种子` | INT | 否 | - | 模型生成的随机种子（默认值：42） |
+| `朝向` | COMBO | 否 | 提供多个选项 | 生成模型的朝向设置 |
+| `纹理种子` | INT | 否 | - | 纹理生成的随机种子（默认值：42） |
+| `纹理质量` | COMBO | 否 | "standard"<br>"detailed" | 纹理生成的质量等级（默认值："standard"） |
+| `纹理对齐` | COMBO | 否 | "original_image"<br>"geometry" | 纹理贴图的对齐方式（默认值："original_image"） |
+| `面数限制` | INT | 否 | -1 到 500000 | 生成模型的最大面数，-1 表示无限制（默认值：-1） |
+| `四边形` | BOOLEAN | 否 | - | 是否使用四边形面而非三角形面（默认值：False） |
+| `几何质量` | COMBO | 否 | "standard"<br>"detailed" | 几何体生成的质量等级（默认值："standard"） |
 
 **注意：** `image` 参数为必填项，必须提供该参数节点才能正常运行。若未提供图像，节点将引发 RuntimeError。
 
@@ -26,8 +26,8 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成的 3D 模型文件（仅用于向后兼容） |
-| `model task_id` | MODEL_TASK_ID | 用于追踪模型生成过程的任务 ID |
+| `模型任务ID` | STRING | 生成的 3D 模型文件（仅用于向后兼容） |
+| `GLB` | MODEL_TASK_ID | 用于追踪模型生成过程的任务 ID |
 | `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型 |
 
 ---

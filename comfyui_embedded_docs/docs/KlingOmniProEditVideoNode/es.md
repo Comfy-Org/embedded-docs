@@ -9,10 +9,10 @@ El nodo Kling Omni Editar Video (Pro) utiliza un modelo de IA para editar un vid
 | `model_name` | COMBO | Sí | `"kling-v3-omni"`<br>`"kling-video-o1"` | El modelo de IA a utilizar para la edición de video (predeterminado: `"kling-v3-omni"`). |
 | `prompt` | STRING | Sí | | Una descripción textual del contenido del video. Puede incluir tanto descripciones positivas como negativas. |
 | `video` | VIDEO | Sí | | Video para editar. La duración del video de salida será la misma. |
-| `keep_original_sound` | BOOLEAN | Sí | | Determina si se conserva el audio original del video de entrada en la salida (predeterminado: True). |
-| `reference_images` | IMAGE | No | | Hasta 4 imágenes de referencia adicionales. |
-| `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | La resolución del video de salida (predeterminado: `"1080p"`). |
-| `seed` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
+| `mantener_sonido_original` | BOOLEAN | Sí | | Determina si se conserva el audio original del video de entrada en la salida (predeterminado: True). |
+| `imágenes_referencia` | IMAGE | No | | Hasta 4 imágenes de referencia adicionales. |
+| `resolución` | COMBO | No | `"1080p"`<br>`"720p"` | La resolución del video de salida (predeterminado: `"1080p"`). |
+| `semilla` | INT | No | 0 a 2147483647 | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). |
 
 **Restricciones y limitaciones:**
 

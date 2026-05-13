@@ -6,8 +6,8 @@ Le nœud TrimVideoLatent supprime les images du début d'une représentation vid
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `samples` | LATENT | Oui | - | La représentation vidéo latente d'entrée contenant les images vidéo à rogner |
-| `trim_amount` | INT | Oui | 0 à 99999 | Le nombre d'images à supprimer du début de la vidéo (par défaut : 0) |
+| `échantillons` | LATENT | Oui | - | La représentation vidéo latente d'entrée contenant les images vidéo à rogner |
+| `quantité de découpe` | INT | Oui | 0 à 99999 | Le nombre d'images à supprimer du début de la vidéo (par défaut : 0) |
 
 ## Sorties
 

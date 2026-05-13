@@ -29,9 +29,9 @@ Le nœud Meshy : Image vers modèle utilise l'API Meshy pour générer un modèl
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model_file` | CHAÎNE | Le nom du fichier du modèle GLB généré. (Maintenu pour la rétrocompatibilité). |
-| `meshy_task_id` | MESHY_TASK_ID | L'identifiant unique de la tâche de l'API Meshy, qui peut être utilisé pour référence ou dépannage. |
-| `GLB` | FILE3DGLB | Le modèle 3D généré au format de fichier GLB. |
+| `meshy_task_id` | CHAÎNE | Le nom du fichier du modèle GLB généré. (Maintenu pour la rétrocompatibilité). |
+| `GLB` | MESHY_TASK_ID | L'identifiant unique de la tâche de l'API Meshy, qui peut être utilisé pour référence ou dépannage. |
+| `FBX` | FILE3DGLB | Le modèle 3D généré au format de fichier GLB. |
 | `FBX` | FILE3DFBX | Le modèle 3D généré au format de fichier FBX. |
 
 ---

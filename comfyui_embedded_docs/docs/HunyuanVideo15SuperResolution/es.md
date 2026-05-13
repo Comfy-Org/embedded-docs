@@ -6,13 +6,13 @@ El nodo `HunyuanVideo15SuperResolution` prepara datos de condicionamiento para u
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `positive` | CONDITIONING | Sí | N/A | La entrada de condicionamiento positivo que se modificará con datos latentes y de aumento. |
-| `negative` | CONDITIONING | Sí | N/A | La entrada de condicionamiento negativo que se modificará con datos latentes y de aumento. |
-| `vae` | VAE | No | N/A | El VAE utilizado para codificar la `start_image` opcional. Es obligatorio si se proporciona `start_image`. |
-| `start_image` | IMAGE | No | N/A | Una imagen inicial opcional para guiar la superresolución. Si se proporciona, se ampliará y codificará en el latente de condicionamiento. |
+| `positivo` | CONDITIONING | Sí | N/A | La entrada de condicionamiento positivo que se modificará con datos latentes y de aumento. |
+| `negativo` | CONDITIONING | Sí | N/A | La entrada de condicionamiento negativo que se modificará con datos latentes y de aumento. |
+| `vae` | VAE | No | N/A | El VAE utilizado para codificar la `imagen_inicial` opcional. Es obligatorio si se proporciona `imagen_inicial`. |
+| `imagen_inicial` | IMAGE | No | N/A | Una imagen inicial opcional para guiar la superresolución. Si se proporciona, se ampliará y codificará en el latente de condicionamiento. |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | N/A | Incrustaciones de visión CLIP opcionales para agregar al condicionamiento. |
-| `latent` | LATENT | Sí | N/A | La representación latente de video de entrada que se incorporará al condicionamiento. |
-| `noise_augmentation` | FLOAT | No | 0.0 - 1.0 | La intensidad del aumento de ruido que se aplicará al condicionamiento (valor predeterminado: 0.70). |
+| `latente` | LATENT | Sí | N/A | La representación latente de video de entrada que se incorporará al condicionamiento. |
+| `aumento_de_ruido` | FLOAT | No | 0.0 - 1.0 | La intensidad del aumento de ruido que se aplicará al condicionamiento (valor predeterminado: 0.70). |
 
 **Nota:** Si proporcionas una `start_image`, también debes conectar un `vae` para que pueda ser codificada. La `start_image` se ampliará automáticamente para que coincida con las dimensiones implícitas del `latent` de entrada.
 
@@ -20,9 +20,9 @@ El nodo `HunyuanVideo15SuperResolution` prepara datos de condicionamiento para u
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. |
-| `negative` | CONDITIONING | El condicionamiento negativo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. |
-| `latent` | LATENT | El latente de entrada se transmite sin cambios. |
+| `negativo` | CONDITIONING | El condicionamiento positivo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. |
+| `latente` | CONDITIONING | El condicionamiento negativo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. |
+| `latente` | LATENT | El latente de entrada se transmite sin cambios. |
 
 ---
 **Source fingerprint (SHA-256):** `f913327a81d034997fa8a485ca4b3691f75ba1d3c5c6e2e73ab107021b58a52a`

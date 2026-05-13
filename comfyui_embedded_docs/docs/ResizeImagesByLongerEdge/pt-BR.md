@@ -7,13 +7,13 @@ O nó Redimensionar Imagens pela Borda Maior redimensiona uma ou mais imagens pa
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada ou lote de imagens a ser redimensionado. |
-| `longer_edge` | INT | Sim | 1 - 8192 | Comprimento alvo para a borda maior. A borda menor será dimensionada proporcionalmente. (padrão: 1024) |
+| `borda_maior` | INT | Sim | 1 - 8192 | Comprimento alvo para a borda maior. A borda menor será dimensionada proporcionalmente. (padrão: 1024) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `image` | IMAGE | A imagem ou lote de imagens redimensionado. A saída terá o mesmo número de imagens que a entrada, com a borda maior de cada uma correspondendo ao comprimento especificado em `longer_edge`. |
+| `image` | IMAGE | A imagem ou lote de imagens redimensionado. A saída terá o mesmo número de imagens que a entrada, com a borda maior de cada uma correspondendo ao comprimento especificado em `borda_maior`. |
 
 ---
 **Source fingerprint (SHA-256):** `687d5f159967eccbf64f0ec529ae6edeb94f4707ae10a3c75a5d0b08c86dd828`

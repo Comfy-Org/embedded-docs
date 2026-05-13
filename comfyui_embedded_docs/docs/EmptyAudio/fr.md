@@ -6,9 +6,9 @@ Le nœud EmptyAudio génère un clip audio silencieux avec une durée, un taux d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `duration` | FLOAT | Oui | 0,0 à 1,8446744073709552e+19 | Durée du clip audio vide en secondes (par défaut : 60,0) |
-| `sample_rate` | INT | Oui | 1 à 192000 | Taux d'échantillonnage du clip audio vide (par défaut : 44100) |
-| `channels` | INT | Oui | 1 à 2 | Nombre de canaux audio (1 pour mono, 2 pour stéréo) (par défaut : 2) |
+| `durée` | FLOAT | Oui | 0,0 à 1,8446744073709552e+19 | Durée du clip audio vide en secondes (par défaut : 60,0) |
+| `fréquence_d'échantillonnage` | INT | Oui | 1 à 192000 | Taux d'échantillonnage du clip audio vide (par défaut : 44100) |
+| `canaux` | INT | Oui | 1 à 2 | Nombre de canaux audio (1 pour mono, 2 pour stéréo) (par défaut : 2) |
 
 ## Sorties
 

@@ -7,13 +7,13 @@ Le nœud TextGenerateLTX2Prompt est une version spécialisée d'un nœud de gén
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | | Le modèle CLIP utilisé pour l'encodage du texte. |
-| `prompt` | STRING | Oui | | L'entrée textuelle brute de l'utilisateur qui sera améliorée ou complétée. |
-| `max_length` | INT | Oui | | Le nombre maximum de jetons que le modèle de langage est autorisé à générer. |
-| `sampling_mode` | COMBO | Oui | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` | La stratégie d'échantillonnage utilisée pour sélectionner le prochain jeton lors de la génération de texte. |
+| `invite` | STRING | Oui | | L'entrée textuelle brute de l'utilisateur qui sera améliorée ou complétée. |
+| `longueur_maximale` | INT | Oui | | Le nombre maximum de jetons que le modèle de langage est autorisé à générer. |
+| `mode_d'échantillonnage` | COMBO | Oui | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` | La stratégie d'échantillonnage utilisée pour sélectionner le prochain jeton lors de la génération de texte. |
 | `image` | IMAGE | Non | | Une image d'entrée facultative. Lorsqu'elle est fournie, le nœud utilise une invite système différente qui inclut un espace réservé pour le contexte de l'image. |
-| `thinking` | BOOLEAN | Non | | Lorsqu'il est activé, le modèle affichera son processus de raisonnement avant la réponse finale. |
-| `use_default_template` | BOOLEAN | Non | | Lorsqu'il est activé, le nœud utilisera le modèle de chat par défaut pour le formatage. |
-| `video` | VIDEO | Non | | Une entrée vidéo facultative pouvant être utilisée comme contexte supplémentaire pour la génération. |
+| `réflexion` | BOOLEAN | Non | | Lorsqu'il est activé, le modèle affichera son processus de raisonnement avant la réponse finale. |
+| `utiliser le modèle par défaut` | BOOLEAN | Non | | Lorsqu'il est activé, le nœud utilisera le modèle de chat par défaut pour le formatage. |
+| `vidéo` | VIDEO | Non | | Une entrée vidéo facultative pouvant être utilisée comme contexte supplémentaire pour la génération. |
 | `audio` | AUDIO | Non | | Une entrée audio facultative pouvant être utilisée comme contexte supplémentaire pour la génération. |
 
 **Remarque :** Le comportement du nœud change en fonction de la présence de l'entrée `image`. Si une image est fournie, l'invite générée sera formatée pour une tâche image-vers-vidéo. Si aucune image n'est fournie, le formatage sera pour une tâche texte-vers-vidéo.

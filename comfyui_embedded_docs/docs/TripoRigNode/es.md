@@ -6,7 +6,7 @@ El nodo TripoRigNode genera un modelo 3D riggeado a partir del ID de tarea de un
 
 | Parámetro | Tipo de dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID | Sí | - | El ID de tarea del modelo 3D original al que se le aplicará el rig |
+| `ID_de_tarea_del_modelo_original` | MODEL_TASK_ID | Sí | - | El ID de tarea del modelo 3D original al que se le aplicará el rig |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | No | - | Token de autenticación para acceso a la API de Comfy.org |
 | `comfy_api_key` | API_KEY_COMFY_ORG | No | - | Clave API para autenticación en el servicio de Comfy.org |
 | `unique_id` | UNIQUE_ID | No | - | Identificador único para rastrear la operación |
@@ -15,8 +15,8 @@ El nodo TripoRigNode genera un modelo 3D riggeado a partir del ID de tarea de un
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `model_file` | STRING | El archivo del modelo 3D riggeado generado (se mantiene por compatibilidad hacia atrás) |
-| `rig task_id` | RIG_TASK_ID | El ID de tarea para rastrear el proceso de generación del rig |
+| `id_de_tarea_de_rig` | STRING | El archivo del modelo 3D riggeado generado (se mantiene por compatibilidad hacia atrás) |
+| `GLB` | RIG_TASK_ID | El ID de tarea para rastrear el proceso de generación del rig |
 | `GLB` | FILE3DGLB | El modelo 3D riggeado generado en formato GLB |
 
 ---

@@ -12,10 +12,10 @@ Le nœud ImageHistogram analyse la distribution des couleurs d'une image d'entr�
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `rgb` | HISTOGRAM | Un histogramme composite représentant l'intensité moyenne des pixels sur les canaux rouge, vert et bleu. |
-| `luminance` | HISTOGRAM | Un histogramme de la luminosité perçue de l'image, calculé à l'aide de la formule de luminance standard ITU-R BT.709. |
-| `red` | HISTOGRAM | Un histogramme montrant la distribution des intensités des pixels dans le canal de couleur rouge. |
-| `green` | HISTOGRAM | Un histogramme montrant la distribution des intensités des pixels dans le canal de couleur vert. |
+| `luminance` | HISTOGRAM | Un histogramme composite représentant l'intensité moyenne des pixels sur les canaux rouge, vert et bleu. |
+| `rouge` | HISTOGRAM | Un histogramme de la luminosité perçue de l'image, calculé à l'aide de la formule de luminance standard ITU-R BT.709. |
+| `vert` | HISTOGRAM | Un histogramme montrant la distribution des intensités des pixels dans le canal de couleur rouge. |
+| `bleu` | HISTOGRAM | Un histogramme montrant la distribution des intensités des pixels dans le canal de couleur vert. |
 | `blue` | HISTOGRAM | Un histogramme montrant la distribution des intensités des pixels dans le canal de couleur bleu. |
 
 ---

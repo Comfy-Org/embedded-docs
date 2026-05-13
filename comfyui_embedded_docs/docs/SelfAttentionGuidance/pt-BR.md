@@ -6,15 +6,15 @@ O nó Self-Attention Guidance aplica orientação a modelos de difusão modifica
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de difusão ao qual aplicar a orientação por autoatenção |
-| `scale` | FLOAT | Não | -2.0 a 5.0 | A intensidade do efeito de orientação por autoatenção (padrão: 0.5) |
-| `blur_sigma` | FLOAT | Não | 0.0 a 10.0 | A quantidade de desfoque aplicada para criar o mapa de orientação (padrão: 2.0) |
+| `modelo` | MODEL | Sim | - | O modelo de difusão ao qual aplicar a orientação por autoatenção |
+| `escala` | FLOAT | Não | -2.0 a 5.0 | A intensidade do efeito de orientação por autoatenção (padrão: 0.5) |
+| `sigma_de_desfoque` | FLOAT | Não | 0.0 a 10.0 | A quantidade de desfoque aplicada para criar o mapa de orientação (padrão: 2.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com orientação por autoatenção aplicada |
+| `modelo` | MODEL | O modelo modificado com orientação por autoatenção aplicada |
 
 **Observação:** Este nó é atualmente experimental e possui limitações com lotes fragmentados. Ele só pode salvar pontuações de atenção de uma chamada UNet e pode não funcionar corretamente com tamanhos de lote maiores.
 

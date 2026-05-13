@@ -8,15 +8,15 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 要處理的輸入影像 |
-| `operation` | STRING | 是 | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | 要套用的形態學運算（預設值："erode"） |
-| `kernel_size` | INT | 是 | 3-999 | 結構元素核心的大小（預設值：3）。必須為奇數。 |
+| `影像` | IMAGE | 是 | - | 要處理的輸入影像 |
+| `操作` | STRING | 是 | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | 要套用的形態學運算（預設值："erode"） |
+| `核心大小` | INT | 是 | 3-999 | 結構元素核心的大小（預設值：3）。必須為奇數。 |
 
 ## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 應用形態學運算後處理完成的影像 |
+| `影像` | IMAGE | 應用形態學運算後處理完成的影像 |
 
 ---
 **Source fingerprint (SHA-256):** `7f6224a0e58fbb7263267b377394e119c6f8d65d16af4ce492ca9504654af7b4`

@@ -8,9 +8,9 @@ Metin açıklamalarından yüksek kaliteli müzik ve ses efektleri üretir. Bu d
 |-----------|-----------|----------|--------|----------|
 | `model` | COMBO | Evet | `"stable-audio-2.5"` | Kullanılacak ses üretim modeli (varsayılan: "stable-audio-2.5") |
 | `prompt` | STRING | Evet | - | Ses içeriği oluşturmak için kullanılan metin açıklaması (varsayılan: boş dize) |
-| `duration` | INT | Hayır | 1-190 | Oluşturulan sesin saniye cinsinden süresini kontrol eder (varsayılan: 190) |
-| `seed` | INT | Hayır | 0-4294967294 | Üretim için kullanılan rastgele tohum değeri (varsayılan: 0) |
-| `steps` | INT | Hayır | 4-8 | Örnekleme adımlarının sayısını kontrol eder (varsayılan: 8) |
+| `süre` | INT | Hayır | 1-190 | Oluşturulan sesin saniye cinsinden süresini kontrol eder (varsayılan: 190) |
+| `tohum` | INT | Hayır | 0-4294967294 | Üretim için kullanılan rastgele tohum değeri (varsayılan: 0) |
+| `adımlar` | INT | Hayır | 4-8 | Örnekleme adımlarının sayısını kontrol eder (varsayılan: 8) |
 
 ## Çıkışlar
 

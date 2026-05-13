@@ -7,9 +7,9 @@ Le nœud SetClipHooks permet d'appliquer des hooks personnalisés à un modèle 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | - | Le modèle CLIP auquel appliquer les hooks |
-| `apply_to_conds` | BOOLEAN | Oui | - | Appliquer les hooks aux sorties de conditionnement (par défaut : True) |
-| `schedule_clip` | BOOLEAN | Oui | - | Activer la planification CLIP (par défaut : False) |
-| `hooks` | HOOKS | Non | - | Groupe de hooks optionnel à appliquer au modèle CLIP |
+| `appliquer_à_conds` | BOOLEAN | Oui | - | Appliquer les hooks aux sorties de conditionnement (par défaut : True) |
+| `programmer_clip` | BOOLEAN | Oui | - | Activer la planification CLIP (par défaut : False) |
+| `crochets` | HOOKS | Non | - | Groupe de hooks optionnel à appliquer au modèle CLIP |
 
 ## Sorties
 

@@ -8,8 +8,8 @@ Le nœud WanMoveConcatTrack combine deux ensembles de données de suivi de mouve
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `tracks_1` | TRACKS | Oui | | Premier ensemble de données de suivi de mouvement à concaténer. |
-| `tracks_2` | TRACKS | Non | | Second ensemble facultatif de données de suivi de mouvement. S'il n'est pas fourni, `tracks_1` est transmis directement à la sortie. |
+| `pistes_1` | TRACKS | Oui | | Premier ensemble de données de suivi de mouvement à concaténer. |
+| `pistes_2` | TRACKS | Non | | Second ensemble facultatif de données de suivi de mouvement. S'il n'est pas fourni, `pistes_1` est transmis directement à la sortie. |
 
 ## Sorties
 

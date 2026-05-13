@@ -6,8 +6,8 @@ El nodo SaveGLB guarda datos de malla 3D o archivos 3D en el directorio de salid
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `mesh` | MESH o FILE3D | Sí | - | Malla o archivo 3D a guardar. Acepta datos de malla o formatos de archivo 3D, incluyendo GLB, GLTF, OBJ, FBX, STL y USDZ |
-| `filename_prefix` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "3d/ComfyUI") |
+| `malla` | MESH o FILE3D | Sí | - | Malla o archivo 3D a guardar. Acepta datos de malla o formatos de archivo 3D, incluyendo GLB, GLTF, OBJ, FBX, STL y USDZ |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "3d/ComfyUI") |
 
 ## Salidas
 

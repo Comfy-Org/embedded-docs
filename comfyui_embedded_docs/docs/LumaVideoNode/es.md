@@ -35,12 +35,12 @@ Genera videos de forma síncrona basándose en un texto de instrucción y config
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sí | - | Instrucción para la generación del video (por defecto: cadena vacía). Debe tener al menos 3 caracteres. |
-| `model` | COMBO | Sí | `"ray_1_6"`<br>`"ray_2"` | El modelo de generación de video a utilizar. |
-| `aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | La relación de aspecto para el video generado (por defecto: "16:9"). |
-| `resolution` | COMBO | Sí | `"540p"`<br>`"720p"`<br>`"1080p"` | La resolución de salida del video (por defecto: "540p"). Este parámetro se ignora al usar el modelo `ray_1_6`. |
-| `duration` | COMBO | Sí | `"5s"`<br>`"9s"` | La duración del video generado. Este parámetro se ignora al usar el modelo `ray_1_6`. |
-| `loop` | BOOLEAN | Sí | - | Si el video debe reproducirse en bucle (por defecto: Falso). |
-| `seed` | INT | Sí | 0 a 18446744073709551615 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0). |
+| `modelo` | COMBO | Sí | `"ray_1_6"`<br>`"ray_2"` | El modelo de generación de video a utilizar. |
+| `relación de aspecto` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | La relación de aspecto para el video generado (por defecto: "16:9"). |
+| `resolución` | COMBO | Sí | `"540p"`<br>`"720p"`<br>`"1080p"` | La resolución de salida del video (por defecto: "540p"). Este parámetro se ignora al usar el modelo `ray_1_6`. |
+| `duración` | COMBO | Sí | `"5s"`<br>`"9s"` | La duración del video generado. Este parámetro se ignora al usar el modelo `ray_1_6`. |
+| `bucle` | BOOLEAN | Sí | - | Si el video debe reproducirse en bucle (por defecto: Falso). |
+| `semilla` | INT | Sí | 0 a 18446744073709551615 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (por defecto: 0). |
 | `luma_concepts` | CUSTOM | No | - | Conceptos de cámara opcionales para dictar el movimiento de la cámara a través del nodo Luma Concepts. |
 
 **Nota:** Al usar el modelo `ray_1_6`, los parámetros `duration` y `resolution` se ignoran automáticamente y no afectan la generación.

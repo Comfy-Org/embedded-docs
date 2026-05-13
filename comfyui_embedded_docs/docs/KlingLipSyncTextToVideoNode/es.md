@@ -35,9 +35,9 @@ Nodo Kling de Sincronización Labial de Texto a Video sincroniza los movimientos
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `video` | VIDEO | Sí | - | Archivo de video de entrada para la sincronización labial |
-| `text` | STRING | Sí | - | Contenido de texto para la generación de video con sincronización labial. Obligatorio cuando el modo es text2video. Longitud máxima de 120 caracteres. |
-| `voice` | COMBO | No | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Selección de voz para el audio de sincronización labial (por defecto: "Melody") |
-| `voice_speed` | FLOAT | No | 0.8-2.0 | Velocidad del habla. Rango válido: 0.8~2.0, preciso hasta un decimal. (por defecto: 1) |
+| `texto` | STRING | Sí | - | Contenido de texto para la generación de video con sincronización labial. Obligatorio cuando el modo es text2video. Longitud máxima de 120 caracteres. |
+| `voz` | COMBO | No | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Selección de voz para el audio de sincronización labial (por defecto: "Melody") |
+| `velocidad_de_voz` | FLOAT | No | 0.8-2.0 | Velocidad del habla. Rango válido: 0.8~2.0, preciso hasta un decimal. (por defecto: 1) |
 
 **Requisitos del Video:**
 
@@ -49,8 +49,8 @@ Nodo Kling de Sincronización Labial de Texto a Video sincroniza los movimientos
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `output` | VIDEO | Video generado con audio sincronizado con los labios |
-| `video_id` | STRING | Identificador único para el video generado |
+| `id_video` | VIDEO | Video generado con audio sincronizado con los labios |
+| `duración` | STRING | Identificador único para el video generado |
 | `duration` | STRING | Información de duración del video generado |
 
 ---

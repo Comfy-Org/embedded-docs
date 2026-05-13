@@ -8,13 +8,13 @@ ElevenLabs 語音選擇器節點可讓您從預先定義的 ElevenLabs 文字轉
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `voice` | STRING | 是 | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | 從預先定義的 ElevenLabs 語音中選擇一個語音。 |
+| `語音` | STRING | 是 | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | 從預先定義的 ElevenLabs 語音中選擇一個語音。 |
 
 ## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `voice` | STRING | 所選 ElevenLabs 語音的獨特識別碼，可傳遞給其他節點以進行文字轉語音生成。 |
+| `語音` | STRING | 所選 ElevenLabs 語音的獨特識別碼，可傳遞給其他節點以進行文字轉語音生成。 |
 
 ---
 **Source fingerprint (SHA-256):** `b87f5b2b8accca87d0593ab1f4bcfccaa84b393ddb3fd9121758a87871592cee`

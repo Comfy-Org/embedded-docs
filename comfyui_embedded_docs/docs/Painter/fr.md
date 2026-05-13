@@ -10,9 +10,9 @@ Le nœud Painter fournit un canevas interactif pour créer ou modifier des image
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Non | - | Image de base facultative sur laquelle peindre. Si elle n'est pas fournie, un canevas vierge est créé en utilisant la couleur d'arrière-plan, la largeur et la hauteur spécifiées. |
 | `mask` | STRING | Oui | - | Les données de peinture, généralement générées par le widget interactif intégré du nœud. Ce paramètre est géré par l'outil de peinture de l'interface utilisateur et n'est pas destiné à être connecté à une prise standard. |
-| `width` | INT | Oui | 64 à 4096 | La largeur du canevas en pixels, utilisée lorsqu'aucune `image` de base n'est fournie. La valeur doit être un multiple de 64. Par défaut : 512. |
-| `height` | INT | Oui | 64 à 4096 | La hauteur du canevas en pixels, utilisée lorsqu'aucune `image` de base n'est fournie. La valeur doit être un multiple de 64. Par défaut : 512. |
-| `bg_color` | COLOR | Oui | - | La couleur d'arrière-plan du canevas, spécifiée sous forme de code hexadécimal (par exemple, #000000). Elle n'est utilisée que lorsqu'aucune `image` de base n'est fournie. Par défaut : noir (#000000). |
+| `largeur` | INT | Oui | 64 à 4096 | La largeur du canevas en pixels, utilisée lorsqu'aucune `image` de base n'est fournie. La valeur doit être un multiple de 64. Par défaut : 512. |
+| `hauteur` | INT | Oui | 64 à 4096 | La hauteur du canevas en pixels, utilisée lorsqu'aucune `image` de base n'est fournie. La valeur doit être un multiple de 64. Par défaut : 512. |
+| `couleur de fond` | COLOR | Oui | - | La couleur d'arrière-plan du canevas, spécifiée sous forme de code hexadécimal (par exemple, #000000). Elle n'est utilisée que lorsqu'aucune `image` de base n'est fournie. Par défaut : noir (#000000). |
 
 **Remarque :** L'entrée `mask` est conçue pour fonctionner avec le widget d'interface utilisateur spécialisé du nœud. Lorsque vous peignez sur le canevas, le widget remplit automatiquement cette valeur. Les entrées `width` et `height` sont masquées dans l'interface utilisateur standard, mais définissent les dimensions du canevas lors de la création d'une nouvelle image.
 

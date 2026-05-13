@@ -7,7 +7,7 @@ O nó SplitSigmasDenoise divide uma sequência de valores sigma em duas partes c
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `sigmas` | SIGMAS | Sim | - | A sequência de entrada de valores sigma que representa o agendamento de ruído |
-| `denoise` | FLOAT | Sim | 0.0 - 1.0 | O fator de intensidade de redução de ruído que determina onde dividir a sequência sigma (padrão: 1.0) |
+| `redução_de_ruído` | FLOAT | Sim | 0.0 - 1.0 | O fator de intensidade de redução de ruído que determina onde dividir a sequência sigma (padrão: 1.0) |
 
 ## Saídas
 

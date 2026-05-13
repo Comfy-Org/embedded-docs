@@ -7,7 +7,7 @@ Le nœud ComfyMathExpression évalue une formule mathématique à l'aide d'un en
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `expression` | STRING | Oui | N/A | La formule mathématique à évaluer. Vous pouvez utiliser des noms de variables qui correspondent aux valeurs d'entrée (par défaut : "a + b"). |
-| `values` | FLOAT, INT, BOOLEAN | Non | N/A | Un ensemble d'entrées numériques ou booléennes pouvant être ajoutées dynamiquement. Chaque entrée se voit attribuer une lettre de l'alphabet (a, b, c, ...) à utiliser comme variable dans l'expression. |
+| `valeurs` | FLOAT, INT, BOOLEAN | Non | N/A | Un ensemble d'entrées numériques ou booléennes pouvant être ajoutées dynamiquement. Chaque entrée se voit attribuer une lettre de l'alphabet (a, b, c, ...) à utiliser comme variable dans l'expression. |
 
 **Contraintes des paramètres :**
 *   Le paramètre `expression` ne peut pas être vide ou contenir uniquement des espaces.
@@ -19,7 +19,7 @@ Le nœud ComfyMathExpression évalue une formule mathématique à l'aide d'un en
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
 | `FLOAT` | FLOAT | Le résultat de l'expression mathématique sous forme de nombre à virgule flottante. |
-| `INT` | INT | Le résultat de l'expression mathématique sous forme de nombre entier. |
+| `BOOL` | INT | Le résultat de l'expression mathématique sous forme de nombre entier. |
 | `BOOL` | BOOLEAN | Le résultat de l'expression mathématique sous forme de valeur booléenne. |
 
 ---

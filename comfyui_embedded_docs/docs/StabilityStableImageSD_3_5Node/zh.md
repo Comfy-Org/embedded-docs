@@ -6,15 +6,15 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 您希望在输出图像中看到的内容。一个强烈且描述性强的提示，清晰定义元素、颜色和主体，将带来更好的结果。（默认值：空字符串） |
-| `model` | COMBO | 是 | `sd3.5-large`<br>`sd3.5-large-turbo`<br>`sd3.5-medium` | 用于生成的 Stable Diffusion 3.5 模型。 |
-| `aspect_ratio` | COMBO | 是 | `16:9`<br>`1:1`<br>`21:9`<br>`2:3`<br>`3:2`<br>`4:5`<br>`5:4`<br>`9:16`<br>`9:21` | 生成图像的宽高比。（默认值：1:1） |
-| `style_preset` | COMBO | 否 | `3d-model`<br>`analog-film`<br>`anime`<br>`cinematic`<br>`comic-book`<br>`digital-art`<br>`enhance`<br>`fantasy-art`<br>`isometric`<br>`line-art`<br>`low-poly`<br>`modeling-compound`<br>`neon-punk`<br>`origami`<br>`photographic`<br>`pixel-art`<br>`tile-texture`<br>`None` | 生成图像的可选期望风格。选择“None”表示不使用风格预设。 |
-| `cfg_scale` | FLOAT | 是 | 1.0 到 10.0 | 扩散过程遵循提示文本的严格程度（值越高，图像越接近提示）。（默认值：4.0） |
-| `seed` | INT | 是 | 0 到 4294967294 | 用于创建噪声的随机种子。（默认值：0） |
-| `image` | IMAGE | 否 | - | 用于图像到图像生成的可选输入图像。提供时，节点切换到图像到图像模式，并忽略 `aspect_ratio` 参数。 |
-| `negative_prompt` | STRING | 否 | - | 您不希望输出图像中出现的关键词。这是一个高级功能。（默认值：空字符串） |
-| `image_denoise` | FLOAT | 否 | 0.0 到 1.0 | 输入图像的去噪强度；0.0 表示输出与输入图像相同，1.0 表示如同未提供任何图像。（默认值：0.5）此参数仅在提供 `image` 时使用。 |
+| `提示词` | STRING | 是 | - | 您希望在输出图像中看到的内容。一个强烈且描述性强的提示，清晰定义元素、颜色和主体，将带来更好的结果。（默认值：空字符串） |
+| `模型` | COMBO | 是 | `sd3.5-large`<br>`sd3.5-large-turbo`<br>`sd3.5-medium` | 用于生成的 Stable Diffusion 3.5 模型。 |
+| `宽高比` | COMBO | 是 | `16:9`<br>`1:1`<br>`21:9`<br>`2:3`<br>`3:2`<br>`4:5`<br>`5:4`<br>`9:16`<br>`9:21` | 生成图像的宽高比。（默认值：1:1） |
+| `风格预设` | COMBO | 否 | `3d-model`<br>`analog-film`<br>`anime`<br>`cinematic`<br>`comic-book`<br>`digital-art`<br>`enhance`<br>`fantasy-art`<br>`isometric`<br>`line-art`<br>`low-poly`<br>`modeling-compound`<br>`neon-punk`<br>`origami`<br>`photographic`<br>`pixel-art`<br>`tile-texture`<br>`None` | 生成图像的可选期望风格。选择“None”表示不使用风格预设。 |
+| `CFG` | FLOAT | 是 | 1.0 到 10.0 | 扩散过程遵循提示文本的严格程度（值越高，图像越接近提示）。（默认值：4.0） |
+| `随机种` | INT | 是 | 0 到 4294967294 | 用于创建噪声的随机种子。（默认值：0） |
+| `图像` | IMAGE | 否 | - | 用于图像到图像生成的可选输入图像。提供时，节点切换到图像到图像模式，并忽略 `宽高比` 参数。 |
+| `负面提示词` | STRING | 否 | - | 您不希望输出图像中出现的关键词。这是一个高级功能。（默认值：空字符串） |
+| `图像降噪` | FLOAT | 否 | 0.0 到 1.0 | 输入图像的去噪强度；0.0 表示输出与输入图像相同，1.0 表示如同未提供任何图像。（默认值：0.5）此参数仅在提供 `图像` 时使用。 |
 
 **注意：** 当提供 `image` 时，节点切换到图像到图像生成模式，`aspect_ratio` 参数自动从输入图像确定。当未提供 `image` 时，`image_denoise` 参数被忽略。
 
@@ -22,7 +22,7 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 生成或修改后的图像。 |
+| `图像` | IMAGE | 生成或修改后的图像。 |
 
 ---
 **Source fingerprint (SHA-256):** `80dbb27f19bb3286ee988f020f7f65623a73d7cac77ca0cdfc7a428254102aa3`

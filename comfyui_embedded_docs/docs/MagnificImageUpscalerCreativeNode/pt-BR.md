@@ -6,16 +6,16 @@ Este nó utiliza o serviço de IA Magnific para aumentar a resolução e aprimor
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser ampliada e aprimorada. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser ampliada e aprimorada. |
 | `prompt` | STRING | Não | - | Uma descrição textual para guiar o aprimoramento criativo da imagem. Este campo é opcional (padrão: vazio). |
-| `scale_factor` | COMBO | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | O fator pelo qual as dimensões da imagem serão ampliadas. |
-| `optimized_for` | COMBO | Sim | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | O estilo ou tipo de conteúdo para o qual o processo de aprimoramento será otimizado. |
-| `creativity` | INT | Não | -10 a 10 | Controla o nível de interpretação criativa aplicada à imagem (padrão: 0). |
+| `fator de escala` | COMBO | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | O fator pelo qual as dimensões da imagem serão ampliadas. |
+| `otimizado para` | COMBO | Sim | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | O estilo ou tipo de conteúdo para o qual o processo de aprimoramento será otimizado. |
+| `criatividade` | INT | Não | -10 a 10 | Controla o nível de interpretação criativa aplicada à imagem (padrão: 0). |
 | `hdr` | INT | Não | -10 a 10 | O nível de definição e detalhe (padrão: 0). |
-| `resemblance` | INT | Não | -10 a 10 | O nível de semelhança com a imagem original (padrão: 0). |
-| `fractality` | INT | Não | -10 a 10 | A força do prompt e o nível de detalhamento por pixel quadrado (padrão: 0). |
+| `semelhança` | INT | Não | -10 a 10 | O nível de semelhança com a imagem original (padrão: 0). |
+| `fractalidade` | INT | Não | -10 a 10 | A força do prompt e o nível de detalhamento por pixel quadrado (padrão: 0). |
 | `engine` | COMBO | Sim | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | O mecanismo de IA específico a ser usado para o processamento. Este é um parâmetro avançado. |
-| `auto_downscale` | BOOLEAN | Não | - | Quando ativado, o nó reduzirá automaticamente a resolução da imagem de entrada se a ampliação solicitada exceder o tamanho máximo permitido de saída de 25,3 megapixels. Este é um parâmetro avançado (padrão: Falso). |
+| `redução automática` | BOOLEAN | Não | - | Quando ativado, o nó reduzirá automaticamente a resolução da imagem de entrada se a ampliação solicitada exceder o tamanho máximo permitido de saída de 25,3 megapixels. Este é um parâmetro avançado (padrão: Falso). |
 
 **Restrições:**
 
@@ -28,7 +28,7 @@ Este nó utiliza o serviço de IA Magnific para aumentar a resolução e aprimor
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem de saída com resolução aumentada e aprimorada criativamente. |
+| `imagem` | IMAGE | A imagem de saída com resolução aumentada e aprimorada criativamente. |
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

@@ -6,8 +6,8 @@ El nodo LTXVPreprocess aplica preprocesamiento de compresión a las imágenes. T
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada a procesar |
-| `img_compression` | INT | No | 0-100 | Cantidad de compresión a aplicar en la imagen (predeterminado: 35) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada a procesar |
+| `img_compresion` | INT | No | 0-100 | Cantidad de compresión a aplicar en la imagen (predeterminado: 35) |
 
 ## Salidas
 

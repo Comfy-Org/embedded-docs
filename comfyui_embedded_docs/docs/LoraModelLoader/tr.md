@@ -8,7 +8,7 @@ LoraModelLoader düğümü, eğitilmiş LoRA (Düşük Dereceli Uyarlama) ağır
 |-----------|-----------|----------|--------|----------|
 | `model` | MODEL | Evet | - | LoRA'nın uygulanacağı difüzyon modeli. |
 | `lora` | LORA_MODEL | Evet | - | Difüzyon modeline uygulanacak LoRA modeli. |
-| `strength_model` | FLOAT | Evet | -100,0 ila 100,0 | Difüzyon modelinin ne kadar güçlü değiştirileceği. Bu değer negatif olabilir (varsayılan: 1,0). |
+| `model_gücü` | FLOAT | Evet | -100,0 ila 100,0 | Difüzyon modelinin ne kadar güçlü değiştirileceği. Bu değer negatif olabilir (varsayılan: 1,0). |
 | `bypass` | BOOLEAN | Evet | Doğru veya Yanlış | Etkinleştirildiğinde, LoRA'yı temel model ağırlıklarını değiştirmeden bypass modunda uygular. Eğitim ve model ağırlıklarının boşaltıldığı durumlar için kullanışlıdır (varsayılan: Yanlış). |
 
 **Not:** `strength_model` 0 olarak ayarlandığında, düğüm herhangi bir LoRA değişikliği uygulamadan orijinal modeli döndürür.

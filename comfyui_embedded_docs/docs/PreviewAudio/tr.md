@@ -6,7 +6,7 @@ PreviewAudio düğümü, arayüzde doğrudan oynatılabilen geçici bir ses öni
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `audio` | AUDIO | Evet | - | Önizlenecek ses verisi |
+| `ses` | AUDIO | Evet | - | Önizlenecek ses verisi |
 
 ## Çıktılar
 

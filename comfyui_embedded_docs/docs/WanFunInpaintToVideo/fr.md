@@ -8,23 +8,23 @@ Le nœud WanFunInpaintToVideo crée des séquences vidéo en effectuant de l'inf
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | Prompts de conditionnement positif pour la génération vidéo |
-| `negative` | CONDITIONING | Oui | - | Prompts de conditionnement négatif à éviter dans la génération vidéo |
+| `positif` | CONDITIONING | Oui | - | Prompts de conditionnement positif pour la génération vidéo |
+| `négatif` | CONDITIONING | Oui | - | Prompts de conditionnement négatif à éviter dans la génération vidéo |
 | `vae` | VAE | Oui | - | Modèle VAE pour les opérations d'encodage/décodage |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer par lot (par défaut : 1) |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) |
+| `taille_du_lot` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer par lot (par défaut : 1) |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | Non | - | Sortie de vision CLIP facultative pour un conditionnement supplémentaire |
-| `start_image` | IMAGE | Non | - | Image de début facultative pour la génération vidéo |
-| `end_image` | IMAGE | Non | - | Image de fin facultative pour la génération vidéo |
+| `image_de_départ` | IMAGE | Non | - | Image de début facultative pour la génération vidéo |
+| `image_de_fin` | IMAGE | Non | - | Image de fin facultative pour la génération vidéo |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Sortie de conditionnement positif traitée |
-| `negative` | CONDITIONING | Sortie de conditionnement négatif traitée |
+| `négatif` | CONDITIONING | Sortie de conditionnement positif traitée |
+| `latent` | CONDITIONING | Sortie de conditionnement négatif traitée |
 | `latent` | LATENT | Représentation latente vidéo générée |
 
 ---

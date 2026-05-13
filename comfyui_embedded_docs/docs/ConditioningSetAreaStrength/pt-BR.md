@@ -7,7 +7,7 @@ Este nó foi projetado para modificar o atributo de intensidade de um determinad
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
 | `CONDITIONING` | CONDITIONING | O conjunto de condicionamento a ser modificado, representando o estado atual do condicionamento que influencia o processo de geração. |
-| `strength` | `FLOAT` | O valor de intensidade a ser aplicado ao conjunto de condicionamento, determinando a intensidade de sua influência. |
+| `força` | `FLOAT` | O valor de intensidade a ser aplicado ao conjunto de condicionamento, determinando a intensidade de sua influência. |
 
 ## Saídas
 

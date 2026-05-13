@@ -6,13 +6,13 @@ El nodo **LTXV Imagen a Video** genera un video de calidad profesional a partir 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | Primer fotograma que se utilizará para el video. |
-| `model` | COMBO | Sí | `"LTX-2 (Rápido)"`<br>`"LTX-2 (Calidad)"` | El modelo de IA a utilizar para la generación del video. El modelo "Rápido" está optimizado para velocidad, mientras que el modelo "Calidad" prioriza la fidelidad visual. |
+| `imagen` | IMAGE | Sí | - | Primer fotograma que se utilizará para el video. |
+| `modelo` | COMBO | Sí | `"LTX-2 (Rápido)"`<br>`"LTX-2 (Calidad)"` | El modelo de IA a utilizar para la generación del video. El modelo "Rápido" está optimizado para velocidad, mientras que el modelo "Calidad" prioriza la fidelidad visual. |
 | `prompt` | STRING | Sí | - | Una descripción textual que guía el contenido y el movimiento del video generado. |
-| `duration` | COMBO | Sí | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La duración del video en segundos (valor predeterminado: 8). |
-| `resolution` | COMBO | Sí | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | La resolución de salida del video generado. |
+| `duración` | COMBO | Sí | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La duración del video en segundos (valor predeterminado: 8). |
+| `resolución` | COMBO | Sí | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | La resolución de salida del video generado. |
 | `fps` | COMBO | Sí | `25`<br>`50` | Fotogramas por segundo del video (valor predeterminado: 25). |
-| `generate_audio` | BOOLEAN | No | - | Cuando es verdadero, el video generado incluirá audio generado por IA que coincida con la escena (valor predeterminado: Falso). |
+| `generar_audio` | BOOLEAN | No | - | Cuando es verdadero, el video generado incluirá audio generado por IA que coincida con la escena (valor predeterminado: Falso). |
 
 **Restricciones importantes:**
 

@@ -13,7 +13,7 @@ Ce nœud utilise le modèle Kling AI pour générer une vidéo à partir d’un 
 | `reference_images` | IMAGE | Oui | - | Jusqu’à 7 images de référence. Chaque image doit faire au moins 300x300 pixels et avoir un rapport hauteur/largeur compris entre 1:2.5 et 2.5:1. |
 | `resolution` | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` | La résolution de sortie de la vidéo. Ce paramètre est facultatif (par défaut : "1080p"). |
 | `storyboards` | DYNAMIC_COMBO | Non | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Génère une série de segments vidéo avec des prompts et durées individuels. Uniquement pris en charge pour `kling-v3-omni`. Lorsque cette option est activée, le `prompt` global est ignoré et la durée totale de tous les segments de storyboard doit correspondre à la `duration` globale. |
-| `generate_audio` | BOOLEAN | Non | `true`<br>`false` | Génère l’audio pour la vidéo. Uniquement pris en charge pour `kling-v3-omni` (par défaut : false). |
+| `générer l'audio` | BOOLEAN | Non | `true`<br>`false` | Génère l’audio pour la vidéo. Uniquement pris en charge pour `kling-v3-omni` (par défaut : false). |
 | `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats restent non déterministes quelle que soit la graine (par défaut : 0). |
 
 **Remarque :** L’entrée `reference_images` accepte un maximum de 7 images. Si davantage sont fournies, le nœud générera une erreur. Chaque image est validée pour ses dimensions minimales et son rapport hauteur/largeur.

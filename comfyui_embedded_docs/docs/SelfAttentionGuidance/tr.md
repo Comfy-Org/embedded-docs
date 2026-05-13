@@ -7,8 +7,8 @@ Self-Attention Guidance düğümü, örnekleme işlemi sırasında dikkat mekani
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | MODEL | Evet | - | Kendi kendine dikkat yönlendirmesinin uygulanacağı difüzyon modeli |
-| `scale` | FLOAT | Hayır | -2,0 ila 5,0 | Kendi kendine dikkat yönlendirme etkisinin gücü (varsayılan: 0,5) |
-| `blur_sigma` | FLOAT | Hayır | 0,0 ila 10,0 | Yönlendirme haritasını oluşturmak için uygulanan bulanıklık miktarı (varsayılan: 2,0) |
+| `ölçek` | FLOAT | Hayır | -2,0 ila 5,0 | Kendi kendine dikkat yönlendirme etkisinin gücü (varsayılan: 0,5) |
+| `bulanıklık_sigma` | FLOAT | Hayır | 0,0 ila 10,0 | Yönlendirme haritasını oluşturmak için uygulanan bulanıklık miktarı (varsayılan: 2,0) |
 
 ## Çıktılar
 

@@ -6,14 +6,14 @@ Este nodo combina dos entradas de condicionamiento en una única salida, fusiona
 
 | Nombre del Parámetro | Tipo de Dato       | Descripción |
 |----------------------|--------------------|-------------|
-| `conditioning_1`     | `CONDITIONING`     | La primera entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `conditioning_2` en el proceso de combinación. |
-| `conditioning_2`     | `CONDITIONING`     | La segunda entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `conditioning_1` en el proceso de combinación. |
+| `acondicionamiento_1`     | `CONDITIONING`     | La primera entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `acondicionamiento_2` en el proceso de combinación. |
+| `acondicionamiento_2`     | `CONDITIONING`     | La segunda entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `acondicionamiento_1` en el proceso de combinación. |
 
 ## Salidas
 
 | Nombre del Parámetro | Tipo de Dato       | Descripción |
 |----------------------|--------------------|-------------|
-| `conditioning`       | `CONDITIONING`     | El resultado de combinar `conditioning_1` y `conditioning_2`, que encapsula la información fusionada. |
+| `conditioning`       | `CONDITIONING`     | El resultado de combinar `acondicionamiento_1` y `acondicionamiento_2`, que encapsula la información fusionada. |
 
 ## Escenarios de Uso
 

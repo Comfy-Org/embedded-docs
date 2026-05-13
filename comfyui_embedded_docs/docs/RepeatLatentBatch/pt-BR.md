@@ -6,8 +6,8 @@ O nó RepeatLatentBatch foi projetado para replicar um lote de representações 
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | O parâmetro 'samples' representa as representações latentes a serem replicadas. É essencial para definir os dados que passarão pelo processo de repetição. |
-| `amount`  | `INT`       | O parâmetro 'amount' especifica o número de vezes que as amostras de entrada devem ser repetidas. Ele influencia diretamente o tamanho do lote de saída, afetando assim a carga computacional e a diversidade dos dados gerados. |
+| `amostras` | `LATENT`    | O parâmetro 'samples' representa as representações latentes a serem replicadas. É essencial para definir os dados que passarão pelo processo de repetição. |
+| `quantidade`  | `INT`       | O parâmetro 'amount' especifica o número de vezes que as amostras de entrada devem ser repetidas. Ele influencia diretamente o tamanho do lote de saída, afetando assim a carga computacional e a diversidade dos dados gerados. |
 
 ## Saídas
 

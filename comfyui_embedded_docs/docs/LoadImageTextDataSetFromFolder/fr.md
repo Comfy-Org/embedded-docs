@@ -14,7 +14,7 @@ Ce nœud charge un ensemble de données d'images et leurs légendes textuelles c
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `images` | IMAGE | Une liste de tenseurs d'images chargées. |
+| `texts` | IMAGE | Une liste de tenseurs d'images chargées. |
 | `texts` | STRING | Une liste de légendes textuelles correspondant à chaque image chargée. |
 
 ---

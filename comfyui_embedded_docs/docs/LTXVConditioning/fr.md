@@ -14,7 +14,7 @@ Le nœud **LTXVConditioning** ajoute des informations de fréquence d'images aux
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif avec les informations de fréquence d'images appliquées |
+| `negative` | CONDITIONING | Le conditionnement positif avec les informations de fréquence d'images appliquées |
 | `negative` | CONDITIONING | Le conditionnement négatif avec les informations de fréquence d'images appliquées |
 
 ---

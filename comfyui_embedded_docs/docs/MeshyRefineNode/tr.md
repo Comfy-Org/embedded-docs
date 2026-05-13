@@ -18,9 +18,9 @@
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `model_file` | STRING | Oluşturulan GLB modelinin dosya adı. (Yalnızca geriye dönük uyumluluk içindir) |
-| `meshy_task_id` | MESHY_TASK_ID | Gönderilen iyileştirme işi için benzersiz görev kimliği. |
-| `GLB` | FILE3DGLB | GLB formatında nihai iyileştirilmiş 3D model. |
+| `meshy_task_id` | STRING | Oluşturulan GLB modelinin dosya adı. (Yalnızca geriye dönük uyumluluk içindir) |
+| `GLB` | MESHY_TASK_ID | Gönderilen iyileştirme işi için benzersiz görev kimliği. |
+| `FBX` | FILE3DGLB | GLB formatında nihai iyileştirilmiş 3D model. |
 | `FBX` | FILE3DFBX | FBX formatında nihai iyileştirilmiş 3D model. |
 
 ---

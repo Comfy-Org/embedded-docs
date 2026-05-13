@@ -6,10 +6,10 @@
 
 | Alan           | Veri Türü    | Açıklama                                                                       |
 |----------------|--------------|--------------------------------------------------------------------------------|
-| `image1`       | `IMAGE`      | Karıştırılacak ilk görüntü. Karıştırma işlemi için temel katman görevi görür. |
-| `image2`       | `IMAGE`      | Karıştırılacak ikinci görüntü. Karıştırma moduna bağlı olarak ilk görüntünün görünümünü değiştirir. |
-| `blend_factor` | `FLOAT`      | Karışımdaki ikinci görüntünün ağırlığını belirler. Daha yüksek bir karıştırma faktörü, ortaya çıkan karışımda ikinci görüntüye daha fazla ön plana çıkarır. |
-| `blend_mode`   | COMBO[STRING] | İki görüntüyü karıştırma yöntemini belirtir. Her biri benzersiz bir görsel efekt üreten normal, çarpma, ekran, kaplama, yumuşak ışık ve fark gibi modları destekler. |
+| `görüntü1`       | `IMAGE`      | Karıştırılacak ilk görüntü. Karıştırma işlemi için temel katman görevi görür. |
+| `görüntü2`       | `IMAGE`      | Karıştırılacak ikinci görüntü. Karıştırma moduna bağlı olarak ilk görüntünün görünümünü değiştirir. |
+| `karıştırma_faktörü` | `FLOAT`      | Karışımdaki ikinci görüntünün ağırlığını belirler. Daha yüksek bir karıştırma faktörü, ortaya çıkan karışımda ikinci görüntüye daha fazla ön plana çıkarır. |
+| `karıştırma_modu`   | COMBO[STRING] | İki görüntüyü karıştırma yöntemini belirtir. Her biri benzersiz bir görsel efekt üreten normal, çarpma, ekran, kaplama, yumuşak ışık ve fark gibi modları destekler. |
 
 ## Çıkışlar
 

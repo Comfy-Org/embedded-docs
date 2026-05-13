@@ -6,9 +6,9 @@ El nodo LatentInterpolate está diseñado para realizar interpolación entre dos
 
 | Parámetro    | Tipo de Dato | Descripción |
 |--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | El primer conjunto de muestras latentes a interpolar. Sirve como punto de partida para el proceso de interpolación. |
-| `samples2`   | `LATENT`    | El segundo conjunto de muestras latentes a interpolar. Sirve como punto final para el proceso de interpolación. |
-| `ratio`      | `FLOAT`     | Un valor de punto flotante que determina el peso de cada conjunto de muestras en la salida interpolada. Una proporción de 0 produce una copia del primer conjunto, mientras que una proporción de 1 produce una copia del segundo conjunto. |
+| `muestras1`   | `LATENT`    | El primer conjunto de muestras latentes a interpolar. Sirve como punto de partida para el proceso de interpolación. |
+| `muestras2`   | `LATENT`    | El segundo conjunto de muestras latentes a interpolar. Sirve como punto final para el proceso de interpolación. |
+| `proporción`      | `FLOAT`     | Un valor de punto flotante que determina el peso de cada conjunto de muestras en la salida interpolada. Una proporción de 0 produce una copia del primer conjunto, mientras que una proporción de 1 produce una copia del segundo conjunto. |
 
 ## Salidas
 

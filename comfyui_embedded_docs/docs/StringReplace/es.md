@@ -6,9 +6,9 @@ El nodo StringReplace realiza operaciones de reemplazo de texto en cadenas de en
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto de entrada donde se realizarán los reemplazos |
-| `find` | STRING | Sí | - | La subcadena a buscar dentro del texto de entrada |
-| `replace` | STRING | Sí | - | El texto de reemplazo que sustituirá todas las apariciones encontradas |
+| `cadena` | STRING | Sí | - | La cadena de texto de entrada donde se realizarán los reemplazos |
+| `buscar` | STRING | Sí | - | La subcadena a buscar dentro del texto de entrada |
+| `reemplazar` | STRING | Sí | - | El texto de reemplazo que sustituirá todas las apariciones encontradas |
 
 ## Salidas
 

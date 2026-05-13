@@ -6,18 +6,18 @@ SD_4XUpscale_Conditioning 节点用于准备扩散模型放大图像所需的 co
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 是 | - | 待放大的输入图像 |
-| `positive` | CONDITIONING | 是 | - | 正向 conditioning 数据，引导生成朝向期望内容 |
-| `negative` | CONDITIONING | 是 | - | 负向 conditioning 数据，引导生成远离不期望内容 |
-| `scale_ratio` | FLOAT | 否 | 0.0 - 10.0 | 应用于输入图像的缩放因子（默认值：4.0） |
-| `noise_augmentation` | FLOAT | 否 | 0.0 - 1.0 | 放大过程中添加的噪声量（默认值：0.0） |
+| `图片` | IMAGE | 是 | - | 待放大的输入图像 |
+| `正面条件` | CONDITIONING | 是 | - | 正向 conditioning 数据，引导生成朝向期望内容 |
+| `负面条件` | CONDITIONING | 是 | - | 负向 conditioning 数据，引导生成远离不期望内容 |
+| `缩放比例` | FLOAT | 否 | 0.0 - 10.0 | 应用于输入图像的缩放因子（默认值：4.0） |
+| `噪波增强` | FLOAT | 否 | 0.0 - 1.0 | 放大过程中添加的噪声量（默认值：0.0） |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | 应用放大信息后的修改版正向 conditioning |
-| `negative` | CONDITIONING | 应用放大信息后的修改版负向 conditioning |
+| `负面条件` | CONDITIONING | 应用放大信息后的修改版正向 conditioning |
+| `Latent` | CONDITIONING | 应用放大信息后的修改版负向 conditioning |
 | `latent` | LATENT | 与放大后尺寸匹配的空潜空间表示 |
 
 ---

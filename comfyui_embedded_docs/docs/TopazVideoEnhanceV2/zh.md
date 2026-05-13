@@ -8,19 +8,19 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | 是 | - | 待处理的输入视频。必须为 MP4 容器格式。 |
-| `upscaler_model` | COMBO | 是 | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` | 用于放大视频的 AI 模型。选择 "Disabled" 表示不应用任何放大处理。 |
+| `视频` | VIDEO | 是 | - | 待处理的输入视频。必须为 MP4 容器格式。 |
+| `放大模型` | COMBO | 是 | `"Astra 2"`<br>`"Starlight (Astra) Fast"`<br>`"Starlight (Astra) Creative"`<br>`"Starlight Precise 2.5"`<br>`"Disabled"` | 用于放大视频的 AI 模型。选择 "Disabled" 表示不应用任何放大处理。 |
 | `upscaler_model.upscaler_resolution` | COMBO | 条件必填 | `"FullHD (1080p)"`<br>`"4K (2160p)"` | 放大器的目标输出分辨率。当选择了放大器模型（非 "Disabled"）时，此参数为必填项。 |
 | `upscaler_model.creativity` | FLOAT / COMBO | 条件必填 | Astra 2: 0.0 至 1.0（步长 0.1）<br>Starlight Creative: `"low"`<br>`"middle"`<br>`"high"` | 放大的创意强度。仅适用于 "Astra 2" 和 "Starlight (Astra) Creative" 模型。对于 Astra 2，它是一个滑块（默认值：0.5）。对于 Starlight Creative，它是一个组合框（默认值："low"）。 |
 | `upscaler_model.prompt` | STRING | 否 | - | 可选的描述性（非指令性）场景提示。仅适用于 "Astra 2" 模型。设置后，输入帧数上限为 500 帧（约 30fps 下的 15 秒）。默认值：空。 |
 | `upscaler_model.sharp` | FLOAT | 否 | 0.0 至 1.0（步长 0.01） | 预增强锐度：0.0=高斯模糊，0.5=直通（默认值），1.0=USM 锐化。仅适用于 "Astra 2" 模型。默认值：0.5。 |
 | `upscaler_model.realism` | FLOAT | 否 | 0.0 至 1.0（步长 0.01） | 将输出向摄影写实方向靠拢。保持为 0 则使用模型默认值。仅适用于 "Astra 2" 模型。默认值：0.0。 |
-| `interpolation_model` | COMBO | 是 | `"Disabled"`<br>`"apo-8"` | 用于帧插值的 AI 模型。选择 "Disabled" 表示不应用任何插值处理。 |
+| `插值模型` | COMBO | 是 | `"Disabled"`<br>`"apo-8"` | 用于帧插值的 AI 模型。选择 "Disabled" 表示不应用任何插值处理。 |
 | `interpolation_model.interpolation_frame_rate` | INT | 条件必填 | 15 至 240 | 输出帧率。当插值模型为 "apo-8" 时必填。默认值：60。 |
 | `interpolation_model.interpolation_slowmo` | INT | 否 | 1 至 16 | 应用于输入视频的慢动作倍数。例如，2 会使输出速度减半，时长加倍。默认值：1。 |
 | `interpolation_model.interpolation_duplicate` | BOOLEAN | 否 | True/False | 分析输入中的重复帧并将其移除。默认值：False。 |
 | `interpolation_model.interpolation_duplicate_threshold` | FLOAT | 否 | 0.001 至 0.1（步长 0.001） | 重复帧的检测灵敏度。默认值：0.01。 |
-| `dynamic_compression_level` | COMBO | 否 | `"Low"`<br>`"Mid"`<br>`"High"` | 视频压缩的 CQP 级别。默认值："Low"。 |
+| `动态压缩等级` | COMBO | 否 | `"Low"`<br>`"Mid"`<br>`"High"` | 视频压缩的 CQP 级别。默认值："Low"。 |
 
 **重要限制：**
 - `upscaler_model` 或 `interpolation_model` 中至少有一个必须启用（非 "Disabled"），否则将引发错误。
@@ -33,7 +33,7 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `video` | VIDEO | 应用所选放大和/或插值滤镜后的增强视频输出。 |
+| `视频` | VIDEO | 应用所选放大和/或插值滤镜后的增强视频输出。 |
 
 ---
 **Source fingerprint (SHA-256):** `29b7538206327c35866126c1862c1d1ccea872ba84fbb9c84126114a06e2b00f`

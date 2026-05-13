@@ -6,9 +6,9 @@ Ce nœud utilise l'API Seedance 2.0 de ByteDance pour générer une vidéo à pa
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | Le modèle à utiliser pour la génération vidéo. La sélection d'un modèle affichera des entrées supplémentaires requises pour l'invite, la résolution, le rapport hauteur/largeur, la durée et la génération audio. "Seedance 2.0" est destiné à une qualité maximale ; "Seedance 2.0 Fast" est optimisé pour la vitesse. |
+| `modèle` | COMBO | Oui | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | Le modèle à utiliser pour la génération vidéo. La sélection d'un modèle affichera des entrées supplémentaires requises pour l'invite, la résolution, le rapport hauteur/largeur, la durée et la génération audio. "Seedance 2.0" est destiné à une qualité maximale ; "Seedance 2.0 Fast" est optimisé pour la vitesse. |
 | `seed` | INT | Non | 0 à 2147483647 | Une valeur de départ (par défaut : 0). Le nœud se réexécutera si cette valeur change, mais les résultats restent non déterministes quelle que soit la valeur de départ. |
-| `watermark` | BOOLEAN | Non | Vrai / Faux | Indique s'il faut ajouter un filigrane à la vidéo (par défaut : Faux). Il s'agit d'un paramètre avancé. |
+| `filigrane` | BOOLEAN | Non | Vrai / Faux | Indique s'il faut ajouter un filigrane à la vidéo (par défaut : Faux). Il s'agit d'un paramètre avancé. |
 
 **Remarque :** Le paramètre `model` est une liste déroulante dynamique. Lorsque vous sélectionnez un modèle, plusieurs sous-paramètres obligatoires apparaissent, notamment l'invite textuelle, la résolution, le rapport hauteur/largeur, la durée et l'option de génération audio. Le texte de l'invite doit contenir au moins 1 caractère après suppression des espaces.
 

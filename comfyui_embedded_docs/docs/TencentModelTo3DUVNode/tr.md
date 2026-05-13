@@ -7,14 +7,14 @@ Bu düğüm, bir 3B model üzerinde UV açılımı (UV unfolding) gerçekleştir
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model_3d` | FILE3D | Evet | GLB<br>OBJ<br>FBX | Giriş 3B modeli (GLB, OBJ veya FBX). Model 30000'den az yüze sahip olmalıdır. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Bir tohum değeri (varsayılan: 1). Bu, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder, ancak tohum değerinden bağımsız olarak sonuçlar deterministik değildir. |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Bir tohum değeri (varsayılan: 1). Bu, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder, ancak tohum değerinden bağımsız olarak sonuçlar deterministik değildir. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `OBJ` | FILE3D | OBJ formatında işlenmiş 3B model dosyası. |
-| `FBX` | FILE3D | FBX formatında işlenmiş 3B model dosyası. |
+| `FBX` | FILE3D | OBJ formatında işlenmiş 3B model dosyası. |
+| `uv_görüntüsü` | FILE3D | FBX formatında işlenmiş 3B model dosyası. |
 | `uv_image` | IMAGE | Oluşturulan UV doku görüntüsü. |
 
 ---

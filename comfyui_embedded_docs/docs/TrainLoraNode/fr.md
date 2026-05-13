@@ -6,25 +6,25 @@ Le nœud TrainLoraNode crée et entraîne un modèle LoRA (Adaptation de Bas Ran
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle sur lequel entraîner le LoRA. |
+| `modèle` | MODEL | Oui | - | Le modèle sur lequel entraîner le LoRA. |
 | `latents` | LATENT | Oui | - | Les latents à utiliser pour l'entraînement, servant d'ensemble de données/d'entrée du modèle. |
-| `positive` | CONDITIONING | Oui | - | Le conditionnement positif à utiliser pour l'entraînement. |
-| `batch_size` | INT | Oui | 1-10000 | La taille du lot à utiliser pour l'entraînement (par défaut : 1). |
-| `grad_accumulation_steps` | INT | Oui | 1-1024 | Le nombre d'étapes d'accumulation de gradient à utiliser pour l'entraînement (par défaut : 1). |
-| `steps` | INT | Oui | 1-100000 | Le nombre d'étapes pour lesquelles entraîner le LoRA (par défaut : 16). |
-| `learning_rate` | FLOAT | Oui | 0.0000001-1.0 | Le taux d'apprentissage à utiliser pour l'entraînement (par défaut : 0.0005). |
-| `rank` | INT | Oui | 1-128 | Le rang des couches LoRA (par défaut : 8). |
-| `optimizer` | COMBO | Oui | "AdamW"<br>"Adam"<br>"SGD"<br>"RMSprop" | L'optimiseur à utiliser pour l'entraînement (par défaut : "AdamW"). |
-| `loss_function` | COMBO | Oui | "MSE"<br>"L1"<br>"Huber"<br>"SmoothL1" | La fonction de perte à utiliser pour l'entraînement (par défaut : "MSE"). |
-| `seed` | INT | Oui | 0-18446744073709551615 | La graine à utiliser pour l'entraînement (utilisée dans le générateur pour l'initialisation des poids LoRA et l'échantillonnage du bruit) (par défaut : 0). |
-| `training_dtype` | COMBO | Oui | "bf16"<br>"fp32"<br>"none" | Le type de données à utiliser pour l'entraînement. 'none' préserve le type de données de calcul natif du modèle au lieu de le remplacer. Pour les modèles fp16, GradScaler est automatiquement activé (par défaut : "bf16"). |
-| `lora_dtype` | COMBO | Oui | "bf16"<br>"fp32" | Le type de données à utiliser pour le LoRA (par défaut : "bf16"). |
-| `quantized_backward` | BOOLEAN | Oui | - | Lors de l'utilisation de `training_dtype` 'none' et de l'entraînement sur un modèle quantifié, effectue la rétropropagation avec multiplication matricielle quantifiée lorsqu'elle est activée (par défaut : False). |
-| `algorithm` | COMBO | Oui | Plusieurs options disponibles | L'algorithme à utiliser pour l'entraînement. |
-| `gradient_checkpointing` | BOOLEAN | Oui | - | Utiliser le point de contrôle de gradient pour l'entraînement (par défaut : True). |
+| `positif` | CONDITIONING | Oui | - | Le conditionnement positif à utiliser pour l'entraînement. |
+| `taille_du_lot` | INT | Oui | 1-10000 | La taille du lot à utiliser pour l'entraînement (par défaut : 1). |
+| `étapes_accumulation_gradient` | INT | Oui | 1-1024 | Le nombre d'étapes d'accumulation de gradient à utiliser pour l'entraînement (par défaut : 1). |
+| `étapes` | INT | Oui | 1-100000 | Le nombre d'étapes pour lesquelles entraîner le LoRA (par défaut : 16). |
+| `taux_apprentissage` | FLOAT | Oui | 0.0000001-1.0 | Le taux d'apprentissage à utiliser pour l'entraînement (par défaut : 0.0005). |
+| `rang` | INT | Oui | 1-128 | Le rang des couches LoRA (par défaut : 8). |
+| `optimiseur` | COMBO | Oui | "AdamW"<br>"Adam"<br>"SGD"<br>"RMSprop" | L'optimiseur à utiliser pour l'entraînement (par défaut : "AdamW"). |
+| `fonction_perte` | COMBO | Oui | "MSE"<br>"L1"<br>"Huber"<br>"SmoothL1" | La fonction de perte à utiliser pour l'entraînement (par défaut : "MSE"). |
+| `graine` | INT | Oui | 0-18446744073709551615 | La graine à utiliser pour l'entraînement (utilisée dans le générateur pour l'initialisation des poids LoRA et l'échantillonnage du bruit) (par défaut : 0). |
+| `type_données_entraînement` | COMBO | Oui | "bf16"<br>"fp32"<br>"none" | Le type de données à utiliser pour l'entraînement. 'none' préserve le type de données de calcul natif du modèle au lieu de le remplacer. Pour les modèles fp16, GradScaler est automatiquement activé (par défaut : "bf16"). |
+| `type_données_lora` | COMBO | Oui | "bf16"<br>"fp32" | Le type de données à utiliser pour le LoRA (par défaut : "bf16"). |
+| `quantized_backward` | BOOLEAN | Oui | - | Lors de l'utilisation de `type_données_entraînement` 'none' et de l'entraînement sur un modèle quantifié, effectue la rétropropagation avec multiplication matricielle quantifiée lorsqu'elle est activée (par défaut : False). |
+| `algorithme` | COMBO | Oui | Plusieurs options disponibles | L'algorithme à utiliser pour l'entraînement. |
+| `point de contrôle de gradient` | BOOLEAN | Oui | - | Utiliser le point de contrôle de gradient pour l'entraînement (par défaut : True). |
 | `checkpoint_depth` | INT | Oui | 1-5 | Niveau de profondeur pour le point de contrôle de gradient (par défaut : 1). |
 | `offloading` | BOOLEAN | Oui | - | Décharger les poids du modèle vers le CPU pendant l'entraînement pour économiser la mémoire GPU (par défaut : False). |
-| `existing_lora` | COMBO | Oui | Plusieurs options disponibles | Le LoRA existant auquel ajouter. Définir sur Aucun pour un nouveau LoRA (par défaut : "[None]"). |
+| `lora_existant` | COMBO | Oui | Plusieurs options disponibles | Le LoRA existant auquel ajouter. Définir sur Aucun pour un nouveau LoRA (par défaut : "[None]"). |
 | `bucket_mode` | BOOLEAN | Oui | - | Activer le mode de compartiment de résolution. Lorsqu'il est activé, attend des latents pré-compartimentés du nœud ResolutionBucket (par défaut : False). |
 | `bypass_mode` | BOOLEAN | Oui | - | Activer le mode de contournement pour l'entraînement. Lorsqu'il est activé, les adaptateurs sont appliqués via des crochets avant au lieu de la modification des poids. Utile pour les modèles quantifiés où les poids ne peuvent pas être modifiés directement (par défaut : False). |
 
@@ -40,9 +40,9 @@ Le nœud TrainLoraNode crée et entraîne un modèle LoRA (Adaptation de Bas Ran
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `lora` | LORA_MODEL | Les poids LoRA entraînés qui peuvent être sauvegardés ou appliqués à d'autres modèles. |
-| `loss_map` | LOSS_MAP | Un dictionnaire contenant les valeurs de perte d'entraînement au fil du temps. |
-| `steps` | INT | Le nombre total d'étapes d'entraînement effectuées (y compris les étapes précédentes du LoRA existant). |
+| `carte_de_perte` | LORA_MODEL | Les poids LoRA entraînés qui peuvent être sauvegardés ou appliqués à d'autres modèles. |
+| `étapes` | LOSS_MAP | Un dictionnaire contenant les valeurs de perte d'entraînement au fil du temps. |
+| `étapes` | INT | Le nombre total d'étapes d'entraînement effectuées (y compris les étapes précédentes du LoRA existant). |
 
 ---
 **Source fingerprint (SHA-256):** `df315ef416ff3ce81e6a526af2c4e5115980e6c35830825967e7189d4f8541d8`

@@ -6,17 +6,17 @@ O nó **SkipLayerGuidanceSD3** aprimora a orientação para estruturas detalhada
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo ao qual aplicar a orientação de camada ignorada |
-| `layers` | STRING | Sim | - | Lista separada por vírgulas dos índices das camadas a ignorar (padrão: "7, 8, 9") |
-| `scale` | FLOAT | Sim | 0.0 - 10.0 | A intensidade do efeito de orientação de camada ignorada (padrão: 3.0) |
-| `start_percent` | FLOAT | Sim | 0.0 - 1.0 | O ponto inicial da aplicação da orientação como porcentagem do total de etapas (padrão: 0.01) |
-| `end_percent` | FLOAT | Sim | 0.0 - 1.0 | O ponto final da aplicação da orientação como porcentagem do total de etapas (padrão: 0.15) |
+| `modelo` | MODEL | Sim | - | O modelo ao qual aplicar a orientação de camada ignorada |
+| `camadas` | STRING | Sim | - | Lista separada por vírgulas dos índices das camadas a ignorar (padrão: "7, 8, 9") |
+| `escala` | FLOAT | Sim | 0.0 - 10.0 | A intensidade do efeito de orientação de camada ignorada (padrão: 3.0) |
+| `percentual_inicial` | FLOAT | Sim | 0.0 - 1.0 | O ponto inicial da aplicação da orientação como porcentagem do total de etapas (padrão: 0.01) |
+| `percentual_final` | FLOAT | Sim | 0.0 - 1.0 | O ponto final da aplicação da orientação como porcentagem do total de etapas (padrão: 0.15) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `model` | MODEL | O modelo modificado com a orientação de camada ignorada aplicada |
+| `modelo` | MODEL | O modelo modificado com a orientação de camada ignorada aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `97c8220abd223bd35b4d0274c2b4536ffb6be7954ccd917943905bd22f60c1a5`

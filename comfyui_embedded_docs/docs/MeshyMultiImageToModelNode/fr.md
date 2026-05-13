@@ -30,9 +30,9 @@ Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs
 
 | Nom de la sortie | Type de données | Description |
 | :--- | :--- | :--- |
-| `model_file` | STRING | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour la rétrocompatibilité. |
-| `meshy_task_id` | MESHY_TASK_ID | L'identifiant unique de la tâche API Meshy. |
-| `GLB` | FILE3DGLB | Le modèle 3D généré au format GLB. |
+| `meshy_task_id` | STRING | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour la rétrocompatibilité. |
+| `GLB` | MESHY_TASK_ID | L'identifiant unique de la tâche API Meshy. |
+| `FBX` | FILE3DGLB | Le modèle 3D généré au format GLB. |
 | `FBX` | FILE3DFBX | Le modèle 3D généré au format FBX. |
 
 ---

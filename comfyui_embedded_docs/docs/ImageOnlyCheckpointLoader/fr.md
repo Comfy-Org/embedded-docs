@@ -8,7 +8,7 @@ Ce nœud est spécialisé dans le chargement de points de contrôle (checkpoints
 
 | Champ       | Type de données | Description                                                                                          |
 |-------------|-----------------|------------------------------------------------------------------------------------------------------|
-| `ckpt_name` | COMBO[STRING]   | Spécifie le nom du point de contrôle à charger, essentiel pour identifier et récupérer le fichier de point de contrôle correct depuis une liste prédéfinie. |
+| `nom_ckpt` | COMBO[STRING]   | Spécifie le nom du point de contrôle à charger, essentiel pour identifier et récupérer le fichier de point de contrôle correct depuis une liste prédéfinie. |
 
 ## Sorties
 

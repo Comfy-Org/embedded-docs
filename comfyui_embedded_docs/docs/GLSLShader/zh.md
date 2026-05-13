@@ -13,8 +13,8 @@ GLSL 着色器节点可将自定义 GLSL ES 片段着色器代码应用于输入
 | `images` | IMAGE | 是 | 1 至 8 张图像 | 由着色器处理的输入图像。在着色器代码中，图像可作为 `u_image0` 到 `u_image7`（sampler2D）使用。 |
 | `floats` | FLOAT | 否 | 0 至 8 个浮点数 | 着色器的浮点统一值。在着色器代码中，浮点数可作为 `u_float0` 到 `u_float7` 使用。默认值：0.0。 |
 | `ints` | INT | 否 | 0 至 8 个整数 | 着色器的整数统一值。在着色器代码中，整数可作为 `u_int0` 到 `u_int7` 使用。默认值：0。 |
-| `bools` | BOOLEAN | 否 | 0 至 8 个布尔值 | 着色器的布尔统一值。在着色器代码中，布尔值可作为 `u_bool0` 到 `u_bool7`（bool）使用。默认值：False。 |
-| `curves` | CURVE | 否 | 0 至 8 条曲线 | 着色器的曲线统一值。在着色器代码中，曲线可作为 `u_curve0` 到 `u_curve7`（sampler2D，一维查找表）使用。使用 `texture(u_curve0, vec2(x, 0.5)).r` 进行采样。 |
+| `布尔值` | BOOLEAN | 否 | 0 至 8 个布尔值 | 着色器的布尔统一值。在着色器代码中，布尔值可作为 `u_bool0` 到 `u_bool7`（bool）使用。默认值：False。 |
+| `曲线` | CURVE | 否 | 0 至 8 条曲线 | 着色器的曲线统一值。在着色器代码中，曲线可作为 `u_curve0` 到 `u_curve7`（sampler2D，一维查找表）使用。使用 `texture(u_curve0, vec2(x, 0.5)).r` 进行采样。 |
 
 **注意：**
 
@@ -27,9 +27,9 @@ GLSL 着色器节点可将自定义 GLSL ES 片段着色器代码应用于输入
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `IMAGE0` | IMAGE | 着色器的第一个输出图像。在着色器代码中通过 `layout(location = 0) out vec4 fragColor0` 使用。 |
-| `IMAGE1` | IMAGE | 着色器的第二个输出图像。在着色器代码中通过 `layout(location = 1) out vec4 fragColor1` 使用。 |
-| `IMAGE2` | IMAGE | 着色器的第三个输出图像。在着色器代码中通过 `layout(location = 2) out vec4 fragColor2` 使用。 |
+| `IMAGE1` | IMAGE | 着色器的第一个输出图像。在着色器代码中通过 `layout(location = 0) out vec4 fragColor0` 使用。 |
+| `IMAGE2` | IMAGE | 着色器的第二个输出图像。在着色器代码中通过 `layout(location = 1) out vec4 fragColor1` 使用。 |
+| `IMAGE3` | IMAGE | 着色器的第三个输出图像。在着色器代码中通过 `layout(location = 2) out vec4 fragColor2` 使用。 |
 | `IMAGE3` | IMAGE | 着色器的第四个输出图像。在着色器代码中通过 `layout(location = 3) out vec4 fragColor3` 使用。 |
 
 ---

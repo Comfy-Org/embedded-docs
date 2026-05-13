@@ -6,14 +6,14 @@ O nó ModelSamplingStableCascade aplica amostragem em cascata estável a um mode
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de entrada para aplicar a amostragem em cascata estável |
-| `shift` | FLOAT | Sim | 0.0 - 100.0 | O valor de deslocamento a ser aplicado aos parâmetros de amostragem (padrão: 2.0) |
+| `modelo` | MODEL | Sim | - | O modelo de entrada para aplicar a amostragem em cascata estável |
+| `deslocamento` | FLOAT | Sim | 0.0 - 100.0 | O valor de deslocamento a ser aplicado aos parâmetros de amostragem (padrão: 2.0) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `model` | MODEL | O modelo modificado com amostragem em cascata estável aplicada |
+| `modelo` | MODEL | O modelo modificado com amostragem em cascata estável aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `2d0a342fff05434c8fe78999187bd31dbee7deb6f4447759a489102a8ce277de`

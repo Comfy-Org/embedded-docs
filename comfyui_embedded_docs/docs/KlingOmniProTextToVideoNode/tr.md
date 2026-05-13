@@ -11,8 +11,8 @@ Bu düğüm, bir metin açıklamasından video oluşturmak için en son Kling AI
 | `aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulacak videonun şekli veya boyutları. |
 | `duration` | INT | Evet | 3 ila 15 saniye | Videonun saniye cinsinden uzunluğu (varsayılan: 5). |
 | `resolution` | COMBO | Hayır | `"4k"`<br>`"1080p"`<br>`"720p"` | Videonun kalitesi veya piksel çözünürlüğü (varsayılan: `"1080p"`). |
-| `storyboards` | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Bireysel istemler ve sürelerle bir dizi video segmenti oluşturun. o1 modeli için yok sayılır. |
-| `generate_audio` | BOOLEAN | Hayır | True / False | Video için ses oluşturulup oluşturulmayacağı (varsayılan: False). |
+| `hikaye_tahtaları` | DYNAMIC_COMBO | Hayır | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Bireysel istemler ve sürelerle bir dizi video segmenti oluşturun. o1 modeli için yok sayılır. |
+| `ses_oluştur` | BOOLEAN | Hayır | True / False | Video için ses oluşturulup oluşturulmayacağı (varsayılan: False). |
 | `seed` | INT | Hayır | 0 ila 2147483647 | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
 
 ### Parametre Kısıtlamaları ve Sınırlamaları

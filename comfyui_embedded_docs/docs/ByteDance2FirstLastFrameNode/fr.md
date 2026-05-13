@@ -6,13 +6,13 @@ Ce nœud utilise le modèle Seedance 2.0 de ByteDance pour générer une vidéo.
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | Le modèle à utiliser pour la génération vidéo. Seedance 2.0 est destiné à une qualité maximale, tandis que Seedance 2.0 Fast est optimisé pour la vitesse. La sélection d'un modèle révèlera des entrées supplémentaires pour `prompt`, `resolution`, `ratio`, `duration` et `generate_audio`. |
-| `first_frame` | IMAGE | Non | - | L'image à utiliser comme première image de la vidéo. |
-| `last_frame` | IMAGE | Non | - | L'image à utiliser comme dernière image de la vidéo. |
-| `first_frame_asset_id` | STRING | Non | - | Un asset_id Seedance à utiliser comme première image. Ne peut pas être utilisé en même temps que l'entrée d'image `first_frame`. La valeur par défaut est une chaîne vide. |
-| `last_frame_asset_id` | STRING | Non | - | Un asset_id Seedance à utiliser comme dernière image. Ne peut pas être utilisé en même temps que l'entrée d'image `last_frame`. La valeur par défaut est une chaîne vide. |
+| `modèle` | COMBO | Oui | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | Le modèle à utiliser pour la génération vidéo. Seedance 2.0 est destiné à une qualité maximale, tandis que Seedance 2.0 Fast est optimisé pour la vitesse. La sélection d'un modèle révèlera des entrées supplémentaires pour `prompt`, `resolution`, `ratio`, `duration` et `generate_audio`. |
+| `première image` | IMAGE | Non | - | L'image à utiliser comme première image de la vidéo. |
+| `dernière image` | IMAGE | Non | - | L'image à utiliser comme dernière image de la vidéo. |
+| `first_frame_asset_id` | STRING | Non | - | Un asset_id Seedance à utiliser comme première image. Ne peut pas être utilisé en même temps que l'entrée d'image `première image`. La valeur par défaut est une chaîne vide. |
+| `last_frame_asset_id` | STRING | Non | - | Un asset_id Seedance à utiliser comme dernière image. Ne peut pas être utilisé en même temps que l'entrée d'image `dernière image`. La valeur par défaut est une chaîne vide. |
 | `seed` | INT | Non | 0 à 2147483647 | Une valeur de graine. La modification de cette graine entraînera la réexécution du nœud, mais les résultats sont non déterministes. La valeur par défaut est 0. |
-| `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane à la vidéo générée. La valeur par défaut est Faux. |
+| `filigrane` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane à la vidéo générée. La valeur par défaut est Faux. |
 
 **Contraintes des paramètres :**
 *   Vous devez fournir **soit** une image `first_frame` **soit** un `first_frame_asset_id`. Fournir les deux provoquera une erreur.

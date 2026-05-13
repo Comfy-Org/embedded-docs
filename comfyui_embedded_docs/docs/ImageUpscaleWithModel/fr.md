@@ -6,7 +6,7 @@ Ce nœud est conçu pour le suréchantillonnage d'images à l'aide d'un modèle 
 
 | Paramètre        | Type Comfy       | Description                                                                 |
 |------------------|------------------|-----------------------------------------------------------------------------|
-| `upscale_model`  | `UPSCALE_MODEL`  | Le modèle de suréchantillonnage à utiliser pour agrandir l'image. Il est essentiel pour définir l'algorithme de suréchantillonnage et ses paramètres. |
+| `modèle_d'agrandissement`  | `UPSCALE_MODEL`  | Le modèle de suréchantillonnage à utiliser pour agrandir l'image. Il est essentiel pour définir l'algorithme de suréchantillonnage et ses paramètres. |
 | `image`          | `IMAGE`          | L'image à suréchantillonner. Cette entrée est indispensable pour déterminer le contenu source qui subira le processus de suréchantillonnage. |
 
 ## Sorties

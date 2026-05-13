@@ -6,9 +6,9 @@ AlignYourStepsScheduler düğümü, farklı model türlerine göre gürültü gi
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model_type` | STRING | Evet | `"SD1"`<br>`"SDXL"`<br>`"SVD"` | Sigma hesaplaması için kullanılacak model türünü belirtir (varsayılan: "SD1") |
-| `steps` | INT | Evet | 1 ila 10000 | Oluşturulacak toplam örnekleme adımı sayısı (varsayılan: 10) |
-| `denoise` | FLOAT | Evet | 0,0 ila 1,0 | Görüntünün ne kadar gürültüden arındırılacağını kontrol eder; 1,0 tüm adımları kullanırken, daha düşük değerler daha az adım kullanır (varsayılan: 1,0) |
+| `model_türü` | STRING | Evet | `"SD1"`<br>`"SDXL"`<br>`"SVD"` | Sigma hesaplaması için kullanılacak model türünü belirtir (varsayılan: "SD1") |
+| `adımlar` | INT | Evet | 1 ila 10000 | Oluşturulacak toplam örnekleme adımı sayısı (varsayılan: 10) |
+| `gürültü_azaltma` | FLOAT | Evet | 0,0 ila 1,0 | Görüntünün ne kadar gürültüden arındırılacağını kontrol eder; 1,0 tüm adımları kullanırken, daha düşük değerler daha az adım kullanır (varsayılan: 1,0) |
 
 ## Çıktılar
 

@@ -6,13 +6,13 @@ ElevenLabs Ses Seçici düğümü, önceden tanımlanmış ElevenLabs metin-ses 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `voice` | STRING | Evet | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | Önceden tanımlanmış ElevenLabs sesleri arasından bir ses seçin. |
+| `ses` | STRING | Evet | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | Önceden tanımlanmış ElevenLabs sesleri arasından bir ses seçin. |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `voice` | STRING | Seçilen ElevenLabs sesi için benzersiz tanımlayıcı. Bu tanımlayıcı, metin-ses dönüştürme işlemi için diğer düğümlere aktarılabilir. |
+| `ses` | STRING | Seçilen ElevenLabs sesi için benzersiz tanımlayıcı. Bu tanımlayıcı, metin-ses dönüştürme işlemi için diğer düğümlere aktarılabilir. |
 
 ---
 **Source fingerprint (SHA-256):** `b87f5b2b8accca87d0593ab1f4bcfccaa84b393ddb3fd9121758a87871592cee`

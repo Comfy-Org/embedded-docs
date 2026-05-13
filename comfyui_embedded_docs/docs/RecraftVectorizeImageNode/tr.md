@@ -6,7 +6,7 @@ Giriş görüntüsünden eşzamanlı olarak SVG oluşturur. Bu düğüm, giriş 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-----------|
-| `image` | IMAGE | Evet | - | SVG formatına dönüştürülecek giriş görüntüsü |
+| `görüntü` | IMAGE | Evet | - | SVG formatına dönüştürülecek giriş görüntüsü |
 
 ## Çıktılar
 

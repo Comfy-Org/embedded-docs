@@ -8,7 +8,7 @@ Sayı Dönüştür düğümü, çeşitli giriş veri türlerini sayısal değerl
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `value` | INT, FLOAT, STRING, BOOLEAN | Evet | Yok | Sayısal çıktılara dönüştürülecek değer. Tam sayı, ondalıklı sayı, metin dizisi veya doğru/yanlış mantıksal değer kabul eder. |
+| `değer` | INT, FLOAT, STRING, BOOLEAN | Evet | Yok | Sayısal çıktılara dönüştürülecek değer. Tam sayı, ondalıklı sayı, metin dizisi veya doğru/yanlış mantıksal değer kabul eder. |
 
 **Not:** Giriş bir metin dizisi olduğunda, boş olmamalı ve geçerli bir sayı temsili içermelidir (örneğin, `"123"`, `"3.14"`). Düğüm, boş diziler, sayı olarak ayrıştırılamayan metinler veya sonlu olmayan değerler (örneğin, `"inf"` veya `"nan"`) için hata verecektir. Mantıksal girişlerde, `true` değeri 1.0 (FLOAT) ve 1 (INT)'e dönüşürken, `false` değeri 0.0 (FLOAT) ve 0 (INT)'a dönüşür. Ondalıklı sayı girişlerinde, tam sayı çıktısı ondalık kısmın kesilmesiyle elde edilir.
 

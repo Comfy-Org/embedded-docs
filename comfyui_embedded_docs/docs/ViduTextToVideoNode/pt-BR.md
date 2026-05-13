@@ -8,13 +8,13 @@ O nó de Geração de Vídeo a partir de Texto Vidu cria vídeos a partir de des
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | COMBO | Sim | `viduq1` | Nome do modelo |
+| `modelo` | COMBO | Sim | `viduq1` | Nome do modelo |
 | `prompt` | STRING | Sim | - | Uma descrição textual para geração de vídeo |
-| `duration` | INT | Não | 5-5 | Duração do vídeo de saída em segundos (padrão: 5) |
-| `seed` | INT | Não | 0-2147483647 | Semente para geração de vídeo (0 para aleatório) (padrão: 0) |
-| `aspect_ratio` | COMBO | Não | `16:9`<br>`9:16`<br>`1:1` | A proporção de tela do vídeo de saída |
-| `resolution` | COMBO | Não | `1080p` | Os valores suportados podem variar conforme o modelo e a duração |
-| `movement_amplitude` | COMBO | Não | `auto`<br>`small`<br>`medium`<br>`large` | A amplitude de movimento dos objetos no quadro |
+| `duração` | INT | Não | 5-5 | Duração do vídeo de saída em segundos (padrão: 5) |
+| `semente` | INT | Não | 0-2147483647 | Semente para geração de vídeo (0 para aleatório) (padrão: 0) |
+| `proporção` | COMBO | Não | `16:9`<br>`9:16`<br>`1:1` | A proporção de tela do vídeo de saída |
+| `resolução` | COMBO | Não | `1080p` | Os valores suportados podem variar conforme o modelo e a duração |
+| `amplitude de movimento` | COMBO | Não | `auto`<br>`small`<br>`medium`<br>`large` | A amplitude de movimento dos objetos no quadro |
 
 **Nota:** O campo `prompt` é obrigatório e não pode estar vazio. O parâmetro `duration` está atualmente fixado em 5 segundos.
 

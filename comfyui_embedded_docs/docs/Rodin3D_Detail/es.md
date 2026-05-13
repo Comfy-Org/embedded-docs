@@ -6,16 +6,16 @@ El nodo **Rodin 3D Detail** genera activos 3D detallados utilizando la API de Ro
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `Images` | IMAGE | Sí | - | Imágenes de entrada utilizadas para la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. |
-| `Seed` | INT | Sí | - | Valor de semilla aleatoria para obtener resultados reproducibles |
-| `Material_Type` | STRING | Sí | - | Tipo de material que se aplicará al modelo 3D |
-| `Polygon_count` | STRING | Sí | - | Cantidad objetivo de polígonos para el modelo 3D generado. Determina el nivel de calidad de la malla. |
+| `Imágenes` | IMAGE | Sí | - | Imágenes de entrada utilizadas para la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. |
+| `Semilla` | INT | Sí | - | Valor de semilla aleatoria para obtener resultados reproducibles |
+| `Tipo_Material` | STRING | Sí | - | Tipo de material que se aplicará al modelo 3D |
+| `Recuento_Polígonos` | STRING | Sí | - | Cantidad objetivo de polígonos para el modelo 3D generado. Determina el nivel de calidad de la malla. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `3D Model Path` | STRING | Ruta del archivo al modelo 3D generado (solo para compatibilidad hacia atrás) |
+| `GLB` | STRING | Ruta del archivo al modelo 3D generado (solo para compatibilidad hacia atrás) |
 | `GLB` | FILE3DGLB | El modelo 3D generado en formato GLB |
 
 ---

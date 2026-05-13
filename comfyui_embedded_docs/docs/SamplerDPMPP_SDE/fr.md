@@ -7,9 +7,9 @@ Le nœud SamplerDPMPP_SDE crée un échantillonneur DPM++ SDE (équation différ
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `eta` | FLOAT | Oui | 0.0 - 100.0 | Contrôle le caractère stochastique du processus d'échantillonnage (par défaut : 1.0) |
-| `s_noise` | FLOAT | Oui | 0.0 - 100.0 | Contrôle la quantité de bruit ajoutée lors de l'échantillonnage (par défaut : 1.0) |
+| `s_bruit` | FLOAT | Oui | 0.0 - 100.0 | Contrôle la quantité de bruit ajoutée lors de l'échantillonnage (par défaut : 1.0) |
 | `r` | FLOAT | Oui | 0.0 - 100.0 | Paramètre influençant le comportement de l'échantillonnage (par défaut : 0.5) |
-| `noise_device` | COMBO | Oui | "gpu"<br>"cpu" | Sélectionne le dispositif sur lequel les calculs de bruit sont effectués (par défaut : "gpu") |
+| `appareil_bruit` | COMBO | Oui | "gpu"<br>"cpu" | Sélectionne le dispositif sur lequel les calculs de bruit sont effectués (par défaut : "gpu") |
 
 ## Sorties
 

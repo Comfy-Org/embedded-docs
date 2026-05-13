@@ -6,12 +6,12 @@ El nodo LoraSave extrae y guarda archivos LoRA (Adaptación de Bajo Rango) a par
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `filename_prefix` | STRING | Sí | - | El prefijo para el nombre del archivo de salida (predeterminado: "loras/ComfyUI_extracted_lora") |
-| `rank` | INT | Sí | 1-4096 | El valor de rango para el LoRA, que controla el tamaño y la complejidad (predeterminado: 8) |
-| `lora_type` | COMBO | Sí | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | El tipo de LoRA a crear (predeterminado: "standard") |
-| `bias_diff` | BOOLEAN | Sí | - | Si se deben incluir las diferencias de sesgo en el cálculo del LoRA (predeterminado: True) |
-| `model_diff` | MODEL | No | - | La salida de ModelSubtract que se convertirá en un lora |
-| `text_encoder_diff` | CLIP | No | - | La salida de CLIPSubtract que se convertirá en un lora |
+| `prefijo_nombre_archivo` | STRING | Sí | - | El prefijo para el nombre del archivo de salida (predeterminado: "loras/ComfyUI_extracted_lora") |
+| `rango` | INT | Sí | 1-4096 | El valor de rango para el LoRA, que controla el tamaño y la complejidad (predeterminado: 8) |
+| `tipo_lora` | COMBO | Sí | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | El tipo de LoRA a crear (predeterminado: "standard") |
+| `diferencia_sesgo` | BOOLEAN | Sí | - | Si se deben incluir las diferencias de sesgo en el cálculo del LoRA (predeterminado: True) |
+| `diferencia_modelo` | MODEL | No | - | La salida de ModelSubtract que se convertirá en un lora |
+| `diferencia_codificador_texto` | CLIP | No | - | La salida de CLIPSubtract que se convertirá en un lora |
 
 **Nota:** Se debe proporcionar al menos uno de los parámetros `model_diff` o `text_encoder_diff` para que el nodo funcione. Si ambos se omiten, el nodo no generará ninguna salida.
 

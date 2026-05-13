@@ -8,9 +8,9 @@ ModelMergeBlocks, gelişmiş model birleştirme işlemleri için tasarlanmış o
 |-----------|-------------|-------------|
 | `model1`  | `MODEL`     | Birleştirilecek ilk model. İkinci modelden alınan yamaların uygulanacağı temel model olarak işlev görür. |
 | `model2`  | `MODEL`     | Belirtilen karışım oranlarına göre yamaların çıkarıldığı ve ilk modele uygulandığı ikinci model. |
-| `input`   | `FLOAT`     | Modellerin giriş katmanı için karışım oranını belirtir. İkinci modelin giriş katmanının ne kadarının ilk modele ekleneceğini belirler. |
-| `middle`  | `FLOAT`     | Modellerin orta katmanları için karışım oranını tanımlar. Bu parametre, modellerin orta katmanlarının entegrasyon seviyesini kontrol eder. |
-| `out`     | `FLOAT`     | Modellerin çıkış katmanı için karışım oranını belirler. İkinci modelin çıkış katmanının katkısını ayarlayarak nihai çıktıyı etkiler. |
+| `giriş`   | `FLOAT`     | Modellerin giriş katmanı için karışım oranını belirtir. İkinci modelin giriş katmanının ne kadarının ilk modele ekleneceğini belirler. |
+| `orta`  | `FLOAT`     | Modellerin orta katmanları için karışım oranını tanımlar. Bu parametre, modellerin orta katmanlarının entegrasyon seviyesini kontrol eder. |
+| `çıktı`     | `FLOAT`     | Modellerin çıkış katmanı için karışım oranını belirler. İkinci modelin çıkış katmanının katkısını ayarlayarak nihai çıktıyı etkiler. |
 
 ## Çıkışlar
 

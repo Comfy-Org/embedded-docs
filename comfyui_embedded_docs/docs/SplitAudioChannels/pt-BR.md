@@ -6,7 +6,7 @@ O nó SplitAudioChannels separa áudio estéreo em canais esquerdo e direito ind
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `audio` | AUDIO | Sim | - | A entrada de áudio estéreo a ser separada em canais |
+| `áudio` | AUDIO | Sim | - | A entrada de áudio estéreo a ser separada em canais |
 
 **Observação:** O áudio de entrada deve ter exatamente dois canais (estéreo). O nó gerará um erro se o áudio de entrada tiver apenas um canal.
 

@@ -6,16 +6,16 @@ Ce nœud génère une vidéo à partir d'une description textuelle en utilisant 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"wan2.7-t2v"` | Le modèle spécifique à utiliser pour la génération vidéo. |
+| `modèle` | COMBO | Oui | `"wan2.7-t2v"` | Le modèle spécifique à utiliser pour la génération vidéo. |
 | `model.prompt` | STRING | Oui | - | Une description des éléments et des caractéristiques visuelles souhaités dans la vidéo. Prend en charge l'anglais et le chinois. |
 | `model.negative_prompt` | STRING | Non | - | Une description des éléments ou caractéristiques à éviter dans la vidéo générée. |
 | `model.resolution` | COMBO | Oui | `"720P"`<br>`"1080P"` | La résolution de la vidéo de sortie. |
 | `model.ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | Le rapport hauteur/largeur de la vidéo de sortie. |
 | `model.duration` | INT | Oui | 2 à 15 | La durée de la vidéo en secondes (par défaut : 5). |
 | `audio` | AUDIO | Non | - | Un fichier audio pour piloter la génération vidéo, par exemple pour le synchronisme labial ou l'adaptation du mouvement au rythme. S'il n'est pas fourni, le modèle générera une musique de fond ou des effets sonores correspondants. La durée de l'audio doit être comprise entre 1,5 et 60 secondes. |
-| `seed` | INT | Non | 0 à 2147483647 | Un nombre utilisé pour contrôler l'aléatoire de la génération, garantissant des résultats reproductibles (par défaut : 0). |
-| `prompt_extend` | BOOLEAN | Non | - | Lorsqu'il est activé, la consigne sera améliorée avec l'assistance de l'IA (par défaut : True). |
-| `watermark` | BOOLEAN | Non | - | Lorsqu'il est activé, un filigrane généré par IA sera ajouté au résultat (par défaut : False). |
+| `graine` | INT | Non | 0 à 2147483647 | Un nombre utilisé pour contrôler l'aléatoire de la génération, garantissant des résultats reproductibles (par défaut : 0). |
+| `extension d'invite` | BOOLEAN | Non | - | Lorsqu'il est activé, la consigne sera améliorée avec l'assistance de l'IA (par défaut : True). |
+| `filigrane` | BOOLEAN | Non | - | Lorsqu'il est activé, un filigrane généré par IA sera ajouté au résultat (par défaut : False). |
 
 **Remarque :** Le paramètre `audio` est facultatif. S'il est fourni, sa durée doit être comprise entre 1,5 et 60 secondes. S'il est omis, le modèle générera automatiquement l'audio.
 

@@ -6,7 +6,7 @@ ColorToRGBInt düğümü, onaltılık (hexadecimal) formatta belirtilen bir reng
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `color` | STRING | Evet | Yok | `#RRGGBB` onaltılık formatında bir renk değeri. |
+| `renk` | STRING | Evet | Yok | `#RRGGBB` onaltılık formatında bir renk değeri. |
 
 **Not:** Giriş `color` dizesi tam olarak 7 karakter uzunluğunda olmalı ve bir `#` sembolü ile başlamalı, ardından altı onaltılık basamak gelmelidir (örneğin, kırmızı için `#FF0000`). Format hatalıysa düğüm bir hata verecektir.
 

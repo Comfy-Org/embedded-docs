@@ -6,12 +6,12 @@
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `cond_NEW` | CONDITIONING | Zorunlu | - | - | Değiştirilecek koşullandırma verileri |
-| `strength` | FLOAT | Zorunlu | 1.0 | 0.0 - 10.0 (adım: 0.01) | Koşullandırma etkisinin yoğunluğunu kontrol eder |
-| `set_cond_area` | STRING | Zorunlu | default | ["default", "mask bounds"] | Koşullandırma alanının nasıl uygulanacağını belirler. Standart davranış için "default" veya maske bölgesiyle sınırlamak için "mask bounds" seçeneğini kullanın |
-| `mask` | MASK | İsteğe bağlı | - | - | Koşullandırmanın uygulanacağı alanı kısıtlamak için isteğe bağlı maske |
-| `hooks` | HOOKS | İsteğe bağlı | - | - | Özel işleme için isteğe bağlı kanca işlevleri |
-| `timesteps` | TIMESTEPS_RANGE | İsteğe bağlı | - | - | Koşullandırmanın ne zaman etkin olacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
+| `yeni_koşul` | CONDITIONING | Zorunlu | - | - | Değiştirilecek koşullandırma verileri |
+| `güç` | FLOAT | Zorunlu | 1.0 | 0.0 - 10.0 (adım: 0.01) | Koşullandırma etkisinin yoğunluğunu kontrol eder |
+| `koşul_alanı_ayarla` | STRING | Zorunlu | default | ["default", "mask bounds"] | Koşullandırma alanının nasıl uygulanacağını belirler. Standart davranış için "default" veya maske bölgesiyle sınırlamak için "mask bounds" seçeneğini kullanın |
+| `maske` | MASK | İsteğe bağlı | - | - | Koşullandırmanın uygulanacağı alanı kısıtlamak için isteğe bağlı maske |
+| `kancalar` | HOOKS | İsteğe bağlı | - | - | Özel işleme için isteğe bağlı kanca işlevleri |
+| `zaman_adımları` | TIMESTEPS_RANGE | İsteğe bağlı | - | - | Koşullandırmanın ne zaman etkin olacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
 
 **Not:** Bir `mask` sağlandığında, `set_cond_area` parametresi "mask bounds" olarak ayarlanarak koşullandırma uygulaması yalnızca maskelenmiş bölgeyle sınırlandırılabilir. `hooks` parametresi, kanca işlevleri aracılığıyla özel işlemeye olanak tanır ve `timesteps`, koşullandırma etkisini oluşturma sırasında belirli bir zaman adımı aralığıyla sınırlar.
 

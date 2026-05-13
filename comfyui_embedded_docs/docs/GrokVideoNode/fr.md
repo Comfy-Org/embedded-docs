@@ -8,12 +8,12 @@ Le nœud Grok Video génère une courte vidéo à partir d'une description textu
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | Le modèle à utiliser pour la génération vidéo. |
-| `prompt` | STRING | Oui | - | Description textuelle de la vidéo souhaitée. |
-| `resolution` | COMBO | Oui | `"480p"`<br>`"720p"` | La résolution de la vidéo de sortie. |
-| `aspect_ratio` | COMBO | Oui | `"auto"`<br>`"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | Le rapport hauteur/largeur de la vidéo de sortie (par défaut : "auto"). |
-| `duration` | INT | Oui | 1 à 15 | La durée de la vidéo de sortie en secondes (par défaut : 6). |
-| `seed` | INT | Oui | 0 à 2147483647 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). |
+| `modèle` | COMBO | Oui | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | Le modèle à utiliser pour la génération vidéo. |
+| `invite` | STRING | Oui | - | Description textuelle de la vidéo souhaitée. |
+| `résolution` | COMBO | Oui | `"480p"`<br>`"720p"` | La résolution de la vidéo de sortie. |
+| `rapport d'aspect` | COMBO | Oui | `"auto"`<br>`"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | Le rapport hauteur/largeur de la vidéo de sortie (par défaut : "auto"). |
+| `durée` | INT | Oui | 1 à 15 | La durée de la vidéo de sortie en secondes (par défaut : 6). |
+| `graine` | INT | Oui | 0 à 2147483647 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). |
 | `image` | IMAGE | Non | - | Une image d'entrée facultative à animer. |
 
 **Remarque :** Si une `image` est fournie, une seule image est prise en charge. Fournir plusieurs images entraînera une erreur. L'`prompt` doit comporter au moins 1 caractère après suppression des espaces.

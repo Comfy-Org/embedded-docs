@@ -6,9 +6,9 @@ O nó SamplerLCMUpscale fornece um método de amostragem especializado que combi
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `scale_ratio` | FLOAT | Não | 0,1 - 20,0 | O fator de escala a ser aplicado durante o redimensionamento (padrão: 1,0) |
-| `scale_steps` | INT | Não | -1 - 1000 | O número de etapas a serem usadas no processo de redimensionamento. Use -1 para cálculo automático (padrão: -1) |
-| `upscale_method` | COMBO | Sim | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | O método de interpolação usado para redimensionar a imagem |
+| `proporção_de_escala` | FLOAT | Não | 0,1 - 20,0 | O fator de escala a ser aplicado durante o redimensionamento (padrão: 1,0) |
+| `etapas_de_escala` | INT | Não | -1 - 1000 | O número de etapas a serem usadas no processo de redimensionamento. Use -1 para cálculo automático (padrão: -1) |
+| `método_de_upscale` | COMBO | Sim | "bislerp"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bicubic" | O método de interpolação usado para redimensionar a imagem |
 
 ## Saídas
 

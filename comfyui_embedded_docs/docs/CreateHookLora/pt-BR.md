@@ -9,9 +9,9 @@ O nó Create Hook LoRA gera objetos de hook para aplicar modificações LoRA (Lo
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `lora_name` | STRING | Sim | Múltiplas opções disponíveis | O nome do arquivo LoRA a ser carregado do diretório loras |
-| `strength_model` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de força para ajustes do modelo (padrão: 1.0) |
-| `strength_clip` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de força para ajustes do CLIP (padrão: 1.0) |
-| `prev_hooks` | HOOKS | Não | N/A | Grupo de hooks existente opcional para combinar com os novos hooks LoRA |
+| `força_modelo` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de força para ajustes do modelo (padrão: 1.0) |
+| `força_clip` | FLOAT | Sim | -20.0 a 20.0 | O multiplicador de força para ajustes do CLIP (padrão: 1.0) |
+| `hooks_anteriores` | HOOKS | Não | N/A | Grupo de hooks existente opcional para combinar com os novos hooks LoRA |
 
 **Restrições dos Parâmetros:**
 

@@ -6,9 +6,9 @@ Le nœud LoraModelLoader applique les pondérations d'un LoRA (Adaptation de Bas
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel le LoRA sera appliqué. |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel le LoRA sera appliqué. |
 | `lora` | LORA_MODEL | Oui | - | Le modèle LoRA à appliquer au modèle de diffusion. |
-| `strength_model` | FLOAT | Oui | -100.0 à 100.0 | L'intensité de modification du modèle de diffusion. Cette valeur peut être négative (par défaut : 1.0). |
+| `intensité_modèle` | FLOAT | Oui | -100.0 à 100.0 | L'intensité de modification du modèle de diffusion. Cette valeur peut être négative (par défaut : 1.0). |
 | `bypass` | BOOLEAN | Oui | Vrai ou Faux | Lorsqu'il est activé, applique le LoRA en mode bypass sans modifier les pondérations du modèle de base. Utile pour l'entraînement et lorsque les pondérations du modèle sont déchargées (par défaut : Faux). |
 
 **Remarque :** Lorsque `strength_model` est défini sur 0, le nœud renvoie le modèle d'origine sans appliquer aucune modification LoRA.
@@ -17,7 +17,7 @@ Le nœud LoraModelLoader applique les pondérations d'un LoRA (Adaptation de Bas
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle de diffusion modifié avec les pondérations LoRA appliquées. |
+| `modèle` | MODEL | Le modèle de diffusion modifié avec les pondérations LoRA appliquées. |
 
 ---
 **Source fingerprint (SHA-256):** `82afa7dbbc990f1a9f202f920aaf8fad7fe69dc35e75ed8a95eb63c9dec74961`

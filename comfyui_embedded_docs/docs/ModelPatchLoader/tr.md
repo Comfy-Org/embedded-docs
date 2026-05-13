@@ -6,7 +6,7 @@ ModelPatchLoader düğümü, model_patches klasöründen özelleştirilmiş mode
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `name` | STRING | Evet | model_patches klasöründeki tüm mevcut model yama dosyaları | model_patches dizininden yüklenecek model yamasının dosya adı |
+| `ad` | STRING | Evet | model_patches klasöründeki tüm mevcut model yama dosyaları | model_patches dizininden yüklenecek model yamasının dosya adı |
 
 ## Çıkışlar
 

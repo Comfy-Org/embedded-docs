@@ -8,7 +8,7 @@ O nó ColorToRGBInt converte uma cor especificada em formato hexadecimal em um �
 
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
-| `color` | STRING | Sim | N/A | Um valor de cor no formato hexadecimal `#RRGGBB`. |
+| `cor` | STRING | Sim | N/A | Um valor de cor no formato hexadecimal `#RRGGBB`. |
 
 **Nota:** A string de entrada `color` deve ter exatamente 7 caracteres e começar com o símbolo `#`, seguido por seis dígitos hexadecimais (por exemplo, `#FF0000` para vermelho). O nó gerará um erro se o formato estiver incorreto.
 

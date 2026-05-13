@@ -14,7 +14,7 @@ O nó Grok Image Edit modifica uma imagem existente com base em um prompt de tex
 | `resolution` | COMBO | Sim | `"1K"`<br>`"2K"` | A resolução da imagem de saída. |
 | `number_of_images` | INT | Não | 1 a 10 | Número de imagens editadas a serem geradas (padrão: 1). |
 | `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). |
-| `aspect_ratio` | COMBO | Não | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | A proporção de aspecto para a imagem de saída. Permitida apenas quando múltiplas imagens estão conectadas à entrada de imagem. Se definido como "auto", a proporção de aspecto é determinada automaticamente (padrão: "auto"). |
+| `proporção` | COMBO | Não | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | A proporção de aspecto para a imagem de saída. Permitida apenas quando múltiplas imagens estão conectadas à entrada de imagem. Se definido como "auto", a proporção de aspecto é determinada automaticamente (padrão: "auto"). |
 
 **Restrições importantes:**
 - A entrada `image` suporta até 3 imagens, exceto ao usar o modelo `grok-imagine-image-pro`, que suporta apenas 1 imagem de entrada.

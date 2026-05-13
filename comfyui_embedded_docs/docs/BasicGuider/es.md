@@ -6,8 +6,8 @@ El nodo BasicGuider crea un mecanismo de guía simple para el proceso de muestre
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo que se utilizará para la guía |
-| `conditioning` | CONDITIONING | Sí | - | Los datos de condicionamiento que dirigen el proceso de generación |
+| `modelo` | MODEL | Sí | - | El modelo que se utilizará para la guía |
+| `acondicionamiento` | CONDITIONING | Sí | - | Los datos de condicionamiento que dirigen el proceso de generación |
 
 ## Salidas
 

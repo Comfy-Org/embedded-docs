@@ -12,10 +12,10 @@ Assim como um pintor prepara uma tela em branco antes de começar a criar, o nó
 
 | Nome do Parâmetro | Tipo de Dado | Descrição |
 |-------------------|--------------|-----------|
-| `width` | INT | Define a largura da imagem gerada (em pixels), determinando as dimensões horizontais da tela |
-| `height` | INT | Define a altura da imagem gerada (em pixels), determinando as dimensões verticais da tela |
-| `batch_size` | INT | O número de imagens a serem geradas de uma vez, usado para criação em lote de imagens com as mesmas especificações |
-| `color` | INT | A cor de fundo da imagem. Você pode inserir configurações de cor hexadecimal, que serão convertidas automaticamente para decimal |
+| `largura` | INT | Define a largura da imagem gerada (em pixels), determinando as dimensões horizontais da tela |
+| `altura` | INT | Define a altura da imagem gerada (em pixels), determinando as dimensões verticais da tela |
+| `tamanho_do_lote` | INT | O número de imagens a serem geradas de uma vez, usado para criação em lote de imagens com as mesmas especificações |
+| `cor` | INT | A cor de fundo da imagem. Você pode inserir configurações de cor hexadecimal, que serão convertidas automaticamente para decimal |
 
 ## Saídas
 

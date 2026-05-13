@@ -8,15 +8,15 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 圖像生成的提示詞（預設：空字串） |
-| `turbo` | BOOLEAN | 否 | - | 是否使用渦輪模式（生成速度更快，但品質可能較低）（預設：False） |
-| `aspect_ratio` | COMBO | 否 | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | 圖像生成的長寬比。若解析度未設為 AUTO，則此設定將被忽略。（預設："1:1"） |
-| `resolution` | COMBO | 否 | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | 圖像生成的解析度。若未設為 AUTO，則此設定將覆蓋 aspect_ratio 設定。（預設："Auto"） |
-| `magic_prompt_option` | COMBO | 否 | "AUTO"<br>"ON"<br>"OFF" | 決定生成時是否使用 MagicPrompt（預設："AUTO"） |
-| `seed` | INT | 否 | 0-2147483647 | 生成的隨機種子（預設：0） |
-| `style_type` | COMBO | 否 | "AUTO"<br>"GENERAL"<br>"REALISTIC"<br>"DESIGN"<br>"RENDER_3D"<br>"ANIME" | 生成的樣式類型（僅限 V2）（預設："NONE"） |
-| `negative_prompt` | STRING | 否 | - | 描述要從圖像中排除的內容（預設：空字串） |
-| `num_images` | INT | 否 | 1-8 | 要生成的圖像數量（預設：1） |
+| `提示詞` | STRING | 是 | - | 圖像生成的提示詞（預設：空字串） |
+| `加速模式` | BOOLEAN | 否 | - | 是否使用渦輪模式（生成速度更快，但品質可能較低）（預設：False） |
+| `長寬比` | COMBO | 否 | "1:1"<br>"16:9"<br>"9:16"<br>"4:3"<br>"3:4"<br>"3:2"<br>"2:3" | 圖像生成的長寬比。若解析度未設為 AUTO，則此設定將被忽略。（預設："1:1"） |
+| `解析度` | COMBO | 否 | "Auto"<br>"1024x1024"<br>"1152x896"<br>"896x1152"<br>"1216x832"<br>"832x1216"<br>"1344x768"<br>"768x1344"<br>"1536x640"<br>"640x1536" | 圖像生成的解析度。若未設為 AUTO，則此設定將覆蓋 aspect_ratio 設定。（預設："Auto"） |
+| `MagicPrompt 選項` | COMBO | 否 | "AUTO"<br>"ON"<br>"OFF" | 決定生成時是否使用 MagicPrompt（預設："AUTO"） |
+| `種子值` | INT | 否 | 0-2147483647 | 生成的隨機種子（預設：0） |
+| `風格類型` | COMBO | 否 | "AUTO"<br>"GENERAL"<br>"REALISTIC"<br>"DESIGN"<br>"RENDER_3D"<br>"ANIME" | 生成的樣式類型（僅限 V2）（預設："NONE"） |
+| `排除提示詞` | STRING | 否 | - | 描述要從圖像中排除的內容（預設：空字串） |
+| `影像數量` | INT | 否 | 1-8 | 要生成的圖像數量（預設：1） |
 
 **注意：** 當 `resolution` 未設為 "Auto" 時，它會覆蓋 `aspect_ratio` 設定。`num_images` 參數每次生成最多限制為 8 張圖像。
 

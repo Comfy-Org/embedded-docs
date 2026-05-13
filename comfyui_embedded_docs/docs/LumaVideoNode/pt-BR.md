@@ -8,9 +8,9 @@ Gera vídeos de forma síncrona com base em um prompt de texto e configurações
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Prompt para a geração do vídeo (padrão: string vazia). Deve ter pelo menos 3 caracteres. |
 | `model` | COMBO | Sim | `"ray_1_6"`<br>`"ray_2"` | O modelo de geração de vídeo a ser utilizado. |
-| `aspect_ratio` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | A proporção de aspecto para o vídeo gerado (padrão: "16:9"). |
-| `resolution` | COMBO | Sim | `"540p"`<br>`"720p"`<br>`"1080p"` | A resolução de saída do vídeo (padrão: "540p"). Este parâmetro é ignorado ao usar o modelo `ray_1_6`. |
-| `duration` | COMBO | Sim | `"5s"`<br>`"9s"` | A duração do vídeo gerado. Este parâmetro é ignorado ao usar o modelo `ray_1_6`. |
+| `proporção` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | A proporção de aspecto para o vídeo gerado (padrão: "16:9"). |
+| `resolução` | COMBO | Sim | `"540p"`<br>`"720p"`<br>`"1080p"` | A resolução de saída do vídeo (padrão: "540p"). Este parâmetro é ignorado ao usar o modelo `ray_1_6`. |
+| `duração` | COMBO | Sim | `"5s"`<br>`"9s"` | A duração do vídeo gerado. Este parâmetro é ignorado ao usar o modelo `ray_1_6`. |
 | `loop` | BOOLEAN | Sim | - | Indica se o vídeo deve ser em loop (padrão: Falso). |
 | `seed` | INT | Sim | 0 a 18446744073709551615 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). |
 | `luma_concepts` | CUSTOM | Não | - | Conceitos de Câmera opcionais para ditar o movimento da câmera através do nó Luma Concepts. |

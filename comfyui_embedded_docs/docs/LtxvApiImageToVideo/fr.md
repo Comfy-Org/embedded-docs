@@ -7,12 +7,12 @@ Le nœud LTXV Image To Video génère une vidéo de qualité professionnelle à 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | Première image à utiliser pour la vidéo. |
-| `model` | COMBO | Oui | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` | Le modèle d'IA à utiliser pour la génération vidéo. Le modèle "Fast" est optimisé pour la vitesse, tandis que le modèle "Quality" privilégie la fidélité visuelle. |
+| `modèle` | COMBO | Oui | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` | Le modèle d'IA à utiliser pour la génération vidéo. Le modèle "Fast" est optimisé pour la vitesse, tandis que le modèle "Quality" privilégie la fidélité visuelle. |
 | `prompt` | STRING | Oui | - | Une description textuelle qui guide le contenu et le mouvement de la vidéo générée. |
-| `duration` | COMBO | Oui | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La durée de la vidéo en secondes (par défaut : 8). |
-| `resolution` | COMBO | Oui | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | La résolution de sortie de la vidéo générée. |
-| `fps` | COMBO | Oui | `25`<br>`50` | Le nombre d'images par seconde pour la vidéo (par défaut : 25). |
-| `generate_audio` | BOOLEAN | Non | - | Lorsque cette option est activée, la vidéo générée inclura un son généré par IA correspondant à la scène (par défaut : Faux). |
+| `durée` | COMBO | Oui | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La durée de la vidéo en secondes (par défaut : 8). |
+| `résolution` | COMBO | Oui | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | La résolution de sortie de la vidéo générée. |
+| `ips` | COMBO | Oui | `25`<br>`50` | Le nombre d'images par seconde pour la vidéo (par défaut : 25). |
+| `générer_audio` | BOOLEAN | Non | - | Lorsque cette option est activée, la vidéo générée inclura un son généré par IA correspondant à la scène (par défaut : Faux). |
 
 **Contraintes importantes :**
 

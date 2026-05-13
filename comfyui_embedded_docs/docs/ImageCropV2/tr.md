@@ -6,8 +6,8 @@ Görüntü Kırp düğümü, bir giriş görüntüsünden dikdörtgen bir bölü
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `image` | IMAGE | Evet | Yok | Kırpılacak giriş görüntüsü. |
-| `crop_region` | BOUNDINGBOX | Evet | Yok | Görüntüden çıkarılacak dikdörtgen alanı tanımlar. `x` (yatay başlangıç), `y` (dikey başlangıç), `width` (genişlik) ve `height` (yükseklik) ile belirtilir. Tanımlanan bölge görüntünün sınırlarının dışına taşarsa, otomatik olarak görüntü boyutlarına sığacak şekilde ayarlanır. |
+| `görüntü` | IMAGE | Evet | Yok | Kırpılacak giriş görüntüsü. |
+| `kırpma_bölgesi` | BOUNDINGBOX | Evet | Yok | Görüntüden çıkarılacak dikdörtgen alanı tanımlar. `x` (yatay başlangıç), `y` (dikey başlangıç), `width` (genişlik) ve `height` (yükseklik) ile belirtilir. Tanımlanan bölge görüntünün sınırlarının dışına taşarsa, otomatik olarak görüntü boyutlarına sığacak şekilde ayarlanır. |
 
 **Bölge Kısıtlamaları Hakkında Not:** Kırpma bölgesi, giriş görüntüsünün sınırları içinde kalacak şekilde otomatik olarak kısıtlanır. Belirtilen `x` veya `y` koordinatı görüntünün genişliğinden veya yüksekliğinden büyükse, izin verilen maksimum konuma ayarlanır. Ortaya çıkan kırpma genişliği ve yüksekliği, bölgenin görüntünün kenarlarını aşmaması için ayarlanır.
 
@@ -15,7 +15,7 @@ Görüntü Kırp düğümü, bir giriş görüntüsünden dikdörtgen bir bölü
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `image` | IMAGE | Orijinal giriş görüntüsünün kırpılmış bölümü. |
+| `görüntü` | IMAGE | Orijinal giriş görüntüsünün kırpılmış bölümü. |
 
 ---
 **Source fingerprint (SHA-256):** `9d3543aa8396ae2ab0353accc3c89ae6be6495f6fdcefbb5439fa865a5d3059f`

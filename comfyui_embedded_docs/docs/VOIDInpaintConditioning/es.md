@@ -20,8 +20,8 @@ El nodo VOIDInpaintConditioning prepara los datos de condicionamiento necesarios
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `positive` | CONDITIONING | El condicionamiento positivo con la información latente de pintura inteligente añadida |
-| `negative` | CONDITIONING | El condicionamiento negativo con la información latente de pintura inteligente añadida |
+| `negative` | CONDITIONING | El condicionamiento positivo con la información latente de pintura inteligente añadida |
+| `latent` | CONDITIONING | El condicionamiento negativo con la información latente de pintura inteligente añadida |
 | `latent` | LATENT | Un tensor latente de ruido relleno con ceros con forma [batch_size, 16, latent_t, latent_h, latent_w] |
 
 ---

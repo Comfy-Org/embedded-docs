@@ -7,18 +7,18 @@ Gera modelos 3D de forma síncrona com base em um prompt de texto usando a API d
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Descrição textual para gerar o modelo 3D (entrada multilinha) |
-| `negative_prompt` | STRING | Não | - | Descrição textual do que evitar no modelo gerado (entrada multilinha) |
-| `model_version` | COMBO | Não | Múltiplas opções disponíveis | Versão do modelo Tripo a ser usada para geração (padrão: v2.5-20250123) |
-| `style` | COMBO | Não | Múltiplas opções disponíveis | Configuração de estilo para o modelo gerado (padrão: "Nenhum") |
-| `texture` | BOOLEAN | Não | - | Se deve gerar texturas para o modelo (padrão: Verdadeiro) |
+| `prompt_negativo` | STRING | Não | - | Descrição textual do que evitar no modelo gerado (entrada multilinha) |
+| `versão_do_modelo` | COMBO | Não | Múltiplas opções disponíveis | Versão do modelo Tripo a ser usada para geração (padrão: v2.5-20250123) |
+| `estilo` | COMBO | Não | Múltiplas opções disponíveis | Configuração de estilo para o modelo gerado (padrão: "Nenhum") |
+| `textura` | BOOLEAN | Não | - | Se deve gerar texturas para o modelo (padrão: Verdadeiro) |
 | `pbr` | BOOLEAN | Não | - | Se deve gerar materiais PBR (Renderização Baseada em Física) (padrão: Verdadeiro) |
-| `image_seed` | INT | Não | - | Semente aleatória para geração de imagem (padrão: 42) |
-| `model_seed` | INT | Não | - | Semente aleatória para geração do modelo (padrão: 42) |
-| `texture_seed` | INT | Não | - | Semente aleatória para geração de textura (padrão: 42) |
-| `texture_quality` | COMBO | Não | "padrão"<br>"detalhado" | Nível de qualidade para geração de textura (padrão: "padrão") |
-| `face_limit` | INT | Não | -1 a 2000000 | Número máximo de faces no modelo gerado, -1 para sem limite (padrão: -1) |
+| `semente_da_imagem` | INT | Não | - | Semente aleatória para geração de imagem (padrão: 42) |
+| `semente_do_modelo` | INT | Não | - | Semente aleatória para geração do modelo (padrão: 42) |
+| `semente_da_textura` | INT | Não | - | Semente aleatória para geração de textura (padrão: 42) |
+| `qualidade_da_textura` | COMBO | Não | "padrão"<br>"detalhado" | Nível de qualidade para geração de textura (padrão: "padrão") |
+| `limite_de_faces` | INT | Não | -1 a 2000000 | Número máximo de faces no modelo gerado, -1 para sem limite (padrão: -1) |
 | `quad` | BOOLEAN | Não | - | Se deve gerar geometria baseada em quads em vez de triângulos (padrão: Falso) |
-| `geometry_quality` | COMBO | Não | "padrão"<br>"detalhado" | Nível de qualidade para geração de geometria (padrão: "padrão") |
+| `qualidade_da_geometria` | COMBO | Não | "padrão"<br>"detalhado" | Nível de qualidade para geração de geometria (padrão: "padrão") |
 
 **Nota:** O parâmetro `prompt` é obrigatório e não pode estar vazio. Se nenhum prompt for fornecido, o nó gerará um erro.
 

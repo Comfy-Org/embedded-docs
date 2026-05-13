@@ -18,7 +18,7 @@ Ce nœud traite une entrée audio pour en extraire des caractéristiques pouvant
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `audio_encoder_output` | AUDIO_ENCODER_OUTPUT | Un dictionnaire contenant les caractéristiques audio traitées, la fréquence d'images calculée (fps) et l'échelle d'injection audio. Cette sortie est utilisée pour conditionner le modèle de génération vidéo. |
+| `fps_string` | AUDIO_ENCODER_OUTPUT | Un dictionnaire contenant les caractéristiques audio traitées, la fréquence d'images calculée (fps) et l'échelle d'injection audio. Cette sortie est utilisée pour conditionner le modèle de génération vidéo. |
 | `fps_string` | STRING | Une chaîne de texte décrivant la fréquence d'images calculée (fps) en fonction de la durée audio et du nombre d'images vidéo. Cette chaîne est destinée à être utilisée dans le prompt du modèle vidéo. |
 
 ---

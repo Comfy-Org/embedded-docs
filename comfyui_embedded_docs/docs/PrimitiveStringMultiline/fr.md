@@ -6,7 +6,7 @@ Le nœud PrimitiveStringMultiline fournit un champ de saisie de texte multiligne
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `value` | STRING | Oui | N/D | La valeur de texte saisie pouvant s'étendre sur plusieurs lignes |
+| `valeur` | STRING | Oui | N/D | La valeur de texte saisie pouvant s'étendre sur plusieurs lignes |
 
 ## Sorties
 

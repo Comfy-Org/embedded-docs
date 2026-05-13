@@ -20,7 +20,7 @@ Bu düğüm, Seedance 2.0 için kişisel bir video varlığı oluşturur. Giriş
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `asset_id` | STRING | Yeni oluşturulan video varlığı için benzersiz tanımlayıcı. |
+| `group_id` | STRING | Yeni oluşturulan video varlığı için benzersiz tanımlayıcı. |
 | `group_id` | STRING | Yeni videoyu içeren varlık grubunun tanımlayıcısı. Bu, sağlanan `group_id` veya yeni oluşturulan bir kimlik olacaktır. |
 
 ---

@@ -7,7 +7,7 @@ Le nœud SaveAudio enregistre des données audio dans un fichier au format FLAC.
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `audio` | AUDIO | Oui | - | Les données audio à sauvegarder |
-| `filename_prefix` | STRING | Non | - | Le préfixe pour le nom du fichier de sortie (par défaut : "audio/ComfyUI") |
+| `préfixe_du_nom_de_fichier` | STRING | Non | - | Le préfixe pour le nom du fichier de sortie (par défaut : "audio/ComfyUI") |
 
 *Remarque : Les paramètres `prompt` et `extra_pnginfo` sont masqués et gérés automatiquement par le système.*
 

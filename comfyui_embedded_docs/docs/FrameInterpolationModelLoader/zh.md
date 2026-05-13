@@ -8,7 +8,7 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | STRING | 是 | `frame_interpolation` 文件夹中的模型文件列表 | 选择要加载的帧插值模型。模型必须放置在 `frame_interpolation` 文件夹中。 |
+| `模型名称` | STRING | 是 | `frame_interpolation` 文件夹中的模型文件列表 | 选择要加载的帧插值模型。模型必须放置在 `frame_interpolation` 文件夹中。 |
 
 ## 输出
 

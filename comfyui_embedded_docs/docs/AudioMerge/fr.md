@@ -10,7 +10,7 @@ Le nœud AudioMerge combine deux pistes audio en superposant leurs formes d'onde
 |-----------|-----------------|--------|-------|-------------|
 | `audio1` | AUDIO | Oui | - | Première entrée audio à fusionner |
 | `audio2` | AUDIO | Oui | - | Deuxième entrée audio à fusionner |
-| `merge_method` | COMBO | Oui | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | Méthode utilisée pour combiner les formes d'onde audio. |
+| `méthode_fusion` | COMBO | Oui | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | Méthode utilisée pour combiner les formes d'onde audio. |
 
 ## Sorties
 

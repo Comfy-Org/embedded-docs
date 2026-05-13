@@ -8,8 +8,8 @@
 
 | Параметр | Тип данных | Обязательный | Диапазон | Описание |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | RIG_TASK_ID | Да | - | Идентификатор задачи ранее обработанной ригованной 3D-модели, к которой применяется анимация |
-| `animation` | STRING | Да | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | Предустановка анимации для применения к 3D-модели. Варианты включают гуманоидные анимации (ожидание, ходьба, бег, ныряние, лазание, прыжок, удар, стрельба, получение урона, падение, поворот) и анимации существ (ходьба четвероногих, ходьба шестиногих, ходьба восьминогих, марш змеевидных, марш водных). |
+| `идентификатор_задачи_исходной_модели` | RIG_TASK_ID | Да | - | Идентификатор задачи ранее обработанной ригованной 3D-модели, к которой применяется анимация |
+| `анимация` | STRING | Да | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | Предустановка анимации для применения к 3D-модели. Варианты включают гуманоидные анимации (ожидание, ходьба, бег, ныряние, лазание, прыжок, удар, стрельба, получение урона, падение, поворот) и анимации существ (ходьба четвероногих, ходьба шестиногих, ходьба восьминогих, марш змеевидных, марш водных). |
 | `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | Нет | - | Токен аутентификации для доступа к API Comfy.org (скрытый параметр) |
 | `api_key_comfy_org` | API_KEY_COMFY_ORG | Нет | - | Ключ API для доступа к сервису Comfy.org (скрытый параметр) |
 | `unique_id` | UNIQUE_ID | Нет | - | Уникальный идентификатор для отслеживания операции (скрытый параметр) |

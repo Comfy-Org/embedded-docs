@@ -7,11 +7,11 @@ El nodo `TextGenerateLTX2Prompt` es una versión especializada de un nodo de gen
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `clip` | CLIP | Sí | | El modelo CLIP utilizado para la codificación de texto. |
-| `prompt` | STRING | Sí | | La entrada de texto sin procesar del usuario que será mejorada o completada. |
-| `max_length` | INT | Sí | | El número máximo de tokens que el modelo de lenguaje puede generar. |
-| `sampling_mode` | COMBO | Sí | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` | La estrategia de muestreo utilizada para seleccionar el siguiente token durante la generación de texto. |
-| `image` | IMAGE | No | | Una imagen de entrada opcional. Cuando se proporciona, el nodo utiliza un mensaje de sistema diferente que incluye un marcador de posición para el contexto de la imagen. |
-| `thinking` | BOOLEAN | No | | Cuando está habilitado, el modelo mostrará su proceso de razonamiento antes de la respuesta final. |
+| `mensaje` | STRING | Sí | | La entrada de texto sin procesar del usuario que será mejorada o completada. |
+| `longitud_máxima` | INT | Sí | | El número máximo de tokens que el modelo de lenguaje puede generar. |
+| `modo_de_muestreo` | COMBO | Sí | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` | La estrategia de muestreo utilizada para seleccionar el siguiente token durante la generación de texto. |
+| `imagen` | IMAGE | No | | Una imagen de entrada opcional. Cuando se proporciona, el nodo utiliza un mensaje de sistema diferente que incluye un marcador de posición para el contexto de la imagen. |
+| `pensando` | BOOLEAN | No | | Cuando está habilitado, el modelo mostrará su proceso de razonamiento antes de la respuesta final. |
 | `use_default_template` | BOOLEAN | No | | Cuando está habilitado, el nodo utilizará la plantilla de chat predeterminada para el formateo. |
 | `video` | VIDEO | No | | Una entrada de video opcional que puede usarse como contexto adicional para la generación. |
 | `audio` | AUDIO | No | | Una entrada de audio opcional que puede usarse como contexto adicional para la generación. |

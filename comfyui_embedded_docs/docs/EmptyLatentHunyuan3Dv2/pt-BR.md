@@ -6,8 +6,8 @@ O nó EmptyLatentHunyuan3Dv2 cria tensores latentes vazios especificamente forma
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `resolution` | INT | Sim | 1 - 8192 | A dimensão de resolução para o espaço latente (padrão: 3072) |
-| `batch_size` | INT | Sim | 1 - 4096 | O número de imagens latentes no lote (padrão: 1) |
+| `resolução` | INT | Sim | 1 - 8192 | A dimensão de resolução para o espaço latente (padrão: 3072) |
+| `tamanho_do_lote` | INT | Sim | 1 - 4096 | O número de imagens latentes no lote (padrão: 1) |
 
 ## Saídas
 

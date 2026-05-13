@@ -6,8 +6,8 @@ Este nó armazena uma imagem e um valor de peso para uso com o nó Gerar Imagem 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `image` | IMAGE | Sim | - | Imagem a ser usada como referência. |
-| `weight` | FLOAT | Sim | 0.0 - 1.0 | Peso da referência de imagem (padrão: 1.0). |
+| `imagem` | IMAGE | Sim | - | Imagem a ser usada como referência. |
+| `peso` | FLOAT | Sim | 0.0 - 1.0 | Peso da referência de imagem (padrão: 1.0). |
 | `luma_ref` | LUMA_REF | Não | - | Cadeia de referência Luma existente opcional para adicionar. |
 
 ## Saídas

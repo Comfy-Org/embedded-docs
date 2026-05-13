@@ -16,7 +16,7 @@
 | `closed_loop` | BOOLEAN | 아니요 | - | 컨텍스트 윈도우 루프를 닫을지 여부이며, 루프 스케줄에만 적용됩니다(기본값: False). |
 | `fuse_method` | COMBO | 아니요 | `PYRAMID`<br>`LIST_STATIC` | 컨텍스트 윈도우를 융합하는 데 사용할 방법입니다(기본값: PYRAMID). |
 | `dim` | INT | 아니요 | 0-5 | 컨텍스트 윈도우를 적용할 차원입니다(기본값: 0). |
-| `freenoise` | BOOLEAN | 아니요 | - | FreeNoise 노이즈 셔플링을 적용할지 여부로, 윈도우 블렌딩을 개선합니다(기본값: False). |
+| `프리노이즈` | BOOLEAN | 아니요 | - | FreeNoise 노이즈 셔플링을 적용할지 여부로, 윈도우 블렌딩을 개선합니다(기본값: False). |
 | `cond_retain_index_list` | STRING | 아니요 | - | 각 윈도우의 컨디셔닝 텐서에 유지할 잠재 인덱스 목록입니다. 예를 들어 '0'으로 설정하면 각 윈도우에 초기 시작 이미지가 사용됩니다(기본값: ""). |
 | `split_conds_to_windows` | BOOLEAN | 아니요 | - | ConditionCombine으로 생성된 여러 컨디셔닝을 영역 인덱스에 따라 각 윈도우로 분할할지 여부입니다(기본값: False). |
 | `causal_window_fix` | BOOLEAN | 아니요 | - | 0이 아닌 인덱스의 컨텍스트 윈도우에 인과적 수정 프레임을 추가할지 여부입니다(기본값: True). |

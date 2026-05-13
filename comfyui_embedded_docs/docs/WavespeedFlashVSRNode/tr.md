@@ -7,7 +7,7 @@ WavespeedFlashVSRNode, düşük çözünürlüklü veya bulanık görüntülerin
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `video` | VIDEO | Evet | Yok | Yükseltilecek girdi video dosyası. Süresi 5 saniye ile 10 dakika arasında olan MP4 konteyner formatında olmalıdır. |
-| `target_resolution` | STRING | Evet | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | Yükseltilmiş çıktı videosu için istenen çözünürlük. |
+| `hedef_çözünürlük` | STRING | Evet | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | Yükseltilmiş çıktı videosu için istenen çözünürlük. |
 
 **Girdi Kısıtlamaları:**
 

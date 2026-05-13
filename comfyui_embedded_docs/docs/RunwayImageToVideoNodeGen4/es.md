@@ -7,10 +7,10 @@ El nodo Runway Image to Video (Gen4 Turbo) genera un video a partir de un único
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | - | Mensaje de texto para la generación (predeterminado: cadena vacía) |
-| `start_frame` | IMAGE | Sí | - | Fotograma inicial que se utilizará para el video |
-| `duration` | COMBO | Sí | `"5"`<br>`"10"` | Duración del video en segundos (predeterminado: "5") |
-| `ratio` | COMBO | Sí | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Relación de aspecto para el video generado (predeterminado: "1024:1024") |
-| `seed` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación (predeterminado: 0) |
+| `frame_inicial` | IMAGE | Sí | - | Fotograma inicial que se utilizará para el video |
+| `duración` | COMBO | Sí | `"5"`<br>`"10"` | Duración del video en segundos (predeterminado: "5") |
+| `proporción` | COMBO | Sí | `"1024:1024"`<br>`"1280:720"`<br>`"720:1280"`<br>`"1920:1080"`<br>`"1080:1920"`<br>`"2048:1080"`<br>`"1080:2048"` | Relación de aspecto para el video generado (predeterminado: "1024:1024") |
+| `semilla` | INT | No | 0 a 4294967295 | Semilla aleatoria para la generación (predeterminado: 0) |
 
 **Restricciones de parámetros:**
 

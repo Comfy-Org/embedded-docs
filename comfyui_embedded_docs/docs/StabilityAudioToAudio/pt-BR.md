@@ -8,11 +8,11 @@ Transforma amostras de áudio existentes em novas composições de alta qualidad
 |-----------|--------------|-------------|-------|-----------|
 | `model` | COMBO | Sim | "stable-audio-2.5"<br> | O modelo de IA a ser usado para transformação de áudio |
 | `prompt` | STRING | Sim |  | Instruções de texto descrevendo como transformar o áudio (padrão: vazio) |
-| `audio` | AUDIO | Sim |  | O áudio deve ter entre 6 e 190 segundos de duração |
-| `duration` | INT | Não | 1-190 | Controla a duração em segundos do áudio gerado (padrão: 190) |
-| `seed` | INT | Não | 0-4294967294 | A semente aleatória usada para geração (padrão: 0) |
-| `steps` | INT | Não | 4-8 | Controla o número de etapas de amostragem (padrão: 8) |
-| `strength` | FLOAT | Não | 0.01-1.0 | Parâmetro que controla o quanto o áudio de entrada influencia o áudio gerado (padrão: 1.0) |
+| `áudio` | AUDIO | Sim |  | O áudio deve ter entre 6 e 190 segundos de duração |
+| `duração` | INT | Não | 1-190 | Controla a duração em segundos do áudio gerado (padrão: 190) |
+| `semente` | INT | Não | 0-4294967294 | A semente aleatória usada para geração (padrão: 0) |
+| `etapas` | INT | Não | 4-8 | Controla o número de etapas de amostragem (padrão: 8) |
+| `força` | FLOAT | Não | 0.01-1.0 | Parâmetro que controla o quanto o áudio de entrada influencia o áudio gerado (padrão: 1.0) |
 
 **Nota:** O áudio de entrada deve ter entre 6 e 190 segundos de duração.
 
@@ -20,7 +20,7 @@ Transforma amostras de áudio existentes em novas composições de alta qualidad
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `audio` | AUDIO | O áudio transformado gerado com base no áudio de entrada e no prompt de texto |
+| `áudio` | AUDIO | O áudio transformado gerado com base no áudio de entrada e no prompt de texto |
 
 ---
 **Source fingerprint (SHA-256):** `d63ee2585be1ec1a21da72656ecea37f051a56595b15637013e515eb298fc4dc`

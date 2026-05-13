@@ -6,8 +6,8 @@ LatentAdd düğümü, iki gizli temsilin (latent representation) toplanması iç
 
 | Parametre    | Veri Türü    | Açıklama |
 |--------------|--------------|-------------|
-| `samples1`   | `LATENT`     | Toplanacak ilk gizli örnek kümesi. Özellikleri başka bir gizli örnek kümesiyle birleştirilecek olan girdilerden birini temsil eder. |
-| `samples2`   | `LATENT`     | Toplanacak ikinci gizli örnek kümesi. Özellikleri, öğe bazında toplama yoluyla ilk gizli örnek kümesiyle birleştirilen diğer girdi olarak işlev görür. |
+| `örnekler1`   | `LATENT`     | Toplanacak ilk gizli örnek kümesi. Özellikleri başka bir gizli örnek kümesiyle birleştirilecek olan girdilerden birini temsil eder. |
+| `örnekler2`   | `LATENT`     | Toplanacak ikinci gizli örnek kümesi. Özellikleri, öğe bazında toplama yoluyla ilk gizli örnek kümesiyle birleştirilen diğer girdi olarak işlev görür. |
 
 ## Çıktılar
 

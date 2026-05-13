@@ -6,8 +6,8 @@ O nó **LatentAdd** é projetado para a adição de duas representações latent
 
 | Parâmetro   | Tipo de Dado | Descrição |
 |-------------|--------------|-----------|
-| `samples1`  | `LATENT`     | O primeiro conjunto de amostras latentes a ser adicionado. Representa uma das entradas cujas características serão combinadas com outro conjunto de amostras latentes. |
-| `samples2`  | `LATENT`     | O segundo conjunto de amostras latentes a ser adicionado. Serve como a outra entrada cujas características são combinadas com o primeiro conjunto de amostras latentes por meio de adição elemento a elemento. |
+| `amostras1`  | `LATENT`     | O primeiro conjunto de amostras latentes a ser adicionado. Representa uma das entradas cujas características serão combinadas com outro conjunto de amostras latentes. |
+| `amostras2`  | `LATENT`     | O segundo conjunto de amostras latentes a ser adicionado. Serve como a outra entrada cujas características são combinadas com o primeiro conjunto de amostras latentes por meio de adição elemento a elemento. |
 
 ## Saídas
 

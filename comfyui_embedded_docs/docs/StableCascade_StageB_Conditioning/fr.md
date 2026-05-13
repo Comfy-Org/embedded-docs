@@ -6,7 +6,7 @@ Le nœud **StableCascade_StageB_Conditioning** prépare les données de conditio
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `conditioning` | CONDITIONING | Oui | - | Les données de conditionnement à modifier avec les informations préalables de l'étape C |
+| `conditionnement` | CONDITIONING | Oui | - | Les données de conditionnement à modifier avec les informations préalables de l'étape C |
 | `stage_c` | LATENT | Oui | - | La représentation latente de l'étape C contenant les échantillons préalables pour le conditionnement |
 
 ## Sorties

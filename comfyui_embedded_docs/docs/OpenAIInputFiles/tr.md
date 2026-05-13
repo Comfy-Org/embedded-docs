@@ -6,8 +6,8 @@ OpenAI API'si için girdi dosyalarını yükler ve biçimlendirir. Bu düğüm, 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `file` | COMBO | Evet | Birden çok seçenek mevcut (girdi dizinindeki 32MB altındaki tüm .txt ve .pdf dosyaları) | Model için bağlam olarak eklenecek girdi dosyaları. Şimdilik yalnızca metin (.txt) ve PDF (.pdf) dosyalarını kabul eder. Dosyalar 32MB'tan küçük olmalıdır. |
-| `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Hayır | Yok | Bu düğümden yüklenen dosyayla birlikte toplu olarak işlenecek isteğe bağlı ek dosya(lar). Tek bir mesajın birden fazla girdi dosyası içerebilmesi için girdi dosyalarının zincirlenmesine olanak tanır. |
+| `dosya` | COMBO | Evet | Birden çok seçenek mevcut (girdi dizinindeki 32MB altındaki tüm .txt ve .pdf dosyaları) | Model için bağlam olarak eklenecek girdi dosyaları. Şimdilik yalnızca metin (.txt) ve PDF (.pdf) dosyalarını kabul eder. Dosyalar 32MB'tan küçük olmalıdır. |
+| `OPENAI_GİRDİ_DOSYALARI` | OPENAI_INPUT_FILES | Hayır | Yok | Bu düğümden yüklenen dosyayla birlikte toplu olarak işlenecek isteğe bağlı ek dosya(lar). Tek bir mesajın birden fazla girdi dosyası içerebilmesi için girdi dosyalarının zincirlenmesine olanak tanır. |
 
 **Dosya Kısıtlamaları:**
 
@@ -19,7 +19,7 @@ OpenAI API'si için girdi dosyalarını yükler ve biçimlendirir. Bu düğüm, 
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | OpenAI API çağrıları için bağlam olarak kullanılmaya hazır, biçimlendirilmiş girdi dosyaları. |
+| `OPENAI_GİRDİ_DOSYALARI` | OPENAI_INPUT_FILES | OpenAI API çağrıları için bağlam olarak kullanılmaya hazır, biçimlendirilmiş girdi dosyaları. |
 
 ---
 **Source fingerprint (SHA-256):** `e5e92f6628072da9af787867e38c89dde3db853b7289ef6c607a066cd04c1cc9`

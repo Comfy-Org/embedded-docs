@@ -34,9 +34,9 @@ El nodo ByteDance Seedance 2.0 Reference to Video utiliza el modelo de IA Seedan
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Sí | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | El modelo de IA a utilizar. Seedance 2.0 es para máxima calidad, mientras que Seedance 2.0 Fast está optimizado para velocidad. Al seleccionar un modelo, se revelan entradas adicionales obligatorias para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio`, y entradas opcionales para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` y `auto_downscale`. |
-| `seed` | INT | No | 0 a 2147483647 | Número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (predeterminado: 0). |
-| `watermark` | BOOLEAN | No | `True` / `False` | Indica si se debe añadir una marca de agua al video generado (predeterminado: False). |
+| `modelo` | COMBO | Sí | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | El modelo de IA a utilizar. Seedance 2.0 es para máxima calidad, mientras que Seedance 2.0 Fast está optimizado para velocidad. Al seleccionar un modelo, se revelan entradas adicionales obligatorias para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio`, y entradas opcionales para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` y `auto_downscale`. |
+| `semilla` | INT | No | 0 a 2147483647 | Número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (predeterminado: 0). |
+| `marca_de_agua` | BOOLEAN | No | `True` / `False` | Indica si se debe añadir una marca de agua al video generado (predeterminado: False). |
 
 **Restricciones importantes:**
 *   Se requiere al menos una imagen o video de referencia (proporcionados a través de las entradas `reference_images`, `reference_videos` o `reference_assets`) para que el nodo funcione.

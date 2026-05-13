@@ -6,7 +6,7 @@ Ce nœud génère une vidéo mettant en scène une personne ou un objet à parti
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"wan2.7-r2v"` | Le modèle spécifique à utiliser pour la génération vidéo. |
+| `modèle` | COMBO | Oui | `"wan2.7-r2v"` | Le modèle spécifique à utiliser pour la génération vidéo. |
 | `model.prompt` | STRING | Oui | - | Invite décrivant la vidéo. Utilisez des identifiants tels que 'personnage1' et 'personnage2' pour faire référence aux personnages de référence. |
 | `model.negative_prompt` | STRING | Non | - | Invite négative décrivant ce qu'il faut éviter dans la vidéo générée (par défaut : vide). |
 | `model.resolution` | COMBO | Oui | `"720P"`<br>`"1080P"` | La résolution de la vidéo de sortie. |
@@ -14,8 +14,8 @@ Ce nœud génère une vidéo mettant en scène une personne ou un objet à parti
 | `model.duration` | INT | Oui | 2 à 10 | La durée de la vidéo générée en secondes (par défaut : 5). |
 | `model.reference_videos` | VIDEO | Non | - | Une liste de vidéos de référence. Vous pouvez ajouter jusqu'à 3 vidéos. |
 | `model.reference_images` | IMAGE | Non | - | Une liste d'images de référence. Vous pouvez ajouter jusqu'à 5 images. |
-| `seed` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération, qui permet de contrôler le caractère aléatoire de la sortie (par défaut : 0). |
-| `watermark` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane de génération IA au résultat (par défaut : Faux). Il s'agit d'un paramètre avancé. |
+| `graine` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération, qui permet de contrôler le caractère aléatoire de la sortie (par défaut : 0). |
+| `filigrane` | BOOLEAN | Non | - | Indique s'il faut ajouter un filigrane de génération IA au résultat (par défaut : Faux). Il s'agit d'un paramètre avancé. |
 
 **Contraintes importantes :**
 *   Vous devez fournir au moins une vidéo de référence ou une image de référence dans les entrées `model.reference_videos` ou `model.reference_images`.

@@ -8,15 +8,15 @@ Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Este n
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | - | Prompt de texto para o GPT Image (padrão: "") |
 | `seed` | INT | Não | 0 a 2147483647 | Semente aleatória para geração (padrão: 0) - ainda não implementada no backend |
-| `quality` | COMBO | Não | "low"<br>"medium"<br>"high" | Qualidade da imagem, afeta o custo e o tempo de geração (padrão: "low") |
-| `background` | COMBO | Não | "auto"<br>"opaque"<br>"transparent" | Retorna a imagem com ou sem fundo (padrão: "auto") |
-| `size` | COMBO | Não | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | Tamanho da imagem. Selecione "Custom" para usar largura e altura personalizadas (apenas GPT Image 2) (padrão: "auto") |
+| `qualidade` | COMBO | Não | "low"<br>"medium"<br>"high" | Qualidade da imagem, afeta o custo e o tempo de geração (padrão: "low") |
+| `fundo` | COMBO | Não | "auto"<br>"opaque"<br>"transparent" | Retorna a imagem com ou sem fundo (padrão: "auto") |
+| `tamanho` | COMBO | Não | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | Tamanho da imagem. Selecione "Custom" para usar largura e altura personalizadas (apenas GPT Image 2) (padrão: "auto") |
 | `n` | INT | Não | 1 a 8 | Quantas imagens gerar (padrão: 1) |
-| `image` | IMAGE | Não | - | Imagem de referência opcional para edição de imagem |
+| `imagem` | IMAGE | Não | - | Imagem de referência opcional para edição de imagem |
 | `mask` | MASK | Não | - | Máscara opcional para inpaint (áreas brancas serão substituídas) |
-| `model` | COMBO | Não | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | Modelo GPT Image a ser usado (padrão: "gpt-image-2") |
-| `custom_width` | INT | Não | 1024 a 3840 | Usado apenas quando `size` é "Custom". Deve ser um múltiplo de 16 (apenas GPT Image 2) (padrão: 1024) |
-| `custom_height` | INT | Não | 1024 a 3840 | Usado apenas quando `size` é "Custom". Deve ser um múltiplo de 16 (apenas GPT Image 2) (padrão: 1024) |
+| `modelo` | COMBO | Não | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | Modelo GPT Image a ser usado (padrão: "gpt-image-2") |
+| `custom_width` | INT | Não | 1024 a 3840 | Usado apenas quando `tamanho` é "Custom". Deve ser um múltiplo de 16 (apenas GPT Image 2) (padrão: 1024) |
+| `custom_height` | INT | Não | 1024 a 3840 | Usado apenas quando `tamanho` é "Custom". Deve ser um múltiplo de 16 (apenas GPT Image 2) (padrão: 1024) |
 
 **Restrições dos Parâmetros:**
 

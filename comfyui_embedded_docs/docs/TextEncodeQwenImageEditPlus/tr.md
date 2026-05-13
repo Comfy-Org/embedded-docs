@@ -37,9 +37,9 @@ TextEncodeQwenImageEditPlus düğümü, metin istemlerini ve isteğe bağlı gö
 | `clip` | CLIP | Evet | - | Belirteçleme (tokenization) ve kodlama için kullanılan CLIP modeli |
 | `prompt` | STRING | Evet | - | İstenen görüntü değişikliğini tanımlayan metin talimatı (çok satırlı giriş ve dinamik istemleri destekler) |
 | `vae` | VAE | Hayır | - | Giriş görüntülerinden referans latents (gizil değişkenler) oluşturmak için isteğe bağlı VAE modeli |
-| `image1` | IMAGE | Hayır | - | Analiz ve değişiklik için ilk isteğe bağlı giriş görüntüsü |
-| `image2` | IMAGE | Hayır | - | Analiz ve değişiklik için ikinci isteğe bağlı giriş görüntüsü |
-| `image3` | IMAGE | Hayır | - | Analiz ve değişiklik için üçüncü isteğe bağlı giriş görüntüsü |
+| `görüntü1` | IMAGE | Hayır | - | Analiz ve değişiklik için ilk isteğe bağlı giriş görüntüsü |
+| `görüntü2` | IMAGE | Hayır | - | Analiz ve değişiklik için ikinci isteğe bağlı giriş görüntüsü |
+| `görüntü3` | IMAGE | Hayır | - | Analiz ve değişiklik için üçüncü isteğe bağlı giriş görüntüsü |
 
 **Not:** Bir VAE sağlandığında, düğüm tüm giriş görüntülerinden referans latents (gizil değişkenler) üretir. Düğüm aynı anda en fazla üç görüntüyü işleyebilir. Görüntüler, görsel-dil işleme için otomatik olarak 384x384 piksel boyutuna ve VAE kodlaması için 8'e bölünebilen boyutlara (hedef alan 1024x1024 piksel olacak şekilde) yeniden boyutlandırılır.
 

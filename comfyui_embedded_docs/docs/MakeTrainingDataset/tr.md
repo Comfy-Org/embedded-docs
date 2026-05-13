@@ -6,10 +6,10 @@ Bu düğüm, görüntüleri ve metinleri kodlayarak eğitim için veri hazırlar
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | Yok | Kodlanacak görüntü listesi. |
+| `görüntüler` | IMAGE | Evet | Yok | Kodlanacak görüntü listesi. |
 | `vae` | VAE | Evet | Yok | Görüntüleri gizil temsillere kodlamak için VAE modeli. |
 | `clip` | CLIP | Evet | Yok | Metni koşullandırmaya kodlamak için CLIP modeli. |
-| `texts` | STRING | Hayır | Yok | Metin açıklamaları listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için tekrarlanan) olabilir veya atlanabilir (boş dize kullanılır). |
+| `metinler` | STRING | Hayır | Yok | Metin açıklamaları listesi. Uzunluğu n (görüntülerle eşleşen), 1 (tümü için tekrarlanan) olabilir veya atlanabilir (boş dize kullanılır). |
 
 **Parametre Kısıtlamaları:**
 
@@ -19,7 +19,7 @@ Bu düğüm, görüntüleri ve metinleri kodlayarak eğitim için veri hazırlar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `latents` | LATENT | Gizil temsil sözlükleri listesi. |
+| `koşullandırma` | LATENT | Gizil temsil sözlükleri listesi. |
 | `conditioning` | CONDITIONING | Koşullandırma listeleri listesi. |
 
 ---

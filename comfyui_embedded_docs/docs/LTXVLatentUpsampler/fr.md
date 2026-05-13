@@ -6,8 +6,8 @@ Le nœud LTXVLatentUpsampler augmente d’un facteur deux la résolution spatial
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `samples` | LATENT | Oui | | La représentation latente d’entrée de la vidéo à suréchantillonner. |
-| `upscale_model` | LATENT_UPSCALE_MODEL | Oui | | Le modèle chargé utilisé pour effectuer le suréchantillonnage 2x sur les données latentes. |
+| `échantillons` | LATENT | Oui | | La représentation latente d’entrée de la vidéo à suréchantillonner. |
+| `modèle_d’agrandissement` | LATENT_UPSCALE_MODEL | Oui | | Le modèle chargé utilisé pour effectuer le suréchantillonnage 2x sur les données latentes. |
 | `vae` | VAE | Oui | | Le modèle VAE utilisé pour dénormaliser les latentes d’entrée avant le suréchantillonnage et pour normaliser les latentes de sortie après. |
 
 ## Sorties

@@ -6,10 +6,10 @@ El Nodo de Efecto de Video a partir de una Imagen Única de Kling crea videos co
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | Imagen de referencia. URL o cadena codificada en Base64 (sin el prefijo data:image). El tamaño del archivo no puede superar los 10 MB, la resolución no debe ser inferior a 300x300 px y la relación de aspecto debe estar entre 1:2.5 y 2.5:1 |
+| `imagen` | IMAGE | Sí | - | Imagen de referencia. URL o cadena codificada en Base64 (sin el prefijo data:image). El tamaño del archivo no puede superar los 10 MB, la resolución no debe ser inferior a 300x300 px y la relación de aspecto debe estar entre 1:2.5 y 2.5:1 |
 | `effect_scene` | COMBO | Sí | `"dizzydizzy"`<br>`"bloombloom"`<br>`"neon"`<br>`"cartoon"`<br>`"sketch"`<br>`"oil"`<br>`"watercolor"`<br>`"3d"` | El tipo de escena de efecto especial que se aplicará a la generación del video. Algunos efectos pueden tener precios diferentes. |
 | `model_name` | COMBO | Sí | `"kling-v1-5"`<br>`"kling-v1-6"` | La versión específica del modelo que se utilizará para generar el efecto de video. |
-| `duration` | COMBO | Sí | `"5"`<br>`"10"` | La duración del video generado en segundos. |
+| `duración` | COMBO | Sí | `"5"`<br>`"10"` | La duración del video generado en segundos. |
 
 **Nota:** El parámetro `effect_scene` afecta el precio del nodo. Los efectos `dizzydizzy` y `bloombloom` cuestan $0.49 USD por generación, mientras que todos los demás efectos cuestan $0.28 USD por generación.
 
@@ -17,9 +17,9 @@ El Nodo de Efecto de Video a partir de una Imagen Única de Kling crea videos co
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `output` | VIDEO | El video generado con los efectos aplicados |
-| `video_id` | STRING | El identificador único del video generado |
-| `duration` | STRING | La duración del video generado |
+| `video_id` | VIDEO | El video generado con los efectos aplicados |
+| `duración` | STRING | El identificador único del video generado |
+| `duración` | STRING | La duración del video generado |
 
 ---
 **Source fingerprint (SHA-256):** `519db2f7185f200140c746bdebf89383523e0342bbfb61538adac063295d365d`

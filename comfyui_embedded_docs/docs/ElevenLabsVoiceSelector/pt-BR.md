@@ -6,13 +6,13 @@ O nó **Seletor de Voz ElevenLabs** permite que você escolha uma voz específic
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `voice` | STRING | Sim | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | Escolha uma voz dentre as vozes predefinidas da ElevenLabs. |
+| `voz` | STRING | Sim | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | Escolha uma voz dentre as vozes predefinidas da ElevenLabs. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `voice` | STRING | O identificador único para a voz selecionada da ElevenLabs, que pode ser passado para outros nós para geração de texto-para-fala. |
+| `voz` | STRING | O identificador único para a voz selecionada da ElevenLabs, que pode ser passado para outros nós para geração de texto-para-fala. |
 
 ---
 **Source fingerprint (SHA-256):** `b87f5b2b8accca87d0593ab1f4bcfccaa84b393ddb3fd9121758a87871592cee`

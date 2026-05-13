@@ -7,7 +7,7 @@ O nó SamplerDPMPP_2S_Ancestral cria um amostrador que utiliza o método de amos
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
 | `eta` | FLOAT | Sim | 0.0 - 100.0 | Controla a quantidade de ruído estocástico adicionado durante a amostragem (padrão: 1.0) |
-| `s_noise` | FLOAT | Sim | 0.0 - 100.0 | Controla a escala do ruído aplicado durante o processo de amostragem (padrão: 1.0) |
+| `s_ruído` | FLOAT | Sim | 0.0 - 100.0 | Controla a escala do ruído aplicado durante o processo de amostragem (padrão: 1.0) |
 
 ## Saídas
 

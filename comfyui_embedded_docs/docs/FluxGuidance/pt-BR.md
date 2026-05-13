@@ -4,7 +4,7 @@
 
 | Parâmetro | Tipo de Dados | Descrição |
 |----------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Dados de condicionamento de entrada, normalmente provenientes de etapas anteriores de codificação ou processamento |
+| `condicionamento` | CONDITIONING | Dados de condicionamento de entrada, normalmente provenientes de etapas anteriores de codificação ou processamento |
 | `guidance` | FLOAT | Controla a influência dos prompts de texto na geração de imagens, com faixa ajustável de 0,0 a 100,0 |
 
 ## Saídas

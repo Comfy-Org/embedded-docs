@@ -8,14 +8,14 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 影片生成的提示詞（預設值：""） |
-| `aspect_ratio` | COMBO | 是 | 來自 PixverseAspectRatio 的選項 | 生成影片的長寬比 |
-| `quality` | COMBO | 是 | 來自 PixverseQuality 的選項 | 影片品質設定（預設值：PixverseQuality.res_540p） |
-| `duration_seconds` | COMBO | 是 | 來自 PixverseDuration 的選項 | 生成影片的持續時間（秒） |
-| `motion_mode` | COMBO | 是 | 來自 PixverseMotionMode 的選項 | 影片生成的動作風格 |
-| `seed` | INT | 是 | 0 到 2147483647 | 影片生成的隨機種子（預設值：0） |
-| `negative_prompt` | STRING | 否 | - | 可選的負面提示詞，描述影像中不希望出現的元素（預設值：""） |
-| `pixverse_template` | CUSTOM | 否 | - | 可選的範本，用於影響生成風格，由 PixVerse 範本節點建立 |
+| `提示詞` | STRING | 是 | - | 影片生成的提示詞（預設值：""） |
+| `長寬比` | COMBO | 是 | 來自 PixverseAspectRatio 的選項 | 生成影片的長寬比 |
+| `品質` | COMBO | 是 | 來自 PixverseQuality 的選項 | 影片品質設定（預設值：PixverseQuality.res_540p） |
+| `影片長度（秒）` | COMBO | 是 | 來自 PixverseDuration 的選項 | 生成影片的持續時間（秒） |
+| `動作模式` | COMBO | 是 | 來自 PixverseMotionMode 的選項 | 影片生成的動作風格 |
+| `種子值` | INT | 是 | 0 到 2147483647 | 影片生成的隨機種子（預設值：0） |
+| `負向提示詞` | STRING | 否 | - | 可選的負面提示詞，描述影像中不希望出現的元素（預設值：""） |
+| `PixVerse 樣板` | CUSTOM | 否 | - | 可選的範本，用於影響生成風格，由 PixVerse 範本節點建立 |
 
 **注意：** 使用 1080p 品質時，動作模式會自動設定為正常，持續時間限制為 5 秒。對於非 5 秒的持續時間，動作模式也會自動設定為正常。
 

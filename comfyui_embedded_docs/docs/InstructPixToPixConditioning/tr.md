@@ -6,10 +6,10 @@ InstructPixToPixConditioning düğümü, pozitif ve negatif metin yönlendirmele
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `positive` | CONDITIONING | Evet | - | İstenen görüntü özellikleri için metin yönlendirmeleri ve ayarları içeren pozitif koşullandırma verileri |
-| `negative` | CONDITIONING | Evet | - | İstenmeyen görüntü özellikleri için metin yönlendirmeleri ve ayarları içeren negatif koşullandırma verileri |
+| `pozitif` | CONDITIONING | Evet | - | İstenen görüntü özellikleri için metin yönlendirmeleri ve ayarları içeren pozitif koşullandırma verileri |
+| `negatif` | CONDITIONING | Evet | - | İstenmeyen görüntü özellikleri için metin yönlendirmeleri ve ayarları içeren negatif koşullandırma verileri |
 | `vae` | VAE | Evet | - | Giriş görüntülerini gizli temsillere kodlamak için kullanılan VAE modeli |
-| `pixels` | IMAGE | Evet | - | İşlenecek ve gizli uzaya kodlanacak giriş görüntüsü |
+| `pikseller` | IMAGE | Evet | - | İşlenecek ve gizli uzaya kodlanacak giriş görüntüsü |
 
 **Not:** Giriş görüntüsü boyutları, VAE kodlama süreciyle uyumluluğu sağlamak için genişlik ve yükseklikte en yakın 8 piksel katına kırpılarak otomatik olarak ayarlanır.
 
@@ -17,8 +17,8 @@ InstructPixToPixConditioning düğümü, pozitif ve negatif metin yönlendirmele
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `positive` | CONDITIONING | Eklenmiş gizli görüntü temsili ile pozitif koşullandırma verileri |
-| `negative` | CONDITIONING | Eklenmiş gizli görüntü temsili ile negatif koşullandırma verileri |
+| `negatif` | CONDITIONING | Eklenmiş gizli görüntü temsili ile pozitif koşullandırma verileri |
+| `gizli` | CONDITIONING | Eklenmiş gizli görüntü temsili ile negatif koşullandırma verileri |
 | `latent` | LATENT | Kodlanmış görüntü ile aynı boyutlara sahip boş gizli tensör |
 
 ---

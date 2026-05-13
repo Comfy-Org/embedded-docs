@@ -9,9 +9,9 @@ TextEncodeAceStepAudio düğümü, etiketler ve şarkı sözlerini token'larda b
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `clip` | CLIP | Evet | - | Tokenizasyon ve kodlama için kullanılan CLIP modeli |
-| `tags` | STRING | Evet | - | Ses koşullandırması için metin etiketleri veya açıklamaları (çok satırlı giriş ve dinamik istemleri destekler) |
-| `lyrics` | STRING | Evet | - | Ses koşullandırması için şarkı sözü metni (çok satırlı giriş ve dinamik istemleri destekler) |
-| `lyrics_strength` | FLOAT | Hayır | 0.0 - 10.0 | Şarkı sözlerinin koşullandırma çıktısı üzerindeki etki gücünü kontrol eder (varsayılan: 1.0, adım: 0.01) |
+| `etiketler` | STRING | Evet | - | Ses koşullandırması için metin etiketleri veya açıklamaları (çok satırlı giriş ve dinamik istemleri destekler) |
+| `şarkı_sözleri` | STRING | Evet | - | Ses koşullandırması için şarkı sözü metni (çok satırlı giriş ve dinamik istemleri destekler) |
+| `şarkı_sözleri_gücü` | FLOAT | Hayır | 0.0 - 10.0 | Şarkı sözlerinin koşullandırma çıktısı üzerindeki etki gücünü kontrol eder (varsayılan: 1.0, adım: 0.01) |
 
 ## Çıktılar
 

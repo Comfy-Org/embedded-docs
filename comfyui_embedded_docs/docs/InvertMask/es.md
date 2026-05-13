@@ -6,10 +6,10 @@ El nodo InvertMask está diseñado para invertir los valores de una máscara dad
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|--------------|-------------|
-| `mask`    | MASK         | El parámetro `mask` representa la máscara de entrada que se va a invertir. Es crucial para determinar las áreas que se intercambiarán en el proceso de inversión. |
+| `máscara`    | MASK         | El parámetro `máscara` representa la máscara de entrada que se va a invertir. Es crucial para determinar las áreas que se intercambiarán en el proceso de inversión. |
 
 ## Salidas
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|--------------|-------------|
-| `mask`    | MASK         | La salida es una versión invertida de la máscara de entrada, donde las áreas previamente enmascaradas pasan a ser no enmascaradas y viceversa. |
+| `máscara`    | MASK         | La salida es una versión invertida de la máscara de entrada, donde las áreas previamente enmascaradas pasan a ser no enmascaradas y viceversa. |

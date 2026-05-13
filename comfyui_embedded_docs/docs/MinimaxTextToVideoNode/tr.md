@@ -8,9 +8,9 @@ Bir metin istemi ve isteğe bağlı parametreler kullanarak MiniMax'ın API'si a
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt_text` | STRING | Evet | - | Video oluşturmayı yönlendiren metin istemi |
+| `istem_metni` | STRING | Evet | - | Video oluşturmayı yönlendiren metin istemi |
 | `model` | COMBO | Hayır | "T2V-01"<br>"T2V-01-Director" | Video oluşturma için kullanılacak model (varsayılan: "T2V-01") |
-| `seed` | INT | Hayır | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum değeri (varsayılan: 0) |
+| `tohum` | INT | Hayır | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum değeri (varsayılan: 0) |
 
 ## Çıktılar
 

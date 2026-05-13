@@ -8,10 +8,10 @@ O nó VAEEncodeTiled processa imagens dividindo-as em tiles menores e codificand
 |-----------|-----------|----------|-------|-------------|
 | `pixels` | IMAGE | Sim | - | Os dados da imagem de entrada a serem codificados |
 | `vae` | VAE | Sim | - | O modelo de Autoencoder Variacional usado para codificação |
-| `tile_size` | INT | Sim | 64-4096 (passo: 64) | O tamanho de cada tile para processamento espacial (padrão: 512) |
-| `overlap` | INT | Sim | 0-4096 (passo: 32) | A quantidade de sobreposição entre tiles adjacentes (padrão: 64) |
-| `temporal_size` | INT | Sim | 8-4096 (passo: 4) | Usado apenas para VAEs de vídeo: Número de quadros para codificar por vez (padrão: 64) |
-| `temporal_overlap` | INT | Sim | 4-4096 (passo: 4) | Usado apenas para VAEs de vídeo: Número de quadros para sobrepor (padrão: 8) |
+| `tamanho_do_bloco` | INT | Sim | 64-4096 (passo: 64) | O tamanho de cada tile para processamento espacial (padrão: 512) |
+| `sobreposição` | INT | Sim | 0-4096 (passo: 32) | A quantidade de sobreposição entre tiles adjacentes (padrão: 64) |
+| `tamanho_temporal` | INT | Sim | 8-4096 (passo: 4) | Usado apenas para VAEs de vídeo: Número de quadros para codificar por vez (padrão: 64) |
+| `sobreposição_temporal` | INT | Sim | 4-4096 (passo: 4) | Usado apenas para VAEs de vídeo: Número de quadros para sobrepor (padrão: 8) |
 
 **Nota:** Os parâmetros `temporal_size` e `temporal_overlap` são relevantes apenas ao usar VAEs de vídeo e não têm efeito em VAEs de imagem padrão.
 

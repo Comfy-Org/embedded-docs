@@ -6,9 +6,9 @@ O nó ReplaceVideoLatentFrames insere quadros de um vídeo latente de origem em 
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `destination` | LATENT | Sim | - | O destino latente onde os quadros serão substituídos. |
-| `source` | LATENT | Não | - | A origem latente que fornece os quadros a serem inseridos no destino latente. Se não for fornecida, o destino latente é retornado inalterado. |
-| `index` | INT | Sim | -MAX_RESOLUTION a MAX_RESOLUTION | O índice inicial do quadro latente no destino latente onde os quadros da origem latente serão colocados. Valores negativos contam a partir do final (padrão: 0). |
+| `destino` | LATENT | Sim | - | O destino latente onde os quadros serão substituídos. |
+| `origem` | LATENT | Não | - | A origem latente que fornece os quadros a serem inseridos no destino latente. Se não for fornecida, o destino latente é retornado inalterado. |
+| `índice` | INT | Sim | -MAX_RESOLUTION a MAX_RESOLUTION | O índice inicial do quadro latente no destino latente onde os quadros da origem latente serão colocados. Valores negativos contam a partir do final (padrão: 0). |
 
 **Restrições:**
 

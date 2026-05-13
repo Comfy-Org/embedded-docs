@@ -6,14 +6,14 @@ Le nœud Kandinsky5ImageToVideo prépare les données de conditionnement et d'es
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | N/A | Les prompts de conditionnement positif pour guider la génération vidéo. |
-| `negative` | CONDITIONING | Oui | N/A | Les prompts de conditionnement négatif pour éloigner la génération vidéo de certains concepts. |
+| `positif` | CONDITIONING | Oui | N/A | Les prompts de conditionnement positif pour guider la génération vidéo. |
+| `négatif` | CONDITIONING | Oui | N/A | Les prompts de conditionnement négatif pour éloigner la génération vidéo de certains concepts. |
 | `vae` | VAE | Oui | N/A | Le modèle VAE utilisé pour encoder l'image de départ optionnelle dans l'espace latent. |
-| `width` | INT | Non | 16 à 8192 (pas de 16) | La largeur de la vidéo de sortie en pixels (par défaut : 768). |
-| `height` | INT | Non | 16 à 8192 (pas de 16) | La hauteur de la vidéo de sortie en pixels (par défaut : 512). |
-| `length` | INT | Non | 1 à 8192 (pas de 4) | Le nombre d'images dans la vidéo (par défaut : 121). |
-| `batch_size` | INT | Non | 1 à 4096 | Le nombre de séquences vidéo à générer simultanément (par défaut : 1). |
-| `start_image` | IMAGE | Non | N/A | Une image de départ optionnelle. Si fournie, elle est encodée et utilisée pour remplacer le début bruité des latents de sortie du modèle. |
+| `largeur` | INT | Non | 16 à 8192 (pas de 16) | La largeur de la vidéo de sortie en pixels (par défaut : 768). |
+| `hauteur` | INT | Non | 16 à 8192 (pas de 16) | La hauteur de la vidéo de sortie en pixels (par défaut : 512). |
+| `longueur` | INT | Non | 1 à 8192 (pas de 4) | Le nombre d'images dans la vidéo (par défaut : 121). |
+| `taille_du_lot` | INT | Non | 1 à 4096 | Le nombre de séquences vidéo à générer simultanément (par défaut : 1). |
+| `image_de_départ` | IMAGE | Non | N/A | Une image de départ optionnelle. Si fournie, elle est encodée et utilisée pour remplacer le début bruité des latents de sortie du modèle. |
 
 **Remarque :** Lorsqu'une `start_image` est fournie, elle est automatiquement redimensionnée pour correspondre à la `width` et à la `height` spécifiées à l'aide d'une interpolation bilinéaire. Les premières `length` images du lot d'images sont utilisées pour l'encodage. Le latent encodé est ensuite injecté dans le conditionnement `positive` et `negative` pour guider l'apparence initiale de la vidéo.
 
@@ -21,9 +21,9 @@ Le nœud Kandinsky5ImageToVideo prépare les données de conditionnement et d'es
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Le conditionnement positif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. |
-| `negative` | CONDITIONING | Le conditionnement négatif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. |
-| `latent` | LATENT | Un tenseur latent vidéo vide avec des zéros, formaté pour les dimensions spécifiées. |
+| `négatif` | CONDITIONING | Le conditionnement positif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. |
+| `latent` | CONDITIONING | Le conditionnement négatif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. |
+| `cond_latent` | LATENT | Un tenseur latent vidéo vide avec des zéros, formaté pour les dimensions spécifiées. |
 | `cond_latent` | LATENT | La représentation latente encodée et propre des images de départ fournies. Utilisée en interne pour remplacer le début bruité des latents vidéo générés. |
 
 ---

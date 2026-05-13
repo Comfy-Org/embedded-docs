@@ -6,14 +6,14 @@ Le nœud ThresholdMask convertit un masque en un masque binaire en appliquant un
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `mask` | MASK | Oui | - | Le masque d'entrée à traiter |
-| `value` | FLOAT | Oui | 0,0 - 1,0 | La valeur de seuil pour la binarisation (par défaut : 0,5) |
+| `masque` | MASK | Oui | - | Le masque d'entrée à traiter |
+| `valeur` | FLOAT | Oui | 0,0 - 1,0 | La valeur de seuil pour la binarisation (par défaut : 0,5) |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `mask` | MASK | Le masque binaire résultant après application du seuil |
+| `masque` | MASK | Le masque binaire résultant après application du seuil |
 
 ---
 **Source fingerprint (SHA-256):** `5c61433c05ef8106d928306b64035078e7598605512f20aaf992255f7b166456`

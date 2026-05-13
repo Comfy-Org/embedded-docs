@@ -8,9 +8,9 @@ Le nœud Image Compare fournit une interface visuelle permettant de comparer deu
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `image_a` | IMAGE | Non | - | La première image à comparer. |
-| `image_b` | IMAGE | Non | - | La seconde image à comparer. |
-| `compare_view` | IMAGECOMPARE | Oui | - | Le contrôle qui active la vue de comparaison avec curseur dans l'interface utilisateur. |
+| `image A` | IMAGE | Non | - | La première image à comparer. |
+| `image B` | IMAGE | Non | - | La seconde image à comparer. |
+| `vue de comparaison` | IMAGECOMPARE | Oui | - | Le contrôle qui active la vue de comparaison avec curseur dans l'interface utilisateur. |
 
 **Remarque :** Ce nœud est un nœud de sortie. Bien que `image_a` et `image_b` soient optionnels, au moins une image doit être fournie pour que le nœud ait un effet visible. Le nœud affichera une zone vide pour toute entrée d'image qui n'est pas connectée.
 

@@ -9,10 +9,10 @@ ExtendIntermediateSigmas 节点接收现有的 sigma 值序列，并在它们之
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `sigmas` | SIGMAS | 是 | - | 需要扩展中间值的输入 sigma 序列 |
-| `steps` | INT | 是 | 1 到 100 | 在现有 sigma 之间插入的中间步数（默认值：2） |
-| `start_at_sigma` | FLOAT | 是 | -1.0 到 20000.0 | 扩展的上限 sigma 边界——仅扩展低于此值的 sigma（默认值：-1.0，表示无穷大） |
-| `end_at_sigma` | FLOAT | 是 | 0.0 到 20000.0 | 扩展的下限 sigma 边界——仅扩展高于此值的 sigma（默认值：12.0） |
-| `spacing` | COMBO | 是 | `"linear"`<br>`"cosine"`<br>`"sine"` | 用于间隔中间 sigma 值的插值方法（默认值："linear"） |
+| `步数` | INT | 是 | 1 到 100 | 在现有 sigma 之间插入的中间步数（默认值：2） |
+| `起始 sigma` | FLOAT | 是 | -1.0 到 20000.0 | 扩展的上限 sigma 边界——仅扩展低于此值的 sigma（默认值：-1.0，表示无穷大） |
+| `结束 sigma` | FLOAT | 是 | 0.0 到 20000.0 | 扩展的下限 sigma 边界——仅扩展高于此值的 sigma（默认值：12.0） |
+| `间距方式` | COMBO | 是 | `"linear"`<br>`"cosine"`<br>`"sine"` | 用于间隔中间 sigma 值的插值方法（默认值："linear"） |
 
 **注意：** 该节点仅在现有 sigma 对中，当前 sigma 同时小于或等于 `start_at_sigma` 且大于或等于 `end_at_sigma` 时，才插入中间 sigma。当 `start_at_sigma` 设置为 -1.0 时，它被视为无穷大，这意味着仅应用下限 `end_at_sigma` 边界。
 

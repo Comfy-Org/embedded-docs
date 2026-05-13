@@ -6,22 +6,22 @@ El nodo LTXVImgToVideo convierte una imagen de entrada en una representación la
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Prompts de condicionamiento positivo para guiar la generación del video |
-| `negative` | CONDITIONING | Sí | - | Prompts de condicionamiento negativo para evitar ciertos elementos en el video |
+| `positivo` | CONDITIONING | Sí | - | Prompts de condicionamiento positivo para guiar la generación del video |
+| `negativo` | CONDITIONING | Sí | - | Prompts de condicionamiento negativo para evitar ciertos elementos en el video |
 | `vae` | VAE | Sí | - | Modelo VAE utilizado para codificar la imagen de entrada en el espacio latente |
-| `image` | IMAGE | Sí | - | Imagen de entrada que se convertirá en fotogramas de video |
-| `width` | INT | No | 64 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 768, paso: 32) |
-| `height` | INT | No | 64 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 512, paso: 32) |
-| `length` | INT | No | 9 a MAX_RESOLUTION | Número de fotogramas en el video generado (predeterminado: 97, paso: 8) |
-| `batch_size` | INT | No | 1 a 4096 | Cantidad de videos a generar simultáneamente (predeterminado: 1) |
-| `strength` | FLOAT | No | 0.0 a 1.0 | Control sobre cuánto del contenido de la imagen original se conserva en el primer fotograma del video generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la máxima modificación (predeterminado: 1.0) |
+| `imagen` | IMAGE | Sí | - | Imagen de entrada que se convertirá en fotogramas de video |
+| `ancho` | INT | No | 64 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 768, paso: 32) |
+| `altura` | INT | No | 64 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 512, paso: 32) |
+| `longitud` | INT | No | 9 a MAX_RESOLUTION | Número de fotogramas en el video generado (predeterminado: 97, paso: 8) |
+| `tamaño_lote` | INT | No | 1 a 4096 | Cantidad de videos a generar simultáneamente (predeterminado: 1) |
+| `fuerza` | FLOAT | No | 0.0 a 1.0 | Control sobre cuánto del contenido de la imagen original se conserva en el primer fotograma del video generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la máxima modificación (predeterminado: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo procesado con enmascaramiento de fotogramas de video aplicado |
-| `negative` | CONDITIONING | Condicionamiento negativo procesado con enmascaramiento de fotogramas de video aplicado |
+| `negativo` | CONDITIONING | Condicionamiento positivo procesado con enmascaramiento de fotogramas de video aplicado |
+| `latente` | CONDITIONING | Condicionamiento negativo procesado con enmascaramiento de fotogramas de video aplicado |
 | `latent` | LATENT | Representación latente de video que contiene los fotogramas codificados y la máscara de ruido para la generación del video |
 
 ---

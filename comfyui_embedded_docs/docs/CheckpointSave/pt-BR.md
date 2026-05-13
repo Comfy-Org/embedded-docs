@@ -8,10 +8,10 @@ O Save Checkpoint é usado principalmente em fluxos de trabalho de mesclagem de 
 
 | Parâmetro | Tipo de Dado | Descrição |
 |-----------|--------------|-----------|
-| `model` | MODEL | O parâmetro `model` representa o modelo principal cujo estado será salvo. É essencial para capturar o estado atual do modelo para restauração ou análise futura. |
+| `modelo` | MODEL | O parâmetro `modelo` representa o modelo principal cujo estado será salvo. É essencial para capturar o estado atual do modelo para restauração ou análise futura. |
 | `clip` | CLIP | O parâmetro `clip` é destinado ao modelo CLIP associado ao modelo principal, permitindo que seu estado seja salvo junto com o modelo principal. |
 | `vae` | VAE | O parâmetro `vae` é para o modelo Autoencoder Variacional (VAE), permitindo que seu estado seja salvo para uso ou análise futura junto com o modelo principal e o CLIP. |
-| `filename_prefix` | STRING | Este parâmetro especifica o prefixo para o nome do arquivo sob o qual o checkpoint será salvo. |
+| `prefixo_nome_arquivo` | STRING | Este parâmetro especifica o prefixo para o nome do arquivo sob o qual o checkpoint será salvo. |
 
 Além disso, o nó possui duas entradas ocultas para metadados:
 

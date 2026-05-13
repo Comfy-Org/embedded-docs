@@ -6,7 +6,7 @@ Boolean düğümü, iş akışınız boyunca boolean (doğru/yanlış) değerler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `value` | BOOLEAN | Evet | true<br>false | Düğümden geçirilecek boolean değeri |
+| `değer` | BOOLEAN | Evet | true<br>false | Düğümden geçirilecek boolean değeri |
 
 ## Çıkışlar
 

@@ -7,8 +7,8 @@ El nodo SaveAudioOpus guarda datos de audio en un archivo en formato Opus. Toma 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `audio` | AUDIO | Sí | - | Los datos de audio que se guardarán como archivo Opus |
-| `filename_prefix` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") |
-| `quality` | COMBO | No | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | El ajuste de calidad de audio para el archivo Opus (predeterminado: "128k") |
+| `prefijo_nombre_archivo` | STRING | No | - | El prefijo para el nombre del archivo de salida (predeterminado: "audio/ComfyUI") |
+| `calidad` | COMBO | No | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | El ajuste de calidad de audio para el archivo Opus (predeterminado: "128k") |
 
 ## Salidas
 

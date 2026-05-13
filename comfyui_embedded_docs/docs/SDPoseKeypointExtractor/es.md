@@ -6,11 +6,11 @@ El nodo SDPoseKeypointExtractor detecta puntos clave de pose humana a partir de 
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo SDPose utilizado para la detección de puntos clave. Debe ser un modelo con un atributo `heatmap_head`, específicamente del repositorio SDPose. |
+| `modelo` | MODEL | Sí | - | El modelo SDPose utilizado para la detección de puntos clave. Debe ser un modelo con un atributo `heatmap_head`, específicamente del repositorio SDPose. |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar las imágenes de entrada en el espacio latente para su procesamiento. |
-| `image` | IMAGE | Sí | - | La imagen de entrada o lote de imágenes de las cuales extraer puntos clave de pose. |
-| `batch_size` | INT | No | 1 a 10000 | La cantidad de imágenes a procesar a la vez cuando se ejecuta en modo de imagen completa (es decir, cuando no se proporciona `bboxes`). Esto puede acelerar el procesamiento. (predeterminado: 16) |
-| `bboxes` | BOUNDINGBOX | No | - | Cuadros delimitadores opcionales para detecciones más precisas. Requerido para la detección de múltiples personas. Si se proporciona, el nodo extraerá puntos clave de cada región especificada. |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada o lote de imágenes de las cuales extraer puntos clave de pose. |
+| `tamaño de lote` | INT | No | 1 a 10000 | La cantidad de imágenes a procesar a la vez cuando se ejecuta en modo de imagen completa (es decir, cuando no se proporciona `cajas delimitadoras`). Esto puede acelerar el procesamiento. (predeterminado: 16) |
+| `cajas delimitadoras` | BOUNDINGBOX | No | - | Cuadros delimitadores opcionales para detecciones más precisas. Requerido para la detección de múltiples personas. Si se proporciona, el nodo extraerá puntos clave de cada región especificada. |
 
 **Restricciones de Parámetros:**
 *   La entrada `model` debe ser un modelo SDPose específico. Si el modelo proporcionado no tiene un atributo `heatmap_head`, el nodo generará un error.

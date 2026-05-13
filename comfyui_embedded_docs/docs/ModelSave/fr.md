@@ -6,8 +6,8 @@ Le nœud ModelSave enregistre les modèles entraînés ou modifiés sur le stock
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle à enregistrer sur le disque |
-| `filename_prefix` | STRING | Oui | - | Le préfixe du nom de fichier et du chemin pour le fichier de modèle enregistré (par défaut : "diffusion_models/ComfyUI") |
+| `modèle` | MODEL | Oui | - | Le modèle à enregistrer sur le disque |
+| `préfixe_fichier` | STRING | Oui | - | Le préfixe du nom de fichier et du chemin pour le fichier de modèle enregistré (par défaut : "diffusion_models/ComfyUI") |
 | `prompt` | PROMPT | Non | - | Informations sur l'invite du workflow (fournies automatiquement) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Non | - | Métadonnées supplémentaires du workflow (fournies automatiquement) |
 

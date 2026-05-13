@@ -8,7 +8,7 @@ Le nœud PixVerse Template vous permet de sélectionner parmi les modèles dispo
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `template` | STRING | Oui | Plusieurs options disponibles | Le modèle à utiliser pour la génération vidéo PixVerse. Les options disponibles correspondent aux modèles prédéfinis dans le système PixVerse. |
+| `modèle` | STRING | Oui | Plusieurs options disponibles | Le modèle à utiliser pour la génération vidéo PixVerse. Les options disponibles correspondent aux modèles prédéfinis dans le système PixVerse. |
 
 ## Sorties
 

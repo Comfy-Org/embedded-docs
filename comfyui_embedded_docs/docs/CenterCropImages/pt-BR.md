@@ -7,8 +7,8 @@ O nó Center Crop Images recorta uma imagem a partir de seu centro para uma larg
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem de entrada a ser recortada. |
-| `width` | INT | Sim | 1 a 8192 | A largura da área de recorte (padrão: 512). |
-| `height` | INT | Sim | 1 a 8192 | A altura da área de recorte (padrão: 512). |
+| `largura` | INT | Sim | 1 a 8192 | A largura da área de recorte (padrão: 512). |
+| `altura` | INT | Sim | 1 a 8192 | A altura da área de recorte (padrão: 512). |
 
 ## Saídas
 

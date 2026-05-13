@@ -6,16 +6,16 @@ Le nœud WanCameraImageToVideo convertit des images en séquences vidéo en gén
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `positive` | CONDITIONING | Oui | - | Prompts de conditionnement positifs pour la génération vidéo |
-| `negative` | CONDITIONING | Oui | - | Prompts de conditionnement négatifs à éviter dans la génération vidéo |
+| `positif` | CONDITIONING | Oui | - | Prompts de conditionnement positifs pour la génération vidéo |
+| `négatif` | CONDITIONING | Oui | - | Prompts de conditionnement négatifs à éviter dans la génération vidéo |
 | `vae` | VAE | Oui | - | Modèle VAE pour encoder les images dans l'espace latent |
-| `width` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
-| `height` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
-| `length` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) |
-| `batch_size` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision optionnelle pour un conditionnement supplémentaire |
-| `start_image` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la séquence vidéo. Lorsqu'elle est fournie, les premières images de la vidéo seront basées sur cette image, avec un masque appliqué pour fusionner les images de départ avec le contenu généré. L'image est redimensionnée pour correspondre à la largeur et à la hauteur spécifiées. |
-| `camera_conditions` | WAN_CAMERA_EMBEDDING | Non | - | Conditions d'encastrement de caméra optionnelles pour la génération vidéo. Lorsqu'elles sont fournies, ces conditions sont appliquées au conditionnement positif et négatif. |
+| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | Largeur de la vidéo de sortie en pixels (par défaut : 832, pas : 16) |
+| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) |
+| `longueur` | INT | Oui | 1 à MAX_RESOLUTION | Nombre d'images dans la séquence vidéo (par défaut : 81, pas : 4) |
+| `taille du lot` | INT | Oui | 1 à 4096 | Nombre de vidéos à générer simultanément (par défaut : 1) |
+| `sortie de vision de clip` | CLIP_VISION_OUTPUT | Non | - | Sortie CLIP vision optionnelle pour un conditionnement supplémentaire |
+| `image de départ` | IMAGE | Non | - | Image de départ optionnelle pour initialiser la séquence vidéo. Lorsqu'elle est fournie, les premières images de la vidéo seront basées sur cette image, avec un masque appliqué pour fusionner les images de départ avec le contenu généré. L'image est redimensionnée pour correspondre à la largeur et à la hauteur spécifiées. |
+| `conditions de caméra` | WAN_CAMERA_EMBEDDING | Non | - | Conditions d'encastrement de caméra optionnelles pour la génération vidéo. Lorsqu'elles sont fournies, ces conditions sont appliquées au conditionnement positif et négatif. |
 
 **Remarque :** Lorsque `start_image` est fourni, le nœud l'utilise pour initialiser la séquence vidéo et applique un masquage pour fusionner les images de départ avec le contenu généré. Les paramètres `camera_conditions` et `clip_vision_output` sont optionnels, mais lorsqu'ils sont fournis, ils modifient le conditionnement pour les prompts positifs et négatifs.
 
@@ -23,8 +23,8 @@ Le nœud WanCameraImageToVideo convertit des images en séquences vidéo en gén
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `positive` | CONDITIONING | Conditionnement positif modifié avec les conditions de caméra et les sorties CLIP vision appliquées |
-| `negative` | CONDITIONING | Conditionnement négatif modifié avec les conditions de caméra et les sorties CLIP vision appliquées |
+| `négatif` | CONDITIONING | Conditionnement positif modifié avec les conditions de caméra et les sorties CLIP vision appliquées |
+| `latent` | CONDITIONING | Conditionnement négatif modifié avec les conditions de caméra et les sorties CLIP vision appliquées |
 | `latent` | LATENT | Représentation latente vidéo générée pour utilisation avec des modèles vidéo. Le tenseur latent a des dimensions [batch_size, 16, images, hauteur/8, largeur/8] où images est calculé comme ((longueur - 1) // 4) + 1. |
 
 ---

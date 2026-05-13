@@ -6,15 +6,15 @@ El nodo `ImageScaleToMaxDimension` redimensiona imágenes para que encajen dentr
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
-| `upscale_method` | STRING | Sí | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | El método de interpolación utilizado para escalar la imagen (predeterminado: "area") |
-| `largest_size` | INT | Sí | 0 a 16384 | La dimensión máxima para la imagen escalada (predeterminado: 512) |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a escalar |
+| `método_de_escalado` | STRING | Sí | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" | El método de interpolación utilizado para escalar la imagen (predeterminado: "area") |
+| `tamaño_máximo` | INT | Sí | 0 a 16384 | La dimensión máxima para la imagen escalada (predeterminado: 512) |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen escalada con la dimensión más grande coincidiendo con el tamaño especificado |
+| `imagen` | IMAGE | La imagen escalada con la dimensión más grande coincidiendo con el tamaño especificado |
 
 ---
 **Source fingerprint (SHA-256):** `be113c1a98ab9d884b2c728b790c41fb236857d59af567e43e2be0ef0362cc5e`

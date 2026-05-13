@@ -34,9 +34,9 @@ ElevenLabs Metinden Ses Efektlerine düğümü, bir metin açıklamasından ses 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `text` | STRING | Evet | Yok | Oluşturulacak ses efektinin metin açıklaması. Bu zorunlu bir alandır. |
+| `metin` | STRING | Evet | Yok | Oluşturulacak ses efektinin metin açıklaması. Bu zorunlu bir alandır. |
 | `model` | COMBO | Evet | `"eleven_sfx_v2"` | Ses efekti oluşturmak için kullanılacak model. Bu modelin seçilmesi ek parametreleri ortaya çıkarır: `duration` (varsayılan: 5.0, aralık: 0.5 ila 30.0 saniye), `loop` (varsayılan: False) ve `prompt_influence` (varsayılan: 0.3, aralık: 0.0 ila 1.0). |
-| `output_format` | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
+| `çıktı_formatı` | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
 
 **Parametre Detayları:**
 

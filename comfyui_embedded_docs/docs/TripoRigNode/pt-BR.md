@@ -6,7 +6,7 @@ O nó TripoRigNode gera um modelo 3D rigado a partir do ID de tarefa de um model
 
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
-| `original_model_task_id` | MODEL_TASK_ID | Sim | - | O ID da tarefa do modelo 3D original a ser rigado |
+| `id_da_tarefa_do_modelo_original` | MODEL_TASK_ID | Sim | - | O ID da tarefa do modelo 3D original a ser rigado |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | Não | - | Token de autenticação para acesso à API Comfy.org |
 | `comfy_api_key` | API_KEY_COMFY_ORG | Não | - | Chave de API para autenticação no serviço Comfy.org |
 | `unique_id` | UNIQUE_ID | Não | - | Identificador único para rastreamento da operação |

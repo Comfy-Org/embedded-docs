@@ -8,10 +8,10 @@ Este nó prepara uma sequência de quadros-chave para um segmento específico de
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | Lote de imagens | As imagens de entrada a serem distribuídas como quadros-chave. |
-| `segment_length` | INT | Sim | 1 a 10000 | Comprimento deste segmento em quadros (padrão: 149). |
-| `segment_index` | INT | Sim | 0 a 100 | Qual segmento é este (0 para o primeiro, 1 para o segundo, etc., padrão: 0). |
-| `audio` | AUDIO | Sim | Dados de áudio | Áudio para calcular o total de quadros de saída e extrair o áudio do segmento. |
+| `imagens` | IMAGE | Sim | Lote de imagens | As imagens de entrada a serem distribuídas como quadros-chave. |
+| `comprimento_do_segmento` | INT | Sim | 1 a 10000 | Comprimento deste segmento em quadros (padrão: 149). |
+| `índice_do_segmento` | INT | Sim | 0 a 100 | Qual segmento é este (0 para o primeiro, 1 para o segundo, etc., padrão: 0). |
+| `áudio` | AUDIO | Sim | Dados de áudio | Áudio para calcular o total de quadros de saída e extrair o áudio do segmento. |
 
 ## Saídas
 

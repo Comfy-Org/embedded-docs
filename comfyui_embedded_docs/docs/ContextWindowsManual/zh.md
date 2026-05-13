@@ -6,15 +6,15 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 在采样期间应用上下文窗口的模型。 |
-| `context_length` | INT | 否 | 1+ | 上下文窗口的长度（默认值：16）。 |
-| `context_overlap` | INT | 否 | 0+ | 上下文窗口的重叠部分（默认值：4）。 |
-| `context_schedule` | COMBO | 否 | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` | 上下文窗口的步幅。 |
-| `context_stride` | INT | 否 | 1+ | 上下文窗口的步幅；仅适用于均匀调度（默认值：1）。 |
-| `closed_loop` | BOOLEAN | 否 | - | 是否闭合上下文窗口循环；仅适用于循环调度（默认值：False）。 |
-| `fuse_method` | COMBO | 否 | `PYRAMID`<br>`LIST_STATIC` | 用于融合上下文窗口的方法（默认值：PYRAMID）。 |
-| `dim` | INT | 否 | 0-5 | 应用上下文窗口的维度（默认值：0）。 |
-| `freenoise` | BOOLEAN | 否 | - | 是否应用 FreeNoise 噪声混洗，以改善窗口混合效果（默认值：False）。 |
+| `模型` | MODEL | 是 | - | 在采样期间应用上下文窗口的模型。 |
+| `上下文长度` | INT | 否 | 1+ | 上下文窗口的长度（默认值：16）。 |
+| `上下文重叠` | INT | 否 | 0+ | 上下文窗口的重叠部分（默认值：4）。 |
+| `上下文调度` | COMBO | 否 | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` | 上下文窗口的步幅。 |
+| `上下文步幅` | INT | 否 | 1+ | 上下文窗口的步幅；仅适用于均匀调度（默认值：1）。 |
+| `闭环` | BOOLEAN | 否 | - | 是否闭合上下文窗口循环；仅适用于循环调度（默认值：False）。 |
+| `融合方法` | COMBO | 否 | `PYRAMID`<br>`LIST_STATIC` | 用于融合上下文窗口的方法（默认值：PYRAMID）。 |
+| `维度` | INT | 否 | 0-5 | 应用上下文窗口的维度（默认值：0）。 |
+| `Freenoise` | BOOLEAN | 否 | - | 是否应用 FreeNoise 噪声混洗，以改善窗口混合效果（默认值：False）。 |
 | `cond_retain_index_list` | STRING | 否 | - | 要在每个窗口的条件张量中保留的潜在索引列表，例如设置为 '0' 将为每个窗口使用初始起始图像（默认值：""）。 |
 | `split_conds_to_windows` | BOOLEAN | 否 | - | 是否根据区域索引将多个条件（由 ConditionCombine 创建）拆分到每个窗口（默认值：False）。 |
 | `causal_window_fix` | BOOLEAN | 否 | - | 是否向非 0 索引的上下文窗口添加因果修复帧（默认值：True）。 |
@@ -30,7 +30,7 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 在采样期间应用了上下文窗口的模型。 |
+| `模型` | MODEL | 在采样期间应用了上下文窗口的模型。 |
 
 ---
 **Source fingerprint (SHA-256):** `b05ddda0ba38588305e6f733cd218c8b462268c39d16226ca961d09054187261`

@@ -8,14 +8,14 @@ Le nœud Vidu Reference Video génère des vidéos à partir de plusieurs images
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"viduq1"` | Nom du modèle pour la génération vidéo (par défaut : "viduq1") |
+| `modèle` | COMBO | Oui | `"viduq1"` | Nom du modèle pour la génération vidéo (par défaut : "viduq1") |
 | `images` | IMAGE | Oui | - | Images à utiliser comme références pour générer une vidéo avec des sujets cohérents (maximum 7 images) |
 | `prompt` | STRING | Oui | - | Description textuelle pour la génération vidéo |
-| `duration` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5) |
-| `seed` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
-| `aspect_ratio` | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Rapport hauteur/largeur de la vidéo de sortie (par défaut : "16:9") |
-| `resolution` | COMBO | Non | `"1080p"` | Les valeurs prises en charge peuvent varier selon le modèle et la durée (par défaut : "1080p") |
-| `movement_amplitude` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Amplitude de mouvement des objets dans le cadre (par défaut : "auto") |
+| `durée` | INT | Non | 5-5 | Durée de la vidéo de sortie en secondes (par défaut : 5) |
+| `graine` | INT | Non | 0-2147483647 | Graine pour la génération vidéo (0 pour aléatoire) (par défaut : 0) |
+| `ratio_aspect` | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Rapport hauteur/largeur de la vidéo de sortie (par défaut : "16:9") |
+| `résolution` | COMBO | Non | `"1080p"` | Les valeurs prises en charge peuvent varier selon le modèle et la durée (par défaut : "1080p") |
+| `amplitude_mouvement` | COMBO | Non | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Amplitude de mouvement des objets dans le cadre (par défaut : "auto") |
 
 **Contraintes et limitations :**
 

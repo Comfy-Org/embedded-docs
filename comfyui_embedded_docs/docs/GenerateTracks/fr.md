@@ -6,20 +6,20 @@ Le nœud `GenerateTracks` crée plusieurs trajectoires de mouvement parallèles 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `width` | INT | Oui | 16 - 4096 | La largeur de l'image vidéo en pixels. La valeur par défaut est 832. |
-| `height` | INT | Oui | 16 - 4096 | La hauteur de l'image vidéo en pixels. La valeur par défaut est 480. |
-| `start_x` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée X normalisée (0-1) pour la position de départ. La valeur par défaut est 0.0. |
-| `start_y` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée Y normalisée (0-1) pour la position de départ. La valeur par défaut est 0.0. |
-| `end_x` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée X normalisée (0-1) pour la position d'arrivée. La valeur par défaut est 1.0. |
-| `end_y` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée Y normalisée (0-1) pour la position d'arrivée. La valeur par défaut est 1.0. |
-| `num_frames` | INT | Oui | 1 - 1024 | Le nombre total d'images pour lesquelles générer les positions des pistes. La valeur par défaut est 81. |
-| `num_tracks` | INT | Oui | 1 - 100 | Le nombre de pistes parallèles à générer. La valeur par défaut est 5. |
-| `track_spread` | FLOAT | Oui | 0.0 - 1.0 | Distance normalisée entre les pistes. Les pistes sont réparties perpendiculairement à la direction du mouvement. La valeur par défaut est 0.025. |
+| `largeur` | INT | Oui | 16 - 4096 | La largeur de l'image vidéo en pixels. La valeur par défaut est 832. |
+| `hauteur` | INT | Oui | 16 - 4096 | La hauteur de l'image vidéo en pixels. La valeur par défaut est 480. |
+| `départ_x` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée X normalisée (0-1) pour la position de départ. La valeur par défaut est 0.0. |
+| `départ_y` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée Y normalisée (0-1) pour la position de départ. La valeur par défaut est 0.0. |
+| `fin_x` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée X normalisée (0-1) pour la position d'arrivée. La valeur par défaut est 1.0. |
+| `fin_y` | FLOAT | Oui | 0.0 - 1.0 | Coordonnée Y normalisée (0-1) pour la position d'arrivée. La valeur par défaut est 1.0. |
+| `nombre_d_images` | INT | Oui | 1 - 1024 | Le nombre total d'images pour lesquelles générer les positions des pistes. La valeur par défaut est 81. |
+| `nombre_de_pistes` | INT | Oui | 1 - 100 | Le nombre de pistes parallèles à générer. La valeur par défaut est 5. |
+| `écartement_des_pistes` | FLOAT | Oui | 0.0 - 1.0 | Distance normalisée entre les pistes. Les pistes sont réparties perpendiculairement à la direction du mouvement. La valeur par défaut est 0.025. |
 | `bezier` | BOOLEAN | Oui | Vrai / Faux | Activer le chemin en courbe de Bézier en utilisant le point milieu comme point de contrôle. La valeur par défaut est Faux. |
-| `mid_x` | FLOAT | Oui | 0.0 - 1.0 | Point de contrôle X normalisé pour la courbe de Bézier. Utilisé uniquement lorsque 'bezier' est activé. La valeur par défaut est 0.5. |
-| `mid_y` | FLOAT | Oui | 0.0 - 1.0 | Point de contrôle Y normalisé pour la courbe de Bézier. Utilisé uniquement lorsque 'bezier' est activé. La valeur par défaut est 0.5. |
+| `milieu_x` | FLOAT | Oui | 0.0 - 1.0 | Point de contrôle X normalisé pour la courbe de Bézier. Utilisé uniquement lorsque 'bezier' est activé. La valeur par défaut est 0.5. |
+| `milieu_y` | FLOAT | Oui | 0.0 - 1.0 | Point de contrôle Y normalisé pour la courbe de Bézier. Utilisé uniquement lorsque 'bezier' est activé. La valeur par défaut est 0.5. |
 | `interpolation` | COMBO | Oui | `"linear"`<br>`"ease_in"`<br>`"ease_out"`<br>`"ease_in_out"`<br>`"constant"` | Contrôle le timing/la vitesse du mouvement le long du chemin. La valeur par défaut est "linear". |
-| `track_mask` | MASK | Non | - | Masque optionnel pour indiquer les images visibles. |
+| `masque_de_piste` | MASK | Non | - | Masque optionnel pour indiquer les images visibles. |
 
 **Remarque :** Les paramètres `mid_x` et `mid_y` sont utilisés uniquement lorsque le paramètre `bezier` est défini sur `True`. Lorsque `bezier` est `False`, le chemin est une ligne droite du point de départ au point d'arrivée.
 
@@ -27,8 +27,8 @@ Le nœud `GenerateTracks` crée plusieurs trajectoires de mouvement parallèles 
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `TRACKS` | TRACKS | Un objet pistes contenant les coordonnées du chemin généré et les informations de visibilité pour toutes les pistes sur toutes les images. |
-| `track_length` | INT | Le nombre d'images pour lesquelles les pistes ont été générées, correspondant à la valeur d'entrée `num_frames`. |
+| `longueur_de_piste` | TRACKS | Un objet pistes contenant les coordonnées du chemin généré et les informations de visibilité pour toutes les pistes sur toutes les images. |
+| `track_length` | INT | Le nombre d'images pour lesquelles les pistes ont été générées, correspondant à la valeur d'entrée `nombre_d_images`. |
 
 ---
 **Source fingerprint (SHA-256):** `3dca1cabaee8738e2a68acafed47ad347019d03c9b7f0d1392b3fdf97d0e8add`

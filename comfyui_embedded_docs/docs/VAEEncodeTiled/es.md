@@ -6,12 +6,12 @@ El nodo VAEEncodeTiled procesa imágenes dividiéndolas en mosaicos más pequeñ
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-------------|-------------|-------|-------------|
-| `pixels` | IMAGE | Sí | - | Los datos de imagen de entrada que se codificarán |
+| `píxeles` | IMAGE | Sí | - | Los datos de imagen de entrada que se codificarán |
 | `vae` | VAE | Sí | - | El modelo de Autoencoder Variacional utilizado para la codificación |
-| `tile_size` | INT | Sí | 64-4096 (paso: 64) | El tamaño de cada mosaico para el procesamiento espacial (predeterminado: 512) |
-| `overlap` | INT | Sí | 0-4096 (paso: 32) | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) |
-| `temporal_size` | INT | Sí | 8-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a codificar a la vez (predeterminado: 64) |
-| `temporal_overlap` | INT | Sí | 4-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a superponer (predeterminado: 8) |
+| `tamaño_mosaico` | INT | Sí | 64-4096 (paso: 64) | El tamaño de cada mosaico para el procesamiento espacial (predeterminado: 512) |
+| `superposición` | INT | Sí | 0-4096 (paso: 32) | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) |
+| `tamaño_temporal` | INT | Sí | 8-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a codificar a la vez (predeterminado: 64) |
+| `superposición_temporal` | INT | Sí | 4-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a superponer (predeterminado: 8) |
 
 **Nota:** Los parámetros `temporal_size` y `temporal_overlap` solo son relevantes cuando se utilizan VAEs de video y no tienen efecto en los VAEs de imágenes estándar.
 

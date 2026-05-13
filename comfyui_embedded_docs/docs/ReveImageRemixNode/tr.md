@@ -6,7 +6,7 @@ Reve Image Remix düğümü, Reve API'sini kullanarak yeni bir görüntü oluşt
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `reference_images` | IMAGE | Evet | 1 ila 6 görüntü | Remix için temel olarak kullanılacak bir veya daha fazla referans görüntü. 1 ile 6 arasında görüntü ekleyebilirsiniz. |
+| `referans_görseller` | IMAGE | Evet | 1 ila 6 görüntü | Remix için temel olarak kullanılacak bir veya daha fazla referans görüntü. 1 ile 6 arasında görüntü ekleyebilirsiniz. |
 | `prompt` | STRING | Evet | 1 ila 2560 karakter | İstenen görüntünün metin açıklaması. Belirli görüntülere indeksleriyle başvurmak için XML `<img>` etiketleri ekleyebilirsiniz (örneğin, `<img>0</img>`, `<img>1</img>`). (varsayılan: boş) |
 | `model` | COMBO | Evet | `reve-remix@20250915`<br>`reve-remix-fast@20251030` | Remix için kullanılacak model sürümü. Her model seçeneği, yapılandırılabilir en boy oranları ve test zamanı ölçeklendirme içerir. |
 | `upscale` | COMBO | Hayır | `"disabled"`<br>`"enabled"` | Oluşturulan görüntünün yükseltilip yükseltilmeyeceğini kontrol eder. Etkinleştirildiğinde, bir yükseltme faktörü seçebilirsiniz. |

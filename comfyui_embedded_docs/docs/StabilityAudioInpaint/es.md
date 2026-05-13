@@ -6,14 +6,14 @@ Transforma parte de una muestra de audio existente utilizando instrucciones de t
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | "stable-audio-2.5" | El modelo de IA a utilizar para el inpainting de audio. |
+| `modelo` | COMBO | Sí | "stable-audio-2.5" | El modelo de IA a utilizar para el inpainting de audio. |
 | `prompt` | STRING | Sí | | Descripción textual que guía cómo debe transformarse el audio (por defecto: vacío). |
 | `audio` | AUDIO | Sí | | Archivo de audio de entrada a transformar. El audio debe tener una duración entre 6 y 190 segundos. |
-| `duration` | INT | No | 1-190 | Controla la duración en segundos del audio generado (por defecto: 190). |
-| `seed` | INT | No | 0-4294967294 | La semilla aleatoria utilizada para la generación (por defecto: 0). |
-| `steps` | INT | No | 4-8 | Controla el número de pasos de muestreo (por defecto: 8). |
-| `mask_start` | INT | No | 0-190 | Posición de inicio en segundos para la sección de audio a transformar (por defecto: 30). |
-| `mask_end` | INT | No | 0-190 | Posición de finalización en segundos para la sección de audio a transformar (por defecto: 190). |
+| `duración` | INT | No | 1-190 | Controla la duración en segundos del audio generado (por defecto: 190). |
+| `semilla` | INT | No | 0-4294967294 | La semilla aleatoria utilizada para la generación (por defecto: 0). |
+| `pasos` | INT | No | 4-8 | Controla el número de pasos de muestreo (por defecto: 8). |
+| `máscara_inicio` | INT | No | 0-190 | Posición de inicio en segundos para la sección de audio a transformar (por defecto: 30). |
+| `máscara_fin` | INT | No | 0-190 | Posición de finalización en segundos para la sección de audio a transformar (por defecto: 190). |
 
 **Nota:** El valor de `mask_end` debe ser mayor que el valor de `mask_start`. El audio de entrada debe tener una duración entre 6 y 190 segundos.
 

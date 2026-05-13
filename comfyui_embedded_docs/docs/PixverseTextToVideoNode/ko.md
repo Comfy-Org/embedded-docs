@@ -8,14 +8,14 @@
 
 | 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 예 | - | 비디오 생성을 위한 프롬프트 (기본값: "") |
-| `aspect_ratio` | COMBO | 예 | PixverseAspectRatio 옵션 | 생성된 비디오의 화면 비율 |
-| `quality` | COMBO | 예 | PixverseQuality 옵션 | 비디오 품질 설정 (기본값: PixverseQuality.res_540p) |
-| `duration_seconds` | COMBO | 예 | PixverseDuration 옵션 | 생성된 비디오의 길이(초) |
-| `motion_mode` | COMBO | 예 | PixverseMotionMode 옵션 | 비디오 생성을 위한 모션 스타일 |
-| `seed` | INT | 예 | 0 ~ 2147483647 | 비디오 생성을 위한 시드 (기본값: 0) |
-| `negative_prompt` | STRING | 아니요 | - | 이미지에서 원하지 않는 요소에 대한 선택적 텍스트 설명 (기본값: "") |
-| `pixverse_template` | CUSTOM | 아니요 | - | PixVerse 템플릿 노드로 생성된, 생성 스타일에 영향을 주는 선택적 템플릿 |
+| `프롬프트` | STRING | 예 | - | 비디오 생성을 위한 프롬프트 (기본값: "") |
+| `화면 비율` | COMBO | 예 | PixverseAspectRatio 옵션 | 생성된 비디오의 화면 비율 |
+| `품질` | COMBO | 예 | PixverseQuality 옵션 | 비디오 품질 설정 (기본값: PixverseQuality.res_540p) |
+| `길이(초)` | COMBO | 예 | PixverseDuration 옵션 | 생성된 비디오의 길이(초) |
+| `모션 모드` | COMBO | 예 | PixverseMotionMode 옵션 | 비디오 생성을 위한 모션 스타일 |
+| `시드` | INT | 예 | 0 ~ 2147483647 | 비디오 생성을 위한 시드 (기본값: 0) |
+| `부정 프롬프트` | STRING | 아니요 | - | 이미지에서 원하지 않는 요소에 대한 선택적 텍스트 설명 (기본값: "") |
+| `PixVerse 템플릿` | CUSTOM | 아니요 | - | PixVerse 템플릿 노드로 생성된, 생성 스타일에 영향을 주는 선택적 템플릿 |
 
 **참고:** 1080p 품질을 사용하는 경우 모션 모드가 자동으로 일반으로 설정되고 길이는 5초로 제한됩니다. 5초가 아닌 길이의 경우에도 모션 모드가 자동으로 일반으로 설정됩니다.
 

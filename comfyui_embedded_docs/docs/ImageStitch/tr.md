@@ -8,10 +8,10 @@ Bu düğüm, iki görüntüyü belirtilen bir yönde (yukarı, aşağı, sol, sa
 |---------------|-----------|-------------|---------|--------|-------------|
 | `image1` | IMAGE | Zorunlu | - | - | Birleştirilecek ilk görüntü |
 | `image2` | IMAGE | İsteğe Bağlı | Yok | - | Birleştirilecek ikinci görüntü; sağlanmazsa yalnızca ilk görüntü döndürülür |
-| `direction` | STRING | Zorunlu | sağ | sağ/aşağı/sol/yukarı | İkinci görüntünün birleştirileceği yön: sağ, aşağı, sol veya yukarı |
-| `match_image_size` | BOOLEAN | Zorunlu | Doğru | Doğru/Yanlış | İkinci görüntünün boyutlarının ilk görüntüyle eşleşecek şekilde yeniden boyutlandırılıp boyutlandırılmayacağı |
-| `spacing_width` | INT | Zorunlu | 0 | 0-1024 | Görüntüler arasındaki boşluğun genişliği; çift sayı olmalıdır |
-| `spacing_color` | STRING | Zorunlu | beyaz | beyaz/siyah/kırmızı/yeşil/mavi | Birleştirilen görüntüler arasındaki boşluğun rengi |
+| `yön` | STRING | Zorunlu | sağ | sağ/aşağı/sol/yukarı | İkinci görüntünün birleştirileceği yön: sağ, aşağı, sol veya yukarı |
+| `görüntü boyutunu eşle` | BOOLEAN | Zorunlu | Doğru | Doğru/Yanlış | İkinci görüntünün boyutlarının ilk görüntüyle eşleşecek şekilde yeniden boyutlandırılıp boyutlandırılmayacağı |
+| `boşluk genişliği` | INT | Zorunlu | 0 | 0-1024 | Görüntüler arasındaki boşluğun genişliği; çift sayı olmalıdır |
+| `boşluk rengi` | STRING | Zorunlu | beyaz | beyaz/siyah/kırmızı/yeşil/mavi | Birleştirilen görüntüler arasındaki boşluğun rengi |
 
 > `spacing_color` için, "beyaz/siyah" dışındaki renkler kullanıldığında, `match_image_size` `yanlış` olarak ayarlanırsa, dolgu alanı siyahla doldurulur
 

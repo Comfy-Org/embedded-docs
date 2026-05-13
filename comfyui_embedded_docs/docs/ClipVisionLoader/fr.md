@@ -6,7 +6,7 @@ Ce nœud détecte automatiquement les modèles situés dans le dossier `ComfyUI/
 
 | Champ        | Type de données | Description |
 |-------------|-----------------|-------------|
-| `clip_name` | COMBO[STRING]   | Liste tous les fichiers de modèles pris en charge dans le dossier `ComfyUI/models/clip_vision`. |
+| `nom_clip` | COMBO[STRING]   | Liste tous les fichiers de modèles pris en charge dans le dossier `ComfyUI/models/clip_vision`. |
 
 ## Sorties
 

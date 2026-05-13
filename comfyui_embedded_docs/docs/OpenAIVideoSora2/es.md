@@ -36,12 +36,12 @@ El nodo OpenAIVideoSora2 genera videos utilizando los modelos Sora de OpenAI. Cr
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | "sora-2"<br>"sora-2-pro" | El modelo OpenAI Sora a utilizar para la generación de video (predeterminado: "sora-2") |
+| `modelo` | COMBO | Sí | "sora-2"<br>"sora-2-pro" | El modelo OpenAI Sora a utilizar para la generación de video (predeterminado: "sora-2") |
 | `prompt` | STRING | Sí | - | Texto guía; puede estar vacío si hay una imagen de entrada presente (predeterminado: vacío) |
-| `size` | COMBO | Sí | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | La resolución del video generado (predeterminado: "1280x720") |
-| `duration` | COMBO | Sí | 4<br>8<br>12 | La duración del video generado en segundos (predeterminado: 8) |
-| `image` | IMAGE | No | - | Imagen de entrada opcional para la generación de video |
-| `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
+| `tamaño` | COMBO | Sí | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | La resolución del video generado (predeterminado: "1280x720") |
+| `duración` | COMBO | Sí | 4<br>8<br>12 | La duración del video generado en segundos (predeterminado: 8) |
+| `imagen` | IMAGE | No | - | Imagen de entrada opcional para la generación de video |
+| `semilla` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
 
 **Restricciones y Limitaciones:**
 

@@ -6,13 +6,13 @@ Améliore le guidage vers une structure détaillée en utilisant un autre ensemb
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par saut de couche |
-| `double_layers` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs doubles à ignorer (par défaut : "7, 8, 9") |
-| `single_layers` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs simples à ignorer (par défaut : "7, 8, 9") |
-| `scale` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle du guidage (par défaut : 3,0) |
-| `start_percent` | FLOAT | Oui | 0,0 - 1,0 | Pourcentage de début pour l'application du guidage (par défaut : 0,01) |
-| `end_percent` | FLOAT | Oui | 0,0 - 1,0 | Pourcentage de fin pour l'application du guidage (par défaut : 0,15) |
-| `rescaling_scale` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle de redimensionnement pour ajuster l'amplitude de la sortie (par défaut : 0,0, ce qui signifie aucun redimensionnement) |
+| `modèle` | MODEL | Oui | - | Le modèle auquel appliquer le guidage par saut de couche |
+| `double_couches` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs doubles à ignorer (par défaut : "7, 8, 9") |
+| `couches_simples` | STRING | Oui | - | Numéros de couches séparés par des virgules pour les blocs simples à ignorer (par défaut : "7, 8, 9") |
+| `échelle` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle du guidage (par défaut : 3,0) |
+| `pourcentage_de_départ` | FLOAT | Oui | 0,0 - 1,0 | Pourcentage de début pour l'application du guidage (par défaut : 0,01) |
+| `pourcentage_de_fin` | FLOAT | Oui | 0,0 - 1,0 | Pourcentage de fin pour l'application du guidage (par défaut : 0,15) |
+| `échelle_de_redimensionnement` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle de redimensionnement pour ajuster l'amplitude de la sortie (par défaut : 0,0, ce qui signifie aucun redimensionnement) |
 
 **Remarque :** Si `double_layers` et `single_layers` sont tous deux vides (ne contiennent aucun numéro de couche), le nœud renvoie le modèle original sans appliquer aucun guidage.
 
@@ -20,7 +20,7 @@ Améliore le guidage vers une structure détaillée en utilisant un autre ensemb
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec le guidage par saut de couche appliqué |
+| `modèle` | MODEL | Le modèle modifié avec le guidage par saut de couche appliqué |
 
 ---
 **Source fingerprint (SHA-256):** `cf494fbeb33e7bc3b3f798e9e9b025623afad4ea6340ef628caa776c7d42ba12`

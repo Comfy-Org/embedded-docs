@@ -8,13 +8,13 @@ El nodo de Generación de Video a partir de Texto de Vidu crea videos a partir d
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `viduq1` | Nombre del modelo |
+| `modelo` | COMBO | Sí | `viduq1` | Nombre del modelo |
 | `prompt` | STRING | Sí | - | Descripción textual para la generación del video |
-| `duration` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5) |
-| `seed` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
-| `aspect_ratio` | COMBO | No | `16:9`<br>`9:16`<br>`1:1` | Relación de aspecto del video de salida |
-| `resolution` | COMBO | No | `1080p` | Los valores compatibles pueden variar según el modelo y la duración |
-| `movement_amplitude` | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` | Amplitud de movimiento de los objetos en el encuadre |
+| `duración` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5) |
+| `semilla` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
+| `relación_de_aspecto` | COMBO | No | `16:9`<br>`9:16`<br>`1:1` | Relación de aspecto del video de salida |
+| `resolución` | COMBO | No | `1080p` | Los valores compatibles pueden variar según el modelo y la duración |
+| `amplitud_movimiento` | COMBO | No | `auto`<br>`small`<br>`medium`<br>`large` | Amplitud de movimiento de los objetos en el encuadre |
 
 **Nota:** El campo `prompt` es obligatorio y no puede estar vacío. El parámetro `duration` actualmente está fijado en 5 segundos.
 

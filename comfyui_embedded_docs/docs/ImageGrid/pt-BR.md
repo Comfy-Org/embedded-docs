@@ -6,11 +6,11 @@ O nó Grade de Imagens combina múltiplas imagens em uma única grade ou colagem
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `images` | IMAGE | Sim | - | Uma lista de imagens a serem organizadas na grade. O nó requer pelo menos uma imagem para funcionar. |
-| `columns` | INT | Não | 1 - 20 | O número de colunas na grade (padrão: 4). |
-| `cell_width` | INT | Não | 32 - 2048 | A largura, em pixels, de cada célula na grade (padrão: 256). |
-| `cell_height` | INT | Não | 32 - 2048 | A altura, em pixels, de cada célula na grade (padrão: 256). |
-| `padding` | INT | Não | 0 - 50 | A quantidade de espaçamento, em pixels, a ser colocada entre as imagens na grade (padrão: 4). |
+| `imagens` | IMAGE | Sim | - | Uma lista de imagens a serem organizadas na grade. O nó requer pelo menos uma imagem para funcionar. |
+| `colunas` | INT | Não | 1 - 20 | O número de colunas na grade (padrão: 4). |
+| `largura_da_célula` | INT | Não | 32 - 2048 | A largura, em pixels, de cada célula na grade (padrão: 256). |
+| `altura_da_célula` | INT | Não | 32 - 2048 | A altura, em pixels, de cada célula na grade (padrão: 256). |
+| `espaçamento` | INT | Não | 0 - 50 | A quantidade de espaçamento, em pixels, a ser colocada entre as imagens na grade (padrão: 4). |
 
 ## Saídas
 

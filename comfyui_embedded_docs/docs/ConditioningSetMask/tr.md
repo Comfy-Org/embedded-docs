@@ -9,9 +9,9 @@ Bu düğüm, belirtilen bir güçle belirli alanlara maske uygulayarak üretken 
 | Parametre      | Veri Türü     | Açıklama |
 |----------------|---------------|-------------|
 | `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma verisi. Maske ve güç ayarlamalarının uygulanması için temel oluşturur. |
-| `mask`         | `MASK`        | Koşullandırma içinde değiştirilecek alanları belirten bir maske tensörü. |
-| `strength`     | `FLOAT`       | Maskenin koşullandırma üzerindeki etkisinin gücü; uygulanan değişikliklerin ince ayarının yapılmasına olanak tanır. |
-| `set_cond_area` | COMBO[STRING] | Maskenin etkisinin varsayılan alana mı yoksa maskenin kendisiyle sınırlı bir alana mı uygulanacağını belirler; belirli bölgeleri hedeflemede esneklik sağlar. |
+| `maske`         | `MASK`        | Koşullandırma içinde değiştirilecek alanları belirten bir maske tensörü. |
+| `güç`     | `FLOAT`       | Maskenin koşullandırma üzerindeki etkisinin gücü; uygulanan değişikliklerin ince ayarının yapılmasına olanak tanır. |
+| `koşul_alanı_ayarla` | COMBO[STRING] | Maskenin etkisinin varsayılan alana mı yoksa maskenin kendisiyle sınırlı bir alana mı uygulanacağını belirler; belirli bölgeleri hedeflemede esneklik sağlar. |
 
 ## Çıkışlar
 

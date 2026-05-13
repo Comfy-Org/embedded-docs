@@ -6,7 +6,7 @@ O nó LatentUpscaleModelLoader carrega um modelo especializado projetado para am
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model_name` | STRING | Sim | *Todos os arquivos na pasta `latent_upscale_models`* | O nome do arquivo do modelo de ampliação latente a ser carregado. As opções disponíveis são preenchidas dinamicamente a partir dos arquivos presentes no diretório `latent_upscale_models` do seu ComfyUI. |
+| `nome_do_modelo` | STRING | Sim | *Todos os arquivos na pasta `latent_upscale_models`* | O nome do arquivo do modelo de ampliação latente a ser carregado. As opções disponíveis são preenchidas dinamicamente a partir dos arquivos presentes no diretório `latent_upscale_models` do seu ComfyUI. |
 
 ## Saídas
 

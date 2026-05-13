@@ -8,8 +8,8 @@ Le LossGraphNode crée un graphique visuel des valeurs de perte d'entraînement 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `loss` | LOSS_MAP | Oui | - | Carte de perte provenant du nœud d'entraînement. |
-| `filename_prefix` | STRING | Oui | - | Préfixe pour l'image du graphique de perte sauvegardée. (par défaut : "loss_graph") |
+| `perte` | LOSS_MAP | Oui | - | Carte de perte provenant du nœud d'entraînement. |
+| `préfixe_nom_fichier` | STRING | Oui | - | Préfixe pour l'image du graphique de perte sauvegardée. (par défaut : "loss_graph") |
 
 ## Sorties
 

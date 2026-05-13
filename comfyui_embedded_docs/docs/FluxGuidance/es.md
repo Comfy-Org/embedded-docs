@@ -4,8 +4,8 @@
 
 | Parámetro | Tipo de Dato | Descripción |
 |----------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Datos de condicionamiento de entrada, típicamente provenientes de pasos previos de codificación o procesamiento |
-| `guidance` | FLOAT | Controla la influencia de las indicaciones de texto en la generación de imágenes, con un rango ajustable de 0.0 a 100.0 |
+| `acondicionamiento` | CONDITIONING | Datos de condicionamiento de entrada, típicamente provenientes de pasos previos de codificación o procesamiento |
+| `guía` | FLOAT | Controla la influencia de las indicaciones de texto en la generación de imágenes, con un rango ajustable de 0.0 a 100.0 |
 
 ## Salidas
 

@@ -6,9 +6,9 @@ O nó LatentConcat combina duas amostras latentes unindo-as ao longo de uma dime
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `samples1` | LATENT | Sim | - | A primeira amostra latente a ser concatenada |
-| `samples2` | LATENT | Sim | - | A segunda amostra latente a ser concatenada |
-| `dim` | COMBO | Sim | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | A dimensão ao longo da qual concatenar as amostras latentes. Valores positivos (x, y, t) colocam samples1 antes de samples2 no resultado. Valores negativos (-x, -y, -t) colocam samples2 antes de samples1. O mapeamento das dimensões é: x = largura, y = altura, t = tempo/quadros |
+| `amostras1` | LATENT | Sim | - | A primeira amostra latente a ser concatenada |
+| `amostras2` | LATENT | Sim | - | A segunda amostra latente a ser concatenada |
+| `dimensão` | COMBO | Sim | `"x"`<br>`"-x"`<br>`"y"`<br>`"-y"`<br>`"t"`<br>`"-t"` | A dimensão ao longo da qual concatenar as amostras latentes. Valores positivos (x, y, t) colocam samples1 antes de samples2 no resultado. Valores negativos (-x, -y, -t) colocam samples2 antes de samples1. O mapeamento das dimensões é: x = largura, y = altura, t = tempo/quadros |
 
 **Observação:** A segunda amostra latente (`samples2`) é ajustada automaticamente para corresponder ao tamanho do lote da primeira amostra latente (`samples1`) antes da concatenação.
 

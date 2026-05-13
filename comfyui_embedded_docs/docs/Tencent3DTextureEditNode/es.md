@@ -16,8 +16,8 @@ Este nodo utiliza la API de Tencent Hunyuan3D para editar las texturas de un mod
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `GLB` | FILE3D | El modelo 3D procesado en formato GLB. |
-| `OBJ` | FILE3D | El modelo 3D procesado en formato OBJ. |
+| `OBJ` | FILE3D | El modelo 3D procesado en formato GLB. |
+| `texture_image` | FILE3D | El modelo 3D procesado en formato OBJ. |
 | `texture_image` | IMAGE | La imagen de textura recién generada para el modelo 3D. |
 
 ---

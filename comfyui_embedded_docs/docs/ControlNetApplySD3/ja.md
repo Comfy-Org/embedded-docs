@@ -8,21 +8,21 @@
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | はい | - | ControlNetガイダンスを適用するポジティブ条件付け |
-| `negative` | CONDITIONING | はい | - | ControlNetガイダンスを適用するネガティブ条件付け |
-| `control_net` | CONTROL_NET | はい | - | ガイダンスに使用するControlNetモデル |
+| `ポジティブ` | CONDITIONING | はい | - | ControlNetガイダンスを適用するポジティブ条件付け |
+| `ネガティブ` | CONDITIONING | はい | - | ControlNetガイダンスを適用するネガティブ条件付け |
+| `コントロールネット` | CONTROL_NET | はい | - | ガイダンスに使用するControlNetモデル |
 | `vae` | VAE | はい | - | プロセスで使用されるVAEモデル |
-| `image` | IMAGE | はい | - | ControlNetがガイダンスとして使用する入力画像 |
-| `strength` | FLOAT | はい | 0.0 - 10.0 | ControlNet効果の強度（デフォルト：1.0） |
-| `start_percent` | FLOAT | はい | 0.0 - 1.0 | ControlNetが適用を開始する生成プロセス内の開始位置（デフォルト：0.0） |
-| `end_percent` | FLOAT | はい | 0.0 - 1.0 | ControlNetが適用を終了する生成プロセス内の終了位置（デフォルト：1.0） |
+| `画像` | IMAGE | はい | - | ControlNetがガイダンスとして使用する入力画像 |
+| `強度` | FLOAT | はい | 0.0 - 10.0 | ControlNet効果の強度（デフォルト：1.0） |
+| `開始パーセント` | FLOAT | はい | 0.0 - 1.0 | ControlNetが適用を開始する生成プロセス内の開始位置（デフォルト：0.0） |
+| `終了パーセント` | FLOAT | はい | 0.0 - 1.0 | ControlNetが適用を終了する生成プロセス内の終了位置（デフォルト：1.0） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | ControlNetガイダンスが適用された変更後のポジティブ条件付け |
-| `negative` | CONDITIONING | ControlNetガイダンスが適用された変更後のネガティブ条件付け |
+| `ネガティブ` | CONDITIONING | ControlNetガイダンスが適用された変更後のポジティブ条件付け |
+| `ネガティブ` | CONDITIONING | ControlNetガイダンスが適用された変更後のネガティブ条件付け |
 
 ---
 **Source fingerprint (SHA-256):** `7bd24b19c159374bc86a773be9b563760bfae7e10d3333596788dbc52ef2f294`

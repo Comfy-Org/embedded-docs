@@ -14,7 +14,7 @@ Hunyuan3Dv2Conditioning ノードは、CLIP ビジョン出力を処理して 3D
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | CLIP ビジョン埋め込みを含むポジティブ条件付けデータ |
+| `negative` | CONDITIONING | CLIP ビジョン埋め込みを含むポジティブ条件付けデータ |
 | `negative` | CONDITIONING | ポジティブ条件付けの形状に一致するゼロ値埋め込みを含むネガティブ条件付けデータ |
 
 ---

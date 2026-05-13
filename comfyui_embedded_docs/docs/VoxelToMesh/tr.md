@@ -6,8 +6,8 @@ VoxelToMeshBasic düğümü, belirtilen bir eşik değerinde yüzey çıkararak 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `voxel` | VOXEL | Evet | - | Ağ geometrisine dönüştürülecek giriş voxel verisi |
-| `threshold` | FLOAT | Evet | -1.0 ile 1.0 arası | Yüzey çıkarma için eşik değeri (varsayılan: 0.6) |
+| `voksel` | VOXEL | Evet | - | Ağ geometrisine dönüştürülecek giriş voxel verisi |
+| `eşik` | FLOAT | Evet | -1.0 ile 1.0 arası | Yüzey çıkarma için eşik değeri (varsayılan: 0.6) |
 
 ## Çıkışlar
 

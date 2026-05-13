@@ -6,7 +6,7 @@ Este nó seleciona o estilo de logotipo raster e um subestilo opcional para gera
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `substyle` | STRING | Sim | Múltiplas opções disponíveis | O subestilo raster de logotipo específico a ser aplicado para a geração do logotipo |
+| `subestilo` | STRING | Sim | Múltiplas opções disponíveis | O subestilo raster de logotipo específico a ser aplicado para a geração do logotipo |
 
 ## Saídas
 

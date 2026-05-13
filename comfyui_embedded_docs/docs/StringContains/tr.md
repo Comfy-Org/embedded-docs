@@ -6,9 +6,9 @@ StringContains düğümü, belirtilen bir dizenin belirli bir alt dizeyi içerip
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | - | İçinde arama yapılacak ana metin dizesi |
-| `substring` | STRING | Evet | - | Ana dize içinde aranacak metin |
-| `case_sensitive` | BOOLEAN | Hayır | - | Aramanın büyük/küçük harf duyarlı olup olmayacağını belirler (varsayılan: true) |
+| `dize` | STRING | Evet | - | İçinde arama yapılacak ana metin dizesi |
+| `alt_dize` | STRING | Evet | - | Ana dize içinde aranacak metin |
+| `büyük/küçük harf duyarlı` | BOOLEAN | Hayır | - | Aramanın büyük/küçük harf duyarlı olup olmayacağını belirler (varsayılan: true) |
 
 ## Çıkışlar
 

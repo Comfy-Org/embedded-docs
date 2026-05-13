@@ -6,9 +6,9 @@ El nodo EmptyAudio genera un clip de audio silencioso con una duración, frecuen
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `duration` | FLOAT | Sí | 0.0 a 1.8446744073709552e+19 | Duración del clip de audio vacío en segundos (predeterminado: 60.0) |
-| `sample_rate` | INT | Sí | 1 a 192000 | Frecuencia de muestreo del clip de audio vacío (predeterminado: 44100) |
-| `channels` | INT | Sí | 1 a 2 | Número de canales de audio (1 para mono, 2 para estéreo) (predeterminado: 2) |
+| `duración` | FLOAT | Sí | 0.0 a 1.8446744073709552e+19 | Duración del clip de audio vacío en segundos (predeterminado: 60.0) |
+| `tasa_de_muestreo` | INT | Sí | 1 a 192000 | Frecuencia de muestreo del clip de audio vacío (predeterminado: 44100) |
+| `canales` | INT | Sí | 1 a 2 | Número de canales de audio (1 para mono, 2 para estéreo) (predeterminado: 2) |
 
 ## Salidas
 

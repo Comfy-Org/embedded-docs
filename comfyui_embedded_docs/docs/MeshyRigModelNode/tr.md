@@ -16,9 +16,9 @@
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Geriye dönük uyumluluk için eski bir çıktı olup, GLB modelinin dosya adını içerir. |
-| `rig_task_id` | STRING | Bu donanım oluşturma işlemi için benzersiz görev kimliği olup, sonuca başvurmak için kullanılabilir. |
-| `GLB` | FILE3DGLB | GLB dosya formatında kaydedilmiş, donanımlı 3B karakter modeli. |
+| `rig_task_id` | STRING | Geriye dönük uyumluluk için eski bir çıktı olup, GLB modelinin dosya adını içerir. |
+| `GLB` | STRING | Bu donanım oluşturma işlemi için benzersiz görev kimliği olup, sonuca başvurmak için kullanılabilir. |
+| `FBX` | FILE3DGLB | GLB dosya formatında kaydedilmiş, donanımlı 3B karakter modeli. |
 | `FBX` | FILE3DFBX | FBX dosya formatında kaydedilmiş, donanımlı 3B karakter modeli. |
 
 ---

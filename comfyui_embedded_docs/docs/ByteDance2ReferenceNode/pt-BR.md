@@ -8,9 +8,9 @@ O nó ByteDance Seedance 2.0 Reference to Video utiliza o modelo de IA Seedance 
 
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
-| `model` | COMBO | Sim | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | O modelo de IA a ser usado. Seedance 2.0 é para máxima qualidade, enquanto Seedance 2.0 Fast é otimizado para velocidade. Selecionar um modelo revela entradas obrigatórias adicionais para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio` e entradas opcionais para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` e `auto_downscale`. |
-| `seed` | INT | Não | 0 a 2147483647 | Um número usado para controlar se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente (padrão: 0). |
-| `watermark` | BOOLEAN | Não | `True` / `False` | Se deve adicionar uma marca d'água ao vídeo gerado (padrão: False). |
+| `modelo` | COMBO | Sim | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | O modelo de IA a ser usado. Seedance 2.0 é para máxima qualidade, enquanto Seedance 2.0 Fast é otimizado para velocidade. Selecionar um modelo revela entradas obrigatórias adicionais para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio` e entradas opcionais para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` e `auto_downscale`. |
+| `semente` | INT | Não | 0 a 2147483647 | Um número usado para controlar se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente (padrão: 0). |
+| `marca_d'água` | BOOLEAN | Não | `True` / `False` | Se deve adicionar uma marca d'água ao vídeo gerado (padrão: False). |
 
 **Restrições Importantes:**
 *   Pelo menos uma imagem ou vídeo de referência (fornecido através das entradas `reference_images`, `reference_videos` ou `reference_assets`) é necessário para o funcionamento do nó.

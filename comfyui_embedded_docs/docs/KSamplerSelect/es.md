@@ -6,7 +6,7 @@ El nodo KSamplerSelect está diseñado para seleccionar un muestreador específi
 
 | Parámetro         | Tipo de Dato | Descripción                                                                                      |
 |-------------------|-------------|------------------------------------------------------------------------------------------------|
-| `sampler_name`    | COMBO[STRING] | Especifica el nombre del muestreador a seleccionar. Este parámetro determina qué estrategia de muestreo se utilizará, afectando el comportamiento general del muestreo y los resultados. |
+| `nombre_del_muestreador`    | COMBO[STRING] | Especifica el nombre del muestreador a seleccionar. Este parámetro determina qué estrategia de muestreo se utilizará, afectando el comportamiento general del muestreo y los resultados. |
 
 ## Salidas
 

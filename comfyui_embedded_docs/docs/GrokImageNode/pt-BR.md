@@ -13,7 +13,7 @@ O nó Grok Image gera uma ou mais imagens com base em uma descrição textual us
 | `aspect_ratio` | COMBO | Sim | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | A proporção desejada entre largura e altura para a imagem gerada. |
 | `number_of_images` | INT | Não | 1 a 10 | Número de imagens a serem geradas (padrão: 1). |
 | `seed` | INT | Não | 0 a 2147483647 | Um valor de semente para determinar se o nó deve ser executado novamente. Os resultados reais da imagem são não determinísticos e variarão mesmo com a mesma semente (padrão: 0). |
-| `resolution` | COMBO | Não | `"1K"`<br>`"2K"` | A resolução de saída desejada para as imagens geradas (padrão: "1K"). |
+| `resolução` | COMBO | Não | `"1K"`<br>`"2K"` | A resolução de saída desejada para as imagens geradas (padrão: "1K"). |
 
 **Nota:** O parâmetro `seed` é usado principalmente para controlar quando o nó é reexecutado dentro de um fluxo de trabalho. Devido à natureza do serviço de IA externo, as imagens geradas não serão reproduzíveis ou idênticas entre execuções, mesmo com uma semente idêntica.
 

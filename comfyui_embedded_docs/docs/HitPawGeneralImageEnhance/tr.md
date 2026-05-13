@@ -7,9 +7,9 @@ Bu düğüm, düşük çözünürlüklü görüntüleri süper çözünürlüğe
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | STRING | Evet | `"generative_portrait"`<br>`"generative"` | Kullanılacak iyileştirme modeli. `generative_portrait` modeli portreler için optimize edilmiştir, `generative` ise genel amaçlı bir modeldir. |
-| `image` | IMAGE | Evet | - | İyileştirilecek giriş görüntüsü. |
-| `upscale_factor` | INT | Evet | `1`<br>`2`<br>`4` | Görüntü boyutlarının yükseltileceği faktör. 1 faktörü yükseltme yapılmadığı, 2 boyutları ikiye katladığı ve 4 dört katına çıkardığı anlamına gelir. |
-| `auto_downscale` | BOOLEAN | Hayır | - | Çıkış sınırı aşılacaksa giriş görüntüsünü otomatik olarak küçültür. Etkinleştirildiğinde, düğüm istenen yükseltme faktörünü uygulamadan önce giriş görüntüsü boyutunu 4 megapiksel çıkış sınırına sığacak şekilde küçültmeye çalışır. (varsayılan: `False`) |
+| `görüntü` | IMAGE | Evet | - | İyileştirilecek giriş görüntüsü. |
+| `büyütme_oranı` | INT | Evet | `1`<br>`2`<br>`4` | Görüntü boyutlarının yükseltileceği faktör. 1 faktörü yükseltme yapılmadığı, 2 boyutları ikiye katladığı ve 4 dört katına çıkardığı anlamına gelir. |
+| `otomatik_küçültme` | BOOLEAN | Hayır | - | Çıkış sınırı aşılacaksa giriş görüntüsünü otomatik olarak küçültür. Etkinleştirildiğinde, düğüm istenen yükseltme faktörünü uygulamadan önce giriş görüntüsü boyutunu 4 megapiksel çıkış sınırına sığacak şekilde küçültmeye çalışır. (varsayılan: `False`) |
 
 **Not:** Hesaplanan çıkış boyutu (giriş yüksekliği × upscale_factor × giriş genişliği × upscale_factor) 4.000.000 pikseli (4MP) aşarsa ve `auto_downscale` devre dışıysa düğüm bir hata verecektir. `auto_downscale` etkinleştirildiğinde, düğüm istenen yükseltme faktörünü uygulamadan önce giriş görüntüsünü sınıra sığacak şekilde küçültmeye çalışacaktır. 2 kattan fazla küçültme gerekiyorsa, düğüm bunun yerine yükseltme faktörünü azaltacaktır.
 
@@ -17,7 +17,7 @@ Bu düğüm, düşük çözünürlüklü görüntüleri süper çözünürlüğe
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | İyileştirilmiş ve yükseltilmiş çıkış görüntüsü. |
+| `görüntü` | IMAGE | İyileştirilmiş ve yükseltilmiş çıkış görüntüsü. |
 
 ---
 **Source fingerprint (SHA-256):** `29f927d39777acdfba2aad107027672d281c202ec78e04942e405c2cc64fcee4`

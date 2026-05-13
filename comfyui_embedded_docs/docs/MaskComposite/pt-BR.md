@@ -6,11 +6,11 @@ Este nó é especializado em combinar duas entradas de máscara por meio de uma 
 
 | Parâmetro     | Tipo de Dado | Descrição                                                                                                                                             |
 | ------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `destination` | MASK         | A máscara primária que será modificada com base na operação com a máscara de origem. Ela desempenha um papel central na operação composta, atuando como base para as modificações. |
-| `source`      | MASK         | A máscara secundária que será usada em conjunto com a máscara de destino para realizar a operação especificada, influenciando a máscara de saída final.          |
+| `destino` | MASK         | A máscara primária que será modificada com base na operação com a máscara de origem. Ela desempenha um papel central na operação composta, atuando como base para as modificações. |
+| `fonte`      | MASK         | A máscara secundária que será usada em conjunto com a máscara de destino para realizar a operação especificada, influenciando a máscara de saída final.          |
 | `x`           | INT          | O deslocamento horizontal no qual a máscara de origem será aplicada à máscara de destino, afetando o posicionamento do resultado composto.            |
 | `y`           | INT          | O deslocamento vertical no qual a máscara de origem será aplicada à máscara de destino, afetando o posicionamento do resultado composto.              |
-| `operation`   | COMBO[STRING]| Especifica o tipo de operação a ser aplicada entre as máscaras de destino e origem, como 'add' (adicionar), 'subtract' (subtrair) ou operações lógicas, determinando a natureza do efeito composto. |
+| `operação`   | COMBO[STRING]| Especifica o tipo de operação a ser aplicada entre as máscaras de destino e origem, como 'add' (adicionar), 'subtract' (subtrair) ou operações lógicas, determinando a natureza do efeito composto. |
 
 ## Saídas
 

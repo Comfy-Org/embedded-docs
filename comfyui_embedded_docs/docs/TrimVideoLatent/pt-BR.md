@@ -6,8 +6,8 @@ O nó TrimVideoLatent remove quadros do início de uma representação latente d
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `samples` | LATENT | Sim | - | A representação latente de vídeo de entrada contendo os quadros a serem removidos |
-| `trim_amount` | INT | Sim | 0 a 99999 | O número de quadros a serem removidos do início do vídeo (padrão: 0) |
+| `amostras` | LATENT | Sim | - | A representação latente de vídeo de entrada contendo os quadros a serem removidos |
+| `quantidade_de_corte` | INT | Sim | 0 a 99999 | O número de quadros a serem removidos do início do vídeo (padrão: 0) |
 
 ## Saídas
 

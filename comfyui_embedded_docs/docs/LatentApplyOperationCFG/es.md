@@ -6,14 +6,14 @@ El nodo LatentApplyOperationCFG aplica una operación latente para modificar el 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo al que se aplicará la operación CFG |
-| `operation` | LATENT_OPERATION | Sí | - | La operación latente a aplicar durante el proceso de muestreo CFG |
+| `modelo` | MODEL | Sí | - | El modelo al que se aplicará la operación CFG |
+| `operación` | LATENT_OPERATION | Sí | - | La operación latente a aplicar durante el proceso de muestreo CFG |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con la operación CFG aplicada a su proceso de muestreo |
+| `modelo` | MODEL | El modelo modificado con la operación CFG aplicada a su proceso de muestreo |
 
 ---
 **Source fingerprint (SHA-256):** `9fbcc9183abf89bb93e55263bb655e931549360c05a561f7dacae8723db62e52`

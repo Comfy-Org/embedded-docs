@@ -6,7 +6,7 @@ El nodo `PrimitiveStringMultiline` proporciona un campo de entrada de texto mult
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `value` | STRING | Sí | N/A | El valor de texto de entrada que puede abarcar múltiples líneas |
+| `valor` | STRING | Sí | N/A | El valor de texto de entrada que puede abarcar múltiples líneas |
 
 ## Salidas
 

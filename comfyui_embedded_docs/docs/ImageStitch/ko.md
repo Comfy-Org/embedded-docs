@@ -6,12 +6,12 @@
 
 | 매개변수 이름 | 데이터 타입 | 입력 타입 | 기본값 | 범위 | 설명 |
 |---------------|-----------|-------------|---------|--------|-------------|
-| `image1` | IMAGE | 필수 | - | - | 결합할 첫 번째 이미지 |
-| `image2` | IMAGE | 선택 | 없음 | - | 결합할 두 번째 이미지, 제공되지 않으면 첫 번째 이미지만 반환 |
-| `direction` | STRING | 필수 | right | right/down/left/up | 두 번째 이미지를 결합할 방향: 오른쪽, 아래, 왼쪽 또는 위쪽 |
-| `match_image_size` | BOOLEAN | 필수 | True | True/False | 두 번째 이미지의 크기를 첫 번째 이미지의 크기와 일치하도록 조정할지 여부 |
-| `spacing_width` | INT | 필수 | 0 | 0-1024 | 이미지 사이의 간격 너비, 짝수여야 함 |
-| `spacing_color` | STRING | 필수 | white | white/black/red/green/blue | 결합된 이미지 사이의 간격 색상 |
+| `이미지1` | IMAGE | 필수 | - | - | 결합할 첫 번째 이미지 |
+| `이미지2` | IMAGE | 선택 | 없음 | - | 결합할 두 번째 이미지, 제공되지 않으면 첫 번째 이미지만 반환 |
+| `방향` | STRING | 필수 | right | right/down/left/up | 두 번째 이미지를 결합할 방향: 오른쪽, 아래, 왼쪽 또는 위쪽 |
+| `이미지 크기 맞추기` | BOOLEAN | 필수 | True | True/False | 두 번째 이미지의 크기를 첫 번째 이미지의 크기와 일치하도록 조정할지 여부 |
+| `간격 너비` | INT | 필수 | 0 | 0-1024 | 이미지 사이의 간격 너비, 짝수여야 함 |
+| `간격 색상` | STRING | 필수 | white | white/black/red/green/blue | 결합된 이미지 사이의 간격 색상 |
 
 > `spacing_color`의 경우, "white/black" 이외의 색상을 사용할 때 `match_image_size`가 `false`로 설정되면 패딩 영역이 검은색으로 채워집니다.
 

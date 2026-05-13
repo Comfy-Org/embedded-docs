@@ -8,14 +8,14 @@ AudioAdjustVolume düğümü, desibel (dB) cinsinden ses seviyesi ayarlamaları 
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `audio` | AUDIO | Evet | - | İşlenecek ses girişi |
+| `ses` | AUDIO | Evet | - | İşlenecek ses girişi |
 | `volume` | INT | Evet | -100 ila 100 | Desibel (dB) cinsinden ses seviyesi ayarı. 0 = değişiklik yok, +6 = iki katı, -6 = yarısı, vb. (varsayılan: 1) |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `audio` | AUDIO | Ses seviyesi ayarlanmış işlenmiş ses |
+| `ses` | AUDIO | Ses seviyesi ayarlanmış işlenmiş ses |
 
 ---
 **Source fingerprint (SHA-256):** `0436765680671551239f7a89b575cdfb22590fbe662bdfe5da01bd1cd5c496ed`

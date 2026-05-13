@@ -6,16 +6,16 @@ SamplerDPMAdaptative düğümü, örnekleme işlemi sırasında adım boyutları
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `order` | INT | Evet | 2-3 | Örnekleyici yönteminin derecesi (varsayılan: 3) |
+| `sıra` | INT | Evet | 2-3 | Örnekleyici yönteminin derecesi (varsayılan: 3) |
 | `rtol` | FLOAT | Evet | 0.0-100.0 | Hata kontrolü için bağıl tolerans (varsayılan: 0.05) |
 | `atol` | FLOAT | Evet | 0.0-100.0 | Hata kontrolü için mutlak tolerans (varsayılan: 0.0078) |
-| `h_init` | FLOAT | Evet | 0.0-100.0 | Başlangıç adım boyutu (varsayılan: 0.05) |
-| `pcoeff` | FLOAT | Evet | 0.0-100.0 | Adım boyutu kontrolü için oransal katsayı (varsayılan: 0.0) |
-| `icoeff` | FLOAT | Evet | 0.0-100.0 | Adım boyutu kontrolü için integral katsayısı (varsayılan: 1.0) |
-| `dcoeff` | FLOAT | Evet | 0.0-100.0 | Adım boyutu kontrolü için türev katsayısı (varsayılan: 0.0) |
-| `accept_safety` | FLOAT | Evet | 0.0-100.0 | Adım kabulü için güvenlik faktörü (varsayılan: 0.81) |
+| `h_başlangıç` | FLOAT | Evet | 0.0-100.0 | Başlangıç adım boyutu (varsayılan: 0.05) |
+| `pkatsayı` | FLOAT | Evet | 0.0-100.0 | Adım boyutu kontrolü için oransal katsayı (varsayılan: 0.0) |
+| `ikatsayı` | FLOAT | Evet | 0.0-100.0 | Adım boyutu kontrolü için integral katsayısı (varsayılan: 1.0) |
+| `dkatsayı` | FLOAT | Evet | 0.0-100.0 | Adım boyutu kontrolü için türev katsayısı (varsayılan: 0.0) |
+| `kabul_güvenliği` | FLOAT | Evet | 0.0-100.0 | Adım kabulü için güvenlik faktörü (varsayılan: 0.81) |
 | `eta` | FLOAT | Evet | 0.0-100.0 | Rastgelelik parametresi (varsayılan: 0.0) |
-| `s_noise` | FLOAT | Evet | 0.0-100.0 | Gürültü ölçekleme faktörü (varsayılan: 1.0) |
+| `s_gürültü` | FLOAT | Evet | 0.0-100.0 | Gürültü ölçekleme faktörü (varsayılan: 1.0) |
 
 ## Çıkışlar
 

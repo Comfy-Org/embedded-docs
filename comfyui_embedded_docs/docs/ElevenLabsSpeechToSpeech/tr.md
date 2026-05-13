@@ -34,19 +34,19 @@ ElevenLabs Konuşmadan Konuşmaya düğümü, bir giriş ses dosyasını bir ses
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `voice` | CUSTOM | Evet | - | Dönüşüm için hedef ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlantı kurun. |
-| `audio` | AUDIO | Evet | - | Dönüştürülecek kaynak ses. |
-| `stability` | FLOAT | Hayır | 0.0 - 1.0 | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). |
+| `ses` | CUSTOM | Evet | - | Dönüşüm için hedef ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlantı kurun. |
+| `ses` | AUDIO | Evet | - | Dönüştürülecek kaynak ses. |
+| `kararlılık` | FLOAT | Hayır | 0.0 - 1.0 | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). |
 | `model` | DYNAMICCOMBO | Hayır | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` | Konuşmadan konuşmaya dönüşüm için kullanılacak model. Her seçenek belirli bir ses ayarları kümesi sağlar (similarity_boost, style, use_speaker_boost, speed). |
-| `output_format` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı (varsayılan: "mp3_44100_192"). |
-| `seed` | INT | Hayır | 0 - 4294967295 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). |
-| `remove_background_noise` | BOOLEAN | Hayır | - | Ses izolasyonu kullanarak giriş sesinden arka plan gürültüsünü kaldırır (varsayılan: False). |
+| `çıktı_formatı` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı (varsayılan: "mp3_44100_192"). |
+| `tohum` | INT | Hayır | 0 - 4294967295 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). |
+| `arka_plan_gürültüsünü_kaldır` | BOOLEAN | Hayır | - | Ses izolasyonu kullanarak giriş sesinden arka plan gürültüsünü kaldırır (varsayılan: False). |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `audio` | AUDIO | Belirtilen çıktı formatında dönüştürülmüş ses dosyası. |
+| `ses` | AUDIO | Belirtilen çıktı formatında dönüştürülmüş ses dosyası. |
 
 ---
 **Source fingerprint (SHA-256):** `118fe6e85b146d0649b104d814abb518d37f69ade2e53becac365a0ec90146fd`

@@ -25,8 +25,8 @@ WanTrackToVideo düğümü, izleme noktalarını işleyerek ve karşılık gelen
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Hareket izi bilgisi uygulanmış pozitif koşullandırma |
-| `negative` | CONDITIONING | Hareket izi bilgisi uygulanmış negatif koşullandırma |
+| `negatif` | CONDITIONING | Hareket izi bilgisi uygulanmış pozitif koşullandırma |
+| `latent` | CONDITIONING | Hareket izi bilgisi uygulanmış negatif koşullandırma |
 | `latent` | LATENT | Oluşturulan video gizli temsili |
 
 ---

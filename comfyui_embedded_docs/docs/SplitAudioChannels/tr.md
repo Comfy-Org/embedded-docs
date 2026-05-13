@@ -6,7 +6,7 @@ SplitAudioChannels düğümü, stereo sesi ayrı sol ve sağ kanallara ayırır.
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|-------------|
-| `audio` | AUDIO | Evet | - | Kanallara ayrılacak stereo ses girişi |
+| `ses` | AUDIO | Evet | - | Kanallara ayrılacak stereo ses girişi |
 
 **Not:** Giriş sesi tam olarak iki kanallı (stereo) olmalıdır. Giriş sesi yalnızca bir kanallı ise düğüm bir hata verecektir.
 

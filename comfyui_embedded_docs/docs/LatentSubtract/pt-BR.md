@@ -6,8 +6,8 @@ O nó **LatentSubtract** foi projetado para subtrair uma representação latente
 
 | Parâmetro   | Tipo de Dado | Descrição |
 |-------------|--------------|-----------|
-| `samples1`  | `LATENT`     | O primeiro conjunto de amostras latentes do qual será feita a subtração. Serve como base para a operação de subtração. |
-| `samples2`  | `LATENT`     | O segundo conjunto de amostras latentes que será subtraído do primeiro conjunto. Essa operação pode alterar a saída resultante do modelo generativo ao remover atributos ou características. |
+| `amostras1`  | `LATENT`     | O primeiro conjunto de amostras latentes do qual será feita a subtração. Serve como base para a operação de subtração. |
+| `amostras2`  | `LATENT`     | O segundo conjunto de amostras latentes que será subtraído do primeiro conjunto. Essa operação pode alterar a saída resultante do modelo generativo ao remover atributos ou características. |
 
 ## Saídas
 

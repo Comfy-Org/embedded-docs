@@ -6,7 +6,7 @@ O nó **Agrupar Imagens** combina várias imagens individuais em um único lote.
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | 2 a 50 entradas | Uma lista dinâmica de entradas de imagem. Você pode adicionar entre 2 e 50 imagens para serem combinadas em um lote. A interface do nó permite adicionar mais slots de entrada de imagem conforme necessário. |
+| `imagens` | IMAGE | Sim | 2 a 50 entradas | Uma lista dinâmica de entradas de imagem. Você pode adicionar entre 2 e 50 imagens para serem combinadas em um lote. A interface do nó permite adicionar mais slots de entrada de imagem conforme necessário. |
 
 **Observação:** Você deve conectar pelo menos duas imagens para que o nó funcione. O primeiro slot de entrada é sempre obrigatório, e você pode adicionar mais usando o botão "+" que aparece na interface do nó.
 

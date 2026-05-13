@@ -6,9 +6,9 @@ O nó BetaSamplingScheduler gera uma sequência de níveis de ruído (sigmas) pa
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo usado para amostragem, que fornece o objeto de amostragem do modelo |
-| `steps` | INT | Sim | 1 a 10000 | O número de etapas de amostragem para gerar sigmas (padrão: 20) |
-| `alpha` | FLOAT | Sim | 0.0 a 50.0 | Parâmetro alfa para o agendador beta, controlando a curva de agendamento (padrão: 0.6) |
+| `modelo` | MODEL | Sim | - | O modelo usado para amostragem, que fornece o objeto de amostragem do modelo |
+| `etapas` | INT | Sim | 1 a 10000 | O número de etapas de amostragem para gerar sigmas (padrão: 20) |
+| `alfa` | FLOAT | Sim | 0.0 a 50.0 | Parâmetro alfa para o agendador beta, controlando a curva de agendamento (padrão: 0.6) |
 | `beta` | FLOAT | Sim | 0.0 a 50.0 | Parâmetro beta para o agendador beta, controlando a curva de agendamento (padrão: 0.6) |
 
 ## Saídas

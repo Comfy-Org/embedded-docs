@@ -8,7 +8,7 @@ Maske Önizleme düğümü, maske verilerini ComfyUI çıktı dizininize önizle
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `mask` | MASK | Evet | - | Önizlenecek ve görüntü olarak kaydedilecek maske verileri |
+| `maske` | MASK | Evet | - | Önizlenecek ve görüntü olarak kaydedilecek maske verileri |
 | `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "ComfyUI") |
 | `prompt` | PROMPT | Hayır | - | Meta veriler için istem bilgisi (otomatik olarak sağlanır) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Hayır | - | Meta veriler için ek PNG bilgisi (otomatik olarak sağlanır) |

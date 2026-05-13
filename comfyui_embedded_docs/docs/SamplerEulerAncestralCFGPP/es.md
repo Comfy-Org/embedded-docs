@@ -7,7 +7,7 @@ El nodo SamplerEulerAncestralCFGPP crea un muestreador que utiliza el método Eu
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `eta` | FLOAT | Sí | 0.0 - 1.0 | Controla el tamaño del paso durante el muestreo, donde valores más altos generan actualizaciones más agresivas (predeterminado: 1.0) |
-| `s_noise` | FLOAT | Sí | 0.0 - 10.0 | Ajusta la cantidad de ruido añadido durante el proceso de muestreo (predeterminado: 1.0) |
+| `s_ruido` | FLOAT | Sí | 0.0 - 10.0 | Ajusta la cantidad de ruido añadido durante el proceso de muestreo (predeterminado: 1.0) |
 
 ## Salidas
 

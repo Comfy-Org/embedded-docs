@@ -6,8 +6,8 @@ El nodo Convertidor de Mayúsculas transforma cadenas de texto en diferentes for
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto que se convertirá a un formato de mayúsculas diferente |
-| `mode` | STRING | Sí | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | El modo de conversión de mayúsculas a aplicar (predeterminado: `"UPPERCASE"`) |
+| `cadena` | STRING | Sí | - | La cadena de texto que se convertirá a un formato de mayúsculas diferente |
+| `modo` | STRING | Sí | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | El modo de conversión de mayúsculas a aplicar (predeterminado: `"UPPERCASE"`) |
 
 ## Salidas
 

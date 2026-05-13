@@ -6,12 +6,12 @@ VAEDecodeTiled düğümü, gizli temsilleri (latent representations) görüntül
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Evet | - | Görüntülere dönüştürülecek gizli temsil |
+| `örnekler` | LATENT | Evet | - | Görüntülere dönüştürülecek gizli temsil |
 | `vae` | VAE | Evet | - | Gizli örnekleri çözmek için kullanılan VAE modeli |
-| `tile_size` | INT | Evet | 64-4096 (adım: 32) | İşleme için her bir döşemenin boyutu (varsayılan: 512) |
-| `overlap` | INT | Evet | 0-4096 (adım: 32) | Bitişik döşemeler arasındaki örtüşme miktarı (varsayılan: 64) |
-| `temporal_size` | INT | Evet | 8-4096 (adım: 4) | Yalnızca video VAE'leri için kullanılır: Bir seferde çözülecek kare sayısı (varsayılan: 64) |
-| `temporal_overlap` | INT | Evet | 4-4096 (adım: 4) | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare sayısı (varsayılan: 8) |
+| `döşeme_boyutu` | INT | Evet | 64-4096 (adım: 32) | İşleme için her bir döşemenin boyutu (varsayılan: 512) |
+| `örtüşme` | INT | Evet | 0-4096 (adım: 32) | Bitişik döşemeler arasındaki örtüşme miktarı (varsayılan: 64) |
+| `zamansal_boyut` | INT | Evet | 8-4096 (adım: 4) | Yalnızca video VAE'leri için kullanılır: Bir seferde çözülecek kare sayısı (varsayılan: 64) |
+| `zamansal_örtüşme` | INT | Evet | 4-4096 (adım: 4) | Yalnızca video VAE'leri için kullanılır: Örtüşecek kare sayısı (varsayılan: 8) |
 
 **Not:** Düğüm, örtüşme değerleri pratik sınırları aşarsa bunları otomatik olarak ayarlar. `tile_size`, `overlap` değerinin 4 katından küçükse, örtüşme döşeme boyutunun dörtte birine düşürülür. Benzer şekilde, `temporal_size`, `temporal_overlap` değerinin iki katından küçükse, zamansal örtüşme yarıya indirilir. Düğüm ayrıca, hem uzamsal hem de zamansal boyutlar için döşeme ve örtüşme boyutlarını hesaplarken VAE'nin dahili sıkıştırma oranlarını da dikkate alır.
 

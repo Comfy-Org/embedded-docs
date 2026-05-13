@@ -9,8 +9,8 @@ Modifica una imagen existente basándose en un mensaje de texto. Este nodo enví
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `prompt` | STRING | Sí | N/A | El mensaje de texto utilizado para generar la imagen. Debe tener al menos 1 carácter después de eliminar espacios en blanco. |
-| `model` | MODEL | Sí | Ver Descripción | El modelo de imagen Grok a utilizar. Este parámetro tiene múltiples subopciones que aparecen después de seleccionar un modelo. Modelos disponibles: `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image`. Cada modelo tiene capacidades diferentes (ver nota a continuación). |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla. (predeterminado: 0) |
+| `modelo` | MODEL | Sí | Ver Descripción | El modelo de imagen Grok a utilizar. Este parámetro tiene múltiples subopciones que aparecen después de seleccionar un modelo. Modelos disponibles: `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image`. Cada modelo tiene capacidades diferentes (ver nota a continuación). |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla. (predeterminado: 0) |
 
 **Nota sobre las restricciones del parámetro `model`:**
 - El parámetro `model` es un combo dinámico que incluye subopciones para `resolution`, `number_of_images`, `images` y `aspect_ratio`.

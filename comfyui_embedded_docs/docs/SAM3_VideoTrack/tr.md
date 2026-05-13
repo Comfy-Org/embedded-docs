@@ -10,13 +10,13 @@ SAM3'ün bellek tabanlı izleyicisini kullanarak video kareleri arasındaki nesn
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | Toplu video kareleri | Toplu görüntüler olarak video kareleri |
+| `görüntüler` | IMAGE | Evet | Toplu video kareleri | Toplu görüntüler olarak video kareleri |
 | `model` | MODEL | Evet | SAM3 modeli | İzleme için kullanılacak SAM3 modeli |
-| `initial_mask` | MASK | Hayır | Nesne başına bir maske | İzlenecek ilk kare için maske(lar) (nesne başına bir tane). `conditioning` sağlanmadıysa zorunludur. |
-| `conditioning` | CONDITIONING | Hayır | Metin koşullandırması | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması. `initial_mask` sağlanmadıysa zorunludur. |
-| `detection_threshold` | FLOAT | Hayır | 0.0 ila 1.0 (varsayılan: 0.5) | Metin istemiyle algılama için puan eşiği |
-| `max_objects` | INT | Hayır | 0 ila 64 (varsayılan: 0) | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili sınır olan 64'ü kullanır. |
-| `detect_interval` | INT | Hayır | 1 ila sınırsız (varsayılan: 1) | Her N karede bir algılama çalıştırın (1=her kare). Daha yüksek değerler hesaplama tasarrufu sağlar. |
+| `ilk_maske` | MASK | Hayır | Nesne başına bir maske | İzlenecek ilk kare için maske(lar) (nesne başına bir tane). `koşullandırma` sağlanmadıysa zorunludur. |
+| `koşullandırma` | CONDITIONING | Hayır | Metin koşullandırması | İzleme sırasında yeni nesneleri algılamak için metin koşullandırması. `ilk_maske` sağlanmadıysa zorunludur. |
+| `tespit_eşiği` | FLOAT | Hayır | 0.0 ila 1.0 (varsayılan: 0.5) | Metin istemiyle algılama için puan eşiği |
+| `maks_nesne` | INT | Hayır | 0 ila 64 (varsayılan: 0) | Maksimum izlenen nesne sayısı. Başlangıç maskeleri bu sınıra dahildir. 0, dahili sınır olan 64'ü kullanır. |
+| `tespit_aralığı` | INT | Hayır | 1 ila sınırsız (varsayılan: 1) | Her N karede bir algılama çalıştırın (1=her kare). Daha yüksek değerler hesaplama tasarrufu sağlar. |
 
 **Not:** `initial_mask` veya `conditioning`'den biri sağlanmalıdır. Her ikisi de atlanırsa, düğüm bir hata verecektir.
 

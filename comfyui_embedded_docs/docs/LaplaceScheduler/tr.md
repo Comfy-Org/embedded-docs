@@ -6,8 +6,8 @@ LaplaceScheduler düğümü, difüzyon örneklemesinde kullanılmak üzere bir L
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `steps` | INT | Evet | 1 ila 10000 | Çizelgedeki örnekleme adım sayısı (varsayılan: 20) |
-| `sigma_max` | FLOAT | Evet | 0,0 ila 5000,0 | Çizelgenin başlangıcındaki maksimum sigma değeri (varsayılan: 14,614642) |
+| `adımlar` | INT | Evet | 1 ila 10000 | Çizelgedeki örnekleme adım sayısı (varsayılan: 20) |
+| `sigma_maks` | FLOAT | Evet | 0,0 ila 5000,0 | Çizelgenin başlangıcındaki maksimum sigma değeri (varsayılan: 14,614642) |
 | `sigma_min` | FLOAT | Evet | 0,0 ila 5000,0 | Çizelgenin sonundaki minimum sigma değeri (varsayılan: 0,0291675) |
 | `mu` | FLOAT | Evet | -10,0 ila 10,0 | Laplace dağılımı için ortalama parametresi (varsayılan: 0,0) |
 | `beta` | FLOAT | Evet | 0,0 ila 10,0 | Laplace dağılımı için ölçek parametresi (varsayılan: 0,5) |

@@ -6,11 +6,11 @@ O nó SamplerCustomAdvanced realiza amostragem avançada no espaço latente usan
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `noise` | NOISE | Sim | - | O gerador de ruído que fornece o padrão de ruído inicial e a semente para o processo de amostragem |
-| `guider` | GUIDER | Sim | - | O modelo de orientação que direciona o processo de amostragem para as saídas desejadas |
-| `sampler` | SAMPLER | Sim | - | O algoritmo de amostragem que define como o espaço latente é percorrido durante a geração |
+| `ruído` | NOISE | Sim | - | O gerador de ruído que fornece o padrão de ruído inicial e a semente para o processo de amostragem |
+| `guia` | GUIDER | Sim | - | O modelo de orientação que direciona o processo de amostragem para as saídas desejadas |
+| `amostrador` | SAMPLER | Sim | - | O algoritmo de amostragem que define como o espaço latente é percorrido durante a geração |
 | `sigmas` | SIGMAS | Sim | - | O agendamento sigma que controla os níveis de ruído ao longo das etapas de amostragem |
-| `latent_image` | LATENT | Sim | - | A representação latente inicial que serve como ponto de partida para a amostragem |
+| `imagem_latente` | LATENT | Sim | - | A representação latente inicial que serve como ponto de partida para a amostragem |
 
 ## Saídas
 

@@ -6,16 +6,16 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 待放大和增强的输入图像。 |
-| `prompt` | STRING | 否 | - | 用于引导图像创意增强的文本描述。此为可选参数（默认：空）。 |
-| `scale_factor` | COMBO | 是 | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | 图像尺寸的放大倍数。 |
-| `optimized_for` | COMBO | 是 | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | 用于优化增强过程的风格或内容类型。 |
-| `creativity` | INT | 否 | -10 到 10 | 控制应用于图像的创意解读程度（默认：0）。 |
-| `hdr` | INT | 否 | -10 到 10 | 清晰度和细节水平（默认：0）。 |
-| `resemblance` | INT | 否 | -10 到 10 | 与原图的相似度水平（默认：0）。 |
-| `fractality` | INT | 否 | -10 到 10 | 提示强度及每平方像素的精细度（默认：0）。 |
-| `engine` | COMBO | 是 | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | 用于处理的具体 AI 引擎。此为高级参数。 |
-| `auto_downscale` | BOOLEAN | 否 | - | 启用后，若请求的放大尺寸超过最大允许输出尺寸（25.3 百万像素），节点将自动缩小输入图像。此为高级参数（默认：False）。 |
+| `图像` | IMAGE | 是 | - | 待放大和增强的输入图像。 |
+| `提示词` | STRING | 否 | - | 用于引导图像创意增强的文本描述。此为可选参数（默认：空）。 |
+| `放大倍数` | COMBO | 是 | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | 图像尺寸的放大倍数。 |
+| `优化目标` | COMBO | 是 | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | 用于优化增强过程的风格或内容类型。 |
+| `创意` | INT | 否 | -10 到 10 | 控制应用于图像的创意解读程度（默认：0）。 |
+| `HDR` | INT | 否 | -10 到 10 | 清晰度和细节水平（默认：0）。 |
+| `相似度` | INT | 否 | -10 到 10 | 与原图的相似度水平（默认：0）。 |
+| `复杂度` | INT | 否 | -10 到 10 | 提示强度及每平方像素的精细度（默认：0）。 |
+| `引擎` | COMBO | 是 | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | 用于处理的具体 AI 引擎。此为高级参数。 |
+| `自动降采样` | BOOLEAN | 否 | - | 启用后，若请求的放大尺寸超过最大允许输出尺寸（25.3 百万像素），节点将自动缩小输入图像。此为高级参数（默认：False）。 |
 
 **约束条件：**
 
@@ -28,7 +28,7 @@
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 经过创意增强和放大后的输出图像。 |
+| `图像` | IMAGE | 经过创意增强和放大后的输出图像。 |
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

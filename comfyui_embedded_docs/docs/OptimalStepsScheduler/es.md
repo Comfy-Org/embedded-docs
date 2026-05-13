@@ -7,8 +7,8 @@ El nodo OptimalStepsScheduler calcula los sigmas del programa de ruido para mode
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `model_type` | COMBO | Sí | "FLUX"<br>"Wan"<br>"Chroma" | El tipo de modelo de difusión a utilizar para el cálculo del nivel de ruido |
-| `steps` | INT | Sí | 3-1000 | El número total de pasos de muestreo a calcular (predeterminado: 20) |
-| `denoise` | FLOAT | No | 0.0-1.0 | Controla la intensidad de eliminación de ruido, que ajusta el número efectivo de pasos (predeterminado: 1.0) |
+| `pasos` | INT | Sí | 3-1000 | El número total de pasos de muestreo a calcular (predeterminado: 20) |
+| `eliminar ruido` | FLOAT | No | 0.0-1.0 | Controla la intensidad de eliminación de ruido, que ajusta el número efectivo de pasos (predeterminado: 1.0) |
 
 **Nota:** Cuando `denoise` se establece en un valor menor a 1.0, el nodo calcula los pasos efectivos como `steps * denoise`. Si `denoise` se establece en 0.0, el nodo devuelve un tensor vacío.
 

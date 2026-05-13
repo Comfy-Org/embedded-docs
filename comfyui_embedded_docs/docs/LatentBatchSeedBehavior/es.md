@@ -6,8 +6,8 @@ El nodo `LatentBatchSeedBehavior` está diseñado para modificar el comportamien
 
 | Parámetro       | Tipo de Dato | Descripción |
 |-----------------|--------------|-------------|
-| `samples`       | `LATENT`     | El parámetro `samples` representa el lote de muestras latentes a procesar. Su modificación depende del comportamiento de semilla elegido, afectando la consistencia o variabilidad de los resultados generados. |
-| `seed_behavior`  | COMBO[STRING] | El parámetro `seed_behavior` determina si la semilla para el lote de muestras latentes debe aleatorizarse o fijarse. Esta elección impacta significativamente el proceso de generación al introducir variabilidad o garantizar consistencia en todo el lote. |
+| `muestras`       | `LATENT`     | El parámetro `muestras` representa el lote de muestras latentes a procesar. Su modificación depende del comportamiento de semilla elegido, afectando la consistencia o variabilidad de los resultados generados. |
+| `comportamiento_de_semilla`  | COMBO[STRING] | El parámetro `comportamiento_de_semilla` determina si la semilla para el lote de muestras latentes debe aleatorizarse o fijarse. Esta elección impacta significativamente el proceso de generación al introducir variabilidad o garantizar consistencia en todo el lote. |
 
 ## Salidas
 

@@ -6,15 +6,15 @@ El nodo ByteDance Image to Video genera videos utilizando modelos de ByteDance a
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | STRING | Sí | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` | El modelo de ByteDance a utilizar para la generación de video (predeterminado: `"seedance-1-0-pro-fast-251015"`). |
+| `modelo` | STRING | Sí | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` | El modelo de ByteDance a utilizar para la generación de video (predeterminado: `"seedance-1-0-pro-fast-251015"`). |
 | `prompt` | STRING | Sí | - | El texto de instrucción utilizado para generar el video. Debe tener al menos 1 carácter de longitud después de eliminar espacios en blanco. |
-| `image` | IMAGE | Sí | - | Primer fotograma que se utilizará para el video. Debe tener entre 300x300 y 6000x6000 píxeles, con una relación de aspecto entre 0.4 y 2.5. |
-| `resolution` | STRING | Sí | `"480p"`<br>`"720p"`<br>`"1080p"` | La resolución del video de salida. |
-| `aspect_ratio` | STRING | Sí | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | La relación de aspecto del video de salida. |
-| `duration` | INT | Sí | 3 - 12 | La duración del video de salida en segundos (predeterminado: 5). Para el modelo `seedance-1-5-pro-251215`, la duración mínima compatible es de 4 segundos. |
-| `seed` | INT | No | 0 - 2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
-| `camera_fixed` | BOOLEAN | No | - | Especifica si se debe fijar la cámara. La plataforma agrega una instrucción para fijar la cámara a tu instrucción, pero no garantiza el efecto real (predeterminado: Falso). |
-| `watermark` | BOOLEAN | No | - | Si se debe agregar una marca de agua "Generado por IA" al video (predeterminado: Falso). |
+| `imagen` | IMAGE | Sí | - | Primer fotograma que se utilizará para el video. Debe tener entre 300x300 y 6000x6000 píxeles, con una relación de aspecto entre 0.4 y 2.5. |
+| `resolución` | STRING | Sí | `"480p"`<br>`"720p"`<br>`"1080p"` | La resolución del video de salida. |
+| `relación_de_aspecto` | STRING | Sí | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | La relación de aspecto del video de salida. |
+| `duración` | INT | Sí | 3 - 12 | La duración del video de salida en segundos (predeterminado: 5). Para el modelo `seedance-1-5-pro-251215`, la duración mínima compatible es de 4 segundos. |
+| `semilla` | INT | No | 0 - 2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
+| `cámara_fija` | BOOLEAN | No | - | Especifica si se debe fijar la cámara. La plataforma agrega una instrucción para fijar la cámara a tu instrucción, pero no garantiza el efecto real (predeterminado: Falso). |
+| `marca_de_agua` | BOOLEAN | No | - | Si se debe agregar una marca de agua "Generado por IA" al video (predeterminado: Falso). |
 | `generate_audio` | BOOLEAN | No | - | Este parámetro se ignora para cualquier modelo excepto `seedance-1-5-pro-251215` (predeterminado: Falso). |
 
 **Nota:** La instrucción no debe contener las siguientes palabras (sin distinción entre mayúsculas y minúsculas): `resolution`, `ratio`, `duration`, `seed`, `camerafixed`, `watermark`. Estos parámetros se configuran a través de sus entradas dedicadas.

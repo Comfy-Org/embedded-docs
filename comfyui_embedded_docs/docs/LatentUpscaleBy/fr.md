@@ -7,8 +7,8 @@ Le nœud **LatentUpscaleBy** est conçu pour le suréchantillonnage des représe
 | Paramètre | Type de données | Description |
 |---------------|--------------|-------------|
 | `samples`     | `LATENT`     | La représentation latente des images à suréchantillonner. Ce paramètre est essentiel pour déterminer les données d'entrée qui subiront le processus de suréchantillonnage. |
-| `upscale_method` | COMBO[STRING] | Spécifie la méthode utilisée pour le suréchantillonnage des échantillons latents. Le choix de la méthode peut affecter considérablement la qualité et les caractéristiques de la sortie suréchantillonnée. |
-| `scale_by`    | `FLOAT`      | Détermine le facteur par lequel les échantillons latents sont mis à l'échelle. Ce paramètre influence directement la résolution de la sortie, permettant un contrôle précis du processus de suréchantillonnage. |
+| `méthode_de_mise_à_l'échelle` | COMBO[STRING] | Spécifie la méthode utilisée pour le suréchantillonnage des échantillons latents. Le choix de la méthode peut affecter considérablement la qualité et les caractéristiques de la sortie suréchantillonnée. |
+| `mise_à_l'échelle_par`    | `FLOAT`      | Détermine le facteur par lequel les échantillons latents sont mis à l'échelle. Ce paramètre influence directement la résolution de la sortie, permettant un contrôle précis du processus de suréchantillonnage. |
 
 ## Sorties
 

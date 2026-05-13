@@ -6,8 +6,8 @@ LatentBatchSeedBehavior düğümü, bir grup gizli (latent) örneğin tohum (see
 
 | Parametre        | Veri Türü    | Açıklama |
 |-----------------|--------------|-------------|
-| `samples`       | `LATENT`     | 'samples' parametresi, işlenecek gizli örnek grubunu temsil eder. Bu parametredeki değişiklik, seçilen tohum davranışına bağlıdır ve üretilen çıktıların tutarlılığını veya çeşitliliğini etkiler. |
-| `seed_behavior`  | COMBO[STRING] | 'seed_behavior' parametresi, gizli örnek grubu için tohumun rastgeleleştirilip rastgeleleştirilmeyeceğini veya sabitlenip sabitlenmeyeceğini belirler. Bu seçim, grup genelinde çeşitlilik sağlayarak veya tutarlılığı garanti ederek üretim sürecini önemli ölçüde etkiler. |
+| `örnekler`       | `LATENT`     | 'samples' parametresi, işlenecek gizli örnek grubunu temsil eder. Bu parametredeki değişiklik, seçilen tohum davranışına bağlıdır ve üretilen çıktıların tutarlılığını veya çeşitliliğini etkiler. |
+| `tohum_davranışı`  | COMBO[STRING] | 'seed_behavior' parametresi, gizli örnek grubu için tohumun rastgeleleştirilip rastgeleleştirilmeyeceğini veya sabitlenip sabitlenmeyeceğini belirler. Bu seçim, grup genelinde çeşitlilik sağlayarak veya tutarlılığı garanti ederek üretim sürecini önemli ölçüde etkiler. |
 
 ## Çıktılar
 

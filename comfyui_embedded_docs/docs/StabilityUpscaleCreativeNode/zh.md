@@ -6,18 +6,18 @@
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | 是 | - | 待放大的输入图像 |
-| `prompt` | STRING | 是 | - | 您希望在输出图像中看到的内容。一个强有力且描述性强的提示词，清晰定义元素、颜色和主体，将带来更佳效果。（默认值：空字符串） |
-| `creativity` | FLOAT | 是 | 0.1-0.5 | 控制生成不受初始图像强烈约束的额外细节的可能性。（默认值：0.3） |
-| `style_preset` | STRING | 是 | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 生成图像的可选期望风格。（默认值："None"） |
-| `seed` | INT | 是 | 0-4294967294 | 用于生成噪声的随机种子。（默认值：0） |
-| `negative_prompt` | STRING | 否 | - | 您不希望出现在输出图像中的关键词。这是一个高级功能。（默认值：空字符串） |
+| `图像` | IMAGE | 是 | - | 待放大的输入图像 |
+| `提示词` | STRING | 是 | - | 您希望在输出图像中看到的内容。一个强有力且描述性强的提示词，清晰定义元素、颜色和主体，将带来更佳效果。（默认值：空字符串） |
+| `创造性` | FLOAT | 是 | 0.1-0.5 | 控制生成不受初始图像强烈约束的额外细节的可能性。（默认值：0.3） |
+| `风格预设` | STRING | 是 | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | 生成图像的可选期望风格。（默认值："None"） |
+| `随机种子` | INT | 是 | 0-4294967294 | 用于生成噪声的随机种子。（默认值：0） |
+| `反向提示词` | STRING | 否 | - | 您不希望出现在输出图像中的关键词。这是一个高级功能。（默认值：空字符串） |
 
 ## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 放大后的 4K 分辨率图像 |
+| `图像` | IMAGE | 放大后的 4K 分辨率图像 |
 
 ---
 **Source fingerprint (SHA-256):** `46f7bdd3cb4254b6305407f43e4a9a69a54fd3a0ac285d784c899dbf52edd552`

@@ -12,12 +12,12 @@ Bu düğüm, metin açıklamalarına dayalı görseller oluşturmak için OpenAI
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|------------|--------|----------|
-| `prompt` | STRING | zorunlu | "" | - | DALL·E için metin istemi |
-| `seed` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
-| `size` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görsel boyutu |
+| `istem` | STRING | zorunlu | "" | - | DALL·E için metin istemi |
+| `tohum` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
+| `boyut` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görsel boyutu |
 | `n` | INT | isteğe bağlı | 1 | 1 ile 8 arası | Oluşturulacak görsel sayısı |
-| `image` | IMAGE | isteğe bağlı | Yok | - | Görsel düzenleme için isteğe bağlı referans görseli. |
-| `mask` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
+| `görüntü` | IMAGE | isteğe bağlı | Yok | - | Görsel düzenleme için isteğe bağlı referans görseli. |
+| `maske` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
 
 ## Çıktılar
 

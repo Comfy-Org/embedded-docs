@@ -9,7 +9,7 @@
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `svg` | SVG | 是 | - | 要儲存至磁碟的 SVG 資料 |
-| `filename_prefix` | STRING | 是 | - | 要儲存檔案的檔案名稱前綴。可包含格式化資訊，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`，以納入來自節點的值。（預設值："svg/ComfyUI"） |
+| `檔案名稱前綴` | STRING | 是 | - | 要儲存檔案的檔案名稱前綴。可包含格式化資訊，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`，以納入來自節點的值。（預設值："svg/ComfyUI"） |
 
 ## 輸出
 

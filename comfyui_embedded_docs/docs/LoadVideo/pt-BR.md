@@ -6,7 +6,7 @@ O nó Carregar Vídeo carrega arquivos de vídeo do diretório de entrada e os d
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `file` | STRING | Sim | Múltiplas opções disponíveis | O arquivo de vídeo a ser carregado do diretório de entrada. A lista suspensa é preenchida dinamicamente com todos os arquivos de vídeo encontrados na pasta de entrada do ComfyUI. |
+| `arquivo` | STRING | Sim | Múltiplas opções disponíveis | O arquivo de vídeo a ser carregado do diretório de entrada. A lista suspensa é preenchida dinamicamente com todos os arquivos de vídeo encontrados na pasta de entrada do ComfyUI. |
 
 **Nota:** As opções disponíveis para o parâmetro `file` são preenchidas dinamicamente a partir dos arquivos de vídeo presentes no diretório de entrada. Apenas arquivos de vídeo com tipos de conteúdo suportados são exibidos. Você também pode fazer upload de um novo arquivo de vídeo diretamente através da interface do seletor de arquivos do nó.
 

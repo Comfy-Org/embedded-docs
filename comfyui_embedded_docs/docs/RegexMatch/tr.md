@@ -6,11 +6,11 @@ RegexMatch düğümü, bir metin dizesinin belirli bir düzenli ifade kalıbıyl
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `string` | STRING | Evet | - | Eşleşme aranacak metin dizesi |
-| `regex_pattern` | STRING | Evet | - | Dizeyle eşleştirilecek düzenli ifade kalıbı |
-| `case_insensitive` | BOOLEAN | Hayır | - | Eşleme sırasında büyük/küçük harf duyarlılığının yok sayılıp sayılmayacağı (varsayılan: True) |
-| `multiline` | BOOLEAN | Hayır | - | Düzenli ifade eşlemesi için çok satırlı modun etkinleştirilip etkinleştirilmeyeceği (varsayılan: False) |
-| `dotall` | BOOLEAN | Hayır | - | Düzenli ifade eşlemesi için dotall modunun etkinleştirilip etkinleştirilmeyeceği (varsayılan: False) |
+| `dize` | STRING | Evet | - | Eşleşme aranacak metin dizesi |
+| `regex_deseni` | STRING | Evet | - | Dizeyle eşleştirilecek düzenli ifade kalıbı |
+| `büyük/küçük harf duyarsız` | BOOLEAN | Hayır | - | Eşleme sırasında büyük/küçük harf duyarlılığının yok sayılıp sayılmayacağı (varsayılan: True) |
+| `çok satırlı` | BOOLEAN | Hayır | - | Düzenli ifade eşlemesi için çok satırlı modun etkinleştirilip etkinleştirilmeyeceği (varsayılan: False) |
+| `nokta her şey` | BOOLEAN | Hayır | - | Düzenli ifade eşlemesi için dotall modunun etkinleştirilip etkinleştirilmeyeceği (varsayılan: False) |
 
 ## Çıktılar
 

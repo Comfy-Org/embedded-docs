@@ -6,18 +6,18 @@ Genera modelos 3D de forma síncrona a partir de una sola imagen utilizando la A
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | Imagen de entrada utilizada para generar el modelo 3D |
-| `model_version` | COMBO | No | Múltiples opciones disponibles | Versión del modelo Tripo a utilizar para la generación |
-| `style` | COMBO | No | Múltiples opciones disponibles | Configuración de estilo para el modelo generado (predeterminado: "None") |
-| `texture` | BOOLEAN | No | - | Si se deben generar texturas para el modelo (predeterminado: True) |
+| `imagen` | IMAGE | Sí | - | Imagen de entrada utilizada para generar el modelo 3D |
+| `versión_modelo` | COMBO | No | Múltiples opciones disponibles | Versión del modelo Tripo a utilizar para la generación |
+| `estilo` | COMBO | No | Múltiples opciones disponibles | Configuración de estilo para el modelo generado (predeterminado: "None") |
+| `textura` | BOOLEAN | No | - | Si se deben generar texturas para el modelo (predeterminado: True) |
 | `pbr` | BOOLEAN | No | - | Si se debe usar renderizado basado en física (predeterminado: True) |
-| `model_seed` | INT | No | - | Semilla aleatoria para la generación del modelo (predeterminado: 42) |
-| `orientation` | COMBO | No | Múltiples opciones disponibles | Configuración de orientación para el modelo generado |
-| `texture_seed` | INT | No | - | Semilla aleatoria para la generación de textura (predeterminado: 42) |
-| `texture_quality` | COMBO | No | "standard"<br>"detailed" | Nivel de calidad para la generación de textura (predeterminado: "standard") |
-| `texture_alignment` | COMBO | No | "original_image"<br>"geometry" | Método de alineación para el mapeo de textura (predeterminado: "original_image") |
-| `face_limit` | INT | No | -1 a 500000 | Número máximo de caras en el modelo generado, -1 para sin límite (predeterminado: -1) |
-| `quad` | BOOLEAN | No | - | Si se deben usar caras cuadriláteras en lugar de triángulos (predeterminado: False) |
+| `semilla_modelo` | INT | No | - | Semilla aleatoria para la generación del modelo (predeterminado: 42) |
+| `orientación` | COMBO | No | Múltiples opciones disponibles | Configuración de orientación para el modelo generado |
+| `semilla_textura` | INT | No | - | Semilla aleatoria para la generación de textura (predeterminado: 42) |
+| `calidad_textura` | COMBO | No | "standard"<br>"detailed" | Nivel de calidad para la generación de textura (predeterminado: "standard") |
+| `alineación_de_textura` | COMBO | No | "original_image"<br>"geometry" | Método de alineación para el mapeo de textura (predeterminado: "original_image") |
+| `límite_de_caras` | INT | No | -1 a 500000 | Número máximo de caras en el modelo generado, -1 para sin límite (predeterminado: -1) |
+| `cuadrilátero` | BOOLEAN | No | - | Si se deben usar caras cuadriláteras en lugar de triángulos (predeterminado: False) |
 | `geometry_quality` | COMBO | No | "standard"<br>"detailed" | Nivel de calidad para la generación de geometría (predeterminado: "standard") |
 
 **Nota:** El parámetro `image` es obligatorio y debe proporcionarse para que el nodo funcione. Si no se proporciona una imagen, el nodo generará un RuntimeError.
@@ -26,8 +26,8 @@ Genera modelos 3D de forma síncrona a partir de una sola imagen utilizando la A
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model_file` | STRING | El archivo de modelo 3D generado (solo para compatibilidad hacia atrás) |
-| `model task_id` | MODEL_TASK_ID | El ID de tarea para rastrear el proceso de generación del modelo |
+| `id_de_tarea_de_modelo` | STRING | El archivo de modelo 3D generado (solo para compatibilidad hacia atrás) |
+| `GLB` | MODEL_TASK_ID | El ID de tarea para rastrear el proceso de generación del modelo |
 | `GLB` | FILE3DGLB | El modelo 3D generado en formato GLB |
 
 ---

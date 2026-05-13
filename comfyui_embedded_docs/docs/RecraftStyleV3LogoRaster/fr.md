@@ -6,7 +6,7 @@ Ce nœud sélectionne le style de logo raster ainsi qu'un sous-style optionnel p
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `substyle` | STRING | Oui | Plusieurs options disponibles | Le sous-style de logo raster spécifique à appliquer pour la génération du logo |
+| `sous-style` | STRING | Oui | Plusieurs options disponibles | Le sous-style de logo raster spécifique à appliquer pour la génération du logo |
 
 ## Sorties
 

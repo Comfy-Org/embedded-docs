@@ -18,7 +18,7 @@ Ce nœud crée un actif d'image personnel pour le service Seedance 2.0 de ByteDa
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `asset_id` | STRING | L'identifiant unique de l'actif d'image nouvellement créé. |
+| `group_id` | STRING | L'identifiant unique de l'actif d'image nouvellement créé. |
 | `group_id` | STRING | L'identifiant du groupe d'actifs. Il s'agira du `group_id` fourni ou d'un identifiant nouvellement créé. |
 
 ---

@@ -7,15 +7,15 @@ El nodo `StableZero123_Conditioning_Batched` procesa una imagen de entrada y gen
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `clip_vision` | CLIP_VISION | Sí | - | El modelo de visión CLIP utilizado para codificar la imagen de entrada |
-| `init_image` | IMAGE | Sí | - | La imagen de entrada inicial a procesar y codificar |
+| `imagen_inicial` | IMAGE | Sí | - | La imagen de entrada inicial a procesar y codificar |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar píxeles de imagen en espacio latente |
-| `width` | INT | No | 16 a MAX_RESOLUTION | El ancho de salida para la imagen procesada (predeterminado: 256, debe ser divisible por 8) |
-| `height` | INT | No | 16 a MAX_RESOLUTION | La altura de salida para la imagen procesada (predeterminado: 256, debe ser divisible por 8) |
-| `batch_size` | INT | No | 1 a 4096 | El número de muestras de condicionamiento a generar en el lote (predeterminado: 1) |
-| `elevation` | FLOAT | No | -180.0 a 180.0 | El ángulo inicial de elevación de la cámara en grados (predeterminado: 0.0) |
-| `azimuth` | FLOAT | No | -180.0 a 180.0 | El ángulo inicial de azimut de la cámara en grados (predeterminado: 0.0) |
-| `elevation_batch_increment` | FLOAT | No | -180.0 a 180.0 | El incremento de elevación para cada elemento del lote (predeterminado: 0.0) |
-| `azimuth_batch_increment` | FLOAT | No | -180.0 a 180.0 | El incremento de azimut para cada elemento del lote (predeterminado: 0.0) |
+| `ancho` | INT | No | 16 a MAX_RESOLUTION | El ancho de salida para la imagen procesada (predeterminado: 256, debe ser divisible por 8) |
+| `altura` | INT | No | 16 a MAX_RESOLUTION | La altura de salida para la imagen procesada (predeterminado: 256, debe ser divisible por 8) |
+| `tamaño_del_lote` | INT | No | 1 a 4096 | El número de muestras de condicionamiento a generar en el lote (predeterminado: 1) |
+| `elevación` | FLOAT | No | -180.0 a 180.0 | El ángulo inicial de elevación de la cámara en grados (predeterminado: 0.0) |
+| `acimut` | FLOAT | No | -180.0 a 180.0 | El ángulo inicial de azimut de la cámara en grados (predeterminado: 0.0) |
+| `incremento_de_lote_de_elevación` | FLOAT | No | -180.0 a 180.0 | El incremento de elevación para cada elemento del lote (predeterminado: 0.0) |
+| `incremento_de_lote_de_acimut` | FLOAT | No | -180.0 a 180.0 | El incremento de azimut para cada elemento del lote (predeterminado: 0.0) |
 
 **Nota:** Los parámetros `width` y `height` deben ser divisibles por 8, ya que el nodo divide internamente estas dimensiones entre 8 para la generación del espacio latente.
 
@@ -23,8 +23,8 @@ El nodo `StableZero123_Conditioning_Batched` procesa una imagen de entrada y gen
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | Los datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de cámara |
-| `negative` | CONDITIONING | Los datos de condicionamiento negativo con incrustaciones inicializadas en cero |
+| `negativo` | CONDITIONING | Los datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de cámara |
+| `latente` | CONDITIONING | Los datos de condicionamiento negativo con incrustaciones inicializadas en cero |
 | `latent` | LATENT | La representación latente de la imagen procesada con información de indexación por lotes |
 
 ---

@@ -6,10 +6,10 @@ O nó `ImageInvert` foi projetado para inverter as cores de uma imagem, transfor
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | O parâmetro 'image' representa a imagem de entrada a ser invertida. É essencial para especificar a imagem alvo cujas cores serão invertidas, afetando a execução do nó e o resultado visual do processo de inversão. |
+| `imagem`   | `IMAGE`       | O parâmetro 'image' representa a imagem de entrada a ser invertida. É essencial para especificar a imagem alvo cujas cores serão invertidas, afetando a execução do nó e o resultado visual do processo de inversão. |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `image`   | `IMAGE`       | A saída é uma versão invertida da imagem de entrada, com o valor de cor de cada pixel transformado em sua cor complementar. |
+| `imagem`   | `IMAGE`       | A saída é uma versão invertida da imagem de entrada, com o valor de cor de cada pixel transformado em sua cor complementar. |

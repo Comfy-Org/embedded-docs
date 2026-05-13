@@ -21,9 +21,9 @@ O Refiner pode ser usado de duas maneiras:
 |-------------------|---------------|-----------------|--------------|------------------|-----------|
 | `clip` | CLIP | Obrigatório | - | - | Instância do modelo CLIP usada para tokenização e codificação de texto, o componente central para converter texto em formato compreensível pelo modelo |
 | `ascore` | FLOAT | Opcional | 6.0 | 0.0-1000.0 | Controla a qualidade visual e estética das imagens geradas, similar a definir padrões de qualidade para obras de arte:<br/>- Pontuações altas (7.5-8.5): Busca efeitos mais refinados e ricos em detalhes<br/>- Pontuações médias (6.0-7.0): Controle de qualidade equilibrado<br/>- Pontuações baixas (2.0-3.0): Adequado para prompts negativos |
-| `width` | INT | Obrigatório | 1024 | 64-16384 | Especifica a largura da imagem de saída (pixels), deve ser múltiplo de 8. O SDXL tem melhor desempenho quando a contagem total de pixels é próxima de 1024×1024 (cerca de 1M pixels) |
-| `height` | INT | Obrigatório | 1024 | 64-16384 | Especifica a altura da imagem de saída (pixels), deve ser múltiplo de 8. O SDXL tem melhor desempenho quando a contagem total de pixels é próxima de 1024×1024 (cerca de 1M pixels) |
-| `text` | STRING | Obrigatório | - | - | Descrição do prompt de texto, suporta entrada multilinha e sintaxe de prompt dinâmico. No Refiner, os prompts de texto devem focar mais em descrever a qualidade visual desejada e as características de detalhes |
+| `largura` | INT | Obrigatório | 1024 | 64-16384 | Especifica a largura da imagem de saída (pixels), deve ser múltiplo de 8. O SDXL tem melhor desempenho quando a contagem total de pixels é próxima de 1024×1024 (cerca de 1M pixels) |
+| `altura` | INT | Obrigatório | 1024 | 64-16384 | Especifica a altura da imagem de saída (pixels), deve ser múltiplo de 8. O SDXL tem melhor desempenho quando a contagem total de pixels é próxima de 1024×1024 (cerca de 1M pixels) |
+| `texto` | STRING | Obrigatório | - | - | Descrição do prompt de texto, suporta entrada multilinha e sintaxe de prompt dinâmico. No Refiner, os prompts de texto devem focar mais em descrever a qualidade visual desejada e as características de detalhes |
 
 ## Saídas
 

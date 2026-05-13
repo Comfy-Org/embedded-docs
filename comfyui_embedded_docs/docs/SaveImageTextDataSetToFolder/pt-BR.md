@@ -6,10 +6,10 @@ O nó Salvar Imagem e Dataset de Texto em Pasta salva uma lista de imagens e sua
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `images` | IMAGE | Sim | - | Lista de imagens a serem salvas. |
-| `texts` | STRING | Sim | - | Lista de legendas de texto a serem salvas. |
-| `folder_name` | STRING | Não | - | Nome da pasta para salvar as imagens (dentro do diretório de saída). (padrão: "dataset") |
-| `filename_prefix` | STRING | Não | - | Prefixo para os nomes dos arquivos de imagem salvos. (padrão: "image") |
+| `imagens` | IMAGE | Sim | - | Lista de imagens a serem salvas. |
+| `textos` | STRING | Sim | - | Lista de legendas de texto a serem salvas. |
+| `nome_da_pasta` | STRING | Não | - | Nome da pasta para salvar as imagens (dentro do diretório de saída). (padrão: "dataset") |
+| `prefixo_do_arquivo` | STRING | Não | - | Prefixo para os nomes dos arquivos de imagem salvos. (padrão: "image") |
 
 **Observação:** As entradas `images` e `texts` são listas. O nó espera que o número de legendas de texto corresponda ao número de imagens fornecidas. Cada legenda será salva em um arquivo `.txt` correspondente à sua imagem emparelhada.
 

@@ -6,7 +6,7 @@ O nó Booleano fornece uma maneira simples de passar valores booleanos (verdadei
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `value` | BOOLEAN | Sim | true<br>false | O valor booleano a ser passado pelo nó |
+| `valor` | BOOLEAN | Sim | true<br>false | O valor booleano a ser passado pelo nó |
 
 ## Saídas
 

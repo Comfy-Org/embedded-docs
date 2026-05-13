@@ -6,11 +6,11 @@ Génère des morceaux de musique et des effets sonores de haute qualité à part
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | COMBO | Oui | `"stable-audio-2.5"` | Le modèle de génération audio à utiliser (par défaut : "stable-audio-2.5") |
-| `prompt` | STRING | Oui | - | La description textuelle utilisée pour générer le contenu audio (par défaut : chaîne vide) |
-| `duration` | INT | Non | 1-190 | Contrôle la durée en secondes de l'audio généré (par défaut : 190) |
-| `seed` | INT | Non | 0-4294967294 | La graine aléatoire utilisée pour la génération (par défaut : 0) |
-| `steps` | INT | Non | 4-8 | Contrôle le nombre d'étapes d'échantillonnage (par défaut : 8) |
+| `modèle` | COMBO | Oui | `"stable-audio-2.5"` | Le modèle de génération audio à utiliser (par défaut : "stable-audio-2.5") |
+| `consigne` | STRING | Oui | - | La description textuelle utilisée pour générer le contenu audio (par défaut : chaîne vide) |
+| `durée` | INT | Non | 1-190 | Contrôle la durée en secondes de l'audio généré (par défaut : 190) |
+| `graine` | INT | Non | 0-4294967294 | La graine aléatoire utilisée pour la génération (par défaut : 0) |
+| `étapes` | INT | Non | 4-8 | Contrôle le nombre d'étapes d'échantillonnage (par défaut : 8) |
 
 ## Sorties
 

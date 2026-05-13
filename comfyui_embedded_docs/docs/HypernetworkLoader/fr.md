@@ -8,12 +8,12 @@ Le nœud HypernetworkLoader est conçu pour améliorer ou modifier les capacité
 
 | Champ                | Type Comfy        | Description                                                                                  |
 |----------------------|-------------------|----------------------------------------------------------------------------------------------|
-| `model`              | `MODEL`           | Le modèle de base auquel l'hypernetwork sera appliqué, déterminant l'architecture à améliorer ou modifier. |
-| `hypernetwork_name`  | `COMBO[STRING]`   | Le nom de l'hypernetwork à charger et à appliquer au modèle, influençant le comportement ou les performances modifiés du modèle. |
-| `strength`           | `FLOAT`           | Un scalaire ajustant l'intensité de l'effet de l'hypernetwork sur le modèle, permettant un réglage fin des modifications. |
+| `modèle`              | `MODEL`           | Le modèle de base auquel l'hypernetwork sera appliqué, déterminant l'architecture à améliorer ou modifier. |
+| `nom_hypernetwork`  | `COMBO[STRING]`   | Le nom de l'hypernetwork à charger et à appliquer au modèle, influençant le comportement ou les performances modifiés du modèle. |
+| `force`           | `FLOAT`           | Un scalaire ajustant l'intensité de l'effet de l'hypernetwork sur le modèle, permettant un réglage fin des modifications. |
 
 ## Sorties
 
 | Champ    | Type de données | Description                                                              |
 |----------|-----------------|--------------------------------------------------------------------------|
-| `model`  | `MODEL`         | Le modèle modifié après application de l'hypernetwork, illustrant l'impact de l'hypernetwork sur le modèle d'origine. |
+| `modèle`  | `MODEL`         | Le modèle modifié après application de l'hypernetwork, illustrant l'impact de l'hypernetwork sur le modèle d'origine. |

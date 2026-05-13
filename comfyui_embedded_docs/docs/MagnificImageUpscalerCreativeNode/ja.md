@@ -6,16 +6,16 @@
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | はい | - | アップスケールおよび強化する入力画像。 |
-| `prompt` | STRING | いいえ | - | 画像の創造的強化をガイドするテキスト説明。これはオプションです（デフォルト：空）。 |
-| `scale_factor` | COMBO | はい | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | 画像の寸法をアップスケールする倍率。 |
-| `optimized_for` | COMBO | はい | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | 強化プロセスを最適化するスタイルまたはコンテンツタイプ。 |
-| `creativity` | INT | いいえ | -10 ～ 10 | 画像に適用される創造的解釈のレベルを制御します（デフォルト：0）。 |
-| `hdr` | INT | いいえ | -10 ～ 10 | ディテールの鮮明度と精細さのレベル（デフォルト：0）。 |
-| `resemblance` | INT | いいえ | -10 ～ 10 | 元画像との類似性のレベル（デフォルト：0）。 |
-| `fractality` | INT | いいえ | -10 ～ 10 | プロンプトの強さと1平方ピクセルあたりの複雑さ（デフォルト：0）。 |
-| `engine` | COMBO | はい | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | 処理に使用する特定のAIエンジン。これは高度なパラメータです。 |
-| `auto_downscale` | BOOLEAN | いいえ | - | 有効にすると、要求されたアップスケールが最大許容出力サイズ（25.3メガピクセル）を超える場合、ノードは自動的に入力画像をダウンスケールします。これは高度なパラメータです（デフォルト：False）。 |
+| `画像` | IMAGE | はい | - | アップスケールおよび強化する入力画像。 |
+| `プロンプト` | STRING | いいえ | - | 画像の創造的強化をガイドするテキスト説明。これはオプションです（デフォルト：空）。 |
+| `拡大倍率` | COMBO | はい | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | 画像の寸法をアップスケールする倍率。 |
+| `最適化対象` | COMBO | はい | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | 強化プロセスを最適化するスタイルまたはコンテンツタイプ。 |
+| `クリエイティビティ` | INT | いいえ | -10 ～ 10 | 画像に適用される創造的解釈のレベルを制御します（デフォルト：0）。 |
+| `HDR` | INT | いいえ | -10 ～ 10 | ディテールの鮮明度と精細さのレベル（デフォルト：0）。 |
+| `類似度` | INT | いいえ | -10 ～ 10 | 元画像との類似性のレベル（デフォルト：0）。 |
+| `フラクタリティ` | INT | いいえ | -10 ～ 10 | プロンプトの強さと1平方ピクセルあたりの複雑さ（デフォルト：0）。 |
+| `エンジン` | COMBO | はい | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | 処理に使用する特定のAIエンジン。これは高度なパラメータです。 |
+| `自動ダウンスケール` | BOOLEAN | いいえ | - | 有効にすると、要求されたアップスケールが最大許容出力サイズ（25.3メガピクセル）を超える場合、ノードは自動的に入力画像をダウンスケールします。これは高度なパラメータです（デフォルト：False）。 |
 
 **制約事項：**
 
@@ -28,7 +28,7 @@
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `image` | IMAGE | 創造的に強化され、アップスケールされた出力画像。 |
+| `画像` | IMAGE | 創造的に強化され、アップスケールされた出力画像。 |
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

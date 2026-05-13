@@ -7,11 +7,11 @@ Este nó foi projetado para modificar as informações de condicionamento, defin
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
 | `CONDITIONING` | CONDITIONING | Os dados de condicionamento a serem modificados. Servem como base para aplicar ajustes espaciais. |
-| `width`   | `INT`      | Especifica a largura da área a ser definida dentro do contexto de condicionamento, influenciando o escopo horizontal do ajuste. |
-| `height`  | `INT`      | Determina a altura da área a ser definida, afetando a extensão vertical da modificação do condicionamento. |
+| `largura`   | `INT`      | Especifica a largura da área a ser definida dentro do contexto de condicionamento, influenciando o escopo horizontal do ajuste. |
+| `altura`  | `INT`      | Determina a altura da área a ser definida, afetando a extensão vertical da modificação do condicionamento. |
 | `x`       | `INT`      | O ponto de partida horizontal da área a ser definida, posicionando o ajuste dentro do contexto de condicionamento. |
 | `y`       | `INT`      | O ponto de partida vertical para o ajuste da área, estabelecendo sua posição dentro do contexto de condicionamento. |
-| `strength`| `FLOAT`    | Define a intensidade da modificação do condicionamento dentro da área especificada, permitindo controle sutil sobre o impacto do ajuste. |
+| `força`| `FLOAT`    | Define a intensidade da modificação do condicionamento dentro da área especificada, permitindo controle sutil sobre o impacto do ajuste. |
 
 ## Saídas
 

@@ -30,9 +30,9 @@
 
 | 输出名称 | 数据类型 | 描述 |
 | :--- | :--- | :--- |
-| `model_file` | STRING | 生成的 GLB 模型的文件名。此输出提供用于向后兼容。 |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy API 任务的唯一标识符。 |
-| `GLB` | FILE3DGLB | 以 GLB 格式生成的 3D 模型。 |
+| `meshy_task_id` | STRING | 生成的 GLB 模型的文件名。此输出提供用于向后兼容。 |
+| `GLB` | MESHY_TASK_ID | Meshy API 任务的唯一标识符。 |
+| `FBX` | FILE3DGLB | 以 GLB 格式生成的 3D 模型。 |
 | `FBX` | FILE3DFBX | 以 FBX 格式生成的 3D 模型。 |
 
 ---

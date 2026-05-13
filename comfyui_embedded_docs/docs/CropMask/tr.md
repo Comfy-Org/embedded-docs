@@ -6,14 +6,14 @@ CropMask düğümü, belirli bir maskeden belirtilen alanı kırpmak için tasar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | Maske girişi, kırpılacak maske görüntüsünü temsil eder. Belirtilen koordinatlara ve boyutlara göre çıkarılacak alanı tanımlamak için gereklidir. |
+| `maske`    | MASK        | Maske girişi, kırpılacak maske görüntüsünü temsil eder. Belirtilen koordinatlara ve boyutlara göre çıkarılacak alanı tanımlamak için gereklidir. |
 | `x`       | INT         | x koordinatı, kırpma işleminin başlaması gereken yatay eksendeki başlangıç noktasını belirtir. |
 | `y`       | INT         | y koordinatı, kırpma işlemi için dikey eksendeki başlangıç noktasını belirler. |
-| `width`   | INT         | Genişlik, başlangıç noktasından itibaren kırpma alanının yatay kapsamını tanımlar. |
-| `height`  | INT         | Yükseklik, başlangıç noktasından itibaren kırpma alanının dikey kapsamını belirtir. |
+| `genişlik`   | INT         | Genişlik, başlangıç noktasından itibaren kırpma alanının yatay kapsamını tanımlar. |
+| `yükseklik`  | INT         | Yükseklik, başlangıç noktasından itibaren kırpma alanının dikey kapsamını belirtir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | Çıktı, belirtilen koordinatlar ve boyutlar tarafından tanımlanan orijinal maskenin bir kısmı olan kırpılmış maskedir. |
+| `maske`    | MASK        | Çıktı, belirtilen koordinatlar ve boyutlar tarafından tanımlanan orijinal maskenin bir kısmı olan kırpılmış maskedir. |

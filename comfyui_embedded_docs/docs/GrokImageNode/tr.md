@@ -7,11 +7,11 @@ Grok Görsel düğümü, Grok AI modelini kullanarak bir metin açıklamasına d
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"grok-imagine-image-quality"`<br>`"grok-imagine-image-pro"`<br>`"grok-imagine-image"`<br>`"grok-imagine-image-beta"` | Görsel oluşturma için kullanılacak belirli Grok modeli. Farklı modeller farklı kalite, hız veya özellikler sunabilir. |
-| `prompt` | STRING | Evet | Yok | Görseli oluşturmak için kullanılan metin istemi. Bu açıklama, yapay zekaya ne oluşturacağı konusunda rehberlik eder. En az 1 karakter uzunluğunda olmalıdır. |
-| `aspect_ratio` | COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | Oluşturulan görsel için istenen genişlik-yükseklik oranı. |
-| `number_of_images` | INT | Hayır | 1 ila 10 | Oluşturulacak görsel sayısı (varsayılan: 1). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen bir tohum değeri. Gerçek görsel sonuçları belirleyici değildir ve aynı tohumla bile farklılık gösterecektir (varsayılan: 0). |
-| `resolution` | COMBO | Hayır | `"1K"`<br>`"2K"` | Oluşturulan görseller için istenen çıktı çözünürlüğü (varsayılan: "1K"). |
+| `istem` | STRING | Evet | Yok | Görseli oluşturmak için kullanılan metin istemi. Bu açıklama, yapay zekaya ne oluşturacağı konusunda rehberlik eder. En az 1 karakter uzunluğunda olmalıdır. |
+| `en boy oranı` | COMBO | Evet | `"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"9:16"`<br>`"16:9"`<br>`"9:19.5"`<br>`"19.5:9"`<br>`"9:20"`<br>`"20:9"`<br>`"1:2"`<br>`"2:1"` | Oluşturulan görsel için istenen genişlik-yükseklik oranı. |
+| `görüntü sayısı` | INT | Hayır | 1 ila 10 | Oluşturulacak görsel sayısı (varsayılan: 1). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen bir tohum değeri. Gerçek görsel sonuçları belirleyici değildir ve aynı tohumla bile farklılık gösterecektir (varsayılan: 0). |
+| `çözünürlük` | COMBO | Hayır | `"1K"`<br>`"2K"` | Oluşturulan görseller için istenen çıktı çözünürlüğü (varsayılan: "1K"). |
 
 **Not:** `seed` parametresi öncelikle düğümün bir iş akışı içinde ne zaman yeniden yürütüleceğini kontrol etmek için kullanılır. Harici AI servisinin doğası gereği, oluşturulan görseller aynı tohumla bile çalıştırmalar arasında tekrarlanabilir veya aynı olmayacaktır.
 
@@ -21,7 +21,7 @@ Grok Görsel düğümü, Grok AI modelini kullanarak bir metin açıklamasına d
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | IMAGE | Oluşturulan görsel veya bir grup görsel. `number_of_images` değeri 1 ise tek bir görsel tensörü döndürülür. 1'den büyükse bir grup görsel tensörü döndürülür. |
+| `output` | IMAGE | Oluşturulan görsel veya bir grup görsel. `görüntü sayısı` değeri 1 ise tek bir görsel tensörü döndürülür. 1'den büyükse bir grup görsel tensörü döndürülür. |
 
 ---
 **Source fingerprint (SHA-256):** `5c8a76d3636dea8bcc6ade0d8adb6e6d1610b518a31e15fc7fce3f107fe63953`

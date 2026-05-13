@@ -6,10 +6,10 @@ Este nodo convierte una representación de audio comprimida (muestras latentes) 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `samples` | LATENT | Sí | N/A | La representación latente comprimida del audio que se va a decodificar. |
+| `muestras` | LATENT | Sí | N/A | La representación latente comprimida del audio que se va a decodificar. |
 | `vae` | VAE | Sí | N/A | El modelo de Autoencoder Variacional utilizado para realizar la decodificación. |
-| `tile_size` | INT | Sí | 32 a 8192 | El tamaño de cada tesela de procesamiento. El audio se decodifica en secciones de esta longitud para conservar memoria (predeterminado: 512). |
-| `overlap` | INT | Sí | 0 a 1024 | El número de muestras en las que se superponen las teselas adyacentes. Esto ayuda a reducir los artefactos en los límites entre teselas (predeterminado: 64). |
+| `tamaño_de_mosaico` | INT | Sí | 32 a 8192 | El tamaño de cada tesela de procesamiento. El audio se decodifica en secciones de esta longitud para conservar memoria (predeterminado: 512). |
+| `superposición` | INT | Sí | 0 a 1024 | El número de muestras en las que se superponen las teselas adyacentes. Esto ayuda a reducir los artefactos en los límites entre teselas (predeterminado: 64). |
 
 ## Salidas
 

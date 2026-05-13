@@ -13,8 +13,8 @@ Ce nœud applique une animation spécifique à un modèle de personnage 3D déj�
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model_file` | STRING | Un identifiant textuel pour le modèle animé. Cette sortie est fournie uniquement pour des raisons de compatibilité ascendante. |
-| `GLB` | FILE3DGLB | Le fichier du modèle 3D animé au format GLB. |
+| `GLB` | STRING | Un identifiant textuel pour le modèle animé. Cette sortie est fournie uniquement pour des raisons de compatibilité ascendante. |
+| `FBX` | FILE3DGLB | Le fichier du modèle 3D animé au format GLB. |
 | `FBX` | FILE3DFBX | Le fichier du modèle 3D animé au format FBX. |
 
 ---

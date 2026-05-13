@@ -7,8 +7,8 @@ O nó SaveLoRA salva um modelo LoRA (Adaptação de Baixa Classificação) em um
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `lora` | LORA_MODEL | Sim | N/A | O modelo LoRA a ser salvo. Não use o modelo com camadas LoRA. |
-| `prefix` | STRING | Sim | N/A | O prefixo a ser usado para o arquivo LoRA salvo (padrão: "loras/ComfyUI_trained_lora"). |
-| `steps` | INT | Não | N/A | Opcional: O número de etapas em que o LoRA foi treinado, usado para nomear o arquivo salvo. |
+| `prefixo` | STRING | Sim | N/A | O prefixo a ser usado para o arquivo LoRA salvo (padrão: "loras/ComfyUI_trained_lora"). |
+| `etapas` | INT | Não | N/A | Opcional: O número de etapas em que o LoRA foi treinado, usado para nomear o arquivo salvo. |
 
 **Observação:** A entrada `lora` deve ser um modelo LoRA puro. Não forneça um modelo base que tenha camadas LoRA aplicadas a ele.
 

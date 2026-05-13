@@ -6,7 +6,7 @@ El nodo ModelPatchLoader carga parches de modelo especializados desde la carpeta
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `name` | STRING | Sí | Todos los archivos de parche de modelo disponibles en la carpeta model_patches | El nombre del archivo de parche de modelo a cargar desde el directorio model_patches |
+| `nombre` | STRING | Sí | Todos los archivos de parche de modelo disponibles en la carpeta model_patches | El nombre del archivo de parche de modelo a cargar desde el directorio model_patches |
 
 ## Salidas
 

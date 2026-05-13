@@ -7,11 +7,11 @@ Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
 | `CONDITIONING` | CONDITIONING | Représente les éléments de conditionnement à modifier, servant de base pour appliquer les ajustements de zone et de force. |
-| `width`   | `FLOAT`         | Spécifie la largeur de la zone en pourcentage de la largeur totale de l'image, influençant l'étendue horizontale de l'effet de conditionnement. |
-| `height`  | `FLOAT`         | Détermine la hauteur de la zone en pourcentage de la hauteur totale de l'image, affectant l'étendue verticale de l'influence du conditionnement. |
+| `largeur`   | `FLOAT`         | Spécifie la largeur de la zone en pourcentage de la largeur totale de l'image, influençant l'étendue horizontale de l'effet de conditionnement. |
+| `hauteur`  | `FLOAT`         | Détermine la hauteur de la zone en pourcentage de la hauteur totale de l'image, affectant l'étendue verticale de l'influence du conditionnement. |
 | `x`       | `FLOAT`         | Indique le point de départ horizontal de la zone en pourcentage de la largeur totale de l'image, positionnant l'effet de conditionnement. |
 | `y`       | `FLOAT`         | Spécifie le point de départ vertical de la zone en pourcentage de la hauteur totale de l'image, positionnant l'effet de conditionnement. |
-| `strength`| `FLOAT`         | Contrôle l'intensité de l'effet de conditionnement dans la zone spécifiée, permettant un réglage fin de son impact. |
+| `force`| `FLOAT`         | Contrôle l'intensité de l'effet de conditionnement dans la zone spécifiée, permettant un réglage fin de son impact. |
 
 ## Sorties
 

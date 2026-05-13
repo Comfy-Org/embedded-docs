@@ -6,18 +6,18 @@ Tripo'nun API'sini kullanarak bir metin istemine dayalı olarak eşzamanlı 3B m
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `prompt` | STRING | Evet | - | 3B modelin oluşturulması için metin açıklaması (çok satırlı giriş) |
-| `negative_prompt` | STRING | Hayır | - | Oluşturulan modelde istenmeyen özelliklerin metin açıklaması (çok satırlı giriş) |
-| `model_version` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturma için kullanılacak Tripo modelinin sürümü (varsayılan: v2.5-20250123) |
-| `style` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturulan model için stil ayarı (varsayılan: "Yok") |
-| `texture` | BOOLEAN | Hayır | - | Model için doku oluşturulup oluşturulmayacağı (varsayılan: Doğru) |
+| `istek` | STRING | Evet | - | 3B modelin oluşturulması için metin açıklaması (çok satırlı giriş) |
+| `olumsuz_istek` | STRING | Hayır | - | Oluşturulan modelde istenmeyen özelliklerin metin açıklaması (çok satırlı giriş) |
+| `model_versiyonu` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturma için kullanılacak Tripo modelinin sürümü (varsayılan: v2.5-20250123) |
+| `stil` | COMBO | Hayır | Birden çok seçenek mevcut | Oluşturulan model için stil ayarı (varsayılan: "Yok") |
+| `doku` | BOOLEAN | Hayır | - | Model için doku oluşturulup oluşturulmayacağı (varsayılan: Doğru) |
 | `pbr` | BOOLEAN | Hayır | - | PBR (Fizik Tabanlı İşleme) malzemelerinin oluşturulup oluşturulmayacağı (varsayılan: Doğru) |
-| `image_seed` | INT | Hayır | - | Görüntü oluşturma için rastgele tohum değeri (varsayılan: 42) |
-| `model_seed` | INT | Hayır | - | Model oluşturma için rastgele tohum değeri (varsayılan: 42) |
-| `texture_seed` | INT | Hayır | - | Doku oluşturma için rastgele tohum değeri (varsayılan: 42) |
-| `texture_quality` | COMBO | Hayır | "standart"<br>"detaylı" | Doku oluşturma için kalite seviyesi (varsayılan: "standart") |
-| `face_limit` | INT | Hayır | -1 ila 2000000 | Oluşturulan modeldeki maksimum yüz sayısı, sınırsız için -1 (varsayılan: -1) |
-| `quad` | BOOLEAN | Hayır | - | Üçgenler yerine dörtgen tabanlı geometri oluşturulup oluşturulmayacağı (varsayılan: Yanlış) |
+| `görüntü_tohumu` | INT | Hayır | - | Görüntü oluşturma için rastgele tohum değeri (varsayılan: 42) |
+| `model_tohumu` | INT | Hayır | - | Model oluşturma için rastgele tohum değeri (varsayılan: 42) |
+| `doku_tohumu` | INT | Hayır | - | Doku oluşturma için rastgele tohum değeri (varsayılan: 42) |
+| `doku_kalitesi` | COMBO | Hayır | "standart"<br>"detaylı" | Doku oluşturma için kalite seviyesi (varsayılan: "standart") |
+| `yüz_sınırı` | INT | Hayır | -1 ila 2000000 | Oluşturulan modeldeki maksimum yüz sayısı, sınırsız için -1 (varsayılan: -1) |
+| `dörtgen` | BOOLEAN | Hayır | - | Üçgenler yerine dörtgen tabanlı geometri oluşturulup oluşturulmayacağı (varsayılan: Yanlış) |
 | `geometry_quality` | COMBO | Hayır | "standart"<br>"detaylı" | Geometri oluşturma için kalite seviyesi (varsayılan: "standart") |
 
 **Not:** `prompt` parametresi zorunludur ve boş olamaz. İstem sağlanmazsa, düğüm bir hata verecektir.
@@ -26,8 +26,8 @@ Tripo'nun API'sini kullanarak bir metin istemine dayalı olarak eşzamanlı 3B m
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `model_file` | STRING | Oluşturulan 3B model dosyası (yalnızca geriye dönük uyumluluk için) |
-| `model task_id` | MODEL_TASK_ID | Model oluşturma süreci için benzersiz görev tanımlayıcısı |
+| `model_görev_id` | STRING | Oluşturulan 3B model dosyası (yalnızca geriye dönük uyumluluk için) |
+| `GLB` | MODEL_TASK_ID | Model oluşturma süreci için benzersiz görev tanımlayıcısı |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan 3B model |
 
 ---

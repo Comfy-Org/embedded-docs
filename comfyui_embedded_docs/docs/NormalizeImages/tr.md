@@ -7,7 +7,7 @@ Bu düğüm, bir giriş görüntüsünün piksel değerlerini matematiksel bir n
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `image` | IMAGE | Evet | - | Normalleştirilecek giriş görüntüsü. |
-| `mean` | FLOAT | Hayır | 0.0 - 1.0 | Normalleştirme için ortalama değeri (varsayılan: 0.5). |
+| `ortalama` | FLOAT | Hayır | 0.0 - 1.0 | Normalleştirme için ortalama değeri (varsayılan: 0.5). |
 | `std` | FLOAT | Hayır | 0.001 - 1.0 | Normalleştirme için standart sapma (varsayılan: 0.5). |
 
 ## Çıktılar

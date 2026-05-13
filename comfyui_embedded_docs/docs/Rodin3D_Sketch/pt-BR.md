@@ -6,8 +6,8 @@ Este nó gera ativos 3D usando a API Rodin. Ele recebe imagens de entrada e as c
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `Images` | IMAGE | Sim | - | Imagens de entrada a serem convertidas em modelos 3D. Várias imagens podem ser fornecidas. |
-| `Seed` | INT | Não | 0-65535 | Valor de semente aleatória para geração (padrão: 0). Defina como 0 para semente aleatória. |
+| `Imagens` | IMAGE | Sim | - | Imagens de entrada a serem convertidas em modelos 3D. Várias imagens podem ser fornecidas. |
+| `Semente` | INT | Não | 0-65535 | Valor de semente aleatória para geração (padrão: 0). Defina como 0 para semente aleatória. |
 
 ## Saídas
 

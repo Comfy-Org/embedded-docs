@@ -6,9 +6,9 @@ O nó SolidMask gera uma máscara uniforme com um valor especificado em toda a s
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
-| `value`   | FLOAT         | Especifica o valor de intensidade da máscara, afetando sua aparência geral e utilidade em operações subsequentes. |
-| `width`   | INT           | Determina a largura da máscara gerada, influenciando diretamente seu tamanho e proporção. |
-| `height`  | INT           | Define a altura da máscara gerada, afetando seu tamanho e proporção. |
+| `valor`   | FLOAT         | Especifica o valor de intensidade da máscara, afetando sua aparência geral e utilidade em operações subsequentes. |
+| `largura`   | INT           | Determina a largura da máscara gerada, influenciando diretamente seu tamanho e proporção. |
+| `altura`  | INT           | Define a altura da máscara gerada, afetando seu tamanho e proporção. |
 
 ## Saídas
 

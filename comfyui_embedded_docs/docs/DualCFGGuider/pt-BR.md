@@ -6,13 +6,13 @@ O nó DualCFGGuider cria um sistema de orientação para amostragem dupla com or
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo a ser usado para orientação |
+| `modelo` | MODEL | Sim | - | O modelo a ser usado para orientação |
 | `cond1` | CONDITIONING | Sim | - | A primeira entrada de condicionamento positivo |
 | `cond2` | CONDITIONING | Sim | - | A segunda entrada de condicionamento positivo |
-| `negative` | CONDITIONING | Sim | - | A entrada de condicionamento negativo |
+| `negativo` | CONDITIONING | Sim | - | A entrada de condicionamento negativo |
 | `cfg_conds` | FLOAT | Sim | 0.0 - 100.0 | Escala de orientação para o primeiro condicionamento positivo (padrão: 8.0) |
-| `cfg_cond2_negative` | FLOAT | Sim | 0.0 - 100.0 | Escala de orientação para o segundo condicionamento positivo e negativo (padrão: 8.0) |
-| `style` | COMBO | Sim | "regular"<br>"nested" | O estilo de orientação a ser aplicado (padrão: "regular"). Quando definido como "nested", a orientação é aplicada de forma aninhada |
+| `cfg_cond2_negativo` | FLOAT | Sim | 0.0 - 100.0 | Escala de orientação para o segundo condicionamento positivo e negativo (padrão: 8.0) |
+| `estilo` | COMBO | Sim | "regular"<br>"nested" | O estilo de orientação a ser aplicado (padrão: "regular"). Quando definido como "nested", a orientação é aplicada de forma aninhada |
 
 ## Saídas
 

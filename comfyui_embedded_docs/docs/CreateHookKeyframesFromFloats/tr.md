@@ -6,11 +6,11 @@ Bu düğüm, belirtilen başlangıç ve bitiş yüzdeleri arasında eşit olarak
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `floats_strength` | FLOATS | Evet | -1 ila ∞ | Anahtar kareler için güç değerlerini temsil eden tek bir kayan nokta değeri veya kayan nokta değerleri listesi (varsayılan: -1) |
-| `start_percent` | FLOAT | Evet | 0,0 ila 1,0 | Zaman çizelgesindeki ilk anahtar kare için başlangıç yüzde konumu (varsayılan: 0,0) |
-| `end_percent` | FLOAT | Evet | 0,0 ila 1,0 | Zaman çizelgesindeki son anahtar kare için bitiş yüzde konumu (varsayılan: 1,0) |
-| `print_keyframes` | BOOLEAN | Evet | Doğru/Yanlış | Etkinleştirildiğinde, oluşturulan anahtar kare bilgilerini konsola yazdırır (varsayılan: Yanlış) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Hayır | - | Yeni anahtar karelerin ekleneceği mevcut bir kanca anahtar kare grubu; sağlanmazsa yeni bir grup oluşturur |
+| `ondalık_güç` | FLOATS | Evet | -1 ila ∞ | Anahtar kareler için güç değerlerini temsil eden tek bir kayan nokta değeri veya kayan nokta değerleri listesi (varsayılan: -1) |
+| `başlangıç_yüzdesi` | FLOAT | Evet | 0,0 ila 1,0 | Zaman çizelgesindeki ilk anahtar kare için başlangıç yüzde konumu (varsayılan: 0,0) |
+| `bitiş_yüzdesi` | FLOAT | Evet | 0,0 ila 1,0 | Zaman çizelgesindeki son anahtar kare için bitiş yüzde konumu (varsayılan: 1,0) |
+| `anahtar_kareleri_yazdır` | BOOLEAN | Evet | Doğru/Yanlış | Etkinleştirildiğinde, oluşturulan anahtar kare bilgilerini konsola yazdırır (varsayılan: Yanlış) |
+| `önceki_kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Yeni anahtar karelerin ekleneceği mevcut bir kanca anahtar kare grubu; sağlanmazsa yeni bir grup oluşturur |
 
 **Not:** `floats_strength` parametresi tek bir kayan nokta değerini veya yinelenebilir bir kayan nokta listesini kabul eder. Anahtar kareler, sağlanan güç değerlerinin sayısına bağlı olarak `start_percent` ve `end_percent` arasında doğrusal olarak dağıtılır. İlk anahtar karenin uygulanmasını sağlamak için en az bir adıma sahip olması garanti edilir.
 

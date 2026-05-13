@@ -7,8 +7,8 @@ Merkezi Kırpma Görselleri düğümü, bir görseli merkezinden belirtilen geni
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
 | `image` | IMAGE | Evet | - | Kırpılacak giriş görseli. |
-| `width` | INT | Evet | 1 ila 8192 | Kırpma alanının genişliği (varsayılan: 512). |
-| `height` | INT | Evet | 1 ila 8192 | Kırpma alanının yüksekliği (varsayılan: 512). |
+| `genişlik` | INT | Evet | 1 ila 8192 | Kırpma alanının genişliği (varsayılan: 512). |
+| `yükseklik` | INT | Evet | 1 ila 8192 | Kırpma alanının yüksekliği (varsayılan: 512). |
 
 ## Çıkışlar
 

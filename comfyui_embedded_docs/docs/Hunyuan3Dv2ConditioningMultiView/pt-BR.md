@@ -6,10 +6,10 @@ O nó **Hunyuan3Dv2ConditioningMultiView** processa embeddings de visão CLIP mu
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `front` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista frontal |
-| `left` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista esquerda |
-| `back` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista traseira |
-| `right` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista direita |
+| `frente` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista frontal |
+| `esquerda` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista esquerda |
+| `trás` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista traseira |
+| `direita` | CLIP_VISION_OUTPUT | Não | - | Saída de visão CLIP para a vista direita |
 
 **Observação:** Pelo menos uma entrada de vista deve ser fornecida para que o nó funcione. O nó processará apenas as vistas que contiverem dados válidos de saída de visão CLIP.
 

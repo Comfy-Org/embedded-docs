@@ -8,8 +8,8 @@ Seleciona objetos rastreados específicos de uma sessão de rastreamento SAM3 po
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `track_data` | SAM3TRACKDATA | Sim | N/A | Os dados de rastreamento gerados por um nó rastreador SAM3, contendo as máscaras empacotadas e o tamanho original da imagem. |
-| `object_indices` | STRING | Não | Qualquer lista de inteiros separados por vírgula | Índices de objetos separados por vírgula para incluir na máscara de saída (ex.: '0,2,3'). Se deixado vazio, todos os objetos rastreados são incluídos. |
+| `dados_de_rastreamento` | SAM3TRACKDATA | Sim | N/A | Os dados de rastreamento gerados por um nó rastreador SAM3, contendo as máscaras empacotadas e o tamanho original da imagem. |
+| `índices_de_objetos` | STRING | Não | Qualquer lista de inteiros separados por vírgula | Índices de objetos separados por vírgula para incluir na máscara de saída (ex.: '0,2,3'). Se deixado vazio, todos os objetos rastreados são incluídos. |
 
 ## Saídas
 

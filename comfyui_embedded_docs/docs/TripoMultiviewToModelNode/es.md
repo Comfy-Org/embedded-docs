@@ -6,20 +6,20 @@ Este nodo genera modelos 3D de forma síncrona utilizando la API de Tripo, proce
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | Imagen de la vista frontal del objeto (obligatoria) |
-| `image_left` | IMAGE | No | - | Imagen de la vista izquierda del objeto |
-| `image_back` | IMAGE | No | - | Imagen de la vista trasera del objeto |
-| `image_right` | IMAGE | No | - | Imagen de la vista derecha del objeto |
-| `model_version` | COMBO | No | Múltiples opciones disponibles | Versión del modelo a utilizar para la generación |
-| `orientation` | COMBO | No | Múltiples opciones disponibles | Configuración de orientación para el modelo 3D (predeterminado: "default") |
-| `texture` | BOOLEAN | No | - | Si se deben generar texturas para el modelo (predeterminado: True) |
+| `imagen` | IMAGE | Sí | - | Imagen de la vista frontal del objeto (obligatoria) |
+| `imagen_izquierda` | IMAGE | No | - | Imagen de la vista izquierda del objeto |
+| `imagen_posterior` | IMAGE | No | - | Imagen de la vista trasera del objeto |
+| `imagen_derecha` | IMAGE | No | - | Imagen de la vista derecha del objeto |
+| `versión_del_modelo` | COMBO | No | Múltiples opciones disponibles | Versión del modelo a utilizar para la generación |
+| `orientación` | COMBO | No | Múltiples opciones disponibles | Configuración de orientación para el modelo 3D (predeterminado: "default") |
+| `textura` | BOOLEAN | No | - | Si se deben generar texturas para el modelo (predeterminado: True) |
 | `pbr` | BOOLEAN | No | - | Si se deben generar materiales PBR (renderizado basado en física) (predeterminado: True) |
-| `model_seed` | INT | No | - | Semilla aleatoria para la generación del modelo (predeterminado: 42) |
-| `texture_seed` | INT | No | - | Semilla aleatoria para la generación de texturas (predeterminado: 42) |
-| `texture_quality` | COMBO | No | `"standard"`<br>`"detailed"` | Nivel de calidad para la generación de texturas (predeterminado: "standard") |
-| `texture_alignment` | COMBO | No | `"original_image"`<br>`"geometry"` | Método para alinear texturas al modelo (predeterminado: "original_image") |
-| `face_limit` | INT | No | -1 a 500000 | Número máximo de caras en el modelo generado. Establecer en -1 para sin límite (predeterminado: -1) |
-| `quad` | BOOLEAN | No | - | Este parámetro está obsoleto y no tiene efecto (predeterminado: False) |
+| `semilla_del_modelo` | INT | No | - | Semilla aleatoria para la generación del modelo (predeterminado: 42) |
+| `semilla_de_textura` | INT | No | - | Semilla aleatoria para la generación de texturas (predeterminado: 42) |
+| `calidad_de_textura` | COMBO | No | `"standard"`<br>`"detailed"` | Nivel de calidad para la generación de texturas (predeterminado: "standard") |
+| `alineación_de_textura` | COMBO | No | `"original_image"`<br>`"geometry"` | Método para alinear texturas al modelo (predeterminado: "original_image") |
+| `límite_de_caras` | INT | No | -1 a 500000 | Número máximo de caras en el modelo generado. Establecer en -1 para sin límite (predeterminado: -1) |
+| `cuadrilátero` | BOOLEAN | No | - | Este parámetro está obsoleto y no tiene efecto (predeterminado: False) |
 | `geometry_quality` | COMBO | No | `"standard"`<br>`"detailed"` | Nivel de calidad para la generación de geometría (predeterminado: "standard") |
 
 **Nota:** La imagen frontal (`image`) siempre es obligatoria. Se debe proporcionar al menos una imagen de vista adicional (`image_left`, `image_back` o `image_right`) para el procesamiento multivista.
@@ -28,8 +28,8 @@ Este nodo genera modelos 3D de forma síncrona utilizando la API de Tripo, proce
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `model_file` | STRING | Ruta de archivo o identificador del modelo 3D generado (solo para compatibilidad hacia atrás) |
-| `model task_id` | MODEL_TASK_ID | Identificador de tarea para rastrear el proceso de generación del modelo |
+| `id_de_tarea_de_modelo` | STRING | Ruta de archivo o identificador del modelo 3D generado (solo para compatibilidad hacia atrás) |
+| `GLB` | MODEL_TASK_ID | Identificador de tarea para rastrear el proceso de generación del modelo |
 | `GLB` | FILE3DGLB | Archivo del modelo 3D generado en formato GLB |
 
 ---

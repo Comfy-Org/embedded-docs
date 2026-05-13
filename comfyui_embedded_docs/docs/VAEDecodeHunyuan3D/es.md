@@ -6,10 +6,10 @@ El nodo VAEDecodeHunyuan3D convierte representaciones latentes en datos de vóxe
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `samples` | LATENT | Sí | - | La representación latente que se decodificará en datos de vóxeles 3D |
+| `muestras` | LATENT | Sí | - | La representación latente que se decodificará en datos de vóxeles 3D |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para decodificar las muestras latentes |
 | `num_chunks` | INT | Sí | 1000-500000 | Número de fragmentos en los que dividir el procesamiento para la gestión de memoria (predeterminado: 8000) |
-| `octree_resolution` | INT | Sí | 16-512 | Resolución de la estructura de octree utilizada para la generación de vóxeles 3D (predeterminado: 256) |
+| `resolución_octree` | INT | Sí | 16-512 | Resolución de la estructura de octree utilizada para la generación de vóxeles 3D (predeterminado: 256) |
 
 ## Salidas
 

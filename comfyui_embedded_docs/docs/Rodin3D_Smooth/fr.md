@@ -11,15 +11,15 @@ Le nœud Rodin 3D Smooth génère des actifs 3D en utilisant l'API Rodin, en tra
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `Images` | IMAGE | Oui | - | Images d'entrée à utiliser pour la génération du modèle 3D. Plusieurs images peuvent être fournies. |
-| `Seed` | INT | Oui | - | Valeur de graine aléatoire pour la cohérence de la génération. |
-| `Material_Type` | STRING | Oui | - | Type de matériau à appliquer au modèle 3D. |
-| `Polygon_count` | STRING | Oui | - | Nombre de polygones cible pour le modèle 3D généré. Détermine la qualité du maillage et le niveau de détail. |
+| `Graine` | INT | Oui | - | Valeur de graine aléatoire pour la cohérence de la génération. |
+| `Type de matériau` | STRING | Oui | - | Type de matériau à appliquer au modèle 3D. |
+| `Nombre de polygones` | STRING | Oui | - | Nombre de polygones cible pour le modèle 3D généré. Détermine la qualité du maillage et le niveau de détail. |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `3D Model Path` | STRING | Chemin d'accès au fichier du modèle 3D téléchargé (uniquement pour la rétrocompatibilité). |
+| `GLB` | STRING | Chemin d'accès au fichier du modèle 3D téléchargé (uniquement pour la rétrocompatibilité). |
 | `GLB` | FILE3DGLB | Le modèle 3D généré au format GLB. |
 
 ---

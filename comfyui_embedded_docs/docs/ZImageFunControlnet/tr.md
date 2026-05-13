@@ -9,9 +9,9 @@ ZImageFunControlnet düğümü, görüntü oluşturma veya düzenleme sürecini 
 | `model` | MODEL | Evet | - | Oluşturma sürecinde kullanılan temel model. |
 | `model_patch` | MODEL_PATCH | Evet | - | Kontrol ağının yönlendirmesini uygulayan özelleştirilmiş bir yama modeli. |
 | `vae` | VAE | Evet | - | Görüntüleri kodlamak ve kodunu çözmek için kullanılan Varyasyonel Otomatik Kodlayıcı. |
-| `strength` | FLOAT | Evet | -10,0 ila 10,0 | Kontrol ağının etkisinin gücü. Pozitif değerler etkiyi uygularken, negatif değerler etkiyi tersine çevirebilir (varsayılan: 1,0). |
-| `image` | IMAGE | Hayır | - | Oluşturma sürecini yönlendirmek için isteğe bağlı bir temel görüntü. |
-| `inpaint_image` | IMAGE | Hayır | - | Bir maske tarafından tanımlanan alanları rötuşlamak için özel olarak kullanılan isteğe bağlı bir görüntü. |
+| `güç` | FLOAT | Evet | -10,0 ila 10,0 | Kontrol ağının etkisinin gücü. Pozitif değerler etkiyi uygularken, negatif değerler etkiyi tersine çevirebilir (varsayılan: 1,0). |
+| `görsel` | IMAGE | Hayır | - | Oluşturma sürecini yönlendirmek için isteğe bağlı bir temel görüntü. |
+| `boyanacak_görsel` | IMAGE | Hayır | - | Bir maske tarafından tanımlanan alanları rötuşlamak için özel olarak kullanılan isteğe bağlı bir görüntü. |
 | `mask` | MASK | Hayır | - | Bir görüntünün hangi alanlarının düzenlenmesi veya rötuşlanması gerektiğini tanımlayan isteğe bağlı bir maske. |
 
 **Not:** `inpaint_image` parametresi tipik olarak rötuş için içeriği belirtmek amacıyla bir `mask` ile birlikte kullanılır. Düğümün davranışı, hangi isteğe bağlı girişlerin sağlandığına bağlı olarak değişebilir (örneğin, yönlendirme için `image` kullanmak veya rötuşlama için `image`, `mask` ve `inpaint_image` kullanmak).

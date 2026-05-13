@@ -11,7 +11,7 @@ Le nœud Remove Background utilise un modèle de suppression d'arrière-plan pou
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | N/A | Image d'entrée dont il faut supprimer l'arrière-plan |
-| `bg_removal_model` | BACKGROUND_REMOVAL_MODEL | Oui | N/A | Modèle de suppression d'arrière-plan utilisé pour générer le masque |
+| `modèle_de_suppression_arrière-plan` | BACKGROUND_REMOVAL_MODEL | Oui | N/A | Modèle de suppression d'arrière-plan utilisé pour générer le masque |
 
 ## Sorties
 

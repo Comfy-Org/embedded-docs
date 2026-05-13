@@ -6,16 +6,16 @@ O nó ModelSamplingLTXV aplica parâmetros avançados de amostragem a um modelo 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de entrada ao qual aplicar os parâmetros de amostragem |
-| `max_shift` | FLOAT | Sim | 0.0 a 100.0 | O valor máximo de deslocamento usado no cálculo da interpolação linear (padrão: 2,05) |
-| `base_shift` | FLOAT | Sim | 0.0 a 100.0 | O valor base de deslocamento usado no cálculo da interpolação linear (padrão: 0,95) |
-| `latent` | LATENT | Não | - | Entrada latent opcional usada para determinar a contagem de tokens para o cálculo do deslocamento. Se não for fornecida, uma contagem padrão de 4096 tokens é usada |
+| `modelo` | MODEL | Sim | - | O modelo de entrada ao qual aplicar os parâmetros de amostragem |
+| `deslocamento_máx` | FLOAT | Sim | 0.0 a 100.0 | O valor máximo de deslocamento usado no cálculo da interpolação linear (padrão: 2,05) |
+| `deslocamento_base` | FLOAT | Sim | 0.0 a 100.0 | O valor base de deslocamento usado no cálculo da interpolação linear (padrão: 0,95) |
+| `latente` | LATENT | Não | - | Entrada latent opcional usada para determinar a contagem de tokens para o cálculo do deslocamento. Se não for fornecida, uma contagem padrão de 4096 tokens é usada |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com os parâmetros de amostragem aplicados |
+| `modelo` | MODEL | O modelo modificado com os parâmetros de amostragem aplicados |
 
 ---
 **Source fingerprint (SHA-256):** `2325754df1b2541a6adbdebecefde92e08535af0e179d7444093a61eb35cb24c`

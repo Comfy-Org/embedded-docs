@@ -6,9 +6,9 @@ SaveAudioOpus düğümü, ses verilerini Opus formatında bir dosyaya kaydeder. 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Evet | - | Opus dosyası olarak kaydedilecek ses verisi |
-| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") |
-| `quality` | COMBO | Hayır | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | Opus dosyası için ses kalitesi ayarı (varsayılan: "128k") |
+| `ses` | AUDIO | Evet | - | Opus dosyası olarak kaydedilecek ses verisi |
+| `dosya_adı_ön_eki` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "audio/ComfyUI") |
+| `kalite` | COMBO | Hayır | "64k"<br>"96k"<br>"128k"<br>"192k"<br>"320k" | Opus dosyası için ses kalitesi ayarı (varsayılan: "128k") |
 
 ## Çıktılar
 

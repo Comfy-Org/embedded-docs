@@ -35,18 +35,18 @@ Topaz Image Enhance düğümü, endüstri standardında yükseltme ve görüntü
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | `"Reimagine"` | Görüntü iyileştirme için kullanılacak yapay zeka modeli. |
-| `image` | IMAGE | Evet | - | İyileştirilecek giriş görüntüsü. Yalnızca bir görüntü desteklenir. |
-| `prompt` | STRING | Hayır | - | Yaratıcı yükseltme yönlendirmesi için isteğe bağlı bir metin istemi (varsayılan: boş). |
-| `subject_detection` | COMBO | Hayır | `"All"`<br>`"Foreground"`<br>`"Background"` | İyileştirmenin görüntünün hangi kısmına odaklanacağını kontrol eder (varsayılan: "All"). |
-| `face_enhancement` | BOOLEAN | Hayır | - | Görüntüde yüzler varsa bunları iyileştirmek için etkinleştirin (varsayılan: True). |
-| `face_enhancement_creativity` | FLOAT | Hayır | 0.0 - 1.0 | Yüz iyileştirme için yaratıcılık seviyesini ayarlar (varsayılan: 0.0). |
-| `face_enhancement_strength` | FLOAT | Hayır | 0.0 - 1.0 | İyileştirilmiş yüzlerin arka plana göre ne kadar keskin olduğunu kontrol eder (varsayılan: 1.0). |
-| `crop_to_fill` | BOOLEAN | Hayır | - | Varsayılan olarak, çıktı en boy oranı farklı olduğunda görüntüye posta kutusu eklenir. Bunun yerine görüntüyü çıktı boyutlarını dolduracak şekilde kırpmak için etkinleştirin (varsayılan: False). |
-| `output_width` | INT | Hayır | 0 - 32000 | Çıktı görüntüsünün istenen genişliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `output_height` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). |
-| `output_height` | INT | Hayır | 0 - 32000 | Çıktı görüntüsünün istenen yüksekliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `output_width` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). |
-| `creativity` | INT | Hayır | 1 - 9 | İyileştirmenin genel yaratıcılık seviyesini kontrol eder (varsayılan: 3). |
-| `face_preservation` | BOOLEAN | Hayır | - | Görüntüdeki kişilerin yüz kimliğini koruyun (varsayılan: True). |
-| `color_preservation` | BOOLEAN | Hayır | - | Giriş görüntüsünün orijinal renklerini koruyun (varsayılan: True). |
+| `görüntü` | IMAGE | Evet | - | İyileştirilecek giriş görüntüsü. Yalnızca bir görüntü desteklenir. |
+| `istem` | STRING | Hayır | - | Yaratıcı yükseltme yönlendirmesi için isteğe bağlı bir metin istemi (varsayılan: boş). |
+| `konu_tespiti` | COMBO | Hayır | `"All"`<br>`"Foreground"`<br>`"Background"` | İyileştirmenin görüntünün hangi kısmına odaklanacağını kontrol eder (varsayılan: "All"). |
+| `yüz_iyileştirme` | BOOLEAN | Hayır | - | Görüntüde yüzler varsa bunları iyileştirmek için etkinleştirin (varsayılan: True). |
+| `yüz_iyileştirme_yaratıcılığı` | FLOAT | Hayır | 0.0 - 1.0 | Yüz iyileştirme için yaratıcılık seviyesini ayarlar (varsayılan: 0.0). |
+| `yüz_iyileştirme_gücü` | FLOAT | Hayır | 0.0 - 1.0 | İyileştirilmiş yüzlerin arka plana göre ne kadar keskin olduğunu kontrol eder (varsayılan: 1.0). |
+| `doldurmak_için_kırp` | BOOLEAN | Hayır | - | Varsayılan olarak, çıktı en boy oranı farklı olduğunda görüntüye posta kutusu eklenir. Bunun yerine görüntüyü çıktı boyutlarını dolduracak şekilde kırpmak için etkinleştirin (varsayılan: False). |
+| `çıktı_genişliği` | INT | Hayır | 0 - 32000 | Çıktı görüntüsünün istenen genişliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `çıktı_yüksekliği` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). |
+| `çıktı_yüksekliği` | INT | Hayır | 0 - 32000 | Çıktı görüntüsünün istenen yüksekliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `çıktı_genişliği` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). |
+| `yaratıcılık` | INT | Hayır | 1 - 9 | İyileştirmenin genel yaratıcılık seviyesini kontrol eder (varsayılan: 3). |
+| `yüz_koruma` | BOOLEAN | Hayır | - | Görüntüdeki kişilerin yüz kimliğini koruyun (varsayılan: True). |
+| `renk_koruma` | BOOLEAN | Hayır | - | Giriş görüntüsünün orijinal renklerini koruyun (varsayılan: True). |
 
 **Not:** Bu düğüm yalnızca tek bir giriş görüntüsünü işleyebilir. Birden fazla görüntüden oluşan bir grup sağlamak hataya neden olur.
 
@@ -54,7 +54,7 @@ Topaz Image Enhance düğümü, endüstri standardında yükseltme ve görüntü
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | İyileştirilmiş çıktı görüntüsü. |
+| `görüntü` | IMAGE | İyileştirilmiş çıktı görüntüsü. |
 
 ---
 **Source fingerprint (SHA-256):** `69f2c929f2cd11f13557e064e30a4514e3862e127a2bdb3a3f40ec92023f255d`

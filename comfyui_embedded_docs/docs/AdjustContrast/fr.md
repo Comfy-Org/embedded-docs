@@ -7,7 +7,7 @@ Le nœud Ajuster le Contraste modifie le niveau de contraste d'une image d'entr�
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée dont le contraste doit être ajusté. |
-| `factor` | FLOAT | Non | 0,0 - 2,0 | Facteur de contraste. 1,0 = aucun changement, <1,0 = moins de contraste, >1,0 = plus de contraste. (par défaut : 1,0) |
+| `facteur` | FLOAT | Non | 0,0 - 2,0 | Facteur de contraste. 1,0 = aucun changement, <1,0 = moins de contraste, >1,0 = plus de contraste. (par défaut : 1,0) |
 
 ## Sorties
 

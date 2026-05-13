@@ -6,12 +6,12 @@ Le nœud `GrowMask` est conçu pour modifier la taille d'un masque donné, en l'
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `mask`    | MASK            | Le masque d'entrée à modifier. Ce paramètre est central au fonctionnement du nœud, servant de base sur laquelle le masque est soit agrandi, soit réduit. |
-| `expand`  | INT             | Détermine l'ampleur et la direction de la modification du masque. Les valeurs positives agrandissent le masque, tandis que les valeurs négatives le réduisent. Ce paramètre influence directement la taille finale du masque. |
-| `tapered_corners` | BOOLEAN    | Un indicateur booléen qui, lorsqu'il est défini sur Vrai, applique un effet d'atténuation aux coins du masque lors de la modification. Cette option permet des transitions plus douces et des résultats visuellement agréables. |
+| `masque`    | MASK            | Le masque d'entrée à modifier. Ce paramètre est central au fonctionnement du nœud, servant de base sur laquelle le masque est soit agrandi, soit réduit. |
+| `agrandir`  | INT             | Détermine l'ampleur et la direction de la modification du masque. Les valeurs positives agrandissent le masque, tandis que les valeurs négatives le réduisent. Ce paramètre influence directement la taille finale du masque. |
+| `coins_évasés` | BOOLEAN    | Un indicateur booléen qui, lorsqu'il est défini sur Vrai, applique un effet d'atténuation aux coins du masque lors de la modification. Cette option permet des transitions plus douces et des résultats visuellement agréables. |
 
 ## Sorties
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `mask`    | MASK            | Le masque modifié après application de l'agrandissement/réduction spécifié et de l'effet d'atténuation optionnel des coins. |
+| `masque`    | MASK            | Le masque modifié après application de l'agrandissement/réduction spécifié et de l'effet d'atténuation optionnel des coins. |

@@ -6,10 +6,10 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `sigmas`  | `SIGMAS`    | 'sigmas' parametresi, tersine çevrilecek sigma değerleri dizisini temsil eder. Bu dizi, difüzyon işlemi sırasında uygulanan gürültü seviyelerini kontrol etmek için çok önemlidir ve tersine çevrilmesi, ters üretim süreci için gereklidir. |
+| `sigmalar`  | `SIGMAS`    | 'sigmas' parametresi, tersine çevrilecek sigma değerleri dizisini temsil eder. Bu dizi, difüzyon işlemi sırasında uygulanan gürültü seviyelerini kontrol etmek için çok önemlidir ve tersine çevrilmesi, ters üretim süreci için gereklidir. |
 
 ## Çıkışlar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `sigmas`  | `SIGMAS`    | Çıktı, tersine çevrilmiş ve ilk değer sıfırsa sıfır olmayacak şekilde ayarlanmış, sonraki difüzyon modeli işlemlerinde kullanıma hazır değiştirilmiş sigma değerleri dizisidir. |
+| `sigmalar`  | `SIGMAS`    | Çıktı, tersine çevrilmiş ve ilk değer sıfırsa sıfır olmayacak şekilde ayarlanmış, sonraki difüzyon modeli işlemlerinde kullanıma hazır değiştirilmiş sigma değerleri dizisidir. |

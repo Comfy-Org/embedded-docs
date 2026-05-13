@@ -6,8 +6,8 @@ Le nœud RepeatLatentBatch est conçu pour répliquer un lot donné de représen
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `samples` | `LATENT`        | Le paramètre 'samples' représente les représentations latentes à répliquer. Il est essentiel pour définir les données qui seront soumises à la répétition. |
-| `amount`  | `INT`           | Le paramètre 'amount' spécifie le nombre de fois que les échantillons d'entrée doivent être répétés. Il influence directement la taille du lot de sortie, affectant ainsi la charge de calcul et la diversité des données générées. |
+| `échantillons` | `LATENT`        | Le paramètre 'samples' représente les représentations latentes à répliquer. Il est essentiel pour définir les données qui seront soumises à la répétition. |
+| `quantité`  | `INT`           | Le paramètre 'amount' spécifie le nombre de fois que les échantillons d'entrée doivent être répétés. Il influence directement la taille du lot de sortie, affectant ainsi la charge de calcul et la diversité des données générées. |
 
 ## Sorties
 

@@ -6,8 +6,8 @@ O nó CFGNorm aplica uma técnica de normalização ao processo de orientação 
 
 | Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
 |-----------|---------------|-----------------|--------|-------|-----------|
-| `model` | MODEL | obrigatório | - | - | O modelo de difusão ao qual aplicar a normalização CFG |
-| `strength` | FLOAT | obrigatório | 1.0 | 0.0 - 100.0 | Controla a intensidade do efeito de normalização aplicado à escala CFG |
+| `modelo` | MODEL | obrigatório | - | - | O modelo de difusão ao qual aplicar a normalização CFG |
+| `força` | FLOAT | obrigatório | 1.0 | 0.0 - 100.0 | Controla a intensidade do efeito de normalização aplicado à escala CFG |
 
 ## Saídas
 

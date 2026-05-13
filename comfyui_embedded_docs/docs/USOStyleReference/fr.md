@@ -6,15 +6,15 @@ Le nœud USOStyleReference applique des correctifs de référence de style aux m
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de base auquel appliquer le correctif de référence de style |
-| `model_patch` | MODEL_PATCH | Oui | - | Le correctif de modèle contenant les informations de référence de style |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Oui | - | Les caractéristiques visuelles encodées extraites du traitement CLIP vision |
+| `modèle` | MODEL | Oui | - | Le modèle de base auquel appliquer le correctif de référence de style |
+| `correctif_modèle` | MODEL_PATCH | Oui | - | Le correctif de modèle contenant les informations de référence de style |
+| `sortie_vision_clip` | CLIP_VISION_OUTPUT | Oui | - | Les caractéristiques visuelles encodées extraites du traitement CLIP vision |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec les correctifs de référence de style appliqués |
+| `modèle` | MODEL | Le modèle modifié avec les correctifs de référence de style appliqués |
 
 ---
 **Source fingerprint (SHA-256):** `fd800fb927677da29e148bfa1b287efed82895860ce4b0241d662579d2c07ff4`

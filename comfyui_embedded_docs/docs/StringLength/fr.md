@@ -6,7 +6,7 @@ Le nœud StringLength calcule le nombre de caractères dans une chaîne de texte
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | N/A | La chaîne de texte dont il faut mesurer la longueur. Prend en charge la saisie multiligne. |
+| `chaîne` | STRING | Oui | N/A | La chaîne de texte dont il faut mesurer la longueur. Prend en charge la saisie multiligne. |
 
 ## Sorties
 

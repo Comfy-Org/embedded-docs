@@ -6,7 +6,7 @@ Görüntü Listelerini Birleştir düğümü, birden fazla ayrı görüntü list
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `images` | IMAGE | Evet | - | Birleştirilecek görüntü listesi. Bu girdi birden fazla bağlantı kabul edebilir ve bağlı her liste nihai çıktıda birleştirilecektir. |
+| `görüntüler` | IMAGE | Evet | - | Birleştirilecek görüntü listesi. Bu girdi birden fazla bağlantı kabul edebilir ve bağlı her liste nihai çıktıda birleştirilecektir. |
 
 **Not:** Bu düğüm birden fazla girdi alacak şekilde tasarlanmıştır. Tek `images` girdi soketine birden fazla görüntü listesi bağlayabilirsiniz. Düğüm, bağlı tüm listelerdeki tüm görüntüleri otomatik olarak tek bir çıktı listesinde birleştirecektir.
 
@@ -14,7 +14,7 @@ Görüntü Listelerini Birleştir düğümü, birden fazla ayrı görüntü list
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `images` | IMAGE | Bağlı her girdi listesindeki tüm görüntüleri içeren, birleştirilmiş tek liste. |
+| `görüntüler` | IMAGE | Bağlı her girdi listesindeki tüm görüntüleri içeren, birleştirilmiş tek liste. |
 
 ---
 **Source fingerprint (SHA-256):** `8fc53091b817a5036aae022aa841ba11fae0ed3242a969f5ae9072f48e061366`

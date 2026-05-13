@@ -8,9 +8,9 @@ CLIPLoader ノードは、テキストエンコーダモデル（CLIP、T5、ま
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name` | STRING | はい | `text_encoders` フォルダ内にあるファイルのリスト | 読み込むテキストエンコーダモデルのファイル名です。このファイルは `ComfyUI/models/text_encoders/` または `ComfyUI/models/clip/` ディレクトリに配置されている必要があります。 |
-| `type` | STRING | はい | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | 読み込むモデルのアーキテクチャタイプです。これにより、使用する特定のエンコーダのバリエーションが決定されます。デフォルトは `"stable_diffusion"` です。 |
-| `device` | STRING | いいえ | `"default"`<br>`"cpu"` | モデルを読み込むデバイスです。`"default"` は GPU が利用可能な場合は GPU を使用し、`"cpu"` は強制的に CPU で読み込みます。これは高度なオプションです（デフォルト: `"default"`）。 |
+| `clip名` | STRING | はい | `text_encoders` フォルダ内にあるファイルのリスト | 読み込むテキストエンコーダモデルのファイル名です。このファイルは `ComfyUI/models/text_encoders/` または `ComfyUI/models/clip/` ディレクトリに配置されている必要があります。 |
+| `タイプ` | STRING | はい | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | 読み込むモデルのアーキテクチャタイプです。これにより、使用する特定のエンコーダのバリエーションが決定されます。デフォルトは `"stable_diffusion"` です。 |
+| `デバイス` | STRING | いいえ | `"default"`<br>`"cpu"` | モデルを読み込むデバイスです。`"default"` は GPU が利用可能な場合は GPU を使用し、`"cpu"` は強制的に CPU で読み込みます。これは高度なオプションです（デフォルト: `"default"`）。 |
 
 ### サポートされているタイプとエンコーダのマッピング
 

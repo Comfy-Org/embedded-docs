@@ -7,11 +7,11 @@ O nó **ConditioningSetAreaPercentage** é especializado em ajustar a área de i
 | Parâmetro | Tipo de Dado | Descrição |
 |-----------|--------------|-----------|
 | `CONDITIONING` | CONDITIONING | Representa os elementos de condicionamento a serem modificados, servindo como base para aplicar ajustes de área e intensidade. |
-| `width`   | `FLOAT`      | Especifica a largura da área como uma porcentagem da largura total da imagem, influenciando quanto da imagem o condicionamento afeta horizontalmente. |
-| `height`  | `FLOAT`      | Determina a altura da área como uma porcentagem da altura total da imagem, afetando a extensão vertical da influência do condicionamento. |
+| `largura`   | `FLOAT`      | Especifica a largura da área como uma porcentagem da largura total da imagem, influenciando quanto da imagem o condicionamento afeta horizontalmente. |
+| `altura`  | `FLOAT`      | Determina a altura da área como uma porcentagem da altura total da imagem, afetando a extensão vertical da influência do condicionamento. |
 | `x`       | `FLOAT`      | Indica o ponto inicial horizontal da área como uma porcentagem da largura total da imagem, posicionando o efeito de condicionamento. |
 | `y`       | `FLOAT`      | Especifica o ponto inicial vertical da área como uma porcentagem da altura total da imagem, posicionando o efeito de condicionamento. |
-| `strength`| `FLOAT`      | Controla a intensidade do efeito de condicionamento dentro da área especificada, permitindo ajustes finos em seu impacto. |
+| `força`| `FLOAT`      | Controla a intensidade do efeito de condicionamento dentro da área especificada, permitindo ajustes finos em seu impacto. |
 
 ## Saídas
 

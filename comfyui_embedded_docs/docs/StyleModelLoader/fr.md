@@ -8,7 +8,7 @@ Le nœud StyleModelLoader est conçu pour charger un modèle de style à partir 
 
 | Nom du paramètre  | Type Comfy      | Type Python | Description                                                                                       |
 |-------------------|-----------------|--------------|---------------------------------------------------------------------------------------------------|
-| `style_model_name`| COMBO[STRING]   | `str`        | Spécifie le nom du modèle de style à charger. Ce nom est utilisé pour localiser le fichier du modèle dans une structure de répertoires prédéfinie, permettant le chargement dynamique de différents modèles de style en fonction des entrées utilisateur ou des besoins de l'application. |
+| `nom_du_modèle_de_style`| COMBO[STRING]   | `str`        | Spécifie le nom du modèle de style à charger. Ce nom est utilisé pour localiser le fichier du modèle dans une structure de répertoires prédéfinie, permettant le chargement dynamique de différents modèles de style en fonction des entrées utilisateur ou des besoins de l'application. |
 
 ## Sorties
 

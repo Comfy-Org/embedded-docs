@@ -10,7 +10,7 @@ O nó StringConcatenate combina duas strings de texto em uma só, unindo-as com 
 |-----------|---------------|-------------|-------|-----------|
 | `string_a` | STRING | Sim | - | A primeira string de texto a ser concatenada |
 | `string_b` | STRING | Sim | - | A segunda string de texto a ser concatenada |
-| `delimiter` | STRING | Não | - | O caractere ou string a ser inserido entre as duas strings de entrada (padrão: string vazia) |
+| `delimitador` | STRING | Não | - | O caractere ou string a ser inserido entre as duas strings de entrada (padrão: string vazia) |
 
 ## Saídas
 

@@ -6,9 +6,9 @@ Runway Metinden Görsele düğümü, Runway'in Gen 4 modelini kullanarak metin i
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `prompt` | STRING | Evet | - | Oluşturma için metin istemi (varsayılan: "") |
-| `ratio` | COMBO | Evet | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Oluşturulan görsel için en-boy oranı |
-| `reference_image` | IMAGE | Hayır | - | Oluşturmayı yönlendirmek için isteğe bağlı referans görseli |
+| `istem` | STRING | Evet | - | Oluşturma için metin istemi (varsayılan: "") |
+| `oran` | COMBO | Evet | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | Oluşturulan görsel için en-boy oranı |
+| `referans_görsel` | IMAGE | Hayır | - | Oluşturmayı yönlendirmek için isteğe bağlı referans görseli |
 
 **Not:** Referans görselinin boyutları 7999x7999 pikseli geçmemeli ve en-boy oranı 0,5 ile 2,0 arasında olmalıdır. Bir referans görseli sağlandığında, görsel oluşturma sürecini yönlendirir.
 

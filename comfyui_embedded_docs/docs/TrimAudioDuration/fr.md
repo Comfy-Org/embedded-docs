@@ -7,8 +7,8 @@ Le nœud TrimAudioDuration vous permet de découper un segment temporel spécifi
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `audio` | AUDIO | Oui | - | L'entrée audio à découper |
-| `start_index` | FLOAT | Oui | -0xffffffffffffffff à 0xffffffffffffffff | Heure de début en secondes, peut être négative pour compter à partir de la fin (prend en charge les sous-secondes). Par défaut : 0.0 |
-| `duration` | FLOAT | Oui | 0.0 à 0xffffffffffffffff | Durée en secondes. Par défaut : 60.0 |
+| `index_début` | FLOAT | Oui | -0xffffffffffffffff à 0xffffffffffffffff | Heure de début en secondes, peut être négative pour compter à partir de la fin (prend en charge les sous-secondes). Par défaut : 0.0 |
+| `durée` | FLOAT | Oui | 0.0 à 0xffffffffffffffff | Durée en secondes. Par défaut : 60.0 |
 
 **Remarque :** L'heure de début doit être inférieure à l'heure de fin et comprise dans la durée audio. Les valeurs de début négatives comptent à rebours à partir de la fin de l'audio. Si l'heure de début est négative, elle est convertie en une position de trame comptée à partir de la fin de l'audio. Les trames de début et de fin sont limitées aux limites de l'audio.
 

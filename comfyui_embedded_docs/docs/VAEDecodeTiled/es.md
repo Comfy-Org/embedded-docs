@@ -6,12 +6,12 @@ El nodo VAEDecodeTiled decodifica representaciones latentes en imágenes utiliza
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `samples` | LATENT | Sí | - | La representación latente que se decodificará en imágenes |
+| `muestras` | LATENT | Sí | - | La representación latente que se decodificará en imágenes |
 | `vae` | VAE | Sí | - | El modelo VAE utilizado para decodificar las muestras latentes |
-| `tile_size` | INT | Sí | 64-4096 (paso: 32) | El tamaño de cada mosaico para el procesamiento (predeterminado: 512) |
-| `overlap` | INT | Sí | 0-4096 (paso: 32) | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) |
-| `temporal_size` | INT | Sí | 8-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a decodificar a la vez (predeterminado: 64) |
-| `temporal_overlap` | INT | Sí | 4-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a superponer (predeterminado: 8) |
+| `tamaño_mosaico` | INT | Sí | 64-4096 (paso: 32) | El tamaño de cada mosaico para el procesamiento (predeterminado: 512) |
+| `superposición` | INT | Sí | 0-4096 (paso: 32) | La cantidad de superposición entre mosaicos adyacentes (predeterminado: 64) |
+| `tamaño_temporal` | INT | Sí | 8-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a decodificar a la vez (predeterminado: 64) |
+| `superposición_temporal` | INT | Sí | 4-4096 (paso: 4) | Solo se usa para VAEs de video: Cantidad de fotogramas a superponer (predeterminado: 8) |
 
 **Nota:** El nodo ajusta automáticamente los valores de superposición si exceden los límites prácticos. Si `tile_size` es menor que 4 veces la `overlap`, la superposición se reduce a un cuarto del tamaño del mosaico. De manera similar, si `temporal_size` es menor que el doble de `temporal_overlap`, la superposición temporal se reduce a la mitad. El nodo también tiene en cuenta las relaciones de compresión internas del VAE al calcular los tamaños de mosaico y superposición tanto para las dimensiones espaciales como temporales.
 

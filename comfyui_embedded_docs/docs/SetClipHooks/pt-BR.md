@@ -7,8 +7,8 @@ O nó SetClipHooks permite aplicar hooks personalizados a um modelo CLIP, possib
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `clip` | CLIP | Sim | - | O modelo CLIP ao qual aplicar os hooks |
-| `apply_to_conds` | BOOLEAN | Sim | - | Se deve aplicar hooks às saídas de condicionamento (padrão: True) |
-| `schedule_clip` | BOOLEAN | Sim | - | Se deve ativar o agendamento do CLIP (padrão: False) |
+| `aplicar_a_conds` | BOOLEAN | Sim | - | Se deve aplicar hooks às saídas de condicionamento (padrão: True) |
+| `agendar_clip` | BOOLEAN | Sim | - | Se deve ativar o agendamento do CLIP (padrão: False) |
 | `hooks` | HOOKS | Não | - | Grupo opcional de hooks a ser aplicado ao modelo CLIP |
 
 ## Saídas

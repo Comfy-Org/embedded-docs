@@ -7,9 +7,9 @@ O nó Random Crop Images seleciona aleatoriamente uma seção retangular de cada
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `image` | IMAGE | Sim | - | A imagem a ser recortada. |
-| `width` | INT | Não | 1 - 8192 | A largura da área de recorte (padrão: 512). |
-| `height` | INT | Não | 1 - 8192 | A altura da área de recorte (padrão: 512). |
-| `seed` | INT | Não | 0 - 18446744073709551615 | Um número usado para controlar a posição aleatória do recorte (padrão: 0). |
+| `largura` | INT | Não | 1 - 8192 | A largura da área de recorte (padrão: 512). |
+| `altura` | INT | Não | 1 - 8192 | A altura da área de recorte (padrão: 512). |
+| `semente` | INT | Não | 0 - 18446744073709551615 | Um número usado para controlar a posição aleatória do recorte (padrão: 0). |
 
 **Observação:** Os parâmetros `width` e `height` devem ser menores ou iguais às dimensões da imagem de entrada. Se uma dimensão especificada for maior que a imagem, o recorte será limitado ao limite da imagem.
 

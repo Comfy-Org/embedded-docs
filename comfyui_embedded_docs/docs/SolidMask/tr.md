@@ -6,9 +6,9 @@ SolidMask düğümü, tüm alanı boyunca belirtilen değerde tek tip bir maske 
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `value`   | FLOAT       | Maskenin yoğunluk değerini belirtir; genel görünümünü ve sonraki işlemlerdeki kullanışlılığını etkiler. |
-| `width`   | INT         | Oluşturulan maskenin genişliğini belirler; boyutunu ve en-boy oranını doğrudan etkiler. |
-| `height`  | INT         | Oluşturulan maskenin yüksekliğini ayarlar; boyutunu ve en-boy oranını etkiler. |
+| `değer`   | FLOAT       | Maskenin yoğunluk değerini belirtir; genel görünümünü ve sonraki işlemlerdeki kullanışlılığını etkiler. |
+| `genişlik`   | INT         | Oluşturulan maskenin genişliğini belirler; boyutunu ve en-boy oranını doğrudan etkiler. |
+| `yükseklik`  | INT         | Oluşturulan maskenin yüksekliğini ayarlar; boyutunu ve en-boy oranını etkiler. |
 
 ## Çıktılar
 

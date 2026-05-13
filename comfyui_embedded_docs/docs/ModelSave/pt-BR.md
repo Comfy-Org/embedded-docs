@@ -6,8 +6,8 @@ O nó ModelSave salva modelos treinados ou modificados no armazenamento do seu c
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo a ser salvo em disco |
-| `filename_prefix` | STRING | Sim | - | O prefixo do nome do arquivo e caminho para o arquivo do modelo salvo (padrão: "diffusion_models/ComfyUI") |
+| `modelo` | MODEL | Sim | - | O modelo a ser salvo em disco |
+| `prefixo_do_arquivo` | STRING | Sim | - | O prefixo do nome do arquivo e caminho para o arquivo do modelo salvo (padrão: "diffusion_models/ComfyUI") |
 | `prompt` | PROMPT | Não | - | Informações do prompt do fluxo de trabalho (fornecido automaticamente) |
 | `extra_pnginfo` | EXTRA_PNGINFO | Não | - | Metadados adicionais do fluxo de trabalho (fornecido automaticamente) |
 

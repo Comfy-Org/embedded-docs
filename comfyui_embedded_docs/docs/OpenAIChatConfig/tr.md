@@ -34,9 +34,9 @@ OpenAIChatConfig düğümü, OpenAI Sohbet Düğümü için ek yapılandırma se
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `truncation` | COMBO | Evet | `"auto"`<br>`"disabled"` | Model yanıtı için kullanılacak kırpma stratejisi. auto: Bu yanıtın ve öncekilerin bağlamı, modelin bağlam penceresi boyutunu aşarsa, model, konuşmanın ortasındaki giriş öğelerini bırakarak yanıtı bağlam penceresine sığacak şekilde kırpar. disabled: Bir model yanıtı, bir model için bağlam penceresi boyutunu aşarsa, istek 400 hatasıyla başarısız olur (varsayılan: "auto") |
-| `max_output_tokens` | INT | Hayır | 16 ila 16384 | Bir yanıt için oluşturulabilecek token sayısı için üst sınır; görünür çıktı tokenlerini içerir (varsayılan: 4096) |
-| `instructions` | STRING | Hayır | - | Modelin yanıtı nasıl oluşturacağına dair talimatlar (çok satırlı giriş desteklenir) |
+| `kırpma` | COMBO | Evet | `"auto"`<br>`"disabled"` | Model yanıtı için kullanılacak kırpma stratejisi. auto: Bu yanıtın ve öncekilerin bağlamı, modelin bağlam penceresi boyutunu aşarsa, model, konuşmanın ortasındaki giriş öğelerini bırakarak yanıtı bağlam penceresine sığacak şekilde kırpar. disabled: Bir model yanıtı, bir model için bağlam penceresi boyutunu aşarsa, istek 400 hatasıyla başarısız olur (varsayılan: "auto") |
+| `maksimum_çıktı_tokenları` | INT | Hayır | 16 ila 16384 | Bir yanıt için oluşturulabilecek token sayısı için üst sınır; görünür çıktı tokenlerini içerir (varsayılan: 4096) |
+| `talimatlar` | STRING | Hayır | - | Modelin yanıtı nasıl oluşturacağına dair talimatlar (çok satırlı giriş desteklenir) |
 
 ## Çıktılar
 

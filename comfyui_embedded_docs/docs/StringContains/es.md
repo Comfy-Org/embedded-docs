@@ -6,9 +6,9 @@ El nodo StringContains verifica si una cadena de texto determinada contiene una 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `string` | STRING | Sí | - | La cadena de texto principal en la que buscar |
-| `substring` | STRING | Sí | - | El texto a buscar dentro de la cadena principal |
-| `case_sensitive` | BOOLEAN | No | - | Determina si la búsqueda debe ser sensible a mayúsculas/minúsculas (valor predeterminado: true) |
+| `cadena` | STRING | Sí | - | La cadena de texto principal en la que buscar |
+| `subcadena` | STRING | Sí | - | El texto a buscar dentro de la cadena principal |
+| `distingue mayúsculas y minúsculas` | BOOLEAN | No | - | Determina si la búsqueda debe ser sensible a mayúsculas/minúsculas (valor predeterminado: true) |
 
 ## Salidas
 

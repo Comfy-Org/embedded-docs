@@ -6,13 +6,13 @@ O nó **Magnific Image Upscale (Precise V2)** realiza a ampliação de imagens c
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser ampliada. Exatamente uma imagem é necessária. As dimensões mínimas são 160x160 pixels. A proporção deve estar entre 1:3 e 3:1. |
-| `scale_factor` | STRING | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | O multiplicador de ampliação desejado. |
-| `flavor` | STRING | Sim | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` | O estilo de processamento. "sublime" é para uso geral, "photo" é otimizado para fotografias e "photo_denoiser" é para fotos com ruído. |
-| `sharpen` | INT | Não | 0 a 100 | Controla a intensidade da nitidez da imagem para aumentar a definição e clareza das bordas. Valores mais altos produzem um resultado mais nítido. Padrão: 7. |
-| `smart_grain` | INT | Não | 0 a 100 | Adiciona granulação inteligente ou realce de textura para evitar que a imagem ampliada pareça muito suave ou artificial. Padrão: 7. |
-| `ultra_detail` | INT | Não | 0 a 100 | Controla a quantidade de detalhes finos, texturas e microdetalhes adicionados durante o processo de ampliação. Padrão: 30. |
-| `auto_downscale` | BOOLEAN | Não | - | Quando ativado, o nó reduzirá automaticamente a escala da imagem de entrada se as dimensões de saída calculadas excederem a resolução máxima permitida de 10060x10060 pixels. Isso ajuda a evitar erros, mas pode afetar a qualidade. Padrão: Falso. |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser ampliada. Exatamente uma imagem é necessária. As dimensões mínimas são 160x160 pixels. A proporção deve estar entre 1:3 e 3:1. |
+| `fator de escala` | STRING | Sim | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | O multiplicador de ampliação desejado. |
+| `estilo` | STRING | Sim | `"sublime"`<br>`"photo"`<br>`"photo_denoiser"` | O estilo de processamento. "sublime" é para uso geral, "photo" é otimizado para fotografias e "photo_denoiser" é para fotos com ruído. |
+| `nitidez` | INT | Não | 0 a 100 | Controla a intensidade da nitidez da imagem para aumentar a definição e clareza das bordas. Valores mais altos produzem um resultado mais nítido. Padrão: 7. |
+| `granulação inteligente` | INT | Não | 0 a 100 | Adiciona granulação inteligente ou realce de textura para evitar que a imagem ampliada pareça muito suave ou artificial. Padrão: 7. |
+| `ultra detalhe` | INT | Não | 0 a 100 | Controla a quantidade de detalhes finos, texturas e microdetalhes adicionados durante o processo de ampliação. Padrão: 30. |
+| `redução automática` | BOOLEAN | Não | - | Quando ativado, o nó reduzirá automaticamente a escala da imagem de entrada se as dimensões de saída calculadas excederem a resolução máxima permitida de 10060x10060 pixels. Isso ajuda a evitar erros, mas pode afetar a qualidade. Padrão: Falso. |
 
 **Observação:** Se `auto_downscale` estiver desativado e o tamanho de saída solicitado (dimensões de entrada × `scale_factor`) exceder 10060x10060 pixels, o nó gerará um erro.
 
@@ -20,7 +20,7 @@ O nó **Magnific Image Upscale (Precise V2)** realiza a ampliação de imagens c
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A imagem ampliada resultante. |
+| `imagem` | IMAGE | A imagem ampliada resultante. |
 
 ---
 **Source fingerprint (SHA-256):** `cceff30e9702c6a24ab8102698c59f1afb20ec50e7f279b3c0d50befc9673b24`

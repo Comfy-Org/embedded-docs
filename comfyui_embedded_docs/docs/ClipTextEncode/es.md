@@ -8,7 +8,7 @@ Piénsalo como comunicarte con un artista que habla un idioma diferente. El mode
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `text` | STRING | Sí | Cualquier texto | El texto a codificar. Admite entrada de varias líneas y prompts dinámicos. |
+| `texto` | STRING | Sí | Cualquier texto | El texto a codificar. Admite entrada de varias líneas y prompts dinámicos. |
 | `clip` | CLIP | Sí | Modelos CLIP cargados | El modelo CLIP utilizado para codificar el texto. |
 
 ## Salidas

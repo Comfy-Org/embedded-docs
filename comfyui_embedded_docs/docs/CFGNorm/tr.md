@@ -7,7 +7,7 @@ CFGNorm düğümü, yayılım modellerinde sınıflandırıcısız yönlendirme 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
 | `model` | MODEL | zorunlu | - | - | CFG normalizasyonunun uygulanacağı yayılım modeli |
-| `strength` | FLOAT | zorunlu | 1.0 | 0.0 - 100.0 | CFG ölçeklemesine uygulanan normalizasyon etkisinin yoğunluğunu kontrol eder |
+| `güç` | FLOAT | zorunlu | 1.0 | 0.0 - 100.0 | CFG ölçeklemesine uygulanan normalizasyon etkisinin yoğunluğunu kontrol eder |
 
 ## Çıktılar
 

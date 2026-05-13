@@ -34,7 +34,7 @@ RecordAudio düğümü, ses kayıt arayüzü aracılığıyla kaydedilmiş veya 
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO_RECORD | Evet | Yok | Ses kayıt arayüzünden gelen ses kaydı girişi |
+| `ses` | AUDIO_RECORD | Evet | Yok | Ses kayıt arayüzünden gelen ses kaydı girişi |
 
 ## Çıkışlar
 

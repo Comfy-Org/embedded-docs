@@ -6,14 +6,14 @@ SetFirstSigma düğümü, bir sigma değerleri dizisini, dizideki ilk sigma değ
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `sigmas` | SIGMAS | Evet | - | Değiştirilecek sigma değerlerinin girdi dizisi |
+| `sigmalar` | SIGMAS | Evet | - | Değiştirilecek sigma değerlerinin girdi dizisi |
 | `sigma` | FLOAT | Evet | 0,0 ile 20000,0 arası | Dizide ilk öğe olarak ayarlanacak yeni sigma değeri (varsayılan: 136,0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `sigmas` | SIGMAS | İlk öğesi özel sigma değeriyle değiştirilmiş, değiştirilmiş sigma dizisi |
+| `sigmalar` | SIGMAS | İlk öğesi özel sigma değeriyle değiştirilmiş, değiştirilmiş sigma dizisi |
 
 ---
 **Source fingerprint (SHA-256):** `2414acd7f3f42032c12bae2c581de4721f4c1daa912255fa0956caaa567291d5`

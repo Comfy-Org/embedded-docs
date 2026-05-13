@@ -6,16 +6,16 @@ StableZero123_Conditioning_Batched düğümü, bir giriş görüntüsünü işle
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_vision` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için kullanılan CLIP vision modeli |
-| `init_image` | IMAGE | Evet | - | İşlenecek ve kodlanacak ilk giriş görüntüsü |
+| `clip_görü` | CLIP_VISION | Evet | - | Giriş görüntüsünü kodlamak için kullanılan CLIP vision modeli |
+| `başlangıç_görüntüsü` | IMAGE | Evet | - | İşlenecek ve kodlanacak ilk giriş görüntüsü |
 | `vae` | VAE | Evet | - | Görüntü piksellerini gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Hayır | 16 - MAX_RESOLUTION | İşlenmiş görüntü için çıktı genişliği (varsayılan: 256, 8'e bölünebilir olmalıdır) |
-| `height` | INT | Hayır | 16 - MAX_RESOLUTION | İşlenmiş görüntü için çıktı yüksekliği (varsayılan: 256, 8'e bölünebilir olmalıdır) |
-| `batch_size` | INT | Hayır | 1 - 4096 | Toplu işlemde oluşturulacak koşullandırma örneklerinin sayısı (varsayılan: 1) |
-| `elevation` | FLOAT | Hayır | -180,0 - 180,0 | Derece cinsinden ilk kamera yükseklik açısı (varsayılan: 0,0) |
-| `azimuth` | FLOAT | Hayır | -180,0 - 180,0 | Derece cinsinden ilk kamera azimut açısı (varsayılan: 0,0) |
-| `elevation_batch_increment` | FLOAT | Hayır | -180,0 - 180,0 | Her toplu işlem öğesi için yüksekliğin artırılacağı miktar (varsayılan: 0,0) |
-| `azimuth_batch_increment` | FLOAT | Hayır | -180,0 - 180,0 | Her toplu işlem öğesi için azimutun artırılacağı miktar (varsayılan: 0,0) |
+| `genişlik` | INT | Hayır | 16 - MAX_RESOLUTION | İşlenmiş görüntü için çıktı genişliği (varsayılan: 256, 8'e bölünebilir olmalıdır) |
+| `yükseklik` | INT | Hayır | 16 - MAX_RESOLUTION | İşlenmiş görüntü için çıktı yüksekliği (varsayılan: 256, 8'e bölünebilir olmalıdır) |
+| `toplu_boyut` | INT | Hayır | 1 - 4096 | Toplu işlemde oluşturulacak koşullandırma örneklerinin sayısı (varsayılan: 1) |
+| `yükseklik` | FLOAT | Hayır | -180,0 - 180,0 | Derece cinsinden ilk kamera yükseklik açısı (varsayılan: 0,0) |
+| `azimut` | FLOAT | Hayır | -180,0 - 180,0 | Derece cinsinden ilk kamera azimut açısı (varsayılan: 0,0) |
+| `yükseklik_toplu_artışı` | FLOAT | Hayır | -180,0 - 180,0 | Her toplu işlem öğesi için yüksekliğin artırılacağı miktar (varsayılan: 0,0) |
+| `azimut_toplu_artışı` | FLOAT | Hayır | -180,0 - 180,0 | Her toplu işlem öğesi için azimutun artırılacağı miktar (varsayılan: 0,0) |
 
 **Not:** `width` ve `height` parametreleri 8'e bölünebilir olmalıdır çünkü düğüm, gizli uzay oluşturma için bu boyutları dahili olarak 8'e böler.
 
@@ -23,8 +23,8 @@ StableZero123_Conditioning_Batched düğümü, bir giriş görüntüsünü işle
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Görüntü yerleştirmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri |
-| `negative` | CONDITIONING | Sıfır başlangıçlı yerleştirmelere sahip negatif koşullandırma verileri |
+| `negatif` | CONDITIONING | Görüntü yerleştirmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri |
+| `gizli` | CONDITIONING | Sıfır başlangıçlı yerleştirmelere sahip negatif koşullandırma verileri |
 | `latent` | LATENT | Toplu işlem indeksleme bilgisi ile işlenmiş görüntünün gizli temsili |
 
 ---

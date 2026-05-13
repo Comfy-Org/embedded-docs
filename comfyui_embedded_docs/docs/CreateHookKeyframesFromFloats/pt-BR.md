@@ -6,11 +6,11 @@ Este nó cria keyframes de hook a partir de uma lista de valores de intensidade 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
-| `floats_strength` | FLOATS | Sim | -1 a ∞ | Um único valor float ou lista de valores float representando valores de intensidade para os keyframes (padrão: -1) |
-| `start_percent` | FLOAT | Sim | 0,0 a 1,0 | A posição percentual inicial para o primeiro keyframe na linha do tempo (padrão: 0,0) |
-| `end_percent` | FLOAT | Sim | 0,0 a 1,0 | A posição percentual final para o último keyframe na linha do tempo (padrão: 1,0) |
-| `print_keyframes` | BOOLEAN | Sim | Verdadeiro/Falso | Quando ativado, imprime as informações do keyframe gerado no console (padrão: Falso) |
-| `prev_hook_kf` | HOOK_KEYFRAMES | Não | - | Um grupo de keyframes de hook existente para adicionar os novos keyframes, ou cria um novo grupo se não for fornecido |
+| `força_floats` | FLOATS | Sim | -1 a ∞ | Um único valor float ou lista de valores float representando valores de intensidade para os keyframes (padrão: -1) |
+| `percentual_inicial` | FLOAT | Sim | 0,0 a 1,0 | A posição percentual inicial para o primeiro keyframe na linha do tempo (padrão: 0,0) |
+| `percentual_final` | FLOAT | Sim | 0,0 a 1,0 | A posição percentual final para o último keyframe na linha do tempo (padrão: 1,0) |
+| `imprimir_quadros-chave` | BOOLEAN | Sim | Verdadeiro/Falso | Quando ativado, imprime as informações do keyframe gerado no console (padrão: Falso) |
+| `quadro-chave_gancho_anterior` | HOOK_KEYFRAMES | Não | - | Um grupo de keyframes de hook existente para adicionar os novos keyframes, ou cria um novo grupo se não for fornecido |
 
 **Nota:** O parâmetro `floats_strength` aceita um único valor float ou uma lista iterável de floats. Os keyframes são distribuídos linearmente entre `start_percent` e `end_percent` com base no número de valores de intensidade fornecidos. O primeiro keyframe tem garantia de pelo menos um passo para garantir que seja aplicado.
 

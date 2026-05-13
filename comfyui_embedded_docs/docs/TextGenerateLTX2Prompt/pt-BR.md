@@ -8,13 +8,13 @@ O nó TextGenerateLTX2Prompt é uma versão especializada de um nó de geração
 |-----------|--------------|-------------|-------|-----------|
 | `clip` | CLIP | Sim | | O modelo CLIP usado para codificação de texto. |
 | `prompt` | STRING | Sim | | O texto bruto inserido pelo usuário que será aprimorado ou concluído. |
-| `max_length` | INT | Sim | | O número máximo de tokens que o modelo de linguagem pode gerar. |
-| `sampling_mode` | COMBO | Sim | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` | A estratégia de amostragem usada para selecionar o próximo token durante a geração de texto. |
-| `image` | IMAGE | Não | | Uma imagem opcional de entrada. Quando fornecida, o nó usa um prompt de sistema diferente que inclui um espaço reservado para o contexto da imagem. |
-| `thinking` | BOOLEAN | Não | | Quando ativado, o modelo exibirá seu processo de raciocínio antes da resposta final. |
+| `comprimento_máximo` | INT | Sim | | O número máximo de tokens que o modelo de linguagem pode gerar. |
+| `modo_de_amostragem` | COMBO | Sim | `"greedy"`<br>`"top_k"`<br>`"top_p"`<br>`"temperature"` | A estratégia de amostragem usada para selecionar o próximo token durante a geração de texto. |
+| `imagem` | IMAGE | Não | | Uma imagem opcional de entrada. Quando fornecida, o nó usa um prompt de sistema diferente que inclui um espaço reservado para o contexto da imagem. |
+| `pensando` | BOOLEAN | Não | | Quando ativado, o modelo exibirá seu processo de raciocínio antes da resposta final. |
 | `use_default_template` | BOOLEAN | Não | | Quando ativado, o nó usará o template de chat padrão para formatação. |
-| `video` | VIDEO | Não | | Uma entrada de vídeo opcional que pode ser usada como contexto adicional para a geração. |
-| `audio` | AUDIO | Não | | Uma entrada de áudio opcional que pode ser usada como contexto adicional para a geração. |
+| `vídeo` | VIDEO | Não | | Uma entrada de vídeo opcional que pode ser usada como contexto adicional para a geração. |
+| `áudio` | AUDIO | Não | | Uma entrada de áudio opcional que pode ser usada como contexto adicional para a geração. |
 
 **Nota:** O comportamento do nó muda com base na presença da entrada `image`. Se uma imagem for fornecida, o prompt gerado será formatado para uma tarefa de imagem para vídeo. Se nenhuma imagem for fornecida, a formatação será para uma tarefa de texto para vídeo.
 

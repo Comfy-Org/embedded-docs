@@ -6,14 +6,14 @@ O nó ModelSamplingAuraFlow aplica uma configuração de amostragem especializad
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo de difusão ao qual aplicar a configuração de amostragem AuraFlow |
-| `shift` | FLOAT | Sim | 0.0 - 100.0 | O valor de deslocamento a ser aplicado à distribuição de amostragem (padrão: 1,73) |
+| `modelo` | MODEL | Sim | - | O modelo de difusão ao qual aplicar a configuração de amostragem AuraFlow |
+| `deslocamento` | FLOAT | Sim | 0.0 - 100.0 | O valor de deslocamento a ser aplicado à distribuição de amostragem (padrão: 1,73) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com a configuração de amostragem AuraFlow aplicada |
+| `modelo` | MODEL | O modelo modificado com a configuração de amostragem AuraFlow aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `f49367534032fb2d697d16e8197c16dc761678a5e39990993bdc864bfccea314`

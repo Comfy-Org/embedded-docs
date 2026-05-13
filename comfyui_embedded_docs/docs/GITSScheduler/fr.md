@@ -9,8 +9,8 @@ Le nœud GITSScheduler génère les sigmas du planning de bruit pour la méthode
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `coeff` | FLOAT | Oui | 0,80 - 1,50 | La valeur du coefficient qui contrôle la courbe du planning de bruit (par défaut : 1,20) |
-| `steps` | INT | Oui | 2 - 1000 | Le nombre total d'étapes d'échantillonnage pour générer les sigmas (par défaut : 10) |
-| `denoise` | FLOAT | Oui | 0,0 - 1,0 | Facteur de débruitage qui réduit le nombre d'étapes utilisées (par défaut : 1,0) |
+| `étapes` | INT | Oui | 2 - 1000 | Le nombre total d'étapes d'échantillonnage pour générer les sigmas (par défaut : 10) |
+| `débruitage` | FLOAT | Oui | 0,0 - 1,0 | Facteur de débruitage qui réduit le nombre d'étapes utilisées (par défaut : 1,0) |
 
 **Remarque :** Lorsque `denoise` est défini sur 0,0, le nœud renvoie un tenseur vide. Lorsque `denoise` est inférieur à 1,0, le nombre réel d'étapes utilisées est calculé comme `round(steps * denoise)`. Pour les étapes supérieures à 20, le nœud utilise une interpolation log-linéaire pour étendre les niveaux de bruit prédéfinis au nombre d'étapes souhaité.
 

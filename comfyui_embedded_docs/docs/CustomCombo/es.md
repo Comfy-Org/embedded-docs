@@ -6,7 +6,7 @@ El nodo Combo Personalizado te permite crear un menú desplegable personalizado 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `choice` | COMBO | Sí | Definido por el usuario | La opción de texto seleccionada del menú desplegable personalizado. La lista de opciones disponibles es definida por el usuario en la interfaz del frontend del nodo. |
+| `elección` | COMBO | Sí | Definido por el usuario | La opción de texto seleccionada del menú desplegable personalizado. La lista de opciones disponibles es definida por el usuario en la interfaz del frontend del nodo. |
 | `index` | INT | No | 0 | Un valor entero que se puede usar para especificar un índice. Valor predeterminado: 0. |
 
 **Nota:** La validación para la entrada de este nodo está intencionalmente deshabilitada. Esto te permite definir cualquier opción de texto personalizada que desees en el frontend sin que el backend verifique si tu selección proviene de una lista predefinida.
@@ -15,7 +15,7 @@ El nodo Combo Personalizado te permite crear un menú desplegable personalizado 
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `STRING` | STRING | La cadena de texto de la opción seleccionada del cuadro combinado personalizado. |
+| `ÍNDICE` | STRING | La cadena de texto de la opción seleccionada del cuadro combinado personalizado. |
 | `INDEX` | INT | La posición de índice de la opción seleccionada en la lista desplegable. |
 
 ---

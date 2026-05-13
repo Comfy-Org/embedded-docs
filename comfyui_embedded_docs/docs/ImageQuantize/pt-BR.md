@@ -6,12 +6,12 @@ O nó ImageQuantize foi projetado para reduzir o número de cores em uma imagem 
 
 | Campo   | Tipo de Dado | Descrição                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------|
-| `image` | `IMAGE`      | O tensor de imagem de entrada a ser quantizado. Ele afeta a execução do nó por ser o dado principal sobre o qual a redução de cores é realizada. |
-| `colors`| `INT`        | Especifica o número de cores para reduzir a imagem. Influencia diretamente o processo de quantização ao determinar o tamanho da paleta de cores. |
-| `dither`| COMBO[STRING]| Determina a técnica de pontilhamento a ser aplicada durante a quantização, afetando a qualidade visual e a aparência da imagem de saída. |
+| `imagem` | `IMAGE`      | O tensor de imagem de entrada a ser quantizado. Ele afeta a execução do nó por ser o dado principal sobre o qual a redução de cores é realizada. |
+| `cores`| `INT`        | Especifica o número de cores para reduzir a imagem. Influencia diretamente o processo de quantização ao determinar o tamanho da paleta de cores. |
+| `dithering`| COMBO[STRING]| Determina a técnica de pontilhamento a ser aplicada durante a quantização, afetando a qualidade visual e a aparência da imagem de saída. |
 
 ## Saídas
 
 | Campo | Tipo de Dado | Descrição                                                                   |
 |-------|--------------|-----------------------------------------------------------------------------|
-| `image`| `IMAGE`      | A versão quantizada da imagem de entrada, com complexidade de cores reduzida e, opcionalmente, pontilhada para manter a qualidade visual. |
+| `imagem`| `IMAGE`      | A versão quantizada da imagem de entrada, com complexidade de cores reduzida e, opcionalmente, pontilhada para manter a qualidade visual. |

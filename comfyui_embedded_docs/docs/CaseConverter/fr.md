@@ -8,7 +8,7 @@ Le nœud Case Converter transforme les chaînes de texte en différents formats 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `string` | STRING | Oui | - | La chaîne de texte à convertir dans un format de casse différent |
+| `chaîne` | STRING | Oui | - | La chaîne de texte à convertir dans un format de casse différent |
 | `mode` | STRING | Oui | `"UPPERCASE"`<br>`"lowercase"`<br>`"Capitalize"`<br>`"Title Case"` | Le mode de conversion de casse à appliquer (par défaut : `"UPPERCASE"`) |
 
 ## Sorties

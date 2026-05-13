@@ -12,7 +12,7 @@ Ce nœud charge un modèle d'interpolation d'images à partir d'un fichier et le
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model_name` | STRING | Oui | Liste des fichiers de modèles dans le dossier `frame_interpolation` | Sélectionnez un modèle d'interpolation d'images à charger. Les modèles doivent être placés dans le dossier 'frame_interpolation'. |
+| `nom_du_modèle` | STRING | Oui | Liste des fichiers de modèles dans le dossier `frame_interpolation` | Sélectionnez un modèle d'interpolation d'images à charger. Les modèles doivent être placés dans le dossier 'frame_interpolation'. |
 
 ## Sorties
 

@@ -44,8 +44,8 @@ El nodo Kling Text to Video convierte descripciones textuales en contenido de vi
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `output` | VIDEO | La salida de video generada |
-| `video_id` | STRING | Identificador único para el video generado |
+| `video_id` | VIDEO | La salida de video generada |
+| `duration` | STRING | Identificador único para el video generado |
 | `duration` | STRING | Información de duración del video generado |
 
 ---

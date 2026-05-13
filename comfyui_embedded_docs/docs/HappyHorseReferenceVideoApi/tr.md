@@ -14,8 +14,8 @@ Bu düğüm, HappyHorse modelini kullanarak referans görüntülere dayalı olar
 | `ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | Oluşturulan videonun en-boy oranı. |
 | `duration` | INT | Evet | 3 ila 15 | Oluşturulan videonun saniye cinsinden süresi (varsayılan: 5). |
 | `reference_images` | IMAGE | Evet | 1 ila 9 | Videoda yer alacak kişi veya nesnenin bir veya daha fazla referans görüntüsü. En az bir görüntü sağlamanız gerekir. |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Tekrarlanabilir oluşturma için bir tohum değeri (varsayılan: 0). Tohum, her oluşturmadan sonra otomatik olarak değişecek şekilde ayarlanabilir. |
-| `watermark` | BOOLEAN | Hayır | True veya False | Ortaya çıkan videoya yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Tekrarlanabilir oluşturma için bir tohum değeri (varsayılan: 0). Tohum, her oluşturmadan sonra otomatik olarak değişecek şekilde ayarlanabilir. |
+| `filigran` | BOOLEAN | Hayır | True veya False | Ortaya çıkan videoya yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). |
 
 ## Çıktılar
 

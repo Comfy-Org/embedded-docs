@@ -6,13 +6,13 @@ Bu düğüm, Flux ve benzeri modeller için rehberlik gömme işlevini tamamen d
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Evet | - | Rehberliğin kaldırılacağı ve işlenecek koşullandırma verileri |
+| `koşullandırma` | CONDITIONING | Evet | - | Rehberliğin kaldırılacağı ve işlenecek koşullandırma verileri |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Rehberlik devre dışı bırakılmış şekilde değiştirilmiş koşullandırma verileri |
+| `koşullandırma` | CONDITIONING | Rehberlik devre dışı bırakılmış şekilde değiştirilmiş koşullandırma verileri |
 
 ---
 **Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`

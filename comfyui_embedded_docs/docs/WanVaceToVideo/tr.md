@@ -6,17 +6,17 @@ WanVaceToVideo düğümü, video oluşturma modelleri için video koşullama ver
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için pozitif koşullama girdisi |
-| `negative` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için negatif koşullama girdisi |
+| `pozitif` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için pozitif koşullama girdisi |
+| `negatif` | CONDITIONING | Evet | - | Oluşturmayı yönlendirmek için negatif koşullama girdisi |
 | `vae` | VAE | Evet | - | Görüntüleri ve video karelerini kodlamak için kullanılan VAE modeli |
-| `width` | INT | Evet | 16 ila MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) |
-| `height` | INT | Evet | 16 ila MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
-| `length` | INT | Evet | 1 ila MAX_RESOLUTION | Videodaki kare sayısı (varsayılan: 81, adım: 4) |
-| `batch_size` | INT | Evet | 1 ila 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
-| `strength` | FLOAT | Evet | 0,0 ila 1000,0 | Video koşullaması için kontrol gücü (varsayılan: 1,0, adım: 0,01) |
-| `control_video` | IMAGE | Hayır | - | Kontrol koşullaması için isteğe bağlı video girdisi |
-| `control_masks` | MASK | Hayır | - | Videonun hangi bölümlerinin değiştirileceğini kontrol etmek için isteğe bağlı maskeler |
-| `reference_image` | IMAGE | Hayır | - | Ek koşullama için isteğe bağlı referans görüntüsü |
+| `genişlik` | INT | Evet | 16 ila MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) |
+| `yükseklik` | INT | Evet | 16 ila MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
+| `uzunluk` | INT | Evet | 1 ila MAX_RESOLUTION | Videodaki kare sayısı (varsayılan: 81, adım: 4) |
+| `toplu_boyut` | INT | Evet | 1 ila 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
+| `güç` | FLOAT | Evet | 0,0 ila 1000,0 | Video koşullaması için kontrol gücü (varsayılan: 1,0, adım: 0,01) |
+| `kontrol_videosu` | IMAGE | Hayır | - | Kontrol koşullaması için isteğe bağlı video girdisi |
+| `kontrol_maskeleri` | MASK | Hayır | - | Videonun hangi bölümlerinin değiştirileceğini kontrol etmek için isteğe bağlı maskeler |
+| `referans_görüntüsü` | IMAGE | Hayır | - | Ek koşullama için isteğe bağlı referans görüntüsü |
 
 **Not:** `control_video` sağlandığında, belirtilen genişlik ve yüksekliğe uyacak şekilde yükseltilecektir. `control_masks` sağlanırsa, kontrol videosunun boyutlarıyla eşleşmelidir. `reference_image` sağlandığında VAE aracılığıyla kodlanır ve gizli diziye başa eklenir.
 
@@ -24,9 +24,9 @@ WanVaceToVideo düğümü, video oluşturma modelleri için video koşullama ver
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Video kontrol verileri uygulanmış pozitif koşullama |
-| `negative` | CONDITIONING | Video kontrol verileri uygulanmış negatif koşullama |
-| `latent` | LATENT | Video oluşturma için hazır boş gizli tensör |
+| `negatif` | CONDITIONING | Video kontrol verileri uygulanmış pozitif koşullama |
+| `gizli` | CONDITIONING | Video kontrol verileri uygulanmış negatif koşullama |
+| `gizliyi_kırp` | LATENT | Video oluşturma için hazır boş gizli tensör |
 | `trim_latent` | INT | Referans görüntüsü kullanıldığında kırpılacak gizli kare sayısı |
 
 ---

@@ -6,14 +6,14 @@ Este nó implementa o método de Escalonamento Épsilon (Epsilon Scaling) do art
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo ao qual o patch de escalonamento épsilon será aplicado. |
-| `scaling_factor` | FLOAT | Não | 0,5 - 1,5 | O fator pelo qual o ruído previsto é escalonado. Um valor maior que 1,0 reduz o ruído, enquanto um valor menor que 1,0 o aumenta (padrão: 1,005). |
+| `modelo` | MODEL | Sim | - | O modelo ao qual o patch de escalonamento épsilon será aplicado. |
+| `fator_de_escalonamento` | FLOAT | Não | 0,5 - 1,5 | O fator pelo qual o ruído previsto é escalonado. Um valor maior que 1,0 reduz o ruído, enquanto um valor menor que 1,0 o aumenta (padrão: 1,005). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | Uma versão corrigida do modelo de entrada com a função de escalonamento épsilon aplicada ao seu processo de amostragem. |
+| `modelo` | MODEL | Uma versão corrigida do modelo de entrada com a função de escalonamento épsilon aplicada ao seu processo de amostragem. |
 
 ---
 **Source fingerprint (SHA-256):** `85c464ce0b2ec2a031a01d9eef5d50fd300be3012499cc061705fb7964110882`

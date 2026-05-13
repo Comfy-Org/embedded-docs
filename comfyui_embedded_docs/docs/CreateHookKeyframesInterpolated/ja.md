@@ -10,11 +10,11 @@
 |-----------|-----------|----------|-------|-------------|
 | `strength_start` | FLOAT | はい | 0.0 - 10.0 | 補間シーケンスの開始強度値（デフォルト: 1.0） |
 | `strength_end` | FLOAT | はい | 0.0 - 10.0 | 補間シーケンスの終了強度値（デフォルト: 1.0） |
-| `interpolation` | COMBO | はい | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | 強度値間の遷移に使用する補間方式（デフォルト: LINEAR） |
+| `補間` | COMBO | はい | `LINEAR`<br>`EASE_IN`<br>`EASE_OUT`<br>`EASE_IN_OUT`<br>`EASE_OUT_IN`<br>`SINE`<br>`CUBIC`<br>`QUARTIC`<br>`QUINTIC`<br>`EXPO`<br>`CIRC`<br>`BACK`<br>`BOUNCE`<br>`ELASTIC` | 強度値間の遷移に使用する補間方式（デフォルト: LINEAR） |
 | `start_percent` | FLOAT | はい | 0.0 - 1.0 | 生成プロセスにおける開始パーセンテージ位置（デフォルト: 0.0） |
 | `end_percent` | FLOAT | はい | 0.0 - 1.0 | 生成プロセスにおける終了パーセンテージ位置（デフォルト: 1.0） |
-| `keyframes_count` | INT | はい | 2 - 100 | 補間シーケンスで生成するキーフレームの数（デフォルト: 5） |
-| `print_keyframes` | BOOLEAN | はい | True/False | 生成されたキーフレーム情報をログに出力するかどうか（デフォルト: False） |
+| `キーフレーム数` | INT | はい | 2 - 100 | 補間シーケンスで生成するキーフレームの数（デフォルト: 5） |
+| `キーフレームを印刷` | BOOLEAN | はい | True/False | 生成されたキーフレーム情報をログに出力するかどうか（デフォルト: False） |
 | `prev_hook_kf` | HOOK_KEYFRAMES | いいえ | - | 追加先となる、オプションの既存フックキーフレームグループ |
 
 ## 出力

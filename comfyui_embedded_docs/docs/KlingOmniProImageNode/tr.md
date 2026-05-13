@@ -10,7 +10,7 @@ Kling Omni Image (Pro) düğümü, en yeni Kling AI modelini kullanarak görsell
 | `prompt` | STRING | Evet | - | Görsel içeriğini tanımlayan bir metin istemi. Hem olumlu hem de olumsuz açıklamalar içerebilir. Metin 1 ile 2500 karakter arasında olmalıdır. |
 | `resolution` | COMBO | Evet | `"1K"`<br>`"2K"`<br>`"4K"` | Oluşturulan görsel için hedef çözünürlük. Not: 4K çözünürlük `kling-image-o1` modeli tarafından desteklenmez. |
 | `aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"21:9"` | Oluşturulan görsel için istenen en-boy oranı (genişlik/yükseklik). |
-| `series_amount` | COMBO | Evet | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Bir dizi görsel oluşturun. Bu özellik `kling-image-o1` modeli tarafından desteklenmez. (varsayılan: "disabled") |
+| `seri_sayısı` | COMBO | Evet | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Bir dizi görsel oluşturun. Bu özellik `kling-image-o1` modeli tarafından desteklenmez. (varsayılan: "disabled") |
 | `reference_images` | IMAGE | Hayır | - | En fazla 10 adet ek referans görseli. Her görselin genişlik ve yüksekliği en az 300 piksel olmalı ve en-boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. |
 | `seed` | INT | Hayır | 0 ile 2147483647 arası | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir. (varsayılan: 0) |
 

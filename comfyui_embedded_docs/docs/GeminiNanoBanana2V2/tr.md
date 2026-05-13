@@ -51,7 +51,7 @@ Bu düğüm, Google'ın Vertex AI API'sine bir metin istemi göndererek görsell
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `IMAGE` | IMAGE | Oluşturulan veya düzenlenen görsel. |
-| `STRING` | STRING | Model tarafından oluşturulan bir metin açıklaması veya başlık. |
+| `thought_image` | STRING | Model tarafından oluşturulan bir metin açıklaması veya başlık. |
 | `thought_image` | IMAGE | Modelin düşünme sürecindeki ilk görsel. Yalnızca düşünme_seviyesi YÜKSEK ve IMAGE+TEXT modalitesi ile kullanılabilir. |
 
 ---

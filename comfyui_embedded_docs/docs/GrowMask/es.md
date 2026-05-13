@@ -6,12 +6,12 @@ El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dad
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | La máscara de entrada que se va a modificar. Este parámetro es central para el funcionamiento del nodo, ya que sirve como base sobre la cual se expande o contrae la máscara. |
-| `expand`  | INT         | Determina la magnitud y dirección de la modificación de la máscara. Los valores positivos expanden la máscara, mientras que los valores negativos la contraen. Este parámetro influye directamente en el tamaño final de la máscara. |
-| `tapered_corners` | BOOLEAN    | Un indicador booleano que, cuando se establece en Verdadero, aplica un efecto de biselado en las esquinas de la máscara durante la modificación. Esta opción permite transiciones más suaves y resultados visualmente atractivos. |
+| `máscara`    | MASK        | La máscara de entrada que se va a modificar. Este parámetro es central para el funcionamiento del nodo, ya que sirve como base sobre la cual se expande o contrae la máscara. |
+| `expandir`  | INT         | Determina la magnitud y dirección de la modificación de la máscara. Los valores positivos expanden la máscara, mientras que los valores negativos la contraen. Este parámetro influye directamente en el tamaño final de la máscara. |
+| `esquinas_afiladas` | BOOLEAN    | Un indicador booleano que, cuando se establece en Verdadero, aplica un efecto de biselado en las esquinas de la máscara durante la modificación. Esta opción permite transiciones más suaves y resultados visualmente atractivos. |
 
 ## Salidas
 
 | Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `mask`    | MASK        | La máscara modificada después de aplicar la expansión/contracción especificada y el efecto opcional de biselado en las esquinas. |
+| `máscara`    | MASK        | La máscara modificada después de aplicar la expansión/contracción especificada y el efecto opcional de biselado en las esquinas. |

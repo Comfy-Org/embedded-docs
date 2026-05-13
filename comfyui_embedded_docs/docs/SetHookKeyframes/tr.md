@@ -6,14 +6,14 @@ Set Hook Keyframes düğümü, mevcut hook gruplarına anahtar kare zamanlaması
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `hooks` | HOOKS | Evet | - | Anahtar kare zamanlamasının uygulanacağı hook grubu |
-| `hook_kf` | HOOK_KEYFRAMES | Hayır | - | Hook yürütme zamanlaması bilgilerini içeren isteğe bağlı anahtar kare grubu |
+| `kancalar` | HOOKS | Evet | - | Anahtar kare zamanlamasının uygulanacağı hook grubu |
+| `kanca_kf` | HOOK_KEYFRAMES | Hayır | - | Hook yürütme zamanlaması bilgilerini içeren isteğe bağlı anahtar kare grubu |
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `hooks` | HOOKS | Anahtar kare zamanlaması uygulanmış değiştirilmiş hook grubu (anahtar kareler sağlandıysa kopyalanmıştır) |
+| `kancalar` | HOOKS | Anahtar kare zamanlaması uygulanmış değiştirilmiş hook grubu (anahtar kareler sağlandıysa kopyalanmıştır) |
 
 ---
 **Source fingerprint (SHA-256):** `48908e5247b18e5b7b1d894c2f1adcf6403e499125b0c3eb05978584b3d5759b`

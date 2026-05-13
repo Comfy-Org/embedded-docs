@@ -7,7 +7,7 @@ Metin Ön Eki Ekle düğümü, her bir girdi metninin başına belirtilen bir di
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `text` | STRING | Evet | | Ön ekin ekleneceği metin. |
-| `prefix` | STRING | Hayır | | Metnin başına eklenecek dize (varsayılan: ""). |
+| `ön ek` | STRING | Hayır | | Metnin başına eklenecek dize (varsayılan: ""). |
 
 ## Çıktılar
 

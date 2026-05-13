@@ -6,14 +6,14 @@ El nodo `ModelComputeDtype` cambia el tipo de datos computacional (precisión) u
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de entrada al que se le aplicará un nuevo tipo de datos computacional |
+| `modelo` | MODEL | Sí | - | El modelo de entrada al que se le aplicará un nuevo tipo de datos computacional |
 | `dtype` | STRING | Sí | "default"<br>"fp32"<br>"fp16"<br>"bf16" | El tipo de datos computacional que se aplicará al modelo (predeterminado: "default") |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con el nuevo tipo de datos computacional aplicado |
+| `modelo` | MODEL | El modelo modificado con el nuevo tipo de datos computacional aplicado |
 
 ---
 **Source fingerprint (SHA-256):** `bc65f1e452d0122ad175a8b95f38a36503253c9908157037c516496e65c828e6`

@@ -6,9 +6,9 @@ SDTurboScheduler foi projetado para gerar uma sequência de valores sigma para a
 
 | Parâmetro | Tipo de Dados | Descrição |
 | --- | --- | --- |
-| `model` | `MODEL` | O parâmetro model especifica o modelo generativo a ser usado para a geração dos valores sigma. É crucial para determinar o comportamento de amostragem específico e as capacidades do agendador. |
-| `steps` | `INT` | O parâmetro steps determina o comprimento da sequência sigma a ser gerada, influenciando diretamente a granularidade do processo de redução de ruído. |
-| `denoise` | `FLOAT` | O parâmetro denoise ajusta o ponto inicial da sequência sigma, permitindo um controle mais preciso sobre o nível de redução de ruído aplicado durante a geração da imagem. |
+| `modelo` | `MODEL` | O parâmetro model especifica o modelo generativo a ser usado para a geração dos valores sigma. É crucial para determinar o comportamento de amostragem específico e as capacidades do agendador. |
+| `passos` | `INT` | O parâmetro steps determina o comprimento da sequência sigma a ser gerada, influenciando diretamente a granularidade do processo de redução de ruído. |
+| `redução_de_ruído` | `FLOAT` | O parâmetro denoise ajusta o ponto inicial da sequência sigma, permitindo um controle mais preciso sobre o nível de redução de ruído aplicado durante a geração da imagem. |
 
 ## Saídas
 

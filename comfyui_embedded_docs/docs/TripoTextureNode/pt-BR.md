@@ -7,11 +7,11 @@ O TripoTextureNode gera modelos 3D texturizados usando a API Tripo. Ele recebe u
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `model_task_id` | MODEL_TASK_ID | Sim | - | O ID da tarefa do modelo ao qual aplicar as texturas |
-| `texture` | BOOLEAN | Não | - | Se deve gerar texturas (padrão: True) |
+| `textura` | BOOLEAN | Não | - | Se deve gerar texturas (padrão: True) |
 | `pbr` | BOOLEAN | Não | - | Se deve gerar materiais PBR (Renderização Baseada em Física) (padrão: True) |
-| `texture_seed` | INT | Não | - | Semente aleatória para geração de textura (padrão: 42) |
-| `texture_quality` | COMBO | Não | "standard"<br>"detailed" | Nível de qualidade para geração de textura (padrão: "standard"). A opção "detailed" custa US$ 0,20, enquanto "standard" custa US$ 0,10. |
-| `texture_alignment` | COMBO | Não | "original_image"<br>"geometry" | Método para alinhar texturas (padrão: "original_image"). "original_image" alinha texturas à imagem de entrada original, enquanto "geometry" as alinha à geometria 3D. |
+| `semente_textura` | INT | Não | - | Semente aleatória para geração de textura (padrão: 42) |
+| `qualidade_textura` | COMBO | Não | "standard"<br>"detailed" | Nível de qualidade para geração de textura (padrão: "standard"). A opção "detailed" custa US$ 0,20, enquanto "standard" custa US$ 0,10. |
+| `alinhamento_textura` | COMBO | Não | "original_image"<br>"geometry" | Método para alinhar texturas (padrão: "original_image"). "original_image" alinha texturas à imagem de entrada original, enquanto "geometry" as alinha à geometria 3D. |
 
 *Nota: Este nó requer tokens de autenticação e chaves de API que são tratados automaticamente pelo sistema.*
 

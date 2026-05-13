@@ -11,7 +11,7 @@ ImageOnlyCheckpointSave 節點用於儲存包含模型、CLIP 視覺編碼器和
 | `model` | MODEL | 是 | - | 要儲存在檢查點中的模型 |
 | `clip_vision` | CLIP_VISION | 是 | - | 要儲存在檢查點中的 CLIP 視覺編碼器 |
 | `vae` | VAE | 是 | - | 要儲存在檢查點中的 VAE（變分自編碼器） |
-| `filename_prefix` | STRING | 是 | - | 輸出檔案名稱的前綴（預設值："checkpoints/ComfyUI"） |
+| `檔名前綴` | STRING | 是 | - | 輸出檔案名稱的前綴（預設值："checkpoints/ComfyUI"） |
 | `prompt` | PROMPT | 否 | - | 工作流程提示資料的隱藏參數 |
 | `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 額外 PNG 元資料的隱藏參數 |
 

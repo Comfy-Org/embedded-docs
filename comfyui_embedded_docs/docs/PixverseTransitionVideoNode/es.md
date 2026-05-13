@@ -6,14 +6,14 @@ Genera un video de transición entre dos imágenes de entrada utilizando la API 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `first_frame` | IMAGE | Sí | - | Imagen de inicio para la transición del video |
-| `last_frame` | IMAGE | Sí | - | Imagen de finalización para la transición del video |
+| `primer fotograma` | IMAGE | Sí | - | Imagen de inicio para la transición del video |
+| `último fotograma` | IMAGE | Sí | - | Imagen de finalización para la transición del video |
 | `prompt` | STRING | Sí | - | Indicación para la generación del video (predeterminado: cadena vacía) |
-| `quality` | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` | Configuración de calidad del video (predeterminado: `"540p"`) |
-| `duration_seconds` | COMBO | Sí | `5`<br>`8` | Duración del video en segundos |
-| `motion_mode` | COMBO | Sí | `"normal"`<br>`"fast"` | Estilo de movimiento para la transición (predeterminado: `"normal"`) |
-| `seed` | INT | Sí | 0 a 2147483647 | Semilla para la generación del video (predeterminado: 0) |
-| `negative_prompt` | STRING | No | - | Una descripción textual opcional de elementos no deseados en una imagen (predeterminado: cadena vacía) |
+| `calidad` | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` | Configuración de calidad del video (predeterminado: `"540p"`) |
+| `duración en segundos` | COMBO | Sí | `5`<br>`8` | Duración del video en segundos |
+| `modo de movimiento` | COMBO | Sí | `"normal"`<br>`"fast"` | Estilo de movimiento para la transición (predeterminado: `"normal"`) |
+| `semilla` | INT | Sí | 0 a 2147483647 | Semilla para la generación del video (predeterminado: 0) |
+| `prompt negativo` | STRING | No | - | Una descripción textual opcional de elementos no deseados en una imagen (predeterminado: cadena vacía) |
 
 **Nota sobre las restricciones de parámetros:** Al usar calidad 1080p, el modo de movimiento se establece automáticamente en `"normal"` y la duración se limita a 5 segundos. Para cualquier duración distinta de 5 segundos, el modo de movimiento también se establece automáticamente en `"normal"`.
 

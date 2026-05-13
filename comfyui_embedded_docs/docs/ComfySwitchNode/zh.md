@@ -6,9 +6,9 @@ Switch 节点根据布尔条件在两个可能的输入之间进行选择。当 
 
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `switch` | BOOLEAN | 是 | | 决定传递哪个输入的布尔条件。启用（true）时，选择 `on_true` 输入；禁用（false）时，选择 `on_false` 输入。 |
-| `on_false` | MATCH_TYPE | 否 | | 当 `switch` 禁用（false）时传递给输出的数据。此输入仅在 `switch` 为 false 时必填。 |
-| `on_true` | MATCH_TYPE | 否 | | 当 `switch` 启用（true）时传递给输出的数据。此输入仅在 `switch` 为 true 时必填。 |
+| `切换` | BOOLEAN | 是 | | 决定传递哪个输入的布尔条件。启用（true）时，选择 `为真时` 输入；禁用（false）时，选择 `为假时` 输入。 |
+| `为假时` | MATCH_TYPE | 否 | | 当 `切换` 禁用（false）时传递给输出的数据。此输入仅在 `切换` 为 false 时必填。 |
+| `为真时` | MATCH_TYPE | 否 | | 当 `切换` 启用（true）时传递给输出的数据。此输入仅在 `切换` 为 true 时必填。 |
 
 **关于输入要求的说明：** `on_false` 和 `on_true` 输入为条件性必填。节点仅在 `switch` 为 true 时请求 `on_true` 输入，仅在 `switch` 为 false 时请求 `on_false` 输入。两个输入必须具有相同的数据类型。
 
@@ -16,7 +16,7 @@ Switch 节点根据布尔条件在两个可能的输入之间进行选择。当 
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
-| `output` | MATCH_TYPE | 选中的数据。如果 `switch` 为 true，则为 `on_true` 输入的值；如果 `switch` 为 false，则为 `on_false` 输入的值。 |
+| `output` | MATCH_TYPE | 选中的数据。如果 `切换` 为 true，则为 `为真时` 输入的值；如果 `切换` 为 false，则为 `为假时` 输入的值。 |
 
 ---
 **Source fingerprint (SHA-256):** `9f3cf58c1a04116fa0cbe8007fe3ed90e93c4de2e65f6778761d03fb21a63af3`

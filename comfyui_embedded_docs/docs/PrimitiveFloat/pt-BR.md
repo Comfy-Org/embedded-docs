@@ -6,7 +6,7 @@ O nó PrimitiveFloat cria um valor numérico de ponto flutuante que pode ser uti
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `value` | FLOAT | Sim | -sys.maxsize a sys.maxsize (passo: 0.1) | O valor numérico de ponto flutuante a ser gerado (padrão: 0.0) |
+| `valor` | FLOAT | Sim | -sys.maxsize a sys.maxsize (passo: 0.1) | O valor numérico de ponto flutuante a ser gerado (padrão: 0.0) |
 
 ## Saídas
 

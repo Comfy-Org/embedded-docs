@@ -8,8 +8,8 @@ Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/diffusio
 
 | Parámetro   | Tipo de Dato | Descripción |
 |-------------|--------------|-------------|
-| `unet_name` | COMBO[STRING] | Especifica el nombre del modelo U-Net a cargar. Este nombre se utiliza para localizar el modelo dentro de una estructura de directorios predefinida, permitiendo la carga dinámica de diferentes modelos U-Net. |
-| `weight_dtype` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
+| `nombre_unet` | COMBO[STRING] | Especifica el nombre del modelo U-Net a cargar. Este nombre se utiliza para localizar el modelo dentro de una estructura de directorios predefinida, permitiendo la carga dinámica de diferentes modelos U-Net. |
+| `tipo_dato_peso` | ... | 🚧  fp8_e4m3fn fp9_e5m2  |
 
 ## Salidas
 

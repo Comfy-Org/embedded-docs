@@ -6,12 +6,12 @@ El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobr
 
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
-| `images` | IMAGE | Sí | - | La secuencia de imágenes de entrada o fotogramas de video sobre los cuales visualizar las trayectorias. |
-| `tracks` | TRACKS | No | - | Los datos de seguimiento de movimiento que contienen las trayectorias de los puntos e información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. |
-| `line_resolution` | INT | Sí | 1 - 1024 | El número de fotogramas anteriores a utilizar al dibujar la línea de trayectoria posterior para cada seguimiento (predeterminado: 24). |
-| `circle_size` | INT | Sí | 1 - 128 | El tamaño del círculo dibujado en la posición actual de cada seguimiento (predeterminado: 12). |
-| `opacity` | FLOAT | Sí | 0.0 - 1.0 | La opacidad de las superposiciones de seguimiento dibujadas (predeterminado: 0.75). |
-| `line_width` | INT | Sí | 1 - 128 | El ancho de las líneas utilizadas para dibujar las trayectorias de seguimiento (predeterminado: 16). |
+| `imágenes` | IMAGE | Sí | - | La secuencia de imágenes de entrada o fotogramas de video sobre los cuales visualizar las trayectorias. |
+| `pistas` | TRACKS | No | - | Los datos de seguimiento de movimiento que contienen las trayectorias de los puntos e información de visibilidad. Si no se proporcionan, las imágenes de entrada se pasan sin cambios. |
+| `resolución_de_línea` | INT | Sí | 1 - 1024 | El número de fotogramas anteriores a utilizar al dibujar la línea de trayectoria posterior para cada seguimiento (predeterminado: 24). |
+| `tamaño_círculo` | INT | Sí | 1 - 128 | El tamaño del círculo dibujado en la posición actual de cada seguimiento (predeterminado: 12). |
+| `opacidad` | FLOAT | Sí | 0.0 - 1.0 | La opacidad de las superposiciones de seguimiento dibujadas (predeterminado: 0.75). |
+| `ancho_de_línea` | INT | Sí | 1 - 128 | El ancho de las líneas utilizadas para dibujar las trayectorias de seguimiento (predeterminado: 16). |
 
 **Nota:** Si el número de imágenes de entrada no coincide con el número de fotogramas en los datos de `tracks` proporcionados, la secuencia de imágenes se repetirá para igualar la longitud de las trayectorias.
 
@@ -19,7 +19,7 @@ El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobr
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `IMAGE` | IMAGE | La secuencia de imágenes con los datos de seguimiento de movimiento visualizados como superposiciones. Si no se proporcionaron `tracks`, se devuelven las imágenes de entrada originales. |
+| `IMAGE` | IMAGE | La secuencia de imágenes con los datos de seguimiento de movimiento visualizados como superposiciones. Si no se proporcionaron `pistas`, se devuelven las imágenes de entrada originales. |
 
 ---
 **Source fingerprint (SHA-256):** `b32169a8c9d3a2dd74463c81f6bd7d9a4bc66486af156843f32b0874f0eaeb8f`

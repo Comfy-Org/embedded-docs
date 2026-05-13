@@ -6,7 +6,7 @@ PrimitiveFloat düğümü, iş akışınızda kullanılabilecek bir kayan noktal
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
-| `value` | FLOAT | Evet | -sys.maxsize ile sys.maxsize (adım: 0.1) | Çıktı olarak verilecek kayan noktalı sayı değeri (varsayılan: 0.0) |
+| `değer` | FLOAT | Evet | -sys.maxsize ile sys.maxsize (adım: 0.1) | Çıktı olarak verilecek kayan noktalı sayı değeri (varsayılan: 0.0) |
 
 ## Çıktılar
 

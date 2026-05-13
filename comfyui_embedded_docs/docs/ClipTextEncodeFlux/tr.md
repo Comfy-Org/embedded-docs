@@ -9,7 +9,7 @@
 | `clip` | CLIP | Evet | - | Flux mimarisini destekleyen, hem CLIP-L hem de T5XXL kodlayıcılarını içeren bir CLIP modeli. |
 | `clip_l` | STRING | Evet | - | CLIP-L kodlayıcı tarafından işlenen metin girdisi. Stil veya tema gibi kısa anahtar kelime açıklamaları için uygundur. Çok satırlı girdi ve dinamik istemleri destekler. |
 | `t5xxl` | STRING | Evet | - | T5XXL kodlayıcı tarafından işlenen metin girdisi. Karmaşık sahneleri ve detayları ifade eden ayrıntılı doğal dil açıklamaları için uygundur. Çok satırlı girdi ve dinamik istemleri destekler. |
-| `guidance` | FLOAT | Evet | 0.0 - 100.0 | Metin koşullarının üretim süreci üzerindeki etkisini kontrol eder. Daha yüksek değerler, metne daha sıkı bağlılık anlamına gelir. Varsayılan: 3.5. |
+| `rehberlik` | FLOAT | Evet | 0.0 - 100.0 | Metin koşullarının üretim süreci üzerindeki etkisini kontrol eder. Daha yüksek değerler, metne daha sıkı bağlılık anlamına gelir. Varsayılan: 3.5. |
 
 ## Çıktılar
 

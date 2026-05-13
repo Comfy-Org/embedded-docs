@@ -6,13 +6,13 @@ Pinta imágenes basándose en una máscara y un mensaje de texto. Este nodo util
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a pintar |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a pintar |
 | `mask` | MASK | Sí | - | La máscara que define qué áreas de la imagen deben rellenarse |
 | `prompt` | STRING | No | - | Mensaje de texto para la generación de la imagen (predeterminado: cadena vacía) |
-| `prompt_upsampling` | BOOLEAN | No | - | Si se debe realizar un sobremuestreo en el mensaje de texto. Si está activo, modifica automáticamente el mensaje para una generación más creativa, pero los resultados no son deterministas (la misma semilla no producirá exactamente el mismo resultado). (predeterminado: false) |
-| `guidance` | FLOAT | No | 1.5-100 | Intensidad de guía para el proceso de generación de la imagen (predeterminado: 60) |
-| `steps` | INT | No | 15-50 | Número de pasos para el proceso de generación de la imagen (predeterminado: 50) |
-| `seed` | INT | No | 0-18446744073709551615 | La semilla aleatoria utilizada para crear el ruido. (predeterminado: 0) |
+| `re-muestreo de prompt` | BOOLEAN | No | - | Si se debe realizar un sobremuestreo en el mensaje de texto. Si está activo, modifica automáticamente el mensaje para una generación más creativa, pero los resultados no son deterministas (la misma semilla no producirá exactamente el mismo resultado). (predeterminado: false) |
+| `guía` | FLOAT | No | 1.5-100 | Intensidad de guía para el proceso de generación de la imagen (predeterminado: 60) |
+| `pasos` | INT | No | 15-50 | Número de pasos para el proceso de generación de la imagen (predeterminado: 50) |
+| `semilla` | INT | No | 0-18446744073709551615 | La semilla aleatoria utilizada para crear el ruido. (predeterminado: 0) |
 
 ## Salidas
 

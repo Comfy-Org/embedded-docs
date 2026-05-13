@@ -6,7 +6,7 @@ Este nó detecta automaticamente os modelos localizados na pasta `ComfyUI/models
 
 | Campo       | Tipo de Dado   | Descrição |
 |-------------|---------------|-----------|
-| `clip_name` | COMBO[STRING]  | Lista todos os arquivos de modelo suportados na pasta `ComfyUI/models/clip_vision`. |
+| `nome_do_clip` | COMBO[STRING]  | Lista todos os arquivos de modelo suportados na pasta `ComfyUI/models/clip_vision`. |
 
 ## Saídas
 

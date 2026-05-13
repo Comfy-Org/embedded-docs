@@ -14,7 +14,7 @@ Le nœud SplitAudioChannels sépare un fichier audio stéréo en canaux gauche e
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `left` | AUDIO | Le canal gauche séparé de l'audio |
+| `droite` | AUDIO | Le canal gauche séparé de l'audio |
 | `right` | AUDIO | Le canal droit séparé de l'audio |
 
 ---

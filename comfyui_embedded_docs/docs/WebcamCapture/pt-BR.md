@@ -6,10 +6,10 @@ O nó WebcamCapture captura imagens de um dispositivo de webcam e as converte em
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `image` | WEBCAM | Sim | - | A fonte de entrada da webcam para capturar imagens |
-| `width` | INT | Sim | 0 a MAX_RESOLUTION | A largura desejada para a imagem capturada (padrão: 0, usa a resolução nativa da webcam) |
-| `height` | INT | Sim | 0 a MAX_RESOLUTION | A altura desejada para a imagem capturada (padrão: 0, usa a resolução nativa da webcam) |
-| `capture_on_queue` | BOOLEAN | Sim | - | Quando habilitado, captura uma nova imagem a cada vez que a fila do fluxo de trabalho for processada (padrão: True) |
+| `imagem` | WEBCAM | Sim | - | A fonte de entrada da webcam para capturar imagens |
+| `largura` | INT | Sim | 0 a MAX_RESOLUTION | A largura desejada para a imagem capturada (padrão: 0, usa a resolução nativa da webcam) |
+| `altura` | INT | Sim | 0 a MAX_RESOLUTION | A altura desejada para a imagem capturada (padrão: 0, usa a resolução nativa da webcam) |
+| `capturar_na_fila` | BOOLEAN | Sim | - | Quando habilitado, captura uma nova imagem a cada vez que a fila do fluxo de trabalho for processada (padrão: True) |
 
 **Observação:** Quando tanto `width` quanto `height` estiverem definidos como 0, o nó utiliza a resolução nativa da webcam. Definir qualquer uma das dimensões com um valor diferente de zero redimensionará a imagem capturada de acordo.
 

@@ -7,7 +7,7 @@ Bu düğüm, belirli bir koşullandırma kümesinin güç özelliğini değişti
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
 | `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma kümesi; üretim sürecini etkileyen mevcut koşullandırma durumunu temsil eder. |
-| `strength` | `FLOAT` | Koşullandırma kümesine uygulanacak güç değeri; etkisinin yoğunluğunu belirler. |
+| `güç` | `FLOAT` | Koşullandırma kümesine uygulanacak güç değeri; etkisinin yoğunluğunu belirler. |
 
 ## Çıkışlar
 

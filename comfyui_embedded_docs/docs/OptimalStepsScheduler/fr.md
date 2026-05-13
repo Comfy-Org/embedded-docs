@@ -7,8 +7,8 @@ Le nœud OptimalStepsScheduler calcule les sigmas du programme de bruit pour les
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `model_type` | COMBO | Oui | "FLUX"<br>"Wan"<br>"Chroma" | Le type de modèle de diffusion à utiliser pour le calcul du niveau de bruit |
-| `steps` | INT | Oui | 3-1000 | Le nombre total d'étapes d'échantillonnage à calculer (par défaut : 20) |
-| `denoise` | FLOAT | Non | 0.0-1.0 | Contrôle la force de débruitage, qui ajuste le nombre effectif d'étapes (par défaut : 1.0) |
+| `étapes` | INT | Oui | 3-1000 | Le nombre total d'étapes d'échantillonnage à calculer (par défaut : 20) |
+| `réduction du bruit` | FLOAT | Non | 0.0-1.0 | Contrôle la force de débruitage, qui ajuste le nombre effectif d'étapes (par défaut : 1.0) |
 
 **Remarque :** Lorsque `denoise` est défini sur une valeur inférieure à 1.0, le nœud calcule les étapes effectives comme `steps * denoise`. Si `denoise` est défini sur 0.0, le nœud renvoie un tenseur vide.
 

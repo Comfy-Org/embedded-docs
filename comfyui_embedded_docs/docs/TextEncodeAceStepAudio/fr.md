@@ -9,9 +9,9 @@ Le nœud TextEncodeAceStepAudio traite les entrées textuelles pour le condition
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | - | Le modèle CLIP utilisé pour la tokenisation et l'encodage |
-| `tags` | STRING | Oui | - | Balises ou descriptions textuelles pour le conditionnement audio (prend en charge les entrées multilignes et les invites dynamiques) |
-| `lyrics` | STRING | Oui | - | Texte des paroles pour le conditionnement audio (prend en charge les entrées multilignes et les invites dynamiques) |
-| `lyrics_strength` | FLOAT | Non | 0,0 - 10,0 | Contrôle la force d'influence des paroles sur la sortie de conditionnement (valeur par défaut : 1,0, pas : 0,01) |
+| `balises` | STRING | Oui | - | Balises ou descriptions textuelles pour le conditionnement audio (prend en charge les entrées multilignes et les invites dynamiques) |
+| `paroles` | STRING | Oui | - | Texte des paroles pour le conditionnement audio (prend en charge les entrées multilignes et les invites dynamiques) |
+| `force_des_paroles` | FLOAT | Non | 0,0 - 10,0 | Contrôle la force d'influence des paroles sur la sortie de conditionnement (valeur par défaut : 1,0, pas : 0,01) |
 
 ## Sorties
 

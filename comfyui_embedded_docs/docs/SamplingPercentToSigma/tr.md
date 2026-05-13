@@ -7,8 +7,8 @@
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Evet | - | Dönüşüm için kullanılan örnekleme parametrelerini içeren model |
-| `sampling_percent` | FLOAT | Evet | 0.0 ile 1.0 | Sigma'ya dönüştürülecek örnekleme yüzdesi (varsayılan: 0.0) |
-| `return_actual_sigma` | BOOLEAN | Evet | - | Aralık kontrolleri için kullanılan değer yerine gerçek sigma değerini döndürür. Bu yalnızca 0.0 ve 1.0'daki sonuçları etkiler. (varsayılan: False) |
+| `örnekleme_yüzdesi` | FLOAT | Evet | 0.0 ile 1.0 | Sigma'ya dönüştürülecek örnekleme yüzdesi (varsayılan: 0.0) |
+| `gerçek_sigma_değerini_döndür` | BOOLEAN | Evet | - | Aralık kontrolleri için kullanılan değer yerine gerçek sigma değerini döndürür. Bu yalnızca 0.0 ve 1.0'daki sonuçları etkiler. (varsayılan: False) |
 
 ## Çıktılar
 

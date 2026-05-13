@@ -7,9 +7,9 @@ El nodo TextEncodeAceStepAudio procesa entradas de texto para el acondicionamien
 | Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
 |-----------|--------------|-----------|-------|-------------|
 | `clip` | CLIP | Sí | - | El modelo CLIP utilizado para tokenización y codificación |
-| `tags` | STRING | Sí | - | Etiquetas o descripciones de texto para el acondicionamiento de audio (admite entrada multilínea y avisos dinámicos) |
-| `lyrics` | STRING | Sí | - | Texto de letras para el acondicionamiento de audio (admite entrada multilínea y avisos dinámicos) |
-| `lyrics_strength` | FLOAT | No | 0.0 - 10.0 | Controla la intensidad de la influencia de las letras en la salida de acondicionamiento (predeterminado: 1.0, incremento: 0.01) |
+| `etiquetas` | STRING | Sí | - | Etiquetas o descripciones de texto para el acondicionamiento de audio (admite entrada multilínea y avisos dinámicos) |
+| `letras` | STRING | Sí | - | Texto de letras para el acondicionamiento de audio (admite entrada multilínea y avisos dinámicos) |
+| `intensidad_letras` | FLOAT | No | 0.0 - 10.0 | Controla la intensidad de la influencia de las letras en la salida de acondicionamiento (predeterminado: 1.0, incremento: 0.01) |
 
 ## Salidas
 

@@ -7,7 +7,7 @@ Ce nœud ajoute un suffixe spécifié à la fin d'une chaîne de texte d'entrée
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `text` | STRING | Oui | | Le texte original auquel le suffixe sera ajouté. |
-| `suffix` | STRING | Non | | Le suffixe à ajouter au texte (par défaut : ""). |
+| `suffixe` | STRING | Non | | Le suffixe à ajouter au texte (par défaut : ""). |
 
 ## Sorties
 

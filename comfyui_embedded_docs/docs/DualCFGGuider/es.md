@@ -6,13 +6,13 @@ El nodo DualCFGGuider crea un sistema de guía para muestreo de guía libre de c
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo a utilizar para la guía |
+| `modelo` | MODEL | Sí | - | El modelo a utilizar para la guía |
 | `cond1` | CONDITIONING | Sí | - | La primera entrada de condicionamiento positivo |
 | `cond2` | CONDITIONING | Sí | - | La segunda entrada de condicionamiento positivo |
-| `negative` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo |
+| `negativo` | CONDITIONING | Sí | - | La entrada de condicionamiento negativo |
 | `cfg_conds` | FLOAT | Sí | 0.0 - 100.0 | Escala de guía para el primer condicionamiento positivo (predeterminado: 8.0) |
-| `cfg_cond2_negative` | FLOAT | Sí | 0.0 - 100.0 | Escala de guía para el segundo condicionamiento positivo y el negativo (predeterminado: 8.0) |
-| `style` | COMBO | Sí | "regular"<br>"nested" | El estilo de guía a aplicar (predeterminado: "regular"). Cuando se establece en "nested", la guía se aplica de forma anidada |
+| `cfg_cond2_negativo` | FLOAT | Sí | 0.0 - 100.0 | Escala de guía para el segundo condicionamiento positivo y el negativo (predeterminado: 8.0) |
+| `estilo` | COMBO | Sí | "regular"<br>"nested" | El estilo de guía a aplicar (predeterminado: "regular"). Cuando se establece en "nested", la guía se aplica de forma anidada |
 
 ## Salidas
 

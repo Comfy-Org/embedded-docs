@@ -9,8 +9,8 @@ Gere imagens usando o modelo Flux.2 [pro] ou Flux.2 [max] a partir de um prompt 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Prompt para geração ou edição da imagem (padrão: string vazia). |
-| `model` | COMBO | Sim | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | A versão do modelo Flux.2 a ser utilizada. Selecionar um modelo desbloqueia parâmetros adicionais para largura, altura e imagens de referência opcionais. |
-| `seed` | INT | Sim | 0 a 18446744073709551615 | A semente aleatória usada para criar o ruído. Pode ser configurada para randomizar após cada geração (padrão: 0). |
+| `modelo` | COMBO | Sim | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | A versão do modelo Flux.2 a ser utilizada. Selecionar um modelo desbloqueia parâmetros adicionais para largura, altura e imagens de referência opcionais. |
+| `semente` | INT | Sim | 0 a 18446744073709551615 | A semente aleatória usada para criar o ruído. Pode ser configurada para randomizar após cada geração (padrão: 0). |
 
 **Parâmetros Adicionais (desbloqueados pela seleção do `model`):**
 

@@ -6,7 +6,7 @@ O nó PrimitiveInt oferece uma maneira simples de trabalhar com valores inteiros
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `value` | INT | Sim | -9223372036854775807 a 9223372036854775807 | O valor inteiro a ser retornado (padrão: 0) |
+| `valor` | INT | Sim | -9223372036854775807 a 9223372036854775807 | O valor inteiro a ser retornado (padrão: 0) |
 
 ## Saídas
 

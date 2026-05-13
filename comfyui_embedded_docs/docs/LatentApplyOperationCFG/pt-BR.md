@@ -6,14 +6,14 @@ O nó **LatentApplyOperationCFG** aplica uma operação latente para modificar o
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo ao qual a operação CFG será aplicada |
-| `operation` | LATENT_OPERATION | Sim | - | A operação latente a ser aplicada durante o processo de amostragem CFG |
+| `modelo` | MODEL | Sim | - | O modelo ao qual a operação CFG será aplicada |
+| `operação` | LATENT_OPERATION | Sim | - | A operação latente a ser aplicada durante o processo de amostragem CFG |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo modificado com a operação CFG aplicada ao seu processo de amostragem |
+| `modelo` | MODEL | O modelo modificado com a operação CFG aplicada ao seu processo de amostragem |
 
 ---
 **Source fingerprint (SHA-256):** `9fbcc9183abf89bb93e55263bb655e931549360c05a561f7dacae8723db62e52`

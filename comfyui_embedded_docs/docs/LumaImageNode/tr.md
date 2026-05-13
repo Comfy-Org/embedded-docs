@@ -6,14 +6,14 @@ Bir metin istemi ve en-boy oranına göre eşzamanlı olarak görseller oluştur
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Görsel oluşturma için istem (varsayılan: boş dize). En az 3 karakter uzunluğunda olmalıdır. |
+| `istem` | STRING | Evet | - | Görsel oluşturma için istem (varsayılan: boş dize). En az 3 karakter uzunluğunda olmalıdır. |
 | `model` | COMBO | Evet | `photon-flash-1`<br>`photon-1`<br>`photon` | Görsel oluşturma için model seçimi. Farklı modellerin farklı maliyetleri vardır. |
-| `aspect_ratio` | COMBO | Evet | `16:9`<br>`1:1`<br>`4:3`<br>`3:2`<br>`21:9`<br>`9:16`<br>`3:4`<br>`2:3`<br>`9:21` | Oluşturulan görsel için en-boy oranı (varsayılan: `16:9`) |
-| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; tohumdan bağımsız olarak gerçek sonuçlar deterministik değildir (varsayılan: 0) |
-| `style_image_weight` | FLOAT | Hayır | 0.0 ile 1.0 arası | Stil görselinin ağırlığı. `style_image` sağlanmazsa yok sayılır (varsayılan: 1.0) |
-| `image_luma_ref` | LUMA_REF | Hayır | - | Girdi görselleriyle oluşturmayı etkilemek için Luma Referans düğümü bağlantısı; en fazla 4 görsel dikkate alınabilir. |
-| `style_image` | IMAGE | Hayır | - | Stil referans görseli; yalnızca 1 görsel kullanılacaktır. |
-| `character_image` | IMAGE | Hayır | - | Karakter referans görselleri; birden fazla görselden oluşan bir grup olabilir, en fazla 4 görsel dikkate alınabilir. |
+| `en_boy_oranı` | COMBO | Evet | `16:9`<br>`1:1`<br>`4:3`<br>`3:2`<br>`21:9`<br>`9:16`<br>`3:4`<br>`2:3`<br>`9:21` | Oluşturulan görsel için en-boy oranı (varsayılan: `16:9`) |
+| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; tohumdan bağımsız olarak gerçek sonuçlar deterministik değildir (varsayılan: 0) |
+| `stil_görüntüsü_ağırlığı` | FLOAT | Hayır | 0.0 ile 1.0 arası | Stil görselinin ağırlığı. `stil_görüntüsü` sağlanmazsa yok sayılır (varsayılan: 1.0) |
+| `görüntü_luma_referansı` | LUMA_REF | Hayır | - | Girdi görselleriyle oluşturmayı etkilemek için Luma Referans düğümü bağlantısı; en fazla 4 görsel dikkate alınabilir. |
+| `stil_görüntüsü` | IMAGE | Hayır | - | Stil referans görseli; yalnızca 1 görsel kullanılacaktır. |
+| `karakter_görüntüsü` | IMAGE | Hayır | - | Karakter referans görselleri; birden fazla görselden oluşan bir grup olabilir, en fazla 4 görsel dikkate alınabilir. |
 
 **Parametre Kısıtlamaları:**
 

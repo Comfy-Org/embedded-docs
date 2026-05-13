@@ -6,9 +6,9 @@ BoşSes düğümü, belirtilen süre, örnekleme hızı ve kanal yapılandırmas
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `duration` | FLOAT | Evet | 0,0 ile 1,8446744073709552e+19 arası | Boş ses klibinin saniye cinsinden süresi (varsayılan: 60,0) |
-| `sample_rate` | INT | Evet | 1 ile 192000 arası | Boş ses klibinin örnekleme hızı (varsayılan: 44100) |
-| `channels` | INT | Evet | 1 ile 2 arası | Ses kanalı sayısı (1 mono, 2 stereo için) (varsayılan: 2) |
+| `süre` | FLOAT | Evet | 0,0 ile 1,8446744073709552e+19 arası | Boş ses klibinin saniye cinsinden süresi (varsayılan: 60,0) |
+| `örnekleme_oranı` | INT | Evet | 1 ile 192000 arası | Boş ses klibinin örnekleme hızı (varsayılan: 44100) |
+| `kanallar` | INT | Evet | 1 ile 2 arası | Ses kanalı sayısı (1 mono, 2 stereo için) (varsayılan: 2) |
 
 ## Çıkışlar
 

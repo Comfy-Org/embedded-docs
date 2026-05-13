@@ -6,9 +6,9 @@ El nodo LatentUpscaleBy está diseñado para escalar representaciones latentes d
 
 | Parámetro      | Tipo de Dato | Descripción |
 |----------------|--------------|-------------|
-| `samples`      | `LATENT`     | La representación latente de las imágenes que se escalarán. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de escalado. |
-| `upscale_method` | COMBO[STRING] | Especifica el método utilizado para escalar las muestras latentes. La elección del método puede afectar significativamente la calidad y las características del resultado escalado. |
-| `scale_by`     | `FLOAT`      | Determina el factor por el cual se escalan las muestras latentes. Este parámetro influye directamente en la resolución de la salida, permitiendo un control preciso sobre el proceso de escalado. |
+| `muestras`      | `LATENT`     | La representación latente de las imágenes que se escalarán. Este parámetro es crucial para determinar los datos de entrada que se someterán al proceso de escalado. |
+| `método_escala` | COMBO[STRING] | Especifica el método utilizado para escalar las muestras latentes. La elección del método puede afectar significativamente la calidad y las características del resultado escalado. |
+| `escalar_por`     | `FLOAT`      | Determina el factor por el cual se escalan las muestras latentes. Este parámetro influye directamente en la resolución de la salida, permitiendo un control preciso sobre el proceso de escalado. |
 
 ## Salidas
 

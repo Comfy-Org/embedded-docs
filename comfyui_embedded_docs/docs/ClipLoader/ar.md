@@ -8,9 +8,9 @@
 
 | المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
 |-----------|-----------|----------|-------|-------------|
-| `clip_name` | STRING | نعم | قائمة الملفات الموجودة في مجلد `text_encoders` | اسم ملف نموذج مشفر النص المراد تحميله. يجب أن يكون هذا الملف موجودًا في دليل `ComfyUI/models/text_encoders/` أو `ComfyUI/models/clip/`. |
-| `type` | STRING | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | نوع بنية النموذج الذي يتم تحميله. يحدد هذا المتغير أي متغير مشفر محدد سيتم استخدامه. القيمة الافتراضية هي `"stable_diffusion"`. |
-| `device` | STRING | لا | `"default"`<br>`"cpu"` | الجهاز الذي سيتم تحميل النموذج عليه. يستخدم `"default"` وحدة معالجة الرسومات (GPU) إذا كانت متوفرة، بينما يفرض `"cpu"` التحميل على وحدة المعالجة المركزية. هذا خيار متقدم (القيمة الافتراضية: `"default"`). |
+| `اسم CLIP` | STRING | نعم | قائمة الملفات الموجودة في مجلد `text_encoders` | اسم ملف نموذج مشفر النص المراد تحميله. يجب أن يكون هذا الملف موجودًا في دليل `ComfyUI/models/text_encoders/` أو `ComfyUI/models/clip/`. |
+| `النوع` | STRING | نعم | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | نوع بنية النموذج الذي يتم تحميله. يحدد هذا المتغير أي متغير مشفر محدد سيتم استخدامه. القيمة الافتراضية هي `"stable_diffusion"`. |
+| `الجهاز` | STRING | لا | `"default"`<br>`"cpu"` | الجهاز الذي سيتم تحميل النموذج عليه. يستخدم `"default"` وحدة معالجة الرسومات (GPU) إذا كانت متوفرة، بينما يفرض `"cpu"` التحميل على وحدة المعالجة المركزية. هذا خيار متقدم (القيمة الافتراضية: `"default"`). |
 
 ### تعيينات النوع إلى المشفر المدعومة
 

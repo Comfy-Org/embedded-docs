@@ -8,17 +8,17 @@ LazyCache é uma versão caseira do EasyCache que oferece uma implementação ai
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo ao qual adicionar o LazyCache. |
-| `reuse_threshold` | FLOAT | Não | 0.0 - 3.0 | O limite para reutilizar etapas em cache (padrão: 0.2). |
-| `start_percent` | FLOAT | Não | 0.0 - 1.0 | A etapa de amostragem relativa para iniciar o uso do LazyCache (padrão: 0.15). |
-| `end_percent` | FLOAT | Não | 0.0 - 1.0 | A etapa de amostragem relativa para encerrar o uso do LazyCache (padrão: 0.95). |
-| `verbose` | BOOLEAN | Não | - | Se deve registrar informações detalhadas (padrão: False). |
+| `modelo` | MODEL | Sim | - | O modelo ao qual adicionar o LazyCache. |
+| `limite_de_reutilização` | FLOAT | Não | 0.0 - 3.0 | O limite para reutilizar etapas em cache (padrão: 0.2). |
+| `percentual_inicial` | FLOAT | Não | 0.0 - 1.0 | A etapa de amostragem relativa para iniciar o uso do LazyCache (padrão: 0.15). |
+| `percentual_final` | FLOAT | Não | 0.0 - 1.0 | A etapa de amostragem relativa para encerrar o uso do LazyCache (padrão: 0.95). |
+| `detalhado` | BOOLEAN | Não | - | Se deve registrar informações detalhadas (padrão: False). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo com a funcionalidade LazyCache adicionada. |
+| `modelo` | MODEL | O modelo com a funcionalidade LazyCache adicionada. |
 
 ---
 **Source fingerprint (SHA-256):** `72a5e85b7cf517e88583fc1b75d3ab4a5d40fe8604d50c34f555e677d2ea9e51`

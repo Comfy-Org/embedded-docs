@@ -6,12 +6,12 @@ El TripoConversionNode convierte modelos 3D entre diferentes formatos de archivo
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-------------|-------------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Sí | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | El ID de tarea de una operación previa de Tripo (generación de modelo, rigging o retargeting) |
-| `format` | COMBO | Sí | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | El formato de archivo de destino para el modelo 3D convertido |
-| `quad` | BOOLEAN | No | True/False | Si convertir triángulos a cuadriláteros (predeterminado: False) |
-| `face_limit` | INT | No | -1 a 2000000 | Número máximo de caras en el modelo de salida, use -1 para sin límite (predeterminado: -1) |
-| `texture_size` | INT | No | 128 a 4096 | Tamaño de las texturas de salida en píxeles (predeterminado: 4096) |
-| `texture_format` | COMBO | No | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Formato para las texturas exportadas (predeterminado: JPEG) |
+| `id_tarea_modelo_original` | MODEL_TASK_ID,RIG_TASK_ID,RETARGET_TASK_ID | Sí | MODEL_TASK_ID<br>RIG_TASK_ID<br>RETARGET_TASK_ID | El ID de tarea de una operación previa de Tripo (generación de modelo, rigging o retargeting) |
+| `formato` | COMBO | Sí | GLTF<br>USDZ<br>FBX<br>OBJ<br>STL<br>3MF | El formato de archivo de destino para el modelo 3D convertido |
+| `cuadrangular` | BOOLEAN | No | True/False | Si convertir triángulos a cuadriláteros (predeterminado: False) |
+| `límite_caras` | INT | No | -1 a 2000000 | Número máximo de caras en el modelo de salida, use -1 para sin límite (predeterminado: -1) |
+| `tamaño_textura` | INT | No | 128 a 4096 | Tamaño de las texturas de salida en píxeles (predeterminado: 4096) |
+| `formato_textura` | COMBO | No | BMP<br>DPX<br>HDR<br>JPEG<br>OPEN_EXR<br>PNG<br>TARGA<br>TIFF<br>WEBP | Formato para las texturas exportadas (predeterminado: JPEG) |
 | `force_symmetry` | BOOLEAN | No | True/False | Si forzar simetría en el modelo (predeterminado: False) |
 | `flatten_bottom` | BOOLEAN | No | True/False | Si aplanar la parte inferior del modelo (predeterminado: False) |
 | `flatten_bottom_threshold` | FLOAT | No | 0.0 a 1.0 | Umbral para el aplanamiento inferior (predeterminado: 0.0) |

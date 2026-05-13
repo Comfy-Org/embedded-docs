@@ -6,16 +6,16 @@ Este nodo utiliza el servicio de IA de Magnific para ampliar y mejorar creativam
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se ampliará y mejorará. |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se ampliará y mejorará. |
 | `prompt` | STRING | No | - | Una descripción textual para guiar la mejora creativa de la imagen. Es opcional (valor predeterminado: vacío). |
-| `scale_factor` | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | El factor por el cual se ampliarán las dimensiones de la imagen. |
-| `optimized_for` | COMBO | Sí | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | El estilo o tipo de contenido para optimizar el proceso de mejora. |
-| `creativity` | INT | No | -10 a 10 | Controla el nivel de interpretación creativa aplicada a la imagen (valor predeterminado: 0). |
+| `factor_de_escala` | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | El factor por el cual se ampliarán las dimensiones de la imagen. |
+| `optimizado_para` | COMBO | Sí | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | El estilo o tipo de contenido para optimizar el proceso de mejora. |
+| `creatividad` | INT | No | -10 a 10 | Controla el nivel de interpretación creativa aplicada a la imagen (valor predeterminado: 0). |
 | `hdr` | INT | No | -10 a 10 | El nivel de definición y detalle (valor predeterminado: 0). |
-| `resemblance` | INT | No | -10 a 10 | El nivel de parecido con la imagen original (valor predeterminado: 0). |
-| `fractality` | INT | No | -10 a 10 | La fuerza del texto descriptivo y la complejidad por píxel cuadrado (valor predeterminado: 0). |
-| `engine` | COMBO | Sí | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | El motor de IA específico a utilizar para el procesamiento. Este es un parámetro avanzado. |
-| `auto_downscale` | BOOLEAN | No | - | Cuando está habilitado, el nodo reducirá automáticamente la escala de la imagen de entrada si la ampliación solicitada supera el tamaño máximo de salida permitido de 25,3 megapíxeles. Este es un parámetro avanzado (valor predeterminado: Falso). |
+| `semejanza` | INT | No | -10 a 10 | El nivel de parecido con la imagen original (valor predeterminado: 0). |
+| `fractalidad` | INT | No | -10 a 10 | La fuerza del texto descriptivo y la complejidad por píxel cuadrado (valor predeterminado: 0). |
+| `motor` | COMBO | Sí | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | El motor de IA específico a utilizar para el procesamiento. Este es un parámetro avanzado. |
+| `reducción_automática` | BOOLEAN | No | - | Cuando está habilitado, el nodo reducirá automáticamente la escala de la imagen de entrada si la ampliación solicitada supera el tamaño máximo de salida permitido de 25,3 megapíxeles. Este es un parámetro avanzado (valor predeterminado: Falso). |
 
 **Restricciones:**
 
@@ -28,7 +28,7 @@ Este nodo utiliza el servicio de IA de Magnific para ampliar y mejorar creativam
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `image` | IMAGE | La imagen de salida ampliada y mejorada creativamente. |
+| `imagen` | IMAGE | La imagen de salida ampliada y mejorada creativamente. |
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

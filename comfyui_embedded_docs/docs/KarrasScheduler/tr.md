@@ -6,8 +6,8 @@ KarrasScheduler düğümü, Karras ve diğerleri (2022) gürültü planlamasına
 
 | Parametre   | Veri Türü | Açıklama                                                                                      |
 |-------------|-------------|------------------------------------------------------------------------------------------------|
-| `steps`     | INT         | Gürültü planlamasındaki adım sayısını belirtir; oluşturulan sigma dizisinin ayrıntı düzeyini etkiler. |
-| `sigma_max` | FLOAT       | Gürültü planlamasındaki maksimum sigma değeridir; gürültü seviyelerinin üst sınırını belirler.                    |
+| `adımlar`     | INT         | Gürültü planlamasındaki adım sayısını belirtir; oluşturulan sigma dizisinin ayrıntı düzeyini etkiler. |
+| `sigma_maks` | FLOAT       | Gürültü planlamasındaki maksimum sigma değeridir; gürültü seviyelerinin üst sınırını belirler.                    |
 | `sigma_min` | FLOAT       | Gürültü planlamasındaki minimum sigma değeridir; gürültü seviyelerinin alt sınırını belirler.                    |
 | `rho`       | FLOAT       | Gürültü planlaması eğrisinin şeklini kontrol eden bir parametredir; gürültü seviyelerinin sigma_min'den sigma_max'a nasıl ilerlediğini etkiler. |
 

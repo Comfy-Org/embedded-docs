@@ -34,15 +34,15 @@ El nodo de Guía de Autoatención aplica guía a modelos de difusión modificand
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|---------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión al que se aplicará la guía de autoatención |
-| `scale` | FLOAT | No | -2.0 a 5.0 | La intensidad del efecto de guía de autoatención (predeterminado: 0.5) |
+| `modelo` | MODEL | Sí | - | El modelo de difusión al que se aplicará la guía de autoatención |
+| `escala` | FLOAT | No | -2.0 a 5.0 | La intensidad del efecto de guía de autoatención (predeterminado: 0.5) |
 | `blur_sigma` | FLOAT | No | 0.0 a 10.0 | La cantidad de desenfoque aplicada para crear el mapa de guía (predeterminado: 2.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|---------------|-------------|
-| `model` | MODEL | El modelo modificado con la guía de autoatención aplicada |
+| `modelo` | MODEL | El modelo modificado con la guía de autoatención aplicada |
 
 **Nota:** Este nodo es actualmente experimental y tiene limitaciones con lotes fragmentados. Solo puede guardar puntuaciones de atención de una llamada UNet y puede no funcionar correctamente con tamaños de lote más grandes.
 

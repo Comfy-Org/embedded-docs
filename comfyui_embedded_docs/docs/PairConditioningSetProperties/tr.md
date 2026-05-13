@@ -6,19 +6,19 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive_NEW` | CONDITIONING | Evet | - | Değiştirilecek pozitif koşullandırma girdisi |
-| `negative_NEW` | CONDITIONING | Evet | - | Değiştirilecek negatif koşullandırma girdisi |
-| `strength` | FLOAT | Evet | 0.0 - 10.0 | Koşullandırmaya uygulanan güç çarpanı (varsayılan: 1.0) |
-| `set_cond_area` | STRING | Evet | "default"<br>"mask bounds" | Koşullandırma alanının nasıl hesaplanacağını belirler (varsayılan: "default") |
-| `mask` | MASK | Hayır | - | Koşullandırma alanını sınırlamak için isteğe bağlı maske |
-| `hooks` | HOOKS | Hayır | - | Gelişmiş koşullandırma değişiklikleri için isteğe bağlı kanca grubu |
-| `timesteps` | TIMESTEPS_RANGE | Hayır | - | Koşullandırmanın ne zaman uygulanacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
+| `yeni_pozitif` | CONDITIONING | Evet | - | Değiştirilecek pozitif koşullandırma girdisi |
+| `yeni_negatif` | CONDITIONING | Evet | - | Değiştirilecek negatif koşullandırma girdisi |
+| `güç` | FLOAT | Evet | 0.0 - 10.0 | Koşullandırmaya uygulanan güç çarpanı (varsayılan: 1.0) |
+| `koşul_alanı_ayarla` | STRING | Evet | "default"<br>"mask bounds" | Koşullandırma alanının nasıl hesaplanacağını belirler (varsayılan: "default") |
+| `maske` | MASK | Hayır | - | Koşullandırma alanını sınırlamak için isteğe bağlı maske |
+| `kancalar` | HOOKS | Hayır | - | Gelişmiş koşullandırma değişiklikleri için isteğe bağlı kanca grubu |
+| `zaman_adımları` | TIMESTEPS_RANGE | Hayır | - | Koşullandırmanın ne zaman uygulanacağını sınırlamak için isteğe bağlı zaman adımı aralığı |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Uygulanan özelliklerle birlikte değiştirilmiş pozitif koşullandırma |
+| `negatif` | CONDITIONING | Uygulanan özelliklerle birlikte değiştirilmiş pozitif koşullandırma |
 | `negative` | CONDITIONING | Uygulanan özelliklerle birlikte değiştirilmiş negatif koşullandırma |
 
 ---

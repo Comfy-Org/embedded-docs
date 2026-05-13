@@ -6,16 +6,16 @@ Le nœud ModelSamplingLTXV applique des paramètres d'échantillonnage avancés 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle d'entrée auquel appliquer les paramètres d'échantillonnage |
-| `max_shift` | FLOAT | Oui | 0,0 à 100,0 | La valeur de décalage maximale utilisée dans le calcul d'interpolation linéaire (par défaut : 2,05) |
-| `base_shift` | FLOAT | Oui | 0,0 à 100,0 | La valeur de décalage de base utilisée dans le calcul d'interpolation linéaire (par défaut : 0,95) |
+| `modèle` | MODEL | Oui | - | Le modèle d'entrée auquel appliquer les paramètres d'échantillonnage |
+| `décalage_max` | FLOAT | Oui | 0,0 à 100,0 | La valeur de décalage maximale utilisée dans le calcul d'interpolation linéaire (par défaut : 2,05) |
+| `décalage_base` | FLOAT | Oui | 0,0 à 100,0 | La valeur de décalage de base utilisée dans le calcul d'interpolation linéaire (par défaut : 0,95) |
 | `latent` | LATENT | Non | - | Entrée latente facultative utilisée pour déterminer le nombre de jetons pour le calcul du décalage. Si elle n'est pas fournie, un nombre de jetons par défaut de 4096 est utilisé |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle modifié avec les paramètres d'échantillonnage appliqués |
+| `modèle` | MODEL | Le modèle modifié avec les paramètres d'échantillonnage appliqués |
 
 ---
 **Source fingerprint (SHA-256):** `2325754df1b2541a6adbdebecefde92e08535af0e179d7444093a61eb35cb24c`

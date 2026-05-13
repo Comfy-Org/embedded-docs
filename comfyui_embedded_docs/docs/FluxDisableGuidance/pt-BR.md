@@ -6,13 +6,13 @@ Este nó desabilita completamente a funcionalidade de incorporação de orienta�
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `conditioning` | CONDITIONING | Sim | - | Os dados de condicionamento a serem processados e dos quais a orientação será removida |
+| `condicionamento` | CONDITIONING | Sim | - | Os dados de condicionamento a serem processados e dos quais a orientação será removida |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `conditioning` | CONDITIONING | Os dados de condicionamento modificados com a orientação desabilitada |
+| `condicionamento` | CONDITIONING | Os dados de condicionamento modificados com a orientação desabilitada |
 
 ---
 **Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`

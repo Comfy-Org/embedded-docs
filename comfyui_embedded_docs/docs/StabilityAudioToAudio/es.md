@@ -6,13 +6,13 @@ Transforma muestras de audio existentes en nuevas composiciones de alta calidad 
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | "stable-audio-2.5"<br> | El modelo de IA a utilizar para la transformación de audio |
+| `modelo` | COMBO | Sí | "stable-audio-2.5"<br> | El modelo de IA a utilizar para la transformación de audio |
 | `prompt` | STRING | Sí |  | Instrucciones de texto que describen cómo transformar el audio (predeterminado: vacío) |
 | `audio` | AUDIO | Sí |  | El audio debe tener una duración entre 6 y 190 segundos |
-| `duration` | INT | No | 1-190 | Controla la duración en segundos del audio generado (predeterminado: 190) |
-| `seed` | INT | No | 0-4294967294 | La semilla aleatoria utilizada para la generación (predeterminado: 0) |
-| `steps` | INT | No | 4-8 | Controla el número de pasos de muestreo (predeterminado: 8) |
-| `strength` | FLOAT | No | 0.01-1.0 | El parámetro controla cuánta influencia tiene el parámetro de audio sobre el audio generado (predeterminado: 1.0) |
+| `duración` | INT | No | 1-190 | Controla la duración en segundos del audio generado (predeterminado: 190) |
+| `semilla` | INT | No | 0-4294967294 | La semilla aleatoria utilizada para la generación (predeterminado: 0) |
+| `pasos` | INT | No | 4-8 | Controla el número de pasos de muestreo (predeterminado: 8) |
+| `intensidad` | FLOAT | No | 0.01-1.0 | El parámetro controla cuánta influencia tiene el parámetro de audio sobre el audio generado (predeterminado: 1.0) |
 
 **Nota:** El audio de entrada debe tener una duración entre 6 y 190 segundos.
 

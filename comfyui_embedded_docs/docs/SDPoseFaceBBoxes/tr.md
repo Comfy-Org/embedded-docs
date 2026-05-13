@@ -6,9 +6,9 @@ SDPoseFaceBBoxes düğümü, insan yüzlerinin etrafında sınırlayıcı kutula
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `keypoints` | POSE_KEYPOINT | Evet | - | Kare başına tespit edilen kişiler ve bunların vücut/yüz işaret noktaları hakkında bilgi içeren poz anahtar noktası verileri. |
-| `scale` | FLOAT | Hayır | 1.0 - 10.0 | Tespit edilen her yüzün etrafındaki sınırlayıcı kutu alanı için çarpan. Daha büyük bir değer daha büyük bir kutu oluşturur. (varsayılan: 1.5) |
-| `force_square` | BOOLEAN | Hayır | - | Kırpma bölgesinin her zaman kare olması için daha kısa bbox eksenini genişletir. (varsayılan: True) |
+| `anahtar_noktalar` | POSE_KEYPOINT | Evet | - | Kare başına tespit edilen kişiler ve bunların vücut/yüz işaret noktaları hakkında bilgi içeren poz anahtar noktası verileri. |
+| `ölçek` | FLOAT | Hayır | 1.0 - 10.0 | Tespit edilen her yüzün etrafındaki sınırlayıcı kutu alanı için çarpan. Daha büyük bir değer daha büyük bir kutu oluşturur. (varsayılan: 1.5) |
+| `kare_zorla` | BOOLEAN | Hayır | - | Kırpma bölgesinin her zaman kare olması için daha kısa bbox eksenini genişletir. (varsayılan: True) |
 
 **Not:** `keypoints` girişi, SDPoseKeypointExtractor gibi düğümler tarafından üretilen, her kişi için `canvas_height`, `canvas_width` ve `face_keypoints_2d` içeren `people` verilerini içeren belirli formatta olmalıdır.
 

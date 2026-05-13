@@ -6,14 +6,14 @@ El nodo WanPhantomSubjectToVideo genera contenido de video procesando entradas d
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Sí | - | Entrada de condicionamiento positivo para guiar la generación de video |
-| `negative` | CONDITIONING | Sí | - | Entrada de condicionamiento negativo para evitar ciertas características |
+| `positivo` | CONDITIONING | Sí | - | Entrada de condicionamiento positivo para guiar la generación de video |
+| `negativo` | CONDITIONING | Sí | - | Entrada de condicionamiento negativo para evitar ciertas características |
 | `vae` | VAE | Sí | - | Modelo VAE para codificar imágenes cuando se proporcionan |
-| `width` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 832, debe ser divisible por 16) |
-| `height` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 480, debe ser divisible por 16) |
-| `length` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en el video generado (predeterminado: 81, debe ser divisible por 4) |
-| `batch_size` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (predeterminado: 1) |
-| `images` | IMAGE | No | - | Imágenes de referencia opcionales para condicionamiento de dimensión temporal |
+| `ancho` | INT | Sí | 16 a MAX_RESOLUTION | Ancho del video de salida en píxeles (predeterminado: 832, debe ser divisible por 16) |
+| `alto` | INT | Sí | 16 a MAX_RESOLUTION | Alto del video de salida en píxeles (predeterminado: 480, debe ser divisible por 16) |
+| `longitud` | INT | Sí | 1 a MAX_RESOLUTION | Número de fotogramas en el video generado (predeterminado: 81, debe ser divisible por 4) |
+| `tamaño_lote` | INT | Sí | 1 a 4096 | Número de videos a generar simultáneamente (predeterminado: 1) |
+| `imágenes` | IMAGE | No | - | Imágenes de referencia opcionales para condicionamiento de dimensión temporal |
 
 **Nota:** Cuando se proporcionan `images`, se redimensionan automáticamente para coincidir con el `width` y `height` especificados, y solo se utilizan los primeros `length` fotogramas para el procesamiento.
 
@@ -21,9 +21,9 @@ El nodo WanPhantomSubjectToVideo genera contenido de video procesando entradas d
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Condicionamiento positivo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes |
-| `negative_text` | CONDITIONING | Condicionamiento negativo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes |
-| `negative_img_text` | CONDITIONING | Condicionamiento negativo con concatenación de dimensión temporal puesta a cero cuando se proporcionan imágenes |
+| `texto_negativo` | CONDITIONING | Condicionamiento positivo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes |
+| `texto_img_negativa` | CONDITIONING | Condicionamiento negativo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes |
+| `latente` | CONDITIONING | Condicionamiento negativo con concatenación de dimensión temporal puesta a cero cuando se proporcionan imágenes |
 | `latent` | LATENT | Representación de video latente generada con las dimensiones y longitud especificadas |
 
 ---

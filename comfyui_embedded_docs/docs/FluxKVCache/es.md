@@ -6,13 +6,13 @@ El nodo Caché KV de Flux permite una optimización de Caché Clave-Valor (KV) p
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | | El modelo al que se aplicará la optimización de Caché KV. |
+| `modelo` | MODEL | Sí | | El modelo al que se aplicará la optimización de Caché KV. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo modificado con la optimización de Caché KV habilitada. |
+| `modelo` | MODEL | El modelo modificado con la optimización de Caché KV habilitada. |
 
 ---
 **Source fingerprint (SHA-256):** `530c660ae23607d4035815826ae73cdcbebe7693ba47a3b0fe98e69f329b9e86`

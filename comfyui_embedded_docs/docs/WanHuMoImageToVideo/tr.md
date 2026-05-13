@@ -6,15 +6,15 @@ WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller ol
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Video oluşumunu istenen içeriğe yönlendiren pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Video oluşumunu istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi |
+| `pozitif` | CONDITIONING | Evet | - | Video oluşumunu istenen içeriğe yönlendiren pozitif koşullandırma girdisi |
+| `negatif` | CONDITIONING | Evet | - | Video oluşumunu istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi |
 | `vae` | VAE | Evet | - | Referans görüntüleri gizil uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Evet | 1 - MAX_RESOLUTION | Oluşturulan video dizisindeki kare sayısı (varsayılan: 97, (length - 1) 4'e bölünebilir olmalıdır) |
-| `batch_size` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1) |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Ses içeriğine göre video oluşumunu etkileyebilecek isteğe bağlı ses kodlama verisi |
-| `ref_image` | IMAGE | Hayır | - | Video oluşum stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü |
+| `genişlik` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Evet | 1 - MAX_RESOLUTION | Oluşturulan video dizisindeki kare sayısı (varsayılan: 97, (length - 1) 4'e bölünebilir olmalıdır) |
+| `toplu_iş_boyutu` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1) |
+| `ses_kodlayıcı_çıktısı` | AUDIOENCODEROUTPUT | Hayır | - | Ses içeriğine göre video oluşumunu etkileyebilecek isteğe bağlı ses kodlama verisi |
+| `referans_görsel` | IMAGE | Hayır | - | Video oluşum stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü |
 
 **Not:** Bir referans görüntüsü sağlandığında, kodlanır ve hem pozitif hem de negatif koşullandırmaya eklenir. Ses kodlayıcı çıktısı sağlandığında, işlenir ve koşullandırma verilerine dahil edilir. Hiçbiri sağlanmazsa, hem referans gizilleri hem de ses katıştırmaları için sıfır dolu yer tutucu tensörler kullanılır.
 
@@ -22,8 +22,8 @@ WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller ol
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma |
+| `negatif` | CONDITIONING | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma |
+| `gizli_uzay` | CONDITIONING | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma |
 | `latent` | LATENT | Video dizisi verilerini içeren oluşturulmuş gizil temsil |
 
 ---

@@ -6,8 +6,8 @@ Le nœud LatentBatch est conçu pour fusionner deux ensembles d'échantillons la
 
 | Paramètre   | Type de données | Description |
 |-------------|-----------------|-------------|
-| `samples1`  | `LATENT`        | Le premier ensemble d'échantillons latents à fusionner. Il joue un rôle crucial dans la détermination de la forme finale du lot fusionné. |
-| `samples2`  | `LATENT`        | Le second ensemble d'échantillons latents à fusionner. Si ses dimensions diffèrent du premier ensemble, il est redimensionné pour garantir la compatibilité avant la fusion. |
+| `échantillons1`  | `LATENT`        | Le premier ensemble d'échantillons latents à fusionner. Il joue un rôle crucial dans la détermination de la forme finale du lot fusionné. |
+| `échantillons2`  | `LATENT`        | Le second ensemble d'échantillons latents à fusionner. Si ses dimensions diffèrent du premier ensemble, il est redimensionné pour garantir la compatibilité avant la fusion. |
 
 ## Sorties
 

@@ -21,8 +21,8 @@ Transforme du texte en vidéos cinématographiques avec des mouvements de camér
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `output` | VIDEO | La vidéo générée avec les effets de contrôle de caméra |
-| `video_id` | STRING | L’identifiant unique de la vidéo générée |
+| `video_id` | VIDEO | La vidéo générée avec les effets de contrôle de caméra |
+| `duration` | STRING | L’identifiant unique de la vidéo générée |
 | `duration` | STRING | La durée de la vidéo générée |
 
 ---

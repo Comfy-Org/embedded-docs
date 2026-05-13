@@ -13,9 +13,9 @@ Wan2VideoEditApi düğümü, metin talimatlarına, referans görüntülere veya 
 | `model.duration` | COMBO | Evet | `"auto"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"`<br>`"10"` | Saniye cinsinden çıktı süresi. 'auto', giriş videosunun süresiyle eşleşir. Belirli bir değer, videonun başlangıcından itibaren kırpar. (varsayılan: "auto") |
 | `model.reference_images` | IMAGE | Hayır | - | Düzenlemeyi yönlendirmek için en fazla 4 referans görüntüden oluşan bir liste. |
 | `video` | VIDEO | Evet | - | Düzenlenecek video. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Üretim için kullanılacak tohum değeri. (varsayılan: 0) |
-| `audio_setting` | COMBO | Hayır | `"auto"`<br>`"origin"` | 'auto': model, istem temelinde sesi yeniden oluşturup oluşturmayacağına karar verir. 'origin': giriş videosundaki orijinal sesi korur. (varsayılan: "auto") |
-| `watermark` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
+| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Üretim için kullanılacak tohum değeri. (varsayılan: 0) |
+| `ses_ayarı` | COMBO | Hayır | `"auto"`<br>`"origin"` | 'auto': model, istem temelinde sesi yeniden oluşturup oluşturmayacağına karar verir. 'origin': giriş videosundaki orijinal sesi korur. (varsayılan: "auto") |
+| `filigran` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
 
 **Kısıtlamalar:**
 *   `model.prompt` en az 1 karakter uzunluğunda olmalıdır.

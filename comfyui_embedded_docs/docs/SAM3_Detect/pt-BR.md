@@ -11,14 +11,14 @@ O nó SAM3 Detect realiza detecção e segmentação de vocabulário aberto usan
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Sim | - | O modelo SAM3 a ser usado para detecção e segmentação |
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser processada |
-| `conditioning` | CONDITIONING | Não | - | Condicionamento de texto do CLIPTextEncode. Necessário ao usar prompts de texto para detecção |
-| `bboxes` | BOUNDING_BOX | Não | - | Caixas delimitadoras para segmentar. Pode ser uma única caixa (aplicada a todos os quadros), uma lista de caixas (aplicada a todos os quadros) ou uma lista de listas (caixas por quadro). Quando fornecido sem condicionamento de texto, o nó segmenta dentro de cada caixa |
-| `positive_coords` | STRING | Não | - | Prompts de pontos positivos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja incluir na segmentação |
-| `negative_coords` | STRING | Não | - | Prompts de pontos negativos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja excluir da segmentação |
-| `threshold` | FLOAT | Não | 0.0 a 1.0 | Limiar de confiança para detecções baseadas em texto. Apenas detecções com pontuações acima deste valor são mantidas (padrão: 0.5) |
-| `refine_iterations` | INT | Não | 0 a 5 | Número de passagens de refinamento do decodificador SAM. Valores maiores podem melhorar a qualidade das máscaras. Defina como 0 para usar máscaras brutas do detector sem refinamento (padrão: 2) |
-| `individual_masks` | BOOLEAN | Não | Verdadeiro/Falso | Quando ativado, gera máscaras separadas para cada objeto detectado em vez de combiná-las em uma única máscara (padrão: Falso) |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser processada |
+| `condicionamento` | CONDITIONING | Não | - | Condicionamento de texto do CLIPTextEncode. Necessário ao usar prompts de texto para detecção |
+| `caixas_delimitadoras` | BOUNDING_BOX | Não | - | Caixas delimitadoras para segmentar. Pode ser uma única caixa (aplicada a todos os quadros), uma lista de caixas (aplicada a todos os quadros) ou uma lista de listas (caixas por quadro). Quando fornecido sem condicionamento de texto, o nó segmenta dentro de cada caixa |
+| `coordenadas_positivas` | STRING | Não | - | Prompts de pontos positivos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja incluir na segmentação |
+| `coordenadas_negativas` | STRING | Não | - | Prompts de pontos negativos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja excluir da segmentação |
+| `limiar` | FLOAT | Não | 0.0 a 1.0 | Limiar de confiança para detecções baseadas em texto. Apenas detecções com pontuações acima deste valor são mantidas (padrão: 0.5) |
+| `iterações_de_refino` | INT | Não | 0 a 5 | Número de passagens de refinamento do decodificador SAM. Valores maiores podem melhorar a qualidade das máscaras. Defina como 0 para usar máscaras brutas do detector sem refinamento (padrão: 2) |
+| `máscaras_individuais` | BOOLEAN | Não | Verdadeiro/Falso | Quando ativado, gera máscaras separadas para cada objeto detectado em vez de combiná-las em uma única máscara (padrão: Falso) |
 
 ### Restrições e Notas dos Parâmetros
 
@@ -33,8 +33,8 @@ O nó SAM3 Detect realiza detecção e segmentação de vocabulário aberto usan
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `masks` | MASK | Máscaras de segmentação. Quando `individual_masks` é Falso (padrão), retorna uma única máscara combinada por quadro. Quando Verdadeiro, retorna máscaras individuais para cada objeto detectado |
-| `bboxes` | BOUNDING_BOX | Caixas delimitadoras detectadas com coordenadas e pontuações de confiança. Cada caixa inclui valores `x`, `y`, `largura`, `altura` e `pontuação` |
+| `masks` | MASK | Máscaras de segmentação. Quando `máscaras_individuais` é Falso (padrão), retorna uma única máscara combinada por quadro. Quando Verdadeiro, retorna máscaras individuais para cada objeto detectado |
+| `caixas_delimitadoras` | BOUNDING_BOX | Caixas delimitadoras detectadas com coordenadas e pontuações de confiança. Cada caixa inclui valores `x`, `y`, `largura`, `altura` e `pontuação` |
 
 ---
 **Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

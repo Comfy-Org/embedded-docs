@@ -6,7 +6,7 @@
 
 | 필드          | 데이터 유형    | 설명 |
 |-------------|---------------|-------------|
-| `clip_name` | COMBO[STRING] | `ComfyUI/models/clip_vision` 폴더에 있는 지원되는 모든 모델 파일을 나열합니다. |
+| `CLIP 파일명` | COMBO[STRING] | `ComfyUI/models/clip_vision` 폴더에 있는 지원되는 모든 모델 파일을 나열합니다. |
 
 ## 출력
 

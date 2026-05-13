@@ -6,11 +6,11 @@ O nó **RepeatImageBatch** foi projetado para replicar uma imagem fornecida um n
 
 | Campo     | Tipo de Dado | Descrição                                                                 |
 |-----------|--------------|---------------------------------------------------------------------------|
-| `image`   | `IMAGE`      | O parâmetro 'image' representa a imagem a ser replicada. É essencial para definir o conteúdo que será duplicado no lote. |
-| `amount`  | `INT`        | O parâmetro 'amount' especifica o número de vezes que a imagem de entrada deve ser replicada. Ele influencia diretamente o tamanho do lote de saída, permitindo a criação flexível de lotes. |
+| `imagem`   | `IMAGE`      | O parâmetro 'image' representa a imagem a ser replicada. É essencial para definir o conteúdo que será duplicado no lote. |
+| `quantidade`  | `INT`        | O parâmetro 'amount' especifica o número de vezes que a imagem de entrada deve ser replicada. Ele influencia diretamente o tamanho do lote de saída, permitindo a criação flexível de lotes. |
 
 ## Saídas
 
 | Campo  | Tipo de Dado | Descrição                                                               |
 |--------|--------------|-------------------------------------------------------------------------|
-| `image`| `IMAGE`      | A saída é um lote de imagens, cada uma idêntica à imagem de entrada, replicadas de acordo com o 'amount' especificado. |
+| `imagem`| `IMAGE`      | A saída é um lote de imagens, cada uma idêntica à imagem de entrada, replicadas de acordo com o 'amount' especificado. |

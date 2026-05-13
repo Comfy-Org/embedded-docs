@@ -6,7 +6,7 @@ Le nœud FreeU_V2 améliore la qualité de génération d'images en appliquant d
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer l'amélioration FreeU |
+| `modèle` | MODEL | Oui | - | Le modèle de diffusion auquel appliquer l'amélioration FreeU |
 | `b1` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle des caractéristiques du backbone pour le premier bloc (par défaut : 1,3) |
 | `b2` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle des caractéristiques du backbone pour le deuxième bloc (par défaut : 1,4) |
 | `s1` | FLOAT | Oui | 0,0 - 10,0 | Facteur d'échelle des caractéristiques de saut pour le premier bloc (par défaut : 0,9) |
@@ -16,7 +16,7 @@ Le nœud FreeU_V2 améliore la qualité de génération d'images en appliquant d
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `model` | MODEL | Le modèle de diffusion amélioré avec les modifications FreeU appliquées |
+| `modèle` | MODEL | Le modèle de diffusion amélioré avec les modifications FreeU appliquées |
 
 ---
 **Source fingerprint (SHA-256):** `40ded64177e8e00cc5d8d5dde35c20958a77c500dada725572b64484c5ce1045`

@@ -6,19 +6,19 @@ O nó ScaleROPE permite modificar a Codificação Posicional Rotativa (ROPE) de 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo cujos parâmetros ROPE serão modificados. |
-| `scale_x` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente X do ROPE (padrão: 1.0). |
-| `shift_x` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente X do ROPE (padrão: 0.0). |
-| `scale_y` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente Y do ROPE (padrão: 1.0). |
-| `shift_y` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente Y do ROPE (padrão: 0.0). |
-| `scale_t` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente T (tempo) do ROPE (padrão: 1.0). |
-| `shift_t` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente T (tempo) do ROPE (padrão: 0.0). |
+| `modelo` | MODEL | Sim | - | O modelo cujos parâmetros ROPE serão modificados. |
+| `escala_x` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente X do ROPE (padrão: 1.0). |
+| `deslocamento_x` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente X do ROPE (padrão: 0.0). |
+| `escala_y` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente Y do ROPE (padrão: 1.0). |
+| `deslocamento_y` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente Y do ROPE (padrão: 0.0). |
+| `escala_t` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente T (tempo) do ROPE (padrão: 1.0). |
+| `deslocamento_t` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente T (tempo) do ROPE (padrão: 0.0). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `model` | MODEL | O modelo com os novos parâmetros de escala e deslocamento do ROPE aplicados. |
+| `modelo` | MODEL | O modelo com os novos parâmetros de escala e deslocamento do ROPE aplicados. |
 
 ---
 **Source fingerprint (SHA-256):** `c5ca193a46faa9477a2e6c99b905205685e8add8faa2f2d161c7c384b3dc2441`

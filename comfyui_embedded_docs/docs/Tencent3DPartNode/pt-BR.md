@@ -6,8 +6,8 @@ Este nó utiliza a API Tencent Hunyuan3D para analisar automaticamente um modelo
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model_3d` | FILE3D | Sim | FBX, Qualquer | O modelo 3D a ser processado. O modelo deve estar no formato FBX e ter menos de 30.000 faces. |
-| `seed` | INT | Não | 0 a 2147483647 | Um valor de semente para controlar se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente. (padrão: 0) |
+| `modelo_3d` | FILE3D | Sim | FBX, Qualquer | O modelo 3D a ser processado. O modelo deve estar no formato FBX e ter menos de 30.000 faces. |
+| `semente` | INT | Não | 0 a 2147483647 | Um valor de semente para controlar se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente. (padrão: 0) |
 
 **Observação:** A entrada `model_3d` suporta apenas arquivos no formato FBX. Se um formato de arquivo 3D diferente for fornecido, o nó gerará um erro.
 

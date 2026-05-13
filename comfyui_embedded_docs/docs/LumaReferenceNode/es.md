@@ -6,8 +6,8 @@ Este nodo contiene una imagen y un valor de peso para usarse con el nodo Luma Ge
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | Imagen a utilizar como referencia. |
-| `weight` | FLOAT | Sí | 0.0 - 1.0 | Peso de la referencia de imagen (predeterminado: 1.0). |
+| `imagen` | IMAGE | Sí | - | Imagen a utilizar como referencia. |
+| `peso` | FLOAT | Sí | 0.0 - 1.0 | Peso de la referencia de imagen (predeterminado: 1.0). |
 | `luma_ref` | LUMA_REF | No | - | Cadena de referencia Luma existente opcional a la que agregarse. |
 
 ## Salidas

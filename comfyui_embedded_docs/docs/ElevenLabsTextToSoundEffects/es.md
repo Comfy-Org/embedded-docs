@@ -6,9 +6,9 @@ El nodo ElevenLabs Text to Sound Effects genera efectos de sonido a partir de un
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `text` | STRING | Sí | N/A | Descripción textual del efecto de sonido a generar. Este campo es obligatorio. |
-| `model` | COMBO | Sí | `"eleven_sfx_v2"` | Modelo a utilizar para la generación del efecto de sonido. Seleccionar este modelo revela parámetros adicionales: `duration` (predeterminado: 5.0, rango: 0.5 a 30.0 segundos), `loop` (predeterminado: Falso) y `prompt_influence` (predeterminado: 0.3, rango: 0.0 a 1.0). |
-| `output_format` | COMBO | Sí | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio. |
+| `texto` | STRING | Sí | N/A | Descripción textual del efecto de sonido a generar. Este campo es obligatorio. |
+| `modelo` | COMBO | Sí | `"eleven_sfx_v2"` | Modelo a utilizar para la generación del efecto de sonido. Seleccionar este modelo revela parámetros adicionales: `duration` (predeterminado: 5.0, rango: 0.5 a 30.0 segundos), `loop` (predeterminado: Falso) y `prompt_influence` (predeterminado: 0.3, rango: 0.0 a 1.0). |
+| `formato_de_salida` | COMBO | Sí | `"mp3_44100_192"`<br>`"opus_48000_192"` | Formato de salida de audio. |
 
 **Detalles de los parámetros:**
 

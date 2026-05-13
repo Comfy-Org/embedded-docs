@@ -9,9 +9,9 @@ O nó `GLIGENTextBoxApply` foi projetado para integrar condicionamento baseado e
 | `conditioning_to`     | `CONDITIONING`     | Especifica a entrada de condicionamento inicial à qual os parâmetros da caixa de texto e as informações textuais codificadas serão anexados. Desempenha um papel crucial na determinação da saída final ao integrar novos dados de condicionamento. |
 | `clip`               | `CLIP`             | O modelo CLIP usado para codificar o texto fornecido em um formato que possa ser utilizado pelo modelo generativo. É essencial para converter informações textuais em um formato de condicionamento compatível. |
 | `gligen_textbox_model` | `GLIGEN`         | Representa a configuração específica do modelo GLIGEN a ser usada para gerar a caixa de texto. É crucial para garantir que a caixa de texto seja gerada de acordo com as especificações desejadas. |
-| `text`               | `STRING`           | O conteúdo de texto a ser codificado e integrado ao condicionamento. Fornece a informação semântica que orienta o modelo generativo. |
-| `width`              | `INT`              | A largura da caixa de texto em pixels. Define a dimensão espacial da caixa de texto dentro da imagem gerada. |
-| `height`             | `INT`              | A altura da caixa de texto em pixels. Semelhante à largura, define a dimensão espacial da caixa de texto dentro da imagem gerada. |
+| `texto`               | `STRING`           | O conteúdo de texto a ser codificado e integrado ao condicionamento. Fornece a informação semântica que orienta o modelo generativo. |
+| `largura`              | `INT`              | A largura da caixa de texto em pixels. Define a dimensão espacial da caixa de texto dentro da imagem gerada. |
+| `altura`             | `INT`              | A altura da caixa de texto em pixels. Semelhante à largura, define a dimensão espacial da caixa de texto dentro da imagem gerada. |
 | `x`                  | `INT`              | A coordenada x do canto superior esquerdo da caixa de texto dentro da imagem gerada. Especifica a posição horizontal da caixa de texto. |
 | `y`                  | `INT`              | A coordenada y do canto superior esquerdo da caixa de texto dentro da imagem gerada. Especifica a posição vertical da caixa de texto. |
 

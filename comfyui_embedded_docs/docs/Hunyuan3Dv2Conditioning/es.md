@@ -6,13 +6,13 @@ El nodo Hunyuan3Dv2Conditioning procesa la salida de CLIP vision para generar da
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Sí | - | La salida de un modelo CLIP vision que contiene incrustaciones visuales |
+| `salida_vision_clip` | CLIP_VISION_OUTPUT | Sí | - | La salida de un modelo CLIP vision que contiene incrustaciones visuales |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `positive` | CONDITIONING | Datos de condicionamiento positivo que contienen las incrustaciones de CLIP vision |
+| `negative` | CONDITIONING | Datos de condicionamiento positivo que contienen las incrustaciones de CLIP vision |
 | `negative` | CONDITIONING | Datos de condicionamiento negativo que contienen incrustaciones con valor cero que coinciden con la forma de las incrustaciones positivas |
 
 ---

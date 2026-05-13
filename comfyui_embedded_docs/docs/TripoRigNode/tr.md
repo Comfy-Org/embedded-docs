@@ -6,7 +6,7 @@ TripoRigNode, orijinal bir model görev kimliğinden (task ID) donanımlı (rigg
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | MODEL_TASK_ID | Evet | - | Donanım eklenecek orijinal 3B modelin görev kimliği |
+| `orijinal_model_görev_id` | MODEL_TASK_ID | Evet | - | Donanım eklenecek orijinal 3B modelin görev kimliği |
 | `auth_token` | AUTH_TOKEN_COMFY_ORG | Hayır | - | Comfy.org API erişimi için kimlik doğrulama belirteci |
 | `comfy_api_key` | API_KEY_COMFY_ORG | Hayır | - | Comfy.org hizmet kimlik doğrulaması için API anahtarı |
 | `unique_id` | UNIQUE_ID | Hayır | - | İşlemi izlemek için benzersiz tanımlayıcı |
@@ -15,8 +15,8 @@ TripoRigNode, orijinal bir model görev kimliğinden (task ID) donanımlı (rigg
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model_file` | STRING | Oluşturulan donanımlı 3B model dosyası (geriye dönük uyumluluk için korunmuştur) |
-| `rig task_id` | RIG_TASK_ID | Donanım oluşturma sürecini izlemek için görev kimliği |
+| `rig_görev_id` | STRING | Oluşturulan donanımlı 3B model dosyası (geriye dönük uyumluluk için korunmuştur) |
+| `GLB` | RIG_TASK_ID | Donanım oluşturma sürecini izlemek için görev kimliği |
 | `GLB` | FILE3DGLB | GLB formatında oluşturulan donanımlı 3B model |
 
 ---

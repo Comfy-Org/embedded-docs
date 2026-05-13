@@ -11,8 +11,8 @@ Générez des images en utilisant le modèle Flux.2 [pro] ou Flux.2 [max] à par
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | N/A | Invite pour la génération ou l'édition d'image (par défaut : chaîne vide). |
-| `model` | COMBO | Oui | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La version du modèle Flux.2 à utiliser. La sélection d'un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence optionnelles. |
-| `seed` | INT | Oui | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit. Peut être définie pour se randomiser après chaque génération (par défaut : 0). |
+| `modèle` | COMBO | Oui | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La version du modèle Flux.2 à utiliser. La sélection d'un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence optionnelles. |
+| `graine` | INT | Oui | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit. Peut être définie pour se randomiser après chaque génération (par défaut : 0). |
 
 **Paramètres supplémentaires (déverrouillés par la sélection du `model`) :**
 

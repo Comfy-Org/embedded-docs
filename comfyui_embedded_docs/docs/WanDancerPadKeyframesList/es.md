@@ -17,8 +17,8 @@ Este nodo toma una secuencia de imágenes y una pista de audio opcional, y las d
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `keyframes_sequence` | IMAGE | Una lista de secuencias de fotogramas clave rellenadas, una para cada segmento. |
-| `keyframes_mask` | MASK | Una lista de máscaras que indican los fotogramas válidos para cada segmento. |
+| `keyframes_mask` | IMAGE | Una lista de secuencias de fotogramas clave rellenadas, una para cada segmento. |
+| `audio_segment` | MASK | Una lista de máscaras que indican los fotogramas válidos para cada segmento. |
 | `audio_segment` | AUDIO | Una lista de segmentos de audio, uno para cada segmento de video. |
 
 ---

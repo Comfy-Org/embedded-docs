@@ -53,8 +53,8 @@ El nodo Kling Start-End Frame to Video crea una secuencia de video que realiza u
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `output` | VIDEO | La secuencia de video generada |
-| `video_id` | STRING | Identificador único para el video generado |
+| `video_id` | VIDEO | La secuencia de video generada |
+| `duration` | STRING | Identificador único para el video generado |
 | `duration` | STRING | Duración del video generado |
 
 ---

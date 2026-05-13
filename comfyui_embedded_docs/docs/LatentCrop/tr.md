@@ -6,9 +6,9 @@ LatentCrop düğümü, görüntülerin gizli (latent) temsilleri üzerinde kırp
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `samples` | `LATENT`    | 'samples' parametresi, kırpılacak gizli temsilleri temsil eder. Kırpma işleminin gerçekleştirileceği veriyi tanımlamak için kritik öneme sahiptir. |
-| `width`   | `INT`       | Kırpma alanının genişliğini belirtir. Çıktı gizli temsilinin boyutlarını doğrudan etkiler. |
-| `height`  | `INT`       | Kırpma alanının yüksekliğini belirtir. Ortaya çıkan kırpılmış gizli temsilin boyutunu etkiler. |
+| `örnekler` | `LATENT`    | 'samples' parametresi, kırpılacak gizli temsilleri temsil eder. Kırpma işleminin gerçekleştirileceği veriyi tanımlamak için kritik öneme sahiptir. |
+| `genişlik`   | `INT`       | Kırpma alanının genişliğini belirtir. Çıktı gizli temsilinin boyutlarını doğrudan etkiler. |
+| `yükseklik`  | `INT`       | Kırpma alanının yüksekliğini belirtir. Ortaya çıkan kırpılmış gizli temsilin boyutunu etkiler. |
 | `x`       | `INT`       | Kırpma alanının başlangıç x koordinatını belirler. Kırpmanın orijinal gizli temsil içindeki konumunu etkiler. |
 | `y`       | `INT`       | Kırpma alanının başlangıç y koordinatını belirler. Kırpmanın orijinal gizli temsil içindeki konumunu ayarlar. |
 

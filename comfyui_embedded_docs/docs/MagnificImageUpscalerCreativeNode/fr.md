@@ -8,14 +8,14 @@ Ce nœud utilise le service IA Magnific pour agrandir et améliorer de manière 
 |-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à agrandir et améliorer. |
 | `prompt` | STRING | Non | - | Une description textuelle pour guider l'amélioration créative de l'image. Ce paramètre est facultatif (par défaut : vide). |
-| `scale_factor` | COMBO | Oui | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | Le facteur d'agrandissement des dimensions de l'image. |
-| `optimized_for` | COMBO | Oui | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | Le style ou type de contenu pour lequel optimiser le processus d'amélioration. |
-| `creativity` | INT | Non | -10 à 10 | Contrôle le niveau d'interprétation créative appliqué à l'image (par défaut : 0). |
+| `facteur d’agrandissement` | COMBO | Oui | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | Le facteur d'agrandissement des dimensions de l'image. |
+| `optimisé pour` | COMBO | Oui | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | Le style ou type de contenu pour lequel optimiser le processus d'amélioration. |
+| `créativité` | INT | Non | -10 à 10 | Contrôle le niveau d'interprétation créative appliqué à l'image (par défaut : 0). |
 | `hdr` | INT | Non | -10 à 10 | Le niveau de définition et de détail (par défaut : 0). |
-| `resemblance` | INT | Non | -10 à 10 | Le niveau de ressemblance avec l'image originale (par défaut : 0). |
-| `fractality` | INT | Non | -10 à 10 | La force du texte descriptif et la complexité par pixel carré (par défaut : 0). |
-| `engine` | COMBO | Oui | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | Le moteur IA spécifique à utiliser pour le traitement. Il s'agit d'un paramètre avancé. |
-| `auto_downscale` | BOOLEAN | Non | - | Lorsqu'il est activé, le nœud réduit automatiquement l'image d'entrée si l'agrandissement demandé dépasse la taille de sortie maximale autorisée de 25,3 mégapixels. Il s'agit d'un paramètre avancé (par défaut : Faux). |
+| `ressemblance` | INT | Non | -10 à 10 | Le niveau de ressemblance avec l'image originale (par défaut : 0). |
+| `fractalité` | INT | Non | -10 à 10 | La force du texte descriptif et la complexité par pixel carré (par défaut : 0). |
+| `moteur` | COMBO | Oui | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | Le moteur IA spécifique à utiliser pour le traitement. Il s'agit d'un paramètre avancé. |
+| `réduction automatique` | BOOLEAN | Non | - | Lorsqu'il est activé, le nœud réduit automatiquement l'image d'entrée si l'agrandissement demandé dépasse la taille de sortie maximale autorisée de 25,3 mégapixels. Il s'agit d'un paramètre avancé (par défaut : Faux). |
 
 **Contraintes :**
 

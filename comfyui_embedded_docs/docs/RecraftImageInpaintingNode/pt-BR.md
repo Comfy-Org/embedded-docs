@@ -8,11 +8,11 @@ Este nó modifica áreas específicas de uma imagem com base em um prompt de tex
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser modificada |
-| `mask` | MASK | Sim | - | A máscara que define quais áreas da imagem devem ser modificadas |
+| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser modificada |
+| `máscara` | MASK | Sim | - | A máscara que define quais áreas da imagem devem ser modificadas |
 | `prompt` | STRING | Sim | - | Prompt para a geração da imagem (padrão: string vazia, comprimento máximo: 1000 caracteres) |
 | `n` | INT | Sim | 1-6 | O número de imagens a serem geradas (padrão: 1, mínimo: 1, máximo: 6) |
-| `seed` | INT | Sim | 0-18446744073709551615 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0) |
+| `semente` | INT | Sim | 0-18446744073709551615 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0) |
 | `recraft_style` | STYLEV3 | Não | - | Parâmetro de estilo opcional para a API Recraft. Se não for fornecido, o padrão é o estilo "realistic_image" |
 | `negative_prompt` | STRING | Não | - | Uma descrição textual opcional de elementos indesejados na imagem (padrão: string vazia) |
 
@@ -22,7 +22,7 @@ Este nó modifica áreas específicas de uma imagem com base em um prompt de tex
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `image` | IMAGE | A(s) imagem(ns) modificada(s) gerada(s) com base no prompt e na máscara. Retorna uma imagem por imagem de entrada multiplicada pelo parâmetro `n` |
+| `imagem` | IMAGE | A(s) imagem(ns) modificada(s) gerada(s) com base no prompt e na máscara. Retorna uma imagem por imagem de entrada multiplicada pelo parâmetro `n` |
 
 ---
 **Source fingerprint (SHA-256):** `3eb6505a19173d8e4ea4216348f9592fd996cdfe2f07a9e79ccec5f738a8fb93`

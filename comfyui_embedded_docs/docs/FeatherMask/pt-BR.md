@@ -7,10 +7,10 @@ O nó `FeatherMask` aplica um efeito de esmaecimento (feathering) nas bordas de 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-----------|
 | `mask`    | MASK          | A máscara à qual o efeito de esmaecimento será aplicado. Ela determina a área da imagem que será afetada pelo esmaecimento. |
-| `left`    | INT           | Especifica a distância a partir da borda esquerda dentro da qual o efeito de esmaecimento será aplicado. |
-| `top`     | INT           | Especifica a distância a partir da borda superior dentro da qual o efeito de esmaecimento será aplicado. |
-| `right`   | INT           | Especifica a distância a partir da borda direita dentro da qual o efeito de esmaecimento será aplicado. |
-| `bottom`  | INT           | Especifica a distância a partir da borda inferior dentro da qual o efeito de esmaecimento será aplicado. |
+| `esquerda`    | INT           | Especifica a distância a partir da borda esquerda dentro da qual o efeito de esmaecimento será aplicado. |
+| `topo`     | INT           | Especifica a distância a partir da borda superior dentro da qual o efeito de esmaecimento será aplicado. |
+| `direita`   | INT           | Especifica a distância a partir da borda direita dentro da qual o efeito de esmaecimento será aplicado. |
+| `inferior`  | INT           | Especifica a distância a partir da borda inferior dentro da qual o efeito de esmaecimento será aplicado. |
 
 ## Saídas
 

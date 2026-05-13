@@ -19,8 +19,8 @@ Le résultat final est une image en noir et blanc, où les parties blanches sont
 | Nom du paramètre | Type de données | Type d'entrée | Valeur par défaut | Plage      | Description de la fonction |
 |------------------|-----------------|---------------|-------------------|------------|----------------------------|
 | `image`          | IMAGE           | Entrée        | -                 | -          | Photo originale nécessitant une extraction des contours |
-| `low_threshold`  | FLOAT           | Widget        | 0.4               | 0.01-0.99  | Seuil bas, détermine quels contours faibles ignorer. Des valeurs plus basses préservent plus de détails mais peuvent générer du bruit |
-| `high_threshold` | FLOAT           | Widget        | 0.8               | 0.01-0.99  | Seuil haut, détermine quels contours forts conserver. Des valeurs plus élevées ne conservent que les lignes de contour les plus évidentes |
+| `seuil_bas`  | FLOAT           | Widget        | 0.4               | 0.01-0.99  | Seuil bas, détermine quels contours faibles ignorer. Des valeurs plus basses préservent plus de détails mais peuvent générer du bruit |
+| `seuil_haut` | FLOAT           | Widget        | 0.8               | 0.01-0.99  | Seuil haut, détermine quels contours forts conserver. Des valeurs plus élevées ne conservent que les lignes de contour les plus évidentes |
 
 ## Sorties
 

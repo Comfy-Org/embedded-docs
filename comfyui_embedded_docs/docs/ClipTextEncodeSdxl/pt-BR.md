@@ -7,14 +7,14 @@ Este nó foi projetado para codificar entrada de texto usando um modelo CLIP esp
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|---------------|-------------|
 | `clip` | CLIP | Instância do modelo CLIP usada para codificação de texto. |
-| `width` | INT | Especifica a largura da imagem em pixels, padrão 1024. |
-| `height` | INT | Especifica a altura da imagem em pixels, padrão 1024. |
-| `crop_w` | INT | Largura da área de corte em pixels, padrão 0. |
-| `crop_h` | INT | Altura da área de corte em pixels, padrão 0. |
-| `target_width` | INT | Largura alvo para a imagem de saída, padrão 1024. |
-| `target_height` | INT | Altura alvo para a imagem de saída, padrão 1024. |
-| `text_g` | STRING | Descrição textual global para a descrição geral da cena. |
-| `text_l` | STRING | Descrição textual local para a descrição de detalhes. |
+| `largura` | INT | Especifica a largura da imagem em pixels, padrão 1024. |
+| `altura` | INT | Especifica a altura da imagem em pixels, padrão 1024. |
+| `recorte_largura` | INT | Largura da área de corte em pixels, padrão 0. |
+| `recorte_altura` | INT | Altura da área de corte em pixels, padrão 0. |
+| `largura_alvo` | INT | Largura alvo para a imagem de saída, padrão 1024. |
+| `altura_alvo` | INT | Altura alvo para a imagem de saída, padrão 1024. |
+| `texto_g` | STRING | Descrição textual global para a descrição geral da cena. |
+| `texto_l` | STRING | Descrição textual local para a descrição de detalhes. |
 
 ## Saídas
 

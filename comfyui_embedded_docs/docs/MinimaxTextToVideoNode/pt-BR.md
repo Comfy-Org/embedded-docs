@@ -6,9 +6,9 @@ Gera vídeos de forma síncrona com base em um prompt e parâmetros opcionais us
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `prompt_text` | STRING | Sim | - | Prompt de texto para guiar a geração do vídeo |
-| `model` | COMBO | Não | "T2V-01"<br>"T2V-01-Director" | Modelo a ser usado para geração de vídeo (padrão: "T2V-01") |
-| `seed` | INT | Não | 0 a 18446744073709551615 | Semente aleatória usada para criar o ruído (padrão: 0) |
+| `prompt_texto` | STRING | Sim | - | Prompt de texto para guiar a geração do vídeo |
+| `modelo` | COMBO | Não | "T2V-01"<br>"T2V-01-Director" | Modelo a ser usado para geração de vídeo (padrão: "T2V-01") |
+| `semente` | INT | Não | 0 a 18446744073709551615 | Semente aleatória usada para criar o ruído (padrão: 0) |
 
 ## Saídas
 

@@ -6,7 +6,7 @@ El nodo SamplerLMS crea un muestreador de Mínimos Cuadrados Medios (LMS) para s
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `order` | INT | Sí | 1 a 100 | El parámetro de orden para el algoritmo del muestreador LMS, que controla la precisión y estabilidad del método numérico (valor predeterminado: 4) |
+| `orden` | INT | Sí | 1 a 100 | El parámetro de orden para el algoritmo del muestreador LMS, que controla la precisión y estabilidad del método numérico (valor predeterminado: 4) |
 
 ## Salidas
 

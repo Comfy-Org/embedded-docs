@@ -9,7 +9,7 @@ Le nœud ElevenLabs Instant Voice Clone crée un nouveau modèle vocal unique en
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `audio_*` | AUDIO | Oui | 1 à 8 fichiers | Enregistrements audio pour le clonage vocal. Vous devez fournir entre 1 et 8 fichiers audio. |
-| `remove_background_noise` | BOOLEAN | Non | Vrai / Faux | Supprime le bruit de fond des échantillons vocaux à l'aide de l'isolation audio. (par défaut : Faux) |
+| `supprimer_bruit_de_fond` | BOOLEAN | Non | Vrai / Faux | Supprime le bruit de fond des échantillons vocaux à l'aide de l'isolation audio. (par défaut : Faux) |
 
 **Remarque :** Vous devez fournir au moins un fichier audio, et vous pouvez en fournir jusqu'à huit. Le nœud créera automatiquement des emplacements d'entrée pour les fichiers audio que vous ajoutez.
 

@@ -6,7 +6,7 @@ Genera SVG de forma síncrona a partir de una imagen de entrada. Este nodo convi
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada para convertir a formato SVG |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada para convertir a formato SVG |
 
 ## Salidas
 

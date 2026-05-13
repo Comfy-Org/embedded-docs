@@ -6,14 +6,14 @@
 
 | 参数 | 数据类型 | 是否必填 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 视频生成的提示词（默认值：""） |
-| `aspect_ratio` | COMBO | 是 | PixverseAspectRatio 中的选项 | 生成视频的宽高比 |
-| `quality` | COMBO | 是 | PixverseQuality 中的选项 | 视频质量设置（默认值：PixverseQuality.res_540p） |
-| `duration_seconds` | COMBO | 是 | PixverseDuration 中的选项 | 生成视频的时长（秒） |
-| `motion_mode` | COMBO | 是 | PixverseMotionMode 中的选项 | 视频生成的运动风格 |
-| `seed` | INT | 是 | 0 到 2147483647 | 视频生成的随机种子（默认值：0） |
-| `negative_prompt` | STRING | 否 | - | 对图像中不希望出现的元素的可选文本描述（默认值：""） |
-| `pixverse_template` | CUSTOM | 否 | - | 用于影响生成风格的可选模板，由 PixVerse 模板节点创建 |
+| `提示词` | STRING | 是 | - | 视频生成的提示词（默认值：""） |
+| `宽高比` | COMBO | 是 | PixverseAspectRatio 中的选项 | 生成视频的宽高比 |
+| `质量` | COMBO | 是 | PixverseQuality 中的选项 | 视频质量设置（默认值：PixverseQuality.res_540p） |
+| `时长（秒）` | COMBO | 是 | PixverseDuration 中的选项 | 生成视频的时长（秒） |
+| `运动模式` | COMBO | 是 | PixverseMotionMode 中的选项 | 视频生成的运动风格 |
+| `种子` | INT | 是 | 0 到 2147483647 | 视频生成的随机种子（默认值：0） |
+| `反向提示词` | STRING | 否 | - | 对图像中不希望出现的元素的可选文本描述（默认值：""） |
+| `PixVerse 模板` | CUSTOM | 否 | - | 用于影响生成风格的可选模板，由 PixVerse 模板节点创建 |
 
 **注意：** 使用 1080p 质量时，运动模式会自动设置为普通，时长限制为 5 秒。对于非 5 秒的时长，运动模式也会自动设置为普通。
 

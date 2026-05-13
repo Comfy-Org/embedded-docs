@@ -7,14 +7,14 @@ O nó GLSL Shader aplica código de shader de fragmento GLSL ES personalizado a 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
 | `fragment_shader` | STRING | Sim | N/A | Código-fonte do shader de fragmento GLSL (compatível com GLSL ES 3.00 / WebGL 2.0). Padrão: Um shader básico que gera a primeira imagem de entrada. |
-| `size_mode` | COMBO | Sim | `"from_input"`<br>`"custom"` | Tamanho da saída: 'from_input' usa as dimensões da primeira imagem de entrada, 'custom' permite tamanho manual. |
-| `width` | INT | Não | 1 a 16384 | A largura da imagem de saída quando `size_mode` está definido como `"custom"`. Padrão: 512. |
-| `height` | INT | Não | 1 a 16384 | A altura da imagem de saída quando `size_mode` está definido como `"custom"`. Padrão: 512. |
-| `images` | IMAGE | Sim | 1 a 8 imagens | Imagens de entrada a serem processadas pelo shader. As imagens estão disponíveis como `u_image0` a `u_image7` (sampler2D) no código do shader. |
+| `modo_tamanho` | COMBO | Sim | `"from_input"`<br>`"custom"` | Tamanho da saída: 'from_input' usa as dimensões da primeira imagem de entrada, 'custom' permite tamanho manual. |
+| `width` | INT | Não | 1 a 16384 | A largura da imagem de saída quando `modo_tamanho` está definido como `"custom"`. Padrão: 512. |
+| `height` | INT | Não | 1 a 16384 | A altura da imagem de saída quando `modo_tamanho` está definido como `"custom"`. Padrão: 512. |
+| `imagens` | IMAGE | Sim | 1 a 8 imagens | Imagens de entrada a serem processadas pelo shader. As imagens estão disponíveis como `u_image0` a `u_image7` (sampler2D) no código do shader. |
 | `floats` | FLOAT | Não | 0 a 8 floats | Valores uniformes de ponto flutuante para o shader. Os floats estão disponíveis como `u_float0` a `u_float7` no código do shader. Padrão: 0.0. |
 | `ints` | INT | Não | 0 a 8 inteiros | Valores uniformes inteiros para o shader. Os inteiros estão disponíveis como `u_int0` a `u_int7` no código do shader. Padrão: 0. |
-| `bools` | BOOLEAN | Não | 0 a 8 booleanos | Valores uniformes booleanos para o shader. Os booleanos estão disponíveis como `u_bool0` a `u_bool7` (bool) no código do shader. Padrão: Falso. |
-| `curves` | CURVE | Não | 0 a 8 curvas | Valores uniformes de curva para o shader. As curvas estão disponíveis como `u_curve0` a `u_curve7` (sampler2D, LUT 1D) no código do shader. Amostre com `texture(u_curve0, vec2(x, 0.5)).r`. |
+| `booleanos` | BOOLEAN | Não | 0 a 8 booleanos | Valores uniformes booleanos para o shader. Os booleanos estão disponíveis como `u_bool0` a `u_bool7` (bool) no código do shader. Padrão: Falso. |
+| `curvas` | CURVE | Não | 0 a 8 curvas | Valores uniformes de curva para o shader. As curvas estão disponíveis como `u_curve0` a `u_curve7` (sampler2D, LUT 1D) no código do shader. Amostre com `texture(u_curve0, vec2(x, 0.5)).r`. |
 
 **Observações:**
 

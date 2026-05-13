@@ -7,13 +7,13 @@ Mevcut bir ses örneğinin belirli bölümlerini metin talimatları kullanarak d
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `model` | COMBO | Evet | "stable-audio-2.5" | Ses onarımı için kullanılacak yapay zeka modeli. |
-| `prompt` | STRING | Evet |  | Sesin nasıl dönüştürülmesi gerektiğini yönlendiren metin açıklaması (varsayılan: boş). |
-| `audio` | AUDIO | Evet |  | Dönüştürülecek giriş ses dosyası. Ses 6 ila 190 saniye arasında olmalıdır. |
-| `duration` | INT | Hayır | 1-190 | Oluşturulan sesin saniye cinsinden süresini kontrol eder (varsayılan: 190). |
-| `seed` | INT | Hayır | 0-4294967294 | Üretim için kullanılan rastgele tohum değeri (varsayılan: 0). |
-| `steps` | INT | Hayır | 4-8 | Örnekleme adımlarının sayısını kontrol eder (varsayılan: 8). |
-| `mask_start` | INT | Hayır | 0-190 | Dönüştürülecek ses bölümü için saniye cinsinden başlangıç konumu (varsayılan: 30). |
-| `mask_end` | INT | Hayır | 0-190 | Dönüştürülecek ses bölümü için saniye cinsinden bitiş konumu (varsayılan: 190). |
+| `komut` | STRING | Evet |  | Sesin nasıl dönüştürülmesi gerektiğini yönlendiren metin açıklaması (varsayılan: boş). |
+| `ses` | AUDIO | Evet |  | Dönüştürülecek giriş ses dosyası. Ses 6 ila 190 saniye arasında olmalıdır. |
+| `süre` | INT | Hayır | 1-190 | Oluşturulan sesin saniye cinsinden süresini kontrol eder (varsayılan: 190). |
+| `tohum` | INT | Hayır | 0-4294967294 | Üretim için kullanılan rastgele tohum değeri (varsayılan: 0). |
+| `adımlar` | INT | Hayır | 4-8 | Örnekleme adımlarının sayısını kontrol eder (varsayılan: 8). |
+| `maske_başlangıç` | INT | Hayır | 0-190 | Dönüştürülecek ses bölümü için saniye cinsinden başlangıç konumu (varsayılan: 30). |
+| `maske_bitiş` | INT | Hayır | 0-190 | Dönüştürülecek ses bölümü için saniye cinsinden bitiş konumu (varsayılan: 190). |
 
 **Not:** `mask_end` değeri `mask_start` değerinden büyük olmalıdır. Giriş sesinin süresi 6 ila 190 saniye arasında olmalıdır.
 
@@ -21,7 +21,7 @@ Mevcut bir ses örneğinin belirli bölümlerini metin talimatları kullanarak d
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
-| `audio` | AUDIO | Belirtilen bölümün isteme göre değiştirildiği dönüştürülmüş ses çıktısı. |
+| `ses` | AUDIO | Belirtilen bölümün isteme göre değiştirildiği dönüştürülmüş ses çıktısı. |
 
 ---
 **Source fingerprint (SHA-256):** `6589fdbff8387e403055c711a61bb3000d87e5f8cd3753d6e665b723be6f43e2`

@@ -6,9 +6,9 @@ O nó SDPoseFaceBBoxes processa dados de pontos-chave de pose para detectar e ge
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|-----------|----------|-------|-------------|
-| `keypoints` | POSE_KEYPOINT | Sim | - | Os dados de pontos-chave de pose contendo informações sobre pessoas detectadas e seus marcos corporais/faciais por quadro. |
-| `scale` | FLOAT | Não | 1,0 - 10,0 | Multiplicador para a área da caixa delimitadora ao redor de cada rosto detectado. Um valor maior cria uma caixa maior. (padrão: 1,5) |
-| `force_square` | BOOLEAN | Não | - | Expande o eixo mais curto da caixa delimitadora para que a região de recorte seja sempre quadrada. (padrão: Verdadeiro) |
+| `pontos-chave` | POSE_KEYPOINT | Sim | - | Os dados de pontos-chave de pose contendo informações sobre pessoas detectadas e seus marcos corporais/faciais por quadro. |
+| `escala` | FLOAT | Não | 1,0 - 10,0 | Multiplicador para a área da caixa delimitadora ao redor de cada rosto detectado. Um valor maior cria uma caixa maior. (padrão: 1,5) |
+| `forçar_quadrado` | BOOLEAN | Não | - | Expande o eixo mais curto da caixa delimitadora para que a região de recorte seja sempre quadrada. (padrão: Verdadeiro) |
 
 **Observação:** A entrada `keypoints` deve estar no formato específico produzido por nós como SDPoseKeypointExtractor, contendo `canvas_height`, `canvas_width` e dados de `people` com `face_keypoints_2d` para cada pessoa.
 

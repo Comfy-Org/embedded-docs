@@ -6,9 +6,9 @@ Metni PixArt Alpha için kodlar ve çözünürlük koşullandırmasını ayarlar
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 0 - MAKSİMUM ÇÖZÜNÜRLÜK | Çözünürlük koşullandırması için genişlik boyutu (varsayılan: 1024) |
-| `height` | INT | Evet | 0 - MAKSİMUM ÇÖZÜNÜRLÜK | Çözünürlük koşullandırması için yükseklik boyutu (varsayılan: 1024) |
-| `text` | STRING | Evet | - | Kodlanacak metin girişi, çok satırlı girişi ve dinamik istemleri destekler |
+| `genişlik` | INT | Evet | 0 - MAKSİMUM ÇÖZÜNÜRLÜK | Çözünürlük koşullandırması için genişlik boyutu (varsayılan: 1024) |
+| `yükseklik` | INT | Evet | 0 - MAKSİMUM ÇÖZÜNÜRLÜK | Çözünürlük koşullandırması için yükseklik boyutu (varsayılan: 1024) |
+| `metin` | STRING | Evet | - | Kodlanacak metin girişi, çok satırlı girişi ve dinamik istemleri destekler |
 | `clip` | CLIP | Evet | - | Tokenizasyon ve kodlama için kullanılan CLIP modeli |
 
 ## Çıktılar

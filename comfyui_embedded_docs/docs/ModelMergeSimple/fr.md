@@ -8,9 +8,9 @@ Le paramètre `ratio` détermine le rapport de mélange entre les deux modèles.
 
 | Paramètre | Type de données | Description |
 |-----------|-----------------|-------------|
-| `model1`  | `MODEL`         | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les correctifs du second modèle sont appliqués. |
-| `model2`  | `MODEL`         | Le second modèle dont les correctifs sont appliqués au premier modèle, influencés par le ratio spécifié. |
-| `ratio`   | `FLOAT`         | Lorsque cette valeur est à 1, le modèle de sortie est composé à 100 % de `model1`, et lorsqu'elle est à 0, le modèle de sortie est composé à 100 % de `model2`. |
+| `modèle1`  | `MODEL`         | Le premier modèle à fusionner. Il sert de modèle de base sur lequel les correctifs du second modèle sont appliqués. |
+| `modèle2`  | `MODEL`         | Le second modèle dont les correctifs sont appliqués au premier modèle, influencés par le ratio spécifié. |
+| `ratio`   | `FLOAT`         | Lorsque cette valeur est à 1, le modèle de sortie est composé à 100 % de `modèle1`, et lorsqu'elle est à 0, le modèle de sortie est composé à 100 % de `modèle2`. |
 
 ## Sorties
 

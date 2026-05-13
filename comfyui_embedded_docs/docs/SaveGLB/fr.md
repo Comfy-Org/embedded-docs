@@ -6,8 +6,8 @@ Le nœud SaveGLB enregistre des données de maillage 3D ou des fichiers 3D dans 
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `mesh` | MESH ou FILE3D | Oui | - | Maillage ou fichier 3D à enregistrer. Accepte les données de maillage ou les formats de fichiers 3D incluant GLB, GLTF, OBJ, FBX, STL et USDZ |
-| `filename_prefix` | STRING | Non | - | Le préfixe pour le nom du fichier de sortie (par défaut : "3d/ComfyUI") |
+| `maillage` | MESH ou FILE3D | Oui | - | Maillage ou fichier 3D à enregistrer. Accepte les données de maillage ou les formats de fichiers 3D incluant GLB, GLTF, OBJ, FBX, STL et USDZ |
+| `préfixe_du_nom_de_fichier` | STRING | Non | - | Le préfixe pour le nom du fichier de sortie (par défaut : "3d/ComfyUI") |
 
 ## Sorties
 

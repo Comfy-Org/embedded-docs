@@ -34,13 +34,13 @@ Grok Referanstan-Videoya düğümü, çıktının stilini ve içeriğini yönlen
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | İstenen videonun metin açıklaması. |
+| `istem` | STRING | Evet | Yok | İstenen videonun metin açıklaması. |
 | `model` | COMBO | Evet | `"grok-imagine-video"` | Video oluşturma için kullanılacak model. |
 | `model.reference_images` | IMAGE | Evet | 1 ila 7 görsel | Video oluşturmayı yönlendirmek için en fazla 7 referans görseli. |
 | `model.resolution` | COMBO | Evet | `"480p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü. |
 | `model.aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | Çıktı videosunun en-boy oranı. |
 | `model.duration` | INT | Evet | 2 ila 10 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
 
 **Not:** `model` parametresi, `reference_images`, `resolution`, `aspect_ratio` ve `duration` öğelerini içeren bir gruptur. En az bir referans görseli sağlamanız gerekir ve en fazla yedi görsel sağlayabilirsiniz.
 

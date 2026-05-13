@@ -6,10 +6,10 @@ Bu düğüm, görüntüleri iç boyama (inpainting) görevlerine uygun bir gizli
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `pixels`  | `IMAGE`     | Kodlanacak giriş görüntüsü. Bu görüntü, kodlamadan önce VAE modelinin beklenen giriş boyutlarına uyacak şekilde ön işleme ve yeniden boyutlandırmaya tabi tutulur. |
+| `pikseller`  | `IMAGE`     | Kodlanacak giriş görüntüsü. Bu görüntü, kodlamadan önce VAE modelinin beklenen giriş boyutlarına uyacak şekilde ön işleme ve yeniden boyutlandırmaya tabi tutulur. |
 | `vae`     | VAE       | Görüntüyü gizli temsiline (latent representation) kodlamak için kullanılan VAE modeli. Dönüşüm sürecinde kritik bir rol oynar ve çıktı gizli uzayının (latent space) kalitesini ve özelliklerini belirler. |
-| `mask`    | `MASK`      | Giriş görüntüsünün iç boyanacak bölgelerini belirten bir maske. Kodlamadan önce görüntüyü değiştirmek için kullanılır ve VAE'nin ilgili alanlara odaklanmasını sağlar. |
-| `grow_mask_by` | `INT` | Gizli uzayda (latent space) kesintisiz geçişler sağlamak için iç boyama maskesinin ne kadar genişletileceğini belirtir. Daha büyük bir değer, iç boyamadan etkilenen alanı artırır. |
+| `maske`    | `MASK`      | Giriş görüntüsünün iç boyanacak bölgelerini belirten bir maske. Kodlamadan önce görüntüyü değiştirmek için kullanılır ve VAE'nin ilgili alanlara odaklanmasını sağlar. |
+| `maskeyi_büyüt` | `INT` | Gizli uzayda (latent space) kesintisiz geçişler sağlamak için iç boyama maskesinin ne kadar genişletileceğini belirtir. Daha büyük bir değer, iç boyamadan etkilenen alanı artırır. |
 
 ## Çıktılar
 

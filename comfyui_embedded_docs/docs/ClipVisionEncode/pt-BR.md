@@ -13,8 +13,8 @@ O nó `CLIP Vision Encode` é um nó de codificação de imagem no ComfyUI, util
 | Nome do Parâmetro | Tipo de Dado | Descrição |
 | ----------------- | ------------ | --------- |
 | `clip_vision` | CLIP_VISION | Modelo de visão CLIP, geralmente carregado através do nó CLIPVisionLoader |
-| `image` | IMAGE | A imagem de entrada a ser codificada |
-| `crop` | Dropdown | Método de corte da imagem, opções: center (corte centralizado), none (sem corte) |
+| `imagem` | IMAGE | A imagem de entrada a ser codificada |
+| `recorte` | Dropdown | Método de corte da imagem, opções: center (corte centralizado), none (sem corte) |
 
 ## Saídas
 

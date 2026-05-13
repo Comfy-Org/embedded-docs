@@ -34,14 +34,14 @@ Bir metin istemi ve çıktı ayarlarına dayalı olarak eşzamanlı şekilde vid
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize). En az 3 karakter uzunluğunda olmalıdır. |
+| `istem` | STRING | Evet | - | Video oluşturma için istem (varsayılan: boş dize). En az 3 karakter uzunluğunda olmalıdır. |
 | `model` | COMBO | Evet | `"ray_1_6"`<br>`"ray_2"` | Kullanılacak video oluşturma modeli. |
-| `aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Oluşturulan video için en boy oranı (varsayılan: "16:9"). |
-| `resolution` | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"` | Video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray_1_6` modeli kullanılırken yok sayılır. |
-| `duration` | COMBO | Evet | `"5s"`<br>`"9s"` | Oluşturulan videonun süresi. Bu parametre `ray_1_6` modeli kullanılırken yok sayılır. |
-| `loop` | BOOLEAN | Evet | - | Videonun döngüye girip girmeyeceği (varsayılan: Yanlış). |
-| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
-| `luma_concepts` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları. |
+| `en_boy_oranı` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"` | Oluşturulan video için en boy oranı (varsayılan: "16:9"). |
+| `çözünürlük` | COMBO | Evet | `"540p"`<br>`"720p"`<br>`"1080p"` | Video için çıktı çözünürlüğü (varsayılan: "540p"). Bu parametre `ray_1_6` modeli kullanılırken yok sayılır. |
+| `süre` | COMBO | Evet | `"5s"`<br>`"9s"` | Oluşturulan videonun süresi. Bu parametre `ray_1_6` modeli kullanılırken yok sayılır. |
+| `döngü` | BOOLEAN | Evet | - | Videonun döngüye girip girmeyeceği (varsayılan: Yanlış). |
+| `tohum` | INT | Evet | 0 ile 18446744073709551615 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
+| `luma_kavramları` | CUSTOM | Hayır | - | Luma Concepts düğümü aracılığıyla kamera hareketini belirlemek için isteğe bağlı Kamera Kavramları. |
 
 **Not:** `ray_1_6` modeli kullanılırken `duration` ve `resolution` parametreleri otomatik olarak yok sayılır ve oluşturmayı etkilemez.
 

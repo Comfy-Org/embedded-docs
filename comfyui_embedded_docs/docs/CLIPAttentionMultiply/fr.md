@@ -10,7 +10,7 @@ Le nœud CLIPAttentionMultiply permet d'ajuster le mécanisme d'attention dans l
 | `q` | FLOAT | Oui | 0.0 - 10.0 | Facteur de multiplication pour les poids et biais de projection de requête (par défaut : 1.0) |
 | `k` | FLOAT | Oui | 0.0 - 10.0 | Facteur de multiplication pour les poids et biais de projection de clé (par défaut : 1.0) |
 | `v` | FLOAT | Oui | 0.0 - 10.0 | Facteur de multiplication pour les poids et biais de projection de valeur (par défaut : 1.0) |
-| `out` | FLOAT | Oui | 0.0 - 10.0 | Facteur de multiplication pour les poids et biais de projection de sortie (par défaut : 1.0) |
+| `sortie` | FLOAT | Oui | 0.0 - 10.0 | Facteur de multiplication pour les poids et biais de projection de sortie (par défaut : 1.0) |
 
 ## Sorties
 

@@ -6,10 +6,10 @@ ComfyUI Kling Video Uzatma Düğümü, diğer Kling düğümleri tarafından olu
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Hayır | - | Video uzatma işlemini yönlendiren olumlu metin istemi |
-| `negative_prompt` | STRING | Hayır | - | Uzatılmış videoda kaçınılması gereken öğeler için olumsuz metin istemi |
-| `cfg_scale` | FLOAT | Hayır | 0.0 - 1.0 | İstem yönlendirmesinin gücünü kontrol eder (varsayılan: 0.5) |
-| `video_id` | STRING | Evet | - | Uzatılacak videonun kimliği. Metinden videoya, görüntüden videoya ve önceki video uzatma işlemleri tarafından oluşturulan videoları destekler. Uzatma sonrası toplam süre 3 dakikayı aşamaz. |
+| `istem` | STRING | Hayır | - | Video uzatma işlemini yönlendiren olumlu metin istemi |
+| `negatif_istem` | STRING | Hayır | - | Uzatılmış videoda kaçınılması gereken öğeler için olumsuz metin istemi |
+| `cfg_ölçeği` | FLOAT | Hayır | 0.0 - 1.0 | İstem yönlendirmesinin gücünü kontrol eder (varsayılan: 0.5) |
+| `video_kimliği` | STRING | Evet | - | Uzatılacak videonun kimliği. Metinden videoya, görüntüden videoya ve önceki video uzatma işlemleri tarafından oluşturulan videoları destekler. Uzatma sonrası toplam süre 3 dakikayı aşamaz. |
 
 **Not:** `video_id` diğer Kling düğümleri tarafından oluşturulmuş bir videoya referans vermelidir ve uzatma sonrası toplam süre 3 dakikayı aşamaz.
 
@@ -17,8 +17,8 @@ ComfyUI Kling Video Uzatma Düğümü, diğer Kling düğümleri tarafından olu
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Kling API'si tarafından oluşturulan uzatılmış video |
-| `video_id` | STRING | Uzatılmış video için benzersiz tanımlayıcı |
+| `video_kimliği` | VIDEO | Kling API'si tarafından oluşturulan uzatılmış video |
+| `süre` | STRING | Uzatılmış video için benzersiz tanımlayıcı |
 | `duration` | STRING | Uzatılmış videonun süresi |
 
 ---

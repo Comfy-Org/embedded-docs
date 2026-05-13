@@ -9,12 +9,12 @@ O nó CosmosPredict2ImageToVideoLatent cria representações latentes de vídeo 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
 | `vae` | VAE | Sim | - | O modelo VAE usado para codificar imagens no espaço latente |
-| `width` | INT | Não | 16 a MAX_RESOLUTION | A largura do vídeo de saída em pixels (padrão: 848, deve ser divisível por 16) |
-| `height` | INT | Não | 16 a MAX_RESOLUTION | A altura do vídeo de saída em pixels (padrão: 480, deve ser divisível por 16) |
-| `length` | INT | Não | 1 a MAX_RESOLUTION | O número de quadros na sequência de vídeo (padrão: 93, passo: 4) |
-| `batch_size` | INT | Não | 1 a 4096 | O número de sequências de vídeo a serem geradas (padrão: 1) |
-| `start_image` | IMAGE | Não | - | Imagem inicial opcional para a sequência de vídeo |
-| `end_image` | IMAGE | Não | - | Imagem final opcional para a sequência de vídeo |
+| `largura` | INT | Não | 16 a MAX_RESOLUTION | A largura do vídeo de saída em pixels (padrão: 848, deve ser divisível por 16) |
+| `altura` | INT | Não | 16 a MAX_RESOLUTION | A altura do vídeo de saída em pixels (padrão: 480, deve ser divisível por 16) |
+| `comprimento` | INT | Não | 1 a MAX_RESOLUTION | O número de quadros na sequência de vídeo (padrão: 93, passo: 4) |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de sequências de vídeo a serem geradas (padrão: 1) |
+| `imagem_inicial` | IMAGE | Não | - | Imagem inicial opcional para a sequência de vídeo |
+| `imagem_final` | IMAGE | Não | - | Imagem final opcional para a sequência de vídeo |
 
 **Observação:** Quando nem `start_image` nem `end_image` são fornecidos, o nó gera um latente de vídeo em branco. Quando as imagens são fornecidas, elas são codificadas e posicionadas no início e/ou no final da sequência de vídeo com mascaramento apropriado.
 

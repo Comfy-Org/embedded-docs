@@ -8,16 +8,16 @@ Le nœud Video Slice vous permet d'extraire un segment spécifique d'une vidéo.
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `video` | VIDEO | Oui | - | La vidéo d'entrée à découper. |
-| `start_time` | FLOAT | Non | -1e5 à 1e5 | Temps de début en secondes (par défaut : 0.0). |
-| `duration` | FLOAT | Non | 0.0 et plus | Durée en secondes, ou 0 pour une durée illimitée (par défaut : 0.0). |
-| `strict_duration` | BOOLEAN | Non | - | Si Vrai, lorsque la durée spécifiée n'est pas possible, une erreur sera générée (par défaut : Faux). |
+| `vidéo` | VIDEO | Oui | - | La vidéo d'entrée à découper. |
+| `heure_de_début` | FLOAT | Non | -1e5 à 1e5 | Temps de début en secondes (par défaut : 0.0). |
+| `durée` | FLOAT | Non | 0.0 et plus | Durée en secondes, ou 0 pour une durée illimitée (par défaut : 0.0). |
+| `durée_stricte` | BOOLEAN | Non | - | Si Vrai, lorsque la durée spécifiée n'est pas possible, une erreur sera générée (par défaut : Faux). |
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `video` | VIDEO | Le segment vidéo rogné. |
+| `vidéo` | VIDEO | Le segment vidéo rogné. |
 
 ---
 **Source fingerprint (SHA-256):** `5e3e3e69931a25183eb01b7b87ec12cbf9f5a748781993dcbeec7a6d5f7260c1`

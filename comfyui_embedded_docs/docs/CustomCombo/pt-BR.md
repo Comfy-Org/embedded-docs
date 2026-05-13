@@ -6,7 +6,7 @@ O nó Custom Combo permite criar um menu suspenso personalizado com sua própria
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `choice` | COMBO | Sim | Definido pelo usuário | A opção de texto selecionada no menu suspenso personalizado. A lista de opções disponíveis é definida pelo usuário na interface do frontend do nó. |
+| `escolha` | COMBO | Sim | Definido pelo usuário | A opção de texto selecionada no menu suspenso personalizado. A lista de opções disponíveis é definida pelo usuário na interface do frontend do nó. |
 | `index` | INT | Não | 0 | Um valor inteiro que pode ser usado para especificar um índice. Padrão: 0. |
 
 **Observação:** A validação para a entrada deste nó está intencionalmente desabilitada. Isso permite que você defina quaisquer opções de texto personalizadas no frontend sem que o backend verifique se sua seleção pertence a uma lista predefinida.

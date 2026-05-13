@@ -6,14 +6,14 @@ El nodo Difusión Diferencial modifica el proceso de eliminación de ruido aplic
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | - | El modelo de difusión a modificar |
-| `strength` | FLOAT | No | 0.0 - 1.0 | Controla la intensidad de combinación entre la máscara de eliminación de ruido original y la máscara binaria de umbral (predeterminado: 1.0) |
+| `modelo` | MODEL | Sí | - | El modelo de difusión a modificar |
+| `intensidad` | FLOAT | No | 0.0 - 1.0 | Controla la intensidad de combinación entre la máscara de eliminación de ruido original y la máscara binaria de umbral (predeterminado: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `model` | MODEL | El modelo de difusión modificado con la función de máscara de eliminación de ruido actualizada |
+| `modelo` | MODEL | El modelo de difusión modificado con la función de máscara de eliminación de ruido actualizada |
 
 ---
 **Source fingerprint (SHA-256):** `3b1727baa6c546516f5dfb53e6e39f27fc7429cde2ac7fd7dfbab99eebb39816`

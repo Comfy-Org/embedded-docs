@@ -6,12 +6,12 @@
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `destination` | `IMAGE` | Kaynak görüntünün üzerine yerleştirileceği hedef görüntü. Birleştirme işlemi için arka plan görevi görür. |
-| `source` | `IMAGE` | Hedef görüntü üzerine yerleştirilecek kaynak görüntü. Bu görüntü, isteğe bağlı olarak hedef görüntünün boyutlarına uyacak şekilde yeniden boyutlandırılabilir. |
+| `hedef` | `IMAGE` | Kaynak görüntünün üzerine yerleştirileceği hedef görüntü. Birleştirme işlemi için arka plan görevi görür. |
+| `kaynak` | `IMAGE` | Hedef görüntü üzerine yerleştirilecek kaynak görüntü. Bu görüntü, isteğe bağlı olarak hedef görüntünün boyutlarına uyacak şekilde yeniden boyutlandırılabilir. |
 | `x` | `INT` | Kaynak görüntünün sol üst köşesinin hedef görüntüde yerleştirileceği x koordinatı. |
 | `y` | `INT` | Kaynak görüntünün sol üst köşesinin hedef görüntüde yerleştirileceği y koordinatı. |
-| `resize_source` | `BOOLEAN` | Kaynak görüntünün, hedef görüntünün boyutlarına uyacak şekilde yeniden boyutlandırılıp boyutlandırılmayacağını belirten bir boolean bayrağı. |
-| `mask` | `MASK` | Kaynak görüntünün hangi bölümlerinin hedef görüntü üzerine yerleştirileceğini belirten isteğe bağlı bir maske. Bu, karıştırma veya kısmi yerleştirme gibi daha karmaşık birleştirme işlemlerine olanak tanır. |
+| `kaynağı_yeniden_boyutlandır` | `BOOLEAN` | Kaynak görüntünün, hedef görüntünün boyutlarına uyacak şekilde yeniden boyutlandırılıp boyutlandırılmayacağını belirten bir boolean bayrağı. |
+| `maske` | `MASK` | Kaynak görüntünün hangi bölümlerinin hedef görüntü üzerine yerleştirileceğini belirten isteğe bağlı bir maske. Bu, karıştırma veya kısmi yerleştirme gibi daha karmaşık birleştirme işlemlerine olanak tanır. |
 
 ## Çıktılar
 

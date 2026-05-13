@@ -6,8 +6,8 @@ O nó SaveGLB salva dados de malha 3D ou arquivos 3D no diretório de saída. El
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `mesh` | MESH ou FILE3D | Sim | - | Malha ou arquivo 3D a ser salvo. Aceita dados de malha ou formatos de arquivo 3D, incluindo GLB, GLTF, OBJ, FBX, STL e USDZ |
-| `filename_prefix` | STRING | Não | - | O prefixo para o nome do arquivo de saída (padrão: "3d/ComfyUI") |
+| `malha` | MESH ou FILE3D | Sim | - | Malha ou arquivo 3D a ser salvo. Aceita dados de malha ou formatos de arquivo 3D, incluindo GLB, GLTF, OBJ, FBX, STL e USDZ |
+| `prefixo_do_arquivo` | STRING | Não | - | O prefixo para o nome do arquivo de saída (padrão: "3d/ComfyUI") |
 
 ## Saídas
 

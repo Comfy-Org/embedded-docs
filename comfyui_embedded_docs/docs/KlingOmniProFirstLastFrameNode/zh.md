@@ -6,16 +6,16 @@
 
 | 参数 | 数据类型 | 是否必需 | 取值范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用于视频生成的特定 Kling AI 模型。 |
-| `prompt` | STRING | 是 | - | 描述视频内容的文本提示词。可包含正面和负面描述。启用故事板时忽略此参数。 |
-| `duration` | INT | 是 | 3 到 15 | 生成视频的期望时长，单位为秒（默认值：5）。 |
-| `first_frame` | IMAGE | 是 | - | 视频序列的起始图像。 |
-| `end_frame` | IMAGE | 否 | - | 可选的视频结束帧。不能与 `reference_images` 同时使用。不支持故事板。 |
-| `reference_images` | IMAGE | 否 | - | 最多 6 张额外的参考图像。 |
-| `resolution` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 生成视频的输出分辨率（默认值："1080p"）。 |
-| `storyboards` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列带有独立提示词和时长的视频片段。仅 `kling-v3-omni` 模型支持。启用时，每个故事板都需要输入提示词和时长。 |
-| `generate_audio` | BOOLEAN | 否 | True / False | 为视频生成音频（默认值：False）。仅 `kling-v3-omni` 模型支持。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 种子控制节点是否重新运行；无论种子如何，结果都是非确定性的（默认值：0）。 |
+| `模型` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用于视频生成的特定 Kling AI 模型。 |
+| `提示词` | STRING | 是 | - | 描述视频内容的文本提示词。可包含正面和负面描述。启用故事板时忽略此参数。 |
+| `时长` | INT | 是 | 3 到 15 | 生成视频的期望时长，单位为秒（默认值：5）。 |
+| `起始帧` | IMAGE | 是 | - | 视频序列的起始图像。 |
+| `结束帧` | IMAGE | 否 | - | 可选的视频结束帧。不能与 `参考图像` 同时使用。不支持故事板。 |
+| `参考图像` | IMAGE | 否 | - | 最多 6 张额外的参考图像。 |
+| `分辨率` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 生成视频的输出分辨率（默认值："1080p"）。 |
+| `分镜` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列带有独立提示词和时长的视频片段。仅 `kling-v3-omni` 模型支持。启用时，每个故事板都需要输入提示词和时长。 |
+| `生成音频` | BOOLEAN | 否 | True / False | 为视频生成音频（默认值：False）。仅 `kling-v3-omni` 模型支持。 |
+| `种子` | INT | 否 | 0 到 2147483647 | 种子控制节点是否重新运行；无论种子如何，结果都是非确定性的（默认值：0）。 |
 
 **重要限制：**
 

@@ -6,11 +6,11 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | `"3.0"`<br>`"3.1"` | 要使用的 Hunyuan3D 模型版本。`3.1` 模型不提供 LowPoly 選項。 |
-| `prompt` | STRING | 是 | - | 要生成的 3D 模型的文字描述。最多支援 1024 個字元。 |
-| `face_count` | INT | 是 | 3000 - 1500000 | 生成的 3D 模型的目標面數。預設值：500000。 |
-| `generate_type` | DYNAMICCOMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | 要生成的 3D 模型類型。可用的選項及其相關參數如下：<br>- **Normal**：生成標準模型。包含一個 `pbr` 參數（預設值：`False`）。<br>- **LowPoly**：生成低多邊形模型。包含 `polygon_type`（`"triangle"` 或 `"quadrilateral"`）和 `pbr`（預設值：`False`）參數。<br>- **Geometry**：生成僅幾何形狀的模型。 |
-| `seed` | INT | 否 | 0 - 2147483647 | 生成用的種子值。無論種子為何，結果都是非確定性的。設定新的種子值可控制節點是否應重新執行。預設值：0。 |
+| `模型` | COMBO | 是 | `"3.0"`<br>`"3.1"` | 要使用的 Hunyuan3D 模型版本。`3.1` 模型不提供 LowPoly 選項。 |
+| `提示詞` | STRING | 是 | - | 要生成的 3D 模型的文字描述。最多支援 1024 個字元。 |
+| `面數` | INT | 是 | 3000 - 1500000 | 生成的 3D 模型的目標面數。預設值：500000。 |
+| `生成類型` | DYNAMICCOMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` | 要生成的 3D 模型類型。可用的選項及其相關參數如下：<br>- **Normal**：生成標準模型。包含一個 `pbr` 參數（預設值：`False`）。<br>- **LowPoly**：生成低多邊形模型。包含 `polygon_type`（`"triangle"` 或 `"quadrilateral"`）和 `pbr`（預設值：`False`）參數。<br>- **Geometry**：生成僅幾何形狀的模型。 |
+| `種子` | INT | 否 | 0 - 2147483647 | 生成用的種子值。無論種子為何，結果都是非確定性的。設定新的種子值可控制節點是否應重新執行。預設值：0。 |
 
 **注意：** `generate_type` 參數是動態的。選擇 `"LowPoly"` 將會顯示 `polygon_type` 和 `pbr` 的額外輸入。選擇 `"Normal"` 將會顯示 `pbr` 的輸入。選擇 `"Geometry"` 則不會顯示任何額外輸入。
 
@@ -20,9 +20,9 @@
 
 | 輸出名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 為向後相容性保留的舊版輸出。 |
-| `GLB` | FILE3DGLB | 以 GLB 檔案格式生成的 3D 模型。 |
-| `OBJ` | FILE3DOBJ | 以 OBJ 檔案格式生成的 3D 模型。 |
+| `GLB` | STRING | 為向後相容性保留的舊版輸出。 |
+| `OBJ` | FILE3DGLB | 以 GLB 檔案格式生成的 3D 模型。 |
+| `texture_image` | FILE3DOBJ | 以 OBJ 檔案格式生成的 3D 模型。 |
 | `texture_image` | IMAGE | 從生成的 OBJ 檔案中提取的紋理影像（如果有的話）。 |
 
 ---

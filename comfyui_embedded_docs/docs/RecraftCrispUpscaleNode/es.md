@@ -8,13 +8,13 @@ Escala la imagen de forma síncrona. Mejora una imagen rasterizada dada utilizan
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada que se va a escalar. Acepta un lote de imágenes. |
+| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a escalar. Acepta un lote de imágenes. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `image` | IMAGE | La imagen escalada con resolución y claridad mejoradas. Devuelve un lote de imágenes si se proporcionó un lote como entrada. |
+| `imagen` | IMAGE | La imagen escalada con resolución y claridad mejoradas. Devuelve un lote de imágenes si se proporcionó un lote como entrada. |
 
 ---
 **Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`

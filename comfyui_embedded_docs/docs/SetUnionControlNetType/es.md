@@ -6,14 +6,14 @@ El nodo SetUnionControlNetType permite especificar el tipo de red de control que
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `control_net` | CONTROL_NET | Sí | - | La red de control a modificar con una nueva configuración de tipo |
-| `type` | STRING | Sí | `"auto"`<br>Todas las claves UNION_CONTROLNET_TYPES disponibles | El tipo de red de control a aplicar. Use "auto" para la detección automática de tipo o seleccione un tipo de red de control específico de las opciones disponibles |
+| `controlnet` | CONTROL_NET | Sí | - | La red de control a modificar con una nueva configuración de tipo |
+| `tipo` | STRING | Sí | `"auto"`<br>Todas las claves UNION_CONTROLNET_TYPES disponibles | El tipo de red de control a aplicar. Use "auto" para la detección automática de tipo o seleccione un tipo de red de control específico de las opciones disponibles |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `control_net` | CONTROL_NET | La red de control modificada con la configuración de tipo especificada aplicada |
+| `controlnet` | CONTROL_NET | La red de control modificada con la configuración de tipo especificada aplicada |
 
 ---
 **Source fingerprint (SHA-256):** `a64308aec96784f08b6f3f8e96e85f532bd1c536301739e7252b2c7978921b5a`

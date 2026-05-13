@@ -6,13 +6,13 @@ Este nodo utiliza el modelo Seedance 2.0 de ByteDance para generar un video. Cre
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `model` | COMBO | Sí | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | El modelo a utilizar para la generación de video. Seedance 2.0 es para máxima calidad, mientras que Seedance 2.0 Fast está optimizado para velocidad. Seleccionar un modelo revelará entradas adicionales para `prompt`, `resolution`, `ratio`, `duration` y `generate_audio`. |
-| `first_frame` | IMAGE | No | - | La imagen que se usará como primer fotograma del video. |
-| `last_frame` | IMAGE | No | - | La imagen que se usará como último fotograma del video. |
-| `first_frame_asset_id` | STRING | No | - | Un asset_id de Seedance para usar como primer fotograma. No se puede usar al mismo tiempo que la entrada de imagen `first_frame`. El valor predeterminado es una cadena vacía. |
-| `last_frame_asset_id` | STRING | No | - | Un asset_id de Seedance para usar como último fotograma. No se puede usar al mismo tiempo que la entrada de imagen `last_frame`. El valor predeterminado es una cadena vacía. |
-| `seed` | INT | No | 0 a 2147483647 | Un valor de semilla. Cambiar esta semilla hará que el nodo se ejecute nuevamente, pero los resultados no son deterministas. El valor predeterminado es 0. |
-| `watermark` | BOOLEAN | No | - | Si se debe agregar una marca de agua al video generado. El valor predeterminado es Falso. |
+| `modelo` | COMBO | Sí | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | El modelo a utilizar para la generación de video. Seedance 2.0 es para máxima calidad, mientras que Seedance 2.0 Fast está optimizado para velocidad. Seleccionar un modelo revelará entradas adicionales para `prompt`, `resolution`, `ratio`, `duration` y `generate_audio`. |
+| `primer_fotograma` | IMAGE | No | - | La imagen que se usará como primer fotograma del video. |
+| `último_fotograma` | IMAGE | No | - | La imagen que se usará como último fotograma del video. |
+| `first_frame_asset_id` | STRING | No | - | Un asset_id de Seedance para usar como primer fotograma. No se puede usar al mismo tiempo que la entrada de imagen `primer_fotograma`. El valor predeterminado es una cadena vacía. |
+| `last_frame_asset_id` | STRING | No | - | Un asset_id de Seedance para usar como último fotograma. No se puede usar al mismo tiempo que la entrada de imagen `último_fotograma`. El valor predeterminado es una cadena vacía. |
+| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla. Cambiar esta semilla hará que el nodo se ejecute nuevamente, pero los resultados no son deterministas. El valor predeterminado es 0. |
+| `marca_de_agua` | BOOLEAN | No | - | Si se debe agregar una marca de agua al video generado. El valor predeterminado es Falso. |
 
 **Restricciones de Parámetros:**
 *   Debes proporcionar **ya sea** una imagen `first_frame` **o** un `first_frame_asset_id`. Proporcionar ambos causará un error.

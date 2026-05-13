@@ -6,13 +6,13 @@
 
 | 参数 | 数据类型 | 必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `multi_shot` | COMBO | 是 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 控制是生成单个视频还是生成一系列具有单独提示和时长的片段。当未设置为"disabled"时，将显示每个分镜的提示和时长的额外输入。 |
-| `generate_audio` | BOOLEAN | 是 | `True` / `False` | 启用后，节点将为视频生成音频。默认为 `True`。 |
-| `model` | COMBO | 是 | `"kling-v3"` | 模型及其相关设置。选择此选项将显示 `resolution` 和 `aspect_ratio` 子参数。 |
-| `model.resolution` | COMBO | 是 | `"4k"`<br>`"1080p"`<br>`"720p"` | 生成视频的分辨率。当 `model` 设置为 "kling-v3" 时，此设置可用。 |
-| `model.aspect_ratio` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 生成视频的宽高比。当为 `start_frame` 提供图像时（图像转视频模式），此设置将被忽略。当 `model` 设置为 "kling-v3" 时可用。 |
+| `多镜头` | COMBO | 是 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 控制是生成单个视频还是生成一系列具有单独提示和时长的片段。当未设置为"disabled"时，将显示每个分镜的提示和时长的额外输入。 |
+| `生成音频` | BOOLEAN | 是 | `True` / `False` | 启用后，节点将为视频生成音频。默认为 `True`。 |
+| `模型` | COMBO | 是 | `"kling-v3"` | 模型及其相关设置。选择此选项将显示 `resolution` 和 `aspect_ratio` 子参数。 |
+| `model.resolution` | COMBO | 是 | `"4k"`<br>`"1080p"`<br>`"720p"` | 生成视频的分辨率。当 `模型` 设置为 "kling-v3" 时，此设置可用。 |
+| `model.aspect_ratio` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 生成视频的宽高比。当为 `起始帧` 提供图像时（图像转视频模式），此设置将被忽略。当 `模型` 设置为 "kling-v3" 时可用。 |
 | `seed` | INT | 是 | 0 到 2147483647 | 用于生成的种子值。更改此值将导致节点重新运行，但结果是非确定性的。默认为 `0`。 |
-| `start_frame` | IMAGE | 否 | - | 可选的起始图像。连接后，节点将从文本转视频模式切换到图像转视频模式，对提供的图像进行动画处理。 |
+| `起始帧` | IMAGE | 否 | - | 可选的起始图像。连接后，节点将从文本转视频模式切换到图像转视频模式，对提供的图像进行动画处理。 |
 
 **`multi_shot` 模式的输入：**
 

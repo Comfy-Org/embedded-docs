@@ -8,9 +8,9 @@ Este nó cria uma prévia em vídeo dos objetos rastreados, desenhando cada obje
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `track_data` | TRACK_DATA | Sim | - | Os dados de rastreamento contendo máscaras empacotadas e informações de objetos de um nó de rastreamento SAM3. |
-| `images` | IMAGE | Não | - | Imagens de entrada opcionais para usar como fundo da prévia. Se não fornecidas, um fundo preto é usado. |
-| `opacity` | FLOAT | Não | 0.0 a 1.0 (passo: 0.05) | A opacidade da sobreposição de cor aplicada aos objetos rastreados (padrão: 0.5). |
+| `dados_de_rastreamento` | TRACK_DATA | Sim | - | Os dados de rastreamento contendo máscaras empacotadas e informações de objetos de um nó de rastreamento SAM3. |
+| `imagens` | IMAGE | Não | - | Imagens de entrada opcionais para usar como fundo da prévia. Se não fornecidas, um fundo preto é usado. |
+| `opacidade` | FLOAT | Não | 0.0 a 1.0 (passo: 0.05) | A opacidade da sobreposição de cor aplicada aos objetos rastreados (padrão: 0.5). |
 | `fps` | FLOAT | Não | 1.0 a 120.0 (passo: 1.0) | A taxa de quadros do vídeo de saída (padrão: 24.0). |
 
 ## Saídas

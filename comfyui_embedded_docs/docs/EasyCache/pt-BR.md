@@ -6,17 +6,17 @@ O nó EasyCache implementa um sistema de cache nativo para modelos, com o objeti
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo ao qual adicionar o EasyCache. |
-| `reuse_threshold` | FLOAT | Não | 0.0 - 3.0 | O limite para reutilizar etapas em cache (padrão: 0.2). |
-| `start_percent` | FLOAT | Não | 0.0 - 1.0 | A etapa relativa de amostragem para iniciar o uso do EasyCache (padrão: 0.15). |
-| `end_percent` | FLOAT | Não | 0.0 - 1.0 | A etapa relativa de amostragem para encerrar o uso do EasyCache (padrão: 0.95). |
-| `verbose` | BOOLEAN | Não | - | Se deve registrar informações detalhadas (padrão: False). |
+| `modelo` | MODEL | Sim | - | O modelo ao qual adicionar o EasyCache. |
+| `limite_de_reutilização` | FLOAT | Não | 0.0 - 3.0 | O limite para reutilizar etapas em cache (padrão: 0.2). |
+| `percentual_inicial` | FLOAT | Não | 0.0 - 1.0 | A etapa relativa de amostragem para iniciar o uso do EasyCache (padrão: 0.15). |
+| `percentual_final` | FLOAT | Não | 0.0 - 1.0 | A etapa relativa de amostragem para encerrar o uso do EasyCache (padrão: 0.95). |
+| `detalhado` | BOOLEAN | Não | - | Se deve registrar informações detalhadas (padrão: False). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `model` | MODEL | O modelo com a funcionalidade EasyCache adicionada. |
+| `modelo` | MODEL | O modelo com a funcionalidade EasyCache adicionada. |
 
 ---
 **Source fingerprint (SHA-256):** `e9d9bf5ecae8034b562f1a27acf528d1f3241d7d28621beba149d3e9bd66a247`

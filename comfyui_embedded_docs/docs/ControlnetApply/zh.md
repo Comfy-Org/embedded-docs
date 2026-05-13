@@ -8,10 +8,10 @@
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | 正向条件数据，来自 CLIP 文本编码器或其他条件输入 |
 | `negative` | `CONDITIONING` | 负向条件数据，来自 CLIP 文本编码器或其他条件输入 |
-| `control_net` | `CONTROL_NET` | 要应用的 controlNet 模型，通常从 ControlNet 加载器输入 |
-| `image` | `IMAGE` | 用于 controlNet 应用的图像，需经预处理器处理 |
+| `ControlNet` | `CONTROL_NET` | 要应用的 controlNet 模型，通常从 ControlNet 加载器输入 |
+| `图像` | `IMAGE` | 用于 controlNet 应用的图像，需经预处理器处理 |
 | `vae` | `VAE` | VAE 模型输入 |
-| `strength` | `FLOAT` | 控制网络调整的强度，取值范围 0~10。建议值在 0.5~1.5 之间较为合理。较低的值允许模型有更多自由度，较高的值则施加更严格的约束。过高的值可能导致图像异常。您可以测试并调整此值以微调控制网络的影响。 |
+| `强度` | `FLOAT` | 控制网络调整的强度，取值范围 0~10。建议值在 0.5~1.5 之间较为合理。较低的值允许模型有更多自由度，较高的值则施加更严格的约束。过高的值可能导致图像异常。您可以测试并调整此值以微调控制网络的影响。 |
 | `start_percent` | `FLOAT` | 值 0.000~1.000，以百分比形式确定何时开始应用 controlNet，例如 0.2 表示 ControlNet 引导将在扩散过程进行到 20% 时开始影响图像生成 |
 | `end_percent` | `FLOAT` | 值 0.000~1.000，以百分比形式确定何时停止应用 controlNet，例如 0.8 表示 ControlNet 引导将在扩散过程进行到 80% 时停止影响图像生成 |
 

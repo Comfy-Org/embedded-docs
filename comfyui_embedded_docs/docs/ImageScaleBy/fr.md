@@ -7,8 +7,8 @@ Le nœud ImageScaleBy est conçu pour agrandir des images selon un facteur d'éc
 | Paramètre       | Type de données | Description                                                                 |
 |-----------------|-----------------|-----------------------------------------------------------------------------|
 | `image`         | `IMAGE`         | L'image d'entrée à agrandir. Ce paramètre est essentiel car il fournit l'image de base qui subira le processus d'agrandissement. |
-| `upscale_method`| COMBO[STRING]   | Spécifie la méthode d'interpolation à utiliser pour l'agrandissement. Le choix de la méthode peut affecter la qualité et les caractéristiques de l'image agrandie. |
-| `scale_by`      | `FLOAT`         | Le facteur selon lequel l'image sera agrandie. Il détermine l'augmentation de taille de l'image de sortie par rapport à l'image d'entrée. |
+| `méthode_d'agrandissement`| COMBO[STRING]   | Spécifie la méthode d'interpolation à utiliser pour l'agrandissement. Le choix de la méthode peut affecter la qualité et les caractéristiques de l'image agrandie. |
+| `agrandir_par`      | `FLOAT`         | Le facteur selon lequel l'image sera agrandie. Il détermine l'augmentation de taille de l'image de sortie par rapport à l'image d'entrée. |
 
 ## Sorties
 

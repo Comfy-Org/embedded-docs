@@ -12,9 +12,9 @@ Bu düğüm, HappyHorse modelini kullanarak tek bir başlangıç görüntüsünd
 | `model.prompt` | STRING | Hayır | Yok | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler. (varsayılan: "") |
 | `model.resolution` | COMBO | Evet | `"720P"`<br>`"1080P"` | Çıktı video çözünürlüğü. (varsayılan: "720P") |
 | `model.duration` | INT | Evet | 3 ila 15 | Oluşturulan videonun saniye cinsinden süresi. (varsayılan: 5) |
-| `first_frame` | IMAGE | Evet | Yok | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. |
-| `seed` | INT | Hayır | 0 ila 2147483647 | Oluşturma için kullanılacak tohum değeri. (varsayılan: 0) |
-| `watermark` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
+| `ilk_kare` | IMAGE | Evet | Yok | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. |
+| `tohum` | INT | Hayır | 0 ila 2147483647 | Oluşturma için kullanılacak tohum değeri. (varsayılan: 0) |
+| `filigran` | BOOLEAN | Hayır | True / False | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği. (varsayılan: False) |
 
 ## Çıktılar
 

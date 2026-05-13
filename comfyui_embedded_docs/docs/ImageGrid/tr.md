@@ -6,11 +6,11 @@ Görüntü Izgarası düğümü, birden fazla görüntüyü tek bir düzenli ız
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | - | Izgaraya yerleştirilecek görüntülerin listesi. Düğümün çalışması için en az bir görüntü gereklidir. |
-| `columns` | INT | Hayır | 1 - 20 | Izgaradaki sütun sayısı (varsayılan: 4). |
-| `cell_width` | INT | Hayır | 32 - 2048 | Izgaradaki her hücrenin piksel cinsinden genişliği (varsayılan: 256). |
-| `cell_height` | INT | Hayır | 32 - 2048 | Izgaradaki her hücrenin piksel cinsinden yüksekliği (varsayılan: 256). |
-| `padding` | INT | Hayır | 0 - 50 | Izgaradaki görüntüler arasına yerleştirilecek piksel cinsinden boşluk miktarı (varsayılan: 4). |
+| `görseller` | IMAGE | Evet | - | Izgaraya yerleştirilecek görüntülerin listesi. Düğümün çalışması için en az bir görüntü gereklidir. |
+| `sütunlar` | INT | Hayır | 1 - 20 | Izgaradaki sütun sayısı (varsayılan: 4). |
+| `hücre_genişliği` | INT | Hayır | 32 - 2048 | Izgaradaki her hücrenin piksel cinsinden genişliği (varsayılan: 256). |
+| `hücre_yüksekliği` | INT | Hayır | 32 - 2048 | Izgaradaki her hücrenin piksel cinsinden yüksekliği (varsayılan: 256). |
+| `boşluk` | INT | Hayır | 0 - 50 | Izgaradaki görüntüler arasına yerleştirilecek piksel cinsinden boşluk miktarı (varsayılan: 4). |
 
 ## Çıkışlar
 

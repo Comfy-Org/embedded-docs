@@ -7,8 +7,8 @@ Este nó foi projetado para ajustar o aspecto temporal do condicionamento, defin
 | Parâmetro | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | `CONDITIONING` | CONDITIONING | A entrada de condicionamento representa o estado atual do processo de geração, que este nó modifica ao definir um intervalo específico de etapas de tempo. |
-| `start` | `FLOAT` | O parâmetro *start* especifica o início do intervalo de etapas de tempo como uma porcentagem do processo total de geração, permitindo um controle refinado sobre quando os efeitos do condicionamento começam. |
-| `end` | `FLOAT` | O parâmetro *end* define o ponto final do intervalo de etapas de tempo como uma porcentagem, possibilitando um controle preciso sobre a duração e a conclusão dos efeitos do condicionamento. |
+| `início` | `FLOAT` | O parâmetro *start* especifica o início do intervalo de etapas de tempo como uma porcentagem do processo total de geração, permitindo um controle refinado sobre quando os efeitos do condicionamento começam. |
+| `fim` | `FLOAT` | O parâmetro *end* define o ponto final do intervalo de etapas de tempo como uma porcentagem, possibilitando um controle preciso sobre a duração e a conclusão dos efeitos do condicionamento. |
 
 ## Saídas
 

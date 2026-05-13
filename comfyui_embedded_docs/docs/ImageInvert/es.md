@@ -6,10 +6,10 @@ El nodo `ImageInvert` está diseñado para invertir los colores de una imagen, t
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | El parámetro `image` representa la imagen de entrada que se va a invertir. Es fundamental para especificar la imagen objetivo cuyos colores se invertirán, afectando la ejecución del nodo y el resultado visual del proceso de inversión. |
+| `imagen`   | `IMAGE`     | El parámetro `imagen` representa la imagen de entrada que se va a invertir. Es fundamental para especificar la imagen objetivo cuyos colores se invertirán, afectando la ejecución del nodo y el resultado visual del proceso de inversión. |
 
 ## Salidas
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `image`   | `IMAGE`     | La salida es una versión invertida de la imagen de entrada, donde el valor de color de cada píxel se transforma a su color complementario. |
+| `imagen`   | `IMAGE`     | La salida es una versión invertida de la imagen de entrada, donde el valor de color de cada píxel se transforma a su color complementario. |

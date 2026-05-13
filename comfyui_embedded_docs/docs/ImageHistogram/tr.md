@@ -6,7 +6,7 @@ ImageHistogram düğümü, bir giriş görüntüsünün renk dağılımını ana
 
 | Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | Yok | Analiz edilecek giriş görüntüsü. Düğüm, topluluktaki ilk görüntüyü işler. |
+| `görüntü` | IMAGE | Evet | Yok | Analiz edilecek giriş görüntüsü. Düğüm, topluluktaki ilk görüntüyü işler. |
 
 ## Çıkışlar
 

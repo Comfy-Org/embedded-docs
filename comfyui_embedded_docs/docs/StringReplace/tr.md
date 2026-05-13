@@ -6,9 +6,9 @@ StringReplace düğümü, girdi dizeleri üzerinde metin değiştirme işlemleri
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | - | Değiştirme işlemlerinin yapılacağı girdi metin dizesi |
-| `find` | STRING | Evet | - | Girdi metni içinde aranacak alt dize |
-| `replace` | STRING | Evet | - | Bulunan tüm örneklerin yerine geçecek değiştirme metni |
+| `dize` | STRING | Evet | - | Değiştirme işlemlerinin yapılacağı girdi metin dizesi |
+| `bul` | STRING | Evet | - | Girdi metni içinde aranacak alt dize |
+| `değiştir` | STRING | Evet | - | Bulunan tüm örneklerin yerine geçecek değiştirme metni |
 
 ## Çıktılar
 

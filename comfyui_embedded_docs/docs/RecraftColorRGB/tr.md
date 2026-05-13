@@ -6,16 +6,16 @@ Kırmızı, yeşil ve mavi değerlerini ayrı ayrı belirterek bir Recraft rengi
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `r` | INT | Evet | 0-255 | Rengin kırmızı değeri (varsayılan: 0) |
-| `g` | INT | Evet | 0-255 | Rengin yeşil değeri (varsayılan: 0) |
-| `b` | INT | Evet | 0-255 | Rengin mavi değeri (varsayılan: 0) |
-| `recraft_color` | COLOR | Hayır | - | Yeni RGB rengiyle genişletilecek isteğe bağlı mevcut Recraft renk zinciri |
+| `k` | INT | Evet | 0-255 | Rengin kırmızı değeri (varsayılan: 0) |
+| `y` | INT | Evet | 0-255 | Rengin yeşil değeri (varsayılan: 0) |
+| `m` | INT | Evet | 0-255 | Rengin mavi değeri (varsayılan: 0) |
+| `recraft_rengi` | COLOR | Hayır | - | Yeni RGB rengiyle genişletilecek isteğe bağlı mevcut Recraft renk zinciri |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `recraft_color` | COLOR | Belirtilen RGB değerlerini içeren oluşturulmuş Recraft renk nesnesi veya mevcut bir renk zinciri sağlanmışsa genişletilmiş renk zinciri |
+| `recraft_rengi` | COLOR | Belirtilen RGB değerlerini içeren oluşturulmuş Recraft renk nesnesi veya mevcut bir renk zinciri sağlanmışsa genişletilmiş renk zinciri |
 
 ---
 **Source fingerprint (SHA-256):** `8c3503632d085fa4c1771f92f17008b7b051e9604d9e7d1e7d352cbbbd22dddc`

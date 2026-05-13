@@ -6,10 +6,10 @@ EmptyCosmosLatentVideo düğümü, belirtilen boyutlarda boş bir latent video t
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `width` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden genişliği (varsayılan: 1280, 16'ya bölünebilir olmalıdır) |
-| `height` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden yüksekliği (varsayılan: 704, 16'ya bölünebilir olmalıdır) |
-| `length` | INT | Evet | 1 ile MAX_RESOLUTION arası | Latent videodaki kare sayısı (varsayılan: 121, 8'e bölünebilir olmalıdır) |
-| `batch_size` | INT | Hayır | 1 ile 4096 arası | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) |
+| `genişlik` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden genişliği (varsayılan: 1280, 16'ya bölünebilir olmalıdır) |
+| `yükseklik` | INT | Evet | 16 ile MAX_RESOLUTION arası | Latent videonun piksel cinsinden yüksekliği (varsayılan: 704, 16'ya bölünebilir olmalıdır) |
+| `uzunluk` | INT | Evet | 1 ile MAX_RESOLUTION arası | Latent videodaki kare sayısı (varsayılan: 121, 8'e bölünebilir olmalıdır) |
+| `toplu_boyut` | INT | Hayır | 1 ile 4096 arası | Bir toplu işte oluşturulacak latent video sayısı (varsayılan: 1) |
 
 ## Çıkışlar
 

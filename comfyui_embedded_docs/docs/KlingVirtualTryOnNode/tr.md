@@ -6,9 +6,9 @@ Kling Sanal Deneme Düğümü. Bir insan görseli ve bir kıyafet görseli girin
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `human_image` | IMAGE | Evet | - | Kıyafet denenecek insan görseli |
-| `cloth_image` | IMAGE | Evet | - | İnsan üzerinde denenecek kıyafet görseli |
-| `model_name` | STRING | Evet | `"kolors-virtual-try-on-v1"` | Kullanılacak sanal deneme modeli (varsayılan: "kolors-virtual-try-on-v1") |
+| `insan_görüntüsü` | IMAGE | Evet | - | Kıyafet denenecek insan görseli |
+| `kıyafet_görüntüsü` | IMAGE | Evet | - | İnsan üzerinde denenecek kıyafet görseli |
+| `model_adı` | STRING | Evet | `"kolors-virtual-try-on-v1"` | Kullanılacak sanal deneme modeli (varsayılan: "kolors-virtual-try-on-v1") |
 
 ## Çıkışlar
 

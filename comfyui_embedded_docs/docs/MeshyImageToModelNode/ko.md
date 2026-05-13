@@ -31,9 +31,9 @@ Meshy: 이미지-모델 노드는 Meshy API를 사용하여 단일 입력 이미
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 생성된 GLB 모델의 파일 이름입니다. (하위 호환성을 위해 유지됩니다). |
-| `meshy_task_id` | MESHY_TASK_ID | Meshy API 작업의 고유 식별자로, 참조 또는 문제 해결에 사용할 수 있습니다. |
-| `GLB` | FILE3DGLB | GLB 파일 형식으로 생성된 3D 모델입니다. |
+| `meshy_task_id` | STRING | 생성된 GLB 모델의 파일 이름입니다. (하위 호환성을 위해 유지됩니다). |
+| `GLB` | MESHY_TASK_ID | Meshy API 작업의 고유 식별자로, 참조 또는 문제 해결에 사용할 수 있습니다. |
+| `FBX` | FILE3DGLB | GLB 파일 형식으로 생성된 3D 모델입니다. |
 | `FBX` | FILE3DFBX | FBX 파일 형식으로 생성된 3D 모델입니다. |
 
 ---

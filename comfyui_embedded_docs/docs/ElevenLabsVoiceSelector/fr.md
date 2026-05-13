@@ -8,13 +8,13 @@ Le nœud ElevenLabs Voice Selector vous permet de choisir une voix spécifique p
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `voice` | STRING | Oui | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | Choisissez une voix parmi les voix prédéfinies ElevenLabs. |
+| `voix` | STRING | Oui | `"Adam"`<br>`"Antoni"`<br>`"Arnold"`<br>`"Bella"`<br>`"Domi"`<br>`"Elli"`<br>`"Josh"`<br>`"Rachel"`<br>`"Sam"` | Choisissez une voix parmi les voix prédéfinies ElevenLabs. |
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
 |---------------|-----------------|-------------|
-| `voice` | STRING | L'identifiant unique de la voix ElevenLabs sélectionnée, qui peut être transmis à d'autres nœuds pour la génération de synthèse vocale. |
+| `voix` | STRING | L'identifiant unique de la voix ElevenLabs sélectionnée, qui peut être transmis à d'autres nœuds pour la génération de synthèse vocale. |
 
 ---
 **Source fingerprint (SHA-256):** `b87f5b2b8accca87d0593ab1f4bcfccaa84b393ddb3fd9121758a87871592cee`

@@ -8,10 +8,10 @@ El nodo Save Checkpoint se utiliza principalmente en flujos de trabajo de fusió
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `model` | MODEL | El parámetro `model` representa el modelo principal cuyo estado se va a guardar. Es esencial para capturar el estado actual del modelo para su futura restauración o análisis. |
+| `modelo` | MODEL | El parámetro `modelo` representa el modelo principal cuyo estado se va a guardar. Es esencial para capturar el estado actual del modelo para su futura restauración o análisis. |
 | `clip` | CLIP | El parámetro `clip` está destinado al modelo CLIP asociado con el modelo principal, permitiendo que su estado se guarde junto con el modelo principal. |
 | `vae` | VAE | El parámetro `vae` es para el modelo de Autoencoder Variacional (VAE), permitiendo que su estado se guarde para uso o análisis futuro junto con el modelo principal y CLIP. |
-| `filename_prefix` | STRING | Este parámetro especifica el prefijo para el nombre del archivo bajo el cual se guardará el punto de control. |
+| `prefijo_nombre_archivo` | STRING | Este parámetro especifica el prefijo para el nombre del archivo bajo el cual se guardará el punto de control. |
 
 Adicionalmente, el nodo tiene dos entradas ocultas para metadatos:
 

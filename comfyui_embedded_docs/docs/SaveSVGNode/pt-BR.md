@@ -7,7 +7,7 @@ Salva arquivos SVG no disco. Este nó recebe dados SVG como entrada e os salva n
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `svg` | SVG | Sim | - | Os dados SVG a serem salvos no disco |
-| `filename_prefix` | STRING | Sim | - | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` para incluir valores de nós. (padrão: "svg/ComfyUI") |
+| `prefixo_do_arquivo` | STRING | Sim | - | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` para incluir valores de nós. (padrão: "svg/ComfyUI") |
 
 ## Saídas
 

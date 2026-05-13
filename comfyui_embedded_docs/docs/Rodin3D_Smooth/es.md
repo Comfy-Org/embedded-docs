@@ -6,16 +6,16 @@ El nodo **Rodin 3D Smooth** genera activos 3D utilizando la API de Rodin, proces
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `Images` | IMAGE | Sí | - | Imágenes de entrada para usar en la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. |
-| `Seed` | INT | Sí | - | Valor de semilla aleatoria para la consistencia de la generación. |
-| `Material_Type` | STRING | Sí | - | Tipo de material que se aplicará al modelo 3D. |
-| `Polygon_count` | STRING | Sí | - | Número objetivo de polígonos para el modelo 3D generado. Determina la calidad de la malla y el nivel de detalle. |
+| `Imágenes` | IMAGE | Sí | - | Imágenes de entrada para usar en la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. |
+| `Semilla` | INT | Sí | - | Valor de semilla aleatoria para la consistencia de la generación. |
+| `Tipo_de_Material` | STRING | Sí | - | Tipo de material que se aplicará al modelo 3D. |
+| `Recuento_de_Polígonos` | STRING | Sí | - | Número objetivo de polígonos para el modelo 3D generado. Determina la calidad de la malla y el nivel de detalle. |
 
 ## Salidas
 
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
-| `3D Model Path` | STRING | Ruta del archivo al modelo 3D descargado (solo para compatibilidad con versiones anteriores). |
+| `GLB` | STRING | Ruta del archivo al modelo 3D descargado (solo para compatibilidad con versiones anteriores). |
 | `GLB` | FILE3DGLB | El modelo 3D generado en formato GLB. |
 
 ---

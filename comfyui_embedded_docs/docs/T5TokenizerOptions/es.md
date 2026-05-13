@@ -7,8 +7,8 @@ El nodo T5TokenizerOptions permite configurar ajustes del tokenizador para vario
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-------------|-------------|-------|-------------|
 | `clip` | CLIP | Sí | - | El modelo CLIP para configurar las opciones del tokenizador |
-| `min_padding` | INT | No | 0 a 10000 | Valor de relleno mínimo para establecer en todos los tipos de modelo T5 (predeterminado: 0) |
-| `min_length` | INT | No | 0 a 10000 | Valor de longitud mínima para establecer en todos los tipos de modelo T5 (predeterminado: 0) |
+| `mín_relleno` | INT | No | 0 a 10000 | Valor de relleno mínimo para establecer en todos los tipos de modelo T5 (predeterminado: 0) |
+| `mín_longitud` | INT | No | 0 a 10000 | Valor de longitud mínima para establecer en todos los tipos de modelo T5 (predeterminado: 0) |
 
 ## Salidas
 

@@ -6,8 +6,8 @@ El nodo ComfyMathExpression evalúa una fórmula matemática utilizando un conju
 
 | Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `expression` | STRING | Sí | N/A | La fórmula matemática a evaluar. Puedes usar nombres de variables que correspondan a los valores de entrada (predeterminado: "a + b"). |
-| `values` | FLOAT, INT, BOOLEAN | No | N/A | Un conjunto de entradas numéricas o booleanas que se pueden agregar dinámicamente. A cada entrada se le asigna una letra del alfabeto (a, b, c, ...) para usarse como variable en la expresión. |
+| `expresión` | STRING | Sí | N/A | La fórmula matemática a evaluar. Puedes usar nombres de variables que correspondan a los valores de entrada (predeterminado: "a + b"). |
+| `valores` | FLOAT, INT, BOOLEAN | No | N/A | Un conjunto de entradas numéricas o booleanas que se pueden agregar dinámicamente. A cada entrada se le asigna una letra del alfabeto (a, b, c, ...) para usarse como variable en la expresión. |
 
 **Restricciones de los parámetros:**
 *   El parámetro `expression` no puede estar vacío ni contener solo espacios en blanco.
@@ -19,7 +19,7 @@ El nodo ComfyMathExpression evalúa una fórmula matemática utilizando un conju
 | Nombre de salida | Tipo de dato | Descripción |
 |------------------|--------------|-------------|
 | `FLOAT` | FLOAT | El resultado de la expresión matemática como número de punto flotante. |
-| `INT` | INT | El resultado de la expresión matemática como número entero. |
+| `BOOL` | INT | El resultado de la expresión matemática como número entero. |
 | `BOOL` | BOOLEAN | El resultado de la expresión matemática como valor booleano. |
 
 ---

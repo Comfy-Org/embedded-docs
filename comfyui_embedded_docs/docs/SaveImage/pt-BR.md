@@ -6,8 +6,8 @@ O nó SaveImage salva as imagens recebidas no diretório `ComfyUI/output`. Ele s
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | As imagens a serem salvas. |
-| `filename_prefix` | STRING | Sim | - | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` para incluir valores de nós (padrão: "ComfyUI"). |
+| `imagens` | IMAGE | Sim | - | As imagens a serem salvas. |
+| `prefixo_do_arquivo` | STRING | Sim | - | O prefixo para o arquivo a ser salvo. Pode incluir informações de formatação como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%` para incluir valores de nós (padrão: "ComfyUI"). |
 
 ## Saídas
 

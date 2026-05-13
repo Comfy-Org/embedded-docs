@@ -17,8 +17,8 @@ Le nœud Ideogram V3 génère des images à l'aide du modèle Ideogram V3. Il pr
 | `seed` | INT | Non | 0-2147483647 | Graine aléatoire pour la génération (par défaut : 0) |
 | `num_images` | INT | Non | 1-8 | Nombre d'images à générer (par défaut : 1) |
 | `rendering_speed` | COMBO | Non | "DEFAULT"<br>"TURBO"<br>"QUALITY" | Contrôle le compromis entre la vitesse de génération et la qualité (par défaut : "DEFAULT") |
-| `character_image` | IMAGE | Non | - | Image à utiliser comme référence de personnage |
-| `character_mask` | MASK | Non | - | Masque optionnel pour l'image de référence de personnage |
+| `image_du_personnage` | IMAGE | Non | - | Image à utiliser comme référence de personnage |
+| `masque_du_personnage` | MASK | Non | - | Masque optionnel pour l'image de référence de personnage |
 
 **Contraintes des paramètres :**
 

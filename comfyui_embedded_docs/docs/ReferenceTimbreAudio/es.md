@@ -6,14 +6,14 @@ Este nodo establece un timbre de audio de referencia para su uso en el proceso "
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `conditioning` | CONDITIONING | Sí | | Los datos de condicionamiento a los que se adjuntará la información del audio de referencia. |
-| `latent` | LATENT | No | | Una representación latente opcional del audio de referencia. Cuando se proporciona, sus muestras se añaden al condicionamiento. |
+| `condicionamiento` | CONDITIONING | Sí | | Los datos de condicionamiento a los que se adjuntará la información del audio de referencia. |
+| `latente` | LATENT | No | | Una representación latente opcional del audio de referencia. Cuando se proporciona, sus muestras se añaden al condicionamiento. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |------------------|--------------|-------------|
-| `conditioning` | CONDITIONING | Los datos de condicionamiento modificados, que ahora contienen los latentes del timbre de audio de referencia si se proporcionó la entrada opcional `latent`. |
+| `condicionamiento` | CONDITIONING | Los datos de condicionamiento modificados, que ahora contienen los latentes del timbre de audio de referencia si se proporcionó la entrada opcional `latente`. |
 
 ---
 **Source fingerprint (SHA-256):** `2d39399eb79cfe76b72d01326b89863e2553bc23414b1166d310e5222b215b29`

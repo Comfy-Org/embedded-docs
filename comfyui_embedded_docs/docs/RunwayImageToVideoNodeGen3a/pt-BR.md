@@ -7,10 +7,10 @@ O nó Runway Image to Video (Gen3a Turbo) gera um vídeo a partir de um único q
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Prompt de texto para a geração (padrão: "") |
-| `start_frame` | IMAGE | Sim | N/A | Quadro inicial a ser usado para o vídeo |
-| `duration` | COMBO | Sim | `"5"`<br>`"10"` | Duração do vídeo em segundos (padrão: "5") |
-| `ratio` | COMBO | Sim | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Proporção de aspecto do vídeo gerado (padrão: "1280x720") |
-| `seed` | INT | Não | 0 a 4294967295 | Semente aleatória para a geração (padrão: 0) |
+| `quadro_inicial` | IMAGE | Sim | N/A | Quadro inicial a ser usado para o vídeo |
+| `duração` | COMBO | Sim | `"5"`<br>`"10"` | Duração do vídeo em segundos (padrão: "5") |
+| `proporção` | COMBO | Sim | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Proporção de aspecto do vídeo gerado (padrão: "1280x720") |
+| `semente` | INT | Não | 0 a 4294967295 | Semente aleatória para a geração (padrão: 0) |
 
 **Restrições dos Parâmetros:**
 

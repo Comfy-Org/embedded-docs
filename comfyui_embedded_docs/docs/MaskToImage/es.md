@@ -6,7 +6,7 @@ El nodo `MaskToImage` está diseñado para convertir una máscara en un formato 
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `mask`    | `MASK`      | La entrada de máscara es esencial para el proceso de conversión, ya que sirve como los datos de origen que se transformarán en un formato de imagen. Esta entrada determina la forma y el contenido de la imagen resultante. |
+| `máscara`    | `MASK`      | La entrada de máscara es esencial para el proceso de conversión, ya que sirve como los datos de origen que se transformarán en un formato de imagen. Esta entrada determina la forma y el contenido de la imagen resultante. |
 
 ## Salidas
 

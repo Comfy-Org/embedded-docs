@@ -8,9 +8,9 @@
 
 | المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | نعم | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | نموذج الذكاء الاصطناعي المراد استخدامه. Seedance 2.0 مخصص لأقصى جودة، بينما Seedance 2.0 Fast محسّن للسرعة. يؤدي تحديد نموذج إلى الكشف عن مدخلات إضافية مطلوبة لـ `prompt` و `resolution` و `duration` و `ratio` و `generate_audio`، ومدخلات اختيارية لـ `reference_images` و `reference_videos` و `reference_audios` و `reference_assets` و `auto_downscale`. |
-| `seed` | INT | لا | 0 إلى 2147483647 | رقم يُستخدم للتحكم في ما إذا كان يجب إعادة تشغيل العقدة. النتائج غير حتمية بغض النظر عن قيمة البذرة (الافتراضي: 0). |
-| `watermark` | BOOLEAN | لا | `True` / `False` | ما إذا كان سيتم إضافة علامة مائية إلى الفيديو المُنشأ (الافتراضي: False). |
+| `النموذج` | COMBO | نعم | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | نموذج الذكاء الاصطناعي المراد استخدامه. Seedance 2.0 مخصص لأقصى جودة، بينما Seedance 2.0 Fast محسّن للسرعة. يؤدي تحديد نموذج إلى الكشف عن مدخلات إضافية مطلوبة لـ `prompt` و `resolution` و `duration` و `ratio` و `generate_audio`، ومدخلات اختيارية لـ `reference_images` و `reference_videos` و `reference_audios` و `reference_assets` و `auto_downscale`. |
+| `البذرة` | INT | لا | 0 إلى 2147483647 | رقم يُستخدم للتحكم في ما إذا كان يجب إعادة تشغيل العقدة. النتائج غير حتمية بغض النظر عن قيمة البذرة (الافتراضي: 0). |
+| `علامة مائية` | BOOLEAN | لا | `True` / `False` | ما إذا كان سيتم إضافة علامة مائية إلى الفيديو المُنشأ (الافتراضي: False). |
 
 **قيود مهمة:**
 *   يلزم وجود صورة مرجعية واحدة على الأقل أو فيديو مرجعي (مقدم عبر مدخلات `reference_images` أو `reference_videos` أو `reference_assets`) لكي تعمل العقدة.

@@ -7,12 +7,12 @@ Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `multi_shot` | COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Contrôle s'il faut générer une seule vidéo ou une série de segments avec des invites et des durées individuelles. Lorsqu'il n'est pas réglé sur "disabled", des entrées supplémentaires pour l'invite et la durée de chaque storyboard apparaissent. |
-| `generate_audio` | BOOLEAN | Oui | `True` / `False` | Lorsqu'il est activé, le nœud génère un son pour la vidéo. La valeur par défaut est `True`. |
-| `model` | COMBO | Oui | `"kling-v3"` | Le modèle et ses paramètres associés. La sélection de cette option révèle les sous-paramètres `resolution` et `aspect_ratio`. |
-| `model.resolution` | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` | La résolution de la vidéo générée. Ce paramètre est disponible lorsque le `model` est réglé sur "kling-v3". |
-| `model.aspect_ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Le rapport hauteur/largeur de la vidéo générée. Ce paramètre est ignoré lorsqu'une image est fournie pour `start_frame` (mode image-vers-vidéo). Disponible lorsque le `model` est réglé sur "kling-v3". |
+| `générer audio` | BOOLEAN | Oui | `True` / `False` | Lorsqu'il est activé, le nœud génère un son pour la vidéo. La valeur par défaut est `True`. |
+| `modèle` | COMBO | Oui | `"kling-v3"` | Le modèle et ses paramètres associés. La sélection de cette option révèle les sous-paramètres `resolution` et `aspect_ratio`. |
+| `model.resolution` | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` | La résolution de la vidéo générée. Ce paramètre est disponible lorsque le `modèle` est réglé sur "kling-v3". |
+| `model.aspect_ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Le rapport hauteur/largeur de la vidéo générée. Ce paramètre est ignoré lorsqu'une image est fournie pour `image de départ` (mode image-vers-vidéo). Disponible lorsque le `modèle` est réglé sur "kling-v3". |
 | `seed` | INT | Oui | 0 à 2147483647 | Une valeur de graine pour la génération. La modification de cette valeur entraînera la réexécution du nœud, mais les résultats ne sont pas déterministes. La valeur par défaut est `0`. |
-| `start_frame` | IMAGE | Non | - | Une image de départ facultative. Lorsqu'elle est connectée, le nœud passe du mode texte-vers-vidéo au mode image-vers-vidéo, animant l'image fournie. |
+| `image de départ` | IMAGE | Non | - | Une image de départ facultative. Lorsqu'elle est connectée, le nœud passe du mode texte-vers-vidéo au mode image-vers-vidéo, animant l'image fournie. |
 
 **Entrées pour le mode `multi_shot` :**
 

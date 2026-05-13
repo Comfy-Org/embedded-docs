@@ -11,9 +11,9 @@ Remplit une image en fonction d'un masque et d'une invite. Ce nœud utilise le m
 | `image` | IMAGE | Oui | - | L'image d'entrée à traiter par inpainting |
 | `mask` | MASK | Oui | - | Le masque définissant les zones de l'image à remplir |
 | `prompt` | STRING | Non | - | Invite pour la génération d'image (par défaut : chaîne vide) |
-| `prompt_upsampling` | BOOLEAN | Non | - | Indique s'il faut effectuer un suréchantillonnage de l'invite. Si activé, modifie automatiquement l'invite pour une génération plus créative, mais les résultats sont non déterministes (une même graine ne produira pas exactement le même résultat). (par défaut : false) |
-| `guidance` | FLOAT | Non | 1,5-100 | Force d'orientation pour le processus de génération d'image (par défaut : 60) |
-| `steps` | INT | Non | 15-50 | Nombre d'étapes pour le processus de génération d'image (par défaut : 50) |
+| `suréchantillonnage du prompt` | BOOLEAN | Non | - | Indique s'il faut effectuer un suréchantillonnage de l'invite. Si activé, modifie automatiquement l'invite pour une génération plus créative, mais les résultats sont non déterministes (une même graine ne produira pas exactement le même résultat). (par défaut : false) |
+| `guidage` | FLOAT | Non | 1,5-100 | Force d'orientation pour le processus de génération d'image (par défaut : 60) |
+| `étapes` | INT | Non | 15-50 | Nombre d'étapes pour le processus de génération d'image (par défaut : 50) |
 | `seed` | INT | Non | 0-18446744073709551615 | La graine aléatoire utilisée pour créer le bruit. (par défaut : 0) |
 
 ## Sorties

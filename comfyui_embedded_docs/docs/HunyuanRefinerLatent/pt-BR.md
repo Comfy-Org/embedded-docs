@@ -6,18 +6,18 @@ O nó HunyuanRefinerLatent processa entradas de condicionamento e latentes para 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `positive` | CONDITIONING | Sim | - | A entrada de condicionamento positivo a ser processada |
-| `negative` | CONDITIONING | Sim | - | A entrada de condicionamento negativo a ser processada |
-| `latent` | LATENT | Sim | - | A representação latente de entrada |
-| `noise_augmentation` | FLOAT | Sim | 0.0 - 1.0 | A quantidade de aumento de ruído a ser aplicada (padrão: 0.10) |
+| `positivo` | CONDITIONING | Sim | - | A entrada de condicionamento positivo a ser processada |
+| `negativo` | CONDITIONING | Sim | - | A entrada de condicionamento negativo a ser processada |
+| `latente` | LATENT | Sim | - | A representação latente de entrada |
+| `aumento_de_ruído` | FLOAT | Sim | 0.0 - 1.0 | A quantidade de aumento de ruído a ser aplicada (padrão: 0.10) |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
-| `positive` | CONDITIONING | O condicionamento positivo processado com aumento de ruído aplicado e concatenação de imagem latente |
-| `negative` | CONDITIONING | O condicionamento negativo processado com aumento de ruído aplicado e concatenação de imagem latente |
-| `latent` | LATENT | Uma nova saída latente com dimensões [batch_size, 32, altura, largura, canais] |
+| `positivo` | CONDITIONING | O condicionamento positivo processado com aumento de ruído aplicado e concatenação de imagem latente |
+| `negativo` | CONDITIONING | O condicionamento negativo processado com aumento de ruído aplicado e concatenação de imagem latente |
+| `latente` | LATENT | Uma nova saída latente com dimensões [batch_size, 32, altura, largura, canais] |
 
 ---
 **Source fingerprint (SHA-256):** `f097b58f1948e5c0801f81b51a5189619695a6afa189368aff4c64b126fc5ce5`

@@ -6,7 +6,7 @@ O nó SamplerLMS cria um amostrador de Mínimos Quadrados Médios (LMS) para uso
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `order` | INT | Sim | 1 a 100 | O parâmetro de ordem para o algoritmo do amostrador LMS, que controla a precisão e estabilidade do método numérico (padrão: 4) |
+| `ordem` | INT | Sim | 1 a 100 | O parâmetro de ordem para o algoritmo do amostrador LMS, que controla a precisão e estabilidade do método numérico (padrão: 4) |
 
 ## Saídas
 

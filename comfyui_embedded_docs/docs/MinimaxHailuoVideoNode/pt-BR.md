@@ -8,12 +8,12 @@ Gera vídeos a partir de prompts de texto usando o modelo MiniMax Hailuo-02. Opc
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `prompt_text` | STRING | Sim | - | Prompt de texto para guiar a geração do vídeo. |
-| `seed` | INT | Não | 0 a 18446744073709551615 | A semente aleatória usada para criar o ruído (padrão: 0). |
-| `first_frame_image` | IMAGE | Não | - | Imagem opcional para usar como primeiro quadro para gerar um vídeo. |
-| `prompt_optimizer` | BOOLEAN | Não | - | Otimizar o prompt para melhorar a qualidade da geração quando necessário (padrão: True). |
-| `duration` | COMBO | Não | `6`<br>`10` | A duração do vídeo de saída em segundos (padrão: 6). |
-| `resolution` | COMBO | Não | `"768P"`<br>`"1080P"` | As dimensões da exibição do vídeo. 1080p é 1920x1080, 768p é 1366x768 (padrão: "768P"). |
+| `texto_prompt` | STRING | Sim | - | Prompt de texto para guiar a geração do vídeo. |
+| `semente` | INT | Não | 0 a 18446744073709551615 | A semente aleatória usada para criar o ruído (padrão: 0). |
+| `imagem_primeiro_quadro` | IMAGE | Não | - | Imagem opcional para usar como primeiro quadro para gerar um vídeo. |
+| `otimizador_de_prompt` | BOOLEAN | Não | - | Otimizar o prompt para melhorar a qualidade da geração quando necessário (padrão: True). |
+| `duração` | COMBO | Não | `6`<br>`10` | A duração do vídeo de saída em segundos (padrão: 6). |
+| `resolução` | COMBO | Não | `"768P"`<br>`"1080P"` | As dimensões da exibição do vídeo. 1080p é 1920x1080, 768p é 1366x768 (padrão: "768P"). |
 
 **Observação:** Ao usar o modelo MiniMax-Hailuo-02 com resolução 1080P, a duração é limitada a 6 segundos.
 

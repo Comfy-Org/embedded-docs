@@ -19,7 +19,7 @@ Le nœud d'effet vidéo à double personnage Kling crée des vidéos avec des ef
 
 | Nom de la sortie | Type de données | Description |
 |------------------|-----------------|-------------|
-| `output` | VIDEO | La vidéo générée avec les effets à double personnage |
+| `duration` | VIDEO | La vidéo générée avec les effets à double personnage |
 | `duration` | STRING | Les informations de durée de la vidéo générée |
 
 ---

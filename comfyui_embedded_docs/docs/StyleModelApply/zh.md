@@ -8,12 +8,12 @@
 
 | 参数                  | Comfy 数据类型         | 描述 |
 |-----------------------|-----------------------|-------------|
-| `conditioning`        | `CONDITIONING`       | 原始的 conditioning 数据，样式模型的 conditioning 将应用于此。它对于定义将被增强或改变的基础上下文或样式至关重要。 |
-| `style_model`         | `STYLE_MODEL`        | 用于根据 CLIP 视觉模型的输出生成新 conditioning 的样式模型。它在定义要应用的新样式方面起着关键作用。 |
-| `clip_vision_output`  | `CLIP_VISION_OUTPUT` | CLIP 视觉模型的输出，样式模型使用该输出来生成新的 conditioning。它提供了样式应用所需的视觉上下文。 |
+| `条件`        | `CONDITIONING`       | 原始的 conditioning 数据，样式模型的 conditioning 将应用于此。它对于定义将被增强或改变的基础上下文或样式至关重要。 |
+| `风格模型`         | `STYLE_MODEL`        | 用于根据 CLIP 视觉模型的输出生成新 conditioning 的样式模型。它在定义要应用的新样式方面起着关键作用。 |
+| `clip视觉输出`  | `CLIP_VISION_OUTPUT` | CLIP 视觉模型的输出，样式模型使用该输出来生成新的 conditioning。它提供了样式应用所需的视觉上下文。 |
 
 ## 输出
 
 | 参数                 | Comfy 数据类型        | 描述 |
 |----------------------|-----------------------|-------------|
-| `conditioning`       | `CONDITIONING`        | 增强或改变后的 conditioning，融合了样式模型的输出。它代表了最终、已应用样式的 conditioning，可供进一步处理或生成使用。 |
+| `条件`       | `CONDITIONING`        | 增强或改变后的 conditioning，融合了样式模型的输出。它代表了最终、已应用样式的 conditioning，可供进一步处理或生成使用。 |

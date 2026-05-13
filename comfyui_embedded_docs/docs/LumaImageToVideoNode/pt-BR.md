@@ -8,12 +8,12 @@ Gera vídeos de forma síncrona com base em um prompt de texto e imagens opciona
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Sim | - | Prompt para a geração do vídeo (padrão: "") |
 | `model` | COMBO | Sim | Múltiplas opções disponíveis | Seleciona o modelo de geração de vídeo dentre os modelos Luma disponíveis |
-| `resolution` | COMBO | Sim | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Resolução de saída do vídeo gerado (padrão: "540p"). Este parâmetro é ignorado ao usar o modelo `ray-1-6`. |
-| `duration` | COMBO | Sim | `"5s"`<br>`"9s"` | Duração do vídeo gerado. Este parâmetro é ignorado ao usar o modelo `ray-1-6`. |
+| `resolução` | COMBO | Sim | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Resolução de saída do vídeo gerado (padrão: "540p"). Este parâmetro é ignorado ao usar o modelo `ray-1-6`. |
+| `duração` | COMBO | Sim | `"5s"`<br>`"9s"` | Duração do vídeo gerado. Este parâmetro é ignorado ao usar o modelo `ray-1-6`. |
 | `loop` | BOOLEAN | Sim | - | Se o vídeo gerado deve ser em loop (padrão: Falso) |
 | `seed` | INT | Sim | 0 a 18446744073709551615 | Semente para determinar se o nó deve ser reexecutado; os resultados reais são não determinísticos independentemente da semente. (padrão: 0) |
-| `first_image` | IMAGE | Não | - | Primeiro quadro do vídeo gerado. (opcional) |
-| `last_image` | IMAGE | Não | - | Último quadro do vídeo gerado. (opcional) |
+| `primeira_imagem` | IMAGE | Não | - | Primeiro quadro do vídeo gerado. (opcional) |
+| `última_imagem` | IMAGE | Não | - | Último quadro do vídeo gerado. (opcional) |
 | `luma_concepts` | CUSTOM | Não | - | Conceitos de Câmera opcionais para ditar o movimento da câmera através do nó Luma Concepts. (opcional) |
 
 **Nota:** Pelo menos um dos parâmetros `first_image` ou `last_image` deve ser fornecido. O nó lançará uma exceção se ambos estiverem ausentes. Os parâmetros `resolution` e `duration` são ignorados quando o `model` está definido como `ray-1-6`.

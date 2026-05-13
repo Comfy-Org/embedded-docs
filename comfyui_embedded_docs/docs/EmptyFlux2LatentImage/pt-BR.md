@@ -6,9 +6,9 @@ O nó EmptyFlux2LatentImage cria uma representação latente vazia. Ele gera um 
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `width` | INT | Sim | 16 a 8192 | A largura da imagem final a ser gerada. A largura latente será este valor dividido por 16. O valor padrão é 1024. |
-| `height` | INT | Sim | 16 a 8192 | A altura da imagem final a ser gerada. A altura latente será este valor dividido por 16. O valor padrão é 1024. |
-| `batch_size` | INT | Não | 1 a 4096 | O número de amostras latentes a serem geradas em um único lote. O valor padrão é 1. |
+| `largura` | INT | Sim | 16 a 8192 | A largura da imagem final a ser gerada. A largura latente será este valor dividido por 16. O valor padrão é 1024. |
+| `altura` | INT | Sim | 16 a 8192 | A altura da imagem final a ser gerada. A altura latente será este valor dividido por 16. O valor padrão é 1024. |
+| `tamanho_do_lote` | INT | Não | 1 a 4096 | O número de amostras latentes a serem geradas em um único lote. O valor padrão é 1. |
 
 **Observação:** As entradas `width` e `height` devem ser divisíveis por 16, pois o nó as divide internamente por este fator para criar as dimensões latentes.
 

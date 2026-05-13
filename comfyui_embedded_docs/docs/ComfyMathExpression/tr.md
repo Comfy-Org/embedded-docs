@@ -6,8 +6,8 @@ ComfyMathExpression düğümü, bir dizi girdi değeri kullanarak matematiksel b
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `expression` | STRING | Evet | Yok | Değerlendirilecek matematiksel formül. Girdi değerlerine karşılık gelen değişken adlarını kullanabilirsiniz (varsayılan: "a + b"). |
-| `values` | FLOAT, INT, BOOLEAN | Hayır | Yok | Dinamik olarak eklenebilen bir dizi sayısal veya boolean girdi. Her girdiye, ifadede değişken olarak kullanılmak üzere alfabeden bir harf (a, b, c, ...) atanır. |
+| `ifade` | STRING | Evet | Yok | Değerlendirilecek matematiksel formül. Girdi değerlerine karşılık gelen değişken adlarını kullanabilirsiniz (varsayılan: "a + b"). |
+| `değerler` | FLOAT, INT, BOOLEAN | Hayır | Yok | Dinamik olarak eklenebilen bir dizi sayısal veya boolean girdi. Her girdiye, ifadede değişken olarak kullanılmak üzere alfabeden bir harf (a, b, c, ...) atanır. |
 
 **Parametre Kısıtlamaları:**
 *   `expression` parametresi boş olamaz veya yalnızca boşluk karakterlerinden oluşamaz.
@@ -19,7 +19,7 @@ ComfyMathExpression düğümü, bir dizi girdi değeri kullanarak matematiksel b
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `FLOAT` | FLOAT | Matematiksel ifadenin kayan noktalı sayı olarak sonucu. |
-| `INT` | INT | Matematiksel ifadenin tam sayı olarak sonucu. |
+| `BOOL` | INT | Matematiksel ifadenin tam sayı olarak sonucu. |
 | `BOOL` | BOOLEAN | Matematiksel ifadenin boolean değer olarak sonucu. |
 
 ---

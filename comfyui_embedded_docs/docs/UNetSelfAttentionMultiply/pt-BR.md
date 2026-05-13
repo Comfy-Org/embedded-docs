@@ -6,11 +6,11 @@ O nó UNetSelfAttentionMultiply aplica fatores de multiplicação aos componente
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo UNet a ser modificado com fatores de escala de atenção |
+| `modelo` | MODEL | Sim | - | O modelo UNet a ser modificado com fatores de escala de atenção |
 | `q` | FLOAT | Não | 0.0 - 10.0 | Fator de multiplicação para o componente de consulta (padrão: 1.0) |
 | `k` | FLOAT | Não | 0.0 - 10.0 | Fator de multiplicação para o componente de chave (padrão: 1.0) |
 | `v` | FLOAT | Não | 0.0 - 10.0 | Fator de multiplicação para o componente de valor (padrão: 1.0) |
-| `out` | FLOAT | Não | 0.0 - 10.0 | Fator de multiplicação para o componente de saída (padrão: 1.0) |
+| `saída` | FLOAT | Não | 0.0 - 10.0 | Fator de multiplicação para o componente de saída (padrão: 1.0) |
 
 ## Saídas
 

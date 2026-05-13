@@ -34,8 +34,8 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Hayır | - | Sınırlayıcı kutuların çizileceği giriş görüntüsü(leri). Sağlanmazsa, boş bir tuval oluşturulur. |
-| `bboxes` | BOUNDINGBOX | Evet | - | Sınırlayıcı kutu sözlüklerinin bir listesi. Her sözlük, `x`, `y`, `width`, `height` anahtarlarını ve isteğe bağlı olarak `label` ile `score` anahtarlarını içermelidir. |
+| `görsel` | IMAGE | Hayır | - | Sınırlayıcı kutuların çizileceği giriş görüntüsü(leri). Sağlanmazsa, boş bir tuval oluşturulur. |
+| `bboxlar` | BOUNDINGBOX | Evet | - | Sınırlayıcı kutu sözlüklerinin bir listesi. Her sözlük, `x`, `y`, `width`, `height` anahtarlarını ve isteğe bağlı olarak `label` ile `score` anahtarlarını içermelidir. |
 
 **Giriş Kısıtlamaları:**
 *   `bboxes` girişi zorunludur ve sağlanmalıdır.

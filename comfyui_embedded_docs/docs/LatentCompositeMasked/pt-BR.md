@@ -6,12 +6,12 @@ O nó LatentCompositeMasked foi projetado para combinar duas representações la
 
 | Parâmetro | Tipo de Dados | Descrição |
 |-----------|-------------|-------------|
-| `destination` | `LATENT`    | A representação latente sobre a qual outra representação latente será composta. Atua como a camada base para a operação de composição. |
-| `source` | `LATENT`    | A representação latente a ser composta sobre o destino. Esta camada de origem pode ser redimensionada e posicionada de acordo com os parâmetros especificados. |
+| `destino` | `LATENT`    | A representação latente sobre a qual outra representação latente será composta. Atua como a camada base para a operação de composição. |
+| `origem` | `LATENT`    | A representação latente a ser composta sobre o destino. Esta camada de origem pode ser redimensionada e posicionada de acordo com os parâmetros especificados. |
 | `x` | `INT`       | A coordenada x na representação latente de destino onde a origem será posicionada. Permite o posicionamento preciso da camada de origem. |
 | `y` | `INT`       | A coordenada y na representação latente de destino onde a origem será posicionada, permitindo um posicionamento preciso da sobreposição. |
-| `resize_source` | `BOOLEAN` | Um indicador booleano que determina se a representação latente de origem deve ser redimensionada para corresponder às dimensões do destino antes da composição. |
-| `mask` | `MASK`     | Uma máscara opcional que pode ser usada para controlar a mesclagem da origem sobre o destino. A máscara define quais partes da origem ficarão visíveis na composição final. |
+| `redimensionar_origem` | `BOOLEAN` | Um indicador booleano que determina se a representação latente de origem deve ser redimensionada para corresponder às dimensões do destino antes da composição. |
+| `máscara` | `MASK`     | Uma máscara opcional que pode ser usada para controlar a mesclagem da origem sobre o destino. A máscara define quais partes da origem ficarão visíveis na composição final. |
 
 ## Saídas
 

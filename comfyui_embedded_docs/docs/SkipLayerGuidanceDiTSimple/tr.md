@@ -7,10 +7,10 @@ SkipLayerGuidanceDiT düğümünün, gürültü giderme işlemi sırasında yaln
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-----------|
 | `model` | MODEL | Evet | - | Atlama katmanı yönlendirmesinin uygulanacağı model |
-| `double_layers` | STRING | Hayır | - | Atlanacak çift blok katman indekslerinin virgülle ayrılmış listesi (varsayılan: "7, 8, 9") |
-| `single_layers` | STRING | Hayır | - | Atlanacak tek blok katman indekslerinin virgülle ayrılmış listesi (varsayılan: "7, 8, 9") |
-| `start_percent` | FLOAT | Hayır | 0.0 - 1.0 | Atlama katmanı yönlendirmesinin başladığı gürültü giderme işleminin başlangıç yüzdesi (varsayılan: 0.0) |
-| `end_percent` | FLOAT | Hayır | 0.0 - 1.0 | Atlama katmanı yönlendirmesinin durduğu gürültü giderme işleminin bitiş yüzdesi (varsayılan: 1.0) |
+| `çift_katmanlar` | STRING | Hayır | - | Atlanacak çift blok katman indekslerinin virgülle ayrılmış listesi (varsayılan: "7, 8, 9") |
+| `tek_katmanlar` | STRING | Hayır | - | Atlanacak tek blok katman indekslerinin virgülle ayrılmış listesi (varsayılan: "7, 8, 9") |
+| `başlangıç_yüzdesi` | FLOAT | Hayır | 0.0 - 1.0 | Atlama katmanı yönlendirmesinin başladığı gürültü giderme işleminin başlangıç yüzdesi (varsayılan: 0.0) |
+| `bitiş_yüzdesi` | FLOAT | Hayır | 0.0 - 1.0 | Atlama katmanı yönlendirmesinin durduğu gürültü giderme işleminin bitiş yüzdesi (varsayılan: 1.0) |
 
 **Not:** Atlama katmanı yönlendirmesi yalnızca hem `double_layers` hem de `single_layers` geçerli katman indeksleri içerdiğinde uygulanır. Her ikisi de boşsa, düğüm orijinal modeli değiştirmeden döndürür. Atlama katmanı yönlendirmesi yalnızca mevcut gürültü giderme adımının sigma değeri `start_percent` ile `end_percent` arasında olduğunda (dahili olarak sigma değerlerine dönüştürülür) etkindir.
 

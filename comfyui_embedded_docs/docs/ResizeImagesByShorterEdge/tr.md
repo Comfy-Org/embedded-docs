@@ -7,7 +7,7 @@ Bu düğüm, görselleri orijinal en-boy oranını koruyarak kısa kenarı belir
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `image` | IMAGE | Evet | - | Yeniden boyutlandırılacak giriş görseli. |
-| `shorter_edge` | INT | Hayır | 1 ile 8192 arası | Kısa kenar için hedef uzunluk. (varsayılan: 512) |
+| `kısa_kenar` | INT | Hayır | 1 ile 8192 arası | Kısa kenar için hedef uzunluk. (varsayılan: 512) |
 
 ## Çıkışlar
 

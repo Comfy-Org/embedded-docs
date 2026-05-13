@@ -6,9 +6,9 @@ Video Oluştur düğümü, bir dizi görüntüden video dosyası oluşturur. San
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|---------|--------|----------|
-| `images` | IMAGE | Evet | - | Video oluşturulacak görüntüler. |
+| `görüntüler` | IMAGE | Evet | - | Video oluşturulacak görüntüler. |
 | `fps` | FLOAT | Evet | 1,0 - 120,0 | Video oynatma hızı için saniyedeki kare sayısı (varsayılan: 30,0). |
-| `audio` | AUDIO | Hayır | - | Videoya eklenecek ses. |
+| `ses` | AUDIO | Hayır | - | Videoya eklenecek ses. |
 
 ## Çıkışlar
 

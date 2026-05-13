@@ -9,9 +9,9 @@ Le nœud TextEncodeZImageOmni est un nœud de conditionnement avancé qui encode
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `clip` | CLIP | Oui | | Le modèle CLIP utilisé pour tokeniser et encoder l'invite textuelle. |
-| `image_encoder` | CLIPVision | Non | | Un modèle d'encodeur visuel optionnel. S'il est fourni, il sera utilisé pour encoder les images d'entrée, et les embeddings résultants seront ajoutés au conditionnement. |
-| `prompt` | STRING | Oui | | L'invite textuelle à encoder. Ce champ prend en charge les entrées multilignes et les invites dynamiques. |
-| `auto_resize_images` | BOOLEAN | Non | | Lorsqu'il est activé (par défaut : True), les images d'entrée sont automatiquement redimensionnées en fonction de leur surface en pixels avant d'être transmises au VAE pour encodage. |
+| `encodeur d'image` | CLIPVision | Non | | Un modèle d'encodeur visuel optionnel. S'il est fourni, il sera utilisé pour encoder les images d'entrée, et les embeddings résultants seront ajoutés au conditionnement. |
+| `invite` | STRING | Oui | | L'invite textuelle à encoder. Ce champ prend en charge les entrées multilignes et les invites dynamiques. |
+| `redimensionnement automatique des images` | BOOLEAN | Non | | Lorsqu'il est activé (par défaut : True), les images d'entrée sont automatiquement redimensionnées en fonction de leur surface en pixels avant d'être transmises au VAE pour encodage. |
 | `vae` | VAE | Non | | Un modèle VAE optionnel. S'il est fourni, il sera utilisé pour encoder les images d'entrée en représentations latentes, qui sont ajoutées au conditionnement en tant que latentes de référence. |
 | `image1` | IMAGE | Non | | La première image de référence optionnelle. |
 | `image2` | IMAGE | Non | | La deuxième image de référence optionnelle. |
