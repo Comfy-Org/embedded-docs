@@ -14,3 +14,6 @@ The LatentApplyOperationCFG node applies a latent operation to modify the condit
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with the CFG operation applied to its sampling process |
+
+---
+**Source fingerprint (SHA-256):** `9fbcc9183abf89bb93e55263bb655e931549360c05a561f7dacae8723db62e52`

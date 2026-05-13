@@ -19,3 +19,6 @@ The Hunyuan3Dv2ConditioningMultiView node processes multi-view CLIP vision embed
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | Positive conditioning containing the combined multi-view embeddings with positional encoding |
 | `negative` | CONDITIONING | Negative conditioning with zero values for contrastive learning |
+
+---
+**Source fingerprint (SHA-256):** `01998ae9ba7d2ae9a2f6a0b5aee4c03168f935fb9769317cd80d93a7a4b96f13`

@@ -24,3 +24,6 @@ The Wan 2.7 Video Continuation node generates a new video segment that continues
 | Output Name | Data Type | Description |
 | :--- | :--- | :--- |
 | `output` | VIDEO | The generated video continuation. |
+
+---
+**Source fingerprint (SHA-256):** `5e9d2c7800603660f5f994d125e1e32f2b310234c4b6a24d502c764d91be49e8`

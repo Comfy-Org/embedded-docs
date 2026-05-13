@@ -6,13 +6,16 @@ The PrimitiveBoundingBox node creates a simple rectangular area defined by its p
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `x` | INT | No | 0 to 8192 | The X-coordinate for the top-left corner of the bounding box (default: 0). |
-| `y` | INT | No | 0 to 8192 | The Y-coordinate for the top-left corner of the bounding box (default: 0). |
-| `width` | INT | No | 1 to 8192 | The width of the bounding box (default: 512). |
-| `height` | INT | No | 1 to 8192 | The height of the bounding box (default: 512). |
+| `x` | INT | Yes | 0 to 8192 | The X-coordinate for the top-left corner of the bounding box (default: 0). |
+| `y` | INT | Yes | 0 to 8192 | The Y-coordinate for the top-left corner of the bounding box (default: 0). |
+| `width` | INT | Yes | 1 to 8192 | The width of the bounding box (default: 512). |
+| `height` | INT | Yes | 1 to 8192 | The height of the bounding box (default: 512). |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `bounding_box` | BOUNDING_BOX | A data structure containing the `x`, `y`, `width`, and `height` properties of the defined rectangle. |
+
+---
+**Source fingerprint (SHA-256):** `715f1a2bd650ecd6ba2ea3c1d54636bc32dff4fb4aec8f088ee9b0994809412c`

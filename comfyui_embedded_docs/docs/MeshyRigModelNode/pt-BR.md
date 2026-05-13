@@ -1,22 +1,25 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/pt-BR.md)
 
-O nó Meshy: Rig Model recebe uma tarefa de modelo 3D do Meshy e gera um modelo de personagem com rig. Ele cria automaticamente um esqueleto para o modelo, permitindo que ele seja posado e animado. O nó gera o modelo com rig nos formatos de arquivo GLB e FBX.
+O nó Meshy: Rig Model recebe um modelo 3D de uma tarefa anterior do Meshy e cria automaticamente um esqueleto para ele, produzindo um personagem rigado que pode ser posado e animado. O nó gera o modelo rigado nos formatos de arquivo GLB e FBX.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `meshy_task_id` | STRING | Sim | N/A | O ID único da tarefa de uma operação anterior do Meshy (por exemplo, texto-para-3D ou imagem-para-3D) que gerou o modelo a ser rigado. |
-| `height_meters` | FLOAT | Sim | 0.1 a 15.0 | A altura aproximada do modelo do personagem em metros. Isso auxilia na precisão de escala e rigging (padrão: 1.7). |
-| `texture_image` | IMAGE | Não | N/A | A imagem de textura de cor base com UV-unwrapped do modelo. |
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
+| `meshy_task_id` | STRING | Sim | N/A | O ID único da tarefa de uma operação anterior do Meshy (ex.: texto-para-3D ou imagem-para-3D) que gerou o modelo a ser rigado. |
+| `height_meters` | FLOAT | Sim | 0,1 a 15,0 | A altura aproximada do modelo do personagem em metros. Isso auxilia na precisão do escalonamento e da rigagem (padrão: 1,7). |
+| `texture_image` | IMAGE | Não | N/A | A imagem de textura de cor base do modelo com mapa UV. |
 
-**Observação:** O processo de auto-rigging atualmente não é adequado para malhas sem textura, ativos não humanoides ou ativos humanoides com estrutura de membros e corpo pouco clara.
+**Nota:** O processo de rigagem automática atualmente não é adequado para malhas sem textura, assets não humanoides ou assets humanoides com estrutura de membros e corpo pouco clara.
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `model_file` | STRING | Uma saída legada para compatibilidade com versões anteriores, contendo o nome do arquivo do modelo GLB. |
-| `rig_task_id` | STRING | O ID único da tarefa para esta operação de rigging, que pode ser usado para referenciar o resultado. |
-| `GLB` | FILE3DGLB | O modelo de personagem 3D com rig salvo no formato de arquivo GLB. |
-| `FBX` | FILE3DFBX | O modelo de personagem 3D com rig salvo no formato de arquivo FBX. |
+|---------------|---------------|-----------|
+| `model_file` | STRING | Uma saída legada para compatibilidade reversa, contendo o nome do arquivo do modelo GLB. |
+| `rig_task_id` | STRING | O ID único da tarefa para esta operação de rigagem, que pode ser usado para referenciar o resultado. |
+| `GLB` | FILE3DGLB | O modelo 3D de personagem rigado salvo no formato de arquivo GLB. |
+| `FBX` | FILE3DFBX | O modelo 3D de personagem rigado salvo no formato de arquivo FBX. |
+
+---
+**Source fingerprint (SHA-256):** `91e06e3465d3d309d2267ae307ec5a704af3903b7a6d7fb6011217dd58a63973`

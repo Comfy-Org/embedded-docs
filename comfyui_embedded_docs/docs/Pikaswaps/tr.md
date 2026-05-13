@@ -1,22 +1,25 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pikaswaps/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Pikaswaps/tr.md)
 
-Pika Swaps düğümü, videonuzdaki nesneleri veya bölgeleri yeni görüntülerle değiştirmenize olanak tanır. Değiştirilecek alanları bir maske veya koordinatlar kullanarak tanımlayabilirsiniz ve düğüm, belirtilen içeriği video dizisi boyunca sorunsuz bir şekilde değiştirecektir.
+Pika Swaps düğümü, videonuzdaki nesneleri veya bölgeleri yeni bir görüntüyle değiştirir. Değiştirilecek alanları bir maske kullanarak tanımlarsınız ve düğüm, video dizisi boyunca belirtilen içeriği sorunsuz bir şekilde değiştirir.
 
 ## Girişler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Evet | - | İçindeki bir nesnenin değiştirileceği video. |
-| `görüntü` | IMAGE | Evet | - | Videodaki maskelenmiş nesneyi değiştirmek için kullanılan görüntü. |
-| `maske` | MASK | Evet | - | Videoda değiştirilecek alanları tanımlamak için maskeyi kullanın. |
-| `istem_metni` | STRING | Evet | - | İstenen değişikliği tanımlayan metin istemi. |
-| `negatif_istem` | STRING | Evet | - | Değişiklikte nelerden kaçınılması gerektiğini tanımlayan metin istemi. |
-| `tohum` | INT | Evet | 0 - 4294967295 | Tutarlı sonuçlar için rastgele tohum değeri. |
+| `video` | VIDEO | Evet | - | İçinde nesne değiştirilecek video. |
+| `image` | IMAGE | Evet | - | Videodaki maskelenmiş nesneyi değiştirmek için kullanılan görüntü. |
+| `mask` | MASK | Evet | - | Videoda değiştirilecek alanları tanımlamak için maskeyi kullanın. |
+| `prompt_text` | STRING | Evet | - | İstenen değiştirmeyi tanımlayan metin istemi. |
+| `negative_prompt` | STRING | Evet | - | Değiştirmede kaçınılması gerekenleri tanımlayan metin istemi. |
+| `seed` | INT | Evet | 0 ile 4294967295 arası | Tutarlı sonuçlar için rastgele tohum değeri. |
 
-**Not:** Bu düğüm, tüm giriş parametrelerinin sağlanmasını gerektirir. `video`, `image` ve `mask` birlikte çalışarak değiştirme işlemini tanımlar; burada maske, videonun hangi alanlarının sağlanan görüntü ile değiştirileceğini belirtir.
+**Not:** Bu düğüm, tüm giriş parametrelerinin sağlanmasını gerektirir. `video`, `image` ve `mask` birlikte çalışarak değiştirme işlemini tanımlar; maske, videonun hangi alanlarının sağlanan görüntü ile değiştirileceğini belirtir.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | VIDEO | Belirtilen nesnenin veya bölgenin değiştirildiği işlenmiş video. |
+| `output` | VIDEO | Belirtilen nesne veya bölgenin değiştirildiği işlenmiş video. |
+
+---
+**Source fingerprint (SHA-256):** `007b7bc429fdada2fb8910392b056ae3a98d482cce9e280bdcd162ede497eb03`

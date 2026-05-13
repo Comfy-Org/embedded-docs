@@ -6,7 +6,7 @@ The WavespeedFlashVSRNode is a fast, high-quality video upscaler that boosts the
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Yes | N/A | The input video file to be upscaled. |
+| `video` | VIDEO | Yes | N/A | The input video file to be upscaled. Must be in MP4 container format with a duration between 5 seconds and 10 minutes. |
 | `target_resolution` | STRING | Yes | `"720p"`<br>`"1080p"`<br>`"2K"`<br>`"4K"` | The desired resolution for the upscaled output video. |
 
 **Input Constraints:**
@@ -19,3 +19,6 @@ The WavespeedFlashVSRNode is a fast, high-quality video upscaler that boosts the
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The upscaled video file at the selected target resolution. |
+
+---
+**Source fingerprint (SHA-256):** `9a495889753ac866177921727228846d8ef9516c54ccd9aa425350b87237c397`

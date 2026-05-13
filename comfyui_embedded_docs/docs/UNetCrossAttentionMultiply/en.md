@@ -17,3 +17,6 @@ The UNetCrossAttentionMultiply node applies multiplication factors to the cross-
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified UNet model with scaled cross-attention components |
+
+---
+**Source fingerprint (SHA-256):** `2623858c11e93ab5952194670c9e4ea74bba4e2ea32089540665eea361dc1491`

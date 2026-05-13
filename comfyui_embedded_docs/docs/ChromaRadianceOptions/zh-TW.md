@@ -1,21 +1,26 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ChromaRadianceOptions/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ChromaRadianceOptions/zh-TW.md)
 
-ChromaRadianceOptions 節點允許您配置 Chroma Radiance 模型的高級設定。它會封裝現有模型，並在去噪過程中根據 sigma 值應用特定選項，從而實現對 NeRF 切片大小和其他輻射相關參數的微調控制。
+## 概述
 
-## 輸入參數
+ChromaRadianceOptions 節點可讓您為 Chroma Radiance 模型配置進階設定。它會包裝現有模型，並根據 sigma 值在去噪過程中套用特定選項，從而實現對 NeRF 區塊大小及其他輻射相關參數的精細控制。
 
-| 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 數值範圍 | 描述 |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | 必填 | - | - | 要應用 Chroma Radiance 選項的模型 |
-| `preserve_wrapper` | BOOLEAN | 選填 | True | - | 啟用時，如果存在現有的模型函數封裝器，將會委派給它。通常應保持啟用狀態。 |
-| `start_sigma` | FLOAT | 選填 | 1.0 | 0.0 - 1.0 | 這些選項開始生效的第一個 sigma 值。 |
-| `end_sigma` | FLOAT | 選填 | 0.0 | 0.0 - 1.0 | 這些選項停止生效的最後一個 sigma 值。 |
-| `nerf_tile_size` | INT | 選填 | -1 | -1 及以上 | 允許覆蓋預設的 NeRF 切片大小。-1 表示使用預設值 (32)。0 表示使用非切片模式（可能需要大量 VRAM）。 |
+## 輸入
 
-**注意：** Chroma Radiance 選項僅在當前 sigma 值落在 `end_sigma` 和 `start_sigma` 之間（包含邊界值）時生效。`nerf_tile_size` 參數僅在設定為 0 或更高值時才會被應用。
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | 是 | - | 要套用 Chroma Radiance 選項的模型 |
+| `preserve_wrapper` | BOOLEAN | 否 | - | 啟用時，若存在現有模型函數包裝器，將委派給該包裝器。通常應保持啟用。（預設值：True） |
+| `start_sigma` | FLOAT | 否 | 0.0 至 1.0 | 這些選項開始生效的第一個 sigma 值。（預設值：1.0） |
+| `end_sigma` | FLOAT | 否 | 0.0 至 1.0 | 這些選項結束生效的最後一個 sigma 值。（預設值：0.0） |
+| `nerf_tile_size` | INT | 否 | -1 及以上 | 允許覆寫預設的 NeRF 區塊大小。-1 表示使用預設值 (32)。0 表示使用非區塊模式（可能需要大量 VRAM）。（預設值：-1） |
 
-## 輸出結果
+**注意：** Chroma Radiance 選項僅在當前 sigma 值落在 `end_sigma` 與 `start_sigma` 之間（含邊界值）時才會生效。`nerf_tile_size` 參數僅在設定為 0 或更高數值時才會套用。
 
-| 輸出名稱 | 資料類型 | 描述 |
+## 輸出
+
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已應用 Chroma Radiance 選項的修改後模型 |
+| `model` | MODEL | 已套用 Chroma Radiance 選項的修改後模型 |
+
+---
+**Source fingerprint (SHA-256):** `b49a12e9aba59e4669c59e05a6aeff6d4ae5a4b656ca5b0de4bdf71291dca095`

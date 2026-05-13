@@ -6,7 +6,7 @@ The LoadImageOutput node loads images from the output folder. When you click the
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `image` | COMBO | Yes | Multiple options available | Load an image from the output folder. Includes an upload option and refresh button to update the image list. |
+| `image` | COMBO | Yes | Multiple options available | Load an image from the output folder. Includes an upload option and refresh button to update the image list. When the refresh button is clicked, the node will update the image list and automatically select the first image, allowing for easy iteration. |
 
 ## Outputs
 
@@ -14,3 +14,6 @@ The LoadImageOutput node loads images from the output folder. When you click the
 |-------------|-----------|-------------|
 | `image` | IMAGE | The loaded image from the output folder |
 | `mask` | MASK | The mask associated with the loaded image |
+
+---
+**Source fingerprint (SHA-256):** `d1de0140765c9d5dd393715faa84dc5c3f0e49117391b8823a51b176bcb568d8`

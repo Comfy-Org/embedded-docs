@@ -4,8 +4,8 @@ JsonExtractString düğümü, JSON verisi içeren bir metin dizesini okur ve bel
 
 ## Girişler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
-|-----------|-----------|---------|--------|----------|
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
 | `json_string` | STRING | Evet | Yok | Ayrıştırılacak JSON verisini içeren metin. |
 | `key` | STRING | Evet | Yok | JSON nesnesinden dize değerini çıkarmak istediğiniz belirli anahtar. |
 
@@ -14,5 +14,8 @@ JsonExtractString düğümü, JSON verisi içeren bir metin dizesini okur ve bel
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `output` | STRING | Belirtilen anahtar için JSON'dan çıkarılan dize değeri veya çıkarma başarısız olursa boş dize. |
+|-----------|-----------|-------------|
+| `output` | STRING | JSON'dan belirtilen anahtar için çıkarılan dize değeri veya çıkarma başarısız olursa boş bir dize. |
+
+---
+**Source fingerprint (SHA-256):** `f05e2d9fd4888870a844c85ac7543d6c38c1c56f2ef22a402fc93ee716743612`

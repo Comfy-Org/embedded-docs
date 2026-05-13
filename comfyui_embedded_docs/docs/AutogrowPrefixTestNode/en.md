@@ -6,12 +6,15 @@ The AutogrowPrefixTestNode is a logic node designed to test the autogrow input f
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `autogrow` | AUTOGROW | Yes | 1 to 10 inputs | A dynamic input group that can accept between 1 and 10 float values. Each input in the group is a FLOAT type. |
+| `autogrow` | AUTOGROW | Yes | 1 to 10 inputs | A dynamic input group that can accept between 1 and 10 float values. Each input in the group is a FLOAT type with a minimum value of 1 and a maximum value of 10. |
 
-**Note:** The `autogrow` input is a special dynamic input. You can add multiple float inputs to this group, up to a maximum of 10. The node will process all provided values.
+**Note:** The `autogrow` input is a special dynamic input. You can add multiple float inputs to this group, up to a maximum of 10. The node will process all provided values. Each individual float input is constrained to a range of 1 to 10.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | A single string containing all the input float values, separated by commas. |
+
+---
+**Source fingerprint (SHA-256):** `7ae65365f77399a2ad8358b5a1eab3f2caa39331e53dec474cdd7f2751bfff4b`

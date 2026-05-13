@@ -1,19 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EasyCache/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EasyCache/tr.md)
 
-EasyCache düğümü, örnekleme işlemi sırasında önceden hesaplanmış adımları yeniden kullanarak performansı artırmak için modeller için yerel bir önbellek sistemi uygular. Örnekleme zaman çizelgesi boyunca önbelleği ne zaman kullanmaya başlayacağını ve ne zaman durduracağını yapılandırılabilir eşiklerle bir modele EasyCache işlevselliği ekler.
+EasyCache düğümü, örnekleme işlemi sırasında önceden hesaplanmış adımları yeniden kullanarak performansı artırmak için modeller için yerel bir önbellekleme sistemi uygular. Örnekleme zaman çizelgesinde önbelleğin ne zaman kullanılmaya başlanacağı ve ne zaman durdurulacağı için yapılandırılabilir eşik değerleriyle bir modele EasyCache işlevselliği ekler.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Evet | - | EasyCache eklenek model. |
-| `reuse_threshold` | FLOAT | Hayır | 0.0 - 3.0 | Önbelleğe alınmış adımların yeniden kullanım eşiği (varsayılan: 0.2). |
-| `start_percent` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımına başlamak için göreli örnekleme adımı (varsayılan: 0.15). |
-| `end_percent` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımını sonlandırmak için göreli örnekleme adımı (varsayılan: 0.95). |
+| `model` | MODEL | Evet | - | EasyCache eklenecek model. |
+| `reuse_threshold` | FLOAT | Hayır | 0.0 - 3.0 | Önbelleğe alınmış adımların yeniden kullanımı için eşik değeri (varsayılan: 0.2). |
+| `start_percent` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımının başlayacağı göreceli örnekleme adımı (varsayılan: 0.15). |
+| `end_percent` | FLOAT | Hayır | 0.0 - 1.0 | EasyCache kullanımının sona ereceği göreceli örnekleme adımı (varsayılan: 0.95). |
 | `verbose` | BOOLEAN | Hayır | - | Ayrıntılı bilgilerin günlüğe kaydedilip kaydedilmeyeceği (varsayılan: False). |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `model` | MODEL | EasyCache işlevselliği eklenmiş model. |
+
+---
+**Source fingerprint (SHA-256):** `e9d9bf5ecae8034b562f1a27acf528d1f3241d7d28621beba149d3e9bd66a247`

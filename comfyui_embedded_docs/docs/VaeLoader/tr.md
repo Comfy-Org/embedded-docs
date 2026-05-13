@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAELoader/tr.md)
 
-Bu düğüm, `ComfyUI/models/vae` klasöründe bulunan modelleri algılayacak ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardan modelleri okuyacaktır. Bazen, ilgili klasörden model dosyalarını okuyabilmesi için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
+Bu düğüm, `ComfyUI/models/vae` klasöründe bulunan modelleri algılar ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardaki modelleri de okur. Bazen, ilgili klasördeki model dosyalarını okuyabilmesi için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
-VAELoader düğümü, Varyasyonel Otokodlayıcı (VAE) modellerini yüklemek için tasarlanmış olup, hem standart hem de yaklaşık VAE'leri işlemeye özel olarak uyarlanmıştır. VAE'leri isme göre yüklemeyi destekler, 'taesd' ve 'taesdxl' modelleri için özel işleme içerir ve VAE'nin spesifik konfigürasyonuna bağlı olarak dinamik olarak uyum sağlar.
+VAELoader düğümü, Varyasyonel Otomatik Kodlayıcı (VAE) modellerini yüklemek için tasarlanmıştır ve hem standart hem de yaklaşık VAE'leri işlemek üzere özelleştirilmiştir. VAE'leri ada göre yüklemeyi destekler; 'taesd' ve 'taesdxl' modelleri için özel işleme dahil olmak üzere, VAE'nin belirli yapılandırmasına göre dinamik olarak ayarlama yapar.
 
-## Girdiler
+## Girişler
 
-| Alan       | Comfy Veri Türü   | Açıklama                                                                                   |
-|------------|-------------------|-----------------------------------------------------------------------------------------------|
-| `vae_adı` | `COMBO[STRING]`    | Yüklenecek VAE'nin adını belirtir, hangi VAE modelinin getirileceğini ve yükleneceğini belirler; 'taesd' ve 'taesdxl' dahil olmak üzere bir dizi önceden tanımlanmış VAE adını destekler. |
+| Alan | Comfy veri türü | Açıklama |
+|---------|-------------------|-----------------------------------------------------------------------------------------------|
+| `vae_name` | `COMBO[STRING]` | Yüklenecek VAE'nin adını belirtir; hangi VAE modelinin getirilip yükleneceğini belirler ve 'taesd' ile 'taesdxl' dahil olmak üzere önceden tanımlanmış bir dizi VAE adını destekler. |
 
-## Çıktılar
+## Çıkışlar
 
-| Alan  | Veri Türü | Açıklama                                                              |
+| Alan | Veri Türü | Açıklama |
 |-------|-------------|--------------------------------------------------------------------------|
-| `vae`  | `VAE`       | Kodlama veya kod çözme gibi ileri operasyonlar için hazır olarak yüklenen VAE modelini döndürür. Çıktı, yüklenen modelin durumunu içeren bir model nesnesidir. |
+| `vae` | `VAE` | Kodlama veya kod çözme gibi daha ileri işlemler için hazır, yüklenmiş VAE modelini döndürür. Çıktı, yüklenen modelin durumunu kapsayan bir model nesnesidir. |

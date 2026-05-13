@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/tr.md)
 
-Bu düğüm, tek bir boolean (doğru/yanlış) girişi alır ve bunun ters değerini çıktı olarak verir. Mantıksal bir DEĞİL (NOT) işlemi gerçekleştirir; `true` değerini `false`, `false` değerini ise `true` yapar.
+Bu düğüm, tek bir boolean (doğru/yanlış) girdisi alır ve bunun tersi değeri çıktı olarak verir. Mantıksal DEĞİL işlemi gerçekleştirerek `true` değerini `false`'a, `false` değerini ise `true`'ya dönüştürür.
 
-## Girişler
+## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `boolean` | BOOLEAN | Evet | `true`<br>`false` | Tersine çevrilecek olan giriş boolean değeri. |
+| `boolean` | BOOLEAN | Evet | `true`<br>`false` | Tersine çevrilecek boolean girdi değeri. |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | BOOLEAN | Tersine çevrilmiş boolean değeri. |
+
+---
+**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`

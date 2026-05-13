@@ -1,15 +1,15 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeFlux1/fr.md)
 
-Le nœud ModelMergeFlux1 fusionne deux modèles de diffusion en mélangeant leurs composants par interpolation pondérée. Il permet un contrôle précis de la manière dont les différentes parties des modèles sont combinées, incluant les blocs de traitement d'image, les couches d'incorporation temporelle, les mécanismes de guidage, les entrées vectorielles, les encodeurs de texte et divers blocs transformeurs. Cela permet de créer des modèles hybrides avec des caractéristiques personnalisées à partir de deux modèles sources.
+Le nœud ModelMergeFlux1 fusionne deux modèles de diffusion en mélangeant leurs composants par interpolation pondérée. Il permet un contrôle précis sur la façon dont les différentes parties des modèles sont combinées, notamment les blocs de traitement d'image, les couches d'intégration temporelle, les mécanismes de guidage, les entrées vectorielles, les encodeurs de texte et divers blocs de transformeurs. Cela permet de créer des modèles hybrides aux caractéristiques personnalisées à partir de deux modèles sources.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
+|-----------|-----------------|--------|-------|-------------|
 | `model1` | MODEL | Oui | - | Premier modèle source à fusionner |
-| `model2` | MODEL | Oui | - | Second modèle source à fusionner |
+| `model2` | MODEL | Oui | - | Deuxième modèle source à fusionner |
 | `img_in.` | FLOAT | Oui | 0.0 à 1.0 | Poids d'interpolation de l'entrée image (par défaut : 1.0) |
-| `time_in.` | FLOAT | Oui | 0.0 à 1.0 | Poids d'interpolation de l'incorporation temporelle (par défaut : 1.0) |
+| `time_in.` | FLOAT | Oui | 0.0 à 1.0 | Poids d'interpolation de l'intégration temporelle (par défaut : 1.0) |
 | `guidance_in` | FLOAT | Oui | 0.0 à 1.0 | Poids d'interpolation du mécanisme de guidage (par défaut : 1.0) |
 | `vector_in.` | FLOAT | Oui | 0.0 à 1.0 | Poids d'interpolation de l'entrée vectorielle (par défaut : 1.0) |
 | `txt_in.` | FLOAT | Oui | 0.0 à 1.0 | Poids d'interpolation de l'encodeur de texte (par défaut : 1.0) |
@@ -74,6 +74,9 @@ Le nœud ModelMergeFlux1 fusionne deux modèles de diffusion en mélangeant leur
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
+| Nom de la sortie | Type de données | Description |
+|------------------|-----------------|-------------|
 | `model` | MODEL | Le modèle fusionné combinant les caractéristiques des deux modèles d'entrée |
+
+---
+**Source fingerprint (SHA-256):** `a632133b5d4bc7c5a4e1be5f6f779e424a491fffb8ef7702346adc4acf6f23bc`

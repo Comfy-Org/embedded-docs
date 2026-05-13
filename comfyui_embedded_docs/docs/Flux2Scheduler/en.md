@@ -15,3 +15,6 @@ The Flux2Scheduler node generates a sequence of noise levels (sigmas) for the de
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sigmas` | SIGMAS | A sequence of noise level values (sigmas) that define the denoising schedule for the sampler. |
+
+---
+**Source fingerprint (SHA-256):** `dbe44a6eb454dd61ab22df5770ad5ac559e03b20fd36d17d33730cdb835f7ede`

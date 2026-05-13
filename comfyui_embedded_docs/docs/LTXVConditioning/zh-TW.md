@@ -1,18 +1,23 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/zh-TW.md)
 
-LTXVConditioning 節點會為影片生成模型的正向與負向條件輸入添加幀率資訊。它接收現有的條件資料，並將指定的幀率值應用到兩組條件資料上，使其適用於影片模型處理。
+## 概述
 
-## 輸入參數
+LTXVConditioning 節點會將影格率資訊新增至影片生成模型的正向與負向條件輸入中。它會接收現有的條件資料，並將指定的影格率值套用至兩組條件設定，使其適用於影片模型處理。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `正向` | CONDITIONING | 是 | - | 將接收幀率資訊的正向條件輸入 |
-| `負向` | CONDITIONING | 是 | - | 將接收幀率資訊的負向條件輸入 |
-| `影格率` | FLOAT | 否 | 0.0 - 1000.0 | 要應用到兩組條件資料的幀率值（預設值：25.0） |
+| `positive` | CONDITIONING | 是 | - | 將接收影格率資訊的正向條件輸入 |
+| `negative` | CONDITIONING | 是 | - | 將接收影格率資訊的負向條件輸入 |
+| `frame_rate` | FLOAT | 是 | 0.0 - 1000.0 | 要套用至兩組條件設定的影格率值（預設值：25.0） |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `負向` | CONDITIONING | 已應用幀率資訊的正向條件資料 |
-| `負向` | CONDITIONING | 已應用幀率資訊的負向條件資料 |
+| `positive` | CONDITIONING | 已套用影格率資訊的正向條件 |
+| `negative` | CONDITIONING | 已套用影格率資訊的負向條件 |
+
+---
+**Source fingerprint (SHA-256):** `e8c18b73eb009c1b3ebcc2cb8be3dee4e065d75908607a5cf15d41f89963ee09`

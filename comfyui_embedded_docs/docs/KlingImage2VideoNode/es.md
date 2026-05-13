@@ -1,24 +1,29 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImage2VideoNode/es.md)
 
-El nodo Kling Image to Video genera contenido de video a partir de una imagen inicial utilizando prompts de texto. Toma una imagen de referencia y crea una secuencia de video basada en las descripciones de texto positivas y negativas proporcionadas, con varias opciones de configuración para la selección del modelo, duración y relación de aspecto.
+# Nodo Kling Imagen a Video
+
+El nodo Kling Imagen a Video genera un video a partir de una imagen de referencia inicial utilizando indicaciones de texto. Toma una imagen como primer fotograma y crea una secuencia de video basada en descripciones de texto positivas y negativas, con opciones configurables para modelo, duración, relación de aspecto y modo de generación.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
 | `start_frame` | IMAGE | Sí | - | La imagen de referencia utilizada para generar el video. |
-| `prompt` | STRING | Sí | - | Prompt de texto positivo. |
-| `negative_prompt` | STRING | Sí | - | Prompt de texto negativo. |
-| `model_name` | COMBO | Sí | Múltiples opciones disponibles | Selección del modelo para la generación de video (por defecto: "kling-v2-master"). |
-| `cfg_scale` | FLOAT | Sí | 0.0-1.0 | Parámetro de escala de configuración (por defecto: 0.8). |
-| `mode` | COMBO | Sí | Múltiples opciones disponibles | Selección del modo de generación de video (por defecto: std). |
-| `aspect_ratio` | COMBO | Sí | Múltiples opciones disponibles | Relación de aspecto para el video generado (por defecto: field_16_9). |
-| `duration` | COMBO | Sí | Múltiples opciones disponibles | Duración del video generado (por defecto: field_5). |
+| `prompt` | STRING | Sí | - | Indicación de texto positiva. |
+| `negative_prompt` | STRING | Sí | - | Indicación de texto negativa. |
+| `model_name` | COMBO | Sí | `"kling-v2-master"`<br>`"kling-v2-1-master"`<br>`"kling-v2-5-turbo"`<br>`"kling-v2-1"`<br>`"kling-v1-6"`<br>`"kling-v1-5"`<br>`"kling-v1-4"`<br>`"kling-v1-0"` | El modelo utilizado para la generación de video (predeterminado: `"kling-v2-master"`). |
+| `cfg_scale` | FLOAT | Sí | 0.0 a 1.0 | Controla qué tan fielmente el video sigue la indicación. Valores más altos significan mayor adherencia (predeterminado: 0.8). |
+| `mode` | COMBO | Sí | `"std"`<br>`"pro"` | El modo de generación. `"std"` es calidad estándar, `"pro"` es mayor calidad (predeterminado: `"std"`). |
+| `aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` | La relación de aspecto del video generado (predeterminado: `"16:9"`). |
+| `duration` | COMBO | Sí | `"5"`<br>`"10"` | La duración del video generado en segundos (predeterminado: `"5"`). |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `video_id` | VIDEO | La salida de video generada. |
-| `duration` | STRING | Identificador único para el video generado. |
-| `duration` | STRING | Información de duración para el video generado. |
+|------------------|--------------|-------------|
+| `output` | VIDEO | El video generado como salida. |
+| `video_id` | STRING | Identificador único para el video generado. |
+| `duration` | STRING | Información de duración del video generado. |
+
+---
+**Source fingerprint (SHA-256):** `2f82997307265dba6714733523e265d1e0a25fd7491b043f05d7d000b7b9b2f3`

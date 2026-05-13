@@ -1,21 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/tr.md)
 
-InpaintModelConditioning düğümü, inpaint modelleri için koşullandırma sürecini kolaylaştırmak üzere tasarlanmış olup, çeşitli koşullandırma girdilerinin entegrasyonunu ve manipülasyonunu sağlayarak inpaint çıktısını özelleştirmeye olanak tanır. Belirli model kontrol noktalarını yüklemeden stil veya kontrol ağı modelleri uygulamaya, koşullandırma öğelerini kodlamadan birleştirmeye kadar geniş bir işlev yelpazesini kapsar ve böylece inpaint görevlerini özelleştirmek için kapsamlı bir araç görevi görür.
+InpaintModelConditioning düğümü, rötuş (inpainting) modelleri için koşullandırma sürecini kolaylaştırmak, çeşitli koşullandırma girdilerinin entegrasyonunu ve manipülasyonunu sağlayarak rötuş çıktısını özelleştirmek üzere tasarlanmıştır. Belirli model kontrol noktalarını yükleme, stil veya kontrol ağı modelleri uygulama ile koşullandırma öğelerini kodlama ve birleştirme gibi geniş bir işlev yelpazesini kapsar; böylece rötuş görevlerini özelleştirmek için kapsamlı bir araç görevi görür.
 
 ## Girdiler
 
-| Parametre | Comfy türü        | Açıklama |
-|-----------|--------------------|-------------|
-| `pozitif`| `CONDITIONING`     | Inpaint modeline uygulanacak pozitif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, inpaint işleminin hangi bağlam veya kısıtlamalar altında gerçekleştirileceğini tanımlamak için çok önemli olup, nihai çıktıyı önemli ölçüde etkiler. |
-| `negatif`| `CONDITIONING`     | Inpaint modeline uygulanacak negatif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, inpaint sürecinde kaçınılması gereken koşulları veya bağlamları belirtmek için temeldir ve böylece nihai çıktıyı etkiler. |
-| `vae`     | `VAE`              | Koşullandırma sürecinde kullanılacak VAE modelini belirtir. Bu girdi, kullanılacak VAE modelinin belirli mimarisini ve parametrelerini belirlemek için çok önemlidir. |
-| `pikseller`  | `IMAGE`            | İşlenecek görüntünün piksel verilerini temsil eder. Bu girdi, inpaint görevi için gerekli olan görsel bağlamı sağlamak açısından temeldir. |
-| `maske`    | `MASK`             | Görüntüye uygulanacak ve inpaint yapılacak alanları gösteren maskeyi belirtir. Bu girdi, görüntü içinde inpaint gerektiren belirli bölgeleri tanımlamak için çok önemlidir. |
+| Parametre | Comfy Veri Türü | Açıklama |
+|-----------|-----------------|----------|
+| `positive`| `CONDITIONING`  | Rötuş modeline uygulanacak pozitif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, rötuş işleminin gerçekleştirilmesi gereken bağlamı veya kısıtlamaları tanımlamak için çok önemlidir ve nihai çıktıyı önemli ölçüde etkiler. |
+| `negative`| `CONDITIONING`  | Rötuş modeline uygulanacak negatif koşullandırma bilgisini veya parametrelerini temsil eder. Bu girdi, rötuş işlemi sırasında kaçınılması gereken koşulları veya bağlamları belirtmek için gereklidir ve böylece nihai çıktıyı etkiler. |
+| `vae`     | `VAE`           | Koşullandırma sürecinde kullanılacak VAE modelini belirtir. Bu girdi, kullanılacak VAE modelinin belirli mimarisini ve parametrelerini belirlemek için çok önemlidir. |
+| `pixels`  | `IMAGE`         | Rötuş yapılacak görüntünün piksel verilerini temsil eder. Bu girdi, rötuş görevi için gerekli görsel bağlamı sağlamak açısından gereklidir. |
+| `mask`    | `MASK`          | Görüntüye uygulanacak ve rötuş yapılacak alanları gösteren maskeyi belirtir. Bu girdi, görüntü içinde rötuş gerektiren belirli bölgeleri tanımlamak için çok önemlidir. |
 
 ## Çıktılar
 
-| Parametre | Veri Türü      | Açıklama |
-|-----------|--------------|-------------|
-| `negatif`| `CONDITIONING` | İşlendikten sonra değiştirilmiş pozitif koşullandırma bilgisi, inpaint modeline uygulanmaya hazırdır. Bu çıktı, belirtilen pozitif koşullara göre inpaint sürecini yönlendirmek için temeldir. |
-| `gizli`| `CONDITIONING` | İşlendikten sonra değiştirilmiş negatif koşullandırma bilgisi, inpaint modeline uygulanmaya hazırdır. Bu çıktı, belirtilen negatif koşullara göre inpaint sürecini yönlendirmek için temeldir. |
-| `latent`  | `LATENT`     | Koşullandırma sürecinden türetilen gizli temsildir. Bu çıktı, işlenmekte olan görüntünün altında yatan özellikleri ve karakteristikleri anlamak için çok önemlidir. |
+| Parametre | Veri Türü | Açıklama |
+|-----------|--------------|----------|
+| `positive`| `CONDITIONING` | İşlem sonrası değiştirilmiş pozitif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen pozitif koşullara göre yönlendirmek için gereklidir. |
+| `negative`| `CONDITIONING` | İşlem sonrası değiştirilmiş negatif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen negatif koşullara göre yönlendirmek için gereklidir. |
+| `latent`  | `LATENT`       | Koşullandırma sürecinden elde edilen gizli (latent) temsildir. Bu çıktı, rötuş yapılan görüntünün temel özelliklerini ve karakteristiklerini anlamak için çok önemlidir. |

@@ -12,13 +12,13 @@ The HunyuanImageToVideo node converts images into video latent representations u
 | `height` | INT | Yes | 16 to MAX_RESOLUTION | Height of the output video in pixels (default: 480, step: 16) |
 | `length` | INT | Yes | 1 to MAX_RESOLUTION | Number of frames in the output video (default: 53, step: 4) |
 | `batch_size` | INT | Yes | 1 to 4096 | Number of videos to generate simultaneously (default: 1) |
-| `guidance_type` | COMBO | Yes | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Method for incorporating the starting image into video generation |
+| `guidance_type` | COMBO | Yes | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | Method for incorporating the starting image into video generation (default: "v1 (concat)") |
 | `start_image` | IMAGE | No | - | Optional starting image to initialize the video generation |
 
 **Note:** When `start_image` is provided, the node uses different guidance methods based on the selected `guidance_type`:
 
-- "v1 (concat)": Concatenates the image latent with the video latent
-- "v2 (replace)": Replaces initial video frames with the image latent
+- "v1 (concat)": Concatenates the image latent with the video latent and applies a mask to blend the image into the video
+- "v2 (replace)": Replaces initial video frames with the image latent and applies a noise mask
 - "custom": Uses the image as a reference latent for guidance
 
 ## Outputs
@@ -27,3 +27,6 @@ The HunyuanImageToVideo node converts images into video latent representations u
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | Modified positive conditioning with image guidance applied when start_image is provided |
 | `latent` | LATENT | Video latent representation ready for further processing by video generation models |
+
+---
+**Source fingerprint (SHA-256):** `e55e935b7955b28b04014359c544a230c51ee91e21170be1ae4f50705d3e7bba`

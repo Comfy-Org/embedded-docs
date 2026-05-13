@@ -1,16 +1,19 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/zh-TW.md)
 
-此節點透過在指定的最大長度處截斷文字來縮短文字。它接收任何輸入文字，並僅返回您設定的字元數之前的第一部分。這是確保文字不超過特定大小的簡單方法。
+此節點透過在指定的最大長度處截斷文字來縮短文字。它接受任何輸入文字，並僅傳回您設定的字元數範圍內的第一部分。這是一種確保文字不超過特定長度的簡單方法。
 
-## 輸入參數
+## 輸入
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `text` | STRING | 是 | N/A | 要被截斷的文字字串。 |
-| `max_length` | INT | 否 | 1 到 10000 | 文字的最大長度。文字將在此數量的字元後被截斷（預設值：77）。 |
+| `text` | STRING | 是 | 不適用 | 要截斷的文字字串。 |
+| `max_length` | INT | 是 | 1 到 10000 | 最大文字長度。文字將在此字元數之後被截斷（預設值：77）。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `string` | STRING | 截斷後的文字，僅包含輸入中前 `max_length` 個字元。 |
+
+---
+**Source fingerprint (SHA-256):** `271a77a910967c4fd86a07485449679fb8db89f6b3f2bf0a8fa2ff224ea2f7b2`

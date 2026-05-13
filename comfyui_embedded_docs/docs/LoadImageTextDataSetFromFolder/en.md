@@ -16,3 +16,6 @@ This node loads a dataset of images and their corresponding text captions from a
 |-------------|-----------|-------------|
 | `images` | IMAGE | A list of loaded image tensors. |
 | `texts` | STRING | A list of text captions corresponding to each loaded image. |
+
+---
+**Source fingerprint (SHA-256):** `e176f35118f08ea397c63f5b6f347d9cdb3dc1a08db7ad7a5cc8255e1526e6ca`

@@ -22,3 +22,6 @@ The SamplerDPMAdaptative node implements an adaptive DPM (Diffusion Probabilisti
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | Returns a configured DPM adaptive sampler instance |
+
+---
+**Source fingerprint (SHA-256):** `2815ba8c3325d3d099de685edc99e9ff8e90736c1f4bd0188165969179cb99fa`

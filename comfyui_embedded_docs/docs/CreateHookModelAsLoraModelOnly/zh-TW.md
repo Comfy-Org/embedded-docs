@@ -1,17 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookModelAsLoraModelOnly/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookModelAsLoraModelOnly/zh-TW.md)
 
-此節點建立一個掛鉤，該掛鉤應用 LoRA（低秩適應）模型來僅修改神經網路的模型組件。它載入一個檢查點檔案，並以指定的強度將其應用於模型，同時保持 CLIP 組件不變。這是一個實驗性節點，擴展了基礎 CreateHookModelAsLora 類別的功能。
+此節點建立一個鉤子，將 LoRA（低秩適應）模型應用於神經網路的模型組件。它會載入一個檢查點檔案，並以指定的強度將其應用於模型，同時保持 CLIP 組件不變。這是一個實驗性節點，擴展了基礎 CreateHookModelAsLora 類別的功能。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `ckpt_name` | STRING | 是 | 提供多個選項 | 要作為 LoRA 模型載入的檢查點檔案。可用選項取決於 checkpoints 資料夾的內容。 |
-| `strength_model` | FLOAT | 是 | -20.0 至 20.0 | 應用 LoRA 到模型組件的強度乘數（預設值：1.0） |
-| `prev_hooks` | HOOKS | 否 | - | 可選的先前掛鉤，用於與此掛鉤鏈接 |
+| `ckpt_name` | STRING | 是 | 提供多個選項 | 要作為 LoRA 模型載入的檢查點檔案。可用選項取決於檢查點資料夾的內容。 |
+| `strength_model` | FLOAT | 是 | -20.0 至 20.0 | 將 LoRA 應用於模型組件的強度乘數（預設值：1.0） |
+| `prev_hooks` | HOOKS | 否 | - | 可選的先前鉤子，用於與此鉤子串聯 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `hooks` | HOOKS | 建立的掛鉤群組，包含 LoRA 模型修改 |
+| `hooks` | HOOKS | 包含 LoRA 模型修改的已建立鉤子群組 |
+
+---
+**Source fingerprint (SHA-256):** `adbeaede65aa89d48c59225ca1c8edc4c9394a364f93a00dae4a83a2270f093b`

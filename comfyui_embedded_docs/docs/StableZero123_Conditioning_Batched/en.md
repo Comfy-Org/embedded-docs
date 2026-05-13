@@ -26,3 +26,6 @@ The StableZero123_Conditioning_Batched node processes an input image and generat
 | `positive` | CONDITIONING | The positive conditioning data containing image embeddings and camera parameters |
 | `negative` | CONDITIONING | The negative conditioning data with zero-initialized embeddings |
 | `latent` | LATENT | The latent representation of the processed image with batch indexing information |
+
+---
+**Source fingerprint (SHA-256):** `2b770f7a168a0d3e33da8bfa63383080709fa5d53846dbf6a4374bd1ef1746aa`

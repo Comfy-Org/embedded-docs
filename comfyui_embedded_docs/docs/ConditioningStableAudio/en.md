@@ -17,3 +17,6 @@ The ConditioningStableAudio node adds timing information to both positive and ne
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | The modified positive conditioning with audio timing information applied |
 | `negative` | CONDITIONING | The modified negative conditioning with audio timing information applied |
+
+---
+**Source fingerprint (SHA-256):** `ad4fdb2ac536e4f9cc23c044a7a63333e3f3530cc782937eaedc1565cc7c5d0e`

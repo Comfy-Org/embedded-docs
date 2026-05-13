@@ -18,3 +18,6 @@ The PhotoMakerEncode node processes images and text to generate conditioning dat
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | The conditioning data containing image and text embeddings for guiding image generation |
+
+---
+**Source fingerprint (SHA-256):** `535fd3dbbe0e48205bebde030138ffca841dc94a18fd47db768a1066fe84bce4`

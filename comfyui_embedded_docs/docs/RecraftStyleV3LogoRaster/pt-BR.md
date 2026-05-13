@@ -1,15 +1,18 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/pt-BR.md)
 
-Este nó permite que você selecione o estilo de rasterização do logotipo e escolha entre as subestilos disponíveis. Ele é especializado na geração de designs de logotipos com opções de estilização baseadas em raster, fornecendo diversos tratamentos visuais para a criação de logotipos.
+Este nó seleciona o estilo de logotipo raster e um subestilo opcional para gerar imagens de logotipo. Ele é especializado na criação de designs de logotipo com tratamentos visuais baseados em raster.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `substyle` | STRING | Sim | Múltiplas opções disponíveis | O subestilo específico de rasterização de logotipo a ser aplicado para a geração do logotipo |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
+| `substyle` | STRING | Sim | Múltiplas opções disponíveis | O subestilo raster de logotipo específico a ser aplicado para a geração do logotipo |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `output` | IMAGE | A imagem do logotipo gerada com o estilo de raster selecionado aplicado |
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `recraft_style` | CUSTOM | A configuração de estilo Recraft selecionada, incluindo o estilo raster de logotipo e o subestipo escolhido |
+
+---
+**Source fingerprint (SHA-256):** `cf4a7953e36ea824b4ddd00060174ede017d30640a70099b106b6de7f49fefbb`

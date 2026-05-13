@@ -1,18 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMPP_2M_SDE/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerDPMPP_2M_SDE/tr.md)
 
-SamplerDPMPP_2M_SDE düğümü, difüzyon modelleri için bir DPM++ 2M SDE örnekleyici oluşturur. Bu örnekleyici, örnekler oluşturmak için stokastik diferansiyel denklemlerle ikinci dereceden diferansiyel denklem çözücüleri kullanır. Örnekleme sürecini kontrol etmek için farklı çözücü türleri ve gürültü yönetimi seçenekleri sunar.
+SamplerDPMPP_2M_SDE düğümü, difüzyon modelleri için bir DPM++ 2M SDE örnekleyicisi oluşturur. Bu örnekleyici, örnekler üretmek için stokastik diferansiyel denklemlerle birlikte ikinci dereceden diferansiyel denklem çözücüleri kullanır. Örnekleme sürecini kontrol etmek için farklı çözücü türleri ve gürültü işleme seçenekleri sunar.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `çözücü_türü` | STRING | Evet | `"midpoint"`<br>`"heun"` | Örnekleme süreci için kullanılacak diferansiyel denklem çözücüsünün türü |
+| `solver_type` | STRING | Evet | `"midpoint"`<br>`"heun"` | Örnekleme sürecinde kullanılacak diferansiyel denklem çözücüsünün türü |
 | `eta` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sürecinin stokastikliğini kontrol eder (varsayılan: 1.0) |
-| `s_gürültü` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
-| `gürültü_cihazı` | STRING | Evet | `"gpu"`<br>`"cpu"` | Gürültü hesaplamalarının gerçekleştirildiği aygıt |
+| `s_noise` | FLOAT | Evet | 0.0 - 100.0 | Örnekleme sırasında eklenen gürültü miktarını kontrol eder (varsayılan: 1.0) |
+| `noise_device` | STRING | Evet | `"gpu"`<br>`"cpu"` | Gürültü hesaplamalarının yapıldığı cihaz. "cpu" olarak ayarlandığında, örnekleyici CPU tabanlı gürültü üretimi kullanır; "gpu" olarak ayarlandığında ise potansiyel olarak daha hızlı performans için GPU tabanlı gürültü üretimi kullanır |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `sampler` | SAMPLER | Örnekleme işlem hattında kullanıma hazır yapılandırılmış bir örnekleyici nesnesi |
+| `sampler` | SAMPLER | Örnekleme hattında kullanıma hazır, yapılandırılmış bir örnekleyici nesnesi |
+
+---
+**Source fingerprint (SHA-256):** `4a6a16e3494e8270f3707e172f252e7fc4e1b65efbecd3dd086b1a1edc5ba23a`

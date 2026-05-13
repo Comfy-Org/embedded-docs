@@ -1,17 +1,18 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/zh-TW.md)
 
-同步放大影像。使用「清晰放大」工具增強給定的點陣圖影像，提高影像解析度，使影像更清晰、更乾淨。
+同步放大圖片。使用「清晰放大」工具增強指定的點陣圖影像，提升影像解析度，使影像更清晰、更乾淨。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `圖片` | IMAGE | 是 | - | 要進行放大的輸入影像 |
-| `auth_token` | STRING | 否 | - | Recraft API 的驗證令牌 |
-| `comfy_api_key` | STRING | 否 | - | Comfy.org 服務的 API 金鑰 |
+| `image` | IMAGE | 是 | - | 要放大的輸入影像。接受一批影像。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `圖片` | IMAGE | 經過放大並增強解析度和清晰度的影像 |
+| `image` | IMAGE | 放大後的影像，具有增強的解析度和清晰度。若輸入為一批影像，則回傳一批影像。 |
+
+---
+**Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`

@@ -14,3 +14,6 @@ The Shuffle Dataset node takes a list of images and randomly changes their order
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `images` | IMAGE | The same list of images, but in a new, randomly shuffled order. |
+
+---
+**Source fingerprint (SHA-256):** `0b8442029995bdcedf1df0cb8d27d87aa529fb1021d911ed3016a6a7e788b246`

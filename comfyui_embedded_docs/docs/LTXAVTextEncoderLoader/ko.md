@@ -1,19 +1,24 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXAVTextEncoderLoader/ko.md)
 
-이 노드는 LTXV 오디오 모델을 위한 특수화된 텍스트 인코더를 불러옵니다. 특정 텍스트 인코더 파일과 체크포인트 파일을 결합하여 오디오 관련 텍스트 조건화 작업에 사용할 수 있는 CLIP 모델을 생성합니다.
+이 문서는 AI로 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXAVTextEncoderLoader/en.md)
+
+이 노드는 LTXV 오디오 모델용 특수 텍스트 인코더를 로드합니다. 특정 텍스트 인코더 파일과 체크포인트 파일을 결합하여 오디오 관련 텍스트 조건화 작업에 사용할 수 있는 CLIP 모델을 생성합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `text_encoder` | STRING | 예 | 여러 옵션 사용 가능 | 불러올 LTXV 텍스트 인코더 모델의 파일명입니다. 사용 가능한 옵션은 `text_encoders` 폴더에서 불러옵니다. |
-| `ckpt_name` | STRING | 예 | 여러 옵션 사용 가능 | 불러올 체크포인트의 파일명입니다. 사용 가능한 옵션은 `checkpoints` 폴더에서 불러옵니다. |
-| `device` | STRING | 아니요 | `"default"`<br>`"cpu"` | 모델을 불러올 장치를 지정합니다. CPU에 강제로 로드하려면 `"cpu"`를 사용하세요. 기본 동작(`"default"`)은 시스템의 자동 장치 배치를 사용합니다. |
+| `text_encoder` | STRING | 예 | 여러 옵션 사용 가능 | 로드할 LTXV 텍스트 인코더 모델의 파일 이름입니다. 사용 가능한 옵션은 `text_encoders` 폴더에서 불러옵니다. |
+| `ckpt_name` | STRING | 예 | 여러 옵션 사용 가능 | 로드할 체크포인트의 파일 이름입니다. 사용 가능한 옵션은 `checkpoints` 폴더에서 불러옵니다. |
+| `device` | STRING | 아니요 | `"default"`<br>`"cpu"` | 모델을 로드할 장치를 지정합니다. `"cpu"`를 사용하면 CPU에 강제로 로드됩니다. 기본 동작(`"default"`)은 시스템의 자동 장치 배치를 사용합니다. |
 
-**참고:** `text_encoder`와 `ckpt_name` 매개변수는 함께 작동합니다. 이 노드는 지정된 두 파일을 모두 불러와 단일 기능적 CLIP 모델을 생성합니다. 파일은 LTXV 아키텍처와 호환되어야 합니다.
+**참고:** `text_encoder`와 `ckpt_name` 매개변수는 함께 작동합니다. 이 노드는 지정된 두 파일을 모두 로드하여 단일하고 기능적인 CLIP 모델을 생성합니다. 파일은 LTXV 아키텍처와 호환되어야 합니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `clip` | CLIP | 불러온 LTXV CLIP 모델로, 오디오 생성을 위한 텍스트 프롬프트 인코딩에 사용할 준비가 되었습니다. |
+| `clip` | CLIP | 로드된 LTXV CLIP 모델로, 오디오 생성을 위한 텍스트 프롬프트 인코딩에 사용할 준비가 되었습니다. |
+
+---
+**Source fingerprint (SHA-256):** `c072a0b3393aa44333bb15ae42179c50868a4e9d7ca706d6c7da5922625373e6`

@@ -20,3 +20,6 @@ The CropByBBoxes node extracts and resizes specific rectangular regions from an 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | All cropped and resized regions, stacked into a single image batch. |
+
+---
+**Source fingerprint (SHA-256):** `9c0b3078405567911731c42e1873c57c77363e21ef6805769730667c811b0a0b`

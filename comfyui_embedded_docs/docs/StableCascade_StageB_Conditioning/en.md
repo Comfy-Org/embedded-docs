@@ -14,3 +14,6 @@ The StableCascade_StageB_Conditioning node prepares conditioning data for Stable
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | The modified conditioning data with Stage C prior information integrated |
+
+---
+**Source fingerprint (SHA-256):** `f6ee524889aa324151a91c200fdc2692754cbd1348e32fbc05a26fd7ba27c755`

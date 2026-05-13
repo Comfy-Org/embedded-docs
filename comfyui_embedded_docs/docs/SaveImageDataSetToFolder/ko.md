@@ -1,17 +1,22 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageDataSetToFolder/ko.md)
 
-이 노드는 이미지 목록을 ComfyUI 출력 디렉토리 내 지정된 폴더에 저장합니다. 여러 이미지를 입력으로 받아 사용자 정의 가능한 파일명 접두사를 사용하여 디스크에 기록합니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageDataSetToFolder/en.md)
+
+이 노드는 이미지 목록을 ComfyUI 출력 디렉터리 내의 지정된 폴더에 저장합니다. 여러 이미지를 입력으로 받아 사용자 정의 가능한 파일명 접두사를 사용하여 디스크에 기록합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
 | `images` | IMAGE | 예 | 해당 없음 | 저장할 이미지 목록입니다. |
-| `folder_name` | STRING | 아니요 | 해당 없음 | 이미지를 저장할 폴더 이름(출력 디렉토리 내부)입니다. 기본값은 "dataset"입니다. |
+| `folder_name` | STRING | 아니요 | 해당 없음 | 이미지를 저장할 폴더 이름입니다(출력 디렉터리 내). 기본값은 "dataset"입니다. |
 | `filename_prefix` | STRING | 아니요 | 해당 없음 | 저장된 이미지 파일명의 접두사입니다. 기본값은 "image"입니다. |
 
-**참고:** `images` 입력은 목록입니다. 즉, 여러 이미지를 한 번에 받아 처리할 수 있습니다. `folder_name`과 `filename_prefix` 매개변수는 스칼라 값입니다. 목록이 연결된 경우 해당 목록의 첫 번째 값만 사용됩니다.
+**참고:** `images` 입력은 목록이므로 여러 이미지를 한 번에 받아 처리할 수 있습니다. `folder_name`과 `filename_prefix` 매개변수는 스칼라 값입니다. 목록이 연결된 경우 해당 목록의 첫 번째 값만 사용됩니다.
 
 ## 출력
 
-이 노드는 출력을 가지지 않습니다. 파일 시스템에 저장 작업을 수행하는 출력 노드입니다.
+이 노드는 출력이 없습니다. 파일 시스템에 저장 작업을 수행하는 출력 노드입니다.
+
+---
+**Source fingerprint (SHA-256):** `65c7905caa8ff2811054bec2830c1359d0c441b5d93f50bc4d0bf10645046556`

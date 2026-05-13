@@ -1,0 +1,21 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDQuadmaskPreprocess/en.md)
+
+## Overview
+
+The VOIDQuadmaskPreprocess node prepares a mask for VOID inpainting by converting it into a special four-level "quadmask." It takes an input mask, optionally dilates the primary region, then quantizes the mask values into four distinct levels representing different semantic regions (primary object, overlap, affected area, and background). Finally, it inverts and normalizes the mask so the output values are in the range [0, 1], where 1.0 indicates the area to remove and 0.0 indicates the area to keep.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `mask` | MASK | Yes | N/A | The input mask to be preprocessed. |
+| `dilate_width` | INT | No | 0 to 50 (step: 1) | Dilation radius for the primary mask region. A value of 0 means no dilation is applied. (default: 0) |
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `quadmask` | MASK | The preprocessed quadmask with values in [0, 1], representing four discrete levels: 1.0 (primary object to remove), ~0.75 (overlap of primary and affected), ~0.50 (affected region), and 0.0 (background to keep). |
+
+---
+**Source fingerprint (SHA-256):** `12dc5ab215b80d81289942457ce2ddffcb9ec41fc738a53ca5fbf1e9181ed439`

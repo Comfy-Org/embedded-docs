@@ -1,17 +1,17 @@
-Ce nœud détectera les modèles situés dans le dossier `ComfyUI/models/upscale_models`,
-et lira également les modèles des chemins supplémentaires que vous avez configurés dans le fichier extra_model_paths.yaml.
-Parfois, vous devrez **rafraîchir l'interface ComfyUI** pour qu'elle puisse lire les fichiers de modèle dans le dossier correspondant.
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UpscaleModelLoader/fr.md)
 
-Le nœud UpscaleModelLoader est conçu pour charger des modèles d'agrandissement à partir d'un répertoire spécifié. Il facilite la récupération et la préparation des modèles d'agrandissement pour les tâches d'agrandissement d'image, garantissant que les modèles sont correctement chargés et configurés pour l'évaluation.
+Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/upscale_models`, et il lira également les modèles à partir de chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
+
+Le nœud UpscaleModelLoader est conçu pour charger des modèles de suréchantillonnage à partir d'un répertoire spécifié. Il facilite la récupération et la préparation des modèles de suréchantillonnage pour les tâches d'agrandissement d'image, garantissant que les modèles sont correctement chargés et configurés pour l'évaluation.
 
 ## Entrées
 
-| Champ          | Comfy dtype       | Description                                                                       |
+| Champ          | Type Comfy         | Description                                                                       |
 |----------------|-------------------|-----------------------------------------------------------------------------------|
-| `nom_du_modèle`   | `COMBO[STRING]`    | Spécifie le nom du modèle d'agrandissement à charger, identifiant et récupérant le fichier de modèle correct dans le répertoire des modèles d'agrandissement. |
+| `model_name`   | `COMBO[STRING]`    | Spécifie le nom du modèle de suréchantillonnage à charger, identifiant et récupérant le fichier de modèle correct depuis le répertoire des modèles de suréchantillonnage. |
 
 ## Sorties
 
-| Champ            | Comfy dtype         | Description                                                              |
+| Champ            | Type Comfy         | Description                                                              |
 |-------------------|---------------------|--------------------------------------------------------------------------|
-| `upscale_model`  | `UPSCALE_MODEL`     | Retourne le modèle d'agrandissement chargé et préparé, prêt à être utilisé dans les tâches d'agrandissement d'image. |
+| `upscale_model`  | `UPSCALE_MODEL`     | Renvoie le modèle de suréchantillonnage chargé et préparé, prêt à être utilisé dans les tâches d'agrandissement d'image. |

@@ -6,11 +6,14 @@ The SamplerEulerAncestral node creates an Euler Ancestral sampler for generating
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `eta` | FLOAT | Yes | 0.0 - 100.0 | Controls the step size and stochasticity of the sampling process (default: 1.0) |
-| `s_noise` | FLOAT | Yes | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0) |
+| `eta` | FLOAT | No | 0.0 - 100.0 | Controls the step size and stochasticity of the sampling process (default: 1.0). This is an advanced parameter. |
+| `s_noise` | FLOAT | No | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0). This is an advanced parameter. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `sampler` | SAMPLER | Returns a configured Euler Ancestral sampler that can be used in the sampling pipeline |
+| `sampler` | SAMPLER | Returns a configured Euler Ancestral sampler that can be used in the sampling pipeline. |
+
+---
+**Source fingerprint (SHA-256):** `4d167de55f003383ccbb4a53daa14496bd931589781d56b62bf282a811669670`

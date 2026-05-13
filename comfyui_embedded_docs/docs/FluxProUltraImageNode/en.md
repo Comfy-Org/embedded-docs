@@ -14,10 +14,13 @@ Generates images using Flux Pro 1.1 Ultra via API based on prompt and resolution
 | `image_prompt` | IMAGE | No | - | Optional reference image to guide generation |
 | `image_prompt_strength` | FLOAT | No | 0.0 to 1.0 | Blend between the prompt and the image prompt. (default: 0.1) |
 
-**Note:** The `aspect_ratio` parameter must be between 1:4 and 4:1. When `image_prompt` is provided, `image_prompt_strength` becomes active and controls how much the reference image influences the final output.
+**Note:** The `aspect_ratio` parameter must be between 1:4 and 4:1. When `image_prompt` is provided, `image_prompt_strength` becomes active and controls how much the reference image influences the final output. If `image_prompt` is not provided, the `prompt` parameter is validated to ensure it is not empty.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output_image` | IMAGE | The generated image from Flux Pro 1.1 Ultra |
+
+---
+**Source fingerprint (SHA-256):** `8632aeb76e9007d65d7f3fd51465fe78f56ba92264ef65ce505db2fc95cfd25b`

@@ -14,3 +14,6 @@ The Differential Diffusion node modifies the denoising process by applying a bin
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified diffusion model with updated denoise mask function |
+
+---
+**Source fingerprint (SHA-256):** `3b1727baa6c546516f5dfb53e6e39f27fc7429cde2ac7fd7dfbab99eebb39816`

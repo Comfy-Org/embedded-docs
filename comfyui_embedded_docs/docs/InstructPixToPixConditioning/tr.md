@@ -1,22 +1,25 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/tr.md)
 
-InstructPixToPixConditioning düğümü, pozitif ve negatif metin prompt'larını görüntü verileriyle birleştirerek InstructPix2Pix görüntü düzenleme için conditioning verilerini hazırlar. Girdi görüntülerini bir VAE kodlayıcı üzerinden işleyerek latent temsiller oluşturur ve bu latent'leri hem pozitif hem de negatif conditioning verilerine ekler. Düğüm, VAE kodlama işlemiyle uyumluluk sağlamak için görüntü boyutlarını otomatik olarak 8 pikselin katlarına kırparak işler.
+InstructPixToPixConditioning düğümü, pozitif ve negatif metin yönlendirmelerini görüntü verileriyle birleştirerek InstructPix2Pix görüntü düzenlemesi için koşullandırma verilerini hazırlar. Giriş görüntülerini bir VAE kodlayıcı aracılığıyla işleyerek gizli temsiller oluşturur ve bu gizli temsilleri hem pozitif hem de negatif koşullandırma verilerine ekler. Düğüm, VAE kodlama süreciyle uyumluluk için görüntü boyutlarını 8 pikselin katlarına kırparak otomatik olarak işler.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `pozitif` | CONDITIONING | Evet | - | İstenen görüntü özellikleri için metin prompt'ları ve ayarları içeren pozitif conditioning verisi |
-| `negatif` | CONDITIONING | Evet | - | İstenmeyen görüntü özellikleri için metin prompt'ları ve ayarları içeren negatif conditioning verisi |
-| `vae` | VAE | Evet | - | Girdi görüntülerini latent temsillere kodlamak için kullanılan VAE modeli |
-| `pikseller` | IMAGE | Evet | - | İşlenecek ve latent uzaya kodlanacak girdi görüntüsü |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+|-----------|-----------|---------|--------|----------|
+| `positive` | CONDITIONING | Evet | - | İstenen görüntü özellikleri için metin yönlendirmeleri ve ayarları içeren pozitif koşullandırma verileri |
+| `negative` | CONDITIONING | Evet | - | İstenmeyen görüntü özellikleri için metin yönlendirmeleri ve ayarları içeren negatif koşullandırma verileri |
+| `vae` | VAE | Evet | - | Giriş görüntülerini gizli temsillere kodlamak için kullanılan VAE modeli |
+| `pixels` | IMAGE | Evet | - | İşlenecek ve gizli uzaya kodlanacak giriş görüntüsü |
 
-**Not:** Girdi görüntüsünün boyutları, VAE kodlama işlemiyle uyumluluğu sağlamak için hem genişlik hem de yükseklikte otomatik olarak en yakın 8 piksel katına kırparak ayarlanır.
+**Not:** Giriş görüntüsü boyutları, VAE kodlama süreciyle uyumluluğu sağlamak için genişlik ve yükseklikte en yakın 8 piksel katına kırpılarak otomatik olarak ayarlanır.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `negatif` | CONDITIONING | Ekli latent görüntü temsili içeren pozitif conditioning verisi |
-| `gizli` | CONDITIONING | Ekli latent görüntü temsili içeren negatif conditioning verisi |
-| `latent` | LATENT | Kodlanmış görüntüyle aynı boyutlara sahip boş latent tensör |
+|-----------|-----------|----------|
+| `positive` | CONDITIONING | Eklenmiş gizli görüntü temsili ile pozitif koşullandırma verileri |
+| `negative` | CONDITIONING | Eklenmiş gizli görüntü temsili ile negatif koşullandırma verileri |
+| `latent` | LATENT | Kodlanmış görüntü ile aynı boyutlara sahip boş gizli tensör |
+
+---
+**Source fingerprint (SHA-256):** `4b2383c9d64efdb558758359bf544fc5a1be65c12b23b54152e2df79a6dd8d79`

@@ -16,3 +16,6 @@ The TextEncodeHunyuanVideo_ImageToVideo node creates conditioning data for video
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | The conditioning data that combines text and image information for video generation |
+
+---
+**Source fingerprint (SHA-256):** `ee748bd1fb1733593eb4cb1187c5cc279171163cfbc389f039378d0e366fc231`

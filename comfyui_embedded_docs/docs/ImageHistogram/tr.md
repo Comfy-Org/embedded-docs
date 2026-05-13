@@ -17,3 +17,6 @@ ImageHistogram düğümü, bir giriş görüntüsünün renk dağılımını ana
 | `red` | HISTOGRAM | Kırmızı renk kanalındaki piksel yoğunluklarının dağılımını gösteren bir histogram. |
 | `green` | HISTOGRAM | Yeşil renk kanalındaki piksel yoğunluklarının dağılımını gösteren bir histogram. |
 | `blue` | HISTOGRAM | Mavi renk kanalındaki piksel yoğunluklarının dağılımını gösteren bir histogram. |
+
+---
+**Source fingerprint (SHA-256):** `9bfcdb2907ab1e5cb2a9a736671fb9286b0e6ce6439fab95187f691b969ea53d`

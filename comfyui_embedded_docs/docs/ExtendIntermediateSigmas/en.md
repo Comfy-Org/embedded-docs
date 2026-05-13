@@ -7,10 +7,10 @@ The ExtendIntermediateSigmas node takes an existing sequence of sigma values and
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `sigmas` | SIGMAS | Yes | - | The input sigma sequence to extend with intermediate values |
-| `steps` | INT | Yes | 1-100 | Number of intermediate steps to insert between existing sigmas (default: 2) |
+| `steps` | INT | Yes | 1 to 100 | Number of intermediate steps to insert between existing sigmas (default: 2) |
 | `start_at_sigma` | FLOAT | Yes | -1.0 to 20000.0 | Upper sigma boundary for extension - only extend sigmas below this value (default: -1.0, which means infinity) |
 | `end_at_sigma` | FLOAT | Yes | 0.0 to 20000.0 | Lower sigma boundary for extension - only extend sigmas above this value (default: 12.0) |
-| `spacing` | COMBO | Yes | "linear"<br>"cosine"<br>"sine" | The interpolation method for spacing the intermediate sigma values |
+| `spacing` | COMBO | Yes | `"linear"`<br>`"cosine"`<br>`"sine"` | The interpolation method for spacing the intermediate sigma values (default: "linear") |
 
 **Note:** The node only inserts intermediate sigmas between existing sigma pairs where both the current sigma is less than or equal to `start_at_sigma` and greater than or equal to `end_at_sigma`. When `start_at_sigma` is set to -1.0, it's treated as infinity, meaning only the `end_at_sigma` lower boundary applies.
 
@@ -19,3 +19,6 @@ The ExtendIntermediateSigmas node takes an existing sequence of sigma values and
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sigmas` | SIGMAS | The extended sigma sequence with additional intermediate values inserted |
+
+---
+**Source fingerprint (SHA-256):** `f51ed433fc38365334ff8e4072174dc04982a8a00770d07f544320a6863577c4`

@@ -1,22 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/tr.md)
 
-Bu düğüm, bir görüntü ve bir kontrol net modeline dayanarak koşullandırma verilerine gelişmiş kontrol net dönüşümleri uygular. Kontrol net'in üretilen içerik üzerindeki etkisinin ince ayarlı düzenlemelerine olanak tanıyarak, koşullandırmada daha hassas ve çeşitli değişiklikler yapılmasını sağlar.
+Bu düğüm, bir görüntü ve bir kontrol ağı modeline dayanarak koşullandırma verilerine gelişmiş kontrol ağı dönüşümleri uygular. Kontrol ağının oluşturulan içerik üzerindeki etkisinin ince ayarlı şekilde ayarlanmasına olanak tanıyarak, koşullandırmada daha hassas ve çeşitli değişiklikler yapılmasını sağlar.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `pozitif` | `CONDITIONING` | Kontrol net dönüşümlerinin uygulanacağı pozitif koşullandırma verisi. Üretilen içerikte geliştirilecek veya korunacak istenen nitelikleri veya özellikleri temsil eder. |
-| `negatif` | `CONDITIONING` | Üretilen içerikten azaltılacak veya kaldırılacak nitelikleri veya özellikleri temsil eden negatif koşullandırma verisi. İçeriğin özelliklerinin dengeli bir şekilde ayarlanmasına olanak tanımak için kontrol net dönüşümleri bu veriye de uygulanır. |
-| `kontrol_ağı` | `CONTROL_NET` | Kontrol net modeli, koşullandırma verilerine yapılacak belirli ayarlamaları ve iyileştirmeleri tanımlamak için çok önemlidir. Referans görüntüyü ve güç parametrelerini yorumlayarak dönüşümler uygular ve hem pozitif hem de negatif koşullandırma verilerindeki nitelikleri değiştirerek nihai çıktıyı önemli ölçüde etkiler. |
-| `görüntü` | `IMAGE` | Kontrol net dönüşümleri için referans olarak hizmet eden görüntü. Belirli özelliklerin geliştirilmesine veya bastırılmasına rehberlik ederek, kontrol net'in koşullandırma verilerine yaptığı ayarlamaları etkiler. |
-| `güç` | `FLOAT` | Kontrol net'in koşullandırma verileri üzerindeki etki yoğunluğunu belirleyen bir skaler değer. Daha yüksek değerler, daha belirgin ayarlamalara yol açar. |
-| `başlangıç_yüzdesi` | `FLOAT` | Kontrol net etkisinin başlangıç yüzdesi. Bu, dönüşümlerin belirli bir aralıkta kademeli olarak uygulanmasına olanak tanır. |
-| `bitiş_yüzdesi` | `FLOAT` | Kontrol net etkisinin bitiş yüzdesi. Dönüşümlerin uygulandığı aralığı tanımlar. Bu, ayarlama süreci üzerinde daha nüanslı bir kontrol sağlar. |
+| `positive` | `CONDITIONING` | Kontrol ağı dönüşümlerinin uygulanacağı pozitif koşullandırma verileri. Oluşturulan içerikte geliştirilmesi veya korunması istenen öznitelikleri veya özellikleri temsil eder. |
+| `negative` | `CONDITIONING` | Oluşturulan içerikten azaltılması veya çıkarılması istenen öznitelikleri veya özellikleri temsil eden negatif koşullandırma verileri. Kontrol ağı dönüşümleri bu verilere de uygulanarak içerik özelliklerinin dengeli bir şekilde ayarlanmasına olanak tanır. |
+| `control_net` | `CONTROL_NET` | Kontrol ağı modeli, koşullandırma verilerine yapılacak belirli ayarlamaları ve iyileştirmeleri tanımlamak için çok önemlidir. Referans görüntüyü ve güç parametrelerini yorumlayarak dönüşümler uygular ve hem pozitif hem de negatif koşullandırma verilerindeki öznitelikleri değiştirerek nihai çıktıyı önemli ölçüde etkiler. |
+| `image` | `IMAGE` | Kontrol ağı dönüşümleri için referans görevi gören görüntü. Kontrol ağının koşullandırma verilerine yaptığı ayarlamaları etkileyerek belirli özelliklerin geliştirilmesine veya bastırılmasına rehberlik eder. |
+| `strength` | `FLOAT` | Kontrol ağının koşullandırma verileri üzerindeki etkisinin yoğunluğunu belirleyen skaler bir değer. Daha yüksek değerler daha belirgin ayarlamalarla sonuçlanır. |
+| `start_percent` | `FLOAT` | Kontrol ağı etkisinin başlangıç yüzdesi, dönüşümlerin belirli bir aralıkta kademeli olarak uygulanmasına olanak tanır. |
+| `end_percent` | `FLOAT` | Kontrol ağı etkisinin bitiş yüzdesi, dönüşümlerin uygulandığı aralığı tanımlar. Bu, ayarlama süreci üzerinde daha incelikli bir kontrol sağlar. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `negatif` | `CONDITIONING` | Kontrol net dönüşümleri uygulandıktan sonra değiştirilmiş pozitif koşullandırma verisi. Girdi parametrelerine dayalı olarak yapılan iyileştirmeleri yansıtır. |
-| `negatif` | `CONDITIONING` | Kontrol net dönüşümleri uygulandıktan sonra değiştirilmiş negatif koşullandırma verisi. Girdi parametrelerine dayalı olarak belirli özelliklerin bastırılmasını veya kaldırılmasını yansıtır. |
+| `positive` | `CONDITIONING` | Kontrol ağı dönüşümlerinin uygulanmasından sonra, giriş parametrelerine göre yapılan iyileştirmeleri yansıtan değiştirilmiş pozitif koşullandırma verileri. |
+| `negative` | `CONDITIONING` | Kontrol ağı dönüşümlerinin uygulanmasından sonra, giriş parametrelerine göre belirli özelliklerin bastırılmasını veya kaldırılmasını yansıtan değiştirilmiş negatif koşullandırma verileri. |

@@ -4,14 +4,17 @@ The AudioMerge node combines two audio tracks by overlaying their waveforms. It 
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `audio1` | AUDIO | required | - | - | First audio input to merge |
-| `audio2` | AUDIO | required | - | - | Second audio input to merge |
-| `merge_method` | COMBO | required | - | ["add", "mean", "subtract", "multiply"] | The method used to combine the audio waveforms. |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `audio1` | AUDIO | Yes | - | First audio input to merge |
+| `audio2` | AUDIO | Yes | - | Second audio input to merge |
+| `merge_method` | COMBO | Yes | `"add"`<br>`"mean"`<br>`"subtract"`<br>`"multiply"` | The method used to combine the audio waveforms. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `AUDIO` | AUDIO | The merged audio output containing the combined waveform and sample rate |
+
+---
+**Source fingerprint (SHA-256):** `2a4a7da42835efd03cc67002e617a70c0514524a0ac0ed61d57e499c1283be95`

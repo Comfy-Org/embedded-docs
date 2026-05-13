@@ -1,18 +1,21 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackToMask/es.md)
 
-# Resumen
+# Descripción General
 
 Selecciona objetos rastreados específicos de una sesión de seguimiento SAM3 mediante sus números de índice y los combina en una única máscara de salida. Esto permite elegir qué objetos conservar y cuáles ignorar de los resultados del seguimiento.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `track_data` | SAM3TRACKDATA | Sí | N/A | Los datos de seguimiento provenientes de un nodo rastreador SAM3, que contienen las máscaras empaquetadas y el tamaño de imagen original. |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `track_data` | SAM3TRACKDATA | Sí | N/A | Datos de seguimiento provenientes de un nodo rastreador SAM3, que contienen las máscaras empaquetadas y el tamaño original de la imagen. |
 | `object_indices` | STRING | No | Cualquier lista de enteros separados por comas | Índices de objetos separados por comas para incluir en la máscara de salida (ej. '0,2,3'). Si se deja vacío, se incluyen todos los objetos rastreados. |
 
 ## Salidas
 
-| Nombre de salida | Tipo de dato | Descripción |
-|-------------|-----------|-------------|
-| `masks` | MASK | Una única máscara binaria para cada fotograma, donde los objetos seleccionados se combinan en una sola máscara. Si no se selecciona ningún objeto o no existen datos de seguimiento, devuelve una máscara de ceros. |
+| Nombre de Salida | Tipo de Dato | Descripción |
+|------------------|--------------|-------------|
+| `masks` | MASK | Una única máscara binaria por cada fotograma, donde los objetos seleccionados se combinan en una sola máscara. Si no se selecciona ningún objeto o no existen datos de seguimiento, devuelve una máscara de ceros. |
+
+---
+**Source fingerprint (SHA-256):** `2da82effc4cdc6655d0d37e281858bf33f7b62d9056629ec810e3ff9b2e7b5a6`

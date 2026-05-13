@@ -1,22 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage/zh-TW.md)
 
-GeminiImage 節點能從 Google 的 Gemini AI 模型生成文字和圖片回應。它允許您提供包含文字提示、圖片和檔案的多模態輸入，以創建連貫的文字和圖片輸出。此節點負責與最新 Gemini 模型的所有 API 通訊和回應解析。
+# GeminiImage 節點
 
-## 輸入參數
+GeminiImage 節點可從 Google 的 Gemini AI 模型生成文字和圖像回應。它允許您提供多模態輸入，包括文字提示、圖像和檔案，以建立連貫的文字和圖像輸出。此節點處理與最新 Gemini 模型的所有 API 通訊和回應解析。
 
-| 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 說明 |
 |-----------|-----------|------------|---------|-------|-------------|
-| `prompt` | STRING | 必填 | "" | - | 用於生成內容的文字提示 |
-| `model` | COMBO | 必填 | gemini_2_5_flash_image_preview | 可用的 Gemini 模型<br>選項從 GeminiImageModel 枚舉中提取 | 用於生成回應的 Gemini 模型。 |
-| `seed` | INT | 必填 | 42 | 0 至 18446744073709551615 | 當種子固定為特定值時，模型會盡力為重複請求提供相同的回應。不保證輸出具有確定性。此外，即使使用相同的種子值，更改模型或參數設定（例如溫度）也可能導致回應發生變化。預設情況下，會使用隨機種子值。 |
-| `images` | IMAGE | 選填 | None | - | 可選的圖片，用作模型的上下文。要包含多張圖片，您可以使用 Batch Images 節點。 |
-| `files` | GEMINI_INPUT_FILES | 選填 | None | - | 可選的檔案，用作模型的上下文。接受來自 Gemini Generate Content Input Files 節點的輸入。 |
+| `prompt` | STRING | 必要 | "" | - | 用於生成的文字提示 |
+| `model` | COMBO | 必要 | gemini_2_5_flash_image_preview | `gemini_2_5_flash_image_preview`<br>`gemini_2_5_pro_exp_03_25`<br>`gemini_2_0_flash_exp_image_generation` | 用於生成回應的 Gemini 模型。 |
+| `seed` | INT | 必要 | 42 | 0 到 18446744073709551615 | 當種子值固定為特定數值時，模型會盡最大努力為重複請求提供相同的回應。不保證輸出具有確定性。此外，即使使用相同的種子值，更改模型或參數設定（如溫度）也可能導致回應產生變化。預設情況下，會使用隨機種子值。 |
+| `images` | IMAGE | 可選 | None | - | 可選的圖像，用作模型的上下文。若要包含多個圖像，可以使用批次圖像節點。 |
+| `files` | GEMINI_INPUT_FILES | 可選 | None | - | 可選的檔案，用作模型的上下文。接受來自 Gemini 生成內容輸入檔案節點的輸入。 |
 
-**注意：** 此節點包含由系統自動處理且無需使用者輸入的隱藏參數（`auth_token`、`comfy_api_key`、`unique_id`）。
+**注意：** 此節點包含隱藏參數（`auth_token`、`comfy_api_key`、`unique_id`），這些參數由系統自動處理，無需使用者輸入。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | 從 Gemini 模型生成的圖片回應 |
-| `STRING` | STRING | 從 Gemini 模型生成的文字回應 |
+| `IMAGE` | IMAGE | 來自 Gemini 模型的生成圖像回應 |
+| `STRING` | STRING | 來自 Gemini 模型的生成文字回應 |
+
+---
+**Source fingerprint (SHA-256):** `bf55ec4f5a869a6bc5a15366f55f86ad25f9498c14056acc80951d3637bf08f2`

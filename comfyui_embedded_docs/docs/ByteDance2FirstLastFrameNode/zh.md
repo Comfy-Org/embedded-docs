@@ -1,17 +1,17 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2FirstLastFrameNode/zh.md)
 
-此节点使用字节跳动的 Seedance 2.0 模型来生成视频。它基于文本提示和必需的首帧图像创建视频。您可以选择性地提供尾帧图像来引导视频序列的结尾。
+此节点使用字节跳动的 Seedance 2.0 模型生成视频。它基于文本提示和必需的首帧图像创建视频。您还可以选择提供末帧图像来引导视频序列的结尾。
 
-## 输入参数
+## 输入
 
-| 参数名 | 数据类型 | 必填 | 取值范围 | 描述 |
+| 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 用于视频生成的模型。Seedance 2.0 用于最高质量，而 Seedance 2.0 Fast 则针对速度进行了优化。选择一个模型将显示 `prompt`、`resolution`、`ratio`、`duration` 和 `generate_audio` 的额外输入项。 |
-| `first_frame` | IMAGE | 否 | - | 用作视频第一帧的图像。 |
-| `last_frame` | IMAGE | 否 | - | 用作视频最后一帧的图像。 |
-| `first_frame_asset_id` | STRING | 否 | - | 用作第一帧的 Seedance asset_id。此参数不能与 `first_frame` 图像输入同时使用。默认为空字符串。 |
-| `last_frame_asset_id` | STRING | 否 | - | 用作最后一帧的 Seedance asset_id。此参数不能与 `last_frame` 图像输入同时使用。默认为空字符串。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 种子值。更改此种子将导致节点重新运行，但结果是非确定性的。默认值为 0。 |
+| `model` | COMBO | 是 | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | 用于视频生成的模型。Seedance 2.0 提供最高质量，而 Seedance 2.0 Fast 则针对速度进行了优化。选择模型后，将显示 `prompt`、`resolution`、`ratio`、`duration` 和 `generate_audio` 的额外输入项。 |
+| `first_frame` | IMAGE | 否 | - | 用作视频首帧的图像。 |
+| `last_frame` | IMAGE | 否 | - | 用作视频末帧的图像。 |
+| `first_frame_asset_id` | STRING | 否 | - | 用作首帧的 Seedance asset_id。此参数不能与 `first_frame` 图像输入同时使用。默认为空字符串。 |
+| `last_frame_asset_id` | STRING | 否 | - | 用作末帧的 Seedance asset_id。此参数不能与 `last_frame` 图像输入同时使用。默认为空字符串。 |
+| `seed` | INT | 否 | 0 到 2147483647 | 种子值。更改此种子将导致节点重新运行，但结果是非确定性的。默认为 0。 |
 | `watermark` | BOOLEAN | 否 | - | 是否为生成的视频添加水印。默认为 False。 |
 
 **参数约束：**
@@ -19,8 +19,11 @@
 *   您不能为同一帧同时提供 `last_frame` 图像和 `last_frame_asset_id`。
 *   `model` 输入是一个动态组合框。选择模型后，您还必须填写显示的 `prompt` 字段（文本描述）并配置其他显示的参数（`resolution`、`ratio`、`duration`、`generate_audio`）。
 
-## 输出参数
+## 输出
 
 | 输出名称 | 数据类型 | 描述 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成的视频。 |
+
+---
+**Source fingerprint (SHA-256):** `2c9c1fe8fddd0c3e1c356d2b93a06a07f83db8f7a0380e94629a91ce1ff1e29a`

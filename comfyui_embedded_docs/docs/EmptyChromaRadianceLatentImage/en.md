@@ -15,3 +15,6 @@ The EmptyChromaRadianceLatentImage node creates a blank latent image with specif
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `samples` | LATENT | The generated empty latent image tensor with specified dimensions |
+
+---
+**Source fingerprint (SHA-256):** `f2bc90a236f91e0161142f5242647d15adc8a10c57c920d2eb97e87040ac99d4`

@@ -14,3 +14,6 @@ This node sets the guiding latent for an edit model. It takes conditioning data 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | CONDITIONING | The modified conditioning data containing reference latent information |
+
+---
+**Source fingerprint (SHA-256):** `d233778cfa7d6f057509f93f8445a0bbf151308e430fc50e28577f48cf136b53`

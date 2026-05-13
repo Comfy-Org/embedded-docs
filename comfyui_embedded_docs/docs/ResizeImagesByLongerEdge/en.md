@@ -7,10 +7,13 @@ The Resize Images by Longer Edge node resizes one or more images so that their l
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image or batch of images to be resized. |
-| `longer_edge` | INT | No | 1 - 8192 | Target length for the longer edge. The shorter edge will be scaled proportionally. (default: 1024) |
+| `longer_edge` | INT | Yes | 1 - 8192 | Target length for the longer edge. The shorter edge will be scaled proportionally. (default: 1024) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The resized image or batch of images. The output will have the same number of images as the input, with each one's longer edge matching the specified `longer_edge` length. |
+
+---
+**Source fingerprint (SHA-256):** `687d5f159967eccbf64f0ec529ae6edeb94f4707ae10a3c75a5d0b08c86dd828`

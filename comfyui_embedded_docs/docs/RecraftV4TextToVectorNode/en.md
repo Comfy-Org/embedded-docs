@@ -21,3 +21,6 @@ The Recraft V4 Text to Vector node generates Scalable Vector Graphics (SVG) illu
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | SVG | The generated Scalable Vector Graphics (SVG) image(s). |
+
+---
+**Source fingerprint (SHA-256):** `ffab67555923cea29b50ae71e3ffaad13340aead4d01973a70244468fae4420d`

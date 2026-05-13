@@ -4,14 +4,17 @@ O nó Seletor de Resolução calcula a largura e altura em pixels de uma imagem 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
 | `aspect_ratio` | COMBO | Sim | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | A proporção de aspecto para as dimensões de saída (padrão: `"SQUARE"`). |
 | `megapixels` | FLOAT | Sim | 0.1 - 16.0 | Total de megapixels alvo. 1,0 MP ≈ 1024×1024 para uma proporção de aspecto quadrada (padrão: 1,0). |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
+| Nome da Saída | Tipo de Dados | Descrição |
+|---------------|---------------|-----------|
 | `width` | INT | A largura calculada em pixels, que é um múltiplo de 8. |
 | `height` | INT | A altura calculada em pixels, que é um múltiplo de 8. |
+
+---
+**Source fingerprint (SHA-256):** `221d38fa72c9989e06b706d33fd3e0dc4caa0f741dd2931864c58a6bd7f52613`

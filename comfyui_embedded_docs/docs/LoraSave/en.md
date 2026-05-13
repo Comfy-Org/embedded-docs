@@ -8,7 +8,7 @@ The LoraSave node extracts and saves LoRA (Low-Rank Adaptation) files from model
 |-----------|-----------|----------|-------|-------------|
 | `filename_prefix` | STRING | Yes | - | The prefix for the output filename (default: "loras/ComfyUI_extracted_lora") |
 | `rank` | INT | Yes | 1-4096 | The rank value for the LoRA, controlling the size and complexity (default: 8) |
-| `lora_type` | COMBO | Yes | Multiple options available | The type of LoRA to create, with various available options |
+| `lora_type` | COMBO | Yes | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | The type of LoRA to create (default: "standard") |
 | `bias_diff` | BOOLEAN | Yes | - | Whether to include bias differences in the LoRA calculation (default: True) |
 | `model_diff` | MODEL | No | - | The ModelSubtract output to be converted to a lora |
 | `text_encoder_diff` | CLIP | No | - | The CLIPSubtract output to be converted to a lora |
@@ -20,3 +20,6 @@ The LoraSave node extracts and saves LoRA (Low-Rank Adaptation) files from model
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | - | - | This node saves a LoRA file to the output directory but does not return any data through the workflow |
+
+---
+**Source fingerprint (SHA-256):** `fdf020915ee233cf68250dcdcf87e7862d13ccc4fa73d8da8245727fdac46015`

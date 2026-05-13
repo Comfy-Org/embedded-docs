@@ -1,28 +1,28 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningAverage/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningAverage/tr.md)
 
-`ConditioningAverage` düğümü, iki farklı koşullandırma kümesini (metin istemleri gibi) belirli bir ağırlığa göre harmanlayarak, ikisi arasında yer alan yeni bir koşullandırma vektörü oluşturmak için kullanılır. Ağırlık parametresini ayarlayarak, her bir koşullandırmanın nihai sonuç üzerindeki etkisini esnek bir şekilde kontrol edebilirsiniz. Bu özellikle, istem enterpolasyonu, stil füzyonu ve diğer gelişmiş kullanım senaryoları için uygundur.
+`ConditioningAverage` düğümü, belirtilen bir ağırlığa göre iki farklı koşullandırma kümesini (metin istemleri gibi) harmanlamak ve ikisi arasında kalan yeni bir koşullandırma vektörü oluşturmak için kullanılır. Ağırlık parametresini ayarlayarak, her bir koşullandırmanın nihai sonuç üzerindeki etkisini esnek bir şekilde kontrol edebilirsiniz. Bu, özellikle istem enterpolasyonu, stil füzyonu ve diğer ileri düzey kullanım durumları için uygundur.
 
-Aşağıda gösterildiği gibi, `conditioning_to` parametresinin gücünü ayarlayarak, iki koşullandırma arasında bir sonuç elde edebilirsiniz.
+Aşağıda gösterildiği gibi, `conditioning_to` gücünü ayarlayarak iki koşullandırma arasında bir sonuç elde edebilirsiniz.
 
-![örnek](./asset/example.webp)
+![example](./asset/example.webp)
 
-## Girdiler
+## Girişler
 
-| Parametre               | Comfy Veri Türü | Açıklama |
+| Parametre               | Comfy dtype    | Açıklama |
 |------------------------|---------------|-------------|
-| `hedef_koşullandırma`      | `CONDITIONING`| Ağırlıklı ortalamanın ana temeli olarak hizmet eden hedef koşullandırma vektörü. |
-| `kaynak_koşullandırma`    | `CONDITIONING`| Belirli bir ağırlığa göre hedefe harmanlanacak olan kaynak koşullandırma vektörü. |
-| `hedef_koşullandırma_gücü` | `FLOAT`    | Hedef koşullandırmanın gücü, aralık 0.0-1.0, varsayılan 1.0, adım 0.01. |
+| `conditioning_to`      | `CONDITIONING`| Ağırlıklı ortalama için ana temel görevi gören hedef koşullandırma vektörü. |
+| `conditioning_from`    | `CONDITIONING`| Belirli bir ağırlığa göre hedefe harmanlanacak kaynak koşullandırma vektörü. |
+| `conditioning_to_strength` | `FLOAT`    | Hedef koşullandırmanın gücü, aralık 0.0-1.0, varsayılan 1.0, adım 0.01. |
 
-## Çıktılar
+## Çıkışlar
 
-| Parametre        | Comfy Veri Türü | Açıklama |
+| Parametre        | Comfy dtype    | Açıklama |
 |------------------|---------------|-------------|
 | `conditioning`   | `CONDITIONING`| Harmanlama sonrasında elde edilen, ağırlıklı ortalamayı yansıtan koşullandırma vektörü. |
 
-## Tipik Kullanım Senaryoları
+## Tipik Kullanım Durumları
 
-- **İstem Enterpolasyonu:** İki farklı metin istemi arasında sorunsuz geçiş yaparak, ara stil veya anlambilime sahip içerik oluşturun.
-- **Stil Füzyonu:** Farklı sanatsal stilleri veya anlamsal koşulları birleştirerek yeni efektler yaratın.
-- **Güç Ayarlama:** Ağırlığı ayarlayarak belirli bir koşullandırmanın sonuç üzerindeki etkisini hassas bir şekilde kontrol edin.
-- **Yaratıcı Keşif:** Farklı istemleri karıştırarak çeşitli üretken efektleri keşfedin.
+- **İstem Enterpolasyonu:** İki farklı metin istemi arasında yumuşak geçiş yaparak ara stilde veya anlamsal içerikte çıktılar üretir.
+- **Stil Füzyonu:** Farklı sanatsal stilleri veya anlamsal koşulları birleştirerek yeni efektler oluşturur.
+- **Güç Ayarı:** Ağırlığı ayarlayarak belirli bir koşullandırmanın sonuç üzerindeki etkisini hassas bir şekilde kontrol eder.
+- **Yaratıcı Keşif:** Farklı istemleri karıştırarak çeşitli üretken efektleri keşfeder.

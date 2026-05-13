@@ -1,24 +1,31 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Veo3FirstLastFrameNode/ja.md)
 
-Veo3FirstLastFrameNodeは、GoogleのVeo 3モデルを使用して動画を生成します。テキストプロンプトに基づいて動画を作成し、提供された最初と最後のフレームを使用してシーケンスの開始と終了をガイドします。
+このドキュメントはAIによって生成されました。誤りや改善のご提案がございましたら、ぜひご協力ください！[GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Veo3FirstLastFrameNode/en.md)
+
+Veo3FirstLastFrameNodeは、GoogleのVeo 3モデルを使用して、テキストプロンプトに基づき、動画シーケンスの開始と終了を定義する最初と最後のフレームを指定して動画を生成します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | はい | N/A | 動画のテキストによる説明（デフォルト：空文字列）。 |
-| `negative_prompt` | STRING | いいえ | N/A | 動画内で避けるべき内容をガイドするネガティブなテキストプロンプト（デフォルト：空文字列）。 |
-| `resolution` | COMBO | はい | `"720p"`<br>`"1080p"` | 出力動画の解像度。 |
+| `negative_prompt` | STRING | いいえ | N/A | 動画で避けるべき内容を指示するネガティブテキストプロンプト（デフォルト：空文字列）。 |
+| `resolution` | COMBO | はい | `"720p"`<br>`"1080p"`<br>`"4k"` | 出力動画の解像度。 |
 | `aspect_ratio` | COMBO | いいえ | `"16:9"`<br>`"9:16"` | 出力動画のアスペクト比（デフォルト："16:9"）。 |
-| `duration` | INT | いいえ | 4 から 8 | 出力動画の長さ（秒単位）（デフォルト：8）。 |
-| `seed` | INT | いいえ | 0 から 4294967295 | 動画生成のためのシード値（デフォルト：0）。 |
+| `duration` | INT | いいえ | 4 ～ 8 | 出力動画の長さ（秒単位）（デフォルト：8）。 |
+| `seed` | INT | いいえ | 0 ～ 4294967295 | 動画生成のためのシード値（デフォルト：0）。 |
 | `first_frame` | IMAGE | はい | N/A | 動画の開始フレーム。 |
 | `last_frame` | IMAGE | はい | N/A | 動画の終了フレーム。 |
-| `model` | COMBO | いいえ | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"` | 生成に使用する特定のVeo 3モデル（デフォルト："veo-3.1-fast-generate"）。 |
-| `generate_audio` | BOOLEAN | いいえ | N/A | 動画の音声を生成するかどうか（デフォルト：True）。 |
+| `model` | COMBO | いいえ | `"veo-3.1-generate"`<br>`"veo-3.1-fast-generate"`<br>`"veo-3.1-lite"` | 生成に使用する特定のVeo 3モデル（デフォルト："veo-3.1-generate"）。 |
+| `generate_audio` | BOOLEAN | いいえ | N/A | 動画のオーディオを生成するかどうか（デフォルト：True）。 |
+
+**注記:** `veo-3.1-lite`モデルは4K解像度をサポートしていません。`veo-3.1-lite`と`4k`解像度を選択すると、エラーが発生します。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成された動画ファイル。 |
+
+---
+**Source fingerprint (SHA-256):** `b486b22e71a305172700760bb3eff256b0e571bba75e68f27e23a1e1a1319b5a`

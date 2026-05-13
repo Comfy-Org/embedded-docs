@@ -1,21 +1,26 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/zh-TW.md)
 
-SD_4XUpscale_Conditioning 節點用於為使用擴散模型的圖像放大過程準備條件數據。它接收輸入圖像和條件數據，然後應用縮放和噪聲增強來創建經過修改的條件數據，以指導放大過程。該節點輸出正向和負向條件數據，以及放大尺寸的潛在表示。
+## 概述
 
-## 輸入參數
+SD_4XUpscale_Conditioning 節點用於準備使用擴散模型進行影像放大時的條件資料。它接收輸入影像與條件資料，然後套用縮放與雜訊增強，建立修改後的條件資料，以引導放大過程。此節點會輸出正向與負向條件資料，以及對應放大尺寸的潛在表示。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 是 | - | 需要進行放大的輸入圖像 |
-| `正向` | CONDITIONING | 是 | - | 正向條件數據，用於引導生成過程朝向期望的內容 |
-| `負向` | CONDITIONING | 是 | - | 負向條件數據，用於使生成過程遠離不需要的內容 |
-| `縮放比例` | FLOAT | 否 | 0.0 - 10.0 | 應用於輸入圖像的縮放比例係數（預設值：4.0） |
-| `雜訊增強` | FLOAT | 否 | 0.0 - 1.0 | 在放大過程中添加的噪聲量（預設值：0.0） |
+| `images` | IMAGE | 是 | - | 要放大的輸入影像 |
+| `positive` | CONDITIONING | 是 | - | 引導生成朝向期望內容的正向條件資料 |
+| `negative` | CONDITIONING | 是 | - | 引導生成遠離不必要內容的負向條件資料 |
+| `scale_ratio` | FLOAT | 否 | 0.0 - 10.0 | 套用於輸入影像的縮放倍率（預設值：4.0） |
+| `noise_augmentation` | FLOAT | 否 | 0.0 - 1.0 | 在放大過程中添加的雜訊量（預設值：0.0） |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `負向` | CONDITIONING | 應用放大資訊後的修改正向條件數據 |
-| `潛在空間` | CONDITIONING | 應用放大資訊後的修改負向條件數據 |
-| `latent` | LATENT | 符合放大尺寸的空潛在表示 |
+| `positive` | CONDITIONING | 已套用放大資訊的修改後正向條件資料 |
+| `negative` | CONDITIONING | 已套用放大資訊的修改後負向條件資料 |
+| `latent` | LATENT | 對應放大尺寸的空潛在表示 |
+
+---
+**Source fingerprint (SHA-256):** `ede1ea8f5a95e7f9e52070b5132a4ed3e87f92230d14a74b9d713f547c74d785`

@@ -4,13 +4,17 @@ Este nó gera ativos 3D usando a API Rodin. Ele recebe imagens de entrada e as c
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Sim | - | Imagens de entrada a serem convertidas em modelos 3D |
-| `Seed` | INT | Não | 0-65535 | Valor de semente aleatória para a geração (padrão: 0) |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
+| `Images` | IMAGE | Sim | - | Imagens de entrada a serem convertidas em modelos 3D. Várias imagens podem ser fornecidas. |
+| `Seed` | INT | Não | 0-65535 | Valor de semente aleatória para geração (padrão: 0). Defina como 0 para semente aleatória. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
-| `3D Model Path` | STRING | Caminho do arquivo para o modelo 3D gerado |
+|---------------|--------------|-----------|
+| `3D Model Path` | STRING | Caminho do arquivo para o modelo 3D gerado (apenas para compatibilidade com versões anteriores) |
+| `GLB` | FILE3DGLB | O modelo 3D gerado no formato GLB |
+
+---
+**Source fingerprint (SHA-256):** `d3bc71e6a44c11cbeff25351d561e99a7f09ed8ce3544d2968a873b6796512da`

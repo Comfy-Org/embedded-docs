@@ -14,8 +14,8 @@ This node uses the Magnific AI service to upscale and creatively enhance an imag
 | `hdr` | INT | No | -10 to 10 | The level of definition and detail (default: 0). |
 | `resemblance` | INT | No | -10 to 10 | The level of resemblance to the original image (default: 0). |
 | `fractality` | INT | No | -10 to 10 | The strength of the prompt and intricacy per square pixel (default: 0). |
-| `engine` | COMBO | Yes | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | The specific AI engine to use for processing. |
-| `auto_downscale` | BOOLEAN | No | - | When enabled, the node will automatically downscale the input image if the requested upscale would exceed the maximum allowed output size of 25.3 megapixels (default: False). |
+| `engine` | COMBO | Yes | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | The specific AI engine to use for processing. This is an advanced parameter. |
+| `auto_downscale` | BOOLEAN | No | - | When enabled, the node will automatically downscale the input image if the requested upscale would exceed the maximum allowed output size of 25.3 megapixels. This is an advanced parameter (default: False). |
 
 **Constraints:**
 
@@ -29,3 +29,6 @@ This node uses the Magnific AI service to upscale and creatively enhance an imag
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The creatively enhanced and upscaled output image. |
+
+---
+**Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

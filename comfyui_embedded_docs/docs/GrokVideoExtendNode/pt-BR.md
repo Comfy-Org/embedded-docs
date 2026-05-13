@@ -4,20 +4,23 @@ O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeit
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
-|-----------|--------------|-------------|-----------|-----------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `prompt` | STRING | Sim | N/A | Descrição textual do que deve acontecer em seguida no vídeo. |
 | `video` | VIDEO | Sim | N/A | Vídeo de origem a ser estendido. Formato MP4, de 2 a 15 segundos. |
-| `model` | COMBO | Sim | `"grok-imagine-video"` | O modelo a ser usado para extensão de vídeo. Quando selecionado, revela um parâmetro `duration`. |
-| `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos, independentemente da semente (padrão: 0). |
+| `model` | COMBO | Sim | `"grok-imagine-video"` | O modelo a ser usado para extensão de vídeo. Quando selecionado, revela um parâmetro `duration` aninhado. |
+| `seed` | INT | Não | 0 a 2147483647 | Semente para determinar se o nó deve ser executado novamente; os resultados reais são não determinísticos independentemente da semente (padrão: 0). |
 
 **Restrições dos Parâmetros:**
 *   A entrada `video` deve ser um arquivo MP4 com duração entre 2 e 15 segundos e não pode exceder 50 MB de tamanho.
 *   O `prompt` deve conter pelo menos um caractere (espaços em branco são removidos).
-*   O parâmetro `model` é uma combinação dinâmica. Selecionar a opção "grok-imagine-video" revela um parâmetro `duration` aninhado, que controla a duração da extensão em segundos (padrão: 8, intervalo: 2 a 10).
+*   O parâmetro `model` é uma combinação dinâmica. Selecionar a opção "grok-imagine-video" revela um parâmetro `duration` aninhado, que controla a duração da extensão em segundos (padrão: 8, faixa: 2 a 10).
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `output` | VIDEO | A extensão de vídeo recém-gerada. |
+
+---
+**Source fingerprint (SHA-256):** `a33383be0eb6857538a75e1b901ee58df0153dfeaf95a7ee19933d651b745b5f`

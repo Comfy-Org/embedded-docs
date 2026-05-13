@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaStrength/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaStrength/tr.md)
 
-Bu düğüm, belirli bir koşullandırma setinin güç özelliğini değiştirmek için tasarlanmış olup, üretim süreci üzerindeki koşullandırmanın etkisinin veya yoğunluğunun ayarlanmasına olanak tanır.
+Bu düğüm, belirli bir koşullandırma kümesinin güç özelliğini değiştirmek, böylece koşullandırmanın üretim süreci üzerindeki etkisini veya yoğunluğunu ayarlamak için tasarlanmıştır.
 
-## Girdiler
-
-| Parametre | Veri Türü | Açıklama |
-|-----------|-------------|-------------|
-| `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma seti; üretim sürecini etkileyen mevcut koşullandırma durumunu temsil eder. |
-| `güç` | `FLOAT` | Koşullandırma setine uygulanacak güç değeri; koşullandırmanın etki yoğunluğunu belirler. |
-
-## Çıktılar
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `CONDITIONING` | CONDITIONING | Her bir öğe için güncellenmiş güç değerlerine sahip, değiştirilmiş koşullandırma seti. |
+| `CONDITIONING` | CONDITIONING | Değiştirilecek koşullandırma kümesi; üretim sürecini etkileyen mevcut koşullandırma durumunu temsil eder. |
+| `strength` | `FLOAT` | Koşullandırma kümesine uygulanacak güç değeri; etkisinin yoğunluğunu belirler. |
+
+## Çıkışlar
+
+| Parametre | Veri Türü | Açıklama |
+|-----------|-------------|-------------|
+| `CONDITIONING` | CONDITIONING | Her bir öğe için güncellenmiş güç değerlerine sahip değiştirilmiş koşullandırma kümesi. |

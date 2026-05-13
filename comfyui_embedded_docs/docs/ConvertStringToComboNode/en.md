@@ -13,3 +13,6 @@ The Convert String to Combo node takes a text string as input and converts it in
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | COMBO | The input string, now formatted as a Combo data type. |
+
+---
+**Source fingerprint (SHA-256):** `37bd7db5a5ce2657db30a3a24da90c1c1e5c4a3f7089b4d03a0528b7770e9fe1`

@@ -21,3 +21,6 @@ The ViduExtendVideoNode generates additional frames to extend the length of an e
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The newly generated video file containing the extended footage. |
+
+---
+**Source fingerprint (SHA-256):** `44b942413c8aed2fc0049386a31c441f6f870ba4220b0c439dfc436079229446`

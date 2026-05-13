@@ -1,30 +1,40 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/zh-TW.md)
 
-此節點使用 Kling AI 模型來生成影片。它需要一張起始圖片和一段文字提示。您可以選擇性地提供一張結束圖片或最多六張參考圖片，以引導影片的內容和風格。該節點處理這些輸入，以創建指定時長和解析度的影片。
+此節點使用最新的 Kling AI 模型，從起始幀、可選的結束幀或參考影像生成影片。它可以建立單一影片，或包含多個片段（每個片段有獨立提示詞和時長）的多鏡頭分鏡腳本。此節點處理這些輸入，以產生指定長度和解析度的影片，並可選擇生成音訊。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | 是 | `"kling-video-o1"` | 用於影片生成的特定 Kling AI 模型。 |
-| `prompt` | STRING | 是 | - | 描述影片內容的文字提示。可以包含正面和負面的描述。 |
-| `duration` | INT | 是 | 3 到 10 | 生成影片的期望長度，單位為秒（預設值：5）。 |
-| `first_frame` | IMAGE | 是 | - | 影片序列的起始圖片。 |
-| `end_frame` | IMAGE | 否 | - | 影片的可選結束畫面。此參數不能與 `reference_images` 同時使用。 |
-| `reference_images` | IMAGE | 否 | - | 最多 6 張額外的參考圖片。 |
-| `resolution` | COMBO | 否 | `"1080p"`<br>`"720p"` | 生成影片的輸出解析度（預設值："1080p"）。 |
+| `model_name` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用於影片生成的特定 Kling AI 模型。 |
+| `prompt` | STRING | 是 | - | 描述影片內容的文字提示詞。可包含正面和負面描述。啟用分鏡腳本時忽略此項。 |
+| `duration` | INT | 是 | 3 至 15 | 生成影片的所需長度，單位為秒（預設值：5）。 |
+| `first_frame` | IMAGE | 是 | - | 影片序列的起始影像。 |
+| `end_frame` | IMAGE | 否 | - | 可選的影片結束幀。不能與 `reference_images` 同時使用。不適用於分鏡腳本。 |
+| `reference_images` | IMAGE | 否 | - | 最多 6 張額外的參考影像。 |
+| `resolution` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 生成影片的輸出解析度（預設值："1080p"）。 |
+| `storyboards` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列具有獨立提示詞和時長的影片片段。僅 `kling-v3-omni` 模型支援。啟用時，每個分鏡腳本都需要輸入提示詞和時長。 |
+| `generate_audio` | BOOLEAN | 否 | True / False | 為影片生成音訊（預設值：False）。僅 `kling-v3-omni` 模型支援。 |
+| `seed` | INT | 否 | 0 至 2147483647 | 種子控制節點是否應重新執行；無論種子為何，結果皆非確定性（預設值：0）。 |
 
 **重要限制：**
 
 * `end_frame` 輸入不能與 `reference_images` 輸入同時使用。
-* 如果您沒有提供 `end_frame` 或任何 `reference_images`，則 `duration` 只能設定為 5 或 10 秒。
-* 所有輸入圖片（`first_frame`、`end_frame` 以及任何 `reference_images`）的寬度和高度都必須至少為 300 像素。
-* 所有輸入圖片的長寬比必須在 1:2.5 到 2.5:1 之間。
-* 透過 `reference_images` 輸入最多可提供 6 張圖片。
-* `prompt` 文字的長度必須在 1 到 2500 個字元之間。
+* `end_frame` 輸入不能與分鏡腳本同時使用。
+* `kling-video-o1` 模型不支援超過 10 秒的時長、音訊生成、4k 解析度或分鏡腳本。
+* 如果您未提供 `end_frame` 或任何 `reference_images`，且使用 `kling-video-o1` 模型，則 `duration` 只能設定為 5 或 10 秒。
+* 所有輸入影像（`first_frame`、`end_frame` 及任何 `reference_images`）的寬度和高度最小尺寸必須為 300 像素。
+* 所有輸入影像的長寬比必須在 1:2.5 至 2.5:1 之間。
+* 透過 `reference_images` 輸入最多可提供 6 張影像。
+* `prompt` 文字長度必須在 1 到 2500 個字元之間（啟用分鏡腳本時允許 0 個字元）。
+* 啟用分鏡腳本時，所有分鏡片段時長的總和必須等於全域 `duration` 值。
+* 每個分鏡腳本提示詞的長度必須在 1 到 512 個字元之間。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成的影片檔案。 |
+
+---
+**Source fingerprint (SHA-256):** `bd0fb11242b7f79062079b1aa48c3524abf59ecf06a90f013e57b6910cd8e224`

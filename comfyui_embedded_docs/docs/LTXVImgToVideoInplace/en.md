@@ -19,3 +19,6 @@ The LTXVImgToVideoInplace node conditions a video latent representation by encod
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `latent` | LATENT | The modified latent video representation. It contains the updated samples and a `noise_mask` that applies the conditioning strength to the initial frames. |
+
+---
+**Source fingerprint (SHA-256):** `49df511591071f51e2b86f2302cfb438d18b5e1ade7ef228345f65fddf88dbcc`

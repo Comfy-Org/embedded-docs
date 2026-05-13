@@ -1,18 +1,23 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/ja.md)
 
-StableCascade_SuperResolutionControlnetノードは、Stable Cascadeの超解像処理のための入力を準備します。入力画像を受け取り、VAEを使用してエンコードし、コントロールネットの入力を作成すると同時に、Stable CascadeパイプラインのステージCとステージBのプレースホルダー潜在表現を生成します。
+このドキュメントはAI生成です。誤りや改善のご提案がございましたら、ぜひご協力ください！[GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/en.md)
+
+StableCascade_SuperResolutionControlnet ノードは、Stable Cascade の超解像処理用の入力を準備します。入力画像を受け取り、VAE を使用してエンコードすることで controlnet 入力を生成すると同時に、Stable Cascade パイプラインのステージ C およびステージ B 用のプレースホルダー潜在表現を作成します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `画像` | IMAGE | はい | - | 超解像処理のために処理される入力画像 |
-| `vae` | VAE | はい | - | 入力画像のエンコードに使用されるVAEモデル |
+| `image` | IMAGE | はい | - | 超解像処理を行う入力画像 |
+| `vae` | VAE | はい | - | 入力画像のエンコードに使用する VAE モデル |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `ステージC` | IMAGE | コントロールネット入力に適したエンコードされた画像表現 |
-| `ステージB` | LATENT | Stable Cascade処理のステージC用のプレースホルダー潜在表現 |
-| `stage_b` | LATENT | Stable Cascade処理のステージB用のプレースホルダー潜在表現 |
+| `controlnet_input` | IMAGE | controlnet 入力に適したエンコード済み画像表現 |
+| `stage_c` | LATENT | Stable Cascade 処理のステージ C 用プレースホルダー潜在表現 |
+| `stage_b` | LATENT | Stable Cascade 処理のステージ B 用プレースホルダー潜在表現 |
+
+---
+**Source fingerprint (SHA-256):** `78b6e5a02c48ac37a205ef9d8532a3aca19134de4ec7be98b2ee55969dab7b53`

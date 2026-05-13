@@ -4,11 +4,11 @@
 
 | Parâmetro | Tipo de Dados | Descrição |
 |----------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Dados de condicionamento de entrada, tipicamente provenientes de etapas anteriores de codificação ou processamento |
-| `guidance` | FLOAT | Controla a influência dos prompts de texto na geração da imagem, com faixa ajustável de 0.0 a 100.0 |
+| `conditioning` | CONDITIONING | Dados de condicionamento de entrada, normalmente provenientes de etapas anteriores de codificação ou processamento |
+| `guidance` | FLOAT | Controla a influência dos prompts de texto na geração de imagens, com faixa ajustável de 0,0 a 100,0 |
 
 ## Saídas
 
 | Parâmetro | Tipo de Dados | Descrição |
 |----------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | Dados de condicionamento atualizados, contendo o novo valor de `guidance` |
+| CONDITIONING | CONDITIONING | Dados de condicionamento atualizados, contendo o novo valor de guidance |

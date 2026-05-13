@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudio/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudio/zh-TW.md)
 
-VAEDecodeAudio 節點使用變分自編碼器將潛在表示轉換回音訊波形。它接收編碼後的音訊樣本，並透過 VAE 進行處理以重建原始音訊，同時應用標準化處理以確保輸出音量的一致性。生成的音訊將以 44100 Hz 的標準取樣率返回。
+## 概述
 
-## 輸入參數
+VAEDecodeAudio 節點使用變分自編碼器（Variational Autoencoder）將潛在空間表示轉換回音訊波形。它接收編碼後的音訊樣本，透過 VAE 進行處理以重建原始音訊，並應用歸一化來確保一致的輸出電平。最終輸出的音訊採用 44100 Hz 的標準取樣率。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | 是 | - | 位於潛在空間中的編碼音訊樣本，將被解碼回音訊波形 |
+| `samples` | LATENT | 是 | - | 潛在空間中的編碼音訊樣本，將被解碼回音訊波形 |
 | `vae` | VAE | 是 | - | 用於將潛在樣本解碼為音訊的變分自編碼器模型 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `AUDIO` | AUDIO | 經過音量標準化處理且取樣率為 44100 Hz 的解碼音訊波形 |
+| `AUDIO` | AUDIO | 解碼後的音訊波形，具有歸一化音量及 44100 Hz 取樣率 |
+
+---
+**Source fingerprint (SHA-256):** `15848d3763324cbae986949146d57352c68369713cd99a27d216797560836824`

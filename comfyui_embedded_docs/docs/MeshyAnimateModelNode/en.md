@@ -16,3 +16,6 @@ This node applies a specific animation to a 3D character model that has already 
 | `model_file` | STRING | A string identifier for the animated model. This output is provided for backward compatibility only. |
 | `GLB` | FILE3DGLB | The animated 3D model file in GLB format. |
 | `FBX` | FILE3DFBX | The animated 3D model file in FBX format. |
+
+---
+**Source fingerprint (SHA-256):** `3b7610b5f6f763dde86a52f9212b3fc98f41e54bda30097fcb8f5f0bd020899e`

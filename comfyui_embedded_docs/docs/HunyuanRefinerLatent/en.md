@@ -18,3 +18,6 @@ The HunyuanRefinerLatent node processes conditioning and latent inputs for refin
 | `positive` | CONDITIONING | The processed positive conditioning with applied noise augmentation and latent image concatenation |
 | `negative` | CONDITIONING | The processed negative conditioning with applied noise augmentation and latent image concatenation |
 | `latent` | LATENT | A new latent output with dimensions [batch_size, 32, height, width, channels] |
+
+---
+**Source fingerprint (SHA-256):** `f097b58f1948e5c0801f81b51a5189619695a6afa189368aff4c64b126fc5ce5`

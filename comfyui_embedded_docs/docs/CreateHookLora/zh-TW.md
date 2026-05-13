@@ -1,23 +1,28 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/zh-TW.md)
 
-Create Hook LoRA 節點會生成掛鉤物件，用於對模型應用 LoRA（低秩適應）修改。它會載入指定的 LoRA 檔案並建立可調整模型和 CLIP 強度的掛鉤，然後將這些掛鉤與傳遞給它的任何現有掛鉤合併。該節點透過快取先前載入的 LoRA 檔案來有效管理 LoRA 載入，避免重複操作。
+## 概述
 
-## 輸入參數
+Create Hook LoRA 節點用於生成鉤子物件，以便對模型套用 LoRA（低秩適應）修改。它會載入指定的 LoRA 檔案，建立可調整模型和 CLIP 強度的鉤子，然後將這些鉤子與傳入的任何現有鉤子合併。此節點透過快取先前載入的 LoRA 檔案來有效管理 LoRA 載入，避免重複操作。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `lora_name` | STRING | 是 | 提供多個選項 | 要從 loras 目錄載入的 LoRA 檔案名稱 |
-| `strength_model` | FLOAT | 是 | -20.0 至 20.0 | 模型調整的強度乘數（預設值：1.0） |
-| `strength_clip` | FLOAT | 是 | -20.0 至 20.0 | CLIP 調整的強度乘數（預設值：1.0） |
-| `prev_hooks` | HOOKS | 否 | 不適用 | 可選的現有掛鉤群組，將與新的 LoRA 掛鉤合併 |
+| `strength_model` | FLOAT | 是 | -20.0 至 20.0 | 模型調整的強度倍數（預設值：1.0） |
+| `strength_clip` | FLOAT | 是 | -20.0 至 20.0 | CLIP 調整的強度倍數（預設值：1.0） |
+| `prev_hooks` | HOOKS | 否 | 不適用 | 可選的現有鉤子群組，用於與新的 LoRA 鉤子合併 |
 
-**參數限制條件：**
+**參數限制：**
 
-- 如果 `strength_model` 和 `strength_clip` 都設定為 0，節點將跳過建立新的 LoRA 掛鉤並直接回傳未變更的現有掛鉤
-- 節點會快取最後載入的 LoRA 檔案，以便在重複使用相同 LoRA 時優化效能
+- 如果 `strength_model` 和 `strength_clip` 都設為 0，節點將跳過建立新的 LoRA 鉤子，並直接回傳未修改的現有鉤子
+- 節點會快取最後載入的 LoRA 檔案，以在重複使用相同 LoRA 時最佳化效能
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `HOOKS` | HOOKS | 包含合併後的 LoRA 掛鉤及任何先前掛鉤的掛鉤群組 |
+| `HOOKS` | HOOKS | 包含合併後的 LoRA 鉤子以及任何先前鉤子的鉤子群組 |
+
+---
+**Source fingerprint (SHA-256):** `42d5d776bfc9b239191952e2bce23513d183f904fc3c15039469381a547486f8`

@@ -6,7 +6,7 @@ This node uses the Kling AI model to generate a new video based on an input vide
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | Yes | `"kling-video-o1"` | The specific Kling model to use for video generation. |
+| `model_name` | COMBO | Yes | `"kling-v3-omni"`<br>`"kling-video-o1"` | The specific Kling model to use for video generation (default: "kling-v3-omni"). |
 | `prompt` | STRING | Yes | N/A | A text prompt describing the video content. This can include both positive and negative descriptions. |
 | `aspect_ratio` | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"1:1"` | The desired aspect ratio for the generated video. |
 | `duration` | INT | Yes | 3 to 10 | The length of the generated video in seconds (default: 3). |
@@ -14,6 +14,7 @@ This node uses the Kling AI model to generate a new video based on an input vide
 | `keep_original_sound` | BOOLEAN | Yes | N/A | Determines if the audio from the reference video is kept in the output (default: True). |
 | `reference_images` | IMAGE | No | N/A | Up to 4 additional reference images. |
 | `resolution` | COMBO | No | `"1080p"`<br>`"720p"` | The resolution for the generated video (default: "1080p"). |
+| `seed` | INT | No | 0 to 2147483647 | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). |
 
 **Parameter Constraints:**
 
@@ -27,3 +28,6 @@ This node uses the Kling AI model to generate a new video based on an input vide
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The newly generated video. |
+
+---
+**Source fingerprint (SHA-256):** `1bed976530603bcf7db67048e89ad6adac218fba8597744f8ece3e16a2ee4993`

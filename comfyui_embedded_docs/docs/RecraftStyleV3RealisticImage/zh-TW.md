@@ -1,15 +1,18 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/zh-TW.md)
 
-此節點為 Recraft API 建立逼真影像風格配置。它允許您選擇 realistic_image 風格，並從多種子風格選項中選擇以自訂輸出外觀。
+此節點用於建立風格配置，以使用 Recraft 的 API 生成逼真影像。它選取 `realistic_image` 風格，並讓您選擇一個可選的子風格來微調輸出外觀。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `子風格` | STRING | 是 | 提供多個選項 | 要應用於 realistic_image 風格的特定子風格。如果設定為 "None"，則不會應用任何子風格。 |
+| `substyle` | STRING | 是 | 多個選項可用（由 Recraft API 決定） | 要套用至 realistic_image 風格的特定子風格。若設為 "None"，則不套用任何子風格。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `recraft_style` | STYLEV3 | 返回包含 realistic_image 風格和所選子風格設定的 Recraft 風格配置物件。 |
+| `recraft_style` | STYLEV3 | 一個 Recraft 風格配置物件，包含 `realistic_image` 風格與所選的子風格設定。此輸出可連接至其他接受風格輸入的 Recraft 節點。 |
+
+---
+**Source fingerprint (SHA-256):** `23eafae0a00f1806052a6583db791a5c1fd418ea940ed6463824dffe843ed0d7`

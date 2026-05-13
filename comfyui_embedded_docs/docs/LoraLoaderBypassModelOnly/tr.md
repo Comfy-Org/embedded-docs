@@ -1,17 +1,20 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderBypassModelOnly/tr.md)
 
-Bu düğüm, bir modelin davranışını değiştirmek için LoRA (Düşük Dereceli Uyarlama) uygular, ancak yalnızca model bileşenini etkiler. Belirtilen bir LoRA dosyasını yükler ve modelin ağırlıklarını belirli bir güç değeriyle ayarlar; CLIP metin kodlayıcı gibi diğer bileşenleri değiştirmeden bırakır.
+Bu düğüm, bir modelin davranışını değiştirmek için bir LoRA (Düşük Dereceli Uyarlama) uygular, ancak yalnızca model bileşeninin kendisini etkiler. Belirtilen bir LoRA dosyasını yükler ve modelin ağırlıklarını belirli bir güçle ayarlar; CLIP metin kodlayıcı gibi diğer bileşenleri değiştirmez.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
+|-----------|-----------|----------|--------|----------|
 | `model` | MODEL | Evet | - | LoRA ayarlamalarının uygulanacağı temel model. |
-| `lora_name` | STRING | Evet | (Kullanılabilir LoRA dosyalarının listesi) | Yüklenecek ve uygulanacak LoRA dosyasının adı. Seçenekler `loras` dizinindeki dosyalardan doldurulur. |
-| `strength_model` | FLOAT | Evet | -100.0 ile 100.0 | LoRA'nın model ağırlıkları üzerindeki etki gücü. Pozitif bir değer LoRA'yı uygular, negatif bir değer tersini uygular ve 0 değeri hiçbir etki yaratmaz (varsayılan: 1.0). |
+| `lora_name` | STRING | Evet | (Mevcut LoRA dosyalarının listesi) | Yüklenecek ve uygulanacak LoRA dosyasının adı. Seçenekler, `loras` dizinindeki dosyalardan doldurulur. |
+| `strength_model` | FLOAT | Evet | -100,0 ila 100,0 | LoRA'nın model ağırlıkları üzerindeki etkisinin gücü. Pozitif bir değer LoRA'yı uygular, negatif bir değer tersini uygular ve 0 değerinin hiçbir etkisi yoktur (varsayılan: 1,0). |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `model` | MODEL | Ağırlıklarına LoRA ayarlamaları uygulanmış, değiştirilmiş model. |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `model` | MODEL | Ağırlıklarına LoRA ayarlamaları uygulanmış değiştirilmiş model. |
+
+---
+**Source fingerprint (SHA-256):** `e0e1ad2d6481a1b9771d7eae833ffab0737a967d4af6e57b946d1b2223fe45bf`

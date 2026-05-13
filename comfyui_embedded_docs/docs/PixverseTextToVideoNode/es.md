@@ -1,24 +1,55 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTextToVideoNode/es.md)
 
-Genera videos basados en el prompt y el tamaño de salida. Este nodo crea contenido de video utilizando descripciones de texto y varios parámetros de generación, produciendo salida de video a través de la API de PixVerse.
+Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
+
+## Reglas de Traducción
+
+1. **Contenido que NO debe traducirse:**
+   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
+   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
+   - Valores en columna Range: números, "auto", nombres de opciones
+   - Código, rutas de archivos
+
+2. **Contenido que SÍ debe traducirse:**
+   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
+   - Todo el texto descriptivo y explicativo
+   - Descripciones de parámetros
+
+3. **Calidad de traducción:**
+   - Usar español estándar y neutral
+   - Mantener tono profesional pero accesible
+   - Asegurar precisión técnica
+   - Usar terminología técnica estándar en español
+
+4. **Formato:**
+   - Mantener todo el formato Markdown
+   - Preservar estructura de tablas
+   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
+
+Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
+
+Genera videos basados en un prompt de texto y varios parámetros de generación. Este nodo crea contenido de video utilizando la API de PixVerse, permitiendo controlar la relación de aspecto, calidad, duración, estilo de movimiento y más.
 
 ## Entradas
 
-| Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Sí | - | Prompt para la generación del video (por defecto: "") |
-| `relación_de_aspecto` | COMBO | Sí | Opciones de PixverseAspectRatio | Relación de aspecto para el video generado |
-| `calidad` | COMBO | Sí | Opciones de PixverseQuality | Configuración de calidad de video (por defecto: PixverseQuality.res_540p) |
-| `duración_segundos` | COMBO | Sí | Opciones de PixverseDuration | Duración del video generado en segundos |
-| `modo_de_movimiento` | COMBO | Sí | Opciones de PixverseMotionMode | Estilo de movimiento para la generación del video |
-| `semilla` | INT | Sí | 0 a 2147483647 | Semilla para la generación de video (por defecto: 0) |
-| `prompt_negativo` | STRING | No | - | Una descripción de texto opcional de elementos no deseados en una imagen (por defecto: "") |
-| `plantilla_pixverse` | CUSTOM | No | - | Una plantilla opcional para influir en el estilo de generación, creada por el nodo PixVerse Template |
+| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
+|-----------|--------------|-----------|-------|-------------|
+| `prompt` | STRING | Sí | - | Prompt para la generación del video (predeterminado: "") |
+| `aspect_ratio` | COMBO | Sí | Opciones de PixverseAspectRatio | Relación de aspecto para el video generado |
+| `quality` | COMBO | Sí | Opciones de PixverseQuality | Configuración de calidad del video (predeterminado: PixverseQuality.res_540p) |
+| `duration_seconds` | COMBO | Sí | Opciones de PixverseDuration | Duración del video generado en segundos |
+| `motion_mode` | COMBO | Sí | Opciones de PixverseMotionMode | Estilo de movimiento para la generación del video |
+| `seed` | INT | Sí | 0 a 2147483647 | Semilla para la generación del video (predeterminado: 0) |
+| `negative_prompt` | STRING | No | - | Una descripción textual opcional de elementos no deseados en una imagen (predeterminado: "") |
+| `pixverse_template` | CUSTOM | No | - | Una plantilla opcional para influir en el estilo de generación, creada por el nodo PixVerse Template |
 
 **Nota:** Al usar calidad 1080p, el modo de movimiento se establece automáticamente en normal y la duración se limita a 5 segundos. Para duraciones distintas a 5 segundos, el modo de movimiento también se establece automáticamente en normal.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Datos | Descripción |
-|-------------|-----------|-------------|
+| Nombre de Salida | Tipo de Dato | Descripción |
+|------------------|--------------|-------------|
 | `output` | VIDEO | El archivo de video generado |
+
+---
+**Source fingerprint (SHA-256):** `ab9264668f48533cb139abfb322e9a6e425a2ad7280da103a7fe0a7704158762`

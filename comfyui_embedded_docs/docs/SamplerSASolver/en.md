@@ -7,17 +7,20 @@ The SamplerSASolver node implements a custom sampling algorithm for diffusion mo
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Yes | - | The diffusion model to use for sampling |
-| `eta` | FLOAT | Yes | 0.0 - 10.0 | Controls the step size scaling factor (default: 1.0) |
-| `sde_start_percent` | FLOAT | Yes | 0.0 - 1.0 | The starting percentage for SDE sampling (default: 0.2) |
-| `sde_end_percent` | FLOAT | Yes | 0.0 - 1.0 | The ending percentage for SDE sampling (default: 0.8) |
-| `s_noise` | FLOAT | Yes | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0) |
-| `predictor_order` | INT | Yes | 1 - 6 | The order of the predictor component in the solver (default: 3) |
-| `corrector_order` | INT | Yes | 0 - 6 | The order of the corrector component in the solver (default: 4) |
-| `use_pece` | BOOLEAN | Yes | - | Enables or disables the PECE (Predict-Evaluate-Correct-Evaluate) method |
-| `simple_order_2` | BOOLEAN | Yes | - | Enables or disables simplified second-order calculations |
+| `eta` | FLOAT | No | 0.0 - 10.0 | Controls the step size scaling factor (default: 1.0) |
+| `sde_start_percent` | FLOAT | No | 0.0 - 1.0 | The starting percentage for SDE sampling (default: 0.2) |
+| `sde_end_percent` | FLOAT | No | 0.0 - 1.0 | The ending percentage for SDE sampling (default: 0.8) |
+| `s_noise` | FLOAT | No | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0) |
+| `predictor_order` | INT | No | 1 - 6 | The order of the predictor component in the solver (default: 3) |
+| `corrector_order` | INT | No | 0 - 6 | The order of the corrector component in the solver (default: 4) |
+| `use_pece` | BOOLEAN | No | - | Enables or disables the PECE (Predict-Evaluate-Correct-Evaluate) method |
+| `simple_order_2` | BOOLEAN | No | - | Enables or disables simplified second-order calculations |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | A configured sampler object that can be used with diffusion models |
+
+---
+**Source fingerprint (SHA-256):** `3de8834281c09d0bd1435e29f0c9ae540a2ea42db142277d07cb655ccf814873`

@@ -4,16 +4,19 @@ The CLIPAttentionMultiply node allows you to adjust the attention mechanism in C
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | required | - | - | The CLIP model to modify |
-| `q` | FLOAT | required | 1.0 | 0.0 - 10.0 | Multiplication factor for query projection weights and biases |
-| `k` | FLOAT | required | 1.0 | 0.0 - 10.0 | Multiplication factor for key projection weights and biases |
-| `v` | FLOAT | required | 1.0 | 0.0 - 10.0 | Multiplication factor for value projection weights and biases |
-| `out` | FLOAT | required | 1.0 | 0.0 - 10.0 | Multiplication factor for output projection weights and biases |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `clip` | CLIP | Yes | - | The CLIP model to modify |
+| `q` | FLOAT | Yes | 0.0 - 10.0 | Multiplication factor for query projection weights and biases (default: 1.0) |
+| `k` | FLOAT | Yes | 0.0 - 10.0 | Multiplication factor for key projection weights and biases (default: 1.0) |
+| `v` | FLOAT | Yes | 0.0 - 10.0 | Multiplication factor for value projection weights and biases (default: 1.0) |
+| `out` | FLOAT | Yes | 0.0 - 10.0 | Multiplication factor for output projection weights and biases (default: 1.0) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CLIP` | CLIP | Returns a modified CLIP model with the specified attention scaling factors applied |
+
+---
+**Source fingerprint (SHA-256):** `43dab83ecfc928f3359eb7560658f43235bf3faa62c81084a2b4f482e3a4638f`

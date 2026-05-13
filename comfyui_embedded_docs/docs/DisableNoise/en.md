@@ -13,3 +13,6 @@ The DisableNoise node provides an empty noise configuration that can be used to 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `NOISE` | NOISE | Returns an empty noise configuration that can be used to disable noise generation in sampling processes. |
+
+---
+**Source fingerprint (SHA-256):** `527152dff69bd5c55c622c634b87e625eb16708f8595fa02d69cf38f1125c5eb`

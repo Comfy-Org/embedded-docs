@@ -13,3 +13,6 @@ The Boolean node provides a simple way to pass boolean (true/false) values throu
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | BOOLEAN | The same boolean value that was provided as input |
+
+---
+**Source fingerprint (SHA-256):** `3913c2e23480710c9c9f003538b89ed0ab73cb4b47c587c5bf884b9c666999e0`

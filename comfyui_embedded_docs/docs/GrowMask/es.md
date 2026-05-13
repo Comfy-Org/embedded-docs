@@ -1,15 +1,17 @@
-El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dada, ya sea expandiéndola o contrayéndola, mientras opcionalmente aplica un efecto de afinado a las esquinas. Esta funcionalidad es crucial para ajustar dinámicamente los límites de la máscara en tareas de procesamiento de imágenes, permitiendo un control más flexible y preciso sobre el área de interés.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrowMask/es.md)
+
+El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dada, ya sea expandiéndola o contrayéndola, con la opción de aplicar un efecto de biselado en las esquinas. Esta funcionalidad es crucial para ajustar dinámicamente los límites de las máscaras en tareas de procesamiento de imágenes, permitiendo un control más flexible y preciso sobre el área de interés.
 
 ## Entradas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `máscara`    | MASK        | La máscara de entrada a modificar. Este parámetro es central para la operación del nodo, sirviendo como base sobre la cual la máscara se expande o contrae. |
-| `expandir`  | INT         | Determina la magnitud y dirección de la modificación de la máscara. Los valores positivos hacen que la máscara se expanda, mientras que los valores negativos conducen a la contracción. Este parámetro influye directamente en el tamaño final de la máscara. |
-| `esquinas_afiladas` | BOOLEAN    | Una bandera booleana que, cuando se establece en True, aplica un efecto de afinado a las esquinas de la máscara durante la modificación. Esta opción permite transiciones más suaves y resultados visualmente atractivos. |
+| `mask`    | MASK        | La máscara de entrada que se va a modificar. Este parámetro es central para el funcionamiento del nodo, ya que sirve como base sobre la cual se expande o contrae la máscara. |
+| `expand`  | INT         | Determina la magnitud y dirección de la modificación de la máscara. Los valores positivos expanden la máscara, mientras que los valores negativos la contraen. Este parámetro influye directamente en el tamaño final de la máscara. |
+| `tapered_corners` | BOOLEAN    | Un indicador booleano que, cuando se establece en Verdadero, aplica un efecto de biselado en las esquinas de la máscara durante la modificación. Esta opción permite transiciones más suaves y resultados visualmente atractivos. |
 
 ## Salidas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de dato | Descripción |
 |-----------|-------------|-------------|
-| `máscara`    | MASK        | La máscara modificada después de aplicar la expansión/contracción especificada y el efecto opcional de esquinas afinadas. |
+| `mask`    | MASK        | La máscara modificada después de aplicar la expansión/contracción especificada y el efecto opcional de biselado en las esquinas. |

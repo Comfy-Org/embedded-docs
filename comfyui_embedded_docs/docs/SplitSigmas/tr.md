@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/tr.md)
 
-SplitSigmas düğümü, bir sigma değerleri dizisini belirtilen bir adıma göre iki parçaya bölmek için tasarlanmıştır. Bu işlevsellik, sigma dizisinin başlangıç ve sonraki kısımlarının farklı şekilde işlenmesini veya işleme tabi tutulmasını gerektiren operasyonlar için çok önemlidir ve bu değerlerin daha esnek ve hedeflenen bir şekilde manipüle edilmesine olanak tanır.
+SplitSigmas düğümü, bir sigma değerleri dizisini belirtilen bir adıma göre iki parçaya bölmek için tasarlanmıştır. Bu işlevsellik, sigma dizisinin başlangıç ve sonraki bölümlerinin farklı şekilde işlenmesini veya ele alınmasını gerektiren işlemler için kritik öneme sahiptir ve bu değerler üzerinde daha esnek ve hedefli bir manipülasyon sağlar.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `sigmalar`  | `SIGMAS`    | 'sigmas' parametresi, bölünecek olan sigma değerleri dizisini temsil eder. Bölünme noktasını ve ortaya çıkan iki sigma değerleri dizisini belirlemek için esastır, düğümün yürütülmesini ve sonuçlarını etkiler. |
-| `adım`    | `INT`       | 'step' parametresi, sigma dizisinin hangi indekste bölüneceğini belirtir. Ortaya çıkan iki sigma dizisi arasındaki sınırı tanımlamada kritik bir rol oynar, düğümün işlevselliğini ve çıktıların özelliklerini etkiler. |
+| `sigmas`  | `SIGMAS`    | 'sigmas' parametresi, bölünecek sigma değerleri dizisini temsil eder. Bölünme noktasının ve sonuçta ortaya çıkan iki sigma değerleri dizisinin belirlenmesi için gereklidir; düğümün yürütülmesini ve sonuçlarını etkiler. |
+| `step`    | `INT`       | 'step' parametresi, sigma dizisinin bölünmesi gereken dizin numarasını belirtir. Ortaya çıkan iki sigma dizisi arasındaki sınırı tanımlamada kritik bir rol oynar; düğümün işlevselliğini ve çıktının özelliklerini etkiler. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `düşük_sigmalar`  | `SIGMAS`    | Düğüm, her biri orijinal dizinin belirtilen adımda bölünmüş bir kısmını temsil eden iki sigma değerleri dizisi çıktılar. Bu çıktılar, sigma değerlerinin farklılaştırılmış bir şekilde ele alınmasını gerektiren sonraki operasyonlar için çok önemlidir. |
+| `sigmas`  | `SIGMAS`    | Düğüm, her biri belirtilen adımda bölünmüş orijinal dizinin bir parçasını temsil eden iki sigma değerleri dizisi çıktısı verir. Bu çıktılar, sigma değerlerinin farklılaştırılmış şekilde ele alınmasını gerektiren sonraki işlemler için çok önemlidir. |

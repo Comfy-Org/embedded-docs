@@ -1,15 +1,21 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelPatchLoader/ja.md)
 
-ModelPatchLoaderノードは、model_patchesフォルダから特殊なモデルパッチを読み込みます。このノードはパッチファイルのタイプを自動的に検出し、適切なモデルアーキテクチャを読み込んでから、ワークフローで使用できるようにModelPatcherでラップします。このノードは、controlnetブロックやfeature embedderモデルなど、さまざまなパッチタイプをサポートしています。
+以下は、指定されたルールに従って翻訳した日本語版ドキュメントです。
+
+## 概要
+ModelPatchLoaderノードは、model_patchesフォルダから特殊なモデルパッチを読み込みます。パッチファイルの種類を自動的に検出し、適切なモデルアーキテクチャを読み込んだ後、ワークフローで使用できるようにModelPatcherにラップします。このノードは、controlnetブロック、特徴量埋め込みモデル、その他の特殊なアーキテクチャなど、さまざまなパッチタイプをサポートしています。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `name` | STRING | はい | model_patchesフォルダから利用可能なすべてのモデルパッチファイル | model_patchesディレクトリから読み込むモデルパッチのファイル名 |
+| `name` | STRING | はい | model_patchesフォルダ内の利用可能なすべてのモデルパッチファイル | model_patchesディレクトリから読み込むモデルパッチのファイル名 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `MODEL_PATCH` | MODEL_PATCH | ワークフローで使用するためにModelPatcherでラップされた読み込まれたモデルパッチ |
+| `MODEL_PATCH` | MODEL_PATCH | ワークフローで使用するためにModelPatcherにラップされた、読み込まれたモデルパッチ |
+
+---
+**Source fingerprint (SHA-256):** `e394e165cf416019ed53d9fde42d97c3c9b9f9afd843b12371a624467a4841bf`

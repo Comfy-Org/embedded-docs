@@ -25,3 +25,6 @@ The Wan 2.7 Image to Video node generates a video starting from a first-frame im
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `ccd18dca3b191f2cbe64b6c2b941a7efcf281e4f327329d932cec27fd8234133`

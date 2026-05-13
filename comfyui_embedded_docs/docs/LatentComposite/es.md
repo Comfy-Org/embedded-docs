@@ -1,17 +1,19 @@
-El nodo LatentComposite está diseñado para mezclar o fusionar dos representaciones latentes en una sola salida. Este proceso es esencial para crear imágenes o características compuestas combinando las características de las latentes de entrada de manera controlada.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentComposite/es.md)
+
+El nodo LatentComposite está diseñado para fusionar o combinar dos representaciones latentes en una única salida. Este proceso es esencial para crear imágenes o características compuestas al combinar las propiedades de las entradas latentes de forma controlada.
 
 ## Entradas
 
-| Parámetro    | Data Type | Descripción |
-|--------------|-------------|-------------|
-| `muestras_a` | `LATENT`    | La representación latente 'samples_to' donde se compondrá 'samples_from'. Sirve como base para la operación de composición. |
-| `muestras_de` | `LATENT` | La representación latente 'samples_from' que se compondrá sobre 'samples_to'. Contribuye con sus características al resultado final compuesto. |
-| `x`          | `INT`      | La coordenada x (posición horizontal) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación horizontal del compuesto. |
-| `y`          | `INT`      | La coordenada y (posición vertical) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación vertical del compuesto. |
-| `pluma`    | `INT`      | Un booleano que indica si la latente 'samples_from' debe ser redimensionada para coincidir con 'samples_to' antes de componer. Esto puede afectar la escala y proporción del resultado compuesto. |
+| Parámetro | Tipo de Dato | Descripción |
+|-----------|-------------|-------------|
+| `samples_to` | `LATENT` | La representación latente 'samples_to' sobre la cual se compondrá 'samples_from'. Sirve como base para la operación de composición. |
+| `samples_from` | `LATENT` | La representación latente 'samples_from' que se compondrá sobre 'samples_to'. Aporta sus características o propiedades al resultado compuesto final. |
+| `x` | `INT` | La coordenada x (posición horizontal) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación horizontal de la composición. |
+| `y` | `INT` | La coordenada y (posición vertical) donde se colocará la latente 'samples_from' sobre 'samples_to'. Determina la alineación vertical de la composición. |
+| `feather` | `INT` | Un valor booleano que indica si la latente 'samples_from' debe redimensionarse para coincidir con 'samples_to' antes de la composición. Esto puede afectar la escala y proporción del resultado compuesto. |
 
 ## Salidas
 
-| Parámetro | Data Type | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | La salida es una representación latente compuesta, mezclando las características de las latentes 'samples_to' y 'samples_from' según las coordenadas especificadas y la opción de redimensionamiento. |
+| `latent` | `LATENT` | La salida es una representación latente compuesta, que fusiona las características de ambas latentes 'samples_to' y 'samples_from' según las coordenadas especificadas y la opción de redimensionamiento. |

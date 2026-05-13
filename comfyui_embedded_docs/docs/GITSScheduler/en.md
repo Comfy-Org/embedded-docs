@@ -10,10 +10,13 @@ The GITSScheduler node generates noise schedule sigmas for the GITS (Generative 
 | `steps` | INT | Yes | 2 - 1000 | The total number of sampling steps to generate sigmas for (default: 10) |
 | `denoise` | FLOAT | Yes | 0.0 - 1.0 | Denoising factor that reduces the number of steps used (default: 1.0) |
 
-**Note:** When `denoise` is set to 0.0, the node returns an empty tensor. When `denoise` is less than 1.0, the actual number of steps used is calculated as `round(steps * denoise)`.
+**Note:** When `denoise` is set to 0.0, the node returns an empty tensor. When `denoise` is less than 1.0, the actual number of steps used is calculated as `round(steps * denoise)`. For steps greater than 20, the node uses log-linear interpolation to extend the pre-defined noise levels to the desired number of steps.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sigmas` | SIGMAS | The generated sigma values for the noise schedule |
+
+---
+**Source fingerprint (SHA-256):** `b81b85f95236276822429ec7cbc90204c6f4f86ea3e89ed8b7c2aea40597fea9`

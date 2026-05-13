@@ -19,3 +19,6 @@ The SD_4XUpscale_Conditioning node prepares conditioning data for upscaling imag
 | `positive` | CONDITIONING | Modified positive conditioning with upscaling information applied |
 | `negative` | CONDITIONING | Modified negative conditioning with upscaling information applied |
 | `latent` | LATENT | Empty latent representation matching the upscaled dimensions |
+
+---
+**Source fingerprint (SHA-256):** `ede1ea8f5a95e7f9e52070b5132a4ed3e87f92230d14a74b9d713f547c74d785`

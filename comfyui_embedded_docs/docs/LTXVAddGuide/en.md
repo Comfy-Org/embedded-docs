@@ -23,3 +23,6 @@ The LTXVAddGuide node adds video conditioning guidance to latent sequences by en
 | `positive` | CONDITIONING | Positive conditioning updated with keyframe guidance information |
 | `negative` | CONDITIONING | Negative conditioning updated with keyframe guidance information |
 | `latent` | LATENT | Latent sequence with incorporated conditioning frames and updated noise mask |
+
+---
+**Source fingerprint (SHA-256):** `e7f4e6ed25cddd4b50b98341c63fc9915afc4956317ac7a5a9121fdc53c03a2d`

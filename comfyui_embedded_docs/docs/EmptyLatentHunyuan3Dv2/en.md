@@ -14,3 +14,6 @@ The EmptyLatentHunyuan3Dv2 node creates blank latent tensors specifically format
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `LATENT` | LATENT | Returns a latent tensor containing empty samples formatted for Hunyuan3Dv2 3D generation |
+
+---
+**Source fingerprint (SHA-256):** `f912b226bcec4e2edd52250682d0583ab378b5502173f8e027e0e8fbff1db08f`

@@ -1,0 +1,23 @@
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageOnlyCheckpointSave/fa.md)
+
+گره ImageOnlyCheckpointSave یک فایل checkpoint شامل مدل، رمزگذار دیداری CLIP و VAE ذخیره می‌کند. این گره یک فایل safetensors با پیشوند نام فایل مشخص‌شده ایجاد کرده و آن را در پوشه خروجی ذخیره می‌کند. این گره به‌طور خاص برای ذخیره‌سازی هم‌زمان اجزای مدل مرتبط با تصویر در یک فایل checkpoint طراحی شده است.
+
+## ورودی‌ها
+
+| پارامتر | نوع داده | الزامی | محدوده | توضیحات |
+|---------|----------|--------|--------|---------|
+| `model` | MODEL | بله | - | مدلی که در checkpoint ذخیره می‌شود |
+| `clip_vision` | CLIP_VISION | بله | - | رمزگذار دیداری CLIP که در checkpoint ذخیره می‌شود |
+| `vae` | VAE | بله | - | VAE (رمزگذار خودکار وردشی) که در checkpoint ذخیره می‌شود |
+| `filename_prefix` | STRING | بله | - | پیشوند نام فایل خروجی (پیش‌فرض: "checkpoints/ComfyUI") |
+| `prompt` | PROMPT | خیر | - | پارامتر پنهان برای داده‌های prompt workflow |
+| `extra_pnginfo` | EXTRA_PNGINFO | خیر | - | پارامتر پنهان برای فراداده‌های اضافی PNG |
+
+## خروجی‌ها
+
+| نام خروجی | نوع داده | توضیحات |
+|-----------|----------|---------|
+| - | - | این گره هیچ خروجی بازنمی‌گرداند |
+
+---
+**Source fingerprint (SHA-256):** `d2a26933f0e2fcccf3c57f50038fb40ef5b23d00ccdd2e1d215b3cb78203b9fd`

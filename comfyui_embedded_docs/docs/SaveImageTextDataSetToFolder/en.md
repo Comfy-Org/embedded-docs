@@ -18,3 +18,6 @@ The Save Image and Text Dataset to Folder node saves a list of images and their 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | - | - | This node does not have any outputs. It saves files directly to the filesystem. |
+
+---
+**Source fingerprint (SHA-256):** `0c76f623e97b1502c850e0a59dc9edd7c241bcd823f5e32a8dcdd8b8160d2e44`

@@ -18,3 +18,6 @@ This node shuffles a list of images and a list of texts together, keeping their 
 |-------------|-----------|-------------|
 | `images` | IMAGE | The shuffled list of images. |
 | `texts` | STRING | The shuffled list of texts, maintaining their original pairings with the images. |
+
+---
+**Source fingerprint (SHA-256):** `c87cef780c98b1cf2a58a7d5faf4399c85edd647a9fdba693d008152e43d9c99`

@@ -1,21 +1,24 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/pt-BR.md)
 
-O nó CLIPTextEncodeHiDream processa múltiplas entradas de texto usando diferentes modelos de linguagem e as combina em uma única saída de condicionamento. Ele tokeniza o texto de quatro fontes diferentes (CLIP-L, CLIP-G, T5-XXL e LLaMA) e os codifica usando uma abordagem de codificação programada. Isso permite um condicionamento de texto mais sofisticado, aproveitando vários modelos de linguagem simultaneamente.
+O nó CLIPTextEncodeHiDream processa quatro entradas de texto separadas usando diferentes modelos de linguagem (CLIP-L, CLIP-G, T5-XXL e LLaMA) e as combina em uma única saída de condicionamento. Ele tokeniza cada entrada de texto com seu modelo correspondente e as codifica em conjunto usando uma abordagem de codificação agendada, permitindo um condicionamento de texto mais sofisticado ao aproveitar vários modelos de linguagem simultaneamente.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Intervalo | Descrição |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | Entrada Obrigatória | - | - | O modelo CLIP usado para tokenização e codificação |
-| `clip_l` | STRING | Texto Multilinha | - | - | Entrada de texto para processamento pelo modelo CLIP-L |
-| `clip_g` | STRING | Texto Multilinha | - | - | Entrada de texto para processamento pelo modelo CLIP-G |
-| `t5xxl` | STRING | Texto Multilinha | - | - | Entrada de texto para processamento pelo modelo T5-XXL |
-| `llama` | STRING | Texto Multilinha | - | - | Entrada de texto para processamento pelo modelo LLaMA |
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
+| `clip` | CLIP | Sim | - | O modelo CLIP usado para tokenização e codificação |
+| `clip_l` | STRING | Sim | - | Entrada de texto para processamento do modelo CLIP-L. Suporta texto multilinha e prompts dinâmicos. |
+| `clip_g` | STRING | Sim | - | Entrada de texto para processamento do modelo CLIP-G. Suporta texto multilinha e prompts dinâmicos. |
+| `t5xxl` | STRING | Sim | - | Entrada de texto para processamento do modelo T5-XXL. Suporta texto multilinha e prompts dinâmicos. |
+| `llama` | STRING | Sim | - | Entrada de texto para processamento do modelo LLaMA. Suporta texto multilinha e prompts dinâmicos. |
 
-**Observação:** Todas as entradas de texto suportam prompts dinâmicos e entrada de texto multilinha. O nó requer que todos os quatro parâmetros de texto sejam fornecidos para funcionar corretamente, pois cada um contribui para a saída de condicionamento final através do processo de codificação programada.
+**Nota:** Todas as quatro entradas de texto (`clip_l`, `clip_g`, `t5xxl` e `llama`) são necessárias para o funcionamento adequado, pois cada uma contribui para a saída final de condicionamento através do processo de codificação agendada.
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | A saída de condicionamento combinada de todas as entradas de texto processadas |
+|---------------|---------------|-----------|
+| `CONDITIONING` | CONDITIONING | A saída de condicionamento combinada de todas as entradas de texto processadas, codificada usando o método de codificação agendada |
+
+---
+**Source fingerprint (SHA-256):** `51d117d82a9d833f095e874bf442d5cf8c46a12313fda6b98e628fa988797565`

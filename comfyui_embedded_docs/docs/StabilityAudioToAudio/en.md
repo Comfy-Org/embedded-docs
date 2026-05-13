@@ -21,3 +21,6 @@ Transforms existing audio samples into new high-quality compositions using text 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The transformed audio generated based on the input audio and text prompt |
+
+---
+**Source fingerprint (SHA-256):** `d63ee2585be1ec1a21da72656ecea37f051a56595b15637013e515eb298fc4dc`

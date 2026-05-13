@@ -1,18 +1,23 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAEDecode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAEDecode/zh-TW.md)
+
+# LTXV 音訊 VAE 解碼
 
 此節點將音訊的潛在表示轉換回音訊波形。它使用專門的音訊 VAE 模型來執行此解碼過程，產生具有特定取樣率的音訊輸出。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | 是 | N/A | 待解碼的潛在表示。 |
+| `samples` | LATENT | 是 | N/A | 要解碼的潛在表示。 |
 | `audio_vae` | VAE | 是 | N/A | 用於解碼潛在表示的音訊 VAE 模型。 |
 
-**注意：** 如果提供的潛在表示是嵌套的（包含多個潛在表示），節點將自動使用序列中的最後一個潛在表示進行解碼。
+**注意：** 如果提供的潛在表示是巢狀結構（包含多個潛在表示），節點將自動使用序列中的最後一個潛在表示進行解碼。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `Audio` | AUDIO | 解碼後的音訊波形及其關聯的取樣率。 |
+| `Audio` | AUDIO | 解碼後的音訊波形及其相關的取樣率。波形是一個張量，會移動到與輸入潛在表示相同的裝置上，取樣率則由音訊 VAE 模型決定。 |
+
+---
+**Source fingerprint (SHA-256):** `e9df1da8ca0424cfc7ce97951e65154df845d98c3b73f76725fa657d851a3a07`

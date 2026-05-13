@@ -1,13 +1,13 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeQwenImageEdit/es.md)
 
-El nodo TextEncodeQwenImageEdit procesa prompts de texto e imágenes opcionales para generar datos de condicionamiento para generación o edición de imágenes. Utiliza un modelo CLIP para tokenizar la entrada y puede opcionalmente codificar imágenes de referencia usando un VAE para crear latentes de referencia. Cuando se proporciona una imagen, esta se redimensiona automáticamente para mantener dimensiones de procesamiento consistentes.
+El nodo `TextEncodeQwenImageEdit` procesa indicaciones de texto e imágenes opcionales para generar datos de condicionamiento para la generación o edición de imágenes. Utiliza un modelo CLIP para tokenizar la entrada y, opcionalmente, puede codificar imágenes de referencia usando un VAE para crear latentes de referencia. Cuando se proporciona una imagen, esta se redimensiona automáticamente para mantener dimensiones de procesamiento consistentes.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
 | `clip` | CLIP | Sí | - | El modelo CLIP utilizado para la tokenización de texto e imágenes |
-| `prompt` | STRING | Sí | - | Prompt de texto para la generación de condicionamiento, admite entrada multilínea y prompts dinámicos |
+| `prompt` | STRING | Sí | - | Indicación de texto para la generación de condicionamiento, admite entrada multilínea e indicaciones dinámicas |
 | `vae` | VAE | No | - | Modelo VAE opcional para codificar imágenes de referencia en latentes |
 | `image` | IMAGE | No | - | Imagen de entrada opcional para fines de referencia o edición |
 
@@ -16,5 +16,8 @@ El nodo TextEncodeQwenImageEdit procesa prompts de texto e imágenes opcionales 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | Datos de condicionamiento que contienen tokens de texto y latentes de referencia opcionales para generación de imágenes |
+|------------------|--------------|-------------|
+| `CONDITIONING` | CONDITIONING | Datos de condicionamiento que contienen tokens de texto y latentes de referencia opcionales para la generación de imágenes |
+
+---
+**Source fingerprint (SHA-256):** `143af2c93aa56ace3594ecb257cac9dbaef2666665f3fb6dfd7a987cd2ea326f`

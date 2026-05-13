@@ -1,25 +1,31 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingMotionControl/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingMotionControl/zh-TW.md)
 
-Kling Motion Control 節點透過將參考影片中的動作、表情和攝影機運動應用到由參考圖像和文字提示定義的角色上，從而生成影片。它允許您控制角色的最終朝向是來自參考影片還是參考圖像。
+# Kling 動作控制節點
 
-## 輸入參數
+Kling 動作控制節點透過將參考影片中的動作、表情和鏡頭移動套用到由參考圖像和文字提示定義的角色，來生成影片。它讓您可以控制角色的最終朝向是來自參考影片還是參考圖像。
 
-| 參數名稱 | 資料類型 | 必填 | 範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | N/A | 期望影片的文字描述。最大長度為 2500 個字元。 |
-| `reference_image` | IMAGE | 是 | N/A | 要進行動畫處理的角色圖像。最小尺寸為 340x340 像素。長寬比必須介於 1:2.5 到 2.5:1 之間。 |
-| `reference_video` | VIDEO | 是 | N/A | 用於驅動角色動作和表情的動作參考影片。最小尺寸為 340x340 像素，最大尺寸為 3850x3850 像素。持續時間限制取決於 `character_orientation` 設定。 |
-| `keep_original_sound` | BOOLEAN | 否 | N/A | 決定是否在輸出中保留參考影片的原始音訊。預設值為 `True`。 |
-| `character_orientation` | COMBO | 否 | `"video"`<br>`"image"` | 控制角色的朝向/方向來源。`"video"`：動作、表情、攝影機移動和朝向都遵循動作參考影片。`"image"`：動作和表情遵循動作參考影片，但角色朝向與參考圖像匹配。 |
+| `prompt` | STRING | 是 | 不適用 | 對所需影片的文字描述。最大長度為 2500 個字元。 |
+| `reference_image` | IMAGE | 是 | 不適用 | 要動畫化的角色圖像。最小尺寸為 340x340 像素。長寬比必須在 1:2.5 到 2.5:1 之間。 |
+| `reference_video` | VIDEO | 是 | 不適用 | 用於驅動角色動作和表情的動作參考影片。最小尺寸為 340x340 像素，最大尺寸為 3850x3850 像素。時長限制取決於 `character_orientation` 設定。 |
+| `keep_original_sound` | BOOLEAN | 否 | 不適用 | 決定輸出中是否保留參考影片的原始音訊。預設值為 `True`。 |
+| `character_orientation` | COMBO | 否 | `"video"`<br>`"image"` | 控制角色面向/朝向的來源。`"video"`：動作、表情、鏡頭移動和朝向都跟隨動作參考影片（其他細節透過提示設定）。`"image"`：動作和表情仍跟隨動作參考影片，但角色朝向與參考圖像一致（鏡頭/其他細節透過提示設定）。 |
 | `mode` | COMBO | 否 | `"pro"`<br>`"std"` | 要使用的生成模式。 |
+| `model` | COMBO | 否 | `"kling-v3"`<br>`"kling-v2-6"` | 要使用的 Kling 模型版本。預設值為 `"kling-v2-6"`。 |
 
 **限制條件：**
 
-* 當 `character_orientation` 設定為 `"video"` 時，`reference_video` 的持續時間必須介於 3 到 30 秒之間。
-* 當 `character_orientation` 設定為 `"image"` 時，`reference_video` 的持續時間必須介於 3 到 10 秒之間。
+* 當 `character_orientation` 設定為 `"video"` 時，`reference_video` 的時長必須在 3 到 30 秒之間。
+* 當 `character_orientation` 設定為 `"image"` 時，`reference_video` 的時長必須在 3 到 10 秒之間。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | VIDEO | 生成的影片，其中角色執行了來自參考影片的動作。 |
+| `output` | VIDEO | 生成的影片，角色執行參考影片中的動作。 |
+
+---
+**Source fingerprint (SHA-256):** `4159b10496e85ae93f522865494e9bc99ba08bda00df1601bca2314e61fb32df`

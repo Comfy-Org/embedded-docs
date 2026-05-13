@@ -13,3 +13,6 @@ This node completely disables the guidance embed functionality for Flux and simi
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `conditioning` | CONDITIONING | The modified conditioning data with guidance disabled |
+
+---
+**Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`

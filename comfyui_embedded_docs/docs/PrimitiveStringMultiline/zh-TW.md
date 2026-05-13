@@ -1,15 +1,18 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveStringMultiline/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveStringMultiline/zh-TW.md)
 
-PrimitiveStringMultiline 節點提供了一個多行文字輸入欄位，用於在工作流程中輸入和傳遞字串值。它接受包含多行的文字輸入，並將相同的字串值原封不動地輸出。當您需要輸入較長文字內容或跨越多行的格式化文字時，此節點非常有用。
+PrimitiveStringMultiline 節點提供一個多行文字輸入欄位，用於在工作流程中輸入和傳遞字串值。它接受可包含多行的文字輸入，並原樣輸出相同的字串值。當您需要輸入較長的文字內容或跨越多行的格式化文字時，此節點非常實用。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `值` | STRING | 是 | N/A | 可跨越多行的文字輸入值 |
+| `value` | STRING | 是 | 不適用 | 可跨越多行的文字輸入值 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | STRING | 與輸入值相同的字串值 |
+| `output` | STRING | 與輸入相同的字串值 |
+
+---
+**Source fingerprint (SHA-256):** `a2faaf366d6316d659b749ec6077b944f9b0f1ad702d699acc3897aef842b937`

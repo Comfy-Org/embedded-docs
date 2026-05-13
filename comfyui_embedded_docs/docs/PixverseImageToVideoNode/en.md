@@ -22,3 +22,6 @@ Generates videos based on an input image and text prompt. This node takes an ima
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | Generated video based on the input image and parameters |
+
+---
+**Source fingerprint (SHA-256):** `7630c662a2506fb0c8be0cb9c6bfdfcf0fc06d2b6f16b8636664d587affededc`

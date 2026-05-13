@@ -1,19 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeBlocks/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeBlocks/tr.md)
 
-ModelMergeBlocks, iki modelin farklı bölümleri için özelleştirilebilir karıştırma oranlarıyla entegrasyonuna olanak tanıyarak gelişmiş model birleştirme işlemleri için tasarlanmıştır. Bu düğüm, belirtilen parametrelere dayanarak iki kaynak modelden bileşenleri seçerek birleştirerek melez modellerin oluşturulmasını kolaylaştırır.
+ModelMergeBlocks, gelişmiş model birleştirme işlemleri için tasarlanmış olup, modellerin farklı bölümleri için özelleştirilebilir karışım oranlarıyla iki modelin entegrasyonuna olanak tanır. Bu düğüm, belirtilen parametrelere göre iki kaynak modelden bileşenleri seçerek birleştirip hibrit modeller oluşturmayı kolaylaştırır.
 
-## Girdiler
-
-| Parametre | Veri Türü | Açıklama |
-|-----------|-------------|-------------|
-| `model1`  | `MODEL`     | Birleştirilecek ilk model. İkinci modelden yamaların uygulandığı temel model olarak hizmet eder. |
-| `model2`  | `MODEL`     | Belirtilen karıştırma oranlarına göre, yamaların çıkarıldığı ve ilk modele uygulandığı ikinci model. |
-| `giriş`   | `FLOAT`     | Modellerin giriş katmanı için karıştırma oranını belirtir. İkinci modelin giriş katmanının ne kadarının ilk modele birleştirileceğini belirler. |
-| `orta`  | `FLOAT`     | Modellerin orta katmanları için karıştırma oranını tanımlar. Bu parametre, modellerin orta katmanlarının entegrasyon seviyesini kontrol eder. |
-| `çıktı`     | `FLOAT`     | Modellerin çıkış katmanı için karıştırma oranını belirler. İkinci modelin çıkış katmanının katkısını ayarlayarak nihai çıktıyı etkiler. |
-
-## Çıktılar
+## Girişler
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | Belirtilen karıştırma oranlarına göre yamalar uygulanmış, iki girdi modelinin melezi olan ortaya çıkan birleştirilmiş model. |
+| `model1`  | `MODEL`     | Birleştirilecek ilk model. İkinci modelden alınan yamaların uygulanacağı temel model olarak işlev görür. |
+| `model2`  | `MODEL`     | Belirtilen karışım oranlarına göre yamaların çıkarıldığı ve ilk modele uygulandığı ikinci model. |
+| `input`   | `FLOAT`     | Modellerin giriş katmanı için karışım oranını belirtir. İkinci modelin giriş katmanının ne kadarının ilk modele ekleneceğini belirler. |
+| `middle`  | `FLOAT`     | Modellerin orta katmanları için karışım oranını tanımlar. Bu parametre, modellerin orta katmanlarının entegrasyon seviyesini kontrol eder. |
+| `out`     | `FLOAT`     | Modellerin çıkış katmanı için karışım oranını belirler. İkinci modelin çıkış katmanının katkısını ayarlayarak nihai çıktıyı etkiler. |
+
+## Çıkışlar
+
+| Parametre | Veri Türü | Açıklama |
+|-----------|-------------|-------------|
+| `model`   | MODEL     | Belirtilen karışım oranlarına göre yamaların uygulandığı, iki giriş modelinin birleşimi olan hibrit model. |

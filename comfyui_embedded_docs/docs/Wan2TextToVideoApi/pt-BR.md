@@ -7,20 +7,23 @@ Este nó gera um vídeo a partir de uma descrição textual usando o modelo Wan 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `model` | COMBO | Sim | `"wan2.7-t2v"` | O modelo específico a ser usado para a geração de vídeo. |
-| `model.prompt` | STRING | Sim | - | Uma descrição dos elementos e características visuais desejados no vídeo. Suporta inglês e chinês. |
+| `model.prompt` | STRING | Sim | - | Uma descrição dos elementos e características visuais que você deseja no vídeo. Suporta inglês e chinês. |
 | `model.negative_prompt` | STRING | Não | - | Uma descrição de elementos ou características que você deseja evitar no vídeo gerado. |
 | `model.resolution` | COMBO | Sim | `"720P"`<br>`"1080P"` | A resolução do vídeo de saída. |
 | `model.ratio` | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | A proporção de aspecto do vídeo de saída. |
 | `model.duration` | INT | Sim | 2 a 15 | A duração do vídeo em segundos (padrão: 5). |
-| `audio` | AUDIO | Não | - | Um arquivo de áudio para guiar a geração do vídeo, como para sincronização labial ou correspondência de movimento com a batida. Se não for fornecido, o modelo gerará música de fundo ou efeitos sonoros correspondentes. A duração do áudio deve estar entre 3 e 30 segundos. |
+| `audio` | AUDIO | Não | - | Um arquivo de áudio para orientar a geração do vídeo, como para sincronização labial ou movimento combinando com a batida. Se não fornecido, o modelo gerará música de fundo ou efeitos sonoros correspondentes. A duração do áudio deve estar entre 1,5 e 60 segundos. |
 | `seed` | INT | Não | 0 a 2147483647 | Um número usado para controlar a aleatoriedade da geração, garantindo resultados reproduzíveis (padrão: 0). |
 | `prompt_extend` | BOOLEAN | Não | - | Quando ativado, o prompt será aprimorado com assistência de IA (padrão: Verdadeiro). |
 | `watermark` | BOOLEAN | Não | - | Quando ativado, uma marca d'água gerada por IA será adicionada ao resultado (padrão: Falso). |
 
-**Nota:** O parâmetro `audio` é opcional. Se fornecido, sua duração deve estar entre 3 e 30 segundos. Se omitido, o modelo gerará áudio automaticamente.
+**Observação:** O parâmetro `audio` é opcional. Se fornecido, sua duração deve estar entre 1,5 e 60 segundos. Se omitido, o modelo gerará áudio automaticamente.
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `output` | VIDEO | O arquivo de vídeo gerado. |
+
+---
+**Source fingerprint (SHA-256):** `ce8a2f4e53b2bce879f143c66f6078fd81c6308e2822cb486b1cf8e178a6f58c`

@@ -11,8 +11,8 @@ Kling Start-End Frame to Video node creates a video sequence that transitions be
 | `prompt` | STRING | Yes | - | Positive text prompt |
 | `negative_prompt` | STRING | Yes | - | Negative text prompt |
 | `cfg_scale` | FLOAT | No | 0.0-1.0 | Controls the strength of the prompt guidance (default: 0.5) |
-| `aspect_ratio` | COMBO | No | "16:9"<br>"9:16"<br>"1:1"<br>"21:9"<br>"9:21"<br>"3:4"<br>"4:3" | The aspect ratio for the generated video (default: "16:9") |
-| `mode` | COMBO | No | Multiple options available | The configuration to use for the video generation following the format: mode / duration / model_name. (default: third option from available modes) |
+| `aspect_ratio` | COMBO | No | "16:9"<br>"9:16"<br>"1:1" | The aspect ratio for the generated video (default: "16:9") |
+| `mode` | COMBO | No | Multiple options available | The configuration to use for the video generation following the format: mode / duration / model_name. (default: the seventh option from available modes) |
 
 **Image Constraints:**
 
@@ -28,3 +28,6 @@ Kling Start-End Frame to Video node creates a video sequence that transitions be
 | `output` | VIDEO | The generated video sequence |
 | `video_id` | STRING | Unique identifier for the generated video |
 | `duration` | STRING | Duration of the generated video |
+
+---
+**Source fingerprint (SHA-256):** `1df5820b4f41ccd5afec8e2701888d90c940f164c433c7f81397b41e8fc333c6`

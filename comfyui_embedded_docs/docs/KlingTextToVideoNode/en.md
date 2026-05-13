@@ -6,11 +6,11 @@ The Kling Text to Video Node converts text descriptions into video content. It t
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Yes | - | Positive text prompt (default: none) |
-| `negative_prompt` | STRING | Yes | - | Negative text prompt (default: none) |
-| `cfg_scale` | FLOAT | No | 0.0-1.0 | Configuration scale value (default: 1.0) |
+| `prompt` | STRING | Yes | - | Positive text prompt |
+| `negative_prompt` | STRING | Yes | - | Negative text prompt |
+| `cfg_scale` | FLOAT | No | 0.0 to 1.0 | Configuration scale value (default: 1.0) |
 | `aspect_ratio` | COMBO | No | Options from KlingVideoGenAspectRatio | Video aspect ratio setting (default: "16:9") |
-| `mode` | COMBO | No | Multiple options available | The configuration to use for the video generation following the format: mode / duration / model_name. (default: modes[4]) |
+| `mode` | COMBO | No | Multiple options available | The configuration to use for the video generation following the format: mode / duration / model_name. (default: modes[8]) |
 
 ## Outputs
 
@@ -19,3 +19,6 @@ The Kling Text to Video Node converts text descriptions into video content. It t
 | `output` | VIDEO | The generated video output |
 | `video_id` | STRING | Unique identifier for the generated video |
 | `duration` | STRING | Duration information for the generated video |
+
+---
+**Source fingerprint (SHA-256):** `467f89a47890bfbfe6cebac8897fef3bce37d888d3419b248d13be89bed442f3`

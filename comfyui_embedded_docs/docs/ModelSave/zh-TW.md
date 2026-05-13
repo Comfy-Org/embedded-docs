@@ -1,18 +1,23 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSave/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSave/zh-TW.md)
 
-ModelSave 節點可將訓練完成或修改後的模型儲存至您的電腦儲存裝置。它接收一個模型作為輸入，並將其寫入具有您指定檔案名稱的檔案中。這讓您能夠保存工作成果，並在未來的專案中重複使用模型。
+## 概述
 
-## 輸入參數
+ModelSave 節點可將訓練或修改後的模型儲存至電腦儲存空間。此節點接收模型作為輸入，並將其寫入您指定檔案名稱的檔案中，讓您能夠保留工作成果並在未來專案中重複使用模型。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 要儲存至硬碟的模型 |
-| `檔名前綴` | STRING | 是 | - | 已儲存模型檔案的檔案名稱與路徑前綴（預設值："diffusion_models/ComfyUI"） |
+| `model` | MODEL | 是 | - | 要儲存至磁碟的模型 |
+| `filename_prefix` | STRING | 是 | - | 儲存模型檔案的檔案名稱與路徑前綴（預設值："diffusion_models/ComfyUI"） |
 | `prompt` | PROMPT | 否 | - | 工作流程提示資訊（自動提供） |
 | `extra_pnginfo` | EXTRA_PNGINFO | 否 | - | 額外的工作流程元資料（自動提供） |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| *無* | - | 此節點不返回任何輸出值 |
+| *無* | - | 此節點不傳回任何輸出值 |
+
+---
+**Source fingerprint (SHA-256):** `1dda8a6d85aa19b739c1fe3e6e7f816e05011044fc8b0b91b23fa303f71d8b19`

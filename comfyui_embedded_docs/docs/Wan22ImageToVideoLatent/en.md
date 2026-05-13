@@ -7,13 +7,13 @@ The Wan22ImageToVideoLatent node creates video latent representations from image
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | Yes | - | The VAE model used for encoding images into latent space |
-| `width` | INT | No | 32 to MAX_RESOLUTION | The width of the output video in pixels (default: 1280, step: 32) |
-| `height` | INT | No | 32 to MAX_RESOLUTION | The height of the output video in pixels (default: 704, step: 32) |
-| `length` | INT | No | 1 to MAX_RESOLUTION | The number of frames in the video sequence (default: 49, step: 4) |
-| `batch_size` | INT | No | 1 to 4096 | The number of batches to generate (default: 1) |
+| `width` | INT | Yes | 32 to MAX_RESOLUTION | The width of the output video in pixels (default: 1280, step: 32) |
+| `height` | INT | Yes | 32 to MAX_RESOLUTION | The height of the output video in pixels (default: 704, step: 32) |
+| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the video sequence (default: 49, step: 4) |
+| `batch_size` | INT | Yes | 1 to 4096 | The number of batches to generate (default: 1) |
 | `start_image` | IMAGE | No | - | Optional starting image sequence to encode into the video latent |
 
-**Note:** When `start_image` is provided, the node encodes the image sequence into the beginning frames of the latent space and generates a corresponding noise mask. The width and height parameters must be divisible by 16 for proper latent space dimensions.
+**Note:** When `start_image` is provided, the node encodes the image sequence into the beginning frames of the latent space and generates a corresponding noise mask. The width and height parameters must be divisible by 16 for proper latent space dimensions. The `length` parameter determines the number of frames in the video latent; the latent space's temporal dimension is calculated as `((length - 1) // 4) + 1`.
 
 ## Outputs
 
@@ -21,3 +21,6 @@ The Wan22ImageToVideoLatent node creates video latent representations from image
 |-------------|-----------|-------------|
 | `samples` | LATENT | The generated video latent representation |
 | `noise_mask` | LATENT | The noise mask indicating which regions should be denoised during generation |
+
+---
+**Source fingerprint (SHA-256):** `0f27e20bcc63f0dd224cda0fa26ee676c42898ac74fcfbe0a2b591def933689c`

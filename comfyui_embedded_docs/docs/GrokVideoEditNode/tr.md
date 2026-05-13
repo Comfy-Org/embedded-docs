@@ -1,23 +1,27 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoEditNode/tr.md)
 
-Bu düğüm, mevcut bir videoyu metin tabanlı bir isteme göre düzenlemek için Grok API'sini kullanır. Videoyu yükler, AI modeline isteğinizi gönderir ve yeni oluşturulan videoyu döndürür.
+Bu düğüm, mevcut bir videoyu metin istemine göre düzenlemek için Grok API'sini kullanır. Videonuzu yükler, yapay zeka modeline açıklamanıza göre videoyu değiştirmesi için bir istek gönderir ve yeni oluşturulan videoyu döndürür.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Evet | `"grok-imagine-video-beta"` | Video düzenleme için kullanılacak AI modeli. |
-| `prompt` | STRING | Evet | N/A | İstenilen videonun metin açıklaması. |
-| `video` | VIDEO | Evet | N/A | Düzenlenecek giriş videosu. Desteklenen maksimum süre 8.7 saniye ve maksimum dosya boyutu 50MB'dır. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirlemek için bir başlangıç değeri. Gerçek sonuçlar, başlangıç değerinden bağımsız olarak belirleyici değildir (varsayılan: 0). |
+| `model` | COMBO | Evet | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | Video düzenleme için kullanılacak yapay zeka modeli (varsayılan: `"grok-imagine-video"`). |
+| `prompt` | STRING | Evet | Yok | İstenen videonun metin açıklaması. |
+| `video` | VIDEO | Evet | Yok | Düzenlenecek giriş videosu. Desteklenen maksimum süre 8,7 saniye ve dosya boyutu 50MB'dır. |
+| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen bir tohum değeri. Tohum değerinden bağımsız olarak gerçek sonuçlar deterministik değildir (varsayılan: 0). |
 
 **Kısıtlamalar:**
 
-* Giriş `video` süresi 1 ile 8.7 saniye arasında olmalıdır.
+* Giriş `video` süresi 1 ila 8,7 saniye arasında olmalıdır.
 * Giriş `video` dosya boyutu 50MB'ı geçmemelidir.
+* `prompt` boş olmamalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `video` | VIDEO | AI modeli tarafından oluşturulan düzenlenmiş video. |
+| `video` | VIDEO | Yapay zeka modeli tarafından oluşturulan düzenlenmiş video. |
+
+---
+**Source fingerprint (SHA-256):** `dfe52a089f7bfe7abc7f40ef113c44aef2dded828221d9d1acf0ddb6a167c33f`

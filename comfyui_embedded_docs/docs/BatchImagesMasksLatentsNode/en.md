@@ -15,3 +15,6 @@ The Batch Images/Masks/Latents node combines multiple inputs of the same type in
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | IMAGE, MASK, or LATENT | A single batched output. The data type matches the input type (batched IMAGE, batched MASK, or batched LATENT). |
+
+---
+**Source fingerprint (SHA-256):** `6f3037bc00fd8526f42ad2d79a0f27434f58bd6dd0338a585cc707a771ac0989`

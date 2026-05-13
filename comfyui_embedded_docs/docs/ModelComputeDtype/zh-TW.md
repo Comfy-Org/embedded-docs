@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelComputeDtype/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelComputeDtype/zh-TW.md)
 
-ModelComputeDtype 節點允許您在推理過程中變更模型使用的計算資料型別。它會建立輸入模型的副本並套用指定的資料型別設定，這有助於根據您的硬體能力優化記憶體使用和效能。此功能在除錯和測試不同精度設定時特別有用。
+## 概述
 
-## 輸入參數
+ModelComputeDtype 節點會變更模型在處理過程中所使用的計算資料類型（精確度）。它會建立輸入模型的副本，並套用所選的精確度設定，這有助於根據您的硬體最佳化記憶體使用量與效能。此功能對於除錯和測試不同的精確度配置非常有用。
 
-| 參數名稱 | 資料型別 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 要套用新計算資料型別的輸入模型 |
-| `dtype` | STRING | 是 | "default"<br>"fp32"<br>"fp16"<br>"bf16" | 要套用至模型的計算資料型別 |
+| `model` | MODEL | 是 | - | 要套用新計算資料類型的輸入模型 |
+| `dtype` | STRING | 是 | "default"<br>"fp32"<br>"fp16"<br>"bf16" | 要套用至模型的計算資料類型（預設值："default"） |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料型別 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已套用新計算資料型別的修改後模型 |
+| `model` | MODEL | 已套用新計算資料類型的修改後模型 |
+
+---
+**Source fingerprint (SHA-256):** `bc65f1e452d0122ad175a8b95f38a36503253c9908157037c516496e65c828e6`

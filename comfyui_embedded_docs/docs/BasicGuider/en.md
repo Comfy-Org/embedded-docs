@@ -4,13 +4,16 @@ The BasicGuider node creates a simple guidance mechanism for the sampling proces
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | required | - | - | The model to be used for guidance |
-| `conditioning` | CONDITIONING | required | - | - | The conditioning data that guides the generation process |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Yes | - | The model to be used for guidance |
+| `conditioning` | CONDITIONING | Yes | - | The conditioning data that guides the generation process |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `GUIDER` | GUIDER | A guider object that can be used during the sampling process to guide generation |
+
+---
+**Source fingerprint (SHA-256):** `012171caea6aacfadaabacb746be104ca783ae5ea5834cc4a67088233b835654`

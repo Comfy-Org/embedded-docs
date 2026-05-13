@@ -1,16 +1,22 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageSetFromFolderNode/ja.md)
 
-LoadImageSetFromFolderNodeは、トレーニング目的で指定されたフォルダから複数の画像を読み込みます。一般的な画像形式を自動的に検出し、オプションでさまざまな方法を使用して画像をリサイズしてから、バッチとして返します。
+以下が翻訳結果です。
+
+## 概要
+LoadImageSetFromFolderNode は、指定されたフォルダディレクトリからトレーニング用の複数の画像を読み込みます。一般的な画像形式を自動的に検出し、必要に応じて異なる方法で画像をリサイズした後、バッチとして返します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `folder` | STRING | はい | 複数のオプション利用可能 | 画像を読み込む元のフォルダです。 |
-| `resize_method` | STRING | いいえ | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | 画像のリサイズに使用する方法です（デフォルト: "None"）。 |
+| `folder` | STRING | はい | 複数のオプションが利用可能 | 画像を読み込むフォルダを指定します。 |
+| `resize_method` | STRING | いいえ | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | 画像のリサイズ方法を指定します（デフォルト："None"）。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | 読み込まれた画像のバッチを単一のテンソルとして出力します。 |
+| `IMAGE` | IMAGE | 読み込まれた画像のバッチを単一のテンソルとして返します。 |
+
+---
+**Source fingerprint (SHA-256):** `46fcfbf6a2ad95e707e32e54ed7b4c06bfd1cc290df122042187689f41bed828`

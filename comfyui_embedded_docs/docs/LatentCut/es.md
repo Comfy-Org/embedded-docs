@@ -4,15 +4,18 @@ El nodo LatentCut extrae una sección específica de muestras latentes a lo larg
 
 ## Entradas
 
-| Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `samples` | LATENT | Sí | - | Las muestras latentes de entrada desde las cuales extraer |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `samples` | LATENT | Sí | - | Las muestras latentes de entrada de las que extraer |
 | `dim` | COMBO | Sí | "x"<br>"y"<br>"t" | La dimensión a lo largo de la cual cortar las muestras latentes |
-| `index` | INT | No | -16384 a 16384 | La posición inicial para el corte (por defecto: 0). Los valores positivos cuentan desde el inicio, los valores negativos cuentan desde el final |
-| `amount` | INT | No | 1 a 16384 | El número de elementos a extraer a lo largo de la dimensión especificada (por defecto: 1) |
+| `index` | INT | Sí | -16384 a 16384 | La posición inicial para el corte (predeterminado: 0). Los valores positivos cuentan desde el inicio, los valores negativos cuentan desde el final. El nodo ajusta automáticamente el índice para mantenerse dentro del rango válido de las muestras latentes |
+| `amount` | INT | Sí | 1 a 16384 | El número de elementos a extraer a lo largo de la dimensión especificada (predeterminado: 1). El nodo reduce automáticamente este valor si excede los datos disponibles más allá del índice inicial |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Datos | Descripción |
-|-------------|-----------|-------------|
+| Nombre de Salida | Tipo de Dato | Descripción |
+|------------------|--------------|-------------|
 | `output` | LATENT | La porción extraída de las muestras latentes |
+
+---
+**Source fingerprint (SHA-256):** `54f2b0cead9dce2c2cbd241d4e8c50ce85a67d3e1a40e7002056b83acbf0cf2d`

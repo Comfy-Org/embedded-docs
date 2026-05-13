@@ -1,21 +1,24 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/tr.md)
 
-SD_4XUpscale_Conditioning düğümü, difüzyon modellerini kullanarak görüntüleri yukarı ölçeklendirmek için koşullandırma verilerini hazırlar. Girdi görüntülerini ve koşullandırma verilerini alır, ardından yukarı ölçeklendirme sürecine rehberlik edecek şekilde değiştirilmiş koşullandırma oluşturmak için ölçeklendirme ve gürültü artırma uygular. Düğüm, hem pozitif hem de negatif koşullandırmanın yanı sıra yukarı ölçeklenmiş boyutlar için gizli temsilleri çıktı olarak verir.
+SD_4XUpscale_Conditioning düğümü, difüzyon modelleri kullanarak görüntüleri büyütmek için koşullandırma verilerini hazırlar. Giriş görüntülerini ve koşullandırma verilerini alır, ardından büyütme işlemini yönlendirmek için ölçeklendirme ve gürültü artırımı uygulayarak değiştirilmiş koşullandırma oluşturur. Düğüm, büyütülmüş boyutlar için hem pozitif hem de negatif koşullandırmayı gizli temsillerle birlikte çıktı olarak verir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `görüntüler` | IMAGE | Evet | - | Yukarı ölçeklenecek girdi görüntüleri |
-| `pozitif` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verileri |
-| `negatif` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verileri |
-| `ölçek_oranı` | FLOAT | Hayır | 0.0 - 10.0 | Girdi görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) |
-| `gürültü_artırımı` | FLOAT | Hayır | 0.0 - 1.0 | Yukarı ölçeklendirme sürecinde eklenen gürültü miktarı (varsayılan: 0.0) |
+| `images` | IMAGE | Evet | - | Büyütülecek giriş görüntüleri |
+| `positive` | CONDITIONING | Evet | - | Üretimi istenen içeriğe yönlendiren pozitif koşullandırma verileri |
+| `negative` | CONDITIONING | Evet | - | Üretimi istenmeyen içerikten uzaklaştıran negatif koşullandırma verileri |
+| `scale_ratio` | FLOAT | Hayır | 0.0 - 10.0 | Giriş görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) |
+| `noise_augmentation` | FLOAT | Hayır | 0.0 - 1.0 | Büyütme işlemi sırasında eklenecek gürültü miktarı (varsayılan: 0.0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `negatif` | CONDITIONING | Yukarı ölçeklendirme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
-| `gizli` | CONDITIONING | Yukarı ölçeklendirme bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
-| `latent` | LATENT | Yukarı ölçeklenmiş boyutlarla eşleşen boş gizli temsil |
+|-----------|-----------|-------------|
+| `positive` | CONDITIONING | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma |
+| `negative` | CONDITIONING | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma |
+| `latent` | LATENT | Büyütülmüş boyutlarla eşleşen boş gizli temsil |
+
+---
+**Source fingerprint (SHA-256):** `ede1ea8f5a95e7f9e52070b5132a4ed3e87f92230d14a74b9d713f547c74d785`

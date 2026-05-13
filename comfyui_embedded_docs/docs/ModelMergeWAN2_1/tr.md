@@ -1,6 +1,6 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeWAN2_1/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeWAN2_1/tr.md)
 
-ModelMergeWAN2_1 düğümü, iki modelin bileşenlerini ağırlıklı ortalamalar kullanarak birleştirir. 30 blok içeren 1.3B modelleri ve 40 blok içeren 14B modelleri dahil olmak üzere farklı model boyutlarını destekler; ek bir görüntü gömme bileşeni içeren görüntüden videoya modeller için özel bir işleme sahiptir. Modellerin her bir bileşeni, iki giriş modeli arasındaki karıştırma oranını kontrol etmek için bağımsız olarak ağırlıklandırılabilir.
+ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini bileşenlerini ağırlıklı ortalamalar kullanarak harmanlayarak birleştirir. 30 bloklu 1.3B modeller ve 40 bloklu 14B modeller dahil olmak üzere farklı model boyutlarını destekler. Ek bir görüntü gömme bileşeni içeren görüntüden videoya modeller için özel işleme sahiptir. Modellerin her bir bileşeni, iki giriş modeli arasındaki harmanlama oranını kontrol etmek için ayrı ayrı ağırlıklandırılabilir.
 
 ## Girişler
 
@@ -10,9 +10,9 @@ ModelMergeWAN2_1 düğümü, iki modelin bileşenlerini ağırlıklı ortalamala
 | `model2` | MODEL | Evet | - | Birleştirilecek ikinci model |
 | `patch_embedding.` | FLOAT | Evet | 0.0 - 1.0 | Yama gömme bileşeni için ağırlık (varsayılan: 1.0) |
 | `time_embedding.` | FLOAT | Evet | 0.0 - 1.0 | Zaman gömme bileşeni için ağırlık (varsayılan: 1.0) |
-| `time_projection.` | FLOAT | Evet | 0.0 - 1.0 | Zaman projeksiyonu bileşeni için ağırlık (varsayılan: 1.0) |
+| `time_projection.` | FLOAT | Evet | 0.0 - 1.0 | Zaman izdüşümü bileşeni için ağırlık (varsayılan: 1.0) |
 | `text_embedding.` | FLOAT | Evet | 0.0 - 1.0 | Metin gömme bileşeni için ağırlık (varsayılan: 1.0) |
-| `img_emb.` | FLOAT | Evet | 0.0 - 1.0 | Görüntüden videoya modellerde kullanılan görüntü gömme bileşeni için ağırlık (varsayılan: 1.0) |
+| `img_emb.` | FLOAT | Evet | 0.0 - 1.0 | Görüntü gömme bileşeni için ağırlık, görüntüden videoya modellerde kullanılır (varsayılan: 1.0) |
 | `blocks.0.` | FLOAT | Evet | 0.0 - 1.0 | Blok 0 için ağırlık (varsayılan: 1.0) |
 | `blocks.1.` | FLOAT | Evet | 0.0 - 1.0 | Blok 1 için ağırlık (varsayılan: 1.0) |
 | `blocks.2.` | FLOAT | Evet | 0.0 - 1.0 | Blok 2 için ağırlık (varsayılan: 1.0) |
@@ -53,12 +53,15 @@ ModelMergeWAN2_1 düğümü, iki modelin bileşenlerini ağırlıklı ortalamala
 | `blocks.37.` | FLOAT | Evet | 0.0 - 1.0 | Blok 37 için ağırlık (varsayılan: 1.0) |
 | `blocks.38.` | FLOAT | Evet | 0.0 - 1.0 | Blok 38 için ağırlık (varsayılan: 1.0) |
 | `blocks.39.` | FLOAT | Evet | 0.0 - 1.0 | Blok 39 için ağırlık (varsayılan: 1.0) |
-| `head.` | FLOAT | Evet | 0.0 - 1.0 | Baş (head) bileşeni için ağırlık (varsayılan: 1.0) |
+| `head.` | FLOAT | Evet | 0.0 - 1.0 | Baş bileşeni için ağırlık (varsayılan: 1.0) |
 
-**Not:** Tüm ağırlık parametreleri, 0.01 adım artışlarıyla 0.0 ile 1.0 arasında bir aralık kullanır. Düğüm, farklı model boyutlarını barındırmak için 40 bloğa kadar destekler; 1.3B modeller 30 blok, 14B modeller ise 40 blok kullanır. `img_emb.` parametresi özellikle görüntüden videoya modeller içindir.
+**Not:** Tüm ağırlık parametreleri 0.0 ile 1.0 arasında, 0.01 adım artışlarıyla bir aralık kullanır. Düğüm, farklı model boyutlarını desteklemek için 40 bloğa kadar destekler; 1.3B modeller 30 blok, 14B modeller ise 40 blok kullanır. `img_emb.` parametresi özellikle görüntüden videoya modeller içindir.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model` | MODEL | Belirtilen ağırlıklara göre her iki giriş modelinden bileşenlerin birleştirilmesiyle oluşan birleştirilmiş model |
+| `model` | MODEL | Belirtilen ağırlıklara göre her iki giriş modelinin bileşenlerini birleştiren birleştirilmiş model |
+
+---
+**Source fingerprint (SHA-256):** `d550a2f62bbcb4b46ccdd8a04fab80e93f96ea63426d48acb3515d51175efc99`

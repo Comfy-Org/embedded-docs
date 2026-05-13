@@ -1,24 +1,27 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideoExtend/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideoExtend/tr.md)
 
-WanSoundImageToVideoExtend düğümü, ses koşullandırması ve referans görüntüleri dahil ederek görüntüden videoya üretimi genişletir. Pozitif ve negatif koşullandırmaları video latents verileri ve isteğe bağlı ses gömme verileriyle alarak genişletilmiş video dizileri oluşturur. Düğüm bu girdileri işleyerek, ses ipuçlarıyla senkronize edilebilen tutarlı video çıktıları üretir.
+WanSoundImageToVideoExtend düğümü, mevcut bir video latentini, isteğe bağlı olarak ses, referans görüntü ve kontrol videosu rehberliğinde ek kareler oluşturarak genişletir. Bir başlangıç video latentini alır ve sağlanan koşullandırma ile ses ipuçlarını kullanarak yeni içeriği etkileyerek daha uzun bir video dizisi üretir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Videoda neyin yer alması gerektiğini yönlendiren pozitif koşullandırma istemleri |
-| `negative` | CONDITIONING | Evet | - | Videodan neyin çıkarılması gerektiğini belirten negatif koşullandırma istemleri |
-| `vae` | VAE | Evet | - | Video karelerini kodlamak ve kodunu çözmek için kullanılan Varyasyonel Otokodlayıcı |
-| `length` | INT | Evet | 1 to MAX_RESOLUTION | Video dizisi için oluşturulacak kare sayısı (varsayılan: 77, adım: 4) |
-| `video_latent` | LATENT | Evet | - | Uzatma için başlangıç noktası olarak hizmet eden başlangıç video latent temsili |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Ses özelliklerine dayalı olarak video üretimini etkileyebilecek isteğe bağlı ses gömme verileri |
-| `ref_image` | IMAGE | Hayır | - | Video üretimi için görsel rehberlik sağlayan isteğe bağlı referans görüntü |
-| `control_video` | IMAGE | Hayır | - | Oluşturulan videonun hareketini ve stilini yönlendirebilecek isteğe bağlı kontrol videosu |
+| `positive` | CONDITIONING | Evet | - | Videonun ne içermesi gerektiğini yönlendiren pozitif koşullandırma promptları |
+| `negative` | CONDITIONING | Evet | - | Videonun nelerden kaçınması gerektiğini belirten negatif koşullandırma promptları |
+| `vae` | VAE | Evet | - | Video karelerini kodlamak ve çözmek için kullanılan Varyasyonel Otomatik Kodlayıcı |
+| `length` | INT | Evet | 1 ile MAKSİMUM ÇÖZÜNÜRLÜK | Video dizisi için oluşturulacak toplam kare sayısı (varsayılan: 77, adım: 4) |
+| `video_latent` | LATENT | Evet | - | Genişletme için başlangıç noktası görevi gören ilk video latent temsili |
+| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Ses özelliklerine dayalı olarak video oluşturmayı etkileyebilen isteğe bağlı ses gömme vektörleri |
+| `ref_image` | IMAGE | Hayır | - | Video oluşturma için görsel rehberlik sağlayan isteğe bağlı referans görüntüsü |
+| `control_video` | IMAGE | Hayır | - | Oluşturulan videonun hareketini ve stilini yönlendirebilen isteğe bağlı kontrol videosu |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
+|-----------|-----------|-------------|
 | `positive` | CONDITIONING | Video bağlamı uygulanmış işlenmiş pozitif koşullandırma |
 | `negative` | CONDITIONING | Video bağlamı uygulanmış işlenmiş negatif koşullandırma |
 | `latent` | LATENT | Genişletilmiş video dizisini içeren oluşturulmuş video latent temsili |
+
+---
+**Source fingerprint (SHA-256):** `fc9aee5d51e96b864da7d75f592f07691be8b970346998b209b3ad8a72308ecb`

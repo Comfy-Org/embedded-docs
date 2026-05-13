@@ -5,7 +5,7 @@ O nó Wan2VideoEditApi utiliza o modelo Wan 2.7 para editar um vídeo com base e
 ## Entradas
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
+|-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Sim | `"wan2.7-videoedit"` | O modelo a ser usado para edição de vídeo. |
 | `model.prompt` | STRING | Sim | - | Instruções de edição ou requisitos de transferência de estilo. (padrão: string vazia) |
 | `model.resolution` | COMBO | Sim | `"720P"`<br>`"1080P"` | A resolução do vídeo de saída. |
@@ -15,15 +15,18 @@ O nó Wan2VideoEditApi utiliza o modelo Wan 2.7 para editar um vídeo com base e
 | `video` | VIDEO | Sim | - | O vídeo a ser editado. |
 | `seed` | INT | Não | 0 a 2147483647 | A semente a ser usada para a geração. (padrão: 0) |
 | `audio_setting` | COMBO | Não | `"auto"`<br>`"origin"` | 'auto': o modelo decide se deve regenerar o áudio com base no prompt. 'origin': preserva o áudio original do vídeo de entrada. (padrão: "auto") |
-| `watermark` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: Falso) |
+| `watermark` | BOOLEAN | Não | - | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False) |
 
 **Restrições:**
 *   O `model.prompt` deve ter pelo menos 1 caractere.
-*   O `video` de entrada deve ter duração entre 2 e 10 segundos.
+*   O `video` de entrada deve ter entre 2 e 10 segundos de duração.
 *   A entrada `model.reference_images` pode aceitar no máximo 4 imagens.
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
+|-------------|-----------|-------------|
 | `output` | VIDEO | O vídeo editado gerado pelo modelo. |
+
+---
+**Source fingerprint (SHA-256):** `d2dd65d743358c6a357e75076774e93c52c39893fbb376da2f4395446f440a20`

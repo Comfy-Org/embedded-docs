@@ -13,3 +13,6 @@ The SamplerLMS node creates a Least Mean Squares (LMS) sampler for use in diffus
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | A configured LMS sampler object that can be used in the sampling pipeline |
+
+---
+**Source fingerprint (SHA-256):** `0c045ef15890fe611dc0b9d455bafa313d28373a29c881a0c8bf5d80e69bc114`

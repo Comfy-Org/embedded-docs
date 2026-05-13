@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeMochiPreview/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeMochiPreview/tr.md)
 
-Bu düğüm, iki yapay zeka modelini blok tabanlı bir yaklaşımla birleştirir ve farklı model bileşenleri üzerinde ayrıntılı kontrol sağlar. Modelleri, konumsal frekanslar, gömme katmanları ve bireysel dönüştürücü bloklar dahil olmak üzere belirli bölümler için enterpolasyon ağırlıklarını ayarlayarak harmanlamanıza olanak tanır. Birleştirme işlemi, her iki giriş modelinin mimarilerini ve parametrelerini belirtilen ağırlık değerlerine göre birleştirir.
+Bu düğüm, blok tabanlı bir yaklaşım kullanarak iki yapay zeka modelini birleştirir ve farklı model bileşenleri üzerinde ince ayar yapma imkanı sağlar. Konumsal frekanslar, gömme katmanları ve bireysel dönüştürücü blokları dahil olmak üzere belirli bölümler için enterpolasyon ağırlıklarını ayarlayarak modelleri harmanlamanıza olanak tanır. Birleştirme işlemi, belirtilen ağırlık değerlerine göre her iki girdi modelinin mimarilerini ve parametrelerini birleştirir.
 
-## Girişler
+## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model1` | MODEL | Evet | - | Birleştirilecek ilk model |
 | `model2` | MODEL | Evet | - | Birleştirilecek ikinci model |
-| `pos_frequencies.` | FLOAT | Evet | 0.0 - 1.0 | Konumsal frekanslar enterpolasyonu için ağırlık (varsayılan: 1.0) |
+| `pos_frequencies.` | FLOAT | Evet | 0.0 - 1.0 | Konumsal frekans enterpolasyonu için ağırlık (varsayılan: 1.0) |
 | `t_embedder.` | FLOAT | Evet | 0.0 - 1.0 | Zaman gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) |
 | `t5_y_embedder.` | FLOAT | Evet | 0.0 - 1.0 | T5-Y gömücü enterpolasyonu için ağırlık (varsayılan: 1.0) |
-| `t5_yproj.` | FLOAT | Evet | 0.0 - 1.0 | T5-Y projeksiyon enterpolasyonu için ağırlık (varsayılan: 1.0) |
+| `t5_yproj.` | FLOAT | Evet | 0.0 - 1.0 | T5-Y izdüşüm enterpolasyonu için ağırlık (varsayılan: 1.0) |
 | `blocks.0.` | FLOAT | Evet | 0.0 - 1.0 | Blok 0 enterpolasyonu için ağırlık (varsayılan: 1.0) |
 | `blocks.1.` | FLOAT | Evet | 0.0 - 1.0 | Blok 1 enterpolasyonu için ağırlık (varsayılan: 1.0) |
 | `blocks.2.` | FLOAT | Evet | 0.0 - 1.0 | Blok 2 enterpolasyonu için ağırlık (varsayılan: 1.0) |
@@ -66,4 +66,7 @@ Bu düğüm, iki yapay zeka modelini blok tabanlı bir yaklaşımla birleştirir
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `model` | MODEL | Belirtilen ağırlıklara göre her iki giriş modelinin özelliklerini birleştiren birleştirilmiş model |
+| `model` | MODEL | Belirtilen ağırlıklara göre her iki girdi modelinin özelliklerini birleştiren birleştirilmiş model |
+
+---
+**Source fingerprint (SHA-256):** `aebf536f3f89ca8c81141ac871b1b612082c3bd38a29984168b05eccf0cb57e3`

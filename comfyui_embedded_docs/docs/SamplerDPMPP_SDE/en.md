@@ -9,10 +9,13 @@ The SamplerDPMPP_SDE node creates a DPM++ SDE (Stochastic Differential Equation)
 | `eta` | FLOAT | Yes | 0.0 - 100.0 | Controls the stochasticity of the sampling process (default: 1.0) |
 | `s_noise` | FLOAT | Yes | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0) |
 | `r` | FLOAT | Yes | 0.0 - 100.0 | A parameter that influences the sampling behavior (default: 0.5) |
-| `noise_device` | COMBO | Yes | "gpu"<br>"cpu" | Selects the device where noise calculations are performed |
+| `noise_device` | COMBO | Yes | "gpu"<br>"cpu" | Selects the device where noise calculations are performed (default: "gpu") |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | Returns a configured DPM++ SDE sampler object for use in sampling pipelines |
+
+---
+**Source fingerprint (SHA-256):** `43b3b3c4b2756a6e7979c12418de1dba79e3e0c0fde2a06505cf0a6825e6ebbf`

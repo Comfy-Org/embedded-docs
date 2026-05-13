@@ -12,7 +12,7 @@ Enhances guidance towards detailed structure by using another set of CFG negativ
 | `scale` | FLOAT | Yes | 0.0 - 10.0 | Guidance scale factor (default: 3.0) |
 | `start_percent` | FLOAT | Yes | 0.0 - 1.0 | Starting percentage for guidance application (default: 0.01) |
 | `end_percent` | FLOAT | Yes | 0.0 - 1.0 | Ending percentage for guidance application (default: 0.15) |
-| `rescaling_scale` | FLOAT | Yes | 0.0 - 10.0 | Rescaling scale factor (default: 0.0) |
+| `rescaling_scale` | FLOAT | Yes | 0.0 - 10.0 | Rescaling scale factor to adjust the output magnitude (default: 0.0, meaning no rescaling) |
 
 **Note:** If both `double_layers` and `single_layers` are empty (contain no layer numbers), the node returns the original model without applying any guidance.
 
@@ -21,3 +21,6 @@ Enhances guidance towards detailed structure by using another set of CFG negativ
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with skip layer guidance applied |
+
+---
+**Source fingerprint (SHA-256):** `cf494fbeb33e7bc3b3f798e9e9b025623afad4ea6340ef628caa776c7d42ba12`

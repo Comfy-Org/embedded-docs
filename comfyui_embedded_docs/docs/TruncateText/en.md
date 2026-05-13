@@ -7,10 +7,13 @@ This node shortens text by cutting it off at a specified maximum length. It take
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `text` | STRING | Yes | N/A | The text string to be truncated. |
-| `max_length` | INT | No | 1 to 10000 | Maximum text length. The text will be cut off after this many characters (default: 77). |
+| `max_length` | INT | Yes | 1 to 10000 | Maximum text length. The text will be cut off after this many characters (default: 77). |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `string` | STRING | The truncated text, containing only the first `max_length` characters from the input. |
+
+---
+**Source fingerprint (SHA-256):** `271a77a910967c4fd86a07485449679fb8db89f6b3f2bf0a8fa2ff224ea2f7b2`

@@ -13,10 +13,13 @@ The TextEncodeQwenImageEditPlus node processes text prompts and optional images 
 | `image2` | IMAGE | No | - | Second optional input image for analysis and modification |
 | `image3` | IMAGE | No | - | Third optional input image for analysis and modification |
 
-**Note:** When a VAE is provided, the node generates reference latents from all input images. The node can process up to three images simultaneously, and images are automatically resized to appropriate dimensions for processing.
+**Note:** When a VAE is provided, the node generates reference latents from all input images. The node can process up to three images simultaneously. Images are automatically resized to 384x384 pixels for vision-language processing, and to dimensions divisible by 8 (with a target area of 1024x1024 pixels) for VAE encoding.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | Encoded conditioning data containing text tokens and optional reference latents for image generation |
+
+---
+**Source fingerprint (SHA-256):** `54889d9a3b70e41d623020f3fd5e3c798c72799492c67a9efd99f543c88bb968`

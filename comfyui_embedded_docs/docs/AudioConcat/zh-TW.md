@@ -1,17 +1,22 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioConcat/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioConcat/zh-TW.md)
 
-AudioConcat 節點透過拼接方式將兩個音訊輸入組合在一起。它接收兩個音訊輸入，並按照您指定的順序連接它們，可將第二個音訊置於第一個音訊之前或之後。該節點會自動處理不同的音訊格式，透過將單聲道音訊轉換為立體聲並匹配兩個輸入之間的採樣率。
+## 概述
 
-## 輸入參數
+AudioConcat 節點透過將兩個音訊輸入連接在一起來合併它們。它接收兩個音訊輸入，並依照您指定的順序進行連接，可將第二個音訊放置在第一個音訊之前或之後。此節點會自動處理不同的音訊格式，將單聲道音訊轉換為立體聲，並匹配兩個輸入之間的取樣率。
 
-| 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 數值範圍 | 描述 |
-|-----------|-----------|------------|---------|-------|-------------|
-| `audio1` | AUDIO | 必填 | - | - | 要進行拼接的第一個音訊輸入 |
-| `audio2` | AUDIO | 必填 | - | - | 要進行拼接的第二個音訊輸入 |
-| `direction` | COMBO | 必填 | after | ['after', 'before'] | 決定將 audio2 附加在 audio1 之後還是之前 |
+## 輸入
 
-## 輸出結果
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
+|-----------|-----------|----------|-------|-------------|
+| `audio1` | AUDIO | 是 | - | 要連接的第一個音訊輸入 |
+| `audio2` | AUDIO | 是 | - | 要連接的第二個音訊輸入 |
+| `direction` | COMBO | 是 | `"after"`<br>`"before"` | 決定將 audio2 附加在 audio1 之後或之前（預設值："after"） |
 
-| 輸出名稱 | 資料類型 | 描述 |
+## 輸出
+
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `AUDIO` | AUDIO | 包含兩個輸入音訊檔案拼接後的組合音訊 |
+| `AUDIO` | AUDIO | 包含兩個輸入音訊檔案連接後的合併音訊 |
+
+---
+**Source fingerprint (SHA-256):** `b54046e29761cf27bc5b1c065dac87846613afc0b5cbb296632628bf7d4527b7`

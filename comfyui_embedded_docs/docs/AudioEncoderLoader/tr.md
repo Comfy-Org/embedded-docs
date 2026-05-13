@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEncoderLoader/tr.md)
 
-AudioEncoderLoader düğümü, mevcut ses kodlayıcı dosyalarınızdan ses kodlayıcı modellerini yükler. Bir ses kodlayıcı dosya adını girdi olarak alır ve iş akışınızda ses işleme görevleri için kullanılabilecek yüklenmiş bir ses kodlayıcı modeli döndürür.
+AudioEncoderLoader düğümü, ses kodlayıcılar klasörünüzdeki bir dosyadan ses kodlayıcı modeli yükler. Girdi olarak bir ses kodlayıcı modelinin dosya adını alır ve yüklenen modeli döndürür; bu model daha sonra iş akışınızda ses işleme görevleri için kullanılabilir.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `audio_encoder_name` | STRING | COMBO | - | Mevcut ses kodlayıcı dosyaları | audio_encoders klasörünüzden hangi ses kodlayıcı model dosyasının yükleneceğini seçer |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `audio_encoder_name` | STRING | Evet | audio_encoders klasöründeki mevcut ses kodlayıcı dosyalarının listesi | Hangi ses kodlayıcı model dosyasının yükleneceğini seçer |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `audio_encoder` | AUDIO_ENCODER | Ses işleme iş akışlarında kullanılmak üzere yüklenmiş ses kodlayıcı modelini döndürür |
+| `audio_encoder` | AUDIO_ENCODER | Yüklenen ses kodlayıcı modeli, ses işleme iş akışlarında kullanıma hazırdır |
+
+---
+**Source fingerprint (SHA-256):** `24cbd45198db7d950633358c29de57f56c999bc33534fabe80404528d194163c`

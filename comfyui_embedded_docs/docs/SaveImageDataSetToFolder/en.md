@@ -15,3 +15,6 @@ This node saves a list of images to a specified folder within ComfyUI's output d
 ## Outputs
 
 This node does not have any outputs. It is an output node that performs a save operation to the filesystem.
+
+---
+**Source fingerprint (SHA-256):** `65c7905caa8ff2811054bec2830c1359d0c441b5d93f50bc4d0bf10645046556`

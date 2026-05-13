@@ -7,9 +7,6 @@ The TripoRefineNode refines draft 3D models created specifically by v1.4 Tripo m
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `model_task_id` | MODEL_TASK_ID | Yes | - | Must be a v1.4 Tripo model |
-| `auth_token` | AUTH_TOKEN_COMFY_ORG | No | - | Authentication token for Comfy.org API |
-| `comfy_api_key` | API_KEY_COMFY_ORG | No | - | API key for Comfy.org services |
-| `unique_id` | UNIQUE_ID | No | - | Unique identifier for the operation |
 
 **Note:** This node only accepts draft models created by Tripo v1.4 models. Using models from other versions may result in errors.
 
@@ -17,5 +14,9 @@ The TripoRefineNode refines draft 3D models created specifically by v1.4 Tripo m
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `model_file` | STRING | The file path or reference to the refined model |
+| `model_file` | STRING | The file path or reference to the refined model (for backward compatibility only) |
 | `model task_id` | MODEL_TASK_ID | The task identifier for the refined model operation |
+| `GLB` | FILE3DGLB | The refined 3D model in GLB format |
+
+---
+**Source fingerprint (SHA-256):** `136093c7cdd7eb33b55e862f4b8c0554de7bde656a7e0139efb63323ad041c32`

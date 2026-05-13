@@ -12,15 +12,18 @@ Bu düğüm, Wan 2.7 modelini kullanarak bir metin açıklamasından video oluş
 | `model.resolution` | COMBO | Evet | `"720P"`<br>`"1080P"` | Çıktı videosunun çözünürlüğü. |
 | `model.ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | Çıktı videosunun en-boy oranı. |
 | `model.duration` | INT | Evet | 2 ila 15 | Videonun saniye cinsinden uzunluğu (varsayılan: 5). |
-| `audio` | AUDIO | Hayır | - | Dudak senkronizasyonu veya ritme uygun hareket gibi video oluşturmayı yönlendirmek için bir ses dosyası. Sağlanmazsa, model eşleşen bir arka plan müziği veya ses efektleri oluşturur. Ses süresi 3 ila 30 saniye arasında olmalıdır. |
+| `audio` | AUDIO | Hayır | - | Dudak senkronizasyonu veya ritme uygun hareket gibi video oluşturmayı yönlendirmek için bir ses dosyası. Sağlanmazsa, model eşleşen bir arka plan müziği veya ses efektleri oluşturur. Ses süresi 1,5 ila 60 saniye arasında olmalıdır. |
 | `seed` | INT | Hayır | 0 ila 2147483647 | Tekrarlanabilir sonuçlar sağlamak için oluşturmanın rastgeleliğini kontrol etmek için kullanılan bir sayı (varsayılan: 0). |
-| `prompt_extend` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, istem yapay zeka yardımıyla geliştirilir (varsayılan: True). |
+| `prompt_extend` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, istem yapay zeka yardımıyla geliştirilecektir (varsayılan: True). |
 | `watermark` | BOOLEAN | Hayır | - | Etkinleştirildiğinde, sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenir (varsayılan: False). |
 
-**Not:** `audio` parametresi isteğe bağlıdır. Sağlanırsa, süresi 3 ila 30 saniye arasında olmalıdır. Atlanırsa, model otomatik olarak ses oluşturur.
+**Not:** `audio` parametresi isteğe bağlıdır. Sağlanırsa, süresi 1,5 ila 60 saniye arasında olmalıdır. Atlanırsa, model otomatik olarak ses oluşturur.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
 | `output` | VIDEO | Oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `ce8a2f4e53b2bce879f143c66f6078fd81c6308e2822cb486b1cf8e178a6f58c`

@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetHookKeyframes/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetHookKeyframes/zh-TW.md)
 
-Set Hook Keyframes 節點允許您對現有的掛鉤群組應用關鍵影格排程功能。它接收一個掛鉤群組，並可選擇性地應用關鍵影格時間資訊，以控制在生成過程中不同掛鉤的執行時機。當提供關鍵影格時，此節點會複製掛鉤群組，並為群組內的所有掛鉤設定關鍵影格時間。
+## 概述
 
-## 輸入參數
+Set Hook Keyframes 節點允許您對現有的鉤子群組套用關鍵幀排程。它接收一個鉤子群組，並可選擇性地套用關鍵幀時間資訊，以控制在生成過程中不同鉤子的執行時機。當提供關鍵幀時，該節點會複製鉤子群組，並為群組內的所有鉤子設定關鍵幀時間。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `hooks` | HOOKS | 是 | - | 將要應用關鍵影格排程的掛鉤群組 |
-| `hook_kf` | HOOK_KEYFRAMES | 否 | - | 可選的關鍵影格群組，包含掛鉤執行的時間資訊 |
+| `hooks` | HOOKS | 是 | - | 將套用關鍵幀排程的鉤子群組 |
+| `hook_kf` | HOOK_KEYFRAMES | 否 | - | 可選的關鍵幀群組，包含鉤子執行的時間資訊 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `hooks` | HOOKS | 已應用關鍵影格排程的修改後掛鉤群組（若提供了關鍵影格則為複製版本） |
+| `hooks` | HOOKS | 已套用關鍵幀排程的修改後鉤子群組（若提供了關鍵幀則為複製版本） |
+
+---
+**Source fingerprint (SHA-256):** `48908e5247b18e5b7b1d894c2f1adcf6403e499125b0c3eb05978584b3d5759b`

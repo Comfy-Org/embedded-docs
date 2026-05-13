@@ -4,12 +4,15 @@ O nó StringLength calcula o número de caracteres em uma string de texto. Ele r
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Sim | N/A | A string de texto cujo comprimento será medido. Suporta entrada de múltiplas linhas. |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
+| `string` | STRING | Sim | N/A | A string de texto cujo comprimento será medido. Suporta entrada multilinha. |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `length` | INT | O número total de caracteres na string de entrada, incluindo espaços e caracteres especiais. |
+
+---
+**Source fingerprint (SHA-256):** `dd72fac8330002e5e0ef2673ff208de36c6cf31aeec22a1c231495c742df62e3`

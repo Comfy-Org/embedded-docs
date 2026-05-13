@@ -1,27 +1,30 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/tr.md)
 
-WanHuMoImageToVideo düğümü, görüntüleri video dizilerine dönüştürerek video kareleri için gizli temsiller oluşturur. Koşullandırma girdilerini işler ve video oluşturmayı etkilemek için referans görüntüler ve ses gömüleri içerebilir. Düğüm, video sentezi için uygun olan değiştirilmiş koşullandırma verilerini ve gizli temsilleri çıktı olarak verir.
+WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller oluşturarak görüntüleri video dizilerine dönüştürür. Koşullandırma girdilerini işler ve video oluşumunu etkilemek için referans görüntüleri ve ses katıştırmalarını (embeddings) dahil edebilir. Düğüm, video sentezi için uygun, değiştirilmiş koşullandırma verileri ve gizil temsiller çıktısı verir.
 
 ## Girdiler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Video oluşturmayı istenen içeriğe yönlendiren pozitif koşullandırma girdisi |
-| `negative` | CONDITIONING | Evet | - | Video oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi |
-| `vae` | VAE | Evet | - | Referans görüntüleri gizli uzaya kodlamak için kullanılan VAE modeli |
-| `width` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalı) |
-| `height` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalı) |
-| `length` | INT | Evet | 1 - MAX_RESOLUTION | Oluşturulan video dizisindeki kare sayısı (varsayılan: 97) |
+| `positive` | CONDITIONING | Evet | - | Video oluşumunu istenen içeriğe yönlendiren pozitif koşullandırma girdisi |
+| `negative` | CONDITIONING | Evet | - | Video oluşumunu istenmeyen içerikten uzaklaştıran negatif koşullandırma girdisi |
+| `vae` | VAE | Evet | - | Referans görüntüleri gizil uzaya kodlamak için kullanılan VAE modeli |
+| `width` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) |
+| `height` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı video karelerinin piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `length` | INT | Evet | 1 - MAX_RESOLUTION | Oluşturulan video dizisindeki kare sayısı (varsayılan: 97, (length - 1) 4'e bölünebilir olmalıdır) |
 | `batch_size` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video dizisi sayısı (varsayılan: 1) |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Video oluşturmayı ses içeriğine dayalı olarak etkileyebilen isteğe bağlı ses kodlama verisi |
-| `ref_image` | IMAGE | Hayır | - | Video oluşturma stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntü |
+| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Ses içeriğine göre video oluşumunu etkileyebilecek isteğe bağlı ses kodlama verisi |
+| `ref_image` | IMAGE | Hayır | - | Video oluşum stilini ve içeriğini yönlendirmek için kullanılan isteğe bağlı referans görüntüsü |
 
-**Not:** Bir referans görüntü sağlandığında, bu görüntü kodlanır ve hem pozitif hem de negatif koşullandırmaya eklenir. Ses kodlayıcı çıktısı sağlandığında, bu çıktı işlenir ve koşullandırma verisine dahil edilir.
+**Not:** Bir referans görüntüsü sağlandığında, kodlanır ve hem pozitif hem de negatif koşullandırmaya eklenir. Ses kodlayıcı çıktısı sağlandığında, işlenir ve koşullandırma verilerine dahil edilir. Hiçbiri sağlanmazsa, hem referans gizilleri hem de ses katıştırmaları için sıfır dolu yer tutucu tensörler kullanılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Referans görüntü ve/veya ses gömüleri dahil edilmiş değiştirilmiş pozitif koşullandırma |
-| `negative` | CONDITIONING | Referans görüntü ve/veya ses gömüleri dahil edilmiş değiştirilmiş negatif koşullandırma |
-| `latent` | LATENT | Video dizi verilerini içeren oluşturulmuş gizli temsil |
+| `positive` | CONDITIONING | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma |
+| `negative` | CONDITIONING | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma |
+| `latent` | LATENT | Video dizisi verilerini içeren oluşturulmuş gizil temsil |
+
+---
+**Source fingerprint (SHA-256):** `6301671d04748ce80c561a65df80c7ca146b91bcce8851872df40211af29fd39`

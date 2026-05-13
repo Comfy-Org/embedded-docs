@@ -1,12 +1,12 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_14B/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_14B/zh-TW.md)
 
-ModelMergeCosmosPredict2_14B 節點允許您透過調整不同模型元件的影響力來合併兩個 AI 模型。它提供了細粒度控制，使用特定模型層和元件的混合權重來決定第二個模型的每個部分對最終合併模型的貢獻程度。
+ModelMergeCosmosPredict2_14B 節點透過混合兩個 AI 模型的內部元件來合併它們。它讓您能夠精確控制第二個模型的每個部分對最終合併結果的影響程度，透過為特定層級和元件設定可調整的權重值來實現。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | 是 | - | 要與之合併的基礎模型 |
+| `model1` | MODEL | 是 | - | 要合併的基礎模型 |
 | `model2` | MODEL | 是 | - | 要合併到基礎模型中的次要模型 |
 | `pos_embedder.` | FLOAT | 是 | 0.0 - 1.0 | 位置嵌入器混合權重（預設值：1.0） |
 | `x_embedder.` | FLOAT | 是 | 0.0 - 1.0 | 輸入嵌入器混合權重（預設值：1.0） |
@@ -50,10 +50,13 @@ ModelMergeCosmosPredict2_14B 節點允許您透過調整不同模型元件的影
 | `blocks.35.` | FLOAT | 是 | 0.0 - 1.0 | 區塊 35 混合權重（預設值：1.0） |
 | `final_layer.` | FLOAT | 是 | 0.0 - 1.0 | 最終層混合權重（預設值：1.0） |
 
-**注意：** 所有混合權重參數接受 0.0 到 1.0 之間的值，其中 0.0 表示該特定元件不採用 model2 的貢獻，1.0 表示該特定元件完全採用 model2 的貢獻。
+**注意：** 所有混合權重參數接受 0.0 到 1.0 之間的值，其中 0.0 表示該特定元件不受 model2 影響，1.0 表示完全採用 model2 的貢獻。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 結合了兩個輸入模型特徵的合併模型 |
+| `model` | MODEL | 結合兩個輸入模型特徵的合併模型 |
+
+---
+**Source fingerprint (SHA-256):** `5e72608391bc47c2610c93fda19e6e12a1695f95f6135a08efe97e3d400acf84`

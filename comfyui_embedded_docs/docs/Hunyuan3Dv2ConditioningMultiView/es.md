@@ -1,21 +1,24 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/es.md)
 
-El nodo Hunyuan3Dv2ConditioningMultiView procesa incrustaciones de visión CLIP multivista para la generación de vídeos 3D. Toma incrustaciones opcionales de vista frontal, izquierda, posterior y derecha y las combina con codificación posicional para crear datos de condicionamiento para modelos de vídeo. El nodo genera tanto condicionamiento positivo a partir de las incrustaciones combinadas como condicionamiento negativo con valores cero.
+El nodo `Hunyuan3Dv2ConditioningMultiView` procesa embeddings de visión CLIP multivista para la generación de video 3D. Toma embeddings opcionales de las vistas frontal, izquierda, trasera y derecha, y los combina con codificación posicional para crear datos de condicionamiento para modelos de video. El nodo genera tanto condicionamiento positivo a partir de los embeddings combinados como condicionamiento negativo con valores cero.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `frente` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista frontal |
-| `izquierda` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista izquierda |
-| `atrás` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista posterior |
-| `derecha` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista derecha |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `front` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista frontal |
+| `left` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista izquierda |
+| `back` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista trasera |
+| `right` | CLIP_VISION_OUTPUT | No | - | Salida de visión CLIP para la vista derecha |
 
 **Nota:** Se debe proporcionar al menos una entrada de vista para que el nodo funcione. El nodo solo procesará las vistas que contengan datos válidos de salida de visión CLIP.
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `negativo` | CONDITIONING | Condicionamiento positivo que contiene las incrustaciones multivista combinadas con codificación posicional |
+|------------------|--------------|-------------|
+| `positive` | CONDITIONING | Condicionamiento positivo que contiene los embeddings multivista combinados con codificación posicional |
 | `negative` | CONDITIONING | Condicionamiento negativo con valores cero para aprendizaje contrastivo |
+
+---
+**Source fingerprint (SHA-256):** `01998ae9ba7d2ae9a2f6a0b5aee4c03168f935fb9769317cd80d93a7a4b96f13`

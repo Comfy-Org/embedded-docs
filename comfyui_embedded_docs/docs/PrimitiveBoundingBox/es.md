@@ -4,15 +4,18 @@ El nodo PrimitiveBoundingBox crea un área rectangular simple definida por su po
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `x` | INT | No | 0 a 8192 | La coordenada X para la esquina superior izquierda del cuadro delimitador (por defecto: 0). |
-| `y` | INT | No | 0 a 8192 | La coordenada Y para la esquina superior izquierda del cuadro delimitador (por defecto: 0). |
-| `width` | INT | No | 1 a 8192 | El ancho del cuadro delimitador (por defecto: 512). |
-| `height` | INT | No | 1 a 8192 | La altura del cuadro delimitador (por defecto: 512). |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `x` | INT | Sí | 0 a 8192 | La coordenada X de la esquina superior izquierda del cuadro delimitador (predeterminado: 0). |
+| `y` | INT | Sí | 0 a 8192 | La coordenada Y de la esquina superior izquierda del cuadro delimitador (predeterminado: 0). |
+| `width` | INT | Sí | 1 a 8192 | El ancho del cuadro delimitador (predeterminado: 512). |
+| `height` | INT | Sí | 1 a 8192 | La altura del cuadro delimitador (predeterminado: 512). |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+|------------------|--------------|-------------|
 | `bounding_box` | BOUNDING_BOX | Una estructura de datos que contiene las propiedades `x`, `y`, `width` y `height` del rectángulo definido. |
+
+---
+**Source fingerprint (SHA-256):** `715f1a2bd650ecd6ba2ea3c1d54636bc32dff4fb4aec8f088ee9b0994809412c`

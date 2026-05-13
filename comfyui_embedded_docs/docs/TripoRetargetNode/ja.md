@@ -1,20 +1,26 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/ja.md)
 
-TripoRetargetNodeは、事前定義されたアニメーションを3Dキャラクターモデルに適用するために、モーションデータのリターゲティングを行います。このノードは、以前に処理された3Dモデルを受け取り、いくつかのプリセットアニメーションのいずれかを適用して、アニメーション付きの3Dモデルファイルを出力として生成します。ノードはTripo APIと通信して、アニメーションリターゲティング操作を処理します。
+以下が翻訳結果です。
+
+TripoRetargetNodeは、モーションデータのリターゲティングにより、3Dキャラクターモデルに定義済みアニメーションを適用します。このノードは、事前にリギングされた3Dモデルを受け取り、いくつかのプリセットアニメーションのうち1つを適用して、アニメーション化された3Dモデルファイルを出力として生成します。このノードはTripo APIと通信して、アニメーションリターゲティング操作を処理します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `original_model_task_id` | RIG_TASK_ID | はい | - | アニメーションを適用する、以前に処理された3DモデルのタスクID |
-| `animation` | STRING | はい | "preset:idle"<br>"preset:walk"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn" | 3Dモデルに適用するアニメーションプリセット |
-| `auth_token` | AUTH_TOKEN_COMFY_ORG | いいえ | - | Comfy.org APIアクセスのための認証トークン |
-| `comfy_api_key` | API_KEY_COMFY_ORG | いいえ | - | Comfy.orgサービスアクセスのためのAPIキー |
-| `unique_id` | UNIQUE_ID | いいえ | - | 操作を追跡するための一意の識別子 |
+| `original_model_task_id` | RIG_TASK_ID | はい | - | アニメーションを適用する、事前に処理されたリギング済み3DモデルのタスクID |
+| `animation` | STRING | はい | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | 3Dモデルに適用するアニメーションプリセット。オプションには、人型アニメーション（待機、歩行、走行、潜水、登攀、ジャンプ、斬撃、射撃、被ダメージ、落下、旋回）とクリーチャーアニメーション（四足歩行、六足歩行、八足歩行、蛇行移動、水生移動）が含まれます。 |
+| `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | いいえ | - | Comfy.org APIアクセス用の認証トークン（非表示パラメータ） |
+| `api_key_comfy_org` | API_KEY_COMFY_ORG | いいえ | - | Comfy.orgサービスアクセス用のAPIキー（非表示パラメータ） |
+| `unique_id` | UNIQUE_ID | いいえ | - | 操作を追跡するための一意識別子（非表示パラメータ） |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成されたアニメーション付き3Dモデルファイル |
+| `model_file` | STRING | 生成されたアニメーション化3Dモデルファイル（下位互換性のため） |
 | `retarget task_id` | RETARGET_TASK_ID | リターゲティング操作を追跡するためのタスクID |
+| `GLB` | FILE3DGLB | GLB形式のアニメーション化3Dモデル |
+
+---
+**Source fingerprint (SHA-256):** `304326afdc1fa3e8c3593f151f771f93520e061802c831838c58ebc401b9e9e2`

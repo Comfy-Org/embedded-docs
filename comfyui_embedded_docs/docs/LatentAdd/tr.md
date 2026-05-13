@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentAdd/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentAdd/tr.md)
 
-LatentAdd düğümü, iki gizli temsilin toplanması için tasarlanmıştır. Bu temsillerde kodlanmış özellik veya karakteristiklerin birleştirilmesini, eleman bazlı toplama işlemi gerçekleştirerek kolaylaştırır.
+LatentAdd düğümü, iki gizli temsilin (latent representation) toplanması için tasarlanmıştır. Bu temsillerde kodlanmış özelliklerin veya niteliklerin, öğe bazında toplama işlemi yapılarak birleştirilmesini sağlar.
 
-## Girdiler
+## Girişler
 
-| Parametre   | Veri Türü | Açıklama |
-|--------------|-------------|-------------|
-| `örnekler1`   | `LATENT`    | Eklenecek ilk gizli örnekler kümesi. Özelliklerinin başka bir gizli örnekler kümesiyle birleştirileceği girdilerden birini temsil eder. |
-| `örnekler2`   | `LATENT`    | Eklenecek ikinci gizli örnekler kümesi. Özelliklerinin ilk gizli örnekler kümesiyle eleman bazlı toplama yoluyla birleştirileceği diğer girdiyi sağlar. |
+| Parametre    | Veri Türü    | Açıklama |
+|--------------|--------------|-------------|
+| `samples1`   | `LATENT`     | Toplanacak ilk gizli örnek kümesi. Özellikleri başka bir gizli örnek kümesiyle birleştirilecek olan girdilerden birini temsil eder. |
+| `samples2`   | `LATENT`     | Toplanacak ikinci gizli örnek kümesi. Özellikleri, öğe bazında toplama yoluyla ilk gizli örnek kümesiyle birleştirilen diğer girdi olarak işlev görür. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
-|-----------|-------------|-------------|
-| `latent`  | `LATENT`    | İki gizli örneğin eleman bazlı toplamının sonucu olan ve her iki girdinin özelliklerini birleştiren yeni bir gizli örnekler kümesini temsil eder. |
+|-----------|-------------|-----------|
+| `latent`  | `LATENT`    | İki gizli örneğin öğe bazında toplanmasının sonucu. Her iki girdinin özelliklerini birleştiren yeni bir gizli örnek kümesini temsil eder. |

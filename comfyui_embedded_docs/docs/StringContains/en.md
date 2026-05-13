@@ -15,3 +15,6 @@ The StringContains node checks if a given string contains a specified substring.
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `contains` | BOOLEAN | Returns true if the substring is found in the string, false otherwise |
+
+---
+**Source fingerprint (SHA-256):** `ef7329ca8586e0f894306d93835490edb948a346db1e0cb011e4da5a6fe44202`

@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageFromBatch/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageFromBatch/tr.md)
 
-`ImageFromBatch` düğümü, bir grup resimden belirli bir bölümü sağlanan indeks ve uzunluk değerlerine göre çıkarmak için tasarlanmıştır. Toplu haldeki resimler üzerinde daha ayrıntılı kontrol sağlayarak, daha büyük bir grup içindeki tek tek resimler veya resim alt kümeleri üzerinde işlemler yapılmasına olanak tanır.
+`ImageFromBatch` düğümü, bir görüntü grubundan (batch) belirtilen indeks ve uzunluğa göre belirli bir bölümü çıkarmak için tasarlanmıştır. Gruplanmış görüntüler üzerinde daha ayrıntılı kontrol sağlayarak, daha büyük bir grup içindeki tek tek veya alt küme görüntüler üzerinde işlem yapılmasına olanak tanır.
 
-## Girdiler
+## Girişler
 
-| Alan          | Veri Türü | Açıklama                                                                           |
-|----------------|-------------|---------------------------------------------------------------------------------------|
-| `görüntü`        | `IMAGE`     | İçinden bir bölümün çıkarılacağı resim grubu. Bu parametre, kaynak grubu belirtmek için çok önemlidir. |
-| `toplu_indeks`  | `INT`       | Çıkarma işleminin başlayacağı, grup içindeki başlangıç indeksi. Çıkarılacak bölümün gruptaki başlangıç konumunu belirler. |
-| `uzunluk`       | `INT`       | `toplu_indeks`'ten başlayarak gruptan çıkarılacak resim sayısı. Bu parametre, çıkarılacak bölümün boyutunu tanımlar. |
+| Alan           | Veri Türü | Açıklama                                                                                   |
+|----------------|-------------|-----------------------------------------------------------------------------------------------|
+| `image`        | `IMAGE`     | Bir bölümün çıkarılacağı görüntü grubu. Bu parametre, kaynak grubun belirtilmesi için kritiktir. |
+| `batch_index`  | `INT`       | Çıkarma işleminin başlayacağı grup içindeki başlangıç indeksi. Gruptan çıkarılacak bölümün başlangıç konumunu belirler. |
+| `length`       | `INT`       | `batch_index`'ten başlayarak gruptan çıkarılacak görüntü sayısı. Bu parametre, çıkarılacak bölümün boyutunu tanımlar. |
 
 ## Çıktılar
 
-| Alan | Veri Türü | Açıklama                                                                                   |
-|-------|-------------|-----------------------------------------------------------------------------------------------|
-| `görüntü` | `IMAGE`    | Belirtilen gruptan çıkarılan resim bölümü. Bu çıktı, orijinal grubun `toplu_indeks` ve `uzunluk` parametreleri tarafından belirlenen bir alt kümesini temsil eder. |
+| Alan   | Veri Türü | Açıklama                                                                                   |
+|--------|-------------|-----------------------------------------------------------------------------------------------|
+| `image` | `IMAGE`    | Belirtilen gruptan çıkarılan görüntü bölümü. Bu çıktı, `batch_index` ve `length` parametreleri tarafından belirlenen, orijinal grubun bir alt kümesini temsil eder. |

@@ -8,11 +8,14 @@ This node converts a compressed audio representation (latent samples) back into 
 |-----------|-----------|----------|-------|-------------|
 | `samples` | LATENT | Yes | N/A | The compressed latent representation of the audio to be decoded. |
 | `vae` | VAE | Yes | N/A | The Variational Autoencoder model used to perform the decoding. |
-| `tile_size` | INT | No | 32 to 8192 | The size of each processing tile. The audio is decoded in sections of this length to conserve memory (default: 512). |
-| `overlap` | INT | No | 0 to 1024 | The number of samples that adjacent tiles overlap. This helps to reduce artifacts at the boundaries between tiles (default: 64). |
+| `tile_size` | INT | Yes | 32 to 8192 | The size of each processing tile. The audio is decoded in sections of this length to conserve memory (default: 512). |
+| `overlap` | INT | Yes | 0 to 1024 | The number of samples that adjacent tiles overlap. This helps to reduce artifacts at the boundaries between tiles (default: 64). |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | AUDIO | The decoded audio waveform. |
+
+---
+**Source fingerprint (SHA-256):** `d989f0cd0e4b4bf992d6860e27c25b8e814df52763c82909a61c58f418306352`

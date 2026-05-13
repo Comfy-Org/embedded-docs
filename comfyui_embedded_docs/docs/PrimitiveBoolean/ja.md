@@ -1,15 +1,20 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveBoolean/ja.md)
 
-Booleanノードは、ワークフロー内でブール値（true/false）を渡すためのシンプルな方法を提供します。ブール値の入力を受け取り、同じ値を変更せずに出力するため、他のノードのブールパラメータを制御することができます。
+このドキュメントはAIが生成しました。誤りや改善の提案があれば、ぜひご協力ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveBoolean/en.md)
+
+ブールノードは、ワークフローを通じてブール値（true/false）を渡すためのシンプルな方法を提供します。ブール値の入力を受け取り、その値を変更せずにそのまま出力することで、他のノードのブールパラメータを制御できます。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `値` | BOOLEAN | はい | true<br>false | ノードを通じて渡すブール値 |
+| `value` | BOOLEAN | はい | true<br>false | ノードを通過させるブール値 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `output` | BOOLEAN | 入力として提供されたものと同じブール値 |
+
+---
+**Source fingerprint (SHA-256):** `3913c2e23480710c9c9f003538b89ed0ab73cb4b47c587c5bf884b9c666999e0`

@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/tr.md)
 
-VideoTriangleCFGGuidance düğümü, video modellerine üçgen şeklinde bir sınıflandırıcısız kılavuzlama ölçeklendirme deseni uygular. Koşullandırma ölçeğini, minimum CFG değeri ile orijinal koşullandırma ölçeği arasında salınan bir üçgen dalga fonksiyonu kullanarak zaman içinde değiştirir. Bu, video oluşturma tutarlılığını ve kalitesini artırmaya yardımcı olabilecek dinamik bir kılavuzlama deseni oluşturur.
+VideoTriangleCFGGuidance düğümü, video modellerine üçgen şeklinde bir sınıflandırıcısız rehberlik ölçekleme deseni uygular. Minimum CFG değeri ile orijinal koşullandırma ölçeği arasında salınım yapan bir üçgen dalga fonksiyonu kullanarak koşullandırma ölçeğini zaman içinde değiştirir. Bu, video üretim tutarlılığını ve kalitesini iyileştirmeye yardımcı olabilecek dinamik bir rehberlik deseni oluşturur.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Evet | - | Üçgen CFG kılavuzluğunun uygulanacağı video modeli |
-| `min_cfg` | FLOAT | Evet | 0.0 - 100.0 | Üçgen desen için minimum CFG ölçek değeri (varsayılan: 1.0) |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+|-----------|-----------|---------|--------|----------|
+| `model` | MODEL | Evet | - | Üçgen CFG rehberliğinin uygulanacağı video modeli |
+| `min_cfg` | FLOAT | Evet | 0.0 - 100.0 | Üçgen deseni için minimum CFG ölçek değeri (varsayılan: 1.0) |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `model` | MODEL | Üçgen CFG kılavuzluğu uygulanmış modifiye edilmiş model |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `model` | MODEL | Üçgen CFG rehberliği uygulanmış değiştirilmiş model |
+
+---
+**Source fingerprint (SHA-256):** `0b854d78f32e265b1a4322cb11b231df33e6072611142537e0c8cff4e93db49a`

@@ -1,24 +1,27 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftImageToImageNode/fr.md)
 
-Ce nœud modifie une image existante en fonction d'une invite textuelle et d'un paramètre de force. Il utilise l'API Recraft pour transformer l'image d'entrée selon la description fournie tout en maintenant une certaine similarité avec l'image originale en fonction du paramètre de force.
+Ce nœud modifie une image existante en fonction d'un prompt textuel et d'un paramètre de force. Il utilise l'API Recraft pour transformer l'image d'entrée selon la description fournie, tout en conservant une certaine similarité avec l'image originale en fonction du réglage de force.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
+|-----------|-----------------|--------|-------|-------------|
 | `image` | IMAGE | Oui | - | L'image d'entrée à modifier |
-| `invite` | STRING | Oui | - | L'invite pour la génération d'image (par défaut : "") |
+| `prompt` | STRING | Oui | - | Prompt pour la génération d'image (par défaut : "", longueur maximale : 1000 caractères) |
 | `n` | INT | Oui | 1-6 | Le nombre d'images à générer (par défaut : 1) |
-| `intensité` | FLOAT | Oui | 0.0-1.0 | Définit la différence avec l'image originale, doit être comprise dans [0, 1], où 0 signifie presque identique et 1 signifie une similarité misérable (par défaut : 0.5) |
-| `graine` | INT | Oui | 0-18446744073709551615 | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
-| `recraft_style` | STYLEV3 | Non | - | Sélection de style optionnelle pour la génération d'image |
-| `invite_négative` | STRING | Non | - | Une description textuelle optionnelle des éléments indésirables sur une image (par défaut : "") |
-| `recraft_controls` | CONTROLS | Non | - | Contrôles additionnels optionnels sur la génération via le nœud Contrôles Recraft |
+| `strength` | FLOAT | Oui | 0.0-1.0 | Définit la différence avec l'image originale, doit se situer dans [0, 1], où 0 signifie presque identique et 1 signifie une similarité très faible (par défaut : 0.5) |
+| `seed` | INT | Oui | 0-18446744073709551615 | Graine pour déterminer si le nœud doit se réexécuter ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0) |
+| `recraft_style` | STYLEV3 | Non | - | Sélection facultative du style pour la génération d'image. Si non fourni, la valeur par défaut est `realistic_image` |
+| `negative_prompt` | STRING | Non | - | Une description textuelle facultative des éléments indésirables sur une image (par défaut : "") |
+| `recraft_controls` | CONTROLS | Non | - | Contrôles supplémentaires facultatifs sur la génération via le nœud Contrôles Recraft |
 
-**Note :** Le paramètre `seed` déclenche uniquement la réexécution du nœud mais ne garantit pas des résultats déterministes. Le paramètre de force est arrondi à 2 décimales en interne.
+**Remarque :** Le paramètre `seed` déclenche uniquement la réexécution du nœud mais ne garantit pas des résultats déterministes. Le paramètre de force est arrondi à 2 décimales en interne. Le prompt est validé et ne doit pas dépasser 1000 caractères. Si `recraft_style` n'est pas fourni, le nœud utilise par défaut le style `realistic_image`.
 
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
-| `image` | IMAGE | L'image ou les images générées basées sur l'image d'entrée et l'invite |
+|---------------|-----------------|-------------|
+| `image` | IMAGE | La ou les images générées à partir de l'image d'entrée et du prompt |
+
+---
+**Source fingerprint (SHA-256):** `e47ab70e77186e62c253c976cdd7942cfb949ba6461914d2b4341f3eca8e14aa`

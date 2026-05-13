@@ -4,13 +4,16 @@ El nodo VoxelToMeshBasic convierte datos de vóxeles 3D en geometría de malla. 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `voxel` | VOXEL | Sí | - | Los datos de vóxeles 3D a convertir en una malla |
-| `umbral` | FLOAT | Sí | -1.0 a 1.0 | El valor de umbral utilizado para determinar qué vóxeles forman parte de la superficie de la malla (valor por defecto: 0.6) |
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `voxel` | VOXEL | Sí | - | Los datos de vóxeles 3D que se convertirán en una malla |
+| `threshold` | FLOAT | Sí | -1.0 a 1.0 | El valor de umbral utilizado para determinar qué vóxeles forman parte de la superficie de la malla (predeterminado: 0.6) |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+| Nombre de salida | Tipo de dato | Descripción |
+|------------------|--------------|-------------|
 | `MESH` | MESH | La malla 3D generada que contiene vértices y caras |
+
+---
+**Source fingerprint (SHA-256):** `36df962c84c99a83f243a59b6387874e42e7d05323bd84079dbab112d2f1b67c`

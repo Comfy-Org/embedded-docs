@@ -1,17 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringSubstring/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringSubstring/tr.md)
 
-StringSubstring düğümü, daha büyük bir metin dizisinden bir bölüm çıkarır. Çıkarmak istediğiniz bölümü tanımlamak için bir başlangıç pozisyonu ve bitiş pozisyonu alır, ardından bu iki pozisyon arasındaki metni döndürür.
+StringSubstring düğümü, daha büyük bir metin dizesinden bir metin bölümü çıkarır. Çıkarmak istediğiniz bölümü tanımlamak için bir başlangıç konumu ve bitiş konumu alır ve bu iki konum arasındaki metni döndürür.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Evet | - | Çıkarma işlemi yapılacak giriş metin dizisi |
-| `start` | INT | Evet | - | Alt dizi için başlangıç pozisyon indeksi |
-| `end` | INT | Evet | - | Alt dizi için bitiş pozisyon indeksi |
+| `string` | STRING | Evet | - | Alt dizenin çıkarılacağı giriş metin dizesi. Çok satırlı metni destekler. |
+| `start` | INT | Evet | - | Alt dize için başlangıç konumu indeksi. İlk karakter 0 indeksindedir. |
+| `end` | INT | Evet | - | Alt dize için bitiş konumu indeksi. Bu indeksteki karakter sonuca dahil edilmez. |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türı | Açıklama |
-|-------------|-----------|-------------|
-| `output` | STRING | Giriş metninden çıkarılan alt dizi |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|-------------|
+| `output` | STRING | Giriş metninden çıkarılan alt dize; `start` konumundan başlayıp `end` konumuna kadar (ancak bu konum dahil değil) tüm karakterleri içerir. |
+
+---
+**Source fingerprint (SHA-256):** `962d0b19af88b6c95b5c9d374081ecd55ee8cffbfb638de7ed38e6e378b220c5`

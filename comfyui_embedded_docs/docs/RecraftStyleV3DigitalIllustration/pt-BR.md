@@ -4,12 +4,15 @@ Este nó configura um estilo para uso com a API Recraft, selecionando especifica
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
 | `substyle` | STRING | Não | `"digital_illustration"`<br>`"digital_illustration_anime"`<br>`"digital_illustration_cartoon"`<br>`"digital_illustration_comic"`<br>`"digital_illustration_concept_art"`<br>`"digital_illustration_fantasy"`<br>`"digital_illustration_futuristic"`<br>`"digital_illustration_graffiti"`<br>`"digital_illustration_graphic_novel"`<br>`"digital_illustration_hyperrealistic"`<br>`"digital_illustration_ink"`<br>`"digital_illustration_manga"`<br>`"digital_illustration_minimalist"`<br>`"digital_illustration_pixel_art"`<br>`"digital_illustration_pop_art"`<br>`"digital_illustration_retro"`<br>`"digital_illustration_sci_fi"`<br>`"digital_illustration_sticker"`<br>`"digital_illustration_street_art"`<br>`"digital_illustration_surreal"`<br>`"digital_illustration_vector"` | Um subestilo opcional para especificar um tipo particular de ilustração digital. Se não for selecionado, o estilo base "digital_illustration" será usado. |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+|---------------|---------------|-----------|
 | `recraft_style` | STYLEV3 | Um objeto de estilo configurado contendo o estilo "digital_illustration" selecionado e o subestilo opcional, pronto para ser passado para outros nós da API Recraft. |
+
+---
+**Source fingerprint (SHA-256):** `e52790a670839608ee1cb576e802a54d3bf2ca879ec288a24acd4ac7db27021a`

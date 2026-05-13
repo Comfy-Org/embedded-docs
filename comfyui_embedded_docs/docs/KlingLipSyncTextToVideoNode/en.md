@@ -24,3 +24,6 @@ Kling Lip Sync Text to Video Node synchronizes mouth movements in a video file t
 | `output` | VIDEO | Generated video with lip-synchronized audio |
 | `video_id` | STRING | Unique identifier for the generated video |
 | `duration` | STRING | Duration information for the generated video |
+
+---
+**Source fingerprint (SHA-256):** `f16200d52ba05acfedebc027dde91e2c91bdbb80086888d947c9f56a4e92856d`

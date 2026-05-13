@@ -1,17 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Morphology/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Morphology/tr.md)
 
-Morphology düğümü, görüntülerdeki şekilleri işlemek ve analiz etmek için kullanılan matematiksel işlemler olan çeşitli morfolojik işlemleri görüntülere uygular. Etki gücünü kontrol etmek için özelleştirilebilir bir çekirdek boyutu kullanarak aşındırma, genişletme, açma, kapama ve daha fazlası gibi işlemleri gerçekleştirebilir.
+Morphology düğümü, görüntülerdeki şekilleri işlemek ve analiz etmek için kullanılan matematiksel işlemler olan çeşitli morfolojik işlemleri uygular. Efekt gücünü kontrol etmek için özelleştirilebilir bir çekirdek boyutu kullanarak erozyon, genişleme, açma, kapama ve daha fazlası gibi işlemleri gerçekleştirebilir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `görüntü` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
-| `işlem` | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | Uygulanacak morfolojik işlem |
-| `çekirdek_boyutu` | INT | Hayır | 3-999 | Yapılandırıcı eleman çekirdeğinin boyutu (varsayılan: 3) |
+|-----------|-----------|----------|--------|----------|
+| `image` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
+| `operation` | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` | Uygulanacak morfolojik işlem (varsayılan: "erode") |
+| `kernel_size` | INT | Evet | 3-999 | Yapılandırma elemanı çekirdeğinin boyutu (varsayılan: 3). Tek sayı olmalıdır. |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türı | Açıklama |
-|-------------|-----------|-------------|
-| `görüntü` | IMAGE | Morfolojik işlem uygulandıktan sonra işlenmiş görüntü |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `image` | IMAGE | Morfolojik işlem uygulandıktan sonraki işlenmiş görüntü |
+
+---
+**Source fingerprint (SHA-256):** `7f6224a0e58fbb7263267b377394e119c6f8d65d16af4ce492ca9504654af7b4`

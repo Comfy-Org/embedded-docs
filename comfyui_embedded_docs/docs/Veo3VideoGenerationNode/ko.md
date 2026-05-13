@@ -1,26 +1,32 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Veo3VideoGenerationNode/ko.md)
 
-Google의 Veo 3 API를 사용하여 텍스트 프롬프트에서 비디오를 생성합니다. 이 노드는 veo-3.0-generate-001과 veo-3.0-fast-generate-001 두 가지 Veo 3 모델을 지원합니다. 오디오 생성과 고정된 8초 길이를 포함한 Veo 3 특화 기능으로 기본 Veo 노드를 확장합니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Veo3VideoGenerationNode/en.md)
+
+Google의 Veo 3 API를 사용하여 텍스트 프롬프트에서 비디오를 생성합니다. 이 노드는 빠른 버전과 라이트 버전을 포함한 여러 Veo 3 모델을 지원하며, 비디오 해상도, 길이 및 오디오 생성을 지정할 수 있습니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | 예 | - | 비디오에 대한 텍스트 설명 (기본값: "") |
-| `aspect_ratio` | COMBO | 예 | "16:9"<br>"9:16" | 출력 비디오의 화면비 (기본값: "16:9") |
-| `negative_prompt` | STRING | 아니오 | - | 비디오에서 피해야 할 내용을 안내하는 부정 텍스트 프롬프트 (기본값: "") |
-| `duration_seconds` | INT | 아니오 | 8-8 | 출력 비디오의 길이(초) (Veo 3은 8초만 지원함) (기본값: 8) |
-| `enhance_prompt` | BOOLEAN | 아니오 | - | AI 지원으로 프롬프트를 향상시킬지 여부 (기본값: True) |
-| `person_generation` | COMBO | 아니오 | "ALLOW"<br>"BLOCK" | 비디오에서 사람 생성 허용 여부 (기본값: "ALLOW") |
-| `seed` | INT | 아니오 | 0-4294967295 | 비디오 생성을 위한 시드 (0은 무작위) (기본값: 0) |
-| `image` | IMAGE | 아니오 | - | 비디오 생성을 안내하는 선택적 참조 이미지 |
-| `model` | COMBO | 아니오 | "veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | 비디오 생성에 사용할 Veo 3 모델 (기본값: "veo-3.0-generate-001") |
-| `generate_audio` | BOOLEAN | 아니오 | - | 비디오용 오디오 생성. 모든 Veo 3 모델에서 지원됩니다. (기본값: False) |
+| `aspect_ratio` | COMBO | 예 | "16:9"<br>"9:16" | 출력 비디오의 화면 비율 (기본값: "16:9") |
+| `resolution` | COMBO | 아니요 | "720p"<br>"1080p"<br>"4k" | 출력 비디오 해상도. 4K는 veo-3.1-lite 및 veo-3.0 모델에서 사용할 수 없습니다. (기본값: "720p") |
+| `negative_prompt` | STRING | 아니요 | - | 비디오에서 피해야 할 사항을 안내하는 부정 텍스트 프롬프트 (기본값: "") |
+| `duration_seconds` | INT | 아니요 | 4-8 | 출력 비디오의 길이(초), 2초 단위 (기본값: 8) |
+| `enhance_prompt` | BOOLEAN | 아니요 | - | 이 매개변수는 더 이상 사용되지 않으며 무시됩니다. (기본값: True) |
+| `person_generation` | COMBO | 아니요 | "ALLOW"<br>"BLOCK" | 비디오에서 사람 생성을 허용할지 여부 (기본값: "ALLOW") |
+| `seed` | INT | 아니요 | 0-4294967295 | 비디오 생성을 위한 시드 (0은 무작위) (기본값: 0) |
+| `image` | IMAGE | 아니요 | - | 비디오 생성을 안내하는 선택적 참조 이미지 |
+| `model` | COMBO | 아니요 | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | 비디오 생성에 사용할 Veo 3 모델 (기본값: "veo-3.0-generate-001") |
+| `generate_audio` | BOOLEAN | 아니요 | - | 비디오에 오디오를 생성합니다. 모든 Veo 3 모델에서 지원됩니다. (기본값: False) |
 
-**참고:** `duration_seconds` 매개변수는 모든 Veo 3 모델에서 8초로 고정되어 있으며 변경할 수 없습니다.
+**참고:** `enhance_prompt` 매개변수는 더 이상 사용되지 않으며 해당 값은 무시됩니다. 노드는 항상 내부적으로 프롬프트를 향상시킵니다. 또한 `resolution` 매개변수는 veo-3.1 모델을 사용할 때만 적용되며, veo-3.0 모델에서는 무시됩니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 생성된 비디오 파일 |
+
+---
+**Source fingerprint (SHA-256):** `36ea9d3f0ea717eb7b8146ca35dfdfbe538fbbf164541ee1d1b19b660543e375`

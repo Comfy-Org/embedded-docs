@@ -1,16 +1,19 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerAncestralCFGPP/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerEulerAncestralCFGPP/zh-TW.md)
 
-SamplerEulerAncestralCFGPP 節點建立了一個專門的取樣器，使用 Euler Ancestral 方法搭配分類器自由引導來生成影像。此取樣器結合了祖先取樣技術與引導條件化，能在保持連貫性的同時產生多樣的影像變化。它允許透過控制噪聲和步長調整的參數來微調取樣過程。
+SamplerEulerAncestralCFGPP 節點建立一個取樣器，使用歐拉祖先法搭配無分類器引導（CFG++）進行影像生成。此取樣器結合祖先取樣技術與引導條件，在保持一致性的同時產生多樣化的影像變體，並可透過控制雜訊與步長調整的參數進行微調。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `eta` | FLOAT | 是 | 0.0 - 1.0 | 控制取樣過程中的步長，數值越高代表更新越積極（預設值：1.0） |
-| `s_noise` | FLOAT | 是 | 0.0 - 10.0 | 調整取樣過程中添加的噪聲量（預設值：1.0） |
+| `eta` | FLOAT | 是 | 0.0 - 1.0 | 控制取樣過程中的步長，數值越高會產生更激進的更新（預設值：1.0） |
+| `s_noise` | FLOAT | 是 | 0.0 - 10.0 | 調整取樣過程中添加的雜訊量（預設值：1.0） |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `sampler` | SAMPLER | 返回一個已配置的取樣器物件，可在影像生成流程中使用 |
+| `sampler` | SAMPLER | 回傳一個已配置的取樣器物件，可用於影像生成流程中 |
+
+---
+**Source fingerprint (SHA-256):** `7eceec539a6a045db4d9953214add17011ef9d17e663dbbbbbb2bae0cbe40aa2`

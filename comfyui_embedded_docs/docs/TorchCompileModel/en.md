@@ -7,10 +7,13 @@ The TorchCompileModel node applies PyTorch compilation to a model to optimize it
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Yes | - | The model to be compiled and optimized |
-| `backend` | STRING | Yes | "inductor"<br>"cudagraphs" | The PyTorch compilation backend to use for optimization |
+| `backend` | STRING | Yes | "inductor"<br>"cudagraphs" | The PyTorch compilation backend to use for optimization (default: "inductor") |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The compiled model with PyTorch compilation applied |
+
+---
+**Source fingerprint (SHA-256):** `923e71b528e6e53468916f74c2a02924bf51738f29e36638312c6da6357fcedb`

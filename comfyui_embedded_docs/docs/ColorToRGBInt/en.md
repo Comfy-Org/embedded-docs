@@ -15,3 +15,6 @@ The ColorToRGBInt node converts a color specified in a hexadecimal format into a
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `rgb_int` | INT | The calculated RGB integer value. This is derived from the formula: `(Red * 65536) + (Green * 256) + Blue`. |
+
+---
+**Source fingerprint (SHA-256):** `5b8617d6b28caaa5f01dad1c6a302fa321f1bd53a0454451d468e36747e70e8f`

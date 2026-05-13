@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentApplyOperationCFG/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentApplyOperationCFG/zh-TW.md)
 
-LatentApplyOperationCFG 節點透過對潛在表示應用操作來修改模型中的條件引導過程。該節點在分類器自由引導（CFG）採樣過程中攔截條件輸出，並在潛在表示用於生成之前對其應用指定操作。
+## 概述
 
-## 輸入參數
+LatentApplyOperationCFG 節點會套用潛在操作，以修改模型中的條件引導（conditioning guidance）過程。其運作方式是攔截無分類器引導（CFG）取樣過程中的條件輸出，並在潛在表示用於生成之前，對其套用指定的操作。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 將要應用 CFG 操作的模型 |
-| `operation` | LATENT_OPERATION | 是 | - | 在 CFG 採樣過程中要應用的潛在操作 |
+| `model` | MODEL | 是 | - | 將套用 CFG 操作的模型 |
+| `operation` | LATENT_OPERATION | 是 | - | 在 CFG 取樣過程中套用的潛在操作 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已在其採樣過程中應用 CFG 操作的修改後模型 |
+| `model` | MODEL | 已將 CFG 操作套用至其取樣過程的修改後模型 |
+
+---
+**Source fingerprint (SHA-256):** `9fbcc9183abf89bb93e55263bb655e931549360c05a561f7dacae8723db62e52`

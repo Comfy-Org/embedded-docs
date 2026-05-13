@@ -17,3 +17,6 @@ The UNetSelfAttentionMultiply node applies multiplication factors to the query, 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `MODEL` | MODEL | The modified UNet model with scaled attention components |
+
+---
+**Source fingerprint (SHA-256):** `ee6328c6cba44d30d2e219a2af04bb3d3d9adeaabb959a46f87b3b299dfe2f43`

@@ -14,3 +14,6 @@ The LTXVPreprocess node applies compression preprocessing to images. It takes in
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output_image` | IMAGE | The processed output image with applied compression |
+
+---
+**Source fingerprint (SHA-256):** `2c5fbde5d011bdf3313ca05508f58a13eaae0bdff12f3659fef281c0045e480d`

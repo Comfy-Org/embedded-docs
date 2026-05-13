@@ -16,3 +16,6 @@ The LTXVSeparateAVLatent node takes a combined audio-visual latent representatio
 |-------------|-----------|-------------|
 | `video_latent` | LATENT | The latent representation containing the separated video data. |
 | `audio_latent` | LATENT | The latent representation containing the separated audio data. |
+
+---
+**Source fingerprint (SHA-256):** `55bce5d768e7fe13f885cc32d34ecdac5cdcbb667b03743004866ea4b6d58d46`

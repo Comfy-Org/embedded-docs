@@ -1,15 +1,20 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConvertStringToComboNode/ja.md)
 
-Convert String to Combo ノードは、入力されたテキスト文字列を受け取り、それを Combo データ型に変換します。これにより、Combo 入力を必要とする他のノードの選択肢として、テキスト値を使用できるようになります。このノードは文字列の値を変更せずにそのまま通過させますが、データ型を変更します。
+このドキュメントは AI が生成したものです。誤りや改善の提案があれば、ぜひご協力ください！[GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConvertStringToComboNode/en.md)
+
+Convert String to Combo ノードは、テキスト文字列を入力として受け取り、それを Combo データ型に変換します。これにより、テキスト値を、Combo 入力が必要な他のノードの選択肢として使用できるようになります。このノードは、文字列の値を変更せずにそのまま渡しますが、データ型を変更します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | はい | N/A | Combo 型に変換するテキスト文字列です。 |
+| `string` | STRING | はい | なし | Combo 型に変換するテキスト文字列。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | COMBO | 入力された文字列で、Combo データ型としてフォーマットされたものです。 |
+| `output` | COMBO | 入力された文字列が、Combo データ型としてフォーマットされたもの。 |
+
+---
+**Source fingerprint (SHA-256):** `37bd7db5a5ce2657db30a3a24da90c1c1e5c4a3f7089b4d03a0528b7770e9fe1`

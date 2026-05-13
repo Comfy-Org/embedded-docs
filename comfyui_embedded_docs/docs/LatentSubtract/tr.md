@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentSubtract/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentSubtract/tr.md)
 
-LatentSubtract düğümü, bir gizli temsili diğerinden çıkarmak için tasarlanmıştır. Bu işlem, bir gizli uzayda temsil edilen özellikleri veya nitelikleri diğerinden etkili bir şekilde kaldırarak, üretken modellerin çıktılarının karakteristiklerini manipüle etmek veya değiştirmek için kullanılabilir.
+LatentSubtract düğümü, bir gizli temsilin diğerinden çıkarılması için tasarlanmıştır. Bu işlem, bir gizli uzayda temsil edilen özellikleri veya nitelikleri etkili bir şekilde kaldırarak üretken modellerin çıktılarının özelliklerini değiştirmek veya düzenlemek için kullanılabilir.
 
-## Girdiler
+## Girişler
 
-| Parametre   | Veri Türü | Açıklama |
+| Parametre    | Veri Türü | Açıklama |
 |--------------|-------------|-------------|
-| `örnekler1`   | `LATENT`    | Üzerinden çıkarma işlemi yapılacak birinci gizli örnekler kümesi. Çıkarma işlemi için temel oluşturur. |
-| `örnekler2`   | `LATENT`    | Birinci kümeden çıkarılacak ikinci gizli örnekler kümesi. Bu işlem, nitelikleri veya özellikleri kaldırarak, ortaya çıkan üretken modelin çıktısını değiştirebilir. |
+| `samples1`   | `LATENT`    | Çıkarma işleminin yapılacağı ilk gizli örnek kümesi. Çıkarma işlemi için temel görevi görür. |
+| `samples2`   | `LATENT`    | İlk kümeden çıkarılacak ikinci gizli örnek kümesi. Bu işlem, nitelikleri veya özellikleri kaldırarak ortaya çıkan üretken modelin çıktısını değiştirebilir. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | İkinci gizli örnekler kümesinin birinciden çıkarılması sonucu. Bu değiştirilmiş gizli temsil, ileri üretken görevler için kullanılabilir. |
+| `latent`  | `LATENT`    | İkinci gizli örnek kümesinin birinciden çıkarılmasıyla elde edilen sonuç. Bu değiştirilmiş gizli temsil, daha sonraki üretken görevler için kullanılabilir. |

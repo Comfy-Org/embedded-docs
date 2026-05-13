@@ -6,16 +6,19 @@ Este nó utiliza a API Seedance 2.0 da ByteDance para gerar um vídeo a partir d
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `model` | COMBO | Sim | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | O modelo a ser usado para geração de vídeo. Selecionar um modelo revelará entradas adicionais obrigatórias para o prompt, resolução, proporção de aspecto, duração e geração de áudio. "Seedance 2.0" é para máxima qualidade; "Seedance 2.0 Fast" é para otimização de velocidade. |
 | `seed` | INT | Não | 0 a 2147483647 | Um valor de semente (padrão: 0). O nó será executado novamente se este valor mudar, mas os resultados são não determinísticos independentemente da semente. |
-| `watermark` | BOOLEAN | Não | `True` / `False` | Se deve adicionar uma marca d'água ao vídeo (padrão: False). Esta é uma configuração avançada. |
+| `watermark` | BOOLEAN | Não | Verdadeiro / Falso | Se deve adicionar uma marca d'água ao vídeo (padrão: Falso). Esta é uma configuração avançada. |
 
-**Nota:** O parâmetro `model` é uma combinação dinâmica. Ao selecionar um modelo, vários subparâmetros obrigatórios serão revelados, incluindo o prompt de texto, resolução, proporção de aspecto, duração e se deve gerar áudio. O texto do prompt deve ter pelo menos 1 caractere após a remoção de espaços em branco.
+**Nota:** O parâmetro `model` é uma combinação dinâmica. Ao selecionar um modelo, ele revelará vários subparâmetros obrigatórios que precisam ser preenchidos, incluindo o prompt de texto, resolução, proporção de aspecto, duração e se deve gerar áudio. O texto do prompt deve ter pelo menos 1 caractere após a remoção de espaços em branco.
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `video` | VIDEO | O arquivo de vídeo gerado. |
+
+---
+**Source fingerprint (SHA-256):** `f8552e47667ff4b1ad3c8c1c074d70bdc45227b79b026b4b3c06986443655473`

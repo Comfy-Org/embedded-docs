@@ -1,0 +1,25 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/en.md)
+
+## Overview
+
+This node takes a sequence of images and an optional audio track, and splits them into a specified number of padded segments. It is designed to prepare keyframe sequences for video generation, where each segment is padded to a consistent length and a corresponding mask is created to indicate which frames are valid.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `images` | IMAGE | Yes | N/A | The input image sequence to be split into segments. |
+| `segment_length` | INT | Yes | 1 to 10000 | Length of each segment in frames (default: 149). |
+| `num_segments` | INT | Yes | 1 to 100 | How many padded segments to emit as lists (default: 1). |
+| `audio` | AUDIO | No | N/A | Audio to slice for each emitted segment. |
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `keyframes_sequence` | IMAGE | A list of padded keyframe sequences, one for each segment. |
+| `keyframes_mask` | MASK | A list of masks indicating valid frames for each segment. |
+| `audio_segment` | AUDIO | A list of audio segments, one for each video segment. |
+
+---
+**Source fingerprint (SHA-256):** `c6a3ddca3fd61fcdb287fecb6969796eebd65e70f1174abdab57912586d27d00`

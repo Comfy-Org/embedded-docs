@@ -1,15 +1,18 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsAudioIsolation/es.md)
 
-El nodo ElevenLabs Voice Isolation elimina el ruido de fondo de un archivo de audio, aislando las voces o el habla. Envía el audio a la API de ElevenLabs para su procesamiento y devuelve el audio limpio.
+El nodo de Aislamiento de Voz de ElevenLabs elimina el ruido de fondo de un archivo de audio, aislando las voces o el habla. Envía el audio a la API de ElevenLabs para su procesamiento y devuelve el audio limpio.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Sí | | Audio a procesar para la eliminación de ruido de fondo. |
+| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
+|-----------|--------------|-----------|-------|-------------|
+| `audio` | AUDIO | Sí | | Audio a procesar para eliminar el ruido de fondo. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+|------------------|--------------|-------------|
 | `audio` | AUDIO | El audio procesado con el ruido de fondo eliminado. |
+
+---
+**Source fingerprint (SHA-256):** `eca7919ff853fe48f8419a4135a99589e350d3d113631e27f6e7cb3cbb3faa3b`

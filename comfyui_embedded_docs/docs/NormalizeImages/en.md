@@ -7,11 +7,14 @@ This node adjusts the pixel values of an input image using a mathematical normal
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image to be normalized. |
-| `mean` | FLOAT | No | 0.0 - 1.0 | The mean value to subtract from the image pixels (default: 0.5). |
-| `std` | FLOAT | No | 0.001 - 1.0 | The standard deviation value to divide the image pixels by (default: 0.5). |
+| `mean` | FLOAT | No | 0.0 - 1.0 | Mean value for normalization (default: 0.5). |
+| `std` | FLOAT | No | 0.001 - 1.0 | Standard deviation for normalization (default: 0.5). |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The resulting image after the normalization process has been applied. |
+
+---
+**Source fingerprint (SHA-256):** `9d08c8dba7d13c6f255ed786d3d2d3005bce425dc04b14b7199d868c3fc81fd9`

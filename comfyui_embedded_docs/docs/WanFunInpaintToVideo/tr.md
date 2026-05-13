@@ -1,26 +1,29 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/tr.md)
 
-WanFunInpaintToVideo düğümü, başlangıç ve bitiş görüntüleri arasında boyama yaparak video dizileri oluşturur. Video latents oluşturmak için pozitif ve negatif koşullandırmanın yanı sıra isteğe bağlı kare görüntülerini alır. Düğüm, yapılandırılabilir boyut ve uzunluk parametreleriyle video oluşturmayı işler.
+WanFunInpaintToVideo düğümü, başlangıç ve bitiş görüntüleri arasında iç boyama (inpainting) yaparak video dizileri oluşturur. İsteğe bağlı kare görüntüleriyle birlikte pozitif ve negatif koşullandırma alarak video gizil (latent) değişkenleri üretir. Düğüm, yapılandırılabilir boyut ve uzunluk parametreleriyle video oluşturmayı yönetir.
 
 ## Girişler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `pozitif` | CONDITIONING | Evet | - | Video oluşturma için pozitif koşullandırma promptları |
-| `negatif` | CONDITIONING | Evet | - | Video oluşturmada kaçınılacak negatif koşullandırma promptları |
+| `positive` | CONDITIONING | Evet | - | Video oluşturma için pozitif koşullandırma yönlendirmeleri |
+| `negative` | CONDITIONING | Evet | - | Video oluşturmada kaçınılması gereken negatif koşullandırma yönlendirmeleri |
 | `vae` | VAE | Evet | - | Kodlama/kod çözme işlemleri için VAE modeli |
-| `genişlik` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, adım: 16) |
-| `yükseklik` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) |
-| `uzunluk` | INT | Evet | 1 - MAX_RESOLUTION | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
-| `toplu_boyut` | INT | Evet | 1 - 4096 | Toplu halde oluşturulacak video sayısı (varsayılan: 1) |
-| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Hayır | - | Ek koşullandırma için isteğe bağlı CLIP vision çıktısı |
-| `başlangıç_görüntüsü` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı başlangıç kare görüntüsü |
-| `bitiş_görüntüsü` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı bitiş kare görüntüsü |
+| `width` | INT | Evet | 16 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosu genişliği piksel cinsinden (varsayılan: 832, adım: 16) |
+| `height` | INT | Evet | 16 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Çıktı videosu yüksekliği piksel cinsinden (varsayılan: 480, adım: 16) |
+| `length` | INT | Evet | 1 ila MAKSİMUM_ÇÖZÜNÜRLÜK | Video dizisindeki kare sayısı (varsayılan: 81, adım: 4) |
+| `batch_size` | INT | Evet | 1 ila 4096 | Bir grupta oluşturulacak video sayısı (varsayılan: 1) |
+| `clip_vision_output` | CLIP_VISION_OUTPUT | Hayır | - | Ek koşullandırma için isteğe bağlı CLIP görüş çıktısı |
+| `start_image` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı başlangıç karesi görüntüsü |
+| `end_image` | IMAGE | Hayır | - | Video oluşturma için isteğe bağlı bitiş karesi görüntüsü |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `negatif` | CONDITIONING | İşlenmiş pozitif koşullandırma çıktısı |
-| `gizli` | CONDITIONING | İşlenmiş negatif koşullandırma çıktısı |
-| `latent` | LATENT | Oluşturulan video latent temsili |
+| `positive` | CONDITIONING | İşlenmiş pozitif koşullandırma çıktısı |
+| `negative` | CONDITIONING | İşlenmiş negatif koşullandırma çıktısı |
+| `latent` | LATENT | Oluşturulan video gizil (latent) temsili |
+
+---
+**Source fingerprint (SHA-256):** `bbc5c2614f5fc21877345b3f01686ea57bee5108cdb253fb5dbf4b2cce9e59dd`

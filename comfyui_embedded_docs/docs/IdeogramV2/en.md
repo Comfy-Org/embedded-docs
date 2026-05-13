@@ -23,3 +23,6 @@ The Ideogram V2 node generates images using the Ideogram V2 AI model. It takes t
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | IMAGE | The generated image(s) from the Ideogram V2 model |
+
+---
+**Source fingerprint (SHA-256):** `c0ba21cb62ad75212c960e2bf6730a39c6479c7389a58c50968c66cc8964f5e3`

@@ -1,24 +1,29 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/ja.md)
 
-Meshy: Refine Draft Model ノードは、以前に生成された3Dドラフトモデルを受け取り、品質を向上させ、オプションでテクスチャを追加します。Meshy APIにリファインメントタスクを送信し、処理が完了すると最終的な3Dモデルファイルを返します。
+以下は、指定された翻訳ルールに従って日本語に翻訳したドキュメントです。
+
+Meshy: 下書きモデル精細化ノードは、以前に生成された3D下書きモデルを受け取り、その品質を向上させ、オプションでテクスチャを追加します。Meshy APIに精細化タスクを送信し、処理が完了すると最終的な3Dモデルファイルを返します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | はい | `"latest"` | リファインメントに使用するAIモデルを指定します。現在は"latest"モデルのみ利用可能です。 |
-| `meshy_task_id` | MESHY_TASK_ID | はい | - | リファインしたいドラフトモデルの一意のタスクIDです。 |
-| `enable_pbr` | BOOLEAN | いいえ | - | ベースカラーに加えて、PBRマップ（メタリック、ラフネス、ノーマル）を生成します。注意：Sculptureスタイルを使用する場合は、Sculptureスタイルが独自のPBRマップセットを生成するため、falseに設定する必要があります。（デフォルト: `False`） |
-| `texture_prompt` | STRING | いいえ | - | テクスチャリングプロセスをガイドするためのテキストプロンプトを提供します。最大600文字。'texture_image'と同時に使用することはできません。（デフォルト: 空文字列） |
-| `texture_image` | IMAGE | いいえ | - | 'texture_image' または 'texture_prompt' のいずれか一方のみを同時に使用できます。（オプション） |
+| `model` | COMBO | はい | `"latest"` | 精細化に使用するAIモデルを指定します。現在は"latest"モデルのみ利用可能です。 |
+| `meshy_task_id` | MESHY_TASK_ID | はい | - | 精細化したい下書きモデルの一意のタスクIDです。 |
+| `enable_pbr` | BOOLEAN | いいえ | - | ベースカラーに加えてPBRマップ（メタリック、ラフネス、法線）を生成します。注意：Sculptureスタイルを使用する場合はfalseに設定してください。Sculptureスタイルは独自のPBRマップセットを生成します。（デフォルト: `False`） |
+| `texture_prompt` | STRING | いいえ | - | テクスチャ処理をガイドするテキストプロンプトを指定します。最大600文字です。`texture_image`と同時に使用することはできません。（デフォルト: 空文字列） |
+| `texture_image` | IMAGE | いいえ | - | `texture_image`と`texture_prompt`のうち、同時に使用できるのは1つだけです。 |
 
-**注意:** `texture_prompt` と `texture_image` の入力は相互排他的です。テクスチャリングのためにテキストプロンプトと画像の両方を同じ操作で提供することはできません。
+**注記:** `texture_prompt`と`texture_image`の入力は相互に排他的です。同じ操作でテクスチャ用のテキストプロンプトと画像の両方を指定することはできません。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 生成されたGLBモデルのファイル名です。（後方互換性のためのみ） |
-| `meshy_task_id` | MESHY_TASK_ID | 送信されたリファインメントジョブの一意のタスクIDです。 |
-| `GLB` | FILE3DGLB | GLB形式の最終的なリファイン済み3Dモデルです。 |
-| `FBX` | FILE3DFBX | FBX形式の最終的なリファイン済み3Dモデルです。 |
+| `model_file` | STRING | 生成されたGLBモデルのファイル名です。（後方互換性のため） |
+| `meshy_task_id` | MESHY_TASK_ID | 送信された精細化ジョブの一意のタスクIDです。 |
+| `GLB` | FILE3DGLB | GLB形式の最終的な精細化された3Dモデルです。 |
+| `FBX` | FILE3DFBX | FBX形式の最終的な精細化された3Dモデルです。 |
+
+---
+**Source fingerprint (SHA-256):** `cdf620ead0a4504cbb5d5554e0fe40e4cadd08884726f147cd486e63ab37f278`

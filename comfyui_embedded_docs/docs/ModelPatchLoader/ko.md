@@ -1,13 +1,18 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelPatchLoader/ko.md)
 
+ModelPatchLoader 노드는 model_patches 폴더에서 특화된 모델 패치를 로드합니다. 패치 파일의 유형을 자동으로 감지하여 적절한 모델 아키텍처를 로드한 후, 워크플로에서 사용할 수 있도록 ModelPatcher로 래핑합니다. 이 노드는 controlnet 블록, 특징 임베더 모델 및 기타 특수 아키텍처를 포함한 다양한 패치 유형을 지원합니다.
+
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 유형 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `name` | STRING | 예 | model_patches 폴더에서 사용 가능한 모든 모델 패치 파일 | model_patches 디렉토리에서 로드할 모델 패치의 파일 이름 |
+| `name` | STRING | 예 | model_patches 폴더의 모든 사용 가능한 모델 패치 파일 | model_patches 디렉터리에서 로드할 모델 패치의 파일 이름입니다. |
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
+| 출력 이름 | 데이터 유형 | 설명 |
 |-------------|-----------|-------------|
-| `MODEL_PATCH` | MODEL_PATCH | 워크플로우에서 사용하기 위해 ModelPatcher로 래핑된 로드된 모델 패치 |
+| `MODEL_PATCH` | MODEL_PATCH | 워크플로에서 사용할 수 있도록 ModelPatcher로 래핑된 로드된 모델 패치입니다. |
+
+---
+**Source fingerprint (SHA-256):** `e394e165cf416019ed53d9fde42d97c3c9b9f9afd843b12371a624467a4841bf`

@@ -1,17 +1,20 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/pt-BR.md)
 
-Melhora a imagem de forma síncrona. Aprimora uma imagem raster fornecida usando a ferramenta 'crisp upscale', aumentando a resolução da imagem, tornando-a mais nítida e limpa.
+Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/en.md)
+
+Amplia imagem de forma síncrona. Aprimora uma imagem raster fornecida usando a ferramenta 'ampliação nítida', aumentando a resolução da imagem e tornando-a mais nítida e limpa.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sim | - | A imagem de entrada a ser melhorada |
-| `auth_token` | STRING | Não | - | Token de autenticação para a API do Recraft |
-| `comfy_api_key` | STRING | Não | - | Chave de API para os serviços do Comfy.org |
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
+| `image` | IMAGE | Sim | - | A imagem de entrada a ser ampliada. Aceita um lote de imagens. |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `image` | IMAGE | A imagem melhorada com resolução e clareza aprimoradas |
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `image` | IMAGE | A imagem ampliada com resolução e clareza aprimoradas. Retorna um lote de imagens se um lote foi fornecido como entrada. |
+
+---
+**Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`

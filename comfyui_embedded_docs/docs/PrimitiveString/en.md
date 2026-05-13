@@ -13,3 +13,6 @@ The String node provides a simple way to input and pass through text data in you
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The same text string that was provided as input |
+
+---
+**Source fingerprint (SHA-256):** `eb99ed1b8572c0d28df7185d64a35dc71488459dcd11a46f81c5a1f202b25d62`

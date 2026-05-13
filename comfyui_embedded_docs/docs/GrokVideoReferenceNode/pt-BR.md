@@ -23,3 +23,6 @@ O nó Grok Referência-para-Vídeo gera um vídeo com base em um prompt de texto
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `video` | VIDEO | O arquivo de vídeo gerado. |
+
+---
+**Source fingerprint (SHA-256):** `e368769b869b7a0d0be8e6fdcc2b82774c11805483b2e83a448b6985a6dd9f96`

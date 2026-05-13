@@ -4,15 +4,19 @@ O nó Rodin 3D Regular gera ativos 3D usando a API Rodin. Ele recebe imagens de 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Sim | - | Imagens de entrada usadas para a geração do modelo 3D |
-| `Seed` | INT | Sim | - | Valor de semente aleatória para resultados reproduzíveis |
-| `Material_Type` | STRING | Sim | - | Tipo de material a ser aplicado ao modelo 3D |
-| `Polygon_count` | STRING | Sim | - | Contagem de polígonos alvo para o modelo 3D gerado |
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
+| `Images` | IMAGE | Sim | - | Imagens de entrada usadas para geração do modelo 3D. Múltiplas imagens podem ser fornecidas. |
+| `Seed` | INT | Sim | - | Valor de semente aleatório para resultados reproduzíveis. |
+| `Material_Type` | STRING | Sim | - | Tipo de material a ser aplicado ao modelo 3D. |
+| `Polygon_count` | STRING | Sim | - | Contagem de polígonos alvo para o modelo 3D gerado. Este parâmetro determina o modo de qualidade e a complexidade da malha. |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
-| `3D Model Path` | STRING | Caminho do arquivo para o modelo 3D gerado |
+| Nome da Saída | Tipo de Dados | Descrição |
+|---------------|---------------|-----------|
+| `3D Model Path` | STRING | Caminho do arquivo para o modelo 3D gerado (mantido para compatibilidade reversa). |
+| `GLB` | FILE3DGLB | O modelo 3D gerado no formato GLB. |
+
+---
+**Source fingerprint (SHA-256):** `f937be3aa579baf4407434839e741141d6bd63c09b7e0bdc49a9e92a10d7a130`

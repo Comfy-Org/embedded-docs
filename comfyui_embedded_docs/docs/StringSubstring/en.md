@@ -6,12 +6,15 @@ The StringSubstring node extracts a portion of text from a larger string. It tak
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | Yes | - | The input text string to extract from |
-| `start` | INT | Yes | - | The starting position index for the substring |
-| `end` | INT | Yes | - | The ending position index for the substring |
+| `string` | STRING | Yes | - | The input text string to extract from. Supports multi-line text. |
+| `start` | INT | Yes | - | The starting position index for the substring. The first character is at index 0. |
+| `end` | INT | Yes | - | The ending position index for the substring. The character at this index is not included in the result. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `output` | STRING | The extracted substring from the input text |
+| `output` | STRING | The extracted substring from the input text, containing all characters from the `start` position up to (but not including) the `end` position. |
+
+---
+**Source fingerprint (SHA-256):** `962d0b19af88b6c95b5c9d374081ecd55ee8cffbfb638de7ed38e6e378b220c5`

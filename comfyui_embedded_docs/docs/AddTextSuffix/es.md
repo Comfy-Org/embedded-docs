@@ -5,12 +5,15 @@ Este nodo añade un sufijo especificado al final de una cadena de texto de entra
 ## Entradas
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `text` | STRING | Sí | | El texto original al que se le añadirá el sufijo. |
-| `suffix` | STRING | No | | El sufijo que se añadirá al texto (valor por defecto: ""). |
+|-----------|--------------|-------------|-------|-------------|
+| `text` | STRING | Sí | | El texto original al que se añadirá el sufijo. |
+| `suffix` | STRING | No | | El sufijo que se añadirá al texto (predeterminado: ""). |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+|------------------|--------------|-------------|
 | `text` | STRING | El texto resultante después de haber añadido el sufijo. |
+
+---
+**Source fingerprint (SHA-256):** `5dd75a9a29709a35343ec0dce144d2eb27a6e7aef5cb0b9245329c678897a763`

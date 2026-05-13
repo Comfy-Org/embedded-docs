@@ -1,24 +1,29 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTextToVideoNode/ja.md)
 
-プロンプトと出力サイズに基づいて動画を生成します。このノードはテキストの記述と様々な生成パラメータを使用して動画コンテンツを作成し、PixVerse APIを通じて動画出力を生成します。
+このドキュメントは AI によって生成されました。誤りや改善のための提案があれば、ぜひご協力ください！ [GitHub で編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTextToVideoNode/en.md)
+
+テキストプロンプトと様々な生成パラメータに基づいて動画を生成します。このノードは PixVerse API を使用して動画コンテンツを作成し、アスペクト比、品質、長さ、モーションスタイルなどを制御できます。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `プロンプト` | STRING | はい | - | 動画生成のためのプロンプト（デフォルト: ""） |
-| `アスペクト比` | COMBO | はい | PixverseAspectRatioのオプション | 生成動画のアスペクト比 |
-| `品質` | COMBO | はい | PixverseQualityのオプション | 動画品質設定（デフォルト: PixverseQuality.res_540p） |
-| `秒数` | COMBO | はい | PixverseDurationのオプション | 生成動画の秒単位の長さ |
-| `モーションモード` | COMBO | はい | PixverseMotionModeのオプション | 動画生成のモーションスタイル |
-| `シード` | INT | はい | 0 から 2147483647 | 動画生成のシード値（デフォルト: 0） |
-| `ネガティブプロンプト` | STRING | いいえ | - | 画像上で望ましくない要素のオプションのテキスト記述（デフォルト: ""） |
-| `PixVerse テンプレート` | CUSTOM | いいえ | - | 生成スタイルに影響を与えるオプションのテンプレート。PixVerse Templateノードによって作成されます |
+| `prompt` | STRING | はい | - | 動画生成のためのプロンプト（デフォルト: ""） |
+| `aspect_ratio` | COMBO | はい | PixverseAspectRatio のオプション | 生成される動画のアスペクト比 |
+| `quality` | COMBO | はい | PixverseQuality のオプション | 動画の品質設定（デフォルト: PixverseQuality.res_540p） |
+| `duration_seconds` | COMBO | はい | PixverseDuration のオプション | 生成される動画の長さ（秒） |
+| `motion_mode` | COMBO | はい | PixverseMotionMode のオプション | 動画生成のためのモーションスタイル |
+| `seed` | INT | はい | 0 ～ 2147483647 | 動画生成のためのシード値（デフォルト: 0） |
+| `negative_prompt` | STRING | いいえ | - | 画像内で望ましくない要素のオプションのテキスト説明（デフォルト: ""） |
+| `pixverse_template` | CUSTOM | いいえ | - | PixVerse テンプレートノードによって作成された、生成スタイルに影響を与えるオプションのテンプレート |
 
-**注意:** 1080p品質を使用する場合、モーションモードは自動的に通常に設定され、長さは5秒に制限されます。5秒以外の長さの場合も、モーションモードは自動的に通常に設定されます。
+**注記:** 1080p 品質を使用する場合、モーションモードは自動的にノーマルに設定され、長さは 5 秒に制限されます。5 秒以外の長さの場合も、モーションモードは自動的にノーマルに設定されます。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成された動画ファイル |
+
+---
+**Source fingerprint (SHA-256):** `ab9264668f48533cb139abfb322e9a6e425a2ad7280da103a7fe0a7704158762`

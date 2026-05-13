@@ -1,16 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioAdjustVolume/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioAdjustVolume/tr.md)
 
-AudioAdjustVolume düğümü, desibel cinsinden ses ayarlamaları uygulayarak sesin yüksekliğini değiştirir. Bir ses girişi alır ve belirtilen ses seviyesine dayalı olarak bir kazanç faktörü uygular; burada pozitif değerler sesi artırırken negatif değerler azaltır. Düğüm, orijinaliyle aynı örnekleme hızına sahip olarak değiştirilmiş sesi döndürür.
+Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioAdjustVolume/en.md)
+
+AudioAdjustVolume düğümü, desibel (dB) cinsinden ses seviyesi ayarlamaları uygulayarak sesin yüksekliğini değiştirir. Bir ses girişi alır ve belirtilen ses seviyesine göre bir kazanç faktörü uygular; burada pozitif değerler sesi artırır, negatif değerler ise azaltır. Düğüm, orijinaliyle aynı örnekleme hızına sahip değiştirilmiş sesi döndürür.
 
 ## Girişler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `audio` | AUDIO | gerekli | - | - | İşlenecek ses girişi |
-| `volume` | INT | gerekli | 1.0 | -100 ile 100 | Desibel (dB) cinsinden ses ayarı. 0 = değişiklik yok, +6 = iki katına çıkar, -6 = yarıya indirir, vb. |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
+|-----------|-----------|---------|--------|----------|
+| `audio` | AUDIO | Evet | - | İşlenecek ses girişi |
+| `volume` | INT | Evet | -100 ila 100 | Desibel (dB) cinsinden ses seviyesi ayarı. 0 = değişiklik yok, +6 = iki katı, -6 = yarısı, vb. (varsayılan: 1) |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `audio` | AUDIO | Ses seviyesi ayarlanmış olarak işlenmiş ses |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `audio` | AUDIO | Ses seviyesi ayarlanmış işlenmiş ses |
+
+---
+**Source fingerprint (SHA-256):** `0436765680671551239f7a89b575cdfb22590fbe662bdfe5da01bd1cd5c496ed`

@@ -1,18 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodePixArtAlpha/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodePixArtAlpha/tr.md)
 
-Metni kodlar ve PixArt Alpha için çözünürlük koşullandırmasını ayarlar. Bu düğüm, metin girişini işler ve PixArt Alpha modelleri için özel olarak koşullandırma verisi oluşturmak üzere genişlik ve yükseklik bilgisi ekler. PixArt Sigma modelleri için geçerli değildir.
+Metni PixArt Alpha için kodlar ve çözünürlük koşullandırmasını ayarlar. Bu düğüm, metin girişini işler ve PixArt Alpha modelleri için özel olarak koşullandırma verileri oluşturmak üzere genişlik ve yükseklik bilgilerini ekler. PixArt Sigma modelleri için geçerli değildir.
 
 ## Girişler
 
-| Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `genişlik` | INT | Giriş | 1024 | 0 - MAX_RESOLUTION | Çözünürlük koşullandırması için genişlik boyutu |
-| `yükseklik` | INT | Giriş | 1024 | 0 - MAX_RESOLUTION | Çözünürlük koşullandırması için yükseklik boyutu |
-| `metin` | STRING | Giriş | - | - | Kodlanacak metin girişi, çok satırlı giriş ve dinamik istemleri destekler |
-| `clip` | CLIP | Giriş | - | - | Tokenleştirme ve kodlama için kullanılan CLIP modeli |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `width` | INT | Evet | 0 - MAKSİMUM ÇÖZÜNÜRLÜK | Çözünürlük koşullandırması için genişlik boyutu (varsayılan: 1024) |
+| `height` | INT | Evet | 0 - MAKSİMUM ÇÖZÜNÜRLÜK | Çözünürlük koşullandırması için yükseklik boyutu (varsayılan: 1024) |
+| `text` | STRING | Evet | - | Kodlanacak metin girişi, çok satırlı girişi ve dinamik istemleri destekler |
+| `clip` | CLIP | Evet | - | Tokenizasyon ve kodlama için kullanılan CLIP modeli |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
+| Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | Metin token'ları ve çözünürlük bilgisi içeren kodlanmış koşullandırma verisi |
+| `CONDITIONING` | CONDITIONING | Metin tokenleri ve çözünürlük bilgileriyle kodlanmış koşullandırma verileri |
+
+---
+**Source fingerprint (SHA-256):** `d15df3c7bcca10ec85f0689d6631a6b89aa89e609193c36b658b1bc97f90ee9a`

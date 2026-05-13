@@ -1,17 +1,22 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceText/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceText/zh-TW.md)
 
-Replace Text 節點執行簡單的文字替換功能。它會在輸入文字中搜尋指定的文字片段，並將所有匹配的內容替換為新的文字。此操作會套用至節點接收的所有文字輸入。
+## 概述
 
-## 輸入參數
+替換文字節點執行簡單的文字替換操作。它會在輸入文字中搜尋指定的文字片段，並將每個出現的位置替換為新的文字片段。此操作會套用至提供給節點的所有文字輸入。
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `text` | STRING | 是 | - | 需要處理的文字。 |
-| `find` | STRING | 否 | - | 要尋找並替換的文字（預設為空字串）。 |
-| `replace` | STRING | 否 | - | 用於替換找到文字的新文字（預設為空字串）。 |
+| `text` | STRING | 是 | - | 要處理的文字。 |
+| `find` | STRING | 是 | - | 要尋找的文字（預設為空字串）。 |
+| `replace` | STRING | 是 | - | 要替換成的文字（預設為空字串）。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `text` | STRING | 處理後的文字，其中所有 `find` 文字均已被 `replace` 文字替換。 |
+| `text` | STRING | 已處理的文字，其中所有出現的 `find` 文字皆已替換為 `replace` 文字。 |
+
+---
+**Source fingerprint (SHA-256):** `e9d4681e638c5ca2732ec254282243e9e9cdd01cc985af8bbfa41dea208cb7dd`

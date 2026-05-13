@@ -1,29 +1,34 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/zh-TW.md)
 
-HunyuanImageToVideo 節點使用 Hunyuan 影片模型將圖像轉換為影片潛在表示。它接收條件輸入和可選的起始圖像，生成可供影片生成模型進一步處理的影片潛在內容。該節點支援不同的引導類型，用於控制起始圖像如何影響影片生成過程。
+# HunyuanImageToVideo 節點
 
-## 輸入參數
+HunyuanImageToVideo 節點使用 Hunyuan 影片模型將圖片轉換為影片潛在表示。它接收條件化輸入和可選的起始圖片，以生成可進一步由影片生成模型處理的影片潛在表示。該節點支援不同的引導類型，用於控制起始圖片如何影響影片生成過程。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `正向` | CONDITIONING | 是 | - | 用於引導影片生成的正向條件輸入 |
-| `vae` | VAE | 是 | - | 用於將圖像編碼到潛在空間的 VAE 模型 |
-| `寬度` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的寬度（單位：像素，預設值：848，間距：16） |
-| `高度` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的高度（單位：像素，預設值：480，間距：16） |
-| `長度` | INT | 是 | 1 至 MAX_RESOLUTION | 輸出影片的幀數（預設值：53，間距：4） |
-| `批次大小` | INT | 是 | 1 至 4096 | 同時生成的影片數量（預設值：1） |
-| `引導類型` | COMBO | 是 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 將起始圖像納入影片生成的方法 |
-| `起始影像` | IMAGE | 否 | - | 用於初始化影片生成的可選起始圖像 |
+| `positive` | CONDITIONING | 是 | - | 用於引導影片生成的正向條件化輸入 |
+| `vae` | VAE | 是 | - | 用於將圖片編碼到潛在空間的 VAE 模型 |
+| `width` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的寬度（像素）（預設值：848，步長：16） |
+| `height` | INT | 是 | 16 至 MAX_RESOLUTION | 輸出影片的高度（像素）（預設值：480，步長：16） |
+| `length` | INT | 是 | 1 至 MAX_RESOLUTION | 輸出影片的幀數（預設值：53，步長：4） |
+| `batch_size` | INT | 是 | 1 至 4096 | 同時生成的影片數量（預設值：1） |
+| `guidance_type` | COMBO | 是 | "v1 (concat)"<br>"v2 (replace)"<br>"custom" | 將起始圖片融入影片生成的方法（預設值："v1 (concat)"） |
+| `start_image` | IMAGE | 否 | - | 可選的起始圖片，用於初始化影片生成 |
 
-**注意：** 當提供 `start_image` 時，節點會根據選擇的 `guidance_type` 使用不同的引導方法：
+**注意：** 當提供 `start_image` 時，節點會根據所選的 `guidance_type` 使用不同的引導方法：
 
-- "v1 (concat)"：將圖像潛在內容與影片潛在內容串聯
-- "v2 (replace)"：用圖像潛在內容替換初始影片幀
-- "custom"：使用圖像作為參考潛在內容進行引導
+- "v1 (concat)"：將圖片潛在表示與影片潛在表示連接，並應用遮罩將圖片混合到影片中
+- "v2 (replace)"：用圖片潛在表示替換初始影片幀，並應用噪聲遮罩
+- "custom"：將圖片用作引導的參考潛在表示
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `潛在空間` | CONDITIONING | 當提供起始圖像時，套用圖像引導後的修改正向條件 |
-| `latent` | LATENT | 準備供影片生成模型進一步處理的影片潛在表示 |
+| `positive` | CONDITIONING | 當提供 start_image 時，應用圖片引導後的修改後正向條件化 |
+| `latent` | LATENT | 準備好由影片生成模型進一步處理的影片潛在表示 |
+
+---
+**Source fingerprint (SHA-256):** `e55e935b7955b28b04014359c544a230c51ee91e21170be1ae4f50705d3e7bba`

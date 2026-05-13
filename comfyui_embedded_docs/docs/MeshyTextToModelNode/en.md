@@ -26,3 +26,6 @@ The Meshy: Text to Model node uses the Meshy API to generate a 3D model from a t
 | `meshy_task_id` | MESHY_TASK_ID | The unique identifier for the Meshy API task. |
 | `GLB` | FILE3DGLB | The generated 3D model file in GLB format. |
 | `FBX` | FILE3DFBX | The generated 3D model file in FBX format. |
+
+---
+**Source fingerprint (SHA-256):** `122eee5488a89433bd1f3bf79ccd8e9c51fd23cc1dfb208c39a0628c2ad3d817`

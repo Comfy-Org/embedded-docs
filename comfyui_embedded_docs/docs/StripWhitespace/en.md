@@ -13,3 +13,6 @@ This node removes any extra spaces, tabs, or newlines from the beginning and end
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `text` | STRING | The processed text with all leading and trailing whitespace characters removed. |
+
+---
+**Source fingerprint (SHA-256):** `5b86f71c842a89fe42119593a8bfd30ea441cd02e35356f431ebfdda8010e58d`

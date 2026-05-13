@@ -17,6 +17,7 @@ The Magnific Image Skin Enhancer node applies specialized AI processing to portr
 
 * The node accepts exactly one input image.
 * The input image must have a minimum height and width of 160 pixels.
+* The input image aspect ratio must be between 1:3 and 3:1 (non-strict validation).
 * The `skin_detail` parameter is only active when `mode` is set to `"faithful"`.
 * The `optimized_for` parameter is only active when `mode` is set to `"flexible"`.
 
@@ -25,3 +26,6 @@ The Magnific Image Skin Enhancer node applies specialized AI processing to portr
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The enhanced portrait image. |
+
+---
+**Source fingerprint (SHA-256):** `e02cae2e119ddab931b790865889adf53f47a2ebb03d488477c289dfda7204f5`

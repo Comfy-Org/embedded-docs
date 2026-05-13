@@ -1,18 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/zh-TW.md)
 
 ## 概述
 
-CFGNorm 節點在擴散模型中對分類器自由引導（CFG）過程應用一種標準化技術。它透過比較條件輸出和無條件輸出的範數來調整去噪預測的尺度，然後應用強度乘數來控制效果。這有助於通過防止引導縮放中的極端值來穩定生成過程。
+CFGNorm 節點對擴散模型中的無分類器引導（CFG）過程應用正規化技術。它透過比較條件輸出與非條件輸出的範數來調整去噪預測的縮放比例，然後套用強度乘數來控制效果。這有助於防止引導縮放中出現極端值，從而穩定生成過程。
 
 ## 輸入
 
-| 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 描述 |
+| 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 說明 |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | 必填 | - | - | 要應用 CFG 標準化的擴散模型 |
-| `strength` | FLOAT | 必填 | 1.0 | 0.0 - 100.0 | 控制應用於 CFG 縮放的標準化效果的強度 |
+| `model` | MODEL | 必要 | - | - | 要套用 CFG 正規化的擴散模型 |
+| `strength` | FLOAT | 必要 | 1.0 | 0.0 - 100.0 | 控制套用於 CFG 縮放的正規化效果強度 |
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `patched_model` | MODEL | 返回已在其採樣過程中應用 CFG 標準化的修改後模型 |
+| `patched_model` | MODEL | 傳回已在其取樣過程中套用 CFG 正規化的修改後模型 |
+
+---
+**Source fingerprint (SHA-256):** `af9e5f965500b959ff46f781e9329524fc0a4b94af2ce6d74116fe27b0e9005e`

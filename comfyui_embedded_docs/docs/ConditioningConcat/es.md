@@ -1,14 +1,16 @@
-El nodo ConditioningConcat está diseñado para concatenar vectores de condicionamiento, fusionando específicamente el vector 'conditioning_from' en el vector 'conditioning_to'. Esta operación es fundamental en escenarios donde la información de condicionamiento de dos fuentes necesita combinarse en una representación única y unificada.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningConcat/es.md)
+
+El nodo ConditioningConcat está diseñado para concatenar vectores de condicionamiento, fusionando específicamente el vector 'conditioning_from' en el vector 'conditioning_to'. Esta operación es fundamental en escenarios donde la información de condicionamiento de dos fuentes debe combinarse en una única representación unificada.
 
 ## Entradas
 
-| Parámetro             | Comfy dtype        | Descripción |
-|-----------------------|--------------------|-------------|
-| `acondicionamiento_a`     | `CONDITIONING`     | Representa el conjunto principal de vectores de condicionamiento al que se concatenarán los vectores 'conditioning_from'. Sirve como base para el proceso de concatenación. |
-| `acondicionamiento_de`   | `CONDITIONING`     | Consiste en vectores de condicionamiento que se concatenarán a los vectores 'conditioning_to'. Este parámetro permite integrar información de condicionamiento adicional en el conjunto existente. |
+| Parámetro            | Tipo Comfy         | Descripción |
+|----------------------|--------------------|-------------|
+| `conditioning_to`    | `CONDITIONING`     | Representa el conjunto principal de vectores de condicionamiento al que se concatenarán los vectores 'conditioning_from'. Sirve como base para el proceso de concatenación. |
+| `conditioning_from`  | `CONDITIONING`     | Contiene los vectores de condicionamiento que se concatenarán a los vectores 'conditioning_to'. Este parámetro permite integrar información de condicionamiento adicional al conjunto existente. |
 
 ## Salidas
 
-| Parámetro            | Comfy dtype        | Descripción |
+| Parámetro            | Tipo Comfy         | Descripción |
 |----------------------|--------------------|-------------|
 | `conditioning`       | `CONDITIONING`     | La salida es un conjunto unificado de vectores de condicionamiento, resultante de la concatenación de los vectores 'conditioning_from' en los vectores 'conditioning_to'. |

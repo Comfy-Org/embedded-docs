@@ -35,3 +35,6 @@ El nodo SAM3 Detect realiza detección y segmentación de vocabulario abierto ut
 |------------------|--------------|-------------|
 | `masks` | MASK | Máscaras de segmentación. Cuando `individual_masks` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado |
 | `bboxes` | BOUNDING_BOX | Cuadros delimitadores detectados con coordenadas y puntuaciones de confianza. Cada cuadro incluye valores de `x`, `y`, `width`, `height` y `score` |
+
+---
+**Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

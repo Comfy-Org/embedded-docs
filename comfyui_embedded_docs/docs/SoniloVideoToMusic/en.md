@@ -15,3 +15,6 @@ Generate music from video using Sonilo's AI model. This node analyzes the conten
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The generated music as an audio file. |
+
+---
+**Source fingerprint (SHA-256):** `542fff1d8db8e48156bf9d1ff4690c91a7d71676332eef4708a6d36686abb31e`

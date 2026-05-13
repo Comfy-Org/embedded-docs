@@ -6,13 +6,16 @@ Seleciona objetos rastreados específicos de uma sessão de rastreamento SAM3 po
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
-|-----------|--------------|-------------|-----------|-----------|
-| `track_data` | SAM3TRACKDATA | Sim | N/A | Os dados de rastreamento provenientes de um nó rastreador SAM3, contendo as máscaras empacotadas e o tamanho original da imagem. |
-| `object_indices` | STRING | Não | Qualquer lista de inteiros separados por vírgula | Índices de objetos separados por vírgula a serem incluídos na máscara de saída (ex.: '0,2,3'). Se deixado vazio, todos os objetos rastreados são incluídos. |
+| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
+|-----------|---------------|-------------|-------|-----------|
+| `track_data` | SAM3TRACKDATA | Sim | N/A | Os dados de rastreamento gerados por um nó rastreador SAM3, contendo as máscaras empacotadas e o tamanho original da imagem. |
+| `object_indices` | STRING | Não | Qualquer lista de inteiros separados por vírgula | Índices de objetos separados por vírgula para incluir na máscara de saída (ex.: '0,2,3'). Se deixado vazio, todos os objetos rastreados são incluídos. |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
+| Nome da Saída | Tipo de Dados | Descrição |
+|---------------|---------------|-----------|
 | `masks` | MASK | Uma única máscara binária para cada quadro, onde os objetos selecionados são combinados em uma máscara. Se nenhum objeto for selecionado ou não houver dados de rastreamento, retorna uma máscara zero. |
+
+---
+**Source fingerprint (SHA-256):** `2da82effc4cdc6655d0d37e281858bf33f7b62d9056629ec810e3ff9b2e7b5a6`

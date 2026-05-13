@@ -4,16 +4,19 @@ O nó FreeU aplica modificações no domínio da frequência aos blocos de saíd
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo ao qual aplicar as modificações do FreeU |
-| `b1` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala do backbone para características de model_channels × 4 (padrão: 1.1) |
-| `b2` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala do backbone para características de model_channels × 2 (padrão: 1.2) |
-| `s1` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala da conexão de salto (skip connection) para características de model_channels × 4 (padrão: 0.9) |
-| `s2` | FLOAT | Sim | 0.0 - 10.0 | Fator de escala da conexão de salto (skip connection) para características de model_channels × 2 (padrão: 0.2) |
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
+| `model` | MODEL | Sim | - | O modelo ao qual aplicar as modificações FreeU |
+| `b1` | FLOAT | Sim | 0,0 - 10,0 | Fator de escala do backbone para características de model_channels × 4 (padrão: 1,1) |
+| `b2` | FLOAT | Sim | 0,0 - 10,0 | Fator de escala do backbone para características de model_channels × 2 (padrão: 1,2) |
+| `s1` | FLOAT | Sim | 0,0 - 10,0 | Fator de escala da conexão skip para características de model_channels × 4 (padrão: 0,9) |
+| `s2` | FLOAT | Sim | 0,0 - 10,0 | Fator de escala da conexão skip para características de model_channels × 2 (padrão: 0,2) |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `model` | MODEL | O modelo modificado com os patches do FreeU aplicados |
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `model` | MODEL | O modelo modificado com os patches FreeU aplicados |
+
+---
+**Source fingerprint (SHA-256):** `449a02a4bb5b42eb37fab394bcdc6375e08e369961d633618211ebc5f737ab51`

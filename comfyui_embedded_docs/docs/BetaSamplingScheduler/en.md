@@ -4,15 +4,18 @@ The BetaSamplingScheduler node generates a sequence of noise levels (sigmas) for
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Required | - | - | The model used for sampling, which provides the model sampling object |
-| `steps` | INT | Required | 20 | 1-10000 | The number of sampling steps to generate sigmas for |
-| `alpha` | FLOAT | Required | 0.6 | 0.0-50.0 | Alpha parameter for the beta scheduler, controlling the scheduling curve |
-| `beta` | FLOAT | Required | 0.6 | 0.0-50.0 | Beta parameter for the beta scheduler, controlling the scheduling curve |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Yes | - | The model used for sampling, which provides the model sampling object |
+| `steps` | INT | Yes | 1 to 10000 | The number of sampling steps to generate sigmas for (default: 20) |
+| `alpha` | FLOAT | Yes | 0.0 to 50.0 | Alpha parameter for the beta scheduler, controlling the scheduling curve (default: 0.6) |
+| `beta` | FLOAT | Yes | 0.0 to 50.0 | Beta parameter for the beta scheduler, controlling the scheduling curve (default: 0.6) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `SIGMAS` | SIGMAS | A sequence of noise levels (sigmas) used for the sampling process |
+
+---
+**Source fingerprint (SHA-256):** `8b3d17ef737107da3d5cacc84278de8a93f6889e6567619012729b205bbc421e`

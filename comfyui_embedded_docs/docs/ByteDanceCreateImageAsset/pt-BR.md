@@ -7,7 +7,7 @@ Este nó cria um ativo de imagem pessoal para o serviço Seedance 2.0 da ByteDan
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
 |-----------|---------------|-------------|-----------|-----------|
 | `image` | IMAGE | Sim | | A imagem a ser registrada como um ativo pessoal. |
-| `group_id` | STRING | Não | | Reutiliza um ID de grupo de ativos Seedance existente para evitar verificação humana repetida para a mesma pessoa. Deixe vazio para executar a autenticação de pessoa real no navegador e criar um novo grupo (padrão: vazio). |
+| `group_id` | STRING | Não | | Reutiliza um ID de grupo de ativos Seedance existente para evitar repetir a verificação humana para a mesma pessoa. Deixe vazio para executar a autenticação de pessoa real no navegador e criar um novo grupo (padrão: vazio). |
 
 **Restrições da Imagem:**
 *   A largura da imagem deve estar entre 300 e 6000 pixels.
@@ -20,3 +20,6 @@ Este nó cria um ativo de imagem pessoal para o serviço Seedance 2.0 da ByteDan
 |---------------|---------------|-----------|
 | `asset_id` | STRING | O identificador único para o ativo de imagem recém-criado. |
 | `group_id` | STRING | O identificador para o grupo de ativos. Será o `group_id` fornecido ou um recém-criado. |
+
+---
+**Source fingerprint (SHA-256):** `b8b7b4cbbc16a8bb0102982757496ad4e8140bd87155902668c0be0d8b4d3d98`

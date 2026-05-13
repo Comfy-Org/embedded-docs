@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/zh-TW.md)
 
-VideoTriangleCFGGuidance 節點對影片模型應用三角形分類器自由引導縮放模式。它使用在最小 CFG 值和原始條件縮放值之間振盪的三角波函數，隨時間調整條件縮放。這種動態引導模式有助於提升影片生成的一致性和品質。
+## 概述
 
-## 輸入參數
+VideoTriangleCFGGuidance 節點對影片模型應用三角形式的無分類器引導縮放模式。它使用三角波函數在最小 CFG 值與原始條件縮放之間隨時間振盪，從而修改條件縮放比例。這會產生動態引導模式，有助於提升影片生成的一致性與品質。
 
-| 參數名稱 | 資料類型 | 是否必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | - | 要應用三角形 CFG 引導的影片模型 |
-| `min_cfg` | FLOAT | 是 | 0.0 - 100.0 | 三角形模式的最小 CFG 縮放值（預設值：1.0） |
+| `model` | MODEL | 是 | - | 要套用三角 CFG 引導的影片模型 |
+| `min_cfg` | FLOAT | 是 | 0.0 - 100.0 | 三角模式的最小 CFG 縮放值（預設：1.0） |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 已應用三角形 CFG 引導的修改後模型 |
+| `model` | MODEL | 已套用三角 CFG 引導的修改後模型 |
+
+---
+**Source fingerprint (SHA-256):** `0b854d78f32e265b1a4322cb11b231df33e6072611142537e0c8cff4e93db49a`

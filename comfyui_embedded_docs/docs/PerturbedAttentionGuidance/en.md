@@ -7,10 +7,13 @@ The PerturbedAttentionGuidance node applies perturbed attention guidance to a di
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Yes | - | The diffusion model to apply perturbed attention guidance to |
-| `scale` | FLOAT | No | 0.0 - 100.0 | The strength of the perturbed attention guidance effect (default: 3.0) |
+| `scale` | FLOAT | No | 0.0 - 100.0 | The strength of the perturbed attention guidance effect (default: 3.0). When set to 0, the node has no effect and returns the original denoised result. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with perturbed attention guidance applied |
+
+---
+**Source fingerprint (SHA-256):** `8808aa3a3f7cfe306e17f8f4424779cb8e4565647bbcc9d4907da2215affe191`

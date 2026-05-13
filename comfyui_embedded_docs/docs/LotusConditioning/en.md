@@ -13,3 +13,6 @@ The LotusConditioning node provides pre-computed conditioning embeddings for the
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `conditioning` | CONDITIONING | The pre-computed conditioning embeddings for the Lotus model, containing fixed prompt embeddings and an empty dictionary. |
+
+---
+**Source fingerprint (SHA-256):** `aa428f8c355e2840dadbf634fe27d20c7c323dbe8c21255b40f4dafa12e4a0d0`

@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLSLShader/en.md)
 
-The GLSL Shader node applies custom GLSL ES fragment shader code to input images. It allows you to write shader programs that can process multiple images and accept uniform parameters (floats and integers) to create complex visual effects. The output size can be determined by the first input image or set manually.
+The GLSL Shader node applies custom GLSL ES fragment shader code to input images. It allows you to write shader programs that can process multiple images and accept uniform parameters (floats, integers, booleans, and curves) to create complex visual effects. The output size can be determined by the first input image or set manually.
 
 ## Inputs
 
@@ -13,13 +13,15 @@ The GLSL Shader node applies custom GLSL ES fragment shader code to input images
 | `images` | IMAGE | Yes | 1 to 8 images | Input images to be processed by the shader. Images are available as `u_image0` to `u_image7` (sampler2D) in the shader code. |
 | `floats` | FLOAT | No | 0 to 8 floats | Floating-point uniform values for the shader. Floats are available as `u_float0` to `u_float7` in the shader code. Default: 0.0. |
 | `ints` | INT | No | 0 to 8 integers | Integer uniform values for the shader. Ints are available as `u_int0` to `u_int7` in the shader code. Default: 0. |
+| `bools` | BOOLEAN | No | 0 to 8 booleans | Boolean uniform values for the shader. Booleans are available as `u_bool0` to `u_bool7` (bool) in the shader code. Default: False. |
+| `curves` | CURVE | No | 0 to 8 curves | Curve uniform values for the shader. Curves are available as `u_curve0` to `u_curve7` (sampler2D, 1D LUT) in the shader code. Sample with `texture(u_curve0, vec2(x, 0.5)).r`. |
 
 **Notes:**
 
 * The `width` and `height` parameters are only required and visible when `size_mode` is set to `"custom"`.
 * At least one input image is required.
 * The shader code always has access to a `u_resolution` (vec2) uniform containing the output dimensions.
-* A maximum of 8 input images, 8 float uniforms, and 8 integer uniforms can be provided.
+* A maximum of 8 input images, 8 float uniforms, 8 integer uniforms, 8 boolean uniforms, and 8 curve uniforms can be provided.
 
 ## Outputs
 
@@ -29,3 +31,6 @@ The GLSL Shader node applies custom GLSL ES fragment shader code to input images
 | `IMAGE1` | IMAGE | The second output image from the shader. Available via `layout(location = 1) out vec4 fragColor1` in the shader code. |
 | `IMAGE2` | IMAGE | The third output image from the shader. Available via `layout(location = 2) out vec4 fragColor2` in the shader code. |
 | `IMAGE3` | IMAGE | The fourth output image from the shader. Available via `layout(location = 3) out vec4 fragColor3` in the shader code. |
+
+---
+**Source fingerprint (SHA-256):** `7830977409a5efab205b7c927eb83499a9e1e8299959b34643c9c3f1f586c058`

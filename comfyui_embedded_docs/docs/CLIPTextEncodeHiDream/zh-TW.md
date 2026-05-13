@@ -1,21 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeHiDream/zh-TW.md)
 
-CLIPTextEncodeHiDream 節點使用不同的語言模型處理多個文字輸入，並將它們組合成單一的條件化輸出。它會對來自四個不同來源（CLIP-L、CLIP-G、T5-XXL 和 LLaMA）的文字進行標記化，並使用排程編碼方法進行編碼。這透過同時利用多個語言模型，實現了更複雜的文字條件化處理。
+CLIPTextEncodeHiDream 節點使用不同的語言模型（CLIP-L、CLIP-G、T5-XXL 和 LLaMA）處理四個獨立的文字輸入，並將它們組合成單一的條件輸出。它使用對應的模型對每個文字輸入進行標記化，並透過排程編碼方法將它們一起編碼，從而能夠同時利用多個語言模型實現更複雜的文字條件控制。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 輸入類型 | 預設值 | 數值範圍 | 參數說明 |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | 必填輸入 | - | - | 用於標記化和編碼的 CLIP 模型 |
-| `clip_l` | STRING | 多行文字 | - | - | 用於 CLIP-L 模型處理的文字輸入 |
-| `clip_g` | STRING | 多行文字 | - | - | 用於 CLIP-G 模型處理的文字輸入 |
-| `t5xxl` | STRING | 多行文字 | - | - | 用於 T5-XXL 模型處理的文字輸入 |
-| `llama` | STRING | 多行文字 | - | - | 用於 LLaMA 模型處理的文字輸入 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
+|-----------|-----------|----------|-------|-------------|
+| `clip` | CLIP | 是 | - | 用於標記化和編碼的 CLIP 模型 |
+| `clip_l` | STRING | 是 | - | 提供給 CLIP-L 模型處理的文字輸入。支援多行文字和動態提示。 |
+| `clip_g` | STRING | 是 | - | 提供給 CLIP-G 模型處理的文字輸入。支援多行文字和動態提示。 |
+| `t5xxl` | STRING | 是 | - | 提供給 T5-XXL 模型處理的文字輸入。支援多行文字和動態提示。 |
+| `llama` | STRING | 是 | - | 提供給 LLaMA 模型處理的文字輸入。支援多行文字和動態提示。 |
 
-**注意：** 所有文字輸入均支援動態提示詞和多行文字輸入。該節點需要提供所有四個文字參數才能正常運作，因為每個參數都會透過排程編碼過程對最終的條件化輸出產生貢獻。
+**注意：** 所有四個文字輸入（`clip_l`、`clip_g`、`t5xxl` 和 `llama`）都是正常運作所必需的，因為每個輸入都會透過排程編碼過程對最終的條件輸出做出貢獻。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | 來自所有已處理文字輸入的合併條件化輸出 |
+| `CONDITIONING` | CONDITIONING | 來自所有已處理文字輸入的組合條件輸出，使用排程編碼方法進行編碼 |
+
+---
+**Source fingerprint (SHA-256):** `51d117d82a9d833f095e874bf442d5cf8c46a12313fda6b98e628fa988797565`

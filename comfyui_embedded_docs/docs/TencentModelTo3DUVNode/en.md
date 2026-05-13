@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/en.md)
 
-This node uses the Tencent Hunyuan3D API to perform UV unfolding on a 3D model. It takes a 3D model file as input, sends it to the API for processing, and returns the processed model in OBJ and FBX formats along with a generated UV texture image.
+This node uses the Tencent Hunyuan3D API to perform UV unfolding on a 3D model. It takes a 3D model file as input, sends it to the API for processing, and returns the processed model in OBJ and FBX formats along with a generated UV texture image. The input model must have fewer than 30,000 faces.
 
 ## Inputs
 
@@ -15,4 +15,7 @@ This node uses the Tencent Hunyuan3D API to perform UV unfolding on a 3D model. 
 |-------------|-----------|-------------|
 | `OBJ` | FILE3D | The processed 3D model file in OBJ format. |
 | `FBX` | FILE3D | The processed 3D model file in FBX format. |
-| `Image` | IMAGE | The generated UV texture image. |
+| `uv_image` | IMAGE | The generated UV texture image. |
+
+---
+**Source fingerprint (SHA-256):** `16bf094cfc3146e9d302d73862d2080b94c5aa2d575221d3c8316a3cf69fc5e1`

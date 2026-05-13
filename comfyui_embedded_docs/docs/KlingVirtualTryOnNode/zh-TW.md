@@ -1,19 +1,22 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVirtualTryOnNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVirtualTryOnNode/zh-TW.md)
 
-{heading_overview}
+## 概述
 
-Kling 虛擬試穿節點。輸入人物圖像和服裝圖像，在人物身上試穿服裝。您可以將多個服裝項目圖片合併為一張白色背景的圖像。
+Kling 虛擬試穿節點。輸入人物圖片和服裝圖片，即可在人物身上試穿該服裝。您可以將多張服飾商品圖片合併成一張白色背景的圖片。
 
-{heading_inputs}
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `human_image` | IMAGE | 是 | - | 要試穿服裝的人物圖像 |
-| `cloth_image` | IMAGE | 是 | - | 要在人物身上試穿的服裝圖像 |
-| `model_name` | STRING | 是 | `"kolors-virtual-try-on-v1"` | 要使用的虛擬試穿模型（預設："kolors-virtual-try-on-v1"） |
+| `human_image` | IMAGE | 是 | - | 要進行試穿的人物圖片 |
+| `cloth_image` | IMAGE | 是 | - | 要在人物身上試穿的服裝圖片 |
+| `model_name` | STRING | 是 | `"kolors-virtual-try-on-v1"` | 要使用的虛擬試穿模型（預設值："kolors-virtual-try-on-v1"） |
 
-{heading_outputs}
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | IMAGE | 顯示人物試穿服裝項目後的結果圖像 |
+| `output` | IMAGE | 顯示人物穿上該服裝後的結果圖片 |
+
+---
+**Source fingerprint (SHA-256):** `bfd0da440d3ad85e15ce16851313f2e75421a8a3eb5e4c651350432955afc731`

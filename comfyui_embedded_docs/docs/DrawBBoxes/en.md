@@ -19,3 +19,6 @@ The DrawBBoxes node visualizes object detection results by drawing bounding boxe
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `out_image` | IMAGE | The output image(s) with the drawn bounding boxes, labels, and confidence scores overlaid. |
+
+---
+**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`

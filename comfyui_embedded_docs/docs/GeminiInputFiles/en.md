@@ -16,3 +16,6 @@ Loads and formats input files for use with the Gemini API. This node allows user
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `GEMINI_INPUT_FILES` | GEMINI_INPUT_FILES | Formatted file data ready for use with Gemini LLM nodes, containing the loaded file content in the appropriate API format. |
+
+---
+**Source fingerprint (SHA-256):** `54da8696d144513efa9660fbc5ddbf5480da12eafe4d2791c8e81cd207ef8a52`

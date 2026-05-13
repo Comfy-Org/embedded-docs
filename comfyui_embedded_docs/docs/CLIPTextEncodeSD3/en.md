@@ -4,13 +4,13 @@ The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models b
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | Required | - | - | The CLIP model used for text encoding |
-| `clip_l` | STRING | Multiline, Dynamic Prompts | - | - | Text input for the local CLIP model |
-| `clip_g` | STRING | Multiline, Dynamic Prompts | - | - | Text input for the global CLIP model |
-| `t5xxl` | STRING | Multiline, Dynamic Prompts | - | - | Text input for the T5-XXL model |
-| `empty_padding` | COMBO | Selection | - | ["none", "empty_prompt"] | Controls how empty text inputs are handled |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `clip` | CLIP | Yes | - | The CLIP model used for text encoding |
+| `clip_l` | STRING | Yes | - | Text input for the local CLIP model. Supports multiline text and dynamic prompts. |
+| `clip_g` | STRING | Yes | - | Text input for the global CLIP model. Supports multiline text and dynamic prompts. |
+| `t5xxl` | STRING | Yes | - | Text input for the T5-XXL model. Supports multiline text and dynamic prompts. |
+| `empty_padding` | COMBO | Yes | `"none"`<br>`"empty_prompt"` | Controls how empty text inputs are handled. When set to "none", empty text inputs for `clip_g`, `clip_l`, or `t5xxl` will result in empty token lists instead of padding. This is an advanced parameter (default: "none"). |
 
 **Parameter Constraints:**
 
@@ -23,3 +23,6 @@ The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models b
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | The encoded text conditioning data ready for use in SD3 generation pipelines |
+
+---
+**Source fingerprint (SHA-256):** `38f7538d05fe48e74f41f265550b83906b2f0c5d31f0783f6859f4df7b5cb9d3`

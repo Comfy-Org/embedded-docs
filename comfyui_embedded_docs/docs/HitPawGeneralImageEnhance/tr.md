@@ -1,20 +1,23 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawGeneralImageEnhance/tr.md)
 
-Bu düğüm, düşük çözünürlüklü görüntüleri yükselterek süper çözünürlüğe getirir, artefaktları ve gürültüyü giderir. Görüntüyü işlemek için harici bir API kullanır ve işleme limitleri dahilinde kalmak için giriş boyutunu otomatik olarak ayarlayabilir. İzin verilen maksimum çıktı boyutu 4 megapikseldir.
+Bu düğüm, düşük çözünürlüklü görüntüleri süper çözünürlüğe yükselterek, yapaylıkları ve gürültüyü gidererek iyileştirir. Görüntüyü işlemek için harici bir API kullanır ve işleme sınırları dahilinde kalmak için giriş boyutunu otomatik olarak ayarlayabilir. İzin verilen maksimum çıkış boyutu 4 megapikseldir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `model` | STRING | Evet | `"generative_portrait"`<br>`"generative"` | Kullanılacak iyileştirme modeli. |
+| `model` | STRING | Evet | `"generative_portrait"`<br>`"generative"` | Kullanılacak iyileştirme modeli. `generative_portrait` modeli portreler için optimize edilmiştir, `generative` ise genel amaçlı bir modeldir. |
 | `image` | IMAGE | Evet | - | İyileştirilecek giriş görüntüsü. |
-| `upscale_factor` | INT | Evet | `1`<br>`2`<br>`4` | Görüntü boyutlarının kaç kat büyütüleceği faktörü. |
-| `auto_downscale` | BOOLEAN | Hayır | - | Çıktı limiti aşacaksa giriş görüntüsünü otomatik olarak küçült. (varsayılan: `False`) |
+| `upscale_factor` | INT | Evet | `1`<br>`2`<br>`4` | Görüntü boyutlarının yükseltileceği faktör. 1 faktörü yükseltme yapılmadığı, 2 boyutları ikiye katladığı ve 4 dört katına çıkardığı anlamına gelir. |
+| `auto_downscale` | BOOLEAN | Hayır | - | Çıkış sınırı aşılacaksa giriş görüntüsünü otomatik olarak küçültür. Etkinleştirildiğinde, düğüm istenen yükseltme faktörünü uygulamadan önce giriş görüntüsü boyutunu 4 megapiksel çıkış sınırına sığacak şekilde küçültmeye çalışır. (varsayılan: `False`) |
 
-**Not:** Hesaplanan çıktı boyutu (giriş yüksekliği × upscale_factor × giriş genişliği × upscale_factor) 4.000.000 pikseli (4MP) aşarsa ve `auto_downscale` devre dışıysa, düğüm bir hata verecektir. `auto_downscale` etkinleştirildiğinde, düğüm istenen büyütme faktörünü uygulamadan önce giriş görüntüsünü limit dahiline sığacak şekilde küçültmeye çalışacaktır.
+**Not:** Hesaplanan çıkış boyutu (giriş yüksekliği × upscale_factor × giriş genişliği × upscale_factor) 4.000.000 pikseli (4MP) aşarsa ve `auto_downscale` devre dışıysa düğüm bir hata verecektir. `auto_downscale` etkinleştirildiğinde, düğüm istenen yükseltme faktörünü uygulamadan önce giriş görüntüsünü sınıra sığacak şekilde küçültmeye çalışacaktır. 2 kattan fazla küçültme gerekiyorsa, düğüm bunun yerine yükseltme faktörünü azaltacaktır.
 
 ## Çıkışlar
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `image` | IMAGE | İyileştirilmiş ve büyütülmüş çıktı görüntüsü. |
+| `image` | IMAGE | İyileştirilmiş ve yükseltilmiş çıkış görüntüsü. |
+
+---
+**Source fingerprint (SHA-256):** `29f927d39777acdfba2aad107027672d281c202ec78e04942e405c2cc64fcee4`

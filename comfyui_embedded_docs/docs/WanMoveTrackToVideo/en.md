@@ -27,3 +27,6 @@ The WanMoveTrackToVideo node prepares conditioning and latent space data for vid
 | `positive` | CONDITIONING | The modified positive conditioning, potentially containing `concat_latent_image`, `concat_mask`, and `clip_vision_output`. |
 | `negative` | CONDITIONING | The modified negative conditioning, potentially containing `concat_latent_image`, `concat_mask`, and `clip_vision_output`. |
 | `latent` | LATENT | An empty latent tensor with dimensions shaped by the `batch_size`, `length`, `height`, and `width` inputs. |
+
+---
+**Source fingerprint (SHA-256):** `9677addf5b94b42efd3015f51380c1fa9b16d4a5105cc7f24de0be34c0042bbc`

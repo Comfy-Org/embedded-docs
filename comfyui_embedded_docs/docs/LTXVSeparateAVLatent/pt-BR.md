@@ -4,15 +4,18 @@ O nó LTXVSeparateAVLatent recebe uma representação latente audiovisual combin
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `av_latent` | LATENT | Sim | N/A | A representação latente audiovisual combinada a ser separada. |
 
-**Observação:** Espera-se que o tensor `samples` do latente de entrada tenha pelo menos dois elementos ao longo da primeira dimensão (dimensão do lote). O primeiro elemento é usado para o latente de vídeo e o segundo elemento é usado para o latente de áudio. Se uma `noise_mask` estiver presente, ela é dividida da mesma maneira.
+**Nota:** O tensor `samples` do latente de entrada deve ter pelo menos dois elementos ao longo da primeira dimensão (dimensão do lote). O primeiro elemento é usado para o latente de vídeo, e o segundo elemento é usado para o latente de áudio. Se uma `noise_mask` estiver presente, ela é dividida da mesma forma.
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `video_latent` | LATENT | A representação latente contendo os dados de vídeo separados. |
 | `audio_latent` | LATENT | A representação latente contendo os dados de áudio separados. |
+
+---
+**Source fingerprint (SHA-256):** `55bce5d768e7fe13f885cc32d34ecdac5cdcbb667b03743004866ea4b6d58d46`

@@ -7,11 +7,14 @@ The Center Crop Images node crops an image from its center to a specified width 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image to be cropped. |
-| `width` | INT | No | 1 to 8192 | The width of the crop area (default: 512). |
-| `height` | INT | No | 1 to 8192 | The height of the crop area (default: 512). |
+| `width` | INT | Yes | 1 to 8192 | The width of the crop area (default: 512). |
+| `height` | INT | Yes | 1 to 8192 | The height of the crop area (default: 512). |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The resulting image after the center crop operation. |
+
+---
+**Source fingerprint (SHA-256):** `4361b6630ab1833e035d6ab04a130fb36fff33cddc36b54ff5a2d8e04534a555`

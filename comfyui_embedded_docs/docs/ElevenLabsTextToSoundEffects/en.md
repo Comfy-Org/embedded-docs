@@ -21,3 +21,6 @@ The ElevenLabs Text to Sound Effects node generates audio sound effects from a t
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The generated sound effect audio file. |
+
+---
+**Source fingerprint (SHA-256):** `c23c4dd3c9c12f0e891d40683265c5b74b5c6320601aaadb686489510db9f107`

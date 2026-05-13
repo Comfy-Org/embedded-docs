@@ -1,22 +1,50 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/es.md)
 
-El nodo Kling Inicio-Fin de Fotograma a Video crea una secuencia de video que transita entre las imágenes de inicio y fin proporcionadas. Genera todos los fotogramas intermedios para producir una transformación suave desde el primer fotograma hasta el último. Este nodo llama a la API de imagen a video pero solo admite las opciones de entrada que funcionan con el campo de solicitud `image_tail`.
+Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
+
+## Reglas de Traducción
+
+1. **Contenido que NO debe traducirse:**
+   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
+   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
+   - Valores en columna Range: números, "auto", nombres de opciones
+   - Código, rutas de archivos
+
+2. **Contenido que SÍ debe traducirse:**
+   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
+   - Todo el texto descriptivo y explicativo
+   - Descripciones de parámetros
+
+3. **Calidad de traducción:**
+   - Usar español estándar y neutral
+   - Mantener tono profesional pero accesible
+   - Asegurar precisión técnica
+   - Usar terminología técnica estándar en español
+
+4. **Formato:**
+   - Mantener todo el formato Markdown
+   - Preservar estructura de tablas
+   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
+
+Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
+
+El nodo Kling Start-End Frame to Video crea una secuencia de video que realiza una transición entre las imágenes de inicio y fin proporcionadas. Genera todos los fotogramas intermedios para producir una transformación suave desde el primer fotograma hasta el último. Este nodo utiliza la API de imagen a video, pero solo admite las opciones de entrada que funcionan con el campo de solicitud `image_tail`.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `start_frame` | IMAGE | Sí | - | Imagen de referencia - URL o cadena codificada en Base64, no puede exceder 10MB, resolución no menor a 300*300px, relación de aspecto entre 1:2.5 ~ 2.5:1. Base64 no debe incluir el prefijo data:image. |
-| `end_frame` | IMAGE | Sí | - | Imagen de referencia - Control del fotograma final. URL o cadena codificada en Base64, no puede exceder 10MB, resolución no menor a 300*300px. Base64 no debe incluir el prefijo data:image. |
+| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
+|-----------|--------------|-----------|-------|-------------|
+| `start_frame` | IMAGE | Sí | - | Imagen de referencia - URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px, relación de aspecto entre 1:2.5 y 2.5:1. Base64 no debe incluir el prefijo data:image. |
+| `end_frame` | IMAGE | Sí | - | Imagen de referencia - Control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px. Base64 no debe incluir el prefijo data:image. |
 | `prompt` | STRING | Sí | - | Prompt de texto positivo |
 | `negative_prompt` | STRING | Sí | - | Prompt de texto negativo |
-| `cfg_scale` | FLOAT | No | 0.0-1.0 | Controla la intensidad de la guía del prompt (valor por defecto: 0.5) |
-| `aspect_ratio` | COMBO | No | "16:9"<br>"9:16"<br>"1:1"<br>"21:9"<br>"9:21"<br>"3:4"<br>"4:3" | La relación de aspecto para el video generado (valor por defecto: "16:9") |
-| `mode` | COMBO | No | Múltiples opciones disponibles | La configuración a utilizar para la generación del video siguiendo el formato: modo / duración / nombre_del_modelo. (valor por defecto: tercera opción de los modos disponibles) |
+| `cfg_scale` | FLOAT | No | 0.0-1.0 | Controla la fuerza de la guía del prompt (predeterminado: 0.5) |
+| `aspect_ratio` | COMBO | No | "16:9"<br>"9:16"<br>"1:1" | La relación de aspecto para el video generado (predeterminado: "16:9") |
+| `mode` | COMBO | No | Múltiples opciones disponibles | La configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: la séptima opción de los modos disponibles) |
 
-**Restricciones de Imagen:**
+**Restricciones de las imágenes:**
 
-- Tanto `start_frame` como `end_frame` deben ser proporcionados y no pueden exceder 10MB de tamaño de archivo
+- Tanto `start_frame` como `end_frame` deben proporcionarse y no pueden superar un tamaño de archivo de 10MB
 - Resolución mínima: 300×300 píxeles para ambas imágenes
 - La relación de aspecto de `start_frame` debe estar entre 1:2.5 y 2.5:1
 - Las imágenes codificadas en Base64 no deben incluir el prefijo "data:image"
@@ -24,7 +52,10 @@ El nodo Kling Inicio-Fin de Fotograma a Video crea una secuencia de video que tr
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `video_id` | VIDEO | La secuencia de video generada |
-| `duration` | STRING | Identificador único para el video generado |
+|------------------|--------------|-------------|
+| `output` | VIDEO | La secuencia de video generada |
+| `video_id` | STRING | Identificador único para el video generado |
 | `duration` | STRING | Duración del video generado |
+
+---
+**Source fingerprint (SHA-256):** `1df5820b4f41ccd5afec8e2701888d90c940f164c433c7f81397b41e8fc333c6`

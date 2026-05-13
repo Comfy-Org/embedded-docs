@@ -1,18 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/zh-TW.md)
 
-{heading_overview}
+## 概述
 
-PerturbedAttentionGuidance 節點對擴散模型應用擾動注意力引導，以提升生成品質。它在採樣過程中修改模型的自注意力機制，將其替換為專注於值投影的簡化版本。此技術透過調整條件去噪過程，有助於改善生成圖像的連貫性和品質。
+PerturbedAttentionGuidance 節點會對擴散模型應用擾動注意力引導，以提升生成品質。在取樣過程中，它會將模型的自注意力機制替換為專注於數值投影的簡化版本。此技術透過調整條件去噪過程，有助於改善生成影像的連貫性與品質。
 
-{heading_inputs}
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `模型` | MODEL | 是 | - | 要應用擾動注意力引導的擴散模型 |
-| `比例` | FLOAT | 否 | 0.0 - 100.0 | 擾動注意力引導效果的強度（預設值：3.0） |
+| `model` | MODEL | 是 | - | 要應用擾動注意力引導的擴散模型 |
+| `scale` | FLOAT | 否 | 0.0 - 100.0 | 擾動注意力引導效果的強度（預設值：3.0）。設為 0 時，節點無作用並回傳原始去噪結果。 |
 
-{heading_outputs}
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `模型` | MODEL | 已應用擾動注意力引導的修改後模型 |
+| `model` | MODEL | 已套用擾動注意力引導的修改後模型 |
+
+---
+**Source fingerprint (SHA-256):** `8808aa3a3f7cfe306e17f8f4424779cb8e4565647bbcc9d4907da2215affe191`

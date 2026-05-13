@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/tr.md)
 
-SaveImage düğümü aldığı görüntüleri `ComfyUI/output` dizininize kaydeder. Her görüntüyü bir PNG dosyası olarak kaydeder ve gelecekte referans için istem (prompt) gibi iş akışı meta verilerini kaydedilen dosyaya gömebilir.
+SaveImage düğümü, aldığı görselleri `ComfyUI/output` dizininize kaydeder. Her görseli PNG dosyası olarak kaydeder ve prompt gibi iş akışı meta verilerini, ileride başvurmak üzere kaydedilen dosyaya gömmektedir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `görüntüler` | IMAGE | Evet | - | Kaydedilecek görüntüler. |
-| `dosyaadı_öneki` | STRING | Evet | - | Kaydedilecek dosya için ön ek. Bu, düğümlerden gelen değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgilerini içerebilir (varsayılan: "ComfyUI"). |
+|-----------|-----------|----------|--------|----------|
+| `images` | IMAGE | Evet | - | Kaydedilecek görseller. |
+| `filename_prefix` | STRING | Evet | - | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerleri dahil etmek için `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme bilgileri içerebilir (varsayılan: "ComfyUI"). |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `ui` | UI_RESULT | Bu düğüm, kaydedilen görüntülerin dosya adları ve alt klasörleriyle birlikte bir listesini içeren bir UI sonucu çıktılar. Diğer düğümlere bağlanmak için veri çıktılamaz. |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `ui` | UI_RESULT | Bu düğüm, kaydedilen görsellerin dosya adlarını ve alt klasörlerini içeren bir liste olarak bir kullanıcı arayüzü sonucu çıktısı verir. Diğer düğümlere bağlanmak için veri çıktısı sağlamaz. |
+
+---
+**Source fingerprint (SHA-256):** `fa88c26e5e03f788dcc545434a54124c5e9d03b559da67f0857b52faec0e97e7`

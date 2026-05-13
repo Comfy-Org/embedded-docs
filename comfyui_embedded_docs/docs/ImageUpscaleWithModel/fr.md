@@ -1,15 +1,16 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageUpscaleWithModel/fr.md)
 
-Ce nœud est conçu pour agrandir les images en utilisant un modèle d'agrandissement spécifié. Il gère le processus d'agrandissement en ajustant l'image à l'appareil approprié, en gérant efficacement la mémoire et en appliquant le modèle d'agrandissement de manière segmentée pour éviter les erreurs de mémoire insuffisante.
+Ce nœud est conçu pour le suréchantillonnage d'images à l'aide d'un modèle de suréchantillonnage spécifié. Il gère efficacement le processus de suréchantillonnage en adaptant l'image au périphérique approprié, en optimisant l'utilisation de la mémoire et en appliquant le modèle de suréchantillonnage par tuiles pour éviter d'éventuelles erreurs de dépassement de mémoire.
 
 ## Entrées
 
-| Paramètre         | Comfy dtype       | Description                                                                 |
-|-------------------|-------------------|----------------------------------------------------------------------------|
-| `modèle_d'agrandissement`   | `UPSCALE_MODEL`   | Le modèle d'agrandissement à utiliser pour agrandir l'image. Il est crucial pour définir l'algorithme d'agrandissement et ses paramètres. |
-| `image`           | `IMAGE`           | L'image à agrandir. Cette entrée est essentielle pour déterminer le contenu source qui subira le processus d'agrandissement. |
+| Paramètre        | Type Comfy       | Description                                                                 |
+|------------------|------------------|-----------------------------------------------------------------------------|
+| `upscale_model`  | `UPSCALE_MODEL`  | Le modèle de suréchantillonnage à utiliser pour agrandir l'image. Il est essentiel pour définir l'algorithme de suréchantillonnage et ses paramètres. |
+| `image`          | `IMAGE`          | L'image à suréchantillonner. Cette entrée est indispensable pour déterminer le contenu source qui subira le processus de suréchantillonnage. |
 
 ## Sorties
 
-| Paramètre | Data Type | Description                                        |
-|-----------|-------------|----------------------------------------------------|
-| `image`   | `IMAGE`     | L'image agrandie, traitée par le modèle d'agrandissement. Cette sortie est le résultat de l'opération d'agrandissement, montrant la résolution ou la qualité améliorée. |
+| Paramètre | Type de données | Description                                        |
+|-----------|-----------------|----------------------------------------------------|
+| `image`   | `IMAGE`         | L'image suréchantillonnée, traitée par le modèle de suréchantillonnage. Cette sortie est le résultat de l'opération de suréchantillonnage, mettant en évidence l'amélioration de la résolution ou de la qualité. |

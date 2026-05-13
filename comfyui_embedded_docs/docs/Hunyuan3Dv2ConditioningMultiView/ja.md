@@ -1,21 +1,26 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/ja.md)
 
-Hunyuan3Dv2ConditioningMultiViewノードは、3Dビデオ生成のためのマルチビューCLIPビジョン埋め込みを処理します。オプションの正面、左側、背面、右側のビュー埋め込みを受け取り、それらを位置エンコーディングと組み合わせて、ビデオモデルのためのコンディショニングデータを作成します。このノードは、結合された埋め込みからのポジティブコンディショニングと、ゼロ値のネガティブコンディショニングの両方を出力します。
+このドキュメントはAIによって生成されました。誤りや改善のご提案がございましたら、ぜひご協力ください！ [GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/en.md)
+
+Hunyuan3Dv2ConditioningMultiView ノードは、3D動画生成のためのマルチビューCLIPビジョン埋め込みを処理します。オプションで正面、左、背面、右の各ビュー埋め込みを受け取り、それらを位置エンコーディングと組み合わせて、動画モデル用の条件付けデータを作成します。このノードは、結合された埋め込みからのポジティブ条件付けと、ゼロ値によるネガティブ条件付けの両方を出力します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `フロント` | CLIP_VISION_OUTPUT | いいえ | - | 正面ビューのCLIPビジョン出力 |
-| `左` | CLIP_VISION_OUTPUT | いいえ | - | 左側ビューのCLIPビジョン出力 |
-| `バック` | CLIP_VISION_OUTPUT | いいえ | - | 背面ビューのCLIPビジョン出力 |
-| `右` | CLIP_VISION_OUTPUT | いいえ | - | 右側ビューのCLIPビジョン出力 |
+| `front` | CLIP_VISION_OUTPUT | いいえ | - | 正面ビューのCLIPビジョン出力 |
+| `left` | CLIP_VISION_OUTPUT | いいえ | - | 左ビューのCLIPビジョン出力 |
+| `back` | CLIP_VISION_OUTPUT | いいえ | - | 背面ビューのCLIPビジョン出力 |
+| `right` | CLIP_VISION_OUTPUT | いいえ | - | 右ビューのCLIPビジョン出力 |
 
-**注意:** ノードが機能するには、少なくとも1つのビュー入力が提供されている必要があります。ノードは有効なCLIPビジョン出力データを含むビューのみを処理します。
+**注記:** ノードが機能するには、少なくとも1つのビュー入力を提供する必要があります。ノードは、有効なCLIPビジョン出力データを含むビューのみを処理します。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `ネガティブ` | CONDITIONING | 位置エンコーディングと組み合わされたマルチビュー埋め込みを含むポジティブコンディショニング |
-| `negative` | CONDITIONING | 対照学習のためのゼロ値を持つネガティブコンディショニング |
+| `positive` | CONDITIONING | 位置エンコーディングを含む結合されたマルチビュー埋め込みによるポジティブ条件付け |
+| `negative` | CONDITIONING | 対照学習のためのゼロ値によるネガティブ条件付け |
+
+---
+**Source fingerprint (SHA-256):** `01998ae9ba7d2ae9a2f6a0b5aee4c03168f935fb9769317cd80d93a7a4b96f13`

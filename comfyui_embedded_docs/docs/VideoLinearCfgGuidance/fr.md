@@ -1,15 +1,16 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoLinearCFGGuidance/fr.md)
 
-Le nœud VideoLinearCFGGuidance applique une échelle de guidage de conditionnement linéaire à un modèle vidéo, ajustant l'influence des composants conditionnés et non conditionnés sur une plage spécifiée. Cela permet un contrôle dynamique du processus de génération, permettant un ajustement fin de la sortie du modèle en fonction du niveau de conditionnement souhaité.
+Le nœud VideoLinearCFGGuidance applique une échelle de guidage conditionnel linéaire à un modèle vidéo, ajustant l'influence des composants conditionnés et non conditionnés sur une plage spécifiée. Cela permet un contrôle dynamique du processus de génération, offrant un réglage fin de la sortie du modèle en fonction du niveau de conditionnement souhaité.
 
 ## Entrées
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `modèle`   | MODEL     | Le paramètre model représente le modèle vidéo auquel le guidage linéaire CFG sera appliqué. Il est crucial pour définir le modèle de base qui sera modifié avec l'échelle de guidage. |
-| `min_cfg` | `FLOAT`     | Le paramètre min_cfg spécifie l'échelle minimale de guidage de conditionnement à appliquer, servant de point de départ pour l'ajustement de l'échelle linéaire. Il joue un rôle clé dans la détermination de la limite inférieure de l'échelle de guidage, influençant la sortie du modèle. |
+| Paramètre | Type de données | Description |
+|-----------|-----------------|-------------|
+| `model`   | MODEL           | Le paramètre `model` représente le modèle vidéo auquel le guidage CFG linéaire sera appliqué. Il est essentiel pour définir le modèle de base qui sera modifié avec l'échelle de guidage. |
+| `min_cfg` | `FLOAT`         | Le paramètre `min_cfg` spécifie l'échelle de guidage conditionnel minimale à appliquer, servant de point de départ pour l'ajustement linéaire de l'échelle. Il joue un rôle clé dans la détermination de la limite inférieure de l'échelle de guidage, influençant la sortie du modèle. |
 
 ## Sorties
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `modèle`   | MODEL     | La sortie est une version modifiée du modèle d'entrée, avec l'échelle de guidage linéaire CFG appliquée. Ce modèle ajusté est capable de générer des sorties avec des degrés de conditionnement variés, basés sur l'échelle de guidage spécifiée. |
+| Paramètre | Type de données | Description |
+|-----------|-----------------|-------------|
+| `model`   | MODEL           | La sortie est une version modifiée du modèle d'entrée, avec l'échelle de guidage CFG linéaire appliquée. Ce modèle ajusté est capable de générer des sorties avec différents degrés de conditionnement, en fonction de l'échelle de guidage spécifiée. |

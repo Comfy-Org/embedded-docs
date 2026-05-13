@@ -14,3 +14,6 @@ The SetUnionControlNetType node allows you to specify the type of control networ
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `control_net` | CONTROL_NET | The modified control network with the specified type setting applied |
+
+---
+**Source fingerprint (SHA-256):** `a64308aec96784f08b6f3f8e96e85f532bd1c536301739e7252b2c7978921b5a`

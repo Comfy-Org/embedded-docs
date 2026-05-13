@@ -41,3 +41,6 @@ The WanInfiniteTalkToVideo node generates video sequences from audio input. It u
 | `negative` | CONDITIONING | The negative conditioning, potentially modified with additional context. |
 | `latent` | LATENT | The generated video sequence in latent space. |
 | `trim_image` | INT | The number of frames from the start of the motion context that should be trimmed when extending a sequence. |
+
+---
+**Source fingerprint (SHA-256):** `6bb976da5cac0b61edb7d4c9d206c7c7ea9ffc0e982034c23c7f2e891e972888`

@@ -1,19 +1,21 @@
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/tr.md)
 
-Bu düğüm, birden fazla anahtar kare arasında geçişler oluşturarak bir video üretir. Başlangıç görüntüsünden başlar ve kullanıcı tanımlı bitiş görüntüleri ve komut dizilerinden oluşan bir sırayı animasyonlaştırarak, çıktı olarak tek bir video dosyası oluşturur.
+Bu belge, yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
 
-## Girdiler
+Bu düğüm, birden fazla ana kare arasında geçişler oluşturarak bir video üretir. Bir başlangıç görüntüsünden başlar ve kullanıcı tarafından tanımlanan bir dizi bitiş görüntüsü ve istemi aracılığıyla animasyon yaparak çıktı olarak tek bir video dosyası üretir.
+
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
 | `model` | COMBO | Evet | `"viduq2-pro"`<br>`"viduq2-turbo"` | Video oluşturma için kullanılacak Vidu modeli. |
 | `start_image` | IMAGE | Evet | - | Başlangıç karesi görüntüsü. En-boy oranı 1:4 ile 4:1 arasında olmalıdır. |
-| `seed` | INT | Hayır | 0 ile 2147483647 | Tekrarlanabilir sonuçlar sağlamak için rastgele sayı üretiminde kullanılan bir tohum değeri (varsayılan: 1). |
+| `seed` | INT | Hayır | 0 ile 2147483647 | Tekrarlanabilir sonuçlar elde etmek için rastgele sayı üretiminde kullanılan tohum değeri (varsayılan: 1). |
 | `resolution` | COMBO | Evet | `"720p"`<br>`"1080p"` | Çıktı videosunun çözünürlüğü. |
-| `frames` | DYNAMICCOMBO | Evet | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Anahtar kare geçişlerinin sayısı (2-9). Bir değer seçmek, her bir kare için gerekli girdileri dinamik olarak ortaya çıkarır. |
+| `frames` | DYNAMICCOMBO | Evet | `"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Ana kare geçiş sayısı (2-9). Bir değer seçmek, her kare için gerekli girdileri dinamik olarak ortaya çıkarır. |
 
-**Kare Girdileri (Dinamik Olarak Görünen):**
-`frames` için bir değer (örneğin, "3") seçtiğinizde, düğüm her bir geçiş için karşılık gelen bir dizi zorunlu girdi gösterecektir. Seçilen sayıya kadar olan her bir `i` karesi için şunları sağlamanız gerekir:
+**Kare Girdileri (Dinamik Olarak Görüntülenir):**
+`frames` için bir değer seçtiğinizde (örneğin, "3"), düğüm her geçiş için karşılık gelen bir dizi zorunlu girdi gösterecektir. Seçilen sayıya kadar olan her `i` karesi için aşağıdakileri sağlamanız gerekir:
 
 * `end_image{i}` (IMAGE): Bu geçiş için hedef görüntü. En-boy oranı 1:4 ile 4:1 arasında olmalıdır.
 * `prompt{i}` (STRING): Bu kareye geçişi yönlendiren bir metin açıklaması (maksimum 2000 karakter).
@@ -23,4 +25,7 @@ Bu düğüm, birden fazla anahtar kare arasında geçişler oluşturarak bir vid
 
 | Çıktı Adı | Veri Türü | Açıklama |
 | :--- | :--- | :--- |
-| `output` | VIDEO | Tüm animasyonlu geçişleri içeren oluşturulmuş video dosyası. |
+| `output` | VIDEO | Tüm animasyonlu geçişleri içeren oluşturulan video dosyası. |
+
+---
+**Source fingerprint (SHA-256):** `02ddbb1e041b6d9e6654ab6c3cc25f4c2e5bc1545d84a30624608edc85e51f96`

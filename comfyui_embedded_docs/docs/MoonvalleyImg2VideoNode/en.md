@@ -24,3 +24,6 @@ The Moonvalley Marey Image to Video node transforms a reference image into a vid
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video output |
+
+---
+**Source fingerprint (SHA-256):** `674e69a7f106f6f961f10c179008b7bb1147bf0e569c72d207a105f3fab2aaf5`

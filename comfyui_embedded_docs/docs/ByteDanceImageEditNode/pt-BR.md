@@ -4,17 +4,20 @@ O nó ByteDance Image Edit permite modificar imagens usando os modelos de IA da 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Tipo de Entrada | Padrão | Intervalo | Descrição |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | COMBO | seededit_3 | Opções de Image2ImageModelName | Nome do modelo |
-| `image` | IMAGE | IMAGE | - | - | A imagem base a ser editada |
+| Parâmetro | Tipo de Dado | Tipo de Entrada | Padrão | Faixa | Descrição |
+|-----------|--------------|-----------------|--------|-------|-----------|
+| `model` | MODEL | COMBO | seededit_3 | Opções Image2ImageModelName | Nome do modelo |
+| `image` | IMAGE | IMAGE | - | - | A imagem base para editar |
 | `prompt` | STRING | STRING | "" | - | Instrução para editar a imagem |
-| `seed` | INT | INT | 0 | 0-2147483647 | Semente a ser usada para a geração |
-| `guidance_scale` | FLOAT | FLOAT | 5.5 | 1.0-10.0 | Valores mais altos fazem a imagem seguir o prompt mais de perto |
-| `watermark` | BOOLEAN | BOOLEAN | True | - | Se deve adicionar uma marca d'água "Gerado por IA" à imagem |
+| `seed` | INT | INT | 0 | 0-2147483647 | Semente a ser usada para geração |
+| `guidance_scale` | FLOAT | FLOAT | 5.5 | 1.0-10.0 | Valor mais alto faz a imagem seguir o prompt mais fielmente |
+| `watermark` | BOOLEAN | BOOLEAN | True | - | Se deve adicionar uma marca d'água "gerado por IA" à imagem |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
+|---------------|--------------|-----------|
 | `IMAGE` | IMAGE | A imagem editada retornada pela API da ByteDance |
+
+---
+**Source fingerprint (SHA-256):** `9dc13d89f84756b545120efb5535e08ada163d4534975809f5056bdf7d8bfb73`

@@ -1,0 +1,22 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseTextToVideoApi/en.md)
+
+## Overview
+
+Generates a video based on a text prompt using the HappyHorse model. This node sends your prompt and settings to the HappyHorse API, waits for the video to be generated, and then downloads the result.
+
+## Inputs
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | DICT | Yes | See Description | A dictionary containing the model selection and its associated parameters. The model must be `"happyhorse-1.0-t2v"`. This dictionary includes the following sub-parameters:<br><br>**`prompt`** (STRING): The text description of the video you want to generate. Supports English and Chinese. (default: "").<br>**`resolution`** (COMBO): The resolution of the output video. Options: `"720P"`, `"1080P"`.<br>**`ratio`** (COMBO): The aspect ratio of the output video. Options: `"16:9"`, `"9:16"`, `"1:1"`, `"4:3"`, `"3:4"`.<br>**`duration`** (INT): The length of the video in seconds. (default: 5, min: 3, max: 15, step: 1). |
+| `seed` | INT | Yes | 0 to 2147483647 | Seed to use for generation. Using the same seed with the same inputs will produce the same result. (default: 0). |
+| `watermark` | BOOLEAN | No | True / False | Whether to add an AI-generated watermark to the result. (default: False). |
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `VIDEO` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `8c6a7c0c2b10bbc65ca54abc991e1f12e8846b31701ed65b49c5d71f1b2a63ec`

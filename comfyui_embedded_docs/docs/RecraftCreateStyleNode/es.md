@@ -1,11 +1,11 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreateStyleNode/es.md)
 
-Este nodo crea un estilo personalizado para la generación de imágenes mediante la carga de imágenes de referencia. Puedes cargar entre 1 y 5 imágenes para definir el nuevo estilo, y el nodo devolverá un ID de estilo único que puede usarse con otros nodos de Recraft. El tamaño total combinado de todos los archivos de imagen cargados no debe exceder los 5 MB.
+Este nodo crea un estilo personalizado para la generación de imágenes mediante la carga de imágenes de referencia. Puedes cargar entre 1 y 5 imágenes para definir el nuevo estilo, y el nodo devolverá un ID de estilo único que se puede utilizar con otros nodos de Recraft. El tamaño total combinado de todos los archivos de imagen cargados no debe superar los 5 MB.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
 | `style` | STRING | Sí | `"realistic_image"`<br>`"digital_illustration"` | El estilo base de las imágenes generadas. |
 | `images` | IMAGE | Sí | 1 a 5 imágenes | Un conjunto de 1 a 5 imágenes de referencia utilizadas para crear el estilo personalizado. |
 
@@ -13,6 +13,9 @@ Este nodo crea un estilo personalizado para la generación de imágenes mediante
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `style_id` | STRING | El identificador único para el nuevo estilo personalizado creado. |
+| Nombre de salida | Tipo de dato | Descripción |
+|------------------|--------------|-------------|
+| `style_id` | STRING | El identificador único para el estilo personalizado recién creado. |
+
+---
+**Source fingerprint (SHA-256):** `36340e64d90b3edbbecedf15ac123adaabb5bc0c950183d2df6627dc873da61c`

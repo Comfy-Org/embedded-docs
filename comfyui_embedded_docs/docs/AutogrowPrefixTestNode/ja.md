@@ -1,17 +1,22 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowPrefixTestNode/ja.md)
 
-AutogrowPrefixTestNodeは、自動拡張入力機能をテストするためのロジックノードです。動的な数の浮動小数点入力を受け付け、それらの値をカンマ区切りの文字列に結合し、その文字列を出力します。
+このドキュメントはAI生成です。誤りや改善のご提案がございましたら、ぜひご協力ください！[GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowPrefixTestNode/en.md)
+
+AutogrowPrefixTestNodeは、入力自動拡張機能をテストするために設計されたロジックノードです。動的な数のfloat入力を受け取り、それらの値をカンマ区切りの文字列に結合して出力します。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `autogrow` | AUTOGROW | はい | 1 から 10 の入力 | 1から10個の浮動小数点値を受け入れることができる動的な入力グループです。グループ内の各入力はFLOAT型です。 |
+| `autogrow` | AUTOGROW | はい | 1～10個の入力 | 1～10個のfloat値を受け入れ可能な動的な入力グループです。グループ内の各入力はFLOAT型で、最小値は1、最大値は10です。 |
 
-**注記:** `autogrow`入力は特別な動的入力です。このグループには最大10個まで複数の浮動小数点入力を追加できます。ノードは提供されたすべての値を処理します。
+**注記:** `autogrow`入力は特別な動的入力です。このグループには最大10個までのfloat入力を追加できます。ノードは指定されたすべての値を処理します。個々のfloat入力は1～10の範囲に制限されています。
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `output` | STRING | 入力されたすべての浮動小数点値をカンマで区切って含む単一の文字列です。 |
+| `output` | STRING | すべての入力float値をカンマで区切った単一の文字列です。 |
+
+---
+**Source fingerprint (SHA-256):** `7ae65365f77399a2ad8358b5a1eab3f2caa39331e53dec474cdd7f2751bfff4b`

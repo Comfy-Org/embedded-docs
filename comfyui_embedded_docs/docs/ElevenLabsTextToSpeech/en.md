@@ -33,3 +33,6 @@ When the `model` parameter is set to `"eleven_v3"`, the following additional par
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `audio` | AUDIO | The generated audio from the text-to-speech conversion. |
+
+---
+**Source fingerprint (SHA-256):** `d11d4ffa2d1f11dfd5ce378d9496cd9788d2197bf7f4135092ecefb287f3c2f7`

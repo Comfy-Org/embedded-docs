@@ -17,3 +17,6 @@ The Self-Attention Guidance node applies guidance to diffusion models by modifyi
 | `model` | MODEL | The modified model with self-attention guidance applied |
 
 **Note:** This node is currently experimental and has limitations with chunked batches. It can only save attention scores from one UNet call and may not work properly with larger batch sizes.
+
+---
+**Source fingerprint (SHA-256):** `5f16ecd8f74bfd71073c6e3a65be08e54e4f5b9c56fe08deb48f35df381e82fa`

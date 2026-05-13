@@ -4,15 +4,18 @@ Este nodo convierte una imagen rasterizada en un gráfico vectorial escalable (S
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Sí | N/A | Imagen de entrada para vectorizar. |
-| `auto_crop` | BOOLEAN | No | `True`<br>`False` | Recortar automáticamente al sujeto dominante. Este es un parámetro avanzado (por defecto: `False`). |
-| `model` | DYNAMICCOMBO | Sí | Múltiples opciones disponibles | Modelo a utilizar para la vectorización SVG. Seleccionar un modelo revela parámetros adicionales específicos de ese modelo: `target_size` (tamaño objetivo de redimensionamiento cuadrado en píxeles, por defecto: 1024, rango: 128-4096), `temperature`, `top_p` y `presence_penalty`. |
-| `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe volver a ejecutarse; los resultados reales son no deterministas independientemente del valor de la semilla. Este parámetro tiene funcionalidad de "control después de generar" (por defecto: 0). |
+| `auto_crop` | BOOLEAN | No | `True`<br>`False` | Recortar automáticamente al sujeto dominante. Este es un parámetro avanzado (predeterminado: `False`). |
+| `model` | DYNAMICCOMBO | Sí | Múltiples opciones disponibles | Modelo a utilizar para la vectorización SVG. Al seleccionar un modelo se revelan parámetros adicionales específicos de ese modelo: `target_size` (destino de redimensionamiento cuadrado en píxeles, predeterminado: 1024, rango: 128-4096), `temperature`, `top_p` y `presence_penalty`. |
+| `seed` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe reejecutarse; los resultados reales son no deterministas independientemente del valor de la semilla. Este parámetro tiene funcionalidad de "control después de generar" (predeterminado: 0). |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
+| Nombre de salida | Tipo de dato | Descripción |
 |-------------|-----------|-------------|
 | `SVG` | SVG | La salida SVG vectorizada. |
+
+---
+**Source fingerprint (SHA-256):** `4539277fd6c23aef149c44eeafca4d373cad658d85872de0883245eb4f2479e8`

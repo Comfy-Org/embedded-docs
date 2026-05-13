@@ -15,3 +15,6 @@ The CLIPTextEncodeKandinsky5 node prepares text prompts for use with the Kandins
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CONDITIONING` | CONDITIONING | The combined conditioning data generated from both text prompts, ready to be fed into a Kandinsky 5 model for image generation. |
+
+---
+**Source fingerprint (SHA-256):** `80227cf87d46bfa42b07976ab29996ae9583a4c461b2f2408db4b7016d3e1a0c`

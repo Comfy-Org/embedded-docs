@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudio/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEDecodeAudio/tr.md)
 
-VAEDecodeAudio düğümü, gizli temsilleri varyasyonel otokodlayıcı kullanarak ses dalga formlarına geri dönüştürür. Kodlanmış ses örneklerini alır ve bunları VAE üzerinden işleyerek orijinal sesi yeniden oluşturur, tutarlı çıkış seviyeleri sağlamak için normalleştirme uygular. Ortaya çıkan ses, 44100 Hz'lik standart örnekleme hızıyla döndürülür.
+VAEDecodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak gizli uzay temsillerini ses dalga formlarına dönüştürür. Kodlanmış ses örneklerini alır ve bunları VAE aracılığıyla işleyerek orijinal sesi yeniden oluşturur; tutarlı çıkış seviyeleri sağlamak için normalizasyon uygular. Ortaya çıkan ses, standart 44100 Hz örnekleme hızıyla döndürülür.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `örnekler` | LATENT | Evet | - | Ses dalga formuna geri çözülecek, gizli uzaydaki kodlanmış ses örnekleri |
-| `vae` | VAE | Evet | - | Gizli örnekleri sese çözmek için kullanılan Varyasyonel Otokodlayıcı modeli |
+|-----------|-----------|----------|--------|----------|
+| `samples` | LATENT | Evet | - | Ses dalga formuna geri çözülecek olan, gizli uzaydaki kodlanmış ses örnekleri |
+| `vae` | VAE | Evet | - | Gizli örnekleri sese çözmek için kullanılan Varyasyonel Otomatik Kodlayıcı modeli |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `AUDIO` | AUDIO | Normalleştirilmiş ses seviyesine ve 44100 Hz örnekleme hızına sahip çözülmüş ses dalga formu |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `AUDIO` | AUDIO | Normalize edilmiş ses seviyesi ve 44100 Hz örnekleme hızına sahip, çözülmüş ses dalga formu |
+
+---
+**Source fingerprint (SHA-256):** `15848d3763324cbae986949146d57352c68369713cd99a27d216797560836824`

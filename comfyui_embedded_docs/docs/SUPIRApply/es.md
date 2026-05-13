@@ -1,24 +1,27 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SUPIRApply/es.md)
 
-El nodo SUPIRApply aplica un parche de modelo SUPIR a un modelo de difusión. Utiliza el parche para modificar el comportamiento del modelo, permitiéndole incorporar orientación de una imagen de entrada durante el proceso de muestreo. El nodo también proporciona controles para ajustar la intensidad de esta orientación a lo largo del tiempo e incluye una función opcional para ayudar a mantener la fidelidad a la entrada original.
+El nodo `SUPIRApply` aplica un parche del modelo SUPIR a un modelo de difusión. Utiliza el parche para modificar el comportamiento del modelo, permitiéndole incorporar guía de una imagen de entrada durante el proceso de muestreo. El nodo también proporciona controles para ajustar la intensidad de esta guía a lo largo del tiempo e incluye una función opcional para ayudar a mantener la fidelidad a la imagen original.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
 | `model` | MODEL | Sí | - | El modelo de difusión base al que se aplicará el parche SUPIR. |
-| `model_patch` | MODELPATCH | Sí | - | El parche de modelo SUPIR que contiene los pesos y la configuración para modificar el modelo. |
+| `model_patch` | MODELPATCH | Sí | - | El parche del modelo SUPIR que contiene los pesos y la configuración para modificar el modelo. |
 | `vae` | VAE | Sí | - | El VAE (Autoencoder Variacional) utilizado para codificar la imagen de entrada en una representación latente. |
-| `image` | IMAGE | Sí | - | La imagen de entrada utilizada para guiar el proceso de generación. Solo se utilizan los primeros tres canales de color (RGB). |
-| `strength_start` | FLOAT | No | 0.0 - 10.0 | Intensidad de control al inicio del muestreo (sigma alto). La influencia de la orientación de la imagen comienza en este valor. (predeterminado: 1.0) |
-| `strength_end` | FLOAT | No | 0.0 - 10.0 | Intensidad de control al final del muestreo (sigma bajo). Se interpola linealmente desde el inicio. La influencia de la orientación de la imagen termina en este valor. (predeterminado: 1.0) |
-| `restore_cfg` | FLOAT | No | 0.0 - 20.0 | Atrae la salida desruidizada hacia el latente de entrada. Mayor valor = mayor fidelidad a la entrada. 0 para desactivar. (predeterminado: 4.0) |
-| `restore_cfg_s_tmin` | FLOAT | No | 0.0 - 1.0 | Umbral de sigma por debajo del cual se desactiva `restore_cfg`. (predeterminado: 0.05) |
+| `image` | IMAGE | Sí | - | La imagen de entrada utilizada para guiar el proceso de generación. Solo se utilizan los tres primeros canales de color (RGB). |
+| `strength_start` | FLOAT | No | 0.0 - 10.0 | Intensidad de control al inicio del muestreo (sigma alto). La influencia de la guía de imagen comienza en este valor. (predeterminado: 1.0) |
+| `strength_end` | FLOAT | No | 0.0 - 10.0 | Intensidad de control al final del muestreo (sigma bajo). Se interpola linealmente desde el inicio. La influencia de la guía de imagen termina en este valor. (predeterminado: 1.0) |
+| `restore_cfg` | FLOAT | No | 0.0 - 20.0 | Atrae la salida denoizada hacia el latente de entrada. Un valor más alto implica mayor fidelidad a la entrada. Use 0 para deshabilitar. (predeterminado: 4.0) |
+| `restore_cfg_s_tmin` | FLOAT | No | 0.0 - 1.0 | Umbral de sigma por debajo del cual se deshabilita `restore_cfg`. (predeterminado: 0.05) |
 
-*Nota:* La entrada `image` se procesa para extraer solo los canales RGB. Si se proporciona una imagen con un canal alfa, este se ignora.
+*Nota:* La entrada `image` se procesa para extraer únicamente los canales RGB. Si se proporciona una imagen con un canal alfa, este se ignora.
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `model` | MODEL | El modelo de difusión con el parche SUPIR aplicado y cualquier función post-CFG adicional configurada. |
+| `model` | MODEL | El modelo de difusión con el parche SUPIR aplicado y cualquier función adicional posterior a CFG configurada. |
+
+---
+**Source fingerprint (SHA-256):** `32ba7a337060b52d4c9085a6a2bc209c737e374dee4291d431d2caf768fc2817`

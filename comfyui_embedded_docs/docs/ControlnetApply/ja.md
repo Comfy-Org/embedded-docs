@@ -1,27 +1,23 @@
-このドキュメントは、元の`Apply ControlNet(Advanced)`ノードに関するものです。最も古い`Apply ControlNet`ノードは`Apply ControlNet(Old)`に名前が変更されました。互換性のために、comfyui.orgからダウンロードした多くのワークフローフォルダで`Apply ControlNet(Old)`ノードを見ることができますが、検索やノードリストでは`Apply ControlNet(Old)`ノードを見つけることはできません。代わりに`Apply ControlNet`ノードを使用してください。
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ja.md)
 
-このノードは、与えられた画像と条件付けにControlNetを適用し、Depth、OpenPose、Canny、HEDなどのコントロールネットワークのパラメータと指定された強度に従って画像の属性を調整します。
-
-ControlNetを使用するには、入力画像の前処理が必要です。ComfyUIの初期ノードには前処理器とControlNetモデルが含まれていないため、まずContrlNet前処理器[前処理器のダウンロード](https://github.com/Fannovel16/comfy_controlnet_preprocessors)と対応するControlNetモデルをインストールしてください。
+ControlNetを使用するには、入力画像の前処理が必要です。ComfyUIの初期ノードにはプリプロセッサーやControlNetモデルが付属していないため、まずControlNetプリプロセッサーをインストールし（[こちらからプリプロセッサーをダウンロード](https://github.com/Fannovel16/comfy_controlnet_preprocessors)）、対応するControlNetモデルもインストールしてください。
 
 ## 入力
 
-| パラメータ | データタイプ | 機能 |
+| パラメータ | データ型 | 機能 |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | `CLIPテキストエンコーダー`または他の条件付け入力からの正の条件付けデータ |
-| `negative` | `CONDITIONING` | `CLIPテキストエンコーダー`または他の条件付け入力からの負の条件付けデータ |
-| `コントロールネット` | `CONTROL_NET` | 適用するControlNetモデル、通常は`ControlNetローダー`から入力 |
-| `画像` | `IMAGE` | ControlNet適用のための画像、前処理器で処理が必要 |
-| `vae` | `VAE` | Vaeモデル入力 |
-| `強度` | `FLOAT` | ネットワーク調整の強度を制御、値の範囲は0~10。推奨値は0.5~1.5の間が適切です。値が低いほどモデルの自由度が高く、値が高いほど制約が厳しくなります。値が高すぎると奇妙な画像が生成される可能性があります。 |
-| `start_percent` | `FLOAT` | 値0.000~1.000、ControlNetの適用を開始する時点をパーセンテージで決定、例えば0.2は拡散プロセスの20%時点でControlNetガイドが画像生成に影響を与え始めることを意味します |
-| `end_percent` | `FLOAT` | 値0.000~1.000、ControlNetの適用を終了する時点をパーセンテージで決定、例えば0.8は拡散プロセスの80%時点でControlNetガイドが画像生成への影響を停止することを意味します |
+| `positive` | `CONDITIONING` | ポジティブな条件付けデータ。CLIP Text Encoderまたは他の条件付け入力から取得します |
+| `negative` | `CONDITIONING` | ネガティブな条件付けデータ。CLIP Text Encoderまたは他の条件付け入力から取得します |
+| `control_net` | `CONTROL_NET` | 適用するControlNetモデル。通常はControlNet Loaderから入力します |
+| `image` | `IMAGE` | ControlNet適用のための画像。プリプロセッサーで処理する必要があります |
+| `vae` | `VAE` | VAEモデルの入力 |
+| `strength` | `FLOAT` | ネットワーク調整の強度を制御します。値の範囲は0～10です。推奨値は0.5～1.5程度が妥当です。値が低いほどモデルの自由度が高まり、値が高いほど制約が強くなります。高すぎる値は異常な画像を生成する可能性があります。この値を調整して、制御ネットワークの影響を微調整できます。 |
+| `start_percent` | `FLOAT` | 値0.000～1.000。ControlNetの適用を開始するタイミングをパーセンテージで指定します。例えば0.2の場合、拡散プロセスの20%の時点からControlNetのガイダンスが画像生成に影響を与え始めます |
+| `end_percent` | `FLOAT` | 値0.000～1.000。ControlNetの適用を終了するタイミングをパーセンテージで指定します。例えば0.8の場合、拡散プロセスの80%の時点でControlNetのガイダンスが画像生成への影響を停止します |
 
-## 出力
+### 出力
 
-| パラメータ | データタイプ | 機能 |
+| パラメータ | データ型 | 機能 |
 | --- | --- | --- |
-| `positive` | `CONDITIONING` | ControlNetによって処理された正の条件付けデータ、次のControlNetまたはKサンプラーノードに出力可能 |
-| `negative` | `CONDITIONING` | ControlNetによって処理された負の条件付けデータ、次のControlNetまたはKサンプラーノードに出力可能 |
-
-**T2IAdaptorスタイルモデル**を使用する場合は、代わりに`Apply Style Model`ノードを使用してください
+| `positive` | `CONDITIONING` | ControlNetで処理されたポジティブな条件付けデータ。次のControlNetノードやK Samplerノードに出力できます |
+| `negative` | `CONDITIONING` | ControlNetで処理されたネガティブな条件付けデータ。次のControlNetノードやK Samplerノードに出力できます |

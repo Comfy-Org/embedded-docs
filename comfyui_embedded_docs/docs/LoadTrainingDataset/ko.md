@@ -1,16 +1,21 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/ko.md)
 
-이 노드는 이전에 디스크에 저장된 인코딩된 학습 데이터셋을 불러옵니다. ComfyUI 출력 디렉토리 내 지정된 폴더에서 모든 데이터 샤드 파일을 검색하고 읽어들인 후, 학습 워크플로우에서 사용할 수 있도록 결합된 잠재 벡터와 조건화 데이터를 반환합니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
+
+이 노드는 이전에 디스크에 저장된 인코딩된 학습 데이터셋을 불러옵니다. ComfyUI 출력 디렉터리 내의 지정된 폴더에서 모든 데이터 샤드 파일을 검색하여 읽어온 후, 결합된 잠재 벡터와 컨디셔닝 데이터를 반환하여 학습 워크플로우에서 사용할 수 있도록 합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `folder_name` | STRING | 아니요 | N/A | 저장된 데이터셋이 포함된 폴더의 이름으로, ComfyUI 출력 디렉토리 내부에 위치합니다 (기본값: "training_dataset"). |
+| `folder_name` | STRING | 예 | 해당 없음 | ComfyUI 출력 디렉터리 내에 위치한, 저장된 데이터셋이 포함된 폴더 이름입니다(기본값: "training_dataset"). |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `latents` | LATENT | 잠재 딕셔너리 목록으로, 각 딕셔너리는 텐서를 가진 `"samples"` 키를 포함합니다. |
-| `conditioning` | CONDITIONING | 조건화 목록의 목록으로, 각 내부 목록은 해당 샘플에 대한 조건화 데이터를 포함합니다. |
+| `latents` | LATENT | 각 딕셔너리에 `"samples"` 키와 텐서가 포함된 잠재 딕셔너리 목록입니다. |
+| `conditioning` | CONDITIONING | 각 내부 리스트에 해당 샘플의 컨디셔닝 데이터가 포함된 컨디셔닝 리스트 목록입니다. |
+
+---
+**Source fingerprint (SHA-256):** `0a07c97e2c6a32f77cd21ea7dbdd33e06fad82285696b88122fef369307e133d`

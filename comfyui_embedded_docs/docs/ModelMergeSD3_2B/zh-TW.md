@@ -1,13 +1,13 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/zh-TW.md)
 
-ModelMergeSD3_2B 節點允許您透過以可調權重混合兩個 Stable Diffusion 3 2B 模型的組件來合併它們。它提供對嵌入層和轉換器區塊的個別控制，使您能夠為特定的生成任務進行精細調整的模型組合。
+ModelMergeSD3_2B 節點允許您透過以可調整的權重混合其元件，來合併兩個 Stable Diffusion 3 2B 模型。它提供對嵌入層和 Transformer 區塊的個別控制，從而實現針對特定生成任務的微調模型組合。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `模型 1` | MODEL | 是 | - | 要合併的第一個模型 |
-| `模型 2` | MODEL | 是 | - | 要合併的第二個模型 |
+| `model1` | MODEL | 是 | - | 要合併的第一個模型 |
+| `model2` | MODEL | 是 | - | 要合併的第二個模型 |
 | `pos_embed.` | FLOAT | 是 | 0.0 - 1.0 | 位置嵌入插值權重（預設值：1.0） |
 | `x_embedder.` | FLOAT | 是 | 0.0 - 1.0 | 輸入嵌入插值權重（預設值：1.0） |
 | `context_embedder.` | FLOAT | 是 | 0.0 - 1.0 | 上下文嵌入插值權重（預設值：1.0） |
@@ -39,8 +39,11 @@ ModelMergeSD3_2B 節點允許您透過以可調權重混合兩個 Stable Diffusi
 | `joint_blocks.23.` | FLOAT | 是 | 0.0 - 1.0 | 聯合區塊 23 插值權重（預設值：1.0） |
 | `final_layer.` | FLOAT | 是 | 0.0 - 1.0 | 最終層插值權重（預設值：1.0） |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `model` | MODEL | 合併後的模型，結合了兩個輸入模型的特徵 |
+
+---
+**Source fingerprint (SHA-256):** `5b0c28c66e1828742873191be424956a9006e59ea1167a5941069ba0b7bc390b`

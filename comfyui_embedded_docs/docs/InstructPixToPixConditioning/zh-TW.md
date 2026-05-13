@@ -1,22 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/zh-TW.md)
 
-InstructPixToPixConditioning 節點透過將正向與反向文字提示詞與影像資料結合，為 InstructPix2Pix 影像編輯準備條件資料。它透過 VAE 編碼器處理輸入影像以創建潛在表徵，並將這些潛在表徵附加到正向與反向條件資料中。該節點會自動將影像尺寸裁剪至 8 像素的倍數，以確保與 VAE 編碼過程的相容性。
+## 概述
 
-## 輸入參數
+InstructPixToPixConditioning 節點透過將正向與負向文字提示與影像資料結合，為 InstructPix2Pix 影像編輯準備條件化資料。它透過 VAE 編碼器處理輸入影像以建立潛在表示，並將這些潛在資料附加到正向與負向條件化資料中。該節點會自動處理影像尺寸，將其裁剪為 8 像素的倍數，以確保與 VAE 編碼過程相容。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `正向` | CONDITIONING | 是 | - | 包含期望影像特徵的文字提示詞與設定的正向條件資料 |
-| `負向` | CONDITIONING | 是 | - | 包含不期望影像特徵的文字提示詞與設定的反向條件資料 |
-| `vae` | VAE | 是 | - | 用於將輸入影像編碼為潛在表徵的 VAE 模型 |
-| `像素` | IMAGE | 是 | - | 需要處理並編碼至潛在空間的輸入影像 |
+| `positive` | CONDITIONING | 是 | - | 包含文字提示與所需影像特徵設定的正向條件化資料 |
+| `negative` | CONDITIONING | 是 | - | 包含文字提示與非所需影像特徵設定的負向條件化資料 |
+| `vae` | VAE | 是 | - | 用於將輸入影像編碼為潛在表示的 VAE 模型 |
+| `pixels` | IMAGE | 是 | - | 待處理並編碼至潛在空間的輸入影像 |
 
-**注意：** 輸入影像的尺寸會透過裁剪寬度和高度至最接近的 8 像素倍數來自動調整，以確保與 VAE 編碼過程的相容性。
+**注意：** 輸入影像尺寸會自動調整，透過將寬度與高度裁剪至最接近的 8 像素倍數，以確保與 VAE 編碼過程相容。
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `負向` | CONDITIONING | 附帶潛在影像表徵的正向條件資料 |
-| `潛在空間` | CONDITIONING | 附帶潛在影像表徵的反向條件資料 |
-| `latent` | LATENT | 與編碼後影像尺寸相同的空潛在張量 |
+| `positive` | CONDITIONING | 附加了潛在影像表示的正向條件化資料 |
+| `negative` | CONDITIONING | 附加了潛在影像表示的負向條件化資料 |
+| `latent` | LATENT | 與編碼影像具有相同維度的空潛在張量 |
+
+---
+**Source fingerprint (SHA-256):** `4b2383c9d64efdb558758359bf544fc5a1be65c12b23b54152e2df79a6dd8d79`

@@ -1,27 +1,30 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayFirstLastFrameNode/fr.md)
 
-Le nœud Runway First-Last-Frame to Video génère des vidéos en chargeant des images clés de début et de fin accompagnées d'une invite textuelle. Il crée des transitions fluides entre les images de départ et de fin fournies en utilisant le modèle Gen-3 de Runway. Ceci est particulièrement utile pour les transitions complexes où l'image de fin diffère significativement de l'image de départ.
+Le nœud Runway Première-Dernière Image vers Vidéo génère des vidéos en téléchargeant des images clés de début et de fin, accompagnées d’une invite textuelle. Il crée des transitions fluides entre les images de début et de fin fournies, en utilisant le modèle Gen-3 de Runway. Cette fonctionnalité est particulièrement utile pour les transitions complexes où l’image de fin diffère considérablement de l’image de début.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
+|-----------|-----------------|--------|-------|-------------|
 | `prompt` | STRING | Oui | N/A | Invite textuelle pour la génération (par défaut : chaîne vide) |
-| `start_frame` | IMAGE | Oui | N/A | Image de départ à utiliser pour la vidéo |
-| `end_frame` | IMAGE | Oui | N/A | Image de fin à utiliser pour la vidéo. Pris en charge pour gen3a_turbo uniquement. |
-| `duration` | COMBO | Oui | Plusieurs options disponibles | Sélection de la durée de la vidéo parmi les options Durée disponibles |
-| `ratio` | COMBO | Oui | Plusieurs options disponibles | Sélection du format d'image parmi les options RunwayGen3aAspectRatio disponibles |
-| `seed` | INT | Non | 0-4294967295 | Graine aléatoire pour la génération (par défaut : 0) |
+| `start_frame` | IMAGE | Oui | N/A | Image de début à utiliser pour la vidéo |
+| `end_frame` | IMAGE | Oui | N/A | Image de fin à utiliser pour la vidéo. Pris en charge uniquement pour gen3a_turbo. |
+| `duration` | COMBO | Oui | `"5"`<br>`"10"` | Durée de la vidéo en secondes (par défaut : "5") |
+| `ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Format d’image pour la vidéo générée (par défaut : "16:9") |
+| `seed` | INT | Non | 0 à 4294967295 | Graine aléatoire pour la génération. Mettre à 0 pour une graine aléatoire (par défaut : 0). |
 
 **Contraintes des paramètres :**
 
-- Le `prompt` doit contenir au moins 1 caractère
-- `start_frame` et `end_frame` doivent avoir des dimensions maximales de 7999x7999 pixels
-- `start_frame` et `end_frame` doivent avoir des formats d'image compris entre 0,5 et 2,0
-- Le paramètre `end_frame` est uniquement pris en charge lors de l'utilisation du modèle gen3a_turbo
+- L’`prompt` doit contenir au moins 1 caractère
+- Les `start_frame` et `end_frame` doivent avoir des dimensions maximales de 7999x7999 pixels
+- Les `start_frame` et `end_frame` doivent avoir des formats d’image compris entre 0,5 et 2,0
+- Le paramètre `end_frame` est uniquement pris en charge lors de l’utilisation du modèle gen3a_turbo
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
-| `output` | VIDEO | La vidéo générée effectuant la transition entre les images de début et de fin |
+| Nom de la sortie | Type de données | Description |
+|------------------|-----------------|-------------|
+| `output` | VIDEO | La vidéo générée avec la transition entre les images de début et de fin |
+
+---
+**Source fingerprint (SHA-256):** `57b72c1143b7053272107403279e1f84919cbfe71c57ca4f4e21b4324f7a5346`

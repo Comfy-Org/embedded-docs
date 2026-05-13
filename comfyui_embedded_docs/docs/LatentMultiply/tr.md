@@ -1,16 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentMultiply/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentMultiply/tr.md)
 
-LatentMultiply düğümü, örneklerin gizli temsilini belirtilen bir çarpanla ölçeklendirmek için tasarlanmıştır. Bu işlem, gizli uzay içindeki özelliklerin yoğunluğunun veya büyüklüğünün ayarlanmasına olanak tanıyarak, üretilen içeriğin ince ayarını yapmayı veya belirli bir gizli yöndeki çeşitlemelerin keşfedilmesini sağlar.
+LatentMultiply düğümü, örneklerin gizli (latent) temsillerini belirtilen bir çarpanla ölçeklendirmek için tasarlanmıştır. Bu işlem, gizli uzaydaki özelliklerin yoğunluğunu veya büyüklüğünü ayarlamaya olanak tanıyarak, oluşturulan içeriğin ince ayarını yapmayı veya belirli bir gizli yön içindeki varyasyonları keşfetmeyi sağlar.
 
-## Girdiler
+## Girişler
 
-| Parametre    | Veri Türü   | Açıklama |
+| Parametre    | Veri Türü | Açıklama |
 |--------------|-------------|-------------|
-| `örnekler`    | `LATENT`    | 'samples' parametresi, ölçeklendirilecek gizli temsilleri ifade eder. Çarpma işleminin gerçekleştirileceği girdi verisini tanımlamak için çok önemlidir. |
-| `çarpan` | `FLOAT`     | 'multiplier' parametresi, gizli örneklere uygulanacak ölçeklendirme faktörünü belirtir. Gizli özelliklerin büyüklüğünü ayarlayarak, üretilen çıktı üzerinde nüanslı kontrol sağlamada kilit rol oynar. |
+| `samples`    | `LATENT`    | 'samples' parametresi, ölçeklendirilecek gizli temsilleri temsil eder. Çarpma işleminin gerçekleştirileceği giriş verilerini tanımlamak için kritik öneme sahiptir. |
+| `multiplier` | `FLOAT`     | 'multiplier' parametresi, gizli örneklere uygulanacak ölçeklendirme faktörünü belirtir. Gizli özelliklerin büyüklüğünü ayarlamada önemli bir rol oynar ve oluşturulan çıktı üzerinde ince ayarlı kontrol sağlar. |
 
 ## Çıktılar
 
 | Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | Çıktı, belirtilen çarpanla ölçeklendirilmiş, girdi gizli örneklerinin değiştirilmiş bir versiyonudur. Bu, gizli uzay içindeki çeşitlemelerin, özelliklerinin yoğunluğunu ayarlayarak keşfedilmesine olanak tanır. |
+| `latent`  | `LATENT`    | Çıktı, belirtilen çarpanla ölçeklendirilmiş, giriş gizli örneklerinin değiştirilmiş bir sürümüdür. Bu, özelliklerinin yoğunluğunu ayarlayarak gizli uzay içindeki varyasyonların keşfedilmesine olanak tanır. |

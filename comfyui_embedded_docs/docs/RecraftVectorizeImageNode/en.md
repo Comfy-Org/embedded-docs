@@ -7,11 +7,12 @@ Generates SVG synchronously from an input image. This node converts raster image
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image to convert to SVG format |
-| `auth_token` | AUTH_TOKEN_COMFY_ORG | No | - | Authentication token for API access |
-| `comfy_api_key` | API_KEY_COMFY_ORG | No | - | API key for Comfy.org services |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `SVG` | SVG | The generated vector graphics output combining all processed images |
+
+---
+**Source fingerprint (SHA-256):** `acd6b5bdb90ad01c0201e434fff84923dbe8a253f7fc5c46efb2d7413f49a8bd`

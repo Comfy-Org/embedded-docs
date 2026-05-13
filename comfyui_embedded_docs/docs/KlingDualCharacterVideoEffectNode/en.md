@@ -8,10 +8,10 @@ The Kling Dual Character Video Effect Node creates videos with special effects b
 |-----------|-----------|----------|-------|-------------|
 | `image_left` | IMAGE | Yes | - | Left side image |
 | `image_right` | IMAGE | Yes | - | Right side image |
-| `effect_scene` | COMBO | Yes | Multiple options available | The type of special effect scene to apply to the video generation |
-| `model_name` | COMBO | No | Multiple options available | The model to use for character effects (default: "kling-v1") |
-| `mode` | COMBO | No | Multiple options available | The video generation mode (default: "std") |
-| `duration` | COMBO | Yes | Multiple options available | The duration of the generated video |
+| `effect_scene` | COMBO | Yes | `"chat"`<br>`"dance"`<br>`"hug"`<br>`"kill"`<br>`"kiss"`<br>`"pat"`<br>`"punch"`<br>`"shrug"`<br>`"slap"`<br>`"tickle"` | The type of special effect scene to apply to the video generation |
+| `model_name` | COMBO | No | `"kling-v1"`<br>`"kling-v1-5"`<br>`"kling-v1-6"` | The model to use for character effects (default: "kling-v1") |
+| `mode` | COMBO | No | `"std"`<br>`"pro"` | The video generation mode (default: "std") |
+| `duration` | COMBO | Yes | `"5"`<br>`"10"` | The duration of the generated video in seconds |
 
 ## Outputs
 
@@ -19,3 +19,6 @@ The Kling Dual Character Video Effect Node creates videos with special effects b
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video with dual character effects |
 | `duration` | STRING | The duration information of the generated video |
+
+---
+**Source fingerprint (SHA-256):** `4ee0c3cd834e1c70e41b40b66ac98d15a8b88993e7dc9d9df9fb4fadb868f079`

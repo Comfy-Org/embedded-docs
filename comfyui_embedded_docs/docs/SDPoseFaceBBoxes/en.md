@@ -17,3 +17,6 @@ The SDPoseFaceBBoxes node processes pose keypoint data to detect and generate bo
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `bboxes` | BOUNDINGBOX | A list of face bounding boxes for each frame. Each bounding box is defined by its top-left coordinates (`x`, `y`), `width`, and `height`. This output is compatible with the `bboxes` input of the SDPoseKeypointExtractor node. |
+
+---
+**Source fingerprint (SHA-256):** `bffbcddb882f6743a6cace6a4884fa5a257b746897c79ba9260c15260fab874e`

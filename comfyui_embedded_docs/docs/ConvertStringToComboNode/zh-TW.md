@@ -1,15 +1,20 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConvertStringToComboNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConvertStringToComboNode/zh-TW.md)
 
-此節點接收文字字串作為輸入，並將其轉換為 COMBO 資料類型。這讓您能將文字值用作其他需要 COMBO 輸入的節點的選項。它僅會原封不動地傳遞字串值，但會改變其資料類型。
+## 概述
 
-## 輸入參數
+將字串轉換為組合節點接收文字字串作為輸入，並將其轉換為 Combo 資料類型。這讓您可以將文字值用作其他需要 Combo 輸入的節點的選項。此節點僅更改資料類型，而不改變字串值本身。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `string` | STRING | 是 | 不適用 | 要轉換為 COMBO 類型的文字字串。 |
+| `string` | STRING | 是 | 不適用 | 要轉換為 Combo 類型的文字字串。 |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output` | COMBO | 輸入的字串，現已格式化為 COMBO 資料類型。 |
+| `output` | COMBO | 輸入字串，現已格式化為 Combo 資料類型。 |
+
+---
+**Source fingerprint (SHA-256):** `37bd7db5a5ce2657db30a3a24da90c1c1e5c4a3f7089b4d03a0528b7770e9fe1`

@@ -1,24 +1,29 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduStartEndToVideoNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduStartEndToVideoNode/zh-TW.md)
 
-Vidu Start End To Video Generation 節點透過在起始影格和結束影格之間生成影格來建立影片。它使用文字提示來引導影片生成過程，並支援具有不同解析度和運動設定的各種影片模型。該節點在處理前會驗證起始和結束影格是否具有相容的長寬比。
+## 概述
 
-## 輸入參數
+Vidu 起始至結束影片生成節點透過在起始幀和結束幀之間生成影格來建立影片。它使用文字提示來引導影片生成過程，並支援具有不同解析度和動態設定的各種影片模型。在處理之前，該節點會驗證起始幀和結束幀是否具有相容的長寬比。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 是 | `"vidu_q1"`<br>[VideoModelName 枚舉中的其他模型值] | 模型名稱（預設值："vidu_q1"） |
-| `first_frame` | IMAGE | 是 | - | 起始影格 |
-| `end_frame` | IMAGE | 是 | - | 結束影格 |
+| `model` | COMBO | 是 | `"viduq1"` | 模型名稱 |
+| `first_frame` | IMAGE | 是 | - | 起始幀 |
+| `end_frame` | IMAGE | 是 | - | 結束幀 |
 | `prompt` | STRING | 否 | - | 用於影片生成的文字描述 |
-| `duration` | INT | 否 | 5-5 | 輸出影片的持續時間（單位：秒）（預設值：5，固定為5秒） |
-| `seed` | INT | 否 | 0-2147483647 | 影片生成的種子值（0表示隨機）（預設值：0） |
-| `resolution` | COMBO | 否 | `"1080p"`<br>[Resolution 枚舉中的其他解析度值] | 支援的數值可能因模型和持續時間而異（預設值："1080p"） |
-| `movement_amplitude` | COMBO | 否 | `"auto"`<br>[MovementAmplitude 枚舉中的其他運動幅度值] | 畫面中物體的運動幅度（預設值："auto"） |
+| `duration` | INT | 否 | 5-5 | 輸出影片的持續時間（秒）（預設值：5，固定為 5 秒） |
+| `seed` | INT | 否 | 0-2147483647 | 影片生成的種子值（0 表示隨機）（預設值：0） |
+| `resolution` | COMBO | 否 | `"1080p"` | 支援的值可能因模型和持續時間而異（預設值："1080p"） |
+| `movement_amplitude` | COMBO | 否 | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | 畫面中物體的動態幅度（預設值："auto"） |
 
-**注意：** 起始和結束影格必須具有相容的長寬比（使用 min_rel=0.8、max_rel=1.25 的長寬比容差進行驗證）。
+**注意：** 起始幀和結束幀必須具有相容的長寬比（以最小比例 0.8、最大比例 1.25 的容差進行驗證）。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 輸出說明 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成的影片檔案 |
+
+---
+**Source fingerprint (SHA-256):** `d859d67b3ff73977b95e3903b461509f933f9652fedc016e1cd362f6bef1b8dc`

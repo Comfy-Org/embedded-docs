@@ -4,7 +4,7 @@
 
 ## Genel Bakış
 
-SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya nokta istemleri kullanarak açık-kelime dağarcığı algılama ve bölütleme gerçekleştirir. Metin olarak tanımladıklarınıza, kutu çizdiğiniz yerlere veya nokta tıkladığınız konumlara göre bir görüntüdeki nesneleri tanımlayabilir ve bölütleyebilir.
+SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya nokta istemleri kullanarak açık sözcük dağarcığıyla algılama ve bölütleme gerçekleştirir. Metin olarak tanımladıklarınıza, kutu çizdiğiniz yerlere veya nokta tıkladığınız konumlara göre bir görüntüdeki nesneleri tanımlayabilir ve bölütleyebilir.
 
 ## Girişler
 
@@ -16,9 +16,9 @@ SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya n
 | `bboxes` | BOUNDING_BOX | Hayır | - | İçinde bölütleme yapılacak sınırlayıcı kutular. Tek bir kutu (tüm karelere uygulanır), kutu listesi (tüm karelere uygulanır) veya liste listesi (kare başına kutular) olabilir. Metin koşullandırması olmadan sağlandığında, düğüm her kutunun içini bölütler |
 | `positive_coords` | STRING | Hayır | - | JSON formatında pozitif nokta istemleri `[{"x": int, "y": int}, ...]` piksel koordinatları kullanılarak. Bunlar bölütlemeye dahil etmek istediğiniz noktalardır |
 | `negative_coords` | STRING | Hayır | - | JSON formatında negatif nokta istemleri `[{"x": int, "y": int}, ...]` piksel koordinatları kullanılarak. Bunlar bölütlemeden çıkarmak istediğiniz noktalardır |
-| `threshold` | FLOAT | Hayır | 0.0 ile 1.0 | Metin tabanlı algılamalar için güven eşiği. Bu değerin üzerinde puana sahip algılamalar tutulur (varsayılan: 0.5) |
+| `threshold` | FLOAT | Hayır | 0.0 ile 1.0 | Metin tabanlı algılamalar için güven eşiği. Bu değerin üzerinde puana sahip algılamalar korunur (varsayılan: 0.5) |
 | `refine_iterations` | INT | Hayır | 0 ile 5 | SAM kodlayıcı iyileştirme geçiş sayısı. Daha yüksek değerler maske kalitesini artırabilir. İyileştirme olmadan ham dedektör maskelerini kullanmak için 0 olarak ayarlayın (varsayılan: 2) |
-| `individual_masks` | BOOLEAN | Hayır | True/False | Etkinleştirildiğinde, algılanan her nesne için ayrı maskeler çıktılar, tek bir maskede birleştirmek yerine (varsayılan: False) |
+| `individual_masks` | BOOLEAN | Hayır | True/False | Etkinleştirildiğinde, algılanan her nesne için ayrı maskeler çıktı olarak verir, tek bir maskede birleştirmek yerine (varsayılan: False) |
 
 ### Parametre Kısıtlamaları ve Notlar
 
@@ -34,4 +34,7 @@ SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya n
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|----------|
 | `masks` | MASK | Bölütleme maskeleri. `individual_masks` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür |
-| `bboxes` | BOUNDING_BOX | Koordinatlar ve güven puanları ile algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir |
+| `bboxes` | BOUNDING_BOX | Koordinatlar ve güven puanlarıyla algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir |
+
+---
+**Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

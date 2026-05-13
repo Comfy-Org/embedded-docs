@@ -1,21 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Sd4xupscaleConditioning/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Sd4xupscaleConditioning/zh-TW.md)
 
-此節點專門透過 4x 超解析度處理來增強影像的解析度，並結合條件化元素來優化輸出結果。它利用擴散技術來放大影像，同時允許調整縮放比例和噪聲增強，以微調增強過程。
+此節點專門負責透過 4 倍放大流程來提升影像解析度，並結合條件控制元素來優化輸出結果。它利用擴散技術進行影像放大，同時允許調整縮放比例和噪聲增強參數，以微調強化過程。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱               | Comfy 資料類型     | 描述 |
+| 參數                | Comfy 資料類型    | 說明 |
 |----------------------|--------------------|-------------|
-| `images`             | `IMAGE`            | 需要進行超解析度處理的輸入影像。此參數至關重要，因為它直接影響輸出影像的品質和解析度。 |
-| `positive`           | `CONDITIONING`     | 正向條件化元素，用於引導超解析度過程朝向輸出影像中期望的屬性或特徵。 |
-| `negative`           | `CONDITIONING`     | 負向條件化元素，超解析度過程應避免這些元素，有助於使輸出結果遠離不期望的屬性或特徵。 |
-| `scale_ratio`        | `FLOAT`            | 決定影像解析度增加倍率的因子。較高的縮放比例會產生更大的輸出影像，從而實現更精細的細節和清晰度。 |
-| `noise_augmentation` | `FLOAT`            | 控制在超解析度過程中應用的噪聲增強水平。這可用於引入變異性並提高輸出影像的穩健性。 |
+| `images`             | `IMAGE`            | 待放大的輸入影像。此參數至關重要，會直接影響輸出影像的品質與解析度。 |
+| `positive`           | `CONDITIONING`     | 引導放大流程趨向輸出影像中理想屬性或特徵的正面條件控制元素。 |
+| `negative`           | `CONDITIONING`     | 放大流程應避免的負面條件控制元素，有助於使輸出結果遠離不理想的屬性或特徵。 |
+| `scale_ratio`        | `FLOAT`            | 決定影像解析度提升的倍率。較高的縮放比例會產生更大的輸出影像，從而呈現更多細節與清晰度。 |
+| `noise_augmentation` | `FLOAT`            | 控制放大過程中應用的噪聲增強程度。可用於引入變異性，並提升輸出影像的穩健性。 |
 
-## 輸出參數
+## 輸出
 
-| 參數名稱     | 資料類型          | 描述 |
+| 參數         | 資料類型 | 說明 |
 |---------------|--------------|-------------|
-| `positive`    | `CONDITIONING` | 經過超解析度處理後產生的精煉正向條件化元素。 |
-| `negative`    | `CONDITIONING` | 經過超解析度處理後產生的精煉負向條件化元素。 |
-| `latent`      | `LATENT`     | 在超解析度過程中生成的潛在表示，可在後續處理或模型訓練中使用。 |
+| `positive`    | `CONDITIONING` | 經放大流程處理後，經過優化的正面條件控制元素。 |
+| `negative`    | `CONDITIONING` | 經放大流程處理後，經過優化的負面條件控制元素。 |
+| `latent`      | `LATENT`     | 放大過程中產生的潛在表示，可用於後續處理或模型訓練。 |

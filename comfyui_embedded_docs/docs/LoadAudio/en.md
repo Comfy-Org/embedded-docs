@@ -6,7 +6,7 @@ The LoadAudio node loads audio files from the input directory and converts them 
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Yes | All supported audio/video files in input directory | The audio file to load from the input directory |
+| `audio` | AUDIO | Yes | All supported audio and video files in the input directory | The audio file to load from the input directory |
 
 **Note:** The node only accepts audio and video files that are present in ComfyUI's input directory. The file must exist and be accessible for successful loading.
 
@@ -15,3 +15,6 @@ The LoadAudio node loads audio files from the input directory and converts them 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `AUDIO` | AUDIO | Audio data containing waveform and sample rate information |
+
+---
+**Source fingerprint (SHA-256):** `a7fe63cbbb3a854359189e8685936a2b8b855e22c3c282fc77affacf640af010`

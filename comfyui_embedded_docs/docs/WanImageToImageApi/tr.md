@@ -1,22 +1,25 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToImageApi/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToImageApi/tr.md)
 
-Wan Image to Image düğümü, bir veya iki giriş görseli ve bir metin isteminden yeni bir görsel oluşturur. Girdi görsellerinizi sağladığınız açıklamaya dayanarak dönüştürür ve orijinal girdinizin en-boy oranını koruyan yeni bir görsel meydana getirir. Çıktı görseli, girdi boyutundan bağımsız olarak sabit 1.6 megapikseldir.
+WanImageToImageApi düğümü, bir veya iki giriş görüntüsü ve bir metin istemi kullanarak yeni bir görüntü oluşturur. Sağladığınız açıklamaya göre giriş görüntülerinizi dönüştürür ve orijinal girişinizin en-boy oranını koruyan yeni bir görüntü oluşturur. Çıktı görüntüsü, giriş boyutundan bağımsız olarak 1,6 megapiksel olarak sabitlenmiştir.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Evet | "wan2.5-i2i-preview" | Kullanılacak model (varsayılan: "wan2.5-i2i-preview"). |
-| `image` | IMAGE | Evet | - | Tek görsel düzenleme veya çoklu görsel füzyonu, maksimum 2 görsel. |
-| `prompt` | STRING | Evet | - | Öğeleri ve görsel özellikleri tanımlamak için kullanılan istem, İngilizce/Çince destekler (varsayılan: boş). |
-| `negative_prompt` | STRING | Hayır | - | Nelerden kaçınılacağını yönlendirmek için kullanılan olumsuz metin istemi (varsayılan: boş). |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Oluşturma için kullanılacak seed değeri (varsayılan: 0). |
-| `watermark` | BOOLEAN | Hayır | - | Sonuca "AI generated" filigranı eklenip eklenmeyeceği (varsayılan: true). |
+| `image` | IMAGE | Evet | - | Tek görüntü düzenleme veya çoklu görüntü birleştirme, en fazla 2 görüntü. |
+| `prompt` | STRING | Evet | - | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler (varsayılan: boş). |
+| `negative_prompt` | STRING | Hayır | - | Kaçınılması gerekenleri tanımlayan olumsuz istem (varsayılan: boş). |
+| `seed` | INT | Hayır | 0 ile 2147483647 arası | Oluşturma için kullanılacak tohum (varsayılan: 0). |
+| `watermark` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: false). |
 
-**Not:** Bu düğüm tam olarak 1 veya 2 giriş görseli kabul eder. 2'den fazla görsel sağlarsanız veya hiç görsel sağlamazsanız, düğüm bir hata döndürecektir.
+**Not:** Bu düğüm tam olarak 1 veya 2 giriş görüntüsü kabul eder. 2'den fazla görüntü veya hiç görüntü sağlamamanız durumunda düğüm bir hata döndürecektir.
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `image` | IMAGE | Girdi görselleri ve metin istemlerine dayalı olarak oluşturulan görsel. |
+|-----------|-----------|-------------|
+| `image` | IMAGE | Giriş görüntülerine ve metin istemlerine dayalı olarak oluşturulan görüntü. |
+
+---
+**Source fingerprint (SHA-256):** `d69811ddaba718e5468f539fb9b25827efdf79f3ee9cbf31ad8f9387cea9b9be`

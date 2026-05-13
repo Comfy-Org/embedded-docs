@@ -1,19 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideo/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideo/tr.md)
 
-WanSoundImageToVideo düğümü, görüntülerden isteğe bağlı ses koşullandırması ile video içeriği oluşturur. Video latents oluşturmak için olumlu ve olumsuz koşullandırma prompt'larını ve bir VAE modeli alır; ayrıca video oluşturma sürecine rehberlik etmek için referans görüntüleri, ses kodlaması, kontrol videoları ve hareket referanslarını dahil edebilir.
+WanSoundImageToVideo düğümü, isteğe bağlı ses koşullandırmasıyla görüntülerden video içeriği oluşturur. Video gizil değişkenlerini (latent) oluşturmak için pozitif ve negatif koşullandırma istemlerini bir VAE modeliyle birlikte alır; video oluşturma sürecini yönlendirmek için referans görüntüleri, ses kodlamasını, kontrol videolarını ve hareket referanslarını entegre edebilir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `positive` | CONDITIONING | Evet | - | Oluşturulan videoda hangi içeriğin görünmesi gerektiğine rehberlik eden olumlu koşullandırma prompt'ları |
-| `negative` | CONDITIONING | Evet | - | Oluşturulan videoda hangi içeriğin bulunmaması gerektiğini belirten olumsuz koşullandırma prompt'ları |
-| `vae` | VAE | Evet | - | Video latent temsillerini kodlamak ve kodunu çözmek için kullanılan VAE modeli |
-| `width` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalı) |
-| `height` | INT | Evet | 16 - MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalı) |
-| `length` | INT | Evet | 1 - MAX_RESOLUTION | Oluşturulan videodaki kare sayısı (varsayılan: 77, 4'e bölünebilir olmalı) |
-| `batch_size` | INT | Evet | 1 - 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Ses özelliklerine dayanarak video oluşturmayı etkileyebilecek isteğe bağlı ses kodlaması |
+|-----------|-----------|----------|-------|-----------|
+| `positive` | CONDITIONING | Evet | - | Oluşturulan videoda hangi içeriğin görünmesi gerektiğini yönlendiren pozitif koşullandırma istemleri |
+| `negative` | CONDITIONING | Evet | - | Oluşturulan videoda hangi içeriğin kaçınılması gerektiğini belirten negatif koşullandırma istemleri |
+| `vae` | VAE | Evet | - | Video gizil temsillerini kodlamak ve çözmek için kullanılan VAE modeli |
+| `width` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden genişliği (varsayılan: 832, 16'ya bölünebilir olmalıdır) |
+| `height` | INT | Evet | 16 ile MAX_RESOLUTION | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, 16'ya bölünebilir olmalıdır) |
+| `length` | INT | Evet | 1 ile MAX_RESOLUTION | Oluşturulan videodaki kare sayısı (varsayılan: 77, 4'e bölünebilir olmalıdır) |
+| `batch_size` | INT | Evet | 1 ile 4096 | Aynı anda oluşturulacak video sayısı (varsayılan: 1) |
+| `audio_encoder_output` | AUDIOENCODEROUTPUT | Hayır | - | Ses özelliklerine dayalı olarak video oluşturmayı etkileyebilecek isteğe bağlı ses kodlaması |
 | `ref_image` | IMAGE | Hayır | - | Video içeriği için görsel rehberlik sağlayan isteğe bağlı referans görüntüsü |
 | `control_video` | IMAGE | Hayır | - | Oluşturulan videonun hareketini ve yapısını yönlendiren isteğe bağlı kontrol videosu |
 | `ref_motion` | IMAGE | Hayır | - | Videodaki hareket desenleri için rehberlik sağlayan isteğe bağlı hareket referansı |
@@ -21,7 +21,10 @@ WanSoundImageToVideo düğümü, görüntülerden isteğe bağlı ses koşulland
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `positive` | CONDITIONING | Video oluşturma için değiştirilmiş, işlenmiş olumlu koşullandırma |
-| `negative` | CONDITIONING | Video oluşturma için değiştirilmiş, işlenmiş olumsuz koşullandırma |
-| `latent` | LATENT | Nihai video karelerine dönüştürülebilecek, latent uzayda oluşturulmuş video temsili |
+|-----------|-----------|----------|
+| `positive` | CONDITIONING | Video oluşturma için değiştirilmiş, işlenmiş pozitif koşullandırma |
+| `negative` | CONDITIONING | Video oluşturma için değiştirilmiş, işlenmiş negatif koşullandırma |
+| `latent` | LATENT | Son video karelerine çözülebilen, gizil uzayda oluşturulmuş video temsili |
+
+---
+**Source fingerprint (SHA-256):** `f80f82b8671294a14ecfecf91bc13febae0c91c5efa438467a4413d52dc82d3f`

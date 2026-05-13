@@ -1,0 +1,25 @@
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/zh-TW.md)
+
+## 概述
+
+此節點接收一系列影像與可選的音軌，並將其分割成指定數量的填充片段。其設計目的是為影片生成準備關鍵幀序列，其中每個片段會被填充至一致的長度，並建立相應的遮罩以標示哪些影格是有效的。
+
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
+|-----------|-----------|----------|-------|-------------|
+| `images` | IMAGE | 是 | 不適用 | 要分割成片段的輸入影像序列。 |
+| `segment_length` | INT | 是 | 1 至 10000 | 每個片段的影格長度（預設值：149）。 |
+| `num_segments` | INT | 是 | 1 至 100 | 要輸出為列表的填充片段數量（預設值：1）。 |
+| `audio` | AUDIO | 否 | 不適用 | 要為每個輸出片段進行裁剪的音訊。 |
+
+## 輸出
+
+| 輸出名稱 | 資料類型 | 說明 |
+|-------------|-----------|-------------|
+| `keyframes_sequence` | IMAGE | 填充後的關鍵幀序列列表，每個片段對應一個序列。 |
+| `keyframes_mask` | MASK | 遮罩列表，標示每個片段中有效的影格。 |
+| `audio_segment` | AUDIO | 音訊片段列表，每個影片片段對應一個音訊片段。 |
+
+---
+**Source fingerprint (SHA-256):** `c6a3ddca3fd61fcdb287fecb6969796eebd65e70f1174abdab57912586d27d00`

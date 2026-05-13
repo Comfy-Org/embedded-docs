@@ -7,12 +7,12 @@ O nó ComfyMathExpression avalia uma fórmula matemática usando um conjunto de 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `expression` | STRING | Sim | N/A | A fórmula matemática a ser avaliada. Você pode usar nomes de variáveis que correspondam aos valores de entrada (padrão: "a + b"). |
-| `values` | FLOAT, INT | Não | N/A | Um conjunto de entradas numéricas que podem ser adicionadas dinamicamente. Cada entrada recebe uma letra do alfabeto (a, b, c, ...) para ser usada como variável na expressão. |
+| `values` | FLOAT, INT, BOOLEAN | Não | N/A | Um conjunto de entradas numéricas ou booleanas que podem ser adicionadas dinamicamente. Cada entrada recebe uma letra do alfabeto (a, b, c, ...) para ser usada como variável na expressão. |
 
 **Restrições dos Parâmetros:**
 *   O parâmetro `expression` não pode estar vazio ou conter apenas espaços em branco.
-*   A expressão deve resultar em um valor numérico finito (INT ou FLOAT). Resultados booleanos ou outros não numéricos causarão um erro.
-*   Os valores de entrada para o parâmetro `values` devem ser números válidos (INT ou FLOAT).
+*   A expressão deve resultar em um valor numérico finito (INT ou FLOAT). Valores booleanos ou outros resultados não numéricos causarão um erro.
+*   Os valores de entrada para o parâmetro `values` podem ser números (INT ou FLOAT) ou valores booleanos (TRUE/FALSE).
 
 ## Saídas
 
@@ -20,3 +20,7 @@ O nó ComfyMathExpression avalia uma fórmula matemática usando um conjunto de 
 |---------------|--------------|-----------|
 | `FLOAT` | FLOAT | O resultado da expressão matemática como um número de ponto flutuante. |
 | `INT` | INT | O resultado da expressão matemática como um número inteiro. |
+| `BOOL` | BOOLEAN | O resultado da expressão matemática como um valor booleano. |
+
+---
+**Source fingerprint (SHA-256):** `962f82684d9dc58a67a57e6738d6d2ed457d7f30288cedb21fd46b5c655c1708`

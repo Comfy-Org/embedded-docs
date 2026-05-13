@@ -12,15 +12,18 @@ This node generates a video from a text description using the Wan 2.7 model. It 
 | `model.resolution` | COMBO | Yes | `"720P"`<br>`"1080P"` | The resolution of the output video. |
 | `model.ratio` | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` | The aspect ratio of the output video. |
 | `model.duration` | INT | Yes | 2 to 15 | The length of the video in seconds (default: 5). |
-| `audio` | AUDIO | No | - | An audio file to drive video generation, such as for lip-syncing or motion matching the beat. If not provided, the model will generate matching background music or sound effects. The audio duration must be between 3 and 30 seconds. |
+| `audio` | AUDIO | No | - | An audio file to drive video generation, such as for lip-syncing or motion matching the beat. If not provided, the model will generate matching background music or sound effects. The audio duration must be between 1.5 and 60 seconds. |
 | `seed` | INT | No | 0 to 2147483647 | A number used to control the randomness of the generation, ensuring reproducible results (default: 0). |
 | `prompt_extend` | BOOLEAN | No | - | When enabled, the prompt will be enhanced with AI assistance (default: True). |
 | `watermark` | BOOLEAN | No | - | When enabled, an AI-generated watermark will be added to the result (default: False). |
 
-**Note:** The `audio` parameter is optional. If provided, its duration must be between 3 and 30 seconds. If omitted, the model will automatically generate audio.
+**Note:** The `audio` parameter is optional. If provided, its duration must be between 1.5 and 60 seconds. If omitted, the model will automatically generate audio.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `ce8a2f4e53b2bce879f143c66f6078fd81c6308e2822cb486b1cf8e178a6f58c`

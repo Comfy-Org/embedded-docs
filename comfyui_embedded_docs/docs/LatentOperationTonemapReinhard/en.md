@@ -13,3 +13,6 @@ The LatentOperationTonemapReinhard node applies Reinhard tonemapping to latent v
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `operation` | LATENT_OPERATION | Returns a tonemapping operation that can be applied to latent vectors |
+
+---
+**Source fingerprint (SHA-256):** `70c04eaef06b749392a0c65f3d1267e52484f7cf956f87173d10ad935afcf98c`

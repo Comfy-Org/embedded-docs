@@ -16,3 +16,6 @@ The JsonExtractString node reads a text string containing JSON data and extracts
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The string value extracted from the JSON for the specified key, or an empty string if the extraction fails. |
+
+---
+**Source fingerprint (SHA-256):** `f05e2d9fd4888870a844c85ac7543d6c38c1c56f2ef22a402fc93ee716743612`

@@ -23,3 +23,6 @@ The LTXV Text To Video node generates professional-quality videos from a text de
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `a0c16995a07d879113bd3ca8fea64be414feee96bd8293a3e7737ede7d30e11d`

@@ -8,29 +8,32 @@ Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs
 | :--- | :--- | :--- | :--- | :--- |
 | `model` | COMBO | Oui | `"latest"` | Spécifie la version du modèle d'IA à utiliser. |
 | `images` | IMAGE | Oui | 2 à 4 images | Un ensemble d'images utilisé pour générer le modèle 3D. Vous devez fournir entre 2 et 4 images. |
-| `should_remesh` | COMBO | Oui | `"true"`<br>`"false"` | Détermine si le maillage généré doit être retravaillé. Lorsqu'il est défini sur `"false"`, le nœud renvoie un maillage triangulaire non traité. |
-| `topology` | COMBO | Non | `"triangle"`<br>`"quad"` | Le type de polygone cible pour la sortie retravaillée. Ce paramètre n'est disponible et requis que lorsque `should_remesh` est défini sur `"true"`. |
-| `target_polycount` | INT | Non | 100 à 300000 | Le nombre cible de polygones pour le modèle retravaillé (par défaut : 300000). Ce paramètre n'est disponible que lorsque `should_remesh` est défini sur `"true"`. |
-| `symmetry_mode` | COMBO | Oui | `"auto"`<br>`"on"`<br>`"off"` | Contrôle si une symétrie est appliquée au modèle généré. |
-| `should_texture` | COMBO | Oui | `"true"`<br>`"false"` | Détermine si des textures sont générées. Le définir sur `"false"` ignore la phase de texturage et renvoie un maillage sans textures. |
-| `enable_pbr` | BOOLEAN | Non | `True` / `False` | Lorsque `should_texture` est `"true"`, cette option génère des cartes PBR (métallique, rugosité, normale) en plus de la couleur de base (par défaut : `False`). |
-| `texture_prompt` | STRING | Non | - | Une invite textuelle pour guider le processus de texturage (maximum 600 caractères). Ne peut pas être utilisée en même temps que `texture_image`. Ce paramètre n'est disponible que lorsque `should_texture` est défini sur `"true"`. |
-| `texture_image` | IMAGE | Non | - | Une image pour guider le processus de texturage. Seule l'une des options `texture_image` ou `texture_prompt` peut être utilisée à la fois. Ce paramètre n'est disponible que lorsque `should_texture` est défini sur `"true"`. |
-| `pose_mode` | COMBO | Oui | `""`<br>`"A-pose"`<br>`"T-pose"` | Spécifie le mode de pose pour le modèle généré. |
-| `seed` | INT | Oui | 0 à 2147483647 | Une valeur de seed pour le processus de génération (par défaut : 0). Les résultats ne sont pas déterministes quelle que soit la seed, mais la modifier peut déclencher une nouvelle exécution du nœud. |
+| `should_remesh` | COMBO | Oui | `"true"`<br>`"false"` | Détermine si le maillage généré doit être traité. Lorsqu'il est défini sur `"false"`, le nœud renvoie un maillage triangulaire non traité. |
+| `topology` | COMBO | Non | `"triangle"`<br>`"quad"` | Le type de polygone cible pour la sortie remaillée. Ce paramètre est uniquement disponible et requis lorsque `should_remesh` est défini sur `"true"`. |
+| `target_polycount` | INT | Non | 100 à 300000 | Le nombre cible de polygones pour le modèle remaillé (par défaut : 300000). Ce paramètre est uniquement disponible lorsque `should_remesh` est défini sur `"true"`. |
+| `symmetry_mode` | COMBO | Oui | `"auto"`<br>`"on"`<br>`"off"` | Contrôle si la symétrie est appliquée au modèle généré. |
+| `should_texture` | COMBO | Oui | `"true"`<br>`"false"` | Détermine si des textures sont générées. Le définir sur `"false"` ignore la phase de texturation et renvoie un maillage sans textures. |
+| `enable_pbr` | BOOLEAN | Non | Vrai / Faux | Lorsque `should_texture` est `"true"`, cette option génère des cartes PBR (métallique, rugosité, normale) en plus de la couleur de base (par défaut : Faux). |
+| `texture_prompt` | STRING | Non | - | Une invite textuelle pour guider le processus de texturation (600 caractères maximum). Ne peut pas être utilisé en même temps que `texture_image`. Ce paramètre est uniquement disponible lorsque `should_texture` est défini sur `"true"`. |
+| `texture_image` | IMAGE | Non | - | Une image pour guider le processus de texturation. Un seul des deux paramètres `texture_image` ou `texture_prompt` peut être utilisé à la fois. Ce paramètre est uniquement disponible lorsque `should_texture` est défini sur `"true"`. |
+| `pose_mode` | COMBO | Oui | `""` (vide)<br>`"A-pose"`<br>`"T-pose"` | Spécifie le mode de pose pour le modèle généré. |
+| `seed` | INT | Oui | 0 à 2147483647 | Une valeur de graine pour le processus de génération (par défaut : 0). Les résultats ne sont pas déterministes quelle que soit la graine, mais changer la graine peut déclencher une nouvelle exécution du nœud. |
 
 **Contraintes des paramètres :**
 
 * Vous devez fournir entre 2 et 4 images pour l'entrée `images`.
-* Les paramètres `topology` et `target_polycount` ne sont actifs que lorsque `should_remesh` est défini sur `"true"`.
-* Les paramètres `enable_pbr`, `texture_prompt` et `texture_image` ne sont actifs que lorsque `should_texture` est défini sur `"true"`.
-* Vous ne pouvez pas utiliser `texture_prompt` et `texture_image` en même temps ; ils s'excluent mutuellement.
+* Les paramètres `topology` et `target_polycount` sont uniquement actifs lorsque `should_remesh` est défini sur `"true"`.
+* Les paramètres `enable_pbr`, `texture_prompt` et `texture_image` sont uniquement actifs lorsque `should_texture` est défini sur `"true"`.
+* Vous ne pouvez pas utiliser `texture_prompt` et `texture_image` en même temps ; ils sont mutuellement exclusifs.
 
 ## Sorties
 
 | Nom de la sortie | Type de données | Description |
 | :--- | :--- | :--- |
-| `model_file` | STRING | Le nom de fichier du modèle GLB généré. Cette sortie est fournie pour la rétrocompatibilité. |
-| `meshy_task_id` | MESHY_TASK_ID | L'identifiant unique de la tâche de l'API Meshy. |
+| `model_file` | STRING | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour la rétrocompatibilité. |
+| `meshy_task_id` | MESHY_TASK_ID | L'identifiant unique de la tâche API Meshy. |
 | `GLB` | FILE3DGLB | Le modèle 3D généré au format GLB. |
 | `FBX` | FILE3DFBX | Le modèle 3D généré au format FBX. |
+
+---
+**Source fingerprint (SHA-256):** `e6f75f50645c8b2cf5ebbe037edb077ef1eb0ea1baf67c581d60ac0033686d00`

@@ -12,6 +12,9 @@ The ByteDance Seedance 2.0 Reference to Video node uses the Seedance 2.0 AI mode
 
 **Important Constraints:**
 *   At least one reference image or video (provided via the `reference_images`, `reference_videos`, or `reference_assets` inputs) is required for the node to work.
+*   A maximum of 9 reference images can be used in total (including those from `reference_images` and `reference_assets`).
+*   A maximum of 3 reference videos can be used in total (including those from `reference_videos` and `reference_assets`).
+*   A maximum of 3 reference audio clips can be used in total (including those from `reference_audios` and `reference_assets`).
 *   Each reference video must be at least 1.8 seconds long. The combined duration of all reference videos cannot exceed 15.1 seconds.
 *   Each reference audio clip must be at least 1.8 seconds long. The combined duration of all reference audio cannot exceed 15.1 seconds.
 
@@ -20,3 +23,6 @@ The ByteDance Seedance 2.0 Reference to Video node uses the Seedance 2.0 AI mode
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `video` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `72c8a2f821b9fb9853a4d0428785c432d0852ae562080292817f8a7d52967c7f`

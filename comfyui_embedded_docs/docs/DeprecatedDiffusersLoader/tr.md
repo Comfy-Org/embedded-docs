@@ -1,17 +1,17 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DeprecatedDiffusersLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DeprecatedDiffusersLoader/tr.md)
 
-DiffusersLoader düğümü, diffusers kütüphanesinden model yüklemek için tasarlanmış olup, özellikle sağlanan model yollarına dayalı olarak UNet, CLIP ve VAE modellerinin yüklenmesini işler. Bu modellerin ComfyUI çerçevesine entegrasyonunu kolaylaştırarak, metinden görüntü oluşturma, görüntü manipülasyonu ve daha fazlası gibi gelişmiş işlevlerin kullanılmasını sağlar.
+DiffusersLoader düğümü, diffusers kütüphanesinden modeller yüklemek için tasarlanmış olup, sağlanan model yollarına göre UNet, CLIP ve VAE modellerinin yüklenmesini özel olarak yönetir. Bu modellerin ComfyUI çerçevesine entegrasyonunu kolaylaştırarak metinden görüntü oluşturma, görüntü işleme ve daha fazlası gibi gelişmiş işlevleri mümkün kılar.
 
-## Girdiler
+## Girişler
 
-| Parametre    | Veri Tipi      | Açıklama |
-|--------------|--------------|-------------|
-| `model_path` | COMBO[STRING] | Yüklenecek modelin yolunu belirtir. Bu yol, hangi modelin sonraki işlemlerde kullanılacağını belirlediği ve düğümün çıktılarını ve yeteneklerini etkilediği için kritik öneme sahiptir. |
+| Parametre     | Veri Türü    | Açıklama |
+|---------------|--------------|-------------|
+| `model_path`  | COMBO[STRING] | Yüklenecek modelin yolunu belirtir. Bu yol, sonraki işlemler için hangi modelin kullanılacağını belirlediğinden kritiktir ve düğümün çıktısını ve yeteneklerini etkiler. |
 
-## Çıktılar
+## Çıkışlar
 
-| Parametre | Veri Tipi | Açıklama |
+| Parametre | Veri Türü | Açıklama |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | Yüklenen UNet modelidir ve çıktı demetinin bir parçasıdır. Bu model, ComfyUI çerçevesi içinde görüntü sentezi ve manipülasyonu görevleri için gereklidir. |
-| `clip`    | CLIP      | İstenirse çıktı demetine dahil edilen yüklenmiş CLIP modelidir. Bu model, gelişmiş metin ve görüntü anlama ve manipülasyon yetenekleri sağlar. |
-| `vae`     | VAE       | İstenirse çıktı demetine dahil edilen yüklenmiş VAE modelidir. Bu model, gizli uzay manipülasyonu ve görüntü oluşturma içeren görevler için çok önemlidir. |
+| `model`   | MODEL     | Çıktı demetinin bir parçası olan yüklenmiş UNet modeli. Bu model, ComfyUI çerçevesinde görüntü sentezi ve işleme görevleri için gereklidir. |
+| `clip`    | CLIP      | İstenirse çıktı demetine dahil edilen yüklenmiş CLIP modeli. Bu model, gelişmiş metin ve görüntü anlama ile işleme yetenekleri sağlar. |
+| `vae`     | VAE       | İstenirse çıktı demetine dahil edilen yüklenmiş VAE modeli. Bu model, gizli uzay işleme ve görüntü oluşturma içeren görevler için kritiktir. |

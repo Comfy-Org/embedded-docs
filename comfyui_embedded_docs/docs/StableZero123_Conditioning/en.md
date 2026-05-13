@@ -9,11 +9,11 @@ The StableZero123_Conditioning node processes an input image and camera angles t
 | `clip_vision` | CLIP_VISION | Yes | - | The CLIP vision model used to encode image features |
 | `init_image` | IMAGE | Yes | - | The input image to be processed and encoded |
 | `vae` | VAE | Yes | - | The VAE model used for encoding pixels to latent space |
-| `width` | INT | No | 16 to MAX_RESOLUTION | Output width for the latent representation (default: 256, must be divisible by 8) |
-| `height` | INT | No | 16 to MAX_RESOLUTION | Output height for the latent representation (default: 256, must be divisible by 8) |
-| `batch_size` | INT | No | 1 to 4096 | Number of samples to generate in the batch (default: 1) |
-| `elevation` | FLOAT | No | -180.0 to 180.0 | Camera elevation angle in degrees (default: 0.0) |
-| `azimuth` | FLOAT | No | -180.0 to 180.0 | Camera azimuth angle in degrees (default: 0.0) |
+| `width` | INT | Yes | 16 to MAX_RESOLUTION | Output width for the latent representation (default: 256, must be divisible by 8) |
+| `height` | INT | Yes | 16 to MAX_RESOLUTION | Output height for the latent representation (default: 256, must be divisible by 8) |
+| `batch_size` | INT | Yes | 1 to 4096 | Number of samples to generate in the batch (default: 1) |
+| `elevation` | FLOAT | Yes | -180.0 to 180.0 | Camera elevation angle in degrees (default: 0.0) |
+| `azimuth` | FLOAT | Yes | -180.0 to 180.0 | Camera azimuth angle in degrees (default: 0.0) |
 
 **Note:** The `width` and `height` parameters must be divisible by 8 as the node automatically divides them by 8 to create the latent representation dimensions.
 
@@ -24,3 +24,6 @@ The StableZero123_Conditioning node processes an input image and camera angles t
 | `positive` | CONDITIONING | Positive conditioning data combining image features and camera embeddings |
 | `negative` | CONDITIONING | Negative conditioning data with zero-initialized features |
 | `latent` | LATENT | Latent representation with dimensions [batch_size, 4, height//8, width//8] |
+
+---
+**Source fingerprint (SHA-256):** `a9d6619c800119c9a619665f322d49ded1478ceb40df56ca5707b31242cb0e47`

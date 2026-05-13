@@ -11,12 +11,12 @@ The HunyuanVideo15ImageToVideo node prepares conditioning and latent space data 
 | `vae` | VAE | Yes | - | The VAE (Variational Autoencoder) model used to encode the starting image into the latent space. |
 | `width` | INT | No | 16 to MAX_RESOLUTION | The width of the output video frames in pixels. Must be divisible by 16. (default: 848) |
 | `height` | INT | No | 16 to MAX_RESOLUTION | The height of the output video frames in pixels. Must be divisible by 16. (default: 480) |
-| `length` | INT | No | 1 to MAX_RESOLUTION | The total number of frames in the video sequence. (default: 33) |
+| `length` | INT | No | 1 to MAX_RESOLUTION | The total number of frames in the video sequence. Must be a multiple of 4. (default: 33) |
 | `batch_size` | INT | No | 1 to 4096 | The number of video sequences to generate in a single batch. (default: 1) |
-| `start_image` | IMAGE | No | - | An optional starting image to initialize the video generation. If provided, it is encoded and used to condition the first frames. |
+| `start_image` | IMAGE | No | - | An optional starting image to initialize the video generation. If provided, it is encoded and used to condition the first frames. Only the first `length` frames of the image are used. |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | - | Optional CLIP vision embeddings to provide additional visual conditioning for the generation. |
 
-**Note:** When a `start_image` is provided, it is automatically resized to match the specified `width` and `height` using bilinear interpolation. The first `length` frames of the image batch are used. The encoded image is then added to both the `positive` and `negative` conditioning as a `concat_latent_image` with a corresponding `concat_mask`.
+**Note:** When a `start_image` is provided, it is automatically resized to match the specified `width` and `height` using bilinear interpolation. The first `length` frames of the image batch are used. The encoded image is then added to both the `positive` and `negative` conditioning as a `concat_latent_image` with a corresponding `concat_mask`. The mask is set to 0.0 for the frames covered by the starting image and 1.0 for the remaining frames.
 
 ## Outputs
 
@@ -25,3 +25,6 @@ The HunyuanVideo15ImageToVideo node prepares conditioning and latent space data 
 | `positive` | CONDITIONING | The modified positive conditioning, which may now include the encoded starting image or CLIP vision output. |
 | `negative` | CONDITIONING | The modified negative conditioning, which may now include the encoded starting image or CLIP vision output. |
 | `latent` | LATENT | An empty latent tensor with dimensions configured for the specified batch size, video length, width, and height. |
+
+---
+**Source fingerprint (SHA-256):** `2f41bbb080672683fb1755be575f08c79ca03e324df66953eb40631581197d47`

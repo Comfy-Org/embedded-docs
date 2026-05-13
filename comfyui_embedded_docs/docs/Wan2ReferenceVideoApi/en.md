@@ -26,3 +26,6 @@ This node generates a video featuring a person or object based on provided refer
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `f28a765e310410fc62241e11dbfe25562c7ae16e8e6ffbfb004face7a7e2b727`

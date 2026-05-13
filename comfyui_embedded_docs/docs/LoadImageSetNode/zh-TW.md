@@ -1,16 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageSetNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageSetNode/zh-TW.md)
 
-LoadImageSetNode 從輸入目錄載入多張影像，用於批次處理和訓練用途。它支援多種影像格式，並可選擇使用不同方法調整影像尺寸。此節點將所有選取的影像作為批次處理，並以單一張量形式傳回。
+## 概述
 
-## 輸入參數
+LoadImageSetNode 從輸入目錄載入多張圖片，以進行批次處理和訓練用途。它支援多種圖片格式，並可選擇使用不同方法調整圖片大小。此節點會將所有選取的圖片作為批次處理，並以單一張量形式回傳。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 是 | 多個影像檔案 | 從輸入目錄中選取多張影像。支援 PNG、JPG、JPEG、WEBP、BMP、GIF、JPE、APNG、TIF 和 TIFF 格式。允許批次選取影像。 |
-| `resize_method` | STRING | 否 | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | 調整載入影像尺寸的選用方法（預設值："None"）。選擇 "None" 保持原始尺寸，"Stretch" 強制調整尺寸，"Crop" 透過裁剪維持長寬比，或 "Pad" 透過填充維持長寬比。 |
+| `images` | IMAGE | 是 | 多個圖片檔案 | 從輸入目錄選取多張圖片。支援 PNG、JPG、JPEG、WEBP、BMP、GIF、JPE、APNG、TIF 及 TIFF 格式。允許批次選取圖片。 |
+| `resize_method` | STRING | 否 | "None"<br>"Stretch"<br>"Crop"<br>"Pad" | 可選的載入圖片調整大小方法（預設值："None"）。選擇 "None" 保留原始尺寸，"Stretch" 強制調整大小，"Crop" 透過裁切維持長寬比，或 "Pad" 透過添加邊框維持長寬比。 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | 包含所有載入影像的張量，作為批次供後續處理使用。 |
+| `IMAGE` | IMAGE | 包含所有載入圖片作為批次的張量，供後續處理使用。 |
+
+---
+**Source fingerprint (SHA-256):** `acf0255bcf170ef3ac3b86a3f3e060c3b81064ca8924918a026ec8e3b86f7ac0`

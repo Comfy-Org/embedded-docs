@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveGLB/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveGLB/tr.md)
 
-SaveGLB düğümü, 3B mesh verilerini GLB dosyaları olarak kaydeder; bu, 3B modeller için yaygın bir biçimdir. Mesh verilerini girdi olarak alır ve belirtilen dosya adı öneki ile çıktı dizinine aktarır. Girdi birden fazla mesh nesnesi içeriyorsa, düğüm birden fazla mesh'i kaydedebilir ve meta veriler etkinleştirildiğinde dosyalara otomatik olarak meta veri ekler.
+SaveGLB düğümü, 3B ağ verilerini veya 3B dosyaları çıktı dizinine kaydeder. Ağ verilerini veya çeşitli 3B dosya biçimlerini (GLB, GLTF, OBJ, FBX, STL, USDZ) kabul eder ve belirtilen bir dosya adı ön ekiyle dışa aktarır. Ağ verileri kaydedilirken birden çok ağı işleyebilir ve meta veriler etkinleştirildiğinde dosyalara otomatik olarak iş akışı meta verileri ekler.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `ağ` | MESH | Evet | - | GLB dosyası olarak kaydedilecek 3B mesh verisi |
-| `dosyaadı_öneki` | STRING | Hayır | - | Çıktı dosya adı için önek (varsayılan: "mesh/ComfyUI") |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|----------|
+| `mesh` | MESH veya FILE3D | Evet | - | Kaydedilecek ağ veya 3B dosya. Ağ verilerini veya GLB, GLTF, OBJ, FBX, STL ve USDZ dahil 3B dosya biçimlerini kabul eder |
+| `filename_prefix` | STRING | Hayır | - | Çıktı dosya adı için ön ek (varsayılan: "3d/ComfyUI") |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `ui` | UI | Kaydedilen GLB dosyalarını, dosya adı ve alt klasör bilgisiyle kullanıcı arayüzünde görüntüler |
+|-----------|-----------|----------|
+| `ui` | UI | Kaydedilen 3B dosyaları, dosya adı, alt klasör ve tür bilgileriyle birlikte kullanıcı arayüzünde görüntüler |
+
+---
+**Source fingerprint (SHA-256):** `bd36600185aeb793cd4e9f37f3b4464267cb36f451fdcf71aff83077bb8c3f53`

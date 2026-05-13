@@ -1,28 +1,38 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ContextWindowsManual/ko.md)
 
-Context Windows (Manual) 노드를 사용하면 샘플링 중 모델에 대한 컨텍스트 창을 수동으로 구성할 수 있습니다. 이 노드는 지정된 길이, 중첩 및 스케줄링 패턴을 가진 중복되는 컨텍스트 세그먼트를 생성하여 데이터를 관리 가능한 청크로 처리하면서 세그먼트 간의 연속성을 유지합니다.
+# 컨텍스트 윈도우(수동) 노드
+
+컨텍스트 윈도우(수동) 노드는 샘플링 중 모델에 대한 컨텍스트 윈도우를 수동으로 구성할 수 있게 해줍니다. 지정된 길이, 중첩 및 스케줄링 패턴으로 중첩되는 컨텍스트 세그먼트를 생성하여, 세그먼트 간 연속성을 유지하면서 데이터를 관리 가능한 청크 단위로 처리합니다. 이 노드는 노이즈 셔플링, 컨디셔닝 유지 및 인과적 윈도우 수정을 포함하여 컨텍스트 윈도우 적용 방식을 제어하기 위한 고급 옵션을 제공합니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | - | 샘플링 중 컨텍스트 창을 적용할 모델입니다. |
-| `context_length` | INT | 아니오 | 1+ | 컨텍스트 창의 길이입니다 (기본값: 16). |
-| `context_overlap` | INT | 아니오 | 0+ | 컨텍스트 창의 중첩 정도입니다 (기본값: 4). |
-| `context_schedule` | COMBO | 아니오 | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` | 컨텍스트 창의 스케줄링 방식입니다. |
-| `context_stride` | INT | 아니오 | 1+ | 컨텍스트 창의 스트라이드입니다; 균일 스케줄에서만 적용 가능합니다 (기본값: 1). |
-| `closed_loop` | BOOLEAN | 아니오 | - | 컨텍스트 창 루프를 닫을지 여부입니다; 루프 스케줄에서만 적용 가능합니다 (기본값: False). |
-| `fuse_method` | COMBO | 아니오 | `PYRAMID`<br>`LIST_STATIC` | 컨텍스트 창을 융합하는 데 사용할 방법입니다 (기본값: PYRAMID). |
-| `dim` | INT | 아니오 | 0-5 | 컨텍스트 창을 적용할 차원입니다 (기본값: 0). |
+| `model` | MODEL | 예 | - | 샘플링 중 컨텍스트 윈도우를 적용할 모델입니다. |
+| `context_length` | INT | 아니요 | 1+ | 컨텍스트 윈도우의 길이입니다(기본값: 16). |
+| `context_overlap` | INT | 아니요 | 0+ | 컨텍스트 윈도우의 중첩입니다(기본값: 4). |
+| `context_schedule` | COMBO | 아니요 | `STATIC_STANDARD`<br>`UNIFORM_STANDARD`<br>`UNIFORM_LOOPED`<br>`BATCHED` | 컨텍스트 윈도우의 보폭입니다. |
+| `context_stride` | INT | 아니요 | 1+ | 컨텍스트 윈도우의 보폭이며, 균일 스케줄에만 적용됩니다(기본값: 1). |
+| `closed_loop` | BOOLEAN | 아니요 | - | 컨텍스트 윈도우 루프를 닫을지 여부이며, 루프 스케줄에만 적용됩니다(기본값: False). |
+| `fuse_method` | COMBO | 아니요 | `PYRAMID`<br>`LIST_STATIC` | 컨텍스트 윈도우를 융합하는 데 사용할 방법입니다(기본값: PYRAMID). |
+| `dim` | INT | 아니요 | 0-5 | 컨텍스트 윈도우를 적용할 차원입니다(기본값: 0). |
+| `freenoise` | BOOLEAN | 아니요 | - | FreeNoise 노이즈 셔플링을 적용할지 여부로, 윈도우 블렌딩을 개선합니다(기본값: False). |
+| `cond_retain_index_list` | STRING | 아니요 | - | 각 윈도우의 컨디셔닝 텐서에 유지할 잠재 인덱스 목록입니다. 예를 들어 '0'으로 설정하면 각 윈도우에 초기 시작 이미지가 사용됩니다(기본값: ""). |
+| `split_conds_to_windows` | BOOLEAN | 아니요 | - | ConditionCombine으로 생성된 여러 컨디셔닝을 영역 인덱스에 따라 각 윈도우로 분할할지 여부입니다(기본값: False). |
+| `causal_window_fix` | BOOLEAN | 아니요 | - | 0이 아닌 인덱스의 컨텍스트 윈도우에 인과적 수정 프레임을 추가할지 여부입니다(기본값: True). |
 
 **매개변수 제약 조건:**
 
 - `context_stride`는 균일 스케줄이 선택된 경우에만 사용됩니다
-- `closed_loop`는 루프 스케줄에만 적용 가능합니다
-- `dim`은 0에서 5 사이(포함)여야 합니다
+- `closed_loop`는 루프 스케줄에만 적용됩니다
+- `dim`은 0에서 5 사이여야 합니다(포함)
+- `cond_retain_index_list`는 문자열로 된 쉼표로 구분된 정수 인덱스 목록을 입력받습니다(예: "0,1,2")
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model` | MODEL | 샘플링 중 컨텍스트 창이 적용된 모델입니다. |
+| `model` | MODEL | 샘플링 중 컨텍스트 윈도우가 적용된 모델입니다. |
+
+---
+**Source fingerprint (SHA-256):** `b05ddda0ba38588305e6f733cd218c8b462268c39d16226ca961d09054187261`

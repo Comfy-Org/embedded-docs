@@ -15,3 +15,6 @@ The ImageAddNoise node adds random noise to an input image. It uses a specified 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The output image with added noise applied |
+
+---
+**Source fingerprint (SHA-256):** `8abfc64500e5ff8fe7589763a07c15d771e9a5a6a61bae9ec4d819be9bf71810`

@@ -17,3 +17,6 @@ This node organizes a list of latent images and their corresponding conditioning
 |-------------|-----------|-------------|
 | `latents` | LATENT | List of batched latent dicts, one per resolution bucket. |
 | `conditioning` | CONDITIONING | List of condition lists, one per resolution bucket. |
+
+---
+**Source fingerprint (SHA-256):** `2858de5f0827812002ca72ba5d7ce56411d1ef97e9a12a65fc4bea193a1a0ec0`

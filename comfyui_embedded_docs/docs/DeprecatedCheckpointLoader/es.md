@@ -1,16 +1,18 @@
-El nodo CheckpointLoader está diseñado para operaciones de carga avanzadas, específicamente para cargar puntos de control de modelos junto con sus configuraciones. Facilita la recuperación de componentes del modelo necesarios para inicializar y ejecutar modelos generativos, incluyendo configuraciones y puntos de control desde directorios especificados.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DeprecatedCheckpointLoader/es.md)
+
+El nodo CheckpointLoader está diseñado para operaciones de carga avanzadas, específicamente para cargar puntos de control de modelos junto con sus configuraciones. Facilita la recuperación de los componentes del modelo necesarios para inicializar y ejecutar modelos generativos, incluyendo configuraciones y puntos de control desde directorios especificados.
 
 ## Entradas
 
-| Parámetro    | Tipo de Dato | Descripción |
+| Parámetro | Tipo de Dato | Descripción |
 |--------------|--------------|-------------|
-| `config_name` | COMBO[STRING] | Especifica el nombre del archivo de configuración a utilizar. Esto es crucial para determinar los parámetros y configuraciones del modelo, afectando el comportamiento y rendimiento del mismo. |
-| `ckpt_name`  | COMBO[STRING] | Indica el nombre del archivo de punto de control a cargar. Esto influye directamente en el estado del modelo que se está inicializando, impactando sus pesos y sesgos iniciales. |
+| `config_name` | COMBO[STRING] | Especifica el nombre del archivo de configuración a utilizar. Esto es crucial para determinar los parámetros y ajustes del modelo, afectando su comportamiento y rendimiento. |
+| `ckpt_name` | COMBO[STRING] | Indica el nombre del archivo de punto de control que se cargará. Esto influye directamente en el estado del modelo que se está inicializando, impactando sus pesos y sesgos iniciales. |
 
 ## Salidas
 
 | Parámetro | Tipo de Dato | Descripción |
 |-----------|-------------|-------------|
-| `model`   | MODEL     | Representa el modelo principal cargado desde el punto de control, listo para operaciones o inferencias adicionales. |
-| `clip`    | CLIP      | Proporciona el componente del modelo CLIP, si está disponible y solicitado, cargado desde el punto de control. |
-| `vae`     | VAE       | Entrega el componente del modelo VAE, si está disponible y solicitado, cargado desde el punto de control. |
+| `model` | MODEL | Representa el modelo principal cargado desde el punto de control, listo para operaciones posteriores o inferencia. |
+| `clip` | CLIP | Proporciona el componente del modelo CLIP, si está disponible y se solicita, cargado desde el punto de control. |
+| `vae` | VAE | Entrega el componente del modelo VAE, si está disponible y se solicita, cargado desde el punto de control. |

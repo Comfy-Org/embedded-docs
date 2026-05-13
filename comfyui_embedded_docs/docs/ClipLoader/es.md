@@ -1,72 +1,66 @@
-Este nodo se utiliza principalmente para cargar modelos de codificador de texto CLIP de forma independiente.
-Los archivos de modelo se pueden detectar en las siguientes rutas:
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/es.md)
 
-- "ComfyUI/models/text_encoders/"
-- "ComfyUI/models/clip/"
+Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
-> Si guardas un modelo después de haber iniciado ComfyUI, necesitarás actualizar el frontend de ComfyUI para obtener la lista más reciente de rutas de archivos de modelo
+## Reglas de Traducción
 
-Formatos de modelo soportados:
+1. **Contenido que NO debe traducirse:**
+   - Nombres de parámetros entre comillas invertidas: `image`, `seed`, `model`
+   - Tipos de datos en MAYÚSCULAS: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, etc.
+   - Valores en columna Range: números, "auto", nombres de opciones
+   - Código, rutas de archivos
 
-- `.ckpt`
-- `.pt`
-- `.pt2`
-- `.bin`
-- `.pth`
-- `.safetensors`
-- `.pkl`
-- `.sft`
+2. **Contenido que SÍ debe traducirse:**
+   - Títulos de secciones: ## Descripción general, ## Entradas, ## Salidas
+   - Todo el texto descriptivo y explicativo
+   - Descripciones de parámetros
 
-Para más detalles sobre la carga de archivos de modelo más recientes, consulta [folder_paths](https://github.com/comfyanonymous/ComfyUI/blob/master/folder_paths.py)
+3. **Calidad de traducción:**
+   - Usar español estándar y neutral
+   - Mantener tono profesional pero accesible
+   - Asegurar precisión técnica
+   - Usar terminología técnica estándar en español
+
+4. **Formato:**
+   - Mantener todo el formato Markdown
+   - Preservar estructura de tablas
+   - No agregar ninguna nota o enlace al inicio del documento (será agregado automáticamente)
+
+Por favor traduce la siguiente documentación al español, sin incluir la nota inicial del documento:
+
+El nodo CLIPLoader carga un modelo codificador de texto (CLIP, T5 o similar) desde un archivo, poniéndolo a disposición para su uso en otros nodos que necesitan convertir indicaciones de texto en representaciones numéricas. Soporta una amplia variedad de arquitecturas de modelos, cada una requiriendo un tipo de codificador específico.
 
 ## Entradas
 
-| Parámetro     | Tipo de Dato  | Descripción |
-|---------------|---------------|-------------|
-| `nombre_clip` | COMBO[STRING] | Especifica el nombre del modelo CLIP que se va a cargar. Este nombre se utiliza para localizar el archivo del modelo dentro de una estructura de directorios predefinida. |
-| `tipo`        | COMBO[STRING] | Determina el tipo de modelo CLIP a cargar. A medida que ComfyUI admite más modelos, se añadirán nuevos tipos aquí. Consulta la definición de la clase `CLIPLoader` en [node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py) para más detalles. |
-| `dispositivo` | COMBO[STRING] | Elige el dispositivo para cargar el modelo CLIP. `default` ejecutará el modelo en GPU, mientras que seleccionar `CPU` forzará la carga en CPU. |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|-----------|----------|-------|-------------|
+| `clip_name` | STRING | Sí | Lista de archivos encontrados en la carpeta `text_encoders` | El nombre del archivo del modelo codificador de texto a cargar. Este debe ser un archivo ubicado en el directorio `ComfyUI/models/text_encoders/` o `ComfyUI/models/clip/`. |
+| `type` | STRING | Sí | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | El tipo de arquitectura del modelo que se está cargando. Esto determina qué variante de codificador específica usar. El valor predeterminado es `"stable_diffusion"`. |
+| `device` | STRING | No | `"default"`<br>`"cpu"` | El dispositivo en el que cargar el modelo. `"default"` usa la GPU si está disponible, mientras que `"cpu"` fuerza la carga en CPU. Esta es una opción avanzada (predeterminado: `"default"`). |
 
-### Opciones de Dispositivo Explicadas
+### Mapeos Compatibles de Tipo a Codificador
 
-**Cuándo elegir "default":**
+El parámetro `type` selecciona el codificador correcto para una arquitectura de modelo determinada. Los siguientes son mapeos comunes:
 
-- Tienes suficiente memoria GPU
-- Quieres el mejor rendimiento
-- Dejas que el sistema optimice automáticamente el uso de memoria
-
-**Cuándo elegir "cpu":**
-
-- Memoria GPU insuficiente
-- Necesitas reservar memoria GPU para otros modelos (como UNet)
-- Ejecutando en un entorno con poca VRAM
-- Necesidades de depuración o propósitos especiales
-
-**Impacto en el Rendimiento**
-
-La ejecución en CPU será mucho más lenta que en GPU, pero puede ahorrar valiosa memoria GPU para otros componentes más importantes del modelo. En entornos con restricciones de memoria, poner el modelo CLIP en CPU es una estrategia de optimización común.
-
-### Combinaciones Soportadas
-
-| Tipo de Modelo | Codificador Correspondiente |
-|----------------|----------------------------|
+| Tipo | Codificador |
+|------|---------|
 | stable_diffusion | clip-l |
 | stable_cascade | clip-g |
-| sd3 | t5 xxl/ clip-g / clip-l |
+| sd3 | t5 xxl / clip-g / clip-l |
 | stable_audio | t5 base |
 | mochi | t5 xxl |
+| cogvideox | t5 xxl (relleno de 226 tokens) |
 | cosmos | old t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
-
-A medida que ComfyUI se actualiza, estas combinaciones pueden expandirse. Para más detalles, consulta la definición de la clase `CLIPLoader` en [node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py)
+| hidream | llama-3.1 (recomendado) o t5 |
+| omnigen2 | qwen vl 2.5 3B |
 
 ## Salidas
 
-| Parámetro | Tipo de Dato | Descripción |
-|-----------|--------------|-------------|
-| `clip`    | CLIP         | El modelo CLIP cargado, listo para su uso en tareas posteriores o procesamiento adicional. |
+| Nombre de Salida | Tipo de Dato | Descripción |
+|-------------|-----------|-------------|
+| `clip` | CLIP | El modelo codificador de texto cargado, listo para ser conectado a otros nodos para codificación de texto y acondicionamiento. |
 
-## Notas Adicionales
-
-Los modelos CLIP juegan un papel fundamental como codificadores de texto en ComfyUI, siendo responsables de convertir los prompts de texto en representaciones numéricas que los modelos de difusión pueden entender. Puedes pensar en ellos como traductores, responsables de traducir tu texto a un lenguaje que los modelos grandes pueden entender. Por supuesto, diferentes modelos tienen sus propios "dialectos", por lo que se necesitan diferentes codificadores CLIP entre diferentes arquitecturas para completar el proceso de codificación de texto.
+---
+**Source fingerprint (SHA-256):** `1051bfe5570dff81719682cb09938bae4c03e94e0e72f7a2be84867cccb48017`

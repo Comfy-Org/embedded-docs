@@ -1,16 +1,19 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVPreprocess/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVPreprocess/zh-TW.md)
 
-LTXVPreprocess 節點對影像進行壓縮預處理。它接收輸入影像並以指定的壓縮等級進行處理，輸出經過壓縮設定處理後的影像。
+LTXVPreprocess 節點對影像套用壓縮預處理。它接收輸入影像，並以指定的壓縮等級進行處理，輸出已套用壓縮設定的處理後影像。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `影像` | IMAGE | 是 | - | 需要處理的輸入影像 |
-| `img_compression` | INT | 否 | 0-100 | 應用於影像的壓縮程度（預設值：35） |
+| `image` | IMAGE | 是 | - | 要處理的輸入影像 |
+| `img_compression` | INT | 否 | 0-100 | 套用於影像的壓縮量（預設值：35） |
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `output_image` | IMAGE | 經過壓縮處理後的輸出影像 |
+| `output_image` | IMAGE | 已套用壓縮的處理後輸出影像 |
+
+---
+**Source fingerprint (SHA-256):** `2c5fbde5d011bdf3313ca05508f58a13eaae0bdff12f3659fef281c0045e480d`

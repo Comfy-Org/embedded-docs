@@ -8,7 +8,7 @@ Kling Lip Sync Audio to Video Node synchronizes mouth movements in a video file 
 |-----------|-----------|----------|-------|-------------|
 | `video` | VIDEO | Yes | - | The video file containing a face to be lip-synced |
 | `audio` | AUDIO | Yes | - | The audio file containing vocals to sync with the video |
-| `voice_language` | COMBO | No | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | The language of the voice in the audio file (default: "en") |
+| `voice_language` | COMBO | Yes | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | The language of the voice in the audio file (default: "en") |
 
 **Important Constraints:**
 
@@ -26,3 +26,6 @@ Kling Lip Sync Audio to Video Node synchronizes mouth movements in a video file 
 | `output` | VIDEO | The processed video with lip-synced mouth movements |
 | `video_id` | STRING | The unique identifier for the processed video |
 | `duration` | STRING | The duration of the processed video |
+
+---
+**Source fingerprint (SHA-256):** `92b8a7a4f9508632155a5f69707ffc4a14f2f44c04e4d01bf46476a972465592`

@@ -4,13 +4,13 @@ The ChromaRadianceOptions node allows you to configure advanced settings for the
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Required | - | - | The model to apply Chroma Radiance options to |
-| `preserve_wrapper` | BOOLEAN | Optional | True | - | When enabled, will delegate to an existing model function wrapper if it exists. Generally should be left enabled. |
-| `start_sigma` | FLOAT | Optional | 1.0 | 0.0 - 1.0 | First sigma that these options will be in effect. |
-| `end_sigma` | FLOAT | Optional | 0.0 | 0.0 - 1.0 | Last sigma that these options will be in effect. |
-| `nerf_tile_size` | INT | Optional | -1 | -1 and above | Allows overriding the default NeRF tile size. -1 means use the default (32). 0 means use non-tiling mode (may require a lot of VRAM). |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Yes | - | The model to apply Chroma Radiance options to |
+| `preserve_wrapper` | BOOLEAN | No | - | When enabled, will delegate to an existing model function wrapper if it exists. Generally should be left enabled. (default: True) |
+| `start_sigma` | FLOAT | No | 0.0 to 1.0 | First sigma that these options will be in effect. (default: 1.0) |
+| `end_sigma` | FLOAT | No | 0.0 to 1.0 | Last sigma that these options will be in effect. (default: 0.0) |
+| `nerf_tile_size` | INT | No | -1 and above | Allows overriding the default NeRF tile size. -1 means use the default (32). 0 means use non-tiling mode (may require a lot of VRAM). (default: -1) |
 
 **Note:** The Chroma Radiance options only take effect when the current sigma value falls between `end_sigma` and `start_sigma` (inclusive). The `nerf_tile_size` parameter is only applied when set to 0 or higher values.
 
@@ -19,3 +19,6 @@ The ChromaRadianceOptions node allows you to configure advanced settings for the
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with Chroma Radiance options applied |
+
+---
+**Source fingerprint (SHA-256):** `b49a12e9aba59e4669c59e05a6aeff6d4ae5a4b656ca5b0de4bdf71291dca095`

@@ -1,33 +1,38 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/tr.md)
 
-`CLIPSave` düğümü, CLIP metin kodlayıcı modellerini SafeTensors formatında kaydetmek için tasarlanmıştır. Bu düğüm, gelişmiş model birleştirme iş akışlarının bir parçasıdır ve genellikle `CLIPMergeSimple` ve `CLIPMergeAdd` gibi düğümlerle birlikte kullanılır. Kaydedilen dosyalar, güvenlik ve uyumluluğu sağlamak için SafeTensors formatını kullanır.
+`CLIPSave` düğümü, bir CLIP metin kodlayıcı modelini SafeTensors formatında diske kaydeder. Gelişmiş model birleştirme iş akışları için tasarlanmıştır ve CLIP modelini, modelin iç yapısına bağlı olarak otomatik olarak bileşen parçalarına (CLIP-L, CLIP-G veya T5XXL gibi) ayırır ve her bileşeni ayrı bir dosya olarak kaydeder.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Varsayılan Değer | Açıklama |
-|-----------|-----------|----------|---------------|-------------|
-| clip | CLIP | Evet | - | Kaydedilecek CLIP modeli |
-| filename_prefix | STRING | Evet | "clip/ComfyUI" | Kaydedilen dosya için ön ek yolu |
-| prompt | PROMPT | Gizli | - | İş akışı istem bilgileri (üst veri için) |
-| extra_pnginfo | EXTRA_PNGINFO | Gizli | - | Ek PNG bilgileri (üst veri için) |
+| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
+|-----------|-----------|------------|---------|-------|-------------|
+| `clip` | CLIP | Zorunlu | - | - | Kaydedilecek CLIP modeli. |
+| `filename_prefix` | STRING | Zorunlu | `clip/ComfyUI` | - | Kaydedilen dosya(lar) için ön ek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (ör. `_clip_l`, `_clip_g`) ve bir sayaç ekleyecektir. |
+| `prompt` | PROMPT | Gizli | - | - | Çıktı dosyasında meta veri olarak kaydedilen iş akışı istem bilgisi. |
+| `extra_pnginfo` | EXTRA_PNGINFO | Gizli | - | - | Çıktı dosyasında anahtar-değer çiftleri olarak kaydedilen ek meta veriler. |
 
 ## Çıktılar
 
-Bu düğümün tanımlanmış çıktı türü yoktur. İşlenmiş dosyaları `ComfyUI/output/` klasörüne kaydeder.
+Bu düğümün herhangi bir çıktı bağlantısı yoktur. İşlenen dosyaları doğrudan `ComfyUI/output/` dizinine kaydeder.
 
-### Çoklu Dosya Kaydetme Stratejisi
+### Kaydedilen Dosya Ayrıntıları
 
-Düğüm, CLIP model türüne göre farklı bileşenleri kaydeder:
+Düğüm, CLIP modelinin durum sözlüğünü analiz eder ve algılanan her bileşen için ayrı SafeTensors dosyaları kaydeder. Bileşen, parametre anahtarlarının ön ekiyle tanımlanır. Aşağıdaki ön ekler kontrol edilir:
 
-| Ön Ek Türü | Dosya Son Eki | Açıklama |
-|------------|-------------|-------------|
-| `clip_l.` | `_clip_l` | CLIP-L metin kodlayıcı |
-| `clip_g.` | `_clip_g` | CLIP-G metin kodlayıcı |
-| Boş ön ek | Son ek yok | Diğer CLIP bileşenleri |
+- `clip_l.` (CLIP-L metin kodlayıcı)
+- `clip_g.` (CLIP-G metin kodlayıcı)
+- `clip_h.` (CLIP-H metin kodlayıcı)
+- `t5xxl.` (T5-XXL metin kodlayıcı)
+- `pile_t5xl.` (Pile-T5-XL metin kodlayıcı)
+- `mt5xl.` (mT5-XL metin kodlayıcı)
+- `umt5xxl.` (UMT5-XXL metin kodlayıcı)
+- `t5base.` (T5-Base metin kodlayıcı)
+- `gemma2_2b.` (Gemma 2 2B metin kodlayıcı)
+- `llama.` (LLaMA metin kodlayıcı)
+- `hydit_clip.` (Hydit CLIP metin kodlayıcı)
+- Boş ön ek (diğer CLIP bileşenleri)
 
-## Kullanım Notları
+Algılanan her bileşen için düğüm, `{filename_prefix}_{counter:05}_.safetensors` adında bir dosya oluşturur; burada bileşen ön eki, dosya adı ön ekine eklenir (ör. `clip/ComfyUI_clip_l_00001_.safetensors`). Kaydetme sırasında `transformer.` ön eki parametre anahtarlarından kaldırılır.
 
-1. **Dosya Konumu**: Tüm dosyalar `ComfyUI/output/` dizininde kaydedilir
-2. **Dosya Formatı**: Modeller güvenlik için SafeTensors formatında kaydedilir
-3. **Üst Veri**: Mevcutsa iş akışı bilgilerini ve PNG üst verilerini içerir
-4. **İsimlendirme Kuralı**: Belirtilen ön ek artı model türüne göre uygun son ekler kullanır
+---
+**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

@@ -13,3 +13,6 @@ The Text to Uppercase node takes a text input and converts all of its characters
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `text` | STRING | The resulting text with all characters converted to uppercase. |
+
+---
+**Source fingerprint (SHA-256):** `180fa62fcd9171e1dafc140b175647e4b6eaaf9fc3dc39b183ae7cdb7de56543`

@@ -16,3 +16,6 @@ Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usa
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
 | `SVG` | SVG | A saída SVG vetorizada. |
+
+---
+**Source fingerprint (SHA-256):** `4539277fd6c23aef149c44eeafca4d373cad658d85872de0883245eb4f2479e8`

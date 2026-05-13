@@ -1,12 +1,15 @@
-Node Name: Reroute Node
-Node Purpose: Principalmente utilizado para organizar la lógica de líneas de conexión excesivamente largas en el flujo de trabajo de ComfyUI.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/es.md)
 
-## How to Use Reroute Nodes | Cómo Usar Nodos Redirigir
+Nombre del Nodo: Nodo de Reencaminamiento
+Propósito del Nodo: Se utiliza principalmente para organizar la lógica de líneas de conexión excesivamente largas en el flujo de trabajo de ComfyUI.
 
-| Menu Options | Spanish | Description |
+## Cómo Usar los Nodos de Reencaminamiento
+
+| Opciones del Menú | Descripción |
 | --- | --- |
-| Show Type | Mostrar Tipo | Display the node's type property |
-| Hide Type By Default | Ocultar Tipo por Defecto | Hide the node's type property by default |
-| Set Vertical | Establecer Vertical | Set the node's wiring direction to vertical |
-| Set Horizontal | Establecer Horizontal | Set the node's wiring direction to horizontal |
-Cuando tu lógica de cableado es demasiado larga y compleja, y deseas ordenar la interfaz, puedes insertar un nodo ```Reroute``` entre dos puntos de conexión. La entrada y salida de este nodo no están restringidas por tipo, y el estilo predeterminado es horizontal. Puedes cambiar la dirección del cableado a vertical a través del menú de clic derecho.
+| Mostrar Tipo | Muestra la propiedad de tipo del nodo |
+| Ocultar Tipo por Defecto | Oculta la propiedad de tipo del nodo de forma predeterminada |
+| Establecer Vertical | Establece la dirección del cableado del nodo a vertical |
+| Establecer Horizontal | Establece la dirección del cableado del nodo a horizontal |
+
+Cuando la lógica de tu cableado es demasiado larga y compleja, y deseas ordenar la interfaz, puedes insertar un nodo ```Reroute``` entre dos puntos de conexión. La entrada y salida de este nodo no tienen restricciones de tipo, y el estilo predeterminado es horizontal. Puedes cambiar la dirección del cableado a vertical a través del menú contextual (clic derecho).

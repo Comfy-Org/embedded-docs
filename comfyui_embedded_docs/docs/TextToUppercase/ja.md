@@ -1,15 +1,20 @@
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToUppercase/ja.md)
 
-Text to Uppercase ノードは、入力されたテキストを受け取り、そのすべての文字を大文字に変換します。これは、提供された文字列の大文字・小文字を変更するシンプルなテキスト処理ユーティリティです。
+このドキュメントはAIが生成しました。誤りや改善の提案があれば、ぜひご連絡ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToUppercase/en.md)
+
+Text to Uppercase ノードは、テキスト入力を受け取り、そのすべての文字を大文字に変換します。これは、指定された文字列の大文字小文字を変更するシンプルなテキスト処理ユーティリティです。
 
 ## 入力
 
 | パラメータ | データ型 | 必須 | 範囲 | 説明 |
 |-----------|-----------|----------|-------|-------------|
-| `text` | STRING | はい | N/A | 大文字に変換する対象のテキスト文字列です。 |
+| `text` | STRING | はい | なし | 大文字に変換するテキスト文字列。 |
 
 ## 出力
 
 | 出力名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `text` | STRING | すべての文字が大文字に変換された結果のテキストです。 |
+| `text` | STRING | すべての文字が大文字に変換された結果のテキスト。 |
+
+---
+**Source fingerprint (SHA-256):** `180fa62fcd9171e1dafc140b175647e4b6eaaf9fc3dc39b183ae7cdb7de56543`

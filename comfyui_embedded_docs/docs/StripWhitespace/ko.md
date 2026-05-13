@@ -1,10 +1,12 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/ko.md)
 
-이 노드는 텍스트 문자열의 시작과 끝에 있는 추가 공백, 탭 또는 줄바꿈을 제거합니다. 텍스트 입력을 받아 앞뒤 공백이 제거된 정리된 버전을 반환합니다.
+이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/en.md)
+
+이 노드는 텍스트 문자열의 시작과 끝에서 불필요한 공백, 탭 또는 줄바꿈을 제거합니다. 텍스트 입력을 받아 앞뒤 공백이 제거된 정리된 버전을 반환합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
 | `text` | STRING | 예 | 해당 없음 | 앞뒤 공백을 제거할 텍스트 문자열입니다. |
 
@@ -13,3 +15,6 @@
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
 | `text` | STRING | 모든 앞뒤 공백 문자가 제거된 처리된 텍스트입니다. |
+
+---
+**Source fingerprint (SHA-256):** `5b86f71c842a89fe42119593a8bfd30ea441cd02e35356f431ebfdda8010e58d`

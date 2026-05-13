@@ -16,3 +16,6 @@ Generates videos synchronously based on an image and prompt, and optional parame
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video output |
+
+---
+**Source fingerprint (SHA-256):** `9ad1659352e363361f09d6a7a0e24835056b20cc84532247251f516b0ac284e8`

@@ -25,3 +25,6 @@ The WanSoundImageToVideo node generates video content from images with optional 
 | `positive` | CONDITIONING | Processed positive conditioning that has been modified for video generation |
 | `negative` | CONDITIONING | Processed negative conditioning that has been modified for video generation |
 | `latent` | LATENT | Generated video representation in latent space that can be decoded into final video frames |
+
+---
+**Source fingerprint (SHA-256):** `f80f82b8671294a14ecfecf91bc13febae0c91c5efa438467a4413d52dc82d3f`

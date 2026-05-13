@@ -2,66 +2,69 @@
 
 `CLIP Text Encode (CLIPTextEncode)` actúa como un traductor, convirtiendo tus descripciones de texto en un formato que la IA puede entender. Esto ayuda a la IA a interpretar tu entrada y generar la imagen deseada.
 
-Piensa en ello como comunicarte con un artista que habla un idioma diferente. El modelo CLIP, entrenado con vastos pares de imagen-texto, salva esta brecha convirtiendo tus descripciones en "instrucciones" que el modelo de IA puede seguir.
+Piénsalo como comunicarte con un artista que habla un idioma diferente. El modelo CLIP, entrenado con vastos pares de imagen-texto, tiende un puente entre ambos al convertir tus descripciones en "instrucciones" que el modelo de IA puede seguir.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Método de Entrada | Valor por Defecto | Rango | Descripción |
-|-----------|-----------|--------------|---------|--------|-------------|
-| text | STRING | Entrada de Texto | Vacío | Cualquier texto | Introduce la descripción (*prompt*) para la imagen que quieres crear. Admite entrada de múltiples líneas para descripciones detalladas. |
-| clip | CLIP | Selección de Modelo | Ninguno | Modelos CLIP cargados | Selecciona el modelo CLIP a utilizar para traducir tu descripción en instrucciones para el modelo de IA. |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|-----------|----------|-------|-------------|
+| `text` | STRING | Sí | Cualquier texto | El texto a codificar. Admite entrada de varias líneas y prompts dinámicos. |
+| `clip` | CLIP | Sí | Modelos CLIP cargados | El modelo CLIP utilizado para codificar el texto. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| CONDITIONING | CONDITIONING | Las "instrucciones" procesadas de tu descripción que guían al modelo de IA al generar una imagen. |
+| `CONDITIONING` | CONDITIONING | Un condicionamiento que contiene el texto incrustado utilizado para guiar el modelo de difusión. |
 
-## Características del *Prompt*
+## Características del Prompt
 
-### Modelos de *Embedding*
+### Modelos de Incrustación (Embedding)
 
-Los modelos de *embedding* te permiten aplicar efectos o estilos artísticos específicos. Los formatos soportados incluyen `.safetensors`, `.pt` y `.bin`. Para usar un modelo de *embedding*:
+Los modelos de incrustación te permiten aplicar efectos artísticos o estilos específicos. Los formatos compatibles incluyen `.safetensors`, `.pt` y `.bin`. Para usar un modelo de incrustación:
 
 1. Coloca el archivo en la carpeta `ComfyUI/models/embeddings`.
-2. Referéncialo en tu texto usando `embedding:nombre_del_modelo`.
+2. Haz referencia a él en tu texto usando `embedding:nombre_del_modelo`.
 
-Ejemplo: Si tienes un modelo llamado `EasyNegative.pt` en tu carpeta `ComfyUI/models/embeddings`, entonces puedes usarlo así:
+Ejemplo: Si tienes un modelo llamado `EasyNegative.pt` en tu carpeta `ComfyUI/models/embeddings`, puedes usarlo así:
 
 ```
 worst quality, embedding:EasyNegative, bad quality
 ```
 
-**IMPORTANTE**: Al usar modelos de *embedding*, verifica que el nombre del archivo coincida y sea compatible con la arquitectura de tu modelo. Por ejemplo, un *embedding* diseñado para SD1.5 no funcionará correctamente para un modelo SDXL.
+**IMPORTANTE**: Al usar modelos de incrustación, verifica que el nombre del archivo coincida y sea compatible con la arquitectura de tu modelo. Por ejemplo, una incrustación diseñada para SD1.5 no funcionará correctamente con un modelo SDXL.
 
-### Ajuste de Peso del *Prompt*
+### Ajuste de Peso del Prompt
 
 Puedes ajustar la importancia de ciertas partes de tu descripción usando paréntesis. Por ejemplo:
 
 - `(beautiful:1.2)` aumenta el peso de "beautiful".
 - `(beautiful:0.8)` disminuye el peso de "beautiful".
-- Los paréntesis simples `(beautiful)` aplicarán un peso por defecto de 1.1.
+- Los paréntesis simples `(beautiful)` aplicarán un peso predeterminado de 1.1.
 
 Puedes usar los atajos de teclado `ctrl + flecha arriba/abajo` para ajustar rápidamente los pesos. El tamaño del paso de ajuste de peso se puede modificar en la configuración.
 
-Si deseas incluir paréntesis literales en tu *prompt* sin cambiar el peso, puedes escaparlos usando una barra invertida, por ejemplo: `\(palabra\)`.
+Si deseas incluir paréntesis literales en tu prompt sin cambiar el peso, puedes escaparlos usando una barra invertida, ej. `\(palabra\)`.
 
-### *Prompts* Dinámicos / Comodín
+### Prompts Dinámicos/Comodín (Wildcard)
 
-Usa `{}` para crear *prompts* dinámicos. Por ejemplo, `{day|night|morning}` seleccionará aleatoriamente una opción cada vez que se procese el *prompt*.
+Usa `{}` para crear prompts dinámicos. Por ejemplo, `{día|noche|mañana}` seleccionará aleatoriamente una opción cada vez que se procese el prompt.
 
-Si deseas incluir llaves literales en tu *prompt* sin activar el comportamiento dinámico, puedes escaparlas usando una barra invertida, por ejemplo: `\{palabra\}`.
+Si deseas incluir llaves literales en tu prompt sin activar el comportamiento dinámico, puedes escaparlas usando una barra invertida, ej. `\{palabra\}`.
 
-### Comentarios en los *Prompts*
+### Comentarios en Prompts
 
-Puedes agregar comentarios que se excluyan del *prompt* usando:
+Puedes añadir comentarios que se excluyen del prompt usando:
 
 - `//` para comentar una sola línea.
-- `/* */` para comentar una sección o múltiples líneas.
+- `/* */` para comentar una sección o varias líneas.
 
 Ejemplo:
 
 ```
 // esta línea se excluye del prompt.
-un paisaje hermoso, /* esta parte se ignora */ alta calidad
+un hermoso paisaje, /* esta parte se ignora */ alta calidad
 ```
+
+---
+**Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

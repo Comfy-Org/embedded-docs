@@ -15,3 +15,6 @@ Kling Virtual Try On Node. Input a human image and a cloth image to try on the c
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | IMAGE | The resulting image showing the human with the clothing item tried on |
+
+---
+**Source fingerprint (SHA-256):** `bfd0da440d3ad85e15ce16851313f2e75421a8a3eb5e4c651350432955afc731`

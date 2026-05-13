@@ -14,8 +14,8 @@ The WanCameraImageToVideo node converts images to video sequences by generating 
 | `length` | INT | Yes | 1 to MAX_RESOLUTION | Number of frames in the video sequence (default: 81, step: 4) |
 | `batch_size` | INT | Yes | 1 to 4096 | Number of videos to generate simultaneously (default: 1) |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | - | Optional CLIP vision output for additional conditioning |
-| `start_image` | IMAGE | No | - | Optional starting image to initialize the video sequence |
-| `camera_conditions` | WAN_CAMERA_EMBEDDING | No | - | Optional camera embedding conditions for video generation |
+| `start_image` | IMAGE | No | - | Optional starting image to initialize the video sequence. When provided, the first frames of the video will be based on this image, with a mask applied to blend the starting frames with generated content. The image is resized to match the specified width and height. |
+| `camera_conditions` | WAN_CAMERA_EMBEDDING | No | - | Optional camera embedding conditions for video generation. When provided, these conditions are applied to both positive and negative conditioning. |
 
 **Note:** When `start_image` is provided, the node uses it to initialize the video sequence and applies masking to blend the starting frames with generated content. The `camera_conditions` and `clip_vision_output` parameters are optional but when provided, they modify the conditioning for both positive and negative prompts.
 
@@ -25,4 +25,7 @@ The WanCameraImageToVideo node converts images to video sequences by generating 
 |-------------|-----------|-------------|
 | `positive` | CONDITIONING | Modified positive conditioning with applied camera conditions and clip vision outputs |
 | `negative` | CONDITIONING | Modified negative conditioning with applied camera conditions and clip vision outputs |
-| `latent` | LATENT | Generated video latent representation for use with video models |
+| `latent` | LATENT | Generated video latent representation for use with video models. The latent tensor has dimensions [batch_size, 16, frames, height/8, width/8] where frames is calculated as ((length - 1) // 4) + 1. |
+
+---
+**Source fingerprint (SHA-256):** `19d76097d580b14663afd0aab58810f9dc1685cd32e8f67aa43c820be65239e7`

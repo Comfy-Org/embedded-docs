@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/tr.md)
 
-CFGNorm düğümü, yayılım modellerinde sınıflandırıcısız kılavuzluk (CFG) sürecine bir normalleştirme tekniği uygular. Koşullu ve koşulsuz çıktıların normlarını karşılaştırarak gürültüsü giderilmiş tahminin ölçeğini ayarlar ve ardından etkiyi kontrol etmek için bir güç çarpanı uygular. Bu, kılavuzluk ölçeklendirmesindeki aşırı değerleri önleyerek üretim sürecini stabilize etmeye yardımcı olur.
+CFGNorm düğümü, yayılım modellerinde sınıflandırıcısız yönlendirme (CFG) sürecine bir normalizasyon tekniği uygular. Koşullu ve koşulsuz çıktıların normlarını karşılaştırarak gürültü giderme tahmininin ölçeğini ayarlar ve ardından etkiyi kontrol etmek için bir güç çarpanı uygular. Bu, yönlendirme ölçeklemesinde aşırı değerleri önleyerek üretim sürecini dengelemeye yardımcı olur.
 
-## Girdiler
+## Girişler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
+| Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
 |-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | gerekli | - | - | CFG normalleştirmesinin uygulanacağı yayılım modeli |
-| `strength` | FLOAT | gerekli | 1.0 | 0.0 - 100.0 | CFG ölçeklendirmesine uygulanan normalleştirme etkisinin yoğunluğunu kontrol eder |
+| `model` | MODEL | zorunlu | - | - | CFG normalizasyonunun uygulanacağı yayılım modeli |
+| `strength` | FLOAT | zorunlu | 1.0 | 0.0 - 100.0 | CFG ölçeklemesine uygulanan normalizasyon etkisinin yoğunluğunu kontrol eder |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `patched_model` | MODEL | Örnekleme sürecine CFG normalleştirmesi uygulanmış olarak değiştirilmiş modeli döndürür |
+| `patched_model` | MODEL | Örnekleme sürecine CFG normalizasyonu uygulanmış değiştirilmiş modeli döndürür |
+
+---
+**Source fingerprint (SHA-256):** `af9e5f965500b959ff46f781e9329524fc0a4b94af2ce6d74116fe27b0e9005e`

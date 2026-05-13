@@ -17,3 +17,6 @@ The SkipLayerGuidanceSD3 node enhances guidance towards detailed structure by ap
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The modified model with skip layer guidance applied |
+
+---
+**Source fingerprint (SHA-256):** `97c8220abd223bd35b4d0274c2b4536ffb6be7954ccd917943905bd22f60c1a5`

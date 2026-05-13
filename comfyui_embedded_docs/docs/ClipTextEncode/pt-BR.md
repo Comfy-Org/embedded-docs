@@ -1,67 +1,70 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/pt-BR.md)
 
-`CLIP Text Encode (CLIPTextEncode)` atua como um tradutor, convertendo suas descrições de texto em um formato que a IA pode entender. Isso ajuda a IA a interpretar sua entrada e gerar a imagem desejada.
+`CLIP Text Encode (CLIPTextEncode)` atua como um tradutor, convertendo suas descrições textuais em um formato que a IA pode compreender. Isso ajuda a IA a interpretar sua entrada e gerar a imagem desejada.
 
-Pense nisso como se estivesse se comunicando com um artista que fala um idioma diferente. O modelo CLIP, treinado em vastos pares de imagem-texto, preenche essa lacuna convertendo suas descrições em "instruções" que o modelo de IA pode seguir.
+Pense nisso como se comunicar com um artista que fala um idioma diferente. O modelo CLIP, treinado em vastos pares de imagem-texto, preenche essa lacuna convertendo suas descrições em "instruções" que o modelo de IA pode seguir.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Método de Entrada | Padrão | Intervalo | Descrição |
-|-----------|-----------|--------------|---------|--------|-------------|
-| text | STRING | Entrada de Texto | Vazio | Qualquer texto | Insira a descrição (prompt) para a imagem que deseja criar. Suporta entrada de múltiplas linhas para descrições detalhadas. |
-| clip | CLIP | Seleção de Modelo | Nenhum | Modelos CLIP carregados | Selecione o modelo CLIP a ser usado ao traduzir sua descrição em instruções para o modelo de IA. |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
+| `text` | STRING | Sim | Qualquer texto | O texto a ser codificado. Suporta entrada multilinha e prompts dinâmicos. |
+| `clip` | CLIP | Sim | Modelos CLIP carregados | O modelo CLIP usado para codificar o texto. |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| CONDITIONING | CONDITIONING | As "instruções" processadas da sua descrição que orientam o modelo de IA ao gerar uma imagem. |
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `CONDITIONING` | CONDITIONING | Um condicionamento contendo o texto incorporado usado para guiar o modelo de difusão. |
 
-## Recursos do Prompt
+## Recursos de Prompt
 
-### Modelos de Embedding
+### Modelos de Incorporação (Embedding)
 
-Modelos de embedding permitem que você aplique efeitos ou estilos artísticos específicos. Os formatos suportados incluem `.safetensors`, `.pt` e `.bin`. Para usar um modelo de embedding:
+Modelos de incorporação permitem aplicar efeitos artísticos ou estilos específicos. Os formatos suportados incluem `.safetensors`, `.pt` e `.bin`. Para usar um modelo de incorporação:
 
 1. Coloque o arquivo na pasta `ComfyUI/models/embeddings`.
-2. Referencie-o em seu texto usando `embedding:nome_do_modelo`.
+2. Faça referência a ele em seu texto usando `embedding:nome_do_modelo`.
 
-Exemplo: Se você tiver um modelo chamado `EasyNegative.pt` em sua pasta `ComfyUI/models/embeddings`, então pode usá-lo assim:
+Exemplo: Se você tem um modelo chamado `EasyNegative.pt` na sua pasta `ComfyUI/models/embeddings`, então pode usá-lo assim:
 
 ```
-worst quality, embedding:EasyNegative, bad quality
+pior qualidade, embedding:EasyNegative, má qualidade
 ```
 
-**IMPORTANTE**: Ao usar modelos de embedding, verifique se o nome do arquivo corresponde e é compatível com a arquitetura do seu modelo. Por exemplo, um embedding projetado para SD1.5 não funcionará corretamente para um modelo SDXL.
+**IMPORTANTE**: Ao usar modelos de incorporação, verifique se o nome do arquivo corresponde e é compatível com a arquitetura do seu modelo. Por exemplo, uma incorporação projetada para SD1.5 não funcionará corretamente em um modelo SDXL.
 
 ### Ajuste de Peso do Prompt
 
 Você pode ajustar a importância de certas partes da sua descrição usando parênteses. Por exemplo:
 
-- `(beautiful:1.2)` aumenta o peso de "beautiful".
-- `(beautiful:0.8)` diminui o peso de "beautiful".
-- Parênteses simples `(beautiful)` aplicarão um peso padrão de 1.1.
+- `(bonito:1.2)` aumenta o peso de "bonito".
+- `(bonito:0.8)` diminui o peso de "bonito".
+- Parênteses simples `(bonito)` aplicarão um peso padrão de 1.1.
 
-Você pode usar os atalhos de teclado `ctrl + seta para cima/baixo` para ajustar pesos rapidamente. O tamanho do passo de ajuste de peso pode ser modificado nas configurações.
+Você pode usar os atalhos de teclado `ctrl + seta para cima/baixo` para ajustar rapidamente os pesos. O tamanho do passo do ajuste de peso pode ser modificado nas configurações.
 
-Se você quiser incluir parênteses literais em seu prompt sem alterar o peso, pode escapar deles usando uma barra invertida, por exemplo: `\(palavra\)`.
+Se você quiser incluir parênteses literais em seu prompt sem alterar o peso, pode escapá-los usando uma barra invertida, ex.: `\(palavra\)`.
 
-### Prompts Dinâmicos/Wildcard
+### Prompts Dinâmicos/Curinga (Wildcard)
 
 Use `{}` para criar prompts dinâmicos. Por exemplo, `{dia|noite|manhã}` selecionará aleatoriamente uma opção cada vez que o prompt for processado.
 
-Se você quiser incluir chaves literais em seu prompt sem acionar o comportamento dinâmico, pode escapar delas usando uma barra invertida, por exemplo: `\{palavra\}`.
+Se você quiser incluir chaves literais em seu prompt sem acionar o comportamento dinâmico, pode escapá-las usando uma barra invertida, ex.: `\{palavra\}`.
 
 ### Comentários em Prompts
 
 Você pode adicionar comentários que são excluídos do prompt usando:
 
 - `//` para comentar uma única linha.
-- `/* */` para comentar uma seção ou múltiplas linhas.
+- `/* */` para comentar uma seção ou várias linhas.
 
 Exemplo:
 
 ```
 // esta linha é excluída do prompt.
-uma paisagem bonita, /* esta parte é ignorada */ alta qualidade
+uma bela paisagem, /* esta parte é ignorada */ alta qualidade
 ```
+
+---
+**Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

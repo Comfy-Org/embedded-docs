@@ -1,16 +1,16 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetLatentNoiseMask/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetLatentNoiseMask/zh-TW.md)
 
 此節點旨在對一組潛在樣本應用噪聲遮罩。它透過整合指定的遮罩來修改輸入樣本，從而改變其噪聲特性。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 描述 |
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
-| `樣本` | `LATENT`    | 將要應用噪聲遮罩的潛在樣本。此參數對於決定將被修改的基礎內容至關重要。 |
-| `遮罩`    | `MASK`      | 將應用於潛在樣本的遮罩。它定義了樣本內噪聲改變的區域和強度。 |
+| `samples` | `LATENT`    | 將應用噪聲遮罩的潛在樣本。此參數對於決定將被修改的基礎內容至關重要。 |
+| `mask`    | `MASK`      | 要應用於潛在樣本的遮罩。它定義了樣本中噪聲改變的區域和強度。 |
 
-## 輸出參數
+## 輸出
 
-| 參數名稱 | 資料類型 | 描述 |
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
 | `latent`  | `LATENT`    | 已應用噪聲遮罩的修改後潛在樣本。 |

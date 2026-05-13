@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PhotoMakerLoader/tr.md)
 
-PhotoMakerLoader düğümü, mevcut model dosyalarından bir PhotoMaker modeli yükler. Belirtilen model dosyasını okur ve kimlik tabanlı görüntü oluşturma görevlerinde kullanılmak üzere PhotoMaker ID kodlayıcısını hazırlar. Bu düğüm deneysel olarak işaretlenmiştir ve test amaçlarıyla kullanılmak üzere tasarlanmıştır.
+PhotoMakerLoader düğümü, mevcut model dosyalarından bir PhotoMaker modeli yükler. Belirtilen model dosyasını okur ve kimlik tabanlı görüntü oluşturma görevlerinde kullanılmak üzere PhotoMaker kimlik kodlayıcısını hazırlar. Bu düğüm deneysel olarak işaretlenmiştir ve test amaçlı kullanım içindir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `photomaker_model_adı` | STRING | Evet | Birden fazla seçenek mevcut | Yüklenecek PhotoMaker model dosyasının adı. Mevcut seçenekler, photomaker klasöründe bulunan model dosyaları tarafından belirlenir. |
+|-----------|-----------|---------|--------|----------|
+| `photomaker_model_name` | STRING | Evet | Birden çok seçenek mevcut | Yüklenecek PhotoMaker model dosyasının adı. Mevcut seçenekler, `photomaker` klasöründe bulunan model dosyalarına göre belirlenir. |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `photomaker_model` | PHOTOMAKER | Kimlik kodlama işlemlerinde kullanıma hazır, ID kodlayıcıyı içeren yüklenmiş PhotoMaker modeli. |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `photomaker_model` | PHOTOMAKER | Yüklenmiş, kimlik kodlama işlemlerinde kullanıma hazır PhotoMaker modelini (kimlik kodlayıcıyı içerir) temsil eder. |
+
+---
+**Source fingerprint (SHA-256):** `4c55abacf8462d8de3d1f2a728d4b09ab1d1c8c6476d25cc4af5089508a721da`

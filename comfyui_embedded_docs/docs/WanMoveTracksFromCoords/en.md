@@ -1,12 +1,12 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/en.md)
 
-The WanMoveTracksFromCoords node creates a set of motion tracks from a list of coordinate points. It converts a JSON-formatted string of coordinates into a tensor format that can be used by other video processing nodes, and can optionally apply a mask to control the visibility of tracks over time.
+The WanMoveTracksFromCoords node creates motion tracks from a JSON-formatted string of coordinates. It converts the coordinate data into a tensor format that can be used by other video processing nodes, and can optionally apply a mask to control the visibility of tracks over time.
 
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `track_coords` | STRING | Yes | N/A | A JSON-formatted string containing the coordinate data for the tracks. The default value is an empty list (`"[]"`). |
+| `track_coords` | STRING | No | N/A | A JSON-formatted string containing the coordinate data for the tracks. The default value is an empty list (`"[]"`). |
 | `track_mask` | MASK | No | N/A | An optional mask. When provided, the node uses it to determine the visibility of each track per frame. |
 
 **Note:** The `track_coords` input expects a specific JSON structure. It should be a list of tracks, where each track is a list of frames, and each frame is an object with `x` and `y` coordinates. The number of frames must be consistent across all tracks.
@@ -17,3 +17,6 @@ The WanMoveTracksFromCoords node creates a set of motion tracks from a list of c
 |-------------|-----------|-------------|
 | `tracks` | TRACKS | The generated track data, containing the path coordinates and visibility information for each track. |
 | `track_length` | INT | The total number of frames in the generated tracks. |
+
+---
+**Source fingerprint (SHA-256):** `106b05b3bdb5ede6e31216b9f3c14160630df0eee1f4e8a645c2b6cf9fbecf8c`

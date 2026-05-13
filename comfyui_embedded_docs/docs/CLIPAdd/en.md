@@ -14,3 +14,6 @@ The CLIPAdd node combines two CLIP models by merging their key patches. It creat
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `CLIP` | CLIP | Returns a merged CLIP model combining features from both input models |
+
+---
+**Source fingerprint (SHA-256):** `935d450d25d90dc623e3f2b39b251359a9066c9e1fdd2a70384982fb26a21864`

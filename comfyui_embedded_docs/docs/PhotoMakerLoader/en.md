@@ -6,10 +6,13 @@ The PhotoMakerLoader node loads a PhotoMaker model from the available model file
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `photomaker_model_name` | STRING | Yes | Multiple options available | The name of the PhotoMaker model file to load. The available options are determined by the model files present in the photomaker folder. |
+| `photomaker_model_name` | STRING | Yes | Multiple options available | The name of the PhotoMaker model file to load. The available options are determined by the model files present in the `photomaker` folder. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `photomaker_model` | PHOTOMAKER | The loaded PhotoMaker model containing the ID encoder, ready for use in identity encoding operations. |
+
+---
+**Source fingerprint (SHA-256):** `4c55abacf8462d8de3d1f2a728d4b09ab1d1c8c6476d25cc4af5089508a721da`

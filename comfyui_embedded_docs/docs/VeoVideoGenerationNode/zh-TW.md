@@ -1,25 +1,30 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VeoVideoGenerationNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VeoVideoGenerationNode/zh-TW.md)
 
-使用 Google 的 Veo API 從文字提示生成影片。此節點可以根據文字描述和可選的圖片輸入來創建影片，並可控制長寬比、持續時間等參數。
+## 概述
 
-## 輸入參數
+使用 Google 的 Veo 2 API 從文字提示生成影片。此節點可以根據文字描述和可選的圖片輸入來建立影片，並可控制長寬比、時長等參數。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `提示詞` | STRING | 是 | - | 影片的文字描述 (預設值: 空) |
-| `長寬比` | COMBO | 是 | "16:9"<br>"9:16" | 輸出影片的長寬比 (預設值: "16:9") |
-| `負向提示詞` | STRING | 否 | - | 負向文字提示，用於引導影片中應避免的內容 (預設值: 空) |
-| `持續秒數` | INT | 否 | 5-8 | 輸出影片的持續時間（單位：秒）(預設值: 5) |
-| `增強提示詞` | BOOLEAN | 否 | - | 是否使用 AI 輔助增強提示 (預設值: True) |
-| `生成人物` | COMBO | 否 | "ALLOW"<br>"BLOCK" | 是否允許在影片中生成人物 (預設值: "ALLOW") |
-| `種子` | INT | 否 | 0-4294967295 | 影片生成的種子值（0 表示隨機）(預設值: 0) |
-| `影像` | IMAGE | 否 | - | 可選的參考圖片，用於引導影片生成 |
-| `model` | COMBO | 否 | "veo-2.0-generate-001" | 用於影片生成的 Veo 2 模型 (預設值: "veo-2.0-generate-001") |
+| `prompt` | STRING | 是 | - | 影片的文字描述（預設：空） |
+| `aspect_ratio` | COMBO | 是 | "16:9"<br>"9:16" | 輸出影片的長寬比（預設："16:9"） |
+| `negative_prompt` | STRING | 否 | - | 負面文字提示，用於引導影片中應避免的內容（預設：空） |
+| `duration_seconds` | INT | 否 | 5-8 | 輸出影片的時長（秒）（預設：5） |
+| `enhance_prompt` | BOOLEAN | 否 | - | 是否使用 AI 輔助增強提示（預設：True）。這是一個進階參數。 |
+| `person_generation` | COMBO | 否 | "ALLOW"<br>"BLOCK" | 是否允許在影片中生成人物（預設："ALLOW"）。這是一個進階參數。 |
+| `seed` | INT | 否 | 0-4294967295 | 影片生成的隨機種子（0 表示隨機）（預設：0）。這是一個進階參數。 |
+| `image` | IMAGE | 否 | - | 可選的參考圖片，用於引導影片生成 |
+| `model` | COMBO | 否 | "veo-2.0-generate-001" | 用於影片生成的 Veo 2 模型（預設："veo-2.0-generate-001"） |
 
-**注意：** `generate_audio` 參數僅適用於 Veo 3.0 模型，節點會根據所選模型自動處理此參數。
+**注意：** `generate_audio` 參數僅適用於 Veo 3.0 模型，並由節點根據所選模型自動處理。使用 Veo 3.0 模型時，`enhance_prompt` 參數將強制設為 True。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 生成的影片檔案 |
+
+---
+**Source fingerprint (SHA-256):** `1a8b8ffe82fce32566815248f4a2434a1b865b5e5651935ccb3b92c7e38adee9`

@@ -1,18 +1,18 @@
-Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/controlnet`,
-y también leerá los modelos de las rutas adicionales que hayas configurado en el archivo extra_model_paths.yaml.
-A veces, es posible que necesites **refrescar la interfaz de ComfyUI** para que pueda leer los archivos de modelo en la carpeta correspondiente.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DiffControlNetLoader/es.md)
 
-El nodo DiffControlNetLoader está diseñado para cargar redes de control diferenciales, que son modelos especializados que pueden modificar el comportamiento de otro modelo basado en especificaciones de redes de control. Este nodo permite el ajuste dinámico de comportamientos de modelos aplicando redes de control diferenciales, facilitando la creación de salidas de modelos personalizadas.
+Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/controlnet`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo de la carpeta correspondiente.
+
+El nodo DiffControlNetLoader está diseñado para cargar redes de control diferenciales, que son modelos especializados capaces de modificar el comportamiento de otro modelo según especificaciones de redes de control. Este nodo permite el ajuste dinámico de comportamientos del modelo mediante la aplicación de redes de control diferenciales, facilitando la creación de salidas de modelo personalizadas.
 
 ## Entradas
 
-| Campo               | Comfy dtype       | Descripción                                                                                 |
+| Campo               | Tipo Comfy        | Descripción                                                                                 |
 |---------------------|-------------------|---------------------------------------------------------------------------------------------|
-| `modelo`             | `MODEL`           | El modelo base al que se aplicará la red de control diferencial, permitiendo la personalización del comportamiento del modelo. |
+| `model`             | `MODEL`           | El modelo base al que se aplicará la red de control diferencial, permitiendo la personalización del comportamiento del modelo. |
 | `control_net_name`  | `COMBO[STRING]`    | Identifica la red de control diferencial específica que se cargará y aplicará al modelo base para modificar su comportamiento. |
 
 ## Salidas
 
-| Campo          | Comfy dtype   | Descripción                                                                   |
+| Campo          | Tipo Comfy    | Descripción                                                                   |
 |----------------|---------------|-------------------------------------------------------------------------------|
-| `control_net`  | `CONTROL_NET` | Una red de control diferencial que ha sido cargada y está lista para ser aplicada a un modelo base para la modificación de su comportamiento. |
+| `control_net`  | `CONTROL_NET` | Una red de control diferencial que ha sido cargada y está lista para aplicarse a un modelo base para la modificación de su comportamiento. |

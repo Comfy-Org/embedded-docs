@@ -1,15 +1,17 @@
-このノードは、2つの画像を指定した方向（上、下、左、右）に結合することができ、サイズの調整や画像間の間隔設定をサポートしています。
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageStitch/ja.md)
+
+このノードは、指定された方向（上、下、左、右）に2つの画像を結合し、サイズの一致や画像間のスペース設定をサポートします。
 
 ## 入力
 
-| パラメータ名 | データ型 | 入力タイプ | デフォルト値 | 範囲 | 説明 |
-|------------|----------|------------|-------------|------|------|
-| `image1` | IMAGE | 必須 | - | - | 結合する1枚目の画像 |
-| `image2` | IMAGE | 任意 | None | - | 結合する2枚目の画像（指定しない場合は1枚目の画像のみを返す） |
-| `direction` | STRING | 必須 | right | right/down/left/up | 2枚目の画像を結合する方向：right（右）、down（下）、left（左）、up（上） |
-| `match_image_size` | BOOLEAN | 必須 | True | True/False | 2枚目の画像のサイズを1枚目の画像のサイズに合わせるかどうか |
-| `spacing_width` | INT | 必須 | 0 | 0-1024 | 画像間の間隔の幅（偶数である必要があります） |
-| `spacing_color` | STRING | 必須 | white | white/black/red/green/blue | 結合された画像間の間隔の色 |
+| パラメータ名 | データ型 | 入力タイプ | デフォルト | 範囲 | 説明 |
+|------------|----------|------------|-----------|------|------|
+| `image1` | IMAGE | 必須 | - | - | 結合される最初の画像 |
+| `image2` | IMAGE | オプション | None | - | 結合される2番目の画像。指定しない場合は最初の画像のみを返します |
+| `direction` | STRING | 必須 | right | right/down/left/up | 2番目の画像を結合する方向：右、下、左、または上 |
+| `match_image_size` | BOOLEAN | 必須 | True | True/False | 2番目の画像を最初の画像の寸法に合わせてリサイズするかどうか |
+| `spacing_width` | INT | 必須 | 0 | 0-1024 | 画像間のスペースの幅。偶数である必要があります |
+| `spacing_color` | STRING | 必須 | white | white/black/red/green/blue | 結合された画像間のスペースの色 |
 
 > `spacing_color`について、"white/black"以外の色を使用する場合、`match_image_size`が`false`に設定されていると、パディング領域は黒で塗りつぶされます
 
@@ -27,25 +29,26 @@
 - image2: 400x250
 - image3: 300x300
 
-![workflow](./asset/workflow.webp)
+![ワークフロー](./asset/workflow.webp)
 
-**1つ目のImage Stitchノード**
+**最初の画像結合ノード**
 
-- `match_image_size`: false、画像は元のサイズのまま結合されます
+- `match_image_size`: false、画像は元のサイズで結合されます
 - `direction`: up、`image2`は`image1`の上に配置されます
 - `spacing_width`: 20
 - `spacing_color`: black
 
 出力画像1：
 
-![output1](./asset/output-1.webp)
+![出力1](./asset/output-1.webp)
 
-**2つ目のImage Stitchノード**
+**2番目の画像結合ノード**
 
-- `match_image_size`: true、2枚目の画像は1枚目の画像の高さまたは幅に合わせてサイズ調整されます
+- `match_image_size`: true、2番目の画像は最初の画像の高さまたは幅に合わせて拡大縮小されます
 - `direction`: right、`image3`は右側に表示されます
 - `spacing_width`: 20
 - `spacing_color`: white
 
 出力画像2：
-![output2](./asset/output-2.webp)
+
+![出力2](./asset/output-2.webp)

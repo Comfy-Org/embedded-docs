@@ -18,3 +18,6 @@ The SamplerCustomAdvanced node performs advanced latent space sampling using cus
 |-------------|-----------|-------------|
 | `output` | LATENT | The final sampled latent representation after completing the sampling process |
 | `denoised_output` | LATENT | A denoised version of the output when available, otherwise returns the same as the output |
+
+---
+**Source fingerprint (SHA-256):** `bf711ecc0684ad04babe5c63a246195f358204d203e836587a90feff742929a3`

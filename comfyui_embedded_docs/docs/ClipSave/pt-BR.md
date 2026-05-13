@@ -1,33 +1,38 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/pt-BR.md)
 
-O nó `CLIPSave` é projetado para salvar modelos de codificador de texto CLIP no formato SafeTensors. Este nó faz parte de fluxos de trabalho avançados de fusão de modelos e é tipicamente usado em conjunto com nós como `CLIPMergeSimple` e `CLIPMergeAdd`. Os arquivos salvos utilizam o formato SafeTensors para garantir segurança e compatibilidade.
+O nó `CLIPSave` salva um modelo de codificador de texto CLIP no disco no formato SafeTensors. Ele é projetado para fluxos de trabalho avançados de mesclagem de modelos e separa automaticamente o modelo CLIP em suas partes componentes (como CLIP-L, CLIP-G ou T5XXL) com base na estrutura interna do modelo, salvando cada componente como um arquivo separado.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Valor Padrão | Descrição |
-|-----------|-----------|----------|---------------|-------------|
-| `clip` | CLIP | Sim | - | O modelo CLIP a ser salvo |
-| `filename_prefix` | STRING | Sim | "clip/ComfyUI" | O caminho prefixo para o arquivo salvo |
-| `prompt` | PROMPT | Oculto | - | Informações do prompt do fluxo de trabalho (para metadados) |
-| `extra_pnginfo` | EXTRA_PNGINFO | Oculto | - | Informações PNG adicionais (para metadados) |
+| Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
+|-----------|---------------|-----------------|--------|-------|-----------|
+| `clip` | CLIP | Obrigatório | - | - | O modelo CLIP a ser salvo. |
+| `filename_prefix` | STRING | Obrigatório | `clip/ComfyUI` | - | O caminho do prefixo e nome do arquivo para o(s) arquivo(s) salvo(s). O nó anexará um sufixo de componente (por exemplo, `_clip_l`, `_clip_g`) e um contador para criar nomes de arquivo únicos. |
+| `prompt` | PROMPT | Oculta | - | - | As informações do prompt do fluxo de trabalho, salvas como metadados no arquivo de saída. |
+| `extra_pnginfo` | EXTRA_PNGINFO | Oculta | - | - | Metadados adicionais, salvos como pares chave-valor no arquivo de saída. |
 
 ## Saídas
 
-Este nó não possui tipos de saída definidos. Ele salva os arquivos processados na pasta `ComfyUI/output/`.
+Este nó não possui conexões de saída. Ele salva os arquivos processados diretamente no diretório `ComfyUI/output/`.
 
-### Estratégia de Salvamento Multi-arquivo
+### Detalhes do Arquivo Salvo
 
-O nó salva diferentes componentes com base no tipo de modelo CLIP:
+O nó analisa o dicionário de estado do modelo CLIP e salva arquivos SafeTensors separados para cada componente detectado. O componente é identificado pelo prefixo de suas chaves de parâmetro. Os seguintes prefixos são verificados:
 
-| Tipo de Prefixo | Sufixo do Arquivo | Descrição |
-|------------|-------------|-------------|
-| `clip_l.` | `_clip_l` | Codificador de texto CLIP-L |
-| `clip_g.` | `_clip_g` | Codificador de texto CLIP-G |
-| Prefixo vazio | Sem sufixo | Outros componentes CLIP |
+- `clip_l.` (codificador de texto CLIP-L)
+- `clip_g.` (codificador de texto CLIP-G)
+- `clip_h.` (codificador de texto CLIP-H)
+- `t5xxl.` (codificador de texto T5-XXL)
+- `pile_t5xl.` (codificador de texto Pile-T5-XL)
+- `mt5xl.` (codificador de texto mT5-XL)
+- `umt5xxl.` (codificador de texto UMT5-XXL)
+- `t5base.` (codificador de texto T5-Base)
+- `gemma2_2b.` (codificador de texto Gemma 2 2B)
+- `llama.` (codificador de texto LLaMA)
+- `hydit_clip.` (codificador de texto Hydit CLIP)
+- Prefixo vazio (outros componentes CLIP)
 
-## Notas de Uso
+Para cada componente detectado, o nó cria um arquivo com o nome `{filename_prefix}_{counter:05}_.safetensors`, onde o prefixo do componente é anexado ao prefixo do nome do arquivo (por exemplo, `clip/ComfyUI_clip_l_00001_.safetensors`). O prefixo `transformer.` é removido das chaves de parâmetro durante o salvamento.
 
-1. **Localização do Arquivo**: Todos os arquivos são salvos no diretório `ComfyUI/output/`
-2. **Formato do Arquivo**: Os modelos são salvos no formato SafeTensors por segurança
-3. **Metadados**: Inclui informações do fluxo de trabalho e metadados PNG, se disponíveis
-4. **Convenção de Nomenclatura**: Utiliza o prefixo especificado mais os sufixos apropriados com base no tipo de modelo
+---
+**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

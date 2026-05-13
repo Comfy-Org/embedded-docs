@@ -32,3 +32,6 @@ The Ideogram V3 node generates images using the Ideogram V3 model. It supports b
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | IMAGE | The generated or edited image(s) |
+
+---
+**Source fingerprint (SHA-256):** `0d0058cc8483c453100d8d9dfcb9a31ae5e686f38ced77ed7e472cd083c3464b`

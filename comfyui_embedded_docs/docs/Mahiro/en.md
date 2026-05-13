@@ -13,3 +13,6 @@ The Mahiro node modifies the guidance function to focus more on the direction of
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `patched_model` | MODEL | The modified model with the Mahiro guidance function applied |
+
+---
+**Source fingerprint (SHA-256):** `8b4a73cfa488f97d87e5a18d5ab30765055b5d5a66c6c2f1a5f016eed2af0300`

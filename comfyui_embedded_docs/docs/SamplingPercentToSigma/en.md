@@ -15,3 +15,6 @@ The SamplingPercentToSigma node converts a sampling percentage value to a corres
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sigma_value` | FLOAT | The converted sigma value corresponding to the input sampling percentage |
+
+---
+**Source fingerprint (SHA-256):** `88ecea0528dfeff75248a8dfee8381e1f73d1a2d9ee3e7f8e37fef0f2b2499ec`

@@ -15,3 +15,6 @@ The Merge Image Lists node combines multiple separate lists of images into a sin
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `images` | IMAGE | The single, merged list containing all images from every connected input list. |
+
+---
+**Source fingerprint (SHA-256):** `8fc53091b817a5036aae022aa841ba11fae0ed3242a969f5ae9072f48e061366`

@@ -1,18 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGGuider/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGGuider/tr.md)
 
-CFGGuider düğümü, görüntü oluşturma sürecindeki örnekleme işlemini kontrol etmek için bir kılavuzluk sistemi oluşturur. Bir modeli, olumlu ve olumsuz koşullandırma girdileriyle alır ve ardından, istenmeyen öğelerden kaçınırken oluşturma işlemini istenen içeriğe yönlendirmek için sınıflandırıcısız bir kılavuzluk ölçeği uygular. Bu düğüm, görüntü oluşturma yönünü kontrol etmek için örnekleme düğümleri tarafından kullanılabilecek bir kılavuz nesnesi çıktılar.
+CFGGuider düğümü, görüntü oluşturma sürecinde örnekleme işlemini kontrol etmek için bir yönlendirme sistemi oluşturur. Bir model ile pozitif ve negatif koşullandırma girdilerini alır, ardından sınıflandırıcısız bir yönlendirme ölçeği uygulayarak oluşturmayı istenen içeriğe yönlendirirken istenmeyen öğelerden kaçınır. Bu düğüm, örnekleme düğümleri tarafından görüntü oluşturma yönünü kontrol etmek için kullanılabilen bir yönlendirici nesnesi çıktısı verir.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | Gerekli | - | - | Kılavuzluk için kullanılacak model |
-| `pozitif` | CONDITIONING | Gerekli | - | - | Oluşturma işlemini istenen içeriğe yönlendiren olumlu koşullandırma |
-| `negatif` | CONDITIONING | Gerekli | - | - | Oluşturma işlemini istenmeyen içerikten uzaklaştıran olumsuz koşullandırma |
-| `cfg` | FLOAT | Gerekli | 8.0 | 0.0 - 100.0 | Koşullandırmanın oluşturma işlemini ne kadar güçlü etkilediğini kontrol eden sınıflandırıcısız kılavuzluk ölçeği |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-----------|
+| `model` | MODEL | Evet | - | Yönlendirme için kullanılacak model |
+| `positive` | CONDITIONING | Evet | - | Oluşturmayı istenen içeriğe yönlendiren pozitif koşullandırma |
+| `negative` | CONDITIONING | Evet | - | Oluşturmayı istenmeyen içerikten uzaklaştıran negatif koşullandırma |
+| `cfg` | FLOAT | Evet | 0,0 ila 100,0 | Koşullandırmanın oluşturma üzerindeki etkisini kontrol eden sınıflandırıcısız yönlendirme ölçeği (varsayılan: 8,0) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `GUIDER` | GUIDER | Oluşturma sürecini kontrol etmek için örnekleme düğümlerine aktarılabilen bir kılavuz nesnesi |
+|-----------|-----------|-----------|
+| `GUIDER` | GUIDER | Oluşturma sürecini kontrol etmek için örnekleme düğümlerine aktarılabilen bir yönlendirici nesnesi |
+
+---
+**Source fingerprint (SHA-256):** `80c1f733dc26717c5762655404b9c36b53bb9059ceb6a8531ef1a853e2fe2380`

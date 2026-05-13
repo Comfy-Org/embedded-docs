@@ -1,6 +1,6 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SoniloTextToMusic/pt-BR.md)
 
-Aqui está a tradução da documentação para português brasileiro, seguindo todas as regras estabelecidas:
+Aqui está a tradução da documentação para português brasileiro, seguindo as regras estabelecidas:
 
 O nó Sonilo Text to Music gera música a partir de uma descrição textual usando o modelo de IA da Sonilo. Você fornece um prompt descrevendo a música desejada, e o nó envia uma solicitação ao serviço Sonilo para criar um arquivo de áudio. Você pode especificar uma duração alvo ou deixar o modelo inferi-la a partir do seu prompt.
 
@@ -19,3 +19,6 @@ O nó Sonilo Text to Music gera música a partir de uma descrição textual usan
 | Nome da Saída | Tipo de Dado | Descrição |
 |---------------|--------------|-----------|
 | `audio` | AUDIO | A música gerada como um arquivo de áudio. |
+
+---
+**Source fingerprint (SHA-256):** `aac2762d9310179279ed7dcc9766f38342400902de2f8791b78d8092a96b86b4`

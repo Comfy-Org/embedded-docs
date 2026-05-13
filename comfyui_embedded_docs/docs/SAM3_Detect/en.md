@@ -35,3 +35,6 @@ The SAM3 Detect node performs open-vocabulary detection and segmentation using t
 |-------------|-----------|-------------|
 | `masks` | MASK | Segmentation masks. When `individual_masks` is False (default), returns a single combined mask per frame. When True, returns individual masks for each detected object |
 | `bboxes` | BOUNDING_BOX | Detected bounding boxes with coordinates and confidence scores. Each box includes `x`, `y`, `width`, `height`, and `score` values |
+
+---
+**Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

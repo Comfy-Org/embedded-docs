@@ -7,7 +7,7 @@ Generates images synchronously via OpenAI's DALL·E 3 endpoint. This node takes 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | - | Text prompt for DALL·E (default: "") |
-| `seed` | INT | No | 0 to 2147483647 | not implemented yet in backend (default: 0) |
+| `seed` | INT | No | 0 to 2147483647 | Not implemented yet in backend (default: 0) |
 | `quality` | COMBO | No | "standard"<br>"hd" | Image quality (default: "standard") |
 | `style` | COMBO | No | "natural"<br>"vivid" | Vivid causes the model to lean towards generating hyper-real and dramatic images. Natural causes the model to produce more natural, less hyper-real looking images. (default: "natural") |
 | `size` | COMBO | No | "1024x1024"<br>"1024x1792"<br>"1792x1024" | Image size (default: "1024x1024") |
@@ -17,3 +17,6 @@ Generates images synchronously via OpenAI's DALL·E 3 endpoint. This node takes 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `IMAGE` | IMAGE | The generated image from DALL·E 3 |
+
+---
+**Source fingerprint (SHA-256):** `e36bfe2a6ecec050906f220de3a3edf06eff0bfd6e21f08ce90579172a07d7eb`

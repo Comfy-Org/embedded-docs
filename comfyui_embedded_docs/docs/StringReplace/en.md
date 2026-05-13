@@ -15,3 +15,6 @@ The StringReplace node performs text replacement operations on input strings. It
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | STRING | The modified string with all occurrences of the find text replaced by the replace text |
+
+---
+**Source fingerprint (SHA-256):** `72159dba72261efe9df283c1ea3f789651eade923efdaeb108bacc1d0da663f8`

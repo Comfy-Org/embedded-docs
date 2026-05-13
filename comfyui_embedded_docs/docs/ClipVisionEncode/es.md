@@ -1,24 +1,26 @@
-El nodo `CLIP Vision Encode` es un nodo de codificación de imágenes en ComfyUI, utilizado para convertir imágenes de entrada en vectores de características visuales mediante el modelo CLIP Vision. Este nodo es un puente importante que conecta la comprensión de imágenes y textos, y se utiliza ampliamente en varios flujos de trabajo de generación y procesamiento de imágenes con IA.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionEncode/es.md)
+
+El nodo `CLIP Vision Encode` es un nodo de codificación de imágenes en ComfyUI, utilizado para convertir imágenes de entrada en vectores de características visuales a través del modelo CLIP Vision. Este nodo constituye un puente importante entre la comprensión de imágenes y texto, y se utiliza ampliamente en diversos flujos de trabajo de generación y procesamiento de imágenes con IA.
 
 **Funcionalidad del nodo**
 
 - **Extracción de características de imagen**: Convierte imágenes de entrada en vectores de características de alta dimensión
-- **Puente multimodal**: Proporciona una base para el procesamiento conjunto de imágenes y textos
+- **Puente multimodal**: Proporciona una base para el procesamiento conjunto de imágenes y texto
 - **Generación condicional**: Proporciona condiciones visuales para la generación condicional basada en imágenes
 
 ## Entradas
 
-| Nombre del parámetro | Tipo de dato   | Descripción                                                      |
-| -------------------- | -------------  | --------------------------------------------------------------- |
-| `clip_vision`        | CLIP_VISION    | Modelo CLIP vision, normalmente cargado mediante el nodo CLIPVisionLoader |
-| `image`              | IMAGE          | La imagen de entrada a codificar                                 |
-| `crop`               | Dropdown       | Método de recorte de imagen, opciones: center (recorte centrado), none (sin recorte) |
+| Nombre del parámetro | Tipo de dato  | Descripción                                                       |
+| -------------------- | ------------- | ----------------------------------------------------------------- |
+| `clip_vision`        | CLIP_VISION   | Modelo CLIP vision, generalmente cargado mediante el nodo CLIPVisionLoader |
+| `image`              | IMAGE         | La imagen de entrada que se va a codificar                        |
+| `crop`               | Desplegable   | Método de recorte de imagen, opciones: center (recorte centrado), none (sin recorte) |
 
 ## Salidas
 
-| Nombre de salida     | Tipo de dato         | Descripción                |
-| -------------------- | ------------------- | -------------------------- |
-| SALIDA_CLIP_VISION   | CLIP_VISION_OUTPUT  | Características visuales codificadas    |
+| Nombre de salida       | Tipo de dato         | Descripción                     |
+| ---------------------- | -------------------- | ------------------------------- |
+| CLIP_VISION_OUTPUT     | CLIP_VISION_OUTPUT   | Características visuales codificadas |
 
 Este objeto de salida contiene:
 

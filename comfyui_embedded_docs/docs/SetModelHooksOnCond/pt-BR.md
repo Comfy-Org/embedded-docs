@@ -1,16 +1,21 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/pt-BR.md)
 
-Este nó anexa ganchos personalizados aos dados de condicionamento, permitindo que você intercepte e modifique o processo de condicionamento durante a execução do modelo. Ele recebe um conjunto de ganchos e os aplica aos dados de condicionamento fornecidos, possibilitando uma personalização avançada do fluxo de trabalho de geração de texto para imagem. O condicionamento modificado com os ganchos anexados é então retornado para uso nas etapas subsequentes de processamento.
+Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/en.md)
+
+Este nó anexa hooks personalizados a dados de condicionamento, permitindo que você intercepte e modifique o processo de condicionamento durante a execução do modelo. Ele recebe um conjunto de hooks e os aplica aos dados de condicionamento fornecidos, possibilitando a personalização avançada do fluxo de trabalho de geração de texto para imagem. O condicionamento modificado com os hooks anexados é então retornado para uso nas etapas de processamento subsequentes.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `conditioning` | CONDITIONING | Sim | - | Os dados de condicionamento aos quais os ganchos serão anexados |
-| `hooks` | HOOKS | Sim | - | As definições dos ganchos que serão aplicadas aos dados de condicionamento |
+| Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
+|-----------|--------------|-------------|-----------|-----------|
+| `conditioning` | CONDITIONING | Sim | - | Os dados de condicionamento aos quais os hooks serão anexados |
+| `hooks` | HOOKS | Sim | - | As definições de hook que serão aplicadas aos dados de condicionamento |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
-| `conditioning` | CONDITIONING | Os dados de condicionamento modificados com os ganchos anexados |
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
+| `conditioning` | CONDITIONING | Os dados de condicionamento modificados com os hooks anexados |
+
+---
+**Source fingerprint (SHA-256):** `a6e63a3a4d94d1b66a82d449af5ae001e1fc4a04f0f81d9fb5c4f8c13e5bdf8b`

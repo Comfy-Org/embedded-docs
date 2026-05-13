@@ -1,10 +1,10 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/tr.md)
 
-ModelMergeSD1 düğümü, iki Stable Diffusion 1.x modelini farklı model bileşenlerinin etkisini ayarlayarak birleştirmenize olanak tanır. Zaman gömme, etiket gömme ve tüm giriş, orta ve çıkış blokları üzerinde ayrı ayrı kontrol sağlayarak belirli kullanım durumları için hassas ayarlanmış model birleştirme imkanı sunar.
+ModelMergeSD1 düğümü, iki Stable Diffusion 1.x modelini, farklı model bileşenlerinin etkisini ayarlayarak birleştirmenize olanak tanır. Zaman gömme, etiket gömme ve tüm giriş, orta ve çıkış blokları üzerinde ayrı ayrı kontrol sağlayarak, belirli kullanım durumları için ince ayarlanmış model birleştirmeye imkan tanır.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
 | `model1` | MODEL | Evet | - | Birleştirilecek ilk model |
 | `model2` | MODEL | Evet | - | Birleştirilecek ikinci model |
@@ -43,4 +43,7 @@ ModelMergeSD1 düğümü, iki Stable Diffusion 1.x modelini farklı model bileş
 
 | Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `MODEL` | MODEL | Her iki giriş modelinden özellikleri birleştiren harmanlanmış model |
+| `MODEL` | MODEL | Her iki giriş modelinin özelliklerini birleştiren birleştirilmiş model |
+
+---
+**Source fingerprint (SHA-256):** `512c62fb5a4e1b7f90f5ad5b80de5818659a20c8f4b024cfa33ca13b823efad8`

@@ -4,13 +4,16 @@ El nodo SamplerEulerAncestral crea un muestreador Euler Ancestral para generar i
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `eta` | FLOAT | Sí | 0.0 - 100.0 | Controla el tamaño del paso y la estocasticidad del proceso de muestreo (valor por defecto: 1.0) |
-| `s_ruido` | FLOAT | Sí | 0.0 - 100.0 | Controla la cantidad de ruido añadido durante el muestreo (valor por defecto: 1.0) |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `eta` | FLOAT | No | 0.0 - 100.0 | Controla el tamaño del paso y la estocasticidad del proceso de muestreo (predeterminado: 1.0). Este es un parámetro avanzado. |
+| `s_noise` | FLOAT | No | 0.0 - 100.0 | Controla la cantidad de ruido añadido durante el muestreo (predeterminado: 1.0). Este es un parámetro avanzado. |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `sampler` | SAMPLER | Devuelve un muestreador Euler Ancestral configurado que puede utilizarse en el pipeline de muestreo |
+|------------------|--------------|-------------|
+| `sampler` | SAMPLER | Devuelve un muestreador Euler Ancestral configurado que puede utilizarse en el proceso de muestreo. |
+
+---
+**Source fingerprint (SHA-256):** `4d167de55f003383ccbb4a53daa14496bd931589781d56b62bf282a811669670`

@@ -1,16 +1,21 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentAudio/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyLatentAudio/tr.md)
 
-EmptyLatentAudio düğümü, ses işleme için boş latent tensörler oluşturur. Belirtilen süre ve batch boyutunda boş bir ses latent temsili üretir ve bu, ses üretimi veya işleme iş akışları için girdi olarak kullanılabilir. Düğüm, ses süresine ve örnekleme hızına dayalı olarak uygun latent boyutlarını hesaplar.
+# EmptyLatentAudio Düğümü
 
-## Girdiler
+EmptyLatentAudio düğümü, ses işleme için boş bir latent tensör oluşturur. Belirtilen süre ve grup boyutuna sahip boş bir ses latent temsili üretir; bu temsil, ses üretimi veya işleme iş akışları için başlangıç noktası olarak kullanılabilir. Düğüm, ses süresi ve örnekleme hızına bağlı olarak uygun latent boyutlarını otomatik olarak hesaplar.
+
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `saniye` | FLOAT | Evet | 1.0 - 1000.0 | Saniye cinsinden ses süresi (varsayılan: 47.6) |
-| `toplu_boyut` | INT | Evet | 1 - 4096 | Batch içindeki latent görüntülerin sayısı (varsayılan: 1) |
+|-----------|-----------|---------|--------|----------|
+| `seconds` | FLOAT | Evet | 1.0 - 1000.0 | Sesin saniye cinsinden süresi (varsayılan: 47.6) |
+| `batch_size` | INT | Evet | 1 - 4096 | Gruptaki latent görüntü sayısı (varsayılan: 1) |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `LATENT` | LATENT | Belirtilen süre ve batch boyutunda ses işleme için boş bir latent tensör döndürür |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `LATENT` | LATENT | Belirtilen süre ve grup boyutuna sahip, ses işleme için boş bir latent tensör döndürür. Tensör, [batch_size, 64, length] şeklindedir; burada length, ses süresi ve örnekleme hızından hesaplanır. |
+
+---
+**Source fingerprint (SHA-256):** `004f730131b179fe5ac072afe81b2e01a3937fceca5a260b4ae66f92774e96d9`

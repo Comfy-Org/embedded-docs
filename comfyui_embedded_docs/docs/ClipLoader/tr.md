@@ -1,74 +1,38 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/tr.md)
 
-Bu düğüm temel olarak CLIP metin kodlayıcı modellerini bağımsız olarak yüklemek için kullanılır.
-Model dosyaları şu yollarda tespit edilebilir:
-
-- "ComfyUI/models/text_encoders/"
-- "ComfyUI/models/clip/"
-
-> ComfyUI başladıktan sonra bir model kaydederseniz, en son model dosyası yol listesini almak için ComfyUI önyüzünü yenilemeniz gerekecektir
-
-Desteklenen model formatları:
-
-- `.ckpt`
-- `.pt`
-- `.pt2`
-- `.bin`
-- `.pth`
-- `.safetensors`
-- `.pkl`
-- `.sft`
-
-En son model dosyası yükleme hakkında daha fazla ayrıntı için lütfen [folder_paths](https://github.com/comfyanonymous/ComfyUI/blob/master/folder_paths.py) sayfasına bakın
+CLIPLoader düğümü, bir dosyadan metin kodlayıcı modelini (CLIP, T5 veya benzeri) yükleyerek, metin istemlerini sayısal temsillere dönüştürmesi gereken diğer düğümlerde kullanıma sunar. Her biri belirli bir kodlayıcı türü gerektiren çok çeşitli model mimarilerini destekler.
 
 ## Girişler
 
-| Parametre     | Veri Tipi     | Açıklama |
-|---------------|---------------|-------------|
-| `clip_adı`   | COMBO[STRING] | Yüklenecek CLIP modelinin adını belirtir. Bu ad, model dosyasını önceden tanımlanmış bir dizin yapısı içinde bulmak için kullanılır. |
-| `tür`        | COMBO[STRING] | Yüklenecek CLIP modelinin türünü belirler. ComfyUI daha fazla modeli destekledikçe, buraya yeni türler eklenecektir. Ayrıntılar için lütfen [node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py) dosyasındaki `CLIPLoader` sınıf tanımına bakın. |
-| `cihaz`      | COMBO[STRING] | CLIP modelini yüklemek için kullanılacak cihazı seçin. `default` modeli GPU üzerinde çalıştırır, `CPU` seçmek ise modelin CPU üzerinde yüklenmesini zorlar. |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `clip_name` | STRING | Evet | `text_encoders` klasöründe bulunan dosyaların listesi | Yüklenecek metin kodlayıcı modelinin dosya adı. Bu dosya, `ComfyUI/models/text_encoders/` veya `ComfyUI/models/clip/` dizininde bulunmalıdır. |
+| `type` | STRING | Evet | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | Yüklenen modelin mimari türü. Bu, hangi belirli kodlayıcı varyantının kullanılacağını belirler. Varsayılan değer `"stable_diffusion"` şeklindedir. |
+| `device` | STRING | Hayır | `"default"`<br>`"cpu"` | Modelin yükleneceği aygıt. `"default"`, varsa GPU'yu kullanırken, `"cpu"` CPU'ya yüklemeyi zorunlu kılar. Bu gelişmiş bir seçenektir (varsayılan: `"default"`). |
 
-### Cihaz Seçenekleri Açıklaması
+### Desteklenen Tür-Kodlayıcı Eşleştirmeleri
 
-**"default" ne zaman seçilmeli:**
+`type` parametresi, belirli bir model mimarisi için doğru kodlayıcıyı seçer. Aşağıda yaygın eşleştirmeler yer almaktadır:
 
-- Yeterli GPU belleğiniz varsa
-- En iyi performansı istiyorsanız
-- Sistemin bellek kullanımını otomatik olarak optimize etmesine izin vermek istiyorsanız
-
-**"cpu" ne zaman seçilmeli:**
-
-- Yetersiz GPU belleği durumunda
-- GPU belleğini diğer modeller (UNet gibi) için ayırmak gerektiğinde
-- Düşük VRAM ortamında çalışırken
-- Hata ayıklama veya özel amaçlı ihtiyaçlar için
-
-**Performans Etkisi**
-
-CPU üzerinde çalıştırmak GPU'dan çok daha yavaş olacaktır, ancak diğer daha önemli model bileşenleri için değerli GPU belleğini koruyabilir. Bellek kısıtlı ortamlarda, CLIP modelini CPU'ya koymak yaygın bir optimizasyon stratejisidir.
-
-### Desteklenen Kombinasyonlar
-
-| Model Türü | Karşılık Gelen Kodlayıcı |
-|------------|---------------------|
+| Tür | Kodlayıcı |
+|------|---------|
 | stable_diffusion | clip-l |
 | stable_cascade | clip-g |
-| sd3 | t5 xxl/ clip-g / clip-l |
+| sd3 | t5 xxl / clip-g / clip-l |
 | stable_audio | t5 base |
 | mochi | t5 xxl |
-| cosmos | old t5 xxl |
+| cogvideox | t5 xxl (226-token dolgulu) |
+| cosmos | eski t5 xxl |
 | lumina2 | gemma 2 2B |
 | wan | umt5 xxl |
+| hidream | llama-3.1 (önerilen) veya t5 |
+| omnigen2 | qwen vl 2.5 3B |
 
-ComfyUI güncellendikçe, bu kombinasyonlar genişleyebilir. Ayrıntılar için lütfen [node.py](https://github.com/comfyanonymous/ComfyUI/blob/master/nodes.py) dosyasındaki `CLIPLoader` sınıf tanımına bakın
+## Çıktılar
 
-## Çıkışlar
+| Çıktı Adı | Veri Türü | Açıklama |
+|-------------|-----------|-------------|
+| `clip` | CLIP | Metin kodlama ve koşullandırma için diğer düğümlere bağlanmaya hazır, yüklenmiş metin kodlayıcı modeli. |
 
-| Parametre | Veri Tipi | Açıklama |
-|-----------|-----------|-------------|
-| `clip`    | CLIP      | Yüklenen CLIP modeli, aşağı akış görevlerinde kullanıma veya daha fazla işleme hazır. |
-
-## Ek Notlar
-
-CLIP modelleri, ComfyUI'da metin kodlayıcılar olarak çekirdek bir rol oynar ve metin istemlerini difüzyon modellerinin anlayabileceği sayısal temsillere dönüştürmekten sorumludur. Onları birer çevirmen olarak düşünebilirsiniz; metninizi büyük modellerin anlayabileceği bir dile çevirmekle görevlidirler. Tabii ki, farklı modellerin kendi "lehçeleri" olduğundan, metin kodlama sürecini tamamlamak için farklı mimariler arasında farklı CLIP kodlayıcılarına ihtiyaç duyulur.
+---
+**Source fingerprint (SHA-256):** `1051bfe5570dff81719682cb09938bae4c03e94e0e72f7a2be84867cccb48017`

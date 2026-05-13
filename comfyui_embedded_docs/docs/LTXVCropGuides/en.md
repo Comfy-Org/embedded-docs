@@ -14,6 +14,9 @@ The LTXVCropGuides node processes conditioning and latent inputs for video gener
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | The processed positive conditioning with keyframe indices cleared |
-| `negative` | CONDITIONING | The processed negative conditioning with keyframe indices cleared |
-| `latent` | LATENT | The cropped latent representation with adjusted samples and noise mask |
+| `positive` | CONDITIONING | The processed positive conditioning with keyframe indices and guide attention entries cleared |
+| `negative` | CONDITIONING | The processed negative conditioning with keyframe indices and guide attention entries cleared |
+| `latent` | LATENT | The cropped latent representation with adjusted samples and noise mask, where keyframe sections have been removed |
+
+---
+**Source fingerprint (SHA-256):** `029309c260e09221cc9a046897589d99498f6e8ad984ef6052e50be9a0ea7b6d`

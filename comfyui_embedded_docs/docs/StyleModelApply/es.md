@@ -1,15 +1,19 @@
-Este nodo aplica un modelo de estilo a una condición dada, mejorando o alterando su estilo basado en la salida de un modelo de visión CLIP. Integra la condición del modelo de estilo en la condición existente, permitiendo una fusión fluida de estilos en el proceso de generación.
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StyleModelApply/es.md)
+
+Este nodo aplica un modelo de estilo a un condicionamiento dado, mejorando o alterando su estilo basándose en la salida de un modelo de visión CLIP. Integra el condicionamiento del modelo de estilo en el condicionamiento existente, permitiendo una combinación fluida de estilos en el proceso de generación.
 
 ## Entradas
 
-| Parameter             | Comfy dtype          | Description |
+### Requeridas
+
+| Parámetro             | Tipo Comfy           | Descripción |
 |-----------------------|-----------------------|-------------|
-| `acondicionamiento`        | `CONDITIONING`       | Los datos de condición originales a los que se aplicará la condición del modelo de estilo. Es crucial para definir el contexto base o estilo que será mejorado o alterado. |
-| `modelo_de_estilo`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar una nueva condición basada en la salida del modelo de visión CLIP. Juega un papel clave en la definición del nuevo estilo que se aplicará. |
-| `salida_de_clip_vision`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que es utilizada por el modelo de estilo para generar una nueva condición. Proporciona el contexto visual necesario para la aplicación del estilo. |
+| `conditioning`        | `CONDITIONING`       | Los datos de condicionamiento originales a los que se aplicará el condicionamiento del modelo de estilo. Es fundamental para definir el contexto o estilo base que se mejorará o alterará. |
+| `style_model`         | `STYLE_MODEL`        | El modelo de estilo utilizado para generar un nuevo condicionamiento basado en la salida del modelo de visión CLIP. Desempeña un papel clave en la definición del nuevo estilo a aplicar. |
+| `clip_vision_output`  | `CLIP_VISION_OUTPUT` | La salida de un modelo de visión CLIP, que el modelo de estilo utiliza para generar un nuevo condicionamiento. Proporciona el contexto visual necesario para la aplicación del estilo. |
 
 ## Salidas
 
-| Parameter            | Comfy dtype           | Description |
+| Parámetro            | Tipo Comfy           | Descripción |
 |----------------------|-----------------------|-------------|
-| `acondicionamiento`       | `CONDITIONING`        | La condición mejorada o alterada, incorporando la salida del modelo de estilo. Representa la condición final estilizada lista para un procesamiento o generación adicional. |
+| `conditioning`       | `CONDITIONING`        | El condicionamiento mejorado o alterado, que incorpora la salida del modelo de estilo. Representa el condicionamiento final estilizado, listo para su posterior procesamiento o generación. |

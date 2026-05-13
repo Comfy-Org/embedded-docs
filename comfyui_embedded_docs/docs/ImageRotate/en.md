@@ -7,10 +7,13 @@ The ImageRotate node rotates an input image by specified angles. It supports fou
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image to be rotated |
-| `rotation` | STRING | Yes | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" | The rotation angle to apply to the image |
+| `rotation` | STRING | Yes | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" | The rotation angle to apply to the image (default: "none") |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The rotated output image |
+
+---
+**Source fingerprint (SHA-256):** `068946b31ebe87b2524a1e628b5bc0a3da7367d7252fa7afafe96bcbb174747d`

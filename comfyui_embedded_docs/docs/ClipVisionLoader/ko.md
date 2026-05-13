@@ -1,13 +1,15 @@
-이 노드는 `ComfyUI/models/clip_vision` 폴더에 있는 모델을 자동으로 감지하며, `extra_model_paths.yaml` 파일에 구성된 추가 경로의 모델도 읽습니다. ComfyUI를 시작한 후에 모델을 추가했다면, **ComfyUI 인터페이스를 새로 고침**하여 최신 모델 파일 목록을 확인하세요.
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionLoader/ko.md)
+
+이 노드는 `ComfyUI/models/clip_vision` 폴더에 있는 모델과 `extra_model_paths.yaml` 파일에 설정된 추가 모델 경로를 자동으로 감지합니다. ComfyUI를 시작한 후 모델을 추가한 경우, 최신 모델 파일이 목록에 표시되도록 **ComfyUI 인터페이스를 새로고침**해 주십시오.
 
 ## 입력
 
-| 필드         | 데이터 유형     | 설명 |
-|--------------|----------------|------|
-| CLIP 파일명  | COMBO[STRING]  | `ComfyUI/models/clip_vision` 폴더 내의 모든 지원되는 모델 파일을 나열합니다. |
+| 필드          | 데이터 유형    | 설명 |
+|-------------|---------------|-------------|
+| `clip_name` | COMBO[STRING] | `ComfyUI/models/clip_vision` 폴더에 있는 지원되는 모든 모델 파일을 나열합니다. |
 
 ## 출력
 
-| 필드         | 데이터 유형   | 설명 |
-|--------------|--------------|------|
-| clip_vision  | CLIP_VISION  | 이미지 인코딩이나 기타 비전 관련 작업에 사용할 수 있는 로드된 CLIP Vision 모델입니다. |
+| 필드           | 데이터 유형    | 설명 |
+|--------------|--------------|-------------|
+| `clip_vision` | CLIP_VISION  | 로드된 CLIP Vision 모델로, 이미지 인코딩 또는 기타 비전 관련 작업에 사용할 준비가 되었습니다. |

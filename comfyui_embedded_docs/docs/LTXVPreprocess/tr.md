@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVPreprocess/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVPreprocess/tr.md)
 
-LTXVPreprocess düğümü, görüntülere sıkıştırma ön işleme uygular. Girdi görüntülerini alır ve belirtilen bir sıkıştırma seviyesi ile işleyerek, uygulanan sıkıştırma ayarlarıyla işlenmiş görüntüleri çıktı olarak verir.
+LTXVPreprocess düğümü, görüntülere sıkıştırma ön işleme uygular. Giriş görüntülerini alır ve belirtilen sıkıştırma seviyesiyle işleyerek, uygulanan sıkıştırma ayarlarıyla birlikte işlenmiş görüntüleri çıktı olarak verir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `görüntü` | IMAGE | Evet | - | İşlenecek girdi görüntüsü |
-| `görüntü_sıkıştırma` | INT | Hayır | 0-100 | Görüntüye uygulanacak sıkıştırma miktarı (varsayılan: 35) |
+|-----------|-----------|----------|--------|----------|
+| `image` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
+| `img_compression` | INT | Hayır | 0-100 | Görüntüye uygulanacak sıkıştırma miktarı (varsayılan: 35) |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output_image` | IMAGE | Uygulanan sıkıştırma ile işlenmiş çıktı görüntüsü |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `output_image` | IMAGE | Uygulanan sıkıştırma ile işlenmiş çıkış görüntüsü |
+
+---
+**Source fingerprint (SHA-256):** `2c5fbde5d011bdf3313ca05508f58a13eaae0bdff12f3659fef281c0045e480d`

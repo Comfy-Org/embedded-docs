@@ -1,24 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosPredict2ImageToVideoLatent/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosPredict2ImageToVideoLatent/zh-TW.md)
 
-CosmosPredict2ImageToVideoLatent 節點可從圖像建立影片潛在表示，用於影片生成。它可以生成空白影片潛在表示，或結合起始和結束圖像來建立具有指定尺寸和時長的影片序列。該節點負責將圖像編碼為適合影片處理的潛在空間格式。
+CosmosPredict2ImageToVideoLatent 節點可從影像建立影片潛在表示，以用於影片生成。它能生成空白影片潛在，或結合起始與結束影像，建立具有指定尺寸與時長的影片序列。此節點負責將影像編碼為適合影片處理的潛在空間格式。
 
-## 輸入參數
+## 輸入
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `vae` | VAE | 是 | - | 用於將圖像編碼至潛在空間的 VAE 模型 |
-| `width` | INT | 否 | 16 至 MAX_RESOLUTION | 輸出影片的寬度（單位：像素，預設值：848，必須可被 16 整除） |
-| `height` | INT | 否 | 16 至 MAX_RESOLUTION | 輸出影片的高度（單位：像素，預設值：480，必須可被 16 整除） |
-| `length` | INT | 否 | 1 至 MAX_RESOLUTION | 影片序列的影格數量（預設值：93，步長：4） |
-| `batch_size` | INT | 否 | 1 至 4096 | 要生成的影片序列數量（預設值：1） |
-| `start_image` | IMAGE | 否 | - | 影片序列的起始圖像（可選） |
-| `end_image` | IMAGE | 否 | - | 影片序列的結束圖像（可選） |
+| `vae` | VAE | 是 | - | 用於將影像編碼至潛在空間的 VAE 模型 |
+| `width` | INT | 否 | 16 至 MAX_RESOLUTION | 輸出影片的寬度（像素），預設值：848，必須為 16 的倍數 |
+| `height` | INT | 否 | 16 至 MAX_RESOLUTION | 輸出影片的高度（像素），預設值：480，必須為 16 的倍數 |
+| `length` | INT | 否 | 1 至 MAX_RESOLUTION | 影片序列的影格數，預設值：93，步進值：4 |
+| `batch_size` | INT | 否 | 1 至 4096 | 要生成的影片序列數量，預設值：1 |
+| `start_image` | IMAGE | 否 | - | 可選的影片序列起始影像 |
+| `end_image` | IMAGE | 否 | - | 可選的影片序列結束影像 |
 
-**注意：** 當未提供 `start_image` 和 `end_image` 時，節點會生成空白影片潛在表示。當提供圖像時，它們會被編碼並放置在影片序列的開頭和/或結尾，並套用適當的遮罩。
+**注意：** 當未提供 `start_image` 與 `end_image` 時，節點會生成空白影片潛在。若提供了影像，則會將其編碼，並透過適當的遮罩，置於影片序列的開頭及/或結尾。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `samples` | LATENT | 生成的影片潛在表示，包含編碼後的影片序列 |
-| `noise_mask` | LATENT | 指示在生成過程中應保留潛在表示哪些部分的遮罩 |
+| `noise_mask` | LATENT | 一個遮罩，指示生成過程中應保留潛在的哪些部分 |
+
+---
+**Source fingerprint (SHA-256):** `55fab16180c0e3fa254bcc77694dbc666810b28522e61b9c613f720fae66bd0c`

@@ -2,7 +2,7 @@
 
 ## Genel Bakış
 
-Frame Interpolate (Kare Enterpolasyonu) düğümü, bir görüntü dizisindeki mevcut kareler arasında yeni kareler oluşturarak kare hızını etkili bir şekilde artırır. Ara karelerin nasıl görünmesi gerektiğini tahmin etmek için bir yapay zeka modeli kullanır; bu sayede yumuşak ağır çekim efektleri oluşturmak veya bir videonun akıcılığını artırmak için kullanılabilir.
+Frame Interpolate düğümü, bir görüntü dizisindeki mevcut kareler arasına yeni kareler ekleyerek kare hızını etkili bir şekilde artırır. Ara karelerin nasıl görünmesi gerektiğini tahmin etmek için bir yapay zeka modeli kullanır. Bu özellik, yumuşak ağır çekim efektleri oluşturmak veya bir videonun akıcılığını artırmak için kullanılabilir.
 
 ## Girdiler
 
@@ -10,10 +10,13 @@ Frame Interpolate (Kare Enterpolasyonu) düğümü, bir görüntü dizisindeki m
 |-----------|-----------|----------|-------|-------------|
 | `interp_model` | MODEL | Evet | - | Ara kareler oluşturmak için kullanılacak kare enterpolasyon modeli |
 | `images` | IMAGE | Evet | - | Enterpolasyon yapılacak ardışık görüntüler (kareler) topluluğu. En az 2 görüntü gerektirir. |
-| `multiplier` | INT | Evet | 2 ile 16 | Kare sayısını çarpma katsayısı. Örneğin, 2 çarpanı kare sayısını iki katına çıkarır. (varsayılan: 2) |
+| `multiplier` | INT | Evet | 2 ila 16 | Kare sayısının çarpılacağı katsayı. Örneğin, 2 çarpanı kare sayısını ikiye katlar. (varsayılan: 2) |
 
 ## Çıktılar
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `IMAGE` | IMAGE | Orijinal kareler arasına enterpolasyonlu karelerin eklendiği yeni bir görüntü topluluğu. Sonuçta daha akıcı bir dizi elde edilir. Toplam çıktı kare sayısı `(giriş kare sayısı - 1) * çarpan + 1` formülüyle hesaplanır. |
+| `IMAGE` | IMAGE | Orijinal kareler arasına enterpolasyonlu kareler eklenmiş yeni bir görüntü topluluğu. Bu sayede daha akıcı bir dizi elde edilir. Toplam çıktı kare sayısı: `(giriş kare sayısı - 1) * çarpan + 1` formülüyle hesaplanır. |
+
+---
+**Source fingerprint (SHA-256):** `05fdac188d9d7c7d5cac9ade55ba22cc743395b3c659a519ca03fe293b9a6e34`

@@ -30,3 +30,6 @@ This node applies the visual style from a reference image to your input image. I
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The resulting image after style transfer has been applied. |
+
+---
+**Source fingerprint (SHA-256):** `4ae400183618953c369d089d39b878f0a24592967c29d779c577fb8b7339dea8`

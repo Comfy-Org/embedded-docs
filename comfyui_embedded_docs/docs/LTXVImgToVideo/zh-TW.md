@@ -1,25 +1,30 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/zh-TW.md)
 
-LTXVImgToVideo 節點將輸入圖像轉換為影片潛在表示，供影片生成模型使用。它接收單張圖像並使用 VAE 編碼器將其擴展為影格序列，然後應用帶有強度控制的條件調節，以決定在影片生成過程中保留原始圖像內容與修改內容的比例。
+# LTXVImgToVideo 節點
 
-## 輸入參數
+LTXVImgToVideo 節點將輸入影像轉換為影片潛在表示，以供影片生成模型使用。它接收單張影像，透過 VAE 編碼器將其擴展為一系列幀，然後應用具有強度控制的條件化，以決定在影片生成過程中原始影像內容有多少被保留或修改。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `正向` | CONDITIONING | 是 | - | 用於引導影片生成的正向條件提示 |
-| `負向` | CONDITIONING | 是 | - | 用於避免影片中出現特定元素的負向條件提示 |
-| `vae` | VAE | 是 | - | 用於將輸入圖像編碼到潛在空間的 VAE 模型 |
-| `影像` | IMAGE | 是 | - | 要轉換為影片影格的輸入圖像 |
-| `寬度` | INT | 否 | 64 至 MAX_RESOLUTION | 輸出影片的寬度（單位：像素，預設值：768，間距：32） |
-| `高度` | INT | 否 | 64 至 MAX_RESOLUTION | 輸出影片的高度（單位：像素，預設值：512，間距：32） |
-| `長度` | INT | 否 | 9 至 MAX_RESOLUTION | 生成影片的影格數量（預設值：97，間距：8） |
-| `批次大小` | INT | 否 | 1 至 4096 | 同時生成的影片數量（預設值：1） |
-| `強度` | FLOAT | 否 | 0.0 至 1.0 | 控制影片生成過程中對原始圖像的修改程度，1.0 保留最多原始內容，0.0 允許最大程度修改（預設值：1.0） |
+| `positive` | CONDITIONING | 是 | - | 用於引導影片生成的正向條件化提示 |
+| `negative` | CONDITIONING | 是 | - | 用於避免影片中出現特定元素的負向條件化提示 |
+| `vae` | VAE | 是 | - | 用於將輸入影像編碼到潛在空間的 VAE 模型 |
+| `image` | IMAGE | 是 | - | 要轉換為影片幀的輸入影像 |
+| `width` | INT | 否 | 64 至 MAX_RESOLUTION | 輸出影片的寬度（像素）（預設值：768，步進：32） |
+| `height` | INT | 否 | 64 至 MAX_RESOLUTION | 輸出影片的高度（像素）（預設值：512，步進：32） |
+| `length` | INT | 否 | 9 至 MAX_RESOLUTION | 生成影片的幀數（預設值：97，步進：8） |
+| `batch_size` | INT | 否 | 1 至 4096 | 同時生成的影片數量（預設值：1） |
+| `strength` | FLOAT | 否 | 0.0 至 1.0 | 控制生成影片的第一幀中保留原始影像內容的程度。值為 1.0 時完全保留原始影像，而 0.0 則允許最大程度的修改（預設值：1.0） |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `負向` | CONDITIONING | 已處理並應用影片影格遮罩的正向條件調節 |
-| `潛在空間` | CONDITIONING | 已處理並應用影片影格遮罩的負向條件調節 |
-| `latent` | LATENT | 包含編碼影格和雜訊遮罩的影片潛在表示，用於影片生成 |
+| `positive` | CONDITIONING | 已套用影片幀遮罩的處理後正向條件化 |
+| `negative` | CONDITIONING | 已套用影片幀遮罩的處理後負向條件化 |
+| `latent` | LATENT | 包含編碼幀和噪聲遮罩的影片潛在表示，用於影片生成 |
+
+---
+**Source fingerprint (SHA-256):** `fbd35623cd71bf917f39108d388986c9604138fbfb9380bdf936deff6d775cb9`

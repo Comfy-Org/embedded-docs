@@ -1,0 +1,21 @@
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemoveBackground/ko.md)
+
+## 개요
+
+Remove Background 노드는 배경 제거 모델을 사용하여 입력 이미지에서 전경 피사체를 배경과 분리하는 마스크를 생성합니다. 이미지와 배경 제거 모델을 입력받아 주요 피사체를 강조하는 마스크를 출력합니다.
+
+## 입력
+
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
+|-----------|-----------|----------|-------|-------------|
+| `image` | IMAGE | 예 | 해당 없음 | 배경을 제거할 입력 이미지 |
+| `bg_removal_model` | BACKGROUND_REMOVAL_MODEL | 예 | 해당 없음 | 마스크 생성에 사용되는 배경 제거 모델 |
+
+## 출력
+
+| 출력 이름 | 데이터 타입 | 설명 |
+|-------------|-----------|-------------|
+| `mask` | MASK | 입력 이미지의 주요 피사체를 강조하는 생성된 전경 마스크 |
+
+---
+**Source fingerprint (SHA-256):** `cd19134e6afed4d31096b613dd534eacad39afe7de2c8b74feab512bd5f09f66`

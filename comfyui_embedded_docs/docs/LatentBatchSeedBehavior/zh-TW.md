@@ -1,18 +1,16 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentBatchSeedBehavior/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentBatchSeedBehavior/zh-TW.md)
 
-{heading_overview}
+LatentBatchSeedBehavior 節點旨在修改一批潛在樣本的種子行為。它允許在整個批次中隨機化或固定種子，從而透過引入變異性或維持生成輸出的一致性來影響生成過程。
 
-LatentBatchSeedBehavior 節點旨在修改潛在樣本批次的種子行為。它允許在整個批次中隨機化或固定種子，從而透過在生成輸出中引入變異性或保持一致性來影響生成過程。
+## 輸入
 
-{heading_inputs}
-
-| 參數名稱       | 資料類型      | 描述 |
+| 參數 | 資料類型 | 說明 |
 |-----------------|--------------|-------------|
-| `樣本`       | `LATENT`     | 此 'samples' 參數代表要處理的潛在樣本批次。其修改取決於所選的種子行為，會影響生成輸出的一致性或多樣性。 |
-| `種子行為`  | COMBO[STRING] | 此 'seed_behavior' 參數決定潛在樣本批次的種子應該被隨機化還是固定。這個選擇會透過在整個批次中引入變異性或確保一致性，顯著影響生成過程。 |
+| `samples` | `LATENT` | 'samples' 參數代表要處理的潛在樣本批次。其修改取決於所選的種子行為，影響生成輸出的一致性或變異性。 |
+| `seed_behavior` | COMBO[STRING] | 'seed_behavior' 參數決定一批潛在樣本的種子應隨機化還是固定。此選擇透過引入變異性或確保整個批次的一致性，顯著影響生成過程。 |
 
-{heading_outputs}
+## 輸出
 
-| 參數名稱 | 資料類型   | 描述 |
+| 參數 | 資料類型 | 說明 |
 |-----------|-------------|-------------|
-| `latent`  | `LATENT`    | 輸出是輸入潛在樣本的修改版本，根據指定的種子行為進行了調整。它會維持或改變批次索引以反映所選的種子行為。 |
+| `latent` | `LATENT` | 輸出是輸入潛在樣本的修改版本，根據指定的種子行為進行調整。它會維持或更改批次索引，以反映所選的種子行為。 |

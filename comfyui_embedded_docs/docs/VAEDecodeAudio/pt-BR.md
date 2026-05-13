@@ -4,13 +4,16 @@ O nó VAEDecodeAudio converte representações latentes de volta em formas de on
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
+|-----------|--------------|-------------|-------|-----------|
 | `samples` | LATENT | Sim | - | As amostras de áudio codificadas no espaço latente que serão decodificadas de volta para a forma de onda de áudio |
-| `vae` | VAE | Sim | - | O modelo de Autoencoder Variacional usado para decodificar as amostras latentes em áudio |
+| `vae` | VAE | Sim | - | O modelo Autoencoder Variacional usado para decodificar as amostras latentes em áudio |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+| Nome da Saída | Tipo de Dado | Descrição |
+|---------------|--------------|-----------|
 | `AUDIO` | AUDIO | A forma de onda de áudio decodificada com volume normalizado e taxa de amostragem de 44100 Hz |
+
+---
+**Source fingerprint (SHA-256):** `15848d3763324cbae986949146d57352c68369713cd99a27d216797560836824`

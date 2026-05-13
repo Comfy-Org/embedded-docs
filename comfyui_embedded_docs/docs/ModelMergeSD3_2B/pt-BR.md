@@ -1,10 +1,10 @@
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD3_2B/pt-BR.md)
 
-O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combinando seus componentes com pesos ajustáveis. Ele oferece controle individual sobre camadas de incorporação (embeddings) e blocos do transformador, possibilitando combinações de modelos afinadas para tarefas de geração especializadas.
+O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combinando seus componentes com pesos ajustáveis. Ele fornece controle individual sobre camadas de incorporação e blocos transformadores, possibilitando combinações de modelos finamente ajustadas para tarefas especializadas de geração.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
+| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|-----------|----------|-------|-------------|
 | `model1` | MODEL | Sim | - | O primeiro modelo a ser mesclado |
 | `model2` | MODEL | Sim | - | O segundo modelo a ser mesclado |
@@ -12,7 +12,7 @@ O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combin
 | `x_embedder.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação da incorporação de entrada (padrão: 1.0) |
 | `context_embedder.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação da incorporação de contexto (padrão: 1.0) |
 | `y_embedder.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação da incorporação Y (padrão: 1.0) |
-| `t_embedder.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação da incorporação de tempo (padrão: 1.0) |
+| `t_embedder.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação da incorporação temporal (padrão: 1.0) |
 | `joint_blocks.0.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação do bloco conjunto 0 (padrão: 1.0) |
 | `joint_blocks.1.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação do bloco conjunto 1 (padrão: 1.0) |
 | `joint_blocks.2.` | FLOAT | Sim | 0.0 - 1.0 | Peso de interpolação do bloco conjunto 2 (padrão: 1.0) |
@@ -41,6 +41,9 @@ O nó ModelMergeSD3_2B permite mesclar dois modelos Stable Diffusion 3 2B combin
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
+| Nome da Saída | Tipo de Dado | Descrição |
 |-------------|-----------|-------------|
-| `model` | MODEL | O modelo mesclado, combinando características de ambos os modelos de entrada |
+| `model` | MODEL | O modelo mesclado combinando características de ambos os modelos de entrada |
+
+---
+**Source fingerprint (SHA-256):** `5b0c28c66e1828742873191be424956a9006e59ea1167a5941069ba0b7bc390b`

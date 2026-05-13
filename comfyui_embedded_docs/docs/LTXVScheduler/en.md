@@ -20,3 +20,6 @@ The LTXVScheduler node generates sigma values for custom sampling processes. It 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sigmas` | SIGMAS | Generated sigma values for the sampling process |
+
+---
+**Source fingerprint (SHA-256):** `3c7e8721fd75bfb0a253c38cd29e2ee1905bfe08193aa97dbaa959550aba34bc`

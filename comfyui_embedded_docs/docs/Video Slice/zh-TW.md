@@ -1,18 +1,23 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video%20Slice/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/zh-TW.md)
 
-Video Slice 節點可讓您從影片中擷取特定片段。您可以定義開始時間和持續時間來修剪影片，或直接跳過開頭的影格。若要求的持續時間超過影片剩餘長度，此節點可選擇返回可用內容或引發錯誤。
+## 概述
 
-## 輸入參數
+Video Slice 節點可讓您從影片中提取特定片段。您可以定義開始時間和持續時間來裁剪影片，或僅跳過開頭的影格。如果請求的持續時間超過剩餘影片長度，此節點可以回傳可用的部分，或引發錯誤。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | 是 | - | 要進行切片處理的輸入影片。 |
-| `start_time` | FLOAT | 否 | -1e5 至 1e5 | 切片開始的起始時間（單位：秒）。負數值將從影片開頭跳過影格。（預設值：0.0） |
-| `duration` | FLOAT | 否 | 0.0 及以上 | 切片長度（單位：秒）。值為 0.0 表示節點將返回從開始時間到結尾的所有影片內容。（預設值：0.0） |
-| `strict_duration` | BOOLEAN | 否 | - | 若設為 True，當無法滿足要求的持續時間時（例如切片範圍超出影片結尾），節點將引發錯誤。若設為 False，則會返回直至影片結尾的可用內容。（預設值：False） |
+| `video` | VIDEO | 是 | - | 要進行裁剪的輸入影片。 |
+| `start_time` | FLOAT | 否 | -1e5 至 1e5 | 以秒為單位的開始時間（預設值：0.0）。 |
+| `duration` | FLOAT | 否 | 0.0 及以上 | 以秒為單位的持續時間，設為 0 則表示無限制（預設值：0.0）。 |
+| `strict_duration` | BOOLEAN | 否 | - | 若設為 True，當無法達到指定的持續時間時，將會引發錯誤（預設值：False）。 |
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `video` | VIDEO | 修剪後的影片片段。 |
+| `video` | VIDEO | 裁剪後的影片片段。 |
+
+---
+**Source fingerprint (SHA-256):** `5e3e3e69931a25183eb01b7b87ec12cbf9f5a748781993dcbeec7a6d5f7260c1`

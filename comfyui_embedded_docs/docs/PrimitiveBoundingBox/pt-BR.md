@@ -5,14 +5,17 @@ O nó PrimitiveBoundingBox cria uma área retangular simples definida por sua po
 ## Entradas
 
 | Parâmetro | Tipo de Dados | Obrigatório | Intervalo | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `x` | INT | Não | 0 a 8192 | A coordenada X para o canto superior esquerdo da caixa delimitadora (padrão: 0). |
-| `y` | INT | Não | 0 a 8192 | A coordenada Y para o canto superior esquerdo da caixa delimitadora (padrão: 0). |
-| `width` | INT | Não | 1 a 8192 | A largura da caixa delimitadora (padrão: 512). |
-| `height` | INT | Não | 1 a 8192 | A altura da caixa delimitadora (padrão: 512). |
+|-----------|---------------|-------------|-----------|-----------|
+| `x` | INT | Sim | 0 a 8192 | A coordenada X do canto superior esquerdo da caixa delimitadora (padrão: 0). |
+| `y` | INT | Sim | 0 a 8192 | A coordenada Y do canto superior esquerdo da caixa delimitadora (padrão: 0). |
+| `width` | INT | Sim | 1 a 8192 | A largura da caixa delimitadora (padrão: 512). |
+| `height` | INT | Sim | 1 a 8192 | A altura da caixa delimitadora (padrão: 512). |
 
 ## Saídas
 
 | Nome da Saída | Tipo de Dados | Descrição |
-|-------------|-----------|-------------|
+|---------------|---------------|-----------|
 | `bounding_box` | BOUNDING_BOX | Uma estrutura de dados contendo as propriedades `x`, `y`, `width` e `height` do retângulo definido. |
+
+---
+**Source fingerprint (SHA-256):** `715f1a2bd650ecd6ba2ea3c1d54636bc32dff4fb4aec8f088ee9b0994809412c`

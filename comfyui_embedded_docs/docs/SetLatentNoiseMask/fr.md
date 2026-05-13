@@ -1,15 +1,16 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetLatentNoiseMask/fr.md)
 
-Ce nœud est conçu pour appliquer un masque de bruit à un ensemble d'échantillons latents. Il modifie les échantillons d'entrée en intégrant un masque spécifié, altérant ainsi leurs caractéristiques de bruit.
+Ce nœud est conçu pour appliquer un masque de bruit à un ensemble d'échantillons latents. Il modifie les échantillons d'entrée en intégrant un masque spécifié, modifiant ainsi leurs caractéristiques de bruit.
 
 ## Entrées
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `échantillons` | `LATENT`    | Les échantillons latents auxquels le masque de bruit sera appliqué. Ce paramètre est crucial pour déterminer le contenu de base qui sera modifié. |
-| `masque`    | `MASK`      | Le masque à appliquer aux échantillons latents. Il définit les zones et l'intensité de l'altération du bruit au sein des échantillons. |
+| Paramètre | Type de données | Description |
+|-----------|-----------------|-------------|
+| `samples` | `LATENT`        | Les échantillons latents auxquels le masque de bruit sera appliqué. Ce paramètre est essentiel pour déterminer le contenu de base qui sera modifié. |
+| `mask`    | `MASK`          | Le masque à appliquer aux échantillons latents. Il définit les zones et l'intensité de la modification du bruit au sein des échantillons. |
 
 ## Sorties
 
-| Paramètre | Type de Donnée | Description |
-|-----------|-------------|-------------|
-| `latent`  | `LATENT`    | Les échantillons latents modifiés avec le masque de bruit appliqué. |
+| Paramètre | Type de données | Description |
+|-----------|-----------------|-------------|
+| `latent`  | `LATENT`        | Les échantillons latents modifiés avec le masque de bruit appliqué. |

@@ -12,7 +12,7 @@ This node uses the Kling 3.0 model to generate a video. It creates the video bas
 | `end_frame` | IMAGE | Yes | N/A | The ending image for the video. Must be at least 300x300 pixels and have an aspect ratio between 1:2.5 and 2.5:1. |
 | `generate_audio` | BOOLEAN | No | N/A | Controls whether to generate audio for the video (default: True). |
 | `model` | COMBO | No | `"kling-v3"` | Model and generation settings. Selecting this option reveals a nested `resolution` parameter. |
-| `model.resolution` | COMBO | No | `"1080p"`<br>`"720p"` | The resolution for the generated video. This parameter is only available when the `model` is set to `"kling-v3"`. |
+| `model.resolution` | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` | The resolution for the generated video. This parameter is only available when the `model` is set to `"kling-v3"` (default: `"1080p"`). |
 | `seed` | INT | No | 0 to 2147483647 | A number used to control whether the node should re-run. The results are non-deterministic regardless of the seed value (default: 0). |
 
 **Note:** The `first_frame` and `end_frame` images must meet the specified minimum size and aspect ratio requirements for the node to function correctly.
@@ -22,3 +22,6 @@ This node uses the Kling 3.0 model to generate a video. It creates the video bas
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | VIDEO | The generated video file. |
+
+---
+**Source fingerprint (SHA-256):** `5c904fec35b2bb41cf521263b1b06fd36ba227400b4cec24e79a4e80618e4bae`

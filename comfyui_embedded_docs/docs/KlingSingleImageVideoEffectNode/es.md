@@ -1,22 +1,25 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingSingleImageVideoEffectNode/es.md)
 
-El nodo Kling Single Image Video Effect crea videos con diferentes efectos especiales basados en una única imagen de referencia. Aplica varios efectos visuales y escenas para transformar imágenes estáticas en contenido de video dinámico. El nodo admite diferentes escenas de efectos, opciones de modelos y duraciones de video para lograr el resultado visual deseado.
+El Nodo de Efecto de Video a partir de una Imagen Única de Kling crea videos con diferentes efectos especiales basados en una sola imagen de referencia. Aplica diversos efectos visuales y escenas para transformar imágenes estáticas en contenido de video dinámico. El nodo admite diferentes escenas de efectos, opciones de modelo y duraciones de video para lograr el resultado visual deseado.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `imagen` | IMAGE | Sí | - | Imagen de referencia. URL o cadena codificada en Base64 (sin el prefijo data:image). El tamaño del archivo no puede exceder 10MB, la resolución no debe ser inferior a 300*300px, relación de aspecto entre 1:2.5 ~ 2.5:1 |
-| `effect_scene` | COMBO | Sí | Opciones de KlingSingleImageEffectsScene | El tipo de escena de efecto especial a aplicar en la generación del video |
-| `model_name` | COMBO | Sí | Opciones de KlingSingleImageEffectModelName | El modelo específico a utilizar para generar el efecto de video |
-| `duración` | COMBO | Sí | Opciones de KlingVideoGenDuration | La duración del video generado |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `image` | IMAGE | Sí | - | Imagen de referencia. URL o cadena codificada en Base64 (sin el prefijo data:image). El tamaño del archivo no puede superar los 10 MB, la resolución no debe ser inferior a 300x300 px y la relación de aspecto debe estar entre 1:2.5 y 2.5:1 |
+| `effect_scene` | COMBO | Sí | `"dizzydizzy"`<br>`"bloombloom"`<br>`"neon"`<br>`"cartoon"`<br>`"sketch"`<br>`"oil"`<br>`"watercolor"`<br>`"3d"` | El tipo de escena de efecto especial que se aplicará a la generación del video. Algunos efectos pueden tener precios diferentes. |
+| `model_name` | COMBO | Sí | `"kling-v1-5"`<br>`"kling-v1-6"` | La versión específica del modelo que se utilizará para generar el efecto de video. |
+| `duration` | COMBO | Sí | `"5"`<br>`"10"` | La duración del video generado en segundos. |
 
-**Nota:** Las opciones específicas para `effect_scene`, `model_name` y `duration` están determinadas por los valores disponibles en sus respectivas clases de enumeración (KlingSingleImageEffectsScene, KlingSingleImageEffectModelName y KlingVideoGenDuration).
+**Nota:** El parámetro `effect_scene` afecta el precio del nodo. Los efectos `dizzydizzy` y `bloombloom` cuestan $0.49 USD por generación, mientras que todos los demás efectos cuestan $0.28 USD por generación.
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `video_id` | VIDEO | El video generado con los efectos aplicados |
-| `duración` | STRING | El identificador único para el video generado |
-| `duración` | STRING | La duración del video generado |
+|------------------|--------------|-------------|
+| `output` | VIDEO | El video generado con los efectos aplicados |
+| `video_id` | STRING | El identificador único del video generado |
+| `duration` | STRING | La duración del video generado |
+
+---
+**Source fingerprint (SHA-256):** `519db2f7185f200140c746bdebf89383523e0342bbfb61538adac063295d365d`

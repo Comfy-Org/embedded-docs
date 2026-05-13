@@ -1,26 +1,29 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/tr.md)
 
-```markdown
-OpenAI'nin DALL·E 2 uç noktası aracılığıyla senkron olarak görüntü oluşturur.
+# OpenAIDalle2
+
+OpenAI'nin DALL·E 2 uç noktası aracılığıyla eşzamanlı olarak görseller oluşturur.
 
 ## Nasıl Çalışır
 
-Bu düğüm, metin açıklamalarına dayalı görüntüler oluşturmak için OpenAI'nin DALL·E 2 API'sine bağlanır. Bir metin istemi sağladığınızda, düğüm bunu OpenAI'nin sunucularına gönderir ve bu sunucular ilgili görüntüleri oluşturarak ComfyUI'ye geri döndürür. Düğüm iki modda çalışabilir: sadece metin istemi kullanarak standart görüntü oluşturma veya hem görüntü hem de maske sağlandığında görüntü düzenleme modu. Düzenleme modunda, orijinal görüntünün hangi bölümlerinin değiştirileceğini belirlemek için maskeyi kullanırken diğer alanları değişmeden bırakır.
+Bu düğüm, metin açıklamalarına dayalı görseller oluşturmak için OpenAI'nin DALL·E 2 API'sine bağlanır. Bir metin istemi sağladığınızda, düğüm bunu OpenAI sunucularına gönderir; sunucular karşılık gelen görselleri oluşturur ve ComfyUI'ye geri döndürür. Düğüm iki modda çalışabilir: yalnızca metin istemi kullanarak standart görsel oluşturma veya hem görsel hem de maske sağlandığında görsel düzenleme modu. Düzenleme modunda, orijinal görselin hangi bölümlerinin değiştirileceğini belirlemek için maskeyi kullanırken diğer alanları değiştirmeden bırakır.
 
 ## Girişler
 
 | Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `istem` | STRING | gerekli | "" | - | DALL·E için metin istemi |
-| `tohum` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
-| `boyut` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görüntü boyutu |
-| `n` | INT | isteğe bağlı | 1 | 1 ile 8 arası | Kaç adet görüntü oluşturulacağı |
-| `görüntü` | IMAGE | isteğe bağlı | Yok | - | Görüntü düzenleme için isteğe bağlı referans görüntüsü. |
-| `maske` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
+|-----------|-----------|------------|------------|--------|----------|
+| `prompt` | STRING | zorunlu | "" | - | DALL·E için metin istemi |
+| `seed` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
+| `size` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görsel boyutu |
+| `n` | INT | isteğe bağlı | 1 | 1 ile 8 arası | Oluşturulacak görsel sayısı |
+| `image` | IMAGE | isteğe bağlı | Yok | - | Görsel düzenleme için isteğe bağlı referans görseli. |
+| `mask` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `IMAGE` | IMAGE | DALL·E 2'den oluşturulan veya düzenlenen görüntü(ler) |
-```
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `IMAGE` | IMAGE | DALL·E 2'den oluşturulan veya düzenlenen görsel(ler) |
+
+---
+**Source fingerprint (SHA-256):** `ad10b149ac28559ad18c09e0f071286509680603d953833106ad6a2d578f7efe`

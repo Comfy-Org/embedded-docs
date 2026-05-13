@@ -1,17 +1,22 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetDefaultAndCombine/ko.md)
 
-이 노드는 훅 기반 시스템을 사용하여 조건 데이터를 기본 조건 데이터와 결합합니다. 기본 조건 입력과 기본값 조건 입력을 받아 지정된 훅 구성에 따라 병합합니다. 결과는 두 소스를 통합한 단일 조건 출력입니다.
+이 문서는 AI로 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetDefaultAndCombine/en.md)
+
+이 노드는 후크 기반 시스템을 사용하여 기본 컨디셔닝 입력과 기본값 컨디셔닝 입력을 결합합니다. 두 컨디셔닝 소스를 단일 출력으로 병합하여, 기본 컨디셔닝이 불완전할 경우 기본값 컨디셔닝이 대체 또는 기반 역할을 수행할 수 있도록 합니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 입력 타입 | 기본값 | 범위 | 설명 |
 |-----------|-----------|------------|---------|-------|-------------|
-| `cond` | CONDITIONING | 필수 | - | - | 처리할 기본 조건 입력 |
-| `cond_DEFAULT` | CONDITIONING | 필수 | - | - | 기본 조건과 결합할 기본값 조건 데이터 |
-| `hooks` | HOOKS | 선택사항 | - | - | 조건 데이터가 처리되고 결합되는 방식을 제어하는 선택적 훅 구성 |
+| `cond` | CONDITIONING | 필수 | - | - | 처리 및 결합될 기본 컨디셔닝 입력입니다. |
+| `cond_DEFAULT` | CONDITIONING | 필수 | - | - | 기본 컨디셔닝과 결합될 기본값 컨디셔닝 데이터입니다. |
+| `hooks` | HOOKS | 선택 사항 | - | - | 컨디셔닝 데이터의 처리 및 결합 방식을 제어하는 선택적 후크 구성입니다. |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | 기본 조건과 기본값 조건 입력을 병합한 결과로 생성된 결합된 조건 데이터 |
+| `CONDITIONING` | CONDITIONING | 기본 컨디셔닝과 기본값 컨디셔닝 입력을 병합하여 생성된 결합 컨디셔닝 데이터입니다. |
+
+---
+**Source fingerprint (SHA-256):** `5e6c95f454c7e262878cc362c6b199e01abff10f803c81afe6e76a317c30d039`

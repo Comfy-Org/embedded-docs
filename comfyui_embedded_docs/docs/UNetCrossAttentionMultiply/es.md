@@ -4,16 +4,19 @@ El nodo UNetCrossAttentionMultiply aplica factores de multiplicación al mecanis
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|-----------|----------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo UNet a modificar con factores de escalado de atención |
-| `q` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de consulta en atención cruzada (valor por defecto: 1.0) |
-| `k` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de clave en atención cruzada (valor por defecto: 1.0) |
-| `v` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de valor en atención cruzada (valor por defecto: 1.0) |
-| `salida` | FLOAT | No | 0.0 - 10.0 | Factor de escalado para componentes de salida en atención cruzada (valor por defecto: 1.0) |
+| `model` | MODEL | Sí | - | El modelo UNet a modificar con factores de escala de atención |
+| `q` | FLOAT | No | 0.0 - 10.0 | Factor de escala para componentes de consulta en atención cruzada (predeterminado: 1.0) |
+| `k` | FLOAT | No | 0.0 - 10.0 | Factor de escala para componentes de clave en atención cruzada (predeterminado: 1.0) |
+| `v` | FLOAT | No | 0.0 - 10.0 | Factor de escala para componentes de valor en atención cruzada (predeterminado: 1.0) |
+| `out` | FLOAT | No | 0.0 - 10.0 | Factor de escala para componentes de salida en atención cruzada (predeterminado: 1.0) |
 
 ## Salidas
 
 | Nombre de Salida | Tipo de Dato | Descripción |
 |-------------|-----------|-------------|
-| `modelo` | MODEL | El modelo UNet modificado con componentes de atención cruzada escalados |
+| `model` | MODEL | El modelo UNet modificado con componentes de atención cruzada escalados |
+
+---
+**Source fingerprint (SHA-256):** `2623858c11e93ab5952194670c9e4ea74bba4e2ea32089540665eea361dc1491`

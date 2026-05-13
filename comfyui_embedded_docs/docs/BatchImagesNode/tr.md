@@ -1,17 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchImagesNode/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchImagesNode/tr.md)
 
-Batch Images düğümü, birden fazla ayrı görüntüyü tek bir toplu işte birleştirir. Değişken sayıda görüntü girişi alır ve bunları tek bir toplu görüntü tensörü olarak çıktılar, böylece sonraki düğümlerde birlikte işlenebilmelerini sağlar.
+**Batch Images (Görüntü Toplama) Düğümü**
+
+Batch Images düğümü, birden fazla ayrı görüntüyü tek bir toplu iş halinde birleştirir. Değişken sayıda görüntü girişi alır ve bunları tek bir toplu görüntü tensörü olarak çıktılar, böylece sonraki düğümlerde birlikte işlenmelerine olanak tanır.
 
 ## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | 2 ila 50 giriş | Dinamik bir görüntü girişleri listesi. Toplu iş haline getirilmek üzere 2 ila 50 arasında görüntü ekleyebilirsiniz. Düğüm arayüzü, gerektiğinde daha fazla görüntü giriş yuvası eklemenize olanak tanır. |
+|-----------|-----------|----------|--------|----------|
+| `images` | IMAGE | Evet | 2 ila 50 giriş | Dinamik bir görüntü giriş listesi. Bir toplu iş halinde birleştirilmek üzere 2 ila 50 arasında görüntü ekleyebilirsiniz. Düğüm arayüzü, gerektiğinde daha fazla görüntü giriş yuvası eklemenize olanak tanır. |
 
-**Not:** Düğümün çalışması için en az iki görüntü bağlamalısınız. İlk giriş yuvası her zaman zorunludur ve düğüm arayüzünde görünen "+" düğmesini kullanarak daha fazla ekleyebilirsiniz.
+**Not:** Düğümün çalışması için en az iki görüntü bağlamanız gerekir. İlk giriş yuvası her zaman zorunludur ve düğüm arayüzünde görünen "+" düğmesini kullanarak daha fazla yuva ekleyebilirsiniz.
 
-## Çıkışlar
+## Çıktılar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | IMAGE | Tüm giriş görüntülerinin üst üste istiflendiği tek bir toplu görüntü tensörü. |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `output` | IMAGE | Tüm giriş görüntülerinin üst üste istiflenmiş halini içeren tek bir toplu görüntü tensörü. |
+
+---
+**Source fingerprint (SHA-256):** `f756fb15760cd2518da9c3f88281d3ab3361b4c2b4820fe2be152e4db1cf102c`

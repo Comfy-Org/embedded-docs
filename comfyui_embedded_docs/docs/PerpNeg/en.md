@@ -17,3 +17,6 @@ The PerpNeg node applies perpendicular negative guidance to a model's sampling p
 | `model` | MODEL | The modified model with perpendicular negative guidance applied |
 
 **Note**: This node is deprecated and has been replaced by PerpNegGuider. It is marked as experimental and should not be used in production workflows.
+
+---
+**Source fingerprint (SHA-256):** `6be4ab03cfbda33ed3966ecd579c1a5e3242bdfb163fecefb9c80073a8827cae`

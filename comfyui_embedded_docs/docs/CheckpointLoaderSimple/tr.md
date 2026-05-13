@@ -1,23 +1,24 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoaderSimple/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoaderSimple/tr.md)
 
-Bu, model dosyalarını belirtilen konumlardan yükleyen ve bunları üç temel bileşene ayıran bir model yükleyici düğümüdür: ana model, metin kodlayıcı ve görüntü kodlayıcı/kod çözücü.
+## Genel Bakış
 
-Bu düğüm, `ComfyUI/models/checkpoints` klasöründeki tüm model dosyalarını ve `extra_model_paths.yaml` dosyanızda yapılandırılan ek yolları otomatik olarak algılar.
-
-1. **Model Uyumluluğu**: Seçilen modelin iş akışınızla uyumlu olduğundan emin olun. Farklı model türleri (SD1.5, SDXL, Flux vb.), karşılık gelen örnekleyiciler ve diğer düğümlerle eşleştirilmelidir.
-2. **Dosya Yönetimi**: Model dosyalarını `ComfyUI/models/checkpoints` klasörüne yerleştirin veya `extra_model_paths.yaml` aracılığıyla diğer yolları yapılandırın.
-3. **Arayüz Yenileme**: ComfyUI çalışırken yeni model dosyaları eklendiyse, açılır listede yeni dosyaları görmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
+Bir difüzyon modeli kontrol noktası (checkpoint) dosyasını yükler ve üç temel bileşene ayırır: gizli değişkenleri (latent) gürültüden arındırmak için kullanılan ana model, CLIP metin kodlayıcı ve VAE görüntü kodlayıcı/kod çözücü. Bu düğüm, `ComfyUI/models/checkpoints` klasöründeki ve `extra_model_paths.yaml` dosyanızda yapılandırılmış ek yollardaki tüm model dosyalarını otomatik olarak algılar.
 
 ## Girdiler
 
-| Parametre    | Veri Türü | Girdi Türü | Varsayılan | Aralık                           | Açıklama                                                                                             |
-|--------------|-----------|------------|------------|----------------------------------|------------------------------------------------------------------------------------------------------|
-| `ckpt_adı`  | STRING    | Widget     | null       | checkpoints klasöründeki tüm model dosyaları | Yüklenecek kontrol noktası model dosya adını seçin; bu, sonraki görüntü oluşturma için kullanılacak AI modelini belirler |
+| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
+|-----------|-----------|----------|-------|-------------|
+| `ckpt_name` | STRING | Evet | Kontrol noktaları klasöründeki tüm model dosyaları | Yüklenecek kontrol noktasının (model) adı. Sonraki görüntü oluşturma için kullanılacak AI modelini belirleyen kontrol noktası model dosyası adını seçin. |
+
+**Not:** ComfyUI çalışırken yeni model dosyaları eklenirse, açılır listede yeni dosyaları görmek için tarayıcıyı yenilemeniz (Ctrl+R) gerekir.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü   | Açıklama                                                                       |
-|-----------|-------------|--------------------------------------------------------------------------------|
-| `MODEL`   | MODEL       | Görüntü gürültü giderme oluşturumu için kullanılan ana difüzyon modeli, AI görüntü oluşturmanın çekirdek bileşeni |
-| `CLIP`    | CLIP        | Metin istemlerini kodlamak için kullanılan model, metin açıklamalarını AI'nın anlayabileceği bilgiye dönüştürür |
-| `VAE`     | VAE         | Görüntü kodlama ve kod çözme için kullanılan model, piksel uzayı ve gizli uzay arasında dönüşümden sorumludur |
+| Çıktı Adı | Veri Türü | Açıklama |
+|-------------|-----------|-------------|
+| `MODEL` | MODEL | Gizli değişkenleri gürültüden arındırmak için kullanılan model. Görüntü oluşturma için kullanılan temel difüzyon modelidir. |
+| `CLIP` | CLIP | Metin istemlerini (prompt) kodlamak için kullanılan CLIP modeli, metin açıklamalarını AI'nın anlayabileceği bilgilere dönüştürür. |
+| `VAE` | VAE | Görüntüleri gizli uzaya (latent space) kodlamak ve gizli uzaydan çözmek için kullanılan VAE modeli. |
+
+---
+**Source fingerprint (SHA-256):** `2fd8866ae659f8080f46c16d3a9864fa563d2090815d897ea2f42ba8d66d9b39`

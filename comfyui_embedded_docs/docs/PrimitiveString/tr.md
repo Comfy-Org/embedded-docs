@@ -1,15 +1,18 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveString/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveString/tr.md)
 
-String düğümü, iş akışınızda metin verilerini girmek ve iletmek için basit bir yol sağlar. Bir metin dizesini girdi olarak alır ve aynı dizeyi değiştirmeden çıktı olarak verir, bu da metin dizesi parametrelerine ihtiyaç duyan diğer düğümlere metin girdisi sağlamak için kullanışlıdır.
+String düğümü, iş akışınızda metin verilerini girmek ve iletmek için basit bir yol sağlar. Giriş olarak bir metin dizesi alır ve aynı dizeyi değiştirmeden çıktı olarak verir; bu da onu dize parametreleri gerektiren diğer düğümlere metin girdileri sağlamak için kullanışlı hale getirir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `değer` | STRING | Evet | Herhangi bir metin | Düğüm üzerinden iletilmek üzere olan metin dizesi |
+| `value` | STRING | Evet | Herhangi bir metin | Düğümden geçirilecek metin dizesi |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `output` | STRING | Girdi olarak sağlanan aynı metin dizesi |
+| `output` | STRING | Giriş olarak sağlanan aynı metin dizesi |
+
+---
+**Source fingerprint (SHA-256):** `eb99ed1b8572c0d28df7185d64a35dc71488459dcd11a46f81c5a1f202b25d62`

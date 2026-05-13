@@ -43,3 +43,6 @@ The TrainLoraNode creates and trains a LoRA (Low-Rank Adaptation) model on a dif
 | `lora` | LORA_MODEL | The trained LoRA weights that can be saved or applied to other models. |
 | `loss_map` | LOSS_MAP | A dictionary containing the training loss values over time. |
 | `steps` | INT | The total number of training steps completed (including any previous steps from existing LoRA). |
+
+---
+**Source fingerprint (SHA-256):** `df315ef416ff3ce81e6a526af2c4e5115980e6c35830825967e7189d4f8541d8`

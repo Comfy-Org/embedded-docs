@@ -16,3 +16,6 @@ The TextEncodeAceStepAudio node processes text inputs for audio conditioning by 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `conditioning` | CONDITIONING | The encoded conditioning data containing processed text tokens with applied lyrics strength |
+
+---
+**Source fingerprint (SHA-256):** `89600133d8b0edaa36958530dacffe812675b595b0d77db702bb7709567cd83d`

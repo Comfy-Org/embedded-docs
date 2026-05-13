@@ -21,3 +21,6 @@ This node generates images from text descriptions using the Recraft V4 or V4 Pro
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | IMAGE | The generated image or batch of images. |
+
+---
+**Source fingerprint (SHA-256):** `77d549a43aeee670b6c42069654017fb6b202ed83ca330389573b790bad6ae6e`

@@ -14,3 +14,6 @@ The VoxelToMeshBasic node converts 3D voxel data into mesh geometry. It processe
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `MESH` | MESH | The generated 3D mesh containing vertices and faces |
+
+---
+**Source fingerprint (SHA-256):** `36df962c84c99a83f243a59b6387874e42e7d05323bd84079dbab112d2f1b67c`

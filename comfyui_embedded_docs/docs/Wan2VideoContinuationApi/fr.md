@@ -12,11 +12,11 @@ Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui se po
 | `model.prompt` | STRING | Oui | - | Invite décrivant les éléments et les caractéristiques visuelles. Prend en charge l'anglais et le chinois. (par défaut : chaîne vide) |
 | `model.negative_prompt` | STRING | Oui | - | Invite négative décrivant ce qu'il faut éviter. (par défaut : chaîne vide) |
 | `model.resolution` | COMBO | Oui | `"720P"`<br>`"1080P"` | La résolution de la vidéo de sortie. |
-| `model.duration` | INT | Oui | 2 à 15 | Durée totale de la sortie en secondes. Le modèle génère la suite pour remplir le temps restant après le clip d'entrée. (par défaut : 5) |
-| `first_clip` | VIDEO | Oui | - | Vidéo d'entrée à partir de laquelle continuer. Durée : 2s-10s. Le rapport hauteur/largeur de la sortie est dérivé de cette vidéo. |
+| `model.duration` | INT | Oui | 2 à 15 | Durée totale de sortie en secondes. Le modèle génère la suite pour combler le temps restant après le clip d'entrée. (par défaut : 5) |
+| `first_clip` | VIDEO | Oui | - | Vidéo d'entrée à partir de laquelle continuer. Durée : 2s-10s. Le rapport hauteur/largeur de sortie est dérivé de cette vidéo. |
 | `last_frame` | IMAGE | Non | - | Image de la dernière image. La suite effectuera une transition vers cette image. |
 | `seed` | INT | Oui | 0 à 2147483647 | Graine à utiliser pour la génération. (par défaut : 0) |
-| `prompt_extend` | BOOLEAN | Oui | - | Indique s'il faut améliorer l'invite avec l'aide de l'IA. (par défaut : True) |
+| `prompt_extend` | BOOLEAN | Oui | - | Indique s'il faut améliorer l'invite avec l'assistance de l'IA. (par défaut : True) |
 | `watermark` | BOOLEAN | Oui | - | Indique s'il faut ajouter un filigrane généré par l'IA au résultat. (par défaut : False) |
 
 **Remarque :** La vidéo d'entrée `first_clip` doit avoir une durée comprise entre 2 et 10 secondes.
@@ -26,3 +26,6 @@ Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui se po
 | Nom de la sortie | Type de données | Description |
 | :--- | :--- | :--- |
 | `output` | VIDEO | La suite vidéo générée. |
+
+---
+**Source fingerprint (SHA-256):** `5e9d2c7800603660f5f994d125e1e32f2b310234c4b6a24d502c764d91be49e8`

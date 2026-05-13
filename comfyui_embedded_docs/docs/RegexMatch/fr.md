@@ -1,11 +1,11 @@
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/fr.md)
 
-Le nœud RegexMatch vérifie si une chaîne de texte correspond à un motif d'expression régulière spécifié. Il recherche dans la chaîne d'entrée toute occurrence du motif regex et retourne si une correspondance a été trouvée. Vous pouvez configurer divers indicateurs regex comme la sensibilité à la casse, le mode multiligne et le mode dotall pour contrôler le comportement de la correspondance de motif.
+Le nœud RegexMatch vérifie si une chaîne de texte contient une correspondance avec un motif d'expression régulière donné. Il recherche dans la chaîne d'entrée et renvoie un résultat simple oui/non indiquant si le motif a été trouvé dans le texte. Vous pouvez ajuster le fonctionnement de la recherche en activant des options comme la correspondance insensible à la casse ou le mode multiligne.
 
 ## Entrées
 
 | Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------|----------|-------|-------------|
+|-----------|-----------------|--------|-------|-------------|
 | `string` | STRING | Oui | - | La chaîne de texte dans laquelle rechercher des correspondances |
 | `regex_pattern` | STRING | Oui | - | Le motif d'expression régulière à comparer avec la chaîne |
 | `case_insensitive` | BOOLEAN | Non | - | Indique s'il faut ignorer la casse lors de la correspondance (par défaut : True) |
@@ -15,5 +15,8 @@ Le nœud RegexMatch vérifie si une chaîne de texte correspond à un motif d'ex
 ## Sorties
 
 | Nom de sortie | Type de données | Description |
-|-------------|-----------|-------------|
-| `matches` | BOOLEAN | Retourne True si le motif regex correspond à une partie de la chaîne d'entrée, False sinon |
+|---------------|-----------------|-------------|
+| `matches` | BOOLEAN | Renvoie True si le motif regex correspond à une partie de la chaîne d'entrée, False sinon |
+
+---
+**Source fingerprint (SHA-256):** `b0ee05277edd8600d880051aa33a940c01abc170553515ab02960f25b1aec2be`

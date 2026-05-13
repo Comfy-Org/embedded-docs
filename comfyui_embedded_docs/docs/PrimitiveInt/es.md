@@ -1,15 +1,18 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveInt/es.md)
 
-El nodo PrimitiveInt proporciona una forma sencilla de trabajar con valores enteros en tu flujo de trabajo. Toma una entrada entera y devuelve el mismo valor, lo que lo hace útil para pasar parámetros enteros entre nodos o establecer valores numéricos específicos para otras operaciones.
+El nodo PrimitiveInt proporciona una forma sencilla de trabajar con valores enteros en tu flujo de trabajo. Toma una entrada de tipo entero y genera el mismo valor, lo que resulta útil para pasar parámetros enteros entre nodos o establecer valores numéricos específicos para otras operaciones.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `valor` | INT | Sí | -9223372036854775807 a 9223372036854775807 | El valor entero a devolver |
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `value` | INT | Sí | -9223372036854775807 a 9223372036854775807 | El valor entero a generar (predeterminado: 0) |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
+| Nombre de salida | Tipo de dato | Descripción |
+|------------------|--------------|-------------|
 | `output` | INT | El valor entero de entrada pasado sin cambios |
+
+---
+**Source fingerprint (SHA-256):** `13b5ff6703498fd37ae48d574e010cf78aa2bfc514b68c34b2cf6740ed75c834`

@@ -1,16 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2Conditioning/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2Conditioning/tr.md)
 
-Hunyuan3Dv2Conditioning düğümü, video modelleri için koşullandırma verisi oluşturmak üzere CLIP görüntü çıktısını işler. Görüntü çıktısından son gizli durum yerleştirmelerini (embeddings) çıkarır ve hem pozitif hem de negatif koşullandırma çiftleri oluşturur. Pozitif koşullandırma gerçek yerleştirmeleri kullanırken, negatif koşullandırma aynı şekle sahip sıfır değerli yerleştirmeler kullanır.
+Hunyuan3Dv2Conditioning düğümü, 3B modeller için koşullandırma verileri oluşturmak amacıyla CLIP görüntü çıktısını işler. Görüntü çıktısından son gizli durum yerleştirmelerini (embeddings) çıkarır ve hem pozitif hem de negatif koşullandırma çiftleri oluşturur. Pozitif koşullandırma, gerçek yerleştirmeleri kullanırken, negatif koşullandırma aynı şekle sahip sıfır değerli yerleştirmeleri kullanır.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `clip_görü_çıktısı` | CLIP_VISION_OUTPUT | Evet | - | Görsel yerleştirmeler içeren bir CLIP görüntü modeli çıktısı |
+| `clip_vision_output` | CLIP_VISION_OUTPUT | Evet | - | Görsel yerleştirmeler içeren bir CLIP görüntü modelinin çıktısı |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
+| Çıkış Adı | Veri Türü | Açıklama |
 |-------------|-----------|-------------|
-| `negatif` | CONDITIONING | CLIP görüntü yerleştirmelerini içeren pozitif koşullandırma verisi |
-| `negative` | CONDITIONING | Pozitif yerleştirmelerin şekliyle eşleşen sıfır değerli yerleştirmeler içeren negatif koşullandırma verisi |
+| `positive` | CONDITIONING | CLIP görüntü yerleştirmelerini içeren pozitif koşullandırma verileri |
+| `negative` | CONDITIONING | Pozitif yerleştirmelerin şekliyle eşleşen sıfır değerli yerleştirmeler içeren negatif koşullandırma verileri |
+
+---
+**Source fingerprint (SHA-256):** `3a32967d62a0645b0c375b17ab96e20805c2e0005e585dddf5a3a77d35994fec`

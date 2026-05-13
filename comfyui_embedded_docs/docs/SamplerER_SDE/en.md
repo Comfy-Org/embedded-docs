@@ -7,9 +7,9 @@ The SamplerER_SDE node provides specialized sampling methods for diffusion model
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `solver_type` | COMBO | Yes | "ER-SDE"<br>"Reverse-time SDE"<br>"ODE" | The type of solver to use for sampling. Determines the mathematical approach for the diffusion process. |
-| `max_stage` | INT | Yes | 1-3 | The maximum number of stages for the sampling process (default: 3). Controls the computational complexity and quality. |
-| `eta` | FLOAT | Yes | 0.0-100.0 | Stochastic strength of reverse-time SDE (default: 1.0). When eta=0, it reduces to deterministic ODE. This setting doesn't apply to ER-SDE solver type. |
-| `s_noise` | FLOAT | Yes | 0.0-100.0 | Noise scaling factor for the sampling process (default: 1.0). Controls the amount of noise applied during sampling. |
+| `max_stage` | INT | No | 1-3 | The maximum number of stages for the sampling process (default: 3). Controls the computational complexity and quality. |
+| `eta` | FLOAT | No | 0.0-100.0 | Stochastic strength of reverse-time SDE (default: 1.0). When eta=0, it reduces to deterministic ODE. This setting doesn't apply to ER-SDE solver type. |
+| `s_noise` | FLOAT | No | 0.0-100.0 | Noise scaling factor for the sampling process (default: 1.0). Controls the amount of noise applied during sampling. |
 
 **Parameter Constraints:**
 
@@ -21,3 +21,6 @@ The SamplerER_SDE node provides specialized sampling methods for diffusion model
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `sampler` | SAMPLER | A configured sampler object that can be used in the sampling pipeline with the specified solver settings. |
+
+---
+**Source fingerprint (SHA-256):** `bc24ec3c5dc645aebf55ef3392c5f4a40dcf0461b4b77731e8fe7ff397dcfadf`

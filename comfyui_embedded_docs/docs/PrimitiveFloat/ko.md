@@ -1,15 +1,18 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrimitiveFloat/ko.md)
 
-PrimitiveFloat 노드는 워크플로우에서 사용할 수 있는 부동 소수점 숫자 값을 생성합니다. 단일 숫자 입력을 받아 동일한 값을 출력하며, ComfyUI 파이프라인 내에서 다양한 노드 간에 부동 소수점 값을 정의하고 전달할 수 있도록 합니다.
+PrimitiveFloat 노드는 워크플로우에서 사용할 수 있는 부동소수점 숫자 값을 생성합니다. 단일 숫자 입력을 받아 동일한 값을 출력하므로, ComfyUI 파이프라인의 여러 노드 간에 float 값을 정의하고 전달할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `값` | FLOAT | 예 | -sys.maxsize ~ sys.maxsize | 출력할 부동 소수점 숫자 값 |
+| `value` | FLOAT | 예 | -sys.maxsize ~ sys.maxsize (단계: 0.1) | 출력할 부동소수점 숫자 값입니다 (기본값: 0.0) |
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `output` | FLOAT | 입력된 부동 소수점 숫자 값 |
+| `output` | FLOAT | 입력된 부동소수점 숫자 값입니다 |
+
+---
+**Source fingerprint (SHA-256):** `a12473ac0efac903249f249770bec92a562b1ef6dede45fc0296e0e397a0754f`

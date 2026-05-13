@@ -1,28 +1,33 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanReferenceVideoApi/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanReferenceVideoApi/zh-TW.md)
 
-Wan Reference to Video 節點使用一個或多個輸入參考影片的視覺外觀和語音，結合文字提示詞來生成新影片。它能在根據您的描述創建新內容的同時，保持與參考素材中角色的一致性。
+## 概述
 
-## 輸入參數
+Wan 參考影片節點使用一個或多個輸入參考影片的視覺外觀和聲音，結合文字提示來生成新的影片。它在根據您的描述創建新內容的同時，保持與參考素材中角色的一致性。
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | 是 | `"wan2.6-r2v"` | 用於影片生成的特定 AI 模型。 |
-| `prompt` | STRING | 是 | - | 對新影片中元素和視覺特徵的描述。支援英文和中文。使用如 `character1`、`character2` 等標識符來指代參考影片中的角色。 |
-| `negative_prompt` | STRING | 否 | - | 描述希望在生成的影片中避免出現的元素或特徵。 |
-| `reference_videos` | AUTOGROW | 是 | - | 用作角色外觀和語音參考的影片輸入列表。您必須提供至少一個影片。每個影片可以被指定一個名稱，例如 `character1`、`character2` 或 `character3`。 |
+| `prompt` | STRING | 是 | - | 描述新影片的元素和視覺特徵。支援英文和中文。使用 `character1` 和 `character2` 等識別碼來指代參考影片中的角色。 |
+| `negative_prompt` | STRING | 否 | - | 描述在生成的影片中應避免的元素或特徵。 |
+| `reference_videos` | AUTOGROW | 是 | - | 用作角色外觀和聲音參考的影片輸入列表。您必須提供至少一個影片。每個影片可以分配一個名稱，例如 `character1`、`character2` 或 `character3`。 |
 | `size` | COMBO | 是 | `"720p: 1:1 (960x960)"`<br>`"720p: 16:9 (1280x720)"`<br>`"720p: 9:16 (720x1280)"`<br>`"720p: 4:3 (1088x832)"`<br>`"720p: 3:4 (832x1088)"`<br>`"1080p: 1:1 (1440x1440)"`<br>`"1080p: 16:9 (1920x1080)"`<br>`"1080p: 9:16 (1080x1920)"`<br>`"1080p: 4:3 (1632x1248)"`<br>`"1080p: 3:4 (1248x1632)"` | 輸出影片的解析度和長寬比。 |
-| `duration` | INT | 是 | 5 到 10 | 生成影片的長度（單位：秒）。該值必須是 5 的倍數（預設值：5）。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 用於可重現結果的隨機種子值。值為 0 將生成一個隨機種子。 |
-| `shot_type` | COMBO | 是 | `"single"`<br>`"multi"` | 指定生成的影片是單一連續鏡頭，還是包含多個有剪輯的鏡頭。 |
-| `watermark` | BOOLEAN | 否 | - | 啟用時，會在最終影片上添加一個 AI 生成的水印（預設值：False）。 |
+| `duration` | INT | 是 | 5 到 10 | 生成影片的長度，單位為秒。該值必須是 5 的倍數（預設值：5）。 |
+| `seed` | INT | 否 | 0 到 2147483647 | 用於可重現結果的隨機種子值。值為 0 將生成隨機種子。 |
+| `shot_type` | COMBO | 是 | `"single"`<br>`"multi"` | 指定生成的影片是單一連續鏡頭，還是包含多個鏡頭切換。 |
+| `watermark` | BOOLEAN | 否 | - | 啟用後，會在最終影片中添加 AI 生成的水印（預設值：False）。 |
 
 **限制條件：**
 
 * `reference_videos` 中提供的每個影片時長必須在 2 到 30 秒之間。
 * `duration` 參數僅限於特定值（5 或 10 秒）。
 
-## 輸出結果
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `output` | VIDEO | 新生成的影片檔案。 |
+
+---
+**Source fingerprint (SHA-256):** `ed29f0bd3a1b30a81c94896976c4f9ff7bf5d0bcafaba66d70be61fce1418962`

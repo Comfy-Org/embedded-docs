@@ -8,16 +8,21 @@ The Reve Image Edit node allows you to modify an existing image based on a text 
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The image to edit. |
 | `edit_instruction` | STRING | Yes | - | Text description of how to edit the image. Maximum 2560 characters. |
-| `model` | MODEL | Yes | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"`<br>`"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Model version to use for editing. The options include specific model versions and aspect ratio settings. |
+| `model` | MODEL | Yes | `"reve-edit@20250915"`<br>`"reve-edit-fast@20251030"` | Model version to use for editing. |
+| `model.aspect_ratio` | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"3:2"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | The aspect ratio for the edited image. When set to "auto", the aspect ratio is determined automatically. |
+| `model.test_time_scaling` | FLOAT | No | - | Test-time scaling factor for the model. Higher values may improve quality but increase processing time. |
 | `upscale` | COMBO | No | `"disabled"`<br>`"enabled"` | Controls whether to upscale the generated image. |
-| `upscale_factor` | FLOAT | No | - | The factor by which to upscale the image when upscaling is enabled. |
+| `upscale.upscale_factor` | FLOAT | No | - | The factor by which to upscale the image when upscaling is enabled. |
 | `remove_background` | BOOLEAN | No | - | Controls whether to remove the background from the generated image. |
 | `seed` | INT | No | 0 to 2147483647 | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. (default: 0) |
 
-**Note:** The `upscale_factor` parameter is only relevant when the `upscale` parameter is set to `"enabled"`.
+**Note:** The `upscale.upscale_factor` parameter is only relevant when the `upscale` parameter is set to `"enabled"`.
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The edited image generated based on the instruction. |
+
+---
+**Source fingerprint (SHA-256):** `0a9504ae5e8b7216d309fe3ba95c014da32eadbf11cfc5701247ba5973dd98be`

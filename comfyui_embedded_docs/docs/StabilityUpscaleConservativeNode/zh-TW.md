@@ -1,21 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleConservativeNode/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleConservativeNode/zh-TW.md)
 
-{heading_overview}
+# 穩定性保守放大節點
 
-將影像以最小變更的方式放大至 4K 解析度。此節點使用 Stability AI 的保守式放大技術來提升影像解析度，同時保留原始內容並僅進行細微調整。
+以最小改動將影像放大至 4K 解析度。此節點使用 Stability AI 的保守放大技術，在提升影像解析度的同時保留原始內容，僅進行細微調整。
 
-{heading_inputs}
+## 輸入
 
-| 參數 | 資料類型 | 必填 | 範圍 | 描述 |
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `影像` | IMAGE | 是 | - | 要進行放大的輸入影像 |
-| `提示詞` | STRING | 是 | - | 您希望在輸出影像中看到的內容。一個強而有力、描述性的提示，能明確定義元素、顏色和主題，將帶來更好的結果。（預設值：空字串） |
-| `創意度` | FLOAT | 是 | 0.2-0.5 | 控制產生不受初始影像強烈制約之額外細節的可能性。（預設值：0.35） |
-| `種子` | INT | 是 | 0-4294967294 | 用於產生雜訊的隨機種子。（預設值：0） |
-| `負向提示詞` | STRING | 否 | - | 您不希望出現在輸出影像中的關鍵字。這是一項進階功能。（預設值：空字串） |
+| `image` | IMAGE | 是 | - | 要放大的輸入影像 |
+| `prompt` | STRING | 是 | - | 您希望在輸出影像中看到的內容。一個強而有力、描述性強的提示詞，清楚定義元素、顏色和主體，將帶來更好的結果。（預設值：空字串） |
+| `creativity` | FLOAT | 是 | 0.2-0.5 | 控制產生未受初始影像強烈約束的額外細節的可能性。（預設值：0.35） |
+| `seed` | INT | 是 | 0-4294967294 | 用於產生噪聲的隨機種子。（預設值：0） |
+| `negative_prompt` | STRING | 否 | - | 您不希望出現在輸出影像中的關鍵詞。這是一項進階功能。（預設值：空字串） |
 
-{heading_outputs}
+## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
+| 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `影像` | IMAGE | 放大至 4K 解析度的影像 |
+| `image` | IMAGE | 放大至 4K 解析度的影像 |
+
+---
+**Source fingerprint (SHA-256):** `0a6eed22a37c1019ee97035bba70660b9619b0d65e443111d1d330968ded009a`

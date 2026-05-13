@@ -1,0 +1,22 @@
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDSampler/en.md)
+
+## Overview
+
+The VOIDSampler node provides a specialized DDIM sampling method designed specifically for VOID inpainting models. It implements the same denoising process used during VOID model training, without the noise scaling that standard KSamplers apply. This node is intended for use with SamplerCustom or SamplerCustomAdvanced nodes, and should be paired with RandomNoise or VOIDWarpedNoiseSource.
+
+## Inputs
+
+This node has no configurable input parameters. It is a self-contained sampler that applies a fixed DDIM sampling algorithm.
+
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| *No inputs* | - | - | - | This node does not accept any input parameters. |
+
+## Outputs
+
+| Output Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `SAMPLER` | SAMPLER | A sampler object implementing the VOID DDIM algorithm, ready to be connected to SamplerCustom or SamplerCustomAdvanced nodes. |
+
+---
+**Source fingerprint (SHA-256):** `c6f1be9a90003906c54cced20e8136ab7e4f7e7118e63b67ce366eeb7f790dca`

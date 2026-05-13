@@ -1,18 +1,20 @@
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetImageSize/es.md)
 
-El nodo GetImageSize extrae las dimensiones e información de lote de una imagen de entrada. Devuelve el ancho, alto y tamaño del lote de la imagen, mientras también muestra esta información como texto de progreso en la interfaz del nodo. Los datos originales de la imagen pasan sin cambios.
+El nodo GetImageSize extrae las dimensiones e información de lote de una imagen de entrada. Devuelve el ancho, alto y tamaño de lote de la imagen, mostrando también esta información como texto de progreso en la interfaz del nodo. Los datos de la imagen original pasan sin modificaciones.
 
 ## Entradas
 
-| Parámetro | Tipo de Datos | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Sí | - | La imagen de entrada de la cual extraer la información de tamaño |
-| `unique_id` | UNIQUE_ID | No | - | Identificador interno utilizado para mostrar información de progreso |
+| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `image` | IMAGE | Sí | - | La imagen de entrada de la cual extraer información de tamaño |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Datos | Descripción |
-|-------------|-----------|-------------|
+| Nombre de Salida | Tipo de Dato | Descripción |
+|------------------|--------------|-------------|
 | `width` | INT | El ancho de la imagen de entrada en píxeles |
-| `height` | INT | La altura de la imagen de entrada en píxeles |
+| `height` | INT | El alto de la imagen de entrada en píxeles |
 | `batch_size` | INT | El número de imágenes en el lote |
+
+---
+**Source fingerprint (SHA-256):** `5cd19ae762d2403c6c5d0740cd5f8c17913daea737fddcff8f0d9da2210e82ab`

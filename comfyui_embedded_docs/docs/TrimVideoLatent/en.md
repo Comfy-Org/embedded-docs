@@ -7,10 +7,13 @@ The TrimVideoLatent node removes frames from the beginning of a video latent rep
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `samples` | LATENT | Yes | - | The input latent video representation containing the video frames to be trimmed |
-| `trim_amount` | INT | No | 0 to 99999 | The number of frames to remove from the beginning of the video (default: 0) |
+| `trim_amount` | INT | Yes | 0 to 99999 | The number of frames to remove from the beginning of the video (default: 0) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | LATENT | The trimmed latent video representation with the specified number of frames removed from the beginning |
+
+---
+**Source fingerprint (SHA-256):** `7fd482533d1f63219565a3a25776173c77c419fbf5086015d42136f5bfdfbed2`

@@ -6,10 +6,13 @@ The PrimitiveFloat node creates a floating-point number value that can be used i
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `value` | FLOAT | Yes | -sys.maxsize to sys.maxsize | The floating-point number value to output |
+| `value` | FLOAT | Yes | -sys.maxsize to sys.maxsize (step: 0.1) | The floating-point number value to output (default: 0.0) |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `output` | FLOAT | The input floating-point number value |
+
+---
+**Source fingerprint (SHA-256):** `a12473ac0efac903249f249770bec92a562b1ef6dede45fc0296e0e397a0754f`

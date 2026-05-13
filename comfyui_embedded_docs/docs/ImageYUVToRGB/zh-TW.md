@@ -1,19 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageYUVToRGB/zh-TW.md)
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageYUVToRGB/zh-TW.md)
 
-ImageYUVToRGB 節點將 YUV 色彩空間的影像轉換為 RGB 色彩空間。它接收三個分別代表 Y（亮度）、U（藍色投影）和 V（紅色投影）通道的輸入影像，並透過色彩空間轉換將它們組合成單一的 RGB 影像。
+## 概述
 
-## 輸入參數
+ImageYUVToRGB 節點可將 YUV 色彩空間的影像轉換為 RGB 色彩空間。此節點接收三個分別代表 Y（亮度）、U（藍色投影）和 V（紅色投影）通道的獨立輸入影像，並透過色彩空間轉換將其組合成單一 RGB 影像。
 
-| 參數名稱 | 資料類型 | 必填 | 數值範圍 | 參數說明 |
+## 輸入
+
+| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `Y` | IMAGE | 是 | - | Y（亮度）通道的輸入影像 |
-| `U` | IMAGE | 是 | - | U（藍色投影）通道的輸入影像 |
-| `V` | IMAGE | 是 | - | V（紅色投影）通道的輸入影像 |
+| `Y` | IMAGE | 是 | - | Y（亮度）通道輸入影像 |
+| `U` | IMAGE | 是 | - | U（藍色投影）通道輸入影像 |
+| `V` | IMAGE | 是 | - | V（紅色投影）通道輸入影像 |
 
-**注意：** 所有三個輸入影像（Y、U 和 V）必須同時提供，並且應具有相容的尺寸以確保正確轉換。
+**注意：** 三個輸入影像（Y、U 和 V）必須同時提供，且應具有相容的尺寸以確保正確轉換。
 
-## 輸出結果
+## 輸出
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
 | `output` | IMAGE | 轉換後的 RGB 影像 |
+
+---
+**Source fingerprint (SHA-256):** `ee160be21fce75b3a3e41e25dc1cb0b20305383ff26f9698f07b93d42f98c64f`

@@ -17,3 +17,6 @@ The EasyCache node implements a native caching system for models to improve perf
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `model` | MODEL | The model with EasyCache functionality added. |
+
+---
+**Source fingerprint (SHA-256):** `e9d9bf5ecae8034b562f1a27acf528d1f3241d7d28621beba149d3e9bd66a247`

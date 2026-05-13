@@ -1,23 +1,26 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftTextToVectorNode/ko.md)
 
-프롬프트와 해상도를 기반으로 SVG를 동기적으로 생성합니다. 이 노드는 텍스트 프롬프트를 Recraft API로 전송하여 벡터 일러스트레이션을 생성하고 생성된 SVG 콘텐츠를 반환합니다.
+텍스트 프롬프트와 해상도를 기반으로 SVG 벡터 일러스트레이션을 동기식으로 생성합니다. 이 노드는 프롬프트를 Recraft API로 전송하고 생성된 SVG 콘텐츠를 반환합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
-| `프롬프트` | STRING | 예 | - | 이미지 생성을 위한 프롬프트입니다. (기본값: "") |
-| `하위 스타일` | COMBO | 예 | 여러 옵션 사용 가능 | 생성에 사용할 특정 일러스트레이션 스타일입니다. 옵션은 RecraftStyleV3에서 사용 가능한 벡터 일러스트레이션 하위 스타일에 따라 결정됩니다. |
-| `크기` | COMBO | 예 | 여러 옵션 사용 가능 | 생성된 이미지의 크기입니다. (기본값: 1024x1024) |
-| `개수` | INT | 예 | 1-6 | 생성할 이미지의 개수입니다. (기본값: 1, 최소: 1, 최대: 6) |
-| `시드` | INT | 예 | 0-18446744073709551615 | 노드가 재실행되어야 하는지 결정하는 시드 값입니다. 실제 결과는 시드 값과 관계없이 비결정적입니다. (기본값: 0, 최소: 0, 최대: 18446744073709551615) |
-| `부정 프롬프트` | STRING | 아니오 | - | 이미지에서 원하지 않는 요소에 대한 선택적 텍스트 설명입니다. (기본값: "") |
-| `Recraft 제어` | CONTROLS | 아니오 | - | Recraft Controls 노드를 통한 생성에 대한 선택적 추가 제어입니다. |
+| `prompt` | STRING | 예 | - | 이미지 생성을 위한 프롬프트입니다. (기본값: "") |
+| `substyle` | COMBO | 예 | `"2d_character"`<br>`"2d_gradient"`<br>`"2d_illustration"`<br>`"2d_flat_character"`<br>`"2d_flat_illustration"`<br>`"2d_art"`<br>`"2d_art_character"`<br>`"2d_pattern"`<br>`"2d_pixel_art"`<br>`"2d_cyberpunk"`<br>`"2d_engraving"`<br>`"2d_black_and_white"`<br>`"2d_ink"`<br>`"2d_sketch"`<br>`"2d_watercolor"`<br>`"2d_animation"`<br>`"2d_comic"`<br>`"2d_children_illustration"`<br>`"2d_vintage"`<br>`"2d_retro"`<br>`"2d_hand_drawn"`<br>`"2d_psychedelic"`<br>`"2d_graffiti"`<br>`"2d_ukiyo_e"`<br>`"2d_woodcut"`<br>`"2d_art_deco"`<br>`"2d_art_nouveau"`<br>`"2d_bauhaus"`<br>`"2d_constructivism"`<br>`"2d_cubism"`<br>`"2d_futurism"`<br>`"2d_glitch"`<br>`"2d_impressionism"`<br>`"2d_naive"`<br>`"2d_pointillism"`<br>`"2d_pop_art"`<br>`"2d_realism"`<br>`"2d_renaissance"`<br>`"2d_rococo"`<br>`"2d_romanticism"`<br>`"2d_surrealism"`<br>`"2d_suprematism"`<br>`"2d_symbolism"`<br>`"2d_expressionism"`<br>`"2d_abstract"`<br>`"2d_minimalism"`<br>`"2d_contemporary"`<br>`"2d_modern"`<br>`"2d_brutalism"`<br>`"2d_metaphysical"`<br>`"2d_mannerism"`<br>`"2d_baroque"`<br>`"2d_neoclassicism"`<br>`"2d_orientalism"`<br>`"2d_primitivism"`<br>`"2d_fauvism"`<br>`"2d_rayonism"`<br>`"2d_orphism"`<br>`"2d_vorticism"`<br>`"2d_dadaism"`<br>`"2d_neo_expressionism"`<br>`"2d_transavantgarde"`<br>`"2d_new_wild"`<br>`"2d_graffiti_classic"`<br>`"2d_graffiti_modern"`<br>`"2d_graffiti_wildstyle"`<br>`"2d_graffiti_bubble"`<br>`"2d_graffiti_throwup"`<br>`"2d_graffiti_tag"`<br>`"2d_graffiti_blockbuster"`<br>`"2d_graffiti_mural"`<br>`"2d_graffiti_stencil"`<br>`"2d_graffiti_3d"`<br>`"2d_graffiti_character"`<br>`"2d_graffiti_abstract"`<br>`"2d_graffiti_urban"`<br>`"2d_graffiti_neo_muralism"`<br>`"2d_graffiti_post_graffiti"`<br>`"2d_graffiti_street_art"` | 생성에 사용할 특정 벡터 일러스트레이션 스타일입니다. |
+| `size` | COMBO | 예 | `"1024x1024"`<br>`"1024x2048"`<br>`"2048x1024"`<br>`"2048x2048"`<br>`"512x512"`<br>`"512x1024"`<br>`"1024x512"`<br>`"2048x512"`<br>`"512x2048"` | 생성된 이미지의 크기입니다. (기본값: "1024x1024") |
+| `n` | INT | 예 | 1-6 | 생성할 이미지의 개수입니다. (기본값: 1, 최소값: 1, 최대값: 6) |
+| `seed` | INT | 예 | 0-18446744073709551615 | 노드 재실행 여부를 결정하는 시드입니다. 시드와 관계없이 실제 결과는 비결정적입니다. (기본값: 0, 최소값: 0, 최대값: 18446744073709551615) |
+| `negative_prompt` | STRING | 아니요 | - | 이미지에서 원하지 않는 요소에 대한 선택적 텍스트 설명입니다. (기본값: "") |
+| `recraft_controls` | CONTROLS | 아니요 | - | Recraft Controls 노드를 통한 생성에 대한 선택적 추가 제어입니다. |
 
-**참고:** `seed` 매개변수는 노드가 재실행되는 시점만 제어하며 생성 결과를 결정적으로 만들지 않습니다.
+**참고:** `seed` 매개변수는 노드가 재실행되는 시점만 제어하며, 생성 결과를 결정적으로 만들지는 않습니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
 | `SVG` | SVG | SVG 형식으로 생성된 벡터 일러스트레이션 |
+
+---
+**Source fingerprint (SHA-256):** `3ac4057fa100a207c0400d0d01756899fc02261e3fb7d962fb0057e6c6519100`

@@ -14,3 +14,6 @@ The LTXV Audio VAE Encode node takes an audio input and compresses it into a sma
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `Audio Latent` | LATENT | The compressed latent representation of the input audio. The output includes the latent samples, the sample rate of the VAE model, and a type identifier. |
+
+---
+**Source fingerprint (SHA-256):** `fc10d8bbdca5150b7c87adb52960b8690397c3d003c89f9ec6a8410c541a347f`

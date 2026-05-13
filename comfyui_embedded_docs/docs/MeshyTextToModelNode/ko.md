@@ -1,28 +1,33 @@
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/ko.md)
 
-Meshy: 텍스트에서 모델로 노드는 Meshy API를 사용하여 텍스트 설명으로부터 3D 모델을 생성합니다. 사용자의 프롬프트와 설정을 API에 요청으로 보낸 후, 생성이 완료될 때까지 기다린 다음 결과 모델 파일을 다운로드합니다.
+# Meshy: 텍스트-모델 노드
+
+Meshy: 텍스트-모델 노드는 Meshy API를 사용하여 텍스트 설명으로부터 3D 모델을 생성합니다. 프롬프트와 설정을 포함한 요청을 API에 전송한 후, 생성이 완료될 때까지 대기하고 결과 모델 파일을 다운로드합니다.
 
 ## 입력
 
 | 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | 예 | `"latest"` | 사용할 AI 모델 버전을 지정합니다. 현재는 "latest" 버전만 사용 가능합니다. |
-| `prompt` | STRING | 예 | - | 생성하려는 3D 모델의 텍스트 설명입니다. 길이는 1자에서 600자 사이여야 합니다. |
+| `prompt` | STRING | 예 | - | 생성하려는 3D 모델의 텍스트 설명입니다. 1자에서 600자 사이여야 합니다. |
 | `style` | COMBO | 예 | `"realistic"`<br>`"sculpture"` | 생성된 3D 모델의 예술적 스타일입니다. |
-| `should_remesh` | DYNAMIC COMBO | 예 | `"true"`<br>`"false"` | 생성된 메시를 처리할지 여부를 제어합니다. "false"로 설정하면 노드는 처리되지 않은 삼각형 메시를 반환합니다. "true"를 선택하면 토폴로지와 폴리곤 수에 대한 추가 매개변수가 나타납니다. |
-| `topology` | COMBO | 조건부* | `"triangle"`<br>`"quad"` | 리메시된 모델의 목표 폴리곤 타입입니다. 이 매개변수는 `should_remesh`가 "true"로 설정된 경우에만 사용 가능하며 필수입니다. |
-| `target_polycount` | INT | 조건부* | 100 - 300000 | 리메시된 모델의 목표 폴리곤 수입니다. 기본값은 300000입니다. 이 매개변수는 `should_remesh`가 "true"로 설정된 경우에만 사용 가능하며 필수입니다. |
+| `should_remesh` | DYNAMIC COMBO | 예 | `"true"`<br>`"false"` | 생성된 메시의 후처리 여부를 제어합니다. "false"로 설정하면 노드는 후처리되지 않은 삼각형 메시를 반환합니다. "true"를 선택하면 토폴로지와 폴리곤 수에 대한 추가 매개변수가 표시됩니다. |
+| `topology` | COMBO | 아니요* | `"triangle"`<br>`"quad"` | 리메시된 모델의 대상 폴리곤 유형입니다. 이 매개변수는 `should_remesh`가 "true"로 설정된 경우에만 사용 가능하며 필수입니다. |
+| `target_polycount` | INT | 아니요* | 100 - 300000 | 리메시된 모델의 대상 폴리곤 수입니다. 기본값은 300000입니다. 이 매개변수는 `should_remesh`가 "true"로 설정된 경우에만 사용 가능하며 필수입니다. |
 | `symmetry_mode` | COMBO | 예 | `"auto"`<br>`"on"`<br>`"off"` | 생성된 모델의 대칭을 제어합니다. |
 | `pose_mode` | COMBO | 예 | `""`<br>`"A-pose"`<br>`"T-pose"` | 생성된 모델의 포즈 모드를 지정합니다. 빈 문자열은 특정 포즈를 요청하지 않음을 의미합니다. |
-| `seed` | INT | 예 | 0 - 2147483647 | 생성을 위한 시드 값입니다. 이 값을 설정하면 노드를 다시 실행할지 여부를 제어하지만, 결과는 시드 값과 관계없이 비결정적입니다. 기본값은 0입니다. |
+| `seed` | INT | 예 | 0 - 2147483647 | 생성을 위한 시드 값입니다. 이 값을 설정하면 노드의 재실행 여부가 결정되지만, 시드 값과 관계없이 결과는 비결정적입니다. 기본값은 0입니다. |
 
-*참고: `topology` 및 `target_polycount` 매개변수는 조건부로 필수입니다. 이 매개변수들은 `should_remesh` 매개변수가 "true"로 설정된 경우에만 나타나며 설정해야 합니다.
+*참고: `topology`와 `target_polycount` 매개변수는 조건부 필수 항목입니다. 이 매개변수는 `should_remesh` 매개변수가 "true"로 설정된 경우에만 나타나며 설정해야 합니다.
 
 ## 출력
 
 | 출력 이름 | 데이터 타입 | 설명 |
 |-------------|-----------|-------------|
-| `model_file` | STRING | 생성된 GLB 모델의 파일명입니다. 이 출력은 이전 버전과의 호환성을 위해 제공됩니다. |
+| `model_file` | STRING | 생성된 GLB 모델의 파일 이름입니다. 이 출력은 하위 호환성을 위해 제공됩니다. |
 | `meshy_task_id` | MESHY_TASK_ID | Meshy API 작업의 고유 식별자입니다. |
-| `GLB` | FILE3DGLB | GLB 형식으로 생성된 3D 모델 파일입니다. |
-| `FBX` | FILE3DFBX | FBX 형식으로 생성된 3D 모델 파일입니다. |
+| `GLB` | FILE3DGLB | GLB 형식의 생성된 3D 모델 파일입니다. |
+| `FBX` | FILE3DFBX | FBX 형식의 생성된 3D 모델 파일입니다. |
+
+---
+**Source fingerprint (SHA-256):** `122eee5488a89433bd1f3bf79ccd8e9c51fd23cc1dfb208c39a0628c2ad3d817`

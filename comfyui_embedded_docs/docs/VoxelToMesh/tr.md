@@ -1,17 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VoxelToMesh/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VoxelToMesh/tr.md)
 
-VoxelToMesh düğümü, 3B voksel verilerini farklı algoritmalar kullanarak mesh geometrisine dönüştürür. Voksel ızgaralarını işler ve 3B mesh temsilini oluşturan köşe noktaları ve yüzeyler üretir. Düğüm, birden fazla dönüştürme algoritmasını destekler ve yüzey çıkarımını kontrol etmek için eşik değerinin ayarlanmasına olanak tanır.
+VoxelToMeshBasic düğümü, belirtilen bir eşik değerinde yüzey çıkararak 3B voxel verilerini ağ geometrisine dönüştürür. Girişteki her voxel ızgarasını işler ve 3B ağ temsili oluşturan köşeler ve yüzeyler üretir.
 
-## Girdiler
+## Girişler
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `voksel` | VOXEL | Evet | - | Mesh geometrisine dönüştürülecek giriş voksel verisi |
-| `algoritma` | COMBO | Evet | "surface net"<br>"basic" | Voksel verisinden mesh dönüşümü için kullanılan algoritma |
-| `eşik` | FLOAT | Evet | -1.0 - 1.0 | Yüzey çıkarımı için eşik değeri (varsayılan: 0.6) |
+|-----------|-----------|----------|--------|----------|
+| `voxel` | VOXEL | Evet | - | Ağ geometrisine dönüştürülecek giriş voxel verisi |
+| `threshold` | FLOAT | Evet | -1.0 ile 1.0 arası | Yüzey çıkarma için eşik değeri (varsayılan: 0.6) |
 
-## Çıktılar
+## Çıkışlar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `MESH` | MESH | Köşe noktaları ve yüzeyler içeren oluşturulmuş 3B mesh |
+| Çıkış Adı | Veri Türü | Açıklama |
+|-----------|-----------|----------|
+| `MESH` | MESH | Tüm giriş voxel ızgaralarından birleştirilmiş köşeler ve yüzeyler içeren oluşturulan 3B ağ |
+
+---
+**Source fingerprint (SHA-256):** `36df962c84c99a83f243a59b6387874e42e7d05323bd84079dbab112d2f1b67c`

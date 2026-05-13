@@ -7,7 +7,6 @@ The GetImageSize node extracts the dimensions and batch information from an inpu
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image from which to extract size information |
-| `unique_id` | UNIQUE_ID | No | - | Internal identifier used for displaying progress information |
 
 ## Outputs
 
@@ -16,3 +15,6 @@ The GetImageSize node extracts the dimensions and batch information from an inpu
 | `width` | INT | The width of the input image in pixels |
 | `height` | INT | The height of the input image in pixels |
 | `batch_size` | INT | The number of images in the batch |
+
+---
+**Source fingerprint (SHA-256):** `5cd19ae762d2403c6c5d0740cd5f8c17913daea737fddcff8f0d9da2210e82ab`

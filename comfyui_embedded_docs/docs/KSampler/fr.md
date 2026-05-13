@@ -1,23 +1,84 @@
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/fr.md)
 
-Le nœud KSampler est conçu pour des opérations d'échantillonnage avancées au sein des modèles génératifs, permettant la personnalisation des processus d'échantillonnage à travers divers paramètres. Il facilite la génération de nouveaux échantillons de données en manipulant les représentations de l'espace latent, en utilisant le conditionnement et en ajustant les niveaux de bruit.
+Le KSampler fonctionne de la manière suivante : il modifie les informations de l'image latente originale fournie en fonction d'un modèle spécifique et de conditions positives et négatives.
+Tout d'abord, il ajoute du bruit aux données de l'image originale selon la **graine (seed)** et la **force de débruitage (denoise strength)** définies, puis il utilise le **Modèle (Model)** prédéfini combiné aux conditions de guidage **positives** et **négatives** pour générer l'image.
 
 ## Entrées
 
-| Paramètre       | Data Type | Description                                                                                                               |
-|-----------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
-| `model`         | `MODEL`     | Spécifie le modèle génératif à utiliser pour l'échantillonnage, jouant un rôle crucial dans la détermination des caractéristiques des échantillons générés. |
-| `seed`          | `INT`       | Contrôle l'aléatoire du processus d'échantillonnage, assurant la reproductibilité des résultats lorsqu'il est défini à une valeur spécifique.                         |
-| `steps`         | `INT`       | Détermine le nombre d'étapes à suivre dans le processus d'échantillonnage, affectant le détail et la qualité des échantillons générés.           |
-| `cfg`           | `FLOAT`     | Ajuste le facteur de conditionnement, influençant la direction et la force du conditionnement appliqué lors de l'échantillonnage.                     |
-| `sampler_name`  | COMBO[STRING] | Sélectionne l'algorithme d'échantillonnage spécifique à utiliser, impactant le comportement et le résultat du processus d'échantillonnage.                     |
-| `scheduler`     | COMBO[STRING] | Choisit l'algorithme de planification pour contrôler le processus d'échantillonnage, affectant la progression et la dynamique de l'échantillonnage.           |
-| `positive`      | `CONDITIONING` | Définit le conditionnement positif pour guider l'échantillonnage vers les attributs ou caractéristiques souhaités.                                         |
-| `negative`      | `CONDITIONING` | Spécifie le conditionnement négatif pour orienter l'échantillonnage loin de certains attributs ou caractéristiques.                                     |
-| `latent_image`  | `LATENT`    | Fournit une représentation de l'espace latent à utiliser comme point de départ ou de référence pour le processus d'échantillonnage.                            |
-| `denoise`       | `FLOAT`     | Contrôle le niveau de débruitage appliqué aux échantillons, affectant la clarté et la netteté des images générées.                   |
+| Nom du paramètre      | Type de données | Requis | Valeur par défaut | Plage/Options            | Description                                                                                                 |
+| --------------------- | --------------- | ------ | ----------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| Model                 | checkpoint      | Oui    | Aucun             | -                        | Modèle d'entrée utilisé pour le processus de débruitage                                                      |
+| seed                  | Int             | Oui    | 0                 | 0 ~ 18446744073709551615 | Utilisé pour générer un bruit aléatoire ; l'utilisation de la même "seed" génère des images identiques       |
+| steps                 | Int             | Oui    | 20                | 1 ~ 10000                | Nombre d'étapes à utiliser dans le processus de débruitage ; plus d'étapes donnent des résultats plus précis |
+| cfg                   | float           | Oui    | 8.0               | 0.0 ~ 100.0              | Contrôle la fidélité de l'image générée aux conditions d'entrée ; 6-8 recommandé                            |
+| sampler_name          | Option d'interface | Oui    | Aucun             | Plusieurs algorithmes    | Choisir l'échantillonneur pour le débruitage ; affecte la vitesse et le style de génération                 |
+| scheduler             | Option d'interface | Oui    | Aucun             | Plusieurs planificateurs | Contrôle la suppression du bruit ; affecte le processus de génération                                        |
+| Positive              | conditioning    | Oui    | Aucun             | -                        | Conditions positives guidant le débruitage ; ce que vous voulez voir apparaître dans l'image                |
+| Negative              | conditioning    | Oui    | Aucun             | -                        | Conditions négatives guidant le débruitage ; ce que vous ne voulez pas dans l'image                         |
+| Latent_Image          | Latent          | Oui    | Aucun             | -                        | Image latente utilisée pour le débruitage                                                                    |
+| denoise               | float           | Non    | 1.0               | 0.0 ~ 1.0                | Détermine le taux de suppression du bruit ; des valeurs plus faibles signifient moins de lien avec l'image d'entrée |
+| control_after_generate | Option d'interface | Non    | Aucun             | Aléatoire/Croissant/Décroissant/Conserver | Permet de modifier la graine après chaque invite                              |
 
-## Sorties
+## Sortie
 
-| Paramètre   | Data Type | Description |
-|-------------|-------------|-------------|
-| `latent`    | `LATENT`    | Représente la sortie de l'espace latent du processus d'échantillonnage, encapsulant les échantillons générés. |
+| Paramètre | Fonction                                   |
+| --------------- | ------------------------------------------ |
+| Latent          | Produit le latent après le débruitage de l'échantillonneur |
+
+## Code source
+
+[Mis à jour le 15 mai 2025]
+
+```Python
+
+def common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent, denoise=1.0, disable_noise=False, start_step=None, last_step=None, force_full_denoise=False):
+    latent_image = latent["samples"]
+    latent_image = comfy.sample.fix_empty_latent_channels(model, latent_image)
+
+    if disable_noise:
+        noise = torch.zeros(latent_image.size(), dtype=latent_image.dtype, layout=latent_image.layout, device="cpu")
+    else:
+        batch_inds = latent["batch_index"] if "batch_index" in latent else None
+        noise = comfy.sample.prepare_noise(latent_image, seed, batch_inds)
+
+    noise_mask = None
+    if "noise_mask" in latent:
+        noise_mask = latent["noise_mask"]
+
+    callback = latent_preview.prepare_callback(model, steps)
+    disable_pbar = not comfy.utils.PROGRESS_BAR_ENABLED
+    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
+                                  denoise=denoise, disable_noise=disable_noise, start_step=start_step, last_step=last_step,
+                                  force_full_denoise=force_full_denoise, noise_mask=noise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
+    out = latent.copy()
+    out["samples"] = samples
+    return (out, )
+class KSampler:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "model": ("MODEL", {"tooltip": "The model used for denoising the input latent."}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True, "tooltip": "The random seed used for creating the noise."}),
+                "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "tooltip": "The number of steps used in the denoising process."}),
+                "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step":0.1, "round": 0.01, "tooltip": "The Classifier-Free Guidance scale balances creativity and adherence to the prompt. Higher values result in images more closely matching the prompt however too high values will negatively impact quality."}),
+                "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"tooltip": "The algorithm used when sampling, this can affect the quality, speed, and style of the generated output."}),
+                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"tooltip": "The scheduler controls how noise is gradually removed to form the image."}),
+                "positive": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to include in the image."}),
+                "negative": ("CONDITIONING", {"tooltip": "The conditioning describing the attributes you want to exclude from the image."}),
+                "latent_image": ("LATENT", {"tooltip": "The latent image to denoise."}),
+                "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01, "tooltip": "The amount of denoising applied, lower values will maintain the structure of the initial image allowing for image to image sampling."}),
+            }
+        }
+
+    RETURN_TYPES = ("LATENT",)
+    OUTPUT_TOOLTIPS = ("The denoised latent.",)
+    FUNCTION = "sample"
+
+    CATEGORY = "sampling"
+    DESCRIPTION = "Uses the provided model, positive and negative conditioning to denoise the latent image."
+
+    def sample(self, model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=1.0):
+        return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
+
+```

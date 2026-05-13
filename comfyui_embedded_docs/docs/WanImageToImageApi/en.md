@@ -8,10 +8,10 @@ The Wan Image to Image node generates an image from one or two input images and 
 |-----------|-----------|----------|-------|-------------|
 | `model` | COMBO | Yes | "wan2.5-i2i-preview" | Model to use (default: "wan2.5-i2i-preview"). |
 | `image` | IMAGE | Yes | - | Single-image editing or multi-image fusion, maximum 2 images. |
-| `prompt` | STRING | Yes | - | Prompt used to describe the elements and visual features, supports English/Chinese (default: empty). |
-| `negative_prompt` | STRING | No | - | Negative text prompt to guide what to avoid (default: empty). |
+| `prompt` | STRING | Yes | - | Prompt describing the elements and visual features. Supports English and Chinese (default: empty). |
+| `negative_prompt` | STRING | No | - | Negative prompt describing what to avoid (default: empty). |
 | `seed` | INT | No | 0 to 2147483647 | Seed to use for generation (default: 0). |
-| `watermark` | BOOLEAN | No | - | Whether to add an "AI generated" watermark to the result (default: true). |
+| `watermark` | BOOLEAN | No | - | Whether to add an AI-generated watermark to the result (default: false). |
 
 **Note:** This node accepts exactly 1 or 2 input images. If you provide more than 2 images or no images at all, the node will return an error.
 
@@ -20,3 +20,6 @@ The Wan Image to Image node generates an image from one or two input images and 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `image` | IMAGE | The generated image based on the input images and text prompts. |
+
+---
+**Source fingerprint (SHA-256):** `d69811ddaba718e5468f539fb9b25827efdf79f3ee9cbf31ad8f9387cea9b9be`
