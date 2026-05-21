@@ -1,139 +1,135 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/ko.md)
+Load3DAnimation 노드는 3D 모델 파일을 불러오고 처리하는 핵심 노드입니다. 노드를 불러올 때 `ComfyUI/input/3d/` 폴더에서 사용 가능한 3D 리소스를 자동으로 가져오며, 업로드 기능을 통해 지원되는 3D 파일을 업로드하여 미리보기할 수도 있습니다.
 
-# Load3DAnimation 노드
+> - 이 노드의 대부분 기능은 Load 3D 노드와 동일하지만, 이 노드는 애니메이션이 포함된 모델을 불러올 수 있으며, 노드 내에서 해당 애니메이션을 미리보기할 수 있습니다.
+> - 본 문서의 내용은 Load3D 노드와 동일하며, 애니메이션 미리보기 및 재생 기능을 제외하면 두 노드의 기능은 동일합니다.
 
-Load3DAnimation 노드는 3D 모델 파일을 불러오고 처리하는 핵심 노드입니다. 노드를 불러오면 `ComfyUI/input/3d/`에서 사용 가능한 3D 리소스를 자동으로 검색합니다. 또한 업로드 기능을 사용하여 지원되는 3D 파일을 업로드하여 미리 볼 수 있습니다.
+**지원 포맷**
+현재 이 노드는 `.gltf`, `.glb`, `.obj`, `.fbx`, `.stl` 등 다양한 3D 파일 포맷을 지원합니다.
 
-> - 이 노드의 대부분의 기능은 Load 3D 노드와 동일하지만, 이 노드는 애니메이션이 포함된 모델을 불러오기를 지원하며 노드에서 해당 애니메이션을 미리 볼 수 있습니다.
-> - 본 문서의 내용은 Load3D 노드와 동일합니다. 애니메이션 미리보기 및 재생을 제외하면 기능이 완전히 동일하기 때문입니다.
-
-**지원 형식**
-현재 이 노드는 `.gltf`, `.glb`, `.obj`, `.fbx`, `.stl`을 포함한 여러 3D 파일 형식을 지원합니다.
-
-**3D 노드 환경설정**
-3D 노드 관련 환경설정은 ComfyUI의 설정 메뉴에서 구성할 수 있습니다. 해당 설정에 대한 자세한 내용은 다음 문서를 참조하십시오:
+**3D 노드 설정**
+3D 노드와 관련된 일부 설정은 ComfyUI의 설정 메뉴에서 조정할 수 있습니다. 자세한 내용은 아래 문서를 참고하세요:
 
 [설정 메뉴](https://docs.comfy.org/interface/settings/3d)
 
-일반 노드 출력 외에도 Load3D는 캔버스 메뉴에 다양한 3D 보기 관련 설정을 제공합니다.
+일반적인 노드 출력 외에도 Load3D에는 미리보기 영역 메뉴에 다양한 3D 뷰 관련 기능이 있습니다.
 
 ## 입력
 
-| 매개변수명 | 유형 | 설명 | 기본값 | 범위 |
-|-----------|------|------|--------|------|
-| `model_file` | 파일 선택 | 3D 모델 파일 경로, 업로드 지원, 기본적으로 `ComfyUI/input/3d/`에서 모델 파일 읽기 | - | 지원 형식 |
-| `width` | INT | 캔버스 렌더링 너비 | 1024 | 1-4096 |
-| `height` | INT | 캔버스 렌더링 높이 | 1024 | 1-4096 |
+| 파라미터명      | 타입           | 설명                                                        | 기본값 | 범위         |
+|---------------|---------------|-------------------------------------------------------------|--------|--------------|
+| model_file    | File Selection | 3D 모델 파일 경로, 업로드 지원, 기본적으로 `ComfyUI/input/3d/`에서 파일을 읽음 | -      | 지원 포맷    |
+| width         | INT            | 캔버스 렌더링 너비                                           | 1024   | 1-4096       |
+| height        | INT            | 캔버스 렌더링 높이                                           | 1024   | 1-4096       |
 
 ## 출력
 
-| 매개변수명 | 데이터 유형 | 설명 |
-|-----------|------------|------|
-| `image` | IMAGE | 캔버스 렌더링 이미지 |
-| `mask` | MASK | 현재 모델 위치를 포함하는 마스크 |
-| `mesh_path` | STRING | 모델 파일 경로 |
-| `normal` | IMAGE | 노멀 맵 |
-| `lineart` | IMAGE | 라인 아트 이미지 출력, 해당 `edge_threshold`는 캔버스 모델 메뉴에서 조정 가능 |
-| `camera_info` | LOAD3D_CAMERA | 카메라 정보 |
-| `recording_video` | VIDEO | 녹화된 비디오(녹화가 있는 경우에만) |
+| 출력명           | 데이터 타입      | 설명                                                        |
+|-----------------|----------------|-------------------------------------------------------------|
+| image           | IMAGE          | 캔버스에 렌더링된 이미지                                    |
+| mask            | MASK           | 현재 모델 위치가 포함된 마스크                              |
+| mesh_path       | STRING         | 모델 파일 경로(`ComfyUI/input` 폴더 내 경로)                |
+| normal          | IMAGE          | 노멀 맵                                                     |
+| lineart         | IMAGE          | 라인아트 이미지 출력, `edge_threshold`는 캔버스의 모델 메뉴에서 조정 가능 |
+| camera_info     | LOAD3D_CAMERA  | 카메라 정보                                                 |
+| recording_video | VIDEO          | 녹화 영상(녹화가 있을 때만)                                 |
 
 모든 출력 미리보기:
-![뷰 작동 데모](../Load3D/asset/load3d_outputs.webp)
+![뷰 조작 데모](../Load3D/asset/load3d_outputs.webp)
 
-## 캔버스 영역 설명
+## 모델 캔버스(Canvas) 영역 설명
 
-Load3D 노드의 캔버스 영역에는 다음과 같은 다양한 뷰 작업이 포함됩니다:
+Load3D 노드의 Canvas 영역에는 다양한 뷰 조작 기능이 포함되어 있습니다:
 
-- 미리보기 뷰 설정(그리드, 배경색, 미리보기 뷰)
-- 카메라 제어: FOV 제어, 카메라 유형
-- 전역 조명 강도: 조명 강도 조정
-- 비디오 녹화: 비디오 녹화 및 내보내기
-- 모델 내보내기: `GLB`, `OBJ`, `STL` 형식 지원
-- 그 외 다양한 기능
+- 미리보기 뷰 설정(그리드, 배경색, 미리보기)
+- 카메라 제어: FOV, 카메라 타입 조정
+- 전체 조명 강도: 조명 강도 조절
+- 비디오 녹화: 영상 녹화 및 내보내기
+- 모델 내보내기: `GLB`, `OBJ`, `STL` 포맷 지원
+- 기타
 
 ![Load 3D 노드 UI](../Load3D/asset/load3d_ui.jpg)
 
-1. Load 3D 노드의 여러 메뉴 및 숨겨진 메뉴 포함
-2. `미리보기 창 크기 조정` 및 `캔버스 비디오 녹화` 메뉴
-3. 3D 뷰 작업 축
+1. Load3D 노드의 여러 메뉴 및 숨겨진 메뉴
+2. 미리보기 창 크기 조정 및 캔버스 비디오 녹화 메뉴
+3. 3D 뷰 조작 축
 4. 미리보기 썸네일
-5. 미리보기 크기 설정, 치수 설정 후 창 크기 조정으로 미리보기 뷰 배율 조정
+5. 미리보기 크기 설정, 크기를 설정한 후 창 크기를 조절해 미리보기 표시를 조정
 
-### 1. 뷰 작업
+### 1. 뷰 조작
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
-  귀하의 브라우저는 비디오 재생을 지원하지 않습니다.
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
+  사용 중인 브라우저는 동영상 재생을 지원하지 않습니다.
 </video>
 
-뷰 제어 작업:
+뷰 조작 방법:
 
-- 왼쪽 클릭 + 드래그: 뷰 회전
-- 오른쪽 클릭 + 드래그: 뷰 이동
-- 휠 스크롤 또는 가운데 클릭 + 드래그: 확대/축소
+- 마우스 왼쪽 클릭 + 드래그: 뷰 회전
+- 마우스 오른쪽 클릭 + 드래그: 뷰 이동
+- 마우스 휠 또는 가운데 클릭: 확대/축소
 - 좌표축: 뷰 전환
 
 ### 2. 왼쪽 메뉴 기능
 
-![메뉴](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu.webp)
 
-캔버스에서 일부 설정은 메뉴에 숨겨져 있습니다. 메뉴 버튼을 클릭하여 다양한 메뉴를 펼칠 수 있습니다
+미리보기 영역에서는 일부 뷰 조작 관련 메뉴가 메뉴 버튼에 숨겨져 있습니다. 메뉴 버튼을 클릭하면 다양한 메뉴가 펼쳐집니다.
 
-- 1. 장면: 미리보기 창 그리드, 배경색, 미리보기 설정 포함
-- 2. 모델: 모델 렌더링 모드, 텍스처 재질, 위쪽 방향 설정
-- 3. 카메라: 직교 뷰와 원근 뷰 전환 및 원근 각도 크기 설정
-- 4. 조명: 장면 전역 조명 강도
-- 5. 내보내기: 모델을 다른 형식으로 내보내기(GLB, OBJ, STL)
+- 1. 장면(Scene): 미리보기 창 그리드, 배경색, 썸네일 설정
+- 2. 모델(Model): 모델 렌더링 모드, 텍스처, 위 방향 설정
+- 3. 카메라(Camera): 직교 뷰와 원근 뷰 전환, 시야각(FOV) 설정
+- 4. 빛(Light): 전체 조명 강도
+- 5. 내보내기(Export): GLB, OBJ, STL 포맷으로 내보내기
 
-#### 장면
+#### 장면(Scene)
 
-![장면 메뉴](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_scene.webp)
 
-장면 메뉴는 몇 가지 기본 장면 설정 기능을 제공합니다
+장면 메뉴는 장면의 기본 설정 기능을 제공합니다
 
 1. 그리드 표시/숨기기
 2. 배경색 설정
-3. 배경 이미지 업로드를 위한 클릭
-4. 미리보기 숨기기
+3. 배경 이미지 업로드
+4. 썸네일 숨기기
 
-#### 모델
+#### 모델(Model)
 
-![메뉴_장면](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_model.webp)
 
-모델 메뉴는 몇 가지 모델 관련 기능을 제공합니다
+모델 메뉴는 모델 관련 기능을 제공합니다
 
-1. **위쪽 방향**: 모델의 위쪽 방향이 될 축 지정
-2. **재질 모드**: 모델 렌더링 모드 전환 - 원본, 노멀, 와이어프레임, 라인아트
+1. **위 방향(Up direction)**: 모델의 어느 축이 위 방향인지 지정
+2. **렌더링 모드(Material mode)**: 원본, 노멀, 와이어프레임, 라인아트 전환
 
-#### 카메라
+#### 카메라(Camera)
 
-![메뉴_모델메뉴_카메라](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_camera.webp)
 
-이 메뉴는 직교 뷰와 원근 뷰 전환 및 원근 각도 크기 설정을 제공합니다
+이 메뉴는 직교 뷰와 원근 뷰 전환, 시야각(FOV) 설정을 제공합니다
 
-1. **카메라**: 직교 뷰와 원근 뷰 간 빠른 전환
-2. **FOV**: FOV 각도 조정
+1. **카메라(Camera)**: 직교 뷰와 원근 뷰 전환
+2. **FOV**: 시야각 조절
 
-#### 조명
+#### 빛(Light)
 
-![메뉴_모델메뉴_카메라](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_light.webp)
 
-이 메뉴를 통해 장면의 전역 조명 강도를 빠르게 조정할 수 있습니다
+이 메뉴에서 전체 조명 강도를 빠르게 조절할 수 있습니다
 
-#### 내보내기
+#### 내보내기(Export)
 
-![메뉴_내보내기](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_export.webp)
 
-이 메뉴는 모델 형식을 빠르게 변환하고 내보내는 기능을 제공합니다
+이 메뉴는 모델을 다른 포맷(GLB, OBJ, STL)으로 변환 및 내보내기 기능을 제공합니다
 
 ### 3. 오른쪽 메뉴 기능
 
 <video controls width="640" height="360">
   <source src="../Load3D/asset/recording.mp4" type="video/mp4">
-  귀하의 브라우저는 비디오 재생을 지원하지 않습니다.
+  사용 중인 브라우저는 동영상 재생을 지원하지 않습니다.
 </video>
 
-오른쪽 메뉴에는 두 가지 주요 기능이 있습니다:
+오른쪽 메뉴의 주요 기능 두 가지:
 
-1. **뷰 비율 재설정**: 버튼 클릭 후 설정된 너비와 높이에 따라 뷰가 캔버스 렌더링 영역 비율을 조정합니다
-2. **비디오 녹화**: 현재 3D 뷰 작업을 비디오로 녹화할 수 있으며, 가져오기를 허용하고 `recording_video`로 후속 노드에 출력할 수 있습니다
+1. **뷰 비율 재설정**: 버튼을 클릭하면 설정한 너비와 높이에 맞춰 캔버스 비율이 조정됩니다
+2. **비디오 녹화**: 현재 3D 뷰 조작을 비디오로 녹화하고, 불러오기 및 후속 노드에 `recording_video`로 출력할 수 있습니다

@@ -1,22 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3D/tr.md)
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3D/tr.md)
 
-Load3D düğümü, 3B model dosyalarını yüklemek ve işlemek için kullanılan temel bir düğümdür. Düğüm yüklendiğinde, kullanılabilir 3B kaynakları otomatik olarak `ComfyUI/input/3d/` dizininden alır. Ayrıca, yükleme işlevini kullanarak desteklenen 3B dosyalarını önizleme için yükleyebilirsiniz.
+Load3D düğümü, 3B model dosyalarını yüklemek ve işlemek için temel bir düğümdür. Düğüm yüklendiğinde, `ComfyUI/input/3d/` dizininden mevcut 3B kaynakları otomatik olarak alır. Ayrıca, yükleme işlevini kullanarak desteklenen 3B dosyalarını önizleme amacıyla yükleyebilirsiniz.
 
-**Desteklenen Formatlar**
-Bu düğüm şu anda `.gltf`, `.glb`, `.obj`, `.fbx` ve `.stl` dahil olmak üzere birden çok 3B dosya formatını desteklemektedir.
+**Desteklenen Biçimler**
+Şu anda bu düğüm, `.gltf`, `.glb`, `.obj`, `.fbx` ve `.stl` dahil olmak üzere birden fazla 3B dosya biçimini desteklemektedir.
 
 **3B Düğüm Tercihleri**
-3B düğümleriyle ilgili bazı tercihler, ComfyUI'nin ayarlar menüsünden yapılandırılabilir. İlgili ayarlar için lütfen aşağıdaki belgelere bakın:
+3B düğümlerle ilgili bazı tercihler ComfyUI'nin ayarlar menüsünden yapılandırılabilir. İlgili ayarlar için lütfen aşağıdaki belgelere başvurun:
 
 [Ayarlar Menüsü](https://docs.comfy.org/interface/settings/3d)
 
-Normal düğüm çıktılarının yanı sıra, Load3D'nin tuval menüsünde 3B görünümle ilgili birçok ayarı bulunur.
+Normal düğüm çıktılarının yanı sıra, Load3D'nin tuval menüsünde birçok 3B görünümle ilgili ayar bulunur.
 
-## Girişler
+## Girdiler
 
-| Parametre Adı | Türü     | Açıklama                     | Varsayılan | Aralık        |
+| Parametre Adı | Tür     | Açıklama                     | Varsayılan | Aralık        |
 |---------------|----------|---------------------------------|---------|--------------|
-| model_file    | Dosya Seçimi | 3B model dosya yolu, yüklemeyi destekler, varsayılan olarak `ComfyUI/input/3d/` dizinindeki model dosyalarını okur | - | Desteklenen formatlar |
+| model_file    | Dosya Seçimi | 3B model dosya yolu, yüklemeyi destekler, varsayılan olarak model dosyalarını `ComfyUI/input/3d/` dizininden okur | - | Desteklenen biçimler |
 | width         | INT      | Tuval işleme genişliği          | 1024    | 1-4096      |
 | height        | INT      | Tuval işleme yüksekliği         | 1024    | 1-4096      |
 
@@ -25,34 +25,34 @@ Normal düğüm çıktılarının yanı sıra, Load3D'nin tuval menüsünde 3B g
 | Parametre Adı   | Veri Türü      | Açıklama                        |
 |-----------------|----------------|------------------------------------|
 | image           | IMAGE          | Tuvalde işlenmiş görüntü              |
-| mask            | MASK           | Geçerli model konumunu içeren maske |
+| mask            | MASK           | Mevcut model konumunu içeren maske |
 | mesh_path       | STRING         | Model dosya yolu                   |
 | normal          | IMAGE          | Normal harita                         |
-| lineart         | IMAGE          | Çizgi sanatı görüntü çıktısı, ilgili `edge_threshold` tuval model menüsünden ayarlanabilir |
+| lineart         | IMAGE          | Çizgi sanatı görüntü çıktısı, karşılık gelen `edge_threshold` tuval model menüsünden ayarlanabilir |
 | camera_info     | LOAD3D_CAMERA  | Kamera bilgisi                 |
-| recording_video | VIDEO          | Kaydedilmiş video (yalnızca kayıt mevcut olduğunda) |
+| recording_video | VIDEO          | Kaydedilmiş video (sadece kayıt mevcut olduğunda) |
 
 Tüm çıktıların önizlemesi:
-![İşlem Demosunu Görüntüle](./asset/load3d_outputs.webp)
+![Görünüm İşlemleri Demosu](./asset/load3d_outputs.webp)
 
 ## Tuval Alanı Açıklaması
 
 Load3D düğümünün Tuval alanı, aşağıdakiler de dahil olmak üzere çok sayıda görünüm işlemi içerir:
 
-- Önizleme görünümü ayarları (ızgara, arka plan rengi, önizleme görünümü)
-- Kamera kontrolü: Görüş Alanı (FOV), kamera türü kontrolü
-- Küresel aydınlatma yoğunluğu: Işık yoğunluğunu ayarlama
-- Video kaydı: Videoları kaydetme ve dışa aktarma
-- Model dışa aktarma: `GLB`, `OBJ`, `STL` formatlarını destekler
+- Önizleme görünüm ayarları (ızgara, arka plan rengi, önizleme görünümü)
+- Kamera kontrolü: Görüş Alanını (FOV), kamera türünü kontrol etme
+- Genel aydınlatma yoğunluğu: Işık şiddetini ayarlama
+- Video kaydı: Video kaydetme ve dışa aktarma
+- Model dışa aktarma: `GLB`, `OBJ`, `STL` biçimlerini destekler
 - Ve daha fazlası
 
-![Load 3D Düğümü Arayüzü](./asset/load3d_ui.jpg)
+![Load 3D Düğümü Kullanıcı Arayüzü](./asset/load3d_ui.jpg)
 
-1. Load 3D düğümünün birden çok menüsünü ve gizli menüsünü içerir
+1. Load 3D düğümünün birden fazla menüsünü ve gizli menülerini içerir
 2. `Önizleme penceresini yeniden boyutlandırma` ve `tuval video kaydı` menüsü
 3. 3B görünüm işlem ekseni
 4. Önizleme küçük resmi
-5. Önizleme boyutu ayarları, boyutları ayarlayıp ardından pencereyi yeniden boyutlandırarak önizleme görünümü ekranını ölçekleyin
+5. Önizleme boyutu ayarları, boyutları ayarlayıp ardından pencereyi yeniden boyutlandırarak önizleme görünümünün ölçeğini belirleme
 
 ### 1. Görünüm İşlemleri
 
@@ -63,33 +63,33 @@ Load3D düğümünün Tuval alanı, aşağıdakiler de dahil olmak üzere çok s
 
 Görünüm kontrol işlemleri:
 
-- Sol tık + sürükle: Görünümü döndürme
-- Sağ tık + sürükle: Görünümü kaydırma
-- Orta tekerlek kaydırma veya orta tık + sürükle: Yakınlaştırma/Uzaklaştırma
+- Sol tıklama + sürükleme: Görünümü döndürme
+- Sağ tıklama + sürükleme: Görünümü kaydırma
+- Orta tekerlek kaydırma veya orta tıklama + sürükleme: Yakınlaştırma/Uzaklaştırma
 - Koordinat ekseni: Görünümleri değiştirme
 
 ### 2. Sol Menü İşlevleri
 
 ![Menü](./asset/menu.webp)
 
-Tuvalde bazı ayarlar menüde gizlidir. Farklı menüleri genişletmek için menü düğmesine tıklayın
+Tuvalde, bazı ayarlar menü içinde gizlidir. Menü düğmesine tıklayarak farklı menüleri genişletebilirsiniz
 
 - 1. Sahne: Önizleme penceresi ızgarası, arka plan rengi, önizleme ayarlarını içerir
-- 2. Model: Model oluşturma modu, doku malzemeleri, yukarı yönü ayarları
-- 3. Kamera: Dik ve perspektif görünümler arasında geçiş yapma ve perspektif açısı boyutunu ayarlama
-- 4. Işık: Sahne küresel aydınlatma yoğunluğu
-- 5. Dışa Aktar: Modeli diğer formatlara (GLB, OBJ, STL) dışa aktarma
+- 2. Model: Model işleme modu, doku malzemeleri, yukarı yön ayarları
+- 3. Kamera: Paralel (Orthographic) ve perspektif (Perspective) görünümler arasında geçiş yapma ve perspektif açı boyutunu ayarlama
+- 4. Işık: Sahne genel aydınlatma yoğunluğu
+- 5. Dışa Aktar: Modeli diğer biçimlere dışa aktarma (GLB, OBJ, STL)
 
 #### Sahne
 
 ![sahne menüsü](./asset/menu_scene.webp)
 
-Sahne menüsü bazı temel sahne ayarlama işlevleri sağlar
+Sahne menüsü, bazı temel sahne ayar işlevleri sağlar
 
 1. Izgarayı Göster/Gizle
-2. Arka plan rengini ayarlama
-3. Arka plan resmi yüklemek için tıklayın
-4. Önizlemeyi gizleme
+2. Arka plan rengini ayarla
+3. Bir arka plan görüntüsü yüklemek için tıklayın
+4. Önizlemeyi gizle
 
 #### Model
 
@@ -97,38 +97,38 @@ Sahne menüsü bazı temel sahne ayarlama işlevleri sağlar
 
 Model menüsü, modelle ilgili bazı işlevler sağlar
 
-1. **Yukarı yönü**: Model için hangi eksenin yukarı yönü olduğunu belirleyin
-2. **Malzeme modu**: Model oluşturma modlarını değiştirin - Orijinal, Normal, Tel Kafes, Çizgi Sanatı
+1. **Yukarı yön**: Model için hangi eksenin yukarı yön olduğunu belirleme
+2. **Malzeme modu**: Model işleme modlarını değiştirme - Orijinal, Normal, Tel Kafes (Wireframe), Çizgi Sanatı (Lineart)
 
 #### Kamera
 
 ![menu_modelmenu_camera](./asset/menu_camera.webp)
 
-Bu menü, dik ve perspektif görünümler arasında geçiş ve perspektif açısı boyutu ayarları sağlar
+Bu menü, paralel ve perspektif görünümler arasında geçiş yapma ve perspektif açı boyutu ayarları sağlar
 
-1. **Kamera**: Dik ve dik görünümler arasında hızlı geçiş yapın
-2. **FOV**: Görüş Alanı (FOV) açısını ayarlayın
+1. **Kamera**: Paralel (Orthographic) ve perspektif (Perspective) görünümler arasında hızlıca geçiş yapma
+2. **Görüş Alanı (FOV)**: FOV açısını ayarlama
 
 #### Işık
 
 ![menu_modelmenu_camera](./asset/menu_light.webp)
 
-Bu menü aracılığıyla sahnenin küresel aydınlatma yoğunluğunu hızlıca ayarlayabilirsiniz.
+Bu menü aracılığıyla, sahnenin genel aydınlatma yoğunluğunu hızlıca ayarlayabilirsiniz
 
 #### Dışa Aktar
 
 ![menu_export](./asset/menu_export.webp)
 
-Bu menü, model formatlarını hızlı bir şekilde dönüştürme ve dışa aktarma olanağı sağlar
+Bu menü, model biçimlerini hızlıca dönüştürme ve dışa aktarma yeteneği sağlar
 
 ### 3. Sağ Menü İşlevleri
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   Tarayıcınız video oynatmayı desteklemiyor.
 </video>
 
 Sağ menünün iki ana işlevi vardır:
 
-1. **Görünüm oranını sıfırlama**: Düğmeye tıkladıktan sonra görünüm, ayarlanan genişlik ve yüksekliğe göre tuval işleme alanı oranını ayarlayacaktır
-2. **Video kaydı**: Geçerli 3B görünüm işlemlerini video olarak kaydetmenize olanak tanır, içe aktarmaya izin verir ve sonraki düğümlere `recording_video` olarak çıktı verilebilir
+1. **Görünüm oranını sıfırla**: Düğmeye tıklandıktan sonra, görünüm ayarlanan genişlik ve yüksekliğe göre tuval işleme alanı oranını ayarlayacaktır
+2. **Video kaydı**: Mevcut 3B görünüm işlemlerini video olarak kaydetmenize olanak tanır, içe aktarmaya izin verir ve `recording_video` olarak sonraki düğümlere çıktı verebilir

@@ -16,15 +16,15 @@
 
 | نام پارامتر | نوع | توضیحات | پیش‌فرض | محدوده |
 |---|---|---|---|---|
-| `فایل مدل` | انتخاب فایل | مسیر فایل مدل سه‌بعدی، از آپلود پشتیبانی می‌کند، به‌طور پیش‌فرض فایل‌های مدل را از `ComfyUI/input/3d/` می‌خواند | - | فرمت‌های پشتیبانی‌شده |
-| `عرض` | INT | عرض رندر بوم | 1024 | 1-4096 |
-| `ارتفاع` | INT | ارتفاع رندر بوم | 1024 | 1-4096 |
+| `model_file` | انتخاب فایل | مسیر فایل مدل سه‌بعدی، از آپلود پشتیبانی می‌کند، به‌طور پیش‌فرض فایل‌های مدل را از `ComfyUI/input/3d/` می‌خواند | - | فرمت‌های پشتیبانی‌شده |
+| `width` | INT | عرض رندر بوم | 1024 | 1-4096 |
+| `height` | INT | ارتفاع رندر بوم | 1024 | 1-4096 |
 
 ## خروجی‌ها
 
 | نام پارامتر | نوع داده | توضیحات |
 |---|---|---|
-| `تصویر` | IMAGE | تصویر رندر شده بوم |
+| `image` | IMAGE | تصویر رندر شده بوم |
 | `mask` | MASK | ماسک حاوی موقعیت مدل فعلی |
 | `mesh_path` | STRING | مسیر فایل مدل |
 | `normal` | IMAGE | نقشه نرمال |
@@ -124,7 +124,7 @@
 ### 3. عملکردهای منوی راست
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
 </video>
 

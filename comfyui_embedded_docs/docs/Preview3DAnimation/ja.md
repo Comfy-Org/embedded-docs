@@ -1,105 +1,101 @@
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/ja.md)
-
-以下は、ご指定の翻訳ルールに従って日本語に翻訳したドキュメントです。
-
-Preview3DAnimationノードは、主に3Dモデルの出力をプレビューするために使用されます。このノードは2つの入力を受け取ります。1つはLoad3Dノードからの`camera_info`、もう1つは3Dモデルファイルへのパスです。モデルファイルのパスは、`ComfyUI/output`フォルダ内に存在する必要があります。
+Preview3DAnimationノードは、3Dモデルの出力をプレビューするためのノードです。このノードは2つの入力を受け取ります。1つはLoad3Dノードの`camera_info`、もう1つは3Dモデルファイルのパスです。モデルファイルのパスは`ComfyUI/output`フォルダ内である必要があります。
 
 **対応フォーマット**
-現在、このノードは`.gltf`、`.glb`、`.obj`、`.fbx`、`.stl`を含む複数の3Dファイルフォーマットに対応しています。
+現在、このノードは複数の3Dファイル形式（.gltf、.glb、.obj、.fbx、.stl）に対応しています。
 
 **3Dノードの設定**
-3Dノードに関する一部の設定は、ComfyUIの設定メニューで構成できます。対応する設定については、以下のドキュメントを参照してください。
+3Dノードに関するいくつかの設定は、ComfyUIの設定メニューで調整できます。詳細は以下のドキュメントをご参照ください：
 [設定メニュー](https://docs.comfy.org/interface/settings/3d)
 
 ## 入力
 
-| パラメータ名   | 型             | 説明                                  |
-| -------------- | -------------- | -------------------------------------------- |
-| camera_info    | LOAD3D_CAMERA  | カメラ情報                           |
-| model_file     | STRING  | `ComfyUI/output/` 配下のモデルファイルパス      |
+| パラメータ名        | データ型        | 説明                     |
+|--------------|------------|--------------------------|
+| camera_info  | LOAD3D_CAMERA | カメラ情報               |
+| model_file   | STRING | `ComfyUI/output/`内のモデルファイルパス |
 
-## キャンバス領域の説明
+## モデルキャンバス(Canvas)エリアの説明
 
-現在、ComfyUIフロントエンドの3D関連ノードは同じキャンバスコンポーネントを共有しているため、一部の機能の違いを除き、基本的な操作はほぼ同じです。
+現在、ComfyUIフロントエンドの3D関連ノードは同じキャンバスコンポーネントを共有しているため、基本的な操作はほぼ共通ですが、一部機能に違いがあります。
 
-> 以下の内容とインターフェースは、主にLoad3Dノードに基づいています。具体的な機能については、実際のノードインターフェースを参照してください。
+> 以下の内容とインターフェースは主にLoad3Dノードを基にしています。実際のノード画面や機能は実際のノードをご参照ください。
 
-キャンバス領域には、以下のようなさまざまなビュー操作が含まれます。
+キャンバスエリアには、さまざまなビュー操作が含まれています：
 
-- プレビュービューの設定（グリッド、背景色、プレビュービュー）
-- カメラ制御：FOV、カメラタイプ
-- グローバル照明の強度：照明の調整
-- モデルのエクスポート：`GLB`、`OBJ`、`STL`フォーマットに対応
+- プレビュー表示設定（グリッド、背景色、プレビュー表示）
+- カメラコントロール：FOV、カメラタイプ
+- グローバル照明強度：ライトの強さ調整
+- モデルエクスポート：GLB、OBJ、STL形式に対応
 - など
 
-![Load 3D ノード UI](../Preview3D/asset/preview3d_canvas.jpg)
+![Load 3D Node UI](../Preview3D/asset/preview3d_canvas.jpg)
 
-1. Load 3Dノードの複数のメニューと非表示メニューを含みます
+1. Load3Dノードの複数のメニューおよび隠しメニュー
 2. 3Dビュー操作軸
 
 ### 1. ビュー操作
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
-  お使いのブラウザは動画の再生に対応していません。
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
+  お使いのブラウザは動画再生に対応していません。
 </video>
 
-ビュー制御操作：
+ビューコントロール操作：
 
-- 左クリック + ドラッグ：ビューの回転
-- 右クリック + ドラッグ：ビューのパン
-- ホイールスクロール、または中クリック + ドラッグ：ズームイン/アウト
+- 左クリック＋ドラッグ：ビューを回転
+- 右クリック＋ドラッグ：ビューを平行移動
+- 中クリック：ズームイン／アウト
 - 座標軸：ビューの切り替え
 
-### 2. 左メニュー機能
+### 2. 左側メニュー機能
 
-![メニュー](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu.webp)
 
-プレビューエリアでは、一部のビュー操作メニューがメニュー内に隠れています。メニューボタンをクリックすると、さまざまなメニューを展開できます。
+プレビューエリアでは、一部のビュー操作関連メニューがメニュー内に隠れています。メニューボタンをクリックすると各種メニューが展開されます。
 
-- 1. シーン：プレビューウィンドウのグリッド、背景色、サムネイル設定を含みます
-- 2. モデル：モデルのレンダリングモード、テクスチャマテリアル、上方向の設定
-- 3. カメラ：正投影ビューと透視投影ビューの切り替え、透視角度の設定
-- 4. ライト：シーンのグローバル照明の強度
-- 5. エクスポート：モデルを他のフォーマット（GLB、OBJ、STL）にエクスポート
+- 1. シーン（Scene）：プレビューウィンドウのグリッド、背景色、サムネイル設定
+- 2. モデル（Model）：モデルレンダリングモード、テクスチャ、上方向設定
+- 3. カメラ（Camera）：オーソグラフィックビューとパースビューの切り替え、視野角設定
+- 4. ライト（Light）：シーングローバル照明強度
+- 5. エクスポート（Export）：GLB、OBJ、STL形式へのエクスポート
 
-#### シーン
+#### シーン（Scene）
 
-![シーンメニュー](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_scene.webp)
 
-シーンメニューは、いくつかの基本的なシーン設定機能を提供します。
+シーンメニューは、シーンの基本設定機能を提供します：
 
-1. グリッドの表示/非表示
+1. グリッドの表示／非表示
 2. 背景色の設定
-3. クリックして背景画像をアップロード
-4. プレビューサムネイルの非表示
+3. 背景画像のアップロード
+4. サムネイルの非表示
 
-#### モデル
+#### モデル（Model）
 
-![メニュー_シーン](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_model.webp)
 
-モデルメニューは、モデルに関連するいくつかの機能を提供します。
+モデルメニューは、モデル関連の機能を提供します：
 
-1. **上方向**：モデルの上方向となる軸を決定します
-2. **マテリアルモード**：モデルのレンダリングモードを切り替えます - オリジナル、ノーマル、ワイヤーフレーム、ラインアート
+1. **上方向（Up direction）**：モデルのどの軸が上方向かを指定
+2. **レンダリングモード（Material mode）**：オリジナル、ノーマル、ワイヤーフレーム、線画の切り替え
 
-#### カメラ
+#### カメラ（Camera）
 
-![メニュー_モデルメニュー_カメラ](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_camera.webp)
 
-このメニューは、正投影ビューと透視投影ビューの切り替え、および透視角度のサイズ設定を提供します。
+このメニューは、オーソグラフィックビューとパースビューの切り替え、視野角設定を提供します：
 
-1. **カメラ**：正投影ビューと透視投影ビューをすばやく切り替えます
-2. **FOV**：FOV角度を調整します
+1. **カメラ（Camera）**：オーソグラフィックビューとパースビューの切り替え
+2. **FOV**：視野角の調整
 
-#### ライト
+#### ライト（Light）
 
-![メニュー_モデルメニュー_カメラ](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_light.webp)
 
-このメニューでは、シーンのグローバル照明の強度をすばやく調整できます。
+このメニューでシーン全体のグローバル照明強度を調整できます
 
-#### エクスポート
+#### エクスポート（Export）
 
-![メニュー_エクスポート](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_export.webp)
 
-このメニューは、モデルフォーマットをすばやく変換およびエクスポートする機能を提供します。
+このメニューは、モデルを他の形式（GLB、OBJ、STL）に変換・エクスポートできます

@@ -38,7 +38,7 @@
 ### 1. عملیات نمایش
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
 </video>
 
@@ -51,7 +51,7 @@
 
 ### 2. عملکردهای منوی چپ
 
-![منو](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![منو](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu.webp)
 
 در ناحیه پیش‌نمایش، برخی منوهای عملیات نمایش در منو پنهان شده‌اند. برای باز کردن منوهای مختلف، دکمه منو را کلیک کنید.
 
@@ -63,7 +63,7 @@
 
 #### صحنه
 
-![منوی صحنه](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![منوی صحنه](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_scene.webp)
 
 منوی صحنه برخی عملکردهای پایه‌ای تنظیمات صحنه را فراهم می‌کند:
 
@@ -74,7 +74,7 @@
 
 #### مدل
 
-![منوی_صحنه](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![منوی_صحنه](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_model.webp)
 
 منوی مدل برخی عملکردهای مرتبط با مدل را فراهم می‌کند:
 
@@ -83,7 +83,7 @@
 
 #### دوربین
 
-![منوی_مدل_دوربین](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![منوی_مدل_دوربین](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_camera.webp)
 
 این منو قابلیت تغییر بین نمای متعامد و پرسپکتیو و تنظیم اندازه زاویه پرسپکتیو را فراهم می‌کند:
 
@@ -92,12 +92,12 @@
 
 #### نور
 
-![منوی_مدل_دوربین](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![منوی_مدل_دوربین](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_light.webp)
 
 از طریق این منو می‌توانید به سرعت شدت نورپردازی سراسری صحنه را تنظیم کنید
 
 #### خروجی
 
-![منوی_خروجی](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![منوی_خروجی](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_export.webp)
 
 این منو قابلیت تبدیل سریع و خروجی فرمت مدل را فراهم می‌کند

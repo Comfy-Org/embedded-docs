@@ -1,141 +1,136 @@
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/ja.md)
+3Dを読み込むノードは、3Dモデルファイルを読み込み・処理するためのコアノードです。ノードを読み込むと、自動的に`ComfyUI/input/3d/`から利用可能な3Dリソースを取得します。また、「upload 3d model」機能を使って、対応する3Dファイルをアップロードし、プレビューすることもできます。
 
-以下は、ご依頼いただいた英語ドキュメントを日本語に翻訳したものです。
-
----
-
-Load3DAnimationノードは、3Dモデルファイルを読み込み、処理するためのコアノードです。ノードを読み込むと、自動的に `ComfyUI/input/3d/` から利用可能な3Dリソースを取得します。また、アップロード機能を使用して、対応する3Dファイルをアップロードし、プレビューすることもできます。
-
-> - このノードの機能のほとんどはLoad 3Dノードと同じですが、このノードはアニメーション付きのモデルの読み込みをサポートしており、ノード内で対応するアニメーションをプレビューできます。
-> - このドキュメントの内容はLoad3Dノードと同じです。アニメーションのプレビューと再生以外は、それらの機能は同一であるためです。
+> - このノードのほとんどの機能は「Load 3D」ノードと同じですが、本ノードはアニメーション付きモデルの読み込みに対応しており、ノード内で対応するアニメーションのプレビューも可能です。
+> - 本ドキュメントの内容は「Load3D」ノードと同じですが、アニメーションのプレビューや再生機能を除けば、両者の機能は同一です。
 
 **対応フォーマット**
-現在、このノードは `.gltf`、`.glb`、`.obj`、`.fbx`、`.stl` を含む複数の3Dファイル形式をサポートしています。
+現在、このノードは複数の3Dファイル形式（.gltf、.glb、.obj、.fbx、.stl）に対応しています。
 
 **3Dノードの設定**
-3Dノードに関する一部の設定は、ComfyUIの設定メニューで構成できます。対応する設定については、以下のドキュメントを参照してください。
+3Dノードに関するいくつかの設定は、ComfyUIの設定メニューで調整できます。詳細は以下のドキュメントをご参照ください：
 
 [設定メニュー](https://docs.comfy.org/interface/settings/3d)
 
-通常のノード出力に加えて、Load3Dノードはキャンバスメニューに多くの3Dビュー関連の設定を持っています。
+通常のノード出力に加え、Load3Dノードはキャンバスメニュー内に多くの3Dビュー関連設定があります。
 
 ## 入力
 
-| パラメータ名 | 型 | 説明 | デフォルト | 範囲 |
-|---|---|---|---|---|
-| model_file | ファイル選択 | 3Dモデルファイルのパス。アップロードに対応。デフォルトでは `ComfyUI/input/3d/` からモデルファイルを読み込みます。 | - | 対応フォーマット |
-| width | INT | キャンバスのレンダリング幅 | 1024 | 1-4096 |
-| height | INT | キャンバスのレンダリング高さ | 1024 | 1-4096 |
+| パラメータ名        | データ型        | 説明                     | デフォルト | 範囲         |
+|--------------|------------|--------------------------|--------|--------------|
+| モデルファイル   | File Selection    | 3Dモデルファイルのパス、アップロード対応、デフォルトは`ComfyUI/input/3d/`から読み込み | -      | 対応フォーマット |
+| 幅        | INT        | キャンバスのレンダリング幅                 | 1024   | 1-4096       |
+| 高さ       | INT        | キャンバスのレンダリング高さ                 | 1024   | 1-4096       |
 
 ## 出力
 
-| パラメータ名 | データ型 | 説明 |
-|---|---|---|
-| image | IMAGE | キャンバスにレンダリングされた画像 |
-| mask | MASK | 現在のモデル位置を含むマスク |
-| mesh_path | STRING | モデルファイルのパス |
-| normal | IMAGE | 法線マップ |
-| lineart | IMAGE | 線画画像の出力。対応する `edge_threshold` はキャンバスのモデルメニューで調整できます。 |
-| camera_info | LOAD3D_CAMERA | カメラ情報 |
-| recording_video | VIDEO | 録画されたビデオ（録画が存在する場合のみ） |
+| 出力名         | データ型        | 説明                             |
+| --------------- | ------------- | -------------------------------- |
+| image           | IMAGE         | キャンバスでレンダリングされた画像                    |
+| mask            | MASK          | 現在のモデル位置を含むマスク               |
+| mesh_path       | STRING        | モデルファイルのパス（`ComfyUI/input` フォルダ内のパス）               |
+| normal          | IMAGE         | ノーマルマップ                          |
+| lineart         | IMAGE         | 線画画像出力、対応する `edge_threshold` はキャンバスのモデルメニューで調整可能                      |
+| camera_info     | LOAD3D_CAMERA | カメラ情報                         |
+| recording_video | VIDEO         | 録画ビデオ（録画が存在する場合のみ）     |
 
-すべての出力のプレビュー:
-![View Operation Demo](../Load3D/asset/load3d_outputs.webp)
+すべての出力のプレビュー：
 
-## キャンバス領域の説明
+![ビュー操作デモ](../Load3D/asset/load3d_outputs.webp)
 
-Load3Dノードのキャンバス領域には、多数のビュー操作が含まれています。
+## モデルキャンバス(Canvas)エリアの説明
 
-- プレビュービューの設定（グリッド、背景色、プレビュービュー）
-- カメラ制御：FOV、カメラタイプの制御
-- グローバル照明の強度：照明の明るさを調整
-- ビデオ録画：ビデオの録画とエクスポート
-- モデルエクスポート：`GLB`、`OBJ`、`STL` 形式に対応
-- その他
+Load3DノードのCanvasエリアには、多くのビュー操作が含まれています：
+
+- プレビュー表示設定（グリッド、背景色、プレビュー表示）
+- カメラコントロール：FOV、カメラタイプの制御
+- グローバル照明強度：ライトの強さ調整
+- ビデオ録画：操作を録画・エクスポート
+- モデルエクスポート：GLB、OBJ、STL形式に対応
+- など
 
 ![Load 3D Node UI](../Load3D/asset/load3d_ui.jpg)
 
-1. Load 3Dノードの複数のメニューと隠しメニューを含む
-2. `プレビューウィンドウのサイズ変更` と `キャンバスビデオ録画` のメニュー
+1. Load3Dノードの複数のメニューおよび隠しメニュー
+2. プレビューウィンドウのリサイズやキャンバスビデオ録画のメニュー
 3. 3Dビュー操作軸
 4. プレビューサムネイル
-5. プレビューサイズ設定。寸法を設定してからウィンドウのサイズを変更することで、プレビュービューの表示を拡大縮小します。
+5. プレビューサイズ設定、寸法を設定しウィンドウサイズを変更してプレビュー表示を調整
 
 ### 1. ビュー操作
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
-  お使いのブラウザはビデオ再生に対応していません。
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
+  お使いのブラウザは動画再生に対応していません。
 </video>
 
-ビュー制御操作：
+ビューコントロール操作：
 
-- 左クリック + ドラッグ：ビューを回転
-- 右クリック + ドラッグ：ビューをパン
-- ホイールスクロール、または中クリック + ドラッグ：ズームイン/アウト
-- 座標軸：ビューを切り替え
+- 左クリック＋ドラッグ：ビューを回転
+- 右クリック＋ドラッグ：ビューを平行移動
+- 中クリック：ズームイン／アウト
+- 座標軸：ビューの切り替え
 
-### 2. 左メニュー機能
+### 2. 左側メニュー機能
 
-![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu.webp)
 
-キャンバス内では、一部の設定がメニューに隠されています。メニューボタンをクリックして、さまざまなメニューを展開します。
+プレビューエリアでは、一部のビュー操作関連メニューがメニュー内に隠れています。メニューボタンをクリックすると各種メニューが展開されます。
 
-- 1. シーン：プレビューウィンドウのグリッド、背景色、プレビュー設定を含む
-- 2. モデル：モデルのレンダリングモード、テクスチャマテリアル、上方向の設定
-- 3. カメラ：正投影ビューと透視投影ビューの切り替え、および透視角度のサイズ設定
-- 4. ライト：シーンのグローバル照明の強度
-- 5. エクスポート：モデルを他の形式（GLB、OBJ、STL）にエクスポート
+- 1. シーン（Scene）：プレビューウィンドウのグリッド、背景色、サムネイル設定
+- 2. モデル（Model）：モデルレンダリングモード、テクスチャ、上方向設定
+- 3. カメラ（Camera）：オーソグラフィックビューとパースビューの切り替え、視野角設定
+- 4. ライト（Light）：シーングローバル照明強度
+- 5. エクスポート（Export）：GLB、OBJ、STL形式へのエクスポート
 
-#### シーン
+#### シーン（Scene）
 
-![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_scene.webp)
 
-シーンメニューは、いくつかの基本的なシーン設定機能を提供します。
+シーンメニューは、シーンの基本設定機能を提供します
 
-1. グリッドの表示/非表示
+1. グリッドの表示／非表示
 2. 背景色の設定
-3. クリックして背景画像をアップロード
-4. プレビューを非表示
+3. 背景画像のアップロード
+4. サムネイルの非表示
 
-#### モデル
+#### モデル（Model）
 
-![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_model.webp)
 
-モデルメニューは、モデルに関連するいくつかの機能を提供します。
+モデルメニューは、モデル関連の機能を提供します
 
-1. **上方向**：モデルの上方向となる軸を決定します。
-2. **マテリアルモード**：モデルのレンダリングモードを切り替えます - オリジナル、法線、ワイヤーフレーム、線画。
+1. **上方向（Up direction）**：モデルのどの軸が上方向かを指定
+2. **レンダリングモード（Material mode）**：オリジナル、ノーマル、ワイヤーフレーム、線画の切り替え
 
-#### カメラ
+#### カメラ（Camera）
 
-![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_camera.webp)
 
-このメニューは、正投影ビューと透視投影ビューの切り替え、および透視角度のサイズ設定を提供します。
+このメニューは、オーソグラフィックビューとパースビューの切り替え、視野角設定を提供します
 
-1. **カメラ**：正投影ビューと透視投影ビューをすばやく切り替えます。
-2. **FOV**：FOV角度を調整します。
+1. **カメラ（Camera）**：オーソグラフィックビューとパースビューの切り替え
+2. **FOV**：視野角の調整
 
-#### ライト
+#### ライト（Light）
 
-![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_light.webp)
 
-このメニューを使用すると、シーンのグローバル照明の強度をすばやく調整できます。
+このメニューでシーン全体のグローバル照明強度を調整できます
 
-#### エクスポート
+#### エクスポート（Export）
 
-![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_export.webp)
 
-このメニューは、モデル形式をすばやく変換およびエクスポートする機能を提供します。
+このメニューは、モデルを他の形式（GLB、OBJ、STL）に変換・エクスポートできます
 
-### 3. 右メニュー機能
+### 3. 右側メニュー機能
 
 <video controls width="640" height="360">
   <source src="../Load3D/asset/recording.mp4" type="video/mp4">
-  お使いのブラウザはビデオ再生に対応していません。
+  お使いのブラウザは動画再生に対応していません。
 </video>
 
-右メニューには2つの主要な機能があります。
+右側メニューの主な2つの機能：
 
-1. **ビュー比率のリセット**：ボタンをクリックすると、ビューは設定された幅と高さに従ってキャンバスのレンダリング領域の比率を調整します。
-2. **ビデオ録画**：現在の3Dビュー操作をビデオとして録画できます。インポートも可能で、`recording_video` として後続のノードに出力できます。
+1. **表示比率のリセット**：ボタンをクリックすると、設定した幅と高さに合わせてキャンバスの表示比率が調整されます
+2. **ビデオ録画**：現在の3Dビュー操作をビデオとして録画し、インポートや後続ノードへの`recording_video`出力が可能です

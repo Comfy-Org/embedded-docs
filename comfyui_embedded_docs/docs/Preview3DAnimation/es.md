@@ -1,103 +1,101 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/es.md)
+El nodo Preview3DAnimation se utiliza principalmente para previsualizar la salida de modelos 3D. Este nodo recibe dos entradas: una es la `camera_info` del nodo Load3D y la otra es la ruta al archivo del modelo 3D. La ruta del archivo del modelo debe estar ubicada en la carpeta `ComfyUI/output`.
 
-El nodo Preview3DAnimation se utiliza principalmente para previsualizar salidas de modelos 3D. Este nodo recibe dos entradas: una es la `camera_info` del nodo Load3D, y la otra es la ruta al archivo del modelo 3D. La ruta del archivo del modelo debe estar ubicada en la carpeta `ComfyUI/output`.
+**Formatos soportados**
+Actualmente, este nodo soporta varios formatos de archivos 3D, incluyendo `.gltf`, `.glb`, `.obj`, `.fbx` y `.stl`.
 
-**Formatos Soportados**
-Actualmente, este nodo admite múltiples formatos de archivo 3D, incluyendo `.gltf`, `.glb`, `.obj`, `.fbx` y `.stl`.
-
-**Preferencias de Nodos 3D**
-Algunas preferencias relacionadas con los nodos 3D se pueden configurar en el menú de ajustes de ComfyUI. Consulte la siguiente documentación para conocer las configuraciones correspondientes:
-[Menú de Ajustes](https://docs.comfy.org/interface/settings/3d)
+**Preferencias del nodo 3D**
+Algunas preferencias relacionadas con los nodos 3D se pueden configurar en el menú de configuración de ComfyUI. Consulta el siguiente documento para ver los ajustes correspondientes:
+[Menú de configuración](https://docs.comfy.org/interface/settings/3d)
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo           | Descripción                                  |
+| Nombre del parámetro | Tipo           | Descripción                                  |
 | -------------------- | -------------- | -------------------------------------------- |
 | camera_info          | LOAD3D_CAMERA  | Información de la cámara                     |
-| model_file           | STRING         | Ruta del archivo del modelo en `ComfyUI/output/` |
+| model_file           | STRING  | Ruta del archivo del modelo en `ComfyUI/output/` |
 
-## Descripción del Área de Lienzo
+## Descripción del área de lienzo (Canvas)
 
-Actualmente, los nodos relacionados con 3D en el frontend de ComfyUI comparten el mismo componente de lienzo, por lo que sus operaciones básicas son mayormente consistentes, excepto por algunas diferencias funcionales.
+Actualmente, los nodos relacionados con 3D en el frontend de ComfyUI comparten el mismo componente de canvas, por lo que sus operaciones básicas son en su mayoría consistentes, salvo algunas diferencias funcionales.
 
-> El siguiente contenido e interfaz se basan principalmente en el nodo Load3D. Consulte la interfaz real del nodo para conocer las funciones específicas.
+> El siguiente contenido e interfaz están basados principalmente en el nodo Load3D. Consulta la interfaz real del nodo para características específicas.
 
-El área de Lienzo incluye varias operaciones de vista, tales como:
+El área Canvas incluye varias operaciones de vista, como:
 
-- Configuración de vista previa (cuadrícula, color de fondo, vista de previsualización)
+- Configuración de vista previa (cuadrícula, color de fondo, vista previa)
 - Control de cámara: FOV, tipo de cámara
-- Intensidad de iluminación global: ajustar la iluminación
+- Intensidad de iluminación global: ajustar la luz
 - Exportación de modelo: soporta formatos `GLB`, `OBJ`, `STL`
 - etc.
 
-![Interfaz de usuario del nodo Load 3D](../Preview3D/asset/preview3d_canvas.jpg)
+![UI del nodo Load 3D](../Preview3D/asset/preview3d_canvas.jpg)
 
-1. Contiene múltiples menús y menús ocultos del nodo Load 3D
-2. Eje de operación de la vista 3D
+1. Incluye varios menús y menús ocultos del nodo Load 3D
+2. Eje de operaciones de vista 3D
 
-### 1. Operaciones de Vista
+### 1. Operaciones de vista
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
-  Su navegador no soporta la reproducción de video.
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
+  Tu navegador no soporta la reproducción de video.
 </video>
 
 Operaciones de control de vista:
 
-- Clic izquierdo + arrastrar: Rotar la vista
-- Clic derecho + arrastrar: Desplazar la vista
-- Rueda del medio o clic del medio + arrastrar: Acercar/Alejar
-- Eje de coordenadas: Cambiar vistas
+- Clic izquierdo + arrastrar: rotar la vista
+- Clic derecho + arrastrar: mover la vista
+- Rueda del ratón o clic central: acercar/alejar
+- Eje de coordenadas: cambiar de vista
 
-### 2. Funciones del Menú Izquierdo
+### 2. Funciones del menú izquierdo
 
-![Menú](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu.webp)
+![Menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu.webp)
 
-En el área de previsualización, algunos menús de operación de vista están ocultos en el menú. Haga clic en el botón de menú para expandir diferentes menús.
+En el área de previsualización, algunos menús relacionados con operaciones de vista están ocultos en el menú. Haz clic en el botón de menú para expandir los diferentes menús.
 
-- 1. Escena: Contiene configuración de cuadrícula de la ventana de previsualización, color de fondo y miniaturas
-- 2. Modelo: Modo de renderizado del modelo, material de textura, configuración de dirección hacia arriba
-- 3. Cámara: Cambiar entre vistas ortográfica y perspectiva, configurar el ángulo de perspectiva
-- 4. Luz: Intensidad de iluminación global de la escena
-- 5. Exportar: Exportar el modelo a otros formatos (GLB, OBJ, STL)
+- 1. Escena (Scene): incluye cuadrícula de la ventana de previsualización, color de fondo, configuración de miniatura
+- 2. Modelo (Model): modo de renderizado del modelo, material de textura, configuración de dirección superior
+- 3. Cámara (Camera): cambiar entre vista ortográfica y perspectiva, ajustar el ángulo de perspectiva
+- 4. Luz (Light): intensidad de iluminación global de la escena
+- 5. Exportar (Export): exportar el modelo a otros formatos (GLB, OBJ, STL)
 
-#### Escena
+#### Escena (Scene)
 
-![menú de escena](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_scene.webp)
+![scene menu](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_scene.webp)
 
 El menú Escena proporciona algunas funciones básicas de configuración de la escena:
 
-1. Mostrar/Ocultar cuadrícula
+1. Mostrar/ocultar cuadrícula
 2. Establecer color de fondo
-3. Haga clic para cargar una imagen de fondo
+3. Subir imagen de fondo
 4. Ocultar miniatura de previsualización
 
-#### Modelo
+#### Modelo (Model)
 
-![Menú_Escena](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_model.webp)
+![Menu_Scene](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_model.webp)
 
 El menú Modelo proporciona algunas funciones relacionadas con el modelo:
 
-1. **Dirección hacia arriba**: Determinar qué eje es la dirección hacia arriba del modelo
-2. **Modo de material**: Cambiar los modos de renderizado del modelo - Original, Normal, Malla, Lineart
+1. **Dirección superior (Up direction)**: determina qué eje es la dirección superior del modelo
+2. **Modo de material (Material mode)**: cambiar modos de renderizado del modelo - Original, Normal, Malla, Dibujo lineal
 
-#### Cámara
+#### Cámara (Camera)
 
-![menú_modelo_cámara](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_camera.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_camera.webp)
 
-Este menú proporciona el cambio entre vistas ortográfica y perspectiva, así como la configuración del tamaño del ángulo de perspectiva:
+Este menú permite cambiar entre vistas ortográfica y perspectiva, y ajustar el ángulo de perspectiva:
 
-1. **Cámara**: Cambiar rápidamente entre vistas ortográfica y perspectiva
-2. **FOV**: Ajustar el ángulo de campo de visión
+1. **Cámara (Camera)**: cambiar rápidamente entre vistas ortográfica y perspectiva
+2. **FOV**: ajustar el ángulo FOV
 
-#### Luz
+#### Luz (Light)
 
-![menú_modelo_cámara](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_light.webp)
+![menu_modelmenu_camera](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_light.webp)
 
-A través de este menú, puede ajustar rápidamente la intensidad de iluminación global de la escena
+A través de este menú puedes ajustar rápidamente la intensidad de la iluminación global de la escena
 
-#### Exportar
+#### Exportar (Export)
 
-![menú_exportar](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
+![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/menu_export.webp)
 
-Este menú proporciona la capacidad de convertir y exportar rápidamente formatos de modelo
+Este menú permite convertir y exportar rápidamente formatos de modelo
