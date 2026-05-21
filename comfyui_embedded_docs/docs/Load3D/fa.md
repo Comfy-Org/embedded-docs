@@ -28,7 +28,7 @@
 | `mask` | MASK | ماسک حاوی موقعیت مدل فعلی |
 | `mesh_path` | STRING | مسیر فایل مدل |
 | `normal` | IMAGE | نقشه نرمال |
-| `normal` | IMAGE | خروجی تصویر خطی (Line art)، `edge_threshold` مربوطه را می‌توان در منوی مدل بوم تنظیم کرد |
+| `lineart` | IMAGE | خروجی تصویر خطی (Line art)، `edge_threshold` مربوطه را می‌توان در منوی مدل بوم تنظیم کرد |
 | `camera_info` | LOAD3D_CAMERA | اطلاعات دوربین |
 | `recording_video` | VIDEO | ویدیوی ضبط‌شده (فقط زمانی که ضبط وجود داشته باشد) |
 
