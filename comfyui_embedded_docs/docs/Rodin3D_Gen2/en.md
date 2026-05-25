@@ -6,11 +6,11 @@ The Rodin3D_Gen2 node generates 3D assets using the Rodin API. It takes input im
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Yes | - | Input images to use for 3D model generation |
+| `Images` | IMAGE | Yes | - | Input images to use for 3D model generation. Accepts 1 to 5 images. |
 | `Seed` | INT | No | 0-65535 | Random seed value for generation (default: 0) |
 | `Material_Type` | COMBO | No | "PBR"<br>"Shaded" | Type of material to apply to the 3D model (default: "PBR") |
-| `Polygon_count` | COMBO | No | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" | Target polygon count for the generated 3D model (default: "500K-Triangle") |
-| `TAPose` | BOOLEAN | No | - | Whether to apply TAPose processing (default: False) |
+| `Polygon_count` | COMBO | No | "4K-Quad"<br>"8K-Quad"<br>"18K-Quad"<br>"50K-Quad"<br>"2K-Triangle"<br>"20K-Triangle"<br>"150K-Triangle"<br>"500K-Triangle" | Target polygon count and mesh type for the generated 3D model. "Quad" options use quad-based meshes, "Triangle" options use triangle-based meshes (default: "500K-Triangle") |
+| `TAPose` | BOOLEAN | No | - | Whether to apply TAPose processing (default: False). This is an advanced parameter. |
 
 ## Outputs
 
@@ -20,4 +20,4 @@ The Rodin3D_Gen2 node generates 3D assets using the Rodin API. It takes input im
 | `GLB` | FILE3DGLB | The generated 3D model in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `940712a9a40f4cb07050f3ed7ac502469b30bd364f86bb42b9dd8bf63eb912a2`
+**Source fingerprint (SHA-256):** `98e183ba480d2ef8dc1930132ea4edf83481cf6bf7ee18a22972b71dd532c7ea`

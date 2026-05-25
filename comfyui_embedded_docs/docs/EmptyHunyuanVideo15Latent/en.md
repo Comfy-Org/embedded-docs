@@ -20,4 +20,4 @@ This node creates an empty latent tensor specifically formatted for use with the
 | `samples` | LATENT | An empty latent tensor with dimensions suitable for the HunyuanVideo 1.5 model. The tensor has a shape of `[batch_size, 32, frames, height//16, width//16]`. The output also includes a `downscale_ratio_spacial` value of 16. |
 
 ---
-**Source fingerprint (SHA-256):** `eebc131adfe63f6bc8367f2a96b3ac7f3f3223c5b1fb308eda3ec09c94fff2ee`
+**Source fingerprint (SHA-256):** `6f53c99967149dd7c92e4d20a4ee80bd23d856ebab0a14a8201c55db847a525e`

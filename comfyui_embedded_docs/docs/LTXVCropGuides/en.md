@@ -19,4 +19,4 @@ The LTXVCropGuides node processes conditioning and latent inputs for video gener
 | `latent` | LATENT | The cropped latent representation with adjusted samples and noise mask, where keyframe sections have been removed |
 
 ---
-**Source fingerprint (SHA-256):** `029309c260e09221cc9a046897589d99498f6e8ad984ef6052e50be9a0ea7b6d`
+**Source fingerprint (SHA-256):** `b5981a2e685c3590df2ced4b619d6d4596971255c8eb6081d63f917a9a938504`

@@ -30,4 +30,4 @@ The WanTrackToVideo node converts motion tracking data into video sequences by p
 | `latent` | LATENT | Generated video latent representation |
 
 ---
-**Source fingerprint (SHA-256):** `b3e12492d3dafa100266f6be8fe05e4d62b827f1a2bdb4029f804b107dc691ed`
+**Source fingerprint (SHA-256):** `b4855ec033d14139e8071a78b7831694282faaf0399f797341d3a9e9b926100d`

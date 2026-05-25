@@ -17,4 +17,4 @@ The Morphology node applies various morphological operations to images, which ar
 | `image` | IMAGE | The processed image after applying the morphological operation |
 
 ---
-**Source fingerprint (SHA-256):** `7f6224a0e58fbb7263267b377394e119c6f8d65d16af4ce492ca9504654af7b4`
+**Source fingerprint (SHA-256):** `ea596f8d30975f153fccbc5651eec0fbbf308ef1c616313d996c200cddf748e3`

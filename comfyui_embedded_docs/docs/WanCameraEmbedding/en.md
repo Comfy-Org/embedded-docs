@@ -26,4 +26,4 @@ The WanCameraEmbedding node generates camera trajectory embeddings using Plücke
 | `length` | INT | The length value that was used for processing |
 
 ---
-**Source fingerprint (SHA-256):** `422c4a1fdfb6fd403afac26a609f80cbdbaa87f2c115068de9d7a33c756e71fd`
+**Source fingerprint (SHA-256):** `9c13c4504ca58b7623f106eaf07ceb2aef7739a9b9ce24e321445078b1f953c9`

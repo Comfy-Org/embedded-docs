@@ -16,4 +16,4 @@ The ImageFlip node flips images along different axes. It can flip images vertica
 | `image` | IMAGE | The flipped output image |
 
 ---
-**Source fingerprint (SHA-256):** `5cb9949c53653192b1a696179351976c3a87e2e7afc4634624b4d827ad75b527`
+**Source fingerprint (SHA-256):** `481cd167d57746f242fcc4b5f2e3bb0bff0184b5870626d5f24a34422464ddd6`

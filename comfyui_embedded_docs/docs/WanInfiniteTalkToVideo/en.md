@@ -43,4 +43,4 @@ The WanInfiniteTalkToVideo node generates video sequences from audio input. It u
 | `trim_image` | INT | The number of frames from the start of the motion context that should be trimmed when extending a sequence. |
 
 ---
-**Source fingerprint (SHA-256):** `6bb976da5cac0b61edb7d4c9d206c7c7ea9ffc0e982034c23c7f2e891e972888`
+**Source fingerprint (SHA-256):** `1ef125235ce5adb09972737d0e2863255315c536da718c7af230de1b4a7f53e2`

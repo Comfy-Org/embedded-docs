@@ -23,4 +23,4 @@ The Vidu Q3 Image-to-Video Generation node creates a video sequence starting fro
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `1dd3929860ee4a04b761014fd2cf7e9e32f9171d8b18fe1e93f27d0905ca04ee`
+**Source fingerprint (SHA-256):** `5081dcbad3e9203c7a1b5ddc0d041d51e1961a2e0a0672c2e14cba2f839f562d`

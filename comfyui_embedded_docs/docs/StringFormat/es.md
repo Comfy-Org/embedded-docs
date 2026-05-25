@@ -1,0 +1,23 @@
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringFormat/es.md)
+
+## Descripción general
+
+Este nodo formatea texto utilizando el método de formato de cadenas de Python. Funciona como una plantilla donde se define un patrón de texto con marcadores de posición, y luego se proporcionan valores para completar dichos marcadores. Soporta todas las opciones y características de formato de Python.
+
+## Entradas
+
+| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
+|-----------|--------------|-------------|-------|-------------|
+| `f_string` | STRING | Sí | N/D | La plantilla de cadena de formato con marcadores de posición (predeterminado: `{a}`). Admite entrada multilínea. |
+| `values` | STRING | Sí | N/D | Entrada dinámica para proporcionar valores que completan los marcadores de posición en la cadena de formato. Se pueden agregar múltiples entradas de valor según sea necesario. |
+
+**Nota sobre la entrada `values`:** Esta entrada es dinámica y se puede expandir para incluir múltiples valores con nombre. Cada entrada de valor está etiquetada con una letra (a, b, c, etc.) y corresponde a un marcador de posición en la cadena de formato (por ejemplo, `{a}`, `{b}`, `{c}`). Puede agregar o eliminar entradas de valor según sea necesario.
+
+## Salidas
+
+| Nombre de salida | Tipo de dato | Descripción |
+|------------------|--------------|-------------|
+| `STRING` | STRING | La cadena de texto formateada con todos los marcadores de posición reemplazados por sus valores correspondientes. |
+
+---
+**Source fingerprint (SHA-256):** `72625287533829a8087687bb47f39bc265aced3d5f43066f615326d729725122`

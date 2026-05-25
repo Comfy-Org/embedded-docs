@@ -22,4 +22,4 @@ The TextEncodeQwenImageEditPlus node processes text prompts and optional images 
 | `CONDITIONING` | CONDITIONING | Encoded conditioning data containing text tokens and optional reference latents for image generation |
 
 ---
-**Source fingerprint (SHA-256):** `54889d9a3b70e41d623020f3fd5e3c798c72799492c67a9efd99f543c88bb968`
+**Source fingerprint (SHA-256):** `40e0104e1a5fd88afb889948bc43559f99049a91c03c3f9885455b6dbfde343e`

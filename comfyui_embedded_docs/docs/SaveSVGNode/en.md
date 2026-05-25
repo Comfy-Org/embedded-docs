@@ -18,4 +18,4 @@ Save SVG files on disk. This node takes SVG data as input and saves it to your o
 **Note:** This node automatically embeds workflow metadata (prompt and extra PNG information) into the SVG file when available. The metadata is inserted as a CDATA section within the SVG's metadata element.
 
 ---
-**Source fingerprint (SHA-256):** `a294103d8d2306ce6765912a98c5572323bb5394909ee384591534b0b404ea70`
+**Source fingerprint (SHA-256):** `f8ac0c8aef01229f605c9b5b18e3f36996ef8bf6333fe31c9ebf32ae7ed76907`

@@ -16,4 +16,4 @@ The LossGraphNode creates a visual graph of training loss values over time and d
 | `ui.images` | IMAGE | The generated loss graph image displayed as a preview. |
 
 ---
-**Source fingerprint (SHA-256):** `9b1c844cb4babafc61102ee7bfd1039c325c6665abff1721d92a6da7d18029f9`
+**Source fingerprint (SHA-256):** `88164045339e4181cefc6ed3a2d3c35921b9cadc2977eb7406fad7e9b353f818`

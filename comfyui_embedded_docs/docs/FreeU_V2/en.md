@@ -19,4 +19,4 @@ The FreeU_V2 node enhances image generation quality by applying frequency-based 
 | `model` | MODEL | The enhanced diffusion model with FreeU modifications applied |
 
 ---
-**Source fingerprint (SHA-256):** `40ded64177e8e00cc5d8d5dde35c20958a77c500dada725572b64484c5ce1045`
+**Source fingerprint (SHA-256):** `adbbf0934f4c17fa736035b1396d26d6a5c847fd19a981ddd42d9624bd90e619`

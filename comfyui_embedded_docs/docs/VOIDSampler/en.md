@@ -19,4 +19,4 @@ This node has no configurable input parameters. It is a self-contained sampler t
 | `SAMPLER` | SAMPLER | A sampler object implementing the VOID DDIM algorithm, ready to be connected to SamplerCustom or SamplerCustomAdvanced nodes. |
 
 ---
-**Source fingerprint (SHA-256):** `c6f1be9a90003906c54cced20e8136ab7e4f7e7118e63b67ce366eeb7f790dca`
+**Source fingerprint (SHA-256):** `ca30211dc30975a1c6447afd3f6dcdb29d59d31effabe9b7fed5b90ee1cab540`

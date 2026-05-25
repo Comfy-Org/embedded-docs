@@ -23,4 +23,4 @@ Generates SVG vector illustrations synchronously based on a text prompt and reso
 | `SVG` | SVG | The generated vector illustration in SVG format |
 
 ---
-**Source fingerprint (SHA-256):** `3ac4057fa100a207c0400d0d01756899fc02261e3fb7d962fb0057e6c6519100`
+**Source fingerprint (SHA-256):** `b7b89e929a6d8dba78c0078962c9dde5c803bcff51350b0fb21c0cbd4c725ffe`

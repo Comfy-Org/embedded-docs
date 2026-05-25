@@ -17,4 +17,4 @@ The GetImageSize node extracts the dimensions and batch information from an inpu
 | `batch_size` | INT | The number of images in the batch |
 
 ---
-**Source fingerprint (SHA-256):** `5cd19ae762d2403c6c5d0740cd5f8c17913daea737fddcff8f0d9da2210e82ab`
+**Source fingerprint (SHA-256):** `251c8480ccb1a1462a8d7656ce2b7ef33f2b9f6527b8b306a0850af16ef4094d`

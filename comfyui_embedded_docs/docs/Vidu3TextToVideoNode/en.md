@@ -23,4 +23,4 @@ The Vidu Q3 Text-to-Video Generation node creates a video from a text descriptio
 | `video` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `a98b6c3093d659a5a4344c2c495063acf47a7922bf7d1fc851c3b8d8c0c87c5e`
+**Source fingerprint (SHA-256):** `d135d453159d113f9198b7510838c5ce5feefbf3cb7b318a55df95e6d26aa7a9`

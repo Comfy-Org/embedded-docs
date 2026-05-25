@@ -18,4 +18,4 @@ This node uses the Tencent Hunyuan3D API to perform UV unfolding on a 3D model. 
 | `uv_image` | IMAGE | The generated UV texture image. |
 
 ---
-**Source fingerprint (SHA-256):** `16bf094cfc3146e9d302d73862d2080b94c5aa2d575221d3c8316a3cf69fc5e1`
+**Source fingerprint (SHA-256):** `f09167ca1aacf299ff278817a50b6c311b6211fe447cfbe7c3a0ccc481058cf6`

@@ -2,6 +2,8 @@
 
 The Add Text Prefix node modifies text by adding a specified string to the beginning of each input text. It takes the text and a prefix as input, then returns the combined result.
 
+**Note:** This node is deprecated and superseded by the Concatenate Text node.
+
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
@@ -16,4 +18,4 @@ The Add Text Prefix node modifies text by adding a specified string to the begin
 | `text` | STRING | The resulting text with the prefix added to the front. |
 
 ---
-**Source fingerprint (SHA-256):** `7f1282b1b84ea06a96ecefdec8e9e684cb6e7d3e618250dfb6e54d01f9e9ba87`
+**Source fingerprint (SHA-256):** `71744a8dc3056b8f20eb2cb7ac16002ce86e214a660aa1d145f501d6d7dc5b53`

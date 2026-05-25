@@ -17,4 +17,4 @@ The SaveAudioOpus node saves audio data to an Opus format file. It takes audio i
 | - | - | This node does not return any output values. It saves the audio file to disk as its primary function. |
 
 ---
-**Source fingerprint (SHA-256):** `87c3b1b85ca51b79d43c8486eeb2de7b074faa11c4da2bff7b8931a3049560e2`
+**Source fingerprint (SHA-256):** `d793d9ef7da6bd3f9257ad16ab9dc5b31a16354a2dff1449afcb6980b9e1dc63`

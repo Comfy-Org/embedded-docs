@@ -29,4 +29,4 @@ The Topaz Image Enhance node provides industry-standard upscaling and image enha
 | `image` | IMAGE | The enhanced output image. |
 
 ---
-**Source fingerprint (SHA-256):** `69f2c929f2cd11f13557e064e30a4514e3862e127a2bdb3a3f40ec92023f255d`
+**Source fingerprint (SHA-256):** `c569f4873f5e008f62ccae9a93ef40fe79554c003e7e52c5ac91241b0d08978a`

@@ -28,4 +28,4 @@ The Meshy: Texture Node applies AI-generated textures to a 3D model. It takes a 
 | `FBX` | FILE3DFBX | The textured 3D model saved in the FBX file format. |
 
 ---
-**Source fingerprint (SHA-256):** `380b682a8290c69e71a204c8c3d6c2d4fb2c15f4bc1679b98c7fc4fd9ec9e1b3`
+**Source fingerprint (SHA-256):** `ac14eadd89c884abb8cb4800093fca93c8da5d8c86beec94bbdd40d34368ca09`

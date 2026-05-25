@@ -22,4 +22,4 @@ The InstructPixToPixConditioning node prepares conditioning data for InstructPix
 | `latent` | LATENT | Empty latent tensor with the same dimensions as the encoded image |
 
 ---
-**Source fingerprint (SHA-256):** `4b2383c9d64efdb558758359bf544fc5a1be65c12b23b54152e2df79a6dd8d79`
+**Source fingerprint (SHA-256):** `ac48cc0d3c77f1e399b615068291ae60801f36a6c4e1ae47d624fbc08e0b7264`

@@ -24,4 +24,4 @@ Generates videos synchronously based on a text prompt and output settings. This 
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `44482bc91c3df2cc9ac22d06197668af45849e8bfde8bd435905f11f2593342c`
+**Source fingerprint (SHA-256):** `3e7fb20aebee034e2055d87e7c1c24a995aece152b0271de48c81ce82cf2911a`

@@ -24,4 +24,4 @@ The Grok Image node generates one or more images based on a text description usi
 | `output` | IMAGE | The generated image or a batch of images. If `number_of_images` is 1, a single image tensor is returned. If greater than 1, a batch of image tensors is returned. |
 
 ---
-**Source fingerprint (SHA-256):** `5c8a76d3636dea8bcc6ade0d8adb6e6d1610b518a31e15fc7fce3f107fe63953`
+**Source fingerprint (SHA-256):** `f4af858c6b94fd74be1856849417609f3d45fc0f139e8f2e56cdabb6e3521076`

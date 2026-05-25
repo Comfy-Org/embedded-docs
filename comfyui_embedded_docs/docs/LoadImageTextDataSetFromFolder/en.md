@@ -6,7 +6,7 @@ This node loads a dataset of images and their corresponding text captions from a
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `folder` | COMBO | Yes | *Dynamically loaded from `folder_paths.get_input_subfolders()`* | The folder to load images from. The available options are the subdirectories within ComfyUI's input directory. |
+| `folder` | COMBO | Yes | *Dynamically loaded from `folder_paths.get_input_subfolders()`* | The folder to load images and text captions from. The available options are the subdirectories within ComfyUI's input directory. |
 
 **Note:** The node expects a specific file structure. For each image file (`.png`, `.jpg`, `.jpeg`, `.webp`), it will look for a `.txt` file with the same name to use as a caption. If a caption file is not found, an empty string is used. The node also supports a special structure where a subfolder's name begins with a number and an underscore (e.g., `5_cats`), which will cause all images inside that subfolder to be repeated that number of times in the final output list.
 
@@ -18,4 +18,4 @@ This node loads a dataset of images and their corresponding text captions from a
 | `texts` | STRING | A list of text captions corresponding to each loaded image. |
 
 ---
-**Source fingerprint (SHA-256):** `e176f35118f08ea397c63f5b6f347d9cdb3dc1a08db7ad7a5cc8255e1526e6ca`
+**Source fingerprint (SHA-256):** `c505d580b7bfb84ee71aca8fa98c847eeba531da9e578ddfe17818a2fd2ae5e8`

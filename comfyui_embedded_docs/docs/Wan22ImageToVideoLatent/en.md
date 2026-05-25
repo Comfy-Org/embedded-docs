@@ -23,4 +23,4 @@ The Wan22ImageToVideoLatent node creates video latent representations from image
 | `noise_mask` | LATENT | The noise mask indicating which regions should be denoised during generation |
 
 ---
-**Source fingerprint (SHA-256):** `0f27e20bcc63f0dd224cda0fa26ee676c42898ac74fcfbe0a2b591def933689c`
+**Source fingerprint (SHA-256):** `d12982594b1e38e7db26630fe3d5bde84bcd540e95abb6ce50cac196ea953901`

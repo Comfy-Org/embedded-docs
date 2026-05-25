@@ -26,4 +26,4 @@ The Kling Motion Control node generates a video by applying the motion, expressi
 | `output` | VIDEO | The generated video with the character performing the motion from the reference video. |
 
 ---
-**Source fingerprint (SHA-256):** `4159b10496e85ae93f522865494e9bc99ba08bda00df1601bca2314e61fb32df`
+**Source fingerprint (SHA-256):** `3e350ca448a927367edfc90c5abb572be7ffa589c9e8e8734066af280233bd60`

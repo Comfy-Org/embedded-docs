@@ -25,4 +25,4 @@ The LTXVImgToVideo node converts an input image into a video latent representati
 | `latent` | LATENT | Video latent representation containing the encoded frames and noise mask for video generation |
 
 ---
-**Source fingerprint (SHA-256):** `fbd35623cd71bf917f39108d388986c9604138fbfb9380bdf936deff6d775cb9`
+**Source fingerprint (SHA-256):** `1f9d897d1f461270106bf44106acc90db422a04e6bce10ad3bca22127e96ffab`

@@ -29,4 +29,4 @@ The GeminiImage2Node generates or edits images using Google's Vertex AI Gemini m
 | `string` | STRING | The text response from the model. This output will be empty if `response_modalities` is set to "IMAGE". |
 
 ---
-**Source fingerprint (SHA-256):** `20a937a635f883a42e22582ae415f6d2a9a6ecc50f147c9090431877e5461144`
+**Source fingerprint (SHA-256):** `5814a952815288c0b4b5962f646c69b0e618bfb9ab92b31ba60eab313c68a01c`

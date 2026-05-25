@@ -20,4 +20,4 @@ Upscale image with minimal alterations to 4K resolution. This node uses Stabilit
 | `image` | IMAGE | The upscaled image at 4K resolution |
 
 ---
-**Source fingerprint (SHA-256):** `46f7bdd3cb4254b6305407f43e4a9a69a54fd3a0ac285d784c899dbf52edd552`
+**Source fingerprint (SHA-256):** `1720cc44cc6273b00b3061b44581ba00853e9da32616bc02584335eb6156632c`

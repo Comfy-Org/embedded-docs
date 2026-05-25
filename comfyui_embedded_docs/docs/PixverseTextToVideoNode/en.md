@@ -7,10 +7,10 @@ Generates videos based on a text prompt and various generation parameters. This 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | - | Prompt for the video generation (default: "") |
-| `aspect_ratio` | COMBO | Yes | Options from PixverseAspectRatio | Aspect ratio for the generated video |
-| `quality` | COMBO | Yes | Options from PixverseQuality | Video quality setting (default: PixverseQuality.res_540p) |
-| `duration_seconds` | COMBO | Yes | Options from PixverseDuration | Duration of the generated video in seconds |
-| `motion_mode` | COMBO | Yes | Options from PixverseMotionMode | Motion style for the video generation |
+| `aspect_ratio` | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Aspect ratio for the generated video |
+| `quality` | COMBO | Yes | `"540p"`<br>`"1080p"` | Video quality setting (default: "540p") |
+| `duration_seconds` | COMBO | Yes | `"5"`<br>`"10"` | Duration of the generated video in seconds |
+| `motion_mode` | COMBO | Yes | `"normal"`<br>`"fast"` | Motion style for the video generation |
 | `seed` | INT | Yes | 0 to 2147483647 | Seed for video generation (default: 0) |
 | `negative_prompt` | STRING | No | - | An optional text description of undesired elements on an image (default: "") |
 | `pixverse_template` | CUSTOM | No | - | An optional template to influence style of generation, created by the PixVerse Template node |
@@ -24,4 +24,4 @@ Generates videos based on a text prompt and various generation parameters. This 
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `ab9264668f48533cb139abfb322e9a6e425a2ad7280da103a7fe0a7704158762`
+**Source fingerprint (SHA-256):** `dd065e218e3e8ca3d70b58f4d8afdecc33094635663c87f79467452ca47881c7`

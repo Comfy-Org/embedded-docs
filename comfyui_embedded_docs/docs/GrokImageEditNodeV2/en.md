@@ -9,7 +9,7 @@ Modify an existing image based on a text prompt. This node sends your images and
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | N/A | The text prompt used to generate the image. Must be at least 1 character long after stripping whitespace. |
-| `model` | MODEL | Yes | See Description | The Grok image model to use. This parameter has multiple sub-options that appear after selecting a model. Available models: `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image`. Each model has different capabilities (see note below). |
+| `model` | MODEL | Yes | See Description | The Grok image model to use. This parameter has multiple sub-options that appear after selecting a model. Available models: `grok-imagine-image-quality`<br>`grok-imagine-image-pro`<br>`grok-imagine-image`. Each model has different capabilities (see note below). |
 | `seed` | INT | Yes | 0 to 2147483647 | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed. (default: 0) |
 
 **Note on `model` parameter constraints:**
@@ -27,4 +27,4 @@ Modify an existing image based on a text prompt. This node sends your images and
 | `IMAGE` | IMAGE | The edited image(s) returned by the Grok API. If a single image is generated, it is returned directly. If multiple images are generated, they are concatenated into a single batch tensor. |
 
 ---
-**Source fingerprint (SHA-256):** `b041b40bb5712a67b09dcb0c841f00cbdd9ef77b9e4f3fdc6b2c4038be447ba5`
+**Source fingerprint (SHA-256):** `90ace53f5f2e40da315d4940fa801d84950de6db2d8ed1cf9d715d88a2b1ebf0`

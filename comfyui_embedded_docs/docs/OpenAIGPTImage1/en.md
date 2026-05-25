@@ -38,4 +38,4 @@ Generates images synchronously via OpenAI's GPT Image endpoint. This node can cr
 | `IMAGE` | IMAGE | Generated or edited image(s) |
 
 ---
-**Source fingerprint (SHA-256):** `44b258d6afcb388db3836427abdd5a7cb5c09a0328efceef7e114dd61a38eae1`
+**Source fingerprint (SHA-256):** `826d393831ee38e97dad3ea238877d0aeb5bf16778612c51cdc0ca4816efead2`

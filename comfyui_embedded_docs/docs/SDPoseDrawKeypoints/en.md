@@ -24,4 +24,4 @@ The SDPoseDrawKeypoints node takes pose estimation data (keypoints) and draws th
 | `output` | IMAGE | An image with the drawn pose keypoints. The image dimensions match the `canvas_height` and `canvas_width` specified in the input keypoint data. |
 
 ---
-**Source fingerprint (SHA-256):** `c01397ed3608b65b737b60c2ae50919e0217cfe63b3695b68f176c2d69faa9c1`
+**Source fingerprint (SHA-256):** `09b91930bd88c64aefe32b2b742562537408a13882ad59398fb2e8bcd12fa4eb`

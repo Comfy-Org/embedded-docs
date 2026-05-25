@@ -6,7 +6,7 @@ The LatentOperationTonemapReinhard node applies Reinhard tonemapping to latent v
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `multiplier` | FLOAT | No | 0.0 to 100.0 | Controls the intensity of the tonemapping effect (default: 1.0) |
+| `multiplier` | FLOAT | Yes | 0.0 to 100.0 | Controls the intensity of the tonemapping effect (default: 1.0) |
 
 ## Outputs
 
@@ -15,4 +15,4 @@ The LatentOperationTonemapReinhard node applies Reinhard tonemapping to latent v
 | `operation` | LATENT_OPERATION | Returns a tonemapping operation that can be applied to latent vectors |
 
 ---
-**Source fingerprint (SHA-256):** `70c04eaef06b749392a0c65f3d1267e52484f7cf956f87173d10ad935afcf98c`
+**Source fingerprint (SHA-256):** `698c142dd4fa084b52c43a12062e8be063870704b0c0dd2de015f3a1142378b8`

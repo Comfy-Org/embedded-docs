@@ -16,4 +16,4 @@ This node shortens text by cutting it off at a specified maximum length. It take
 | `string` | STRING | The truncated text, containing only the first `max_length` characters from the input. |
 
 ---
-**Source fingerprint (SHA-256):** `271a77a910967c4fd86a07485449679fb8db89f6b3f2bf0a8fa2ff224ea2f7b2`
+**Source fingerprint (SHA-256):** `b23c92af425be8f7b15d793bbe7f321cab6f7f3137a995bb9724948ae00145e4`

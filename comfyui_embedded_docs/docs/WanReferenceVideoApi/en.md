@@ -28,4 +28,4 @@ The Wan Reference to Video node uses the visual appearance and voice from one or
 | `output` | VIDEO | The newly generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `ed29f0bd3a1b30a81c94896976c4f9ff7bf5d0bcafaba66d70be61fce1418962`
+**Source fingerprint (SHA-256):** `948976c64337299217616d60200ffed7e24cce32655960c525bb068c38cc6406`

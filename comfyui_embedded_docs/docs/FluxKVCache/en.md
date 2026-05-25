@@ -15,4 +15,4 @@ The Flux KV Cache node enables a Key-Value (KV) Cache optimization for Flux fami
 | `model` | MODEL | The patched model with KV Cache optimization enabled. |
 
 ---
-**Source fingerprint (SHA-256):** `530c660ae23607d4035815826ae73cdcbebe7693ba47a3b0fe98e69f329b9e86`
+**Source fingerprint (SHA-256):** `bf2b19dd11336bec694a6eb586141fa850e3d0a5102c5d320455f7346738660c`

@@ -21,4 +21,4 @@ The ElevenLabs Speech to Speech node transforms an input audio file from one voi
 | `audio` | AUDIO | The transformed audio file in the specified output format. |
 
 ---
-**Source fingerprint (SHA-256):** `118fe6e85b146d0649b104d814abb518d37f69ade2e53becac365a0ec90146fd`
+**Source fingerprint (SHA-256):** `ef065ffa78a63398e746b52c6c8f2c336e6a4137722537c8026d292ed397a246`

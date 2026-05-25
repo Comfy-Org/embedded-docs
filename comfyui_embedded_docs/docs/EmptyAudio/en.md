@@ -17,4 +17,4 @@ The EmptyAudio node generates a silent audio clip with specified duration, sampl
 | `AUDIO` | AUDIO | The generated silent audio clip containing waveform data and sample rate information |
 
 ---
-**Source fingerprint (SHA-256):** `61b9cd6c8e518f28533b7586fdd1f909e5c356c7f2f7690da4e1ec7965d53c5d`
+**Source fingerprint (SHA-256):** `687bfe02cb0192add9128ae9040fa5773be0d7a0a5df17618cf56050901c6dc5`

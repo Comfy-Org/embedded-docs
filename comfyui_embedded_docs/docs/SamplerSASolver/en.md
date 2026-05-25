@@ -23,4 +23,4 @@ The SamplerSASolver node implements a custom sampling algorithm for diffusion mo
 | `sampler` | SAMPLER | A configured sampler object that can be used with diffusion models |
 
 ---
-**Source fingerprint (SHA-256):** `3de8834281c09d0bd1435e29f0c9ae540a2ea42db142277d07cb655ccf814873`
+**Source fingerprint (SHA-256):** `f1491a63377d4d8a5c44cb7109afba09678ef9c048786f9086a5437aacb17753`

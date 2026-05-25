@@ -16,4 +16,4 @@ The EmptyAceStepLatentAudio node creates empty latent audio samples of a specifi
 | `output` | LATENT | Returns empty latent audio samples with zeros. The output contains a `samples` tensor and a `type` field set to "audio". |
 
 ---
-**Source fingerprint (SHA-256):** `79fcfb3cb26db8a2ef4480455a44255e0d1a16f122a762d7608a78b2330cc637`
+**Source fingerprint (SHA-256):** `be20317ed22bf89eeb35a31de0177842f366105da8653e6d7af71241a84967a0`

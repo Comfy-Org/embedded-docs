@@ -31,4 +31,4 @@ The Bria FIBO Image Edit node allows you to modify an existing image using a tex
 | `structured_prompt` | STRING | The structured prompt that was used or generated during the editing process. |
 
 ---
-**Source fingerprint (SHA-256):** `30148261f43f5bfd14339f5ff1ec250381a615cc05c67eee21b0a2423ebe349d`
+**Source fingerprint (SHA-256):** `60a5f42392ba803380695f036f78d4b88436b3d216aea381b2e3c13eeb5c5456`

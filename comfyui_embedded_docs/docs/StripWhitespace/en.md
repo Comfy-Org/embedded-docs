@@ -2,6 +2,8 @@
 
 This node removes any extra spaces, tabs, or newlines from the beginning and end of a text string. It takes a text input and returns a cleaned version with the leading and trailing whitespace trimmed off.
 
+**Note: This node is deprecated and superseded by the Trim Text node.**
+
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
@@ -15,4 +17,4 @@ This node removes any extra spaces, tabs, or newlines from the beginning and end
 | `text` | STRING | The processed text with all leading and trailing whitespace characters removed. |
 
 ---
-**Source fingerprint (SHA-256):** `5b86f71c842a89fe42119593a8bfd30ea441cd02e35356f431ebfdda8010e58d`
+**Source fingerprint (SHA-256):** `182f01e15050b35cc33de7792886721873daf387a934befbe1ff37cbcd766143`

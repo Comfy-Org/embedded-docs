@@ -17,4 +17,4 @@ The RenormCFG node modifies the classifier-free guidance (CFG) process in diffus
 | `model` | MODEL | The modified model with renormalized CFG function applied |
 
 ---
-**Source fingerprint (SHA-256):** `b59929606f7519574b7ad14a3caacee51e4f141dd6be3abb594217bcfdbc401e`
+**Source fingerprint (SHA-256):** `1fb74c816d82d39e030a25e372c01f251a42c7fe6314cc6cefbad984acb262d3`

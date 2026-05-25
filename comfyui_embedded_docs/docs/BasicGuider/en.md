@@ -16,4 +16,4 @@ The BasicGuider node creates a simple guidance mechanism for the sampling proces
 | `GUIDER` | GUIDER | A guider object that can be used during the sampling process to guide generation |
 
 ---
-**Source fingerprint (SHA-256):** `012171caea6aacfadaabacb746be104ca783ae5ea5834cc4a67088233b835654`
+**Source fingerprint (SHA-256):** `87b4662787829c4f00a5cc362f12b1c046fe836f9eb7d90aa40bd48f5cecdf0a`

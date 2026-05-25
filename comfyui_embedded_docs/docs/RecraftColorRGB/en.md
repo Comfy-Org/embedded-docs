@@ -18,4 +18,4 @@ Create a Recraft color by specifying individual red, green, and blue values. Thi
 | `recraft_color` | COLOR | The created Recraft color object containing the specified RGB values, or the extended color chain if an existing one was provided |
 
 ---
-**Source fingerprint (SHA-256):** `8c3503632d085fa4c1771f92f17008b7b051e9604d9e7d1e7d352cbbbd22dddc`
+**Source fingerprint (SHA-256):** `3c645f17232a1c646b6b64dab658a48dc4aa4c10c2daee9451977f824c3bf2c2`

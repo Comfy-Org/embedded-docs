@@ -19,4 +19,4 @@ Generates images synchronously via OpenAI's DALL·E 3 endpoint. This node takes 
 | `IMAGE` | IMAGE | The generated image from DALL·E 3 |
 
 ---
-**Source fingerprint (SHA-256):** `e36bfe2a6ecec050906f220de3a3edf06eff0bfd6e21f08ce90579172a07d7eb`
+**Source fingerprint (SHA-256):** `f100a8564689c2c54cc5c22df554af7e5c166bd4f15bc9234bade4d0819a09dd`

@@ -19,4 +19,4 @@ The StableCascade_EmptyLatentImage node creates empty latent tensors for Stable 
 | `stage_b` | LATENT | The stage B latent tensor with dimensions [batch_size, 4, height//4, width//4] |
 
 ---
-**Source fingerprint (SHA-256):** `ba5347f522b661993e540bc5775737cae88bd5f7a87c1b91715f8c1858e8e81a`
+**Source fingerprint (SHA-256):** `072c320d415acbc0ebc5b823855b64f0df29082d18b84a15ac63ec016e64ecf8`

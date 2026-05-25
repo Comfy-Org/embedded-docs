@@ -20,4 +20,4 @@ This node creates a video preview of tracked objects, drawing each tracked objec
 | `ui` | PREVIEW_VIDEO | A UI element that displays the generated preview video. No tensor data is returned. |
 
 ---
-**Source fingerprint (SHA-256):** `8300d4fa89c7bbc481ac9a59868ede0e3c9413faa63d56c16a4f603ef878e877`
+**Source fingerprint (SHA-256):** `76389f354c8acdf249137d966765069d530034a0f8eeb39d769bde3c0f7a1bd0`

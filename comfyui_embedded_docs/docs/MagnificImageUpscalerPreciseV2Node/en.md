@@ -23,4 +23,4 @@ The Magnific Image Upscale (Precise V2) node performs high-fidelity image upscal
 | `image` | IMAGE | The resulting upscaled image. |
 
 ---
-**Source fingerprint (SHA-256):** `cceff30e9702c6a24ab8102698c59f1afb20ec50e7f279b3c0d50befc9673b24`
+**Source fingerprint (SHA-256):** `83559e99f86398b894c659996bdde48633a49f857a4769127fdf7ab6e80d6b0d`

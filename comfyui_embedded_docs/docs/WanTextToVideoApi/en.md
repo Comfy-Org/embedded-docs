@@ -27,4 +27,4 @@ The Wan Text to Video node generates video content based on text descriptions. I
 | `output` | VIDEO | The generated video based on the input parameters |
 
 ---
-**Source fingerprint (SHA-256):** `e978f384365060a6d71899e4e2e22b2c6f4268fb0da988c8902e4876d8597a96`
+**Source fingerprint (SHA-256):** `4fbdb2e06ff15849684de860ca3fdf4eb43e6af1803483b4baa7229e584f6e25`

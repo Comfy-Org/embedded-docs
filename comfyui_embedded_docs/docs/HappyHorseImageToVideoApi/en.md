@@ -23,4 +23,4 @@ This node generates a short video from a single starting image using the HappyHo
 | `video` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `e10ad61abd92df7ad6dd3ac70cc6af35faf0413798f4cff32c81194695bb0bed`
+**Source fingerprint (SHA-256):** `b8764d68024b7d2a526b6cc3e1e56c3240b1aa55f31a07263e7014d4f6c67509`

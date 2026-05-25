@@ -15,4 +15,4 @@ Upscale image synchronously. Enhances a given raster image using the 'crisp upsc
 | `image` | IMAGE | The upscaled image with enhanced resolution and clarity. Returns a batch of images if a batch was provided as input. |
 
 ---
-**Source fingerprint (SHA-256):** `2c7f6cf4dc801ac83b365bfc501baffb573aa8dde432fa56c57b3d522b4068c6`
+**Source fingerprint (SHA-256):** `4683d62ca72ce624ad96b41e4abbbcf3df8c8e11f473f1729a675fba78a9ccc0`

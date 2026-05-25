@@ -22,4 +22,4 @@ The Wan Image to Image node generates an image from one or two input images and 
 | `image` | IMAGE | The generated image based on the input images and text prompts. |
 
 ---
-**Source fingerprint (SHA-256):** `d69811ddaba718e5468f539fb9b25827efdf79f3ee9cbf31ad8f9387cea9b9be`
+**Source fingerprint (SHA-256):** `c9afd38e3df8c080f489c4b569ea647eab5718fa78d95c65e294706344bb8067`

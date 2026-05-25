@@ -15,4 +15,4 @@ This node loads multiple images from a specified subfolder within ComfyUI's inpu
 | `images` | IMAGE | List of loaded images. The node loads all valid image files (PNG, JPG, JPEG, WEBP) found in the selected folder. |
 
 ---
-**Source fingerprint (SHA-256):** `0f6e1b3d159f7d7c0c9530350ee057118a2618796f149586bae925253ecc8cf0`
+**Source fingerprint (SHA-256):** `62db052cfda66658172a881214d2a30dcfe626bec3ae619d1d32c75e327339c4`

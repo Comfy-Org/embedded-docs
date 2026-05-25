@@ -19,4 +19,4 @@ The Runway Text to Image node generates images from text prompts using Runway's 
 | `output` | IMAGE | The generated image based on the text prompt and optional reference image |
 
 ---
-**Source fingerprint (SHA-256):** `140f8e6b07216892d84f2d7fbc3afaf1c390e98ddedf27d4926032066a783f67`
+**Source fingerprint (SHA-256):** `212eec9ae7ae3df06cefacae361cfd1f623ea7b6b1ca0e4beb4f5b7df76226e5`

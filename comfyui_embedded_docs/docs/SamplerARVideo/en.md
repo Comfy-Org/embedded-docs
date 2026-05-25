@@ -15,4 +15,4 @@ The Sampler AR Video node provides a specialized sampling method for autoregress
 | `SAMPLER` | SAMPLER | A configured sampler object that uses the "ar_video" sampling function with the specified autoregressive parameters. |
 
 ---
-**Source fingerprint (SHA-256):** `5b735f98fdde074ee9483503fee0e2322d510aed846336b382a8ea89a363c9e4`
+**Source fingerprint (SHA-256):** `7f722791f55a4d8bbda1c00becf25c42e67e3a487712fa674ac118e978cf9812`

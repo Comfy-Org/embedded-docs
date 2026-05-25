@@ -19,4 +19,4 @@ The GITSScheduler node generates noise schedule sigmas for the GITS (Generative 
 | `sigmas` | SIGMAS | The generated sigma values for the noise schedule |
 
 ---
-**Source fingerprint (SHA-256):** `b81b85f95236276822429ec7cbc90204c6f4f86ea3e89ed8b7c2aea40597fea9`
+**Source fingerprint (SHA-256):** `e58c8c1c0e7cbf79554040a6684f12c1a2c59c69bb50770f9577a13d76ac8eb3`

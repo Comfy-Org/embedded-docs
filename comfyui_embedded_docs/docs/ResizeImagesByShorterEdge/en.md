@@ -7,7 +7,7 @@ This node resizes images so that the shorter edge matches a specified length whi
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image to be resized. |
-| `shorter_edge` | INT | No | 1 to 8192 | Target length for the shorter edge. (default: 512) |
+| `shorter_edge` | INT | Yes | 1 to 8192 | Target dimension for the shorter edge. (default: 512) |
 
 ## Outputs
 
@@ -16,4 +16,4 @@ This node resizes images so that the shorter edge matches a specified length whi
 | `image` | IMAGE | The resized image with the shorter edge matching the specified target length. |
 
 ---
-**Source fingerprint (SHA-256):** `011949390faa9032587aec210d9e38d55b79e474c7a6dcd5d3c0e75594a1fc29`
+**Source fingerprint (SHA-256):** `6bb3e1c974108ee7b75b47406ea02b3f47ca14305f9ee54d3d379eefbb7f26cd`

@@ -25,4 +25,4 @@ Track objects across video frames using SAM3's memory-based tracker. This node p
 | `track_data` | SAM3TrackData | Tracking data containing object masks and metadata across all video frames |
 
 ---
-**Source fingerprint (SHA-256):** `30768bdf5839c1d7b984675e68a127a27f21b17724a2dc885e27f00c272db3cb`
+**Source fingerprint (SHA-256):** `36ee256c46ea3816be4d06b64d945b79af530032f29e5e4c8741971c7ebf9fae`

@@ -24,4 +24,4 @@ The TextEncodeZImageOmni node is an advanced conditioning node that encodes a te
 | `CONDITIONING` | CONDITIONING | The final conditioning output, which contains the encoded text prompt and may include encoded image embeddings and/or reference latents if images were provided. |
 
 ---
-**Source fingerprint (SHA-256):** `daa4205acdf72503180eeedb4142708d239d4ff0f689012a298264ae2d8ea949`
+**Source fingerprint (SHA-256):** `5edda1e70c2189c164fbde427999e74bfa21f4401feb7067e483802ca1c2df31`

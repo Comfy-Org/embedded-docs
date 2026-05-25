@@ -10,7 +10,7 @@ The Veo3FirstLastFrameNode uses Google's Veo 3 model to generate a video based o
 | `negative_prompt` | STRING | No | N/A | Negative text prompt to guide what to avoid in the video (default: empty string). |
 | `resolution` | COMBO | Yes | `"720p"`<br>`"1080p"`<br>`"4k"` | The resolution of the output video. |
 | `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"` | Aspect ratio of the output video (default: "16:9"). |
-| `duration` | INT | No | 4 to 8 | Duration of the output video in seconds (default: 8). |
+| `duration` | INT | No | 4 to 8 | Duration of the output video in seconds (default: 8, step: 2). |
 | `seed` | INT | No | 0 to 4294967295 | Seed for video generation (default: 0). |
 | `first_frame` | IMAGE | Yes | N/A | The start frame for the video. |
 | `last_frame` | IMAGE | Yes | N/A | The end frame for the video. |
@@ -26,4 +26,4 @@ The Veo3FirstLastFrameNode uses Google's Veo 3 model to generate a video based o
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `b486b22e71a305172700760bb3eff256b0e571bba75e68f27e23a1e1a1319b5a`
+**Source fingerprint (SHA-256):** `63d2cf6b636bff6e8bc4efc8b795cb63f6cd775e040323e290986266029109b3`

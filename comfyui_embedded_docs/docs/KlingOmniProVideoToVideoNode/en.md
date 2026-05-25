@@ -30,4 +30,4 @@ This node uses the Kling AI model to generate a new video based on an input vide
 | `output` | VIDEO | The newly generated video. |
 
 ---
-**Source fingerprint (SHA-256):** `1bed976530603bcf7db67048e89ad6adac218fba8597744f8ece3e16a2ee4993`
+**Source fingerprint (SHA-256):** `aa99b865ca96ec5c2d5535d3392e8dc94dd5e56ebf624f8fdff09302767ab300`

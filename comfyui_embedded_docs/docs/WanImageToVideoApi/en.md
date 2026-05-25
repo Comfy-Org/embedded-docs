@@ -33,4 +33,4 @@ The Wan Image to Video node generates a video from a single input image and a te
 | `output` | VIDEO | Generated video based on the input image and prompt. |
 
 ---
-**Source fingerprint (SHA-256):** `ad4947dbb9c12ebb97ace99cd447431ba6db88a3b74239099fcbea501cff71f0`
+**Source fingerprint (SHA-256):** `b8a75e324f7436e8a376e4a058b0a32556cafbe8e7975148cbc6302638f52058`

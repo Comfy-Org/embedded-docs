@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/en.md)
 
-The WanCameraImageToVideo node converts images to video sequences by generating latent representations for video generation. It processes conditioning inputs and optional starting images to create video latents that can be used with video models. The node supports camera conditions and clip vision outputs for enhanced video generation control.
+The WanCameraImageToVideo node prepares conditioning and latent data for video generation from images. It takes positive and negative conditioning prompts, along with optional starting images and camera controls, and outputs modified conditioning and an empty latent tensor ready for a video model to fill in.
 
 ## Inputs
 
@@ -23,9 +23,9 @@ The WanCameraImageToVideo node converts images to video sequences by generating 
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Modified positive conditioning with applied camera conditions and clip vision outputs |
-| `negative` | CONDITIONING | Modified negative conditioning with applied camera conditions and clip vision outputs |
-| `latent` | LATENT | Generated video latent representation for use with video models. The latent tensor has dimensions [batch_size, 16, frames, height/8, width/8] where frames is calculated as ((length - 1) // 4) + 1. |
+| `positive` | CONDITIONING | Modified positive conditioning with applied camera conditions, clip vision outputs, and/or starting image data |
+| `negative` | CONDITIONING | Modified negative conditioning with applied camera conditions, clip vision outputs, and/or starting image data |
+| `latent` | LATENT | Generated empty video latent representation for use with video models. The latent tensor has dimensions [batch_size, 16, frames, height/8, width/8] where frames is calculated as ((length - 1) // 4) + 1. |
 
 ---
-**Source fingerprint (SHA-256):** `19d76097d580b14663afd0aab58810f9dc1685cd32e8f67aa43c820be65239e7`
+**Source fingerprint (SHA-256):** `e2309b40f78d5a2487242f1684f82d9e4dd8405ef256615f82da2f701418fd4a`

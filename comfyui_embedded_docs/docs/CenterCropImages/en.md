@@ -17,4 +17,4 @@ The Center Crop Images node crops an image from its center to a specified width 
 | `image` | IMAGE | The resulting image after the center crop operation. |
 
 ---
-**Source fingerprint (SHA-256):** `4361b6630ab1833e035d6ab04a130fb36fff33cddc36b54ff5a2d8e04534a555`
+**Source fingerprint (SHA-256):** `1b22529602e3aca816b583158c4bb5aa51de3478ac8068c2a69a3392fb12746f`

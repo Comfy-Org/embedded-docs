@@ -19,4 +19,4 @@ LazyCache is a homebrew version of EasyCache that provides an even easier implem
 | `model` | MODEL | The model with LazyCache functionality added. |
 
 ---
-**Source fingerprint (SHA-256):** `72a5e85b7cf517e88583fc1b75d3ab4a5d40fe8604d50c34f555e677d2ea9e51`
+**Source fingerprint (SHA-256):** `72ca1bbaf795e17951d1f7f9f37350dc3f1511351cc59a5043b40e069fd31340`

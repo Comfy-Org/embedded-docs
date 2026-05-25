@@ -15,4 +15,4 @@ This node is deprecated and serves no function. It accepts a model as input and 
 | `model` | MODEL | The same model that was provided as input, unchanged. |
 
 ---
-**Source fingerprint (SHA-256):** `a7ab11efa864c6692b5acc2e75fada19e14a97690b809f02a2da0473a18a5164`
+**Source fingerprint (SHA-256):** `7acf88d1c42d90e645bb557c7fdc93e659182927ee7b3e3ef15b0ccf7c3f471a`

@@ -16,4 +16,4 @@ The PerturbedAttentionGuidance node applies perturbed attention guidance to a di
 | `model` | MODEL | The modified model with perturbed attention guidance applied |
 
 ---
-**Source fingerprint (SHA-256):** `8808aa3a3f7cfe306e17f8f4424779cb8e4565647bbcc9d4907da2215affe191`
+**Source fingerprint (SHA-256):** `b4bcb5e8a0bf990d36d2865c58e6fbf3c9cee9d446f5aced987ddd04387d2b4c`

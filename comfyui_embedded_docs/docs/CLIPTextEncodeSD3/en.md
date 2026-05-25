@@ -25,4 +25,4 @@ The CLIPTextEncodeSD3 node processes text inputs for Stable Diffusion 3 models b
 | `CONDITIONING` | CONDITIONING | The encoded text conditioning data ready for use in SD3 generation pipelines |
 
 ---
-**Source fingerprint (SHA-256):** `38f7538d05fe48e74f41f265550b83906b2f0c5d31f0783f6859f4df7b5cb9d3`
+**Source fingerprint (SHA-256):** `2086e7c0fe910a94c04173ecfe35a2e04ecb306526b9089c527bb874e97b20c4`

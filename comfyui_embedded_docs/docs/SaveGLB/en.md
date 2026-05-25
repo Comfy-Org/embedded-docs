@@ -16,4 +16,4 @@ The SaveGLB node saves 3D mesh data or 3D files to the output directory. It acce
 | `ui` | UI | Displays the saved 3D files in the user interface with filename, subfolder, and type information |
 
 ---
-**Source fingerprint (SHA-256):** `bd36600185aeb793cd4e9f37f3b4464267cb36f451fdcf71aff83077bb8c3f53`
+**Source fingerprint (SHA-256):** `ed56f61f60afea7dfbcae8b222aa7129608e3b10bc0daa27934b8c0cbeb1c0e8`

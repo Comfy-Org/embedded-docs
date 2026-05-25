@@ -9,7 +9,7 @@ The Runway Image to Video (Gen3a Turbo) node generates a video from a single sta
 | `prompt` | STRING | Yes | N/A | Text prompt for the generation (default: "") |
 | `start_frame` | IMAGE | Yes | N/A | Start frame to be used for the video |
 | `duration` | COMBO | Yes | `"5"`<br>`"10"` | Video duration in seconds (default: "5") |
-| `ratio` | COMBO | Yes | `"1280x720"`<br>`"720x1280"`<br>`"1920x1080"`<br>`"1080x1920"`<br>`"1080x1080"` | Aspect ratio of the generated video (default: "1280x720") |
+| `ratio` | COMBO | Yes | `"768:1280"`<br>`"1280:768"` | Aspect ratio of the generated video (default: "768:1280") |
 | `seed` | INT | No | 0 to 4294967295 | Random seed for generation (default: 0) |
 
 **Parameter Constraints:**
@@ -25,4 +25,4 @@ The Runway Image to Video (Gen3a Turbo) node generates a video from a single sta
 | `output` | VIDEO | The generated video sequence |
 
 ---
-**Source fingerprint (SHA-256):** `4f3270ce070ce50580699292e21c5f9e3b1a56dd8ac981f67a9026ef6fc8ed76`
+**Source fingerprint (SHA-256):** `ff88d2486746ab3ddf1b7a0c3184c54abd6bcb01e9743bc04c93e9c3a9e8d9ff`

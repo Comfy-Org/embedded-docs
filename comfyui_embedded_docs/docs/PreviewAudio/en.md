@@ -6,7 +6,7 @@ The PreviewAudio node creates a temporary audio preview that can be played direc
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `audio` | AUDIO | Yes | - | The audio data to preview |
+| `audio` | AUDIO | Yes | - | The audio data to preview. This node will raise an error if the input audio is None, which can happen when the source video has no audio track. |
 
 ## Outputs
 
@@ -15,4 +15,4 @@ The PreviewAudio node creates a temporary audio preview that can be played direc
 | `ui` | UI | Displays an audio player widget in the interface for previewing the audio |
 
 ---
-**Source fingerprint (SHA-256):** `3f4b38e9768abde9d7f406c5442660679b80532799dfff8af20b2ea178268582`
+**Source fingerprint (SHA-256):** `d914d634c063cc97e3cd24b813250d1e5b0e4bce23dfe97d475259a53b3212d2`

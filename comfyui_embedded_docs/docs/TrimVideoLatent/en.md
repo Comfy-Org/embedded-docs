@@ -16,4 +16,4 @@ The TrimVideoLatent node removes frames from the beginning of a video latent rep
 | `output` | LATENT | The trimmed latent video representation with the specified number of frames removed from the beginning |
 
 ---
-**Source fingerprint (SHA-256):** `7fd482533d1f63219565a3a25776173c77c419fbf5086015d42136f5bfdfbed2`
+**Source fingerprint (SHA-256):** `176aa42bb489ff6326057c79ff4dcd27543b96d3212e30af77eeeccd77d3926b`

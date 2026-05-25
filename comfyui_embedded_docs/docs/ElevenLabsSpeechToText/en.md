@@ -28,4 +28,4 @@ The ElevenLabs Speech to Text node transcribes audio files into text. It uses El
 | `words_json` | STRING | A JSON-formatted string containing detailed word-level information, including timestamps and speaker labels if enabled. |
 
 ---
-**Source fingerprint (SHA-256):** `aca2ac04d7280ef2b604f7c8d29ad7fea1e7abcfc38beabb64ba6b268a8cade1`
+**Source fingerprint (SHA-256):** `1541ae5542b83d80cb96ab0c8694c25b2bd9d4f10c1030902064d05319b2a520`

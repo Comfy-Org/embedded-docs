@@ -19,4 +19,4 @@ The SaveLoRA node saves a LoRA (Low-Rank Adaptation) model to a file. It takes a
 | *None* | N/A | This node does not output any data to the workflow. It is an output node that saves a file to disk. |
 
 ---
-**Source fingerprint (SHA-256):** `e68a449d741c908f23fc1585d848254d78c310ad19efbd139c33c9ddef3145c7`
+**Source fingerprint (SHA-256):** `0d9bb1adef75214e3ecf5a16f046761d547d21bea41488b0ce80cdc05ed2e81b`

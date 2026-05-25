@@ -7,8 +7,8 @@ The ImageAddNoise node adds random noise to an input image. It uses a specified 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | The input image to which noise will be added |
-| `seed` | INT | Yes | 0 to 18446744073709551615 | The random seed used for creating the noise (default: 0) |
-| `strength` | FLOAT | Yes | 0.0 to 1.0 | Controls the intensity of the noise effect (default: 0.5) |
+| `seed` | INT | Yes | 0 to 18446744073709551615 | The random seed used for creating the noise (default: 0). This parameter supports "control after generate" functionality. |
+| `strength` | FLOAT | Yes | 0.0 to 1.0 | Controls the intensity of the noise effect (default: 0.5, step: 0.01) |
 
 ## Outputs
 
@@ -17,4 +17,4 @@ The ImageAddNoise node adds random noise to an input image. It uses a specified 
 | `image` | IMAGE | The output image with added noise applied |
 
 ---
-**Source fingerprint (SHA-256):** `8abfc64500e5ff8fe7589763a07c15d771e9a5a6a61bae9ec4d819be9bf71810`
+**Source fingerprint (SHA-256):** `d35471d5402a322e175958c42a20c56a42199a129e8197030071a1495a9eab6a`

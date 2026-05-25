@@ -20,4 +20,4 @@ The EmptyARVideoLatent node creates a blank, empty latent representation for vid
 | `LATENT` | LATENT | A latent tensor filled with zeros, representing an empty video latent space with the specified dimensions, length, and batch size. The tensor shape is [batch_size, 16, lat_t, height/8, width/8], where lat_t is calculated from the length. |
 
 ---
-**Source fingerprint (SHA-256):** `5ae25e2ccb24e627eae583d14c5bcba8b576a227b7a489f3cd4bc56738928513`
+**Source fingerprint (SHA-256):** `b36c40d768e846bc67ed6a7bfb4145c6e2a4ca55824296250a88f52d5ae305cf`

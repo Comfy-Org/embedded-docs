@@ -17,4 +17,4 @@ The LoadAudio node loads audio files from the input directory and converts them 
 | `AUDIO` | AUDIO | Audio data containing waveform and sample rate information |
 
 ---
-**Source fingerprint (SHA-256):** `a7fe63cbbb3a854359189e8685936a2b8b855e22c3c282fc77affacf640af010`
+**Source fingerprint (SHA-256):** `5631a5c50471e4612344c4bd0457e9824e9a7a8f8b75b22d06f13d5136c75258`

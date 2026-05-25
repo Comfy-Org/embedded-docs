@@ -16,4 +16,4 @@ This node removes the background from images using the Recraft API service. It p
 | `mask` | MASK | Alpha channel masks indicating the removed background areas |
 
 ---
-**Source fingerprint (SHA-256):** `9e3f1a0471da3afda6b8de26de3b7e78c1070c49ab49e4fc8b6b79bb10ff77de`
+**Source fingerprint (SHA-256):** `8bced9bb96c179101a2122fb5990cb3015313ad6ca888adf7a37b082b2e8a656`

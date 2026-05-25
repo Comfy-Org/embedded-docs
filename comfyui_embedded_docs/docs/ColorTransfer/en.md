@@ -31,4 +31,4 @@ The ColorTransfer node adjusts the color palette of a target image to match the 
 | `image` | IMAGE | The resulting image(s) after the color transfer has been applied. |
 
 ---
-**Source fingerprint (SHA-256):** `93a8447def4d2263a8a859c0474de694e6567dc6d32377032c2ddae2420bb10c`
+**Source fingerprint (SHA-256):** `f844af34ac6129c7751953c48e2d12aa0d2c556937e610f649f3eb2725955711`

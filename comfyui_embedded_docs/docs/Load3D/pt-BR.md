@@ -57,7 +57,7 @@ A área da Tela do nó Load3D contém inúmeras operações de visualização, i
 ### 1. Operações de Visualização
 
 <video controls width="640" height="360">
-  <source src="./asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   Seu navegador não suporta a reprodução de vídeo.
 </video>
 
@@ -124,7 +124,7 @@ Este menu fornece a capacidade de converter e exportar rapidamente formatos de m
 ### 3. Funções do Menu Direito
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   Seu navegador não suporta a reprodução de vídeo.
 </video>
 

@@ -18,4 +18,4 @@ The LTXVConcatAVLatent node combines a video latent representation and an audio 
 | `latent` | LATENT | A single latent dictionary containing the concatenated `samples` and, if applicable, the concatenated `noise_mask` from the video and audio inputs. |
 
 ---
-**Source fingerprint (SHA-256):** `322d6870f110fb1ef8b472cb49649cc9fff7865f4c7a83fbfd536f1fdfd694f8`
+**Source fingerprint (SHA-256):** `ae619048b36d205d63e6054760c443f438b77d561e05458ce2d9d3f4a2024e74`

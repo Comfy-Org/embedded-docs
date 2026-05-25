@@ -35,4 +35,4 @@ This node generates videos using the Kling V3 model. It supports two primary mod
 | `video` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `f7f827d657b1d057d273eba3215ce6848d3ea05c5f348e2f3fccccfdd030dfc3`
+**Source fingerprint (SHA-256):** `c329fa5a8609ccd2caec96fc23afae9ba79bdf835faa05450d4e20a7380087f5`

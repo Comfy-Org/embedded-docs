@@ -19,4 +19,4 @@ The OptimalStepsScheduler node calculates noise schedule sigmas for diffusion mo
 | `sigmas` | SIGMAS | A sequence of sigma values representing the noise schedule for diffusion sampling |
 
 ---
-**Source fingerprint (SHA-256):** `4379171dc6d525a1ece514fdd11a95bfd92ed0c8b301f69ca718c1a3256b9590`
+**Source fingerprint (SHA-256):** `19ad2b96d8256b1fd274f09d863215d4a4375f071829509d9f105d244cee3d28`

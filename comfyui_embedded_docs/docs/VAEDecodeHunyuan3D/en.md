@@ -18,4 +18,4 @@ The VAEDecodeHunyuan3D node converts latent representations into 3D voxel data u
 | `voxels` | VOXEL | The generated 3D voxel data from the decoded latent representation |
 
 ---
-**Source fingerprint (SHA-256):** `a53ad8e14a2ffca6278866753046d5959f057a4c3fdba5623b37545cee27d557`
+**Source fingerprint (SHA-256):** `04818af007257ec0c73873dba703465960e7adae8a9b22649e118116c388da56`

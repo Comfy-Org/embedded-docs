@@ -19,4 +19,4 @@ The CLIP Text Encode for Lumina2 node encodes a system prompt and a user prompt 
 | `CONDITIONING` | CONDITIONING | A conditioning containing the embedded text used to guide the diffusion model. |
 
 ---
-**Source fingerprint (SHA-256):** `fcc0802180ffc2c0757b395850d54632da011473da0c6b1c5268b42da3747024`
+**Source fingerprint (SHA-256):** `e9d5f685a666a4f0737739e56afa3eb854a4abcbd8a76480c7a050cd503b53b2`

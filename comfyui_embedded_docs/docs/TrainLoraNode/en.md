@@ -45,4 +45,4 @@ The TrainLoraNode creates and trains a LoRA (Low-Rank Adaptation) model on a dif
 | `steps` | INT | The total number of training steps completed (including any previous steps from existing LoRA). |
 
 ---
-**Source fingerprint (SHA-256):** `df315ef416ff3ce81e6a526af2c4e5115980e6c35830825967e7189d4f8541d8`
+**Source fingerprint (SHA-256):** `e145145306330099293c8b4bb344ec0a38de690040bd796b84225f54638900c3`

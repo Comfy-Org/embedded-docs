@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Remove Background node uses a background removal model to generate a mask that separates the foreground subject from the background of an input image. It takes an image and a background removal model, then produces a mask highlighting the main subject.
+The Remove Background node generates a foreground mask that separates the main subject from the background of an input image. It uses a background removal model to analyze the image and produce a mask highlighting the foreground elements.
 
 ## Inputs
 
@@ -18,4 +18,4 @@ The Remove Background node uses a background removal model to generate a mask th
 | `mask` | MASK | Generated foreground mask that highlights the main subject of the input image |
 
 ---
-**Source fingerprint (SHA-256):** `cd19134e6afed4d31096b613dd534eacad39afe7de2c8b74feab512bd5f09f66`
+**Source fingerprint (SHA-256):** `6b0e31792dc8a5c949944680129e91790ca396336a43ac67b7816b9d6c5b9049`

@@ -23,4 +23,4 @@ The SamplerER_SDE node provides specialized sampling methods for diffusion model
 | `sampler` | SAMPLER | A configured sampler object that can be used in the sampling pipeline with the specified solver settings. |
 
 ---
-**Source fingerprint (SHA-256):** `bc24ec3c5dc645aebf55ef3392c5f4a40dcf0461b4b77731e8fe7ff397dcfadf`
+**Source fingerprint (SHA-256):** `7a822bd28a41e616dea9feb1826d5bc1594fe0ba7429a7de21c602fe9f84ff10`

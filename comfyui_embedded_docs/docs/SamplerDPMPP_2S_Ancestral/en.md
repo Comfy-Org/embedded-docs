@@ -16,4 +16,4 @@ The SamplerDPMPP_2S_Ancestral node creates a sampler that uses the DPM++ 2S Ance
 | `sampler` | SAMPLER | Returns a configured sampler object that can be used in the sampling pipeline |
 
 ---
-**Source fingerprint (SHA-256):** `9634c96934850f5b746cd7c8b29727396af534133b8d54b6bdac12e9e0975189`
+**Source fingerprint (SHA-256):** `f18f51eb960250b52e7cbe58e19ed61d9a64876368c643b83a88e80fdb821d7d`

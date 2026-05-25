@@ -18,4 +18,4 @@ This node provides a configurable sampler for generating images. It implements t
 | `sampler` | SAMPLER | A configured sampler object that can be passed to other sampling nodes. |
 
 ---
-**Source fingerprint (SHA-256):** `13cfc064dab8b77dbdfdc27238130bdf3dc6c1eca47110f4a7f7d6b8c2866b90`
+**Source fingerprint (SHA-256):** `85cd8fe647b555e32e2aae9c2300ff9d3e01fcfd8bcdff687b0dc2aa0d06b47d`

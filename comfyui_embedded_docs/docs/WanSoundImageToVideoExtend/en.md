@@ -10,18 +10,18 @@ The WanSoundImageToVideoExtend node extends an existing video latent by generati
 | `negative` | CONDITIONING | Yes | - | Negative conditioning prompts that specify what the video should avoid |
 | `vae` | VAE | Yes | - | Variational Autoencoder used for encoding and decoding video frames |
 | `length` | INT | Yes | 1 to MAX_RESOLUTION | Total number of frames to generate for the video sequence (default: 77, step: 4) |
-| `video_latent` | LATENT | Yes | - | Initial video latent representation that serves as the starting point for extension |
-| `audio_encoder_output` | AUDIOENCODEROUTPUT | No | - | Optional audio embeddings that can influence video generation based on sound characteristics |
-| `ref_image` | IMAGE | No | - | Optional reference image that provides visual guidance for the video generation |
-| `control_video` | IMAGE | No | - | Optional control video that can guide the motion and style of the generated video |
+| `video_latent` | LATENT | Yes | - | Initial video latent representation that serves as the starting point for extension. The width, height, batch size, and frame offset are derived from this latent. |
+| `audio_encoder_output` | AUDIOENCODEROUTPUT | No | - | Optional audio embeddings that can influence video generation based on sound characteristics. When provided, the audio is interpolated and used to create an audio embedding bucket that is added to the conditioning. |
+| `ref_image` | IMAGE | No | - | Optional reference image that provides visual guidance for the video generation. The image is upscaled to match the target dimensions and encoded into a latent, which is then added to both positive and negative conditioning. |
+| `control_video` | IMAGE | No | - | Optional control video that can guide the motion and style of the generated video. The video is upscaled, encoded, and added to both positive and negative conditioning. The control video is truncated to the specified `length`. |
 
 ## Outputs
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `positive` | CONDITIONING | Processed positive conditioning with video context applied |
-| `negative` | CONDITIONING | Processed negative conditioning with video context applied |
-| `latent` | LATENT | Generated video latent representation containing the extended video sequence |
+| `positive` | CONDITIONING | Processed positive conditioning with video context applied, including audio embeddings, reference latents, reference motion, and control video if provided |
+| `negative` | CONDITIONING | Processed negative conditioning with video context applied, including audio embeddings (zeroed out), reference latents, reference motion, and control video if provided |
+| `latent` | LATENT | Generated video latent representation containing the extended video sequence, initialized as zeros with dimensions derived from the input `video_latent` and the target `length` |
 
 ---
-**Source fingerprint (SHA-256):** `fc9aee5d51e96b864da7d75f592f07691be8b970346998b209b3ad8a72308ecb`
+**Source fingerprint (SHA-256):** `73e5aa3dd8085c7c0ed58f5cdafe71db04c20fcc521a965aeb8bbc3364c79031`

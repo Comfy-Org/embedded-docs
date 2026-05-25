@@ -23,4 +23,4 @@ Enhances guidance towards detailed structure by using another set of CFG negativ
 | `model` | MODEL | The modified model with skip layer guidance applied |
 
 ---
-**Source fingerprint (SHA-256):** `cf494fbeb33e7bc3b3f798e9e9b025623afad4ea6340ef628caa776c7d42ba12`
+**Source fingerprint (SHA-256):** `35ca97f87913d0efcbb502ca040a8f357da112b202184d8786f63acd76809808`

@@ -18,4 +18,4 @@ The SamplerDPMPP_SDE node creates a DPM++ SDE (Stochastic Differential Equation)
 | `sampler` | SAMPLER | Returns a configured DPM++ SDE sampler object for use in sampling pipelines |
 
 ---
-**Source fingerprint (SHA-256):** `43b3b3c4b2756a6e7979c12418de1dba79e3e0c0fde2a06505cf0a6825e6ebbf`
+**Source fingerprint (SHA-256):** `613c129801297c6b7e993727e570476f8b3b1aef16a402cf2115922299944402`

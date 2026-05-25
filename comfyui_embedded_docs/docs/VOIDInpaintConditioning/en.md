@@ -25,4 +25,4 @@ The VOIDInpaintConditioning node prepares the conditioning data needed for inpai
 | `latent` | LATENT | A zero-filled noise latent tensor with shape [batch_size, 16, latent_t, latent_h, latent_w] |
 
 ---
-**Source fingerprint (SHA-256):** `a1fe36376d7930286c7a288f261dcf2961d6b13cc412d1a0d42af8a4f9ebeeaf`
+**Source fingerprint (SHA-256):** `47c40f8bb7527bc28178f3ad78e7bfb579e07d42efd0398d5760335c6b5b3c44`

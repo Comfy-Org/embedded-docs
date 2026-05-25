@@ -17,4 +17,4 @@ The AlignYourStepsScheduler node generates sigma values for the denoising proces
 | `sigmas` | SIGMAS | Returns the calculated sigma values for the denoising process |
 
 ---
-**Source fingerprint (SHA-256):** `112535f9c100ca4e13dcd733e7a371c00c203b38d77bd10beb4355ba3512ec66`
+**Source fingerprint (SHA-256):** `ea8694299147f6f28a1191f0f3c416c64cff9ca3a73bc54fa9319ab7eaab4ce9`

@@ -33,4 +33,4 @@ When you select a model, the following parameters become available:
 | `image` | IMAGE | The generated image as a tensor, downloaded from the BFL API result. |
 
 ---
-**Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`
+**Source fingerprint (SHA-256):** `ce3ee97d5ccb746892f3bfdb0dd5450d79cb4e0775a88d1f8c09569ce43ecbbb`

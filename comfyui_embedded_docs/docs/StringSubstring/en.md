@@ -17,4 +17,4 @@ The StringSubstring node extracts a portion of text from a larger string. It tak
 | `output` | STRING | The extracted substring from the input text, containing all characters from the `start` position up to (but not including) the `end` position. |
 
 ---
-**Source fingerprint (SHA-256):** `962d0b19af88b6c95b5c9d374081ecd55ee8cffbfb638de7ed38e6e378b220c5`
+**Source fingerprint (SHA-256):** `fd3ec23bbfe3a51f5481f1b0fe8b77f66e08469bb2a4bd3e266a7607f014e544`

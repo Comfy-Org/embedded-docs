@@ -10,7 +10,7 @@ The Runway First-Last-Frame to Video node generates videos by uploading first an
 | `start_frame` | IMAGE | Yes | N/A | Start frame to be used for the video |
 | `end_frame` | IMAGE | Yes | N/A | End frame to be used for the video. Supported for gen3a_turbo only. |
 | `duration` | COMBO | Yes | `"5"`<br>`"10"` | Video duration in seconds (default: "5") |
-| `ratio` | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Aspect ratio for the generated video (default: "16:9") |
+| `ratio` | COMBO | Yes | `"768:1280"`<br>`"1280:768"` | Aspect ratio for the generated video (default: "768:1280") |
 | `seed` | INT | No | 0 to 4294967295 | Random seed for generation. Set to 0 for random seed (default: 0). |
 
 **Parameter Constraints:**
@@ -27,4 +27,4 @@ The Runway First-Last-Frame to Video node generates videos by uploading first an
 | `output` | VIDEO | The generated video transitioning between the start and end frames |
 
 ---
-**Source fingerprint (SHA-256):** `57b72c1143b7053272107403279e1f84919cbfe71c57ca4f4e21b4324f7a5346`
+**Source fingerprint (SHA-256):** `a2d4839bf30bff3e3199a18129eb32c8495b8ea0c9ce209e9b3d00574de35399`

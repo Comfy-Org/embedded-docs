@@ -22,4 +22,4 @@ The PatchModelAddDownscale node implements Kohya Deep Shrink functionality by ap
 | `model` | MODEL | The modified model with downscale patch applied |
 
 ---
-**Source fingerprint (SHA-256):** `93ece77ad2dce3c1cdd554583ae1f2e6be51a43ab072d408869dddbcc7798c40`
+**Source fingerprint (SHA-256):** `ee6a1191bd753a669e676a58e2052ca4b47ac74d8f40df562df8550b0c71c3c2`

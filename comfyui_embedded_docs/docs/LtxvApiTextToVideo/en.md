@@ -6,7 +6,7 @@ The LTXV Text To Video node generates professional-quality videos from a text de
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Yes | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"`<br>`"LTX-2 (Turbo)"` | The AI model to use for video generation. The available models are mapped from the source code's `MODELS_MAP`. |
+| `model` | COMBO | Yes | `"LTX-2 (Pro)"`<br>`"LTX-2 (Fast)"` | The AI model to use for video generation. "LTX-2 (Pro)" offers higher quality, while "LTX-2 (Fast)" is optimized for speed. |
 | `prompt` | STRING | Yes | - | The text description that the AI will use to generate the video. This field supports multiple lines of text. |
 | `duration` | COMBO | Yes | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | The length of the generated video in seconds (default: 8). |
 | `resolution` | COMBO | Yes | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | The pixel dimensions (width x height) of the output video. |
@@ -25,4 +25,4 @@ The LTXV Text To Video node generates professional-quality videos from a text de
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `a0c16995a07d879113bd3ca8fea64be414feee96bd8293a3e7737ede7d30e11d`
+**Source fingerprint (SHA-256):** `8da5616f195dc4dea7d46d56b71dead6fb7a5dfa74bb7d8909bf6bd792540feb`

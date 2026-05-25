@@ -21,4 +21,4 @@ The CLIPTextEncodeHiDream node processes four separate text inputs using differe
 | `CONDITIONING` | CONDITIONING | The combined conditioning output from all processed text inputs, encoded using the scheduled encoding method |
 
 ---
-**Source fingerprint (SHA-256):** `51d117d82a9d833f095e874bf442d5cf8c46a12313fda6b98e628fa988797565`
+**Source fingerprint (SHA-256):** `4d0febcfc7fa8035d817a6b36ec80b9bdf176ede8446b49f291efd96b9d1371c`

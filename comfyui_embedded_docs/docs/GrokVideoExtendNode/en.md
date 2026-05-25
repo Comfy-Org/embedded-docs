@@ -23,4 +23,4 @@ The Grok Video Extend node uses an AI model to create a seamless continuation of
 | `output` | VIDEO | The newly generated video extension. |
 
 ---
-**Source fingerprint (SHA-256):** `a33383be0eb6857538a75e1b901ee58df0153dfeaf95a7ee19933d651b745b5f`
+**Source fingerprint (SHA-256):** `7e56ecb0cb31795b4124671e074ef274d6de61ec2cd734b6edd5e76a3cb6a7ba`

@@ -19,4 +19,4 @@ The SaveAudioMP3 node saves audio data as an MP3 file. It takes audio input and 
 | *None* | - | This node does not return any output data, but saves the audio file to the output directory |
 
 ---
-**Source fingerprint (SHA-256):** `70b960cc9c86ad9a4c98e643f40e6caaafdeb9840ac72a5f8e59533fd6120e3e`
+**Source fingerprint (SHA-256):** `b238008410f7e8d65b07d79f12cad2cf2ead1fd105bc881a3bef87ab4e71f484`

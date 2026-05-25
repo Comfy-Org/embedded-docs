@@ -16,4 +16,4 @@ The Case Converter node transforms text strings into different letter case forma
 | `output` | STRING | The input string converted to the specified case format |
 
 ---
-**Source fingerprint (SHA-256):** `2493daccd5bdd86ce3fb24c6658057f5e50c2d6ed7616785f40806826f9a60dc`
+**Source fingerprint (SHA-256):** `6cc933ec8a245ff454195b699ab7d72d2a014ec9a6e920a8c875acf7eb77e01a`

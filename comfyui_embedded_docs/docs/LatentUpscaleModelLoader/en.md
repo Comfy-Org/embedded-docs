@@ -15,4 +15,4 @@ The LatentUpscaleModelLoader node loads a specialized model designed for upscali
 | `model` | LATENT_UPSCALE_MODEL | The loaded latent upscale model, configured and ready for use. |
 
 ---
-**Source fingerprint (SHA-256):** `bd97f3ec1422aaabbd60779aa4112be44791daddc6307de53ae0e4219a90ab0e`
+**Source fingerprint (SHA-256):** `afd35f0d5dacb14a835c00bf34c016d270e85064eca7d7ff42880e67cc64a01f`

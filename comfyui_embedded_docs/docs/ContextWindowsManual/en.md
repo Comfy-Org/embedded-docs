@@ -33,4 +33,4 @@ The Context Windows (Manual) node allows you to manually configure context windo
 | `model` | MODEL | The model with context windows applied during sampling. |
 
 ---
-**Source fingerprint (SHA-256):** `b05ddda0ba38588305e6f733cd218c8b462268c39d16226ca961d09054187261`
+**Source fingerprint (SHA-256):** `1351789e54e6b4013331014a49b98c6f8b79692ddabed7a64eeb7463cda03cc5`

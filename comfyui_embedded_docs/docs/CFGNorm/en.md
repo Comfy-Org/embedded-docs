@@ -4,10 +4,10 @@ The CFGNorm node applies a normalization technique to the classifier-free guidan
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `model` | MODEL | required | - | - | The diffusion model to apply CFG normalization to |
-| `strength` | FLOAT | required | 1.0 | 0.0 - 100.0 | Controls the intensity of the normalization effect applied to the CFG scaling |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `model` | MODEL | Yes | - | The diffusion model to apply CFG normalization to |
+| `strength` | FLOAT | Yes | 0.0 to 100.0 | Controls the intensity of the normalization effect applied to the CFG scaling (default: 1.0) |
 
 ## Outputs
 
@@ -16,4 +16,4 @@ The CFGNorm node applies a normalization technique to the classifier-free guidan
 | `patched_model` | MODEL | Returns the modified model with CFG normalization applied to its sampling process |
 
 ---
-**Source fingerprint (SHA-256):** `af9e5f965500b959ff46f781e9329524fc0a4b94af2ce6d74116fe27b0e9005e`
+**Source fingerprint (SHA-256):** `adbcea5c02277a7bd93866eaae75fe150b5b310dbc6e0a3a31c4e4ee0f71e57c`

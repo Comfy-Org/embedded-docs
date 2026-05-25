@@ -7,10 +7,10 @@ The CosmosPredict2ImageToVideoLatent node creates video latent representations f
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | Yes | - | The VAE model used for encoding images into latent space |
-| `width` | INT | No | 16 to MAX_RESOLUTION | The width of the output video in pixels (default: 848, must be divisible by 16) |
-| `height` | INT | No | 16 to MAX_RESOLUTION | The height of the output video in pixels (default: 480, must be divisible by 16) |
-| `length` | INT | No | 1 to MAX_RESOLUTION | The number of frames in the video sequence (default: 93, step: 4) |
-| `batch_size` | INT | No | 1 to 4096 | The number of video sequences to generate (default: 1) |
+| `width` | INT | Yes | 16 to MAX_RESOLUTION | The width of the output video in pixels (default: 848, must be divisible by 16) |
+| `height` | INT | Yes | 16 to MAX_RESOLUTION | The height of the output video in pixels (default: 480, must be divisible by 16) |
+| `length` | INT | Yes | 1 to MAX_RESOLUTION | The number of frames in the video sequence (default: 93, step: 4) |
+| `batch_size` | INT | Yes | 1 to 4096 | The number of video sequences to generate (default: 1) |
 | `start_image` | IMAGE | No | - | Optional starting image for the video sequence |
 | `end_image` | IMAGE | No | - | Optional ending image for the video sequence |
 
@@ -24,4 +24,4 @@ The CosmosPredict2ImageToVideoLatent node creates video latent representations f
 | `noise_mask` | LATENT | A mask indicating which parts of the latent should be preserved during generation |
 
 ---
-**Source fingerprint (SHA-256):** `55fab16180c0e3fa254bcc77694dbc666810b28522e61b9c613f720fae66bd0c`
+**Source fingerprint (SHA-256):** `5c470c35afaa9b994b431f0a8655e108da420182ec5c223fa54ec2c233ba9fd3`

@@ -15,4 +15,4 @@ The SamplerEulerCFGpp node provides an Euler CFG++ sampling method for generatin
 | `sampler` | SAMPLER | Returns a configured Euler CFG++ sampler instance |
 
 ---
-**Source fingerprint (SHA-256):** `f01732fc39a76fca697aaddefc8cec58d54ba9761eb8d93da806ddd162d42513`
+**Source fingerprint (SHA-256):** `ff80ae845259b6fd415f11f20bb224617c7a6134b8e02799fef4549d42d44b83`

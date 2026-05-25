@@ -37,4 +37,4 @@ This node uses the latest Kling AI model to generate a video from a start frame,
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `bd0fb11242b7f79062079b1aa48c3524abf59ecf06a90f013e57b6910cd8e224`
+**Source fingerprint (SHA-256):** `caa8c321124c70cb9cbeedee13cdde4c37c7e107c04265b4baf2dd8864a1fc65`

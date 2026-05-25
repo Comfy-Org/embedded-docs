@@ -19,4 +19,4 @@ The ImageYUVToRGB node converts YUV color space images to RGB color space. It ta
 | `output` | IMAGE | The converted RGB image |
 
 ---
-**Source fingerprint (SHA-256):** `ee160be21fce75b3a3e41e25dc1cb0b20305383ff26f9698f07b93d42f98c64f`
+**Source fingerprint (SHA-256):** `5aefb7b87ff76e03af9259f9dac06f027668d83618693e3c9dcfd17b95441070`

@@ -24,4 +24,4 @@ This node creates a personal video asset for Seedance 2.0. It uploads your input
 | `group_id` | STRING | The identifier of the asset group containing the new video. This will be the provided `group_id` or a newly created one. |
 
 ---
-**Source fingerprint (SHA-256):** `9da0872cf8df32765e3fb1eef50bc24f53b65e069d8ef2609de1075d89edd605`
+**Source fingerprint (SHA-256):** `6598a586dae18811698bd505333ec45b7d2a60aa85728a38e5de790c5bacbdb7`

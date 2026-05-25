@@ -19,4 +19,4 @@ This node loads a specialized text encoder for the LTXV audio model. It combines
 | `clip` | CLIP | The loaded LTXV CLIP model, ready to be used for encoding text prompts for audio generation. |
 
 ---
-**Source fingerprint (SHA-256):** `c072a0b3393aa44333bb15ae42179c50868a4e9d7ca706d6c7da5922625373e6`
+**Source fingerprint (SHA-256):** `41d4c4ffef8bd1e55a44cc19e7c1c768484118458a7d4e100e5e22f5323c59dc`

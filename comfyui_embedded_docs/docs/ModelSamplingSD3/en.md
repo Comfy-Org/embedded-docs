@@ -16,4 +16,4 @@ The ModelSamplingSD3 node applies Stable Diffusion 3 sampling parameters to a mo
 | `model` | MODEL | The modified model with SD3 sampling parameters applied |
 
 ---
-**Source fingerprint (SHA-256):** `aa2172d578badffb0a728308b0d3aae4d048db074336963965264d5e512a0d93`
+**Source fingerprint (SHA-256):** `410fbe0ce16c7e22733ff1e2124c24634a2c6752a882e1c97763b35666882e5f`

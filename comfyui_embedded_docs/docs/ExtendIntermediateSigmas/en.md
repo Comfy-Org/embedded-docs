@@ -21,4 +21,4 @@ The ExtendIntermediateSigmas node takes an existing sequence of sigma values and
 | `sigmas` | SIGMAS | The extended sigma sequence with additional intermediate values inserted |
 
 ---
-**Source fingerprint (SHA-256):** `f51ed433fc38365334ff8e4072174dc04982a8a00770d07f544320a6863577c4`
+**Source fingerprint (SHA-256):** `111cb74aad64d8d9b2bebd10406c0f4ce718367bde96102104d385d387cef8e5`

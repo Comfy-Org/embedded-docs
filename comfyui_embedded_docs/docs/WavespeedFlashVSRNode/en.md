@@ -21,4 +21,4 @@ The WavespeedFlashVSRNode is a fast, high-quality video upscaler that boosts the
 | `output` | VIDEO | The upscaled video file at the selected target resolution. |
 
 ---
-**Source fingerprint (SHA-256):** `9a495889753ac866177921727228846d8ef9516c54ccd9aa425350b87237c397`
+**Source fingerprint (SHA-256):** `61381d911521ccb8848ef3512749d5cb9e047cd0c1c2bdfc000c5d3ef3360918`

@@ -19,4 +19,4 @@ The Custom Combo node allows you to create a custom dropdown menu with your own 
 | `INDEX` | INT | The index position of the selected option in the dropdown list. |
 
 ---
-**Source fingerprint (SHA-256):** `d950207b94deee37abce294eb3dab035e622925dc1118fe37f9c874784dc1672`
+**Source fingerprint (SHA-256):** `1c68db3a71526d52d21f79abae146ffa235b4927961ff45db3aa075bba4e910a`

@@ -15,4 +15,4 @@ This node configures a style for use with the Recraft API, specifically selectin
 | `recraft_style` | STYLEV3 | A configured style object containing the selected "digital_illustration" style and optional substyle, ready to be passed to other Recraft API nodes. |
 
 ---
-**Source fingerprint (SHA-256):** `e52790a670839608ee1cb576e802a54d3bf2ca879ec288a24acd4ac7db27021a`
+**Source fingerprint (SHA-256):** `167b5f875e1d9ec39dd830d98349fe34b23a3ac870cff8329bc834fe13a5fc8f`

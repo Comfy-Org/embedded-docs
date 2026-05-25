@@ -16,4 +16,4 @@ The Adjust Contrast node modifies the contrast level of an input image. It works
 | `image` | IMAGE | The resulting image with adjusted contrast. |
 
 ---
-**Source fingerprint (SHA-256):** `01148cdd9d951e78c712c1c3159c5562a680a5147bd4a76e33d91543d5245854`
+**Source fingerprint (SHA-256):** `3debe91086d9818883dbe29b0cb2ae3ecaed44e4636b124d42a85d9906252330`

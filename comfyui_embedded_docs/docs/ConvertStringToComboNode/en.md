@@ -15,4 +15,4 @@ The Convert String to Combo node takes a text string as input and converts it in
 | `output` | COMBO | The input string, now formatted as a Combo data type. |
 
 ---
-**Source fingerprint (SHA-256):** `37bd7db5a5ce2657db30a3a24da90c1c1e5c4a3f7089b4d03a0528b7770e9fe1`
+**Source fingerprint (SHA-256):** `46ca4f38a4b1054bc6c5ff5c54551fe6c8061cfb8740a3ef46b64a30a05cec05`

@@ -29,4 +29,4 @@ The HunyuanImageToVideo node converts images into video latent representations u
 | `latent` | LATENT | Video latent representation ready for further processing by video generation models |
 
 ---
-**Source fingerprint (SHA-256):** `e55e935b7955b28b04014359c544a230c51ee91e21170be1ae4f50705d3e7bba`
+**Source fingerprint (SHA-256):** `171e60e0ff5bbe2715b83693212e91dd9a3e2236e7b4437c7e33929d6143ae4f`

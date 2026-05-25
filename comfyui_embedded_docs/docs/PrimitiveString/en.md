@@ -15,4 +15,4 @@ The String node provides a simple way to input and pass through text data in you
 | `output` | STRING | The same text string that was provided as input |
 
 ---
-**Source fingerprint (SHA-256):** `eb99ed1b8572c0d28df7185d64a35dc71488459dcd11a46f81c5a1f202b25d62`
+**Source fingerprint (SHA-256):** `4e7b3a07572480f9138b7c77268581875b91599964382c11a8f5fbcd7f76f213`

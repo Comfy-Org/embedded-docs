@@ -24,4 +24,4 @@ Generates a transition video between two input images using the PixVerse API. Yo
 | `output` | VIDEO | The generated transition video |
 
 ---
-**Source fingerprint (SHA-256):** `0b7f1e11d513c543df144031452bd9cd80e73c596aee8ffe9701bf471bf5983c`
+**Source fingerprint (SHA-256):** `941ba26ffdd5cc93d800066ccd75adc4ccdb9a1c9f93ae0ccd28a11ba5f3c567`

@@ -10,8 +10,8 @@ The Magnific Image Skin Enhancer node applies specialized AI processing to portr
 | `sharpen` | INT | No | 0 to 100 | Sharpening intensity level (default: 0). |
 | `smart_grain` | INT | No | 0 to 100 | Smart grain intensity level (default: 2). |
 | `mode` | COMBO | Yes | `"creative"`<br>`"faithful"`<br>`"flexible"` | The processing mode to use. `"creative"` is for artistic enhancement, `"faithful"` for preserving the original appearance, and `"flexible"` for targeted optimization. |
-| `skin_detail` | INT | No | 0 to 100 | Skin detail enhancement level. This input is only available and required when the `mode` is set to `"faithful"` (default: 80). |
-| `optimized_for` | COMBO | No | `"enhance_skin"`<br>`"improve_lighting"`<br>`"enhance_everything"`<br>`"transform_to_real"`<br>`"no_make_up"` | Enhancement optimization target. This input is only available and required when the `mode` is set to `"flexible"`. |
+| `skin_detail` | INT | No | 0 to 100 | Skin detail enhancement level. This input is only available when the `mode` is set to `"faithful"` (default: 80). |
+| `optimized_for` | COMBO | No | `"enhance_skin"`<br>`"improve_lighting"`<br>`"enhance_everything"`<br>`"transform_to_real"`<br>`"no_make_up"` | Enhancement optimization target. This input is only available when the `mode` is set to `"flexible"`. |
 
 **Constraints:**
 
@@ -28,4 +28,4 @@ The Magnific Image Skin Enhancer node applies specialized AI processing to portr
 | `image` | IMAGE | The enhanced portrait image. |
 
 ---
-**Source fingerprint (SHA-256):** `e02cae2e119ddab931b790865889adf53f47a2ebb03d488477c289dfda7204f5`
+**Source fingerprint (SHA-256):** `1c87ba8a71ccac4fd17c35ad5bf2ee9b27c8bcb45a9d76cd077d6c0614f1ecc1`

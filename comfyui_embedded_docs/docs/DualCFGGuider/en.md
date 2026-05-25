@@ -21,4 +21,4 @@ The DualCFGGuider node creates a guidance system for dual classifier-free guidan
 | `GUIDER` | GUIDER | A configured guidance system ready for use with sampling |
 
 ---
-**Source fingerprint (SHA-256):** `802e07f2e64dc2d55e86290db7e94dffd46079a9180480a560035d0bb6350325`
+**Source fingerprint (SHA-256):** `5440fb55429b8c30ef88ee0eff74c8a54916b1ce644f93d5d0d5742b5056637d`

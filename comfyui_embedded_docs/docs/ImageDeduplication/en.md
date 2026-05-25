@@ -16,4 +16,4 @@ This node removes duplicate or very similar images from a batch. It works by cre
 | `images` | IMAGE | The filtered list of images with duplicates removed. |
 
 ---
-**Source fingerprint (SHA-256):** `8904f9dee4ca911821e76d2317983cbc230c4821a9ee7876180bd7dbe42b9a54`
+**Source fingerprint (SHA-256):** `d0c40694853c3dd0952d58b920bf735a4626cb2921928bb982ba479dc58fbe53`

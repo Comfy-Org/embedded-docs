@@ -18,4 +18,4 @@ The Number Convert node transforms various input data types into numeric values.
 | `INT` | INT | The input value converted to an integer. For float inputs, this performs a truncation. |
 
 ---
-**Source fingerprint (SHA-256):** `961fbea05b22c68f768f9ecaae2ee455b1913afe4a65d8c0e6b6497b1e24ce72`
+**Source fingerprint (SHA-256):** `3a5501a3916df827b0376e4ba9c8b9972a91485cca38e067b683bb5f96c1d53c`

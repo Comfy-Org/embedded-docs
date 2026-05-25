@@ -17,4 +17,4 @@ The Create Video node generates a video file from a sequence of images. You can 
 | `output` | VIDEO | The generated video file containing the input images and optional audio. |
 
 ---
-**Source fingerprint (SHA-256):** `6da9a09542b5e357c0180c30018ec10facf06d1bdd3e4edee8172b8426802e3d`
+**Source fingerprint (SHA-256):** `b3effbbc380a3841ffbedd3c9561e783bc9f9a7887edc8965c38992cb370a812`

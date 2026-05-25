@@ -24,4 +24,4 @@ This node generates a video by interpolating between a provided start frame and 
 | `video` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `4a0a8d6657702d80278dc9239370683f408d7c051e91e8396939b7b81b87b4ed`
+**Source fingerprint (SHA-256):** `a3a1befd61a011ccc9912972d07506c2e851ca94cda3f83fcc1faa8a1dc3905c`

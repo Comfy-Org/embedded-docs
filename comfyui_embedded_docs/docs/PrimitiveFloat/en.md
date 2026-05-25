@@ -15,4 +15,4 @@ The PrimitiveFloat node creates a floating-point number value that can be used i
 | `output` | FLOAT | The input floating-point number value |
 
 ---
-**Source fingerprint (SHA-256):** `a12473ac0efac903249f249770bec92a562b1ef6dede45fc0296e0e397a0754f`
+**Source fingerprint (SHA-256):** `92f1603421dfcc06867f001222ca49b322de1537e05336f94e250a9422236d11`

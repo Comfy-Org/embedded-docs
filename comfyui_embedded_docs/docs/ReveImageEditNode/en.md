@@ -25,4 +25,4 @@ The Reve Image Edit node allows you to modify an existing image based on a text 
 | `image` | IMAGE | The edited image generated based on the instruction. |
 
 ---
-**Source fingerprint (SHA-256):** `0a9504ae5e8b7216d309fe3ba95c014da32eadbf11cfc5701247ba5973dd98be`
+**Source fingerprint (SHA-256):** `21fbe9e23e952eb0132d31a295505a38a6d3640396865d00b999135d0722166f`

@@ -4,12 +4,12 @@ The `CLIPSave` node saves a CLIP text encoder model to disk in SafeTensors forma
 
 ## Inputs
 
-| Parameter | Data Type | Input Type | Default | Range | Description |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | Required | - | - | The CLIP model to be saved. |
-| `filename_prefix` | STRING | Required | `clip/ComfyUI` | - | The prefix path and filename for the saved file(s). The node will append a component suffix (e.g., `_clip_l`, `_clip_g`) and a counter to create unique filenames. |
-| `prompt` | PROMPT | Hidden | - | - | The workflow prompt information, saved as metadata in the output file. |
-| `extra_pnginfo` | EXTRA_PNGINFO | Hidden | - | - | Additional metadata, saved as key-value pairs in the output file. |
+| Parameter | Data Type | Required | Range | Description |
+|-----------|-----------|----------|-------|-------------|
+| `clip` | CLIP | Yes | - | The CLIP model to be saved. |
+| `filename_prefix` | STRING | Yes | - | The prefix path and filename for the saved file(s). The node will append a component suffix (e.g., `_clip_l`, `_clip_g`) and a counter to create unique filenames (default: `clip/ComfyUI`). |
+| `prompt` | PROMPT | No | - | The workflow prompt information, saved as metadata in the output file. This parameter is hidden in the UI. |
+| `extra_pnginfo` | EXTRA_PNGINFO | No | - | Additional metadata, saved as key-value pairs in the output file. This parameter is hidden in the UI. |
 
 ## Outputs
 
@@ -35,4 +35,4 @@ The node analyzes the CLIP model's state dictionary and saves separate SafeTenso
 For each detected component, the node creates a file with the name `{filename_prefix}_{counter:05}_.safetensors`, where the component prefix is appended to the filename prefix (e.g., `clip/ComfyUI_clip_l_00001_.safetensors`). The `transformer.` prefix is removed from parameter keys during saving.
 
 ---
-**Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`
+**Source fingerprint (SHA-256):** `65a5856b0cbf8765b380887741d52af8ad50d2d5d36145c994a8cbf93ebc9807`

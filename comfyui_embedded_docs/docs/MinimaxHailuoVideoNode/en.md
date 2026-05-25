@@ -22,4 +22,4 @@ Generates videos from text prompts using the MiniMax Hailuo-02 model. You can op
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `5466b9cda979a30158b818743de0e0cf30eb3e27015d431eb04a370029250a4c`
+**Source fingerprint (SHA-256):** `180e8d3c739e34094a12a719d3187378a4c360a5799a4b23029edf164d0c55a3`

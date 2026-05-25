@@ -22,4 +22,4 @@ Loads and formats input files for the OpenAI API. This node prepares text (.txt)
 | `OPENAI_INPUT_FILES` | OPENAI_INPUT_FILES | Formatted input files ready to be used as context for OpenAI API calls. |
 
 ---
-**Source fingerprint (SHA-256):** `e5e92f6628072da9af787867e38c89dde3db853b7289ef6c607a066cd04c1cc9`
+**Source fingerprint (SHA-256):** `9e1a60feb48d39646c4247dd12b15c3eb392e1b85b3db2f254571d568d772de0`

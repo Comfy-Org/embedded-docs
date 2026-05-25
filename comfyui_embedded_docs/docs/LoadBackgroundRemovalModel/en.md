@@ -17,4 +17,4 @@ Loads a background removal model from a file. This node prepares the model for u
 | `bg_model` | BACKGROUND_REMOVAL | The loaded background removal model, ready to be used by other nodes for processing images. |
 
 ---
-**Source fingerprint (SHA-256):** `63a1ffb37ea8581e3ba29f7dc4f871612d7ec458e6d36f5e2244201941d48f9d`
+**Source fingerprint (SHA-256):** `3f2da4d2fcafb7d65f4e5099102011c3be9500f3eec6c59c6897aa9640ae8f04`

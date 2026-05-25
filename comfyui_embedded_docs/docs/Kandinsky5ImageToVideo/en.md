@@ -27,4 +27,4 @@ The Kandinsky5ImageToVideo node prepares conditioning and latent space data for 
 | `cond_latent` | LATENT | The clean, encoded latent representation of the provided start images. This is used internally to replace the noisy beginning of the generated video latents. |
 
 ---
-**Source fingerprint (SHA-256):** `19d3b60be18f5adcd659563329988bce2511a1b27b33fd0ab3a9d93e265557f2`
+**Source fingerprint (SHA-256):** `c171187b89f102d608ddee9dc981e56674d62b02d936b3cf4dee3ce86760fd0e`

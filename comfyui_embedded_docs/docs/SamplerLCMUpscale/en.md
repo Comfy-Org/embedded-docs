@@ -17,4 +17,4 @@ The SamplerLCMUpscale node provides a specialized sampling method that combines 
 | `sampler` | SAMPLER | Returns a configured sampler object that can be used in the sampling pipeline |
 
 ---
-**Source fingerprint (SHA-256):** `fe0d4c8676454a9e8ecf4bb4e149c9b5e22083322447749116d624984d75e73c`
+**Source fingerprint (SHA-256):** `11cd4de455d8345f0008757e7402b6cba1c21cf6eeebdd41f4500e615d826920`

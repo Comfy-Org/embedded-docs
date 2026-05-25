@@ -20,4 +20,4 @@ The Kling Image(First Frame) to Video with Audio node uses the Kling AI model to
 | `video` | VIDEO | The generated video file, which may include audio depending on the `generate_audio` input. |
 
 ---
-**Source fingerprint (SHA-256):** `f161eedbc5d780805e3d0ca32b6be94cc78afcd2749e065c032ea20991b782fc`
+**Source fingerprint (SHA-256):** `c994748fdfa6d79f81aaf864ec174a6b608c4f05943a7e23edd345608122d9a1`

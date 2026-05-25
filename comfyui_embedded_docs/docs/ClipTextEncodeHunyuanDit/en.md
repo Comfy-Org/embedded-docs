@@ -17,4 +17,4 @@ The `CLIPTextEncodeHunyuanDiT` node converts text descriptions into a format tha
 | `CONDITIONING` | CONDITIONING | The encoded conditioning output, combining both BERT and mT5-XL tokenized text, used for further processing in generation tasks. |
 
 ---
-**Source fingerprint (SHA-256):** `6a8d649708b315c42b7933b52fad7e0b45aa34c168616f18a2178041148eeea1`
+**Source fingerprint (SHA-256):** `bde7c884f72829491090965bd9af34ad59ec326f96e88bb7cdb9ddc47592137e`

@@ -19,4 +19,4 @@ The PerpNeg node applies perpendicular negative guidance to a model's sampling p
 **Note**: This node is deprecated and has been replaced by PerpNegGuider. It is marked as experimental and should not be used in production workflows.
 
 ---
-**Source fingerprint (SHA-256):** `6be4ab03cfbda33ed3966ecd579c1a5e3242bdfb163fecefb9c80073a8827cae`
+**Source fingerprint (SHA-256):** `016bd9a9a9ee42855c15b3e582ada03557297df9a786d977439edd9d3363a5ba`

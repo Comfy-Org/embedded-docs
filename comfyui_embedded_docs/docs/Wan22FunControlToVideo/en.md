@@ -27,4 +27,4 @@ The Wan22FunControlToVideo node prepares conditioning and latent representations
 | `latent` | LATENT | Empty latent tensor with appropriate dimensions for video generation based on batch size, latent channels, and spatial/temporal scaling |
 
 ---
-**Source fingerprint (SHA-256):** `8b24058f06aa9f779371a402c41cffc95d13ad0131d23d1438067d77755c73e2`
+**Source fingerprint (SHA-256):** `3cc49969226d304e73ec924ccce902c7ae1eee819b4274ad4ffa10e67a4ea211`

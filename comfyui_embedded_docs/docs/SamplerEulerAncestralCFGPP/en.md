@@ -16,4 +16,4 @@ The SamplerEulerAncestralCFGPP node creates a sampler that uses the Euler Ancest
 | `sampler` | SAMPLER | Returns a configured sampler object that can be used in the image generation pipeline |
 
 ---
-**Source fingerprint (SHA-256):** `7eceec539a6a045db4d9953214add17011ef9d17e663dbbbbbb2bae0cbe40aa2`
+**Source fingerprint (SHA-256):** `c519c9ff857a13e3a99fc907672925747565d8f1c6456c345138b33ebeda2b17`

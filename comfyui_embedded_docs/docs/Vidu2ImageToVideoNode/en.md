@@ -27,4 +27,4 @@ The Vidu2 Image-to-Video Generation node creates a video sequence starting from 
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `204f8d2b9edf17c2c180480f98a852718416a54725d92e5fec574b8517ada398`
+**Source fingerprint (SHA-256):** `5311b64380bf089b846d5ac0c32330e021b79754cf2f3cac41f71ca1da3ffdda`

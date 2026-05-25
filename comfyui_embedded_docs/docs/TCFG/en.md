@@ -15,4 +15,4 @@ TCFG (Tangential Damping CFG) refines the unconditional (negative) predictions t
 | `patched_model` | MODEL | The modified model with tangential damping CFG applied |
 
 ---
-**Source fingerprint (SHA-256):** `de6b4deb8a42f05dff90e393bff1e0b4b8ed58887586ca81c236e1a780be5776`
+**Source fingerprint (SHA-256):** `6e0e1df09bdc29f14a4828ec54fd29f89926b9d8121bc8ba9f95ce066b899e95`

@@ -26,4 +26,4 @@ The Vidu Image To Video Generation node creates a short video from a starting im
 | `output` | VIDEO | The generated video output |
 
 ---
-**Source fingerprint (SHA-256):** `064b3efba8219770595e68a6607a6f8113d1be7c9f3863a4740ee5c3a146d91e`
+**Source fingerprint (SHA-256):** `2364ee527cbc37905e973ae1870499040eea4ed94ab8ed789d3c85af857f5488`

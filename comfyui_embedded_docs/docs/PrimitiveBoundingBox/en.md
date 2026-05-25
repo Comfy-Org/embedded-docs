@@ -18,4 +18,4 @@ The PrimitiveBoundingBox node creates a simple rectangular area defined by its p
 | `bounding_box` | BOUNDING_BOX | A data structure containing the `x`, `y`, `width`, and `height` properties of the defined rectangle. |
 
 ---
-**Source fingerprint (SHA-256):** `715f1a2bd650ecd6ba2ea3c1d54636bc32dff4fb4aec8f088ee9b0994809412c`
+**Source fingerprint (SHA-256):** `3a91a1a2656fa46f8257334bbaf3bcba861ab91da8ebbfcefe7d5f3547dd307f`

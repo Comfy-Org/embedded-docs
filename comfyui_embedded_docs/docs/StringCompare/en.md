@@ -18,4 +18,4 @@ The StringCompare node compares two text strings using different comparison meth
 | `output` | BOOLEAN | Returns true if the comparison condition is met, false otherwise |
 
 ---
-**Source fingerprint (SHA-256):** `4491e4acd2c1881e9c924c6ae51d764dec5f46279094d173fe551e9ee9256597`
+**Source fingerprint (SHA-256):** `18599228c31543f270afde0f3b838512ee12d1998b8de42c4d3e7852b1a5d8b2`

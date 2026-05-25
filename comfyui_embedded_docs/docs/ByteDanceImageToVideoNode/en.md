@@ -26,4 +26,4 @@ The ByteDance Image to Video node generates videos using ByteDance models throug
 | `output` | VIDEO | The generated video file based on the input image and prompt parameters. |
 
 ---
-**Source fingerprint (SHA-256):** `e47e14c69f4bdf4921a5a5eaec20fb775473483e80cdd9dd6700d2c7f9219e65`
+**Source fingerprint (SHA-256):** `7b77df4ab83ef41164eff80a4c02478d5480c9368aa67bcd624fe2f8375d6e07`

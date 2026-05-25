@@ -21,4 +21,4 @@ Inpaints image based on mask and prompt. This node uses the Flux.1 model to fill
 | `output_image` | IMAGE | The generated image with the masked areas filled according to the prompt |
 
 ---
-**Source fingerprint (SHA-256):** `ae2708d9e4b99ecb142fca0693c3973957c5677e8121eb5e34d30f872d7102c0`
+**Source fingerprint (SHA-256):** `68f9834a58d6e2d14743adafb1f791880f0af30fdb65cb6201af5616945bb56b`

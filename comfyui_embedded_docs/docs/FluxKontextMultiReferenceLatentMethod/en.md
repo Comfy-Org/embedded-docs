@@ -16,4 +16,4 @@ The FluxKontextMultiReferenceLatentMethod node modifies conditioning data by set
 | `conditioning` | CONDITIONING | The modified conditioning data with the reference latents method applied |
 
 ---
-**Source fingerprint (SHA-256):** `9d39a8fee08ae347a745b20b3dc39051ee2f4645392e769247ae32be35491048`
+**Source fingerprint (SHA-256):** `822d08ad50f167257f32d74af27a6a7444a61a554108a27e78fea5f40aba4177`

@@ -15,4 +15,4 @@ The ElevenLabs Voice Isolation node removes background noise from an audio file,
 | `audio` | AUDIO | The processed audio with background noise removed. |
 
 ---
-**Source fingerprint (SHA-256):** `eca7919ff853fe48f8419a4135a99589e350d3d113631e27f6e7cb3cbb3faa3b`
+**Source fingerprint (SHA-256):** `84f1ea16911b9b1d1ab60dd75fade8cc524ac3e39d44f60a242214f14006ff1e`

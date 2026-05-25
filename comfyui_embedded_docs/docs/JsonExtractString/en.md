@@ -6,10 +6,10 @@ The JsonExtractString node reads a text string containing JSON data and extracts
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `json_string` | STRING | Yes | N/A | The text containing the JSON data to be parsed. |
-| `key` | STRING | Yes | N/A | The specific key whose string value you want to extract from the JSON object. |
+| `json_string` | STRING | Yes | N/A | The text containing the JSON data to be parsed. This field supports multiline input. |
+| `key` | STRING | Yes | N/A | The specific key whose value you want to extract from the JSON object. This field supports single-line input only. |
 
-**Note:** The node only extracts values from JSON objects (dictionaries). If the parsed JSON is not an object or if the specified key does not exist within it, the output will be an empty string.
+**Note:** The node only extracts values from JSON objects (dictionaries). If the parsed JSON is not an object or if the specified key does not exist within it, the output will be an empty string. If the value associated with the key is `null`, the node also returns an empty string.
 
 ## Outputs
 
@@ -18,4 +18,4 @@ The JsonExtractString node reads a text string containing JSON data and extracts
 | `output` | STRING | The string value extracted from the JSON for the specified key, or an empty string if the extraction fails. |
 
 ---
-**Source fingerprint (SHA-256):** `f05e2d9fd4888870a844c85ac7543d6c38c1c56f2ef22a402fc93ee716743612`
+**Source fingerprint (SHA-256):** `ef99b7d2aa82dd290624edaf03f509ade91438639e056b4cb67057b0881b9dc3`

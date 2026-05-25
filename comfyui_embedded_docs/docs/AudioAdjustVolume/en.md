@@ -16,4 +16,4 @@ The AudioAdjustVolume node modifies the loudness of audio by applying volume adj
 | `audio` | AUDIO | The processed audio with adjusted volume level |
 
 ---
-**Source fingerprint (SHA-256):** `0436765680671551239f7a89b575cdfb22590fbe662bdfe5da01bd1cd5c496ed`
+**Source fingerprint (SHA-256):** `8c19625104901a0c57021b1a775fdf287c8bd0fb1fd535809e1983b1949ca752`

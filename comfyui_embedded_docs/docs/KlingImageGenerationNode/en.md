@@ -21,7 +21,7 @@ Kling Image Generation Node generates images from text prompts with the option t
 
 - The `image` parameter is optional. When a reference image is provided, the `image_type` parameter must be set to either `"subject_reference"` or `"style_reference"`.
 - When no reference image is provided, the `image_type`, `image_fidelity`, and `human_fidelity` parameters are not used.
-- Prompt and negative prompt have a maximum length of `MAX_PROMPT_LENGTH_IMAGE_GEN` characters.
+- Prompt and negative prompt have a maximum length of 500 characters.
 - The `seed` parameter is optional and does not guarantee deterministic results.
 
 ## Outputs
@@ -31,4 +31,4 @@ Kling Image Generation Node generates images from text prompts with the option t
 | `output` | IMAGE | Generated image(s) based on the input parameters |
 
 ---
-**Source fingerprint (SHA-256):** `f25164f4007b1f62285e76519238b5061b63597e1a06365acf93d4289063bd3a`
+**Source fingerprint (SHA-256):** `3c029920c966ac9a3588a790e83e1350021a0864a02677258a25af46a0770dce`

@@ -22,4 +22,4 @@ Replace background on image, based on provided prompt. This node uses the Recraf
 | `IMAGE` | IMAGE | The generated image(s) with replaced background |
 
 ---
-**Source fingerprint (SHA-256):** `305cb8c542159a089b1fa03971205b23d50c8a328af006e284fb27011070f6bd`
+**Source fingerprint (SHA-256):** `ce14005093aaac30de3de84c43bd46c0a3327d0ba8de4ea7ec62afa2028c1cae`

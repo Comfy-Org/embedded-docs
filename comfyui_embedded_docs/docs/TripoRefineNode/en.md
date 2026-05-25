@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRefineNode/en.md)
 
-The TripoRefineNode refines draft 3D models created specifically by v1.4 Tripo models. It takes a model task ID and processes it through the Tripo API to generate an improved version of the model. This node is designed to work exclusively with draft models produced by Tripo v1.4 models.
+The TripoRefineNode refines draft 3D models created specifically by Tripo v1.4 models. It takes a model task ID and processes it through the Tripo API to generate an improved version of the model. This node is designed to work exclusively with draft models produced by Tripo v1.4 models.
 
 ## Inputs
 
@@ -19,4 +19,4 @@ The TripoRefineNode refines draft 3D models created specifically by v1.4 Tripo m
 | `GLB` | FILE3DGLB | The refined 3D model in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `136093c7cdd7eb33b55e862f4b8c0554de7bde656a7e0139efb63323ad041c32`
+**Source fingerprint (SHA-256):** `bb4b17652fd05c489e6151f23461fa79ae090f3b59491775768b32ca2b61d33c`

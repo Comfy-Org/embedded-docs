@@ -24,4 +24,4 @@ The TripoTextureNode generates textured 3D models using the Tripo API. It takes 
 | `GLB` | FILE3DGLB | The generated 3D model in GLB format with applied textures |
 
 ---
-**Source fingerprint (SHA-256):** `6d2a6ff7bbbe9fa91f63c6c7d237799044d2f9aa5afe7b90b99cf9e5a21afc32`
+**Source fingerprint (SHA-256):** `dca49933b1b892df38004adc34ab0d95cdcb32d3e38db0e66b260ab7a58dcea5`

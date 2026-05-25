@@ -15,7 +15,7 @@ This node modifies an existing image based on a text prompt and strength paramet
 | `negative_prompt` | STRING | No | - | An optional text description of undesired elements on an image (default: "") |
 | `recraft_controls` | CONTROLS | No | - | Optional additional controls over the generation via the Recraft Controls node |
 
-**Note:** The `seed` parameter only triggers re-execution of the node but does not guarantee deterministic results. The strength parameter is rounded to 2 decimal places internally. The prompt is validated and must not exceed 1000 characters. If `recraft_style` is not provided, the node defaults to the `realistic_image` style.
+**Note:** The `seed` parameter only triggers re-execution of the node but does not guarantee deterministic results. The strength parameter is rounded to 2 decimal places internally. The prompt is validated and must not exceed 1000 characters. If `recraft_style` is not provided, the node defaults to the `realistic_image` style. If you use a `style_id` from the Infinite Style Library, ensure it is not a Vector art style, as this may cause the node to receive SVG data instead of an image, resulting in an error.
 
 ## Outputs
 
@@ -24,4 +24,4 @@ This node modifies an existing image based on a text prompt and strength paramet
 | `image` | IMAGE | The generated image(s) based on the input image and prompt |
 
 ---
-**Source fingerprint (SHA-256):** `e47ab70e77186e62c253c976cdd7942cfb949ba6461914d2b4341f3eca8e14aa`
+**Source fingerprint (SHA-256):** `15f0f42a1c217abcffeff3836ec77d8a94b37143fdff45d69e1a645f5ffac939`

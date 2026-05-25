@@ -27,4 +27,4 @@ The WanPhantomSubjectToVideo node generates video content by processing conditio
 | `latent` | LATENT | Generated latent video representation with specified dimensions and length |
 
 ---
-**Source fingerprint (SHA-256):** `2e3e8277dca9e998220fc5939c2cc72fdc15e80cc4b95daa33f5b92e2270dd73`
+**Source fingerprint (SHA-256):** `9ff1c79f794f96015f099988b5392e3b2e442de3b317c352f2436feb41a1c3ba`

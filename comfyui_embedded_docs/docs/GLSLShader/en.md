@@ -10,18 +10,18 @@ The GLSL Shader node applies custom GLSL ES fragment shader code to input images
 | `size_mode` | COMBO | Yes | `"from_input"`<br>`"custom"` | Output size: 'from_input' uses first input image dimensions, 'custom' allows manual size. |
 | `width` | INT | No | 1 to 16384 | The width of the output image when `size_mode` is set to `"custom"`. Default: 512. |
 | `height` | INT | No | 1 to 16384 | The height of the output image when `size_mode` is set to `"custom"`. Default: 512. |
-| `images` | IMAGE | Yes | 1 to 8 images | Input images to be processed by the shader. Images are available as `u_image0` to `u_image7` (sampler2D) in the shader code. |
-| `floats` | FLOAT | No | 0 to 8 floats | Floating-point uniform values for the shader. Floats are available as `u_float0` to `u_float7` in the shader code. Default: 0.0. |
-| `ints` | INT | No | 0 to 8 integers | Integer uniform values for the shader. Ints are available as `u_int0` to `u_int7` in the shader code. Default: 0. |
-| `bools` | BOOLEAN | No | 0 to 8 booleans | Boolean uniform values for the shader. Booleans are available as `u_bool0` to `u_bool7` (bool) in the shader code. Default: False. |
-| `curves` | CURVE | No | 0 to 8 curves | Curve uniform values for the shader. Curves are available as `u_curve0` to `u_curve7` (sampler2D, 1D LUT) in the shader code. Sample with `texture(u_curve0, vec2(x, 0.5)).r`. |
+| `images` | IMAGE | Yes | 1 to 5 images | Input images to be processed by the shader. Images are available as `u_image0` to `u_image4` (sampler2D) in the shader code. |
+| `floats` | FLOAT | No | 0 to 20 floats | Floating-point uniform values for the shader. Floats are available as `u_float0` to `u_float19` in the shader code. Default: 0.0. |
+| `ints` | INT | No | 0 to 20 integers | Integer uniform values for the shader. Ints are available as `u_int0` to `u_int19` in the shader code. Default: 0. |
+| `bools` | BOOLEAN | No | 0 to 10 booleans | Boolean uniform values for the shader. Booleans are available as `u_bool0` to `u_bool9` (bool) in the shader code. Default: False. |
+| `curves` | CURVE | No | 0 to 4 curves | Curve uniform values for the shader. Curves are available as `u_curve0` to `u_curve3` (sampler2D, 1D LUT) in the shader code. Sample with `texture(u_curve0, vec2(x, 0.5)).r`. |
 
 **Notes:**
 
 * The `width` and `height` parameters are only required and visible when `size_mode` is set to `"custom"`.
 * At least one input image is required.
 * The shader code always has access to a `u_resolution` (vec2) uniform containing the output dimensions.
-* A maximum of 8 input images, 8 float uniforms, 8 integer uniforms, 8 boolean uniforms, and 8 curve uniforms can be provided.
+* A maximum of 5 input images, 20 float uniforms, 20 integer uniforms, 10 boolean uniforms, and 4 curve uniforms can be provided.
 
 ## Outputs
 
@@ -33,4 +33,4 @@ The GLSL Shader node applies custom GLSL ES fragment shader code to input images
 | `IMAGE3` | IMAGE | The fourth output image from the shader. Available via `layout(location = 3) out vec4 fragColor3` in the shader code. |
 
 ---
-**Source fingerprint (SHA-256):** `7830977409a5efab205b7c927eb83499a9e1e8299959b34643c9c3f1f586c058`
+**Source fingerprint (SHA-256):** `ded589d5b0cb5413ecc42c7177e3076427ceac1d3218a20cfec6f2e005fe7e27`
