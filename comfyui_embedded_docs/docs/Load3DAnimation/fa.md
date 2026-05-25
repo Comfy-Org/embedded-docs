@@ -62,7 +62,7 @@
 ### 1. عملیات‌های نما
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
 </video>
 
@@ -129,7 +129,7 @@
 ### 3. عملکردهای منوی راست
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/recording.mp4" type="video/mp4">
   مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
 </video>
 

@@ -62,7 +62,7 @@ Load3D 노드의 캔버스 영역에는 다음과 같은 다양한 뷰 작업이
 ### 1. 뷰 작업
 
 <video controls width="640" height="360">
-  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/view_operations.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/view_operations.mp4" type="video/mp4">
   귀하의 브라우저는 비디오 재생을 지원하지 않습니다.
 </video>
 
@@ -129,7 +129,7 @@ Load3D 노드의 캔버스 영역에는 다음과 같은 다양한 뷰 작업이
 ### 3. 오른쪽 메뉴 기능
 
 <video controls width="640" height="360">
-  <source src="../Load3D/asset/recording.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3D/asset/recording.mp4" type="video/mp4">
   귀하의 브라우저는 비디오 재생을 지원하지 않습니다.
 </video>
 
