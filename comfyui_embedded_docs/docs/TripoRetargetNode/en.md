@@ -21,4 +21,4 @@ The TripoRetargetNode applies predefined animations to 3D character models by re
 | `GLB` | FILE3DGLB | The animated 3D model in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `304326afdc1fa3e8c3593f151f771f93520e061802c831838c58ebc401b9e9e2`
+**Source fingerprint (SHA-256):** `31d90c0a11a6a57fbc55f2c3b8e0e8e73943f048734e5f2d68711bf000730e0b`

@@ -18,4 +18,4 @@ The MaskPreview node saves mask data as a preview image to your ComfyUI output d
 | `ui` | DICT | Contains the preview image information and metadata for display in the UI |
 
 ---
-**Source fingerprint (SHA-256):** `9f64adf4a0130368618fc1ca3655192686815ab10b4153f9552ef23149928e3f`
+**Source fingerprint (SHA-256):** `c9d9dbc5720ac4c75518c758f2ec3e789b0d3c45431590fb0008573bb9159427`

@@ -19,4 +19,4 @@ The LaplaceScheduler node generates a sequence of sigma values following a Lapla
 | `SIGMAS` | SIGMAS | A sequence of sigma values following a Laplace distribution schedule |
 
 ---
-**Source fingerprint (SHA-256):** `9d8cacb93d0bb1872a368821fd3cad5d6d373817a923436af9f62a7648d5d735`
+**Source fingerprint (SHA-256):** `fe8a405937a4b59ab988031b8509a9f030a57d8d1a17bb0812dc51eb5ad83717`

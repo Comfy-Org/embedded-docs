@@ -32,4 +32,4 @@ The WanDancerVideo node prepares conditioning data and an empty latent tensor fo
 | `latent` | LATENT | An empty latent tensor with dimensions matching the specified video length, height, and width. |
 
 ---
-**Source fingerprint (SHA-256):** `7ab1b4662eb8d780295ea3a3e3139c64d81e03a979a293a481f82deaf1fc2f7e`
+**Source fingerprint (SHA-256):** `0a75b24c8e5c164d81b08eb438862d94d4409ece8dc22c126979347e2350c828`

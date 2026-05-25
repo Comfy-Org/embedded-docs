@@ -27,4 +27,4 @@ The WanHuMoImageToVideo node converts images to video sequences by generating la
 | `latent` | LATENT | Generated latent representation containing the video sequence data |
 
 ---
-**Source fingerprint (SHA-256):** `6301671d04748ce80c561a65df80c7ca146b91bcce8851872df40211af29fd39`
+**Source fingerprint (SHA-256):** `4d28fe2617f25e72745d34bf2ec19aec2df6e89ad49eabe086ad045690f42d1f`

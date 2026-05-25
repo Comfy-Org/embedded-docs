@@ -23,4 +23,4 @@ The Grok Reference-to-Video node generates a video based on a text prompt, using
 | `video` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `e368769b869b7a0d0be8e6fdcc2b82774c11805483b2e83a448b6985a6dd9f96`
+**Source fingerprint (SHA-256):** `df50e80ca403d05469881e1c456ca4777d70989d8950c5e3844271c3ff8df85a`

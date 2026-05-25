@@ -22,4 +22,4 @@ The WanMoveVisualizeTracks node overlays motion tracking data onto a sequence of
 | `IMAGE` | IMAGE | The sequence of images with the motion tracking data visualized as overlays. If no `tracks` were provided, the original input images are returned. |
 
 ---
-**Source fingerprint (SHA-256):** `b32169a8c9d3a2dd74463c81f6bd7d9a4bc66486af156843f32b0874f0eaeb8f`
+**Source fingerprint (SHA-256):** `9912b8cc06a8b4014f73e537d9421be3d8dda3b1a416733f4c0fb0caf8663b6f`

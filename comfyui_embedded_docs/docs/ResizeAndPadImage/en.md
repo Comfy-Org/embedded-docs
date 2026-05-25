@@ -19,4 +19,4 @@ The ResizeAndPadImage node resizes an image to fit within specified dimensions w
 | `image` | IMAGE | The resized and padded output image |
 
 ---
-**Source fingerprint (SHA-256):** `01566327d46043d1ff9ce404b4df8f49e853d0b01d07cc189fb843157dac1cac`
+**Source fingerprint (SHA-256):** `cc516caee9f466d557e1c8e3c7fcef25acc1e33d181bc4b100302dc93530cb95`

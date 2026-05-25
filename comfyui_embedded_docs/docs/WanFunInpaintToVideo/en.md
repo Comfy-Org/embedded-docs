@@ -26,4 +26,4 @@ The WanFunInpaintToVideo node creates video sequences by inpainting between star
 | `latent` | LATENT | Generated video latent representation |
 
 ---
-**Source fingerprint (SHA-256):** `bbc5c2614f5fc21877345b3f01686ea57bee5108cdb253fb5dbf4b2cce9e59dd`
+**Source fingerprint (SHA-256):** `16926439268e3748418f1a7c1e9a295ddb1ebc5fcb0ad4914fc8e3215a7950dc`

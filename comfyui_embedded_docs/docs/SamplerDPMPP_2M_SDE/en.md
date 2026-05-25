@@ -9,7 +9,7 @@ The SamplerDPMPP_2M_SDE node creates a DPM++ 2M SDE sampler for diffusion models
 | `solver_type` | STRING | Yes | `"midpoint"`<br>`"heun"` | The type of differential equation solver to use for the sampling process |
 | `eta` | FLOAT | Yes | 0.0 - 100.0 | Controls the stochasticity of the sampling process (default: 1.0) |
 | `s_noise` | FLOAT | Yes | 0.0 - 100.0 | Controls the amount of noise added during sampling (default: 1.0) |
-| `noise_device` | STRING | Yes | `"gpu"`<br>`"cpu"` | The device where noise calculations are performed. When set to "cpu", the sampler uses CPU-based noise generation; when set to "gpu", it uses GPU-based noise generation for potentially faster performance |
+| `noise_device` | STRING | Yes | `"gpu"`<br>`"cpu"` | The device where noise calculations are performed. When set to "cpu", the sampler uses CPU-based noise generation; when set to "gpu", it uses GPU-based noise generation for potentially faster performance (default: "gpu") |
 
 ## Outputs
 
@@ -18,4 +18,4 @@ The SamplerDPMPP_2M_SDE node creates a DPM++ 2M SDE sampler for diffusion models
 | `sampler` | SAMPLER | A configured sampler object ready for use in the sampling pipeline |
 
 ---
-**Source fingerprint (SHA-256):** `4a6a16e3494e8270f3707e172f252e7fc4e1b65efbecd3dd086b1a1edc5ba23a`
+**Source fingerprint (SHA-256):** `1f699504ddefc6bdebee0fbad31b59aa38611f0fcdc40a15898be3db184872a6`

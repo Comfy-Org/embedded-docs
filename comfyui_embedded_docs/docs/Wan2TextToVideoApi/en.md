@@ -26,4 +26,4 @@ This node generates a video from a text description using the Wan 2.7 model. It 
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `ce8a2f4e53b2bce879f143c66f6078fd81c6308e2822cb486b1cf8e178a6f58c`
+**Source fingerprint (SHA-256):** `1eb775421209047ad06ffc210c6588c64fd39a8828a69d6fcc2b79360df311e3`

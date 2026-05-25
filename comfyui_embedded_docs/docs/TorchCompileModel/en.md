@@ -16,4 +16,4 @@ The TorchCompileModel node applies PyTorch compilation to a model to optimize it
 | `model` | MODEL | The compiled model with PyTorch compilation applied |
 
 ---
-**Source fingerprint (SHA-256):** `923e71b528e6e53468916f74c2a02924bf51738f29e36638312c6da6357fcedb`
+**Source fingerprint (SHA-256):** `240c6eb84ce2b93fe4d7c04fcf69df571e662f17893a4fd8e721241ea082edc8`

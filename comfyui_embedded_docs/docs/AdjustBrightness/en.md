@@ -16,4 +16,4 @@ The Adjust Brightness node modifies the brightness of an input image. It works b
 | `image` | IMAGE | The output image with adjusted brightness. |
 
 ---
-**Source fingerprint (SHA-256):** `c8f2fbb5fa149812a2ecd1ff9fce7bd6d29bf4c48b929e9ebc0a95c9e46ec65e`
+**Source fingerprint (SHA-256):** `dd1a35a4a133e6e15bb51788376e89c4e20e52ad395f889f4a4aa34fa614612e`

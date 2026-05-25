@@ -20,4 +20,4 @@ The Empty Qwen Image Layered Latent node creates a blank, multi-layered latent r
 | `samples` | LATENT | A latent tensor filled with zeros. Its shape is `[batch_size, 16, layers + 1, height // 8, width // 8]`. |
 
 ---
-**Source fingerprint (SHA-256):** `99497e3e4a67bf7b3f650573e7b8eb2d7fad6be5819b7ebbbb8736291dc44e0c`
+**Source fingerprint (SHA-256):** `fe97966663c534dd347aa49a908a8026f2c34716631f1d17be97d74eacc3574e`

@@ -18,4 +18,4 @@ Selects specific tracked objects from a SAM3 tracking session by their index num
 | `masks` | MASK | A single binary mask for each frame, where selected objects are combined into one mask. If no objects are selected or no tracking data exists, returns a zero mask. |
 
 ---
-**Source fingerprint (SHA-256):** `2da82effc4cdc6655d0d37e281858bf33f7b62d9056629ec810e3ff9b2e7b5a6`
+**Source fingerprint (SHA-256):** `77c9f5142f2078fabb81e58979df01ad9ec41d3de953939570bebb4f2687f8ad`

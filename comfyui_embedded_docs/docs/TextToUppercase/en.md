@@ -2,6 +2,8 @@
 
 The Text to Uppercase node takes a text input and converts all of its characters to uppercase. It is a simple text processing utility that modifies the case of the provided string.
 
+**Note:** This node is deprecated and superseded by the Convert Text Case node.
+
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
@@ -15,4 +17,4 @@ The Text to Uppercase node takes a text input and converts all of its characters
 | `text` | STRING | The resulting text with all characters converted to uppercase. |
 
 ---
-**Source fingerprint (SHA-256):** `180fa62fcd9171e1dafc140b175647e4b6eaaf9fc3dc39b183ae7cdb7de56543`
+**Source fingerprint (SHA-256):** `b1d8c05aceda4dfd95400b40fdf01b16dccaa4e093e62d298b12753bfc0278a2`

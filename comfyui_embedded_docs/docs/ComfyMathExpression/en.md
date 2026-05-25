@@ -7,12 +7,13 @@ The ComfyMathExpression node evaluates a mathematical formula using a set of inp
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `expression` | STRING | Yes | N/A | The mathematical formula to evaluate. You can use variable names that correspond to the input values (default: "a + b"). |
-| `values` | FLOAT, INT, BOOLEAN | No | N/A | A set of numeric or boolean inputs that can be dynamically added. Each input is assigned a letter from the alphabet (a, b, c, ...) to be used as a variable in the expression. |
+| `values` | FLOAT, INT, BOOLEAN | No | N/A | A set of numeric or boolean inputs that can be dynamically added. Each input is assigned a letter from the alphabet (a, b, c, ...) to be used as a variable in the expression. At least one input value is required. |
 
 **Parameter Constraints:**
 *   The `expression` parameter cannot be empty or contain only whitespace.
 *   The expression must evaluate to a finite numeric result (INT or FLOAT). Boolean or other non-numeric results will cause an error.
 *   The input values for the `values` parameter can be numbers (INT or FLOAT) or boolean values (TRUE/FALSE).
+*   At least one input value must be provided in the `values` group.
 
 ## Outputs
 
@@ -23,4 +24,4 @@ The ComfyMathExpression node evaluates a mathematical formula using a set of inp
 | `BOOL` | BOOLEAN | The result of the mathematical expression as a boolean value. |
 
 ---
-**Source fingerprint (SHA-256):** `962f82684d9dc58a67a57e6738d6d2ed457d7f30288cedb21fd46b5c655c1708`
+**Source fingerprint (SHA-256):** `bf6221a7e1e955bdb56482de0a86a782494b2775fdd2edfde9fd20a9df0fe1a7`

@@ -21,4 +21,4 @@ The Kling Avatar 2.0 node generates broadcast-style digital human videos from a 
 | `output` | VIDEO | The generated digital human video. |
 
 ---
-**Source fingerprint (SHA-256):** `85793d3820a89ef98bb54cb930486847d4fd64cce5470ba34574ec319f8ea8c6`
+**Source fingerprint (SHA-256):** `d9264e250c578dcb38612c192f8567a8f48c6624e030d8765b13bb71aae2d0b8`

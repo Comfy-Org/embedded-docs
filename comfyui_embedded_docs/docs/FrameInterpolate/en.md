@@ -19,4 +19,4 @@ The Frame Interpolate node creates new frames between existing ones in a sequenc
 | `IMAGE` | IMAGE | A new batch of images with the interpolated frames inserted between the original frames, resulting in a smoother sequence. The total number of output frames is `(number of input frames - 1) * multiplier + 1`. |
 
 ---
-**Source fingerprint (SHA-256):** `05fdac188d9d7c7d5cac9ade55ba22cc743395b3c659a519ca03fe293b9a6e34`
+**Source fingerprint (SHA-256):** `54e1956bf249004315587328e8671d43739659cc00ad26f870214b704566a68b`

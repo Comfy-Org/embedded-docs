@@ -16,4 +16,4 @@ The Curve Editor node provides a visual interface for adjusting and fine-tuning 
 | `curve` | CURVE | The edited curve after adjustments have been made in the node's interface. |
 
 ---
-**Source fingerprint (SHA-256):** `34cf36a5b934c44ebfce0b81e7c515f1b31fb17f3b7e1ad52255d1d72f68240b`
+**Source fingerprint (SHA-256):** `7cd265b724f4b80bd6838b665254b54f1ca16f32ed0b4e072fabf856d769e11c`

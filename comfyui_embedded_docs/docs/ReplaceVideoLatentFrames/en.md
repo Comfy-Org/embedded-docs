@@ -22,4 +22,4 @@ The ReplaceVideoLatentFrames node inserts frames from a source latent video into
 | `output` | LATENT | The resulting latent video after the frame replacement operation. |
 
 ---
-**Source fingerprint (SHA-256):** `b4e2b3dcdaa5c400fefc30262ae05cd1849896e6cb6bbb3a1bd6ce4d31583e23`
+**Source fingerprint (SHA-256):** `c70eb5f907964e00babcee66a98d1bf382c3bc704f920d61598a4a03f4d686f8`

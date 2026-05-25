@@ -17,4 +17,4 @@ This node converts a LATENT (such as the output from the VOIDWarpedNoise node) i
 | `NOISE` | NOISE | A noise source that can be used with SamplerCustomAdvanced |
 
 ---
-**Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`
+**Source fingerprint (SHA-256):** `9b1eeb2df7fc0bcf0649ff2d2425938eae5fbc44ecc0f5d1678b7e227b3a098f`

@@ -25,4 +25,4 @@ This node generates a video using a text prompt along with first and last frame 
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `2da7b8ad2bc818a21988c028155ba2b466452a1655ac506fcef01c143dda7450`
+**Source fingerprint (SHA-256):** `ac16faf3aabcb06154c6a8815cc20c8a0e0c3a6b5b21e7d49813c10dce33d7be`

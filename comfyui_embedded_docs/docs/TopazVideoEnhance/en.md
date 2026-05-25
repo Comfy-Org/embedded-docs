@@ -28,4 +28,4 @@ The Topaz Video Enhance node uses an external API to improve video quality. It c
 | `video` | VIDEO | The enhanced output video file. |
 
 ---
-**Source fingerprint (SHA-256):** `70e1a6e0d7bd250f58c43beefe070fd83af19d11ac08cb9a6ac9655a9bfa839f`
+**Source fingerprint (SHA-256):** `ef2d1e62c0000f4d9a99014317db2f1c4e0b8a77334024cf614ec0376058a2f7`

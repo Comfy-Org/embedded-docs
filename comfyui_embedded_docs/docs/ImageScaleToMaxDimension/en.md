@@ -17,4 +17,4 @@ The ImageScaleToMaxDimension node resizes images to fit within a specified maxim
 | `image` | IMAGE | The scaled image with the largest dimension matching the specified size |
 
 ---
-**Source fingerprint (SHA-256):** `be113c1a98ab9d884b2c728b790c41fb236857d59af567e43e2be0ef0362cc5e`
+**Source fingerprint (SHA-256):** `83eba56d9f673fb570edc6504fd82f1274ead1d3e055a1a8bcc207c178388015`

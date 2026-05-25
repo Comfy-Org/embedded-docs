@@ -18,4 +18,4 @@ The ElevenLabs Instant Voice Clone node creates a new, unique voice model by ana
 | `voice` | ELEVENLABS_VOICE | The unique identifier for the newly created cloned voice model. This output can be connected to other ElevenLabs text-to-speech nodes. |
 
 ---
-**Source fingerprint (SHA-256):** `297598e183df3ccddabc75d6903c5c69f10648adeea430e546f9c5f6df49bdb2`
+**Source fingerprint (SHA-256):** `760bd99ed8382eb875ab21739346d178130b02240526308b784332a59b048d78`

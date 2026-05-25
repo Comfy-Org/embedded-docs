@@ -16,4 +16,4 @@ Creates Recraft Controls for customizing Recraft generation. This node allows yo
 | `recraft_controls` | CONTROLS | The configured Recraft controls containing color settings |
 
 ---
-**Source fingerprint (SHA-256):** `47d9640ca3a60250b25a7f6fa96367716db50a667ff4b2bb8d47ceb962420152`
+**Source fingerprint (SHA-256):** `3d07c8ca226e19849ebe5d37d93f129c77930a6971e58fe73abc2a47a58ee42e`

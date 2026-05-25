@@ -16,4 +16,4 @@ The VideoTriangleCFGGuidance node applies a triangular classifier-free guidance 
 | `model` | MODEL | The modified model with triangular CFG guidance applied |
 
 ---
-**Source fingerprint (SHA-256):** `0b854d78f32e265b1a4322cb11b231df33e6072611142537e0c8cff4e93db49a`
+**Source fingerprint (SHA-256):** `10b3ad8dcfe5e44f131b2e943e6645899102f406501418906cfe06ac2d21d433`

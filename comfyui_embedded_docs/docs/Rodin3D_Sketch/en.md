@@ -6,8 +6,10 @@ This node generates 3D assets using the Rodin API. It takes input images and con
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Yes | - | Input images to be converted into 3D models. Multiple images can be provided. |
-| `Seed` | INT | No | 0-65535 | Random seed value for generation (default: 0). Set to 0 for random seed. |
+| `Images` | IMAGE | Yes | 1 to 5 images | Input images to be converted into 3D models. You can provide between 1 and 5 images. |
+| `Seed` | INT | No | 0 to 65535 | Random seed value for generation (default: 0). Set to 0 for a random seed. |
+
+**Note:** The node requires at least 1 image and supports a maximum of 5 images. If no images are provided, the node will raise an error.
 
 ## Outputs
 
@@ -17,4 +19,4 @@ This node generates 3D assets using the Rodin API. It takes input images and con
 | `GLB` | FILE3DGLB | The generated 3D model in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `d3bc71e6a44c11cbeff25351d561e99a7f09ed8ce3544d2968a873b6796512da`
+**Source fingerprint (SHA-256):** `7030e6966a13b62055a17fc1eb39f34aa228fa37bbdcf7c2d5dbbbc1ca96c819`

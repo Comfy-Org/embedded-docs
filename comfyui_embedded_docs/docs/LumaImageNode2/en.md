@@ -32,4 +32,4 @@ When `"uni-1"` or `"uni-1-max"` is selected for the `model` parameter, the follo
 | `image` | IMAGE | The generated image as a tensor. |
 
 ---
-**Source fingerprint (SHA-256):** `0a71bcd7c68c3610c162601b4c3f700034e47af8f16cf7853606753ad270c96e`
+**Source fingerprint (SHA-256):** `cd680f8b9e6bcf5fa415aa2d9ec3126bf8873d14bd6f4cd127491cfa242e5548`

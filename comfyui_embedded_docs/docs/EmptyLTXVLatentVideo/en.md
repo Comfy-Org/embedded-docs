@@ -18,4 +18,4 @@ The EmptyLTXVLatentVideo node creates an empty latent tensor for video processin
 | `samples` | LATENT | The generated empty latent tensor with zero values in the specified dimensions |
 
 ---
-**Source fingerprint (SHA-256):** `c3ee9374210e100a074b238ce7ac8b5d2d2d415efd3318c9a6a7c8f7e20bda84`
+**Source fingerprint (SHA-256):** `177fa1014ba65feab06a6f7bafc72e1cc536d3dc01f5bebddceb9f15f8df99fd`

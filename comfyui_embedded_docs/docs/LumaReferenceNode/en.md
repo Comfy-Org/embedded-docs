@@ -17,4 +17,4 @@ This node holds an image and weight value for use with the Luma Generate Image n
 | `luma_ref` | LUMA_REF | The Luma reference chain containing the image and weight. |
 
 ---
-**Source fingerprint (SHA-256):** `1ad653f0ad7c56702f607ebc3c3d117196295e4e3b044a2c6f1aa3db18869a40`
+**Source fingerprint (SHA-256):** `1cca0ddc397a72c03bb7d6d24135c09795934f566b23368298a89b90a14dc8cc`

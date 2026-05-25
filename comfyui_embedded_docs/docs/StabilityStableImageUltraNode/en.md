@@ -23,4 +23,4 @@ Generates images synchronously based on prompt and resolution. This node creates
 | `output` | IMAGE | The generated image based on the input parameters. |
 
 ---
-**Source fingerprint (SHA-256):** `2fd9e106a3460a39c33ecc9a15ab6414dab1914fdc43e4f546827e02c889cf62`
+**Source fingerprint (SHA-256):** `4d516f67a0e2a8c02f601b4da9fe466b7376d50bb96d6e0dc6ca2cc034c79585`

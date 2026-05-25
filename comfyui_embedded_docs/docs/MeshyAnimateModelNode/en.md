@@ -7,7 +7,7 @@ This node applies a specific animation to a 3D character model that has already 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `rig_task_id` | STRING | Yes | N/A | The unique task ID from a previously completed Meshy character rigging operation. |
-| `action_id` | INT | Yes | 0 to 696 | The ID number of the animation action to apply. Visit <https://docs.meshy.ai/en/api/animation-library> for a list of available values. (default: 0) |
+| `action_id` | INT | Yes | 0 to 696 | The ID number of the animation action to apply. Visit https://docs.meshy.ai/en/api/animation-library for a list of available values. (default: 0) |
 
 ## Outputs
 
@@ -18,4 +18,4 @@ This node applies a specific animation to a 3D character model that has already 
 | `FBX` | FILE3DFBX | The animated 3D model file in FBX format. |
 
 ---
-**Source fingerprint (SHA-256):** `3b7610b5f6f763dde86a52f9212b3fc98f41e54bda30097fcb8f5f0bd020899e`
+**Source fingerprint (SHA-256):** `0af4e96d031025fdb5e11d6dd35e408b61dcdd4ca64f88464a6510426485dac2`

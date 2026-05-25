@@ -18,4 +18,4 @@ This node creates a custom style for image generation by uploading reference ima
 | `style_id` | STRING | The unique identifier for the newly created custom style. |
 
 ---
-**Source fingerprint (SHA-256):** `36340e64d90b3edbbecedf15ac123adaabb5bc0c950183d2df6627dc873da61c`
+**Source fingerprint (SHA-256):** `9f6d6f87621b72fcbf19200e7b2461c9a22160311c77411e9ddd06ee2053dc63`

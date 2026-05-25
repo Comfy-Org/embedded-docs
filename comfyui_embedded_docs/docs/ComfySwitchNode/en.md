@@ -19,4 +19,4 @@ The Switch node selects between two possible inputs based on a boolean condition
 | `output` | MATCH_TYPE | The selected data. This will be the value from the `on_true` input if the `switch` is true, or the value from the `on_false` input if the `switch` is false. |
 
 ---
-**Source fingerprint (SHA-256):** `9f3cf58c1a04116fa0cbe8007fe3ed90e93c4de2e65f6778761d03fb21a63af3`
+**Source fingerprint (SHA-256):** `6709dc66cf1c52bb31bde2cccd70324691261a03dfbab813b7196e20c0a4cb63`

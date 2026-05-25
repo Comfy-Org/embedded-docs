@@ -23,4 +23,4 @@ The Grok Video node generates a short video from a text description. It can crea
 | `output` | VIDEO | The generated video. |
 
 ---
-**Source fingerprint (SHA-256):** `d48049fafbe4dbf50eb5a42495d445fa4c7fc590a1d70267e220ccedc2f5328a`
+**Source fingerprint (SHA-256):** `7b4bcd25cfe620b4593c16a2cb2a288e47f9791ae2c60d56b79009bc62bac6e2`

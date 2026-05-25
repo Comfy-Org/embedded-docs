@@ -13,8 +13,8 @@ The Vidu2 Reference-to-Video Generation node creates a video from a text prompt 
 | `duration` | INT | No | 1 to 10 | The length of the generated video in seconds (default: `5`). |
 | `seed` | INT | No | 0 to 2147483647 | A number used to control the randomness of the generation for reproducible results (default: `1`). |
 | `aspect_ratio` | COMBO | No | `"16:9"`<br>`"9:16"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | The shape of the video frame. |
-| `resolution` | COMBO | No | `"720p"`<br>`"1080p"` | The pixel resolution of the output video. |
-| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Controls the movement amplitude of objects in the frame. |
+| `resolution` | COMBO | No | `"720p"`<br>`"1080p"` | The pixel resolution of the output video (default: `"720p"`). |
+| `movement_amplitude` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | Controls the movement amplitude of objects in the frame (default: `"auto"`). |
 
 **Constraints:**
 
@@ -31,4 +31,4 @@ The Vidu2 Reference-to-Video Generation node creates a video from a text prompt 
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `3e02b05a0e374442a6ca4ce6a3dbc182b4059e19b5ed7dfc2794e036de7beffd`
+**Source fingerprint (SHA-256):** `73366d1ae9d64428141a7f9de3f9632f12e41918f85771a9a41619564c88ed38`

@@ -21,4 +21,4 @@ This node uses the Tencent Hunyuan3D API to edit the textures of a 3D model. You
 | `texture_image` | IMAGE | The newly generated texture image for the 3D model. |
 
 ---
-**Source fingerprint (SHA-256):** `c8e81fcfc24707746b8d1291d31aff325523cd93a627b896402ce1b5a96c7e87`
+**Source fingerprint (SHA-256):** `e8d3f9fbd49b0e641ed4bb415d6ee6a34018623eb717ac54c0588383f9caed44`

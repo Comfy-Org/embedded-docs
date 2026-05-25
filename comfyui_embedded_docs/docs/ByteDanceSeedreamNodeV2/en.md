@@ -17,7 +17,7 @@ This node generates or edits images using ByteDance's Seedream models (versions 
 
 When you select a model, additional parameters become available:
 
-- **Size Preset**: A dropdown to select a predefined image resolution (e.g., "2048x2048", "1024x1024"). The available presets depend on the selected model.
+- **Size Preset**: A dropdown to select a predefined image resolution. The available presets depend on the selected model.
 - **Width**: The width of the generated image in pixels (default: 2048).
 - **Height**: The height of the generated image in pixels (default: 2048).
 - **Max Images**: The maximum number of images to generate (default: 1). When set to 1, sequential image generation is disabled.
@@ -43,4 +43,4 @@ When you select a model, additional parameters become available:
 | `image` | IMAGE | The generated or edited image as a tensor. If multiple images were requested, they are concatenated into a single batch. |
 
 ---
-**Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`
+**Source fingerprint (SHA-256):** `6a98d2c1f1e73e304970115bc6dd3ea24ca3cdf440803eed862b7a1ea8d394ce`

@@ -24,4 +24,4 @@ The Vidu Start End To Video Generation node creates a video by generating frames
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `d859d67b3ff73977b95e3903b461509f933f9652fedc016e1cd362f6bef1b8dc`
+**Source fingerprint (SHA-256):** `bffb4d3e90b1c6a1a3a7cc864a44ab96bac0be90411be791f9ffb15b9a50c6b6`

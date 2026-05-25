@@ -19,4 +19,4 @@ The CLIPAttentionMultiply node allows you to adjust the attention mechanism in C
 | `CLIP` | CLIP | Returns a modified CLIP model with the specified attention scaling factors applied |
 
 ---
-**Source fingerprint (SHA-256):** `43dab83ecfc928f3359eb7560658f43235bf3faa62c81084a2b4f482e3a4638f`
+**Source fingerprint (SHA-256):** `1f5c437cb4a372dfd69ad3c10e2b8cfc68821e0fe82dcf37df5e6fd64aa0b436`

@@ -18,4 +18,4 @@ The EmptyCosmosLatentVideo node creates an empty latent video tensor with specif
 | `samples` | LATENT | The generated empty latent video tensor with zero values |
 
 ---
-**Source fingerprint (SHA-256):** `f473820af3faf7cb6992ff1959089801e333df395b4007abeb9b504962bfc73b`
+**Source fingerprint (SHA-256):** `ed7404f31b4b9fb2c098579f8e96e55befb3c8ed045d4175385d01a7b42035e2`

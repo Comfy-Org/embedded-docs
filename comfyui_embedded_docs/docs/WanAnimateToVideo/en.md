@@ -46,4 +46,4 @@ The WanAnimateToVideo node generates video content by combining multiple conditi
 | `video_frame_offset` | INT | Updated frame offset for continuing video generation in chunks, calculated as the previous offset plus the generated length |
 
 ---
-**Source fingerprint (SHA-256):** `c2ca90f4963f629d51cdd7f4bdb67e01c32ce5ca7d916b1f992ccd220f57566c`
+**Source fingerprint (SHA-256):** `2ec2afbc57f58a5b7ce0ecc3730618633d435439ce2d650b18be531c1edddff0`

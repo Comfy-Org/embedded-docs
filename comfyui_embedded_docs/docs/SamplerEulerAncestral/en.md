@@ -16,4 +16,4 @@ The SamplerEulerAncestral node creates an Euler Ancestral sampler for generating
 | `sampler` | SAMPLER | Returns a configured Euler Ancestral sampler that can be used in the sampling pipeline. |
 
 ---
-**Source fingerprint (SHA-256):** `4d167de55f003383ccbb4a53daa14496bd931589781d56b62bf282a811669670`
+**Source fingerprint (SHA-256):** `e54d6ae421731851d54ba747063ff804b1def6024b530afdec0748d255ad1251`

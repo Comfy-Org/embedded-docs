@@ -15,4 +15,4 @@ The PrimitiveInt node provides a simple way to work with integer values in your 
 | `output` | INT | The input integer value passed through unchanged |
 
 ---
-**Source fingerprint (SHA-256):** `13b5ff6703498fd37ae48d574e010cf78aa2bfc514b68c34b2cf6740ed75c834`
+**Source fingerprint (SHA-256):** `79e0bad8e15fd660ee405ad34bf4f1cd76d2c37494f640be1ddf4d9fe8cbb9a0`

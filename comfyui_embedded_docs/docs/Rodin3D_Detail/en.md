@@ -6,10 +6,10 @@ The Rodin 3D Detail node generates detailed 3D assets using the Rodin API. It ta
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Yes | - | Input images used for 3D model generation. Multiple images can be provided. |
-| `Seed` | INT | Yes | - | Random seed value for reproducible results |
-| `Material_Type` | STRING | Yes | - | Type of material to apply to the 3D model |
-| `Polygon_count` | STRING | Yes | - | Target polygon count for the generated 3D model. Determines the mesh quality level. |
+| `Images` | IMAGE | Yes | - | Input images used for 3D model generation. A minimum of 1 image is required, and a maximum of 5 images can be provided. |
+| `Seed` | INT | No | 0 to 65535 | Random seed value for reproducible results (default: 0) |
+| `Material_Type` | STRING | No | `"PBR"`<br>`"Shaded"` | Type of material to apply to the 3D model (default: "PBR") |
+| `Polygon_count` | STRING | No | `"4K-Quad"`<br>`"8K-Quad"`<br>`"18K-Quad"`<br>`"50K-Quad"`<br>`"200K-Triangle"` | Target polygon count for the generated 3D model. Determines the mesh quality level (default: "18K-Quad") |
 
 ## Outputs
 
@@ -19,4 +19,4 @@ The Rodin 3D Detail node generates detailed 3D assets using the Rodin API. It ta
 | `GLB` | FILE3DGLB | The generated 3D model in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `ed9ed2c8a55ca80d18da88ee2703c66057a09beeac7163fc270d81a492417b0a`
+**Source fingerprint (SHA-256):** `ccdee80eb972c13a8849488080c08ba7276cec0b77a2089c7a9ad5b8adc5937b`

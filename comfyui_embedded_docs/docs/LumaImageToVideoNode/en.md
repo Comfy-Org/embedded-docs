@@ -7,8 +7,8 @@ Generates videos synchronously based on a text prompt and optional starting/endi
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | - | Prompt for the video generation (default: "") |
-| `model` | COMBO | Yes | Multiple options available | Selects the video generation model from available Luma models |
-| `resolution` | COMBO | Yes | `"540p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` | Output resolution for the generated video (default: "540p"). This parameter is ignored when using the `ray-1-6` model. |
+| `model` | COMBO | Yes | `"ray-1-6"`<br>`"ray-2"` | Selects the video generation model from available Luma models |
+| `resolution` | COMBO | Yes | `"540p"`<br>`"720p"<br>`"1080p"`<br>`"4k"` | Output resolution for the generated video (default: "540p"). This parameter is ignored when using the `ray-1-6` model. |
 | `duration` | COMBO | Yes | `"5s"`<br>`"9s"` | Duration of the generated video. This parameter is ignored when using the `ray-1-6` model. |
 | `loop` | BOOLEAN | Yes | - | Whether the generated video should loop (default: False) |
 | `seed` | INT | Yes | 0 to 18446744073709551615 | Seed to determine if node should re-run; actual results are nondeterministic regardless of seed. (default: 0) |
@@ -25,4 +25,4 @@ Generates videos synchronously based on a text prompt and optional starting/endi
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `210286ad38cecc5b3b0689f470ff473e996abfd251f88a45bcac936751ae2674`
+**Source fingerprint (SHA-256):** `0ef0e33f4822b522909a9732b333710197cd6e28ed6012c791f4268f8e995a84`

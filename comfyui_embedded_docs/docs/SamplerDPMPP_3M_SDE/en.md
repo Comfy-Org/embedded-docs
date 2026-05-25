@@ -17,4 +17,4 @@ The SamplerDPMPP_3M_SDE node creates a DPM++ 3M SDE sampler for use in the sampl
 | `sampler` | SAMPLER | Returns a configured sampler object for use in sampling workflows |
 
 ---
-**Source fingerprint (SHA-256):** `817ce8c12245063e5f2f3421f57dd55801aae96dfd8fe1bf3f88f814799b830a`
+**Source fingerprint (SHA-256):** `d25f8f69211ebca5aca8d1925d53f90a1bee3f883239635bffc107b5fdae8b36`

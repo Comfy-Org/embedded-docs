@@ -24,4 +24,4 @@ The LTXV Reference Audio node is used for speaker identity transfer in audio gen
 | `negative` | CONDITIONING | The negative conditioning, now containing the encoded reference audio data. |
 
 ---
-**Source fingerprint (SHA-256):** `0b87fb135ba8e752f4114cb47152503b0ec548eefcaa03f99f1cbdda6664874c`
+**Source fingerprint (SHA-256):** `a25e24a08df73b8a34fd476544634e396a0eec5b6dc630e911c371f1b16931b8`

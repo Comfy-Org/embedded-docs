@@ -8,7 +8,7 @@ The LatentCutToBatch node splits a latent representation along a chosen dimensio
 |-----------|-----------|----------|-------|-------------|
 | `samples` | LATENT | Yes | - | The latent representation to be split and batched. |
 | `dim` | COMBO | Yes | `"t"`<br>`"x"`<br>`"y"` | The dimension along which to cut the latent samples. `"t"` refers to the temporal dimension, `"x"` to the width, and `"y"` to the height. |
-| `slice_size` | INT | Yes | 1 to 16384 | The size of each slice to cut from the specified dimension. If the dimension's size is not perfectly divisible by this value, the remainder is discarded. (default: 1) |
+| `slice_size` | INT | Yes | 1 to 16384 (max resolution) | The size of each slice to cut from the specified dimension. If the dimension's size is not perfectly divisible by this value, the remainder is discarded. (default: 1) |
 
 ## Outputs
 
@@ -17,4 +17,4 @@ The LatentCutToBatch node splits a latent representation along a chosen dimensio
 | `samples` | LATENT | The resulting latent batch, containing the sliced and stacked samples. |
 
 ---
-**Source fingerprint (SHA-256):** `38d0ace3ef91e47e3f047aa7057c61e09b6534702526b34691b4bc239c933cd3`
+**Source fingerprint (SHA-256):** `565fd1e72a1353050cf8c32c6ab8dade475afb2e8ee13ba323d30a8467204201`

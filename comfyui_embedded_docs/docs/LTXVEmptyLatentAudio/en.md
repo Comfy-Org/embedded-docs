@@ -20,4 +20,4 @@ The LTXV Empty Latent Audio node creates a batch of empty (zero-filled) latent a
 | `Latent` | LATENT | An empty latent audio tensor with the structure (batch_size, z_channels, num_audio_latents, audio_freq) configured to match the input Audio VAE. The output also includes a `type` field set to "audio". |
 
 ---
-**Source fingerprint (SHA-256):** `1a8bfea98f14de014069016652b39542cfd9290cae2d870ab4e381e46aa1e08f`
+**Source fingerprint (SHA-256):** `1b0ecbeb1388d952f5c5178cdc70bb06aad1640112a0851802c387594629f4bf`

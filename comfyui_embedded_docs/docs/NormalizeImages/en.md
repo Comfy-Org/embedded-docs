@@ -17,4 +17,4 @@ This node adjusts the pixel values of an input image using a mathematical normal
 | `image` | IMAGE | The resulting image after the normalization process has been applied. |
 
 ---
-**Source fingerprint (SHA-256):** `9d08c8dba7d13c6f255ed786d3d2d3005bce425dc04b14b7199d868c3fc81fd9`
+**Source fingerprint (SHA-256):** `881e14dbbd8d380960a72b828609861a01a88a397f296dcb134955928afff039`

@@ -7,7 +7,7 @@ The SetUnionControlNetType node allows you to specify the type of control networ
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `control_net` | CONTROL_NET | Yes | - | The control network to modify with a new type setting |
-| `type` | STRING | Yes | `"auto"`<br>All available UNION_CONTROLNET_TYPES keys | The control network type to apply. Use "auto" for automatic type detection or select a specific control network type from the available options |
+| `type` | STRING | Yes | `"auto"`<br>All available UNION_CONTROLNET_TYPES keys | The control network type to apply. Use "auto" for automatic type detection or select a specific control network type from the available options (default: "auto") |
 
 ## Outputs
 
@@ -16,4 +16,4 @@ The SetUnionControlNetType node allows you to specify the type of control networ
 | `control_net` | CONTROL_NET | The modified control network with the specified type setting applied |
 
 ---
-**Source fingerprint (SHA-256):** `a64308aec96784f08b6f3f8e96e85f532bd1c536301739e7252b2c7978921b5a`
+**Source fingerprint (SHA-256):** `a2f8695c64490f0700a035c8c2e724b9c29796fb220ed7fdd13651545a3158e6`

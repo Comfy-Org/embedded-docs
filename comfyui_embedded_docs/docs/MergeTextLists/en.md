@@ -10,6 +10,8 @@ This node merges multiple text lists into a single, combined list. It is designe
 
 **Note:** This node is configured as a group process (`is_group_process = True`), meaning it automatically handles multiple list inputs by concatenating them before the main processing function runs.
 
+**Note:** This node is deprecated and superseded by the Create List node.
+
 ## Outputs
 
 | Output Name | Data Type | Description |
@@ -17,4 +19,4 @@ This node merges multiple text lists into a single, combined list. It is designe
 | `texts` | STRING | The single, merged list containing all the input texts. |
 
 ---
-**Source fingerprint (SHA-256):** `043a39a373d03f1ff79dd0746070171bab4d5d915c985e4e64fd35f802b09f69`
+**Source fingerprint (SHA-256):** `bb7f45725c2c41a18d8cd3040d093c11be2ceb03cf1849385aa55d12fd9eb555`

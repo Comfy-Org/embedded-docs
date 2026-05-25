@@ -7,18 +7,18 @@ Generates 3D models synchronously based on a single image using Tripo's API. Thi
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `image` | IMAGE | Yes | - | Input image used to generate the 3D model |
-| `model_version` | COMBO | No | Multiple options available | The version of the Tripo model to use for generation |
-| `style` | COMBO | No | Multiple options available | Style setting for the generated model (default: "None") |
+| `model_version` | COMBO | No | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` | The model version to use for generation |
+| `style` | COMBO | No | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` | Style setting for the generated model (default: "None") |
 | `texture` | BOOLEAN | No | - | Whether to generate textures for the model (default: True) |
 | `pbr` | BOOLEAN | No | - | Whether to use Physically Based Rendering (default: True) |
 | `model_seed` | INT | No | - | Random seed for model generation (default: 42) |
-| `orientation` | COMBO | No | Multiple options available | Orientation setting for the generated model |
+| `orientation` | COMBO | No | `"default"`<br>`"front"`<br>`"back"`<br>`"left"`<br>`"right"`<br>`"top"`<br>`"bottom"` | Orientation setting for the generated model (default: "default") |
 | `texture_seed` | INT | No | - | Random seed for texture generation (default: 42) |
-| `texture_quality` | COMBO | No | "standard"<br>"detailed" | Quality level for texture generation (default: "standard") |
-| `texture_alignment` | COMBO | No | "original_image"<br>"geometry" | Alignment method for texture mapping (default: "original_image") |
+| `texture_quality` | COMBO | No | `"standard"`<br>`"detailed"` | Quality level for texture generation (default: "standard") |
+| `texture_alignment` | COMBO | No | `"original_image"`<br>`"geometry"` | Alignment method for texture mapping (default: "original_image") |
 | `face_limit` | INT | No | -1 to 500000 | Maximum number of faces in the generated model, -1 for no limit (default: -1) |
 | `quad` | BOOLEAN | No | - | Whether to use quadrilateral faces instead of triangles (default: False) |
-| `geometry_quality` | COMBO | No | "standard"<br>"detailed" | Quality level for geometry generation (default: "standard") |
+| `geometry_quality` | COMBO | No | `"standard"`<br>`"detailed"` | Quality level for geometry generation (default: "standard") |
 
 **Note:** The `image` parameter is required and must be provided for the node to function. If no image is provided, the node will raise a RuntimeError.
 
@@ -31,4 +31,4 @@ Generates 3D models synchronously based on a single image using Tripo's API. Thi
 | `GLB` | FILE3DGLB | The generated 3D model in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `1342de2f9788fac504fa0cfa248d011c04a8874307bb26dac86a7ced43a2809e`
+**Source fingerprint (SHA-256):** `f12bae7cc766b7ac208243a10970da7719a13d6283d6b6c39444b577cafc7f04`

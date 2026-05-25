@@ -22,4 +22,4 @@ This node takes a sequence of images and an optional audio track, and splits the
 | `audio_segment` | AUDIO | A list of audio segments, one for each video segment. |
 
 ---
-**Source fingerprint (SHA-256):** `c6a3ddca3fd61fcdb287fecb6969796eebd65e70f1174abdab57912586d27d00`
+**Source fingerprint (SHA-256):** `f9918166a75f688f1de6a09008780bc629bbdfb3b8d547de9ba8661ef07fc97e`

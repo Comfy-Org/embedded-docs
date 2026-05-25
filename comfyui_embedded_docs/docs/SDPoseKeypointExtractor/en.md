@@ -17,6 +17,8 @@ The SDPoseKeypointExtractor node detects human pose keypoints from input images 
 *   The node operates in two distinct modes based on the `bboxes` input:
     1.  **Bounding Box Mode:** When `bboxes` is provided, it processes each specified region individually. This is required for detecting multiple people in a single image.
     2.  **Full-Image Mode:** When `bboxes` is not provided, it processes the entire image as a batch. The `batch_size` parameter only applies in this mode.
+*   When `bboxes` is provided, it must be a list of bounding boxes. If there are fewer bounding box lists than images, the last list is reused for remaining images.
+*   Bounding boxes with zero width or height (e.g., `x2 <= x1` or `y2 <= y1`) are skipped.
 
 ## Outputs
 
@@ -25,4 +27,4 @@ The SDPoseKeypointExtractor node detects human pose keypoints from input images 
 | `keypoints` | POSE_KEYPOINT | Keypoints in OpenPose frame format (canvas_width, canvas_height, people). The output contains the detected persons, each with an array of keypoint coordinates (x, y) and their corresponding confidence scores. |
 
 ---
-**Source fingerprint (SHA-256):** `7903b51c9137aa08bb8843362740fcf93cea9c09d142bd1db3b5eee945c853e4`
+**Source fingerprint (SHA-256):** `5e199e9d08a46d934c6d1f4b1a411f0ca95eb5e7f85ec39f59a058c9be598e9f`

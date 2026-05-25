@@ -26,4 +26,4 @@ The StableZero123_Conditioning node processes an input image and camera angles t
 | `latent` | LATENT | Latent representation with dimensions [batch_size, 4, height//8, width//8] |
 
 ---
-**Source fingerprint (SHA-256):** `a9d6619c800119c9a619665f322d49ded1478ceb40df56ca5707b31242cb0e47`
+**Source fingerprint (SHA-256):** `197b4efaf13837500f2c3aaf589facc384b3f0bbd026aaa75a7fee509bd0bc51`

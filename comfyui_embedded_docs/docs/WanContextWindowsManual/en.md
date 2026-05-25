@@ -24,4 +24,4 @@ The WAN Context Windows (Manual) node allows you to manually configure context w
 | `model` | MODEL | The model with the applied context window configuration. |
 
 ---
-**Source fingerprint (SHA-256):** `33e539f1e6647a6a2bc98fadc357a25279b0900746f5b3d568e2782cdb770258`
+**Source fingerprint (SHA-256):** `941a12b45162fd97c21e071e8170ba7047487c0f312f20dac572ef1bc751c64d`

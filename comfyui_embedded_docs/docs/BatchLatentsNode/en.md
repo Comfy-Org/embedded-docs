@@ -6,9 +6,9 @@ The Batch Latents node combines multiple latent inputs into a single batch. It t
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `latents` | LATENT | Yes | 2 to 50 inputs | A set of latent samples to be combined into a single batch. You must provide at least two latents, and you can add up to 50. The node automatically creates input slots as you connect more latents. |
+| `latents` | LATENT | Yes | 1 to 50 inputs | A set of latent samples to be combined into a single batch. You must provide at least one latent, and you can add up to 50. The node automatically creates input slots as you connect more latents. |
 
-**Note:** You must provide at least two latent inputs for the node to function. The node will automatically create input slots as you connect more latents, up to a maximum of 50.
+**Note:** You must provide at least one latent input for the node to function. The node will automatically create input slots as you connect more latents, up to a maximum of 50.
 
 ## Outputs
 
@@ -17,4 +17,4 @@ The Batch Latents node combines multiple latent inputs into a single batch. It t
 | `output` | LATENT | A single latent output containing all the input latents combined into one batch. |
 
 ---
-**Source fingerprint (SHA-256):** `215e7e2df43e902815dd87d228e8d5e09f18f6f52002cc3e861551fc207a9896`
+**Source fingerprint (SHA-256):** `66b2a315c1ce3842e0ee014edd576e87e959591e6d54576c93cba2116b599736`

@@ -17,4 +17,4 @@ The OpenAIChatConfig node allows setting additional configuration options for th
 | `OPENAI_CHAT_CONFIG` | OPENAI_CHAT_CONFIG | Configuration object containing the specified settings for use with OpenAI Chat Nodes |
 
 ---
-**Source fingerprint (SHA-256):** `6d956aa1bc7f822c18ddaa55cd2345dad947fd93833de25a957f49878484af97`
+**Source fingerprint (SHA-256):** `f9ae6d3b2818ea37543156c2f209fc4d093e40e446907deb4be327ca0c9d70e1`

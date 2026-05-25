@@ -18,4 +18,4 @@ The SplitAudioChannels node separates stereo audio into individual left and righ
 | `right` | AUDIO | The separated right channel audio |
 
 ---
-**Source fingerprint (SHA-256):** `48f329f3eb9749e75eda1038c43caf42ee63d8a1fa66ab29ad3d34b5d136e323`
+**Source fingerprint (SHA-256):** `c6e6ecb219e0cb47b003ec9c28fdc060ef83bf1c8bd77d9fb29a088d55a9ab3f`

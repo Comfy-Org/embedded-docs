@@ -15,4 +15,4 @@ The PixVerse Template node allows you to select from available templates for Pix
 | `pixverse_template` | STRING | The template ID corresponding to the selected template name, which can be used by other PixVerse nodes for video generation. |
 
 ---
-**Source fingerprint (SHA-256):** `d6ea1eb1cc9a7d33cf69f101990e601189726b9ef9e199fe211087f7070f35d0`
+**Source fingerprint (SHA-256):** `34daaf036f28b676b1048e8e4174ab34bf69328a94dd9e51696f6298936b4e84`

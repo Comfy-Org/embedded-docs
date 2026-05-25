@@ -23,4 +23,4 @@ Generates images using Flux Pro 1.1 Ultra via API based on prompt and resolution
 | `output_image` | IMAGE | The generated image from Flux Pro 1.1 Ultra |
 
 ---
-**Source fingerprint (SHA-256):** `8632aeb76e9007d65d7f3fd51465fe78f56ba92264ef65ce505db2fc95cfd25b`
+**Source fingerprint (SHA-256):** `9a0e3c676456da395845a2bd869abaaca30ed63ee3faf56449a2548fbab46b5c`

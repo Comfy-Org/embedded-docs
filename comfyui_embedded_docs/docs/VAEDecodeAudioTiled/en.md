@@ -18,4 +18,4 @@ This node converts a compressed audio representation (latent samples) back into 
 | `output` | AUDIO | The decoded audio waveform. |
 
 ---
-**Source fingerprint (SHA-256):** `d989f0cd0e4b4bf992d6860e27c25b8e814df52763c82909a61c58f418306352`
+**Source fingerprint (SHA-256):** `d846ec48856b8a1415101b8db06b5dd38b5d1222c117ea4f170daf3347ed1685`

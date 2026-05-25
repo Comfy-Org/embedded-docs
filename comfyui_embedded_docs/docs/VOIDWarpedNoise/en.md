@@ -8,7 +8,7 @@ Generates temporally-correlated noise for the second pass of the VOID video refi
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `optical_flow` | MODEL | Yes | - | Optical flow model from OpticalFlowLoader (RAFT-large). |
+| `optical_flow` | OPTICAL_FLOW | Yes | - | Optical flow model from OpticalFlowLoader (RAFT-large). |
 | `video` | IMAGE | Yes | - | Pass 1 output video frames [T, H, W, 3]. |
 | `width` | INT | Yes | 16 to MAX_RESOLUTION (step 8) | Width of the output latent (default: 672). |
 | `height` | INT | Yes | 16 to MAX_RESOLUTION (step 8) | Height of the output latent (default: 384). |
@@ -24,4 +24,4 @@ Generates temporally-correlated noise for the second pass of the VOID video refi
 | `warped_noise` | LATENT | A 5D tensor (B, C, T, H, W) containing optical-flow warped Gaussian noise, ready for use as the initial latent in VOID Pass 2. |
 
 ---
-**Source fingerprint (SHA-256):** `a0f986e54bcc6c455220f89f5d840585a9eae081e522ea11e0ce37ab46821bd9`
+**Source fingerprint (SHA-256):** `fa7f08bd5e050324d1d9681243e82d66b1613b8694a5b69a5949b39974c6bddb`

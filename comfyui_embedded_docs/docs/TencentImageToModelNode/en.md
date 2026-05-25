@@ -32,4 +32,4 @@ This node uses Tencent's Hunyuan3D Pro API to generate a 3D model from one or mo
 | `optional_roughness` | IMAGE | The roughness map for PBR materials. Returns a black image if not available. |
 
 ---
-**Source fingerprint (SHA-256):** `56ac9e55bd9bb3a5c7c46c2de1ea06921cf41c0971471f6d0b64166722705e4d`
+**Source fingerprint (SHA-256):** `b4cb268fe3b2f5890e5460d5e69897ccc47e205b05546aea18a85ad15717f12a`

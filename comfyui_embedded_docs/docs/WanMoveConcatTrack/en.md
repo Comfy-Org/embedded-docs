@@ -16,4 +16,4 @@ The WanMoveConcatTrack node combines two sets of motion tracking data into a sin
 | `tracks` | TRACKS | The concatenated motion tracking data, containing the combined `track_path` and `track_visibility` from the inputs. |
 
 ---
-**Source fingerprint (SHA-256):** `d9b4c00291c6fa8e17bf54ecdcd16f7f6874159fe8cebebe66568dc2a744868f`
+**Source fingerprint (SHA-256):** `96741eecf48ce534fa2deac8a6f62c1374a7cdc4c0b6263ce9b4d757861fc338`

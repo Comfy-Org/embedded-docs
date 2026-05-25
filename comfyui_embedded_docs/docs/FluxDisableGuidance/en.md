@@ -15,4 +15,4 @@ This node completely disables the guidance embed functionality for Flux and simi
 | `conditioning` | CONDITIONING | The modified conditioning data with guidance disabled |
 
 ---
-**Source fingerprint (SHA-256):** `37e544460d5e50542cebb451997c0320f16d822cc5695cb34825d2038866a455`
+**Source fingerprint (SHA-256):** `32d8dd4ac57f273a7064355ef819e720302bdc819b1ebfc93e42257a73e6c632`

@@ -23,4 +23,4 @@ The RegexExtract node searches for patterns in text using regular expressions. I
 | `output` | STRING | The extracted text based on the selected mode and parameters |
 
 ---
-**Source fingerprint (SHA-256):** `38e365d21bea966ed65bc78c184766330924fe75392cdb88c6978052037f5d5f`
+**Source fingerprint (SHA-256):** `a879e4fd7429edfada44b2f5778bb71e537a000be6c25d3f67359b9ee802812f`

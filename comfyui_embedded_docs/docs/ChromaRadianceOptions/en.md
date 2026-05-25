@@ -21,4 +21,4 @@ The ChromaRadianceOptions node allows you to configure advanced settings for the
 | `model` | MODEL | The modified model with Chroma Radiance options applied |
 
 ---
-**Source fingerprint (SHA-256):** `b49a12e9aba59e4669c59e05a6aeff6d4ae5a4b656ca5b0de4bdf71291dca095`
+**Source fingerprint (SHA-256):** `34e17791e3675c59b4a15b007e853eedcfa0cbbb975fb2f5e71d1115eb2b8781`

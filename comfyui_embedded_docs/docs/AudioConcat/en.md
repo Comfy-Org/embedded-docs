@@ -17,4 +17,4 @@ The AudioConcat node combines two audio inputs by joining them together. It take
 | `AUDIO` | AUDIO | The combined audio containing both input audio files joined together |
 
 ---
-**Source fingerprint (SHA-256):** `b54046e29761cf27bc5b1c065dac87846613afc0b5cbb296632628bf7d4527b7`
+**Source fingerprint (SHA-256):** `faccc3d42e9c6927deadb7d5f7fe9e5bbbf08e4e9a3d636f42a2b9f995eec8c1`

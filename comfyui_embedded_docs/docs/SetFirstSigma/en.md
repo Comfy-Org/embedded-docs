@@ -16,4 +16,4 @@ The SetFirstSigma node modifies a sequence of sigma values by replacing the firs
 | `sigmas` | SIGMAS | The modified sigma sequence with the first element replaced by the custom sigma value |
 
 ---
-**Source fingerprint (SHA-256):** `2414acd7f3f42032c12bae2c581de4721f4c1daa912255fa0956caaa567291d5`
+**Source fingerprint (SHA-256):** `7f5a5fa4b4aaa4cf31a725df74821ad400bf951320b1ce004087d7ec53668b63`

@@ -18,4 +18,4 @@ The Video Slice node allows you to extract a specific segment from a video. You 
 | `video` | VIDEO | The trimmed video segment. |
 
 ---
-**Source fingerprint (SHA-256):** `5e3e3e69931a25183eb01b7b87ec12cbf9f5a748781993dcbeec7a6d5f7260c1`
+**Source fingerprint (SHA-256):** `077fadd65af9d546155d2bbb736148ce2c87810a16a76d9259b38f1b6ab6a1a3`

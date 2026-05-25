@@ -14,8 +14,8 @@ The StableCascade_SuperResolutionControlnet node prepares inputs for Stable Casc
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
 | `controlnet_input` | IMAGE | The encoded image representation suitable for controlnet input |
-| `stage_c` | LATENT | Placeholder latent representation for stage C of Stable Cascade processing |
-| `stage_b` | LATENT | Placeholder latent representation for stage B of Stable Cascade processing |
+| `stage_c` | LATENT | Placeholder latent representation for stage C of Stable Cascade processing, with dimensions based on the input image size divided by 16 |
+| `stage_b` | LATENT | Placeholder latent representation for stage B of Stable Cascade processing, with dimensions based on the input image size divided by 2 |
 
 ---
-**Source fingerprint (SHA-256):** `78b6e5a02c48ac37a205ef9d8532a3aca19134de4ec7be98b2ee55969dab7b53`
+**Source fingerprint (SHA-256):** `6872eb8610355871ec05c3dacc63ac86d2dc393819f283d256650878a54b7522`

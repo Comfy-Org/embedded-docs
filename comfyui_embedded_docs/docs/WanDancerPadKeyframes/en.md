@@ -22,4 +22,4 @@ This node prepares a sequence of keyframes for a specific segment of a longer vi
 | `audio_segment` | AUDIO | Audio segment for this video segment. |
 
 ---
-**Source fingerprint (SHA-256):** `5a104b45faaa870727d4c45e6327e7233110b40dc5a13515a29e5f14de2050e0`
+**Source fingerprint (SHA-256):** `93393e39cb1968b6e8720dfad213c16c534857bcfafcc577be64e0733ab3a760`

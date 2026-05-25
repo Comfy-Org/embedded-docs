@@ -17,4 +17,4 @@ The Load Video node loads video files from the input directory and makes them av
 | `video` | VIDEO | The loaded video data that can be passed to other video processing nodes for further manipulation or analysis. |
 
 ---
-**Source fingerprint (SHA-256):** `e3d18eb43cba34734761b5b147d9fee91fe3ca99db21f9e19a130efc3349cecb`
+**Source fingerprint (SHA-256):** `7cdd0ed301e4545e38fb706231a18510088b76af4e843ccdfb3ae3cf8a912f49`

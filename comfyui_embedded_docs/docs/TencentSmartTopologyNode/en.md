@@ -20,4 +20,4 @@ This node performs smart retopology on a 3D model, automatically creating a new,
 | `OBJ` | FILE3D | The processed 3D model with optimized topology, returned in OBJ format. |
 
 ---
-**Source fingerprint (SHA-256):** `13c2dce5f5fbc46a505d0366d8da1c4e762d3a64d11fae1bcceebd510b273f62`
+**Source fingerprint (SHA-256):** `41f52d3553c2c0773d539d029f21fe405ffac739a5a43d89da1c55c5a4d75e5b`

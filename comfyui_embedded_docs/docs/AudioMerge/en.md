@@ -17,4 +17,4 @@ The AudioMerge node combines two audio tracks by overlaying their waveforms. It 
 | `AUDIO` | AUDIO | The merged audio output containing the combined waveform and sample rate |
 
 ---
-**Source fingerprint (SHA-256):** `2a4a7da42835efd03cc67002e617a70c0514524a0ac0ed61d57e499c1283be95`
+**Source fingerprint (SHA-256):** `3bb8c223e9a5155b5e60f901e8653c6654336a10a56d25ba7a3c5e8f5382ad27`

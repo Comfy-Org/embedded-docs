@@ -6,10 +6,12 @@ The Rodin 3D Regular node generates 3D assets using the Rodin API. It takes inpu
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `Images` | IMAGE | Yes | - | Input images used for 3D model generation. Multiple images can be provided. |
-| `Seed` | INT | Yes | - | Random seed value for reproducible results. |
-| `Material_Type` | STRING | Yes | - | Type of material to apply to the 3D model. |
-| `Polygon_count` | STRING | Yes | - | Target polygon count for the generated 3D model. This parameter determines the quality mode and mesh complexity. |
+| `Images` | IMAGE | Yes | - | Input images used for 3D model generation. Up to 5 images can be provided. |
+| `Seed` | INT | No | 0 to 65535 | Random seed value for reproducible results (default: 0). |
+| `Material_Type` | STRING | No | `"PBR"`<br>`"Shaded"` | Type of material to apply to the 3D model (default: "PBR"). |
+| `Polygon_count` | STRING | No | `"4K-Quad"`<br>`"8K-Quad"`<br>`"18K-Quad"`<br>`"50K-Quad"`<br>`"200K-Triangle"` | Target polygon count and mesh type for the generated 3D model (default: "18K-Quad"). |
+
+**Note:** At least 1 image is required for 3D model generation. A maximum of 5 images can be provided.
 
 ## Outputs
 
@@ -19,4 +21,4 @@ The Rodin 3D Regular node generates 3D assets using the Rodin API. It takes inpu
 | `GLB` | FILE3DGLB | The generated 3D model in GLB format. |
 
 ---
-**Source fingerprint (SHA-256):** `f937be3aa579baf4407434839e741141d6bd63c09b7e0bdc49a9e92a10d7a130`
+**Source fingerprint (SHA-256):** `5d65be9cb92da615690df5665ca02c98e98e95510e002502a33fd869c31e7419`

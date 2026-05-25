@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxTextToVideoNode/en.md)
 
-Generates videos synchronously based on a prompt, and optional parameters using MiniMax's API. This node creates video content from text descriptions by connecting to MiniMax's text-to-video service.
+Generates videos synchronously based on a text prompt and optional parameters using MiniMax's API. This node creates video content from text descriptions by connecting to MiniMax's text-to-video service.
 
 ## Inputs
 
@@ -17,4 +17,4 @@ Generates videos synchronously based on a prompt, and optional parameters using 
 | `output` | VIDEO | The generated video based on the input prompt |
 
 ---
-**Source fingerprint (SHA-256):** `bdbd8f9defc4c626f07b36c1ba9859155fa90a2d7ef9a491c30dac4d003d39be`
+**Source fingerprint (SHA-256):** `603b6407446f4f7c5ea9520126f960a52c498d16b59f66fe022fd439b59c39ba`

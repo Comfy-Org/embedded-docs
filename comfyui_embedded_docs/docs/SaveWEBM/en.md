@@ -19,4 +19,4 @@ The SaveWEBM node saves a sequence of images as a WEBM video file. It takes mult
 | `ui` | PREVIEW | Video preview showing the saved WEBM file |
 
 ---
-**Source fingerprint (SHA-256):** `761ce5148c273ffe3789be75c2a00268241d3ec7ecebd5b10efd1b1cc98d85ea`
+**Source fingerprint (SHA-256):** `7ed734af0f4af835c5b52a91389666ec1e0101458aa0f639ef5eeabf1968bfcc`

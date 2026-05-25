@@ -19,4 +19,4 @@ The RegexMatch node checks if a text string contains a match for a given regular
 | `matches` | BOOLEAN | Returns True if the regex pattern matches any part of the input string, False otherwise |
 
 ---
-**Source fingerprint (SHA-256):** `b0ee05277edd8600d880051aa33a940c01abc170553515ab02960f25b1aec2be`
+**Source fingerprint (SHA-256):** `4f0fa717bde7406e42d9a99599eab546690140166d2bb01bb4fde3c5d60e0397`

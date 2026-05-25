@@ -23,7 +23,7 @@ This node applies the visual style from a reference image to your input image. I
 * Exactly one `image` and one `reference_image` are required.
 * Both images must have an aspect ratio between 1:3 and 3:1.
 * Both images must have a minimum height and width of 160 pixels.
-* The `portrait_style` and `portrait_beautifier` parameters are only active and required when `portrait_mode` is set to "enabled".
+* The `portrait_style` and `portrait_beautifier` parameters are only active when `portrait_mode` is set to "enabled".
 
 ## Outputs
 
@@ -32,4 +32,4 @@ This node applies the visual style from a reference image to your input image. I
 | `image` | IMAGE | The resulting image after style transfer has been applied. |
 
 ---
-**Source fingerprint (SHA-256):** `4ae400183618953c369d089d39b878f0a24592967c29d779c577fb8b7339dea8`
+**Source fingerprint (SHA-256):** `2a008de2ad1345360c8313da90721c1118b1d7447647a0a9a4676ff71461e142`

@@ -29,4 +29,4 @@ The TextEncodeAceStepAudio1.5 node prepares text and audio-related metadata for 
 | `CONDITIONING` | CONDITIONING | The conditioning data, which contains the encoded text and audio parameters for the AceStepAudio 1.5 model. |
 
 ---
-**Source fingerprint (SHA-256):** `df70a55024812d8c77a3b618cbff6d3148a3f3f5fc4d17dd3c4282ce7f3cbc2c`
+**Source fingerprint (SHA-256):** `cf948180c3576cd484593f03e849c04857cfb57a198071123ed44ec7b5067521`

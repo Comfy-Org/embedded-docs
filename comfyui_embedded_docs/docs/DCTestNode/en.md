@@ -27,4 +27,4 @@ The DCTestNode is a logic node that returns different types of data based on a u
 | `output` | ANYTYPE | The output depends on the selected `combo` option. It can be a STRING (`"option1"`), an INT (`"option2"`), an IMAGE (`"option3"`), or a string representation of the `subcombo` dictionary (`"option4"`). |
 
 ---
-**Source fingerprint (SHA-256):** `98c4ca2100a27594df360935cc1507960480fe75a76ca0df2af75925d399be00`
+**Source fingerprint (SHA-256):** `3a307bad068ef0721fff622c94337ca36fdca981c35b246ae9d5beb183be1620`

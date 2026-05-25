@@ -18,4 +18,4 @@ The BetaSamplingScheduler node generates a sequence of noise levels (sigmas) for
 | `SIGMAS` | SIGMAS | A sequence of noise levels (sigmas) used for the sampling process |
 
 ---
-**Source fingerprint (SHA-256):** `8b3d17ef737107da3d5cacc84278de8a93f6889e6567619012729b205bbc421e`
+**Source fingerprint (SHA-256):** `4be6f9ba853a1c8ff2b8f58ee3e37829a92e1fe9dc1f042fec20f22e04ae9d77`

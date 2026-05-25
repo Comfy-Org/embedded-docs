@@ -18,4 +18,4 @@ This node adds controlled noise to a latent image using a specified noise genera
 | `LATENT` | LATENT | The modified latent representation with added noise. Any NaN or infinite values in the output are converted to zeros for stability. |
 
 ---
-**Source fingerprint (SHA-256):** `8f387f95aeec2780d27bee5b954ad2c6cd6daa9242a1ea15697455b157bc80d5`
+**Source fingerprint (SHA-256):** `7e2b3e7f55c7c4380e831be5a558c506a6328ad2ec974f550ed30b40ddfab037`

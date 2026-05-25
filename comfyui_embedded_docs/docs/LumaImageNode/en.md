@@ -30,4 +30,4 @@ Generates images synchronously based on a text prompt and aspect ratio. This nod
 | `output` | IMAGE | The generated image based on the input parameters. |
 
 ---
-**Source fingerprint (SHA-256):** `f7878cd4df62c2f364e4e404215b18bf2f5745fb071ae2cd931d5e34b84eab46`
+**Source fingerprint (SHA-256):** `353d99868c8c09edfab212e49f127585a6cbe1a24d6ee8fe584169adcded2961`

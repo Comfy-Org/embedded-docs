@@ -19,4 +19,4 @@ The LatentConcat node combines two latent samples by joining them together along
 | `output` | LATENT | The concatenated latent samples resulting from combining the two input samples along the specified dimension |
 
 ---
-**Source fingerprint (SHA-256):** `46514ef85887279ec577ad88ac46f1c20f428903ee63b076888d7d5df09fde77`
+**Source fingerprint (SHA-256):** `82cc2d659cd7c3d35ad20eee6fc63a7574e7367397618c0bdf3e82924372dff7`

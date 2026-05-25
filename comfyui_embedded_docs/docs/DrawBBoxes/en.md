@@ -13,6 +13,7 @@ The DrawBBoxes node visualizes object detection results by drawing bounding boxe
 *   The `bboxes` input is required and must be provided.
 *   The node automatically handles different input formats for `bboxes`. A single dictionary will be applied to all images in the batch. A flat list of dictionaries will be treated as the same set of detections for every image. A list of lists allows you to specify different detections for each image in the batch.
 *   If an `image` is not provided, the node will create a blank image with dimensions large enough to fit all provided bounding boxes, with a default minimum size of 640x640.
+*   The `label` field in each bounding box dictionary is matched against the COCO dataset classes. If the label is not a recognized COCO class, it will be ignored and no text label will be drawn for that box.
 
 ## Outputs
 
@@ -21,4 +22,4 @@ The DrawBBoxes node visualizes object detection results by drawing bounding boxe
 | `out_image` | IMAGE | The output image(s) with the drawn bounding boxes, labels, and confidence scores overlaid. |
 
 ---
-**Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`
+**Source fingerprint (SHA-256):** `ce5da10ec83e579515d70b7184fc78dfa04df4c514faccdcb75130212f56c84f`

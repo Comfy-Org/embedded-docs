@@ -25,4 +25,4 @@ The HunyuanVideo15SuperResolution node prepares conditioning data for a video su
 | `latent` | LATENT | The input latent is passed through unchanged. |
 
 ---
-**Source fingerprint (SHA-256):** `f913327a81d034997fa8a485ca4b3691f75ba1d3c5c6e2e73ab107021b58a52a`
+**Source fingerprint (SHA-256):** `12bb48e731a265f806e5961950b3fc9c64e30148785e443a40c8d9f3ad9484e4`

@@ -35,4 +35,4 @@ The Meshy: Image to Model node uses the Meshy API to generate a 3D model from a 
 | `FBX` | FILE3DFBX | The generated 3D model in the FBX file format. |
 
 ---
-**Source fingerprint (SHA-256):** `134d9250d8b447bbbd2905f827e81b67f491ba355ebb93d4d256324b644100a2`
+**Source fingerprint (SHA-256):** `87825d9d78ccfb1efdf07da0e9c8cfca39a8446dd99d346c732e4d1470194205`

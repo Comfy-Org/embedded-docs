@@ -23,4 +23,4 @@ The Kling Camera Controls node allows you to configure various camera movement a
 | `camera_control` | CAMERA_CONTROL | Returns the configured camera control settings for use in video generation |
 
 ---
-**Source fingerprint (SHA-256):** `4e1d826518ae17afd2c0aa22ebf6cce67b3ef33bb1730f0ce5ead5b9431cd548`
+**Source fingerprint (SHA-256):** `35bc9a47bb58f847e73b87156d099e821bd791546f6126dc78e47c5494a7851c`

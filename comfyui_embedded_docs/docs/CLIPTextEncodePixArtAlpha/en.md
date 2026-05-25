@@ -18,4 +18,4 @@ Encodes text and sets the resolution conditioning for PixArt Alpha. This node pr
 | `CONDITIONING` | CONDITIONING | Encoded conditioning data with text tokens and resolution information |
 
 ---
-**Source fingerprint (SHA-256):** `d15df3c7bcca10ec85f0689d6631a6b89aa89e609193c36b658b1bc97f90ee9a`
+**Source fingerprint (SHA-256):** `d2ed9de57b9b9579162687e1ffaf859e18a0585bbe75888496a42772337b6746`

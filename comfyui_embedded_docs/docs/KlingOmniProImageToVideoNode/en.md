@@ -31,4 +31,4 @@ This node uses the Kling AI model to generate a video based on a text prompt and
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `80f4568be81b23c75bfff2bd3f21a61b242563c3c9fb1985a03e76ace24dceb2`
+**Source fingerprint (SHA-256):** `e1fe0433a604fbc071fdd426121a1f4ff10bb0aa6d3eb2d702306b7206dae4c0`

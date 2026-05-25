@@ -31,4 +31,4 @@ This node uses the Magnific AI service to upscale and creatively enhance an imag
 | `image` | IMAGE | The creatively enhanced and upscaled output image. |
 
 ---
-**Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`
+**Source fingerprint (SHA-256):** `3eb5ce7887ba67a3a49d06820851df90d1c1c73f28ded62288054154bcb2d7e8`

@@ -20,7 +20,7 @@ The WanSCAILToVideo node prepares conditioning and an empty latent space for vid
 | `pose_start` | FLOAT | Yes | 0.0 to 1.0 | Start step to use pose conditioning (default: 0.0). |
 | `pose_end` | FLOAT | Yes | 0.0 to 1.0 | End step to use pose conditioning (default: 1.0). |
 
-**Note:** The `pose_video` input is processed only for the first `length` frames. The `reference_image` is processed only for the first image in the batch. When `reference_image` is provided, a zero-filled latent of the same size is used for the negative conditioning. When `clip_vision_output` is provided, it is applied to both positive and negative conditioning.
+**Note:** The `pose_video` input is processed only for the first `length` frames. The `reference_image` is processed only for the first image in the batch. When `reference_image` is provided, a zero-filled latent of the same size is used for the negative conditioning. When `clip_vision_output` is provided, it is applied to both positive and negative conditioning. The `pose_video` is downscaled to half the resolution of the main video before encoding.
 
 ## Outputs
 
@@ -31,4 +31,4 @@ The WanSCAILToVideo node prepares conditioning and an empty latent space for vid
 | `latent` | LATENT | An empty latent tensor of shape `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. |
 
 ---
-**Source fingerprint (SHA-256):** `63de4b6fe41fc23ea81c21965a2dbfc82120bb1bad6785b2130af824e015fbcb`
+**Source fingerprint (SHA-256):** `01c0912474602c33fa0c3e277db90e0eb83edbcea307a860921bab486d267cc8`

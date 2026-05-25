@@ -29,4 +29,4 @@ The WanFirstLastFrameToVideo node creates video conditioning by combining start 
 | `latent` | LATENT | Empty latent tensor with dimensions matching the specified video parameters |
 
 ---
-**Source fingerprint (SHA-256):** `8cfca692fc4975bb5238ce749d2102fad4b6cd84e96ef74c3eff2b297ee60c3c`
+**Source fingerprint (SHA-256):** `c9017cbed8d90e0c22a27c035784396fe1fa1551d586e2ec148e0621228162c0`

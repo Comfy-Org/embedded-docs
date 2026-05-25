@@ -21,4 +21,4 @@ The Vidu2 Text-to-Video Generation node creates a video from a text description.
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `1e9e3629806e9b5a66d8f830d8ec33ef208a7a27b53caf43b44f7b746a85014b`
+**Source fingerprint (SHA-256):** `eec93de5d781474f919001a4d78525d80478852424506fae245f445d1ef3b0ee`

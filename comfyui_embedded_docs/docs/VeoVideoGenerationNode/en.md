@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VeoVideoGenerationNode/en.md)
 
-Generates videos from text prompts using Google's Veo 2 API. This node can create videos from text descriptions and optional image inputs, with control over parameters like aspect ratio, duration, and more.
+Generates videos from text prompts using Google's Veo API. This node can create videos from text descriptions and optional image inputs, with control over parameters like aspect ratio, duration, and more.
 
 ## Inputs
 
@@ -14,9 +14,9 @@ Generates videos from text prompts using Google's Veo 2 API. This node can creat
 | `person_generation` | COMBO | No | "ALLOW"<br>"BLOCK" | Whether to allow generating people in the video (default: "ALLOW"). This is an advanced parameter. |
 | `seed` | INT | No | 0-4294967295 | Seed for video generation (0 for random) (default: 0). This is an advanced parameter. |
 | `image` | IMAGE | No | - | Optional reference image to guide video generation |
-| `model` | COMBO | No | "veo-2.0-generate-001" | Veo 2 model to use for video generation (default: "veo-2.0-generate-001") |
+| `model` | COMBO | No | "veo-2.0-generate-001"<br>"veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | Veo model to use for video generation (default: "veo-2.0-generate-001") |
 
-**Note:** The `generate_audio` parameter is only available for Veo 3.0 models and is automatically handled by the node based on the selected model. When using Veo 3.0 models, the `enhance_prompt` parameter is forced to True.
+**Note:** The `generate_audio` parameter is only available for Veo 3.0 and Veo 3.1 models and is automatically handled by the node based on the selected model. When using Veo 3.0 or Veo 3.1 models, the `enhance_prompt` parameter is forced to True.
 
 ## Outputs
 
@@ -25,4 +25,4 @@ Generates videos from text prompts using Google's Veo 2 API. This node can creat
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `1a8b8ffe82fce32566815248f4a2434a1b865b5e5651935ccb3b92c7e38adee9`
+**Source fingerprint (SHA-256):** `abb403ceddb16511988e4ac98ae126c7d6de3bf2f25789189fc05d72f475ca95`

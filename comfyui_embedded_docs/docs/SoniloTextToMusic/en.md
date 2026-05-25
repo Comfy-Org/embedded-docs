@@ -19,4 +19,4 @@ The Sonilo Text to Music node generates music from a text description using Soni
 | `audio` | AUDIO | The generated music as an audio file. |
 
 ---
-**Source fingerprint (SHA-256):** `aac2762d9310179279ed7dcc9766f38342400902de2f8791b78d8092a96b86b4`
+**Source fingerprint (SHA-256):** `3c94a2f1004d01d410be089e5dbb926246cca38fdadadee0597c1843ba53883c`

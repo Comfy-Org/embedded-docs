@@ -21,4 +21,4 @@ Simple version of the SkipLayerGuidanceDiT node that only modifies the unconditi
 | `model` | MODEL | The modified model with skip layer guidance applied to the specified layers |
 
 ---
-**Source fingerprint (SHA-256):** `6795a67a63d9aa8b2adea3d96e49272d88c21d0642bb507e175a2fcf3a125f98`
+**Source fingerprint (SHA-256):** `f153348d75cf3b52d7d7d541f7467e51c797e1fe5844516591db7a191415cdb2`

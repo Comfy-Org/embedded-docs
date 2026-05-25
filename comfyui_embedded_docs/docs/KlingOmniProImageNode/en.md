@@ -7,7 +7,7 @@ The Kling Omni Image (Pro) node creates or edits images using the latest Kling A
 | Parameter | Data Type | Required | Range | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `model_name` | COMBO | Yes | `"kling-v3-omni"`<br>`"kling-image-o1"` | The specific Kling AI model to use for image generation. |
-| `prompt` | STRING | Yes | - | A text prompt describing the image content. This can include both positive and negative descriptions. The text must be between 1 and 2500 characters long. |
+| `prompt` | STRING | Yes | - | A text prompt describing the image content. This can include both positive and negative descriptions. The text must be between 1 and 2500 characters long. You can use `@image`, `@image1`, `@image2`, etc. or `@video`, `@video1`, `@video2`, etc. to reference uploaded images or videos in the prompt. |
 | `resolution` | COMBO | Yes | `"1K"`<br>`"2K"`<br>`"4K"` | The target resolution for the generated image. Note: 4K resolution is not supported for the `kling-image-o1` model. |
 | `aspect_ratio` | COMBO | Yes | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"3:2"`<br>`"2:3"`<br>`"21:9"` | The desired aspect ratio (width to height) for the generated image. |
 | `series_amount` | COMBO | Yes | `"disabled"`<br>`"2"`<br>`"3"`<br>`"4"`<br>`"5"`<br>`"6"`<br>`"7"`<br>`"8"`<br>`"9"` | Generate a series of images. This feature is not supported for the `kling-image-o1` model. (default: "disabled") |
@@ -21,4 +21,4 @@ The Kling Omni Image (Pro) node creates or edits images using the latest Kling A
 | `image` | IMAGE | The final image(s) generated or edited by the Kling AI model. If a series was requested, multiple images are returned as a batch. |
 
 ---
-**Source fingerprint (SHA-256):** `7bbed260436bc60e284c99e091cd28b2b0cf50e98e876f94278f1ac2834e61f8`
+**Source fingerprint (SHA-256):** `b1d25806bc3b8eaa5ee8677a32b1f1f45189b800a2bfe1664635eaa851c34032`

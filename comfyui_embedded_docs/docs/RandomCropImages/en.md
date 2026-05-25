@@ -20,4 +20,4 @@ The Random Crop Images node randomly selects a rectangular section from each inp
 | `image` | IMAGE | The resulting image after the random crop has been applied. |
 
 ---
-**Source fingerprint (SHA-256):** `bc4aca8cc63bde28fee906a92463b73436ba48ba69d7c1ff13881ac900e252a8`
+**Source fingerprint (SHA-256):** `8452a07a1cf66a520fb482f5239df3f33cfe3a77a28e289894ccd1d2544ecf40`

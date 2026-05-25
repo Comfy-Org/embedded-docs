@@ -17,4 +17,4 @@ This node applies Temporal Score Rescaling (TSR) to a diffusion model. It modifi
 | `patched_model` | MODEL | The input model, now patched with the Temporal Score Rescaling function applied to its sampling process. |
 
 ---
-**Source fingerprint (SHA-256):** `2931b42ac93cf50e2c395bacf3128bb43dcc043ab5c8f86d7aabe4d35a44d20a`
+**Source fingerprint (SHA-256):** `c558da8dea80131f705f3217740c4f9df3c9a7a6695e2c089f5798a726730bb8`

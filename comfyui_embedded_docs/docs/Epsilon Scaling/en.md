@@ -16,4 +16,4 @@ This node implements the Epsilon Scaling method from the research paper "Elucida
 | `model` | MODEL | A patched version of the input model with the epsilon scaling function applied to its sampling process. |
 
 ---
-**Source fingerprint (SHA-256):** `85c464ce0b2ec2a031a01d9eef5d50fd300be3012499cc061705fb7964110882`
+**Source fingerprint (SHA-256):** `245d230ec2db7298493d4fbe58c3d96c15821985da3dc12aaccf64e2bf7922a1`

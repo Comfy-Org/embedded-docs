@@ -24,4 +24,4 @@ This node uses the Kling 3.0 model to generate a video. It creates the video bas
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `5c904fec35b2bb41cf521263b1b06fd36ba227400b4cec24e79a4e80618e4bae`
+**Source fingerprint (SHA-256):** `def99b6a37962b5a28be1025ce41ae50bf7b90246c50894fcf3419365f807b2f`

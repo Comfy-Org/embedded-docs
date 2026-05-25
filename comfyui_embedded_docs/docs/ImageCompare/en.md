@@ -17,4 +17,4 @@ The Image Compare node provides a visual interface to compare two images side-by
 This node is an output node and does not produce any data outputs for use in other nodes. Its function is to display the provided images in the ComfyUI interface.
 
 ---
-**Source fingerprint (SHA-256):** `2bc980cd20aad3cf60300868599bbce8eaba1cdb21880d2b3f4cd628108d8139`
+**Source fingerprint (SHA-256):** `78dc2addde0b1b867303b5f534c09b60342a3d94d829d314c71b29ce7707648e`

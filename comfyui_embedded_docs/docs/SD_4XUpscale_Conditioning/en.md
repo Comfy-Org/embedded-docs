@@ -21,4 +21,4 @@ The SD_4XUpscale_Conditioning node prepares conditioning data for upscaling imag
 | `latent` | LATENT | Empty latent representation matching the upscaled dimensions |
 
 ---
-**Source fingerprint (SHA-256):** `ede1ea8f5a95e7f9e52070b5132a4ed3e87f92230d14a74b9d713f547c74d785`
+**Source fingerprint (SHA-256):** `06e8e451cc939019e1d7213ab24ff1e4a9937540733194d66edbc5d32d352e16`

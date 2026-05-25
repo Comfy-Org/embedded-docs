@@ -35,4 +35,4 @@ The TripoConversionNode converts 3D models between different file formats using 
 | *No named outputs* | - | This node processes the conversion asynchronously and returns the result through the Tripo API system |
 
 ---
-**Source fingerprint (SHA-256):** `b11ecab98701b7153a350f5e4980ddc2f446c0a12be3402ca98a5e6de60bd7ce`
+**Source fingerprint (SHA-256):** `7542fd7ee2307b06e5caa78ce427140fbcb56e8ea383ce327828040330ea1b01`

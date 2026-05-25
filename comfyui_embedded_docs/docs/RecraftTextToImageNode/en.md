@@ -18,6 +18,8 @@ Generates images synchronously based on prompt and resolution. This node connect
 
 **Note:** The `prompt` parameter must be between 1 and 1000 characters in length.
 
+**Note:** If you use a `style_id` from the Infinite Style Library, ensure it is not a Vector art style, as this will return SVG data instead of an image and cause an error.
+
 ## Outputs
 
 | Output Name | Data Type | Description |
@@ -25,4 +27,4 @@ Generates images synchronously based on prompt and resolution. This node connect
 | `IMAGE` | IMAGE | The generated image(s) as a batched tensor output. When multiple images are generated (n > 1), they are concatenated along the batch dimension. |
 
 ---
-**Source fingerprint (SHA-256):** `28c510ccfad13ddb50700b465af14deaa3c7c1f8597fef048d89094fd24fcd7d`
+**Source fingerprint (SHA-256):** `946010fbb6a5b99eed11e74de0733f64a270fa62910acf942749c76e0b5448f3`

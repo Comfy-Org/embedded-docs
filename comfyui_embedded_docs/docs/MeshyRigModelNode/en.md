@@ -22,4 +22,4 @@ The Meshy: Rig Model node takes a 3D model from a previous Meshy task and automa
 | `FBX` | FILE3DFBX | The rigged 3D character model saved in the FBX file format. |
 
 ---
-**Source fingerprint (SHA-256):** `91e06e3465d3d309d2267ae307ec5a704af3903b7a6d7fb6011217dd58a63973`
+**Source fingerprint (SHA-256):** `de47454600293b647fd6e244ad7e53de66169bb0d2b65df517a85bc6bc3ee6e0`

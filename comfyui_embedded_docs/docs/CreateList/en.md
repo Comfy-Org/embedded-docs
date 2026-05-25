@@ -6,7 +6,7 @@ The Create List node combines multiple inputs into a single, sequential list. It
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `input_*` | Varies | Yes | Any | A variable number of input slots. You can add more inputs by clicking the plus (+) icon. All inputs must be of the same data type (e.g., all IMAGE or all STRING). |
+| `inputs` | Varies | Yes | Any | A variable number of input slots. You can add more inputs by clicking the plus (+) icon. All inputs must be of the same data type (e.g., all IMAGE or all STRING). |
 
 **Note:** The node will automatically create new input slots as you connect items. All connected inputs must share the same data type for the node to function correctly.
 
@@ -17,4 +17,4 @@ The Create List node combines multiple inputs into a single, sequential list. It
 | `list` | Varies | A single list containing all the items from the connected inputs, concatenated in the order they were provided. The output data type matches the input data type. |
 
 ---
-**Source fingerprint (SHA-256):** `d0e10c4d1186e694a72b18407c34cc1df74f77d02c989b507af75594c1a0794e`
+**Source fingerprint (SHA-256):** `54a099948853f76f4f9c9918e4fef8a8eff96ad66d35ab9eeefd2a419670e867`

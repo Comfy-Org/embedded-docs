@@ -19,4 +19,4 @@ The FreeU node applies frequency-domain modifications to a model's output blocks
 | `model` | MODEL | The modified model with FreeU patches applied |
 
 ---
-**Source fingerprint (SHA-256):** `449a02a4bb5b42eb37fab394bcdc6375e08e369961d633618211ebc5f737ab51`
+**Source fingerprint (SHA-256):** `a0f0b165638aa9e88ea415fc966bdac9bfbc13e9a5dcebc9780b31b63ce91f5c`

@@ -28,4 +28,4 @@ The StableZero123_Conditioning_Batched node processes an input image and generat
 | `latent` | LATENT | The latent representation of the processed image with batch indexing information |
 
 ---
-**Source fingerprint (SHA-256):** `2b770f7a168a0d3e33da8bfa63383080709fa5d53846dbf6a4374bd1ef1746aa`
+**Source fingerprint (SHA-256):** `fb181f43076087cb040db9404a42e27a39ac7eac7af3da283b3e040342374c74`

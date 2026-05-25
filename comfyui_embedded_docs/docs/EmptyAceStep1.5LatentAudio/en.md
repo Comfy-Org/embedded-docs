@@ -13,7 +13,7 @@ The Empty Ace Step 1.5 Latent Audio node creates an empty latent tensor designed
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `LATENT` | LATENT | An empty latent tensor representing silent audio, with a type identifier of "audio". |
+| `LATENT` | LATENT | An empty latent tensor representing silent audio, with a type identifier of "audio". The output also includes a `downscale_ratio_temporal` value of 1764, which is used for temporal downscaling in audio processing. |
 
 ---
-**Source fingerprint (SHA-256):** `8d2b0b8ea110362d5e43a72a27df0ff2012a8577fbaa4fef2bd7905c9c64bd6a`
+**Source fingerprint (SHA-256):** `dc87da02daa14d19afb0a1b421ee87fdcaf53d5a1e5f5175bfcc8e9fbcd7fa48`

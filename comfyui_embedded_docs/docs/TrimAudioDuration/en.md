@@ -10,7 +10,7 @@ The TrimAudioDuration node allows you to cut a specific time segment from an aud
 | `start_index` | FLOAT | Yes | -0xffffffffffffffff to 0xffffffffffffffff | Start time in seconds, can be negative to count from the end (supports sub-seconds). Default: 0.0 |
 | `duration` | FLOAT | Yes | 0.0 to 0xffffffffffffffff | Duration in seconds. Default: 60.0 |
 
-**Note:** The start time must be less than the end time and within the audio length. Negative start values count backwards from the end of the audio. If the start time is negative, it is converted to a frame position counting from the end of the audio. The start and end frames are clamped to the audio boundaries.
+**Note:** The start time must be less than the end time and within the audio length. Negative start values count backwards from the end of the audio. If the start time is negative, it is converted to a frame position counting from the end of the audio. The start and end frames are clamped to the audio boundaries. If the start time equals or exceeds the end time, the node will raise an error.
 
 ## Outputs
 
@@ -19,4 +19,4 @@ The TrimAudioDuration node allows you to cut a specific time segment from an aud
 | `audio` | AUDIO | The trimmed audio segment with the specified start time and duration |
 
 ---
-**Source fingerprint (SHA-256):** `695a9fe11fa086a317f94823e066688705e9f911cd6cfc5857596ff31dd539ed`
+**Source fingerprint (SHA-256):** `4f8c9f966fec8c1d1a1a2bb531014fe7460d61abbafdc367adb667a5044752ef`

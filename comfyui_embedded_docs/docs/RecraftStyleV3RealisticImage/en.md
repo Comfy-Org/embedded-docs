@@ -15,4 +15,4 @@ This node creates a style configuration for generating realistic images using Re
 | `recraft_style` | STYLEV3 | A Recraft style configuration object containing the `realistic_image` style and the selected substyle settings. This output can be connected to other Recraft nodes that accept a style input. |
 
 ---
-**Source fingerprint (SHA-256):** `23eafae0a00f1806052a6583db791a5c1fd418ea940ed6463824dffe843ed0d7`
+**Source fingerprint (SHA-256):** `967e52e32456299da342a3d87f46f180f17aa1505cb2a3d22ee5f50cda79e8e3`

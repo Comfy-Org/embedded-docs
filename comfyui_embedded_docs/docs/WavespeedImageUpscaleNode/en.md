@@ -7,7 +7,7 @@ The WaveSpeed Image Upscale node uses an external AI service to increase the res
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `model` | STRING | Yes | `"SeedVR2"`<br>`"Ultimate"` | The AI model to use for upscaling. "SeedVR2" and "Ultimate" offer different quality and pricing tiers. |
-| `image` | IMAGE | Yes | | The input image to be upscaled. |
+| `image` | IMAGE | Yes | | The input image to be upscaled. Exactly one image is required. |
 | `target_resolution` | STRING | Yes | `"2K"`<br>`"4K"`<br>`"8K"` | The desired output resolution for the upscaled image. |
 
 **Note:** This node requires exactly one input image. Providing a batch of images will result in an error.
@@ -19,4 +19,4 @@ The WaveSpeed Image Upscale node uses an external AI service to increase the res
 | `image` | IMAGE | The upscaled, high-resolution output image. |
 
 ---
-**Source fingerprint (SHA-256):** `b14056f981f6e34c67d8126391acc11878f92f5f406559afbac803c86da42bcc`
+**Source fingerprint (SHA-256):** `9ed5a897cf067a9dbf8bee95f44cfc02c98349b1520e0f42d5f52c120d248014`

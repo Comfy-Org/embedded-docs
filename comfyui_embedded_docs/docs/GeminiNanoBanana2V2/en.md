@@ -9,12 +9,12 @@ This node generates or edits images by sending a text prompt to Google's Vertex 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
 | `prompt` | STRING | Yes | N/A | Text prompt describing the image to generate or the edits to apply. Include any constraints, styles, or details the model should follow. |
-| `model` | COMBO | Yes | `"Nano Banana 2 (Gemini 3.1 Flash Image)"` | Selects the Gemini model to use for image generation. Currently only one option is available. |
+| `model` | COMBO | Yes | `"Nano Banana 2 (Gemini 3.1 Flash Image)"` | Selects the Gemini model to use for image generation. Currently only one option is available. This parameter includes additional sub-parameters for resolution, aspect ratio, thinking level, and image input. |
 | `seed` | INT | Yes | 0 to 18446744073709551615 | When the seed is fixed to a specific value, the model makes a best effort to provide the same response for repeated requests. Deterministic output isn't guaranteed. Also, changing the model or parameter settings, such as the temperature, can cause variations in the response even when you use the same seed value. By default, a random seed value is used. (default: 42) |
 | `response_modalities` | COMBO | Yes | `"IMAGE"`<br>`"IMAGE+TEXT"` | Determines the format of the response. Choose "IMAGE" to receive only an image, or "IMAGE+TEXT" to receive both an image and a text description. (default: "IMAGE") |
-| `system_prompt` | STRING | No | N/A | Foundational instructions that dictate an AI's behavior. This is an advanced parameter. |
+| `system_prompt` | STRING | No | N/A | Foundational instructions that dictate an AI's behavior. This is an advanced parameter. (default: A pre-defined system prompt instructing the model to always produce an image) |
 
-**Note on `model` parameter:** The `model` parameter is a dynamic combo that includes additional sub-parameters for resolution, aspect ratio, and thinking level. These sub-parameters are defined within the model selection and are not listed as separate inputs in this table.
+**Note on `model` parameter:** The `model` parameter is a dynamic combo that includes additional sub-parameters for resolution, aspect ratio, thinking level, and image input. These sub-parameters are defined within the model selection and are not listed as separate inputs in this table.
 
 **Note on image input:** You can provide up to 14 images as input to the model. These images are passed through the `model` parameter's image sub-field and are used for editing or as visual context for generation.
 
@@ -27,4 +27,4 @@ This node generates or edits images by sending a text prompt to Google's Vertex 
 | `thought_image` | IMAGE | First image from the model's thinking process. Only available with thinking_level HIGH and IMAGE+TEXT modality. |
 
 ---
-**Source fingerprint (SHA-256):** `6b91afcdd12e08ff0e3afdbb5596bfd63463cda4d2b031019dedf03bd122fa87`
+**Source fingerprint (SHA-256):** `0b9af4e937874f2e192f3dc0b67f8e769b37d6595fbddb7a326b1f13e3e444d3`

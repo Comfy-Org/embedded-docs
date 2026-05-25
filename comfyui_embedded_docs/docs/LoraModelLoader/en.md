@@ -20,4 +20,4 @@ The LoraModelLoader node applies trained LoRA (Low-Rank Adaptation) weights to a
 | `model` | MODEL | The modified diffusion model with LoRA weights applied. |
 
 ---
-**Source fingerprint (SHA-256):** `82afa7dbbc990f1a9f202f920aaf8fad7fe69dc35e75ed8a95eb63c9dec74961`
+**Source fingerprint (SHA-256):** `dbb0852d4f40ded8a4490244634e13eeb367e5573b664a0f7e37213364793413`

@@ -21,4 +21,4 @@ The Quiver Text to SVG node generates a Scalable Vector Graphic (SVG) image from
 | `SVG` | SVG | The generated Scalable Vector Graphic (SVG) image. |
 
 ---
-**Source fingerprint (SHA-256):** `634758797a59e5a409424deee808e1d8b5b5852a86eac4bccd7f2634a19fb743`
+**Source fingerprint (SHA-256):** `dd5edd1be1c3cfd4b651896a1b020da7005f72097e0dcf09b947be0b771b8756`

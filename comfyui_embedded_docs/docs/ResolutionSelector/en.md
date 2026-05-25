@@ -6,7 +6,7 @@ The Resolution Selector node calculates the pixel width and height for an image 
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `aspect_ratio` | COMBO | Yes | `"SQUARE"`<br>`"PORTRAIT_2_3"`<br>`"PORTRAIT_3_4"`<br>`"PORTRAIT_9_16"`<br>`"LANDSCAPE_3_2"`<br>`"LANDSCAPE_4_3"`<br>`"LANDSCAPE_16_9"` | The aspect ratio for the output dimensions (default: `"SQUARE"`). |
+| `aspect_ratio` | COMBO | Yes | `"1:1 (Square)"`<br>`"3:2 (Photo)"`<br>`"4:3 (Standard)"`<br>`"16:9 (Widescreen)"`<br>`"21:9 (Ultrawide)"`<br>`"2:3 (Portrait Photo)"`<br>`"3:4 (Portrait Standard)"`<br>`"9:16 (Portrait Widescreen)"` | The aspect ratio for the output dimensions (default: `"1:1 (Square)"`). |
 | `megapixels` | FLOAT | Yes | 0.1 - 16.0 | Target total megapixels. 1.0 MP ≈ 1024×1024 for a square aspect ratio (default: 1.0). |
 
 ## Outputs
@@ -17,4 +17,4 @@ The Resolution Selector node calculates the pixel width and height for an image 
 | `height` | INT | The calculated height in pixels, which is a multiple of 8. |
 
 ---
-**Source fingerprint (SHA-256):** `221d38fa72c9989e06b706d33fd3e0dc4caa0f741dd2931864c58a6bd7f52613`
+**Source fingerprint (SHA-256):** `7b27f0ffaaa1740a6371e53f10fa6a0ead3237ecec656b9148a2ecd11de7aaa5`

@@ -18,4 +18,4 @@ The FreSca node applies frequency-dependent scaling to the guidance during the s
 | `model` | MODEL | The modified model with frequency-dependent scaling applied to its guidance function |
 
 ---
-**Source fingerprint (SHA-256):** `254a28847e082739f80c9637d9657ef618d40db1862b6856c1cda22436438ded`
+**Source fingerprint (SHA-256):** `2ff3517619d856db68a9091ae7c87af8c56a23420fa2176b089bf9700475a7a9`

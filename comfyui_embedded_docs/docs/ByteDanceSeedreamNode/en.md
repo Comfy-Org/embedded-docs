@@ -6,9 +6,9 @@ The ByteDance Seedream 4.5 & 5.0 node provides unified text-to-image generation 
 
 | Parameter | Data Type | Required | Range | Description |
 |-----------|-----------|----------|-------|-------------|
-| `model` | STRING | Yes | See Description | The Seedream model to use for generation. Available models include seedream-4-0, seedream-4-5, and seedream-5-0 variants. |
+| `model` | STRING | Yes | "seedream 5.0 lite"<br>"seedream-4-5-251128"<br>"seedream-4-0-250828" | The Seedream model to use for generation. |
 | `prompt` | STRING | Yes | - | Text prompt for creating or editing an image. Must be at least 1 character long. |
-| `image` | IMAGE | No | - | Input image(s) for image-to-image generation. Reference image(s) for single or multi-reference generation. Maximum of 10 reference images for most models, or 14 for seedream-5-0-260128. |
+| `image` | IMAGE | No | - | Input image(s) for image-to-image generation. Reference image(s) for single or multi-reference generation. Maximum of 14 reference images for seedream-5-0-260128, or 10 for other models. |
 | `size_preset` | STRING | No | Multiple options available | Pick a recommended size. Select Custom to use the width and height below. Default: first preset from RECOMMENDED_PRESETS_SEEDREAM_4. |
 | `width` | INT | No | 1024 to 6240 (step 2) | Custom width for image. Value is working only if `size_preset` is set to `Custom`. Default: 2048. |
 | `height` | INT | No | 1024 to 4992 (step 2) | Custom height for image. Value is working only if `size_preset` is set to `Custom`. Default: 2048. |
@@ -32,4 +32,4 @@ The ByteDance Seedream 4.5 & 5.0 node provides unified text-to-image generation 
 | `IMAGE` | IMAGE | Generated image(s) based on the input parameters and prompt. Returns a single image tensor or a batch of image tensors if multiple images are generated. |
 
 ---
-**Source fingerprint (SHA-256):** `ce130246026e0f5036e137bea4e193f51097e0812459586dcbeb87ef01975630`
+**Source fingerprint (SHA-256):** `daddffc265ab7b24746337825239c25b633a923804b6e5ad11149aea15772a7f`

@@ -26,4 +26,4 @@ This node uses ByteDance's Seedance 2.0 model to generate a video. It creates th
 | `output` | VIDEO | The generated video. |
 
 ---
-**Source fingerprint (SHA-256):** `2c9c1fe8fddd0c3e1c356d2b93a06a07f83db8f7a0380e94629a91ce1ff1e29a`
+**Source fingerprint (SHA-256):** `434d6ad8f005515677b0de73b57df916aa589adff94aad892827202e6ebcb6e1`

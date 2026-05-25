@@ -21,4 +21,4 @@ Kling Text to Video Camera Control Node transforms text into cinematic videos wi
 | `duration` | STRING | The duration of the generated video |
 
 ---
-**Source fingerprint (SHA-256):** `4ebdd6af31f9e5c0816c4bcba886179b3f7d2b5030ff4fa3ddad6df25c528af7`
+**Source fingerprint (SHA-256):** `c2e6ea8f136d3bb82d6627b3362a8a4dfb9cb0414f6d846e5283e49a0ba6d357`

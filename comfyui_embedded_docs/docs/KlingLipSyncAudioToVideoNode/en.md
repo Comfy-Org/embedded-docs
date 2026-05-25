@@ -28,4 +28,4 @@ Kling Lip Sync Audio to Video Node synchronizes mouth movements in a video file 
 | `duration` | STRING | The duration of the processed video |
 
 ---
-**Source fingerprint (SHA-256):** `92b8a7a4f9508632155a5f69707ffc4a14f2f44c04e4d01bf46476a972465592`
+**Source fingerprint (SHA-256):** `bc6dcc5a1e3b873edc0c65cc156bb622992866920a4975a308d8cdb8a3c0e71a`

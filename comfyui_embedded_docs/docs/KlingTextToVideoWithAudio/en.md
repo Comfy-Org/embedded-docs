@@ -20,4 +20,4 @@ The Kling Text to Video with Audio node generates a short video from a text desc
 | `output` | VIDEO | The generated video file. |
 
 ---
-**Source fingerprint (SHA-256):** `eff4549816c347a090e2f6e8ae8ba832bd2c5b7aef7c729b51c9d72b7a814d5a`
+**Source fingerprint (SHA-256):** `60c76cc66b02552cfbf63dda35e8422349c0b6989ca07631d2d8321bb5686cca`

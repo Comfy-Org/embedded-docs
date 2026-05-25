@@ -18,4 +18,4 @@ The Join Audio Channels node combines two separate mono audio inputs into a sing
 | `audio` | AUDIO | The resulting stereo audio, containing the joined left and right channels. |
 
 ---
-**Source fingerprint (SHA-256):** `6dced8c2288fb8f214e04b621ed3ab934231983d7987ff08aa43da6814331be0`
+**Source fingerprint (SHA-256):** `8a68e59e0d037882e9dd87d93b38673a0de3072bab2c574c7a9750de93b50a68`

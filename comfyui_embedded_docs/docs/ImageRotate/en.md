@@ -16,4 +16,4 @@ The ImageRotate node rotates an input image by specified angles. It supports fou
 | `image` | IMAGE | The rotated output image |
 
 ---
-**Source fingerprint (SHA-256):** `068946b31ebe87b2524a1e628b5bc0a3da7367d7252fa7afafe96bcbb174747d`
+**Source fingerprint (SHA-256):** `1de36d9e42e64fe80cc13dd7da96bd946f02ba78d81317f073cf54c4e5bd12f7`

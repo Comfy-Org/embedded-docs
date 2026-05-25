@@ -23,4 +23,4 @@ The CosmosImageToVideoLatent node creates video latent representations from inpu
 | `latent` | LATENT | The generated video latent representation with optional encoded images and corresponding noise masks |
 
 ---
-**Source fingerprint (SHA-256):** `31ce4dc577c672e0b3dc0bfb6644b2ef7ab737f6c4ee5e0677973b6a4efdd66d`
+**Source fingerprint (SHA-256):** `4fefd1b6c38c93c260ef8376e8d69ba610a556b3c8555863016a1afd45885eaf`

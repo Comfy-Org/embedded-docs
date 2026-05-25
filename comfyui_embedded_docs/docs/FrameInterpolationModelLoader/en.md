@@ -17,4 +17,4 @@ This node loads a frame interpolation model from a file and prepares it for use 
 | `FRAME_INTERPOLATION_MODEL` | MODEL | The loaded and configured frame interpolation model, ready for use in other nodes. |
 
 ---
-**Source fingerprint (SHA-256):** `497c20d5123bcbfd321dc4a659250ce3e0903e55c3a0274d3ed45710d75573d9`
+**Source fingerprint (SHA-256):** `b39f0aee6e02fb4c7e7268289634cf4d061038512e87ca6bd00aede5660d8196`

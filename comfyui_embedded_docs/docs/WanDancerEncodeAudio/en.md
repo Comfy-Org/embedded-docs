@@ -20,4 +20,4 @@ This node processes an audio input to extract features that can be used to guide
 | `fps_string` | STRING | A text string describing the calculated frame rate (fps) based on the audio length and the number of video frames. This string is intended to be used in the prompt for the video model. |
 
 ---
-**Source fingerprint (SHA-256):** `ef230c92b23a04369708041b2e5d03c1b2928edf746dc43020bae777f9f0b589`
+**Source fingerprint (SHA-256):** `1318323b202ca26c920a860534062dc7f20e3b10d13eb9825a890e26b5fde731`

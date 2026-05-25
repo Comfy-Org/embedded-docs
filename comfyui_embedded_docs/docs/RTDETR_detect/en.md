@@ -19,4 +19,4 @@ The RT-DETR Detect node performs object detection on input images using an RT-DE
 | `bboxes` | BOUNDINGBOX | A list of bounding boxes for each input image. Each box contains coordinates (x, y, width, height), a class label, and a confidence score. |
 
 ---
-**Source fingerprint (SHA-256):** `0c32aa9e17b8ea81e52cb45df2a40f7c1faeb39fdf18dfc643d1d31ed0bfdefd`
+**Source fingerprint (SHA-256):** `2abc841cc439138bbd944a2e0f9dc5f76e373b158b3b5caed0d9dd405b7f3538`

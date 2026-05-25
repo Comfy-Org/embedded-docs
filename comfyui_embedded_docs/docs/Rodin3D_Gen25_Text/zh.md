@@ -1,0 +1,35 @@
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/zh.md)
+
+## 概述
+
+使用 Rodin Gen-2.5 API 从文本提示生成 3D 模型。您可以在不同的质量模式（快速、常规或极致高清）之间进行选择，以平衡生成速度和输出质量。
+
+## 输入
+
+| 参数 | 数据类型 | 是否必需 | 范围 | 描述 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | 是 | 最多 2500 个字符 | 描述您想要生成的 3D 模型的文本提示。 |
+| `mode` | COMBO | 是 | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` | 生成质量和速度模式。"Fast" 速度最快，"Extreme-High" 质量最高但耗时更长。 |
+| `material` | COMBO | 是 | `"PBR"`<br>`"Matte"`<br>`"Shiny"` | 生成 3D 模型的材质风格。 |
+| `geometry_file_format` | COMBO | 是 | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` | 输出 3D 模型的文件格式。 |
+| `texture_mode` | COMBO | 是 | `"None"`<br>`"Generated"`<br>`"Generated+HD"` | 纹理生成模式。"None" 不生成纹理，"Generated" 创建标准纹理，"Generated+HD" 创建高清纹理。 |
+| `seed` | INT | 是 | 0 到 2147483647 | 用于可重现结果的随机种子。使用相同的种子和相同的输入将产生相同的输出。 |
+| `TAPose` | BOOLEAN | 是 | True / False | 是否对生成的模型应用 T 姿势（双臂伸展）。 |
+| `hd_texture` | BOOLEAN | 是 | True / False | 是否为模型生成高清纹理。 |
+| `texture_delight` | BOOLEAN | 是 | True / False | 是否对模型应用纹理增强（提升纹理质量）。 |
+| `addon_highpack` | BOOLEAN | 是 | True / False | 是否在标准模型之外额外生成高多边形版本。 |
+| `bbox_width` | INT | 是 | 1 到 1000 | 边界框的宽度（世界单位）。 |
+| `bbox_height` | INT | 是 | 1 到 1000 | 边界框的高度（世界单位）。 |
+| `bbox_length` | INT | 是 | 1 到 1000 | 边界框的长度（世界单位）。 |
+| `height_cm` | INT | 是 | 1 到 300 | 生成模型的高度（厘米）。 |
+
+**注意：** `prompt` 参数长度必须在 1 到 2500 个字符之间。如果未指定，`seed` 参数默认为 0（随机）。
+
+## 输出
+
+| 输出名称 | 数据类型 | 描述 |
+|-------------|-----------|-------------|
+| `model_file` | FILE3DANY | 以指定格式生成的 3D 模型文件。 |
+
+---
+**Source fingerprint (SHA-256):** `79fbaf466e9af88cdfdac0f9136a2df17ba4bc2e5bb65a35b9ad2b1181da94db`

@@ -21,4 +21,4 @@ The Kling Dual Character Video Effect Node creates videos with special effects b
 | `duration` | STRING | The duration information of the generated video |
 
 ---
-**Source fingerprint (SHA-256):** `4ee0c3cd834e1c70e41b40b66ac98d15a8b88993e7dc9d9df9fb4fadb868f079`
+**Source fingerprint (SHA-256):** `995616159d0b61a5398ec93e847b04fed8133a28a37f597427f0335ca17920b9`

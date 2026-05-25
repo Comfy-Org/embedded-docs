@@ -25,4 +25,4 @@ This node generates images synchronously using Stability AI's Stable Diffusion 3
 | `image` | IMAGE | The generated or modified image. |
 
 ---
-**Source fingerprint (SHA-256):** `80dbb27f19bb3286ee988f020f7f65623a73d7cac77ca0cdfc7a428254102aa3`
+**Source fingerprint (SHA-256):** `aa071616da3ff645dfbc885c84706324d555c18772d3cc0d603b5699a0e7dfff`

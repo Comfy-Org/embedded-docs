@@ -12,7 +12,7 @@ The Painter node provides an interactive canvas for creating or editing images a
 | `height` | INT | Yes | 64 to 4096 | The height of the canvas in pixels, used when no base `image` is provided. The value must be a multiple of 64. Default is 512. |
 | `bg_color` | COLOR | Yes | - | The background color for the canvas, specified as a hex code (e.g., #000000). This is only used when no base `image` is provided. Default is black (#000000). |
 
-**Note:** The `mask` input is designed to work with the node's specialized UI widget. When you paint on the canvas, the widget automatically populates this value. The `width` and `height` inputs are hidden in the standard UI but define the canvas dimensions when creating a new image.
+**Note:** The `mask` input is designed to work with the node's specialized UI widget. When you paint on the canvas, the widget automatically populates this value. The `width` and `height` inputs are hidden in the standard UI but define the canvas dimensions when creating a new image. If a base `image` is provided, its dimensions override the `width` and `height` settings.
 
 ## Outputs
 
@@ -22,4 +22,4 @@ The Painter node provides an interactive canvas for creating or editing images a
 | `MASK` | MASK | The alpha channel (transparency) mask extracted from the painting. White areas represent the painted regions, and black areas represent the untouched background. |
 
 ---
-**Source fingerprint (SHA-256):** `ae926b6d30aab65737bd99a58cb7de5a71fa36e61a677dbc97fc30b8ef8d2418`
+**Source fingerprint (SHA-256):** `217a6d8abbad02cb43cab18d0a592bdd5bfbfe321a742d0c14e8f4e1fa5e2630`

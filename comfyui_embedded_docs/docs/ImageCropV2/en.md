@@ -1,6 +1,6 @@
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCropV2/en.md)
 
-The Image Crop node extracts a rectangular section from an input image. You define the region to keep by specifying its top-left corner coordinates and its width and height. The node then returns the cropped portion of the original image.
+The Crop Image node extracts a rectangular section from an input image. You define the region to keep by specifying its top-left corner coordinates and its width and height. The node then returns the cropped portion of the original image.
 
 ## Inputs
 
@@ -18,4 +18,4 @@ The Image Crop node extracts a rectangular section from an input image. You defi
 | `image` | IMAGE | The cropped section of the original input image. |
 
 ---
-**Source fingerprint (SHA-256):** `9d3543aa8396ae2ab0353accc3c89ae6be6495f6fdcefbb5439fa865a5d3059f`
+**Source fingerprint (SHA-256):** `c09c68a46c4b0418903a627b98dd848264d53b58bd3ffe99e40ef125b15b3aae`

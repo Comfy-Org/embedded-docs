@@ -13,7 +13,7 @@ The EmptyLatentAudio node creates an empty latent tensor for audio processing. I
 
 | Output Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `LATENT` | LATENT | Returns an empty latent tensor for audio processing with the specified duration and batch size. The tensor has a shape of [batch_size, 64, length], where length is calculated from the audio duration and sample rate. |
+| `LATENT` | LATENT | Returns an empty latent tensor for audio processing with the specified duration and batch size. The tensor has a shape of [batch_size, 64, length], where length is calculated from the audio duration and sample rate. The output also includes metadata indicating the type is "audio" and a temporal downscale ratio of 2048. |
 
 ---
-**Source fingerprint (SHA-256):** `004f730131b179fe5ac072afe81b2e01a3937fceca5a260b4ae66f92774e96d9`
+**Source fingerprint (SHA-256):** `02d7623358a6cc8200e74ab36f6a83bcfa059abd6ef91e3fd1c3732706926033`

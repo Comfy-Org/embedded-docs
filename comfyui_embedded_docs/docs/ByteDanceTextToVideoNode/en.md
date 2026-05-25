@@ -31,4 +31,4 @@ The ByteDance Text to Video node generates videos using ByteDance models through
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `44ea3e40b99b337340cc39be1c5b6c903680591f1de49b1f2e82f398979355c5`
+**Source fingerprint (SHA-256):** `a16c07e920a0e96e3e14eec33e5b4e3393e924970528365b326ef32887d64766`

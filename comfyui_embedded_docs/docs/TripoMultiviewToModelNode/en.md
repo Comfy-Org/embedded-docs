@@ -33,4 +33,4 @@ This node generates 3D models synchronously using Tripo's API by processing up t
 | `GLB` | FILE3DGLB | The generated 3D model file in GLB format |
 
 ---
-**Source fingerprint (SHA-256):** `4ad433f4a0060d0ac2ce14463497db3168a1bf3348f17b98e958409e9a63baaf`
+**Source fingerprint (SHA-256):** `f44a39bd15dfd6111be191de81490136280491930ec0aa7159849f137479b089`

@@ -15,4 +15,4 @@ This node takes a single boolean (true/false) input and outputs the opposite val
 | `output` | BOOLEAN | The inverted boolean value. |
 
 ---
-**Source fingerprint (SHA-256):** `7c927252a80f42836af6ef16f76714e6892454733d698674b547bd65ddb9d607`
+**Source fingerprint (SHA-256):** `c512b0f8847c971776c2aebe0c6053ca17a66f756b1b90c803d1a6ef9d3d0ad0`

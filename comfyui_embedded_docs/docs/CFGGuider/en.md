@@ -18,4 +18,4 @@ The CFGGuider node creates a guidance system for controlling the sampling proces
 | `GUIDER` | GUIDER | A guider object that can be passed to sampling nodes to control the generation process |
 
 ---
-**Source fingerprint (SHA-256):** `80c1f733dc26717c5762655404b9c36b53bb9059ceb6a8531ef1a853e2fe2380`
+**Source fingerprint (SHA-256):** `a723a359d0e0ac6ae83dc59d9eb459444b0c4a5361d54d54e22fb03ea34c16be`

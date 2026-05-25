@@ -24,4 +24,4 @@ The Meshy: Refine Draft Model node takes a previously generated 3D draft model a
 | `FBX` | FILE3DFBX | The final refined 3D model in FBX format. |
 
 ---
-**Source fingerprint (SHA-256):** `cdf620ead0a4504cbb5d5554e0fe40e4cadd08884726f147cd486e63ab37f278`
+**Source fingerprint (SHA-256):** `b1cfdeb12d1f79c4c18f96b4f8a92de227210e369b22356fe7232e025956696e`

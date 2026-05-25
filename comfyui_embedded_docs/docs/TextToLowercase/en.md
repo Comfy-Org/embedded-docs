@@ -2,6 +2,8 @@
 
 The Text to Lowercase node takes a text string as input and converts all of its characters to lowercase. It is a simple utility for standardizing text case.
 
+> **Note:** This node is deprecated and superseded by the Convert Text Case node.
+
 ## Inputs
 
 | Parameter | Data Type | Required | Range | Description |
@@ -15,4 +17,4 @@ The Text to Lowercase node takes a text string as input and converts all of its 
 | `text` | STRING | The input text with all characters converted to lowercase. |
 
 ---
-**Source fingerprint (SHA-256):** `840f5092d5c7c42f9e481614c276af1aac68a6323e41a0d57625f0d162c3a8ff`
+**Source fingerprint (SHA-256):** `7ebafc952672510cbadf4549d37c5566bef474b8d1d159af4086cde64bcad849`

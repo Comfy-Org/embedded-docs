@@ -28,4 +28,4 @@ The OpenAIVideoSora2 node generates videos using OpenAI's Sora models. It create
 | `output` | VIDEO | The generated video output |
 
 ---
-**Source fingerprint (SHA-256):** `c87b696dd92c6a6a929f49d189a375b1ebed80bf47f24667ee17c0b210330e55`
+**Source fingerprint (SHA-256):** `b632ef33ca5f01a7aed780a9eeea9b2fcbf4ab85ccb8f026e6175ceaafbda47b`

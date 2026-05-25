@@ -18,4 +18,4 @@ The ModelSamplingLTXV node applies advanced sampling parameters to a model based
 | `model` | MODEL | The modified model with the applied sampling parameters |
 
 ---
-**Source fingerprint (SHA-256):** `2325754df1b2541a6adbdebecefde92e08535af0e179d7444093a61eb35cb24c`
+**Source fingerprint (SHA-256):** `09c7628837c3961ad233bcd7e20b20cebb1f7558c0e7f5629d31964c16981a59`

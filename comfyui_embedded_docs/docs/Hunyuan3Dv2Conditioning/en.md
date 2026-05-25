@@ -16,4 +16,4 @@ The Hunyuan3Dv2Conditioning node processes CLIP vision output to generate condit
 | `negative` | CONDITIONING | Negative conditioning data containing zero-valued embeddings matching the positive embeddings shape |
 
 ---
-**Source fingerprint (SHA-256):** `3a32967d62a0645b0c375b17ab96e20805c2e0005e585dddf5a3a77d35994fec`
+**Source fingerprint (SHA-256):** `93ee88ca001f59a344c7e3113da0200c75d7a566de9084103f69efe3270231e8`

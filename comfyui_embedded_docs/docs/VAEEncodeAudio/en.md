@@ -9,7 +9,7 @@ The VAEEncodeAudio node converts audio data into a latent representation using a
 | `audio` | AUDIO | Yes | - | The audio data to encode, containing waveform and sample rate information |
 | `vae` | VAE | Yes | - | The Variational Autoencoder model used to encode the audio into latent space |
 
-**Note:** The audio input is automatically resampled to match the VAE's expected sample rate (default: 44100 Hz) if the original sample rate differs from this value.
+**Note:** The audio input is automatically resampled to match the VAE's expected sample rate (default: 44100 Hz) if the original sample rate differs from this value. If the input audio is None (e.g., the source video has no audio track), the node will raise an error.
 
 ## Outputs
 
@@ -18,4 +18,4 @@ The VAEEncodeAudio node converts audio data into a latent representation using a
 | `LATENT` | LATENT | The encoded audio representation in latent space, containing compressed samples |
 
 ---
-**Source fingerprint (SHA-256):** `db509ab571154c4cedbfc6cae6591bd2b67b2c6e2261766565cdb0205b2c2ecc`
+**Source fingerprint (SHA-256):** `5c65a853a121a557a5342d337c27e2ea3acff48e6b911bdaf27c89d4c7dc01b6`

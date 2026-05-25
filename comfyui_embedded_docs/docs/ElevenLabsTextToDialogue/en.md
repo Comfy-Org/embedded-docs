@@ -23,4 +23,4 @@ The ElevenLabs Text to Dialogue node generates a multi-speaker audio dialogue fr
 | `audio` | AUDIO | The generated multi-speaker dialogue audio in the selected output format. |
 
 ---
-**Source fingerprint (SHA-256):** `2e1634e90314167320d715346f8d0c691dfabe82b090391afa2b0b18a8a126d8`
+**Source fingerprint (SHA-256):** `76eaa0ce55e1b542f4f2073405c707d686affd15202dc1adf1e1a81c542cbdb1`

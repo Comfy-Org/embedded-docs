@@ -26,4 +26,4 @@ This node uses Tencent's Hunyuan3D Pro API to generate a 3D model from a text de
 | `texture_image` | IMAGE | The texture image extracted from the generated OBJ file, if available. |
 
 ---
-**Source fingerprint (SHA-256):** `e35f5165941cc7761639dd72e78141326d37d5e169be9a0e326afcbcdc572b7d`
+**Source fingerprint (SHA-256):** `2e8799d6863a0a7113d22f1637251735a217797679d7a97268910b88d9864e4a`

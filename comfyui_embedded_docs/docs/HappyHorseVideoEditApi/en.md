@@ -32,4 +32,4 @@ The `model` parameter is a dictionary with the following fields:
 | `video` | VIDEO | The edited video output. |
 
 ---
-**Source fingerprint (SHA-256):** `af6747efbea1c65e4909d35dad009cbc2ffaad787d0f2031581c227deb9bf53c`
+**Source fingerprint (SHA-256):** `eadb446a8dbcc524a8bb6a2ee48941136f8c1ec2cb64aa9061fb1fa22e1b683d`

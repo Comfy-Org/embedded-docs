@@ -24,4 +24,4 @@ The SUPIRApply node applies a SUPIR model patch to a diffusion model. It uses th
 | `model` | MODEL | The diffusion model with the SUPIR patch applied and any additional post-CFG functions configured. |
 
 ---
-**Source fingerprint (SHA-256):** `32ba7a337060b52d4c9085a6a2bc209c737e374dee4291d431d2caf768fc2817`
+**Source fingerprint (SHA-256):** `41900f166aa7c0e325da874a3e250c56b94569822292785b1b3165705eb22e0c`

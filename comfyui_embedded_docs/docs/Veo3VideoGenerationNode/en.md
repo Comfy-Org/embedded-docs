@@ -18,7 +18,7 @@ Generates videos from text prompts using Google's Veo 3 API. This node supports 
 | `model` | COMBO | No | "veo-3.1-generate"<br>"veo-3.1-fast-generate"<br>"veo-3.1-lite"<br>"veo-3.0-generate-001"<br>"veo-3.0-fast-generate-001" | Veo 3 model to use for video generation (default: "veo-3.0-generate-001") |
 | `generate_audio` | BOOLEAN | No | - | Generate audio for the video. Supported by all Veo 3 models. (default: False) |
 
-**Note:** The `enhance_prompt` parameter is deprecated and its value is ignored. The node always enhances the prompt internally. Additionally, the `resolution` parameter is only applied when using a veo-3.1 model; it is ignored for veo-3.0 models.
+**Note:** The `enhance_prompt` parameter is deprecated and its value is ignored. The node always enhances the prompt internally. Additionally, the `resolution` parameter is only applied when using a veo-3.1 model; it is ignored for veo-3.0 models. If you select "4k" resolution with a veo-3.1-lite or veo-3.0 model, the node will raise an error.
 
 ## Outputs
 
@@ -27,4 +27,4 @@ Generates videos from text prompts using Google's Veo 3 API. This node supports 
 | `output` | VIDEO | The generated video file |
 
 ---
-**Source fingerprint (SHA-256):** `36ea9d3f0ea717eb7b8146ca35dfdfbe538fbbf164541ee1d1b19b660543e375`
+**Source fingerprint (SHA-256):** `d19071ba853a846c797bc88d4a803357563f144ea9071fc79fc4203ea40f1a81`

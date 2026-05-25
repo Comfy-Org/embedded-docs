@@ -22,4 +22,4 @@ The Kling Single Image Video Effect Node creates videos with different special e
 | `duration` | STRING | The duration of the generated video |
 
 ---
-**Source fingerprint (SHA-256):** `519db2f7185f200140c746bdebf89383523e0342bbfb61538adac063295d365d`
+**Source fingerprint (SHA-256):** `7e9d1e2830f16361587d3d1f082fb2536d36ca9d933aa9e2ced32eeb65a161ea`

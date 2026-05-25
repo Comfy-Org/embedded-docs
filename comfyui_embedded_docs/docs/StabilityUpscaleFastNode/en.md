@@ -15,4 +15,4 @@ Quickly upscales an image via Stability API call to 4x its original size. This n
 | `output` | IMAGE | The upscaled image returned from the Stability AI API |
 
 ---
-**Source fingerprint (SHA-256):** `0f349c6834807d43173e628abbee91a3a26f587f4bd5453443a9f5754ea8aeeb`
+**Source fingerprint (SHA-256):** `fd3b033c3454e3b795806f2759f8416ea091df24cb2878b701983e4286da98c9`

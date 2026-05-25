@@ -9,9 +9,9 @@ The HunyuanVideo15ImageToVideo node prepares conditioning and latent space data 
 | `positive` | CONDITIONING | Yes | - | The positive conditioning prompts that describe what the video should contain. |
 | `negative` | CONDITIONING | Yes | - | The negative conditioning prompts that describe what the video should avoid. |
 | `vae` | VAE | Yes | - | The VAE (Variational Autoencoder) model used to encode the starting image into the latent space. |
-| `width` | INT | No | 16 to MAX_RESOLUTION | The width of the output video frames in pixels. Must be divisible by 16. (default: 848) |
-| `height` | INT | No | 16 to MAX_RESOLUTION | The height of the output video frames in pixels. Must be divisible by 16. (default: 480) |
-| `length` | INT | No | 1 to MAX_RESOLUTION | The total number of frames in the video sequence. Must be a multiple of 4. (default: 33) |
+| `width` | INT | No | 16 to MAX_RESOLUTION, step: 16 | The width of the output video frames in pixels. Must be divisible by 16. (default: 848) |
+| `height` | INT | No | 16 to MAX_RESOLUTION, step: 16 | The height of the output video frames in pixels. Must be divisible by 16. (default: 480) |
+| `length` | INT | No | 1 to MAX_RESOLUTION, step: 4 | The total number of frames in the video sequence. Must be a multiple of 4. (default: 33) |
 | `batch_size` | INT | No | 1 to 4096 | The number of video sequences to generate in a single batch. (default: 1) |
 | `start_image` | IMAGE | No | - | An optional starting image to initialize the video generation. If provided, it is encoded and used to condition the first frames. Only the first `length` frames of the image are used. |
 | `clip_vision_output` | CLIP_VISION_OUTPUT | No | - | Optional CLIP vision embeddings to provide additional visual conditioning for the generation. |
@@ -27,4 +27,4 @@ The HunyuanVideo15ImageToVideo node prepares conditioning and latent space data 
 | `latent` | LATENT | An empty latent tensor with dimensions configured for the specified batch size, video length, width, and height. |
 
 ---
-**Source fingerprint (SHA-256):** `2f41bbb080672683fb1755be575f08c79ca03e324df66953eb40631581197d47`
+**Source fingerprint (SHA-256):** `383b965a2e67c3643a13991ea5969c4d31ce17e48a57a400f89974f64e4b1e04`

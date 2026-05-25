@@ -20,4 +20,4 @@ This node takes a list of image tiles and merges them back into a single, larger
 | `image` | IMAGE | The final merged image, reconstructed from the input tiles. |
 
 ---
-**Source fingerprint (SHA-256):** `f8f770ca2e9806d2feb55bb1dfe2c26b09d7a3506caf664990d8536ec5660c92`
+**Source fingerprint (SHA-256):** `41b570bf758093f3693c015e7976b946b9d93ca56db2bf66617149f259ae8c06`

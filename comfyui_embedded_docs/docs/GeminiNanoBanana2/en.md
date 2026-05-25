@@ -28,4 +28,4 @@ The GeminiNanoBanana2 node generates or edits images using Google's Vertex AI Ge
 | `thought_image` | IMAGE | First image from the model's thinking process. Only available with thinking_level HIGH and IMAGE+TEXT modality. |
 
 ---
-**Source fingerprint (SHA-256):** `bd53363da73ff0db66a872fc04f1af8ce4dfee1191ca01bd813701b5ad5e4f17`
+**Source fingerprint (SHA-256):** `6dae505011e2860cbf2ec6ccb5a32949d5daa3fe3546e85181050fd9ac92b9e5`

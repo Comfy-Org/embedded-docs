@@ -36,4 +36,4 @@ This node uses the Meshy API to generate a 3D model from multiple input images. 
 | `FBX` | FILE3DFBX | The generated 3D model in FBX format. |
 
 ---
-**Source fingerprint (SHA-256):** `e6f75f50645c8b2cf5ebbe037edb077ef1eb0ea1baf67c581d60ac0033686d00`
+**Source fingerprint (SHA-256):** `7118368e2d9c1a7df9866d19a033c6e2efd632381624a9ee537552502185d444`

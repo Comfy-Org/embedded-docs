@@ -19,4 +19,4 @@ The CLIPTextEncodeControlnet node processes text input using a CLIP model and co
 | `CONDITIONING` | CONDITIONING | Enhanced conditioning data with added controlnet cross-attention parameters (`cross_attn_controlnet` and `pooled_output_controlnet`) derived from the CLIP text encoding |
 
 ---
-**Source fingerprint (SHA-256):** `dd6f68d822cc38e27c826b634c938d62e07b075e18a0f46f80b462aecca0b70b`
+**Source fingerprint (SHA-256):** `36f0c9b7d3f3187bcf794c71e8a261d456972a41c079ddaca0cb5117912e9685`

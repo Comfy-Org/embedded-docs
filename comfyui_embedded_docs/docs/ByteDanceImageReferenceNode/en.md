@@ -24,4 +24,4 @@ The ByteDance Image Reference Node generates videos using a text prompt and one 
 | `output` | VIDEO | The generated video file based on the input prompt and reference images. |
 
 ---
-**Source fingerprint (SHA-256):** `d5d1292d6af2fe24dc5c8a10174204546a5a6054ea1f43db44a45ce1017957d6`
+**Source fingerprint (SHA-256):** `5365f846cafc80333bc8db5bce9101d83e69f3aae1625f275de7a172623a54b9`

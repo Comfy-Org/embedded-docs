@@ -12,7 +12,7 @@ Kling Start-End Frame to Video node creates a video sequence that transitions be
 | `negative_prompt` | STRING | Yes | - | Negative text prompt |
 | `cfg_scale` | FLOAT | No | 0.0-1.0 | Controls the strength of the prompt guidance (default: 0.5) |
 | `aspect_ratio` | COMBO | No | "16:9"<br>"9:16"<br>"1:1" | The aspect ratio for the generated video (default: "16:9") |
-| `mode` | COMBO | No | Multiple options available | The configuration to use for the video generation following the format: mode / duration / model_name. (default: the seventh option from available modes) |
+| `mode` | COMBO | No | "pro mode / 5s duration / kling-v1-5"<br>"pro mode / 10s duration / kling-v1-5"<br>"pro mode / 5s duration / kling-v1-6"<br>"pro mode / 10s duration / kling-v1-6"<br>"pro mode / 5s duration / kling-v2-1"<br>"pro mode / 10s duration / kling-v2-1"<br>"pro mode / 5s duration / kling-v2-5-turbo"<br>"pro mode / 10s duration / kling-v2-5-turbo" | The configuration to use for the video generation following the format: mode / duration / model_name. (default: "pro mode / 5s duration / kling-v2-5-turbo") |
 
 **Image Constraints:**
 
@@ -30,4 +30,4 @@ Kling Start-End Frame to Video node creates a video sequence that transitions be
 | `duration` | STRING | Duration of the generated video |
 
 ---
-**Source fingerprint (SHA-256):** `1df5820b4f41ccd5afec8e2701888d90c940f164c433c7f81397b41e8fc333c6`
+**Source fingerprint (SHA-256):** `e0bf25103e72ea3f56651adf64c0712f32c055f2b870448dcbbe82b546be8f37`

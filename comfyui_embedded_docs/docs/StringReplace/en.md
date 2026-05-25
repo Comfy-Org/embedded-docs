@@ -17,4 +17,4 @@ The StringReplace node performs text replacement operations on input strings. It
 | `output` | STRING | The modified string with all occurrences of the find text replaced by the replace text |
 
 ---
-**Source fingerprint (SHA-256):** `72159dba72261efe9df283c1ea3f789651eade923efdaeb108bacc1d0da663f8`
+**Source fingerprint (SHA-256):** `7f384aff132eb6919b58f04163c4611a7b5545e1af9217f9aca60dc416c06d60`

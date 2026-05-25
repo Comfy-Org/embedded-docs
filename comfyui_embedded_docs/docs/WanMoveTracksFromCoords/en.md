@@ -19,4 +19,4 @@ The WanMoveTracksFromCoords node creates motion tracks from a JSON-formatted str
 | `track_length` | INT | The total number of frames in the generated tracks. |
 
 ---
-**Source fingerprint (SHA-256):** `106b05b3bdb5ede6e31216b9f3c14160630df0eee1f4e8a645c2b6cf9fbecf8c`
+**Source fingerprint (SHA-256):** `2c02b7bfc51951d8b5d24e9f19d64cdf0eab7b4f1a3436b63e9baf1765417193`

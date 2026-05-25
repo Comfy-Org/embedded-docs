@@ -17,4 +17,4 @@ The EmptyHunyuanImageLatent node creates an empty latent tensor with specific di
 | `LATENT` | LATENT | An empty latent tensor with the specified dimensions for Hunyuan image processing |
 
 ---
-**Source fingerprint (SHA-256):** `18e920527c88be2648d8cbe4255f693123be4e70a9e21dd379310088a1470834`
+**Source fingerprint (SHA-256):** `990878294736fcc89f4435127a81e9eec390d58640694ab35789ed7f578692a1`
