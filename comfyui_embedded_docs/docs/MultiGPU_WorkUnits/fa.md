@@ -53,7 +53,7 @@ ComfyUI هنگام شروع به کار، چند GPU بودن سیستم را ب
 ## بررسی استفاده از چند GPU
 
 وقتی یک گردش کار را با MultiGPU CFG Split اجرا می‌کنید، می‌توانید Windows Task Manager را باز کرده و بخش Performance را انتخاب کنید.  
-![image3.png](./asset/image3.png)  
+![image3.png](./asset/image3.webp)  
 ![image4.png](./asset/image4.png)  
 در زمانی که نمونه گیر در گردش کار در حال اجرا است، باید روی هر دو GPU نصب‌شده فعالیت ببینید.
 

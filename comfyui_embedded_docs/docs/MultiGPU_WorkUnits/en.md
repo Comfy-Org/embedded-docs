@@ -53,7 +53,7 @@ The max\_gpus field should be set to the maximum number of identical GPUs instal
 ## Verifying Multi-GPU Utilization
 
 When running a workflow with MultiGPU CFG Split enabled, you can look at the Windows Task Manager and select the performance category  
-![image3.png](./asset/image3.png)  
+![image3.png](./asset/image3.webp)  
 ![image4.png](./asset/image4.png)  
 You should see activity on both installed GPUs while the sampler is running in the workflow. 
 

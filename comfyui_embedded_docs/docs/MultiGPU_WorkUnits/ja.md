@@ -53,7 +53,7 @@ Ampere以降のアーキテクチャを使った、同一GPU 2枚構成に対応
 ## マルチGPU利用の確認方法
 
 MultiGPU CFG Split を有効にしたワークフローを実行したら、Windows のタスクマネージャーを開き、パフォーマンスの項目を選んでください。  
-![image3.png](./asset/image3.png)  
+![image3.png](./asset/image3.webp)  
 ![image4.png](./asset/image4.png)  
 ワークフローのサンプラーが動いている間、2枚のGPUの両方に動きが見えれば正常です。
 

@@ -53,7 +53,7 @@ Ampere 이상 아키텍처를 사용하는 동일한 듀얼 GPU 구성이라면 
 ## 멀티 GPU 사용 확인 방법
 
 MultiGPU CFG Split을 켠 워크플로를 실행할 때는 Windows 작업 관리자를 열고 성능 항목을 선택해 보세요.  
-![image3.png](./asset/image3.png)  
+![image3.png](./asset/image3.webp)  
 ![image4.png](./asset/image4.png)  
 워크플로에서 샘플러가 실행되는 동안 설치된 두 GPU 모두에 활동이 보이면 정상입니다.
 

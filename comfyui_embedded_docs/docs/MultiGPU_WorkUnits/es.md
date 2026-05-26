@@ -55,7 +55,7 @@ El campo `max_gpus` debe configurarse con la cantidad máxima de GPU idénticas 
 
 Cuando ejecute un flujo con MultiGPU CFG Split activado, puede abrir el Administrador de tareas de Windows y entrar en la categoría de rendimiento.
 
-![image3.png](./asset/image3.png)
+![image3.webp](./asset/image3.webp)  
 
 ![image4.png](./asset/image4.png)
 

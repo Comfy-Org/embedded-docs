@@ -53,8 +53,8 @@ ComfyUI 在启动时会自动检测系统中已安装的多张 GPU。
 ## 如何确认多 GPU 正在工作
 
 运行启用 MultiGPU CFG Split 的工作流时，可以打开 Windows 任务管理器，并切换到“性能”分类。  
-![image3.png](./asset/image3.png)  
-![image4.png](./asset/image4.png)  
+![image3.webp](./asset/image3.webp)  
+![image4.png](./asset/image4.png)                                                                                                                                 
 当工作流中的采样器正在运行时，你应该能看到两张已安装的 GPU 都有活动。
 
 ## 已知问题

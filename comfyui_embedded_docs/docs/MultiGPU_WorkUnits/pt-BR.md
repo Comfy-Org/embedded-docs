@@ -55,7 +55,7 @@ O campo `max_gpus` deve ser definido com a quantidade máxima de GPUs idênticas
 
 Ao executar um workflow com o MultiGPU CFG Split ativado, você pode abrir o Gerenciador de Tarefas do Windows e selecionar a categoria de desempenho.
 
-![image3.png](./asset/image3.png)
+![image3.webp](./asset/image3.webp)  
 
 ![image4.png](./asset/image4.png)
 
