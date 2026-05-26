@@ -295,4 +295,4 @@ void main() {
 > **Effect I want:** A chromatic aberration effect that splits RGB channels outward from the center of the image. u_float0 controls the strength of the offset (0 = no effect, 10 = extremely strong). The offset should scale with distance from the center.
 
 ---
-**Source fingerprint (SHA-256):** `76d4dddf2718a8af05925b1cc1c2d8946dfff01e3716fb82a0f834a8ad0f0d29`
+**Source fingerprint (SHA-256):** `ded589d5b0cb5413ecc42c7177e3076427ceac1d3218a20cfec6f2e005fe7e27`
