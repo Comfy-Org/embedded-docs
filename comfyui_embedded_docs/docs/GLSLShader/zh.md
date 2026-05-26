@@ -1,36 +1,298 @@
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GLSLShader/zh.md)
 
-GLSL 着色器节点可将自定义 GLSL ES 片段着色器代码应用于输入图像。它允许您编写着色器程序，处理多个图像并接受统一参数（浮点数、整数、布尔值和曲线），从而创建复杂的视觉效果。输出尺寸可由第一个输入图像决定，也可手动设置。
+The **GLSL Shader** node lets you write custom fragment shaders in **GLSL ES 3.00** (WebGL 2.0 compatible) to process images directly on the GPU. You can create image effects like blurs, color grading, film grain, glow, and much more - all running at GPU speed.
 
-## 输入
+<Note>
+The GLSL Shader node is currently marked as **experimental**, so the node may be updated and extended in future releases.
+</Note>
 
-| 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
-|-----------|-----------|----------|-------|-------------|
-| `fragment_shader` | STRING | 是 | 不适用 | GLSL 片段着色器源代码（兼容 GLSL ES 3.00 / WebGL 2.0）。默认值：输出第一个输入图像的基本着色器。 |
-| `size_mode` | COMBO | 是 | `"from_input"`<br>`"custom"` | 输出尺寸：'from_input' 使用第一个输入图像的尺寸，'custom' 允许手动设置尺寸。 |
-| `width` | INT | 否 | 1 至 16384 | 当 `size_mode` 设置为 `"custom"` 时，输出图像的宽度。默认值：512。 |
-| `height` | INT | 否 | 1 至 16384 | 当 `size_mode` 设置为 `"custom"` 时，输出图像的高度。默认值：512。 |
-| `images` | IMAGE | 是 | 1 至 8 张图像 | 由着色器处理的输入图像。在着色器代码中，图像可作为 `u_image0` 到 `u_image7`（sampler2D）使用。 |
-| `floats` | FLOAT | 否 | 0 至 8 个浮点数 | 着色器的浮点统一值。在着色器代码中，浮点数可作为 `u_float0` 到 `u_float7` 使用。默认值：0.0。 |
-| `ints` | INT | 否 | 0 至 8 个整数 | 着色器的整数统一值。在着色器代码中，整数可作为 `u_int0` 到 `u_int7` 使用。默认值：0。 |
-| `布尔值` | BOOLEAN | 否 | 0 至 8 个布尔值 | 着色器的布尔统一值。在着色器代码中，布尔值可作为 `u_bool0` 到 `u_bool7`（bool）使用。默认值：False。 |
-| `曲线` | CURVE | 否 | 0 至 8 条曲线 | 着色器的曲线统一值。在着色器代码中，曲线可作为 `u_curve0` 到 `u_curve7`（sampler2D，一维查找表）使用。使用 `texture(u_curve0, vec2(x, 0.5)).r` 进行采样。 |
+## Minimal Shader
 
-**注意：**
+The simplest possible shader - a passthrough that outputs the input image unchanged:
 
-* 仅当 `size_mode` 设置为 `"custom"` 时，`width` 和 `height` 参数才为必填项并可见。
-* 至少需要一张输入图像。
-* 着色器代码始终可以访问包含输出尺寸的 `u_resolution`（vec2）统一变量。
-* 最多可提供 8 张输入图像、8 个浮点统一变量、8 个整数统一变量、8 个布尔统一变量和 8 个曲线统一变量。
+```glsl
+#version 300 es
+precision highp float;
 
-## 输出
+uniform sampler2D u_image0;
 
-| 输出名称 | 数据类型 | 描述 |
-|-------------|-----------|-------------|
-| `IMAGE1` | IMAGE | 着色器的第一个输出图像。在着色器代码中通过 `layout(location = 0) out vec4 fragColor0` 使用。 |
-| `IMAGE2` | IMAGE | 着色器的第二个输出图像。在着色器代码中通过 `layout(location = 1) out vec4 fragColor1` 使用。 |
-| `IMAGE3` | IMAGE | 着色器的第三个输出图像。在着色器代码中通过 `layout(location = 2) out vec4 fragColor2` 使用。 |
-| `IMAGE3` | IMAGE | 着色器的第四个输出图像。在着色器代码中通过 `layout(location = 3) out vec4 fragColor3` 使用。 |
+in vec2 v_texCoord;
+layout(location = 0) out vec4 fragColor0;
+
+void main() {
+    fragColor0 = texture(u_image0, v_texCoord);
+}
+```
+
+<Note>
+**Why GLSL ES 3.00?** Shaders need to run in two environments: the **browser** (via WebGL 2.0, which only supports GLSL ES 3.00) for live preview in the ComfyUI frontend, and the **Python backend** (via desktop OpenGL) when the workflow executes. GLSL ES 3.00 is the common denominator that works in both places.
+</Note>
+
+## Available Uniforms
+
+These uniforms are automatically set by ComfyUI. You don't need to declare all of them - only declare the ones you use.
+
+### Images
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_image0` – `u_image4` | `sampler2D` | Input images (up to 5). Sampled with `texture(u_image0, v_texCoord)`. Images are RGBA float textures with linear filtering and clamp-to-edge wrapping. |
+
+### Floats
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_float0` – `u_float19` | `float` | Up to 20 user-controlled float values. Mapped from the **floats** input group on the node. |
+
+### Integers
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_int0` – `u_int19` | `int` | Up to 20 user-controlled integer values. Mapped from the **ints** input group on the node. |
+
+<Note>
+**Using int uniforms as dropdowns:** Int uniforms pair well with the **Custom Combo** node's index output - users pick an option from a dropdown and the shader receives the selected item's index.
+
+```glsl
+const int BLEND_SCREEN  = 0;
+const int BLEND_OVERLAY = 1;
+const int BLEND_MULTIPLY = 2;
+
+// ...
+
+if (u_int0 == BLEND_SCREEN) {
+    // ...
+}
+```
+</Note>
+
+### Booleans
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_bool0` – `u_bool9` | `bool` | Up to 10 user-controlled boolean values. Mapped from the **bools** input group on the node. |
+
+### Curves (1D LUTs)
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_curve0` – `u_curve3` | `sampler2D` | Up to 4 user-editable curve LUTs from the **curves** input group. Each curve is a 1D lookup table stored as a single-row texture. |
+
+<Note>
+**Using curve uniforms:** Curves let users draw arbitrary tone-mapping graphs in the UI (e.g. for contrast, gamma, per-channel grading, or any custom `input → output` remap). Sample the curve using your input value as the X coordinate - remember to clamp it to `[0, 1]` first:
+
+```glsl
+float applyCurve(sampler2D curve, float value) {
+    return texture(curve, vec2(clamp(value, 0.0, 1.0), 0.5)).r;
+}
+
+// Usage: remap each RGB channel through a master curve
+color.r = applyCurve(u_curve0, color.r);
+color.g = applyCurve(u_curve0, color.g);
+color.b = applyCurve(u_curve0, color.b);
+```
+
+Common uses: master RGB curves, per-channel R/G/B curves, luminance-driven remaps, custom gamma, and any effect where you want the user to shape a response curve visually.
+</Note>
+
+### Resolution
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_resolution` | `vec2` | **Output** framebuffer dimensions in pixels (`width, height`). This is the size you're writing to, which may differ from any input image's size when `size_mode` is `"custom"`. |
+
+<Note>
+**Computing texel size for sampling:** Don't use `1.0 / u_resolution` to step one pixel in an input texture. `u_resolution` is the *output* size, which may not match the input's size. Instead use `textureSize()` on the actual texture you're sampling:
+
+```glsl
+vec2 texel = 1.0 / vec2(textureSize(u_image0, 0));
+```
+
+Use `u_resolution` only when you need the output framebuffer dimensions themselves (e.g. computing `gl_FragCoord.xy / u_resolution` to get screen-space UVs).
+</Note>
+
+### Multi-Pass
+
+| Uniform | Type | Description |
+|---------|------|-------------|
+| `u_pass` | `int` | Current pass index (0-based). Only meaningful when using `#pragma passes` - see [Multi-Pass Ping-Pong Rendering](#multi-pass-ping-pong-rendering) for details. |
+
+### Vertex Shader Output
+
+| Varying | Type | Description |
+|---------|------|-------------|
+| `v_texCoord` | `vec2` | Texture coordinates ranging from (0,0) at bottom-left to (1,1) at top-right. |
+
+## Multiple Outputs (MRT)
+
+The node supports up to **4 simultaneous outputs** using Multiple Render Targets. Declare additional outputs with explicit locations:
+
+```glsl
+#version 300 es
+precision highp float;
+
+uniform sampler2D u_image0;
+
+in vec2 v_texCoord;
+layout(location = 0) out vec4 fragColor0;
+layout(location = 1) out vec4 fragColor1;
+layout(location = 2) out vec4 fragColor2;
+layout(location = 3) out vec4 fragColor3;
+
+void main() {
+    vec4 color = texture(u_image0, v_texCoord);
+    fragColor0 = vec4(vec3(color.r), 1.0);  // Red channel
+    fragColor1 = vec4(vec3(color.g), 1.0);  // Green channel
+    fragColor2 = vec4(vec3(color.b), 1.0);  // Blue channel
+    fragColor3 = vec4(vec3(color.a), 1.0);  // Alpha channel
+}
+```
+
+Each `fragColor` maps to the corresponding `IMAGE` output on the node. ComfyUI auto-detects which outputs you use - unused outputs will be black.
+
+## Multi-Pass Ping-Pong Rendering
+
+Some effects (like separable blur) need multiple passes over the image. Use the `#pragma passes N` directive to enable this:
+
+```glsl
+#version 300 es
+#pragma passes 2
+precision highp float;
+
+uniform sampler2D u_image0;
+uniform float u_float0;  // Blur radius
+uniform int u_pass;
+
+in vec2 v_texCoord;
+layout(location = 0) out vec4 fragColor0;
+
+void main() {
+    vec2 texel = 1.0 / vec2(textureSize(u_image0, 0));
+    int radius = int(ceil(u_float0));
+
+    // Pass 0 = horizontal blur, Pass 1 = vertical blur
+    vec2 dir = (u_pass == 0) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+
+    vec4 color = vec4(0.0);
+    float total = 0.0;
+
+    for (int i = -radius; i <= radius; i++) {
+        vec2 offset = dir * float(i) * texel;
+        float w = 1.0;  // box blur weight
+        color += texture(u_image0, v_texCoord + offset) * w;
+        total += w;
+    }
+
+    fragColor0 = color / total;
+}
+```
+
+### How ping-pong works
+
+1. **Pass 0**: Reads from the original `u_image0` input, writes to an internal ping-pong texture.
+2. **Pass 1–N**: Reads from the *previous pass output* via `u_image0` (the binding is swapped automatically), writes to the other ping-pong texture.
+3. **Final pass**: Writes to the actual output framebuffer (`fragColor0`).
+
+<Note>
+When using multi-pass with MRT (multiple outputs), only the first output (`fragColor0`) participates in ping-pong. The final pass writes all outputs.
+</Note>
+
+## Examples
+
+### Grayscale Conversion
+
+```glsl
+#version 300 es
+precision highp float;
+
+uniform sampler2D u_image0;
+in vec2 v_texCoord;
+layout(location = 0) out vec4 fragColor0;
+
+void main() {
+    vec4 color = texture(u_image0, v_texCoord);
+    float gray = dot(color.rgb, vec3(0.2126, 0.7152, 0.0722));
+    fragColor0 = vec4(vec3(gray), color.a);
+}
+```
+
+### Image Blending
+
+Blend two input images using a float parameter as the mix factor:
+
+```glsl
+#version 300 es
+precision highp float;
+
+uniform sampler2D u_image0;
+uniform sampler2D u_image1;
+uniform float u_float0;  // mix factor [0.0 – 1.0]
+
+in vec2 v_texCoord;
+layout(location = 0) out vec4 fragColor0;
+
+void main() {
+    vec4 a = texture(u_image0, v_texCoord);
+    vec4 b = texture(u_image1, v_texCoord);
+    fragColor0 = mix(a, b, clamp(u_float0, 0.0, 1.0));
+}
+```
+
+## Using an LLM to Generate Shaders
+
+You can use any LLM (Claude, ChatGPT, etc.) to write GLSL shaders for you. Copy the following prompt and fill in your desired effect:
+
+````markdown
+Write a GLSL ES 3.00 fragment shader for ComfyUI's GLSLShader node.
+
+**Effect I want:** [DESCRIBE YOUR DESIRED EFFECT HERE]
+
+**Requirements:**
+- Must start with `#version 300 es`
+- Use `precision highp float;`
+- The vertex shader provides `in vec2 v_texCoord` (0–1 UV coordinates, bottom-left origin)
+- Output to `layout(location = 0) out vec4 fragColor0` (RGBA)
+- Additional outputs available: `fragColor1`, `fragColor2`, `fragColor3` at locations 1–3
+
+**Template to follow (minimal passthrough shader - use this exact structure):**
+
+```glsl
+#version 300 es
+precision highp float;
+
+uniform sampler2D u_image0;
+
+in vec2 v_texCoord;
+layout(location = 0) out vec4 fragColor0;
+
+void main() {
+    fragColor0 = texture(u_image0, v_texCoord);
+}
+```
+
+**Available uniforms (declare only what you use):**
+- `uniform sampler2D u_image0;` through `u_image4` - up to 5 input images (RGBA float, linear filtering, clamp-to-edge)
+- `uniform vec2 u_resolution;` - **output framebuffer** width and height in pixels. This is NOT the input texture size (they can differ when the user sets a custom output size). **To step one pixel in an input texture, use `vec2 texel = 1.0 / vec2(textureSize(u_image0, 0));` - do NOT use `1.0 / u_resolution` for this.**
+- `uniform float u_float0;` through `u_float19;` - up to 20 user-controlled float parameters
+- `uniform int u_int0;` through `u_int19;` - up to 20 user-controlled integer parameters. Tip: int uniforms can be wired from a **Custom Combo** node's index output, so users select from a dropdown and the shader receives the index. Use this for mode selection (e.g. blend mode, blur type). Define named constants for each option and branch on those - do NOT compare against raw integer literals. For example: `const int BLUR_GAUSSIAN = 0; const int BLUR_BOX = 1; ... if (u_int0 == BLUR_GAUSSIAN) { ... }`.
+- `uniform bool u_bool0;` through `u_bool9;` - up to 10 user-controlled boolean parameters (use for feature toggles)
+- `uniform sampler2D u_curve0;` through `u_curve3;` - up to 4 user-editable 1D LUT curves. Sample with `texture(u_curve0, vec2(clamp(x, 0.0, 1.0), 0.5)).r` where `x` is 0–1. Use for tone curves, remapping, etc.
+- `uniform int u_pass;` - current pass index (when using multi-pass)
+
+**Multi-pass rendering:**
+- Add `#pragma passes N` on the second line to enable N passes
+- On pass 0, `u_image0` is the original input; on subsequent passes it contains the previous pass output
+- Use `u_pass` to vary behavior per pass (e.g., horizontal vs. vertical blur)
+
+**Important constraints:**
+- GLSL ES 3.00 only - no GLSL 1.x `varying`/`attribute`, no `gl_FragColor`
+- No `#include`, no external textures, no custom vertex shader
+- Document each uniform with a comment showing its purpose and expected range
+````
+
+### Example prompt fill-in
+
+> **Effect I want:** A chromatic aberration effect that splits RGB channels outward from the center of the image. u_float0 controls the strength of the offset (0 = no effect, 10 = extremely strong). The offset should scale with distance from the center.
 
 ---
-**Source fingerprint (SHA-256):** `7830977409a5efab205b7c927eb83499a9e1e8299959b34643c9c3f1f586c058`
+**Source fingerprint (SHA-256):** `76d4dddf2718a8af05925b1cc1c2d8946dfff01e3716fb82a0f834a8ad0f0d29`
