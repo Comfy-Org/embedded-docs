@@ -57,7 +57,7 @@ Ao executar um workflow com o MultiGPU CFG Split ativado, você pode abrir o Ger
 
 ![image3.webp](./asset/image3.webp)  
 
-![image4.png](./asset/image4.png)
+![image4.png](./asset/image4.web)
 
 Você deve ver atividade nas duas GPUs instaladas enquanto o sampler estiver rodando no workflow.
 

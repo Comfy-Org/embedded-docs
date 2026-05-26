@@ -54,7 +54,7 @@
 
 عند تشغيل سير عمل مع تفعيل MultiGPU CFG Split، يمكنك فتح Windows Task Manager ثم اختيار قسم الأداء.  
 ![image3.png](./asset/image3.webp)  
-![image4.png](./asset/image4.png)  
+![image4.png](./asset/image4.web)  
 أثناء عمل أداة أخذ العينات في سير العمل، يفترض أن ترى نشاطًا على كلتا وحدتي GPU المثبتتين.
 
 ## المشكلات المعروفة
