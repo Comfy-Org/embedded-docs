@@ -8,7 +8,7 @@ O nó Not realiza uma operação lógica de negação (NOT) em qualquer valor de
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `value` | QUALQUER | Sim | Qualquer valor | O valor de entrada a ser invertido. Qualquer tipo de dado é aceito e avaliado usando as regras de veracidade do Python. |
+| `valor` | QUALQUER | Sim | Qualquer valor | O valor de entrada a ser invertido. Qualquer tipo de dado é aceito e avaliado usando as regras de veracidade do Python. |
 
 ## Saídas
 

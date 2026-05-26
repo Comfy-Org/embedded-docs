@@ -8,21 +8,21 @@
 
 | 参数 | 数据类型 | 是否必需 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 是 | 1 到 5 张图像 | 一到五张输入图像。当提供多张图像时，第一张图像用于材质。 |
-| `mode` | COMBO | 是 | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` | 生成质量模式。更高质量的模式可产生更好的结果，但成本更高。 |
-| `material` | COMBO | 是 | `"PBR"`<br>`"Matte"` | 生成 3D 模型的材质类型。 |
-| `geometry_file_format` | COMBO | 是 | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` | 3D 模型几何体的输出文件格式。 |
-| `texture_mode` | COMBO | 是 | `"Original"`<br>`"Clean"`<br>`"Style"` | 纹理生成模式。“Original”保留输入纹理，“Clean”移除纹理，“Style”应用风格化纹理。 |
-| `seed` | INT | 是 | 0 到 2147483647 | 用于可重现结果的随机种子。使用相同的种子可获得相同的输出。 |
-| `TAPose` | BOOLEAN | 是 | True / False | 是否对生成的模型应用 T 形姿势。 |
-| `hd_texture` | BOOLEAN | 是 | True / False | 是否生成高清晰度纹理贴图。 |
-| `texture_delight` | BOOLEAN | 是 | True / False | 是否在纹理生成前从输入图像中移除光照。 |
-| `use_original_alpha` | BOOLEAN | 是 | True / False | 是否使用输入图像中的原始 Alpha 通道。 |
-| `addon_highpack` | BOOLEAN | 是 | True / False | 是否在标准模型之外额外生成高多边形版本。 |
-| `bbox_width` | INT | 是 | 1 到 1000 | 生成模型边界框的宽度，单位为厘米。 |
-| `bbox_height` | INT | 是 | 1 到 1000 | 生成模型边界框的高度，单位为厘米。 |
-| `bbox_length` | INT | 是 | 1 到 1000 | 生成模型边界框的长度，单位为厘米。 |
-| `height_cm` | INT | 是 | 1 到 300 | 生成模型的高度，单位为厘米。 |
+| `图像` | IMAGE | 是 | 1 到 5 张图像 | 一到五张输入图像。当提供多张图像时，第一张图像用于材质。 |
+| `模式` | COMBO | 是 | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` | 生成质量模式。更高质量的模式可产生更好的结果，但成本更高。 |
+| `材质` | COMBO | 是 | `"PBR"`<br>`"Matte"` | 生成 3D 模型的材质类型。 |
+| `几何文件格式` | COMBO | 是 | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` | 3D 模型几何体的输出文件格式。 |
+| `贴图模式` | COMBO | 是 | `"Original"`<br>`"Clean"`<br>`"Style"` | 纹理生成模式。“Original”保留输入纹理，“Clean”移除纹理，“Style”应用风格化纹理。 |
+| `种子` | INT | 是 | 0 到 2147483647 | 用于可重现结果的随机种子。使用相同的种子可获得相同的输出。 |
+| `T/A 姿势` | BOOLEAN | 是 | True / False | 是否对生成的模型应用 T 形姿势。 |
+| `高清贴图` | BOOLEAN | 是 | True / False | 是否生成高清晰度纹理贴图。 |
+| `贴图去光照` | BOOLEAN | 是 | True / False | 是否在纹理生成前从输入图像中移除光照。 |
+| `保留原始透明度` | BOOLEAN | 是 | True / False | 是否使用输入图像中的原始 Alpha 通道。 |
+| `HighPack 插件` | BOOLEAN | 是 | True / False | 是否在标准模型之外额外生成高多边形版本。 |
+| `包围盒宽度` | INT | 是 | 1 到 1000 | 生成模型边界框的宽度，单位为厘米。 |
+| `包围盒高度` | INT | 是 | 1 到 1000 | 生成模型边界框的高度，单位为厘米。 |
+| `包围盒长度` | INT | 是 | 1 到 1000 | 生成模型边界框的长度，单位为厘米。 |
+| `模型高度（厘米）` | INT | 是 | 1 到 300 | 生成模型的高度，单位为厘米。 |
 
 **关于图像数量的说明：** 此节点接受 1 到 5 张图像。如果您提供一批图像（例如，一个包含 4 张图像的批次），批次中的每张图像都将被视为单独的输入图像。提供超过 5 张图像将导致错误。
 

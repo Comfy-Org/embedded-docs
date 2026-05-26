@@ -8,7 +8,7 @@ Le nœud Not effectue une opération logique NON sur n'importe quelle valeur d'e
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `value` | ANY | Oui | Toute valeur | La valeur d'entrée à inverser. Tout type de données est accepté et évalué selon les règles de véracité de Python. |
+| `valeur` | ANY | Oui | Toute valeur | La valeur d'entrée à inverser. Tout type de données est accepté et évalué selon les règles de véracité de Python. |
 
 ## Sorties
 

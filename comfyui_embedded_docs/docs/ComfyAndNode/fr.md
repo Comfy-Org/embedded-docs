@@ -10,7 +10,7 @@ Le nœud Et effectue une opération logique ET sur un ensemble de valeurs d'entr
 
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
-| `values` | ANY | Oui | 1 valeur ou plus | Une liste de valeurs à évaluer. Le nœud accepte au moins une valeur, et vous pouvez en ajouter d'autres en cliquant sur le bouton "+" du nœud. |
+| `valeurs` | ANY | Oui | 1 valeur ou plus | Une liste de valeurs à évaluer. Le nœud accepte au moins une valeur, et vous pouvez en ajouter d'autres en cliquant sur le bouton "+" du nœud. |
 
 **Remarque :** Le nœud utilise les règles de vérité de Python pour déterminer si une valeur est `true` ou `false`. Par exemple, une chaîne vide, le nombre 0, une liste vide et `None` sont tous considérés comme `false`. Toutes les autres valeurs sont considérées comme `true`.
 
