@@ -57,7 +57,7 @@ Lorsque vous exécutez un workflow avec MultiGPU CFG Split activé, vous pouvez 
 
 ![image3.webp](./asset/image3.webp)  
 
-![image4.png](./asset/image4.web)
+![image4.png](./asset/image4.webp)
 
 Vous devriez voir de l'activité sur les deux GPU installés pendant que le sampler fonctionne dans le workflow.
 

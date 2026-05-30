@@ -56,7 +56,7 @@ Ampere veya daha yeni mimariye sahip, aynı türden iki GPU içeren tüm kurulum
 MultiGPU CFG Split açık bir workflow çalıştırırken Windows Görev Yöneticisi'ni açıp performans kategorisini seçebilirsiniz.
 
 ![image3.webp](./asset/image3.webp)  
-![image4.png](./asset/image4.web)
+![image4.png](./asset/image4.webp)
 
 Workflow içinde sampler çalışırken kurulu iki GPU'da da etkinlik görmelisiniz.
 

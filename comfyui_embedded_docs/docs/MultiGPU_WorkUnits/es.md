@@ -57,7 +57,7 @@ Cuando ejecute un flujo con MultiGPU CFG Split activado, puede abrir el Administ
 
 ![image3.webp](./asset/image3.webp)  
 
-![image4.png](./asset/image4.web)
+![image4.png](./asset/image4.webp)
 
 Mientras el sampler esté funcionando en el flujo, debería ver actividad en las dos GPU instaladas.
 
