@@ -9,7 +9,7 @@ Este nó permite selecionar manualmente em qual dispositivo GPU o modelo VAE dev
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
 | `vae` | VAE | Sim | | O modelo VAE a ser atribuído a um dispositivo específico. |
-| `device` | COMBO | Sim | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | O dispositivo de destino para o VAE. `"default"` restaura o dispositivo atribuído pelo carregador. `"gpu:N"` fixa o VAE na N-ésima GPU disponível. CPU não é uma opção suportada e será ignorada se fornecida. (padrão: `"default"`) |
+| `dispositivo` | COMBO | Sim | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | O dispositivo de destino para o VAE. `"default"` restaura o dispositivo atribuído pelo carregador. `"gpu:N"` fixa o VAE na N-ésima GPU disponível. CPU não é uma opção suportada e será ignorada se fornecida. (padrão: `"default"`) |
 
 ## Saídas
 

@@ -8,9 +8,9 @@
 
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 是 | - | 要儲存的影像。 |
-| `filename_prefix` | STRING | 是 | - | 要儲存檔案的檔名前綴。可包含格式化標記，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`。（預設值："ComfyUI"） |
-| `format` | COMBO | 是 | `"png"`<br>`"exr"` | 儲存影像的檔案格式。選擇格式後會顯示該格式的額外選項。 |
+| `影像` | IMAGE | 是 | - | 要儲存的影像。 |
+| `檔名字首` | STRING | 是 | - | 要儲存檔案的檔名前綴。可包含格式化標記，例如 `%date:yyyy-MM-dd%` 或 `%Empty Latent Image.width%`。（預設值："ComfyUI"） |
+| `格式` | COMBO | 是 | `"png"`<br>`"exr"` | 儲存影像的檔案格式。選擇格式後會顯示該格式的額外選項。 |
 | `bit_depth` | COMBO | 是（條件式） | 對於 PNG：`"8-bit"`<br>`"16-bit"`<br>對於 EXR：`"32-bit float"` | 所選格式的位元深度。此參數在選擇格式後出現。（預設值：PNG 為 "8-bit"，EXR 為 "32-bit float"） |
 | `input_color_space` | COMBO | 是（條件式） | 對於 PNG：`"sRGB"`<br>對於 EXR：`"sRGB"`<br>`"HDR"`<br>`"linear"` | 輸入張量的色彩空間。對於 PNG，僅提供 sRGB。對於 EXR，影像始終以場景線性方式寫入匹配的色域中。（預設值："sRGB"） |
 
@@ -27,7 +27,7 @@
 
 | 輸出名稱 | 資料類型 | 說明 |
 |-------------|-----------|-------------|
-| `images` | IMAGE | 已儲存影像結果的清單，每個結果包含檔名、子資料夾和類型（"output"）。此輸出用於 UI 顯示目的。 |
+| `影像` | IMAGE | 已儲存影像結果的清單，每個結果包含檔名、子資料夾和類型（"output"）。此輸出用於 UI 顯示目的。 |
 
 ---
 **Source fingerprint (SHA-256):** `61e52bab8c28437cf648e4790823c15dbe0f758478635b0bd8b5cce785421fe5`

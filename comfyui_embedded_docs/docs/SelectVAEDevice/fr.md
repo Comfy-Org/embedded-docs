@@ -9,7 +9,7 @@ Ce nœud vous permet de sélectionner manuellement sur quel périphérique GPU l
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `vae` | VAE | Oui | | Le modèle VAE à attribuer à un périphérique spécifique. |
-| `device` | COMBO | Oui | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | Le périphérique cible pour le VAE. `"default"` restaure le périphérique attribué par le chargeur. `"gpu:N"` fixe le VAE sur le Nième GPU disponible. Le CPU n'est pas un choix pris en charge et sera ignoré s'il est fourni. (par défaut : `"default"`) |
+| `périphérique` | COMBO | Oui | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | Le périphérique cible pour le VAE. `"default"` restaure le périphérique attribué par le chargeur. `"gpu:N"` fixe le VAE sur le Nième GPU disponible. Le CPU n'est pas un choix pris en charge et sera ignoré s'il est fourni. (par défaut : `"default"`) |
 
 ## Sorties
 

@@ -9,7 +9,7 @@
 | 參數 | 資料類型 | 必要 | 範圍 | 說明 |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | 是 | | 要指派到特定裝置的 VAE 模型。 |
-| `device` | COMBO | 是 | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | VAE 的目標裝置。`"default"` 會恢復載入器所指定的裝置。`"gpu:N"` 會將 VAE 固定到第 N 個可用的 GPU。CPU 不是支援的選項，如果提供將會被忽略。（預設值：`"default"`） |
+| `裝置` | COMBO | 是 | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | VAE 的目標裝置。`"default"` 會恢復載入器所指定的裝置。`"gpu:N"` 會將 VAE 固定到第 N 個可用的 GPU。CPU 不是支援的選項，如果提供將會被忽略。（預設值：`"default"`） |
 
 ## 輸出
 

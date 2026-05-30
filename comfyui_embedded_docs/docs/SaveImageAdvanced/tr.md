@@ -8,8 +8,8 @@
 
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | Evet | - | Kaydedilecek görüntüler. |
-| `filename_prefix` | STRING | Evet | - | Kaydedilecek dosyanın ön eki. `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "ComfyUI") |
+| `görüntüler` | IMAGE | Evet | - | Kaydedilecek görüntüler. |
+| `dosya_adı_ön_eki` | STRING | Evet | - | Kaydedilecek dosyanın ön eki. `%date:yyyy-MM-dd%` veya `%Empty Latent Image.width%` gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "ComfyUI") |
 | `format` | COMBO | Evet | `"png"`<br>`"exr"` | Görüntünün kaydedileceği dosya biçimi. Bir biçim seçmek, o biçim için ek seçenekleri görüntüler. |
 | `bit_depth` | COMBO | Evet (koşullu) | PNG için: `"8-bit"`<br>`"16-bit"`<br>EXR için: `"32-bit float"` | Seçilen biçim için bit derinliği. Bu parametre, bir biçim seçildiğinde görünür. (varsayılan: PNG için "8-bit", EXR için "32-bit float") |
 | `input_color_space` | COMBO | Evet (koşullu) | PNG için: `"sRGB"`<br>EXR için: `"sRGB"`<br>`"HDR"`<br>`"linear"` | Girdi tensörünün renk uzayı. PNG için yalnızca sRGB kullanılabilir. EXR için görüntü her zaman eşleşen gamutta sahne-doğrusal olarak yazılır. (varsayılan: "sRGB") |
@@ -27,7 +27,7 @@
 
 | Çıktı Adı | Veri Türü | Açıklama |
 |-----------|-----------|-------------|
-| `images` | IMAGE | Her biri dosya adı, alt klasör ve tür ("output") içeren kaydedilmiş görüntü sonuçlarının listesi. Bu çıktı, kullanıcı arayüzü görüntüleme amaçları için kullanılır. |
+| `görüntüler` | IMAGE | Her biri dosya adı, alt klasör ve tür ("output") içeren kaydedilmiş görüntü sonuçlarının listesi. Bu çıktı, kullanıcı arayüzü görüntüleme amaçları için kullanılır. |
 
 ---
 **Source fingerprint (SHA-256):** `61e52bab8c28437cf648e4790823c15dbe0f758478635b0bd8b5cce785421fe5`
