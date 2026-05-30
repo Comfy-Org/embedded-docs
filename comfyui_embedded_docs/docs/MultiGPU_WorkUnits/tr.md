@@ -60,13 +60,9 @@ MultiGPU CFG Split açık bir workflow çalıştırırken Windows Görev Yöneti
 
 Workflow içinde sampler çalışırken kurulu iki GPU'da da etkinlik görmelisiniz.
 
-## Bilinen sorunlar
-
-Henüz netleştirilmedi.
-
 ## Örnek çoklu GPU workflow'u: (Wan 2.2 FP8)
 
-[https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link](https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link)
+[Örnek workflow (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

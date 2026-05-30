@@ -61,13 +61,9 @@ Lorsque vous exécutez un workflow avec MultiGPU CFG Split activé, vous pouvez 
 
 Vous devriez voir de l'activité sur les deux GPU installés pendant que le sampler fonctionne dans le workflow.
 
-## Problèmes connus
-
-À préciser.
-
 ## Exemple de workflow multi-GPU : (Wan 2.2 FP8)
 
-[https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link](https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link)
+[Workflow d'exemple (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

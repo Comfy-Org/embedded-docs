@@ -57,13 +57,9 @@ MultiGPU CFG Split を有効にしたワークフローを実行したら、Wind
 ![image4.png](./asset/image4.webp)  
 ワークフローのサンプラーが動いている間、2枚のGPUの両方に動きが見えれば正常です。
 
-## 既知の問題
-
-TBD
-
 ## サンプルのマルチGPUワークフロー（Wan 2.2 FP8）
 
-[https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive\_link](https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link)  
+[サンプルワークフロー（Wan 2.2 FP8）](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

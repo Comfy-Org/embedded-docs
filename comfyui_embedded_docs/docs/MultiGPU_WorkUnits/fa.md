@@ -57,13 +57,9 @@ ComfyUI هنگام شروع به کار، چند GPU بودن سیستم را ب
 ![image4.png](./asset/image4.webp)  
 در زمانی که نمونه گیر در گردش کار در حال اجرا است، باید روی هر دو GPU نصب‌شده فعالیت ببینید.
 
-## مشکلات شناخته‌شده
-
-این بخش بعدا تکمیل می‌شود.
-
 ## لینک workflow نمونه
 
-[https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive\_link](https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link)
+[گردش کار نمونه (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

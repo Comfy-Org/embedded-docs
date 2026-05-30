@@ -57,13 +57,9 @@ When running a workflow with MultiGPU CFG Split enabled, you can look at the Win
 ![image4.png](./asset/image4.webp)  
 You should see activity on both installed GPUs while the sampler is running in the workflow. 
 
-## Known Issues:
-
-TBD
-
 ## Sample Multi-GPU Workflow: (Wan 2.2 FP8)
 
-[https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive\_link](https://drive.google.com/file/d/1VORVx7rMPSH9rY1HD2hCujcHa2vB9rzv/view?usp=drive_link)  
+[Sample workflow (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`
