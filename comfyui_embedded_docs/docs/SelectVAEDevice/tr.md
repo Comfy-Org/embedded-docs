@@ -9,7 +9,7 @@ Bu düğüm, VAE modelinin hangi GPU cihazına yerleştirileceğini manuel olara
 | Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
 |-----------|-----------|----------|--------|----------|
 | `vae` | VAE | Evet | | Belirli bir cihaza atanacak VAE modeli. |
-| `device` | COMBO | Evet | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | VAE için hedef cihaz. `"default"`, yükleyici tarafından atanan cihazı geri yükler. `"gpu:N"`, VAE'yi N. kullanılabilir GPU'ya sabitler. CPU desteklenen bir seçenek değildir ve sağlanırsa yok sayılır. (varsayılan: `"default"`) |
+| `cihaz` | COMBO | Evet | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | VAE için hedef cihaz. `"default"`, yükleyici tarafından atanan cihazı geri yükler. `"gpu:N"`, VAE'yi N. kullanılabilir GPU'ya sabitler. CPU desteklenen bir seçenek değildir ve sağlanırsa yok sayılır. (varsayılan: `"default"`) |
 
 ## Çıkışlar
 

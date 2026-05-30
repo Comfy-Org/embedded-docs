@@ -9,7 +9,7 @@
 | 参数 | 数据类型 | 是否必填 | 范围 | 描述 |
 |-----------|-----------|----------|-------|-------------|
 | `vae` | VAE | 是 | | 要分配到特定设备的 VAE 模型。 |
-| `device` | COMBO | 是 | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | VAE 的目标设备。`"default"` 恢复加载器分配的设备。`"gpu:N"` 将 VAE 固定到第 N 个可用的 GPU。不支持 CPU 作为选择，如果提供则会被忽略。（默认值：`"default"`） |
+| `设备` | COMBO | 是 | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | VAE 的目标设备。`"default"` 恢复加载器分配的设备。`"gpu:N"` 将 VAE 固定到第 N 个可用的 GPU。不支持 CPU 作为选择，如果提供则会被忽略。（默认值：`"default"`） |
 
 ## 输出
 

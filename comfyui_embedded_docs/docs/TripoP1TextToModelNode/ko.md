@@ -1,0 +1,30 @@
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/ko.md)
+
+# 개요
+
+이 노드는 Tripo P1 API를 사용하여 텍스트 설명으로부터 3D 모델을 생성합니다. 안정적인 토폴로지를 가진 로우폴리, 게임에 바로 사용할 수 있는 메시를 생성하도록 최적화되어 있어 실시간 애플리케이션에 적합합니다.
+
+# 입력
+
+| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
+|-----------|-----------|----------|-------|-------------|
+| `prompt` | STRING | 예 | 최대 1024자 | 생성하려는 3D 모델에 대한 텍스트 설명입니다. |
+| `negative_prompt` | STRING | 아니요 | 최대 255자 | 생성된 모델에 포함되지 않아야 할 내용에 대한 텍스트 설명입니다. |
+| `output_mode` | DICT | 예 | 설명 참조 | 출력 모델의 품질과 텍스처 설정을 제어합니다. 이 매개변수는 다음 키를 포함하는 딕셔너리입니다:<br><br>`texture_quality`: STRING, 범위: `"standard"`<br>`pbr`: BOOLEAN, 기본값: True<br>`texture`: BOOLEAN, 기본값: True<br>`subdivision`: INT, 기본값: 0, 범위: 0~2<br>`texture_size`: INT, 기본값: 2048, 범위: 512~4096 (2의 거듭제곱이어야 함)<br>`texture_format`: STRING, 범위: `"png"`<br>`texture_clean`: BOOLEAN, 기본값: False<br>`texture_seamless`: BOOLEAN, 기본값: False<br><br>기본값: `{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` |
+| `image_seed` | INT | 아니요 |  | 이미지 생성을 위한 시드 값으로, 무작위성을 제어하는 데 사용됩니다. 기본값: 42. |
+| `face_limit` | INT | 아니요 |  | 생성된 메시의 최대 면 수입니다. -1 값은 제한이 없음을 의미합니다. 기본값: -1. |
+| `model_seed` | INT | 아니요 |  | 모델 생성을 위한 시드 값으로, 무작위성을 제어하는 데 사용됩니다. |
+| `auto_size` | BOOLEAN | 아니요 |  | 활성화하면 노드가 최적의 모델 크기를 자동으로 결정합니다. 기본값: False. |
+| `export_uv` | BOOLEAN | 아니요 |  | 활성화하면 모델에 텍스처 매핑을 위한 UV 좌표가 포함됩니다. 기본값: True. |
+| `compress_geometry` | BOOLEAN | 아니요 |  | 활성화하면 파일 크기를 줄이기 위해 지오메트리가 압축됩니다. 기본값: False. |
+
+# 출력
+
+| 출력 이름 | 데이터 타입 | 설명 |
+|-------------|-----------|-------------|
+| `model_file` | STRING | 생성된 3D 모델의 파일 경로입니다 (하위 호환성 전용). |
+| `model task_id` | MODEL_TASK_ID | 모델 생성 요청에 대한 고유 작업 ID입니다. |
+| `GLB` | FILE3DGLB | GLB 형식으로 생성된 3D 모델입니다. |
+
+---
+**Source fingerprint (SHA-256):** `154e75209d65c823d5681b74cd12fe7b2ed37d7b94bf51cac86f343c68f85722`

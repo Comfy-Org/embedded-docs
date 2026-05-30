@@ -11,7 +11,7 @@ Este nodo permite seleccionar manualmente en qué dispositivo GPU debe colocarse
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
 | `vae` | VAE | Sí | | El modelo VAE que se asignará a un dispositivo específico. |
-| `device` | COMBO | Sí | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | El dispositivo de destino para el VAE. `"default"` restaura el dispositivo asignado por el cargador. `"gpu:N"` fija el VAE a la N-ésima GPU disponible. La CPU no es una opción compatible y será ignorada si se proporciona. (predeterminado: `"default"`) |
+| `dispositivo` | COMBO | Sí | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | El dispositivo de destino para el VAE. `"default"` restaura el dispositivo asignado por el cargador. `"gpu:N"` fija el VAE a la N-ésima GPU disponible. La CPU no es una opción compatible y será ignorada si se proporciona. (predeterminado: `"default"`) |
 
 ## Salidas
 

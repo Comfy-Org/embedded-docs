@@ -8,9 +8,9 @@ O nó **SaveImageAdvanced** salva imagens no diretório de saída do ComfyUI com
 
 | Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
 |-----------|---------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | - | As imagens a serem salvas. |
-| `filename_prefix` | STRING | Sim | - | O prefixo para o arquivo a ser salvo. Pode incluir tokens de formatação como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (padrão: "ComfyUI") |
-| `format` | COMBO | Sim | `"png"`<br>`"exr"` | O formato de arquivo no qual salvar a imagem. Selecionar um formato revela opções adicionais para aquele formato. |
+| `imagens` | IMAGE | Sim | - | As imagens a serem salvas. |
+| `prefixo_do_nome_do_arquivo` | STRING | Sim | - | O prefixo para o arquivo a ser salvo. Pode incluir tokens de formatação como `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (padrão: "ComfyUI") |
+| `formato` | COMBO | Sim | `"png"`<br>`"exr"` | O formato de arquivo no qual salvar a imagem. Selecionar um formato revela opções adicionais para aquele formato. |
 | `bit_depth` | COMBO | Sim (condicional) | Para PNG: `"8-bit"`<br>`"16-bit"`<br>Para EXR: `"32-bit float"` | A profundidade de bits para o formato selecionado. Este parâmetro aparece quando um formato é escolhido. (padrão: "8-bit" para PNG, "32-bit float" para EXR) |
 | `input_color_space` | COMBO | Sim (condicional) | Para PNG: `"sRGB"`<br>Para EXR: `"sRGB"`<br>`"HDR"`<br>`"linear"` | Espaço de cores do tensor de entrada. Para PNG, apenas sRGB está disponível. Para EXR, a imagem é sempre gravada como cena-linear no gamute correspondente. (padrão: "sRGB") |
 
@@ -27,7 +27,7 @@ O nó **SaveImageAdvanced** salva imagens no diretório de saída do ComfyUI com
 
 | Nome da Saída | Tipo de Dados | Descrição |
 |---------------|---------------|-----------|
-| `images` | IMAGE | Uma lista de resultados de imagens salvas, cada um contendo o nome do arquivo, subpasta e tipo ("output"). Esta saída é usada para fins de exibição na interface do usuário. |
+| `imagens` | IMAGE | Uma lista de resultados de imagens salvas, cada um contendo o nome do arquivo, subpasta e tipo ("output"). Esta saída é usada para fins de exibição na interface do usuário. |
 
 ---
 **Source fingerprint (SHA-256):** `61e52bab8c28437cf648e4790823c15dbe0f758478635b0bd8b5cce785421fe5`

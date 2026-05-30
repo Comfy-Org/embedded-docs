@@ -99,7 +99,7 @@ Common uses: master RGB curves, per-channel R/G/B curves, luminance-driven remap
 
 | Uniform | Type | Description |
 |---------|------|-------------|
-| `u_resolution` | `vec2` | **Output** framebuffer dimensions in pixels (`width, height`). This is the size you're writing to, which may differ from any input image's size when `size_mode` is `"custom"`. |
+| `u_resolution` | `vec2` | **Output** framebuffer dimensions in pixels (`width, height`). This is the size you're writing to, which may differ from any input image's size when `尺寸模式` is `"custom"`. |
 
 <Note>
 **Computing texel size for sampling:** Don't use `1.0 / u_resolution` to step one pixel in an input texture. `u_resolution` is the *output* size, which may not match the input's size. Instead use `textureSize()` on the actual texture you're sampling:

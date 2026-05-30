@@ -9,7 +9,7 @@ Le nœud **SaveImageAdvanced** enregistre des images dans votre répertoire de s
 | Paramètre | Type de données | Requis | Plage | Description |
 |-----------|-----------------|--------|-------|-------------|
 | `images` | IMAGE | Oui | - | Les images à enregistrer. |
-| `filename_prefix` | STRING | Oui | - | Le préfixe pour le fichier à enregistrer. Peut inclure des jetons de formatage tels que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (par défaut : "ComfyUI") |
+| `préfixe_nom_fichier` | STRING | Oui | - | Le préfixe pour le fichier à enregistrer. Peut inclure des jetons de formatage tels que `%date:yyyy-MM-dd%` ou `%Empty Latent Image.width%`. (par défaut : "ComfyUI") |
 | `format` | COMBO | Oui | `"png"`<br>`"exr"` | Le format de fichier dans lequel enregistrer l'image. La sélection d'un format révèle des options supplémentaires pour ce format. |
 | `bit_depth` | COMBO | Oui (conditionnel) | Pour PNG : `"8-bit"`<br>`"16-bit"`<br>Pour EXR : `"32-bit float"` | La profondeur de bits pour le format sélectionné. Ce paramètre apparaît lorsqu'un format est choisi. (par défaut : "8-bit" pour PNG, "32-bit float" pour EXR) |
 | `input_color_space` | COMBO | Oui (conditionnel) | Pour PNG : `"sRGB"`<br>Pour EXR : `"sRGB"`<br>`"HDR"`<br>`"linear"` | Espace colorimétrique du tenseur d'entrée. Pour PNG, seul sRGB est disponible. Pour EXR, l'image est toujours écrite en lumière scène-linéaire dans le gamut correspondant. (par défaut : "sRGB") |
