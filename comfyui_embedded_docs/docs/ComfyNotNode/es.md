@@ -8,7 +8,7 @@ El nodo Not realiza una operación lógica NOT sobre cualquier valor de entrada.
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `value` | ANY | Sí | Cualquier valor | El valor de entrada que se va a invertir. Se acepta cualquier tipo de dato y se evalúa utilizando las reglas de veracidad de Python. |
+| `valor` | ANY | Sí | Cualquier valor | El valor de entrada que se va a invertir. Se acepta cualquier tipo de dato y se evalúa utilizando las reglas de veracidad de Python. |
 
 ## Salidas
 

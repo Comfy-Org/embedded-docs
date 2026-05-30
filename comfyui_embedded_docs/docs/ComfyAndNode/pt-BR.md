@@ -10,7 +10,7 @@ O nó And realiza uma operação lógica E em um conjunto de valores de entrada.
 
 | Parâmetro | Tipo de Dado | Obrigatório | Intervalo | Descrição |
 |-----------|--------------|-------------|-----------|-----------|
-| `values` | ANY | Sim | 1 ou mais valores | Uma lista de valores a serem avaliados. O nó aceita pelo menos um valor, e você pode adicionar mais clicando no botão "+" no nó. |
+| `valores` | ANY | Sim | 1 ou mais valores | Uma lista de valores a serem avaliados. O nó aceita pelo menos um valor, e você pode adicionar mais clicando no botão "+" no nó. |
 
 **Nota:** O nó utiliza as regras de veracidade do Python para determinar se um valor é `true` ou `false`. Por exemplo, uma string vazia, o número 0, uma lista vazia e `None` são todos considerados `false`. Todos os outros valores são considerados `true`.
 

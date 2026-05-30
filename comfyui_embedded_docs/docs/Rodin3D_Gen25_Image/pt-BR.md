@@ -10,21 +10,21 @@ Este nó gera um modelo 3D a partir de uma a cinco imagens de referência usando
 
 | Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
 |-----------|--------------|-------------|-------|-----------|
-| `images` | IMAGE | Sim | 1 a 5 imagens | Uma a cinco imagens de entrada. A primeira imagem é usada para materiais quando múltiplas imagens são fornecidas. |
-| `mode` | COMBO | Sim | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` | O modo de qualidade de geração. Modos de qualidade mais alta produzem melhores resultados, mas custam mais. |
+| `imagens` | IMAGE | Sim | 1 a 5 imagens | Uma a cinco imagens de entrada. A primeira imagem é usada para materiais quando múltiplas imagens são fornecidas. |
+| `modo` | COMBO | Sim | `"Fast"`<br>`"Regular"`<br>`"Extreme-High"` | O modo de qualidade de geração. Modos de qualidade mais alta produzem melhores resultados, mas custam mais. |
 | `material` | COMBO | Sim | `"PBR"`<br>`"Matte"` | O tipo de material para o modelo 3D gerado. |
-| `geometry_file_format` | COMBO | Sim | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` | O formato de arquivo de saída para a geometria do modelo 3D. |
-| `texture_mode` | COMBO | Sim | `"Original"`<br>`"Clean"`<br>`"Style"` | O modo de geração de textura. "Original" preserva as texturas de entrada, "Clean" as remove e "Style" aplica uma textura estilizada. |
-| `seed` | INT | Sim | 0 a 2147483647 | Uma semente aleatória para resultados reproduzíveis. Use a mesma semente para obter a mesma saída. |
+| `formato_arquivo_geometria` | COMBO | Sim | `"glb"`<br>`"obj"`<br>`"stl"`<br>`"usdz"` | O formato de arquivo de saída para a geometria do modelo 3D. |
+| `modo_textura` | COMBO | Sim | `"Original"`<br>`"Clean"`<br>`"Style"` | O modo de geração de textura. "Original" preserva as texturas de entrada, "Clean" as remove e "Style" aplica uma textura estilizada. |
+| `semente` | INT | Sim | 0 a 2147483647 | Uma semente aleatória para resultados reproduzíveis. Use a mesma semente para obter a mesma saída. |
 | `TAPose` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve aplicar a pose T ao modelo gerado. |
-| `hd_texture` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve gerar um mapa de textura em alta definição. |
-| `texture_delight` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve remover a iluminação das imagens de entrada antes da geração da textura. |
-| `use_original_alpha` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve usar o canal alfa original das imagens de entrada. |
+| `textura_hd` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve gerar um mapa de textura em alta definição. |
+| `remover_iluminação_textura` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve remover a iluminação das imagens de entrada antes da geração da textura. |
+| `preservar_alpha_original` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve usar o canal alfa original das imagens de entrada. |
 | `addon_highpack` | BOOLEAN | Sim | Verdadeiro / Falso | Se deve gerar uma versão de alta poligonagem do modelo, além da versão padrão. |
-| `bbox_width` | INT | Sim | 1 a 1000 | A largura da caixa delimitadora para o modelo gerado em centímetros. |
-| `bbox_height` | INT | Sim | 1 a 1000 | A altura da caixa delimitadora para o modelo gerado em centímetros. |
-| `bbox_length` | INT | Sim | 1 a 1000 | O comprimento da caixa delimitadora para o modelo gerado em centímetros. |
-| `height_cm` | INT | Sim | 1 a 300 | A altura do modelo gerado em centímetros. |
+| `largura_bbox` | INT | Sim | 1 a 1000 | A largura da caixa delimitadora para o modelo gerado em centímetros. |
+| `altura_bbox` | INT | Sim | 1 a 1000 | A altura da caixa delimitadora para o modelo gerado em centímetros. |
+| `comprimento_bbox` | INT | Sim | 1 a 1000 | O comprimento da caixa delimitadora para o modelo gerado em centímetros. |
+| `altura_cm` | INT | Sim | 1 a 300 | A altura do modelo gerado em centímetros. |
 
 **Nota sobre a Quantidade de Imagens:** O nó aceita entre 1 e 5 imagens. Se você fornecer um lote de imagens (por exemplo, um lote de 4 imagens), cada imagem no lote é tratada como uma imagem de entrada separada. Fornecer mais de 5 imagens resultará em um erro.
 

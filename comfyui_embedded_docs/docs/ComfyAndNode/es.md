@@ -8,7 +8,7 @@ El nodo Y realiza una operación lógica AND sobre un conjunto de valores de ent
 
 | Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
 |-----------|--------------|-------------|-------|-------------|
-| `values` | ANY | Sí | 1 o más valores | Una lista de valores a evaluar. El nodo acepta al menos un valor, y puedes agregar más haciendo clic en el botón "+" del nodo. |
+| `valores` | ANY | Sí | 1 o más valores | Una lista de valores a evaluar. El nodo acepta al menos un valor, y puedes agregar más haciendo clic en el botón "+" del nodo. |
 
 **Nota:** El nodo utiliza las reglas de veracidad de Python para determinar si un valor es `true` o `false`. Por ejemplo, una cadena vacía, el número 0, una lista vacía y `None` se consideran `false`. Todos los demás valores se consideran `true`.
 
