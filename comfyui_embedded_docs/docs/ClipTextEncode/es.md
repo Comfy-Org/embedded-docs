@@ -52,19 +52,4 @@ Usa `{}` para crear prompts dinámicos. Por ejemplo, `{día|noche|mañana}` sele
 
 Si deseas incluir llaves literales en tu prompt sin activar el comportamiento dinámico, puedes escaparlas usando una barra invertida, ej. `\{palabra\}`.
 
-### Comentarios en Prompts
-
-Puedes añadir comentarios que se excluyen del prompt usando:
-
-- `//` para comentar una sola línea.
-- `/* */` para comentar una sección o varias líneas.
-
-Ejemplo:
-
-```
-// esta línea se excluye del prompt.
-un hermoso paisaje, /* esta parte se ignora */ alta calidad
-```
-
----
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

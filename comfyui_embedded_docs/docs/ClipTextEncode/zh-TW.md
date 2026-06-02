@@ -52,19 +52,4 @@ worst quality, embedding:EasyNegative, bad quality
 
 如果您想在提示詞中包含字面上的大括號而不觸發動態行為，可以使用反斜線進行跳脫，例如 `\{word\}`。
 
-### 提示詞中的註解
-
-您可以透過以下方式添加不會被包含在提示詞中的註解：
-
-- 使用 `//` 來註解掉單行。
-- 使用 `/* */` 來註解掉一個區塊或多行。
-
-範例：
-
-```
-// 此行將從提示詞中排除。
-a beautiful landscape, /* 此部分將被忽略 */ high quality
-```
-
----
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`
