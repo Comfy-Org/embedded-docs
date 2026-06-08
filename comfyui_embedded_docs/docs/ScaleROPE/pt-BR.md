@@ -1,24 +1,24 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/pt-BR.md)
-
 O nó ScaleROPE permite modificar a Codificação Posicional Rotativa (ROPE) de um modelo aplicando fatores de escala e deslocamento separados para seus componentes X, Y e T (tempo). Este é um nó experimental e avançado, usado para ajustar o comportamento de codificação posicional do modelo.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `modelo` | MODEL | Sim | - | O modelo cujos parâmetros ROPE serão modificados. |
-| `escala_x` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente X do ROPE (padrão: 1.0). |
-| `deslocamento_x` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente X do ROPE (padrão: 0.0). |
-| `escala_y` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente Y do ROPE (padrão: 1.0). |
-| `deslocamento_y` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente Y do ROPE (padrão: 0.0). |
-| `escala_t` | FLOAT | Não | 0.0 - 100.0 | O fator de escala a ser aplicado ao componente T (tempo) do ROPE (padrão: 1.0). |
-| `deslocamento_t` | FLOAT | Não | -256.0 - 256.0 | O valor de deslocamento a ser aplicado ao componente T (tempo) do ROPE (padrão: 0.0). |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `modelo` | O modelo cujos parâmetros ROPE serão modificados. | MODEL | Sim | - |
+| `escala_x` | O fator de escala a ser aplicado ao componente X do ROPE (padrão: 1.0). | FLOAT | Não | 0.0 - 100.0 |
+| `deslocamento_x` | O valor de deslocamento a ser aplicado ao componente X do ROPE (padrão: 0.0). | FLOAT | Não | -256.0 - 256.0 |
+| `escala_y` | O fator de escala a ser aplicado ao componente Y do ROPE (padrão: 1.0). | FLOAT | Não | 0.0 - 100.0 |
+| `deslocamento_y` | O valor de deslocamento a ser aplicado ao componente Y do ROPE (padrão: 0.0). | FLOAT | Não | -256.0 - 256.0 |
+| `escala_t` | O fator de escala a ser aplicado ao componente T (tempo) do ROPE (padrão: 1.0). | FLOAT | Não | 0.0 - 100.0 |
+| `deslocamento_t` | O valor de deslocamento a ser aplicado ao componente T (tempo) do ROPE (padrão: 0.0). | FLOAT | Não | -256.0 - 256.0 |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `modelo` | MODEL | O modelo com os novos parâmetros de escala e deslocamento do ROPE aplicados. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `modelo` | O modelo com os novos parâmetros de escala e deslocamento do ROPE aplicados. | MODEL |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `c5ca193a46faa9477a2e6c99b905205685e8add8faa2f2d161c7c384b3dc2441`

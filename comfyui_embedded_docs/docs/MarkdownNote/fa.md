@@ -1,5 +1,3 @@
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MarkdownNote/fa.md)
-
 گره‌ای برای افزودن یادداشت‌ها به یک گردش کار. از قالب‌بندی متن با استفاده از نحو مارک‌داون پشتیبانی می‌کند.
 
 ## ورودی‌ها
@@ -7,3 +5,5 @@
 ## خروجی‌ها
 
 این گره خروجی ندارد.
+
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MarkdownNote/fa.md)

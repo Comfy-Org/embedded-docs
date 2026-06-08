@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlT2VNode/fr.md)
-
 Voici la traduction en français de la documentation du nœud **Kling Text to Video Camera Control** :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlT2VNode/en.md)
@@ -9,21 +7,23 @@ Transforme du texte en vidéos cinématographiques avec des mouvements de camér
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | - | Texte d’invite positif |
-| `negative_prompt` | STRING | Oui | - | Texte d’invite négatif |
-| `cfg_scale` | FLOAT | Non | 0.0-1.0 | Contrôle la fidélité de la sortie par rapport à l’invite (par défaut : 0.75) |
-| `aspect_ratio` | COMBO | Non | "16:9"<br>"9:16"<br>"1:1"<br>"21:9"<br>"3:4"<br>"4:3" | Le rapport hauteur/largeur de la vidéo générée (par défaut : "16:9") |
-| `camera_control` | CAMERA_CONTROL | Non | - | Peut être créé à l’aide du nœud Kling Camera Controls. Contrôle le mouvement et le déplacement de la caméra pendant la génération de la vidéo. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `prompt` | Texte d’invite positif | STRING | Oui | - |
+| `negative_prompt` | Texte d’invite négatif | STRING | Oui | - |
+| `cfg_scale` | Contrôle la fidélité de la sortie par rapport à l’invite (par défaut : 0.75) | FLOAT | Non | 0.0-1.0 |
+| `aspect_ratio` | Le rapport hauteur/largeur de la vidéo générée (par défaut : "16:9") | COMBO | Non | "16:9"<br>"9:16"<br>"1:1"<br>"21:9"<br>"3:4"<br>"4:3" |
+| `camera_control` | Peut être créé à l’aide du nœud Kling Camera Controls. Contrôle le mouvement et le déplacement de la caméra pendant la génération de la vidéo. | CAMERA_CONTROL | Non | - |
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `video_id` | VIDEO | La vidéo générée avec les effets de contrôle de caméra |
-| `duration` | STRING | L’identifiant unique de la vidéo générée |
-| `duration` | STRING | La durée de la vidéo générée |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `video_id` | La vidéo générée avec les effets de contrôle de caméra | VIDEO |
+| `duration` | L’identifiant unique de la vidéo générée | STRING |
+| `duration` | La durée de la vidéo générée | STRING |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlT2VNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `4ebdd6af31f9e5c0816c4bcba886179b3f7d2b5030ff4fa3ddad6df25c528af7`

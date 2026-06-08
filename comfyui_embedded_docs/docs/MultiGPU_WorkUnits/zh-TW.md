@@ -1,5 +1,3 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/zh-TW.md)
-
 ## 概述
 
 MultiGPU CFG Split 節點可讓同一台電腦中的多張 GPU 一起處理擴散取樣。實際加速幅度會依工作流程而不同，但在常見工作流程中，已測得最高約 1.95 倍的速度提升。
@@ -28,16 +26,16 @@ ComfyUI 會在啟動時自動偵測系統中已安裝的多張 GPU。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 是 | 不適用 | 在開始取樣前，先準備給 MultiGPU CFG 拆分使用的模型。 |
-| `max_gpus` | INT | 是 | 最小值：1<br>步長：1<br>預設值：2 | 可用來分攤負載的相同 GPU 最大數量。通常可設為系統中已安裝且型號一致的 GPU 數量。 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `model` | 在開始取樣前，先準備給 MultiGPU CFG 拆分使用的模型。 | MODEL | 是 | 不適用 |
+| `max_gpus` | 可用來分攤負載的相同 GPU 最大數量。通常可設為系統中已安裝且型號一致的 GPU 數量。 | INT | 是 | 最小值：1<br>步長：1<br>預設值：2 |
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `MODEL` | MODEL | 已準備好進行 MultiGPU CFG 拆分的模型，可直接用於加速取樣。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `MODEL` | 已準備好進行 MultiGPU CFG 拆分的模型，可直接用於加速取樣。 | MODEL |
 
 ## 節點位置與工作流程說明
 
@@ -60,6 +58,8 @@ ComfyUI 會在啟動時自動偵測系統中已安裝的多張 GPU。
 ## 範例多 GPU 工作流程（Wan 2.2 FP8）
 
 [範例工作流程（Wan 2.2 FP8）](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

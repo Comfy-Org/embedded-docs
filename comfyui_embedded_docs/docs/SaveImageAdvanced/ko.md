@@ -1,18 +1,16 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/ko.md)
-
 # SaveImageAdvanced
 
 **SaveImageAdvanced** 노드는 파일 형식, 비트 심도 및 색상 공간에 대한 고급 제어 기능을 제공하며 이미지를 ComfyUI 출력 디렉토리에 저장합니다. PNG 또는 EXR 파일로 저장하는 것을 지원하며, 저장된 파일에 워크플로우 메타데이터를 포함할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `images` | IMAGE | 예 | - | 저장할 이미지입니다. |
-| `filename_prefix` | STRING | 예 | - | 저장할 파일의 접두사입니다. `%date:yyyy-MM-dd%` 또는 `%Empty Latent Image.width%`와 같은 형식 토큰을 포함할 수 있습니다. (기본값: "ComfyUI") |
-| `format` | COMBO | 예 | `"png"`<br>`"exr"` | 이미지를 저장할 파일 형식입니다. 형식을 선택하면 해당 형식에 대한 추가 옵션이 표시됩니다. |
-| `bit_depth` | COMBO | 예 (조건부) | PNG: `"8-bit"`<br>`"16-bit"`<br>EXR: `"32-bit float"` | 선택한 형식의 비트 심도입니다. 이 매개변수는 형식이 선택되면 나타납니다. (기본값: PNG는 "8-bit", EXR은 "32-bit float") |
-| `input_color_space` | COMBO | 예 (조건부) | PNG: `"sRGB"`<br>EXR: `"sRGB"`<br>`"HDR"`<br>`"linear"` | 입력 텐서의 색상 공간입니다. PNG의 경우 sRGB만 사용 가능합니다. EXR의 경우 이미지는 항상 일치하는 색역의 장면-선형(scene-linear)으로 기록됩니다. (기본값: "sRGB") |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `images` | 저장할 이미지입니다. | IMAGE | 예 | - |
+| `filename_prefix` | 저장할 파일의 접두사입니다. `%date:yyyy-MM-dd%` 또는 `%Empty Latent Image.width%`와 같은 형식 토큰을 포함할 수 있습니다. (기본값: "ComfyUI") | STRING | 예 | - |
+| `format` | 이미지를 저장할 파일 형식입니다. 형식을 선택하면 해당 형식에 대한 추가 옵션이 표시됩니다. | COMBO | 예 | `"png"`<br>`"exr"` |
+| `bit_depth` | 선택한 형식의 비트 심도입니다. 이 매개변수는 형식이 선택되면 나타납니다. (기본값: PNG는 "8-bit", EXR은 "32-bit float") | COMBO | 예 (조건부) | PNG: `"8-bit"`<br>`"16-bit"`<br>EXR: `"32-bit float"` |
+| `input_color_space` | 입력 텐서의 색상 공간입니다. PNG의 경우 sRGB만 사용 가능합니다. EXR의 경우 이미지는 항상 일치하는 색역의 장면-선형(scene-linear)으로 기록됩니다. (기본값: "sRGB") | COMBO | 예 (조건부) | PNG: `"sRGB"`<br>EXR: `"sRGB"`<br>`"HDR"`<br>`"linear"` |
 
 **매개변수 종속성 참고 사항:**
 - `bit_depth` 및 `input_color_space` 매개변수는 특정 `format`이 선택된 경우에만 사용할 수 있습니다.
@@ -25,9 +23,11 @@
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `images` | IMAGE | 저장된 이미지 결과 목록으로, 각 결과는 파일 이름, 하위 폴더 및 유형("output")을 포함합니다. 이 출력은 UI 표시 목적으로 사용됩니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `images` | 저장된 이미지 결과 목록으로, 각 결과는 파일 이름, 하위 폴더 및 유형("output")을 포함합니다. 이 출력은 UI 표시 목적으로 사용됩니다. | IMAGE |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `61e52bab8c28437cf648e4790823c15dbe0f758478635b0bd8b5cce785421fe5`

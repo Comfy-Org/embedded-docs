@@ -1,5 +1,3 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/ko.md)
-
 ## 개요
 
 MultiGPU CFG Split 노드는 같은 컴퓨터에 설치된 여러 GPU가 확산 샘플링을 함께 처리할 수 있게 해줍니다. 실제 속도 향상은 워크플로에 따라 다르지만, 일반적인 워크플로에서는 최대 약 1.95배까지 빨라진 사례가 확인되었습니다.
@@ -28,16 +26,16 @@ Ampere 이상 아키텍처를 사용하는 동일한 듀얼 GPU 구성이라면 
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | 해당 없음 | 샘플링 전에 MultiGPU CFG 분할용으로 준비할 모델입니다. |
-| `max_gpus` | INT | 예 | 최소: 1<br>단계: 1<br>기본값: 2 | 부하 분산에 사용할 동일 GPU의 최대 수입니다. 보통 시스템에 설치된 같은 종류의 GPU 개수에 맞춰 설정합니다. |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `model` | 샘플링 전에 MultiGPU CFG 분할용으로 준비할 모델입니다. | MODEL | 예 | 해당 없음 |
+| `max_gpus` | 부하 분산에 사용할 동일 GPU의 최대 수입니다. 보통 시스템에 설치된 같은 종류의 GPU 개수에 맞춰 설정합니다. | INT | 예 | 최소: 1<br>단계: 1<br>기본값: 2 |
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `MODEL` | MODEL | MultiGPU CFG 분할용으로 준비되어, 바로 가속 샘플링에 사용할 수 있는 모델입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `MODEL` | MultiGPU CFG 분할용으로 준비되어, 바로 가속 샘플링에 사용할 수 있는 모델입니다. | MODEL |
 
 ## 노드 배치와 워크플로 참고사항
 
@@ -60,6 +58,8 @@ MultiGPU CFG Split을 켠 워크플로를 실행할 때는 Windows 작업 관리
 ## 예시 멀티 GPU 워크플로 (Wan 2.2 FP8)
 
 [예시 워크플로 (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

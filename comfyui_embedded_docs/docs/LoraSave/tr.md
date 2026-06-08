@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraSave/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,22 +30,24 @@ LoraSave düğümü, model farklılıklarından LoRA (Düşük Dereceli Uyarlama
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `dosyaadı_öneki` | STRING | Evet | - | Çıktı dosya adı için ön ek (varsayılan: "loras/ComfyUI_extracted_lora") |
-| `rütbe` | INT | Evet | 1-4096 | LoRA için derece değeri; boyutu ve karmaşıklığı kontrol eder (varsayılan: 8) |
-| `lora_türü` | COMBO | Evet | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` | Oluşturulacak LoRA türü (varsayılan: "standard") |
-| `yanlılık_farkı` | BOOLEAN | Evet | - | LoRA hesaplamasına bias farklılıklarının dahil edilip edilmeyeceği (varsayılan: True) |
-| `model_farkı` | MODEL | Hayır | - | LoRA'ya dönüştürülecek ModelSubtract çıktısı |
-| `metin_kodlayıcı_farkı` | CLIP | Hayır | - | LoRA'ya dönüştürülecek CLIPSubtract çıktısı |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `dosyaadı_öneki` | Çıktı dosya adı için ön ek (varsayılan: "loras/ComfyUI_extracted_lora") | STRING | Evet | - |
+| `rütbe` | LoRA için derece değeri; boyutu ve karmaşıklığı kontrol eder (varsayılan: 8) | INT | Evet | 1-4096 |
+| `lora_türü` | Oluşturulacak LoRA türü (varsayılan: "standard") | COMBO | Evet | `"standard"`<br>`"locon"`<br>`"loha"`<br>`"lokr"`<br>`"dylora"` |
+| `yanlılık_farkı` | LoRA hesaplamasına bias farklılıklarının dahil edilip edilmeyeceği (varsayılan: True) | BOOLEAN | Evet | - |
+| `model_farkı` | LoRA'ya dönüştürülecek ModelSubtract çıktısı | MODEL | Hayır | - |
+| `metin_kodlayıcı_farkı` | LoRA'ya dönüştürülecek CLIPSubtract çıktısı | CLIP | Hayır | - |
 
 **Not:** Düğümün çalışması için `model_diff` veya `text_encoder_diff` girdilerinden en az birinin sağlanması gerekir. Her ikisi de atlanırsa, düğüm herhangi bir çıktı üretmez.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| - | - | Bu düğüm, çıktı dizinine bir LoRA dosyası kaydeder ancak iş akışı üzerinden herhangi bir veri döndürmez. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| - | Bu düğüm, çıktı dizinine bir LoRA dosyası kaydeder ancak iş akışı üzerinden herhangi bir veri döndürmez. | - |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraSave/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `fdf020915ee233cf68250dcdcf87e7862d13ccc4fa73d8da8245727fdac46015`

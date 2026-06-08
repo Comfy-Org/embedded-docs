@@ -1,21 +1,19 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/tr.md)
-
 `CLIP Text Encode (CLIPTextEncode)`, metin açıklamalarınızı yapay zekanın anlayabileceği bir formata dönüştüren bir çevirmen görevi görür. Bu, yapay zekanın girdinizi yorumlamasına ve istenen görüntüyü oluşturmasına yardımcı olur.
 
 Bunu, farklı bir dil konuşan bir sanatçıyla iletişim kurmak gibi düşünün. Devasa görüntü-metin çiftleri üzerinde eğitilmiş CLIP modeli, açıklamalarınızı yapay zeka modelinin takip edebileceği "talimatlara" dönüştürerek bu boşluğu doldurur.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
-| `metin` | STRING | Evet | Herhangi bir metin | Kodlanacak metin. Çok satırlı girişi ve dinamik promptları destekler. |
-| `clip` | CLIP | Evet | Yüklenmiş CLIP modelleri | Metni kodlamak için kullanılan CLIP modeli. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `metin` | Kodlanacak metin. Çok satırlı girişi ve dinamik promptları destekler. | STRING | Evet | Herhangi bir metin |
+| `clip` | Metni kodlamak için kullanılan CLIP modeli. | CLIP | Evet | Yüklenmiş CLIP modelleri |
 
 ## Çıkışlar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `CONDITIONING` | CONDITIONING | Difüzyon modelini yönlendirmek için kullanılan, gömülü metni içeren bir koşullandırma. |
+| Çıkış Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `CONDITIONING` | Difüzyon modelini yönlendirmek için kullanılan, gömülü metni içeren bir koşullandırma. | CONDITIONING |
 
 ## Prompt Özellikleri
 
@@ -65,6 +63,8 @@ Aşağıdakileri kullanarak prompttan hariç tutulan yorumlar ekleyebilirsiniz:
 // bu satır prompttan hariç tutulur.
 a beautiful landscape, /* bu kısım yok sayılır */ high quality
 ```
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

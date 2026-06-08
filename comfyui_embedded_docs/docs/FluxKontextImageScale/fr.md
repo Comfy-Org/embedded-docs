@@ -1,18 +1,16 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/fr.md)
-
 Ce nœud redimensionne l'image d'entrée à une taille optimale utilisée lors de l'entraînement du modèle Flux Kontext, en utilisant l'algorithme de Lanczos et en se basant sur le rapport hauteur/largeur de l'image d'entrée. Ce nœud est particulièrement utile pour les images de grande taille, car des entrées surdimensionnées peuvent dégrader la qualité de sortie du modèle ou provoquer des problèmes tels que l'apparition de plusieurs sujets dans le résultat.
 
 ## Entrées
 
-| Nom du paramètre | Type de données | Type d'entrée | Valeur par défaut | Plage de valeurs | Description |
-|------------------|----------------|---------------|-------------------|------------------|-------------|
-| `image` | IMAGE | Requis | - | - | Image d'entrée à redimensionner |
+| Nom du paramètre | Description | Type de données | Type d'entrée | Valeur par défaut | Plage de valeurs |
+| --- | --- | --- | --- | --- | --- |
+| `image` | Image d'entrée à redimensionner | IMAGE | Requis | - | - |
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `image` | IMAGE | Image redimensionnée |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `image` | Image redimensionnée | IMAGE |
 
 ## Liste des tailles prédéfinies
 
@@ -37,3 +35,5 @@ Voici la liste des tailles standard utilisées lors de l'entraînement du modèl
 | 1456    | 720     | 2,022                   |
 | 1504    | 688     | 2,186                   |
 | 1568    | 672     | 2,333                   |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/fr.md)

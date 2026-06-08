@@ -1,5 +1,3 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/ar.md)
-
 عقدة معاينة الرسوم المتحركة ثلاثية الأبعاد (Preview3DAnimation) تُستخدم بشكل أساسي لمعاينة مخرجات النماذج ثلاثية الأبعاد. تستقبل هذه العقدة مدخلين: الأول هو `camera_info` القادم من عقدة التحميل ثلاثي الأبعاد (Load3D)، والثاني هو مسار ملف النموذج ثلاثي الأبعاد. يجب أن يكون مسار ملف النموذج موجودًا داخل مجلد `ComfyUI/output`.
 
 **الصيغ المدعومة**
@@ -11,10 +9,10 @@
 
 ## المدخلات
 
-| اسم المعامل | النوع          | الوصف                                  |
-| ----------- | -------------- | -------------------------------------------- |
-| camera_info | LOAD3D_CAMERA  | معلومات الكاميرا                           |
-| model_file  | STRING  | مسار ملف النموذج داخل `ComfyUI/output/`      |
+| اسم المعامل | الوصف | النوع |
+| --- | --- | --- |
+| camera_info | معلومات الكاميرا | LOAD3D_CAMERA |
+| model_file | مسار ملف النموذج داخل `ComfyUI/output/` | STRING |
 
 ## وصف منطقة اللوحة (Canvas)
 
@@ -101,3 +99,5 @@
 ![قائمة التصدير](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 توفر هذه القائمة إمكانية التحويل السريع وتصدير صيغ النماذج
+
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/ar.md)

@@ -1,15 +1,13 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/zh-TW.md)
-
 # DrawBBoxes 節點
 
 DrawBBoxes 節點透過在圖像上繪製邊界框、標籤和信心分數來可視化物件偵測結果。如果未提供輸入圖像，它會建立一個足夠大的空白畫布來容納所有繪製的框。此節點支援批次處理，允許您為多個圖像繪製不同的偵測結果，或在整個批次中重複相同的偵測結果。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `圖像` | IMAGE | 否 | - | 要繪製邊界框的輸入圖像。如果未提供，將生成一個空白畫布。 |
-| `bboxes` | BOUNDINGBOX | 是 | - | 邊界框字典的清單。每個字典應包含 `x`、`y`、`width`、`height` 鍵，以及可選的 `label` 和 `score` 鍵。 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `圖像` | 要繪製邊界框的輸入圖像。如果未提供，將生成一個空白畫布。 | IMAGE | 否 | - |
+| `bboxes` | 邊界框字典的清單。每個字典應包含 `x`、`y`、`width`、`height` 鍵，以及可選的 `label` 和 `score` 鍵。 | BOUNDINGBOX | 是 | - |
 
 **輸入限制：**
 *   `bboxes` 輸入為必要項目，必須提供。
@@ -18,9 +16,11 @@ DrawBBoxes 節點透過在圖像上繪製邊界框、標籤和信心分數來可
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `out_image` | IMAGE | 疊加了繪製的邊界框、標籤和信心分數的輸出圖像。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `out_image` | 疊加了繪製的邊界框、標籤和信心分數的輸出圖像。 | IMAGE |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`

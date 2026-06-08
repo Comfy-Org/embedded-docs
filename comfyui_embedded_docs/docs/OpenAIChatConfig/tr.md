@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,17 +30,19 @@ OpenAIChatConfig düğümü, OpenAI Sohbet Düğümü için ek yapılandırma se
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `kırpma` | COMBO | Evet | `"auto"`<br>`"disabled"` | Model yanıtı için kullanılacak kırpma stratejisi. auto: Bu yanıtın ve öncekilerin bağlamı, modelin bağlam penceresi boyutunu aşarsa, model, konuşmanın ortasındaki giriş öğelerini bırakarak yanıtı bağlam penceresine sığacak şekilde kırpar. disabled: Bir model yanıtı, bir model için bağlam penceresi boyutunu aşarsa, istek 400 hatasıyla başarısız olur (varsayılan: "auto") |
-| `maksimum_çıktı_tokenları` | INT | Hayır | 16 ila 16384 | Bir yanıt için oluşturulabilecek token sayısı için üst sınır; görünür çıktı tokenlerini içerir (varsayılan: 4096) |
-| `talimatlar` | STRING | Hayır | - | Modelin yanıtı nasıl oluşturacağına dair talimatlar (çok satırlı giriş desteklenir) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `kırpma` | Model yanıtı için kullanılacak kırpma stratejisi. auto: Bu yanıtın ve öncekilerin bağlamı, modelin bağlam penceresi boyutunu aşarsa, model, konuşmanın ortasındaki giriş öğelerini bırakarak yanıtı bağlam penceresine sığacak şekilde kırpar. disabled: Bir model yanıtı, bir model için bağlam penceresi boyutunu aşarsa, istek 400 hatasıyla başarısız olur (varsayılan: "auto") | COMBO | Evet | `"auto"`<br>`"disabled"` |
+| `maksimum_çıktı_tokenları` | Bir yanıt için oluşturulabilecek token sayısı için üst sınır; görünür çıktı tokenlerini içerir (varsayılan: 4096) | INT | Hayır | 16 ila 16384 |
+| `talimatlar` | Modelin yanıtı nasıl oluşturacağına dair talimatlar (çok satırlı giriş desteklenir) | STRING | Hayır | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `OPENAI_CHAT_CONFIG` | OPENAI_CHAT_CONFIG | OpenAI Sohbet Düğümleri ile kullanılmak üzere belirtilen ayarları içeren yapılandırma nesnesi |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `OPENAI_CHAT_CONFIG` | OpenAI Sohbet Düğümleri ile kullanılmak üzere belirtilen ayarları içeren yapılandırma nesnesi | OPENAI_CHAT_CONFIG |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `6d956aa1bc7f822c18ddaa55cd2345dad947fd93833de25a957f49878484af97`

@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/pt-BR.md)
-
 O nó **Load3DAnimation** é um nó essencial para carregar e processar arquivos de modelos 3D. Ao carregar o nó, ele recupera automaticamente os recursos 3D disponíveis em `ComfyUI/input/3d/`. Você também pode enviar arquivos 3D compatíveis para visualização usando a função de upload.
 
 > - A maioria das funções deste nó são as mesmas do nó Load 3D, mas este nó suporta o carregamento de modelos com animações, e você pode visualizar as animações correspondentes no nó.
@@ -17,23 +15,23 @@ Além das saídas regulares do nó, o Load3D tem muitas configurações relacion
 
 ## Entradas
 
-| Nome do Parâmetro | Tipo          | Descrição                                                      | Padrão | Intervalo      |
-|-------------------|---------------|----------------------------------------------------------------|--------|----------------|
-| model_file        | Seleção de Arquivo | Caminho do arquivo de modelo 3D, suporta upload, padrão é ler arquivos de modelo de `ComfyUI/input/3d/` | -      | Formatos suportados |
-| width             | INT           | Largura de renderização da tela                                | 1024   | 1-4096         |
-| height            | INT           | Altura de renderização da tela                                 | 1024   | 1-4096         |
+| Nome do Parâmetro | Descrição | Tipo | Padrão | Intervalo |
+| --- | --- | --- | --- | --- |
+| model_file | Caminho do arquivo de modelo 3D, suporta upload, padrão é ler arquivos de modelo de `ComfyUI/input/3d/` | Seleção de Arquivo | - | Formatos suportados |
+| width | Largura de renderização da tela | INT | 1024 | 1-4096 |
+| height | Altura de renderização da tela | INT | 1024 | 1-4096 |
 
 ## Saídas
 
-| Nome do Parâmetro | Tipo de Dado   | Descrição                                               |
-|-------------------|----------------|---------------------------------------------------------|
-| image             | IMAGE          | Imagem renderizada da tela                              |
-| mask              | MASK           | Máscara contendo a posição atual do modelo              |
-| mesh_path         | STRING         | Caminho do arquivo do modelo                            |
-| normal            | IMAGE          | Mapa normal                                             |
-| lineart           | IMAGE          | Saída de imagem em arte linear, o `edge_threshold` correspondente pode ser ajustado no menu do modelo da tela |
-| camera_info       | LOAD3D_CAMERA  | Informações da câmera                                   |
-| recording_video   | VIDEO          | Vídeo gravado (apenas quando existe gravação)           |
+| Nome do Parâmetro | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| image | Imagem renderizada da tela | IMAGE |
+| mask | Máscara contendo a posição atual do modelo | MASK |
+| mesh_path | Caminho do arquivo do modelo | STRING |
+| normal | Mapa normal | IMAGE |
+| lineart | Saída de imagem em arte linear, o `edge_threshold` correspondente pode ser ajustado no menu do modelo da tela | IMAGE |
+| camera_info | Informações da câmera | LOAD3D_CAMERA |
+| recording_video | Vídeo gravado (apenas quando existe gravação) | VIDEO |
 
 Pré-visualização de todas as saídas:
 ![Demonstração de Operação de Visualização](../Load3D/asset/load3d_outputs.webp)
@@ -135,3 +133,5 @@ O menu direito tem duas funções principais:
 
 1. **Redefinir proporção da visualização**: Após clicar no botão, a visualização ajustará a proporção da área de renderização da tela de acordo com a largura e altura definidas
 2. **Gravação de vídeo**: Permite gravar as operações atuais da visualização 3D como vídeo, permite importação e pode ser enviada como `recording_video` para nós subsequentes
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/pt-BR.md)

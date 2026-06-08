@@ -1,18 +1,16 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProEditVideoNode/fr.md)
-
 Le nœud Kling Omni Edit Video (Pro) utilise un modèle d'IA pour éditer une vidéo existante en fonction d'une description textuelle. Vous fournissez une vidéo source et un prompt, et le nœud génère une nouvelle vidéo de même durée avec les modifications demandées. Il peut éventuellement utiliser des images de référence pour guider le style et conserver l'audio original de la vidéo source.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `model_name` | COMBO | Oui | `"kling-v3-omni"`<br>`"kling-video-o1"` | Le modèle d'IA à utiliser pour l'édition vidéo (par défaut : `"kling-v3-omni"`). |
-| `invite` | STRING | Oui | | Un prompt textuel décrivant le contenu vidéo. Cela peut inclure des descriptions à la fois positives et négatives. |
-| `vidéo` | VIDEO | Oui | | Vidéo à éditer. La durée de la vidéo de sortie sera identique. |
-| `garder_son_original` | BOOLEAN | Oui | | Détermine si l'audio original de la vidéo d'entrée est conservé dans la sortie (par défaut : True). |
-| `images_de_référence` | IMAGE | Non | | Jusqu'à 4 images de référence supplémentaires. |
-| `résolution` | COMBO | Non | `"1080p"`<br>`"720p"` | La résolution de la vidéo de sortie (par défaut : `"1080p"`). |
-| `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `model_name` | Le modèle d'IA à utiliser pour l'édition vidéo (par défaut : `"kling-v3-omni"`). | COMBO | Oui | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `invite` | Un prompt textuel décrivant le contenu vidéo. Cela peut inclure des descriptions à la fois positives et négatives. | STRING | Oui |  |
+| `vidéo` | Vidéo à éditer. La durée de la vidéo de sortie sera identique. | VIDEO | Oui |  |
+| `garder_son_original` | Détermine si l'audio original de la vidéo d'entrée est conservé dans la sortie (par défaut : True). | BOOLEAN | Oui |  |
+| `images_de_référence` | Jusqu'à 4 images de référence supplémentaires. | IMAGE | Non |  |
+| `résolution` | La résolution de la vidéo de sortie (par défaut : `"1080p"`). | COMBO | Non | `"1080p"`<br>`"720p"` |
+| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 **Contraintes et limitations :**
 
@@ -25,9 +23,11 @@ Le nœud Kling Omni Edit Video (Pro) utilise un modèle d'IA pour éditer une vi
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `vidéo` | VIDEO | La vidéo éditée générée par le modèle d'IA. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `vidéo` | La vidéo éditée générée par le modèle d'IA. | VIDEO |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProEditVideoNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `ddc3fdc8c97cdcdd34f16a0916b13ffe6adeb46e58e2933516c9a6aef7c36730`

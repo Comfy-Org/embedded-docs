@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/en.md)
@@ -8,20 +6,22 @@ Le nœud Enregistrer les images et textes dans un dossier enregistre une liste d
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `images` | IMAGE | Oui | - | Liste des images à enregistrer. |
-| `texts` | STRING | Oui | - | Liste des légendes textuelles à enregistrer. |
-| `folder_name` | STRING | Non | - | Nom du dossier dans lequel enregistrer les images (à l'intérieur du répertoire de sortie). (par défaut : "dataset") |
-| `filename_prefix` | STRING | Non | - | Préfixe pour les noms de fichiers d'images enregistrés. (par défaut : "image") |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `images` | Liste des images à enregistrer. | IMAGE | Oui | - |
+| `texts` | Liste des légendes textuelles à enregistrer. | STRING | Oui | - |
+| `folder_name` | Nom du dossier dans lequel enregistrer les images (à l'intérieur du répertoire de sortie). (par défaut : "dataset") | STRING | Non | - |
+| `filename_prefix` | Préfixe pour les noms de fichiers d'images enregistrés. (par défaut : "image") | STRING | Non | - |
 
 **Remarque :** Les entrées `images` et `texts` sont des listes. Le nœud s'attend à ce que le nombre de légendes textuelles corresponde au nombre d'images fournies. Chaque légende sera enregistrée dans un fichier `.txt` correspondant à son image associée.
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| - | - | Ce nœud n'a aucune sortie. Il enregistre les fichiers directement dans le système de fichiers. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| - | Ce nœud n'a aucune sortie. Il enregistre les fichiers directement dans le système de fichiers. | - |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageTextDataSetToFolder/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `0c76f623e97b1502c850e0a59dc9edd7c241bcd823f5e32a8dcdd8b8160d2e44`

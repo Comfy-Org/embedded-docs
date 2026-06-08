@@ -1,5 +1,3 @@
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/fa.md)
-
 گره Preview3D عمدتاً برای پیش‌نمایش خروجی‌های مدل سه‌بعدی استفاده می‌شود. این گره دو ورودی دریافت می‌کند: یکی `camera_info` از گره Load3D و دیگری مسیر فایل مدل سه‌بعدی. مسیر فایل مدل باید در پوشه `ComfyUI/output` قرار داشته باشد.
 
 **فرمت‌های پشتیبانی‌شده**
@@ -11,10 +9,10 @@
 
 ## ورودی‌ها
 
-| نام پارامتر | نوع            | توضیحات                                  |
-| ----------- | -------------- | ---------------------------------------- |
-| camera_info | LOAD3D_CAMERA  | اطلاعات دوربین                           |
-| model_file  | LOAD3D_CAMERA  | مسیر فایل مدل در مسیر `ComfyUI/output/`  |
+| نام پارامتر | توضیحات | نوع |
+| --- | --- | --- |
+| camera_info | اطلاعات دوربین | LOAD3D_CAMERA |
+| model_file | مسیر فایل مدل در مسیر `ComfyUI/output/` | LOAD3D_CAMERA |
 
 ## توضیحات ناحیه بوم
 
@@ -101,3 +99,5 @@
 ![منوی_خروجی](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 این منو قابلیت تبدیل سریع و خروجی فرمت مدل را فراهم می‌کند
+
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/fa.md)

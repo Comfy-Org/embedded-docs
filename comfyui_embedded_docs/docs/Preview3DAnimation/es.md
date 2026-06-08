@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/es.md)
-
 El nodo Preview3DAnimation se utiliza principalmente para previsualizar salidas de modelos 3D. Este nodo recibe dos entradas: una es la `camera_info` del nodo Load3D, y la otra es la ruta al archivo del modelo 3D. La ruta del archivo del modelo debe estar ubicada en la carpeta `ComfyUI/output`.
 
 **Formatos Soportados**
@@ -11,10 +9,10 @@ Algunas preferencias relacionadas con los nodos 3D se pueden configurar en el me
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo           | Descripción                                  |
-| -------------------- | -------------- | -------------------------------------------- |
-| camera_info          | LOAD3D_CAMERA  | Información de la cámara                     |
-| model_file           | STRING         | Ruta del archivo del modelo en `ComfyUI/output/` |
+| Nombre del Parámetro | Descripción | Tipo |
+| --- | --- | --- |
+| camera_info | Información de la cámara | LOAD3D_CAMERA |
+| model_file | Ruta del archivo del modelo en `ComfyUI/output/` | STRING |
 
 ## Descripción del Área de Lienzo
 
@@ -101,3 +99,5 @@ A través de este menú, puede ajustar rápidamente la intensidad de iluminació
 ![menú_exportar](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Este menú proporciona la capacidad de convertir y exportar rápidamente formatos de modelo
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/es.md)

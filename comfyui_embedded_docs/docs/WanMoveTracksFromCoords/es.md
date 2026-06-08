@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,19 +30,21 @@ El nodo WanMoveTracksFromCoords crea trayectorias de movimiento a partir de una 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `coordenadas_de_pista` | STRING | No | N/A | Una cadena con formato JSON que contiene los datos de coordenadas para las trayectorias. El valor predeterminado es una lista vacía (`"[]"`). |
-| `máscara_de_pista` | MASK | No | N/A | Una máscara opcional. Cuando se proporciona, el nodo la utiliza para determinar la visibilidad de cada trayectoria por fotograma. |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `coordenadas_de_pista` | Una cadena con formato JSON que contiene los datos de coordenadas para las trayectorias. El valor predeterminado es una lista vacía (`"[]"`). | STRING | No | N/A |
+| `máscara_de_pista` | Una máscara opcional. Cuando se proporciona, el nodo la utiliza para determinar la visibilidad de cada trayectoria por fotograma. | MASK | No | N/A |
 
 **Nota:** La entrada `track_coords` espera una estructura JSON específica. Debe ser una lista de trayectorias, donde cada trayectoria es una lista de fotogramas, y cada fotograma es un objeto con coordenadas `x` y `y`. El número de fotogramas debe ser consistente en todas las trayectorias.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `longitud_de_pista` | TRACKS | Los datos de trayectoria generados, que contienen las coordenadas de la ruta y la información de visibilidad para cada trayectoria. |
-| `track_length` | INT | El número total de fotogramas en las trayectorias generadas. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `longitud_de_pista` | Los datos de trayectoria generados, que contienen las coordenadas de la ruta y la información de visibilidad para cada trayectoria. | TRACKS |
+| `track_length` | El número total de fotogramas en las trayectorias generadas. | INT |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `106b05b3bdb5ede6e31216b9f3c14160630df0eee1f4e8a645c2b6cf9fbecf8c`

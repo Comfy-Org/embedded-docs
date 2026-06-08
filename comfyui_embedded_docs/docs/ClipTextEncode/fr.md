@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI `CLIPTextEncode` :
 
 `CLIP Text Encode (CLIPTextEncode)` agit comme un traducteur, convertissant vos descriptions textuelles dans un format compréhensible par l'IA. Cela aide l'IA à interpréter votre entrée et à générer l'image souhaitée.
@@ -8,16 +6,16 @@ Considérez cela comme une communication avec un artiste qui parle une langue di
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `text` | STRING | Oui | Tout texte | Le texte à encoder. Prend en charge les entrées multilignes et les invites dynamiques. |
-| `clip` | CLIP | Oui | Modèles CLIP chargés | Le modèle CLIP utilisé pour encoder le texte. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `text` | Le texte à encoder. Prend en charge les entrées multilignes et les invites dynamiques. | STRING | Oui | Tout texte |
+| `clip` | Le modèle CLIP utilisé pour encoder le texte. | CLIP | Oui | Modèles CLIP chargés |
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `CONDITIONING` | CONDITIONING | Un conditionnement contenant le texte intégré utilisé pour guider le modèle de diffusion. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `CONDITIONING` | Un conditionnement contenant le texte intégré utilisé pour guider le modèle de diffusion. | CONDITIONING |
 
 ## Fonctionnalités des Invites
 
@@ -67,6 +65,8 @@ Exemple :
 // cette ligne est exclue de l'invite.
 a beautiful landscape, /* cette partie est ignorée */ high quality
 ```
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

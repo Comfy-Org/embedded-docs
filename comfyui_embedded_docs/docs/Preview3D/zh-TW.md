@@ -1,5 +1,3 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/zh-TW.md)
-
 Preview3D 節點主要用於預覽 3D 模型輸出。此節點接受兩個輸入：一個是來自 Load3D 節點的 `camera_info`，另一個是 3D 模型檔案的路徑。模型檔案路徑必須位於 `ComfyUI/output` 資料夾中。
 
 **支援的格式**
@@ -11,10 +9,10 @@ Preview3D 節點主要用於預覽 3D 模型輸出。此節點接受兩個輸入
 
 ## 輸入
 
-| 參數名稱 | 類型 | 說明 |
-| -------------- | -------------- | -------------------------------------------- |
-| `camera_info` | LOAD3D_CAMERA | 相機資訊 |
-| `model_file` | LOAD3D_CAMERA | `ComfyUI/output/` 下的模型檔案路徑 |
+| 參數名稱 | 說明 | 類型 |
+| --- | --- | --- |
+| `camera_info` | 相機資訊 | LOAD3D_CAMERA |
+| `model_file` | `ComfyUI/output/` 下的模型檔案路徑 | LOAD3D_CAMERA |
 
 ## 畫布區域說明
 
@@ -101,3 +99,5 @@ Preview3D 節點主要用於預覽 3D 模型輸出。此節點接受兩個輸入
 ![選單_匯出](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 此選單提供快速轉換和匯出模型格式的功能
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/zh-TW.md)

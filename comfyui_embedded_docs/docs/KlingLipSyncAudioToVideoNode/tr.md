@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,11 +30,11 @@ Kling Lip Sync Audio to Video Node, bir video dosyasındaki ağız hareketlerini
 
 ## Girişler
 
-| Parametre | Veri Türü | Gerekli | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Evet | - | Dudak senkronizasyonu yapılacak yüzü içeren video dosyası |
-| `ses` | AUDIO | Evet | - | Video ile senkronize edilecek sesleri içeren ses dosyası |
-| `ses_dili` | COMBO | Evet | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | Ses dosyasındaki sesin dili (varsayılan: "en") |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| --- | --- | --- | --- | --- |
+| `video` | Dudak senkronizasyonu yapılacak yüzü içeren video dosyası | VIDEO | Evet | - |
+| `ses` | Video ile senkronize edilecek sesleri içeren ses dosyası | AUDIO | Evet | - |
+| `ses_dili` | Ses dosyasındaki sesin dili (varsayılan: "en") | COMBO | Evet | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
 
 **Önemli Kısıtlamalar:**
 
@@ -49,11 +47,13 @@ Kling Lip Sync Audio to Video Node, bir video dosyasındaki ağız hareketlerini
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `video_kimliği` | VIDEO | Dudak senkronizasyonu yapılmış ağız hareketlerini içeren işlenmiş video |
-| `süre` | STRING | İşlenmiş video için benzersiz tanımlayıcı |
-| `duration` | STRING | İşlenmiş videonun süresi |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video_kimliği` | Dudak senkronizasyonu yapılmış ağız hareketlerini içeren işlenmiş video | VIDEO |
+| `süre` | İşlenmiş video için benzersiz tanımlayıcı | STRING |
+| `duration` | İşlenmiş videonun süresi | STRING |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `92b8a7a4f9508632155a5f69707ffc4a14f2f44c04e4d01bf46476a972465592`

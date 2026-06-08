@@ -1,17 +1,15 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/fr.md)
-
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/en.md)
 
 Le nœud Create Hook LoRA génère des objets hook pour appliquer des modifications LoRA (Low-Rank Adaptation) aux modèles. Il charge un fichier LoRA spécifié et crée des hooks capables d'ajuster les forces du modèle et du CLIP, puis combine ces hooks avec tous les hooks existants qui lui sont transmis. Le nœud gère efficacement le chargement des LoRA en mettant en cache les fichiers LoRA précédemment chargés afin d'éviter les opérations redondantes.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `nom_lora` | STRING | Oui | Plusieurs options disponibles | Le nom du fichier LoRA à charger depuis le répertoire loras |
-| `force_modele` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour les ajustements du modèle (par défaut : 1.0) |
-| `force_clip` | FLOAT | Oui | -20.0 à 20.0 | Le multiplicateur de force pour les ajustements du CLIP (par défaut : 1.0) |
-| `crochets_precedents` | HOOKS | Non | N/A | Groupe de hooks existant optionnel à combiner avec les nouveaux hooks LoRA |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `nom_lora` | Le nom du fichier LoRA à charger depuis le répertoire loras | STRING | Oui | Plusieurs options disponibles |
+| `force_modele` | Le multiplicateur de force pour les ajustements du modèle (par défaut : 1.0) | FLOAT | Oui | -20.0 à 20.0 |
+| `force_clip` | Le multiplicateur de force pour les ajustements du CLIP (par défaut : 1.0) | FLOAT | Oui | -20.0 à 20.0 |
+| `crochets_precedents` | Groupe de hooks existant optionnel à combiner avec les nouveaux hooks LoRA | HOOKS | Non | N/A |
 
 **Contraintes des paramètres :**
 
@@ -20,9 +18,11 @@ Le nœud Create Hook LoRA génère des objets hook pour appliquer des modificati
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `HOOKS` | HOOKS | Un groupe de hooks contenant les hooks LoRA combinés et tous les hooks précédents |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `HOOKS` | Un groupe de hooks contenant les hooks LoRA combinés et tous les hooks précédents | HOOKS |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `42d5d776bfc9b239191952e2bce23513d183f904fc3c15039469381a547486f8`

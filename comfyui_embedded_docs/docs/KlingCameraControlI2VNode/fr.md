@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI **KlingCameraControlI2VNode** :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/en.md)
@@ -8,22 +6,24 @@ Le nœud de contrôle de caméra Kling Image to Video transforme des images fixe
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `start_frame` | IMAGE | Oui | - | Image de référence - URL ou chaîne encodée en Base64, ne peut pas dépasser 10 Mo, résolution minimale de 300x300 px, rapport hauteur/largeur compris entre 1:2,5 et 2,5:1. Le Base64 ne doit pas inclure le préfixe `data:image`. |
-| `prompt` | STRING | Oui | - | Texte d'incitation positif décrivant le contenu vidéo souhaité |
-| `negative_prompt` | STRING | Oui | - | Texte d'incitation négatif décrivant ce qu'il faut éviter dans la vidéo générée |
-| `cfg_scale` | FLOAT | Non | 0,0 à 1,0 | Contrôle la force du guidage textuel. Des valeurs plus élevées font que la sortie suit plus fidèlement l'incitation (par défaut : 0,75) |
-| `aspect_ratio` | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Le rapport hauteur/largeur de la vidéo générée (par défaut : "16:9") |
-| `camera_control` | CAMERA_CONTROL | Oui | - | Peut être créé à l'aide du nœud Kling Camera Controls. Contrôle le mouvement et le déplacement de la caméra pendant la génération vidéo. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `start_frame` | Image de référence - URL ou chaîne encodée en Base64, ne peut pas dépasser 10 Mo, résolution minimale de 300x300 px, rapport hauteur/largeur compris entre 1:2,5 et 2,5:1. Le Base64 ne doit pas inclure le préfixe `data:image`. | IMAGE | Oui | - |
+| `prompt` | Texte d'incitation positif décrivant le contenu vidéo souhaité | STRING | Oui | - |
+| `negative_prompt` | Texte d'incitation négatif décrivant ce qu'il faut éviter dans la vidéo générée | STRING | Oui | - |
+| `cfg_scale` | Contrôle la force du guidage textuel. Des valeurs plus élevées font que la sortie suit plus fidèlement l'incitation (par défaut : 0,75) | FLOAT | Non | 0,0 à 1,0 |
+| `aspect_ratio` | Le rapport hauteur/largeur de la vidéo générée (par défaut : "16:9") | COMBO | Non | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `camera_control` | Peut être créé à l'aide du nœud Kling Camera Controls. Contrôle le mouvement et le déplacement de la caméra pendant la génération vidéo. | CAMERA_CONTROL | Oui | - |
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `video_id` | VIDEO | La sortie vidéo générée |
-| `duration` | STRING | Identifiant unique de la vidéo générée |
-| `duration` | STRING | Durée de la vidéo générée |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `video_id` | La sortie vidéo générée | VIDEO |
+| `duration` | Identifiant unique de la vidéo générée | STRING |
+| `duration` | Durée de la vidéo générée | STRING |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `a2965975cd484768298f4c7e504423f782ea032dfb5ef304579715be9c27cb79`

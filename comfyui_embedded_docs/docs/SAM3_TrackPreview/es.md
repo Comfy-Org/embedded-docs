@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackPreview/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -34,18 +32,20 @@ Este nodo crea una vista previa de video de objetos rastreados, dibujando cada o
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `datos_de_rastreo` | TRACK_DATA | Sí | - | Los datos de seguimiento que contienen máscaras empaquetadas e información de objetos provenientes de un nodo de seguimiento SAM3. |
-| `imágenes` | IMAGE | No | - | Imágenes de entrada opcionales para usar como fondo de la vista previa. Si no se proporcionan, se utiliza un fondo negro. |
-| `opacidad` | FLOAT | No | 0.0 a 1.0 (paso: 0.05) | La opacidad de la superposición de color aplicada a los objetos rastreados (predeterminado: 0.5). |
-| `fps` | FLOAT | No | 1.0 a 120.0 (paso: 1.0) | La velocidad de fotogramas del video de salida (predeterminado: 24.0). |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `datos_de_rastreo` | Los datos de seguimiento que contienen máscaras empaquetadas e información de objetos provenientes de un nodo de seguimiento SAM3. | TRACK_DATA | Sí | - |
+| `imágenes` | Imágenes de entrada opcionales para usar como fondo de la vista previa. Si no se proporcionan, se utiliza un fondo negro. | IMAGE | No | - |
+| `opacidad` | La opacidad de la superposición de color aplicada a los objetos rastreados (predeterminado: 0.5). | FLOAT | No | 0.0 a 1.0 (paso: 0.05) |
+| `fps` | La velocidad de fotogramas del video de salida (predeterminado: 24.0). | FLOAT | No | 1.0 a 120.0 (paso: 1.0) |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `ui` | PREVIEW_VIDEO | Un elemento de interfaz que muestra el video de vista previa generado. No se devuelven datos de tensor. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `ui` | Un elemento de interfaz que muestra el video de vista previa generado. No se devuelven datos de tensor. | PREVIEW_VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackPreview/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `8300d4fa89c7bbc481ac9a59868ede0e3c9413faa63d56c16a4f603ef878e877`

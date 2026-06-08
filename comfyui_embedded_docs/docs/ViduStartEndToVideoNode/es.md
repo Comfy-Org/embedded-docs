@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduStartEndToVideoNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,24 +30,26 @@ El nodo Vidu Start End To Video Generation crea un video generando fotogramas en
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo` | COMBO | Sí | `"viduq1"` | Nombre del modelo |
-| `primer_cuadro` | IMAGE | Sí | - | Fotograma inicial |
-| `cuadro_final` | IMAGE | Sí | - | Fotograma final |
-| `prompt` | STRING | No | - | Una descripción textual para la generación del video |
-| `duración` | INT | No | 5-5 | Duración del video de salida en segundos (predeterminado: 5, fijo en 5 segundos) |
-| `semilla` | INT | No | 0-2147483647 | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) |
-| `resolución` | COMBO | No | `"1080p"` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: "1080p") |
-| `amplitud_de_movimiento` | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` | La amplitud de movimiento de los objetos en el fotograma (predeterminado: "auto") |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | Nombre del modelo | COMBO | Sí | `"viduq1"` |
+| `primer_cuadro` | Fotograma inicial | IMAGE | Sí | - |
+| `cuadro_final` | Fotograma final | IMAGE | Sí | - |
+| `prompt` | Una descripción textual para la generación del video | STRING | No | - |
+| `duración` | Duración del video de salida en segundos (predeterminado: 5, fijo en 5 segundos) | INT | No | 5-5 |
+| `semilla` | Semilla para la generación del video (0 para aleatorio) (predeterminado: 0) | INT | No | 0-2147483647 |
+| `resolución` | Los valores admitidos pueden variar según el modelo y la duración (predeterminado: "1080p") | COMBO | No | `"1080p"` |
+| `amplitud_de_movimiento` | La amplitud de movimiento de los objetos en el fotograma (predeterminado: "auto") | COMBO | No | `"auto"`<br>`"small"`<br>`"medium"`<br>`"large"` |
 
 **Nota:** Los fotogramas inicial y final deben tener relaciones de aspecto compatibles (validadas con una tolerancia de relación min_rel=0.8, max_rel=1.25).
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `output` | VIDEO | El archivo de video generado |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | El archivo de video generado | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduStartEndToVideoNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `d859d67b3ff73977b95e3903b461509f933f9652fedc016e1cd362f6bef1b8dc`

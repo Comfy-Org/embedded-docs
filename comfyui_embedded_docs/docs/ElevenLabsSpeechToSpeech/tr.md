@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToSpeech/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,21 +30,23 @@ ElevenLabs Konuşmadan Konuşmaya düğümü, bir giriş ses dosyasını bir ses
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `ses` | CUSTOM | Evet | - | Dönüşüm için hedef ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlantı kurun. |
-| `ses` | AUDIO | Evet | - | Dönüştürülecek kaynak ses. |
-| `kararlılık` | FLOAT | Hayır | 0.0 - 1.0 | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). |
-| `model` | DYNAMICCOMBO | Hayır | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` | Konuşmadan konuşmaya dönüşüm için kullanılacak model. Her seçenek belirli bir ses ayarları kümesi sağlar (similarity_boost, style, use_speaker_boost, speed). |
-| `çıktı_formatı` | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı (varsayılan: "mp3_44100_192"). |
-| `tohum` | INT | Hayır | 0 - 4294967295 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). |
-| `arka_plan_gürültüsünü_kaldır` | BOOLEAN | Hayır | - | Ses izolasyonu kullanarak giriş sesinden arka plan gürültüsünü kaldırır (varsayılan: False). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `ses` | Dönüşüm için hedef ses. Ses Seçici veya Anlık Ses Klonlama'dan bağlantı kurun. | CUSTOM | Evet | - |
+| `ses` | Dönüştürülecek kaynak ses. | AUDIO | Evet | - |
+| `kararlılık` | Ses kararlılığı. Düşük değerler daha geniş bir duygusal yelpaze sağlar, yüksek değerler daha tutarlı ancak potansiyel olarak monoton konuşma üretir (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
+| `model` | Konuşmadan konuşmaya dönüşüm için kullanılacak model. Her seçenek belirli bir ses ayarları kümesi sağlar (similarity_boost, style, use_speaker_boost, speed). | DYNAMICCOMBO | Hayır | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `çıktı_formatı` | Ses çıktı formatı (varsayılan: "mp3_44100_192"). | COMBO | Hayır | `"mp3_44100_192"`<br>`"opus_48000_192"` |
+| `tohum` | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). | INT | Hayır | 0 - 4294967295 |
+| `arka_plan_gürültüsünü_kaldır` | Ses izolasyonu kullanarak giriş sesinden arka plan gürültüsünü kaldırır (varsayılan: False). | BOOLEAN | Hayır | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `ses` | AUDIO | Belirtilen çıktı formatında dönüştürülmüş ses dosyası. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `ses` | Belirtilen çıktı formatında dönüştürülmüş ses dosyası. | AUDIO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToSpeech/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `118fe6e85b146d0649b104d814abb518d37f69ade2e53becac365a0ec90146fd`

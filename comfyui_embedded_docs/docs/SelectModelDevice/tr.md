@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/tr.md)
-
 # SelectModelDevice Düğümü
 
 ## Genel Bakış
@@ -8,10 +6,10 @@ SelectModelDevice düğümü, bir difüzyon modelinin hangi cihazda (CPU veya be
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
-| `model` | MODEL | Evet | | Belirli bir cihaza yerleştirilecek difüzyon modeli. |
-| `device` | COMBO | Evet | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | Model için hedef cihaz. Seçenekler, mevcut GPU'lara göre dinamik olarak oluşturulur. (varsayılan: "default") |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Belirli bir cihaza yerleştirilecek difüzyon modeli. | MODEL | Evet |  |
+| `device` | Model için hedef cihaz. Seçenekler, mevcut GPU'lara göre dinamik olarak oluşturulur. (varsayılan: "default") | COMBO | Evet | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 **Parametre Detayları:**
 - `"default"`: Daha önceki bir SelectModelDevice düğümü değiştirmiş olsa bile, model yükleyici tarafından atanan cihazı geri yükler.
@@ -25,9 +23,11 @@ SelectModelDevice düğümü, bir difüzyon modelinin hangi cihazda (CPU veya be
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `model` | MODEL | Seçilen cihaza yerleştirilmiş difüzyon modeli. Cihaz geçersiz veya kullanılamıyorsa, model değiştirilmeden geçirilir. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `model` | Seçilen cihaza yerleştirilmiş difüzyon modeli. Cihaz geçersiz veya kullanılamıyorsa, model değiştirilmeden geçirilir. | MODEL |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `02841975f123cc8ae8152ea86f1798e0e7e68255ecd11e04271da886b75eb0fd`

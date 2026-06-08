@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux2ImageNode/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 ## Aperçu
@@ -8,21 +6,21 @@ Générez des images en utilisant le modèle Flux.2 [pro] ou Flux.2 [max] à par
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | N/A | Invite pour la génération ou l'édition d'image (par défaut : chaîne vide). |
-| `modèle` | COMBO | Oui | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` | La version du modèle Flux.2 à utiliser. La sélection d'un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence optionnelles. |
-| `graine` | INT | Oui | 0 à 18446744073709551615 | La graine aléatoire utilisée pour créer le bruit. Peut être définie pour se randomiser après chaque génération (par défaut : 0). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `prompt` | Invite pour la génération ou l'édition d'image (par défaut : chaîne vide). | STRING | Oui | N/A |
+| `modèle` | La version du modèle Flux.2 à utiliser. La sélection d'un modèle déverrouille des paramètres supplémentaires pour la largeur, la hauteur et les images de référence optionnelles. | COMBO | Oui | `"Flux.2 [pro]"`<br>`"Flux.2 [max]"` |
+| `graine` | La graine aléatoire utilisée pour créer le bruit. Peut être définie pour se randomiser après chaque génération (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
 
 **Paramètres supplémentaires (déverrouillés par la sélection du `model`) :**
 
 Lorsque vous sélectionnez un modèle, les paramètres suivants deviennent disponibles :
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `model.width` | INT | Oui | 256 à 1440 | La largeur de l'image générée en pixels. |
-| `model.height` | INT | Oui | 256 à 1440 | La hauteur de l'image générée en pixels. |
-| `model.images` | IMAGE | Non | 0 à 8 images | Images de référence optionnelles pour guider la génération. Un maximum de 8 images est pris en charge. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `model.width` | La largeur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
+| `model.height` | La hauteur de l'image générée en pixels. | INT | Oui | 256 à 1440 |
+| `model.images` | Images de référence optionnelles pour guider la génération. Un maximum de 8 images est pris en charge. | IMAGE | Non | 0 à 8 images |
 
 **Contraintes :**
 - Le nombre maximum d'images de référence est de 8. Si plus de 8 images sont fournies, une erreur sera générée.
@@ -30,9 +28,11 @@ Lorsque vous sélectionnez un modèle, les paramètres suivants deviennent dispo
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `image` | IMAGE | L'image générée sous forme de tenseur, téléchargée depuis le résultat de l'API BFL. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `image` | L'image générée sous forme de tenseur, téléchargée depuis le résultat de l'API BFL. | IMAGE |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Flux2ImageNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `664ddf45d42f64e4882cc959018f7874915325f2d46519c6bb9a0c5a501228f7`

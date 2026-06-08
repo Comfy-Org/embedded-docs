@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/fr.md)
-
 Voici la traduction en français de la documentation du nœud OpticalFlowLoader :
 
 ## Aperçu
@@ -8,15 +6,17 @@ Charge un modèle de flux optique depuis le dossier `models/optical_flow/`. Actu
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `model_name` | STRING | Oui | Liste des fichiers dans le dossier `models/optical_flow/` | Modèle de flux optique à charger. Les fichiers doivent être placés dans le dossier `optical_flow`. Actuellement, seul `raft_large.pth` de torchvision est pris en charge. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `model_name` | Modèle de flux optique à charger. Les fichiers doivent être placés dans le dossier `optical_flow`. Actuellement, seul `raft_large.pth` de torchvision est pris en charge. | STRING | Oui | Liste des fichiers dans le dossier `models/optical_flow/` |
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `OPTICAL_FLOW` | MODEL | Le modèle de flux optique chargé, encapsulé dans un ModelPatcher pour être utilisé avec d'autres nœuds. |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `OPTICAL_FLOW` | Le modèle de flux optique chargé, encapsulé dans un ModelPatcher pour être utilisé avec d'autres nœuds. | MODEL |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpticalFlowLoader/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `94bab0bb7e2b9d9b3f343337799eccc744f79275b72a6fad9681b408b4a0820b`

@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,22 +30,24 @@ QwenImageDiffsynthControlnet düğümü, bir temel modelin davranışını deği
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Evet | - | Kontrol ağı ile yamalanacak temel model |
-| `model_yaması` | MODEL_PATCH | Evet | - | Temel modele uygulanacak kontrol ağı yama modeli |
-| `vae` | VAE | Evet | - | Difüzyon sürecinde kullanılan VAE (Varyasyonel Otomatik Kodlayıcı) |
-| `görsel` | IMAGE | Evet | - | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü (yalnızca RGB kanalları kullanılır) |
-| `güç` | FLOAT | Evet | -10.0 ila 10.0 | Kontrol ağı etkisinin gücü (varsayılan: 1.0) |
-| `maske` | MASK | Hayır | - | Kontrol ağının uygulanması gereken alanları tanımlayan isteğe bağlı maske (dahili olarak ters çevrilir) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Kontrol ağı ile yamalanacak temel model | MODEL | Evet | - |
+| `model_yaması` | Temel modele uygulanacak kontrol ağı yama modeli | MODEL_PATCH | Evet | - |
+| `vae` | Difüzyon sürecinde kullanılan VAE (Varyasyonel Otomatik Kodlayıcı) | VAE | Evet | - |
+| `görsel` | Kontrol ağını yönlendirmek için kullanılan giriş görüntüsü (yalnızca RGB kanalları kullanılır) | IMAGE | Evet | - |
+| `güç` | Kontrol ağı etkisinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ila 10.0 |
+| `maske` | Kontrol ağının uygulanması gereken alanları tanımlayan isteğe bağlı maske (dahili olarak ters çevrilir) | MASK | Hayır | - |
 
 **Not:** Bir maske sağlandığında, otomatik olarak ters çevrilir (1.0 - mask) ve kontrol ağı işlemesi için beklenen boyutlara uyacak şekilde yeniden şekillendirilir. Düğüm, model yamasının bir ZImage Kontrol türü mü yoksa standart bir DiffSynth kontrol ağı mı olduğuna bağlı olarak farklı dahili işleme yöntemleri kullanır.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `model` | MODEL | Difüzyon sentezi kontrol ağı yaması uygulanmış değiştirilmiş model |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `model` | Difüzyon sentezi kontrol ağı yaması uygulanmış değiştirilmiş model | MODEL |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `61833984d0b92be65fae72a894806572c0588dea74a295e8289d1194dee611bb`

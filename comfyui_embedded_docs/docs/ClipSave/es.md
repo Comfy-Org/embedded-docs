@@ -1,15 +1,13 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/es.md)
-
 El nodo `CLIPSave` guarda un modelo de codificador de texto CLIP en disco en formato SafeTensors. Está diseñado para flujos de trabajo avanzados de fusión de modelos y separa automáticamente el modelo CLIP en sus partes componentes (como CLIP-L, CLIP-G o T5XXL) según la estructura interna del modelo, guardando cada componente como un archivo separado.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
-|-----------|--------------|-----------------|-------------------|-------|-------------|
-| `clip` | CLIP | Requerido | - | - | El modelo CLIP que se va a guardar. |
-| `prefijo_nombre_archivo` | STRING | Requerido | `clip/ComfyUI` | - | La ruta de prefijo y nombre de archivo para los archivos guardados. El nodo añadirá un sufijo de componente (ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos. |
-| `prompt` | PROMPT | Oculto | - | - | La información del prompt del flujo de trabajo, guardada como metadatos en el archivo de salida. |
-| `extra_pnginfo` | EXTRA_PNGINFO | Oculto | - | - | Metadatos adicionales, guardados como pares clave-valor en el archivo de salida. |
+| Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | El modelo CLIP que se va a guardar. | CLIP | Requerido | - | - |
+| `prefijo_nombre_archivo` | La ruta de prefijo y nombre de archivo para los archivos guardados. El nodo añadirá un sufijo de componente (ej., `_clip_l`, `_clip_g`) y un contador para crear nombres de archivo únicos. | STRING | Requerido | `clip/ComfyUI` | - |
+| `prompt` | La información del prompt del flujo de trabajo, guardada como metadatos en el archivo de salida. | PROMPT | Oculto | - | - |
+| `extra_pnginfo` | Metadatos adicionales, guardados como pares clave-valor en el archivo de salida. | EXTRA_PNGINFO | Oculto | - | - |
 
 ## Salidas
 
@@ -33,6 +31,8 @@ El nodo analiza el diccionario de estado del modelo CLIP y guarda archivos SafeT
 - Prefijo vacío (otros componentes CLIP)
 
 Para cada componente detectado, el nodo crea un archivo con el nombre `{filename_prefix}_{contador:05}_.safetensors`, donde el prefijo del componente se añade al prefijo del nombre de archivo (ej., `clip/ComfyUI_clip_l_00001_.safetensors`). El prefijo `transformer.` se elimina de las claves de parámetros durante el guardado.
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

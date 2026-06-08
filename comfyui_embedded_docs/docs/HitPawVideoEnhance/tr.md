@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,11 +30,11 @@ HitPaw Video Enhance düğümü, videoların kalitesini artırmak için harici b
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model` | DYNAMIC COMBO | Evet | Birden çok seçenek mevcut | Video iyileştirme için kullanılacak AI modeli. Bir model seçmek, iç içe geçmiş bir `resolution` parametresini ortaya çıkarır. Mevcut modeller ve destekledikleri çözünürlükler farklılık gösterir. |
-| `model.resolution` | COMBO | Evet | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | İyileştirilmiş video için hedef çözünürlük. Seçilen `model`'e bağlı olarak bazı seçenekler kullanılamayabilir. |
-| `video` | VIDEO | Evet | Yok | İyileştirilecek giriş video dosyası. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Video iyileştirme için kullanılacak AI modeli. Bir model seçmek, iç içe geçmiş bir `resolution` parametresini ortaya çıkarır. Mevcut modeller ve destekledikleri çözünürlükler farklılık gösterir. | DYNAMIC COMBO | Evet | Birden çok seçenek mevcut |
+| `model.resolution` | İyileştirilmiş video için hedef çözünürlük. Seçilen `model`'e bağlı olarak bazı seçenekler kullanılamayabilir. | COMBO | Evet | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `video` | İyileştirilecek giriş video dosyası. | VIDEO | Evet | Yok |
 
 **Kısıtlamalar:**
 
@@ -45,9 +43,11 @@ HitPaw Video Enhance düğümü, videoların kalitesini artırmak için harici b
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `video` | VIDEO | İyileştirilmiş video dosyası. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video` | İyileştirilmiş video dosyası. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`

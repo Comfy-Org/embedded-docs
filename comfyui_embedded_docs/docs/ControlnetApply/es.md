@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/es.md)
-
 El uso de ControlNet requiere el preprocesamiento de las imágenes de entrada. Dado que los nodos iniciales de ComfyUI no incluyen preprocesadores ni modelos ControlNet, instale primero los preprocesadores de ControlNet [descargue los preprocesadores aquí](https://github.com/Fannovel16/comfy_controlnet_preprocessors) y los modelos ControlNet correspondientes.
 
 ## Entradas
@@ -21,3 +19,5 @@ El uso de ControlNet requiere el preprocesamiento de las imágenes de entrada. D
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | Datos de condicionamiento positivo procesados por ControlNet, pueden enviarse al siguiente nodo de ControlNet o al Muestreador K |
 | `negative` | `CONDITIONING` | Datos de condicionamiento negativo procesados por ControlNet, pueden enviarse al siguiente nodo de ControlNet o al Muestreador K |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/es.md)

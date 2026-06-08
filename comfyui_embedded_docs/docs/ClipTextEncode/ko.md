@@ -1,21 +1,19 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/ko.md)
-
 `CLIP Text Encode (CLIPTextEncode)`는 번역기 역할을 수행하여, 사용자의 텍스트 설명을 AI가 이해할 수 있는 형식으로 변환합니다. 이를 통해 AI가 입력을 해석하고 원하는 이미지를 생성할 수 있도록 돕습니다.
 
 마치 다른 언어를 사용하는 아티스트와 소통하는 것과 같습니다. 방대한 이미지-텍스트 쌍으로 훈련된 CLIP 모델은 사용자의 설명을 AI 모델이 따를 수 있는 "명령어"로 변환하여 이러한 간극을 메워줍니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `프롬프트 텍스트` | STRING | 예 | 모든 텍스트 | 인코딩할 텍스트입니다. 여러 줄 입력 및 동적 프롬프트를 지원합니다. |
-| `clip` | CLIP | 예 | 로드된 CLIP 모델 | 텍스트 인코딩에 사용되는 CLIP 모델입니다. |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `프롬프트 텍스트` | 인코딩할 텍스트입니다. 여러 줄 입력 및 동적 프롬프트를 지원합니다. | STRING | 예 | 모든 텍스트 |
+| `clip` | 텍스트 인코딩에 사용되는 CLIP 모델입니다. | CLIP | 예 | 로드된 CLIP 모델 |
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | 확산 모델을 안내하는 데 사용되는, 임베딩된 텍스트를 포함하는 컨디셔닝입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `CONDITIONING` | 확산 모델을 안내하는 데 사용되는, 임베딩된 텍스트를 포함하는 컨디셔닝입니다. | CONDITIONING |
 
 ## 프롬프트 기능
 
@@ -65,6 +63,8 @@ worst quality, embedding:EasyNegative, bad quality
 // 이 줄은 프롬프트에서 제외됩니다.
 a beautiful landscape, /* 이 부분은 무시됩니다 */ high quality
 ```
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

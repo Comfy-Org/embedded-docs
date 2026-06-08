@@ -1,14 +1,12 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/es.md)
-
 El nodo HitPaw Video Enhance utiliza una API externa para mejorar la calidad de los videos. Escala videos de baja resolución a una resolución más alta, elimina artefactos visuales y reduce el ruido. El costo del procesamiento se calcula por segundo del video de entrada.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `modelo` | DYNAMIC COMBO | Sí | Múltiples opciones disponibles | El modelo de IA a utilizar para la mejora del video. Al seleccionar un modelo, se muestra un parámetro `resolution` anidado. Los modelos disponibles y sus resoluciones compatibles varían. |
-| `model.resolution` | COMBO | Sí | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | La resolución objetivo para el video mejorado. Algunas opciones pueden no estar disponibles según el `modelo` seleccionado. |
-| `video` | VIDEO | Sí | N/A | El archivo de video de entrada que se va a mejorar. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo de IA a utilizar para la mejora del video. Al seleccionar un modelo, se muestra un parámetro `resolution` anidado. Los modelos disponibles y sus resoluciones compatibles varían. | DYNAMIC COMBO | Sí | Múltiples opciones disponibles |
+| `model.resolution` | La resolución objetivo para el video mejorado. Algunas opciones pueden no estar disponibles según el `modelo` seleccionado. | COMBO | Sí | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `video` | El archivo de video de entrada que se va a mejorar. | VIDEO | Sí | N/A |
 
 **Restricciones:**
 
@@ -17,9 +15,11 @@ El nodo HitPaw Video Enhance utiliza una API externa para mejorar la calidad de 
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `video` | VIDEO | El archivo de video mejorado. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `video` | El archivo de video mejorado. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`

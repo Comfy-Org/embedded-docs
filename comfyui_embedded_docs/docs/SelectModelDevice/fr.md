@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/fr.md)
-
 Voici la traduction en français de la documentation du nœud SelectModelDevice :
 
 ## Aperçu
@@ -8,10 +6,10 @@ Le nœud SelectModelDevice vous permet de choisir manuellement sur quel périph�
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `model` | MODEL | Oui | | Le modèle de diffusion à placer sur un périphérique spécifique. |
-| `device` | COMBO | Oui | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | Le périphérique cible pour le modèle. Les options sont générées dynamiquement en fonction des GPU disponibles. (par défaut : "default") |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `model` | Le modèle de diffusion à placer sur un périphérique spécifique. | MODEL | Oui |  |
+| `device` | Le périphérique cible pour le modèle. Les options sont générées dynamiquement en fonction des GPU disponibles. (par défaut : "default") | COMBO | Oui | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 **Détails des paramètres :**
 - `"default"` : Restaure le périphérique attribué par le chargeur de modèle, même si un nœud SelectModelDevice précédent l'a modifié.
@@ -25,9 +23,11 @@ Le nœud SelectModelDevice vous permet de choisir manuellement sur quel périph�
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `model` | MODEL | Le modèle de diffusion, désormais placé sur le périphérique sélectionné. Si le périphérique était invalide ou indisponible, le modèle est transmis sans modification. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `model` | Le modèle de diffusion, désormais placé sur le périphérique sélectionné. Si le périphérique était invalide ou indisponible, le modèle est transmis sans modification. | MODEL |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `02841975f123cc8ae8152ea86f1798e0e7e68255ecd11e04271da886b75eb0fd`

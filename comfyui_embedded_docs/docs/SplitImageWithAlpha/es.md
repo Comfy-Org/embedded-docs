@@ -1,16 +1,16 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitImageWithAlpha/es.md)
-
 El nodo **SplitImageWithAlpha** está diseñado para separar los componentes de color y alfa de una imagen. Procesa un tensor de imagen de entrada, extrayendo los canales RGB como el componente de color y el canal alfa como el componente de transparencia, facilitando operaciones que requieren la manipulación de estos aspectos distintos de la imagen.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Descripción |
-|-----------|-------------|-------------|
-| `imagen`   | `IMAGE`     | El parámetro `imagen` representa el tensor de imagen de entrada del cual se separarán los canales RGB y alfa. Es fundamental para la operación, ya que proporciona los datos de origen para la separación. |
+| Parámetro | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `imagen` | El parámetro `imagen` representa el tensor de imagen de entrada del cual se separarán los canales RGB y alfa. Es fundamental para la operación, ya que proporciona los datos de origen para la separación. | `IMAGE` |
 
 ## Salidas
 
-| Parámetro | Tipo de dato | Descripción |
-|-----------|-------------|-------------|
-| `imagen`   | `IMAGE`     | La salida `imagen` representa los canales RGB separados de la imagen de entrada, proporcionando el componente de color sin la información de transparencia. |
-| `mask`    | `MASK`      | La salida `mask` representa el canal alfa separado de la imagen de entrada, proporcionando la información de transparencia. |
+| Parámetro | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `imagen` | La salida `imagen` representa los canales RGB separados de la imagen de entrada, proporcionando el componente de color sin la información de transparencia. | `IMAGE` |
+| `mask` | La salida `mask` representa el canal alfa separado de la imagen de entrada, proporcionando la información de transparencia. | `MASK` |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitImageWithAlpha/es.md)

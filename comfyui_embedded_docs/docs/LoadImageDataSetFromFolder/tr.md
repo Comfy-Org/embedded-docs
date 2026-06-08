@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,15 +30,17 @@ Bu düğüm, ComfyUI'nin giriş dizini içindeki belirtilen bir alt klasörden b
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `folder` | STRING | Evet | *Birden çok seçenek mevcut* | Görüntülerin yükleneceği klasör. Seçenekler, ComfyUI'nin ana giriş dizininde bulunan alt klasörlerdir. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `folder` | Görüntülerin yükleneceği klasör. Seçenekler, ComfyUI'nin ana giriş dizininde bulunan alt klasörlerdir. | STRING | Evet | *Birden çok seçenek mevcut* |
 
 ## Çıkışlar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `images` | IMAGE | Yüklenen görüntülerin listesi. Düğüm, seçilen klasörde bulunan tüm geçerli görüntü dosyalarını (PNG, JPG, JPEG, WEBP) yükler. |
+| Çıkış Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `images` | Yüklenen görüntülerin listesi. Düğüm, seçilen klasörde bulunan tüm geçerli görüntü dosyalarını (PNG, JPG, JPEG, WEBP) yükler. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `0f6e1b3d159f7d7c0c9530350ee057118a2618796f149586bae925253ecc8cf0`

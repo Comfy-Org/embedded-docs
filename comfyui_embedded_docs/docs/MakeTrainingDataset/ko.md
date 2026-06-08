@@ -1,17 +1,15 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/ko.md)
-
 이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/en.md)
 
 이 노드는 이미지와 텍스트를 인코딩하여 학습 데이터를 준비합니다. 이미지 목록과 이에 대응하는 텍스트 캡션 목록을 입력받은 후, VAE 모델을 사용하여 이미지를 잠재 표현(latent representation)으로 변환하고 CLIP 모델을 사용하여 텍스트를 컨디셔닝 데이터로 변환합니다. 그 결과로 생성된 쌍을 이루는 잠재 표현과 컨디셔닝이 목록 형태로 출력되어 학습 워크플로우에서 바로 사용할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `이미지` | IMAGE | 예 | 해당 없음 | 인코딩할 이미지 목록입니다. |
-| `vae` | VAE | 예 | 해당 없음 | 이미지를 잠재 표현으로 인코딩하는 VAE 모델입니다. |
-| `clip` | CLIP | 예 | 해당 없음 | 텍스트를 컨디셔닝으로 인코딩하는 CLIP 모델입니다. |
-| `텍스트` | STRING | 아니요 | 해당 없음 | 텍스트 캡션 목록입니다. 길이가 n(이미지 개수와 일치), 1(모든 이미지에 반복), 또는 생략(빈 문자열 사용)일 수 있습니다. |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `이미지` | 인코딩할 이미지 목록입니다. | IMAGE | 예 | 해당 없음 |
+| `vae` | 이미지를 잠재 표현으로 인코딩하는 VAE 모델입니다. | VAE | 예 | 해당 없음 |
+| `clip` | 텍스트를 컨디셔닝으로 인코딩하는 CLIP 모델입니다. | CLIP | 예 | 해당 없음 |
+| `텍스트` | 텍스트 캡션 목록입니다. 길이가 n(이미지 개수와 일치), 1(모든 이미지에 반복), 또는 생략(빈 문자열 사용)일 수 있습니다. | STRING | 아니요 | 해당 없음 |
 
 **매개변수 제약 조건:**
 
@@ -19,10 +17,12 @@
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `conditioning` | LATENT | 잠재 표현 딕셔너리 목록입니다. |
-| `conditioning` | CONDITIONING | 컨디셔닝 목록의 목록입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `conditioning` | 잠재 표현 딕셔너리 목록입니다. | LATENT |
+| `conditioning` | 컨디셔닝 목록의 목록입니다. | CONDITIONING |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `95947c03f140f527f3db54d0b0131d956646055542ddb546ae5eaa82e4e8cefa`

@@ -1,5 +1,3 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/ko.md)
-
 # SAM3 Detect 노드
 
 ## 개요
@@ -8,17 +6,17 @@ SAM3 Detect 노드는 텍스트 설명, 경계 상자 또는 포인트 프롬프
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | - | 탐지 및 분할에 사용할 SAM3 모델 |
-| `image` | IMAGE | 예 | - | 처리할 입력 이미지 |
-| `conditioning` | CONDITIONING | 아니요 | - | CLIPTextEncode의 텍스트 컨디셔닝. 텍스트 프롬프트를 사용한 탐지 시 필수 |
-| `bboxes` | BOUNDING_BOX | 아니요 | - | 분할할 경계 상자. 단일 상자(모든 프레임에 적용), 상자 목록(모든 프레임에 적용), 또는 목록의 목록(프레임별 상자)으로 제공 가능. 텍스트 컨디셔닝 없이 제공 시 각 상자 내부를 분할 |
-| `positive_coords` | STRING | 아니요 | - | JSON 형식의 양성 포인트 프롬프트 `[{"x": int, "y": int}, ...]` (픽셀 좌표 사용). 분할에 포함하려는 포인트 |
-| `negative_coords` | STRING | 아니요 | - | JSON 형식의 음성 포인트 프롬프트 `[{"x": int, "y": int}, ...]` (픽셀 좌표 사용). 분할에서 제외하려는 포인트 |
-| `threshold` | FLOAT | 아니요 | 0.0 ~ 1.0 | 텍스트 기반 탐지의 신뢰도 임계값. 이 값 이상의 점수를 가진 탐지만 유지 (기본값: 0.5) |
-| `refine_iterations` | INT | 아니요 | 0 ~ 5 | SAM 디코더 정제 반복 횟수. 높은 값은 마스크 품질을 향상시킬 수 있음. 정제 없이 원시 탐지기 마스크를 사용하려면 0으로 설정 (기본값: 2) |
-| `individual_masks` | BOOLEAN | 아니요 | True/False | 활성화 시 감지된 각 객체에 대해 개별 마스크를 출력하며, 단일 마스크로 결합하지 않음 (기본값: False) |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
+| --- | --- | --- | --- | --- |
+| `model` | 탐지 및 분할에 사용할 SAM3 모델 | MODEL | 예 | - |
+| `image` | 처리할 입력 이미지 | IMAGE | 예 | - |
+| `conditioning` | CLIPTextEncode의 텍스트 컨디셔닝. 텍스트 프롬프트를 사용한 탐지 시 필수 | CONDITIONING | 아니요 | - |
+| `bboxes` | 분할할 경계 상자. 단일 상자(모든 프레임에 적용), 상자 목록(모든 프레임에 적용), 또는 목록의 목록(프레임별 상자)으로 제공 가능. 텍스트 컨디셔닝 없이 제공 시 각 상자 내부를 분할 | BOUNDING_BOX | 아니요 | - |
+| `positive_coords` | JSON 형식의 양성 포인트 프롬프트 `[{"x": int, "y": int}, ...]` (픽셀 좌표 사용). 분할에 포함하려는 포인트 | STRING | 아니요 | - |
+| `negative_coords` | JSON 형식의 음성 포인트 프롬프트 `[{"x": int, "y": int}, ...]` (픽셀 좌표 사용). 분할에서 제외하려는 포인트 | STRING | 아니요 | - |
+| `threshold` | 텍스트 기반 탐지의 신뢰도 임계값. 이 값 이상의 점수를 가진 탐지만 유지 (기본값: 0.5) | FLOAT | 아니요 | 0.0 ~ 1.0 |
+| `refine_iterations` | SAM 디코더 정제 반복 횟수. 높은 값은 마스크 품질을 향상시킬 수 있음. 정제 없이 원시 탐지기 마스크를 사용하려면 0으로 설정 (기본값: 2) | INT | 아니요 | 0 ~ 5 |
+| `individual_masks` | 활성화 시 감지된 각 객체에 대해 개별 마스크를 출력하며, 단일 마스크로 결합하지 않음 (기본값: False) | BOOLEAN | 아니요 | True/False |
 
 ### 매개변수 제약 조건 및 참고 사항
 
@@ -31,10 +29,12 @@ SAM3 Detect 노드는 텍스트 설명, 경계 상자 또는 포인트 프롬프
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `bboxes` | MASK | 분할 마스크. `individual_masks`가 False(기본값)인 경우 프레임당 단일 결합 마스크를 반환합니다. True인 경우 감지된 각 객체에 대한 개별 마스크를 반환합니다 |
-| `bboxes` | BOUNDING_BOX | 좌표와 신뢰도 점수가 포함된 감지된 경계 상자. 각 상자에는 `x`, `y`, `width`, `height` 및 `score` 값이 포함됩니다 |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `bboxes` | 분할 마스크. `individual_masks`가 False(기본값)인 경우 프레임당 단일 결합 마스크를 반환합니다. True인 경우 감지된 각 객체에 대한 개별 마스크를 반환합니다 | MASK |
+| `bboxes` | 좌표와 신뢰도 점수가 포함된 감지된 경계 상자. 각 상자에는 `x`, `y`, `width`, `height` 및 `score` 값이 포함됩니다 | BOUNDING_BOX |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

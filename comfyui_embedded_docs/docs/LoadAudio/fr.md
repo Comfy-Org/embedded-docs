@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadAudio/fr.md)
-
 Voici la traduction de la documentation du nœud LoadAudio, conforme à vos règles :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadAudio/en.md)
@@ -8,17 +6,19 @@ Le nœud LoadAudio charge des fichiers audio depuis le répertoire d'entrée et 
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `audio` | AUDIO | Oui | Tous les fichiers audio et vidéo pris en charge dans le répertoire d'entrée | Le fichier audio à charger depuis le répertoire d'entrée |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `audio` | Le fichier audio à charger depuis le répertoire d'entrée | AUDIO | Oui | Tous les fichiers audio et vidéo pris en charge dans le répertoire d'entrée |
 
 **Remarque :** Le nœud accepte uniquement les fichiers audio et vidéo présents dans le répertoire d'entrée de ComfyUI. Le fichier doit exister et être accessible pour un chargement réussi.
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `AUDIO` | AUDIO | Données audio contenant les informations de forme d'onde et de fréquence d'échantillonnage |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `AUDIO` | Données audio contenant les informations de forme d'onde et de fréquence d'échantillonnage | AUDIO |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadAudio/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `a7fe63cbbb3a854359189e8685936a2b8b855e22c3c282fc77affacf640af010`

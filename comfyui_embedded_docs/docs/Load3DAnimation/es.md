@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -45,23 +43,23 @@ Además de las salidas regulares del nodo, Load3D tiene muchas configuraciones r
 
 ## Entradas
 
-| Nombre del parámetro | Tipo     | Descripción                     | Valor por defecto | Rango        |
-|---------------|----------|---------------------------------|---------|--------------|
-| model_file    | Selección de archivo | Ruta del archivo de modelo 3D, admite carga, por defecto lee archivos de modelo de `ComfyUI/input/3d/` | - | Formatos compatibles |
-| width         | INT      | Ancho de renderizado del lienzo          | 1024    | 1-4096      |
-| height        | INT      | Alto de renderizado del lienzo         | 1024    | 1-4096      |
+| Nombre del parámetro | Descripción | Tipo | Valor por defecto | Rango |
+| --- | --- | --- | --- | --- |
+| model_file | Ruta del archivo de modelo 3D, admite carga, por defecto lee archivos de modelo de `ComfyUI/input/3d/` | Selección de archivo | - | Formatos compatibles |
+| width | Ancho de renderizado del lienzo | INT | 1024 | 1-4096 |
+| height | Alto de renderizado del lienzo | INT | 1024 | 1-4096 |
 
 ## Salidas
 
-| Nombre del parámetro   | Tipo de dato      | Descripción                        |
-|-----------------|----------------|------------------------------------|
-| image           | IMAGE          | Imagen renderizada del lienzo              |
-| mask            | MASK           | Máscara que contiene la posición actual del modelo |
-| mesh_path       | STRING         | Ruta del archivo del modelo                   |
-| normal          | IMAGE          | Mapa de normales                         |
-| lineart         | IMAGE          | Salida de imagen de arte lineal, el `edge_threshold` correspondiente se puede ajustar en el menú del modelo del lienzo |
-| camera_info     | LOAD3D_CAMERA  | Información de la cámara                 |
-| recording_video | VIDEO          | Video grabado (solo cuando existe una grabación) |
+| Nombre del parámetro | Descripción | Tipo de dato |
+| --- | --- | --- |
+| image | Imagen renderizada del lienzo | IMAGE |
+| mask | Máscara que contiene la posición actual del modelo | MASK |
+| mesh_path | Ruta del archivo del modelo | STRING |
+| normal | Mapa de normales | IMAGE |
+| lineart | Salida de imagen de arte lineal, el `edge_threshold` correspondiente se puede ajustar en el menú del modelo del lienzo | IMAGE |
+| camera_info | Información de la cámara | LOAD3D_CAMERA |
+| recording_video | Video grabado (solo cuando existe una grabación) | VIDEO |
 
 Vista previa de todas las salidas:
 ![Demostración de operación de vista](../Load3D/asset/load3d_outputs.webp)
@@ -163,3 +161,5 @@ El menú derecho tiene dos funciones principales:
 
 1. **Restablecer relación de aspecto de la vista**: Después de hacer clic en el botón, la vista ajustará la relación del área de renderizado del lienzo según el ancho y alto establecidos
 2. **Grabación de video**: Te permite grabar las operaciones actuales de la vista 3D como video, permite la importación, y se puede emitir como `recording_video` a nodos posteriores
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/es.md)

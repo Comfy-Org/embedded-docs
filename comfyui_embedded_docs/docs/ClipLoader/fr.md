@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/fr.md)
-
 Voici la traduction de la documentation du nœud CLIPLoader, conforme à vos règles :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/en.md)
@@ -8,11 +6,11 @@ Le nœud CLIPLoader charge un modèle d'encodeur de texte (CLIP, T5 ou similaire
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `clip_name` | STRING | Oui | Liste des fichiers trouvés dans le dossier `text_encoders` | Le nom du fichier du modèle d'encodeur de texte à charger. Ce fichier doit se trouver dans le répertoire `ComfyUI/models/text_encoders/` ou `ComfyUI/models/clip/`. |
-| `type` | STRING | Oui | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` | Le type d'architecture du modèle en cours de chargement. Cela détermine la variante d'encodeur spécifique à utiliser. La valeur par défaut est `"stable_diffusion"`. |
-| `appareil` | STRING | Non | `"default"`<br>`"cpu"` | Le périphérique sur lequel charger le modèle. `"default"` utilise le GPU s'il est disponible, tandis que `"cpu"` force le chargement sur le CPU. Il s'agit d'une option avancée (par défaut : `"default"`). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `clip_name` | Le nom du fichier du modèle d'encodeur de texte à charger. Ce fichier doit se trouver dans le répertoire `ComfyUI/models/text_encoders/` ou `ComfyUI/models/clip/`. | STRING | Oui | Liste des fichiers trouvés dans le dossier `text_encoders` |
+| `type` | Le type d'architecture du modèle en cours de chargement. Cela détermine la variante d'encodeur spécifique à utiliser. La valeur par défaut est `"stable_diffusion"`. | STRING | Oui | `"stable_diffusion"`<br>`"stable_cascade"`<br>`"sd3"`<br>`"stable_audio"`<br>`"mochi"`<br>`"ltxv"`<br>`"pixart"`<br>`"cosmos"`<br>`"lumina2"`<br>`"wan"`<br>`"hidream"`<br>`"chroma"`<br>`"ace"`<br>`"omnigen2"`<br>`"qwen_image"`<br>`"hunyuan_image"`<br>`"flux2"`<br>`"ovis"`<br>`"longcat_image"`<br>`"cogvideox"` |
+| `appareil` | Le périphérique sur lequel charger le modèle. `"default"` utilise le GPU s'il est disponible, tandis que `"cpu"` force le chargement sur le CPU. Il s'agit d'une option avancée (par défaut : `"default"`). | STRING | Non | `"default"`<br>`"cpu"` |
 
 ### Correspondances type-encodeur prises en charge
 
@@ -34,9 +32,11 @@ Le paramètre `type` sélectionne l'encodeur correct pour une architecture de mo
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `clip` | CLIP | Le modèle d'encodeur de texte chargé, prêt à être connecté à d'autres nœuds pour l'encodage de texte et le conditionnement. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `clip` | Le modèle d'encodeur de texte chargé, prêt à être connecté à d'autres nœuds pour l'encodage de texte et le conditionnement. | CLIP |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPLoader/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `1051bfe5570dff81719682cb09938bae4c03e94e0e72f7a2be84867cccb48017`

@@ -1,23 +1,21 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/es.md)
-
 El KSampler funciona de la siguiente manera: modifica la información de la imagen latente original proporcionada basándose en un modelo específico y condiciones tanto positivas como negativas.
 Primero, añade ruido a los datos de la imagen original según la **semilla** y la **fuerza de eliminación de ruido** establecidas, luego introduce el **Modelo** predefinido combinado con las condiciones de guía **positiva** y **negativa** para generar la imagen.
 
 ## Entradas
 
-| Nombre del Parámetro  | Tipo de Dato  | Obligatorio | Por Defecto | Rango/Opciones           | Descripción                                                                                          |
-| --------------------- | ------------- | ----------- | ----------- | ------------------------ | ---------------------------------------------------------------------------------------------------- |
-| Model                 | checkpoint    | Sí          | Ninguno     | -                        | Modelo de entrada utilizado para el proceso de eliminación de ruido                                  |
-| seed                  | Int           | Sí          | 0           | 0 ~ 18446744073709551615 | Se utiliza para generar ruido aleatorio; usar la misma "semilla" genera imágenes idénticas           |
-| steps                 | Int           | Sí          | 20          | 1 ~ 10000                | Número de pasos a utilizar en el proceso de eliminación de ruido; más pasos significan resultados más precisos |
-| cfg                   | float         | Sí          | 8.0         | 0.0 ~ 100.0              | Controla qué tan fielmente la imagen generada coincide con las condiciones de entrada; se recomienda 6-8 |
-| sampler_name          | Opción de UI  | Sí          | Ninguno     | Múltiples algoritmos     | Elija el muestreador para la eliminación de ruido; afecta la velocidad y el estilo de generación     |
-| scheduler             | Opción de UI  | Sí          | Ninguno     | Múltiples programadores  | Controla cómo se elimina el ruido; afecta el proceso de generación                                   |
-| Positive              | conditioning  | Sí          | Ninguno     | -                        | Condiciones positivas que guían la eliminación de ruido; lo que desea que aparezca en la imagen      |
-| Negative              | conditioning  | Sí          | Ninguno     | -                        | Condiciones negativas que guían la eliminación de ruido; lo que no desea en la imagen                |
-| Latent_Image          | Latent        | Sí          | Ninguno     | -                        | Imagen latente utilizada para la eliminación de ruido                                                |
-| denoise               | float         | No          | 1.0         | 0.0 ~ 1.0                | Determina la proporción de eliminación de ruido; valores más bajos significan menos conexión con la imagen de entrada |
-| control_after_generate | Opción de UI  | No          | Ninguno     | Random/Inc/Dec/Keep      | Proporciona la capacidad de cambiar la semilla después de cada indicación                            |
+| Nombre del Parámetro | Descripción | Tipo de Dato | Obligatorio | Por Defecto | Rango/Opciones |
+| --- | --- | --- | --- | --- | --- |
+| Model | Modelo de entrada utilizado para el proceso de eliminación de ruido | checkpoint | Sí | Ninguno | - |
+| seed | Se utiliza para generar ruido aleatorio; usar la misma "semilla" genera imágenes idénticas | Int | Sí | 0 | 0 ~ 18446744073709551615 |
+| steps | Número de pasos a utilizar en el proceso de eliminación de ruido; más pasos significan resultados más precisos | Int | Sí | 20 | 1 ~ 10000 |
+| cfg | Controla qué tan fielmente la imagen generada coincide con las condiciones de entrada; se recomienda 6-8 | float | Sí | 8.0 | 0.0 ~ 100.0 |
+| sampler_name | Elija el muestreador para la eliminación de ruido; afecta la velocidad y el estilo de generación | Opción de UI | Sí | Ninguno | Múltiples algoritmos |
+| scheduler | Controla cómo se elimina el ruido; afecta el proceso de generación | Opción de UI | Sí | Ninguno | Múltiples programadores |
+| Positive | Condiciones positivas que guían la eliminación de ruido; lo que desea que aparezca en la imagen | conditioning | Sí | Ninguno | - |
+| Negative | Condiciones negativas que guían la eliminación de ruido; lo que no desea en la imagen | conditioning | Sí | Ninguno | - |
+| Latent_Image | Imagen latente utilizada para la eliminación de ruido | Latent | Sí | Ninguno | - |
+| denoise | Determina la proporción de eliminación de ruido; valores más bajos significan menos conexión con la imagen de entrada | float | No | 1.0 | 0.0 ~ 1.0 |
+| control_after_generate | Proporciona la capacidad de cambiar la semilla después de cada indicación | Opción de UI | No | Ninguno | Random/Inc/Dec/Keep |
 
 ## Salida
 
@@ -82,3 +80,5 @@ class KSampler:
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
 
 ```
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/es.md)

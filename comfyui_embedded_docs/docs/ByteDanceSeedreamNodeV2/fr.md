@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/fr.md)
-
 Voici la traduction en français de la documentation technique du nœud ComfyUI **ByteDance Seedream Node V2** :
 
 ## Aperçu
@@ -8,12 +6,12 @@ Ce nœud génère ou modifie des images à l'aide des modèles Seedream de ByteD
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | N/A | Invite textuelle pour créer ou modifier une image. |
-| `modèle` | COMBO | Oui | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | Version du modèle Seedream à utiliser pour la génération. Chaque modèle offre des capacités et une tarification différentes. |
-| `graine` | INT | Non | 0 à 2147483647 | Graine à utiliser pour la génération (par défaut : 0). |
-| `filigrane` | BOOLEAN | Non | True / False | Indique s'il faut ajouter un filigrane "Généré par IA" à l'image (par défaut : False). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `prompt` | Invite textuelle pour créer ou modifier une image. | STRING | Oui | N/A |
+| `modèle` | Version du modèle Seedream à utiliser pour la génération. Chaque modèle offre des capacités et une tarification différentes. | COMBO | Oui | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `graine` | Graine à utiliser pour la génération (par défaut : 0). | INT | Non | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane "Généré par IA" à l'image (par défaut : False). | BOOLEAN | Non | True / False |
 
 ### Paramètres spécifiques au modèle
 
@@ -40,9 +38,11 @@ Lorsque vous sélectionnez un modèle, des paramètres supplémentaires devienne
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `image` | IMAGE | L'image générée ou modifiée sous forme de tenseur. Si plusieurs images ont été demandées, elles sont concaténées en un seul lot. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `image` | L'image générée ou modifiée sous forme de tenseur. Si plusieurs images ont été demandées, elles sont concaténées en un seul lot. | IMAGE |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`

@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,22 +30,24 @@ Kling Görüntüden Videoya Kamera Kontrol Düğümü, hareketsiz görüntüleri
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `başlangıç_karesi` | IMAGE | Evet | - | Referans Görüntü - URL veya Base64 kodlanmış dize, 10MB'ı geçemez, çözünürlük 300x300 pikselden az olamaz, en boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. Base64, data:image önekini içermemelidir. |
-| `istem` | STRING | Evet | - | İstenen video içeriğini tanımlayan olumlu metin istemi |
-| `negatif_istem` | STRING | Evet | - | Oluşturulan videoda nelerden kaçınılacağını tanımlayan olumsuz metin istemi |
-| `cfg_ölçeği` | FLOAT | Hayır | 0,0 ile 1,0 | Metin yönlendirmesinin gücünü kontrol eder. Daha yüksek değerler, çıktının istemi daha yakından takip etmesini sağlar (varsayılan: 0,75) |
-| `en_boy_oranı` | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan videonun en boy oranı (varsayılan: "16:9") |
-| `kamera_kontrolü` | CAMERA_CONTROL | Evet | - | Kling Kamera Kontrolleri düğümü kullanılarak oluşturulabilir. Video oluşturma sırasında kamera hareketini ve hareketliliği kontrol eder. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `başlangıç_karesi` | Referans Görüntü - URL veya Base64 kodlanmış dize, 10MB'ı geçemez, çözünürlük 300x300 pikselden az olamaz, en boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. Base64, data:image önekini içermemelidir. | IMAGE | Evet | - |
+| `istem` | İstenen video içeriğini tanımlayan olumlu metin istemi | STRING | Evet | - |
+| `negatif_istem` | Oluşturulan videoda nelerden kaçınılacağını tanımlayan olumsuz metin istemi | STRING | Evet | - |
+| `cfg_ölçeği` | Metin yönlendirmesinin gücünü kontrol eder. Daha yüksek değerler, çıktının istemi daha yakından takip etmesini sağlar (varsayılan: 0,75) | FLOAT | Hayır | 0,0 ile 1,0 |
+| `en_boy_oranı` | Oluşturulan videonun en boy oranı (varsayılan: "16:9") | COMBO | Hayır | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `kamera_kontrolü` | Kling Kamera Kontrolleri düğümü kullanılarak oluşturulabilir. Video oluşturma sırasında kamera hareketini ve hareketliliği kontrol eder. | CAMERA_CONTROL | Evet | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `video_kimliği` | VIDEO | Oluşturulan video çıktısı |
-| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
-| `duration` | STRING | Oluşturulan videonun süresi |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video_kimliği` | Oluşturulan video çıktısı | VIDEO |
+| `süre` | Oluşturulan video için benzersiz tanımlayıcı | STRING |
+| `duration` | Oluşturulan videonun süresi | STRING |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `a2965975cd484768298f4c7e504423f782ea032dfb5ef304579715be9c27cb79`

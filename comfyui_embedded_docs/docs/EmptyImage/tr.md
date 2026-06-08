@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyImage/tr.md)
-
 ## Fonksiyon Açıklaması
 
 EmptyImage düğümü, belirtilen boyut ve renklerde boş görüntüler oluşturmak için kullanılır. Düz renkli arka plan görüntüleri üretebilir ve genellikle görüntü işleme iş akışları için başlangıç noktası veya arka plan görüntüsü olarak kullanılır.
@@ -10,18 +8,18 @@ Tıpkı bir ressamın yaratmaya başlamadan önce boş bir tuval hazırlaması g
 
 ## Girdiler
 
-| Parametre Adı | Veri Türü | Açıklama |
-|---------------|-----------|----------|
-| `genişlik` | INT | Oluşturulan görüntünün genişliğini (piksel cinsinden) ayarlar, tuvalin yatay boyutlarını belirler |
-| `yükseklik` | INT | Oluşturulan görüntünün yüksekliğini (piksel cinsinden) ayarlar, tuvalin dikey boyutlarını belirler |
-| `toplu_boyut` | INT | Aynı anda oluşturulacak görüntü sayısı, aynı özelliklere sahip görüntülerin toplu olarak oluşturulması için kullanılır |
-| `renk` | INT | Görüntünün arka plan rengi. Onaltılık renk ayarları girebilirsiniz, bunlar otomatik olarak ondalık sisteme dönüştürülür |
+| Parametre Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `genişlik` | Oluşturulan görüntünün genişliğini (piksel cinsinden) ayarlar, tuvalin yatay boyutlarını belirler | INT |
+| `yükseklik` | Oluşturulan görüntünün yüksekliğini (piksel cinsinden) ayarlar, tuvalin dikey boyutlarını belirler | INT |
+| `toplu_boyut` | Aynı anda oluşturulacak görüntü sayısı, aynı özelliklere sahip görüntülerin toplu olarak oluşturulması için kullanılır | INT |
+| `renk` | Görüntünün arka plan rengi. Onaltılık renk ayarları girebilirsiniz, bunlar otomatik olarak ondalık sisteme dönüştürülür | INT |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `image` | IMAGE | Oluşturulan boş görüntü tensörü, [batch_size, height, width, 3] biçiminde, RGB üç renk kanalını içerir |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Oluşturulan boş görüntü tensörü, [batch_size, height, width, 3] biçiminde, RGB üç renk kanalını içerir | IMAGE |
 
 ## Yaygın Renk Referans Değerleri
 
@@ -49,3 +47,5 @@ Bu düğümün mevcut renk girişi kullanıcı dostu olmadığından ve tüm ren
 | Altın    | 0xFFD700        |
 | Gümüş    | 0xC0C0C0        |
 | Bej      | 0xF5F5DC        |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyImage/tr.md)

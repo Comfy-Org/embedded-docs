@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/fr.md)
-
 Voici la traduction en français de la documentation du nœud Load3DAnimation :
 
 Le nœud Load3DAnimation est un nœud central pour le chargement et le traitement de fichiers de modèles 3D. Lors du chargement du nœud, il récupère automatiquement les ressources 3D disponibles depuis `ComfyUI/input/3d/`. Vous pouvez également téléverser des fichiers 3D pris en charge pour les prévisualiser à l'aide de la fonction de téléversement.
@@ -19,23 +17,23 @@ En plus des sorties de nœud standard, Load3D dispose de nombreux paramètres li
 
 ## Entrées
 
-| Nom du paramètre | Type     | Description                     | Défaut | Plage        |
-|---------------|----------|---------------------------------|---------|--------------|
-| model_file    | Sélection de fichier | Chemin du fichier de modèle 3D, prend en charge le téléversement, lit par défaut les fichiers modèles depuis `ComfyUI/input/3d/` | - | Formats pris en charge |
-| width         | INT      | Largeur de rendu du canevas          | 1024    | 1-4096      |
-| height        | INT      | Hauteur de rendu du canevas         | 1024    | 1-4096      |
+| Nom du paramètre | Description | Type | Défaut | Plage |
+| --- | --- | --- | --- | --- |
+| model_file | Chemin du fichier de modèle 3D, prend en charge le téléversement, lit par défaut les fichiers modèles depuis `ComfyUI/input/3d/` | Sélection de fichier | - | Formats pris en charge |
+| width | Largeur de rendu du canevas | INT | 1024 | 1-4096 |
+| height | Hauteur de rendu du canevas | INT | 1024 | 1-4096 |
 
 ## Sorties
 
-| Nom du paramètre   | Type de données      | Description                        |
-|-----------------|----------------|------------------------------------|
-| image           | IMAGE          | Image rendue du canevas              |
-| mask            | MASK           | Masque contenant la position actuelle du modèle |
-| mesh_path       | STRING         | Chemin du fichier du modèle                   |
-| normal          | IMAGE          | Carte des normales                         |
-| lineart         | IMAGE          | Sortie d'image de line art, le `edge_threshold` correspondant peut être ajusté dans le menu du modèle du canevas |
-| camera_info     | LOAD3D_CAMERA  | Informations de la caméra                 |
-| recording_video | VIDEO          | Vidéo enregistrée (uniquement si un enregistrement existe) |
+| Nom du paramètre | Description | Type de données |
+| --- | --- | --- |
+| image | Image rendue du canevas | IMAGE |
+| mask | Masque contenant la position actuelle du modèle | MASK |
+| mesh_path | Chemin du fichier du modèle | STRING |
+| normal | Carte des normales | IMAGE |
+| lineart | Sortie d'image de line art, le `edge_threshold` correspondant peut être ajusté dans le menu du modèle du canevas | IMAGE |
+| camera_info | Informations de la caméra | LOAD3D_CAMERA |
+| recording_video | Vidéo enregistrée (uniquement si un enregistrement existe) | VIDEO |
 
 Aperçu de toutes les sorties :
 ![Démo des opérations de visualisation](../Load3D/asset/load3d_outputs.webp)
@@ -137,3 +135,5 @@ Le menu de droite a deux fonctions principales :
 
 1. **Réinitialiser le rapport de la vue** : Après avoir cliqué sur le bouton, la vue ajustera le rapport de la zone de rendu du canevas en fonction de la largeur et de la hauteur définies
 2. **Enregistrement vidéo** : Permet d'enregistrer les opérations actuelles de la vue 3D sous forme de vidéo, permet l'importation, et peut être sortie en tant que `recording_video` vers les nœuds suivants
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/fr.md)

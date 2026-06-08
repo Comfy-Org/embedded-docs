@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,25 +30,27 @@ Este nodo genera un video utilizando un prompt de texto junto con imágenes del 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo` | COMBO | Sí | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"` | El modelo a utilizar para la generación de video (predeterminado: `"seedance-1-0-lite-i2v-250428"`). |
-| `prompt` | STRING | Sí | - | El prompt de texto utilizado para generar el video. |
-| `primer_fotograma` | IMAGE | Sí | - | Primer fotograma a utilizar para el video. Debe tener entre 300x300 y 6000x6000 píxeles, con una relación de aspecto entre 0.4 y 2.5. |
-| `último_fotograma` | IMAGE | Sí | - | Último fotograma a utilizar para el video. Debe tener entre 300x300 y 6000x6000 píxeles, con una relación de aspecto entre 0.4 y 2.5. |
-| `resolución` | COMBO | Sí | `"480p"`<br>`"720p"`<br>`"1080p"` | La resolución del video de salida. |
-| `relación_de_aspecto` | COMBO | Sí | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | La relación de aspecto del video de salida (predeterminado: `"adaptive"`). |
-| `duración` | INT | Sí | 3 - 12 | La duración del video de salida en segundos (predeterminado: 5). Nota: Para el modelo `seedance-1-5-pro-251215`, la duración mínima compatible es de 4 segundos. |
-| `semilla` | INT | No | 0 - 2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
-| `cámara_fija` | BOOLEAN | No | - | Especifica si se debe fijar la cámara. La plataforma añade una instrucción para fijar la cámara a tu prompt, pero no garantiza el efecto real (predeterminado: False). |
-| `marca_de_agua` | BOOLEAN | No | - | Si se debe añadir una marca de agua "Generado por IA" al video (predeterminado: False). |
-| `generate_audio` | BOOLEAN | No | - | Este parámetro se ignora para cualquier modelo excepto `seedance-1-5-pro-251215` (predeterminado: False). |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo a utilizar para la generación de video (predeterminado: `"seedance-1-0-lite-i2v-250428"`). | COMBO | Sí | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-i2v-250428"` |
+| `prompt` | El prompt de texto utilizado para generar el video. | STRING | Sí | - |
+| `primer_fotograma` | Primer fotograma a utilizar para el video. Debe tener entre 300x300 y 6000x6000 píxeles, con una relación de aspecto entre 0.4 y 2.5. | IMAGE | Sí | - |
+| `último_fotograma` | Último fotograma a utilizar para el video. Debe tener entre 300x300 y 6000x6000 píxeles, con una relación de aspecto entre 0.4 y 2.5. | IMAGE | Sí | - |
+| `resolución` | La resolución del video de salida. | COMBO | Sí | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `relación_de_aspecto` | La relación de aspecto del video de salida (predeterminado: `"adaptive"`). | COMBO | Sí | `"adaptive"`<br>`"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
+| `duración` | La duración del video de salida en segundos (predeterminado: 5). Nota: Para el modelo `seedance-1-5-pro-251215`, la duración mínima compatible es de 4 segundos. | INT | Sí | 3 - 12 |
+| `semilla` | Semilla a utilizar para la generación (predeterminado: 0). | INT | No | 0 - 2147483647 |
+| `cámara_fija` | Especifica si se debe fijar la cámara. La plataforma añade una instrucción para fijar la cámara a tu prompt, pero no garantiza el efecto real (predeterminado: False). | BOOLEAN | No | - |
+| `marca_de_agua` | Si se debe añadir una marca de agua "Generado por IA" al video (predeterminado: False). | BOOLEAN | No | - |
+| `generate_audio` | Este parámetro se ignora para cualquier modelo excepto `seedance-1-5-pro-251215` (predeterminado: False). | BOOLEAN | No | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `output` | VIDEO | El archivo de video generado |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | El archivo de video generado | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `2da7b8ad2bc818a21988c028155ba2b466452a1655ac506fcef01c143dda7450`

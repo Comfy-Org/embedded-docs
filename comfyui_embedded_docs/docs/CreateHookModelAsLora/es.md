@@ -1,15 +1,13 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookModelAsLora/es.md)
-
 Este nodo crea un modelo de enganche como un LoRA (Adaptación de Bajo Rango) cargando pesos de puntos de control y aplicando ajustes de intensidad tanto al modelo como a los componentes CLIP. Permite aplicar modificaciones estilo LoRA a modelos existentes mediante un enfoque basado en enganches, posibilitando el ajuste fino y la adaptación sin cambios permanentes en el modelo. El nodo puede combinarse con enganches anteriores y almacenar en caché los pesos cargados para mayor eficiencia.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `ckpt_name` | STRING | Sí | Múltiples opciones disponibles | El archivo de punto de control del cual cargar los pesos (seleccionar entre los puntos de control disponibles) |
-| `strength_model` | FLOAT | Sí | -20.0 a 20.0 | El multiplicador de intensidad aplicado a los pesos del modelo (predeterminado: 1.0) |
-| `strength_clip` | FLOAT | Sí | -20.0 a 20.0 | El multiplicador de intensidad aplicado a los pesos de CLIP (predeterminado: 1.0) |
-| `prev_hooks` | HOOKS | No | - | Enganches anteriores opcionales para combinar con los nuevos enganches LoRA creados |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `ckpt_name` | El archivo de punto de control del cual cargar los pesos (seleccionar entre los puntos de control disponibles) | STRING | Sí | Múltiples opciones disponibles |
+| `strength_model` | El multiplicador de intensidad aplicado a los pesos del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `strength_clip` | El multiplicador de intensidad aplicado a los pesos de CLIP (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `prev_hooks` | Enganches anteriores opcionales para combinar con los nuevos enganches LoRA creados | HOOKS | No | - |
 
 **Restricciones de parámetros:**
 
@@ -20,9 +18,11 @@ Este nodo crea un modelo de enganche como un LoRA (Adaptación de Bajo Rango) ca
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `HOOKS` | HOOKS | Los enganches LoRA creados, combinados con cualquier enganche anterior si se proporciona |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `HOOKS` | Los enganches LoRA creados, combinados con cualquier enganche anterior si se proporciona | HOOKS |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookModelAsLora/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `8c0dd6b2e8e99e1d7dbc864aa802c0713842fb0d4ee018ea5cbedfb7896a770d`

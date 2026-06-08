@@ -1,20 +1,20 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/es.md)
-
 El nodo ImageRGBToYUV convierte imágenes en color RGB al espacio de color YUV. Toma una imagen RGB como entrada y la separa en tres canales distintos: Y (luminancia), U (proyección azul) y V (proyección roja). Cada canal de salida se devuelve como una imagen en escala de grises que representa el componente YUV correspondiente.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `imagen` | IMAGE | Sí | - | La imagen RGB de entrada que se convertirá al espacio de color YUV |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `imagen` | La imagen RGB de entrada que se convertirá al espacio de color YUV | IMAGE | Sí | - |
 
 ## Salidas
 
-| Nombre de salida | Tipo de dato | Descripción |
-|------------------|--------------|-------------|
-| `U` | IMAGE | El componente de luminancia (brillo) del espacio de color YUV |
-| `V` | IMAGE | El componente de proyección azul del espacio de color YUV |
-| `V` | IMAGE | El componente de proyección roja del espacio de color YUV |
+| Nombre de salida | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `U` | El componente de luminancia (brillo) del espacio de color YUV | IMAGE |
+| `V` | El componente de proyección azul del espacio de color YUV | IMAGE |
+| `V` | El componente de proyección roja del espacio de color YUV | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `119cba119b62c7b46ffdd2c0feca932a9af1ec41c338fead23c21fdf76a6abb2`

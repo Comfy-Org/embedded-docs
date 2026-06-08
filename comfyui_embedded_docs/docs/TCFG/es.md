@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TCFG/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,15 +30,17 @@ TCFG (Amortiguación Tangencial CFG) refina las predicciones incondicionales (ne
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo al que se le aplicará la amortiguación tangencial CFG |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo al que se le aplicará la amortiguación tangencial CFG | MODEL | Sí | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `patched_model` | MODEL | El modelo modificado con la amortiguación tangencial CFG aplicada |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `patched_model` | El modelo modificado con la amortiguación tangencial CFG aplicada | MODEL |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TCFG/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `de6b4deb8a42f05dff90e393bff1e0b4b8ed58887586ca81c236e1a780be5776`

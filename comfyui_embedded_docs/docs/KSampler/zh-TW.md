@@ -1,23 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/zh-TW.md)
-
 KSampler 的運作方式如下：它根據指定的模型以及正向與負向條件，來修改所提供的原始潛在影像資訊。
 首先，它會根據設定的 **seed** 和 **denoise** 強度，將雜訊添加到原始影像資料中，然後輸入預設的 **Model** 以及 **positive** 和 **negative** 引導條件來生成影像。
 
 ## 輸入
 
-| 參數名稱 | 資料類型 | 必要 | 預設值 | 範圍/選項 | 說明 |
-| ---------------------- | ------------ | -------- | ------- | ------------------------ | ---------------------------------------------------------------------------------- |
-| Model                  | checkpoint   | 是      | 無    | -                        | 用於去噪過程的輸入模型 |
-| seed                   | Int          | 是      | 0       | 0 ~ 18446744073709551615 | 用於生成隨機雜訊，使用相同的「seed」會生成完全相同的影像 |
-| steps                  | Int          | 是      | 20      | 1 ~ 10000                | 去噪過程中使用的步數，步數越多結果越精確 |
-| cfg                    | float        | 是      | 8.0     | 0.0 ~ 100.0              | 控制生成影像與輸入條件的符合程度，建議值為 6-8 |
-| sampler_name           | UI Option    | 是      | 無    | 多種演算法 | 選擇用於去噪的取樣器，會影響生成速度與風格 |
-| scheduler              | UI Option    | 是      | 無    | 多種排程器 | 控制雜訊的移除方式，影響生成過程 |
-| Positive               | conditioning | 是      | 無    | -                        | 引導去噪的正向條件，即你希望影像中出現的內容 |
-| Negative               | conditioning | 是      | 無    | -                        | 引導去噪的負向條件，即你不希望影像中出現的內容 |
-| Latent_Image           | Latent       | 是      | 無    | -                        | 用於去噪的潛在影像 |
-| denoise                | float        | 否       | 1.0     | 0.0 ~ 1.0                | 決定雜訊移除的比例，數值越低表示與輸入影像的關聯性越低 |
-| control_after_generate | UI Option    | 否       | 無    | Random/Inc/Dec/Keep      | 提供在每次提示後更改 seed 的能力 |
+| 參數名稱 | 說明 | 資料類型 | 必要 | 預設值 | 範圍/選項 |
+| --- | --- | --- | --- | --- | --- |
+| Model | 用於去噪過程的輸入模型 | checkpoint | 是 | 無 | - |
+| seed | 用於生成隨機雜訊，使用相同的「seed」會生成完全相同的影像 | Int | 是 | 0 | 0 ~ 18446744073709551615 |
+| steps | 去噪過程中使用的步數，步數越多結果越精確 | Int | 是 | 20 | 1 ~ 10000 |
+| cfg | 控制生成影像與輸入條件的符合程度，建議值為 6-8 | float | 是 | 8.0 | 0.0 ~ 100.0 |
+| sampler_name | 選擇用於去噪的取樣器，會影響生成速度與風格 | UI Option | 是 | 無 | 多種演算法 |
+| scheduler | 控制雜訊的移除方式，影響生成過程 | UI Option | 是 | 無 | 多種排程器 |
+| Positive | 引導去噪的正向條件，即你希望影像中出現的內容 | conditioning | 是 | 無 | - |
+| Negative | 引導去噪的負向條件，即你不希望影像中出現的內容 | conditioning | 是 | 無 | - |
+| Latent_Image | 用於去噪的潛在影像 | Latent | 是 | 無 | - |
+| denoise | 決定雜訊移除的比例，數值越低表示與輸入影像的關聯性越低 | float | 否 | 1.0 | 0.0 ~ 1.0 |
+| control_after_generate | 提供在每次提示後更改 seed 的能力 | UI Option | 否 | 無 | Random/Inc/Dec/Keep |
 
 ## 輸出
 
@@ -82,3 +80,5 @@ class KSampler:
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
 
 ```
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/zh-TW.md)

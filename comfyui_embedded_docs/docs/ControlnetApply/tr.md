@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/tr.md)
-
 ControlNet kullanımı, giriş görüntülerinin ön işlenmesini gerektirir. ComfyUI'nin başlangıç düğümleri ön işlemciler ve ControlNet modelleri ile gelmediğinden, lütfen öncelikle ControlNet ön işlemcilerini [ön işlemcileri buradan indirin](https://github.com/Fannovel16/comfy_controlnet_preprocessors) ve ilgili ControlNet modellerini yükleyin.
 
 ## Girişler
@@ -21,3 +19,5 @@ ControlNet kullanımı, giriş görüntülerinin ön işlenmesini gerektirir. Co
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | ControlNet tarafından işlenmiş pozitif koşullandırma verileri, sonraki ControlNet veya K Örnekleyici düğümlerine çıktı olarak verilebilir |
 | `negative` | `CONDITIONING` | ControlNet tarafından işlenmiş negatif koşullandırma verileri, sonraki ControlNet veya K Örnekleyici düğümlerine çıktı olarak verilebilir |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/tr.md)

@@ -1,18 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/tr.md)
-
 Bu düğüm, Kling V3 modelini kullanarak videolar oluşturur. İki ana modu destekler: metinden videoya, burada bir metin açıklamasından video oluşturulur ve görüntüden videoya, burada mevcut bir görüntü canlandırılır. Ayrıca, her bölüm için farklı yönlendirmelerle (storyboard'lar) çok parçalı videolar oluşturma ve isteğe bağlı olarak eşlik eden ses üretme gibi gelişmiş özellikler sunar.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `çoklu çekim` | COMBO | Evet | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Tek bir video mu yoksa her biri için ayrı yönlendirmeler ve süreler içeren bir dizi bölüm mü oluşturulacağını kontrol eder. "disabled" dışında bir değer olduğunda, her storyboard'un yönlendirmesi ve süresi için ek girişler görünür. |
-| `ses oluştur` | BOOLEAN | Evet | `True` / `False` | Etkinleştirildiğinde, düğüm video için ses oluşturur. Varsayılan `True` değerindedir. |
-| `model` | COMBO | Evet | `"kling-v3"` | Model ve ilişkili ayarları. Bu seçeneğin seçilmesi, `resolution` ve `aspect_ratio` alt parametrelerini ortaya çıkarır. |
-| `model.resolution` | COMBO | Evet | `"4k"`<br>`"1080p"`<br>`"720p"` | Oluşturulan video için çözünürlük. Bu ayar, `model` "kling-v3" olarak ayarlandığında kullanılabilir. |
-| `model.aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan video için en boy oranı. Bu ayar, `başlangıç karesi` için bir görüntü sağlandığında (görüntüden videoya modu) dikkate alınmaz. `model` "kling-v3" olarak ayarlandığında kullanılabilir. |
-| `tohum` | INT | Evet | 0 ile 2147483647 arası | Oluşturma için bir tohum değeri. Bu değerin değiştirilmesi düğümün yeniden çalışmasına neden olur, ancak sonuçlar deterministik değildir. Varsayılan `0` değerindedir. |
-| `başlangıç karesi` | IMAGE | Hayır | - | İsteğe bağlı bir başlangıç görüntüsü. Bağlandığında, düğüm metinden videoya modundan görüntüden videoya moduna geçer ve sağlanan görüntüyü canlandırır. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `çoklu çekim` | Tek bir video mu yoksa her biri için ayrı yönlendirmeler ve süreler içeren bir dizi bölüm mü oluşturulacağını kontrol eder. "disabled" dışında bir değer olduğunda, her storyboard'un yönlendirmesi ve süresi için ek girişler görünür. | COMBO | Evet | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `ses oluştur` | Etkinleştirildiğinde, düğüm video için ses oluşturur. Varsayılan `True` değerindedir. | BOOLEAN | Evet | `True` / `False` |
+| `model` | Model ve ilişkili ayarları. Bu seçeneğin seçilmesi, `resolution` ve `aspect_ratio` alt parametrelerini ortaya çıkarır. | COMBO | Evet | `"kling-v3"` |
+| `model.resolution` | Oluşturulan video için çözünürlük. Bu ayar, `model` "kling-v3" olarak ayarlandığında kullanılabilir. | COMBO | Evet | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `model.aspect_ratio` | Oluşturulan video için en boy oranı. Bu ayar, `başlangıç karesi` için bir görüntü sağlandığında (görüntüden videoya modu) dikkate alınmaz. `model` "kling-v3" olarak ayarlandığında kullanılabilir. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `tohum` | Oluşturma için bir tohum değeri. Bu değerin değiştirilmesi düğümün yeniden çalışmasına neden olur, ancak sonuçlar deterministik değildir. Varsayılan `0` değerindedir. | INT | Evet | 0 ile 2147483647 arası |
+| `başlangıç karesi` | İsteğe bağlı bir başlangıç görüntüsü. Bağlandığında, düğüm metinden videoya modundan görüntüden videoya moduna geçer ve sağlanan görüntüyü canlandırır. | IMAGE | Hayır | - |
 
 **`multi_shot` modu için girişler:**
 
@@ -30,9 +28,11 @@ Bu düğüm, Kling V3 modelini kullanarak videolar oluşturur. İki ana modu des
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `video` | VIDEO | Oluşturulan video dosyası. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video` | Oluşturulan video dosyası. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `f7f827d657b1d057d273eba3215ce6848d3ea05c5f348e2f3fccccfdd030dfc3`

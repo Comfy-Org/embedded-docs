@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ARVideoI2V/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -34,22 +32,24 @@ Bu düğüm, AR (Otoregresif) video modelleri için bir görüntüden videoya ol
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Evet | - | Oluşturma için kullanılacak AR video modeli. |
-| `vae` | VAE | Evet | - | Başlangıç görüntüsünü gizli uzaya kodlamak için kullanılan VAE modeli. |
-| `başlangıç_görseli` | IMAGE | Evet | - | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. |
-| `genişlik` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin genişliği (varsayılan: 832). |
-| `yükseklik` | INT | Evet | 16 ila 8192 (adım: 16) | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). |
-| `uzunluk` | INT | Evet | 1 ila 1024 (adım: 4) | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). |
-| `toplu_boyut` | INT | Evet | 1 ila 64 | Tek bir grupta oluşturulacak video dizisi sayısı (varsayılan: 1). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Oluşturma için kullanılacak AR video modeli. | MODEL | Evet | - |
+| `vae` | Başlangıç görüntüsünü gizli uzaya kodlamak için kullanılan VAE modeli. | VAE | Evet | - |
+| `başlangıç_görseli` | Oluşturulan videonun ilk karesi olarak hizmet edecek başlangıç görüntüsü. | IMAGE | Evet | - |
+| `genişlik` | Oluşturulan video karelerinin genişliği (varsayılan: 832). | INT | Evet | 16 ila 8192 (adım: 16) |
+| `yükseklik` | Oluşturulan video karelerinin yüksekliği (varsayılan: 480). | INT | Evet | 16 ila 8192 (adım: 16) |
+| `uzunluk` | Oluşturulan videodaki toplam kare sayısı (varsayılan: 81). | INT | Evet | 1 ila 1024 (adım: 4) |
+| `toplu_boyut` | Tek bir grupta oluşturulacak video dizisi sayısı (varsayılan: 1). | INT | Evet | 1 ila 64 |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `MODEL` | MODEL | Video oluşturma için yapılandırmasında kodlanmış başlangıç görüntüsü bulunan klonlanmış model. |
-| `LATENT` | LATENT | Video oluşturma süreci için doğru boyutlara sahip boş bir gizli tensör. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `MODEL` | Video oluşturma için yapılandırmasında kodlanmış başlangıç görüntüsü bulunan klonlanmış model. | MODEL |
+| `LATENT` | Video oluşturma süreci için doğru boyutlara sahip boş bir gizli tensör. | LATENT |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ARVideoI2V/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `0445b279ba49fa946050cfa70d1e6b13240eaa600b99dfe63f27c3203dc4b61b`

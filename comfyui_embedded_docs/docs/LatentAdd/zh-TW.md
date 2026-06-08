@@ -1,16 +1,16 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentAdd/zh-TW.md)
-
 LatentAdd 節點專為兩個潛在表示（latent representations）的加法運算而設計。它透過執行逐元素加法，促進這些表示中所編碼特徵或屬性的組合。
 
 ## 輸入
 
-| 參數         | 資料類型    | 說明 |
-|--------------|-------------|-------------|
-| `samples1`   | `LATENT`    | 要相加的第一組潛在樣本。代表其中一個輸入，其特徵將與另一組潛在樣本進行組合。 |
-| `samples2`   | `LATENT`    | 要相加的第二組潛在樣本。作為另一個輸入，其特徵透過逐元素加法與第一組潛在樣本進行組合。 |
+| 參數 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `samples1` | 要相加的第一組潛在樣本。代表其中一個輸入，其特徵將與另一組潛在樣本進行組合。 | `LATENT` |
+| `samples2` | 要相加的第二組潛在樣本。作為另一個輸入，其特徵透過逐元素加法與第一組潛在樣本進行組合。 | `LATENT` |
 
 ## 輸出
 
-| 參數      | 資料類型    | 說明 |
-|-----------|-------------|-------------|
-| `latent`  | `LATENT`    | 兩個潛在樣本逐元素加法的結果，代表一組結合了兩個輸入特徵的新潛在樣本。 |
+| 參數 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `latent` | 兩個潛在樣本逐元素加法的結果，代表一組結合了兩個輸入特徵的新潛在樣本。 | `LATENT` |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentAdd/zh-TW.md)

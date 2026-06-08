@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,22 +30,24 @@ El nodo GeminiImage genera respuestas de texto e imagen a partir de los modelos 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
-|-----------|--------------|-----------------|-------------------|-------|-------------|
-| `prompt` | STRING | requerido | "" | - | Indicación de texto para la generación |
-| `model` | COMBO | requerido | gemini_2_5_flash_image_preview | `gemini_2_5_flash_image_preview`<br>`gemini_2_5_pro_exp_03_25`<br>`gemini_2_0_flash_exp_image_generation` | El modelo Gemini a utilizar para generar respuestas. |
-| `seed` | INT | requerido | 42 | 0 a 18446744073709551615 | Cuando la semilla se fija en un valor específico, el modelo hace el mejor esfuerzo para proporcionar la misma respuesta para solicitudes repetidas. No se garantiza una salida determinista. Además, cambiar el modelo o la configuración de parámetros, como la temperatura, puede causar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. De forma predeterminada, se utiliza un valor de semilla aleatorio. |
-| `images` | IMAGE | opcional | None | - | Imagen(es) opcional(es) para usar como contexto para el modelo. Para incluir múltiples imágenes, puedes usar el nodo Batch Images. |
-| `files` | GEMINI_INPUT_FILES | opcional | None | - | Archivo(s) opcional(es) para usar como contexto para el modelo. Acepta entradas del nodo Gemini Generate Content Input Files. |
+| Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
+| --- | --- | --- | --- | --- | --- |
+| `prompt` | Indicación de texto para la generación | STRING | requerido | "" | - |
+| `model` | El modelo Gemini a utilizar para generar respuestas. | COMBO | requerido | gemini_2_5_flash_image_preview | `gemini_2_5_flash_image_preview`<br>`gemini_2_5_pro_exp_03_25`<br>`gemini_2_0_flash_exp_image_generation` |
+| `seed` | Cuando la semilla se fija en un valor específico, el modelo hace el mejor esfuerzo para proporcionar la misma respuesta para solicitudes repetidas. No se garantiza una salida determinista. Además, cambiar el modelo o la configuración de parámetros, como la temperatura, puede causar variaciones en la respuesta incluso cuando se usa el mismo valor de semilla. De forma predeterminada, se utiliza un valor de semilla aleatorio. | INT | requerido | 42 | 0 a 18446744073709551615 |
+| `images` | Imagen(es) opcional(es) para usar como contexto para el modelo. Para incluir múltiples imágenes, puedes usar el nodo Batch Images. | IMAGE | opcional | None | - |
+| `files` | Archivo(s) opcional(es) para usar como contexto para el modelo. Acepta entradas del nodo Gemini Generate Content Input Files. | GEMINI_INPUT_FILES | opcional | None | - |
 
 **Nota:** El nodo incluye parámetros ocultos (`auth_token`, `comfy_api_key`, `unique_id`) que son gestionados automáticamente por el sistema y no requieren entrada del usuario.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `IMAGE` | IMAGE | La respuesta de imagen generada por el modelo Gemini |
-| `STRING` | STRING | La respuesta de texto generada por el modelo Gemini |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `IMAGE` | La respuesta de imagen generada por el modelo Gemini | IMAGE |
+| `STRING` | La respuesta de texto generada por el modelo Gemini | STRING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `bf55ec4f5a869a6bc5a15366f55f86ad25f9498c14056acc80951d3637bf08f2`

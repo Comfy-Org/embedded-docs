@@ -1,24 +1,24 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayTextToImageNode/zh-TW.md)
-
 # Runway 文字轉圖片節點
 
 Runway 文字轉圖片節點使用 Runway 的 Gen 4 模型，根據文字提示生成圖片。您可以提供文字描述，並選擇性地加入參考圖片來引導圖片生成過程。此節點負責處理 API 通訊，並返回生成的圖片。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | 是 | - | 用於生成的文字提示（預設值：""） |
-| `ratio` | COMBO | 是 | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" | 生成圖片的長寬比 |
-| `reference_image` | IMAGE | 否 | - | 可選的參考圖片，用於引導生成過程 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `prompt` | 用於生成的文字提示（預設值：""） | STRING | 是 | - |
+| `ratio` | 生成圖片的長寬比 | COMBO | 是 | "16:9"<br>"1:1"<br>"21:9"<br>"2:3"<br>"3:2"<br>"4:5"<br>"5:4"<br>"9:16"<br>"9:21" |
+| `reference_image` | 可選的參考圖片，用於引導生成過程 | IMAGE | 否 | - |
 
 **注意：** 參考圖片的尺寸不得超過 7999x7999 像素，且長寬比必須介於 0.5 到 2.0 之間。當提供參考圖片時，它會引導圖片的生成過程。
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `output` | IMAGE | 根據文字提示和可選參考圖片生成的圖片 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `output` | 根據文字提示和可選參考圖片生成的圖片 | IMAGE |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayTextToImageNode/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `140f8e6b07216892d84f2d7fbc3afaf1c390e98ddedf27d4926032066a783f67`

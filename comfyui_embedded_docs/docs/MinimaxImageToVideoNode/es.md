@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxImageToVideoNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,18 +30,20 @@ Genera videos de forma síncrona basándose en una imagen y un prompt, y paráme
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `imagen` | IMAGE | Sí | - | Imagen a utilizar como primer fotograma de la generación de video |
-| `texto de prompt` | STRING | Sí | - | Prompt de texto para guiar la generación del video (predeterminado: cadena vacía) |
-| `modelo` | COMBO | Sí | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" | Modelo a utilizar para la generación de video (predeterminado: "I2V-01") |
-| `semilla` | INT | No | 0 a 18446744073709551615 | Semilla aleatoria utilizada para crear el ruido (predeterminado: 0) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `imagen` | Imagen a utilizar como primer fotograma de la generación de video | IMAGE | Sí | - |
+| `texto de prompt` | Prompt de texto para guiar la generación del video (predeterminado: cadena vacía) | STRING | Sí | - |
+| `modelo` | Modelo a utilizar para la generación de video (predeterminado: "I2V-01") | COMBO | Sí | "I2V-01-Director"<br>"I2V-01"<br>"I2V-01-live" |
+| `semilla` | Semilla aleatoria utilizada para crear el ruido (predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `output` | VIDEO | El video generado como salida |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | El video generado como salida | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxImageToVideoNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `9ad1659352e363361f09d6a7a0e24835056b20cc84532247251f516b0ac284e8`

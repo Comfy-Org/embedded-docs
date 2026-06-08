@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIVideoSora2/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -34,14 +32,14 @@ El nodo OpenAIVideoSora2 genera videos utilizando los modelos Sora de OpenAI. Cr
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `modelo` | COMBO | Sí | "sora-2"<br>"sora-2-pro" | El modelo OpenAI Sora a utilizar para la generación de video (predeterminado: "sora-2") |
-| `prompt` | STRING | Sí | - | Texto guía; puede estar vacío si hay una imagen de entrada presente (predeterminado: vacío) |
-| `tamaño` | COMBO | Sí | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" | La resolución del video generado (predeterminado: "1280x720") |
-| `duración` | COMBO | Sí | 4<br>8<br>12 | La duración del video generado en segundos (predeterminado: 8) |
-| `imagen` | IMAGE | No | - | Imagen de entrada opcional para la generación de video |
-| `semilla` | INT | No | 0 a 2147483647 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo OpenAI Sora a utilizar para la generación de video (predeterminado: "sora-2") | COMBO | Sí | "sora-2"<br>"sora-2-pro" |
+| `prompt` | Texto guía; puede estar vacío si hay una imagen de entrada presente (predeterminado: vacío) | STRING | Sí | - |
+| `tamaño` | La resolución del video generado (predeterminado: "1280x720") | COMBO | Sí | "720x1280"<br>"1280x720"<br>"1024x1792"<br>"1792x1024" |
+| `duración` | La duración del video generado en segundos (predeterminado: 8) | COMBO | Sí | 4<br>8<br>12 |
+| `imagen` | Imagen de entrada opcional para la generación de video | IMAGE | No | - |
+| `semilla` | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) | INT | No | 0 a 2147483647 |
 
 **Restricciones y Limitaciones:**
 
@@ -51,9 +49,11 @@ El nodo OpenAIVideoSora2 genera videos utilizando los modelos Sora de OpenAI. Cr
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `output` | VIDEO | El video generado como salida |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | El video generado como salida | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIVideoSora2/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `c87b696dd92c6a6a929f49d189a375b1ebed80bf47f24667ee17c0b210330e55`

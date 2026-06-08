@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,15 +30,15 @@ El nodo Kling Start-End Frame to Video crea una secuencia de video que realiza u
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `start_frame` | IMAGE | Sí | - | Imagen de referencia - URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px, relación de aspecto entre 1:2.5 y 2.5:1. Base64 no debe incluir el prefijo data:image. |
-| `end_frame` | IMAGE | Sí | - | Imagen de referencia - Control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px. Base64 no debe incluir el prefijo data:image. |
-| `prompt` | STRING | Sí | - | Prompt de texto positivo |
-| `negative_prompt` | STRING | Sí | - | Prompt de texto negativo |
-| `cfg_scale` | FLOAT | No | 0.0-1.0 | Controla la fuerza de la guía del prompt (predeterminado: 0.5) |
-| `aspect_ratio` | COMBO | No | "16:9"<br>"9:16"<br>"1:1" | La relación de aspecto para el video generado (predeterminado: "16:9") |
-| `mode` | COMBO | No | Múltiples opciones disponibles | La configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: la séptima opción de los modos disponibles) |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `start_frame` | Imagen de referencia - URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px, relación de aspecto entre 1:2.5 y 2.5:1. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
+| `end_frame` | Imagen de referencia - Control del fotograma final. URL o cadena codificada en Base64, no puede superar los 10MB, resolución no inferior a 300*300px. Base64 no debe incluir el prefijo data:image. | IMAGE | Sí | - |
+| `prompt` | Prompt de texto positivo | STRING | Sí | - |
+| `negative_prompt` | Prompt de texto negativo | STRING | Sí | - |
+| `cfg_scale` | Controla la fuerza de la guía del prompt (predeterminado: 0.5) | FLOAT | No | 0.0-1.0 |
+| `aspect_ratio` | La relación de aspecto para el video generado (predeterminado: "16:9") | COMBO | No | "16:9"<br>"9:16"<br>"1:1" |
+| `mode` | La configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: la séptima opción de los modos disponibles) | COMBO | No | Múltiples opciones disponibles |
 
 **Restricciones de las imágenes:**
 
@@ -51,11 +49,13 @@ El nodo Kling Start-End Frame to Video crea una secuencia de video que realiza u
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `video_id` | VIDEO | La secuencia de video generada |
-| `duration` | STRING | Identificador único para el video generado |
-| `duration` | STRING | Duración del video generado |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `video_id` | La secuencia de video generada | VIDEO |
+| `duration` | Identificador único para el video generado | STRING |
+| `duration` | Duración del video generado | STRING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `1df5820b4f41ccd5afec8e2701888d90c940f164c433c7f81397b41e8fc333c6`

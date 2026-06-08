@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,11 +30,11 @@ Nodo de Sincronización Labial Kling Audio a Video sincroniza los movimientos de
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `video` | VIDEO | Sí | - | El archivo de video que contiene un rostro para sincronizar los labios |
-| `audio` | AUDIO | Sí | - | El archivo de audio que contiene la voz para sincronizar con el video |
-| `idioma_de_voz` | COMBO | Sí | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | El idioma de la voz en el archivo de audio (predeterminado: "en") |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `video` | El archivo de video que contiene un rostro para sincronizar los labios | VIDEO | Sí | - |
+| `audio` | El archivo de audio que contiene la voz para sincronizar con el video | AUDIO | Sí | - |
+| `idioma_de_voz` | El idioma de la voz en el archivo de audio (predeterminado: "en") | COMBO | Sí | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
 
 **Restricciones importantes:**
 
@@ -49,11 +47,13 @@ Nodo de Sincronización Labial Kling Audio a Video sincroniza los movimientos de
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `id_de_video` | VIDEO | El video procesado con movimientos de boca sincronizados con los labios |
-| `duración` | STRING | El identificador único del video procesado |
-| `duration` | STRING | La duración del video procesado |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `id_de_video` | El video procesado con movimientos de boca sincronizados con los labios | VIDEO |
+| `duración` | El identificador único del video procesado | STRING |
+| `duration` | La duración del video procesado | STRING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `92b8a7a4f9508632155a5f69707ffc4a14f2f44c04e4d01bf46476a972465592`

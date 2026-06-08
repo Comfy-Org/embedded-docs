@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,21 +30,23 @@ El nodo Kling Text to Video convierte descripciones textuales en contenido de vi
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | - | Indicación de texto positiva |
-| `negative_prompt` | STRING | Sí | - | Indicación de texto negativa |
-| `cfg_scale` | FLOAT | No | 0.0 a 1.0 | Valor de escala de configuración (predeterminado: 1.0) |
-| `aspect_ratio` | COMBO | No | Opciones de KlingVideoGenAspectRatio | Configuración de la relación de aspecto del video (predeterminado: "16:9") |
-| `mode` | COMBO | No | Múltiples opciones disponibles | Configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: modes[8]) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `prompt` | Indicación de texto positiva | STRING | Sí | - |
+| `negative_prompt` | Indicación de texto negativa | STRING | Sí | - |
+| `cfg_scale` | Valor de escala de configuración (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
+| `aspect_ratio` | Configuración de la relación de aspecto del video (predeterminado: "16:9") | COMBO | No | Opciones de KlingVideoGenAspectRatio |
+| `mode` | Configuración a utilizar para la generación de video siguiendo el formato: modo / duración / nombre_del_modelo. (predeterminado: modes[8]) | COMBO | No | Múltiples opciones disponibles |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `video_id` | VIDEO | La salida de video generada |
-| `duration` | STRING | Identificador único para el video generado |
-| `duration` | STRING | Información de duración del video generado |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `video_id` | La salida de video generada | VIDEO |
+| `duration` | Identificador único para el video generado | STRING |
+| `duration` | Información de duración del video generado | STRING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `467f89a47890bfbfe6cebac8897fef3bce37d888d3419b248d13be89bed442f3`

@@ -1,18 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/tr.md)
-
 **Renk Aktarımı (ColorTransfer)**
 
 Renk Aktarımı düğümü, hedef görüntünün renk paletini bir referans görüntünün renkleriyle eşleşecek şekilde ayarlar. Parlaklık, kontrast ve renk tonu dağılımı gibi renk özelliklerini analiz etmek ve referanstan hedefe aktarmak için farklı matematiksel algoritmalar kullanır. Bu, birden çok görüntüde görsel tutarlılık oluşturmak veya belirli bir renk derecelendirmesi uygulamak için kullanışlıdır.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
-| `image_target` | IMAGE | Evet | - | Renk dönüşümünün uygulanacağı görüntü(ler). |
-| `image_ref` | IMAGE | Evet | - | Renklerin eşleştirileceği referans görüntü(ler). |
-| `method` | COMBO | Evet | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` | Kullanılacak renk aktarım algoritması. |
-| `source_stats` | DYNAMICCOMBO | Evet | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` | Kaynak (hedef) görüntü(ler)den renk istatistiklerinin nasıl hesaplanacağını belirler. |
-| `strength` | FLOAT | Evet | 0,0 ile 10,0 | Renk aktarım efektinin yoğunluğu. 1,0 değeri tam dönüşümü uygularken, 0,0 orijinal görüntüyü döndürür. Varsayılan: 1,0 |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `image_target` | Renk dönüşümünün uygulanacağı görüntü(ler). | IMAGE | Evet | - |
+| `image_ref` | Renklerin eşleştirileceği referans görüntü(ler). | IMAGE | Evet | - |
+| `method` | Kullanılacak renk aktarım algoritması. | COMBO | Evet | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
+| `source_stats` | Kaynak (hedef) görüntü(ler)den renk istatistiklerinin nasıl hesaplanacağını belirler. | DYNAMICCOMBO | Evet | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `strength` | Renk aktarım efektinin yoğunluğu. 1,0 değeri tam dönüşümü uygularken, 0,0 orijinal görüntüyü döndürür. Varsayılan: 1,0 | FLOAT | Evet | 0,0 ile 10,0 |
 
 **Parametre Detayları:**
 *   **`source_stats` Seçenekleri:**
@@ -28,9 +26,11 @@ Renk Aktarımı düğümü, hedef görüntünün renk paletini bir referans gör
 
 ## Çıkışlar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `image` | IMAGE | Renk aktarımı uygulandıktan sonra elde edilen görüntü(ler). |
+| Çıkış Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Renk aktarımı uygulandıktan sonra elde edilen görüntü(ler). | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `93a8447def4d2263a8a859c0474de694e6567dc6d32377032c2ddae2420bb10c`

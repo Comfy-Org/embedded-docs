@@ -1,15 +1,13 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/pt-BR.md)
-
 O nó `BasicScheduler` é projetado para calcular uma sequência de valores de sigma para modelos de difusão com base no agendador, modelo e parâmetros de remoção de ruído fornecidos. Ele ajusta dinamicamente o número total de etapas com base no fator de remoção de ruído para refinar o processo de difusão, fornecendo "receitas" precisas para diferentes estágios em processos de amostragem avançados que exigem controle refinado (como amostragem em múltiplos estágios).
 
 ## Entradas
 
-| Parâmetro   | Tipo de Dado | Tipo de Entrada | Padrão | Intervalo | Descrição Metafórica           | Propósito Técnico             |
-| ----------- | ------------ | --------------- | ------ | --------- | ------------------------------ | ----------------------------- |
-| `modelo`     | MODEL        | Entrada         | -      | -         | **Tipo de Tela**: Diferentes materiais de tela precisam de diferentes fórmulas de tinta | Objeto do modelo de difusão, determina a base do cálculo de sigma |
-| `agendador` | COMBO[STRING]| Widget          | -      | 9 opções  | **Técnica de Mistura**: Escolha como a concentração de tinta muda | Algoritmo de agendamento, controla o modo de decaimento do ruído |
-| `etapas`     | INT          | Widget          | 20     | 1-10000   | **Quantidade de Misturas**: Diferença de precisão entre 20 e 50 misturas | Etapas de amostragem, afeta a qualidade e velocidade de geração |
-| `reduzir_ruído`   | FLOAT        | Widget          | 1.0    | 0.0-1.0   | **Intensidade de Criação**: Controle o nível do ajuste fino à repintura | Força de remoção de ruído, suporta cenários de repintura parcial |
+| Parâmetro | Descrição Metafórica | Tipo de Dado | Tipo de Entrada | Padrão | Intervalo | Propósito Técnico |
+| --- | --- | --- | --- | --- | --- | --- |
+| `modelo` | **Tipo de Tela**: Diferentes materiais de tela precisam de diferentes fórmulas de tinta | MODEL | Entrada | - | - | Objeto do modelo de difusão, determina a base do cálculo de sigma |
+| `agendador` | **Técnica de Mistura**: Escolha como a concentração de tinta muda | COMBO[STRING] | Widget | - | 9 opções | Algoritmo de agendamento, controla o modo de decaimento do ruído |
+| `etapas` | **Quantidade de Misturas**: Diferença de precisão entre 20 e 50 misturas | INT | Widget | 20 | 1-10000 | Etapas de amostragem, afeta a qualidade e velocidade de geração |
+| `reduzir_ruído` | **Intensidade de Criação**: Controle o nível do ajuste fino à repintura | FLOAT | Widget | 1.0 | 0.0-1.0 | Força de remoção de ruído, suporta cenários de repintura parcial |
 
 ### Tipos de Agendador
 
@@ -29,9 +27,9 @@ Com base no código-fonte `comfy.samplers.SCHEDULER_NAMES`, suporta os seguintes
 
 ## Saídas
 
-| Parâmetro | Tipo de Dado | Tipo de Saída | Descrição Metafórica   | Significado Técnico                |
-| --------- | ------------ | ------------- | ---------------------- | ---------------------------------- |
-| `sigmas`  | SIGMAS       | Saída         | **Gráfico de Receita de Tinta**: Lista detalhada de concentração de tinta para uso passo a passo | Sequência de níveis de ruído, guia o processo de remoção de ruído do modelo de difusão |
+| Parâmetro | Descrição Metafórica | Tipo de Dado | Tipo de Saída | Significado Técnico |
+| --- | --- | --- | --- | --- |
+| `sigmas` | **Gráfico de Receita de Tinta**: Lista detalhada de concentração de tinta para uso passo a passo | SIGMAS | Saída | Sequência de níveis de ruído, guia o processo de remoção de ruído do modelo de difusão |
 
 ## Função do Nó: Assistente de Mistura de Cores do Artista
 
@@ -67,3 +65,5 @@ Imagine que você é um artista criando uma imagem nítida a partir de uma mistu
 ### Colaboração com Outros Nós
 
 `BasicScheduler` (Assistente de Cores) → Preparar Receita → `SamplerCustom` (Artista) → Pintura Real → Trabalho Concluído
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/pt-BR.md)

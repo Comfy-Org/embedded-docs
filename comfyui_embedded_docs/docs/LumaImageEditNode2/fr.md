@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageEditNode2/fr.md)
-
 Voici la traduction de la documentation du nœud ComfyUI, en respectant vos consignes :
 
 ## Aperçu
@@ -8,12 +6,12 @@ Ce nœud modifie une image existante à l'aide d'une invite textuelle, propulsé
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `source` | IMAGE | Oui | - | Image source à modifier. |
-| `invite` | STRING | Oui | 1–6000 caractères | Description de la modification souhaitée. Par défaut : "" (chaîne vide). |
-| `modèle` | MODEL | Oui | `"uni-1"`<br>`"uni-1-max"` | Modèle à utiliser pour la modification. |
-| `graine` | INT | Oui | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `source` | Image source à modifier. | IMAGE | Oui | - |
+| `invite` | Description de la modification souhaitée. Par défaut : "" (chaîne vide). | STRING | Oui | 1–6000 caractères |
+| `modèle` | Modèle à utiliser pour la modification. | MODEL | Oui | `"uni-1"`<br>`"uni-1-max"` |
+| `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
 
 **Contraintes des paramètres :**
 - Le `prompt` doit avoir une longueur comprise entre 1 et 6000 caractères.
@@ -21,9 +19,11 @@ Ce nœud modifie une image existante à l'aide d'une invite textuelle, propulsé
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `image` | IMAGE | L'image modifiée générée par le modèle Luma UNI-1. |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `image` | L'image modifiée générée par le modèle Luma UNI-1. | IMAGE |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageEditNode2/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `7026e3ce818b0a9710624bd071fc2049950290f89c7d0365ff44236e9ad5eaed`

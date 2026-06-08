@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage2Node/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,17 +30,17 @@ GeminiImage2Node, Google'ın Vertex AI Gemini modelini kullanarak görseller olu
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | Oluşturulacak görseli veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin takip etmesi gereken tüm kısıtlamaları, stilleri veya detayları ekleyin. |
-| `model` | COMBO | Evet | `"gemini-3-pro-image-preview"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Image)"` | Oluşturma için kullanılacak belirli Gemini modeli. "Nano Banana 2" seçeneği dahili olarak `gemini-3.1-flash-image-preview` modeline eşlenir. |
-| `seed` | INT | Evet | 0 ile 18446744073709551615 arası | Belirli bir değere sabitlendiğinde, model tekrarlanan istekler için aynı yanıtı sağlamak üzere en iyi çabayı gösterir. Deterministik çıktı garanti edilmez. Modeli veya diğer ayarları değiştirmek, aynı tohum değeriyle bile farklılıklara neden olabilir. Varsayılan: 42. |
-| `aspect_ratio` | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"21:9"` | Çıktı görseli için istenen en boy oranı. 'auto' olarak ayarlanırsa, giriş görselinizin en boy oranına uyar; görsel sağlanmazsa, genellikle 16:9 kare oluşturulur. Varsayılan: "auto". |
-| `resolution` | COMBO | Evet | `"1K"`<br>`"2K"`<br>`"4K"` | Hedef çıktı çözünürlüğü. 2K/4K için yerel Gemini yükselticisi kullanılır. |
-| `response_modalities` | COMBO | Evet | `"IMAGE+TEXT"`<br>`"IMAGE"` | Yalnızca görsel çıktısı için 'IMAGE' veya hem oluşturulan görseli hem de bir metin yanıtını döndürmek için 'IMAGE+TEXT' seçeneğini belirleyin. |
-| `images` | IMAGE | Hayır | Yok | İsteğe bağlı referans görsel(ler)i. Birden fazla görsel eklemek için Toplu Görseller düğümünü kullanın (en fazla 14). |
-| `files` | CUSTOM | Hayır | Yok | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini İçerik Oluşturma Giriş Dosyaları düğümünden girişleri kabul eder. |
-| `system_prompt` | STRING | Hayır | Yok | Bir yapay zekanın davranışını belirleyen temel talimatlar. Varsayılan: Görsel oluşturma için önceden tanımlanmış bir sistem istemi. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `prompt` | Oluşturulacak görseli veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin takip etmesi gereken tüm kısıtlamaları, stilleri veya detayları ekleyin. | STRING | Evet | Yok |
+| `model` | Oluşturma için kullanılacak belirli Gemini modeli. "Nano Banana 2" seçeneği dahili olarak `gemini-3.1-flash-image-preview` modeline eşlenir. | COMBO | Evet | `"gemini-3-pro-image-preview"`<br>`"Nano Banana 2 (Gemini 3.1 Flash Image)"` |
+| `seed` | Belirli bir değere sabitlendiğinde, model tekrarlanan istekler için aynı yanıtı sağlamak üzere en iyi çabayı gösterir. Deterministik çıktı garanti edilmez. Modeli veya diğer ayarları değiştirmek, aynı tohum değeriyle bile farklılıklara neden olabilir. Varsayılan: 42. | INT | Evet | 0 ile 18446744073709551615 arası |
+| `aspect_ratio` | Çıktı görseli için istenen en boy oranı. 'auto' olarak ayarlanırsa, giriş görselinizin en boy oranına uyar; görsel sağlanmazsa, genellikle 16:9 kare oluşturulur. Varsayılan: "auto". | COMBO | Evet | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"21:9"` |
+| `resolution` | Hedef çıktı çözünürlüğü. 2K/4K için yerel Gemini yükselticisi kullanılır. | COMBO | Evet | `"1K"`<br>`"2K"`<br>`"4K"` |
+| `response_modalities` | Yalnızca görsel çıktısı için 'IMAGE' veya hem oluşturulan görseli hem de bir metin yanıtını döndürmek için 'IMAGE+TEXT' seçeneğini belirleyin. | COMBO | Evet | `"IMAGE+TEXT"`<br>`"IMAGE"` |
+| `images` | İsteğe bağlı referans görsel(ler)i. Birden fazla görsel eklemek için Toplu Görseller düğümünü kullanın (en fazla 14). | IMAGE | Hayır | Yok |
+| `files` | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini İçerik Oluşturma Giriş Dosyaları düğümünden girişleri kabul eder. | CUSTOM | Hayır | Yok |
+| `system_prompt` | Bir yapay zekanın davranışını belirleyen temel talimatlar. Varsayılan: Görsel oluşturma için önceden tanımlanmış bir sistem istemi. | STRING | Hayır | Yok |
 
 **Kısıtlamalar:**
 
@@ -51,10 +49,12 @@ GeminiImage2Node, Google'ın Vertex AI Gemini modelini kullanarak görseller olu
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `image` | IMAGE | Gemini modeli tarafından oluşturulan veya düzenlenen görsel. |
-| `string` | STRING | Modelden gelen metin yanıtı. `response_modalities` "IMAGE" olarak ayarlanmışsa bu çıktı boş olacaktır. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Gemini modeli tarafından oluşturulan veya düzenlenen görsel. | IMAGE |
+| `string` | Modelden gelen metin yanıtı. `response_modalities` "IMAGE" olarak ayarlanmışsa bu çıktı boş olacaktır. | STRING |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage2Node/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `20a937a635f883a42e22582ae415f6d2a9a6ecc50f147c9090431877e5461144`

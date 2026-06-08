@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/tr.md)
-
 Bu düğüm, LoRA klasöründe (alt klasörler dahil) bulunan modelleri, ilgili model yolu `ComfyUI\models\loras` olacak şekilde otomatik olarak algılar. Daha fazla bilgi için lütfen LoRA Modellerini Yükleme bölümüne bakın.
 
 LoRA Yükleyici düğümü, öncelikle LoRA modellerini yüklemek için kullanılır. LoRA modellerini, görsellerinize belirli stiller, içerikler ve detaylar kazandırabilen filtreler olarak düşünebilirsiniz:
@@ -13,17 +11,19 @@ Birden fazla LoRA modeli yüklemeniz gerekiyorsa, aşağıda gösterildiği gibi
 
 ## Girişler
 
-| Parametre | Veri Türü | Açıklama |
+| Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | MODEL | Genellikle temel modele bağlanmak için kullanılır |
-| `clip` | CLIP | Genellikle CLIP modeline bağlanmak için kullanılır |
-| `lora_adı` | COMBO[STRING] | Kullanılacak LoRA modelinin adını seçin |
-| `model_gücü` | FLOAT | Değer aralığı -100,0 ile 100,0 arasındadır, günlük görsel üretiminde genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama efektlerinin daha belirgin olmasını sağlar |
-| `clip_gücü` | FLOAT | Değer aralığı -100,0 ile 100,0 arasındadır, günlük görsel üretiminde genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama efektlerinin daha belirgin olmasını sağlar |
+| `model` | Genellikle temel modele bağlanmak için kullanılır | MODEL |
+| `clip` | Genellikle CLIP modeline bağlanmak için kullanılır | CLIP |
+| `lora_adı` | Kullanılacak LoRA modelinin adını seçin | COMBO[STRING] |
+| `model_gücü` | Değer aralığı -100,0 ile 100,0 arasındadır, günlük görsel üretiminde genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama efektlerinin daha belirgin olmasını sağlar | FLOAT |
+| `clip_gücü` | Değer aralığı -100,0 ile 100,0 arasındadır, günlük görsel üretiminde genellikle 0~1 arasında kullanılır. Daha yüksek değerler, model ayarlama efektlerinin daha belirgin olmasını sağlar | FLOAT |
 
 ## Çıkışlar
 
-| Parametre | Veri Türü | Açıklama |
+| Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model` | MODEL | LoRA ayarlamaları uygulanmış model |
-| `clip` | CLIP | LoRA ayarlamaları uygulanmış CLIP örneği |
+| `model` | LoRA ayarlamaları uygulanmış model | MODEL |
+| `clip` | LoRA ayarlamaları uygulanmış CLIP örneği | CLIP |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/tr.md)

@@ -1,21 +1,19 @@
-> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/en.md)
-
 `CLIP Text Encode (CLIPTextEncode)` acts as a translator, converting your text descriptions into a format that AI can understand. This helps the AI interpret your input and generate the desired image.
 
 Think of it as communicating with an artist who speaks a different language. The CLIP model, trained on vast image-text pairs, bridges this gap by converting your descriptions into "instructions" that the AI model can follow.
 
 ## Inputs
 
-| Parameter | Data Type | Required | Range | Description |
-|-----------|-----------|----------|-------|-------------|
-| `text` | STRING | Yes | Any text | The text to be encoded. Supports multi-line input and dynamic prompts. |
-| `clip` | CLIP | Yes | Loaded CLIP models | The CLIP model used for encoding the text. |
+| Parameter | Description | Data Type | Required | Range |
+| --- | --- | --- | --- | --- |
+| `text` | The text to be encoded. Supports multi-line input and dynamic prompts. | STRING | Yes | Any text |
+| `clip` | The CLIP model used for encoding the text. | CLIP | Yes | Loaded CLIP models |
 
 ## Outputs
 
-| Output Name | Data Type | Description |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | A conditioning containing the embedded text used to guide the diffusion model. |
+| Output Name | Description | Data Type |
+| --- | --- | --- |
+| `CONDITIONING` | A conditioning containing the embedded text used to guide the diffusion model. | CONDITIONING |
 
 ## Prompt Features
 
@@ -65,6 +63,8 @@ Example:
 // this line is excluded from the prompt.
 a beautiful landscape, /* this part is ignored */ high quality
 ```
+
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/en.md)
 
 ---
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

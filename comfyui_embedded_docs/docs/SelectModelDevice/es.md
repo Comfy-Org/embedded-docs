@@ -1,15 +1,13 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/es.md)
-
 ## Descripción general
 
 El nodo SelectModelDevice permite elegir manualmente en qué dispositivo (CPU o una GPU específica) se ejecuta un modelo de difusión. Puede mover un modelo a un dispositivo diferente y maneja conflictos con otros nodos multi-GPU automáticamente.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `model` | MODEL | Sí | | El modelo de difusión que se colocará en un dispositivo específico. |
-| `device` | COMBO | Sí | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | El dispositivo de destino para el modelo. Las opciones se generan dinámicamente según las GPU disponibles. (predeterminado: "default") |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `model` | El modelo de difusión que se colocará en un dispositivo específico. | MODEL | Sí |  |
+| `device` | El dispositivo de destino para el modelo. Las opciones se generan dinámicamente según las GPU disponibles. (predeterminado: "default") | COMBO | Sí | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 **Detalles de parámetros:**
 - `"default"`: Restaura el dispositivo asignado por el cargador de modelos, incluso si un nodo SelectModelDevice anterior lo cambió.
@@ -23,9 +21,11 @@ El nodo SelectModelDevice permite elegir manualmente en qué dispositivo (CPU o 
 
 ## Salidas
 
-| Nombre de salida | Tipo de dato | Descripción |
-|------------------|--------------|-------------|
-| `model` | MODEL | El modelo de difusión, ahora colocado en el dispositivo seleccionado. Si el dispositivo no era válido o no estaba disponible, el modelo se pasa sin cambios. |
+| Nombre de salida | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `model` | El modelo de difusión, ahora colocado en el dispositivo seleccionado. Si el dispositivo no era válido o no estaba disponible, el modelo se pasa sin cambios. | MODEL |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `02841975f123cc8ae8152ea86f1798e0e7e68255ecd11e04271da886b75eb0fd`

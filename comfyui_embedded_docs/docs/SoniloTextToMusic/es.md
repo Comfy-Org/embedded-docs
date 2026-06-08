@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SoniloTextToMusic/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,19 +30,21 @@ El nodo Sonilo Text to Music genera música a partir de una descripción textual
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | N/A | Prompt de texto que describe la música a generar. Este campo es obligatorio. |
-| `duration` | INT | No | 0 a 360 | Duración objetivo en segundos. Establecer en 0 para que el modelo infiera la duración a partir del prompt. Máximo: 6 minutos (360 segundos). Valor por defecto: 0. |
-| `seed` | INT | No | 0 a 18446744073709551615 | Semilla para reproducibilidad. Actualmente es ignorada por el servicio Sonilo, pero se mantiene para la consistencia del grafo. Valor por defecto: 0. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `prompt` | Prompt de texto que describe la música a generar. Este campo es obligatorio. | STRING | Sí | N/A |
+| `duration` | Duración objetivo en segundos. Establecer en 0 para que el modelo infiera la duración a partir del prompt. Máximo: 6 minutos (360 segundos). Valor por defecto: 0. | INT | No | 0 a 360 |
+| `seed` | Semilla para reproducibilidad. Actualmente es ignorada por el servicio Sonilo, pero se mantiene para la consistencia del grafo. Valor por defecto: 0. | INT | No | 0 a 18446744073709551615 |
 
 **Nota:** La entrada `seed` se proporciona para la consistencia del flujo de trabajo, pero actualmente no afecta la salida del servicio Sonilo.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `audio` | AUDIO | La música generada como archivo de audio. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `audio` | La música generada como archivo de audio. | AUDIO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SoniloTextToMusic/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `aac2762d9310179279ed7dcc9766f38342400902de2f8791b78d8092a96b86b4`

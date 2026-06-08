@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,17 +30,19 @@ El nodo OpenAIChatConfig permite establecer opciones de configuración adicional
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `truncamiento` | COMBO | Sí | `"auto"`<br>`"disabled"` | La estrategia de truncamiento a utilizar para la respuesta del modelo. auto: Si el contexto de esta respuesta y las anteriores supera el tamaño de la ventana de contexto del modelo, el modelo truncará la respuesta para ajustarse a la ventana de contexto eliminando elementos de entrada en medio de la conversación. disabled: Si una respuesta del modelo supera el tamaño de la ventana de contexto para un modelo, la solicitud fallará con un error 400 (valor predeterminado: "auto") |
-| `tokens_salida_max` | INT | No | 16 a 16384 | Un límite superior para la cantidad de tokens que se pueden generar para una respuesta, incluyendo los tokens de salida visibles (valor predeterminado: 4096) |
-| `instrucciones` | STRING | No | - | Instrucciones para el modelo sobre cómo generar la respuesta (se admite entrada multilínea) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `truncamiento` | La estrategia de truncamiento a utilizar para la respuesta del modelo. auto: Si el contexto de esta respuesta y las anteriores supera el tamaño de la ventana de contexto del modelo, el modelo truncará la respuesta para ajustarse a la ventana de contexto eliminando elementos de entrada en medio de la conversación. disabled: Si una respuesta del modelo supera el tamaño de la ventana de contexto para un modelo, la solicitud fallará con un error 400 (valor predeterminado: "auto") | COMBO | Sí | `"auto"`<br>`"disabled"` |
+| `tokens_salida_max` | Un límite superior para la cantidad de tokens que se pueden generar para una respuesta, incluyendo los tokens de salida visibles (valor predeterminado: 4096) | INT | No | 16 a 16384 |
+| `instrucciones` | Instrucciones para el modelo sobre cómo generar la respuesta (se admite entrada multilínea) | STRING | No | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `OPENAI_CHAT_CONFIG` | OPENAI_CHAT_CONFIG | Objeto de configuración que contiene los ajustes especificados para su uso con Nodos de Chat OpenAI |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `OPENAI_CHAT_CONFIG` | Objeto de configuración que contiene los ajustes especificados para su uso con Nodos de Chat OpenAI | OPENAI_CHAT_CONFIG |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIChatConfig/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `6d956aa1bc7f822c18ddaa55cd2345dad947fd93833de25a957f49878484af97`

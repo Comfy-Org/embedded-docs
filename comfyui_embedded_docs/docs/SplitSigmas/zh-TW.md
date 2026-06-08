@@ -1,16 +1,16 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/zh-TW.md)
-
 SplitSigmas 節點旨在根據指定的步長將一系列 sigma 值分割成兩個部分。此功能對於需要對 sigma 序列的初始部分和後續部分進行不同處理或操作的場景至關重要，從而實現對這些值更靈活且更具針對性的操控。
 
 ## 輸入
 
-| 參數 | 資料類型 | 說明 |
-|-----------|-------------|-------------|
-| `sigmas`  | `SIGMAS`    | 'sigmas' 參數代表要分割的 sigma 值序列。它對於確定分割點以及產生的兩個 sigma 值序列至關重要，會影響節點的執行與結果。 |
-| `步驟`    | `INT`       | 'step' 參數指定了分割 sigma 序列的索引位置。它在定義兩個結果 sigma 序列之間的邊界方面扮演關鍵角色，影響節點的功能與輸出的特性。 |
+| 參數 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `sigmas` | 'sigmas' 參數代表要分割的 sigma 值序列。它對於確定分割點以及產生的兩個 sigma 值序列至關重要，會影響節點的執行與結果。 | `SIGMAS` |
+| `步驟` | 'step' 參數指定了分割 sigma 序列的索引位置。它在定義兩個結果 sigma 序列之間的邊界方面扮演關鍵角色，影響節點的功能與輸出的特性。 | `INT` |
 
 ## 輸出
 
-| 參數 | 資料類型 | 說明 |
-|-----------|-------------|-------------|
-| `低 sigma`  | `SIGMAS`    | 此節點輸出兩個 sigma 值序列，每個序列代表原始序列在指定步長處分割後的一部分。這些輸出對於後續需要對 sigma 值進行區分處理的操作至關重要。 |
+| 參數 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `低 sigma` | 此節點輸出兩個 sigma 值序列，每個序列代表原始序列在指定步長處分割後的一部分。這些輸出對於後續需要對 sigma 值進行區分處理的操作至關重要。 | `SIGMAS` |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/zh-TW.md)

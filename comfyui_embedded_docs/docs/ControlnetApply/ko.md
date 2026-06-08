@@ -1,5 +1,3 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ko.md)
-
 ControlNet을 사용하려면 입력 이미지의 전처리가 필요합니다. ComfyUI 기본 노드에는 전처리기와 ControlNet 모델이 포함되어 있지 않으므로, 먼저 ControlNet 전처리기 [여기서 전처리기 다운로드](https://github.com/Fannovel16/comfy_controlnet_preprocessors)와 해당 ControlNet 모델을 설치해 주시기 바랍니다.
 
 ## 입력
@@ -21,3 +19,5 @@ ControlNet을 사용하려면 입력 이미지의 전처리가 필요합니다. 
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | ControlNet으로 처리된 긍정 조건 데이터로, 다음 ControlNet 또는 K 샘플러 노드로 출력할 수 있습니다. |
 | `negative` | `CONDITIONING` | ControlNet으로 처리된 부정 조건 데이터로, 다음 ControlNet 또는 K 샘플러 노드로 출력할 수 있습니다. |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ko.md)

@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,22 +30,24 @@ Reve Image Create düğümü, Reve AI modelini kullanarak metin açıklamaların
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | Evet | Yok | İstenen görselin metin açıklaması. Maksimum 2560 karakter. |
-| `model` | COMBO | Evet | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` | Oluşturma için kullanılacak model sürümü ve en boy oranı. İlk seçenek modeli seçer, sonraki seçenekler görselin en boy oranını tanımlar. |
-| `upscale` | COMBO | Hayır | `"disabled"`<br>`"enabled"` | Yükseltme işlem sonrası adımını etkinleştirir veya devre dışı bırakır. Etkinleştirildiğinde, bir yükseltme faktörü de seçmelisiniz. |
-| `upscale_factor` | COMBO | Hayır | `2`<br>`3`<br>`4` | Görselin çözünürlüğünü artırma faktörü. Bu parametre yalnızca `upscale` `"enabled"` olarak ayarlandığında etkindir. |
-| `remove_background` | BOOLEAN | Hayır | Yok | Etkinleştirildiğinde, oluşturulan görsele arka plan kaldırma işlem sonrası adımı uygular. |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eden bir tohum değeri. Not: Tohum değerinden bağımsız olarak sonuçlar deterministik değildir. Varsayılan: 0. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `prompt` | İstenen görselin metin açıklaması. Maksimum 2560 karakter. | STRING | Evet | Yok |
+| `model` | Oluşturma için kullanılacak model sürümü ve en boy oranı. İlk seçenek modeli seçer, sonraki seçenekler görselin en boy oranını tanımlar. | COMBO | Evet | `"reve-create@20250915"`<br>`"3:2"`<br>`"16:9"`<br>`"9:16"`<br>`"2:3"`<br>`"4:3"`<br>`"3:4"`<br>`"1:1"` |
+| `upscale` | Yükseltme işlem sonrası adımını etkinleştirir veya devre dışı bırakır. Etkinleştirildiğinde, bir yükseltme faktörü de seçmelisiniz. | COMBO | Hayır | `"disabled"`<br>`"enabled"` |
+| `upscale_factor` | Görselin çözünürlüğünü artırma faktörü. Bu parametre yalnızca `upscale` `"enabled"` olarak ayarlandığında etkindir. | COMBO | Hayır | `2`<br>`3`<br>`4` |
+| `remove_background` | Etkinleştirildiğinde, oluşturulan görsele arka plan kaldırma işlem sonrası adımı uygular. | BOOLEAN | Hayır | Yok |
+| `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eden bir tohum değeri. Not: Tohum değerinden bağımsız olarak sonuçlar deterministik değildir. Varsayılan: 0. | INT | Hayır | 0 ile 2147483647 arası |
 
 **Not:** `upscale_factor` parametresi, `upscale` parametresinin `"enabled"` olarak ayarlanmasına bağlıdır. `seed` parametresi deterministik çıktıları garanti etmez.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `image` | IMAGE | Giriş istemine dayalı olarak Reve modeli tarafından oluşturulan görsel. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Giriş istemine dayalı olarak Reve modeli tarafından oluşturulan görsel. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `56cb32ad254d39609d9795ca29f1ccba1db2c5a7ac5bb530475298306ec4ea19`

@@ -1,20 +1,20 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/pt-BR.md)
-
 O nó USOStyleReference aplica patches de referência de estilo a modelos usando características de imagem codificadas a partir da saída de visão do CLIP. Ele cria uma versão modificada do modelo de entrada incorporando informações de estilo extraídas de entradas visuais, permitindo capacidades de transferência de estilo ou geração baseada em referência.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | - | O modelo base ao qual aplicar o patch de referência de estilo |
-| `model_patch` | MODEL_PATCH | Sim | - | O patch de modelo contendo informações de referência de estilo |
-| `clip_vision_output` | CLIP_VISION_OUTPUT | Sim | - | As características visuais codificadas extraídas do processamento de visão do CLIP |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `model` | O modelo base ao qual aplicar o patch de referência de estilo | MODEL | Sim | - |
+| `model_patch` | O patch de modelo contendo informações de referência de estilo | MODEL_PATCH | Sim | - |
+| `clip_vision_output` | As características visuais codificadas extraídas do processamento de visão do CLIP | CLIP_VISION_OUTPUT | Sim | - |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
-| `model` | MODEL | O modelo modificado com os patches de referência de estilo aplicados |
+| Nome da Saída | Descrição | Tipo de Dados |
+| --- | --- | --- |
+| `model` | O modelo modificado com os patches de referência de estilo aplicados | MODEL |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `fd800fb927677da29e148bfa1b287efed82895860ce4b0241d662579d2c07ff4`

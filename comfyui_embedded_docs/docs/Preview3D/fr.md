@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/fr.md)
-
 Voici la traduction en français de la documentation du nœud Preview3D :
 
 Le nœud Preview3D est principalement utilisé pour prévisualiser les sorties de modèles 3D. Ce nœud accepte deux entrées : l'une est le `camera_info` provenant du nœud Load3D, et l'autre est le chemin vers le fichier du modèle 3D. Le chemin du fichier modèle doit se trouver dans le dossier `ComfyUI/output`.
@@ -13,10 +11,10 @@ Certaines préférences relatives aux nœuds 3D peuvent être configurées dans 
 
 ## Entrées
 
-| Nom du paramètre | Type          | Description                                  |
-| ---------------- | ------------- | -------------------------------------------- |
-| camera_info      | LOAD3D_CAMERA | Informations de la caméra                    |
-| model_file       | LOAD3D_CAMERA | Chemin du fichier modèle sous `ComfyUI/output/` |
+| Nom du paramètre | Description | Type |
+| --- | --- | --- |
+| camera_info | Informations de la caméra | LOAD3D_CAMERA |
+| model_file | Chemin du fichier modèle sous `ComfyUI/output/` | LOAD3D_CAMERA |
 
 ## Description de la zone Canvas
 
@@ -103,3 +101,5 @@ Via ce menu, vous pouvez rapidement ajuster l'intensité de l'éclairage global 
 ![menu_exportation](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Ce menu offre la possibilité de convertir et d'exporter rapidement les formats de modèle
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/fr.md)

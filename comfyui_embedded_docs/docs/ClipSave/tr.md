@@ -1,15 +1,13 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/tr.md)
-
 `CLIPSave` düğümü, bir CLIP metin kodlayıcı modelini SafeTensors formatında diske kaydeder. Gelişmiş model birleştirme iş akışları için tasarlanmıştır ve CLIP modelini, modelin iç yapısına bağlı olarak otomatik olarak bileşen parçalarına (CLIP-L, CLIP-G veya T5XXL gibi) ayırır ve her bileşeni ayrı bir dosya olarak kaydeder.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | Zorunlu | - | - | Kaydedilecek CLIP modeli. |
-| `dosyaadı_öneki` | STRING | Zorunlu | `clip/ComfyUI` | - | Kaydedilen dosya(lar) için ön ek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (ör. `_clip_l`, `_clip_g`) ve bir sayaç ekleyecektir. |
-| `prompt` | PROMPT | Gizli | - | - | Çıktı dosyasında meta veri olarak kaydedilen iş akışı istem bilgisi. |
-| `extra_pnginfo` | EXTRA_PNGINFO | Gizli | - | - | Çıktı dosyasında anahtar-değer çiftleri olarak kaydedilen ek meta veriler. |
+| Parametre | Açıklama | Veri Türü | Girdi Türü | Varsayılan | Aralık |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | Kaydedilecek CLIP modeli. | CLIP | Zorunlu | - | - |
+| `dosyaadı_öneki` | Kaydedilen dosya(lar) için ön ek yolu ve dosya adı. Düğüm, benzersiz dosya adları oluşturmak için bir bileşen son eki (ör. `_clip_l`, `_clip_g`) ve bir sayaç ekleyecektir. | STRING | Zorunlu | `clip/ComfyUI` | - |
+| `prompt` | Çıktı dosyasında meta veri olarak kaydedilen iş akışı istem bilgisi. | PROMPT | Gizli | - | - |
+| `extra_pnginfo` | Çıktı dosyasında anahtar-değer çiftleri olarak kaydedilen ek meta veriler. | EXTRA_PNGINFO | Gizli | - | - |
 
 ## Çıktılar
 
@@ -33,6 +31,8 @@ Düğüm, CLIP modelinin durum sözlüğünü analiz eder ve algılanan her bile
 - Boş ön ek (diğer CLIP bileşenleri)
 
 Algılanan her bileşen için düğüm, `{filename_prefix}_{counter:05}_.safetensors` adında bir dosya oluşturur; burada bileşen ön eki, dosya adı ön ekine eklenir (ör. `clip/ComfyUI_clip_l_00001_.safetensors`). Kaydetme sırasında `transformer.` ön eki parametre anahtarlarından kaldırılır.
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

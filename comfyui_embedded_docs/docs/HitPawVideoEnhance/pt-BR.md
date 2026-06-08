@@ -1,16 +1,14 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/pt-BR.md)
-
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/en.md)
 
 O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de vídeos. Ele aumenta a resolução de vídeos de baixa qualidade para uma resolução superior, remove artefatos visuais e reduz ruídos. O custo do processamento é calculado por segundo do vídeo de entrada.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `modelo` | DYNAMIC COMBO | Sim | Múltiplas opções disponíveis | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. |
-| `model.resolution` | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | A resolução alvo para o vídeo aprimorado. Algumas opções podem não estar disponíveis dependendo do `modelo` selecionado. |
-| `vídeo` | VIDEO | Sim | N/A | O arquivo de vídeo de entrada a ser aprimorado. |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `modelo` | O modelo de IA a ser usado para aprimoramento de vídeo. Selecionar um modelo revela um parâmetro `resolution` aninhado. Os modelos disponíveis e suas resoluções suportadas variam. | DYNAMIC COMBO | Sim | Múltiplas opções disponíveis |
+| `model.resolution` | A resolução alvo para o vídeo aprimorado. Algumas opções podem não estar disponíveis dependendo do `modelo` selecionado. | COMBO | Sim | `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `vídeo` | O arquivo de vídeo de entrada a ser aprimorado. | VIDEO | Sim | N/A |
 
 **Restrições:**
 
@@ -19,9 +17,11 @@ O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de 
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `vídeo` | VIDEO | O arquivo de vídeo aprimorado. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `vídeo` | O arquivo de vídeo aprimorado. | VIDEO |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`

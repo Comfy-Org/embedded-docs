@@ -1,19 +1,19 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskComposite/pt-BR.md)
-
 Este nó é especializado em combinar duas entradas de máscara por meio de uma variedade de operações, como adição, subtração e operações lógicas, para produzir uma nova máscara modificada. Ele lida abstratamente com a manipulação de dados de máscara para obter efeitos de mascaramento complexos, servindo como um componente crucial em fluxos de trabalho de edição e processamento de imagens baseados em máscaras.
 
 ## Entradas
 
-| Parâmetro     | Tipo de Dado | Descrição                                                                                                                                             |
-| ------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `destino` | MASK         | A máscara primária que será modificada com base na operação com a máscara de origem. Ela desempenha um papel central na operação composta, atuando como base para as modificações. |
-| `fonte`      | MASK         | A máscara secundária que será usada em conjunto com a máscara de destino para realizar a operação especificada, influenciando a máscara de saída final.          |
-| `x`           | INT          | O deslocamento horizontal no qual a máscara de origem será aplicada à máscara de destino, afetando o posicionamento do resultado composto.            |
-| `y`           | INT          | O deslocamento vertical no qual a máscara de origem será aplicada à máscara de destino, afetando o posicionamento do resultado composto.              |
-| `operação`   | COMBO[STRING]| Especifica o tipo de operação a ser aplicada entre as máscaras de destino e origem, como 'add' (adicionar), 'subtract' (subtrair) ou operações lógicas, determinando a natureza do efeito composto. |
+| Parâmetro | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `destino` | A máscara primária que será modificada com base na operação com a máscara de origem. Ela desempenha um papel central na operação composta, atuando como base para as modificações. | MASK |
+| `fonte` | A máscara secundária que será usada em conjunto com a máscara de destino para realizar a operação especificada, influenciando a máscara de saída final. | MASK |
+| `x` | O deslocamento horizontal no qual a máscara de origem será aplicada à máscara de destino, afetando o posicionamento do resultado composto. | INT |
+| `y` | O deslocamento vertical no qual a máscara de origem será aplicada à máscara de destino, afetando o posicionamento do resultado composto. | INT |
+| `operação` | Especifica o tipo de operação a ser aplicada entre as máscaras de destino e origem, como 'add' (adicionar), 'subtract' (subtrair) ou operações lógicas, determinando a natureza do efeito composto. | COMBO[STRING] |
 
 ## Saídas
 
-| Parâmetro | Tipo de Dado | Descrição                                                                                |
-| --------- | ------------ | ---------------------------------------------------------------------------------------- |
-| `mask`    | MASK         | A máscara resultante após aplicar a operação especificada entre as máscaras de destino e origem, representando o resultado composto. |
+| Parâmetro | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `mask` | A máscara resultante após aplicar a operação especificada entre as máscaras de destino e origem, representando o resultado composto. | MASK |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskComposite/pt-BR.md)

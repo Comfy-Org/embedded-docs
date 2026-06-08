@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/tr.md)
-
 # OpenAIDalle2
 
 OpenAI'nin DALL·E 2 uç noktası aracılığıyla eşzamanlı olarak görseller oluşturur.
@@ -10,20 +8,22 @@ Bu düğüm, metin açıklamalarına dayalı görseller oluşturmak için OpenAI
 
 ## Girişler
 
-| Parametre | Veri Türü | Giriş Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|------------|--------|----------|
-| `istem` | STRING | zorunlu | "" | - | DALL·E için metin istemi |
-| `tohum` | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası | arka uçta henüz uygulanmadı |
-| `boyut` | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" | Görsel boyutu |
-| `n` | INT | isteğe bağlı | 1 | 1 ile 8 arası | Oluşturulacak görsel sayısı |
-| `görüntü` | IMAGE | isteğe bağlı | Yok | - | Görsel düzenleme için isteğe bağlı referans görseli. |
-| `maske` | MASK | isteğe bağlı | Yok | - | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
+| Parametre | Açıklama | Veri Türü | Giriş Türü | Varsayılan | Aralık |
+| --- | --- | --- | --- | --- | --- |
+| `istem` | DALL·E için metin istemi | STRING | zorunlu | "" | - |
+| `tohum` | arka uçta henüz uygulanmadı | INT | isteğe bağlı | 0 | 0 ile 2147483647 arası |
+| `boyut` | Görsel boyutu | COMBO | isteğe bağlı | "1024x1024" | "256x256", "512x512", "1024x1024" |
+| `n` | Oluşturulacak görsel sayısı | INT | isteğe bağlı | 1 | 1 ile 8 arası |
+| `görüntü` | Görsel düzenleme için isteğe bağlı referans görseli. | IMAGE | isteğe bağlı | Yok | - |
+| `maske` | İç boyama için isteğe bağlı maske (beyaz alanlar değiştirilecektir) | MASK | isteğe bağlı | Yok | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `IMAGE` | IMAGE | DALL·E 2'den oluşturulan veya düzenlenen görsel(ler) |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `IMAGE` | DALL·E 2'den oluşturulan veya düzenlenen görsel(ler) | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `ad10b149ac28559ad18c09e0f071286509680603d953833106ad6a2d578f7efe`

@@ -1,5 +1,3 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageStyleTransferNode/ar.md)
-
 أنت خبير في الترجمة التقنية متخصص في توثيق عُقد ComfyUI من الإنجليزية إلى العربية.
 
 ## قواعد الترجمة
@@ -34,19 +32,19 @@
 
 ## المدخلات
 
-| المعامل | نوع البيانات | إلزامي | النطاق | الوصف |
-|---------|--------------|--------|--------|-------|
-| `image` | IMAGE | نعم | - | الصورة المراد تطبيق نقل النمط عليها. |
-| `reference_image` | IMAGE | نعم | - | الصورة المرجعية لاستخراج النمط منها. |
-| `prompt` | STRING | لا | - | موجه نصي اختياري لتوجيه عملية نقل النمط. |
-| `style_strength` | INT | لا | 0 إلى 100 | نسبة قوة النمط (الافتراضي: 100). |
-| `structure_strength` | INT | لا | 0 إلى 100 | يحافظ على بنية الصورة الأصلية (الافتراضي: 50). |
-| `flavor` | COMBO | لا | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" | نكهة نقل النمط. |
-| `engine` | COMBO | لا | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" | اختيار محرك المعالجة. |
-| `portrait_mode` | COMBO | لا | "disabled"<br>"enabled" | تفعيل وضع الصور الشخصية لتحسينات الوجه. |
-| `portrait_style` | COMBO | لا | "standard"<br>"pop"<br>"super_pop" | النمط البصري المطبق على الصور الشخصية. هذا المدخل متاح فقط عندما يكون `portrait_mode` مضبوطًا على "enabled". |
-| `portrait_beautifier` | COMBO | لا | "none"<br>"beautify_face"<br>"beautify_face_max" | شدة تجميل الوجه في الصور الشخصية. هذا المدخل متاح فقط عندما يكون `portrait_mode` مضبوطًا على "enabled". |
-| `fixed_generation` | BOOLEAN | لا | - | عند تعطيله، يُتوقع أن يُدخل كل توليد درجة من العشوائية، مما يؤدي إلى نتائج أكثر تنوعًا (الافتراضي: True). |
+| المعامل | الوصف | نوع البيانات | إلزامي | النطاق |
+| --- | --- | --- | --- | --- |
+| `image` | الصورة المراد تطبيق نقل النمط عليها. | IMAGE | نعم | - |
+| `reference_image` | الصورة المرجعية لاستخراج النمط منها. | IMAGE | نعم | - |
+| `prompt` | موجه نصي اختياري لتوجيه عملية نقل النمط. | STRING | لا | - |
+| `style_strength` | نسبة قوة النمط (الافتراضي: 100). | INT | لا | 0 إلى 100 |
+| `structure_strength` | يحافظ على بنية الصورة الأصلية (الافتراضي: 50). | INT | لا | 0 إلى 100 |
+| `flavor` | نكهة نقل النمط. | COMBO | لا | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" |
+| `engine` | اختيار محرك المعالجة. | COMBO | لا | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" |
+| `portrait_mode` | تفعيل وضع الصور الشخصية لتحسينات الوجه. | COMBO | لا | "disabled"<br>"enabled" |
+| `portrait_style` | النمط البصري المطبق على الصور الشخصية. هذا المدخل متاح فقط عندما يكون `portrait_mode` مضبوطًا على "enabled". | COMBO | لا | "standard"<br>"pop"<br>"super_pop" |
+| `portrait_beautifier` | شدة تجميل الوجه في الصور الشخصية. هذا المدخل متاح فقط عندما يكون `portrait_mode` مضبوطًا على "enabled". | COMBO | لا | "none"<br>"beautify_face"<br>"beautify_face_max" |
+| `fixed_generation` | عند تعطيله، يُتوقع أن يُدخل كل توليد درجة من العشوائية، مما يؤدي إلى نتائج أكثر تنوعًا (الافتراضي: True). | BOOLEAN | لا | - |
 
 **القيود:**
 
@@ -57,9 +55,11 @@
 
 ## المخرجات
 
-| اسم المخرج | نوع البيانات | الوصف |
-|------------|--------------|--------|
-| `image` | IMAGE | الصورة الناتجة بعد تطبيق نقل النمط. |
+| اسم المخرج | الوصف | نوع البيانات |
+| --- | --- | --- |
+| `image` | الصورة الناتجة بعد تطبيق نقل النمط. | IMAGE |
+
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageStyleTransferNode/ar.md)
 
 ---
 **Source fingerprint (SHA-256):** `4ae400183618953c369d089d39b878f0a24592967c29d779c577fb8b7339dea8`

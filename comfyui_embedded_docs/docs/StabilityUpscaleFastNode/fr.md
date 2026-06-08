@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleFastNode/fr.md)
-
 Voici la traduction en français de la documentation, en respectant vos règles :
 
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleFastNode/en.md)
@@ -8,15 +6,17 @@ Agrandit rapidement une image via un appel API Stability, jusqu'à 4 fois sa tai
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `image` | IMAGE | Oui | - | L'image d'entrée à agrandir |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `image` | L'image d'entrée à agrandir | IMAGE | Oui | - |
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `output` | IMAGE | L'image agrandie renvoyée par l'API Stability AI |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `output` | L'image agrandie renvoyée par l'API Stability AI | IMAGE |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleFastNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `0f349c6834807d43173e628abbee91a3a26f587f4bd5453443a9f5754ea8aeeb`

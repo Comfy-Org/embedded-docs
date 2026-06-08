@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa katkıda bulunmaktan çekinmeyin. [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/tr.md)
-
 ## Genel bakış
 
 MultiGPU CFG Split düğümü, difüzyon işlemini aynı bilgisayarda bulunan birden fazla GPU arasında paylaştırır. Hız artışı workflow'a göre değişir, ancak yaygın workflow'larda 1.95x'e kadar hızlanma ölçülmüştür.
@@ -28,16 +26,16 @@ Ampere veya daha yeni mimariye sahip, aynı türden iki GPU içeren tüm kurulum
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|---------|--------|----------|
-| `model` | MODEL | Evet | N/A | Örnekleme öncesinde MultiGPU CFG Split ile hazırlanacak model. |
-| `max_gpus` | INT | Evet | Minimum: 1<br>Adım: 1<br>Varsayılan: 2 | Yükü bölmek için kullanılacak aynı türdeki GPU sayısının üst sınırı. Bu değeri sisteminizde kurulu eşleşen GPU sayısına göre ayarlayın. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Örnekleme öncesinde MultiGPU CFG Split ile hazırlanacak model. | MODEL | Evet | N/A |
+| `max_gpus` | Yükü bölmek için kullanılacak aynı türdeki GPU sayısının üst sınırı. Bu değeri sisteminizde kurulu eşleşen GPU sayısına göre ayarlayın. | INT | Evet | Minimum: 1<br>Adım: 1<br>Varsayılan: 2 |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `MODEL` | MODEL | MultiGPU CFG Split için hazırlanmış, hızlandırılmış örnekleme için hazır model. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `MODEL` | MultiGPU CFG Split için hazırlanmış, hızlandırılmış örnekleme için hazır model. | MODEL |
 
 ## Düğüm yerleşimi ve workflow notları
 
@@ -63,6 +61,8 @@ Workflow içinde sampler çalışırken kurulu iki GPU'da da etkinlik görmelisi
 ## Örnek çoklu GPU workflow'u: (Wan 2.2 FP8)
 
 [Örnek workflow (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

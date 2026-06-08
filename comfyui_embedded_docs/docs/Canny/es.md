@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/es.md)
-
 Extrae todas las líneas de borde de las fotos, como si usaras un bolígrafo para delinear una foto, dibujando los contornos y los límites de los detalles de los objetos.
 
 ## Principio de Funcionamiento
@@ -16,17 +14,17 @@ La salida final es una imagen en blanco y negro, donde las partes blancas son la
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango     | Descripción de la Función |
-|----------------------|--------------|-----------------|-------------------|-----------|---------------------------|
-| `imagen`              | IMAGE        | Entrada         | -                 | -         | Foto original que necesita extracción de bordes |
-| `umbral_bajo`      | FLOAT        | Widget          | 0.4               | 0.01-0.99 | Umbral bajo, determina qué bordes débiles ignorar. Valores más bajos conservan más detalles pero pueden generar ruido |
-| `umbral_alto`     | FLOAT        | Widget          | 0.8               | 0.01-0.99 | Umbral alto, determina qué bordes fuertes conservar. Valores más altos solo mantienen las líneas de contorno más obvias |
+| Nombre del Parámetro | Descripción de la Función | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
+| --- | --- | --- | --- | --- | --- |
+| `imagen` | Foto original que necesita extracción de bordes | IMAGE | Entrada | - | - |
+| `umbral_bajo` | Umbral bajo, determina qué bordes débiles ignorar. Valores más bajos conservan más detalles pero pueden generar ruido | FLOAT | Widget | 0.4 | 0.01-0.99 |
+| `umbral_alto` | Umbral alto, determina qué bordes fuertes conservar. Valores más altos solo mantienen las líneas de contorno más obvias | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `imagen`          | IMAGE        | Imagen de bordes en blanco y negro, las líneas blancas son bordes detectados, las áreas negras son partes sin bordes |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `imagen` | Imagen de bordes en blanco y negro, las líneas blancas son bordes detectados, las áreas negras son partes sin bordes | IMAGE |
 
 ## Comparación de Parámetros
 
@@ -40,3 +38,5 @@ La salida final es una imagen en blanco y negro, donde las partes blancas son la
 - Demasiado ruido: Sube el umbral bajo
 - Faltan detalles importantes: Baja el umbral bajo
 - Bordes demasiado toscos: Verifica la calidad y resolución de la imagen de entrada
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/es.md)

@@ -1,15 +1,13 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/es.md)
-
 El nodo **Create Hook LoRA** genera objetos de hook para aplicar modificaciones LoRA (Adaptación de Bajo Rango) a modelos. Carga un archivo LoRA específico y crea hooks que pueden ajustar las intensidades del modelo y CLIP, luego combina estos hooks con cualquier hook existente que se le pase. El nodo gestiona eficientemente la carga de LoRA almacenando en caché los archivos LoRA previamente cargados para evitar operaciones redundantes.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|---------------|-------------|-------|-------------|
-| `lora_name` | STRING | Sí | Múltiples opciones disponibles | Nombre del archivo LoRA a cargar desde el directorio de loras |
-| `strength_model` | FLOAT | Sí | -20.0 a 20.0 | Multiplicador de intensidad para ajustes del modelo (predeterminado: 1.0) |
-| `strength_clip` | FLOAT | Sí | -20.0 a 20.0 | Multiplicador de intensidad para ajustes CLIP (predeterminado: 1.0) |
-| `prev_hooks` | HOOKS | No | N/A | Grupo opcional de hooks existentes para combinar con los nuevos hooks LoRA |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `lora_name` | Nombre del archivo LoRA a cargar desde el directorio de loras | STRING | Sí | Múltiples opciones disponibles |
+| `strength_model` | Multiplicador de intensidad para ajustes del modelo (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `strength_clip` | Multiplicador de intensidad para ajustes CLIP (predeterminado: 1.0) | FLOAT | Sí | -20.0 a 20.0 |
+| `prev_hooks` | Grupo opcional de hooks existentes para combinar con los nuevos hooks LoRA | HOOKS | No | N/A |
 
 **Restricciones de parámetros:**
 
@@ -18,9 +16,11 @@ El nodo **Create Hook LoRA** genera objetos de hook para aplicar modificaciones 
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|---------------|-------------|
-| `HOOKS` | HOOKS | Grupo de hooks que contiene los hooks LoRA combinados y cualquier hook anterior |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `HOOKS` | Grupo de hooks que contiene los hooks LoRA combinados y cualquier hook anterior | HOOKS |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookLora/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `42d5d776bfc9b239191952e2bce23513d183f904fc3c15039469381a547486f8`

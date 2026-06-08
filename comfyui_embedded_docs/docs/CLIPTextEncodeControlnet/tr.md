@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,19 +30,21 @@ CLIPTextEncodeControlnet düğümü, bir CLIP modeli kullanarak metin girdisini 
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `clip` | CLIP | Evet | - | Metin tokenleştirme ve kodlama için kullanılan CLIP modeli |
-| `koşullandırma` | CONDITIONING | Evet | - | Controlnet parametreleriyle geliştirilecek mevcut koşullandırma verileri |
-| `metin` | STRING | Evet | - | CLIP modeli tarafından işlenecek metin girdisi. Çok satırlı metin ve dinamik istemleri destekler |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `clip` | Metin tokenleştirme ve kodlama için kullanılan CLIP modeli | CLIP | Evet | - |
+| `koşullandırma` | Controlnet parametreleriyle geliştirilecek mevcut koşullandırma verileri | CONDITIONING | Evet | - |
+| `metin` | CLIP modeli tarafından işlenecek metin girdisi. Çok satırlı metin ve dinamik istemleri destekler | STRING | Evet | - |
 
 **Not:** Bu düğümün düzgün çalışması için üç girdinin de (`clip`, `conditioning` ve `text`) sağlanması gerekir. `text` girdisi, esnek metin işleme için dinamik istemleri ve çok satırlı metni destekler.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | CLIP metin kodlamasından türetilen ek controlnet çapraz dikkat parametreleri (`cross_attn_controlnet` ve `pooled_output_controlnet`) ile geliştirilmiş koşullandırma verileri |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `CONDITIONING` | CLIP metin kodlamasından türetilen ek controlnet çapraz dikkat parametreleri (`cross_attn_controlnet` ve `pooled_output_controlnet`) ile geliştirilmiş koşullandırma verileri | CONDITIONING |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeControlnet/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `dd6f68d822cc38e27c826b634c938d62e07b075e18a0f46f80b462aecca0b70b`

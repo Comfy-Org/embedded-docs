@@ -1,30 +1,30 @@
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/fa.md)
-
 ## نمای کلی
 
 این گره با استفاده از API Tripo P1، یک مدل سه‌بعدی از توضیحات متنی تولید می‌کند. این گره برای ایجاد مش‌های کم‌پلی با توپولوژی پایدار و آماده برای بازی بهینه‌سازی شده است و برای کاربردهای بلادرنگ مناسب می‌باشد.
 
 ## ورودی‌ها
 
-| پارامتر | نوع داده | الزامی | محدوده | توضیحات |
-|-----------|-----------|----------|-------|-------------|
-| `prompt` | STRING | بله | حداکثر ۱۰۲۴ کاراکتر | توضیحات متنی مدل سه‌بعدی که می‌خواهید تولید کنید. |
-| `negative_prompt` | STRING | خیر | حداکثر ۲۵۵ کاراکتر | توضیحات متنی از آنچه در مدل تولیدشده نمی‌خواهید. |
-| `output_mode` | DICT | بله | توضیحات را ببینید | تنظیمات کیفیت و بافت مدل خروجی را کنترل می‌کند. این پارامتر یک دیکشنری با کلیدهای زیر است:<br><br>`texture_quality`: STRING، محدوده: `"standard"`<br>`pbr`: BOOLEAN، پیش‌فرض: True<br>`texture`: BOOLEAN، پیش‌فرض: True<br>`subdivision`: INT، پیش‌فرض: ۰، محدوده: ۰ تا ۲<br>`texture_size`: INT، پیش‌فرض: ۲۰۴۸، محدوده: ۵۱۲ تا ۴۰۹۶ (باید توانی از ۲ باشد)<br>`texture_format`: STRING، محدوده: `"png"`<br>`texture_clean`: BOOLEAN، پیش‌فرض: False<br>`texture_seamless`: BOOLEAN، پیش‌فرض: False<br><br>پیش‌فرض: `{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` |
-| `image_seed` | INT | خیر |  | مقدار seed برای تولید تصویر که برای کنترل تصادفی‌بودن استفاده می‌شود. پیش‌فرض: ۴۲. |
-| `face_limit` | INT | خیر |  | حداکثر تعداد وجه‌های مش تولیدشده. مقدار ۱- به معنای بدون محدودیت است. پیش‌فرض: ۱-. |
-| `model_seed` | INT | خیر |  | مقدار seed برای تولید مدل که برای کنترل تصادفی‌بودن استفاده می‌شود. |
-| `auto_size` | BOOLEAN | خیر |  | در صورت فعال‌سازی، گره به‌طور خودکار اندازه بهینه مدل را تعیین می‌کند. پیش‌فرض: False. |
-| `export_uv` | BOOLEAN | خیر |  | در صورت فعال‌سازی، مدل شامل مختصات UV برای نگاشت بافت خواهد بود. پیش‌فرض: True. |
-| `compress_geometry` | BOOLEAN | خیر |  | در صورت فعال‌سازی، هندسه برای کاهش حجم فایل فشرده می‌شود. پیش‌فرض: False. |
+| پارامتر | توضیحات | نوع داده | الزامی | محدوده |
+| --- | --- | --- | --- | --- |
+| `prompt` | توضیحات متنی مدل سه‌بعدی که می‌خواهید تولید کنید. | STRING | بله | حداکثر ۱۰۲۴ کاراکتر |
+| `negative_prompt` | توضیحات متنی از آنچه در مدل تولیدشده نمی‌خواهید. | STRING | خیر | حداکثر ۲۵۵ کاراکتر |
+| `output_mode` | تنظیمات کیفیت و بافت مدل خروجی را کنترل می‌کند. این پارامتر یک دیکشنری با کلیدهای زیر است:<br><br>`texture_quality`: STRING، محدوده: `"standard"`<br>`pbr`: BOOLEAN، پیش‌فرض: True<br>`texture`: BOOLEAN، پیش‌فرض: True<br>`subdivision`: INT، پیش‌فرض: ۰، محدوده: ۰ تا ۲<br>`texture_size`: INT، پیش‌فرض: ۲۰۴۸، محدوده: ۵۱۲ تا ۴۰۹۶ (باید توانی از ۲ باشد)<br>`texture_format`: STRING، محدوده: `"png"`<br>`texture_clean`: BOOLEAN، پیش‌فرض: False<br>`texture_seamless`: BOOLEAN، پیش‌فرض: False<br><br>پیش‌فرض: `{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | بله | توضیحات را ببینید |
+| `image_seed` | مقدار seed برای تولید تصویر که برای کنترل تصادفی‌بودن استفاده می‌شود. پیش‌فرض: ۴۲. | INT | خیر |  |
+| `face_limit` | حداکثر تعداد وجه‌های مش تولیدشده. مقدار ۱- به معنای بدون محدودیت است. پیش‌فرض: ۱-. | INT | خیر |  |
+| `model_seed` | مقدار seed برای تولید مدل که برای کنترل تصادفی‌بودن استفاده می‌شود. | INT | خیر |  |
+| `auto_size` | در صورت فعال‌سازی، گره به‌طور خودکار اندازه بهینه مدل را تعیین می‌کند. پیش‌فرض: False. | BOOLEAN | خیر |  |
+| `export_uv` | در صورت فعال‌سازی، مدل شامل مختصات UV برای نگاشت بافت خواهد بود. پیش‌فرض: True. | BOOLEAN | خیر |  |
+| `compress_geometry` | در صورت فعال‌سازی، هندسه برای کاهش حجم فایل فشرده می‌شود. پیش‌فرض: False. | BOOLEAN | خیر |  |
 
 ## خروجی‌ها
 
-| نام خروجی | نوع داده | توضیحات |
-|-------------|-----------|-------------|
-| `model_file` | STRING | مسیر فایل مدل سه‌بعدی تولیدشده (فقط برای سازگاری با نسخه‌های قبلی). |
-| `model task_id` | MODEL_TASK_ID | شناسه یکتای وظیفه برای درخواست تولید مدل. |
-| `GLB` | FILE3DGLB | مدل سه‌بعدی تولیدشده در قالب GLB. |
+| نام خروجی | توضیحات | نوع داده |
+| --- | --- | --- |
+| `model_file` | مسیر فایل مدل سه‌بعدی تولیدشده (فقط برای سازگاری با نسخه‌های قبلی). | STRING |
+| `model task_id` | شناسه یکتای وظیفه برای درخواست تولید مدل. | MODEL_TASK_ID |
+| `GLB` | مدل سه‌بعدی تولیدشده در قالب GLB. | FILE3DGLB |
+
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/fa.md)
 
 ---
 **Source fingerprint (SHA-256):** `154e75209d65c823d5681b74cd12fe7b2ed37d7b94bf51cac86f343c68f85722`

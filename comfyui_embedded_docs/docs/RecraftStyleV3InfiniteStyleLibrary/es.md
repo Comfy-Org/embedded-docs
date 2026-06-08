@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3InfiniteStyleLibrary/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,17 +30,19 @@ Este nodo te permite seleccionar un estilo de la Biblioteca Infinita de Estilos 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `style_id` | STRING | Sí | Cualquier UUID válido | UUID del estilo de la Biblioteca Infinita de Estilos. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `style_id` | UUID del estilo de la Biblioteca Infinita de Estilos. | STRING | Sí | Cualquier UUID válido |
 
 **Nota:** La entrada `style_id` no puede estar vacía. Si se proporciona una cadena vacía, el nodo generará una excepción.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `recraft_style` | STYLEV3 | El objeto de estilo seleccionado de la Biblioteca Infinita de Estilos de Recraft |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `recraft_style` | El objeto de estilo seleccionado de la Biblioteca Infinita de Estilos de Recraft | STYLEV3 |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3InfiniteStyleLibrary/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `37d7d9eff1232cc17912c6fca908dc5b8c404c0b6cf0a36e8fecc837ff2a1eea`

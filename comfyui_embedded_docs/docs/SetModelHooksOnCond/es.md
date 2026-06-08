@@ -1,19 +1,19 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/es.md)
-
 Este nodo adjunta hooks personalizados a los datos de condicionamiento, permitiendo interceptar y modificar el proceso de condicionamiento durante la ejecución del modelo. Toma un conjunto de hooks y los aplica a los datos de condicionamiento proporcionados, lo que permite una personalización avanzada del flujo de trabajo de generación de texto a imagen. El condicionamiento modificado con los hooks adjuntos se devuelve para su uso en pasos de procesamiento posteriores.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|---------------|-----------|-------|-------------|
-| `conditioning` | CONDITIONING | Sí | - | Los datos de condicionamiento a los que se adjuntarán los hooks |
-| `hooks` | HOOKS | Sí | - | Las definiciones de hooks que se aplicarán a los datos de condicionamiento |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `conditioning` | Los datos de condicionamiento a los que se adjuntarán los hooks | CONDITIONING | Sí | - |
+| `hooks` | Las definiciones de hooks que se aplicarán a los datos de condicionamiento | HOOKS | Sí | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|---------------|-------------|
-| `conditioning` | CONDITIONING | Los datos de condicionamiento modificados con hooks adjuntos |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `conditioning` | Los datos de condicionamiento modificados con hooks adjuntos | CONDITIONING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `a6e63a3a4d94d1b66a82d449af5ae001e1fc4a04f0f81d9fb5c4f8c13e5bdf8b`

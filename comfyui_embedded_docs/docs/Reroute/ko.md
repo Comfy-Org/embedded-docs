@@ -1,5 +1,3 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/ko.md)
-
 **노드 이름:** 경로 재지정 노드  
 **노드 목적:** 주로 ComfyUI 워크플로우에서 지나치게 긴 연결선의 로직을 정리하는 데 사용됩니다.
 
@@ -13,3 +11,5 @@
 | 가로로 설정 | 노드의 배선 방향을 가로로 설정합니다 |
 
 배선 로직이 너무 길고 복잡하여 인터페이스를 정리하고 싶을 때, 두 연결 지점 사이에 ```Reroute``` 노드를 삽입할 수 있습니다. 이 노드의 입력과 출력은 유형에 제한이 없으며, 기본 스타일은 가로입니다. 마우스 오른쪽 버튼 메뉴를 통해 배선 방향을 세로로 변경할 수 있습니다.
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/ko.md)

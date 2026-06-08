@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunControlToVideo/es.md)
-
 Este nodo se añadió para dar soporte al modelo Alibaba Wan Fun Control para generación de video, y fue agregado después de [este commit](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82).
 
 - **Propósito:** Preparar la información de condicionamiento necesaria para la generación de video, utilizando el modelo Wan 2.1 Fun Control.
@@ -12,23 +10,25 @@ La posición del nodo en la jerarquía de nodos de ComfyUI indica que opera en l
 
 ## Entradas
 
-| Nombre del Parámetro | Obligatorio | Tipo de Dato       | Descripción                                                                                                                                                                                                 | Valor por Defecto |
-|:---------------------|:------------|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
-| positive             | Sí          | CONDITIONING       | Datos de condicionamiento positivo estándar de ComfyUI, normalmente provenientes de un nodo "CLIP Text Encode". El prompt positivo describe el contenido, tema y estilo artístico que el usuario imagina para el video generado. | N/A               |
-| negative             | Sí          | CONDITIONING       | Datos de condicionamiento negativo estándar de ComfyUI, normalmente generados por un nodo "CLIP Text Encode". El prompt negativo especifica elementos, estilos o artefactos que el usuario desea evitar en el video generado. | N/A               |
-| vae                  | Sí          | VAE                | Requiere un modelo VAE (Autoencoder Variacional) compatible con la familia de modelos Wan 2.1 Fun, utilizado para codificar y decodificar datos de imagen/video.                                              | N/A               |
-| width                | Sí          | INT                | El ancho deseado de los fotogramas de video de salida en píxeles, con un valor por defecto de 832, valor mínimo de 16, valor máximo determinado por nodes.MAX_RESOLUTION y un incremento de 16.              | 832               |
-| height               | Sí          | INT                | La altura deseada de los fotogramas de video de salida en píxeles, con un valor por defecto de 480, valor mínimo de 16, valor máximo determinado por nodes.MAX_RESOLUTION y un incremento de 16.              | 480               |
-| length               | Sí          | INT                | El número total de fotogramas en el video generado, con un valor por defecto de 81, valor mínimo de 1, valor máximo determinado por nodes.MAX_RESOLUTION y un incremento de 4.                                | 81                |
-| batch_size           | Sí          | INT                | El número de videos generados en un solo lote, con un valor por defecto de 1, valor mínimo de 1 y valor máximo de 4096.                                                                                     | 1                 |
-| clip_vision_output   | No          | CLIP_VISION_OUTPUT | (Opcional) Características visuales extraídas por un modelo de visión CLIP, que permiten guiar el estilo y contenido visual.                                                                                | None              |
-| start_image          | No          | IMAGE              | (Opcional) Una imagen inicial que influye en el comienzo del video generado.                                                                                                                                | None              |
-| control_video        | No          | IMAGE              | (Opcional) Permite a los usuarios proporcionar un video de referencia de ControlNet preprocesado que guiará el movimiento y la posible estructura del video generado.                                        | None              |
+| Nombre del Parámetro | Descripción | Obligatorio | Tipo de Dato | Valor por Defecto |
+| --- | --- | --- | --- | --- |
+| positive | Datos de condicionamiento positivo estándar de ComfyUI, normalmente provenientes de un nodo "CLIP Text Encode". El prompt positivo describe el contenido, tema y estilo artístico que el usuario imagina para el video generado. | Sí | CONDITIONING | N/A |
+| negative | Datos de condicionamiento negativo estándar de ComfyUI, normalmente generados por un nodo "CLIP Text Encode". El prompt negativo especifica elementos, estilos o artefactos que el usuario desea evitar en el video generado. | Sí | CONDITIONING | N/A |
+| vae | Requiere un modelo VAE (Autoencoder Variacional) compatible con la familia de modelos Wan 2.1 Fun, utilizado para codificar y decodificar datos de imagen/video. | Sí | VAE | N/A |
+| width | El ancho deseado de los fotogramas de video de salida en píxeles, con un valor por defecto de 832, valor mínimo de 16, valor máximo determinado por nodes.MAX_RESOLUTION y un incremento de 16. | Sí | INT | 832 |
+| height | La altura deseada de los fotogramas de video de salida en píxeles, con un valor por defecto de 480, valor mínimo de 16, valor máximo determinado por nodes.MAX_RESOLUTION y un incremento de 16. | Sí | INT | 480 |
+| length | El número total de fotogramas en el video generado, con un valor por defecto de 81, valor mínimo de 1, valor máximo determinado por nodes.MAX_RESOLUTION y un incremento de 4. | Sí | INT | 81 |
+| batch_size | El número de videos generados en un solo lote, con un valor por defecto de 1, valor mínimo de 1 y valor máximo de 4096. | Sí | INT | 1 |
+| clip_vision_output | (Opcional) Características visuales extraídas por un modelo de visión CLIP, que permiten guiar el estilo y contenido visual. | No | CLIP_VISION_OUTPUT | None |
+| start_image | (Opcional) Una imagen inicial que influye en el comienzo del video generado. | No | IMAGE | None |
+| control_video | (Opcional) Permite a los usuarios proporcionar un video de referencia de ControlNet preprocesado que guiará el movimiento y la posible estructura del video generado. | No | IMAGE | None |
 
 ## Salidas
 
-| Nombre del Parámetro | Tipo de Dato     | Descripción                                                                                                 |
-|:---------------------|:-----------------|:------------------------------------------------------------------------------------------------------------|
-| positive             | CONDITIONING     | Proporciona datos de condicionamiento positivo mejorados, incluyendo start_image y control_video codificados. |
-| negative             | CONDITIONING     | Proporciona datos de condicionamiento negativo que también han sido mejorados, conteniendo el mismo concat_latent_image. |
-| latent               | LATENT           | Un diccionario que contiene un tensor latente vacío con la clave "samples".                                   |
+| Nombre del Parámetro | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| positive | Proporciona datos de condicionamiento positivo mejorados, incluyendo start_image y control_video codificados. | CONDITIONING |
+| negative | Proporciona datos de condicionamiento negativo que también han sido mejorados, conteniendo el mismo concat_latent_image. | CONDITIONING |
+| latent | Un diccionario que contiene un tensor latente vacío con la clave "samples". | LATENT |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunControlToVideo/es.md)

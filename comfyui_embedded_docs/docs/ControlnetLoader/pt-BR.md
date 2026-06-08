@@ -1,17 +1,17 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/pt-BR.md)
-
 Este nó detectará modelos localizados na pasta `ComfyUI/models/controlnet` e também lerá modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó ControlNetLoader foi projetado para carregar um modelo ControlNet a partir de um caminho especificado. Ele desempenha um papel crucial na inicialização de modelos ControlNet, que são essenciais para aplicar mecanismos de controle sobre o conteúdo gerado ou modificar conteúdo existente com base em sinais de controle.
 
 ## Entradas
 
-| Campo              | Tipo Comfy       | Descrição                                                                       |
-|--------------------|------------------|---------------------------------------------------------------------------------|
-| `control_net_name` | `COMBO[STRING]`  | Especifica o nome do modelo ControlNet a ser carregado, usado para localizar o arquivo do modelo dentro de uma estrutura de diretórios predefinida. |
+| Campo | Descrição | Tipo Comfy |
+| --- | --- | --- |
+| `control_net_name` | Especifica o nome do modelo ControlNet a ser carregado, usado para localizar o arquivo do modelo dentro de uma estrutura de diretórios predefinida. | `COMBO[STRING]` |
 
 ## Saídas
 
-| Campo         | Tipo Comfy      | Descrição                                                              |
-|---------------|-----------------|------------------------------------------------------------------------|
-| `control_net` | `CONTROL_NET`   | Retorna o modelo ControlNet carregado, pronto para uso no controle ou modificação de processos de geração de conteúdo. |
+| Campo | Descrição | Tipo Comfy |
+| --- | --- | --- |
+| `control_net` | Retorna o modelo ControlNet carregado, pronto para uso no controle ou modificação de processos de geração de conteúdo. | `CONTROL_NET` |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetLoader/pt-BR.md)

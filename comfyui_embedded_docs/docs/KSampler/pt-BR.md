@@ -1,23 +1,21 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/pt-BR.md)
-
 O KSampler funciona da seguinte forma: ele modifica as informações da imagem latente original fornecidas com base em um modelo específico e em condições positivas e negativas.
 Primeiro, ele adiciona ruído aos dados da imagem original de acordo com a **semente** e a **força de redução de ruído** definidas, então insere o **Modelo** pré-definido combinado com as condições de orientação **positiva** e **negativa** para gerar a imagem.
 
 ## Entradas
 
-| Nome do Parâmetro    | Tipo de Dado   | Obrigatório | Padrão | Faixa/Opções             | Descrição                                                                                     |
-| -------------------- | -------------- | ----------- | ------ | ------------------------ | --------------------------------------------------------------------------------------------- |
-| Model                | checkpoint     | Sim         | Nenhum | -                        | Modelo de entrada usado para o processo de redução de ruído                                   |
-| seed                 | Int            | Sim         | 0      | 0 ~ 18446744073709551615 | Usado para gerar ruído aleatório; usar a mesma "semente" gera imagens idênticas               |
-| steps                | Int            | Sim         | 20     | 1 ~ 10000                | Número de etapas no processo de redução de ruído; mais etapas significam resultados mais precisos |
-| cfg                  | float          | Sim         | 8.0    | 0.0 ~ 100.0              | Controla o quão fielmente a imagem gerada corresponde às condições de entrada; recomenda-se 6-8 |
-| sampler_name         | Opção de UI    | Sim         | Nenhum | Múltiplos algoritmos     | Escolhe o amostrador para redução de ruído; afeta a velocidade e o estilo da geração           |
-| scheduler            | Opção de UI    | Sim         | Nenhum | Múltiplos agendadores    | Controla como o ruído é removido; afeta o processo de geração                                 |
-| Positive             | conditioning   | Sim         | Nenhum | -                        | Condições positivas que guiam a redução de ruído; o que você deseja que apareça na imagem      |
-| Negative             | conditioning   | Sim         | Nenhum | -                        | Condições negativas que guiam a redução de ruído; o que você não deseja na imagem              |
-| Latent_Image         | Latent         | Sim         | Nenhum | -                        | Imagem latente usada para a redução de ruído                                                  |
-| denoise              | float          | Não         | 1.0    | 0.0 ~ 1.0                | Determina a taxa de remoção de ruído; valores mais baixos significam menos conexão com a imagem de entrada |
-| control_after_generate | Opção de UI  | Não         | Nenhum | Aleatório/Aum/Dim/Manter | Permite alterar a semente após cada prompt                                                    |
+| Nome do Parâmetro | Descrição | Tipo de Dado | Obrigatório | Padrão | Faixa/Opções |
+| --- | --- | --- | --- | --- | --- |
+| Model | Modelo de entrada usado para o processo de redução de ruído | checkpoint | Sim | Nenhum | - |
+| seed | Usado para gerar ruído aleatório; usar a mesma "semente" gera imagens idênticas | Int | Sim | 0 | 0 ~ 18446744073709551615 |
+| steps | Número de etapas no processo de redução de ruído; mais etapas significam resultados mais precisos | Int | Sim | 20 | 1 ~ 10000 |
+| cfg | Controla o quão fielmente a imagem gerada corresponde às condições de entrada; recomenda-se 6-8 | float | Sim | 8.0 | 0.0 ~ 100.0 |
+| sampler_name | Escolhe o amostrador para redução de ruído; afeta a velocidade e o estilo da geração | Opção de UI | Sim | Nenhum | Múltiplos algoritmos |
+| scheduler | Controla como o ruído é removido; afeta o processo de geração | Opção de UI | Sim | Nenhum | Múltiplos agendadores |
+| Positive | Condições positivas que guiam a redução de ruído; o que você deseja que apareça na imagem | conditioning | Sim | Nenhum | - |
+| Negative | Condições negativas que guiam a redução de ruído; o que você não deseja na imagem | conditioning | Sim | Nenhum | - |
+| Latent_Image | Imagem latente usada para a redução de ruído | Latent | Sim | Nenhum | - |
+| denoise | Determina a taxa de remoção de ruído; valores mais baixos significam menos conexão com a imagem de entrada | float | Não | 1.0 | 0.0 ~ 1.0 |
+| control_after_generate | Permite alterar a semente após cada prompt | Opção de UI | Não | Nenhum | Aleatório/Aum/Dim/Manter |
 
 ## Saída
 
@@ -82,3 +80,5 @@ class KSampler:
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
 
 ```
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/pt-BR.md)

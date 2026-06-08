@@ -1,15 +1,13 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/ko.md)
-
 `CLIPSave` 노드는 CLIP 텍스트 인코더 모델을 SafeTensors 형식으로 디스크에 저장합니다. 고급 모델 병합 워크플로우를 위해 설계되었으며, 모델의 내부 구조에 따라 CLIP 모델을 구성 요소(예: CLIP-L, CLIP-G 또는 T5XXL)로 자동 분리하여 각 구성 요소를 별도의 파일로 저장합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 입력 타입 | 기본값 | 범위 | 설명 |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | 필수 | - | - | 저장할 CLIP 모델입니다. |
-| `파일명 접두사` | STRING | 필수 | `clip/ComfyUI` | - | 저장할 파일의 접두사 경로 및 파일 이름입니다. 노드는 구성 요소 접미사(예: `_clip_l`, `_clip_g`)와 카운터를 추가하여 고유한 파일 이름을 생성합니다. |
-| `prompt` | PROMPT | 숨김 | - | - | 워크플로우 프롬프트 정보로, 출력 파일에 메타데이터로 저장됩니다. |
-| `extra_pnginfo` | EXTRA_PNGINFO | 숨김 | - | - | 추가 메타데이터로, 출력 파일에 키-값 쌍으로 저장됩니다. |
+| 매개변수 | 설명 | 데이터 타입 | 입력 타입 | 기본값 | 범위 |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | 저장할 CLIP 모델입니다. | CLIP | 필수 | - | - |
+| `파일명 접두사` | 저장할 파일의 접두사 경로 및 파일 이름입니다. 노드는 구성 요소 접미사(예: `_clip_l`, `_clip_g`)와 카운터를 추가하여 고유한 파일 이름을 생성합니다. | STRING | 필수 | `clip/ComfyUI` | - |
+| `prompt` | 워크플로우 프롬프트 정보로, 출력 파일에 메타데이터로 저장됩니다. | PROMPT | 숨김 | - | - |
+| `extra_pnginfo` | 추가 메타데이터로, 출력 파일에 키-값 쌍으로 저장됩니다. | EXTRA_PNGINFO | 숨김 | - | - |
 
 ## 출력
 
@@ -33,6 +31,8 @@
 - 빈 접두사 (기타 CLIP 구성 요소)
 
 감지된 각 구성 요소에 대해 노드는 `{filename_prefix}_{counter:05}_.safetensors` 형식의 파일을 생성하며, 여기서 구성 요소 접두사가 파일 이름 접두사에 추가됩니다(예: `clip/ComfyUI_clip_l_00001_.safetensors`). 저장 중에 `transformer.` 접두사는 매개변수 키에서 제거됩니다.
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

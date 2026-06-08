@@ -1,18 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProEditVideoNode/tr.md)
-
 Kling Omni Video Düzenleme (Pro) düğümü, mevcut bir videoyu metin açıklamasına göre düzenlemek için bir yapay zeka modeli kullanır. Bir kaynak video ve bir istem sağlarsınız; düğüm, istenen değişikliklerle aynı uzunlukta yeni bir video oluşturur. İsteğe bağlı olarak, stili yönlendirmek için referans görseller kullanabilir ve kaynak videodaki orijinal sesi koruyabilir.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
-| `model_adı` | COMBO | Evet | `"kling-v3-omni"`<br>`"kling-video-o1"` | Video düzenleme için kullanılacak yapay zeka modeli (varsayılan: `"kling-v3-omni"`). |
-| `istem` | STRING | Evet | | Video içeriğini tanımlayan bir metin istemi. Bu, hem olumlu hem de olumsuz açıklamalar içerebilir. |
-| `video` | VIDEO | Evet | | Düzenlenecek video. Çıktı videosunun uzunluğu aynı olacaktır. |
-| `orijinal_sesi_koru` | BOOLEAN | Evet | | Giriş videosundaki orijinal sesin çıktıda tutulup tutulmayacağını belirler (varsayılan: True). |
-| `referans_görseller` | IMAGE | Hayır | | En fazla 4 adet ek referans görseli. |
-| `çözünürlük` | COMBO | Hayır | `"1080p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü (varsayılan: `"1080p"`). |
-| `seed` | INT | Hayır | 0 ile 2147483647 arası | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model_adı` | Video düzenleme için kullanılacak yapay zeka modeli (varsayılan: `"kling-v3-omni"`). | COMBO | Evet | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `istem` | Video içeriğini tanımlayan bir metin istemi. Bu, hem olumlu hem de olumsuz açıklamalar içerebilir. | STRING | Evet |  |
+| `video` | Düzenlenecek video. Çıktı videosunun uzunluğu aynı olacaktır. | VIDEO | Evet |  |
+| `orijinal_sesi_koru` | Giriş videosundaki orijinal sesin çıktıda tutulup tutulmayacağını belirler (varsayılan: True). | BOOLEAN | Evet |  |
+| `referans_görseller` | En fazla 4 adet ek referans görseli. | IMAGE | Hayır |  |
+| `çözünürlük` | Çıktı videosunun çözünürlüğü (varsayılan: `"1080p"`). | COMBO | Hayır | `"1080p"`<br>`"720p"` |
+| `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 
 **Kısıtlamalar ve Sınırlamalar:**
 
@@ -25,9 +23,11 @@ Kling Omni Video Düzenleme (Pro) düğümü, mevcut bir videoyu metin açıklam
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `video` | VIDEO | Yapay zeka modeli tarafından oluşturulan düzenlenmiş video. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video` | Yapay zeka modeli tarafından oluşturulan düzenlenmiş video. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProEditVideoNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `ddc3fdc8c97cdcdd34f16a0916b13ffe6adeb46e58e2933516c9a6aef7c36730`

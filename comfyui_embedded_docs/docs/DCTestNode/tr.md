@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DCTestNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,16 +30,16 @@ DCTestNode, kullanıcının dinamik bir birleşik giriş kutusundan yaptığı s
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `combo` | COMBO | Evet | `"option1"`<br>`"option2"`<br>`"option3"`<br>`"option4"` | Hangi giriş alanının aktif olacağını ve düğümün ne çıktı vereceğini belirleyen ana seçim. |
-| `string` | STRING | Hayır | - | Bir metin giriş alanı. Bu alan yalnızca `combo` `"option1"` olarak ayarlandığında aktif ve zorunludur. |
-| `integer` | INT | Hayır | - | Bir tam sayı giriş alanı. Bu alan yalnızca `combo` `"option2"` olarak ayarlandığında aktif ve zorunludur. |
-| `image` | IMAGE | Hayır | - | Bir görsel giriş alanı. Bu alan yalnızca `combo` `"option3"` olarak ayarlandığında aktif ve zorunludur. |
-| `subcombo` | COMBO | Hayır | `"opt1"`<br>`"opt2"` | `combo` `"option4"` olarak ayarlandığında görünen ikincil bir seçim. Hangi iç içe giriş alanlarının aktif olacağını belirler. |
-| `float_x` | FLOAT | Hayır | - | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında aktif ve zorunludur. |
-| `float_y` | FLOAT | Hayır | - | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında aktif ve zorunludur. |
-| `mask1` | MASK | Hayır | - | Bir maske giriş alanı. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt2"` olarak ayarlandığında aktiftir. İsteğe bağlıdır. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `combo` | Hangi giriş alanının aktif olacağını ve düğümün ne çıktı vereceğini belirleyen ana seçim. | COMBO | Evet | `"option1"`<br>`"option2"`<br>`"option3"`<br>`"option4"` |
+| `string` | Bir metin giriş alanı. Bu alan yalnızca `combo` `"option1"` olarak ayarlandığında aktif ve zorunludur. | STRING | Hayır | - |
+| `integer` | Bir tam sayı giriş alanı. Bu alan yalnızca `combo` `"option2"` olarak ayarlandığında aktif ve zorunludur. | INT | Hayır | - |
+| `image` | Bir görsel giriş alanı. Bu alan yalnızca `combo` `"option3"` olarak ayarlandığında aktif ve zorunludur. | IMAGE | Hayır | - |
+| `subcombo` | `combo` `"option4"` olarak ayarlandığında görünen ikincil bir seçim. Hangi iç içe giriş alanlarının aktif olacağını belirler. | COMBO | Hayır | `"opt1"`<br>`"opt2"` |
+| `float_x` | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında aktif ve zorunludur. | FLOAT | Hayır | - |
+| `float_y` | Bir ondalık sayı girişi. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt1"` olarak ayarlandığında aktif ve zorunludur. | FLOAT | Hayır | - |
+| `mask1` | Bir maske giriş alanı. Bu alan yalnızca `combo` `"option4"` ve `subcombo` `"opt2"` olarak ayarlandığında aktiftir. İsteğe bağlıdır. | MASK | Hayır | - |
 
 **Parametre Kısıtlamaları:**
 
@@ -50,9 +48,11 @@ DCTestNode, kullanıcının dinamik bir birleşik giriş kutusundan yaptığı s
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | ANYTYPE | Çıktı, seçilen `combo` seçeneğine bağlıdır. Bir STRING (`"option1"`), bir INT (`"option2"`), bir IMAGE (`"option3"`) veya `subcombo` sözlüğünün bir dize temsili (`"option4"`) olabilir. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `output` | Çıktı, seçilen `combo` seçeneğine bağlıdır. Bir STRING (`"option1"`), bir INT (`"option2"`), bir IMAGE (`"option3"`) veya `subcombo` sözlüğünün bir dize temsili (`"option4"`) olabilir. | ANYTYPE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DCTestNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `98c4ca2100a27594df360935cc1507960480fe75a76ca0df2af75925d399be00`

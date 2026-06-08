@@ -1,17 +1,15 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointSave/zh-TW.md)
-
 `Save Checkpoint` 節點旨在將完整的 Stable Diffusion 模型（包括 UNet、CLIP 和 VAE 組件）儲存為 **.safetensors** 格式的檢查點檔案。
 
 `Save Checkpoint` 主要用於模型合併工作流程。在透過 `ModelMergeSimple`、`ModelMergeBlocks` 等節點建立新的合併模型後，您可以使用此節點將結果儲存為可重複使用的檢查點檔案。
 
 ## 輸入
 
-| 參數 | 資料類型 | 說明 |
-|-----------|-----------|-------------|
-| `模型` | MODEL | `模型` 參數代表要儲存狀態的主要模型。對於捕捉模型的當前狀態以供未來還原或分析至關重要。 |
-| `clip` | CLIP | `clip` 參數用於指定與主要模型關聯的 CLIP 模型，允許將其狀態與主模型一同儲存。 |
-| `vae` | VAE | `vae` 參數用於指定變分自編碼器（VAE）模型，允許將其狀態與主模型和 CLIP 一同儲存，以供未來使用或分析。 |
-| `檔名前綴` | STRING | 此參數指定檢查點儲存時檔案名稱的前綴。 |
+| 參數 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `模型` | `模型` 參數代表要儲存狀態的主要模型。對於捕捉模型的當前狀態以供未來還原或分析至關重要。 | MODEL |
+| `clip` | `clip` 參數用於指定與主要模型關聯的 CLIP 模型，允許將其狀態與主模型一同儲存。 | CLIP |
+| `vae` | `vae` 參數用於指定變分自編碼器（VAE）模型，允許將其狀態與主模型和 CLIP 一同儲存，以供未來使用或分析。 | VAE |
+| `檔名前綴` | 此參數指定檢查點儲存時檔案名稱的前綴。 | STRING |
 
 此外，該節點還有兩個用於元資料的隱藏輸入：
 
@@ -30,3 +28,5 @@
 ## 相關連結
 
 相關原始碼：[nodes_model_merging.py#L227](https://github.com/comfyanonymous/ComfyUI/blob/master/comfy_extras/nodes_model_merging.py#L227)
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointSave/zh-TW.md)

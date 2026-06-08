@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSoundEffects/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,11 +30,11 @@ ElevenLabs Metinden Ses Efektlerine düğümü, bir metin açıklamasından ses 
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `metin` | STRING | Evet | Yok | Oluşturulacak ses efektinin metin açıklaması. Bu zorunlu bir alandır. |
-| `model` | COMBO | Evet | `"eleven_sfx_v2"` | Ses efekti oluşturmak için kullanılacak model. Bu modelin seçilmesi ek parametreleri ortaya çıkarır: `duration` (varsayılan: 5.0, aralık: 0.5 ila 30.0 saniye), `loop` (varsayılan: False) ve `prompt_influence` (varsayılan: 0.3, aralık: 0.0 ila 1.0). |
-| `çıktı_formatı` | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` | Ses çıktı formatı. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `metin` | Oluşturulacak ses efektinin metin açıklaması. Bu zorunlu bir alandır. | STRING | Evet | Yok |
+| `model` | Ses efekti oluşturmak için kullanılacak model. Bu modelin seçilmesi ek parametreleri ortaya çıkarır: `duration` (varsayılan: 5.0, aralık: 0.5 ila 30.0 saniye), `loop` (varsayılan: False) ve `prompt_influence` (varsayılan: 0.3, aralık: 0.0 ila 1.0). | COMBO | Evet | `"eleven_sfx_v2"` |
+| `çıktı_formatı` | Ses çıktı formatı. | COMBO | Evet | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 **Parametre Detayları:**
 
@@ -46,9 +44,11 @@ ElevenLabs Metinden Ses Efektlerine düğümü, bir metin açıklamasından ses 
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `audio` | AUDIO | Oluşturulan ses efekti ses dosyası. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `audio` | Oluşturulan ses efekti ses dosyası. | AUDIO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSoundEffects/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `c23c4dd3c9c12f0e891d40683265c5b74b5c6320601aaadb686489510db9f107`

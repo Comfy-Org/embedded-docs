@@ -1,16 +1,14 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/zh-TW.md)
-
 ## 概述
 ColorTransfer 節點會調整目標影像的色調，使其與參考影像的色彩相符。它使用不同的數學演算法來分析並將參考影像的色彩特性（如亮度、對比度和色調分佈）轉移到目標影像上。這對於在多張影像之間建立視覺一致性或套用特定色調非常有用。
 
 ## 輸入
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `image_target` | IMAGE | 是 | - | 要套用色彩轉換的影像。 |
-| `image_ref` | IMAGE | 是 | - | 作為色彩比對依據的參考影像。 |
-| `method` | COMBO | 是 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` | 要使用的色彩轉換演算法。 |
-| `source_stats` | DYNAMICCOMBO | 是 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` | 決定如何從來源（目標）影像計算色彩統計數據。 |
-| `strength` | FLOAT | 是 | 0.0 至 10.0 | 色彩轉換效果的強度。值為 1.0 時套用完整轉換，0.0 則回傳原始影像。預設值：1.0 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `image_target` | 要套用色彩轉換的影像。 | IMAGE | 是 | - |
+| `image_ref` | 作為色彩比對依據的參考影像。 | IMAGE | 是 | - |
+| `method` | 要使用的色彩轉換演算法。 | COMBO | 是 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
+| `source_stats` | 決定如何從來源（目標）影像計算色彩統計數據。 | DYNAMICCOMBO | 是 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `strength` | 色彩轉換效果的強度。值為 1.0 時套用完整轉換，0.0 則回傳原始影像。預設值：1.0 | FLOAT | 是 | 0.0 至 10.0 |
 
 **參數詳細說明：**
 *   **`source_stats` 選項：**
@@ -25,9 +23,11 @@ ColorTransfer 節點會調整目標影像的色調，使其與參考影像的色
 *   對於使用 `"per_frame"` 作為 `source_stats` 的 `histogram` 方法，如果 `image_ref` 的批次大小大於 1，則每個目標影格會根據索引與對應的參考影格進行比對。如果參考批次只有一個影格，則該影格會用於所有目標影格。
 
 ## 輸出
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `image` | IMAGE | 套用色彩轉換後產生的影像。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `image` | 套用色彩轉換後產生的影像。 | IMAGE |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `93a8447def4d2263a8a859c0474de694e6567dc6d32377032c2ddae2420bb10c`

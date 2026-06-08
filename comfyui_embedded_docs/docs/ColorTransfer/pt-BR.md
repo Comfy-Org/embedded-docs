@@ -1,16 +1,14 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/pt-BR.md)
-
 O nó ColorTransfer ajusta a paleta de cores de uma imagem alvo para corresponder às cores de uma imagem de referência. Ele utiliza diferentes algoritmos matemáticos para analisar e transferir as características de cor, como brilho, contraste e distribuição de matiz, da referência para o alvo. Isso é útil para criar consistência visual entre múltiplas imagens ou aplicar uma gradação de cor específica.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
-| `image_target` | IMAGE | Sim | - | Imagem(ns) na(s) qual(is) aplicar a transformação de cor. |
-| `image_ref` | IMAGE | Sim | - | Imagem(ns) de referência para corresponder as cores. |
-| `method` | COMBO | Sim | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` | O algoritmo de transferência de cor a ser utilizado. |
-| `source_stats` | DYNAMICCOMBO | Sim | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` | Determina como as estatísticas de cor são calculadas a partir da(s) imagem(ns) de origem (alvo). |
-| `strength` | FLOAT | Sim | 0.0 a 10.0 | A intensidade do efeito de transferência de cor. Um valor de 1.0 aplica a transformação completa, enquanto 0.0 retorna a imagem original. Padrão: 1.0 |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `image_target` | Imagem(ns) na(s) qual(is) aplicar a transformação de cor. | IMAGE | Sim | - |
+| `image_ref` | Imagem(ns) de referência para corresponder as cores. | IMAGE | Sim | - |
+| `method` | O algoritmo de transferência de cor a ser utilizado. | COMBO | Sim | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
+| `source_stats` | Determina como as estatísticas de cor são calculadas a partir da(s) imagem(ns) de origem (alvo). | DYNAMICCOMBO | Sim | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `strength` | A intensidade do efeito de transferência de cor. Um valor de 1.0 aplica a transformação completa, enquanto 0.0 retorna a imagem original. Padrão: 1.0 | FLOAT | Sim | 0.0 a 10.0 |
 
 **Detalhes dos Parâmetros:**
 *   **Opções de `source_stats`:**
@@ -26,9 +24,11 @@ O nó ColorTransfer ajusta a paleta de cores de uma imagem alvo para corresponde
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
-| `image` | IMAGE | A(s) imagem(ns) resultante(s) após a transferência de cor ter sido aplicada. |
+| Nome da Saída | Descrição | Tipo de Dados |
+| --- | --- | --- |
+| `image` | A(s) imagem(ns) resultante(s) após a transferência de cor ter sido aplicada. | IMAGE |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `93a8447def4d2263a8a859c0474de694e6567dc6d32377032c2ddae2420bb10c`

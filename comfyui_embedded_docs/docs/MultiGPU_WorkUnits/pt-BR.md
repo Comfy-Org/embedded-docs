@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, fique à vontade para contribuir. [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/pt-BR.md)
-
 ## Visão geral
 
 O nó MultiGPU CFG Split permite que o trabalho de difusão seja dividido entre várias GPUs instaladas no mesmo computador. O ganho de velocidade depende do workflow, mas já foram medidos aumentos de até 1.95x em workflows comuns.
@@ -28,16 +26,16 @@ Qualquer configuração homogênea com duas GPUs baseadas em arquitetura Ampere 
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | N/A | O modelo que será preparado para usar o MultiGPU CFG Split antes da amostragem. |
-| `max_gpus` | INT | Sim | Mínimo: 1<br>Passo: 1<br>Padrão: 2 | O número máximo de GPUs idênticas usadas para dividir a carga de trabalho. Ajuste esse valor para a quantidade de GPUs iguais instaladas no sistema. |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `model` | O modelo que será preparado para usar o MultiGPU CFG Split antes da amostragem. | MODEL | Sim | N/A |
+| `max_gpus` | O número máximo de GPUs idênticas usadas para dividir a carga de trabalho. Ajuste esse valor para a quantidade de GPUs iguais instaladas no sistema. | INT | Sim | Mínimo: 1<br>Passo: 1<br>Padrão: 2 |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `MODEL` | MODEL | O modelo preparado para MultiGPU CFG Split, pronto para amostragem acelerada. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `MODEL` | O modelo preparado para MultiGPU CFG Split, pronto para amostragem acelerada. | MODEL |
 
 ## Posicionamento do nó e notas do workflow
 
@@ -64,6 +62,8 @@ Você deve ver atividade nas duas GPUs instaladas enquanto o sampler estiver rod
 ## Workflow de exemplo com múltiplas GPUs: (Wan 2.2 FP8)
 
 [Workflow de exemplo (Wan 2.2 FP8)](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/asset/video_wan2_2_14B_t2v_mGPU.json)
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MultiGPU_WorkUnits/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `7293ee785e29aea9a1a70a10444b99e89fb23c866505628ec57c209a2b8aaee0`

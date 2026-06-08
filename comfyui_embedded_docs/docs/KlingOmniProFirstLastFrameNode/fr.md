@@ -1,21 +1,19 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/fr.md)
-
 Ce nœud utilise le dernier modèle d'IA Kling pour générer une vidéo à partir d'une image de début, d'une image de fin optionnelle ou d'images de référence. Il peut créer une vidéo unique ou un storyboard multi-plans avec des prompts et des durées individuels pour chaque segment. Le nœud traite ces entrées pour produire une vidéo d'une longueur et d'une résolution spécifiées, avec une génération audio optionnelle.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `model_name` | COMBO | Oui | `"kling-v3-omni"`<br>`"kling-video-o1"` | Le modèle d'IA Kling spécifique à utiliser pour la génération vidéo. |
-| `prompt` | STRING | Oui | - | Un prompt textuel décrivant le contenu de la vidéo. Peut inclure des descriptions positives et négatives. Ignoré lorsque les storyboards sont activés. |
-| `duration` | INT | Oui | 3 à 15 | La durée souhaitée de la vidéo générée en secondes (par défaut : 5). |
-| `first_frame` | IMAGE | Oui | - | L'image de départ pour la séquence vidéo. |
-| `end_frame` | IMAGE | Non | - | Une image de fin optionnelle pour la vidéo. Ne peut pas être utilisée simultanément avec `reference_images`. Ne fonctionne pas avec les storyboards. |
-| `reference_images` | IMAGE | Non | - | Jusqu'à 6 images de référence supplémentaires. |
-| `resolution` | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` | La résolution de sortie pour la vidéo générée (par défaut : "1080p"). |
-| `storyboards` | DYNAMIC_COMBO | Non | `"désactivé"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Génère une série de segments vidéo avec des prompts et des durées individuels. Uniquement pris en charge pour `kling-v3-omni`. Lorsque cette option est activée, chaque storyboard nécessite un prompt et une durée. |
-| `générer l'audio` | BOOLEAN | Non | Vrai / Faux | Génère l'audio pour la vidéo (par défaut : Faux). Uniquement pris en charge pour `kling-v3-omni`. |
-| `seed` | INT | Non | 0 à 2147483647 | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `model_name` | Le modèle d'IA Kling spécifique à utiliser pour la génération vidéo. | COMBO | Oui | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `prompt` | Un prompt textuel décrivant le contenu de la vidéo. Peut inclure des descriptions positives et négatives. Ignoré lorsque les storyboards sont activés. | STRING | Oui | - |
+| `duration` | La durée souhaitée de la vidéo générée en secondes (par défaut : 5). | INT | Oui | 3 à 15 |
+| `first_frame` | L'image de départ pour la séquence vidéo. | IMAGE | Oui | - |
+| `end_frame` | Une image de fin optionnelle pour la vidéo. Ne peut pas être utilisée simultanément avec `reference_images`. Ne fonctionne pas avec les storyboards. | IMAGE | Non | - |
+| `reference_images` | Jusqu'à 6 images de référence supplémentaires. | IMAGE | Non | - |
+| `resolution` | La résolution de sortie pour la vidéo générée (par défaut : "1080p"). | COMBO | Non | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `storyboards` | Génère une série de segments vidéo avec des prompts et des durées individuels. Uniquement pris en charge pour `kling-v3-omni`. Lorsque cette option est activée, chaque storyboard nécessite un prompt et une durée. | DYNAMIC_COMBO | Non | `"désactivé"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `générer l'audio` | Génère l'audio pour la vidéo (par défaut : Faux). Uniquement pris en charge pour `kling-v3-omni`. | BOOLEAN | Non | Vrai / Faux |
+| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 **Contraintes importantes :**
 
@@ -32,9 +30,11 @@ Ce nœud utilise le dernier modèle d'IA Kling pour générer une vidéo à part
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `output` | VIDEO | Le fichier vidéo généré. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `output` | Le fichier vidéo généré. | VIDEO |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `bd0fb11242b7f79062079b1aa48c3524abf59ecf06a90f013e57b6910cd8e224`

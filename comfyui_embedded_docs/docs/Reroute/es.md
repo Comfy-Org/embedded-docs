@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/es.md)
-
 Nombre del Nodo: Nodo de Reencaminamiento
 Propósito del Nodo: Se utiliza principalmente para organizar la lógica de líneas de conexión excesivamente largas en el flujo de trabajo de ComfyUI.
 
@@ -13,3 +11,5 @@ Propósito del Nodo: Se utiliza principalmente para organizar la lógica de lín
 | Establecer Horizontal | Establece la dirección del cableado del nodo a horizontal |
 
 Cuando la lógica de tu cableado es demasiado larga y compleja, y deseas ordenar la interfaz, puedes insertar un nodo ```Reroute``` entre dos puntos de conexión. La entrada y salida de este nodo no tienen restricciones de tipo, y el estilo predeterminado es horizontal. Puedes cambiar la dirección del cableado a vertical a través del menú contextual (clic derecho).
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Reroute/es.md)

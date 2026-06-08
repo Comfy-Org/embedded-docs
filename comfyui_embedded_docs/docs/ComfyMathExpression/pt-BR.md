@@ -1,13 +1,11 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyMathExpression/pt-BR.md)
-
 O nó ComfyMathExpression avalia uma fórmula matemática usando um conjunto de valores de entrada. Você pode escrever uma expressão usando nomes de variáveis (como `a`, `b`, `c`), e o nó calculará o resultado. Ele suporta a adição dinâmica de quantos valores de entrada forem necessários para seu cálculo.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `expressão` | STRING | Sim | N/A | A fórmula matemática a ser avaliada. Você pode usar nomes de variáveis que correspondam aos valores de entrada (padrão: "a + b"). |
-| `valores` | FLOAT, INT, BOOLEAN | Não | N/A | Um conjunto de entradas numéricas ou booleanas que podem ser adicionadas dinamicamente. Cada entrada recebe uma letra do alfabeto (a, b, c, ...) para ser usada como variável na expressão. |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `expressão` | A fórmula matemática a ser avaliada. Você pode usar nomes de variáveis que correspondam aos valores de entrada (padrão: "a + b"). | STRING | Sim | N/A |
+| `valores` | Um conjunto de entradas numéricas ou booleanas que podem ser adicionadas dinamicamente. Cada entrada recebe uma letra do alfabeto (a, b, c, ...) para ser usada como variável na expressão. | FLOAT, INT, BOOLEAN | Não | N/A |
 
 **Restrições dos Parâmetros:**
 *   O parâmetro `expression` não pode estar vazio ou conter apenas espaços em branco.
@@ -16,11 +14,13 @@ O nó ComfyMathExpression avalia uma fórmula matemática usando um conjunto de 
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `FLOAT` | FLOAT | O resultado da expressão matemática como um número de ponto flutuante. |
-| `INT` | INT | O resultado da expressão matemática como um número inteiro. |
-| `BOOL` | BOOLEAN | O resultado da expressão matemática como um valor booleano. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `FLOAT` | O resultado da expressão matemática como um número de ponto flutuante. | FLOAT |
+| `INT` | O resultado da expressão matemática como um número inteiro. | INT |
+| `BOOL` | O resultado da expressão matemática como um valor booleano. | BOOLEAN |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyMathExpression/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `962f82684d9dc58a67a57e6738d6d2ed457d7f30288cedb21fd46b5c655c1708`

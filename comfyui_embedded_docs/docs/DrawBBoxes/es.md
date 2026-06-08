@@ -1,13 +1,11 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/es.md)
-
 El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando cuadros delimitadores, etiquetas y puntuaciones de confianza sobre una imagen. Si no se proporciona una imagen de entrada, crea un lienzo en blanco lo suficientemente grande para contener todos los cuadros dibujados. Admite procesamiento por lotes, lo que permite dibujar diferentes conjuntos de detecciones para múltiples imágenes o repetir las mismas detecciones en un lote.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `imagen` | IMAGE | No | - | La(s) imagen(es) de entrada sobre las que se dibujarán los cuadros delimitadores. Si no se proporciona, se generará un lienzo en blanco. |
-| `bboxes` | BOUNDINGBOX | Sí | - | Una lista de diccionarios de cuadros delimitadores. Cada diccionario debe contener las claves `x`, `y`, `width`, `height` y, opcionalmente, `label` y `score`. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `imagen` | La(s) imagen(es) de entrada sobre las que se dibujarán los cuadros delimitadores. Si no se proporciona, se generará un lienzo en blanco. | IMAGE | No | - |
+| `bboxes` | Una lista de diccionarios de cuadros delimitadores. Cada diccionario debe contener las claves `x`, `y`, `width`, `height` y, opcionalmente, `label` y `score`. | BOUNDINGBOX | Sí | - |
 
 **Restricciones de entrada:**
 *   La entrada `bboxes` es obligatoria y debe proporcionarse.
@@ -16,9 +14,11 @@ El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando c
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `out_image` | IMAGE | La(s) imagen(es) de salida con los cuadros delimitadores, etiquetas y puntuaciones de confianza superpuestos. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `out_image` | La(s) imagen(es) de salida con los cuadros delimitadores, etiquetas y puntuaciones de confianza superpuestos. | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`

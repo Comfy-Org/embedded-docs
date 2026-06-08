@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectCLIPDevice/fr.md)
-
 Voici la traduction en français de la documentation du nœud SelectCLIPDevice :
 
 ## Aperçu
@@ -8,16 +6,18 @@ Le nœud Select CLIP Device vous permet de choisir sur quel périphérique (CPU 
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `clip` | CLIP | Oui | | L'encodeur de texte CLIP à attribuer à un périphérique spécifique. |
-| `device` | COMBO | Oui | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | Le périphérique sur lequel placer l'encodeur de texte CLIP. `"default"` restaure le périphérique attribué par le chargeur. `"cpu"` verrouille à la fois le périphérique de chargement et de déchargement sur le CPU. `"gpu:N"` verrouille le périphérique de chargement sur le Nième GPU disponible (par défaut : `"default"`). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `clip` | L'encodeur de texte CLIP à attribuer à un périphérique spécifique. | CLIP | Oui |  |
+| `device` | Le périphérique sur lequel placer l'encodeur de texte CLIP. `"default"` restaure le périphérique attribué par le chargeur. `"cpu"` verrouille à la fois le périphérique de chargement et de déchargement sur le CPU. `"gpu:N"` verrouille le périphérique de chargement sur le Nième GPU disponible (par défaut : `"default"`). | COMBO | Oui | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `clip` | CLIP | L'encodeur de texte CLIP attribué au périphérique sélectionné, ou le CLIP original transmis sans modification si le périphérique demandé n'est pas disponible. |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `clip` | L'encodeur de texte CLIP attribué au périphérique sélectionné, ou le CLIP original transmis sans modification si le périphérique demandé n'est pas disponible. | CLIP |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectCLIPDevice/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `92af94d9f5eea27095cc008debdf7339d26888a0e2cc8bd71ae9c9ba8718eb01`

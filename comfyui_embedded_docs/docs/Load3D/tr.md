@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3D/tr.md)
-
 Load3D düğümü, 3B model dosyalarını yüklemek ve işlemek için kullanılan temel bir düğümdür. Düğüm yüklendiğinde, kullanılabilir 3B kaynakları otomatik olarak `ComfyUI/input/3d/` dizininden alır. Ayrıca, yükleme işlevini kullanarak desteklenen 3B dosyalarını önizleme için yükleyebilirsiniz.
 
 **Desteklenen Formatlar**
@@ -14,23 +12,23 @@ Normal düğüm çıktılarının yanı sıra, Load3D'nin tuval menüsünde 3B g
 
 ## Girişler
 
-| Parametre Adı | Türü     | Açıklama                     | Varsayılan | Aralık        |
-|---------------|----------|---------------------------------|---------|--------------|
-| model_file    | Dosya Seçimi | 3B model dosya yolu, yüklemeyi destekler, varsayılan olarak `ComfyUI/input/3d/` dizinindeki model dosyalarını okur | - | Desteklenen formatlar |
-| width         | INT      | Tuval işleme genişliği          | 1024    | 1-4096      |
-| height        | INT      | Tuval işleme yüksekliği         | 1024    | 1-4096      |
+| Parametre Adı | Açıklama | Türü | Varsayılan | Aralık |
+| --- | --- | --- | --- | --- |
+| model_file | 3B model dosya yolu, yüklemeyi destekler, varsayılan olarak `ComfyUI/input/3d/` dizinindeki model dosyalarını okur | Dosya Seçimi | - | Desteklenen formatlar |
+| width | Tuval işleme genişliği | INT | 1024 | 1-4096 |
+| height | Tuval işleme yüksekliği | INT | 1024 | 1-4096 |
 
 ## Çıktılar
 
-| Parametre Adı   | Veri Türü      | Açıklama                        |
-|-----------------|----------------|------------------------------------|
-| image           | IMAGE          | Tuvalde işlenmiş görüntü              |
-| mask            | MASK           | Geçerli model konumunu içeren maske |
-| mesh_path       | STRING         | Model dosya yolu                   |
-| normal          | IMAGE          | Normal harita                         |
-| lineart         | IMAGE          | Çizgi sanatı görüntü çıktısı, ilgili `edge_threshold` tuval model menüsünden ayarlanabilir |
-| camera_info     | LOAD3D_CAMERA  | Kamera bilgisi                 |
-| recording_video | VIDEO          | Kaydedilmiş video (yalnızca kayıt mevcut olduğunda) |
+| Parametre Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| image | Tuvalde işlenmiş görüntü | IMAGE |
+| mask | Geçerli model konumunu içeren maske | MASK |
+| mesh_path | Model dosya yolu | STRING |
+| normal | Normal harita | IMAGE |
+| lineart | Çizgi sanatı görüntü çıktısı, ilgili `edge_threshold` tuval model menüsünden ayarlanabilir | IMAGE |
+| camera_info | Kamera bilgisi | LOAD3D_CAMERA |
+| recording_video | Kaydedilmiş video (yalnızca kayıt mevcut olduğunda) | VIDEO |
 
 Tüm çıktıların önizlemesi:
 ![İşlem Demosunu Görüntüle](./asset/load3d_outputs.webp)
@@ -132,3 +130,5 @@ Sağ menünün iki ana işlevi vardır:
 
 1. **Görünüm oranını sıfırlama**: Düğmeye tıkladıktan sonra görünüm, ayarlanan genişlik ve yüksekliğe göre tuval işleme alanı oranını ayarlayacaktır
 2. **Video kaydı**: Geçerli 3B görünüm işlemlerini video olarak kaydetmenize olanak tanır, içe aktarmaya izin verir ve sonraki düğümlere `recording_video` olarak çıktı verilebilir
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3D/tr.md)

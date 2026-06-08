@@ -1,15 +1,13 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerER_SDE/tr.md)
-
 SamplerER_SDE düğümü, difüzyon modelleri için ER-SDE, Ters-zamanlı SDE ve ODE yaklaşımları dahil olmak üzere farklı çözücü türleri sunan özel örnekleme yöntemleri sağlar. Örnekleme sürecinin stokastik davranışı ve hesaplama aşamaları üzerinde kontrol sağlar. Düğüm, seçilen çözücü türüne göre parametreleri otomatik olarak ayarlayarak doğru işlevselliği sağlar.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `çözücü_tipi` | COMBO | Evet | "ER-SDE"<br>"Ters-zamanlı SDE"<br>"ODE" | Örnekleme için kullanılacak çözücü türü. Difüzyon süreci için matematiksel yaklaşımı belirler. |
-| `maksimum_aşama` | INT | Hayır | 1-3 | Örnekleme süreci için maksimum aşama sayısı (varsayılan: 3). Hesaplama karmaşıklığını ve kalitesini kontrol eder. |
-| `eta` | FLOAT | Hayır | 0.0-100.0 | Ters-zamanlı SDE'nin stokastik gücü (varsayılan: 1.0). eta=0 olduğunda deterministik ODE'ye indirgenir. Bu ayar ER-SDE çözücü türü için geçerli değildir. |
-| `s_gürültü` | FLOAT | Hayır | 0.0-100.0 | Örnekleme süreci için gürültü ölçekleme faktörü (varsayılan: 1.0). Örnekleme sırasında uygulanan gürültü miktarını kontrol eder. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `çözücü_tipi` | Örnekleme için kullanılacak çözücü türü. Difüzyon süreci için matematiksel yaklaşımı belirler. | COMBO | Evet | "ER-SDE"<br>"Ters-zamanlı SDE"<br>"ODE" |
+| `maksimum_aşama` | Örnekleme süreci için maksimum aşama sayısı (varsayılan: 3). Hesaplama karmaşıklığını ve kalitesini kontrol eder. | INT | Hayır | 1-3 |
+| `eta` | Ters-zamanlı SDE'nin stokastik gücü (varsayılan: 1.0). eta=0 olduğunda deterministik ODE'ye indirgenir. Bu ayar ER-SDE çözücü türü için geçerli değildir. | FLOAT | Hayır | 0.0-100.0 |
+| `s_gürültü` | Örnekleme süreci için gürültü ölçekleme faktörü (varsayılan: 1.0). Örnekleme sırasında uygulanan gürültü miktarını kontrol eder. | FLOAT | Hayır | 0.0-100.0 |
 
 **Parametre Kısıtlamaları:**
 
@@ -18,9 +16,11 @@ SamplerER_SDE düğümü, difüzyon modelleri için ER-SDE, Ters-zamanlı SDE ve
 
 ## Çıkışlar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `sampler` | SAMPLER | Belirtilen çözücü ayarlarıyla örnekleme hattında kullanılabilen yapılandırılmış bir örnekleyici nesnesi. |
+| Çıkış Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `sampler` | Belirtilen çözücü ayarlarıyla örnekleme hattında kullanılabilen yapılandırılmış bir örnekleyici nesnesi. | SAMPLER |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerER_SDE/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `bc24ec3c5dc645aebf55ef3392c5f4a40dcf0461b4b77731e8fe7ff397dcfadf`

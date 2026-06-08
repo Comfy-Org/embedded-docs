@@ -1,5 +1,3 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyAceStepLatentAudio/ar.md)
-
 # ترجمة وثيقة عقد EmptyAceStepLatentAudio
 
 ## نظرة عامة
@@ -8,16 +6,18 @@
 
 ## المدخلات
 
-| {heading_parameter} | {heading_data_type} | {heading_required} | {heading_range} | {heading_description} |
-|---------------------|---------------------|--------------------|-----------------|------------------------|
-| `ثواني` | FLOAT | نعم | 1.0 - 1000.0 | مدة الصوت بالثواني (القيمة الافتراضية: 120.0) |
-| `حجم الدُفعة` | INT | نعم | 1 - 4096 | عدد الصور الكامنة في المجموعة (القيمة الافتراضية: 1) |
+| {heading_parameter} | {heading_description} | {heading_data_type} | {heading_required} | {heading_range} |
+| --- | --- | --- | --- | --- |
+| `ثواني` | مدة الصوت بالثواني (القيمة الافتراضية: 120.0) | FLOAT | نعم | 1.0 - 1000.0 |
+| `حجم الدُفعة` | عدد الصور الكامنة في المجموعة (القيمة الافتراضية: 1) | INT | نعم | 1 - 4096 |
 
 ## المخرجات
 
-| {heading_output_name} | {heading_data_type} | {heading_description} |
-|-----------------------|---------------------|------------------------|
-| `output` | LATENT | يُرجع عينات صوتية كامنة فارغة مملوءة بالأصفار. يحتوي المُخرَج على موتر `samples` وحقل `type` مُعيَّن على القيمة "audio". |
+| {heading_output_name} | {heading_description} | {heading_data_type} |
+| --- | --- | --- |
+| `output` | يُرجع عينات صوتية كامنة فارغة مملوءة بالأصفار. يحتوي المُخرَج على موتر `samples` وحقل `type` مُعيَّن على القيمة "audio". | LATENT |
+
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyAceStepLatentAudio/ar.md)
 
 ---
 **Source fingerprint (SHA-256):** `79fcfb3cb26db8a2ef4480455a44255e0d1a16f122a762d7608a78b2330cc637`

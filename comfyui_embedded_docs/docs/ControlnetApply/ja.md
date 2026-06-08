@@ -1,5 +1,3 @@
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ja.md)
-
 ControlNetを使用するには、入力画像の前処理が必要です。ComfyUIの初期ノードにはプリプロセッサーやControlNetモデルが付属していないため、まずControlNetプリプロセッサーをインストールし（[こちらからプリプロセッサーをダウンロード](https://github.com/Fannovel16/comfy_controlnet_preprocessors)）、対応するControlNetモデルもインストールしてください。
 
 ## 入力
@@ -21,3 +19,5 @@ ControlNetを使用するには、入力画像の前処理が必要です。Comf
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | ControlNetで処理されたポジティブな条件付けデータ。次のControlNetノードやK Samplerノードに出力できます |
 | `negative` | `CONDITIONING` | ControlNetで処理されたネガティブな条件付けデータ。次のControlNetノードやK Samplerノードに出力できます |
+
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ja.md)

@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,11 +30,11 @@ El nodo ByteDance Seedance 2.0 Reference to Video utiliza el modelo de IA Seedan
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo` | COMBO | Sí | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` | El modelo de IA a utilizar. Seedance 2.0 es para máxima calidad, mientras que Seedance 2.0 Fast está optimizado para velocidad. Al seleccionar un modelo, se revelan entradas adicionales obligatorias para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio`, y entradas opcionales para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` y `auto_downscale`. |
-| `semilla` | INT | No | 0 a 2147483647 | Número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (predeterminado: 0). |
-| `marca_de_agua` | BOOLEAN | No | `True` / `False` | Indica si se debe añadir una marca de agua al video generado (predeterminado: False). |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo de IA a utilizar. Seedance 2.0 es para máxima calidad, mientras que Seedance 2.0 Fast está optimizado para velocidad. Al seleccionar un modelo, se revelan entradas adicionales obligatorias para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio`, y entradas opcionales para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` y `auto_downscale`. | COMBO | Sí | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` |
+| `semilla` | Número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| `marca_de_agua` | Indica si se debe añadir una marca de agua al video generado (predeterminado: False). | BOOLEAN | No | `True` / `False` |
 
 **Restricciones importantes:**
 *   Se requiere al menos una imagen o video de referencia (proporcionados a través de las entradas `reference_images`, `reference_videos` o `reference_assets`) para que el nodo funcione.
@@ -48,9 +46,11 @@ El nodo ByteDance Seedance 2.0 Reference to Video utiliza el modelo de IA Seedan
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `video` | VIDEO | El archivo de video generado. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `video` | El archivo de video generado. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `72c8a2f821b9fb9853a4d0428785c432d0852ae562080292817f8a7d52967c7f`

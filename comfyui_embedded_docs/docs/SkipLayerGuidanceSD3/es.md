@@ -1,22 +1,22 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceSD3/es.md)
-
 El nodo SkipLayerGuidanceSD3 mejora la guía hacia una estructura detallada aplicando un conjunto adicional de guía sin clasificador con capas omitidas. Esta implementación experimental está inspirada en la Guía de Atención Perturbada y funciona omitiendo selectivamente ciertas capas durante el proceso de condicionamiento negativo para mejorar los detalles estructurales en la salida generada.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo al que se aplicará la guía de capas omitidas |
-| `capas` | STRING | Sí | - | Lista separada por comas de índices de capas a omitir (predeterminado: "7, 8, 9") |
-| `escala` | FLOAT | Sí | 0.0 - 10.0 | La intensidad del efecto de guía de capas omitidas (predeterminado: 3.0) |
-| `porcentaje_inicio` | FLOAT | Sí | 0.0 - 1.0 | El punto de inicio de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.01) |
-| `porcentaje_final` | FLOAT | Sí | 0.0 - 1.0 | El punto final de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.15) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo al que se aplicará la guía de capas omitidas | MODEL | Sí | - |
+| `capas` | Lista separada por comas de índices de capas a omitir (predeterminado: "7, 8, 9") | STRING | Sí | - |
+| `escala` | La intensidad del efecto de guía de capas omitidas (predeterminado: 3.0) | FLOAT | Sí | 0.0 - 10.0 |
+| `porcentaje_inicio` | El punto de inicio de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.01) | FLOAT | Sí | 0.0 - 1.0 |
+| `porcentaje_final` | El punto final de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.15) | FLOAT | Sí | 0.0 - 1.0 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `modelo` | MODEL | El modelo modificado con la guía de capas omitidas aplicada |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `modelo` | El modelo modificado con la guía de capas omitidas aplicada | MODEL |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceSD3/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `97c8220abd223bd35b4d0274c2b4536ffb6be7954ccd917943905bd22f60c1a5`

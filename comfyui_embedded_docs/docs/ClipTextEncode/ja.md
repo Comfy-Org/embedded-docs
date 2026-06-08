@@ -1,21 +1,19 @@
-> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/ja.md)
-
 `CLIP Text Encode (CLIPTextEncode)` は翻訳者の役割を果たし、テキストによる説明をAIが理解できる形式に変換します。これにより、AIがあなたの入力を解釈し、希望する画像を生成できるようになります。
 
 これは、異なる言語を話すアーティストとコミュニケーションをとるようなものだと考えてください。膨大な画像とテキストのペアで学習されたCLIPモデルが、あなたの説明をAIモデルが従うことのできる「指示」に変換することで、このギャップを埋めます。
 
 ## 入力
 
-| パラメータ | データ型 | 必須 | 範囲 | 説明 |
-|-----------|-----------|----------|-------|-------------|
-| `テキスト` | STRING | はい | 任意のテキスト | エンコードするテキストです。複数行の入力と動的プロンプトをサポートします。 |
-| `クリップ` | CLIP | はい | 読み込まれたCLIPモデル | テキストのエンコードに使用するCLIPモデルです。 |
+| パラメータ | 説明 | データ型 | 必須 | 範囲 |
+| --- | --- | --- | --- | --- |
+| `テキスト` | エンコードするテキストです。複数行の入力と動的プロンプトをサポートします。 | STRING | はい | 任意のテキスト |
+| `クリップ` | テキストのエンコードに使用するCLIPモデルです。 | CLIP | はい | 読み込まれたCLIPモデル |
 
 ## 出力
 
-| 出力名 | データ型 | 説明 |
-|-------------|-----------|-------------|
-| `CONDITIONING` | CONDITIONING | 拡散モデルをガイドするために使用される、埋め込まれたテキストを含むコンディショニングです。 |
+| 出力名 | 説明 | データ型 |
+| --- | --- | --- |
+| `CONDITIONING` | 拡散モデルをガイドするために使用される、埋め込まれたテキストを含むコンディショニングです。 | CONDITIONING |
 
 ## プロンプト機能
 
@@ -65,6 +63,8 @@ worst quality, embedding:EasyNegative, bad quality
 // this line is excluded from the prompt.
 a beautiful landscape, /* this part is ignored */ high quality
 ```
+
+> このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/ja.md)
 
 ---
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,26 +30,28 @@ El nodo ControlNetInpaintingAliMamaApply aplica el condicionamiento de ControlNe
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `positivo` | CONDITIONING | Sí | - | El condicionamiento positivo que guía la generación hacia el contenido deseado |
-| `negativo` | CONDITIONING | Sí | - | El condicionamiento negativo que aleja la generación del contenido no deseado |
-| `control_net` | CONTROL_NET | Sí | - | El modelo ControlNet que proporciona control adicional sobre la generación |
-| `vae` | VAE | Sí | - | El VAE (Autoencoder Variacional) utilizado para codificar y decodificar imágenes |
-| `imagen` | IMAGE | Sí | - | La imagen de entrada que sirve como guía de control para el ControlNet |
-| `máscara` | MASK | Sí | - | La máscara que define qué áreas de la imagen deben ser inpintadas |
-| `fuerza` | FLOAT | Sí | 0.0 a 10.0 | La intensidad del efecto de ControlNet (predeterminado: 1.0) |
-| `porcentaje_inicio` | FLOAT | Sí | 0.0 a 1.0 | El punto de inicio (como porcentaje) de cuándo comienza la influencia de ControlNet durante la generación (predeterminado: 0.0) |
-| `porcentaje_final` | FLOAT | Sí | 0.0 a 1.0 | El punto final (como porcentaje) de cuándo se detiene la influencia de ControlNet durante la generación (predeterminado: 1.0) |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `positivo` | El condicionamiento positivo que guía la generación hacia el contenido deseado | CONDITIONING | Sí | - |
+| `negativo` | El condicionamiento negativo que aleja la generación del contenido no deseado | CONDITIONING | Sí | - |
+| `control_net` | El modelo ControlNet que proporciona control adicional sobre la generación | CONTROL_NET | Sí | - |
+| `vae` | El VAE (Autoencoder Variacional) utilizado para codificar y decodificar imágenes | VAE | Sí | - |
+| `imagen` | La imagen de entrada que sirve como guía de control para el ControlNet | IMAGE | Sí | - |
+| `máscara` | La máscara que define qué áreas de la imagen deben ser inpintadas | MASK | Sí | - |
+| `fuerza` | La intensidad del efecto de ControlNet (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 10.0 |
+| `porcentaje_inicio` | El punto de inicio (como porcentaje) de cuándo comienza la influencia de ControlNet durante la generación (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `porcentaje_final` | El punto final (como porcentaje) de cuándo se detiene la influencia de ControlNet durante la generación (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 
 **Nota:** Cuando el ControlNet tiene `concat_mask` habilitado, la máscara se invierte y se aplica a la imagen antes del procesamiento, y la máscara se incluye en los datos de concatenación adicional enviados al ControlNet.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `negativo` | CONDITIONING | El condicionamiento positivo modificado con ControlNet aplicado para inpainting |
-| `negativo` | CONDITIONING | El condicionamiento negativo modificado con ControlNet aplicado para inpainting |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `negativo` | El condicionamiento positivo modificado con ControlNet aplicado para inpainting | CONDITIONING |
+| `negativo` | El condicionamiento negativo modificado con ControlNet aplicado para inpainting | CONDITIONING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `30b49991b5ead039122a282fb48e3ed30477f89ce1430c371529bc42f921020d`

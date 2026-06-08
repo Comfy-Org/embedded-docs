@@ -1,21 +1,19 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSpeech/fr.md)
-
 Voici la traduction en français de la documentation du nœud ElevenLabs Text to Speech :
 
 Le nœud ElevenLabs Text to Speech convertit du texte écrit en audio parlé à l'aide de l'API ElevenLabs. Il vous permet de sélectionner une voix spécifique et d'affiner diverses caractéristiques de la parole comme la stabilité, la vitesse et le style pour générer un résultat audio personnalisé.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `voix` | CUSTOM | Oui | N/A | Voix à utiliser pour la synthèse vocale. Connectez depuis le sélecteur de voix ou Instant Voice Clone. |
-| `texte` | STRING | Oui | N/A | Le texte à convertir en parole. |
-| `stabilité` | FLOAT | Non | 0.0 - 1.0 | Stabilité de la voix. Des valeurs plus faibles offrent une gamme émotionnelle plus large, des valeurs plus élevées produisent une parole plus cohérente mais potentiellement monotone (par défaut : 0.5). |
-| `appliquer la normalisation du texte` | COMBO | Non | `"auto"`<br>`"on"`<br>`"off"` | Mode de normalisation du texte. 'auto' laisse le système décider, 'on' applique toujours la normalisation, 'off' l'ignore. |
-| `modèle` | DYNAMICCOMBO | Non | `"eleven_multilingual_v2"`<br>`"eleven_v3"` | Modèle à utiliser pour la synthèse vocale. La sélection d'un modèle révèle ses paramètres spécifiques. |
-| `code langue` | STRING | Non | N/A | Code de langue ISO-639-1 ou ISO-639-3 (par exemple, 'en', 'es', 'fra'). Laissez vide pour la détection automatique (par défaut : ""). |
-| `graine` | INT | Non | 0 - 2147483647 | Graine pour la reproductibilité (déterminisme non garanti) (par défaut : 1). |
-| `format de sortie` | COMBO | Non | `"mp3_44100_192"`<br>`"opus_48000_192"` | Format de sortie audio. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `voix` | Voix à utiliser pour la synthèse vocale. Connectez depuis le sélecteur de voix ou Instant Voice Clone. | CUSTOM | Oui | N/A |
+| `texte` | Le texte à convertir en parole. | STRING | Oui | N/A |
+| `stabilité` | Stabilité de la voix. Des valeurs plus faibles offrent une gamme émotionnelle plus large, des valeurs plus élevées produisent une parole plus cohérente mais potentiellement monotone (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
+| `appliquer la normalisation du texte` | Mode de normalisation du texte. 'auto' laisse le système décider, 'on' applique toujours la normalisation, 'off' l'ignore. | COMBO | Non | `"auto"`<br>`"on"`<br>`"off"` |
+| `modèle` | Modèle à utiliser pour la synthèse vocale. La sélection d'un modèle révèle ses paramètres spécifiques. | DYNAMICCOMBO | Non | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `code langue` | Code de langue ISO-639-1 ou ISO-639-3 (par exemple, 'en', 'es', 'fra'). Laissez vide pour la détection automatique (par défaut : ""). | STRING | Non | N/A |
+| `graine` | Graine pour la reproductibilité (déterminisme non garanti) (par défaut : 1). | INT | Non | 0 - 2147483647 |
+| `format de sortie` | Format de sortie audio. | COMBO | Non | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 **Paramètres spécifiques au modèle :**
 Lorsque le paramètre `model` est défini sur `"eleven_multilingual_v2"`, les paramètres supplémentaires suivants deviennent disponibles :
@@ -32,9 +30,11 @@ Lorsque le paramètre `model` est défini sur `"eleven_v3"`, les paramètres sup
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `audio` | AUDIO | L'audio généré à partir de la conversion texte-parole. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `audio` | L'audio généré à partir de la conversion texte-parole. | AUDIO |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSpeech/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `d11d4ffa2d1f11dfd5ce378d9496cd9788d2197bf7f4135092ecefb287f3c2f7`

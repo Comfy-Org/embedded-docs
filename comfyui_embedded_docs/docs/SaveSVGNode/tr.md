@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveSVGNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,18 +30,20 @@ SVG dosyalarını diske kaydeder. Bu düğüm, girdi olarak SVG verisi alır ve 
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `svg` | SVG | Evet | - | Diske kaydedilecek SVG verisi |
-| `dosya_adı_ön_eki` | STRING | Evet | - | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerleri dahil etmek için %date:yyyy-MM-dd% veya %Empty Latent Image.width% gibi biçimlendirme bilgileri içerebilir. (varsayılan: "svg/ComfyUI") |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `svg` | Diske kaydedilecek SVG verisi | SVG | Evet | - |
+| `dosya_adı_ön_eki` | Kaydedilecek dosyanın ön eki. Bu, düğümlerden değerleri dahil etmek için %date:yyyy-MM-dd% veya %Empty Latent Image.width% gibi biçimlendirme bilgileri içerebilir. (varsayılan: "svg/ComfyUI") | STRING | Evet | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `ui` | DICT | ComfyUI arayüzünde görüntülenmek üzere dosya adı, alt klasör ve tür dahil dosya bilgilerini döndürür |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `ui` | ComfyUI arayüzünde görüntülenmek üzere dosya adı, alt klasör ve tür dahil dosya bilgilerini döndürür | DICT |
 
 **Not:** Bu düğüm, kullanılabilir olduğunda iş akışı meta verilerini (prompt ve ek PNG bilgisi) otomatik olarak SVG dosyasına gömer. Meta veri, SVG'nin meta veri öğesi içinde bir CDATA bölümü olarak eklenir.
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveSVGNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `a294103d8d2306ce6765912a98c5572323bb5394909ee384591534b0b404ea70`
