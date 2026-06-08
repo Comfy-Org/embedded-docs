@@ -52,21 +52,8 @@ Utilisez `{}` pour créer des invites dynamiques. Par exemple, `{jour|nuit|matin
 
 Si vous souhaitez inclure des accolades littérales dans votre invite sans déclencher de comportement dynamique, vous pouvez les échapper en utilisant une barre oblique inverse, par exemple `\{mot\}`.
 
-### Commentaires dans les Invites
-
-Vous pouvez ajouter des commentaires qui sont exclus de l'invite en utilisant :
-
-- `//` pour commenter une seule ligne.
-- `/* */` pour commenter une section ou plusieurs lignes.
-
-Exemple :
-
-```
-// cette ligne est exclue de l'invite.
-a beautiful landscape, /* cette partie est ignorée */ high quality
-```
-
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/fr.md)
 
 ---
+
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

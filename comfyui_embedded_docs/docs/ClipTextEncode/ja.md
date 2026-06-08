@@ -50,21 +50,8 @@ worst quality, embedding:EasyNegative, bad quality
 
 動的行動をトリガーせずにプロンプトにリテラルの中括弧を含めたい場合は、バックスラッシュでエスケープできます。例：`\{word\}`。
 
-### プロンプト内のコメント
-
-以下を使用して、プロンプトから除外されるコメントを追加できます。
-
-- `//` を使用して1行をコメントアウトします。
-- `/* */` を使用して、セクションまたは複数行をコメントアウトします。
-
-例：
-
-```
-// this line is excluded from the prompt.
-a beautiful landscape, /* this part is ignored */ high quality
-```
-
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/ja.md)
 
 ---
+
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

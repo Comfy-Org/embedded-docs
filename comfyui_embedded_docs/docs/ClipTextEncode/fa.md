@@ -50,21 +50,8 @@ worst quality, embedding:EasyNegative, bad quality
 
 اگر می‌خواهید از آکولادهای تحت‌اللفظی در پرامپت خود بدون فعال کردن رفتار پویا استفاده کنید، می‌توانید با استفاده از بک‌اسلش از آن‌ها فرار دهید، به عنوان مثال `\{word\}`.
 
-### کامنت‌ها در پرامپت‌ها
-
-می‌توانید با استفاده از موارد زیر کامنت‌هایی اضافه کنید که از پرامپت حذف می‌شوند:
-
-- `//` برای کامنت کردن یک خط.
-- `/* */` برای کامنت کردن یک بخش یا چند خط.
-
-مثال:
-
-```
-// this line is excluded from the prompt.
-a beautiful landscape, /* this part is ignored */ high quality
-```
-
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/fa.md)
 
 ---
+
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

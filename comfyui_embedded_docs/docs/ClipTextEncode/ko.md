@@ -50,21 +50,8 @@ worst quality, embedding:EasyNegative, bad quality
 
 동적 동작을 트리거하지 않고 프롬프트에 문자 그대로의 중괄호를 포함하려면 백슬래시를 사용하여 이스케이프 처리할 수 있습니다(예: `\{word\}`).
 
-### 프롬프트 내 주석
-
-다음을 사용하여 프롬프트에서 제외되는 주석을 추가할 수 있습니다:
-
-- `//`를 사용하여 한 줄을 주석 처리합니다.
-- `/* */`를 사용하여 섹션이나 여러 줄을 주석 처리합니다.
-
-예시:
-
-```
-// 이 줄은 프롬프트에서 제외됩니다.
-a beautiful landscape, /* 이 부분은 무시됩니다 */ high quality
-```
-
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/ko.md)
 
 ---
+
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

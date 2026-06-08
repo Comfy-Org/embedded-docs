@@ -50,21 +50,8 @@ Dinamik promptlar oluşturmak için `{}` kullanın. Örneğin, `{gündüz|gece|s
 
 Promptunuzda dinamik davranışı tetiklemeden gerçek küme parantezlerini kullanmak istiyorsanız, bunları bir ters eğik çizgi ile kaçış karakteri olarak kullanabilirsiniz, örn. `\{kelime\}`.
 
-### Promptlarda Yorumlar
-
-Aşağıdakileri kullanarak prompttan hariç tutulan yorumlar ekleyebilirsiniz:
-
-- Tek bir satırı yorum satırı yapmak için `//`.
-- Bir bölümü veya birden çok satırı yorum satırı yapmak için `/* */`.
-
-Örnek:
-
-```
-// bu satır prompttan hariç tutulur.
-a beautiful landscape, /* bu kısım yok sayılır */ high quality
-```
-
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/tr.md)
 
 ---
+
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`

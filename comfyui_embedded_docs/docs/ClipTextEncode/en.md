@@ -50,21 +50,8 @@ Use `{}` to create dynamic prompts. For example, `{day|night|morning}` will rand
 
 If you want to include literal curly braces in your prompt without triggering dynamic behavior, you can escape them using a backslash e.g. `\{word\}`.
 
-### Comments in Prompts
-
-You can add comments that are excluded from the prompt by using:
-
-- `//` to comment out a single line.
-- `/* */` to comment out a section or multiple lines.
-
-Example:
-
-```
-// this line is excluded from the prompt.
-a beautiful landscape, /* this part is ignored */ high quality
-```
-
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncode/en.md)
 
 ---
+
 **Source fingerprint (SHA-256):** `e8f286cdec879c529270e110ccf5959ed6df77737cfb5a8019379afac9266118`
