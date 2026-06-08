@@ -34,16 +34,16 @@ Bu düğüm, bir nesnenin veya karakterin 2 ila 4 referans görüntüsünden 3B 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
-| `image` | Ön görünüm (0°). Gereklidir. | IMAGE | Evet | - |
-| `image_left` | Sol görünüm (90°), yani nesnenin sol tarafı. | IMAGE | Hayır | - |
-| `image_back` | Arka görünüm (180°). | IMAGE | Hayır | - |
-| `image_right` | Sağ görünüm (270°), yani nesnenin sağ tarafı. | IMAGE | Hayır | - |
-| `output_mode` | Oluşturulan model için çıktı modu. `"geometry"` ham bir ağ üretir, `"textured"` standart bir doku ekler ve `"detailed"` yüksek detaylı dokulu bir model oluşturur (varsayılan: `"textured"`). | COMBO | Evet | `"geometry"`<br>`"textured"`<br>`"detailed"` |
-| `face_limit` | Çıktı ağı için maksimum yüz sayısı. Sınırsız için -1 olarak ayarlayın (varsayılan: -1). | INT | Hayır | -1 ila 100000 |
-| `model_seed` | Tekrarlanabilir model oluşturma için tohum değeri. Rastgele için 0 olarak ayarlayın (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
-| `auto_size` | Modeli standart bir sınırlama kutusuna sığacak şekilde otomatik olarak boyutlandırın (varsayılan: False). | BOOLEAN | Hayır | True / False |
-| `export_uv` | Modelle birlikte UV koordinatlarını dışa aktarın (varsayılan: True). | BOOLEAN | Hayır | True / False |
-| `compress_geometry` | Dosya boyutunu azaltmak için geometri verilerini sıkıştırın (varsayılan: False). | BOOLEAN | Hayır | True / False |
+| `görüntü` | Ön görünüm (0°). Gereklidir. | IMAGE | Evet | - |
+| `görüntü_sol` | Sol görünüm (90°), yani nesnenin sol tarafı. | IMAGE | Hayır | - |
+| `görüntü_arka` | Arka görünüm (180°). | IMAGE | Hayır | - |
+| `görüntü_sağ` | Sağ görünüm (270°), yani nesnenin sağ tarafı. | IMAGE | Hayır | - |
+| `çıktı_modu` | Oluşturulan model için çıktı modu. `"geometry"` ham bir ağ üretir, `"textured"` standart bir doku ekler ve `"detailed"` yüksek detaylı dokulu bir model oluşturur (varsayılan: `"textured"`). | COMBO | Evet | `"geometry"`<br>`"textured"`<br>`"detailed"` |
+| `yüz_sınırı` | Çıktı ağı için maksimum yüz sayısı. Sınırsız için -1 olarak ayarlayın (varsayılan: -1). | INT | Hayır | -1 ila 100000 |
+| `model_tohumu` | Tekrarlanabilir model oluşturma için tohum değeri. Rastgele için 0 olarak ayarlayın (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
+| `oto_boyut` | Modeli standart bir sınırlama kutusuna sığacak şekilde otomatik olarak boyutlandırın (varsayılan: False). | BOOLEAN | Hayır | True / False |
+| `uv_dışa_aktar` | Modelle birlikte UV koordinatlarını dışa aktarın (varsayılan: True). | BOOLEAN | Hayır | True / False |
+| `geometriyi_sıkıştır` | Dosya boyutunu azaltmak için geometri verilerini sıkıştırın (varsayılan: False). | BOOLEAN | Hayır | True / False |
 
 **Not:** En az 2 görüntü sağlamalısınız: ön görünüm (`image`) artı diğer görünümlerden en az biri (`image_left`, `image_back` veya `image_right`). 2'den az görüntü sağlanırsa, düğüm bir hata verecektir.
 
@@ -51,8 +51,8 @@ Bu düğüm, bir nesnenin veya karakterin 2 ila 4 referans görüntüsünden 3B 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_file` | Oluşturulan GLB modelinin dosya adı (yalnızca geriye dönük uyumluluk için). | STRING |
-| `model_task_id` | Bu model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
+| `model_task_id` | Oluşturulan GLB modelinin dosya adı (yalnızca geriye dönük uyumluluk için). | STRING |
+| `GLB` | Bu model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
 | `GLB` | GLB formatında oluşturulan 3B model. | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1MultiviewToModelNode/tr.md)

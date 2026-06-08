@@ -21,8 +21,8 @@ Ce nœud convertit une image 2D unique en un modèle 3D via l'API Tripo P1. Il e
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model_file` | Le chemin d'accès au fichier du modèle 3D généré. Cette sortie est fournie uniquement pour la rétrocompatibilité. | STRING |
-| `model task_id` | L'identifiant unique de la tâche pour la demande de génération de modèle. | MODEL_TASK_ID |
+| `model task_id` | Le chemin d'accès au fichier du modèle 3D généré. Cette sortie est fournie uniquement pour la rétrocompatibilité. | STRING |
+| `GLB` | L'identifiant unique de la tâche pour la demande de génération de modèle. | MODEL_TASK_ID |
 | `GLB` | Le modèle 3D généré au format GLB. | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1ImageToModelNode/fr.md)

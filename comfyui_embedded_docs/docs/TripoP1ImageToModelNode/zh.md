@@ -6,14 +6,14 @@
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 取值范围 |
 | --- | --- | --- | --- | --- |
-| `image` | 用于转换为 3D 模型的输入图像。 | IMAGE | 是 | - |
-| `output_mode` | 一个字典，指定输出模式和质量设置。此参数控制生成的模型类型及其纹理质量。可用选项由 `_build_p1_output_mode` 辅助函数定义，包括 `texture_quality`（例如 "standard"、"high"、"ultra"）和 `image_alignment` 的设置。 | DICT | 是 | 见描述 |
-| `enable_image_autofix` | 对输入图像进行预处理，以获得更好的生成质量。（默认值：False） | BOOLEAN | 否 | True<br>False |
-| `face_limit` | 限制生成网格中的面数。值为 -1 表示无限制。（默认值：-1） | INT | 否 | - |
-| `model_seed` | 用于可重复模型生成的种子值。如果未提供，则使用随机种子。（默认值：None） | INT | 否 | - |
-| `auto_size` | 自动确定生成模型的最佳尺寸。（默认值：False） | BOOLEAN | 否 | True<br>False |
-| `export_uv` | 随模型导出 UV 坐标。（默认值：True） | BOOLEAN | 否 | True<br>False |
-| `compress_geometry` | 压缩几何数据以减小文件大小。（默认值：False） | BOOLEAN | 否 | True<br>False |
+| `图像` | 用于转换为 3D 模型的输入图像。 | IMAGE | 是 | - |
+| `输出模式` | 一个字典，指定输出模式和质量设置。此参数控制生成的模型类型及其纹理质量。可用选项由 `_build_p1_output_mode` 辅助函数定义，包括 `texture_quality`（例如 "standard"、"high"、"ultra"）和 `image_alignment` 的设置。 | DICT | 是 | 见描述 |
+| `启用图像自动修复` | 对输入图像进行预处理，以获得更好的生成质量。（默认值：False） | BOOLEAN | 否 | True<br>False |
+| `面数限制` | 限制生成网格中的面数。值为 -1 表示无限制。（默认值：-1） | INT | 否 | - |
+| `模型种子` | 用于可重复模型生成的种子值。如果未提供，则使用随机种子。（默认值：None） | INT | 否 | - |
+| `自动缩放` | 自动确定生成模型的最佳尺寸。（默认值：False） | BOOLEAN | 否 | True<br>False |
+| `导出 UV` | 随模型导出 UV 坐标。（默认值：True） | BOOLEAN | 否 | True<br>False |
+| `压缩几何体` | 压缩几何数据以减小文件大小。（默认值：False） | BOOLEAN | 否 | True<br>False |
 
 ### ## 输出
 

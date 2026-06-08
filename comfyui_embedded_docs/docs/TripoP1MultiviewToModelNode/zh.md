@@ -6,16 +6,16 @@
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 范围 |
 | --- | --- | --- | --- | --- |
-| `image` | 正面视图（0°）。必填。 | IMAGE | 是 | - |
-| `image_left` | 左侧视图（90°），即物体的左侧。 | IMAGE | 否 | - |
-| `image_back` | 背面视图（180°）。 | IMAGE | 否 | - |
-| `image_right` | 右侧视图（270°），即物体的右侧。 | IMAGE | 否 | - |
-| `output_mode` | 生成模型的输出模式。`"geometry"` 生成原始网格，`"textured"` 添加标准纹理，`"detailed"` 创建高细节纹理模型（默认值：`"textured"`）。 | COMBO | 是 | `"geometry"`<br>`"textured"`<br>`"detailed"` |
-| `face_limit` | 输出网格的最大面数。设置为 -1 表示无限制（默认值：-1）。 | INT | 否 | -1 到 100000 |
-| `model_seed` | 用于可重复模型生成的种子。设置为 0 表示随机（默认值：0）。 | INT | 否 | 0 到 2147483647 |
-| `auto_size` | 自动调整模型大小以适配标准边界框（默认值：False）。 | BOOLEAN | 否 | True / False |
-| `export_uv` | 随模型导出 UV 坐标（默认值：True）。 | BOOLEAN | 否 | True / False |
-| `compress_geometry` | 压缩几何数据以减小文件大小（默认值：False）。 | BOOLEAN | 否 | True / False |
+| `图像` | 正面视图（0°）。必填。 | IMAGE | 是 | - |
+| `左侧图像` | 左侧视图（90°），即物体的左侧。 | IMAGE | 否 | - |
+| `背面图像` | 背面视图（180°）。 | IMAGE | 否 | - |
+| `右侧图像` | 右侧视图（270°），即物体的右侧。 | IMAGE | 否 | - |
+| `输出模式` | 生成模型的输出模式。`"geometry"` 生成原始网格，`"textured"` 添加标准纹理，`"detailed"` 创建高细节纹理模型（默认值：`"textured"`）。 | COMBO | 是 | `"geometry"`<br>`"textured"`<br>`"detailed"` |
+| `面数限制` | 输出网格的最大面数。设置为 -1 表示无限制（默认值：-1）。 | INT | 否 | -1 到 100000 |
+| `模型种子` | 用于可重复模型生成的种子。设置为 0 表示随机（默认值：0）。 | INT | 否 | 0 到 2147483647 |
+| `自动缩放` | 自动调整模型大小以适配标准边界框（默认值：False）。 | BOOLEAN | 否 | True / False |
+| `导出 UV` | 随模型导出 UV 坐标（默认值：True）。 | BOOLEAN | 否 | True / False |
+| `压缩几何体` | 压缩几何数据以减小文件大小（默认值：False）。 | BOOLEAN | 否 | True / False |
 
 **注意：** 您必须至少提供 2 张图像：正面视图（`image`）加上至少一个其他视图（`image_left`、`image_back` 或 `image_right`）。如果提供的图像少于 2 张，节点将报错。
 

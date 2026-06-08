@@ -6,15 +6,15 @@
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 取值范围 |
 | --- | --- | --- | --- | --- |
-| `prompt` | 您想要生成的 3D 模型的文本描述。 | STRING | 是 | 最多 1024 个字符 |
-| `negative_prompt` | 您不希望生成的模型中包含的内容的文本描述。 | STRING | 否 | 最多 255 个字符 |
-| `output_mode` | 控制输出模型的质量和纹理设置。此参数是一个字典，包含以下键：<br><br>`texture_quality`：STRING，取值范围：`"standard"`<br>`pbr`：BOOLEAN，默认值：True<br>`texture`：BOOLEAN，默认值：True<br>`subdivision`：INT，默认值：0，取值范围：0 到 2<br>`texture_size`：INT，默认值：2048，取值范围：512 到 4096（必须为 2 的幂）<br>`texture_format`：STRING，取值范围：`"png"`<br>`texture_clean`：BOOLEAN，默认值：False<br>`texture_seamless`：BOOLEAN，默认值：False<br><br>默认值：`{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | 是 | 见描述 |
-| `image_seed` | 用于图像生成的种子值，用于控制随机性。默认值：42。 | INT | 否 |  |
-| `face_limit` | 生成网格的最大面数。值为 -1 表示无限制。默认值：-1。 | INT | 否 |  |
-| `model_seed` | 用于模型生成的种子值，用于控制随机性。 | INT | 否 |  |
-| `auto_size` | 如果启用，节点将自动确定最佳模型大小。默认值：False。 | BOOLEAN | 否 |  |
-| `export_uv` | 如果启用，模型将包含用于纹理映射的 UV 坐标。默认值：True。 | BOOLEAN | 否 |  |
-| `compress_geometry` | 如果启用，几何体将被压缩以减小文件大小。默认值：False。 | BOOLEAN | 否 |  |
+| `提示词` | 您想要生成的 3D 模型的文本描述。 | STRING | 是 | 最多 1024 个字符 |
+| `反向提示词` | 您不希望生成的模型中包含的内容的文本描述。 | STRING | 否 | 最多 255 个字符 |
+| `输出模式` | 控制输出模型的质量和纹理设置。此参数是一个字典，包含以下键：<br><br>`texture_quality`：STRING，取值范围：`"standard"`<br>`pbr`：BOOLEAN，默认值：True<br>`texture`：BOOLEAN，默认值：True<br>`subdivision`：INT，默认值：0，取值范围：0 到 2<br>`texture_size`：INT，默认值：2048，取值范围：512 到 4096（必须为 2 的幂）<br>`texture_format`：STRING，取值范围：`"png"`<br>`texture_clean`：BOOLEAN，默认值：False<br>`texture_seamless`：BOOLEAN，默认值：False<br><br>默认值：`{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | 是 | 见描述 |
+| `图像种子` | 用于图像生成的种子值，用于控制随机性。默认值：42。 | INT | 否 |  |
+| `面数限制` | 生成网格的最大面数。值为 -1 表示无限制。默认值：-1。 | INT | 否 |  |
+| `模型种子` | 用于模型生成的种子值，用于控制随机性。 | INT | 否 |  |
+| `自动缩放` | 如果启用，节点将自动确定最佳模型大小。默认值：False。 | BOOLEAN | 否 |  |
+| `导出 UV` | 如果启用，模型将包含用于纹理映射的 UV 坐标。默认值：True。 | BOOLEAN | 否 |  |
+| `压缩几何体` | 如果启用，几何体将被压缩以减小文件大小。默认值：False。 | BOOLEAN | 否 |  |
 
 ## ## 输出
 

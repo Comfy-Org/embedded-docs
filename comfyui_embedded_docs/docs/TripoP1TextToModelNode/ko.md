@@ -6,15 +6,15 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
 | --- | --- | --- | --- | --- |
-| `prompt` | 생성하려는 3D 모델에 대한 텍스트 설명입니다. | STRING | 예 | 최대 1024자 |
-| `negative_prompt` | 생성된 모델에 포함되지 않아야 할 내용에 대한 텍스트 설명입니다. | STRING | 아니요 | 최대 255자 |
-| `output_mode` | 출력 모델의 품질과 텍스처 설정을 제어합니다. 이 매개변수는 다음 키를 포함하는 딕셔너리입니다:<br><br>`texture_quality`: STRING, 범위: `"standard"`<br>`pbr`: BOOLEAN, 기본값: True<br>`texture`: BOOLEAN, 기본값: True<br>`subdivision`: INT, 기본값: 0, 범위: 0~2<br>`texture_size`: INT, 기본값: 2048, 범위: 512~4096 (2의 거듭제곱이어야 함)<br>`texture_format`: STRING, 범위: `"png"`<br>`texture_clean`: BOOLEAN, 기본값: False<br>`texture_seamless`: BOOLEAN, 기본값: False<br><br>기본값: `{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | 예 | 설명 참조 |
-| `image_seed` | 이미지 생성을 위한 시드 값으로, 무작위성을 제어하는 데 사용됩니다. 기본값: 42. | INT | 아니요 |  |
-| `face_limit` | 생성된 메시의 최대 면 수입니다. -1 값은 제한이 없음을 의미합니다. 기본값: -1. | INT | 아니요 |  |
-| `model_seed` | 모델 생성을 위한 시드 값으로, 무작위성을 제어하는 데 사용됩니다. | INT | 아니요 |  |
-| `auto_size` | 활성화하면 노드가 최적의 모델 크기를 자동으로 결정합니다. 기본값: False. | BOOLEAN | 아니요 |  |
-| `export_uv` | 활성화하면 모델에 텍스처 매핑을 위한 UV 좌표가 포함됩니다. 기본값: True. | BOOLEAN | 아니요 |  |
-| `compress_geometry` | 활성화하면 파일 크기를 줄이기 위해 지오메트리가 압축됩니다. 기본값: False. | BOOLEAN | 아니요 |  |
+| `프롬프트` | 생성하려는 3D 모델에 대한 텍스트 설명입니다. | STRING | 예 | 최대 1024자 |
+| `네거티브 프롬프트` | 생성된 모델에 포함되지 않아야 할 내용에 대한 텍스트 설명입니다. | STRING | 아니요 | 최대 255자 |
+| `출력 모드` | 출력 모델의 품질과 텍스처 설정을 제어합니다. 이 매개변수는 다음 키를 포함하는 딕셔너리입니다:<br><br>`texture_quality`: STRING, 범위: `"standard"`<br>`pbr`: BOOLEAN, 기본값: True<br>`texture`: BOOLEAN, 기본값: True<br>`subdivision`: INT, 기본값: 0, 범위: 0~2<br>`texture_size`: INT, 기본값: 2048, 범위: 512~4096 (2의 거듭제곱이어야 함)<br>`texture_format`: STRING, 범위: `"png"`<br>`texture_clean`: BOOLEAN, 기본값: False<br>`texture_seamless`: BOOLEAN, 기본값: False<br><br>기본값: `{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | 예 | 설명 참조 |
+| `이미지 시드` | 이미지 생성을 위한 시드 값으로, 무작위성을 제어하는 데 사용됩니다. 기본값: 42. | INT | 아니요 |  |
+| `페이스 제한` | 생성된 메시의 최대 면 수입니다. -1 값은 제한이 없음을 의미합니다. 기본값: -1. | INT | 아니요 |  |
+| `모델 시드` | 모델 생성을 위한 시드 값으로, 무작위성을 제어하는 데 사용됩니다. | INT | 아니요 |  |
+| `자동 크기 조정` | 활성화하면 노드가 최적의 모델 크기를 자동으로 결정합니다. 기본값: False. | BOOLEAN | 아니요 |  |
+| `UV 내보내기` | 활성화하면 모델에 텍스처 매핑을 위한 UV 좌표가 포함됩니다. 기본값: True. | BOOLEAN | 아니요 |  |
+| `지오메트리 압축` | 활성화하면 파일 크기를 줄이기 위해 지오메트리가 압축됩니다. 기본값: False. | BOOLEAN | 아니요 |  |
 
 # 출력
 

@@ -6,16 +6,16 @@ Este nó gera um modelo 3D a partir de 2 a 4 imagens de referência de um objeto
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `image` | Vista frontal (0°). Obrigatória. | IMAGE | Sim | - |
-| `image_left` | Vista esquerda (90°), ou seja, o lado esquerdo do objeto. | IMAGE | Não | - |
-| `image_back` | Vista traseira (180°). | IMAGE | Não | - |
-| `image_right` | Vista direita (270°), ou seja, o lado direito do objeto. | IMAGE | Não | - |
-| `output_mode` | O modo de saída para o modelo gerado. `"geometry"` produz uma malha bruta, `"textured"` adiciona uma textura padrão e `"detailed"` cria um modelo texturizado de alto detalhe (padrão: `"textured"`). | COMBO | Sim | `"geometry"`<br>`"textured"`<br>`"detailed"` |
-| `face_limit` | Número máximo de faces para a malha de saída. Defina como -1 para sem limite (padrão: -1). | INT | Não | -1 a 100000 |
-| `model_seed` | Semente para geração reproduzível do modelo. Defina como 0 para aleatório (padrão: 0). | INT | Não | 0 a 2147483647 |
-| `auto_size` | Dimensiona automaticamente o modelo para caber dentro de uma caixa delimitadora padrão (padrão: False). | BOOLEAN | Não | True / False |
-| `export_uv` | Exporta coordenadas UV com o modelo (padrão: True). | BOOLEAN | Não | True / False |
-| `compress_geometry` | Comprime os dados de geometria para reduzir o tamanho do arquivo (padrão: False). | BOOLEAN | Não | True / False |
+| `imagem` | Vista frontal (0°). Obrigatória. | IMAGE | Sim | - |
+| `imagem_esquerda` | Vista esquerda (90°), ou seja, o lado esquerdo do objeto. | IMAGE | Não | - |
+| `imagem_traseira` | Vista traseira (180°). | IMAGE | Não | - |
+| `imagem_direita` | Vista direita (270°), ou seja, o lado direito do objeto. | IMAGE | Não | - |
+| `modo_de_saida` | O modo de saída para o modelo gerado. `"geometry"` produz uma malha bruta, `"textured"` adiciona uma textura padrão e `"detailed"` cria um modelo texturizado de alto detalhe (padrão: `"textured"`). | COMBO | Sim | `"geometry"`<br>`"textured"`<br>`"detailed"` |
+| `limite_de_faces` | Número máximo de faces para a malha de saída. Defina como -1 para sem limite (padrão: -1). | INT | Não | -1 a 100000 |
+| `semente_do_modelo` | Semente para geração reproduzível do modelo. Defina como 0 para aleatório (padrão: 0). | INT | Não | 0 a 2147483647 |
+| `tamanho_automático` | Dimensiona automaticamente o modelo para caber dentro de uma caixa delimitadora padrão (padrão: False). | BOOLEAN | Não | True / False |
+| `exportar_uv` | Exporta coordenadas UV com o modelo (padrão: True). | BOOLEAN | Não | True / False |
+| `comprimir_geometria` | Comprime os dados de geometria para reduzir o tamanho do arquivo (padrão: False). | BOOLEAN | Não | True / False |
 
 **Nota:** Você deve fornecer pelo menos 2 imagens: a vista frontal (`image`) mais pelo menos uma das outras vistas (`image_left`, `image_back` ou `image_right`). Se menos de 2 imagens forem fornecidas, o nó gerará um erro.
 

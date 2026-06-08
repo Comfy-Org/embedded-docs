@@ -8,14 +8,14 @@ Este nó converte uma única imagem 2D em um modelo 3D usando a API Tripo P1. El
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 | --- | --- | --- | --- | --- |
-| `image` | A imagem de entrada para converter em um modelo 3D. | IMAGE | Sim | - |
-| `output_mode` | Um dicionário que especifica o modo de saída e as configurações de qualidade. Este parâmetro controla o tipo de modelo gerado e sua qualidade de textura. As opções disponíveis são definidas pela função auxiliar `_build_p1_output_mode` e incluem configurações para `texture_quality` (ex.: "standard", "high", "ultra") e `image_alignment`. | DICT | Sim | Ver descrição |
-| `enable_image_autofix` | Pré-processa a imagem de entrada para melhor qualidade de geração. (padrão: False) | BOOLEAN | Não | True<br>False |
-| `face_limit` | Limita o número de faces na malha gerada. Um valor de -1 significa sem limite. (padrão: -1) | INT | Não | - |
-| `model_seed` | Um valor de semente para geração reproduzível do modelo. Se não for fornecido, uma semente aleatória é usada. (padrão: None) | INT | Não | - |
-| `auto_size` | Determina automaticamente o tamanho ideal para o modelo gerado. (padrão: False) | BOOLEAN | Não | True<br>False |
-| `export_uv` | Exporta coordenadas UV com o modelo. (padrão: True) | BOOLEAN | Não | True<br>False |
-| `compress_geometry` | Comprime os dados geométricos para reduzir o tamanho do arquivo. (padrão: False) | BOOLEAN | Não | True<br>False |
+| `imagem` | A imagem de entrada para converter em um modelo 3D. | IMAGE | Sim | - |
+| `modo_de_saida` | Um dicionário que especifica o modo de saída e as configurações de qualidade. Este parâmetro controla o tipo de modelo gerado e sua qualidade de textura. As opções disponíveis são definidas pela função auxiliar `_build_p1_output_mode` e incluem configurações para `texture_quality` (ex.: "standard", "high", "ultra") e `image_alignment`. | DICT | Sim | Ver descrição |
+| `habilitar_autoajuste_imagem` | Pré-processa a imagem de entrada para melhor qualidade de geração. (padrão: False) | BOOLEAN | Não | True<br>False |
+| `limite_de_faces` | Limita o número de faces na malha gerada. Um valor de -1 significa sem limite. (padrão: -1) | INT | Não | - |
+| `semente_do_modelo` | Um valor de semente para geração reproduzível do modelo. Se não for fornecido, uma semente aleatória é usada. (padrão: None) | INT | Não | - |
+| `tamanho_automático` | Determina automaticamente o tamanho ideal para o modelo gerado. (padrão: False) | BOOLEAN | Não | True<br>False |
+| `exportar_uv` | Exporta coordenadas UV com o modelo. (padrão: True) | BOOLEAN | Não | True<br>False |
+| `comprimir_geometria` | Comprime os dados geométricos para reduzir o tamanho do arquivo. (padrão: False) | BOOLEAN | Não | True<br>False |
 
 ## Saídas
 

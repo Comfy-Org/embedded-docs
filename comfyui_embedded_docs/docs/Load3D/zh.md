@@ -30,7 +30,7 @@ Load3D 节点是用于加载和处理 3D 模型文件的核心节点。加载节
 | `相机信息` | 法线贴图 | IMAGE |
 | `录制视频` | 线稿图像输出，对应的 `edge_threshold` 可在画布模型菜单中调整 | IMAGE |
 | `model_3d` | 相机信息 | LOAD3D_CAMERA |
-| `recording_video` | 录制的视频（仅在存在录制时） | VIDEO |
+| `model_3d_info` | 录制的视频（仅在存在录制时） | VIDEO |
 
 所有输出预览：
 ![查看操作演示](./asset/load3d_outputs.webp)
