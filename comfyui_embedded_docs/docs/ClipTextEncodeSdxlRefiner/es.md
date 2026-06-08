@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/es.md)
-
 Este nodo está diseñado específicamente para el modelo SDXL Refiner, con el fin de convertir indicaciones de texto en información de condicionamiento incorporando puntuaciones estéticas e información dimensional para mejorar las condiciones de las tareas de generación, optimizando así el efecto final de refinamiento. Actúa como un director artístico profesional, no solo transmitiendo tu intención creativa, sino también inyectando estándares estéticos precisos y requisitos de especificaciones en el trabajo.
 
 ## Acerca de SDXL Refiner
@@ -17,19 +15,19 @@ Refiner se puede utilizar de dos maneras:
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango de Valores | Descripción |
-|----------------------|--------------|-----------------|-------------------|------------------|-------------|
-| `clip` | CLIP | Requerido | - | - | Instancia del modelo CLIP utilizada para la tokenización y codificación de texto, el componente central para convertir texto en un formato comprensible para el modelo |
-| `ascore` | FLOAT | Opcional | 6.0 | 0.0-1000.0 | Controla la calidad visual y la estética de las imágenes generadas, similar a establecer estándares de calidad para una obra de arte:<br/>- Puntuaciones altas (7.5-8.5): Busca efectos más refinados y ricos en detalles<br/>- Puntuaciones medias (6.0-7.0): Control de calidad equilibrado<br/>- Puntuaciones bajas (2.0-3.0): Adecuado para indicaciones negativas |
-| `width` | INT | Requerido | 1024 | 64-16384 | Especifica el ancho de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) |
-| `height` | INT | Requerido | 1024 | 64-16384 | Especifica la altura de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) |
-| `text` | STRING | Requerido | - | - | Descripción de la indicación de texto, admite entrada multilínea y sintaxis de indicación dinámica. En Refiner, las indicaciones de texto deben centrarse más en describir la calidad visual deseada y las características de detalle |
+| Nombre del Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango de Valores |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | Instancia del modelo CLIP utilizada para la tokenización y codificación de texto, el componente central para convertir texto en un formato comprensible para el modelo | CLIP | Requerido | - | - |
+| `ascore` | Controla la calidad visual y la estética de las imágenes generadas, similar a establecer estándares de calidad para una obra de arte:<br/>- Puntuaciones altas (7.5-8.5): Busca efectos más refinados y ricos en detalles<br/>- Puntuaciones medias (6.0-7.0): Control de calidad equilibrado<br/>- Puntuaciones bajas (2.0-3.0): Adecuado para indicaciones negativas | FLOAT | Opcional | 6.0 | 0.0-1000.0 |
+| `width` | Especifica el ancho de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) | INT | Requerido | 1024 | 64-16384 |
+| `height` | Especifica la altura de la imagen de salida (píxeles), debe ser múltiplo de 8. SDXL funciona mejor cuando el número total de píxeles se acerca a 1024×1024 (aproximadamente 1M de píxeles) | INT | Requerido | 1024 | 64-16384 |
+| `text` | Descripción de la indicación de texto, admite entrada multilínea y sintaxis de indicación dinámica. En Refiner, las indicaciones de texto deben centrarse más en describir la calidad visual deseada y las características de detalle | STRING | Requerido | - | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `CONDITIONING` | CONDITIONING | Salida de condicionamiento refinada que contiene la codificación integrada de la semántica del texto, los estándares estéticos y la información dimensional, diseñada específicamente para guiar al modelo SDXL Refiner en un refinamiento preciso de la imagen |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `CONDITIONING` | Salida de condicionamiento refinada que contiene la codificación integrada de la semántica del texto, los estándares estéticos y la información dimensional, diseñada específicamente para guiar al modelo SDXL Refiner en un refinamiento preciso de la imagen | CONDITIONING |
 
 ## Notas
 
@@ -38,3 +36,5 @@ Refiner se puede utilizar de dos maneras:
 3. Todos los parámetros dimensionales deben ser múltiplos de 8, y se recomienda que el número total de píxeles se acerque a 1024×1024 (aproximadamente 1M de píxeles)
 4. El modelo Refiner se centra en mejorar los detalles y la calidad de la imagen, por lo que las indicaciones de texto deben enfatizar los efectos visuales deseados en lugar del contenido de la escena
 5. En el uso práctico, Refiner se utiliza típicamente en las etapas finales de la generación (aproximadamente el último 20% de los pasos), centrándose en la optimización de detalles
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/es.md)

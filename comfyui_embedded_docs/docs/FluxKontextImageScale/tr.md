@@ -1,18 +1,16 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/tr.md)
-
 Bu düğüm, giriş görüntüsünü, Flux Kontext model eğitimi sırasında kullanılan optimum boyuta, Lanczos algoritmasını kullanarak ve giriş görüntüsünün en-boy oranına göre ölçeklendirir. Bu düğüm, özellikle büyük boyutlu görüntüler girilirken kullanışlıdır; çünkü aşırı büyük girdiler, model çıktı kalitesinin düşmesine veya çıktıda birden fazla özne görünmesi gibi sorunlara yol açabilir.
 
 ## Girişler
 
-| Parametre Adı | Veri Türü | Giriş Türü | Varsayılan Değer | Değer Aralığı | Açıklama |
-|---------------|-----------|------------|-----------------|---------------|----------|
-| `görüntü` | IMAGE | Zorunlu | - | - | Yeniden boyutlandırılacak giriş görüntüsü |
+| Parametre Adı | Açıklama | Veri Türü | Giriş Türü | Varsayılan Değer | Değer Aralığı |
+| --- | --- | --- | --- | --- | --- |
+| `görüntü` | Yeniden boyutlandırılacak giriş görüntüsü | IMAGE | Zorunlu | - | - |
 
 ## Çıkışlar
 
-| Çıkış Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `görüntü` | IMAGE | Yeniden boyutlandırılmış görüntü |
+| Çıkış Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `görüntü` | Yeniden boyutlandırılmış görüntü | IMAGE |
 
 ## Ön Tanımlı Boyut Listesi
 
@@ -37,3 +35,5 @@ Aşağıda, model eğitimi sırasında kullanılan standart boyutların listesi 
 | 1456     | 720       | 2.022        |
 | 1504     | 688       | 2.186        |
 | 1568     | 672       | 2.333        |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/tr.md)

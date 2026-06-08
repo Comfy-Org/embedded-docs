@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/pt-BR.md)
-
 # Nó SAM3 Detect
 
 ## Visão Geral
@@ -8,17 +6,17 @@ O nó SAM3 Detect realiza detecção e segmentação de vocabulário aberto usan
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | Sim | - | O modelo SAM3 a ser usado para detecção e segmentação |
-| `imagem` | IMAGE | Sim | - | A imagem de entrada a ser processada |
-| `condicionamento` | CONDITIONING | Não | - | Condicionamento de texto do CLIPTextEncode. Necessário ao usar prompts de texto para detecção |
-| `caixas_delimitadoras` | BOUNDING_BOX | Não | - | Caixas delimitadoras para segmentar. Pode ser uma única caixa (aplicada a todos os quadros), uma lista de caixas (aplicada a todos os quadros) ou uma lista de listas (caixas por quadro). Quando fornecido sem condicionamento de texto, o nó segmenta dentro de cada caixa |
-| `coordenadas_positivas` | STRING | Não | - | Prompts de pontos positivos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja incluir na segmentação |
-| `coordenadas_negativas` | STRING | Não | - | Prompts de pontos negativos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja excluir da segmentação |
-| `limiar` | FLOAT | Não | 0.0 a 1.0 | Limiar de confiança para detecções baseadas em texto. Apenas detecções com pontuações acima deste valor são mantidas (padrão: 0.5) |
-| `iterações_de_refino` | INT | Não | 0 a 5 | Número de passagens de refinamento do decodificador SAM. Valores maiores podem melhorar a qualidade das máscaras. Defina como 0 para usar máscaras brutas do detector sem refinamento (padrão: 2) |
-| `máscaras_individuais` | BOOLEAN | Não | Verdadeiro/Falso | Quando ativado, gera máscaras separadas para cada objeto detectado em vez de combiná-las em uma única máscara (padrão: Falso) |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `model` | O modelo SAM3 a ser usado para detecção e segmentação | MODEL | Sim | - |
+| `imagem` | A imagem de entrada a ser processada | IMAGE | Sim | - |
+| `condicionamento` | Condicionamento de texto do CLIPTextEncode. Necessário ao usar prompts de texto para detecção | CONDITIONING | Não | - |
+| `caixas_delimitadoras` | Caixas delimitadoras para segmentar. Pode ser uma única caixa (aplicada a todos os quadros), uma lista de caixas (aplicada a todos os quadros) ou uma lista de listas (caixas por quadro). Quando fornecido sem condicionamento de texto, o nó segmenta dentro de cada caixa | BOUNDING_BOX | Não | - |
+| `coordenadas_positivas` | Prompts de pontos positivos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja incluir na segmentação | STRING | Não | - |
+| `coordenadas_negativas` | Prompts de pontos negativos no formato JSON `[{"x": int, "y": int}, ...]` usando coordenadas de pixels. São pontos que você deseja excluir da segmentação | STRING | Não | - |
+| `limiar` | Limiar de confiança para detecções baseadas em texto. Apenas detecções com pontuações acima deste valor são mantidas (padrão: 0.5) | FLOAT | Não | 0.0 a 1.0 |
+| `iterações_de_refino` | Número de passagens de refinamento do decodificador SAM. Valores maiores podem melhorar a qualidade das máscaras. Defina como 0 para usar máscaras brutas do detector sem refinamento (padrão: 2) | INT | Não | 0 a 5 |
+| `máscaras_individuais` | Quando ativado, gera máscaras separadas para cada objeto detectado em vez de combiná-las em uma única máscara (padrão: Falso) | BOOLEAN | Não | Verdadeiro/Falso |
 
 ### Restrições e Notas dos Parâmetros
 
@@ -31,10 +29,12 @@ O nó SAM3 Detect realiza detecção e segmentação de vocabulário aberto usan
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
-| `masks` | MASK | Máscaras de segmentação. Quando `máscaras_individuais` é Falso (padrão), retorna uma única máscara combinada por quadro. Quando Verdadeiro, retorna máscaras individuais para cada objeto detectado |
-| `caixas_delimitadoras` | BOUNDING_BOX | Caixas delimitadoras detectadas com coordenadas e pontuações de confiança. Cada caixa inclui valores `x`, `y`, `largura`, `altura` e `pontuação` |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `masks` | Máscaras de segmentação. Quando `máscaras_individuais` é Falso (padrão), retorna uma única máscara combinada por quadro. Quando Verdadeiro, retorna máscaras individuais para cada objeto detectado | MASK |
+| `caixas_delimitadoras` | Caixas delimitadoras detectadas com coordenadas e pontuações de confiança. Cada caixa inclui valores `x`, `y`, `largura`, `altura` e `pontuação` | BOUNDING_BOX |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

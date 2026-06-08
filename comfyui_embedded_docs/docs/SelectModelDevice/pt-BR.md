@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/pt-BR.md)
-
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/en.md)
 
 ## Visão Geral
@@ -8,10 +6,10 @@ O nó SelectModelDevice permite que você escolha manualmente em qual dispositiv
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `model` | MODEL | Sim | | O modelo de difusão a ser colocado em um dispositivo específico. |
-| `device` | COMBO | Sim | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | O dispositivo de destino para o modelo. As opções são geradas dinamicamente com base nas GPUs disponíveis. (padrão: "default") |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `model` | O modelo de difusão a ser colocado em um dispositivo específico. | MODEL | Sim |  |
+| `device` | O dispositivo de destino para o modelo. As opções são geradas dinamicamente com base nas GPUs disponíveis. (padrão: "default") | COMBO | Sim | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 **Detalhes dos Parâmetros:**
 - `"default"`: Restaura o dispositivo atribuído pelo carregador do modelo, mesmo que um nó SelectModelDevice anterior o tenha alterado.
@@ -25,9 +23,11 @@ O nó SelectModelDevice permite que você escolha manualmente em qual dispositiv
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `model` | MODEL | O modelo de difusão, agora colocado no dispositivo selecionado. Se o dispositivo for inválido ou estiver indisponível, o modelo é passado adiante sem alterações. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `model` | O modelo de difusão, agora colocado no dispositivo selecionado. Se o dispositivo for inválido ou estiver indisponível, o modelo é passado adiante sem alterações. | MODEL |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `02841975f123cc8ae8152ea86f1798e0e7e68255ecd11e04271da886b75eb0fd`

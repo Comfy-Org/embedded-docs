@@ -1,18 +1,18 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/es.md)
-
 Este nodo está diseñado para integrar las salidas de visión CLIP en el proceso de condicionamiento, ajustando la influencia de estas salidas según parámetros específicos de intensidad y aumento de ruido. Enriquece el condicionamiento con contexto visual, mejorando el proceso de generación.
 
 ## Entradas
 
-| Parámetro               | Tipo Comfy             | Descripción |
-|-------------------------|------------------------|-------------|
-| `acondicionamiento`          | `CONDITIONING`         | Los datos de condicionamiento base a los que se agregarán las salidas de visión CLIP, sirviendo como base para modificaciones posteriores. |
-| `salida_vision_clip`    | `CLIP_VISION_OUTPUT`   | La salida de un modelo de visión CLIP, que proporciona contexto visual que se integra en el condicionamiento. |
-| `fuerza`              | `FLOAT`                | Determina la intensidad de la influencia de la salida de visión CLIP sobre el condicionamiento. |
-| `aumento_ruido`    | `FLOAT`                | Especifica el nivel de aumento de ruido que se aplicará a la salida de visión CLIP antes de integrarla en el condicionamiento. |
+| Parámetro | Descripción | Tipo Comfy |
+| --- | --- | --- |
+| `acondicionamiento` | Los datos de condicionamiento base a los que se agregarán las salidas de visión CLIP, sirviendo como base para modificaciones posteriores. | `CONDITIONING` |
+| `salida_vision_clip` | La salida de un modelo de visión CLIP, que proporciona contexto visual que se integra en el condicionamiento. | `CLIP_VISION_OUTPUT` |
+| `fuerza` | Determina la intensidad de la influencia de la salida de visión CLIP sobre el condicionamiento. | `FLOAT` |
+| `aumento_ruido` | Especifica el nivel de aumento de ruido que se aplicará a la salida de visión CLIP antes de integrarla en el condicionamiento. | `FLOAT` |
 
 ## Salidas
 
-| Parámetro              | Tipo Comfy             | Descripción |
-|------------------------|------------------------|-------------|
-| `acondicionamiento`          | `CONDITIONING`         | Los datos de condicionamiento enriquecidos, que ahora contienen las salidas de visión CLIP integradas con la intensidad y el aumento de ruido aplicados. |
+| Parámetro | Descripción | Tipo Comfy |
+| --- | --- | --- |
+| `acondicionamiento` | Los datos de condicionamiento enriquecidos, que ahora contienen las salidas de visión CLIP integradas con la intensidad y el aumento de ruido aplicados. | `CONDITIONING` |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/es.md)

@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelfAttentionGuidance/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,19 +30,21 @@ El nodo de Guía de Autoatención aplica guía a modelos de difusión modificand
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|---------------|-------------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo de difusión al que se aplicará la guía de autoatención |
-| `escala` | FLOAT | No | -2.0 a 5.0 | La intensidad del efecto de guía de autoatención (predeterminado: 0.5) |
-| `blur_sigma` | FLOAT | No | 0.0 a 10.0 | La cantidad de desenfoque aplicada para crear el mapa de guía (predeterminado: 2.0) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo de difusión al que se aplicará la guía de autoatención | MODEL | Sí | - |
+| `escala` | La intensidad del efecto de guía de autoatención (predeterminado: 0.5) | FLOAT | No | -2.0 a 5.0 |
+| `blur_sigma` | La cantidad de desenfoque aplicada para crear el mapa de guía (predeterminado: 2.0) | FLOAT | No | 0.0 a 10.0 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|---------------|-------------|
-| `modelo` | MODEL | El modelo modificado con la guía de autoatención aplicada |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `modelo` | El modelo modificado con la guía de autoatención aplicada | MODEL |
 
 **Nota:** Este nodo es actualmente experimental y tiene limitaciones con lotes fragmentados. Solo puede guardar puntuaciones de atención de una llamada UNet y puede no funcionar correctamente con tamaños de lote más grandes.
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelfAttentionGuidance/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `5f16ecd8f74bfd71073c6e3a65be08e54e4f5b9c56fe08deb48f35df381e82fa`

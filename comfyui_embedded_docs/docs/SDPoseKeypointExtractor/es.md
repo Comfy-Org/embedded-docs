@@ -1,16 +1,14 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseKeypointExtractor/es.md)
-
 El nodo SDPoseKeypointExtractor detecta puntos clave de pose humana a partir de imágenes de entrada utilizando el modelo SDPose. Puede procesar imágenes completas o regiones específicas definidas por cuadros delimitadores y genera los puntos clave detectados en el formato OpenPose, que incluye las coordenadas de cada persona y una puntuación de confianza para cada punto clave.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `modelo` | MODEL | Sí | - | El modelo SDPose utilizado para la detección de puntos clave. Debe ser un modelo con un atributo `heatmap_head`, específicamente del repositorio SDPose. |
-| `vae` | VAE | Sí | - | El modelo VAE utilizado para codificar las imágenes de entrada en el espacio latente para su procesamiento. |
-| `imagen` | IMAGE | Sí | - | La imagen de entrada o lote de imágenes de las cuales extraer puntos clave de pose. |
-| `tamaño de lote` | INT | No | 1 a 10000 | La cantidad de imágenes a procesar a la vez cuando se ejecuta en modo de imagen completa (es decir, cuando no se proporciona `cajas delimitadoras`). Esto puede acelerar el procesamiento. (predeterminado: 16) |
-| `cajas delimitadoras` | BOUNDINGBOX | No | - | Cuadros delimitadores opcionales para detecciones más precisas. Requerido para la detección de múltiples personas. Si se proporciona, el nodo extraerá puntos clave de cada región especificada. |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo SDPose utilizado para la detección de puntos clave. Debe ser un modelo con un atributo `heatmap_head`, específicamente del repositorio SDPose. | MODEL | Sí | - |
+| `vae` | El modelo VAE utilizado para codificar las imágenes de entrada en el espacio latente para su procesamiento. | VAE | Sí | - |
+| `imagen` | La imagen de entrada o lote de imágenes de las cuales extraer puntos clave de pose. | IMAGE | Sí | - |
+| `tamaño de lote` | La cantidad de imágenes a procesar a la vez cuando se ejecuta en modo de imagen completa (es decir, cuando no se proporciona `cajas delimitadoras`). Esto puede acelerar el procesamiento. (predeterminado: 16) | INT | No | 1 a 10000 |
+| `cajas delimitadoras` | Cuadros delimitadores opcionales para detecciones más precisas. Requerido para la detección de múltiples personas. Si se proporciona, el nodo extraerá puntos clave de cada región especificada. | BOUNDINGBOX | No | - |
 
 **Restricciones de Parámetros:**
 *   La entrada `model` debe ser un modelo SDPose específico. Si el modelo proporcionado no tiene un atributo `heatmap_head`, el nodo generará un error.
@@ -20,9 +18,11 @@ El nodo SDPoseKeypointExtractor detecta puntos clave de pose humana a partir de 
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `keypoints` | POSE_KEYPOINT | Puntos clave en el formato de marco OpenPose (canvas_width, canvas_height, people). La salida contiene las personas detectadas, cada una con un arreglo de coordenadas de puntos clave (x, y) y sus puntuaciones de confianza correspondientes. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `keypoints` | Puntos clave en el formato de marco OpenPose (canvas_width, canvas_height, people). La salida contiene las personas detectadas, cada una con un arreglo de coordenadas de puntos clave (x, y) y sus puntuaciones de confianza correspondientes. | POSE_KEYPOINT |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseKeypointExtractor/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `7903b51c9137aa08bb8843362740fcf93cea9c09d142bd1db3b5eee945c853e4`

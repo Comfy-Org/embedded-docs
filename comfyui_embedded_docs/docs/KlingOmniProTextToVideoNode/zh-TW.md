@@ -1,19 +1,17 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProTextToVideoNode/zh-TW.md)
-
 此節點使用最新的 Kling AI 模型，根據文字描述生成影片。它會將您的提示詞發送到遠端 API，並返回生成的影片。此節點讓您能夠控制影片的長度、形狀、品質，甚至建立多鏡頭故事板。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 描述 |
-|-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` | 用於影片生成的特定 Kling 模型（預設值：`"kling-v3-omni"`）。 |
-| `提示詞` | STRING | 是 | 0 到 2500 個字元 | 描述影片內容的文字提示詞。可包含正面和負面描述。啟用故事板時忽略此參數。 |
-| `長寬比` | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` | 要生成影片的形狀或尺寸。 |
-| `時長` | INT | 是 | 3 到 15 秒 | 影片的長度，以秒為單位（預設值：5）。 |
-| `解析度` | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` | 影片的品質或像素解析度（預設值：`"1080p"`）。 |
-| `分鏡腳本` | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | 生成一系列帶有各自提示詞和時長的影片片段。o1 模型不支援此功能。 |
-| `產生音訊` | BOOLEAN | 否 | True / False | 是否為影片生成音訊（預設值：False）。 |
-| `種子` | INT | 否 | 0 到 2147483647 | 種子值控制節點是否應重新執行；無論種子值為何，結果皆非確定性（預設值：0）。 |
+| 參數 | 描述 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `model_name` | 用於影片生成的特定 Kling 模型（預設值：`"kling-v3-omni"`）。 | COMBO | 是 | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `提示詞` | 描述影片內容的文字提示詞。可包含正面和負面描述。啟用故事板時忽略此參數。 | STRING | 是 | 0 到 2500 個字元 |
+| `長寬比` | 要生成影片的形狀或尺寸。 | COMBO | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `時長` | 影片的長度，以秒為單位（預設值：5）。 | INT | 是 | 3 到 15 秒 |
+| `解析度` | 影片的品質或像素解析度（預設值：`"1080p"`）。 | COMBO | 否 | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `分鏡腳本` | 生成一系列帶有各自提示詞和時長的影片片段。o1 模型不支援此功能。 | DYNAMIC_COMBO | 否 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `產生音訊` | 是否為影片生成音訊（預設值：False）。 | BOOLEAN | 否 | True / False |
+| `種子` | 種子值控制節點是否應重新執行；無論種子值為何，結果皆非確定性（預設值：0）。 | INT | 否 | 0 到 2147483647 |
 
 ### 參數限制與注意事項
 
@@ -32,9 +30,11 @@
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 描述 |
-|-------------|-----------|-------------|
-| `output` | VIDEO | 根據提供的文字提示詞和設定生成的影片。 |
+| 輸出名稱 | 描述 | 資料類型 |
+| --- | --- | --- |
+| `output` | 根據提供的文字提示詞和設定生成的影片。 | VIDEO |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProTextToVideoNode/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `2f867e0bd2e7b0ec901a9ad8d2adcfe712ed479c1613b80f86af3a20863e9f4c`

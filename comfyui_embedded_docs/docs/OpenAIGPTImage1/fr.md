@@ -1,24 +1,22 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Génère des images de manière synchrone via le point de terminaison GPT Image d'OpenAI. Ce nœud peut créer de nouvelles images à partir de descriptions textuelles ou modifier des images existantes lorsqu'une image d'entrée et un masque optionnel sont fournis. Il prend en charge plusieurs modèles GPT Image, notamment gpt-image-1, gpt-image-1.5 et gpt-image-2.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | - | Description textuelle pour GPT Image (par défaut : "") |
-| `seed` | INT | Non | 0 à 2147483647 | Graine aléatoire pour la génération (par défaut : 0) - pas encore implémentée dans le backend |
-| `qualité` | COMBO | Non | "low"<br>"medium"<br>"high" | Qualité de l'image, affecte le coût et le temps de génération (par défaut : "low") |
-| `arrière-plan` | COMBO | Non | "auto"<br>"opaque"<br>"transparent" | Renvoie une image avec ou sans arrière-plan (par défaut : "auto") |
-| `taille` | COMBO | Non | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | Taille de l'image. Sélectionnez "Custom" pour utiliser la largeur et la hauteur personnalisées (GPT Image 2 uniquement) (par défaut : "auto") |
-| `n` | INT | Non | 1 à 8 | Nombre d'images à générer (par défaut : 1) |
-| `image` | IMAGE | Non | - | Image de référence optionnelle pour la modification d'image |
-| `mask` | MASK | Non | - | Masque optionnel pour l'incrustation (les zones blanches seront remplacées) |
-| `model` | COMBO | Non | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | Modèle GPT Image à utiliser (par défaut : "gpt-image-2") |
-| `largeur_personnalisée` | INT | Non | 1024 à 3840 | Utilisé uniquement lorsque `taille` est "Custom". Doit être un multiple de 16 (GPT Image 2 uniquement) (par défaut : 1024) |
-| `hauteur_personnalisée` | INT | Non | 1024 à 3840 | Utilisé uniquement lorsque `taille` est "Custom". Doit être un multiple de 16 (GPT Image 2 uniquement) (par défaut : 1024) |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `prompt` | Description textuelle pour GPT Image (par défaut : "") | STRING | Oui | - |
+| `seed` | Graine aléatoire pour la génération (par défaut : 0) - pas encore implémentée dans le backend | INT | Non | 0 à 2147483647 |
+| `qualité` | Qualité de l'image, affecte le coût et le temps de génération (par défaut : "low") | COMBO | Non | "low"<br>"medium"<br>"high" |
+| `arrière-plan` | Renvoie une image avec ou sans arrière-plan (par défaut : "auto") | COMBO | Non | "auto"<br>"opaque"<br>"transparent" |
+| `taille` | Taille de l'image. Sélectionnez "Custom" pour utiliser la largeur et la hauteur personnalisées (GPT Image 2 uniquement) (par défaut : "auto") | COMBO | Non | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
+| `n` | Nombre d'images à générer (par défaut : 1) | INT | Non | 1 à 8 |
+| `image` | Image de référence optionnelle pour la modification d'image | IMAGE | Non | - |
+| `mask` | Masque optionnel pour l'incrustation (les zones blanches seront remplacées) | MASK | Non | - |
+| `model` | Modèle GPT Image à utiliser (par défaut : "gpt-image-2") | COMBO | Non | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `largeur_personnalisée` | Utilisé uniquement lorsque `taille` est "Custom". Doit être un multiple de 16 (GPT Image 2 uniquement) (par défaut : 1024) | INT | Non | 1024 à 3840 |
+| `hauteur_personnalisée` | Utilisé uniquement lorsque `taille` est "Custom". Doit être un multiple de 16 (GPT Image 2 uniquement) (par défaut : 1024) | INT | Non | 1024 à 3840 |
 
 **Contraintes des paramètres :**
 
@@ -35,9 +33,11 @@ Génère des images de manière synchrone via le point de terminaison GPT Image 
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `IMAGE` | IMAGE | Image(s) générée(s) ou modifiée(s) |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `IMAGE` | Image(s) générée(s) ou modifiée(s) | IMAGE |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `44b258d6afcb388db3836427abdd5a7cb5c09a0328efceef7e114dd61a38eae1`

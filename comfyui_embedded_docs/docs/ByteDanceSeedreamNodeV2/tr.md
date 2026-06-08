@@ -1,17 +1,15 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/tr.md)
-
 # Genel Bakış
 
 Bu düğüm, ByteDance'in Seedream modellerini (sürüm 4.0, 4.5 ve 5.0 Lite) kullanarak görseller oluşturur veya düzenler. Bir metin isteminden yeni görseller oluşturabilir veya referans görseller sağlayarak mevcut görselleri düzenleyebilir, 4K'ya kadar çözünürlükleri destekler.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | Yok | Görsel oluşturma veya düzenleme için metin istemi. |
-| `model` | COMBO | Evet | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | Oluşturma için kullanılacak Seedream model sürümü. Her modelin farklı yetenekleri ve fiyatlandırması vardır. |
-| `tohum` | INT | Hayır | 0 - 2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
-| `filigran` | BOOLEAN | Hayır | True / False | Görsele "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `istem` | Görsel oluşturma veya düzenleme için metin istemi. | STRING | Evet | Yok |
+| `model` | Oluşturma için kullanılacak Seedream model sürümü. Her modelin farklı yetenekleri ve fiyatlandırması vardır. | COMBO | Evet | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `tohum` | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). | INT | Hayır | 0 - 2147483647 |
+| `filigran` | Görsele "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True / False |
 
 ### Modele Özgü Parametreler
 
@@ -38,9 +36,11 @@ Bir model seçtiğinizde, ek parametreler kullanılabilir hale gelir:
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|-------------|
-| `image` | IMAGE | Oluşturulan veya düzenlenen görsel, bir tensör olarak. Birden fazla görsel talep edildiyse, bunlar tek bir toplu iş halinde birleştirilir. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Oluşturulan veya düzenlenen görsel, bir tensör olarak. Birden fazla görsel talep edildiyse, bunlar tek bir toplu iş halinde birleştirilir. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`

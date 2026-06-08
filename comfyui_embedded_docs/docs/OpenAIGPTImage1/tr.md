@@ -1,22 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/tr.md)
-
 OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görseller oluşturur. Bu düğüm, metin istemlerinden yeni görseller oluşturabilir veya bir giriş görseli ve isteğe bağlı maske sağlandığında mevcut görselleri düzenleyebilir. gpt-image-1, gpt-image-1.5 ve gpt-image-2 dahil olmak üzere birden çok GPT Image modelini destekler.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|---------|--------|----------|
-| `istem` | STRING | Evet | - | GPT Image için metin istemi (varsayılan: "") |
-| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Üretim için rastgele tohum (varsayılan: 0) - arka uçta henüz uygulanmadı |
-| `kalite` | COMBO | Hayır | "low"<br>"medium"<br>"high" | Görsel kalitesi, maliyeti ve üretim süresini etkiler (varsayılan: "low") |
-| `arka_plan` | COMBO | Hayır | "auto"<br>"opaque"<br>"transparent" | Görseli arka planlı veya arka plansız döndürür (varsayılan: "auto") |
-| `boyut` | COMBO | Hayır | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | Görsel boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin (yalnızca GPT Image 2) (varsayılan: "auto") |
-| `n` | INT | Hayır | 1 ile 8 arası | Oluşturulacak görsel sayısı (varsayılan: 1) |
-| `görüntü` | IMAGE | Hayır | - | Görsel düzenleme için isteğe bağlı referans görseli |
-| `maske` | MASK | Hayır | - | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir) |
-| `model` | COMBO | Hayır | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | Kullanılacak GPT Image modeli (varsayılan: "gpt-image-2") |
-| `özel_genişlik` | INT | Hayır | 1024 ile 3840 arası | Yalnızca `boyut` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) |
-| `özel_yükseklik` | INT | Hayır | 1024 ile 3840 arası | Yalnızca `boyut` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `istem` | GPT Image için metin istemi (varsayılan: "") | STRING | Evet | - |
+| `tohum` | Üretim için rastgele tohum (varsayılan: 0) - arka uçta henüz uygulanmadı | INT | Hayır | 0 ile 2147483647 arası |
+| `kalite` | Görsel kalitesi, maliyeti ve üretim süresini etkiler (varsayılan: "low") | COMBO | Hayır | "low"<br>"medium"<br>"high" |
+| `arka_plan` | Görseli arka planlı veya arka plansız döndürür (varsayılan: "auto") | COMBO | Hayır | "auto"<br>"opaque"<br>"transparent" |
+| `boyut` | Görsel boyutu. Özel genişlik ve yüksekliği kullanmak için "Custom" seçeneğini seçin (yalnızca GPT Image 2) (varsayılan: "auto") | COMBO | Hayır | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
+| `n` | Oluşturulacak görsel sayısı (varsayılan: 1) | INT | Hayır | 1 ile 8 arası |
+| `görüntü` | Görsel düzenleme için isteğe bağlı referans görseli | IMAGE | Hayır | - |
+| `maske` | İç boyama (inpainting) için isteğe bağlı maske (beyaz alanlar değiştirilecektir) | MASK | Hayır | - |
+| `model` | Kullanılacak GPT Image modeli (varsayılan: "gpt-image-2") | COMBO | Hayır | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `özel_genişlik` | Yalnızca `boyut` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 ile 3840 arası |
+| `özel_yükseklik` | Yalnızca `boyut` "Custom" olduğunda kullanılır. 16'nın katı olmalıdır (yalnızca GPT Image 2) (varsayılan: 1024) | INT | Hayır | 1024 ile 3840 arası |
 
 **Parametre Kısıtlamaları:**
 
@@ -33,9 +31,11 @@ OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görseller
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `IMAGE` | IMAGE | Oluşturulan veya düzenlenen görsel(ler) |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `IMAGE` | Oluşturulan veya düzenlenen görsel(ler) | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `44b258d6afcb388db3836427abdd5a7cb5c09a0328efceef7e114dd61a38eae1`

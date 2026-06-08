@@ -1,22 +1,20 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSimple/es.md)
-
 `CLIPMergeSimple` es un nodo avanzado de fusión de modelos utilizado para combinar dos codificadores de texto CLIP según una proporción especificada.
 
 Este nodo se especializa en fusionar dos modelos CLIP basándose en una proporción determinada, combinando eficazmente sus características. Aplica selectivamente parches de un modelo a otro, excluyendo componentes específicos como los ID de posición y la escala logit, para crear un modelo híbrido que combina características de ambos modelos fuente.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
-|-----------|--------------|-----------------|-------------------|-------|-------------|
-| `clip1` | CLIP | REQUERIDO | - | - | El primer modelo CLIP que se va a fusionar. Sirve como modelo base para el proceso de fusión. |
-| `clip2` | CLIP | REQUERIDO | - | - | El segundo modelo CLIP que se va a fusionar. Sus parches clave, excepto los ID de posición y la escala logit, se aplican al primer modelo según la proporción especificada. |
-| `ratio` | FLOAT | REQUERIDO | 1.0 | 0.0 - 1.0 (paso: 0.01) | Determina la proporción de características del segundo modelo que se mezclarán en el primer modelo. Una proporción de 1.0 significa adoptar completamente las características del segundo modelo, mientras que 0.0 conserva únicamente las características del primer modelo. |
+| Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
+| --- | --- | --- | --- | --- | --- |
+| `clip1` | El primer modelo CLIP que se va a fusionar. Sirve como modelo base para el proceso de fusión. | CLIP | REQUERIDO | - | - |
+| `clip2` | El segundo modelo CLIP que se va a fusionar. Sus parches clave, excepto los ID de posición y la escala logit, se aplican al primer modelo según la proporción especificada. | CLIP | REQUERIDO | - | - |
+| `ratio` | Determina la proporción de características del segundo modelo que se mezclarán en el primer modelo. Una proporción de 1.0 significa adoptar completamente las características del segundo modelo, mientras que 0.0 conserva únicamente las características del primer modelo. | FLOAT | REQUERIDO | 1.0 | 0.0 - 1.0 (paso: 0.01) |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `clip` | CLIP | El modelo CLIP fusionado resultante, que incorpora características de ambos modelos de entrada según la proporción especificada. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `clip` | El modelo CLIP fusionado resultante, que incorpora características de ambos modelos de entrada según la proporción especificada. | CLIP |
 
 ## Mecanismo de Fusión Explicado
 
@@ -40,6 +38,8 @@ El nodo utiliza un promedio ponderado para fusionar los dos modelos:
 1. **Fusión de Estilos de Modelo**: Combinar características de modelos CLIP entrenados con datos diferentes
 2. **Optimización de Rendimiento**: Equilibrar fortalezas y debilidades de diferentes modelos
 3. **Investigación Experimental**: Explorar combinaciones de diferentes codificadores CLIP
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSimple/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `0d3c8388dbe88675ea7fb51161ab41ce898bcf63983b3d2817b16ec5bfa613e5`

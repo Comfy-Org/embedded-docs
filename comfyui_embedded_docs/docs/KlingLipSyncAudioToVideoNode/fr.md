@@ -1,16 +1,14 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Nœud Kling Lip Sync Audio to Video synchronise les mouvements des lèvres dans un fichier vidéo pour les faire correspondre au contenu audio d'un fichier audio. Ce nœud analyse les schémas vocaux dans l'audio et ajuste les mouvements faciaux dans la vidéo afin de créer un doublage labial réaliste. Le processus nécessite à la fois une vidéo contenant un visage distinct et un fichier audio avec des voix clairement identifiables.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `vidéo` | VIDEO | Oui | - | Le fichier vidéo contenant un visage à synchroniser |
-| `audio` | AUDIO | Oui | - | Le fichier audio contenant les voix à synchroniser avec la vidéo |
-| `langue de la voix` | COMBO | Oui | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` | La langue de la voix dans le fichier audio (par défaut : "en") |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `vidéo` | Le fichier vidéo contenant un visage à synchroniser | VIDEO | Oui | - |
+| `audio` | Le fichier audio contenant les voix à synchroniser avec la vidéo | AUDIO | Oui | - |
+| `langue de la voix` | La langue de la voix dans le fichier audio (par défaut : "en") | COMBO | Oui | `"en"`<br>`"zh"`<br>`"es"`<br>`"fr"`<br>`"de"`<br>`"it"`<br>`"pt"`<br>`"pl"`<br>`"tr"`<br>`"ru"`<br>`"nl"`<br>`"cs"`<br>`"ar"`<br>`"ja"`<br>`"hu"`<br>`"ko"` |
 
 **Contraintes importantes :**
 
@@ -23,11 +21,13 @@ Nœud Kling Lip Sync Audio to Video synchronise les mouvements des lèvres dans 
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `id_vidéo` | VIDEO | La vidéo traitée avec les mouvements des lèvres synchronisés |
-| `durée` | STRING | L'identifiant unique de la vidéo traitée |
-| `duration` | STRING | La durée de la vidéo traitée |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `id_vidéo` | La vidéo traitée avec les mouvements des lèvres synchronisés | VIDEO |
+| `durée` | L'identifiant unique de la vidéo traitée | STRING |
+| `duration` | La durée de la vidéo traitée | STRING |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `92b8a7a4f9508632155a5f69707ffc4a14f2f44c04e4d01bf46476a972465592`

@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityStableImageUltraNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -34,23 +32,25 @@ Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu d
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | - | Çıktı görselinde görmek istediğiniz şey. Öğeleri, renkleri ve konuları net bir şekilde tanımlayan güçlü, betimleyici bir istem daha iyi sonuçlar verecektir. Belirli bir kelimenin ağırlığını kontrol etmek için `(kelime:ağırlık)` biçimini kullanın; burada `kelime` ağırlığını kontrol etmek istediğiniz kelime ve `ağırlık` 0 ile 1 arasında bir değerdir. Örneğin: `Gökyüzü net bir (mavi:0.3) ve (yeşil:0.8) idi` ifadesi, mavi ve yeşil olan ancak maviden daha yeşil bir gökyüzünü belirtir. |
-| `en_boy_oranı` | COMBO | Evet | `"1:1"`<br>`"16:9"`<br>`"21:9"`<br>`"2:3"`<br>`"3:2"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"9:21"` | Oluşturulan görselin en-boy oranı (varsayılan: "1:1"). |
-| `stil_önayarı` | COMBO | Hayır | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` | Oluşturulan görselin isteğe bağlı istenen stili. Herhangi bir stil ön ayarı uygulamamak için "Yok" seçeneğini seçin. |
-| `tohum` | INT | Evet | 0 - 4294967294 | Gürültü oluşturmak için kullanılan rastgele tohum değeri. |
-| `görüntü` | IMAGE | Hayır | - | Görselden görsele oluşturma için isteğe bağlı giriş görseli. |
-| `negatif_istem` | STRING | Hayır | - | Çıktı görselinde görmek istemediğiniz şeyi tanımlayan bir metin parçası. Bu gelişmiş bir özelliktir. |
-| `görüntü_gürültü_azaltma` | FLOAT | Hayır | 0.0 - 1.0 | Giriş görselinin gürültü giderme oranı; 0.0, girişle aynı görseli verir, 1.0 ise hiç görsel sağlanmamış gibidir (varsayılan: 0.5). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `istem` | Çıktı görselinde görmek istediğiniz şey. Öğeleri, renkleri ve konuları net bir şekilde tanımlayan güçlü, betimleyici bir istem daha iyi sonuçlar verecektir. Belirli bir kelimenin ağırlığını kontrol etmek için `(kelime:ağırlık)` biçimini kullanın; burada `kelime` ağırlığını kontrol etmek istediğiniz kelime ve `ağırlık` 0 ile 1 arasında bir değerdir. Örneğin: `Gökyüzü net bir (mavi:0.3) ve (yeşil:0.8) idi` ifadesi, mavi ve yeşil olan ancak maviden daha yeşil bir gökyüzünü belirtir. | STRING | Evet | - |
+| `en_boy_oranı` | Oluşturulan görselin en-boy oranı (varsayılan: "1:1"). | COMBO | Evet | `"1:1"`<br>`"16:9"`<br>`"21:9"`<br>`"2:3"`<br>`"3:2"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"9:21"` |
+| `stil_önayarı` | Oluşturulan görselin isteğe bağlı istenen stili. Herhangi bir stil ön ayarı uygulamamak için "Yok" seçeneğini seçin. | COMBO | Hayır | `"3d-model"`<br>`"analog-film"`<br>`"anime"`<br>`"cinematic"`<br>`"comic-book"`<br>`"digital-art"`<br>`"enhance"`<br>`"fantasy-art"`<br>`"isometric"`<br>`"line-art"`<br>`"low-poly"`<br>`"modeling-compound"`<br>`"neon-punk"`<br>`"origami"`<br>`"photographic"`<br>`"pixel-art"`<br>`"tile-texture"` |
+| `tohum` | Gürültü oluşturmak için kullanılan rastgele tohum değeri. | INT | Evet | 0 - 4294967294 |
+| `görüntü` | Görselden görsele oluşturma için isteğe bağlı giriş görseli. | IMAGE | Hayır | - |
+| `negatif_istem` | Çıktı görselinde görmek istemediğiniz şeyi tanımlayan bir metin parçası. Bu gelişmiş bir özelliktir. | STRING | Hayır | - |
+| `görüntü_gürültü_azaltma` | Giriş görselinin gürültü giderme oranı; 0.0, girişle aynı görseli verir, 1.0 ise hiç görsel sağlanmamış gibidir (varsayılan: 0.5). | FLOAT | Hayır | 0.0 - 1.0 |
 
 **Not:** Bir giriş görseli sağlanmadığında, `image_denoise` parametresi otomatik olarak devre dışı bırakılır ve yok sayılır.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | IMAGE | Giriş parametrelerine göre oluşturulan görsel. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `output` | Giriş parametrelerine göre oluşturulan görsel. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityStableImageUltraNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `2fd9e106a3460a39c33ecc9a15ab6414dab1914fdc43e4f546827e02c889cf62`

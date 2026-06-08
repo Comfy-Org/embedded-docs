@@ -1,17 +1,15 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/zh-TW.md)
-
 ## 概述
 
 此節點使用 ByteDance 的 Seedream 模型（版本 4.0、4.5 和 5.0 Lite）生成或編輯圖像。它可以根據文字提示建立新圖像，或透過提供參考圖像來編輯現有圖像，支援高達 4K 的解析度。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `提示詞` | STRING | 是 | 不適用 | 用於建立或編輯圖像的文字提示。 |
-| `模型` | COMBO | 是 | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | 用於生成的 Seedream 模型版本。每個模型具有不同的功能和定價。 |
-| `種子` | INT | 否 | 0 至 2147483647 | 用於生成的種子（預設值：0）。 |
-| `浮水印` | BOOLEAN | 否 | True / False | 是否在圖像上添加「AI 生成」浮水印（預設值：False）。 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `提示詞` | 用於建立或編輯圖像的文字提示。 | STRING | 是 | 不適用 |
+| `模型` | 用於生成的 Seedream 模型版本。每個模型具有不同的功能和定價。 | COMBO | 是 | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `種子` | 用於生成的種子（預設值：0）。 | INT | 否 | 0 至 2147483647 |
+| `浮水印` | 是否在圖像上添加「AI 生成」浮水印（預設值：False）。 | BOOLEAN | 否 | True / False |
 
 ### 模型特定參數
 
@@ -38,9 +36,11 @@
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `image` | IMAGE | 生成或編輯後的圖像，以張量形式呈現。如果請求了多張圖像，它們將被串接成單一批次。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `image` | 生成或編輯後的圖像，以張量形式呈現。如果請求了多張圖像，它們將被串接成單一批次。 | IMAGE |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`

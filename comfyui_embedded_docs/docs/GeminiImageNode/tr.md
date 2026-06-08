@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImageNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,19 +30,21 @@ GeminiImage düğümü, Google'ın Gemini AI modellerinden metin ve görüntü y
 
 ## Girdiler
 
-| Parametre | Veri Türü | Girdi Türü | Varsayılan | Aralık | Açıklama |
-|-----------|-----------|------------|------------|--------|----------|
-| `istek` | STRING | zorunlu | "" | - | Üretim için metin istemi |
-| `model` | COMBO | zorunlu | gemini_2_5_flash_image_preview | Kullanılabilir Gemini modelleri<br>Seçenekler GeminiImageModel enum'undan alınır | Yanıtları üretmek için kullanılacak Gemini modeli |
-| `tohum` | INT | zorunlu | 42 | 0 ile 18446744073709551615 arası | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan istekler için aynı yanıtı sağlamak üzere en iyi çabayı gösterir. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır |
-| `görseller` | IMAGE | isteğe bağlı | Yok | - | Model için bağlam olarak kullanılacak isteğe bağlı görüntü(ler). Birden fazla görüntü eklemek için Batch Images düğümünü kullanabilirsiniz |
-| `dosyalar` | GEMINI_INPUT_FILES | isteğe bağlı | Yok | - | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini Generate Content Input Files düğümünden girdileri kabul eder |
+| Parametre | Açıklama | Veri Türü | Girdi Türü | Varsayılan | Aralık |
+| --- | --- | --- | --- | --- | --- |
+| `istek` | Üretim için metin istemi | STRING | zorunlu | "" | - |
+| `model` | Yanıtları üretmek için kullanılacak Gemini modeli | COMBO | zorunlu | gemini_2_5_flash_image_preview | Kullanılabilir Gemini modelleri<br>Seçenekler GeminiImageModel enum'undan alınır |
+| `tohum` | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan istekler için aynı yanıtı sağlamak üzere en iyi çabayı gösterir. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır | INT | zorunlu | 42 | 0 ile 18446744073709551615 arası |
+| `görseller` | Model için bağlam olarak kullanılacak isteğe bağlı görüntü(ler). Birden fazla görüntü eklemek için Batch Images düğümünü kullanabilirsiniz | IMAGE | isteğe bağlı | Yok | - |
+| `dosyalar` | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini Generate Content Input Files düğümünden girdileri kabul eder | GEMINI_INPUT_FILES | isteğe bağlı | Yok | - |
 
 *Not: Düğüm, sistem tarafından otomatik olarak işlenen ve kullanıcı girdisi gerektirmeyen gizli parametreler (`auth_token`, `comfy_api_key`, `unique_id`) içerir.*
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `IMAGE` | IMAGE | Gemini modelinden üretilen görüntü yanıtı |
-| `STRING` | STRING | Gemini modelinden üretilen metin yanıtı |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `IMAGE` | Gemini modelinden üretilen görüntü yanıtı | IMAGE |
+| `STRING` | Gemini modelinden üretilen metin yanıtı | STRING |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImageNode/tr.md)

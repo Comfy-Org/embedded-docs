@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoReferenceNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,23 +30,25 @@ Grok Referanstan-Videoya düğümü, çıktının stilini ve içeriğini yönlen
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | Yok | İstenen videonun metin açıklaması. |
-| `model` | COMBO | Evet | `"grok-imagine-video"` | Video oluşturma için kullanılacak model. |
-| `model.reference_images` | IMAGE | Evet | 1 ila 7 görsel | Video oluşturmayı yönlendirmek için en fazla 7 referans görseli. |
-| `model.resolution` | COMBO | Evet | `"480p"`<br>`"720p"` | Çıktı videosunun çözünürlüğü. |
-| `model.aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` | Çıktı videosunun en-boy oranı. |
-| `model.duration` | INT | Evet | 2 ila 10 | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). |
-| `tohum` | INT | Hayır | 0 ila 2147483647 | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `istem` | İstenen videonun metin açıklaması. | STRING | Evet | Yok |
+| `model` | Video oluşturma için kullanılacak model. | COMBO | Evet | `"grok-imagine-video"` |
+| `model.reference_images` | Video oluşturmayı yönlendirmek için en fazla 7 referans görseli. | IMAGE | Evet | 1 ila 7 görsel |
+| `model.resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"480p"`<br>`"720p"` |
+| `model.aspect_ratio` | Çıktı videosunun en-boy oranı. | COMBO | Evet | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
+| `model.duration` | Çıktı videosunun saniye cinsinden süresi (varsayılan: 6). | INT | Evet | 2 ila 10 |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar tohum değerinden bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ila 2147483647 |
 
 **Not:** `model` parametresi, `reference_images`, `resolution`, `aspect_ratio` ve `duration` öğelerini içeren bir gruptur. En az bir referans görseli sağlamanız gerekir ve en fazla yedi görsel sağlayabilirsiniz.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `video` | VIDEO | Oluşturulan video dosyası. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video` | Oluşturulan video dosyası. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoReferenceNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `e368769b869b7a0d0be8e6fdcc2b82774c11805483b2e83a448b6985a6dd9f96`

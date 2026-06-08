@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoiseSource/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -34,15 +32,17 @@ Este nodo convierte un LATENT (como la salida del nodo VOIDWarpedNoise) en una f
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `warped_noise` | LATENT | Sí | N/A | Latent de ruido deformado proveniente de VOIDWarpedNoise |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `warped_noise` | Latent de ruido deformado proveniente de VOIDWarpedNoise | LATENT | Sí | N/A |
 
 ## Salidas
 
-| Nombre de salida | Tipo de dato | Descripción |
-|------------------|--------------|-------------|
-| `NOISE` | NOISE | Una fuente de ruido que puede utilizarse con SamplerCustomAdvanced |
+| Nombre de salida | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `NOISE` | Una fuente de ruido que puede utilizarse con SamplerCustomAdvanced | NOISE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDWarpedNoiseSource/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `ff798d223da5cf705a40ad1f36cc403030105331d0cc4173e9553cd3718c5d93`

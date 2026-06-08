@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,19 +30,19 @@ Genera imágenes de forma síncrona a través del endpoint GPT Image de OpenAI. 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | - | Indicación de texto para GPT Image (predeterminado: "") |
-| `seed` | INT | No | 0 a 2147483647 | Semilla aleatoria para la generación (predeterminado: 0) - aún no implementada en el backend |
-| `quality` | COMBO | No | "low"<br>"medium"<br>"high" | Calidad de la imagen, afecta el costo y el tiempo de generación (predeterminado: "low") |
-| `background` | COMBO | No | "auto"<br>"opaque"<br>"transparent" | Devuelve la imagen con o sin fondo (predeterminado: "auto") |
-| `size` | COMBO | No | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" | Tamaño de la imagen. Seleccione "Custom" para usar el ancho y alto personalizados (solo GPT Image 2) (predeterminado: "auto") |
-| `n` | INT | No | 1 a 8 | Cuántas imágenes generar (predeterminado: 1) |
-| `image` | IMAGE | No | - | Imagen de referencia opcional para edición de imágenes |
-| `mask` | MASK | No | - | Máscara opcional para inpainting (las áreas blancas serán reemplazadas) |
-| `model` | COMBO | No | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" | Modelo GPT Image a utilizar (predeterminado: "gpt-image-2") |
-| `custom_width` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es "Custom". Debe ser múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) |
-| `custom_height` | INT | No | 1024 a 3840 | Se usa solo cuando `size` es "Custom". Debe ser múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `prompt` | Indicación de texto para GPT Image (predeterminado: "") | STRING | Sí | - |
+| `seed` | Semilla aleatoria para la generación (predeterminado: 0) - aún no implementada en el backend | INT | No | 0 a 2147483647 |
+| `quality` | Calidad de la imagen, afecta el costo y el tiempo de generación (predeterminado: "low") | COMBO | No | "low"<br>"medium"<br>"high" |
+| `background` | Devuelve la imagen con o sin fondo (predeterminado: "auto") | COMBO | No | "auto"<br>"opaque"<br>"transparent" |
+| `size` | Tamaño de la imagen. Seleccione "Custom" para usar el ancho y alto personalizados (solo GPT Image 2) (predeterminado: "auto") | COMBO | No | "auto"<br>"1024x1024"<br>"1024x1536"<br>"1536x1024"<br>"2048x2048"<br>"2048x1152"<br>"1152x2048"<br>"3840x2160"<br>"2160x3840"<br>"Custom" |
+| `n` | Cuántas imágenes generar (predeterminado: 1) | INT | No | 1 a 8 |
+| `image` | Imagen de referencia opcional para edición de imágenes | IMAGE | No | - |
+| `mask` | Máscara opcional para inpainting (las áreas blancas serán reemplazadas) | MASK | No | - |
+| `model` | Modelo GPT Image a utilizar (predeterminado: "gpt-image-2") | COMBO | No | "gpt-image-1"<br>"gpt-image-1.5"<br>"gpt-image-2" |
+| `custom_width` | Se usa solo cuando `size` es "Custom". Debe ser múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) | INT | No | 1024 a 3840 |
+| `custom_height` | Se usa solo cuando `size` es "Custom". Debe ser múltiplo de 16 (solo GPT Image 2) (predeterminado: 1024) | INT | No | 1024 a 3840 |
 
 **Restricciones de parámetros:**
 
@@ -61,9 +59,11 @@ Genera imágenes de forma síncrona a través del endpoint GPT Image de OpenAI. 
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `IMAGE` | IMAGE | Imagen(es) generada(s) o editada(s) |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `IMAGE` | Imagen(es) generada(s) o editada(s) | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImage1/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `44b258d6afcb388db3836427abdd5a7cb5c09a0328efceef7e114dd61a38eae1`

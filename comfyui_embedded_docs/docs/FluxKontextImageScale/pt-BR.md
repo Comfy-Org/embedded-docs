@@ -1,18 +1,16 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/pt-BR.md)
-
 Este nó redimensiona a imagem de entrada para um tamanho ideal utilizado durante o treinamento do modelo Flux Kontext, usando o algoritmo Lanczos, com base na proporção de aspecto da imagem de entrada. Este nó é particularmente útil ao inserir imagens de grandes dimensões, pois entradas superdimensionadas podem levar à degradação da qualidade da saída do modelo ou a problemas como o surgimento de múltiplos sujeitos na saída.
 
 ## Entradas
 
-| Nome do Parâmetro | Tipo de Dados | Tipo de Entrada | Valor Padrão | Faixa de Valores | Descrição |
-|-------------------|---------------|-----------------|--------------|------------------|-----------|
-| `imagem` | IMAGE | Obrigatório | - | - | Imagem de entrada a ser redimensionada |
+| Nome do Parâmetro | Descrição | Tipo de Dados | Tipo de Entrada | Valor Padrão | Faixa de Valores |
+| --- | --- | --- | --- | --- | --- |
+| `imagem` | Imagem de entrada a ser redimensionada | IMAGE | Obrigatório | - | - |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
-| `imagem` | IMAGE | Imagem redimensionada |
+| Nome da Saída | Descrição | Tipo de Dados |
+| --- | --- | --- |
+| `imagem` | Imagem redimensionada | IMAGE |
 
 ## Lista de Tamanhos Predefinidos
 
@@ -37,3 +35,5 @@ A seguir está uma lista de tamanhos padrão utilizados durante o treinamento do
 | 1456    | 720    | 2,022                |
 | 1504    | 688    | 2,186                |
 | 1568    | 672    | 2,333                |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/pt-BR.md)

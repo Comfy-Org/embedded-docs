@@ -1,82 +1,82 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeFlux1/es.md)
-
 El nodo ModelMergeFlux1 fusiona dos modelos de difusión combinando sus componentes mediante interpolación ponderada. Permite un control detallado sobre cómo se combinan diferentes partes de los modelos, incluyendo bloques de procesamiento de imágenes, capas de incrustación temporal, mecanismos de guía, entradas vectoriales, codificadores de texto y varios bloques transformadores. Esto permite crear modelos híbridos con características personalizadas a partir de dos modelos fuente.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|---------------|-------------|-------|-------------|
-| `model1` | MODEL | Sí | - | Primer modelo fuente a fusionar |
-| `model2` | MODEL | Sí | - | Segundo modelo fuente a fusionar |
-| `img_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de entrada de imagen (predeterminado: 1.0) |
-| `time_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de incrustación temporal (predeterminado: 1.0) |
-| `orientación_in` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del mecanismo de guía (predeterminado: 1.0) |
-| `vector_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de entrada vectorial (predeterminado: 1.0) |
-| `txt_in.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del codificador de texto (predeterminado: 1.0) |
-| `double_blocks.0.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 0 (predeterminado: 1.0) |
-| `double_blocks.1.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 1 (predeterminado: 1.0) |
-| `double_blocks.2.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 2 (predeterminado: 1.0) |
-| `double_blocks.3.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 3 (predeterminado: 1.0) |
-| `double_blocks.4.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 4 (predeterminado: 1.0) |
-| `double_blocks.5.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 5 (predeterminado: 1.0) |
-| `double_blocks.6.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 6 (predeterminado: 1.0) |
-| `double_blocks.7.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 7 (predeterminado: 1.0) |
-| `double_blocks.8.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 8 (predeterminado: 1.0) |
-| `double_blocks.9.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 9 (predeterminado: 1.0) |
-| `double_blocks.10.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 10 (predeterminado: 1.0) |
-| `double_blocks.11.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 11 (predeterminado: 1.0) |
-| `double_blocks.12.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 12 (predeterminado: 1.0) |
-| `double_blocks.13.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 13 (predeterminado: 1.0) |
-| `double_blocks.14.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 14 (predeterminado: 1.0) |
-| `double_blocks.15.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 15 (predeterminado: 1.0) |
-| `double_blocks.16.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 16 (predeterminado: 1.0) |
-| `double_blocks.17.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 17 (predeterminado: 1.0) |
-| `double_blocks.18.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque doble 18 (predeterminado: 1.0) |
-| `single_blocks.0.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 0 (predeterminado: 1.0) |
-| `single_blocks.1.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 1 (predeterminado: 1.0) |
-| `single_blocks.2.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 2 (predeterminado: 1.0) |
-| `single_blocks.3.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 3 (predeterminado: 1.0) |
-| `single_blocks.4.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 4 (predeterminado: 1.0) |
-| `single_blocks.5.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 5 (predeterminado: 1.0) |
-| `single_blocks.6.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 6 (predeterminado: 1.0) |
-| `single_blocks.7.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 7 (predeterminado: 1.0) |
-| `single_blocks.8.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 8 (predeterminado: 1.0) |
-| `single_blocks.9.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 9 (predeterminado: 1.0) |
-| `single_blocks.10.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 10 (predeterminado: 1.0) |
-| `single_blocks.11.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 11 (predeterminado: 1.0) |
-| `single_blocks.12.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 12 (predeterminado: 1.0) |
-| `single_blocks.13.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 13 (predeterminado: 1.0) |
-| `single_blocks.14.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 14 (predeterminado: 1.0) |
-| `single_blocks.15.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 15 (predeterminado: 1.0) |
-| `single_blocks.16.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 16 (predeterminado: 1.0) |
-| `single_blocks.17.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 17 (predeterminado: 1.0) |
-| `single_blocks.18.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 18 (predeterminado: 1.0) |
-| `single_blocks.19.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 19 (predeterminado: 1.0) |
-| `single_blocks.20.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 20 (predeterminado: 1.0) |
-| `single_blocks.21.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 21 (predeterminado: 1.0) |
-| `single_blocks.22.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 22 (predeterminado: 1.0) |
-| `single_blocks.23.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 23 (predeterminado: 1.0) |
-| `single_blocks.24.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 24 (predeterminado: 1.0) |
-| `single_blocks.25.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 25 (predeterminado: 1.0) |
-| `single_blocks.26.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 26 (predeterminado: 1.0) |
-| `single_blocks.27.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 27 (predeterminado: 1.0) |
-| `single_blocks.28.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 28 (predeterminado: 1.0) |
-| `single_blocks.29.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 29 (predeterminado: 1.0) |
-| `single_blocks.30.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 30 (predeterminado: 1.0) |
-| `single_blocks.31.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 31 (predeterminado: 1.0) |
-| `single_blocks.32.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 32 (predeterminado: 1.0) |
-| `single_blocks.33.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 33 (predeterminado: 1.0) |
-| `single_blocks.34.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 34 (predeterminado: 1.0) |
-| `single_blocks.35.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 35 (predeterminado: 1.0) |
-| `single_blocks.36.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 36 (predeterminado: 1.0) |
-| `single_blocks.37.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación del bloque simple 37 (predeterminado: 1.0) |
-| `final_layer.` | FLOAT | Sí | 0.0 a 1.0 | Peso de interpolación de la capa final (predeterminado: 1.0) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `model1` | Primer modelo fuente a fusionar | MODEL | Sí | - |
+| `model2` | Segundo modelo fuente a fusionar | MODEL | Sí | - |
+| `img_in.` | Peso de interpolación de entrada de imagen (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `time_in.` | Peso de interpolación de incrustación temporal (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `orientación_in` | Peso de interpolación del mecanismo de guía (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `vector_in.` | Peso de interpolación de entrada vectorial (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `txt_in.` | Peso de interpolación del codificador de texto (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.0.` | Peso de interpolación del bloque doble 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.1.` | Peso de interpolación del bloque doble 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.2.` | Peso de interpolación del bloque doble 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.3.` | Peso de interpolación del bloque doble 3 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.4.` | Peso de interpolación del bloque doble 4 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.5.` | Peso de interpolación del bloque doble 5 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.6.` | Peso de interpolación del bloque doble 6 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.7.` | Peso de interpolación del bloque doble 7 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.8.` | Peso de interpolación del bloque doble 8 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.9.` | Peso de interpolación del bloque doble 9 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.10.` | Peso de interpolación del bloque doble 10 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.11.` | Peso de interpolación del bloque doble 11 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.12.` | Peso de interpolación del bloque doble 12 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.13.` | Peso de interpolación del bloque doble 13 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.14.` | Peso de interpolación del bloque doble 14 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.15.` | Peso de interpolación del bloque doble 15 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.16.` | Peso de interpolación del bloque doble 16 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.17.` | Peso de interpolación del bloque doble 17 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `double_blocks.18.` | Peso de interpolación del bloque doble 18 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.0.` | Peso de interpolación del bloque simple 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.1.` | Peso de interpolación del bloque simple 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.2.` | Peso de interpolación del bloque simple 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.3.` | Peso de interpolación del bloque simple 3 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.4.` | Peso de interpolación del bloque simple 4 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.5.` | Peso de interpolación del bloque simple 5 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.6.` | Peso de interpolación del bloque simple 6 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.7.` | Peso de interpolación del bloque simple 7 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.8.` | Peso de interpolación del bloque simple 8 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.9.` | Peso de interpolación del bloque simple 9 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.10.` | Peso de interpolación del bloque simple 10 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.11.` | Peso de interpolación del bloque simple 11 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.12.` | Peso de interpolación del bloque simple 12 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.13.` | Peso de interpolación del bloque simple 13 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.14.` | Peso de interpolación del bloque simple 14 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.15.` | Peso de interpolación del bloque simple 15 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.16.` | Peso de interpolación del bloque simple 16 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.17.` | Peso de interpolación del bloque simple 17 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.18.` | Peso de interpolación del bloque simple 18 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.19.` | Peso de interpolación del bloque simple 19 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.20.` | Peso de interpolación del bloque simple 20 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.21.` | Peso de interpolación del bloque simple 21 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.22.` | Peso de interpolación del bloque simple 22 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.23.` | Peso de interpolación del bloque simple 23 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.24.` | Peso de interpolación del bloque simple 24 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.25.` | Peso de interpolación del bloque simple 25 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.26.` | Peso de interpolación del bloque simple 26 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.27.` | Peso de interpolación del bloque simple 27 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.28.` | Peso de interpolación del bloque simple 28 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.29.` | Peso de interpolación del bloque simple 29 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.30.` | Peso de interpolación del bloque simple 30 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.31.` | Peso de interpolación del bloque simple 31 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.32.` | Peso de interpolación del bloque simple 32 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.33.` | Peso de interpolación del bloque simple 33 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.34.` | Peso de interpolación del bloque simple 34 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.35.` | Peso de interpolación del bloque simple 35 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.36.` | Peso de interpolación del bloque simple 36 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `single_blocks.37.` | Peso de interpolación del bloque simple 37 (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
+| `final_layer.` | Peso de interpolación de la capa final (predeterminado: 1.0) | FLOAT | Sí | 0.0 a 1.0 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|---------------|-------------|
-| `model` | MODEL | El modelo fusionado que combina características de ambos modelos de entrada |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `model` | El modelo fusionado que combina características de ambos modelos de entrada | MODEL |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeFlux1/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `a632133b5d4bc7c5a4e1be5f6f779e424a491fffb8ef7702346adc4acf6f23bc`

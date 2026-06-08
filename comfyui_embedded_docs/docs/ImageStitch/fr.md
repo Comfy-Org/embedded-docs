@@ -1,25 +1,23 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageStitch/fr.md)
-
 Ce nœud vous permet d'assembler deux images dans une direction spécifiée (haut, bas, gauche, droite), avec prise en charge de l'adaptation des tailles et d'un espacement entre les images.
 
 ## Entrées
 
-| Nom du paramètre | Type de données | Type d'entrée | Valeur par défaut | Plage | Description |
-|---------------|-----------|-------------|---------|--------|-------------|
-| `image1` | IMAGE | Requise | - | - | La première image à assembler |
-| `image2` | IMAGE | Optionnelle | None | - | La deuxième image à assembler ; si non fournie, seule la première image est renvoyée |
-| `direction` | STRING | Requise | right | right/down/left/up | La direction dans laquelle assembler la deuxième image : droite, bas, gauche ou haut |
-| `correspondre_taille_image` | BOOLEAN | Requis | True | True/False | Indique s'il faut redimensionner la deuxième image pour qu'elle corresponde aux dimensions de la première image |
-| `espacement_largeur` | INT | Requis | 0 | 0-1024 | Largeur de l'espacement entre les images, doit être un nombre pair |
-| `espacement_couleur` | STRING | Requis | white | white/black/red/green/blue | Couleur de l'espacement entre les images assemblées |
+| Nom du paramètre | Description | Type de données | Type d'entrée | Valeur par défaut | Plage |
+| --- | --- | --- | --- | --- | --- |
+| `image1` | La première image à assembler | IMAGE | Requise | - | - |
+| `image2` | La deuxième image à assembler ; si non fournie, seule la première image est renvoyée | IMAGE | Optionnelle | None | - |
+| `direction` | La direction dans laquelle assembler la deuxième image : droite, bas, gauche ou haut | STRING | Requise | right | right/down/left/up |
+| `correspondre_taille_image` | Indique s'il faut redimensionner la deuxième image pour qu'elle corresponde aux dimensions de la première image | BOOLEAN | Requis | True | True/False |
+| `espacement_largeur` | Largeur de l'espacement entre les images, doit être un nombre pair | INT | Requis | 0 | 0-1024 |
+| `espacement_couleur` | Couleur de l'espacement entre les images assemblées | STRING | Requis | white | white/black/red/green/blue |
 
 > Pour `spacing_color`, lors de l'utilisation de couleurs autres que "white/black", si `match_image_size` est défini sur `false`, la zone de remplissage sera remplie de noir
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|-------------|-----------|-------------|
-| `IMAGE` | IMAGE | L'image assemblée |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `IMAGE` | L'image assemblée | IMAGE |
 
 ## Exemple de Workflow
 
@@ -52,3 +50,5 @@ Image de sortie 1 :
 Image de sortie 2 :
 
 ![output2](./asset/output-2.webp)
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageStitch/fr.md)

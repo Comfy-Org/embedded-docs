@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazImageEnhance/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,29 +30,31 @@ Topaz Image Enhance düğümü, endüstri standardında yükseltme ve görüntü
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Evet | `"Reimagine"` | Görüntü iyileştirme için kullanılacak yapay zeka modeli. |
-| `görüntü` | IMAGE | Evet | - | İyileştirilecek giriş görüntüsü. Yalnızca bir görüntü desteklenir. |
-| `istem` | STRING | Hayır | - | Yaratıcı yükseltme yönlendirmesi için isteğe bağlı bir metin istemi (varsayılan: boş). |
-| `konu_tespiti` | COMBO | Hayır | `"All"`<br>`"Foreground"`<br>`"Background"` | İyileştirmenin görüntünün hangi kısmına odaklanacağını kontrol eder (varsayılan: "All"). |
-| `yüz_iyileştirme` | BOOLEAN | Hayır | - | Görüntüde yüzler varsa bunları iyileştirmek için etkinleştirin (varsayılan: True). |
-| `yüz_iyileştirme_yaratıcılığı` | FLOAT | Hayır | 0.0 - 1.0 | Yüz iyileştirme için yaratıcılık seviyesini ayarlar (varsayılan: 0.0). |
-| `yüz_iyileştirme_gücü` | FLOAT | Hayır | 0.0 - 1.0 | İyileştirilmiş yüzlerin arka plana göre ne kadar keskin olduğunu kontrol eder (varsayılan: 1.0). |
-| `doldurmak_için_kırp` | BOOLEAN | Hayır | - | Varsayılan olarak, çıktı en boy oranı farklı olduğunda görüntüye posta kutusu eklenir. Bunun yerine görüntüyü çıktı boyutlarını dolduracak şekilde kırpmak için etkinleştirin (varsayılan: False). |
-| `çıktı_genişliği` | INT | Hayır | 0 - 32000 | Çıktı görüntüsünün istenen genişliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `çıktı_yüksekliği` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). |
-| `çıktı_yüksekliği` | INT | Hayır | 0 - 32000 | Çıktı görüntüsünün istenen yüksekliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `çıktı_genişliği` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). |
-| `yaratıcılık` | INT | Hayır | 1 - 9 | İyileştirmenin genel yaratıcılık seviyesini kontrol eder (varsayılan: 3). |
-| `yüz_koruma` | BOOLEAN | Hayır | - | Görüntüdeki kişilerin yüz kimliğini koruyun (varsayılan: True). |
-| `renk_koruma` | BOOLEAN | Hayır | - | Giriş görüntüsünün orijinal renklerini koruyun (varsayılan: True). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Görüntü iyileştirme için kullanılacak yapay zeka modeli. | COMBO | Evet | `"Reimagine"` |
+| `görüntü` | İyileştirilecek giriş görüntüsü. Yalnızca bir görüntü desteklenir. | IMAGE | Evet | - |
+| `istem` | Yaratıcı yükseltme yönlendirmesi için isteğe bağlı bir metin istemi (varsayılan: boş). | STRING | Hayır | - |
+| `konu_tespiti` | İyileştirmenin görüntünün hangi kısmına odaklanacağını kontrol eder (varsayılan: "All"). | COMBO | Hayır | `"All"`<br>`"Foreground"`<br>`"Background"` |
+| `yüz_iyileştirme` | Görüntüde yüzler varsa bunları iyileştirmek için etkinleştirin (varsayılan: True). | BOOLEAN | Hayır | - |
+| `yüz_iyileştirme_yaratıcılığı` | Yüz iyileştirme için yaratıcılık seviyesini ayarlar (varsayılan: 0.0). | FLOAT | Hayır | 0.0 - 1.0 |
+| `yüz_iyileştirme_gücü` | İyileştirilmiş yüzlerin arka plana göre ne kadar keskin olduğunu kontrol eder (varsayılan: 1.0). | FLOAT | Hayır | 0.0 - 1.0 |
+| `doldurmak_için_kırp` | Varsayılan olarak, çıktı en boy oranı farklı olduğunda görüntüye posta kutusu eklenir. Bunun yerine görüntüyü çıktı boyutlarını dolduracak şekilde kırpmak için etkinleştirin (varsayılan: False). | BOOLEAN | Hayır | - |
+| `çıktı_genişliği` | Çıktı görüntüsünün istenen genişliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `çıktı_yüksekliği` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). | INT | Hayır | 0 - 32000 |
+| `çıktı_yüksekliği` | Çıktı görüntüsünün istenen yüksekliği. 0 değeri, genellikle orijinal boyuta veya belirtilmişse `çıktı_genişliği` değerine göre otomatik olarak hesaplanacağı anlamına gelir (varsayılan: 0). | INT | Hayır | 0 - 32000 |
+| `yaratıcılık` | İyileştirmenin genel yaratıcılık seviyesini kontrol eder (varsayılan: 3). | INT | Hayır | 1 - 9 |
+| `yüz_koruma` | Görüntüdeki kişilerin yüz kimliğini koruyun (varsayılan: True). | BOOLEAN | Hayır | - |
+| `renk_koruma` | Giriş görüntüsünün orijinal renklerini koruyun (varsayılan: True). | BOOLEAN | Hayır | - |
 
 **Not:** Bu düğüm yalnızca tek bir giriş görüntüsünü işleyebilir. Birden fazla görüntüden oluşan bir grup sağlamak hataya neden olur.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `görüntü` | IMAGE | İyileştirilmiş çıktı görüntüsü. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `görüntü` | İyileştirilmiş çıktı görüntüsü. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazImageEnhance/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `69f2c929f2cd11f13557e064e30a4514e3862e127a2bdb3a3f40ec92023f255d`

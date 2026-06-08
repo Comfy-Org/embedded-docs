@@ -1,20 +1,20 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyChromaRadianceLatentImage/fr.md)
-
 Le nœud EmptyChromaRadianceLatentImage crée une image latente vierge aux dimensions spécifiées pour une utilisation dans les workflows de radiance chromatique. Il génère un tenseur rempli de zéros qui sert de point de départ pour les opérations dans l'espace latent. Ce nœud vous permet de définir la largeur, la hauteur et la taille du lot de l'image latente vide.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `largeur` | INT | Oui | 16 à MAX_RESOLUTION | La largeur de l'image latente en pixels (par défaut : 1024, doit être divisible par 16) |
-| `hauteur` | INT | Oui | 16 à MAX_RESOLUTION | La hauteur de l'image latente en pixels (par défaut : 1024, doit être divisible par 16) |
-| `taille_du_lot` | INT | Non | 1 à 4096 | Le nombre d'images latentes à générer dans un lot (par défaut : 1) |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `largeur` | La largeur de l'image latente en pixels (par défaut : 1024, doit être divisible par 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `hauteur` | La hauteur de l'image latente en pixels (par défaut : 1024, doit être divisible par 16) | INT | Oui | 16 à MAX_RESOLUTION |
+| `taille_du_lot` | Le nombre d'images latentes à générer dans un lot (par défaut : 1) | INT | Non | 1 à 4096 |
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `samples` | LATENT | Le tenseur d'image latente vide généré avec les dimensions spécifiées |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `samples` | Le tenseur d'image latente vide généré avec les dimensions spécifiées | LATENT |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyChromaRadianceLatentImage/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `f2bc90a236f91e0161142f5242647d15adc8a10c57c920d2eb97e87040ac99d4`

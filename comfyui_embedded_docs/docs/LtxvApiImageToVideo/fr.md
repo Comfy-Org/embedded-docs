@@ -1,18 +1,16 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxvApiImageToVideo/fr.md)
-
 Le nœud LTXV Image To Video génère une vidéo de qualité professionnelle à partir d'une seule image de départ. Il utilise une API externe pour créer une séquence vidéo basée sur votre invite textuelle, vous permettant de personnaliser la durée, la résolution et la fréquence d'images.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `image` | IMAGE | Oui | - | Première image à utiliser pour la vidéo. |
-| `modèle` | COMBO | Oui | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` | Le modèle d'IA à utiliser pour la génération vidéo. Le modèle "Fast" est optimisé pour la vitesse, tandis que le modèle "Quality" privilégie la fidélité visuelle. |
-| `prompt` | STRING | Oui | - | Une description textuelle qui guide le contenu et le mouvement de la vidéo générée. |
-| `durée` | COMBO | Oui | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` | La durée de la vidéo en secondes (par défaut : 8). |
-| `résolution` | COMBO | Oui | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` | La résolution de sortie de la vidéo générée. |
-| `ips` | COMBO | Oui | `25`<br>`50` | Le nombre d'images par seconde pour la vidéo (par défaut : 25). |
-| `générer_audio` | BOOLEAN | Non | - | Lorsque cette option est activée, la vidéo générée inclura un son généré par IA correspondant à la scène (par défaut : Faux). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `image` | Première image à utiliser pour la vidéo. | IMAGE | Oui | - |
+| `modèle` | Le modèle d'IA à utiliser pour la génération vidéo. Le modèle "Fast" est optimisé pour la vitesse, tandis que le modèle "Quality" privilégie la fidélité visuelle. | COMBO | Oui | `"LTX-2 (Fast)"`<br>`"LTX-2 (Quality)"` |
+| `prompt` | Une description textuelle qui guide le contenu et le mouvement de la vidéo générée. | STRING | Oui | - |
+| `durée` | La durée de la vidéo en secondes (par défaut : 8). | COMBO | Oui | `6`<br>`8`<br>`10`<br>`12`<br>`14`<br>`16`<br>`18`<br>`20` |
+| `résolution` | La résolution de sortie de la vidéo générée. | COMBO | Oui | `"1920x1080"`<br>`"2560x1440"`<br>`"3840x2160"` |
+| `ips` | Le nombre d'images par seconde pour la vidéo (par défaut : 25). | COMBO | Oui | `25`<br>`50` |
+| `générer_audio` | Lorsque cette option est activée, la vidéo générée inclura un son généré par IA correspondant à la scène (par défaut : Faux). | BOOLEAN | Non | - |
 
 **Contraintes importantes :**
 
@@ -22,9 +20,11 @@ Le nœud LTXV Image To Video génère une vidéo de qualité professionnelle à 
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `video` | VIDEO | Le fichier vidéo généré. |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `video` | Le fichier vidéo généré. | VIDEO |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxvApiImageToVideo/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `af891b45997173c3210d3de4f7b6bd05b14e9d3bf8a94dcb2c1ce08038b7d99d`

@@ -1,16 +1,16 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeAdd/es.md)
-
 El nodo ModelMergeAdd está diseñado para fusionar dos modelos añadiendo parches clave de un modelo a otro. Este proceso implica clonar el primer modelo y luego aplicar parches del segundo modelo, lo que permite combinar características o comportamientos de ambos modelos.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Descripción |
-|-----------|-------------|-------------|
-| `modelo1`  | `MODEL`     | El primer modelo que se clonará y al cual se le añadirán los parches del segundo modelo. Sirve como modelo base para el proceso de fusión. |
-| `modelo2`  | `MODEL`     | El segundo modelo del cual se extraen parches clave y se añaden al primer modelo. Aporta características o comportamientos adicionales al modelo fusionado. |
+| Parámetro | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `modelo1` | El primer modelo que se clonará y al cual se le añadirán los parches del segundo modelo. Sirve como modelo base para el proceso de fusión. | `MODEL` |
+| `modelo2` | El segundo modelo del cual se extraen parches clave y se añaden al primer modelo. Aporta características o comportamientos adicionales al modelo fusionado. | `MODEL` |
 
 ## Salidas
 
-| Parámetro | Tipo de dato | Descripción |
-|-----------|-------------|-------------|
-| `model`   | MODEL     | El resultado de fusionar dos modelos añadiendo parches clave del segundo modelo al primero. Este modelo fusionado combina características o comportamientos de ambos modelos. |
+| Parámetro | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `model` | El resultado de fusionar dos modelos añadiendo parches clave del segundo modelo al primero. Este modelo fusionado combina características o comportamientos de ambos modelos. | MODEL |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeAdd/es.md)

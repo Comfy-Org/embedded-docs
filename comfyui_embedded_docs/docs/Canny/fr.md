@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/fr.md)
-
 Extrayez toutes les lignes de contour des photos, comme si vous traciez le contour d'une photo avec un stylo, en dessinant les limites des objets et les détails de leurs contours.
 
 ## Principe de fonctionnement
@@ -16,17 +14,17 @@ Le résultat final est une image en noir et blanc, où les parties blanches sont
 
 ## Entrées
 
-| Nom du paramètre | Type de données | Type d'entrée | Valeur par défaut | Plage      | Description de la fonction |
-|------------------|-----------------|---------------|-------------------|------------|----------------------------|
-| `image`          | IMAGE           | Entrée        | -                 | -          | Photo originale nécessitant une extraction des contours |
-| `seuil_bas`  | FLOAT           | Widget        | 0.4               | 0.01-0.99  | Seuil bas, détermine quels contours faibles ignorer. Des valeurs plus basses préservent plus de détails mais peuvent générer du bruit |
-| `seuil_haut` | FLOAT           | Widget        | 0.8               | 0.01-0.99  | Seuil haut, détermine quels contours forts conserver. Des valeurs plus élevées ne conservent que les lignes de contour les plus évidentes |
+| Nom du paramètre | Description de la fonction | Type de données | Type d'entrée | Valeur par défaut | Plage |
+| --- | --- | --- | --- | --- | --- |
+| `image` | Photo originale nécessitant une extraction des contours | IMAGE | Entrée | - | - |
+| `seuil_bas` | Seuil bas, détermine quels contours faibles ignorer. Des valeurs plus basses préservent plus de détails mais peuvent générer du bruit | FLOAT | Widget | 0.4 | 0.01-0.99 |
+| `seuil_haut` | Seuil haut, détermine quels contours forts conserver. Des valeurs plus élevées ne conservent que les lignes de contour les plus évidentes | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `image`       | IMAGE           | Image de contour en noir et blanc, les lignes blanches sont les contours détectés, les zones noires sont les parties sans contour |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `image` | Image de contour en noir et blanc, les lignes blanches sont les contours détectés, les zones noires sont les parties sans contour | IMAGE |
 
 ## Comparaison des paramètres
 
@@ -40,3 +38,5 @@ Le résultat final est une image en noir et blanc, où les parties blanches sont
 - Trop de bruit : augmentez le seuil bas
 - Détails importants manquants : abaissez le seuil bas
 - Contours trop grossiers : vérifiez la qualité et la résolution de l'image d'entrée
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/fr.md)

@@ -1,22 +1,20 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSimple/pt-BR.md)
-
 `CLIPMergeSimple` é um nó avançado de mesclagem de modelos usado para combinar dois codificadores de texto CLIP com base em uma proporção especificada.
 
 Este nó é especializado em mesclar dois modelos CLIP com base em uma proporção especificada, combinando efetivamente suas características. Ele aplica seletivamente patches de um modelo a outro, excluindo componentes específicos como IDs de posição e escala logit, para criar um modelo híbrido que combina características de ambos os modelos de origem.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
-|-----------|---------------|-----------------|--------|-------|-----------|
-| `clip1` | CLIP | OBRIGATÓRIO | - | - | O primeiro modelo CLIP a ser mesclado. Serve como modelo base para o processo de mesclagem. |
-| `clip2` | CLIP | OBRIGATÓRIO | - | - | O segundo modelo CLIP a ser mesclado. Seus patches-chave, exceto IDs de posição e escala logit, são aplicados ao primeiro modelo com base na proporção especificada. |
-| `ratio` | FLOAT | OBRIGATÓRIO | 1.0 | 0.0 - 1.0 (passo: 0.01) | Determina a proporção de características do segundo modelo a serem mescladas no primeiro modelo. Uma proporção de 1.0 significa adotar totalmente as características do segundo modelo, enquanto 0.0 mantém apenas as características do primeiro modelo. |
+| Parâmetro | Descrição | Tipo de Dados | Tipo de Entrada | Padrão | Faixa |
+| --- | --- | --- | --- | --- | --- |
+| `clip1` | O primeiro modelo CLIP a ser mesclado. Serve como modelo base para o processo de mesclagem. | CLIP | OBRIGATÓRIO | - | - |
+| `clip2` | O segundo modelo CLIP a ser mesclado. Seus patches-chave, exceto IDs de posição e escala logit, são aplicados ao primeiro modelo com base na proporção especificada. | CLIP | OBRIGATÓRIO | - | - |
+| `ratio` | Determina a proporção de características do segundo modelo a serem mescladas no primeiro modelo. Uma proporção de 1.0 significa adotar totalmente as características do segundo modelo, enquanto 0.0 mantém apenas as características do primeiro modelo. | FLOAT | OBRIGATÓRIO | 1.0 | 0.0 - 1.0 (passo: 0.01) |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
-| `clip` | CLIP | O modelo CLIP mesclado resultante, incorporando características de ambos os modelos de entrada de acordo com a proporção especificada. |
+| Nome da Saída | Descrição | Tipo de Dados |
+| --- | --- | --- |
+| `clip` | O modelo CLIP mesclado resultante, incorporando características de ambos os modelos de entrada de acordo com a proporção especificada. | CLIP |
 
 ## Mecanismo de Mesclagem Explicado
 
@@ -40,6 +38,8 @@ O nó usa média ponderada para mesclar os dois modelos:
 1. **Fusão de Estilo de Modelo**: Combine características de modelos CLIP treinados em dados diferentes
 2. **Otimização de Desempenho**: Equilibre pontos fortes e fracos de diferentes modelos
 3. **Pesquisa Experimental**: Explore combinações de diferentes codificadores CLIP
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPMergeSimple/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `0d3c8388dbe88675ea7fb51161ab41ce898bcf63983b3d2817b16ec5bfa613e5`

@@ -1,18 +1,16 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/es.md)
-
 Este nodo escala la imagen de entrada a un tamaño óptimo utilizado durante el entrenamiento del modelo Flux Kontext, empleando el algoritmo Lanczos y basándose en la relación de aspecto de la imagen de entrada. Este nodo es particularmente útil al ingresar imágenes de gran tamaño, ya que las entradas sobredimensionadas pueden provocar una degradación en la calidad de la salida del modelo o problemas como la aparición de múltiples sujetos en el resultado.
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango de Valores | Descripción |
-|----------------------|--------------|-----------------|-------------------|------------------|-------------|
-| `imagen` | IMAGE | Requerido | - | - | Imagen de entrada que se redimensionará |
+| Nombre del Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango de Valores |
+| --- | --- | --- | --- | --- | --- |
+| `imagen` | Imagen de entrada que se redimensionará | IMAGE | Requerido | - | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `imagen` | IMAGE | Imagen redimensionada |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `imagen` | Imagen redimensionada | IMAGE |
 
 ## Lista de Tamaños Predefinidos
 
@@ -37,3 +35,5 @@ A continuación se muestra una lista de tamaños estándar utilizados durante el
 | 1456  | 720  | 2.022               |
 | 1504  | 688  | 2.186               |
 | 1568  | 672  | 2.333               |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextImageScale/es.md)

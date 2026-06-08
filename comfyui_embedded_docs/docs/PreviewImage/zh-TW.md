@@ -1,15 +1,15 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewImage/zh-TW.md)
-
 ## 概述
 
 PreviewImage 節點專為建立臨時預覽圖像而設計。它會自動為每張圖像生成唯一的臨時檔案名稱，將圖像壓縮至指定級別，並儲存到臨時目錄中。此功能特別適用於在處理過程中生成圖像預覽，而不影響原始檔案。
 
 ## 輸入
 
-| 參數 | 資料類型 | 說明 |
-|-----------|-------------|-------------|
-| `圖片`  | `IMAGE`     | `圖片` 輸入指定要處理並儲存為臨時預覽圖像的圖像。這是節點的主要輸入，決定哪些圖像將進行預覽生成流程。 |
+| 參數 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `圖片` | `圖片` 輸入指定要處理並儲存為臨時預覽圖像的圖像。這是節點的主要輸入，決定哪些圖像將進行預覽生成流程。 | `IMAGE` |
 
 ## 輸出
 
 此節點沒有輸出類型。
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewImage/zh-TW.md)

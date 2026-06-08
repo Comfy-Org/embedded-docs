@@ -1,25 +1,23 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/es.md)
-
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias para mejorar, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/en.md)
 
 El nodo Wan Image to Video genera un video a partir de una sola imagen de entrada y un prompt de texto. Utiliza la imagen proporcionada como primer fotograma y crea una secuencia de video basada en la descripción, con opciones para resolución, duración, audio y otras configuraciones avanzadas.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo` | COMBO | Sí | "wan2.5-i2v-preview"<br>"wan2.6-i2v" | Modelo a utilizar (predeterminado: "wan2.6-i2v") |
-| `imagen` | IMAGE | Sí | - | Imagen de entrada que sirve como primer fotograma para la generación del video. Se requiere exactamente una imagen. |
-| `texto` | STRING | Sí | - | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío). |
-| `texto_negativo` | STRING | No | - | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío). |
-| `resolución` | COMBO | No | "480P"<br>"720P"<br>"1080P" | Calidad de resolución del video (predeterminado: "720P"). El modelo Wan 2.6 no admite 480P. |
-| `duración` | INT | No | 5-15 (paso: 5) | Duración del video generado en segundos. Una duración de 15 segundos solo es compatible con el modelo Wan 2.6 (predeterminado: 5). |
-| `audio` | AUDIO | No | - | El audio debe contener una voz clara y fuerte, sin ruidos extraños ni música de fondo. Cuando se proporciona, la duración del audio debe estar entre 3.0 y 29.0 segundos. |
-| `semilla` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0). |
-| `generar_audio` | BOOLEAN | No | - | Si no se proporciona una entrada de audio, generar audio automáticamente (predeterminado: False). |
-| `extender_texto` | BOOLEAN | No | - | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). |
-| `marca_agua` | BOOLEAN | No | - | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). |
-| `tipo_de_toma` | COMBO | No | "single"<br>"multi" | Especifica el tipo de toma para el video generado, es decir, si el video es una sola toma continua o múltiples tomas con cortes. Este parámetro solo tiene efecto cuando prompt_extend es True (predeterminado: "single"). |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | Modelo a utilizar (predeterminado: "wan2.6-i2v") | COMBO | Sí | "wan2.5-i2v-preview"<br>"wan2.6-i2v" |
+| `imagen` | Imagen de entrada que sirve como primer fotograma para la generación del video. Se requiere exactamente una imagen. | IMAGE | Sí | - |
+| `texto` | Prompt que describe los elementos y las características visuales. Admite inglés y chino (predeterminado: vacío). | STRING | Sí | - |
+| `texto_negativo` | Prompt negativo que describe lo que se debe evitar (predeterminado: vacío). | STRING | No | - |
+| `resolución` | Calidad de resolución del video (predeterminado: "720P"). El modelo Wan 2.6 no admite 480P. | COMBO | No | "480P"<br>"720P"<br>"1080P" |
+| `duración` | Duración del video generado en segundos. Una duración de 15 segundos solo es compatible con el modelo Wan 2.6 (predeterminado: 5). | INT | No | 5-15 (paso: 5) |
+| `audio` | El audio debe contener una voz clara y fuerte, sin ruidos extraños ni música de fondo. Cuando se proporciona, la duración del audio debe estar entre 3.0 y 29.0 segundos. | AUDIO | No | - |
+| `semilla` | Semilla a utilizar para la generación (predeterminado: 0). | INT | No | 0-2147483647 |
+| `generar_audio` | Si no se proporciona una entrada de audio, generar audio automáticamente (predeterminado: False). | BOOLEAN | No | - |
+| `extender_texto` | Si se debe mejorar el prompt con asistencia de IA (predeterminado: True). | BOOLEAN | No | - |
+| `marca_agua` | Si se debe agregar una marca de agua generada por IA al resultado (predeterminado: False). | BOOLEAN | No | - |
+| `tipo_de_toma` | Especifica el tipo de toma para el video generado, es decir, si el video es una sola toma continua o múltiples tomas con cortes. Este parámetro solo tiene efecto cuando prompt_extend es True (predeterminado: "single"). | COMBO | No | "single"<br>"multi" |
 
 **Restricciones:**
 
@@ -30,9 +28,11 @@ El nodo Wan Image to Video genera un video a partir de una sola imagen de entrad
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `output` | VIDEO | Video generado basado en la imagen de entrada y el prompt. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | Video generado basado en la imagen de entrada y el prompt. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `ad4947dbb9c12ebb97ace99cd447431ba6db88a3b74239099fcbea501cff71f0`

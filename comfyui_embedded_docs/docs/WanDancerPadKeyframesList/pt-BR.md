@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/pt-BR.md)
-
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/en.md)
 
 ## Visão Geral
@@ -8,20 +6,22 @@ Este nó recebe uma sequência de imagens e uma faixa de áudio opcional, e as d
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Obrigatório | Faixa | Descrição |
-|-----------|---------------|-------------|-------|-----------|
-| `imagens` | IMAGE | Sim | N/A | A sequência de imagens de entrada a ser dividida em segmentos. |
-| `comprimento_do_segmento` | INT | Sim | 1 a 10000 | Comprimento de cada segmento em quadros (padrão: 149). |
-| `número_de_segmentos` | INT | Sim | 1 a 100 | Quantos segmentos preenchidos emitir como listas (padrão: 1). |
-| `áudio` | AUDIO | Não | N/A | Áudio a ser fatiado para cada segmento emitido. |
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `imagens` | A sequência de imagens de entrada a ser dividida em segmentos. | IMAGE | Sim | N/A |
+| `comprimento_do_segmento` | Comprimento de cada segmento em quadros (padrão: 149). | INT | Sim | 1 a 10000 |
+| `número_de_segmentos` | Quantos segmentos preenchidos emitir como listas (padrão: 1). | INT | Sim | 1 a 100 |
+| `áudio` | Áudio a ser fatiado para cada segmento emitido. | AUDIO | Não | N/A |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
-| `keyframes_sequence` | IMAGE | Uma lista de sequências de quadros-chave preenchidas, uma para cada segmento. |
-| `keyframes_mask` | MASK | Uma lista de máscaras indicando quadros válidos para cada segmento. |
-| `audio_segment` | AUDIO | Uma lista de segmentos de áudio, um para cada segmento de vídeo. |
+| Nome da Saída | Descrição | Tipo de Dados |
+| --- | --- | --- |
+| `keyframes_sequence` | Uma lista de sequências de quadros-chave preenchidas, uma para cada segmento. | IMAGE |
+| `keyframes_mask` | Uma lista de máscaras indicando quadros válidos para cada segmento. | MASK |
+| `audio_segment` | Uma lista de segmentos de áudio, um para cada segmento de vídeo. | AUDIO |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `c6a3ddca3fd61fcdb287fecb6969796eebd65e70f1174abdab57912586d27d00`

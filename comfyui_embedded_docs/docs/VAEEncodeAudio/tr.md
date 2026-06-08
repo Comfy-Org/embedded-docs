@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeAudio/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,18 +30,20 @@ VAEEncodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `ses` | AUDIO | Evet | - | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgilerini içerir |
-| `vae` | VAE | Evet | - | Sesi gizli uzaya kodlamak için kullanılan Varyasyonel Otomatik Kodlayıcı modeli |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `ses` | Kodlanacak ses verisi; dalga formu ve örnekleme hızı bilgilerini içerir | AUDIO | Evet | - |
+| `vae` | Sesi gizli uzaya kodlamak için kullanılan Varyasyonel Otomatik Kodlayıcı modeli | VAE | Evet | - |
 
 **Not:** Ses girdisi, orijinal örnekleme hızı VAE'nin beklenen değerinden (varsayılan: 44100 Hz) farklıysa, otomatik olarak VAE'nin beklenen örnekleme hızına yeniden örneklenir.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `LATENT` | LATENT | Sıkıştırılmış örnekler içeren, gizli uzaydaki kodlanmış ses temsili |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `LATENT` | Sıkıştırılmış örnekler içeren, gizli uzaydaki kodlanmış ses temsili | LATENT |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VAEEncodeAudio/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `db509ab571154c4cedbfc6cae6591bd2b67b2c6e2261766565cdb0205b2c2ecc`

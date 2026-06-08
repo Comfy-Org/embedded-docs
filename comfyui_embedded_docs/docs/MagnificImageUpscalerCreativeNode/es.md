@@ -1,21 +1,19 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageUpscalerCreativeNode/es.md)
-
 Este nodo utiliza el servicio de IA de Magnific para ampliar y mejorar creativamente una imagen. Permite guiar la mejora con un texto descriptivo, elegir un estilo específico para optimizar el resultado y controlar diversos aspectos del proceso creativo como el detalle, el parecido con la original y la fuerza de estilización. El nodo genera una imagen ampliada según el factor seleccionado (2x, 4x, 8x o 16x), con un tamaño máximo de salida de 25,3 megapíxeles.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `imagen` | IMAGE | Sí | - | La imagen de entrada que se ampliará y mejorará. |
-| `prompt` | STRING | No | - | Una descripción textual para guiar la mejora creativa de la imagen. Es opcional (valor predeterminado: vacío). |
-| `factor_de_escala` | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` | El factor por el cual se ampliarán las dimensiones de la imagen. |
-| `optimizado_para` | COMBO | Sí | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` | El estilo o tipo de contenido para optimizar el proceso de mejora. |
-| `creatividad` | INT | No | -10 a 10 | Controla el nivel de interpretación creativa aplicada a la imagen (valor predeterminado: 0). |
-| `hdr` | INT | No | -10 a 10 | El nivel de definición y detalle (valor predeterminado: 0). |
-| `semejanza` | INT | No | -10 a 10 | El nivel de parecido con la imagen original (valor predeterminado: 0). |
-| `fractalidad` | INT | No | -10 a 10 | La fuerza del texto descriptivo y la complejidad por píxel cuadrado (valor predeterminado: 0). |
-| `motor` | COMBO | Sí | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` | El motor de IA específico a utilizar para el procesamiento. Este es un parámetro avanzado. |
-| `reducción_automática` | BOOLEAN | No | - | Cuando está habilitado, el nodo reducirá automáticamente la escala de la imagen de entrada si la ampliación solicitada supera el tamaño máximo de salida permitido de 25,3 megapíxeles. Este es un parámetro avanzado (valor predeterminado: Falso). |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `imagen` | La imagen de entrada que se ampliará y mejorará. | IMAGE | Sí | - |
+| `prompt` | Una descripción textual para guiar la mejora creativa de la imagen. Es opcional (valor predeterminado: vacío). | STRING | No | - |
+| `factor_de_escala` | El factor por el cual se ampliarán las dimensiones de la imagen. | COMBO | Sí | `"2x"`<br>`"4x"`<br>`"8x"`<br>`"16x"` |
+| `optimizado_para` | El estilo o tipo de contenido para optimizar el proceso de mejora. | COMBO | Sí | `"standard"`<br>`"soft_portraits"`<br>`"hard_portraits"`<br>`"art_n_illustration"`<br>`"videogame_assets"`<br>`"nature_n_landscapes"`<br>`"films_n_photography"`<br>`"3d_renders"`<br>`"science_fiction_n_horror"` |
+| `creatividad` | Controla el nivel de interpretación creativa aplicada a la imagen (valor predeterminado: 0). | INT | No | -10 a 10 |
+| `hdr` | El nivel de definición y detalle (valor predeterminado: 0). | INT | No | -10 a 10 |
+| `semejanza` | El nivel de parecido con la imagen original (valor predeterminado: 0). | INT | No | -10 a 10 |
+| `fractalidad` | La fuerza del texto descriptivo y la complejidad por píxel cuadrado (valor predeterminado: 0). | INT | No | -10 a 10 |
+| `motor` | El motor de IA específico a utilizar para el procesamiento. Este es un parámetro avanzado. | COMBO | Sí | `"automatic"`<br>`"magnific_illusio"`<br>`"magnific_sharpy"`<br>`"magnific_sparkle"` |
+| `reducción_automática` | Cuando está habilitado, el nodo reducirá automáticamente la escala de la imagen de entrada si la ampliación solicitada supera el tamaño máximo de salida permitido de 25,3 megapíxeles. Este es un parámetro avanzado (valor predeterminado: Falso). | BOOLEAN | No | - |
 
 **Restricciones:**
 
@@ -26,9 +24,11 @@ Este nodo utiliza el servicio de IA de Magnific para ampliar y mejorar creativam
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|---------------|-------------|
-| `imagen` | IMAGE | La imagen de salida ampliada y mejorada creativamente. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `imagen` | La imagen de salida ampliada y mejorada creativamente. | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageUpscalerCreativeNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `f5f046347c2992a2589153e803de14fc23b27187864b45eb566556418ebc161c`

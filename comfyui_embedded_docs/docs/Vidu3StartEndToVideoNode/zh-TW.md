@@ -1,27 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Vidu3StartEndToVideoNode/zh-TW.md)
-
 此節點透過在提供的起始幀與結束幀之間進行插值，並依據文字提示引導，來生成影片。它使用 Vidu Q3 模型在兩張圖片之間建立流暢的過渡，產出指定時長與解析度的影片。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `模型` | COMBO | 是 | `"viduq3-pro"`<br>`"viduq3-turbo"` | 用於影片生成的模型。選擇一個選項會顯示 `resolution`、`duration` 和 `audio` 的額外配置參數。 |
-| `model.resolution` | COMBO | 是 | `"720p"`<br>`"1080p"` | 輸出影片的解析度。此參數在選取 `模型` 後顯示。 |
-| `model.duration` | INT | 是 | 1 至 16 | 輸出影片的時長（秒），預設值為 5。此參數在選取 `模型` 後顯示。 |
-| `model.audio` | BOOLEAN | 是 | `True` / `False` | 啟用時，輸出包含聲音（包括對話與音效）的影片，預設值為 False。此參數在選取 `模型` 後顯示。 |
-| `起始影格` | IMAGE | 是 | - | 影片序列的起始圖片。 |
-| `結束影格` | IMAGE | 是 | - | 影片序列的結束圖片。 |
-| `提示詞` | STRING | 是 | - | 引導影片生成的一段文字描述（最多 2000 個字元）。 |
-| `隨機種子` | INT | 否 | 0 至 2147483647 | 用於控制生成隨機性的種子值，預設值為 1。 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `模型` | 用於影片生成的模型。選擇一個選項會顯示 `resolution`、`duration` 和 `audio` 的額外配置參數。 | COMBO | 是 | `"viduq3-pro"`<br>`"viduq3-turbo"` |
+| `model.resolution` | 輸出影片的解析度。此參數在選取 `模型` 後顯示。 | COMBO | 是 | `"720p"`<br>`"1080p"` |
+| `model.duration` | 輸出影片的時長（秒），預設值為 5。此參數在選取 `模型` 後顯示。 | INT | 是 | 1 至 16 |
+| `model.audio` | 啟用時，輸出包含聲音（包括對話與音效）的影片，預設值為 False。此參數在選取 `模型` 後顯示。 | BOOLEAN | 是 | `True` / `False` |
+| `起始影格` | 影片序列的起始圖片。 | IMAGE | 是 | - |
+| `結束影格` | 影片序列的結束圖片。 | IMAGE | 是 | - |
+| `提示詞` | 引導影片生成的一段文字描述（最多 2000 個字元）。 | STRING | 是 | - |
+| `隨機種子` | 用於控制生成隨機性的種子值，預設值為 1。 | INT | 否 | 0 至 2147483647 |
 
 **注意：** `first_frame` 與 `end_frame` 圖片應具有相近的長寬比以獲得最佳效果。兩張圖片的長寬比必須在彼此的 80% 至 125% 範圍內（相對接近度介於 0.8 與 1.25 之間）。
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `video` | VIDEO | 生成的影片檔案。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `video` | 生成的影片檔案。 | VIDEO |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Vidu3StartEndToVideoNode/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `4a0a8d6657702d80278dc9239370683f408d7c051e91e8396939b7b81b87b4ed`

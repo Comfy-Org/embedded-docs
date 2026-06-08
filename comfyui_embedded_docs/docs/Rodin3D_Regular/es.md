@@ -1,22 +1,22 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/es.md)
-
 Este nodo **Rodin 3D Regular** genera activos 3D utilizando la API de Rodin. Toma imágenes de entrada y las procesa a través del servicio Rodin para crear modelos 3D. El nodo gestiona todo el flujo de trabajo, desde la creación de la tarea hasta la descarga de los archivos del modelo 3D final.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `Imágenes` | IMAGE | Sí | - | Imágenes de entrada utilizadas para la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. |
-| `Semilla` | INT | Sí | - | Valor de semilla aleatoria para obtener resultados reproducibles. |
-| `Tipo_Material` | STRING | Sí | - | Tipo de material que se aplicará al modelo 3D. |
-| `Recuento_Polígonos` | STRING | Sí | - | Cantidad objetivo de polígonos para el modelo 3D generado. Este parámetro determina el modo de calidad y la complejidad de la malla. |
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `Imágenes` | Imágenes de entrada utilizadas para la generación del modelo 3D. Se pueden proporcionar múltiples imágenes. | IMAGE | Sí | - |
+| `Semilla` | Valor de semilla aleatoria para obtener resultados reproducibles. | INT | Sí | - |
+| `Tipo_Material` | Tipo de material que se aplicará al modelo 3D. | STRING | Sí | - |
+| `Recuento_Polígonos` | Cantidad objetivo de polígonos para el modelo 3D generado. Este parámetro determina el modo de calidad y la complejidad de la malla. | STRING | Sí | - |
 
 ## Salidas
 
-| Nombre de salida | Tipo de dato | Descripción |
-|------------------|--------------|-------------|
-| `GLB` | STRING | Ruta del archivo al modelo 3D generado (se mantiene por compatibilidad con versiones anteriores). |
-| `GLB` | FILE3DGLB | El modelo 3D generado en formato GLB. |
+| Nombre de salida | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `GLB` | Ruta del archivo al modelo 3D generado (se mantiene por compatibilidad con versiones anteriores). | STRING |
+| `GLB` | El modelo 3D generado en formato GLB. | FILE3DGLB |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `f937be3aa579baf4407434839e741141d6bd63c09b7e0bdc49a9e92a10d7a130`

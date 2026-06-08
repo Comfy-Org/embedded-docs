@@ -1,15 +1,13 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/es.md)
-
 El nodo `BasicScheduler` está diseñado para calcular una secuencia de valores sigma para modelos de difusión basándose en el programador, el modelo y los parámetros de eliminación de ruido proporcionados. Ajusta dinámicamente el número total de pasos según el factor de eliminación de ruido para afinar el proceso de difusión, proporcionando "recetas" precisas para diferentes etapas en procesos de muestreo avanzados que requieren un control detallado (como el muestreo en múltiples etapas).
 
 ## Entradas
 
-| Parámetro   | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango     | Descripción Metafórica           | Propósito Técnico            |
-| ----------- | ------------ | --------------- | ----------------- | --------- | -------------------------------- | ---------------------------- |
-| `modelo`     | MODEL        | Entrada         | -                 | -         | **Tipo de Lienzo**: Diferentes materiales de lienzo necesitan diferentes fórmulas de pintura | Objeto del modelo de difusión, determina la base de cálculo de sigma |
-| `programador` | COMBO[STRING]| Widget          | -                 | 9 opciones| **Técnica de Mezcla**: Elige cómo cambia la concentración de pintura | Algoritmo de programación, controla el modo de disminución del ruido |
-| `pasos`     | INT          | Widget          | 20                | 1-10000   | **Cantidad de Mezclas**: Diferencia de precisión entre 20 y 50 mezclas | Pasos de muestreo, afecta la calidad y velocidad de generación |
-| `desruido`   | FLOAT        | Widget          | 1.0               | 0.0-1.0   | **Intensidad de Creación**: Controla el nivel desde ajuste fino hasta repintado | Fuerza de eliminación de ruido, admite escenarios de repintado parcial |
+| Parámetro | Descripción Metafórica | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Propósito Técnico |
+| --- | --- | --- | --- | --- | --- | --- |
+| `modelo` | **Tipo de Lienzo**: Diferentes materiales de lienzo necesitan diferentes fórmulas de pintura | MODEL | Entrada | - | - | Objeto del modelo de difusión, determina la base de cálculo de sigma |
+| `programador` | **Técnica de Mezcla**: Elige cómo cambia la concentración de pintura | COMBO[STRING] | Widget | - | 9 opciones | Algoritmo de programación, controla el modo de disminución del ruido |
+| `pasos` | **Cantidad de Mezclas**: Diferencia de precisión entre 20 y 50 mezclas | INT | Widget | 20 | 1-10000 | Pasos de muestreo, afecta la calidad y velocidad de generación |
+| `desruido` | **Intensidad de Creación**: Controla el nivel desde ajuste fino hasta repintado | FLOAT | Widget | 1.0 | 0.0-1.0 | Fuerza de eliminación de ruido, admite escenarios de repintado parcial |
 
 ### Tipos de Programador
 
@@ -29,9 +27,9 @@ Basado en el código fuente `comfy.samplers.SCHEDULER_NAMES`, admite los siguien
 
 ## Salidas
 
-| Parámetro | Tipo de Dato | Tipo de Salida | Descripción Metafórica   | Significado Técnico                |
-| --------- | ------------ | -------------- | ------------------------ | ---------------------------------- |
-| `sigmas`  | SIGMAS       | Salida         | **Tabla de Recetas de Pintura**: Lista detallada de concentraciones de pintura para usar paso a paso | Secuencia de niveles de ruido, guía el proceso de eliminación de ruido del modelo de difusión |
+| Parámetro | Descripción Metafórica | Tipo de Dato | Tipo de Salida | Significado Técnico |
+| --- | --- | --- | --- | --- |
+| `sigmas` | **Tabla de Recetas de Pintura**: Lista detallada de concentraciones de pintura para usar paso a paso | SIGMAS | Salida | Secuencia de niveles de ruido, guía el proceso de eliminación de ruido del modelo de difusión |
 
 ## Función del Nodo: Asistente de Mezcla de Colores del Artista
 
@@ -67,3 +65,5 @@ Imagina que eres un artista creando una imagen clara a partir de una mezcla caó
 ### Colaboración con Otros Nodos
 
 `BasicScheduler` (Asistente de Color) → Prepara Receta → `SamplerCustom` (Artista) → Pintura Real → Obra Completada
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/es.md)

@@ -1,52 +1,52 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/es.md)
-
 El nodo `ModelMergeCosmosPredict2_2B` fusiona dos modelos de difusión utilizando un enfoque basado en bloques con control detallado sobre diferentes componentes del modelo. Permite combinar partes específicas de dos modelos ajustando los pesos de interpolación para los incrustadores de posición, incrustadores de tiempo, bloques transformadores y capas finales. Esto proporciona un control preciso sobre cómo los diferentes componentes arquitectónicos de cada modelo contribuyen al resultado final fusionado.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo1` | MODEL | Sí | - | El primer modelo a fusionar |
-| `modelo2` | MODEL | Sí | - | El segundo modelo a fusionar |
-| `pos_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del incrustador de posición (predeterminado: 1.0) |
-| `x_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del incrustador de entrada (predeterminado: 1.0) |
-| `t_embedder.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del incrustador de tiempo (predeterminado: 1.0) |
-| `t_embedding_norm.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación de la normalización del incrustador de tiempo (predeterminado: 1.0) |
-| `blocks.0.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 0 (predeterminado: 1.0) |
-| `blocks.1.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 1 (predeterminado: 1.0) |
-| `blocks.2.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 2 (predeterminado: 1.0) |
-| `blocks.3.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 3 (predeterminado: 1.0) |
-| `blocks.4.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 4 (predeterminado: 1.0) |
-| `blocks.5.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 5 (predeterminado: 1.0) |
-| `blocks.6.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 6 (predeterminado: 1.0) |
-| `blocks.7.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 7 (predeterminado: 1.0) |
-| `blocks.8.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 8 (predeterminado: 1.0) |
-| `blocks.9.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 9 (predeterminado: 1.0) |
-| `blocks.10.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 10 (predeterminado: 1.0) |
-| `blocks.11.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 11 (predeterminado: 1.0) |
-| `blocks.12.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 12 (predeterminado: 1.0) |
-| `blocks.13.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 13 (predeterminado: 1.0) |
-| `blocks.14.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 14 (predeterminado: 1.0) |
-| `blocks.15.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 15 (predeterminado: 1.0) |
-| `blocks.16.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 16 (predeterminado: 1.0) |
-| `blocks.17.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 17 (predeterminado: 1.0) |
-| `blocks.18.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 18 (predeterminado: 1.0) |
-| `blocks.19.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 19 (predeterminado: 1.0) |
-| `blocks.20.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 20 (predeterminado: 1.0) |
-| `blocks.21.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 21 (predeterminado: 1.0) |
-| `blocks.22.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 22 (predeterminado: 1.0) |
-| `blocks.23.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 23 (predeterminado: 1.0) |
-| `blocks.24.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 24 (predeterminado: 1.0) |
-| `blocks.25.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 25 (predeterminado: 1.0) |
-| `blocks.26.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 26 (predeterminado: 1.0) |
-| `blocks.27.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación del bloque transformador 27 (predeterminado: 1.0) |
-| `final_layer.` | FLOAT | Sí | 0.0 - 1.0 | Peso de interpolación de la capa final (predeterminado: 1.0) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo1` | El primer modelo a fusionar | MODEL | Sí | - |
+| `modelo2` | El segundo modelo a fusionar | MODEL | Sí | - |
+| `pos_embedder.` | Peso de interpolación del incrustador de posición (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `x_embedder.` | Peso de interpolación del incrustador de entrada (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedder.` | Peso de interpolación del incrustador de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `t_embedding_norm.` | Peso de interpolación de la normalización del incrustador de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.0.` | Peso de interpolación del bloque transformador 0 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.1.` | Peso de interpolación del bloque transformador 1 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.2.` | Peso de interpolación del bloque transformador 2 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.3.` | Peso de interpolación del bloque transformador 3 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.4.` | Peso de interpolación del bloque transformador 4 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.5.` | Peso de interpolación del bloque transformador 5 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.6.` | Peso de interpolación del bloque transformador 6 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.7.` | Peso de interpolación del bloque transformador 7 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.8.` | Peso de interpolación del bloque transformador 8 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.9.` | Peso de interpolación del bloque transformador 9 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.10.` | Peso de interpolación del bloque transformador 10 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.11.` | Peso de interpolación del bloque transformador 11 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.12.` | Peso de interpolación del bloque transformador 12 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.13.` | Peso de interpolación del bloque transformador 13 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.14.` | Peso de interpolación del bloque transformador 14 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.15.` | Peso de interpolación del bloque transformador 15 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.16.` | Peso de interpolación del bloque transformador 16 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.17.` | Peso de interpolación del bloque transformador 17 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.18.` | Peso de interpolación del bloque transformador 18 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.19.` | Peso de interpolación del bloque transformador 19 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.20.` | Peso de interpolación del bloque transformador 20 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.21.` | Peso de interpolación del bloque transformador 21 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.22.` | Peso de interpolación del bloque transformador 22 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.23.` | Peso de interpolación del bloque transformador 23 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.24.` | Peso de interpolación del bloque transformador 24 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.25.` | Peso de interpolación del bloque transformador 25 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.26.` | Peso de interpolación del bloque transformador 26 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `blocks.27.` | Peso de interpolación del bloque transformador 27 (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
+| `final_layer.` | Peso de interpolación de la capa final (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `model` | MODEL | El modelo fusionado que combina características de ambos modelos de entrada |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `model` | El modelo fusionado que combina características de ambos modelos de entrada | MODEL |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeCosmosPredict2_2B/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `53a8de66d6b731f5b29af326832f66cc973284bc8fdf09d779575f2346cc75a7`

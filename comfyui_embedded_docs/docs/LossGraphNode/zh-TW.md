@@ -1,21 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LossGraphNode/zh-TW.md)
-
 ## 概述
 
 LossGraphNode 會根據訓練過程中的損失值，隨時間建立視覺化圖表，並以預覽影像的形式顯示。此節點接收來自訓練流程的損失資料，並生成一條折線圖，呈現損失值在訓練步驟中的變化情況。最終生成的圖表包含軸標籤以及損失的最小值與最大值。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `損失` | LOSS_MAP | 是 | - | 來自訓練節點的損失映射。 |
-| `檔案名稱前綴` | STRING | 是 | - | 儲存損失圖表影像時的前綴名稱。（預設值："loss_graph"） |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `損失` | 來自訓練節點的損失映射。 | LOSS_MAP | 是 | - |
+| `檔案名稱前綴` | 儲存損失圖表影像時的前綴名稱。（預設值："loss_graph"） | STRING | 是 | - |
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `ui.images` | IMAGE | 生成的損失圖表影像，以預覽形式顯示。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `ui.images` | 生成的損失圖表影像，以預覽形式顯示。 | IMAGE |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LossGraphNode/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `9b1c844cb4babafc61102ee7bfd1039c325c6665abff1721d92a6da7d18029f9`

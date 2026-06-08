@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,20 +30,20 @@ Wan Görüntüden Videoya düğümü, tek bir giriş görüntüsü ve bir metin 
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | Evet | "wan2.5-i2v-preview"<br>"wan2.6-i2v" | Kullanılacak model (varsayılan: "wan2.6-i2v") |
-| `görsel` | IMAGE | Evet | - | Video oluşturma için ilk kare görevi gören giriş görüntüsü. Tam olarak bir görüntü gereklidir. |
-| `istem` | STRING | Evet | - | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler (varsayılan: boş). |
-| `negatif_istem` | STRING | Hayır | - | Nelerden kaçınılacağını tanımlayan olumsuz istem (varsayılan: boş). |
-| `çözünürlük` | COMBO | Hayır | "480P"<br>"720P"<br>"1080P" | Video çözünürlük kalitesi (varsayılan: "720P"). Wan 2.6 modeli 480P'yi desteklemez. |
-| `süre` | INT | Hayır | 5-15 (adım: 5) | Oluşturulan videonun saniye cinsinden süresi. 15 saniyelik süre yalnızca Wan 2.6 modeli tarafından desteklenir (varsayılan: 5). |
-| `ses` | AUDIO | Hayır | - | Ses, net ve yüksek bir ses içermeli, gereksiz gürültü veya arka plan müziği olmamalıdır. Sağlandığında, ses süresi 3.0 ile 29.0 saniye arasında olmalıdır. |
-| `tohum` | INT | Hayır | 0-2147483647 | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). |
-| `ses_oluştur` | BOOLEAN | Hayır | - | Ses girişi sağlanmazsa, sesi otomatik olarak oluştur (varsayılan: False). |
-| `prompt_genişlet` | BOOLEAN | Hayır | - | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği (varsayılan: True). |
-| `filigran` | BOOLEAN | Hayır | - | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). |
-| `shot_type` | COMBO | Hayır | "single"<br>"multi" | Oluşturulan video için çekim türünü belirtir, yani videonun tek bir sürekli çekim mi yoksa kesmeli birden çok çekim mi olduğunu belirtir. Bu parametre yalnızca prompt_extend True olduğunda etkilidir (varsayılan: "single"). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Kullanılacak model (varsayılan: "wan2.6-i2v") | COMBO | Evet | "wan2.5-i2v-preview"<br>"wan2.6-i2v" |
+| `görsel` | Video oluşturma için ilk kare görevi gören giriş görüntüsü. Tam olarak bir görüntü gereklidir. | IMAGE | Evet | - |
+| `istem` | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çinceyi destekler (varsayılan: boş). | STRING | Evet | - |
+| `negatif_istem` | Nelerden kaçınılacağını tanımlayan olumsuz istem (varsayılan: boş). | STRING | Hayır | - |
+| `çözünürlük` | Video çözünürlük kalitesi (varsayılan: "720P"). Wan 2.6 modeli 480P'yi desteklemez. | COMBO | Hayır | "480P"<br>"720P"<br>"1080P" |
+| `süre` | Oluşturulan videonun saniye cinsinden süresi. 15 saniyelik süre yalnızca Wan 2.6 modeli tarafından desteklenir (varsayılan: 5). | INT | Hayır | 5-15 (adım: 5) |
+| `ses` | Ses, net ve yüksek bir ses içermeli, gereksiz gürültü veya arka plan müziği olmamalıdır. Sağlandığında, ses süresi 3.0 ile 29.0 saniye arasında olmalıdır. | AUDIO | Hayır | - |
+| `tohum` | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). | INT | Hayır | 0-2147483647 |
+| `ses_oluştur` | Ses girişi sağlanmazsa, sesi otomatik olarak oluştur (varsayılan: False). | BOOLEAN | Hayır | - |
+| `prompt_genişlet` | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği (varsayılan: True). | BOOLEAN | Hayır | - |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | - |
+| `shot_type` | Oluşturulan video için çekim türünü belirtir, yani videonun tek bir sürekli çekim mi yoksa kesmeli birden çok çekim mi olduğunu belirtir. Bu parametre yalnızca prompt_extend True olduğunda etkilidir (varsayılan: "single"). | COMBO | Hayır | "single"<br>"multi" |
 
 **Kısıtlamalar:**
 
@@ -56,9 +54,11 @@ Wan Görüntüden Videoya düğümü, tek bir giriş görüntüsü ve bir metin 
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | VIDEO | Giriş görüntüsüne ve isteme dayalı olarak oluşturulan video. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `output` | Giriş görüntüsüne ve isteme dayalı olarak oluşturulan video. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `ad4947dbb9c12ebb97ace99cd447431ba6db88a3b74239099fcbea501cff71f0`

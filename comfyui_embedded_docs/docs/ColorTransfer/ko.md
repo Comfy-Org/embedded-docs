@@ -1,18 +1,16 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/ko.md)
-
 # ColorTransfer (색상 전송)
 
 ColorTransfer 노드는 대상 이미지의 색상 팔레트를 참조 이미지의 색상과 일치하도록 조정합니다. 밝기, 대비, 색조 분포와 같은 색상 특성을 분석하고 전송하기 위해 다양한 수학적 알고리즘을 사용합니다. 이는 여러 이미지 간의 시각적 일관성을 만들거나 특정 색상 그레이드를 적용하는 데 유용합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `image_target` | IMAGE | 예 | - | 색상 변환을 적용할 이미지입니다. |
-| `image_ref` | IMAGE | 예 | - | 색상을 일치시킬 참조 이미지입니다. |
-| `method` | COMBO | 예 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` | 사용할 색상 전송 알고리즘입니다. |
-| `source_stats` | DYNAMICCOMBO | 예 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` | 소스(대상) 이미지에서 색상 통계를 계산하는 방식을 결정합니다. |
-| `strength` | FLOAT | 예 | 0.0 ~ 10.0 | 색상 전송 효과의 강도입니다. 1.0 값은 전체 변환을 적용하며, 0.0은 원본 이미지를 반환합니다. 기본값: 1.0 |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
+| --- | --- | --- | --- | --- |
+| `image_target` | 색상 변환을 적용할 이미지입니다. | IMAGE | 예 | - |
+| `image_ref` | 색상을 일치시킬 참조 이미지입니다. | IMAGE | 예 | - |
+| `method` | 사용할 색상 전송 알고리즘입니다. | COMBO | 예 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
+| `source_stats` | 소스(대상) 이미지에서 색상 통계를 계산하는 방식을 결정합니다. | DYNAMICCOMBO | 예 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `strength` | 색상 전송 효과의 강도입니다. 1.0 값은 전체 변환을 적용하며, 0.0은 원본 이미지를 반환합니다. 기본값: 1.0 | FLOAT | 예 | 0.0 ~ 10.0 |
 
 **매개변수 세부 설명:**
 *   **`source_stats` 옵션:**
@@ -28,9 +26,11 @@ ColorTransfer 노드는 대상 이미지의 색상 팔레트를 참조 이미지
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `image` | IMAGE | 색상 전송이 적용된 후의 결과 이미지입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `image` | 색상 전송이 적용된 후의 결과 이미지입니다. | IMAGE |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorTransfer/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `93a8447def4d2263a8a859c0474de694e6567dc6d32377032c2ddae2420bb10c`

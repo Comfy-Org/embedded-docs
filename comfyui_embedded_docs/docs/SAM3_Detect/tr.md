@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/tr.md)
-
 # SAM3 Algılama Düğümü
 
 ## Genel Bakış
@@ -8,17 +6,17 @@ SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya n
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
-| `model` | MODEL | Evet | - | Algılama ve bölütleme için kullanılacak SAM3 modeli |
-| `görüntü` | IMAGE | Evet | - | İşlenecek giriş görüntüsü |
-| `koşullandırma` | CONDITIONING | Hayır | - | CLIPTextEncode'dan metin koşullandırması. Metin istemleri kullanılarak algılama yapılırken gereklidir |
-| `sınırlayıcı_kutular` | BOUNDING_BOX | Hayır | - | İçinde bölütleme yapılacak sınırlayıcı kutular. Tek bir kutu (tüm karelere uygulanır), kutu listesi (tüm karelere uygulanır) veya liste listesi (kare başına kutular) olabilir. Metin koşullandırması olmadan sağlandığında, düğüm her kutunun içini bölütler |
-| `pozitif_koordinatlar` | STRING | Hayır | - | JSON formatında pozitif nokta istemleri `[{"x": int, "y": int}, ...]` piksel koordinatları kullanılarak. Bunlar bölütlemeye dahil etmek istediğiniz noktalardır |
-| `negatif_koordinatlar` | STRING | Hayır | - | JSON formatında negatif nokta istemleri `[{"x": int, "y": int}, ...]` piksel koordinatları kullanılarak. Bunlar bölütlemeden çıkarmak istediğiniz noktalardır |
-| `eşik` | FLOAT | Hayır | 0.0 ile 1.0 | Metin tabanlı algılamalar için güven eşiği. Bu değerin üzerinde puana sahip algılamalar korunur (varsayılan: 0.5) |
-| `iyileştirme_iterasyonları` | INT | Hayır | 0 ile 5 | SAM kodlayıcı iyileştirme geçiş sayısı. Daha yüksek değerler maske kalitesini artırabilir. İyileştirme olmadan ham dedektör maskelerini kullanmak için 0 olarak ayarlayın (varsayılan: 2) |
-| `bireysel_maskeler` | BOOLEAN | Hayır | True/False | Etkinleştirildiğinde, algılanan her nesne için ayrı maskeler çıktı olarak verir, tek bir maskede birleştirmek yerine (varsayılan: False) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model` | Algılama ve bölütleme için kullanılacak SAM3 modeli | MODEL | Evet | - |
+| `görüntü` | İşlenecek giriş görüntüsü | IMAGE | Evet | - |
+| `koşullandırma` | CLIPTextEncode'dan metin koşullandırması. Metin istemleri kullanılarak algılama yapılırken gereklidir | CONDITIONING | Hayır | - |
+| `sınırlayıcı_kutular` | İçinde bölütleme yapılacak sınırlayıcı kutular. Tek bir kutu (tüm karelere uygulanır), kutu listesi (tüm karelere uygulanır) veya liste listesi (kare başına kutular) olabilir. Metin koşullandırması olmadan sağlandığında, düğüm her kutunun içini bölütler | BOUNDING_BOX | Hayır | - |
+| `pozitif_koordinatlar` | JSON formatında pozitif nokta istemleri `[{"x": int, "y": int}, ...]` piksel koordinatları kullanılarak. Bunlar bölütlemeye dahil etmek istediğiniz noktalardır | STRING | Hayır | - |
+| `negatif_koordinatlar` | JSON formatında negatif nokta istemleri `[{"x": int, "y": int}, ...]` piksel koordinatları kullanılarak. Bunlar bölütlemeden çıkarmak istediğiniz noktalardır | STRING | Hayır | - |
+| `eşik` | Metin tabanlı algılamalar için güven eşiği. Bu değerin üzerinde puana sahip algılamalar korunur (varsayılan: 0.5) | FLOAT | Hayır | 0.0 ile 1.0 |
+| `iyileştirme_iterasyonları` | SAM kodlayıcı iyileştirme geçiş sayısı. Daha yüksek değerler maske kalitesini artırabilir. İyileştirme olmadan ham dedektör maskelerini kullanmak için 0 olarak ayarlayın (varsayılan: 2) | INT | Hayır | 0 ile 5 |
+| `bireysel_maskeler` | Etkinleştirildiğinde, algılanan her nesne için ayrı maskeler çıktı olarak verir, tek bir maskede birleştirmek yerine (varsayılan: False) | BOOLEAN | Hayır | True/False |
 
 ### Parametre Kısıtlamaları ve Notlar
 
@@ -31,10 +29,12 @@ SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya n
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `sınırlayıcı_kutular` | MASK | Bölütleme maskeleri. `bireysel_maskeler` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür |
-| `sınırlayıcı_kutular` | BOUNDING_BOX | Koordinatlar ve güven puanlarıyla algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `sınırlayıcı_kutular` | Bölütleme maskeleri. `bireysel_maskeler` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür | MASK |
+| `sınırlayıcı_kutular` | Koordinatlar ve güven puanlarıyla algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir | BOUNDING_BOX |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `d073bda7eca934f3c64e1be740f5fb5249d27046a8be5902ea5d2245d5f679ea`

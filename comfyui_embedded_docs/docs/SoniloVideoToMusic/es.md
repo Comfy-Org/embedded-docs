@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SoniloVideoToMusic/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,17 +30,19 @@ Genera música a partir de video utilizando el modelo de IA de Sonilo. Este nodo
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `video` | VIDEO | Sí | - | Video de entrada para generar música. Duración máxima: 6 minutos. |
-| `prompt` | STRING | No | - | Indicación textual opcional para guiar la generación musical. Déjelo vacío para obtener la mejor calidad: el modelo analizará completamente el contenido del video. (predeterminado: cadena vacía) |
-| `seed` | INT | No | 0 a 18446744073709551615 | Semilla para reproducibilidad. Actualmente ignorada por el servicio Sonilo, pero se mantiene para la consistencia del grafo. (predeterminado: 0) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `video` | Video de entrada para generar música. Duración máxima: 6 minutos. | VIDEO | Sí | - |
+| `prompt` | Indicación textual opcional para guiar la generación musical. Déjelo vacío para obtener la mejor calidad: el modelo analizará completamente el contenido del video. (predeterminado: cadena vacía) | STRING | No | - |
+| `seed` | Semilla para reproducibilidad. Actualmente ignorada por el servicio Sonilo, pero se mantiene para la consistencia del grafo. (predeterminado: 0) | INT | No | 0 a 18446744073709551615 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `audio` | AUDIO | La música generada como archivo de audio. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `audio` | La música generada como archivo de audio. | AUDIO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SoniloVideoToMusic/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `542fff1d8db8e48156bf9d1ff4690c91a7d71676332eef4708a6d36686abb31e`

@@ -1,5 +1,3 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/zh-TW.md)
-
 以下是將英文 ComfyUI 節點文檔翻譯成繁體中文的結果：
 
 `Load3DAnimation` 節點是一個用於載入和處理 3D 模型檔案的核心節點。載入節點時，它會自動從 `ComfyUI/input/3d/` 目錄中檢索可用的 3D 資源。您也可以使用上傳功能上傳支援的 3D 檔案進行預覽。
@@ -19,23 +17,23 @@
 
 ## 輸入
 
-| 參數名稱 | 類型 | 描述 | 預設值 | 範圍 |
-|---|---|---|---|---|
-| `model_file` | 檔案選擇 | 3D 模型檔案路徑，支援上傳，預設從 `ComfyUI/input/3d/` 讀取模型檔案 | - | 支援的格式 |
-| `width` | INT | 畫布渲染寬度 | 1024 | 1-4096 |
-| `height` | INT | 畫布渲染高度 | 1024 | 1-4096 |
+| 參數名稱 | 描述 | 類型 | 預設值 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `model_file` | 3D 模型檔案路徑，支援上傳，預設從 `ComfyUI/input/3d/` 讀取模型檔案 | 檔案選擇 | - | 支援的格式 |
+| `width` | 畫布渲染寬度 | INT | 1024 | 1-4096 |
+| `height` | 畫布渲染高度 | INT | 1024 | 1-4096 |
 
 ## 輸出
 
-| 參數名稱 | 資料類型 | 描述 |
-|---|---|---|
-| `image` | IMAGE | 畫布渲染的影像 |
-| `mask` | MASK | 包含當前模型位置的遮罩 |
-| `mesh_path` | STRING | 模型檔案路徑 |
-| `normal` | IMAGE | 法線貼圖 |
-| `lineart` | IMAGE | 線稿影像輸出，可在畫布模型選單中調整對應的 `edge_threshold` |
-| `camera_info` | LOAD3D_CAMERA | 相機資訊 |
-| `recording_video` | VIDEO | 錄製的影片（僅當存在錄製時） |
+| 參數名稱 | 描述 | 資料類型 |
+| --- | --- | --- |
+| `image` | 畫布渲染的影像 | IMAGE |
+| `mask` | 包含當前模型位置的遮罩 | MASK |
+| `mesh_path` | 模型檔案路徑 | STRING |
+| `normal` | 法線貼圖 | IMAGE |
+| `lineart` | 線稿影像輸出，可在畫布模型選單中調整對應的 `edge_threshold` | IMAGE |
+| `camera_info` | 相機資訊 | LOAD3D_CAMERA |
+| `recording_video` | 錄製的影片（僅當存在錄製時） | VIDEO |
 
 所有輸出預覽：
 ![檢視操作示範](../Load3D/asset/load3d_outputs.webp)
@@ -137,3 +135,5 @@ Load3D 節點的畫布區域包含大量檢視操作，包括：
 
 1. **重置檢視比例**：點擊按鈕後，檢視將根據設定的寬度和高度調整畫布渲染區域比例
 2. **影片錄製**：允許您將當前的 3D 檢視操作錄製為影片，允許匯入，並可以作為 `recording_video` 輸出到後續節點
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAnimation/zh-TW.md)

@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ImageToVideoApi/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,27 +30,29 @@ El nodo Wan 2.7 Image to Video genera un video a partir de una imagen de primer 
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `modelo` | COMBO | Sí | `"wan2.7-i2v"` | El modelo de IA a utilizar para la generación de video. |
-| `model.prompt` | STRING | Sí | - | Una descripción textual de los elementos y características visuales que deseas en el video. Admite inglés y chino. |
-| `model.negative_prompt` | STRING | Sí | - | Una descripción textual de elementos o características que deseas que el modelo evite. |
-| `model.resolution` | COMBO | Sí | `"720P"`<br>`"1080P"` | La resolución del video de salida. |
-| `model.duration` | INT | Sí | 2 a 15 | La duración del video generado en segundos (predeterminado: 5). |
-| `primer_fotograma` | IMAGE | Sí | - | La imagen que se usará como primer fotograma del video. La relación de aspecto del video de salida se deriva de esta imagen. |
-| `último_fotograma` | IMAGE | No | - | Una imagen opcional para usar como último fotograma. Al proporcionarla, el modelo genera un video que realiza una transición desde el primer fotograma hasta este último. |
-| `audio` | AUDIO | No | - | Un archivo de audio opcional para guiar la generación del video, útil para sincronización labial o movimiento sincronizado con el ritmo. La duración debe estar entre 2 y 30 segundos. Si no se proporciona, el modelo generará música de fondo o efectos de sonido acordes. |
-| `semilla` | INT | Sí | 0 a 2147483647 | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 0). |
-| `extender_prompt` | BOOLEAN | Sí | - | Cuando está habilitado, el nodo utilizará asistencia de IA para mejorar tu prompt de texto (predeterminado: True). Esta es una configuración avanzada. |
-| `marca_de_agua` | BOOLEAN | Sí | - | Cuando está habilitado, se añadirá una marca de agua generada por IA al video final (predeterminado: False). Esta es una configuración avanzada. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo de IA a utilizar para la generación de video. | COMBO | Sí | `"wan2.7-i2v"` |
+| `model.prompt` | Una descripción textual de los elementos y características visuales que deseas en el video. Admite inglés y chino. | STRING | Sí | - |
+| `model.negative_prompt` | Una descripción textual de elementos o características que deseas que el modelo evite. | STRING | Sí | - |
+| `model.resolution` | La resolución del video de salida. | COMBO | Sí | `"720P"`<br>`"1080P"` |
+| `model.duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 2 a 15 |
+| `primer_fotograma` | La imagen que se usará como primer fotograma del video. La relación de aspecto del video de salida se deriva de esta imagen. | IMAGE | Sí | - |
+| `último_fotograma` | Una imagen opcional para usar como último fotograma. Al proporcionarla, el modelo genera un video que realiza una transición desde el primer fotograma hasta este último. | IMAGE | No | - |
+| `audio` | Un archivo de audio opcional para guiar la generación del video, útil para sincronización labial o movimiento sincronizado con el ritmo. La duración debe estar entre 2 y 30 segundos. Si no se proporciona, el modelo generará música de fondo o efectos de sonido acordes. | AUDIO | No | - |
+| `semilla` | Un valor de semilla para controlar la aleatoriedad de la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
+| `extender_prompt` | Cuando está habilitado, el nodo utilizará asistencia de IA para mejorar tu prompt de texto (predeterminado: True). Esta es una configuración avanzada. | BOOLEAN | Sí | - |
+| `marca_de_agua` | Cuando está habilitado, se añadirá una marca de agua generada por IA al video final (predeterminado: False). Esta es una configuración avanzada. | BOOLEAN | Sí | - |
 
 **Nota:** La entrada `audio` tiene una restricción de duración. Si se proporciona, el archivo de audio debe tener una duración de entre 2 y 30 segundos.
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `output` | VIDEO | El archivo de video generado. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | El archivo de video generado. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ImageToVideoApi/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `ccd18dca3b191f2cbe64b6c2b941a7efcf281e4f327329d932cec27fd8234133`

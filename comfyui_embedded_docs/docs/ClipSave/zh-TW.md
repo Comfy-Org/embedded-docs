@@ -1,17 +1,15 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/zh-TW.md)
-
 ## 概述
 
 `CLIPSave` 節點將 CLIP 文字編碼器模型以 SafeTensors 格式儲存至磁碟。此節點專為進階模型合併工作流程設計，會根據模型的內部結構自動將 CLIP 模型分離為其組成部分（例如 CLIP-L、CLIP-G 或 T5XXL），並將每個元件儲存為單獨的檔案。
 
 ## 輸入
 
-| 參數 | 資料類型 | 輸入類型 | 預設值 | 範圍 | 說明 |
-|-----------|-----------|------------|---------|-------|-------------|
-| `clip` | CLIP | 必要 | - | - | 要儲存的 CLIP 模型。 |
-| `檔名前綴` | STRING | 必要 | `clip/ComfyUI` | - | 儲存檔案的前置路徑與檔名。節點會附加元件後綴（例如 `_clip_l`、`_clip_g`）及計數器，以產生唯一的檔案名稱。 |
-| `prompt` | PROMPT | 隱藏 | - | - | 工作流程提示資訊，會以元資料形式儲存在輸出檔案中。 |
-| `extra_pnginfo` | EXTRA_PNGINFO | 隱藏 | - | - | 額外的元資料，會以鍵值對形式儲存在輸出檔案中。 |
+| 參數 | 說明 | 資料類型 | 輸入類型 | 預設值 | 範圍 |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | 要儲存的 CLIP 模型。 | CLIP | 必要 | - | - |
+| `檔名前綴` | 儲存檔案的前置路徑與檔名。節點會附加元件後綴（例如 `_clip_l`、`_clip_g`）及計數器，以產生唯一的檔案名稱。 | STRING | 必要 | `clip/ComfyUI` | - |
+| `prompt` | 工作流程提示資訊，會以元資料形式儲存在輸出檔案中。 | PROMPT | 隱藏 | - | - |
+| `extra_pnginfo` | 額外的元資料，會以鍵值對形式儲存在輸出檔案中。 | EXTRA_PNGINFO | 隱藏 | - | - |
 
 ## 輸出
 
@@ -35,6 +33,8 @@
 - 空白前綴（其他 CLIP 元件）
 
 對於每個偵測到的元件，節點會建立一個名為 `{filename_prefix}_{counter:05}_.safetensors` 的檔案，其中元件前綴會附加在檔名前綴之後（例如 `clip/ComfyUI_clip_l_00001_.safetensors`）。在儲存過程中，`transformer.` 前綴會從參數鍵中移除。
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

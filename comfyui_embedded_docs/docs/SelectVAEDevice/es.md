@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectVAEDevice/es.md)
-
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectVAEDevice/en.md)
 
 ## Resumen
@@ -8,16 +6,18 @@ Este nodo permite seleccionar manualmente en qué dispositivo GPU debe colocarse
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `vae` | VAE | Sí | | El modelo VAE que se asignará a un dispositivo específico. |
-| `dispositivo` | COMBO | Sí | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | El dispositivo de destino para el VAE. `"default"` restaura el dispositivo asignado por el cargador. `"gpu:N"` fija el VAE a la N-ésima GPU disponible. La CPU no es una opción compatible y será ignorada si se proporciona. (predeterminado: `"default"`) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `vae` | El modelo VAE que se asignará a un dispositivo específico. | VAE | Sí |  |
+| `dispositivo` | El dispositivo de destino para el VAE. `"default"` restaura el dispositivo asignado por el cargador. `"gpu:N"` fija el VAE a la N-ésima GPU disponible. La CPU no es una opción compatible y será ignorada si se proporciona. (predeterminado: `"default"`) | COMBO | Sí | `"default"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `vae` | VAE | El modelo VAE, ahora asignado al dispositivo seleccionado. Si el dispositivo solicitado no está disponible o no es válido, el VAE se pasa sin cambios. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `vae` | El modelo VAE, ahora asignado al dispositivo seleccionado. Si el dispositivo solicitado no está disponible o no es válido, el VAE se pasa sin cambios. | VAE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectVAEDevice/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `011154043fc02f930b0074de656bb24baf4dfe74bcfd2e89ea76284f0a5b7d8e`

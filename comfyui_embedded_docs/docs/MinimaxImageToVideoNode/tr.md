@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxImageToVideoNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,18 +30,20 @@ MiniMax'ın API'sini kullanarak bir görsel ve metin istemine dayalı olarak, is
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `görüntü` | IMAGE | Evet | - | Video oluşturmanın ilk karesi olarak kullanılacak görsel |
-| `istem_metni` | STRING | Evet | - | Video oluşturmayı yönlendirecek metin istemi (varsayılan: boş dize) |
-| `model` | COMBO | Evet | "I2V-01-Direktör"<br>"I2V-01"<br>"I2V-01-canlı" | Video oluşturma için kullanılacak model (varsayılan: "I2V-01") |
-| `tohum` | INT | Hayır | 0 ile 18446744073709551615 arası | Gürültü oluşturmak için kullanılan rastgele tohum (varsayılan: 0) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `görüntü` | Video oluşturmanın ilk karesi olarak kullanılacak görsel | IMAGE | Evet | - |
+| `istem_metni` | Video oluşturmayı yönlendirecek metin istemi (varsayılan: boş dize) | STRING | Evet | - |
+| `model` | Video oluşturma için kullanılacak model (varsayılan: "I2V-01") | COMBO | Evet | "I2V-01-Direktör"<br>"I2V-01"<br>"I2V-01-canlı" |
+| `tohum` | Gürültü oluşturmak için kullanılan rastgele tohum (varsayılan: 0) | INT | Hayır | 0 ile 18446744073709551615 arası |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video çıktısı |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `output` | Oluşturulan video çıktısı | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxImageToVideoNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `9ad1659352e363361f09d6a7a0e24835056b20cc84532247251f516b0ac284e8`

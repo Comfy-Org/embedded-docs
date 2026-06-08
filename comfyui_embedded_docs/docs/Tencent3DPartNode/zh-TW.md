@@ -1,21 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DPartNode/zh-TW.md)
-
 此節點使用騰訊混元3D API自動分析3D模型，並根據其結構生成或識別其組成部件。它會處理模型並回傳一個新的FBX檔案。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `model_3d` | FILE3D | 是 | FBX, Any | 要處理的3D模型。模型應為FBX格式，且面數少於30000個。 |
-| `seed` | INT | 否 | 0 到 2147483647 | 用於控制節點是否應重新執行的種子值。無論種子值為何，結果皆為非確定性。（預設值：0） |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `model_3d` | 要處理的3D模型。模型應為FBX格式，且面數少於30000個。 | FILE3D | 是 | FBX, Any |
+| `seed` | 用於控制節點是否應重新執行的種子值。無論種子值為何，結果皆為非確定性。（預設值：0） | INT | 否 | 0 到 2147483647 |
 
 **注意：** `model_3d` 輸入僅支援FBX格式的檔案。如果提供其他3D檔案格式，此節點將會引發錯誤。
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `FBX` | FILE3DFBX | 處理後的3D模型，以FBX檔案形式回傳。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `FBX` | 處理後的3D模型，以FBX檔案形式回傳。 | FILE3DFBX |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DPartNode/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `eae7d0197d4391af1f5f24f120c64f1045649182108affad10b9a00f329310fe`

@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanReferenceVideoApi/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,17 +30,17 @@ El nodo Wan Referencia a Video utiliza la apariencia visual y la voz de uno o m�
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|-----------|----------|-------|-------------|
-| `modelo` | COMBO | Sí | `"wan2.6-r2v"` | El modelo de IA específico a utilizar para la generación de video. |
-| `prompt` | STRING | Sí | - | Una descripción de los elementos y características visuales para el nuevo video. Admite inglés y chino. Usa identificadores como `character1` y `character2` para referirte a los personajes de los videos de referencia. |
-| `prompt_negativo` | STRING | No | - | Una descripción de elementos o características a evitar en el video generado. |
-| `videos_de_referencia` | AUTOGROW | Sí | - | Una lista de entradas de video utilizadas como referencia para la apariencia y voz de los personajes. Debes proporcionar al menos un video. A cada video se le puede asignar un nombre como `character1`, `character2` o `character3`. |
-| `tamaño` | COMBO | Sí | `"720p: 1:1 (960x960)"`<br>`"720p: 16:9 (1280x720)"`<br>`"720p: 9:16 (720x1280)"`<br>`"720p: 4:3 (1088x832)"`<br>`"720p: 3:4 (832x1088)"`<br>`"1080p: 1:1 (1440x1440)"`<br>`"1080p: 16:9 (1920x1080)"`<br>`"1080p: 9:16 (1080x1920)"`<br>`"1080p: 4:3 (1632x1248)"`<br>`"1080p: 3:4 (1248x1632)"` | La resolución y relación de aspecto para el video de salida. |
-| `duración` | INT | Sí | 5 a 10 | La duración del video generado en segundos. El valor debe ser un múltiplo de 5 (predeterminado: 5). |
-| `semilla` | INT | No | 0 a 2147483647 | Un valor de semilla aleatoria para obtener resultados reproducibles. Un valor de 0 generará una semilla aleatoria. |
-| `tipo_de_toma` | COMBO | Sí | `"single"`<br>`"multi"` | Especifica si el video generado es una toma continua única o contiene múltiples tomas con cortes. |
-| `marca_de_agua` | BOOLEAN | No | - | Cuando está habilitado, se agrega una marca de agua generada por IA al video final (predeterminado: False). |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | El modelo de IA específico a utilizar para la generación de video. | COMBO | Sí | `"wan2.6-r2v"` |
+| `prompt` | Una descripción de los elementos y características visuales para el nuevo video. Admite inglés y chino. Usa identificadores como `character1` y `character2` para referirte a los personajes de los videos de referencia. | STRING | Sí | - |
+| `prompt_negativo` | Una descripción de elementos o características a evitar en el video generado. | STRING | No | - |
+| `videos_de_referencia` | Una lista de entradas de video utilizadas como referencia para la apariencia y voz de los personajes. Debes proporcionar al menos un video. A cada video se le puede asignar un nombre como `character1`, `character2` o `character3`. | AUTOGROW | Sí | - |
+| `tamaño` | La resolución y relación de aspecto para el video de salida. | COMBO | Sí | `"720p: 1:1 (960x960)"`<br>`"720p: 16:9 (1280x720)"`<br>`"720p: 9:16 (720x1280)"`<br>`"720p: 4:3 (1088x832)"`<br>`"720p: 3:4 (832x1088)"`<br>`"1080p: 1:1 (1440x1440)"`<br>`"1080p: 16:9 (1920x1080)"`<br>`"1080p: 9:16 (1080x1920)"`<br>`"1080p: 4:3 (1632x1248)"`<br>`"1080p: 3:4 (1248x1632)"` |
+| `duración` | La duración del video generado en segundos. El valor debe ser un múltiplo de 5 (predeterminado: 5). | INT | Sí | 5 a 10 |
+| `semilla` | Un valor de semilla aleatoria para obtener resultados reproducibles. Un valor de 0 generará una semilla aleatoria. | INT | No | 0 a 2147483647 |
+| `tipo_de_toma` | Especifica si el video generado es una toma continua única o contiene múltiples tomas con cortes. | COMBO | Sí | `"single"`<br>`"multi"` |
+| `marca_de_agua` | Cuando está habilitado, se agrega una marca de agua generada por IA al video final (predeterminado: False). | BOOLEAN | No | - |
 
 **Restricciones:**
 
@@ -51,9 +49,11 @@ El nodo Wan Referencia a Video utiliza la apariencia visual y la voz de uno o m�
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|-------------|-----------|-------------|
-| `output` | VIDEO | El archivo de video recién generado. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | El archivo de video recién generado. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanReferenceVideoApi/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `ed29f0bd3a1b30a81c94896976c4f9ff7bf5d0bcafaba66d70be61fce1418962`

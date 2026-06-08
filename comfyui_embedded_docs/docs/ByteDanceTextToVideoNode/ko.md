@@ -1,22 +1,20 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/ko.md)
-
 # ByteDance Text to Video 노드
 
 ByteDance Text to Video 노드는 API를 통해 ByteDance 모델을 사용하여 텍스트 프롬프트를 기반으로 비디오를 생성합니다. 텍스트 설명과 다양한 비디오 설정을 입력으로 받아 지정된 사양에 맞는 비디오를 생성합니다. 이 노드는 API 통신을 처리하고 생성된 비디오를 출력으로 반환합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `model` | STRING | 예 | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-t2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` | 비디오 생성에 사용할 ByteDance 모델입니다 (기본값: `"seedance-1-0-pro-fast-251015"`). |
-| `prompt` | STRING | 예 | - | 비디오를 생성하는 데 사용되는 텍스트 프롬프트입니다. |
-| `resolution` | STRING | 예 | `"480p"`<br>`"720p"`<br>`"1080p"` | 출력 비디오의 해상도입니다. |
-| `aspect_ratio` | STRING | 예 | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` | 출력 비디오의 화면 비율입니다. |
-| `duration` | INT | 예 | 3 ~ 12 | 출력 비디오의 길이(초)입니다 (기본값: 5). |
-| `seed` | INT | 아니요 | 0 ~ 2147483647 | 생성에 사용할 시드입니다 (기본값: 0). |
-| `camera_fixed` | BOOLEAN | 아니요 | - | 카메라를 고정할지 여부를 지정합니다. 플랫폼은 프롬프트에 카메라를 고정하는 명령을 추가하지만 실제 효과는 보장하지 않습니다 (기본값: False). |
-| `watermark` | BOOLEAN | 아니요 | - | 비디오에 "AI 생성" 워터마크를 추가할지 여부입니다 (기본값: False). |
-| `generate_audio` | BOOLEAN | 아니요 | - | 이 매개변수는 `seedance-1-5-pro-251215` 모델을 제외한 모든 모델에서 무시됩니다 (기본값: False). |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `model` | 비디오 생성에 사용할 ByteDance 모델입니다 (기본값: `"seedance-1-0-pro-fast-251015"`). | STRING | 예 | `"seedance-1-5-pro-251215"`<br>`"seedance-1-0-pro-250528"`<br>`"seedance-1-0-lite-t2v-250428"`<br>`"seedance-1-0-pro-fast-251015"` |
+| `prompt` | 비디오를 생성하는 데 사용되는 텍스트 프롬프트입니다. | STRING | 예 | - |
+| `resolution` | 출력 비디오의 해상도입니다. | STRING | 예 | `"480p"`<br>`"720p"`<br>`"1080p"` |
+| `aspect_ratio` | 출력 비디오의 화면 비율입니다. | STRING | 예 | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"` |
+| `duration` | 출력 비디오의 길이(초)입니다 (기본값: 5). | INT | 예 | 3 ~ 12 |
+| `seed` | 생성에 사용할 시드입니다 (기본값: 0). | INT | 아니요 | 0 ~ 2147483647 |
+| `camera_fixed` | 카메라를 고정할지 여부를 지정합니다. 플랫폼은 프롬프트에 카메라를 고정하는 명령을 추가하지만 실제 효과는 보장하지 않습니다 (기본값: False). | BOOLEAN | 아니요 | - |
+| `watermark` | 비디오에 "AI 생성" 워터마크를 추가할지 여부입니다 (기본값: False). | BOOLEAN | 아니요 | - |
+| `generate_audio` | 이 매개변수는 `seedance-1-5-pro-251215` 모델을 제외한 모든 모델에서 무시됩니다 (기본값: False). | BOOLEAN | 아니요 | - |
 
 **매개변수 제약 조건:**
 
@@ -28,9 +26,11 @@ ByteDance Text to Video 노드는 API를 통해 ByteDance 모델을 사용하여
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `output` | VIDEO | 생성된 비디오 파일입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `output` | 생성된 비디오 파일입니다. | VIDEO |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `44ea3e40b99b337340cc39be1c5b6c903680591f1de49b1f2e82f398979355c5`

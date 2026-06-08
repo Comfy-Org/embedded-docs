@@ -1,23 +1,21 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/fr.md)
-
 Le KSampler fonctionne de la manière suivante : il modifie les informations de l'image latente originale fournie en fonction d'un modèle spécifique et de conditions positives et négatives.
 Tout d'abord, il ajoute du bruit aux données de l'image originale selon la **graine (seed)** et la **force de débruitage (denoise strength)** définies, puis il utilise le **Modèle (Model)** prédéfini combiné aux conditions de guidage **positives** et **négatives** pour générer l'image.
 
 ## Entrées
 
-| Nom du paramètre      | Type de données | Requis | Valeur par défaut | Plage/Options            | Description                                                                                                 |
-| --------------------- | --------------- | ------ | ----------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| Model                 | checkpoint      | Oui    | Aucun             | -                        | Modèle d'entrée utilisé pour le processus de débruitage                                                      |
-| seed                  | Int             | Oui    | 0                 | 0 ~ 18446744073709551615 | Utilisé pour générer un bruit aléatoire ; l'utilisation de la même "seed" génère des images identiques       |
-| steps                 | Int             | Oui    | 20                | 1 ~ 10000                | Nombre d'étapes à utiliser dans le processus de débruitage ; plus d'étapes donnent des résultats plus précis |
-| cfg                   | float           | Oui    | 8.0               | 0.0 ~ 100.0              | Contrôle la fidélité de l'image générée aux conditions d'entrée ; 6-8 recommandé                            |
-| sampler_name          | Option d'interface | Oui    | Aucun             | Plusieurs algorithmes    | Choisir l'échantillonneur pour le débruitage ; affecte la vitesse et le style de génération                 |
-| scheduler             | Option d'interface | Oui    | Aucun             | Plusieurs planificateurs | Contrôle la suppression du bruit ; affecte le processus de génération                                        |
-| Positive              | conditioning    | Oui    | Aucun             | -                        | Conditions positives guidant le débruitage ; ce que vous voulez voir apparaître dans l'image                |
-| Negative              | conditioning    | Oui    | Aucun             | -                        | Conditions négatives guidant le débruitage ; ce que vous ne voulez pas dans l'image                         |
-| Latent_Image          | Latent          | Oui    | Aucun             | -                        | Image latente utilisée pour le débruitage                                                                    |
-| denoise               | float           | Non    | 1.0               | 0.0 ~ 1.0                | Détermine le taux de suppression du bruit ; des valeurs plus faibles signifient moins de lien avec l'image d'entrée |
-| control_after_generate | Option d'interface | Non    | Aucun             | Aléatoire/Croissant/Décroissant/Conserver | Permet de modifier la graine après chaque invite                              |
+| Nom du paramètre | Description | Type de données | Requis | Valeur par défaut | Plage/Options |
+| --- | --- | --- | --- | --- | --- |
+| Model | Modèle d'entrée utilisé pour le processus de débruitage | checkpoint | Oui | Aucun | - |
+| seed | Utilisé pour générer un bruit aléatoire ; l'utilisation de la même "seed" génère des images identiques | Int | Oui | 0 | 0 ~ 18446744073709551615 |
+| steps | Nombre d'étapes à utiliser dans le processus de débruitage ; plus d'étapes donnent des résultats plus précis | Int | Oui | 20 | 1 ~ 10000 |
+| cfg | Contrôle la fidélité de l'image générée aux conditions d'entrée ; 6-8 recommandé | float | Oui | 8.0 | 0.0 ~ 100.0 |
+| sampler_name | Choisir l'échantillonneur pour le débruitage ; affecte la vitesse et le style de génération | Option d'interface | Oui | Aucun | Plusieurs algorithmes |
+| scheduler | Contrôle la suppression du bruit ; affecte le processus de génération | Option d'interface | Oui | Aucun | Plusieurs planificateurs |
+| Positive | Conditions positives guidant le débruitage ; ce que vous voulez voir apparaître dans l'image | conditioning | Oui | Aucun | - |
+| Negative | Conditions négatives guidant le débruitage ; ce que vous ne voulez pas dans l'image | conditioning | Oui | Aucun | - |
+| Latent_Image | Image latente utilisée pour le débruitage | Latent | Oui | Aucun | - |
+| denoise | Détermine le taux de suppression du bruit ; des valeurs plus faibles signifient moins de lien avec l'image d'entrée | float | Non | 1.0 | 0.0 ~ 1.0 |
+| control_after_generate | Permet de modifier la graine après chaque invite | Option d'interface | Non | Aucun | Aléatoire/Croissant/Décroissant/Conserver |
 
 ## Sortie
 
@@ -82,3 +80,5 @@ class KSampler:
         return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
 
 ```
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KSampler/fr.md)

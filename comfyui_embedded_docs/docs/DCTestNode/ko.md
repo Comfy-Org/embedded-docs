@@ -1,19 +1,17 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DCTestNode/ko.md)
-
 DCTestNode는 사용자가 동적 콤보 상자에서 선택한 내용에 따라 서로 다른 유형의 데이터를 반환하는 논리 노드입니다. 이 노드는 조건부 라우터 역할을 하며, 선택된 옵션에 따라 활성화되는 입력 필드와 노드가 출력할 값의 유형이 결정됩니다.
 
 ## 입력
 
-| 매개변수 | 데이터 유형 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `combo` | COMBO | 예 | `"option1"`<br>`"option2"`<br>`"option3"`<br>`"option4"` | 어떤 입력 필드가 활성화되고 노드가 무엇을 출력할지 결정하는 주요 선택 항목입니다. |
-| `string` | STRING | 아니요 | - | 텍스트 입력 필드입니다. 이 필드는 `combo`가 `"option1"`으로 설정된 경우에만 활성화되며 필수 항목입니다. |
-| `integer` | INT | 아니요 | - | 정수 입력 필드입니다. 이 필드는 `combo`가 `"option2"`로 설정된 경우에만 활성화되며 필수 항목입니다. |
-| `image` | IMAGE | 아니요 | - | 이미지 입력 필드입니다. 이 필드는 `combo`가 `"option3"`으로 설정된 경우에만 활성화되며 필수 항목입니다. |
-| `subcombo` | COMBO | 아니요 | `"opt1"`<br>`"opt2"` | `combo`가 `"option4"`로 설정된 경우 나타나는 보조 선택 항목입니다. 중첩된 입력 필드 중 어떤 것이 활성화될지 결정합니다. |
-| `float_x` | FLOAT | 아니요 | - | 소수 입력 필드입니다. 이 필드는 `combo`가 `"option4"`로 설정되고 `subcombo`가 `"opt1"`로 설정된 경우에만 활성화되며 필수 항목입니다. |
-| `float_y` | FLOAT | 아니요 | - | 소수 입력 필드입니다. 이 필드는 `combo`가 `"option4"`로 설정되고 `subcombo`가 `"opt1"`로 설정된 경우에만 활성화되며 필수 항목입니다. |
-| `mask1` | MASK | 아니요 | - | 마스크 입력 필드입니다. 이 필드는 `combo`가 `"option4"`로 설정되고 `subcombo`가 `"opt2"`로 설정된 경우에만 활성화됩니다. 선택 사항입니다. |
+| 매개변수 | 설명 | 데이터 유형 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `combo` | 어떤 입력 필드가 활성화되고 노드가 무엇을 출력할지 결정하는 주요 선택 항목입니다. | COMBO | 예 | `"option1"`<br>`"option2"`<br>`"option3"`<br>`"option4"` |
+| `string` | 텍스트 입력 필드입니다. 이 필드는 `combo`가 `"option1"`으로 설정된 경우에만 활성화되며 필수 항목입니다. | STRING | 아니요 | - |
+| `integer` | 정수 입력 필드입니다. 이 필드는 `combo`가 `"option2"`로 설정된 경우에만 활성화되며 필수 항목입니다. | INT | 아니요 | - |
+| `image` | 이미지 입력 필드입니다. 이 필드는 `combo`가 `"option3"`으로 설정된 경우에만 활성화되며 필수 항목입니다. | IMAGE | 아니요 | - |
+| `subcombo` | `combo`가 `"option4"`로 설정된 경우 나타나는 보조 선택 항목입니다. 중첩된 입력 필드 중 어떤 것이 활성화될지 결정합니다. | COMBO | 아니요 | `"opt1"`<br>`"opt2"` |
+| `float_x` | 소수 입력 필드입니다. 이 필드는 `combo`가 `"option4"`로 설정되고 `subcombo`가 `"opt1"`로 설정된 경우에만 활성화되며 필수 항목입니다. | FLOAT | 아니요 | - |
+| `float_y` | 소수 입력 필드입니다. 이 필드는 `combo`가 `"option4"`로 설정되고 `subcombo`가 `"opt1"`로 설정된 경우에만 활성화되며 필수 항목입니다. | FLOAT | 아니요 | - |
+| `mask1` | 마스크 입력 필드입니다. 이 필드는 `combo`가 `"option4"`로 설정되고 `subcombo`가 `"opt2"`로 설정된 경우에만 활성화됩니다. 선택 사항입니다. | MASK | 아니요 | - |
 
 **매개변수 제약 조건:**
 
@@ -22,9 +20,11 @@ DCTestNode는 사용자가 동적 콤보 상자에서 선택한 내용에 따라
 
 ## 출력
 
-| 출력 이름 | 데이터 유형 | 설명 |
-|-------------|-----------|-------------|
-| `output` | ANYTYPE | 출력은 선택된 `combo` 옵션에 따라 달라집니다. STRING(`"option1"`), INT(`"option2"`), IMAGE(`"option3"`) 또는 `subcombo` 딕셔너리의 문자열 표현(`"option4"`)이 될 수 있습니다. |
+| 출력 이름 | 설명 | 데이터 유형 |
+| --- | --- | --- |
+| `output` | 출력은 선택된 `combo` 옵션에 따라 달라집니다. STRING(`"option1"`), INT(`"option2"`), IMAGE(`"option3"`) 또는 `subcombo` 딕셔너리의 문자열 표현(`"option4"`)이 될 수 있습니다. | ANYTYPE |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DCTestNode/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `98c4ca2100a27594df360935cc1507960480fe75a76ca0df2af75925d399be00`

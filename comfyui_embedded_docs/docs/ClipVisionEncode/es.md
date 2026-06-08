@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionEncode/es.md)
-
 El nodo `CLIP Vision Encode` es un nodo de codificación de imágenes en ComfyUI, utilizado para convertir imágenes de entrada en vectores de características visuales a través del modelo CLIP Vision. Este nodo constituye un puente importante entre la comprensión de imágenes y texto, y se utiliza ampliamente en diversos flujos de trabajo de generación y procesamiento de imágenes con IA.
 
 **Funcionalidad del nodo**
@@ -10,17 +8,17 @@ El nodo `CLIP Vision Encode` es un nodo de codificación de imágenes en ComfyUI
 
 ## Entradas
 
-| Nombre del parámetro | Tipo de dato  | Descripción                                                       |
-| -------------------- | ------------- | ----------------------------------------------------------------- |
-| `clip_vision`        | CLIP_VISION   | Modelo CLIP vision, generalmente cargado mediante el nodo CLIPVisionLoader |
-| `image`              | IMAGE         | La imagen de entrada que se va a codificar                        |
-| `crop`               | Desplegable   | Método de recorte de imagen, opciones: center (recorte centrado), none (sin recorte) |
+| Nombre del parámetro | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `clip_vision` | Modelo CLIP vision, generalmente cargado mediante el nodo CLIPVisionLoader | CLIP_VISION |
+| `image` | La imagen de entrada que se va a codificar | IMAGE |
+| `crop` | Método de recorte de imagen, opciones: center (recorte centrado), none (sin recorte) | Desplegable |
 
 ## Salidas
 
-| Nombre de salida       | Tipo de dato         | Descripción                     |
-| ---------------------- | -------------------- | ------------------------------- |
-| CLIP_VISION_OUTPUT     | CLIP_VISION_OUTPUT   | Características visuales codificadas |
+| Nombre de salida | Descripción | Tipo de dato |
+| --- | --- | --- |
+| CLIP_VISION_OUTPUT | Características visuales codificadas | CLIP_VISION_OUTPUT |
 
 Este objeto de salida contiene:
 
@@ -28,3 +26,5 @@ Este objeto de salida contiene:
 - `image_embeds`: Vector de incrustación de la imagen
 - `penultimate_hidden_states`: El penúltimo estado oculto
 - `mm_projected`: Resultado de proyección multimodal (si está disponible)
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPVisionEncode/es.md)

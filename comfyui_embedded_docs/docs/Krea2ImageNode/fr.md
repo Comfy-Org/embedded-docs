@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea2ImageNode/fr.md)
-
 Voici la traduction en français de la documentation du nœud Krea2ImageNode :
 
 ## Aperçu
@@ -8,23 +6,23 @@ Le nœud Krea 2 Image génère des images à l'aide du modèle d'IA Krea 2. Il p
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `prompt` | STRING | Oui | N/A | Texte d'invite pour l'image. |
-| `modèle` | DICT | Oui | Voir ci-dessous | Krea 2 Medium est idéal pour les illustrations expressives ; Krea 2 Large est idéal pour le photoréalisme expressif. |
-| `graine` | INT | Oui | 0 à 2147483647 | Graine aléatoire pour la reproductibilité (par défaut : 0). |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `prompt` | Texte d'invite pour l'image. | STRING | Oui | N/A |
+| `modèle` | Krea 2 Medium est idéal pour les illustrations expressives ; Krea 2 Large est idéal pour le photoréalisme expressif. | DICT | Oui | Voir ci-dessous |
+| `graine` | Graine aléatoire pour la reproductibilité (par défaut : 0). | INT | Oui | 0 à 2147483647 |
 
 Le paramètre `model` est un dictionnaire avec les sous-paramètres suivants :
 
-| Sous-paramètre | Type de données | Requis | Plage | Description |
-|----------------|-----------------|--------|-------|-------------|
-| `modèle` | STRING | Oui | `"krea 2 medium"`<br>`"krea 2 large"` | Sélectionne la variante du modèle Krea 2. |
-| `aspect_ratio` | STRING | Oui | N/A | Le rapport hauteur/largeur de l'image générée. |
-| `resolution` | STRING | Oui | N/A | La résolution de l'image générée. |
-| `creativity` | FLOAT | Oui | N/A | Contrôle le niveau de créativité de la génération. |
-| `moodboard_id` | STRING | Non | N/A | L'UUID d'un moodboard Krea pour influencer l'image. Doit être un UUID valide. |
-| `moodboard_strength` | FLOAT | Non | N/A | La force de l'influence du moodboard (par défaut : 0,35). |
-| `style_reference` | LIST | Non | 0 à 10 éléments | Une liste de références de style d'image. Chaque référence doit avoir une `url` (STRING) et une `strength` (FLOAT). |
+| Sous-paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `modèle` | Sélectionne la variante du modèle Krea 2. | STRING | Oui | `"krea 2 medium"`<br>`"krea 2 large"` |
+| `aspect_ratio` | Le rapport hauteur/largeur de l'image générée. | STRING | Oui | N/A |
+| `resolution` | La résolution de l'image générée. | STRING | Oui | N/A |
+| `creativity` | Contrôle le niveau de créativité de la génération. | FLOAT | Oui | N/A |
+| `moodboard_id` | L'UUID d'un moodboard Krea pour influencer l'image. Doit être un UUID valide. | STRING | Non | N/A |
+| `moodboard_strength` | La force de l'influence du moodboard (par défaut : 0,35). | FLOAT | Non | N/A |
+| `style_reference` | Une liste de références de style d'image. Chaque référence doit avoir une `url` (STRING) et une `strength` (FLOAT). | LIST | Non | 0 à 10 éléments |
 
 **Contraintes :**
 - `moodboard_id` doit être un UUID valide (ex. : `"123e4567-e89b-12d3-a456-426614174000"`). Copiez-le depuis le site web Krea.
@@ -33,9 +31,11 @@ Le paramètre `model` est un dictionnaire avec les sous-paramètres suivants :
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `image` | IMAGE | L'image générée sous forme de tenseur. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `image` | L'image générée sous forme de tenseur. | IMAGE |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Krea2ImageNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `6aeb2d935ef5df5699a19271c9ceb766892ef4b0e4f67bfa540bf12ffadf362d`

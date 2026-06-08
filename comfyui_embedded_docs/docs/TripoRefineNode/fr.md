@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRefineNode/fr.md)
-
 Voici la traduction en français de la documentation technique du nœud ComfyUI **TripoRefineNode** :
 
 ---
@@ -8,19 +6,21 @@ Le TripoRefineNode affine les modèles 3D bruts créés spécifiquement par les 
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `ID_tâche_modèle` | MODEL_TASK_ID | Oui | - | Doit être un modèle Tripo v1.4 |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `ID_tâche_modèle` | Doit être un modèle Tripo v1.4 | MODEL_TASK_ID | Oui | - |
 
 **Remarque :** Ce nœud accepte uniquement les modèles bruts créés par les modèles Tripo v1.4. L'utilisation de modèles provenant d'autres versions peut entraîner des erreurs.
 
 ## Sorties
 
-| Nom de sortie | Type de données | Description |
-|---------------|-----------------|-------------|
-| `modèle task_id` | STRING | Le chemin d'accès ou la référence au modèle affiné (uniquement pour la rétrocompatibilité) |
-| `GLB` | MODEL_TASK_ID | L'identifiant de tâche pour l'opération du modèle affiné |
-| `GLB` | FILE3DGLB | Le modèle 3D affiné au format GLB |
+| Nom de sortie | Description | Type de données |
+| --- | --- | --- |
+| `modèle task_id` | Le chemin d'accès ou la référence au modèle affiné (uniquement pour la rétrocompatibilité) | STRING |
+| `GLB` | L'identifiant de tâche pour l'opération du modèle affiné | MODEL_TASK_ID |
+| `GLB` | Le modèle 3D affiné au format GLB | FILE3DGLB |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRefineNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `136093c7cdd7eb33b55e862f4b8c0554de7bde656a7e0139efb63323ad041c32`

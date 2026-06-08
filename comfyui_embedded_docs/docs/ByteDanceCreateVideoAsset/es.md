@@ -1,13 +1,11 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/es.md)
-
 Este nodo crea un activo de video personal para Seedance 2.0. Carga tu video de entrada y lo registra dentro de un grupo de activos especificado. Si no proporcionas un ID de grupo, te guiará a través de un proceso de verificación de persona real en tu navegador para crear un nuevo grupo primero.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `video` | VIDEO | Sí | - | Video para registrar como activo personal. |
-| `group_id` | STRING | No | - | Reutiliza un ID de grupo de activos Seedance existente para omitir la verificación humana repetida para la misma persona. Déjalo vacío para ejecutar la autenticación de persona real en el navegador y crear un nuevo grupo. (por defecto: cadena vacía) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `video` | Video para registrar como activo personal. | VIDEO | Sí | - |
+| `group_id` | Reutiliza un ID de grupo de activos Seedance existente para omitir la verificación humana repetida para la misma persona. Déjalo vacío para ejecutar la autenticación de persona real en el navegador y crear un nuevo grupo. (por defecto: cadena vacía) | STRING | No | - |
 
 **Restricciones del Video:**
 *   **Duración:** Debe estar entre 2 y 15 segundos.
@@ -18,10 +16,12 @@ Este nodo crea un activo de video personal para Seedance 2.0. Carga tu video de 
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `group_id` | STRING | El identificador único para el activo de video recién creado. |
-| `group_id` | STRING | El identificador del grupo de activos que contiene el nuevo video. Será el `group_id` proporcionado o uno recién creado. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `group_id` | El identificador único para el activo de video recién creado. | STRING |
+| `group_id` | El identificador del grupo de activos que contiene el nuevo video. Será el `group_id` proporcionado o uno recién creado. | STRING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `9da0872cf8df32765e3fb1eef50bc24f53b65e069d8ef2609de1075d89edd605`

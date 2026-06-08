@@ -1,5 +1,3 @@
-> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/ru.md)
-
 Вот перевод документации узла Preview3DAnimation на русский язык:
 
 Узел Preview3DAnimation в основном используется для предварительного просмотра выходных данных 3D-моделей. Этот узел принимает два входных параметра: `camera_info` из узла Load3D и путь к файлу 3D-модели. Путь к файлу модели должен находиться в папке `ComfyUI/output`.
@@ -13,10 +11,10 @@
 
 ## Входные параметры
 
-| Имя параметра | Тип           | Описание                                  |
-| -------------- | -------------- | -------------------------------------------- |
-| camera_info    | LOAD3D_CAMERA  | Информация о камере                           |
-| model_file     | STRING  | Путь к файлу модели в папке `ComfyUI/output/`      |
+| Имя параметра | Описание | Тип |
+| --- | --- | --- |
+| camera_info | Информация о камере | LOAD3D_CAMERA |
+| model_file | Путь к файлу модели в папке `ComfyUI/output/` | STRING |
 
 ## Описание области холста
 
@@ -103,3 +101,5 @@
 ![меню_экспорт](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Это меню предоставляет возможность быстрого преобразования и экспорта форматов моделей
+
+> Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/ru.md)

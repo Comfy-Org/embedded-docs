@@ -1,17 +1,15 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/es.md)
-
 # Descripción General
 
 Este nodo genera o edita imágenes utilizando los modelos Seedream de ByteDance (versiones 4.0, 4.5 y 5.0 Lite). Puede crear nuevas imágenes a partir de un texto descriptivo o editar imágenes existentes proporcionando imágenes de referencia, con soporte para resoluciones de hasta 4K.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `prompt` | STRING | Sí | N/A | Texto descriptivo para crear o editar una imagen. |
-| `modelo` | COMBO | Sí | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` | Versión del modelo Seedream a utilizar para la generación. Cada modelo tiene diferentes capacidades y precios. |
-| `semilla` | INT | No | 0 a 2147483647 | Semilla para la generación (predeterminado: 0). |
-| `marca de agua` | BOOLEAN | No | Verdadero / Falso | Si se debe añadir una marca de agua "Generado por IA" a la imagen (predeterminado: Falso). |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `prompt` | Texto descriptivo para crear o editar una imagen. | STRING | Sí | N/A |
+| `modelo` | Versión del modelo Seedream a utilizar para la generación. Cada modelo tiene diferentes capacidades y precios. | COMBO | Sí | `"seedream 5.0 lite"`<br>`"seedream-4-5-251128"`<br>`"seedream-4-0-250828"` |
+| `semilla` | Semilla para la generación (predeterminado: 0). | INT | No | 0 a 2147483647 |
+| `marca de agua` | Si se debe añadir una marca de agua "Generado por IA" a la imagen (predeterminado: Falso). | BOOLEAN | No | Verdadero / Falso |
 
 ### Parámetros Específicos del Modelo
 
@@ -38,9 +36,11 @@ Al seleccionar un modelo, estarán disponibles parámetros adicionales:
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `image` | IMAGE | La imagen generada o editada como un tensor. Si se solicitaron múltiples imágenes, se concatenan en un solo lote. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `image` | La imagen generada o editada como un tensor. Si se solicitaron múltiples imágenes, se concatenan en un solo lote. | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceSeedreamNodeV2/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `1ceccfdb773807a993c32af22703da155367b67865338c78f153a8ccb02dcc8f`

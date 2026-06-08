@@ -1,15 +1,13 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/ko.md)
-
 ## 개요
 
 SelectModelDevice 노드는 확산 모델이 실행될 장치(CPU 또는 특정 GPU)를 수동으로 선택할 수 있게 해줍니다. 모델을 다른 장치로 이동시킬 수 있으며, 다른 멀티 GPU 노드와의 충돌을 자동으로 처리합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `model` | MODEL | 예 | | 특정 장치에 배치할 확산 모델입니다. |
-| `device` | COMBO | 예 | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` | 모델의 대상 장치입니다. 옵션은 사용 가능한 GPU를 기반으로 동적으로 생성됩니다. (기본값: "default") |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
+| --- | --- | --- | --- | --- |
+| `model` | 특정 장치에 배치할 확산 모델입니다. | MODEL | 예 |  |
+| `device` | 모델의 대상 장치입니다. 옵션은 사용 가능한 GPU를 기반으로 동적으로 생성됩니다. (기본값: "default") | COMBO | 예 | `"default"`<br>`"cpu"`<br>`"gpu:0"`<br>`"gpu:1"`<br>`"gpu:2"`<br>`"gpu:3"`<br>`"gpu:4"`<br>`"gpu:5"`<br>`"gpu:6"`<br>`"gpu:7"` |
 
 **매개변수 세부 설명:**
 - `"default"`: 이전 SelectModelDevice 노드에서 변경했더라도 모델 로더가 할당한 장치로 복원합니다.
@@ -23,9 +21,11 @@ SelectModelDevice 노드는 확산 모델이 실행될 장치(CPU 또는 특정 
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `model` | MODEL | 선택한 장치에 배치된 확산 모델입니다. 장치가 유효하지 않거나 사용할 수 없는 경우 모델은 변경 없이 통과됩니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `model` | 선택한 장치에 배치된 확산 모델입니다. 장치가 유효하지 않거나 사용할 수 없는 경우 모델은 변경 없이 통과됩니다. | MODEL |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SelectModelDevice/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `02841975f123cc8ae8152ea86f1798e0e7e68255ecd11e04271da886b75eb0fd`

@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageModifyNode/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,19 +30,21 @@ Modifica imágenes de forma síncrona basándose en un prompt de texto y la rela
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Requerido | Rango | Descripción |
-|-----------|--------------|-----------|-------|-------------|
-| `imagen` | IMAGE | Sí | - | La imagen de entrada que se va a modificar |
-| `prompt` | STRING | Sí | - | Prompt para la generación de la imagen (predeterminado: "") |
-| `peso_imagen` | FLOAT | No | 0.0-0.98 | Peso de la imagen; cuanto más cercano a 1.0, menos se modificará la imagen (predeterminado: 0.1). Internamente, este valor se invierte (1.0 - image_weight) y se limita entre 0.0 y 0.98. |
-| `modelo` | STRING | Sí | `"photon-flash-1"`<br>`"photon-1"`<br>`"photon"` | El modelo Luma a utilizar para la modificación de la imagen. Diferentes modelos tienen diferentes costos. |
-| `semilla` | INT | No | 0-18446744073709551615 | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) |
+| Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
+| --- | --- | --- | --- | --- |
+| `imagen` | La imagen de entrada que se va a modificar | IMAGE | Sí | - |
+| `prompt` | Prompt para la generación de la imagen (predeterminado: "") | STRING | Sí | - |
+| `peso_imagen` | Peso de la imagen; cuanto más cercano a 1.0, menos se modificará la imagen (predeterminado: 0.1). Internamente, este valor se invierte (1.0 - image_weight) y se limita entre 0.0 y 0.98. | FLOAT | No | 0.0-0.98 |
+| `modelo` | El modelo Luma a utilizar para la modificación de la imagen. Diferentes modelos tienen diferentes costos. | STRING | Sí | `"photon-flash-1"`<br>`"photon-1"`<br>`"photon"` |
+| `semilla` | Semilla para determinar si el nodo debe re-ejecutarse; los resultados reales son no deterministas independientemente de la semilla (predeterminado: 0) | INT | No | 0-18446744073709551615 |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `imagen` | IMAGE | La imagen modificada generada por el modelo Luma |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `imagen` | La imagen modificada generada por el modelo Luma | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageModifyNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `078542bdba19945037c95fefa30d1b403ebf58e29270c8067dcb8ff21a99b7e0`

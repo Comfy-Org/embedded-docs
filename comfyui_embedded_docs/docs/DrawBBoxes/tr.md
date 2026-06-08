@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,10 +30,10 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `görsel` | IMAGE | Hayır | - | Sınırlayıcı kutuların çizileceği giriş görüntüsü(leri). Sağlanmazsa, boş bir tuval oluşturulur. |
-| `bboxlar` | BOUNDINGBOX | Evet | - | Sınırlayıcı kutu sözlüklerinin bir listesi. Her sözlük, `x`, `y`, `width`, `height` anahtarlarını ve isteğe bağlı olarak `label` ile `score` anahtarlarını içermelidir. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `görsel` | Sınırlayıcı kutuların çizileceği giriş görüntüsü(leri). Sağlanmazsa, boş bir tuval oluşturulur. | IMAGE | Hayır | - |
+| `bboxlar` | Sınırlayıcı kutu sözlüklerinin bir listesi. Her sözlük, `x`, `y`, `width`, `height` anahtarlarını ve isteğe bağlı olarak `label` ile `score` anahtarlarını içermelidir. | BOUNDINGBOX | Evet | - |
 
 **Giriş Kısıtlamaları:**
 *   `bboxes` girişi zorunludur ve sağlanmalıdır.
@@ -44,9 +42,11 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `out_image` | IMAGE | Üzerine çizilmiş sınırlayıcı kutular, etiketler ve güven skorları bulunan çıktı görüntüsü(leri). |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `out_image` | Üzerine çizilmiş sınırlayıcı kutular, etiketler ve güven skorları bulunan çıktı görüntüsü(leri). | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `436fbd3de0d5e09ca07b099a32c9b9482a8006459dc8635e066ffa82f6c755df`

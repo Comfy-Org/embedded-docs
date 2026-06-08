@@ -1,27 +1,27 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoader/zh-TW.md)
-
 ## 概述
 
 CheckpointLoader 節點會載入預先訓練好的模型檢查點及其配置檔案。它接收一個配置檔案和一個檢查點檔案作為輸入，並傳回已載入的模型元件，包括主模型、CLIP 模型和 VAE 模型，以供工作流程使用。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `config_name` | STRING | 是 | 可用的配置檔案 | 定義模型架構和設定的配置檔案 |
-| `ckpt_name` | STRING | 是 | 可用的檢查點檔案 | 包含已訓練模型權重和參數的檢查點檔案 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `config_name` | 定義模型架構和設定的配置檔案 | STRING | 是 | 可用的配置檔案 |
+| `ckpt_name` | 包含已訓練模型權重和參數的檢查點檔案 | STRING | 是 | 可用的檢查點檔案 |
 
 **注意：** 此節點需要同時選取一個配置檔案和一個檢查點檔案。配置檔案必須與正在載入的檢查點檔案的架構相符。
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `MODEL` | MODEL | 已載入的主模型元件，可供推論使用 |
-| `CLIP` | CLIP | 已載入的 CLIP 模型元件，用於文字編碼 |
-| `VAE` | VAE | 已載入的 VAE 模型元件，用於影像編碼和解碼 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `MODEL` | 已載入的主模型元件，可供推論使用 | MODEL |
+| `CLIP` | 已載入的 CLIP 模型元件，用於文字編碼 | CLIP |
+| `VAE` | 已載入的 VAE 模型元件，用於影像編碼和解碼 | VAE |
 
 **重要注意事項：** 此節點已被標記為已棄用，並可能在未來版本中移除。對於新的工作流程，請考慮使用其他載入節點。
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointLoader/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `9977bda5e124a9d10566839cbee868c74fab120c454141f27ce145efa60105e9`

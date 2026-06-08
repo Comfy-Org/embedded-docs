@@ -1,18 +1,18 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringLength/es.md)
-
 El nodo StringLength calcula la cantidad de caracteres en una cadena de texto. Toma cualquier entrada de texto y devuelve el recuento total de caracteres, incluidos espacios y signos de puntuación. Esto es útil para medir la longitud del texto o validar los requisitos de tamaño de una cadena.
 
 ## Entradas
 
-| Parámetro | Tipo de dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `cadena` | STRING | Sí | N/A | La cadena de texto cuya longitud se va a medir. Admite entrada multilínea. |
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `cadena` | La cadena de texto cuya longitud se va a medir. Admite entrada multilínea. | STRING | Sí | N/A |
 
 ## Salidas
 
-| Nombre de salida | Tipo de dato | Descripción |
-|------------------|--------------|-------------|
-| `length` | INT | El número total de caracteres en la cadena de entrada, incluidos espacios y caracteres especiales. |
+| Nombre de salida | Descripción | Tipo de dato |
+| --- | --- | --- |
+| `length` | El número total de caracteres en la cadena de entrada, incluidos espacios y caracteres especiales. | INT |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringLength/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `dd72fac8330002e5e0ef2673ff208de36c6cf31aeec22a1c231495c742df62e3`

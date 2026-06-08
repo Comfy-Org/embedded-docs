@@ -1,17 +1,15 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointSave/es.md)
-
 El nodo `Save Checkpoint` está diseñado para guardar un modelo completo de Stable Diffusion (incluyendo los componentes UNet, CLIP y VAE) como un archivo de punto de control en formato **.safetensors**.
 
 El nodo Save Checkpoint se utiliza principalmente en flujos de trabajo de fusión de modelos. Después de crear un nuevo modelo fusionado mediante nodos como `ModelMergeSimple`, `ModelMergeBlocks`, etc., puede usar este nodo para guardar el resultado como un archivo de punto de control reutilizable.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Descripción |
-|-----------|-------------|-------------|
-| `modelo` | MODEL | El parámetro `modelo` representa el modelo principal cuyo estado se va a guardar. Es esencial para capturar el estado actual del modelo para su futura restauración o análisis. |
-| `clip` | CLIP | El parámetro `clip` está destinado al modelo CLIP asociado con el modelo principal, permitiendo que su estado se guarde junto con el modelo principal. |
-| `vae` | VAE | El parámetro `vae` es para el modelo de Autoencoder Variacional (VAE), permitiendo que su estado se guarde para uso o análisis futuro junto con el modelo principal y CLIP. |
-| `prefijo_nombre_archivo` | STRING | Este parámetro especifica el prefijo para el nombre del archivo bajo el cual se guardará el punto de control. |
+| Parámetro | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `modelo` | El parámetro `modelo` representa el modelo principal cuyo estado se va a guardar. Es esencial para capturar el estado actual del modelo para su futura restauración o análisis. | MODEL |
+| `clip` | El parámetro `clip` está destinado al modelo CLIP asociado con el modelo principal, permitiendo que su estado se guarde junto con el modelo principal. | CLIP |
+| `vae` | El parámetro `vae` es para el modelo de Autoencoder Variacional (VAE), permitiendo que su estado se guarde para uso o análisis futuro junto con el modelo principal y CLIP. | VAE |
+| `prefijo_nombre_archivo` | Este parámetro especifica el prefijo para el nombre del archivo bajo el cual se guardará el punto de control. | STRING |
 
 Adicionalmente, el nodo tiene dos entradas ocultas para metadatos:
 
@@ -30,3 +28,5 @@ Este nodo generará un archivo de punto de control, y la ruta del archivo de sal
 ## Enlaces Relacionados
 
 Código fuente relacionado: [nodes_model_merging.py#L227](https://github.com/comfyanonymous/ComfyUI/blob/master/comfy_extras/nodes_model_merging.py#L227)
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CheckpointSave/es.md)

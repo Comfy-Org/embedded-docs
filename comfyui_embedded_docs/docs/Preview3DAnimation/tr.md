@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/tr.md)
-
 Preview3DAnimation düğümü, temel olarak 3B model çıktılarını önizlemek için kullanılır. Bu düğüm iki girdi alır: biri Load3D düğümünden gelen `camera_info`, diğeri ise 3B model dosyasının yoludur. Model dosya yolu `ComfyUI/output` klasöründe bulunmalıdır.
 
 **Desteklenen Formatlar**
@@ -11,10 +9,10 @@ Preview3DAnimation düğümü, temel olarak 3B model çıktılarını önizlemek
 
 ## Girdiler
 
-| Parametre Adı | Tür            | Açıklama                                  |
-| ------------- | -------------- | ----------------------------------------- |
-| camera_info   | LOAD3D_CAMERA  | Kamera bilgisi                            |
-| model_file    | STRING         | `ComfyUI/output/` altındaki model dosya yolu |
+| Parametre Adı | Açıklama | Tür |
+| --- | --- | --- |
+| camera_info | Kamera bilgisi | LOAD3D_CAMERA |
+| model_file | `ComfyUI/output/` altındaki model dosya yolu | STRING |
 
 ## Tuval Alanı Açıklaması
 
@@ -101,3 +99,5 @@ Bu menü aracılığıyla sahnenin küresel aydınlatma yoğunluğunu hızlıca 
 ![menü_dışa_aktar](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Bu menü, model formatlarını hızlıca dönüştürme ve dışa aktarma olanağı sağlar
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAnimation/tr.md)

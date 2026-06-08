@@ -1,5 +1,3 @@
-> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Note/zh.md)
-
 用于向工作流添加注释的节点。
 
 ## 输入
@@ -7,3 +5,5 @@
 ## 输出
 
 该节点没有输出。
+
+> 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Note/zh.md)

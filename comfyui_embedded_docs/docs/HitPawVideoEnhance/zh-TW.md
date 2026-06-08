@@ -1,16 +1,14 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/zh-TW.md)
-
 # HitPaw 影片增強節點
 
 此節點使用外部 API 來提升影片品質。它可將低解析度影片放大至更高解析度、移除視覺偽影並降低雜訊。處理成本是根據輸入影片的每秒長度計算。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `模型` | DYNAMIC COMBO | 是 | 提供多種選項 | 用於影片增強的 AI 模型。選擇模型後會顯示巢狀的 `resolution` 參數。可用的模型及其支援的解析度會有所不同。 |
-| `model.resolution` | COMBO | 是 | `"original"`<br>`"720p"`<br>`"1080p"<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` | 增強後影片的目標解析度。部分選項可能因所選的 `模型` 而無法使用。 |
-| `影片` | VIDEO | 是 | 不適用 | 要增強的輸入影片檔案。 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `模型` | 用於影片增強的 AI 模型。選擇模型後會顯示巢狀的 `resolution` 參數。可用的模型及其支援的解析度會有所不同。 | DYNAMIC COMBO | 是 | 提供多種選項 |
+| `model.resolution` | 增強後影片的目標解析度。部分選項可能因所選的 `模型` 而無法使用。 | COMBO | 是 | `"original"`<br>`"720p"`<br>`"1080p"<br>`"2k/qhd"`<br>`"4k/uhd"`<br>`"8k"` |
+| `影片` | 要增強的輸入影片檔案。 | VIDEO | 是 | 不適用 |
 
 **限制條件：**
 
@@ -19,9 +17,11 @@
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `影片` | VIDEO | 增強後的影片檔案。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `影片` | 增強後的影片檔案。 | VIDEO |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `0f329cbf61784474ee5b97a92d28a3e2383dc40e208f8a8317f3c4f60b43e5b2`

@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/pt-BR.md)
-
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/en.md)
 
 ## Visão Geral
@@ -8,12 +6,12 @@ O nó OpenRouter LLM envia um prompt de texto para um conjunto selecionado de mo
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `prompt` | STRING | Sim | N/A | Entrada de texto para o modelo. |
-| `model` | STRING | Sim | Múltiplas opções disponíveis (veja nota abaixo) | O modelo OpenRouter usado para gerar a resposta. |
-| `seed` | INT | Sim | 0 a 2147483647 | Semente para amostragem. Defina como 0 para omitir. A maioria dos modelos trata isso apenas como uma sugestão. (padrão: 0) |
-| `system_prompt` | STRING | Não | N/A | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `prompt` | Entrada de texto para o modelo. | STRING | Sim | N/A |
+| `model` | O modelo OpenRouter usado para gerar a resposta. | STRING | Sim | Múltiplas opções disponíveis (veja nota abaixo) |
+| `seed` | Semente para amostragem. Defina como 0 para omitir. A maioria dos modelos trata isso apenas como uma sugestão. (padrão: 0) | INT | Sim | 0 a 2147483647 |
+| `system_prompt` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não | N/A |
 
 **Nota sobre o parâmetro `model`:** As opções de modelo disponíveis são construídas dinamicamente e podem incluir modelos com diferentes capacidades. Alguns modelos suportam recursos adicionais como esforço de raciocínio, pesquisa na web ou entrada de imagem/vídeo. O nó validará se o número de imagens ou vídeos fornecidos não excede o número máximo suportado pelo modelo.
 
@@ -23,9 +21,11 @@ O nó OpenRouter LLM envia um prompt de texto para um conjunto selecionado de mo
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `output` | STRING | A resposta de texto gerada pelo modelo OpenRouter. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `output` | A resposta de texto gerada pelo modelo OpenRouter. | STRING |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `24757e36bf2356cc1805a6f071db88ca455e17944695672f19845a4cd1826c8a`

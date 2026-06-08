@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/pt-BR.md)
-
 O nó Preview3D é usado principalmente para visualizar saídas de modelos 3D. Este nó recebe duas entradas: uma é o `camera_info` do nó Load3D, e a outra é o caminho para o arquivo do modelo 3D. O caminho do arquivo do modelo deve estar localizado na pasta `ComfyUI/output`.
 
 **Formatos Suportados**
@@ -11,10 +9,10 @@ Algumas preferências relacionadas aos nós 3D podem ser configuradas no menu de
 
 ## Entradas
 
-| Nome do Parâmetro | Tipo          | Descrição                                    |
-| ----------------- | ------------- | -------------------------------------------- |
-| camera_info       | LOAD3D_CAMERA | Informações da câmera                        |
-| model_file        | LOAD3D_CAMERA | Caminho do arquivo do modelo em `ComfyUI/output/` |
+| Nome do Parâmetro | Descrição | Tipo |
+| --- | --- | --- |
+| camera_info | Informações da câmera | LOAD3D_CAMERA |
+| model_file | Caminho do arquivo do modelo em `ComfyUI/output/` | LOAD3D_CAMERA |
 
 ## Descrição da Área do Canvas
 
@@ -101,3 +99,5 @@ Através deste menu, você pode ajustar rapidamente a intensidade da iluminaçã
 ![menu_exportar](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 Este menu fornece a capacidade de converter e exportar rapidamente formatos de modelo
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/pt-BR.md)

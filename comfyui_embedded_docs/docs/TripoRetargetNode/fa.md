@@ -1,26 +1,26 @@
-> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/fa.md)
-
 ### TripoRetargetNode
 
 گره TripoRetargetNode با بازهدف‌گذاری داده‌های حرکتی، انیمیشن‌های از پیش تعریف‌شده را روی مدل‌های کاراکتر سه‌بعدی اعمال می‌کند. این گره یک مدل سه‌بعدی ریگ‌شده قبلی را دریافت کرده و یکی از چندین انیمیشن از پیش تعیین‌شده را روی آن اعمال می‌کند و یک فایل مدل سه‌بعدی متحرک را به عنوان خروجی تولید می‌کند. این گره برای پردازش عملیات بازهدف‌گذاری انیمیشن با API Tripo ارتباط برقرار می‌کند.
 
 ## ورودی‌ها
 
-| پارامتر | نوع داده | اجباری | محدوده | توضیحات |
-|-----------|-----------|----------|-------|-------------|
-| `شناسه وظیفه مدل اصلی` | RIG_TASK_ID | بله | - | شناسه وظیفه مدل سه‌بعدی ریگ‌شده پردازش‌شده قبلی برای اعمال انیمیشن |
-| `انیمیشن` | STRING | بله | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" | پیش‌تنظیم انیمیشن برای اعمال روی مدل سه‌بعدی. گزینه‌ها شامل انیمیشن‌های انسان‌نما (ایستا، راه رفتن، دویدن، شیرجه، بالا رفتن، پریدن، ضربه با شمشیر، تیراندازی، آسیب دیدن، افتادن، چرخیدن) و انیمیشن‌های موجودات (راه رفتن چهارپا، راه رفتن شش‌پا، راه رفتن هشت‌پا، راهپیمایی مارپیچ، راهپیمایی آبزی) است. |
-| `auth_token_comfy_org` | AUTH_TOKEN_COMFY_ORG | خیر | - | توکن احراز هویت برای دسترسی به API Comfy.org (پارامتر مخفی) |
-| `api_key_comfy_org` | API_KEY_COMFY_ORG | خیر | - | کلید API برای دسترسی به سرویس Comfy.org (پارامتر مخفی) |
-| `unique_id` | UNIQUE_ID | خیر | - | شناسه یکتا برای ردیابی عملیات (پارامتر مخفی) |
+| پارامتر | توضیحات | نوع داده | اجباری | محدوده |
+| --- | --- | --- | --- | --- |
+| `شناسه وظیفه مدل اصلی` | شناسه وظیفه مدل سه‌بعدی ریگ‌شده پردازش‌شده قبلی برای اعمال انیمیشن | RIG_TASK_ID | بله | - |
+| `انیمیشن` | پیش‌تنظیم انیمیشن برای اعمال روی مدل سه‌بعدی. گزینه‌ها شامل انیمیشن‌های انسان‌نما (ایستا، راه رفتن، دویدن، شیرجه، بالا رفتن، پریدن، ضربه با شمشیر، تیراندازی، آسیب دیدن، افتادن، چرخیدن) و انیمیشن‌های موجودات (راه رفتن چهارپا، راه رفتن شش‌پا، راه رفتن هشت‌پا، راهپیمایی مارپیچ، راهپیمایی آبزی) است. | STRING | بله | "preset:idle"<br>"preset:walk"<br>"preset:run"<br>"preset:dive"<br>"preset:climb"<br>"preset:jump"<br>"preset:slash"<br>"preset:shoot"<br>"preset:hurt"<br>"preset:fall"<br>"preset:turn"<br>"preset:quadruped:walk"<br>"preset:hexapod:walk"<br>"preset:octopod:walk"<br>"preset:serpentine:march"<br>"preset:aquatic:march" |
+| `auth_token_comfy_org` | توکن احراز هویت برای دسترسی به API Comfy.org (پارامتر مخفی) | AUTH_TOKEN_COMFY_ORG | خیر | - |
+| `api_key_comfy_org` | کلید API برای دسترسی به سرویس Comfy.org (پارامتر مخفی) | API_KEY_COMFY_ORG | خیر | - |
+| `unique_id` | شناسه یکتا برای ردیابی عملیات (پارامتر مخفی) | UNIQUE_ID | خیر | - |
 
 ## خروجی‌ها
 
-| نام خروجی | نوع داده | توضیحات |
-|-------------|-----------|-------------|
-| `model_file` | STRING | فایل مدل سه‌بعدی متحرک تولیدشده (فقط برای سازگاری با نسخه‌های قبلی) |
-| `retarget task_id` | RETARGET_TASK_ID | شناسه وظیفه برای ردیابی عملیات بازهدف‌گذاری |
-| `GLB` | FILE3DGLB | مدل سه‌بعدی متحرک در قالب GLB |
+| نام خروجی | توضیحات | نوع داده |
+| --- | --- | --- |
+| `model_file` | فایل مدل سه‌بعدی متحرک تولیدشده (فقط برای سازگاری با نسخه‌های قبلی) | STRING |
+| `retarget task_id` | شناسه وظیفه برای ردیابی عملیات بازهدف‌گذاری | RETARGET_TASK_ID |
+| `GLB` | مدل سه‌بعدی متحرک در قالب GLB | FILE3DGLB |
+
+> این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/fa.md)
 
 ---
 **Source fingerprint (SHA-256):** `304326afdc1fa3e8c3593f151f771f93520e061802c831838c58ebc401b9e9e2`

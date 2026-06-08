@@ -1,5 +1,3 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/ko.md)
-
 # Preview3D 노드
 
 Preview3D 노드는 주로 3D 모델 출력을 미리 보는 데 사용됩니다. 이 노드는 두 가지 입력을 받습니다. 하나는 Load3D 노드의 `camera_info`이고, 다른 하나는 3D 모델 파일의 경로입니다. 모델 파일 경로는 `ComfyUI/output` 폴더에 위치해야 합니다.
@@ -13,10 +11,10 @@ Preview3D 노드는 주로 3D 모델 출력을 미리 보는 데 사용됩니다
 
 ## 입력
 
-| 매개변수 이름  | 유형           | 설명                                   |
-| -------------- | -------------- | -------------------------------------- |
-| camera_info    | LOAD3D_CAMERA  | 카메라 정보                            |
-| model_file     | LOAD3D_CAMERA  | `ComfyUI/output/` 아래의 모델 파일 경로 |
+| 매개변수 이름 | 설명 | 유형 |
+| --- | --- | --- |
+| camera_info | 카메라 정보 | LOAD3D_CAMERA |
+| model_file | `ComfyUI/output/` 아래의 모델 파일 경로 | LOAD3D_CAMERA |
 
 ## 캔버스 영역 설명
 
@@ -103,3 +101,5 @@ Preview3D 노드는 주로 3D 모델 출력을 미리 보는 데 사용됩니다
 ![menu_export](https://raw.githubusercontent.com/Comfy-Org/embedded-docs/refs/heads/main/comfyui_embedded_docs/docs/Load3d/asset/menu_export.webp)
 
 이 메뉴는 모델 형식을 빠르게 변환하고 내보내는 기능을 제공합니다
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3D/ko.md)

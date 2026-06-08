@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoWithAudio/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,20 +30,22 @@ Kling Metinden Videoya Sesli düğümü, bir metin açıklamasından kısa bir v
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `model_name` | COMBO | Evet | `"kling-v2-6"` | Video oluşturma için kullanılacak belirli AI modeli. |
-| `prompt` | STRING | Evet | - | Olumlu metin istemi. Videoyu oluşturmak için kullanılan açıklama. 1 ile 2500 karakter arasında olmalıdır. |
-| `mode` | COMBO | Evet | `"pro"` | Video oluşturma için çalışma modu. |
-| `aspect_ratio` | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Oluşturulan video için istenen genişlik-yükseklik oranı. |
-| `duration` | COMBO | Evet | `5`<br>`10` | Videonun saniye cinsinden uzunluğu. |
-| `generate_audio` | BOOLEAN | Hayır | - | Video için ses oluşturulup oluşturulmayacağını kontrol eder. Etkinleştirildiğinde, AI isteme dayalı olarak ses oluşturur. (varsayılan: `True`) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `model_name` | Video oluşturma için kullanılacak belirli AI modeli. | COMBO | Evet | `"kling-v2-6"` |
+| `prompt` | Olumlu metin istemi. Videoyu oluşturmak için kullanılan açıklama. 1 ile 2500 karakter arasında olmalıdır. | STRING | Evet | - |
+| `mode` | Video oluşturma için çalışma modu. | COMBO | Evet | `"pro"` |
+| `aspect_ratio` | Oluşturulan video için istenen genişlik-yükseklik oranı. | COMBO | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `duration` | Videonun saniye cinsinden uzunluğu. | COMBO | Evet | `5`<br>`10` |
+| `generate_audio` | Video için ses oluşturulup oluşturulmayacağını kontrol eder. Etkinleştirildiğinde, AI isteme dayalı olarak ses oluşturur. (varsayılan: `True`) | BOOLEAN | Hayır | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | VIDEO | Oluşturulan video dosyası. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `output` | Oluşturulan video dosyası. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoWithAudio/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `eff4549816c347a090e2f6e8ae8ba832bd2c5b7aef7c729b51c9d72b7a814d5a`

@@ -1,5 +1,3 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/ar.md)
-
 # مُحمّل CLIP الرباعي
 
 مُحمّل CLIP الرباعي، **QuadrupleCLIPLoader**، هو إحدى العُقد الأساسية في ComfyUI، وقد أُضيف لأول مرة لدعم إصدار نموذج HiDream I1. إذا وجدت هذه العقدة مفقودة، فحاول تحديث ComfyUI إلى أحدث إصدار لضمان دعم العقدة.
@@ -9,3 +7,5 @@
 ستقوم هذه العقدة بالكشف عن النماذج الموجودة في مجلد `ComfyUI/models/text_encoders`،
 وستقرأ أيضًا النماذج من المسارات الإضافية المُهيأة في ملف extra_model_paths.yaml.
 في بعض الأحيان، بعد إضافة النماذج، قد تحتاج إلى **إعادة تحميل واجهة ComfyUI** للسماح لها بقراءة ملفات النموذج في المجلد المُناظر.
+
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuadrupleCLIPLoader/ar.md)

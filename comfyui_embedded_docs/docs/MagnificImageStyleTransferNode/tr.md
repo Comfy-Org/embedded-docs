@@ -1,24 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageStyleTransferNode/tr.md)
-
 Bu belge, yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageStyleTransferNode/en.md)
 
 Bu düğüm, referans görselinizin görsel stilini giriş görselinize uygular. Görselleri işlemek için harici bir yapay zeka hizmeti kullanarak, stil aktarımının gücünü ve orijinal görselin yapısının korunmasını kontrol etmenize olanak tanır.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|--------|----------|
-| `image` | IMAGE | Evet | - | Stil aktarımının uygulanacağı görsel. |
-| `reference_image` | IMAGE | Evet | - | Stilin çıkarılacağı referans görsel. |
-| `prompt` | STRING | Hayır | - | Stil aktarımına yön vermek için isteğe bağlı bir metin istemi. |
-| `style_strength` | INT | Hayır | 0 ile 100 | Stil gücünün yüzdesi (varsayılan: 100). |
-| `structure_strength` | INT | Hayır | 0 ile 100 | Orijinal görselin yapısını korur (varsayılan: 50). |
-| `flavor` | COMBO | Hayır | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" | Stil aktarımı çeşnisi. |
-| `engine` | COMBO | Hayır | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" | İşleme motoru seçimi. |
-| `portrait_mode` | COMBO | Hayır | "disabled"<br>"enabled" | Yüz iyileştirmeleri için portre modunu etkinleştirin. |
-| `portrait_style` | COMBO | Hayır | "standard"<br>"pop"<br>"super_pop" | Portre görsellerine uygulanan görsel stil. Bu girdi yalnızca `portrait_mode` "enabled" olarak ayarlandığında kullanılabilir. |
-| `portrait_beautifier` | COMBO | Hayır | "none"<br>"beautify_face"<br>"beautify_face_max" | Portrelerde yüz güzelleştirme yoğunluğu. Bu girdi yalnızca `portrait_mode` "enabled" olarak ayarlandığında kullanılabilir. |
-| `fixed_generation` | BOOLEAN | Hayır | - | Devre dışı bırakıldığında, her üretimin bir miktar rastgelelik getirmesi beklenir ve bu da daha çeşitli sonuçlara yol açar (varsayılan: True). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `image` | Stil aktarımının uygulanacağı görsel. | IMAGE | Evet | - |
+| `reference_image` | Stilin çıkarılacağı referans görsel. | IMAGE | Evet | - |
+| `prompt` | Stil aktarımına yön vermek için isteğe bağlı bir metin istemi. | STRING | Hayır | - |
+| `style_strength` | Stil gücünün yüzdesi (varsayılan: 100). | INT | Hayır | 0 ile 100 |
+| `structure_strength` | Orijinal görselin yapısını korur (varsayılan: 50). | INT | Hayır | 0 ile 100 |
+| `flavor` | Stil aktarımı çeşnisi. | COMBO | Hayır | "faithful"<br>"gen_z"<br>"psychedelia"<br>"detaily"<br>"clear"<br>"donotstyle"<br>"donotstyle_sharp" |
+| `engine` | İşleme motoru seçimi. | COMBO | Hayır | "balanced"<br>"definio"<br>"illusio"<br>"3d_cartoon"<br>"colorful_anime"<br>"caricature"<br>"real"<br>"super_real"<br>"softy" |
+| `portrait_mode` | Yüz iyileştirmeleri için portre modunu etkinleştirin. | COMBO | Hayır | "disabled"<br>"enabled" |
+| `portrait_style` | Portre görsellerine uygulanan görsel stil. Bu girdi yalnızca `portrait_mode` "enabled" olarak ayarlandığında kullanılabilir. | COMBO | Hayır | "standard"<br>"pop"<br>"super_pop" |
+| `portrait_beautifier` | Portrelerde yüz güzelleştirme yoğunluğu. Bu girdi yalnızca `portrait_mode` "enabled" olarak ayarlandığında kullanılabilir. | COMBO | Hayır | "none"<br>"beautify_face"<br>"beautify_face_max" |
+| `fixed_generation` | Devre dışı bırakıldığında, her üretimin bir miktar rastgelelik getirmesi beklenir ve bu da daha çeşitli sonuçlara yol açar (varsayılan: True). | BOOLEAN | Hayır | - |
 
 **Kısıtlamalar:**
 
@@ -29,9 +27,11 @@ Bu düğüm, referans görselinizin görsel stilini giriş görselinize uygular.
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `image` | IMAGE | Stil aktarımı uygulandıktan sonra elde edilen sonuç görseli. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Stil aktarımı uygulandıktan sonra elde edilen sonuç görseli. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageStyleTransferNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `4ae400183618953c369d089d39b878f0a24592967c29d779c577fb8b7339dea8`

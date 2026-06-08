@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTextToImageApi/es.md)
-
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción
@@ -32,22 +30,24 @@ El nodo Wan Text to Image genera imágenes basadas en descripciones textuales. U
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `modelo` | COMBO | Sí | "wan2.5-t2i-preview" | Modelo a utilizar (predeterminado: "wan2.5-t2i-preview") |
-| `texto_entrada` | STRING | Sí | - | Indicación que describe los elementos y características visuales. Compatible con inglés y chino (predeterminado: vacío) |
-| `texto_negativo` | STRING | No | - | Indicación negativa que describe lo que se debe evitar (predeterminado: vacío) |
-| `ancho` | INT | No | 768-1440 | Ancho de la imagen en píxeles (predeterminado: 1024, incremento: 32) |
-| `alto` | INT | No | 768-1440 | Alto de la imagen en píxeles (predeterminado: 1024, incremento: 32) |
-| `semilla` | INT | No | 0-2147483647 | Semilla a utilizar para la generación (predeterminado: 0) |
-| `extender_texto` | BOOLEAN | No | - | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) |
-| `marca_agua` | BOOLEAN | No | - | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False) |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `modelo` | Modelo a utilizar (predeterminado: "wan2.5-t2i-preview") | COMBO | Sí | "wan2.5-t2i-preview" |
+| `texto_entrada` | Indicación que describe los elementos y características visuales. Compatible con inglés y chino (predeterminado: vacío) | STRING | Sí | - |
+| `texto_negativo` | Indicación negativa que describe lo que se debe evitar (predeterminado: vacío) | STRING | No | - |
+| `ancho` | Ancho de la imagen en píxeles (predeterminado: 1024, incremento: 32) | INT | No | 768-1440 |
+| `alto` | Alto de la imagen en píxeles (predeterminado: 1024, incremento: 32) | INT | No | 768-1440 |
+| `semilla` | Semilla a utilizar para la generación (predeterminado: 0) | INT | No | 0-2147483647 |
+| `extender_texto` | Si se debe mejorar la indicación con asistencia de IA (predeterminado: True) | BOOLEAN | No | - |
+| `marca_agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False) | BOOLEAN | No | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `output` | IMAGE | La imagen generada basada en la indicación textual |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `output` | La imagen generada basada en la indicación textual | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTextToImageApi/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `2a59551d7ff0fc0553f41561afd94092d2d950ac3e1aa3f6402436540da7d6fb`

@@ -1,22 +1,20 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageRelightNode/tr.md)
-
 **Giriş**
 
 Magnific Image Relight düğümü, bir girdi görüntüsünün aydınlatmasını ayarlar. Bir metin istemine dayalı olarak stilistik aydınlatma uygulayabilir veya isteğe bağlı bir referans görüntüden aydınlatma özelliklerini aktarabilir. Düğüm, nihai çıktının parlaklığına, kontrastına ve genel havasına ince ayar yapmak için çeşitli kontroller sunar.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `image` | IMAGE | Evet | Yok | Aydınlatılacak görüntü. Tam olarak bir görüntü gereklidir. Minimum boyutlar 160x160 pikseldir. En-boy oranı 1:3 ile 3:1 arasında olmalıdır. |
-| `prompt` | STRING | Hayır | Yok | Aydınlatma için tanımlayıcı yönlendirme. Vurgu notasyonunu destekler (1-1.4). Varsayılan boş bir dizedir. |
-| `light_transfer_strength` | INT | Evet | 0 ile 100 | Işık aktarımı uygulamasının yoğunluğu. Varsayılan: 100. |
-| `style` | COMBO | Evet | `"standard"`<br>`"darker_but_realistic"`<br>`"clean"`<br>`"smooth"`<br>`"brighter"`<br>`"contrasted_n_hdr"`<br>`"just_composition"` | Stilistik çıktı tercihi. |
-| `interpolate_from_original` | BOOLEAN | Evet | Yok | Orijinale daha yakın eşleşmesi için üretim özgürlüğünü kısıtlar. Varsayılan: False. |
-| `change_background` | BOOLEAN | Evet | Yok | İstem/referansa göre arka planı değiştirir. Varsayılan: True. |
-| `preserve_details` | BOOLEAN | Evet | Yok | Orijinalden doku ve ince ayrıntıları korur. Varsayılan: True. |
-| `advanced_settings` | DYNAMICCOMBO | Evet | `"disabled"`<br>`"enabled"` | Gelişmiş aydınlatma kontrolü için ince ayar seçenekleri. `"enabled"` olarak ayarlandığında ek parametreler kullanılabilir hale gelir. |
-| `reference_image` | IMAGE | Hayır | Yok | Aydınlatmanın aktarılacağı isteğe bağlı referans görüntü. Sağlanırsa tam olarak bir görüntü gereklidir. Minimum boyutlar 160x160 pikseldir. En-boy oranı 1:3 ile 3:1 arasında olmalıdır. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `image` | Aydınlatılacak görüntü. Tam olarak bir görüntü gereklidir. Minimum boyutlar 160x160 pikseldir. En-boy oranı 1:3 ile 3:1 arasında olmalıdır. | IMAGE | Evet | Yok |
+| `prompt` | Aydınlatma için tanımlayıcı yönlendirme. Vurgu notasyonunu destekler (1-1.4). Varsayılan boş bir dizedir. | STRING | Hayır | Yok |
+| `light_transfer_strength` | Işık aktarımı uygulamasının yoğunluğu. Varsayılan: 100. | INT | Evet | 0 ile 100 |
+| `style` | Stilistik çıktı tercihi. | COMBO | Evet | `"standard"`<br>`"darker_but_realistic"`<br>`"clean"`<br>`"smooth"`<br>`"brighter"`<br>`"contrasted_n_hdr"`<br>`"just_composition"` |
+| `interpolate_from_original` | Orijinale daha yakın eşleşmesi için üretim özgürlüğünü kısıtlar. Varsayılan: False. | BOOLEAN | Evet | Yok |
+| `change_background` | İstem/referansa göre arka planı değiştirir. Varsayılan: True. | BOOLEAN | Evet | Yok |
+| `preserve_details` | Orijinalden doku ve ince ayrıntıları korur. Varsayılan: True. | BOOLEAN | Evet | Yok |
+| `advanced_settings` | Gelişmiş aydınlatma kontrolü için ince ayar seçenekleri. `"enabled"` olarak ayarlandığında ek parametreler kullanılabilir hale gelir. | DYNAMICCOMBO | Evet | `"disabled"`<br>`"enabled"` |
+| `reference_image` | Aydınlatmanın aktarılacağı isteğe bağlı referans görüntü. Sağlanırsa tam olarak bir görüntü gereklidir. Minimum boyutlar 160x160 pikseldir. En-boy oranı 1:3 ile 3:1 arasında olmalıdır. | IMAGE | Hayır | Yok |
 
 **Gelişmiş Ayarlar Hakkında Not:** `advanced_settings` `"enabled"` olarak ayarlandığında, aşağıdaki iç içe parametreler etkinleşir:
 
@@ -32,9 +30,11 @@ Magnific Image Relight düğümü, bir girdi görüntüsünün aydınlatmasını
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|-------------|
-| `image` | IMAGE | Yeniden aydınlatılmış görüntü. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Yeniden aydınlatılmış görüntü. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageRelightNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `c260b7c88a267a20fdea7f436404fe96ede782bc522ab29da36e94c20f7330cd`

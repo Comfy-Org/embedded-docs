@@ -1,18 +1,16 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/es.md)
-
 Este nodo genera videos utilizando el modelo Kling V3. Admite dos modos principales: texto a video, donde se crea un video a partir de una descripción textual, e imagen a video, donde se anima una imagen existente. También ofrece funciones avanzadas como la creación de videos de múltiples segmentos con diferentes indicaciones para cada parte (guiones gráficos) y la opción de generar audio de acompañamiento.
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `multi_shot` | COMBO | Sí | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Controla si se genera un solo video o una serie de segmentos con indicaciones y duraciones individuales. Cuando no está en "disabled", aparecen entradas adicionales para la indicación y duración de cada guión gráfico. |
-| `generar audio` | BOOLEAN | Sí | `True` / `False` | Cuando está habilitado, el nodo generará audio para el video. El valor predeterminado es `True`. |
-| `modelo` | COMBO | Sí | `"kling-v3"` | El modelo y sus ajustes asociados. Seleccionar esta opción revela los subparámetros `resolution` y `aspect_ratio`. |
-| `model.resolution` | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` | La resolución del video generado. Este ajuste está disponible cuando el `modelo` está configurado en "kling-v3". |
-| `model.aspect_ratio` | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` | La relación de aspecto del video generado. Este ajuste se ignora cuando se proporciona una imagen para `fotograma inicial` (modo imagen a video). Disponible cuando el `modelo` está configurado en "kling-v3". |
-| `semilla` | INT | Sí | 0 a 2147483647 | Un valor de semilla para la generación. Cambiar este valor hará que el nodo se ejecute nuevamente, pero los resultados no son deterministas. El valor predeterminado es `0`. |
-| `fotograma inicial` | IMAGE | No | - | Una imagen inicial opcional. Cuando está conectada, el nodo cambia del modo texto a video al modo imagen a video, animando la imagen proporcionada. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `multi_shot` | Controla si se genera un solo video o una serie de segmentos con indicaciones y duraciones individuales. Cuando no está en "disabled", aparecen entradas adicionales para la indicación y duración de cada guión gráfico. | COMBO | Sí | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `generar audio` | Cuando está habilitado, el nodo generará audio para el video. El valor predeterminado es `True`. | BOOLEAN | Sí | `True` / `False` |
+| `modelo` | El modelo y sus ajustes asociados. Seleccionar esta opción revela los subparámetros `resolution` y `aspect_ratio`. | COMBO | Sí | `"kling-v3"` |
+| `model.resolution` | La resolución del video generado. Este ajuste está disponible cuando el `modelo` está configurado en "kling-v3". | COMBO | Sí | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `model.aspect_ratio` | La relación de aspecto del video generado. Este ajuste se ignora cuando se proporciona una imagen para `fotograma inicial` (modo imagen a video). Disponible cuando el `modelo` está configurado en "kling-v3". | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `semilla` | Un valor de semilla para la generación. Cambiar este valor hará que el nodo se ejecute nuevamente, pero los resultados no son deterministas. El valor predeterminado es `0`. | INT | Sí | 0 a 2147483647 |
+| `fotograma inicial` | Una imagen inicial opcional. Cuando está conectada, el nodo cambia del modo texto a video al modo imagen a video, animando la imagen proporcionada. | IMAGE | No | - |
 
 **Entradas para el modo `multi_shot`:**
 
@@ -30,9 +28,11 @@ Este nodo genera videos utilizando el modelo Kling V3. Admite dos modos principa
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `video` | VIDEO | El archivo de video generado. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `video` | El archivo de video generado. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `f7f827d657b1d057d273eba3215ce6848d3ea05c5f348e2f3fccccfdd030dfc3`

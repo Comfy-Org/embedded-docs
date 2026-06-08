@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/tr.md)
-
 Fotoğraflardaki tüm kenar çizgilerini ayıklayın, tıpkı bir fotoğrafın üzerinden kalemle geçerek nesnelerin konturlarını ve detay sınırlarını çıkarmak gibi.
 
 ## Çalışma Prensibi
@@ -16,17 +14,17 @@ Nihai çıktı, beyaz kısımların algılanan kenar çizgileri ve siyah kısım
 
 ## Girişler
 
-| Parametre Adı    | Veri Türü | Giriş Türü | Varsayılan | Aralık     | İşlev Açıklaması |
-|------------------|-----------|------------|------------|------------|------------------|
-| `görüntü`          | IMAGE     | Giriş      | -          | -          | Kenar çıkarma işlemi yapılacak orijinal fotoğraf |
-| `düşük_eşik`  | FLOAT     | Widget     | 0.4        | 0.01-0.99  | Düşük eşik, ne kadar zayıf kenarların yok sayılacağını belirler. Daha düşük değerler daha fazla detay korur ancak gürültü oluşturabilir |
-| `yüksek_eşik` | FLOAT     | Widget     | 0.8        | 0.01-0.99  | Yüksek eşik, ne kadar güçlü kenarların korunacağını belirler. Daha yüksek değerler yalnızca en belirgin kontur çizgilerini tutar |
+| Parametre Adı | İşlev Açıklaması | Veri Türü | Giriş Türü | Varsayılan | Aralık |
+| --- | --- | --- | --- | --- | --- |
+| `görüntü` | Kenar çıkarma işlemi yapılacak orijinal fotoğraf | IMAGE | Giriş | - | - |
+| `düşük_eşik` | Düşük eşik, ne kadar zayıf kenarların yok sayılacağını belirler. Daha düşük değerler daha fazla detay korur ancak gürültü oluşturabilir | FLOAT | Widget | 0.4 | 0.01-0.99 |
+| `yüksek_eşik` | Yüksek eşik, ne kadar güçlü kenarların korunacağını belirler. Daha yüksek değerler yalnızca en belirgin kontur çizgilerini tutar | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `görüntü`   | IMAGE     | Siyah beyaz kenar görüntüsü; beyaz çizgiler algılanan kenarlar, siyah alanlar kenar olmayan kısımlardır |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `görüntü` | Siyah beyaz kenar görüntüsü; beyaz çizgiler algılanan kenarlar, siyah alanlar kenar olmayan kısımlardır | IMAGE |
 
 ## Parametre Karşılaştırması
 
@@ -40,3 +38,5 @@ Nihai çıktı, beyaz kısımların algılanan kenar çizgileri ve siyah kısım
 - Çok fazla gürültü: Düşük eşiği yükseltin
 - Önemli detayların eksik olması: Düşük eşiği düşürün
 - Kenarların çok pürüzlü olması: Giriş görüntüsünün kalitesini ve çözünürlüğünü kontrol edin
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Canny/tr.md)

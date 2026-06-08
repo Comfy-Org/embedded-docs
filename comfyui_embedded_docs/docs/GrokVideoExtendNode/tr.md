@@ -1,15 +1,13 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoExtendNode/tr.md)
-
 Bu, mevcut bir videonun kesintisiz devamını oluşturmak için bir yapay zeka modeli kullanan bir düğümdür. Kısa bir video ve ardından ne olması gerektiğini açıklayan bir metin istemi sağlarsınız; düğüm, orijinalin devamı niteliğinde yeni bir video klibi oluşturur.
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | Yok | Videoda daha sonra ne olması gerektiğine dair metin açıklaması. |
-| `video` | VIDEO | Evet | Yok | Uzatılacak kaynak video. MP4 formatı, 2-15 saniye. |
-| `model` | COMBO | Evet | `"grok-imagine-video"` | Video uzatma için kullanılacak model. Seçildiğinde, iç içe geçmiş bir `duration` parametresini ortaya çıkarır. |
-| `tohum` | INT | Hayır | 0 ile 2147483647 arası | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar, tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `istem` | Videoda daha sonra ne olması gerektiğine dair metin açıklaması. | STRING | Evet | Yok |
+| `video` | Uzatılacak kaynak video. MP4 formatı, 2-15 saniye. | VIDEO | Evet | Yok |
+| `model` | Video uzatma için kullanılacak model. Seçildiğinde, iç içe geçmiş bir `duration` parametresini ortaya çıkarır. | COMBO | Evet | `"grok-imagine-video"` |
+| `tohum` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum; gerçek sonuçlar, tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 
 **Parametre Kısıtlamaları:**
 *   `video` girişi, 2 ila 15 saniye uzunluğunda bir MP4 dosyası olmalı ve dosya boyutu 50MB'ı geçemez.
@@ -18,9 +16,11 @@ Bu, mevcut bir videonun kesintisiz devamını oluşturmak için bir yapay zeka m
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `output` | VIDEO | Yeni oluşturulan video uzantısı. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `output` | Yeni oluşturulan video uzantısı. | VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoExtendNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `a33383be0eb6857538a75e1b901ee58df0153dfeaf95a7ee19933d651b745b5f`

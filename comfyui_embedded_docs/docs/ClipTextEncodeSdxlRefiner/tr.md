@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/tr.md)
-
 Bu düğüm, metin istemlerini estetik puanları ve boyut bilgilerini dahil ederek koşullandırma bilgisine dönüştürmek, böylece üretim görevleri için koşulları iyileştirmek ve nihai iyileştirme etkisini artırmak üzere özel olarak SDXL Refiner modeli için tasarlanmıştır. Profesyonel bir sanat yönetmeni gibi çalışarak yalnızca yaratıcı niyetinizi iletmekle kalmaz, aynı zamanda çalışmaya hassas estetik standartlar ve teknik özellik gereksinimleri de enjekte eder.
 
 ## SDXL Refiner Hakkında
@@ -17,19 +15,19 @@ Refiner iki şekilde kullanılabilir:
 
 ## Girişler
 
-| Parametre Adı | Veri Türü | Giriş Türü | Varsayılan Değer | Değer Aralığı | Açıklama |
-|---------------|-----------|------------|-----------------|---------------|----------|
-| `clip` | CLIP | Zorunlu | - | - | Metin tokenizasyonu ve kodlaması için kullanılan CLIP model örneği, metni modelin anlayabileceği formata dönüştüren temel bileşen |
-| `askor` | FLOAT | İsteğe Bağlı | 6.0 | 0.0-1000.0 | Oluşturulan görüntülerin görsel kalitesini ve estetiğini kontrol eder, sanat eserleri için kalite standartları belirlemeye benzer:<br/>- Yüksek puanlar (7.5-8.5): Daha rafine, ayrıntı açısından zengin efektler hedefler<br/>- Orta puanlar (6.0-7.0): Dengeli kalite kontrolü<br/>- Düşük puanlar (2.0-3.0): Negatif istemler için uygundur |
-| `genişlik` | INT | Zorunlu | 1024 | 64-16384 | Çıktı görüntü genişliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir |
-| `yükseklik` | INT | Zorunlu | 1024 | 64-16384 | Çıktı görüntü yüksekliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir |
-| `metin` | STRING | Zorunlu | - | - | Metin istemi açıklaması, çok satırlı girişi ve dinamik istem sözdizimini destekler. Refiner'da metin istemleri, istenen görsel kalite ve ayrıntı özelliklerini tanımlamaya daha fazla odaklanmalıdır |
+| Parametre Adı | Açıklama | Veri Türü | Giriş Türü | Varsayılan Değer | Değer Aralığı |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | Metin tokenizasyonu ve kodlaması için kullanılan CLIP model örneği, metni modelin anlayabileceği formata dönüştüren temel bileşen | CLIP | Zorunlu | - | - |
+| `askor` | Oluşturulan görüntülerin görsel kalitesini ve estetiğini kontrol eder, sanat eserleri için kalite standartları belirlemeye benzer:<br/>- Yüksek puanlar (7.5-8.5): Daha rafine, ayrıntı açısından zengin efektler hedefler<br/>- Orta puanlar (6.0-7.0): Dengeli kalite kontrolü<br/>- Düşük puanlar (2.0-3.0): Negatif istemler için uygundur | FLOAT | İsteğe Bağlı | 6.0 | 0.0-1000.0 |
+| `genişlik` | Çıktı görüntü genişliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir | INT | Zorunlu | 1024 | 64-16384 |
+| `yükseklik` | Çıktı görüntü yüksekliğini (piksel) belirtir, 8'in katı olmalıdır. SDXL, toplam piksel sayısı 1024×1024'e (yaklaşık 1M piksel) yakın olduğunda en iyi performansı gösterir | INT | Zorunlu | 1024 | 64-16384 |
+| `metin` | Metin istemi açıklaması, çok satırlı girişi ve dinamik istem sözdizimini destekler. Refiner'da metin istemleri, istenen görsel kalite ve ayrıntı özelliklerini tanımlamaya daha fazla odaklanmalıdır | STRING | Zorunlu | - | - |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-----------|-----------|----------|
-| `CONDITIONING` | CONDITIONING | Metin anlambilimi, estetik standartlar ve boyut bilgilerinin entegre kodlamasını içeren, özellikle SDXL Refiner modelini hassas görüntü iyileştirmede yönlendirmek için kullanılan rafine koşullu çıktı |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `CONDITIONING` | Metin anlambilimi, estetik standartlar ve boyut bilgilerinin entegre kodlamasını içeren, özellikle SDXL Refiner modelini hassas görüntü iyileştirmede yönlendirmek için kullanılan rafine koşullu çıktı | CONDITIONING |
 
 ## Notlar
 
@@ -38,3 +36,5 @@ Refiner iki şekilde kullanılabilir:
 3. Tüm boyut parametreleri 8'in katı olmalıdır ve toplam piksel sayısının 1024×1024'e (yaklaşık 1M piksel) yakın olması önerilir
 4. Refiner modeli, görüntü ayrıntılarını ve kalitesini geliştirmeye odaklanır, bu nedenle metin istemleri sahne içeriğinden ziyade istenen görsel efektleri vurgulamalıdır
 5. Pratik kullanımda, Refiner tipik olarak üretimin sonraki aşamalarında (yaklaşık son %20'lik adım) kullanılır ve ayrıntı optimizasyonuna odaklanır
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeSDXLRefiner/tr.md)

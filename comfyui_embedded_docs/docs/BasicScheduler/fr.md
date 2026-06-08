@@ -1,15 +1,13 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/fr.md)
-
 Le nœud `BasicScheduler` est conçu pour calculer une séquence de valeurs sigma pour les modèles de diffusion en fonction du planificateur, du modèle et des paramètres de débruitage fournis. Il ajuste dynamiquement le nombre total d'étapes en fonction du facteur de débruitage pour affiner le processus de diffusion, fournissant des « recettes » précises pour différentes étapes dans les processus d'échantillonnage avancés nécessitant un contrôle fin (comme l'échantillonnage multi-étapes).
 
 ## Entrées
 
-| Paramètre   | Type de données | Type d'entrée | Valeur par défaut | Plage     | Description Métaphorique           | Objectif Technique            |
-| ----------- | --------------- | ------------- | ----------------- | --------- | ---------------------------------- | ----------------------------- |
-| `modèle`     | MODEL           | Entrée        | -                 | -         | **Type de toile** : Différents matériaux de toile nécessitent différentes formules de peinture | Objet modèle de diffusion, détermine la base de calcul des sigma |
-| `planificateur` | COMBO[STRING]   | Widget        | -                 | 9 options | **Technique de mélange** : Choisir comment la concentration de peinture change | Algorithme de planification, contrôle le mode de décroissance du bruit |
-| `étapes`     | INT             | Widget        | 20                | 1-10000   | **Nombre de mélanges** : Précision entre 20 mélanges et 50 mélanges | Étapes d'échantillonnage, affecte la qualité et la vitesse de génération |
-| `débruitage`   | FLOAT           | Widget        | 1.0               | 0.0-1.0   | **Intensité de création** : Contrôle le niveau, du réglage fin à la repeinture | Force de débruitage, prend en charge les scénarios de repeinture partielle |
+| Paramètre | Description Métaphorique | Type de données | Type d'entrée | Valeur par défaut | Plage | Objectif Technique |
+| --- | --- | --- | --- | --- | --- | --- |
+| `modèle` | **Type de toile** : Différents matériaux de toile nécessitent différentes formules de peinture | MODEL | Entrée | - | - | Objet modèle de diffusion, détermine la base de calcul des sigma |
+| `planificateur` | **Technique de mélange** : Choisir comment la concentration de peinture change | COMBO[STRING] | Widget | - | 9 options | Algorithme de planification, contrôle le mode de décroissance du bruit |
+| `étapes` | **Nombre de mélanges** : Précision entre 20 mélanges et 50 mélanges | INT | Widget | 20 | 1-10000 | Étapes d'échantillonnage, affecte la qualité et la vitesse de génération |
+| `débruitage` | **Intensité de création** : Contrôle le niveau, du réglage fin à la repeinture | FLOAT | Widget | 1.0 | 0.0-1.0 | Force de débruitage, prend en charge les scénarios de repeinture partielle |
 
 ### Types de planificateurs
 
@@ -29,9 +27,9 @@ Basé sur le code source `comfy.samplers.SCHEDULER_NAMES`, prend en charge les 9
 
 ## Sorties
 
-| Paramètre | Type de données | Type de sortie | Description Métaphorique   | Signification Technique                |
-| --------- | --------------- | -------------- | -------------------------- | --------------------------------------- |
-| `sigmas`  | SIGMAS          | Sortie         | **Tableau de recettes de peinture** : Liste détaillée des concentrations de peinture pour une utilisation étape par étape | Séquence de niveaux de bruit, guide le processus de débruitage du modèle de diffusion |
+| Paramètre | Description Métaphorique | Type de données | Type de sortie | Signification Technique |
+| --- | --- | --- | --- | --- |
+| `sigmas` | **Tableau de recettes de peinture** : Liste détaillée des concentrations de peinture pour une utilisation étape par étape | SIGMAS | Sortie | Séquence de niveaux de bruit, guide le processus de débruitage du modèle de diffusion |
 
 ## Rôle du nœud : Assistant de mélange de couleurs de l'artiste
 
@@ -67,3 +65,5 @@ Imaginez que vous êtes un artiste créant une image claire à partir d'un méla
 ### Collaboration avec d'autres nœuds
 
 `BasicScheduler` (Assistant couleur) → Préparer la recette → `SamplerCustom` (Artiste) → Peinture réelle → Œuvre terminée
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BasicScheduler/fr.md)

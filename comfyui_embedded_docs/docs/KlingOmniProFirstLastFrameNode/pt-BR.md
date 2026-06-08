@@ -1,21 +1,19 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/pt-BR.md)
-
 Este nó utiliza o modelo mais recente da Kling AI para gerar um vídeo a partir de um quadro inicial, um quadro final opcional ou imagens de referência. Ele pode criar um único vídeo ou um storyboard multi-cena com prompts e durações individuais para cada segmento. O nó processa essas entradas para produzir um vídeo com duração e resolução especificadas, com geração opcional de áudio.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `model_name` | COMBO | Sim | `"kling-v3-omni"`<br>`"kling-video-o1"` | O modelo específico da Kling AI a ser usado para geração de vídeo. |
-| `prompt` | STRING | Sim | - | Um prompt de texto descrevendo o conteúdo do vídeo. Pode incluir descrições positivas e negativas. Ignorado quando storyboards estão ativados. |
-| `duration` | INT | Sim | 3 a 15 | A duração desejada do vídeo gerado em segundos (padrão: 5). |
-| `first_frame` | IMAGE | Sim | - | A imagem inicial para a sequência de vídeo. |
-| `end_frame` | IMAGE | Não | - | Um quadro final opcional para o vídeo. Não pode ser usado simultaneamente com `reference_images`. Não funciona com storyboards. |
-| `reference_images` | IMAGE | Não | - | Até 6 imagens de referência adicionais. |
-| `resolution` | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` | A resolução de saída para o vídeo gerado (padrão: "1080p"). |
-| `storyboards` | DYNAMIC_COMBO | Não | `"desativado"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando ativado, cada storyboard requer um prompt e uma duração. |
-| `gerar_áudio` | BOOLEAN | Não | Verdadeiro / Falso | Gera áudio para o vídeo (padrão: Falso). Suportado apenas para `kling-v3-omni`. |
-| `semente` | INT | Não | 0 a 2147483647 | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 0). |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `model_name` | O modelo específico da Kling AI a ser usado para geração de vídeo. | COMBO | Sim | `"kling-v3-omni"`<br>`"kling-video-o1"` |
+| `prompt` | Um prompt de texto descrevendo o conteúdo do vídeo. Pode incluir descrições positivas e negativas. Ignorado quando storyboards estão ativados. | STRING | Sim | - |
+| `duration` | A duração desejada do vídeo gerado em segundos (padrão: 5). | INT | Sim | 3 a 15 |
+| `first_frame` | A imagem inicial para a sequência de vídeo. | IMAGE | Sim | - |
+| `end_frame` | Um quadro final opcional para o vídeo. Não pode ser usado simultaneamente com `reference_images`. Não funciona com storyboards. | IMAGE | Não | - |
+| `reference_images` | Até 6 imagens de referência adicionais. | IMAGE | Não | - |
+| `resolution` | A resolução de saída para o vídeo gerado (padrão: "1080p"). | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `storyboards` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando ativado, cada storyboard requer um prompt e uma duração. | DYNAMIC_COMBO | Não | `"desativado"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `gerar_áudio` | Gera áudio para o vídeo (padrão: Falso). Suportado apenas para `kling-v3-omni`. | BOOLEAN | Não | Verdadeiro / Falso |
+| `semente` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
 
 **Restrições Importantes:**
 
@@ -32,9 +30,11 @@ Este nó utiliza o modelo mais recente da Kling AI para gerar um vídeo a partir
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `output` | VIDEO | O arquivo de vídeo gerado. |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `output` | O arquivo de vídeo gerado. | VIDEO |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProFirstLastFrameNode/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `bd0fb11242b7f79062079b1aa48c3524abf59ecf06a90f013e57b6910cd8e224`

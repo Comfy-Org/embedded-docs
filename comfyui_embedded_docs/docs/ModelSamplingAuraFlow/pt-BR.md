@@ -1,19 +1,19 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingAuraFlow/pt-BR.md)
-
 O nó ModelSamplingAuraFlow aplica uma configuração de amostragem especializada a modelos de difusão, projetada especificamente para arquiteturas de modelo AuraFlow. Ele modifica o comportamento de amostragem do modelo aplicando um parâmetro de deslocamento que ajusta a distribuição de amostragem. Este nó herda da estrutura de amostragem de modelo SD3 e fornece controle refinado sobre o processo de amostragem.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|--------------|-------------|-------|-----------|
-| `modelo` | MODEL | Sim | - | O modelo de difusão ao qual aplicar a configuração de amostragem AuraFlow |
-| `deslocamento` | FLOAT | Sim | 0.0 - 100.0 | O valor de deslocamento a ser aplicado à distribuição de amostragem (padrão: 1,73) |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `modelo` | O modelo de difusão ao qual aplicar a configuração de amostragem AuraFlow | MODEL | Sim | - |
+| `deslocamento` | O valor de deslocamento a ser aplicado à distribuição de amostragem (padrão: 1,73) | FLOAT | Sim | 0.0 - 100.0 |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `modelo` | MODEL | O modelo modificado com a configuração de amostragem AuraFlow aplicada |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `modelo` | O modelo modificado com a configuração de amostragem AuraFlow aplicada | MODEL |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingAuraFlow/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `f49367534032fb2d697d16e8197c16dc761678a5e39990993bdc864bfccea314`

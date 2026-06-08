@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/es.md)
-
 # OpenAIDalle2
 
 Genera imágenes de forma síncrona a través del endpoint DALL·E 2 de OpenAI.
@@ -10,20 +8,22 @@ Este nodo se conecta a la API DALL·E 2 de OpenAI para crear imágenes basadas e
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango | Descripción |
-|-----------|--------------|-----------------|-------------------|-------|-------------|
-| `prompt` | STRING | requerido | "" | - | Prompt de texto para DALL·E |
-| `seed` | INT | opcional | 0 | 0 a 2147483647 | aún no implementado en el backend |
-| `tamaño` | COMBO | opcional | "1024x1024" | "256x256", "512x512", "1024x1024" | Tamaño de la imagen |
-| `n` | INT | opcional | 1 | 1 a 8 | Cantidad de imágenes a generar |
-| `imagen` | IMAGE | opcional | None | - | Imagen de referencia opcional para edición de imágenes. |
-| `mask` | MASK | opcional | None | - | Máscara opcional para inpainting (las áreas blancas serán reemplazadas) |
+| Parámetro | Descripción | Tipo de Dato | Tipo de Entrada | Valor por Defecto | Rango |
+| --- | --- | --- | --- | --- | --- |
+| `prompt` | Prompt de texto para DALL·E | STRING | requerido | "" | - |
+| `seed` | aún no implementado en el backend | INT | opcional | 0 | 0 a 2147483647 |
+| `tamaño` | Tamaño de la imagen | COMBO | opcional | "1024x1024" | "256x256", "512x512", "1024x1024" |
+| `n` | Cantidad de imágenes a generar | INT | opcional | 1 | 1 a 8 |
+| `imagen` | Imagen de referencia opcional para edición de imágenes. | IMAGE | opcional | None | - |
+| `mask` | Máscara opcional para inpainting (las áreas blancas serán reemplazadas) | MASK | opcional | None | - |
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `IMAGE` | IMAGE | La(s) imagen(es) generada(s) o editada(s) desde DALL·E 2 |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `IMAGE` | La(s) imagen(es) generada(s) o editada(s) desde DALL·E 2 | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIDalle2/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `ad10b149ac28559ad18c09e0f071286509680603d953833106ad6a2d578f7efe`

@@ -1,13 +1,11 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/zh-TW.md)
-
 此節點為 Seedance 2.0 建立個人影片資產。它會上傳您的輸入影片，並將其註冊到指定的資產群組中。如果您未提供群組 ID，它將引導您在瀏覽器中完成真人驗證流程，以先建立一個新群組。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | 是 | - | 要註冊為個人資產的影片。 |
-| `group_id` | STRING | 否 | - | 重複使用現有的 Seedance 資產群組 ID，以跳過對同一人物的重複真人驗證。留空則在瀏覽器中執行真人驗證並建立新群組。（預設值：空字串） |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `video` | 要註冊為個人資產的影片。 | VIDEO | 是 | - |
+| `group_id` | 重複使用現有的 Seedance 資產群組 ID，以跳過對同一人物的重複真人驗證。留空則在瀏覽器中執行真人驗證並建立新群組。（預設值：空字串） | STRING | 否 | - |
 
 **影片限制：**
 *   **時長：** 必須在 2 到 15 秒之間。
@@ -18,10 +16,12 @@
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `group_id` | STRING | 新建立的影片資產的唯一識別碼。 |
-| `group_id` | STRING | 包含新影片的資產群組識別碼。這將是提供的 `group_id` 或新建立的群組 ID。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `group_id` | 新建立的影片資產的唯一識別碼。 | STRING |
+| `group_id` | 包含新影片的資產群組識別碼。這將是提供的 `group_id` 或新建立的群組 ID。 | STRING |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `9da0872cf8df32765e3fb1eef50bc24f53b65e069d8ef2609de1075d89edd605`

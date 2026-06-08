@@ -1,24 +1,22 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/tr.md)
-
 ## Genel Bakış
 
 Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Birden fazla modeli destekler, düzenleme için giriş görselleri sağlamanıza olanak tanır ve bir görselin hangi bölümlerinin değiştirileceğini belirtmek için maske kullanabilir.
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `istem` | STRING | Evet | Yok | GPT Image için metin istemi (varsayılan: ""). |
-| `model` | COMBO | Evet | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` | Kullanılacak OpenAI GPT Image modeli. Bir model seçmek, o modele özgü ek parametreleri ortaya çıkarır. |
-| `model.size` | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` | Görsel boyutu. Özel genişlik ve yükseklik kullanmak için 'Custom' seçeneğini seçin (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. |
-| `model.custom_width` | INT | Hayır | 1024 - 3840 | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. |
-| `model.custom_height` | INT | Hayır | 1024 - 3840 | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. |
-| `model.background` | COMBO | Evet | `"auto"`<br>`"opaque"` | Görseli arka planlı veya arka plansız döndürür (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. |
-| `model.quality` | COMBO | Evet | `"standard"`<br>`"hd"` | Oluşturulan görselin kalitesi. Yalnızca `gpt-image-2` için kullanılabilir. |
-| `model.images` | IMAGE | Hayır | Yok | Düzenleme için giriş görselleri. Yalnızca `gpt-image-2` için kullanılabilir. |
-| `model.mask` | MASK | Hayır | Yok | Giriş görselinin hangi bölümlerinin düzenleneceğini belirten bir maske. Yalnızca `gpt-image-2` için kullanılabilir. |
-| `n` | INT | Evet | 1 - 8 | Kaç adet görsel oluşturulacağı (varsayılan: 1). |
-| `tohum` | INT | Evet | 0 - 2147483647 | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). Not: Henüz arka uçta uygulanmamıştır. |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `istem` | GPT Image için metin istemi (varsayılan: ""). | STRING | Evet | Yok |
+| `model` | Kullanılacak OpenAI GPT Image modeli. Bir model seçmek, o modele özgü ek parametreleri ortaya çıkarır. | COMBO | Evet | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `model.size` | Görsel boyutu. Özel genişlik ve yükseklik kullanmak için 'Custom' seçeneğini seçin (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
+| `model.custom_width` | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. | INT | Hayır | 1024 - 3840 |
+| `model.custom_height` | Yalnızca `size` 'Custom' olduğunda kullanılır. 16'nın katı olmalıdır (varsayılan: 1024). Yalnızca `gpt-image-2` için kullanılabilir. | INT | Hayır | 1024 - 3840 |
+| `model.background` | Görseli arka planlı veya arka plansız döndürür (varsayılan: "auto"). Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"auto"`<br>`"opaque"` |
+| `model.quality` | Oluşturulan görselin kalitesi. Yalnızca `gpt-image-2` için kullanılabilir. | COMBO | Evet | `"standard"`<br>`"hd"` |
+| `model.images` | Düzenleme için giriş görselleri. Yalnızca `gpt-image-2` için kullanılabilir. | IMAGE | Hayır | Yok |
+| `model.mask` | Giriş görselinin hangi bölümlerinin düzenleneceğini belirten bir maske. Yalnızca `gpt-image-2` için kullanılabilir. | MASK | Hayır | Yok |
+| `n` | Kaç adet görsel oluşturulacağı (varsayılan: 1). | INT | Evet | 1 - 8 |
+| `tohum` | Tekrarlanabilirlik için tohum değeri (varsayılan: 0). Not: Henüz arka uçta uygulanmamıştır. | INT | Evet | 0 - 2147483647 |
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 
@@ -30,9 +28,11 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `image` | IMAGE | Oluşturulan görsel veya görseller. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `image` | Oluşturulan görsel veya görseller. | IMAGE |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `a757208cf6cc151594599b35b0ef73f2caf7274189e948799211c0714a6a8f89`

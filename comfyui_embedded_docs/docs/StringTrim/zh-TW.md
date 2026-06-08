@@ -1,21 +1,21 @@
-> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringTrim/zh-TW.md)
-
 ## 概述
 
 StringTrim 節點會移除文字字串開頭、結尾或兩側的空白字元。您可以選擇修剪字串的左側、右側或兩側。這對於透過移除多餘空格、定位字元或換行字元來清理文字輸入非常有用。
 
 ## 輸入
 
-| 參數 | 資料類型 | 必要 | 範圍 | 說明 |
-|-----------|-----------|----------|-------|-------------|
-| `字串` | STRING | 是 | - | 要處理的文字字串。支援多行輸入。 |
-| `模式` | COMBO | 是 | "Both"<br>"Left"<br>"Right" | 指定要修剪字串的哪一側（或多側）。"Both" 會移除兩端的空白字元，"Left" 僅移除開頭的空白字元，"Right" 僅移除結尾的空白字元。 |
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+| --- | --- | --- | --- | --- |
+| `字串` | 要處理的文字字串。支援多行輸入。 | STRING | 是 | - |
+| `模式` | 指定要修剪字串的哪一側（或多側）。"Both" 會移除兩端的空白字元，"Left" 僅移除開頭的空白字元，"Right" 僅移除結尾的空白字元。 | COMBO | 是 | "Both"<br>"Left"<br>"Right" |
 
 ## 輸出
 
-| 輸出名稱 | 資料類型 | 說明 |
-|-------------|-----------|-------------|
-| `output` | STRING | 根據所選模式移除空白字元後的修剪文字字串。 |
+| 輸出名稱 | 說明 | 資料類型 |
+| --- | --- | --- |
+| `output` | 根據所選模式移除空白字元後的修剪文字字串。 | STRING |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringTrim/zh-TW.md)
 
 ---
 **Source fingerprint (SHA-256):** `29b4da100373585af8a672ccfbd4c0b597705c1d8c176b2f88f3e878c1192460`

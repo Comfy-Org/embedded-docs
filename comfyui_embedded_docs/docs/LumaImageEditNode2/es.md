@@ -1,5 +1,3 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageEditNode2/es.md)
-
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageEditNode2/en.md)
 
 ## Resumen
@@ -8,12 +6,12 @@ Este nodo edita una imagen existente utilizando un mensaje de texto, impulsado p
 
 ## Entradas
 
-| Parámetro | Tipo de Dato | Obligatorio | Rango | Descripción |
-|-----------|--------------|-------------|-------|-------------|
-| `source` | IMAGE | Sí | - | Imagen de origen a editar. |
-| `prompt` | STRING | Sí | 1–6000 caracteres | Descripción de la edición deseada. Valor predeterminado: "" (cadena vacía). |
-| `model` | MODEL | Sí | `"uni-1"`<br>`"uni-1-max"` | Modelo a utilizar para la edición. |
-| `seed` | INT | Sí | 0 a 2147483647 | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. Valor predeterminado: 0. |
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+| --- | --- | --- | --- | --- |
+| `source` | Imagen de origen a editar. | IMAGE | Sí | - |
+| `prompt` | Descripción de la edición deseada. Valor predeterminado: "" (cadena vacía). | STRING | Sí | 1–6000 caracteres |
+| `model` | Modelo a utilizar para la edición. | MODEL | Sí | `"uni-1"`<br>`"uni-1-max"` |
+| `seed` | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla. Valor predeterminado: 0. | INT | Sí | 0 a 2147483647 |
 
 **Restricciones de Parámetros:**
 - El `prompt` debe tener entre 1 y 6000 caracteres de longitud.
@@ -21,9 +19,11 @@ Este nodo edita una imagen existente utilizando un mensaje de texto, impulsado p
 
 ## Salidas
 
-| Nombre de Salida | Tipo de Dato | Descripción |
-|------------------|--------------|-------------|
-| `image` | IMAGE | La imagen editada generada por el modelo Luma UNI-1. |
+| Nombre de Salida | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `image` | La imagen editada generada por el modelo Luma UNI-1. | IMAGE |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageEditNode2/es.md)
 
 ---
 **Source fingerprint (SHA-256):** `7026e3ce818b0a9710624bd071fc2049950290f89c7d0365ff44236e9ad5eaed`

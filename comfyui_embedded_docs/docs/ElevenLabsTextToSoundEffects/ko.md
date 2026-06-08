@@ -1,16 +1,14 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSoundEffects/ko.md)
-
 # ElevenLabs 텍스트-음향 효과 노드
 
 ElevenLabs 텍스트-음향 효과 노드는 텍스트 설명으로부터 오디오 음향 효과를 생성합니다. ElevenLabs API를 사용하여 프롬프트를 기반으로 음향 효과를 만들며, 지속 시간, 반복 동작, 텍스트와 소리의 일치 정도를 제어할 수 있습니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `text` | STRING | 예 | 해당 없음 | 생성할 음향 효과의 텍스트 설명입니다. 필수 입력 항목입니다. |
-| `model` | COMBO | 예 | `"eleven_sfx_v2"` | 음향 효과 생성에 사용할 모델입니다. 이 모델을 선택하면 추가 매개변수가 표시됩니다: `duration`(기본값: 5.0, 범위: 0.5~30.0초), `loop`(기본값: False), `prompt_influence`(기본값: 0.3, 범위: 0.0~1.0). |
-| `output_format` | COMBO | 예 | `"mp3_44100_192"`<br>`"opus_48000_192"` | 오디오 출력 형식입니다. |
+| 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
+| --- | --- | --- | --- | --- |
+| `text` | 생성할 음향 효과의 텍스트 설명입니다. 필수 입력 항목입니다. | STRING | 예 | 해당 없음 |
+| `model` | 음향 효과 생성에 사용할 모델입니다. 이 모델을 선택하면 추가 매개변수가 표시됩니다: `duration`(기본값: 5.0, 범위: 0.5~30.0초), `loop`(기본값: False), `prompt_influence`(기본값: 0.3, 범위: 0.0~1.0). | COMBO | 예 | `"eleven_sfx_v2"` |
+| `output_format` | 오디오 출력 형식입니다. | COMBO | 예 | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 
 **매개변수 세부 설명:**
 
@@ -20,9 +18,11 @@ ElevenLabs 텍스트-음향 효과 노드는 텍스트 설명으로부터 오디
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `audio` | AUDIO | 생성된 음향 효과 오디오 파일입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `audio` | 생성된 음향 효과 오디오 파일입니다. | AUDIO |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToSoundEffects/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `c23c4dd3c9c12f0e891d40683265c5b74b5c6320601aaadb686489510db9f107`

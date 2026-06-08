@@ -1,15 +1,13 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/pt-BR.md)
-
 O nó `CLIPSave` salva um modelo de codificador de texto CLIP no disco no formato SafeTensors. Ele é projetado para fluxos de trabalho avançados de mesclagem de modelos e separa automaticamente o modelo CLIP em suas partes componentes (como CLIP-L, CLIP-G ou T5XXL) com base na estrutura interna do modelo, salvando cada componente como um arquivo separado.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
-|-----------|---------------|-----------------|--------|-------|-----------|
-| `clip` | CLIP | Obrigatório | - | - | O modelo CLIP a ser salvo. |
-| `filename_prefix` | STRING | Obrigatório | `clip/ComfyUI` | - | O caminho do prefixo e nome do arquivo para o(s) arquivo(s) salvo(s). O nó anexará um sufixo de componente (por exemplo, `_clip_l`, `_clip_g`) e um contador para criar nomes de arquivo únicos. |
-| `prompt` | PROMPT | Oculta | - | - | As informações do prompt do fluxo de trabalho, salvas como metadados no arquivo de saída. |
-| `extra_pnginfo` | EXTRA_PNGINFO | Oculta | - | - | Metadados adicionais, salvos como pares chave-valor no arquivo de saída. |
+| Parâmetro | Descrição | Tipo de Dados | Tipo de Entrada | Padrão | Faixa |
+| --- | --- | --- | --- | --- | --- |
+| `clip` | O modelo CLIP a ser salvo. | CLIP | Obrigatório | - | - |
+| `filename_prefix` | O caminho do prefixo e nome do arquivo para o(s) arquivo(s) salvo(s). O nó anexará um sufixo de componente (por exemplo, `_clip_l`, `_clip_g`) e um contador para criar nomes de arquivo únicos. | STRING | Obrigatório | `clip/ComfyUI` | - |
+| `prompt` | As informações do prompt do fluxo de trabalho, salvas como metadados no arquivo de saída. | PROMPT | Oculta | - | - |
+| `extra_pnginfo` | Metadados adicionais, salvos como pares chave-valor no arquivo de saída. | EXTRA_PNGINFO | Oculta | - | - |
 
 ## Saídas
 
@@ -33,6 +31,8 @@ O nó analisa o dicionário de estado do modelo CLIP e salva arquivos SafeTensor
 - Prefixo vazio (outros componentes CLIP)
 
 Para cada componente detectado, o nó cria um arquivo com o nome `{filename_prefix}_{counter:05}_.safetensors`, onde o prefixo do componente é anexado ao prefixo do nome do arquivo (por exemplo, `clip/ComfyUI_clip_l_00001_.safetensors`). O prefixo `transformer.` é removido das chaves de parâmetro durante o salvamento.
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSave/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `039b39cbfb9b04ccebc5fc885ebe75dfde14838530d38133d0a3a6311e392059`

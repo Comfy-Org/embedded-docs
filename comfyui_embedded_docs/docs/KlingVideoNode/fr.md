@@ -1,18 +1,16 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/fr.md)
-
 Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge deux modes principaux : le texte-vers-vidéo, où une vidéo est créée à partir d'une description textuelle, et l'image-vers-vidéo, où une image existante est animée. Il offre également des fonctionnalités avancées comme la création de vidéos multi-segments avec des invites différentes pour chaque partie (storyboards) et la génération facultative d'un son d'accompagnement.
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `multi_shot` | COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` | Contrôle s'il faut générer une seule vidéo ou une série de segments avec des invites et des durées individuelles. Lorsqu'il n'est pas réglé sur "disabled", des entrées supplémentaires pour l'invite et la durée de chaque storyboard apparaissent. |
-| `générer audio` | BOOLEAN | Oui | `True` / `False` | Lorsqu'il est activé, le nœud génère un son pour la vidéo. La valeur par défaut est `True`. |
-| `modèle` | COMBO | Oui | `"kling-v3"` | Le modèle et ses paramètres associés. La sélection de cette option révèle les sous-paramètres `resolution` et `aspect_ratio`. |
-| `model.resolution` | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` | La résolution de la vidéo générée. Ce paramètre est disponible lorsque le `modèle` est réglé sur "kling-v3". |
-| `model.aspect_ratio` | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` | Le rapport hauteur/largeur de la vidéo générée. Ce paramètre est ignoré lorsqu'une image est fournie pour `image de départ` (mode image-vers-vidéo). Disponible lorsque le `modèle` est réglé sur "kling-v3". |
-| `seed` | INT | Oui | 0 à 2147483647 | Une valeur de graine pour la génération. La modification de cette valeur entraînera la réexécution du nœud, mais les résultats ne sont pas déterministes. La valeur par défaut est `0`. |
-| `image de départ` | IMAGE | Non | - | Une image de départ facultative. Lorsqu'elle est connectée, le nœud passe du mode texte-vers-vidéo au mode image-vers-vidéo, animant l'image fournie. |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `multi_shot` | Contrôle s'il faut générer une seule vidéo ou une série de segments avec des invites et des durées individuelles. Lorsqu'il n'est pas réglé sur "disabled", des entrées supplémentaires pour l'invite et la durée de chaque storyboard apparaissent. | COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `générer audio` | Lorsqu'il est activé, le nœud génère un son pour la vidéo. La valeur par défaut est `True`. | BOOLEAN | Oui | `True` / `False` |
+| `modèle` | Le modèle et ses paramètres associés. La sélection de cette option révèle les sous-paramètres `resolution` et `aspect_ratio`. | COMBO | Oui | `"kling-v3"` |
+| `model.resolution` | La résolution de la vidéo générée. Ce paramètre est disponible lorsque le `modèle` est réglé sur "kling-v3". | COMBO | Oui | `"4k"`<br>`"1080p"`<br>`"720p"` |
+| `model.aspect_ratio` | Le rapport hauteur/largeur de la vidéo générée. Ce paramètre est ignoré lorsqu'une image est fournie pour `image de départ` (mode image-vers-vidéo). Disponible lorsque le `modèle` est réglé sur "kling-v3". | COMBO | Oui | `"16:9"`<br>`"9:16"`<br>`"1:1"` |
+| `seed` | Une valeur de graine pour la génération. La modification de cette valeur entraînera la réexécution du nœud, mais les résultats ne sont pas déterministes. La valeur par défaut est `0`. | INT | Oui | 0 à 2147483647 |
+| `image de départ` | Une image de départ facultative. Lorsqu'elle est connectée, le nœud passe du mode texte-vers-vidéo au mode image-vers-vidéo, animant l'image fournie. | IMAGE | Non | - |
 
 **Entrées pour le mode `multi_shot` :**
 
@@ -30,9 +28,11 @@ Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge 
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `video` | VIDEO | Le fichier vidéo généré. |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `video` | Le fichier vidéo généré. | VIDEO |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoNode/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `f7f827d657b1d057d273eba3215ce6848d3ea05c5f348e2f3fccccfdd030dfc3`

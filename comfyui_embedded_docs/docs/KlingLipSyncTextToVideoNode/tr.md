@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncTextToVideoNode/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -32,12 +30,12 @@ Kling Lip Sync Text to Video Node, bir video dosyasındaki ağız hareketlerini 
 
 ## Girdiler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `video` | VIDEO | Evet | - | Dudak senkronizasyonu için girdi video dosyası |
-| `metin` | STRING | Evet | - | Dudak Senkronizasyonu Video Oluşturma için Metin İçeriği. Mod text2video olduğunda gereklidir. Maksimum uzunluk 120 karakterdir. |
-| `ses` | COMBO | Hayır | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" | Dudak senkronizasyonu sesi için ses seçimi (varsayılan: "Melody") |
-| `ses_hızı` | FLOAT | Hayır | 0.8-2.0 | Konuşma Hızı. Geçerli aralık: 0.8~2.0, bir ondalık basamağa kadar hassas. (varsayılan: 1) |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `video` | Dudak senkronizasyonu için girdi video dosyası | VIDEO | Evet | - |
+| `metin` | Dudak Senkronizasyonu Video Oluşturma için Metin İçeriği. Mod text2video olduğunda gereklidir. Maksimum uzunluk 120 karakterdir. | STRING | Evet | - |
+| `ses` | Dudak senkronizasyonu sesi için ses seçimi (varsayılan: "Melody") | COMBO | Hayır | "Melody"<br>"Bella"<br>"Aria"<br>"Ethan"<br>"Ryan"<br>"Dorothy"<br>"Nathan"<br>"Lily"<br>"Aaron"<br>"Emma"<br>"Grace"<br>"Henry"<br>"Isabella"<br>"James"<br>"Katherine"<br>"Liam"<br>"Mia"<br>"Noah"<br>"Olivia"<br>"Sophia" |
+| `ses_hızı` | Konuşma Hızı. Geçerli aralık: 0.8~2.0, bir ondalık basamağa kadar hassas. (varsayılan: 1) | FLOAT | Hayır | 0.8-2.0 |
 
 **Video Gereksinimleri:**
 
@@ -47,11 +45,13 @@ Kling Lip Sync Text to Video Node, bir video dosyasındaki ağız hareketlerini 
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `video_kimliği` | VIDEO | Dudak senkronizasyonlu ses ile oluşturulan video |
-| `süre` | STRING | Oluşturulan video için benzersiz tanımlayıcı |
-| `duration` | STRING | Oluşturulan video için süre bilgisi |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `video_kimliği` | Dudak senkronizasyonlu ses ile oluşturulan video | VIDEO |
+| `süre` | Oluşturulan video için benzersiz tanımlayıcı | STRING |
+| `duration` | Oluşturulan video için süre bilgisi | STRING |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncTextToVideoNode/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `f16200d52ba05acfedebc027dde91e2c91bdbb80086888d947c9f56a4e92856d`

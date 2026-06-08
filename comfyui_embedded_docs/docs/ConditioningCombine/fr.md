@@ -1,19 +1,17 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningCombine/fr.md)
-
 Ce nœud combine deux entrées de conditionnement en une seule sortie, fusionnant ainsi leurs informations. Les deux conditions sont combinées par concaténation de listes.
 
 ## Entrées
 
-| Nom du paramètre    | Type de données    | Description |
-|---------------------|--------------------|-------------|
-| `conditionnement_1`    | `CONDITIONING`     | La première entrée de conditionnement à combiner. Elle a une importance égale à `conditionnement_2` dans le processus de combinaison. |
-| `conditionnement_2`    | `CONDITIONING`     | La deuxième entrée de conditionnement à combiner. Elle a une importance égale à `conditionnement_1` dans le processus de combinaison. |
+| Nom du paramètre | Description | Type de données |
+| --- | --- | --- |
+| `conditionnement_1` | La première entrée de conditionnement à combiner. Elle a une importance égale à `conditionnement_2` dans le processus de combinaison. | `CONDITIONING` |
+| `conditionnement_2` | La deuxième entrée de conditionnement à combiner. Elle a une importance égale à `conditionnement_1` dans le processus de combinaison. | `CONDITIONING` |
 
 ## Sorties
 
-| Nom du paramètre    | Type de données    | Description |
-|---------------------|--------------------|-------------|
-| `conditioning`      | `CONDITIONING`     | Le résultat de la combinaison de `conditionnement_1` et `conditionnement_2`, encapsulant les informations fusionnées. |
+| Nom du paramètre | Description | Type de données |
+| --- | --- | --- |
+| `conditioning` | Le résultat de la combinaison de `conditionnement_1` et `conditionnement_2`, encapsulant les informations fusionnées. | `CONDITIONING` |
 
 ## Scénarios d'utilisation
 
@@ -28,3 +26,5 @@ En utilisant ce nœud, vous pouvez réaliser :
 - **Fusion de texte basique** : Connectez les sorties de deux nœuds `CLIP Text Encode` aux deux ports d'entrée de `Conditioning Combine`
 - **Combinaison de prompts complexes** : Combinez des prompts positifs et négatifs, ou encodez séparément les descriptions principales et les descriptions de style avant de les fusionner
 - **Combinaison en chaîne conditionnelle** : Plusieurs nœuds `Conditioning Combine` peuvent être utilisés en série pour réaliser une combinaison progressive de multiples conditions
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningCombine/fr.md)

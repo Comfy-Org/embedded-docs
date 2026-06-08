@@ -1,5 +1,5 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TerminalLog/es.md)
-
 Terminal Log (Manager) se utiliza principalmente para mostrar la información de ejecución de ComfyUI en la terminal dentro de la interfaz de ComfyUI. Para usarlo, debes configurar el `mode` en modo **logging**. Esto permitirá que registre la información de registro correspondiente durante la tarea de generación de imágenes. Si el `mode` está configurado en modo **stop**, no registrará información de registro.
 
 Cuando accedes y usas ComfyUI a través de conexiones remotas o conexiones de red de área local, el nodo Terminal Log (Manager) se vuelve especialmente útil. Te permite ver directamente los mensajes de error del CMD dentro de la interfaz de ComfyUI, facilitando la comprensión del estado actual de la operación de ComfyUI.
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TerminalLog/es.md)

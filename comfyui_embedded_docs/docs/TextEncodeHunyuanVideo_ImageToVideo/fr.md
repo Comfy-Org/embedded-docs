@@ -1,5 +1,3 @@
-> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeHunyuanVideo_ImageToVideo/fr.md)
-
 Voici la traduction en français de la documentation du nœud ComfyUI `TextEncodeHunyuanVideo_ImageToVideo`, en respectant vos règles.
 
 ---
@@ -8,18 +6,20 @@ Le nœud `TextEncodeHunyuanVideo_ImageToVideo` crée des données de conditionne
 
 ## Entrées
 
-| Paramètre | Type de données | Requis | Plage | Description |
-|-----------|-----------------|--------|-------|-------------|
-| `clip` | CLIP | Oui | - | Le modèle CLIP utilisé pour la tokenisation et l'encodage |
-| `sortie_vision_clip` | CLIP_VISION_OUTPUT | Oui | - | Les embeddings visuels provenant d'un modèle de vision CLIP qui fournissent le contexte de l'image |
-| `invite` | STRING | Oui | - | La description textuelle pour guider la génération vidéo, prend en charge les entrées multilignes et les invites dynamiques |
-| `entrelacement_image` | INT | Oui | 1-512 | Dans quelle mesure l'image influence les résultats par rapport à l'invite textuelle. Un nombre plus élevé signifie une plus grande influence de l'invite textuelle. (valeur par défaut : 2) |
+| Paramètre | Description | Type de données | Requis | Plage |
+| --- | --- | --- | --- | --- |
+| `clip` | Le modèle CLIP utilisé pour la tokenisation et l'encodage | CLIP | Oui | - |
+| `sortie_vision_clip` | Les embeddings visuels provenant d'un modèle de vision CLIP qui fournissent le contexte de l'image | CLIP_VISION_OUTPUT | Oui | - |
+| `invite` | La description textuelle pour guider la génération vidéo, prend en charge les entrées multilignes et les invites dynamiques | STRING | Oui | - |
+| `entrelacement_image` | Dans quelle mesure l'image influence les résultats par rapport à l'invite textuelle. Un nombre plus élevé signifie une plus grande influence de l'invite textuelle. (valeur par défaut : 2) | INT | Oui | 1-512 |
 
 ## Sorties
 
-| Nom de la sortie | Type de données | Description |
-|------------------|-----------------|-------------|
-| `CONDITIONING` | CONDITIONING | Les données de conditionnement qui combinent les informations textuelles et visuelles pour la génération vidéo |
+| Nom de la sortie | Description | Type de données |
+| --- | --- | --- |
+| `CONDITIONING` | Les données de conditionnement qui combinent les informations textuelles et visuelles pour la génération vidéo | CONDITIONING |
+
+> Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeHunyuanVideo_ImageToVideo/fr.md)
 
 ---
 **Source fingerprint (SHA-256):** `ee748bd1fb1733593eb4cb1187c5cc279171163cfbc389f039378d0e366fc231`

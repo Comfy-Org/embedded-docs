@@ -1,17 +1,15 @@
-> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoEditNode/ko.md)
-
 이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoEditNode/en.md)
 
 이 노드는 Grok API를 사용하여 텍스트 프롬프트를 기반으로 기존 비디오를 편집합니다. 비디오를 업로드하고, AI 모델에 요청을 보내 사용자의 설명에 따라 비디오를 수정한 후, 새로 생성된 비디오를 반환합니다.
 
 ## 입력
 
-| 매개변수 | 데이터 타입 | 필수 여부 | 범위 | 설명 |
-|-----------|-----------|----------|-------|-------------|
-| `model` | COMBO | 예 | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` | 비디오 편집에 사용할 AI 모델입니다(기본값: `"grok-imagine-video"`). |
-| `프롬프트` | STRING | 예 | 해당 없음 | 원하는 비디오에 대한 텍스트 설명입니다. |
-| `비디오` | VIDEO | 예 | 해당 없음 | 편집할 입력 비디오입니다. 최대 지원 길이는 8.7초, 파일 크기는 50MB입니다. |
-| `시드` | INT | 아니요 | 0 ~ 2147483647 | 노드를 다시 실행할지 여부를 결정하는 시드 값입니다. 실제 결과는 시드 값과 관계없이 비결정적입니다(기본값: 0). |
+| 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
+| --- | --- | --- | --- | --- |
+| `model` | 비디오 편집에 사용할 AI 모델입니다(기본값: `"grok-imagine-video"`). | COMBO | 예 | `"grok-imagine-video"`<br>`"grok-imagine-video-beta"` |
+| `프롬프트` | 원하는 비디오에 대한 텍스트 설명입니다. | STRING | 예 | 해당 없음 |
+| `비디오` | 편집할 입력 비디오입니다. 최대 지원 길이는 8.7초, 파일 크기는 50MB입니다. | VIDEO | 예 | 해당 없음 |
+| `시드` | 노드를 다시 실행할지 여부를 결정하는 시드 값입니다. 실제 결과는 시드 값과 관계없이 비결정적입니다(기본값: 0). | INT | 아니요 | 0 ~ 2147483647 |
 
 **제약 사항:**
 
@@ -21,9 +19,11 @@
 
 ## 출력
 
-| 출력 이름 | 데이터 타입 | 설명 |
-|-------------|-----------|-------------|
-| `비디오` | VIDEO | AI 모델이 생성한 편집된 비디오입니다. |
+| 출력 이름 | 설명 | 데이터 타입 |
+| --- | --- | --- |
+| `비디오` | AI 모델이 생성한 편집된 비디오입니다. | VIDEO |
+
+> 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoEditNode/ko.md)
 
 ---
 **Source fingerprint (SHA-256):** `dfe52a089f7bfe7abc7f40ef113c44aef2dded828221d9d1acf0ddb6a167c33f`

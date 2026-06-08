@@ -1,25 +1,23 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageStitch/pt-BR.md)
-
 Este nó permite unir duas imagens em uma direção especificada (cima, baixo, esquerda, direita), com suporte para correspondência de tamanhos e espaçamento entre as imagens.
 
 ## Entradas
 
-| Nome do Parâmetro | Tipo de Dados | Tipo de Entrada | Padrão | Faixa | Descrição |
-|-------------------|---------------|-----------------|--------|-------|-----------|
-| `imagem1` | IMAGE | Obrigatório | - | - | A primeira imagem a ser unida |
-| `imagem2` | IMAGE | Opcional | Nenhum | - | A segunda imagem a ser unida; se não for fornecida, retorna apenas a primeira imagem |
-| `direção` | STRING | Obrigatório | right | right/down/left/up | A direção para unir a segunda imagem: direita, baixo, esquerda ou cima |
-| `ajustar_tamanho_imagem` | BOOLEAN | Obrigatório | True | True/False | Se deve redimensionar a segunda imagem para corresponder às dimensões da primeira imagem |
-| `largura_espacamento` | INT | Obrigatório | 0 | 0-1024 | Largura do espaçamento entre as imagens, deve ser um número par |
-| `cor_espacamento` | STRING | Obrigatório | white | white/black/red/green/blue | Cor do espaçamento entre as imagens unidas |
+| Nome do Parâmetro | Descrição | Tipo de Dados | Tipo de Entrada | Padrão | Faixa |
+| --- | --- | --- | --- | --- | --- |
+| `imagem1` | A primeira imagem a ser unida | IMAGE | Obrigatório | - | - |
+| `imagem2` | A segunda imagem a ser unida; se não for fornecida, retorna apenas a primeira imagem | IMAGE | Opcional | Nenhum | - |
+| `direção` | A direção para unir a segunda imagem: direita, baixo, esquerda ou cima | STRING | Obrigatório | right | right/down/left/up |
+| `ajustar_tamanho_imagem` | Se deve redimensionar a segunda imagem para corresponder às dimensões da primeira imagem | BOOLEAN | Obrigatório | True | True/False |
+| `largura_espacamento` | Largura do espaçamento entre as imagens, deve ser um número par | INT | Obrigatório | 0 | 0-1024 |
+| `cor_espacamento` | Cor do espaçamento entre as imagens unidas | STRING | Obrigatório | white | white/black/red/green/blue |
 
 > Para `spacing_color`, ao usar cores diferentes de "white/black", se `match_image_size` estiver definido como `false`, a área de preenchimento será preenchida com preto
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dados | Descrição |
-|---------------|---------------|-----------|
-| `IMAGE` | IMAGE | A imagem unida |
+| Nome da Saída | Descrição | Tipo de Dados |
+| --- | --- | --- |
+| `IMAGE` | A imagem unida | IMAGE |
 
 ## Exemplo de Fluxo de Trabalho
 
@@ -52,3 +50,5 @@ Imagem de saída 1:
 Imagem de saída 2:
 
 ![saída2](./asset/output-2.webp)
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageStitch/pt-BR.md)

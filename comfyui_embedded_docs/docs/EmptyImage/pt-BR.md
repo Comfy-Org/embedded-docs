@@ -1,5 +1,3 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyImage/pt-BR.md)
-
 ## Descrição da Função
 
 O nó EmptyImage é utilizado para criar imagens em branco com dimensões e cores especificadas. Ele pode gerar imagens de fundo de cor sólida, comumente usadas como pontos de partida ou imagens de fundo para fluxos de trabalho de processamento de imagens.
@@ -10,18 +8,18 @@ Assim como um pintor prepara uma tela em branco antes de começar a criar, o nó
 
 ## Entradas
 
-| Nome do Parâmetro | Tipo de Dado | Descrição |
-|-------------------|--------------|-----------|
-| `largura` | INT | Define a largura da imagem gerada (em pixels), determinando as dimensões horizontais da tela |
-| `altura` | INT | Define a altura da imagem gerada (em pixels), determinando as dimensões verticais da tela |
-| `tamanho_do_lote` | INT | O número de imagens a serem geradas de uma vez, usado para criação em lote de imagens com as mesmas especificações |
-| `cor` | INT | A cor de fundo da imagem. Você pode inserir configurações de cor hexadecimal, que serão convertidas automaticamente para decimal |
+| Nome do Parâmetro | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `largura` | Define a largura da imagem gerada (em pixels), determinando as dimensões horizontais da tela | INT |
+| `altura` | Define a altura da imagem gerada (em pixels), determinando as dimensões verticais da tela | INT |
+| `tamanho_do_lote` | O número de imagens a serem geradas de uma vez, usado para criação em lote de imagens com as mesmas especificações | INT |
+| `cor` | A cor de fundo da imagem. Você pode inserir configurações de cor hexadecimal, que serão convertidas automaticamente para decimal | INT |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|---------------|--------------|-----------|
-| `image` | IMAGE | O tensor da imagem em branco gerada, formatado como [batch_size, height, width, 3], contendo três canais de cor RGB |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `image` | O tensor da imagem em branco gerada, formatado como [batch_size, height, width, 3], contendo três canais de cor RGB | IMAGE |
 
 ## Valores de Referência de Cores Comuns
 
@@ -49,3 +47,5 @@ Como a entrada de cor atual deste nó não é amigável, com todos os valores de
 | Dourado    | 0xFFD700         |
 | Prata      | 0xC0C0C0         |
 | Bege       | 0xF5F5DC         |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyImage/pt-BR.md)

@@ -1,19 +1,17 @@
-> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningCombine/es.md)
-
 Este nodo combina dos entradas de condicionamiento en una única salida, fusionando efectivamente su información. Las dos condiciones se combinan mediante concatenación de listas.
 
 ## Entradas
 
-| Nombre del Parámetro | Tipo de Dato       | Descripción |
-|----------------------|--------------------|-------------|
-| `acondicionamiento_1`     | `CONDITIONING`     | La primera entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `acondicionamiento_2` en el proceso de combinación. |
-| `acondicionamiento_2`     | `CONDITIONING`     | La segunda entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `acondicionamiento_1` en el proceso de combinación. |
+| Nombre del Parámetro | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `acondicionamiento_1` | La primera entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `acondicionamiento_2` en el proceso de combinación. | `CONDITIONING` |
+| `acondicionamiento_2` | La segunda entrada de condicionamiento que se va a combinar. Tiene la misma importancia que `acondicionamiento_1` en el proceso de combinación. | `CONDITIONING` |
 
 ## Salidas
 
-| Nombre del Parámetro | Tipo de Dato       | Descripción |
-|----------------------|--------------------|-------------|
-| `conditioning`       | `CONDITIONING`     | El resultado de combinar `acondicionamiento_1` y `acondicionamiento_2`, que encapsula la información fusionada. |
+| Nombre del Parámetro | Descripción | Tipo de Dato |
+| --- | --- | --- |
+| `conditioning` | El resultado de combinar `acondicionamiento_1` y `acondicionamiento_2`, que encapsula la información fusionada. | `CONDITIONING` |
 
 ## Escenarios de Uso
 
@@ -28,3 +26,5 @@ Usando este nodo, puedes lograr:
 - **Combinación básica de texto**: Conecta las salidas de dos nodos `CLIP Text Encode` a los dos puertos de entrada de `Conditioning Combine`
 - **Combinación compleja de prompts**: Combina prompts positivos y negativos, o codifica por separado descripciones principales y descripciones de estilo antes de fusionarlas
 - **Combinación en cadena condicional**: Se pueden usar múltiples nodos `Conditioning Combine` en serie para lograr la combinación gradual de múltiples condiciones
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningCombine/es.md)

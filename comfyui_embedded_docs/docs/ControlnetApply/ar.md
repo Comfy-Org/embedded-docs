@@ -1,5 +1,3 @@
-> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ar.md)
-
 يتطلب استخدام ControlNet معالجة مسبقة للصور المدخلة. نظرًا لأن العقد الأولية لـ ComfyUI لا تتضمن معالجات مسبقة ونماذج ControlNet، يُرجى أولاً تثبيت المعالجات المسبقة لـ ControlNet [تنزيل المعالجات المسبقة من هنا](https://github.com/Fannovel16/comfy_controlnet_preprocessors) ونماذج ControlNet المقابلة.
 
 ## المدخلات
@@ -21,3 +19,5 @@
 | --- | --- | --- |
 | `positive` | `CONDITIONING` | بيانات التوجيه الإيجابي المعالجة بواسطة ControlNet، يمكن إخراجها إلى عقد ControlNet التالية أو عقد أخذ العينات K |
 | `negative` | `CONDITIONING` | بيانات التوجيه السلبي المعالجة بواسطة ControlNet، يمكن إخراجها إلى عقد ControlNet التالية أو عقد أخذ العينات K |
+
+> تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApply/ar.md)

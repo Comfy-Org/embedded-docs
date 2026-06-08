@@ -1,5 +1,3 @@
-> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackPreview/tr.md)
-
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları
@@ -34,18 +32,20 @@ Bu düğüm, izlenen nesnelerin bir video önizlemesini oluşturur; her izlenen 
 
 ## Girişler
 
-| Parametre | Veri Türü | Zorunlu | Aralık | Açıklama |
-|-----------|-----------|----------|-------|-------------|
-| `iz_verisi` | TRACK_DATA | Evet | - | Bir SAM3 izleme düğümünden paketlenmiş maskeler ve nesne bilgilerini içeren izleme verileri. |
-| `görüntüler` | IMAGE | Hayır | - | Önizleme için arka plan olarak kullanılacak isteğe bağlı giriş görüntüleri. Sağlanmazsa siyah bir arka plan kullanılır. |
-| `opaklık` | FLOAT | Hayır | 0,0 ile 1,0 arası (adım: 0,05) | İzlenen nesnelere uygulanan renk katmanının opaklığı (varsayılan: 0,5). |
-| `fps` | FLOAT | Hayır | 1,0 ile 120,0 arası (adım: 1,0) | Çıktı videosunun kare hızı (varsayılan: 24,0). |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `iz_verisi` | Bir SAM3 izleme düğümünden paketlenmiş maskeler ve nesne bilgilerini içeren izleme verileri. | TRACK_DATA | Evet | - |
+| `görüntüler` | Önizleme için arka plan olarak kullanılacak isteğe bağlı giriş görüntüleri. Sağlanmazsa siyah bir arka plan kullanılır. | IMAGE | Hayır | - |
+| `opaklık` | İzlenen nesnelere uygulanan renk katmanının opaklığı (varsayılan: 0,5). | FLOAT | Hayır | 0,0 ile 1,0 arası (adım: 0,05) |
+| `fps` | Çıktı videosunun kare hızı (varsayılan: 24,0). | FLOAT | Hayır | 1,0 ile 120,0 arası (adım: 1,0) |
 
 ## Çıktılar
 
-| Çıktı Adı | Veri Türü | Açıklama |
-|-------------|-----------|-------------|
-| `ui` | PREVIEW_VIDEO | Oluşturulan önizleme videosunu görüntüleyen bir kullanıcı arayüzü öğesi. Herhangi bir tensör verisi döndürülmez. |
+| Çıktı Adı | Açıklama | Veri Türü |
+| --- | --- | --- |
+| `ui` | Oluşturulan önizleme videosunu görüntüleyen bir kullanıcı arayüzü öğesi. Herhangi bir tensör verisi döndürülmez. | PREVIEW_VIDEO |
+
+> Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackPreview/tr.md)
 
 ---
 **Source fingerprint (SHA-256):** `8300d4fa89c7bbc481ac9a59868ede0e3c9413faa63d56c16a4f603ef878e877`

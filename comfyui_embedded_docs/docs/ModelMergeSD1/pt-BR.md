@@ -1,49 +1,49 @@
-> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/pt-BR.md)
-
 O nó ModelMergeSD1 permite combinar dois modelos Stable Diffusion 1.x ajustando a influência de diferentes componentes do modelo. Ele oferece controle individual sobre a incorporação temporal, incorporação de rótulos e todos os blocos de entrada, intermediários e saída, possibilitando uma fusão refinada de modelos para casos de uso específicos.
 
 ## Entradas
 
-| Parâmetro | Tipo de Dado | Obrigatório | Faixa | Descrição |
-|-----------|-----------|----------|-------|-------------|
-| `model1` | MODEL | Sim | - | O primeiro modelo a ser mesclado |
-| `model2` | MODEL | Sim | - | O segundo modelo a ser mesclado |
-| `time_embed.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem da camada de incorporação temporal (padrão: 1.0) |
-| `label_emb.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem da camada de incorporação de rótulos (padrão: 1.0) |
-| `input_blocks.0.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 0 (padrão: 1.0) |
-| `input_blocks.1.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 1 (padrão: 1.0) |
-| `input_blocks.2.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 2 (padrão: 1.0) |
-| `input_blocks.3.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 3 (padrão: 1.0) |
-| `input_blocks.4.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 4 (padrão: 1.0) |
-| `input_blocks.5.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 5 (padrão: 1.0) |
-| `input_blocks.6.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 6 (padrão: 1.0) |
-| `input_blocks.7.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 7 (padrão: 1.0) |
-| `input_blocks.8.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 8 (padrão: 1.0) |
-| `input_blocks.9.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 9 (padrão: 1.0) |
-| `input_blocks.10.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 10 (padrão: 1.0) |
-| `input_blocks.11.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de entrada 11 (padrão: 1.0) |
-| `middle_block.0.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco intermediário 0 (padrão: 1.0) |
-| `middle_block.1.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco intermediário 1 (padrão: 1.0) |
-| `middle_block.2.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco intermediário 2 (padrão: 1.0) |
-| `output_blocks.0.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 0 (padrão: 1.0) |
-| `output_blocks.1.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 1 (padrão: 1.0) |
-| `output_blocks.2.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 2 (padrão: 1.0) |
-| `output_blocks.3.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 3 (padrão: 1.0) |
-| `output_blocks.4.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 4 (padrão: 1.0) |
-| `output_blocks.5.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 5 (padrão: 1.0) |
-| `output_blocks.6.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 6 (padrão: 1.0) |
-| `output_blocks.7.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 7 (padrão: 1.0) |
-| `output_blocks.8.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 8 (padrão: 1.0) |
-| `output_blocks.9.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 9 (padrão: 1.0) |
-| `output_blocks.10.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 10 (padrão: 1.0) |
-| `output_blocks.11.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem do bloco de saída 11 (padrão: 1.0) |
-| `out.` | FLOAT | Sim | 0.0 - 1.0 | Peso da mesclagem da camada de saída (padrão: 1.0) |
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `model1` | O primeiro modelo a ser mesclado | MODEL | Sim | - |
+| `model2` | O segundo modelo a ser mesclado | MODEL | Sim | - |
+| `time_embed.` | Peso da mesclagem da camada de incorporação temporal (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `label_emb.` | Peso da mesclagem da camada de incorporação de rótulos (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.0.` | Peso da mesclagem do bloco de entrada 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.1.` | Peso da mesclagem do bloco de entrada 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.2.` | Peso da mesclagem do bloco de entrada 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.3.` | Peso da mesclagem do bloco de entrada 3 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.4.` | Peso da mesclagem do bloco de entrada 4 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.5.` | Peso da mesclagem do bloco de entrada 5 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.6.` | Peso da mesclagem do bloco de entrada 6 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.7.` | Peso da mesclagem do bloco de entrada 7 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.8.` | Peso da mesclagem do bloco de entrada 8 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.9.` | Peso da mesclagem do bloco de entrada 9 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.10.` | Peso da mesclagem do bloco de entrada 10 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `input_blocks.11.` | Peso da mesclagem do bloco de entrada 11 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `middle_block.0.` | Peso da mesclagem do bloco intermediário 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `middle_block.1.` | Peso da mesclagem do bloco intermediário 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `middle_block.2.` | Peso da mesclagem do bloco intermediário 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.0.` | Peso da mesclagem do bloco de saída 0 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.1.` | Peso da mesclagem do bloco de saída 1 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.2.` | Peso da mesclagem do bloco de saída 2 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.3.` | Peso da mesclagem do bloco de saída 3 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.4.` | Peso da mesclagem do bloco de saída 4 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.5.` | Peso da mesclagem do bloco de saída 5 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.6.` | Peso da mesclagem do bloco de saída 6 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.7.` | Peso da mesclagem do bloco de saída 7 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.8.` | Peso da mesclagem do bloco de saída 8 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.9.` | Peso da mesclagem do bloco de saída 9 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.10.` | Peso da mesclagem do bloco de saída 10 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `output_blocks.11.` | Peso da mesclagem do bloco de saída 11 (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
+| `out.` | Peso da mesclagem da camada de saída (padrão: 1.0) | FLOAT | Sim | 0.0 - 1.0 |
 
 ## Saídas
 
-| Nome da Saída | Tipo de Dado | Descrição |
-|-------------|-----------|-------------|
-| `MODEL` | MODEL | O modelo mesclado combinando características de ambos os modelos de entrada |
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
+| `MODEL` | O modelo mesclado combinando características de ambos os modelos de entrada | MODEL |
+
+> Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelMergeSD1/pt-BR.md)
 
 ---
 **Source fingerprint (SHA-256):** `512c62fb5a4e1b7f90f5ad5b80de5818659a20c8f4b024cfa33ca13b823efad8`
