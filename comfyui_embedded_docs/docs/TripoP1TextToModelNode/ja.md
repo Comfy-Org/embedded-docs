@@ -8,22 +8,22 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
-| `prompt` | 生成したい3Dモデルのテキストによる説明。 | STRING | はい | 最大1024文字 |
-| `negative_prompt` | 生成モデルに含めたくない内容のテキスト説明。 | STRING | いいえ | 最大255文字 |
-| `output_mode` | 出力モデルの品質とテクスチャ設定を制御します。このパラメータは以下のキーを持つ辞書です：<br><br>`texture_quality`: STRING、範囲：`"standard"`<br>`pbr`: BOOLEAN、デフォルト：True<br>`texture`: BOOLEAN、デフォルト：True<br>`subdivision`: INT、デフォルト：0、範囲：0～2<br>`texture_size`: INT、デフォルト：2048、範囲：512～4096（2の累乗である必要があります）<br>`texture_format`: STRING、範囲：`"png"`<br>`texture_clean`: BOOLEAN、デフォルト：False<br>`texture_seamless`: BOOLEAN、デフォルト：False<br><br>デフォルト：`{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | はい | 説明を参照 |
-| `image_seed` | 画像生成のためのシード値で、ランダム性を制御するために使用します。デフォルト：42。 | INT | いいえ |  |
-| `face_limit` | 生成メッシュの最大面数。値が-1の場合は制限なし。デフォルト：-1。 | INT | いいえ |  |
-| `model_seed` | モデル生成のためのシード値で、ランダム性を制御するために使用します。 | INT | いいえ |  |
-| `auto_size` | 有効にすると、ノードが最適なモデルサイズを自動的に決定します。デフォルト：False。 | BOOLEAN | いいえ |  |
-| `export_uv` | 有効にすると、モデルにテクスチャマッピング用のUV座標が含まれます。デフォルト：True。 | BOOLEAN | いいえ |  |
-| `compress_geometry` | 有効にすると、ファイルサイズを削減するためにジオメトリが圧縮されます。デフォルト：False。 | BOOLEAN | いいえ |  |
+| `プロンプト` | 生成したい3Dモデルのテキストによる説明。 | STRING | はい | 最大1024文字 |
+| `ネガティブプロンプト` | 生成モデルに含めたくない内容のテキスト説明。 | STRING | いいえ | 最大255文字 |
+| `出力モード` | 出力モデルの品質とテクスチャ設定を制御します。このパラメータは以下のキーを持つ辞書です：<br><br>`texture_quality`: STRING、範囲：`"standard"`<br>`pbr`: BOOLEAN、デフォルト：True<br>`texture`: BOOLEAN、デフォルト：True<br>`subdivision`: INT、デフォルト：0、範囲：0～2<br>`texture_size`: INT、デフォルト：2048、範囲：512～4096（2の累乗である必要があります）<br>`texture_format`: STRING、範囲：`"png"`<br>`texture_clean`: BOOLEAN、デフォルト：False<br>`texture_seamless`: BOOLEAN、デフォルト：False<br><br>デフォルト：`{"texture_quality": "standard", "pbr": True, "texture": True, "subdivision": 0, "texture_size": 2048, "texture_format": "png", "texture_clean": False, "texture_seamless": False}` | DICT | はい | 説明を参照 |
+| `画像シード` | 画像生成のためのシード値で、ランダム性を制御するために使用します。デフォルト：42。 | INT | いいえ |  |
+| `面数制限` | 生成メッシュの最大面数。値が-1の場合は制限なし。デフォルト：-1。 | INT | いいえ |  |
+| `モデルシード` | モデル生成のためのシード値で、ランダム性を制御するために使用します。 | INT | いいえ |  |
+| `自動サイズ調整` | 有効にすると、ノードが最適なモデルサイズを自動的に決定します。デフォルト：False。 | BOOLEAN | いいえ |  |
+| `UVエクスポート` | 有効にすると、モデルにテクスチャマッピング用のUV座標が含まれます。デフォルト：True。 | BOOLEAN | いいえ |  |
+| `ジオメトリ圧縮` | 有効にすると、ファイルサイズを削減するためにジオメトリが圧縮されます。デフォルト：False。 | BOOLEAN | いいえ |  |
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model_file` | 生成された3Dモデルのファイルパス（後方互換性のため）。 | STRING |
-| `model task_id` | モデル生成リクエストの一意のタスクID。 | MODEL_TASK_ID |
+| `モデルタスクID` | 生成された3Dモデルのファイルパス（後方互換性のため）。 | STRING |
+| `GLB` | モデル生成リクエストの一意のタスクID。 | MODEL_TASK_ID |
 | `GLB` | GLB形式で生成された3Dモデル。 | FILE3DGLB |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/ja.md)

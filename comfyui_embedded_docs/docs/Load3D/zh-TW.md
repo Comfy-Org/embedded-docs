@@ -30,7 +30,7 @@ Load3D 節點是用於載入和處理 3D 模型檔案的核心節點。載入節
 | `相機資訊` | 法線貼圖 | IMAGE |
 | `錄影` | 線稿影像輸出，可在畫布模型選單中調整對應的 `edge_threshold` | IMAGE |
 | `3D 模型` | 相機資訊 | LOAD3D_CAMERA |
-| `recording_video` | 錄製的影片（僅當存在錄製時） | VIDEO |
+| `model_3d_info` | 錄製的影片（僅當存在錄製時） | VIDEO |
 
 所有輸出預覽：
 ![檢視操作示範](./asset/load3d_outputs.webp)
