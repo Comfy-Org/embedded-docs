@@ -6,8 +6,8 @@ Giriş sesini ComfyUI çıktı dizininize kaydeder. Bu düğüm, FLAC, MP3 ve Op
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `audio` | Kaydedilecek ses. | AUDIO | Evet | - |
-| `filename_prefix` | Kaydedilecek dosya için ön ek. %date:yyyy-MM-dd% gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "audio/ComfyUI") | STRING | Evet | - |
+| `ses` | Kaydedilecek ses. | AUDIO | Evet | - |
+| `dosya_adı_ön_eki` | Kaydedilecek dosya için ön ek. %date:yyyy-MM-dd% gibi biçimlendirme belirteçleri içerebilir. (varsayılan: "audio/ComfyUI") | STRING | Evet | - |
 | `format` | Sesin kaydedileceği dosya biçimi. | COMBO | Evet | "flac"<br>"mp3"<br>"opus" |
 
 Biçim olarak "mp3" seçildiğinde, aşağıdaki seçeneklerle birlikte bir `quality` alt parametresi kullanılabilir hale gelir: "V0", "128k", "320k" (varsayılan: "V0").

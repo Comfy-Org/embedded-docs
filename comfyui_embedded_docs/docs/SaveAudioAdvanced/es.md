@@ -7,8 +7,8 @@ Guarda el audio de entrada en tu directorio de salida de ComfyUI. Este nodo perm
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
 | `audio` | El audio a guardar. | AUDIO | Sí | - |
-| `filename_prefix` | El prefijo para el archivo a guardar. Puede incluir tokens de formato como %date:yyyy-MM-dd%. (predeterminado: "audio/ComfyUI") | STRING | Sí | - |
-| `format` | El formato de archivo en el cual guardar el audio. | COMBO | Sí | "flac"<br>"mp3"<br>"opus" |
+| `prefijo_nombre_archivo` | El prefijo para el archivo a guardar. Puede incluir tokens de formato como %date:yyyy-MM-dd%. (predeterminado: "audio/ComfyUI") | STRING | Sí | - |
+| `formato` | El formato de archivo en el cual guardar el audio. | COMBO | Sí | "flac"<br>"mp3"<br>"opus" |
 
 Cuando se selecciona "mp3" como formato, un subparámetro `quality` estará disponible con las siguientes opciones: "V0", "128k", "320k" (predeterminado: "V0").
 

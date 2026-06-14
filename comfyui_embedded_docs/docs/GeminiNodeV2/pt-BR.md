@@ -7,9 +7,9 @@ Gere respostas de texto com os modelos Gemini do Google. Forneça um prompt de t
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
 | `prompt` | Entrada de texto para o modelo. Inclua instruções detalhadas, perguntas ou contexto. | STRING | Sim |  |
-| `model` | O modelo Gemini usado para gerar a resposta. | COMBO | Sim | `"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
-| `seed` | Semente para amostragem. Defina como 0 para uma semente aleatória. A saída determinística não é garantida. (padrão: 42) | INT | Sim | 0 a 2147483647 |
-| `system_prompt` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não |  |
+| `modelo` | O modelo Gemini usado para gerar a resposta. | COMBO | Sim | `"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `semente` | Semente para amostragem. Defina como 0 para uma semente aleatória. A saída determinística não é garantida. (padrão: 42) | INT | Sim | 0 a 2147483647 |
+| `prompt_do_sistema` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não |  |
 
 **Observação:** Ao fornecer imagens, áudio ou vídeo como contexto multimodal, o nó faz upload da mídia como URLs para as primeiras 10 entradas. Qualquer mídia adicional é enviada inline como dados base64, com um payload inline máximo de 18 MB. Se o payload inline exceder esse limite, um erro será gerado.
 

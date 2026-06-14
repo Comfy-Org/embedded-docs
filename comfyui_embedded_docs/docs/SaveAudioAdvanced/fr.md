@@ -7,7 +7,7 @@ Sauvegarde l'audio d'entrée dans votre répertoire de sortie ComfyUI. Ce nœud 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `audio` | L'audio à sauvegarder. | AUDIO | Oui | - |
-| `filename_prefix` | Le préfixe du fichier à sauvegarder. Peut inclure des jetons de formatage tels que %date:yyyy-MM-dd%. (par défaut : "audio/ComfyUI") | STRING | Oui | - |
+| `préfixe_nom_fichier` | Le préfixe du fichier à sauvegarder. Peut inclure des jetons de formatage tels que %date:yyyy-MM-dd%. (par défaut : "audio/ComfyUI") | STRING | Oui | - |
 | `format` | Le format de fichier dans lequel sauvegarder l'audio. | COMBO | Oui | "flac"<br>"mp3"<br>"opus" |
 
 Lorsque "mp3" est sélectionné comme format, un sous-paramètre `quality` devient disponible avec les options suivantes : "V0", "128k", "320k" (par défaut : "V0").

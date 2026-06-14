@@ -6,9 +6,9 @@ Ce nœud remplace l'arrière-plan d'une vidéo par un écran de fond vert unicol
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | La vidéo d'entrée à traiter | VIDEO | Oui | Fichier vidéo |
-| `green_shade` | Teinte de fond vert unicolore appliquée derrière le premier plan : broadcast_green (#00B140), chroma_green (#00FF00) ou blue_screen (#0000FF) | STRING | Oui | `"broadcast_green"`<br>`"chroma_green"`<br>`"blue_screen"` |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine (valeur par défaut : 0) | INT | Oui | 0 à 2147483647 |
+| `vidéo` | La vidéo d'entrée à traiter | VIDEO | Oui | Fichier vidéo |
+| `teinte verte` | Teinte de fond vert unicolore appliquée derrière le premier plan : broadcast_green (#00B140), chroma_green (#00FF00) ou blue_screen (#0000FF) | STRING | Oui | `"broadcast_green"`<br>`"chroma_green"`<br>`"blue_screen"` |
+| `graine` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine (valeur par défaut : 0) | INT | Oui | 0 à 2147483647 |
 
 **Remarque :** La vidéo d'entrée ne doit pas dépasser 60 secondes de durée.
 
@@ -16,7 +16,7 @@ Ce nœud remplace l'arrière-plan d'une vidéo par un écran de fond vert unicol
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `video` | La vidéo traitée dont l'arrière-plan d'origine a été remplacé par la teinte de fond vert unicolore sélectionnée | VIDEO |
+| `vidéo` | La vidéo traitée dont l'arrière-plan d'origine a été remplacé par la teinte de fond vert unicolore sélectionnée | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaVideoGreenScreen/fr.md)
 

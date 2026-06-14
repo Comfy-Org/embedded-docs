@@ -6,9 +6,9 @@ Ce nœud fournit un aperçu avancé de modèles 3D avec sortie des informations 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model_3d` | Fichier de modèle 3D provenant d'un nœud 3D en amont. | FILE3D | Oui | GLB, GLTF, FBX, OBJ, STL, USDZ ou tout format 3D pris en charge |
+| `modèle 3D` | Fichier de modèle 3D provenant d'un nœud 3D en amont. | FILE3D | Oui | GLB, GLTF, FBX, OBJ, STL, USDZ ou tout format 3D pris en charge |
 | `infos_modèle_3d` | Métadonnées facultatives d'informations sur le modèle. | LOAD3DMODELINFO | Non | - |
-| `viewport_state` | État actuel de la fenêtre d'affichage contenant les informations de caméra et de modèle. | LOAD3D | Oui | - |
+| `état de la vue` | État actuel de la fenêtre d'affichage contenant les informations de caméra et de modèle. | LOAD3D | Oui | - |
 | `infos_caméra` | Configuration facultative de la caméra pour la vue 3D. | LOAD3DCAMERA | Non | - |
 | `largeur` | Largeur de l'aperçu en pixels. | INT | Oui | 1 à 4096 (par défaut : 1024) |
 | `hauteur` | Hauteur de l'aperçu en pixels. | INT | Oui | 1 à 4096 (par défaut : 1024) |
