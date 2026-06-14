@@ -35,4 +35,4 @@ This node generates images using OpenAI's GPT Image API. It supports multiple mo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenAIGPTImageNodeV2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `dcea500ebbbbfe87f8b0dd2d714cf2356edf2030312c2cc6e41d64bd2ad04ea6`
+**Source fingerprint (SHA-256):** `d0544a2d0f9e9cdd4b121bbf18eb6e43d508b2230e44dfa814649f6a4999e543`

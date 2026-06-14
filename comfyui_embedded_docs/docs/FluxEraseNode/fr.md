@@ -9,7 +9,7 @@ Supprime l'objet masqué d'une image et reconstruit l'arrière-plan. Peignez le 
 | `image` | L'image d'entrée à traiter | IMAGE | Oui | - |
 | `mask` | Les zones blanches sont supprimées ; les zones noires sont préservées | MASK | Oui | - |
 | `dilate_pixels` | Élargit les limites du masque pour garantir une couverture nette des bords de l'objet (par défaut : 10) | INT | Oui | 0 à 25 |
-| `seed` | La graine aléatoire utilisée pour générer le bruit (par défaut : 0) | INT | Non | 0 à 2147483647 |
+| `graine` | La graine aléatoire utilisée pour générer le bruit (par défaut : 0) | INT | Non | 0 à 2147483647 |
 
 **Remarque :** L'image d'entrée doit mesurer au moins 256x256 pixels dans les deux dimensions. Le masque est automatiquement redimensionné pour correspondre aux dimensions de l'image.
 

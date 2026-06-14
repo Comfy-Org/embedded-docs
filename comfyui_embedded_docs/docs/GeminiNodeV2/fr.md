@@ -6,10 +6,10 @@ Générer des réponses textuelles avec les modèles Gemini de Google. Fournisse
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt` | Saisie textuelle pour le modèle. Incluez des instructions détaillées, des questions ou du contexte. | STRING | Oui |  |
-| `model` | Le modèle Gemini utilisé pour générer la réponse. | COMBO | Oui | `"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
-| `seed` | Graine pour l'échantillonnage. Définissez sur 0 pour une graine aléatoire. La sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
-| `system_prompt` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non |  |
+| `invite` | Saisie textuelle pour le modèle. Incluez des instructions détaillées, des questions ou du contexte. | STRING | Oui |  |
+| `modèle` | Le modèle Gemini utilisé pour générer la réponse. | COMBO | Oui | `"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `graine` | Graine pour l'échantillonnage. Définissez sur 0 pour une graine aléatoire. La sortie déterministe n'est pas garantie. (par défaut : 42) | INT | Oui | 0 à 2147483647 |
+| `invite système` | Instructions fondamentales qui dictent le comportement du modèle. (par défaut : "") | STRING | Non |  |
 
 **Remarque :** Lors de la fourniture d'images, d'audio ou de vidéos comme contexte multimodal, le nœud télécharge les médias sous forme d'URL pour les 10 premières entrées. Tout média supplémentaire est envoyé en ligne sous forme de données base64, avec une charge utile maximale en ligne de 18 Mo. Si la charge utile en ligne dépasse cette limite, une erreur est générée.
 

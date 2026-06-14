@@ -6,7 +6,7 @@ This node generates images from text descriptions using the Luma UNI-1 model. It
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `prompt` | Text description of the desired image. | STRING | Yes | 1–6000 characters |
+| `prompt` | Text description of the desired image. 1–6000 characters. | STRING | Yes | 1 to 6000 characters |
 | `model` | Model to use for generation. Selecting a model reveals additional settings for that model. | COMBO | Yes | `"uni-1"`<br>`"uni-1-max"` |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed. (default: 0) | INT | Yes | 0 to 2147483647 |
 
@@ -32,4 +32,4 @@ When `"uni-1"` or `"uni-1-max"` is selected for the `model` parameter, the follo
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaImageNode2/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `cd680f8b9e6bcf5fa415aa2d9ec3126bf8873d14bd6f4cd127491cfa242e5548`
+**Source fingerprint (SHA-256):** `8157d2e4717e196056bd6821526ccb49df3f0fdf48e36c87a18742c3f5fe63bf`

@@ -6,22 +6,22 @@ El nodo PreviewGaussianSplat permite previsualizar un archivo de splat gaussiano
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model_3d` | Un archivo 3D de splat gaussiano. | FILE3D | Sí | Formatos compatibles: splat, ply, spz, ksplat |
-| `model_3d_info` | Información de metadatos opcional sobre el modelo 3D. | LOAD3DMODELINFO | No | - |
-| `viewport_state` | El estado actual del viewport 3D, incluyendo información de cámara y modelo. | LOAD3D | Sí | - |
-| `camera_info` | Información opcional de cámara para la previsualización. | LOAD3DCAMERA | No | - |
-| `width` | El ancho del renderizado de previsualización en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
-| `height` | La altura del renderizado de previsualización en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
+| `modelo_3d` | Un archivo 3D de splat gaussiano. | FILE3D | Sí | Formatos compatibles: splat, ply, spz, ksplat |
+| `info_modelo_3d` | Información de metadatos opcional sobre el modelo 3D. | LOAD3DMODELINFO | No | - |
+| `estado_de_vista` | El estado actual del viewport 3D, incluyendo información de cámara y modelo. | LOAD3D | Sí | - |
+| `info_cámara` | Información opcional de cámara para la previsualización. | LOAD3DCAMERA | No | - |
+| `ancho` | El ancho del renderizado de previsualización en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
+| `alto` | La altura del renderizado de previsualización en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
 
 ## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `model_3d` | El archivo 3D de splat gaussiano de entrada, transmitido sin cambios. | FILE3D |
-| `model_3d_info` | Información de metadatos sobre el modelo 3D, ya sea de la entrada o derivada del estado del viewport. | LOAD3DMODELINFO |
-| `camera_info` | Información de cámara para la previsualización, ya sea de la entrada o derivada del estado del viewport. | LOAD3DCAMERA |
-| `width` | El ancho del renderizado de previsualización. | INT |
-| `height` | La altura del renderizado de previsualización. | INT |
+| `info_modelo_3d` | El archivo 3D de splat gaussiano de entrada, transmitido sin cambios. | FILE3D |
+| `info_cámara` | Información de metadatos sobre el modelo 3D, ya sea de la entrada o derivada del estado del viewport. | LOAD3DMODELINFO |
+| `ancho` | Información de cámara para la previsualización, ya sea de la entrada o derivada del estado del viewport. | LOAD3DCAMERA |
+| `alto` | El ancho del renderizado de previsualización. | INT |
+| `alto` | La altura del renderizado de previsualización. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewGaussianSplat/es.md)
 

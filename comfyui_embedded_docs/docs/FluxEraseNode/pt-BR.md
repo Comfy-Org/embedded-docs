@@ -9,7 +9,7 @@ Remove o objeto mascarado de uma imagem e reconstrói o fundo. Pinte a máscara 
 | `imagem` | A imagem de entrada para processar | IMAGE | Sim | - |
 | `máscara` | Áreas brancas são removidas; áreas pretas são preservadas | MASK | Sim | - |
 | `dilatar_pixels` | Expande os limites da máscara para garantir cobertura limpa das bordas do objeto (padrão: 10) | INT | Sim | 0 a 25 |
-| `seed` | A semente aleatória usada para criar o ruído (padrão: 0) | INT | Não | 0 a 2147483647 |
+| `semente` | A semente aleatória usada para criar o ruído (padrão: 0) | INT | Não | 0 a 2147483647 |
 
 **Observação:** A imagem de entrada deve ter pelo menos 256x256 pixels em ambas as dimensões. A máscara é redimensionada automaticamente para corresponder às dimensões da imagem.
 
