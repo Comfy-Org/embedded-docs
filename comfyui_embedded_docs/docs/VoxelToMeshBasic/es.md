@@ -1,3 +1,5 @@
+# VoxelAMallaBásico
+
 El nodo VoxelToMeshBasic convierte datos de vóxeles 3D en geometría de malla. Procesa volúmenes de vóxeles aplicando un valor de umbral para determinar qué partes del volumen se convierten en superficies sólidas en la malla resultante. El nodo genera una estructura de malla completa con vértices y caras que puede utilizarse para renderizado y modelado 3D.
 
 ## Entradas

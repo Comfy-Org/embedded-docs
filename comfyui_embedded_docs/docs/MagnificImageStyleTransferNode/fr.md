@@ -1,3 +1,5 @@
+# Transfert de style d'image Magnific
+
 Ce nœud applique le style visuel d'une image de référence à votre image d'entrée. Il utilise un service d'IA externe pour traiter les images, vous permettant de contrôler la force du transfert de style et la préservation de la structure de l'image d'origine.
 
 ## Entrées

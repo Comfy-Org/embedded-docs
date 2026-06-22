@@ -1,3 +1,5 @@
+# Wan Image vers Image
+
 Voici la traduction en français de la documentation du nœud WanImageToImageApi :
 
 Le nœud Wan Image to Image génère une image à partir d'une ou deux images d'entrée et d'une invite textuelle. Il transforme vos images d'entrée en fonction de la description fournie, créant une nouvelle image qui conserve le rapport hauteur/largeur de votre image d'origine. L'image de sortie est fixée à 1,6 mégapixels, quelle que soit la taille d'entrée.

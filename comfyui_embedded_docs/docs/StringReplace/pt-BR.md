@@ -1,3 +1,5 @@
+# Substituir
+
 O nó StringReplace realiza operações de substituição de texto em strings de entrada. Ele busca por uma substring especificada dentro do texto de entrada e substitui todas as ocorrências por uma substring diferente. Este nó retorna a string modificada com todas as substituições aplicadas.
 
 ## Entradas

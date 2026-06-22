@@ -1,3 +1,5 @@
+# StableCascade_StageB_Conditioning
+
 Le nœud **StableCascade_StageB_Conditioning** prépare les données de conditionnement pour la génération de l'étape B de Stable Cascade en combinant les informations de conditionnement existantes avec les représentations latentes préalables de l'étape C. Il modifie les données de conditionnement pour inclure les échantillons latents de l'étape C, permettant ainsi au processus de génération d'exploiter les informations préalables pour des résultats plus cohérents.
 
 ## Entrées

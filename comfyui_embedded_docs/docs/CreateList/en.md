@@ -1,3 +1,5 @@
+# Create List
+
 The Create List node combines multiple inputs into a single, sequential list. It takes any number of inputs of the same data type and concatenates them in the order they are connected. This node is useful for preparing batches of data, such as images or text, to be processed by other nodes in a workflow.
 
 ## Inputs

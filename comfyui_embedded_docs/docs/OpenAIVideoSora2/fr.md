@@ -1,3 +1,5 @@
+# OpenAI Sora - Vidéo
+
 Voici la traduction de la documentation du nœud OpenAIVideoSora2, conforme à vos règles :
 
 Le nœud OpenAIVideoSora2 génère des vidéos à l'aide des modèles Sora d'OpenAI. Il crée un contenu vidéo basé sur des invites textuelles et des images d'entrée optionnelles, puis renvoie la vidéo générée en sortie. Le nœud prend en charge différentes durées et résolutions vidéo selon le modèle sélectionné.

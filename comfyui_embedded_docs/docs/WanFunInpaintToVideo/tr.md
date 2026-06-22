@@ -1,3 +1,5 @@
+# WanEğlenceİçBoyamadanVideoya
+
 WanFunInpaintToVideo düğümü, başlangıç ve bitiş görüntüleri arasında iç boyama (inpainting) yaparak video dizileri oluşturur. İsteğe bağlı kare görüntüleriyle birlikte pozitif ve negatif koşullandırma alarak video gizil (latent) değişkenleri üretir. Düğüm, yapılandırılabilir boyut ve uzunluk parametreleriyle video oluşturmayı yönetir.
 
 ## Girişler

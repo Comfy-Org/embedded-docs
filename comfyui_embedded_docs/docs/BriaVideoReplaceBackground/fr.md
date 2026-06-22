@@ -1,4 +1,4 @@
-# Bria Remplacement d'Arrière-plan Vidéo
+# Bria Video Remplacer l'arrière-plan
 
 Ce nœud remplace l'arrière-plan d'une vidéo par une image ou une vidéo fournie via l'API de Bria. La sortie conserve la résolution et la fréquence d'images de la vidéo de premier plan ; un arrière-plan avec un rapport hauteur/largeur différent est étiré pour s'adapter, donc des rapports hauteur/largeur identiques produisent des résultats sans distorsion.
 

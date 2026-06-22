@@ -1,3 +1,5 @@
+# WanAnimateToVideo
+
 Voici la traduction en français de la documentation du nœud WanAnimateToVideo :
 
 Le nœud WanAnimateToVideo génère du contenu vidéo en combinant plusieurs entrées de conditionnement, notamment des références de pose, des expressions faciales et des éléments d'arrière-plan. Il traite diverses entrées vidéo pour créer des séquences animées cohérentes tout en maintenant la cohérence temporelle entre les images. Le nœud gère les opérations dans l'espace latent et peut prolonger des vidéos existantes en poursuivant les motifs de mouvement.

@@ -1,3 +1,5 @@
+# Planificateur Ideogram 4
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 # Planificateur Ideogram 4

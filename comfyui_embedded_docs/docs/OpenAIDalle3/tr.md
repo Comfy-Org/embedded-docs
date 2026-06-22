@@ -1,3 +1,5 @@
+# OpenAI DALL·E 3
+
 OpenAI'nin DALL·E 3 uç noktası üzerinden eşzamanlı olarak görseller oluşturur. Bu düğüm, bir metin istemi alır ve OpenAI'nin DALL·E 3 modelini kullanarak karşılık gelen görselleri oluşturur; görsel kalitesini, stilini ve boyutlarını belirlemenize olanak tanır.
 
 ## Girişler

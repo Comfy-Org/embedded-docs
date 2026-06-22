@@ -1,3 +1,5 @@
+# Pikadditions
+
 El nodo Pikadditions permite agregar cualquier objeto o imagen a tu video. Subes un video y especificas qué te gustaría añadir para obtener un resultado integrado de forma natural. Este nodo utiliza la API de Pika para insertar imágenes en videos con una integración de aspecto realista.
 
 ## Entradas

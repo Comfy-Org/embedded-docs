@@ -1,3 +1,5 @@
+# ReplaceVideoLatentFrames
+
 El nodo ReplaceVideoLatentFrames inserta fotogramas de un video latente fuente en un video latente de destino, comenzando en un índice de fotograma especificado. Si no se proporciona el latente fuente, se devuelve el latente de destino sin cambios. El nodo maneja índices negativos y emitirá una advertencia si los fotogramas fuente no caben dentro del destino.
 
 ## Entradas

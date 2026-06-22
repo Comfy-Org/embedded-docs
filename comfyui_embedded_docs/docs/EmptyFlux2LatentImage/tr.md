@@ -1,3 +1,5 @@
+# Boş Flux 2 Latent
+
 EmptyFlux2LatentImage düğümü, boş bir latent temsil oluşturur. Sıfırlarla doldurulmuş bir tensör üretir; bu tensör, Flux modelinin gürültü giderme işlemi için bir başlangıç noktası görevi görür. Latent boyutları, giriş genişliği ve yüksekliğine göre belirlenir ve 16 kat küçültülür.
 
 ## Girişler

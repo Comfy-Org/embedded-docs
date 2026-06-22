@@ -1,4 +1,4 @@
-# Descripción General
+# WanDancerEncodeAudio
 
 Este nodo procesa una entrada de audio para extraer características que pueden utilizarse para guiar un modelo de generación de video. Analiza el audio para detectar tempo, ritmos y otras características musicales, luego empaqueta esta información en un formato adecuado para condicionar un modelo de video, permitiendo que el video generado se sincronice con el audio.
 

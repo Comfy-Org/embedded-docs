@@ -1,3 +1,5 @@
+# EşikMaskesi
+
 ThresholdMask düğümü, bir eşik değeri uygulayarak maskeyi ikili (binary) maskeye dönüştürür. Giriş maskesindeki her pikseli belirtilen eşik değeriyle karşılaştırır ve eşiğin üzerindeki piksellerin 1 (beyaz), eşiğe eşit veya altındaki piksellerin 0 (siyah) olduğu yeni bir maske oluşturur.
 
 ## Girişler

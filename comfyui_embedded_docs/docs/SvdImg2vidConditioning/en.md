@@ -1,3 +1,5 @@
+# SvdImg2vidConditioning
+
 This node is designed for generating conditioning data for video generation tasks, specifically tailored for use with SVD_img2vid models. It takes various inputs including initial images, video parameters, and a VAE model to produce conditioning data that can be used to guide the generation of video frames.
 
 ## Inputs

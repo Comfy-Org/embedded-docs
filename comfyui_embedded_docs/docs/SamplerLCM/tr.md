@@ -1,3 +1,5 @@
+# SamplerLCM
+
 SamplerLCM düğümü, her adımda ayarlanabilir gürültü parametrelerine sahip bir LCM (Gizli Tutarlılık Modeli) örnekleyicisi sağlar. Bu düğüm, her örnekleme adımında uygulanan gürültüyü kontrol etmenize olanak tanıyarak örnekleme sürecinin ince ayarlı bir şekilde düzenlenmesini sağlar.
 
 ## Girişler

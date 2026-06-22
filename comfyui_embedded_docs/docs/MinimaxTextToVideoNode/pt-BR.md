@@ -1,3 +1,5 @@
+# MiniMax Texto para Vídeo
+
 Gera vídeos de forma síncrona com base em um prompt e parâmetros opcionais usando a API da MiniMax. Este nó cria conteúdo de vídeo a partir de descrições textuais ao se conectar ao serviço de texto-para-vídeo da MiniMax.
 
 ## Entradas

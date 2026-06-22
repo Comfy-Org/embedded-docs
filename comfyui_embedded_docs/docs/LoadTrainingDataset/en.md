@@ -1,3 +1,5 @@
+# Load Training Dataset
+
 This node loads an encoded training dataset that has been previously saved to disk. It searches for and reads all data shard files from a specified folder within the ComfyUI output directory, then returns the combined latent vectors and conditioning data for use in training workflows.
 
 ## Inputs

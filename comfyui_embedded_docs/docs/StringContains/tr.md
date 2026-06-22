@@ -1,3 +1,5 @@
+# İçerir
+
 StringContains düğümü, belirtilen bir dizenin belirli bir alt dizeyi içerip içermediğini kontrol eder. Bu kontrolü büyük/küçük harf duyarlı veya duyarsız eşleştirme ile gerçekleştirebilir ve alt dizenin ana dize içinde bulunup bulunmadığını belirten bir boolean sonucu döndürür.
 
 ## Girişler

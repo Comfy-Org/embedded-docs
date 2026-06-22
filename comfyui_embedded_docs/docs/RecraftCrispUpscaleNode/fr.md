@@ -1,3 +1,5 @@
+# Recraft Crisp Upscale Image
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/en.md)
 
 Agrandit une image de manière synchrone. Améliore une image matricielle donnée à l'aide de l'outil « crisp upscale », augmentant la résolution de l'image et la rendant plus nette et plus propre.

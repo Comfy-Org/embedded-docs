@@ -1,3 +1,5 @@
+# Máscara Sólida
+
 El nodo SolidMask genera una máscara uniforme con un valor específico en toda su área. Está diseñado para crear máscaras de dimensiones e intensidad determinadas, útil en diversas tareas de procesamiento de imágenes y enmascaramiento.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# AcondicionamientoEstablecerFuerzaArea
+
 Este nodo está diseñado para modificar el atributo de intensidad de un conjunto de condicionamiento dado, permitiendo ajustar la influencia o intensidad del condicionamiento en el proceso de generación.
 
 ## Entradas

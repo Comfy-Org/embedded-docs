@@ -1,4 +1,4 @@
-# File3DToSplat
+# Obter Splat
 
 Este nó converte um arquivo 3D contendo dados de gaussian splat em um formato de gaussian splat que pode ser utilizado no grafo de nós. Ele suporta os formatos de arquivo PLY, SPLAT, KSPLAT e SPZ, sendo que o formato do arquivo é detectado automaticamente a partir do conteúdo do arquivo.
 

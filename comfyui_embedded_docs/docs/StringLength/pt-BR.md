@@ -1,3 +1,5 @@
+# Comprimento
+
 O nó StringLength calcula o número de caracteres em uma string de texto. Ele recebe qualquer entrada de texto e retorna a contagem total de caracteres, incluindo espaços e pontuação. Isso é útil para medir o comprimento do texto ou validar requisitos de tamanho de string.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Get Image Size
+
 The GetImageSize node extracts the dimensions and batch information from an input image. It returns the width, height, and batch size of the image while also displaying this information as progress text on the node interface. The original image data passes through unchanged.
 
 ## Inputs

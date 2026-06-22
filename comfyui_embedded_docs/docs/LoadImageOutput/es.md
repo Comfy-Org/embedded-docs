@@ -1,3 +1,5 @@
+# Cargar Imagen (desde Salidas)
+
 El nodo LoadImageOutput carga imágenes desde la carpeta de salida. Al hacer clic en el botón de actualizar, actualiza la lista de imágenes disponibles y selecciona automáticamente la primera, facilitando la iteración a través de las imágenes generadas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Crear Hook Keyframes Interp.
+
 Crea una secuencia de fotogramas clave de hook con valores de intensidad interpolados entre un punto inicial y final. El nodo genera múltiples fotogramas clave que realizan una transición suave del parámetro de intensidad a lo largo de un rango porcentual específico del proceso de generación, utilizando varios métodos de interpolación para controlar la curva de transición.
 
 ## Entradas

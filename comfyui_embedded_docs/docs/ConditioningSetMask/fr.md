@@ -1,3 +1,5 @@
+# Conditionnement (Définir Masque)
+
 Ce nœud est conçu pour modifier le conditionnement d'un modèle génératif en appliquant un masque avec une intensité spécifique à certaines zones. Il permet des ajustements ciblés au sein du conditionnement, offrant un contrôle plus précis sur le processus de génération.
 
 ## Entrées

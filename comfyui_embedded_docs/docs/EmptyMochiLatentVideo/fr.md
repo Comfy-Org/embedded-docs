@@ -1,3 +1,5 @@
+# EmptyMochiLatentVideo
+
 Le nœud EmptyMochiLatentVideo crée un tenseur latent vidéo vide avec des dimensions spécifiées. Il génère une représentation latente remplie de zéros pouvant servir de point de départ pour des workflows de génération vidéo. Ce nœud permet de définir la largeur, la hauteur, la longueur et la taille du lot pour le tenseur latent vidéo.
 
 ## Entrées

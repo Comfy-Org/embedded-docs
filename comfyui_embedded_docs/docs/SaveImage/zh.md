@@ -1,3 +1,5 @@
+# 保存图像
+
 此文档由 AI 生成。如发现任何错误或有改进建议，欢迎随时贡献！[在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/en.md)
 
 SaveImage 节点将接收到的图像保存到您的 `ComfyUI/output` 目录中。它会将每张图像保存为 PNG 文件，并可嵌入工作流元数据（如提示词）到保存的文件中，以便日后参考。

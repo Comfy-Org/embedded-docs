@@ -1,3 +1,5 @@
+# MinimaxSubjectToVideoNode
+
 MiniMax'ın API'sini kullanarak, bir konu görseli ve metin istemine dayalı olarak eşzamanlı video oluşturur. Bu düğüm, bir konunun görselini ve bir açıklamayı alarak, isteme göre bu konuyu canlandıran veya öne çıkaran bir video oluşturur.
 
 ## Girişler

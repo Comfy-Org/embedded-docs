@@ -1,4 +1,4 @@
-# File3DToSplat
+# Obtenir Splat
 
 Ce nœud convertit un fichier 3D contenant des données de splat gaussien en un format de splat gaussien utilisable dans le graphe de nœuds. Il prend en charge les formats de fichier PLY, SPLAT, KSPLAT et SPZ, le format étant automatiquement détecté à partir du contenu du fichier.
 

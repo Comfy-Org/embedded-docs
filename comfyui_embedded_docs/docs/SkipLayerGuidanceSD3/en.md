@@ -1,3 +1,5 @@
+# SkipLayerGuidanceSD3
+
 The SkipLayerGuidanceSD3 node enhances guidance towards detailed structure by applying an additional set of classifier-free guidance with skipped layers. This experimental implementation is inspired by Perturbed Attention Guidance and works by selectively bypassing certain layers during the negative conditioning process to improve structural details in the generated output.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Wan Imagem para Vídeo
+
 O nó Wan Image to Video gera um vídeo a partir de uma única imagem de entrada e um prompt de texto. Ele usa a imagem fornecida como o primeiro quadro e cria uma sequência de vídeo com base na descrição, com opções de resolução, duração, áudio e outras configurações avançadas.
 
 ## Entradas

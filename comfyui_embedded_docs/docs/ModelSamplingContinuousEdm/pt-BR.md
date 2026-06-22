@@ -1,3 +1,5 @@
+# ModelSamplingContinuousEDM
+
 Este nó foi projetado para aprimorar as capacidades de amostragem de um modelo, integrando técnicas contínuas de amostragem EDM (Modelos de Difusão Baseados em Energia). Ele permite o ajuste dinâmico dos níveis de ruído durante o processo de amostragem do modelo, oferecendo um controle mais refinado sobre a qualidade e a diversidade da geração.
 
 ## Entradas

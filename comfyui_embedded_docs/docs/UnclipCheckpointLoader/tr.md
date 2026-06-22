@@ -1,3 +1,5 @@
+# unCLIPKontrolNoktasıYükleyici
+
 Bu düğüm, `ComfyUI/models/checkpoints` klasöründe bulunan modelleri tespit eder ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardaki modelleri de okur. Bazen, model dosyalarını ilgili klasörden okuması için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 unCLIPCheckpointLoader düğümü, özellikle unCLIP modelleri için uyarlanmış kontrol noktalarını yüklemek üzere tasarlanmıştır. Belirtilen bir kontrol noktasından modellerin, CLIP görüş modüllerinin ve VAE'lerin alınmasını ve başlatılmasını kolaylaştırarak, daha sonraki işlemler veya analizler için kurulum sürecini basitleştirir.

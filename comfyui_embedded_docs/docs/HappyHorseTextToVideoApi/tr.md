@@ -1,3 +1,5 @@
+# HappyHorse Metinden Videoya
+
 ## Genel Bakış
 
 HappyHorse modelini kullanarak bir metin istemine dayalı video oluşturur. Bu düğüm, isteminizi ve ayarlarınızı HappyHorse API'sine gönderir, videonun oluşturulmasını bekler ve ardından sonucu indirir.

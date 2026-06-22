@@ -1,3 +1,5 @@
+# Recraft Relleno de Imagen
+
 Este nodo modifica áreas específicas de una imagen basándose en un prompt de texto y una máscara. Utiliza la API de Recraft para editar inteligentemente solo las regiones enmascaradas, manteniendo el resto de la imagen sin cambios.
 
 ## Entradas

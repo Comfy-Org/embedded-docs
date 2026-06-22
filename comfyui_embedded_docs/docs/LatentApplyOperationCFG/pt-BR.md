@@ -1,3 +1,5 @@
+# LatentApplyOperationCFG
+
 O nó **LatentApplyOperationCFG** aplica uma operação latente para modificar o processo de orientação por condicionamento em um modelo. Ele funciona interceptando as saídas de condicionamento durante o processo de amostragem por orientação livre de classificador (CFG) e aplicando a operação especificada às representações latentes antes que elas sejam utilizadas para a geração.
 
 ## Entradas

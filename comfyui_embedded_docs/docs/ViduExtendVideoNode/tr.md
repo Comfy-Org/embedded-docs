@@ -1,3 +1,5 @@
+# Vidu Video Uzatma
+
 ViduExtendVideoNode, mevcut bir videonun süresini uzatmak için ek kareler oluşturur. Kaynak videoya ve isteğe bağlı bir metin istemine dayanarak kesintisiz bir devam oluşturmak için belirtilen bir AI modelini kullanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Sonilo Videodan Müzik Üret
+
 Sonilo'nun yapay zeka modelini kullanarak videodan müzik üretir. Bu düğüm, girdi videosunun içeriğini analiz eder ve ona uygun bir müzik parçası oluşturur. Videoyu işlemek ve sesi üretmek için harici bir yapay zeka hizmeti kullanır.
 
 ## Girdiler

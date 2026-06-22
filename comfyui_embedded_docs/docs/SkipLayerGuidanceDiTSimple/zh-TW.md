@@ -1,4 +1,4 @@
-# SkipLayerGuidanceDiTSimple 節點
+# 跳層引導DiT簡易版
 
 這是 SkipLayerGuidanceDiT 節點的簡化版本，僅在去噪過程中修改無條件傳遞。此節點透過根據指定的時機和層參數，在無條件傳遞期間選擇性地跳過 DiT（擴散變壓器）模型中的特定變壓器層，來對這些層應用跳層引導。
 

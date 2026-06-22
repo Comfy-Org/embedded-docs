@@ -1,3 +1,5 @@
+# WanFun 控制轉影片
+
 此節點是為了支援阿里巴巴 Wan Fun Control 模型進行影片生成而新增的，並在[此提交](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82)之後加入。
 
 - **目的：** 使用 Wan 2.1 Fun Control 模型，準備影片生成所需的條件資訊。

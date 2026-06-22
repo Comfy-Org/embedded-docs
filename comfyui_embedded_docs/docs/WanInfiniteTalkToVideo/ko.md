@@ -1,4 +1,4 @@
-# WanInfiniteTalkToVideo 노드
+# WanInfiniteTalkToVideo
 
 WanInfiniteTalkToVideo 노드는 오디오 입력으로부터 비디오 시퀀스를 생성합니다. 이 노드는 하나 또는 두 명의 화자로부터 추출된 오디오 특징을 조건으로 하는 비디오 확산 모델을 사용하여 토킹 헤드 비디오의 잠재 표현을 생성합니다. 새로운 시퀀스를 생성하거나 이전 프레임을 모션 컨텍스트로 사용하여 기존 시퀀스를 확장할 수 있습니다.
 

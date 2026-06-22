@@ -1,3 +1,5 @@
+# CLIPAdd
+
 O nó CLIPAdd combina dois modelos CLIP mesclando seus patches de chave. Ele cria uma cópia do primeiro modelo CLIP e, em seguida, adiciona a maioria dos patches de chave do segundo modelo, excluindo IDs de posição e parâmetros de escala logit. Isso permite combinar características de diferentes modelos CLIP, preservando a estrutura do primeiro modelo.
 
 ## Entradas

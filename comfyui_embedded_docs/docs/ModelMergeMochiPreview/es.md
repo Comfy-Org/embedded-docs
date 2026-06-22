@@ -1,3 +1,5 @@
+# ModelMergeMochiPreview
+
 Este nodo fusiona dos modelos de IA utilizando un enfoque basado en bloques con control detallado sobre diferentes componentes del modelo. Permite combinar modelos ajustando los pesos de interpolación para secciones específicas, incluyendo frecuencias posicionales, capas de incrustación y bloques de transformadores individuales. El proceso de fusión combina las arquitecturas y parámetros de ambos modelos de entrada según los valores de peso especificados.
 
 ## Entradas

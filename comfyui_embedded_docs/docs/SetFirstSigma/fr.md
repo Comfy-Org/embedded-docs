@@ -1,3 +1,5 @@
+# DéfinirPremierSigma
+
 Le nœud SetFirstSigma modifie une séquence de valeurs sigma en remplaçant la première valeur de la séquence par une valeur personnalisée. Il prend en entrée une séquence sigma existante et une nouvelle valeur sigma, puis renvoie une nouvelle séquence sigma dont seul le premier élément a été modifié, toutes les autres valeurs sigma restant inchangées.
 
 ## Entrées

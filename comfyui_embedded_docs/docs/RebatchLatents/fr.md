@@ -1,3 +1,5 @@
+# Rebatch Latents
+
 Le nœud RebatchLatents est conçu pour réorganiser un lot de représentations latentes en une nouvelle configuration de lot, basée sur une taille de lot spécifiée. Il garantit que les échantillons latents sont regroupés de manière appropriée, en gérant les variations de dimensions et de tailles, afin de faciliter le traitement ultérieur ou l'inférence du modèle.
 
 ## Entrées

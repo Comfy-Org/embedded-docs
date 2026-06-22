@@ -1,3 +1,5 @@
+# LTXVConditioning
+
 Le nœud **LTXVConditioning** ajoute des informations de fréquence d'images aux entrées de conditionnement positif et négatif pour les modèles de génération vidéo. Il prend les données de conditionnement existantes et applique la valeur de fréquence d'images spécifiée aux deux ensembles de conditionnement, les rendant ainsi adaptés au traitement par modèle vidéo.
 
 ## Entrées

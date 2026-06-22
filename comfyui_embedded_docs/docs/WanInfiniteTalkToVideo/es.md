@@ -1,3 +1,5 @@
+# WanInfiniteTalkToVideo
+
 El nodo WanInfiniteTalkToVideo genera secuencias de video a partir de entrada de audio. Utiliza un modelo de difusión de video, condicionado por características de audio extraídas de uno o dos hablantes, para producir una representación latente de un video de persona hablando. El nodo puede generar una secuencia nueva o extender una existente usando fotogramas anteriores como contexto de movimiento.
 
 ## Entradas

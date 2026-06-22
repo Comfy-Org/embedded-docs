@@ -1,3 +1,5 @@
+# Génération de vidéo à partir de texte Vidu Q3
+
 Voici la traduction de la documentation du nœud Vidu Q3 Text-to-Video Generation :
 
 Le nœud Vidu Q3 Text-to-Video Generation crée une vidéo à partir d'une description textuelle. Il utilise le modèle Vidu Q3 Pro ou Q3 Turbo pour générer un contenu vidéo basé sur votre invite, vous permettant de contrôler la durée, la résolution, le rapport hauteur/largeur de la vidéo et d'inclure ou non du son.

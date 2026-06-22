@@ -1,3 +1,5 @@
+# ConvertStringToComboNode
+
 O nó **Converter String em Combo** recebe uma string de texto como entrada e a converte em um tipo de dados **Combo**. Isso permite que você use um valor de texto como uma opção de seleção para outros nós que exigem uma entrada do tipo **Combo**. Ele simplesmente passa o valor da string sem alterações, mas modifica seu tipo de dados.
 
 ## Entradas

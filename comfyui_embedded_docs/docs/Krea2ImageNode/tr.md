@@ -1,3 +1,5 @@
+# Krea 2 Görsel
+
 ## Genel Bakış
 
 Krea 2 Görsel düğümü, Krea 2 yapay zeka modelini kullanarak görseller oluşturur. İki model çeşidini destekler: Orta (Medium) ifade edici illüstrasyonlar için, Büyük (Large) ise ifade edici fotogerçekçilik için. Oluşturulan görseli etkilemek için isteğe bağlı olarak bir ruh hali panosu (moodboard) ve en fazla 10 görsel stil referansı ekleyebilirsiniz.

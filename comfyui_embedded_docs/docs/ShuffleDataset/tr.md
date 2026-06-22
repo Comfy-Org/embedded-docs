@@ -1,3 +1,5 @@
+# Görüntü Veri Setini Karıştır
+
 Shuffle Dataset düğümü, bir görüntü listesini alır ve sıralarını rastgele değiştirir. Rastgeleliği kontrol etmek için bir tohum değeri kullanır ve aynı karıştırma sırasının tekrar üretilebilmesini sağlar. Bu, işleme başlamadan önce bir veri kümesindeki görüntülerin sırasını rastgele hale getirmek için kullanışlıdır.
 
 ## Girişler

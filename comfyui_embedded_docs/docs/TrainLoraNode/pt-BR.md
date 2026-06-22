@@ -1,3 +1,5 @@
+# Treinar LoRA
+
 O nó TrainLoraNode cria e treina um modelo LoRA (Adaptação de Baixo Posto) em um modelo de difusão usando latentes fornecidos e dados de condicionamento. Ele permite ajustar um modelo com parâmetros de treinamento personalizados, otimizadores e funções de perda. O nó gera os pesos LoRA treinados, um mapa do histórico de perda e o total de etapas de treinamento concluídas.
 
 ## Entradas

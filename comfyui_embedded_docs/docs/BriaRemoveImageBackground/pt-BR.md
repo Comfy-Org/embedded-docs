@@ -1,3 +1,5 @@
+# Bria Remover Fundo da Imagem
+
 Este nó remove o fundo de uma imagem usando o serviço Bria RMBG 2.0. Ele envia a imagem para uma API externa para processamento e retorna o resultado com o fundo removido.
 
 ## Entradas

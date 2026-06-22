@@ -1,3 +1,5 @@
+# CLIP Définir Dernière Couche
+
 Voici la traduction en français de la documentation du nœud `CLIP Set Last Layer` :
 
 `CLIP Set Last Layer` est un nœud central de ComfyUI permettant de contrôler la profondeur de traitement des modèles CLIP. Il offre un contrôle précis sur l'étape à laquelle l'encodeur de texte CLIP cesse son traitement, influençant à la fois la profondeur de la compréhension textuelle et le style des images générées.

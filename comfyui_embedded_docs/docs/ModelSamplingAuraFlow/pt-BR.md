@@ -1,3 +1,5 @@
+# ModelSamplingAuraFlow
+
 O nó ModelSamplingAuraFlow aplica uma configuração de amostragem especializada a modelos de difusão, projetada especificamente para arquiteturas de modelo AuraFlow. Ele modifica o comportamento de amostragem do modelo aplicando um parâmetro de deslocamento que ajusta a distribuição de amostragem. Este nó herda da estrutura de amostragem de modelo SD3 e fornece controle refinado sobre o processo de amostragem.
 
 ## Entradas

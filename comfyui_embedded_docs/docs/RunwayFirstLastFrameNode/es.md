@@ -1,3 +1,5 @@
+# Runway Primer-Fotograma-Último a Video
+
 El nodo Runway Primer-Último Fotograma a Video genera videos subiendo fotogramas clave inicial y final junto con un mensaje de texto. Crea transiciones suaves entre los fotogramas de inicio y fin proporcionados utilizando el modelo Gen-3 de Runway. Esto es particularmente útil para transiciones complejas donde el fotograma final difiere significativamente del fotograma inicial.
 
 ## Entradas

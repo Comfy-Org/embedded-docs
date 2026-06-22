@@ -1,3 +1,5 @@
+# SkipLayerGuidanceSD3
+
 O nó **SkipLayerGuidanceSD3** aprimora a orientação para estruturas detalhadas ao aplicar um conjunto adicional de orientação livre de classificador com camadas ignoradas. Esta implementação experimental é inspirada na Orientação de Atenção Perturbada (*Perturbed Attention Guidance*) e funciona ignorando seletivamente certas camadas durante o processo de condicionamento negativo para melhorar os detalhes estruturais na saída gerada.
 
 ## Entradas

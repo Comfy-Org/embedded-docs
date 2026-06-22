@@ -1,3 +1,5 @@
+# Contém
+
 O nó StringContains verifica se uma determinada string contém uma substring especificada. Ele pode realizar essa verificação com correspondência sensível a maiúsculas/minúsculas ou insensível, retornando um resultado booleano indicando se a substring foi encontrada dentro da string principal.
 
 ## Entradas

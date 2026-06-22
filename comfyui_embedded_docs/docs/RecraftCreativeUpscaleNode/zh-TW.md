@@ -1,3 +1,5 @@
+# Recraft Creative 影像放大
+
 此文件由 AI 生成。若發現任何錯誤或有改進建議，歡迎隨時貢獻！[在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreativeUpscaleNode/en.md)
 
 Recraft 創意放大影像節點透過提高解析度來增強點陣圖影像。它採用「創意放大」流程，專注於改善影像中的微小細節與臉部特徵。此操作會透過外部 API 同步執行。

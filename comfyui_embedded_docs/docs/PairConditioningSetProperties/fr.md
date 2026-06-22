@@ -1,3 +1,5 @@
+# Cond Pair Définir Propriétés
+
 Le nœud **PairConditioningSetProperties** vous permet de modifier simultanément les propriétés des paires de conditionnement positif et négatif. Il applique des ajustements de force, des paramètres de zone de conditionnement, ainsi que des contrôles optionnels de masquage ou de temporisation aux deux entrées de conditionnement, puis renvoie les données de conditionnement positif et négatif modifiées.
 
 ## Entrées

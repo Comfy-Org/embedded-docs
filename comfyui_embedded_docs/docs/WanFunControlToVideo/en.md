@@ -1,3 +1,5 @@
+# WanFunControlToVideo
+
 This node was added to support the Alibaba Wan Fun Control model for video generation, and was added after [this commit](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82).
 
 - **Purpose:** Prepare the conditioning information needed for video generation, using the Wan 2.1 Fun Control model.

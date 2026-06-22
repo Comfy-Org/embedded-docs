@@ -1,3 +1,5 @@
+# Geração de Vídeo Vidu2 de Quadro Inicial/Final
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Vidu2StartEndToVideoNode/en.md)
 
 Este nó gera um vídeo interpolando entre um quadro inicial e um quadro final fornecidos, guiado por um prompt de texto. Ele usa um modelo Vidu especificado para criar uma transição suave entre as duas imagens ao longo de uma duração definida.

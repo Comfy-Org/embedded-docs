@@ -1,3 +1,5 @@
+# GizliİşlemTonEşlemeReinhard
+
 LatentOperationTonemapReinhard düğümü, Reinhard ton eşlemesini gizli vektörlere uygular. Bu teknik, ortalama ve standart sapmaya dayalı istatistiksel bir yaklaşım kullanarak gizli vektörleri normalleştirir ve büyüklüklerini ayarlar; yoğunluk bir çarpan parametresiyle kontrol edilir.
 
 ## Girişler

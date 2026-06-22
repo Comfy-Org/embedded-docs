@@ -1,3 +1,5 @@
+# HyperTile
+
 O nó HyperTile aplica uma técnica de divisão em blocos ao mecanismo de atenção em modelos de difusão para otimizar o uso de memória durante a geração de imagens. Ele divide o espaço latente em blocos menores e os processa separadamente, depois remonta os resultados. Isso permite trabalhar com tamanhos de imagem maiores sem esgotar a memória.
 
 ## Entradas

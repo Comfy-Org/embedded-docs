@@ -1,3 +1,5 @@
+# Görüntüyü Oranla Büyüt
+
 ImageScaleBy düğümü, belirtilen bir ölçek faktörü kullanarak çeşitli enterpolasyon yöntemleriyle görüntüleri büyütmek için tasarlanmıştır. Farklı büyütme ihtiyaçlarına hitap ederek görüntü boyutunun esnek bir şekilde ayarlanmasına olanak tanır.
 
 ## Girişler

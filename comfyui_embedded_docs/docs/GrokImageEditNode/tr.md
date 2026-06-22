@@ -1,3 +1,5 @@
+# Grok Görüntü Düzenle
+
 Grok Görüntü Düzenleme düğümü, bir metin istemine dayanarak mevcut bir görüntüyü değiştirir. Girdi görüntünüzün varyasyonları olan bir veya daha fazla yeni görüntü oluşturmak için Grok API'sini kullanır; bu süreç açıklamanız tarafından yönlendirilir.
 
 ## Girdiler

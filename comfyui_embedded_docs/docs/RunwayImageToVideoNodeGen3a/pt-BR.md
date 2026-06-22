@@ -1,3 +1,5 @@
+# Runway Imagem para Vídeo (Gen3a Turbo)
+
 O nó Runway Image to Video (Gen3a Turbo) gera um vídeo a partir de um único quadro inicial usando o modelo Gen3a Turbo da Runway. Ele recebe um prompt de texto e uma imagem de quadro inicial, depois cria uma sequência de vídeo com base na duração e proporção especificadas. Este nó se conecta à API da Runway para processar a geração remotamente.
 
 ## Entradas

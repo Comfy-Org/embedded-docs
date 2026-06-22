@@ -1,3 +1,5 @@
+# AutogrowPrefixTestNode
+
 Le nœud AutogrowPrefixTestNode est un nœud logique conçu pour tester la fonctionnalité d'entrée à croissance automatique. Il accepte un nombre dynamique d'entrées flottantes, combine leurs valeurs en une chaîne séparée par des virgules, et produit cette chaîne en sortie.
 
 ## Entrées

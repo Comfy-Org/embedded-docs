@@ -1,3 +1,5 @@
+# Tome Model Yaması
+
 TomePatchModel düğümü, bir yayılma modeline Token Birleştirme (ToMe) uygulayarak çıkarım sırasında hesaplama gereksinimlerini azaltır. Dikkat mekanizmasındaki benzer tokenleri seçici bir şekilde birleştirerek çalışır ve modelin görüntü kalitesini korurken daha az token işlemesine olanak tanır. Bu teknik, önemli bir kalite kaybı olmadan üretimi hızlandırmaya yardımcı olur.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Boş Gizli Görüntü
+
 `EmptyLatentImage` düğümü, belirtilen boyutlarda ve toplu işlem sayısında boş bir gizli uzay temsili oluşturmak için tasarlanmıştır. Bu düğüm, görüntüleri gizli uzayda oluşturma veya işleme sürecinde temel bir adım olarak hizmet eder ve daha ileri düzey görüntü sentezi veya değiştirme işlemleri için bir başlangıç noktası sağlar.
 
 ## Girişler

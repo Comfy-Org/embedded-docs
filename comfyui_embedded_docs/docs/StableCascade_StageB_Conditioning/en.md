@@ -1,3 +1,5 @@
+# StableCascade_StageB_Conditioning
+
 The StableCascade_StageB_Conditioning node prepares conditioning data for Stable Cascade Stage B generation by combining existing conditioning information with prior latent representations from Stage C. It modifies the conditioning data to include the latent samples from Stage C, enabling the generation process to leverage the prior information for more coherent outputs.
 
 ## Inputs

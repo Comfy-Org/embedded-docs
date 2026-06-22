@@ -1,3 +1,5 @@
+# VideoDoğrusalCFGRehberliği
+
 VideoLinearCFGGuidance düğümü, bir video modeline doğrusal koşullandırma yönlendirme ölçeği uygulayarak, belirtilen bir aralıkta koşullandırılmış ve koşullandırılmamış bileşenlerin etkisini ayarlar. Bu, üretim süreci üzerinde dinamik kontrol sağlayarak, model çıktısının istenen koşullandırma seviyesine göre ince ayar yapılmasına olanak tanır.
 
 ## Girişler

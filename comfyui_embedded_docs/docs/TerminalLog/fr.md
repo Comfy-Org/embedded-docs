@@ -1,3 +1,5 @@
+# TerminalLog
+
 Nœud Terminal Log (Manager) est principalement utilisé pour afficher les informations d'exécution de ComfyUI dans le terminal, directement dans l'interface de ComfyUI. Pour l'utiliser, vous devez définir le `mode` sur **logging**. Cela lui permettra d'enregistrer les informations de journal correspondantes pendant la tâche de génération d'images. Si le `mode` est défini sur **stop**, il n'enregistrera aucune information de journal.
 
 Lorsque vous accédez à ComfyUI et l'utilisez via des connexions distantes ou des connexions réseau local, le nœud Terminal Log (Manager) devient particulièrement utile. Il vous permet de visualiser directement les messages d'erreur du CMD dans l'interface de ComfyUI, facilitant ainsi la compréhension de l'état actuel du fonctionnement de ComfyUI.

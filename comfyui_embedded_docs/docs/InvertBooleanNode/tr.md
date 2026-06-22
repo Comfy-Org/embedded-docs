@@ -1,3 +1,5 @@
+# InvertBooleanNode
+
 Bu düğüm, tek bir boolean (doğru/yanlış) girdisi alır ve bunun tersi değeri çıktı olarak verir. Mantıksal DEĞİL işlemi gerçekleştirerek `true` değerini `false`'a, `false` değerini ise `true`'ya dönüştürür.
 
 ## Girdiler

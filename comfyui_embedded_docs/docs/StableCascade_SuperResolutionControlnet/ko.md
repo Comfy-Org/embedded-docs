@@ -1,3 +1,5 @@
+# StableCascade 초고해상도 컨트롤넷
+
 StableCascade_SuperResolutionControlnet 노드는 Stable Cascade 초고해상도 처리를 위한 입력값을 준비합니다. 입력 이미지를 받아 VAE를 사용하여 인코딩함으로써 컨트롤넷 입력을 생성하고, 동시에 Stable Cascade 파이프라인의 스테이지 C와 스테이지 B를 위한 플레이스홀더 잠재 표현을 생성합니다.
 
 ## 입력

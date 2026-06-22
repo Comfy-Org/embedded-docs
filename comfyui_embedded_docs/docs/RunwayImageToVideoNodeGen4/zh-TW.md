@@ -1,4 +1,4 @@
-# Runway 影像轉影片（Gen4 Turbo）節點
+# Runway 圖片轉影片 (Gen4 Turbo)
 
 Runway 影像轉影片（Gen4 Turbo）節點使用 Runway 的 Gen4 Turbo 模型，從單一起始影格生成影片。它接收文字提示和初始影像影格，然後根據提供的持續時間和長寬比設定建立影片序列。此節點負責將起始影格上傳至 Runway 的 API，並返回生成的影片。
 

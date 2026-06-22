@@ -1,3 +1,5 @@
+# OptimalStepsScheduler
+
 Le nœud OptimalStepsScheduler calcule les sigmas du programme de bruit pour les modèles de diffusion en fonction du type de modèle sélectionné et de la configuration des étapes. Il ajuste le nombre total d'étapes selon le paramètre de débruitage et interpole les niveaux de bruit pour correspondre au nombre d'étapes demandé. Le nœud renvoie une séquence de valeurs sigma qui déterminent les niveaux de bruit utilisés pendant le processus d'échantillonnage par diffusion.
 
 ## Entrées

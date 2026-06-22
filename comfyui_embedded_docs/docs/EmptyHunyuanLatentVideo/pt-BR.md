@@ -1,3 +1,5 @@
+# Empty HunyuanVideo 1.0 Latent
+
 O nó `EmptyHunyuanLatentVideo` é semelhante ao nó `EmptyLatentImage`. Você pode considerá-lo como uma tela em branco para geração de vídeo, onde largura, altura e comprimento definem as propriedades da tela, e o tamanho do lote determina a quantidade de telas a serem criadas. Este nó cria telas vazias prontas para tarefas subsequentes de geração de vídeo.
 
 ## Entradas

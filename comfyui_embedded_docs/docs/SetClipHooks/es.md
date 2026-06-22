@@ -1,3 +1,5 @@
+# Establecer Ganchos CLIP
+
 El nodo `SetClipHooks` permite aplicar hooks personalizados a un modelo CLIP, posibilitando modificaciones avanzadas en su comportamiento. Puede aplicar hooks a las salidas de condicionamiento y habilitar opcionalmente la funcionalidad de programación de CLIP. Este nodo crea una copia clonada del modelo CLIP de entrada con las configuraciones de hooks especificadas aplicadas.
 
 ## Entradas

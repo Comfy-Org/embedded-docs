@@ -1,3 +1,5 @@
+# ModelMergeSD35_Large
+
 Le nœud **ModelMergeSD35_Large** vous permet de fusionner deux modèles Stable Diffusion 3.5 Large en ajustant l'influence de différents composants du modèle. Il offre un contrôle précis sur la contribution de chaque partie du second modèle au modèle fusionné final, depuis les couches d'embedding jusqu'aux blocs joints et aux couches finales.
 
 ## Entrées

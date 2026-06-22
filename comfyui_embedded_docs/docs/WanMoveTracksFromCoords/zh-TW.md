@@ -1,4 +1,4 @@
-# WanMoveTracksFromCoords 節點
+# WanMoveTracksFromCoords
 
 WanMoveTracksFromCoords 節點可從 JSON 格式的座標字串建立運動軌跡。它將座標資料轉換為張量格式，供其他影片處理節點使用，並可選擇性地套用遮罩來控制軌跡隨時間的可見度。
 

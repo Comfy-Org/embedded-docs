@@ -1,3 +1,5 @@
+# Tembel Önbellek
+
 ## Genel Bakış
 
 LazyCache, EasyCache'in daha da kolay bir uygulama sağlayan ev yapımı bir sürümüdür. ComfyUI'deki herhangi bir modelle çalışır ve örnekleme sırasında hesaplamayı azaltmak için önbellekleme işlevi ekler. Genel olarak EasyCache'ten daha kötü performans gösterse de, bazı nadir durumlarda daha etkili olabilir ve evrensel uyumluluk sunar.

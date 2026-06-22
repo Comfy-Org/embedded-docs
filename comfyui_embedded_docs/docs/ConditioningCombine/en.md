@@ -1,3 +1,5 @@
+# Conditioning (Combine)
+
 This node combines two conditioning inputs into a single output, effectively merging their information. The two conditions are combined using list concatenation.
 
 ## Inputs

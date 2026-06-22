@@ -1,3 +1,5 @@
+# MuestreoDeModeloStableCascade
+
 El nodo ModelSamplingStableCascade aplica un muestreo en cascada estable a un modelo ajustando los parámetros de muestreo con un valor de desplazamiento. Crea una versión modificada del modelo de entrada con una configuración de muestreo personalizada para la generación en cascada estable.
 
 ## Entradas

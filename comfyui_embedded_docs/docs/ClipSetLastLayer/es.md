@@ -1,3 +1,5 @@
+# Establecer Última Capa de CLIP
+
 `CLIP Set Last Layer` es un nodo central en ComfyUI para controlar la profundidad de procesamiento de los modelos CLIP. Permite a los usuarios controlar con precisión en qué punto el codificador de texto CLIP detiene su procesamiento, afectando tanto la profundidad de la comprensión del texto como el estilo de las imágenes generadas.
 
 Imagina el modelo CLIP como un cerebro inteligente de 24 capas:

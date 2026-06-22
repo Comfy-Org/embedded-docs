@@ -1,3 +1,5 @@
+# Magnific Image Upscale (Creativo)
+
 Este nodo utiliza el servicio de IA de Magnific para ampliar y mejorar creativamente una imagen. Permite guiar la mejora con un texto descriptivo, elegir un estilo específico para optimizar el resultado y controlar diversos aspectos del proceso creativo como el detalle, el parecido con la original y la fuerza de estilización. El nodo genera una imagen ampliada según el factor seleccionado (2x, 4x, 8x o 16x), con un tamaño máximo de salida de 25,3 megapíxeles.
 
 ## Entradas

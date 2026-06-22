@@ -1,3 +1,5 @@
+# StableCascade_StageB_Conditioning
+
 El nodo `StableCascade_StageB_Conditioning` prepara los datos de condicionamiento para la generación de la Etapa B de Stable Cascade, combinando la información de condicionamiento existente con representaciones latentes previas de la Etapa C. Modifica los datos de condicionamiento para incluir las muestras latentes de la Etapa C, lo que permite que el proceso de generación aproveche la información previa para obtener resultados más coherentes.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# اعمال ControlNet (قدیمی)
+
 استفاده از controlNet نیازمند پیش‌پردازش تصاویر ورودی است. از آنجایی که گره‌های اولیه ComfyUI به همراه پیش‌پردازشگرها و مدل‌های controlNet ارائه نمی‌شوند، لطفاً ابتدا پیش‌پردازشگرهای ControlNet [دانلود پیش‌پردازشگرها از اینجا](https://github.com/Fannovel16/comfy_controlnet_preprocessors) و مدل‌های controlNet متناظر را نصب کنید.
 
 ## ورودی‌ها

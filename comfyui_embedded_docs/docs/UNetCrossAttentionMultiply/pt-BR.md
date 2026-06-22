@@ -1,3 +1,5 @@
+# UNetCrossAttentionMultiply
+
 O nó UNetCrossAttentionMultiply aplica fatores de multiplicação ao mecanismo de atenção cruzada em um modelo UNet. Ele permite escalar os componentes de consulta, chave, valor e saída das camadas de atenção cruzada para experimentar diferentes comportamentos e efeitos de atenção.
 
 ## Entradas

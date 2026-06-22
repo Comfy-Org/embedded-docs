@@ -1,4 +1,4 @@
-# Render Splat (Representación de Salpicadura Gaussiana)
+# Render Splat
 
 Renderiza una salpicadura gaussiana como imagen utilizando un rasterizador EWA anisotrópico con salpicaduras elípticas orientadas, antialiasing y renderizado ordenado por profundidad de adelante hacia atrás. La cámara proviene de una entrada `camera_info`, o puede dejarse vacía para encuadrar automáticamente la salpicadura. Establezca frames mayores a 1 para un lote de imágenes en rotación que alimente un nodo de Video.
 

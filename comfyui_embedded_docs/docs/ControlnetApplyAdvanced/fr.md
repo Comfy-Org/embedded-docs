@@ -1,3 +1,5 @@
+# Appliquer ControlNet
+
 Ce nœud applique des transformations avancées de réseau de contrôle aux données de conditionnement en se basant sur une image et un modèle de réseau de contrôle. Il permet des réglages précis de l'influence du réseau de contrôle sur le contenu généré, offrant des modifications plus fines et variées du conditionnement.
 
 ## Entrées

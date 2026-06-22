@@ -1,4 +1,4 @@
-# Epsilon Scaling 節點
+# Epsilon縮放
 
 此節點實作了研究論文《Elucidating the Exposure Bias in Diffusion Models》（arxiv.org/abs/2308.15321v6）中的 Epsilon Scaling 方法。其運作原理是在取樣過程中對預測的噪聲進行縮放，以幫助減少曝光偏差，從而提升生成圖像的品質。此實作採用論文推薦的「統一排程」，兼具實用性與有效性。
 

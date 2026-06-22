@@ -1,3 +1,5 @@
+# MetinKodlamaHunyuanVideo_GörüntüdenVideoya
+
 **Genel Bakış**
 
 TextEncodeHunyuanVideo_ImageToVideo düğümü, metin istemlerini görsel yerleştirmelerle birleştirerek video oluşturma için koşullandırma verileri oluşturur. Hem metin girişini hem de bir CLIP görüş çıktısından gelen görsel bilgileri işlemek için bir CLIP modeli kullanır ve ardından belirtilen görsel enterpolasyon ayarına göre bu iki kaynağı harmanlayan tokenler oluşturur.

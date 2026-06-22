@@ -1,3 +1,5 @@
+# Enregistrer les poids LoRA
+
 Le nœud SaveLoRA enregistre un modèle LoRA (Low-Rank Adaptation) dans un fichier. Il prend un modèle LoRA en entrée et l'écrit dans un fichier `.safetensors` dans le répertoire de sortie. Vous pouvez spécifier un préfixe de nom de fichier et un nombre d'étapes facultatif à inclure dans le nom final du fichier.
 
 ## Entrées

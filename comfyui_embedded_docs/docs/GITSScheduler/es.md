@@ -1,3 +1,5 @@
+# GITSScheduler
+
 El nodo GITSScheduler genera sigmas de programación de ruido para el método de muestreo GITS (Pasos de Tiempo Iterativos Generativos). Calcula valores sigma basados en un parámetro de coeficiente y número de pasos, con un factor de eliminación de ruido opcional que puede reducir los pasos totales utilizados. El nodo utiliza niveles de ruido predefinidos e interpolación para crear la programación sigma final.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# TomePatchModel
+
 O nó TomePatchModel aplica a Fusão de Tokens (ToMe) a um modelo de difusão para reduzir os requisitos computacionais durante a inferência. Ele funciona mesclando seletivamente tokens semelhantes no mecanismo de atenção, permitindo que o modelo processe menos tokens enquanto mantém a qualidade da imagem. Essa técnica ajuda a acelerar a geração sem perda significativa de qualidade.
 
 ## Entradas

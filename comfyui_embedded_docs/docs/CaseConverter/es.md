@@ -1,3 +1,5 @@
+# Convertidor de Mayúsculas y Minúsculas
+
 El nodo Convertidor de Mayúsculas transforma cadenas de texto en diferentes formatos de mayúsculas y minúsculas. Toma una cadena de entrada y la convierte según el modo seleccionado, produciendo una cadena de salida con el formato de mayúsculas especificado. El nodo admite cuatro opciones diferentes de conversión para modificar la capitalización de tu texto.
 
 ## Entradas

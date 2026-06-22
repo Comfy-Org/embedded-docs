@@ -1,4 +1,4 @@
-# Créer les Informations de Caméra
+# Créer des informations de caméra
 
 Le nœud Créer les Informations de Caméra construit une structure d'informations de caméra pour le rendu 3D. Il prend en charge trois modes pour définir la caméra : orbite (lacet/tangage/distance autour d'une cible), regarder_vers (position explicite dans le monde) et quaternion (position plus rotation). Le système de coordonnées est droitier avec Y comme axe vertical.
 

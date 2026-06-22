@@ -1,3 +1,5 @@
+# SDTurboScheduler
+
 SDTurboScheduler 旨在生成用於影像取樣的 sigma 值序列，並根據指定的去噪程度與步驟數量調整該序列。它利用特定模型的取樣能力來產生這些 sigma 值，這對於控制影像生成過程中的去噪流程至關重要。
 
 ## 輸入

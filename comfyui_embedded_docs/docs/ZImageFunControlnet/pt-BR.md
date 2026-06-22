@@ -1,3 +1,5 @@
+# ZImageFunControlnet
+
 O nó ZImageFunControlnet aplica uma rede de controle especializada para influenciar o processo de geração ou edição de imagens. Ele utiliza um modelo base, um patch de modelo e um VAE, permitindo ajustar a intensidade do efeito de controle. Este nó pode trabalhar com uma imagem base, uma imagem para inpaint e uma máscara para edições mais direcionadas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Carregar Modelo LoRA
+
 O nó LoraModelLoader aplica pesos de LoRA (Adaptação de Baixa Classificação) treinados a um modelo de difusão. Ele modifica o modelo base carregando pesos de LoRA de um modelo LoRA treinado e ajustando sua intensidade de influência. Isso permite personalizar o comportamento de modelos de difusão sem precisar retreiná-los do zero.
 
 ## Entradas

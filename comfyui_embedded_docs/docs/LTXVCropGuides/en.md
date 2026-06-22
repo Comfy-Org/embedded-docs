@@ -1,3 +1,5 @@
+# LTXVCropGuides
+
 The LTXVCropGuides node processes conditioning and latent inputs for video generation by removing keyframe information and adjusting the latent dimensions. It crops the latent image and noise mask to exclude keyframe sections while clearing keyframe indices from both positive and negative conditioning inputs. This prepares the data for video generation workflows that don't require keyframe guidance.
 
 ## Inputs

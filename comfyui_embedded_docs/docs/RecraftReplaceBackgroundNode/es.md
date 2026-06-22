@@ -1,3 +1,5 @@
+# Recraft Reemplazar Fondo
+
 Reemplazar el fondo de una imagen, basado en el mensaje proporcionado. Este nodo utiliza la API de Recraft para generar nuevos fondos para tus imágenes según tu descripción textual, permitiéndote transformar completamente el fondo mientras mantienes intacto el sujeto principal.
 
 ## Entradas

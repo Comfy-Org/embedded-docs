@@ -1,3 +1,5 @@
+# PikaScenesV2_2
+
 PikaScenes v2.2 düğümü, birden fazla görüntüyü birleştirerek tüm giriş görüntülerindeki nesneleri içeren bir video oluşturur. En fazla beş farklı görüntüyü bileşen olarak yükleyebilir ve bunları sorunsuz bir şekilde harmanlayan yüksek kaliteli bir video oluşturabilirsiniz.
 
 ## Girişler

@@ -1,4 +1,4 @@
-# TripoSplat 條件設定
+# TripoSplat 條件編碼
 
 此節點使用 DINOv3 和 Flux2 VAE 對輸入影像進行編碼，為 TripoSplat 模型建立正向和負向條件設定資料。同時也會生成一個固定大小的雜訊目標（潛在空間加上相機資料），作為 KSampler 的起始點。
 

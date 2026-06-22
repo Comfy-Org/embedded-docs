@@ -1,3 +1,5 @@
+# OptimalAdımlarZamanlayıcı
+
 OptimalStepsScheduler düğümü, seçilen model türüne ve adım yapılandırmasına bağlı olarak difüzyon modelleri için gürültü planı sigma değerlerini hesaplar. Toplam adım sayısını `denoise` parametresine göre ayarlar ve istenen adım sayısına uyacak şekilde gürültü seviyelerini enterpole eder. Düğüm, difüzyon örnekleme sürecinde kullanılan gürültü seviyelerini belirleyen bir sigma değerleri dizisi döndürür.
 
 ## Girişler

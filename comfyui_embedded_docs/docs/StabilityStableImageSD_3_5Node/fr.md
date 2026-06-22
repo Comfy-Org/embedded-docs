@@ -1,3 +1,5 @@
+# Stability AI Stable Diffusion 3.5 Image
+
 Ce nœud génère des images de manière synchrone en utilisant le modèle Stable Diffusion 3.5 de Stability AI. Il crée des images à partir de descriptions textuelles et peut également modifier des images existantes lorsqu'elles sont fournies en entrée. Le nœud prend en charge différents ratios d'aspect et préréglages de style pour personnaliser le résultat.
 
 ## Entrées

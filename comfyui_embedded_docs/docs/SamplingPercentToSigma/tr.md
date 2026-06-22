@@ -1,3 +1,5 @@
+# ÖrneklemeYüzdesiToSigma
+
 ## Genel Bakış SamplingPercentToSigma düğümü, modelin örnekleme parametrelerini kullanarak bir örnekleme yüzde değerini karşılık gelen sigma değerine dönüştürür. 0.0 ile 1.0 arasında bir yüzde değeri alır ve bunu modelin gürültü planındaki uygun sigma değerine eşler; sınırlarda hesaplanan sigma veya gerçek maksimum/minimum sigma değerlerini döndürme seçenekleri sunar.
 
 ## Girdiler

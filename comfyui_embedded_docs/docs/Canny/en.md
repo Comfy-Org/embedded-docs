@@ -1,3 +1,5 @@
+# Detect Edges (Canny)
+
 Extract all edge lines from photos, like using a pen to outline a photo, drawing out the contours and detail boundaries of objects.
 
 ## Working Principle

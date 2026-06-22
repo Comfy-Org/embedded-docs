@@ -1,4 +1,4 @@
-# Bria Reemplazar Fondo de Video
+# Bria Video Reemplazar Fondo
 
 Este nodo reemplaza el fondo de un video con una imagen o video proporcionado mediante la API de Bria. La salida conserva la resolución y la velocidad de fotogramas del video en primer plano; un fondo con una relación de aspecto diferente se estira para ajustarse, por lo que usar relaciones de aspecto coincidentes produce resultados sin distorsión.
 

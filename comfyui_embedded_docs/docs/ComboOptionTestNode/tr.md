@@ -1,3 +1,5 @@
+# ComboOptionTestNode
+
 ## Genel Bakış
 
 ComboOptionTestNode, birleşik giriş kutusu seçimlerini test etmek ve iletmek için tasarlanmış bir mantık düğümüdür. Her biri önceden tanımlanmış seçenekler içeren iki birleşik giriş kutusu alır ve seçilen değerleri herhangi bir değişiklik yapmadan doğrudan çıktı olarak verir.

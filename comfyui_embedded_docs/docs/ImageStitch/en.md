@@ -1,3 +1,5 @@
+# Stitch Images
+
 This node allows you to stitch two images together in a specified direction (up, down, left, right), with support for size matching and spacing between images.
 
 ## Inputs

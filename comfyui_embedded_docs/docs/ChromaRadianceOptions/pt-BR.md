@@ -1,3 +1,5 @@
+# ChromaRadianceOptions
+
 O nó ChromaRadianceOptions permite configurar opções avançadas para o modelo Chroma Radiance. Ele encapsula um modelo existente e aplica opções específicas durante o processo de remoção de ruído com base nos valores sigma, permitindo um controle refinado sobre o tamanho do tile NeRF e outros parâmetros relacionados à radiância.
 
 ## Entradas

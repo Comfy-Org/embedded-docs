@@ -1,3 +1,5 @@
+# EmptyLTXVLatentVideo
+
 El nodo EmptyLTXVLatentVideo crea un tensor latente vacío para procesamiento de video. Genera un punto de partida en blanco con dimensiones específicas que puede utilizarse como entrada para flujos de trabajo de generación de video. El nodo produce una representación latente rellena de ceros con el ancho, alto, duración y tamaño de lote configurados.
 
 ## Entradas

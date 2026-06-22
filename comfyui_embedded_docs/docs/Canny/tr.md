@@ -1,3 +1,5 @@
+# Canny
+
 Fotoğraflardaki tüm kenar çizgilerini ayıklayın, tıpkı bir fotoğrafın üzerinden kalemle geçerek nesnelerin konturlarını ve detay sınırlarını çıkarmak gibi.
 
 ## Çalışma Prensibi

@@ -1,3 +1,5 @@
+# Salvar GLB
+
 O nó SaveGLB salva dados de malha 3D ou arquivos 3D no diretório de saída. Ele aceita dados de malha ou vários formatos de arquivo 3D (GLB, GLTF, OBJ, FBX, STL, USDZ) e os exporta com um prefixo de nome de arquivo especificado. Ao salvar dados de malha, ele pode processar múltiplas malhas e adiciona automaticamente metadados do fluxo de trabalho aos arquivos quando os metadados estão ativados.
 
 ## Entradas

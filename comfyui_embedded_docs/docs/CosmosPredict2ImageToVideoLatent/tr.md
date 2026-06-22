@@ -1,3 +1,5 @@
+# CosmosPredict2ImageToVideoLatent
+
 CosmosPredict2ImageToVideoLatent düğümü, video oluşturma için görüntülerden video gizil (latent) temsilleri oluşturur. Belirtilen boyut ve süreye sahip video dizileri oluşturmak için boş bir video gizili oluşturabilir veya başlangıç ve bitiş görüntülerini dahil edebilir. Düğüm, görüntüleri video işleme için uygun gizil uzay formatına kodlama işlemini gerçekleştirir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# ModelBloklarınıBirleştir
+
 ModelMergeBlocks, gelişmiş model birleştirme işlemleri için tasarlanmış olup, modellerin farklı bölümleri için özelleştirilebilir karışım oranlarıyla iki modelin entegrasyonuna olanak tanır. Bu düğüm, belirtilen parametrelere göre iki kaynak modelden bileşenleri seçerek birleştirip hibrit modeller oluşturmayı kolaylaştırır.
 
 ## Girişler

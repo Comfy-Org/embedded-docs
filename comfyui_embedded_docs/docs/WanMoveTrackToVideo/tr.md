@@ -1,3 +1,5 @@
+# WanMoveTrackToVideo
+
 WanMoveTrackToVideo düğümü, video oluşturma için koşullandırma ve gizli uzay verilerini hazırlar ve isteğe bağlı hareket takip bilgilerini entegre eder. Bir başlangıç görüntü dizisini gizli bir temsile kodlar ve oluşturulan videodaki hareketi yönlendirmek için nesne takiplerinden gelen konumsal verileri harmanlayabilir. Düğüm, değiştirilmiş pozitif ve negatif koşullandırmayı ve bir video modeli için hazır boş bir gizli tensörü çıktı olarak verir.
 
 ## Girişler

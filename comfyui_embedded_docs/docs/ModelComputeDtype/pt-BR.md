@@ -1,3 +1,5 @@
+# ModelComputeDtype
+
 O nó ModelComputeDtype altera o tipo de dado computacional (precisão) usado por um modelo durante o processamento. Ele cria uma cópia do modelo de entrada e aplica a configuração de precisão selecionada, o que pode ajudar a otimizar o uso de memória e o desempenho dependendo do seu hardware. Isso é útil para depuração e teste de diferentes configurações de precisão.
 
 ## Entradas

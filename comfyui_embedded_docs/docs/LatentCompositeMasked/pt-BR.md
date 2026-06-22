@@ -1,3 +1,5 @@
+# LatentCompositeMasked
+
 O nó LatentCompositeMasked foi projetado para combinar duas representações latentes em coordenadas específicas, utilizando opcionalmente uma máscara para uma composição mais controlada. Este nó permite a criação de imagens latentes complexas sobrepondo partes de uma imagem sobre outra, com a capacidade de redimensionar a imagem de origem para um encaixe perfeito.
 
 ## Entradas

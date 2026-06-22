@@ -1,3 +1,5 @@
+# Reve Création d’Image
+
 Le nœud Reve Image Create génère des images à partir de descriptions textuelles en utilisant le modèle Reve AI. Il envoie une invite textuelle à l'API Reve et retourne l'image générée. Vous pouvez contrôler le rapport hauteur/largeur de l'image et appliquer des effets de post-traitement optionnels comme la mise à l'échelle.
 
 ## Entrées

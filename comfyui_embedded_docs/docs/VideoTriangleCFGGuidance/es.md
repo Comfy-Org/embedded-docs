@@ -1,3 +1,5 @@
+# OrientaciónTriangularCFGVideo
+
 El nodo `VideoTriangleCFGGuidance` aplica un patrón de escala de guía sin clasificador triangular a modelos de video. Modifica la escala de condicionamiento a lo largo del tiempo utilizando una función de onda triangular que oscila entre el valor mínimo de CFG y la escala de condicionamiento original. Esto crea un patrón de guía dinámico que puede ayudar a mejorar la consistencia y calidad de la generación de video.
 
 ## Entradas

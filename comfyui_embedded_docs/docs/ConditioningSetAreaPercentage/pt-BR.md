@@ -1,3 +1,5 @@
+# Condicionamento (Definir Área com Percentual)
+
 O nó **ConditioningSetAreaPercentage** é especializado em ajustar a área de influência de elementos de condicionamento com base em valores percentuais. Ele permite especificar as dimensões e a posição da área como porcentagens do tamanho total da imagem, juntamente com um parâmetro de intensidade para modular a força do efeito de condicionamento.
 
 ## Entradas

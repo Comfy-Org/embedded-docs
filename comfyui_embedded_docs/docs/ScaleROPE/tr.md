@@ -1,3 +1,5 @@
+# ROPEÖlçekle
+
 ScaleROPE düğümü, bir modelin Döner Konum Gömme (ROPE) parametrelerini X, Y ve T (zaman) bileşenlerine ayrı ayrı ölçekleme ve kaydırma faktörleri uygulayarak değiştirmenizi sağlar. Bu, modelin konumsal kodlama davranışını ayarlamak için kullanılan gelişmiş, deneysel bir düğümdür.
 
 ## Girişler

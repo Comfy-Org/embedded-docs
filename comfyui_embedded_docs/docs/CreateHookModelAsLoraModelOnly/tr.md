@@ -1,3 +1,5 @@
+# Modeli LoRA Olarak Kanca Oluştur (Sadece Model)
+
 Bu düğüm, bir sinir ağının yalnızca model bileşenini değiştirmek için bir LoRA (Düşük Dereceli Uyarlama) modeli uygulayan bir kanca oluşturur. CLIP bileşenini değiştirmeden, belirtilen güçte bir kontrol noktası dosyasını yükler ve modele uygular. Bu düğüm, temel CreateHookModelAsLora sınıfının işlevselliğini genişleten deneysel bir düğümdür.
 
 ## Girişler

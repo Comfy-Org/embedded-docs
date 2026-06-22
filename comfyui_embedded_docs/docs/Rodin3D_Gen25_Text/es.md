@@ -1,3 +1,5 @@
+# Rodin 3D Gen-2.5 - Texto a 3D
+
 ## Descripción general
 
 Genera un modelo 3D a partir de una descripción textual utilizando la API de Rodin Gen-2.5. Puedes elegir entre diferentes modos de calidad (Rápido, Normal o Ultra-Alto) para equilibrar la velocidad de generación y la calidad del resultado.

@@ -1,3 +1,5 @@
+# Runway Première-Dernière image vers vidéo
+
 Le nœud Runway Première-Dernière Image vers Vidéo génère des vidéos en téléchargeant des images clés de début et de fin, accompagnées d’une invite textuelle. Il crée des transitions fluides entre les images de début et de fin fournies, en utilisant le modèle Gen-3 de Runway. Cette fonctionnalité est particulièrement utile pour les transitions complexes où l’image de fin diffère considérablement de l’image de début.
 
 ## Entrées

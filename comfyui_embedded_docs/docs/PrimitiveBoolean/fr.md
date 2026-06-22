@@ -1,3 +1,5 @@
+# Booléen
+
 Le nœud Booléen offre un moyen simple de transmettre des valeurs booléennes (vrai/faux) dans votre flux de travail. Il prend une valeur booléenne en entrée et renvoie la même valeur inchangée, vous permettant de contrôler les paramètres booléens d'autres nœuds.
 
 ## Entrées

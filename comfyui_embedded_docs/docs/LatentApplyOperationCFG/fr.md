@@ -1,3 +1,5 @@
+# LatentApplyOperationCFG
+
 Le nœud **LatentApplyOperationCFG** applique une opération latente pour modifier le processus de guidage du conditionnement dans un modèle. Il fonctionne en interceptant les sorties de conditionnement pendant le processus d'échantillonnage par guidage sans classifieur (CFG) et en appliquant l'opération spécifiée aux représentations latentes avant qu'elles ne soient utilisées pour la génération.
 
 ## Entrées

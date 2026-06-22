@@ -1,3 +1,5 @@
+# CLIPMergeSubtract
+
 O nó CLIPMergeSubtract realiza a fusão de modelos subtraindo os pesos de um modelo CLIP de outro. Ele cria um novo modelo CLIP clonando o primeiro modelo e, em seguida, subtraindo os patches-chave do segundo modelo, com um multiplicador ajustável para controlar a intensidade da subtração. Isso permite uma combinação refinada de modelos, removendo características específicas do modelo base.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Kling Omni Quadro Inicial-Final para Vídeo (Pro)
+
 Este nó utiliza o modelo mais recente da Kling AI para gerar um vídeo a partir de um quadro inicial, um quadro final opcional ou imagens de referência. Ele pode criar um único vídeo ou um storyboard multi-cena com prompts e durações individuais para cada segmento. O nó processa essas entradas para produzir um vídeo com duração e resolução especificadas, com geração opcional de áudio.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# KSampler (Avançado)
+
 O nó KSamplerAdvanced foi projetado para aprimorar o processo de amostragem, oferecendo configurações e técnicas avançadas. Seu objetivo é fornecer opções mais sofisticadas para gerar amostras a partir de um modelo, melhorando as funcionalidades básicas do KSampler.
 
 ## Entradas

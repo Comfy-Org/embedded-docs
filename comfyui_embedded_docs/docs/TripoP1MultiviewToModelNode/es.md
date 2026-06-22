@@ -1,4 +1,4 @@
-# Descripción General
+# Tripo P1: Multivista a Modelo
 
 Este nodo genera un modelo 3D a partir de 2 a 4 imágenes de referencia de un objeto o personaje. Proporcionas imágenes desde diferentes ángulos (frontal, izquierdo, trasero, derecho), y el nodo crea una malla 3D en formato GLB. La vista frontal es obligatoria, y puedes agregar opcionalmente cualquier combinación de las otras tres vistas para obtener mejores resultados.
 

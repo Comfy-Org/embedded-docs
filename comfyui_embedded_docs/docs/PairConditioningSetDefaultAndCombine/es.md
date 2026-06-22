@@ -1,3 +1,5 @@
+# PairConditioningSetDefaultAndCombine
+
 El nodo **PairConditioningSetDefaultAndCombine** establece valores de condicionamiento predeterminados y los combina con los datos de condicionamiento de entrada. Toma entradas de condicionamiento positivo y negativo junto con sus contrapartes predeterminadas, luego las procesa a través del sistema de hooks de ComfyUI para producir salidas de condicionamiento finales que incorporan los valores predeterminados.
 
 ## Entradas

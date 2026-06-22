@@ -1,3 +1,5 @@
+# Load Latent Upscale Model
+
 The LatentUpscaleModelLoader node loads a specialized model designed for upscaling latent representations. It reads a model file from the system's designated folder and automatically detects its type (720p, 1080p, or other) to instantiate and configure the correct internal model architecture. The loaded model is then ready to be used by other nodes for latent space super-resolution tasks.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Nano Banana (Google Gemini Image)
+
 The GeminiImage node generates text and image responses from Google's Gemini AI models. It allows you to provide multimodal inputs including text prompts, images, and files to create coherent text and image outputs. The node handles all API communication and response parsing with the latest Gemini models.
 
 ## Inputs

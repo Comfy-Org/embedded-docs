@@ -1,3 +1,5 @@
+# Luma Concepts
+
 Este documento fue generado por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaConceptsNode/en.md)
 
 Almacena uno o más conceptos de cámara para usar con los nodos Luma Texto a Video y Luma Imagen a Video. Este nodo te permite seleccionar hasta cuatro conceptos de cámara y, opcionalmente, combinarlos con cadenas de conceptos existentes.

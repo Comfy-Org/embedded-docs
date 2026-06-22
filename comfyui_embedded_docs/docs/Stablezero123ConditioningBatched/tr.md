@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 Bu düğüm, koşullandırma bilgilerini StableZero123 modeline özel olarak toplu bir şekilde işlemek üzere tasarlanmıştır. Toplu işlemenin kritik olduğu senaryolarda iş akışını optimize ederek, birden fazla koşullandırma veri kümesini aynı anda verimli bir şekilde işlemeye odaklanır.
 
 ## Girişler

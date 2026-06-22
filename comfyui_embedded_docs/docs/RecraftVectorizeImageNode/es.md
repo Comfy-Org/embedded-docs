@@ -1,3 +1,5 @@
+# Recraft Vectorizar Imagen
+
 Genera SVG de forma síncrona a partir de una imagen de entrada. Este nodo convierte imágenes rasterizadas a formato de gráficos vectoriales procesando cada imagen del lote de entrada y combinando los resultados en una única salida SVG.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Unión de Imágenes
+
 Este nodo te permite unir dos imágenes en una dirección especificada (arriba, abajo, izquierda, derecha), con soporte para ajuste de tamaño y espaciado entre imágenes.
 
 ## Entradas

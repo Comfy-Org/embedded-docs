@@ -1,3 +1,5 @@
+# Sélectionner le périphérique VAE
+
 ## Présentation
 
 Ce nœud vous permet de sélectionner manuellement sur quel périphérique GPU le modèle VAE doit être placé. Par défaut, le VAE est placé sur le périphérique attribué par le chargeur de modèle, mais vous pouvez le fixer sur un GPU spécifique (par exemple, `gpu:0`, `gpu:1`). Si le périphérique sélectionné n'est pas disponible sur votre machine, le nœud transmettra le VAE sans modification et enregistrera un message au lieu d'échouer.

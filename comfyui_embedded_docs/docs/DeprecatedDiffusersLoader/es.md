@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 El nodo DiffusersLoader está diseñado para cargar modelos de la biblioteca diffusers, manejando específicamente la carga de modelos UNet, CLIP y VAE basándose en las rutas de modelo proporcionadas. Facilita la integración de estos modelos en el marco de ComfyUI, permitiendo funcionalidades avanzadas como generación de texto a imagen, manipulación de imágenes y más.
 
 ## Entradas

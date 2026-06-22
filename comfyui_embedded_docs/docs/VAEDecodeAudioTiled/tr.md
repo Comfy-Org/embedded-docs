@@ -1,3 +1,5 @@
+# VAE Sesini Çöz (Döşemeli)
+
 Bu düğüm, sıkıştırılmış bir ses temsilini (latent örnekler) bir Değişken Otomatik Kodlayıcı (VAE) kullanarak tekrar ses dalga formuna dönüştürür. Verileri, bellek kullanımını yönetmek için daha küçük, örtüşen bölümler (tile'lar) halinde işler; bu da onu daha uzun ses dizilerini işlemek için uygun hale getirir.
 
 ## Girişler

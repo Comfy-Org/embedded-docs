@@ -1,3 +1,5 @@
+# DefinirTipoUnionControlNet
+
 O nó SetUnionControlNetType permite especificar o tipo de rede de controle a ser usada para condicionamento. Ele recebe uma rede de controle existente e define seu tipo de controle com base na sua seleção, criando uma cópia modificada da rede de controle com a configuração de tipo especificada.
 
 ## Entradas

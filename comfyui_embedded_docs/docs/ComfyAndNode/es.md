@@ -1,4 +1,4 @@
-# Descripción General
+# Y
 
 El nodo Y realiza una operación lógica AND sobre un conjunto de valores de entrada. Devuelve `true` solo si todos los valores proporcionados se consideran verdaderos según las reglas de veracidad de Python. Este nodo es útil para verificar que se cumplan múltiples condiciones antes de continuar.
 

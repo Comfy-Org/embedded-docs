@@ -1,3 +1,5 @@
+# SamplerEulerCFG++
+
 El nodo SamplerEulerCFGpp proporciona un método de muestreo Euler CFG++ para generar resultados. Este nodo ofrece dos versiones diferentes de implementación del muestreador Euler CFG++ que pueden seleccionarse según la preferencia del usuario.
 
 ## Entradas

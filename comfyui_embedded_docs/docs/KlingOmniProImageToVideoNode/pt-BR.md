@@ -1,3 +1,5 @@
+# Kling Omni Imagem para Vídeo (Pro)
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProImageToVideoNode/en.md)
 
 Este nó utiliza o modelo Kling AI para gerar um vídeo com base em um prompt de texto e até sete imagens de referência. Ele permite controlar a proporção de aspecto, duração, resolução do vídeo e, opcionalmente, usar storyboards ou gerar áudio. O nó envia a solicitação para uma API externa e retorna o vídeo gerado.

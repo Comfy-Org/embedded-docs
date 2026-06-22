@@ -1,4 +1,4 @@
-# Nó Flux Erase
+# Flux Apagar Imagem
 
 Remove o objeto mascarado de uma imagem e reconstrói o fundo. Pinte a máscara sobre o que deseja apagar, e o nó preenche a área com conteúdo de fundo plausível.
 

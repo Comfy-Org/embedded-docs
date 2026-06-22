@@ -1,3 +1,5 @@
+# Establecer Rango de Pasos de Tiempo de Acondicionamiento
+
 Este nodo está diseñado para ajustar el aspecto temporal del condicionamiento estableciendo un rango específico de pasos de tiempo. Permite un control preciso sobre los puntos de inicio y finalización del proceso de condicionamiento, posibilitando una generación más dirigida y eficiente.
 
 ## Entradas

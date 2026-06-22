@@ -1,3 +1,5 @@
+# Gemini Girdi Dosyaları
+
 Gemini API ile kullanılmak üzere girdi dosyalarını yükler ve biçimlendirir. Bu düğüm, kullanıcıların Gemini modeli için girdi bağlamı olarak metin (.txt) ve PDF (.pdf) dosyalarını eklemesine olanak tanır. Dosyalar, API tarafından gereken uygun biçime dönüştürülür ve tek bir istekte birden fazla dosyayı bir araya getirmek için zincirleme olarak kullanılabilir.
 
 ## Girdiler

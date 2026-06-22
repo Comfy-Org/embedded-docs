@@ -1,4 +1,4 @@
-# SAM3 Detect 노드
+# SAM3 감지
 
 ## 개요
 

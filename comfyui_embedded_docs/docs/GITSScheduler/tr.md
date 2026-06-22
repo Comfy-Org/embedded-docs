@@ -1,3 +1,5 @@
+# GITSZamanlayıcı
+
 GITSScheduler düğümü, GITS (Generative Iterative Time Steps - Üretken Yinelemeli Zaman Adımları) örnekleme yöntemi için gürültü planı sigma değerleri üretir. Bir katsayı parametresi ve adım sayısına bağlı olarak sigma değerlerini hesaplar; ayrıca toplam kullanılan adım sayısını azaltabilen isteğe bağlı bir gürültü giderme faktörü içerir. Düğüm, nihai sigma planını oluşturmak için önceden tanımlanmış gürültü seviyeleri ve enterpolasyon kullanır.
 
 ## Girişler

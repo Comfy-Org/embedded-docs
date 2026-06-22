@@ -1,3 +1,5 @@
+# ByteDanceImageEditNode
+
 Le nœud ByteDance Image Edit vous permet de modifier des images à l'aide des modèles d'IA de ByteDance via une API. Vous fournissez une image d'entrée et une instruction textuelle décrivant les modifications souhaitées, puis le nœud traite l'image conformément à vos instructions. Le nœud gère automatiquement la communication avec l'API et renvoie l'image modifiée.
 
 ## Entrées

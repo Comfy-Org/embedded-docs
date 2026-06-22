@@ -1,3 +1,5 @@
+# Recraft Stili - Logo Raster
+
 Bu düğüm, logo görselleri oluşturmak için logo raster stilini ve isteğe bağlı bir alt stili seçer. Raster tabanlı görsel işlemlerle logo tasarımları oluşturma konusunda uzmanlaşmıştır.
 
 ## Girişler

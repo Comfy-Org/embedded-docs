@@ -1,3 +1,5 @@
+# 套用 ControlNet (SD3)
+
 ## 概述
 
 此節點將 ControlNet 引導應用於 Stable Diffusion 3 的條件設定。它接收正向與負向條件設定輸入，以及 ControlNet 模型和影像，接著以可調整的強度與時間參數來應用控制引導，以影響生成過程。

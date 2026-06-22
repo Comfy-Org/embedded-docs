@@ -1,4 +1,4 @@
-# Nokta Bulutunu Önizle
+# Nokta Bulutu Önizleme
 
 Nokta Bulutunu Önizle düğümü, ComfyUI arayüzü içinde bir 3B nokta bulutu dosyasını görüntülemenizi sağlar. Nokta bulutunu geçici bir dosyaya kaydeder ve bir 3B önizleme penceresinde görüntüler; model verilerini ve görüntü alanı ayarlarını daha sonraki işlemler için iletir.
 

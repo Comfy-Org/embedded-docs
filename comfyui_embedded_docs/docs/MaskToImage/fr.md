@@ -1,3 +1,5 @@
+# Convertir le masque en image
+
 Le nœud `MaskToImage` est conçu pour convertir un masque au format image. Cette transformation permet la visualisation et le traitement ultérieur des masques sous forme d'images, facilitant ainsi le pont entre les opérations basées sur les masques et les applications basées sur les images.
 
 ## Entrées

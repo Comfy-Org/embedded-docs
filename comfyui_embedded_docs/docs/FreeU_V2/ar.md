@@ -1,3 +1,5 @@
+# FreeU_V2
+
 هذه ترجمة الوثيقة التقنية لعقدة FreeU_V2 في ComfyUI إلى العربية، مع الالتزام بقواعد الترجمة المحددة:
 
 تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU_V2/en.md)

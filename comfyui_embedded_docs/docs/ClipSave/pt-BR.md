@@ -1,3 +1,5 @@
+# CLIPSave
+
 O nó `CLIPSave` salva um modelo de codificador de texto CLIP no disco no formato SafeTensors. Ele é projetado para fluxos de trabalho avançados de mesclagem de modelos e separa automaticamente o modelo CLIP em suas partes componentes (como CLIP-L, CLIP-G ou T5XXL) com base na estrutura interna do modelo, salvando cada componente como um arquivo separado.
 
 ## Entradas

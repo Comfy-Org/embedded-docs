@@ -1,3 +1,5 @@
+# Perp-Neg (OBSOLETO por PerpNegGuider)
+
 O nó PerpNeg aplica orientação negativa perpendicular ao processo de amostragem de um modelo. Este nó modifica a função de configuração do modelo para ajustar as previsões de ruído usando condicionamento negativo e fatores de escala. Ele foi descontinuado e substituído pelo nó PerpNegGuider para funcionalidade aprimorada.
 
 ## Entradas

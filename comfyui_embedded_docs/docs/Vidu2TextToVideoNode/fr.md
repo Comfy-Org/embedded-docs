@@ -1,3 +1,5 @@
+# Génération vidéo Vidu2 à partir d'un texte
+
 Voici la traduction en français de la documentation du nœud Vidu2 Text-to-Video :
 
 Le nœud de génération vidéo Vidu2 à partir de texte crée une vidéo à partir d'une description textuelle. Il se connecte à une API externe pour générer un contenu vidéo basé sur votre invite, vous permettant de contrôler la durée, le style visuel et le format de la vidéo.

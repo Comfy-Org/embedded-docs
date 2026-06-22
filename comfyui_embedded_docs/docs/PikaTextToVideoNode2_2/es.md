@@ -1,3 +1,5 @@
+# PikaTextToVideoNode2_2
+
 El nodo Pika Text2Video v2.2 envía un mensaje de texto a la API de Pika versión 2.2 para generar un video. Convierte tu descripción textual en un video utilizando el servicio de generación de video con IA de Pika. El nodo permite personalizar varios aspectos del proceso de generación de video, incluyendo la relación de aspecto, la duración y la resolución.
 
 ## Entradas

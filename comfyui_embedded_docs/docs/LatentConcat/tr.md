@@ -1,3 +1,5 @@
+# Gizli Birleştirme
+
 LatentConcat düğümü, iki gizli (latent) örneği seçilen bir boyut boyunca birleştirerek bir araya getirir. İki gizli girdi alır ve bunları x, y veya t ekseni boyunca birleştirir; hangi örneğin önce geleceğini kontrol etme seçeneği sunar. Düğüm, birleştirme işlemini gerçekleştirmeden önce ikinci girdinin grup boyutunu (batch size) birinciyle eşleşecek şekilde otomatik olarak ayarlar.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Kling 3.0 Première-Dernière-Image en Vidéo
+
 Ce nœud utilise le modèle Kling 3.0 pour générer une vidéo. Il crée la vidéo à partir d'une invite textuelle, d'une durée spécifiée et de deux images fournies : une image de début et une image de fin. Le nœud peut également générer un fichier audio d'accompagnement pour la vidéo.
 
 ## Entrées

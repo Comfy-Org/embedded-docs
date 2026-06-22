@@ -1,3 +1,5 @@
+# Truncar Texto
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/en.md)
 
 Este nó encurta um texto cortando-o em um comprimento máximo especificado. Ele recebe qualquer texto de entrada e retorna apenas a primeira parte, até o número de caracteres que você definir. É uma forma simples de garantir que o texto não ultrapasse um determinado tamanho.

@@ -1,3 +1,5 @@
+# 模型取樣 Stable Cascade
+
 ## 概述
 
 ModelSamplingStableCascade 節點透過調整帶有偏移值的取樣參數，將穩定級聯取樣應用於模型。它會建立一個具有自訂取樣配置的輸入模型修改版本，以實現穩定級聯生成。

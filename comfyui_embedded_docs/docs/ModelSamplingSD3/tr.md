@@ -1,3 +1,5 @@
+# ModelÖrneklemeSD3
+
 ModelSamplingSD3 düğümü, bir modele Stable Diffusion 3 örnekleme parametrelerini uygular. Kaydırma parametresini ayarlayarak modelin örnekleme davranışını değiştirir; bu parametre, örnekleme dağılım özelliklerini kontrol eder. Düğüm, belirtilen örnekleme yapılandırması uygulanmış giriş modelinin değiştirilmiş bir kopyasını oluşturur.
 
 ## Girişler

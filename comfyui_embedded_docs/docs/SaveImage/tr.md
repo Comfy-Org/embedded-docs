@@ -1,3 +1,5 @@
+# Görüntüyü Kaydet
+
 SaveImage düğümü, aldığı görselleri `ComfyUI/output` dizininize kaydeder. Her görseli PNG dosyası olarak kaydeder ve prompt gibi iş akışı meta verilerini, ileride başvurmak üzere kaydedilen dosyaya gömmektedir.
 
 ## Girişler

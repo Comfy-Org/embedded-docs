@@ -1,3 +1,5 @@
+# Stability AI Metin'den Ses'e
+
 Metin açıklamalarından yüksek kaliteli müzik ve ses efektleri üretir. Bu düğüm, metin istemlerinize dayalı olarak ses içeriği oluşturmak için Stability AI'nın ses üretim teknolojisini kullanır.
 
 ## Girişler

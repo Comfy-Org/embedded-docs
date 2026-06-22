@@ -1,3 +1,5 @@
+# VOIDWarpedNoiseSource
+
 ## نمای کلی
 
 این گره یک LATENT (مانند خروجی گره VOIDWarpedNoise) را به یک منبع NOISE تبدیل می‌کند. این امکان را فراهم می‌کند تا از نویز تغییرشکل‌یافته با گره SamplerCustomAdvanced برای تولید تصویر کنترل‌شده‌تر استفاده کنید.

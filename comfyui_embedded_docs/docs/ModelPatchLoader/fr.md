@@ -1,3 +1,5 @@
+# ModelPatchLoader
+
 Le nœud ModelPatchLoader charge des correctifs de modèle spécialisés depuis le dossier model_patches. Il détecte automatiquement le type de fichier de correctif et charge l'architecture de modèle appropriée, puis l'encapsule dans un ModelPatcher pour une utilisation dans le workflow. Ce nœud prend en charge différents types de correctifs, notamment les blocs controlnet, les modèles d'intégration de caractéristiques et d'autres architectures spécialisées.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Nano Banana （Google Gemini 图像）
+
 GeminiImage 节点通过 Google 的 Gemini AI 模型生成文本和图像响应。它允许您提供多模态输入，包括文本提示、图像和文件，以生成连贯的文本和图像输出。该节点处理与最新 Gemini 模型的所有 API 通信和响应解析。
 
 ## 输入

@@ -1,3 +1,5 @@
+# Rodin 3D Gerar - Geração de Esboço
+
 Este nó gera ativos 3D usando a API Rodin. Ele recebe imagens de entrada e as converte em modelos 3D por meio de um serviço externo. O nó gerencia todo o processo, desde a criação da tarefa até o download dos arquivos finais do modelo 3D.
 
 ## Entradas

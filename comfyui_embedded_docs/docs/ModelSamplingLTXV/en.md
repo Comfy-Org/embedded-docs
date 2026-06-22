@@ -1,3 +1,5 @@
+# ModelSamplingLTXV
+
 The ModelSamplingLTXV node applies advanced sampling parameters to a model based on token count. It calculates a shift value using a linear interpolation between base and maximum shift values, with the calculation depending on the number of tokens in the input latent. The node then creates a specialized model sampling configuration and applies it to the input model.
 
 ## Inputs

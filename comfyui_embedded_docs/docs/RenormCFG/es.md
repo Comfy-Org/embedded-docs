@@ -1,3 +1,5 @@
+# RenormCFG
+
 El nodo RenormCFG modifica el proceso de guía libre de clasificador (CFG) en modelos de difusión aplicando escalado condicional y normalización. Ajusta el proceso de eliminación de ruido según umbrales de paso temporal especificados y factores de renormalización para controlar la influencia de las predicciones condicionales frente a las incondicionales durante la generación de imágenes.
 
 ## Entradas

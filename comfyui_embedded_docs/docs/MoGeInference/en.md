@@ -1,3 +1,5 @@
+# Run MoGe Inference
+
 ## Overview
 
 Run MoGe on a single image to estimate depth and geometry. This node processes an input image through the MoGe model to generate a 3D point cloud, depth map, camera intrinsics, a mask, and surface normals.

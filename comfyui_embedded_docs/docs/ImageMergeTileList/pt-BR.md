@@ -1,3 +1,5 @@
+# Mesclar Lista de Blocos em Imagem
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageMergeTileList/en.md)
 
 Este nó recebe uma lista de blocos de imagem e os mescla de volta em uma única imagem maior. Ele foi projetado para reconstruir uma imagem que foi previamente dividida em uma grade de blocos sobrepostos, usando uma técnica de mesclagem ponderada para criar um resultado final contínuo e sem emendas.

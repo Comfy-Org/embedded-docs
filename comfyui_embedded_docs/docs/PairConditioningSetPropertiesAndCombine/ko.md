@@ -1,4 +1,4 @@
-# PairConditioningSetPropertiesAndCombine 노드
+# 조건 쌍 (속성 설정 및 결합)
 
 PairConditioningSetPropertiesAndCombine 노드는 기존의 긍정 및 부정 조건화 입력에 새로운 조건화 데이터를 적용하여 조건화 쌍을 수정하고 결합합니다. 적용되는 조건화의 강도를 조정하고 조건화 영역이 설정되는 방식을 제어할 수 있습니다. 이 노드는 여러 조건화 소스를 함께 혼합해야 하는 고급 조건화 조작 워크플로우에서 특히 유용합니다.
 

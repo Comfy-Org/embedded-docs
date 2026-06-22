@@ -1,3 +1,5 @@
+# EpsilonScaling
+
 Implémente la méthode d'échelle epsilon (Epsilon Scaling) issue de l'article de recherche « Elucidating the Exposure Bias in Diffusion Models ». Cette méthode améliore la qualité des échantillons en ajustant l'échelle du bruit prédit pendant le processus d'échantillonnage. Elle utilise un programme uniforme pour atténuer le biais d'exposition dans les modèles de diffusion.
 
 ## Entrées

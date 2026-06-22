@@ -1,3 +1,5 @@
+# Stability AI Stable Image Ultra
+
 Génère des images de manière synchrone en fonction du prompt et de la résolution. Ce nœud crée des images à l'aide du modèle Stable Image Ultra de Stability AI, en traitant votre prompt textuel et en générant une image correspondante avec le rapport hauteur/largeur et le style spécifiés.
 
 ## Entrées

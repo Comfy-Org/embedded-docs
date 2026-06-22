@@ -1,3 +1,5 @@
+# Wan 2.7 Texto para Vídeo
+
 Este nó gera um vídeo a partir de uma descrição textual usando o modelo Wan 2.7. Ele envia sua solicitação para uma API externa, que processa o prompt e retorna um arquivo de vídeo. Opcionalmente, você pode fornecer um clipe de áudio para influenciar o movimento e o ritmo do vídeo.
 
 ## Entradas

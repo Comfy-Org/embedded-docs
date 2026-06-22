@@ -1,3 +1,5 @@
+# LTXV Sesli VAE Kodla
+
 LTXV Ses VAE Kodlama düğümü, bir ses girişini alır ve belirtilen bir Ses VAE modeli kullanarak daha küçük bir gizli (latent) temsile sıkıştırır. Bu işlem, ham ses verilerini işlem hattındaki diğer düğümlerin anlayıp işleyebileceği bir formata dönüştürdüğü için, gizli alan iş akışında ses oluşturma veya manipüle etme için gereklidir.
 
 ## Girişler

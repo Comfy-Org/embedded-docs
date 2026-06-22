@@ -1,3 +1,5 @@
+# MaskPreview
+
 El nodo MaskPreview guarda los datos de la máscara como una imagen de previsualización en el directorio de salida de ComfyUI, permitiéndote inspeccionar visualmente los datos de la máscara durante la ejecución del flujo de trabajo. Convierte la máscara de entrada a un formato adecuado para la visualización de imágenes y la guarda con un prefijo de nombre de archivo configurable.
 
 ## Entradas

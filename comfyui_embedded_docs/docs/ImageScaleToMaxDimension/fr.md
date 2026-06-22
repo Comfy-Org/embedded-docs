@@ -1,3 +1,5 @@
+# Redimensionner à la dimension maximale
+
 Le nœud ImageScaleToMaxDimension redimensionne les images pour qu'elles s'adaptent à une dimension maximale spécifiée tout en conservant le rapport hauteur/largeur d'origine. Il détermine si l'image est orientée portrait ou paysage, puis met à l'échelle la plus grande dimension pour qu'elle corresponde à la taille cible tout en ajustant proportionnellement la plus petite dimension. Le nœud prend en charge plusieurs méthodes de mise à l'échelle pour différents besoins de qualité et de performance.
 
 ## Entrées

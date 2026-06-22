@@ -1,3 +1,5 @@
+# Ponto Flutuante
+
 O nó PrimitiveFloat cria um valor numérico de ponto flutuante que pode ser utilizado em seu fluxo de trabalho. Ele recebe uma única entrada numérica e produz o mesmo valor como saída, permitindo que você defina e passe valores de ponto flutuante entre diferentes nós em seu pipeline do ComfyUI.
 
 ## Entradas

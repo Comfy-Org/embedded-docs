@@ -1,3 +1,5 @@
+# ModelBirleştirmeÇıkarma
+
 Bu düğüm, gelişmiş model birleştirme işlemleri için tasarlanmış olup, özellikle bir modelin parametrelerini belirtilen bir çarpan doğrultusunda diğer modelden çıkarmaya yarar. Bir modelin parametrelerinin diğeri üzerindeki etkisini ayarlayarak model davranışlarının özelleştirilmesini sağlar ve yeni, hibrit modellerin oluşturulmasını kolaylaştırır.
 
 ## Girişler

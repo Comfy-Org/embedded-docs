@@ -1,3 +1,5 @@
+# FusionModèleCosmosPredict2_2B
+
 Le nœud `ModelMergeCosmosPredict2_2B` fusionne deux modèles de diffusion en utilisant une approche par blocs avec un contrôle fin sur les différents composants du modèle. Il permet de mélanger des parties spécifiques de deux modèles en ajustant les poids d'interpolation pour les intégrateurs de position, les intégrateurs temporels, les blocs de transformeurs et les couches finales. Cela offre un contrôle précis sur la manière dont les différents composants architecturaux de chaque modèle contribuent au résultat fusionné final.
 
 ## Entrées

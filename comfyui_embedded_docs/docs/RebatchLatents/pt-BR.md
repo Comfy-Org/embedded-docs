@@ -1,3 +1,5 @@
+# Reagrupar Latents
+
 O nó RebatchLatents foi projetado para reorganizar um lote de representações latentes em uma nova configuração de lote, com base em um tamanho de lote especificado. Ele garante que as amostras latentes sejam agrupadas adequadamente, lidando com variações nas dimensões e tamanhos, para facilitar o processamento posterior ou a inferência do modelo.
 
 ## Entradas

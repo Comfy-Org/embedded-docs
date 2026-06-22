@@ -1,3 +1,5 @@
+# Imagens de Referência ByteDance para Vídeo
+
 O nó de Referência de Imagem ByteDance gera vídeos usando um prompt de texto e de uma a quatro imagens de referência. Ele envia as imagens e o prompt para um serviço de API externo que cria um vídeo correspondente à sua descrição, incorporando o estilo visual e o conteúdo das suas imagens de referência. O nó oferece vários controles para resolução de vídeo, proporção de tela, duração e outros parâmetros de geração.
 
 ## Entradas

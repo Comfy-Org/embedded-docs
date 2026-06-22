@@ -1,3 +1,5 @@
+# ByteDance Image en vidéo
+
 Le nœud ByteDance Image to Video génère des vidéos à l'aide des modèles ByteDance via une API, en se basant sur une image d'entrée et un texte descriptif. Il prend une image de départ comme première frame et crée une séquence vidéo qui suit la description fournie. Le nœud offre diverses options de personnalisation pour la résolution vidéo, le rapport hauteur/largeur, la durée et d'autres paramètres de génération.
 
 ## Entrées

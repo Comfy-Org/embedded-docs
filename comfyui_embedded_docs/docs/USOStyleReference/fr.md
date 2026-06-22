@@ -1,3 +1,5 @@
+# USOStyleReference
+
 Le nœud USOStyleReference applique des correctifs de référence de style aux modèles en utilisant les caractéristiques d'image encodées issues de la sortie CLIP vision. Il crée une version modifiée du modèle d'entrée en intégrant les informations de style extraites des entrées visuelles, permettant ainsi le transfert de style ou des capacités de génération basées sur une référence.
 
 ## Entrées

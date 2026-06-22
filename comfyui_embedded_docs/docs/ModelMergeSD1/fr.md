@@ -1,3 +1,5 @@
+# ModelMergeSD1
+
 Le nœud ModelMergeSD1 vous permet de fusionner deux modèles Stable Diffusion 1.x en ajustant l'influence de différents composants du modèle. Il offre un contrôle individuel sur l'intégration temporelle, l'intégration d'étiquettes, ainsi que tous les blocs d'entrée, intermédiaires et de sortie, permettant un fusionnement de modèles finement ajusté pour des cas d'utilisation spécifiques.
 
 ## Entrées

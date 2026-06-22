@@ -1,3 +1,5 @@
+# Krea 2 Référence de Style
+
 Voici la traduction en français de la documentation du nœud ComfyUI **Krea 2 Style Reference** :
 
 ## Aperçu

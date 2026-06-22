@@ -1,3 +1,5 @@
+# Kling Contrôle du Mouvement
+
 Voici la traduction en français de la documentation du nœud Kling Motion Control :
 
 Le nœud Kling Motion Control génère une vidéo en appliquant les mouvements, expressions et déplacements de caméra d'une vidéo de référence à un personnage défini par une image de référence et un prompt textuel. Il permet de contrôler si l'orientation finale du personnage provient de la vidéo de référence ou de l'image de référence.

@@ -1,3 +1,5 @@
+# LaplaceZamanlayıcı
+
 LaplaceScheduler düğümü, difüzyon örneklemesinde kullanılmak üzere bir Laplace dağılımını takip eden sigma değerleri dizisi oluşturur. Maksimumdan minimum değere kademeli olarak azalan bir gürültü seviyesi çizelgesi oluşturur ve ilerlemeyi kontrol etmek için Laplace dağılım parametrelerini kullanır. Bu zamanlayıcı, difüzyon modelleri için gürültü çizelgesini tanımlamak amacıyla özel örnekleme iş akışlarında yaygın olarak kullanılır.
 
 ## Girişler

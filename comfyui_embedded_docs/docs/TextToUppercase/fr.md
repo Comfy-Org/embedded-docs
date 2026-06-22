@@ -1,3 +1,5 @@
+# Texte en majuscules
+
 Le nœud Texte en Majuscules prend une entrée de texte et convertit tous ses caractères en majuscules. Il s'agit d'un utilitaire simple de traitement de texte qui modifie la casse de la chaîne fournie.
 
 ## Entrées

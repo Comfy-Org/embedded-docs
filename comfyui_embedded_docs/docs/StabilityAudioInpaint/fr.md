@@ -1,3 +1,5 @@
+# Restauration audio Stability AI
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant scrupuleusement les règles fournies :
 
 Transforme une partie d'un échantillon audio existant à l'aide d'instructions textuelles. Ce nœud vous permet de modifier des sections spécifiques d'un fichier audio en fournissant des descriptions textuelles, effectuant ainsi un "inpainting" ou une régénération des parties sélectionnées tout en préservant le reste de l'audio.

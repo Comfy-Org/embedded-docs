@@ -1,3 +1,5 @@
+# Luma Texto para Vídeo
+
 Gera vídeos de forma síncrona com base em um prompt de texto e configurações de saída. Este nó cria conteúdo de vídeo usando descrições textuais e diversos parâmetros de geração, produzindo o vídeo final assim que o processo de geração é concluído.
 
 ## Entradas

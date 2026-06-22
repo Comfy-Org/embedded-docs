@@ -1,3 +1,5 @@
+# SamplerDPMPP_SDE
+
 The SamplerDPMPP_SDE node creates a DPM++ SDE (Stochastic Differential Equation) sampler for use in the sampling process. This sampler provides a stochastic sampling method with configurable noise parameters and device selection. It returns a sampler object that can be used in the sampling pipeline.
 
 ## Inputs

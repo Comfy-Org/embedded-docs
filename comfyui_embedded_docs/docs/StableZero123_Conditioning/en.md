@@ -1,3 +1,5 @@
+# StableZero123_Conditioning
+
 The StableZero123_Conditioning node processes an input image and camera angles to generate conditioning data and latent representations for 3D model generation. It uses a CLIP vision model to encode the image features, combines them with camera embedding information based on elevation and azimuth angles, and produces positive and negative conditioning along with a latent representation for downstream 3D generation tasks.
 
 ## Inputs

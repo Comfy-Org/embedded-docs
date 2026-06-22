@@ -1,3 +1,5 @@
+# ControlNetInpaintingAliMamaUygula
+
 ControlNetInpaintingAliMamaApply düğümü, pozitif ve negatif koşullandırmayı bir kontrol görüntüsü ve maske ile birleştirerek, iç boyama (inpainting) görevleri için ControlNet koşullandırması uygular. Giriş görüntüsünü ve maskeyi işleyerek, görüntünün hangi alanlarının boyanacağı üzerinde hassas kontrol sağlayan, üretim sürecini yönlendiren değiştirilmiş koşullandırma oluşturur. Düğüm, ControlNet'in üretim sürecinin farklı aşamalarındaki etkisini ince ayarlamak için güç ayarı ve zamanlama kontrollerini destekler.
 
 ## Girişler

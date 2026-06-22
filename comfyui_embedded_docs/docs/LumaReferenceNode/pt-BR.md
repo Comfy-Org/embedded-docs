@@ -1,3 +1,5 @@
+# Luma Referência
+
 Este nó armazena uma imagem e um valor de peso para uso com o nó Gerar Imagem Luma. Ele cria uma cadeia de referência que pode ser passada para outros nós Luma para influenciar a geração de imagens. O nó pode iniciar uma nova cadeia de referência ou adicionar a uma já existente.
 
 ## Entradas

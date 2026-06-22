@@ -1,3 +1,5 @@
+# LoadImageTextSetFromFolderNode
+
 Belirtilen eğitim amaçlı dizinden bir grup görsel ve bunlara karşılık gelen metin açıklamalarını yükler. Düğüm, görsel dosyalarını ve ilişkili açıklama metin dosyalarını otomatik olarak arar, belirtilen yeniden boyutlandırma ayarlarına göre görselleri işler ve sağlanan CLIP modelini kullanarak açıklamaları kodlar.
 
 ## Girdiler

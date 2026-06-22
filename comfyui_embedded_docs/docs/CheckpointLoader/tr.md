@@ -1,3 +1,5 @@
+# Yapılandırmayla Kontrol Noktası Yükle (ESKİ)
+
 CheckpointLoader düğümü, önceden eğitilmiş bir model kontrol noktasını (checkpoint) ve yapılandırma dosyasını yükler. Giriş olarak bir yapılandırma dosyası ve bir kontrol noktası dosyası alır; çıktı olarak ise ana model, CLIP modeli ve VAE modeli dahil olmak üzere yüklenen model bileşenlerini iş akışında kullanılmak üzere döndürür.
 
 ## Girişler

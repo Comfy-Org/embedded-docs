@@ -1,3 +1,5 @@
+# TextEncodeHunyuanVideo_ImagenAVideo
+
 El nodo `TextEncodeHunyuanVideo_ImageToVideo` crea datos de condicionamiento para la generación de video combinando indicaciones de texto con incrustaciones de imagen. Utiliza un modelo CLIP para procesar tanto la entrada de texto como la información visual proveniente de una salida de visión CLIP, y luego genera tokens que fusionan estas dos fuentes según la configuración de intercalado de imagen especificada.
 
 ## Entradas

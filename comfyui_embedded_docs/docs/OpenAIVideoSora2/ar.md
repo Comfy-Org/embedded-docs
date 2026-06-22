@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقد OpenAIVideoSora2
+# OpenAI Sora - Video
 
 ## نظرة عامة
 

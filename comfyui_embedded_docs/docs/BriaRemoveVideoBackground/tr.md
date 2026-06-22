@@ -1,3 +1,5 @@
+# Bria Video Arka Planı Kaldır
+
 Bu düğüm, Bria AI hizmetini kullanarak bir videonun arka planını kaldırır. Giriş videosunu işler ve orijinal arka planı seçtiğiniz düz bir renkle değiştirir. İşlem harici bir API aracılığıyla gerçekleştirilir ve sonuç yeni bir video dosyası olarak döndürülür.
 
 ## Girişler

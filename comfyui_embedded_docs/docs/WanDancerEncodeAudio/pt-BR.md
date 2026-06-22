@@ -1,3 +1,5 @@
+# WanDancerEncodeAudio
+
 ## Visão Geral
 
 Este nó processa uma entrada de áudio para extrair características que podem ser usadas para guiar um modelo de geração de vídeo. Ele analisa o áudio para detectar tempo, batidas e outras características musicais, depois empacota essas informações em um formato adequado para condicionar um modelo de vídeo, permitindo que o vídeo gerado seja sincronizado com o áudio.

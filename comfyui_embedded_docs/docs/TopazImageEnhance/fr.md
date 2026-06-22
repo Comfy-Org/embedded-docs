@@ -1,3 +1,5 @@
+# Topaz Amélioration d'image
+
 Le nœud Topaz Image Enhance offre une mise à l'échelle et une amélioration d'image de qualité professionnelle. Il traite une seule image d'entrée à l'aide d'un modèle d'IA basé sur le cloud pour améliorer la qualité, les détails et la résolution. Le nœud permet un contrôle précis du processus d'amélioration, notamment des options pour l'orientation créative, la concentration sur le sujet et la préservation des visages.
 
 ## Entrées

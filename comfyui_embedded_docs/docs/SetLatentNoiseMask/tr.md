@@ -1,3 +1,5 @@
+# Gizli Gürültü Maskesi Ayarla
+
 Bu düğüm, bir dizi gizli örneğe (latent sample) bir gürültü maskesi uygulamak için tasarlanmıştır. Belirtilen maskeyi entegre ederek giriş örneklerini değiştirir ve böylece gürültü özelliklerini değiştirir.
 
 ## Girişler

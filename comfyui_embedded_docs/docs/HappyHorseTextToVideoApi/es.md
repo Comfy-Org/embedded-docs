@@ -1,4 +1,4 @@
-# Descripción General
+# HappyHorse Texto a Video
 
 Genera un video basado en un texto de instrucción utilizando el modelo HappyHorse. Este nodo envía su instrucción y configuración a la API de HappyHorse, espera a que se genere el video y luego descarga el resultado.
 

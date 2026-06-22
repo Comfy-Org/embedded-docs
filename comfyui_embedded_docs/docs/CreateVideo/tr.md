@@ -1,3 +1,5 @@
+# Video Oluştur
+
 Video Oluştur düğümü, bir dizi görüntüden video dosyası oluşturur. Saniyedeki kare sayısını kullanarak oynatma hızını belirleyebilir ve isteğe bağlı olarak videoya ses ekleyebilirsiniz. Düğüm, görüntülerinizi belirtilen kare hızında oynatılabilen bir video formatında birleştirir.
 
 ## Girişler

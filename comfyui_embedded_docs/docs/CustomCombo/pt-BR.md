@@ -1,3 +1,5 @@
+# Combo Personalizado
+
 O nó Custom Combo permite criar um menu suspenso personalizado com sua própria lista de opções de texto. É um nó focado no frontend que fornece uma representação no backend para garantir compatibilidade dentro do seu fluxo de trabalho. Quando você seleciona uma opção no menu suspenso, o nó gera esse texto como uma string e sua posição de índice.
 
 ## Entradas

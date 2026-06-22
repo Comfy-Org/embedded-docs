@@ -1,3 +1,5 @@
+# Restar Latente
+
 El nodo LatentSubtract está diseñado para restar una representación latente de otra. Esta operación puede utilizarse para manipular o modificar las características de las salidas de modelos generativos, eliminando eficazmente rasgos o atributos representados en un espacio latente de otro.
 
 ## Entradas

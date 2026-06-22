@@ -1,3 +1,5 @@
+# LotusConditioning
+
 El nodo LotusConditioning proporciona embeddings de condicionamiento precalculados para el modelo Lotus. Utiliza un codificador congelado con condicionamiento nulo y devuelve embeddings de prompt fijos para lograr paridad con la implementación de referencia sin necesidad de inferencia ni cargar archivos grandes de tensores. Este nodo genera un tensor de condicionamiento fijo que puede usarse directamente en el pipeline de generación.
 
 ## Entradas

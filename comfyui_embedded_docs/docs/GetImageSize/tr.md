@@ -1,3 +1,5 @@
+# Resim Boyutunu Al
+
 ## Genel Bakış
 
 GetImageSize düğümü, bir giriş görüntüsünden boyut ve toplu iş bilgilerini çıkarır. Görüntünün genişlik, yükseklik ve toplu iş boyutunu döndürürken, bu bilgileri düğüm arayüzünde ilerleme metni olarak da görüntüler. Orijinal görüntü verileri değişmeden geçer.

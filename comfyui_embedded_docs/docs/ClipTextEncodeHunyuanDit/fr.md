@@ -1,3 +1,5 @@
+# CLIPTextEncodeHunyuanDiT
+
 Le nœud `CLIPTextEncodeHunyuanDiT` convertit des descriptions textuelles dans un format compréhensible par le modèle HunyuanDiT. Il s'agit d'un nœud de conditionnement avancé conçu pour l'architecture à double encodeur de texte de HunyuanDiT, traitant deux entrées textuelles distinctes via des tokenizers différents.
 
 ## Entrées

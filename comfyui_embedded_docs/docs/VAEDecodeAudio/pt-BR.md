@@ -1,3 +1,5 @@
+# VAE Decodificar Áudio
+
 O nó VAEDecodeAudio converte representações latentes de volta em formas de onda de áudio usando um Autoencoder Variacional. Ele recebe amostras de áudio codificadas e as processa através do VAE para reconstruir o áudio original, aplicando normalização para garantir níveis de saída consistentes. O áudio resultante é retornado com uma taxa de amostragem padrão de 44100 Hz.
 
 ## Entradas

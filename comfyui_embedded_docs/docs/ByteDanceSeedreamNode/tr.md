@@ -1,3 +1,5 @@
+# ByteDance Seedream 4
+
 ByteDance Seedream 4.5 & 5.0 düğümü, 4K çözünürlüğe kadar birleşik metin-görüntü oluşturma ve hassas tek cümle düzenleme yetenekleri sağlar. Metin istemlerinden yeni görüntüler oluşturabilir veya metin talimatlarını kullanarak mevcut görüntüleri düzenleyebilir. Düğüm, hem tek görüntü oluşturmayı hem de birden çok ilgili görüntünün sıralı oluşturulmasını destekler.
 
 ## Girişler

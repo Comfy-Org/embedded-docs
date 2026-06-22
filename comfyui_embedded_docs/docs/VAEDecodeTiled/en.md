@@ -1,3 +1,5 @@
+# VAE Decode (Tiled)
+
 The VAEDecodeTiled node decodes latent representations into images using a tiled approach to handle large images efficiently. It processes the input in smaller tiles to manage memory usage while maintaining image quality. The node also supports video VAEs by processing temporal frames in chunks with overlap for smooth transitions.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Wan Texto para Imagem
+
 O nó Wan Text to Image gera imagens com base em descrições textuais. Ele utiliza modelos de IA para criar conteúdo visual a partir de instruções escritas, suportando entrada de texto em inglês e chinês. O nó oferece vários controles para ajustar o tamanho, a qualidade e as preferências de estilo da imagem de saída.
 
 ## Entradas

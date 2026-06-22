@@ -1,3 +1,5 @@
+# Recraft Stili - Sonsuz Stil Kütüphanesi
+
 Bu düğüm, önceden var olan bir UUID kullanarak Recraft'ın Sonsuz Stil Kütüphanesi'nden bir stil seçmenizi sağlar. Sağlanan stil tanımlayıcısına göre stil bilgisini alır ve diğer Recraft düğümlerinde kullanılmak üzere döndürür.
 
 ## Girişler

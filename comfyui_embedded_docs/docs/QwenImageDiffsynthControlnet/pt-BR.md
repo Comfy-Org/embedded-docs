@@ -1,3 +1,5 @@
+# QwenImageDiffsynthControlnet
+
 O nó QwenImageDiffsynthControlnet aplica um patch de rede de controle de síntese de difusão para modificar o comportamento de um modelo base. Ele utiliza uma entrada de imagem e uma máscara opcional para guiar o processo de geração do modelo com intensidade ajustável, criando um modelo com patch que incorpora a influência da rede de controle para uma síntese de imagem mais controlada.
 
 ## Entradas

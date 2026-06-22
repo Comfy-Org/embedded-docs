@@ -1,3 +1,5 @@
+# Aplicar ControlNet (ANTIGUO)
+
 El uso de ControlNet requiere el preprocesamiento de las imágenes de entrada. Dado que los nodos iniciales de ComfyUI no incluyen preprocesadores ni modelos ControlNet, instale primero los preprocesadores de ControlNet [descargue los preprocesadores aquí](https://github.com/Fannovel16/comfy_controlnet_preprocessors) y los modelos ControlNet correspondientes.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Sayı Dönüştürme
+
 ## Genel Bakış
 
 Sayı Dönüştür düğümü, çeşitli giriş veri türlerini sayısal değerlere dönüştürür. Tam sayı, ondalıklı sayı, metin veya mantıksal değer türünde tek bir giriş kabul eder ve iki çıktı üretir: bir ondalıklı sayı ve bir tam sayı. Bu, metin veya mantıksal değerleri, iş akışınızdaki diğer matematiksel veya işleme düğümleri tarafından kullanılabilecek bir formata dönüştürmek için kullanışlıdır.

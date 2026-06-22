@@ -1,3 +1,5 @@
+# Recortar Latente
+
 El nodo LatentCrop está diseñado para realizar operaciones de recorte en representaciones latentes de imágenes. Permite especificar las dimensiones y la posición del recorte, posibilitando modificaciones dirigidas en el espacio latente.
 
 ## Entradas

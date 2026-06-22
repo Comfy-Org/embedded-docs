@@ -1,3 +1,5 @@
+# WanHuMoGörüntüdenVideoya
+
 WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller oluşturarak görüntüleri video dizilerine dönüştürür. Koşullandırma girdilerini işler ve video oluşumunu etkilemek için referans görüntüleri ve ses katıştırmalarını (embeddings) dahil edebilir. Düğüm, video sentezi için uygun, değiştirilmiş koşullandırma verileri ve gizil temsiller çıktısı verir.
 
 ## Girdiler

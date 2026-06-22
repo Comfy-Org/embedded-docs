@@ -1,3 +1,5 @@
+# Stability AI Stable Diffusion 3.5 Imagen
+
 Este nodo genera imágenes de forma síncrona utilizando el modelo Stable Diffusion 3.5 de Stability AI. Crea imágenes basadas en indicaciones de texto y también puede modificar imágenes existentes cuando se proporcionan como entrada. El nodo admite varias relaciones de aspecto y ajustes preestablecidos de estilo para personalizar el resultado.
 
 ## Entradas

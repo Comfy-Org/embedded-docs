@@ -1,4 +1,4 @@
-# Nó Kling Start-End Frame to Video
+# Kling Quadro Inicial-Final para Vídeo
 
 O nó Kling Start-End Frame to Video cria uma sequência de vídeo que faz a transição entre as imagens inicial e final fornecidas. Ele gera todos os quadros intermediários para produzir uma transformação suave do primeiro ao último quadro. Este nó utiliza a API de imagem para vídeo, mas suporta apenas as opções de entrada compatíveis com o campo de requisição `image_tail`.
 

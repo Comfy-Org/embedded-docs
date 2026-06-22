@@ -1,3 +1,5 @@
+# CLIP Vision Encode
+
 Le nœud `CLIP Vision Encode` est un nœud d'encodage d'image dans ComfyUI, utilisé pour convertir les images d'entrée en vecteurs de caractéristiques visuelles via le modèle CLIP Vision. Ce nœud constitue un pont important entre la compréhension d'image et de texte, et est largement utilisé dans divers flux de travail de génération et de traitement d'images par IA.
 
 **Fonctionnalité du nœud**

@@ -1,3 +1,5 @@
+# Özel Kombinasyon
+
 Özel Bileşen düğümü, kendi metin seçenek listenizle özel bir açılır menü oluşturmanıza olanak tanır. İş akışınızda uyumluluğu sağlamak için bir arka uç temsili sağlayan, ön uç odaklı bir düğümdür. Açılır menüden bir seçenek belirlediğinizde, düğüm bu metni bir dize ve dizin konumu olarak çıktılar.
 
 ## Girişler

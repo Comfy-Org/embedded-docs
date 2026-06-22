@@ -1,3 +1,5 @@
+# Kling Controle de Movimento
+
 O nó Kling Motion Control gera um vídeo aplicando os movimentos, expressões e movimentos de câmera de um vídeo de referência a um personagem definido por uma imagem de referência e um prompt de texto. Ele permite controlar se a orientação final do personagem vem do vídeo de referência ou da imagem de referência.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ChromaRadianceSeçenekleri
+
 ChromaRadianceOptions düğümü, Chroma Radiance modeli için gelişmiş ayarları yapılandırmanıza olanak tanır. Mevcut bir modeli sarar ve sigma değerlerine bağlı olarak gürültü giderme işlemi sırasında belirli seçenekleri uygulayarak NeRF döşeme boyutu ve diğer radyansla ilgili parametreler üzerinde ince ayarlı kontrol sağlar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# FreeU
+
 The FreeU node applies frequency-domain modifications to a model's output blocks to enhance image generation quality. It works by scaling different channel groups and applying Fourier filtering to specific feature maps, allowing for fine-tuned control over the model's behavior during the generation process.
 
 ## Inputs

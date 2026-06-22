@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaFlux
+
 `CLIPTextEncodeFlux`, Flux mimarisi için tasarlanmış gelişmiş bir metin kodlama düğümüdür. İki ayrı metin girdisini farklı kodlayıcılar (CLIP-L ve T5XXL) aracılığıyla işler ve bunları bir yönlendirme ölçeği ile birleştirerek görüntü üretimi için birleşik bir koşullandırma çıktısı üretir.
 
 ## Girdiler

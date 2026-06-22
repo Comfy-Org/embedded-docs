@@ -1,3 +1,5 @@
+# Yeniden Boyutlandır ve Doldur Görsel
+
 ResizeAndPadImage düğümü, bir görüntüyü orijinal en-boy oranını koruyarak belirtilen boyutlara sığacak şekilde yeniden boyutlandırır. Görüntüyü hedef genişlik ve yüksekliğe sığacak şekilde orantılı olarak küçültür, ardından kalan boş alanı doldurmak için kenarlara dolgu ekler. Dolgu rengi ve enterpolasyon yöntemi, dolgu alanlarının görünümünü ve yeniden boyutlandırma kalitesini kontrol etmek için özelleştirilebilir.
 
 ## Girişler

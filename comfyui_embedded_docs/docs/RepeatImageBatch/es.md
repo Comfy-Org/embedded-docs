@@ -1,3 +1,5 @@
+# Repetir lote de imágenes
+
 El nodo RepeatImageBatch está diseñado para replicar una imagen determinada un número específico de veces, creando un lote de imágenes idénticas. Esta funcionalidad es útil para operaciones que requieren múltiples instancias de la misma imagen, como el procesamiento por lotes o el aumento de datos.
 
 ## Entradas

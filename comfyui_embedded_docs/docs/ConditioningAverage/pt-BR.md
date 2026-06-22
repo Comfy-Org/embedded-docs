@@ -1,3 +1,5 @@
+# Média de Condicionamento
+
 O nó `ConditioningAverage` é utilizado para mesclar dois conjuntos diferentes de condicionamento (como prompts de texto) de acordo com um peso especificado, gerando um novo vetor de condicionamento que se situa entre os dois. Ao ajustar o parâmetro de peso, você pode controlar de forma flexível a influência de cada condicionamento no resultado final. Isso é especialmente adequado para interpolação de prompts, fusão de estilos e outros casos de uso avançados.
 
 Conforme mostrado abaixo, ao ajustar a intensidade de `conditioning_to`, você pode obter um resultado entre os dois condicionamentos.

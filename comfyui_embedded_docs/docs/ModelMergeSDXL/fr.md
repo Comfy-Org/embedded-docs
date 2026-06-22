@@ -1,3 +1,5 @@
+# ModelMergeSDXL
+
 Le nœud ModelMergeSDXL vous permet de fusionner deux modèles SDXL en ajustant l'influence de chaque modèle sur différentes parties de l'architecture. Vous pouvez contrôler la contribution de chaque modèle aux intégrations temporelles, aux intégrations d'étiquettes et à divers blocs au sein de la structure du modèle. Cela crée un modèle hybride combinant les caractéristiques des deux modèles d'entrée.
 
 ## Entrées

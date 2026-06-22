@@ -1,3 +1,5 @@
+# WanFunInpaintToVideo
+
 Voici la traduction en français de la documentation du nœud WanFunInpaintToVideo :
 
 Le nœud WanFunInpaintToVideo crée des séquences vidéo en effectuant de l'infilling entre des images de début et de fin. Il prend en entrée un conditionnement positif et négatif ainsi que des images d'image facultatives pour générer des latents vidéo. Le nœud gère la génération vidéo avec des paramètres de dimensions et de longueur configurables.

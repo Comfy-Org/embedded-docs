@@ -1,4 +1,4 @@
-# WanPhantomSubjectToVideo 노드
+# WanPhantomSubjectToVideo
 
 WanPhantomSubjectToVideo 노드는 컨디셔닝 입력과 선택적 참조 이미지를 처리하여 비디오 콘텐츠를 생성합니다. 비디오 생성에 필요한 잠재 표현을 만들며, 입력 이미지가 제공될 경우 시각적 안내를 통합할 수 있습니다. 이 노드는 비디오 모델을 위한 시간 차원 연결이 적용된 컨디셔닝 데이터를 준비하고, 수정된 컨디셔닝과 함께 생성된 잠재 비디오 데이터를 출력합니다.
 

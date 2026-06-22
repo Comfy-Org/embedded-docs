@@ -1,3 +1,5 @@
+# GLIGENMetinKutusuUygula
+
 `GLIGENTextBoxApply` düğümü, metin tabanlı koşullandırmayı bir üretken modelin girdisine entegre etmek için tasarlanmıştır. Özellikle metin kutusu parametrelerini uygulayarak ve bunları bir CLIP modeli kullanarak kodlayarak çalışır. Bu süreç, koşullandırmayı mekansal ve metinsel bilgilerle zenginleştirerek daha hassas ve bağlam bilincine sahip bir üretim sağlar.
 
 ## Girişler

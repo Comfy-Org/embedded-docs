@@ -1,3 +1,5 @@
+# Mise à l'échelle Latente
+
 Voici la traduction en français de la documentation du nœud ComfyUI `LatentUpscale` :
 
 Le nœud LatentUpscale est conçu pour le suréchantillonnage des représentations latentes d'images. Il permet d'ajuster les dimensions de l'image de sortie ainsi que la méthode de suréchantillonnage, offrant une flexibilité pour améliorer la résolution des images latentes.

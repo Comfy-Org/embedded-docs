@@ -1,3 +1,5 @@
+# PolyexponentialScheduler
+
 O nó PolyexponentialScheduler foi projetado para gerar uma sequência de níveis de ruído (sigmas) com base em um agendamento de ruído poliexponencial. Este agendamento é uma função polinomial no logaritmo de sigma, permitindo uma progressão flexível e personalizável dos níveis de ruído ao longo do processo de difusão.
 
 ## Entradas

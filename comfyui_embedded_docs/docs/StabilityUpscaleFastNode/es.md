@@ -1,4 +1,4 @@
-# Nodo de Escalado Rápido de Estabilidad
+# Stability AI Escalado Rápido
 
 Escala rápidamente una imagen mediante una llamada a la API de Stability, aumentando su tamaño 4 veces respecto al original. Este nodo está diseñado específicamente para escalar imágenes de baja calidad o comprimidas, enviándolas al servicio de escalado rápido de Stability AI.
 

@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 ## 概述
 
 GeminiNanoBanana2 節點使用 Google 的 Vertex AI Gemini 模型來生成或編輯圖像。其運作方式是將文字提示，以及可選的參考圖像或檔案，發送給 API，並返回生成的圖像和任何附帶的文字。

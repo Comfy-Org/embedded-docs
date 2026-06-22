@@ -1,3 +1,5 @@
+# Runway Görüntüden Videoya (Gen4 Turbo)
+
 Runway Görüntüden Videoya (Gen4 Turbo) düğümü, Runway'in Gen4 Turbo modelini kullanarak tek bir başlangıç karesinden bir video oluşturur. Bir metin istemi ve bir başlangıç görüntü karesi alır, ardından belirtilen süre ve en boy oranı ayarlarına göre bir video dizisi oluşturur. Düğüm, başlangıç karesini Runway'in API'sine yüklemeyi yönetir ve oluşturulan videoyu döndürür.
 
 ## Girişler

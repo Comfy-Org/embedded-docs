@@ -1,3 +1,5 @@
+# ConcaténationLatente
+
 Le nœud LatentConcat combine deux échantillons latents en les joignant le long d'une dimension choisie. Il prend deux entrées latentes et les concatène selon l'axe x, y ou t, avec la possibilité de contrôler quel échantillon apparaît en premier. Le nœud ajuste automatiquement la taille du lot de la deuxième entrée pour correspondre à la première avant d'effectuer la concaténation.
 
 ## Entrées

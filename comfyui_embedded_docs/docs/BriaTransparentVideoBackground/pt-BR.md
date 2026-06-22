@@ -1,4 +1,4 @@
-# Bria Remove Video Background (Transparent)
+# Bria Remover Fundo de Vídeo (Transparente)
 
 Este nó remove o fundo de um vídeo usando o serviço de IA da Bria e gera os quadros recortados junto com uma máscara alfa. Conecte ambas as saídas a um nó de composição ou alimente-as em um nó Save WEBM para escrever um vídeo transparente.
 

@@ -1,3 +1,5 @@
+# AjouterBruit
+
 Ce nœud ajoute un bruit contrôlé à une image latente en utilisant un générateur de bruit spécifié et des valeurs sigma. Il traite l'entrée via le système d'échantillonnage du modèle pour appliquer une mise à l'échelle du bruit adaptée à la plage sigma donnée, et renvoie une nouvelle représentation latente avec le bruit appliqué.
 
 ## Entrées

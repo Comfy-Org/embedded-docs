@@ -1,3 +1,5 @@
+# TextEncodeQwenImageEditPlus
+
 O nó TextEncodeQwenImageEditPlus processa prompts de texto e imagens opcionais para gerar dados de condicionamento para tarefas de geração ou edição de imagens. Ele utiliza um template especializado para analisar imagens de entrada e entender como as instruções de texto devem modificá-las, em seguida, codifica essas informações para uso em etapas subsequentes de geração. O nó pode processar até três imagens de entrada e, opcionalmente, gerar latentes de referência quando um VAE é fornecido.
 
 ## Entradas

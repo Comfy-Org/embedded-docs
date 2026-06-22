@@ -1,3 +1,5 @@
+# ModelMergeCosmos14B
+
 El nodo **ModelMergeCosmos14B** fusiona dos modelos de IA utilizando un enfoque basado en bloques diseñado específicamente para la arquitectura del modelo Cosmos 14B. Permite combinar diferentes componentes de los modelos ajustando valores de peso entre 0.0 y 1.0 para cada bloque del modelo y capa de incrustación (embedding).
 
 ## Entradas

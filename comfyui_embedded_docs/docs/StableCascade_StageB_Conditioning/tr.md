@@ -1,3 +1,5 @@
+# StabilKaskad_AşamaB_Koşullandırma
+
 StableCascade_StageB_Conditioning düğümü, mevcut koşullandırma bilgilerini Stage C'den gelen önsel gizil temsillerle birleştirerek Stable Cascade Stage B üretimi için koşullandırma verilerini hazırlar. Stage C'den gelen gizil örnekleri koşullandırma verilerine dahil ederek, üretim sürecinin daha tutarlı çıktılar için önsel bilgilerden yararlanmasını sağlar.
 
 ## Girişler

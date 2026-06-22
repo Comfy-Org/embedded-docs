@@ -1,3 +1,5 @@
+# Salvar Vídeo
+
 O nó SaveVideo salva o conteúdo de vídeo de entrada no diretório de saída do seu ComfyUI. Ele permite especificar o prefixo do nome do arquivo, o formato do vídeo e o codec para o arquivo salvo. O nó gerencia automaticamente a nomeação dos arquivos com incrementos de contador e pode incluir metadados do fluxo de trabalho no vídeo salvo.
 
 ## Entradas

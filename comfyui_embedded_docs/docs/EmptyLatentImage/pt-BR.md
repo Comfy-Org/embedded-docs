@@ -1,3 +1,5 @@
+# Imagem Latente Vazia
+
 O nó `EmptyLatentImage` foi projetado para gerar uma representação em espaço latente em branco com dimensões e tamanho de lote especificados. Este nó serve como uma etapa fundamental na geração ou manipulação de imagens no espaço latente, fornecendo um ponto de partida para processos posteriores de síntese ou modificação de imagens.
 
 ## Entradas

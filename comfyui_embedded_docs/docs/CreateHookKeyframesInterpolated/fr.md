@@ -1,3 +1,5 @@
+# Créer des images clés de crochet interpolées.
+
 Crée une séquence d'images clés de hook avec des valeurs de force interpolées entre un point de départ et un point d'arrivée. Ce nœud génère plusieurs images clés qui font transiter progressivement le paramètre de force sur une plage de pourcentage spécifiée du processus de génération, en utilisant diverses méthodes d'interpolation pour contrôler la courbe de transition.
 
 ## Entrées

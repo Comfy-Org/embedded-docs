@@ -1,3 +1,5 @@
+# SamplerEulerAncestral
+
 Le nœud SamplerEulerAncestral crée un échantillonneur Euler Ancestral pour la génération d'images. Cet échantillonneur utilise une approche mathématique spécifique combinant l'intégration d'Euler avec des techniques d'échantillonnage ancestrales pour produire des variations d'images. Le nœud permet de configurer le comportement d'échantillonnage en ajustant des paramètres qui contrôlent l'aléatoire et la taille des pas pendant le processus de génération.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Rodin 3D Gerar - Geração Detalhada
+
 O nó **Rodin 3D Detail** gera ativos 3D detalhados usando a API Rodin. Ele recebe imagens de entrada e as processa através do serviço Rodin para criar modelos 3D de alta qualidade com geometria e materiais detalhados. O nó gerencia todo o fluxo de trabalho, desde a criação da tarefa até o download do arquivo final do modelo 3D.
 
 ## Entradas

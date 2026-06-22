@@ -1,3 +1,5 @@
+# Add Text Prefix (DEPRECATED)
+
 The Add Text Prefix node modifies text by adding a specified string to the beginning of each input text. It takes the text and a prefix as input, then returns the combined result.
 
 **Note:** This node is deprecated and superseded by the Concatenate Text node.

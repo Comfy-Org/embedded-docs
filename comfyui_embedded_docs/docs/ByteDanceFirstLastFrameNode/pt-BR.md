@@ -1,3 +1,5 @@
+# ByteDance Primeiro-Último-Frame para Vídeo
+
 Este nó gera um vídeo usando um prompt de texto juntamente com imagens do primeiro e último quadro. Ele utiliza sua descrição e os dois quadros-chave para criar uma sequência de vídeo completa que faz a transição entre eles. O nó oferece várias opções para controlar a resolução, proporção de aspecto, duração e outros parâmetros de geração do vídeo.
 
 ## Entradas

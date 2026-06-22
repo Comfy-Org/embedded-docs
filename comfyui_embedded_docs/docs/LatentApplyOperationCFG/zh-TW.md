@@ -1,3 +1,5 @@
+# 潛空間應用操作 CFG
+
 ## 概述
 
 LatentApplyOperationCFG 節點會套用潛在操作，以修改模型中的條件引導（conditioning guidance）過程。其運作方式是攔截無分類器引導（CFG）取樣過程中的條件輸出，並在潛在表示用於生成之前，對其套用指定的操作。

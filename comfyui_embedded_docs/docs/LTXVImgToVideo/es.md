@@ -1,3 +1,5 @@
+# LTXVImgToVideo
+
 El nodo LTXVImgToVideo convierte una imagen de entrada en una representación latente de video para modelos de generación de video. Toma una sola imagen y la extiende a una secuencia de fotogramas utilizando el codificador VAE, luego aplica condicionamiento con control de intensidad para determinar cuánto del contenido de la imagen original se conserva versus se modifica durante la generación del video.
 
 ## Entradas

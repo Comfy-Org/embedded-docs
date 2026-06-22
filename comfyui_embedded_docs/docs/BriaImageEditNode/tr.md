@@ -1,3 +1,5 @@
+# Bria Görüntü Düzenleme
+
 Bria FIBO Görüntü Düzenleme düğümü, bir metin talimatı kullanarak mevcut bir görüntüyü değiştirmenize olanak tanır. Görüntüyü ve isteminizi, isteğinize göre görüntünün yeni, düzenlenmiş bir sürümünü oluşturmak için FIBO modelini kullanan Bria API'sine gönderir. Düzenlemeleri belirli bir alanla sınırlamak için bir maske de sağlayabilirsiniz.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Intégration de caméra Wan
+
 Le nœud WanCameraEmbedding génère des intégrations de trajectoire de caméra en utilisant des intégrations de Plücker basées sur les paramètres de mouvement de la caméra. Il crée une séquence de poses de caméra qui simulent différents mouvements et les convertit en tenseurs d'intégration adaptés aux pipelines de génération vidéo.
 
 ## Entrées

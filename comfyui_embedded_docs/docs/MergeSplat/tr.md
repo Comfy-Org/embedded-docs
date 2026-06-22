@@ -1,4 +1,4 @@
-# Splatları Birleştir
+# Splats Birleştir
 
 Merge Splats düğümü, birden fazla gauss splat modelini verilerini birleştirerek tek bir splat halinde birleştirir. Bu, farklı tohumlarla oluşturulan aynı gizli kodun birden fazla kod çözümünü birleştirmek için kullanışlıdır; bu, yüzeyi yoğunlaştırabilir ve 3D ağlar oluştururken kaliteyi artırabilir.
 

@@ -1,3 +1,5 @@
+# ModelMergeAdd
+
 Voici la traduction en français de la documentation du nœud **ModelMergeAdd** :
 
 Le nœud **ModelMergeAdd** est conçu pour fusionner deux modèles en ajoutant des correctifs clés d'un modèle à un autre. Ce processus consiste à cloner le premier modèle, puis à appliquer les correctifs du second modèle, permettant ainsi de combiner les caractéristiques ou comportements des deux modèles.

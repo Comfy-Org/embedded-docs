@@ -1,3 +1,5 @@
+# Recraft Criar Estilo
+
 Este nó cria um estilo personalizado para geração de imagens através do upload de imagens de referência. Você pode enviar entre 1 e 5 imagens para definir o novo estilo, e o nó retornará um ID de estilo único que pode ser usado com outros nós Recraft. O tamanho total combinado de todos os arquivos de imagem enviados não deve exceder 5 MB.
 
 ## Entradas

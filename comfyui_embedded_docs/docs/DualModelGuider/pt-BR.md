@@ -1,4 +1,4 @@
-# Guia CFG de Modelo Duplo
+# Orientador CFG de Dois Modelos
 
 Este nó permite usar dois modelos diferentes durante o processo de amostragem guiada por CFG: um modelo para a passagem positiva (condicional) e um modelo separado para a passagem negativa (incondicional). Quando nenhum modelo negativo é fornecido, ele se comporta como um guia CFG padrão usando um único modelo.
 

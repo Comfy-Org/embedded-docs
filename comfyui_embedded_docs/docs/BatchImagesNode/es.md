@@ -1,3 +1,5 @@
+# Procesar imágenes por lotes
+
 El nodo "Combinar Imágenes" agrupa múltiples imágenes individuales en un solo lote. Toma una cantidad variable de entradas de imagen y las envía como un único tensor de imágenes agrupadas, lo que permite procesarlas juntas en nodos posteriores.
 
 ## Entradas

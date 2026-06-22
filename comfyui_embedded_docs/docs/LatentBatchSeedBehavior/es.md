@@ -1,3 +1,5 @@
+# LatentBatchSeedBehavior
+
 El nodo `LatentBatchSeedBehavior` está diseñado para modificar el comportamiento de la semilla en un lote de muestras latentes. Permite aleatorizar o fijar la semilla en todo el lote, influyendo así en el proceso de generación al introducir variabilidad o mantener consistencia en los resultados generados.
 
 ## Entradas

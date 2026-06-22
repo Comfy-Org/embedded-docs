@@ -1,3 +1,5 @@
+# EpsilonScaling
+
 "Elucidating the Exposure Bias in Diffusion Models" araştırma makalesindeki Epsilon Ölçekleme yöntemini uygular. Bu yöntem, örnekleme süreci sırasında tahmin edilen gürültüyü ölçeklendirerek örnek kalitesini artırır. Difüzyon modellerindeki maruz kalma yanlılığını azaltmak için tekdüze bir program kullanır.
 
 ## Girişler

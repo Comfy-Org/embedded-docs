@@ -1,3 +1,5 @@
+# MiniMax Texte en Vidéo
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI, en respectant toutes les règles spécifiées :
 
 Génère des vidéos de manière synchrone à partir d'un prompt et de paramètres optionnels via l'API MiniMax. Ce nœud crée un contenu vidéo à partir de descriptions textuelles en se connectant au service texte-vers-vidéo de MiniMax.

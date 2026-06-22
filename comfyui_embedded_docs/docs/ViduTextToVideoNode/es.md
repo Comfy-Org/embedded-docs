@@ -1,3 +1,5 @@
+# Generación de Video Vidu de Texto a Video
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias para mejorar, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduTextToVideoNode/en.md)
 
 El nodo de Generación de Video a partir de Texto de Vidu crea videos a partir de descripciones textuales. Utiliza el modelo de generación de video Vidu para transformar tus indicaciones de texto en contenido de video con configuraciones personalizables para duración, relación de aspecto y estilo visual.

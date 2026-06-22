@@ -1,3 +1,5 @@
+# ControlNet Uygula
+
 Bu düğüm, bir görüntü ve bir kontrol ağı modeline dayanarak koşullandırma verilerine gelişmiş kontrol ağı dönüşümleri uygular. Kontrol ağının oluşturulan içerik üzerindeki etkisinin ince ayarlı şekilde ayarlanmasına olanak tanıyarak, koşullandırmada daha hassas ve çeşitli değişiklikler yapılmasını sağlar.
 
 ## Girişler

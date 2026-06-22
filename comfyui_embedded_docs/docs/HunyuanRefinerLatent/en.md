@@ -1,3 +1,5 @@
+# Hunyuan Latent Refiner
+
 The HunyuanRefinerLatent node processes conditioning and latent inputs for refinement operations. It applies noise augmentation to both positive and negative conditioning while incorporating latent image data, and generates a new latent output with specific dimensions for further processing.
 
 ## Inputs

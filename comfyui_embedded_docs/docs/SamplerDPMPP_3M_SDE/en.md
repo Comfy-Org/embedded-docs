@@ -1,3 +1,5 @@
+# SamplerDPMPP_3M_SDE
+
 The SamplerDPMPP_3M_SDE node creates a DPM++ 3M SDE sampler for use in the sampling process. This sampler uses a third-order multistep stochastic differential equation method with configurable noise parameters. The node allows you to choose whether noise calculations are performed on the GPU or CPU.
 
 ## Inputs

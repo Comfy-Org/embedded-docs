@@ -1,3 +1,5 @@
+# Vista previa de imagen
+
 El nodo PreviewImage está diseñado para crear imágenes de vista previa temporales. Genera automáticamente un nombre de archivo temporal único para cada imagen, comprime la imagen a un nivel especificado y la guarda en un directorio temporal. Esta funcionalidad es particularmente útil para generar vistas previas de imágenes durante el procesamiento sin afectar los archivos originales.
 
 ## Entradas

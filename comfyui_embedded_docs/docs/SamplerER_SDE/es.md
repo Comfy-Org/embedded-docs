@@ -1,3 +1,5 @@
+# SamplerER_SDE
+
 El nodo SamplerER_SDE proporciona métodos de muestreo especializados para modelos de difusión, ofreciendo diferentes tipos de solucionadores que incluyen ER-SDE, SDE de tiempo inverso y enfoques ODE. Permite controlar el comportamiento estocástico y las etapas computacionales del proceso de muestreo. El nodo ajusta automáticamente los parámetros según el tipo de solucionador seleccionado para garantizar un funcionamiento adecuado.
 
 ## Entradas

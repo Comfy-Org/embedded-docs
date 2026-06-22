@@ -1,3 +1,5 @@
+# SamplerDpmppSde
+
 Este nodo está diseñado para generar un muestreador para el modelo DPM++ SDE (Ecuación Diferencial Estocástica). Se adapta tanto a entornos de ejecución en CPU como en GPU, optimizando la implementación del muestreador según el hardware disponible.
 
 ## Entradas

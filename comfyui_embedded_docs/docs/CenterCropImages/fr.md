@@ -1,3 +1,5 @@
+# Rogner les images au centre
+
 Le nœud Center Crop Images découpe une image à partir de son centre selon une largeur et une hauteur spécifiées. Il calcule la région centrale de l'image d'entrée et extrait une zone rectangulaire aux dimensions définies. Si la taille de découpe demandée est plus grande que l'image, le découpage sera limité aux bords de l'image.
 
 ## Entrées

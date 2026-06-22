@@ -1,4 +1,4 @@
-# ComfyOrNode
+# O
 
 El nodo ComfyOrNode realiza una operación lógica OR sobre un conjunto de valores de entrada. Devuelve `true` si alguno de los valores proporcionados se considera verdadero según las reglas estándar de veracidad de Python.
 

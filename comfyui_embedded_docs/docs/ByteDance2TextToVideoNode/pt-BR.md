@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Texto para Vídeo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2TextToVideoNode/en.md)
 
 Este nó utiliza a API Seedance 2.0 da ByteDance para gerar um vídeo a partir de uma descrição textual. Ele envia seu prompt para o modelo selecionado, aguarda o processamento do vídeo e retorna o resultado final.

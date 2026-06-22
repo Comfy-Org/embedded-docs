@@ -1,3 +1,5 @@
+# Editor de curvas
+
 El nodo Editor de Curvas proporciona una interfaz visual para ajustar y refinar una curva. Permite modificar la forma de una curva de entrada y, opcionalmente, visualizar su distribución con un histograma. El nodo entrega la curva modificada para su uso en otras partes de su flujo de trabajo.
 
 ## Entradas

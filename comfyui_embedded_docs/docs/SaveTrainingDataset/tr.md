@@ -1,3 +1,5 @@
+# Eğitim Veri Setini Kaydet
+
 Bu node, hazırlanmış bir eğitim veri kümesini bilgisayarınızın sabit diskine kaydeder. Görüntü gizil değişkenlerini (latents) ve bunlara karşılık gelen metin koşullandırmasını içeren kodlanmış verileri alır ve daha kolay yönetim için bunları parça (shard) adı verilen birden fazla küçük dosyaya düzenler. Node, çıktı dizininizde otomatik olarak bir klasör oluşturur ve hem veri dosyalarını hem de veri kümesini tanımlayan bir meta veri dosyasını kaydeder.
 
 ## Girişler

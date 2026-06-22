@@ -1,3 +1,5 @@
+# Video Triangle CFG Guidance
+
 The VideoTriangleCFGGuidance node applies a triangular classifier-free guidance scaling pattern to video models. It modifies the conditioning scale over time using a triangular wave function that oscillates between the minimum CFG value and the original conditioning scale. This creates a dynamic guidance pattern that can help improve video generation consistency and quality.
 
 ## Inputs

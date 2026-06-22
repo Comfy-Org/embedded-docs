@@ -1,3 +1,5 @@
+# Flux.1 Rellenar Imagen
+
 Pinta imágenes basándose en una máscara y un mensaje de texto. Este nodo utiliza el modelo Flux.1 para rellenar las áreas enmascaradas de una imagen según la descripción de texto proporcionada, generando nuevo contenido que coincida con la imagen circundante.
 
 ## Entradas

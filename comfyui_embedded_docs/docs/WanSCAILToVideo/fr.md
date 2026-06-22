@@ -1,3 +1,5 @@
+# WanSCAILToVideo
+
 Le nœud WanSCAILToVideo prépare le conditionnement et un espace latent vide pour la génération vidéo. Il traite les entrées optionnelles comme les images de référence, les vidéos de pose et les sorties CLIP vision, en les intégrant dans le conditionnement positif et négatif pour un modèle vidéo. Le nœud produit le conditionnement modifié ainsi qu'un tenseur latent vierge aux dimensions vidéo spécifiées.
 
 ## Entrées

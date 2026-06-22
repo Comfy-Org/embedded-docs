@@ -1,3 +1,5 @@
+# HappyHorse 文字轉影片
+
 ## 概述
 
 使用 HappyHorse 模型根據文字提示生成影片。此節點會將您的提示和設定發送到 HappyHorse API，等待影片生成完成，然後下載結果。

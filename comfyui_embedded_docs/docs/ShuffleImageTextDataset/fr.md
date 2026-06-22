@@ -1,3 +1,5 @@
+# Mélanger l'ensemble image-texte
+
 Ce nœud mélange une liste d'images et une liste de textes ensemble, tout en conservant leurs appariements intacts. Il utilise une graine aléatoire pour déterminer l'ordre de mélange, garantissant que les mêmes listes d'entrée seront mélangées de la même manière à chaque réutilisation de la graine.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Luma Concepts
+
 Armazena um ou mais Conceitos de Câmera para uso com os nós Luma Texto para Vídeo e Luma Imagem para Vídeo. Este nó permite selecionar até quatro conceitos de câmera e, opcionalmente, combiná-los com cadeias de conceitos existentes.
 
 ## Entradas

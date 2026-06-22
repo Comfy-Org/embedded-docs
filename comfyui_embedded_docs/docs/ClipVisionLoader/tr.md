@@ -1,3 +1,5 @@
+# CLIP Görü Yükle
+
 Bu düğüm, `ComfyUI/models/clip_vision` klasöründe bulunan modelleri ve `extra_model_paths.yaml` dosyasında yapılandırılmış ek model yollarını otomatik olarak algılar. ComfyUI'yi başlattıktan sonra model eklerseniz, en son model dosyalarının listelenmesi için lütfen **ComfyUI arayüzünü yenileyin**.
 
 ## Girişler

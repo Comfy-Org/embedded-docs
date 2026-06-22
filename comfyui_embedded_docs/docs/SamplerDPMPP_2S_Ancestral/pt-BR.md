@@ -1,3 +1,5 @@
+# SamplerDPMPP_2S_Ancestral
+
 O nó SamplerDPMPP_2S_Ancestral cria um amostrador que utiliza o método de amostragem ancestral DPM++ 2S para gerar imagens. Este amostrador combina elementos determinísticos e estocásticos para produzir resultados variados, mantendo alguma consistência. Ele permite controlar a aleatoriedade e os níveis de ruído durante o processo de amostragem.
 
 ## Entradas

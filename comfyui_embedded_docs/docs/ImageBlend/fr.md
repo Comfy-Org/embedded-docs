@@ -1,3 +1,5 @@
+# Mélange d'images
+
 Le nœud `ImageBlend` est conçu pour fusionner deux images selon un mode de fusion et un facteur de mélange spécifiés. Il prend en charge divers modes de fusion tels que normal, multiplier, écran, superposition, lumière tamisée et différence, permettant des techniques polyvalentes de manipulation et de composition d'images. Ce nœud est essentiel pour créer des images composites en ajustant l'interaction visuelle entre deux couches d'images.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# LTXVProgramador
+
 El nodo `LTXVScheduler` genera valores sigma para procesos de muestreo personalizados. Calcula los parámetros del programa de ruido basándose en la cantidad de tokens en el latente de entrada y aplica una transformación sigmoide para crear el programa de muestreo. El nodo puede opcionalmente estirar los sigmas resultantes para que coincidan con un valor terminal especificado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Apply Qwen Image DiffSynth ControlNet
+
 The QwenImageDiffsynthControlnet node applies a diffusion synthesis control network patch to modify a base model's behavior. It uses an image input and optional mask to guide the model's generation process with adjustable strength, creating a patched model that incorporates the control network's influence for more controlled image synthesis.
 
 ## Inputs

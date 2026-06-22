@@ -1,3 +1,5 @@
+# CompuestoLatenteEnmascarado
+
 El nodo LatentCompositeMasked está diseñado para combinar dos representaciones latentes en coordenadas específicas, utilizando opcionalmente una máscara para una composición más controlada. Este nodo permite crear imágenes latentes complejas superponiendo partes de una imagen sobre otra, con la capacidad de redimensionar la imagen de origen para un ajuste perfecto.
 
 ## Entradas

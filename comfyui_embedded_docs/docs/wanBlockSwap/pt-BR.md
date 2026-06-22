@@ -1,3 +1,5 @@
+# wanBlockSwap
+
 Este nó está obsoleto e não possui função. Ele aceita um modelo como entrada e retorna o mesmo modelo inalterado. A descrição "NOP" indica que ele não realiza nenhuma operação.
 
 ## Entradas

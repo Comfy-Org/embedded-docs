@@ -1,3 +1,5 @@
+# CombineHooksFour
+
 Le nœud **Combine Hooks [4]** fusionne jusqu'à quatre groupes de hooks distincts en un seul groupe combiné. Il accepte toute combinaison des quatre entrées de hooks disponibles et les combine à l'aide du système d'assemblage de hooks de ComfyUI. Cela permet de consolider plusieurs configurations de hooks pour un traitement rationalisé dans les workflows avancés.
 
 ## Entrées

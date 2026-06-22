@@ -1,3 +1,5 @@
+# ImageCouleurEnMasque
+
 Le nœud `ImageColorToMask` est conçu pour convertir une couleur spécifiée dans une image en masque. Il traite une image et une couleur cible, générant un masque où la couleur spécifiée est mise en évidence, facilitant des opérations telles que la segmentation basée sur la couleur ou l'isolation d'objets.
 
 ## Entrées

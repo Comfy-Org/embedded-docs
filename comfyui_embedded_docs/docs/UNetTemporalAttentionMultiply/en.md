@@ -1,3 +1,5 @@
+# UNetTemporalAttentionMultiply
+
 The UNetTemporalAttentionMultiply node applies multiplication factors to different types of attention mechanisms in a temporal UNet model. It modifies the model by adjusting the weights of self-attention and cross-attention layers, distinguishing between structural and temporal components. This allows fine-tuning of how much influence each attention type has on the model's output.
 
 ## Inputs

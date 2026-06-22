@@ -1,3 +1,5 @@
+# HiDream-O1 Referans Görselleri
+
 ## Genel Bakış
 
 Hem pozitif hem de negatif koşullandırmaya referans görseller ekleyin. Bu düğüm, görüntü oluşturma sürecini yönlendirmek için kullanılacak bir veya daha fazla referans görsel sağlamanıza olanak tanır; bu, bir talimata dayalı düzenleme veya konu odaklı kişiselleştirme için yapılabilir.

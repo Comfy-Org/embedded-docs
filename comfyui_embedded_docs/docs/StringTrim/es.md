@@ -1,3 +1,5 @@
+# Recortar
+
 El nodo `StringTrim` elimina los caracteres de espacio en blanco del inicio, final o ambos lados de una cadena de texto. Puedes elegir recortar desde el lado izquierdo, el lado derecho o ambos lados de la cadena. Esto es útil para limpiar entradas de texto eliminando espacios no deseados, tabulaciones o saltos de línea.
 
 ## Entradas

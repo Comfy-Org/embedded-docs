@@ -1,3 +1,5 @@
+# Merge Text Lists (DEPRECATED)
+
 This node merges multiple text lists into a single, combined list. It is designed to receive text inputs as lists and concatenates them together. The node logs the total number of texts in the merged list.
 
 ## Inputs

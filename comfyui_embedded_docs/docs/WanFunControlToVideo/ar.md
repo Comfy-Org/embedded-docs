@@ -1,3 +1,5 @@
+# وان تحكم ممتع إلى فيديو
+
 تمت إضافة هذه العقدة لدعم نموذج Alibaba Wan Fun Control لتوليد الفيديو، وقد أُضيفت بعد [هذا الالتزام](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82).
 
 - **الغرض:** تجهيز معلومات التكييف اللازمة لتوليد الفيديو، باستخدام نموذج Wan 2.1 Fun Control.

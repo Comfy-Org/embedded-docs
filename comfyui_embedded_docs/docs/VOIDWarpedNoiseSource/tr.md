@@ -1,3 +1,5 @@
+# VOIDWarpedNoiseSource
+
 ## Genel Bakış
 
 Bu düğüm, bir LATENT'i (VOIDWarpedNoise düğümünün çıktısı gibi) bir NOISE kaynağına dönüştürür. Bu sayede, daha kontrollü görüntü üretimi için çarpıtılmış gürültüyü SamplerCustomAdvanced düğümüyle kullanabilirsiniz.

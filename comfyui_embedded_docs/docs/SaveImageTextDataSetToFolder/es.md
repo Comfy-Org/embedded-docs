@@ -1,3 +1,5 @@
+# Guardar conjunto de imágenes y textos en carpeta
+
 El nodo Guardar Imagen y Texto en Carpeta guarda una lista de imágenes y sus correspondientes descripciones de texto en una carpeta especificada dentro del directorio de salida de ComfyUI. Por cada imagen guardada como archivo PNG, se crea un archivo de texto con el mismo nombre base para almacenar su descripción. Esto es útil para crear conjuntos de datos organizados de imágenes generadas y sus descripciones.
 
 ## Entradas

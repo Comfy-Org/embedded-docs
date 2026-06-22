@@ -1,3 +1,5 @@
+# Salvar Áudio (Opus)
+
 O nó SaveAudioOpus salva dados de áudio em um arquivo no formato Opus. Ele recebe entrada de áudio e a exporta como um arquivo Opus compactado com configurações de qualidade ajustáveis. O nó gerencia automaticamente a nomeação do arquivo e salva a saída no diretório de saída designado.
 
 ## Entradas

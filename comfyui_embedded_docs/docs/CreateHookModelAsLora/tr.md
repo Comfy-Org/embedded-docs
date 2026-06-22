@@ -1,3 +1,5 @@
+# Modeli LoRA Olarak Kanca Oluştur
+
 Bu düğüm, kontrol noktası ağırlıklarını yükleyerek ve hem model hem de CLIP bileşenlerine güç ayarlamaları uygulayarak bir kanca modelini LoRA (Düşük Dereceli Uyarlama) olarak oluşturur. Mevcut modellere kanca tabanlı bir yaklaşımla LoRA tarzı değişiklikler uygulamanıza olanak tanıyarak, kalıcı model değişiklikleri olmadan ince ayar ve uyarlama yapılmasını sağlar. Düğüm, önceki kancalarla birleşebilir ve verimlilik için yüklenen ağırlıkları önbelleğe alır.
 
 ## Girişler

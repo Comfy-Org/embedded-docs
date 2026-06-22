@@ -1,3 +1,5 @@
+# Pikaswaps
+
 Pika Swaps düğümü, videonuzdaki nesneleri veya bölgeleri yeni bir görüntüyle değiştirir. Değiştirilecek alanları bir maske kullanarak tanımlarsınız ve düğüm, video dizisi boyunca belirtilen içeriği sorunsuz bir şekilde değiştirir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# ModelMergeWAN2_1
+
 O nó ModelMergeWAN2_1 mescla dois modelos WAN2.1 combinando seus componentes usando médias ponderadas. Ele suporta diferentes tamanhos de modelo, incluindo modelos de 1,3B com 30 blocos e modelos de 14B com 40 blocos, com tratamento especial para modelos de imagem para vídeo que incluem um componente extra de incorporação de imagem. Cada componente dos modelos pode ser ponderado individualmente para controlar a proporção de mesclagem entre os dois modelos de entrada.
 
 ## Entradas

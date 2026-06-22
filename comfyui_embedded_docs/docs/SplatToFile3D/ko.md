@@ -1,4 +1,4 @@
-# SplatToFile3D 노드 문서
+# 3D 파일 생성(splat에서)
 
 ## 개요
 

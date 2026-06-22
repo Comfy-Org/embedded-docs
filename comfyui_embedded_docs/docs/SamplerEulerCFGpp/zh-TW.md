@@ -1,3 +1,5 @@
+# SamplerEulerCFG++
+
 SamplerEulerCFGpp 節點提供了一種 Euler CFG++ 取樣方法，用於生成輸出。此節點提供兩種不同實作版本的 Euler CFG++ 取樣器，可根據使用者偏好進行選擇。
 
 ## 輸入

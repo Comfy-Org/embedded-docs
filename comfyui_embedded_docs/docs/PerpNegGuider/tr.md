@@ -1,3 +1,5 @@
+# PerpNegRehberi
+
 PerpNegGuider düğümü, dik negatif koşullandırma kullanarak görüntü oluşturmayı kontrol etmek için bir yönlendirme sistemi oluşturur. Pozitif, negatif ve boş koşullandırma girdilerini alır ve oluşturma sürecini yönlendirmek için özel bir yönlendirme algoritması uygular. Bu düğüm, deneysel testler için tasarlanmıştır ve yönlendirme gücü ile negatif ölçeklendirme üzerinde hassas kontrol sağlar.
 
 ## Girdiler

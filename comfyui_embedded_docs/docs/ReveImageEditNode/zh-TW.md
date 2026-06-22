@@ -1,4 +1,4 @@
-# Reve Image Edit 節點
+# Reve 圖像編輯
 
 Reve Image Edit 節點允許您根據文字描述修改現有圖片。它使用 Reve API 來解讀您的指示，並將要求的變更套用到您提供的圖片上。
 

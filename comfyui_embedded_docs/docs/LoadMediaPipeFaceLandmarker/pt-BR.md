@@ -1,4 +1,4 @@
-# Visão Geral
+# Carregar MediaPipe Face Landmarker
 
 Este nó carrega um modelo MediaPipe Face Landmarker v2, que pode detectar rostos e pontos faciais de referência (como olhos, nariz e boca) em imagens. Ele contém duas variantes de detecção (curto alcance e alcance total) juntamente com dados de malha compartilhados, blendshapes e geometria canônica para análise facial.
 

@@ -1,3 +1,5 @@
+# Charger Image
+
 Voici la traduction en français de la documentation du nœud LoadImage :
 
 Le nœud LoadImage est conçu pour charger et prétraiter des images à partir d'un chemin spécifié. Il gère les formats d'image avec plusieurs trames, applique les transformations nécessaires telles que la rotation basée sur les données EXIF, normalise les valeurs des pixels et génère éventuellement un masque pour les images comportant un canal alpha. Ce nœud est essentiel pour préparer les images en vue d'un traitement ou d'une analyse ultérieure dans un pipeline.

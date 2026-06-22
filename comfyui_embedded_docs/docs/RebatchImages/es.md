@@ -1,3 +1,5 @@
+# Reagrupar imágenes
+
 El nodo RebatchImages está diseñado para reorganizar un lote de imágenes en una nueva configuración de lotes, ajustando el tamaño del lote según lo especificado. Este proceso es esencial para gestionar y optimizar el procesamiento de datos de imagen en operaciones por lotes, garantizando que las imágenes se agrupen según el tamaño de lote deseado para un manejo eficiente.
 
 ## Entradas

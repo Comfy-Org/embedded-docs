@@ -1,3 +1,5 @@
+# Cor para RGB Int
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/en.md)
 
 O nó ColorToRGBInt converte uma cor especificada em formato hexadecimal em um único valor inteiro. Ele recebe uma string de cor como `#FF5733` e calcula o inteiro RGB correspondente combinando os componentes vermelho, verde e azul.

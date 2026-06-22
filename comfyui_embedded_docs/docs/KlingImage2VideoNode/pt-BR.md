@@ -1,3 +1,5 @@
+# Kling Imagem (Primeiro Quadro) para Vídeo
+
 O nó Kling Image to Video gera um vídeo a partir de uma imagem de referência inicial usando prompts de texto. Ele utiliza uma imagem como primeiro quadro e cria uma sequência de vídeo com base em descrições de texto positivas e negativas, com opções configuráveis para modelo, duração, proporção de tela e modo de geração.
 
 ## Entradas

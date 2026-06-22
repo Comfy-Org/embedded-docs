@@ -1,3 +1,5 @@
+# Kling Video Uzatma
+
 ComfyUI Kling Video Uzatma Düğümü, diğer Kling düğümleri tarafından oluşturulan videoları uzatmanıza olanak tanır. Video kimliği ile tanımlanan mevcut bir videoyu alır ve metin istemlerinize dayanarak ek içerik oluşturur. Düğüm, uzatma isteğinizi Kling API'sine göndererek çalışır ve uzatılmış videoyu yeni kimliği ve süresiyle birlikte döndürür.
 
 ## Girişler

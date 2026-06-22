@@ -1,3 +1,5 @@
+# KatıMaske
+
 SolidMask düğümü, tüm alanı boyunca belirtilen değerde tek tip bir maske oluşturur. Belirli boyutlarda ve yoğunlukta maskeler oluşturmak için tasarlanmıştır; çeşitli görüntü işleme ve maskeleme görevlerinde kullanışlıdır.
 
 ## Girişler

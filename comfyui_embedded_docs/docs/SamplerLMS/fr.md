@@ -1,3 +1,5 @@
+# SamplerLMS
+
 Le nœud SamplerLMS crée un échantillonneur par moindres carrés moyens (LMS) destiné aux modèles de diffusion. Il génère un objet échantillonneur pouvant être utilisé dans le processus d'échantillonnage, vous permettant de contrôler l'ordre de l'algorithme LMS pour la stabilité numérique et la précision.
 
 ## Entrées

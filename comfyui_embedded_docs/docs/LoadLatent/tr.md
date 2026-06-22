@@ -1,3 +1,5 @@
+# GizliYükle
+
 LoadLatent düğümü, giriş dizinindeki .latent dosyalarından önceden kaydedilmiş gizli (latent) temsilleri yükler. Dosyadaki gizli tensör verilerini okur ve gerekli ölçeklendirme ayarlamalarını uygulayarak, gizli verileri diğer düğümlerde kullanılmak üzere döndürür.
 
 ## Girişler

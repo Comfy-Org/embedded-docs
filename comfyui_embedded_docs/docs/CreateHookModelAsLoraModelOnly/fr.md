@@ -1,3 +1,5 @@
+# Créer un modèle de crochet comme LoRA (MO)
+
 Ce nœud crée un hook qui applique un modèle LoRA (Low-Rank Adaptation) pour modifier uniquement la composante modèle d’un réseau neuronal. Il charge un fichier de point de contrôle et l’applique avec une force spécifiée au modèle, tout en laissant la composante CLIP inchangée. Il s’agit d’un nœud expérimental qui étend les fonctionnalités de la classe de base CreateHookModelAsLora.
 
 ## Entrées

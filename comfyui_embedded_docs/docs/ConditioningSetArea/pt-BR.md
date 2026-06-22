@@ -1,3 +1,5 @@
+# Condicionamento (Definir Área)
+
 Este nó foi projetado para modificar as informações de condicionamento, definindo áreas específicas dentro do contexto de condicionamento. Ele permite a manipulação espacial precisa dos elementos de condicionamento, possibilitando ajustes e aprimoramentos direcionados com base em dimensões e intensidade especificadas.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# Visualizar Nuvem de Pontos
+# Pré-visualizar Nuvem de Pontos
 
 O nó Visualizar Nuvem de Pontos permite visualizar um arquivo de nuvem de pontos 3D na interface do ComfyUI. Ele salva a nuvem de pontos em um arquivo temporário e a exibe em uma janela de visualização 3D, transmitindo os dados do modelo e as configurações da viewport para processamento posterior.
 

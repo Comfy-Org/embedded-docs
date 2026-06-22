@@ -1,3 +1,5 @@
+# Desenhar BBoxes
+
 O nó DrawBBoxes visualiza resultados de detecção de objetos desenhando caixas delimitadoras, rótulos e pontuações de confiança em uma imagem. Se nenhuma imagem de entrada for fornecida, ele cria uma tela em branco grande o suficiente para conter todas as caixas desenhadas. Ele suporta processamento em lote, permitindo desenhar diferentes conjuntos de detecções para múltiplas imagens ou repetir as mesmas detecções em um lote.
 
 ## Entradas

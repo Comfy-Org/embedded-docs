@@ -1,3 +1,5 @@
+# Ideogram V4
+
 Voici la traduction en français de la documentation du nœud ComfyUI « Ideogram V4 », conforme à vos règles :
 
 # Ideogram V4

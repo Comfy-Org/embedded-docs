@@ -1,3 +1,5 @@
+# GuardarWEBM
+
 El nodo SaveWEBM guarda una secuencia de imágenes como un archivo de video WEBM. Toma múltiples imágenes de entrada y las codifica en un video utilizando el códec VP9 o AV1 con configuraciones de calidad y velocidad de fotogramas ajustables. El archivo de video resultante se guarda en el directorio de salida con metadatos que incluyen información de la instrucción (prompt).
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CLIP Text Encode pour Lumina2
+
 Voici la traduction en français de la documentation du nœud CLIPTextEncodeLumina2 :
 
 Le nœud CLIP Text Encode pour Lumina2 encode une invite système et une invite utilisateur à l'aide d'un modèle CLIP en un embedding qui peut guider le modèle de diffusion pour générer des images spécifiques. Il combine une invite système prédéfinie avec votre invite texte personnalisée et les traite via le modèle CLIP pour créer des données de conditionnement destinées à la génération d'images.

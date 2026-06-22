@@ -1,4 +1,4 @@
-# Appliquer le Conditionnement SeedVR2
+# SeedVR2Conditioning
 
 Ce nœud construit un conditionnement positif et négatif à partir d'un latent VAE pour une utilisation avec le modèle SeedVR2. Il prépare les données de conditionnement qui guident le processus de génération d'image ou de vidéo.
 

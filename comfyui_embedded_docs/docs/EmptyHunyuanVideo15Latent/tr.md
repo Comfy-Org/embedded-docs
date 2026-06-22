@@ -1,3 +1,5 @@
+# Boş HunyuanVideo 1.5 Latent
+
 Bu düğüm, HunyuanVideo 1.5 modeliyle kullanılmak üzere özel olarak biçimlendirilmiş boş bir gizli tensör oluşturur. Modelin gizli alanı için doğru kanal sayısına ve uzamsal boyutlara sahip sıfırlardan oluşan bir tensör tahsis ederek video oluşturma için boş bir başlangıç noktası üretir.
 
 ## Girişler

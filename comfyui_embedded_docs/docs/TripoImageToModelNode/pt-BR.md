@@ -1,3 +1,5 @@
+# Tripo: Imagem para Modelo
+
 Gera modelos 3D de forma síncrona com base em uma única imagem usando a API da Tripo. Este nó recebe uma imagem de entrada e a converte em um modelo 3D com várias opções de personalização para textura, qualidade e propriedades do modelo.
 
 ## Entradas

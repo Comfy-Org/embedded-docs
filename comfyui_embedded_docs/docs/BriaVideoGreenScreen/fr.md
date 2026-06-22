@@ -1,4 +1,4 @@
-# Fond Vert Vidéo Bria
+# Bria Video Green Screen
 
 Ce nœud remplace l'arrière-plan d'une vidéo par un écran de fond vert unicolore à l'aide de l'API Bria. Il traite la vidéo d'entrée et renvoie une nouvelle vidéo dont l'arrière-plan d'origine a été supprimé et remplacé par une couleur de fond vert ou bleu uniforme.
 

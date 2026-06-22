@@ -1,3 +1,5 @@
+# ImagenLatenteHunyuanVacía
+
 El nodo EmptyHunyuanImageLatent crea un tensor latente vacío con dimensiones específicas para su uso con modelos de generación de imágenes Hunyuan. Genera un punto de partida en blanco que puede procesarse a través de nodos posteriores en el flujo de trabajo. El nodo permite especificar el ancho, alto y tamaño de lote del espacio latente.
 
 ## Entradas

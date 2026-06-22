@@ -1,3 +1,5 @@
+# LTXVAddGuide
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/en.md)
 
 O nó LTXVAddGuide adiciona orientação de condicionamento de vídeo a sequências latentes, codificando imagens ou vídeos de entrada e incorporando-os como quadros-chave nos dados de condicionamento. Ele processa a entrada através de um codificador VAE e posiciona estrategicamente os latentes resultantes em posições de quadro especificadas, atualizando tanto o condicionamento positivo quanto o negativo com informações dos quadros-chave. O nó lida com restrições de alinhamento de quadros e permite controle sobre a intensidade da influência do condicionamento.

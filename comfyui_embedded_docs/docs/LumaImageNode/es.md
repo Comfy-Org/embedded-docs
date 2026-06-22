@@ -1,3 +1,5 @@
+# Luma Texto a Imagen
+
 Genera imágenes de forma síncrona basándose en un texto de descripción y una relación de aspecto. Este nodo crea imágenes utilizando descripciones textuales y permite controlar las dimensiones y el estilo de la imagen a través de diversas entradas de referencia, incluyendo imágenes de personajes y de estilo.
 
 ## Entradas

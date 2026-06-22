@@ -1,3 +1,5 @@
+# ElevenLabs Fala para Fala
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToSpeech/en.md)
 
 O nó ElevenLabs Speech to Speech transforma um arquivo de áudio de entrada de uma voz para outra. Ele usa a API ElevenLabs para converter a fala, preservando o conteúdo original e o tom emocional do áudio.

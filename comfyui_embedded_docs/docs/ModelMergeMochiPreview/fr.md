@@ -1,3 +1,5 @@
+# Aperçu de la Fusion de Modèles Mochi
+
 Ce nœud fusionne deux modèles d'IA en utilisant une approche par blocs avec un contrôle fin sur différents composants du modèle. Il vous permet de mélanger des modèles en ajustant les poids d'interpolation pour des sections spécifiques, notamment les fréquences positionnelles, les couches d'incorporation (embedding) et les blocs de transformeur individuels. Le processus de fusion combine les architectures et les paramètres des deux modèles d'entrée selon les valeurs de poids spécifiées.
 
 ## Entrées

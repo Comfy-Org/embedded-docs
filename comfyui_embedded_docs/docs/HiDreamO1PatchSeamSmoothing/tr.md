@@ -1,3 +1,5 @@
+# HiDream-O1 Yama Dikiş Yumuşatma
+
 ## Genel Bakış
 
 Bu düğüm, örnekleme sürecinin sonraki aşamasında model çıktısını birden fazla kaydırılmış yama ızgarası konumunda ortalamasını alarak HiDream-O1 modeli tarafından oluşturulan görsellerdeki görünür dikişleri azaltır. Modeli, hafifçe farklı görüntü hizalamalarıyla birkaç kez çalıştırıp sonuçları birleştirerek çalışır; bu da yama sınırlarında oluşabilen ızgara benzeri yapaylıkların giderilmesine yardımcı olur.

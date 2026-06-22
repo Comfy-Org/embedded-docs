@@ -1,3 +1,5 @@
+# WanImageToVideo
+
 El nodo WanImageToVideo prepara representaciones de condicionamiento y latentes para tareas de generación de video. Crea un espacio latente vacío para la generación de video y puede incorporar opcionalmente imágenes iniciales y salidas de CLIP vision para guiar el proceso de generación de video. El nodo modifica tanto las entradas de condicionamiento positivo como negativo según la imagen y los datos de visión proporcionados.
 
 ## Entradas

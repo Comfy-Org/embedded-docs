@@ -1,3 +1,5 @@
+# SetUnionControlNetType
+
 ## 概述
 
 SetUnionControlNetType 節點允許您指定要用於條件控制的網路類型。它會接收現有的控制網路，並根據您的選擇設定其控制類型，從而建立一個具有指定類型配置的修改版控制網路副本。

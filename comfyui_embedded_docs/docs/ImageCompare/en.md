@@ -1,3 +1,5 @@
+# Compare Images
+
 The Image Compare node provides a visual interface to compare two images side-by-side using a draggable slider. It is designed as an output node, meaning it does not pass data to other nodes but instead displays the images directly in the user interface for inspection.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Eğitim Veriseti Oluştur
+
 Bu düğüm, görüntüleri ve metinleri kodlayarak eğitim için veri hazırlar. Bir görüntü listesi ve buna karşılık gelen bir metin açıklaması listesi alır, ardından görüntüleri gizil temsillere dönüştürmek için bir VAE modeli ve metni koşullandırma verisine dönüştürmek için bir CLIP modeli kullanır. Ortaya çıkan eşleştirilmiş gizil temsiller ve koşullandırmalar, eğitim iş akışlarında kullanıma hazır listeler olarak çıktılanır.
 
 ## Girişler

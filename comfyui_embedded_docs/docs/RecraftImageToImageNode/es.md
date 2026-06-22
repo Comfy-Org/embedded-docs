@@ -1,3 +1,5 @@
+# Recraft Imagen a Imagen
+
 Este nodo modifica una imagen existente basándose en un texto de instrucción y un parámetro de intensidad. Utiliza la API de Recraft para transformar la imagen de entrada según la descripción proporcionada, manteniendo cierto grado de similitud con la imagen original en función del valor de intensidad.
 
 ## Entradas

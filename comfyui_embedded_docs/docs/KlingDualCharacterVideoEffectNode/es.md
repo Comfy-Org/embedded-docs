@@ -1,3 +1,5 @@
+# Efectos de Video de Doble Personaje Kling
+
 El Nodo de Efecto de Video de Doble Personaje Kling crea videos con efectos especiales basados en la escena seleccionada. Toma dos imágenes y posiciona la primera imagen en el lado izquierdo y la segunda imagen en el lado derecho del video compuesto. Se aplican diferentes efectos visuales dependiendo de la escena de efecto elegida.
 
 ## Entradas

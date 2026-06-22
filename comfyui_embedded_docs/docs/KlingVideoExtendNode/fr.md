@@ -1,3 +1,5 @@
+# Kling Video Extend
+
 Voici la traduction de la documentation du nœud Kling Video Extend Node :
 
 Le nœud Kling Video Extend vous permet de prolonger des vidéos créées par d'autres nœuds Kling. Il prend une vidéo existante identifiée par son ID vidéo et génère du contenu supplémentaire basé sur vos invites textuelles. Le nœud fonctionne en envoyant votre demande de prolongation à l'API Kling et renvoie la vidéo prolongée avec son nouvel ID et sa durée.

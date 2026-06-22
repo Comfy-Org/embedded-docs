@@ -1,4 +1,4 @@
-# LoadAudio Düğümü
+# Ses Yükle
 
 LoadAudio düğümü, girdi dizininden ses dosyalarını yükler ve ComfyUI'deki diğer ses düğümleri tarafından işlenebilecek bir formata dönüştürür. Ses dosyalarını okuyarak hem dalga biçimi verilerini hem de örnekleme hızını çıkarır ve bunları aşağı yönlü ses işleme görevleri için kullanılabilir hale getirir.
 

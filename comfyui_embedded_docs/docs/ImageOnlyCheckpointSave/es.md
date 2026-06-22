@@ -1,3 +1,5 @@
+# GuardarPuntoDeControlSoloDeImagen
+
 El nodo ImageOnlyCheckpointSave guarda un archivo de checkpoint que contiene un modelo, codificador CLIP de visión y VAE. Crea un archivo safetensors con el prefijo de nombre de archivo especificado y lo almacena en el directorio de salida. Este nodo está diseñado específicamente para guardar componentes de modelo relacionados con imágenes juntos en un único archivo de checkpoint.
 
 ## Entradas

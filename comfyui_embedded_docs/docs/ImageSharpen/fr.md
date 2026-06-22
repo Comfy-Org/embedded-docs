@@ -1,3 +1,5 @@
+# Affiner l'image
+
 Le nœud ImageSharpen améliore la netteté d'une image en accentuant ses contours et ses détails. Il applique un filtre de renforcement à l'image, dont l'intensité et le rayon peuvent être ajustés, rendant ainsi l'image plus définie et plus nette.
 
 ## Entrées

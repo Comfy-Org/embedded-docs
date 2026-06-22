@@ -1,4 +1,4 @@
-# VAEDecodeTripoSplat
+# TripoSplat 解碼
 
 將 TripoSplat 潛在表示解碼為 3D 高斯潑濺。此節點接收從 TripoSplat 模型取樣的潛在變量，並將其重建為一組 3D 高斯，可透過修改生成的高斯數量來調整密度。
 

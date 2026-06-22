@@ -1,3 +1,5 @@
+# Wan 2.7 Référence vers Vidéo
+
 Ce nœud génère une vidéo mettant en scène une personne ou un objet à partir de documents de référence fournis. Il utilise le modèle Wan 2.7 pour créer des vidéos à partir d'une invite textuelle, prenant en charge les performances d'un seul personnage et les interactions entre plusieurs personnages. Vous devez fournir au moins une vidéo ou une image de référence pour que la génération fonctionne.
 
 ## Entrées

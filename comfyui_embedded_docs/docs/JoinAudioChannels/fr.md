@@ -1,3 +1,5 @@
+# Fusionner les canaux audio
+
 Le nœud **Join Audio Channels** combine deux entrées audio mono distinctes en une seule sortie audio stéréo. Il prend un canal gauche et un canal droit, s'assure qu'ils ont des fréquences d'échantillonnage et des longueurs compatibles, puis les fusionne en une forme d'onde audio à deux canaux.
 
 ## Entrées

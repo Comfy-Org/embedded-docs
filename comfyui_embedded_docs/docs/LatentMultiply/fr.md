@@ -1,3 +1,5 @@
+# Multiplier Latent
+
 Le nœud LatentMultiply est conçu pour mettre à l'échelle la représentation latente d'échantillons à l'aide d'un multiplicateur spécifié. Cette opération permet d'ajuster l'intensité ou l'amplitude des caractéristiques dans l'espace latent, facilitant le réglage fin du contenu généré ou l'exploration de variations dans une direction latente donnée.
 
 ## Entrées

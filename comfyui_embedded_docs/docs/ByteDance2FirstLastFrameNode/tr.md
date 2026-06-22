@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 İlk-Son-Kareden Videoya
+
 Bu düğüm, ByteDance'in Seedance 2.0 modelini kullanarak bir video oluşturur. Videoyu bir metin istemine ve gerekli bir ilk kare görüntüsüne dayanarak oluşturur. Video dizisinin sonunu yönlendirmek için isteğe bağlı olarak bir son kare görüntüsü sağlayabilirsiniz.
 
 ## Girişler

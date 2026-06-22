@@ -1,3 +1,5 @@
+# Espelhar Imagem
+
 O nó ImageFlip inverte imagens ao longo de diferentes eixos. Ele pode inverter imagens verticalmente ao longo do eixo x ou horizontalmente ao longo do eixo y. O nó utiliza operações torch.flip para realizar a inversão com base no método selecionado.
 
 ## Entradas

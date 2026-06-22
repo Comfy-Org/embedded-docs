@@ -1,3 +1,5 @@
+# Mise à l'échelle Epsilon
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Ce nœud implémente la méthode d'échelle epsilon (Epsilon Scaling) issue de l'article de recherche « Elucidating the Exposure Bias in Diffusion Models » (arxiv.org/abs/2308.15321v6). Il fonctionne en mettant à l'échelle le bruit prédit pendant le processus d'échantillonnage afin de réduire le biais d'exposition, ce qui peut améliorer la qualité des images générées. Cette implémentation utilise le « planning uniforme » recommandé par l'article pour son aspect pratique et son efficacité.

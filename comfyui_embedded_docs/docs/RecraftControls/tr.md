@@ -1,3 +1,5 @@
+# Recraft Kontrolleri
+
 Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftControls/en.md)
 
 Recraft oluşturmayı özelleştirmek için Recraft Kontrolleri oluşturur. Bu düğüm, Recraft görüntü oluşturma işlemi sırasında kullanılacak renk ayarlarını yapılandırmanıza olanak tanır.

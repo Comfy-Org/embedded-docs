@@ -1,3 +1,5 @@
+# Dış Boyama için Görüntüyü Doldur
+
 Bu düğüm, görüntülerin etrafına dolgu ekleyerek onları dışa boyama (outpainting) işlemine hazırlamak için tasarlanmıştır. Görüntü boyutlarını, dışa boyama algoritmalarıyla uyumluluğu sağlayacak şekilde ayarlar ve orijinal sınırların ötesinde genişletilmiş görüntü alanlarının oluşturulmasını kolaylaştırır.
 
 ## Girişler

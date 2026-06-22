@@ -1,3 +1,5 @@
+# Aplicar Modelo de Estilo
+
 Este nodo aplica un modelo de estilo a un condicionamiento dado, mejorando o alterando su estilo basándose en la salida de un modelo de visión CLIP. Integra el condicionamiento del modelo de estilo en el condicionamiento existente, permitiendo una combinación fluida de estilos en el proceso de generación.
 
 ## Entradas

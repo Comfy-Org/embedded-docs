@@ -1,3 +1,5 @@
+# Recraft Texto para Vetor
+
 Gera ilustrações vetoriais SVG de forma síncrona com base em um prompt de texto e resolução. Este nó envia seu prompt para a API Recraft e retorna o conteúdo SVG gerado.
 
 ## Entradas

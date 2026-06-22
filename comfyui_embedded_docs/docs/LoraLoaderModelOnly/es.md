@@ -1,3 +1,5 @@
+# CargadorLoRAModeloSolo
+
 Este nodo detecta los modelos ubicados en la carpeta `ComfyUI/models/loras`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo desde la carpeta correspondiente.
 
 Este nodo se especializa en cargar un modelo LoRA sin requerir un modelo CLIP, enfocándose en mejorar o modificar un modelo determinado según los parámetros de LoRA. Permite el ajuste dinámico de la intensidad del modelo mediante parámetros LoRA, facilitando un control preciso sobre el comportamiento del modelo.

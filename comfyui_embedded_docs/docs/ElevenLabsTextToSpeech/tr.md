@@ -1,4 +1,4 @@
-# ElevenLabs Metin-Konuşma Düğümü
+# ElevenLabs Metinden Konuşmaya
 
 ElevenLabs Metin-Konuşma düğümü, yazılı metni ElevenLabs API'sini kullanarak sesli konuşmaya dönüştürür. Belirli bir ses seçmenize ve stabilite, hız ve stil gibi çeşitli konuşma özelliklerini ince ayarlayarak özelleştirilmiş bir ses çıktısı oluşturmanıza olanak tanır.
 

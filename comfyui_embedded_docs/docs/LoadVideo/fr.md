@@ -1,3 +1,5 @@
+# Charger une vidéo
+
 Voici la traduction en français de la documentation du nœud Load Video, en respectant vos règles :
 
 Le nœud Load Video charge des fichiers vidéo depuis le répertoire d'entrée et les rend disponibles pour le traitement dans le workflow. Il lit les fichiers vidéo depuis le dossier d'entrée désigné et les produit sous forme de données vidéo pouvant être connectées à d'autres nœuds de traitement vidéo.

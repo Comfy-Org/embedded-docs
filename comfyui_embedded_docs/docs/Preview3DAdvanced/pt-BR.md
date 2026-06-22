@@ -1,4 +1,4 @@
-# Pré-visualização 3D (Avançado)
+# Visualizar 3D (Avançado)
 
 Este nó fornece uma pré-visualização avançada de modelos 3D com saída de informações da câmera e do modelo. Ele salva o modelo 3D em um arquivo temporário e o exibe na interface, enquanto também transmite os dados do modelo, informações da câmera e dimensões da janela de visualização para processamento posterior.
 

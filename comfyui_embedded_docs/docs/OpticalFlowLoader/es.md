@@ -1,3 +1,5 @@
+# Cargar modelo de flujo óptico
+
 ## Descripción general
 
 Carga un modelo de flujo óptico desde la carpeta `models/optical_flow/`. Actualmente, solo se admite el formato RAFT-large de torchvision, que es el modelo utilizado por el nodo VOIDWarpedNoise. ComfyUI no descarga los pesos del flujo óptico automáticamente; debes colocar el archivo de checkpoint manualmente en el directorio `models/optical_flow/`.

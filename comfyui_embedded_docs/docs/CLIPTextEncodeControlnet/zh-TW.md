@@ -1,3 +1,5 @@
+# CLIPTextEncodeControlnet
+
 CLIPTextEncodeControlnet 節點使用 CLIP 模型處理文字輸入，並將其與現有的條件資料結合，為控制網路應用程式建立增強的條件輸出。它會將輸入文字進行分詞，透過 CLIP 模型進行編碼，並將產生的嵌入作為交叉注意力控制網路參數添加到提供的條件資料中。
 
 ## 輸入

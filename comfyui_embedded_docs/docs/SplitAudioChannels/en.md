@@ -1,3 +1,5 @@
+# Split Audio Channels
+
 The SplitAudioChannels node separates stereo audio into individual left and right channels. It takes a stereo audio input with two channels and outputs two separate audio streams, one for the left channel and one for the right channel.
 
 ## Inputs

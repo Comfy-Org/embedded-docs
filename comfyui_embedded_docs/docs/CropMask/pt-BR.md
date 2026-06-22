@@ -1,3 +1,5 @@
+# Cortar Máscara
+
 O nó **CropMask** foi projetado para recortar uma área específica de uma máscara fornecida. Ele permite que os usuários definam a região de interesse especificando coordenadas e dimensões, extraindo efetivamente uma parte da máscara para processamento ou análise posterior.
 
 ## Entradas

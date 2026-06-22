@@ -1,3 +1,5 @@
+# WanMoveVisualizeTracks
+
 El nodo WanMoveVisualizeTracks superpone datos de seguimiento de movimiento sobre una secuencia de imágenes o fotogramas de video. Dibuja representaciones visuales de los puntos rastreados, incluyendo sus trayectorias de movimiento y posiciones actuales, haciendo que los datos de movimiento sean visibles y más fáciles de analizar.
 
 ## Entradas

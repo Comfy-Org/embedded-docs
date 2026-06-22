@@ -1,3 +1,5 @@
+# CLIPMergeAdd
+
 El nodo CLIPMergeAdd combina dos modelos CLIP añadiendo parches del segundo modelo al primero. Crea una copia del primer modelo CLIP e incorpora selectivamente parches clave del segundo modelo, excluyendo los ID de posición y los parámetros de escala logit. Esto permite fusionar componentes de modelos CLIP mientras se preserva la estructura del modelo base.
 
 ## Entradas

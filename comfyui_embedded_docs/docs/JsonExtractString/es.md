@@ -1,3 +1,5 @@
+# Extraer cadena de JSON
+
 El nodo JsonExtractString lee una cadena de texto que contiene datos JSON y extrae el valor asociado a una clave específica. Convierte el valor extraído en una cadena. Si el JSON no es válido, no se encuentra la clave o el valor es nulo, el nodo devuelve una cadena vacía.
 
 ## Entradas

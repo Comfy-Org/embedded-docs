@@ -1,3 +1,5 @@
+# Composição de Mask
+
 Este nó é especializado em combinar duas entradas de máscara por meio de uma variedade de operações, como adição, subtração e operações lógicas, para produzir uma nova máscara modificada. Ele lida abstratamente com a manipulação de dados de máscara para obter efeitos de mascaramento complexos, servindo como um componente crucial em fluxos de trabalho de edição e processamento de imagens baseados em máscaras.
 
 ## Entradas

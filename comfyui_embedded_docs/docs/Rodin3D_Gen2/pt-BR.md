@@ -1,3 +1,5 @@
+# Rodin 3D Gerar - Geração Gen-2
+
 O nó Rodin3D_Gen2 gera ativos 3D usando a API Rodin. Ele recebe imagens de entrada e as converte em modelos 3D com vários tipos de material e contagens de polígonos. O nó gerencia automaticamente todo o processo de geração, incluindo criação de tarefas, verificação de status e download de arquivos.
 
 ## Entradas

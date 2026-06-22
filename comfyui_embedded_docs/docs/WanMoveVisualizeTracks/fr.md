@@ -1,3 +1,5 @@
+# WanMoveVisualizeTracks
+
 Le nœud WanMoveVisualizeTracks superpose les données de suivi de mouvement sur une séquence d'images ou de trames vidéo. Il dessine des représentations visuelles des points suivis, incluant leurs trajectoires et positions actuelles, rendant les données de mouvement visibles et plus faciles à analyser.
 
 ## Entrées

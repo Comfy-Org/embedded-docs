@@ -1,3 +1,5 @@
+# Remplacer le texte
+
 Voici la traduction en français de la documentation du nœud Replace Text, en respectant vos règles :
 
 Le nœud Replace Text effectue une simple substitution de texte. Il recherche un texte spécifié dans l'entrée et remplace chaque occurrence par un nouveau texte. L'opération est appliquée à toutes les entrées de texte fournies au nœud.

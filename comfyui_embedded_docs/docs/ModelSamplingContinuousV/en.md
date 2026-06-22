@@ -1,3 +1,5 @@
+# ModelSamplingContinuousV
+
 The ModelSamplingContinuousV node modifies a model's sampling behavior by applying continuous V-prediction sampling parameters. It creates a clone of the input model and configures it with custom sigma range settings for advanced sampling control. This allows users to fine-tune the sampling process with specific minimum and maximum sigma values.
 
 ## Inputs

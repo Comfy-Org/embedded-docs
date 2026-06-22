@@ -1,3 +1,5 @@
+# Unir Imagem com Alfa
+
 Este nó é projetado para operações de composição, especificamente para unir uma imagem à sua máscara alfa correspondente, produzindo uma única imagem de saída. Ele combina efetivamente o conteúdo visual com informações de transparência, permitindo a criação de imagens onde certas áreas são transparentes ou semitransparentes.
 
 ## Entradas

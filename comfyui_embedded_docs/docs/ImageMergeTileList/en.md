@@ -1,3 +1,5 @@
+# Merge List of Tiles to Image
+
 This node takes a list of image tiles and merges them back into a single, larger image. It is designed to reconstruct an image that was previously split into a grid of overlapping tiles, using a weighted blending technique to create a seamless final result.
 
 ## Inputs

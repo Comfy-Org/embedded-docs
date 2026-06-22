@@ -1,3 +1,5 @@
+# LTXVCropGuides
+
 O nó LTXVCropGuides processa entradas de condicionamento e latentes para geração de vídeo, removendo informações de keyframes e ajustando as dimensões latentes. Ele recorta a imagem latente e a máscara de ruído para excluir seções de keyframes, enquanto limpa os índices de keyframes das entradas de condicionamento positivo e negativo. Isso prepara os dados para fluxos de trabalho de geração de vídeo que não exigem orientação por keyframes.
 
 ## Entradas

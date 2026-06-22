@@ -1,3 +1,5 @@
+# LMS Örnekleyici
+
 SamplerLMS düğümü, difüzyon modellerinde kullanılmak üzere bir En Küçük Kareler Ortalaması (LMS) örnekleyicisi oluşturur. Örnekleme sürecinde kullanılabilecek bir örnekleyici nesnesi üretir ve sayısal kararlılık ile doğruluk için LMS algoritmasının sırasını kontrol etmenize olanak tanır.
 
 ## Girişler

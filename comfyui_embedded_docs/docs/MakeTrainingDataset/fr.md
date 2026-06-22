@@ -1,3 +1,5 @@
+# Créer un jeu de données d’entraînement
+
 Ce nœud prépare les données pour l'entraînement en encodant les images et le texte. Il prend une liste d'images et une liste correspondante de légendes textuelles, puis utilise un modèle VAE pour convertir les images en représentations latentes et un modèle CLIP pour convertir le texte en données de conditionnement. Les latents et conditionnements appariés résultants sont produits sous forme de listes, prêts à être utilisés dans les workflows d'entraînement.
 
 ## Entrées

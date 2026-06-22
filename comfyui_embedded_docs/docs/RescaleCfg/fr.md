@@ -1,3 +1,5 @@
+# RescaleCFG
+
 Voici la traduction en français de la documentation du nœud RescaleCFG :
 
 Le nœud RescaleCFG est conçu pour ajuster les échelles de conditionnement et de non-conditionnement de la sortie d'un modèle en fonction d'un multiplicateur spécifié, afin d'obtenir un processus de génération plus équilibré et contrôlé. Il fonctionne en redimensionnant la sortie du modèle pour modifier l'influence des composants conditionnés et non conditionnés, améliorant ainsi potentiellement les performances ou la qualité de la sortie du modèle.

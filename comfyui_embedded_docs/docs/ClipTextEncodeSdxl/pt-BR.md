@@ -1,3 +1,5 @@
+# CLIPTextEncodeSDXL
+
 Este nó foi projetado para codificar entrada de texto usando um modelo CLIP especificamente personalizado para a arquitetura SDXL. Ele utiliza um sistema de codificação dupla (CLIP-L e CLIP-G) para processar descrições textuais, resultando em uma geração de imagens mais precisa.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# LatentCutToBatch
+
 El nodo LatentCutToBatch divide una representación latente a lo largo de una dimensión seleccionada en múltiples segmentos y los apila en un nuevo lote. Esto permite procesar diferentes partes de una muestra latente de forma independiente.
 
 ## Entradas

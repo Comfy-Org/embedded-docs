@@ -1,3 +1,5 @@
+# Görüntüyü Alfa ile Böl
+
 SplitImageWithAlpha düğümü, bir görüntünün renk ve alfa bileşenlerini ayırmak için tasarlanmıştır. Giriş görüntü tensorunu işleyerek RGB kanallarını renk bileşeni, alfa kanalını ise saydamlık bileşeni olarak çıkarır; böylece bu farklı görüntü özelliklerinin manipülasyonunu gerektiren işlemleri kolaylaştırır.
 
 ## Girişler

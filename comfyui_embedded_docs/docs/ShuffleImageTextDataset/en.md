@@ -1,3 +1,5 @@
+# Shuffle Pairs of Image-Text
+
 This node shuffles a list of images and a list of texts together, keeping their pairings intact. It uses a random seed to determine the shuffle order, ensuring the same input lists will be shuffled in the same way each time the seed is reused.
 
 ## Inputs

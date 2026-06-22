@@ -1,3 +1,5 @@
+# Magnific Image Upscale (Preciso V2)
+
 El nodo Ampliación de Imagen Magnífica (Precisa V2) realiza una ampliación de imágenes de alta fidelidad con control preciso sobre nitidez, granulado y mejora de detalles. Procesa imágenes a través de una API externa, admitiendo una resolución máxima de salida de hasta 10060×10060 píxeles. El nodo ofrece diferentes estilos de procesamiento y puede reducir automáticamente la escala de la entrada si la salida solicitada supera el tamaño máximo permitido.
 
 ## Entradas

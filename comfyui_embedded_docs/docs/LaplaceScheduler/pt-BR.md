@@ -1,3 +1,5 @@
+# LaplaceScheduler
+
 O nó LaplaceScheduler gera uma sequência de valores sigma seguindo uma distribuição de Laplace para uso na amostragem por difusão. Ele cria um cronograma de níveis de ruído que diminuem gradualmente de um valor máximo para um mínimo, usando parâmetros da distribuição de Laplace para controlar a progressão. Este agendador é comumente usado em fluxos de trabalho de amostragem personalizados para definir o cronograma de ruído para modelos de difusão.
 
 ## Entradas

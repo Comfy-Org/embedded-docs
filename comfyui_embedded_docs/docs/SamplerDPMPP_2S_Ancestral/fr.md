@@ -1,3 +1,5 @@
+# SamplerDPMPP_2S_Ancestral
+
 Le nœud `SamplerDPMPP_2S_Ancestral` crée un échantillonneur utilisant la méthode d'échantillonnage DPM++ 2S Ancestral pour générer des images. Cet échantillonneur combine des éléments déterministes et stochastiques afin de produire des résultats variés tout en maintenant une certaine cohérence. Il permet de contrôler le niveau d'aléatoire et de bruit pendant le processus d'échantillonnage.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 VOIDInpaintConditioning 节点用于准备 CogVideoX 模型进行修复所需的 conditioning 数据。它接收源视频和预处理后的四重遮罩（quadmask），通过 VAE 对其进行编码，并将其组合成一个 32 通道的 conditioning 信号，供模型用于填充遮罩区域。
 
 ## 输入

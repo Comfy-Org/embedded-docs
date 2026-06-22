@@ -1,3 +1,5 @@
+# ModèlePatchTome
+
 Le nœud TomePatchModel applique la technique de fusion de tokens (ToMe) à un modèle de diffusion afin de réduire les besoins en calcul lors de l'inférence. Il fonctionne en fusionnant sélectivement des tokens similaires dans le mécanisme d'attention, ce qui permet au modèle de traiter moins de tokens tout en préservant la qualité de l'image. Cette technique permet d'accélérer la génération sans perte significative de qualité.
 
 ## Entrées

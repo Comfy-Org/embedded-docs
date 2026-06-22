@@ -1,3 +1,5 @@
+# Acondicionamiento (Establecer Área)
+
 Este nodo está diseñado para modificar la información de condicionamiento estableciendo áreas específicas dentro del contexto de condicionamiento. Permite la manipulación espacial precisa de los elementos de condicionamiento, posibilitando ajustes y mejoras dirigidas según dimensiones e intensidad especificadas.
 
 ## Entradas

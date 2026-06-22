@@ -1,3 +1,5 @@
+# Merge Audio
+
 The AudioMerge node combines two audio tracks by overlaying their waveforms. It automatically matches the sample rates of both audio inputs and adjusts their lengths to be equal before merging. The node provides several mathematical methods for combining the audio signals and ensures the output remains within acceptable volume levels.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ProgramadorMuestreoBeta
+
 El nodo BetaSamplingScheduler genera una secuencia de niveles de ruido (sigmas) para el proceso de muestreo utilizando un algoritmo de programación beta. Toma un modelo y parámetros de configuración para crear una programación de ruido personalizada que controla el proceso de eliminación de ruido durante la generación de imágenes. Este programador permite ajustar la trayectoria de reducción de ruido mediante los parámetros alfa y beta.
 
 ## Entradas

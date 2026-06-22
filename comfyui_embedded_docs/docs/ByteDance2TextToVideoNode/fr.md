@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Texte vers Vidéo
+
 Ce nœud utilise l'API Seedance 2.0 de ByteDance pour générer une vidéo à partir d'une description textuelle. Il envoie votre invite au modèle sélectionné, attend le traitement de la vidéo, puis renvoie le résultat final.
 
 ## Entrées

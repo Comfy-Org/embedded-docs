@@ -1,3 +1,5 @@
+# Kling 文本转视频
+
 此文档由 AI 生成。如发现任何错误或有改进建议，欢迎随时贡献！[在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/en.md)
 
 Kling 文本转视频节点可将文本描述转换为视频内容。它接收文本提示词，并根据指定的配置设置生成相应的视频序列。该节点支持不同的宽高比和生成模式，以生成不同时长和质量的视频。

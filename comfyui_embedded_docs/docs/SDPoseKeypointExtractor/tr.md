@@ -1,3 +1,5 @@
+# SDPoseKeypointExtractor
+
 SDPoseKeypointExtractor düğümü, SDPose modelini kullanarak giriş görüntülerinden insan pozu anahtar noktalarını tespit eder. Tam görüntüleri veya sınırlayıcı kutularla tanımlanmış belirli bölgeleri işleyebilir ve tespit edilen anahtar noktalarını, her kişi için koordinatları ve her anahtar nokta için bir güven puanı içeren OpenPose formatında çıktı olarak verir.
 
 ## Girişler

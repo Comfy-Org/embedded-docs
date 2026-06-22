@@ -1,3 +1,5 @@
+# Grow Mask
+
 The `GrowMask` node is designed to modify the size of a given mask, either expanding or contracting it, while optionally applying a tapered effect to the corners. This functionality is crucial for dynamically adjusting mask boundaries in image processing tasks, allowing for more flexible and precise control over the area of interest.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Alt Dize
+
 StringSubstring düğümü, daha büyük bir metin dizesinden bir metin bölümü çıkarır. Çıkarmak istediğiniz bölümü tanımlamak için bir başlangıç konumu ve bitiş konumu alır ve bu iki konum arasındaki metni döndürür.
 
 ## Girişler

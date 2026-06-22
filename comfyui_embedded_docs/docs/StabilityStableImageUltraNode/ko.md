@@ -1,4 +1,4 @@
-# Stability Stable Image Ultra 노드
+# Stability AI Stable Image Ultra
 
 프롬프트와 해상도를 기반으로 이미지를 동기식으로 생성합니다. 이 노드는 Stability AI의 Stable Image Ultra 모델을 사용하여 텍스트 프롬프트를 처리하고 지정된 종횡비와 스타일로 해당 이미지를 생성합니다.
 

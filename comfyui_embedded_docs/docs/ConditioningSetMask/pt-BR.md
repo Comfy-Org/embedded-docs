@@ -1,3 +1,5 @@
+# Condicionamento (Definir Mask)
+
 Este nó foi projetado para modificar o condicionamento de um modelo generativo aplicando uma máscara com uma intensidade específica em determinadas áreas. Ele permite ajustes direcionados dentro do condicionamento, possibilitando um controle mais preciso sobre o processo de geração.
 
 ## Entradas

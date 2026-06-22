@@ -1,4 +1,4 @@
-# Bağlam Pencereleri (Manuel) Düğümü
+# Bağlam Pencereleri (Manuel)
 
 Bağlam Pencereleri (Manuel) düğümü, örnekleme sırasında modeller için bağlam pencerelerini manuel olarak yapılandırmanıza olanak tanır. Belirtilen uzunluk, örtüşme ve zamanlama desenlerine sahip örtüşen bağlam segmentleri oluşturarak, segmentler arasında sürekliliği korurken verileri yönetilebilir parçalar halinde işler. Bu düğüm, gürültü karıştırma, koşullandırma saklama ve nedensel pencere düzeltmeleri dahil olmak üzere bağlam pencerelerinin nasıl uygulanacağını kontrol etmek için gelişmiş seçenekler sunar.
 

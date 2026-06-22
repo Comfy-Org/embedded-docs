@@ -1,3 +1,5 @@
+# Eliminar fondo
+
 ## Descripción general
 
 El nodo Remove Background utiliza un modelo de eliminación de fondo para generar una máscara que separa el sujeto en primer plano del fondo de una imagen de entrada. Toma una imagen y un modelo de eliminación de fondo, y produce una máscara que resalta el sujeto principal.

@@ -1,3 +1,5 @@
+# RenormCFG
+
 O nó RenormCFG modifica o processo de orientação livre de classificador (CFG) em modelos de difusão, aplicando normalização e escalonamento condicional. Ele ajusta o processo de remoção de ruído com base em limites de timestep especificados e fatores de renormalização para controlar a influência das previsões condicionais versus não condicionais durante a geração de imagens.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CLIPTextEncodeHunyuanDiT
+
 `CLIPTextEncodeHunyuanDiT` 節點將文字描述轉換為 HunyuanDiT 模型可理解的格式。這是一個專為 HunyuanDiT 雙文字編碼器架構設計的高級條件節點，透過不同的分詞器處理兩個獨立的文字輸入。
 
 ## 輸入

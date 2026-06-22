@@ -1,3 +1,5 @@
+# ImagenLatenteChromaRadianceVacía
+
 El nodo EmptyChromaRadianceLatentImage crea una imagen latente en blanco con dimensiones específicas para su uso en flujos de trabajo de croma radiancia. Genera un tensor relleno de ceros que sirve como punto de partida para operaciones en el espacio latente. El nodo permite definir el ancho, alto y tamaño de lote de la imagen latente vacía.
 
 ## Entradas

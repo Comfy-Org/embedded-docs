@@ -1,3 +1,5 @@
+# Image Latente Vide
+
 Le nœud `EmptyLatentImage` est conçu pour générer une représentation vierge dans l'espace latent, avec des dimensions et une taille de lot spécifiées. Ce nœud constitue une étape fondamentale pour générer ou manipuler des images dans l'espace latent, en fournissant un point de départ pour les processus ultérieurs de synthèse ou de modification d'images.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Génération vidéo Vidu de début à fin
+
 Voici la traduction en français de la documentation du nœud ComfyUI **Vidu Start End To Video** :
 
 Le nœud de génération vidéo Vidu Start End To Video crée une vidéo en générant des images entre une image de début et une image de fin. Il utilise une invite textuelle pour guider le processus de génération vidéo et prend en charge divers modèles vidéo avec différents réglages de résolution et de mouvement. Le nœud valide que les images de début et de fin ont des rapports d'aspect compatibles avant le traitement.

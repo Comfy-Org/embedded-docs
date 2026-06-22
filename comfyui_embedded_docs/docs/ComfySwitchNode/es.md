@@ -1,3 +1,5 @@
+# Interruptor
+
 El nodo Switch selecciona entre dos posibles entradas según una condición booleana. Genera la entrada `on_true` cuando el `switch` está activado, y la entrada `on_false` cuando el `switch` está desactivado. Esto permite crear lógica condicional y elegir diferentes rutas de datos en tu flujo de trabajo.
 
 ## Entradas

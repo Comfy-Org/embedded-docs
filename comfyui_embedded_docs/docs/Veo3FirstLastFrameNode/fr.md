@@ -1,3 +1,5 @@
+# Google Veo 3 Première-Dernière-Image vers Vidéo
+
 Voici la traduction en français de la documentation du nœud Veo3FirstLastFrameNode :
 
 Le nœud Veo3FirstLastFrameNode utilise le modèle Veo 3 de Google pour générer une vidéo à partir d'une invite textuelle, avec une première et une dernière image fournies qui définissent le début et la fin de la séquence vidéo.

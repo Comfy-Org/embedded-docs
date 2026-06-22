@@ -1,3 +1,5 @@
+# LTXV Decodificar Áudio VAE
+
 O nó LTXV Audio VAE Decode converte uma representação latente de áudio de volta para uma forma de onda de áudio. Ele utiliza um modelo especializado de Audio VAE para realizar esse processo de decodificação, produzindo uma saída de áudio com uma taxa de amostragem específica.
 
 ## Entradas

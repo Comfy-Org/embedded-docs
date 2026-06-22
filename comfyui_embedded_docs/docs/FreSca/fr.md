@@ -1,3 +1,5 @@
+# FreSca
+
 Le nœud FreSca applique une mise à l'échelle dépendante de la fréquence au guidage pendant le processus d'échantillonnage. Il sépare le signal de guidage en composantes basse fréquence et haute fréquence à l'aide d'un filtrage de Fourier, puis applique différents facteurs d'échelle à chaque plage de fréquence avant de les recomposer. Cela permet un contrôle plus nuancé de la manière dont le guidage affecte les différents aspects de la sortie générée.
 
 ## Entrées

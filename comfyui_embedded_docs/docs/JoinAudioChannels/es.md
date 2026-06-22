@@ -1,3 +1,5 @@
+# Unir Canales de Audio
+
 El nodo **Unir Canales de Audio** combina dos entradas de audio mono separadas en una única salida de audio estéreo. Toma un canal izquierdo y un canal derecho, asegura que tengan frecuencias de muestreo y duraciones compatibles, y los fusiona en una forma de onda de audio de dos canales.
 
 ## Entradas

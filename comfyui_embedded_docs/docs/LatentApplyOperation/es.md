@@ -1,3 +1,5 @@
+# LatentApplyOperation
+
 El nodo LatentApplyOperation aplica una operación específica a muestras latentes. Toma datos latentes y una operación como entradas, procesa las muestras latentes utilizando la operación proporcionada y devuelve los datos latentes modificados. Este nodo le permite transformar o manipular representaciones latentes en su flujo de trabajo.
 
 ## Entradas

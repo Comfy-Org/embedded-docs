@@ -1,3 +1,5 @@
+# Modelo de Compilación Torch
+
 El nodo TorchCompileModel aplica compilación de PyTorch a un modelo para optimizar su rendimiento. Crea una copia del modelo de entrada y la envuelve con la funcionalidad de compilación de PyTorch utilizando el backend especificado. Esto puede mejorar la velocidad de ejecución del modelo durante la inferencia.
 
 ## Entradas

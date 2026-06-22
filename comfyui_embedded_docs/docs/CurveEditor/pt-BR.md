@@ -1,3 +1,5 @@
+# Editor de Curva
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CurveEditor/en.md)
 
 O nó Curve Editor fornece uma interface visual para ajustar e refinar uma curva. Ele permite modificar a forma de uma curva de entrada e, opcionalmente, visualizar sua distribuição com um histograma. O nó gera a curva modificada para uso em outras partes do seu fluxo de trabalho.

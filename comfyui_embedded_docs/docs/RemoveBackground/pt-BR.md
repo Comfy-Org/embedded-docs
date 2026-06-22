@@ -1,4 +1,4 @@
-# Visão Geral
+# Remover Fundo
 
 O nó Remover Fundo utiliza um modelo de remoção de fundo para gerar uma máscara que separa o objeto principal do fundo de uma imagem de entrada. Ele recebe uma imagem e um modelo de remoção de fundo, produzindo uma máscara que destaca o objeto principal.
 

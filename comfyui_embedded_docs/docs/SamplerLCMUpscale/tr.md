@@ -1,3 +1,5 @@
+# LCM Büyütme Örnekleyici
+
 SamplerLCMUpscale düğümü, Gizli Tutarlılık Modeli (LCM) örneklemesini görüntü büyütme yetenekleriyle birleştiren özel bir örnekleme yöntemi sunar. Çeşitli enterpolasyon yöntemleri kullanarak örnekleme işlemi sırasında görüntüleri büyütmenize olanak tanır; bu da görüntü kalitesini korurken daha yüksek çözünürlüklü çıktılar üretmek için kullanışlıdır.
 
 ## Girişler

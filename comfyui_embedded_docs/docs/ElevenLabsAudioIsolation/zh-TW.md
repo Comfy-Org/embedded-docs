@@ -1,3 +1,5 @@
+# ElevenLabs 語音隔離
+
 ElevenLabs 語音隔離節點可從音訊檔案中移除背景噪音，隔離出人聲或語音。它會將音訊傳送至 ElevenLabs API 進行處理，並返回清理後的音訊。
 
 ## 輸入

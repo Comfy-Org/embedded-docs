@@ -1,4 +1,4 @@
-# Pós-Processamento da Saída do SeedVR2
+# SeedVR2PostProcessing
 
 Este nó alinha a imagem gerada com a imagem redimensionada original e aplica correção de cor opcional. Ele recebe a saída de um processo de upscaling SeedVR2 e a ajusta para corresponder às cores e dimensões da imagem de referência original.
 

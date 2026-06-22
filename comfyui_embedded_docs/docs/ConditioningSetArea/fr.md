@@ -1,3 +1,5 @@
+# Conditionnement (Définir Zone)
+
 Ce nœud est conçu pour modifier les informations de conditionnement en définissant des zones spécifiques dans le contexte de conditionnement. Il permet une manipulation spatiale précise des éléments de conditionnement, facilitant des ajustements et des améliorations ciblés en fonction des dimensions et de l'intensité spécifiées.
 
 ## Entrées

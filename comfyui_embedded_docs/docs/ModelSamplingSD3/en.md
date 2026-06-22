@@ -1,3 +1,5 @@
+# ModelSamplingSD3
+
 The ModelSamplingSD3 node applies Stable Diffusion 3 sampling parameters to a model. It modifies the model's sampling behavior by adjusting the shift parameter, which controls the sampling distribution characteristics. The node creates a modified copy of the input model with the specified sampling configuration applied.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Bria Image Edit
+
 Voici la traduction en français de la documentation du nœud Bria FIBO Image Edit :
 
 Le nœud Bria FIBO Image Edit vous permet de modifier une image existante à l'aide d'une instruction textuelle. Il envoie l'image et votre invite à l'API Bria, qui utilise le modèle FIBO pour générer une nouvelle version modifiée de l'image en fonction de votre demande. Vous pouvez également fournir un masque pour limiter les modifications à une zone spécifique.

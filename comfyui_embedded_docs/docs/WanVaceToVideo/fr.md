@@ -1,3 +1,5 @@
+# WanVaceToVideo
+
 Le nœud WanVaceToVideo traite les données de conditionnement vidéo pour les modèles de génération vidéo. Il prend en entrée des conditionnements positifs et négatifs, ainsi que des données de contrôle vidéo, et prépare des représentations latentes pour la génération vidéo. Ce nœud gère le redimensionnement vidéo, le masquage et l'encodage VAE afin de créer la structure de conditionnement appropriée pour les modèles vidéo.
 
 ## Entrées

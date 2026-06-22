@@ -1,3 +1,5 @@
+# AddNoise
+
 Este nó adiciona ruído controlado a uma imagem latente usando um gerador de ruído específico e valores sigma. Ele processa a entrada através do sistema de amostragem do modelo para aplicar a escala de ruído apropriada para o intervalo sigma fornecido, retornando uma nova representação latente com o ruído aplicado.
 
 ## Entradas

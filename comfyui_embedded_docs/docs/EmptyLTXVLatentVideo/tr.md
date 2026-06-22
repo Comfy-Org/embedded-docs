@@ -1,3 +1,5 @@
+# BoşLTXVGizliVideo
+
 EmptyLTXVLatentVideo düğümü, video işleme için boş bir latent tensör oluşturur. Belirtilen boyutlarda boş bir başlangıç noktası üretir ve bu, video oluşturma iş akışlarında girdi olarak kullanılabilir. Düğüm, yapılandırılmış genişlik, yükseklik, uzunluk ve yığın boyutuyla sıfır dolu bir latent temsil oluşturur.
 
 ## Girdiler

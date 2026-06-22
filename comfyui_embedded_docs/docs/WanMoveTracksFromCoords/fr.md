@@ -1,3 +1,5 @@
+# WanMoveTracksFromCoords
+
 Le nœud WanMoveTracksFromCoords crée des trajectoires de mouvement à partir d'une chaîne de coordonnées au format JSON. Il convertit les données de coordonnées en un format tensoriel utilisable par d'autres nœuds de traitement vidéo, et peut éventuellement appliquer un masque pour contrôler la visibilité des trajectoires dans le temps.
 
 ## Entrées

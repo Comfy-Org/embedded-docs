@@ -1,3 +1,5 @@
+# ManualSigmas
+
 El nodo ManualSigmas te permite definir manualmente una secuencia personalizada de niveles de ruido (sigmas) para el proceso de muestreo. Ingresas una lista de números como cadena de texto, y el nodo los convierte en un tensor que puede ser utilizado por otros nodos de muestreo. Esto es útil para realizar pruebas o crear programaciones de ruido específicas.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# 保存图像（高级）
 
 **SaveImageAdvanced** 节点可将图像保存到 ComfyUI 输出目录，并提供对文件格式、位深度和色彩空间的进阶控制。支持保存为 PNG 或 EXR 文件，并能将工作流元数据嵌入到保存的文件中。
 

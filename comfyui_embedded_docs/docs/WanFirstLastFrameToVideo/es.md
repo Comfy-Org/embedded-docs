@@ -1,3 +1,5 @@
+# WanFirstLastFrameToVideo
+
 El nodo WanFirstLastFrameToVideo crea condicionamiento de video combinando fotogramas de inicio y fin con indicaciones de texto. Genera una representación latente para la generación de video codificando el primer y último fotograma, aplicando máscaras para guiar el proceso de generación e incorporando características de visión CLIP cuando están disponibles. Este nodo prepara condicionamiento tanto positivo como negativo para modelos de video con el fin de generar secuencias coherentes entre puntos de inicio y fin especificados.
 
 ## Entradas

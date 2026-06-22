@@ -1,3 +1,5 @@
+# ProgramadorBásico
+
 El nodo `BasicScheduler` está diseñado para calcular una secuencia de valores sigma para modelos de difusión basándose en el programador, el modelo y los parámetros de eliminación de ruido proporcionados. Ajusta dinámicamente el número total de pasos según el factor de eliminación de ruido para afinar el proceso de difusión, proporcionando "recetas" precisas para diferentes etapas en procesos de muestreo avanzados que requieren un control detallado (como el muestreo en múltiples etapas).
 
 ## Entradas

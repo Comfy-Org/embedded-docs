@@ -1,4 +1,4 @@
-# Post-Process SeedVR2 Output
+# SeedVR2PostProcessing
 
 Ce nœud aligne l'image générée avec l'image redimensionnée d'origine et applique une correction colorimétrique optionnelle. Il prend la sortie d'un processus de suréchantillonnage SeedVR2 et l'ajuste pour correspondre aux couleurs et aux dimensions de l'image de référence originale.
 

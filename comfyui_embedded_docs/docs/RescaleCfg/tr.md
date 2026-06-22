@@ -1,3 +1,5 @@
+# CFG'yiYenidenÖlçekle
+
 RescaleCFG düğümü, bir model çıktısının koşullu ve koşulsuz ölçeklerini belirtilen bir çarpan temelinde ayarlamak için tasarlanmıştır; bu sayede daha dengeli ve kontrollü bir üretim süreci hedeflenir. Model çıktısını yeniden ölçeklendirerek koşullu ve koşulsuz bileşenlerin etkisini değiştirir ve böylece modelin performansını veya çıktı kalitesini potansiyel olarak artırır.
 
 ## Girişler

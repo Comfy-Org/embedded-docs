@@ -1,3 +1,5 @@
+# Comparar
+
 O nó StringCompare compara duas strings de texto usando diferentes métodos de comparação. Ele pode verificar se uma string começa com outra, termina com outra ou se ambas as strings são exatamente iguais. A comparação pode ser realizada considerando ou não diferenças entre maiúsculas e minúsculas.
 
 ## Entradas

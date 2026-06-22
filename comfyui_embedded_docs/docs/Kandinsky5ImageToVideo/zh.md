@@ -1,3 +1,5 @@
+# 图像到视频（Kandinsky5）
+
 Kandinsky5ImageToVideo 节点用于准备 Kandinsky 模型视频生成所需的 conditioning 和潜在空间数据。它会创建一个空的视频潜在张量，并可选择对起始图像进行编码，以引导生成视频的初始帧，同时相应地修改正向和负向 conditioning。
 
 ## 输入

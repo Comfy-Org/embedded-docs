@@ -1,3 +1,5 @@
+# Carregar AudioEncoder
+
 O nó **AudioEncoderLoader** carrega um modelo de codificador de áudio a partir de um arquivo na sua pasta de codificadores de áudio. Ele recebe como entrada o nome do arquivo do modelo de codificador de áudio e retorna o modelo carregado, que pode então ser utilizado para tarefas de processamento de áudio no seu fluxo de trabalho.
 
 ## Entradas

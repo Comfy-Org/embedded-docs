@@ -1,3 +1,5 @@
+# Wan 2.7 Referência para Vídeo
+
 Este nó gera um vídeo apresentando uma pessoa ou objeto com base em materiais de referência fornecidos. Ele utiliza o modelo Wan 2.7 para criar vídeos a partir de um prompt de texto, suportando performances de um único personagem e interações de múltiplos personagens. Você deve fornecer pelo menos um vídeo ou imagem de referência para que a geração funcione.
 
 ## Entradas

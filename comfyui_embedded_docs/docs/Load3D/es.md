@@ -1,3 +1,5 @@
+# Cargar 3D
+
 Aquí tienes la traducción al español de la documentación del nodo Load3D, siguiendo todas las reglas establecidas:
 
 El nodo Load3D es un nodo principal para cargar y procesar archivos de modelos 3D. Al cargar el nodo, este recupera automáticamente los recursos 3D disponibles de `ComfyUI/input/3d/`. También puedes subir archivos 3D compatibles para previsualizarlos usando la función de carga.

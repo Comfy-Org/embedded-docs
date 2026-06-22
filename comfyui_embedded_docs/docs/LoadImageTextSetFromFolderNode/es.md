@@ -1,3 +1,5 @@
+# LoadImageTextSetFromFolderNode
+
 Carga un lote de imágenes y sus correspondientes pies de foto de texto desde un directorio específico para fines de entrenamiento. El nodo busca automáticamente archivos de imagen y sus archivos de texto de pie de foto asociados, procesa las imágenes según la configuración de redimensionamiento especificada y codifica los pies de foto utilizando el modelo CLIP proporcionado.
 
 ## Entradas

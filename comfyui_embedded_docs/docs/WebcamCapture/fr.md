@@ -1,3 +1,5 @@
+# Capture Webcam
+
 Voici la traduction en français de la documentation du nœud WebcamCapture :
 
 Le nœud WebcamCapture capture des images depuis un périphérique webcam et les convertit dans un format utilisable dans les workflows ComfyUI. Il hérite du nœud LoadImage et offre des options pour contrôler les dimensions et le timing de capture. Lorsqu'il est activé, le nœud peut capturer de nouvelles images à chaque traitement de la file d'attente du workflow.

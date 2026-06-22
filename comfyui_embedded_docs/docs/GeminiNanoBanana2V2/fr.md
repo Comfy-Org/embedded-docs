@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 ## Aperçu

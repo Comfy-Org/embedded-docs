@@ -1,3 +1,5 @@
+# Procesar máscaras por lotes
+
 El nodo Combinar Máscaras combina múltiples entradas de máscaras individuales en un solo lote. Toma un número variable de entradas de máscaras y las genera como un único tensor de máscaras agrupadas, lo que permite el procesamiento por lotes de máscaras en nodos posteriores.
 
 ## Entradas

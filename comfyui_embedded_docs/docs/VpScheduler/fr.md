@@ -1,3 +1,5 @@
+# PlanificateurVP
+
 Le nœud VPScheduler est conçu pour générer une séquence de niveaux de bruit (sigmas) basée sur la méthode de planification à préservation de variance (VP). Cette séquence est cruciale pour guider le processus de débruitage dans les modèles de diffusion, permettant une génération contrôlée d'images ou d'autres types de données.
 
 ## Entrées

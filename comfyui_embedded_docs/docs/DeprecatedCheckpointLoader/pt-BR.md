@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 O nó CheckpointLoader foi projetado para operações de carregamento avançadas, especificamente para carregar checkpoints de modelo juntamente com suas configurações. Ele facilita a recuperação dos componentes do modelo necessários para inicializar e executar modelos generativos, incluindo configurações e checkpoints de diretórios especificados.
 
 ## Entradas

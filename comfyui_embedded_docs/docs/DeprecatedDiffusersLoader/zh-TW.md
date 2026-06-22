@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 DiffusersLoader 節點專為從 diffusers 函式庫載入模型而設計，特別處理根據提供的模型路徑載入 UNet、CLIP 和 VAE 模型。此節點有助於將這些模型整合到 ComfyUI 框架中，實現進階功能，例如文字轉圖像生成、圖像處理等。
 
 ## 輸入

@@ -1,3 +1,5 @@
+# ModelMergeAuraflow
+
 El nodo `ModelMergeAuraflow` permite combinar dos modelos diferentes ajustando pesos de mezcla específicos para varios componentes del modelo. Proporciona un control detallado sobre cómo se fusionan las diferentes partes de los modelos, desde las capas iniciales hasta las salidas finales. Este nodo es particularmente útil para crear combinaciones de modelos personalizadas con un control preciso sobre el proceso de fusión.
 
 ## Entradas

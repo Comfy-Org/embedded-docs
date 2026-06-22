@@ -1,3 +1,5 @@
+# PixVerse Şablonu
+
 PixVerse Şablon düğümü, PixVerse video oluşturma için mevcut şablonlar arasından seçim yapmanızı sağlar. Seçtiğiniz şablon adını, PixVerse API'sinin video oluşturma için gerektirdiği karşılık gelen şablon kimliğine dönüştürür.
 
 ## Girişler

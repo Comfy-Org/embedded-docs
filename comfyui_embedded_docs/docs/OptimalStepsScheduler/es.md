@@ -1,3 +1,5 @@
+# OptimalStepsScheduler
+
 El nodo OptimalStepsScheduler calcula los sigmas del programa de ruido para modelos de difusión según el tipo de modelo seleccionado y la configuración de pasos. Ajusta el número total de pasos de acuerdo con el parámetro de eliminación de ruido (`denoise`) e interpola los niveles de ruido para que coincidan con la cantidad de pasos solicitada. El nodo devuelve una secuencia de valores sigma que determinan los niveles de ruido utilizados durante el proceso de muestreo de difusión.
 
 ## Entradas

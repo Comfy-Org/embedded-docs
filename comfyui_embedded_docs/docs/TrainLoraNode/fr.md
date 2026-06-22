@@ -1,3 +1,5 @@
+# Entraîner LoRA
+
 Le nœud TrainLoraNode crée et entraîne un modèle LoRA (Adaptation de Bas Rang) sur un modèle de diffusion en utilisant des latents et des données de conditionnement fournis. Il permet d'affiner un modèle avec des paramètres d'entraînement personnalisés, des optimiseurs et des fonctions de perte. Le nœud produit les poids LoRA entraînés, une carte de l'historique des pertes et le nombre total d'étapes d'entraînement effectuées.
 
 ## Entrées

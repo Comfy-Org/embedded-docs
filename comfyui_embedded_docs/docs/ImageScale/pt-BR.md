@@ -1,3 +1,5 @@
+# Aumentar Resolução da Imagem
+
 O nó ImageScale foi projetado para redimensionar imagens para dimensões específicas, oferecendo uma seleção de métodos de upscale e a capacidade de cortar a imagem redimensionada. Ele abstrai a complexidade do upscaling e corte de imagens, fornecendo uma interface direta para modificar as dimensões da imagem de acordo com parâmetros definidos pelo usuário.
 
 ## Entradas

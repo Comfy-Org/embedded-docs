@@ -1,3 +1,5 @@
+# StableCascade_EmptyLatentImage
+
 El nodo `StableCascade_EmptyLatentImage` crea tensores latentes vacíos para los modelos Stable Cascade. Genera dos representaciones latentes separadas — una para la etapa C y otra para la etapa B — con dimensiones apropiadas según la resolución de entrada y la configuración de compresión. Este nodo proporciona el punto de partida para el pipeline de generación de Stable Cascade.
 
 ## Entradas

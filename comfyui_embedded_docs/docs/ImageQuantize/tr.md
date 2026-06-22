@@ -1,3 +1,5 @@
+# Görüntü Nicemleme
+
 ImageQuantize düğümü, bir görüntüdeki renk sayısını belirtilen sayıya düşürmek ve isteğe bağlı olarak görsel kaliteyi korumak için renk taklidi (dithering) teknikleri uygulamak üzere tasarlanmıştır. Bu işlem, palet tabanlı görüntüler oluşturmak veya belirli uygulamalar için renk karmaşıklığını azaltmak amacıyla kullanışlıdır.
 
 ## Girişler

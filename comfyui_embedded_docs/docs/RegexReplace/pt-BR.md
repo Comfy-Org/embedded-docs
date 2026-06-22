@@ -1,3 +1,5 @@
+# Substituir por Regex
+
 O nó RegexReplace localiza e substitui texto em strings usando padrões de expressões regulares. Ele permite que você pesquise padrões de texto e os substitua por novo texto, com opções para controlar como a correspondência de padrões funciona, incluindo diferenciação entre maiúsculas e minúsculas, correspondência em várias linhas e limitação do número de substituições.
 
 ## Entradas

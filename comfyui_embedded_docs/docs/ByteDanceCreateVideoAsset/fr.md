@@ -1,3 +1,5 @@
+# ByteDance Créer un Actif Vidéo
+
 Ce nœud crée un actif vidéo personnel pour Seedance 2.0. Il télécharge votre vidéo d'entrée et l'enregistre dans un groupe d'actifs spécifié. Si vous ne fournissez pas d'identifiant de groupe, il vous guidera dans un processus de vérification d'identité réelle dans votre navigateur pour d'abord créer un nouveau groupe.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Runway Quadro Inicial-Final para Vídeo
+
 O nó "Primeiro-Último Quadro para Vídeo" do Runway gera vídeos a partir do upload do primeiro e último quadro-chave, juntamente com um prompt de texto. Ele cria transições suaves entre os quadros inicial e final fornecidos, utilizando o modelo Gen-3 do Runway. Isso é particularmente útil para transições complexas onde o quadro final difere significativamente do quadro inicial.
 
 ## Entradas

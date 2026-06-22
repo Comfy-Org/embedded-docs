@@ -1,3 +1,5 @@
+# ModèleÉchantillonnageLTXV
+
 Le nœud ModelSamplingLTXV applique des paramètres d'échantillonnage avancés à un modèle en fonction du nombre de jetons. Il calcule une valeur de décalage à l'aide d'une interpolation linéaire entre les valeurs de décalage de base et maximale, le calcul dépendant du nombre de jetons dans l'entrée latente. Le nœud crée ensuite une configuration d'échantillonnage de modèle spécialisée et l'applique au modèle d'entrée.
 
 ## Entrées

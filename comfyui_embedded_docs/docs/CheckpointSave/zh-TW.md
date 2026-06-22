@@ -1,3 +1,5 @@
+# 儲存檢查點
+
 `Save Checkpoint` 節點旨在將完整的 Stable Diffusion 模型（包括 UNet、CLIP 和 VAE 組件）儲存為 **.safetensors** 格式的檢查點檔案。
 
 `Save Checkpoint` 主要用於模型合併工作流程。在透過 `ModelMergeSimple`、`ModelMergeBlocks` 等節點建立新的合併模型後，您可以使用此節點將結果儲存為可重複使用的檢查點檔案。

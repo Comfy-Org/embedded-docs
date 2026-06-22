@@ -1,3 +1,5 @@
+# Gizli Grubu Tekrarla
+
 RepeatLatentBatch düğümü, belirtilen bir latent temsil grubunu, istenen sayıda çoğaltmak için tasarlanmıştır; buna gürültü maskeleri ve grup indeksleri gibi ek veriler de dahil olabilir. Bu işlevsellik, veri artırma veya belirli üretken görevler gibi aynı latent verinin birden fazla örneğini gerektiren işlemler için kritik öneme sahiptir.
 
 ## Girişler

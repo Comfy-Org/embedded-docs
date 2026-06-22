@@ -1,3 +1,5 @@
+# ElevenLabs Text to Speech
+
 Voici la traduction en français de la documentation du nœud ElevenLabs Text to Speech :
 
 Le nœud ElevenLabs Text to Speech convertit du texte écrit en audio parlé à l'aide de l'API ElevenLabs. Il vous permet de sélectionner une voix spécifique et d'affiner diverses caractéristiques de la parole comme la stabilité, la vitesse et le style pour générer un résultat audio personnalisé.

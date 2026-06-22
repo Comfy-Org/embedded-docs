@@ -1,3 +1,5 @@
+# Masques par lot
+
 Le nœud Batch Masks combine plusieurs entrées de masques individuelles en un seul lot. Il accepte un nombre variable d'entrées de masques et les produit sous forme d'un tenseur de masques regroupé, permettant le traitement par lots de masques dans les nœuds suivants.
 
 ## Entrées

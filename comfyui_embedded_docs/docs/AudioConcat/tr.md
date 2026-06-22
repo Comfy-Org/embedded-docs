@@ -1,3 +1,5 @@
+# Ses Birleştir
+
 AudioConcat düğümü, iki ses girişini birleştirerek tek bir ses dosyası oluşturur. İki ses girişini alır ve belirttiğiniz sıraya göre, ikinci sesi birincinin önüne veya arkasına ekleyerek birleştirir. Düğüm, mono sesi stereo'ya dönüştürerek ve iki giriş arasındaki örnekleme hızlarını eşleştirerek farklı ses formatlarını otomatik olarak işler.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# SD_4XUpscale_Conditioning
+
 Voici la traduction en français de la documentation du nœud SD_4XUpscale_Conditioning :
 
 Le nœud SD_4XUpscale_Conditioning prépare les données de conditionnement pour la mise à l'échelle d'images à l'aide de modèles de diffusion. Il prend des images d'entrée et des données de conditionnement, puis applique une mise à l'échelle et une augmentation de bruit pour créer un conditionnement modifié qui guide le processus de mise à l'échelle. Le nœud produit à la fois un conditionnement positif et négatif, ainsi que des représentations latentes pour les dimensions mises à l'échelle.

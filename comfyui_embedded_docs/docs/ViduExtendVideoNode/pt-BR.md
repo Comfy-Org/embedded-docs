@@ -1,3 +1,5 @@
+# Extensão de Vídeo Vidu
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduExtendVideoNode/en.md)
 
 O ViduExtendVideoNode gera quadros adicionais para estender a duração de um vídeo existente. Ele usa um modelo de IA especificado para criar uma continuação contínua com base no vídeo de origem e em um prompt de texto opcional.

@@ -1,3 +1,5 @@
+# LTXVÖnİşleme
+
 LTXVPreprocess düğümü, görüntülere sıkıştırma ön işleme uygular. Giriş görüntülerini alır ve belirtilen sıkıştırma seviyesiyle işleyerek, uygulanan sıkıştırma ayarlarıyla birlikte işlenmiş görüntüleri çıktı olarak verir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# ModelMergeFlux1
+
 El nodo ModelMergeFlux1 fusiona dos modelos de difusión combinando sus componentes mediante interpolación ponderada. Permite un control detallado sobre cómo se combinan diferentes partes de los modelos, incluyendo bloques de procesamiento de imágenes, capas de incrustación temporal, mecanismos de guía, entradas vectoriales, codificadores de texto y varios bloques transformadores. Esto permite crear modelos híbridos con características personalizadas a partir de dos modelos fuente.
 
 ## Entradas

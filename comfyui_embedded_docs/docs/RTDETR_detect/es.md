@@ -1,3 +1,5 @@
+# Detección RT-DETR
+
 El nodo RT-DETR Detect realiza detección de objetos en imágenes de entrada utilizando un modelo RT-DETR. Identifica objetos, dibuja cuadros delimitadores a su alrededor y los etiqueta según las clases del conjunto de datos COCO. Puede filtrar los resultados por puntuación de confianza, clase de objeto y limitar el número total de detecciones.
 
 ## Entradas

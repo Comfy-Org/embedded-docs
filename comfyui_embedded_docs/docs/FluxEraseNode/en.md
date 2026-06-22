@@ -1,4 +1,4 @@
-# Flux Erase Node
+# Flux Erase Image
 
 Removes the masked object from an image and reconstructs the background. Paint the mask over what you want to erase, and the node fills in the area with plausible background content.
 

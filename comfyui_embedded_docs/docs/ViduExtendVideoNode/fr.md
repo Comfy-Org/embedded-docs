@@ -1,3 +1,5 @@
+# Extension de vidéo Vidu
+
 Voici la traduction en français de la documentation du nœud ViduExtendVideoNode :
 
 Le nœud ViduExtendVideoNode génère des images supplémentaires pour prolonger la durée d'une vidéo existante. Il utilise un modèle d'IA spécifié pour créer une continuation fluide basée sur la vidéo source et une invite textuelle optionnelle.

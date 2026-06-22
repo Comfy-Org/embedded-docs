@@ -1,3 +1,5 @@
+# MiniMax: текст в видео
+
 Вот перевод документации на русский язык:
 
 Эта документация была создана с помощью ИИ. Если вы нашли ошибки или у вас есть предложения по улучшению, пожалуйста, не стесняйтесь вносить свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxTextToVideoNode/en.md)

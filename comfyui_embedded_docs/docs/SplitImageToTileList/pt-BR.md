@@ -1,3 +1,5 @@
+# Dividir Imagem em Lista de Blocos
+
 O nó Dividir Imagem em Lista de Blocos divide uma única imagem de entrada em uma série de seções retangulares menores e sobrepostas, chamadas blocos. Ele cria uma lista em lote desses blocos, que podem ser processados individualmente por outros nós. O tamanho de cada bloco e a quantidade de sobreposição entre eles podem ser especificados.
 
 ## Entradas

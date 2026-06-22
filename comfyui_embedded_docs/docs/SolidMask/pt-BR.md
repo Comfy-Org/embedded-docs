@@ -1,3 +1,5 @@
+# SolidMask
+
 O nó SolidMask gera uma máscara uniforme com um valor especificado em toda a sua área. Ele foi projetado para criar máscaras com dimensões e intensidade específicas, sendo útil em diversas tarefas de processamento de imagem e criação de máscaras.
 
 ## Entradas

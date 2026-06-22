@@ -1,3 +1,5 @@
+# AutogrowPrefixTestNode
+
 ## Genel Bakış  
 AutogrowPrefixTestNode, otomatik büyüme giriş özelliğini test etmek için tasarlanmış bir mantık düğümüdür. Dinamik sayıda float girişi kabul eder, bu değerleri virgülle ayrılmış bir dize halinde birleştirir ve bu dizeyi çıktı olarak verir.
 

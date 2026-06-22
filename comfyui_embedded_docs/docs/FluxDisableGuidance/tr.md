@@ -1,3 +1,5 @@
+# FluxRehberliğiDevreDışıBırak
+
 Bu düğüm, Flux ve benzeri modeller için rehberlik gömme işlevini tamamen devre dışı bırakır. Giriş olarak koşullandırma verilerini alır ve rehberlik bileşenini `None` olarak ayarlayarak kaldırır, böylece üretim süreci için rehberlik tabanlı koşullandırmayı etkili bir şekilde kapatır.
 
 ## Girişler

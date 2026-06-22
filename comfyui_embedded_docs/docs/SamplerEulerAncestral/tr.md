@@ -1,3 +1,5 @@
+# Euler Atasal Örnekleyici
+
 SamplerEulerAncestral düğümü, görüntü oluşturmak için bir Euler Atasal örnekleyici oluşturur. Bu örnekleyici, Euler entegrasyonunu atasal örnekleme teknikleriyle birleştiren belirli bir matematiksel yaklaşım kullanarak görüntü varyasyonları üretir. Düğüm, oluşturma süreci sırasında rastgeleliği ve adım boyutunu kontrol eden parametreleri ayarlayarak örnekleme davranışını yapılandırmanıza olanak tanır.
 
 ## Girişler

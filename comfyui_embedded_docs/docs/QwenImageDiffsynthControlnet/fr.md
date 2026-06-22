@@ -1,3 +1,5 @@
+# QwenImageDiffsynthControlnet
+
 Voici la traduction en français de la documentation du nœud QwenImageDiffsynthControlnet :
 
 Le nœud QwenImageDiffsynthControlnet applique un patch de réseau de contrôle de synthèse par diffusion pour modifier le comportement d'un modèle de base. Il utilise une image d'entrée et un masque optionnel pour guider le processus de génération du modèle avec une force ajustable, créant ainsi un modèle patché qui intègre l'influence du réseau de contrôle pour une synthèse d'image plus contrôlée.

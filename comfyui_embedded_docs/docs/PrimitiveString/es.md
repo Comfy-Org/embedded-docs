@@ -1,3 +1,5 @@
+# Cadena
+
 El nodo String proporciona una forma sencilla de ingresar y transmitir datos de texto en tu flujo de trabajo. Toma una cadena de texto como entrada y genera la misma cadena sin cambios, lo que resulta útil para proporcionar entradas de texto a otros nodos que requieren parámetros de tipo string.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# GITSScheduler
+
 Voici la traduction de la documentation du nœud GITSScheduler :
 
 Le nœud GITSScheduler génère les sigmas du planning de bruit pour la méthode d'échantillonnage GITS (Generative Iterative Time Steps). Il calcule les valeurs sigma en fonction d'un paramètre de coefficient et du nombre d'étapes, avec un facteur de débruitage optionnel qui peut réduire le nombre total d'étapes utilisées. Le nœud utilise des niveaux de bruit prédéfinis et une interpolation pour créer le planning sigma final.

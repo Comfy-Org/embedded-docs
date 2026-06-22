@@ -1,3 +1,5 @@
+# ZImageFunControlnet
+
 ZImageFunControlnet düğümü, görüntü oluşturma veya düzenleme sürecini etkilemek için özelleştirilmiş bir kontrol ağı uygular. Bir temel model, bir model yaması ve bir VAE kullanarak kontrol etkisinin gücünü ayarlamanıza olanak tanır. Bu düğüm, daha hedefli düzenlemeler için bir temel görüntü, bir rötuş görüntüsü ve bir maske ile çalışabilir.
 
 ## Girişler

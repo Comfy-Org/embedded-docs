@@ -1,3 +1,5 @@
+# Audio vide
+
 Le nœud EmptyAudio génère un clip audio silencieux avec une durée, un taux d'échantillonnage et une configuration de canaux spécifiés. Il crée une forme d'onde contenant uniquement des zéros, produisant un silence complet pour la durée donnée. Ce nœud est utile pour créer des espaces réservés audio ou générer des segments silencieux dans des workflows audio.
 
 ## Entrées

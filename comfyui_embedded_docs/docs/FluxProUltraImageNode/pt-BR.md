@@ -1,3 +1,5 @@
+# Flux 1.1 [pro] Ultra Image
+
 Gera imagens usando Flux Pro 1.1 Ultra via API com base no prompt e na resolução. Este nó se conecta a um serviço externo para criar imagens de acordo com sua descrição textual e dimensões especificadas.
 
 ## Entradas

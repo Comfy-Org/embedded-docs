@@ -1,3 +1,5 @@
+# LatentAdd
+
 El nodo LatentAdd está diseñado para la suma de dos representaciones latentes. Facilita la combinación de características o atributos codificados en estas representaciones mediante una suma elemento a elemento.
 
 ## Entradas

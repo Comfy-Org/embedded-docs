@@ -1,3 +1,5 @@
+# Reve Image Create
+
 Esta documentação foi gerada por IA. Caso encontre erros ou tenha sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReveImageCreateNode/en.md)
 
 O nó Reve Image Create gera imagens a partir de descrições textuais usando o modelo Reve AI. Ele envia um prompt de texto para a API Reve e retorna a imagem gerada. Você pode controlar a proporção da imagem e aplicar efeitos opcionais de pós-processamento, como upscaling.

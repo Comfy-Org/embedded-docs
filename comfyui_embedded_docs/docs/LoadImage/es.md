@@ -1,3 +1,5 @@
+# Cargar Imagen
+
 El nodo LoadImage está diseñado para cargar y preprocesar imágenes desde una ruta especificada. Maneja formatos de imagen con múltiples fotogramas, aplica las transformaciones necesarias, como la rotación basada en datos EXIF, normaliza los valores de píxeles y, opcionalmente, genera una máscara para imágenes con canal alfa. Este nodo es esencial para preparar imágenes para su posterior procesamiento o análisis dentro de un flujo de trabajo.
 
 ## Entradas

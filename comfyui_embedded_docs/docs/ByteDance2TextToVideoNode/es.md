@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Texto a Video
+
 Este nodo utiliza la API Seedance 2.0 de ByteDance para generar un video a partir de una descripción textual. Envía tu indicación al modelo seleccionado, espera a que el video sea procesado y devuelve el resultado final.
 
 ## Entradas

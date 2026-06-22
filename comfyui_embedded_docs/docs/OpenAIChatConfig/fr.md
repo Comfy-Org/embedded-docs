@@ -1,3 +1,5 @@
+# Options avancées OpenAI ChatGPT
+
 Voici la traduction en français de la documentation du nœud OpenAIChatConfig :
 
 Le nœud OpenAIChatConfig permet de définir des options de configuration supplémentaires pour le nœud OpenAI Chat. Il offre des paramètres avancés qui contrôlent la manière dont le modèle génère les réponses, notamment le comportement de troncature, les limites de longueur de sortie et les instructions personnalisées.

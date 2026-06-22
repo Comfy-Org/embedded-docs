@@ -1,4 +1,4 @@
-# SaveAnimatedPNG 節點
+# SaveAnimatedPNG
 
 SaveAnimatedPNG 節點專為從一系列影格建立和儲存動畫 PNG 影像而設計。它負責將單獨的影像影格組合成連貫的動畫，並允許自訂影格持續時間、循環播放和中繼資料包含。
 

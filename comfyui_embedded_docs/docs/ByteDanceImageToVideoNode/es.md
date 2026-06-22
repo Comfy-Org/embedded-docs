@@ -1,3 +1,5 @@
+# ByteDance Imagen a Video
+
 El nodo ByteDance Image to Video genera videos utilizando modelos de ByteDance a través de una API basada en una imagen de entrada y un texto de instrucción. Toma un fotograma inicial de imagen y crea una secuencia de video que sigue la descripción proporcionada. El nodo ofrece varias opciones de personalización para la resolución del video, relación de aspecto, duración y otros parámetros de generación.
 
 ## Entradas

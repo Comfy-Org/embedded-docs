@@ -1,3 +1,5 @@
+# Bria Remove Image Background
+
 Ce nœud supprime l'arrière-plan d'une image à l'aide du service Bria RMBG 2.0. Il envoie l'image à une API externe pour traitement et renvoie le résultat avec l'arrière-plan supprimé.
 
 ## Entrées

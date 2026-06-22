@@ -1,3 +1,5 @@
+# WanSoundImageToVideo
+
 Le nœud WanSoundImageToVideo génère du contenu vidéo à partir d'images avec un conditionnement audio optionnel. Il utilise des prompts de conditionnement positifs et négatifs ainsi qu'un modèle VAE pour créer des latents vidéo, et peut intégrer des images de référence, un encodage audio, des vidéos de contrôle et des références de mouvement pour guider le processus de génération vidéo.
 
 ## Entrées

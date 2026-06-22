@@ -1,3 +1,5 @@
+# Stable Cascade_B阶段_条件
+
 StableCascade_StageB_Conditioning 节点通过将现有的条件信息与 Stage C 的潜在先验表示相结合，为 Stable Cascade Stage B 生成准备条件数据。它会修改条件数据，使其包含来自 Stage C 的潜在样本，从而使生成过程能够利用先验信息生成更连贯的输出。
 
 ## 输入

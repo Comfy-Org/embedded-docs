@@ -1,3 +1,5 @@
+# MiniMax Imagem para Vídeo
+
 Gera vídeos de forma síncrona com base em uma imagem e um prompt, além de parâmetros opcionais, utilizando a API da MiniMax. Este nó recebe uma imagem de entrada e uma descrição textual para criar uma sequência de vídeo, com várias opções de modelo e configurações disponíveis.
 
 ## Entradas

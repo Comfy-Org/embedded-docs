@@ -1,3 +1,5 @@
+# Divisão de CFG MultiGPU
+
 ## Visão geral
 
 O nó MultiGPU CFG Split permite que o trabalho de difusão seja dividido entre várias GPUs instaladas no mesmo computador. O ganho de velocidade depende do workflow, mas já foram medidos aumentos de até 1.95x em workflows comuns.

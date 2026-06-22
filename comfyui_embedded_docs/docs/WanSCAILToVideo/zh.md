@@ -1,3 +1,5 @@
+# WanSCAILToVideo
+
 WanSCAILToVideo 节点用于为视频生成准备 conditioning 和空潜在空间。它会处理参考图像、姿态视频和 CLIP 视觉输出等可选输入，并将它们嵌入到视频模型的正负 conditioning 中。该节点输出修改后的 conditioning 以及指定视频尺寸的空白潜在张量。
 
 ## 输入

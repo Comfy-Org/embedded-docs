@@ -1,3 +1,5 @@
+# HyperTile
+
 The HyperTile node applies a tiling technique to the attention mechanism in diffusion models to optimize memory usage during image generation. It divides the latent space into smaller tiles and processes them separately, then reassembles the results. This allows for working with larger image sizes without running out of memory.
 
 ## Inputs

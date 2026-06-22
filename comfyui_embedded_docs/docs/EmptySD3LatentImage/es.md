@@ -1,3 +1,5 @@
+# EmptySD3LatentImage
+
 El nodo EmptySD3LatentImage crea un tensor de imagen latente en blanco formateado específicamente para modelos Stable Diffusion 3. Genera un tensor relleno de ceros con las dimensiones y estructura correctas que esperan los pipelines de SD3. Se utiliza comúnmente como punto de partida para flujos de trabajo de generación de imágenes.
 
 ## Entradas

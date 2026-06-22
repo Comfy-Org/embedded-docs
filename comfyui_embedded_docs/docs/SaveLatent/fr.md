@@ -1,3 +1,5 @@
+# EnregistrerLatent
+
 Le nœud SaveLatent enregistre les tenseurs latents sur le disque sous forme de fichiers pour une utilisation ultérieure ou un partage. Il prend des échantillons latents et les sauvegarde dans le répertoire de sortie avec des métadonnées optionnelles, y compris les informations de prompt. Le nœud gère automatiquement la dénomination et l'organisation des fichiers tout en préservant la structure des données latentes.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Bria Image Edit
+
 O nó de Edição de Imagem Bria FIBO permite modificar uma imagem existente usando uma instrução de texto. Ele envia a imagem e seu prompt para a API Bria, que utiliza o modelo FIBO para gerar uma nova versão editada da imagem com base na sua solicitação. Você também pode fornecer uma máscara para limitar as edições a uma área específica.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# COMFYUI MultiGPU CFG Split Node
+# MultiGPU CFG Split
 
 ## Overview:
 

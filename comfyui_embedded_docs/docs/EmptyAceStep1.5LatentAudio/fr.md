@@ -1,3 +1,5 @@
+# EmptyAceStep1.5LatentAudio
+
 Voici la traduction en français de la documentation du nœud Empty Ace Step 1.5 Latent Audio :
 
 Le nœud Empty Ace Step 1.5 Latent Audio crée un tenseur latent vide conçu pour le traitement audio. Il génère un latent audio silencieux d'une durée et d'une taille de lot spécifiées, pouvant servir de point de départ pour des workflows de génération audio dans ComfyUI. Le nœud calcule la longueur du latent en fonction des secondes saisies et d'un taux d'échantillonnage fixe.

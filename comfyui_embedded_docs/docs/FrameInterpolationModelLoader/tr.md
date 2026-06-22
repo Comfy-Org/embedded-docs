@@ -1,3 +1,5 @@
+# Kare Enterpolasyon Modeli Yükle
+
 Bu belge yapay zeka tarafından oluşturulmuştur. Hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FrameInterpolationModelLoader/en.md)
 
 ## Genel Bakış

@@ -1,3 +1,5 @@
+# Créer un style Recraft
+
 Ce nœud crée un style personnalisé pour la génération d'images en téléchargeant des images de référence. Vous pouvez télécharger entre 1 et 5 images pour définir le nouveau style, et le nœud renverra un identifiant de style unique pouvant être utilisé avec d'autres nœuds Recraft. La taille totale combinée de tous les fichiers image téléchargés ne doit pas dépasser 5 Mo.
 
 ## Entrées

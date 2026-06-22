@@ -1,3 +1,5 @@
+# Subsequência
+
 O nó StringSubstring extrai uma parte do texto de uma string maior. Ele usa uma posição inicial e uma posição final para definir a seção que você deseja extrair e retorna o texto entre essas duas posições.
 
 ## Entradas

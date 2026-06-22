@@ -1,3 +1,5 @@
+# PikaTextToVideoNode2_2
+
 Pika Text2Video v2.2 Düğümü, Pika API sürüm 2.2'ye bir metin istemi göndererek video oluşturur. Metin açıklamanızı, Pika'nın yapay zeka video oluşturma hizmetini kullanarak bir videoya dönüştürür. Bu düğüm, en boy oranı, süre ve çözünürlük dahil olmak üzere video oluşturma sürecinin çeşitli yönlerini özelleştirmenize olanak tanır.
 
 ## Girişler

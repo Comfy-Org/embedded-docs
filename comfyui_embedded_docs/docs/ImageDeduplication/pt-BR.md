@@ -1,3 +1,5 @@
+# Remover Duplicatas de Imagem
+
 Este nó remove imagens duplicadas ou muito semelhantes de um lote. Ele funciona criando um hash perceptual para cada imagem — uma impressão digital numérica simples baseada em seu conteúdo visual — e então as compara. Imagens cujos hashes são mais semelhantes do que um limite definido são consideradas duplicatas e filtradas.
 
 ## Entradas

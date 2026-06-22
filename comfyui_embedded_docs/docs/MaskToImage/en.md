@@ -1,3 +1,5 @@
+# Convert Mask to Image
+
 The `MaskToImage` node is designed to convert a mask into an image format. This transformation allows for the visualization and further processing of masks as images, facilitating a bridge between mask-based operations and image-based applications.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Stability AI Stable Image Ultra
+
 基於提示詞和解析度同步生成圖像。此節點使用 Stability AI 的 Stable Image Ultra 模型，處理您的文字提示詞，並根據指定的長寬比和風格生成對應的圖像。
 
 ## 輸入

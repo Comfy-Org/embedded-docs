@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Enregistrer l’image (Avancé)
 
 Le nœud **SaveImageAdvanced** enregistre des images dans votre répertoire de sortie ComfyUI avec un contrôle avancé sur le format de fichier, la profondeur de bits et l'espace colorimétrique. Il prend en charge l'enregistrement au format PNG ou EXR et peut intégrer les métadonnées du workflow dans les fichiers sauvegardés.
 

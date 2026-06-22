@@ -1,3 +1,5 @@
+# WanİlkSonKaredenVideoya
+
 WanFirstLastFrameToVideo düğümü, başlangıç ve bitiş karelerini metin istemleriyle birleştirerek video koşullandırması oluşturur. İlk ve son kareleri kodlayarak, oluşturma sürecini yönlendirmek için maskeler uygulayarak ve mevcut olduğunda CLIP görüntü özelliklerini dahil ederek video oluşturma için bir gizli temsil oluşturur. Bu düğüm, video modelleri için belirtilen başlangıç ve bitiş noktaları arasında tutarlı diziler oluşturmak üzere hem olumlu hem de olumsuz koşullandırma hazırlar.
 
 ## Girişler

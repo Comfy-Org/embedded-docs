@@ -1,3 +1,5 @@
+# SamplerDpmpp2mSde
+
 Este nodo está diseñado para generar un muestreador para el modelo DPMPP_2M_SDE, permitiendo la creación de muestras basadas en tipos de solucionador, niveles de ruido y preferencias de dispositivo computacional especificados. Abstrae las complejidades de la configuración del muestreador, proporcionando una interfaz simplificada para generar muestras con configuraciones personalizadas.
 
 ## Entradas

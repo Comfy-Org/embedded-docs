@@ -1,3 +1,5 @@
+# Cortar Imagem
+
 O nó `ImageCrop` foi projetado para recortar imagens em uma largura e altura especificadas, a partir de uma coordenada x e y fornecida. Essa funcionalidade é essencial para focar em regiões específicas de uma imagem ou para ajustar o tamanho da imagem de acordo com determinados requisitos.
 
 ## Entradas

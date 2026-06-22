@@ -1,3 +1,5 @@
+# Görüntüyü Maskeye Dönüştür
+
 ImageToMask düğümü, bir görüntüyü belirtilen bir renk kanalına göre maskeye dönüştürmek için tasarlanmıştır. Bu düğüm, bir görüntünün kırmızı, yeşil, mavi veya alfa kanallarına karşılık gelen maske katmanlarının çıkarılmasını sağlayarak, kanala özgü maskeleme veya işleme gerektiren işlemleri kolaylaştırır.
 
 ## Girişler

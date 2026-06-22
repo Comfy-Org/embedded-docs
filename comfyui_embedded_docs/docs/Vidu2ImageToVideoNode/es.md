@@ -1,3 +1,5 @@
+# Vidu2 Generación de Imagen a Video
+
 El nodo de Generación de Video a partir de Imagen Vidu2 crea una secuencia de video a partir de una única imagen de entrada. Utiliza un modelo Vidu2 específico para animar la escena basándose en un mensaje de texto opcional, controlando la duración, resolución e intensidad del movimiento del video.
 
 ## Entradas

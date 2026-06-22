@@ -1,4 +1,4 @@
-# SplitSigmasDenoise 節點
+# 分割 Sigmas（去噪）
 
 SplitSigmasDenoise 節點根據去噪強度參數將 sigma 值序列分割為兩個部分。它將輸入的 sigmas 分割為高 sigma 序列和低 sigma 序列，分割點由總步數乘以去噪因子決定。這允許將噪聲調度分離到不同的強度範圍以進行專門處理。
 

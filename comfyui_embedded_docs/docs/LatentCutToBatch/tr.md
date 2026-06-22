@@ -1,3 +1,5 @@
+# LatentCutToBatch
+
 The LatentCutToBatch düğümü, bir gizli temsili (latent representation) seçilen bir boyut boyunca birden çok dilime ayırır ve bunları yeni bir toplu iş (batch) halinde istifler. Bu, gizli bir örneğin farklı bölümlerini bağımsız olarak işlemenize olanak tanır.
 
 ## Girişler

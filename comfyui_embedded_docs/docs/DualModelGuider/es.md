@@ -1,4 +1,4 @@
-# Guía CFG de Modelo Dual
+# Guía CFG de Doble Modelo
 
 Este nodo permite utilizar dos modelos diferentes durante el proceso de muestreo CFG guiado: un modelo para el paso positivo (condicional) y un modelo separado para el paso negativo (incondicional). Cuando no se proporciona un modelo negativo, funciona como una guía CFG estándar que utiliza un solo modelo.
 

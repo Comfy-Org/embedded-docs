@@ -1,3 +1,5 @@
+# ByteDance Criar Ativo de Imagem
+
 Este nó cria um ativo de imagem pessoal para o serviço Seedance 2.0 da ByteDance. Ele faz upload de uma imagem de entrada e a registra em um grupo de ativos especificado. Se nenhum ID de grupo for fornecido, ele iniciará um processo de autenticação de pessoa real no seu navegador para criar um novo grupo antes de adicionar o ativo.
 
 ## Entradas

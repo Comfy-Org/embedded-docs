@@ -1,4 +1,4 @@
-# Visão Geral
+# Flux.2 Image
 
 Gere imagens usando o modelo Flux.2 [pro] ou Flux.2 [max] a partir de um prompt de texto e imagens de referência opcionais. Este nó envia sua solicitação para a API BFL, consulta o resultado e retorna a imagem gerada como um tensor.
 

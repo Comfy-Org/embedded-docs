@@ -1,3 +1,5 @@
+# VAE Decodificar (Em Blocos)
+
 O nó VAEDecodeTiled decodifica representações latentes em imagens usando uma abordagem em blocos para processar imagens grandes de forma eficiente. Ele processa a entrada em blocos menores para gerenciar o uso de memória, mantendo a qualidade da imagem. O nó também suporta VAEs de vídeo, processando quadros temporais em partes com sobreposição para transições suaves.
 
 ## Entradas

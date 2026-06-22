@@ -1,3 +1,5 @@
+# Comparaison d’images
+
 Voici la traduction en français de la documentation du nœud Image Compare :
 
 Le nœud Image Compare fournit une interface visuelle permettant de comparer deux images côte à côte à l'aide d'un curseur déplaçable. Il est conçu comme un nœud de sortie, ce qui signifie qu'il ne transmet pas de données à d'autres nœuds, mais affiche directement les images dans l'interface utilisateur à des fins d'inspection.

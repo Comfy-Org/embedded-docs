@@ -1,3 +1,5 @@
+# SDTurboZamanlayıcı
+
 SDTurboScheduler, görüntü örneklemesi için bir sigma değerleri dizisi oluşturmak üzere tasarlanmıştır; bu dizi, belirtilen arındırma seviyesine ve adım sayısına göre ayarlanır. Bu sigma değerlerini üretmek için belirli bir modelin örnekleme yeteneklerinden yararlanır ve bu değerler, görüntü oluşturma sırasında arındırma sürecini kontrol etmek için kritik öneme sahiptir.
 
 ## Girişler

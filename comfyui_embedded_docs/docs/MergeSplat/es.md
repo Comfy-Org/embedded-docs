@@ -1,4 +1,4 @@
-# Fusionar Splats
+# Unir splats
 
 El nodo Fusionar Splats combina múltiples modelos de splat gaussiano en un solo splat mediante la concatenación de sus datos. Esto es útil para fusionar varias decodificaciones del mismo latente generadas con diferentes semillas, lo que puede densificar la superficie y mejorar la calidad al crear mallas 3D.
 

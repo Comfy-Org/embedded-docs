@@ -1,3 +1,5 @@
+# Visualizar Malla Facial de MediaPipe
+
 ## Descripción general
 
 Dibuja puntos de referencia faciales y líneas de conexión (una malla facial) sobre una imagen de entrada. Este nodo utiliza los datos de referencia producidos por un nodo de detección facial para visualizar las características faciales detectadas, como los ojos, la nariz, la boca y el contorno del rostro.

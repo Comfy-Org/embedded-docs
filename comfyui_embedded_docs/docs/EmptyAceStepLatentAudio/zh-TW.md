@@ -1,3 +1,5 @@
+# EmptyAceStepLatentAudio
+
 ## 概述
 
 EmptyAceStepLatentAudio 節點會建立指定時長的空潛在音訊樣本。它會生成一批充滿零值的靜音音訊潛在表示，其長度是根據輸入秒數和音訊處理參數計算得出的。此節點適用於初始化需要潛在表示的音訊處理工作流程。

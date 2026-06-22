@@ -1,3 +1,5 @@
+# LTXVAddGuide
+
 El nodo LTXVAddGuide agrega guía de condicionamiento de video a secuencias latentes mediante la codificación de imágenes o videos de entrada y su incorporación como fotogramas clave en los datos de condicionamiento. Procesa la entrada a través de un codificador VAE y coloca estratégicamente los latentes resultantes en posiciones de fotograma especificadas, actualizando tanto el condicionamiento positivo como el negativo con información de fotogramas clave. El nodo maneja restricciones de alineación de fotogramas y permite controlar la intensidad de la influencia del condicionamiento.
 
 ## Entradas

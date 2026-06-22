@@ -1,3 +1,5 @@
+# RecraftStyleV3VectorIllustrationNode
+
 このノードは、Recraft APIで使用するスタイルを設定するもので、特に`vector_illustration`スタイルを選択します。このカテゴリ内で、より具体的なサブスタイルをオプションで選択できます。このノードは、他のRecraft APIノードに渡すことができるスタイル設定オブジェクトを出力します。
 
 ## 入力

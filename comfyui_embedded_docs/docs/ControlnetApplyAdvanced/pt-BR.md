@@ -1,3 +1,5 @@
+# Aplicar ControlNet
+
 Este nó aplica transformações avançadas de rede de controle aos dados de condicionamento com base em uma imagem e um modelo de rede de controle. Ele permite ajustes refinados da influência da rede de controle sobre o conteúdo gerado, possibilitando modificações mais precisas e variadas no condicionamento.
 
 ## Entradas

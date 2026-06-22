@@ -1,3 +1,5 @@
+# CLIPAdd
+
 CLIPAdd düğümü, iki CLIP modelini anahtar yamalarını birleştirerek bir araya getirir. İlk CLIP modelinin bir kopyasını oluşturur ve ardından ikinci modelden, konum kimlikleri ve logit ölçek parametreleri hariç, anahtar yamalarının çoğunu ekler. Bu sayede, ilk modelin yapısını korurken farklı CLIP modellerinden özellikleri harmanlamanıza olanak tanır.
 
 ## Girişler

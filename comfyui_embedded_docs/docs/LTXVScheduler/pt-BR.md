@@ -1,3 +1,5 @@
+# LTXVScheduler
+
 O nó LTXVScheduler gera valores sigma para processos de amostragem personalizados. Ele calcula os parâmetros do cronograma de ruído com base no número de tokens no latent de entrada e aplica uma transformação sigmoide para criar o cronograma de amostragem. O nó pode opcionalmente esticar os sigmas resultantes para corresponder a um valor terminal especificado.
 
 ## Entradas

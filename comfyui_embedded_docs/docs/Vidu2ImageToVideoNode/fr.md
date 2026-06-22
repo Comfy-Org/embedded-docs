@@ -1,3 +1,5 @@
+# Génération d’image vers vidéo Vidu2
+
 Le nœud Vidu2 Image-to-Video Generation crée une séquence vidéo à partir d’une seule image d’entrée. Il utilise un modèle Vidu2 spécifié pour animer la scène en fonction d’un texte d’invite optionnel, en contrôlant la durée, la résolution et l’intensité du mouvement de la vidéo.
 
 ## Entrées

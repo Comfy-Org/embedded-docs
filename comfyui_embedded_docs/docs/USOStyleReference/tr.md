@@ -1,3 +1,5 @@
+# USOTarzReferansı
+
 ## Genel Bakış
 
 USOStyleReference düğümü, CLIP görüntü işleme çıktısından alınan kodlanmış görüntü özniteliklerini kullanarak modellere stil referansı yamaları uygular. Görsel girdilerden çıkarılan stil bilgilerini modele entegre ederek, giriş modelinin değiştirilmiş bir sürümünü oluşturur ve stil aktarımı veya referans tabanlı üretim yetenekleri sağlar.

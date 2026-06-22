@@ -1,3 +1,5 @@
+# HappyHorse Image vers Vidéo
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 ## Aperçu

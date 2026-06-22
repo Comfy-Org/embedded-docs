@@ -1,3 +1,5 @@
+# Wan 2.7 Video Devamı
+
 ComfyUI Wan2VideoContinuation düğümü, bir giriş video klibinin sonundan itibaren sorunsuz bir şekilde devam eden yeni bir video segmenti oluşturur. Devamı sentezlemek için Wan 2.7 modelini kullanır ve isteğe bağlı olarak bitişi belirli bir hedef kareye yönlendirebilir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# KSamplerSelect
+
 O nó KSamplerSelect foi projetado para selecionar um sampler específico com base no nome do sampler fornecido. Ele abstrai a complexidade da seleção do sampler, permitindo que os usuários alternem facilmente entre diferentes estratégias de amostragem para suas tarefas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Flux 1.1 [pro] Ultra Görüntü
+
 Flux Pro 1.1 Ultra API aracılığıyla, istem ve çözünürlüğe bağlı olarak görseller üretir. Bu düğüm, metin açıklamanıza ve belirtilen boyutlara göre görseller oluşturmak için harici bir hizmete bağlanır.
 
 ## Girişler

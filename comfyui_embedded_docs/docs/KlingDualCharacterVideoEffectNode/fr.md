@@ -1,3 +1,5 @@
+# Effets vidéo à deux personnages Kling
+
 Voici la traduction en français de la documentation du nœud ComfyUI **Kling Dual Character Video Effect Node** :
 
 Le nœud d'effet vidéo à double personnage Kling crée des vidéos avec des effets spéciaux basés sur la scène sélectionnée. Il prend deux images et positionne la première image sur le côté gauche et la seconde image sur le côté droit de la vidéo composite. Différents effets visuels sont appliqués en fonction de la scène d'effet choisie.

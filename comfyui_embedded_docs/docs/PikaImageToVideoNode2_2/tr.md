@@ -1,3 +1,5 @@
+# PikaImageToVideoNode2_2
+
 Pika Görüntüden Videoya düğümü, bir video oluşturmak için Pika API sürüm 2.2'ye bir görüntü ve metin istemi gönderir. Sağlanan açıklama ve ayarlara dayanarak giriş görüntünüzü video formatına dönüştürür. Düğüm, API iletişimini yönetir ve oluşturulan videoyu çıktı olarak döndürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# LatentAdd
+
 The LatentAdd node is designed for the addition of two latent representations. It facilitates the combination of features or characteristics encoded in these representations by performing element-wise addition.
 
 ## Inputs

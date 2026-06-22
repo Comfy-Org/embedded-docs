@@ -1,3 +1,5 @@
+# TSR - Rééchelonnage temporel des scores
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/fr.md)
 
 Ce nœud applique un rééchelonnement temporel des scores (TSR) à un modèle de diffusion. Il modifie le comportement d'échantillonnage du modèle en rééchelonnant le bruit ou le score prédit pendant le processus de débruitage, ce qui peut orienter la diversité de la sortie générée. Cette fonction est implémentée comme une fonction post-CFG (Classifier-Free Guidance).

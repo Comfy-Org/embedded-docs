@@ -1,3 +1,5 @@
+# Flux2Scheduler
+
 Flux2Scheduler düğümü, özellikle Flux modeli için uyarlanmış, gürültü giderme işlemi için bir dizi gürültü seviyesi (sigma) üretir. Bu düğüm, gürültü giderme adımlarının sayısına ve hedef görüntünün boyutlarına bağlı olarak bir zamanlama hesaplar; bu da görüntü oluşturma sırasında gürültü giderme ilerlemesini etkiler.
 
 ## Girişler

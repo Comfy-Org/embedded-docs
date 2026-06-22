@@ -1,3 +1,5 @@
+# UNet 時間注意力倍增
+
 ## 概述
 
 UNetTemporalAttentionMultiply 節點會對時間性 UNet 模型中的不同注意力機制套用乘法因子。它透過調整自注意力（self-attention）與交叉注意力（cross-attention）層的權重來修改模型，並區分結構性與時間性元件。這使得您可以精細調整每種注意力類型對模型輸出的影響程度。

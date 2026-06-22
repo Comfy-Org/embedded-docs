@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 VOIDInpaintConditioning düğümü, CogVideoX modelleriyle iç boyama (inpainting) için gereken koşullandırma verilerini hazırlar. Bir kaynak video ve ön işlenmiş dörtlü maskeyi (quadmask) alır, bunları VAE aracılığıyla kodlar ve modelin maskelenmiş alanları doldurmak için kullandığı 32 kanallı bir koşullandırma sinyalinde birleştirir.
 
 ## Girişler

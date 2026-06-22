@@ -1,3 +1,5 @@
+# FlashVSR Video Yükseltme
+
 WavespeedFlashVSRNode, düşük çözünürlüklü veya bulanık görüntülerin çözünürlüğünü artıran ve netliğini geri kazandıran hızlı, yüksek kaliteli bir video yükselticidir. Bir video girdisini işler ve kullanıcı tarafından seçilen daha yüksek bir çözünürlükte yeni bir video çıktısı verir.
 
 ## Girdiler

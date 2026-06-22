@@ -1,3 +1,5 @@
+# Video Yükle
+
 Video Yükle düğümü, giriş dizininden video dosyalarını yükler ve bunları iş akışında işlenmek üzere kullanılabilir hale getirir. Belirlenen giriş klasöründen video dosyalarını okur ve bunları diğer video işleme düğümlerine bağlanabilen video verileri olarak çıktılar.
 
 ## Girişler

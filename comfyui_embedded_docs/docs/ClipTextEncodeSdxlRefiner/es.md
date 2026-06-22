@@ -1,3 +1,5 @@
+# CLIPTextEncodeSDXLRefiner
+
 Este nodo está diseñado específicamente para el modelo SDXL Refiner, con el fin de convertir indicaciones de texto en información de condicionamiento incorporando puntuaciones estéticas e información dimensional para mejorar las condiciones de las tareas de generación, optimizando así el efecto final de refinamiento. Actúa como un director artístico profesional, no solo transmitiendo tu intención creativa, sino también inyectando estándares estéticos precisos y requisitos de especificaciones en el trabajo.
 
 ## Acerca de SDXL Refiner

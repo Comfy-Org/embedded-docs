@@ -1,3 +1,5 @@
+# GeminiImage
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiImage/en.md)
 
 O nó GeminiImage gera respostas de texto e imagem dos modelos de IA Gemini do Google. Ele permite que você forneça entradas multimodais, incluindo prompts de texto, imagens e arquivos, para criar saídas coerentes de texto e imagem. O nó lida com toda a comunicação com a API e a análise de respostas com os modelos Gemini mais recentes.

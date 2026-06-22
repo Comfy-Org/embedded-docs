@@ -1,3 +1,5 @@
+# Stability AI Texte vers Audio
+
 Génère des morceaux de musique et des effets sonores de haute qualité à partir de descriptions textuelles. Ce nœud utilise la technologie de génération audio de Stability AI pour créer un contenu audio basé sur vos invites textuelles.
 
 ## Entrées

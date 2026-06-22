@@ -1,3 +1,5 @@
+# Flux.1 Remplir l'image
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxProFillNode/en.md)
 
 Remplit une image en fonction d'un masque et d'une invite. Ce nœud utilise le modèle Flux.1 pour remplir les zones masquées d'une image selon la description textuelle fournie, générant un nouveau contenu qui s'harmonise avec l'image environnante.

@@ -1,3 +1,5 @@
+# VPZamanlayıcı
+
 VPScheduler düğümü, Varyans Koruyan (VP) zamanlama yöntemine dayalı olarak bir dizi gürültü seviyesi (sigma) oluşturmak için tasarlanmıştır. Bu dizi, difüzyon modellerinde gürültü giderme sürecini yönlendirmek için kritik öneme sahiptir ve görüntüler veya diğer veri türlerinin kontrollü bir şekilde üretilmesine olanak tanır.
 
 ## Girişler

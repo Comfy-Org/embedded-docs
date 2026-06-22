@@ -1,3 +1,5 @@
+# CFGSıfırYıldız
+
 CFGZeroStar düğümü, difüzyon modellerine özel bir yönlendirme ölçekleme tekniği uygular. Koşullu ve koşulsuz tahminler arasındaki farka dayalı olarak optimize edilmiş bir ölçek faktörü hesaplayarak sınıflandırıcısız yönlendirme sürecini değiştirir. Bu yaklaşım, model kararlılığını korurken üretim süreci üzerinde gelişmiş kontrol sağlamak için nihai çıktıyı ayarlar.
 
 ## Girişler

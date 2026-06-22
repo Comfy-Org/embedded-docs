@@ -1,3 +1,5 @@
+# LoadImageTextSetFromFolderNode
+
 Loads a batch of images and their corresponding text captions from a specified directory for training purposes. The node automatically searches for image files and their associated caption text files, processes the images according to specified resize settings, and encodes the captions using the provided CLIP model.
 
 ## Inputs

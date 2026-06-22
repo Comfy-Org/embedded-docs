@@ -1,3 +1,5 @@
+# CargadorHypernetwork
+
 Este nodo detecta los modelos ubicados en la carpeta `ComfyUI/models/hypernetworks`, y también lee modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo de la carpeta correspondiente.
 
 El nodo HypernetworkLoader está diseñado para mejorar o modificar las capacidades de un modelo determinado mediante la aplicación de una hiperred. Carga una hiperred específica y la aplica al modelo, alterando potencialmente su comportamiento o rendimiento según el parámetro de intensidad. Este proceso permite realizar ajustes dinámicos en la arquitectura o los parámetros del modelo, posibilitando sistemas de IA más flexibles y adaptativos.

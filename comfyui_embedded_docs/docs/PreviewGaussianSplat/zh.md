@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# 预览 Splat
 
 PreviewGaussianSplat 节点允许您在 ComfyUI 界面中预览 3D 高斯泼溅文件。它接受多种高斯泼溅格式的 3D 模型文件，并在 3D 预览窗口中渲染，同时将模型数据传递以供进一步处理。
 

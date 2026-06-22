@@ -1,3 +1,5 @@
+# Wan Görselden Görsele
+
 WanImageToImageApi düğümü, bir veya iki giriş görüntüsü ve bir metin istemi kullanarak yeni bir görüntü oluşturur. Sağladığınız açıklamaya göre giriş görüntülerinizi dönüştürür ve orijinal girişinizin en-boy oranını koruyan yeni bir görüntü oluşturur. Çıktı görüntüsü, giriş boyutundan bağımsız olarak 1,6 megapiksel olarak sabitlenmiştir.
 
 ## Girişler

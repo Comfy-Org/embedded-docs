@@ -1,4 +1,4 @@
-# TripoSplat Prétraitement d'Image
+# Prétraitement d'image TripoSplat
 
 Ce nœud rogne chaque image d'entrée en un carré centré sur fond noir, puis ajoute un remplissage pour atteindre la taille de sortie spécifiée. Il est conçu pour préparer les images pour le modèle 3D TripoSplat en garantissant un cadrage carré cohérent et une érosion facultative du mat alpha pour éviter les artefacts de bordure.
 

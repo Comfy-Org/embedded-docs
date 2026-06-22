@@ -1,3 +1,5 @@
+# ModelSamplingDiscrete
+
 Este nó foi projetado para modificar o comportamento de amostragem de um modelo aplicando uma estratégia de amostragem discreta. Ele permite selecionar diferentes métodos de amostragem, como epsilon, v_prediction, lcm ou x0, e opcionalmente ajusta a estratégia de redução de ruído do modelo com base na configuração da taxa de ruído zero-shot (zsnr).
 
 ## Entradas

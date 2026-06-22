@@ -1,3 +1,5 @@
+# Empty Qwen Image Layered Latent
+
 El nodo "Empty Qwen Image Layered Latent" crea una representación latente en blanco y multicapa para su uso con modelos de imagen Qwen. Genera un tensor lleno de ceros, estructurado con un número específico de capas, tamaño de lote y dimensiones espaciales. Este latente vacío sirve como punto de partida para flujos de trabajo posteriores de generación o manipulación de imágenes.
 
 ## Entradas

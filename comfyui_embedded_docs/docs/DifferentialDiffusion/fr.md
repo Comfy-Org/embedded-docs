@@ -1,3 +1,5 @@
+# Diffusion différentielle
+
 Voici la traduction de la documentation du nœud Differential Diffusion :
 
 Le nœud Differential Diffusion modifie le processus de débruitage en appliquant un masque binaire basé sur des seuils de pas de temps. Il crée un masque qui effectue un mélange entre le masque de débruitage d'origine et un masque binaire basé sur un seuil, permettant un réglage contrôlé de l'intensité du processus de diffusion.

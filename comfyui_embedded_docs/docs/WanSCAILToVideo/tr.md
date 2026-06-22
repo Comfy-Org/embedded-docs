@@ -1,3 +1,5 @@
+# WanSCAILToVideo
+
 WanSCAILToVideo düğümü, video üretimi için koşullandırma (conditioning) ve boş bir latent alan hazırlar. Referans görüntüler, poz videoları ve CLIP görüş çıktıları gibi isteğe bağlı girdileri işleyerek bunları bir video modeli için pozitif ve negatif koşullandırmaya gömer. Düğüm, değiştirilmiş koşullandırmayı ve belirtilen video boyutlarında boş bir latent tensörü çıktı olarak verir.
 
 ## Girdiler

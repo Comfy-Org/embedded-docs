@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# Splat Önizleme
 
 PreviewGaussianSplat düğümü, ComfyUI arayüzü içinde bir 3D gaussian splat dosyasını önizlemenizi sağlar. Çeşitli gaussian splat formatlarındaki bir 3D model dosyasını kabul eder ve bunu bir 3D önizleme penceresinde görüntüler, model verilerini daha sonraki işlemler için geçirir.
 

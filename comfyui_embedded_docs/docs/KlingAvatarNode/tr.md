@@ -1,3 +1,5 @@
+# Kling Avatar 2.0
+
 Kling Avatar 2.0 düğümü, tek bir referans fotoğrafı ve bir ses dosyası kullanarak yayın kalitesinde dijital insan videoları oluşturur. Avatarın hareketlerini, duygularını ve kamera hareketlerini tanımlamak için isteğe bağlı bir metin istemi ile konuşan bir avatar videosu üretir.
 
 ## Girişler

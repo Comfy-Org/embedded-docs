@@ -1,3 +1,5 @@
+# Maskeyi Ters Çevir
+
 InvertMask düğümü, belirli bir maskenin değerlerini tersine çevirerek maskelenmiş ve maskelenmemiş alanları etkili bir şekilde değiştirmek için tasarlanmıştır. Bu işlem, ilgi odağının ön plan ile arka plan arasında değiştirilmesi gereken görüntü işleme görevlerinde temel bir öneme sahiptir.
 
 ## Girişler

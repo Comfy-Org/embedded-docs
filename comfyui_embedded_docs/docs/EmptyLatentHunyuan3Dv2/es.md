@@ -1,3 +1,5 @@
+# EmptyLatentHunyuan3Dv2
+
 El nodo `EmptyLatentHunyuan3Dv2` crea tensores latentes vacíos formateados específicamente para modelos de generación 3D Hunyuan3Dv2. Genera espacios latentes vacíos con las dimensiones y estructura correctas requeridas por la arquitectura Hunyuan3Dv2, lo que permite iniciar flujos de trabajo de generación 3D desde cero. El nodo produce tensores latentes llenos de ceros que sirven como base para procesos posteriores de generación 3D.
 
 ## Entradas

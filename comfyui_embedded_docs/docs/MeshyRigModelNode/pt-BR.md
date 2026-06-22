@@ -1,3 +1,5 @@
+# Meshy: Rig de Modelo
+
 O nó Meshy: Rig Model recebe um modelo 3D de uma tarefa anterior do Meshy e cria automaticamente um esqueleto para ele, produzindo um personagem rigado que pode ser posado e animado. O nó gera o modelo rigado nos formatos de arquivo GLB e FBX.
 
 ## Entradas

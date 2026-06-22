@@ -1,3 +1,5 @@
+# EnregistrerWEBPAnimé
+
 Ce nœud est conçu pour enregistrer une séquence d'images sous forme de fichier WEBP animé. Il assure l'agrégation des images individuelles en une animation cohérente, applique les métadonnées spécifiées et optimise la sortie en fonction des réglages de qualité et de compression.
 
 ## Entrées

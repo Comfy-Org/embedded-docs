@@ -1,3 +1,5 @@
+# ConvertStringToComboNode
+
 Le nœud Convert String to Combo prend une chaîne de texte en entrée et la convertit en type de données Combo. Cela vous permet d'utiliser une valeur textuelle comme sélection pour d'autres nœuds nécessitant une entrée de type Combo. Il transmet simplement la chaîne de caractères inchangée, mais en modifie le type de données.
 
 ## Entrées

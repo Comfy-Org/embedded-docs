@@ -1,4 +1,4 @@
-# SplatToFile3D Düğüm Belgelendirmesi
+# 3D Dosya Oluştur (Splat'tan)
 
 ## Genel Bakış
 

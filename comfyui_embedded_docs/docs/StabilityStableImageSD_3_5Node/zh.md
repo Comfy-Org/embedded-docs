@@ -1,3 +1,5 @@
+# Stability AI Stable Diffusion 3.5 图像
+
 此节点使用 Stability AI 的 Stable Diffusion 3.5 模型同步生成图像。它根据文本提示创建图像，并在提供输入图像时修改现有图像。该节点支持多种宽高比和风格预设，以自定义输出结果。
 
 ## 输入

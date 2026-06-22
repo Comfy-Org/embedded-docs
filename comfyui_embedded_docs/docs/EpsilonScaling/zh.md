@@ -1,3 +1,5 @@
+# EpsilonScaling
+
 实现研究论文《Elucidating the Exposure Bias in Diffusion Models》中提出的 Epsilon Scaling 方法。该方法通过在采样过程中缩放预测噪声来提升样本质量，并采用均匀调度策略来减轻扩散模型中的暴露偏差。
 
 ## 输入

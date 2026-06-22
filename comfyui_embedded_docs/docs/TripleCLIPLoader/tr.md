@@ -1,3 +1,5 @@
+# ÜçlüCLIPYükleyici
+
 TripleCLIPLoader düğümü, aynı anda üç farklı metin kodlayıcı modelini yükler ve bunları tek bir CLIP modelinde birleştirir. Bu, clip-l, clip-g ve t5 modellerinin birlikte çalışmasını gerektiren SD3 iş akışları gibi birden fazla metin kodlayıcıya ihtiyaç duyulan gelişmiş metin kodlama senaryoları için kullanışlıdır.
 
 ## Girişler

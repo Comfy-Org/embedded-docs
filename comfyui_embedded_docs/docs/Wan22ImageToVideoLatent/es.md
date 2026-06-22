@@ -1,3 +1,5 @@
+# Wan22ImageToVideoLatent
+
 El nodo Wan22ImageToVideoLatent crea representaciones latentes de video a partir de imágenes. Genera un espacio latente de video en blanco con dimensiones específicas y puede codificar opcionalmente una secuencia de imágenes inicial en los primeros fotogramas. Cuando se proporciona una imagen de inicio, codifica la imagen en el espacio latente y crea una máscara de ruido correspondiente para las regiones editadas.
 
 ## Entradas

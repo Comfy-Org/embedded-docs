@@ -1,3 +1,5 @@
+# AddNoise
+
 This node adds controlled noise to a latent image using a specified noise generator and sigma values. It processes the input through the model's sampling system to apply noise scaling appropriate for the given sigma range, returning a new latent representation with the noise applied.
 
 ## Inputs

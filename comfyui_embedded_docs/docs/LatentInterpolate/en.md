@@ -1,3 +1,5 @@
+# LatentInterpolate
+
 The LatentInterpolate node is designed to perform interpolation between two sets of latent samples based on a specified ratio, blending the characteristics of both sets to produce a new, intermediate set of latent samples.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# CLIPAttentionMultiply
+
 CLIPAttentionMultiply 節點允許您透過對自注意力層的不同元件套用乘法因子，來調整 CLIP 模型中的注意力機制。其運作方式是修改 CLIP 模型注意力機制中的查詢、鍵、值及輸出投影的權重與偏差。此實驗性節點會建立輸入 CLIP 模型的修改副本，並套用指定的縮放因子。
 
 ## 輸入

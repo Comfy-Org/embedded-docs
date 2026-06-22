@@ -1,3 +1,5 @@
+# ModelÖrneklemeLTXV
+
 ModelSamplingLTXV düğümü, token sayısına bağlı olarak bir modele gelişmiş örnekleme parametreleri uygular. Temel ve maksimum kaydırma değerleri arasında doğrusal enterpolasyon kullanarak bir kaydırma değeri hesaplar; bu hesaplama, giriş latenti içindeki token sayısına bağlıdır. Düğüm daha sonra özelleştirilmiş bir model örnekleme yapılandırması oluşturur ve bunu giriş modeline uygular.
 
 ## Girişler

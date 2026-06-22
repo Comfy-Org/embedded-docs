@@ -1,3 +1,5 @@
+# ByteDance Video Varlık Oluştur
+
 Bu düğüm, Seedance 2.0 için kişisel bir video varlığı oluşturur. Giriş videonuzu yükler ve belirtilen bir varlık grubuna kaydeder. Bir grup kimliği sağlamazsanız, önce yeni bir grup oluşturmak için tarayıcınızda bir gerçek kişi doğrulama sürecinden geçmenizi sağlar.
 
 ## Girişler

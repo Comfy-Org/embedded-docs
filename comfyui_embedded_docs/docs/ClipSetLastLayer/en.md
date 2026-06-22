@@ -1,3 +1,5 @@
+# CLIP Set Last Layer
+
 `CLIP Set Last Layer` is a core node in ComfyUI for controlling the processing depth of CLIP models. It allows users to precisely control where the CLIP text encoder stops processing, affecting both the depth of text understanding and the style of generated images.
 
 Imagine the CLIP model as a 24-layer intelligent brain:

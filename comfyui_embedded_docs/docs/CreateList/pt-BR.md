@@ -1,3 +1,5 @@
+# Criar Lista
+
 O nó **Criar Lista** combina múltiplas entradas em uma única lista sequencial. Ele aceita qualquer número de entradas do mesmo tipo de dado e as concatena na ordem em que estão conectadas. Este nó é útil para preparar lotes de dados, como imagens ou textos, para serem processados por outros nós em um fluxo de trabalho.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# LoraLoaderModelOnly
+
 此節點會偵測位於 `ComfyUI/models/loras` 資料夾中的模型，同時也會讀取在 extra_model_paths.yaml 檔案中設定的其他路徑中的模型。有時您可能需要**重新整理 ComfyUI 介面**，以便讓它從對應的資料夾中讀取模型檔案。
 
 此節點專門用於載入 LoRA 模型，無需 CLIP 模型，專注於根據 LoRA 參數增強或修改給定的模型。它允許透過 LoRA 參數動態調整模型的強度，從而實現對模型行為的精細控制。

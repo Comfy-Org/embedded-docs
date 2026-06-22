@@ -1,3 +1,5 @@
+# LoRA Eğit
+
 TrainLoraNode, sağlanan latentler ve koşullandırma verilerini kullanarak bir difüzyon modeli üzerinde LoRA (Düşük Dereceli Uyarlama) modeli oluşturur ve eğitir. Özel eğitim parametreleri, optimize ediciler ve kayıp fonksiyonları ile bir modeli ince ayar yapmanızı sağlar. Düğüm, eğitilmiş LoRA ağırlıklarını, bir kayıp geçmişi haritasını ve tamamlanan toplam eğitim adım sayısını çıktı olarak verir.
 
 ## Girişler

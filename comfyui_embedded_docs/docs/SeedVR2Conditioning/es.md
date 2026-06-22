@@ -1,4 +1,4 @@
-# Aplicar Condicionamiento SeedVR2
+# SeedVR2Conditioning
 
 Este nodo construye condicionamiento positivo y negativo a partir de un latente VAE para su uso con el modelo SeedVR2. Prepara los datos de condicionamiento que guían el proceso de generación de imágenes o videos.
 

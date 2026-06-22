@@ -1,3 +1,5 @@
+# FreeU_V2
+
 El nodo FreeU_V2 mejora la calidad de generación de imágenes aplicando modificaciones basadas en frecuencia a la arquitectura U-Net de un modelo de difusión. Utiliza factores de escala configurables para ajustar los canales de características en diferentes bloques, mejorando el resultado sin requerir entrenamiento adicional.
 
 ## Entradas

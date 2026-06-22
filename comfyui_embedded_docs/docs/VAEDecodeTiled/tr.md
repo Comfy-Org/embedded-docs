@@ -1,3 +1,5 @@
+# VAE Kod Çözme (Döşemeli)
+
 VAEDecodeTiled düğümü, gizli temsilleri (latent representations) görüntülere dönüştürmek için döşemeli (tiled) bir yaklaşım kullanarak büyük görüntüleri verimli bir şekilde işler. Giriş verilerini daha küçük döşemeler halinde işleyerek bellek kullanımını yönetir ve görüntü kalitesini korur. Düğüm ayrıca, geçişlerin yumuşak olması için zamansal kareleri örtüşmeli parçalar halinde işleyerek video VAE'lerini de destekler.
 
 ## Girişler

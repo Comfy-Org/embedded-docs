@@ -1,3 +1,5 @@
+# Rebatch Images
+
 Le nœud RebatchImages est conçu pour réorganiser un lot d'images en une nouvelle configuration de lot, en ajustant la taille du lot selon les spécifications. Ce processus est essentiel pour gérer et optimiser le traitement des données d'image dans les opérations par lots, garantissant que les images sont regroupées selon la taille de lot souhaitée pour un traitement efficace.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Ajustar brillo
+
 El nodo Ajustar Brillo modifica el brillo de una imagen de entrada. Funciona multiplicando el valor de cada píxel por un factor especificado y luego recortando los valores resultantes para que permanezcan dentro de un rango válido. Un factor de 1.0 deja la imagen sin cambios, los valores por debajo de 1.0 la oscurecen y los valores por encima de 1.0 la aclaran.
 
 ## Entradas

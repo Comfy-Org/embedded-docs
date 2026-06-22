@@ -1,3 +1,5 @@
+# Vidu2 Başlangıç/Bitiş Kareden Videoya Üretim
+
 ## Genel Bakış
 
 Bu düğüm, bir metin yönlendirmesi rehberliğinde sağlanan başlangıç karesi ile bitiş karesi arasında enterpolasyon yaparak bir video oluşturur. Belirtilen Vidu modelini kullanarak iki görüntü arasında belirlenen süre boyunca yumuşak bir geçiş sağlar.

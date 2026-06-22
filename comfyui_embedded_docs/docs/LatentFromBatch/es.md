@@ -1,3 +1,5 @@
+# Latente De Lote
+
 Este nodo está diseñado para extraer un subconjunto específico de muestras latentes de un lote determinado, según el índice y la longitud del lote especificados. Permite el procesamiento selectivo de muestras latentes, facilitando operaciones en segmentos más pequeños del lote para lograr eficiencia o manipulación dirigida.
 
 ## Entradas

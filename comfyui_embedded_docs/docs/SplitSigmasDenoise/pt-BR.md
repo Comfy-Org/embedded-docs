@@ -1,3 +1,5 @@
+# SplitSigmasDenoise
+
 O nó SplitSigmasDenoise divide uma sequência de valores sigma em duas partes com base em um parâmetro de intensidade de redução de ruído. Ele separa os sigmas de entrada em sequências de sigma alto e baixo, onde o ponto de divisão é determinado multiplicando o total de etapas pelo fator de redução de ruído. Isso permite separar o agendamento de ruído em diferentes faixas de intensidade para processamento especializado.
 
 ## Entradas

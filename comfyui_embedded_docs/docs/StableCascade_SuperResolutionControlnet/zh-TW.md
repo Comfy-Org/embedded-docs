@@ -1,3 +1,5 @@
+# StableCascade 超解析度 ControlNet
+
 ## 概述
 
 StableCascade_SuperResolutionControlnet 節點用於準備 Stable Cascade 超解析度處理的輸入。它接收輸入影像，並使用 VAE 對其進行編碼以建立 controlnet 輸入，同時也為 Stable Cascade 管線的階段 C 和階段 B 生成佔位潛在表示。

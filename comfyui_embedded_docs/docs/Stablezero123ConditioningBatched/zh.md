@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 此节点专为 StableZero123 模型设计，以批处理方式处理条件信息。它专注于同时高效处理多组条件数据，优化批处理至关重要的场景下的工作流程。
 
 ## 输入

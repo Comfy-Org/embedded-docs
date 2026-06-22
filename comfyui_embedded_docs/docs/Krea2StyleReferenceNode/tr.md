@@ -1,3 +1,5 @@
+# Krea 2 Stil Referansı
+
 ## Genel Bakış
 
 Krea 2 Stil Referansı düğümü, Krea 2 görüntü oluşturma işleminin stilini etkilemek için bir referans görüntü eklemenizi sağlar. Birden fazla stil referansını birbirine zincirleyebilir (toplam 10'a kadar) ve birleştirilmiş sonucu bir Krea 2 Görüntü düğümüne besleyebilirsiniz. Sağladığınız her görüntü ComfyAPI deposuna yüklenir ve URL olarak iletilir.

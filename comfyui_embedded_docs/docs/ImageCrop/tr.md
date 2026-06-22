@@ -1,3 +1,5 @@
+# Görüntü Kırp
+
 `ImageCrop` düğümü, belirtilen bir x ve y koordinatından başlayarak, görüntüleri belirli bir genişlik ve yüksekliğe kırpmak için tasarlanmıştır. Bu işlevsellik, bir görüntünün belirli bölgelerine odaklanmak veya görüntü boyutunu belirli gereksinimleri karşılayacak şekilde ayarlamak için gereklidir.
 
 ## Girişler

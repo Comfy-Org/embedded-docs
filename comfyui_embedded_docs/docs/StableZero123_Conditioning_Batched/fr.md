@@ -1,3 +1,5 @@
+# StableZero123_Conditioning_Batched
+
 Le nœud **StableZero123_Conditioning_Batched** traite une image d'entrée et génère des données de conditionnement pour la création de modèles 3D. Il encode l'image à l'aide des modèles CLIP vision et VAE, puis crée des embeddings de caméra basés sur les angles d'élévation et d'azimut pour produire un conditionnement positif et négatif, ainsi que des représentations latentes pour le traitement par lots.
 
 ## Entrées

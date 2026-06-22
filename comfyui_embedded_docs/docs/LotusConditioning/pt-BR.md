@@ -1,3 +1,5 @@
+# LotusConditioning
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/en.md)
 
 O nó LotusConditioning fornece embeddings de condicionamento pré-computados para o modelo Lotus. Ele utiliza um codificador congelado com condicionamento nulo e retorna embeddings de prompt codificados manualmente para alcançar paridade com a implementação de referência, sem exigir inferência ou carregamento de grandes arquivos de tensor. Este nó gera um tensor de condicionamento fixo que pode ser usado diretamente no pipeline de geração.

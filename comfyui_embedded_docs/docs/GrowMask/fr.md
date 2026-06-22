@@ -1,3 +1,5 @@
+# GrowMask
+
 Le nœud `GrowMask` est conçu pour modifier la taille d'un masque donné, en l'agrandissant ou en le réduisant, avec la possibilité d'appliquer un effet d'atténuation sur les coins. Cette fonctionnalité est essentielle pour ajuster dynamiquement les limites d'un masque dans les tâches de traitement d'image, offrant un contrôle plus flexible et précis sur la zone d'intérêt.
 
 ## Entrées

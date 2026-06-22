@@ -1,3 +1,5 @@
+# Blur Image
+
 The `ImageBlur` node applies a Gaussian blur to an image, allowing for the softening of edges and reduction of detail and noise. It provides control over the intensity and spread of the blur through parameters.
 
 ## Inputs

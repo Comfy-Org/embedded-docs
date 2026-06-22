@@ -1,3 +1,5 @@
+# CLIPTextEncodeHiDream
+
 Le nœud CLIPTextEncodeHiDream traite quatre entrées de texte distinctes à l'aide de différents modèles de langage (CLIP-L, CLIP-G, T5-XXL et LLaMA) et les combine en une seule sortie de conditionnement. Il tokenise chaque entrée de texte avec son modèle correspondant et les encode ensemble à l'aide d'une approche d'encodage planifié, permettant un conditionnement textuel plus sophistiqué en exploitant simultanément plusieurs modèles de langage.
 
 ## Entrées

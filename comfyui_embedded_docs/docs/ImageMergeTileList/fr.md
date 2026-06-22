@@ -1,3 +1,5 @@
+# Fusionner une liste de tuiles en image
+
 Ce nœud prend une liste de tuiles d'image et les fusionne en une seule image plus grande. Il est conçu pour reconstruire une image qui a été préalablement divisée en une grille de tuiles se chevauchant, en utilisant une technique de mélange pondéré pour créer un résultat final homogène.
 
 ## Entrées

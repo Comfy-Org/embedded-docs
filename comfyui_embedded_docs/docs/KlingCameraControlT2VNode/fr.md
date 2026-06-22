@@ -1,3 +1,5 @@
+# Kling Texte vers Vidéo (Contrôle de Caméra)
+
 Voici la traduction en français de la documentation du nœud **Kling Text to Video Camera Control** :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlT2VNode/en.md)

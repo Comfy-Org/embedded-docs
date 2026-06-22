@@ -1,4 +1,4 @@
-# ElevenLabs 即時語音克隆節點
+# ElevenLabs 即時語音克隆
 
 ElevenLabs 即時語音克隆節點透過分析 1 到 8 段個人語音的音訊錄音，建立一個全新的、獨特的語音模型。它將這些樣本發送到 ElevenLabs API，由 API 處理後產生一個可用於文字轉語音合成的語音克隆。
 

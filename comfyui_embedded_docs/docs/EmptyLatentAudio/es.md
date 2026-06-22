@@ -1,3 +1,5 @@
+# EmptyLatentAudio
+
 El nodo `EmptyLatentAudio` crea un tensor latente vacío para procesamiento de audio. Genera una representación latente de audio en blanco con una duración y tamaño de lote especificados, que puede utilizarse como punto de partida para flujos de trabajo de generación o procesamiento de audio. El nodo calcula automáticamente las dimensiones latentes apropiadas según la duración del audio y la frecuencia de muestreo.
 
 ## Entradas

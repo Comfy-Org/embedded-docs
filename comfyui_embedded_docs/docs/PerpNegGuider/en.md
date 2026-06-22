@@ -1,3 +1,5 @@
+# Perp-Neg Guider
+
 The PerpNegGuider node creates a guidance system for controlling image generation using perpendicular negative conditioning. It takes positive, negative, and empty conditioning inputs and applies a specialized guidance algorithm that computes all three noise predictions in a single batch for efficiency. This node is designed for experimental testing and provides fine control over the guidance strength and negative scaling.
 
 ## Inputs

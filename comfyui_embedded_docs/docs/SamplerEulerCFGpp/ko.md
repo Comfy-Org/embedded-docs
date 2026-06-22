@@ -1,4 +1,4 @@
-# SamplerEulerCFGpp 노드
+# Eluer CFG++ 샘플러
 
 SamplerEulerCFGpp 노드는 출력을 생성하기 위한 Euler CFG++ 샘플링 방법을 제공합니다. 이 노드는 사용자 선호도에 따라 선택할 수 있는 두 가지 서로 다른 구현 버전의 Euler CFG++ 샘플러를 제공합니다.
 

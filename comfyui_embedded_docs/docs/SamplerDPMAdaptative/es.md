@@ -1,3 +1,5 @@
+# SamplerDPMAdaptative
+
 El nodo SamplerDPMAdaptative implementa un muestreador DPM (Modelo Probabilístico de Difusión) adaptativo que ajusta automáticamente los tamaños de paso durante el proceso de muestreo. Utiliza control de error basado en tolerancia para determinar tamaños de paso óptimos, equilibrando la eficiencia computacional con la precisión del muestreo. Este enfoque adaptativo ayuda a mantener la calidad mientras potencialmente reduce la cantidad de pasos necesarios.
 
 ## Entradas

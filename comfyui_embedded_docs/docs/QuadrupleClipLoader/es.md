@@ -1,3 +1,5 @@
+# QuadrupleCLIPLoader
+
 El **Quadruple CLIP Loader**, `QuadrupleCLIPLoader`, es uno de los nodos principales de ComfyUI, añadido inicialmente para dar soporte al modelo de la versión HiDream I1. Si encuentras que este nodo falta, intenta actualizar ComfyUI a la versión más reciente para garantizar su compatibilidad.
 
 Requiere 4 modelos CLIP, correspondientes a los parámetros `clip_name1`, `clip_name2`, `clip_name3` y `clip_name4`, y proporcionará una salida de modelo CLIP para nodos posteriores.

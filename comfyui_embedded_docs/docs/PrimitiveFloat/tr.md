@@ -1,3 +1,5 @@
+# Float
+
 PrimitiveFloat düğümü, iş akışınızda kullanılabilecek bir kayan noktalı sayı değeri oluşturur. Tek bir sayısal girdi alır ve aynı değeri çıktı olarak verir; böylece ComfyUI hattınızdaki farklı düğümler arasında float değerleri tanımlamanıza ve iletmenize olanak tanır.
 
 ## Girdiler

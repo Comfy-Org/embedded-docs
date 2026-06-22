@@ -1,3 +1,5 @@
+# StableCascade_EmptyLatentImage
+
 O nó **StableCascade_EmptyLatentImage** cria tensores latentes vazios para modelos Stable Cascade. Ele gera duas representações latentes separadas — uma para o estágio C e outra para o estágio B — com dimensões apropriadas com base na resolução de entrada e nas configurações de compressão. Este nó fornece o ponto de partida para o pipeline de geração do Stable Cascade.
 
 ## Entradas

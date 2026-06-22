@@ -1,3 +1,5 @@
+# Agrandir l'image
+
 Le nœud ImageScale est conçu pour redimensionner des images à des dimensions spécifiques, offrant une sélection de méthodes d'agrandissement et la possibilité de recadrer l'image redimensionnée. Il abstrait la complexité de l'agrandissement et du recadrage d'image, fournissant une interface simple pour modifier les dimensions de l'image selon des paramètres définis par l'utilisateur.
 
 ## Entrées

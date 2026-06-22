@@ -1,3 +1,5 @@
+# Sélecteur de voix ElevenLabs
+
 Voici la traduction en français de la documentation du nœud ElevenLabs Voice Selector :
 
 Le nœud ElevenLabs Voice Selector vous permet de choisir une voix spécifique parmi une liste prédéfinie de voix de synthèse vocale ElevenLabs. Il prend un nom de voix en entrée et fournit en sortie l'identifiant vocal correspondant nécessaire à la génération audio. Ce nœud simplifie le processus de sélection d'une voix compatible pour une utilisation avec d'autres nœuds audio ElevenLabs.

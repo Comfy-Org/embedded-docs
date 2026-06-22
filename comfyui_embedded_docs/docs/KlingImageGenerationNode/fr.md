@@ -1,3 +1,5 @@
+# Génération d'image Kling
+
 Le nœud de génération d'images Kling crée des images à partir de descriptions textuelles, avec la possibilité d'utiliser une image de référence comme guide. Il génère une ou plusieurs images selon votre description textuelle et vos paramètres de référence, puis renvoie les images générées en sortie.
 
 ## Entrées

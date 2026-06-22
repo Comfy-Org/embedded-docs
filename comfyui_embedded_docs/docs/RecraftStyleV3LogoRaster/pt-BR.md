@@ -1,3 +1,5 @@
+# Recraft Estilo - Logo Raster
+
 Este nó seleciona o estilo de logotipo raster e um subestilo opcional para gerar imagens de logotipo. Ele é especializado na criação de designs de logotipo com tratamentos visuais baseados em raster.
 
 ## Entradas

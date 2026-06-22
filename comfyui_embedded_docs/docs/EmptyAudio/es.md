@@ -1,3 +1,5 @@
+# Audio Vacío
+
 El nodo EmptyAudio genera un clip de audio silencioso con una duración, frecuencia de muestreo y configuración de canales específicas. Crea una forma de onda que contiene todos ceros, produciendo silencio completo durante la duración indicada. Este nodo es útil para crear audio de relleno o generar segmentos silenciosos en flujos de trabajo de audio.
 
 ## Entradas

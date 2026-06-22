@@ -1,3 +1,5 @@
+# Créer un modèle de crochet comme LoRA
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookModelAsLora/en.md)
 
 Ce nœud crée un modèle de hook en tant que LoRA (Adaptation de Bas Rang) en chargeant les poids d'un point de contrôle et en appliquant des ajustements de force à la fois au modèle et aux composants CLIP. Il permet d'appliquer des modifications de type LoRA à des modèles existants via une approche basée sur les hooks, permettant un réglage fin et une adaptation sans modifications permanentes du modèle. Le nœud peut se combiner avec des hooks précédents et met en cache les poids chargés pour plus d'efficacité.

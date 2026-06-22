@@ -1,4 +1,4 @@
-# WanInfiniteTalkToVideo 節點
+# WanInfiniteTalkToVideo
 
 WanInfiniteTalkToVideo 節點可根據音訊輸入生成影片序列。它使用影片擴散模型，並以從一個或兩個說話者提取的音訊特徵作為條件，生成說話頭部影片的潛在表示。此節點可以生成新的序列，或使用先前幀作為運動上下文來擴展現有序列。
 

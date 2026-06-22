@@ -1,3 +1,5 @@
+# ModelMergeSubtract
+
 Ce nœud est conçu pour des opérations avancées de fusion de modèles, permettant spécifiquement de soustraire les paramètres d'un modèle d'un autre en fonction d'un multiplicateur défini. Il permet de personnaliser les comportements des modèles en ajustant l'influence des paramètres d'un modèle sur un autre, facilitant ainsi la création de nouveaux modèles hybrides.
 
 ## Entrées

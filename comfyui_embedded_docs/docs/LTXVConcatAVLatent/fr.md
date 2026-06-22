@@ -1,3 +1,5 @@
+# Concaténation AV Latent LTXV
+
 Le nœud LTXVConcatAVLatent combine une représentation latente vidéo et une représentation latente audio en une seule sortie latente concaténée. Il fusionne les tenseurs `samples` des deux entrées et, s'ils sont présents, leurs tenseurs `noise_mask` également, les préparant ainsi pour un traitement ultérieur dans un pipeline de génération vidéo.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Boş Görüntü
+
 ## Fonksiyon Açıklaması
 
 EmptyImage düğümü, belirtilen boyut ve renklerde boş görüntüler oluşturmak için kullanılır. Düz renkli arka plan görüntüleri üretebilir ve genellikle görüntü işleme iş akışları için başlangıç noktası veya arka plan görüntüsü olarak kullanılır.

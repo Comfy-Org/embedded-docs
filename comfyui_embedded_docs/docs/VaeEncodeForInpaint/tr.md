@@ -1,3 +1,5 @@
+# VAE Kodlama (İç Boyama için)
+
 Bu düğüm, görüntüleri iç boyama (inpainting) görevlerine uygun bir gizli temsile (latent representation) kodlamak için tasarlanmış olup, VAE modeli tarafından optimum kodlama için giriş görüntüsünü ve maskesini ayarlamak üzere ek ön işleme adımlarını içerir.
 
 ## Girişler

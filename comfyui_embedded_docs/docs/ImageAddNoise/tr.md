@@ -1,3 +1,5 @@
+# ImageAddNoise
+
 ImageAddNoise düğümü, bir giriş görüntüsüne rastgele gürültü ekler. Tutarlı gürültü desenleri oluşturmak için belirtilen bir rastgele tohum değeri kullanır ve gürültü efektinin yoğunluğunu kontrol etmeye olanak tanır. Ortaya çıkan görüntü, girişle aynı boyutları korur ancak eklenmiş görsel dokuya sahiptir.
 
 ## Girişler

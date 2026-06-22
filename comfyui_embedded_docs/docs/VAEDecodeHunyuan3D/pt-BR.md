@@ -1,3 +1,5 @@
+# VAEDecodeHunyuan3D
+
 O nó VAEDecodeHunyuan3D converte representações latentes em dados de voxel 3D usando um decodificador VAE. Ele processa as amostras latentes através do modelo VAE com configurações ajustáveis de divisão em partes e resolução para gerar dados volumétricos adequados para aplicações 3D.
 
 ## Entradas

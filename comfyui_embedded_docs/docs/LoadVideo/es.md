@@ -1,4 +1,4 @@
-# Nodo de Carga de Video
+# Cargar video
 
 El nodo de Carga de Video carga archivos de video desde el directorio de entrada y los pone a disposición para su procesamiento en el flujo de trabajo. Lee archivos de video de la carpeta de entrada designada y los genera como datos de video que pueden conectarse a otros nodos de procesamiento de video.
 

@@ -1,3 +1,5 @@
+# EmptyCosmosLatentVideo
+
 El nodo EmptyCosmosLatentVideo crea un tensor de video latente vacío con dimensiones especificadas. Genera una representación latente rellena de ceros que puede utilizarse como punto de partida para flujos de trabajo de generación de video, con parámetros configurables de ancho, alto, longitud y tamaño de lote.
 
 ## Entradas

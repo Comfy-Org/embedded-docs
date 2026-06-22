@@ -1,4 +1,4 @@
-# TripoRigNode
+# Tripo: 모델 리깅
 
 TripoRigNode는 원본 모델 작업 ID로부터 리깅된 3D 모델을 생성합니다. Tripo API에 요청을 전송하여 Tripo 사양을 사용해 GLB 형식의 애니메이션 리그를 생성한 후, 리그 생성 작업이 완료될 때까지 API를 폴링합니다.
 

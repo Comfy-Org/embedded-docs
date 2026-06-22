@@ -1,3 +1,5 @@
+# CropByBBoxes
+
 El nodo CropByBBoxes extrae y redimensiona regiones rectangulares específicas de un lote de imágenes de entrada. Utiliza las coordenadas de cuadros delimitadores proporcionadas para definir el área a recortar de cada imagen. Las regiones recortadas se redimensionan luego a una dimensión de salida especificada, con opciones para estirar el recorte o rellenarlo para preservar su relación de aspecto original.
 
 ## Entradas

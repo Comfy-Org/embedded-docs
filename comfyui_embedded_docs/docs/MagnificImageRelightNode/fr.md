@@ -1,3 +1,5 @@
+# Magnific Relumination d’Image
+
 Le nœud Magnific Image Relight ajuste l'éclairage d'une image d'entrée. Il peut appliquer un éclairage stylisé basé sur une invite textuelle ou transférer les caractéristiques d'éclairage d'une image de référence facultative. Le nœud offre divers contrôles pour affiner la luminosité, le contraste et l'ambiance générale du résultat final.
 
 ## Entrées

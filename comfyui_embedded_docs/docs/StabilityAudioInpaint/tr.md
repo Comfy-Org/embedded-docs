@@ -1,3 +1,5 @@
+# Stability AI Ses İç Boyama
+
 Mevcut bir ses örneğinin belirli bölümlerini metin talimatları kullanarak dönüştürür. Bu düğüm, tanımlayıcı istemler sağlayarak sesin belirli bölümlerini değiştirmenize, seçilen kısımları etkili bir şekilde "onararak" veya yeniden oluşturarak sesin geri kalanını korumanıza olanak tanır.
 
 ## Girişler

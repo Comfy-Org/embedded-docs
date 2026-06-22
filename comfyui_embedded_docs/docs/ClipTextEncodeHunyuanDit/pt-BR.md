@@ -1,3 +1,5 @@
+# CLIPTextEncodeHunyuanDiT
+
 O nó `CLIPTextEncodeHunyuanDiT` converte descrições textuais em um formato compreensível para o modelo HunyuanDiT. É um nó de condicionamento avançado projetado para a arquitetura de codificador de texto duplo do HunyuanDiT, processando duas entradas de texto separadas por meio de diferentes tokenizadores.
 
 ## Entradas

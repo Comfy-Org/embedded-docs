@@ -1,3 +1,5 @@
+# Obtener componentes de video
+
 El nodo **Obtener Componentes de Video** extrae todos los elementos principales de un archivo de video. Separa el video en fotogramas individuales, extrae la pista de audio y proporciona la información de la tasa de fotogramas del video. Esto permite trabajar con cada componente de forma independiente para su posterior procesamiento o análisis.
 
 ## Entradas

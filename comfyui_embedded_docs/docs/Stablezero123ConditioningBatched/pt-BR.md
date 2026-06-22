@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 Este nó foi projetado para processar informações de condicionamento em lote, especificamente adaptado para o modelo StableZero123. Ele foca em lidar eficientemente com múltiplos conjuntos de dados de condicionamento simultaneamente, otimizando o fluxo de trabalho para cenários onde o processamento em lote é crucial.
 
 ## Entradas

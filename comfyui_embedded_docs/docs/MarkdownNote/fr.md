@@ -1,3 +1,5 @@
+# MarkdownNote
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Nœud permettant d'ajouter des annotations à un workflow. Il prend en charge le formatage du texte à l'aide de la syntaxe Markdown.

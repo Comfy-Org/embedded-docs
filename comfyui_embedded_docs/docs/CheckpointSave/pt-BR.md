@@ -1,3 +1,5 @@
+# Salvar Checkpoint
+
 O nó `Save Checkpoint` foi projetado para salvar um modelo completo de Difusão Estável (incluindo componentes UNet, CLIP e VAE) como um arquivo de checkpoint no formato **.safetensors**.
 
 O Save Checkpoint é usado principalmente em fluxos de trabalho de mesclagem de modelos. Após criar um novo modelo mesclado através de nós como `ModelMergeSimple`, `ModelMergeBlocks`, etc., você pode usar este nó para salvar o resultado como um arquivo de checkpoint reutilizável.

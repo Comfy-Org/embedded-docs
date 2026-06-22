@@ -1,4 +1,4 @@
-# Recraft V4 文字轉向量節點
+# Recraft V4 文字轉向量圖
 
 Recraft V4 文字轉向量節點可根據文字描述生成可縮放向量圖形（SVG）插圖。此節點連接到外部 API，使用 Recraft V4 或 Recraft V4 Pro 模型進行圖像生成。節點會根據您的提示輸出一個或多個 SVG 圖像。
 

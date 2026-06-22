@@ -1,3 +1,5 @@
+# Condicionamento (Combinar)
+
 Este nó combina duas entradas de condicionamento em uma única saída, mesclando efetivamente suas informações. As duas condições são combinadas usando concatenação de listas.
 
 ## Entradas

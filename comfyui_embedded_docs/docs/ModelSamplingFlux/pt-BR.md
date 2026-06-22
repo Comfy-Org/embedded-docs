@@ -1,3 +1,5 @@
+# ModelSamplingFlux
+
 O nó ModelSamplingFlux aplica a amostragem do modelo Flux a um modelo fornecido, calculando um parâmetro de deslocamento com base nas dimensões da imagem. Ele cria uma configuração de amostragem especializada que ajusta o comportamento do modelo de acordo com os parâmetros de largura, altura e deslocamento especificados, retornando o modelo modificado com as novas configurações de amostragem aplicadas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Histograma de imagen
+
 El nodo ImageHistogram analiza la distribución de color de una imagen de entrada. Calcula y genera varios histogramas, que son gráficos que muestran cuántos píxeles en la imagen tienen cada valor de intensidad posible. Genera histogramas separados para los canales de color rojo, verde y azul, un histograma RGB compuesto y un histograma de luminancia basado en una fórmula estándar de brillo.
 
 ## Entradas

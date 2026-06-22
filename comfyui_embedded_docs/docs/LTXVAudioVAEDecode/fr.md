@@ -1,3 +1,5 @@
+# Décodage Audio VAE LTXV
+
 Voici la traduction en français de la documentation du nœud LTXV Audio VAE Decode :
 
 Le nœud LTXV Audio VAE Decode convertit une représentation latente d'audio en une forme d'onde audio. Il utilise un modèle Audio VAE spécialisé pour effectuer ce processus de décodage, produisant une sortie audio avec une fréquence d'échantillonnage spécifique.

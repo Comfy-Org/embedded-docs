@@ -1,3 +1,5 @@
+# Unir Listas de Imágenes
+
 El nodo Combinar Listas de Imágenes fusiona múltiples listas separadas de imágenes en una única lista continua. Funciona tomando todas las imágenes de cada entrada conectada y concatenándolas en el orden en que se reciben. Esto es útil para organizar o agrupar imágenes de diferentes fuentes para su procesamiento posterior.
 
 ## Entradas

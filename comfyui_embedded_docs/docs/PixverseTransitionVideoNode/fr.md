@@ -1,3 +1,5 @@
+# PixVerse Transition Vidéo
+
 Génère une vidéo de transition entre deux images d'entrée à l'aide de l'API PixVerse. Vous fournissez une image de départ et une image de fin, et le nœud crée une vidéo fluide qui passe de l'une à l'autre, guidée par votre invite textuelle et les paramètres choisis.
 
 ## Entrées

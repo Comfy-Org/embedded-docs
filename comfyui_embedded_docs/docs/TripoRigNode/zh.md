@@ -1,3 +1,5 @@
+# Tripo: 绑定模型
+
 TripoRigNode 根据原始模型任务 ID 生成一个带有骨骼绑定的 3D 模型。它会向 Tripo API 发送请求，使用 Tripo 规范创建 GLB 格式的动画骨骼，然后轮询 API 直至骨骼生成任务完成。
 
 ## 输入

@@ -1,3 +1,5 @@
+# SUPIRApply
+
 O nó SUPIRApply aplica um patch do modelo SUPIR a um modelo de difusão. Ele utiliza o patch para modificar o comportamento do modelo, permitindo incorporar orientação a partir de uma imagem de entrada durante o processo de amostragem. O nó também fornece controles para ajustar a intensidade dessa orientação ao longo do tempo e inclui um recurso opcional para ajudar a manter a fidelidade à imagem original.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Fusionner les listes de textes
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Ce nœud fusionne plusieurs listes de textes en une seule liste combinée. Il est conçu pour recevoir des entrées textuelles sous forme de listes et les concatène ensemble. Le nœud enregistre le nombre total de textes dans la liste fusionnée.

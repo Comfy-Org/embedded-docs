@@ -1,4 +1,4 @@
-# ConditioningSetProperties 節點
+# 條件集屬性
 
 ConditioningSetProperties 節點透過調整強度、區域設定以及應用可選遮罩、鉤子或時間步範圍來修改條件資料的屬性。它允許您透過設定特定參數來控制條件如何影響生成過程，這些參數會影響條件資料在圖像生成期間的應用方式。
 

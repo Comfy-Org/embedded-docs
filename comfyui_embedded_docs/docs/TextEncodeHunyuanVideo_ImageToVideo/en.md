@@ -1,3 +1,5 @@
+# TextEncodeHunyuanVideo_ImageToVideo
+
 The TextEncodeHunyuanVideo_ImageToVideo node creates conditioning data for video generation by combining text prompts with image embeddings. It uses a CLIP model to process both the text input and visual information from a CLIP vision output, then generates tokens that blend these two sources according to the specified image interleave setting.
 
 ## Inputs

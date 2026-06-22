@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# Pré-visualizar Splat
 
 O nó PreviewGaussianSplat permite visualizar um arquivo de gaussian splat 3D dentro da interface do ComfyUI. Ele aceita um arquivo de modelo 3D em vários formatos de gaussian splat e o renderiza em uma janela de pré-visualização 3D, transmitindo os dados do modelo para processamento posterior.
 

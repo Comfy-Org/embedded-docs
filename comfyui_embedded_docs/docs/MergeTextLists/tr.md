@@ -1,3 +1,5 @@
+# Metin Listelerini Birleştir
+
 Bu düğüm, birden fazla metin listesini tek bir birleşik listede birleştirir. Giriş olarak listeler halinde metin almak ve bunları birbirine eklemek üzere tasarlanmıştır. Düğüm, birleştirilmiş listedeki toplam metin sayısını kaydeder.
 
 ## Girişler

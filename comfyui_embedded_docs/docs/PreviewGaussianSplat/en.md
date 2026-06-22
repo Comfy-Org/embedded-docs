@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# Preview Splat
 
 The PreviewGaussianSplat node allows you to preview a 3D gaussian splat file within the ComfyUI interface. It accepts a 3D model file in various gaussian splat formats and renders it in a 3D preview window, passing through the model data for further processing.
 

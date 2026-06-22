@@ -1,3 +1,5 @@
+# Load Frame Interpolation Model
+
 ## Overview
 
 This node loads a frame interpolation model from a file and prepares it for use in the workflow. It automatically detects the model type (FILM or RIFE) and configures the model for optimal performance on your hardware.

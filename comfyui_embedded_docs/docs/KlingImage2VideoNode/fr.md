@@ -1,3 +1,5 @@
+# Kling Image to Video
+
 Voici la traduction en français de la documentation du nœud ComfyUI Kling Image to Video :
 
 Le nœud Kling Image to Video génère une vidéo à partir d'une image de référence initiale en utilisant des invites textuelles. Il prend une image comme première image et crée une séquence vidéo basée sur des descriptions textuelles positives et négatives, avec des options configurables pour le modèle, la durée, le rapport hauteur/largeur et le mode de génération.

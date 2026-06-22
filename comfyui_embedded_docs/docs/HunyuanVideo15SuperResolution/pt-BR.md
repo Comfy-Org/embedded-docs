@@ -1,3 +1,5 @@
+# HunyuanVideo15SuperResolution
+
 O nó HunyuanVideo15SuperResolution prepara dados de condicionamento para um processo de super-resolução de vídeo. Ele recebe uma representação latente de um vídeo e, opcionalmente, uma imagem inicial, e os organiza junto com aumento de ruído e dados de visão CLIP em um formato que pode ser usado por um modelo para gerar uma saída de resolução mais alta.
 
 ## Entradas

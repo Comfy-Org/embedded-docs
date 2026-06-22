@@ -1,3 +1,5 @@
+# ModelMergeSimple
+
 O nó **ModelMergeSimple** foi projetado para mesclar dois modelos combinando seus parâmetros com base em uma proporção especificada. Esse nó facilita a criação de modelos híbridos que combinam os pontos fortes ou as características de ambos os modelos de entrada.
 
 O parâmetro `ratio` determina a proporção da mesclagem entre os dois modelos. Quando esse valor é 1, o modelo de saída é 100% `model1` e, quando esse valor é 0, o modelo de saída é 100% `model2`.

@@ -1,3 +1,5 @@
+# Conversión de número
+
 El nodo Convertir Número transforma varios tipos de datos de entrada en valores numéricos. Acepta una única entrada de tipo entero, flotante, cadena de texto o booleano y produce dos salidas: un número de punto flotante y un número entero. Esto es útil para convertir valores de texto o lógicos en un formato que pueda ser utilizado por otros nodos matemáticos o de procesamiento en tu flujo de trabajo.
 
 ## Entradas

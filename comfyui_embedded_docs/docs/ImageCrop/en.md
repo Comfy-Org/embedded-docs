@@ -1,3 +1,5 @@
+# Crop Image (DEPRECATED)
+
 The `ImageCrop` node is designed for cropping images to a specified width and height starting from a given x and y coordinate. This functionality is essential for focusing on specific regions of an image or for adjusting the image size to meet certain requirements.
 
 ## Inputs

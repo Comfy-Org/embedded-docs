@@ -1,4 +1,4 @@
-# Flux Silme Düğümü
+# Flux Görsel Silme
 
 Maskelenen nesneyi görüntüden kaldırır ve arka planı yeniden oluşturur. Silinecek alanın üzerine maske çizin; düğüm, bu alanı olası arka plan içeriğiyle doldurur.
 

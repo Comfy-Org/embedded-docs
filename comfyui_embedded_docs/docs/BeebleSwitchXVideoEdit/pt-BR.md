@@ -1,4 +1,4 @@
-# Beeble SwitchX Video Edit
+# Beeble SwitchX Edição de Vídeo
 
 Edite um vídeo com Beeble SwitchX. Este nó pode alterar qualquer elemento da cena (fundo, iluminação, figurino) enquanto preserva os pixels e o movimento do sujeito original. Forneça uma imagem de referência e/ou um prompt de texto para descrever a nova aparência.
 

@@ -1,3 +1,5 @@
+# Interpolar Latente
+
 El nodo LatentInterpolate está diseñado para realizar interpolación entre dos conjuntos de muestras latentes basándose en una proporción especificada, combinando las características de ambos conjuntos para producir un nuevo conjunto intermedio de muestras latentes.
 
 ## Entradas

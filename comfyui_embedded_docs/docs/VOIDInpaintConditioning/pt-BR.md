@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 O nó VOIDInpaintConditioning prepara os dados de condicionamento necessários para inpaint com modelos CogVideoX. Ele recebe um vídeo fonte e uma quadmask pré-processada, codifica-os através do VAE e os combina em um sinal de condicionamento de 32 canais que o modelo utiliza para preencher as áreas mascaradas.
 
 ## Entradas

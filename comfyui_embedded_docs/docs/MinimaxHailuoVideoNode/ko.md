@@ -1,3 +1,5 @@
+# MiniMax Hailuo 비디오
+
 다음은 ComfyUI 노드 문서의 한국어 번역입니다.
 
 ## 개요

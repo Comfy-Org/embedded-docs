@@ -1,3 +1,5 @@
+# Empty Image
+
 ## Function Description
 
 The EmptyImage node is used to create blank images with specified dimensions and colors. It can generate solid-color background images, commonly used as starting points or background images for image processing workflows.

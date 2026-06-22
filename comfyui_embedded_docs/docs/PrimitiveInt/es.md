@@ -1,3 +1,5 @@
+# Int
+
 El nodo PrimitiveInt proporciona una forma sencilla de trabajar con valores enteros en tu flujo de trabajo. Toma una entrada de tipo entero y genera el mismo valor, lo que resulta útil para pasar parámetros enteros entre nodos o establecer valores numéricos específicos para otras operaciones.
 
 ## Entradas

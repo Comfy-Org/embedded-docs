@@ -1,3 +1,5 @@
+# IncrustaciónCámaraWan
+
 El nodo WanCameraEmbedding genera embeddings de trayectoria de cámara utilizando embeddings de Plücker basados en parámetros de movimiento de cámara. Crea una secuencia de poses de cámara que simulan diferentes movimientos de cámara y los convierte en tensores de embedding adecuados para pipelines de generación de video.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# Magnific Image Relight 节点
+# Magnific图像重光照
 
 Magnific Image Relight 节点用于调整输入图像的照明效果。它可以根据文本提示应用风格化照明，或从可选的参考图像中迁移照明特征。该节点提供多种控制选项，用于微调最终输出的亮度、对比度和整体氛围。
 

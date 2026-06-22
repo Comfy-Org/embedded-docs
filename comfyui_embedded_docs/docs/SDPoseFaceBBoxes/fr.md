@@ -1,3 +1,5 @@
+# SDPoseFaceBBoxes
+
 Le nœud SDPoseFaceBBoxes traite les données de points clés de pose pour détecter et générer des boîtes englobantes autour des visages humains. Il analyse les points clés 2D du visage pour chaque personne dans une image, calcule une boîte englobante basée sur ces points et peut ajuster la taille et la forme de la boîte. Les boîtes englobantes résultantes sont formatées pour être compatibles avec d'autres nœuds du workflow SDPose, tels que le SDPoseKeypointExtractor.
 
 ## Entrées

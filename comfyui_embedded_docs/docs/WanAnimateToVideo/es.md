@@ -1,3 +1,5 @@
+# WanAnimateToVideo
+
 El nodo WanAnimateToVideo genera contenido de video combinando múltiples entradas de condicionamiento, incluyendo referencias de pose, expresiones faciales y elementos de fondo. Procesa diversas entradas de video para crear secuencias animadas coherentes, manteniendo la consistencia temporal entre fotogramas. El nodo maneja operaciones en el espacio latente y puede extender videos existentes continuando patrones de movimiento.
 
 ## Entradas

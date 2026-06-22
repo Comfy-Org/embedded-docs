@@ -1,3 +1,5 @@
+# PlanificateurÉchantillonnageBeta
+
 Le nœud BetaSamplingScheduler génère une séquence de niveaux de bruit (sigmas) pour le processus d'échantillonnage à l'aide d'un algorithme de planification bêta. Il prend un modèle et des paramètres de configuration pour créer un plan de bruit personnalisé qui contrôle le processus de débruitage lors de la génération d'images. Ce planificateur permet un réglage fin de la trajectoire de réduction du bruit grâce aux paramètres alpha et bêta.
 
 ## Entrées

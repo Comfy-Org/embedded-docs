@@ -1,3 +1,5 @@
+# MoGe Nokta Haritasından Mesh'e
+
 ## Genel Bakış
 
 Bu düğüm, bir MoGe nokta haritasını 3B bir ağa dönüştürür. Bir MoGe derinlik tahmin düğümü tarafından üretilen geometri verilerini alır ve bunu UV koordinatları ve isteğe bağlı bir doku içeren bir ağ halinde üçgenler.

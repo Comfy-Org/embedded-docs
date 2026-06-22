@@ -1,3 +1,5 @@
+# Preview as Text
+
 The PreviewAny node displays a preview of any input data type in text format. It accepts any data type as input and converts it to a readable string representation for viewing. The node automatically handles different data types including strings, numbers, booleans, and complex objects by attempting to serialize them to JSON format.
 
 ## Inputs

@@ -1,4 +1,4 @@
-# ModelMergeQwenImage 節點
+# 模型合併Qwen圖像
 
 ModelMergeQwenImage 節點透過以可調整的權重組合其元件來合併兩個 AI 模型。它允許您混合 Qwen 圖像模型的特定部分，包括 transformer 區塊、位置嵌入和文字處理元件。您可以控制每個模型對合併結果不同部分的影響程度。
 

@@ -1,3 +1,5 @@
+# LoadImageSetNode
+
 O nó LoadImageSetNode carrega múltiplas imagens do diretório de entrada para processamento em lote e fins de treinamento. Ele suporta diversos formatos de imagem e pode opcionalmente redimensionar as imagens usando diferentes métodos. Este nó processa todas as imagens selecionadas como um lote e as retorna como um único tensor.
 
 ## Entradas

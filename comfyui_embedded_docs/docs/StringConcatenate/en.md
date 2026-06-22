@@ -1,3 +1,5 @@
+# Concatenate Text
+
 The StringConcatenate node combines two text strings into one by joining them with a specified delimiter. It takes two input strings and a delimiter character or string, then outputs a single string where the two inputs are connected with the delimiter placed between them.
 
 ## Inputs

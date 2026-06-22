@@ -1,3 +1,5 @@
+# MuestreoDeModeloFlux
+
 El nodo ModelSamplingFlux aplica el muestreo del modelo Flux a un modelo determinado calculando un parámetro de desplazamiento basado en las dimensiones de la imagen. Crea una configuración de muestreo especializada que ajusta el comportamiento del modelo según los parámetros de ancho, alto y desplazamiento especificados, y luego devuelve el modelo modificado con la nueva configuración de muestreo aplicada.
 
 ## Entradas

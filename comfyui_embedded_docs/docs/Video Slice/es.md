@@ -1,3 +1,5 @@
+# Corte de Video
+
 El nodo Video Slice permite extraer un segmento específico de un video. Puedes definir un tiempo de inicio y una duración para recortar el video, o simplemente saltar los fotogramas iniciales. Si la duración solicitada es mayor que el video restante, el nodo puede devolver lo disponible o generar un error.
 
 ## Entradas

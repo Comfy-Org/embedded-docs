@@ -1,4 +1,4 @@
-# 개요
+# EmptyARVideoLatent
 
 EmptyARVideoLatent 노드는 비디오 생성을 위한 빈 잠재 표현(Latent Representation)을 생성합니다. 지정된 크기, 화면 비율 및 길이를 가진 0으로 채워진 텐서를 제공하여 비디오 생성 프로세스를 초기화하는 데 사용됩니다.
 

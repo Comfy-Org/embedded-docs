@@ -1,4 +1,4 @@
-# Visão Geral
+# Selecionar Dispositivo VAE
 
 Este nó permite selecionar manualmente em qual dispositivo GPU o modelo VAE deve ser colocado. Por padrão, o VAE é colocado no dispositivo atribuído pelo carregador de modelos, mas você pode fixá-lo em uma GPU específica (ex.: `gpu:0`, `gpu:1`). Se o dispositivo selecionado não estiver disponível em sua máquina, o nó passará o VAE adiante sem alterações e registrará uma mensagem em vez de falhar.
 

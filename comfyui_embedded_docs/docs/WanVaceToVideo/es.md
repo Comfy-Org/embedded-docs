@@ -1,3 +1,5 @@
+# WanVaceToVideo
+
 El nodo WanVaceToVideo procesa datos de condicionamiento de video para modelos de generación de video. Toma entradas de condicionamiento positivo y negativo junto con datos de control de video y prepara representaciones latentes para la generación de video. El nodo maneja el escalado de video, el enmascaramiento y la codificación VAE para crear la estructura de condicionamiento adecuada para modelos de video.
 
 ## Entradas

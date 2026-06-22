@@ -1,3 +1,5 @@
+# Pré-visualizar Mask
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskPreview/en.md)
 
 O nó MaskPreview salva dados de máscara como uma imagem de pré-visualização no diretório de saída do ComfyUI, permitindo que você inspecione visualmente os dados da máscara durante a execução do fluxo de trabalho. Ele converte a máscara de entrada em um formato adequado para exibição de imagem e a salva com um prefixo de nome de arquivo configurável.

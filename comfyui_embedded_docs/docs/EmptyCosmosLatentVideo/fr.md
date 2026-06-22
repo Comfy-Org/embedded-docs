@@ -1,3 +1,5 @@
+# VidéoLatenteCosmosVide
+
 Le nœud EmptyCosmosLatentVideo crée un tenseur vidéo latent vide avec des dimensions spécifiées. Il génère une représentation latente remplie de zéros qui peut être utilisée comme point de départ pour les workflows de génération vidéo, avec des paramètres configurables pour la largeur, la hauteur, la longueur et la taille du lot.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# CLIPTextEncodeKandinsky5
+
 O nó CLIPTextEncodeKandinsky5 prepara prompts de texto para uso com o modelo Kandinsky 5. Ele recebe duas entradas de texto separadas, as tokeniza usando um modelo CLIP fornecido e as combina em uma única saída de condicionamento. Essa saída é usada para guiar o processo de geração de imagens.
 
 ## Entradas

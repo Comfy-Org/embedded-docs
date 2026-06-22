@@ -1,4 +1,4 @@
-# Substituir Fundo de Vídeo Bria
+# Bria Video Substituir Fundo
 
 Este nó substitui o fundo de um vídeo por uma imagem ou vídeo fornecido usando a API da Bria. A saída mantém a resolução e a taxa de quadros do vídeo em primeiro plano; um fundo com proporção diferente é esticado para se ajustar, portanto, proporções correspondentes produzem resultados sem distorção.
 

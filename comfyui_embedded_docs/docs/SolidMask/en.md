@@ -1,3 +1,5 @@
+# Create Solid Mask
+
 The SolidMask node generates a uniform mask with a specified value across its entire area. It's designed to create masks of specific dimensions and intensity, useful in various image processing and masking tasks.
 
 ## Inputs

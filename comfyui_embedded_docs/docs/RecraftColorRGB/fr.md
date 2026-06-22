@@ -1,3 +1,5 @@
+# Recraft Couleur RGB
+
 Créez une couleur Recraft en spécifiant des valeurs individuelles de rouge, vert et bleu. Ce nœud prend des valeurs entières RVB (0-255) et les convertit dans un format de couleur Recraft pouvant être utilisé dans d'autres opérations Recraft. Vous pouvez également fournir optionnellement une chaîne de couleurs Recraft existante pour l'étendre avec la nouvelle couleur.
 
 ## Entrées

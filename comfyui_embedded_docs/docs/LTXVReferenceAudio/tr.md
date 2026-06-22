@@ -1,3 +1,5 @@
+# LTXV Referans Ses (ID-LoRA)
+
 **LTXV Referans Ses Düğümü**, ses üretiminde konuşmacı kimlik aktarımı için kullanılır. Bir referans ses klibini model için koşullandırmaya kodlayarak, üretilen sesin konuşmacının ses özelliklerini benimsemesini sağlar. Ayrıca, konuşmacı kimlik etkisini güçlendirmek için ek bir işlem adımı çalıştıran kimlik yönlendirmesi uygulayabilir.
 
 ## Girişler

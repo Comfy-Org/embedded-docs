@@ -1,3 +1,5 @@
+# StableZero123_Conditioning_Batched
+
 The StableZero123_Conditioning_Batched node processes an input image and generates conditioning data for 3D model generation. It encodes the image using CLIP vision and VAE models, then creates camera embeddings based on elevation and azimuth angles to produce positive and negative conditioning along with latent representations for batch processing.
 
 ## Inputs

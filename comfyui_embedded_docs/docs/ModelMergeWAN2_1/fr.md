@@ -1,3 +1,5 @@
+# ModelMergeWAN2_1
+
 Le nœud ModelMergeWAN2_1 fusionne deux modèles WAN2.1 en mélangeant leurs composants à l'aide de moyennes pondérées. Il prend en charge différentes tailles de modèles, notamment les modèles 1,3B avec 30 blocs et les modèles 14B avec 40 blocs, avec un traitement spécial pour les modèles image vers vidéo qui incluent un composant d'incorporation d'image supplémentaire. Chaque composant des modèles peut être pondéré individuellement pour contrôler le rapport de mélange entre les deux modèles d'entrée.
 
 ## Entrées

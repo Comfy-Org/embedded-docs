@@ -1,3 +1,5 @@
+# Pintor
+
 El nodo Painter proporciona un lienzo interactivo para crear o editar imágenes y máscaras directamente dentro de ComfyUI. Permite comenzar con un lienzo en blanco o una imagen existente, pintar sobre ella usando una herramienta de pincel, y genera tanto la imagen resultante como una máscara alfa correspondiente. La máscara define las áreas pintadas, que luego se componen sobre la imagen base o el color de fondo.
 
 ## Entradas

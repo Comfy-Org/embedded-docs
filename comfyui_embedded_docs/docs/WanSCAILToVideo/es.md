@@ -1,3 +1,5 @@
+# WanSCAILToVideo
+
 El nodo WanSCAILToVideo prepara el condicionamiento y un espacio latente vacío para la generación de video. Procesa entradas opcionales como imágenes de referencia, videos de pose y salidas de CLIP vision, incrustándolas en el condicionamiento positivo y negativo para un modelo de video. El nodo genera el condicionamiento modificado y un tensor latente en blanco con las dimensiones de video especificadas.
 
 ## Entradas

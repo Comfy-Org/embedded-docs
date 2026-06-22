@@ -1,3 +1,5 @@
+# Meshy: Refinar Modelo Rascunho
+
 O nó "Meshy: Refinar Modelo Bruto" recebe um modelo 3D bruto gerado anteriormente e melhora sua qualidade, adicionando texturas opcionalmente. Ele envia uma tarefa de refinamento para a API do Meshy e retorna os arquivos finais do modelo 3D assim que o processamento for concluído.
 
 ## Entradas

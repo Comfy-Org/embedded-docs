@@ -1,3 +1,5 @@
+# Anthropic Claude
+
 ## 概述
 
 從 Anthropic Claude 模型生成文字回應。此節點將文字提示和可選圖片發送到 Claude 模型，並返回生成的文字回應。

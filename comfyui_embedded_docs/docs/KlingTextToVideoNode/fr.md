@@ -1,3 +1,5 @@
+# Kling Texte en Vidéo
+
 Voici la traduction en français de la documentation du nœud Kling Text to Video :
 
 Le nœud Kling Texte vers Vidéo convertit des descriptions textuelles en contenu vidéo. Il prend des invites textuelles et génère des séquences vidéo correspondantes en fonction des paramètres de configuration spécifiés. Le nœud prend en charge différents ratios d'aspect et modes de génération pour produire des vidéos de durées et qualités variées.

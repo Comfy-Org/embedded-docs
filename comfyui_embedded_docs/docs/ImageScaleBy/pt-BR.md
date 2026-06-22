@@ -1,3 +1,5 @@
+# Aumentar Imagem Por
+
 O nó **ImageScaleBy** foi projetado para redimensionar imagens com base em um fator de escala específico, utilizando diversos métodos de interpolação. Ele permite ajustar o tamanho da imagem de forma flexível, atendendo a diferentes necessidades de redimensionamento.
 
 ## Entradas

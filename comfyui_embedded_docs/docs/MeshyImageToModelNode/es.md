@@ -1,3 +1,5 @@
+# Meshy: Imagen a Modelo
+
 El nodo **Meshy: Imagen a Modelo** utiliza la API de Meshy para generar un modelo 3D a partir de una sola imagen de entrada. Carga tu imagen, envía una tarea de procesamiento y devuelve los archivos del modelo 3D generado (GLB y FBX) junto con el ID de la tarea para referencia.
 
 ## Entradas

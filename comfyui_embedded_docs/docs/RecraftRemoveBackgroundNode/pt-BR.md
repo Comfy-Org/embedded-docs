@@ -1,3 +1,5 @@
+# Recraft Remover Fundo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftRemoveBackgroundNode/en.md)
 
 Este nó remove o fundo de imagens usando o serviço da API Recraft. Ele processa cada imagem no lote de entrada e retorna tanto as imagens processadas com fundos transparentes quanto as máscaras alfa correspondentes que indicam as áreas de fundo removidas.

@@ -1,3 +1,5 @@
+# Maskeyi Görüntüye Dönüştür
+
 `MaskToImage` düğümü, bir maskeyi görüntü formatına dönüştürmek için tasarlanmıştır. Bu dönüşüm, maskelerin görselleştirilmesine ve görüntü olarak daha ileri düzeyde işlenmesine olanak tanıyarak, maske tabanlı işlemler ile görüntü tabanlı uygulamalar arasında bir köprü kurulmasını sağlar.
 
 ## Girişler

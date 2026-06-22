@@ -1,3 +1,5 @@
+# KoşullandırmaKararlıSes
+
 ## Genel Bakış
 
 ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negatif koşullandırma girdilerine zamanlama bilgisi ekler. Ses içeriğinin ne zaman ve ne kadar süreyle oluşturulacağını kontrol etmeye yardımcı olan başlangıç zamanı ve toplam süre parametrelerini ayarlar. Bu düğüm, mevcut koşullandırma verilerine sesle ilgili zamanlama meta verileri ekleyerek değiştirir.

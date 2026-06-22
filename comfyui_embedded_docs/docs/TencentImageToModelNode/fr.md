@@ -1,3 +1,5 @@
+# Hunyuan3D : Image(s) vers Modèle (Pro)
+
 Ce nœud utilise l'API Tencent Hunyuan3D Pro pour générer un modèle 3D à partir d'une ou plusieurs images d'entrée. Il traite les images, les envoie à l'API et renvoie les fichiers du modèle 3D généré aux formats GLB et OBJ, ainsi que des cartes de texture optionnelles.
 
 ## Entrées

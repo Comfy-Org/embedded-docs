@@ -1,3 +1,5 @@
+# Chargeur d'encodeur texte audio LTXV
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXAVTextEncoderLoader/en.md)
 
 Ce nœud charge un encodeur de texte spécialisé pour le modèle audio LTXV. Il combine un fichier d'encodeur de texte spécifique avec un fichier de point de contrôle pour créer un modèle CLIP pouvant être utilisé pour des tâches de conditionnement textuel liées à l'audio.

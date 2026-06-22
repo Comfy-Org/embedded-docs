@@ -1,3 +1,5 @@
+# SAM3 Suivi Vidéo
+
 Voici la traduction de la documentation du nœud ComfyUI `SAM3_VideoTrack` :
 
 ## Aperçu

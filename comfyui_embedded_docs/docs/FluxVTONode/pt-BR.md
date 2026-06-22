@@ -1,4 +1,4 @@
-# Flux Virtual Try-On
+# Flux Prova Virtual de Roupas
 
 Este nó realiza uma prova virtual de roupas, vestindo uma pessoa com a imagem de uma peça de vestuário fornecida. Ele utiliza a API BFL Flux VTO para gerar uma imagem realista da pessoa usando a peça especificada.
 

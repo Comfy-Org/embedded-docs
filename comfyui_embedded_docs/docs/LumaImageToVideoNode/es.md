@@ -1,3 +1,5 @@
+# Luma Image to Video
+
 Genera videos de forma sincrónica basándose en un prompt de texto e imágenes de inicio/final opcionales. Este nodo utiliza la API de Luma para crear videos, permitiéndote definir el contenido del video mediante un prompt y, opcionalmente, especificar el primer y/o último fotograma para controlar la estructura del video.
 
 ## Entradas

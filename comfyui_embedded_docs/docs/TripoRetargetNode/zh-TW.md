@@ -1,4 +1,4 @@
-# TripoRetargetNode
+# Tripo: 重新定位骨架模型
 
 TripoRetargetNode 透過重新定位動作資料，將預先定義的動畫應用於 3D 角色模型。它接收先前已綁定骨架的 3D 模型，並套用多種預設動畫之一，產生動畫化的 3D 模型檔案作為輸出。此節點與 Tripo API 通訊以處理動畫重新定位操作。
 

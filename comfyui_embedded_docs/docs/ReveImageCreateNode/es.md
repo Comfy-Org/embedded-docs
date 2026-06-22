@@ -1,3 +1,5 @@
+# Reve Crear Imagen
+
 El nodo Crear Imagen Reve genera imágenes a partir de descripciones textuales utilizando el modelo Reve AI. Envía un mensaje de texto a la API de Reve y devuelve la imagen generada. Puedes controlar la relación de aspecto de la imagen y aplicar efectos opcionales de posprocesamiento, como el escalado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ModelSamplingLTXV
+
 O nó ModelSamplingLTXV aplica parâmetros avançados de amostragem a um modelo com base na contagem de tokens. Ele calcula um valor de deslocamento usando uma interpolação linear entre os valores de deslocamento base e máximo, com o cálculo dependendo do número de tokens no latent de entrada. Em seguida, o nó cria uma configuração especializada de amostragem de modelo e a aplica ao modelo de entrada.
 
 ## Entradas

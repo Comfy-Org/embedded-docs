@@ -1,3 +1,5 @@
+# Normalizar Imágenes
+
 Este nodo ajusta los valores de píxeles de una imagen de entrada mediante un proceso de normalización matemática. Resta un valor medio especificado de cada píxel y luego divide el resultado por una desviación estándar especificada. Este es un paso de preprocesamiento común para preparar datos de imagen para otros modelos de aprendizaje automático.
 
 ## Entradas

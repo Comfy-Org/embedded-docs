@@ -1,3 +1,5 @@
+# SamplerDpmppSde
+
 Ce nœud est conçu pour générer un échantillonneur pour le modèle DPM++ SDE (Équation Différentielle Stochastique). Il s'adapte aux environnements d'exécution CPU et GPU, optimisant l'implémentation de l'échantillonneur en fonction du matériel disponible.
 
 ## Entrées

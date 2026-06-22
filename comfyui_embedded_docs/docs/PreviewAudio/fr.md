@@ -1,3 +1,5 @@
+# AperçuAudio
+
 Le nœud PreviewAudio crée un aperçu audio temporaire pouvant être lu directement dans l'interface. Il prend des données audio en entrée et génère un widget de prévisualisation, permettant aux utilisateurs d'écouter les sorties audio sans enregistrer de fichiers permanents.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# ÉchantillonneurSASolveur
+
 Le nœud SamplerSASolver implémente un algorithme d'échantillonnage personnalisé pour les modèles de diffusion. Il utilise une approche prédicteur-correcteur avec des paramètres d'ordre configurables et des paramètres d'équation différentielle stochastique (SDE) pour générer des échantillons à partir du modèle d'entrée.
 
 ## Entrées

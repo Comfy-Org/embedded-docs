@@ -1,3 +1,5 @@
+# Görüntü Döndürme
+
 ImageRotate düğümü, giriş görüntüsünü belirtilen açılarla döndürür. Dört döndürme seçeneğini destekler: döndürme yok, saat yönünde 90 derece, 180 derece ve saat yönünde 270 derece. Döndürme işlemi, görüntü veri bütünlüğünü koruyan verimli tensör işlemleri kullanılarak gerçekleştirilir.
 
 ## Girişler

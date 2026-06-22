@@ -1,3 +1,5 @@
+# Boolean
+
 The Boolean node provides a simple way to pass boolean (true/false) values through your workflow. It takes a boolean input value and outputs the same value unchanged, allowing you to control boolean parameters in other nodes.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Stil Modeli Uygula
+
 Bu düğüm, bir CLIP görme modelinin çıktısına dayanarak belirli bir koşullandırmaya (conditioning) bir stil modeli uygular, stilini geliştirir veya değiştirir. Stil modelinin koşullandırmasını mevcut koşullandırmaya entegre ederek, üretim sürecinde stillerin sorunsuz bir şekilde harmanlanmasını sağlar.
 
 ## Girişler

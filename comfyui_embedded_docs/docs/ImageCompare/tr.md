@@ -1,3 +1,5 @@
+# Görüntü Karşılaştırma
+
 Görüntü Karşılaştırma düğümü, sürüklenebilir bir kaydırıcı kullanarak iki görüntüyü yan yana karşılaştırmak için görsel bir arayüz sağlar. Bu düğüm, bir çıktı düğümü olarak tasarlanmıştır; yani diğer düğümlere veri iletmez, bunun yerine görüntüleri doğrudan kullanıcı arayüzünde inceleme amacıyla görüntüler.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# 폴더에서 이미지 데이터셋 불러오기
+
 이 문서는 AI로 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/en.md)
 
 이 노드는 ComfyUI의 입력 디렉터리 내에 있는 지정된 하위 폴더에서 여러 이미지를 불러옵니다. 선택한 폴더에서 일반적인 이미지 파일 형식을 검색하여 목록으로 반환하므로, 일괄 처리나 데이터셋 준비에 유용합니다.

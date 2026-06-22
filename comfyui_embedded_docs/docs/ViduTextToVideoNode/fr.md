@@ -1,3 +1,5 @@
+# Génération vidéo Vidu à partir de texte
+
 Voici la traduction en français de la documentation du nœud Vidu Text To Video :
 
 Le nœud Vidu Text To Video Generation crée des vidéos à partir de descriptions textuelles. Il utilise le modèle de génération vidéo Vidu pour transformer vos invites textuelles en contenu vidéo avec des paramètres personnalisables pour la durée, le rapport hauteur/largeur et le style visuel.

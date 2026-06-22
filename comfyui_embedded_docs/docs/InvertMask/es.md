@@ -1,3 +1,5 @@
+# InvertirMáscara
+
 El nodo InvertMask está diseñado para invertir los valores de una máscara dada, intercambiando efectivamente las áreas enmascaradas y no enmascaradas. Esta operación es fundamental en tareas de procesamiento de imágenes donde es necesario cambiar el foco de interés entre el primer plano y el fondo.
 
 ## Entradas

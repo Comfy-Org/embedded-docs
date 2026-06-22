@@ -1,3 +1,5 @@
+# WaveSpeed Upscale Image
+
 Voici la traduction en français de la documentation du nœud WaveSpeed Image Upscale :
 
 Le nœud WaveSpeed Image Upscale utilise un service d'IA externe pour augmenter la résolution et la qualité d'une image. Il prend une seule photo en entrée et l'agrandit vers une résolution cible plus élevée, telle que 2K, 4K ou 8K, produisant un résultat plus net et plus détaillé.

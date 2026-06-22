@@ -1,3 +1,5 @@
+# PixVerse Template
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTemplateNode/en.md)
 
 O nó PixVerse Template permite selecionar entre modelos disponíveis para geração de vídeo no PixVerse. Ele converte o nome do modelo selecionado no ID de modelo correspondente que a API do PixVerse exige para a criação de vídeos.

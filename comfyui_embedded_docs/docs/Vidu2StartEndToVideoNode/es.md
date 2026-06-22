@@ -1,3 +1,5 @@
+# Generación de video de Vidu2 desde fotogramas inicial/final
+
 Este documento fue generado por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Vidu2StartEndToVideoNode/en.md)
 
 Este nodo genera un video interpolando entre un fotograma inicial y un fotograma final proporcionados, guiado por un texto descriptivo. Utiliza un modelo Vidu específico para crear una transición suave entre las dos imágenes durante una duración determinada.

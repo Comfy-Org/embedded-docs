@@ -1,3 +1,5 @@
+# Vidu Başlangıç Bitiş ile Video Oluşturma
+
 Vidu Başlangıç-Bitiş Video Oluşturma düğümü, bir başlangıç karesi ile bir bitiş karesi arasındaki kareleri oluşturarak bir video meydana getirir. Video oluşturma sürecini yönlendirmek için bir metin istemi kullanır ve farklı çözünürlük ile hareket ayarlarına sahip çeşitli video modellerini destekler. Düğüm, işleme başlamadan önce başlangıç ve bitiş karelerinin uyumlu en-boy oranlarına sahip olduğunu doğrular.
 
 ## Girişler

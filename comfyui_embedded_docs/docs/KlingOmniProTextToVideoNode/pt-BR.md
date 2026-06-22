@@ -1,3 +1,5 @@
+# Kling Omni Texto para Vídeo (Pro)
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProTextToVideoNode/en.md)
 
 Este nó utiliza o modelo mais recente da Kling AI para gerar um vídeo a partir de uma descrição textual. Ele envia seu prompt para uma API remota e retorna o vídeo gerado. O nó permite controlar a duração, o formato, a qualidade do vídeo e até criar storyboards com múltiplas cenas.

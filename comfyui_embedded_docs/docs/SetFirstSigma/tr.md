@@ -1,3 +1,5 @@
+# İlkSigmayıAyarla
+
 SetFirstSigma düğümü, bir sigma değerleri dizisini, dizideki ilk sigma değerini özel bir değerle değiştirerek değiştirir. Girdi olarak mevcut bir sigma dizisi ve yeni bir sigma değeri alır; ardından yalnızca ilk öğesi değiştirilmiş, diğer tüm sigma değerleri aynı kalmış yeni bir sigma dizisi döndürür.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# SamplerSEEDS2
+
 Ce nœud fournit un échantillonneur configurable pour la génération d'images. Il implémente l'algorithme SEEDS-2, qui est un solveur d'équation différentielle stochastique (SDE). En ajustant ses paramètres, vous pouvez le configurer pour qu'il se comporte comme plusieurs échantillonneurs spécifiques, notamment `seeds_2`, `exp_heun_2_x0` et `exp_heun_2_x0_sde`.
 
 ## Entrées

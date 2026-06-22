@@ -1,3 +1,5 @@
+# PixVerse Texto para Vídeo
+
 Gera vídeos com base em um prompt de texto e vários parâmetros de geração. Este nó cria conteúdo de vídeo usando a API PixVerse, permitindo controle sobre proporção de aspecto, qualidade, duração, estilo de movimento e muito mais.
 
 ## Entradas

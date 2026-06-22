@@ -1,3 +1,5 @@
+# Görüntüleri Kısa Kenara Göre Yeniden Boyutlandır
+
 Bu düğüm, görselleri orijinal en-boy oranını koruyarak kısa kenarı belirtilen uzunluğa denk gelecek şekilde yeniden boyutlandırır. Kısa kenar için hedef uzunluğa göre yeni boyutları hesaplar ve yeniden boyutlandırılmış görseli döndürür.
 
 ## Girişler

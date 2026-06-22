@@ -1,3 +1,5 @@
+# Gizli Kesme
+
 LatentCut düğümü, gizli örneklerden seçilen bir boyut boyunca belirli bir bölümü çıkarır. x, y veya t boyutunu, başlangıç konumunu ve çıkarılacak miktarı belirterek gizli temsilin bir kısmını kesmenizi sağlar. Düğüm, hem pozitif hem de negatif indekslemeyi işler ve çıkarma miktarını mevcut sınırlar içinde kalacak şekilde otomatik olarak ayarlar.
 
 ## Girişler

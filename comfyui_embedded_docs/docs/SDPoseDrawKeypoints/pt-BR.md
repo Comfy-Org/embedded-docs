@@ -1,3 +1,5 @@
+# SDPoseDrawKeypoints
+
 O nó SDPoseDrawKeypoints recebe dados de estimativa de pose (pontos-chave) e os desenha como um esqueleto visual em uma tela em branco. Ele permite desenhar seletivamente diferentes partes da pose, como corpo, mãos, rosto e pés, com larguras de linha e tamanhos de ponto personalizáveis. A imagem resultante pode ser usada para visualização ou como entrada para outros nós que necessitam de uma imagem de pose.
 
 ## Entradas

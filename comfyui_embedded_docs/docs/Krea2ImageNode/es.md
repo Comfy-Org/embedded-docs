@@ -1,4 +1,4 @@
-# Descripción General
+# Krea 2 Imagen
 
 El nodo Krea 2 Image genera imágenes utilizando el modelo de IA Krea 2. Soporta dos variantes del modelo: Medium para ilustraciones expresivas y Large para fotorrealismo expresivo. Opcionalmente, puedes incluir un moodboard y hasta 10 referencias de estilo de imagen para influir en la imagen generada.
 

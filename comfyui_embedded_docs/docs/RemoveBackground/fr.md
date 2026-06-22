@@ -1,3 +1,5 @@
+# Supprimer l’arrière-plan
+
 Voici la traduction de la documentation technique du nœud Remove Background, conforme à vos règles :
 
 ## Aperçu

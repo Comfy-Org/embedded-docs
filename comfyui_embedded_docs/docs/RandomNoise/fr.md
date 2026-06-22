@@ -1,3 +1,5 @@
+# BruitAléatoire
+
 Le nœud RandomNoise génère des motifs de bruit aléatoires basés sur une valeur de graine. Il crée un bruit reproductible pouvant être utilisé pour diverses tâches de traitement et de génération d'images. La même graine produira toujours le même motif de bruit, permettant d'obtenir des résultats cohérents sur plusieurs exécutions.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# CondicionamentoStable Audio
+
 O nó ConditioningStableAudio adiciona informações de temporização às entradas de condicionamento positivo e negativo para geração de áudio. Ele define os parâmetros de tempo de início e duração total que ajudam a controlar quando e por quanto tempo o conteúdo de áudio deve ser gerado. Este nó modifica os dados de condicionamento existentes, anexando metadados de temporização específicos para áudio.
 
 ## Entradas

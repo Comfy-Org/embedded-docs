@@ -1,3 +1,5 @@
+# WanVaceToVideo
+
 The WanVaceToVideo node processes video conditioning data for video generation models. It takes positive and negative conditioning inputs along with video control data and prepares latent representations for video generation. The node handles video upscaling, masking, and VAE encoding to create the appropriate conditioning structure for video models.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Ses Ses Seviyesi Ayarla
+
 Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioAdjustVolume/en.md)
 
 AudioAdjustVolume düğümü, desibel (dB) cinsinden ses seviyesi ayarlamaları uygulayarak sesin yüksekliğini değiştirir. Bir ses girişi alır ve belirtilen ses seviyesine göre bir kazanç faktörü uygular; burada pozitif değerler sesi artırır, negatif değerler ise azaltır. Düğüm, orijinaliyle aynı örnekleme hızına sahip değiştirilmiş sesi döndürür.

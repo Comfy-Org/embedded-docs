@@ -1,3 +1,5 @@
+# Controles de Câmera Kling
+
 O nó Kling Camera Controls permite configurar vários parâmetros de movimento e rotação de câmera para criar efeitos de controle de movimento na geração de vídeos. Ele fornece controles para posicionamento, rotação e zoom da câmera, simulando diferentes movimentos cinematográficos.
 
 ## Entradas

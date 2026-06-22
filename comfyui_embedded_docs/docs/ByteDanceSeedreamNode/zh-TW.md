@@ -1,4 +1,4 @@
-# ByteDance Seedream 節點
+# ByteDance Seedream 4.5 & 5.0
 
 ByteDance Seedream 4.5 和 5.0 節點提供統一的文字轉圖像生成功能，以及高達 4K 解析度的精確單句編輯能力。它可以根據文字提示建立新圖像，或使用文字指令編輯現有圖像。該節點支援單張圖像生成和多張相關圖像的序列生成。
 

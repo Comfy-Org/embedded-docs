@@ -1,3 +1,5 @@
+# VAE Decodificar audio (en mosaico)
+
 Este nodo convierte una representación de audio comprimida (muestras latentes) nuevamente en una forma de onda de audio utilizando un Autoencoder Variacional (VAE). Procesa los datos en secciones más pequeñas y superpuestas (teselas) para gestionar el uso de memoria, lo que lo hace adecuado para manejar secuencias de audio más largas.
 
 ## Entradas

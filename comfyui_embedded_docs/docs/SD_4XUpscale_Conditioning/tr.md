@@ -1,3 +1,5 @@
+# SD_4X_Büyütme_Koşullandırma
+
 SD_4XUpscale_Conditioning düğümü, difüzyon modelleri kullanarak görüntüleri büyütmek için koşullandırma verilerini hazırlar. Giriş görüntülerini ve koşullandırma verilerini alır, ardından büyütme işlemini yönlendirmek için ölçeklendirme ve gürültü artırımı uygulayarak değiştirilmiş koşullandırma oluşturur. Düğüm, büyütülmüş boyutlar için hem pozitif hem de negatif koşullandırmayı gizli temsillerle birlikte çıktı olarak verir.
 
 ## Girişler

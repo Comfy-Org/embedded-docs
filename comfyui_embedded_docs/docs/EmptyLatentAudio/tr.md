@@ -1,4 +1,4 @@
-# EmptyLatentAudio Düğümü
+# Boş Gizli Ses
 
 EmptyLatentAudio düğümü, ses işleme için boş bir latent tensör oluşturur. Belirtilen süre ve grup boyutuna sahip boş bir ses latent temsili üretir; bu temsil, ses üretimi veya işleme iş akışları için başlangıç noktası olarak kullanılabilir. Düğüm, ses süresi ve örnekleme hızına bağlı olarak uygun latent boyutlarını otomatik olarak hesaplar.
 

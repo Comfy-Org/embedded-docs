@@ -1,3 +1,5 @@
+# Maskeyi Yumuşat
+
 `FeatherMask` düğümü, belirtilen bir maskenin kenarlarına yumuşatma efekti uygulayarak, maskenin kenarlarını her bir kenardan belirtilen mesafelere göre opaklıklarını ayarlayarak kademeli olarak geçiş yapar. Bu, daha yumuşak ve daha harmanlanmış bir kenar efekti oluşturur.
 
 ## Girişler

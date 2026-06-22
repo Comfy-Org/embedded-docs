@@ -1,3 +1,5 @@
+# FreSca
+
 FreSca düğümü, örnekleme sürecinde kılavuzluğa frekansa bağlı ölçeklendirme uygular. Fourier filtreleme kullanarak kılavuz sinyalini düşük frekanslı ve yüksek frekanslı bileşenlere ayırır, ardından her frekans aralığına farklı ölçeklendirme faktörleri uygulayarak yeniden birleştirir. Bu, kılavuzluğun oluşturulan çıktının farklı yönlerini nasıl etkilediği üzerinde daha incelikli bir kontrol sağlar.
 
 ## Girişler

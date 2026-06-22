@@ -1,3 +1,5 @@
+# SDPoseKeypointExtractor
+
 Le nœud SDPoseKeypointExtractor détecte les points clés de pose humaine à partir d'images d'entrée en utilisant le modèle SDPose. Il peut traiter des images entières ou des régions spécifiques définies par des boîtes englobantes et produit les points clés détectés au format OpenPose, qui inclut les coordonnées pour chaque personne ainsi qu'un score de confiance pour chaque point clé.
 
 ## Entrées

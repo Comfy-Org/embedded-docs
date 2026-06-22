@@ -1,4 +1,4 @@
-# Transform Splat
+# Splat'ı Dönüştür
 
 Transform Splat düğümü, bir gauss sıçramasına (gaussian splat) öteleme, döndürme ve ölçekleme dönüşümleri uygular. Tüm sıçramayı tek bir nesne olarak taşır, döndürür ve yeniden boyutlandırır; tek tip olmayan ölçekleme uygulandığında, doğru sonuçlar için her bir gauss sıçramasını da yeniden şekillendirir.
 

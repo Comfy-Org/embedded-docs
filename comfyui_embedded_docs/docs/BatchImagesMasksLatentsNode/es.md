@@ -1,3 +1,5 @@
+# BatchImagesMasksLatentsNode
+
 El nodo Combinar Lotes de Imágenes/Máscaras/Latentes combina múltiples entradas del mismo tipo en un solo lote. Detecta automáticamente si las entradas son imágenes, máscaras o representaciones latentes y utiliza el método de agrupación adecuado. Esto es útil para preparar múltiples elementos para su procesamiento por nodos que aceptan entradas por lotes.
 
 ## Entradas

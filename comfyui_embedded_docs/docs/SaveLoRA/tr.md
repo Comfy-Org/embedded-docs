@@ -1,3 +1,5 @@
+# LoRA Ağırlıklarını Kaydet
+
 SaveLoRA düğümü, bir LoRA (Düşük Dereceli Uyarlama) modelini bir dosyaya kaydeder. Bir LoRA modelini girdi olarak alır ve çıktı dizinine bir `.safetensors` dosyası olarak yazar. Nihai dosya adına dahil edilmek üzere bir dosya adı öneki ve isteğe bağlı bir adım sayısı belirtebilirsiniz.
 
 ## Girdiler

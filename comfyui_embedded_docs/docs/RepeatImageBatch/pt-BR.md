@@ -1,3 +1,5 @@
+# Repetir Lote de Imagem
+
 O nó **RepeatImageBatch** foi projetado para replicar uma imagem fornecida um número específico de vezes, criando um lote de imagens idênticas. Essa funcionalidade é útil para operações que exigem múltiplas instâncias da mesma imagem, como processamento em lote ou aumento de dados.
 
 ## Entradas

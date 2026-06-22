@@ -1,3 +1,5 @@
+# VAE Codificar (para Inpainting)
+
 Este nó foi projetado para codificar imagens em uma representação latente adequada para tarefas de inpaint, incorporando etapas adicionais de pré-processamento para ajustar a imagem de entrada e a máscara para codificação ideal pelo modelo VAE.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Koşullandırma (Yüzde ile Alan Ayarla)
+
 ConditioningSetAreaPercentage düğümü, koşullandırma öğelerinin etki alanını yüzde değerlerine göre ayarlama konusunda uzmanlaşmıştır. Alanın boyutlarını ve konumunu toplam görüntü boyutunun yüzdesi olarak belirtmeye olanak tanır; ayrıca koşullandırma etkisinin yoğunluğunu ayarlamak için bir güç parametresi içerir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# LatentDeRéférence
+
 Ce nœud définit le latent de référence pour un modèle d'édition. Il prend des données de conditionnement et une entrée latente facultative, puis modifie le conditionnement pour inclure les informations du latent de référence. Si le modèle le prend en charge, vous pouvez chaîner plusieurs nœuds ReferenceLatent pour définir plusieurs images de référence.
 
 ## Entrées

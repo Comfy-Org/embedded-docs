@@ -1,3 +1,5 @@
+# OpenRouter LLM
+
 ## Descripción general
 
 El nodo LLM de OpenRouter envía un prompt de texto a un conjunto seleccionado de modelos de lenguaje populares disponibles a través del servicio OpenRouter y devuelve la respuesta de texto generada. Admite modelos de proveedores como xAI, DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) y Perplexity Sonar, y puede incluir opcionalmente imágenes o videos en la solicitud.

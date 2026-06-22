@@ -1,3 +1,5 @@
+# CosmosPredict2ImageToVideoLatent
+
 El nodo CosmosPredict2ImageToVideoLatent crea representaciones latentes de video a partir de imágenes para la generación de video. Puede generar un video latente en blanco o incorporar imágenes de inicio y final para crear secuencias de video con dimensiones y duración específicas. El nodo maneja la codificación de imágenes al formato de espacio latente adecuado para el procesamiento de video.
 
 ## Entradas

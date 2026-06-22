@@ -1,3 +1,5 @@
+# Tripo: Metinden Modele
+
 Tripo'nun API'sini kullanarak bir metin istemine dayalı olarak eşzamanlı 3B modeller üretir. Bu düğüm, bir metin açıklaması alır ve isteğe bağlı doku ve malzeme özellikleriyle bir 3B model oluşturur.
 
 ## Girişler

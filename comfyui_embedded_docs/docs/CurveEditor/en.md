@@ -1,3 +1,5 @@
+# Curve Editor
+
 The Curve Editor node provides a visual interface for adjusting and fine-tuning a curve. It allows you to modify the shape of an input curve and optionally visualize its distribution with a histogram. The node outputs the modified curve for use in other parts of your workflow.
 
 ## Inputs

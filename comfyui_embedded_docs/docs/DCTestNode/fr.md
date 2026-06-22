@@ -1,3 +1,5 @@
+# DCTestNode
+
 Le nœud DCTestNode est un nœud logique qui renvoie différents types de données en fonction de la sélection de l'utilisateur dans une liste déroulante dynamique. Il agit comme un routeur conditionnel, où l'option choisie détermine quel champ d'entrée est actif et quel type de valeur le nœud va produire en sortie.
 
 ## Entrées

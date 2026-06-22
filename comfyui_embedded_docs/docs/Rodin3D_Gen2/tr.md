@@ -1,3 +1,5 @@
+# Rodin 3D Oluştur - Gen-2 Oluştur
+
 Rodin3D_Gen2 düğümü, Rodin API'sini kullanarak 3D varlıklar üretir. Giriş görüntülerini alır ve bunları çeşitli malzeme türleri ve çokgen sayılarıyla 3D modellere dönüştürür. Düğüm, görev oluşturma, durum sorgulama ve dosya indirme dahil olmak üzere tüm üretim sürecini otomatik olarak yönetir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# EscalarROPE
+
 El nodo ScaleROPE permite modificar la Codificación Posicional Rotatoria (ROPE) de un modelo aplicando factores de escala y desplazamiento independientes a sus componentes X, Y y T (tiempo). Este es un nodo experimental avanzado utilizado para ajustar el comportamiento de la codificación posicional del modelo.
 
 ## Entradas

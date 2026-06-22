@@ -1,3 +1,5 @@
+# MediaPipe Yüz Maskesi
+
 ## Genel Bakış
 
 Bu düğüm, MediaPipe tarafından algılanan yüz işaret noktalarına dayalı olarak ikili bir maske (siyah beyaz bir görüntü) oluşturur. Algılanan her yüz bölgesi için dolu çokgen şekiller çizer ve bir yığındaki her kare için bir maske üretir. Aynı karede birden fazla yüz algılandığında, maskeleri tek bir maskede birleştirilir.

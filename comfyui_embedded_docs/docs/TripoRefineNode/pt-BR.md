@@ -1,3 +1,5 @@
+# Tripo: Refinar Modelo Rascunho
+
 O TripoRefineNode refina modelos 3D preliminares criados especificamente por modelos Tripo v1.4. Ele recebe um ID de tarefa de modelo e o processa através da API Tripo para gerar uma versão melhorada do modelo. Este nó foi projetado para funcionar exclusivamente com modelos preliminares produzidos por modelos Tripo v1.4.
 
 ## Entradas

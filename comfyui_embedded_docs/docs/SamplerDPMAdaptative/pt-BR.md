@@ -1,3 +1,5 @@
+# SamplerDPMAdaptative
+
 O nó SamplerDPMAdaptative implementa um amostrador DPM (Modelo Probabilístico de Difusão) adaptativo que ajusta automaticamente os tamanhos dos passos durante o processo de amostragem. Ele utiliza controle de erro baseado em tolerância para determinar tamanhos de passo ideais, equilibrando eficiência computacional com precisão na amostragem. Essa abordagem adaptativa ajuda a manter a qualidade enquanto potencialmente reduz o número de passos necessários.
 
 ## Entradas

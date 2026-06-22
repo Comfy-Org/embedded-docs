@@ -1,3 +1,5 @@
+# Hunyuan Video 15 Latent Upscale With Model
+
 Le nœud Hunyuan Video 15 Latent Upscale With Model augmente la résolution d'une représentation d'image latente. Il commence par suréchantillonner les échantillons latents à une taille spécifiée à l'aide d'une méthode d'interpolation choisie, puis affine le résultat suréchantillonné à l'aide d'un modèle de suréchantillonnage spécialisé Hunyuan Video 1.5 pour améliorer la qualité.
 
 ## Entrées

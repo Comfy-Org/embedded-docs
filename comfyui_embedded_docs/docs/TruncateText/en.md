@@ -1,3 +1,5 @@
+# Truncate Text
+
 This node shortens text by cutting it off at a specified maximum length. It takes any input text and returns only the first part, up to the number of characters you set. It is a simple way to ensure text does not exceed a certain size.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Lissage des coutures de patch HiDream-O1
+
 Voici la traduction en français de la documentation, en respectant toutes les règles fournies :
 
 ## Aperçu

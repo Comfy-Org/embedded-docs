@@ -1,3 +1,5 @@
+# テキストを大文字に変換
+
 このドキュメントはAIが生成しました。誤りや改善の提案があれば、ぜひご連絡ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToUppercase/en.md)
 
 Text to Uppercase ノードは、テキスト入力を受け取り、そのすべての文字を大文字に変換します。これは、指定された文字列の大文字小文字を変更するシンプルなテキスト処理ユーティリティです。

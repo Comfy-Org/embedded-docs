@@ -1,3 +1,5 @@
+# Metni Değiştir
+
 Metin Değiştir düğümü, basit bir metin değiştirme işlemi gerçekleştirir. Giriş metni içinde belirtilen bir metin parçasını arar ve her bulduğu yeri yeni bir metin parçasıyla değiştirir. Bu işlem, düğüme sağlanan tüm metin girdilerine uygulanır.
 
 ## Girişler

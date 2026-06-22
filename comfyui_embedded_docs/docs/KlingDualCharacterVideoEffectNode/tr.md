@@ -1,3 +1,5 @@
+# Kling İkili Karakter Video Efektleri
+
 Kling Çift Karakterli Video Efekt Düğümü, seçilen sahneye göre özel efektler içeren videolar oluşturur. İki görüntü alır ve ilk görüntüyü bileşik videonun sol tarafına, ikinci görüntüyü sağ tarafına yerleştirir. Seçilen efekt sahnesine bağlı olarak farklı görsel efektler uygulanır.
 
 ## Girişler

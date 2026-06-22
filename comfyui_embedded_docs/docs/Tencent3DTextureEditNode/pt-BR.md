@@ -1,3 +1,5 @@
+# Hunyuan3D: Edição de Textura 3D
+
 Este nó utiliza a API Tencent Hunyuan3D para editar as texturas de um modelo 3D. Você fornece um modelo 3D e uma descrição textual das alterações desejadas, e o nó retorna uma nova versão do modelo com suas texturas redesenhadas de acordo com sua instrução.
 
 ## Entradas

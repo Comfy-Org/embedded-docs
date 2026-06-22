@@ -1,3 +1,5 @@
+# Videoyu Kaydet
+
 SaveVideo düğümü, giriş video içeriğini ComfyUI çıktı dizininize kaydeder. Kaydedilen dosya için dosya adı ön eki, video formatı ve codec bileşenini belirlemenize olanak tanır. Düğüm, sayaç artışlarıyla dosya adlandırmayı otomatik olarak yönetir ve kaydedilen videoya iş akışı meta verilerini dahil edebilir.
 
 ## Girişler

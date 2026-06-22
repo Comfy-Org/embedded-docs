@@ -1,3 +1,5 @@
+# KatmanAtlamaRehberliğiSD3
+
 SkipLayerGuidanceSD3 düğümü, atlanmış katmanlarla ek bir sınıflandırıcısız yönlendirme seti uygulayarak, ayrıntılı yapıya yönelik yönlendirmeyi geliştirir. Bu deneysel uygulama, Perturbed Attention Guidance'dan ilham alınmıştır ve negatif koşullandırma sürecinde belirli katmanları seçici olarak atlayarak, oluşturulan çıktıdaki yapısal detayları iyileştirir.
 
 ## Girişler

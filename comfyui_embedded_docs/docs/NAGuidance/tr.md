@@ -1,3 +1,5 @@
+# Normalize Edilmiş Dikkat Yönlendirmesi
+
 NAGuidance düğümü, bir modele Normalleştirilmiş Dikkat Yönlendirmesi (Normalized Attention Guidance) uygular. Bu teknik, örnekleme süreci sırasında modelin dikkat mekanizmasını değiştirerek, damıtılmış veya hızlı (schnell) modellerle negatif istemlerin kullanılmasını sağlar ve üretimi istenmeyen kavramlardan uzaklaştırır.
 
 ## Girişler

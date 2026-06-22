@@ -1,3 +1,5 @@
+# Görüntüleri Uzun Kenara Göre Yeniden Boyutlandır
+
 Uzun Kenara Göre Görselleri Yeniden Boyutlandır düğümü, bir veya daha fazla görseli, en uzun kenarları belirtilen hedef uzunluğa denk gelecek şekilde yeniden boyutlandırır. Genişlik veya yükseklikten hangisinin daha uzun olduğunu otomatik olarak belirler ve orijinal en-boy oranını korumak için diğer boyutu orantılı olarak ölçeklendirir. Bu özellik, görselleri en büyük boyutlarına göre standartlaştırmak için kullanışlıdır.
 
 ## Girişler

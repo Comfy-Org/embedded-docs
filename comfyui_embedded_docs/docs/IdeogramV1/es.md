@@ -1,3 +1,5 @@
+# Ideogram V1
+
 El nodo IdeogramV1 genera imágenes utilizando el modelo Ideogram V1 a través de una API. Toma indicaciones de texto y varias configuraciones de generación para crear una o más imágenes según tu entrada. El nodo admite diferentes relaciones de aspecto y modos de generación para personalizar el resultado.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# CreateHookKeyframe Düğümü
+# Kanca Anahtar Karesi Oluştur
 
 Create Hook Keyframe düğümü, üretim sürecinde kanca davranışının değiştiği belirli noktaları tanımlamanızı sağlar. Üretim ilerlemesinin belirli yüzdelerinde kancaların gücünü değiştiren anahtar kareler oluşturur ve bu anahtar kareler karmaşık zamanlama desenleri oluşturmak için birbirine zincirlenebilir.
 

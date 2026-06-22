@@ -1,4 +1,4 @@
-# Crear Información de Cámara
+# Crear información de cámara
 
 El nodo Crear Información de Cámara construye una estructura de información de cámara para renderizado 3D. Soporta tres modos para definir la cámara: órbita (guñada/cabeceo/distancia alrededor de un objetivo), mirar_a (posición explícita en el mundo) y cuaternión (posición más rotación). El sistema de coordenadas es diestro con Y como eje vertical.
 

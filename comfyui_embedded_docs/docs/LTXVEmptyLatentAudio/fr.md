@@ -1,3 +1,5 @@
+# Audio latent vide LTXV
+
 Le nœud LTXV Empty Latent Audio crée un lot de tenseurs audio latents vides (remplis de zéros). Il utilise la configuration d'un modèle Audio VAE fourni pour déterminer les dimensions correctes de l'espace latent, telles que le nombre de canaux et les bandes de fréquences. Ce latent vide sert de point de départ pour les workflows de génération ou de manipulation audio dans ComfyUI.
 
 ## Entrées

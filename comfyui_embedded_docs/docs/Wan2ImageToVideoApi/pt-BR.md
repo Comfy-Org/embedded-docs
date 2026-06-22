@@ -1,3 +1,5 @@
+# Wan 2.7 Imagem para Vídeo
+
 Este documento foi gerado por IA. Se encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ImageToVideoApi/en.md)
 
 O nó Wan 2.7 Imagem para Vídeo gera um vídeo a partir de uma imagem de primeiro quadro. Opcionalmente, você pode fornecer uma imagem de último quadro para criar uma transição entre os dois, ou fornecer um arquivo de áudio para guiar o movimento e o ritmo do vídeo. O nó utiliza um modelo de IA para animar a cena com base na sua descrição textual.

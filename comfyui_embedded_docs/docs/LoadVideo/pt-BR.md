@@ -1,3 +1,5 @@
+# Carregar Vídeo
+
 O nó Carregar Vídeo carrega arquivos de vídeo do diretório de entrada e os disponibiliza para processamento no fluxo de trabalho. Ele lê arquivos de vídeo da pasta de entrada designada e os envia como dados de vídeo que podem ser conectados a outros nós de processamento de vídeo.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# WanEğlenceKontroldenVideoya
+
 Bu düğüm, video oluşturma için Alibaba Wan Fun Control modelini desteklemek amacıyla eklenmiş olup, [bu commit](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82) sonrasında eklenmiştir.
 
 - **Amaç:** Wan 2.1 Fun Control modelini kullanarak video oluşturma için gerekli koşullandırma bilgilerini hazırlamak.

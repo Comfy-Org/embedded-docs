@@ -1,3 +1,5 @@
+# Escalar Latente Por
+
 El nodo LatentUpscaleBy está diseñado para escalar representaciones latentes de imágenes. Permite ajustar el factor de escala y el método de escalado, ofreciendo flexibilidad para mejorar la resolución de muestras latentes.
 
 ## Entradas

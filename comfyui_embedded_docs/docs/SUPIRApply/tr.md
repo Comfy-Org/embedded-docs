@@ -1,3 +1,5 @@
+# SUPIRApply
+
 SUPIRApply düğümü, bir SUPIR model yamasını bir difüzyon modeline uygular. Bu yamayı kullanarak modelin davranışını değiştirir ve örnekleme süreci sırasında bir girdi görüntüsünden gelen yönlendirmeyi dahil etmesini sağlar. Düğüm ayrıca bu yönlendirmenin gücünü zaman içinde ayarlamak için kontroller sağlar ve orijinal girdiye olan bağlılığı korumaya yardımcı olan isteğe bağlı bir özellik içerir.
 
 ## Girdiler

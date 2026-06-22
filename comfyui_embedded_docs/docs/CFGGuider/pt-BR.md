@@ -1,3 +1,5 @@
+# CFGGuider
+
 O nó CFGGuider cria um sistema de orientação para controlar o processo de amostragem na geração de imagens. Ele recebe um modelo juntamente com entradas de condicionamento positivo e negativo, em seguida, aplica uma escala de orientação livre de classificador para direcionar a geração em direção ao conteúdo desejado, evitando elementos indesejados. Este nó gera um objeto guia que pode ser usado por nós de amostragem para controlar a direção da geração de imagens.
 
 ## Entradas

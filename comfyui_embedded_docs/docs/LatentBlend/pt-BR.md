@@ -1,3 +1,5 @@
+# Latent Blend
+
 O nó LatentBlend combina duas amostras latentes mesclando-as usando um fator de mistura especificado. Ele recebe duas entradas latentes e cria uma nova saída onde a primeira amostra é ponderada pelo fator de mistura e a segunda amostra é ponderada pelo inverso. Se as amostras de entrada tiverem formatos diferentes, a segunda amostra é redimensionada automaticamente para corresponder às dimensões da primeira amostra.
 
 ## Entradas

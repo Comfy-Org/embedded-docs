@@ -1,3 +1,5 @@
+# Diviser l'image en liste de tuiles
+
 Le nœud **Diviser l'image en liste de tuiles** divise une seule image d'entrée en une série de sections rectangulaires plus petites et se chevauchant, appelées tuiles. Il crée une liste groupée de ces tuiles, qui peuvent être traitées individuellement par d'autres nœuds. La taille de chaque tuile et le degré de chevauchement entre elles peuvent être spécifiés.
 
 ## Entrées

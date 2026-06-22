@@ -1,3 +1,5 @@
+# Plantilla de PixVerse
+
 El nodo PixVerse Template le permite seleccionar entre las plantillas disponibles para la generación de videos en PixVerse. Convierte el nombre de la plantilla seleccionada en el ID de plantilla correspondiente que la API de PixVerse requiere para la creación de videos.
 
 ## Entradas

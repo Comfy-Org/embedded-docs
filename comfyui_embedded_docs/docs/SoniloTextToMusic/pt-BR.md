@@ -1,3 +1,5 @@
+# Sonilo Texto para Música
+
 Aqui está a tradução da documentação para português brasileiro, seguindo as regras estabelecidas:
 
 O nó Sonilo Text to Music gera música a partir de uma descrição textual usando o modelo de IA da Sonilo. Você fornece um prompt descrevendo a música desejada, e o nó envia uma solicitação ao serviço Sonilo para criar um arquivo de áudio. Você pode especificar uma duração alvo ou deixar o modelo inferi-la a partir do seu prompt.

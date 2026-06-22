@@ -1,3 +1,5 @@
+# Meshy: Çoklu Görüntüden Modele
+
 Bu düğüm, birden fazla girdi görüntüsünden 3B model oluşturmak için Meshy API'sini kullanır. Sağlanan görüntüleri yükler, bir işleme görevi gönderir ve ortaya çıkan 3B model dosyalarını (GLB ve FBX) referans için görev kimliğiyle birlikte döndürür.
 
 ## Girdiler

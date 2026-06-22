@@ -1,3 +1,5 @@
+# LTXVImgToVideo
+
 O nó LTXVImgToVideo converte uma imagem de entrada em uma representação latente de vídeo para modelos de geração de vídeo. Ele recebe uma única imagem e a estende para uma sequência de quadros usando o codificador VAE, em seguida, aplica condicionamento com controle de intensidade para determinar quanto do conteúdo da imagem original é preservado versus modificado durante a geração do vídeo.
 
 ## Entradas

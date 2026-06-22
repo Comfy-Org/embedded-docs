@@ -1,3 +1,5 @@
+# SamplerSASolver
+
 ## Genel Bakış
 
 SamplerSASolver düğümü, difüzyon modelleri için özel bir örnekleme algoritması uygular. Giriş modelinden örnekler üretmek için yapılandırılabilir sıra ayarları ve stokastik diferansiyel denklem (SDE) parametreleriyle bir tahminci-düzeltici yaklaşımı kullanır.

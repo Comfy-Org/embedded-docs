@@ -1,3 +1,5 @@
+# Kling Kamera Kontrolleri
+
 Kling Kamera Kontrolleri düğümü, video oluşturmada hareket kontrol efektleri oluşturmak için çeşitli kamera hareketi ve dönüş parametrelerini yapılandırmanıza olanak tanır. Farklı kamera hareketlerini simüle etmek için kamera konumlandırma, dönüş ve yakınlaştırma kontrolleri sağlar.
 
 ## Girişler

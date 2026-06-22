@@ -1,3 +1,5 @@
+# Acondicionamiento (Combinar)
+
 Este nodo combina dos entradas de condicionamiento en una única salida, fusionando efectivamente su información. Las dos condiciones se combinan mediante concatenación de listas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Longueur
+
 Le nœud StringLength calcule le nombre de caractères dans une chaîne de texte. Il prend n'importe quel texte en entrée et retourne le nombre total de caractères, y compris les espaces et la ponctuation. Cela est utile pour mesurer la longueur d'un texte ou valider les exigences de taille d'une chaîne.
 
 ## Entrées

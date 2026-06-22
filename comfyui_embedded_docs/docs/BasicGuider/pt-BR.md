@@ -1,3 +1,5 @@
+# Guia Básico
+
 O nó BasicGuider cria um mecanismo de orientação simples para o processo de amostragem. Ele recebe um modelo e dados de condicionamento como entradas e produz um objeto guia que pode ser usado para orientar o processo de geração durante a amostragem. Este nó fornece a funcionalidade de orientação fundamental necessária para a geração controlada.
 
 ## Entradas

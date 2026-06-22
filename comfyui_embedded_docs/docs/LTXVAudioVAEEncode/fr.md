@@ -1,3 +1,5 @@
+# Encodage Audio VAE LTXV
+
 Le nœud LTXV Audio VAE Encode prend une entrée audio et la compresse en une représentation latente plus petite à l'aide d'un modèle Audio VAE spécifié. Ce processus est essentiel pour générer ou manipuler de l'audio dans un workflow d'espace latent, car il convertit les données audio brutes en un format que les autres nœuds du pipeline peuvent comprendre et traiter.
 
 ## Entrées

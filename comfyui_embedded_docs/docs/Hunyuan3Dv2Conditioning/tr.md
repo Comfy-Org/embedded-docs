@@ -1,3 +1,5 @@
+# Hunyuan3Dv2Koşullandırma
+
 Hunyuan3Dv2Conditioning düğümü, 3B modeller için koşullandırma verileri oluşturmak amacıyla CLIP görüntü çıktısını işler. Görüntü çıktısından son gizli durum yerleştirmelerini (embeddings) çıkarır ve hem pozitif hem de negatif koşullandırma çiftleri oluşturur. Pozitif koşullandırma, gerçek yerleştirmeleri kullanırken, negatif koşullandırma aynı şekle sahip sıfır değerli yerleştirmeleri kullanır.
 
 ## Girişler

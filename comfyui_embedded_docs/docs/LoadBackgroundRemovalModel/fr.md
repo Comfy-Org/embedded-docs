@@ -1,3 +1,5 @@
+# Charger le modèle de suppression d’arrière-plan
+
 Voici la traduction en français de la documentation, conformément à vos règles :
 
 ## Aperçu

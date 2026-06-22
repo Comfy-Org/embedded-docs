@@ -1,3 +1,5 @@
+# GörüntüMorfolojisi
+
 Morphology düğümü, görüntülerdeki şekilleri işlemek ve analiz etmek için kullanılan matematiksel işlemler olan çeşitli morfolojik işlemleri uygular. Efekt gücünü kontrol etmek için özelleştirilebilir bir çekirdek boyutu kullanarak erozyon, genişleme, açma, kapama ve daha fazlası gibi işlemleri gerçekleştirebilir.
 
 ## Girişler

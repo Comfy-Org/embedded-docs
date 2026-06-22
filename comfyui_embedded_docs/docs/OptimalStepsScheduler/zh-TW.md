@@ -1,4 +1,4 @@
-# OptimalStepsScheduler 節點
+# 最佳步數排程器
 
 OptimalStepsScheduler 節點根據所選的模型類型和步數配置，計算擴散模型的噪聲調度 sigma 值。它會根據去噪參數調整總步數，並對噪聲級別進行插值以匹配所需的步數。該節點返回一系列 sigma 值，這些值決定了擴散採樣過程中使用的噪聲級別。
 

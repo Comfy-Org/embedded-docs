@@ -1,3 +1,5 @@
+# Boş Hunyuan Görüntü Gizli
+
 EmptyHunyuanImageLatent düğümü, Hunyuan görüntü oluşturma modellerinde kullanılmak üzere belirli boyutlarda boş bir latent tensör oluşturur. İş akışındaki sonraki düğümler aracılığıyla işlenebilecek boş bir başlangıç noktası üretir. Bu düğüm, latent uzayın genişliğini, yüksekliğini ve toplu iş boyutunu belirlemenize olanak tanır.
 
 ## Girişler

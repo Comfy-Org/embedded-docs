@@ -1,3 +1,5 @@
+# Unir Imagen con Alfa
+
 Este nodo está diseñado para operaciones de composición, específicamente para unir una imagen con su máscara alfa correspondiente y producir una única imagen de salida. Combina eficazmente el contenido visual con la información de transparencia, permitiendo la creación de imágenes donde ciertas áreas son transparentes o semitransparentes.
 
 ## Entradas

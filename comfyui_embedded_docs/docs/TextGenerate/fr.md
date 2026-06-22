@@ -1,3 +1,5 @@
+# TextGenerate
+
 Le nœud TextGenerate utilise un modèle CLIP pour créer du texte à partir d’une invite utilisateur. Il peut éventuellement utiliser des images, des vidéos ou de l’audio comme contexte supplémentaire pour guider la génération de texte. Vous pouvez contrôler la longueur de la sortie, activer un mode de réflexion pour les modèles compatibles, et choisir d’utiliser un échantillonnage aléatoire avec divers paramètres ou de générer du texte sans échantillonnage.
 
 ## Entrées

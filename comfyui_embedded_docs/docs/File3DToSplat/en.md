@@ -1,4 +1,4 @@
-# File3DToSplat
+# Get Splat
 
 This node converts a 3D file containing gaussian splat data into a gaussian splat format that can be used in the node graph. It supports PLY, SPLAT, KSPLAT, and SPZ file formats, with the file format automatically detected from the file contents.
 

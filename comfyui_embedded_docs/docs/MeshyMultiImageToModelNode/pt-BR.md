@@ -1,3 +1,5 @@
+# Meshy: Múltiplas Imagens para Modelo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/en.md)
 
 Este nó utiliza a API Meshy para gerar um modelo 3D a partir de múltiplas imagens de entrada. Ele faz o upload das imagens fornecidas, envia uma tarefa de processamento e retorna os arquivos do modelo 3D resultante (GLB e FBX), juntamente com o ID da tarefa para referência.

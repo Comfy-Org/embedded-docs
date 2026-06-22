@@ -1,4 +1,4 @@
-# MediaPipe Yüz İşaretçisi Yükleme Düğümü
+# MediaPipe Yüz İşaretleyicisini Yükle
 
 ## Genel Bakış
 

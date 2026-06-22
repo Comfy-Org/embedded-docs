@@ -1,3 +1,5 @@
+# WanSoundImageToVideo
+
 WanSoundImageToVideo düğümü, isteğe bağlı ses koşullandırmasıyla görüntülerden video içeriği oluşturur. Video gizil değişkenlerini (latent) oluşturmak için pozitif ve negatif koşullandırma istemlerini bir VAE modeliyle birlikte alır; video oluşturma sürecini yönlendirmek için referans görüntüleri, ses kodlamasını, kontrol videolarını ve hareket referanslarını entegre edebilir.
 
 ## Girişler

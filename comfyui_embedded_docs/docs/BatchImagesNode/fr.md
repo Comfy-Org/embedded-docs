@@ -1,3 +1,5 @@
+# Images par lot
+
 Voici la traduction de la documentation du nœud Batch Images :
 
 Le nœud Batch Images combine plusieurs images individuelles en un seul lot. Il accepte un nombre variable d'entrées d'images et les produit sous la forme d'un tenseur d'images groupées, permettant de les traiter ensemble dans les nœuds suivants.

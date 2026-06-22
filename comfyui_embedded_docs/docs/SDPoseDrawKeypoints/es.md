@@ -1,3 +1,5 @@
+# SDPoseDrawKeypoints
+
 El nodo SDPoseDrawKeypoints toma datos de estimación de pose (puntos clave) y los dibuja como un esqueleto visual sobre un lienzo en blanco. Permite dibujar selectivamente diferentes partes de la pose, como el cuerpo, las manos, el rostro y los pies, con anchos de línea y tamaños de punto personalizables. La imagen resultante puede utilizarse para visualización o como entrada para otros nodos que requieran una imagen de pose.
 
 ## Entradas

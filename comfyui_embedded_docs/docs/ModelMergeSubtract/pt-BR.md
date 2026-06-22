@@ -1,3 +1,5 @@
+# ModelMergeSubtract
+
 Este nó foi projetado para operações avançadas de mesclagem de modelos, especificamente para subtrair os parâmetros de um modelo de outro com base em um multiplicador especificado. Ele permite a personalização dos comportamentos do modelo ajustando a influência dos parâmetros de um modelo sobre outro, facilitando a criação de novos modelos híbridos.
 
 ## Entradas

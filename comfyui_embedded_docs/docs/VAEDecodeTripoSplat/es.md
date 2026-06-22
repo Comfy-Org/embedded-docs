@@ -1,4 +1,4 @@
-# VAEDecodeTripoSplat
+# Decodificar TripoSplat
 
 Decodifica una representación latente de TripoSplat en un splat gaussiano 3D. Este nodo toma el latente muestreado de un modelo TripoSplat y lo reconstruye como un conjunto de gaussianos 3D, cuya densidad puede ajustarse modificando la cantidad de gaussianos generados.
 

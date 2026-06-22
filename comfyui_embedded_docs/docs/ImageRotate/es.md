@@ -1,3 +1,5 @@
+# RotarImagen
+
 El nodo ImageRotate rota una imagen de entrada según ángulos especificados. Admite cuatro opciones de rotación: sin rotación, 90 grados en sentido horario, 180 grados y 270 grados en sentido horario. La rotación se realiza mediante operaciones eficientes con tensores que mantienen la integridad de los datos de la imagen.
 
 ## Entradas

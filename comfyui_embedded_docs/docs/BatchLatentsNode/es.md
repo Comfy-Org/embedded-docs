@@ -1,3 +1,5 @@
+# Procesar latents por lotes
+
 El nodo **Combinar Lotes Latentes** combina múltiples entradas latentes en un solo lote. Toma una cantidad variable de muestras latentes y las fusiona a lo largo de la dimensión del lote, permitiendo que se procesen juntas en nodos posteriores. Esto es útil para generar o procesar múltiples imágenes en una sola operación.
 
 ## Entradas

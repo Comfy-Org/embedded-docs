@@ -1,3 +1,5 @@
+# Geração de Vídeo Vidu de Início e Fim
+
 O nó Vidu Start End To Video Generation cria um vídeo gerando quadros entre um quadro inicial e um quadro final. Ele usa um prompt de texto para orientar o processo de geração de vídeo e suporta vários modelos de vídeo com diferentes configurações de resolução e movimento. O nó valida se os quadros inicial e final têm proporções de aspecto compatíveis antes do processamento.
 
 ## Entradas

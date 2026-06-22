@@ -1,3 +1,5 @@
+# Corte Aleatório de Imagens
+
 O nó Random Crop Images seleciona aleatoriamente uma seção retangular de cada imagem de entrada e a recorta para uma largura e altura especificadas. Isso é comumente usado para aumento de dados (data augmentation) a fim de criar variações de imagens de treinamento. A posição aleatória do recorte é determinada por um valor de semente (seed), garantindo que o mesmo recorte possa ser reproduzido.
 
 ## Entradas

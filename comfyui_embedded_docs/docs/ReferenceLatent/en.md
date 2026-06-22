@@ -1,3 +1,5 @@
+# Set Reference Latent
+
 This node sets the guiding latent for an edit model. It takes conditioning data and an optional latent input, then modifies the conditioning to include reference latent information. If the model supports it, you can chain multiple ReferenceLatent nodes to set multiple reference images.
 
 ## Inputs

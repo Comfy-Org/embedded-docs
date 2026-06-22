@@ -1,3 +1,5 @@
+# Cargador de Parches de Modelo
+
 El nodo ModelPatchLoader carga parches de modelo especializados desde la carpeta model_patches. Detecta automáticamente el tipo de archivo de parche y carga la arquitectura de modelo adecuada, luego lo envuelve en un ModelPatcher para su uso en el flujo de trabajo. Este nodo admite diferentes tipos de parches, incluidos bloques de controlnet, modelos de incrustación de características y otras arquitecturas especializadas.
 
 ## Entradas

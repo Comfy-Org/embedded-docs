@@ -1,4 +1,4 @@
-# ترجمة وثيقة ColorTransfer
+# ColorTransfer
 
 ## نظرة عامة
 

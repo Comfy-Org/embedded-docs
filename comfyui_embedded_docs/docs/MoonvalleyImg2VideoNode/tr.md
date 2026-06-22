@@ -1,3 +1,5 @@
+# MoonvalleyImg2VideoNode
+
 Moonvalley Marey Görüntüden Videoya düğümü, Moonvalley API'sini kullanarak bir referans görüntüyü videoya dönüştürür. Bir giriş görüntüsü ve metin istemi alarak belirtilen çözünürlük, kalite ayarları ve yaratıcı kontrollerle video oluşturur. Düğüm, görüntü yüklemeden video oluşturma ve indirmeye kadar tüm süreci yönetir.
 
 ## Girişler

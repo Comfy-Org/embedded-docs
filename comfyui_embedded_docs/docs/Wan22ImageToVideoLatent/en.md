@@ -1,3 +1,5 @@
+# Wan22ImageToVideoLatent
+
 The Wan22ImageToVideoLatent node creates video latent representations from images. It generates a blank video latent space with specified dimensions and can optionally encode a starting image sequence into the beginning frames. When a start image is provided, it encodes the image into the latent space and creates a corresponding noise mask for the inpainted regions.
 
 ## Inputs

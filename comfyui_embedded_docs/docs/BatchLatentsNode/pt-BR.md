@@ -1,3 +1,5 @@
+# Latents em Lote
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BatchLatentsNode/en.md)
 
 O nó Batch Latents combina múltiplas entradas latentes em um único lote. Ele recebe um número variável de amostras latentes e as mescla ao longo da dimensão do lote, permitindo que sejam processadas juntas em nós subsequentes. Isso é útil para gerar ou processar múltiplas imagens em uma única operação.

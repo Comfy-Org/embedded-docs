@@ -1,3 +1,5 @@
+# HiDream-O1 Reference Images
+
 ## Overview
 
 Attach reference images to both positive and negative conditioning. This node allows you to provide one or more reference images that will be used to guide the image generation process, either for editing based on an instruction or for subject-driven personalization.

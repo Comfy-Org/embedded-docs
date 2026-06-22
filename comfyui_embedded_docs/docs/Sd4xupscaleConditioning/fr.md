@@ -1,3 +1,5 @@
+# Sd4xupscaleConditioning
+
 Ce nœud est spécialisé dans l'amélioration de la résolution des images via un processus de suréchantillonnage 4x, intégrant des éléments de conditionnement pour affiner le résultat. Il exploite des techniques de diffusion pour agrandir les images tout en permettant d'ajuster le rapport d'échelle et l'augmentation du bruit afin de peaufiner le processus d'amélioration.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Captura da Webcam
+
 O nó WebcamCapture captura imagens de um dispositivo de webcam e as converte em um formato que pode ser utilizado nos fluxos de trabalho do ComfyUI. Ele herda do nó LoadImage e oferece opções para controlar as dimensões da captura e o momento em que ela ocorre. Quando habilitado, o nó pode capturar novas imagens a cada vez que a fila do fluxo de trabalho for processada.
 
 ## Entradas

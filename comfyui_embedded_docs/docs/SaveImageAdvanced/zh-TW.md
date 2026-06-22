@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# 儲存影像（進階）
 
 **SaveImageAdvanced** 節點可將影像儲存至您的 ComfyUI 輸出目錄，並提供對檔案格式、位元深度和色彩空間的進階控制。它支援儲存為 PNG 或 EXR 檔案，並可將工作流程中繼資料嵌入到儲存的檔案中。
 

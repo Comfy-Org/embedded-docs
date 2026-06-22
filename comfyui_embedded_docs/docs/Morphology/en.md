@@ -1,3 +1,5 @@
+# Apply Morphology
+
 The Morphology node applies various morphological operations to images, which are mathematical operations used to process and analyze shapes in images. It can perform operations like erosion, dilation, opening, closing, and more using a customizable kernel size to control the effect strength.
 
 ## Inputs

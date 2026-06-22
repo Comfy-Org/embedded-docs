@@ -1,3 +1,5 @@
+# LatentSubtract
+
 The LatentSubtract node is designed for subtracting one latent representation from another. This operation can be used to manipulate or modify the characteristics of generative models' outputs by effectively removing features or attributes represented in one latent space from another.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Redimensionar Imagem/Máscara
+
 O nó Redimensionar Imagem/Máscara fornece múltiplos métodos para alterar as dimensões de uma imagem ou máscara de entrada. Ele pode escalar por um multiplicador, definir dimensões específicas, igualar o tamanho de outra entrada ou ajustar com base na contagem de pixels, utilizando vários métodos de interpolação para qualidade.
 
 ## Entradas

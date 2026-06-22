@@ -1,3 +1,5 @@
+# Agendador Básico
+
 O nó `BasicScheduler` é projetado para calcular uma sequência de valores de sigma para modelos de difusão com base no agendador, modelo e parâmetros de remoção de ruído fornecidos. Ele ajusta dinamicamente o número total de etapas com base no fator de remoção de ruído para refinar o processo de difusão, fornecendo "receitas" precisas para diferentes estágios em processos de amostragem avançados que exigem controle refinado (como amostragem em múltiplos estágios).
 
 ## Entradas

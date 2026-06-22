@@ -1,3 +1,5 @@
+# TopluİşlemdenGörüntü
+
 `ImageFromBatch` düğümü, bir görüntü grubundan (batch) belirtilen indeks ve uzunluğa göre belirli bir bölümü çıkarmak için tasarlanmıştır. Gruplanmış görüntüler üzerinde daha ayrıntılı kontrol sağlayarak, daha büyük bir grup içindeki tek tek veya alt küme görüntüler üzerinde işlem yapılmasına olanak tanır.
 
 ## Girişler

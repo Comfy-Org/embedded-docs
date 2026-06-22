@@ -1,3 +1,5 @@
+# StabilKaskad_SüperÇözünürlükKontrolAğı
+
 StableCascade_SuperResolutionControlnet düğümü, Stable Cascade süper çözünürlük işleme için girdileri hazırlar. Bir girdi görüntüsünü alır ve bir VAE kullanarak kodlayarak controlnet girdisi oluşturur; aynı zamanda Stable Cascade hattının C aşaması ve B aşaması için yer tutucu gizil temsiller üretir.
 
 ## Girdiler

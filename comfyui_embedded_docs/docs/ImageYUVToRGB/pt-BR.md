@@ -1,3 +1,5 @@
+# ImageYUVToRGB
+
 O nó ImageYUVToRGB converte imagens do espaço de cores YUV para o espaço de cores RGB. Ele recebe três imagens de entrada separadas representando os canais Y (luminância), U (projeção azul) e V (projeção vermelha) e as combina em uma única imagem RGB usando conversão de espaço de cores.
 
 ## Entradas

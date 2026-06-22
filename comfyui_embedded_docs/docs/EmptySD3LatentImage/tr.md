@@ -1,3 +1,5 @@
+# BoşSD3GizliGörüntü
+
 EmptySD3LatentImage düğümü, Stable Diffusion 3 modelleri için özel olarak biçimlendirilmiş boş bir gizli görüntü tensörü oluşturur. SD3 işlem hatlarının beklediği doğru boyut ve yapıya sahip, sıfırlarla dolu bir tensör üretir. Bu, genellikle görüntü oluşturma iş akışları için bir başlangıç noktası olarak kullanılır.
 
 ## Girişler

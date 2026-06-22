@@ -1,3 +1,5 @@
+# Cargador de Puntos de Control Solo de Imagen (modelo img2vid)
+
 Este nodo detecta los modelos ubicados en la carpeta `ComfyUI/models/checkpoints`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para permitir que lea los archivos de modelo desde la carpeta correspondiente.
 
 Este nodo se especializa en cargar puntos de control específicamente para modelos basados en imágenes dentro de flujos de trabajo de generación de video. Recupera y configura de manera eficiente los componentes necesarios de un punto de control determinado, centrándose en los aspectos relacionados con imágenes del modelo.

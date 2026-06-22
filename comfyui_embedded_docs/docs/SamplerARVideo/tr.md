@@ -1,3 +1,5 @@
+# Sampler AR Video
+
 Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerARVideo/en.md)
 
 Sampler AR Video düğümü, Nedensel Zorlama (Causal Forcing) veya Kendi Kendini Zorlama (Self-Forcing) tekniklerini kullananlar gibi otoregresif video modelleri için özel bir örnekleme yöntemi sağlar. Otoregresif (AR) döngüyle ilgili tüm parametreleri doğrudan iş akışı içinde yöneterek, modelin video karelerini adım adım nasıl oluşturacağını yapılandırmayı kolaylaştırır.

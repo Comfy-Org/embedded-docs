@@ -1,3 +1,5 @@
+# CLIPTextEncodeFlux
+
 `CLIPTextEncodeFlux` is an advanced text encoding node designed for the Flux architecture. It processes two separate text inputs through different encoders—CLIP-L and T5XXL—and combines them with a guidance scale to produce a unified conditioning output for image generation.
 
 ## Inputs

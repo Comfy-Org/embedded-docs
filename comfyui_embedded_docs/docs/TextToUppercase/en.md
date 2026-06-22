@@ -1,3 +1,5 @@
+# Convert Text to Uppercase (DEPRECATED)
+
 The Text to Uppercase node takes a text input and converts all of its characters to uppercase. It is a simple text processing utility that modifies the case of the provided string.
 
 **Note:** This node is deprecated and superseded by the Convert Text Case node.

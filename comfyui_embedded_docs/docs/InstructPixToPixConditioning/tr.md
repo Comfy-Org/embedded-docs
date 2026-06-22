@@ -1,3 +1,5 @@
+# InstructPixToPixKoşullandırma
+
 InstructPixToPixConditioning düğümü, pozitif ve negatif metin yönlendirmelerini görüntü verileriyle birleştirerek InstructPix2Pix görüntü düzenlemesi için koşullandırma verilerini hazırlar. Giriş görüntülerini bir VAE kodlayıcı aracılığıyla işleyerek gizli temsiller oluşturur ve bu gizli temsilleri hem pozitif hem de negatif koşullandırma verilerine ekler. Düğüm, VAE kodlama süreciyle uyumluluk için görüntü boyutlarını 8 pikselin katlarına kırparak otomatik olarak işler.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# CropByBBoxes
+
 O nó CropByBBoxes extrai e redimensiona regiões retangulares específicas de um lote de imagens de entrada. Ele utiliza coordenadas de caixas delimitadoras fornecidas para definir a área a ser recortada de cada imagem. As regiões recortadas são então redimensionadas para uma dimensão de saída especificada, com opções para esticar o recorte ou preenchê-lo para preservar sua proporção original.
 
 ## Entradas

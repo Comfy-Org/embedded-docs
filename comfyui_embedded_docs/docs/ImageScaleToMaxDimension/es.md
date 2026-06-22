@@ -1,3 +1,5 @@
+# EscalarImagenADimensiónMáxima
+
 El nodo `ImageScaleToMaxDimension` redimensiona imágenes para que encajen dentro de una dimensión máxima especificada, manteniendo la relación de aspecto original. Calcula si la imagen está orientada en formato vertical u horizontal, luego escala la dimensión más grande para que coincida con el tamaño objetivo, ajustando proporcionalmente la dimensión más pequeña. El nodo admite múltiples métodos de escalado ascendente para diferentes requisitos de calidad y rendimiento.
 
 ## Entradas

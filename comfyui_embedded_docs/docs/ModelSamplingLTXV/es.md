@@ -1,3 +1,5 @@
+# MuestreoDeModeloLTXV
+
 El nodo ModelSamplingLTXV aplica parámetros de muestreo avanzados a un modelo basándose en el recuento de tokens. Calcula un valor de desplazamiento mediante una interpolación lineal entre valores de desplazamiento base y máximo, donde el cálculo depende del número de tokens en el latente de entrada. Luego, el nodo crea una configuración de muestreo de modelo especializada y la aplica al modelo de entrada.
 
 ## Entradas

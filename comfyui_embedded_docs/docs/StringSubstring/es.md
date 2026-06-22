@@ -1,3 +1,5 @@
+# Subcadena
+
 El nodo StringSubstring extrae una porción de texto de una cadena más grande. Toma una posición inicial y una posición final para definir la sección que se desea extraer, y luego devuelve el texto comprendido entre esas dos posiciones.
 
 ## Entradas

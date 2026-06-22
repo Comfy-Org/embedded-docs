@@ -1,3 +1,5 @@
+# Substring
+
 The StringSubstring node extracts a portion of text from a larger string. It takes a starting position and ending position to define the section you want to extract, then returns the text between those two positions.
 
 ## Inputs

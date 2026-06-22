@@ -1,4 +1,4 @@
-# WanSoundImageToVideoExtend 節點
+# 萬聲圖像轉影片擴展
 
 WanSoundImageToVideoExtend 節點透過生成額外影格來擴展現有的影片潛在表示，可選擇性地由音訊、參考影像和控制影片引導。它接收起始的影片潛在表示，並產生更長的影片序列，利用提供的條件設定和音訊提示來影響新內容。
 

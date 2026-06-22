@@ -1,3 +1,5 @@
+# Apply Style Model
+
 This node applies a style model to a given conditioning, enhancing or altering its style based on the output of a CLIP vision model. It integrates the style model's conditioning into the existing conditioning, allowing for a seamless blend of styles in the generation process.
 
 ## Inputs

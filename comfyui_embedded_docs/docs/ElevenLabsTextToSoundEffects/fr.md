@@ -1,3 +1,5 @@
+# ElevenLabs Text to Sound Effects
+
 Le nœud ElevenLabs Text to Sound Effects génère des effets sonores audio à partir d'une description textuelle. Il utilise l'API ElevenLabs pour créer des effets sonores basés sur votre prompt, vous permettant de contrôler la durée, le comportement de boucle et la fidélité du son au texte.
 
 ## Entrées

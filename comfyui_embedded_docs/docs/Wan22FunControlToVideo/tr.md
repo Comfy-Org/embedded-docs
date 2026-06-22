@@ -1,3 +1,5 @@
+# Wan22FunControlToVideo
+
 Wan22FunControlToVideo düğümü, Wan video model mimarisini kullanarak video üretimi için koşullama (conditioning) ve gizil (latent) temsilleri hazırlar. Pozitif ve negatif koşullama girdilerini, isteğe bağlı referans görüntüleri ve kontrol videolarıyla birlikte işleyerek video sentezi için gerekli gizil uzay temsillerini oluşturur. Düğüm, video modelleri için uygun koşullama verileri üretmek amacıyla uzamsal ölçekleme ve zamansal boyutları yönetir.
 
 ## Girdiler

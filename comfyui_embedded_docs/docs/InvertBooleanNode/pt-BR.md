@@ -1,3 +1,5 @@
+# InvertBooleanNode
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertBooleanNode/en.md)
 
 Este nó recebe um único valor booleano (verdadeiro/falso) como entrada e retorna o valor oposto. Ele executa uma operação lógica NÃO, transformando `true` em `false` e `false` em `true`.

@@ -1,3 +1,5 @@
+# LatentCutToBatch
+
 Voici la traduction en français de la documentation du nœud **LatentCutToBatch** :
 
 Le nœud **LatentCutToBatch** divise une représentation latente le long d'une dimension choisie en plusieurs tranches et les empile dans un nouveau lot. Cela permet de traiter indépendamment différentes parties d'un échantillon latent.

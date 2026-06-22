@@ -1,3 +1,5 @@
+# LoRA Yükle
+
 Bu düğüm, LoRA klasöründe (alt klasörler dahil) bulunan modelleri, ilgili model yolu `ComfyUI\models\loras` olacak şekilde otomatik olarak algılar. Daha fazla bilgi için lütfen LoRA Modellerini Yükleme bölümüne bakın.
 
 LoRA Yükleyici düğümü, öncelikle LoRA modellerini yüklemek için kullanılır. LoRA modellerini, görsellerinize belirli stiller, içerikler ve detaylar kazandırabilen filtreler olarak düşünebilirsiniz:

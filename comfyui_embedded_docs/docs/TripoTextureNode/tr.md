@@ -1,3 +1,5 @@
+# Tripo: Doku modeli
+
 TripoTextureNode, Tripo API'sini kullanarak dokulu 3D modeller oluşturur. Bir model görev kimliği alır ve PBR malzemeleri, doku kalite ayarları ve hizalama yöntemleri gibi çeşitli seçeneklerle doku oluşturma işlemini uygular. Düğüm, doku oluşturma isteğini işlemek için Tripo API'si ile iletişim kurar ve sonuçta ortaya çıkan model dosyası ile görev kimliğini döndürür.
 
 ## Girişler

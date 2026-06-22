@@ -1,3 +1,5 @@
+# MoonvalleyTxt2VideoNode
+
 Moonvalley Marey Metinden Videoya düğümü, Moonvalley API'sini kullanarak metin açıklamalarından video içeriği oluşturur. Bir metin istemi alır ve bunu çözünürlük, kalite ve stil için özelleştirilebilir ayarlarla bir videoya dönüştürür. Düğüm, oluşturma isteğinin gönderilmesinden nihai video çıktısının indirilmesine kadar tüm süreci yönetir.
 
 ## Girişler

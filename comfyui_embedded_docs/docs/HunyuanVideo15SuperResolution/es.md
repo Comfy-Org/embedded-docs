@@ -1,3 +1,5 @@
+# HunyuanVideo15SuperResolution
+
 El nodo `HunyuanVideo15SuperResolution` prepara datos de condicionamiento para un proceso de superresolución de video. Toma una representación latente de un video y, opcionalmente, una imagen inicial, y los empaqueta junto con aumento de ruido y datos de visión CLIP en un formato que puede ser utilizado por un modelo para generar una salida de mayor resolución.
 
 ## Entradas

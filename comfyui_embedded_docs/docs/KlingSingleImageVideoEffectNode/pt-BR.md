@@ -1,3 +1,5 @@
+# Efeitos de Vídeo Kling
+
 O nó Kling Single Image Video Effect cria vídeos com diferentes efeitos especiais com base em uma única imagem de referência. Ele aplica vários efeitos visuais e cenas para transformar imagens estáticas em conteúdo de vídeo dinâmico. O nó suporta diferentes cenas de efeitos, opções de modelo e durações de vídeo para alcançar o resultado visual desejado.
 
 ## Entradas

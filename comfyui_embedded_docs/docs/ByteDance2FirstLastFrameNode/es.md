@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Primer-Último Fotograma a Video
+
 Este nodo utiliza el modelo Seedance 2.0 de ByteDance para generar un video. Crea el video basándose en un prompt de texto y una imagen de primer fotograma obligatoria. Opcionalmente, puedes proporcionar una imagen de último fotograma para guiar el final de la secuencia del video.
 
 ## Entradas

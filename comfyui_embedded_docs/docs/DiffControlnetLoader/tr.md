@@ -1,3 +1,5 @@
+# ControlNet Modelini Yükle (fark)
+
 Bu düğüm, `ComfyUI/models/controlnet` klasöründe bulunan modelleri tespit eder ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardaki modelleri de okur. Bazen, ilgili klasördeki model dosyalarını okuyabilmesi için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 DiffControlNetLoader düğümü, diferansiyel kontrol ağlarını yüklemek için tasarlanmıştır. Bu ağlar, kontrol ağı özelliklerine dayalı olarak başka bir modelin davranışını değiştirebilen özel modellerdir. Bu düğüm, diferansiyel kontrol ağları uygulayarak model davranışlarının dinamik olarak ayarlanmasına olanak tanır ve özelleştirilmiş model çıktılarının oluşturulmasını kolaylaştırır.

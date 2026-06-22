@@ -1,3 +1,5 @@
+# Meshy : Image vers modèle
+
 Le nœud Meshy : Image vers modèle utilise l'API Meshy pour générer un modèle 3D à partir d'une seule image d'entrée. Il télécharge votre image, soumet une tâche de traitement et retourne les fichiers du modèle 3D généré (GLB et FBX) ainsi que l'identifiant de la tâche pour référence.
 
 ## Entrées

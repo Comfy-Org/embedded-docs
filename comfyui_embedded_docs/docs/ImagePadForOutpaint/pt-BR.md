@@ -1,3 +1,5 @@
+# Adicionar Bordas para Outpainting
+
 Este nó foi projetado para preparar imagens para o processo de extrapolação (outpainting), adicionando preenchimento ao redor delas. Ele ajusta as dimensões da imagem para garantir compatibilidade com algoritmos de extrapolação, facilitando a geração de áreas estendidas da imagem além dos limites originais.
 
 ## Entradas

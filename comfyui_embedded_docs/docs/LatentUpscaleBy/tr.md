@@ -1,3 +1,5 @@
+# Gizli Değişkeni Oranla Büyüt
+
 LatentUpscaleBy düğümü, görüntülerin gizli (latent) temsillerini büyütmek için tasarlanmıştır. Ölçek faktörünün ve büyütme yönteminin ayarlanmasına olanak tanıyarak, gizli örneklerin çözünürlüğünü artırmada esneklik sağlar.
 
 ## Girişler

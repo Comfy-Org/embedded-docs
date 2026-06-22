@@ -1,3 +1,5 @@
+# GizliİşlemUygulaCFG
+
 **LatentApplyOperationCFG** düğümü, bir modeldeki koşullandırma yönlendirme sürecini değiştirmek için bir latent işlem uygular. Sınıflandırıcısız yönlendirme (CFG) örnekleme süreci sırasında koşullandırma çıktılarını keserek ve belirtilen işlemi, üretim için kullanılmadan önce latent temsillere uygulayarak çalışır.
 
 ## Girişler

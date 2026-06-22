@@ -1,3 +1,5 @@
+# Sélecteur de résolution
+
 Voici la traduction en français de la documentation du nœud Resolution Selector :
 
 Le nœud Resolution Selector calcule la largeur et la hauteur en pixels d'une image en fonction d'un rapport hauteur/largeur choisi et d'une résolution totale cible en mégapixels. Il est utile pour générer des dimensions cohérentes pour d'autres nœuds, tels que le nœud Empty Latent Image. Les dimensions de sortie sont toujours arrondies au multiple de 8 le plus proche.

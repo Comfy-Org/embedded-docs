@@ -1,3 +1,5 @@
+# LTXVConditioning
+
 O nó **LTXVConditioning** adiciona informações de taxa de quadros às entradas de condicionamento positivo e negativo para modelos de geração de vídeo. Ele recebe dados de condicionamento existentes e aplica o valor de taxa de quadros especificado a ambos os conjuntos de condicionamento, tornando-os adequados para o processamento de modelos de vídeo.
 
 ## Entradas

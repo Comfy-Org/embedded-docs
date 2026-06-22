@@ -1,3 +1,5 @@
+# Magnific Görsel Yeniden Işıklandırma
+
 **Giriş**
 
 Magnific Image Relight düğümü, bir girdi görüntüsünün aydınlatmasını ayarlar. Bir metin istemine dayalı olarak stilistik aydınlatma uygulayabilir veya isteğe bağlı bir referans görüntüden aydınlatma özelliklerini aktarabilir. Düğüm, nihai çıktının parlaklığına, kontrastına ve genel havasına ince ayar yapmak için çeşitli kontroller sunar.

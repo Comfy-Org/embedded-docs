@@ -1,3 +1,5 @@
+# ModelMergeCosmos7B
+
 ModelMergeCosmos7B 節點透過對特定元件進行加權混合，將兩個 AI 模型合併在一起。它允許透過調整位置嵌入、Transformer 區塊和最終層的個別權重，來精細控制模型不同部分的組合方式。
 
 ## 輸入

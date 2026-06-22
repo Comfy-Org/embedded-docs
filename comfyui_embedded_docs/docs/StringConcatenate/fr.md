@@ -1,3 +1,5 @@
+# Concaténer
+
 Le nœud StringConcatenate combine deux chaînes de texte en une seule en les joignant avec un délimiteur spécifié. Il prend deux chaînes d’entrée et un caractère ou une chaîne de délimiteur, puis produit une seule chaîne où les deux entrées sont reliées avec le délimiteur placé entre elles.
 
 ## Entrées

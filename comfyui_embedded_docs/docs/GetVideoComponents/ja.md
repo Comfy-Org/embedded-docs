@@ -1,3 +1,5 @@
+# ビデオコンポーネントの取得
+
 このドキュメントはAIによって生成されました。誤りを見つけた場合や改善の提案がある場合は、ぜひご協力ください！[GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/en.md)
 
 Get Video Components ノードは、動画ファイルからすべての主要な要素を抽出します。動画を個別のフレームに分割し、オーディオトラックを抽出し、動画のフレームレート情報を提供します。これにより、各コンポーネントを独立して使用し、さらなる処理や分析を行うことができます。

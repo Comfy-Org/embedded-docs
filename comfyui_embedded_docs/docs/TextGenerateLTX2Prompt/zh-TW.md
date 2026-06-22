@@ -1,4 +1,4 @@
-# TextGenerateLTX2Prompt 節點
+# TextGenerateLTX2Prompt
 
 TextGenerateLTX2Prompt 節點是文字生成節點的一個專門版本。它接收使用者的文字提示，並在將其發送到語言模型進行增強或補全之前，自動使用特定的系統指令進行格式化。此節點可以以兩種模式運作：純文字模式或帶有圖像參考的模式，並針對每種情況使用不同的系統提示。
 

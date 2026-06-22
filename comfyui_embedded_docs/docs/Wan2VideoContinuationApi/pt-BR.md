@@ -1,3 +1,5 @@
+# Wan 2.7 Continuação de Vídeo
+
 Aqui está a tradução da documentação para português brasileiro, seguindo todas as regras estabelecidas:
 
 O nó Wan 2.7 Video Continuation gera um novo segmento de vídeo que continua perfeitamente a partir do final de um clipe de vídeo de entrada. Ele utiliza o modelo Wan 2.7 para sintetizar a continuação com base em um prompt de texto e pode, opcionalmente, guiar o final em direção a um quadro alvo específico.

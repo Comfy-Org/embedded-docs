@@ -1,3 +1,5 @@
+# Ampliar Imagen Por
+
 El nodo ImageScaleBy está diseñado para escalar imágenes mediante un factor de escala específico utilizando diversos métodos de interpolación. Permite ajustar el tamaño de la imagen de manera flexible, adaptándose a diferentes necesidades de escalado.
 
 ## Entradas

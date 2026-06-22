@@ -1,3 +1,5 @@
+# Edit Model Reference Method
+
 The FluxKontextMultiReferenceLatentMethod node modifies conditioning data by setting a specific reference latents method. It appends the chosen method to the conditioning input, which affects how reference latents are processed in subsequent generation steps. This node is marked as experimental and is part of the Flux conditioning system.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# LTXVConcatAVLatent
+
 El nodo LTXVConcatAVLatent combina una representación latente de video y una representación latente de audio en una única salida latente concatenada. Fusiona los tensores `samples` de ambas entradas y, si están presentes, también sus tensores `noise_mask`, preparándolos para su procesamiento posterior en un pipeline de generación de video.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Recraft V4 Texto para Imagem
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/en.md)
 
 Este nó gera imagens a partir de descrições textuais usando os modelos de IA Recraft V4 ou V4 Pro. Ele envia seu prompt para uma API externa e retorna as imagens geradas. Você pode controlar a saída especificando o modelo, o tamanho da imagem e a quantidade de imagens a serem criadas.

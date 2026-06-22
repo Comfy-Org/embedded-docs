@@ -1,3 +1,5 @@
+# Diffusers 載入器
+
 ## 概述
 
 DiffusersLoader 節點用於從 diffusers 格式載入預訓練模型。它會搜尋包含 `model_index.json` 檔案的有效 diffusers 模型目錄，並將其載入為 MODEL、CLIP 和 VAE 元件，以供後續流程使用。此節點屬於已棄用的載入器類別，提供與 Hugging Face diffusers 模型的相容性。

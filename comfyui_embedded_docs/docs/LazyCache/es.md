@@ -1,3 +1,5 @@
+# CachéPerezoso
+
 LazyCache es una versión casera de EasyCache que ofrece una implementación aún más sencilla. Funciona con cualquier modelo en ComfyUI y añade funcionalidad de caché para reducir el cómputo durante el muestreo. Aunque generalmente tiene un rendimiento inferior al de EasyCache, puede ser más efectivo en algunos casos poco comunes y ofrece compatibilidad universal.
 
 ## Entradas

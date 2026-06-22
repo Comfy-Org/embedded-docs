@@ -1,3 +1,5 @@
+# RecraftStyleV3VectorIllustrationNode
+
 تم إنشاء هذه الوثائق بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3VectorIllustrationNode/en.md)
 
 تكوّن هذه العقدة نمطًا لاستخدامه مع واجهة برمجة تطبيقات Recraft، مع تحديد نمط `vector_illustration` تحديدًا. تتيح لك اختيار نمط فرعي أكثر تحديدًا ضمن هذه الفئة بشكل اختياري. تُخرج العقدة كائن تكوين نمط يمكن تمريره إلى عُقد واجهة برمجة تطبيقات Recraft الأخرى.

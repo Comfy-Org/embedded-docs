@@ -1,3 +1,5 @@
+# HypernetworkLoader
+
 此節點會偵測位於 `ComfyUI/models/hypernetworks` 資料夾中的模型，也會讀取在 extra_model_paths.yaml 檔案中設定的其他路徑中的模型。有時，您可能需要**重新整理 ComfyUI 介面**，才能讓它從對應的資料夾中讀取模型檔案。
 
 HypernetworkLoader 節點旨在透過套用超網路來增強或修改指定模型的功能。它會載入指定的超網路並將其套用至模型，根據強度參數可能改變模型的行為或效能。此過程允許對模型的架構或參數進行動態調整，從而實現更具彈性和適應性的 AI 系統。

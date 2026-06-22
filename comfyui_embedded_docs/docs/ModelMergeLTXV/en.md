@@ -1,3 +1,5 @@
+# ModelMergeLTXV
+
 The ModelMergeLTXV node performs advanced model merging operations specifically designed for LTXV model architectures. It allows you to blend two different models together by adjusting interpolation weights for various model components including transformer blocks, projection layers, and other specialized modules.
 
 ## Inputs

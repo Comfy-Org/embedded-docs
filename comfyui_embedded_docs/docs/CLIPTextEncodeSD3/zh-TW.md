@@ -1,3 +1,5 @@
+# CLIPTextEncodeSD3
+
 ## 概述
 
 CLIPTextEncodeSD3 節點透過使用不同的 CLIP 模型編碼多個文字提示，來處理 Stable Diffusion 3 模型的文字輸入。它處理三個獨立的文字輸入（`clip_g`、`clip_l` 和 `t5xxl`），並提供管理空白文字填充的選項。該節點確保不同文字輸入之間的標記對齊，並返回適用於 SD3 生成管線的條件資料。

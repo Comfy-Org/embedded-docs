@@ -1,3 +1,5 @@
+# WanDancerVideo
+
 El nodo WanDancerVideo prepara datos de condicionamiento y un tensor latente vacío para la generación de video con el modelo WanDancer. Combina el condicionamiento positivo y negativo con entradas opcionales como una imagen inicial, máscara, incrustaciones CLIP vision y características de audio para controlar el video generado.
 
 ## Entradas

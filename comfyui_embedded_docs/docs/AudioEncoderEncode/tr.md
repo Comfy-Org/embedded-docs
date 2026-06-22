@@ -1,3 +1,5 @@
+# SesKodlayıcıKodla
+
 AudioEncoderEncode düğümü, bir ses kodlayıcı modeli kullanarak ses verilerini kodlayarak işler. Ses girişini alır ve koşullandırma hattında daha ileri işlemler için kullanılabilecek kodlanmış bir temsile dönüştürür. Bu düğüm, ham ses dalga formlarını ses tabanlı makine öğrenimi uygulamalarına uygun bir formata dönüştürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Hunyuan Video 15 Latent Upscale With Model
+
 Hunyuan Video 15 Latent Upscale With Model düğümü, bir latent görüntü temsilinin çözünürlüğünü artırır. İlk olarak, seçilen bir enterpolasyon yöntemini kullanarak latent örnekleri belirtilen bir boyuta yükseltir, ardından kaliteyi iyileştirmek için özel bir Hunyuan Video 1.5 yükseltme modeli kullanarak yükseltilmiş sonucu iyileştirir.
 
 ## Girişler

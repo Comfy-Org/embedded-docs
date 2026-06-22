@@ -1,3 +1,5 @@
+# PhotoMakerEncode
+
 El nodo **PhotoMakerEncode** procesa imágenes y texto para generar datos de condicionamiento para la generación de imágenes con IA. Toma una imagen de referencia y un mensaje de texto, luego crea *embeddings* que pueden usarse para guiar la generación de imágenes basándose en las características visuales de la imagen de referencia. El nodo busca específicamente el token "photomaker" en el texto para determinar dónde aplicar el condicionamiento basado en la imagen.
 
 ## Entradas

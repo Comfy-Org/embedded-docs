@@ -1,3 +1,5 @@
+# Carregar Modelo de Remoção de Fundo
+
 ## Visão Geral
 
 Carrega um modelo de remoção de fundo a partir de um arquivo. Este nó prepara o modelo para ser utilizado na remoção de fundos de imagens.

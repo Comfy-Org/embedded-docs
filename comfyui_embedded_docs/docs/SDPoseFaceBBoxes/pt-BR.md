@@ -1,3 +1,5 @@
+# SDPoseFaceBBoxes
+
 O nó SDPoseFaceBBoxes processa dados de pontos-chave de pose para detectar e gerar caixas delimitadoras ao redor de rostos humanos. Ele analisa os pontos-chave faciais 2D de cada pessoa em um quadro, calcula uma caixa delimitadora com base nesses pontos e pode ajustar o tamanho e formato da caixa. As caixas delimitadoras resultantes são formatadas para serem compatíveis com outros nós no fluxo de trabalho SDPose, como o SDPoseKeypointExtractor.
 
 ## Entradas

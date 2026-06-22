@@ -1,3 +1,5 @@
+# Perp-Neg (DEPRECATED by Perp-Neg Guider)
+
 The PerpNeg node applies perpendicular negative guidance to a model's sampling process. This node modifies the model's configuration function to adjust noise predictions using negative conditioning and scaling factors. It has been deprecated and replaced by the PerpNegGuider node for improved functionality.
 
 ## Inputs

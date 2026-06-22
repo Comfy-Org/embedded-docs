@@ -1,3 +1,5 @@
+# VOIDWarpedNoiseSource
+
 ## Overview
 
 This node converts a LATENT (such as the output from the VOIDWarpedNoise node) into a NOISE source. This allows you to use the warped noise with the SamplerCustomAdvanced node for more controlled image generation.

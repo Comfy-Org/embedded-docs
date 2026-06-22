@@ -1,3 +1,5 @@
+# Contains Text
+
 The StringContains node checks if a given string contains a specified substring. It can perform this check with either case-sensitive or case-insensitive matching, returning a boolean result indicating whether the substring was found within the main string.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Hunyuan3D: Metinden Modele (Pro)
+
 Bu düğüm, Tencent'in Hunyuan3D Pro API'sini kullanarak bir metin açıklamasından 3B model oluşturur. Bir oluşturma görevi oluşturmak için istek gönderir, sonucu yoklar ve nihai model dosyalarını GLB ve OBJ formatlarında indirir.
 
 ## Girdiler

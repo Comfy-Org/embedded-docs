@@ -1,3 +1,5 @@
+# GLIGENLoader
+
 Este nodo detecta los modelos ubicados en la carpeta `ComfyUI/models/gligen`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo desde la carpeta correspondiente.
 
 El nodo `GLIGENLoader` está diseñado para cargar modelos GLIGEN, que son modelos generativos especializados. Facilita el proceso de recuperación e inicialización de estos modelos desde rutas especificadas, preparándolos para tareas generativas posteriores.

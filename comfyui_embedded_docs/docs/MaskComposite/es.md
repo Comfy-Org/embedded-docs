@@ -1,3 +1,5 @@
+# Composición de Máscara
+
 Este nodo se especializa en combinar dos máscaras de entrada mediante diversas operaciones como suma, resta y operaciones lógicas, para producir una nueva máscara modificada. Maneja de forma abstracta la manipulación de datos de máscara para lograr efectos de enmascaramiento complejos, sirviendo como un componente crucial en flujos de trabajo de edición y procesamiento de imágenes basados en máscaras.
 
 ## Entradas

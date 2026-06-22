@@ -1,3 +1,5 @@
+# Kayıp Grafiği Çiz
+
 LossGraphNode, eğitim kayıp değerlerinin zaman içindeki görsel grafiğini oluşturur ve bunu bir önizleme görüntüsü olarak görüntüler. Eğitim süreçlerinden gelen kayıp verilerini alır ve kaybın eğitim adımları boyunca nasıl değiştiğini gösteren bir çizgi grafiği oluşturur. Ortaya çıkan grafik, eksen etiketlerini ve minimum/maksimum kayıp değerlerini içerir.
 
 ## Girişler

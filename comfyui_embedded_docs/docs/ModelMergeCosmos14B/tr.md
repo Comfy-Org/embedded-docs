@@ -1,3 +1,5 @@
+# ModelBirleştirmeCosmos14B
+
 **ModelMergeCosmos14B** düğümü, Cosmos 14B model mimarisi için özel olarak tasarlanmış blok tabanlı bir yaklaşım kullanarak iki yapay zeka modelini birleştirir. Her model bloğu ve katman gömme (embedding) katmanı için ağırlık değerlerini 0.0 ile 1.0 arasında ayarlayarak modellerin farklı bileşenlerini harmanlamanıza olanak tanır.
 
 ## Girişler

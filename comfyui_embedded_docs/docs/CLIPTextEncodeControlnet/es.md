@@ -1,3 +1,5 @@
+# CodificarTextoCLIPControlnet
+
 El nodo CLIPTextEncodeControlnet procesa la entrada de texto utilizando un modelo CLIP y lo combina con datos de condicionamiento existentes para generar una salida de condicionamiento mejorada para aplicaciones de controlnet. Tokeniza el texto de entrada, lo codifica a través del modelo CLIP y agrega las incrustaciones resultantes a los datos de condicionamiento proporcionados como parámetros de controlnet de atención cruzada.
 
 ## Entradas

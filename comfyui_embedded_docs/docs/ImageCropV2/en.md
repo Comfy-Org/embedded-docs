@@ -1,3 +1,5 @@
+# Crop Image
+
 The Crop Image node extracts a rectangular section from an input image. You define the region to keep by specifying its top-left corner coordinates and its width and height. The node then returns the cropped portion of the original image.
 
 ## Inputs

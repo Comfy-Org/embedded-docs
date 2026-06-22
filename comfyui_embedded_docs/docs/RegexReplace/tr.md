@@ -1,3 +1,5 @@
+# Regex Değiştir
+
 RegexReplace düğümü, düzenli ifade kalıpları kullanarak metinlerde arama ve değiştirme işlemi yapar. Metin kalıplarını aramanıza ve bunları yeni metinle değiştirmenize olanak tanır. Büyük/küçük harf duyarlılığı, çok satırlı eşleştirme ve değiştirme sayısını sınırlama gibi kalıp eşleştirmeyi kontrol eden seçenekler sunar.
 
 ## Girişler

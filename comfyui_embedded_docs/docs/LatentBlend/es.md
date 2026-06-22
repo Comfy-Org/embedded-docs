@@ -1,3 +1,5 @@
+# Mezcla Latente
+
 El nodo LatentBlend combina dos muestras latentes mezclándolas mediante un factor de mezcla especificado. Toma dos entradas latentes y crea una nueva salida donde la primera muestra se pondera por el factor de mezcla y la segunda muestra se pondera por el inverso. Si las muestras de entrada tienen formas diferentes, la segunda muestra se redimensiona automáticamente para coincidir con las dimensiones de la primera.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Charger le modèle de style
+
 Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/style_models`, et lit également les modèles provenant de chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
 Le nœud StyleModelLoader est conçu pour charger un modèle de style à partir d'un chemin spécifié. Il se concentre sur la récupération et l'initialisation des modèles de style pouvant être utilisés pour appliquer des styles artistiques spécifiques aux images, permettant ainsi la personnalisation des rendus visuels en fonction du modèle de style chargé.

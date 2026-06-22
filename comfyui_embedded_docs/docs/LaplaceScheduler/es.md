@@ -1,3 +1,5 @@
+# LaplaceScheduler
+
 El nodo LaplaceScheduler genera una secuencia de valores sigma que siguen una distribución de Laplace para su uso en el muestreo de difusión. Crea un programa de niveles de ruido que disminuye gradualmente desde un valor máximo hasta uno mínimo, utilizando parámetros de la distribución de Laplace para controlar la progresión. Este programador se utiliza comúnmente en flujos de trabajo de muestreo personalizados para definir el programa de ruido de los modelos de difusión.
 
 ## Entradas

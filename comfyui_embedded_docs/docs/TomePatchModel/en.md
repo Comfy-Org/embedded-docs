@@ -1,3 +1,5 @@
+# TomePatchModel
+
 The TomePatchModel node applies Token Merging (ToMe) to a diffusion model to reduce computational requirements during inference. It works by selectively merging similar tokens in the attention mechanism, allowing the model to process fewer tokens while maintaining image quality. This technique helps speed up generation without significant quality loss.
 
 ## Inputs

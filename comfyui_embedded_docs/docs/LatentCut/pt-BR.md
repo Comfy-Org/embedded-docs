@@ -1,3 +1,5 @@
+# LatentCut
+
 O nó LatentCut extrai uma seção específica de amostras latentes ao longo de uma dimensão escolhida. Ele permite recortar uma parte da representação latente especificando a dimensão (x, y ou t), a posição inicial e a quantidade a ser extraída. O nó lida com indexação positiva e negativa e ajusta automaticamente a quantidade de extração para permanecer dentro dos limites disponíveis.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# FeatherMask
+
 El nodo `FeatherMask` aplica un efecto de difuminado en los bordes de una máscara determinada, suavizando la transición de sus bordes al ajustar su opacidad según distancias especificadas desde cada borde. Esto crea un efecto de borde más suave y difuminado.
 
 ## Entradas

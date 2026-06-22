@@ -1,4 +1,4 @@
-# Apply SeedVR2 Conditioning
+# SeedVR2Conditioning
 
 Bu düğüm, SeedVR2 modeliyle kullanılmak üzere bir VAE gizil uzayından (latent) pozitif ve negatif koşullandırma (conditioning) oluşturur. Görüntü veya video oluşturma sürecini yönlendiren koşullandırma verilerini hazırlar.
 

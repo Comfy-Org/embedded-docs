@@ -1,3 +1,5 @@
+# Görüntüleri Toplu İşle
+
 `ImageBatch` düğümü, iki görüntüyü tek bir toplu işte birleştirmek için tasarlanmıştır. Görüntülerin boyutları eşleşmezse, birleştirmeden önce ikinci görüntüyü otomatik olarak birinci görüntünün boyutlarına uyacak şekilde yeniden ölçeklendirir.
 
 ## Girişler

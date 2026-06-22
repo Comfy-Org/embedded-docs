@@ -1,3 +1,5 @@
+# Porter-Duff Görüntü Birleştirme
+
 PorterDuffImageComposite düğümü, Porter-Duff birleştirme operatörlerini kullanarak görüntü birleştirme işlemi gerçekleştirmek için tasarlanmıştır. Kaynak ve hedef görüntülerin çeşitli karıştırma modlarına göre birleştirilmesine olanak tanır; böylece görüntü saydamlığını değiştirerek ve görüntüleri yaratıcı şekillerde üst üste bindirerek karmaşık görsel efektler oluşturulmasını sağlar.
 
 ## Girişler

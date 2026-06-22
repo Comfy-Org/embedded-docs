@@ -1,3 +1,5 @@
+# Plot Loss Graph
+
 The LossGraphNode creates a visual graph of training loss values over time and displays it as a preview image. It takes loss data from training processes and generates a line chart showing how the loss changes across training steps. The resulting graph includes axis labels and min/max loss values.
 
 ## Inputs

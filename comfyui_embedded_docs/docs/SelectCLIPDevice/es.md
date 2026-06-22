@@ -1,3 +1,5 @@
+# Seleccionar Dispositivo CLIP
+
 ## Descripción general
 
 El nodo Seleccionar Dispositivo CLIP permite elegir en qué dispositivo (CPU o una GPU específica) se ejecuta el codificador de texto CLIP. Por defecto, el dispositivo es asignado por el cargador del modelo, pero puedes sobrescribirlo para usar la CPU o una GPU en particular. Si el dispositivo solicitado no existe en tu máquina, el nodo simplemente pasa el CLIP sin cambios y registra un mensaje en lugar de generar un error.

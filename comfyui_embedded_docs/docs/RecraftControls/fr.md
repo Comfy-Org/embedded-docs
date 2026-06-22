@@ -1,3 +1,5 @@
+# Contrôles Recraft
+
 Voici la traduction en français de la documentation, en respectant vos règles :
 
 Crée des contrôles Recraft pour personnaliser la génération Recraft. Ce nœud vous permet de configurer les paramètres de couleur qui seront utilisés lors du processus de génération d'image Recraft.

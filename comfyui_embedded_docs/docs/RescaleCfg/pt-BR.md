@@ -1,3 +1,5 @@
+# RescaleCFG
+
 O nó RescaleCFG foi projetado para ajustar as escalas de condicionamento e não condicionamento da saída de um modelo com base em um multiplicador especificado, visando alcançar um processo de geração mais equilibrado e controlado. Ele opera redimensionando a saída do modelo para modificar a influência dos componentes condicionados e não condicionados, potencialmente melhorando o desempenho do modelo ou a qualidade da saída.
 
 ## Entradas

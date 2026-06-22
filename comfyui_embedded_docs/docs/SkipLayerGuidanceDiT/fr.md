@@ -1,3 +1,5 @@
+# SkipLayerGuidanceDiT
+
 Améliore le guidage vers une structure détaillée en utilisant un autre ensemble de CFG négatif avec des couches ignorées. Cette version générique de SkipLayerGuidance peut être utilisée sur tous les modèles DiT et s'inspire de l'Attention Guidée Perturbée. L'implémentation expérimentale originale a été créée pour SD3.
 
 ## Entrées

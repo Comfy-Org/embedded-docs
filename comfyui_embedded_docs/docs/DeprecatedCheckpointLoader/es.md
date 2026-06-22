@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 El nodo CheckpointLoader está diseñado para operaciones de carga avanzadas, específicamente para cargar puntos de control de modelos junto con sus configuraciones. Facilita la recuperación de los componentes del modelo necesarios para inicializar y ejecutar modelos generativos, incluyendo configuraciones y puntos de control desde directorios especificados.
 
 ## Entradas

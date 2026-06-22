@@ -1,3 +1,5 @@
+# CLIPAdd
+
 Le nœud CLIPAdd combine deux modèles CLIP en fusionnant leurs correctifs clés. Il crée une copie du premier modèle CLIP, puis ajoute la plupart des correctifs clés du second modèle, à l'exception des identifiants de position et des paramètres d'échelle logitique. Cela permet de mélanger les caractéristiques de différents modèles CLIP tout en préservant la structure du premier modèle.
 
 ## Entrées

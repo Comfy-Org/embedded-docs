@@ -1,3 +1,5 @@
+# Hunyuan3Dv2Conditioning
+
 O nó Hunyuan3Dv2Conditioning processa a saída do CLIP vision para gerar dados de condicionamento para modelos 3D. Ele extrai os embeddings do último estado oculto da saída visual e cria pares de condicionamento positivo e negativo. O condicionamento positivo utiliza os embeddings reais, enquanto o condicionamento negativo utiliza embeddings com valor zero, de mesma forma.
 
 ## Entradas

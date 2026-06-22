@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 Le nœud GeminiNanoBanana2 génère ou modifie des images à l'aide du modèle Gemini de Google Vertex AI. Il fonctionne en envoyant une invite textuelle, accompagnée d'images ou de fichiers de référence facultatifs, à l'API, puis retourne l'image générée et tout texte d'accompagnement.
 
 ## Entrées

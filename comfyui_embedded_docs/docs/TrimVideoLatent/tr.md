@@ -1,3 +1,5 @@
+# VideoGizliDeğişkeniniKırp
+
 TrimVideoLatent düğümü, bir video gizli temsilinin başındaki kareleri kaldırır. Bir gizli video örneği alır ve başlangıçtan itibaren belirtilen sayıda kareyi keserek videonun kalan kısmını döndürür. Bu, ilk kareleri kaldırarak video dizilerini kısaltmanıza olanak tanır.
 
 ## Girişler

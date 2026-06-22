@@ -1,3 +1,5 @@
+# Guía de Atención Normalizada
+
 El nodo NAGuidance aplica Guía de Atención Normalizada a un modelo. Esta técnica permite el uso de indicaciones negativas con modelos destilados o rápidos modificando el mecanismo de atención del modelo durante el proceso de muestreo para dirigir la generación lejos de conceptos no deseados.
 
 ## Entradas

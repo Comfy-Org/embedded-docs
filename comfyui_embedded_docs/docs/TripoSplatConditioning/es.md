@@ -1,4 +1,4 @@
-# Acondicionamiento TripoSplat
+# Condicionamiento TripoSplat
 
 Este nodo codifica una imagen de entrada utilizando DINOv3 y el VAE Flux2 para crear datos de acondicionamiento positivo y negativo para el modelo TripoSplat. También genera un objetivo de ruido de tamaño fijo (latente más datos de cámara) que sirve como punto de partida para el KSampler.
 

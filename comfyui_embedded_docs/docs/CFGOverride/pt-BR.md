@@ -1,4 +1,4 @@
-# Substituição de CFG
+# Substituir CFG
 
 O nó Substituição de CFG permite definir um valor fixo de escala CFG (Orientação Livre de Classificador) para um intervalo específico do processo de amostragem, definido como uma porcentagem do total de etapas. Quando vários nós de Substituição de CFG estão conectados, o mais próximo do amostrador na cadeia tem prioridade para intervalos sobrepostos.
 

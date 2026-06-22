@@ -1,3 +1,5 @@
+# Opération d'Affûtage Latent
+
 Le nœud LatentOperationSharpen applique un effet d'accentuation aux représentations latentes à l'aide d'un noyau gaussien. Il fonctionne en normalisant les données latentes, en appliquant une convolution avec un noyau d'accentuation personnalisé, puis en restaurant la luminance d'origine. Cela améliore les détails et les contours dans la représentation de l'espace latent.
 
 ## Entrées

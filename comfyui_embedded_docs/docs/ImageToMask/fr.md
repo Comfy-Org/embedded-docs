@@ -1,3 +1,5 @@
+# Convertir Image en Masque
+
 Le nœud ImageToMask est conçu pour convertir une image en masque en fonction d'un canal de couleur spécifié. Il permet d'extraire des couches de masque correspondant aux canaux rouge, vert, bleu ou alpha d'une image, facilitant les opérations nécessitant un masquage ou un traitement spécifique à un canal.
 
 ## Entrées

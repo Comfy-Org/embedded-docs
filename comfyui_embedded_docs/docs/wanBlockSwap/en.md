@@ -1,3 +1,5 @@
+# wanBlockSwap
+
 This node is deprecated and serves no function. It accepts a model as input and returns the same model unchanged. The description "NOP" indicates it performs no operation.
 
 ## Inputs

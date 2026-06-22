@@ -1,3 +1,5 @@
+# ÖrnekleyiciDPMPP_SDE
+
 SamplerDPMPP_SDE düğümü, örnekleme sürecinde kullanılmak üzere bir DPM++ SDE (Stokastik Diferansiyel Denklem) örnekleyicisi oluşturur. Bu örnekleyici, yapılandırılabilir gürültü parametreleri ve cihaz seçimi ile stokastik bir örnekleme yöntemi sağlar. Örnekleme hattında kullanılabilecek bir örnekleyici nesnesi döndürür.
 
 ## Girişler

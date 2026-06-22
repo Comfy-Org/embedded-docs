@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة ComfyUI
+# Stability AI صورة Stable Diffusion 3.5
 
 هذه الوثيقة تم إنشاؤها بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityStableImageSD_3_5Node/en.md)
 

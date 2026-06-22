@@ -1,3 +1,5 @@
+# Définir les Images Clés de Crochet
+
 Le nœud Set Hook Keyframes vous permet d'appliquer une planification d'images clés à des groupes de hooks existants. Il prend un groupe de hooks et applique éventuellement des informations de temporisation d'images clés pour contrôler le moment d'exécution des différents hooks pendant le processus de génération. Lorsque des images clés sont fournies, le nœud clone le groupe de hooks et définit la temporisation des images clés sur tous les hooks du groupe.
 
 ## Entrées

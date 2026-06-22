@@ -1,3 +1,5 @@
+# Obtenir les composants vidéo
+
 Le nœud **Obtenir les composants vidéo** extrait tous les éléments principaux d'un fichier vidéo. Il sépare la vidéo en images individuelles, extrait la piste audio et fournit les informations de fréquence d'images de la vidéo. Cela vous permet de travailler avec chaque composant de manière indépendante pour un traitement ou une analyse ultérieure.
 
 ## Entrées

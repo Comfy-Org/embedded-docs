@@ -1,3 +1,5 @@
+# Kontrol Noktası Yükle
+
 ## Genel Bakış
 
 Bir difüzyon modeli kontrol noktası (checkpoint) dosyasını yükler ve üç temel bileşene ayırır: gizli değişkenleri (latent) gürültüden arındırmak için kullanılan ana model, CLIP metin kodlayıcı ve VAE görüntü kodlayıcı/kod çözücü. Bu düğüm, `ComfyUI/models/checkpoints` klasöründeki ve `extra_model_paths.yaml` dosyanızda yapılandırılmış ek yollardaki tüm model dosyalarını otomatik olarak algılar.

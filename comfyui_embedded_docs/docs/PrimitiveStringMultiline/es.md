@@ -1,3 +1,5 @@
+# Cadena (Multilínea)
+
 El nodo `PrimitiveStringMultiline` proporciona un campo de entrada de texto multilínea para ingresar y pasar valores de cadena a través de tu flujo de trabajo. Acepta entrada de texto con múltiples líneas y genera el mismo valor de cadena sin cambios. Este nodo es útil cuando necesitas ingresar contenido de texto más largo o texto formateado que abarca varias líneas.
 
 ## Entradas

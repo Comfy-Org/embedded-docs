@@ -1,3 +1,5 @@
+# CondicionamentoDefinirÁreaPercentualVídeo
+
 O nó ConditioningSetAreaPercentageVideo modifica os dados de condicionamento definindo uma área específica e uma região temporal para a geração de vídeo. Ele permite definir a posição, o tamanho e a duração da área onde o condicionamento será aplicado, usando valores percentuais relativos às dimensões gerais. Isso é útil para focar a geração em partes específicas de uma sequência de vídeo.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# Genel Bakış
+# MoGe Panorama Çıkarımı
 
 Bu düğüm, eşdikdörtgen panorama görüntülerinde derinlik tahmini gerçekleştirir. Panaromayı 12 perspektif görüntüye bölerek, her bir görüntü üzerinde MoGe derinlik tahmin modelini çalıştırır ve ardından sonuçları orijinal panorama için tek ve eksiksiz bir derinlik haritasında birleştirir.
 

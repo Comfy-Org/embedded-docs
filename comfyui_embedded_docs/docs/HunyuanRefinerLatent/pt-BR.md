@@ -1,3 +1,5 @@
+# HunyuanRefinerLatent
+
 O nó HunyuanRefinerLatent processa entradas de condicionamento e latentes para operações de refinamento. Ele aplica aumento de ruído tanto no condicionamento positivo quanto no negativo, incorporando dados de imagem latente, e gera uma nova saída latente com dimensões específicas para processamento adicional.
 
 ## Entradas

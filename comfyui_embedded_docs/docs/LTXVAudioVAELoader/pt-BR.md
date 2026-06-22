@@ -1,3 +1,5 @@
+# LTXV Carregar Áudio VAE
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAELoader/en.md)
 
 O nó Carregador de VAE de Áudio LTXV carrega um modelo de Autoencoder Variacional (VAE) de áudio pré-treinado a partir de um arquivo de checkpoint. Ele lê o checkpoint especificado, carrega seus pesos e metadados, e prepara o modelo para uso em fluxos de trabalho de geração ou processamento de áudio no ComfyUI.

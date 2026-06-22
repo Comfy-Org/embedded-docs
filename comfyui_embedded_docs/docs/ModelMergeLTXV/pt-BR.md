@@ -1,3 +1,5 @@
+# ModelMergeLTXV
+
 O nó ModelMergeLTXV realiza operações avançadas de mesclagem de modelos projetadas especificamente para arquiteturas de modelos LTXV. Ele permite combinar dois modelos diferentes ajustando os pesos de interpolação para vários componentes do modelo, incluindo blocos transformadores, camadas de projeção e outros módulos especializados.
 
 ## Entradas

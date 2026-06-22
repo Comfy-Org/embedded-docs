@@ -1,3 +1,5 @@
+# Normalizar Início do Latent de Vídeo
+
 Este nó ajusta os primeiros quadros de um vídeo latente para que se assemelhem mais aos quadros subsequentes. Ele calcula a média e a variação de um conjunto de quadros de referência posteriores no vídeo e aplica essas mesmas características aos quadros iniciais. Isso ajuda a criar uma transição visual mais suave e consistente no início de um vídeo.
 
 ## Entradas

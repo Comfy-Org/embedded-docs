@@ -1,3 +1,5 @@
+# Flotante
+
 El nodo `PrimitiveFloat` crea un valor numérico de punto flotante que se puede utilizar en su flujo de trabajo. Toma una única entrada numérica y genera ese mismo valor, lo que le permite definir y pasar valores flotantes entre diferentes nodos en su pipeline de ComfyUI.
 
 ## Entradas

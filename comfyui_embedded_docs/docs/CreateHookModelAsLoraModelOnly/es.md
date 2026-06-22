@@ -1,3 +1,5 @@
+# Crear Hook Model como LoRA (MO)
+
 Este nodo crea un hook que aplica un modelo LoRA (Adaptación de Bajo Rango) para modificar únicamente el componente de modelo de una red neuronal. Carga un archivo checkpoint y lo aplica con una intensidad específica al modelo, dejando el componente CLIP sin cambios. Este es un nodo experimental que extiende la funcionalidad de la clase base CreateHookModelAsLora.
 
 ## Entradas

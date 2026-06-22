@@ -1,3 +1,5 @@
+# Recraft Image Inpainting
+
 Ce nœud modifie des zones spécifiques d'une image en fonction d'une invite textuelle et d'un masque. Il utilise l'API Recraft pour éditer intelligemment uniquement les régions masquées tout en conservant le reste de l'image inchangé.
 
 ## Entrées

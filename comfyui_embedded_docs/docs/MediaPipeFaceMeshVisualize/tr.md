@@ -1,3 +1,5 @@
+# MediaPipe Yüz Ağı Görselleştir
+
 ## Genel Bakış
 
 Giriş görüntüsü üzerine yüz işaret noktaları ve bağlantı çizgileri (bir yüz ağı) çizer. Bu düğüm, bir yüz algılama düğümü tarafından üretilen işaret verilerini kullanarak gözler, burun, ağız ve yüz çevresi gibi algılanan yüz özelliklerini görselleştirir.

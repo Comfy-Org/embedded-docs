@@ -1,3 +1,5 @@
+# EmptyAceStepLatentAudio
+
 Le nœud EmptyAceStepLatentAudio crée des échantillons audio latents vides d'une durée spécifiée. Il génère un lot de latents audio silencieux remplis de zéros, dont la longueur est calculée en fonction des secondes d'entrée et des paramètres de traitement audio. Ce nœud est utile pour initialiser des workflows de traitement audio nécessitant des représentations latentes.
 
 ## Entrées

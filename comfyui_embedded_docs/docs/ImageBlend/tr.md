@@ -1,3 +1,5 @@
+# Görüntü Karıştırma
+
 `ImageBlend` düğümü, belirtilen bir karıştırma modu ve karıştırma faktörüne göre iki görüntüyü birbirine karıştırmak için tasarlanmıştır. Normal, çarpma, ekran, kaplama, yumuşak ışık ve fark gibi çeşitli karıştırma modlarını destekleyerek çok yönlü görüntü işleme ve birleştirme tekniklerine olanak tanır. Bu düğüm, iki görüntü katmanı arasındaki görsel etkileşimi ayarlayarak bileşik görüntüler oluşturmak için gereklidir.
 
 ## Girişler

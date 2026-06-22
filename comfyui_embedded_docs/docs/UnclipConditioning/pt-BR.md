@@ -1,3 +1,5 @@
+# unCLIPConditioning
+
 Este nó foi projetado para integrar as saídas de visão do CLIP no processo de condicionamento, ajustando a influência dessas saídas com base em parâmetros especificados de intensidade e aumento de ruído. Ele enriquece o condicionamento com contexto visual, aprimorando o processo de geração.
 
 ## Entradas

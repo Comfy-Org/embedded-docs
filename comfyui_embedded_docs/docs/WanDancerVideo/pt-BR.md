@@ -1,3 +1,5 @@
+# WanDancerVideo
+
 O nó WanDancerVideo prepara dados de condicionamento e um tensor latente vazio para geração de vídeo com o modelo WanDancer. Ele combina condicionamentos positivo e negativo com entradas opcionais, como imagem inicial, máscara, embeddings de visão CLIP e recursos de áudio para controlar o vídeo gerado.
 
 ## Entradas

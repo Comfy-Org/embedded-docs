@@ -1,3 +1,5 @@
+# CombineHooksEight
+
 El nodo Combinar Hooks [8] fusiona hasta ocho grupos de hooks diferentes en un único grupo combinado. Toma múltiples entradas de hooks y las combina utilizando la funcionalidad de combinación de hooks de ComfyUI. Esto permite consolidar múltiples configuraciones de hooks para un procesamiento optimizado en flujos de trabajo avanzados.
 
 ## Entradas

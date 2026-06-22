@@ -1,3 +1,5 @@
+# Geração de Vídeo a partir de Imagem Vidu2
+
 O nó Vidu2 de Geração de Vídeo a partir de Imagem cria uma sequência de vídeo a partir de uma única imagem de entrada. Ele utiliza um modelo Vidu2 especificado para animar a cena com base em um prompt de texto opcional, controlando a duração, resolução e intensidade do movimento do vídeo.
 
 ## Entradas

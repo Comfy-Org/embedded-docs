@@ -1,3 +1,5 @@
+# FreeU_V2
+
 Le nœud FreeU_V2 améliore la qualité de génération d'images en appliquant des modifications basées sur les fréquences à l'architecture U-Net d'un modèle de diffusion. Il utilise des facteurs d'échelle configurables pour ajuster les canaux de caractéristiques dans différents blocs, améliorant ainsi la sortie sans nécessiter d'entraînement supplémentaire.
 
 ## Entrées

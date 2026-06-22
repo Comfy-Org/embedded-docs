@@ -1,3 +1,5 @@
+# FreeU
+
 Voici la traduction de la documentation du nœud FreeU :
 
 Le nœud FreeU applique des modifications dans le domaine fréquentiel aux blocs de sortie d'un modèle afin d'améliorer la qualité de génération d'images. Il fonctionne en mettant à l'échelle différents groupes de canaux et en appliquant un filtrage de Fourier à des cartes de caractéristiques spécifiques, permettant un contrôle fin du comportement du modèle pendant le processus de génération.

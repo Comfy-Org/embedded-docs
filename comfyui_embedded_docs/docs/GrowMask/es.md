@@ -1,3 +1,5 @@
+# GrowMask
+
 El nodo `GrowMask` está diseñado para modificar el tamaño de una máscara dada, ya sea expandiéndola o contrayéndola, con la opción de aplicar un efecto de biselado en las esquinas. Esta funcionalidad es crucial para ajustar dinámicamente los límites de las máscaras en tareas de procesamiento de imágenes, permitiendo un control más flexible y preciso sobre el área de interés.
 
 ## Entradas

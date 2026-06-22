@@ -1,3 +1,5 @@
+# WanHuMoImageToVideo
+
 O nó WanHuImagemParaVideo converte imagens em sequências de vídeo gerando representações latentes para os quadros do vídeo. Ele processa entradas de condicionamento e pode incorporar imagens de referência e embeddings de áudio para influenciar a geração do vídeo. O nó produz dados de condicionamento modificados e representações latentes adequadas para síntese de vídeo.
 
 ## Entradas

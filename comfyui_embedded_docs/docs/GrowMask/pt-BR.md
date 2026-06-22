@@ -1,3 +1,5 @@
+# Expandir Máscara
+
 O nó `GrowMask` foi projetado para modificar o tamanho de uma máscara fornecida, expandindo-a ou contraindo-a, além de aplicar opcionalmente um efeito suavizado nos cantos. Essa funcionalidade é essencial para ajustar dinamicamente os limites da máscara em tarefas de processamento de imagens, permitindo um controle mais flexível e preciso sobre a área de interesse.
 
 ## Entradas

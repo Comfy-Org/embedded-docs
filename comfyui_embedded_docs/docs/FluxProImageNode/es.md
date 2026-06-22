@@ -1,3 +1,5 @@
+# FluxProImageNode
+
 Genera imágenes de forma síncrona basándose en el prompt y la resolución. Este nodo crea imágenes utilizando el modelo Flux 1.1 Pro enviando solicitudes a un endpoint de API y esperando la respuesta completa antes de devolver la imagen generada.
 
 ## Entradas

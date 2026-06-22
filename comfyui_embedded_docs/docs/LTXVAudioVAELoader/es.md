@@ -1,3 +1,5 @@
+# Cargador de LTXV Audio VAE
+
 El nodo Cargador de VAE de Audio LTXV carga un modelo de Autoencoder Variacional (VAE) de audio preentrenado desde un archivo de punto de control. Lee el punto de control especificado, carga sus pesos y metadatos, y prepara el modelo para su uso en flujos de trabajo de generación o procesamiento de audio dentro de ComfyUI.
 
 ## Entradas

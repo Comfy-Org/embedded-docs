@@ -1,3 +1,5 @@
+# ModelMergeBlocks
+
 ModelMergeBlocks is designed for advanced model merging operations, allowing for the integration of two models with customizable blending ratios for different parts of the models. This node facilitates the creation of hybrid models by selectively merging components from two source models based on specified parameters.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ModelMergeSD35_Large
+
 The ModelMergeSD35_Large node allows you to blend two Stable Diffusion 3.5 Large models together by adjusting the influence of different model components. It provides precise control over how much each part of the second model contributes to the final merged model, from embedding layers to joint blocks and final layers.
 
 ## Inputs

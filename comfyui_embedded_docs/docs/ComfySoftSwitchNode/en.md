@@ -1,3 +1,5 @@
+# ComfySoftSwitchNode
+
 The Soft Switch node selects between two possible input values based on a boolean condition. It outputs the value from the `on_true` input when the `switch` is true, and the value from the `on_false` input when the `switch` is false. This node is designed to be lazy, meaning it only evaluates the input that is needed based on the switch state.
 
 ## Inputs

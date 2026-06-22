@@ -1,3 +1,5 @@
+# Tripo P1 : Texte vers Modèle
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI, en respectant les règles établies :
 
 ---

@@ -1,4 +1,4 @@
-# Descripción general
+# VOIDWarpedNoise
 
 Genera ruido con correlación temporal para la segunda pasada del proceso de refinamiento de video VOID. Toma el video de salida de la Pasada 1 y distorsiona el ruido gaussiano siguiendo los vectores de flujo óptico, creando ruido que se mueve de forma coherente con el contenido del video. Este ruido distorsionado se utiliza como latente inicial para la Pasada 2, lo que mejora la consistencia temporal en el resultado final.
 

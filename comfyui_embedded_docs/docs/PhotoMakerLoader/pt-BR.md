@@ -1,3 +1,5 @@
+# PhotoMakerLoader
+
 O nó PhotoMakerLoader carrega um modelo PhotoMaker a partir dos arquivos de modelo disponíveis. Ele lê o arquivo de modelo especificado e prepara o codificador de ID do PhotoMaker para uso em tarefas de geração de imagens baseadas em identidade. Este nó é marcado como experimental e destina-se a fins de teste.
 
 ## Entradas

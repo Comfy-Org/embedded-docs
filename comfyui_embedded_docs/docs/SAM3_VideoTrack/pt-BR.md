@@ -1,4 +1,4 @@
-# Visão Geral
+# SAM3 Video Track
 
 Rastreie objetos entre quadros de vídeo usando o rastreador baseado em memória do SAM3. Este nó processa uma sequência de quadros de vídeo e mantém as identidades dos objetos entre os quadros, usando máscaras iniciais ou prompts de texto para definir o que rastrear.
 

@@ -1,3 +1,5 @@
+# HunyuanImageToVideo
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/en.md)
 
 Le nœud HunyuanImageToVideo convertit des images en représentations latentes vidéo à l'aide du modèle vidéo Hunyuan. Il prend en entrée des conditionnements et des images de départ optionnelles pour générer des latents vidéo pouvant être traités ultérieurement par des modèles de génération vidéo. Le nœud prend en charge différents types de guidage pour contrôler l'influence de l'image de départ sur le processus de génération vidéo.

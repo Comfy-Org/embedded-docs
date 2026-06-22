@@ -1,3 +1,5 @@
+# Répéter Lot Latent
+
 Le nœud RepeatLatentBatch est conçu pour répliquer un lot donné de représentations latentes un nombre spécifié de fois, en incluant potentiellement des données supplémentaires comme des masques de bruit et des indices de lot. Cette fonctionnalité est cruciale pour les opérations nécessitant plusieurs instances des mêmes données latentes, telles que l'augmentation de données ou des tâches génératives spécifiques.
 
 ## Entrées

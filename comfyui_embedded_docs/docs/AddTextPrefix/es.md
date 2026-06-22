@@ -1,3 +1,5 @@
+# Agregar prefijo de texto
+
 El nodo **Añadir Prefijo de Texto** modifica un texto añadiendo una cadena especificada al inicio de cada texto de entrada. Toma el texto y un prefijo como entrada, y devuelve el resultado combinado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# SamplerCustomAdvanced
+
 The SamplerCustomAdvanced node performs advanced latent space sampling using custom noise, guidance, and sampling configurations. It processes a latent image through a guided sampling process with customizable noise generation and sigma schedules, producing both the final sampled output and a denoised version when available.
 
 ## Inputs

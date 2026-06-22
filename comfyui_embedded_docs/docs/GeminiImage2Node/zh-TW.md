@@ -1,4 +1,4 @@
-# GeminiImage2Node
+# Nano Banana Pro（Google Gemini Image）
 
 GeminiImage2Node 節點使用 Google 的 Vertex AI Gemini 模型生成或編輯圖像。它將文字提示和可選的參考圖像或檔案發送到 API，並返回生成的圖像和/或文字描述。
 

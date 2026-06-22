@@ -1,3 +1,5 @@
+# Extração por Regex
+
 O nó RegexExtract busca padrões em texto usando expressões regulares. Ele pode encontrar a primeira correspondência, todas as correspondências, grupos específicos das correspondências ou todos os grupos em múltiplas correspondências. O nó suporta várias flags de regex para sensibilidade a maiúsculas/minúsculas, correspondência multilinha e comportamento dotall.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Converter Imagem em Máscara
+
 O nó ImageToMask foi projetado para converter uma imagem em uma máscara com base em um canal de cor especificado. Ele permite a extração de camadas de máscara correspondentes aos canais vermelho, verde, azul ou alfa de uma imagem, facilitando operações que exigem mascaramento ou processamento específico por canal.
 
 ## Entradas

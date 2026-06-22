@@ -1,3 +1,5 @@
+# CFGZeroStar
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGZeroStar/en.md)
 
 O nó CFGZeroStar aplica uma técnica especializada de escalonamento de orientação a modelos de difusão. Ele modifica o processo de orientação livre de classificador (classifier-free guidance) calculando um fator de escala otimizado com base na diferença entre as previsões condicionais e incondicionais. Essa abordagem ajusta a saída final para fornecer maior controle sobre o processo de geração, mantendo a estabilidade do modelo.

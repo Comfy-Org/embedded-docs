@@ -1,3 +1,5 @@
+# ModelSamplingContinuousV
+
 Le nœud **ModelSamplingContinuousV** modifie le comportement d'échantillonnage d'un modèle en appliquant des paramètres d'échantillonnage continus par prédiction V. Il crée un clone du modèle d'entrée et le configure avec des plages de sigma personnalisées pour un contrôle avancé de l'échantillonnage. Cela permet aux utilisateurs d'affiner le processus d'échantillonnage avec des valeurs de sigma minimales et maximales spécifiques.
 
 ## Entrées

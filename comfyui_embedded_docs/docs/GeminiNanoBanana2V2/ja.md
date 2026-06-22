@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 このドキュメントは AI によって生成されました。誤りや改善の提案がありましたら、ぜひご協力ください！ [GitHub で編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/en.md)
 
 ## 概要

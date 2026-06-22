@@ -1,3 +1,5 @@
+# Stable Cascade_超分辨率ControlNet
+
 StableCascade_SuperResolutionControlnet 节点用于准备 Stable Cascade 超分辨率处理的输入。它接收输入图像，使用 VAE 对其进行编码以生成 controlnet 输入，同时为 Stable Cascade 管道的阶段 C 和阶段 B 生成占位潜空间表示。
 
 ## 输入

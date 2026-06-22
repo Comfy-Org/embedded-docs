@@ -1,4 +1,4 @@
-# ترجمة وثيقة DiffusersLoader
+# تحميل Diffusers
 
 عقدة **DiffusersLoader** تقوم بتحميل النماذج المُدرّبة مسبقًا من تنسيق diffusers. تبحث عن أدلة نماذج diffusers الصالحة التي تحتوي على ملف `model_index.json` وتحمّلها كمكونات MODEL وCLIP وVAE لاستخدامها في خط أنابيب المعالجة. تنتمي هذه العقدة إلى فئة المحملات المُهملة وتوفر توافقًا مع نماذج diffusers من Hugging Face.
 

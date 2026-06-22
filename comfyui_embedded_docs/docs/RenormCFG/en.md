@@ -1,3 +1,5 @@
+# RenormCFG
+
 The RenormCFG node modifies the classifier-free guidance (CFG) process in diffusion models by applying conditional scaling and normalization. It adjusts the denoising process based on specified timestep thresholds and renormalization factors to control the influence of conditional versus unconditional predictions during image generation.
 
 ## Inputs

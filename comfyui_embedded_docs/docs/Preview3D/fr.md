@@ -1,3 +1,5 @@
+# Aperçu 3D
+
 Voici la traduction en français de la documentation du nœud Preview3D :
 
 Le nœud Preview3D est principalement utilisé pour prévisualiser les sorties de modèles 3D. Ce nœud accepte deux entrées : l'une est le `camera_info` provenant du nœud Load3D, et l'autre est le chemin vers le fichier du modèle 3D. Le chemin du fichier modèle doit se trouver dans le dossier `ComfyUI/output`.

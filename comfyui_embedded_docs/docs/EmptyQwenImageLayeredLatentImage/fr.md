@@ -1,3 +1,5 @@
+# Qwen Image Layered latent vide
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Le nœud **Empty Qwen Image Layered Latent** crée une représentation latente multicouche vide destinée aux modèles d'image Qwen. Il génère un tenseur rempli de zéros, structuré avec un nombre spécifié de couches, une taille de lot et des dimensions spatiales. Cette représentation latente vide sert de point de départ pour les workflows ultérieurs de génération ou de manipulation d'images.

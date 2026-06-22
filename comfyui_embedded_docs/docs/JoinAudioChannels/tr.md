@@ -1,4 +1,4 @@
-# JoinAudioChannels Düğümü
+# Ses Kanallarını Birleştir
 
 JoinAudioChannels düğümü, iki ayrı mono ses girişini tek bir stereo ses çıkışında birleştirir. Bir sol kanal ve bir sağ kanal alır, örnekleme hızları ve uzunluklarının uyumlu olmasını sağlar ve bunları iki kanallı bir ses dalga formunda birleştirir.
 

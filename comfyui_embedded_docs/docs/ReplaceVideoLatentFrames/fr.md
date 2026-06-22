@@ -1,3 +1,5 @@
+# Remplacer les images latentes vidéo
+
 Voici la traduction en français de la documentation du nœud ReplaceVideoLatentFrames :
 
 Le nœud ReplaceVideoLatentFrames insère des images d'un latent vidéo source dans un latent vidéo de destination, à partir d'un index d'image spécifié. Si le latent source n'est pas fourni, le latent de destination est retourné inchangé. Le nœud gère l'indexation négative et émet un avertissement si les images sources ne tiennent pas dans la destination.

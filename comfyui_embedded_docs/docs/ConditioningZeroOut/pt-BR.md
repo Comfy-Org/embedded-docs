@@ -1,3 +1,5 @@
+# CondicionamentoZerar
+
 Este nó zera elementos específicos dentro da estrutura de dados de condicionamento, neutralizando efetivamente sua influência nas etapas de processamento subsequentes. Ele foi projetado para operações avançadas de condicionamento onde é necessária a manipulação direta da representação interna do condicionamento.
 
 ## Entradas

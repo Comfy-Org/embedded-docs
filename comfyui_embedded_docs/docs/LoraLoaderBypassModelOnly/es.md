@@ -1,3 +1,5 @@
+# Cargar LoRA (Bypass, Solo Modelo) (para depuración)
+
 Este nodo aplica una LoRA (Adaptación de Bajo Rango) a un modelo para modificar su comportamiento, pero solo afecta al componente del modelo en sí. Carga un archivo LoRA específico y ajusta los pesos del modelo según una intensidad determinada, dejando sin cambios otros componentes como el codificador de texto CLIP.
 
 ## Entradas

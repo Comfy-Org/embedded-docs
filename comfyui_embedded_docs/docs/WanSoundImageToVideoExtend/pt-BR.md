@@ -1,3 +1,5 @@
+# WanSoundImageToVideoExtend
+
 O nó WanSoundImageToVideoExtend estende um latente de vídeo existente gerando quadros adicionais, opcionalmente guiado por áudio, uma imagem de referência e um vídeo de controle. Ele recebe um latente de vídeo inicial e produz uma sequência de vídeo mais longa, usando as sugestões de condicionamento e pistas de áudio fornecidas para influenciar o novo conteúdo.
 
 ## Entradas

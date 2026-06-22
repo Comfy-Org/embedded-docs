@@ -1,3 +1,5 @@
+# LTXV Sesli Metin Kodlayıcı Yükleyici
+
 Bu düğüm, LTXV ses modeli için özel bir metin kodlayıcı yükler. Belirli bir metin kodlayıcı dosyasını bir kontrol noktası dosyasıyla birleştirerek, sesle ilgili metin koşullandırma görevleri için kullanılabilecek bir CLIP modeli oluşturur.
 
 ## Girişler

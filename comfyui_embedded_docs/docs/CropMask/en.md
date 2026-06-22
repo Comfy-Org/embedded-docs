@@ -1,3 +1,5 @@
+# Crop Mask
+
 The CropMask node is designed for cropping a specified area from a given mask. It allows users to define the region of interest by specifying coordinates and dimensions, effectively extracting a portion of the mask for further processing or analysis.
 
 ## Inputs

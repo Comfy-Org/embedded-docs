@@ -1,3 +1,5 @@
+# Guardar conjunto de imágenes en carpeta
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageDataSetToFolder/en.md)
 
 Este nodo guarda una lista de imágenes en una carpeta específica dentro del directorio de salida de ComfyUI. Toma múltiples imágenes como entrada y las escribe en disco con un prefijo de nombre de archivo personalizable.

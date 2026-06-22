@@ -1,4 +1,4 @@
-# Descripción General
+# Grok Image Edit
 
 Modifica una imagen existente basándose en un mensaje de texto. Este nodo envía tus imágenes y una descripción textual a la API de Grok, que edita las imágenes según tus instrucciones y devuelve el resultado.
 

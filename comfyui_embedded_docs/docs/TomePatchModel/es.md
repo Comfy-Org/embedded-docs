@@ -1,3 +1,5 @@
+# Modelo de Parche Tome
+
 El nodo TomePatchModel aplica Token Merging (ToMe) a un modelo de difusión para reducir los requisitos computacionales durante la inferencia. Funciona fusionando selectivamente tokens similares en el mecanismo de atención, lo que permite que el modelo procese menos tokens mientras mantiene la calidad de la imagen. Esta técnica ayuda a acelerar la generación sin una pérdida significativa de calidad.
 
 ## Entradas

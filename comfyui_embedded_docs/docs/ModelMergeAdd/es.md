@@ -1,3 +1,5 @@
+# ModeloFusionarAgregar
+
 El nodo ModelMergeAdd está diseñado para fusionar dos modelos añadiendo parches clave de un modelo a otro. Este proceso implica clonar el primer modelo y luego aplicar parches del segundo modelo, lo que permite combinar características o comportamientos de ambos modelos.
 
 ## Entradas

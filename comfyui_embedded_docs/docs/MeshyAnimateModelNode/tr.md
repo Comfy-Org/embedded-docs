@@ -1,3 +1,5 @@
+# Meshy: Modeli Canlandır
+
 Bu düğüm, Meshy hizmeti kullanılarak daha önce iskeletlendirilmiş (rig) bir 3D karakter modeline belirli bir animasyon uygular. Önceki bir iskeletlendirme işleminden alınan bir görev kimliğini (task ID) ve kütüphaneden istenen animasyonu seçmek için bir eylem kimliğini (action ID) alır. Düğüm daha sonra isteği işler ve animasyonlu modeli hem GLB hem de FBX dosya formatlarında döndürür.
 
 ## Girişler

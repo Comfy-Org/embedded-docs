@@ -1,3 +1,5 @@
+# Cargar conjunto de imágenes desde carpeta
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/en.md)
 
 Este nodo carga múltiples imágenes desde una subcarpeta específica dentro del directorio de entrada de ComfyUI. Escanea la carpeta seleccionada en busca de tipos de archivos de imagen comunes y los devuelve como una lista, lo que resulta útil para procesamiento por lotes o preparación de conjuntos de datos.

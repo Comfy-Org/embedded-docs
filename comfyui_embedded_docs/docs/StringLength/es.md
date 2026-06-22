@@ -1,3 +1,5 @@
+# Longitud
+
 El nodo StringLength calcula la cantidad de caracteres en una cadena de texto. Toma cualquier entrada de texto y devuelve el recuento total de caracteres, incluidos espacios y signos de puntuación. Esto es útil para medir la longitud del texto o validar los requisitos de tamaño de una cadena.
 
 ## Entradas

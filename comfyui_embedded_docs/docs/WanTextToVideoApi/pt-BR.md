@@ -1,3 +1,5 @@
+# Wan Texto para Vídeo
+
 O nó Wan Text to Video gera conteúdo de vídeo com base em descrições textuais. Ele utiliza modelos de IA para criar vídeos a partir de prompts e suporta diversos tamanhos de vídeo, durações e entradas de áudio opcionais. O nó pode gerar áudio automaticamente quando necessário e oferece opções para aprimoramento de prompt e marca d'água.
 
 ## Entradas

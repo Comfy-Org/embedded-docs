@@ -1,3 +1,5 @@
+# Égaliseur audio (3 bandes)
+
 Voici la traduction en français de la documentation du nœud Audio Equalizer (3-Band) :
 
 L'égaliseur audio (3 bandes) vous permet d'ajuster les fréquences graves, médiums et aiguës d'une forme d'onde audio. Il applique trois filtres distincts : un filtre passe-bas pour les graves, un filtre en cloche pour les médiums et un filtre passe-haut pour les aiguës. Chaque bande peut être contrôlée indépendamment avec des réglages de gain, de fréquence et de largeur de bande.

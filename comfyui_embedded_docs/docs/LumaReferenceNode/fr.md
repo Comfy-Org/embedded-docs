@@ -1,3 +1,5 @@
+# Référence Luma
+
 Ce nœud contient une image et une valeur de poids destinées à être utilisées avec le nœud Luma Generate Image. Il crée une chaîne de référence pouvant être transmise à d'autres nœuds Luma pour influencer la génération d'images. Le nœud peut soit démarrer une nouvelle chaîne de référence, soit s'ajouter à une chaîne existante.
 
 ## Entrées

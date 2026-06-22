@@ -1,3 +1,5 @@
+# Guía Adaptativa Proyectada
+
 El nodo APG (Adaptive Projected Guidance) modifica el proceso de muestreo ajustando cómo se aplica la guía durante la difusión. Separa el vector de guía en componentes paralelos y ortogonales con respecto a la salida condicional, lo que permite una generación de imágenes más controlada. El nodo proporciona parámetros para escalar la guía, normalizar su magnitud y aplicar momento para transiciones más suaves entre los pasos de difusión.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# RecraftStyleV3VectorIllustrationNode
+
 Bu belge, Recraft API ile kullanılmak üzere bir stil yapılandırır ve özellikle `vector_illustration` stilini seçer. Bu kategori içinde isteğe bağlı olarak daha spesifik bir alt stil seçmenize olanak tanır. Düğüm, diğer Recraft API düğümlerine aktarılabilen bir stil yapılandırma nesnesi çıktısı verir.
 
 ## Girişler

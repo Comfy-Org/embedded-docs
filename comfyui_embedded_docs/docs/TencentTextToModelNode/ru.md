@@ -1,3 +1,5 @@
+# Hunyuan3D: Текст в модель (Pro)
+
 Вот перевод документации на русский язык:
 
 Эта документация создана с помощью ИИ. Если вы нашли ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentTextToModelNode/en.md)

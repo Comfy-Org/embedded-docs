@@ -1,3 +1,5 @@
+# Empty Flux 2 Latent
+
 The EmptyFlux2LatentImage node creates a blank, empty latent representation. It generates a tensor filled with zeros, which serves as a starting point for the Flux model's denoising process. The dimensions of the latent are determined by the input width and height, scaled down by a factor of 16.
 
 ## Inputs

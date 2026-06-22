@@ -1,3 +1,5 @@
+# Luma UNI-1 Image
+
 Bu belge, Luma UNI-1 modelini kullanarak metin açıklamalarından görseller üretir. Bir metin istemi ve en boy oranı ile stil gibi isteğe bağlı ayarları alır, ardından bir görsel oluşturmak için Luma API'sine istek gönderir.
 
 ## Girişler

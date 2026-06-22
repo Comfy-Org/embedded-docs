@@ -1,3 +1,5 @@
+# OpenAI DALL·E 3
+
 Genera imágenes de forma síncrona a través del endpoint DALL·E 3 de OpenAI. Este nodo toma un prompt de texto y crea imágenes correspondientes utilizando el modelo DALL·E 3 de OpenAI, permitiéndote especificar la calidad, el estilo y las dimensiones de la imagen.
 
 ## Entradas

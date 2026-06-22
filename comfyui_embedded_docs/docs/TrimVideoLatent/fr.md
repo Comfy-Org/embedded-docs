@@ -1,3 +1,5 @@
+# TrimVideoLatent
+
 Le nœud TrimVideoLatent supprime les images du début d'une représentation vidéo latente. Il prend un échantillon vidéo latent et retire un nombre spécifié d'images depuis le début, renvoyant la partie restante de la vidéo. Cela permet de raccourcir les séquences vidéo en supprimant les premières images.
 
 ## Entrées

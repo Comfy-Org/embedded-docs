@@ -1,3 +1,5 @@
+# Recraft Arka Planı Değiştir
+
 Verilen bilgiye göre, bir önceki mesajda belirtilen çeviri kurallarına uygun olarak belgeyi Türkçeye çeviriyorum.
 
 Görüntünün arka planını, sağlanan isteme göre değiştirin. Bu düğüm, görüntüleriniz için metin açıklamanıza uygun yeni arka planlar oluşturmak üzere Recraft API'sini kullanarak ana konuyu korurken arka planı tamamen dönüştürmenize olanak tanır.

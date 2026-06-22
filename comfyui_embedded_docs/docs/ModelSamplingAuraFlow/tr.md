@@ -1,3 +1,5 @@
+# ModelÖrneklemeAuraFlow
+
 ModelSamplingAuraFlow düğümü, difüzyon modellerine özel bir örnekleme yapılandırması uygular ve özellikle AuraFlow model mimarileri için tasarlanmıştır. Örnekleme dağılımını ayarlayan bir kaydırma parametresi uygulayarak modelin örnekleme davranışını değiştirir. Bu düğüm, SD3 model örnekleme çerçevesinden türetilmiştir ve örnekleme süreci üzerinde hassas kontrol sağlar.
 
 ## Girişler

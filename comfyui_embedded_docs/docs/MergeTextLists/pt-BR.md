@@ -1,3 +1,5 @@
+# Mesclar Listas de Textos
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeTextLists/en.md)
 
 Este nó mescla múltiplas listas de texto em uma única lista combinada. Ele foi projetado para receber entradas de texto como listas e as concatena. O nó registra o número total de textos na lista mesclada.

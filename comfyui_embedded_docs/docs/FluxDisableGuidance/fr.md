@@ -1,3 +1,5 @@
+# FluxDisableGuidance
+
 Ce nœud désactive complètement la fonction d'intégration du guidage pour Flux et les modèles similaires. Il prend des données de conditionnement en entrée et supprime la composante de guidage en la définissant sur None, désactivant ainsi efficacement le conditionnement basé sur le guidage pour le processus de génération.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Guía Dual CFG
+
 El nodo DualCFGGuider crea un sistema de guía para muestreo de guía libre de clasificador dual. Combina dos entradas de condicionamiento positivo con una entrada de condicionamiento negativo, aplicando diferentes escalas de guía a cada par de condicionamiento para controlar la influencia de cada indicación en la salida generada.
 
 ## Entradas

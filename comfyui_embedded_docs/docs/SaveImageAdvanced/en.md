@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Save Image (Advanced)
 
 The **SaveImageAdvanced** node saves images to your ComfyUI output directory with advanced control over file format, bit depth, and color space. It supports saving as PNG or EXR files and can embed workflow metadata into the saved files.
 

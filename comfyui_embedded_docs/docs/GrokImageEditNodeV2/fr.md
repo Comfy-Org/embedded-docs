@@ -1,3 +1,5 @@
+# Grok Image Edit
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 ## Aperçu

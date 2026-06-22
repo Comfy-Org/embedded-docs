@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaSD3
+
 CLIPTextEncodeSD3 düğümü, birden fazla metin istemini farklı CLIP modelleri kullanarak kodlayarak Stable Diffusion 3 modelleri için metin girdilerini işler. Üç ayrı metin girdisini (`clip_g`, `clip_l` ve `t5xxl`) yönetir ve boş metin dolgusu için seçenekler sunar. Düğüm, farklı metin girdileri arasında uygun token hizalamasını sağlar ve SD3 üretim hatlarına uygun koşullandırma verileri döndürür.
 
 ## Girdiler

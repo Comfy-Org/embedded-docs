@@ -1,3 +1,5 @@
+# Görüntüyü Büyüt (Model kullanarak)
+
 Bu düğüm, belirtilen bir yükseltme modelini kullanarak görüntüleri yükseltmek için tasarlanmıştır. Görüntüyü uygun cihaza ayarlayarak, bellek kullanımını optimize ederek ve olası bellek taşması hatalarını önlemek için yükseltme modelini döşemeli bir şekilde uygulayarak yükseltme sürecini verimli bir şekilde yönetir.
 
 ## Girişler

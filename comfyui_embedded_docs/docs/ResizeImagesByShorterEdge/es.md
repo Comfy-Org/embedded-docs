@@ -1,3 +1,5 @@
+# Redimensionar imágenes por el borde más corto
+
 Este nodo redimensiona imágenes para que el borde más corto coincida con una longitud específica, manteniendo la relación de aspecto original. Calcula las nuevas dimensiones basándose en la longitud objetivo para el lado más corto y devuelve la imagen redimensionada.
 
 ## Entradas

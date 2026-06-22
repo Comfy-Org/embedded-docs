@@ -1,3 +1,5 @@
+# SamplerDPMPP_SDE
+
 O nó SamplerDPMPP_SDE cria um amostrador DPM++ SDE (Equação Diferencial Estocástica) para uso no processo de amostragem. Este amostrador fornece um método de amostragem estocástica com parâmetros de ruído configuráveis e seleção de dispositivo. Ele retorna um objeto amostrador que pode ser utilizado no pipeline de amostragem.
 
 ## Entradas

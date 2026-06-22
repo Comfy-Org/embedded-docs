@@ -1,3 +1,5 @@
+# SvdImg2vidConditioning
+
 Ce nœud est conçu pour générer des données de conditionnement pour les tâches de génération vidéo, spécifiquement adapté à une utilisation avec les modèles SVD_img2vid. Il prend diverses entrées, notamment des images initiales, des paramètres vidéo et un modèle VAE, pour produire des données de conditionnement pouvant être utilisées pour guider la génération des images vidéo.
 
 ## Entrées

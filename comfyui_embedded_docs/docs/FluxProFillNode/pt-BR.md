@@ -1,3 +1,5 @@
+# Flux.1 Preencher Imagem
+
 Preenche áreas de uma imagem com base em uma máscara e um prompt. Este nó utiliza o modelo Flux.1 para preencher as áreas mascaradas de uma imagem de acordo com a descrição textual fornecida, gerando novo conteúdo que combina com a imagem ao redor.
 
 ## Entradas

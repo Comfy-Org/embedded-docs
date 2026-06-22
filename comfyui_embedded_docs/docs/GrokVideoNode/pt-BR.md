@@ -1,3 +1,5 @@
+# Grok Video
+
 O nó Grok Video gera um vídeo curto a partir de uma descrição textual. Ele pode criar um vídeo do zero usando um prompt ou animar uma única imagem de entrada com base em um prompt. O nó envia uma requisição para uma API externa e retorna o vídeo gerado.
 
 ## Entradas

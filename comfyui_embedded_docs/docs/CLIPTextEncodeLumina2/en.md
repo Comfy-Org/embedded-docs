@@ -1,3 +1,5 @@
+# CLIP Text Encode (Lumina 2)
+
 The CLIP Text Encode for Lumina2 node encodes a system prompt and a user prompt using a CLIP model into an embedding that can guide the diffusion model to generate specific images. It combines a pre-defined system prompt with your custom text prompt and processes them through the CLIP model to create conditioning data for image generation.
 
 ## Inputs

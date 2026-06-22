@@ -1,3 +1,5 @@
+# SamplerDPMPP_3M_SDE
+
 El nodo SamplerDPMPP_3M_SDE crea un muestreador DPM++ 3M SDE para usar en el proceso de muestreo. Este muestreador utiliza un método de ecuación diferencial estocástica multietapa de tercer orden con parámetros de ruido configurables. El nodo permite elegir si los cálculos de ruido se realizan en la GPU o en la CPU.
 
 ## Entradas

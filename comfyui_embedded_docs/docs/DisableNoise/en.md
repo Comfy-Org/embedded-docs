@@ -1,3 +1,5 @@
+# DisableNoise
+
 The DisableNoise node provides an empty noise configuration that can be used to disable noise generation in sampling processes. It returns a special noise object that contains no noise data, allowing other nodes to skip noise-related operations when connected to this output.
 
 ## Inputs

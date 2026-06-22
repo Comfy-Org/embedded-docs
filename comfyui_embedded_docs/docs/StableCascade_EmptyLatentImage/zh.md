@@ -1,3 +1,5 @@
+# 空Latent图像（Stable Cascade）
+
 StableCascade_EmptyLatentImage 节点用于为 Stable Cascade 模型创建空的潜空间张量。它会生成两个独立的潜空间表示——一个用于阶段 C，另一个用于阶段 B——并根据输入分辨率和压缩设置调整其维度。该节点为 Stable Cascade 生成流程提供起始点。
 
 ## 输入

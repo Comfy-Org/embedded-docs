@@ -1,3 +1,5 @@
+# WanDancerEncodeAudio
+
 ## Overview
 
 This node processes an audio input to extract features that can be used to guide a video generation model. It analyzes the audio to detect tempo, beats, and other musical characteristics, then packages this information into a format suitable for conditioning a video model, allowing the generated video to be synchronized with the audio.

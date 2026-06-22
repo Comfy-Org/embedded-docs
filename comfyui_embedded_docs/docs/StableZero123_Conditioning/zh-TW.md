@@ -1,4 +1,4 @@
-# StableZero123_Conditioning 節點
+# StableZero123 條件設定
 
 StableZero123_Conditioning 節點處理輸入圖像和相機角度，以生成用於 3D 模型生成的條件數據和潛在表示。它使用 CLIP 視覺模型編碼圖像特徵，根據仰角和方位角將這些特徵與相機嵌入資訊結合，並生成正向和負向條件數據，以及用於下游 3D 生成任務的潛在表示。
 

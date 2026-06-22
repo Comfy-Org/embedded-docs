@@ -1,3 +1,5 @@
+# Salvar Áudio (MP3)
+
 O nó SaveAudioMP3 salva dados de áudio como um arquivo MP3. Ele recebe uma entrada de áudio e a exporta para o diretório de saída especificado, com nome de arquivo e configurações de qualidade personalizáveis. O nó gerencia automaticamente a nomeação do arquivo e a conversão de formato para criar um arquivo MP3 reproduzível.
 
 ## Entradas

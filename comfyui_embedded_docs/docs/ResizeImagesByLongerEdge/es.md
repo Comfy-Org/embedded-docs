@@ -1,3 +1,5 @@
+# Redimensionar imágenes por el borde más largo
+
 El nodo **Redimensionar imágenes por el borde más largo** redimensiona una o más imágenes de modo que su lado más largo coincida con una longitud objetivo especificada. Determina automáticamente si el ancho o el alto es mayor y escala la otra dimensión de forma proporcional para conservar la relación de aspecto original. Esto es útil para estandarizar tamaños de imagen según su dimensión más grande.
 
 ## Entradas

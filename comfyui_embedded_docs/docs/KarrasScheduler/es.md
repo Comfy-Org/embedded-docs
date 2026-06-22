@@ -1,3 +1,5 @@
+# KarrasScheduler
+
 El nodo KarrasScheduler está diseñado para generar una secuencia de niveles de ruido (sigmas) basada en el programador de ruido de Karras et al. (2022). Este programador es útil para controlar el proceso de difusión en modelos generativos, permitiendo ajustes precisos en los niveles de ruido aplicados en cada paso del proceso de generación.
 
 ## Entradas

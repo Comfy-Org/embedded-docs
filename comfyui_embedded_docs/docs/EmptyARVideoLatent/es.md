@@ -1,3 +1,5 @@
+# EmptyARVideoLatent
+
 ## Descripción general
 
 El nodo EmptyARVideoLatent crea una representación latente vacía para la generación de video. Se utiliza para inicializar un proceso de generación de video proporcionando un tensor de ceros con las dimensiones, relación de aspecto y longitud especificadas.

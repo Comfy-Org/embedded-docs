@@ -1,3 +1,5 @@
+# OpenAI DALL·E 3
+
 Génère des images de manière synchrone via le point d'accès DALL·E 3 d'OpenAI. Ce nœud prend une invite textuelle et crée les images correspondantes en utilisant le modèle DALL·E 3 d'OpenAI, vous permettant de spécifier la qualité, le style et les dimensions de l'image.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# ConvertStringToComboNode
+
 El nodo Convertir Cadena a Combo toma una cadena de texto como entrada y la convierte en un tipo de dato Combo. Esto permite utilizar un valor de texto como opción de selección para otros nodos que requieran una entrada de tipo Combo. Simplemente pasa el valor de la cadena sin cambios, pero transforma su tipo de dato.
 
 ## Entradas

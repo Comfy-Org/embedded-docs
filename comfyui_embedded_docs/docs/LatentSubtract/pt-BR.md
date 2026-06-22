@@ -1,3 +1,5 @@
+# Subtrair Latent
+
 O nó **LatentSubtract** foi projetado para subtrair uma representação latente de outra. Essa operação pode ser usada para manipular ou modificar as características das saídas de modelos generativos, removendo efetivamente atributos ou características representados em um espaço latente de outro.
 
 ## Entradas

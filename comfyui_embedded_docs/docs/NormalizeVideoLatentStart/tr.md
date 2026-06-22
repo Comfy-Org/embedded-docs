@@ -1,3 +1,5 @@
+# NormalizeVideoLatentStart
+
 Bu düğüm, bir video gizilinin (latent) ilk birkaç karesini, sonraki karelere daha çok benzeyecek şekilde ayarlar. Videoda daha sonraki bir dizi referans karesinden ortalama ve varyansı hesaplar ve bu özellikleri başlangıç karelerine uygular. Bu, videonun başlangıcında daha yumuşak ve tutarlı bir görsel geçiş oluşturmaya yardımcı olur.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# SamplerDPMPP_SDE
+
 El nodo SamplerDPMPP_SDE crea un muestreador DPM++ SDE (Ecuación Diferencial Estocástica) para su uso en el proceso de muestreo. Este muestreador proporciona un método de muestreo estocástico con parámetros de ruido configurables y selección de dispositivo. Devuelve un objeto muestreador que puede utilizarse en el flujo de trabajo de muestreo.
 
 ## Entradas

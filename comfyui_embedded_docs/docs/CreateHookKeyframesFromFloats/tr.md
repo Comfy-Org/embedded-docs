@@ -1,3 +1,5 @@
+# Ondalıklardan Kanca Anahtar Kareleri Oluştur
+
 Bu düğüm, belirtilen başlangıç ve bitiş yüzdeleri arasında eşit olarak dağıtarak, kayan noktalı güç değerlerinin bir listesinden kanca anahtar kareleri oluşturur. Her güç değerinin animasyon zaman çizelgesinde belirli bir yüzde konumuna atandığı bir dizi anahtar kare üretir. Düğüm, yeni bir anahtar kare grubu oluşturabilir veya mevcut bir gruba ekleyebilir; ayrıca hata ayıklama amacıyla oluşturulan anahtar kareleri yazdırma seçeneğine sahiptir.
 
 ## Girişler

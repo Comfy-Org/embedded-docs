@@ -1,3 +1,5 @@
+# Öz-Dikkat Rehberliği
+
 Self-Attention Guidance düğümü, örnekleme işlemi sırasında dikkat mekanizmasını değiştirerek difüzyon modellerine yönlendirme uygular. Koşulsuz gürültü giderme adımlarından dikkat puanlarını yakalar ve bunları, nihai çıktıyı etkileyen bulanık yönlendirme haritaları oluşturmak için kullanır. Bu teknik, modelin kendi dikkat kalıplarından yararlanarak üretim sürecini yönlendirmeye yardımcı olur.
 
 ## Girişler

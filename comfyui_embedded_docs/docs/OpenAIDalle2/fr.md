@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 Génère des images de manière synchrone via le point de terminaison DALL·E 2 d'OpenAI.
 

@@ -1,3 +1,5 @@
+# ModelMergeSD1
+
 El nodo ModelMergeSD1 permite combinar dos modelos Stable Diffusion 1.x ajustando la influencia de diferentes componentes del modelo. Proporciona control individual sobre la incrustación temporal, la incrustación de etiquetas y todos los bloques de entrada, medio y salida, permitiendo una fusión de modelos ajustada para casos de uso específicos.
 
 ## Entradas

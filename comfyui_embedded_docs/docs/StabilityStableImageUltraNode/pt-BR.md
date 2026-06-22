@@ -1,3 +1,5 @@
+# Stability AI Stable Image Ultra
+
 Gera imagens de forma síncrona com base no prompt e na resolução. Este nó cria imagens usando o modelo Stable Image Ultra da Stability AI, processando seu prompt de texto e gerando uma imagem correspondente com a proporção e o estilo especificados.
 
 ## Entradas

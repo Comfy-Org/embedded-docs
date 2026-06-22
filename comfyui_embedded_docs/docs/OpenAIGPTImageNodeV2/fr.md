@@ -1,3 +1,5 @@
+# OpenAI GPT Image 2
+
 Voici la traduction en français de la documentation du nœud OpenAIGPTImageNodeV2 :
 
 ## Aperçu

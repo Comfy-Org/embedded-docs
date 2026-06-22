@@ -1,3 +1,5 @@
+# HyperTile
+
 El nodo HyperTile aplica una técnica de división en mosaicos al mecanismo de atención en modelos de difusión para optimizar el uso de memoria durante la generación de imágenes. Divide el espacio latente en mosaicos más pequeños, los procesa por separado y luego reensambla los resultados. Esto permite trabajar con tamaños de imagen más grandes sin quedarse sin memoria.
 
 ## Entradas

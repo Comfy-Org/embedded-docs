@@ -1,3 +1,5 @@
+# UNetÖzDikkatÇarpımı
+
 UNetSelfAttentionMultiply düğümü, bir UNet modelindeki öz-dikkat mekanizmasının sorgu (query), anahtar (key), değer (value) ve çıktı (output) bileşenlerine çarpma faktörleri uygular. Dikkat ağırlıklarının model davranışını nasıl etkilediğini denemek için dikkat hesaplamasının farklı bölümlerini ölçeklendirmenize olanak tanır.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Charger VAE
+
 Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/vae`, et lit également les modèles provenant de chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire de **rafraîchir l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
 Le nœud VAELoader est conçu pour charger des modèles d'autoencodeur variationnel (VAE), spécifiquement adapté pour gérer à la fois les VAE standards et approximatifs. Il prend en charge le chargement des VAE par nom, y compris une gestion spécialisée pour les modèles 'taesd' et 'taesdxl', et s'ajuste dynamiquement en fonction de la configuration spécifique du VAE.

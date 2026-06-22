@@ -1,3 +1,5 @@
+# Koşullandırma (Maske Ayarla)
+
 Bu düğüm, belirtilen bir güçle belirli alanlara maske uygulayarak üretken bir modelin koşullandırmasını değiştirmek için tasarlanmıştır. Koşullandırma içinde hedefli ayarlamalar yapılmasını sağlayarak üretim süreci üzerinde daha hassas kontrol imkanı sunar.
 
 ## Girişler

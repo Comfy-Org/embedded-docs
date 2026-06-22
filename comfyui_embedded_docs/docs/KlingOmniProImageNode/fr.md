@@ -1,3 +1,5 @@
+# Kling Omni Image (Pro)
+
 Le nœud Kling Omni Image (Pro) crée ou modifie des images à l'aide du dernier modèle d'IA Kling. Il génère des images à partir d'une description textuelle et peut éventuellement utiliser des images de référence pour guider le style ou le contenu. Le nœud envoie une requête à une API externe, qui traite la tâche et renvoie la ou les images finales.
 
 ## Entrées

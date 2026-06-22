@@ -1,3 +1,5 @@
+# Trim Audio Duration
+
 The TrimAudioDuration node allows you to cut a specific time segment from an audio file. You can specify when to start the trim and how long the resulting audio clip should be. The node works by converting time values to audio frame positions and extracting the corresponding portion of the audio waveform.
 
 ## Inputs

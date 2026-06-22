@@ -1,3 +1,5 @@
+# Apply ControlNet (DEPRECATED)
+
 Using controlNet requires preprocessing of input images. Since ComfyUI initial nodes do not come with preprocessors and controlNet models, please first install ControlNet preprocessors [download preprocessors here](https://github.com/Fannovel16/comfy_controlnet_preprocessors) and corresponding controlNet models.
 
 ## Inputs

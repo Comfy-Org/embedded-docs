@@ -1,4 +1,4 @@
-# Obtener Recuento de Splats
+# Obtener recuento de splats
 
 El nodo Obtener Recuento de Splats devuelve el número total de splats (puntos gaussianos) en un lote de splats, sumando todos los elementos del lote. Transmite los datos originales de splats sin modificar, proporcionando al mismo tiempo un recuento de cuántos splats individuales contiene.
 

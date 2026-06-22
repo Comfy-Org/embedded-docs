@@ -1,3 +1,5 @@
+# Non
+
 ## Aperçu
 
 Le nœud Not effectue une opération logique NON sur n'importe quelle valeur d'entrée. Il renvoie Vrai si la valeur d'entrée est considérée comme fausse (comme 0, chaîne vide, None, Faux), et renvoie Faux si la valeur d'entrée est vraie. Il utilise les règles standard de Python pour déterminer la véracité.

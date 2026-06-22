@@ -1,3 +1,5 @@
+# RépéterLotImage
+
 Le nœud RepeatImageBatch est conçu pour dupliquer une image donnée un nombre spécifié de fois, créant ainsi un lot d’images identiques. Cette fonctionnalité est utile pour les opérations nécessitant plusieurs instances de la même image, comme le traitement par lots ou l’augmentation de données.
 
 ## Entrées

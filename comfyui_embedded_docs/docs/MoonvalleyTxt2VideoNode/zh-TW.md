@@ -1,4 +1,4 @@
-# Moonvalley Marey 文字轉影片節點
+# MoonvalleyTxt2VideoNode
 
 Moonvalley Marey 文字轉影片節點使用 Moonvalley API 從文字描述生成影片內容。它接收文字提示詞，並將其轉換為具有可自訂解析度、品質和風格的影片。此節點處理從發送生成請求到下載最終影片輸出的整個過程。
 

@@ -1,3 +1,5 @@
+# EmptyAceStep1.5LatentAudio
+
 Este nó gera um tensor latente vazio projetado para processamento de áudio. Ele cria um áudio latente silencioso com duração e tamanho de lote especificados, que pode ser usado como ponto de partida para fluxos de trabalho de geração de áudio no ComfyUI. O nó calcula o comprimento latente com base nos segundos informados e em uma taxa de amostragem fixa.
 
 ## Entradas

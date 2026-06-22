@@ -1,3 +1,5 @@
+# Koşul Çifti Özelliklerini Ayarla
+
 **PairConditioningSetProperties** düğümü, hem pozitif hem de negatif koşullandırma çiftlerinin özelliklerini aynı anda değiştirmenize olanak tanır. Her iki koşullandırma girdisine güç ayarlamaları, koşullandırma alanı ayarları ve isteğe bağlı maskeleme veya zamanlama kontrolleri uygulayarak, değiştirilmiş pozitif ve negatif koşullandırma verilerini döndürür.
 
 ## Girdiler

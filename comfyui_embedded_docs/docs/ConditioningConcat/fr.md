@@ -1,3 +1,5 @@
+# Conditionnement (Concat)
+
 Le nœud ConditioningConcat est conçu pour concaténer des vecteurs de conditionnement, en fusionnant spécifiquement le vecteur `conditioning_from` dans le vecteur `conditioning_to`. Cette opération est fondamentale dans les scénarios où les informations de conditionnement provenant de deux sources doivent être combinées en une seule représentation unifiée.
 
 ## Entrées

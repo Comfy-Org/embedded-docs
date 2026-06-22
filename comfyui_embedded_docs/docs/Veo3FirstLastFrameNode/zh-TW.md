@@ -1,3 +1,5 @@
+# Google Veo 3 首尾影格生成影片
+
 ## 概述
 
 Veo3FirstLastFrameNode 使用 Google 的 Veo 3 模型，根據文字提示以及提供的首幀和尾幀來生成影片，這些幀定義了影片序列的開始與結束。

@@ -1,3 +1,5 @@
+# TextEncodeQwenImageEdit
+
 Voici la traduction en français de la documentation du nœud TextEncodeQwenImageEdit :
 
 Le nœud TextEncodeQwenImageEdit traite les invites textuelles et les images optionnelles pour générer des données de conditionnement destinées à la génération ou à l'édition d'images. Il utilise un modèle CLIP pour tokeniser l'entrée et peut éventuellement encoder des images de référence à l'aide d'un VAE pour créer des latents de référence. Lorsqu'une image est fournie, elle est automatiquement redimensionnée pour garantir des dimensions de traitement cohérentes.

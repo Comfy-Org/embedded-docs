@@ -1,3 +1,5 @@
+# Stability AI Ses'ten Ses'e
+
 Mevcut ses örneklerini metin talimatları kullanarak yeni, yüksek kaliteli bestelere dönüştürür. Bu düğüm, bir giriş ses dosyasını alır ve metin isteminize dayanarak onu değiştirerek yeni ses içeriği oluşturur.
 
 ## Girişler
