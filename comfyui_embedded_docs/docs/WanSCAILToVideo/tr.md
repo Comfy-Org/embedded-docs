@@ -26,7 +26,7 @@ WanSCAILToVideo düğümü, video üretimi için koşullandırma (conditioning) 
 | --- | --- | --- |
 | `negatif` | Potansiyel olarak gömülü referans görüntü latentleri, CLIP görüş çıktısı veya poz video latentleri içeren değiştirilmiş pozitif koşullandırma. | CONDITIONING |
 | `latent` | Potansiyel olarak gömülü referans görüntü latentleri, CLIP görüş çıktısı veya poz video latentleri içeren değiştirilmiş negatif koşullandırma. | CONDITIONING |
-| `latent` | Şekli `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]` olan boş bir latent tensörü. | LATENT |
+| `video_frame_offset` | Şekli `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]` olan boş bir latent tensörü. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSCAILToVideo/tr.md)
 

@@ -28,7 +28,7 @@
 | --- | --- | --- |
 | `سلبي` | التكييف الإيجابي المعدل، والذي قد يحتوي على كامنات الصورة المرجعية المضمنة، أو مخرج رؤية CLIP، أو كامنات فيديو الوضعيات. | CONDITIONING |
 | `كامن` | التكييف السلبي المعدل، والذي قد يحتوي على كامنات الصورة المرجعية المضمنة، أو مخرج رؤية CLIP، أو كامنات فيديو الوضعيات. | CONDITIONING |
-| `latent` | موتر كامن فارغ بالشكل `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. | LATENT |
+| `video_frame_offset` | موتر كامن فارغ بالشكل `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSCAILToVideo/ar.md)
 
