@@ -1,3 +1,5 @@
+# Recraft Style - Logo Raster
+
 Este nodo selecciona el estilo de logotipo rasterizado y un subestilo opcional para generar imágenes de logotipos. Se especializa en la creación de diseños de logotipos con tratamientos visuales basados en rasterizado.
 
 ## Entradas

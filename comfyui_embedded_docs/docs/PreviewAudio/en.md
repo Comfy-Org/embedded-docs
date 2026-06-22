@@ -1,3 +1,5 @@
+# Preview Audio
+
 The PreviewAudio node creates a temporary audio preview that can be played directly in the interface. It takes audio data as input and generates a preview widget, allowing users to listen to audio outputs without saving permanent files.
 
 ## Inputs

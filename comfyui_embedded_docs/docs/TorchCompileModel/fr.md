@@ -1,3 +1,5 @@
+# ModèleCompilationTorch
+
 Le nœud TorchCompileModel applique la compilation PyTorch à un modèle pour optimiser ses performances. Il crée une copie du modèle d'entrée et l'enveloppe avec la fonctionnalité de compilation de PyTorch en utilisant le backend spécifié. Cela peut améliorer la vitesse d'exécution du modèle lors de l'inférence.
 
 ## Entrées

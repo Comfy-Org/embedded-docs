@@ -1,3 +1,5 @@
+# Agrupación por resolución
+
 Este nodo organiza una lista de imágenes latentes y sus datos de condicionamiento correspondientes según su resolución. Agrupa elementos que comparten la misma altura y anchura, creando lotes separados para cada resolución única. Este proceso es útil para preparar datos para un entrenamiento eficiente, ya que permite que los modelos procesen múltiples elementos del mismo tamaño juntos.
 
 ## Entradas

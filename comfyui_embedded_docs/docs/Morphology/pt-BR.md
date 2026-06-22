@@ -1,3 +1,5 @@
+# ImageMorphology
+
 O nó Morphology aplica várias operações morfológicas em imagens, que são operações matemáticas usadas para processar e analisar formas em imagens. Ele pode realizar operações como erosão, dilatação, abertura, fechamento e outras, utilizando um tamanho de kernel personalizável para controlar a intensidade do efeito.
 
 ## Entradas

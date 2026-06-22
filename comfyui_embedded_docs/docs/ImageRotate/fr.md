@@ -1,3 +1,5 @@
+# Rotation d'image
+
 Voici la traduction en français de la documentation du nœud ImageRotate :
 
 Le nœud ImageRotate fait pivoter une image d'entrée selon des angles spécifiés. Il prend en charge quatre options de rotation : aucune rotation, 90 degrés dans le sens horaire, 180 degrés et 270 degrés dans le sens horaire. La rotation est effectuée à l'aide d'opérations tensorielles efficaces qui préservent l'intégrité des données de l'image.

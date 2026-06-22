@@ -1,3 +1,5 @@
+# Comparar
+
 El nodo StringCompare compara dos cadenas de texto utilizando diferentes métodos de comparación. Puede verificar si una cadena comienza con otra, termina con otra, o si ambas cadenas son exactamente iguales. La comparación puede realizarse considerando o ignorando las diferencias entre mayúsculas y minúsculas.
 
 ## Entradas

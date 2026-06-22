@@ -1,3 +1,5 @@
+# Salvar Imagem
+
 O nó SaveImage salva as imagens recebidas no diretório `ComfyUI/output`. Ele salva cada imagem como um arquivo PNG e pode incorporar metadados do fluxo de trabalho, como o prompt, no arquivo salvo para referência futura.
 
 ## Entradas

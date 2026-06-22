@@ -1,4 +1,4 @@
-# Aperçu de l'Échantillonnage TripoSplat
+# Aperçu d'échantillonnage TripoSplat
 
 Ce nœud modifie un modèle TripoSplat afin que, lorsqu'il est utilisé avec le nœud KSampler standard, un aperçu en direct du gaussian splat décodé soit affiché à chaque étape d'échantillonnage. Il fonctionne en encapsulant le rappel de l'échantillonneur pour décoder la sortie du modèle en une image d'aperçu après chaque étape.
 

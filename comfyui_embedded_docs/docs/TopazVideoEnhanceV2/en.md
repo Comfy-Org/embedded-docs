@@ -1,4 +1,4 @@
-# Topaz Video Enhance V2
+# Topaz Video Enhance
 
 The **Topaz Video Enhance V2** node allows you to upscale and enhance video using Topaz Labs' AI models. It can increase resolution, adjust frame rate through interpolation, and apply creative or realistic enhancements to breathe new life into your video footage.
 

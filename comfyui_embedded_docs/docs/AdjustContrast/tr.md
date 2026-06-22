@@ -1,3 +1,5 @@
+# Kontrastı Ayarla
+
 Kontrast Ayarla düğümü, bir giriş görüntüsünün kontrast seviyesini değiştirir. Görüntünün açık ve koyu alanları arasındaki farkı ayarlayarak çalışır. 1,0 faktörü görüntüyü değiştirmez, 1,0'ın altındaki değerler kontrastı azaltır ve 1,0'ın üzerindeki değerler kontrastı artırır.
 
 ## Girişler

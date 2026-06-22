@@ -1,4 +1,4 @@
-# Visão Geral
+# EmptyARVideoLatent
 
 O nó EmptyARVideoLatent cria uma representação latente vazia e em branco para geração de vídeos. Ele é utilizado para inicializar um processo de geração de vídeo fornecendo um tensor de zeros com as dimensões, proporção de aspecto e comprimento especificados.
 

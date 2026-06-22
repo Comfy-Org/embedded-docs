@@ -1,3 +1,5 @@
+# Remplacer par Regex
+
 Voici la traduction en français de la documentation du nœud RegexReplace :
 
 Le nœud RegexReplace recherche et remplace du texte dans des chaînes de caractères à l'aide de motifs d'expressions régulières. Il vous permet de rechercher des motifs textuels et de les remplacer par un nouveau texte, avec des options pour contrôler le fonctionnement de la correspondance des motifs, notamment la sensibilité à la casse, la correspondance multiligne et la limitation du nombre de remplacements.

@@ -1,3 +1,5 @@
+# MuestreoDeModeloDiscreto
+
 Este nodo está diseñado para modificar el comportamiento de muestreo de un modelo aplicando una estrategia de muestreo discreto. Permite seleccionar diferentes métodos de muestreo, como epsilon, v_prediction, lcm o x0, y opcionalmente ajusta la estrategia de reducción de ruido del modelo según la configuración de la relación de ruido cero-shot (zsnr).
 
 ## Entradas

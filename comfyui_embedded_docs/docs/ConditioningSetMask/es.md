@@ -1,3 +1,5 @@
+# Acondicionamiento (Establecer Máscara)
+
 Este nodo está diseñado para modificar el condicionamiento de un modelo generativo aplicando una máscara con una intensidad específica a ciertas áreas. Permite realizar ajustes dirigidos dentro del condicionamiento, brindando un control más preciso sobre el proceso de generación.
 
 ## Entradas

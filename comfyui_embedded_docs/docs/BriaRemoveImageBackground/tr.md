@@ -1,3 +1,5 @@
+# Bria Görsel Arka Planı Kaldır
+
 Bu düğüm, Bria RMBG 2.0 hizmetini kullanarak bir görselden arka planı kaldırır. Görseli işlenmek üzere harici bir API'ye gönderir ve arka planı kaldırılmış sonucu döndürür.
 
 ## Girişler

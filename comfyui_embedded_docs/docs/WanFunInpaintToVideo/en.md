@@ -1,3 +1,5 @@
+# WanFunInpaintToVideo
+
 The WanFunInpaintToVideo node creates video sequences by inpainting between start and end images. It takes positive and negative conditioning along with optional frame images to generate video latents. The node handles video generation with configurable dimensions and length parameters.
 
 ## Inputs

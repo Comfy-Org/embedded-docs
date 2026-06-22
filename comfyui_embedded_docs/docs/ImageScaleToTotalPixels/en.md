@@ -1,3 +1,5 @@
+# Scale Image to Total Pixels
+
 The ImageScaleToTotalPixels node is designed for resizing images to a specified total number of pixels while maintaining the aspect ratio. It provides various methods for upscaling the image to achieve the desired pixel count.
 
 ## Inputs

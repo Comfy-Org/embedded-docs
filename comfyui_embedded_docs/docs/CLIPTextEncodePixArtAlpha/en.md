@@ -1,3 +1,5 @@
+# CLIP Text Encode (PixArt Alpha)
+
 Encodes text and sets the resolution conditioning for PixArt Alpha. This node processes text input and adds width and height information to create conditioning data specifically for PixArt Alpha models. It does not apply to PixArt Sigma models.
 
 ## Inputs

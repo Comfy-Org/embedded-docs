@@ -1,3 +1,5 @@
+# EmptyAceStepLatentAudio
+
 El nodo EmptyAceStepLatentAudio crea muestras de audio latente vacías de una duración específica. Genera un lote de latentes de audio silenciosos rellenos con ceros, donde la longitud se calcula en función de los segundos de entrada y los parámetros de procesamiento de audio. Este nodo es útil para inicializar flujos de trabajo de procesamiento de audio que requieren representaciones latentes.
 
 ## Entradas

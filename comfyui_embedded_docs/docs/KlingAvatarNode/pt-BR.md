@@ -1,3 +1,5 @@
+# Kling Avatar 2.0
+
 O nó Kling Avatar 2.0 gera vídeos de humanos digitais no estilo broadcast a partir de uma única foto de referência e um arquivo de áudio. Ele cria um vídeo de avatar falante com um prompt de texto opcional para definir as ações, emoções e movimentos de câmera do avatar.
 
 ## Entradas

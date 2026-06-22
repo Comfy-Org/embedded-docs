@@ -1,3 +1,5 @@
+# WanFunInpaintToVideo
+
 El nodo WanFunInpaintToVideo crea secuencias de video mediante interpolación entre imágenes de inicio y fin. Toma condicionamientos positivo y negativo junto con imágenes de fotogramas opcionales para generar latentes de video. El nodo maneja la generación de video con dimensiones configurables y parámetros de longitud.
 
 ## Entradas

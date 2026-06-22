@@ -1,3 +1,5 @@
+# ModelÖrneklemeFlux
+
 ModelSamplingFlux düğümü, görüntü boyutlarına dayalı bir kaydırma parametresi hesaplayarak belirtilen modele Flux model örneklemesi uygular. Belirtilen genişlik, yükseklik ve kaydırma parametrelerine göre modelin davranışını ayarlayan özelleştirilmiş bir örnekleme yapılandırması oluşturur ve ardından yeni örnekleme ayarları uygulanmış değiştirilmiş modeli döndürür.
 
 ## Girişler

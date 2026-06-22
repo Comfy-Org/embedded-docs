@@ -1,3 +1,5 @@
+# Recraft Style - Imagen Realista
+
 Este nodo crea una configuración de estilo para generar imágenes realistas utilizando la API de Recraft. Selecciona el estilo `realistic_image` y permite elegir un subestilo opcional para ajustar la apariencia del resultado.
 
 ## Entradas

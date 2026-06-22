@@ -1,3 +1,5 @@
+# TextGenerateLTX2Prompt
+
 O nó TextGenerateLTX2Prompt é uma versão especializada de um nó de geração de texto. Ele recebe um prompt de texto do usuário e o formata automaticamente com instruções de sistema específicas antes de enviá-lo a um modelo de linguagem para aprimoramento ou conclusão. O nó pode operar em dois modos: apenas texto ou com uma referência de imagem, usando prompts de sistema diferentes para cada caso.
 
 ## Entradas

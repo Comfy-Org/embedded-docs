@@ -1,3 +1,5 @@
+# CLIPSubtract
+
 CLIPSubtract düğümü, iki CLIP modeli arasında çıkarma işlemi gerçekleştirir. İlk CLIP modelini temel alır ve ikinci CLIP modelindeki anahtar yamaları çıkarır; çıkarma gücünü kontrol etmek için isteğe bağlı bir çarpan kullanılabilir. Bu sayede, bir modelden belirli özellikleri başka bir model kullanarak kaldırarak ince ayarlı model harmanlaması yapılabilir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Rodin 3D Oluştur - Normal Oluştur
+
 **Genel Bakış**
 
 Rodin 3D Regular düğümü, Rodin API'sini kullanarak 3D varlıklar üretir. Giriş görüntülerini alır ve bunları Rodin hizmeti aracılığıyla işleyerek 3D modeller oluşturur. Düğüm, görev oluşturmadan nihai 3D model dosyalarını indirmeye kadar tüm iş akışını yönetir.

@@ -1,3 +1,5 @@
+# Máscara de Umbral
+
 El nodo ThresholdMask convierte una máscara en una máscara binaria aplicando un valor de umbral. Compara cada píxel de la máscara de entrada con el valor de umbral especificado y crea una nueva máscara donde los píxeles por encima del umbral se convierten en 1 (blanco) y los píxeles iguales o por debajo del umbral se convierten en 0 (negro).
 
 ## Entradas

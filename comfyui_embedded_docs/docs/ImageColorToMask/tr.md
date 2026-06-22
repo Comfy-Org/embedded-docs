@@ -1,3 +1,5 @@
+# GörüntüRenginiMaskeyeDönüştür
+
 `ImageColorToMask` düğümü, bir görüntüdeki belirli bir rengi maskeye dönüştürmek için tasarlanmıştır. Bir görüntü ve hedef rengi işleyerek, belirtilen rengin vurgulandığı bir maske oluşturur; bu sayede renk tabanlı bölütleme veya nesne ayırma gibi işlemleri kolaylaştırır.
 
 ## Girişler

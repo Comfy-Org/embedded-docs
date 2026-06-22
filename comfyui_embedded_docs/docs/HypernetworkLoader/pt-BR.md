@@ -1,3 +1,5 @@
+# HypernetworkLoader
+
 Este nó detectará modelos localizados na pasta `ComfyUI/models/hypernetworks`, e também lerá modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó HypernetworkLoader foi projetado para aprimorar ou modificar as capacidades de um determinado modelo aplicando uma hiper-rede. Ele carrega uma hiper-rede específica e a aplica ao modelo, potencialmente alterando seu comportamento ou desempenho com base no parâmetro de intensidade. Esse processo permite ajustes dinâmicos na arquitetura ou nos parâmetros do modelo, possibilitando sistemas de IA mais flexíveis e adaptáveis.

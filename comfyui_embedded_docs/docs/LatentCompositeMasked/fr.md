@@ -1,3 +1,5 @@
+# Composite Latent Masqué
+
 Voici la traduction en français de la documentation du nœud LatentCompositeMasked :
 
 Le nœud LatentCompositeMasked est conçu pour fusionner deux représentations latentes à des coordonnées spécifiées, en utilisant éventuellement un masque pour un compositing plus contrôlé. Ce nœud permet de créer des images latentes complexes en superposant des parties d'une image sur une autre, avec la possibilité de redimensionner l'image source pour un ajustement parfait.

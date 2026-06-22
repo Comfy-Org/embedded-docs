@@ -1,3 +1,5 @@
+# ByteDance Texto para Vídeo
+
 O nó ByteDance Text to Video gera vídeos usando modelos ByteDance por meio de uma API baseada em prompts de texto. Ele recebe uma descrição textual e várias configurações de vídeo como entrada e, em seguida, cria um vídeo que corresponde às especificações fornecidas. O nó gerencia a comunicação com a API e retorna o vídeo gerado como saída.
 
 ## Entradas

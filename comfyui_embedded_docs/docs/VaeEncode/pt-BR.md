@@ -1,3 +1,5 @@
+# VAE Codificar
+
 Este nó foi projetado para codificar imagens em uma representação de espaço latente usando um modelo VAE específico. Ele abstrai a complexidade do processo de codificação, oferecendo uma maneira direta de transformar imagens em suas representações latentes.
 
 ## Entradas

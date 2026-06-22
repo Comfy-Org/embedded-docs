@@ -1,3 +1,5 @@
+# MaskeliGörüntüBirleştirme
+
 `ImageCompositeMasked` düğümü, görüntülerin birleştirilmesi (kompozit) için tasarlanmıştır; kaynak görüntünün, hedef görüntü üzerine belirtilen koordinatlarda, isteğe bağlı yeniden boyutlandırma ve maskeleme ile yerleştirilmesine olanak tanır.
 
 ## Girişler

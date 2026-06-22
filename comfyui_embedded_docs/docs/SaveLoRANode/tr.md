@@ -1,3 +1,5 @@
+# SaveLoRANode
+
 SaveLoRA düğümü, LoRA (Düşük Dereceli Uyarlama) modellerini çıktı dizininize kaydeder. Giriş olarak bir LoRA modeli alır ve otomatik olarak oluşturulan bir dosya adıyla bir safetensors dosyası oluşturur. Dosya adı önekini özelleştirebilir ve isteğe bağlı olarak daha iyi organizasyon için dosya adına eğitim adım sayısını dahil edebilirsiniz.
 
 ## Girişler

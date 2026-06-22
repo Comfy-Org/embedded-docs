@@ -1,3 +1,5 @@
+# Recraft Ampliação Criativa de Imagem
+
 Este nó de Ampliação Criativa de Imagem Recraft melhora uma imagem raster aumentando sua resolução. Ele utiliza um processo de "ampliação criativa" que foca em aprimorar pequenos detalhes e rostos dentro da imagem. Esta operação é executada de forma síncrona por meio de uma API externa.
 
 ## Entradas

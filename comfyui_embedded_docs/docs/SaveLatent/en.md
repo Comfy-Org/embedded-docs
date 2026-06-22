@@ -1,3 +1,5 @@
+# SaveLatent
+
 The SaveLatent node saves latent tensors to disk as files for later use or sharing. It takes latent samples and saves them to the output directory with optional metadata including prompt information. The node automatically handles file naming and organization while preserving the latent data structure.
 
 ## Inputs

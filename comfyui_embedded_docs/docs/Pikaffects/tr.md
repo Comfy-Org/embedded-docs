@@ -1,3 +1,5 @@
+# Pikaffects
+
 Pikaffects düğümü, bir girdi görüntüsüne çeşitli görsel efektler uygulayarak videolar oluşturur. Statik görüntüleri erime, patlama veya havaya yükselme gibi belirli efektlerle animasyonlu videolara dönüştürmek için Pika'nın video oluşturma API'sini kullanır. Düğüm, Pika hizmetine erişmek için bir API anahtarı ve kimlik doğrulama belirteci gerektirir.
 
 ## Girdiler

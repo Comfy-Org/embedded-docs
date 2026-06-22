@@ -1,3 +1,5 @@
+# SigmalarıBöl
+
 SplitSigmas düğümü, bir sigma değerleri dizisini belirtilen bir adıma göre iki parçaya bölmek için tasarlanmıştır. Bu işlevsellik, sigma dizisinin başlangıç ve sonraki bölümlerinin farklı şekilde işlenmesini veya ele alınmasını gerektiren işlemler için kritik öneme sahiptir ve bu değerler üzerinde daha esnek ve hedefli bir manipülasyon sağlar.
 
 ## Girişler

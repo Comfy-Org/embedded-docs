@@ -1,3 +1,5 @@
+# Çözünürlük Kovası
+
 Bu düğüm, gizli görüntülerin (latent images) bir listesini ve bunlara karşılık gelen koşullandırma (conditioning) verilerini çözünürlüklerine göre düzenler. Aynı yükseklik ve genişliğe sahip öğeleri bir araya getirerek her benzersiz çözünürlük için ayrı gruplar oluşturur. Bu işlem, verileri verimli eğitim için hazırlamada kullanışlıdır çünkü modellerin aynı boyuttaki birden fazla öğeyi birlikte işlemesine olanak tanır.
 
 ## Girişler

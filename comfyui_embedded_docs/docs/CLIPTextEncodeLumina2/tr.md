@@ -1,3 +1,5 @@
+# Lumina2 için CLIP Metin Kodlama
+
 CLIP Metin Kodlama (Lumina2) düğümü, bir sistem yönergesini ve bir kullanıcı yönergesini CLIP modeli kullanarak, difüzyon modelini belirli görüntüler üretmeye yönlendirebilecek bir gömülü vektöre (embedding) kodlar. Önceden tanımlanmış bir sistem yönergesini, özel metin yönergenizle birleştirir ve bunları CLIP modeli aracılığıyla işleyerek görüntü oluşturma için koşullama verisi (conditioning data) oluşturur.
 
 ## Girişler

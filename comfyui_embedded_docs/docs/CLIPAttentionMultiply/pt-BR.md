@@ -1,3 +1,5 @@
+# CLIPAttentionMultiply
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPAttentionMultiply/en.md)
 
 O nó CLIPAttentionMultiply permite ajustar o mecanismo de atenção em modelos CLIP aplicando fatores de multiplicação a diferentes componentes das camadas de autoatenção. Ele funciona modificando os pesos e vieses das projeções de consulta, chave, valor e saída no mecanismo de atenção do modelo CLIP. Este nó experimental cria uma cópia modificada do modelo CLIP de entrada com os fatores de escala especificados aplicados.

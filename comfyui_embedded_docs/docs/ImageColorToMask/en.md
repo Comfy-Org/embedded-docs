@@ -1,3 +1,5 @@
+# Convert Image Color to Mask
+
 The `ImageColorToMask` node is designed to convert a specified color in an image to a mask. It processes an image and a target color, generating a mask where the specified color is highlighted, facilitating operations like color-based segmentation or object isolation.
 
 ## Inputs

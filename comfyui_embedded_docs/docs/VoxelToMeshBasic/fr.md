@@ -1,3 +1,5 @@
+# VoxelToMeshBasic
+
 Le nœud **VoxelToMeshBasic** convertit des données voxel 3D en géométrie de maillage. Il traite les volumes voxel en appliquant une valeur de seuil pour déterminer quelles parties du volume deviennent des surfaces solides dans le maillage résultant. Le nœud produit une structure de maillage complète avec des sommets et des faces, utilisable pour le rendu et la modélisation 3D.
 
 ## Entrées

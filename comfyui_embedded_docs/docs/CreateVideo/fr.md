@@ -1,3 +1,5 @@
+# Créer une vidéo
+
 Voici la traduction en français de la documentation du nœud Create Video :
 
 Le nœud Créer une vidéo génère un fichier vidéo à partir d'une séquence d'images. Vous pouvez spécifier la vitesse de lecture en utilisant les images par seconde et, éventuellement, ajouter de l'audio à la vidéo. Le nœud combine vos images dans un format vidéo pouvant être lu avec la fréquence d'images spécifiée.

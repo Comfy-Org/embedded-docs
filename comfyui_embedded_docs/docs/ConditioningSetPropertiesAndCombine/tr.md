@@ -1,3 +1,5 @@
+# Koşul Özelliklerini Ayarla ve Birleştir
+
 ConditioningSetPropertiesAndCombine düğümü, mevcut bir koşullandırma girdisine yeni bir koşullandırma girdisinden özellikler uygulayarak koşullandırma verilerini değiştirir. Yeni koşullandırmanın gücünü kontrol ederken ve koşullandırma alanının nasıl uygulanacağını belirtirken iki koşullandırma kümesini birleştirir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Opções do T5Tokenizer
+
 O nó T5TokenizerOptions permite configurar as configurações do tokenizador para vários tipos de modelo T5. Ele define parâmetros de preenchimento mínimo e comprimento mínimo para múltiplas variantes do modelo T5, incluindo t5xxl, pile_t5xl, t5base, mt5xl e umt5xxl. O nó recebe uma entrada CLIP e retorna um CLIP modificado com as opções de tokenizador especificadas aplicadas.
 
 ## Entradas

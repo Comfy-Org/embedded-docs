@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 Le nœud CheckpointLoader est conçu pour des opérations de chargement avancées, permettant spécifiquement de charger des points de contrôle de modèle avec leurs configurations. Il facilite la récupération des composants du modèle nécessaires à l'initialisation et à l'exécution de modèles génératifs, y compris les configurations et les points de contrôle provenant de répertoires spécifiés.
 
 ## Entrées

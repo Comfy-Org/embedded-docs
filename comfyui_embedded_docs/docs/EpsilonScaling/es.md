@@ -1,3 +1,5 @@
+# EpsilonScaling
+
 Implementa el método de Escalado Epsilon del artículo de investigación "Elucidating the Exposure Bias in Diffusion Models". Este método mejora la calidad de las muestras al escalar el ruido predicho durante el proceso de muestreo. Utiliza un programa uniforme para mitigar el sesgo de exposición en los modelos de difusión.
 
 ## Entradas

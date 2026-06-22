@@ -1,3 +1,5 @@
+# Guardar Punto de Control
+
 El nodo `Save Checkpoint` está diseñado para guardar un modelo completo de Stable Diffusion (incluyendo los componentes UNet, CLIP y VAE) como un archivo de punto de control en formato **.safetensors**.
 
 El nodo Save Checkpoint se utiliza principalmente en flujos de trabajo de fusión de modelos. Después de crear un nuevo modelo fusionado mediante nodos como `ModelMergeSimple`, `ModelMergeBlocks`, etc., puede usar este nodo para guardar el resultado como un archivo de punto de control reutilizable.

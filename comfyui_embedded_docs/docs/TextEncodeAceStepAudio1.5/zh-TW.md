@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 ## 概述
 
 TextEncodeAceStepAudio1.5 節點負責準備文字與音訊相關的元數據，以供 AceStepAudio 1.5 模型使用。它接收描述性標籤、歌詞及音樂參數，然後利用 CLIP 模型將其轉換為適合音訊生成的條件格式。

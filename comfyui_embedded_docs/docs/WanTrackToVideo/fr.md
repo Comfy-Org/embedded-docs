@@ -1,3 +1,5 @@
+# WanTrackToVideo
+
 Voici la traduction en français de la documentation du nœud ComfyUI `WanTrackToVideo` :
 
 Le nœud WanTrackToVideo convertit les données de suivi de mouvement en séquences vidéo en traitant les points de suivi et en générant les trames vidéo correspondantes. Il prend des coordonnées de suivi en entrée et produit un conditionnement vidéo ainsi que des représentations latentes utilisables pour la génération vidéo. Lorsqu'aucune piste n'est fournie, il revient à une conversion standard image-vers-vidéo.

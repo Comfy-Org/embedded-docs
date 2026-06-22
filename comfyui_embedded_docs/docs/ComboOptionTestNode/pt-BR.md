@@ -1,3 +1,5 @@
+# ComboOptionTestNode
+
 O ComboOptionTestNode é um nó lógico projetado para testar e repassar seleções de caixas de combinação. Ele recebe duas entradas de caixa de combinação, cada uma com um conjunto predefinido de opções, e gera os valores selecionados diretamente, sem modificação.
 
 ## Entradas

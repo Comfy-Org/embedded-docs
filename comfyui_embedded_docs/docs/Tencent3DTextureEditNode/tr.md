@@ -1,3 +1,5 @@
+# Hunyuan3D: 3D Doku Düzenleme
+
 Bu düğüm, bir 3B modelin dokularını düzenlemek için Tencent Hunyuan3D API'sini kullanır. Bir 3B model ve istenen değişikliklerin metin açıklamasını sağlarsınız; düğüm, isteminize göre dokuları yeniden çizilmiş modelin yeni bir sürümünü döndürür.
 
 ## Girişler

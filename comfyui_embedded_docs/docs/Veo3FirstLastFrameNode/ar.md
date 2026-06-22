@@ -1,3 +1,5 @@
+# Google Veo 3 من الإطار الأول والأخير إلى الفيديو
+
 بالتأكيد، إليك الترجمة العربية للوثيقة التقنية الخاصة بعقدة ComfyUI، مع الالتزام التام بقواعد الترجمة المحددة:
 
 > تم إنشاء هذه الوثائق بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Veo3FirstLastFrameNode/en.md)

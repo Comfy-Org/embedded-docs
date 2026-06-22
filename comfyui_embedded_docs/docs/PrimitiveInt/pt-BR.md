@@ -1,3 +1,5 @@
+# Inteiro
+
 O nó PrimitiveInt oferece uma maneira simples de trabalhar com valores inteiros em seu fluxo de trabalho. Ele recebe uma entrada do tipo inteiro e retorna o mesmo valor, sendo útil para passar parâmetros inteiros entre nós ou definir valores numéricos específicos para outras operações.
 
 ## Entradas

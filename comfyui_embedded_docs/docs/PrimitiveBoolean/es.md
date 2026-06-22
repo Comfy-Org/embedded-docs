@@ -1,3 +1,5 @@
+# Booleano
+
 El nodo Booleano proporciona una forma sencilla de pasar valores booleanos (verdadero/falso) a través de tu flujo de trabajo. Toma un valor booleano de entrada y genera el mismo valor sin cambios, permitiéndote controlar parámetros booleanos en otros nodos.
 
 ## Entradas

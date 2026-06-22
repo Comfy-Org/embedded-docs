@@ -1,3 +1,5 @@
+# Diferansiyel Difüzyon
+
 Diferansiyel Difüzyon düğümü, zaman adımı eşiklerine dayalı ikili bir maske uygulayarak gürültü giderme sürecini değiştirir. Orijinal gürültü giderme maskesi ile eşik tabanlı ikili maske arasında geçiş yapan bir maske oluşturarak difüzyon süreci gücünün kontrollü bir şekilde ayarlanmasını sağlar.
 
 ## Girişler

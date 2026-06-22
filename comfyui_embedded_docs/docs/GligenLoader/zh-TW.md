@@ -1,3 +1,5 @@
+# GLIGENLoader
+
 此節點會偵測位於 `ComfyUI/models/gligen` 資料夾中的模型，同時也會讀取在 extra_model_paths.yaml 檔案中設定的其他路徑中的模型。有時，您可能需要**重新整理 ComfyUI 介面**，讓它能夠從對應的資料夾中讀取模型檔案。
 
 `GLIGENLoader` 節點專門用於載入 GLIGEN 模型，這是一種專門的生成式模型。它簡化了從指定路徑擷取並初始化這些模型的流程，使其準備好用於後續的生成任務。

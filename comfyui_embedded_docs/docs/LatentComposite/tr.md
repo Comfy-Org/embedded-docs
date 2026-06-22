@@ -1,3 +1,5 @@
+# Gizli Birleştirme
+
 LatentComposite düğümü, iki gizli temsili tek bir çıktıda birleştirmek veya harmanlamak için tasarlanmıştır. Bu işlem, girdi gizli temsillerinin özelliklerini kontrollü bir şekilde birleştirerek kompozit görüntüler veya özellikler oluşturmak için gereklidir.
 
 ## Girdiler

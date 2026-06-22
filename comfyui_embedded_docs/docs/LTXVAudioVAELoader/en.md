@@ -1,3 +1,5 @@
+# Load LTXV Audio VAE
+
 The LTXV Audio VAE Loader node loads a pre-trained Audio Variational Autoencoder (VAE) model from a checkpoint file. It reads the specified checkpoint, loads its weights and metadata, and prepares the model for use in audio generation or processing workflows within ComfyUI.
 
 ## Inputs

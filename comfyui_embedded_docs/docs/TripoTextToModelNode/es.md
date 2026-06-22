@@ -1,3 +1,5 @@
+# Tripo: Texto a Modelo
+
 Genera modelos 3D de forma síncrona basándose en un prompt de texto mediante la API de Tripo. Este nodo toma una descripción textual y crea un modelo 3D con propiedades opcionales de textura y material.
 
 ## Entradas

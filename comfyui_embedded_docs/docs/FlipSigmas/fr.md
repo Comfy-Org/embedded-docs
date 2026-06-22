@@ -1,3 +1,5 @@
+# InverserSigmas
+
 Le nœud `FlipSigmas` est conçu pour manipuler la séquence des valeurs sigma utilisées dans les modèles de diffusion en inversant leur ordre et en garantissant que la première valeur soit non nulle si elle l'était initialement. Cette opération est cruciale pour adapter les niveaux de bruit dans l'ordre inverse, facilitant ainsi le processus de génération dans les modèles qui fonctionnent en réduisant progressivement le bruit à partir des données.
 
 ## Entrées

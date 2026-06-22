@@ -1,3 +1,5 @@
+# GuidanceSautCoucheDiTSimple
+
 Version simplifiée du nœud SkipLayerGuidanceDiT qui modifie uniquement le passage inconditionnel pendant le processus de débruitage. Ce nœud applique un guidage par saut de couches à des couches spécifiques du transformateur dans les modèles DiT (Diffusion Transformer) en ignorant sélectivement certaines couches lors du passage inconditionnel, en fonction des paramètres de temporisation et de couches spécifiés.
 
 ## Entrées

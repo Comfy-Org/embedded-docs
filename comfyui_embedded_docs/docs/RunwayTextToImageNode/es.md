@@ -1,3 +1,5 @@
+# Runway Texto a Imagen
+
 El nodo **Runway Text to Image** genera imágenes a partir de indicaciones de texto utilizando el modelo Gen 4 de Runway. Puedes proporcionar una descripción textual y, opcionalmente, incluir una imagen de referencia para guiar el proceso de generación. El nodo gestiona la comunicación con la API y devuelve la imagen generada.
 
 ## Entradas

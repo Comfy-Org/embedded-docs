@@ -1,3 +1,5 @@
+# GuardarGLB
+
 El nodo SaveGLB guarda datos de malla 3D o archivos 3D en el directorio de salida. Acepta datos de malla o varios formatos de archivo 3D (GLB, GLTF, OBJ, FBX, STL, USDZ) y los exporta con un prefijo de nombre de archivo especificado. Al guardar datos de malla, puede manejar múltiples mallas y agrega automáticamente metadatos del flujo de trabajo a los archivos cuando los metadatos están habilitados.
 
 ## Entradas

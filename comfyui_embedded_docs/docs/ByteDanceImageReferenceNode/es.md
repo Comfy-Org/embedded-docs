@@ -1,3 +1,5 @@
+# ByteDance Referencia de Imágenes a Video
+
 El Nodo de Referencia de Imagen ByteDance genera un video utilizando un texto de descripción y de una a cuatro imágenes de referencia. Envía las imágenes y el texto a un servicio API externo que crea un video que coincide con tu descripción, incorporando al mismo tiempo el estilo visual y el contenido de tus imágenes de referencia. El nodo proporciona varios controles para la resolución del video, la relación de aspecto, la duración y otros parámetros de generación.
 
 ## Entradas

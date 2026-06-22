@@ -1,3 +1,5 @@
+# Magnific Relight de Imagen
+
 El nodo Magnific Image Relight ajusta la iluminación de una imagen de entrada. Puede aplicar iluminación estilizada basada en un mensaje de texto o transferir las características de iluminación de una imagen de referencia opcional. El nodo ofrece varios controles para ajustar el brillo, el contraste y el ambiente general del resultado final.
 
 ## Entradas

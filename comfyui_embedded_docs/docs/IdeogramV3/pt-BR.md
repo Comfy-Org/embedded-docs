@@ -1,3 +1,5 @@
+# Ideogram V3
+
 O nó Ideogram V3 gera imagens utilizando o modelo Ideogram V3. Ele suporta tanto a geração regular de imagens a partir de prompts de texto quanto a edição de imagens quando uma imagem e uma máscara são fornecidas. O nó oferece vários controles para proporção de aspecto, resolução, velocidade de geração e imagens de referência de personagem opcionais.
 
 ## Entradas

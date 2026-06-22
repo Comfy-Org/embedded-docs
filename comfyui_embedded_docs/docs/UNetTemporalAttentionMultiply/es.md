@@ -1,3 +1,5 @@
+# Multiplicación de Atención Temporal UNet
+
 El nodo UNetTemporalAttentionMultiply aplica factores de multiplicación a diferentes tipos de mecanismos de atención en un modelo UNet temporal. Modifica el modelo ajustando los pesos de las capas de autoatención y atención cruzada, distinguiendo entre componentes estructurales y temporales. Esto permite ajustar con precisión cuánta influencia tiene cada tipo de atención en la salida del modelo.
 
 ## Entradas

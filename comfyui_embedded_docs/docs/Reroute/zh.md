@@ -1,3 +1,5 @@
+# Reroute
+
 节点名称：Reroute 节点
 节点用途：主要用于整理 ComfyUI 工作流中过长的连接线逻辑。
 

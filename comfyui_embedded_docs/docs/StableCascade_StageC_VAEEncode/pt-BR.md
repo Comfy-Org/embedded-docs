@@ -1,3 +1,5 @@
+# StableCascade_StageC_VAEEncode
+
 O nó **StableCascade_StageC_VAEEncode** processa imagens através de um codificador VAE para gerar representações latentes para os modelos Stable Cascade. Ele recebe uma imagem de entrada e a comprime usando o modelo VAE especificado, em seguida, gera duas representações latentes: uma para o estágio C e um placeholder para o estágio B. O parâmetro de compressão controla o quanto a imagem é reduzida antes da codificação.
 
 ## Entradas

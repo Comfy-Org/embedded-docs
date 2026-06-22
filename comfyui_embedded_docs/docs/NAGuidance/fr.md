@@ -1,3 +1,5 @@
+# Guidage d’Attention Normalisée
+
 Le nœud NAGuidance applique un guidage d'attention normalisé à un modèle. Cette technique permet d'utiliser des prompts négatifs avec des modèles distillés ou schnell en modifiant le mécanisme d'attention du modèle pendant le processus d'échantillonnage, afin d'éloigner la génération des concepts indésirables.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Meshy: Animar Modelo
+
 Este nó aplica uma animação específica a um modelo de personagem 3D que já foi rigado usando o serviço Meshy. Ele recebe um ID de tarefa de uma operação de rigging anterior e um ID de ação para selecionar a animação desejada da biblioteca. O nó então processa a solicitação e retorna o modelo animado nos formatos de arquivo GLB e FBX.
 
 ## Entradas

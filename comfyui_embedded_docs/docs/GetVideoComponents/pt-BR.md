@@ -1,3 +1,5 @@
+# Obter Componentes do Vídeo
+
 O nó **Get Video Components** extrai todos os elementos principais de um arquivo de vídeo. Ele separa o vídeo em quadros individuais, extrai a trilha de áudio e fornece as informações de taxa de quadros do vídeo. Isso permite que você trabalhe com cada componente de forma independente para processamento ou análise posterior.
 
 ## Entradas

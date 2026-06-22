@@ -1,3 +1,5 @@
+# PikaTextToVideoNode2_2
+
 Voici la traduction en français de la documentation du nœud Pika Text2Video v2.2 :
 
 Le nœud Pika Text2Video v2.2 envoie une invite textuelle à l'API Pika version 2.2 pour générer une vidéo. Il convertit votre description textuelle en vidéo en utilisant le service de génération vidéo par IA de Pika. Ce nœud vous permet de personnaliser divers aspects du processus de génération vidéo, notamment le rapport hauteur/largeur, la durée et la résolution.

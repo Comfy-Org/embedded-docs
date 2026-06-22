@@ -1,3 +1,5 @@
+# Generación de Video Vidu de Inicio a Fin
+
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción

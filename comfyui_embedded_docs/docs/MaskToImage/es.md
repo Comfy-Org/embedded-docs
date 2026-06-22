@@ -1,3 +1,5 @@
+# Convertir Máscara a Imagen
+
 El nodo `MaskToImage` está diseñado para convertir una máscara en un formato de imagen. Esta transformación permite visualizar y procesar máscaras como imágenes, facilitando un puente entre las operaciones basadas en máscaras y las aplicaciones basadas en imágenes.
 
 ## Entradas

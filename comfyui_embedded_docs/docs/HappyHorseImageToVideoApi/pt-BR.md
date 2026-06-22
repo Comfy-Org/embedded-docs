@@ -1,4 +1,4 @@
-# Visão Geral
+# HappyHorse Imagem para Vídeo
 
 Este nó gera um vídeo curto a partir de uma única imagem inicial usando o modelo HappyHorse. Você fornece uma imagem de primeiro quadro e um prompt de texto descrevendo o movimento desejado e a cena, e o nó cria um vídeo que continua a partir dessa imagem.
 

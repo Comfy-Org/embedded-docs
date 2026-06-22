@@ -1,3 +1,5 @@
+# EmptyARVideoLatent
+
 ## 概述
 
 EmptyARVideoLatent 節點會建立一個用於影片生成的空白潛在表示。它透過提供具有指定尺寸、長寬比和長度的零張量來初始化影片生成過程。

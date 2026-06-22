@@ -1,3 +1,5 @@
+# Tripo: Retarget para modelo com rig
+
 O nó TripoRetargetNode aplica animações predefinidas a modelos de personagens 3D por meio da reorientação de dados de movimento. Ele recebe um modelo 3D previamente rigado e aplica uma de várias animações predefinidas, gerando um arquivo de modelo 3D animado como saída. O nó se comunica com a API Tripo para processar a operação de reorientação de animação.
 
 ## Entradas

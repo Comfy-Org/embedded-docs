@@ -1,3 +1,5 @@
+# Deduplicate Images
+
 This node removes duplicate or very similar images from a batch. It works by creating a perceptual hash for each image—a simple numerical fingerprint based on its visual content—and then comparing them. Images whose hashes are more similar than a set threshold are considered duplicates and filtered out.
 
 ## Inputs

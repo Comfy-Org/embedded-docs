@@ -1,3 +1,5 @@
+# Rango de Pasos de Tiempo
+
 El nodo `ConditioningTimestepsRange` crea tres rangos de pasos de tiempo distintos para controlar cuándo se aplican los efectos de condicionamiento durante el proceso de generación. Toma valores de porcentaje de inicio y fin y divide el rango completo de pasos de tiempo (0.0 a 1.0) en tres segmentos: el rango principal entre los porcentajes especificados, el rango anterior al porcentaje de inicio y el rango posterior al porcentaje de fin.
 
 ## Entradas

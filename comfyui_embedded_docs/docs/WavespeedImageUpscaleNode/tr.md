@@ -1,3 +1,5 @@
+# WaveSpeed Görüntü Yükseltme
+
 WaveSpeed Görüntü Yükseltme düğümü, bir görüntünün çözünürlüğünü ve kalitesini artırmak için harici bir yapay zeka hizmeti kullanır. Tek bir giriş fotoğrafı alır ve bunu 2K, 4K veya 8K gibi daha yüksek bir hedef çözünürlüğe yükselterek daha keskin ve daha ayrıntılı bir sonuç üretir.
 
 ## Girişler

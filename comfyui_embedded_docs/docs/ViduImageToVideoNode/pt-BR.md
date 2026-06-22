@@ -1,3 +1,5 @@
+# Geração de Vídeo a partir de Imagem Vidu
+
 O nó de Geração de Vídeo a partir de Imagem Vidu cria um vídeo curto a partir de uma imagem inicial e uma descrição textual opcional. Ele utiliza um modelo de IA para gerar conteúdo de vídeo que dá continuidade ao quadro da imagem fornecida e retorna o vídeo resultante.
 
 ## Entradas

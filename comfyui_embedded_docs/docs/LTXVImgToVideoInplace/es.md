@@ -1,3 +1,5 @@
+# LTXVImgToVideoInplace
+
 El nodo LTXVImgToVideoInplace condiciona una representación latente de video codificando una imagen de entrada en sus fotogramas iniciales. Funciona utilizando un VAE para codificar la imagen en el espacio latente y luego fusionándola con las muestras latentes existentes según una intensidad especificada. Esto permite que una imagen sirva como punto de partida o señal de condicionamiento para la generación de video.
 
 ## Entradas

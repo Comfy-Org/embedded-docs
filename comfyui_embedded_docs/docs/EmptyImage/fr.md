@@ -1,3 +1,5 @@
+# ImageVide
+
 Voici la traduction en français de la documentation du nœud EmptyImage :
 
 ## Description de la fonction

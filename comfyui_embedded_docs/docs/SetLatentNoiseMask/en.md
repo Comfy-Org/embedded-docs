@@ -1,3 +1,5 @@
+# Set Latent Noise Mask
+
 This node is designed to apply a noise mask to a set of latent samples. It modifies the input samples by integrating a specified mask, thereby altering their noise characteristics.
 
 ## Inputs

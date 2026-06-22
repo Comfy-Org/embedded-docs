@@ -1,3 +1,5 @@
+# OptionsChromaRadiance
+
 Le nœud ChromaRadianceOptions vous permet de configurer les paramètres avancés du modèle Chroma Radiance. Il encapsule un modèle existant et applique des options spécifiques pendant le processus de débruitage en fonction des valeurs sigma, offrant un contrôle précis sur la taille des tuiles NeRF et d'autres paramètres liés à la radiance.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# EmptySD3LatentImage
+
 ## 概述
 
 EmptySD3LatentImage 節點會建立一個專為 Stable Diffusion 3 模型格式化的空白潛在影像張量。它會產生一個填充為零的張量，其維度與結構符合 SD3 管線的預期。這通常用作影像生成工作流程的起點。

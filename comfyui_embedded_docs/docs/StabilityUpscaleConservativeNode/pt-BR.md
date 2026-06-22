@@ -1,3 +1,5 @@
+# Stability AI Upscale Conservative
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleConservativeNode/en.md)
 
 Amplia a imagem com alterações mínimas para resolução 4K. Este nó utiliza o upscaling conservador da Stability AI para aumentar a resolução da imagem, preservando o conteúdo original e fazendo apenas alterações sutis.

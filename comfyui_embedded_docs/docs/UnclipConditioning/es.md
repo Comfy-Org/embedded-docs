@@ -1,3 +1,5 @@
+# Acondicionamiento unCLIP
+
 Este nodo está diseñado para integrar las salidas de visión CLIP en el proceso de condicionamiento, ajustando la influencia de estas salidas según parámetros específicos de intensidad y aumento de ruido. Enriquece el condicionamiento con contexto visual, mejorando el proceso de generación.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Aplicar Modelo de Estilo
+
 Este nó aplica um modelo de estilo a um condicionamento fornecido, aprimorando ou alterando seu estilo com base na saída de um modelo de visão CLIP. Ele integra o condicionamento do modelo de estilo ao condicionamento existente, permitindo uma mesclagem perfeita de estilos no processo de geração.
 
 ## Entradas

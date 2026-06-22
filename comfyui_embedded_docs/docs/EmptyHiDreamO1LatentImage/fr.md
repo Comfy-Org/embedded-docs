@@ -1,3 +1,5 @@
+# Image latente HiDream-O1 vide
+
 Voici la traduction en français de la documentation du nœud ComfyUI `EmptyHiDreamO1LatentImage` :
 
 ## Aperçu

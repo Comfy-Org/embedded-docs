@@ -1,3 +1,5 @@
+# Wan 2.7 Continuation Vidéo
+
 Voici la traduction en français de la documentation du nœud Wan2VideoContinuation :
 
 Le nœud Wan 2.7 Video Continuation génère un nouveau segment vidéo qui se poursuit de manière transparente à partir de la fin d'un clip vidéo d'entrée. Il utilise le modèle Wan 2.7 pour synthétiser la suite en fonction d'une invite textuelle et peut éventuellement guider la fin vers une image cible spécifique.

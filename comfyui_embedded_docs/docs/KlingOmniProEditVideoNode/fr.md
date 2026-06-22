@@ -1,3 +1,5 @@
+# Kling Omni Édition Vidéo (Pro)
+
 Le nœud Kling Omni Edit Video (Pro) utilise un modèle d'IA pour éditer une vidéo existante en fonction d'une description textuelle. Vous fournissez une vidéo source et un prompt, et le nœud génère une nouvelle vidéo de même durée avec les modifications demandées. Il peut éventuellement utiliser des images de référence pour guider le style et conserver l'audio original de la vidéo source.
 
 ## Entrées

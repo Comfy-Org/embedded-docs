@@ -1,3 +1,5 @@
+# Codificação de Texto CLIP para Lumina2
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodeLumina2/en.md)
 
 O nó CLIP Text Encode for Lumina2 codifica um prompt de sistema e um prompt de usuário usando um modelo CLIP em uma incorporação que pode guiar o modelo de difusão para gerar imagens específicas. Ele combina um prompt de sistema predefinido com seu prompt de texto personalizado e os processa através do modelo CLIP para criar dados de condicionamento para a geração de imagens.

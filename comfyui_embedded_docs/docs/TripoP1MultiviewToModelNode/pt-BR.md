@@ -1,3 +1,5 @@
+# Tripo P1: Multivisual para Modelo
+
 ## Visão Geral
 
 Este nó gera um modelo 3D a partir de 2 a 4 imagens de referência de um objeto ou personagem. Você fornece imagens de diferentes ângulos (frente, esquerda, costas, direita), e o nó cria uma malha 3D no formato GLB. A vista frontal é obrigatória, e você pode adicionar opcionalmente qualquer combinação das outras três vistas para obter melhores resultados.

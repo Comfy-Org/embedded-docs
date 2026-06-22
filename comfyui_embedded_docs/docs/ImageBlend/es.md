@@ -1,3 +1,5 @@
+# Mezcla de Imágenes
+
 El nodo `ImageBlend` está diseñado para fusionar dos imágenes según un modo de fusión y un factor de mezcla especificados. Admite varios modos de fusión como normal, multiplicar, pantalla, superposición, luz suave y diferencia, lo que permite técnicas versátiles de manipulación y composición de imágenes. Este nodo es esencial para crear imágenes compuestas ajustando la interacción visual entre dos capas de imagen.
 
 ## Entradas

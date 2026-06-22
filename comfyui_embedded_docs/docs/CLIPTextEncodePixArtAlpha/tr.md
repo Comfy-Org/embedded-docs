@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaPixArtAlpha
+
 Metni PixArt Alpha için kodlar ve çözünürlük koşullandırmasını ayarlar. Bu düğüm, metin girişini işler ve PixArt Alpha modelleri için özel olarak koşullandırma verileri oluşturmak üzere genişlik ve yükseklik bilgilerini ekler. PixArt Sigma modelleri için geçerli değildir.
 
 ## Girişler

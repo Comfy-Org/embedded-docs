@@ -1,3 +1,5 @@
+# Dividir Canais de Áudio
+
 O nó SplitAudioChannels separa áudio estéreo em canais esquerdo e direito individuais. Ele recebe uma entrada de áudio estéreo com dois canais e gera dois fluxos de áudio separados, um para o canal esquerdo e outro para o canal direito.
 
 ## Entradas

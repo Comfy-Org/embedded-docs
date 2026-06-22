@@ -1,3 +1,5 @@
+# InstructPixToPix条件
+
 InstructPixToPixConditioning 节点通过将正向和负向文本提示与图像数据结合，为 InstructPix2Pix 图像编辑准备条件数据。它通过 VAE 编码器处理输入图像以创建潜在表示，并将这些潜在数据附加到正向和负向条件数据中。该节点会自动处理图像尺寸，将其裁剪为 8 像素的倍数，以确保与 VAE 编码过程兼容。
 
 ## 输入

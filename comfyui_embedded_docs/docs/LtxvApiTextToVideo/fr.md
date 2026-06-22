@@ -1,3 +1,5 @@
+# LTXV Texte vers Vidéo
+
 Le nœud LTXV Texte vers Vidéo génère des vidéos de qualité professionnelle à partir d'une description textuelle. Il se connecte à une API externe pour créer des vidéos avec une durée, une résolution et une fréquence d'images personnalisables. Vous pouvez également choisir d'ajouter un son généré par IA à la vidéo.
 
 ## Entrées

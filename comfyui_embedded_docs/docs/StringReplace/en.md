@@ -1,3 +1,5 @@
+# Replace Text
+
 The StringReplace node performs text replacement operations on input strings. It searches for a specified substring within the input text and replaces all occurrences with a different substring. This node returns the modified string with all replacements applied.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# GizliTopluİş
+
 LatentBatch düğümü, iki latent örnek kümesini tek bir parti halinde birleştirmek ve birleştirme öncesinde gerekirse bir kümeyi diğerinin boyutlarına uyacak şekilde yeniden boyutlandırmak için tasarlanmıştır. Bu işlem, farklı latent temsillerin daha ileri işleme veya üretim görevleri için birleştirilmesini kolaylaştırır.
 
 ## Girişler

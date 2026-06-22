@@ -1,4 +1,4 @@
-# Topaz Video Enhance V2
+# Topaz 视频增强
 
 **Topaz Video Enhance V2** 节点允许您使用 Topaz Labs 的 AI 模型对视频进行放大和增强。它可以提高分辨率、通过插值调整帧率，并应用创意或写实增强效果，为您的视频素材注入新的活力。
 

@@ -1,3 +1,5 @@
+# CLIPSubtract
+
 El nodo CLIPSubtract realiza una operación de resta entre dos modelos CLIP. Toma el primer modelo CLIP como base y resta los parches clave del segundo modelo CLIP, con un multiplicador opcional para controlar la intensidad de la resta. Esto permite una combinación de modelos ajustada mediante la eliminación de características específicas de un modelo utilizando otro.
 
 ## Entradas

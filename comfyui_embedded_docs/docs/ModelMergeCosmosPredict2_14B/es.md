@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_14B
+
 El nodo `ModelMergeCosmosPredict2_14B` fusiona dos modelos de IA combinando sus componentes internos. Proporciona un control preciso sobre cuánto influye cada parte del segundo modelo en el resultado final fusionado, utilizando valores de peso ajustables para capas y componentes específicos.
 
 ## Entradas

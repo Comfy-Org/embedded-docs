@@ -1,3 +1,5 @@
+# TextEncodeZImageOmni
+
 TextEncodeZImageOmni düğümü, bir metin istemini ve isteğe bağlı referans görüntülerini, görüntü oluşturma modelleri için uygun bir koşullandırma formatına kodlayan gelişmiş bir koşullandırma düğümüdür. En fazla üç görüntüyü işleyebilir, bunları isteğe bağlı olarak bir görüntü kodlayıcı ve/veya VAE ile kodlayarak referans gizil değişkenler üretebilir ve bu görsel referansları belirli bir şablon yapısı kullanarak metin istemiyle bütünleştirir.
 
 ## Girişler

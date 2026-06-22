@@ -1,3 +1,5 @@
+# USOStyleReference
+
 O nó USOStyleReference aplica patches de referência de estilo a modelos usando características de imagem codificadas a partir da saída de visão do CLIP. Ele cria uma versão modificada do modelo de entrada incorporando informações de estilo extraídas de entradas visuais, permitindo capacidades de transferência de estilo ou geração baseada em referência.
 
 ## Entradas

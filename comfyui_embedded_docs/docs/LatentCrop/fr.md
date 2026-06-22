@@ -1,3 +1,5 @@
+# Couper Latent
+
 Le nœud LatentCrop est conçu pour effectuer des opérations de recadrage sur les représentations latentes des images. Il permet de spécifier les dimensions et la position du recadrage, offrant ainsi des modifications ciblées de l'espace latent.
 
 ## Entrées

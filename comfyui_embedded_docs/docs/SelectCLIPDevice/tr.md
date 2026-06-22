@@ -1,3 +1,5 @@
+# CLIP Cihazı Seç
+
 ## Genel Bakış
 
 Select CLIP Device düğümü, CLIP metin kodlayıcısının hangi cihazda (CPU veya belirli bir GPU) çalışacağını seçmenizi sağlar. Varsayılan olarak cihaz, model yükleyici tarafından atanır; ancak siz bunu geçersiz kılarak CPU veya belirli bir GPU kullanabilirsiniz. İstenen cihaz sisteminizde mevcut değilse, düğüm herhangi bir hata oluşturmak yerine CLIP'i değiştirmeden geçirir ve bir mesaj kaydeder.

@@ -1,3 +1,5 @@
+# Animasyonlu PNG Kaydet
+
 SaveAnimatedPNG düğümü, bir dizi kareden oluşan hareketli PNG görüntüleri oluşturmak ve kaydetmek için tasarlanmıştır. Tek tek görüntü karelerini tutarlı bir animasyon halinde birleştirerek, kare süresi, döngü ve meta veri ekleme gibi özelleştirmelere olanak tanır.
 
 ## Girişler

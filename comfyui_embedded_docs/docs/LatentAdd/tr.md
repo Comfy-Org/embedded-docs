@@ -1,3 +1,5 @@
+# GizliEkle
+
 LatentAdd düğümü, iki gizli temsilin (latent representation) toplanması için tasarlanmıştır. Bu temsillerde kodlanmış özelliklerin veya niteliklerin, öğe bazında toplama işlemi yapılarak birleştirilmesini sağlar.
 
 ## Girişler

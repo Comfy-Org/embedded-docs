@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 文字轉影片
+
 此節點使用 ByteDance 的 Seedance 2.0 API 從文字描述生成影片。它將您的提示詞發送到所選模型，等待影片處理完成，並返回最終結果。
 
 ## 輸入

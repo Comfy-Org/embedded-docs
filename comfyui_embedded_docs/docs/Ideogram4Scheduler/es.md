@@ -1,4 +1,4 @@
-# Programador Ideogram 4
+# Planificador Ideogram 4
 
 El nodo Programador Ideogram 4 genera una secuencia de valores sigma (niveles de ruido) para el proceso de muestreo de difusión, basándose en el programa de referencia Ideogram 4. Crea un programa de ruido personalizado que se adapta a las dimensiones de la imagen y permite un ajuste fino mediante parámetros estadísticos.
 

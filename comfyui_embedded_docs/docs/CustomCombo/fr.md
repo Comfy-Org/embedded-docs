@@ -1,3 +1,5 @@
+# Combo personnalisé
+
 Le nœud Custom Combo vous permet de créer un menu déroulant personnalisé avec votre propre liste d'options textuelles. Il s'agit d'un nœud axé sur l'interface utilisateur qui fournit une représentation backend pour garantir la compatibilité au sein de votre flux de travail. Lorsque vous sélectionnez une option dans le menu déroulant, le nœud génère ce texte sous forme de chaîne de caractères ainsi que sa position d'index.
 
 ## Entrées

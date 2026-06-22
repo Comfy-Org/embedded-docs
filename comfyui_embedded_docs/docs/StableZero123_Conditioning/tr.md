@@ -1,3 +1,5 @@
+# StabilSıfır123_Koşullandırma
+
 StableZero123_Conditioning düğümü, 3B model oluşturma için girdi görüntüsünü ve kamera açılarını işleyerek koşullandırma verileri ve gizli temsiller üretir. Görüntü özelliklerini kodlamak için bir CLIP görüş modeli kullanır, bunları yükseklik ve azimut açılarına dayalı kamera gömme bilgileriyle birleştirir ve aşağı akış 3B oluşturma görevleri için pozitif ve negatif koşullandırmanın yanı sıra bir gizli temsil üretir.
 
 ## Girdiler

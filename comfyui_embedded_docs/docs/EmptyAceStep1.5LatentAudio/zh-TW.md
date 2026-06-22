@@ -1,3 +1,5 @@
+# EmptyAceStep1.5LatentAudio
+
 ## 概述
 
 Empty Ace Step 1.5 Latent Audio 節點會建立一個專為音訊處理設計的空潛在張量。它會生成指定時長與批次大小的無聲音訊潛在表示，可作為 ComfyUI 中音訊生成工作流程的起點。此節點會根據輸入的秒數與固定的取樣率來計算潛在長度。

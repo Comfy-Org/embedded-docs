@@ -1,3 +1,5 @@
+# SalvarLatent
+
 O nó SaveLatent salva tensores latentes em disco como arquivos para uso posterior ou compartilhamento. Ele recebe amostras latentes e as salva no diretório de saída com metadados opcionais, incluindo informações do prompt. O nó gerencia automaticamente a nomenclatura e organização dos arquivos, preservando a estrutura dos dados latentes.
 
 ## Entradas

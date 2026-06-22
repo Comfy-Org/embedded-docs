@@ -1,3 +1,5 @@
+# Geração de Vídeo Vidu2 a partir de Texto
+
 O nó de Geração de Vídeo de Texto para Vídeo Vidu2 cria um vídeo a partir de uma descrição textual. Ele se conecta a uma API externa para gerar conteúdo de vídeo com base no seu prompt, permitindo controlar a duração, o estilo visual e o formato do vídeo.
 
 ## Entradas

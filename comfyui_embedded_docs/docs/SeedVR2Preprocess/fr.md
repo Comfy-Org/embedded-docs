@@ -1,4 +1,4 @@
-# Pré-traiter l'entrée SeedVR2
+# SeedVR2Preprocess
 
 Ce nœud ajoute un remplissage à une image redimensionnée pour la préparer au modèle SeedVR2. Il supprime le canal alpha lors du traitement, lequel est ensuite restauré par le nœud compagnon Post-traiter la sortie SeedVR2 en utilisant l'image redimensionnée d'origine.
 

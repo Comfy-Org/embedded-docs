@@ -1,3 +1,5 @@
+# Composição de Imagem com Máscara
+
 O nó `ImageCompositeMasked` é projetado para composição de imagens, permitindo a sobreposição de uma imagem de origem sobre uma imagem de destino em coordenadas especificadas, com redimensionamento e mascaramento opcionais.
 
 ## Entradas

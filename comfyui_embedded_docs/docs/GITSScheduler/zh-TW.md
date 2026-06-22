@@ -1,3 +1,5 @@
+# GITSScheduler
+
 GITSScheduler 節點為 GITS（生成式迭代時間步長）取樣方法生成噪聲排程的 sigma 值。它根據係數參數和步數計算 sigma 值，並可選用降噪因子來減少使用的總步數。該節點使用預定義的噪聲級別和插值來創建最終的 sigma 排程。
 
 ## 輸入

@@ -1,3 +1,5 @@
+# ModelHesaplamaVeriTürü
+
 ModelComputeDtype düğümü, bir modelin işleme sırasında kullandığı hesaplama veri türünü (hassasiyetini) değiştirir. Giriş modelinin bir kopyasını oluşturur ve seçilen hassasiyet ayarını uygular; bu, donanımınıza bağlı olarak bellek kullanımını ve performansı optimize etmeye yardımcı olabilir. Farklı hassasiyet yapılandırmalarını hata ayıklama ve test etme için kullanışlıdır.
 
 ## Girişler

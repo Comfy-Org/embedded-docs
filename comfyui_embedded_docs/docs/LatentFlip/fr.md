@@ -1,3 +1,5 @@
+# Retourner Latent
+
 Le nœud LatentFlip est conçu pour manipuler les représentations latentes en les retournant verticalement ou horizontalement. Cette opération permet de transformer l'espace latent, offrant potentiellement de nouvelles variations ou perspectives au sein des données.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# ModelMergeCosmos7B
+
 O nó ModelMergeCosmos7B mescla dois modelos de IA usando combinação ponderada de componentes específicos. Ele permite controle refinado sobre como diferentes partes dos modelos são combinadas, ajustando pesos individuais para embeddings de posição, blocos transformadores e camadas finais.
 
 ## Entradas

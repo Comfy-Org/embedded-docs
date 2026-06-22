@@ -1,3 +1,5 @@
+# Converter Mask em Imagem
+
 O nó `MaskToImage` foi projetado para converter uma máscara em formato de imagem. Essa transformação permite a visualização e o processamento adicional de máscaras como imagens, facilitando a ponte entre operações baseadas em máscaras e aplicações baseadas em imagens.
 
 ## Entradas

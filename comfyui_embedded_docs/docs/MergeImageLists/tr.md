@@ -1,3 +1,5 @@
+# Görüntü Listelerini Birleştir
+
 Görüntü Listelerini Birleştir düğümü, birden fazla ayrı görüntü listesini tek ve sürekli bir listede birleştirir. Bağlı her girdiden tüm görüntüleri alarak ve bunları alındıkları sırayla birbirine ekleyerek çalışır. Bu, farklı kaynaklardan gelen görüntüleri daha sonraki işlemler için düzenlemek veya gruplamak amacıyla kullanışlıdır.
 
 ## Girdiler

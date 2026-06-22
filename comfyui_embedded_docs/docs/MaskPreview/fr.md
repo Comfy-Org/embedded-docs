@@ -1,3 +1,5 @@
+# MaskPreview
+
 Le nœud MaskPreview enregistre les données de masque sous forme d'image d'aperçu dans votre répertoire de sortie ComfyUI, vous permettant d'inspecter visuellement les données de masque pendant l'exécution du workflow. Il convertit le masque d'entrée dans un format adapté à l'affichage d'image et l'enregistre avec un préfixe de nom de fichier configurable.
 
 ## Entrées

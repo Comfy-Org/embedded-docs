@@ -1,3 +1,5 @@
+# Hunyuan3Dv2ConditioningMultiView
+
 The Hunyuan3Dv2ConditioningMultiView node processes multi-view CLIP vision embeddings for 3D video generation. It takes optional front, left, back, and right view embeddings and combines them with positional encoding to create conditioning data for video models. The node outputs both positive conditioning from the combined embeddings and negative conditioning with zero values.
 
 ## Inputs

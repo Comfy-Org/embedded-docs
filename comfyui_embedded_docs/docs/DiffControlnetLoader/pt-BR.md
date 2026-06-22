@@ -1,3 +1,5 @@
+# Carregar Modelo ControlNet (diff)
+
 Este nó detecta modelos localizados na pasta `ComfyUI/models/controlnet` e também lê modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó DiffControlNetLoader foi projetado para carregar redes de controle diferenciais, que são modelos especializados capazes de modificar o comportamento de outro modelo com base em especificações de rede de controle. Este nó permite o ajuste dinâmico de comportamentos de modelos ao aplicar redes de controle diferenciais, facilitando a criação de saídas de modelo personalizadas.

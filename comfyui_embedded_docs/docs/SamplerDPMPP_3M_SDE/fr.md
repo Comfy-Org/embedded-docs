@@ -1,3 +1,5 @@
+# SamplerDPMPP_3M_SDE
+
 Le nœud SamplerDPMPP_3M_SDE crée un échantillonneur DPM++ 3M SDE destiné au processus d'échantillonnage. Cet échantillonneur utilise une méthode d'équation différentielle stochastique multi-étapes du troisième ordre avec des paramètres de bruit configurables. Le nœud vous permet de choisir si les calculs de bruit sont effectués sur le GPU ou le CPU.
 
 ## Entrées

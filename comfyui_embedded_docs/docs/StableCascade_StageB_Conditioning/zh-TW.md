@@ -1,3 +1,5 @@
+# StableCascade 階段 B 條件設定
+
 StableCascade_StageB_Conditioning 節點透過將現有的條件資訊與來自 Stage C 的先驗潛在表示相結合，為 Stable Cascade Stage B 的生成準備條件資料。它修改條件資料以包含來自 Stage C 的潛在樣本，使生成過程能夠利用先驗資訊產生更連貫的輸出。
 
 ## 輸入

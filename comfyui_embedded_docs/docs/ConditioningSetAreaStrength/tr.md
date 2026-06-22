@@ -1,3 +1,5 @@
+# KoşullandırmaAlanGücüAyarla
+
 Bu düğüm, belirli bir koşullandırma kümesinin güç özelliğini değiştirmek, böylece koşullandırmanın üretim süreci üzerindeki etkisini veya yoğunluğunu ayarlamak için tasarlanmıştır.
 
 ## Girişler

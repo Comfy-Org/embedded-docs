@@ -1,3 +1,5 @@
+# PatchModelAddDownscale (Kohya Deep Shrink)
+
 El nodo PatchModelAddDownscale implementa la funcionalidad Kohya Deep Shrink aplicando operaciones de reducción y aumento de escala a bloques específicos de un modelo. Reduce la resolución de las características intermedias durante el procesamiento y luego las restaura a su tamaño original, lo que puede mejorar el rendimiento manteniendo la calidad. El nodo permite un control preciso sobre cuándo y cómo ocurren estas operaciones de escalado durante la ejecución del modelo.
 
 ## Entradas

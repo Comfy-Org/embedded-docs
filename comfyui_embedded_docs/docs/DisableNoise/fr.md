@@ -1,3 +1,5 @@
+# DésactiverBruit
+
 Le nœud DisableNoise fournit une configuration de bruit vide qui peut être utilisée pour désactiver la génération de bruit dans les processus d'échantillonnage. Il renvoie un objet de bruit spécial ne contenant aucune donnée de bruit, permettant aux autres nœuds d'ignorer les opérations liées au bruit lorsqu'ils sont connectés à cette sortie.
 
 ## Entrées

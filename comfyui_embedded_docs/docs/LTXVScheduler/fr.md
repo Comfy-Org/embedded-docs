@@ -1,3 +1,5 @@
+# LTXVScheduler
+
 Le nœud LTXVScheduler génère des valeurs sigma pour des processus d'échantillonnage personnalisés. Il calcule les paramètres du plan de bruit en fonction du nombre de jetons dans le latent d'entrée et applique une transformation sigmoïde pour créer le plan d'échantillonnage. Le nœud peut éventuellement étirer les sigmas résultants pour correspondre à une valeur terminale spécifiée.
 
 ## Entrées

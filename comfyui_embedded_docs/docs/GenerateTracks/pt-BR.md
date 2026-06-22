@@ -1,3 +1,5 @@
+# GenerateTracks
+
 O nó `GenerateTracks` cria múltiplos caminhos de movimento paralelos para geração de vídeo. Ele define um caminho principal de um ponto inicial a um ponto final e, em seguida, gera um conjunto de trilhas paralelas a esse caminho, espaçadas uniformemente. Você pode controlar a forma do caminho (linha reta ou curva Bezier), a velocidade do movimento ao longo dele e em quais quadros as trilhas ficam visíveis.
 
 ## Entradas

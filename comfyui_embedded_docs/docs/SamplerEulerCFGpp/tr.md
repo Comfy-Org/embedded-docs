@@ -1,3 +1,5 @@
+# Euler Örnekleyici CFG++
+
 SamplerEulerCFGpp düğümü, çıktı üretmek için bir Euler CFG++ örnekleme yöntemi sağlar. Bu düğüm, Euler CFG++ örnekleyicisinin kullanıcı tercihine göre seçilebilen iki farklı uygulama sürümünü sunar.
 
 ## Girişler

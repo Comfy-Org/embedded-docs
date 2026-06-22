@@ -1,3 +1,5 @@
+# LatentBatchSeedBehavior
+
 O nó **LatentBatchSeedBehavior** é projetado para modificar o comportamento da semente (*seed*) em um lote de amostras latentes. Ele permite aleatorizar ou fixar a semente em todo o lote, influenciando o processo de geração ao introduzir variabilidade ou manter consistência nos resultados gerados.
 
 ## Entradas

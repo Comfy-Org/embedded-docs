@@ -1,3 +1,5 @@
+# CombineHooksFour
+
 El nodo **Combinar Ganchos [4]** fusiona hasta cuatro grupos de ganchos separados en un único grupo combinado. Toma cualquier combinación de las cuatro entradas de ganchos disponibles y las combina utilizando el sistema de combinación de ganchos de ComfyUI. Esto permite consolidar múltiples configuraciones de ganchos para un procesamiento optimizado en flujos de trabajo avanzados.
 
 ## Entradas

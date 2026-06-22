@@ -1,3 +1,5 @@
+# ModelMergeSimple
+
 El nodo ModelMergeSimple está diseñado para fusionar dos modelos combinando sus parámetros en función de una proporción especificada. Este nodo facilita la creación de modelos híbridos que integran las fortalezas o características de ambos modelos de entrada.
 
 El parámetro `ratio` determina la proporción de mezcla entre los dos modelos. Cuando este valor es 1, el modelo de salida es 100% `model1`, y cuando este valor es 0, el modelo de salida es 100% `model2`.

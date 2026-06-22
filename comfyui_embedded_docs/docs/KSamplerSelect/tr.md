@@ -1,3 +1,5 @@
+# KSamplerSeç
+
 KSamplerSelect düğümü, sağlanan örnekleyici adına göre belirli bir örnekleyici seçmek için tasarlanmıştır. Örnekleyici seçiminin karmaşıklığını soyutlayarak kullanıcıların görevleri için farklı örnekleme stratejileri arasında kolayca geçiş yapmasına olanak tanır.
 
 ## Girişler

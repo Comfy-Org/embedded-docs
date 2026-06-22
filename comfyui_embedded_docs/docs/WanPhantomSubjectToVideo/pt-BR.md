@@ -1,3 +1,5 @@
+# WanPhantomSubjectToVideo
+
 O nó WanPhantomSubjectToVideo gera conteúdo de vídeo processando entradas de condicionamento e imagens de referência opcionais. Ele cria representações latentes para geração de vídeo e pode incorporar orientação visual a partir de imagens de entrada, quando fornecidas. O nó prepara dados de condicionamento com concatenação temporal para modelos de vídeo e gera condicionamento modificado junto com dados de vídeo latente gerados.
 
 ## Entradas

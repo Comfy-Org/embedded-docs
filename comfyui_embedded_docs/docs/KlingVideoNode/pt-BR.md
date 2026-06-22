@@ -1,3 +1,5 @@
+# Kling 3.0 Vídeo
+
 Este nó gera vídeos usando o modelo Kling V3. Ele suporta dois modos principais: texto-para-vídeo, onde um vídeo é criado a partir de uma descrição textual, e imagem-para-vídeo, onde uma imagem existente é animada. Também oferece recursos avançados como criar vídeos com múltiplos segmentos usando descrições diferentes para cada parte (storyboards) e, opcionalmente, gerar áudio de acompanhamento.
 
 ## Entradas

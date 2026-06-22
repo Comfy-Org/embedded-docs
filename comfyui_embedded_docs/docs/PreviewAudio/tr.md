@@ -1,3 +1,5 @@
+# Sesi Önizle
+
 PreviewAudio düğümü, arayüzde doğrudan oynatılabilen geçici bir ses önizlemesi oluşturur. Giriş olarak ses verisi alır ve bir önizleme widget'ı oluşturarak kullanıcıların kalıcı dosyalar kaydetmeden ses çıktılarını dinlemelerine olanak tanır.
 
 ## Girişler

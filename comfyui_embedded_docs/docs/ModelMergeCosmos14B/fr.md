@@ -1,3 +1,5 @@
+# ModelMergeCosmos14B
+
 Le nœud **ModelMergeCosmos14B** fusionne deux modèles d'IA en utilisant une approche par blocs spécialement conçue pour l'architecture du modèle Cosmos 14B. Il permet de mélanger différents composants des modèles en ajustant les valeurs de poids entre 0.0 et 1.0 pour chaque bloc de modèle et couche d'incorporation.
 
 ## Entrées

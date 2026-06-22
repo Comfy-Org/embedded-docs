@@ -1,3 +1,5 @@
+# FluxDisableGuidance
+
 Este nó desabilita completamente a funcionalidade de incorporação de orientação para Flux e modelos similares. Ele recebe dados de condicionamento como entrada e remove o componente de orientação definindo-o como Nulo, efetivamente desativando o condicionamento baseado em orientação para o processo de geração.
 
 ## Entradas

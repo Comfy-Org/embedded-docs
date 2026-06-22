@@ -1,3 +1,5 @@
+# Recraft Crisp Upscale Image
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/en.md)
 
 Escala la imagen de forma síncrona. Mejora una imagen rasterizada dada utilizando la herramienta de 'escalado nítido', aumentando la resolución de la imagen y haciéndola más nítida y limpia.

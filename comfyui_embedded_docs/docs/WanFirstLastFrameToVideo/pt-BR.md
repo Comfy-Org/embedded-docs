@@ -1,3 +1,5 @@
+# WanFirstLastFrameToVideo
+
 O nó WanFirstLastFrameToVideo cria condicionamento de vídeo combinando quadros inicial e final com prompts de texto. Ele gera uma representação latente para geração de vídeo codificando o primeiro e o último quadro, aplicando máscaras para guiar o processo de geração e incorporando recursos de visão CLIP quando disponíveis. Este nó prepara condicionamentos positivo e negativo para modelos de vídeo gerarem sequências coerentes entre os pontos inicial e final especificados.
 
 ## Entradas

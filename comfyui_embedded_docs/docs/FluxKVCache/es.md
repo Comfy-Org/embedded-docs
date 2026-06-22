@@ -1,3 +1,5 @@
+# Flux KV Cache
+
 El nodo Caché KV de Flux permite una optimización de Caché Clave-Valor (KV) para modelos de la familia Flux. Esta optimización mejora el rendimiento al utilizar imágenes de referencia mediante el almacenamiento en caché de ciertos cálculos, lo que puede acelerar el proceso de generación.
 
 ## Entradas

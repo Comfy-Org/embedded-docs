@@ -1,3 +1,5 @@
+# Cargar Modelo de Escala Superior
+
 Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/upscale_models`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo desde la carpeta correspondiente.
 
 El nodo UpscaleModelLoader está diseñado para cargar modelos de escalado desde un directorio específico. Facilita la recuperación y preparación de modelos de escalado para tareas de ampliación de imágenes, asegurando que los modelos se carguen y configuren correctamente para su evaluación.

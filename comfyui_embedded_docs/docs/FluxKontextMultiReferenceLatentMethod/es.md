@@ -1,3 +1,5 @@
+# MétodoLatenteReferenciaMúltipleFluxKontext
+
 El nodo `FluxKontextMultiReferenceLatentMethod` modifica los datos de condicionamiento estableciendo un método específico de latentes de referencia. Anexa el método seleccionado a la entrada de condicionamiento, lo que afecta cómo se procesan los latentes de referencia en pasos posteriores de generación. Este nodo está marcado como experimental y forma parte del sistema de condicionamiento Flux.
 
 ## Entradas

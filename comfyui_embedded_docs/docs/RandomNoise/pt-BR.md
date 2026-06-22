@@ -1,3 +1,5 @@
+# Ruído Aleatório
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomNoise/en.md)
 
 O nó RandomNoise gera padrões de ruído aleatório com base em um valor de semente. Ele cria ruído reproduzível que pode ser usado para diversas tarefas de processamento e geração de imagens. A mesma semente sempre produzirá o mesmo padrão de ruído, permitindo resultados consistentes em múltiplas execuções.

@@ -1,4 +1,4 @@
-# GeminiImage 노드
+# GeminiImage
 
 GeminiImage 노드는 Google의 Gemini AI 모델로부터 텍스트와 이미지 응답을 생성합니다. 텍스트 프롬프트, 이미지, 파일을 포함한 멀티모달 입력을 제공하여 일관된 텍스트 및 이미지 출력을 생성할 수 있습니다. 이 노드는 최신 Gemini 모델과의 모든 API 통신 및 응답 파싱을 처리합니다.
 

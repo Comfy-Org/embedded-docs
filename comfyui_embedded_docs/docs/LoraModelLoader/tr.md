@@ -1,3 +1,5 @@
+# LoRA Modeli Yükle
+
 LoraModelLoader düğümü, eğitilmiş LoRA (Düşük Dereceli Uyarlama) ağırlıklarını bir difüzyon modeline uygular. Eğitilmiş bir LoRA modelinden LoRA ağırlıklarını yükleyerek ve bunların etki gücünü ayarlayarak temel modeli değiştirir. Bu, difüzyon modellerini sıfırdan yeniden eğitmeye gerek kalmadan davranışlarını özelleştirmenize olanak tanır.
 
 ## Girdiler

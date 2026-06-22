@@ -1,3 +1,5 @@
+# Stability AI Stable Image Ultra
+
 プロンプトと解像度に基づいて画像を同期的に生成します。このノードは、Stability AI の Stable Image Ultra モデルを使用して画像を作成し、テキストプロンプトを処理して、指定されたアスペクト比とスタイルで対応する画像を生成します。
 
 ## 入力

@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 CheckpointLoader 节点专为高级加载操作而设计，具体用于加载模型检查点及其配置。它有助于检索初始化和运行生成模型所需的模型组件，包括来自指定目录的配置和检查点。
 
 ## 输入

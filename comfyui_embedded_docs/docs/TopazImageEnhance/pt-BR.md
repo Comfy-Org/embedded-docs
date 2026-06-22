@@ -1,3 +1,5 @@
+# Topaz Image Enhance
+
 O nó Topaz Image Enhance fornece ampliação de escala e aprimoramento de imagem de nível profissional. Ele processa uma única imagem de entrada usando um modelo de IA baseado em nuvem para melhorar qualidade, detalhes e resolução. O nó oferece controle refinado sobre o processo de aprimoramento, incluindo opções para orientação criativa, foco no assunto e preservação facial.
 
 ## Entradas

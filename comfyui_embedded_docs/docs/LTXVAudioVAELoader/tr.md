@@ -1,3 +1,5 @@
+# LTXV Sesli VAE Yükleyici
+
 LTXV Ses VAE Yükleyici düğümü, bir kontrol noktası dosyasından önceden eğitilmiş bir Ses Değişkenli Otomatik Kodlayıcı (VAE) modeli yükler. Belirtilen kontrol noktasını okur, ağırlıklarını ve meta verilerini yükler ve modeli ComfyUI içinde ses oluşturma veya işleme iş akışlarında kullanıma hazır hale getirir.
 
 ## Girişler

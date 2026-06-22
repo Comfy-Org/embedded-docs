@@ -1,3 +1,5 @@
+# Efeitos de Vídeo com Dois Personagens Kling
+
 Este é um nó especializado em efeitos de vídeo com dois personagens da Kling. Ele cria vídeos com efeitos especiais baseados na cena selecionada. O nó recebe duas imagens e posiciona a primeira no lado esquerdo e a segunda no lado direito do vídeo composto. Diferentes efeitos visuais são aplicados dependendo da cena de efeito escolhida.
 
 ## Entradas

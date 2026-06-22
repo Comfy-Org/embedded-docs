@@ -1,3 +1,5 @@
+# 載入 ControlNet 模型
+
 此節點會偵測位於 `ComfyUI/models/controlnet` 資料夾中的模型，也會讀取在 extra_model_paths.yaml 檔案中設定的其他路徑中的模型。有時，您可能需要**重新整理 ComfyUI 介面**，以便讓它從對應的資料夾中讀取模型檔案。
 
 ControlNetLoader 節點旨在從指定路徑載入 ControlNet 模型。它在初始化 ControlNet 模型中扮演關鍵角色，這些模型對於對生成的內容應用控制機制，或根據控制訊號修改現有內容至關重要。

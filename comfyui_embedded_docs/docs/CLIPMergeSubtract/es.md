@@ -1,3 +1,5 @@
+# CLIPMergeSubtract
+
 El nodo CLIPMergeSubtract realiza la fusión de modelos restando los pesos de un modelo CLIP de otro. Crea un nuevo modelo CLIP clonando el primer modelo y luego restando los parches clave del segundo modelo, con un multiplicador ajustable para controlar la intensidad de la resta. Esto permite una combinación de modelos afinada al eliminar características específicas del modelo base.
 
 ## Entradas

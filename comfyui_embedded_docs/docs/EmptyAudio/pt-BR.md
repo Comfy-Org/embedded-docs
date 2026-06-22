@@ -1,3 +1,5 @@
+# Áudio Vazio
+
 O nó EmptyAudio gera um clipe de áudio silencioso com duração, taxa de amostragem e configuração de canais especificadas. Ele cria uma forma de onda contendo todos os zeros, produzindo silêncio completo durante a duração definida. Este nó é útil para criar áudio de espaço reservado ou gerar segmentos silenciosos em fluxos de trabalho de áudio.
 
 ## Entradas

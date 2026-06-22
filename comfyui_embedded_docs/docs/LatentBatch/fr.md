@@ -1,3 +1,5 @@
+# LatentBatch
+
 Le nœud LatentBatch est conçu pour fusionner deux ensembles d'échantillons latents en un seul lot, avec un redimensionnement potentiel d'un ensemble pour correspondre aux dimensions de l'autre avant la concaténation. Cette opération facilite la combinaison de différentes représentations latentes pour des tâches de traitement ou de génération ultérieures.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Tripo: Rig no modelo
+
 O nó TripoRigNode gera um modelo 3D rigado a partir do ID de tarefa de um modelo original. Ele envia uma solicitação para a API Tripo criar uma rig de animação no formato GLB usando a especificação Tripo e, em seguida, consulta a API até que a tarefa de geração da rig seja concluída.
 
 ## Entradas

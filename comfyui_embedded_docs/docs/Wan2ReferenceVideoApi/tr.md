@@ -1,3 +1,5 @@
+# Wan 2.7 Referanstan Videoya
+
 Bu düğüm, sağlanan referans materyallere dayanarak bir kişi veya nesneyi içeren bir video oluşturur. Metin isteminden video oluşturmak için Wan 2.7 modelini kullanır; tek karakterli performansları ve çok karakterli etkileşimleri destekler. Oluşturma işleminin çalışması için en az bir referans videosu veya görseli sağlamanız gerekir.
 
 ## Girişler

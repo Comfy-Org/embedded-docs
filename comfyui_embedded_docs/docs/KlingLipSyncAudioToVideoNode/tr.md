@@ -1,3 +1,5 @@
+# Kling Dudak Senkronizasyonu Video ile Ses
+
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları

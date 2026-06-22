@@ -1,3 +1,5 @@
+# HitPaw Amélioration Vidéo
+
 Voici la traduction en français de la documentation du nœud HitPaw Video Enhance, en respectant vos règles :
 
 Le nœud HitPaw Video Enhance utilise une API externe pour améliorer la qualité des vidéos. Il agrandit les vidéos basse résolution vers une résolution plus élevée, supprime les artefacts visuels et réduit le bruit. Le coût de traitement est calculé par seconde de la vidéo d'entrée.

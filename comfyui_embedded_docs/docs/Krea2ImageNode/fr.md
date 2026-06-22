@@ -1,3 +1,5 @@
+# Krea 2 Image
+
 Voici la traduction en français de la documentation du nœud Krea2ImageNode :
 
 ## Aperçu

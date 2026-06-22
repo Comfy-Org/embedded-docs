@@ -1,3 +1,5 @@
+# Recraft Net Büyütme Görüntüsü
+
 Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/en.md)
 
 Görüntüyü eşzamanlı olarak büyütür. 'Keskin büyütme' aracını kullanarak verilen bir raster görüntüyü iyileştirir, görüntü çözünürlüğünü artırır, görüntüyü daha keskin ve temiz hale getirir.

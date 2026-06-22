@@ -1,4 +1,4 @@
-# IdeogramV1 節點
+# Ideogram V1
 
 此文件由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！[在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramV1/en.md)
 

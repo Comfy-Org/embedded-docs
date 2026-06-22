@@ -1,3 +1,5 @@
+# WanTrackToVideo
+
 WanTrackToVideo düğümü, izleme noktalarını işleyerek ve karşılık gelen video karelerini oluşturarak hareket izleme verilerini video dizilerine dönüştürür. Giriş olarak izleme koordinatlarını alır ve video oluşturma için kullanılabilecek video koşullandırması ve gizli temsiller üretir. Hiçbir iz sağlanmadığında, standart görüntüden videoya dönüştürmeye geri döner.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Agrandir l'Image (à l'aide du Modèle)
+
 Ce nœud est conçu pour le suréchantillonnage d'images à l'aide d'un modèle de suréchantillonnage spécifié. Il gère efficacement le processus de suréchantillonnage en adaptant l'image au périphérique approprié, en optimisant l'utilisation de la mémoire et en appliquant le modèle de suréchantillonnage par tuiles pour éviter d'éventuelles erreurs de dépassement de mémoire.
 
 ## Entrées

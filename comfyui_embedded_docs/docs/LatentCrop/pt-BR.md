@@ -1,3 +1,5 @@
+# Crop Latent
+
 O nó **LatentCrop** foi projetado para realizar operações de corte em representações latentes de imagens. Ele permite especificar as dimensões e a posição do corte, possibilitando modificações direcionadas no espaço latente.
 
 ## Entradas

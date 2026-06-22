@@ -1,3 +1,5 @@
+# Flux2Scheduler
+
 Le nœud Flux2Scheduler génère une séquence de niveaux de bruit (sigmas) pour le processus de débruitage, spécialement conçue pour le modèle Flux. Il calcule un échantillonnage basé sur le nombre d'étapes de débruitage et les dimensions de l'image cible, ce qui influence la progression de l'élimination du bruit lors de la génération d'images.
 
 ## Entrées

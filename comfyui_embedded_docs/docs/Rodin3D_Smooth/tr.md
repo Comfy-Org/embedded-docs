@@ -1,3 +1,5 @@
+# Rodin 3D Oluştur - Pürüzsüz Oluştur
+
 Rodina 3D Düzgün düğümü, Rodin API'sini kullanarak giriş görüntülerini işleyip bunları düzgün 3D modellere dönüştürerek 3D varlıklar üretir. Birden fazla görüntüyü girdi olarak alır ve indirilebilir bir 3D model dosyası üretir. Düğüm, görev oluşturma, durum yoklaması ve dosya indirme dahil olmak üzere tüm üretim sürecini otomatik olarak yönetir.
 
 ## Girişler

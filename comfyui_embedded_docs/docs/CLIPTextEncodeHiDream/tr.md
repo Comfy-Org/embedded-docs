@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaHiDream
+
 CLIPTextEncodeHiDream düğümü, dört ayrı metin girdisini farklı dil modelleri (CLIP-L, CLIP-G, T5-XXL ve LLaMA) kullanarak işler ve bunları tek bir koşullama çıktısında birleştirir. Her metin girdisini karşılık gelen modeliyle tokenleştirir ve zamanlanmış kodlama yaklaşımı kullanarak birlikte kodlar. Bu sayede, birden fazla dil modelini aynı anda kullanarak daha karmaşık metin koşullaması sağlanır.
 
 ## Girdiler

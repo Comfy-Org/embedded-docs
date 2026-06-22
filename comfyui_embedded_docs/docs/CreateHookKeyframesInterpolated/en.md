@@ -1,3 +1,5 @@
+# Create Hook Keyframes Interp.
+
 Creates a sequence of hook keyframes with interpolated strength values between a start and end point. The node generates multiple keyframes that smoothly transition the strength parameter across a specified percentage range of the generation process, using various interpolation methods to control the transition curve.
 
 ## Inputs

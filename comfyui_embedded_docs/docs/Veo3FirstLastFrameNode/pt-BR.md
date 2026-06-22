@@ -1,3 +1,5 @@
+# Google Veo 3 Quadro Inicial-Final para Vídeo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Veo3FirstLastFrameNode/en.md)
 
 O nó Veo3FirstLastFrameNode usa o modelo Veo 3 do Google para gerar um vídeo baseado em um prompt de texto, com um primeiro e último quadro fornecidos que definem o início e o fim da sequência de vídeo.

@@ -1,3 +1,5 @@
+# Stability AI Upscale Criativo
+
 Aumenta a resolução da imagem com alterações mínimas para 4K. Este nó utiliza a tecnologia de upscaling criativo da Stability AI para melhorar a resolução da imagem, preservando o conteúdo original e adicionando detalhes criativos sutis.
 
 ## Entradas

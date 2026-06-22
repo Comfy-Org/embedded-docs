@@ -1,3 +1,5 @@
+# AcondicionamientoEstablecerAreaPorcentajeVideo
+
 El nodo `ConditioningSetAreaPercentageVideo` modifica los datos de condicionamiento definiendo un área específica y una región temporal para la generación de video. Permite establecer la posición, el tamaño y la duración del área donde se aplicará el condicionamiento, utilizando valores porcentuales relativos a las dimensiones generales. Esto es útil para enfocar la generación en partes específicas de una secuencia de video.
 
 ## Entradas

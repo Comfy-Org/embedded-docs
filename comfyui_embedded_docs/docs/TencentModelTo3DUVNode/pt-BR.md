@@ -1,3 +1,5 @@
+# Hunyuan3D: Modelo para UV
+
 Este nó utiliza a API Tencent Hunyuan3D para realizar o desdobramento UV em um modelo 3D. Ele recebe um arquivo de modelo 3D como entrada, envia-o para a API para processamento e retorna o modelo processado nos formatos OBJ e FBX, juntamente com uma imagem de textura UV gerada. O modelo de entrada deve ter menos de 30.000 faces.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Rodin 3D Générer - Génération Régulière
+
 Le nœud **Rodin 3D Regular** génère des actifs 3D en utilisant l'API Rodin. Il prend des images en entrée et les traite via le service Rodin pour créer des modèles 3D. Le nœud gère l'ensemble du flux de travail, de la création de la tâche au téléchargement des fichiers de modèle 3D finaux.
 
 ## Entrées

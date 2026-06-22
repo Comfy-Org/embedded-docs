@@ -1,3 +1,5 @@
+# ComfySoftSwitchNode
+
 ## 概述
 
 軟開關節點根據布林條件在兩個可能的輸入值之間進行選擇。當 `switch` 為 true 時，輸出 `on_true` 輸入的值；當 `switch` 為 false 時，輸出 `on_false` 輸入的值。此節點設計為惰性求值，意味著它只會根據開關狀態評估所需的輸入。

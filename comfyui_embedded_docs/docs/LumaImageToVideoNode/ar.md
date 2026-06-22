@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة LumaImageToVideoNode
+# Luma صورة إلى فيديو
 
 ## نظرة عامة
 

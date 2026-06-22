@@ -1,3 +1,5 @@
+# Découpage Vidéo
+
 Voici la traduction en français de la documentation du nœud Video Slice :
 
 Le nœud Video Slice vous permet d'extraire un segment spécifique d'une vidéo. Vous pouvez définir un temps de début et une durée pour rogner la vidéo, ou simplement ignorer les premières images. Si la durée demandée est plus longue que la vidéo restante, le nœud peut soit retourner ce qui est disponible, soit générer une erreur.

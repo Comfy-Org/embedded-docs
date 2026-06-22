@@ -1,3 +1,5 @@
+# Difusión Diferencial
+
 El nodo Difusión Diferencial modifica el proceso de eliminación de ruido aplicando una máscara binaria basada en umbrales de paso de tiempo. Crea una máscara que combina entre la máscara de eliminación de ruido original y una máscara binaria basada en umbrales, permitiendo un ajuste controlado de la intensidad del proceso de difusión.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Caixa Delimitadora
+
 O nó PrimitiveBoundingBox cria uma área retangular simples definida por sua posição e tamanho. Ele recebe coordenadas X e Y para o canto superior esquerdo, juntamente com valores de largura e altura, e gera uma estrutura de dados de caixa delimitadora que pode ser usada por outros nós em um fluxo de trabalho.
 
 ## Entradas

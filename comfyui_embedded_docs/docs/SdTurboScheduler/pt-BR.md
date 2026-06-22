@@ -1,3 +1,5 @@
+# SDTurboScheduler
+
 SDTurboScheduler foi projetado para gerar uma sequência de valores sigma para amostragem de imagens, ajustando a sequência com base no nível de redução de ruído e no número de etapas especificadas. Ele utiliza as capacidades de amostragem de um modelo específico para produzir esses valores sigma, que são cruciais para controlar o processo de redução de ruído durante a geração de imagens.
 
 ## Entradas

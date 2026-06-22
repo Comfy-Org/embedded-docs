@@ -1,3 +1,5 @@
+# MultiGPU_Options
+
 ## Overview
 
 This node allows you to specify the relative performance of each GPU when using multiple graphics cards with different speeds. It creates a group of GPU options that can be used to distribute work across devices, though the actual speed-based workload distribution is not yet implemented in the current version.

@@ -1,3 +1,5 @@
+# ÖrnekleyiciDPMPP_2M_SDE
+
 SamplerDPMPP_2M_SDE düğümü, difüzyon modelleri için bir DPM++ 2M SDE örnekleyicisi oluşturur. Bu örnekleyici, örnekler üretmek için stokastik diferansiyel denklemlerle birlikte ikinci dereceden diferansiyel denklem çözücüleri kullanır. Örnekleme sürecini kontrol etmek için farklı çözücü türleri ve gürültü işleme seçenekleri sunar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 This node is designed to process conditioning information in a batched manner specifically tailored for the StableZero123 model. It focuses on efficiently handling multiple sets of conditioning data simultaneously, optimizing the workflow for scenarios where batch processing is crucial.
 
 ## Inputs

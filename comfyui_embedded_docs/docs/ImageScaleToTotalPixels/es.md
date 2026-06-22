@@ -1,3 +1,5 @@
+# Escalar Imagen a Total de Pixeles
+
 El nodo ImageScaleToTotalPixels está diseñado para redimensionar imágenes a un número total de píxeles especificado, manteniendo la relación de aspecto. Proporciona varios métodos para escalar la imagen y alcanzar la cantidad de píxeles deseada.
 
 ## Entradas

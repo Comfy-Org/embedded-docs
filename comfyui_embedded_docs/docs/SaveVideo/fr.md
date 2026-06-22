@@ -1,3 +1,5 @@
+# Enregistrer la vidéo
+
 Le nœud SaveVideo enregistre le contenu vidéo d’entrée dans votre répertoire de sortie ComfyUI. Il vous permet de spécifier le préfixe du nom de fichier, le format vidéo et le codec pour le fichier sauvegardé. Le nœud gère automatiquement la numérotation des noms de fichiers avec incrémentation et peut inclure les métadonnées du workflow dans la vidéo enregistrée.
 
 ## Entrées

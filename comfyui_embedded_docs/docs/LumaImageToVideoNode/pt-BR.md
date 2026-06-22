@@ -1,3 +1,5 @@
+# Luma Imagem para Vídeo
+
 Gera vídeos de forma síncrona com base em um prompt de texto e imagens opcionais de início/fim. Este nó utiliza a API Luma para criar vídeos, permitindo definir o conteúdo do vídeo através de um prompt e, opcionalmente, especificar o primeiro e/ou último quadro para controlar a estrutura do vídeo.
 
 ## Entradas

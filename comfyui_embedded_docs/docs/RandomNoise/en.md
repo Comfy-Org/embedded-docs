@@ -1,3 +1,5 @@
+# RandomNoise
+
 The RandomNoise node generates random noise patterns based on a seed value. It creates reproducible noise that can be used for various image processing and generation tasks. The same seed will always produce the same noise pattern, allowing for consistent results across multiple runs.
 
 ## Inputs

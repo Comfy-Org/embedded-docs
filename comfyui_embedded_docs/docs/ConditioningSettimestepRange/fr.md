@@ -1,3 +1,5 @@
+# ConditionnementDéfinirPlagePasDeTemps
+
 Ce nœud est conçu pour ajuster l'aspect temporel du conditionnement en définissant une plage spécifique d'étapes temporelles. Il permet un contrôle précis des points de début et de fin du processus de conditionnement, permettant une génération plus ciblée et plus efficace.
 
 ## Entrées

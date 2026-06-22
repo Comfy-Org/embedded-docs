@@ -1,3 +1,5 @@
+# ModelBirleştirmeSD1
+
 ModelMergeSD1 düğümü, iki Stable Diffusion 1.x modelini, farklı model bileşenlerinin etkisini ayarlayarak birleştirmenize olanak tanır. Zaman gömme, etiket gömme ve tüm giriş, orta ve çıkış blokları üzerinde ayrı ayrı kontrol sağlayarak, belirli kullanım durumları için ince ayarlanmış model birleştirmeye imkan tanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Wan 2.7 Metinden Videoya
+
 Bu düğüm, Wan 2.7 modelini kullanarak bir metin açıklamasından video oluşturur. İsteğinizi, istemi işleyen ve bir video dosyası döndüren harici bir API'ye gönderir. Videonun hareketini ve zamanlamasını etkilemek için isteğe bağlı olarak bir ses klibi sağlayabilirsiniz.
 
 ## Girişler

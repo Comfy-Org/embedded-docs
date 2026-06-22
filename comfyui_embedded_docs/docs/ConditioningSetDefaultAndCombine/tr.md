@@ -1,3 +1,5 @@
+# ConditioningSetDefaultAndCombine
+
 Bu düğüm, birincil koşullandırma girdisini varsayılan bir koşullandırma girdisiyle kanca tabanlı bir sistem kullanarak birleştirir. İki koşullandırma kaynağını tek bir çıktıda birleştirerek, birincil koşullandırma eksik olduğunda varsayılan koşullandırmanın yedek veya temel görevi görmesini sağlar.
 
 ## Girdiler

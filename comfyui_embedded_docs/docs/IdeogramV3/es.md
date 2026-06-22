@@ -1,3 +1,5 @@
+# Ideogram V3
+
 El nodo Ideogram V3 genera imágenes utilizando el modelo Ideogram V3. Admite tanto la generación de imágenes estándar a partir de indicaciones de texto como la edición de imágenes cuando se proporcionan tanto una imagen como una máscara. El nodo ofrece varios controles para la relación de aspecto, resolución, velocidad de generación e imágenes de referencia de personajes opcionales.
 
 ## Entradas

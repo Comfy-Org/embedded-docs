@@ -1,3 +1,5 @@
+# SD_4XUpscale_Conditioning
+
 O nó **SD_4XUpscale_Conditioning** prepara dados de condicionamento para ampliar imagens usando modelos de difusão. Ele recebe imagens de entrada e dados de condicionamento, aplica escalonamento e aumento de ruído para criar condicionamento modificado que guia o processo de ampliação. O nó gera tanto condicionamento positivo quanto negativo, juntamente com representações latentes para as dimensões ampliadas.
 
 ## Entradas

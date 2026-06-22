@@ -1,3 +1,5 @@
+# Bria Quitar Fondo de Video
+
 Este nodo elimina el fondo de un video utilizando el servicio de IA de Bria. Procesa el video de entrada y reemplaza el fondo original con un color sólido de su elección. La operación se realiza a través de una API externa, y el resultado se devuelve como un nuevo archivo de video.
 
 ## Entradas

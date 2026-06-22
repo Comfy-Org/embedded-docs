@@ -1,3 +1,5 @@
+# Kling Lip Sync Vídeo com Texto
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncTextToVideoNode/en.md)
 
 Nó de Vídeo de Sincronização Labial com Texto Kling sincroniza os movimentos da boca em um arquivo de vídeo para corresponder a um prompt de texto. Ele recebe um vídeo de entrada e gera um novo vídeo onde os movimentos labiais do personagem são alinhados com o texto fornecido. O nó usa síntese de voz para criar uma sincronização de fala com aparência natural.

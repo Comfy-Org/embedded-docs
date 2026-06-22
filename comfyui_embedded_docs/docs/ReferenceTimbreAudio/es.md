@@ -1,3 +1,5 @@
+# ReferenceTimbreAudio
+
 Este nodo establece un timbre de audio de referencia para su uso en el proceso "ace step 1.5". Funciona tomando una entrada de condicionamiento y, opcionalmente, una representación latente de audio, y luego adjunta esos datos latentes al condicionamiento para que los utilicen nodos posteriores en el flujo de trabajo.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CLIPMergeSubtract
+
 Voici la traduction en français de la documentation du nœud CLIPMergeSubtract :
 
 Le nœud CLIPMergeSubtract effectue une fusion de modèles en soustrayant les poids d'un modèle CLIP d'un autre. Il crée un nouveau modèle CLIP en clonant le premier modèle, puis en soustrayant les correctifs de clés du second modèle, avec un multiplicateur ajustable pour contrôler l'intensité de la soustraction. Cela permet un mélange fin des modèles en supprimant des caractéristiques spécifiques du modèle de base.

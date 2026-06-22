@@ -1,3 +1,5 @@
+# Recraft Yaratıcı Büyütme Görüntüsü
+
 Recraft Creative Upscale Image düğümü, bir raster görüntüyü çözünürlüğünü artırarak iyileştirir. Görüntüdeki küçük detayları ve yüzleri iyileştirmeye odaklanan "yaratıcı büyütme" sürecini kullanır. Bu işlem, harici bir API aracılığıyla eşzamanlı olarak gerçekleştirilir.
 
 ## Girişler

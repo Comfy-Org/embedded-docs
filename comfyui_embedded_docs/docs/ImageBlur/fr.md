@@ -1,3 +1,5 @@
+# Flou d'image
+
 Le nœud `ImageBlur` applique un flou gaussien à une image, permettant d'adoucir les contours et de réduire les détails et le bruit. Il offre un contrôle sur l'intensité et l'étendue du flou via ses paramètres.
 
 ## Entrées

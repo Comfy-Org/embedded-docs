@@ -1,4 +1,4 @@
-# Visão Geral
+# MoGe Point Map to Mesh
 
 Este nó converte um mapa de pontos MoGe em uma malha 3D. Ele recebe os dados geométricos produzidos por um nó de estimativa de profundidade MoGe e os triangula em uma malha com coordenadas UV e uma textura opcional.
 

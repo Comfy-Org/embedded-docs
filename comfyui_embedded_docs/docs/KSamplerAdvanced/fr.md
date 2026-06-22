@@ -1,3 +1,5 @@
+# KSampler (Avancé)
+
 Le nœud KSamplerAdvanced est conçu pour améliorer le processus d'échantillonnage en proposant des configurations et techniques avancées. Il vise à offrir des options plus sophistiquées pour générer des échantillons à partir d'un modèle, en améliorant les fonctionnalités de base du KSampler.
 
 ## Entrées

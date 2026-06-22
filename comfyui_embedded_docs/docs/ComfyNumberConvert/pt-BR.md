@@ -1,3 +1,5 @@
+# Conversão de Número
+
 O nó Number Convert transforma vários tipos de dados de entrada em valores numéricos. Ele aceita uma única entrada dos tipos inteiro, ponto flutuante, string ou booleano e produz duas saídas: um número de ponto flutuante e um número inteiro. Isso é útil para converter valores de texto ou lógicos em um formato que possa ser utilizado por outros nós matemáticos ou de processamento no seu fluxo de trabalho.
 
 ## Entradas

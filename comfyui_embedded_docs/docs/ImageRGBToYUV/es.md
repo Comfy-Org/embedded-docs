@@ -1,3 +1,5 @@
+# ImageRGBToYUV
+
 El nodo ImageRGBToYUV convierte imágenes en color RGB al espacio de color YUV. Toma una imagen RGB como entrada y la separa en tres canales distintos: Y (luminancia), U (proyección azul) y V (proyección roja). Cada canal de salida se devuelve como una imagen en escala de grises que representa el componente YUV correspondiente.
 
 ## Entradas

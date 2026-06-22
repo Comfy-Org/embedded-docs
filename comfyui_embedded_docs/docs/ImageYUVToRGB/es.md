@@ -1,3 +1,5 @@
+# ImageYUVToRGB
+
 El nodo ImageYUVToRGB convierte imágenes del espacio de color YUV al espacio de color RGB. Toma tres imágenes de entrada separadas que representan los canales Y (luma), U (proyección azul) y V (proyección roja) y las combina en una sola imagen RGB mediante conversión de espacio de color.
 
 ## Entradas

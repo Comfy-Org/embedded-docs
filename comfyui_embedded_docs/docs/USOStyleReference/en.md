@@ -1,3 +1,5 @@
+# Apply USO Style Reference
+
 The USOStyleReference node applies style reference patches to models using encoded image features from CLIP vision output. It creates a modified version of the input model by incorporating style information extracted from visual inputs, enabling style transfer or reference-based generation capabilities.
 
 ## Inputs

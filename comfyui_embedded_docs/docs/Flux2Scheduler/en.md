@@ -1,3 +1,5 @@
+# Flux2Scheduler
+
 The Flux2Scheduler node generates a sequence of noise levels (sigmas) for the denoising process, specifically tailored for the Flux model. It calculates a schedule based on the number of denoising steps and the dimensions of the target image, which influences the progression of noise removal during image generation.
 
 ## Inputs

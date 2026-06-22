@@ -1,3 +1,5 @@
+# SamplerLMS
+
 The SamplerLMS node creates a Least Mean Squares (LMS) sampler for use in diffusion models. It generates a sampler object that can be used in the sampling process, allowing you to control the order of the LMS algorithm for numerical stability and accuracy.
 
 ## Inputs

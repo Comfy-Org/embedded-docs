@@ -1,3 +1,5 @@
+# EnregistrerWEBM
+
 Le nœud SaveWEBM enregistre une séquence d'images sous forme de fichier vidéo WEBM. Il prend plusieurs images en entrée et les encode en une vidéo en utilisant le codec VP9 ou AV1, avec des paramètres de qualité et une fréquence d'images configurables. Le fichier vidéo résultant est sauvegardé dans le répertoire de sortie avec des métadonnées incluant les informations de l'invite.
 
 ## Entrées

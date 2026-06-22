@@ -1,3 +1,5 @@
+# SamplerDPMPP_2M_SDE
+
 The SamplerDPMPP_2M_SDE node creates a DPM++ 2M SDE sampler for diffusion models. This sampler uses second-order differential equation solvers with stochastic differential equations to generate samples. It provides different solver types and noise handling options to control the sampling process.
 
 ## Inputs

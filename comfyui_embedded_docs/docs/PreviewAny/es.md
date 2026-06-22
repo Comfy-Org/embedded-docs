@@ -1,3 +1,5 @@
+# Vista previa de cualquier
+
 El nodo PreviewAny muestra una vista previa de cualquier tipo de dato de entrada en formato de texto. Acepta cualquier tipo de dato como entrada y lo convierte en una representación legible como cadena de texto para su visualización. El nodo maneja automáticamente diferentes tipos de datos, incluyendo cadenas de texto, números, valores booleanos y objetos complejos, intentando serializarlos en formato JSON.
 
 ## Entradas

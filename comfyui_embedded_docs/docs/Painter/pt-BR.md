@@ -1,3 +1,5 @@
+# Painter
+
 O nó Painter fornece uma tela interativa para criar ou editar imagens e máscaras diretamente no ComfyUI. Ele permite que você comece com uma tela em branco ou uma imagem existente, pinte sobre ela usando uma ferramenta de pincel e gere tanto a imagem resultante quanto uma máscara alfa correspondente. A máscara define as áreas pintadas, que são então compostas sobre a imagem base ou a cor de fundo.
 
 ## Entradas

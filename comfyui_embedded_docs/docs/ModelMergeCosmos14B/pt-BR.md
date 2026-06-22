@@ -1,3 +1,5 @@
+# ModelMergeCosmos14B
+
 O nó **ModelMergeCosmos14B** mescla dois modelos de IA usando uma abordagem baseada em blocos, projetada especificamente para a arquitetura do modelo Cosmos 14B. Ele permite combinar diferentes componentes dos modelos ajustando valores de peso entre 0.0 e 1.0 para cada bloco do modelo e camada de incorporação.
 
 ## Entradas

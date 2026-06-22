@@ -1,3 +1,5 @@
+# Guardar video
+
 El nodo SaveVideo guarda contenido de video de entrada en tu directorio de salida de ComfyUI. Permite especificar el prefijo del nombre de archivo, el formato de video y el códec para el archivo guardado. El nodo maneja automáticamente la numeración de archivos con incrementos de contador y puede incluir metadatos del flujo de trabajo en el video guardado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Carregar CLIP
+
 O nó CLIPLoader carrega um modelo de codificador de texto (CLIP, T5 ou similar) de um arquivo, disponibilizando-o para uso em outros nós que precisam converter prompts de texto em representações numéricas. Ele suporta uma ampla variedade de arquiteturas de modelo, cada uma exigindo um tipo específico de codificador.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ModelSamplingContinuousEDM
+
 This node is designed to enhance a model's sampling capabilities by integrating continuous EDM (Energy-based Diffusion Models) sampling techniques. It allows for the dynamic adjustment of the noise levels within the model's sampling process, offering a more refined control over the generation quality and diversity.
 
 ## Inputs

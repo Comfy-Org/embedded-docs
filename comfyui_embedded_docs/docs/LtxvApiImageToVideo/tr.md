@@ -1,3 +1,5 @@
+# LTXV Görüntüden Videoya
+
 LTXV Görüntüden Videoya düğümü, tek bir başlangıç görüntüsünden profesyonel kalitede bir video oluşturur. Metin isteminize dayalı olarak bir video dizisi oluşturmak için harici bir API kullanır; süreyi, çözünürlüğü ve kare hızını özelleştirmenize olanak tanır.
 
 ## Girişler

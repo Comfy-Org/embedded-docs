@@ -1,3 +1,5 @@
+# ModelBirleştirmeWAN2_1
+
 ModelMergeWAN2_1 düğümü, iki WAN2.1 modelini bileşenlerini ağırlıklı ortalamalar kullanarak harmanlayarak birleştirir. 30 bloklu 1.3B modeller ve 40 bloklu 14B modeller dahil olmak üzere farklı model boyutlarını destekler. Ek bir görüntü gömme bileşeni içeren görüntüden videoya modeller için özel işleme sahiptir. Modellerin her bir bileşeni, iki giriş modeli arasındaki harmanlama oranını kontrol etmek için ayrı ayrı ağırlıklandırılabilir.
 
 ## Girişler

@@ -1,4 +1,4 @@
-# Pré-Processamento da Entrada do SeedVR2
+# SeedVR2Preprocess
 
 Este nó adiciona bordas a uma imagem redimensionada para prepará-la para o modelo SeedVR2. Ele remove o canal alfa durante o processamento, que posteriormente é restaurado pelo nó complementar Pós-Processamento da Saída do SeedVR2 usando a imagem redimensionada original.
 

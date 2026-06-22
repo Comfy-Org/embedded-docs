@@ -1,3 +1,5 @@
+# Vidu2 Metinden Videoya Üretim
+
 Vidu2 Metinden Videoya Düğümü, bir metin açıklamasından video oluşturur. İsteğinize bağlı olarak video içeriği oluşturmak için harici bir API'ye bağlanır; böylece videonun uzunluğunu, görsel stilini ve formatını kontrol edebilirsiniz.
 
 ## Girişler

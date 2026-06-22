@@ -1,3 +1,5 @@
+# T5TokenizerOptions
+
 El nodo T5TokenizerOptions permite configurar ajustes del tokenizador para varios tipos de modelos T5. Establece el relleno mínimo y la longitud mínima para múltiples variantes del modelo T5, incluyendo t5xxl, pile_t5xl, t5base, mt5xl y umt5xxl. El nodo recibe una entrada CLIP y devuelve un CLIP modificado con las opciones de tokenizador especificadas aplicadas.
 
 ## Entradas

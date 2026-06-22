@@ -1,3 +1,5 @@
+# Diffusers Yükleyici
+
 DiffusersLoader düğümü, diffusers formatındaki önceden eğitilmiş modelleri yükler. `model_index.json` dosyası içeren geçerli diffusers model dizinlerini arar ve bunları MODEL, CLIP ve VAE bileşenleri olarak yükleyerek pipeline'da kullanıma sunar. Bu düğüm, kullanımdan kaldırılmış yükleyiciler kategorisinin bir parçasıdır ve Hugging Face diffusers modelleriyle uyumluluk sağlar.
 
 ## Girişler

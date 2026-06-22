@@ -1,3 +1,5 @@
+# GuardarAudio
+
 El nodo SaveAudio guarda datos de audio en un archivo en formato FLAC. Toma una entrada de audio y la escribe en el directorio de salida especificado con el prefijo de nombre de archivo indicado. El nodo maneja automáticamente la nomenclatura de archivos y garantiza que el audio se guarde correctamente para su uso posterior.
 
 ## Entradas

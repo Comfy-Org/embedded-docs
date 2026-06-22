@@ -1,4 +1,4 @@
-# InstructPixToPixConditioning
+# InstructPixToPix 조건 설정
 
 InstructPixToPixConditioning 노드는 긍정 및 부정 텍스트 프롬프트를 이미지 데이터와 결합하여 InstructPix2Pix 이미지 편집을 위한 컨디셔닝 데이터를 준비합니다. VAE 인코더를 통해 입력 이미지를 처리하여 잠재 표현을 생성하고, 이 잠재 텐서를 긍정 및 부정 컨디셔닝 데이터에 모두 첨부합니다. 이 노드는 VAE 인코딩 프로세스와의 호환성을 위해 이미지 크기를 8픽셀 단위로 자동으로 자릅니다.
 

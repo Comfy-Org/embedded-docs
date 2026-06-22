@@ -1,3 +1,5 @@
+# EmptyHunyuanLatentVideo
+
 `EmptyHunyuanLatentVideo` 節點與 `EmptyLatentImage` 節點類似。您可以將其視為用於影片生成的空白畫布，其中寬度、高度和長度定義了畫布的屬性，而批次大小則決定了要建立的畫布數量。此節點會建立準備用於後續影片生成任務的空白畫布。
 
 ## 輸入

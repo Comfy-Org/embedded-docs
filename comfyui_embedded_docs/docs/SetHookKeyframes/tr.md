@@ -1,3 +1,5 @@
+# Kanca Anahtar Karelerini Ayarla
+
 Set Hook Keyframes düğümü, mevcut hook gruplarına anahtar kare zamanlaması uygulamanızı sağlar. Bir hook grubu alır ve isteğe bağlı olarak, üretim sürecinde farklı hook'ların ne zaman çalıştırılacağını kontrol etmek için anahtar kare zamanlama bilgisi uygular. Anahtar kareler sağlandığında, düğüm hook grubunu kopyalar ve gruptaki tüm hook'lara anahtar kare zamanlamasını ayarlar.
 
 ## Girişler

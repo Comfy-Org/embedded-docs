@@ -1,3 +1,5 @@
+# WanAnimateToVideo
+
 O nó WanAnimateToVideo gera conteúdo de vídeo combinando múltiplas entradas de condicionamento, incluindo referências de pose, expressões faciais e elementos de fundo. Ele processa várias entradas de vídeo para criar sequências animadas coerentes, mantendo a consistência temporal entre os quadros. O nó opera em operações de espaço latente e pode estender vídeos existentes continuando padrões de movimento.
 
 ## Entradas

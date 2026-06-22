@@ -1,3 +1,5 @@
+# AñadirRuido
+
 Este nodo añade ruido controlado a una imagen latente utilizando un generador de ruido específico y valores sigma. Procesa la entrada a través del sistema de muestreo del modelo para aplicar un escalado de ruido adecuado al rango sigma dado, devolviendo una nueva representación latente con el ruido aplicado.
 
 ## Entradas

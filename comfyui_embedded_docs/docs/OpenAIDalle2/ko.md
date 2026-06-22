@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 OpenAI의 DALL·E 2 엔드포인트를 통해 이미지를 동기식으로 생성합니다.
 

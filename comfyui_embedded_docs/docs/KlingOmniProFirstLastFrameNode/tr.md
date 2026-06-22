@@ -1,3 +1,5 @@
+# Kling Omni İlk-Son-Kare'den Videoya (Pro)
+
 Bu düğüm, bir başlangıç karesi, isteğe bağlı bir bitiş karesi veya referans görüntüleri kullanarak en son Kling AI modeliyle video oluşturur. Her bir bölüm için ayrı istemler ve süreler içeren tek bir video veya çoklu çekimli bir storyboard (hikaye tahtası) oluşturabilir. Bu düğüm, bu girdileri işleyerek belirtilen uzunluk ve çözünürlükte, isteğe bağlı ses üretimiyle bir video üretir.
 
 ## Girdiler

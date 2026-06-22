@@ -1,3 +1,5 @@
+# PhotoMakerLoader
+
 The PhotoMakerLoader node loads a PhotoMaker model from the available model files. It reads the specified model file and prepares the PhotoMaker ID encoder for use in identity-based image generation tasks. This node is marked as experimental and is intended for testing purposes.
 
 ## Inputs

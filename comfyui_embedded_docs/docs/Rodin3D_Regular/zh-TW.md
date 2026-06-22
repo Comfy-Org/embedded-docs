@@ -1,4 +1,4 @@
-# Rodin 3D Regular 節點
+# Rodin 3D 生成 - 常規生成
 
 Rodin 3D Regular 節點使用 Rodin API 生成 3D 資產。它接收輸入影像，並透過 Rodin 服務進行處理以建立 3D 模型。此節點處理從任務建立到下載最終 3D 模型檔案的完整工作流程。
 

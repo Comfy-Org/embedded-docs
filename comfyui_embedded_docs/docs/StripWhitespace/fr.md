@@ -1,3 +1,5 @@
+# Supprimer les espaces
+
 Voici la traduction en français de la documentation du nœud ComfyUI `StripWhitespace` :
 
 Ce nœud supprime tous les espaces, tabulations ou sauts de ligne superflus au début et à la fin d’une chaîne de texte. Il prend une entrée textuelle et renvoie une version nettoyée, dont les espaces de début et de fin ont été retirés.

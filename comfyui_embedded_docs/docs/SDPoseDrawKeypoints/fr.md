@@ -1,3 +1,5 @@
+# SDPoseDrawKeypoints
+
 Le nœud SDPoseDrawKeypoints prend des données d'estimation de pose (points clés) et les dessine sous forme de squelette visuel sur une toile vierge. Il permet de sélectionner différentes parties de la pose à dessiner, comme le corps, les mains, le visage et les pieds, avec des largeurs de ligne et des tailles de points personnalisables. L'image résultante peut être utilisée pour la visualisation ou comme entrée pour d'autres nœuds nécessitant une image de pose.
 
 ## Entrées

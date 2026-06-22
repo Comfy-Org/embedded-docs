@@ -1,3 +1,5 @@
+# SamplerER_SDE
+
 O nó SamplerER_SDE fornece métodos de amostragem especializados para modelos de difusão, oferecendo diferentes tipos de solucionadores, incluindo ER-SDE, SDE de tempo reverso e abordagens ODE. Ele permite controle sobre o comportamento estocástico e os estágios computacionais do processo de amostragem. O nó ajusta automaticamente os parâmetros com base no tipo de solucionador selecionado para garantir o funcionamento adequado.
 
 ## Entradas

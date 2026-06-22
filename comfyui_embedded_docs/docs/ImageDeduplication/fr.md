@@ -1,3 +1,5 @@
+# Déduplication d'image
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Ce nœud supprime les images en double ou très similaires d'un lot. Il fonctionne en créant un hachage perceptuel pour chaque image — une simple empreinte numérique basée sur son contenu visuel — puis en les comparant. Les images dont les hachages sont plus similaires qu'un seuil défini sont considérées comme des doublons et filtrées.

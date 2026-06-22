@@ -1,3 +1,5 @@
+# Save Image (to Folder) (DEPRECATED)
+
 This node saves a list of images to a specified folder within ComfyUI's output directory. It takes multiple images as input and writes them to disk with a customizable filename prefix.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Bria Quitar Fondo de Imagen
+
 Este nodo elimina el fondo de una imagen utilizando el servicio Bria RMBG 2.0. Envía la imagen a una API externa para su procesamiento y devuelve el resultado con el fondo eliminado.
 
 ## Entradas

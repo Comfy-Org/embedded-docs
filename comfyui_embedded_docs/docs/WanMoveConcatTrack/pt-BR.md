@@ -1,3 +1,5 @@
+# WanMoveConcatTrack
+
 O nó WanMoveConcatTrack combina dois conjuntos de dados de rastreamento de movimento em uma única sequência mais longa. Ele funciona unindo os caminhos de rastreamento e as máscaras de visibilidade das faixas de entrada ao longo de suas respectivas dimensões. Se apenas uma faixa de entrada for fornecida, ele simplesmente repassa esses dados sem alterações.
 
 ## Entradas

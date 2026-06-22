@@ -1,3 +1,5 @@
+# Quiver Texte vers SVG
+
 Voici la traduction en français de la documentation du nœud Quiver Text to SVG :
 
 Le nœud Quiver Text to SVG génère une image vectorielle scalable (SVG) à partir d'une description textuelle en utilisant les modèles d'IA de Quiver. Vous pouvez éventuellement fournir des images de référence et des instructions de style pour guider le processus de génération.

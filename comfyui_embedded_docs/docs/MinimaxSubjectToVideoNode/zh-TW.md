@@ -1,3 +1,5 @@
+# MinimaxSubjectToVideoNode
+
 ## 概述
 
 使用 MiniMax 的 API，根據主體影像和文字提示同步生成影片。此節點接收主體影像和描述，根據提示建立動畫或呈現該主體的影片。

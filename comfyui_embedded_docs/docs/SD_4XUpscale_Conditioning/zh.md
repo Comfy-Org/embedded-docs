@@ -1,3 +1,5 @@
+# SD_4X放大条件
+
 SD_4XUpscale_Conditioning 节点用于准备扩散模型放大图像所需的 conditioning 数据。该节点接收输入图像和 conditioning 数据，然后应用缩放和噪声增强，生成修改后的 conditioning 以指导放大过程。节点输出正向和负向 conditioning，以及对应放大尺寸的潜空间表示。
 
 ## 输入

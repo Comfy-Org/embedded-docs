@@ -1,3 +1,5 @@
+# Ajout de bruit à l'image
+
 Le nœud ImageAddNoise ajoute un bruit aléatoire à une image d'entrée. Il utilise une graine aléatoire spécifiée pour générer des motifs de bruit cohérents et permet de contrôler l'intensité de l'effet de bruit. L'image résultante conserve les mêmes dimensions que l'image d'entrée, mais avec une texture visuelle supplémentaire.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Vidu 開始終了からビデオ生成
+
 以下、ご依頼いただいた内容を翻訳ルールに従い日本語に翻訳いたします。
 
 > このドキュメントはAIによって生成されました。誤りや改善のためのご提案がございましたら、ぜひご貢献ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduStartEndToVideoNode/en.md)

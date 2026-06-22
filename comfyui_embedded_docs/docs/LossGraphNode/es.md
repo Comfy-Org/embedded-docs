@@ -1,3 +1,5 @@
+# Graficar Pérdida
+
 El nodo LossGraphNode crea un gráfico visual de los valores de pérdida de entrenamiento a lo largo del tiempo y lo muestra como una imagen de vista previa. Toma datos de pérdida de procesos de entrenamiento y genera un gráfico de líneas que muestra cómo cambia la pérdida a través de los pasos de entrenamiento. El gráfico resultante incluye etiquetas en los ejes y los valores mínimo y máximo de pérdida.
 
 ## Entradas

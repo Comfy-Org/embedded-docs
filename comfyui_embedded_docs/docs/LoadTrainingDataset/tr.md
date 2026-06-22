@@ -1,3 +1,5 @@
+# Eğitim Verisetini Yükle
+
 Bu düğüm, daha önce diske kaydedilmiş kodlanmış bir eğitim veri kümesini yükler. ComfyUI çıktı dizini içindeki belirtilen bir klasördeki tüm veri parçası dosyalarını arar ve okur, ardından birleştirilmiş gizli vektörleri ve koşullandırma verilerini eğitim iş akışlarında kullanılmak üzere döndürür.
 
 ## Girişler

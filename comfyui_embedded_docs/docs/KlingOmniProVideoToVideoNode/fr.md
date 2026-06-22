@@ -1,3 +1,5 @@
+# Kling Omni Vidéo à Vidéo (Pro)
+
 Ce nœud utilise le modèle Kling AI pour générer une nouvelle vidéo à partir d'une vidéo d'entrée et d'images de référence optionnelles. Vous fournissez un prompt textuel décrivant le contenu souhaité, et le nœud transforme la vidéo de référence en conséquence. Il peut également intégrer jusqu'à quatre images de référence supplémentaires pour guider le style et le contenu de la sortie.
 
 ## Entrées

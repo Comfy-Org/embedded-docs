@@ -1,3 +1,5 @@
+# LatentOperationSharpen
+
 O nó **LatentOperationSharpen** aplica um efeito de nitidez a representações latentes usando um kernel Gaussiano. Ele funciona normalizando os dados latentes, aplicando uma convolução com um kernel de nitidez personalizado e, em seguida, restaurando a luminância original. Isso realça os detalhes e bordas na representação do espaço latente.
 
 ## Entradas

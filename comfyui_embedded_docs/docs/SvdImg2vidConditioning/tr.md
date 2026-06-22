@@ -1,3 +1,5 @@
+# SvdImg2vidConditioning
+
 Bu düğüm, video oluşturma görevleri için koşullandırma verileri üretmek üzere tasarlanmıştır ve özellikle SVD_img2vid modelleriyle kullanılmak üzere uyarlanmıştır. Başlangıç görüntüleri, video parametreleri ve bir VAE modeli dahil olmak üzere çeşitli girdiler alarak, video karelerinin oluşturulmasını yönlendirmek için kullanılabilecek koşullandırma verileri üretir.
 
 ## Girdiler

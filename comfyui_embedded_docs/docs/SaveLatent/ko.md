@@ -1,3 +1,5 @@
+# 잠재 데이터 저장
+
 이 문서는 AI로 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/en.md)
 
 SaveLatent 노드는 잠재 텐서를 디스크에 파일로 저장하여 추후 사용이나 공유가 가능하도록 합니다. 잠재 샘플을 입력받아 프롬프트 정보를 포함한 선택적 메타데이터와 함께 출력 디렉터리에 저장합니다. 이 노드는 잠재 데이터 구조를 유지하면서 파일 이름 지정과 구성을 자동으로 처리합니다.

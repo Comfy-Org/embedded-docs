@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 O nó GeminiNanoBanana2 gera ou edita imagens usando o modelo Gemini do Google Vertex AI. Ele funciona enviando um prompt de texto, juntamente com imagens de referência ou arquivos opcionais, para a API e retorna a imagem gerada e qualquer texto de acompanhamento.
 
 ## Entradas

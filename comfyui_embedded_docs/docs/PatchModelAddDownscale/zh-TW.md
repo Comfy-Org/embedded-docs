@@ -1,4 +1,4 @@
-# PatchModelAddDownscale 節點文檔
+# PatchModelAddDownscale（Kohya Deep Shrink）
 
 PatchModelAddDownscale 節點透過對模型中的特定區塊執行降採樣和升採樣操作，實現 Kohya Deep Shrink 功能。它在處理過程中降低中間特徵的解析度，然後將其恢復為原始大小，從而在保持品質的同時提升效能。此節點可精確控制這些縮放操作在模型執行期間的發生時間和方式。
 

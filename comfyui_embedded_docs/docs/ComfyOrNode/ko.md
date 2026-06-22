@@ -1,4 +1,4 @@
-# ComfyOrNode
+# Or
 
 ComfyOrNode는 입력 값 집합에 대해 논리적 OR 연산을 수행합니다. 제공된 값 중 하나라도 Python의 표준 진리값 규칙에 따라 참(true)으로 간주되면 `true`를 반환합니다.
 

@@ -1,3 +1,5 @@
+# UNetTemporalAttentionMultiply
+
 Le nœud UNetTemporalAttentionMultiply applique des facteurs de multiplication à différents types de mécanismes d'attention dans un modèle UNet temporel. Il modifie le modèle en ajustant les poids des couches d'auto-attention et d'attention croisée, en distinguant les composants structurels et temporels. Cela permet un réglage précis de l'influence de chaque type d'attention sur la sortie du modèle.
 
 ## Entrées

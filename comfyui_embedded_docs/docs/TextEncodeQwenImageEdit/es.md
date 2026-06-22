@@ -1,3 +1,5 @@
+# TextEncodeQwenImageEdit
+
 El nodo `TextEncodeQwenImageEdit` procesa indicaciones de texto e imágenes opcionales para generar datos de condicionamiento para la generación o edición de imágenes. Utiliza un modelo CLIP para tokenizar la entrada y, opcionalmente, puede codificar imágenes de referencia usando un VAE para crear latentes de referencia. Cuando se proporciona una imagen, esta se redimensiona automáticamente para mantener dimensiones de procesamiento consistentes.
 
 ## Entradas

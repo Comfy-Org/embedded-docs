@@ -1,3 +1,5 @@
+# Aumentar Resolução Latent Por
+
 O nó LatentUpscaleBy é projetado para aumentar a escala de representações latentes de imagens. Ele permite ajustar o fator de escala e o método de ampliação, oferecendo flexibilidade para melhorar a resolução de amostras latentes.
 
 ## Entradas

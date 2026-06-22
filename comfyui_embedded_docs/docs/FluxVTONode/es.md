@@ -1,4 +1,4 @@
-# Flux Virtual Try-On
+# Flux Prueba virtual de ropa
 
 Este nodo realiza una prueba virtual de vestimenta al vestir a una persona con una prenda proporcionada. Utiliza la API BFL Flux VTO para generar una imagen realista de la persona usando la prenda especificada.
 

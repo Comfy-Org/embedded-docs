@@ -1,3 +1,5 @@
+# Tripo : Multivue vers Modèle
+
 Ce nœud génère des modèles 3D de manière synchrone en utilisant l'API de Tripo, en traitant jusqu'à quatre images montrant différentes vues d'un objet. Une image de face et au moins une vue supplémentaire (gauche, arrière ou droite) sont nécessaires pour créer un modèle 3D complet avec des options de texture et de matériau.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Vectoriser une image avec Recraft
+
 Génère un SVG de manière synchrone à partir d'une image d'entrée. Ce nœud convertit les images matricielles au format graphique vectoriel en traitant chaque image du lot d'entrée et en combinant les résultats en un seul fichier SVG.
 
 ## Entrées

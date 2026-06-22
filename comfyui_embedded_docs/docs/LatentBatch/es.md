@@ -1,3 +1,5 @@
+# LatentBatch
+
 El nodo LatentBatch está diseñado para fusionar dos conjuntos de muestras latentes en un solo lote, redimensionando potencialmente un conjunto para que coincida con las dimensiones del otro antes de la concatenación. Esta operación facilita la combinación de diferentes representaciones latentes para tareas de procesamiento o generación posteriores.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# QwenImageDiffsynthControlnet 節點
+# QwenImageDiffsynthControlnet
 
 QwenImageDiffsynthControlnet 節點應用擴散合成控制網路修補程式來修改基礎模型的行為。它使用影像輸入和可選遮罩，以可調整的強度引導模型的生成過程，建立一個整合控制網路影響的修補模型，以實現更受控制的影像合成。
 

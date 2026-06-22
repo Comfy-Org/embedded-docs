@@ -1,3 +1,5 @@
+# Diffusão Diferencial
+
 O nó Differential Diffusion modifica o processo de remoção de ruído aplicando uma máscara binária baseada em limites de passo de tempo. Ele cria uma máscara que faz uma mescla entre a máscara de remoção de ruído original e uma máscara binária baseada em limite, permitindo o ajuste controlado da intensidade do processo de difusão.
 
 ## Entradas

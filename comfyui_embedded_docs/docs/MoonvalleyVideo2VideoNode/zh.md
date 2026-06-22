@@ -1,4 +1,4 @@
-# Moonvalley Marey 视频到视频节点
+# MoonvalleyVideo2VideoNode
 
 此节点基于文本描述，将输入视频转换为新视频。它使用 Moonvalley API 生成与提示词匹配的视频，同时保留原始视频的运动或姿态特征。您可以通过文本提示词和各种生成参数来控制输出视频的风格和内容。
 

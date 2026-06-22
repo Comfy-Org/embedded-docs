@@ -1,3 +1,5 @@
+# OpenAI GPT Image 2
+
 Gera imagens de forma síncrona por meio do endpoint GPT Image da OpenAI. Este nó pode criar novas imagens a partir de prompts de texto ou editar imagens existentes quando uma imagem de entrada e uma máscara opcional são fornecidas. Ele suporta vários modelos GPT Image, incluindo gpt-image-1, gpt-image-1.5 e gpt-image-2.
 
 ## Entradas

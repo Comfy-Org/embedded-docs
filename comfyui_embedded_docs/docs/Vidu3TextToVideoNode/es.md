@@ -1,3 +1,5 @@
+# Generación de video de texto a video Vidu Q3
+
 El nodo de generación de texto a video Vidu Q3 crea un video a partir de una descripción textual. Utiliza el modelo Vidu Q3 Pro o Q3 Turbo para generar contenido de video basado en tu indicación, permitiéndote controlar la duración, resolución, relación de aspecto del video y si incluye audio.
 
 ## Entradas

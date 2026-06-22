@@ -1,3 +1,5 @@
+# VoxelToMesh
+
 Le nœud VoxelToMeshBasic convertit des données voxel 3D en une géométrie de maillage en extrayant une surface à une valeur de seuil spécifiée. Il traite chaque grille de voxel en entrée et génère des sommets et des faces qui forment une représentation 3D sous forme de maillage.
 
 ## Entrées

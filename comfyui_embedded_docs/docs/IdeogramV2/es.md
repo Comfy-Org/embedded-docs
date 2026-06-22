@@ -1,3 +1,5 @@
+# Ideogram V2
+
 El nodo Ideogram V2 genera imágenes utilizando el modelo de IA Ideogram V2. Acepta indicaciones de texto y diversas configuraciones de generación para crear imágenes a través de un servicio API. El nodo admite diferentes relaciones de aspecto, resoluciones y opciones de estilo para personalizar las imágenes de salida.
 
 ## Entradas

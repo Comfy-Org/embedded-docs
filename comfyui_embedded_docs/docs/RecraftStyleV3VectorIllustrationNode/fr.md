@@ -1,3 +1,5 @@
+# RecraftStyleV3VectorIllustrationNode
+
 Ce nœud configure un style à utiliser avec l'API Recraft, en sélectionnant spécifiquement le style `vector_illustration`. Il vous permet de choisir éventuellement un sous-style plus spécifique au sein de cette catégorie. Le nœud produit un objet de configuration de style qui peut être transmis à d'autres nœuds de l'API Recraft.
 
 ## Entrées

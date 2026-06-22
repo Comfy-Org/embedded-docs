@@ -1,3 +1,5 @@
+# SaveGLB
+
 Le nœud SaveGLB enregistre des données de maillage 3D ou des fichiers 3D dans le répertoire de sortie. Il accepte des données de maillage ou divers formats de fichiers 3D (GLB, GLTF, OBJ, FBX, STL, USDZ) et les exporte avec un préfixe de nom de fichier spécifié. Lors de l'enregistrement de données de maillage, il peut gérer plusieurs maillages et ajoute automatiquement les métadonnées du workflow aux fichiers lorsque les métadonnées sont activées.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Regroupement par résolution
+
 Ce nœud organise une liste d'images latentes et leurs données de conditionnement correspondantes en fonction de leur résolution. Il regroupe les éléments partageant la même hauteur et largeur, créant des lots séparés pour chaque résolution unique. Ce processus est utile pour préparer les données en vue d'un entraînement efficace, car il permet aux modèles de traiter ensemble plusieurs éléments de même taille.
 
 ## Entrées

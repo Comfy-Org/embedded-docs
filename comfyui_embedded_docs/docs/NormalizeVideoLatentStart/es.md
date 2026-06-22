@@ -1,3 +1,5 @@
+# NormalizeVideoLatentStart
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeVideoLatentStart/en.md)
 
 Este nodo ajusta los primeros fotogramas de un latente de video para que se asemejen más a los fotogramas posteriores. Calcula el promedio y la variación a partir de un conjunto de fotogramas de referencia ubicados más adelante en el video, y aplica esas mismas características a los fotogramas iniciales. Esto ayuda a crear una transición visual más suave y consistente al comienzo de un video.

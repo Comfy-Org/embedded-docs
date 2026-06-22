@@ -1,3 +1,5 @@
+# HunyuanRefinerLatent
+
 گره `HunyuanRefinerLatent`، ورودی‌های conditioning و latent را برای عملیات refinement پردازش می‌کند. این گره با اعمال نویزافزایی (noise augmentation) بر روی هر دو conditioning مثبت و منفی و ترکیب داده‌های تصویر latent، یک خروجی latent جدید با ابعاد مشخص برای پردازش‌های بعدی تولید می‌کند.
 
 ## ورودی‌ها

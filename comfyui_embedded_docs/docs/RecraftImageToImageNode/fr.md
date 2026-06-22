@@ -1,3 +1,5 @@
+# Recraft Image vers Image
+
 Ce nœud modifie une image existante en fonction d'un prompt textuel et d'un paramètre de force. Il utilise l'API Recraft pour transformer l'image d'entrée selon la description fournie, tout en conservant une certaine similarité avec l'image originale en fonction du réglage de force.
 
 ## Entrées

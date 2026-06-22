@@ -1,3 +1,5 @@
+# Load3DAnimation
+
 O nó **Load3DAnimation** é um nó essencial para carregar e processar arquivos de modelos 3D. Ao carregar o nó, ele recupera automaticamente os recursos 3D disponíveis em `ComfyUI/input/3d/`. Você também pode enviar arquivos 3D compatíveis para visualização usando a função de upload.
 
 > - A maioria das funções deste nó são as mesmas do nó Load 3D, mas este nó suporta o carregamento de modelos com animações, e você pode visualizar as animações correspondentes no nó.

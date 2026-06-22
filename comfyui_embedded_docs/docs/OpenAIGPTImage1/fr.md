@@ -1,3 +1,5 @@
+# OpenAI GPT Image 2
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Génère des images de manière synchrone via le point de terminaison GPT Image d'OpenAI. Ce nœud peut créer de nouvelles images à partir de descriptions textuelles ou modifier des images existantes lorsqu'une image d'entrée et un masque optionnel sont fournis. Il prend en charge plusieurs modèles GPT Image, notamment gpt-image-1, gpt-image-1.5 et gpt-image-2.

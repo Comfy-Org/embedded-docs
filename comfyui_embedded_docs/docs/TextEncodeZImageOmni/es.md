@@ -1,3 +1,5 @@
+# TextEncodeZImageOmni
+
 El nodo `TextEncodeZImageOmni` es un nodo de condicionamiento avanzado que codifica un mensaje de texto junto con imágenes de referencia opcionales en un formato de condicionamiento adecuado para modelos de generación de imágenes. Puede procesar hasta tres imágenes, codificándolas opcionalmente con un codificador de visión y/o un VAE para producir latentes de referencia, e integra estas referencias visuales con el mensaje de texto utilizando una estructura de plantilla específica.
 
 ## Entradas

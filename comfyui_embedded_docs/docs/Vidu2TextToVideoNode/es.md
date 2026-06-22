@@ -1,3 +1,5 @@
+# Generación de video de Vidu2 desde texto
+
 El nodo de Generación de Video de Texto a Video Vidu2 crea un video a partir de una descripción textual. Se conecta a una API externa para generar contenido de video basado en tu indicación, permitiéndote controlar la duración, el estilo visual y el formato del video.
 
 ## Entradas

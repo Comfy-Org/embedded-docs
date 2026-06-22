@@ -1,3 +1,5 @@
+# Wan 2.7 Görüntüden Videoya
+
 Wan 2.7 Görüntüden Videoya düğümü, bir başlangıç karesi görüntüsünden başlayarak bir video oluşturur. İsteğe bağlı olarak, iki kare arasında geçiş oluşturmak için bir bitiş karesi görüntüsü veya videonun hareketini ve zamanlamasını yönlendirmek için bir ses dosyası sağlayabilirsiniz. Düğüm, metin açıklamanıza dayanarak sahneyi canlandırmak için bir yapay zeka modeli kullanır.
 
 ## Girişler

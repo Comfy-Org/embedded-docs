@@ -1,3 +1,5 @@
+# CLIPTextEncodeHiDream
+
 CLIPTextEncodeHiDream 節點使用不同的語言模型（CLIP-L、CLIP-G、T5-XXL 和 LLaMA）處理四個獨立的文字輸入，並將它們組合成單一的條件輸出。它使用對應的模型對每個文字輸入進行標記化，並透過排程編碼方法將它們一起編碼，從而能夠同時利用多個語言模型實現更複雜的文字條件控制。
 
 ## 輸入

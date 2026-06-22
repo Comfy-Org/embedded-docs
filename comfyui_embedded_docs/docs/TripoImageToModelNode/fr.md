@@ -1,3 +1,5 @@
+# Tripo : Image vers Modèle
+
 Voici la traduction en français de la documentation du nœud TripoImageToModelNode :
 
 Génère des modèles 3D de manière synchrone à partir d'une seule image en utilisant l'API Tripo. Ce nœud prend une image en entrée et la convertit en modèle 3D avec diverses options de personnalisation pour la texture, la qualité et les propriétés du modèle.

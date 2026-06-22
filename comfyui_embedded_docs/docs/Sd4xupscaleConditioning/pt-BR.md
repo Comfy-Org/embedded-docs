@@ -1,3 +1,5 @@
+# Sd4xupscaleConditioning
+
 Este nó é especializado em melhorar a resolução de imagens por meio de um processo de ampliação em 4x, incorporando elementos de condicionamento para refinar a saída. Ele utiliza técnicas de difusão para ampliar imagens, permitindo o ajuste da proporção de escala e do aumento de ruído para refinar o processo de aprimoramento.
 
 ## Entradas

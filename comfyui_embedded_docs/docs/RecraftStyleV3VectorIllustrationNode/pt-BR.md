@@ -1,3 +1,5 @@
+# RecraftStyleV3VectorIllustrationNode
+
 Este nó configura um estilo para uso com a API Recraft, selecionando especificamente o estilo `vector_illustration`. Ele permite que você escolha opcionalmente um subestilo mais específico dentro dessa categoria. O nó gera um objeto de configuração de estilo que pode ser passado para outros nós da API Recraft.
 
 ## Entradas

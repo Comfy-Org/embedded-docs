@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 The DiffusersLoader node is designed for loading models from the diffusers library, specifically handling the loading of UNet, CLIP, and VAE models based on provided model paths. It facilitates the integration of these models into the ComfyUI framework, enabling advanced functionalities such as text-to-image generation, image manipulation, and more.
 
 ## Inputs

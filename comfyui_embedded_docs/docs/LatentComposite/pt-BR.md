@@ -1,3 +1,5 @@
+# Latent Composite
+
 O nó LatentComposite foi projetado para mesclar ou combinar duas representações latentes em uma única saída. Esse processo é essencial para criar imagens compostas ou características combinando as propriedades das entradas latentes de forma controlada.
 
 ## Entradas

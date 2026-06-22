@@ -1,3 +1,5 @@
+# FluxKontext Görüntü Ölçeği
+
 Bu düğüm, giriş görüntüsünü, Flux Kontext model eğitimi sırasında kullanılan optimum boyuta, Lanczos algoritmasını kullanarak ve giriş görüntüsünün en-boy oranına göre ölçeklendirir. Bu düğüm, özellikle büyük boyutlu görüntüler girilirken kullanışlıdır; çünkü aşırı büyük girdiler, model çıktı kalitesinin düşmesine veya çıktıda birden fazla özne görünmesi gibi sorunlara yol açabilir.
 
 ## Girişler

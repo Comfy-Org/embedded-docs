@@ -1,3 +1,5 @@
+# Crear Hook Keyframe
+
 El nodo Crear Fotograma Clave de Hook permite definir puntos específicos en un proceso de generación donde cambia el comportamiento del hook. Crea fotogramas clave que modifican la intensidad de los hooks en porcentajes particulares del progreso de generación, y estos fotogramas clave pueden encadenarse para crear patrones de programación complejos.
 
 ## Entradas

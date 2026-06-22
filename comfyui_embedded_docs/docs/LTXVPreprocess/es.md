@@ -1,3 +1,5 @@
+# LTXVPreprocesar
+
 El nodo LTXVPreprocess aplica preprocesamiento de compresión a las imágenes. Toma imágenes de entrada y las procesa con un nivel de compresión especificado, generando las imágenes procesadas con la configuración de compresión aplicada.
 
 ## Entradas

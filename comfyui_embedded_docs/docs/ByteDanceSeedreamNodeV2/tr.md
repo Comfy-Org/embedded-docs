@@ -1,4 +1,4 @@
-# Genel Bakış
+# ByteDance Seedream 4.5 & 5.0
 
 Bu düğüm, ByteDance'in Seedream modellerini (sürüm 4.0, 4.5 ve 5.0 Lite) kullanarak görseller oluşturur veya düzenler. Bir metin isteminden yeni görseller oluşturabilir veya referans görseller sağlayarak mevcut görselleri düzenleyebilir, 4K'ya kadar çözünürlükleri destekler.
 

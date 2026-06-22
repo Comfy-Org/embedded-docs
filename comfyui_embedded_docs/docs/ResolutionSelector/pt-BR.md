@@ -1,3 +1,5 @@
+# Seletor de Resolução
+
 O nó Seletor de Resolução calcula a largura e altura em pixels de uma imagem com base em uma proporção de aspecto escolhida e uma resolução total alvo em megapixels. Ele é útil para gerar dimensões consistentes para outros nós, como o nó Imagem Latente Vazia. As dimensões de saída são sempre arredondadas para o múltiplo de 8 mais próximo.
 
 ## Entradas

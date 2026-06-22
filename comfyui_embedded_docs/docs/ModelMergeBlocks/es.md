@@ -1,3 +1,5 @@
+# ModelMergeBlocks
+
 ModelMergeBlocks está diseñado para operaciones avanzadas de fusión de modelos, permitiendo la integración de dos modelos con proporciones de mezcla personalizables para diferentes partes de los mismos. Este nodo facilita la creación de modelos híbridos al fusionar selectivamente componentes de dos modelos fuente según parámetros específicos.
 
 ## Entradas

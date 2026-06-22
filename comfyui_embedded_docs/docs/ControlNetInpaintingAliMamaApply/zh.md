@@ -1,3 +1,5 @@
+# 应用ControlNet（阿里妈妈局部重绘）
+
 ### ControlNetInpaintingAliMamaApply 节点
 
 ControlNetInpaintingAliMamaApply 节点通过将正向和负向条件与控制图像及遮罩相结合，为图像修复任务应用 ControlNet 条件控制。它处理输入图像和遮罩，生成修改后的条件控制，从而引导生成过程，实现对图像修复区域的精确控制。该节点支持强度调整和时序控制，可在生成过程的不同阶段微调 ControlNet 的影响。

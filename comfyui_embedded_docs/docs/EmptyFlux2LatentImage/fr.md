@@ -1,3 +1,5 @@
+# Flux vide vers latent
+
 Le nœud EmptyFlux2LatentImage crée une représentation latente vide. Il génère un tenseur rempli de zéros, qui sert de point de départ pour le processus de débruitage du modèle Flux. Les dimensions de l'espace latent sont déterminées par la largeur et la hauteur d'entrée, réduites d'un facteur 16.
 
 ## Entrées

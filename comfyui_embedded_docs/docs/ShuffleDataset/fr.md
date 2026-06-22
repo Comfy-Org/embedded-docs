@@ -1,3 +1,5 @@
+# Mélanger l'ensemble d'images
+
 Le nœud Shuffle Dataset prend une liste d'images et modifie aléatoirement leur ordre. Il utilise une valeur de `seed` pour contrôler le caractère aléatoire, garantissant que le même ordre de mélange peut être reproduit. Cela est utile pour randomiser la séquence des images dans un ensemble de données avant le traitement.
 
 ## Entrées

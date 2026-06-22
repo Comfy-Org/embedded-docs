@@ -1,3 +1,5 @@
+# Obtener parámetros IC-LoRA
+
 ## Descripción general
 
 Este nodo extrae los parámetros IC-LoRA de los metadatos de un modelo cargado con LoRA. Lee los metadatos de safetensors para encontrar valores como el factor de reducción de escala de referencia y los genera como un objeto de parámetros estructurado, que puede conectarse al nodo LTXVAddGuide para un manejo especial de guías.

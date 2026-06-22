@@ -1,3 +1,5 @@
+# CLIPSubtract
+
 The CLIPSubtract node performs a subtraction operation between two CLIP models. It takes the first CLIP model as a base and subtracts the key patches from the second CLIP model, with an optional multiplier to control the subtraction strength. This allows for fine-tuned model blending by removing specific characteristics from one model using another.
 
 ## Inputs

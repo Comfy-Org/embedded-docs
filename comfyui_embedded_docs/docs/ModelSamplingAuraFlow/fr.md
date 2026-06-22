@@ -1,3 +1,5 @@
+# ModelSamplingAuraFlow
+
 Le nœud **ModelSamplingAuraFlow** applique une configuration d'échantillonnage spécialisée aux modèles de diffusion, spécifiquement conçue pour les architectures de modèles AuraFlow. Il modifie le comportement d'échantillonnage du modèle en appliquant un paramètre de décalage qui ajuste la distribution d'échantillonnage. Ce nœud hérite du cadre d'échantillonnage SD3 et offre un contrôle précis sur le processus d'échantillonnage.
 
 ## Entrées

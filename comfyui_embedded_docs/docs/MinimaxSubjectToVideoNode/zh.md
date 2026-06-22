@@ -1,3 +1,5 @@
+# MinimaxSubjectToVideoNode
+
 使用 MiniMax API，基于主体图像和文本提示同步生成视频。此节点接收主体图像和描述，根据提示创建动画或展示该主体的视频。
 
 ## 输入

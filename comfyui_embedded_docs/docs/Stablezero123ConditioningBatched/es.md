@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 Este nodo está diseñado para procesar información de condicionamiento de forma por lotes, específicamente adaptada para el modelo StableZero123. Se enfoca en manejar eficientemente múltiples conjuntos de datos de condicionamiento simultáneamente, optimizando el flujo de trabajo en escenarios donde el procesamiento por lotes es crucial.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Kling Avatar 2.0
+
 Voici la traduction en français de la documentation du nœud Kling Avatar 2.0, conformément à vos règles :
 
 Ce nœud Kling Avatar 2.0 génère des vidéos d'humains numériques de type diffusion à partir d'une seule photo de référence et d'un fichier audio. Il crée une vidéo d'avatar parlant avec une invite textuelle facultative pour définir les actions, les émotions et les mouvements de caméra de l'avatar.

@@ -1,3 +1,5 @@
+# Crear Hook Model como LoRA
+
 Este nodo crea un modelo de enganche como un LoRA (Adaptación de Bajo Rango) cargando pesos de puntos de control y aplicando ajustes de intensidad tanto al modelo como a los componentes CLIP. Permite aplicar modificaciones estilo LoRA a modelos existentes mediante un enfoque basado en enganches, posibilitando el ajuste fino y la adaptación sin cambios permanentes en el modelo. El nodo puede combinarse con enganches anteriores y almacenar en caché los pesos cargados para mayor eficiencia.
 
 ## Entradas

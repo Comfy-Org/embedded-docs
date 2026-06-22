@@ -1,3 +1,5 @@
+# Magnific Améliorateur de Peau d’Image
+
 Voici la traduction en français de la documentation du nœud Magnific Image Skin Enhancer :
 
 Le nœud Magnific Image Skin Enhancer applique un traitement IA spécialisé aux portraits afin d'améliorer l'apparence de la peau. Il propose trois modes distincts pour différents objectifs d'amélioration : créatif pour des effets artistiques, fidèle pour préserver l'aspect original, et flexible pour des améliorations ciblées comme l'éclairage ou le réalisme. Le nœud télécharge l'image vers une API externe pour le traitement et renvoie le résultat amélioré.

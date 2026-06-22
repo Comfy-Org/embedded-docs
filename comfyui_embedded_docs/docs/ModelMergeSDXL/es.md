@@ -1,3 +1,5 @@
+# ModelMergeSDXL
+
 El nodo ModelMergeSDXL te permite combinar dos modelos SDXL ajustando la influencia de cada modelo en diferentes partes de la arquitectura. Puedes controlar cuánto contribuye cada modelo a las incrustaciones temporales, las incrustaciones de etiquetas y varios bloques dentro de la estructura del modelo. Esto crea un modelo híbrido que combina características de ambos modelos de entrada.
 
 ## Entradas

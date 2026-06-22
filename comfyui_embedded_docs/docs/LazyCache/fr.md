@@ -1,3 +1,5 @@
+# CacheParesseux
+
 Voici la traduction de la documentation du nœud LazyCache :
 
 LazyCache est une version maison d'EasyCache qui offre une implémentation encore plus simple. Il fonctionne avec n'importe quel modèle dans ComfyUI et ajoute une fonctionnalité de mise en cache pour réduire les calculs lors de l'échantillonnage. Bien qu'il soit généralement moins performant qu'EasyCache, il peut être plus efficace dans certains cas rares et offre une compatibilité universelle.

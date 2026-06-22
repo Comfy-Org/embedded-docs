@@ -1,3 +1,5 @@
+# CLIPTextEncodeSDXL
+
 Ce nœud est conçu pour encoder une entrée textuelle à l'aide d'un modèle CLIP spécifiquement adapté à l'architecture SDXL. Il utilise un système à double encodeur (CLIP-L et CLIP-G) pour traiter les descriptions textuelles, ce qui permet une génération d'images plus précise.
 
 ## Entrées

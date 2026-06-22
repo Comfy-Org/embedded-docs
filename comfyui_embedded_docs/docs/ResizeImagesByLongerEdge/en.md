@@ -1,3 +1,5 @@
+# Resize Images by Longer Edge (DEPRECATED)
+
 The Resize Images by Longer Edge node resizes one or more images so that their longest side matches a specified target length. It automatically determines whether the width or height is longer and scales the other dimension proportionally to preserve the original aspect ratio. This node is deprecated and superseded by the Resize Image/Mask node with the resize type set to "scale longer dimension".
 
 ## Inputs

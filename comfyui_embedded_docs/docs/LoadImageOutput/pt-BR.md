@@ -1,3 +1,5 @@
+# Carregar Imagem (dos Resultados)
+
 O nó LoadImageOutput carrega imagens da pasta de saída. Ao clicar no botão de atualizar, ele atualiza a lista de imagens disponíveis e seleciona automaticamente a primeira, facilitando a iteração entre suas imagens geradas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ExtendIntermediateSigmas
+
 El nodo ExtendIntermediateSigmas toma una secuencia existente de valores sigma e inserta valores sigma intermedios adicionales entre ellos. Permite especificar cuántos pasos adicionales agregar, el método de espaciado para la interpolación y límites sigma opcionales de inicio y fin para controlar dónde ocurre la extensión dentro de la secuencia sigma.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Salvar Imagem (Avançado)
 
 O nó **SaveImageAdvanced** salva imagens no diretório de saída do ComfyUI com controle avançado sobre formato de arquivo, profundidade de bits e espaço de cores. Ele suporta salvar como arquivos PNG ou EXR e pode incorporar metadados do fluxo de trabalho nos arquivos salvos.
 

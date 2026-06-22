@@ -1,3 +1,5 @@
+# SUPIRApply
+
 El nodo `SUPIRApply` aplica un parche del modelo SUPIR a un modelo de difusión. Utiliza el parche para modificar el comportamiento del modelo, permitiéndole incorporar guía de una imagen de entrada durante el proceso de muestreo. El nodo también proporciona controles para ajustar la intensidad de esta guía a lo largo del tiempo e incluye una función opcional para ayudar a mantener la fidelidad a la imagen original.
 
 ## Entradas

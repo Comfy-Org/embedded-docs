@@ -1,3 +1,5 @@
+# ElevenLabs Ses Seçici
+
 ElevenLabs Ses Seçici düğümü, önceden tanımlanmış ElevenLabs metin-ses dönüştürme sesleri listesinden belirli bir ses seçmenizi sağlar. Girdi olarak bir ses adı alır ve ses oluşturma için gereken karşılık gelen ses tanımlayıcısını çıktı olarak verir. Bu düğüm, diğer ElevenLabs ses düğümleriyle kullanılmak üzere uyumlu bir ses seçme sürecini basitleştirir.
 
 ## Girdiler

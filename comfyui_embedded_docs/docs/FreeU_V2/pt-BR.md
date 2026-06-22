@@ -1,3 +1,5 @@
+# FreeU_V2
+
 O nó FreeU_V2 melhora a qualidade da geração de imagens aplicando modificações baseadas em frequência à arquitetura U-Net de um modelo de difusão. Ele utiliza fatores de escala configuráveis para ajustar os canais de características em diferentes blocos, melhorando a saída sem exigir treinamento adicional.
 
 ## Entradas

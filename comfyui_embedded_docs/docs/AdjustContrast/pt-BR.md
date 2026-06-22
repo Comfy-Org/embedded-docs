@@ -1,3 +1,5 @@
+# Ajustar Contraste
+
 O nó Ajustar Contraste modifica o nível de contraste de uma imagem de entrada. Ele funciona ajustando a diferença entre as áreas claras e escuras da imagem. Um fator de 1,0 mantém a imagem inalterada, valores abaixo de 1,0 reduzem o contraste e valores acima de 1,0 aumentam o contraste.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Run MoGe Panorama Inference
+
 ## Overview
 
 This node performs depth estimation on equirectangular panorama images. It works by splitting the panorama into 12 perspective views, running the MoGe depth estimation model on each view, and then merging the results back into a single, complete depth map for the original panorama.

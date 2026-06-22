@@ -1,3 +1,5 @@
+# Tripo : Modèle squeletté redirigé
+
 Voici la traduction en français de la documentation du nœud TripoRetargetNode :
 
 Le TripoRetargetNode applique des animations prédéfinies à des modèles de personnages 3D en réaffectant les données de mouvement. Il prend un modèle 3D préalablement riggé et applique l'une des plusieurs animations prédéfinies, générant un fichier de modèle 3D animé en sortie. Le nœud communique avec l'API Tripo pour traiter l'opération de réaffectation d'animation.

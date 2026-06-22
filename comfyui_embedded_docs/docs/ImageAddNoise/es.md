@@ -1,3 +1,5 @@
+# ImagenAgregarRuido
+
 El nodo ImageAddNoise añade ruido aleatorio a una imagen de entrada. Utiliza una semilla aleatoria específica para generar patrones de ruido consistentes y permite controlar la intensidad del efecto de ruido. La imagen resultante mantiene las mismas dimensiones que la entrada, pero con una textura visual añadida.
 
 ## Entradas

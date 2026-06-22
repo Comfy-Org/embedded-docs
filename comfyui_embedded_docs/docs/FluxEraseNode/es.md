@@ -1,4 +1,4 @@
-# Nodo Flux Erase
+# Flux Borrar imagen
 
 Elimina el objeto enmascarado de una imagen y reconstruye el fondo. Pinte la máscara sobre lo que desea borrar, y el nodo rellena el área con contenido de fondo plausible.
 

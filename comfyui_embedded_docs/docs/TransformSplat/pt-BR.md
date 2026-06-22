@@ -1,4 +1,4 @@
-# Transform Splat
+# Transformar Splat
 
 O nó Transform Splat aplica transformações de translação, rotação e escala a um splat gaussiano. Ele move, rotaciona e redimensiona todo o splat como um único objeto e, quando uma escala não uniforme é aplicada, também remodela cada splat gaussiano individual para obter resultados precisos.
 

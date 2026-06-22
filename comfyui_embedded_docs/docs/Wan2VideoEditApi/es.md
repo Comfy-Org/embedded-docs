@@ -1,3 +1,5 @@
+# Wan 2.7 Edición de Video
+
 El nodo Wan2VideoEditApi utiliza el modelo Wan 2.7 para editar un video basándose en instrucciones de texto, imágenes de referencia o transferencia de estilo. Procesa el video de entrada y genera un nuevo video de acuerdo con los parámetros especificados, como resolución, duración y relación de aspecto.
 
 ## Entradas

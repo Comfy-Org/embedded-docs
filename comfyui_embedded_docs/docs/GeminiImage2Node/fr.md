@@ -1,3 +1,5 @@
+# Nano Banana Pro (Google Gemini Image)
+
 Le nœud GeminiImage2Node génère ou modifie des images à l'aide du modèle Gemini Vertex AI de Google. Il envoie une invite textuelle et des images ou fichiers de référence facultatifs à l'API, puis retourne l'image générée et/ou une description textuelle.
 
 ## Entrées

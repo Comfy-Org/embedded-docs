@@ -1,3 +1,5 @@
+# Codificação de Texto CLIP (Prompt)
+
 `CLIP Text Encode (CLIPTextEncode)` atua como um tradutor, convertendo suas descrições textuais em um formato que a IA pode compreender. Isso ajuda a IA a interpretar sua entrada e gerar a imagem desejada.
 
 Pense nisso como se comunicar com um artista que fala um idioma diferente. O modelo CLIP, treinado em vastos pares de imagem-texto, preenche essa lacuna convertendo suas descrições em "instruções" que o modelo de IA pode seguir.

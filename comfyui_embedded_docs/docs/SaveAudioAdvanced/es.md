@@ -1,4 +1,4 @@
-# Guardar Audio (Avanzado)
+# Guardar audio (avanzado)
 
 Guarda el audio de entrada en tu directorio de salida de ComfyUI. Este nodo permite exportar audio en varios formatos, incluyendo FLAC, MP3 y Opus, con ajustes de calidad configurables.
 

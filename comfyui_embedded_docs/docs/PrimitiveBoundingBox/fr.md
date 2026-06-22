@@ -1,3 +1,5 @@
+# Boîte englobante
+
 Le nœud PrimitiveBoundingBox crée une zone rectangulaire simple définie par sa position et sa taille. Il prend les coordonnées X et Y pour le coin supérieur gauche, ainsi que les valeurs de largeur et hauteur, et produit une structure de données de boîte englobante pouvant être utilisée par d'autres nœuds dans un workflow.
 
 ## Entrées

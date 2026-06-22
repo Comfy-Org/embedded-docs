@@ -1,3 +1,5 @@
+# ComfySoftSwitchNode
+
 El nodo Soft Switch selecciona entre dos posibles valores de entrada según una condición booleana. Genera el valor de la entrada `on_true` cuando el `switch` es verdadero, y el valor de la entrada `on_false` cuando el `switch` es falso. Este nodo está diseñado para ser perezoso, lo que significa que solo evalúa la entrada necesaria según el estado del interruptor.
 
 ## Entradas

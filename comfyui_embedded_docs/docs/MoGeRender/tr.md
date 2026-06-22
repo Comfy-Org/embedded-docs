@@ -1,3 +1,5 @@
+# MoGe Render
+
 ## Genel Bakış
 
 Bu düğüm, bir MOGE_GEOMETRY paketini (MoGe derinlik/normal tahmin düğümü tarafından üretilir) alır ve standart bir görüntü formatına dönüştürür. Derinlik haritası, renklendirilmiş derinlik haritası, normal haritası veya maske çıktısı almayı seçebilirsiniz.

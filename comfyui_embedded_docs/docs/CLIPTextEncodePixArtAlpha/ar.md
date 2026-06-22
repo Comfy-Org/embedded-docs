@@ -1,4 +1,4 @@
-# ترجمة وثيقة CLIPTextEncodePixArtAlpha
+# ترميز نص CLIP لـ PixArt Alpha
 
 تم إنشاء هذه الوثائق بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPTextEncodePixArtAlpha/en.md)
 

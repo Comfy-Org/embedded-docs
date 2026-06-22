@@ -1,3 +1,5 @@
+# Stable Cascade_C阶段_VAE编码
+
 StableCascade_StageC_VAEEncode 节点通过 VAE 编码器处理图像，为 Stable Cascade 模型生成潜在表示。它接收输入图像，使用指定的 VAE 模型进行压缩，然后输出两个潜在表示：一个用于阶段 C，另一个作为阶段 B 的占位符。压缩参数控制编码前图像缩小的程度。
 
 ## 输入

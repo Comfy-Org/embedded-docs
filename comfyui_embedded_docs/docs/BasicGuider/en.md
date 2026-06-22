@@ -1,3 +1,5 @@
+# Basic Guider
+
 The BasicGuider node creates a simple guidance mechanism for the sampling process. It takes a model and conditioning data as inputs and produces a guider object that can be used to guide the generation process during sampling. This node provides the fundamental guidance functionality needed for controlled generation.
 
 ## Inputs

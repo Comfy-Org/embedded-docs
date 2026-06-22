@@ -1,3 +1,5 @@
+# Extender video Grok
+
 El nodo Grok Video Extend utiliza un modelo de IA para crear una continuación fluida de un video existente. Proporcionas un video corto y un mensaje de texto que describe lo que debería suceder a continuación, y el nodo genera un nuevo clip de video que continúa a partir del original.
 
 ## Entradas

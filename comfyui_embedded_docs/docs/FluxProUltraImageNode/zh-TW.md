@@ -1,4 +1,4 @@
-# Flux Pro Ultra 影像節點
+# Flux 1.1 [pro] Ultra 影像
 
 根據提示詞和解析度，透過 API 使用 Flux Pro 1.1 Ultra 生成影像。此節點連接到外部服務，根據您的文字描述和指定的尺寸來建立影像。
 

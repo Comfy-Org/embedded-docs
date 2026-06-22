@@ -1,3 +1,5 @@
+# Carregar Modelo de Upscale
+
 Este nó detecta modelos localizados na pasta `ComfyUI/models/upscale_models` e também lê modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para permitir que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó UpscaleModelLoader foi projetado para carregar modelos de upscale de um diretório especificado. Ele facilita a recuperação e preparação de modelos de upscale para tarefas de redimensionamento de imagens, garantindo que os modelos sejam carregados e configurados corretamente para avaliação.

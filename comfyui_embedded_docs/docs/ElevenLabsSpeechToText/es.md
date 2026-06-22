@@ -1,3 +1,5 @@
+# ElevenLabs Voz a Texto
+
 El nodo ElevenLabs Speech to Text transcribe archivos de audio a texto. Utiliza la API de ElevenLabs para convertir palabras habladas en una transcripción escrita, con funciones como detección automática de idioma, identificación de diferentes hablantes y etiquetado de sonidos no verbales como música o risas.
 
 ## Entradas

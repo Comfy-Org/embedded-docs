@@ -1,3 +1,5 @@
+# Rodin 3D Generar - Generar Detalle
+
 El nodo **Rodin 3D Detail** genera activos 3D detallados utilizando la API de Rodin. Toma imágenes de entrada y las procesa a través del servicio Rodin para crear modelos 3D de alta calidad con geometría y materiales detallados. El nodo gestiona todo el flujo de trabajo, desde la creación de la tarea hasta la descarga del archivo final del modelo 3D.
 
 ## Entradas

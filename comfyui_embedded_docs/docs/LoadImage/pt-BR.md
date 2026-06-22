@@ -1,3 +1,5 @@
+# Carregar Imagem
+
 O nó LoadImage foi projetado para carregar e pré-processar imagens a partir de um caminho especificado. Ele lida com formatos de imagem que possuem múltiplos quadros, aplica transformações necessárias, como rotação baseada em dados EXIF, normaliza valores de pixels e, opcionalmente, gera uma máscara para imagens com canal alfa. Este nó é essencial para preparar imagens para processamento ou análise posterior dentro de um pipeline.
 
 ## Entradas

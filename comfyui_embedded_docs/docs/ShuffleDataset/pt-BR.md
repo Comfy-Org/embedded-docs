@@ -1,3 +1,5 @@
+# Embaralhar Conjunto de Imagens
+
 O nó Shuffle Dataset recebe uma lista de imagens e altera aleatoriamente sua ordem. Ele usa um valor de `seed` para controlar a aleatoriedade, garantindo que a mesma ordem de embaralhamento possa ser reproduzida. Isso é útil para randomizar a sequência de imagens em um conjunto de dados antes do processamento.
 
 ## Entradas

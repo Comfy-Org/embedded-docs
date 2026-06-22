@@ -1,3 +1,5 @@
+# Reroute
+
 Node Name: 重新路由節點
 Node Purpose: 主要用於整理 ComfyUI 工作流程中過長的連線邏輯。
 

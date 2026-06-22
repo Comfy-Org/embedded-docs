@@ -1,3 +1,5 @@
+# Note
+
 Nœud permettant d'ajouter des annotations à un workflow.
 
 ## Entrées

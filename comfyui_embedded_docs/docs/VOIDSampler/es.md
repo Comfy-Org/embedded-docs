@@ -1,3 +1,5 @@
+# VOIDSampler
+
 ## Descripción general
 
 El nodo VOIDSampler proporciona un método de muestreo DDIM especializado diseñado específicamente para modelos de inpainting VOID. Implementa el mismo proceso de eliminación de ruido utilizado durante el entrenamiento del modelo VOID, sin el escalado de ruido que aplican los KSamplers estándar. Este nodo está diseñado para usarse con los nodos SamplerCustom o SamplerCustomAdvanced, y debe combinarse con RandomNoise o VOIDWarpedNoiseSource.

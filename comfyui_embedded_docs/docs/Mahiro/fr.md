@@ -1,3 +1,5 @@
+# Mahiro est si mignonne qu'elle mérite une meilleure fonction de guidage!! (。・ω・。)
+
 Le nœud Mahiro modifie la fonction de guidage pour se concentrer davantage sur la direction de la consigne positive plutôt que sur la différence entre les consignes positive et négative. Il crée un modèle patché qui applique une approche de mise à l'échelle du guidage personnalisée, utilisant la similarité cosinus entre les sorties débruitées conditionnelles et inconditionnelles normalisées. Ce nœud expérimental aide à orienter la génération plus fortement vers la direction souhaitée de la consigne positive.
 
 ## Entrées

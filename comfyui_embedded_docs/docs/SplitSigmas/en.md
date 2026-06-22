@@ -1,3 +1,5 @@
+# SplitSigmas
+
 The SplitSigmas node is designed for dividing a sequence of sigma values into two parts based on a specified step. This functionality is crucial for operations that require different handling or processing of the initial and subsequent parts of the sigma sequence, enabling more flexible and targeted manipulation of these values.
 
 ## Inputs

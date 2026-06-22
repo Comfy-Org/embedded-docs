@@ -1,3 +1,5 @@
+# ResizeAndPadImage
+
 O nó ResizeAndPadImage redimensiona uma imagem para caber dentro de dimensões especificadas, mantendo sua proporção original. Ele escala a imagem proporcionalmente para caber na largura e altura alvo e, em seguida, adiciona preenchimento ao redor das bordas para preencher qualquer espaço restante. A cor do preenchimento e o método de interpolação podem ser personalizados para controlar a aparência das áreas preenchidas e a qualidade do redimensionamento.
 
 ## Entradas

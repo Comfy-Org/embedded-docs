@@ -1,3 +1,5 @@
+# Grok Image
+
 Le nœud Grok Image génère une ou plusieurs images basées sur une description textuelle en utilisant le modèle IA Grok. Il envoie votre invite à un service externe et retourne les images générées sous forme de tenseurs utilisables dans votre workflow.
 
 ## Entrées

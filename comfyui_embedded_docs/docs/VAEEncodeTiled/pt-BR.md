@@ -1,3 +1,5 @@
+# VAE Codificar (Em Blocos)
+
 O nó VAEEncodeTiled processa imagens dividindo-as em tiles menores e codificando-as usando um Autoencoder Variacional. Essa abordagem em tiles permite o processamento de imagens grandes que, de outra forma, poderiam exceder os limites de memória. O nó suporta VAEs de imagem e vídeo, com controles de tile separados para dimensões espaciais e temporais.
 
 ## Entradas

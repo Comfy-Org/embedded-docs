@@ -1,3 +1,5 @@
+# Crear Hook Keyframes Desde Flotantes
+
 Este nodo crea fotogramas clave de enlace a partir de una lista de valores de intensidad de punto flotante, distribuyéndolos uniformemente entre porcentajes de inicio y fin especificados. Genera una secuencia de fotogramas clave donde cada valor de intensidad se asigna a una posición porcentual específica en la línea de tiempo de la animación. El nodo puede crear un nuevo grupo de fotogramas clave o agregarlo a uno existente, con una opción para imprimir los fotogramas clave generados con fines de depuración.
 
 ## Entradas

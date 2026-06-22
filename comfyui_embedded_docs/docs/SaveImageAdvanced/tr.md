@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Görüntüyü Kaydet (Gelişmiş)
 
 **SaveImageAdvanced** düğümü, görüntüleri dosya biçimi, bit derinliği ve renk uzayı üzerinde gelişmiş kontrole sahip olarak ComfyUI çıktı dizininize kaydeder. PNG veya EXR dosyaları olarak kaydetmeyi destekler ve kaydedilen dosyalara iş akışı meta verileri ekleyebilir.
 

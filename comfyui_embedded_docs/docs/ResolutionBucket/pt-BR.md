@@ -1,3 +1,5 @@
+# Bucket de Resolução
+
 Este nó organiza uma lista de imagens latentes e seus dados de condicionamento correspondentes por resolução. Ele agrupa itens que compartilham a mesma altura e largura, criando lotes separados para cada resolução única. Esse processo é útil para preparar dados para treinamento eficiente, pois permite que os modelos processem vários itens do mesmo tamanho juntos.
 
 ## Entradas

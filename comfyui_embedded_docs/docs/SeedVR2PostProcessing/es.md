@@ -1,4 +1,4 @@
-# Post-Procesamiento de Salida SeedVR2
+# SeedVR2PostProcessing
 
 Este nodo alinea la imagen generada con la imagen redimensionada original y aplica corrección de color opcional. Toma la salida de un proceso de ampliación SeedVR2 y la ajusta para que coincida con los colores y dimensiones de la imagen de referencia original.
 

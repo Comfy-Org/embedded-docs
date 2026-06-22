@@ -1,3 +1,5 @@
+# StableCascade_SuperResolutionControlnet
+
 ### ## نمای کلی
 
 گره `StableCascade_SuperResolutionControlnet` ورودی‌های لازم برای پردازش ابررزولوشن (Super-Resolution) در Stable Cascade را آماده می‌کند. این گره یک تصویر ورودی دریافت کرده و با استفاده از یک VAE آن را رمزگذاری می‌کند تا ورودی کنترل‌نت (controlnet) را ایجاد کند. همچنین به‌طور همزمان، نمایش‌های نهفته (latent) جایگزین برای مرحله C و مرحله B از خط لوله Stable Cascade تولید می‌کند.

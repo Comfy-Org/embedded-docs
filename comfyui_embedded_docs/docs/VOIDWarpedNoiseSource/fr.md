@@ -1,3 +1,5 @@
+# VOIDWarpedNoiseSource
+
 ## Aperçu
 
 Ce nœud convertit un LATENT (tel que la sortie du nœud VOIDWarpedNoise) en une source de BRUIT (NOISE). Cela vous permet d'utiliser le bruit déformé avec le nœud SamplerCustomAdvanced pour une génération d'image plus contrôlée.

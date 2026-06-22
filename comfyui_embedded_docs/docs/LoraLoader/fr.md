@@ -1,3 +1,5 @@
+# Charger LoRA
+
 Ce nœud détecte automatiquement les modèles situés dans le dossier LoRA (y compris les sous-dossiers), le chemin de modèle correspondant étant `ComfyUI\models\loras`. Pour plus d'informations, veuillez consulter la section Installation des modèles LoRA.
 
 Le nœud LoRA Loader est principalement utilisé pour charger des modèles LoRA. Vous pouvez considérer les modèles LoRA comme des filtres capables d'appliquer à vos images des styles, contenus et détails spécifiques :

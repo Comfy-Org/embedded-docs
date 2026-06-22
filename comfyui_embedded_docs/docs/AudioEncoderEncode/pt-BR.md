@@ -1,3 +1,5 @@
+# Codificar com AudioEncoder
+
 O nó AudioEncoderEncode processa dados de áudio codificando-os usando um modelo de codificador de áudio. Ele recebe uma entrada de áudio e a converte em uma representação codificada que pode ser usada para processamento adicional no pipeline de condicionamento. Este nó transforma formas de onda de áudio brutas em um formato adequado para aplicações de aprendizado de máquina baseadas em áudio.
 
 ## Entradas

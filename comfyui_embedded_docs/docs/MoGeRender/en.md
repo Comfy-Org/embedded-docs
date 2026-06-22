@@ -1,3 +1,5 @@
+# Render MoGe Geometry
+
 ## Overview
 
 This node takes a MOGE_GEOMETRY packet (produced by a MoGe depth/normal estimation node) and renders it into a standard image format. You can choose to output a depth map, a colored depth map, a normal map, or a mask.

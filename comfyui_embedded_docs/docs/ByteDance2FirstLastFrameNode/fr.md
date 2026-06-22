@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Première-Dernière-Image vers Vidéo
+
 Ce nœud utilise le modèle Seedance 2.0 de ByteDance pour générer une vidéo. Il crée la vidéo à partir d'une invite textuelle et d'une image de première image obligatoire. Vous pouvez éventuellement fournir une image de dernière image pour guider la fin de la séquence vidéo.
 
 ## Entrées

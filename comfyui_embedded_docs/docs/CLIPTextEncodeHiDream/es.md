@@ -1,3 +1,5 @@
+# CLIPTextEncodeHiDream
+
 El nodo CLIPTextEncodeHiDream procesa cuatro entradas de texto independientes utilizando diferentes modelos de lenguaje (CLIP-L, CLIP-G, T5-XXL y LLaMA) y las combina en una única salida de condicionamiento. Tokeniza cada entrada de texto con su modelo correspondiente y las codifica mediante un enfoque de codificación programada, lo que permite un condicionamiento de texto más sofisticado al aprovechar múltiples modelos de lenguaje simultáneamente.
 
 ## Entradas

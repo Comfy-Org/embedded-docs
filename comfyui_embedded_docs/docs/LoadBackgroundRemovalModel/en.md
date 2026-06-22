@@ -1,3 +1,5 @@
+# Load Background Removal Model
+
 ## Overview
 
 Loads a background removal model from a file. This node prepares the model for use in removing backgrounds from images.

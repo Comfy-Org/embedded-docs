@@ -1,3 +1,5 @@
+# Afinar Imagen
+
 El nodo ImageSharpen mejora la nitidez de una imagen acentuando sus bordes y detalles. Aplica un filtro de enfoque a la imagen, cuya intensidad y radio pueden ajustarse, haciendo que la imagen parezca más definida y nítida.
 
 ## Entradas

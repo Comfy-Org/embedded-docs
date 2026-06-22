@@ -1,3 +1,5 @@
+# ElevenLabs Ses İzolasyonu
+
 ElevenLabs Ses Yalıtımı düğümü, bir ses dosyasından arka plan gürültüsünü kaldırarak vokalleri veya konuşmayı izole eder. Sesi işlenmek üzere ElevenLabs API'sine gönderir ve temizlenmiş sesi döndürür.
 
 ## Girişler

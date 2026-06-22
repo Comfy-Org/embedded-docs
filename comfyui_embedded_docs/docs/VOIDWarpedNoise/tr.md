@@ -1,3 +1,5 @@
+# VOIDWarpedNoise
+
 ## Genel Bakış
 
 VOID video iyileştirme sürecinin ikinci geçişi için zamansal olarak ilişkili gürültü üretir. Pass 1'den gelen çıktı videosunu alır ve Gauss gürültüsünü optik akış vektörleri boyunca bükerek, video içeriğiyle tutarlı bir şekilde hareket eden gürültü oluşturur. Bu bükülmüş gürültü, Pass 2 için başlangıç gizli uzayı olarak kullanılır ve nihai çıktıda zamansal tutarlılığı artırır.

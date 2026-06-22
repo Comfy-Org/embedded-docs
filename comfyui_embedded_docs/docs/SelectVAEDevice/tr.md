@@ -1,3 +1,5 @@
+# VAE Cihazını Seç
+
 ## Genel Bakış
 
 Bu düğüm, VAE modelinin hangi GPU cihazına yerleştirileceğini manuel olarak seçmenizi sağlar. Varsayılan olarak VAE, model yükleyici tarafından atanan cihaza yerleştirilir, ancak belirli bir GPU'ya (örneğin, `gpu:0`, `gpu:1`) sabitleyebilirsiniz. Seçilen cihaz makinenizde mevcut değilse, düğüm VAE'yi değiştirmeden geçirir ve hata vermek yerine bir mesaj günlüğe kaydeder.

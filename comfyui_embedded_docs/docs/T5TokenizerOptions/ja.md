@@ -1,3 +1,5 @@
+# T5TokenizerOptions
+
 以下が翻訳結果です。
 
 ---

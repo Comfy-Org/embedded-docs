@@ -1,3 +1,5 @@
+# SamplerDpmpp2mSde
+
 Bu düğüm, DPMPP_2M_SDE modeli için bir örnekleyici oluşturmak üzere tasarlanmıştır; belirtilen çözücü türlerine, gürültü seviyelerine ve hesaplama cihazı tercihlerine göre örnekler oluşturulmasına olanak tanır. Örnekleyici yapılandırmasının karmaşıklığını soyutlayarak, özelleştirilmiş ayarlarla örnekler oluşturmak için kolaylaştırılmış bir arayüz sağlar.
 
 ## Girişler

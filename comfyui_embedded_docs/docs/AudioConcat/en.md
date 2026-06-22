@@ -1,3 +1,5 @@
+# Concatenate Audio
+
 The AudioConcat node combines two audio inputs by joining them together. It takes two audio inputs and connects them in the order you specify, either placing the second audio before or after the first audio. The node automatically handles different audio formats by converting mono audio to stereo and matching sample rates between the two inputs.
 
 ## Inputs

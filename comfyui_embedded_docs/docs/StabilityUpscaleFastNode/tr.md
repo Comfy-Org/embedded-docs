@@ -1,3 +1,5 @@
+# Stability AI Hızlı Büyütme
+
 Stability API çağrısıyla bir görüntüyü orijinal boyutunun 4 katına hızla yükseltir. Bu düğüm, özellikle düşük kaliteli veya sıkıştırılmış görüntüleri Stability AI'nın hızlı yükseltme hizmetine göndererek yükseltmek için tasarlanmıştır.
 
 ## Girişler

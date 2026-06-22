@@ -1,3 +1,5 @@
+# ChargerLatent
+
 Le nœud LoadLatent charge des représentations latentes préalablement sauvegardées à partir de fichiers .latent dans le répertoire d’entrée. Il lit les données du tenseur latent depuis le fichier et applique les ajustements d’échelle nécessaires avant de renvoyer les données latentes pour une utilisation dans d’autres nœuds.
 
 ## Entrées

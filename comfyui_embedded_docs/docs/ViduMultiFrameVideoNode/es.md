@@ -1,3 +1,5 @@
+# Generación de video multifotograma Vidu
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
 
 Este nodo genera un video creando transiciones entre múltiples fotogramas clave. Comienza desde una imagen inicial y anima a través de una secuencia de imágenes finales y avisos definidos por el usuario, produciendo un único archivo de video como salida.

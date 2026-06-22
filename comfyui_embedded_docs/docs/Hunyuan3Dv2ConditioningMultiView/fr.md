@@ -1,3 +1,5 @@
+# Hunyuan3Dv2ConditioningMultiView
+
 Le nœud Hunyuan3Dv2ConditioningMultiView traite les embeddings visuels CLIP multi-vues pour la génération vidéo 3D. Il prend en entrée des embeddings optionnels pour les vues avant, gauche, arrière et droite, et les combine avec un encodage positionnel pour créer des données de conditionnement destinées aux modèles vidéo. Le nœud produit à la fois un conditionnement positif à partir des embeddings combinés et un conditionnement négatif avec des valeurs nulles.
 
 ## Entrées

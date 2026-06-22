@@ -1,3 +1,5 @@
+# NormalizeVideoLatentStart
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Ce nœud ajuste les premières images d'un latent vidéo pour les rendre plus similaires aux images suivantes. Il calcule la moyenne et la variation à partir d'un ensemble d'images de référence situées plus loin dans la vidéo, puis applique ces mêmes caractéristiques aux images de départ. Cela permet de créer une transition visuelle plus fluide et plus cohérente au début d'une vidéo.

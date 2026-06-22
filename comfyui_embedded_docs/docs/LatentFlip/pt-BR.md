@@ -1,3 +1,5 @@
+# Inverter Latent
+
 O nó LatentFlip foi projetado para manipular representações latentes, invertendo-as vertical ou horizontalmente. Esta operação permite a transformação do espaço latente, potencialmente revelando novas variações ou perspectivas dentro dos dados.
 
 ## Entradas

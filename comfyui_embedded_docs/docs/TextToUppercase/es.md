@@ -1,3 +1,5 @@
+# Convertir texto a mayúsculas
+
 El nodo Texto a Mayúsculas toma una entrada de texto y convierte todos sus caracteres a mayúsculas. Es una utilidad simple de procesamiento de texto que modifica las mayúsculas y minúsculas de la cadena proporcionada.
 
 ## Entradas

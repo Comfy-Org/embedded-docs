@@ -1,3 +1,5 @@
+# Agregar sufijo de texto
+
 Este nodo añade un sufijo especificado al final de una cadena de texto de entrada. Toma el texto original y el sufijo como entradas, y luego devuelve el resultado combinado.
 
 ## Entradas

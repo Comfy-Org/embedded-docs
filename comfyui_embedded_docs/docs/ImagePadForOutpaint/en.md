@@ -1,3 +1,5 @@
+# Pad Image for Outpainting
+
 This node is designed for preparing images for the outpainting process by adding padding around them. It adjusts the image dimensions to ensure compatibility with outpainting algorithms, facilitating the generation of extended image areas beyond the original boundaries.
 
 ## Inputs

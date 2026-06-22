@@ -1,3 +1,5 @@
+# Recraft 控制項
+
 建立 Recraft 控制項以自訂 Recraft 生成。此節點允許您配置在 Recraft 圖像生成過程中使用的顏色設定。
 
 ## 輸入

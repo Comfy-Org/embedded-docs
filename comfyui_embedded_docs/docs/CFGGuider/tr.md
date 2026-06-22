@@ -1,3 +1,5 @@
+# CFG Rehberi
+
 CFGGuider düğümü, görüntü oluşturma sürecinde örnekleme işlemini kontrol etmek için bir yönlendirme sistemi oluşturur. Bir model ile pozitif ve negatif koşullandırma girdilerini alır, ardından sınıflandırıcısız bir yönlendirme ölçeği uygulayarak oluşturmayı istenen içeriğe yönlendirirken istenmeyen öğelerden kaçınır. Bu düğüm, örnekleme düğümleri tarafından görüntü oluşturma yönünü kontrol etmek için kullanılabilen bir yönlendirici nesnesi çıktısı verir.
 
 ## Girdiler

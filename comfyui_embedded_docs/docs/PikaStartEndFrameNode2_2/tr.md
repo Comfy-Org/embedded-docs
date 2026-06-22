@@ -1,3 +1,5 @@
+# PikaStartEndFrameNode2_2
+
 PikaFrames v2.2 Düğümü, ilk ve son karenizi birleştirerek bir video oluşturur. Başlangıç ve bitiş noktalarını tanımlamak için iki resim yüklersiniz ve yapay zeka, bunlar arasında yumuşak bir geçiş oluşturarak eksiksiz bir video üretir.
 
 ## Girişler

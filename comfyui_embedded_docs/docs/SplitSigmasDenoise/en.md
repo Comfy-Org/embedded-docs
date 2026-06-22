@@ -1,3 +1,5 @@
+# SplitSigmasDenoise
+
 The SplitSigmasDenoise node divides a sequence of sigma values into two parts based on a denoising strength parameter. It splits the input sigmas into high and low sigma sequences, where the split point is determined by multiplying the total steps by the denoise factor. This allows for separating the noise schedule into different intensity ranges for specialized processing.
 
 ## Inputs

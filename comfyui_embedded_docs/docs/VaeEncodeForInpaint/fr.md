@@ -1,3 +1,5 @@
+# VAE Encode (pour Inpainting)
+
 Ce nœud est conçu pour encoder des images en une représentation latente adaptée aux tâches d'infilling (inpainting), en intégrant des étapes de prétraitement supplémentaires pour ajuster l'image d'entrée et le masque afin d'obtenir un encodage optimal par le modèle VAE.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Get IC-LoRA Parameters
+
 ## Overview
 
 This node extracts IC-LoRA parameters from the metadata of a LoRA-loaded model. It reads the safetensors metadata to find values like the reference downscale factor and outputs them as a structured parameter object, which can be connected to the LTXVAddGuide node for special guide handling.

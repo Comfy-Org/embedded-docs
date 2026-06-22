@@ -1,3 +1,5 @@
+# WanSCAILToVideo
+
 O nó WanSCAILToVideo prepara o condicionamento e um espaço latente vazio para geração de vídeos. Ele processa entradas opcionais como imagens de referência, vídeos de pose e saídas do CLIP vision, incorporando-as no condicionamento positivo e negativo para um modelo de vídeo. O nó gera o condicionamento modificado e um tensor latente em branco com as dimensões de vídeo especificadas.
 
 ## Entradas

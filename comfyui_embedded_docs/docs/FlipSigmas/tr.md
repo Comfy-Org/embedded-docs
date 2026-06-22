@@ -1,3 +1,5 @@
+# Sigmaları Çevir
+
 `FlipSigmas` düğümü, difüzyon modellerinde kullanılan sigma değerleri dizisini tersine çevirerek ve ilk değer sıfırsa sıfır olmayacak şekilde ayarlayarak bu diziyi değiştirmek için tasarlanmıştır. Bu işlem, gürültü seviyelerini ters sıraya uyarlamak ve verilerden gürültüyü kademeli olarak azaltarak çalışan modellerde üretim sürecini kolaylaştırmak için çok önemlidir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# CombineHooksFour
+
 **Birleştirme Kancaları [4]**
 
 Birleştirme Kancaları [4] düğümü, en fazla dört ayrı kanca grubunu tek bir birleşik kanca grubunda birleştirir. Mevcut dört kanca girişinin herhangi bir kombinasyonunu alır ve ComfyUI'nin kanca birleştirme sistemini kullanarak bunları birleştirir. Bu, gelişmiş iş akışlarında birden fazla kanca yapılandırmasını tek bir noktada toplayarak işlemleri kolaylaştırmanıza olanak tanır.

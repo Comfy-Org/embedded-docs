@@ -1,3 +1,5 @@
+# Définir le Masque de Bruit Latent
+
 Ce nœud est conçu pour appliquer un masque de bruit à un ensemble d'échantillons latents. Il modifie les échantillons d'entrée en intégrant un masque spécifié, modifiant ainsi leurs caractéristiques de bruit.
 
 ## Entrées

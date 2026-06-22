@@ -1,3 +1,5 @@
+# WanMoveConcatTrack
+
 WanMoveConcatTrack düğümü, iki hareket izleme verisi kümesini tek, daha uzun bir dizi halinde birleştirir. Giriş izlerinden gelen iz yollarını ve görünürlük maskelerini ilgili boyutları boyunca birleştirerek çalışır. Yalnızca bir iz girişi sağlanırsa, bu veriyi değiştirmeden olduğu gibi iletir.
 
 ## Girişler

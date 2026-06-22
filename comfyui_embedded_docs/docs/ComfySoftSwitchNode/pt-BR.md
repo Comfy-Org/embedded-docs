@@ -1,3 +1,5 @@
+# ComfySoftSwitchNode
+
 O nó Soft Switch seleciona entre dois possíveis valores de entrada com base em uma condição booleana. Ele gera o valor da entrada `on_true` quando o `switch` é verdadeiro, e o valor da entrada `on_false` quando o `switch` é falso. Este nó foi projetado para ser preguiçoso, ou seja, ele avalia apenas a entrada necessária com base no estado do switch.
 
 ## Entradas

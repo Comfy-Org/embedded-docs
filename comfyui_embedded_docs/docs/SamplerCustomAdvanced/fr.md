@@ -1,3 +1,5 @@
+# ÉchantillonneurPersonnaliséAvancé
+
 Le nœud SamplerCustomAdvanced effectue un échantillonnage avancé dans l'espace latent en utilisant des configurations personnalisées de bruit, de guidage et d'échantillonnage. Il traite une image latente via un processus d'échantillonnage guidé avec des générations de bruit et des échéanciers sigma personnalisables, produisant à la fois le résultat final échantillonné et une version débruitée lorsqu'elle est disponible.
 
 ## Entrées

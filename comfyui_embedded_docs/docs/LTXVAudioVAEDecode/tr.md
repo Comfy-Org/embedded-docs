@@ -1,3 +1,5 @@
+# LTXV Sesli VAE Çöz
+
 LTXV Ses VAE Kod Çözücü düğümü, bir sesin gizli uzay temsilini tekrar ses dalga formuna dönüştürür. Bu kod çözme işlemini gerçekleştirmek için özel bir Ses VAE modeli kullanır ve belirli bir örnekleme hızında ses çıktısı üretir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# FreeU
+
 El nodo FreeU aplica modificaciones en el dominio de la frecuencia a los bloques de salida de un modelo para mejorar la calidad de generación de imágenes. Funciona escalando diferentes grupos de canales y aplicando filtrado de Fourier a mapas de características específicos, lo que permite un control preciso sobre el comportamiento del modelo durante el proceso de generación.
 
 ## Entradas

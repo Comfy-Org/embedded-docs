@@ -1,3 +1,5 @@
+# EmptyLatentHunyuan3Dv2
+
 ## 概述
 
 EmptyLatentHunyuan3Dv2 節點會建立專門為 Hunyuan3Dv2 3D 生成模型格式化的空白潛在張量。它會生成具有 Hunyuan3Dv2 架構所需正確維度與結構的空白潛在空間，讓您可以從頭開始啟動 3D 生成工作流程。此節點會產生填充零值的潛在張量，作為後續 3D 生成過程的基礎。

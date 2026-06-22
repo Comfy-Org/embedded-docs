@@ -1,3 +1,5 @@
+# WanPhantomSubjectToVideo
+
 El nodo WanPhantomSubjectToVideo genera contenido de video procesando entradas de condicionamiento e imágenes de referencia opcionales. Crea representaciones latentes para la generación de video y puede incorporar guía visual a partir de imágenes de entrada cuando se proporcionan. El nodo prepara datos de condicionamiento con concatenación de dimensión temporal para modelos de video y genera condicionamiento modificado junto con datos de video latente generados.
 
 ## Entradas

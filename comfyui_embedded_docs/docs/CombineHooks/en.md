@@ -1,3 +1,5 @@
+# CombineHooks
+
 The Combine Hooks [2] node merges two hook groups into a single combined hook group. It takes two optional hook inputs and combines them using ComfyUI's hook combination functionality. This allows you to consolidate multiple hook configurations for streamlined processing.
 
 ## Inputs

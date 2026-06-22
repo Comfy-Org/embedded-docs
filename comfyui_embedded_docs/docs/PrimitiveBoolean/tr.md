@@ -1,3 +1,5 @@
+# Boolean
+
 Boolean düğümü, iş akışınız boyunca boolean (doğru/yanlış) değerlerini iletmek için basit bir yol sağlar. Bir boolean giriş değeri alır ve aynı değeri değiştirmeden çıktı olarak verir, böylece diğer düğümlerdeki boolean parametrelerini kontrol etmenizi sağlar.
 
 ## Girişler

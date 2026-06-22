@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 Ce nœud est conçu pour traiter les informations de conditionnement par lots, spécifiquement adapté au modèle StableZero123. Il se concentre sur la gestion efficace de plusieurs ensembles de données de conditionnement simultanément, optimisant le flux de travail pour les scénarios où le traitement par lots est crucial.
 
 ## Entrées

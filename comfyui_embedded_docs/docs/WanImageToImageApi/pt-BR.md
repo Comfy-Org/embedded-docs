@@ -1,3 +1,5 @@
+# Wan Imagem para Imagem
+
 O nó Wan Image to Image gera uma imagem a partir de uma ou duas imagens de entrada e um prompt de texto. Ele transforma suas imagens de entrada com base na descrição fornecida, criando uma nova imagem que mantém a proporção da sua entrada original. A imagem de saída é fixada em 1,6 megapixels, independentemente do tamanho da entrada.
 
 ## Entradas

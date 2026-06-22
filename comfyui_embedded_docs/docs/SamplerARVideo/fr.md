@@ -1,3 +1,5 @@
+# Sampler AR Video
+
 Voici la traduction de la documentation du nœud Sampler AR Video :
 
 Le nœud Sampler AR Video fournit une méthode d'échantillonnage spécialisée pour les modèles vidéo autorégressifs, tels que ceux utilisant les techniques de Forçage Causal ou d'Auto-Forçage. Il gère tous les paramètres liés à la boucle autorégressive (AR) directement dans le workflow, ce qui facilite la configuration de la génération d'images vidéo par le modèle, une étape à la fois.

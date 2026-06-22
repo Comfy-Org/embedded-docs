@@ -1,3 +1,5 @@
+# CombineHooks
+
 **Kancaları Birleştir [2]** düğümü, iki kanca grubunu tek bir birleşik kanca grubunda birleştirir. İki isteğe bağlı kanca girişi alır ve ComfyUI'nin kanca birleştirme işlevini kullanarak bunları birleştirir. Bu, işlemleri kolaylaştırmak için birden çok kanca yapılandırmasını tek bir noktada toplamanıza olanak tanır.
 
 ## Girişler

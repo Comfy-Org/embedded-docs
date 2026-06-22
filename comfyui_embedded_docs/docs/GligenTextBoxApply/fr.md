@@ -1,3 +1,5 @@
+# GLIGENTextBoxApply
+
 Le nœud `GLIGENTextBoxApply` est conçu pour intégrer un conditionnement basé sur du texte dans l’entrée d’un modèle génératif, en appliquant spécifiquement des paramètres de zone de texte et en les encodant à l’aide d’un modèle CLIP. Ce processus enrichit le conditionnement avec des informations spatiales et textuelles, facilitant ainsi une génération plus précise et contextuelle.
 
 ## Entrées

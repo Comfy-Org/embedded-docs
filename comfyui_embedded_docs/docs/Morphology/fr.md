@@ -1,3 +1,5 @@
+# ImageMorphologie
+
 Le nœud Morphology applique diverses opérations morphologiques aux images, qui sont des opérations mathématiques utilisées pour traiter et analyser les formes dans les images. Il peut effectuer des opérations comme l'érosion, la dilatation, l'ouverture, la fermeture, et plus encore, en utilisant une taille de noyau personnalisable pour contrôler l'intensité de l'effet.
 
 ## Entrées

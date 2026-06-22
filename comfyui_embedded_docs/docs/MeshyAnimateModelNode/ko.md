@@ -1,3 +1,5 @@
+# Meshy: 모델 애니메이션
+
 이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/en.md)
 
 이 노드는 Meshy 서비스를 사용하여 이미 리깅된 3D 캐릭터 모델에 특정 애니메이션을 적용합니다. 이전 리깅 작업의 작업 ID와 라이브러리에서 원하는 애니메이션을 선택하기 위한 액션 ID를 입력받습니다. 그런 다음 노드는 요청을 처리하고 애니메이션된 모델을 GLB 및 FBX 파일 형식으로 반환합니다.

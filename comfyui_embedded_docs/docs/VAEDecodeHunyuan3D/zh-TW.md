@@ -1,4 +1,4 @@
-# VAEDecodeHunyuan3D 節點
+# VAE 解碼 Hunyuan3D
 
 VAEDecodeHunyuan3D 節點使用 VAE 解碼器將潛在表示轉換為 3D 體素資料。它透過可設定的區塊處理和解析度設定，將潛在樣本經由 VAE 模型處理，以生成適用於 3D 應用的體積資料。
 

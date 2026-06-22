@@ -1,3 +1,5 @@
+# SkipLayerGuidanceDiT
+
 Melhora a orientação para detalhes estruturais usando outro conjunto de CFG negativo com camadas ignoradas. Esta versão genérica do SkipLayerGuidance pode ser usada em qualquer modelo DiT e é inspirada no Perturbed Attention Guidance. A implementação experimental original foi criada para o SD3.
 
 ## Entradas

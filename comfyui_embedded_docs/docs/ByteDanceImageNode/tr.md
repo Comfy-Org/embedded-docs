@@ -1,3 +1,5 @@
+# ByteDance Görüntü
+
 ByteDance Görsel düğümü, metin istemlerine dayalı olarak bir API aracılığıyla ByteDance modellerini kullanarak görseller oluşturur. Bir model seçmenize, görsel boyutlarını belirlemenize ve tohum (seed) ile yönlendirme ölçeği (guidance scale) gibi çeşitli oluşturma parametrelerini kontrol etmenize olanak tanır. Düğüm, ByteDance'in görsel oluşturma hizmetine bağlanır ve oluşturulan görseli döndürür.
 
 ## Girişler

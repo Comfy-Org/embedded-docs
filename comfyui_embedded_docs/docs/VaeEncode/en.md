@@ -1,3 +1,5 @@
+# VAE Encode
+
 This node is designed for encoding images into a latent space representation using a specified VAE model. It abstracts the complexity of the encoding process, providing a straightforward way to transform images into their latent representations.
 
 ## Inputs

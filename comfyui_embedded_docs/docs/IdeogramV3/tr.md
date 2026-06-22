@@ -1,3 +1,5 @@
+# Ideogram V3
+
 **Ideogram V3**
 
 Ideogram V3 düğümü, Ideogram V3 modelini kullanarak görseller oluşturur. Hem metin istemlerinden normal görsel oluşturmayı hem de bir görsel ve maske sağlandığında görsel düzenlemeyi destekler. Düğüm, en boy oranı, çözünürlük, oluşturma hızı ve isteğe bağlı karakter referans görselleri için çeşitli kontroller sunar.

@@ -1,3 +1,5 @@
+# ElevenLabs Texto a Diálogo
+
 El nodo ElevenLabs Text to Dialogue genera un diálogo de audio con múltiples hablantes a partir de texto. Permite crear una conversación especificando diferentes líneas de texto y voces distintas para cada participante. El nodo envía la solicitud de diálogo a la API de ElevenLabs y devuelve el audio generado.
 
 ## Entradas

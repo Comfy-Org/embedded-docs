@@ -1,3 +1,5 @@
+# Boşlukları Kaldır
+
 Bu düğüm, bir metin dizesinin başındaki ve sonundaki tüm fazla boşlukları, sekmeleri veya satır sonlarını kaldırır. Bir metin girişi alır ve baştaki ve sondaki boşluk karakterlerinin temizlendiği bir sürüm döndürür.
 
 ## Girişler

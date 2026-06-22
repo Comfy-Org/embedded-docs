@@ -1,3 +1,5 @@
+# GuíaBásica
+
 El nodo BasicGuider crea un mecanismo de guía simple para el proceso de muestreo. Toma un modelo y datos de condicionamiento como entradas y produce un objeto guía que puede utilizarse para dirigir el proceso de generación durante el muestreo. Este nodo proporciona la funcionalidad de guía fundamental necesaria para una generación controlada.
 
 ## Entradas

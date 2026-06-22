@@ -1,3 +1,5 @@
+# Conversion de nombre
+
 Le nœud Number Convert transforme différents types de données d'entrée en valeurs numériques. Il accepte une seule entrée de type entier, flottant, chaîne de caractères ou booléen et produit deux sorties : un nombre à virgule flottante et un entier. Ceci est utile pour convertir du texte ou des valeurs logiques dans un format pouvant être utilisé par d'autres nœuds mathématiques ou de traitement dans votre flux de travail.
 
 ## Entrées

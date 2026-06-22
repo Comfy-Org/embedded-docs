@@ -1,3 +1,5 @@
+# Trim Text
+
 The StringTrim node removes whitespace characters (such as spaces, tabs, and newlines) from the beginning, end, or both sides of a text string. You can choose to trim from the left side, right side, or both sides of the string. This is useful for cleaning up text inputs by removing unwanted whitespace.
 
 ## Inputs

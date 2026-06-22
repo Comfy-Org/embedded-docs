@@ -1,3 +1,5 @@
+# FreeU_V2
+
 The FreeU_V2 node enhances image generation quality by applying frequency-based modifications to a diffusion model's U-Net architecture. It uses configurable scaling factors to adjust feature channels in different blocks, improving output without requiring additional training.
 
 ## Inputs

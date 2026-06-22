@@ -1,3 +1,5 @@
+# EmptyLatentHunyuan3Dv2
+
 Le nœud EmptyLatentHunyuan3Dv2 crée des tenseurs latents vides spécifiquement formatés pour les modèles de génération 3D Hunyuan3Dv2. Il génère des espaces latents vides avec les dimensions et la structure correctes requises par l'architecture Hunyuan3Dv2, vous permettant de démarrer des workflows de génération 3D à partir de zéro. Le nœud produit des tenseurs latents remplis de zéros qui servent de base aux processus de génération 3D ultérieurs.
 
 ## Entrées

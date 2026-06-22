@@ -1,3 +1,5 @@
+# PikaStartEndFrameNode2_2
+
 El nodo PikaFrames v2.2 genera un video combinando tu primer y último fotograma. Cargas dos imágenes para definir los puntos de inicio y fin, y la IA crea una transición suave entre ellas para producir un video completo.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# Hunyuan Video 1.5 潛在空間放大（搭配模型）節點
+# Hunyuan Video 15 Latent Upscale With Model
 
 Hunyuan Video 1.5 潛在空間放大（搭配模型）節點可提高潛在影像表示法的解析度。它首先使用所選的內插方法將潛在樣本放大到指定尺寸，然後使用專門的 Hunyuan Video 1.5 放大模型來優化放大結果，以提升品質。
 

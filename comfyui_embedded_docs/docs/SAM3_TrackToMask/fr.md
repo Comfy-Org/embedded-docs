@@ -1,3 +1,5 @@
+# SAM3 Suivi vers Masque
+
 Voici la traduction en français de la documentation du nœud ComfyUI `SAM3_TrackToMask` :
 
 ## Aperçu

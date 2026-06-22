@@ -1,4 +1,4 @@
-# WanSoundImageToVideoExtend 노드
+# WanSoundImageToVideoExtend
 
 WanSoundImageToVideoExtend 노드는 기존 비디오 잠재 표현에 추가 프레임을 생성하여 비디오를 확장합니다. 선택적으로 오디오, 참조 이미지 및 제어 비디오의 안내를 받을 수 있습니다. 시작 비디오 잠재 표현을 입력받아 제공된 조건화 및 오디오 신호를 활용하여 더 긴 비디오 시퀀스를 생성합니다.
 

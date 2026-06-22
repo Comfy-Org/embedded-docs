@@ -1,3 +1,5 @@
+# Ideogram V2
+
 O nó Ideogram V2 gera imagens usando o modelo de IA Ideogram V2. Ele recebe prompts de texto e várias configurações de geração para criar imagens por meio de um serviço de API. O nó suporta diferentes proporções de aspecto, resoluções e opções de estilo para personalizar as imagens geradas.
 
 ## Entradas

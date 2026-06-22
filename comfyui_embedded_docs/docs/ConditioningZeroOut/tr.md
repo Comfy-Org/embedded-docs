@@ -1,3 +1,5 @@
+# KoşullandırmaSıfırla
+
 Bu düğüm, koşullandırma veri yapısı içindeki belirli öğeleri sıfırlayarak, bunların sonraki işleme adımlarındaki etkisini etkili bir şekilde ortadan kaldırır. Koşullandırmanın dahili temsilinin doğrudan manipülasyonunun gerektiği ileri düzey koşullandırma işlemleri için tasarlanmıştır.
 
 ## Girişler

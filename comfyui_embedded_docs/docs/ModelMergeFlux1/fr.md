@@ -1,3 +1,5 @@
+# ModelMergeFlux1
+
 Le nœud ModelMergeFlux1 fusionne deux modèles de diffusion en mélangeant leurs composants par interpolation pondérée. Il permet un contrôle précis sur la façon dont les différentes parties des modèles sont combinées, notamment les blocs de traitement d'image, les couches d'intégration temporelle, les mécanismes de guidage, les entrées vectorielles, les encodeurs de texte et divers blocs de transformeurs. Cela permet de créer des modèles hybrides aux caractéristiques personnalisées à partir de deux modèles sources.
 
 ## Entrées

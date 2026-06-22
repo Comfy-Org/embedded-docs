@@ -1,3 +1,5 @@
+# Kling Görüntüden Videoya
+
 ## Giriş
 
 Kling Görüntüden Videoya Düğümü, bir başlangıç referans görüntüsü kullanarak metin istemleri aracılığıyla video oluşturur. İlk kare olarak bir görüntü alır ve pozitif ile negatif metin açıklamalarına dayanarak, model, süre, en-boy oranı ve oluşturma modu gibi yapılandırılabilir seçeneklerle bir video dizisi oluşturur.

@@ -1,3 +1,5 @@
+# Quantize Image
+
 The ImageQuantize node is designed to reduce the number of colors in an image to a specified number, optionally applying dithering techniques to maintain visual quality. This process is useful for creating palette-based images or reducing the color complexity for certain applications.
 
 ## Inputs

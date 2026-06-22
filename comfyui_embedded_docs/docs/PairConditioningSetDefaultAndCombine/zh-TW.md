@@ -1,3 +1,5 @@
+# PairConditioningSetDefaultAndCombine
+
 **PairConditioningSetDefaultAndCombine** 節點會設定預設的條件化數值，並將其與輸入的條件化資料結合。它接收正向與負向條件化輸入及其對應的預設值，然後透過 ComfyUI 的鉤子系統進行處理，以產生包含預設數值的最終條件化輸出。
 
 ## 輸入

@@ -1,3 +1,5 @@
+# WanFunInpaintToVideo
+
 O nó WanFunInpaintToVideo cria sequências de vídeo por meio de inpaint entre imagens de início e fim. Ele recebe condicionamentos positivo e negativo, juntamente com imagens de quadro opcionais, para gerar latentes de vídeo. O nó gerencia a geração de vídeo com parâmetros configuráveis de dimensões e duração.
 
 ## Entradas

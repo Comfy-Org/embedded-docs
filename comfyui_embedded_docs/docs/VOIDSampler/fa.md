@@ -1,3 +1,5 @@
+# VOIDSampler
+
 ## نمای کلی
 
 گره VOIDSampler یک روش نمونه‌برداری DDIM تخصصی ارائه می‌دهد که به‌طور خاص برای مدل‌های inpainting VOID طراحی شده است. این گره همان فرآیند نویززدایی را که در طول آموزش مدل VOID استفاده می‌شود، بدون مقیاس‌گذاری نویزی که KSamplerهای استاندارد اعمال می‌کنند، پیاده‌سازی می‌کند. این گره برای استفاده با گره‌های SamplerCustom یا SamplerCustomAdvanced در نظر گرفته شده است و باید با RandomNoise یا VOIDWarpedNoiseSource جفت شود.

@@ -1,3 +1,5 @@
+# VPScheduler
+
 El nodo VPScheduler está diseñado para generar una secuencia de niveles de ruido (sigmas) basada en el método de programación de Preservación de Varianza (VP). Esta secuencia es crucial para guiar el proceso de eliminación de ruido en modelos de difusión, permitiendo la generación controlada de imágenes u otros tipos de datos.
 
 ## Entradas

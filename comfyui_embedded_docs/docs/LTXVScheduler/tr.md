@@ -1,3 +1,5 @@
+# LTXVZamanlayıcı
+
 LTXVScheduler düğümü, özel örnekleme süreçleri için sigma değerleri üretir. Girdi latenti içindeki token sayısına bağlı olarak gürültü planı parametrelerini hesaplar ve örnekleme planını oluşturmak için bir sigmoid dönüşümü uygular. Düğüm, isteğe bağlı olarak elde edilen sigmaları belirtilen bir terminal değerine uyacak şekilde esnetebilir.
 
 ## Girdiler

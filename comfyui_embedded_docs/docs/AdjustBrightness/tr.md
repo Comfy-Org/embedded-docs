@@ -1,3 +1,5 @@
+# Parlaklığı Ayarla
+
 Parlaklık Ayarla düğümü, bir giriş görüntüsünün parlaklığını değiştirir. Her pikselin değerini belirtilen bir faktörle çarparak ve ardından elde edilen değerleri geçerli bir aralıkta kalacak şekilde sınırlandırarak çalışır. 1.0 faktörü görüntüyü değiştirmez, 1.0'ın altındaki değerler karartır, 1.0'ın üzerindeki değerler ise aydınlatır.
 
 ## Girişler

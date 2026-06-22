@@ -1,3 +1,5 @@
+# ModelMergeAuraflow
+
 Le nœud ModelMergeAuraflow vous permet de fusionner deux modèles différents en ajustant des poids de mélange spécifiques pour divers composants du modèle. Il offre un contrôle précis sur la façon dont les différentes parties des modèles sont fusionnées, des couches initiales aux sorties finales. Ce nœud est particulièrement utile pour créer des combinaisons de modèles personnalisées avec un contrôle précis du processus de fusion.
 
 ## Entrées

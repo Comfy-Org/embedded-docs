@@ -1,3 +1,5 @@
+# Efectos de Video Kling
+
 El Nodo de Efecto de Video a partir de una Imagen Única de Kling crea videos con diferentes efectos especiales basados en una sola imagen de referencia. Aplica diversos efectos visuales y escenas para transformar imágenes estáticas en contenido de video dinámico. El nodo admite diferentes escenas de efectos, opciones de modelo y duraciones de video para lograr el resultado visual deseado.
 
 ## Entradas

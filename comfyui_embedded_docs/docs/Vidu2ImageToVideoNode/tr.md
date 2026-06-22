@@ -1,3 +1,5 @@
+# Vidu2 Görüntüden Videoya Üretim
+
 Vidu2 Görüntüden Videoya Oluşturma düğümü, tek bir giriş görüntüsünden başlayarak bir video dizisi oluşturur. İsteğe bağlı bir metin istemi temel alınarak sahneyi canlandırmak için belirtilen bir Vidu2 modelini kullanır ve videonun uzunluğunu, çözünürlüğünü ve hareket yoğunluğunu kontrol eder.
 
 ## Girişler

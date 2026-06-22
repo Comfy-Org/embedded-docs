@@ -1,3 +1,5 @@
+# wanBlockSwap
+
 Ce nœud est obsolète et ne remplit aucune fonction. Il accepte un modèle en entrée et renvoie le même modèle sans modification. La description « NOP » indique qu'il n'effectue aucune opération.
 
 ## Entrées

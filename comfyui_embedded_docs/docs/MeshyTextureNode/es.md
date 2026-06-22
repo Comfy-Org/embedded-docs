@@ -1,3 +1,5 @@
+# Meshy: Modelo de Textura
+
 El nodo **Meshy: Texture** aplica texturas generadas por IA a un modelo 3D. Toma un ID de tarea de un nodo anterior de generación o conversión 3D de Meshy y utiliza una descripción de texto o una imagen de referencia para crear nuevas texturas para el modelo. El nodo genera el modelo texturizado en formatos de archivo GLB y FBX.
 
 ## Entradas

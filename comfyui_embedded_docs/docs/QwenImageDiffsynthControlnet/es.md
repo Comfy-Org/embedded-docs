@@ -1,3 +1,5 @@
+# QwenImageDiffsynthControlnet
+
 El nodo QwenImageDiffsynthControlnet aplica un parche de red de control de síntesis por difusión para modificar el comportamiento de un modelo base. Utiliza una entrada de imagen y una máscara opcional para guiar el proceso de generación del modelo con una intensidad ajustable, creando un modelo parcheado que incorpora la influencia de la red de control para una síntesis de imágenes más controlada.
 
 ## Entradas

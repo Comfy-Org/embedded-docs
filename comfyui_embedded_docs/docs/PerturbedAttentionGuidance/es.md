@@ -1,3 +1,5 @@
+# PerturbedAttentionGuidance
+
 El nodo PerturbedAttentionGuidance aplica guía de atención perturbada a un modelo de difusión para mejorar la calidad de generación. Modifica el mecanismo de autoatención del modelo durante el muestreo, reemplazándolo con una versión simplificada que se centra en las proyecciones de valores. Esta técnica ayuda a mejorar la coherencia y calidad de las imágenes generadas ajustando el proceso de eliminación de ruido condicional.
 
 ## Entradas

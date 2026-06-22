@@ -1,3 +1,5 @@
+# CLIPTextEncodeHiDream
+
 O nó CLIPTextEncodeHiDream processa quatro entradas de texto separadas usando diferentes modelos de linguagem (CLIP-L, CLIP-G, T5-XXL e LLaMA) e as combina em uma única saída de condicionamento. Ele tokeniza cada entrada de texto com seu modelo correspondente e as codifica em conjunto usando uma abordagem de codificação agendada, permitindo um condicionamento de texto mais sofisticado ao aproveitar vários modelos de linguagem simultaneamente.
 
 ## Entradas

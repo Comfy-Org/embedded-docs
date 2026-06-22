@@ -1,4 +1,4 @@
-# Resumen
+# Anthropic Claude
 
 Genera respuestas de texto a partir de un modelo Anthropic Claude. Este nodo envía un mensaje de texto e imágenes opcionales a un modelo Claude y devuelve la respuesta de texto generada.
 

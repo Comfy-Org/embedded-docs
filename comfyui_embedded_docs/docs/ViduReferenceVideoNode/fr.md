@@ -1,3 +1,5 @@
+# Génération vidéo Vidu à partir de référence
+
 Voici la traduction en français de la documentation du nœud ViduReferenceVideoNode :
 
 Le nœud Vidu Reference Video génère des vidéos à partir de plusieurs images de référence et d'une invite textuelle. Il utilise des modèles d'IA pour créer un contenu vidéo cohérent basé sur les images fournies et la description. Le nœud prend en charge divers paramètres vidéo, notamment la durée, le rapport hauteur/largeur, la résolution et le contrôle du mouvement.

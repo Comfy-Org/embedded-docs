@@ -1,3 +1,5 @@
+# LTXVLatentUpsampler
+
 LTXVLatentUpsampler düğümü, bir video gizli temsilinin uzamsal çözünürlüğünü iki katına çıkarır. Gizli verileri işlemek için özel bir yükseltme modeli kullanır; bu veriler önce normalleştirmeden çıkarılır, ardından sağlanan VAE'nin kanal istatistikleri kullanılarak yeniden normalleştirilir. Bu düğüm, gizli uzaydaki video iş akışları için tasarlanmıştır.
 
 ## Girişler

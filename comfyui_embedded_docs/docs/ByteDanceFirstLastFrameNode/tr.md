@@ -1,3 +1,5 @@
+# ByteDance İlk-Son-Kare'den Videoya
+
 Bu belge, yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceFirstLastFrameNode/en.md)
 
 Bu düğüm, bir metin istemi ile birlikte ilk ve son kare görüntülerini kullanarak bir video oluşturur. Tanımınızı ve iki ana kareyi alarak, bunlar arasında geçiş yapan eksiksiz bir video dizisi oluşturur. Düğüm, videonun çözünürlüğünü, en boy oranını, süresini ve diğer oluşturma parametrelerini kontrol etmek için çeşitli seçenekler sunar.

@@ -1,3 +1,5 @@
+# Cargar LoRA (Bypass) (Para depuración)
+
 El nodo LoraLoaderBypass aplica un LoRA (Adaptación de Bajo Rango) a un modelo de difusión y a un modelo CLIP en un modo especial de "bypass". A diferencia de un cargador LoRA estándar, este método no modifica permanentemente los pesos del modelo base. En su lugar, calcula la salida añadiendo el efecto del LoRA al paso forward normal del modelo, lo cual es útil para entrenamiento o cuando se trabaja con modelos que tienen sus pesos descargados.
 
 ## Entradas

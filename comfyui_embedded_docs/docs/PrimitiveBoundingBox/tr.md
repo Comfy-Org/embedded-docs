@@ -1,3 +1,5 @@
+# Sınır Kutusu
+
 PrimitiveBoundingBox düğümü, konumu ve boyutuyla tanımlanan basit bir dikdörtgen alan oluşturur. Sol üst köşe için X ve Y koordinatlarını, genişlik ve yükseklik değerlerini alır ve iş akışındaki diğer düğümler tarafından kullanılabilecek bir sınırlayıcı kutu veri yapısı çıktısı verir.
 
 ## Girişler

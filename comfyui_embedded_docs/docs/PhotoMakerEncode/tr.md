@@ -1,3 +1,5 @@
+# PhotoMakerKodlama
+
 PhotoMakerEncode düğümü, yapay zeka görüntü oluşturma için koşullandırma verileri üretmek amacıyla görselleri ve metinleri işler. Bir referans görseli ve metin istemi alır, ardından referans görselin görsel özelliklerine dayanarak görüntü oluşturmayı yönlendirmek için kullanılabilecek gömmeler oluşturur. Düğüm, görsel tabanlı koşullandırmanın nereye uygulanacağını belirlemek için metinde özellikle "photomaker" tokenini arar.
 
 ## Girişler

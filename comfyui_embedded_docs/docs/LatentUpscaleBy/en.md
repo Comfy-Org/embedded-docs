@@ -1,3 +1,5 @@
+# Upscale Latent By
+
 The LatentUpscaleBy node is designed for upscaling latent representations of images. It allows for the adjustment of the scale factor and the method of upscaling, providing flexibility in enhancing the resolution of latent samples.
 
 ## Inputs

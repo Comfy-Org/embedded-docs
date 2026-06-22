@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_14B
+
 O nó ModelMergeCosmosPredict2_14B mescla dois modelos de IA combinando seus componentes internos. Ele oferece controle preciso sobre o quanto cada parte do segundo modelo influencia o resultado final mesclado, usando valores de peso ajustáveis para camadas e componentes específicos.
 
 ## Entradas

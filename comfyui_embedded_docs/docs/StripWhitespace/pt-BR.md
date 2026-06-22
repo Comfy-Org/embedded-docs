@@ -1,3 +1,5 @@
+# Remover Espaços em Branco
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/en.md)
 
 Este nó remove quaisquer espaços extras, tabulações ou quebras de linha do início e do final de uma string de texto. Ele recebe uma entrada de texto e retorna uma versão limpa com os espaços em branco iniciais e finais removidos.

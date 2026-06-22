@@ -1,3 +1,5 @@
+# Load LTXV Audio Text Encoder
+
 This node loads a specialized text encoder for the LTXV audio model. It combines a specific text encoder file with a checkpoint file to create a CLIP model that can be used for audio-related text conditioning tasks.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# WAN Bağlam Pencereleri (Manuel)
+
 WAN Bağlam Pencereleri (Manuel) düğümü, 2 boyutlu işleme sahip WAN benzeri modeller için bağlam pencerelerini manuel olarak yapılandırmanıza olanak tanır. Pencere uzunluğunu, örtüşmeyi, zamanlama yöntemini ve birleştirme tekniğini belirterek örnekleme sırasında özel bağlam penceresi ayarları uygular. Bu, modelin farklı bağlam bölgelerinde bilgiyi nasıl işlediği üzerinde hassas kontrol sağlar.
 
 ## Girişler

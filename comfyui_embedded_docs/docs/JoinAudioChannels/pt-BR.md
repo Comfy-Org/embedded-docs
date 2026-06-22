@@ -1,3 +1,5 @@
+# Unir Canais de Áudio
+
 O nó **Join Audio Channels** combina duas entradas de áudio mono separadas em uma única saída de áudio estéreo. Ele recebe um canal esquerdo e um canal direito, garante que tenham taxas de amostragem e durações compatíveis e os mescla em uma forma de onda de áudio de dois canais.
 
 ## Entradas

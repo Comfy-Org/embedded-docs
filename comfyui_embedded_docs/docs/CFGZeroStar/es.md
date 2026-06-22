@@ -1,3 +1,5 @@
+# CFGZeroStar
+
 El nodo CFGZeroStar aplica una técnica especializada de escalado de guía a modelos de difusión. Modifica el proceso de guía sin clasificador calculando un factor de escala optimizado basado en la diferencia entre las predicciones condicionales e incondicionales. Este enfoque ajusta la salida final para proporcionar un control mejorado sobre el proceso de generación, manteniendo al mismo tiempo la estabilidad del modelo.
 
 ## Entradas

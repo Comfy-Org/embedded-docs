@@ -1,3 +1,5 @@
+# GizliÇıkarma
+
 LatentSubtract düğümü, bir gizli temsilin diğerinden çıkarılması için tasarlanmıştır. Bu işlem, bir gizli uzayda temsil edilen özellikleri veya nitelikleri etkili bir şekilde kaldırarak üretken modellerin çıktılarının özelliklerini değiştirmek veya düzenlemek için kullanılabilir.
 
 ## Girişler

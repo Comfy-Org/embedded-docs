@@ -1,3 +1,5 @@
+# Görsel Çoğaltma Kaldırma
+
 Bu düğüm, bir gruptaki yinelenen veya çok benzer görselleri kaldırır. Her görsel için algısal bir karma (görsel içeriğine dayalı basit bir sayısal parmak izi) oluşturarak ve bunları karşılaştırarak çalışır. Karmaları belirlenen bir eşik değerinden daha benzer olan görseller yinelenen olarak kabul edilir ve filtrelenir.
 
 ## Girişler

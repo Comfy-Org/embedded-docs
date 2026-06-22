@@ -1,3 +1,5 @@
+# Cargar Punto de Control Con Configuración (OBSOLETO)
+
 El nodo CheckpointLoader carga un punto de control de un modelo preentrenado junto con su archivo de configuración. Toma un archivo de configuración y un archivo de punto de control como entradas y devuelve los componentes del modelo cargado, incluidos el modelo principal, el modelo CLIP y el modelo VAE para su uso en el flujo de trabajo.
 
 ## Entradas

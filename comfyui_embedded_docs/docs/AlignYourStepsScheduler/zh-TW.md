@@ -1,4 +1,4 @@
-# AlignYourStepsScheduler 節點
+# AlignYourStepsScheduler
 
 AlignYourStepsScheduler 節點根據不同的模型類型生成去噪過程的 sigma 值。它為取樣過程的每個步驟計算適當的噪聲級別，並根據去噪參數調整總步驟數。這有助於將取樣步驟與不同擴散模型的特定需求對齊。
 

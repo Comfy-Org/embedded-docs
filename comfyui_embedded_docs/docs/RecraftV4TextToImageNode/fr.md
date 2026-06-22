@@ -1,3 +1,5 @@
+# Recraft V4 Texte vers Image
+
 Ce nœud génère des images à partir de descriptions textuelles en utilisant les modèles d'IA Recraft V4 ou V4 Pro. Il envoie votre prompt à une API externe et retourne les images générées. Vous pouvez contrôler le résultat en spécifiant le modèle, la taille de l'image et le nombre d'images à créer.
 
 ## Entrées

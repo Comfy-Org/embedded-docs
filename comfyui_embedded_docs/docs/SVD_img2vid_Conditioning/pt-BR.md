@@ -1,3 +1,5 @@
+# SVD_img2vid_Conditioning
+
 O nó SVD_img2vid_Conditioning prepara dados de condicionamento para geração de vídeo usando o Stable Video Diffusion. Ele recebe uma imagem inicial e a processa através dos codificadores CLIP vision e VAE para criar pares de condicionamento positivo e negativo, juntamente com um espaço latente vazio para geração de vídeo. Este nó configura os parâmetros necessários para controlar movimento, taxa de quadros e níveis de aumento na geração do vídeo.
 
 ## Entradas

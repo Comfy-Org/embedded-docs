@@ -1,3 +1,5 @@
+# HunyuanVideo15SuperResolution
+
 以下が翻訳結果です。
 
 HunyuanVideo15SuperResolution ノードは、ビデオの超解像処理のための conditioning データを準備します。このノードは、ビデオの潜在表現と、オプションで開始画像を受け取り、それらをノイズ拡張データおよび CLIP ビジョンデータとともにパッケージ化し、モデルが高解像度出力を生成するために使用できる形式に変換します。

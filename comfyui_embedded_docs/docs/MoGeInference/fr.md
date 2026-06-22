@@ -1,3 +1,5 @@
+# Inférence MoGe
+
 Voici la traduction en français de la documentation du nœud ComfyUI **MoGeInference** :
 
 ## Aperçu

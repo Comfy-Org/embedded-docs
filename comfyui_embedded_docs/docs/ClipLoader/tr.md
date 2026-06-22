@@ -1,3 +1,5 @@
+# CLIP Yükle
+
 CLIPLoader düğümü, bir dosyadan metin kodlayıcı modelini (CLIP, T5 veya benzeri) yükleyerek, metin istemlerini sayısal temsillere dönüştürmesi gereken diğer düğümlerde kullanıma sunar. Her biri belirli bir kodlayıcı türü gerektiren çok çeşitli model mimarilerini destekler.
 
 ## Girişler

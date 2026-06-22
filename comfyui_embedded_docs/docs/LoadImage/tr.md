@@ -1,3 +1,5 @@
+# Görüntü Yükle
+
 LoadImage düğümü, belirtilen bir yoldan görüntüleri yüklemek ve ön işlemek için tasarlanmıştır. Çoklu kare içeren görüntü formatlarını işler, EXIF verilerine dayalı döndürme gibi gerekli dönüşümleri uygular, piksel değerlerini normalleştirir ve isteğe bağlı olarak alfa kanalına sahip görüntüler için bir maske oluşturur. Bu düğüm, görüntüleri bir iş akışı içinde daha ileri işleme veya analiz için hazırlamada önemli bir rol oynar.
 
 ## Girişler

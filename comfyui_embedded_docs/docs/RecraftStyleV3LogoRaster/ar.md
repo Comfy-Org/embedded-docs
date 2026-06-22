@@ -1,3 +1,5 @@
+# نمط إعادة الصياغة - شعار نقطي
+
 هذه هي الترجمة العربية للوثيقة التقنية الخاصة بعقدة ComfyUI:
 
 > تم إنشاء هذه الوثائق بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/en.md)

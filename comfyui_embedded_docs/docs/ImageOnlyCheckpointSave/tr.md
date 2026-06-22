@@ -1,3 +1,5 @@
+# SadeceGörüntüKontrolNoktasıKaydet
+
 ImageOnlyCheckpointSave düğümü, bir model, CLIP görüntü kodlayıcı ve VAE içeren bir kontrol noktası dosyası kaydeder. Belirtilen dosya adı önekiyle bir safetensors dosyası oluşturur ve bunu çıktı dizinine kaydeder. Bu düğüm, özellikle görüntüyle ilgili model bileşenlerini tek bir kontrol noktası dosyasında birlikte kaydetmek için tasarlanmıştır.
 
 ## Girişler

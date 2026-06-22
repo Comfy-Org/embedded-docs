@@ -1,3 +1,5 @@
+# Krea 2 Image
+
 ## Overview
 
 The Krea 2 Image node generates images using the Krea 2 AI model. It supports two model variants: Medium for expressive illustrations and Large for expressive photorealism, with an additional Medium Turbo option for faster generation. You can optionally include a moodboard and up to 10 image style references to influence the generated image.

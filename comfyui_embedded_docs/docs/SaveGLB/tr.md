@@ -1,3 +1,5 @@
+# GLB Kaydet
+
 SaveGLB düğümü, 3B ağ verilerini veya 3B dosyaları çıktı dizinine kaydeder. Ağ verilerini veya çeşitli 3B dosya biçimlerini (GLB, GLTF, OBJ, FBX, STL, USDZ) kabul eder ve belirtilen bir dosya adı ön ekiyle dışa aktarır. Ağ verileri kaydedilirken birden çok ağı işleyebilir ve meta veriler etkinleştirildiğinde dosyalara otomatik olarak iş akışı meta verileri ekler.
 
 ## Girişler

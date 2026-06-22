@@ -1,3 +1,5 @@
+# SamplerEulerAncestralCFG++
+
 El nodo SamplerEulerAncestralCFGPP crea un muestreador que utiliza el método Euler Ancestral con guía libre de clasificador (CFG++) para la generación de imágenes. Este muestreador combina técnicas de muestreo ancestral con condicionamiento guiado para producir variaciones diversas de imágenes manteniendo la coherencia, y permite un ajuste fino mediante parámetros que controlan el ruido y las modificaciones en el tamaño del paso.
 
 ## Entradas

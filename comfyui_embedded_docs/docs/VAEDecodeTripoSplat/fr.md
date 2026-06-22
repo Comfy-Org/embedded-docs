@@ -1,4 +1,4 @@
-# VAEDecodeTripoSplat
+# Décodage TripoSplat
 
 Décode une représentation latente TripoSplat en un splat gaussien 3D. Ce nœud prend l'échantillon latent d'un modèle TripoSplat et le reconstruit sous forme d'un ensemble de gaussiennes 3D, dont la densité peut être ajustée en modifiant le nombre de gaussiennes produites.
 

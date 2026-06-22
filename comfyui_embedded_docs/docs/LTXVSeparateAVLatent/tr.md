@@ -1,3 +1,5 @@
+# LTXVSeparateAVLatent
+
 LTXVSeparateAVLatent düğümü, birleşik bir ses-görüntü gizli temsilini alır ve bunu iki ayrı parçaya ayırır: biri video, diğeri ses için. Giriş gizli temsilinden örnekleri ve varsa gürültü maskelerini ayırarak iki yeni gizli nesne oluşturur.
 
 ## Girişler

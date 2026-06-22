@@ -1,3 +1,5 @@
+# Aumentar Resolução Latent
+
 O nó LatentUpscale foi projetado para aumentar a resolução de representações latentes de imagens. Ele permite ajustar as dimensões da imagem de saída e o método de ampliação, oferecendo flexibilidade para melhorar a resolução de imagens latentes.
 
 ## Entradas

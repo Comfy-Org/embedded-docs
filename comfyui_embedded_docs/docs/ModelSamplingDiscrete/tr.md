@@ -1,3 +1,5 @@
+# ModelÖrneklemeAyrık
+
 Bu düğüm, bir modele ayrık örnekleme stratejisi uygulayarak modelin örnekleme davranışını değiştirmek için tasarlanmıştır. Epsilon, v_prediction, lcm veya x0 gibi farklı örnekleme yöntemlerinin seçilmesine olanak tanır ve isteğe bağlı olarak modelin gürültü azaltma stratejisini sıfır atışlı gürültü oranı (zsnr) ayarına göre düzenler.
 
 ## Girişler

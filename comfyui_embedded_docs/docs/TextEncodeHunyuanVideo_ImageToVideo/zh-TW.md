@@ -1,3 +1,5 @@
+# 文字編碼 HunyuanVideo 影像轉影片
+
 ## 概述
 
 TextEncodeHunyuanVideo_ImageToVideo 節點透過將文字提示與圖像嵌入結合，為影片生成建立條件資料。它使用 CLIP 模型處理文字輸入以及來自 CLIP 視覺輸出的視覺資訊，然後根據指定的圖像交錯設定生成融合這兩種來源的令牌。

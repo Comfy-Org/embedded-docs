@@ -1,3 +1,5 @@
+# AutogrowNamesTestNode
+
 ## Genel Bakış
 
 Bu düğüm, Otomatik Büyüme (Autogrow) giriş özelliği için bir test düğümüdür. Dinamik sayıda ondalık sayı (float) girişi alır, her biri belirli bir adla etiketlenir ve bu değerleri virgülle ayrılmış tek bir dize (string) halinde birleştirir.

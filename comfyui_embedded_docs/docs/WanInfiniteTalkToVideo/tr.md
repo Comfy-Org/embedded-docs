@@ -1,3 +1,5 @@
+# WanInfiniteTalkToVideo
+
 WanInfiniteTalkToVideo düğümü, ses girişinden video dizileri oluşturur. Bir veya iki konuşmacıdan alınan ses özellikleriyle koşullandırılmış bir video difüzyon modeli kullanarak, bir konuşan kafa videosunun potansiyel temsilini üretir. Düğüm, yeni bir dizi oluşturabilir veya hareket bağlamı için önceki kareleri kullanarak mevcut bir diziyi genişletebilir.
 
 ## Girişler

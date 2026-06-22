@@ -1,3 +1,5 @@
+# Agrandir l'image par
+
 Le nœud ImageScaleBy est conçu pour agrandir des images selon un facteur d'échelle spécifié, en utilisant diverses méthodes d'interpolation. Il permet d'ajuster la taille de l'image de manière flexible, répondant à différents besoins d'agrandissement.
 
 ## Entrées

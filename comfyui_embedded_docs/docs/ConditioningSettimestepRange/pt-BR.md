@@ -1,3 +1,5 @@
+# CondicionamentoDefinirIntervaloDeTempo
+
 Este nó foi projetado para ajustar o aspecto temporal do condicionamento, definindo um intervalo específico de etapas de tempo (*timesteps*). Ele permite o controle preciso sobre os pontos inicial e final do processo de condicionamento, possibilitando uma geração mais direcionada e eficiente.
 
 ## Entradas

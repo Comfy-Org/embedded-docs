@@ -1,3 +1,5 @@
+# VokseldenAğa
+
 VoxelToMeshBasic düğümü, belirtilen bir eşik değerinde yüzey çıkararak 3B voxel verilerini ağ geometrisine dönüştürür. Girişteki her voxel ızgarasını işler ve 3B ağ temsili oluşturan köşeler ve yüzeyler üretir.
 
 ## Girişler

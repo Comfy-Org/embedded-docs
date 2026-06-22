@@ -1,3 +1,5 @@
+# Extracción Regex
+
 El nodo RegexExtract busca patrones en texto utilizando expresiones regulares. Puede encontrar la primera coincidencia, todas las coincidencias, grupos específicos de las coincidencias, o todos los grupos en múltiples coincidencias. El nodo admite varias banderas de expresiones regulares para sensibilidad a mayúsculas/minúsculas, coincidencia multilínea y comportamiento dotall.
 
 ## Entradas

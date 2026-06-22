@@ -1,3 +1,5 @@
+# MoGe Modelini Yükle
+
 ## Genel Bakış
 
 Bir dosyadan MoGe (Monoküler Geometri) modelini yükler ve geometri tahmini görevlerinde kullanıma hazır hale getirir. Bu düğüm, `geometry_estimation` klasöründen bir model dosyasını okur ve MoGe modelini eğitilmiş ağırlıklarıyla başlatır.

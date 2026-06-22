@@ -1,3 +1,5 @@
+# LoadImageSetNode
+
 Le nœud LoadImageSetNode charge plusieurs images depuis le répertoire d'entrée pour le traitement par lots et l'entraînement. Il prend en charge divers formats d'image et peut éventuellement redimensionner les images à l'aide de différentes méthodes. Ce nœud traite toutes les images sélectionnées sous forme de lot et les renvoie sous forme d'un seul tenseur.
 
 ## Entrées

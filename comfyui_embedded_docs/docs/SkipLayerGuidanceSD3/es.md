@@ -1,3 +1,5 @@
+# Orientación de Capa de Salto SD3
+
 El nodo SkipLayerGuidanceSD3 mejora la guía hacia una estructura detallada aplicando un conjunto adicional de guía sin clasificador con capas omitidas. Esta implementación experimental está inspirada en la Guía de Atención Perturbada y funciona omitiendo selectivamente ciertas capas durante el proceso de condicionamiento negativo para mejorar los detalles estructurales en la salida generada.
 
 ## Entradas

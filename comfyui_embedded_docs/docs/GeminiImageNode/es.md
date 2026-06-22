@@ -1,3 +1,5 @@
+# Imagen de Google Gemini
+
 El nodo GeminiImage genera respuestas de texto e imagen a partir de los modelos de IA Gemini de Google. Permite proporcionar entradas multimodales que incluyen indicaciones de texto, imágenes y archivos para crear resultados coherentes de texto e imagen. El nodo gestiona toda la comunicación con la API y el análisis de respuestas con los modelos Gemini más recientes.
 
 ## Entradas

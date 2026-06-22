@@ -1,3 +1,5 @@
+# WanVace'denVideoya
+
 WanVaceToVideo düğümü, video oluşturma modelleri için video koşullama verilerini işler. Pozitif ve negatif koşullama girdilerini video kontrol verileriyle birlikte alır ve video oluşturma için gizli temsiller hazırlar. Düğüm, video modelleri için uygun koşullama yapısını oluşturmak amacıyla video yükseltme, maskeleme ve VAE kodlama işlemlerini gerçekleştirir.
 
 ## Girdiler

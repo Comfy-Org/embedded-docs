@@ -1,3 +1,5 @@
+# OrientaciónLinealCFGVideo
+
 El nodo VideoLinearCFGGuidance aplica una escala de guía de condicionamiento lineal a un modelo de video, ajustando la influencia de los componentes condicionados y no condicionados dentro de un rango específico. Esto permite un control dinámico sobre el proceso de generación, posibilitando el ajuste fino de la salida del modelo según el nivel deseado de condicionamiento.
 
 ## Entradas

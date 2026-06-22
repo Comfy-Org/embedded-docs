@@ -1,3 +1,5 @@
+# Kling 3.0 Video
+
 Bu düğüm, Kling V3 modelini kullanarak videolar oluşturur. İki ana modu destekler: metinden videoya, burada bir metin açıklamasından video oluşturulur ve görüntüden videoya, burada mevcut bir görüntü canlandırılır. Ayrıca, her bölüm için farklı yönlendirmelerle (storyboard'lar) çok parçalı videolar oluşturma ve isteğe bağlı olarak eşlik eden ses üretme gibi gelişmiş özellikler sunar.
 
 ## Girişler

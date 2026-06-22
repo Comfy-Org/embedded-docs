@@ -1,3 +1,5 @@
+# Concatenar
+
 El nodo StringConcatenate combina dos cadenas de texto en una sola uniéndolas con un delimitador especificado. Toma dos cadenas de entrada y un carácter o cadena delimitador, luego genera una única cadena donde las dos entradas se conectan con el delimitador colocado entre ellas.
 
 ## Entradas

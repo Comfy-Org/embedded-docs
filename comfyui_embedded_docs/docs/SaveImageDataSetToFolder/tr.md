@@ -1,3 +1,5 @@
+# Görüntü Veri Setini Klasöre Kaydet
+
 Bu belge, ComfyUI'nin çıktı dizininde belirtilen bir klasöre resim listesini kaydeden bir düğümdür. Birden fazla resmi girdi olarak alır ve özelleştirilebilir bir dosya adı ön ekiyle diske yazar.
 
 ## Girdiler

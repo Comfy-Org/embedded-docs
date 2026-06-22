@@ -1,3 +1,5 @@
+# Recraft Arka Planı Kaldır
+
 Bu düğüm, Recraft API hizmetini kullanarak görüntülerin arka planını kaldırır. Giriş grubundaki her görüntüyü işler ve hem şeffaf arka planlı işlenmiş görüntüleri hem de kaldırılan arka plan alanlarını gösteren karşılık gelen alfa maskelerini döndürür.
 
 ## Girişler

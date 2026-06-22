@@ -1,3 +1,5 @@
+# Luma Imagem para Imagem
+
 Modifica imagens de forma síncrona com base em um prompt de texto e na proporção original da imagem. Este nó recebe uma imagem de entrada e a transforma de acordo com o prompt fornecido, usando um peso de imagem configurável para controlar o quanto a imagem original é alterada.
 
 ## Entradas

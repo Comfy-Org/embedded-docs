@@ -1,3 +1,5 @@
+# VAE Decodificar (Mosaico)
+
 El nodo VAEDecodeTiled decodifica representaciones latentes en imágenes utilizando un enfoque por mosaicos para manejar imágenes grandes de manera eficiente. Procesa la entrada en mosaicos más pequeños para gestionar el uso de memoria mientras mantiene la calidad de la imagen. El nodo también admite VAEs de video procesando fotogramas temporales en fragmentos con superposición para transiciones suaves.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# SDPoseDrawKeypoints
+
 SDPoseDrawKeypoints düğümü, poz tahmin verilerini (anahtar noktaları) alır ve bunları boş bir tuval üzerinde görsel bir iskelet olarak çizer. Vücut, eller, yüz ve ayaklar gibi pozun farklı bölümlerini özelleştirilebilir çizgi kalınlıkları ve nokta boyutlarıyla seçerek çizmenize olanak tanır. Ortaya çıkan görüntü, görselleştirme amacıyla veya poz görüntüsü gerektiren diğer düğümler için girdi olarak kullanılabilir.
 
 ## Girdiler

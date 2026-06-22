@@ -1,3 +1,5 @@
+# Stability AI Upscale Conservador
+
 Aquí tienes la traducción al español, siguiendo todas las reglas especificadas:
 
 Amplía la imagen con alteraciones mínimas a resolución 4K. Este nodo utiliza la ampliación conservadora de Stability AI para aumentar la resolución de la imagen preservando el contenido original y realizando solo cambios sutiles.

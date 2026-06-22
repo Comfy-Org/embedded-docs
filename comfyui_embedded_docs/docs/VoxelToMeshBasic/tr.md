@@ -1,3 +1,5 @@
+# TemelVokseldenAğa
+
 VoxelToMeshBasic düğümü, 3B voxel verilerini ağ geometrisine dönüştürür. Voxel hacimlerini, hacmin hangi bölümlerinin sonuçtaki ağda katı yüzey haline geleceğini belirlemek için bir eşik değeri uygulayarak işler. Düğüm, 3B görüntüleme ve modellemede kullanılabilecek, köşe noktaları ve yüzler içeren eksiksiz bir ağ yapısı çıktısı verir.
 
 ## Girişler

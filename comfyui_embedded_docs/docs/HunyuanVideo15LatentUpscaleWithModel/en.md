@@ -1,3 +1,5 @@
+# Hunyuan Video 15 Latent Upscale With Model
+
 The Hunyuan Video 15 Latent Upscale With Model node increases the resolution of a latent image representation. It first upscales the latent samples to a specified size using a chosen interpolation method, then refines the upscaled result using a specialized Hunyuan Video 1.5 upscale model to improve quality.
 
 ## Inputs

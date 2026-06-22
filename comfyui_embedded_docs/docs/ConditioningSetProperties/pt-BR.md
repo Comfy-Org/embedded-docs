@@ -1,3 +1,5 @@
+# Props de Cond Set
+
 O nó ConditioningSetProperties modifica as propriedades dos dados de condicionamento ajustando intensidade, configurações de área e aplicando máscaras opcionais, ganchos ou intervalos de timestep. Ele permite controlar como o condicionamento influencia o processo de geração, definindo parâmetros específicos que afetam a aplicação dos dados de condicionamento durante a geração de imagens.
 
 ## Entradas

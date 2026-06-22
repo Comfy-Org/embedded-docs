@@ -1,3 +1,5 @@
+# FluxProCannyNode
+
 Gere uma imagem usando uma imagem de controle (canny). Este nó recebe uma imagem de controle e gera uma nova imagem com base no prompt fornecido, seguindo a estrutura de bordas detectada na imagem de controle.
 
 ## Entradas

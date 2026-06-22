@@ -1,3 +1,5 @@
+# SamplerDPMAdaptative
+
 Le nœud SamplerDPMAdaptative implémente un échantillonneur DPM (Modèle Probabiliste de Diffusion) adaptatif qui ajuste automatiquement la taille des pas pendant le processus d'échantillonnage. Il utilise un contrôle d'erreur basé sur des tolérances pour déterminer les tailles de pas optimales, équilibrant l'efficacité de calcul avec la précision de l'échantillonnage. Cette approche adaptative permet de maintenir la qualité tout en réduisant potentiellement le nombre de pas nécessaires.
 
 ## Entrées

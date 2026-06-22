@@ -1,3 +1,5 @@
+# İkili CFG Rehberi
+
 DualCFGGuider düğümü, çift sınıflandırıcısız yönlendirme örneklemesi için bir yönlendirme sistemi oluşturur. İki pozitif koşullandırma girdisini bir negatif koşullandırma girdisiyle birleştirir ve her koşullandırma çiftine farklı yönlendirme ölçekleri uygulayarak her bir istemin oluşturulan çıktı üzerindeki etkisini kontrol eder.
 
 ## Girdiler

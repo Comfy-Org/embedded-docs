@@ -1,3 +1,5 @@
+# LTXV Image vers Vidéo
+
 Le nœud LTXV Image To Video génère une vidéo de qualité professionnelle à partir d'une seule image de départ. Il utilise une API externe pour créer une séquence vidéo basée sur votre invite textuelle, vous permettant de personnaliser la durée, la résolution et la fréquence d'images.
 
 ## Entrées

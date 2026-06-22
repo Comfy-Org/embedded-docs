@@ -1,3 +1,5 @@
+# Magnific Image Upscale (Creative)
+
 Ce nœud utilise le service IA Magnific pour agrandir et améliorer de manière créative une image. Il vous permet de guider l'amélioration avec un texte descriptif, de choisir un style spécifique à optimiser, et de contrôler divers aspects du processus créatif comme le niveau de détail, la ressemblance avec l'original et la force de stylisation. Le nœud produit une image agrandie au facteur choisi (2x, 4x, 8x ou 16x), avec une taille de sortie maximale de 25,3 mégapixels.
 
 ## Entrées

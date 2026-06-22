@@ -1,3 +1,5 @@
+# OpenAI GPT Image 2
+
 ## Overview
 
 This node generates images using OpenAI's GPT Image API. It supports multiple models, allows you to provide input images for editing, and can use a mask to specify which parts of an image to modify.

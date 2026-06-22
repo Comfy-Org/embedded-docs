@@ -1,3 +1,5 @@
+# SplitSigmas
+
 O nó SplitSigmas foi projetado para dividir uma sequência de valores sigma em duas partes com base em uma etapa especificada. Essa funcionalidade é crucial para operações que exigem tratamento ou processamento diferenciado das partes inicial e subsequente da sequência sigma, permitindo uma manipulação mais flexível e direcionada desses valores.
 
 ## Entradas

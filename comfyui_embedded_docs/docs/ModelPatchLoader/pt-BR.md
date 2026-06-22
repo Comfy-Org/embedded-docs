@@ -1,3 +1,5 @@
+# ModelPatchLoader
+
 O nó ModelPatchLoader carrega patches de modelo especializados da pasta model_patches. Ele detecta automaticamente o tipo de arquivo de patch e carrega a arquitetura de modelo apropriada, em seguida, a envolve em um ModelPatcher para uso no fluxo de trabalho. Este nó suporta diferentes tipos de patch, incluindo blocos controlnet, modelos de incorporação de recursos e outras arquiteturas especializadas.
 
 ## Entradas

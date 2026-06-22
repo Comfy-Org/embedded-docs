@@ -1,3 +1,5 @@
+# Split Image with Alpha
+
 The SplitImageWithAlpha node is designed to separate the color and alpha components of an image. It processes an input image tensor, extracting the RGB channels as the color component and the alpha channel as the transparency component, facilitating operations that require manipulation of these distinct image aspects.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ComboOptionTestNode
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Le **ComboOptionTestNode** est un nœud logique conçu pour tester et transmettre les sélections de listes déroulantes. Il accepte deux entrées de type liste déroulante, chacune avec un ensemble prédéfini d'options, et renvoie directement les valeurs sélectionnées sans modification.

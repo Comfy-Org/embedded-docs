@@ -1,3 +1,5 @@
+# Generate Text
+
 The TextGenerate node uses a CLIP model to create text based on a user's prompt. It can optionally use images, video, or audio as additional context to guide the text generation. You can control the length of the output, enable a thinking mode for supported models, and choose whether to use random sampling with various settings or to generate text without sampling.
 
 ## Inputs

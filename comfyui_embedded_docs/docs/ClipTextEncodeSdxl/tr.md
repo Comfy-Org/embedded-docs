@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaSDXL
+
 Bu düğüm, SDXL mimarisi için özel olarak uyarlanmış bir CLIP modeli kullanarak metin girdisini kodlamak üzere tasarlanmıştır. Metin açıklamalarını işlemek için ikili bir kodlayıcı sistemi (CLIP-L ve CLIP-G) kullanır ve bu sayede daha doğru görüntü üretimi sağlar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Salvar VAE
+
 O nó VAESave foi projetado para salvar modelos VAE juntamente com seus metadados, incluindo prompts e informações adicionais de PNG, em um diretório de saída especificado. Ele encapsula a funcionalidade de serializar o estado do modelo e as informações associadas em um arquivo, facilitando a preservação e o compartilhamento de modelos treinados.
 
 ## Entradas

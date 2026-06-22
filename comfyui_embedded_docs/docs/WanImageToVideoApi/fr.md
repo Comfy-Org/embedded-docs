@@ -1,3 +1,5 @@
+# Wan Image vers Vidéo
+
 Le nœud Wan Image to Video génère une vidéo à partir d'une seule image d'entrée et d'une invite textuelle. Il utilise l'image fournie comme première image et crée une séquence vidéo basée sur la description, avec des options pour la résolution, la durée, l'audio et d'autres paramètres avancés.
 
 ## Entrées

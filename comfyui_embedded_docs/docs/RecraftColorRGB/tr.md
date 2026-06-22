@@ -1,3 +1,5 @@
+# Recraft Renk RGB
+
 Kırmızı, yeşil ve mavi değerlerini ayrı ayrı belirterek bir Recraft rengi oluşturun. Bu düğüm, RGB tamsayı değerlerini (0-255) alır ve bunları diğer Recraft işlemlerinde kullanılabilecek bir Recraft rengi biçimine dönüştürür. İsteğe bağlı olarak, mevcut bir Recraft renk zincirini yeni renkle genişletmek için de sağlayabilirsiniz.
 
 ## Girişler

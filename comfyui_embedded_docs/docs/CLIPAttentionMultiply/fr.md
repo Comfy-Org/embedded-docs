@@ -1,3 +1,5 @@
+# MultiplierAttentionCLIP
+
 Le nœud CLIPAttentionMultiply permet d'ajuster le mécanisme d'attention dans les modèles CLIP en appliquant des facteurs de multiplication à différents composants des couches d'auto-attention. Il fonctionne en modifiant les poids et les biais des projections de requête, de clé, de valeur et de sortie dans le mécanisme d'attention du modèle CLIP. Ce nœud expérimental crée une copie modifiée du modèle CLIP d'entrée avec les facteurs d'échelle spécifiés appliqués.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Quiver Metinden SVG'ye
+
 Quiver Text to SVG düğümü, Quiver AI modellerini kullanarak bir metin açıklamasından Ölçeklenebilir Vektör Grafiği (SVG) görüntüsü oluşturur. İsteğe bağlı olarak referans görseller ve stil talimatları sağlayarak oluşturma sürecini yönlendirebilirsiniz.
 
 ## Girişler

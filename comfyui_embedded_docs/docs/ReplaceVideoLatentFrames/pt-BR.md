@@ -1,3 +1,5 @@
+# ReplaceVideoLatentFrames
+
 O nó ReplaceVideoLatentFrames insere quadros de um vídeo latente de origem em um vídeo latente de destino, começando em um índice de quadro especificado. Se a origem latente não for fornecida, o destino latente é retornado inalterado. O nó lida com indexação negativa e emitirá um aviso se os quadros de origem não couberem no destino.
 
 ## Entradas

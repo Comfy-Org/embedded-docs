@@ -1,3 +1,5 @@
+# Audio Equalizer (3-Band)
+
 The Audio Equalizer (3-Band) node allows you to adjust the bass, mid, and treble frequencies of an audio waveform. It applies three separate filters: a low shelf for bass, a peaking filter for mids, and a high shelf for treble. Each band can be independently controlled with gain, frequency, and bandwidth settings.
 
 ## Inputs

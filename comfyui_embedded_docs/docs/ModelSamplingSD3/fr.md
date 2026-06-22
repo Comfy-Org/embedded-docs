@@ -1,3 +1,5 @@
+# ModèleÉchantillonnageSD3
+
 Le nœud ModelSamplingSD3 applique les paramètres d'échantillonnage de Stable Diffusion 3 à un modèle. Il modifie le comportement d'échantillonnage du modèle en ajustant le paramètre de décalage, qui contrôle les caractéristiques de distribution de l'échantillonnage. Le nœud crée une copie modifiée du modèle d'entrée avec la configuration d'échantillonnage spécifiée appliquée.
 
 ## Entrées

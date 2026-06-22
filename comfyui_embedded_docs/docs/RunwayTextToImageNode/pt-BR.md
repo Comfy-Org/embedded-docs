@@ -1,3 +1,5 @@
+# Runway Texto para Imagem
+
 O nó Runway Text to Image gera imagens a partir de prompts de texto usando o modelo Gen 4 da Runway. Você pode fornecer uma descrição textual e, opcionalmente, incluir uma imagem de referência para orientar o processo de geração de imagem. O nó gerencia a comunicação com a API e retorna a imagem gerada.
 
 ## Entradas

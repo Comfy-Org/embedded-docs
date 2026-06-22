@@ -1,3 +1,5 @@
+# Sous-chaîne
+
 Le nœud StringSubstring extrait une portion de texte d'une chaîne de caractères plus longue. Il utilise une position de début et une position de fin pour définir la section à extraire, puis retourne le texte situé entre ces deux positions.
 
 ## Entrées

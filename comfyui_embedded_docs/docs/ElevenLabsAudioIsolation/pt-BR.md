@@ -1,3 +1,5 @@
+# ElevenLabs Isolamento de Voz
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsAudioIsolation/en.md)
 
 O nó de Isolamento de Voz ElevenLabs remove o ruído de fundo de um arquivo de áudio, isolando os vocais ou a fala. Ele envia o áudio para a API ElevenLabs para processamento e retorna o áudio limpo.

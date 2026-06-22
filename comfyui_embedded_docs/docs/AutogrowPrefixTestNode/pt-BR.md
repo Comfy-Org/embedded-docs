@@ -1,3 +1,5 @@
+# AutogrowPrefixTestNode
+
 O **AutogrowPrefixTestNode** é um nó lógico projetado para testar o recurso de entrada de crescimento automático. Ele aceita um número dinâmico de entradas do tipo float, combina seus valores em uma string separada por vírgulas e gera essa string como saída.
 
 ## Entradas

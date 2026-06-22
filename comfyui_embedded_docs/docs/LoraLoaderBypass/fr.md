@@ -1,3 +1,5 @@
+# Charger LoRA (Bypass) (Pour le débogage)
+
 Le nœud LoraLoaderBypass applique un LoRA (Adaptation de Bas Rang) à un modèle de diffusion et à un modèle CLIP dans un mode spécial de « contournement » (bypass). Contrairement à un chargeur LoRA standard, cette méthode ne modifie pas de manière permanente les poids du modèle de base. Au lieu de cela, elle calcule la sortie en ajoutant l'effet du LoRA au passage avant normal du modèle, ce qui est utile pour l'entraînement ou lorsque l'on travaille avec des modèles dont les poids sont déchargés.
 
 ## Entrées

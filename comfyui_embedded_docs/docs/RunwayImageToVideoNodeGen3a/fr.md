@@ -1,3 +1,5 @@
+# Runway Image vers Vidéo (Gen3a Turbo)
+
 Voici la traduction en français de la documentation du nœud ComfyUI Runway Image to Video (Gen3a Turbo) :
 
 Le nœud Runway Image to Video (Gen3a Turbo) génère une vidéo à partir d'une seule image de départ en utilisant le modèle Gen3a Turbo de Runway. Il prend une invite textuelle et une image initiale, puis crée une séquence vidéo basée sur la durée et le rapport hauteur/largeur spécifiés. Ce nœud se connecte à l'API de Runway pour traiter la génération à distance.

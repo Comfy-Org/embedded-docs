@@ -1,3 +1,5 @@
+# PairConditioningSetDefaultAndCombine
+
 The **PairConditioningSetDefaultAndCombine** node sets default conditioning values and combines them with input conditioning data. It takes positive and negative conditioning inputs along with their default counterparts, then processes them through ComfyUI's hook system to produce final conditioning outputs that incorporate the default values.
 
 ## Inputs

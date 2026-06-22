@@ -1,3 +1,5 @@
+# QuadrupleCLIPLoader
+
 以下は、ご指定の翻訳ルールに従った日本語訳です。
 
 ---

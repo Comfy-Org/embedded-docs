@@ -1,3 +1,5 @@
+# unCLIPKoşullandırma
+
 Bu düğüm, CLIP görüntü çıktılarını koşullandırma sürecine entegre etmek ve bu çıktıların etkisini belirtilen güç ve gürültü artırma parametrelerine göre ayarlamak için tasarlanmıştır. Koşullandırmayı görsel bağlamla zenginleştirerek üretim sürecini iyileştirir.
 
 ## Girişler

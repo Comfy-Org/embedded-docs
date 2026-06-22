@@ -1,3 +1,5 @@
+# SamplerSEEDS2
+
 Bu düğüm, görüntü oluşturmak için yapılandırılabilir bir örnekleyici sağlar. Stokastik diferansiyel denklem (SDE) çözücüsü olan SEEDS-2 algoritmasını uygular. Parametrelerini ayarlayarak, `seeds_2`, `exp_heun_2_x0` ve `exp_heun_2_x0_sde` dahil olmak üzere çeşitli belirli örnekleyiciler gibi davranacak şekilde yapılandırabilirsiniz.
 
 ## Girişler

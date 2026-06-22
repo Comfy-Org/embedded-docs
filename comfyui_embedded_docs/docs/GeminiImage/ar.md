@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقد GeminiImage
+# GeminiImage
 
 ## نظرة عامة
 

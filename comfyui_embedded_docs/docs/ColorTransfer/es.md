@@ -1,3 +1,5 @@
+# ColorTransfer
+
 El nodo ColorTransfer ajusta la paleta de colores de una imagen objetivo para que coincida con los colores de una imagen de referencia. Utiliza diferentes algoritmos matemáticos para analizar y transferir las características cromáticas, como brillo, contraste y distribución de matices, desde la referencia hasta el objetivo. Esto es útil para crear consistencia visual entre múltiples imágenes o aplicar una gradación de color específica.
 
 ## Entradas

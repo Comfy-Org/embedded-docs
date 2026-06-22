@@ -1,3 +1,5 @@
+# EmptyHunyuanLatentVideo
+
 Le nœud `EmptyHunyuanLatentVideo` est similaire au nœud `EmptyLatentImage`. Vous pouvez le considérer comme une toile vierge pour la génération vidéo, où la largeur, la hauteur et la longueur définissent les propriétés de la toile, et la taille du lot détermine le nombre de toiles à créer. Ce nœud crée des toiles vides prêtes pour les tâches ultérieures de génération vidéo.
 
 ## Entrées

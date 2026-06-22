@@ -1,4 +1,4 @@
-# Bria Video Arka Plan Değiştirme
+# Bria Video Arka Plan Değiştir
 
 Bu düğüm, Bria'nın API'sini kullanarak bir videonun arka planını sağlanan bir görüntü veya video ile değiştirir. Çıktı, ön plan videosunun çözünürlüğünü ve kare hızını korur; farklı en boy oranına sahip bir arka plan, sığacak şekilde uzatılır, bu nedenle en boy oranlarının eşleşmesi bozulmamış sonuçlar üretir.
 

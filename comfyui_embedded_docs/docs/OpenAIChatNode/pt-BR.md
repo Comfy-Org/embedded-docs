@@ -1,3 +1,5 @@
+# OpenAI ChatGPT
+
 Este nó gera respostas de texto a partir de um modelo OpenAI. Ele envia seu prompt de texto (e, opcionalmente, imagens ou arquivos) para um modelo OpenAI e retorna a resposta de texto gerada.
 
 ## Entradas

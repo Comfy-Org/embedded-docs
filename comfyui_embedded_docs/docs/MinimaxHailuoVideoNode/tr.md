@@ -1,3 +1,5 @@
+# MiniMax Hailuo Video
+
 MiniMax Hailuo-02 modelini kullanarak metin istemlerinden videolar oluşturur. İsteğe bağlı olarak, ilk kare olarak bir başlangıç görseli sağlayarak bu görselden devam eden bir video oluşturabilirsiniz.
 
 ## Girdiler

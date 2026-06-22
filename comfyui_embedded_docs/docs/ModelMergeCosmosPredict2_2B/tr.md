@@ -1,3 +1,5 @@
+# ModelBirleştirmeCosmosTahmin2_2B
+
 ModelMergeCosmosPredict2_2B düğümü, blok tabanlı bir yaklaşım kullanarak iki difüzyon modelini birleştirir ve farklı model bileşenleri üzerinde ince ayar kontrolü sağlar. Konum gömücüleri, zaman gömücüleri, dönüştürücü blokları ve son katmanlar için enterpolasyon ağırlıklarını ayarlayarak iki modelin belirli bölümlerini harmanlamanıza olanak tanır. Bu, her modelden gelen farklı mimari bileşenlerin nihai birleştirilmiş sonuca nasıl katkıda bulunacağı üzerinde hassas kontrol sağlar.
 
 ## Girişler

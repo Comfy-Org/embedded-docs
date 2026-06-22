@@ -1,3 +1,5 @@
+# WanSoundImageToVideoExtend
+
 WanSoundImageToVideoExtend düğümü, mevcut bir video latentini, isteğe bağlı olarak ses, referans görüntü ve kontrol videosu rehberliğinde ek kareler oluşturarak genişletir. Bir başlangıç video latentini alır ve sağlanan koşullandırma ile ses ipuçlarını kullanarak yeni içeriği etkileyerek daha uzun bir video dizisi üretir.
 
 ## Girişler

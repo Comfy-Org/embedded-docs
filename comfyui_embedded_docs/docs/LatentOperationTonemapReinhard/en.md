@@ -1,3 +1,5 @@
+# LatentOperationTonemapReinhard
+
 The LatentOperationTonemapReinhard node applies Reinhard tonemapping to latent vectors. This technique normalizes the latent vectors and adjusts their magnitude using a statistical approach based on mean and standard deviation, with the intensity controlled by a multiplier parameter.
 
 ## Inputs

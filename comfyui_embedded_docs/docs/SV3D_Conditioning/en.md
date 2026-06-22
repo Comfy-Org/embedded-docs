@@ -1,3 +1,5 @@
+# SV3D_Conditioning
+
 The SV3D_Conditioning node prepares conditioning data for 3D video generation using the SV3D model. It takes an initial image and processes it through CLIP vision and VAE encoders to create positive and negative conditioning, along with a latent representation. The node generates camera elevation and azimuth sequences for multi-frame video generation based on the specified number of video frames.
 
 ## Inputs

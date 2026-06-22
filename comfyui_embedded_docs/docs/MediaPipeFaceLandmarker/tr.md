@@ -1,4 +1,4 @@
-# MediaPipe Yüz İşaret Noktası Bulucu
+# MediaPipe Yüz İşaretleyici
 
 ## Genel Bakış
 

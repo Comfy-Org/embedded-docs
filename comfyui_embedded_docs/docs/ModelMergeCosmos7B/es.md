@@ -1,3 +1,5 @@
+# ModelMergeCosmos7B
+
 El nodo ModelMergeCosmos7B fusiona dos modelos de IA utilizando una combinación ponderada de componentes específicos. Permite un control detallado sobre cómo se combinan las diferentes partes de los modelos ajustando pesos individuales para las incrustaciones de posición, los bloques del transformador y las capas finales.
 
 ## Entradas

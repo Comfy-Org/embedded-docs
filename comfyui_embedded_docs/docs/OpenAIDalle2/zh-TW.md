@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 透過 OpenAI 的 DALL·E 2 端點同步生成圖像。
 

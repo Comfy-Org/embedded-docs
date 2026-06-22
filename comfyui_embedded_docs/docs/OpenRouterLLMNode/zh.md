@@ -1,3 +1,5 @@
+# OpenRouter LLM
+
 ## 概述
 
 OpenRouter LLM 节点将文本提示发送至 OpenRouter 服务提供的一组精选流行语言模型，并返回生成的文本响应。它支持来自 xAI、DeepSeek、Qwen、Mistral、Z.AI (GLM)、Moonshot (Kimi) 和 Perplexity Sonar 等提供商的模型，并且可以选择在请求中包含图像或视频。

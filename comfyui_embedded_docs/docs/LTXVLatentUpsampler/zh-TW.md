@@ -1,4 +1,4 @@
-# LTXVLatentUpsampler 節點
+# LTXVLatentUpsampler
 
 LTXVLatentUpsampler 節點可將影片潛在表示（latent representation）的空間解析度提升兩倍。它使用專門的放大模型來處理潛在資料，首先進行去標準化（un-normalize），然後使用提供的 VAE 通道統計資料重新進行標準化（re-normalize）。此節點專為潛在空間內的影片工作流程而設計。
 

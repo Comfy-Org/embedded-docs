@@ -1,3 +1,5 @@
+# WanVaceToVideo
+
 O nó WanVaceToVideo processa dados de condicionamento de vídeo para modelos de geração de vídeo. Ele recebe entradas de condicionamento positivo e negativo, juntamente com dados de controle de vídeo, e prepara representações latentes para a geração de vídeo. O nó lida com redimensionamento de vídeo, mascaramento e codificação VAE para criar a estrutura de condicionamento apropriada para modelos de vídeo.
 
 ## Entradas

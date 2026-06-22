@@ -1,3 +1,5 @@
+# Reroute
+
 Nombre del Nodo: Nodo de Reencaminamiento
 Propósito del Nodo: Se utiliza principalmente para organizar la lógica de líneas de conexión excesivamente largas en el flujo de trabajo de ComfyUI.
 

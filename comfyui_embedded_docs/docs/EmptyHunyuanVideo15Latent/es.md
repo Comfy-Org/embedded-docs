@@ -1,3 +1,5 @@
+# Empty HunyuanVideo 1.5 Latent
+
 Este nodo crea un tensor latente vacío formateado específicamente para su uso con el modelo HunyuanVideo 1.5. Genera un punto de partida en blanco para la generación de video asignando un tensor de ceros con el número correcto de canales y dimensiones espaciales para el espacio latente del modelo.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Définir le Type de Réseau de Contrôle d'Union
+
 Le nœud SetUnionControlNetType vous permet de spécifier le type de réseau de contrôle à utiliser pour le conditionnement. Il prend un réseau de contrôle existant et définit son type de contrôle en fonction de votre sélection, créant ainsi une copie modifiée du réseau de contrôle avec la configuration de type spécifiée.
 
 ## Entrées

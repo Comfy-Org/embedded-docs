@@ -1,3 +1,5 @@
+# VideoÜçgenCFGRehberliği
+
 VideoTriangleCFGGuidance düğümü, video modellerine üçgen şeklinde bir sınıflandırıcısız rehberlik ölçekleme deseni uygular. Minimum CFG değeri ile orijinal koşullandırma ölçeği arasında salınım yapan bir üçgen dalga fonksiyonu kullanarak koşullandırma ölçeğini zaman içinde değiştirir. Bu, video üretim tutarlılığını ve kalitesini iyileştirmeye yardımcı olabilecek dinamik bir rehberlik deseni oluşturur.
 
 ## Girişler

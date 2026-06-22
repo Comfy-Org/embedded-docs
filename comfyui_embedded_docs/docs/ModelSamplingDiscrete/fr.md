@@ -1,3 +1,5 @@
+# ModèleÉchantillonnageDiscret
+
 Ce nœud est conçu pour modifier le comportement d'échantillonnage d'un modèle en appliquant une stratégie d'échantillonnage discrète. Il permet de sélectionner différentes méthodes d'échantillonnage, telles que epsilon, v_prediction, lcm ou x0, et ajuste éventuellement la stratégie de réduction du bruit du modèle en fonction du paramètre de rapport de bruit zero-shot (zsnr).
 
 ## Entrées

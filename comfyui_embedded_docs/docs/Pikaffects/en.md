@@ -1,3 +1,5 @@
+# Pikaffects
+
 The Pikaffects node generates videos with various visual effects applied to an input image. It uses Pika's video generation API to transform static images into animated videos with specific effects like melting, exploding, or levitating. The node requires an API key and authentication token to access the Pika service.
 
 ## Inputs

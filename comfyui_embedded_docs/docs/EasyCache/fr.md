@@ -1,3 +1,5 @@
+# EasyCache
+
 Le nœud EasyCache implémente un système de cache natif pour les modèles afin d'améliorer les performances en réutilisant les étapes précédemment calculées pendant le processus d'échantillonnage. Il ajoute la fonctionnalité EasyCache à un modèle avec des seuils configurables pour déterminer quand commencer et arrêter d'utiliser le cache au cours de la chronologie d'échantillonnage.
 
 ## Entrées

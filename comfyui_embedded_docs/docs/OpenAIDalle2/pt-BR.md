@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 Gera imagens de forma síncrona por meio do endpoint DALL·E 2 da OpenAI.
 

@@ -1,3 +1,5 @@
+# GizliİşlemUygula
+
 **LatentApplyOperation** düğümü, latent örneklere belirtilen bir işlemi uygular. Girdi olarak latent verileri ve bir işlem alır, sağlanan işlemi kullanarak latent örnekleri işler ve değiştirilmiş latent verilerini döndürür. Bu düğüm, iş akışınızda latent temsilleri dönüştürmenize veya manipüle etmenize olanak tanır.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Not
+
 ## Visão Geral
 
 O nó Not realiza uma operação lógica de negação (NOT) em qualquer valor de entrada. Ele retorna Verdadeiro (True) se o valor de entrada for considerado falso (como 0, string vazia, None, Falso), e retorna Falso (False) se o valor de entrada for verdadeiro. Utiliza as regras padrão do Python para determinar a veracidade.

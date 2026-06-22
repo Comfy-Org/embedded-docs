@@ -1,3 +1,5 @@
+# TextGenerate
+
 O nó TextGenerate usa um modelo CLIP para criar texto com base no prompt do usuário. Opcionalmente, pode usar imagens, vídeo ou áudio como contexto adicional para orientar a geração de texto. Você pode controlar o comprimento da saída, ativar um modo de raciocínio para modelos compatíveis e escolher entre usar amostragem aleatória com várias configurações ou gerar texto sem amostragem.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ComboOptionTestNode
+
 El nodo ComboOptionTestNode es un nodo lógico diseñado para probar y transmitir selecciones de cuadros combinados. Toma dos entradas de cuadro combinado, cada una con un conjunto predefinido de opciones, y genera los valores seleccionados directamente sin modificaciones.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Fusionner les listes d’images
+
 Le nœud **Fusionner les listes d'images** combine plusieurs listes d'images distinctes en une seule liste continue. Il fonctionne en prenant toutes les images de chaque entrée connectée et en les concaténant dans l'ordre de réception. Cela est utile pour organiser ou regrouper des images provenant de différentes sources en vue d'un traitement ultérieur.
 
 ## Entrées

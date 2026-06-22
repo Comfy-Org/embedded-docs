@@ -1,3 +1,5 @@
+# Plotar Gráfico de Loss
+
 O nó LossGraphNode cria um gráfico visual dos valores de perda de treinamento ao longo do tempo e o exibe como uma imagem de pré-visualização. Ele recebe dados de perda de processos de treinamento e gera um gráfico de linhas mostrando como a perda muda ao longo das etapas de treinamento. O gráfico resultante inclui rótulos nos eixos e os valores mínimo e máximo de perda.
 
 ## Entradas

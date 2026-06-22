@@ -1,3 +1,5 @@
+# ByteDance Images de référence en vidéo
+
 Le nœud Image de Référence ByteDance génère des vidéos à partir d’une invite textuelle et d’une à quatre images de référence. Il envoie les images et l’invite à un service API externe qui crée une vidéo correspondant à votre description tout en intégrant le style visuel et le contenu de vos images de référence. Ce nœud offre divers contrôles pour la résolution vidéo, le rapport hauteur/largeur, la durée et d’autres paramètres de génération.
 
 ## Entrées

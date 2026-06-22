@@ -1,3 +1,5 @@
+# تطبيق ControlNet (قديم)
+
 يتطلب استخدام ControlNet معالجة مسبقة للصور المدخلة. نظرًا لأن العقد الأولية لـ ComfyUI لا تتضمن معالجات مسبقة ونماذج ControlNet، يُرجى أولاً تثبيت المعالجات المسبقة لـ ControlNet [تنزيل المعالجات المسبقة من هنا](https://github.com/Fannovel16/comfy_controlnet_preprocessors) ونماذج ControlNet المقابلة.
 
 ## المدخلات

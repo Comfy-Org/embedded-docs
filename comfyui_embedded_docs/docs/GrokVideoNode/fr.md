@@ -1,3 +1,5 @@
+# Grok Video
+
 Voici la traduction en français de la documentation du nœud Grok Video, en respectant vos règles :
 
 Le nœud Grok Video génère une courte vidéo à partir d'une description textuelle. Il peut créer une vidéo de toutes pièces à l'aide d'une invite ou animer une seule image d'entrée en fonction d'une invite. Le nœud envoie une requête à une API externe et retourne la vidéo générée.

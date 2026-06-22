@@ -1,3 +1,5 @@
+# Combinar Par de Condições
+
 O nó PairConditioningCombine mescla dois pares de condicionamento separados (cada um consistindo em um condicionamento positivo e negativo) em um único par combinado. Ele recebe os condicionamentos positivo e negativo de duas fontes diferentes e os combina usando a lógica interna do ComfyUI, gerando um condicionamento positivo final e um condicionamento negativo final. Este nó é experimental e projetado para fluxos de trabalho avançados de manipulação de condicionamento.
 
 ## Entradas

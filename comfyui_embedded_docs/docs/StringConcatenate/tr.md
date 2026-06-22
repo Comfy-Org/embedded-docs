@@ -1,3 +1,5 @@
+# Birleştir
+
 StringConcatenate düğümü, iki metin dizgesini belirtilen bir ayırıcı ile birleştirerek tek bir dize haline getirir. İki girdi dizesi ve bir ayırıcı karakter veya dize alır, ardından iki girdinin ayırıcı ile birbirine bağlandığı tek bir dize çıktısı verir.
 
 ## Girdiler

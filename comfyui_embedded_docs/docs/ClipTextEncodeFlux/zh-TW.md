@@ -1,3 +1,5 @@
+# CLIPTextEncodeFlux
+
 ## 概述
 
 `CLIPTextEncodeFlux` 是一個專為 Flux 架構設計的先進文字編碼節點。它透過不同的編碼器（CLIP-L 和 T5XXL）處理兩個獨立的文字輸入，並結合引導尺度（guidance scale）產生統一的條件化輸出，用於影像生成。

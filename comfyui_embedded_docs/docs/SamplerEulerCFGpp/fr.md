@@ -1,3 +1,5 @@
+# SamplerEulerCFG++
+
 Le nœud SamplerEulerCFGpp fournit une méthode d'échantillonnage Euler CFG++ pour générer des sorties. Ce nœud propose deux versions d'implémentation différentes de l'échantillonneur Euler CFG++, qui peuvent être sélectionnées selon les préférences de l'utilisateur.
 
 ## Entrées

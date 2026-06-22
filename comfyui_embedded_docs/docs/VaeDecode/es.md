@@ -1,3 +1,5 @@
+# Decodificación VAE
+
 El nodo VAEDecode está diseñado para decodificar representaciones latentes en imágenes utilizando un Autoencoder Variacional (VAE) específico. Su propósito es generar imágenes a partir de representaciones de datos comprimidos, facilitando la reconstrucción de imágenes desde sus codificaciones en el espacio latente.
 
 ## Entradas

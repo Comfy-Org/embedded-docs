@@ -1,3 +1,5 @@
+# Crear Conjunto de Datos de Entrenamiento
+
 Este nodo prepara datos para entrenamiento codificando imágenes y texto. Toma una lista de imágenes y una lista correspondiente de descripciones textuales, luego utiliza un modelo VAE para convertir las imágenes en representaciones latentes y un modelo CLIP para convertir el texto en datos de condicionamiento. Los pares resultantes de latentes y condicionamiento se emiten como listas, listas para su uso en flujos de trabajo de entrenamiento.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Quantizar Imagem
+
 O nó ImageQuantize foi projetado para reduzir o número de cores em uma imagem para uma quantidade especificada, aplicando opcionalmente técnicas de pontilhamento para manter a qualidade visual. Esse processo é útil para criar imagens baseadas em paletas ou reduzir a complexidade de cores para determinadas aplicações.
 
 ## Entradas

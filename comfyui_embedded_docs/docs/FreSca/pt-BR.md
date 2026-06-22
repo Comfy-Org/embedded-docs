@@ -1,3 +1,5 @@
+# FreSca
+
 O nó FreSca aplica escalonamento dependente de frequência à orientação durante o processo de amostragem. Ele separa o sinal de orientação em componentes de baixa e alta frequência usando filtragem de Fourier, em seguida, aplica diferentes fatores de escalonamento para cada faixa de frequência antes de recombiná-los. Isso permite um controle mais sutil sobre como a orientação afeta diferentes aspectos da saída gerada.
 
 ## Entradas

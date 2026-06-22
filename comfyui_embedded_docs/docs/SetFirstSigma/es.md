@@ -1,3 +1,5 @@
+# EstablecerPrimeraSigma
+
 El nodo `SetFirstSigma` modifica una secuencia de valores sigma reemplazando el primer valor de la secuencia con un valor personalizado. Toma una secuencia sigma existente y un nuevo valor sigma como entradas, luego devuelve una nueva secuencia sigma donde solo se ha modificado el primer elemento, manteniendo todos los demás valores sigma sin cambios.
 
 ## Entradas

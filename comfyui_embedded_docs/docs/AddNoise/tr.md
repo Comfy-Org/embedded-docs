@@ -1,3 +1,5 @@
+# Gürültü Ekle
+
 Bu düğüm, belirtilen bir gürültü üreteci ve sigma değerlerini kullanarak gizli bir görüntüye kontrollü gürültü ekler. Girişi, modelin örnekleme sistemi aracılığıyla işleyerek verilen sigma aralığına uygun gürültü ölçeklendirmesi uygular ve gürültünün eklendiği yeni bir gizli temsil döndürür.
 
 ## Girişler

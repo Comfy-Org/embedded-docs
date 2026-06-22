@@ -1,3 +1,5 @@
+# Generación de video de imagen a video Vidu Q3
+
 El nodo de generación de video a partir de imagen Vidu Q3 crea una secuencia de video a partir de una imagen de entrada. Utiliza un modelo Vidu Q3 para animar la imagen, guiado opcionalmente por un texto descriptivo, y genera un archivo de video como salida.
 
 ## Entradas

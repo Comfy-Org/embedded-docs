@@ -1,3 +1,5 @@
+# Grabar Audio
+
 El nodo `RecordAudio` carga archivos de audio que han sido grabados o seleccionados a través de la interfaz de grabación de audio. Procesa el archivo de audio y lo convierte en un formato de forma de onda que puede ser utilizado por otros nodos de procesamiento de audio en el flujo de trabajo. El nodo detecta automáticamente la frecuencia de muestreo y prepara los datos de audio para su posterior manipulación.
 
 ## Entradas

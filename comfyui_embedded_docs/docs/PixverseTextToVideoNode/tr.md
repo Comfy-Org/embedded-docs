@@ -1,3 +1,5 @@
+# PixVerse Metinden Videoya
+
 Bir metin istemi ve çeşitli üretim parametrelerine dayalı olarak videolar oluşturur. Bu düğüm, PixVerse API'sini kullanarak video içeriği üretir; en boy oranı, kalite, süre, hareket stili ve daha fazlası üzerinde kontrol sağlar.
 
 ## Girişler

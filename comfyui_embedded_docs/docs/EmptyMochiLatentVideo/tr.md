@@ -1,3 +1,5 @@
+# BoşMochiGizliVideo
+
 EmptyMochiLatentVideo düğümü, belirtilen boyutlarda boş bir latent video tensörü oluşturur. Video oluşturma iş akışları için başlangıç noktası olarak kullanılabilecek sıfır dolu bir latent temsil üretir. Bu düğüm, latent video tensörü için genişlik, yükseklik, uzunluk ve toplu iş boyutunu tanımlamanıza olanak tanır.
 
 ## Girişler

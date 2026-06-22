@@ -1,3 +1,5 @@
+# Décoder Audio VAE (par tuiles)
+
 Ce nœud convertit une représentation audio compressée (échantillons latents) en une forme d'onde audio à l'aide d'un autoencodeur variationnel (VAE). Il traite les données en sections plus petites et chevauchantes (tuiles) pour gérer l'utilisation de la mémoire, ce qui le rend adapté au traitement de séquences audio plus longues.
 
 ## Entrées

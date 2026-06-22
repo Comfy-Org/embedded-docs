@@ -1,4 +1,4 @@
-# TripoSplat Pré-processamento de Imagem
+# TripoSplat Pré-processar Imagem
 
 Este nó recorta cada imagem de entrada para um quadrado centralizado em fundo preto e, em seguida, adiciona preenchimento para atingir o tamanho de saída especificado. Ele foi projetado para preparar imagens para o modelo 3D TripoSplat, garantindo enquadramento quadrado consistente e erosão opcional do canal alfa para evitar artefatos nas bordas.
 

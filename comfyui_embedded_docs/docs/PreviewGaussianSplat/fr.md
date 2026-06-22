@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# Aperçu Splat
 
 Le nœud PreviewGaussianSplat permet de prévisualiser un fichier de splats gaussiens 3D dans l'interface ComfyUI. Il accepte un fichier de modèle 3D dans divers formats de splats gaussiens et le rend dans une fenêtre de prévisualisation 3D, tout en transmettant les données du modèle pour un traitement ultérieur.
 

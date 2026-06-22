@@ -1,4 +1,4 @@
-# 应用 SeedVR2 条件设置
+# SeedVR2Conditioning
 
 此节点从 VAE 潜变量构建正向和负向条件设置，用于 SeedVR2 模型。它准备用于指导图像或视频生成过程的条件数据。
 

@@ -1,3 +1,5 @@
+# Bria Remove Video Background
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 Ce nœud supprime l'arrière-plan d'une vidéo à l'aide du service IA Bria. Il traite la vidéo d'entrée et remplace l'arrière-plan d'origine par une couleur unie de votre choix. L'opération est effectuée via une API externe, et le résultat est renvoyé sous forme d'un nouveau fichier vidéo.

@@ -1,3 +1,5 @@
+# EmptyARVideoLatent
+
 Voici la traduction en français de la documentation du nœud EmptyARVideoLatent :
 
 ## Aperçu

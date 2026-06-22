@@ -1,4 +1,4 @@
-# SamplerCustomAdvanced（自訂進階取樣器）節點
+# SamplerCustomAdvanced
 
 SamplerCustomAdvanced（自訂進階取樣器）節點使用自訂雜訊、引導和取樣配置來執行進階潛在空間取樣。它透過可自訂的雜訊生成和 sigma 排程，對潛在影像進行引導式取樣處理，最終產生取樣結果，並在可用時提供去噪版本。
 

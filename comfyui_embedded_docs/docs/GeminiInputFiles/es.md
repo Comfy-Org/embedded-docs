@@ -1,3 +1,5 @@
+# Archivos de Entrada de Gemini
+
 Carga y formatea archivos de entrada para su uso con la API de Gemini. Este nodo permite a los usuarios incluir archivos de texto (.txt) y PDF (.pdf) como contexto de entrada para el modelo Gemini. Los archivos se convierten al formato requerido por la API y pueden encadenarse para incluir múltiples archivos en una sola solicitud.
 
 ## Entradas

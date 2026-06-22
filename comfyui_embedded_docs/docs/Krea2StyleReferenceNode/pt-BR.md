@@ -1,3 +1,5 @@
+# Krea 2 Referência de Estilo
+
 ## Visão Geral
 
 O nó Krea 2 Style Reference permite adicionar uma imagem de referência para influenciar o estilo de uma geração de imagem Krea 2. Você pode encadear múltiplas referências de estilo (até 10 no total) e alimentar o resultado combinado em um nó Krea 2 Image. Cada imagem fornecida é enviada para o armazenamento ComfyAPI e passada como uma URL.

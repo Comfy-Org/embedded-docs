@@ -1,3 +1,5 @@
+# Apply ControlNet
+
 This node applies advanced control net transformations to conditioning data based on an image and a control net model. It allows for fine-tuned adjustments of the control net's influence over the generated content, enabling more precise and varied modifications to the conditioning.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Criar Quadros-chave de Gancho a partir de Floats
+
 Este nó cria keyframes de hook a partir de uma lista de valores de intensidade em ponto flutuante, distribuindo-os uniformemente entre percentuais inicial e final especificados. Ele gera uma sequência de keyframes onde cada valor de intensidade é atribuído a uma posição percentual específica na linha do tempo da animação. O nó pode criar um novo grupo de keyframes ou adicionar a um existente, com uma opção para imprimir os keyframes gerados para fins de depuração.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# SDTurboScheduler
+
 SDTurboScheduler is designed to generate a sequence of sigma values for image sampling, adjusting the sequence based on the denoise level and the number of steps specified. It leverages a specific model's sampling capabilities to produce these sigma values, which are crucial for controlling the denoising process during image generation.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Görsel/Maske Yeniden Boyutlandır
+
 Görüntü/Maske Yeniden Boyutlandırma düğümü, bir giriş görüntüsünün veya maskesinin boyutlarını değiştirmek için birden fazla yöntem sunar. Bir çarpanla ölçekleyebilir, belirli boyutlar ayarlayabilir, başka bir girişin boyutuna uydurabilir veya piksel sayısına göre ayarlama yapabilir; kalite için çeşitli enterpolasyon yöntemleri kullanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Imagen Latente Vacía
+
 El nodo `EmptyLatentImage` está diseñado para generar una representación de espacio latente en blanco con dimensiones y tamaño de lote especificados. Este nodo sirve como paso fundamental en la generación o manipulación de imágenes en el espacio latente, proporcionando un punto de partida para procesos posteriores de síntesis o modificación de imágenes.
 
 ## Entradas

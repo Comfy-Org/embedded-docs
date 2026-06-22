@@ -1,3 +1,5 @@
+# Inférence panorama MoGe
+
 ## Aperçu
 
 Ce nœud effectue une estimation de profondeur sur des images panoramiques équirectangulaires. Il fonctionne en divisant le panorama en 12 vues en perspective, en exécutant le modèle d'estimation de profondeur MoGe sur chaque vue, puis en fusionnant les résultats en une seule carte de profondeur complète pour le panorama d'origine.

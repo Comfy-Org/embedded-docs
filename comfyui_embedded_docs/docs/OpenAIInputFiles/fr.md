@@ -1,3 +1,5 @@
+# Fichiers d'entrée OpenAI ChatGPT
+
 Charge et formate les fichiers d'entrée pour l'API OpenAI. Ce nœud prépare les fichiers texte (.txt) et PDF (.pdf) à inclure comme contextes d'entrée pour le nœud OpenAI Chat. Les fichiers seront lus par le modèle OpenAI lors de la génération d'une réponse. Plusieurs nœuds OpenAI Input Files peuvent être chaînés ensemble pour inclure plusieurs fichiers dans un seul message.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Pré-visualizar como Texto
+
 O nó PreviewAny exibe uma prévia de qualquer tipo de dado de entrada em formato de texto. Ele aceita qualquer tipo de dado como entrada e o converte em uma representação legível em formato de string para visualização. O nó lida automaticamente com diferentes tipos de dados, incluindo strings, números, booleanos e objetos complexos, tentando serializá-los no formato JSON.
 
 ## Entradas

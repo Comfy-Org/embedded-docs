@@ -1,3 +1,5 @@
+# Tracer le graphique de perte
+
 Voici la traduction de la documentation du nœud LossGraphNode :
 
 Le LossGraphNode crée un graphique visuel des valeurs de perte d'entraînement au fil du temps et l'affiche sous forme d'image de prévisualisation. Il prend les données de perte issues des processus d'entraînement et génère un graphique en courbes montrant l'évolution de la perte à travers les étapes d'entraînement. Le graphique obtenu inclut des étiquettes d'axes et les valeurs de perte minimale et maximale.

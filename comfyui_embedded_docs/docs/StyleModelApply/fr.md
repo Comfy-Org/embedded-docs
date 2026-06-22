@@ -1,3 +1,5 @@
+# Appliquer le modèle de style
+
 Ce nœud applique un modèle de style à un conditionnement donné, en enrichissant ou en modifiant son style en fonction de la sortie d’un modèle CLIP vision. Il intègre le conditionnement du modèle de style dans le conditionnement existant, permettant ainsi un mélange harmonieux des styles dans le processus de génération.
 
 ## Entrées

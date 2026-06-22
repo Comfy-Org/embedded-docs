@@ -1,3 +1,5 @@
+# VAEKodÇözmeHunyuan3D
+
 VAEDecodeHunyuan3D düğümü, bir VAE kod çözücü kullanarak gizli temsilleri 3D voxel verilerine dönüştürür. Gizli örnekleri, yapılandırılabilir parçalama ve çözünürlük ayarlarıyla VAE modeli aracılığıyla işleyerek 3D uygulamalar için uygun hacimsel veriler üretir.
 
 ## Girişler

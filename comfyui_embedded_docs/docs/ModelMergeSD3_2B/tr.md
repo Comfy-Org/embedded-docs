@@ -1,3 +1,5 @@
+# ModelBirleştirmeSD3_2B
+
 ModelMergeSD3_2B düğümü, iki Stable Diffusion 3 2B modelini bileşenlerini ayarlanabilir ağırlıklarla harmanlayarak birleştirmenizi sağlar. Gömm katmanları ve dönüştürücü blokları üzerinde bireysel kontrol sağlayarak, özel üretim görevleri için ince ayarlanmış model kombinasyonları oluşturulmasına olanak tanır.
 
 ## Girişler

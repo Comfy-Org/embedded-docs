@@ -1,3 +1,5 @@
+# LTXV Imagem para Vídeo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LtxvApiImageToVideo/en.md)
 
 O nó LTXV Image To Video gera um vídeo de qualidade profissional a partir de uma única imagem inicial. Ele usa uma API externa para criar uma sequência de vídeo com base no seu prompt de texto, permitindo personalizar a duração, resolução e taxa de quadros.

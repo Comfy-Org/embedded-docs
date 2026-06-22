@@ -1,3 +1,5 @@
+# Kling Görüntü Oluşturma
+
 Kling Görüntü Oluşturma Düğümü, metin istemlerinden görüntüler oluşturur ve isteğe bağlı olarak rehberlik için bir referans görüntüsü kullanma seçeneği sunar. Metin açıklamanıza ve referans ayarlarınıza bağlı olarak bir veya daha fazla görüntü oluşturur ve ardından oluşturulan görüntüleri çıktı olarak döndürür.
 
 ## Girişler

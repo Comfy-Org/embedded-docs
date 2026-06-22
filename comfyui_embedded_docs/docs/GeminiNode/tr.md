@@ -1,3 +1,5 @@
+# Google Gemini
+
 Bu düğüm, kullanıcıların Google'ın Gemini AI modelleriyle etkileşime girerek metin yanıtları oluşturmasını sağlar. Modelin daha alakalı ve anlamlı yanıtlar üretmesi için bağlam olarak metin, görsel, ses, video ve dosyalar dahil olmak üzere birden fazla girdi türü sağlayabilirsiniz. Düğüm, tüm API iletişimini ve yanıt ayrıştırmayı otomatik olarak gerçekleştirir.
 
 ## Girdiler

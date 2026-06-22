@@ -1,3 +1,5 @@
+# VAE Encode (for Inpainting)
+
 This node is designed for encoding images into a latent representation suitable for inpainting tasks, incorporating additional preprocessing steps to adjust the input image and mask for optimal encoding by the VAE model.
 
 ## Inputs

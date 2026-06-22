@@ -1,3 +1,5 @@
+# Tripo : Modèle de raffinement d'ébauche
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI **TripoRefineNode** :
 
 ---

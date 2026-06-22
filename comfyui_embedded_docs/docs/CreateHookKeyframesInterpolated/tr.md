@@ -1,3 +1,5 @@
+# Ara Değerlenmiş Kanca Anahtar Kareleri Oluştur
+
 Bir başlangıç ve bitiş noktası arasında enterpolasyonlu güç değerlerine sahip bir dizi kanca anahtar karesi oluşturur. Bu düğüm, üretim sürecinin belirtilen bir yüzde aralığı boyunca güç parametresini düzgün bir şekilde geçiş yapan birden çok anahtar kare üretir ve geçiş eğrisini kontrol etmek için çeşitli enterpolasyon yöntemleri kullanır.
 
 ## Girişler

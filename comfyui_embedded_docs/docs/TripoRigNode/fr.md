@@ -1,3 +1,5 @@
+# Tripo : Modèle squeletté
+
 Le nœud TripoRigNode génère un modèle 3D riggé à partir de l'ID de tâche d'un modèle original. Il envoie une requête à l'API Tripo pour créer un rig animé au format GLB selon les spécifications Tripo, puis interroge l'API jusqu'à ce que la tâche de génération du rig soit terminée.
 
 ## Entrées

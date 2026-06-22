@@ -1,4 +1,4 @@
-# SAM3 Detect Node
+# SAM3 Detect
 
 ## Overview
 

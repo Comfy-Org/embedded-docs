@@ -1,3 +1,5 @@
+# Charger le modèle ControlNet
+
 Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/controlnet`, et lit également les modèles provenant de chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
 Le nœud ControlNetLoader est conçu pour charger un modèle ControlNet à partir d'un chemin spécifié. Il joue un rôle crucial dans l'initialisation des modèles ControlNet, essentiels pour appliquer des mécanismes de contrôle sur le contenu généré ou pour modifier du contenu existant en fonction de signaux de contrôle.

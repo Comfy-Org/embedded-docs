@@ -1,3 +1,5 @@
+# Ajustar Volume do Áudio
+
 O nó AudioAdjustVolume modifica o volume do áudio aplicando ajustes de ganho em decibéis (dB). Ele recebe uma entrada de áudio e aplica um fator de ganho com base no nível de volume especificado, onde valores positivos aumentam o volume e valores negativos o diminuem. O nó retorna o áudio modificado com a mesma taxa de amostragem do original.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# WanCameraImageToVideo
+
 El nodo WanCameraImageToVideo convierte imágenes en secuencias de video generando representaciones latentes para la generación de video. Procesa las entradas de condicionamiento e imágenes de inicio opcionales para crear latentes de video que pueden utilizarse con modelos de video. El nodo admite condiciones de cámara y salidas de visión CLIP para un control mejorado de la generación de video.
 
 ## Entradas

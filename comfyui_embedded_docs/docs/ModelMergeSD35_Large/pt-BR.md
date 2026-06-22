@@ -1,3 +1,5 @@
+# ModelMergeSD35_Large
+
 O nó ModelMergeSD35_Large permite mesclar dois modelos Stable Diffusion 3.5 Large, ajustando a influência de diferentes componentes do modelo. Ele oferece controle preciso sobre quanto cada parte do segundo modelo contribui para o modelo mesclado final, desde camadas de incorporação até blocos conjuntos e camadas finais.
 
 ## Entradas

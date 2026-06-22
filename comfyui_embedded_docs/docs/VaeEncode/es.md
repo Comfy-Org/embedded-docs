@@ -1,3 +1,5 @@
+# VAE Codificar
+
 Este nodo está diseñado para codificar imágenes en una representación de espacio latente utilizando un modelo VAE específico. Abstrae la complejidad del proceso de codificación, proporcionando una forma directa de transformar imágenes en sus representaciones latentes.
 
 ## Entradas

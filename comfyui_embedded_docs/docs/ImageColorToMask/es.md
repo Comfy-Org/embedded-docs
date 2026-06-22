@@ -1,3 +1,5 @@
+# ImageColorToMask
+
 El nodo `ImageColorToMask` está diseñado para convertir un color específico de una imagen en una máscara. Procesa una imagen y un color objetivo, generando una máscara donde se resalta el color especificado, facilitando operaciones como la segmentación basada en color o el aislamiento de objetos.
 
 ## Entradas

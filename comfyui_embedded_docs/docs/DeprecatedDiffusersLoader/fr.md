@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 Le nœud DiffusersLoader est conçu pour charger des modèles depuis la bibliothèque diffusers, en gérant spécifiquement le chargement des modèles UNet, CLIP et VAE en fonction des chemins de modèles fournis. Il facilite l'intégration de ces modèles dans le framework ComfyUI, permettant des fonctionnalités avancées telles que la génération d'images à partir de texte, la manipulation d'images, et plus encore.
 
 ## Entrées

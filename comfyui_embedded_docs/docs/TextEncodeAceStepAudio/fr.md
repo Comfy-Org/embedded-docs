@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI :
 
 Le nœud TextEncodeAceStepAudio traite les entrées textuelles pour le conditionnement audio en combinant des balises et des paroles en tokens, puis en les encodant avec une force de paroles ajustable. Il prend un modèle CLIP ainsi que des descriptions textuelles et des paroles, les tokenise ensemble, et génère des données de conditionnement adaptées aux tâches de génération audio. Le nœud permet d'ajuster finement l'influence des paroles via un paramètre de force qui contrôle leur impact sur la sortie finale.

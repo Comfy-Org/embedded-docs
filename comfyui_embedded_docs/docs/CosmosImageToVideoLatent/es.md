@@ -1,3 +1,5 @@
+# CosmosImageToVideoLatent
+
 El nodo CosmosImageToVideoLatent crea representaciones latentes de video a partir de imágenes de entrada. Genera un latente de video en blanco y, opcionalmente, codifica imágenes de inicio y/o final en los primeros y/o últimos fotogramas de la secuencia de video. Cuando se proporcionan imágenes, también crea máscaras de ruido correspondientes para indicar qué partes del latente deben preservarse durante la generación.
 
 ## Entradas

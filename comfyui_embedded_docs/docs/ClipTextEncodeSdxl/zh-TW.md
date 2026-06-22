@@ -1,3 +1,5 @@
+# CLIPTextEncodeSDXL
+
 此節點專為使用 SDXL 架構客製化的 CLIP 模型來編碼文字輸入而設計。它採用雙編碼器系統（CLIP-L 和 CLIP-G）來處理文字描述，從而實現更精確的圖像生成。
 
 ## 輸入

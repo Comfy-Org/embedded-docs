@@ -1,3 +1,5 @@
+# BetaSamplingScheduler
+
 BetaSamplingScheduler 節點使用 Beta 排程演算法，為取樣過程生成一系列噪聲級別（sigma）。它接收模型與配置參數，以建立自訂的噪聲排程，在影像生成過程中控制去噪程序。此排程器可透過 alpha 與 beta 參數微調噪聲降低軌跡。
 
 ## 輸入

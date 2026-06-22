@@ -1,3 +1,5 @@
+# SamplerDPMPP_2M_SDE
+
 Voici la traduction en français de la documentation du nœud SamplerDPMPP_2M_SDE :
 
 Le nœud SamplerDPMPP_2M_SDE crée un échantillonneur DPM++ 2M SDE pour les modèles de diffusion. Cet échantillonneur utilise des solveurs d'équations différentielles du second ordre avec des équations différentielles stochastiques pour générer des échantillons. Il propose différents types de solveurs et options de gestion du bruit pour contrôler le processus d'échantillonnage.

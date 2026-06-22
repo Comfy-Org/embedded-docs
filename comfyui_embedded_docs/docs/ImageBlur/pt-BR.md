@@ -1,3 +1,5 @@
+# Desfoque de Imagem
+
 O nó `ImageBlur` aplica um desfoque gaussiano a uma imagem, permitindo suavizar bordas e reduzir detalhes e ruídos. Ele oferece controle sobre a intensidade e a propagação do desfoque por meio de parâmetros.
 
 ## Entradas

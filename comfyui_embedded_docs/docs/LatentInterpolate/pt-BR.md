@@ -1,3 +1,5 @@
+# Interpolar Latent
+
 O nó LatentInterpolate foi projetado para realizar interpolação entre dois conjuntos de amostras latentes com base em uma proporção especificada, combinando as características de ambos os conjuntos para produzir um novo conjunto intermediário de amostras latentes.
 
 ## Entradas

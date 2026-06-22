@@ -1,3 +1,5 @@
+# Salvar WEBP Animado
+
 Este nó foi projetado para salvar uma sequência de imagens como um arquivo WEBP animado. Ele gerencia a agregação de quadros individuais em uma animação coesa, aplicando metadados especificados e otimizando a saída com base nas configurações de qualidade e compressão.
 
 ## Entradas

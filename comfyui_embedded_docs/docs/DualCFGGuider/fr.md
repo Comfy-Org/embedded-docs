@@ -1,3 +1,5 @@
+# GuideurDualCFG
+
 Le nœud DualCFGGuider crée un système de guidage pour l'échantillonnage à guidage double sans classifieur. Il combine deux entrées de conditionnement positif avec une entrée de conditionnement négatif, en appliquant différentes échelles de guidage à chaque paire de conditionnement afin de contrôler l'influence de chaque prompt sur la sortie générée.
 
 ## Entrées

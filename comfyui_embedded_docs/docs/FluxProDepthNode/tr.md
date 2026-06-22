@@ -1,3 +1,5 @@
+# FluxProDepthNode
+
 Bu düğüm, derinlik kontrol görüntüsünü kılavuz olarak kullanarak görüntüler oluşturur. Bir kontrol görüntüsü ve bir metin istemi alır, ardından hem kontrol görüntüsündeki derinlik bilgisini hem de istemdeki açıklamayı takip eden yeni bir görüntü oluşturur. Düğüm, görüntü oluşturma işlemini gerçekleştirmek için harici bir API'ye bağlanır.
 
 ## Girişler

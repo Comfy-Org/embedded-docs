@@ -1,3 +1,5 @@
+# WanSoundImageToVideo
+
 The WanSoundImageToVideo node generates video content from images with optional audio conditioning. It takes positive and negative conditioning prompts along with a VAE model to create video latents, and can incorporate reference images, audio encoding, control videos, and motion references to guide the video generation process.
 
 ## Inputs

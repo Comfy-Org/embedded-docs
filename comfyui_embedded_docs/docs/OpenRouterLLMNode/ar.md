@@ -1,3 +1,5 @@
+# OpenRouter LLM
+
 ## نظرة عامة
 
 ترسل عقدة OpenRouter LLM مطالبة نصية إلى مجموعة منتقاة من نماذج اللغة الشائعة المتاحة عبر خدمة OpenRouter، وتُعيد الاستجابة النصية المُولَّدة. تدعم العقدة نماذج من مزودين مثل xAI وDeepSeek وQwen وMistral وZ.AI (GLM) وMoonshot (Kimi) وPerplexity Sonar، ويمكنها اختياريًا تضمين الصور أو مقاطع الفيديو في الطلب.

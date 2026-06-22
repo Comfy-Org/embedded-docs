@@ -1,3 +1,5 @@
+# PixVerse 範本
+
 PixVerse 範本節點讓您可以從可用的 PixVerse 影片生成範本中進行選擇。它會將您選擇的範本名稱轉換為 PixVerse API 用於影片創建所需的對應範本 ID。
 
 ## 輸入

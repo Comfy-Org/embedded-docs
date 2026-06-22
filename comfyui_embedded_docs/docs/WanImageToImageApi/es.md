@@ -1,3 +1,5 @@
+# Wan Image to Image
+
 El nodo Wan Image to Image genera una imagen a partir de una o dos imágenes de entrada y una descripción textual. Transforma tus imágenes de entrada según la descripción que proporciones, creando una nueva imagen que mantiene la relación de aspecto de tu entrada original. La imagen de salida tiene una resolución fija de 1,6 megapíxeles, independientemente del tamaño de entrada.
 
 ## Entradas

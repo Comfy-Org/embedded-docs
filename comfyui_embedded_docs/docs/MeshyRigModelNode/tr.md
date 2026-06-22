@@ -1,3 +1,5 @@
+# Meshy: Modeli Rigle
+
 **Meshy: Rig Model** düğümü, önceki bir Meshy görevinden alınan 3B modeli alır ve model için otomatik olarak bir iskelet oluşturarak, poz verilebilir ve canlandırılabilir, donanımlı bir karakter üretir. Düğüm, donanımlı modeli hem GLB hem de FBX dosya formatlarında çıktı olarak verir.
 
 ## Girişler

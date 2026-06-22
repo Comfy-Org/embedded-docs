@@ -1,3 +1,5 @@
+# MaskeÖnizleme
+
 **Maske Önizleme Düğümü**
 
 Maske Önizleme düğümü, maske verilerini ComfyUI çıktı dizininize önizleme görüntüsü olarak kaydederek iş akışı yürütmesi sırasında maske verilerini görsel olarak incelemenizi sağlar. Giriş maskesini görüntü görüntüleme için uygun bir formata dönüştürür ve yapılandırılabilir bir dosya adı ön ekiyle kaydeder.

@@ -1,3 +1,5 @@
+# Soustraction Latente
+
 Voici la traduction en français de la documentation du nœud LatentSubtract :
 
 Le nœud LatentSubtract est conçu pour soustraire une représentation latente d'une autre. Cette opération peut être utilisée pour manipuler ou modifier les caractéristiques des sorties des modèles génératifs en supprimant efficacement les caractéristiques ou attributs représentés dans un espace latent d'un autre.

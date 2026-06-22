@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة ComfyUI
+# LoadImageSetFromFolderNode
 
 ## نظرة عامة
 

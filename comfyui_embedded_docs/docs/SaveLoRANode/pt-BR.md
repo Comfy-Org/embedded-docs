@@ -1,3 +1,5 @@
+# SaveLoRANode
+
 O nó SaveLoRA salva modelos LoRA (Low-Rank Adaptation) em seu diretório de saída. Ele recebe um modelo LoRA como entrada e cria um arquivo safetensors com um nome de arquivo gerado automaticamente. Você pode personalizar o prefixo do nome do arquivo e, opcionalmente, incluir a contagem de etapas de treinamento no nome do arquivo para melhor organização.
 
 ## Entradas

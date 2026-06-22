@@ -1,3 +1,5 @@
+# Carregar Modelo ControlNet
+
 Este nó detectará modelos localizados na pasta `ComfyUI/models/controlnet` e também lerá modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó ControlNetLoader foi projetado para carregar um modelo ControlNet a partir de um caminho especificado. Ele desempenha um papel crucial na inicialização de modelos ControlNet, que são essenciais para aplicar mecanismos de controle sobre o conteúdo gerado ou modificar conteúdo existente com base em sinais de controle.

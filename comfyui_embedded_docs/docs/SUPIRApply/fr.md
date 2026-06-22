@@ -1,3 +1,5 @@
+# SUPIRApply
+
 Le nœud SUPIRApply applique un patch de modèle SUPIR à un modèle de diffusion. Il utilise le patch pour modifier le comportement du modèle, lui permettant d'intégrer les indications d'une image d'entrée pendant le processus d'échantillonnage. Le nœud fournit également des contrôles pour ajuster la force de ces indications dans le temps et inclut une fonctionnalité optionnelle pour aider à maintenir la fidélité à l'image d'entrée d'origine.
 
 ## Entrées

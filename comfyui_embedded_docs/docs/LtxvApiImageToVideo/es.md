@@ -1,3 +1,5 @@
+# LTXV Imagen a Video
+
 El nodo **LTXV Imagen a Video** genera un video de calidad profesional a partir de una sola imagen inicial. Utiliza una API externa para crear una secuencia de video basada en tu indicación de texto, permitiéndote personalizar la duración, resolución y velocidad de fotogramas.
 
 ## Entradas

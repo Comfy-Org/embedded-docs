@@ -1,3 +1,5 @@
+# Enregistrer l'audio
+
 Voici la traduction de la documentation du nœud RecordAudio :
 
 Le nœud RecordAudio charge les fichiers audio qui ont été enregistrés ou sélectionnés via l'interface d'enregistrement audio. Il traite le fichier audio et le convertit en un format de forme d'onde pouvant être utilisé par d'autres nœuds de traitement audio dans le workflow. Le nœud détecte automatiquement la fréquence d'échantillonnage et prépare les données audio pour une manipulation ultérieure.

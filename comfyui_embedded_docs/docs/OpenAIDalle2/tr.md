@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 OpenAI'nin DALL·E 2 uç noktası aracılığıyla eşzamanlı olarak görseller oluşturur.
 

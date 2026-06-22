@@ -1,3 +1,5 @@
+# FreeU
+
 ## Genel Bakış
 
 FreeU düğümü, görüntü üretim kalitesini artırmak için bir modelin çıktı bloklarına frekans alanı değişiklikleri uygular. Farklı kanal gruplarını ölçeklendirerek ve belirli özellik haritalarına Fourier filtrelemesi uygulayarak çalışır; bu sayede üretim sürecinde modelin davranışı üzerinde ince ayarlı kontrol sağlar.

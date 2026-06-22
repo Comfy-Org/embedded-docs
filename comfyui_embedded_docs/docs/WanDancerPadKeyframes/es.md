@@ -1,4 +1,4 @@
-# Descripción General
+# WanDancerPadKeyframes
 
 Este nodo prepara una secuencia de fotogramas clave para un segmento específico dentro de un proceso de generación de video más largo. Toma un lote de imágenes de entrada y una pista de audio, calcula cuántos fotogramas totales debe tener el video completo según la duración del audio, y luego distribuye las imágenes de entrada como fotogramas clave a lo largo del segmento seleccionado, rellenando el resto con fotogramas en blanco. También extrae la porción correspondiente del audio para ese segmento.
 

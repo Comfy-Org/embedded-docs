@@ -1,3 +1,5 @@
+# EmptyLatentHunyuan3Dv2
+
 O nó EmptyLatentHunyuan3Dv2 cria tensores latentes vazios especificamente formatados para modelos de geração 3D Hunyuan3Dv2. Ele gera espaços latentes vazios com as dimensões e estrutura corretas exigidas pela arquitetura Hunyuan3Dv2, permitindo iniciar fluxos de trabalho de geração 3D do zero. O nó produz tensores latentes preenchidos com zeros que servem como base para processos subsequentes de geração 3D.
 
 ## Entradas

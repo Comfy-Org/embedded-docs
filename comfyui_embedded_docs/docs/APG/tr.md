@@ -1,3 +1,5 @@
+# Uyarlanabilir Projeksiyonlu Kılavuzluk
+
 ## Genel Bakış
 
 APG (Uyarlanabilir Projeksiyonlu Yönlendirme) düğümü, difüzyon sırasında yönlendirmenin nasıl uygulandığını ayarlayarak örnekleme sürecini değiştirir. Yönlendirme vektörünü, koşullu çıktıya göre paralel ve dik bileşenlerine ayırarak daha kontrollü görüntü oluşturulmasını sağlar. Düğüm, yönlendirmeyi ölçeklendirmek, büyüklüğünü normalleştirmek ve difüzyon adımları arasında daha yumuşak geçişler için momentum uygulamak üzere parametreler sunar.

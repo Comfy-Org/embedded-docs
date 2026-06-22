@@ -1,3 +1,5 @@
+# Cargar conjunto de imágenes y texto desde carpeta
+
 Este nodo carga un conjunto de datos de imágenes y sus correspondientes leyendas de texto desde una carpeta especificada. Busca archivos de imagen y automáticamente localiza archivos `.txt` coincidentes con el mismo nombre base para usarlos como leyendas. El nodo también admite una estructura de carpetas específica donde las subcarpetas pueden nombrarse con un prefijo numérico (como `10_nombre_carpeta`) para indicar que las imágenes dentro deben repetirse varias veces en la salida.
 
 ## Entradas

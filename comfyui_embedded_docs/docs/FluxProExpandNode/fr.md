@@ -1,3 +1,5 @@
+# Flux.1 Élargir l’image
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 Étend une image en fonction d'une description textuelle. Ce nœud agrandit une image en ajoutant des pixels sur les côtés supérieur, inférieur, gauche et droit, tout en générant un nouveau contenu correspondant à la description textuelle fournie.

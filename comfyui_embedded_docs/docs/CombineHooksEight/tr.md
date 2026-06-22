@@ -1,3 +1,5 @@
+# CombineHooksEight
+
 Birleştirme Kancaları [8] düğümü, en fazla sekiz farklı kanca grubunu tek bir birleşik kanca grubunda birleştirir. Birden fazla kanca girişi alır ve bunları ComfyUI'nin kanca birleştirme işlevselliğini kullanarak birleştirir. Bu, gelişmiş iş akışlarında daha verimli işleme için birden fazla kanca yapılandırmasını tek bir noktada toplamanıza olanak tanır.
 
 ## Girişler

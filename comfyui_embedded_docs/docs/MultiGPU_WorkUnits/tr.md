@@ -1,3 +1,5 @@
+# MultiGPU CFG Bölme
+
 ## Genel bakış
 
 MultiGPU CFG Split düğümü, difüzyon işlemini aynı bilgisayarda bulunan birden fazla GPU arasında paylaştırır. Hız artışı workflow'a göre değişir, ancak yaygın workflow'larda 1.95x'e kadar hızlanma ölçülmüştür.

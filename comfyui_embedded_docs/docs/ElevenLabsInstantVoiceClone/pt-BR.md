@@ -1,3 +1,5 @@
+# ElevenLabs Clonagem Instantânea de Voz
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/en.md)
 
 O nó ElevenLabs Instant Voice Clone cria um novo modelo de voz único analisando de 1 a 8 gravações de áudio da voz de uma pessoa. Ele envia essas amostras para a API do ElevenLabs, que as processa para gerar um clone de voz que pode ser usado para síntese de texto para fala.

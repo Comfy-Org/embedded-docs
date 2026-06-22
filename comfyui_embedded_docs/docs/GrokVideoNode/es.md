@@ -1,3 +1,5 @@
+# Video Grok
+
 El nodo Grok Video genera un video corto a partir de una descripción textual. Puede crear un video desde cero usando un prompt o animar una sola imagen de entrada basándose en un prompt. El nodo envía una solicitud a una API externa y devuelve el video generado.
 
 ## Entradas

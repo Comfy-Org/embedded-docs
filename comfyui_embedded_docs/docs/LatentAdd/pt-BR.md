@@ -1,3 +1,5 @@
+# LatentAdd
+
 O nó **LatentAdd** é projetado para a adição de duas representações latentes. Ele facilita a combinação de características ou atributos codificados nessas representações por meio de uma adição elemento a elemento.
 
 ## Entradas

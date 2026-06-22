@@ -1,3 +1,5 @@
+# ReferenceTimbreAudio
+
 Ce nœud définit un timbre audio de référence pour une utilisation dans le processus "ace step 1.5". Il fonctionne en prenant une entrée de conditionnement et, éventuellement, une représentation latente de l'audio, puis attache ces données latentes au conditionnement pour une utilisation par les nœuds suivants du workflow.
 
 ## Entrées

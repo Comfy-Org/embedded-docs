@@ -1,3 +1,5 @@
+# HappyHorse Referencia a Video
+
 ## Descripción general
 
 Este nodo genera un video con una persona u objeto basado en imágenes de referencia utilizando el modelo HappyHorse. Permite crear videos con un solo personaje o múltiples personajes interactuando entre sí.

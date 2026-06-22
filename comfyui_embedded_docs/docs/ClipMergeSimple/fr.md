@@ -1,3 +1,5 @@
+# CLIPMergeSimple
+
 Voici la traduction en français de la documentation du nœud `CLIPMergeSimple` :
 
 `CLIPMergeSimple` est un nœud avancé de fusion de modèles utilisé pour combiner deux encodeurs de texte CLIP selon un ratio spécifié.

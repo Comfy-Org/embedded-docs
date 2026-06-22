@@ -1,3 +1,5 @@
+# Establecer Fotogramas Clave de Gancho
+
 El nodo Set Hook Keyframes permite aplicar programación de fotogramas clave a grupos de hooks existentes. Toma un grupo de hooks y, opcionalmente, aplica información de temporización de fotogramas clave para controlar cuándo se ejecutan los diferentes hooks durante el proceso de generación. Cuando se proporcionan fotogramas clave, el nodo clona el grupo de hooks y establece la temporización de fotogramas clave en todos los hooks dentro del grupo.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# Genel Bakış
+# EmptyARVideoLatent
 
 EmptyARVideoLatent düğümü, video oluşturma için boş, temiz bir latent temsil oluşturur. Belirtilen boyutlar, en-boy oranı ve uzunlukta sıfırlardan oluşan bir tensör sağlayarak video oluşturma sürecini başlatmak için kullanılır.
 

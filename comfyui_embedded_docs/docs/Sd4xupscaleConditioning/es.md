@@ -1,3 +1,5 @@
+# Sd4xupscaleConditioning
+
 Este nodo se especializa en mejorar la resolución de imágenes mediante un proceso de ampliación 4x, incorporando elementos de condicionamiento para refinar el resultado. Aprovecha técnicas de difusión para ampliar las imágenes, permitiendo ajustar la relación de escala y la aumentación de ruido para afinar el proceso de mejora.
 
 ## Entradas

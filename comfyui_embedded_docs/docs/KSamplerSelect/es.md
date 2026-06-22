@@ -1,3 +1,5 @@
+# KSamplerSelect
+
 El nodo KSamplerSelect está diseñado para seleccionar un muestreador específico basado en el nombre proporcionado. Abstrae la complejidad de la selección del muestreador, permitiendo a los usuarios cambiar fácilmente entre diferentes estrategias de muestreo para sus tareas.
 
 ## Entradas

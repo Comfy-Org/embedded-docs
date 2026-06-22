@@ -1,3 +1,5 @@
+# Eğri Düzenleyici
+
 Eğri Düzenleyici düğümü, bir eğriyi ayarlamak ve ince ayar yapmak için görsel bir arayüz sağlar. Giriş eğrisinin şeklini değiştirmenize ve isteğe bağlı olarak histogram ile dağılımını görselleştirmenize olanak tanır. Düğüm, iş akışınızın diğer bölümlerinde kullanılmak üzere değiştirilmiş eğriyi çıktı olarak verir.
 
 ## Girişler

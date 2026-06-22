@@ -1,3 +1,5 @@
+# SamplerEulerAncestralCFG++
+
 SamplerEulerAncestralCFGPP 節點建立一個取樣器，使用歐拉祖先法搭配無分類器引導（CFG++）進行影像生成。此取樣器結合祖先取樣技術與引導條件，在保持一致性的同時產生多樣化的影像變體，並可透過控制雜訊與步長調整的參數進行微調。
 
 ## 輸入

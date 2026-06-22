@@ -1,3 +1,5 @@
+# GizliDeğişkeniKaydet
+
 SaveLatent düğümü, gizli tensörleri dosya olarak diske kaydederek daha sonra kullanım veya paylaşım için saklar. Gizli örnekleri alır ve isteğe bağlı olarak bilgi istemi bilgilerini içeren meta verilerle birlikte çıktı dizinine kaydeder. Düğüm, gizli veri yapısını korurken dosya adlandırma ve düzenlemeyi otomatik olarak halleder.
 
 ## Girdiler

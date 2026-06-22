@@ -1,3 +1,5 @@
+# VideoTriangleCFGGuidance
+
 O nó VideoTriangleCFGGuidance aplica um padrão de orientação triangular de escala livre de classificador a modelos de vídeo. Ele modifica a escala de condicionamento ao longo do tempo usando uma função de onda triangular que oscila entre o valor mínimo de CFG e a escala de condicionamento original. Isso cria um padrão de orientação dinâmico que pode ajudar a melhorar a consistência e a qualidade da geração de vídeos.
 
 ## Entradas

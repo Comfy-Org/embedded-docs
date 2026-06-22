@@ -1,3 +1,5 @@
+# AudioLatentVide
+
 Le nœud EmptyLatentAudio crée un tenseur latent vide pour le traitement audio. Il génère une représentation audio latente vierge avec une durée et une taille de lot spécifiées, pouvant servir de point de départ pour des workflows de génération ou de traitement audio. Le nœud calcule automatiquement les dimensions latentes appropriées en fonction de la durée audio et du taux d'échantillonnage.
 
 ## Entrées

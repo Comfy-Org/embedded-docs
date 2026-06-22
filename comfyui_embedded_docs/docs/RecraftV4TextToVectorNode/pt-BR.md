@@ -1,3 +1,5 @@
+# Recraft V4 Texto para Vetor
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToVectorNode/en.md)
 
 O nó Recraft V4 Text to Vector gera ilustrações em Scalable Vector Graphics (SVG) a partir de uma descrição textual. Ele se conecta a uma API externa para usar o modelo Recraft V4 ou Recraft V4 Pro para geração de imagens. O nó produz uma ou mais imagens SVG com base no seu prompt.

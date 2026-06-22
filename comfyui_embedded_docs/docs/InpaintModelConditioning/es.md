@@ -1,3 +1,5 @@
+# InpaintModelConditioning
+
 El nodo InpaintModelConditioning está diseñado para facilitar el proceso de condicionamiento de modelos de inpainting, permitiendo la integración y manipulación de diversas entradas de condicionamiento para personalizar el resultado del inpainting. Abarca una amplia gama de funcionalidades, desde la carga de puntos de control de modelos específicos y la aplicación de modelos de estilo o control net, hasta la codificación y combinación de elementos de condicionamiento, sirviendo así como una herramienta integral para personalizar tareas de inpainting.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# SamplerLCMUpscale
+
 Le nœud SamplerLCMUpscale fournit une méthode d'échantillonnage spécialisée qui combine l'échantillonnage par modèle de cohérence latente (LCM) avec des capacités de suréchantillonnage d'image. Il permet de suréchantillonner les images pendant le processus d'échantillonnage en utilisant diverses méthodes d'interpolation, ce qui le rend utile pour générer des sorties à plus haute résolution tout en préservant la qualité de l'image.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Détection RT-DETR
+
 Le nœud RT-DETR Detect effectue la détection d'objets sur des images d'entrée à l'aide d'un modèle RT-DETR. Il identifie les objets, dessine des boîtes englobantes autour d'eux et les étiquette selon les classes du jeu de données COCO. Vous pouvez filtrer les résultats par score de confiance, classe d'objet et limiter le nombre total de détections.
 
 ## Entrées

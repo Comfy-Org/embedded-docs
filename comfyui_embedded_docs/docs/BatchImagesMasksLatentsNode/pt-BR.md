@@ -1,3 +1,5 @@
+# BatchImagesMasksLatentsNode
+
 O nó Batch Images/Masks/Latents combina múltiplas entradas do mesmo tipo em um único lote. Ele detecta automaticamente se as entradas são imagens, máscaras ou representações latentes e utiliza o método de agrupamento apropriado. Isso é útil para preparar vários itens para processamento por nós que aceitam entradas em lote.
 
 ## Entradas

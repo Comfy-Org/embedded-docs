@@ -1,3 +1,5 @@
+# Herhangi Bir Şeyi Önizle
+
 PreviewAny düğümü, herhangi bir girdi veri türünün önizlemesini metin biçiminde görüntüler. Girdi olarak herhangi bir veri türünü kabul eder ve okunabilir bir dize temsiline dönüştürerek görüntülenmesini sağlar. Düğüm, dizeler, sayılar, boolean değerler ve karmaşık nesneler dahil olmak üzere farklı veri türlerini JSON biçimine serileştirmeye çalışarak otomatik olarak işler.
 
 ## Girdiler

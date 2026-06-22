@@ -1,3 +1,5 @@
+# Stability AI Áudio para Áudio
+
 Transforma amostras de áudio existentes em novas composições de alta qualidade usando instruções de texto. Este nó recebe um arquivo de áudio de entrada e o modifica com base no seu prompt de texto para criar novo conteúdo de áudio.
 
 ## Entradas

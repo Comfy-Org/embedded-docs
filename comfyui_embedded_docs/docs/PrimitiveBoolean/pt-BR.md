@@ -1,3 +1,5 @@
+# Booleano
+
 O nó Booleano fornece uma maneira simples de passar valores booleanos (verdadeiro/falso) através do seu fluxo de trabalho. Ele recebe um valor booleano de entrada e gera o mesmo valor inalterado, permitindo que você controle parâmetros booleanos em outros nós.
 
 ## Entradas

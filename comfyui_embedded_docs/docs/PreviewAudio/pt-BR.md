@@ -1,3 +1,5 @@
+# Pré-visualizar Áudio
+
 O nó PreviewAudio cria uma prévia de áudio temporária que pode ser reproduzida diretamente na interface. Ele recebe dados de áudio como entrada e gera um widget de prévia, permitindo que os usuários ouçam as saídas de áudio sem salvar arquivos permanentes.
 
 ## Entradas

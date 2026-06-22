@@ -1,3 +1,5 @@
+# Int
+
 Le nœud PrimitiveInt offre un moyen simple de manipuler des valeurs entières dans votre flux de travail. Il prend une entrée entière et produit la même valeur en sortie, ce qui le rend utile pour transmettre des paramètres entiers entre les nœuds ou définir des valeurs numériques spécifiques pour d'autres opérations.
 
 ## Entrées

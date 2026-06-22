@@ -1,3 +1,5 @@
+# StableZero123_Conditioning
+
 Le nœud **StableZero123_Conditioning** traite une image d'entrée et des angles de caméra pour générer des données de conditionnement et des représentations latentes destinées à la création de modèles 3D. Il utilise un modèle de vision CLIP pour encoder les caractéristiques de l'image, les combine avec des informations d'encastrement de caméra basées sur les angles d'élévation et d'azimut, et produit un conditionnement positif et négatif ainsi qu'une représentation latente pour les tâches de génération 3D en aval.
 
 ## Entrées

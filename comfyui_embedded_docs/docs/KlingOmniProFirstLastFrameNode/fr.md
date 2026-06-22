@@ -1,3 +1,5 @@
+# Kling Omni Première-Dernière-Image vers Vidéo (Pro)
+
 Ce nœud utilise le dernier modèle d'IA Kling pour générer une vidéo à partir d'une image de début, d'une image de fin optionnelle ou d'images de référence. Il peut créer une vidéo unique ou un storyboard multi-plans avec des prompts et des durées individuels pour chaque segment. Le nœud traite ces entrées pour produire une vidéo d'une longueur et d'une résolution spécifiées, avec une génération audio optionnelle.
 
 ## Entrées

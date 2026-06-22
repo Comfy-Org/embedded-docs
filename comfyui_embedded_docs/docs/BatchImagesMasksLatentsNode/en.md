@@ -1,3 +1,5 @@
+# BatchImagesMasksLatentsNode
+
 The Batch Images/Masks/Latents node combines multiple inputs of the same type into a single batch. It automatically detects whether the inputs are images, masks, or latent representations and uses the appropriate batching method. This is useful for preparing multiple items for processing by nodes that accept batched inputs.
 
 ## Inputs

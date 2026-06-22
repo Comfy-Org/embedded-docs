@@ -1,3 +1,5 @@
+# VOIDSampler
+
 نظرة عامة
 
 توفر عقدة VOIDSampler طريقة أخذ عينات DDIM متخصصة مصممة خصيصًا لنماذج الترميم الداخلي VOID. تطبق هذه العقدة نفس عملية إزالة الضوضاء المستخدمة أثناء تدريب نموذج VOID، دون تحجيم الضوضاء الذي تطبقه عينات K القياسية. صُممت هذه العقدة للاستخدام مع عقد SamplerCustom أو SamplerCustomAdvanced، ويجب إقرانها مع RandomNoise أو VOIDWarpedNoiseSource.

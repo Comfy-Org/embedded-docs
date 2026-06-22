@@ -1,3 +1,5 @@
+# LoadImageTextSetFromFolderNode
+
 あなたは ComfyUI ノードドキュメントを英語から日本語に翻訳する技術翻訳の専門家です。
 
 ## 翻訳ルール

@@ -1,3 +1,5 @@
+# ModelBirleştirmeCosmos7B
+
 ModelMergeCosmos7B düğümü, iki yapay zeka modelini belirli bileşenlerin ağırlıklı harmanlamasını kullanarak birleştirir. Modellerin farklı bölümlerinin nasıl birleştirileceği üzerinde, konum gömme katmanları, dönüştürücü blokları ve son katmanlar için ayrı ağırlıklar ayarlayarak ince taneli kontrol sağlar.
 
 ## Girişler

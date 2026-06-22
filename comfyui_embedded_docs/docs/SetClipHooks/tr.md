@@ -1,3 +1,5 @@
+# CLIP Kancalarını Ayarla
+
 SetClipHooks düğümü, bir CLIP modeline özel kancalar (hooks) uygulamanıza olanak tanıyarak davranışında gelişmiş değişiklikler yapılmasını sağlar. Koşullandırma çıktılarına kancalar uygulayabilir ve isteğe bağlı olarak clip zamanlama işlevselliğini etkinleştirebilir. Bu düğüm, belirtilen kanca yapılandırmaları uygulanmış şekilde giriş CLIP modelinin klonlanmış bir kopyasını oluşturur.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# ModelMergeMochiPreview
+
 This node merges two AI models using a block-based approach with fine-grained control over different model components. It allows you to blend models by adjusting interpolation weights for specific sections including positional frequencies, embedding layers, and individual transformer blocks. The merging process combines the architectures and parameters from both input models according to the specified weight values.
 
 ## Inputs

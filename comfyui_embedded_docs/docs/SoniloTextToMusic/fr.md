@@ -1,3 +1,5 @@
+# Sonilo Texte en Musique
+
 Voici la traduction en français de la documentation du nœud SoniloTextToMusic, en respectant vos règles :
 
 Le nœud Sonilo Texte vers Musique génère de la musique à partir d'une description textuelle en utilisant le modèle d'IA de Sonilo. Vous fournissez un prompt décrivant la musique souhaitée, et le nœud envoie une requête au service Sonilo pour créer un fichier audio. Vous pouvez spécifier une durée cible ou laisser le modèle l'inférer à partir de votre prompt.

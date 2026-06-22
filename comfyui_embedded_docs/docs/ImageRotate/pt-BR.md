@@ -1,3 +1,5 @@
+# Rotacionar Imagem
+
 O nó ImageRotate gira uma imagem de entrada por ângulos especificados. Ele suporta quatro opções de rotação: sem rotação, 90 graus no sentido horário, 180 graus e 270 graus no sentido horário. A rotação é realizada usando operações eficientes de tensor que mantêm a integridade dos dados da imagem.
 
 ## Entradas

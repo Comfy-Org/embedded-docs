@@ -1,3 +1,5 @@
+# Değiştir
+
 StringReplace düğümü, girdi dizeleri üzerinde metin değiştirme işlemleri gerçekleştirir. Girdi metni içinde belirtilen bir alt dizeyi arar ve tüm bulunan örnekleri farklı bir alt dizeyle değiştirir. Bu düğüm, tüm değiştirmeler uygulanmış şekilde değiştirilmiş dizeyi döndürür.
 
 ## Girdiler

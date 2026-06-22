@@ -1,3 +1,5 @@
+# ByteDance Crear Asset de Imagen
+
 Este nodo crea un activo de imagen personal para el servicio Seedance 2.0 de ByteDance. Carga una imagen de entrada y la registra dentro de un grupo de activos especificado. Si no se proporciona un ID de grupo, iniciará un proceso de verificación de persona real en tu navegador para crear un nuevo grupo antes de agregar el activo.
 
 ## Entradas

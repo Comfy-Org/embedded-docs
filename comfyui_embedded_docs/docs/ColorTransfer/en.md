@@ -1,3 +1,5 @@
+# Transfer Color
+
 The ColorTransfer node adjusts the color palette of a target image to match the colors of a reference image. It uses different mathematical algorithms to analyze and transfer the color characteristics, such as brightness, contrast, and hue distribution, from the reference to the target. This is useful for creating visual consistency across multiple images or applying a specific color grade.
 
 ## Inputs

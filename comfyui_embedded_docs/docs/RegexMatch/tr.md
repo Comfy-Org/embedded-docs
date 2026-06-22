@@ -1,3 +1,5 @@
+# Regex Eşleştir
+
 RegexMatch düğümü, bir metin dizesinin belirli bir düzenli ifade kalıbıyla eşleşip eşleşmediğini kontrol eder. Girdi dizesini tarar ve kalıbın metin içinde herhangi bir yerde bulunup bulunmadığını belirten basit bir evet/hayır sonucu döndürür. Büyük/küçük harf duyarsız eşleme veya çok satırlı mod gibi seçenekleri etkinleştirerek aramanın nasıl çalıştığını ayarlayabilirsiniz.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Muestreador personalizado
+
 El nodo SamplerCustom está diseñado para proporcionar un mecanismo de muestreo flexible y personalizable para diversas aplicaciones. Permite a los usuarios seleccionar y configurar diferentes estrategias de muestreo adaptadas a sus necesidades específicas, mejorando la adaptabilidad y eficiencia del proceso de muestreo.
 
 ## Entradas

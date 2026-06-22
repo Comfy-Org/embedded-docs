@@ -1,3 +1,5 @@
+# CLIP Text Encode para Lumina2
+
 El nodo Codificación de Texto CLIP para Lumina2 codifica un mensaje de sistema y un mensaje de usuario utilizando un modelo CLIP en una incrustación que puede guiar al modelo de difusión para generar imágenes específicas. Combina un mensaje de sistema predefinido con tu mensaje de texto personalizado y los procesa a través del modelo CLIP para crear datos de condicionamiento para la generación de imágenes.
 
 ## Entradas

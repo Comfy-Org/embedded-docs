@@ -1,3 +1,5 @@
+# SamplerDpmppSde
+
 Este nó foi projetado para gerar um amostrador para o modelo DPM++ SDE (Equação Diferencial Estocástica). Ele se adapta tanto a ambientes de execução em CPU quanto em GPU, otimizando a implementação do amostrador com base no hardware disponível.
 
 ## Entradas

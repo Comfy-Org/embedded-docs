@@ -1,3 +1,5 @@
+# OpenRouter LLM
+
 ## Genel Bakış
 
 OpenRouter LLM düğümü, OpenRouter hizmeti aracılığıyla sunulan, özenle seçilmiş popüler dil modellerine bir metin istemi gönderir ve oluşturulan metin yanıtını döndürür. xAI, DeepSeek, Qwen, Mistral, Z.AI (GLM), Moonshot (Kimi) ve Perplexity Sonar gibi sağlayıcılardan gelen modelleri destekler ve isteğe bağlı olarak isteğe resim veya video ekleyebilir.

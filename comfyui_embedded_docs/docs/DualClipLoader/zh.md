@@ -1,3 +1,5 @@
+# 双CLIP加载器
+
 DualCLIPLoader 节点专为同时加载两个 CLIP 模型而设计，便于执行需要整合或比较两个模型特征的操作。
 
 此节点将检测位于 `ComfyUI/models/text_encoders` 文件夹中的模型。

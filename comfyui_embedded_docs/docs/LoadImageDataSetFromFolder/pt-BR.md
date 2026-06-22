@@ -1,3 +1,5 @@
+# Carregar Conjunto de Imagens da Pasta
+
 Este nó carrega múltiplas imagens de uma subpasta específica dentro do diretório de entrada do ComfyUI. Ele examina a pasta escolhida em busca de tipos de arquivo de imagem comuns e os retorna como uma lista, sendo útil para processamento em lote ou preparação de conjuntos de dados.
 
 ## Entradas

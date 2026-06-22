@@ -1,3 +1,5 @@
+# Kandinsky5ImageToVideo
+
 Le nœud Kandinsky5ImageToVideo prépare les données de conditionnement et d'espace latent pour la génération vidéo à l'aide du modèle Kandinsky. Il crée un tenseur latent vidéo vide et peut éventuellement encoder une image de départ pour guider les premières images de la vidéo générée, en modifiant le conditionnement positif et négatif en conséquence.
 
 ## Entrées

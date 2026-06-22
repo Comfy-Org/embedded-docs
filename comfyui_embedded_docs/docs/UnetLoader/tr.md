@@ -1,3 +1,5 @@
+# Difüzyon Modeli Yükle
+
 UNETLoader düğümü, U-Net modellerini ada göre yüklemek için tasarlanmış olup, sistem içinde önceden eğitilmiş U-Net mimarilerinin kullanımını kolaylaştırır.
 
 Bu düğüm, `ComfyUI/models/diffusion_models` klasöründe bulunan modelleri algılayacaktır.

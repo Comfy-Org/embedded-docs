@@ -1,3 +1,5 @@
+# Hunyuan3D : Topologie intelligente
+
 Ce nœud effectue une retopologie intelligente sur un modèle 3D, créant automatiquement un nouveau maillage plus propre avec un nombre de polygones optimisé. Il se connecte à une API Tencent Hunyuan 3D pour traiter le modèle, prenant en charge les formats de fichier GLB et OBJ jusqu'à 200 Mo. Le nœud renvoie le modèle traité sous forme de fichier OBJ.
 
 ## Entrées

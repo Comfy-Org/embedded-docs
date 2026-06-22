@@ -1,3 +1,5 @@
+# PhotoMakerEncode
+
 Le nœud PhotoMakerEncode traite des images et du texte pour générer des données de conditionnement destinées à la génération d'images par IA. Il prend une image de référence et un prompt textuel, puis crée des embeddings qui peuvent être utilisés pour guider la génération d'images en fonction des caractéristiques visuelles de l'image de référence. Le nœud recherche spécifiquement le token "photomaker" dans le texte pour déterminer où appliquer le conditionnement basé sur l'image.
 
 ## Entrées

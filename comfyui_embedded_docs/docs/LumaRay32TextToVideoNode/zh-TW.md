@@ -1,0 +1,28 @@
+# LumaRay32TextToVideoNode
+
+此節點使用 Luma 的 Ray 3.2 模型，根據文字提示生成影片。它會將您的提示詞與影片設定發送至 Luma API，並回傳生成的影片以及一個生成 ID。
+
+## ## 輸入
+
+| 參數 | 說明 | 資料類型 | 必要 | 範圍 |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | 用於影片生成的文字提示。 | STRING | 是 | 1-6000 個字元 |
+| `aspect_ratio` | 生成影片的長寬比。 | STRING | 是 | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
+| `resolution` | 影片的輸出解析度（預設值："720p"）。 | STRING | 是 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `duration` | 生成影片的長度。 | STRING | 是 | `"5s"`<br>`"10s"` |
+| `loop` | 使影片無縫循環播放。僅在長度為 5 秒時可用。 | BOOLEAN | 否 | True/False（預設值：False） |
+| `seed` | 用於可重複生成的隨機種子。 | INT | 否 | 0 至 2147483647 |
+
+**注意：** `loop` 參數僅能在 `duration` 設定為 "5s" 時啟用。如果您選擇 "10s" 長度並啟用循環功能，節點將會回傳錯誤。
+
+## ## 輸出
+
+| 輸出名稱 | 說明 | 資料類型 |
+|-------------|-------------|-----------|
+| `VIDEO` | 生成的影片檔案。 | VIDEO |
+| `generation_id` | 影片生成請求的唯一識別碼。 | STRING |
+
+> 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32TextToVideoNode/zh-TW.md)
+
+---
+**Source fingerprint (SHA-256):** `04358a872530e5a2622bf0f148a694f2c707ce8535586d8f860bdf9911e1fa6a`

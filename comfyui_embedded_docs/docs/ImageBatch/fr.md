@@ -1,3 +1,5 @@
+# Images en lot
+
 Le nœud `ImageBatch` est conçu pour combiner deux images en un seul lot. Si les dimensions des images ne correspondent pas, il redimensionne automatiquement la seconde image pour qu'elle corresponde aux dimensions de la première avant de les combiner.
 
 ## Entrées

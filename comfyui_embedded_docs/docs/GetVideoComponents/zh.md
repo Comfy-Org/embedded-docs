@@ -1,3 +1,5 @@
+# 获取视频元素
+
 获取视频组件节点可从视频文件中提取所有主要元素。它将视频分离为单独的帧，提取音频轨道，并提供视频的帧率信息。这样您就可以独立处理每个组件，以便进行进一步处理或分析。
 
 ## 输入
@@ -12,7 +14,7 @@
 | --- | --- | --- |
 | `音频` | 从视频中提取的单独帧，作为独立图像。 | IMAGE |
 | `帧率` | 从视频中提取的音频轨道。 | AUDIO |
-| `fps` | 视频的帧率，以每秒帧数为单位。 | FLOAT |
+| `bit_depth` | 视频的帧率，以每秒帧数为单位。 | FLOAT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/zh.md)
 

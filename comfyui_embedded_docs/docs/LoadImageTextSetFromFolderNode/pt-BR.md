@@ -1,3 +1,5 @@
+# LoadImageTextSetFromFolderNode
+
 Carrega um lote de imagens e suas respectivas legendas de texto de um diretório especificado para fins de treinamento. O nó busca automaticamente por arquivos de imagem e seus arquivos de legenda de texto associados, processa as imagens de acordo com as configurações de redimensionamento especificadas e codifica as legendas usando o modelo CLIP fornecido.
 
 ## Entradas

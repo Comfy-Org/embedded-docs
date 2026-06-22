@@ -1,3 +1,5 @@
+# Tripo: Modeli Rigle
+
 TripoRigNode, orijinal bir model görev kimliğinden (task ID) donanımlı (rigged) bir 3B model oluşturur. Tripo API'sine, Tripo spesifikasyonunu kullanarak GLB formatında animasyonlu bir donanım (rig) oluşturması için bir istek gönderir, ardından donanım oluşturma görevi tamamlanana kadar API'yi sorgular.
 
 ## Girişler

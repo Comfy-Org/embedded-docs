@@ -1,3 +1,5 @@
+# ChromaRadiance 選項
+
 ## 概述
 
 ChromaRadianceOptions 節點可讓您為 Chroma Radiance 模型配置進階設定。它會包裝現有模型，並根據 sigma 值在去噪過程中套用特定選項，從而實現對 NeRF 區塊大小及其他輻射相關參數的精細控制。

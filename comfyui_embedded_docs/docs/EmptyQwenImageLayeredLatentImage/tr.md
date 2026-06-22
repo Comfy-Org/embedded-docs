@@ -1,3 +1,5 @@
+# Boş Qwen Görsel Katmanlı Latent
+
 Boş Qwen Görüntü Katmanlı Gizli (Empty Qwen Image Layered Latent) düğümü, Qwen görüntü modelleriyle kullanılmak üzere boş, çok katmanlı bir gizli temsil oluşturur. Belirtilen sayıda katman, grup boyutu ve uzamsal boyutlarla yapılandırılmış, sıfırlarla dolu bir tensör üretir. Bu boş gizli temsil, sonraki görüntü oluşturma veya düzenleme iş akışları için bir başlangıç noktası görevi görür.
 
 ## Girişler

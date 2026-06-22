@@ -1,3 +1,5 @@
+# Carregar Checkpoint com Configuração (OBSOLETO)
+
 O nó CheckpointLoader carrega um checkpoint de modelo pré-treinado junto com seu arquivo de configuração. Ele recebe um arquivo de configuração e um arquivo de checkpoint como entradas e retorna os componentes do modelo carregado, incluindo o modelo principal, o modelo CLIP e o modelo VAE para uso no fluxo de trabalho.
 
 ## Entradas

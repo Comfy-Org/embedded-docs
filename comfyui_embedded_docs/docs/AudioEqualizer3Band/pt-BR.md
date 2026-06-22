@@ -1,3 +1,5 @@
+# Equalizador de Áudio (3 Bandas)
+
 O nó Equalizador de Áudio (3 Bandas) permite ajustar as frequências graves, médias e agudas de uma forma de onda de áudio. Ele aplica três filtros separados: um filtro *low shelf* para graves, um filtro *peaking* para médios e um filtro *high shelf* para agudos. Cada banda pode ser controlada independentemente com ajustes de ganho, frequência e largura de banda.
 
 ## Entradas

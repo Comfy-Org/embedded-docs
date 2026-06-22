@@ -1,4 +1,4 @@
-# SplatToFile3D 節點文檔
+# 建立 3D 檔案（由 Splat）
 
 ## ## 概述
 

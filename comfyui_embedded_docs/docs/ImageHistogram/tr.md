@@ -1,3 +1,5 @@
+# Görüntü Histogramı
+
 ImageHistogram düğümü, bir giriş görüntüsünün renk dağılımını analiz eder. Görüntüdeki her olası yoğunluk değerine sahip kaç piksel olduğunu gösteren grafikler olan birden fazla histogramı hesaplar ve çıktı olarak verir. Kırmızı, yeşil ve mavi renk kanalları için ayrı ayrı histogramlar, birleşik bir RGB histogramı ve standart bir parlaklık formülüne dayalı bir parlaklık histogramı oluşturur.
 
 ## Girişler

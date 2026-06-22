@@ -1,3 +1,5 @@
+# Chaîne
+
 Le nœud String offre un moyen simple de saisir et de transmettre des données textuelles dans votre flux de travail. Il prend une chaîne de caractères en entrée et renvoie la même chaîne inchangée, ce qui le rend utile pour fournir des entrées textuelles à d'autres nœuds nécessitant des paramètres de type chaîne.
 
 ## Entrées

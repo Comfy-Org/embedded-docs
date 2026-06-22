@@ -1,3 +1,5 @@
+# Model Yaması Ekle Küçültme (Kohya Deep Shrink)
+
 PatchModelAddDownscale düğümü, bir modeldeki belirli bloklara küçültme ve büyütme işlemleri uygulayarak Kohya Deep Shrink işlevselliğini gerçekleştirir. İşleme sırasında ara özelliklerin çözünürlüğünü azaltır ve ardından orijinal boyutlarına geri yükler; bu da kaliteyi korurken performansı artırabilir. Düğüm, bu ölçekleme işlemlerinin modelin yürütülmesi sırasında ne zaman ve nasıl gerçekleşeceği üzerinde hassas kontrol sağlar.
 
 ## Girişler

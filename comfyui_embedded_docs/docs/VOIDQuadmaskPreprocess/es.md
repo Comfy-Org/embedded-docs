@@ -1,4 +1,4 @@
-# Descripción General
+# VOIDQuadmaskPreprocess
 
 El nodo VOIDQuadmaskPreprocess prepara una máscara para el proceso de inpaint VOID, convirtiéndola en una "cuadrimáscara" especial de cuatro niveles. Toma una máscara de entrada, dilata opcionalmente la región primaria, y luego cuantifica los valores de la máscara en cuatro niveles distintos que representan diferentes regiones semánticas (objeto primario, superposición, área afectada y fondo). Finalmente, invierte y normaliza la máscara para que los valores de salida estén en el rango [0, 1], donde 1.0 indica el área a eliminar y 0.0 indica el área a conservar.
 

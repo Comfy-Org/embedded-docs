@@ -1,3 +1,5 @@
+# HitPaw Video Enhance
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HitPawVideoEnhance/en.md)
 
 O nó HitPaw Video Enhance utiliza uma API externa para melhorar a qualidade de vídeos. Ele aumenta a resolução de vídeos de baixa qualidade para uma resolução superior, remove artefatos visuais e reduz ruídos. O custo do processamento é calculado por segundo do vídeo de entrada.

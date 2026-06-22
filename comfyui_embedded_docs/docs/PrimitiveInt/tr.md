@@ -1,3 +1,5 @@
+# Int
+
 PrimitiveInt düğümü, iş akışınızda tam sayı değerleriyle çalışmak için basit bir yol sağlar. Bir tam sayı girişi alır ve aynı değeri çıktı olarak verir; bu sayede düğümler arasında tam sayı parametreleri iletmek veya diğer işlemler için belirli sayısal değerler ayarlamak için kullanışlıdır.
 
 ## Girişler

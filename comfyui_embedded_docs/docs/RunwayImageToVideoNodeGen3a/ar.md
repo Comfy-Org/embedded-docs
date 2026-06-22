@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة ComfyUI
+# Runway صورة إلى فيديو (Gen3a Turbo)
 
 ## عقدة تحويل الصورة إلى فيديو من Runway (Gen3a Turbo)
 

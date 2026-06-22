@@ -1,4 +1,4 @@
-# OpenAI GPT Image 節點
+# OpenAI GPT Image 2
 
 透過 OpenAI 的 GPT Image 端點同步生成影像。此節點可以根據文字提示建立新影像，或在提供輸入影像和可選遮罩時編輯現有影像。它支援多種 GPT Image 模型，包括 gpt-image-1、gpt-image-1.5 和 gpt-image-2。
 

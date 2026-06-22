@@ -1,4 +1,4 @@
-# Nœud Flux Erase
+# Flux Effacer l'image
 
 Supprime l'objet masqué d'une image et reconstruit l'arrière-plan. Peignez le masque sur ce que vous souhaitez effacer, et le nœud comble la zone avec un contenu d'arrière-plan plausible.
 

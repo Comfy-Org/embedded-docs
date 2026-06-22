@@ -1,3 +1,5 @@
+# Cargar modelo de escalado Latent
+
 El nodo LatentUpscaleModelLoader carga un modelo especializado diseñado para escalar representaciones latentes. Lee un archivo de modelo desde la carpeta designada del sistema y detecta automáticamente su tipo (720p, 1080p u otro) para instanciar y configurar la arquitectura interna correcta del modelo. El modelo cargado está listo para ser utilizado por otros nodos en tareas de superresolución en el espacio latente.
 
 ## Entradas

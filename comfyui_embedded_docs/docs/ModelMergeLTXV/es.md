@@ -1,3 +1,5 @@
+# ModelMergeLTXV
+
 El nodo ModelMergeLTXV realiza operaciones avanzadas de fusión de modelos diseñadas específicamente para arquitecturas de modelos LTXV. Permite combinar dos modelos diferentes ajustando los pesos de interpolación para diversos componentes del modelo, incluidos bloques transformadores, capas de proyección y otros módulos especializados.
 
 ## Entradas

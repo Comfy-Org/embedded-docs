@@ -1,3 +1,5 @@
+# Gizli Değişkeni Kırp
+
 LatentCrop düğümü, görüntülerin gizli (latent) temsilleri üzerinde kırpma işlemleri gerçekleştirmek için tasarlanmıştır. Kırpma boyutlarının ve konumunun belirtilmesine olanak tanıyarak, gizli uzayda hedefli değişiklikler yapılmasını sağlar.
 
 ## Girişler

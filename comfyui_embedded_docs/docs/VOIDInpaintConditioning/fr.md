@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 Le nœud VOIDInpaintConditioning prépare les données de conditionnement nécessaires à l'infilling (remplissage) avec les modèles CogVideoX. Il prend une vidéo source et un quadmask prétraité, les encode via le VAE, puis les combine en un signal de conditionnement à 32 canaux que le modèle utilise pour remplir les zones masquées.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Reconstrucción de audio Stability AI
+
 Transforma parte de una muestra de audio existente utilizando instrucciones de texto. Este nodo permite modificar secciones específicas de audio proporcionando descripciones indicativas, efectivamente "inpainting" o regenerando porciones seleccionadas mientras se preserva el resto del audio.
 
 ## Entradas

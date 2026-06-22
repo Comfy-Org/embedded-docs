@@ -1,4 +1,4 @@
-# Visão Geral
+# Anthropic Claude
 
 Gere respostas de texto a partir de um modelo Anthropic Claude. Este nó envia um prompt de texto e imagens opcionais para um modelo Claude e retorna a resposta de texto gerada.
 

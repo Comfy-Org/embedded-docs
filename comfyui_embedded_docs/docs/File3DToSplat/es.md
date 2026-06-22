@@ -1,4 +1,4 @@
-# File3DToSplat
+# Obtener Splat
 
 Este nodo convierte un archivo 3D que contiene datos de splat gaussiano en un formato de splat gaussiano que puede utilizarse en el grafo de nodos. Es compatible con los formatos de archivo PLY, SPLAT, KSPLAT y SPZ, detectando automáticamente el formato a partir del contenido del archivo.
 

@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Primeiro-Último-Frame para Vídeo
+
 Este nó utiliza o modelo Seedance 2.0 da ByteDance para gerar um vídeo. Ele cria o vídeo com base em um prompt de texto e uma imagem obrigatória do primeiro quadro. Opcionalmente, você pode fornecer uma imagem do último quadro para orientar o final da sequência de vídeo.
 
 ## Entradas

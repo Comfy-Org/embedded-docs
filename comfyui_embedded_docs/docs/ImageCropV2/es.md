@@ -1,3 +1,5 @@
+# Recorte de Imagen
+
 El nodo de Recorte de Imagen extrae una sección rectangular de una imagen de entrada. Se define la región a conservar especificando las coordenadas de su esquina superior izquierda, así como su ancho y alto. El nodo devuelve la porción recortada de la imagen original.
 
 ## Entradas

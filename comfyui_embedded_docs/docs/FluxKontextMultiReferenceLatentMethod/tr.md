@@ -1,3 +1,5 @@
+# FluxKontext Çoklu Referans Gizli Yöntemi
+
 FluxKontextMultiReferenceLatentMethod düğümü, belirli bir referans gizli değişken yöntemini ayarlayarak koşullandırma verilerini değiştirir. Seçilen yöntemi koşullandırma girişine ekler; bu, sonraki üretim adımlarında referans gizli değişkenlerinin nasıl işleneceğini etkiler. Bu düğüm deneysel olarak işaretlenmiştir ve Flux koşullandırma sisteminin bir parçasıdır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# ReplaceVideoLatentFrames
+
 ReplaceVideoLatentFrames düğümü, kaynak bir latent videodaki kareleri, hedef latent videoya belirtilen bir kare indeksinden başlayarak ekler. Kaynak latent sağlanmazsa, hedef latent değiştirilmeden döndürülür. Düğüm, negatif indekslemeyi işler ve kaynak kareler hedefe sığmazsa bir uyarı verir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# StableCascade_StageB_Conditioning
+
 O nó **StableCascade_StageB_Conditioning** prepara dados de condicionamento para a geração do Estágio B do Stable Cascade, combinando informações de condicionamento existentes com representações latentes anteriores do Estágio C. Ele modifica os dados de condicionamento para incluir as amostras latentes do Estágio C, permitindo que o processo de geração aproveite as informações anteriores para obter resultados mais coerentes.
 
 ## Entradas

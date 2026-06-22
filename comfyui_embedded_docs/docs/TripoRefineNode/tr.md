@@ -1,3 +1,5 @@
+# Tripo: Taslak Modeli İyileştir
+
 TripoRefineNode, özellikle v1.4 Tripo modelleri tarafından oluşturulan taslak 3B modelleri iyileştirir. Bir model görev kimliği alır ve Tripo API'si aracılığıyla işleyerek modelin geliştirilmiş bir sürümünü oluşturur. Bu düğüm, yalnızca Tripo v1.4 modelleri tarafından üretilen taslak modellerle çalışmak üzere tasarlanmıştır.
 
 ## Girişler

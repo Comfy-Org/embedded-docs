@@ -1,3 +1,5 @@
+# CLIPTextEncodeSD3
+
 El nodo CLIPTextEncodeSD3 procesa entradas de texto para modelos Stable Diffusion 3 codificando múltiples indicaciones de texto utilizando diferentes modelos CLIP. Maneja tres entradas de texto separadas (`clip_g`, `clip_l` y `t5xxl`) y ofrece opciones para gestionar el relleno de texto vacío. El nodo asegura una alineación adecuada de tokens entre las diferentes entradas de texto y devuelve datos de condicionamiento adecuados para los flujos de generación SD3.
 
 ## Entradas

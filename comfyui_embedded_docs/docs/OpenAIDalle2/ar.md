@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 يقوم بإنشاء الصور بشكل متزامن عبر نقطة نهاية DALL·E 2 من OpenAI.
 

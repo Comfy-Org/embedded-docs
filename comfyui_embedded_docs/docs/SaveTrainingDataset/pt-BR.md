@@ -1,3 +1,5 @@
+# Salvar Conjunto de Dados de Treinamento
+
 Este nó salva um conjunto de dados de treinamento preparado no disco rígido do seu computador. Ele recebe dados codificados, que incluem latentes de imagem e seus respectivos condicionamentos de texto, e os organiza em vários arquivos menores chamados *shards* para facilitar o gerenciamento. O nó cria automaticamente uma pasta no diretório de saída e salva tanto os arquivos de dados quanto um arquivo de metadados descrevendo o conjunto de dados.
 
 ## Entradas

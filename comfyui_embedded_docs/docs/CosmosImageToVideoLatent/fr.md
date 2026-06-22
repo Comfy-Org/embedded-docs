@@ -1,3 +1,5 @@
+# CosmosImageVersVidéoLatent
+
 Voici la traduction de la documentation du nœud CosmosImageToVideoLatent :
 
 Le nœud CosmosImageToVideoLatent crée des représentations latentes vidéo à partir d'images d'entrée. Il génère une latente vidéo vierge et encode éventuellement des images de début et/ou de fin dans les premières et/ou dernières images de la séquence vidéo. Lorsque des images sont fournies, il crée également des masques de bruit correspondants pour indiquer quelles parties de la latente doivent être préservées lors de la génération.

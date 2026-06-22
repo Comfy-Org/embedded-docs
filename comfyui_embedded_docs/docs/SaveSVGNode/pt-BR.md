@@ -1,3 +1,5 @@
+# Salvar Nó SVG
+
 Salva arquivos SVG no disco. Este nó recebe dados SVG como entrada e os salva no diretório de saída, com incorporação opcional de metadados. O nó gerencia automaticamente a nomeação de arquivos com sufixos numéricos e pode incorporar informações do fluxo de trabalho diretamente no arquivo SVG.
 
 ## Entradas

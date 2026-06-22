@@ -1,3 +1,5 @@
+# Nano Banana Pro（Google Gemini Image）
+
 以下が翻訳結果です。
 
 GeminiImage2Node は、Google の Vertex AI Gemini モデルを使用して画像を生成または編集します。テキストプロンプトと、オプションの参照画像やファイルを API に送信し、生成された画像やテキストによる説明を返します。

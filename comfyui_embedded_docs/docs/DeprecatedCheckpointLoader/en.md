@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 The CheckpointLoader node is designed for advanced loading operations, specifically to load model checkpoints along with their configurations. It facilitates the retrieval of model components necessary for initializing and running generative models, including configurations and checkpoints from specified directories.
 
 ## Inputs

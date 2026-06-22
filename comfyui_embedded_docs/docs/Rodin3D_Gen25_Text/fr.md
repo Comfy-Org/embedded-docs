@@ -1,3 +1,5 @@
+# Rodin 3D Gen-2.5 - Texte vers 3D
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI Rodin Gen-2.5 Text :
 
 ## Aperçu

@@ -1,3 +1,5 @@
+# LaplaceScheduler
+
 Voici la traduction en français de la documentation du nœud ComfyUI `LaplaceScheduler` :
 
 Le nœud LaplaceScheduler génère une séquence de valeurs sigma suivant une distribution de Laplace pour une utilisation dans l'échantillonnage par diffusion. Il crée un échelonnement des niveaux de bruit qui diminue progressivement d'une valeur maximale à une valeur minimale, en utilisant les paramètres de la distribution de Laplace pour contrôler la progression. Ce planificateur est couramment utilisé dans les workflows d'échantillonnage personnalisés pour définir l'échelonnement du bruit des modèles de diffusion.

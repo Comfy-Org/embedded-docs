@@ -1,3 +1,5 @@
+# LTXV Reference Audio (ID-LoRA)
+
 Voici la traduction en français de la documentation du nœud LTXVReferenceAudio :
 
 Le nœud LTXV Reference Audio est utilisé pour le transfert d'identité du locuteur dans la génération audio. Il encode un clip audio de référence dans le conditionnement d'un modèle, permettant à l'audio généré d'adopter les caractéristiques vocales du locuteur. Il peut également appliquer un guidage d'identité, qui exécute une étape de traitement supplémentaire pour amplifier l'effet d'identité du locuteur.

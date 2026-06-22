@@ -1,4 +1,4 @@
-# Moonvalley Marey 影像轉影片節點
+# MoonvalleyImg2VideoNode
 
 Moonvalley Marey 影像轉影片節點使用 Moonvalley API 將參考影像轉換為影片。它接收輸入影像和文字提示，以指定的解析度、品質設定和創意控制來生成影片。此節點處理從影像上傳到影片生成和下載的完整流程。
 

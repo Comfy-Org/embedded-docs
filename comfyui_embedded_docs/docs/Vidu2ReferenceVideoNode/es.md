@@ -1,3 +1,5 @@
+# Vidu2 Generación de Video con Referencias
+
 El nodo Vidu2 de Generación de Video a partir de Referencia crea un video a partir de un mensaje de texto y múltiples imágenes de referencia. Puedes definir hasta siete sujetos, cada uno con su propio conjunto de imágenes de referencia, y hacer referencia a ellos en el mensaje usando `@subject{subject_id}`. El nodo genera un video con duración, relación de aspecto y movimiento configurables.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Composite d'image Porter-Duff
+
 Le nœud **PorterDuffImageComposite** est conçu pour effectuer la composition d'images à l'aide des opérateurs de composition Porter-Duff. Il permet de combiner des images source et de destination selon différents modes de fusion, offrant ainsi la possibilité de créer des effets visuels complexes en manipulant la transparence des images et en les superposant de manière créative.
 
 ## Entrées

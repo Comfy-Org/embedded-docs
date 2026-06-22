@@ -1,3 +1,5 @@
+# SvdImg2vidConditioning
+
 Este nó foi projetado para gerar dados de condicionamento para tarefas de geração de vídeo, especificamente adaptado para uso com modelos SVD_img2vid. Ele recebe várias entradas, incluindo imagens iniciais, parâmetros de vídeo e um modelo VAE, para produzir dados de condicionamento que podem ser usados para guiar a geração de quadros de vídeo.
 
 ## Entradas

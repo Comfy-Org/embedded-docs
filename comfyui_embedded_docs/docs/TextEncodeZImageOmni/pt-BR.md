@@ -1,3 +1,5 @@
+# TextEncodeZImageOmni
+
 O nó TextEncodeZImageOmni é um nó de condicionamento avançado que codifica um prompt de texto juntamente com imagens de referência opcionais em um formato de condicionamento adequado para modelos de geração de imagens. Ele pode processar até três imagens, opcionalmente codificando-as com um codificador de visão e/ou um VAE para produzir latentes de referência, e integra essas referências visuais ao prompt de texto usando uma estrutura de modelo específica.
 
 ## Entradas

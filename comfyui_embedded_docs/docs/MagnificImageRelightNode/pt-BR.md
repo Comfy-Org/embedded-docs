@@ -1,3 +1,5 @@
+# Magnific Reiluminar Imagem
+
 O nó Magnific Image Relight ajusta a iluminação de uma imagem de entrada. Ele pode aplicar iluminação estilística com base em um prompt de texto ou transferir as características de iluminação de uma imagem de referência opcional. O nó oferece vários controles para ajustar o brilho, contraste e o clima geral da saída final.
 
 ## Entradas

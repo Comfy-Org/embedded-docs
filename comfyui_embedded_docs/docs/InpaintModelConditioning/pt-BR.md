@@ -1,3 +1,5 @@
+# InpaintModelConditioning
+
 O nó **InpaintModelConditioning** foi projetado para facilitar o processo de condicionamento para modelos de inpaint, permitindo a integração e manipulação de diversas entradas de condicionamento para personalizar o resultado da pintura. Ele abrange uma ampla gama de funcionalidades, desde carregar checkpoints específicos de modelos e aplicar modelos de estilo ou control net, até codificar e combinar elementos de condicionamento, servindo assim como uma ferramenta abrangente para customizar tarefas de inpaint.
 
 ## Entradas

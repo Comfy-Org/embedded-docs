@@ -1,3 +1,5 @@
+# OpenAI Sora - Vídeo
+
 O nó OpenAIVideoSora2 gera vídeos usando os modelos Sora da OpenAI. Ele cria conteúdo de vídeo com base em prompts de texto e imagens de entrada opcionais, retornando a saída de vídeo gerada. O nó suporta diferentes durações e resoluções de vídeo, dependendo do modelo selecionado.
 
 **AVISO DE OBSOLESCÊNCIA:** A OpenAI deixará de fornecer a API Sora v2 em setembro de 2026. Este nó será removido do ComfyUI nessa ocasião.

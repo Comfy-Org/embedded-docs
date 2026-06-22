@@ -1,3 +1,5 @@
+# ModelBirleştirmeSDXL
+
 ModelMergeSDXL düğümü, iki SDXL modelini birleştirerek her bir modelin mimarinin farklı bölümleri üzerindeki etkisini ayarlamanıza olanak tanır. Zaman gömmeleri, etiket gömmeleri ve model yapısındaki çeşitli bloklar üzerinde her bir modelin ne kadar katkıda bulunacağını kontrol edebilirsiniz. Bu, her iki girdi modelinin özelliklerini birleştiren hibrit bir model oluşturur.
 
 ## Girdiler

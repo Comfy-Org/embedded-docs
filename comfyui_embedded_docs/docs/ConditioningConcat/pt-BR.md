@@ -1,3 +1,5 @@
+# Condicionamento (Concatenar)
+
 O nó **ConditioningConcat** foi projetado para concatenar vetores de condicionamento, especificamente mesclando o vetor 'conditioning_from' no vetor 'conditioning_to'. Esta operação é fundamental em cenários onde as informações de condicionamento de duas fontes precisam ser combinadas em uma única representação unificada.
 
 ## Entradas

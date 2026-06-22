@@ -1,4 +1,4 @@
-# SeedVR2 Çıktısını Son İşleme
+# SeedVR2PostProcessing
 
 Bu düğüm, oluşturulan görüntüyü orijinal yeniden boyutlandırılmış görüntüyle hizalar ve isteğe bağlı renk düzeltmesi uygular. SeedVR2 yükseltme işleminden gelen çıktıyı alır ve orijinal referans görüntünün renkleri ve boyutlarıyla eşleşecek şekilde ayarlar.
 

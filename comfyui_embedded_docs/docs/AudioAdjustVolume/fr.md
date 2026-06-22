@@ -1,3 +1,5 @@
+# Ajuster le Volume Audio
+
 Voici la traduction en français de la documentation du nœud AudioAdjustVolume :
 
 Le nœud AudioAdjustVolume modifie le volume sonore d'un fichier audio en appliquant des ajustements de gain en décibels (dB). Il prend une entrée audio et applique un facteur de gain basé sur le niveau de volume spécifié, où les valeurs positives augmentent le volume et les valeurs négatives le diminuent. Le nœud renvoie l'audio modifié avec la même fréquence d'échantillonnage que l'original.

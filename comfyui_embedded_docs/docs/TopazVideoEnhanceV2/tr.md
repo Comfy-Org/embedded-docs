@@ -1,4 +1,4 @@
-# Topaz Video Enhance V2
+# Topaz Video Enhance
 
 **Topaz Video Enhance V2** düğümü, Topaz Labs'ın yapay zeka modellerini kullanarak videoları yükseltmenize ve iyileştirmenize olanak tanır. Çözünürlüğü artırabilir, kare hızını enterpolasyon yoluyla ayarlayabilir ve video görüntülerinize yaratıcı veya gerçekçi iyileştirmeler uygulayarak yeni bir soluk getirebilir.
 

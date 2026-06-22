@@ -1,3 +1,5 @@
+# Vista previa de audio
+
 El nodo PreviewAudio crea una vista previa de audio temporal que se puede reproducir directamente en la interfaz. Toma datos de audio como entrada y genera un widget de vista previa, permitiendo a los usuarios escuchar salidas de audio sin guardar archivos permanentes.
 
 ## Entradas

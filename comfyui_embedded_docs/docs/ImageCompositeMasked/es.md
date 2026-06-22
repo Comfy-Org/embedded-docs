@@ -1,3 +1,5 @@
+# ImageCompositeMasked
+
 El nodo `ImageCompositeMasked` está diseñado para la composición de imágenes, permitiendo superponer una imagen de origen sobre una imagen de destino en coordenadas específicas, con opciones de redimensionamiento y enmascaramiento.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Chaîne (multiligne)
+
 Le nœud PrimitiveStringMultiline fournit un champ de saisie de texte multiligne permettant de saisir et de transmettre des valeurs de chaîne de caractères dans votre flux de travail. Il accepte une saisie de texte sur plusieurs lignes et renvoie la même valeur de chaîne sans modification. Ce nœud est utile lorsque vous avez besoin de saisir un contenu textuel plus long ou un texte formaté s'étendant sur plusieurs lignes.
 
 ## Entrées

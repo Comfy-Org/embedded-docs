@@ -1,3 +1,5 @@
+# RenormCFG
+
 Voici la traduction en français de la documentation du nœud RenormCFG :
 
 Le nœud RenormCFG modifie le processus de guidage sans classifieur (CFG) dans les modèles de diffusion en appliquant une mise à l'échelle conditionnelle et une normalisation. Il ajuste le processus de débruitage en fonction de seuils de pas de temps spécifiés et de facteurs de renormalisation pour contrôler l'influence des prédictions conditionnelles par rapport aux prédictions inconditionnelles lors de la génération d'images.

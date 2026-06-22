@@ -1,3 +1,5 @@
+# Wan 2.7 Édition Vidéo
+
 Le nœud Wan2VideoEditApi utilise le modèle Wan 2.7 pour éditer une vidéo en fonction d'instructions textuelles, d'images de référence ou d'un transfert de style. Il traite la vidéo d'entrée et génère une nouvelle vidéo selon les paramètres spécifiés, tels que la résolution, la durée et le rapport hauteur/largeur.
 
 ## Entrées

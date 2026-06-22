@@ -1,3 +1,5 @@
+# Save Animated PNG
+
 The SaveAnimatedPNG node is designed for creating and saving animated PNG images from a sequence of frames. It handles the assembly of individual image frames into a cohesive animation, allowing for customization of frame duration, looping, and metadata inclusion.
 
 ## Inputs

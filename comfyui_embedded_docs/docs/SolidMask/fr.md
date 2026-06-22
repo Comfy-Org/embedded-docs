@@ -1,3 +1,5 @@
+# SolidMask
+
 Le nœud SolidMask génère un masque uniforme avec une valeur spécifiée sur l'ensemble de sa surface. Il est conçu pour créer des masques de dimensions et d'intensité précises, utiles dans diverses tâches de traitement d'image et de masquage.
 
 ## Entrées

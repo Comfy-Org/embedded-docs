@@ -1,3 +1,5 @@
+# Luma Metinden Görüntüye
+
 Bir metin istemi ve en-boy oranına göre eşzamanlı olarak görseller oluşturur. Bu düğüm, metin açıklamalarını kullanarak görseller oluşturur ve karakter ile stil görselleri dahil olmak üzere çeşitli referans girdileri aracılığıyla görsel boyutlarını ve stilini kontrol etmenize olanak tanır.
 
 ## Girdiler

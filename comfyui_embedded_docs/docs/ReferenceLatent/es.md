@@ -1,3 +1,5 @@
+# Latente de Referencia
+
 Este nodo establece el latente guía para un modelo de edición. Toma datos de condicionamiento y una entrada latente opcional, luego modifica el condicionamiento para incluir información de latente de referencia. Si el modelo lo admite, puedes encadenar múltiples nodos ReferenceLatent para establecer múltiples imágenes de referencia.
 
 ## Entradas

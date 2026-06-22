@@ -1,3 +1,5 @@
+# CLIPTextEncodeKandinsky5
+
 ## 概述
 
 CLIPTextEncodeKandinsky5 節點用於準備與 Kandinsky 5 模型搭配使用的文字提示。它接收兩個獨立的文字輸入，使用提供的 CLIP 模型進行標記化處理，並將其組合成單一的條件化輸出。此輸出將用於引導影像生成過程。

@@ -1,3 +1,5 @@
+# Unir lista de mosaicos en imagen
+
 Este nodo toma una lista de teselas de imagen y las fusiona nuevamente en una sola imagen más grande. Está diseñado para reconstruir una imagen que previamente se dividió en una cuadrícula de teselas superpuestas, utilizando una técnica de mezcla ponderada para crear un resultado final sin costuras.
 
 ## Entradas

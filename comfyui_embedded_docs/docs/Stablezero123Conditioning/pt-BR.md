@@ -1,3 +1,5 @@
+# Stablezero123Conditioning
+
 Este nó foi projetado para processar e condicionar dados para uso em modelos StableZero123, focando na preparação da entrada em um formato específico que seja compatível e otimizado para esses modelos.
 
 ## Entradas

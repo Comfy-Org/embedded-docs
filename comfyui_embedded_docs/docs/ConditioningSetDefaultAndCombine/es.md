@@ -1,3 +1,5 @@
+# ConditioningSetDefaultAndCombine
+
 Este nodo combina una entrada de condicionamiento primaria con una entrada de condicionamiento predeterminada mediante un sistema basado en hooks. Fusiona las dos fuentes de condicionamiento en una única salida, permitiendo que el condicionamiento predeterminado sirva como respaldo o base cuando el condicionamiento primario está incompleto.
 
 ## Entradas

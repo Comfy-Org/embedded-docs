@@ -1,3 +1,5 @@
+# Charger un Jeu de Données Images et Textes depuis un Dossier
+
 Ce nœud charge un ensemble de données d'images et leurs légendes textuelles correspondantes à partir d'un dossier spécifié. Il recherche les fichiers image et cherche automatiquement les fichiers `.txt` correspondants portant le même nom de base pour les utiliser comme légendes. Le nœud prend également en charge une structure de dossiers spécifique où les sous-dossiers peuvent être nommés avec un préfixe numérique (comme `10_nom_dossier`) pour indiquer que les images qu'ils contiennent doivent être répétées plusieurs fois dans la sortie.
 
 ## Entrées

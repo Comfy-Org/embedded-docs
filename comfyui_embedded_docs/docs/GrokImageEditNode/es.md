@@ -1,3 +1,5 @@
+# Edición de imagen Grok
+
 El nodo Grok Image Edit modifica una imagen existente basándose en un prompt de texto. Utiliza la API de Grok para generar una o más imágenes nuevas que son variaciones de la entrada, guiadas por tu descripción.
 
 ## Entradas

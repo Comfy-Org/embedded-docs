@@ -1,3 +1,5 @@
+# EpsilonScaling
+
 Implements the Epsilon Scaling method from the research paper "Elucidating the Exposure Bias in Diffusion Models." This method improves sample quality by scaling the predicted noise during the sampling process. It uses a uniform schedule to mitigate exposure bias in diffusion models.
 
 ## Inputs

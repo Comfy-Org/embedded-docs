@@ -1,3 +1,5 @@
+# Salvar PNG Animado
+
 O nó SaveAnimatedPNG é projetado para criar e salvar imagens PNG animadas a partir de uma sequência de quadros. Ele gerencia a montagem de quadros individuais em uma animação coesa, permitindo a personalização da duração dos quadros, repetição e inclusão de metadados.
 
 ## Entradas

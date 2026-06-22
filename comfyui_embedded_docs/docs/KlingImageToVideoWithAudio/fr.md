@@ -1,3 +1,5 @@
+# Kling Image (première image) vers vidéo avec audio
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Le nœud Kling Image (Première image) vers Vidéo avec Audio utilise le modèle d'IA Kling pour générer une courte vidéo à partir d'une seule image de départ et d'une invite textuelle. Il crée une séquence vidéo qui commence par l'image fournie et peut éventuellement inclure un son généré par l'IA pour accompagner les visuels.

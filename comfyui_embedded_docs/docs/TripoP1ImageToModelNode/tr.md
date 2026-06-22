@@ -1,3 +1,5 @@
+# Tripo P1: Görüntüden Modele
+
 ## Genel Bakış
 
 Bu düğüm, Tripo P1 API'sini kullanarak tek bir 2D görüntüyü 3D modele dönüştürür. Düşük poligonlu, oyunlara hazır ağlar (mesh) oluşturmak için optimize edilmiştir.

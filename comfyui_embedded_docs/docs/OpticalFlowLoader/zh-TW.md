@@ -1,3 +1,5 @@
+# 載入光流模型
+
 ## 概述
 
 從 `models/optical_flow/` 資料夾載入光流模型。目前僅支援 torchvision 的 RAFT-large 格式，這也是 VOIDWarpedNoise 節點所使用的模型。ComfyUI 不會自動下載光流權重檔案；您必須手動將檢查點檔案放置在 `models/optical_flow/` 目錄中。

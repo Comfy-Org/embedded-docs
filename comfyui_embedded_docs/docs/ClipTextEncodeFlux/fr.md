@@ -1,3 +1,5 @@
+# CLIPTextEncodeFlux
+
 Voici la traduction en français de la documentation du nœud `CLIPTextEncodeFlux`, en respectant vos règles :
 
 `CLIPTextEncodeFlux` est un nœud d'encodage de texte avancé conçu pour l'architecture Flux. Il traite deux entrées de texte distinctes via différents encodeurs — CLIP-L et T5XXL — et les combine avec une échelle de guidage pour produire un conditionnement unifié destiné à la génération d'images.

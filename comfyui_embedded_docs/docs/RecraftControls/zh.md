@@ -1,3 +1,5 @@
+# Recraft 控件
+
 此文档由 AI 生成。如发现任何错误或有改进建议，欢迎随时贡献！[在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftControls/en.md)
 
 创建用于自定义 Recraft 生成的 Recraft 控件。此节点允许您配置将在 Recraft 图像生成过程中使用的颜色设置。

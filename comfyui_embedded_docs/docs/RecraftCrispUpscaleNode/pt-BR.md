@@ -1,3 +1,5 @@
+# Recraft Ampliação Nítida de Imagem
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCrispUpscaleNode/en.md)
 
 Amplia imagem de forma síncrona. Aprimora uma imagem raster fornecida usando a ferramenta 'ampliação nítida', aumentando a resolução da imagem e tornando-a mais nítida e limpa.

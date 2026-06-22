@@ -1,3 +1,5 @@
+# RecraftStyleV3VectorIllustrationNode
+
 此節點用於配置 Recraft API 所使用的樣式，專門選取 `vector_illustration`（向量插圖）風格。您可以選擇性地在該類別中指定更具體的次風格。節點會輸出一個樣式配置物件，可傳遞給其他 Recraft API 節點使用。
 
 ## 輸入

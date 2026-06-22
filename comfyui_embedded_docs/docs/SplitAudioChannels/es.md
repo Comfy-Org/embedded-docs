@@ -1,3 +1,5 @@
+# Separar canales de audio
+
 El nodo SplitAudioChannels separa el audio estéreo en canales individuales izquierdo y derecho. Toma una entrada de audio estéreo con dos canales y genera dos flujos de audio separados, uno para el canal izquierdo y otro para el canal derecho.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Apply GLIGEN Text Box
+
 The `GLIGENTextBoxApply` node is designed to integrate text-based conditioning into a generative model's input, specifically by applying text box parameters and encoding them using a CLIP model. This process enriches the conditioning with spatial and textual information, facilitating more precise and context-aware generation.
 
 ## Inputs

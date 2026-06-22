@@ -1,3 +1,5 @@
+# ReescalarCFG
+
 El nodo RescaleCFG está diseñado para ajustar las escalas de condicionamiento y no condicionamiento de la salida de un modelo en función de un multiplicador especificado, con el objetivo de lograr un proceso de generación más equilibrado y controlado. Funciona reescalando la salida del modelo para modificar la influencia de los componentes condicionados y no condicionados, mejorando potencialmente el rendimiento o la calidad de la salida del modelo.
 
 ## Entradas

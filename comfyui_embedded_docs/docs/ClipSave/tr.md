@@ -1,3 +1,5 @@
+# CLIP Kaydet
+
 `CLIPSave` düğümü, bir CLIP metin kodlayıcı modelini SafeTensors formatında diske kaydeder. Gelişmiş model birleştirme iş akışları için tasarlanmıştır ve CLIP modelini, modelin iç yapısına bağlı olarak otomatik olarak bileşen parçalarına (CLIP-L, CLIP-G veya T5XXL gibi) ayırır ve her bileşeni ayrı bir dosya olarak kaydeder.
 
 ## Girdiler

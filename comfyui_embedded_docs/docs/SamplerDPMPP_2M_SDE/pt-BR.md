@@ -1,3 +1,5 @@
+# SamplerDPMPP_2M_SDE
+
 O nó SamplerDPMPP_2M_SDE cria um amostrador DPM++ 2M SDE para modelos de difusão. Este amostrador utiliza solucionadores de equações diferenciais de segunda ordem com equações diferenciais estocásticas para gerar amostras. Ele oferece diferentes tipos de solucionadores e opções de tratamento de ruído para controlar o processo de amostragem.
 
 ## Entradas

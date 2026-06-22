@@ -1,3 +1,5 @@
+# Ideogram V1
+
 Le nœud IdeogramV1 génère des images en utilisant le modèle Ideogram V1 via une API. Il prend en entrée des invites textuelles et divers paramètres de génération pour créer une ou plusieurs images selon vos instructions. Le nœud prend en charge différents formats d'image et modes de génération pour personnaliser le résultat.
 
 ## Entrées

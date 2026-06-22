@@ -1,3 +1,5 @@
+# Tronquer
+
 Le nœud StringTrim supprime les caractères d'espacement (espaces, tabulations, sauts de ligne) du début, de la fin ou des deux côtés d'une chaîne de texte. Vous pouvez choisir de couper à gauche, à droite ou des deux côtés de la chaîne. Cela est utile pour nettoyer les entrées de texte en supprimant les espaces, tabulations ou retours à la ligne indésirables.
 
 ## Entrées

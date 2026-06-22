@@ -1,3 +1,5 @@
+# Vidu Q3 Başlangıç/Bitiş Kareden Videoya Oluşturma
+
 Bu, sağlanan bir başlangıç karesi ile bitiş karesi arasında enterpolasyon yaparak, bir metin istemi rehberliğinde video oluşturan bir düğümdür. İki görüntü arasında kesintisiz bir geçiş oluşturmak için Vidu Q3 modelini kullanarak belirtilen süre ve çözünürlükte bir video üretir.
 
 ## Girişler

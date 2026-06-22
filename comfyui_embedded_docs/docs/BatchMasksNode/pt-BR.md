@@ -1,3 +1,5 @@
+# Máscaras em Lote
+
 O nó **Agrupar Máscaras** combina múltiplas entradas de máscaras individuais em um único lote. Ele aceita um número variável de entradas de máscaras e as agrupa em um único tensor de máscara em lote, permitindo o processamento em lote de máscaras em nós subsequentes.
 
 ## Entradas

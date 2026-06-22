@@ -1,4 +1,4 @@
-# TextEncodeQwenImageEditPlus 節點文檔
+# TextEncodeQwenImageEditPlus
 
 TextEncodeQwenImageEditPlus 節點處理文字提示和可選圖像，為圖像生成或編輯任務生成條件數據。它使用專門的模板來分析輸入圖像，理解文字指令應如何修改它們，然後將此信息編碼以供後續生成步驟使用。該節點最多可處理三個輸入圖像，並在提供 VAE 時可選生成參考潛在變量。
 

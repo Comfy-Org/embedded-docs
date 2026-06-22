@@ -1,3 +1,5 @@
+# PixVerse Image vers Vidéo
+
 Génère des vidéos à partir d'une image d'entrée et d'une invite textuelle. Ce nœud prend une image et crée une séquence animée en appliquant les paramètres de mouvement et de qualité spécifiés pour transformer l'image statique en une séquence animée.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Charger le Modèle d'Agrandissement Latent
+
 Le nœud LatentUpscaleModelLoader charge un modèle spécialisé conçu pour la mise à l'échelle des représentations latentes. Il lit un fichier de modèle depuis le dossier système désigné et détecte automatiquement son type (720p, 1080p ou autre) afin d'instancier et de configurer l'architecture interne appropriée du modèle. Le modèle chargé est alors prêt à être utilisé par d'autres nœuds pour des tâches de super-résolution dans l'espace latent.
 
 ## Entrées

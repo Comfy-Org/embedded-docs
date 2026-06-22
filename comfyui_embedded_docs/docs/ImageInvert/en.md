@@ -1,3 +1,5 @@
+# Invert Image Colors
+
 The `ImageInvert` node is designed to invert the colors of an image, effectively transforming each pixel's color value to its complementary color on the color wheel. This operation is useful for creating negative images or for visual effects that require color inversion.
 
 ## Inputs

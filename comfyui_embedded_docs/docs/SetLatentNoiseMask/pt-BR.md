@@ -1,3 +1,5 @@
+# Definir Máscara de Ruído Latent
+
 Este nó é projetado para aplicar uma máscara de ruído a um conjunto de amostras latentes. Ele modifica as amostras de entrada integrando uma máscara específica, alterando assim suas características de ruído.
 
 ## Entradas

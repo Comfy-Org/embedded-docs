@@ -1,3 +1,5 @@
+# Aumentar Resolução da Imagem (usando Modelo)
+
 Este nó foi projetado para aumentar a resolução de imagens usando um modelo de upscale específico. Ele gerencia eficientemente o processo de upscaling, ajustando a imagem ao dispositivo apropriado, otimizando o uso de memória e aplicando o modelo de upscale em blocos para evitar possíveis erros de falta de memória.
 
 ## Entradas

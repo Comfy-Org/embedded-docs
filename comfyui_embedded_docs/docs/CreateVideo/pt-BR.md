@@ -1,3 +1,5 @@
+# Criar Vídeo
+
 Este documento foi gerado por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateVideo/en.md)
 
 O nó Criar Vídeo gera um arquivo de vídeo a partir de uma sequência de imagens. Você pode especificar a velocidade de reprodução usando quadros por segundo e, opcionalmente, adicionar áudio ao vídeo. O nó combina suas imagens em um formato de vídeo que pode ser reproduzido com a taxa de quadros especificada.

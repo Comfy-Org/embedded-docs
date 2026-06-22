@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 ## Descripción general
 
 Este nodo genera o edita imágenes enviando un mensaje de texto a la API de Vertex AI de Google. Utiliza un modelo Gemini específico para crear imágenes nuevas o modificar las existentes según tus instrucciones.

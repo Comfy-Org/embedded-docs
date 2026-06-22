@@ -1,3 +1,5 @@
+# Draw Face Mask (MediaPipe)
+
 ## Overview
 
 This node creates a binary mask (a black and white image) based on face landmarks detected by MediaPipe. It draws filled polygon shapes for each detected face region, producing one mask per frame in a batch. When multiple faces are detected in the same frame, their masks are combined into a single mask.

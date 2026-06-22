@@ -1,3 +1,5 @@
+# Topaz Video Enhance
+
 以下が日本語翻訳です。
 
 このドキュメントは AI によって生成されました。誤りや改善の提案がありましたら、ぜひご協力ください！ [GitHub で編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazVideoEnhance/en.md)

@@ -1,3 +1,5 @@
+# Crear Hook LoRA
+
 El nodo **Create Hook LoRA** genera objetos de hook para aplicar modificaciones LoRA (Adaptación de Bajo Rango) a modelos. Carga un archivo LoRA específico y crea hooks que pueden ajustar las intensidades del modelo y CLIP, luego combina estos hooks con cualquier hook existente que se le pase. El nodo gestiona eficientemente la carga de LoRA almacenando en caché los archivos LoRA previamente cargados para evitar operaciones redundantes.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Wan22FunControlToVideo
+
 El nodo Wan22FunControlToVideo prepara las representaciones de condicionamiento y latentes para la generación de video utilizando la arquitectura del modelo Wan de video. Procesa entradas de condicionamiento positivo y negativo junto con imágenes de referencia opcionales y videos de control para crear las representaciones en el espacio latente necesarias para la síntesis de video. El nodo maneja el escalado espacial y las dimensiones temporales para generar datos de condicionamiento adecuados para los modelos de video.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# EasyCache
+
 El nodo EasyCache implementa un sistema de caché nativo para modelos con el fin de mejorar el rendimiento reutilizando pasos previamente calculados durante el proceso de muestreo. Añade la funcionalidad EasyCache a un modelo con umbrales configurables para determinar cuándo iniciar y detener el uso de la caché durante la línea de tiempo del muestreo.
 
 ## Entradas

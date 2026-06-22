@@ -1,4 +1,4 @@
-# Essayage Virtuel Flux
+# Flux Essayage Virtuel
 
 Ce nœud réalise un essayage virtuel en habillant une personne avec une image de vêtement fournie. Il utilise l'API BFL Flux VTO pour générer une image réaliste de la personne portant le vêtement spécifié.
 

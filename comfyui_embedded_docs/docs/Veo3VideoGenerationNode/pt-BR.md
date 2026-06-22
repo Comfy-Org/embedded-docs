@@ -1,3 +1,5 @@
+# Google Veo 3 Geração de Vídeo
+
 Gera vídeos a partir de descrições textuais usando a API Veo 3 do Google. Este nó suporta múltiplos modelos Veo 3, incluindo variantes rápidas e leves, e permite especificar resolução, duração e geração de áudio do vídeo.
 
 ## Entradas

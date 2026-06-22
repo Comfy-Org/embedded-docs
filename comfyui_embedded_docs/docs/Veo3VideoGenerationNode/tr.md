@@ -1,3 +1,5 @@
+# Google Veo 3 Video Oluşturma
+
 Google'ın Veo 3 API'sini kullanarak metin istemlerinden videolar oluşturur. Bu düğüm, hızlı ve hafif varyantlar dahil olmak üzere birden fazla Veo 3 modelini destekler ve video çözünürlüğü, süresi ve ses oluşturmayı belirlemenize olanak tanır.
 
 ## Girişler

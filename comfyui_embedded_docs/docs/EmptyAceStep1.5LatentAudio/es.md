@@ -1,3 +1,5 @@
+# EmptyAceStep1.5LatentAudio
+
 El nodo Empty Ace Step 1.5 Latent Audio crea un tensor latente vacío diseñado para procesamiento de audio. Genera un latente de audio silencioso con una duración y tamaño de lote específicos, que puede utilizarse como punto de partida para flujos de trabajo de generación de audio en ComfyUI. El nodo calcula la longitud del latente basándose en los segundos de entrada y una frecuencia de muestreo fija.
 
 ## Entradas

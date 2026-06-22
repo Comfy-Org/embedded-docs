@@ -1,3 +1,5 @@
+# QuadrupleCLIPLoader
+
 ## 概述
 
 Quadruple CLIP Loader（四重 CLIP 載入器）是 ComfyUI 的核心節點之一，最初為支援 HiDream I1 版本模型而新增。若您發現此節點缺失，請嘗試將 ComfyUI 更新至最新版本以確保節點支援。

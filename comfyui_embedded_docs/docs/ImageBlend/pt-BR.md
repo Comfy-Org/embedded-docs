@@ -1,3 +1,5 @@
+# Misturar Imagens
+
 O nó `ImageBlend` foi projetado para mesclar duas imagens com base em um modo de mesclagem e um fator de mesclagem especificados. Ele suporta vários modos de mesclagem, como normal, multiplicar, tela, sobreposição, luz suave e diferença, permitindo técnicas versáteis de manipulação e composição de imagens. Este nó é essencial para criar imagens compostas ao ajustar a interação visual entre duas camadas de imagem.
 
 ## Entradas

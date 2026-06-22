@@ -1,3 +1,5 @@
+# FluxKontext 多重參考潛在方法
+
 ## 概述
 
 FluxKontextMultiReferenceLatentMethod 節點透過設定特定的參考潛在方法來修改條件化資料。它將所選方法附加到條件化輸入中，影響後續生成步驟中參考潛在的處理方式。此節點標記為實驗性功能，屬於 Flux 條件化系統的一部分。

@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 Генерирует изображения синхронно через конечную точку DALL·E 2 от OpenAI.
 

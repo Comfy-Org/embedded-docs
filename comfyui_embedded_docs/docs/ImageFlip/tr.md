@@ -1,3 +1,5 @@
+# Görüntü Çevirme
+
 ImageFlip düğümü, görüntüleri farklı eksenler boyunca döndürür. Görüntüleri x ekseni boyunca dikey olarak veya y ekseni boyunca yatay olarak döndürebilir. Düğüm, seçilen yönteme göre döndürme işlemini gerçekleştirmek için torch.flip işlemlerini kullanır.
 
 ## Girişler

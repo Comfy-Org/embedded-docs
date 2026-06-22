@@ -1,3 +1,5 @@
+# EmptyMochiLatentVideo
+
 El nodo EmptyMochiLatentVideo crea un tensor de video latente vacío con dimensiones específicas. Genera una representación latente rellena de ceros que puede utilizarse como punto de partida para flujos de trabajo de generación de video. El nodo permite definir el ancho, alto, duración y tamaño de lote para el tensor de video latente.
 
 ## Entradas

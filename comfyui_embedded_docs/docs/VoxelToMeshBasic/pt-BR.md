@@ -1,3 +1,5 @@
+# VoxelToMeshBasic
+
 O nó VoxelToMeshBasic converte dados de voxel 3D em geometria de malha. Ele processa volumes de voxel aplicando um valor de limite para determinar quais partes do volume se tornam superfícies sólidas na malha resultante. O nó gera uma estrutura de malha completa com vértices e faces que pode ser utilizada para renderização e modelagem 3D.
 
 ## Entradas

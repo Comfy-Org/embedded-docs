@@ -1,3 +1,5 @@
+# ModelMergeLTXV
+
 Le nœud ModelMergeLTXV effectue des opérations avancées de fusion de modèles spécialement conçues pour les architectures de modèles LTXV. Il vous permet de fusionner deux modèles différents en ajustant les poids d'interpolation pour divers composants du modèle, notamment les blocs de transformeur, les couches de projection et d'autres modules spécialisés.
 
 ## Entrées

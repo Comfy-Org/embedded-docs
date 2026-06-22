@@ -1,3 +1,5 @@
+# Koşul Çifti Birleştir
+
 PairConditioningCombine düğümü, iki ayrı koşullandırma çiftini (her biri bir pozitif ve bir negatif koşullandırmadan oluşur) tek bir birleşik çift halinde birleştirir. İki farklı kaynaktan gelen pozitif ve negatif koşullandırmaları alır ve ComfyUI'nin dahili mantığını kullanarak birleştirir; çıktı olarak tek bir nihai pozitif ve tek bir nihai negatif koşullandırma üretir. Bu düğüm deneyseldir ve ileri düzey koşullandırma manipülasyonu iş akışları için tasarlanmıştır.
 
 ## Girişler

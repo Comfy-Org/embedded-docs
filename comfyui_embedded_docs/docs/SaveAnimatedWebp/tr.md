@@ -1,3 +1,5 @@
+# Animasyonlu WEBP Kaydet
+
 Bu düğüm, bir dizi görüntüyü animasyonlu WEBP dosyası olarak kaydetmek için tasarlanmıştır. Tek tek kareleri tutarlı bir animasyonda birleştirir, belirtilen meta verileri uygular ve kalite ve sıkıştırma ayarlarına göre çıktıyı optimize eder.
 
 ## Girişler

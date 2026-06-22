@@ -1,3 +1,5 @@
+# SkipLayerGuidanceDiT
+
 以下、英語ドキュメントを日本語に翻訳しました。
 
 スキップレイヤーを使用した別のCFGネガティブセットを用いて、詳細な構造へのガイダンスを強化します。この汎用版のSkipLayerGuidanceは、すべてのDiTモデルで使用可能であり、Perturbed Attention Guidanceに着想を得ています。元の実験的実装はSD3用に作成されました。

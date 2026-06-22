@@ -1,3 +1,5 @@
+# Topaz Video Enhance
+
 O nó Topaz Video Enhance utiliza uma API externa para melhorar a qualidade do vídeo. Ele pode aumentar a resolução do vídeo, elevar a taxa de quadros por meio de interpolação e aplicar compressão. O nó processa um vídeo MP4 de entrada e retorna uma versão aprimorada com base nas configurações selecionadas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CLIPMergeSimple
+
 `CLIPMergeSimple` é um nó avançado de mesclagem de modelos usado para combinar dois codificadores de texto CLIP com base em uma proporção especificada.
 
 Este nó é especializado em mesclar dois modelos CLIP com base em uma proporção especificada, combinando efetivamente suas características. Ele aplica seletivamente patches de um modelo a outro, excluindo componentes específicos como IDs de posição e escala logit, para criar um modelo híbrido que combina características de ambos os modelos de origem.

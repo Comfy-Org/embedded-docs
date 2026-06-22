@@ -1,3 +1,5 @@
+# Gizli Değişkeni Çevir
+
 LatentFlip düğümü, gizli temsilleri dikey veya yatay olarak çevirerek manipüle etmek için tasarlanmıştır. Bu işlem, gizli uzayın dönüştürülmesine olanak tanıyarak veri içinde yeni varyasyonlar veya perspektifler ortaya çıkarabilir.
 
 ## Girişler

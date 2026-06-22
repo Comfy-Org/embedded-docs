@@ -1,3 +1,5 @@
+# Carregar Conjunto de Dados de Treinamento
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
 
 Este nó carrega um conjunto de dados de treinamento codificado que foi previamente salvo em disco. Ele procura e lê todos os arquivos de fragmentos de dados de uma pasta especificada dentro do diretório de saída do ComfyUI e, em seguida, retorna os vetores latentes combinados e os dados de condicionamento para uso em fluxos de trabalho de treinamento.

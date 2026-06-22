@@ -1,4 +1,4 @@
-# ByteDance 图像节点
+# 字节跳动图片
 
 此文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎随时贡献！[在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageNode/en.md)
 

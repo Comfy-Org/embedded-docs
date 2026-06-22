@@ -1,3 +1,5 @@
+# Carregar Checkpoint
+
 ## Visão Geral
 
 Carrega um arquivo de checkpoint de modelo de difusão e o decompõe em três componentes principais: o modelo principal usado para remoção de ruído de latentes, o codificador de texto CLIP e o codificador/decodificador de imagem VAE. Este nó detecta automaticamente todos os arquivos de modelo na pasta `ComfyUI/models/checkpoints` e quaisquer caminhos adicionais configurados no seu arquivo `extra_model_paths.yaml`.

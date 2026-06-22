@@ -1,3 +1,5 @@
+# KatmanAtlamaRehberliğiDiTBasit
+
 SkipLayerGuidanceDiT düğümünün, gürültü giderme işlemi sırasında yalnızca koşulsuz geçişi değiştiren basit sürümü. Bu düğüm, belirtilen zamanlama ve katman parametrelerine göre koşulsuz geçiş sırasında belirli katmanları seçmeli olarak atlayarak DiT (Difüzyon Transformer) modellerindeki belirli transformer katmanlarına atlama katmanı yönlendirmesi uygular.
 
 ## Girişler

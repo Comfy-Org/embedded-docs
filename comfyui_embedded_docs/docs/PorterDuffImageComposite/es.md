@@ -1,3 +1,5 @@
+# Composición de Imagen Porter-Duff
+
 El nodo PorterDuffImageComposite está diseñado para realizar composición de imágenes utilizando los operadores de composición Porter-Duff. Permite la combinación de imágenes de origen y destino según varios modos de fusión, facilitando la creación de efectos visuales complejos al manipular la transparencia de las imágenes y superponerlas de formas creativas.
 
 ## Entradas

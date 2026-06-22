@@ -1,3 +1,5 @@
+# KarrasZamanlayıcı
+
 KarrasScheduler düğümü, Karras ve diğerleri (2022) gürültü planlamasına dayalı bir dizi gürültü seviyesi (sigma) oluşturmak için tasarlanmıştır. Bu planlayıcı, üretken modellerdeki yayılma sürecini kontrol etmek için kullanışlıdır ve üretim sürecinin her adımında uygulanan gürültü seviyelerinde ince ayarlı düzenlemeler yapılmasına olanak tanır.
 
 ## Girişler

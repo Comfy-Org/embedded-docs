@@ -1,3 +1,5 @@
+# LTXVAddGuide
+
 Le nœud **LTXVAddGuide** ajoute un guidage de conditionnement vidéo aux séquences latentes en encodant des images ou vidéos d'entrée et en les intégrant comme images clés dans les données de conditionnement. Il traite l'entrée via un encodeur VAE et place stratégiquement les latents résultants à des positions de trame spécifiées, tout en mettant à jour les conditionnements positif et négatif avec les informations des images clés. Le nœud gère les contraintes d'alignement des trames et permet de contrôler la force de l'influence du conditionnement.
 
 ## Entrées

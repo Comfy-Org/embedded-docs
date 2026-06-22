@@ -1,4 +1,4 @@
-# Pre-Procesar Entrada SeedVR2
+# SeedVR2Preprocess
 
 Este nodo rellena una imagen redimensionada para prepararla para el modelo SeedVR2. Elimina el canal alfa durante el procesamiento, el cual es restaurado posteriormente por el nodo complementario Post-Procesar Salida SeedVR2 utilizando la imagen redimensionada original.
 

@@ -1,3 +1,5 @@
+# ColorTransfer
+
 **Renk Aktarımı (ColorTransfer)**
 
 Renk Aktarımı düğümü, hedef görüntünün renk paletini bir referans görüntünün renkleriyle eşleşecek şekilde ayarlar. Parlaklık, kontrast ve renk tonu dağılımı gibi renk özelliklerini analiz etmek ve referanstan hedefe aktarmak için farklı matematiksel algoritmalar kullanır. Bu, birden çok görüntüde görsel tutarlılık oluşturmak veya belirli bir renk derecelendirmesi uygulamak için kullanışlıdır.

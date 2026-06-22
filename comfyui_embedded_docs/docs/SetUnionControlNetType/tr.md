@@ -1,3 +1,5 @@
+# BileşimControlNetTürüAyarla
+
 SetUnionControlNetType düğümü, koşullandırma için kullanılacak kontrol ağının türünü belirlemenizi sağlar. Mevcut bir kontrol ağını alır ve seçiminize göre kontrol türünü ayarlayarak, belirtilen tür yapılandırmasına sahip değiştirilmiş bir kopyasını oluşturur.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Görüntüyü Büyüt
+
 ImageScale düğümü, görüntüleri belirli boyutlara yeniden boyutlandırmak için tasarlanmış olup, çeşitli büyütme yöntemleri ve yeniden boyutlandırılan görüntüyü kırpma olanağı sunar. Görüntü büyütme ve kırpma işlemlerinin karmaşıklığını soyutlayarak, kullanıcı tanımlı parametrelere göre görüntü boyutlarını değiştirmek için basit bir arayüz sağlar.
 
 ## Girişler

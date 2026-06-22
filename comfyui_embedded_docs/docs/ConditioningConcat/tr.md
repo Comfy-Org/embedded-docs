@@ -1,3 +1,5 @@
+# Koşullandırma (Birleştir)
+
 ConditioningConcat düğümü, koşullandırma vektörlerini birleştirmek, özellikle 'conditioning_from' vektörünü 'conditioning_to' vektörüne eklemek için tasarlanmıştır. Bu işlem, iki kaynaktan gelen koşullandırma bilgilerinin tek bir birleşik temsilde birleştirilmesi gereken senaryolarda temel bir rol oynar.
 
 ## Girişler

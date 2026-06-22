@@ -1,4 +1,4 @@
-# Aplicar Condicionamento SeedVR2
+# SeedVR2Conditioning
 
 Este nó constrói condicionamentos positivo e negativo a partir de um latente VAE para uso com o modelo SeedVR2. Ele prepara os dados de condicionamento que orientam o processo de geração de imagem ou vídeo.
 

@@ -1,3 +1,5 @@
+# Janelas de Contexto (Manual)
+
 Aqui está a tradução da documentação para português brasileiro, seguindo todas as regras estabelecidas:
 
 O nó Context Windows (Manual) permite configurar manualmente janelas de contexto para modelos durante a amostragem. Ele cria segmentos de contexto sobrepostos com comprimento, sobreposição e padrões de agendamento especificados para processar dados em partes gerenciáveis, mantendo a continuidade entre os segmentos. Este nó fornece opções avançadas para controlar como as janelas de contexto são aplicadas, incluindo embaralhamento de ruído, retenção de condicionamento e correção de janela causal.

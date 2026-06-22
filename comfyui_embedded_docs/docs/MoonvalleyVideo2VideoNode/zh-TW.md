@@ -1,4 +1,4 @@
-# Moonvalley Marey 影片轉影片節點
+# MoonvalleyVideo2VideoNode
 
 Moonvalley Marey 影片轉影片節點可根據文字描述，將輸入影片轉換為新的影片。它使用 Moonvalley API 生成符合提示詞的影片，同時保留原始影片中的動作或姿態特徵。您可以透過文字提示詞和各種生成參數來控制輸出影片的風格和內容。
 

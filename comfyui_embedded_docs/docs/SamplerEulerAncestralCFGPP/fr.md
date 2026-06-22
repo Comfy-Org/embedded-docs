@@ -1,3 +1,5 @@
+# SamplerEulerAncestralCFG++
+
 Le nœud `SamplerEulerAncestralCFGPP` crée un échantillonneur utilisant la méthode Euler Ancestrale avec guidage sans classifieur (CFG++) pour la génération d'images. Cet échantillonneur combine des techniques d'échantillonnage ancestrales avec un conditionnement par guidage afin de produire des variations d'images diversifiées tout en maintenant la cohérence, et permet un réglage fin via des paramètres contrôlant le bruit et les ajustements de pas.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# LTXVRehberEkle
+
 LTXVAddGuide düğümü, giriş görüntülerini veya videolarını kodlayarak ve bunları kare anahtarları olarak koşullandırma verilerine dahil ederek, latent dizilere video koşullandırma yönlendirmesi ekler. Girişi bir VAE kodlayıcı aracılığıyla işler ve ortaya çıkan latentleri, belirtilen kare konumlarına stratejik olarak yerleştirirken, hem pozitif hem de negatif koşullandırmayı kare anahtarı bilgileriyle günceller. Düğüm, kare hizalama kısıtlamalarını yönetir ve koşullandırma etkisinin gücü üzerinde kontrol sağlar.
 
 ## Girişler

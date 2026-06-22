@@ -1,4 +1,4 @@
-# Vista Previa 3D (Avanzada)
+# Vista previa 3D (Avanzado)
 
 Este nodo proporciona una vista previa avanzada de modelos 3D con salida de información de cámara y modelo. Guarda el modelo 3D en un archivo temporal y lo muestra en la interfaz de usuario, mientras también transmite los datos del modelo, la información de la cámara y las dimensiones del viewport para su procesamiento posterior.
 

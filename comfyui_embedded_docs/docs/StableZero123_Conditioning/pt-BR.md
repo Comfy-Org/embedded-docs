@@ -1,3 +1,5 @@
+# StableZero123_Conditioning
+
 O nó **StableZero123_Conditioning** processa uma imagem de entrada e ângulos de câmera para gerar dados de condicionamento e representações latentes para geração de modelos 3D. Ele utiliza um modelo de visão CLIP para codificar as características da imagem, combina essas características com informações de incorporação da câmera baseadas nos ângulos de elevação e azimute, e produz condicionamentos positivo e negativo, juntamente com uma representação latente para tarefas de geração 3D subsequentes.
 
 ## Entradas

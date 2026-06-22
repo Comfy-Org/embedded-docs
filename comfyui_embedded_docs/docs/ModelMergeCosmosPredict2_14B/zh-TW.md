@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_14B
+
 ModelMergeCosmosPredict2_14B 節點透過混合兩個 AI 模型的內部元件來合併它們。它讓您能夠精確控制第二個模型的每個部分對最終合併結果的影響程度，透過為特定層級和元件設定可調整的權重值來實現。
 
 ## 輸入

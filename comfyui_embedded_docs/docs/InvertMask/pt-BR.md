@@ -1,3 +1,5 @@
+# Inverter Máscara
+
 O nó InvertMask foi projetado para inverter os valores de uma máscara fornecida, efetivamente trocando as áreas mascaradas e não mascaradas. Esta operação é fundamental em tarefas de processamento de imagem onde o foco de interesse precisa ser alternado entre o primeiro plano e o fundo.
 
 ## Entradas

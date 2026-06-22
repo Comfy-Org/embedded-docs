@@ -1,3 +1,5 @@
+# Görüntüleri Yeniden Grupla
+
 RebatchImages düğümü, bir grup görseli belirtilen toplu iş boyutuna göre yeniden düzenleyerek yeni bir toplu iş yapılandırması oluşturmak üzere tasarlanmıştır. Bu işlem, toplu işlemlerde görsel verilerinin yönetilmesi ve optimize edilmesi için önemlidir; görsellerin verimli bir şekilde işlenmesi amacıyla istenen toplu iş boyutuna göre gruplandırılmasını sağlar.
 
 ## Girişler

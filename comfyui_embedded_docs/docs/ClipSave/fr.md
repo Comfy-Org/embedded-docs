@@ -1,3 +1,5 @@
+# CLIPSave
+
 Le nœud `CLIPSave` enregistre un modèle d'encodeur de texte CLIP sur le disque au format SafeTensors. Il est conçu pour les workflows avancés de fusion de modèles et sépare automatiquement le modèle CLIP en ses composants (tels que CLIP-L, CLIP-G ou T5XXL) en fonction de la structure interne du modèle, enregistrant chaque composant dans un fichier séparé.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Görüntü Birleştirme
+
 Bu düğüm, iki görüntüyü belirtilen bir yönde (yukarı, aşağı, sol, sağ) birleştirmenize olanak tanır; boyut eşleştirme ve görüntüler arası boşluk desteği sunar.
 
 ## Girişler

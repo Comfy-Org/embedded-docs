@@ -1,3 +1,5 @@
+# Composite Latent
+
 Le nœud LatentComposite est conçu pour fusionner ou combiner deux représentations latentes en une seule sortie. Ce processus est essentiel pour créer des images composites ou des caractéristiques en combinant les propriétés des entrées latentes de manière contrôlée.
 
 ## Entrées

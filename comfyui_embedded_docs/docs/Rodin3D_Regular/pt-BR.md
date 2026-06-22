@@ -1,3 +1,5 @@
+# Rodin 3D Gerar - Geração Regular
+
 O nó Rodin 3D Regular gera ativos 3D usando a API Rodin. Ele recebe imagens de entrada e as processa através do serviço Rodin para criar modelos 3D. O nó gerencia todo o fluxo de trabalho, desde a criação da tarefa até o download dos arquivos finais do modelo 3D.
 
 ## Entradas

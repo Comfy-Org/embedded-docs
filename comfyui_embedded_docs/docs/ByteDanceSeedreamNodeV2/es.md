@@ -1,4 +1,4 @@
-# Descripción General
+# ByteDance Seedream 4.5 & 5.0
 
 Este nodo genera o edita imágenes utilizando los modelos Seedream de ByteDance (versiones 4.0, 4.5 y 5.0 Lite). Puede crear nuevas imágenes a partir de un texto descriptivo o editar imágenes existentes proporcionando imágenes de referencia, con soporte para resoluciones de hasta 4K.
 

@@ -1,3 +1,5 @@
+# Cond Définir Propriétés Combinaison
+
 Le nœud `ConditioningSetPropertiesAndCombine` modifie les données de conditionnement en appliquant les propriétés d'une nouvelle entrée de conditionnement à une entrée de conditionnement existante. Il combine les deux ensembles de conditionnement tout en contrôlant la force du nouveau conditionnement et en spécifiant comment la zone de conditionnement doit être appliquée.
 
 ## Entrées

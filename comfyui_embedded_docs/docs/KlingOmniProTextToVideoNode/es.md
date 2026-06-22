@@ -1,3 +1,5 @@
+# Kling Omni Texto a Video (Pro)
+
 Este nodo utiliza el modelo Kling AI más reciente para generar un video a partir de una descripción textual. Envía tu indicación a una API remota y devuelve el video generado. El nodo te permite controlar la duración, la forma, la calidad e incluso crear guiones gráficos de múltiples tomas.
 
 ## Entradas

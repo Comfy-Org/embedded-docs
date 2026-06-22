@@ -1,3 +1,5 @@
+# Extensión de video Vidu
+
 El nodo ViduExtendVideoNode genera fotogramas adicionales para extender la duración de un video existente. Utiliza un modelo de IA específico para crear una continuación fluida basada en el video de origen y una descripción textual opcional.
 
 ## Entradas

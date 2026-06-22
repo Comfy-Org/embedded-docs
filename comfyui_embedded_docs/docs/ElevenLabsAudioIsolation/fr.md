@@ -1,3 +1,5 @@
+# ElevenLabs Isolation de Voix
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsAudioIsolation/en.md)
 
 Le nœud d'isolation vocale ElevenLabs supprime le bruit de fond d'un fichier audio, en isolant les voix ou la parole. Il envoie l'audio à l'API ElevenLabs pour traitement et renvoie l'audio nettoyé.

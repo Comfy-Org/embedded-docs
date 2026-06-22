@@ -1,3 +1,5 @@
+# LoadImageSetFromFolderNode
+
 The LoadImageSetFromFolderNode loads multiple images from a specified folder directory for training purposes. It automatically detects common image formats and can optionally resize the images using different methods before returning them as a batch.
 
 ## Inputs

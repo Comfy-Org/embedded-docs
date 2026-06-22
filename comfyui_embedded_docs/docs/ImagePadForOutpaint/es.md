@@ -1,3 +1,5 @@
+# Rellenar Imagen para Pintar Fuera
+
 Este nodo está diseñado para preparar imágenes para el proceso de outpainting añadiendo relleno alrededor de ellas. Ajusta las dimensiones de la imagen para garantizar la compatibilidad con los algoritmos de outpainting, facilitando la generación de áreas extendidas más allá de los límites originales.
 
 ## Inputs

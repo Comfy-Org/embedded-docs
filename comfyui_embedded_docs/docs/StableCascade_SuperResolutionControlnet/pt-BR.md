@@ -1,3 +1,5 @@
+# StableCascade_SuperResolutionControlnet
+
 O nó **StableCascade_SuperResolutionControlnet** prepara entradas para o processamento de super-resolução do Stable Cascade. Ele recebe uma imagem de entrada e a codifica usando um VAE para criar a entrada do controlnet, enquanto também gera representações latentes placeholder para o estágio C e o estágio B do pipeline do Stable Cascade.
 
 ## Entradas

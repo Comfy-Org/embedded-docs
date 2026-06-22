@@ -1,3 +1,5 @@
+# Canny
+
 Extrae todas las líneas de borde de las fotos, como si usaras un bolígrafo para delinear una foto, dibujando los contornos y los límites de los detalles de los objetos.
 
 ## Principio de Funcionamiento

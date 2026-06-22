@@ -1,3 +1,5 @@
+# DividirSigmas
+
 El nodo SplitSigmas está diseñado para dividir una secuencia de valores sigma en dos partes basándose en un paso especificado. Esta funcionalidad es crucial para operaciones que requieren un manejo o procesamiento diferente de las partes inicial y posterior de la secuencia sigma, permitiendo una manipulación más flexible y dirigida de estos valores.
 
 ## Entradas

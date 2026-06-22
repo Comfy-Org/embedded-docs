@@ -1,3 +1,5 @@
+# OrientaciónSaltarCapaDiTSimple
+
 Versión simplificada del nodo SkipLayerGuidanceDiT que solo modifica el paso incondicional durante el proceso de eliminación de ruido. Este nodo aplica guía de salto de capas a capas específicas del transformador en modelos DiT (Diffusion Transformer) omitiendo selectivamente ciertas capas durante el paso incondicional según los parámetros de temporización y capas especificados.
 
 ## Entradas

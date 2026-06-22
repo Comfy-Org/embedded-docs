@@ -1,3 +1,5 @@
+# Recraft Style - Image réaliste
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/en.md)
 
 Ce nœud crée une configuration de style pour générer des images réalistes à l'aide de l'API Recraft. Il sélectionne le style `realistic_image` et vous permet de choisir un sous-style optionnel pour affiner l'apparence du résultat.

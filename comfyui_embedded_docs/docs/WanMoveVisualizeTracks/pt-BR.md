@@ -1,3 +1,5 @@
+# WanMoveVisualizeTracks
+
 O nó WanMoveVisualizeTracks sobrepõe dados de rastreamento de movimento em uma sequência de imagens ou quadros de vídeo. Ele desenha representações visuais dos pontos rastreados, incluindo seus caminhos de movimento e posições atuais, tornando os dados de movimento visíveis e mais fáceis de analisar.
 
 ## Entradas

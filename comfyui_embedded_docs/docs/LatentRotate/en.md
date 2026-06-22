@@ -1,3 +1,5 @@
+# Rotate Latent
+
 The LatentRotate node is designed to rotate latent representations of images by specified angles. It abstracts the complexity of manipulating latent space to achieve rotation effects, enabling users to easily transform images in a generative model's latent space.
 
 ## Inputs

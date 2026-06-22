@@ -1,3 +1,5 @@
+# Flux 1.1 [pro] Ultra Image
+
 Génère des images en utilisant Flux Pro 1.1 Ultra via API, en fonction d'une instruction textuelle et d'une résolution. Ce nœud se connecte à un service externe pour créer des images selon votre description textuelle et les dimensions spécifiées.
 
 ## Entrées

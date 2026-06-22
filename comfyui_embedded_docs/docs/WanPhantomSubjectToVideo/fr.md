@@ -1,3 +1,5 @@
+# WanPhantomSubjectToVideo
+
 Le nœud WanPhantomSubjectToVideo génère du contenu vidéo en traitant des entrées de conditionnement et des images de référence optionnelles. Il crée des représentations latentes pour la génération vidéo et peut intégrer un guidage visuel à partir des images d’entrée lorsqu’elles sont fournies. Le nœud prépare les données de conditionnement avec une concaténation temporelle pour les modèles vidéo et produit un conditionnement modifié ainsi que des données vidéo latentes générées.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# WanInfiniteTalkToVideo
+
 O nó WanInfiniteTalkToVideo gera sequências de vídeo a partir de entrada de áudio. Ele utiliza um modelo de difusão de vídeo, condicionado a características de áudio extraídas de um ou dois falantes, para produzir uma representação latente de um vídeo de cabeça falante. O nó pode gerar uma nova sequência ou estender uma existente usando quadros anteriores para contexto de movimento.
 
 ## Entradas

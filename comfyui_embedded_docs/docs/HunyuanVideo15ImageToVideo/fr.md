@@ -1,3 +1,5 @@
+# HunyuanVideo15ImageToVideo
+
 Voici la traduction en français de la documentation du nœud HunyuanVideo15ImageToVideo :
 
 Le nœud HunyuanVideo15ImageToVideo prépare les données de conditionnement et d'espace latent pour la génération vidéo basée sur le modèle HunyuanVideo 1.5. Il crée une représentation latente initiale pour une séquence vidéo et peut éventuellement intégrer une image de départ ou une sortie CLIP vision pour guider le processus de génération.

@@ -1,3 +1,5 @@
+# Crop Latent
+
 The LatentCrop node is designed to perform cropping operations on latent representations of images. It allows for the specification of the crop dimensions and position, enabling targeted modifications of the latent space.
 
 ## Inputs

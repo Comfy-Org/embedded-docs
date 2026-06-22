@@ -1,3 +1,5 @@
+# CLIP Text Encode for Lumina2
+
 以下が翻訳結果です。
 
 ## 概要

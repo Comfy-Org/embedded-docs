@@ -1,3 +1,5 @@
+# EmptyChromaRadianceLatentImage
+
 O nó EmptyChromaRadianceLatentImage cria uma imagem latente em branco com dimensões especificadas para uso em fluxos de trabalho de radiância cromática. Ele gera um tensor preenchido com zeros que serve como ponto de partida para operações no espaço latente. O nó permite definir a largura, altura e tamanho do lote da imagem latente vazia.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة RecraftV4TextToImage
+# Recraft V4 تحويل النص إلى صورة
 
 تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/en.md)
 

@@ -1,3 +1,5 @@
+# Conditioning (Set Area Strength)
+
 This node is designed to modify the strength attribute of a given conditioning set, allowing for the adjustment of the influence or intensity of the conditioning on the generation process.
 
 ## Inputs

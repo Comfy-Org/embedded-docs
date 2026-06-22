@@ -1,3 +1,5 @@
+# Ideogram V1
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/IdeogramV1/en.md)
 
 O nó IdeogramV1 gera imagens usando o modelo Ideogram V1 por meio de uma API. Ele recebe prompts de texto e várias configurações de geração para criar uma ou mais imagens com base na sua entrada. O nó suporta diferentes proporções de aspecto e modos de geração para personalizar a saída.

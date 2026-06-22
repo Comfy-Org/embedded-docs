@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_14B
+
 The ModelMergeCosmosPredict2_14B node merges two AI models by blending their internal components. It gives you precise control over how much each part of the second model influences the final merged result, using adjustable weight values for specific layers and components.
 
 ## Inputs

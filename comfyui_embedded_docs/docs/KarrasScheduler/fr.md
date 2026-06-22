@@ -1,3 +1,5 @@
+# PlanificateurKarras
+
 Le nœud KarrasScheduler est conçu pour générer une séquence de niveaux de bruit (sigmas) basée sur le plan de bruit de Karras et al. (2022). Ce planificateur est utile pour contrôler le processus de diffusion dans les modèles génératifs, permettant des ajustements précis des niveaux de bruit appliqués à chaque étape du processus de génération.
 
 ## Entrées

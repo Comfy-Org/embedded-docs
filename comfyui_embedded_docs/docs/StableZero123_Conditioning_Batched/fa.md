@@ -1,3 +1,5 @@
+# StableZero123_Conditioning_Batched
+
 گره `StableZero123_Conditioning_Batched` یک تصویر ورودی را پردازش کرده و داده‌های شرطی‌سازی (conditioning) برای تولید مدل سه‌بعدی ایجاد می‌کند. این گره با استفاده از مدل‌های CLIP vision و VAE، تصویر را کدگذاری کرده و سپس بر اساس زوایای ارتفاع (elevation) و آزیموت (azimuth)، جاسازی‌های دوربین (camera embeddings) را تولید می‌کند تا شرطی‌سازی مثبت و منفی به همراه نمایش‌های نهفته (latent representations) برای پردازش دسته‌ای (batch processing) ایجاد کند.
 
 ## ورودی‌ها

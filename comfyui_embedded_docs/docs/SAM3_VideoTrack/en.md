@@ -1,3 +1,5 @@
+# Run SAM3 Video Track
+
 ## Overview
 
 Track objects across video frames using SAM3's memory-based tracker. This node processes a sequence of video frames and maintains object identities across frames, using either initial masks or text prompts to define what to track.

@@ -1,3 +1,5 @@
+# Recraft Cor RGB
+
 Crie uma cor Recraft especificando valores individuais de vermelho, verde e azul. Este nó recebe valores inteiros RGB (0-255) e os converte em um formato de cor Recraft que pode ser usado em outras operações Recraft. Você também pode, opcionalmente, fornecer uma cadeia de cores Recraft existente para estendê-la com a nova cor.
 
 ## Entradas

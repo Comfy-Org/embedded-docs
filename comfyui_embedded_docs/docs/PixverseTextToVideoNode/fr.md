@@ -1,3 +1,5 @@
+# PixVerse Texte en Vidéo
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI :
 
 Génère des vidéos à partir d'une invite textuelle et de divers paramètres de génération. Ce nœud crée du contenu vidéo via l'API PixVerse, permettant de contrôler le rapport hauteur/largeur, la qualité, la durée, le style de mouvement, et plus encore.

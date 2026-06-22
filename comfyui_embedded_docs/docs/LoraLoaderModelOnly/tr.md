@@ -1,3 +1,5 @@
+# SadeceModelLoRA Yükleyici
+
 Bu düğüm, `ComfyUI/models/loras` klasöründe bulunan modelleri tespit eder ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardaki modelleri de okur. Bazen, ilgili klasördeki model dosyalarını okuması için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 Bu düğüm, bir CLIP modeli gerektirmeden bir LoRA modeli yükleme konusunda uzmanlaşmıştır ve LoRA parametrelerine dayalı olarak belirli bir modeli geliştirmeye veya değiştirmeye odaklanır. LoRA parametreleri aracılığıyla modelin gücünün dinamik olarak ayarlanmasına olanak tanıyarak, model davranışı üzerinde ince ayarlı kontrol sağlar.

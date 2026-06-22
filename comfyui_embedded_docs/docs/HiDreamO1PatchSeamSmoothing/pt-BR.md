@@ -1,4 +1,4 @@
-# Visão Geral
+# Suavização de Emendas de Patches HiDream-O1
 
 Este nó reduz costuras visíveis em imagens geradas pelo modelo HiDream-O1, calculando a média da saída do modelo em múltiplas posições deslocadas da grade de patches durante a parte final do processo de amostragem. Ele funciona executando o modelo várias vezes com alinhamentos de imagem ligeiramente diferentes e combinando os resultados, o que ajuda a cancelar os artefatos semelhantes a grades que podem aparecer nas bordas dos patches.
 

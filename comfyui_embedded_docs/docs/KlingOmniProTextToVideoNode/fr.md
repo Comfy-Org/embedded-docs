@@ -1,3 +1,5 @@
+# Kling Omni Texte vers Vidéo (Pro)
+
 Ce nœud utilise le dernier modèle d'IA Kling pour générer une vidéo à partir d'une description textuelle. Il envoie votre prompt à une API distante et retourne la vidéo générée. Le nœud vous permet de contrôler la durée, le format, la qualité de la vidéo, et même de créer des storyboards multi-plans.
 
 ## Entrées

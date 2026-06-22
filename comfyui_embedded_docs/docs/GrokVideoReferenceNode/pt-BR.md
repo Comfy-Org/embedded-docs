@@ -1,3 +1,5 @@
+# Grok Referência-para-Vídeo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoReferenceNode/en.md)
 
 O nó Grok Referência-para-Vídeo gera um vídeo com base em um prompt de texto, usando até sete imagens de referência para orientar o estilo e o conteúdo da saída. Ele se conecta a uma API externa para criar o vídeo, que é então baixado e retornado.

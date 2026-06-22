@@ -1,3 +1,5 @@
+# Latent de Lote
+
 Este nó foi projetado para extrair um subconjunto específico de amostras latentes de um lote fornecido, com base no índice e comprimento do lote especificados. Ele permite o processamento seletivo de amostras latentes, facilitando operações em segmentos menores do lote para maior eficiência ou manipulação direcionada.
 
 ## Entradas

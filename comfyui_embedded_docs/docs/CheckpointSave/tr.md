@@ -1,3 +1,5 @@
+# Kontrol Noktasını Kaydet
+
 `Save Checkpoint` düğümü, eksiksiz bir Stable Diffusion modelini (UNet, CLIP ve VAE bileşenleri dahil) **.safetensors** formatında bir kontrol noktası dosyası olarak kaydetmek için tasarlanmıştır.
 
 Save Checkpoint, öncelikle model birleştirme iş akışlarında kullanılır. `ModelMergeSimple`, `ModelMergeBlocks` gibi düğümler aracılığıyla yeni bir birleştirilmiş model oluşturduktan sonra, bu düğümü kullanarak sonucu yeniden kullanılabilir bir kontrol noktası dosyası olarak kaydedebilirsiniz.

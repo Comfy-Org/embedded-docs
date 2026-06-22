@@ -1,3 +1,5 @@
+# Zaman Adımları Aralığı
+
 ConditioningTimestepsRange düğümü, üretim sürecinde koşullandırma efektlerinin ne zaman uygulanacağını kontrol etmek için üç ayrı zaman adımı aralığı oluşturur. Başlangıç ve bitiş yüzde değerlerini alır ve tüm zaman adımı aralığını (0.0 ile 1.0 arası) üç bölüme ayırır: belirtilen yüzdeler arasındaki ana aralık, başlangıç yüzdesinden önceki aralık ve bitiş yüzdesinden sonraki aralık.
 
 ## Girişler

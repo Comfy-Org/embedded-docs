@@ -1,3 +1,5 @@
+# ConditioningSetDefaultAndCombine
+
 This node combines a primary conditioning input with a default conditioning input using a hook-based system. It merges the two conditioning sources into a single output, allowing the default conditioning to serve as a fallback or base when the primary conditioning is incomplete.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# GörüntüYUV'denRGB'ye
+
 ImageYUVToRGB düğümü, YUV renk uzayındaki görüntüleri RGB renk uzayına dönüştürür. Y (parlaklık), U (mavi izdüşüm) ve V (kırmızı izdüşüm) kanallarını temsil eden üç ayrı giriş görüntüsünü alır ve renk uzayı dönüşümü kullanarak bunları tek bir RGB görüntüsünde birleştirir.
 
 ## Girişler

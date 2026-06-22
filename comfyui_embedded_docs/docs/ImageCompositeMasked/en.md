@@ -1,3 +1,5 @@
+# Image Composite Masked
+
 The `ImageCompositeMasked` node is designed for compositing images, allowing for the overlay of a source image onto a destination image at specified coordinates, with optional resizing and masking.
 
 ## Inputs

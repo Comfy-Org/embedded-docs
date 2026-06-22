@@ -1,3 +1,5 @@
+# Unir Listas de Textos
+
 Este nodo combina múltiples listas de texto en una única lista combinada. Está diseñado para recibir entradas de texto como listas y concatenarlas. El nodo registra el número total de textos en la lista combinada.
 
 ## Entradas

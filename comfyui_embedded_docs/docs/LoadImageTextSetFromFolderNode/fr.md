@@ -1,3 +1,5 @@
+# LoadImageTextSetFromFolderNode
+
 Voici la traduction de la documentation du nœud ComfyUI :
 
 Charge un lot d'images et leurs légendes textuelles correspondantes depuis un répertoire spécifié à des fins d'entraînement. Le nœud recherche automatiquement les fichiers image et leurs fichiers de légende texte associés, traite les images selon les paramètres de redimensionnement spécifiés, et encode les légendes à l'aide du modèle CLIP fourni.

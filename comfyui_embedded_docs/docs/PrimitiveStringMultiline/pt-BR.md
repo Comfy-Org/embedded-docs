@@ -1,3 +1,5 @@
+# Texto (Multilinha)
+
 O nó PrimitiveStringMultiline fornece um campo de entrada de texto multilinha para inserir e transmitir valores de string através do seu fluxo de trabalho. Ele aceita entrada de texto com várias linhas e gera o mesmo valor de string inalterado. Este nó é útil quando você precisa inserir conteúdo de texto mais longo ou texto formatado que abrange várias linhas.
 
 ## Entradas

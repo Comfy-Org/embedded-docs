@@ -1,3 +1,5 @@
+# Video Dilimle
+
 Video Slice düğümü, bir videodan belirli bir bölümü çıkarmanızı sağlar. Videoyu kırpmak için bir başlangıç zamanı ve süre tanımlayabilir veya yalnızca başlangıç karelerini atlayabilirsiniz. İstenen süre kalan videodan daha uzunsa, düğüm mevcut olanı döndürebilir veya bir hata verebilir.
 
 ## Girişler

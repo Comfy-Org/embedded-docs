@@ -1,3 +1,5 @@
+# Redimensionar Imagens pela Borda Maior
+
 O nó Redimensionar Imagens pela Borda Maior redimensiona uma ou mais imagens para que o lado mais longo corresponda a um comprimento alvo especificado. Ele determina automaticamente se a largura ou altura é maior e dimensiona a outra dimensão proporcionalmente para preservar a proporção original. Isso é útil para padronizar tamanhos de imagem com base em sua maior dimensão.
 
 ## Entradas

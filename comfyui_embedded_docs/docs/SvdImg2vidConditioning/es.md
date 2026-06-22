@@ -1,3 +1,5 @@
+# SvdImg2vidConditioning
+
 Este nodo está diseñado para generar datos de condicionamiento para tareas de generación de video, específicamente adaptado para su uso con modelos SVD_img2vid. Toma diversas entradas, incluyendo imágenes iniciales, parámetros de video y un modelo VAE, para producir datos de condicionamiento que pueden utilizarse para guiar la generación de fotogramas de video.
 
 ## Entradas

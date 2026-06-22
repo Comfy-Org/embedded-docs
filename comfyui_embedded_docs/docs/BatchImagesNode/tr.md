@@ -1,3 +1,5 @@
+# Toplu Görseller
+
 **Batch Images (Görüntü Toplama) Düğümü**
 
 Batch Images düğümü, birden fazla ayrı görüntüyü tek bir toplu iş halinde birleştirir. Değişken sayıda görüntü girişi alır ve bunları tek bir toplu görüntü tensörü olarak çıktılar, böylece sonraki düğümlerde birlikte işlenmelerine olanak tanır.

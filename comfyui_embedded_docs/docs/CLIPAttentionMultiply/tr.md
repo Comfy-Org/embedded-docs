@@ -1,3 +1,5 @@
+# CLIP Dikkat Çarpımı
+
 CLIPAttentionMultiply düğümü, CLIP modellerinde öz-dikkat katmanlarının farklı bileşenlerine çarpma faktörleri uygulayarak dikkat mekanizmasını ayarlamanıza olanak tanır. Bu düğüm, CLIP modelinin dikkat mekanizmasındaki sorgu, anahtar, değer ve çıktı projeksiyon ağırlıklarını ve biaslarını değiştirerek çalışır. Bu deneysel düğüm, belirtilen ölçekleme faktörleri uygulanmış, girdi CLIP modelinin değiştirilmiş bir kopyasını oluşturur.
 
 ## Girdiler

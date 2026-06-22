@@ -1,4 +1,4 @@
-# Descripción General
+# MoGe Renderizado
 
 Este nodo toma un paquete MOGE_GEOMETRY (generado por un nodo de estimación de profundidad/normales MoGe) y lo renderiza en un formato de imagen estándar. Puedes elegir generar un mapa de profundidad, un mapa de profundidad coloreado, un mapa de normales o una máscara.
 

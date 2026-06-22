@@ -1,3 +1,5 @@
+# Grille d'images
+
 Voici la traduction de la documentation du nœud ImageGrid :
 
 Le nœud Grille d'Images combine plusieurs images en une seule grille ou collage organisé. Il prend une liste d'images et les dispose en un nombre spécifié de colonnes, en redimensionnant chaque image pour s'adapter à une taille de cellule définie et en ajoutant un espacement optionnel entre elles. Le résultat est une seule nouvelle image contenant toutes les images d'entrée dans une disposition en grille.

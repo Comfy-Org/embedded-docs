@@ -1,3 +1,5 @@
+# Görüntüyü Alfa ile Birleştir
+
 Bu düğüm, birleştirme işlemleri için tasarlanmıştır; özellikle bir görüntüyü, karşılık gelen alfa maskesiyle birleştirerek tek bir çıktı görüntüsü üretir. Görsel içeriği şeffaflık bilgisiyle etkili bir şekilde birleştirerek, belirli alanların şeffaf veya yarı şeffaf olduğu görüntülerin oluşturulmasını sağlar.
 
 ## Girişler

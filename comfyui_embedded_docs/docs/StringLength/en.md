@@ -1,3 +1,5 @@
+# Text Length
+
 The StringLength node calculates the number of characters in a text string. It takes any text input and returns the total count of characters, including spaces and punctuation. This is useful for measuring text length or validating string size requirements.
 
 ## Inputs

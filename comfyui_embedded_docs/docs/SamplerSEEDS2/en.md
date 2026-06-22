@@ -1,3 +1,5 @@
+# SamplerSEEDS2
+
 This node provides a configurable sampler for generating images. It implements the SEEDS-2 algorithm, which is a stochastic differential equation (SDE) solver. By adjusting its parameters, you can configure it to behave like several specific samplers, including `seeds_2`, `exp_heun_2_x0`, and `exp_heun_2_x0_sde`.
 
 ## Inputs

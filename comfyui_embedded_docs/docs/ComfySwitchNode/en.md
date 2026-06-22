@@ -1,3 +1,5 @@
+# Switch
+
 The Switch node selects between two possible inputs based on a boolean condition. It outputs the `on_true` input when the `switch` is enabled, and the `on_false` input when the `switch` is disabled. This allows you to create conditional logic and choose different data paths in your workflow.
 
 ## Inputs

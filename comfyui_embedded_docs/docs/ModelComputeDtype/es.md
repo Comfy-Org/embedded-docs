@@ -1,3 +1,5 @@
+# ModeloCalcularDtype
+
 El nodo `ModelComputeDtype` cambia el tipo de datos computacional (precisión) utilizado por un modelo durante el procesamiento. Crea una copia del modelo de entrada y aplica la configuración de precisión seleccionada, lo que puede ayudar a optimizar el uso de memoria y el rendimiento según tu hardware. Esto es útil para depurar y probar diferentes configuraciones de precisión.
 
 ## Entradas

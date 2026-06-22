@@ -1,3 +1,5 @@
+# OpenAI ChatGPT
+
 Ce nœud génère des réponses textuelles à partir d’un modèle OpenAI. Il envoie votre invite textuelle (et éventuellement des images ou fichiers) à un modèle OpenAI et renvoie la réponse textuelle générée.
 
 ## Entrées

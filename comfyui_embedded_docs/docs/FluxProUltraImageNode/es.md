@@ -1,3 +1,5 @@
+# Flux 1.1 [pro] Ultra Image
+
 Genera imágenes usando Flux Pro 1.1 Ultra a través de API basándose en una descripción textual y resolución. Este nodo se conecta a un servicio externo para crear imágenes según tu descripción de texto y las dimensiones especificadas.
 
 ## Entradas

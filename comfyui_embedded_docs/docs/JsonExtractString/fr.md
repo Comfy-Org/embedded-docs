@@ -1,3 +1,5 @@
+# Extraire une chaîne du JSON
+
 Le nœud JsonExtractString lit une chaîne de texte contenant des données JSON et extrait la valeur associée à une clé spécifique. Il convertit la valeur extraite en une chaîne de caractères. Si le JSON est invalide, la clé est introuvable ou la valeur est nulle, le nœud renvoie une chaîne vide.
 
 ## Entrées

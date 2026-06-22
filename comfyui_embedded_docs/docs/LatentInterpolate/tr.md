@@ -1,3 +1,5 @@
+# GizliAraDeğerleme
+
 LatentInterpolate düğümü, iki latent örnek kümesi arasında belirtilen bir orana göre enterpolasyon yaparak, her iki kümenin özelliklerini harmanlayan yeni, ara bir latent örnek kümesi oluşturmak için tasarlanmıştır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Corte de Imagem
+
 O nó Image Crop extrai uma seção retangular de uma imagem de entrada. Você define a região a ser mantida especificando as coordenadas do canto superior esquerdo, sua largura e altura. O nó então retorna a porção recortada da imagem original.
 
 ## Entradas

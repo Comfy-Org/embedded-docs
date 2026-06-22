@@ -1,3 +1,5 @@
+# ReferenciaDeEstiloUSO
+
 El nodo USOStyleReference aplica parches de referencia de estilo a modelos utilizando características de imagen codificadas provenientes de la salida de CLIP vision. Crea una versión modificada del modelo de entrada incorporando información de estilo extraída de entradas visuales, lo que permite capacidades de transferencia de estilo o generación basada en referencias.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Orientação por Self-Attention
+
 O nó Self-Attention Guidance aplica orientação a modelos de difusão modificando o mecanismo de atenção durante o processo de amostragem. Ele captura pontuações de atenção das etapas de remoção de ruído incondicionais e as utiliza para criar mapas de orientação desfocados que influenciam o resultado final. Esta técnica ajuda a guiar o processo de geração aproveitando os próprios padrões de atenção do modelo.
 
 ## Entradas

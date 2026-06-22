@@ -1,3 +1,5 @@
+# QuadrupleCLIPLoader
+
 O Carregador Quádruplo de CLIP, *QuadrupleCLIPLoader*, é um dos nós centrais do ComfyUI, adicionado inicialmente para suportar o modelo da versão HiDream I1. Se você perceber que este nó está faltando, tente atualizar o ComfyUI para a versão mais recente para garantir o suporte ao nó.
 
 Ele requer 4 modelos CLIP, correspondentes aos parâmetros `clip_name1`, `clip_name2`, `clip_name3` e `clip_name4`, e fornecerá uma saída de modelo CLIP para os nós subsequentes.

@@ -1,3 +1,5 @@
+# Get Latent From Batch
+
 This node is designed to extract a specific subset of latent samples from a given batch based on the specified batch index and length. It allows for selective processing of latent samples, facilitating operations on smaller segments of the batch for efficiency or targeted manipulation.
 
 ## Inputs

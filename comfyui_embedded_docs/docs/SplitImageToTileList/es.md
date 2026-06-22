@@ -1,3 +1,5 @@
+# Dividir imagen en lista de mosaicos
+
 El nodo **Dividir Imagen en Lista de Teselas** divide una única imagen de entrada en una serie de secciones rectangulares más pequeñas y superpuestas llamadas teselas. Crea una lista por lotes de estas teselas, que pueden procesarse individualmente mediante otros nodos. Se puede especificar el tamaño de cada tesela y la cantidad de superposición entre ellas.
 
 ## Entradas

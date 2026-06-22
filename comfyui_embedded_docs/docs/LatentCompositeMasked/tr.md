@@ -1,3 +1,5 @@
+# MaskeliGizliBirleştirme
+
 LatentCompositeMasked düğümü, iki gizli temsilin (latent representation) belirtilen koordinatlarda, isteğe bağlı olarak bir maske kullanılarak daha kontrollü bir şekilde harmanlanması için tasarlanmıştır. Bu düğüm, bir görüntünün parçalarını başka bir görüntünün üzerine yerleştirerek ve kaynak görüntüyü mükemmel uyum için yeniden boyutlandırma imkanı sunarak karmaşık gizli görüntülerin oluşturulmasını sağlar.
 
 ## Girişler

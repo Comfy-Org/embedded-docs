@@ -1,3 +1,5 @@
+# Peintre
+
 Voici la traduction en français de la documentation du nœud Painter, conforme à vos règles :
 
 Le nœud Painter fournit un canevas interactif pour créer ou modifier des images et des masques directement dans ComfyUI. Il permet de démarrer avec un canevas vierge ou une image existante, de peindre dessus à l'aide d'un outil pinceau, et produit à la fois l'image résultante et un masque alpha correspondant. Le masque définit les zones peintes, qui sont ensuite composées sur l'image de base ou la couleur d'arrière-plan.

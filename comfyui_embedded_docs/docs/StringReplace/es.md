@@ -1,3 +1,5 @@
+# Reemplazar
+
 El nodo StringReplace realiza operaciones de reemplazo de texto en cadenas de entrada. Busca una subcadena específica dentro del texto de entrada y reemplaza todas sus apariciones con una subcadena diferente. Este nodo devuelve la cadena modificada con todos los reemplazos aplicados.
 
 ## Entradas

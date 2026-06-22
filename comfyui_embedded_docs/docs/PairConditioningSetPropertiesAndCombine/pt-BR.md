@@ -1,3 +1,5 @@
+# Definir Propriedades e Combinar Par de Condições
+
 O nó PairConditioningSetPropertiesAndCombine modifica e combina pares de condicionamento aplicando novos dados de condicionamento às entradas de condicionamento positivo e negativo existentes. Ele permite ajustar a intensidade do condicionamento aplicado e controlar como a área de condicionamento é definida. Este nó é particularmente útil para fluxos de trabalho avançados de manipulação de condicionamento onde é necessário mesclar múltiplas fontes de condicionamento.
 
 ## Entradas

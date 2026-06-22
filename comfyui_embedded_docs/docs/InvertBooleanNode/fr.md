@@ -1,3 +1,5 @@
+# InvertBooleanNode
+
 Ce nœud prend une seule entrée booléenne (vrai/faux) et produit la valeur opposée. Il effectue une opération NON logique, transformant `true` en `false` et `false` en `true`.
 
 ## Entrées

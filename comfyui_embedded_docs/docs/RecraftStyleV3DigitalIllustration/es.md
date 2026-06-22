@@ -1,3 +1,5 @@
+# Estilo Recraft - Ilustración Digital
+
 Este nodo configura un estilo para usar con la API de Recraft, seleccionando específicamente el estilo "digital_illustration". Permite elegir un subestilo opcional para refinar aún más la dirección artística de la imagen generada.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Set Hook Keyframes
+
 The Set Hook Keyframes node allows you to apply keyframe scheduling to existing hook groups. It takes a hook group and optionally applies keyframe timing information to control when different hooks are executed during the generation process. When keyframes are provided, the node clones the hook group and sets the keyframe timing on all hooks within the group.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Luma Texte vers Vidéo
+
 Voici la traduction en français de la documentation du nœud LumaVideoNode :
 
 Génère des vidéos de manière synchrone à partir d'une invite textuelle et de paramètres de sortie. Ce nœud crée du contenu vidéo en utilisant des descriptions textuelles et divers paramètres de génération, produisant la vidéo finale une fois le processus de génération terminé.

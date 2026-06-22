@@ -1,3 +1,5 @@
+# Redimensionar Imagen/Máscara
+
 El nodo Redimensionar Imagen/Máscara proporciona múltiples métodos para cambiar las dimensiones de una imagen o máscara de entrada. Puede escalar mediante un multiplicador, establecer dimensiones específicas, igualar el tamaño de otra entrada o ajustarse según la cantidad de píxeles, utilizando diversos métodos de interpolación para garantizar la calidad.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CLIP Text Encode (Kandinsky 5)
+
 The CLIPTextEncodeKandinsky5 node prepares text prompts for use with the Kandinsky 5 model. It takes two separate text inputs, tokenizes them using a provided CLIP model, and combines them into a single conditioning output. This output is used to guide the image generation process.
 
 ## Inputs

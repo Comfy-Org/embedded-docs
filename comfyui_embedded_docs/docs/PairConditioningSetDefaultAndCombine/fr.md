@@ -1,3 +1,5 @@
+# PairConditioningSetDefaultAndCombine
+
 Le nœud **PairConditioningSetDefaultAndCombine** définit des valeurs de conditionnement par défaut et les combine avec les données de conditionnement d'entrée. Il prend des entrées de conditionnement positif et négatif ainsi que leurs homologues par défaut, puis les traite via le système de hooks de ComfyUI pour produire des sorties de conditionnement finales intégrant les valeurs par défaut.
 
 ## Entrées

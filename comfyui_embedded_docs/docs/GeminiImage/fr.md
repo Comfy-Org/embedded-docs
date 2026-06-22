@@ -1,3 +1,5 @@
+# GeminiImage
+
 Voici la traduction en français de la documentation du nœud GeminiImage, en respectant vos règles de traduction.
 
 ---

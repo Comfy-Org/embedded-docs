@@ -1,3 +1,5 @@
+# Latent De Batch
+
 Ce nœud est conçu pour extraire un sous-ensemble spécifique d'échantillons latents d'un lot donné, en fonction de l'index et de la longueur du lot spécifiés. Il permet un traitement sélectif des échantillons latents, facilitant les opérations sur des segments plus petits du lot pour plus d'efficacité ou une manipulation ciblée.
 
 ## Entrées

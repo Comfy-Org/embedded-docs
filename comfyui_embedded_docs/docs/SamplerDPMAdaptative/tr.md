@@ -1,3 +1,5 @@
+# UyarlanabilirDPMÖrnekleyici
+
 SamplerDPMAdaptative düğümü, örnekleme işlemi sırasında adım boyutlarını otomatik olarak ayarlayan uyarlanabilir bir DPM (Difüzyon Olasılıksal Modeli) örnekleyicisi uygular. Optimum adım boyutlarını belirlemek için tolerans tabanlı hata kontrolü kullanarak hesaplama verimliliği ile örnekleme doğruluğu arasında denge kurar. Bu uyarlanabilir yaklaşım, potansiyel olarak gereken adım sayısını azaltırken kalitenin korunmasına yardımcı olur.
 
 ## Girişler

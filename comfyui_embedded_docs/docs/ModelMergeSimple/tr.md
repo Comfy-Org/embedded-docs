@@ -1,3 +1,5 @@
+# BasitModelBirleştirme
+
 ModelMergeSimple düğümü, iki modelin parametrelerini belirtilen bir orana göre harmanlayarak birleştirmek için tasarlanmıştır. Bu düğüm, her iki girdi modelinin güçlü yönlerini veya özelliklerini birleştiren hibrit modellerin oluşturulmasını kolaylaştırır.
 
 `ratio` parametresi, iki model arasındaki harmanlama oranını belirler. Bu değer 1 olduğunda çıktı modeli %100 `model1`, 0 olduğunda ise çıktı modeli %100 `model2` olur.

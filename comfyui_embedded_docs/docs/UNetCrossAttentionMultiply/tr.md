@@ -1,3 +1,5 @@
+# UNetÇaprazDikkatÇarpımı
+
 UNetCrossAttentionMultiply düğümü, bir UNet modelindeki çapraz dikkat mekanizmasına çarpma faktörleri uygular. Farklı dikkat davranışlarını ve etkilerini denemek için çapraz dikkat katmanlarının sorgu, anahtar, değer ve çıktı bileşenlerini ölçeklendirmenize olanak tanır.
 
 ## Girişler

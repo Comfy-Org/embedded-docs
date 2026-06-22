@@ -1,3 +1,5 @@
+# BoşAceAdımGizliSes
+
 EmptyAceStepLatentAudio düğümü, belirtilen sürede boş latent ses örnekleri oluşturur. Giriş saniyeleri ve ses işleme parametrelerine göre hesaplanan uzunlukta, sıfırlarla dolu bir sessiz latent ses grubu üretir. Bu düğüm, latent temsiller gerektiren ses işleme iş akışlarını başlatmak için kullanışlıdır.
 
 ## Girişler

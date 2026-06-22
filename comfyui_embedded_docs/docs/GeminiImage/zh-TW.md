@@ -1,4 +1,4 @@
-# GeminiImage 節點
+# GeminiImage
 
 GeminiImage 節點可從 Google 的 Gemini AI 模型生成文字和圖像回應。它允許您提供多模態輸入，包括文字提示、圖像和檔案，以建立連貫的文字和圖像輸出。此節點處理與最新 Gemini 模型的所有 API 通訊和回應解析。
 

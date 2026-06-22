@@ -1,3 +1,5 @@
+# Éditeur de courbe
+
 Voici la traduction de la documentation du nœud Curve Editor, conforme à vos règles :
 
 L'éditeur de courbe fournit une interface visuelle pour ajuster et affiner une courbe. Il permet de modifier la forme d'une courbe d'entrée et, en option, de visualiser sa distribution à l'aide d'un histogramme. Le nœud produit la courbe modifiée pour une utilisation ultérieure dans votre flux de travail.

@@ -1,3 +1,5 @@
+# Büyütme Modeli Yükle
+
 Bu düğüm, `ComfyUI/models/upscale_models` klasöründe bulunan modelleri tespit eder ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardaki modelleri de okur. Bazen, ilgili klasördeki model dosyalarını okuyabilmesi için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 UpscaleModelLoader düğümü, belirtilen bir dizinden yükseltme modelleri yüklemek için tasarlanmıştır. Görüntü yükseltme görevleri için yükseltme modellerinin alınmasını ve hazırlanmasını kolaylaştırarak, modellerin değerlendirme için doğru şekilde yüklenmesini ve yapılandırılmasını sağlar.

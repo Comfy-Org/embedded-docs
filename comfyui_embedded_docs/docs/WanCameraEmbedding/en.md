@@ -1,3 +1,5 @@
+# WanCameraEmbedding
+
 The WanCameraEmbedding node generates camera trajectory embeddings using Plücker embeddings based on camera motion parameters. It creates a sequence of camera poses that simulate different camera movements and converts them into embedding tensors suitable for video generation pipelines.
 
 ## Inputs

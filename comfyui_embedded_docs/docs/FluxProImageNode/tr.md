@@ -1,3 +1,5 @@
+# FluxProImageNode
+
 ## Genel Bakış
 
 Bu düğüm, metin istemi ve çözünürlüğe göre eşzamanlı olarak görseller oluşturur. Flux 1.1 Pro modelini kullanarak bir API uç noktasına istek gönderir ve oluşturulan görseli döndürmeden önce tam yanıtı bekler.

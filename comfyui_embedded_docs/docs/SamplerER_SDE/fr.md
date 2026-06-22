@@ -1,3 +1,5 @@
+# ÉchantillonneurER_SDE
+
 Voici la traduction en français de la documentation, en respectant vos règles :
 
 Le nœud SamplerER_SDE fournit des méthodes d'échantillonnage spécialisées pour les modèles de diffusion, proposant différents types de solveurs incluant les approches ER-SDE, SDE à temps inverse et ODE. Il permet de contrôler le comportement stochastique et les étapes de calcul du processus d'échantillonnage. Le nœud ajuste automatiquement les paramètres en fonction du type de solveur sélectionné pour garantir un fonctionnement correct.

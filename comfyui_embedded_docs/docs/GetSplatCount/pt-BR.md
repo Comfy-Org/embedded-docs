@@ -1,4 +1,4 @@
-# Obter Contagem de Splats
+# Obter Contagem de Splat
 
 O nó Obter Contagem de Splats retorna o número total de splats (pontos gaussianos) em um lote de splats, somado em todos os itens do lote. Ele passa os dados originais do splat inalterados, enquanto fornece uma contagem de quantos splats individuais ele contém.
 

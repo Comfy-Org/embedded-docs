@@ -1,3 +1,5 @@
+# AutogrowPrefixTestNode
+
 The AutogrowPrefixTestNode is a logic node designed to test the autogrow input feature. It accepts a dynamic number of float inputs, combines their values into a comma-separated string, and outputs that string.
 
 ## Inputs

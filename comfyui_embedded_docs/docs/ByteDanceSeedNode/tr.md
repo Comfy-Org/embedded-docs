@@ -1,3 +1,5 @@
+# ByteDance Seed
+
 ## Genel Bakış ByteDance'ın Seed 2.0 modellerini kullanarak metin yanıtları oluşturun. Çok modlu bağlam için bir metin istemi sağlayın ve isteğe bağlı olarak görseller veya videolar ekleyin.
 
 ## Girdiler

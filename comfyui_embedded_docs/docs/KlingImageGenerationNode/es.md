@@ -1,3 +1,5 @@
+# Generación de Imágenes Kling
+
 El nodo de generación de imágenes Kling crea imágenes a partir de descripciones textuales, con la opción de utilizar una imagen de referencia como guía. Genera una o más imágenes basadas en tu descripción de texto y configuración de referencia, y luego devuelve las imágenes generadas como resultado.
 
 ## Entradas

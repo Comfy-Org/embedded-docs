@@ -1,3 +1,5 @@
+# Görüntü-Metin Veri Setini Karıştır
+
 Bu düğüm, bir görüntü listesi ile bir metin listesini birlikte karıştırarak eşleştirmelerinin bozulmadan kalmasını sağlar. Karıştırma sırasını belirlemek için rastgele bir tohum değeri kullanır; aynı tohum değeri tekrar kullanıldığında, aynı giriş listelerinin aynı şekilde karıştırılmasını garanti eder.
 
 ## Girişler

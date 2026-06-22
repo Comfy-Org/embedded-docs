@@ -1,3 +1,5 @@
+# KSampler (Avanzado)
+
 El nodo KSamplerAdvanced está diseñado para mejorar el proceso de muestreo al proporcionar configuraciones y técnicas avanzadas. Su objetivo es ofrecer opciones más sofisticadas para generar muestras a partir de un modelo, mejorando las funcionalidades básicas del KSampler.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Replace Text (Regex)
+
 The RegexReplace node finds and replaces text in strings using regular expression patterns. It allows you to search for text patterns and replace them with new text, with options to control how the pattern matching works including case sensitivity, multiline matching, and limiting the number of replacements.
 
 ## Inputs

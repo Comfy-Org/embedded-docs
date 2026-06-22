@@ -1,3 +1,5 @@
+# ByteDance Seedream 4.5 & 5.0
+
 以下が翻訳結果です。
 
 ## 概要

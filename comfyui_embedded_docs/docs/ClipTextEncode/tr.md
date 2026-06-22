@@ -1,3 +1,5 @@
+# CLIP Metin Kodlama (İstem)
+
 `CLIP Text Encode (CLIPTextEncode)`, metin açıklamalarınızı yapay zekanın anlayabileceği bir formata dönüştüren bir çevirmen görevi görür. Bu, yapay zekanın girdinizi yorumlamasına ve istenen görüntüyü oluşturmasına yardımcı olur.
 
 Bunu, farklı bir dil konuşan bir sanatçıyla iletişim kurmak gibi düşünün. Devasa görüntü-metin çiftleri üzerinde eğitilmiş CLIP modeli, açıklamalarınızı yapay zeka modelinin takip edebileceği "talimatlara" dönüştürerek bu boşluğu doldurur.

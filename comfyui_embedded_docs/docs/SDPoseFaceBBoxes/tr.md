@@ -1,3 +1,5 @@
+# SDPoseFaceBBoxes
+
 SDPoseFaceBBoxes düğümü, insan yüzlerinin etrafında sınırlayıcı kutular tespit etmek ve oluşturmak için poz anahtar noktası verilerini işler. Bir karedeki her kişi için 2B yüz anahtar noktalarını analiz eder, bu noktalara dayalı bir sınırlayıcı kutu hesaplar ve kutunun boyutunu ve şeklini ayarlayabilir. Ortaya çıkan sınırlayıcı kutular, SDPoseKeypointExtractor gibi SDPose iş akışındaki diğer düğümlerle uyumlu olacak şekilde biçimlendirilir.
 
 ## Girişler

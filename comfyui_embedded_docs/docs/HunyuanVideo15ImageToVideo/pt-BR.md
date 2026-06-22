@@ -1,3 +1,5 @@
+# HunyuanVideo15ImageToVideo
+
 O nó HunyuanVideo15ImageToVideo prepara dados de condicionamento e espaço latente para geração de vídeo com base no modelo HunyuanVideo 1.5. Ele cria uma representação latente inicial para uma sequência de vídeo e pode opcionalmente integrar uma imagem inicial ou uma saída do CLIP vision para guiar o processo de geração.
 
 ## Entradas

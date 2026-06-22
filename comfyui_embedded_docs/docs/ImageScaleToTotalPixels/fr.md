@@ -1,3 +1,5 @@
+# Redimensionner l'image en fonction du nombre total de pixels
+
 Le nœud ImageScaleToTotalPixels est conçu pour redimensionner des images à un nombre total de pixels spécifié tout en conservant le rapport hauteur/largeur. Il propose différentes méthodes de suréchantillonnage pour atteindre le nombre de pixels souhaité.
 
 ## Entrées

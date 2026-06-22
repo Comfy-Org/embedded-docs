@@ -1,3 +1,5 @@
+# Redimensionner image/masque
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/en.md)
 
 Le nœud Redimensionner Image/Masque propose plusieurs méthodes pour modifier les dimensions d'une image ou d'un masque d'entrée. Il peut effectuer une mise à l'échelle par multiplicateur, définir des dimensions spécifiques, adapter la taille d'une autre entrée, ou ajuster en fonction du nombre de pixels, en utilisant diverses méthodes d'interpolation pour la qualité.

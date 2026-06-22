@@ -1,3 +1,5 @@
+# SetModelHooksOnCond
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetModelHooksOnCond/en.md)
 
 Ce nœud attache des hooks personnalisés aux données de conditionnement, vous permettant d'intercepter et de modifier le processus de conditionnement lors de l'exécution du modèle. Il prend un ensemble de hooks et les applique aux données de conditionnement fournies, permettant une personnalisation avancée du flux de génération texte-à-image. Le conditionnement modifié avec les hooks attachés est ensuite renvoyé pour être utilisé dans les étapes de traitement ultérieures.

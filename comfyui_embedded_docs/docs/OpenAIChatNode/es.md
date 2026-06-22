@@ -1,3 +1,5 @@
+# OpenAI ChatGPT
+
 Este nodo genera respuestas de texto a partir de un modelo OpenAI. Envía tu indicación de texto (y opcionalmente imágenes o archivos) a un modelo OpenAI y devuelve la respuesta de texto generada.
 
 ## Entradas

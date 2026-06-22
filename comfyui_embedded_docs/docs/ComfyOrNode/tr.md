@@ -1,4 +1,4 @@
-# ComfyOrNode
+# Veya
 
 ComfyOrNode düğümü, bir dizi girdi değeri üzerinde mantıksal VEYA işlemi gerçekleştirir. Python'un standart doğruluk kurallarına göre sağlanan değerlerden herhangi biri doğru (truthy) olarak kabul edilirse `true` döndürür.
 

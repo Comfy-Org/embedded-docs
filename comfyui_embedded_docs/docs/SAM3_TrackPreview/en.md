@@ -1,3 +1,5 @@
+# SAM3 Track Preview
+
 ## Overview
 
 This node creates a video preview of tracked objects, drawing each tracked object with a distinct color overlay and a number label. It does not output any image or video tensors — instead, it saves the resulting preview video directly to a temporary file.

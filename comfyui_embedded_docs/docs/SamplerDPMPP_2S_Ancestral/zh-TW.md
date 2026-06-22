@@ -1,3 +1,5 @@
+# SamplerDPMPP_2S_Ancestral
+
 ## 概述
 
 SamplerDPMPP_2S_Ancestral 節點建立一個使用 DPM++ 2S Ancestral 採樣方法來生成圖像的採樣器。此採樣器結合了確定性與隨機性元素，能在維持一定一致性的同時產生多樣化的結果。它讓您能夠控制採樣過程中的隨機性與噪聲程度。

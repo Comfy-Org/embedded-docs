@@ -1,3 +1,5 @@
+# Promedio de Acondicionamiento
+
 El nodo `ConditioningAverage` se utiliza para combinar dos conjuntos diferentes de condicionamiento (como indicaciones de texto) según un peso especificado, generando un nuevo vector de condicionamiento que se sitúa entre ambos. Al ajustar el parámetro de peso, puedes controlar de forma flexible la influencia de cada condicionamiento en el resultado final. Esto es especialmente adecuado para interpolación de indicaciones, fusión de estilos y otros casos de uso avanzados.
 
 Como se muestra a continuación, al ajustar la intensidad de `conditioning_to`, puedes obtener un resultado intermedio entre los dos condicionamientos.

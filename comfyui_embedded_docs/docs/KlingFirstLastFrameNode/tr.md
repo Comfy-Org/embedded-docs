@@ -1,3 +1,5 @@
+# Kling 3.0 İlk-Son-Kareden Videoya
+
 Bu düğüm, Kling 3.0 modelini kullanarak bir video oluşturur. Videoyu bir metin istemine, belirtilen bir süreye ve sağlanan iki görsele (başlangıç karesi ve bitiş karesi) dayanarak oluşturur. Düğüm, video için isteğe bağlı olarak eşlik eden bir ses de oluşturabilir.
 
 ## Girişler

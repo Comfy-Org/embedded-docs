@@ -1,3 +1,5 @@
+# DesactivarRuido
+
 El nodo `DisableNoise` proporciona una configuración de ruido vacía que puede utilizarse para desactivar la generación de ruido en procesos de muestreo. Devuelve un objeto de ruido especial que no contiene datos de ruido, permitiendo que otros nodos omitan operaciones relacionadas con el ruido cuando se conectan a esta salida.
 
 ## Entradas

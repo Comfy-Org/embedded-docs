@@ -1,3 +1,5 @@
+# Synchronisation labiale Kling : Vidéo avec audio
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Nœud Kling Lip Sync Audio to Video synchronise les mouvements des lèvres dans un fichier vidéo pour les faire correspondre au contenu audio d'un fichier audio. Ce nœud analyse les schémas vocaux dans l'audio et ajuste les mouvements faciaux dans la vidéo afin de créer un doublage labial réaliste. Le processus nécessite à la fois une vidéo contenant un visage distinct et un fichier audio avec des voix clairement identifiables.

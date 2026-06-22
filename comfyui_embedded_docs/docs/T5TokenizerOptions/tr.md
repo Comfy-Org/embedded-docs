@@ -1,3 +1,5 @@
+# T5JetonlaştırıcıSeçenekleri
+
 T5TokenizerOptions düğümü, çeşitli T5 model türleri için tokenleştirici ayarlarını yapılandırmanıza olanak tanır. t5xxl, pile_t5xl, t5base, mt5xl ve umt5xxl dahil olmak üzere birden fazla T5 model varyantı için minimum dolgu ve minimum uzunluk parametrelerini ayarlar. Düğüm, bir CLIP girişi alır ve belirtilen tokenleştirici seçeneklerinin uygulandığı değiştirilmiş bir CLIP döndürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Carregar Modelo de Estilo
+
 Este nó detecta modelos localizados na pasta `ComfyUI/models/style_models` e também lê modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó StyleModelLoader foi projetado para carregar um modelo de estilo a partir de um caminho especificado. Ele se concentra em recuperar e inicializar modelos de estilo que podem ser usados para aplicar estilos artísticos específicos a imagens, permitindo assim a personalização das saídas visuais com base no modelo de estilo carregado.

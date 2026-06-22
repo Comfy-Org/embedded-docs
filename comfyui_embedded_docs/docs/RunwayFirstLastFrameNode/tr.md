@@ -1,3 +1,5 @@
+# Runway İlk-Son-Kare'den Videoya
+
 Runway İlk-Son Kare'den Video'ya düğümü, ilk ve son ana kareleri bir metin istemiyle birlikte yükleyerek videolar oluşturur. Runway'in Gen-3 modelini kullanarak sağlanan başlangıç ve bitiş kareleri arasında yumuşak geçişler oluşturur. Bu, bitiş karesinin başlangıç karesinden önemli ölçüde farklı olduğu karmaşık geçişler için özellikle kullanışlıdır.
 
 ## Girişler

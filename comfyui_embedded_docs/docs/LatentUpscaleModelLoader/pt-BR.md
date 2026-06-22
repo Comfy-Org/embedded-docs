@@ -1,3 +1,5 @@
+# Carregar Modelo de Upscale Latent
+
 O nó LatentUpscaleModelLoader carrega um modelo especializado projetado para ampliar representações latentes. Ele lê um arquivo de modelo da pasta designada do sistema e detecta automaticamente seu tipo (720p, 1080p ou outro) para instanciar e configurar a arquitetura interna correta do modelo. O modelo carregado fica então pronto para ser usado por outros nós em tarefas de super-resolução no espaço latente.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Webcam Yakalama
+
 WebcamCapture düğümü, bir web kamerası cihazından görüntüler yakalar ve bunları ComfyUI iş akışlarında kullanılabilecek bir formata dönüştürür. LoadImage düğümünden türetilmiştir ve yakalama boyutlarını ve zamanlamasını kontrol etmek için seçenekler sunar. Etkinleştirildiğinde, düğüm iş akışı kuyruğu her işlendiğinde yeni görüntüler yakalayabilir.
 
 ## Girişler

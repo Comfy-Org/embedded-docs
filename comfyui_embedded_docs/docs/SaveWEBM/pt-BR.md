@@ -1,3 +1,5 @@
+# Salvar WEBM
+
 O nó SaveWEBM salva uma sequência de imagens como um arquivo de vídeo WEBM. Ele recebe múltiplas imagens de entrada e as codifica em um vídeo usando o codec VP9 ou AV1, com configurações ajustáveis de qualidade e taxa de quadros. O arquivo de vídeo resultante é salvo no diretório de saída com metadados incluindo informações do prompt.
 
 ## Entradas

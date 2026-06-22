@@ -1,3 +1,5 @@
+# Rogner l'image
+
 Le nœud `ImageCrop` est conçu pour recadrer des images selon une largeur et une hauteur spécifiées, à partir de coordonnées x et y données. Cette fonctionnalité est essentielle pour se concentrer sur des zones spécifiques d'une image ou pour ajuster sa taille afin de répondre à certaines exigences.
 
 ## Entrées

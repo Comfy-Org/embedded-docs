@@ -1,3 +1,5 @@
+# Rodin 3D Generar - Generar Boceto
+
 Este nodo genera activos 3D utilizando la API de Rodin. Toma imágenes de entrada y las convierte en modelos 3D a través de un servicio externo. El nodo gestiona todo el proceso, desde la creación de la tarea hasta la descarga de los archivos finales del modelo 3D.
 
 ## Entradas

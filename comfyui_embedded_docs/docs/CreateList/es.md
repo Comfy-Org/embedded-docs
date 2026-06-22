@@ -1,3 +1,5 @@
+# Crear lista
+
 El nodo Crear Lista combina múltiples entradas en una única lista secuencial. Toma cualquier número de entradas del mismo tipo de datos y las concatena en el orden en que están conectadas. Este nodo es útil para preparar lotes de datos, como imágenes o texto, para ser procesados por otros nodos en un flujo de trabajo.
 
 ## Entradas

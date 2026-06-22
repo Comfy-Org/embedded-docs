@@ -1,3 +1,5 @@
+# Gizli Değişkenleri Yeniden Grupla
+
 RebatchLatents düğümü, belirtilen bir grup boyutuna göre bir dizi gizli temsili (latent representation) yeniden düzenleyerek yeni bir grup yapılandırması oluşturmak üzere tasarlanmıştır. Bu düğüm, gizli örneklerin boyut ve ölçü farklılıklarını yöneterek uygun şekilde gruplandırılmasını sağlar ve böylece ileri işleme veya model çıkarımını kolaylaştırır.
 
 ## Girişler

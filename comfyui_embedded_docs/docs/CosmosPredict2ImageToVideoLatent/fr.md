@@ -1,3 +1,5 @@
+# CosmosPredict2ImageToVideoLatent
+
 Voici la traduction en français de la documentation du nœud ComfyUI :
 
 Le nœud CosmosPredict2ImageToVideoLatent crée des représentations latentes vidéo à partir d'images pour la génération vidéo. Il peut générer une vidéo latente vierge ou intégrer des images de début et de fin pour créer des séquences vidéo avec des dimensions et une durée spécifiées. Le nœud gère l'encodage des images dans le format d'espace latent approprié pour le traitement vidéo.

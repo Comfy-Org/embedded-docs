@@ -1,3 +1,5 @@
+# Meshy : Animer le modèle
+
 Ce nœud applique une animation spécifique à un modèle de personnage 3D déjà riggé via le service Meshy. Il utilise un identifiant de tâche provenant d'une opération de rigging antérieure et un identifiant d'action pour sélectionner l'animation souhaitée dans la bibliothèque. Le nœud traite ensuite la requête et retourne le modèle animé aux formats de fichier GLB et FBX.
 
 ## Entrées

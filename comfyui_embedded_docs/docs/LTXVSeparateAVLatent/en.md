@@ -1,3 +1,5 @@
+# LTXVSeparateAVLatent
+
 The LTXVSeparateAVLatent node takes a combined audio-visual latent representation and splits it into two distinct parts: one for video and one for audio. It separates the samples and, if present, the noise masks from the input latent, creating two new latent objects.
 
 ## Inputs

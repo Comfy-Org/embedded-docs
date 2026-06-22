@@ -1,3 +1,5 @@
+# Imagen ByteDance
+
 El nodo ByteDance Image genera imágenes utilizando modelos de ByteDance a través de una API basada en indicaciones de texto. Permite seleccionar un modelo, especificar las dimensiones de la imagen y controlar varios parámetros de generación como la semilla y la escala de guía. El nodo se conecta al servicio de generación de imágenes de ByteDance y devuelve la imagen creada.
 
 ## Entradas

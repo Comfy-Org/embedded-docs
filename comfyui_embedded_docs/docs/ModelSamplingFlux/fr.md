@@ -1,3 +1,5 @@
+# ModèleÉchantillonnageFlux
+
 Le nœud ModelSamplingFlux applique un échantillonnage Flux à un modèle donné en calculant un paramètre de décalage basé sur les dimensions de l'image. Il crée une configuration d'échantillonnage spécialisée qui ajuste le comportement du modèle en fonction des paramètres de largeur, hauteur et décalage spécifiés, puis renvoie le modèle modifié avec les nouveaux paramètres d'échantillonnage appliqués.
 
 ## Entrées

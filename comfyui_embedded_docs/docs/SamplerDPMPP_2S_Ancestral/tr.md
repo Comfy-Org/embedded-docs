@@ -1,3 +1,5 @@
+# ÖrnekleyiciDPMPP_2S_Atasal
+
 SamplerDPMPP_2S_Ancestral düğümü, görüntü üretmek için DPM++ 2S Ancestral örnekleme yöntemini kullanan bir örnekleyici oluşturur. Bu örnekleyici, belirli bir tutarlılığı korurken çeşitli sonuçlar üretmek için deterministik ve stokastik öğeleri birleştirir. Örnekleme işlemi sırasında rastgelelik ve gürültü seviyelerini kontrol etmenizi sağlar.
 
 ## Girişler

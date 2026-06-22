@@ -1,3 +1,5 @@
+# ChargeurTripleCLIP
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripleCLIPLoader/en.md)
 
 Le nœud TripleCLIPLoader charge trois modèles d'encodeur de texte différents simultanément et les combine en un seul modèle CLIP. Ceci est utile pour les scénarios avancés d'encodage de texte nécessitant plusieurs encodeurs de texte, comme dans les workflows SD3 qui requièrent le fonctionnement conjoint des modèles clip-l, clip-g et t5.

@@ -1,3 +1,5 @@
+# Crop By Bounding Boxes
+
 The CropByBBoxes node extracts and resizes specific rectangular regions from an input image batch. It uses provided bounding box coordinates to define the area to crop from each image. The cropped regions are then resized to a specified output dimension, with options to either stretch the crop or pad it to preserve its original aspect ratio.
 
 ## Inputs

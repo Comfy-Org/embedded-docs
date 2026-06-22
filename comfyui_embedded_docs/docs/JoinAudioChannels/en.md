@@ -1,3 +1,5 @@
+# Join Audio Channels
+
 The Join Audio Channels node combines two separate mono audio inputs into a single stereo audio output. It takes a left channel and a right channel, ensures they have compatible sample rates and lengths, and merges them into a two-channel audio waveform.
 
 ## Inputs

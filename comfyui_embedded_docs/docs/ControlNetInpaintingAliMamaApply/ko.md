@@ -1,4 +1,4 @@
-# ControlNetInpaintingAliMamaApply
+# 컨트롤넷 인페인팅 AliMama 적용
 
 ControlNetInpaintingAliMamaApply 노드는 인페인팅 작업을 위해 ControlNet 컨디셔닝을 적용하여, 포지티브 및 네거티브 컨디셔닝을 제어 이미지 및 마스크와 결합합니다. 입력 이미지와 마스크를 처리하여 생성 과정을 안내하는 수정된 컨디셔닝을 생성하므로, 이미지의 어느 영역을 인페인팅할지 정밀하게 제어할 수 있습니다. 이 노드는 생성 과정의 여러 단계에서 ControlNet의 영향을 미세 조정하기 위한 강도 조정 및 타이밍 제어 기능을 지원합니다.
 

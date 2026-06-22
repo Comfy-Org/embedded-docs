@@ -1,3 +1,5 @@
+# Görüntüyü Önizle
+
 PreviewImage düğümü, geçici önizleme görüntüleri oluşturmak için tasarlanmıştır. Her görüntü için otomatik olarak benzersiz bir geçici dosya adı oluşturur, görüntüyü belirtilen sıkıştırma seviyesine sıkıştırır ve geçici bir dizine kaydeder. Bu işlevsellik, işleme sırasında orijinal dosyaları etkilemeden görüntülerin önizlemelerini oluşturmak için özellikle kullanışlıdır.
 
 ## Girişler

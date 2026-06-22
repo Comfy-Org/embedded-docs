@@ -1,3 +1,5 @@
+# ConditioningStableAudio
+
 The ConditioningStableAudio node adds timing information to both positive and negative conditioning inputs for audio generation. It sets the start time and total duration parameters that help control when and how long audio content should be generated. This node modifies existing conditioning data by appending audio-specific timing metadata.
 
 ## Inputs

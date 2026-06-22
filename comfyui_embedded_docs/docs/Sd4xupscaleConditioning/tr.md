@@ -1,3 +1,5 @@
+# Sd4xupscaleConditioning
+
 Bu düğüm, çıktıyı iyileştirmek için koşullandırma öğelerini dahil ederek görüntülerin çözünürlüğünü 4 kat büyütme işlemiyle artırma konusunda uzmanlaşmıştır. Görüntüleri büyütmek için difüzyon tekniklerinden yararlanırken, ölçek oranı ve gürültü artırımının ayarlanmasına olanak tanıyarak iyileştirme sürecini ince ayarlar.
 
 ## Girişler

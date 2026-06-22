@@ -1,3 +1,5 @@
+# Quiver Image vers SVG
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QuiverImageToSVGNode/en.md)
 
 Ce nœud convertit une image matricielle en un graphique vectoriel scalable (SVG) à l'aide des modèles de vectorisation de Quiver AI. Il envoie l'image à une API externe qui la traite et renvoie le résultat vectorisé.

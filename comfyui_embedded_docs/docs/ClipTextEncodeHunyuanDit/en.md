@@ -1,3 +1,5 @@
+# CLIP Text Encode (Hunyuan Image)
+
 The `CLIPTextEncodeHunyuanDiT` node converts text descriptions into a format that the HunyuanDiT model can understand. It is an advanced conditioning node designed for the dual text encoder architecture of HunyuanDiT, processing two separate text inputs through different tokenizers.
 
 ## Inputs

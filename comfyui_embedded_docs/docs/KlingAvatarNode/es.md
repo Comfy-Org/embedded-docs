@@ -1,3 +1,5 @@
+# Kling Avatar 2.0
+
 El nodo Kling Avatar 2.0 genera videos de humanos digitales estilo transmisión a partir de una sola foto de referencia y un archivo de audio. Crea un video de avatar parlante con un mensaje de texto opcional para definir las acciones, emociones y movimientos de cámara del avatar.
 
 ## Entradas

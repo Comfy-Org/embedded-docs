@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Référence vers Vidéo
+
 Voici la traduction en français de la documentation du nœud ComfyUI **ByteDance Seedance 2.0 Reference to Video** :
 
 Le nœud ByteDance Seedance 2.0 Reference to Video utilise le modèle d'IA Seedance 2.0 pour créer, éditer ou prolonger des vidéos en fonction de votre invite textuelle et des documents de référence fournis. Il peut utiliser des images, des vidéos et de l'audio comme références pour guider le processus de génération, prenant en charge des tâches telles que l'édition et l'extension de vidéos.

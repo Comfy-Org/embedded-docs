@@ -1,3 +1,5 @@
+# Coincidencia Regex
+
 El nodo RegexMatch verifica si una cadena de texto contiene una coincidencia con un patrón de expresión regular determinado. Busca en la cadena de entrada y devuelve un resultado simple de sí/no que indica si el patrón se encontró en alguna parte del texto. Puedes ajustar cómo funciona la búsqueda habilitando opciones como la coincidencia sin distinción de mayúsculas/minúsculas o el modo multilínea.
 
 ## Entradas

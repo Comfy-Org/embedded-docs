@@ -1,3 +1,5 @@
+# VAE Codificar (para Inpainting)
+
 Este nodo está diseñado para codificar imágenes en una representación latente adecuada para tareas de inpainting, incorporando pasos de preprocesamiento adicionales para ajustar la imagen de entrada y la máscara, logrando una codificación óptima por parte del modelo VAE.
 
 ## Entradas

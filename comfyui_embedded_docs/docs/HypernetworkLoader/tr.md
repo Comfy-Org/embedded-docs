@@ -1,3 +1,5 @@
+# HiperAğYükleyici
+
 Bu düğüm, `ComfyUI/models/hypernetworks` klasöründe bulunan modelleri tespit eder ve ayrıca extra_model_paths.yaml dosyasında yapılandırılan ek yollardaki modelleri de okur. Bazen, model dosyalarını ilgili klasörden okuması için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 HypernetworkLoader düğümü, bir hiper ağ uygulayarak belirli bir modelin yeteneklerini geliştirmek veya değiştirmek için tasarlanmıştır. Belirtilen bir hiper ağı yükler ve bunu modele uygulayarak, güç parametresine bağlı olarak modelin davranışını veya performansını potansiyel olarak değiştirir. Bu süreç, modelin mimarisinde veya parametrelerinde dinamik ayarlamalara olanak tanıyarak daha esnek ve uyarlanabilir yapay zeka sistemleri sağlar.

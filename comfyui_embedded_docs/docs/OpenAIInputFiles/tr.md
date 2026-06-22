@@ -1,3 +1,5 @@
+# OpenAI ChatGPT Girdi Dosyaları
+
 OpenAI API'si için girdi dosyalarını yükler ve biçimlendirir. Bu düğüm, OpenAI Sohbet Düğümü için bağlam girdileri olarak dahil edilmek üzere metin (.txt) ve PDF (.pdf) dosyalarını hazırlar. Dosyalar, yanıt oluşturulurken OpenAI modeli tarafından okunacaktır. Tek bir mesaja birden fazla dosya eklemek için birden çok OpenAI Girdi Dosyaları düğümü birbirine zincirlenebilir.
 
 ## Girdiler

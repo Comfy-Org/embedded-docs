@@ -1,3 +1,5 @@
+# PerpNegGuider
+
 El nodo PerpNegGuider crea un sistema de guía para controlar la generación de imágenes mediante condicionamiento negativo perpendicular. Toma entradas de condicionamiento positivo, negativo y vacío, y aplica un algoritmo de guía especializado para dirigir el proceso de generación. Este nodo está diseñado para pruebas experimentales y proporciona un control preciso sobre la intensidad de la guía y la escala negativa.
 
 ## Entradas

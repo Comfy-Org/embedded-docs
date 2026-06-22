@@ -1,3 +1,5 @@
+# Rotar Latente
+
 El nodo LatentRotate está diseñado para rotar representaciones latentes de imágenes según ángulos específicos. Abstrae la complejidad de manipular el espacio latente para lograr efectos de rotación, permitiendo a los usuarios transformar fácilmente imágenes en el espacio latente de un modelo generativo.
 
 ## Entradas

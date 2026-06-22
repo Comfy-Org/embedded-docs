@@ -1,3 +1,5 @@
+# Hunyuan3D: Modelo a UV
+
 Este nodo utiliza la API de Tencent Hunyuan3D para realizar el desplegado UV en un modelo 3D. Toma un archivo de modelo 3D como entrada, lo envía a la API para su procesamiento y devuelve el modelo procesado en formatos OBJ y FBX junto con una imagen de textura UV generada. El modelo de entrada debe tener menos de 30,000 caras.
 
 ## Entradas

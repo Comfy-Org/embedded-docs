@@ -1,3 +1,5 @@
+# Fichiers d'entrée Gemini
+
 Charge et formate les fichiers d'entrée pour une utilisation avec l'API Gemini. Ce nœud permet aux utilisateurs d'inclure des fichiers texte (.txt) et PDF (.pdf) comme contexte d'entrée pour le modèle Gemini. Les fichiers sont convertis au format approprié requis par l'API et peuvent être chaînés pour inclure plusieurs fichiers dans une seule requête.
 
 ## Entrées

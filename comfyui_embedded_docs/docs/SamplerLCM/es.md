@@ -1,3 +1,5 @@
+# SamplerLCM
+
 El nodo SamplerLCM proporciona un muestreador LCM (Modelo de Consistencia Latente) con parámetros de ruido ajustables por paso. Permite controlar el ruido aplicado en cada paso de muestreo, lo que posibilita un ajuste detallado del proceso de muestreo.
 
 ## Entradas

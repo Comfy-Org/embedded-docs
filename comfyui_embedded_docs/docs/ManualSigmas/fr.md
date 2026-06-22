@@ -1,3 +1,5 @@
+# Sigmas manuels
+
 Le nœud ManualSigmas vous permet de définir manuellement une séquence personnalisée de niveaux de bruit (sigmas) pour le processus d'échantillonnage. Vous saisissez une liste de nombres sous forme de chaîne de caractères, et le nœud les convertit en un tenseur pouvant être utilisé par d'autres nœuds d'échantillonnage. Cela est utile pour tester ou créer des calendriers de bruit spécifiques.
 
 ## Entrées

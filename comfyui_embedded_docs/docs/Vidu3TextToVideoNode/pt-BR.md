@@ -1,3 +1,5 @@
+# Geração de Vídeo de Texto para Vídeo Vidu Q3
+
 O nó de Geração de Texto para Vídeo Vidu Q3 cria um vídeo a partir de uma descrição textual. Ele utiliza o modelo Vidu Q3 Pro ou Q3 Turbo para gerar conteúdo de vídeo com base no seu prompt, permitindo controlar a duração, resolução, proporção de aspecto e se o vídeo inclui áudio.
 
 ## Entradas

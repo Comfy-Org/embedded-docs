@@ -1,3 +1,5 @@
+# EscalaImagenFluxKontext
+
 Este nodo escala la imagen de entrada a un tamaño óptimo utilizado durante el entrenamiento del modelo Flux Kontext, empleando el algoritmo Lanczos y basándose en la relación de aspecto de la imagen de entrada. Este nodo es particularmente útil al ingresar imágenes de gran tamaño, ya que las entradas sobredimensionadas pueden provocar una degradación en la calidad de la salida del modelo o problemas como la aparición de múltiples sujetos en el resultado.
 
 ## Entradas

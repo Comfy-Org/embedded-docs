@@ -1,3 +1,5 @@
+# Échelle de bruit du modèle
+
 Voici la traduction de la documentation technique du nœud ComfyUI, en respectant vos règles de formatage et de terminologie.
 
 ---

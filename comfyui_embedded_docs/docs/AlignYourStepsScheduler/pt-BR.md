@@ -1,3 +1,5 @@
+# AlignYourStepsScheduler
+
 O nó AlignYourStepsScheduler gera valores sigma para o processo de remoção de ruído com base em diferentes tipos de modelo. Ele calcula níveis de ruído apropriados para cada etapa do processo de amostragem e ajusta o número total de etapas de acordo com o parâmetro de remoção de ruído. Isso ajuda a alinhar as etapas de amostragem com os requisitos específicos de diferentes modelos de difusão.
 
 ## Entradas

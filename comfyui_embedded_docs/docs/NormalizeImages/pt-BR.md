@@ -1,3 +1,5 @@
+# Normalizar Imagens
+
 Este nó ajusta os valores dos pixels de uma imagem de entrada usando um processo matemático de normalização. Ele subtrai um valor médio especificado de cada pixel e, em seguida, divide o resultado por um desvio padrão especificado. Esta é uma etapa comum de pré-processamento para preparar dados de imagem para outros modelos de aprendizado de máquina.
 
 ## Entradas

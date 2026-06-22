@@ -1,3 +1,5 @@
+# Tripo : Modèle de texture
+
 Voici la traduction en français de la documentation du nœud TripoTextureNode :
 
 Le TripoTextureNode génère des modèles 3D texturés à l'aide de l'API Tripo. Il prend un ID de tâche de modèle et applique une génération de texture avec diverses options, notamment les matériaux PBR, les paramètres de qualité de texture et les méthodes d'alignement. Le nœud communique avec l'API Tripo pour traiter la demande de génération de texture et renvoie le fichier de modèle résultant ainsi que l'ID de tâche.

@@ -1,3 +1,5 @@
+# Wan Texte vers Vidéo
+
 Voici la traduction en français de la documentation du nœud WanTextToVideoApi :
 
 Le nœud Wan Texte vers Vidéo génère un contenu vidéo à partir de descriptions textuelles. Il utilise des modèles d'IA pour créer des vidéos à partir de prompts et prend en charge diverses tailles de vidéo, durées et entrées audio facultatives. Le nœud peut générer automatiquement l'audio si nécessaire et propose des options d'amélioration du prompt et de filigrane.

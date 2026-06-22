@@ -1,3 +1,5 @@
+# CLIPMergeSimple
+
 `CLIPMergeSimple` es un nodo avanzado de fusión de modelos utilizado para combinar dos codificadores de texto CLIP según una proporción especificada.
 
 Este nodo se especializa en fusionar dos modelos CLIP basándose en una proporción determinada, combinando eficazmente sus características. Aplica selectivamente parches de un modelo a otro, excluyendo componentes específicos como los ID de posición y la escala logit, para crear un modelo híbrido que combina características de ambos modelos fuente.

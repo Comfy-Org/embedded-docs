@@ -1,3 +1,5 @@
+# CondicionamentoDefinirForçaÁrea
+
 Este nó foi projetado para modificar o atributo de intensidade de um determinado conjunto de condicionamento, permitindo ajustar a influência ou intensidade do condicionamento no processo de geração.
 
 ## Entradas

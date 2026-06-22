@@ -1,3 +1,5 @@
+# Runway Image vers Vidéo (Gen4 Turbo)
+
 Le nœud Runway Image to Video (Gen4 Turbo) génère une vidéo à partir d'une seule image de départ en utilisant le modèle Gen4 Turbo de Runway. Il prend une invite textuelle et une image initiale, puis crée une séquence vidéo en fonction de la durée et du format d'image définis. Le nœud gère le téléchargement de l'image de départ vers l'API de Runway et renvoie la vidéo générée.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Magnific Image Upscale (Preciso V2)
+
 O nó **Magnific Image Upscale (Precise V2)** realiza a ampliação de imagens com alta fidelidade, oferecendo controle preciso sobre nitidez, granulação e realce de detalhes. Ele processa imagens por meio de uma API externa, suportando uma resolução máxima de saída de até 10060×10060 pixels. O nó oferece diferentes estilos de processamento e pode reduzir automaticamente a escala da imagem de entrada caso a saída solicitada exceda o tamanho máximo permitido.
 
 ## Entradas

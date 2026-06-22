@@ -1,3 +1,5 @@
+# ImageOnlyCheckpointSave
+
 Le nœud ImageOnlyCheckpointSave enregistre un fichier de point de contrôle contenant un modèle, un encodeur de vision CLIP et un VAE. Il crée un fichier safetensors avec le préfixe de nom de fichier spécifié et le stocke dans le répertoire de sortie. Ce nœud est spécialement conçu pour sauvegarder ensemble les composants du modèle liés à l'image dans un seul fichier de point de contrôle.
 
 ## Entrées

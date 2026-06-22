@@ -1,3 +1,5 @@
+# Kandinsky5ImageToVideo
+
 Kandinsky5ImageToVideo düğümü, Kandinsky modelini kullanarak video oluşturma için koşullandırma ve gizli uzay verilerini hazırlar. Boş bir video gizli tensörü oluşturur ve isteğe bağlı olarak, oluşturulan videonun ilk karelerini yönlendirmek için bir başlangıç görüntüsünü kodlayarak pozitif ve negatif koşullandırmayı buna göre değiştirebilir.
 
 ## Girişler

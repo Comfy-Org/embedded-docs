@@ -1,4 +1,4 @@
-# Transform Splat
+# Transformer Splat
 
 Le nœud Transform Splat applique des transformations de translation, rotation et mise à l'échelle à un splat gaussien. Il déplace, fait pivoter et redimensionne l'ensemble du splat comme un objet unique. Lorsqu'une mise à l'échelle non uniforme est appliquée, il remodèle également chaque splat gaussien individuel pour des résultats précis.
 

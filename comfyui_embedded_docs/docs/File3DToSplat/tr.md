@@ -1,4 +1,4 @@
-# File3DToSplat
+# Splat Al
 
 Bu düğüm, gaussian splat verisi içeren bir 3D dosyayı, düğüm grafiğinde kullanılabilecek gaussian splat formatına dönüştürür. PLY, SPLAT, KSPLAT ve SPZ dosya formatlarını destekler; dosya formatı, dosya içeriğinden otomatik olarak algılanır.
 

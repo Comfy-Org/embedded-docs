@@ -1,3 +1,5 @@
+# Kling Görsel (İlk Kare) ile Videoya ve Sesli
+
 Kling Image(First Frame) to Video with Audio düğümü, tek bir başlangıç görüntüsü ve bir metin istemi kullanarak Kling AI modeli aracılığıyla kısa bir video oluşturur. Sağlanan görüntüyle başlayan bir video dizisi oluşturur ve isteğe bağlı olarak görüntülere eşlik etmesi için yapay zeka tarafından oluşturulmuş ses içerebilir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# LTXVLatentUpsampler
+
 The LTXVLatentUpsampler node increases the spatial resolution of a video latent representation by a factor of two. It uses a specialized upscale model to process the latent data, which is first un-normalized and then re-normalized using the provided VAE's channel statistics. This node is designed for video workflows within the latent space.
 
 ## Inputs

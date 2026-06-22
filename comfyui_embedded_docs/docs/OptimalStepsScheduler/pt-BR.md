@@ -1,3 +1,5 @@
+# Agendador de Passos Ótimos
+
 O nó OptimalStepsScheduler calcula os sigmas do cronograma de ruído para modelos de difusão com base no tipo de modelo selecionado e na configuração de etapas. Ele ajusta o número total de etapas de acordo com o parâmetro de remoção de ruído (`denoise`) e interpola os níveis de ruído para corresponder à quantidade solicitada de etapas. O nó retorna uma sequência de valores sigma que determinam os níveis de ruído utilizados durante o processo de amostragem por difusão.
 
 ## Entradas

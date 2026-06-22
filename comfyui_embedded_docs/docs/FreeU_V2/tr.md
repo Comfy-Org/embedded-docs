@@ -1,3 +1,5 @@
+# FreeU_V2
+
 ## Genel Bakış
 
 FreeU_V2 düğümü, bir difüzyon modelinin U-Net mimarisine frekans tabanlı değişiklikler uygulayarak görüntü üretim kalitesini artırır. Farklı bloklardaki özellik kanallarını ayarlamak için yapılandırılabilir ölçekleme faktörleri kullanır ve ek eğitim gerektirmeden çıktı kalitesini iyileştirir.

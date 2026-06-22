@@ -1,3 +1,5 @@
+# ディフューザーを読み込む
+
 DiffusersLoaderノードは、diffusers形式の事前学習済みモデルを読み込みます。`model_index.json`ファイルを含む有効なdiffusersモデルディレクトリを検索し、パイプラインで使用するためにMODEL、CLIP、VAEコンポーネントとして読み込みます。このノードは非推奨のローダーカテゴリに属し、Hugging Face diffusersモデルとの互換性を提供します。
 
 ## 入力

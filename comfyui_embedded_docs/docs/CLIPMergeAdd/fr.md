@@ -1,3 +1,5 @@
+# CLIPMergeAdd
+
 Le nœud CLIPMergeAdd combine deux modèles CLIP en ajoutant des correctifs du second modèle au premier. Il crée une copie du premier modèle CLIP et intègre sélectivement les correctifs clés du second modèle, en excluant les identifiants de position et les paramètres d'échelle logit. Cela permet de fusionner des composants de modèles CLIP tout en préservant la structure du modèle de base.
 
 ## Entrées

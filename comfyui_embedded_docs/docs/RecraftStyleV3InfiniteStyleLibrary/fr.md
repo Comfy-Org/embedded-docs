@@ -1,3 +1,5 @@
+# Recraft Style - Infinite Style Library
+
 Ce nœud vous permet de sélectionner un style depuis la bibliothèque de styles infinie de Recraft en utilisant un UUID préexistant. Il récupère les informations du style en fonction de l'identifiant fourni et le retourne pour une utilisation dans d'autres nœuds Recraft.
 
 ## Entrées

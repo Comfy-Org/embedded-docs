@@ -1,3 +1,5 @@
+# Orientação Projetada Adaptativa
+
 O nó APG (Adaptive Projected Guidance) modifica o processo de amostragem ajustando como a orientação é aplicada durante a difusão. Ele separa o vetor de orientação em componentes paralelos e ortogonais em relação à saída condicionada, permitindo uma geração de imagem mais controlada. O nó fornece parâmetros para escalar a orientação, normalizar sua magnitude e aplicar momentum para transições mais suaves entre as etapas de difusão.
 
 ## Entradas

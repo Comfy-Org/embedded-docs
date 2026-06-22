@@ -1,3 +1,5 @@
+# GITSScheduler
+
 The GITSScheduler node generates noise schedule sigmas for the GITS (Generative Iterative Time Steps) sampling method. It calculates sigma values based on a coefficient parameter and number of steps, with an optional denoising factor that can reduce the total steps used. The node uses pre-defined noise levels and interpolation to create the final sigma schedule.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# String
+
 String düğümü, iş akışınızda metin verilerini girmek ve iletmek için basit bir yol sağlar. Giriş olarak bir metin dizesi alır ve aynı dizeyi değiştirmeden çıktı olarak verir; bu da onu dize parametreleri gerektiren diğer düğümlere metin girdileri sağlamak için kullanışlı hale getirir.
 
 ## Girişler

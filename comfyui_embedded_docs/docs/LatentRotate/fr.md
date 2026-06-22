@@ -1,3 +1,5 @@
+# Tourner Latent
+
 Voici la traduction en français de la documentation du nœud LatentRotate :
 
 Le nœud LatentRotate est conçu pour faire pivoter les représentations latentes d'images selon des angles spécifiés. Il abstrait la complexité de la manipulation de l'espace latent pour obtenir des effets de rotation, permettant aux utilisateurs de transformer facilement des images dans l'espace latent d'un modèle génératif.

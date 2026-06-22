@@ -1,4 +1,4 @@
-# Apply SeedVR2 Conditioning
+# SeedVR2Conditioning
 
 This node builds positive and negative conditioning from a VAE latent for use with the SeedVR2 model. It prepares the conditioning data that guides the image or video generation process.
 

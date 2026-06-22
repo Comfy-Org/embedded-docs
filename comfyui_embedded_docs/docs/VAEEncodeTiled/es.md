@@ -1,3 +1,5 @@
+# VAE Codificar (Mosaico)
+
 El nodo VAEEncodeTiled procesa imágenes dividiéndolas en mosaicos más pequeños y codificándolas mediante un Autoencoder Variacional. Este enfoque basado en mosaicos permite manejar imágenes grandes que de otro modo superarían los límites de memoria. El nodo admite tanto VAEs de imágenes como de video, con controles de mosaico separados para las dimensiones espaciales y temporales.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# HappyHorse Görüntüden Videoya
+
 ## Genel Bakış
 
 Bu düğüm, HappyHorse modelini kullanarak tek bir başlangıç görüntüsünden kısa bir video oluşturur. Bir ilk kare görüntüsü ve istenen hareket ile sahneyi tanımlayan bir metin istemi sağlarsınız; düğüm, bu görüntüden devam eden bir video oluşturur.

@@ -1,3 +1,5 @@
+# WanMoveConcatTrack
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveConcatTrack/en.md)
 
 Le nœud WanMoveConcatTrack combine deux ensembles de données de suivi de mouvement en une seule séquence plus longue. Il fonctionne en joignant les chemins de suivi et les masques de visibilité des pistes d'entrée le long de leurs dimensions respectives. Si une seule piste d'entrée est fournie, il transmet simplement ces données sans modification.

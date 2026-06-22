@@ -1,3 +1,5 @@
+# Flux2Scheduler
+
 El nodo Flux2Scheduler genera una secuencia de niveles de ruido (sigmas) para el proceso de eliminación de ruido, diseñado específicamente para el modelo Flux. Calcula un cronograma basado en la cantidad de pasos de eliminación de ruido y las dimensiones de la imagen objetivo, lo que influye en la progresión de la eliminación de ruido durante la generación de imágenes.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# VAE Decode
+
 Le nœud VAEDecode est conçu pour décoder des représentations latentes en images à l'aide d'un autoencodeur variationnel (VAE) spécifié. Il permet de générer des images à partir de représentations de données compressées, facilitant ainsi la reconstruction d'images à partir de leurs encodages dans l'espace latent.
 
 ## Entrées

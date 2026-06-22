@@ -1,3 +1,5 @@
+# Pikadditions
+
 Le nœud Pikadditions vous permet d'ajouter n'importe quel objet ou image dans votre vidéo. Vous téléchargez une vidéo et spécifiez ce que vous souhaitez ajouter pour obtenir un résultat intégré de manière transparente. Ce nœud utilise l'API Pika pour insérer des images dans des vidéos avec une intégration d'apparence naturelle.
 
 ## Entrées

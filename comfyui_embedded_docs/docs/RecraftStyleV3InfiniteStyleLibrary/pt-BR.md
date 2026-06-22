@@ -1,3 +1,5 @@
+# Recraft Estilo - Biblioteca de Estilos Infinita
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3InfiniteStyleLibrary/en.md)
 
 Este nó permite selecionar um estilo da Biblioteca Infinita de Estilos do Recraft usando um UUID preexistente. Ele recupera as informações do estilo com base no identificador fornecido e o retorna para uso em outros nós do Recraft.

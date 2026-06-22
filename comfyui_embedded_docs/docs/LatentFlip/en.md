@@ -1,3 +1,5 @@
+# Flip Latent
+
 The LatentFlip node is designed to manipulate latent representations by flipping them either vertically or horizontally. This operation allows for the transformation of the latent space, potentially uncovering new variations or perspectives within the data.
 
 ## Inputs

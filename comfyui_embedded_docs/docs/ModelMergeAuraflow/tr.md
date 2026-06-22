@@ -1,3 +1,5 @@
+# ModelBirleştirmeAuraflow
+
 ModelMergeAuraflow düğümü, iki farklı modeli, çeşitli model bileşenleri için belirli harmanlama ağırlıklarını ayarlayarak birleştirmenize olanak tanır. Modellerin farklı kısımlarının (ilk katmanlardan son çıktılara kadar) nasıl birleştirileceği üzerinde ince ayarlı kontrol sağlar. Bu düğüm, birleştirme süreci üzerinde hassas kontrol ile özel model kombinasyonları oluşturmak için özellikle kullanışlıdır.
 
 ## Girişler

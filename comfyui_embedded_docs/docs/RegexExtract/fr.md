@@ -1,3 +1,5 @@
+# Extraire par Regex
+
 Voici la traduction en français de la documentation du nœud RegexExtract :
 
 Le nœud RegexExtract recherche des motifs dans un texte à l'aide d'expressions régulières. Il peut trouver la première correspondance, toutes les correspondances, des groupes spécifiques issus des correspondances, ou tous les groupes parmi plusieurs correspondances. Le nœud prend en charge divers indicateurs regex pour la sensibilité à la casse, la correspondance multiligne et le comportement dotall.

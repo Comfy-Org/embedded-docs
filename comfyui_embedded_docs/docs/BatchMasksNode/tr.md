@@ -1,3 +1,5 @@
+# Toplu Maskeler
+
 Topluluk Maskeleme düğümü, birden fazla bireysel maske girdisini tek bir toplulukta birleştirir. Değişken sayıda maske girdisi alır ve bunları tek bir toplu maske tensörü olarak çıktılar, böylece sonraki düğümlerde maskelerin toplu olarak işlenmesine olanak tanır.
 
 ## Girdiler

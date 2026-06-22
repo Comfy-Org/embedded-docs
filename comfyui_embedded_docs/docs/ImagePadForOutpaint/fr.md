@@ -1,3 +1,5 @@
+# Rembourrage d'image pour la peinture extérieure
+
 Ce nœud est conçu pour préparer les images au processus d'extension par ajout de marges (outpainting) en ajoutant un remplissage autour d'elles. Il ajuste les dimensions de l'image pour garantir la compatibilité avec les algorithmes d'extension, facilitant ainsi la génération de zones d'image étendues au-delà des limites d'origine.
 
 ## Entrées

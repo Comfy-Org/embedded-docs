@@ -1,3 +1,5 @@
+# ReferenceTimbreAudio
+
 Bu düğüm, "ace step 1.5" sürecinde kullanılmak üzere bir referans ses tınısı ayarlar. Bir koşullandırma girdisi ve isteğe bağlı olarak bir ses örtük temsili alarak, bu örtük veriyi iş akışındaki sonraki düğümler tarafından kullanılmak üzere koşullandırmaya ekler.
 
 ## Girdiler

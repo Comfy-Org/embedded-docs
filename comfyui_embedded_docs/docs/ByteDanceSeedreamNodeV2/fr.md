@@ -1,3 +1,5 @@
+# ByteDance Seedream 4.5 & 5.0
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI **ByteDance Seedream Node V2** :
 
 ## Aperçu

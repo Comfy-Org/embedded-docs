@@ -1,3 +1,5 @@
+# ElevenLabs Texto para Efeitos Sonoros
+
 O nó ElevenLabs Text to Sound Effects gera efeitos sonoros de áudio a partir de uma descrição textual. Ele utiliza a API do ElevenLabs para criar efeitos sonoros com base no seu prompt, permitindo controlar a duração, o comportamento de repetição e o quão fielmente o som segue o texto.
 
 ## Entradas
