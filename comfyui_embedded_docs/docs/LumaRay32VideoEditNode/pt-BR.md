@@ -6,10 +6,10 @@ Este nó re-renderiza um vídeo existente sob um novo prompt usando o Luma Ray 3
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|--------------|-------------|-------|
-| `video` | Vídeo de origem a ser editado. Até 18 segundos. | VIDEO | Sim | - |
+| `vídeo` | Vídeo de origem a ser editado. Até 18 segundos. | VIDEO | Sim | - |
 | `prompt` | Descreve a edição desejada. | STRING | Sim | - |
-| `resolution` | A resolução de saída para o vídeo editado. | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `strength` | O quanto preservar versus reimaginar a origem. "auto" permite que o Ray 3.2 escolha; adhere_* preserva ao máximo, flex_* é equilibrado, reimagine_* altera mais. (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `resolução` | A resolução de saída para o vídeo editado. | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `força` | O quanto preservar versus reimaginar a origem. "auto" permite que o Ray 3.2 escolha; adhere_* preserva ao máximo, flex_* é equilibrado, reimagine_* altera mais. (padrão: "auto") | COMBO | Sim | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `seed` | Semente para reprodutibilidade. | INT | Sim | - |
 
 **Nota:** O `prompt` deve ter entre 1 e 6000 caracteres. O vídeo de origem não deve exceder 18 segundos de duração.

@@ -16,7 +16,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `pose_video_mask` | 드라이빙 포즈 비디오 추적 데이터에서 렌더링된 채색 마스크입니다. 배경 색상은 replacement_mode 설정을 따릅니다. | IMAGE |
+| `reference_image_mask` | 드라이빙 포즈 비디오 추적 데이터에서 렌더링된 채색 마스크입니다. 배경 색상은 replacement_mode 설정을 따릅니다. | IMAGE |
 | `reference_image_mask` | 참조 이미지 추적 데이터에서 렌더링된 채색 마스크입니다. 모델 규칙에 따라 항상 검은색 배경으로 렌더링됩니다. | IMAGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/ko.md)

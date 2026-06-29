@@ -7,11 +7,11 @@ Este nó edita um vídeo usando um prompt de texto com o modelo Aleph2 da Runway
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Descreve o que deve aparecer na saída (1-1000 caracteres). | STRING | Sim | 1-1000 caracteres |
-| `video` | Vídeo de entrada a ser editado. Deve ter 2-30 segundos a 30 fps ou menos. | VIDEO | Sim | Duração de 2-30 segundos, máximo de 30 fps |
-| `seed` | Semente aleatória para geração (padrão: 0). | INT | Sim | 0 a 4294967295 |
-| `public_figure_threshold` | Moderação de conteúdo para figuras públicas reconhecíveis (padrão: "low"). | COMBO | Sim | "auto"<br>"low" |
-| `keyframes` | Imagens-guia ancoradas ao vídeo de entrada, provenientes de nós Aleph2 Keyframe (até 5). Use keyframes ou imagens de prompt, não ambos. | KEYFRAME | Não | Até 5 itens |
-| `prompt_images` | Imagens-guia ancoradas ao vídeo de saída, provenientes de nós Aleph2 Prompt Image (até 5). Use keyframes ou imagens de prompt, não ambos. | PROMPT_IMAGE | Não | Até 5 itens |
+| `vídeo` | Vídeo de entrada a ser editado. Deve ter 2-30 segundos a 30 fps ou menos. | VIDEO | Sim | Duração de 2-30 segundos, máximo de 30 fps |
+| `semente` | Semente aleatória para geração (padrão: 0). | INT | Sim | 0 a 4294967295 |
+| `limite de figura pública` | Moderação de conteúdo para figuras públicas reconhecíveis (padrão: "low"). | COMBO | Sim | "auto"<br>"low" |
+| `quadros-chave` | Imagens-guia ancoradas ao vídeo de entrada, provenientes de nós Aleph2 Keyframe (até 5). Use keyframes ou imagens de prompt, não ambos. | KEYFRAME | Não | Até 5 itens |
+| `imagens de prompt` | Imagens-guia ancoradas ao vídeo de saída, provenientes de nós Aleph2 Prompt Image (até 5). Use keyframes ou imagens de prompt, não ambos. | PROMPT_IMAGE | Não | Até 5 itens |
 
 **Restrições importantes:**
 - O vídeo de entrada deve ter entre 2 e 30 segundos de duração e uma taxa de quadros de 30 fps ou menos.
@@ -23,7 +23,7 @@ Este nó edita um vídeo usando um prompt de texto com o modelo Aleph2 da Runway
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |-------------|-------------|-----------|
-| `video` | O vídeo editado gerado pelo modelo Aleph2. | VIDEO |
+| `vídeo` | O vídeo editado gerado pelo modelo Aleph2. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2VideoToVideoNode/pt-BR.md)
 

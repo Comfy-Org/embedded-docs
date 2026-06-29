@@ -6,11 +6,11 @@
 
 | 参数 | 描述 | 数据类型 | 是否必填 | 取值范围 |
 |-----------|-------------|-----------|----------|-------|
-| `video` | 要编辑的源视频，最长 18 秒。 | VIDEO | 是 | - |
-| `prompt` | 描述所需的编辑效果。 | STRING | 是 | - |
-| `resolution` | 编辑后视频的输出分辨率。 | COMBO | 是 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `strength` | 保留源内容与重新想象源内容之间的强度。"auto" 让 Ray 3.2 自动选择；adhere_* 最大程度保留原内容，flex_* 较为平衡，reimagine_* 变化最大。（默认值："auto"） | COMBO | 是 | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
-| `seed` | 用于结果可复现的随机种子。 | INT | 是 | - |
+| `视频` | 要编辑的源视频，最长 18 秒。 | VIDEO | 是 | - |
+| `提示词` | 描述所需的编辑效果。 | STRING | 是 | - |
+| `分辨率` | 编辑后视频的输出分辨率。 | COMBO | 是 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `强度` | 保留源内容与重新想象源内容之间的强度。"auto" 让 Ray 3.2 自动选择；adhere_* 最大程度保留原内容，flex_* 较为平衡，reimagine_* 变化最大。（默认值："auto"） | COMBO | 是 | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `种子` | 用于结果可复现的随机种子。 | INT | 是 | - |
 
 **注意：** `prompt` 的长度必须在 1 到 6000 个字符之间。源视频的时长不得超过 18 秒。
 
@@ -18,7 +18,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `VIDEO` | 编辑后的视频输出。 | VIDEO |
+| `generation_id` | 编辑后的视频输出。 | VIDEO |
 | `generation_id` | 生成请求的唯一标识符。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoEditNode/zh.md)

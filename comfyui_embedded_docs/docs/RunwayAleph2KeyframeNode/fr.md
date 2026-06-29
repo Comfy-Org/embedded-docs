@@ -7,8 +7,8 @@ Ce nœud ancre une image de guidage à un moment spécifique de votre vidéo d'e
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image de guidage à appliquer au moment choisi de la vidéo d'entrée. | IMAGE | Oui | - |
-| `timing` | Comment placer cette image sur la ligne temporelle de la vidéo d'entrée. | COMBO | Oui | Voir ci-dessous |
-| `keyframes` | Images clés antérieures optionnelles à chaîner avec celle-ci. | KEYFRAME | Non | - |
+| `synchronisation` | Comment placer cette image sur la ligne temporelle de la vidéo d'entrée. | COMBO | Oui | Voir ci-dessous |
+| `images-clés` | Images clés antérieures optionnelles à chaîner avec celle-ci. | KEYFRAME | Non | - |
 
 ### Options du paramètre Timing
 
@@ -23,7 +23,7 @@ Le paramètre `timing` propose deux modes :
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `keyframes` | Une chaîne d'images clés incluant celle-ci et toutes les images clés précédemment connectées. | KEYFRAME |
+| `images-clés` | Une chaîne d'images clés incluant celle-ci et toutes les images clés précédemment connectées. | KEYFRAME |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2KeyframeNode/fr.md)
 

@@ -7,8 +7,8 @@ Este nó gera um vídeo que interpola através de uma sequência de imagens guia
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `prompt` | Prompt de texto para a geração do vídeo. | STRING | Sim | 1 a 6000 caracteres |
-| `resolution` | A resolução de saída do vídeo gerado (padrão: "720p"). | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `duration` | A duração do vídeo gerado (padrão: "5s"). | COMBO | Sim | `"5s"`<br>`"10s"` |
+| `resolução` | A resolução de saída do vídeo gerado (padrão: "720p"). | COMBO | Sim | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `duração` | A duração do vídeo gerado (padrão: "5s"). | COMBO | Sim | `"5s"`<br>`"10s"` |
 | `seed` | Semente para geração de números aleatórios para controlar a reprodutibilidade. | INT | Sim | 0 a 4294967295 |
 | `keyframes` | Sequência de quadros-chave dos nós de quadro-chave do Luma Ray 3.2 (pelo menos 2). | LUMA_RAY32_KEYFRAME | Sim | 2 a 64 quadros-chave |
 

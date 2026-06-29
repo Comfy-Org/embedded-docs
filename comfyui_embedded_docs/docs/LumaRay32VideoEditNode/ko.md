@@ -6,11 +6,11 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `video` | 편집할 소스 비디오입니다. 최대 18초까지 가능합니다. | VIDEO | 예 | - |
-| `prompt` | 원하는 편집 내용을 설명합니다. | STRING | 예 | - |
-| `resolution` | 편집된 비디오의 출력 해상도입니다. | COMBO | 예 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
-| `strength` | 소스를 얼마나 강하게 보존할지 또는 재구성할지를 결정합니다. "auto"는 Ray 3.2가 선택하도록 합니다. adhere_*는 소스를 가장 많이 보존하고, flex_*는 균형을 유지하며, reimagine_*는 가장 많이 변경합니다. (기본값: "auto") | COMBO | 예 | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
-| `seed` | 재현성을 위한 시드 값입니다. | INT | 예 | - |
+| `비디오` | 편집할 소스 비디오입니다. 최대 18초까지 가능합니다. | VIDEO | 예 | - |
+| `프롬프트` | 원하는 편집 내용을 설명합니다. | STRING | 예 | - |
+| `해상도` | 편집된 비디오의 출력 해상도입니다. | COMBO | 예 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `강도` | 소스를 얼마나 강하게 보존할지 또는 재구성할지를 결정합니다. "auto"는 Ray 3.2가 선택하도록 합니다. adhere_*는 소스를 가장 많이 보존하고, flex_*는 균형을 유지하며, reimagine_*는 가장 많이 변경합니다. (기본값: "auto") | COMBO | 예 | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
+| `시드` | 재현성을 위한 시드 값입니다. | INT | 예 | - |
 
 **참고:** `prompt`는 1자에서 6000자 사이여야 합니다. 소스 비디오의 길이는 18초를 초과할 수 없습니다.
 
@@ -18,7 +18,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `VIDEO` | 편집된 비디오 출력입니다. | VIDEO |
+| `generation_id` | 편집된 비디오 출력입니다. | VIDEO |
 | `generation_id` | 생성 요청의 고유 식별자입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoEditNode/ko.md)

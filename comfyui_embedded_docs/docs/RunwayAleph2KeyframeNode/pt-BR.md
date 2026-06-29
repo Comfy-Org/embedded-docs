@@ -6,9 +6,9 @@ Este nó ancora uma imagem de guia a um momento específico do seu vídeo de ent
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-----------|--------------|-------------|-------|
-| `image` | A imagem de guia a ser aplicada no momento escolhido do vídeo de entrada. | IMAGE | Sim | - |
-| `timing` | Como posicionar esta imagem na linha do tempo do vídeo de entrada. | COMBO | Sim | Ver abaixo |
-| `keyframes` | Keyframes anteriores opcionais para encadear com este. | KEYFRAME | Não | - |
+| `imagem` | A imagem de guia a ser aplicada no momento escolhido do vídeo de entrada. | IMAGE | Sim | - |
+| `tempo` | Como posicionar esta imagem na linha do tempo do vídeo de entrada. | COMBO | Sim | Ver abaixo |
+| `quadros-chave` | Keyframes anteriores opcionais para encadear com este. | KEYFRAME | Não | - |
 
 ### Opções do Parâmetro Timing
 
@@ -23,7 +23,7 @@ O parâmetro `timing` possui dois modos:
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `keyframes` | Uma cadeia de keyframes incluindo este e quaisquer keyframes previamente conectados. | KEYFRAME |
+| `quadros-chave` | Uma cadeia de keyframes incluindo este e quaisquer keyframes previamente conectados. | KEYFRAME |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2KeyframeNode/pt-BR.md)
 

@@ -19,7 +19,7 @@ Bu düğüm, önceki bir Luma Ray 3.2 video oluşturmasını, ona yeni içerik e
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `VIDEO` | Oluşturulan 5 saniyelik uzatılmış video bölümü. | VIDEO |
+| `generation_id` | Oluşturulan 5 saniyelik uzatılmış video bölümü. | VIDEO |
 | `generation_id` | Bu oluşturma için benzersiz tanımlayıcıdır. Daha fazla uzatma için başka bir Luma Ray 3.2 Videoyu Uzat düğümüne bağlanabilir. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32ExtendVideoNode/tr.md)

@@ -20,10 +20,10 @@ Este nodo carga un archivo de modelo 3D desde tu directorio de entrada de ComfyU
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `model_3d` | Los datos del modelo 3D cargado, o vacío si no se seleccionó ningún archivo de modelo | FILE3DANY |
-| `model_3d_info` | Información sobre el modelo 3D cargado desde el estado de la vista | LOAD3DMODELINFO |
-| `camera_info` | Información de la cámara desde el estado de la vista | LOAD3DCAMERA |
-| `width` | El ancho de imagen de salida especificado | INT |
+| `model_3d_info` | Los datos del modelo 3D cargado, o vacío si no se seleccionó ningún archivo de modelo | FILE3DANY |
+| `camera_info` | Información sobre el modelo 3D cargado desde el estado de la vista | LOAD3DMODELINFO |
+| `width` | Información de la cámara desde el estado de la vista | LOAD3DCAMERA |
+| `height` | El ancho de imagen de salida especificado | INT |
 | `height` | La altura de imagen de salida especificada | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAdvanced/es.md)

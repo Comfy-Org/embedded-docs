@@ -8,7 +8,7 @@ Ce nœud ancre une image de guidage à un moment spécifique de la vidéo de sor
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image de guidage à placer au moment choisi de la vidéo de sortie. | IMAGE | Oui | - |
 | `position` | Comment placer cette image sur la timeline de la vidéo de sortie. Choisissez entre un minutage absolu (secondes depuis le début) ou un minutage fractionnaire (pourcentage de la durée vidéo). | COMBO | Oui | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
-| `prompt_images` | Images de guidage optionnelles antérieures à chaîner avec celle-ci. Connectez la sortie d'un autre nœud Runway Aleph2 Prompt Image ici pour construire une chaîne allant jusqu'à 5 images de guidage. | PROMPT_IMAGE_CHAIN | Non | - |
+| `images de prompt` | Images de guidage optionnelles antérieures à chaîner avec celle-ci. Connectez la sortie d'un autre nœud Runway Aleph2 Prompt Image ici pour construire une chaîne allant jusqu'à 5 images de guidage. | PROMPT_IMAGE_CHAIN | Non | - |
 
 **Détails du mode Position :**
 
@@ -20,7 +20,7 @@ Lorsque `position` est défini sur `Fraction (0.0 to 1.0)`, vous devez fournir u
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `prompt_images` | Une chaîne d'images de guidage pouvant être connectée à l'entrée `prompt_images` du nœud Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
+| `images de prompt` | Une chaîne d'images de guidage pouvant être connectée à l'entrée `prompt_images` du nœud Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/fr.md)
 

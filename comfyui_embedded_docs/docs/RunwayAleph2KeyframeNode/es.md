@@ -6,9 +6,9 @@ Este nodo ancla una imagen de guía a un momento específico de tu video de entr
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `image` | La imagen de guía para aplicar en el momento elegido del video de entrada. | IMAGE | Sí | - |
-| `timing` | Cómo ubicar esta imagen en la línea de tiempo del video de entrada. | COMBO | Sí | Ver abajo |
-| `keyframes` | Fotogramas clave anteriores opcionales para encadenar con este. | KEYFRAME | No | - |
+| `imagen` | La imagen de guía para aplicar en el momento elegido del video de entrada. | IMAGE | Sí | - |
+| `sincronización` | Cómo ubicar esta imagen en la línea de tiempo del video de entrada. | COMBO | Sí | Ver abajo |
+| `fotogramas_clave` | Fotogramas clave anteriores opcionales para encadenar con este. | KEYFRAME | No | - |
 
 ### Opciones del Parámetro Timing
 
@@ -23,7 +23,7 @@ El parámetro `timing` tiene dos modos:
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `keyframes` | Una cadena de fotogramas clave que incluye este y cualquier fotograma clave previamente conectado. | KEYFRAME |
+| `fotogramas_clave` | Una cadena de fotogramas clave que incluye este y cualquier fotograma clave previamente conectado. | KEYFRAME |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2KeyframeNode/es.md)
 

@@ -20,10 +20,10 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `model_3d` | 已加载的 3D 模型数据，如果未选择模型文件则为空 | FILE3DANY |
-| `model_3d_info` | 来自视口状态的已加载 3D 模型信息 | LOAD3DMODELINFO |
-| `camera_info` | 来自视口状态的相机信息 | LOAD3DCAMERA |
-| `width` | 指定的输出图像宽度 | INT |
+| `model_3d_info` | 已加载的 3D 模型数据，如果未选择模型文件则为空 | FILE3DANY |
+| `camera_info` | 来自视口状态的已加载 3D 模型信息 | LOAD3DMODELINFO |
+| `width` | 来自视口状态的相机信息 | LOAD3DCAMERA |
+| `height` | 指定的输出图像宽度 | INT |
 | `height` | 指定的输出图像高度 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAdvanced/zh.md)
