@@ -1,6 +1,6 @@
-# Runway Aleph2 Video to Video Node
+# Runway Aleph2 Video to Video
 
-This node edits a video using a text prompt with Runway's Aleph2 model. It transforms your footage by restyling, relighting, adding or removing elements, or changing the viewpoint while preserving the original motion and timing.
+This node edits a video using a text prompt with Runway's Aleph2 model. It transforms your footage by restyling, relighting, adding or removing elements, or changing the viewpoint while preserving the original motion and timing. The output resolution matches the input video.
 
 ## Inputs
 

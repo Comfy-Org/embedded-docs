@@ -6,11 +6,11 @@ Este nó renderiza dados de rastreamento do SAM3 em máscaras coloridas que são
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-----------|--------------|-------------|-------|
-| `driving_track_data` | Rastreamento SAM3 do vídeo de pose condutor. Será renderizado na saída pose_video_mask. | SAM3_TRACK_DATA | Sim | - |
-| `ref_track_data` | Rastreamento SAM3 da imagem de referência. | SAM3_TRACK_DATA | Não | - |
-| `object_indices` | Lista separada por vírgulas de índices de pessoas a incluir (ex.: '0,2,3'). Aplicado tanto às máscaras de referência quanto às do vídeo de pose. Vazio = todas. | STRING | Sim | - |
-| `sort_by` | Ordem na qual as cores da paleta são atribuídas aos objetos rastreados (aplicado tanto à referência quanto ao vídeo de pose para que cada identidade mantenha a mesma cor). left_to_right = objeto mais à esquerda (pelo centróide do primeiro quadro) recebe a primeira cor; area = objeto maior (pela área da máscara do primeiro quadro) recebe a primeira cor; none = manter a ordem do SAM3. (padrão: "left_to_right") | COMBO | Sim | `"none"`<br>`"left_to_right"`<br>`"area"` |
-| `replacement_mode` | Falso = Modo Animação (pose_video_mask tem fundo preto, reference_image_mask tem fundo branco). Verdadeiro = Modo Substituição (pose_video_mask tem fundo branco, reference_image_mask tem fundo preto). (padrão: Falso) | BOOLEAN | Sim | Falso<br>Verdadeiro |
+| `dados_de_rastreamento_driving` | Rastreamento SAM3 do vídeo de pose condutor. Será renderizado na saída pose_video_mask. | SAM3_TRACK_DATA | Sim | - |
+| `dados_de_rastreamento_referência` | Rastreamento SAM3 da imagem de referência. | SAM3_TRACK_DATA | Não | - |
+| `índices_de_objetos` | Lista separada por vírgulas de índices de pessoas a incluir (ex.: '0,2,3'). Aplicado tanto às máscaras de referência quanto às do vídeo de pose. Vazio = todas. | STRING | Sim | - |
+| `ordenar_por` | Ordem na qual as cores da paleta são atribuídas aos objetos rastreados (aplicado tanto à referência quanto ao vídeo de pose para que cada identidade mantenha a mesma cor). left_to_right = objeto mais à esquerda (pelo centróide do primeiro quadro) recebe a primeira cor; area = objeto maior (pela área da máscara do primeiro quadro) recebe a primeira cor; none = manter a ordem do SAM3. (padrão: "left_to_right") | COMBO | Sim | `"none"`<br>`"left_to_right"`<br>`"area"` |
+| `modo_de_substituição` | Falso = Modo Animação (pose_video_mask tem fundo preto, reference_image_mask tem fundo branco). Verdadeiro = Modo Substituição (pose_video_mask tem fundo branco, reference_image_mask tem fundo preto). (padrão: Falso) | BOOLEAN | Sim | Falso<br>Verdadeiro |
 
 ## Saídas
 

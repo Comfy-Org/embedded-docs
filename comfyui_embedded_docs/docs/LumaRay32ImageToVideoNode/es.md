@@ -19,7 +19,7 @@ Genera un video a partir de un fotograma inicial y/o final utilizando el modelo 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `video` | El video generado como salida. | VIDEO |
+| `generation_id` | El video generado como salida. | VIDEO |
 | `generation_id` | El identificador único de la solicitud de generación. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32ImageToVideoNode/es.md)

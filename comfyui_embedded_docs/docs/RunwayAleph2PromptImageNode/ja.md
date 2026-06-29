@@ -6,9 +6,9 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 出力ビデオの選択した瞬間に配置するガイダンス画像です。 | IMAGE | はい | - |
-| `position` | この画像を出力ビデオのタイムライン上に配置する方法です。絶対時間（開始からの秒数）または割合時間（ビデオ長に対するパーセンテージ）から選択します。 | COMBO | はい | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
-| `prompt_images` | この画像とチェーン接続するオプションの先行プロンプト画像です。別のRunway Aleph2 Prompt Imageノードの出力をここに接続して、最大5つのガイダンス画像のチェーンを構築します。 | PROMPT_IMAGE_CHAIN | いいえ | - |
+| `画像` | 出力ビデオの選択した瞬間に配置するガイダンス画像です。 | IMAGE | はい | - |
+| `位置` | この画像を出力ビデオのタイムライン上に配置する方法です。絶対時間（開始からの秒数）または割合時間（ビデオ長に対するパーセンテージ）から選択します。 | COMBO | はい | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `プロンプト画像` | この画像とチェーン接続するオプションの先行プロンプト画像です。別のRunway Aleph2 Prompt Imageノードの出力をここに接続して、最大5つのガイダンス画像のチェーンを構築します。 | PROMPT_IMAGE_CHAIN | いいえ | - |
 
 **位置モードの詳細：**
 
@@ -20,7 +20,7 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `prompt_images` | Runway Aleph2 Video to Videoノードの`prompt_images`入力に接続できるプロンプト画像のチェーンです。 | PROMPT_IMAGE_CHAIN |
+| `プロンプト画像` | Runway Aleph2 Video to Videoノードの`prompt_images`入力に接続できるプロンプト画像のチェーンです。 | PROMPT_IMAGE_CHAIN |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/ja.md)
 

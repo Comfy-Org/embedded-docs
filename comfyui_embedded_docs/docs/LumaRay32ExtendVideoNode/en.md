@@ -13,7 +13,7 @@ This node extends a previous Luma Ray 3.2 video generation by adding new content
 | `resolution` | Output resolution for the extended video segment. | COMBO | Yes | "540p"<br>"720p"<br>"1080p" |
 | `seed` | Random seed for reproducible generation results. | INT | Yes | - |
 
-**Note:** The `loop` parameter is only available when `direction` is set to "Forward (continue after)". When using "Backward (lead-in before)", the loop option is not available. The `prompt` must be between 1 and 6000 characters.
+**Note:** The `loop` parameter is only available when `direction` is set to "Forward (continue after)". When using "Backward (lead-in before)", the loop option is not available. The `prompt` must be between 1 and 6000 characters. The `source_generation_id` is required and must be connected from a prior Luma Ray 3.2 node's generation_id output.
 
 ## Outputs
 

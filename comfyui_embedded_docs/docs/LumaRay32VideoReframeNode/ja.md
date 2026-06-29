@@ -18,7 +18,7 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `video` | 新しいアスペクト比と埋められたキャンバス領域を持つリフレーミング済み動画。 | VIDEO |
+| `generation_id` | 新しいアスペクト比と埋められたキャンバス領域を持つリフレーミング済み動画。 | VIDEO |
 | `generation_id` | 生成リクエストの一意識別子。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoReframeNode/ja.md)

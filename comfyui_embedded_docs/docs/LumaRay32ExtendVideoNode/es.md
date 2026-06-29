@@ -19,7 +19,7 @@ Este nodo extiende una generación de video anterior de Luma Ray 3.2 añadiendo 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `VIDEO` | El segmento de video extendido generado de 5 segundos. | VIDEO |
+| `generation_id` | El segmento de video extendido generado de 5 segundos. | VIDEO |
 | `generation_id` | Identificador único para esta generación, que puede conectarse a otro nodo Luma Ray 3.2 Extend Video para extensiones adicionales. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32ExtendVideoNode/es.md)

@@ -6,9 +6,9 @@ Este nó ancora uma imagem de orientação a um momento específico no vídeo de
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-----------|--------------|-------------|-------|
-| `image` | A imagem de orientação para posicionar no momento escolhido do vídeo de saída. | IMAGE | Sim | - |
-| `position` | Como posicionar esta imagem na linha do tempo do vídeo de saída. Escolha entre tempo absoluto (segundos a partir do início) ou tempo fracionário (percentual da duração do vídeo). | COMBO | Sim | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
-| `prompt_images` | Imagens de prompt anteriores opcionais para encadear com esta. Conecte a saída de outro nó Runway Aleph2 Imagem de Prompt aqui para construir uma cadeia de até 5 imagens de orientação. | PROMPT_IMAGE_CHAIN | Não | - |
+| `imagem` | A imagem de orientação para posicionar no momento escolhido do vídeo de saída. | IMAGE | Sim | - |
+| `posição` | Como posicionar esta imagem na linha do tempo do vídeo de saída. Escolha entre tempo absoluto (segundos a partir do início) ou tempo fracionário (percentual da duração do vídeo). | COMBO | Sim | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `imagens_de_prompt` | Imagens de prompt anteriores opcionais para encadear com esta. Conecte a saída de outro nó Runway Aleph2 Imagem de Prompt aqui para construir uma cadeia de até 5 imagens de orientação. | PROMPT_IMAGE_CHAIN | Não | - |
 
 **Detalhes do Modo de Posição:**
 
@@ -20,7 +20,7 @@ Quando `position` está definido como `Fraction (0.0 to 1.0)`, você deve fornec
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `prompt_images` | Uma cadeia de imagens de prompt que pode ser conectada à entrada `prompt_images` do nó Runway Aleph2 Vídeo para Vídeo. | PROMPT_IMAGE_CHAIN |
+| `imagens_de_prompt` | Uma cadeia de imagens de prompt que pode ser conectada à entrada `prompt_images` do nó Runway Aleph2 Vídeo para Vídeo. | PROMPT_IMAGE_CHAIN |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/pt-BR.md)
 
