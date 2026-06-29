@@ -19,7 +19,7 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `VIDEO` | 生成された5秒の拡張動画セグメント。 | VIDEO |
+| `generation_id` | 生成された5秒の拡張動画セグメント。 | VIDEO |
 | `generation_id` | この生成の一意の識別子。別のLuma Ray 3.2 Extend Videoノードに接続して、さらに拡張することができます。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32ExtendVideoNode/ja.md)

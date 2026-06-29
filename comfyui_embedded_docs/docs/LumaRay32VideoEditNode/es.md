@@ -18,7 +18,7 @@ Este nodo vuelve a renderizar un video existente bajo un nuevo prompt utilizando
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `VIDEO` | El video editado de salida. | VIDEO |
+| `generation_id` | El video editado de salida. | VIDEO |
 | `generation_id` | El identificador único para la solicitud de generación. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoEditNode/es.md)

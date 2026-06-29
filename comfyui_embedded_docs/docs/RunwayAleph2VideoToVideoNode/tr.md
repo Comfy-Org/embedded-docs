@@ -6,12 +6,12 @@ Bu düğüm, Runway’in Aleph2 modelini kullanarak bir metin istemiyle videoyu 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `prompt` | Çıktıda ne görünmesi gerektiğini açıklar (1-1000 karakter). | STRING | Evet | 1-1000 karakter |
+| `istem` | Çıktıda ne görünmesi gerektiğini açıklar (1-1000 karakter). | STRING | Evet | 1-1000 karakter |
 | `video` | Düzenlenecek giriş videosu. 30 fps veya daha düşük olmak üzere 2-30 saniye olmalıdır. | VIDEO | Evet | 2-30 saniye süre, maks. 30 fps |
-| `seed` | Üretim için rastgele tohum (varsayılan: 0). | INT | Evet | 0 ile 4294967295 arası |
-| `public_figure_threshold` | Tanınabilir kamu figürleri için içerik denetimi (varsayılan: "düşük"). | COMBO | Evet | "auto"<br>"low" |
-| `keyframes` | Aleph2 Ana Kare düğümlerinden gelen, giriş videosuna bağlı kılavuz görüntüler (en fazla 5). Ana kare veya istem görselleri kullanın, ikisini birden kullanmayın. | KEYFRAME | Hayır | En fazla 5 öğe |
-| `prompt_images` | Aleph2 İstem Görseli düğümlerinden gelen, çıkış videosuna bağlı kılavuz görüntüler (en fazla 5). Ana kare veya istem görselleri kullanın, ikisini birden kullanmayın. | PROMPT_IMAGE | Hayır | En fazla 5 öğe |
+| `tohum` | Üretim için rastgele tohum (varsayılan: 0). | INT | Evet | 0 ile 4294967295 arası |
+| `tanınmış kişi eşiği` | Tanınabilir kamu figürleri için içerik denetimi (varsayılan: "düşük"). | COMBO | Evet | "auto"<br>"low" |
+| `anahtar kareler` | Aleph2 Ana Kare düğümlerinden gelen, giriş videosuna bağlı kılavuz görüntüler (en fazla 5). Ana kare veya istem görselleri kullanın, ikisini birden kullanmayın. | KEYFRAME | Hayır | En fazla 5 öğe |
+| `istem görselleri` | Aleph2 İstem Görseli düğümlerinden gelen, çıkış videosuna bağlı kılavuz görüntüler (en fazla 5). Ana kare veya istem görselleri kullanın, ikisini birden kullanmayın. | PROMPT_IMAGE | Hayır | En fazla 5 öğe |
 
 **Önemli kısıtlamalar:**
 - Giriş videosu 2 ila 30 saniye arasında olmalı ve kare hızı 30 fps veya daha düşük olmalıdır.

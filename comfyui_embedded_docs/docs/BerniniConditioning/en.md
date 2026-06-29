@@ -1,4 +1,4 @@
-# BerniniConditioning
+# Bernini Conditioning
 
 The BerniniConditioning node prepares video and image conditioning data for the Wan2.2-A14B model. It encodes source videos, reference videos, and reference images using the provided VAE, then attaches them to the conditioning data for in-context generation tasks. The task is automatically inferred from which inputs are connected.
 
@@ -36,4 +36,4 @@ The BerniniConditioning node prepares video and image conditioning data for the 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BerniniConditioning/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3535bbe9a1ae007dc579242b44787ab315479a820eb0da680eab9b870ab60699`
+**Source fingerprint (SHA-256):** `70b5026f9479249bc5d1fe4695583193216e34e1b092764ac30e0ec3b7eba670`

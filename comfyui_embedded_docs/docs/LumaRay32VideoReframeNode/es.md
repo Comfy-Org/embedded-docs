@@ -18,7 +18,7 @@ Este nodo cambia la relación de aspecto de un video existente utilizando Luma R
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `video` | El video reencuadrado con la nueva relación de aspecto y áreas de lienzo rellenas. | VIDEO |
+| `generation_id` | El video reencuadrado con la nueva relación de aspecto y áreas de lienzo rellenas. | VIDEO |
 | `generation_id` | El identificador único para la solicitud de generación. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoReframeNode/es.md)

@@ -8,7 +8,7 @@ Générer une vidéo à partir d'une image de début et/ou de fin en utilisant l
 |-----------|-------------|-----------------|--------|-------|
 | `prompt` | Texte descriptif pour la génération vidéo. | STRING | Oui | 1 à 6000 caractères |
 | `resolution` | La résolution de sortie de la vidéo générée (par défaut : "720p"). | COMBO | Oui | "360p"<br>"540p"<br>"720p"<br>"1080p" |
-| `loop` | Permet de boucler la vidéo de manière fluide. Non disponible lorsqu'une `end_frame` est définie. | BOOLEAN | Oui | True<br>False |
+| `boucle` | Permet de boucler la vidéo de manière fluide. Non disponible lorsqu'une `end_frame` est définie. | BOOLEAN | Oui | True<br>False |
 | `seed` | Valeur de graine pour une génération reproductible. | INT | Oui | 0 à 2147483647 |
 | `start_frame` | Première image de la vidéo générée. | IMAGE | Non | - |
 | `end_frame` | Dernière image de la vidéo générée. | IMAGE | Non | - |
@@ -19,7 +19,7 @@ Générer une vidéo à partir d'une image de début et/ou de fin en utilisant l
 
 | Nom de la sortie | Description | Type de données |
 |------------------|-------------|-----------------|
-| `video` | La sortie vidéo générée. | VIDEO |
+| `generation_id` | La sortie vidéo générée. | VIDEO |
 | `generation_id` | L'identifiant unique de la demande de génération. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32ImageToVideoNode/fr.md)

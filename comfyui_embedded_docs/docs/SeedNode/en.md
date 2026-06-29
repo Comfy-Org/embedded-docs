@@ -1,0 +1,20 @@
+# Seed
+
+The Seed node generates a fixed or random integer value. It is commonly used to control the reproducibility of random operations in other nodes by providing a consistent starting point for their random number generation.
+
+## Inputs
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `seed` | The seed value to use. The control after generate option determines whether the value stays fixed or changes after each generation. | INT | Yes | 0 to 9223372036854775807 |
+
+## Outputs
+
+| Output Name | Description | Data Type |
+|-------------|-------------|-----------|
+| `seed` | The generated seed value. | INT |
+
+> This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedNode/en.md)
+
+---
+**Source fingerprint (SHA-256):** `19f9b22945bb152ff5066195067f1b6b4c006589f26c7533fad905044ac3b7fa`
