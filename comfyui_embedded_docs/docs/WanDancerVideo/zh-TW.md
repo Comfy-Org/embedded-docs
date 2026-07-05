@@ -27,8 +27,8 @@ WanDancerVideo 節點為使用 WanDancer 模型進行影片生成準備條件化
 
 | 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `negative` | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的正向條件化。 | CONDITIONING |
-| `latent` | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的負向條件化。 | CONDITIONING |
+| `positive` | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的正向條件化。 | CONDITIONING |
+| `negative` | 附加了任何額外資料（串接潛在張量、CLIP 視覺、音訊）的負向條件化。 | CONDITIONING |
 | `latent` | 一個空的潛在張量，其維度與指定的影片長度、高度和寬度相符。 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerVideo/zh-TW.md)

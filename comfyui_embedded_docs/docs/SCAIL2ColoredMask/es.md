@@ -16,8 +16,8 @@ Este nodo convierte los datos de seguimiento de SAM3 en máscaras de colores que
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |-------------|-------------|-----------|
-| `máscara_imagen_referencia` | Máscara de colores renderizada a partir de los datos de seguimiento del video de pose guía. El color de fondo sigue la configuración de replacement_mode. | IMAGE |
-| `reference_image_mask` | Máscara de colores renderizada a partir de los datos de seguimiento de la imagen de referencia. Siempre se renderiza con fondo negro según la convención del modelo. | IMAGE |
+| `máscara_video_pose` | Máscara de colores renderizada a partir de los datos de seguimiento del video de pose guía. El color de fondo sigue la configuración de replacement_mode. | IMAGE |
+| `máscara_imagen_referencia` | Máscara de colores renderizada a partir de los datos de seguimiento de la imagen de referencia. Siempre se renderiza con fondo negro según la convención del modelo. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/es.md)
 

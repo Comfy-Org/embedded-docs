@@ -20,8 +20,8 @@ VOIDInpaintConditioning 노드는 CogVideoX 모델의 인페인팅에 필요한 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `negative` | 인페인팅 잠재 정보가 추가된 포지티브 컨디셔닝 | CONDITIONING |
-| `latent` | 인페인팅 잠재 정보가 추가된 네거티브 컨디셔닝 | CONDITIONING |
+| `positive` | 인페인팅 잠재 정보가 추가된 포지티브 컨디셔닝 | CONDITIONING |
+| `negative` | 인페인팅 잠재 정보가 추가된 네거티브 컨디셔닝 | CONDITIONING |
 | `latent` | 형태가 [batch_size, 16, latent_t, latent_h, latent_w]인 0으로 채워진 노이즈 잠재 텐서 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/ko.md)

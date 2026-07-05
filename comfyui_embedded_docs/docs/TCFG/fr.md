@@ -14,7 +14,7 @@ TCFG (Guidage CFG à Amortissement Tangentiel) affine les prédictions inconditi
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `patched_model` | Le modèle modifié avec le guidage CFG à amortissement tangentiel appliqué | MODEL |
+| `modèle_corrigé` | Le modèle modifié avec le guidage CFG à amortissement tangentiel appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TCFG/fr.md)
 

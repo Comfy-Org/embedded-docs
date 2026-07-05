@@ -18,8 +18,8 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ネガティブ` | 適用されたプロパティを持つ変更後のポジティブコンディショニング | CONDITIONING |
-| `negative` | 適用されたプロパティを持つ変更後のネガティブコンディショニング | CONDITIONING |
+| `ポジティブ` | 適用されたプロパティを持つ変更後のポジティブコンディショニング | CONDITIONING |
+| `ネガティブ` | 適用されたプロパティを持つ変更後のネガティブコンディショニング | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/ja.md)
 

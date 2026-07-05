@@ -18,7 +18,7 @@ Bu düğüm, ByteDance'in Seedance 2.0 hizmeti için kişisel bir görsel varlı
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `group_id` | Yeni oluşturulan görsel varlığı için benzersiz tanımlayıcı. | STRING |
+| `asset_id` | Yeni oluşturulan görsel varlığı için benzersiz tanımlayıcı. | STRING |
 | `group_id` | Varlık grubu için tanımlayıcı. Bu, sağlanan `group_id` veya yeni oluşturulan bir kimlik olacaktır. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateImageAsset/tr.md)

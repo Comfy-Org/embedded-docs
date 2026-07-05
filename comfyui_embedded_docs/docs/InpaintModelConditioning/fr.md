@@ -16,8 +16,8 @@ Le nœud InpaintModelConditioning est conçu pour faciliter le processus de cond
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions positives spécifiées. | `CONDITIONING` |
-| `latent` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions négatives spécifiées. | `CONDITIONING` |
+| `positive` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions positives spécifiées. | `CONDITIONING` |
+| `négatif` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions négatives spécifiées. | `CONDITIONING` |
 | `latent` | La représentation latente dérivée du processus de conditionnement. Cette sortie est cruciale pour comprendre les caractéristiques et attributs sous-jacents de l'image en cours de traitement par infilling. | `LATENT` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/fr.md)

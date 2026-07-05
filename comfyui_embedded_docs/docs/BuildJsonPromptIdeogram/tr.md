@@ -23,7 +23,7 @@ Bu düğüm, Ideogram 4 görüntü oluşturma modeli için özel olarak biçimle
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `prompt` | Üst düzey açıklama, stil açıklaması (varsa) ve arka plan ile öğeleri içeren kompozisyonel ayrıştırmayı barındıran yapılandırılmış bir JSON sözlüğü. | DICT |
+| `istem` | Üst düzey açıklama, stil açıklaması (varsa) ve arka plan ile öğeleri içeren kompozisyonel ayrıştırmayı barındıran yapılandırılmış bir JSON sözlüğü. | DICT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BuildJsonPromptIdeogram/tr.md)
 

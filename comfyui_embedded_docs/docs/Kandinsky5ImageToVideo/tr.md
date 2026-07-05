@@ -21,9 +21,9 @@ Kandinsky5ImageToVideo düğümü, Kandinsky modelini kullanarak video oluşturm
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Kodlanmış başlangıç görüntü verileriyle potansiyel olarak güncellenmiş, değiştirilmiş pozitif koşullandırma. | CONDITIONING |
-| `latent` | Kodlanmış başlangıç görüntü verileriyle potansiyel olarak güncellenmiş, değiştirilmiş negatif koşullandırma. | CONDITIONING |
-| `cond_latent` | Belirtilen boyutlar için şekillendirilmiş, sıfırlarla dolu boş bir video gizli tensörü. | LATENT |
+| `pozitif` | Kodlanmış başlangıç görüntü verileriyle potansiyel olarak güncellenmiş, değiştirilmiş pozitif koşullandırma. | CONDITIONING |
+| `negatif` | Kodlanmış başlangıç görüntü verileriyle potansiyel olarak güncellenmiş, değiştirilmiş negatif koşullandırma. | CONDITIONING |
+| `latent` | Belirtilen boyutlar için şekillendirilmiş, sıfırlarla dolu boş bir video gizli tensörü. | LATENT |
 | `cond_latent` | Sağlanan başlangıç görüntülerinin temiz, kodlanmış gizli temsili. Bu, oluşturulan video gizli değişkenlerinin gürültülü başlangıcını değiştirmek için dahili olarak kullanılır. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/tr.md)

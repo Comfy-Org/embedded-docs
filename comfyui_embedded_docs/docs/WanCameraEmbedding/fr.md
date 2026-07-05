@@ -20,9 +20,9 @@ Le nœud WanCameraEmbedding génère des intégrations de trajectoire de caméra
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `largeur` | Le tenseur d'intégration de caméra généré contenant la séquence de trajectoire | TENSOR |
-| `hauteur` | La valeur de largeur utilisée pour le traitement | INT |
-| `longueur` | La valeur de hauteur utilisée pour le traitement | INT |
+| `intégration de caméra` | Le tenseur d'intégration de caméra généré contenant la séquence de trajectoire | TENSOR |
+| `largeur` | La valeur de largeur utilisée pour le traitement | INT |
+| `hauteur` | La valeur de hauteur utilisée pour le traitement | INT |
 | `longueur` | La valeur de longueur utilisée pour le traitement | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/fr.md)

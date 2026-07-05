@@ -18,7 +18,7 @@
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
 | `video_id` | الفيديو الممدد الذي تم إنشاؤه بواسطة واجهة برمجة تطبيقات Kling | VIDEO |
-| `duration` | المعرف الفريد للفيديو الممدد | STRING |
+| `video_id` | المعرف الفريد للفيديو الممدد | STRING |
 | `duration` | مدة الفيديو الممدد | STRING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoExtendNode/ar.md)

@@ -27,8 +27,8 @@ HunyuanImageToVideo 节点使用 Hunyuan 视频模型将图像转换为视频潜
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `Latent` | 当提供 start_image 时，应用了图像引导的修改后正面条件化输入 | CONDITIONING |
-| `latent` | 可供视频生成模型进一步处理的视频潜在表示 | LATENT |
+| `正向` | 当提供 start_image 时，应用了图像引导的修改后正面条件化输入 | CONDITIONING |
+| `Latent` | 可供视频生成模型进一步处理的视频潜在表示 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/zh.md)
 

@@ -16,8 +16,8 @@ Este nodo utiliza la API de Tencent Hunyuan3D para editar las texturas de un mod
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `OBJ` | El modelo 3D procesado en formato GLB. | FILE3D |
-| `texture_image` | El modelo 3D procesado en formato OBJ. | FILE3D |
+| `GLB` | El modelo 3D procesado en formato GLB. | FILE3D |
+| `OBJ` | El modelo 3D procesado en formato OBJ. | FILE3D |
 | `texture_image` | La imagen de textura recién generada para el modelo 3D. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DTextureEditNode/es.md)

@@ -17,9 +17,9 @@ InstructPixToPixConditioning 节点通过将正向和负向文本提示与图像
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 附加了潜在图像表示的正向条件数据 | CONDITIONING |
-| `Latent` | 附加了潜在图像表示的负向条件数据 | CONDITIONING |
-| `latent` | 与编码图像尺寸相同的空潜在张量 | LATENT |
+| `正面条件` | 附加了潜在图像表示的正向条件数据 | CONDITIONING |
+| `负面条件` | 附加了潜在图像表示的负向条件数据 | CONDITIONING |
+| `Latent` | 与编码图像尺寸相同的空潜在张量 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/zh.md)
 

@@ -18,7 +18,7 @@ Cuando se selecciona "opus" como formato, un subparámetro `quality` estará dis
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `ui` | Salida de interfaz de usuario que contiene la información del archivo de audio guardado. | UI |
+| `audio` | Salida de interfaz de usuario que contiene la información del archivo de audio guardado. | UI |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioAdvanced/es.md)
 

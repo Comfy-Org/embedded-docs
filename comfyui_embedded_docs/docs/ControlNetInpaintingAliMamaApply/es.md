@@ -50,7 +50,7 @@ El nodo ControlNetInpaintingAliMamaApply aplica el condicionamiento de ControlNe
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado con ControlNet aplicado para inpainting | CONDITIONING |
+| `positivo` | El condicionamiento positivo modificado con ControlNet aplicado para inpainting | CONDITIONING |
 | `negativo` | El condicionamiento negativo modificado con ControlNet aplicado para inpainting | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/es.md)

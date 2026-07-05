@@ -17,9 +17,9 @@ Bu düğüm, daha uzun bir video oluşturma sürecinin belirli bir bölümü iç
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `anahtar_kare_maskesi` | Belirtilen bölüm için doldurulmuş ana kare dizisi. | IMAGE |
-| `ses_segmenti` | Geçerli kareleri gösteren maske (ana kare konumları için 1, doldurulmuş konumlar için 0). | MASK |
-| `audio_segment` | Bu video bölümü için ses bölümü. | AUDIO |
+| `anahtar_kare_dizisi` | Belirtilen bölüm için doldurulmuş ana kare dizisi. | IMAGE |
+| `anahtar_kare_maskesi` | Geçerli kareleri gösteren maske (ana kare konumları için 1, doldurulmuş konumlar için 0). | MASK |
+| `ses_segmenti` | Bu video bölümü için ses bölümü. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/tr.md)
 

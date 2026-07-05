@@ -14,7 +14,7 @@ ColorToRGBInt 노드는 16진수 형식으로 지정된 색상을 단일 정수 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `hex` | 계산된 RGB 정수 값입니다. 이 값은 `(Red * 65536) + (Green * 256) + Blue` 공식에서 파생됩니다. | INT |
+| `rgb_정수` | 계산된 RGB 정수 값입니다. 이 값은 `(Red * 65536) + (Green * 256) + Blue` 공식에서 파생됩니다. | INT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/ko.md)
 

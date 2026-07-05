@@ -12,7 +12,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `recraft_style` | 一个 Recraft 样式配置对象，包含 `realistic_image` 样式和所选子样式设置。此输出可连接到其他接受样式输入的 Recraft 节点。 | STYLEV3 |
+| `Recraft风格` | 一个 Recraft 样式配置对象，包含 `realistic_image` 样式和所选子样式设置。此输出可连接到其他接受样式输入的 Recraft 节点。 | STYLEV3 |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/zh.md)
 

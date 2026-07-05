@@ -12,7 +12,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `recraft_style` | 所选的 Recraft 样式配置，包含标志光栅样式及选定的子样式 | CUSTOM |
+| `Recraft风格` | 所选的 Recraft 样式配置，包含标志光栅样式及选定的子样式 | CUSTOM |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/zh.md)
 

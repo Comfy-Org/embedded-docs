@@ -12,9 +12,9 @@ El nodo **Obtener Componentes de Video** extrae todos los elementos principales 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `audio` | Los fotogramas individuales extraídos del video como imágenes separadas. | IMAGE |
-| `fps` | La pista de audio extraída del video. | AUDIO |
-| `bit_depth` | La tasa de fotogramas del video en fotogramas por segundo. | FLOAT |
+| `imágenes` | Los fotogramas individuales extraídos del video como imágenes separadas. | IMAGE |
+| `audio` | La pista de audio extraída del video. | AUDIO |
+| `fps` | La tasa de fotogramas del video en fotogramas por segundo. | FLOAT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/es.md)
 

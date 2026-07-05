@@ -13,7 +13,7 @@ Le nœud Ajouter un Préfixe de Texte modifie un texte en ajoutant une chaîne s
 
 | Nom de Sortie | Description | Type de Données |
 | --- | --- | --- |
-| `text` | Le texte résultant avec le préfixe ajouté au début. | STRING |
+| `textes` | Le texte résultant avec le préfixe ajouté au début. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextPrefix/fr.md)
 

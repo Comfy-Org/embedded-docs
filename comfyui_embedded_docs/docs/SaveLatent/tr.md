@@ -15,7 +15,7 @@ SaveLatent düğümü, gizli tensörleri dosya olarak diske kaydederek daha sonr
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ui` | Kaydedilen gizli dosyanın ComfyUI arayüzünde dosya konumu bilgisini sağlar | UI |
+| `samples` | Kaydedilen gizli dosyanın ComfyUI arayüzünde dosya konumu bilgisini sağlar | UI |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/tr.md)
 

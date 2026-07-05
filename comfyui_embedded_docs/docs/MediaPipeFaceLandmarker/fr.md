@@ -21,7 +21,7 @@ Détecte les visages dans une image et identifie 468 points de repère faciaux (
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `bboxes` | Une sortie structurée contenant les résultats de détection de visage par image, incluant 468 points de repère faciaux, les coefficients de mélange de formes ARKit-52, les matrices de transformation et les ensembles de connexions pour la visualisation du maillage. | FACE_LANDMARKS |
+| `face_landmarks` | Une sortie structurée contenant les résultats de détection de visage par image, incluant 468 points de repère faciaux, les coefficients de mélange de formes ARKit-52, les matrices de transformation et les ensembles de connexions pour la visualisation du maillage. | FACE_LANDMARKS |
 | `bboxes` | Une liste de boîtes englobantes pour chaque visage détecté, avec les coordonnées (x, y, largeur, hauteur), l'étiquette "face" et le score de confiance. Une liste par image d'entrée. | BOUNDING_BOX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/fr.md)

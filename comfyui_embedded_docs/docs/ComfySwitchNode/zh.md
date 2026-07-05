@@ -16,7 +16,7 @@ Switch 节点根据布尔条件在两个可能的输入之间进行选择。当 
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `output` | 选中的数据。如果 `切换` 为 true，则为 `为真时` 输入的值；如果 `切换` 为 false，则为 `为假时` 输入的值。 | MATCH_TYPE |
+| `输出` | 选中的数据。如果 `切换` 为 true，则为 `为真时` 输入的值；如果 `切换` 为 false，则为 `为假时` 输入的值。 | MATCH_TYPE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/zh.md)
 

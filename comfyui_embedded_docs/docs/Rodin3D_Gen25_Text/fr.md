@@ -31,7 +31,7 @@ Générez un modèle 3D à partir d'une invite textuelle en utilisant l'API Rodi
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model_file` | Le fichier de modèle 3D généré dans le format spécifié. | FILE3DANY |
+| `fichier_modèle` | Le fichier de modèle 3D généré dans le format spécifié. | FILE3DANY |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/fr.md)
 

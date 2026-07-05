@@ -22,7 +22,7 @@ Transforme du texte en vidéos cinématographiques avec des mouvements de camér
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
 | `video_id` | La vidéo générée avec les effets de contrôle de caméra | VIDEO |
-| `duration` | L’identifiant unique de la vidéo générée | STRING |
+| `video_id` | L’identifiant unique de la vidéo générée | STRING |
 | `duration` | La durée de la vidéo générée | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlT2VNode/fr.md)

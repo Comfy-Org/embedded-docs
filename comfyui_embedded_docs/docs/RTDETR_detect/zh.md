@@ -16,7 +16,7 @@ RT-DETR 检测节点使用 RT-DETR 模型对输入图像执行目标检测。它
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `bboxes` | 每个输入图像的边界框列表。每个框包含坐标 (x, y, 宽度, 高度)、类别标签和置信度分数。 | BOUNDINGBOX |
+| `边界框` | 每个输入图像的边界框列表。每个框包含坐标 (x, y, 宽度, 高度)、类别标签和置信度分数。 | BOUNDINGBOX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RTDETR_detect/zh.md)
 

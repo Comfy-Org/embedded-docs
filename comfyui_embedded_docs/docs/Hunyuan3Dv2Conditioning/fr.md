@@ -12,7 +12,7 @@ Le nœud Hunyuan3Dv2Conditioning traite la sortie de la vision CLIP pour génér
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Données de conditionnement positives contenant les embeddings de la vision CLIP | CONDITIONING |
+| `positive` | Données de conditionnement positives contenant les embeddings de la vision CLIP | CONDITIONING |
 | `negative` | Données de conditionnement négatives contenant des embeddings de valeur nulle correspondant à la forme des embeddings positifs | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2Conditioning/fr.md)

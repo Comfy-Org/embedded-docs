@@ -15,7 +15,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `style_id` | 新创建的定制风格的唯一标识符。 | STRING |
+| `风格ID` | 新创建的定制风格的唯一标识符。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreateStyleNode/zh.md)
 

@@ -20,7 +20,7 @@ Ce nœud crée des images clés de hook à partir d'une liste de valeurs de forc
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `HOOK_KF` | Un groupe d'images clés de hook contenant les images clés nouvellement créées, soit en tant que nouveau groupe, soit ajouté au groupe d'images clés d'entrée | HOOK_KEYFRAMES |
+| `CROCHET_KF` | Un groupe d'images clés de hook contenant les images clés nouvellement créées, soit en tant que nouveau groupe, soit ajouté au groupe d'images clés d'entrée | HOOK_KEYFRAMES |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesFromFloats/fr.md)
 

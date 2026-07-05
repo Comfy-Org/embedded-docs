@@ -16,8 +16,8 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `디노이즈 출력` | 샘플링 과정을 완료한 후의 최종 샘플링된 잠재 표현입니다. | LATENT |
-| `denoised_output` | 사용 가능한 경우 출력의 노이즈가 제거된 버전이며, 그렇지 않으면 출력과 동일한 값을 반환합니다. | LATENT |
+| `출력` | 샘플링 과정을 완료한 후의 최종 샘플링된 잠재 표현입니다. | LATENT |
+| `디노이즈 출력` | 사용 가능한 경우 출력의 노이즈가 제거된 버전이며, 그렇지 않으면 출력과 동일한 값을 반환합니다. | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustomAdvanced/ko.md)
 

@@ -22,9 +22,9 @@ WanHuMoImageToVideo 노드는 비디오 프레임에 대한 잠재 표현을 생
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `부정 프롬프트` | 참조 이미지 및/또는 오디오 임베딩이 통합된 수정된 긍정 컨디셔닝입니다. | CONDITIONING |
-| `잠재 공간` | 참조 이미지 및/또는 오디오 임베딩이 통합된 수정된 부정 컨디셔닝입니다. | CONDITIONING |
-| `latent` | 비디오 시퀀스 데이터를 포함하는 생성된 잠재 표현입니다. | LATENT |
+| `긍정 프롬프트` | 참조 이미지 및/또는 오디오 임베딩이 통합된 수정된 긍정 컨디셔닝입니다. | CONDITIONING |
+| `부정 프롬프트` | 참조 이미지 및/또는 오디오 임베딩이 통합된 수정된 부정 컨디셔닝입니다. | CONDITIONING |
+| `잠재 공간` | 비디오 시퀀스 데이터를 포함하는 생성된 잠재 표현입니다. | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/ko.md)
 

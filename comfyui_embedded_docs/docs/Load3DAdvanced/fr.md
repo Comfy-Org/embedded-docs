@@ -20,10 +20,10 @@ Ce nœud charge un fichier de modèle 3D depuis votre répertoire d'entrée Comf
 
 | Nom de la sortie | Description | Type de données |
 |------------------|-------------|-----------------|
-| `model_3d_info` | Les données du modèle 3D chargé, ou vides si aucun fichier de modèle n'a été sélectionné | FILE3DANY |
-| `camera_info` | Informations sur le modèle 3D chargé provenant de l'état de la fenêtre d'affichage | LOAD3DMODELINFO |
-| `width` | Informations de la caméra provenant de l'état de la fenêtre d'affichage | LOAD3DCAMERA |
-| `height` | La largeur spécifiée de l'image de sortie | INT |
+| `model_3d` | Les données du modèle 3D chargé, ou vides si aucun fichier de modèle n'a été sélectionné | FILE3DANY |
+| `model_3d_info` | Informations sur le modèle 3D chargé provenant de l'état de la fenêtre d'affichage | LOAD3DMODELINFO |
+| `camera_info` | Informations de la caméra provenant de l'état de la fenêtre d'affichage | LOAD3DCAMERA |
+| `width` | La largeur spécifiée de l'image de sortie | INT |
 | `height` | La hauteur spécifiée de l'image de sortie | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAdvanced/fr.md)

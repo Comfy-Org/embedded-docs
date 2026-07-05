@@ -14,7 +14,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `HOOK_KF` | 包含新创建关键帧的一组钩子关键帧 | HOOK_KEYFRAMES |
+| `约束关键帧` | 包含新创建关键帧的一组钩子关键帧 | HOOK_KEYFRAMES |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframe/zh.md)
 

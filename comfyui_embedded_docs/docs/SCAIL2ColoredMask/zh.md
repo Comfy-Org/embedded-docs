@@ -16,8 +16,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `参考图像掩码` | 从驱动姿态视频跟踪数据渲染的彩色遮罩。背景颜色遵循 replacement_mode 设置。 | IMAGE |
-| `reference_image_mask` | 从参考图像跟踪数据渲染的彩色遮罩。根据模型惯例，始终以黑色背景渲染。 | IMAGE |
+| `姿态视频掩码` | 从驱动姿态视频跟踪数据渲染的彩色遮罩。背景颜色遵循 replacement_mode 设置。 | IMAGE |
+| `参考图像掩码` | 从参考图像跟踪数据渲染的彩色遮罩。根据模型惯例，始终以黑色背景渲染。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/zh.md)
 

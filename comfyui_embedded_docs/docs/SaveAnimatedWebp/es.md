@@ -17,6 +17,6 @@ Este nodo está diseñado para guardar una secuencia de imágenes como un archiv
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Proporciona un componente de interfaz que muestra las imágenes WEBP animadas guardadas junto con sus metadatos, e indica si la animación está habilitada. | N/A |
+| `images` | Proporciona un componente de interfaz que muestra las imágenes WEBP animadas guardadas junto con sus metadatos, e indica si la animación está habilitada. | N/A |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/es.md)

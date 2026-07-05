@@ -24,7 +24,7 @@ Suivez des objets à travers les images d'une vidéo à l'aide du tracker basé 
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `track_data` | Données de suivi contenant les masques d'objets et les métadonnées pour toutes les images vidéo | SAM3TrackData |
+| `données_suivi` | Données de suivi contenant les masques d'objets et les métadonnées pour toutes les images vidéo | SAM3TrackData |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/fr.md)
 

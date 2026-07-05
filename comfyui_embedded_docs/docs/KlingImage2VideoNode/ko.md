@@ -20,7 +20,7 @@ Kling 이미지-투-비디오 노드는 시작 참조 이미지와 텍스트 프
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
 | `비디오 ID` | 생성된 비디오 출력입니다. | VIDEO |
-| `길이` | 생성된 비디오의 고유 식별자입니다. | STRING |
+| `비디오 ID` | 생성된 비디오의 고유 식별자입니다. | STRING |
 | `길이` | 생성된 비디오의 지속 시간 정보입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImage2VideoNode/ko.md)

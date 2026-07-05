@@ -24,8 +24,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `negative` | 修改後的正向條件化，可能已包含編碼後的起始影像或 CLIP 視覺輸出。 | CONDITIONING |
-| `latent` | 修改後的負向條件化，可能已包含編碼後的起始影像或 CLIP 視覺輸出。 | CONDITIONING |
+| `positive` | 修改後的正向條件化，可能已包含編碼後的起始影像或 CLIP 視覺輸出。 | CONDITIONING |
+| `negative` | 修改後的負向條件化，可能已包含編碼後的起始影像或 CLIP 視覺輸出。 | CONDITIONING |
 | `latent` | 一個空的潛在張量，其維度已根據指定的批次大小、影片長度、寬度與高度進行配置。 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/zh-TW.md)

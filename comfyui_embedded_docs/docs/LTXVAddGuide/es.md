@@ -20,8 +20,8 @@ El nodo LTXVAddGuide agrega guía de condicionamiento de video a secuencias late
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo actualizado con información de guía de fotogramas clave | CONDITIONING |
-| `latente` | Condicionamiento negativo actualizado con información de guía de fotogramas clave | CONDITIONING |
+| `positivo` | Condicionamiento positivo actualizado con información de guía de fotogramas clave | CONDITIONING |
+| `negativo` | Condicionamiento negativo actualizado con información de guía de fotogramas clave | CONDITIONING |
 | `latente` | Secuencia latente con fotogramas de condicionamiento incorporados y máscara de ruido actualizada | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/es.md)

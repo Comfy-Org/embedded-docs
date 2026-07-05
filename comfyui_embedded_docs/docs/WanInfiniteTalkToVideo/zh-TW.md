@@ -36,11 +36,11 @@ WanInfiniteTalkToVideo 節點可根據音訊輸入生成影片序列。它使用
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `正向提示` | 已套用音訊條件的修補模型。 | MODEL |
-| `負向提示` | 正向條件，可能已透過額外上下文（例如起始影像、CLIP 視覺）修改。 | CONDITIONING |
-| `latent` | 負向條件，可能已透過額外上下文修改。 | CONDITIONING |
-| `裁切圖像` | 在潛在空間中生成的影片序列。 | LATENT |
-| `trim_image` | 擴展序列時，應從運動上下文開頭修剪的幀數。 | INT |
+| `模型` | 已套用音訊條件的修補模型。 | MODEL |
+| `正向提示` | 正向條件，可能已透過額外上下文（例如起始影像、CLIP 視覺）修改。 | CONDITIONING |
+| `負向提示` | 負向條件，可能已透過額外上下文修改。 | CONDITIONING |
+| `latent` | 在潛在空間中生成的影片序列。 | LATENT |
+| `裁切圖像` | 擴展序列時，應從運動上下文開頭修剪的幀數。 | INT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/zh-TW.md)
 

@@ -16,7 +16,7 @@ LTXVConditioning ノードは、動画生成モデル向けに、ポジティブ
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ネガティブ` | フレームレート情報が適用されたポジティブ conditioning | CONDITIONING |
+| `ポジティブ` | フレームレート情報が適用されたポジティブ conditioning | CONDITIONING |
 | `ネガティブ` | フレームレート情報が適用されたネガティブ conditioning | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/ja.md)

@@ -15,7 +15,7 @@ CFGNorm 節點對擴散模型中的無分類器引導（CFG）過程應用正規
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `patched_model` | 傳回已在其取樣過程中套用 CFG 正規化的修改後模型 | MODEL |
+| `修補模型` | 傳回已在其取樣過程中套用 CFG 正規化的修改後模型 | MODEL |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/zh-TW.md)
 

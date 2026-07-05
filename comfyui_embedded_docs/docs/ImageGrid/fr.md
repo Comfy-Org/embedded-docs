@@ -18,7 +18,7 @@ Le nœud Grille d'Images combine plusieurs images en une seule grille ou collage
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image de sortie unique contenant toutes les images d'entrée disposées en grille. | IMAGE |
+| `images` | L'image de sortie unique contenant toutes les images d'entrée disposées en grille. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageGrid/fr.md)
 

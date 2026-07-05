@@ -16,7 +16,7 @@ Bu düğüm, SAM3 takip verilerini, WanSCAILToVideo düğümü tarafından kulla
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `reference_image_mask` | Sürüş pozu videosu takip verilerinden oluşturulan renkli maske. Arka plan rengi replacement_mode ayarını takip eder. | IMAGE |
+| `pose_video_mask` | Sürüş pozu videosu takip verilerinden oluşturulan renkli maske. Arka plan rengi replacement_mode ayarını takip eder. | IMAGE |
 | `reference_image_mask` | Referans görüntü takip verilerinden oluşturulan renkli maske. Model kuralı gereği her zaman siyah arka planla oluşturulur. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/tr.md)

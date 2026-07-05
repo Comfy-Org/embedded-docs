@@ -19,8 +19,8 @@ Tripo紋理節點使用 Tripo API 生成帶有紋理的 3D 模型。它接收一
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `模型任務 ID` | 已應用紋理的生成模型檔案（僅為向後相容性保留） | STRING |
-| `GLB` | 用於追蹤紋理生成過程的任務 ID | MODEL_TASK_ID |
+| `模型檔案` | 已應用紋理的生成模型檔案（僅為向後相容性保留） | STRING |
+| `模型任務 ID` | 用於追蹤紋理生成過程的任務 ID | MODEL_TASK_ID |
 | `GLB` | 以 GLB 格式生成的 3D 模型，已應用紋理 | FILE3DGLB |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextureNode/zh-TW.md)

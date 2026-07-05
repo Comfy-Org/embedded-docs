@@ -18,7 +18,7 @@ Este nodo crea un activo de imagen personal para el servicio Seedance 2.0 de Byt
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `group_id` | El identificador único para el activo de imagen recién creado. | STRING |
+| `asset_id` | El identificador único para el activo de imagen recién creado. | STRING |
 | `group_id` | El identificador para el grupo de activos. Será el `group_id` proporcionado o uno recién creado. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateImageAsset/es.md)

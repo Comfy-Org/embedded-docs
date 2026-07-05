@@ -25,8 +25,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `模型任務 ID` | 生成的 GLB 模型檔案名稱（僅為向後相容性保留）。 | STRING |
-| `GLB` | 此模型生成請求的唯一任務 ID。 | MODEL_TASK_ID |
+| `模型檔案` | 生成的 GLB 模型檔案名稱（僅為向後相容性保留）。 | STRING |
+| `模型任務 ID` | 此模型生成請求的唯一任務 ID。 | MODEL_TASK_ID |
 | `GLB` | 以 GLB 格式生成的 3D 模型。 | FILE3DGLB |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1MultiviewToModelNode/zh-TW.md)

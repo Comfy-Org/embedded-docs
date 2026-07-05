@@ -23,8 +23,8 @@ Le nœud WanCameraImageToVideo convertit des images en séquences vidéo en gén
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
+| `positif` | Conditionnement positif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
+| `négatif` | Conditionnement négatif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
 | `latent` | Représentation latente vidéo générée pour utilisation avec des modèles vidéo. Le tenseur latent a des dimensions [batch_size, 16, images, hauteur/8, largeur/8] où images est calculé comme ((longueur - 1) // 4) + 1. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/fr.md)

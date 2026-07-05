@@ -14,7 +14,7 @@ Este nodo aplica Re-escalado de Puntuación Temporal (TSR) a un modelo de difusi
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `patched_model` | El modelo de entrada, ahora parcheado con la función de Re-escalado de Puntuación Temporal aplicada a su proceso de muestreo. | MODEL |
+| `modelo_modificado` | El modelo de entrada, ahora parcheado con la función de Re-escalado de Puntuación Temporal aplicada a su proceso de muestreo. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/es.md)
 

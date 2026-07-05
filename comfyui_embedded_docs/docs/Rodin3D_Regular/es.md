@@ -15,7 +15,7 @@ Este nodo **Rodin 3D Regular** genera activos 3D utilizando la API de Rodin. Tom
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `GLB` | Ruta del archivo al modelo 3D generado (se mantiene por compatibilidad con versiones anteriores). | STRING |
+| `Ruta del modelo 3D` | Ruta del archivo al modelo 3D generado (se mantiene por compatibilidad con versiones anteriores). | STRING |
 | `GLB` | El modelo 3D generado en formato GLB. | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/es.md)

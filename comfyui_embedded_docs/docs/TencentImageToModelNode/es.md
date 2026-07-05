@@ -23,12 +23,12 @@ Este nodo utiliza la API de Hunyuan3D Pro de Tencent para generar un modelo 3D a
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `GLB` | Una salida heredada para compatibilidad hacia atrás. | STRING |
-| `OBJ` | El modelo 3D generado en formato de archivo GLB (Formato Binario de Transmisión GL). | FILE3DGLB |
-| `texture_image` | El modelo 3D generado en formato de archivo OBJ (Wavefront). | FILE3DOBJ |
-| `optional_metallic` | La imagen de textura para el modelo 3D generado. | IMAGE |
-| `optional_normal` | El mapa metálico para materiales PBR. Devuelve una imagen negra si no está disponible. | IMAGE |
-| `optional_roughness` | El mapa de normales para materiales PBR. Devuelve una imagen negra si no está disponible. | IMAGE |
+| `archivo_modelo` | Una salida heredada para compatibilidad hacia atrás. | STRING |
+| `GLB` | El modelo 3D generado en formato de archivo GLB (Formato Binario de Transmisión GL). | FILE3DGLB |
+| `OBJ` | El modelo 3D generado en formato de archivo OBJ (Wavefront). | FILE3DOBJ |
+| `texture_image` | La imagen de textura para el modelo 3D generado. | IMAGE |
+| `optional_metallic` | El mapa metálico para materiales PBR. Devuelve una imagen negra si no está disponible. | IMAGE |
+| `optional_normal` | El mapa de normales para materiales PBR. Devuelve una imagen negra si no está disponible. | IMAGE |
 | `optional_roughness` | El mapa de rugosidad para materiales PBR. Devuelve una imagen negra si no está disponible. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentImageToModelNode/es.md)

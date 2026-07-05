@@ -23,8 +23,8 @@ Le nœud **StableZero123_Conditioning_Batched** traite une image d'entrée et g�
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Les données de conditionnement positif contenant les embeddings d'image et les paramètres de caméra | CONDITIONING |
-| `latent` | Les données de conditionnement négatif avec des embeddings initialisés à zéro | CONDITIONING |
+| `positif` | Les données de conditionnement positif contenant les embeddings d'image et les paramètres de caméra | CONDITIONING |
+| `négatif` | Les données de conditionnement négatif avec des embeddings initialisés à zéro | CONDITIONING |
 | `latent` | La représentation latente de l'image traitée avec les informations d'indexation par lot | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/fr.md)

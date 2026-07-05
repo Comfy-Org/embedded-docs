@@ -27,8 +27,8 @@ Beeble SwitchX ile bir videoyu düzenleyin. Bu düğüm, orijinal nesnenin pikse
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `alfa` | Sahne değişikliklerinin uygulandığı düzenlenmiş video. | VIDEO |
-| `alpha` | Beeble tarafından kullanılan alfa mat. Ayrı bir matı olmayan "fill" modu için bu boştur. | VIDEO |
+| `video` | Sahne değişikliklerinin uygulandığı düzenlenmiş video. | VIDEO |
+| `alfa` | Beeble tarafından kullanılan alfa mat. Ayrı bir matı olmayan "fill" modu için bu boştur. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXVideoEdit/tr.md)
 

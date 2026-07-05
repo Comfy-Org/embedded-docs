@@ -17,9 +17,9 @@ Bu düğüm, bir dizi görüntüyü ve isteğe bağlı bir ses parçasını alar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `anahtar_kare_maskeleri` | Her parça için bir tane olmak üzere dolgulu anahtar kare dizilerinin listesi. | IMAGE |
-| `ses_segmenti` | Her parça için geçerli kareleri belirten maskelerin listesi. | MASK |
-| `audio_segment` | Her video parçası için bir tane olmak üzere ses parçalarının listesi. | AUDIO |
+| `anahtar_kare_dizileri` | Her parça için bir tane olmak üzere dolgulu anahtar kare dizilerinin listesi. | IMAGE |
+| `anahtar_kare_maskeleri` | Her parça için geçerli kareleri belirten maskelerin listesi. | MASK |
+| `ses_segmenti` | Her video parçası için bir tane olmak üzere ses parçalarının listesi. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/tr.md)
 

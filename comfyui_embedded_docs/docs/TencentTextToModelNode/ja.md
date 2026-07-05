@@ -20,9 +20,9 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `GLB` | 後方互換性のためのレガシー出力です。 | STRING |
-| `OBJ` | GLBファイル形式で生成された3Dモデルです。 | FILE3DGLB |
-| `texture_image` | OBJファイル形式で生成された3Dモデルです。 | FILE3DOBJ |
+| `モデルファイル` | 後方互換性のためのレガシー出力です。 | STRING |
+| `GLB` | GLBファイル形式で生成された3Dモデルです。 | FILE3DGLB |
+| `OBJ` | OBJファイル形式で生成された3Dモデルです。 | FILE3DOBJ |
 | `texture_image` | 生成されたOBJファイルから抽出されたテクスチャ画像です（利用可能な場合）。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentTextToModelNode/ja.md)

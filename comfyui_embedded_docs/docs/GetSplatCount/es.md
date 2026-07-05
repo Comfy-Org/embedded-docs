@@ -12,8 +12,8 @@ El nodo Obtener Recuento de Splats devuelve el número total de splats (puntos g
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `recuento` | Los datos originales de splats, transmitidos sin modificar | SPLAT |
-| `count` | El número total de splats sumados en el lote | INT |
+| `splat` | Los datos originales de splats, transmitidos sin modificar | SPLAT |
+| `recuento` | El número total de splats sumados en el lote | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetSplatCount/es.md)
 

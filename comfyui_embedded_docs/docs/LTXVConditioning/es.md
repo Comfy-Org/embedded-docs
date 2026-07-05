@@ -14,7 +14,7 @@ El nodo LTXVConditioning añade información de velocidad de fotogramas a las en
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo con la información de velocidad de fotogramas aplicada | CONDITIONING |
+| `positivo` | El condicionamiento positivo con la información de velocidad de fotogramas aplicada | CONDITIONING |
 | `negativo` | El condicionamiento negativo con la información de velocidad de fotogramas aplicada | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/es.md)

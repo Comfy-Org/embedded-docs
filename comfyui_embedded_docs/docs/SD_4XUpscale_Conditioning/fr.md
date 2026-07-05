@@ -18,8 +18,8 @@ Le nœud SD_4XUpscale_Conditioning prépare les données de conditionnement pour
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
+| `négatif` | Conditionnement négatif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
 | `latent` | Représentation latente vide correspondant aux dimensions mises à l'échelle | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/fr.md)

@@ -23,12 +23,12 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `GLB` | 用于向后兼容的旧版输出。 | STRING |
-| `OBJ` | 以GLB（二进制GL传输格式）文件格式生成的3D模型。 | FILE3DGLB |
-| `texture_image` | 以OBJ（Wavefront）文件格式生成的3D模型。 | FILE3DOBJ |
-| `optional_metallic` | 生成3D模型的纹理图像。 | IMAGE |
-| `optional_normal` | PBR材质的金属度贴图。若不可用则返回黑色图像。 | IMAGE |
-| `optional_roughness` | PBR材质的法线贴图。若不可用则返回黑色图像。 | IMAGE |
+| `模型文件` | 用于向后兼容的旧版输出。 | STRING |
+| `GLB` | 以GLB（二进制GL传输格式）文件格式生成的3D模型。 | FILE3DGLB |
+| `OBJ` | 以OBJ（Wavefront）文件格式生成的3D模型。 | FILE3DOBJ |
+| `texture_image` | 生成3D模型的纹理图像。 | IMAGE |
+| `optional_metallic` | PBR材质的金属度贴图。若不可用则返回黑色图像。 | IMAGE |
+| `optional_normal` | PBR材质的法线贴图。若不可用则返回黑色图像。 | IMAGE |
 | `optional_roughness` | PBR材质的粗糙度贴图。若不可用则返回黑色图像。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentImageToModelNode/zh.md)

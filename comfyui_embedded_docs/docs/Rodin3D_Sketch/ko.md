@@ -15,7 +15,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `GLB` | 생성된 3D 모델의 파일 경로입니다(하위 호환성 전용). | STRING |
+| `3D 모델 경로` | 생성된 3D 모델의 파일 경로입니다(하위 호환성 전용). | STRING |
 | `GLB` | GLB 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Sketch/ko.md)

@@ -23,7 +23,7 @@ Ce nœud construit une invite JSON structurée, spécifiquement formatée pour l
 
 | Nom de la sortie | Description | Type de données |
 |------------------|-------------|-----------------|
-| `prompt` | Un dictionnaire JSON structuré contenant la description de haut niveau, la description du style (le cas échéant), et la décomposition compositionnelle avec l'arrière-plan et les éléments. | DICT |
+| `invite` | Un dictionnaire JSON structuré contenant la description de haut niveau, la description du style (le cas échéant), et la décomposition compositionnelle avec l'arrière-plan et les éléments. | DICT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BuildJsonPromptIdeogram/fr.md)
 

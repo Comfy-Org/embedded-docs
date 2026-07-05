@@ -16,8 +16,8 @@ Este nodo prepara el condicionamiento para la edición de imágenes con Boogu. P
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `negativo` | Condicionamiento que contiene tanto el prompt de texto con tokens visuales como los latentes de referencia | CONDITIONING |
-| `negative` | Condicionamiento que contiene el prompt de texto negativo y los latentes de referencia | CONDITIONING |
+| `positivo` | Condicionamiento que contiene tanto el prompt de texto con tokens visuales como los latentes de referencia | CONDITIONING |
+| `negativo` | Condicionamiento que contiene el prompt de texto negativo y los latentes de referencia | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeBooguEdit/es.md)
 

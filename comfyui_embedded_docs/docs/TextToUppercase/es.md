@@ -12,7 +12,7 @@ El nodo Texto a Mayúsculas toma una entrada de texto y convierte todos sus cara
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `text` | El texto resultante con todos los caracteres convertidos a mayúsculas. | STRING |
+| `textos` | El texto resultante con todos los caracteres convertidos a mayúsculas. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToUppercase/es.md)
 

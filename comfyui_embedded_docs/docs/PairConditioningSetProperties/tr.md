@@ -18,8 +18,8 @@
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Uygulanan özelliklerle birlikte değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negative` | Uygulanan özelliklerle birlikte değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `pozitif` | Uygulanan özelliklerle birlikte değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | Uygulanan özelliklerle birlikte değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/tr.md)
 

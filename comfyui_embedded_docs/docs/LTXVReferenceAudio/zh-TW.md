@@ -22,7 +22,7 @@ LTXV 參考音訊節點用於音訊生成中的說話者身份轉移。它將參
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
 | `positive` | 已套用身份引導功能的模型。 | MODEL |
-| `negative` | 正向條件，現已包含編碼後的參考音訊資料。 | CONDITIONING |
+| `positive` | 正向條件，現已包含編碼後的參考音訊資料。 | CONDITIONING |
 | `negative` | 負向條件，現已包含編碼後的參考音訊資料。 | CONDITIONING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/zh-TW.md)

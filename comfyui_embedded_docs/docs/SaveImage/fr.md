@@ -13,7 +13,7 @@ Le nœud SaveImage enregistre les images qu'il reçoit dans votre répertoire `C
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `ui` | Ce nœud produit un résultat d'interface utilisateur contenant une liste des images sauvegardées avec leurs noms de fichiers et sous-dossiers. Il ne génère pas de données destinées à être connectées à d'autres nœuds. | UI_RESULT |
+| `images` | Ce nœud produit un résultat d'interface utilisateur contenant une liste des images sauvegardées avec leurs noms de fichiers et sous-dossiers. Il ne génère pas de données destinées à être connectées à d'autres nœuds. | UI_RESULT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/fr.md)
 

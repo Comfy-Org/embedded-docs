@@ -29,9 +29,9 @@ El nodo BerniniConditioning prepara datos de condicionamiento de video e imagen 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `negativo` | Condicionamiento positivo con latentes de contexto adjuntos | CONDITIONING |
-| `latente` | Condicionamiento negativo con latentes de contexto adjuntos | CONDITIONING |
-| `latent` | Tensor latente vacío con dimensiones que coinciden con el ancho, alto, longitud y tamaño de lote especificados | LATENT |
+| `positivo` | Condicionamiento positivo con latentes de contexto adjuntos | CONDITIONING |
+| `negativo` | Condicionamiento negativo con latentes de contexto adjuntos | CONDITIONING |
+| `latente` | Tensor latente vacío con dimensiones que coinciden con el ancho, alto, longitud y tamaño de lote especificados | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BerniniConditioning/es.md)
 

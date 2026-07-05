@@ -14,7 +14,7 @@ Este nodo ajusta los valores de píxeles de una imagen de entrada mediante un pr
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen resultante después de aplicar el proceso de normalización. | IMAGE |
+| `imágenes` | La imagen resultante después de aplicar el proceso de normalización. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/es.md)
 

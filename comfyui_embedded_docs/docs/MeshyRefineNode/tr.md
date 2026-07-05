@@ -18,9 +18,9 @@
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `meshy_task_id` | Oluşturulan GLB modelinin dosya adı. (Yalnızca geriye dönük uyumluluk içindir) | STRING |
-| `GLB` | Gönderilen iyileştirme işi için benzersiz görev kimliği. | MESHY_TASK_ID |
-| `FBX` | GLB formatında nihai iyileştirilmiş 3D model. | FILE3DGLB |
+| `model_file` | Oluşturulan GLB modelinin dosya adı. (Yalnızca geriye dönük uyumluluk içindir) | STRING |
+| `meshy_task_id` | Gönderilen iyileştirme işi için benzersiz görev kimliği. | MESHY_TASK_ID |
+| `GLB` | GLB formatında nihai iyileştirilmiş 3D model. | FILE3DGLB |
 | `FBX` | FBX formatında nihai iyileştirilmiş 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/tr.md)

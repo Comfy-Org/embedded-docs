@@ -12,7 +12,7 @@ Le nœud PreviewAudio crée un aperçu audio temporaire pouvant être lu directe
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `ui` | Affiche un widget de lecteur audio dans l'interface pour prévisualiser l'audio | UI |
+| `audio` | Affiche un widget de lecteur audio dans l'interface pour prévisualiser l'audio | UI |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/fr.md)
 

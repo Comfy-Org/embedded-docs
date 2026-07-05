@@ -24,8 +24,8 @@ Kling 립싱크 오디오-투-비디오 노드는 비디오 파일의 입 움직
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
 | `비디오 ID` | 립싱크된 입 움직임이 적용된 처리된 비디오 | VIDEO |
-| `재생 시간` | 처리된 비디오의 고유 식별자 | STRING |
-| `duration` | 처리된 비디오의 길이 | STRING |
+| `비디오 ID` | 처리된 비디오의 고유 식별자 | STRING |
+| `재생 시간` | 처리된 비디오의 길이 | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/ko.md)
 

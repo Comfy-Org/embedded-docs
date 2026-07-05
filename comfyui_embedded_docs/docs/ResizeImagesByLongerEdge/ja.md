@@ -13,7 +13,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `image` | リサイズされた画像、または画像のバッチ。出力は入力と同じ数の画像を持ち、各画像の長辺が指定された `longer_edge` の長さに一致します。 | IMAGE |
+| `images` | リサイズされた画像、または画像のバッチ。出力は入力と同じ数の画像を持ち、各画像の長辺が指定された `longer_edge` の長さに一致します。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByLongerEdge/ja.md)
 

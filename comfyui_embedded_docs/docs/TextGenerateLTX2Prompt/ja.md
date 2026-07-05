@@ -25,7 +25,7 @@ TextGenerateLTX2Prompt ノードは、テキスト生成ノードの特殊バー
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `output` | 言語モデルによって生成された、拡張または補完されたテキスト文字列です。 | STRING |
+| `生成テキスト` | 言語モデルによって生成された、拡張または補完されたテキスト文字列です。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/ja.md)
 

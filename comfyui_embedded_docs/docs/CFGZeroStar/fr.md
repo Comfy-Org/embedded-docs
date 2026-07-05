@@ -12,7 +12,7 @@ Le nœud CFGZeroStar applique une technique de mise à l'échelle spécialisée 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `patched_model` | Le modèle modifié avec la mise à l'échelle du guidage CFGZeroStar appliquée | MODEL |
+| `modèle corrigé` | Le modèle modifié avec la mise à l'échelle du guidage CFGZeroStar appliquée | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGZeroStar/fr.md)
 

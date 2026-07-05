@@ -13,7 +13,7 @@ Este nodo elimina el fondo de un video utilizando el servicio de IA de Bria y ge
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `mask` | Los fotogramas del video con el fondo eliminado | IMAGE |
+| `imágenes` | Los fotogramas del video con el fondo eliminado | IMAGE |
 | `mask` | La máscara alfa para los fotogramas del video | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaTransparentVideoBackground/es.md)

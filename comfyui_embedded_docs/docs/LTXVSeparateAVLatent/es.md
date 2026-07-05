@@ -14,8 +14,8 @@ El nodo LTXVSeparateAVLatent toma una representación latente audiovisual combin
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `latente_audio` | La representación latente que contiene los datos de video separados. | LATENT |
-| `audio_latent` | La representación latente que contiene los datos de audio separados. | LATENT |
+| `latente_video` | La representación latente que contiene los datos de video separados. | LATENT |
+| `latente_audio` | La representación latente que contiene los datos de audio separados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVSeparateAVLatent/es.md)
 

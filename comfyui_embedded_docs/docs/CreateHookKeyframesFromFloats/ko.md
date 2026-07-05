@@ -20,7 +20,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `HOOK_KF` | 새로 생성된 키프레임을 포함하는 후크 키프레임 그룹입니다. 새 그룹이거나 입력 키프레임 그룹에 추가된 그룹입니다 | HOOK_KEYFRAMES |
+| `KF 후크` | 새로 생성된 키프레임을 포함하는 후크 키프레임 그룹입니다. 새 그룹이거나 입력 키프레임 그룹에 추가된 그룹입니다 | HOOK_KEYFRAMES |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesFromFloats/ko.md)
 

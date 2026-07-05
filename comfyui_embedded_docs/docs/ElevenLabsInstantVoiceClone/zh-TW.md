@@ -15,7 +15,7 @@ ElevenLabs 即時語音克隆節點透過分析 1 到 8 段個人語音的音訊
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `voice` | 新建立的克隆語音模型的唯一識別碼。此輸出可連接到其他 ElevenLabs 文字轉語音節點。 | ELEVENLABS_VOICE |
+| `語音` | 新建立的克隆語音模型的唯一識別碼。此輸出可連接到其他 ElevenLabs 文字轉語音節點。 | ELEVENLABS_VOICE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/zh-TW.md)
 

@@ -15,8 +15,8 @@ El nodo `HunyuanRefinerLatent` procesa entradas de condicionamiento y latentes p
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo procesado con aumento de ruido aplicado y concatenación de imagen latente | CONDITIONING |
-| `latente` | El condicionamiento negativo procesado con aumento de ruido aplicado y concatenación de imagen latente | CONDITIONING |
+| `positivo` | El condicionamiento positivo procesado con aumento de ruido aplicado y concatenación de imagen latente | CONDITIONING |
+| `negativo` | El condicionamiento negativo procesado con aumento de ruido aplicado y concatenación de imagen latente | CONDITIONING |
 | `latente` | Una nueva salida latente con dimensiones [batch_size, 32, height, width, channels] | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/es.md)

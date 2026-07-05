@@ -12,7 +12,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `images` | 読み込まれた画像のリストです。このノードは、選択されたフォルダ内にあるすべての有効な画像ファイル（PNG、JPG、JPEG、WEBP）を読み込みます。 | IMAGE |
+| `画像` | 読み込まれた画像のリストです。このノードは、選択されたフォルダ内にあるすべての有効な画像ファイル（PNG、JPG、JPEG、WEBP）を読み込みます。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/ja.md)
 

@@ -14,7 +14,7 @@ El nodo ColorToRGBInt convierte un color especificado en formato hexadecimal en 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `hex` | El valor entero RGB calculado. Se obtiene mediante la fórmula: `(Rojo * 65536) + (Verde * 256) + Azul`. | INT |
+| `rgb_int` | El valor entero RGB calculado. Se obtiene mediante la fórmula: `(Rojo * 65536) + (Verde * 256) + Azul`. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/es.md)
 

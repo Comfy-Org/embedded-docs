@@ -17,10 +17,10 @@ Este nodo proporciona una vista previa avanzada de modelos 3D con salida de info
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `info_cámara` | Archivo de modelo 3D transmitido desde la entrada. | FILE3D |
-| `info_modelo_3d` | Metadatos de información del modelo, ya sea desde la entrada o desde el estado del viewport. | LOAD3DMODELINFO |
-| `ancho` | Configuración de cámara, ya sea desde la entrada o desde el estado del viewport. | LOAD3DCAMERA |
-| `alto` | Ancho de la vista previa en píxeles. | INT |
+| `archivo_modelo` | Archivo de modelo 3D transmitido desde la entrada. | FILE3D |
+| `info_cámara` | Metadatos de información del modelo, ya sea desde la entrada o desde el estado del viewport. | LOAD3DMODELINFO |
+| `info_modelo_3d` | Configuración de cámara, ya sea desde la entrada o desde el estado del viewport. | LOAD3DCAMERA |
+| `ancho` | Ancho de la vista previa en píxeles. | INT |
 | `alto` | Alto de la vista previa en píxeles. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAdvanced/es.md)

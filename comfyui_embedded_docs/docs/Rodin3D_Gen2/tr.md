@@ -16,7 +16,7 @@ Rodin3D_Gen2 düğümü, Rodin API'sini kullanarak 3D varlıklar üretir. Giriş
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GLB` | Üretilen 3D modele giden dosya yolu (geriye dönük uyumluluk için) | STRING |
+| `3B Model Yolu` | Üretilen 3D modele giden dosya yolu (geriye dönük uyumluluk için) | STRING |
 | `GLB` | GLB formatında üretilen 3D model | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen2/tr.md)

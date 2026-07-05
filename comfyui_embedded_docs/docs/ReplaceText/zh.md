@@ -14,7 +14,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `text` | 处理后的文本，其中所有 `搜索` 文本的出现位置均被替换为 `替换` 文本。 | STRING |
+| `文本` | 处理后的文本，其中所有 `搜索` 文本的出现位置均被替换为 `替换` 文本。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceText/zh.md)
 

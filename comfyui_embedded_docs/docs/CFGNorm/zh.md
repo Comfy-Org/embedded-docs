@@ -13,7 +13,7 @@ CFGNorm 节点对扩散模型中的无分类器引导（CFG）过程应用归一
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `patched_model` | 返回经过修改的模型，其采样过程已应用 CFG 归一化 | MODEL |
+| `模型` | 返回经过修改的模型，其采样过程已应用 CFG 归一化 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/zh.md)
 

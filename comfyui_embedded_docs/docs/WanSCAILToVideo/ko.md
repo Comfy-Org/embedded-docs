@@ -26,9 +26,9 @@ WanSCAILToVideo 노드는 비디오 생성을 위한 컨디셔닝과 빈 잠재 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `negative` | 수정된 포지티브 컨디셔닝으로, 참조 이미지 잠재, CLIP 비전 출력 또는 포즈 비디오 잠재가 포함될 수 있습니다. | CONDITIONING |
-| `latent` | 수정된 네거티브 컨디셔닝으로, 참조 이미지 잠재, CLIP 비전 출력 또는 포즈 비디오 잠재가 포함될 수 있습니다. | CONDITIONING |
-| `video_frame_offset` | `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]` 형태의 빈 잠재 텐서입니다. | LATENT |
+| `positive` | 수정된 포지티브 컨디셔닝으로, 참조 이미지 잠재, CLIP 비전 출력 또는 포즈 비디오 잠재가 포함될 수 있습니다. | CONDITIONING |
+| `negative` | 수정된 네거티브 컨디셔닝으로, 참조 이미지 잠재, CLIP 비전 출력 또는 포즈 비디오 잠재가 포함될 수 있습니다. | CONDITIONING |
+| `latent` | `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]` 형태의 빈 잠재 텐서입니다. | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSCAILToVideo/ko.md)
 

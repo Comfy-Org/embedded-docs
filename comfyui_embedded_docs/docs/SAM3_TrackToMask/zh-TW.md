@@ -15,7 +15,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `masks` | 每個影格的單一二進位遮罩，其中選取的物件會合併為一個遮罩。若未選取任何物件或無追蹤資料，則回傳零遮罩。 | MASK |
+| `mask` | 每個影格的單一二進位遮罩，其中選取的物件會合併為一個遮罩。若未選取任何物件或無追蹤資料，則回傳零遮罩。 | MASK |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackToMask/zh-TW.md)
 

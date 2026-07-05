@@ -16,7 +16,7 @@ RegexMatch düğümü, bir metin dizesinin belirli bir düzenli ifade kalıbıyl
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `matches` | Düzenli ifade kalıbı girdi dizesinin herhangi bir kısmıyla eşleşirse True, aksi halde False döndürür | BOOLEAN |
+| `eşleşmeler` | Düzenli ifade kalıbı girdi dizesinin herhangi bir kısmıyla eşleşirse True, aksi halde False döndürür | BOOLEAN |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/tr.md)
 

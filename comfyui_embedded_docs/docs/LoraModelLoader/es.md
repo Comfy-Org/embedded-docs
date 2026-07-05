@@ -17,7 +17,7 @@ El nodo LoraModelLoader aplica pesos de LoRA (Adaptación de Bajo Rango) entrena
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo de difusión modificado con los pesos de LoRA aplicados. | MODEL |
+| `model` | El modelo de difusión modificado con los pesos de LoRA aplicados. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraModelLoader/es.md)
 

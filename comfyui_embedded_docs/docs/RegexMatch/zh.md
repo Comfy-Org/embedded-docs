@@ -16,7 +16,7 @@ RegexMatch 节点用于检查文本字符串是否包含与给定正则表达式
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `matches` | 如果正则表达式模式匹配输入字符串的任何部分，则返回 True，否则返回 False | BOOLEAN |
+| `匹配结果` | 如果正则表达式模式匹配输入字符串的任何部分，则返回 True，否则返回 False | BOOLEAN |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/zh.md)
 

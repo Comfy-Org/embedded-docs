@@ -21,9 +21,9 @@ StableZero123_Conditioning 노드는 입력 이미지와 카메라 각도를 처
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `부정 조건` | 이미지 특징과 카메라 임베딩을 결합한 양성 컨디셔닝 데이터 | CONDITIONING |
-| `잠재 데이터` | 0으로 초기화된 특징을 가진 음성 컨디셔닝 데이터 | CONDITIONING |
-| `latent` | [batch_size, 4, height//8, width//8] 차원의 잠재 표현 | LATENT |
+| `긍정 조건` | 이미지 특징과 카메라 임베딩을 결합한 양성 컨디셔닝 데이터 | CONDITIONING |
+| `부정 조건` | 0으로 초기화된 특징을 가진 음성 컨디셔닝 데이터 | CONDITIONING |
+| `잠재 데이터` | [batch_size, 4, height//8, width//8] 차원의 잠재 표현 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning/ko.md)
 

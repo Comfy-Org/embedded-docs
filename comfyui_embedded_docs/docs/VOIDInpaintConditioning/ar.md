@@ -20,8 +20,8 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `negative` | التكييف الإيجابي مع إضافة معلومات الكامن الخاصة بالرسم الداخلي | CONDITIONING |
-| `latent` | التكييف السلبي مع إضافة معلومات الكامن الخاصة بالرسم الداخلي | CONDITIONING |
+| `positive` | التكييف الإيجابي مع إضافة معلومات الكامن الخاصة بالرسم الداخلي | CONDITIONING |
+| `negative` | التكييف السلبي مع إضافة معلومات الكامن الخاصة بالرسم الداخلي | CONDITIONING |
 | `latent` | موتر ضوضاء كامن مملوء بالأصفار ذو شكل [batch_size, 16, latent_t, latent_h, latent_w] | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/ar.md)

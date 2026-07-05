@@ -24,7 +24,7 @@ SAM3'ün bellek tabanlı izleyicisini kullanarak video kareleri arasındaki nesn
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `track_data` | Tüm video karelerindeki nesne maskelerini ve meta verilerini içeren izleme verileri | SAM3TrackData |
+| `iz_verisi` | Tüm video karelerindeki nesne maskelerini ve meta verilerini içeren izleme verileri | SAM3TrackData |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/tr.md)
 

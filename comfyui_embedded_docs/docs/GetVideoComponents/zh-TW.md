@@ -12,9 +12,9 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `音訊` | 從影片中提取的個別影格，作為獨立的影像。 | IMAGE |
-| `每秒影格數` | 從影片中提取的音軌。 | AUDIO |
-| `bit_depth` | 影片的幀率，以每秒影格數表示。 | FLOAT |
+| `影像` | 從影片中提取的個別影格，作為獨立的影像。 | IMAGE |
+| `音訊` | 從影片中提取的音軌。 | AUDIO |
+| `每秒影格數` | 影片的幀率，以每秒影格數表示。 | FLOAT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetVideoComponents/zh-TW.md)
 

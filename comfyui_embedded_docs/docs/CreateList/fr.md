@@ -14,7 +14,7 @@ Le nœud Créer une Liste combine plusieurs entrées en une seule liste séquent
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `list` | Une liste unique contenant tous les éléments des entrées connectées, concaténés dans l'ordre de leur fourniture. Le type de données de sortie correspond au type de données d'entrée. | Variable |
+| `liste` | Une liste unique contenant tous les éléments des entrées connectées, concaténés dans l'ordre de leur fourniture. Le type de données de sortie correspond au type de données d'entrée. | Variable |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateList/fr.md)
 

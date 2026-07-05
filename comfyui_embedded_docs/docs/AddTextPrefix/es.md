@@ -13,7 +13,7 @@ El nodo **Añadir Prefijo de Texto** modifica un texto añadiendo una cadena esp
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `text` | El texto resultante con el prefijo añadido al inicio. | STRING |
+| `textos` | El texto resultante con el prefijo añadido al inicio. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextPrefix/es.md)
 

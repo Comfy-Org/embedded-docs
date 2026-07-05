@@ -12,7 +12,7 @@ PreviewAudio düğümü, arayüzde doğrudan oynatılabilen geçici bir ses öni
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ui` | Arayüzde ses önizlemesi için bir ses oynatıcı widget'ı görüntüler | UI |
+| `audio` | Arayüzde ses önizlemesi için bir ses oynatıcı widget'ı görüntüler | UI |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/tr.md)
 

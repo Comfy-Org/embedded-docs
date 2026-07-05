@@ -14,7 +14,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `conditioning` | قائمة من القواميس الكامنة، حيث يحتوي كل قاموس على مفتاح `"samples"` مع موتر (tensor). | LATENT |
+| `latents` | قائمة من القواميس الكامنة، حيث يحتوي كل قاموس على مفتاح `"samples"` مع موتر (tensor). | LATENT |
 | `conditioning` | قائمة من قوائم التكييف، حيث تحتوي كل قائمة داخلية على بيانات تكييف لعينة مقابلة. | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/ar.md)

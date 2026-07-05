@@ -16,7 +16,7 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `reference_image_mask` | ドライビングポーズ動画のトラッキングデータからレンダリングされたカラーマスクです。背景色はreplacement_modeの設定に従います。 | IMAGE |
+| `pose_video_mask` | ドライビングポーズ動画のトラッキングデータからレンダリングされたカラーマスクです。背景色はreplacement_modeの設定に従います。 | IMAGE |
 | `reference_image_mask` | 参照画像のトラッキングデータからレンダリングされたカラーマスクです。モデルの仕様により、常に黒背景でレンダリングされます。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/ja.md)

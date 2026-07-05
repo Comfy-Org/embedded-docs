@@ -17,8 +17,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `keyframes_mask` | 填充後的關鍵幀序列列表，每個片段對應一個序列。 | IMAGE |
-| `audio_segment` | 遮罩列表，標示每個片段中有效的影格。 | MASK |
+| `keyframes_sequence` | 填充後的關鍵幀序列列表，每個片段對應一個序列。 | IMAGE |
+| `keyframes_mask` | 遮罩列表，標示每個片段中有效的影格。 | MASK |
 | `audio_segment` | 音訊片段列表，每個影片片段對應一個音訊片段。 | AUDIO |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/zh-TW.md)

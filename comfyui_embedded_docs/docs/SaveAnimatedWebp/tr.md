@@ -17,6 +17,6 @@ Bu düğüm, bir dizi görüntüyü animasyonlu WEBP dosyası olarak kaydetmek i
 
 | Alan | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ui` | Kaydedilen animasyonlu WEBP görüntülerini meta verileriyle birlikte gösteren ve animasyonun etkin olup olmadığını belirten bir UI bileşeni sağlar. | N/A |
+| `images` | Kaydedilen animasyonlu WEBP görüntülerini meta verileriyle birlikte gösteren ve animasyonun etkin olup olmadığını belirten bir UI bileşeni sağlar. | N/A |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/tr.md)

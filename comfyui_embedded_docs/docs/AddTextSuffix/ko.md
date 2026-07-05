@@ -15,7 +15,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `text` | 접미사가 추가된 후의 결과 텍스트입니다. | STRING |
+| `texts` | 접미사가 추가된 후의 결과 텍스트입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextSuffix/ko.md)
 

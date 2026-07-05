@@ -19,8 +19,8 @@ Bu düğüm, görüntüleri ve metinleri kodlayarak eğitim için veri hazırlar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `koşullandırma` | Gizil temsil sözlükleri listesi. | LATENT |
-| `conditioning` | Koşullandırma listeleri listesi. | CONDITIONING |
+| `latents` | Gizil temsil sözlükleri listesi. | LATENT |
+| `koşullandırma` | Koşullandırma listeleri listesi. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/tr.md)
 

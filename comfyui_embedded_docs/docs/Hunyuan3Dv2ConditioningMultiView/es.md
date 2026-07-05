@@ -17,7 +17,7 @@ El nodo `Hunyuan3Dv2ConditioningMultiView` procesa embeddings de visión CLIP mu
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negative` | Condicionamiento positivo que contiene los embeddings multivista combinados con codificación posicional | CONDITIONING |
+| `positive` | Condicionamiento positivo que contiene los embeddings multivista combinados con codificación posicional | CONDITIONING |
 | `negative` | Condicionamiento negativo con valores cero para aprendizaje contrastivo | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/es.md)

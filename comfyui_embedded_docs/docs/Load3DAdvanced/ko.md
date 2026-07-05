@@ -20,10 +20,10 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `model_3d_info` | 불러온 3D 모델 데이터입니다. 모델 파일을 선택하지 않으면 비어 있습니다. | FILE3DANY |
-| `camera_info` | 뷰포트 상태에서 가져온 불러온 3D 모델에 대한 정보입니다. | LOAD3DMODELINFO |
-| `width` | 뷰포트 상태에서 가져온 카메라 정보입니다. | LOAD3DCAMERA |
-| `height` | 지정된 출력 이미지 가로 크기입니다. | INT |
+| `model_3d` | 불러온 3D 모델 데이터입니다. 모델 파일을 선택하지 않으면 비어 있습니다. | FILE3DANY |
+| `model_3d_info` | 뷰포트 상태에서 가져온 불러온 3D 모델에 대한 정보입니다. | LOAD3DMODELINFO |
+| `camera_info` | 뷰포트 상태에서 가져온 카메라 정보입니다. | LOAD3DCAMERA |
+| `width` | 지정된 출력 이미지 가로 크기입니다. | INT |
 | `height` | 지정된 출력 이미지 세로 크기입니다. | INT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAdvanced/ko.md)

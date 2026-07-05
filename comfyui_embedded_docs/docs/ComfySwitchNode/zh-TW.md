@@ -18,7 +18,7 @@ Switch 節點根據布林條件在兩個可能的輸入之間進行選擇。當 
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `output` | 被選取的資料。如果 `切換` 為 true，則為 `為真時` 輸入的值；如果 `切換` 為 false，則為 `為假時` 輸入的值。 | MATCH_TYPE |
+| `輸出` | 被選取的資料。如果 `切換` 為 true，則為 `為真時` 輸入的值；如果 `切換` 為 false，則為 `為假時` 輸入的值。 | MATCH_TYPE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/zh-TW.md)
 

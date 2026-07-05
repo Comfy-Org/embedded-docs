@@ -14,8 +14,8 @@ Le nœud `ConditioningTimestepsRange` crée trois plages de pas de temps distinc
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `AVANT_PLAGE` | La plage de pas de temps principale définie par `start_percent` et `end_percent` | TIMESTEPS_RANGE |
-| `APRÈS_PLAGE` | La plage de pas de temps de 0,0 à `start_percent` | TIMESTEPS_RANGE |
-| `AFTER_RANGE` | La plage de pas de temps de `end_percent` à 1,0 | TIMESTEPS_RANGE |
+| `AVANT_PLAGE` | La plage de pas de temps de 0,0 à `start_percent` | TIMESTEPS_RANGE |
+| `APRÈS_PLAGE` | La plage de pas de temps de `end_percent` à 1,0 | TIMESTEPS_RANGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/fr.md)
 

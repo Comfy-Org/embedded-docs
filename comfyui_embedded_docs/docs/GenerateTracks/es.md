@@ -28,7 +28,7 @@ El nodo `GenerateTracks` crea múltiples rutas de movimiento paralelas para la g
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `longitud_de_ruta` | Un objeto de pistas que contiene las coordenadas de trayectoria generadas e información de visibilidad para todas las pistas en todos los fotogramas. | TRACKS |
-| `track_length` | El número de fotogramas para los cuales se generaron pistas, coincidiendo con el `número_de_frames` de entrada. | INT |
+| `longitud_de_ruta` | El número de fotogramas para los cuales se generaron pistas, coincidiendo con el `número_de_frames` de entrada. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GenerateTracks/es.md)
 

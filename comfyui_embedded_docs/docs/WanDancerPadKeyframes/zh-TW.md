@@ -17,8 +17,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `keyframes_mask` | 指定片段的填充後關鍵影格序列。 | IMAGE |
-| `audio_segment` | 遮罩，標示有效影格（1 表示關鍵影格位置，0 表示填充位置）。 | MASK |
+| `keyframes_sequence` | 指定片段的填充後關鍵影格序列。 | IMAGE |
+| `keyframes_mask` | 遮罩，標示有效影格（1 表示關鍵影格位置，0 表示填充位置）。 | MASK |
 | `audio_segment` | 此影片片段對應的音訊片段。 | AUDIO |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/zh-TW.md)

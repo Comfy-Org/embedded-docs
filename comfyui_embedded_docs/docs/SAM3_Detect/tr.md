@@ -31,7 +31,7 @@ SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya n
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `sınırlayıcı_kutular` | Bölütleme maskeleri. `bireysel_maskeler` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür | MASK |
+| `maskeler` | Bölütleme maskeleri. `bireysel_maskeler` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür | MASK |
 | `sınırlayıcı_kutular` | Koordinatlar ve güven puanlarıyla algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir | BOUNDING_BOX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/tr.md)

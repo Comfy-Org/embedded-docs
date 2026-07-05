@@ -18,8 +18,8 @@ Le nœud SV3D_Conditioning prépare les données de conditionnement pour la gén
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Les données de conditionnement positif contenant les embeddings d'image et les paramètres de caméra pour la génération | CONDITIONING |
-| `latent` | Les données de conditionnement négatif avec des embeddings mis à zéro pour la génération contrastive | CONDITIONING |
+| `positif` | Les données de conditionnement positif contenant les embeddings d'image et les paramètres de caméra pour la génération | CONDITIONING |
+| `négatif` | Les données de conditionnement négatif avec des embeddings mis à zéro pour la génération contrastive | CONDITIONING |
 | `latent` | Un tenseur latent vide dont les dimensions correspondent aux images vidéo et à la résolution spécifiées | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/fr.md)

@@ -12,7 +12,7 @@ TCFG（切向阻尼 CFG）在采样过程中优化无条件（负向）预测，
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `patched_model` | 应用切向阻尼 CFG 后的修改模型 | MODEL |
+| `模型` | 应用切向阻尼 CFG 后的修改模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TCFG/zh.md)
 

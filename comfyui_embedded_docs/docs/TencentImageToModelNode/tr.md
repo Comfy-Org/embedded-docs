@@ -23,13 +23,13 @@ Bu düğüm, Tencent'in Hunyuan3D Pro API'sini kullanarak bir veya daha fazla gi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GLB` | Geriye dönük uyumluluk için eski bir çıktı. | STRING |
-| `OBJ` | Oluşturulan 3B modelin GLB (İkili GL İletim Formatı) dosya formatındaki hali. | FILE3DGLB |
-| `doku_görseli` | Oluşturulan 3B modelin OBJ (Wavefront) dosya formatındaki hali. | FILE3DOBJ |
-| `isteğe_bağlı_metallic` | Oluşturulan 3B model için doku görüntüsü. | IMAGE |
-| `isteğe_bağlı_normal` | PBR malzemeler için metalik haritası. Mevcut değilse siyah bir görüntü döndürür. | IMAGE |
-| `isteğe_bağlı_roughness` | PBR malzemeler için normal haritası. Mevcut değilse siyah bir görüntü döndürür. | IMAGE |
-| `optional_roughness` | PBR malzemeler için pürüzlülük haritası. Mevcut değilse siyah bir görüntü döndürür. | IMAGE |
+| `model_dosyası` | Geriye dönük uyumluluk için eski bir çıktı. | STRING |
+| `GLB` | Oluşturulan 3B modelin GLB (İkili GL İletim Formatı) dosya formatındaki hali. | FILE3DGLB |
+| `OBJ` | Oluşturulan 3B modelin OBJ (Wavefront) dosya formatındaki hali. | FILE3DOBJ |
+| `doku_görseli` | Oluşturulan 3B model için doku görüntüsü. | IMAGE |
+| `isteğe_bağlı_metallic` | PBR malzemeler için metalik haritası. Mevcut değilse siyah bir görüntü döndürür. | IMAGE |
+| `isteğe_bağlı_normal` | PBR malzemeler için normal haritası. Mevcut değilse siyah bir görüntü döndürür. | IMAGE |
+| `isteğe_bağlı_roughness` | PBR malzemeler için pürüzlülük haritası. Mevcut değilse siyah bir görüntü döndürür. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentImageToModelNode/tr.md)
 

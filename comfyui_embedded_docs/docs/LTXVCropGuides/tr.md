@@ -14,8 +14,8 @@ LTXVCropGuides düğümü, ana kare bilgilerini kaldırarak ve gizli boyutları 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş pozitif koşullandırma | CONDITIONING |
-| `gizli` | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş negatif koşullandırma | CONDITIONING |
+| `pozitif` | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | Ana kare indeksleri ve kılavuz dikkat girişleri temizlenmiş, işlenmiş negatif koşullandırma | CONDITIONING |
 | `gizli` | Ana kare bölümlerinin kaldırıldığı, ayarlanmış örnekler ve gürültü maskesi ile kırpılmış gizli temsil | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVCropGuides/tr.md)

@@ -20,8 +20,8 @@ VOIDInpaintConditioning 節點準備 CogVideoX 模型進行修補所需的條件
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `negative` | 已添加修補潛在資訊的正面條件 | CONDITIONING |
-| `latent` | 已添加修補潛在資訊的負面條件 | CONDITIONING |
+| `positive` | 已添加修補潛在資訊的正面條件 | CONDITIONING |
+| `negative` | 已添加修補潛在資訊的負面條件 | CONDITIONING |
 | `latent` | 形狀為 [batch_size, 16, latent_t, latent_h, latent_w] 的零填充雜訊潛在張量 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/zh-TW.md)

@@ -40,8 +40,8 @@ El nodo TrainLoraNode crea y entrena un modelo LoRA (Adaptación de Bajo Rango) 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `mapa_de_pérdida` | Los pesos LoRA entrenados que se pueden guardar o aplicar a otros modelos. | LORA_MODEL |
-| `pasos` | Un diccionario que contiene los valores de pérdida del entrenamiento a lo largo del tiempo. | LOSS_MAP |
+| `lora` | Los pesos LoRA entrenados que se pueden guardar o aplicar a otros modelos. | LORA_MODEL |
+| `mapa_de_pérdida` | Un diccionario que contiene los valores de pérdida del entrenamiento a lo largo del tiempo. | LOSS_MAP |
 | `pasos` | El número total de pasos de entrenamiento completados (incluyendo cualquier paso anterior de un LoRA existente). | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TrainLoraNode/es.md)

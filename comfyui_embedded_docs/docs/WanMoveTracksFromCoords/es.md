@@ -44,7 +44,7 @@ El nodo WanMoveTracksFromCoords crea trayectorias de movimiento a partir de una 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `longitud_de_pista` | Los datos de trayectoria generados, que contienen las coordenadas de la ruta y la información de visibilidad para cada trayectoria. | TRACKS |
-| `track_length` | El número total de fotogramas en las trayectorias generadas. | INT |
+| `longitud_de_pista` | El número total de fotogramas en las trayectorias generadas. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/es.md)
 

@@ -15,7 +15,7 @@ LTXV Ses VAE Kod Çözücü düğümü, bir sesin gizli uzay temsilini tekrar se
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `Audio` | Kod çözülmüş ses dalga formu ve ilişkili örnekleme hızı. Dalga formu, giriş gizli uzay temsiliyle aynı cihaza taşınmış bir tensördür ve örnekleme hızı Ses VAE modeli tarafından belirlenir. | AUDIO |
+| `Ses` | Kod çözülmüş ses dalga formu ve ilişkili örnekleme hızı. Dalga formu, giriş gizli uzay temsiliyle aynı cihaza taşınmış bir tensördür ve örnekleme hızı Ses VAE modeli tarafından belirlenir. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAudioVAEDecode/tr.md)
 

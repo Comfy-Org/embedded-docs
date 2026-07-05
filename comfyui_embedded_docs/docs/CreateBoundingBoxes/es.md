@@ -15,9 +15,9 @@ Este nodo proporciona una interfaz de lienzo para dibujar cuadros delimitadores 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |-------------|-------------|-----------|
-| `cajas_delimitadoras` | Una imagen RGB que muestra el lienzo con todos los cuadros delimitadores renderizados, incluyendo etiquetas, muestras de paletas de colores y texto descriptivo. | IMAGE |
-| `elementos` | Una lista de cuadros delimitadores en coordenadas de píxeles, donde cada cuadro contiene valores de x, y, ancho y alto. | BOUNDING_BOX |
-| `elements` | Un arreglo estructurado de objetos de elementos, cada uno con tipo, coordenadas del cuadro delimitador (normalizadas 0-1000), texto (para tipo texto), descripción y paleta de colores. | ARRAY |
+| `vista_previa` | Una imagen RGB que muestra el lienzo con todos los cuadros delimitadores renderizados, incluyendo etiquetas, muestras de paletas de colores y texto descriptivo. | IMAGE |
+| `cajas_delimitadoras` | Una lista de cuadros delimitadores en coordenadas de píxeles, donde cada cuadro contiene valores de x, y, ancho y alto. | BOUNDING_BOX |
+| `elementos` | Un arreglo estructurado de objetos de elementos, cada uno con tipo, coordenadas del cuadro delimitador (normalizadas 0-1000), texto (para tipo texto), descripción y paleta de colores. | ARRAY |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/es.md)
 

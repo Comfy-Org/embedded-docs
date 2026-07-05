@@ -18,7 +18,7 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `ui` | 保存された音声ファイル情報を含むUI出力です。 | UI |
+| `audio` | 保存された音声ファイル情報を含むUI出力です。 | UI |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioAdvanced/ja.md)
 

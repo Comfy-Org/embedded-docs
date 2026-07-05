@@ -12,7 +12,7 @@
 
 | 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `images` | 已載入圖片的列表。此節點會載入在所選資料夾中找到的所有有效圖片檔案（PNG、JPG、JPEG、WEBP）。 | IMAGE |
+| `圖片` | 已載入圖片的列表。此節點會載入在所選資料夾中找到的所有有效圖片檔案（PNG、JPG、JPEG、WEBP）。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/zh-TW.md)
 

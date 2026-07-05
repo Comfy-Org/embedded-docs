@@ -13,7 +13,7 @@ Le nœud Ajuster la Luminosité modifie la luminosité d'une image d'entrée. Il
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image de sortie avec la luminosité ajustée. | IMAGE |
+| `images` | L'image de sortie avec la luminosité ajustée. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AdjustBrightness/fr.md)
 

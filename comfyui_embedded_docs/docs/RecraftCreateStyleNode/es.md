@@ -15,7 +15,7 @@ Este nodo crea un estilo personalizado para la generación de imágenes mediante
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `style_id` | El identificador único para el estilo personalizado recién creado. | STRING |
+| `id_estilo` | El identificador único para el estilo personalizado recién creado. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreateStyleNode/es.md)
 

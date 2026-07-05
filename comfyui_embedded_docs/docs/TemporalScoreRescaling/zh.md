@@ -14,7 +14,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `patched_model` | 输入模型，现已在其采样过程中应用了时间分数重缩放函数进行修补。 | MODEL |
+| `模型` | 输入模型，现已在其采样过程中应用了时间分数重缩放函数进行修补。 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/zh.md)
 

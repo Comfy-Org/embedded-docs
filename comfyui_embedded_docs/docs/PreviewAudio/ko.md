@@ -14,7 +14,7 @@ PreviewAudio 노드는 인터페이스에서 직접 재생할 수 있는 임시 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `ui` | 오디오 미리보기를 위해 인터페이스에 오디오 플레이어 위젯을 표시합니다 | UI |
+| `audio` | 오디오 미리보기를 위해 인터페이스에 오디오 플레이어 위젯을 표시합니다 | UI |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/ko.md)
 

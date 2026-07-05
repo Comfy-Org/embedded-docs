@@ -16,9 +16,9 @@ Le nœud Meshy : Rig Model prend un modèle 3D issu d'une tâche Meshy précéde
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `rig_task_id` | Une sortie héritée pour la rétrocompatibilité, contenant le nom du fichier du modèle GLB. | STRING |
-| `GLB` | L'identifiant unique de tâche pour cette opération d'armature, pouvant être utilisé pour référencer le résultat. | STRING |
-| `FBX` | Le modèle de personnage 3D armaturé enregistré au format de fichier GLB. | FILE3DGLB |
+| `model_file` | Une sortie héritée pour la rétrocompatibilité, contenant le nom du fichier du modèle GLB. | STRING |
+| `rig_task_id` | L'identifiant unique de tâche pour cette opération d'armature, pouvant être utilisé pour référencer le résultat. | STRING |
+| `GLB` | Le modèle de personnage 3D armaturé enregistré au format de fichier GLB. | FILE3DGLB |
 | `FBX` | Le modèle de personnage 3D armaturé enregistré au format de fichier FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/fr.md)

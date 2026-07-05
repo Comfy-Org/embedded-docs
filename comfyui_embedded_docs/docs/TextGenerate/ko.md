@@ -29,7 +29,7 @@ TextGenerate 노드는 CLIP 모델을 사용하여 사용자의 프롬프트를 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `generated_text` | 입력 프롬프트와 선택적 이미지, 비디오 또는 오디오를 기반으로 모델이 생성한 텍스트입니다. | STRING |
+| `생성된 텍스트` | 입력 프롬프트와 선택적 이미지, 비디오 또는 오디오를 기반으로 모델이 생성한 텍스트입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/ko.md)
 

@@ -21,8 +21,8 @@ Este nodo convierte una sola imagen 2D en un modelo 3D utilizando la API de Trip
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `id_tarea_modelo` | La ruta del archivo del modelo 3D generado. Esta salida se proporciona únicamente para compatibilidad con versiones anteriores. | STRING |
-| `GLB` | El ID de tarea único para la solicitud de generación del modelo. | MODEL_TASK_ID |
+| `archivo_modelo` | La ruta del archivo del modelo 3D generado. Esta salida se proporciona únicamente para compatibilidad con versiones anteriores. | STRING |
+| `id_tarea_modelo` | El ID de tarea único para la solicitud de generación del modelo. | MODEL_TASK_ID |
 | `GLB` | El modelo 3D generado en formato GLB. | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1ImageToModelNode/es.md)

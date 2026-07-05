@@ -16,8 +16,8 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `テキスト` | 読み込まれた画像テンソルのリストです。 | IMAGE |
-| `texts` | 各読み込まれた画像に対応するテキストキャプションのリストです。 | STRING |
+| `画像` | 読み込まれた画像テンソルのリストです。 | IMAGE |
+| `テキスト` | 各読み込まれた画像に対応するテキストキャプションのリストです。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/ja.md)
 

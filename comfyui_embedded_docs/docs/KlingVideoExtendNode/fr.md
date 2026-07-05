@@ -20,7 +20,7 @@ Le nœud Kling Video Extend vous permet de prolonger des vidéos créées par d'
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `video_id` | La vidéo prolongée générée par l'API Kling | VIDEO |
-| `duration` | L'identifiant unique de la vidéo prolongée | STRING |
+| `video_id` | L'identifiant unique de la vidéo prolongée | STRING |
 | `duration` | La durée de la vidéo prolongée | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoExtendNode/fr.md)

@@ -14,7 +14,7 @@ Le nœud PixVerse Template vous permet de sélectionner parmi les modèles dispo
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `pixverse_template` | L'identifiant du modèle correspondant au nom de modèle sélectionné, pouvant être utilisé par d'autres nœuds PixVerse pour la génération vidéo. | STRING |
+| `modèle_pixverse` | L'identifiant du modèle correspondant au nom de modèle sélectionné, pouvant être utilisé par d'autres nœuds PixVerse pour la génération vidéo. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTemplateNode/fr.md)
 

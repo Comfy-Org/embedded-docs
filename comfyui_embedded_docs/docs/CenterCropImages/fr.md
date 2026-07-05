@@ -14,7 +14,7 @@ Le nœud Center Crop Images découpe une image à partir de son centre selon une
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image résultante après l'opération de découpage centré. | IMAGE |
+| `images` | L'image résultante après l'opération de découpage centré. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CenterCropImages/fr.md)
 

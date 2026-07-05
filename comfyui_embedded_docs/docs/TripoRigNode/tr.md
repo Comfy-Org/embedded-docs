@@ -15,8 +15,8 @@ TripoRigNode, orijinal bir model görev kimliğinden (task ID) donanımlı (rigg
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `rig_görev_id` | Oluşturulan donanımlı 3B model dosyası (geriye dönük uyumluluk için korunmuştur) | STRING |
-| `GLB` | Donanım oluşturma sürecini izlemek için görev kimliği | RIG_TASK_ID |
+| `model_dosyası` | Oluşturulan donanımlı 3B model dosyası (geriye dönük uyumluluk için korunmuştur) | STRING |
+| `rig_görev_id` | Donanım oluşturma sürecini izlemek için görev kimliği | RIG_TASK_ID |
 | `GLB` | GLB formatında oluşturulan donanımlı 3B model | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRigNode/tr.md)

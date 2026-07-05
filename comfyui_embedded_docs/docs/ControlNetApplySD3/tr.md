@@ -21,7 +21,7 @@ Bu düğüm, Stable Diffusion 3 koşullandırmasına ControlNet yönlendirmesi u
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `pozitif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
 | `negatif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/tr.md)

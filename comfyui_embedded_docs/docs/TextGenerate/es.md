@@ -29,7 +29,7 @@ El nodo TextGenerate utiliza un modelo CLIP para crear texto basado en la indica
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `generated_text` | El texto generado por el modelo basado en la indicación de entrada y la imagen, video o audio opcionales. | STRING |
+| `texto_generado` | El texto generado por el modelo basado en la indicación de entrada y la imagen, video o audio opcionales. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/es.md)
 

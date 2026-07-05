@@ -17,7 +17,7 @@ StableCascade_EmptyLatentImage 節點會為 Stable Cascade 模型建立空的潛
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `stage_b` | 階段 C 的潛在張量，維度為 [batch_size, 16, height//compression, width//compression] | LATENT |
+| `stage_c` | 階段 C 的潛在張量，維度為 [batch_size, 16, height//compression, width//compression] | LATENT |
 | `stage_b` | 階段 B 的潛在張量，維度為 [batch_size, 4, height//4, width//4] | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/zh-TW.md)

@@ -23,7 +23,7 @@ Renderiza una salpicadura gaussiana como imagen utilizando un rasterizador EWA a
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `mask` | La imagen renderizada de la salpicadura gaussiana | IMAGE |
+| `imagen` | La imagen renderizada de la salpicadura gaussiana | IMAGE |
 | `mask` | La máscara alfa de la salpicadura renderizada | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/es.md)

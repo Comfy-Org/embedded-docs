@@ -16,7 +16,7 @@ Ce nœud génère des masques colorés à partir des données de suivi SAM3, qui
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `reference_image_mask` | Masque coloré généré à partir des données de suivi de la vidéo de pose dynamique. La couleur d'arrière-plan suit le paramètre replacement_mode. | IMAGE |
+| `pose_video_mask` | Masque coloré généré à partir des données de suivi de la vidéo de pose dynamique. La couleur d'arrière-plan suit le paramètre replacement_mode. | IMAGE |
 | `reference_image_mask` | Masque coloré généré à partir des données de suivi de l'image de référence. Toujours rendu avec un fond noir conformément à la convention du modèle. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/fr.md)

@@ -19,7 +19,7 @@ Ce nœud re-rend une vidéo existante sous une nouvelle instruction en utilisant
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
 | `identifiant_génération` | La vidéo éditée en sortie. | VIDEO |
-| `generation_id` | L'identifiant unique pour la requête de génération. | STRING |
+| `identifiant_génération` | L'identifiant unique pour la requête de génération. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32VideoEditNode/fr.md)
 

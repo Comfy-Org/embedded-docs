@@ -22,7 +22,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `group_id` | 새로 생성된 비디오 자산의 고유 식별자입니다. | STRING |
+| `asset_id` | 새로 생성된 비디오 자산의 고유 식별자입니다. | STRING |
 | `group_id` | 새 비디오가 포함된 자산 그룹의 식별자입니다. 제공된 `group_id`이거나 새로 생성된 ID입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/ko.md)

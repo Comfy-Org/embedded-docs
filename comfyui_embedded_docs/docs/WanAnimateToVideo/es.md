@@ -38,11 +38,11 @@ El nodo WanAnimateToVideo genera contenido de video combinando múltiples entrad
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial, imagen latente concatenada y máscara concatenada | CONDITIONING |
-| `latente` | Condicionamiento negativo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial (invertidos), imagen latente concatenada y máscara concatenada | CONDITIONING |
-| `recortar_latente` | Contenido de video generado en formato de espacio latente con forma [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
-| `recortar_imagen` | Información de recorte en espacio latente que indica la cantidad de fotogramas latentes a recortar desde el inicio (corresponde a los fotogramas latentes de la imagen de referencia) | INT |
-| `desplazamiento_fotograma_video` | Información de recorte en espacio de imagen para fotogramas de movimiento de referencia, que indica la cantidad de fotogramas de imagen a recortar desde el inicio | INT |
+| `positivo` | Condicionamiento positivo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial, imagen latente concatenada y máscara concatenada | CONDITIONING |
+| `negativo` | Condicionamiento negativo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial (invertidos), imagen latente concatenada y máscara concatenada | CONDITIONING |
+| `latente` | Contenido de video generado en formato de espacio latente con forma [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
+| `recortar_latente` | Información de recorte en espacio latente que indica la cantidad de fotogramas latentes a recortar desde el inicio (corresponde a los fotogramas latentes de la imagen de referencia) | INT |
+| `recortar_imagen` | Información de recorte en espacio de imagen para fotogramas de movimiento de referencia, que indica la cantidad de fotogramas de imagen a recortar desde el inicio | INT |
 | `desplazamiento_fotograma_video` | Desplazamiento de fotogramas actualizado para continuar la generación de video en fragmentos, calculado como el desplazamiento anterior más la longitud generada | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanAnimateToVideo/es.md)
