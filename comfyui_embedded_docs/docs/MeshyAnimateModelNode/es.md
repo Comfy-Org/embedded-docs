@@ -13,8 +13,8 @@ Este nodo aplica una animación específica a un modelo de personaje 3D que ya h
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `GLB` | Un identificador de cadena para el modelo animado. Esta salida se proporciona solo por compatibilidad con versiones anteriores. | STRING |
-| `FBX` | El archivo de modelo 3D animado en formato GLB. | FILE3DGLB |
+| `model_file` | Un identificador de cadena para el modelo animado. Esta salida se proporciona solo por compatibilidad con versiones anteriores. | STRING |
+| `GLB` | El archivo de modelo 3D animado en formato GLB. | FILE3DGLB |
 | `FBX` | El archivo de modelo 3D animado en formato FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/es.md)

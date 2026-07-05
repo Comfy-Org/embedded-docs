@@ -24,8 +24,8 @@ HunyuanVideo15ImageToVideo ノードは、HunyuanVideo 1.5 モデルに基づい
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ネガティブ` | 変更されたポジティブ条件付けです。エンコードされた開始画像や CLIP ビジョン出力が含まれる場合があります。 | CONDITIONING |
-| `latent` | 変更されたネガティブ条件付けです。エンコードされた開始画像や CLIP ビジョン出力が含まれる場合があります。 | CONDITIONING |
+| `ポジティブ` | 変更されたポジティブ条件付けです。エンコードされた開始画像や CLIP ビジョン出力が含まれる場合があります。 | CONDITIONING |
+| `ネガティブ` | 変更されたネガティブ条件付けです。エンコードされた開始画像や CLIP ビジョン出力が含まれる場合があります。 | CONDITIONING |
 | `latent` | 指定されたバッチサイズ、動画長、幅、高さに合わせて次元が設定された空の潜在テンソルです。 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/ja.md)

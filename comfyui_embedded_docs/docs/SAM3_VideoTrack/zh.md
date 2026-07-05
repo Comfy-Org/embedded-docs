@@ -22,7 +22,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `track_data` | 包含所有视频帧中对象遮罩和元数据的跟踪数据 | SAM3TrackData |
+| `跟踪数据` | 包含所有视频帧中对象遮罩和元数据的跟踪数据 | SAM3TrackData |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/zh.md)
 

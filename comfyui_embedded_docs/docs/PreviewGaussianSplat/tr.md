@@ -17,10 +17,10 @@ PreviewGaussianSplat düğümü, ComfyUI arayüzü içinde bir 3D gaussian splat
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `model_3d_info` | Giriş 3D gaussian splat dosyası, değiştirilmeden geçirilir. | FILE3D |
-| `camera_info` | Girişten veya görünüm alanı durumundan türetilen 3D model hakkında meta veri bilgisi. | LOAD3DMODELINFO |
-| `genişlik` | Girişten veya görünüm alanı durumundan türetilen önizleme için kamera bilgisi. | LOAD3DCAMERA |
-| `yükseklik` | Önizleme görüntüsünün genişliği. | INT |
+| `model_3d` | Giriş 3D gaussian splat dosyası, değiştirilmeden geçirilir. | FILE3D |
+| `model_3d_info` | Girişten veya görünüm alanı durumundan türetilen 3D model hakkında meta veri bilgisi. | LOAD3DMODELINFO |
+| `camera_info` | Girişten veya görünüm alanı durumundan türetilen önizleme için kamera bilgisi. | LOAD3DCAMERA |
+| `genişlik` | Önizleme görüntüsünün genişliği. | INT |
 | `yükseklik` | Önizleme görüntüsünün yüksekliği. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewGaussianSplat/tr.md)

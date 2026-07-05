@@ -23,7 +23,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `prompt` | 상위 수준 설명, 스타일 설명(해당하는 경우), 배경 및 요소가 포함된 구성적 분해를 담은 구조화된 JSON 딕셔너리입니다. | DICT |
+| `프롬프트` | 상위 수준 설명, 스타일 설명(해당하는 경우), 배경 및 요소가 포함된 구성적 분해를 담은 구조화된 JSON 딕셔너리입니다. | DICT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BuildJsonPromptIdeogram/ko.md)
 

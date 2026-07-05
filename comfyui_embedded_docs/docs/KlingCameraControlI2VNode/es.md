@@ -46,7 +46,7 @@ El nodo de Control de Cámara Kling de Imagen a Video transforma imágenes fijas
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `video_id` | La salida de video generada | VIDEO |
-| `duration` | Identificador único para el video generado | STRING |
+| `video_id` | Identificador único para el video generado | STRING |
 | `duration` | Duración del video generado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/es.md)

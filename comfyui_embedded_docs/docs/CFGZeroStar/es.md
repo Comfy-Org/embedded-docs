@@ -12,7 +12,7 @@ El nodo CFGZeroStar aplica una técnica especializada de escalado de guía a mod
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `patched_model` | El modelo modificado con el escalado de guía CFGZeroStar aplicado | MODEL |
+| `modelo_modificado` | El modelo modificado con el escalado de guía CFGZeroStar aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGZeroStar/es.md)
 

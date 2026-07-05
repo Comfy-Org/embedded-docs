@@ -32,7 +32,7 @@ Ce nœud génère un modèle 3D à partir d'une à cinq images de référence en
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `model_file` | Le fichier du modèle 3D généré dans le format de géométrie sélectionné. | FILE3D |
+| `fichier_modèle` | Le fichier du modèle 3D généré dans le format de géométrie sélectionné. | FILE3D |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Image/fr.md)
 

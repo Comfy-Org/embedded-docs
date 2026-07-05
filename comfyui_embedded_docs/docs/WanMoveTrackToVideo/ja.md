@@ -24,8 +24,8 @@ WanMoveTrackToVideo ノードは、動画生成用のコンディショニング
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `negative` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたポジティブコンディショニング。 | CONDITIONING |
-| `latent` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたネガティブコンディショニング。 | CONDITIONING |
+| `positive` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたポジティブコンディショニング。 | CONDITIONING |
+| `negative` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたネガティブコンディショニング。 | CONDITIONING |
 | `latent` | `バッチサイズ`、`長さ`、`高さ`、`幅` の入力によって形状が決定される空の潜在テンソル。 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/ja.md)

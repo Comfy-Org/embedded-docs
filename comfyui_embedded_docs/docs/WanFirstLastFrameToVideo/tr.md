@@ -24,9 +24,9 @@ WanFirstLastFrameToVideo düğümü, başlangıç ve bitiş karelerini metin ist
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumlu koşullandırma | CONDITIONING |
-| `gizli` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumsuz koşullandırma | CONDITIONING |
-| `latent` | Boyutları belirtilen video parametreleriyle eşleşen boş gizli tensör | LATENT |
+| `pozitif` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumlu koşullandırma | CONDITIONING |
+| `negatif` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumsuz koşullandırma | CONDITIONING |
+| `gizli` | Boyutları belirtilen video parametreleriyle eşleşen boş gizli tensör | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/tr.md)
 

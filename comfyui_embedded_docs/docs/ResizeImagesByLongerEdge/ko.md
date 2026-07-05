@@ -13,7 +13,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `image` | 크기가 조정된 이미지 또는 이미지 배치입니다. 출력은 입력과 동일한 수의 이미지를 가지며, 각 이미지의 긴 변이 지정된 `longer_edge` 길이와 일치합니다. | IMAGE |
+| `images` | 크기가 조정된 이미지 또는 이미지 배치입니다. 출력은 입력과 동일한 수의 이미지를 가지며, 각 이미지의 긴 변이 지정된 `longer_edge` 길이와 일치합니다. | IMAGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByLongerEdge/ko.md)
 

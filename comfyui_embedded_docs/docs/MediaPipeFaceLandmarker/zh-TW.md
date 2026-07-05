@@ -19,7 +19,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `bboxes` | 結構化輸出，包含每幀的人臉偵測結果，包括 468 個面部特徵點、ARKit-52 混合變形係數、轉換矩陣以及用於網格視覺化的連線集合。 | FACE_LANDMARKS |
+| `face_landmarks` | 結構化輸出，包含每幀的人臉偵測結果，包括 468 個面部特徵點、ARKit-52 混合變形係數、轉換矩陣以及用於網格視覺化的連線集合。 | FACE_LANDMARKS |
 | `bboxes` | 每個偵測到的人臉的邊界框列表，包含座標 (x, y, width, height)、標籤 "face" 和信心分數。每個輸入幀對應一個列表。 | BOUNDING_BOX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/zh-TW.md)

@@ -20,8 +20,8 @@ Le nœud **LTXVAddGuide** ajoute un guidage de conditionnement vidéo aux séque
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif mis à jour avec les informations de guidage par images clés | CONDITIONING |
-| `latent` | Conditionnement négatif mis à jour avec les informations de guidage par images clés | CONDITIONING |
+| `positive` | Conditionnement positif mis à jour avec les informations de guidage par images clés | CONDITIONING |
+| `négatif` | Conditionnement négatif mis à jour avec les informations de guidage par images clés | CONDITIONING |
 | `latent` | Séquence latente avec les trames de conditionnement intégrées et le masque de bruit mis à jour | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/fr.md)

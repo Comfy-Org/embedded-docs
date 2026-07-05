@@ -20,8 +20,8 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `سلبي` | التكييف الإيجابي المعدل مع الخصائص المطبقة | CONDITIONING |
-| `negative` | التكييف السلبي المعدل مع الخصائص المطبقة | CONDITIONING |
+| `إيجابي` | التكييف الإيجابي المعدل مع الخصائص المطبقة | CONDITIONING |
+| `سلبي` | التكييف السلبي المعدل مع الخصائص المطبقة | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/ar.md)
 

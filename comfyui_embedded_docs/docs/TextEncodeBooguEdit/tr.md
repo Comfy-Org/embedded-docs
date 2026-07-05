@@ -16,7 +16,7 @@ Bu düğüm, Boogu ile görüntü düzenleme için koşullandırmayı (condition
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `negative` | Görsel belirteçlerle birlikte metin istemini ve referans gizli değişkenlerini içeren koşullandırma | CONDITIONING |
+| `positive` | Görsel belirteçlerle birlikte metin istemini ve referans gizli değişkenlerini içeren koşullandırma | CONDITIONING |
 | `negative` | Negatif metin istemini ve referans gizli değişkenlerini içeren koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeBooguEdit/tr.md)

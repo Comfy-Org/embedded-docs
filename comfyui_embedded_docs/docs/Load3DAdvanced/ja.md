@@ -20,10 +20,10 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `model_3d_info` | 読み込まれた3Dモデルデータ。モデルファイルが選択されていない場合は空。 | FILE3DANY |
-| `camera_info` | ビューポート状態から取得した、読み込まれた3Dモデルに関する情報。 | LOAD3DMODELINFO |
-| `width` | ビューポート状態から取得したカメラ情報。 | LOAD3DCAMERA |
-| `height` | 指定された出力画像の幅。 | INT |
+| `model_3d` | 読み込まれた3Dモデルデータ。モデルファイルが選択されていない場合は空。 | FILE3DANY |
+| `model_3d_info` | ビューポート状態から取得した、読み込まれた3Dモデルに関する情報。 | LOAD3DMODELINFO |
+| `camera_info` | ビューポート状態から取得したカメラ情報。 | LOAD3DCAMERA |
+| `width` | 指定された出力画像の幅。 | INT |
 | `height` | 指定された出力画像の高さ。 | INT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAdvanced/ja.md)

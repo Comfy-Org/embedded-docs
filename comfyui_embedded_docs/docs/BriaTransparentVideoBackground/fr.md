@@ -13,7 +13,7 @@ Ce nœud supprime l'arrière-plan d'une vidéo à l'aide du service d'IA Bria et
 
 | Nom de Sortie | Description | Type de Données |
 |---------------|-------------|-----------------|
-| `mask` | Les images vidéo dont l'arrière-plan a été supprimé | IMAGE |
+| `images` | Les images vidéo dont l'arrière-plan a été supprimé | IMAGE |
 | `mask` | Le masque alpha pour les images vidéo | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaTransparentVideoBackground/fr.md)

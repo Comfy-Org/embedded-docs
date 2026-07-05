@@ -17,7 +17,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `negative` | تهيئة إيجابية تحتوي على التضمينات متعددة الزوايا المدمجة مع الترميز الموضعي | CONDITIONING |
+| `positive` | تهيئة إيجابية تحتوي على التضمينات متعددة الزوايا المدمجة مع الترميز الموضعي | CONDITIONING |
 | `negative` | تهيئة سلبية بقيم صفرية للتعلم التبايني | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/ar.md)

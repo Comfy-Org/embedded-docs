@@ -23,9 +23,9 @@ StableZero123_Conditioning_Batched düğümü, bir giriş görüntüsünü işle
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Görüntü yerleştirmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
-| `gizli` | Sıfır başlangıçlı yerleştirmelere sahip negatif koşullandırma verileri | CONDITIONING |
-| `latent` | Toplu işlem indeksleme bilgisi ile işlenmiş görüntünün gizli temsili | LATENT |
+| `pozitif` | Görüntü yerleştirmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
+| `negatif` | Sıfır başlangıçlı yerleştirmelere sahip negatif koşullandırma verileri | CONDITIONING |
+| `gizli` | Toplu işlem indeksleme bilgisi ile işlenmiş görüntünün gizli temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/tr.md)
 

@@ -22,8 +22,8 @@ Bu düğüm, Tripo P1 API'sini kullanarak bir metin açıklamasından 3B model o
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_görev_id` | Oluşturulan 3B modelin dosya yolu (yalnızca geriye dönük uyumluluk için). | STRING |
-| `GLB` | Model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
+| `model_dosyası` | Oluşturulan 3B modelin dosya yolu (yalnızca geriye dönük uyumluluk için). | STRING |
+| `model_görev_id` | Model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
 | `GLB` | GLB formatında oluşturulan 3B model. | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/tr.md)

@@ -20,7 +20,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `group_id` | 新しく作成されたビデオアセットの一意の識別子。 | STRING |
+| `asset_id` | 新しく作成されたビデオアセットの一意の識別子。 | STRING |
 | `group_id` | 新しいビデオを含むアセットグループの識別子。これは、指定された `group_id` または新しく作成されたものになります。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/ja.md)

@@ -24,9 +24,9 @@ El nodo WanFirstLastFrameToVideo crea condicionamiento de video combinando fotog
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
-| `latente` | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
-| `latent` | Tensor latente vacío con dimensiones que coinciden con los parámetros de video especificados | LATENT |
+| `positivo` | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
+| `negativo` | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
+| `latente` | Tensor latente vacío con dimensiones que coinciden con los parámetros de video especificados | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/es.md)
 

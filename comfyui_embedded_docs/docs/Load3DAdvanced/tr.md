@@ -20,10 +20,10 @@ Bu düğüm, ComfyUI giriş dizininizden bir 3B model dosyası yükler ve model 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model_3d_info` | Yüklenen 3B model verisi veya hiçbir model dosyası seçilmediyse boş | FILE3DANY |
-| `camera_info` | Görünüm alanı durumundan yüklenen 3B model hakkında bilgi | LOAD3DMODELINFO |
-| `width` | Görünüm alanı durumundan kamera bilgisi | LOAD3DCAMERA |
-| `height` | Belirtilen çıktı görüntü genişliği | INT |
+| `model_3d` | Yüklenen 3B model verisi veya hiçbir model dosyası seçilmediyse boş | FILE3DANY |
+| `model_3d_info` | Görünüm alanı durumundan yüklenen 3B model hakkında bilgi | LOAD3DMODELINFO |
+| `camera_info` | Görünüm alanı durumundan kamera bilgisi | LOAD3DCAMERA |
+| `width` | Belirtilen çıktı görüntü genişliği | INT |
 | `height` | Belirtilen çıktı görüntü yüksekliği | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Load3DAdvanced/tr.md)

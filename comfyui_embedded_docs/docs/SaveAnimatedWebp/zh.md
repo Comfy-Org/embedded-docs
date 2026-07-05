@@ -17,6 +17,6 @@
 
 | 字段 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `ui` | 提供一个 UI 组件，显示保存的动画 WEBP 图像及其元数据，并指示动画是否已启用。 | N/A |
+| `images` | 提供一个 UI 组件，显示保存的动画 WEBP 图像及其元数据，并指示动画是否已启用。 | N/A |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/zh.md)

@@ -17,7 +17,7 @@ El nodo Recorte Aleatorio de Imágenes selecciona aleatoriamente una sección re
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen resultante después de aplicar el recorte aleatorio. | IMAGE |
+| `images` | La imagen resultante después de aplicar el recorte aleatorio. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomCropImages/es.md)
 

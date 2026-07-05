@@ -13,7 +13,7 @@ El nodo **Redimensionar imágenes por el borde más largo** redimensiona una o m
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `image` | La imagen o lote de imágenes redimensionadas. La salida tendrá la misma cantidad de imágenes que la entrada, y el borde más largo de cada una coincidirá con la longitud especificada en `borde_más_largo`. | IMAGE |
+| `imágenes` | La imagen o lote de imágenes redimensionadas. La salida tendrá la misma cantidad de imágenes que la entrada, y el borde más largo de cada una coincidirá con la longitud especificada en `borde_más_largo`. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByLongerEdge/es.md)
 

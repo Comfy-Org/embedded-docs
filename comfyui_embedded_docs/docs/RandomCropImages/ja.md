@@ -21,7 +21,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `image` | ランダムクロップが適用された結果の画像です。 | IMAGE |
+| `images` | ランダムクロップが適用された結果の画像です。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomCropImages/ja.md)
 

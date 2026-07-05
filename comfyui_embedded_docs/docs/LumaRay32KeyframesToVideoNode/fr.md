@@ -19,7 +19,7 @@ Ce nœud génère une vidéo interpolant une séquence d'images guides, chacune 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
 | `identifiant_génération` | La vidéo générée en sortie. | VIDEO |
-| `generation_id` | L'identifiant unique de la demande de génération. | STRING |
+| `identifiant_génération` | L'identifiant unique de la demande de génération. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframesToVideoNode/fr.md)
 

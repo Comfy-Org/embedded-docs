@@ -12,7 +12,7 @@ El nodo LotusConditioning proporciona embeddings de condicionamiento precalculad
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `conditioning` | Los embeddings de condicionamiento precalculados para el modelo Lotus, que contienen embeddings de prompt fijos y un diccionario vacío. | CONDITIONING |
+| `condicionamiento` | Los embeddings de condicionamiento precalculados para el modelo Lotus, que contienen embeddings de prompt fijos y un diccionario vacío. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/es.md)
 

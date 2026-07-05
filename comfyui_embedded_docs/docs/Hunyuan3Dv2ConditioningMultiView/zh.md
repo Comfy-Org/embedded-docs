@@ -17,8 +17,8 @@ Hunyuan3Dv2ConditioningMultiView 节点处理用于 3D 视频生成的多视角 
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `反向` | 包含组合后的多视角嵌入及位置编码的正向条件数据 | CONDITIONING |
-| `negative` | 用于对比学习的、值为零的负向条件数据 | CONDITIONING |
+| `正向` | 包含组合后的多视角嵌入及位置编码的正向条件数据 | CONDITIONING |
+| `反向` | 用于对比学习的、值为零的负向条件数据 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/zh.md)
 

@@ -20,9 +20,9 @@ WanCameraEmbedding 節點根據相機運動參數，使用 Plücker 嵌入生成
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `寬度` | 生成的相機嵌入張量，包含軌跡序列 | TENSOR |
-| `高度` | 用於處理的寬度值 | INT |
-| `長度` | 用於處理的高度值 | INT |
+| `攝影機嵌入` | 生成的相機嵌入張量，包含軌跡序列 | TENSOR |
+| `寬度` | 用於處理的寬度值 | INT |
+| `高度` | 用於處理的高度值 | INT |
 | `長度` | 用於處理的長度值 | INT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/zh-TW.md)

@@ -13,8 +13,8 @@ Ce nœud utilise l'API Tencent Hunyuan3D pour effectuer un dépliage UV sur un m
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `FBX` | Le fichier de modèle 3D traité au format OBJ. | FILE3D |
-| `uv_image` | Le fichier de modèle 3D traité au format FBX. | FILE3D |
+| `OBJ` | Le fichier de modèle 3D traité au format OBJ. | FILE3D |
+| `FBX` | Le fichier de modèle 3D traité au format FBX. | FILE3D |
 | `uv_image` | L'image de texture UV générée. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/fr.md)

@@ -47,8 +47,8 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `تكييف` | قائمة من القواميس الكامنة. | LATENT |
-| `conditioning` | قائمة من قوائم التكييف. | CONDITIONING |
+| `كامنات` | قائمة من القواميس الكامنة. | LATENT |
+| `تكييف` | قائمة من قوائم التكييف. | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/ar.md)
 

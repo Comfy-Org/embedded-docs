@@ -40,8 +40,8 @@ TrainLoraNode, sağlanan latentler ve koşullandırma verilerini kullanarak bir 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `kayıp_haritası` | Kaydedilebilen veya diğer modellere uygulanabilen eğitilmiş LoRA ağırlıkları. | LORA_MODEL |
-| `adımlar` | Zaman içindeki eğitim kaybı değerlerini içeren bir sözlük. | LOSS_MAP |
+| `lora` | Kaydedilebilen veya diğer modellere uygulanabilen eğitilmiş LoRA ağırlıkları. | LORA_MODEL |
+| `kayıp_haritası` | Zaman içindeki eğitim kaybı değerlerini içeren bir sözlük. | LOSS_MAP |
 | `adımlar` | Tamamlanan toplam eğitim adım sayısı (mevcut LoRA'dan gelen önceki adımlar dahil). | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TrainLoraNode/tr.md)

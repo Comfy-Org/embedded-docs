@@ -28,7 +28,7 @@ Le nœud `GenerateTracks` crée plusieurs trajectoires de mouvement parallèles 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `longueur_de_piste` | Un objet pistes contenant les coordonnées du chemin généré et les informations de visibilité pour toutes les pistes sur toutes les images. | TRACKS |
-| `track_length` | Le nombre d'images pour lesquelles les pistes ont été générées, correspondant à la valeur d'entrée `nombre_d_images`. | INT |
+| `longueur_de_piste` | Le nombre d'images pour lesquelles les pistes ont été générées, correspondant à la valeur d'entrée `nombre_d_images`. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GenerateTracks/fr.md)
 

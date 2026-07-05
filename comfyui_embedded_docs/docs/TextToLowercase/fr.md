@@ -12,7 +12,7 @@ Le nœud Texte en minuscules prend une chaîne de texte en entrée et convertit 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `text` | Le texte d'entrée avec tous les caractères convertis en minuscules. | STRING |
+| `textes` | Le texte d'entrée avec tous les caractères convertis en minuscules. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToLowercase/fr.md)
 

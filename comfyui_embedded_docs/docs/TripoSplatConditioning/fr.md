@@ -14,8 +14,8 @@ Ce nœud encode une image d'entrée à l'aide de DINOv3 et du VAE Flux2 pour cr�
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `négatif` | Données de conditionnement positives contenant les caractéristiques DINOv3 et la latente du VAE Flux2 | CONDITIONING |
-| `latent` | Données de conditionnement négatives contenant des caractéristiques DINOv3 remplies de zéros et une latente du VAE Flux2 remplie de zéros | CONDITIONING |
+| `positif` | Données de conditionnement positives contenant les caractéristiques DINOv3 et la latente du VAE Flux2 | CONDITIONING |
+| `négatif` | Données de conditionnement négatives contenant des caractéristiques DINOv3 remplies de zéros et une latente du VAE Flux2 remplie de zéros | CONDITIONING |
 | `latent` | La cible de bruit de taille fixe (séquence latente plus jeton de caméra) pour le KSampler | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSplatConditioning/fr.md)

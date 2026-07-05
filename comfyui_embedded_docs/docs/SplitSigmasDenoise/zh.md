@@ -13,8 +13,8 @@ SplitSigmasDenoise 节点根据去噪强度参数将 sigma 值序列分为两部
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `低方差` | 包含较高 sigma 值的 sigma 序列的第一部分 | SIGMAS |
-| `low_sigmas` | 包含较低 sigma 值的 sigma 序列的第二部分 | SIGMAS |
+| `高方差` | 包含较高 sigma 值的 sigma 序列的第一部分 | SIGMAS |
+| `低方差` | 包含较低 sigma 值的 sigma 序列的第二部分 | SIGMAS |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/zh.md)
 

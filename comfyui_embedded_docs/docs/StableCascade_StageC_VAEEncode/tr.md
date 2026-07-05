@@ -14,8 +14,8 @@ StableCascade_StageC_VAEEncode düğümü, Stable Cascade modelleri için gizli 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `aşama_b` | Stable Cascade modelinin C aşaması için kodlanmış gizli temsil | LATENT |
-| `stage_b` | B aşaması için bir yer tutucu gizli temsil (şu anda sıfır döndürür) | LATENT |
+| `aşama_c` | Stable Cascade modelinin C aşaması için kodlanmış gizli temsil | LATENT |
+| `aşama_b` | B aşaması için bir yer tutucu gizli temsil (şu anda sıfır döndürür) | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageC_VAEEncode/tr.md)
 

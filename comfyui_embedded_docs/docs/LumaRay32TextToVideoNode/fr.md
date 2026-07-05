@@ -20,7 +20,7 @@ Ce nœud génère une vidéo à partir d'une invite textuelle en utilisant le mo
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
 | `identifiant_génération` | Le fichier vidéo généré. | VIDEO |
-| `generation_id` | L'identifiant unique de la demande de génération vidéo. | STRING |
+| `identifiant_génération` | L'identifiant unique de la demande de génération vidéo. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32TextToVideoNode/fr.md)
 

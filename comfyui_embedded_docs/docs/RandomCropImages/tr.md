@@ -17,7 +17,7 @@ Rastgele Kırpma Görselleri düğümü, her bir giriş görselinden rastgele bi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Rastgele kırpma uygulandıktan sonra elde edilen görsel. | IMAGE |
+| `images` | Rastgele kırpma uygulandıktan sonra elde edilen görsel. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomCropImages/tr.md)
 

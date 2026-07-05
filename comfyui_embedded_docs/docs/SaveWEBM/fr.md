@@ -16,7 +16,7 @@ Le nœud SaveWEBM enregistre une séquence d'images sous forme de fichier vidéo
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `ui` | Aperçu vidéo affichant le fichier WEBM sauvegardé | PREVIEW |
+| `images` | Aperçu vidéo affichant le fichier WEBM sauvegardé | PREVIEW |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveWEBM/fr.md)
 

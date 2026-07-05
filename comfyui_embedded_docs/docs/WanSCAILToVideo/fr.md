@@ -26,9 +26,9 @@ Le nœud WanSCAILToVideo prépare le conditionnement et un espace latent vide po
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, contenant potentiellement des latents d'image de référence intégrés, une sortie CLIP vision ou des latents de vidéo de pose. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, contenant potentiellement des latents d'image de référence intégrés, une sortie CLIP vision ou des latents de vidéo de pose. | CONDITIONING |
-| `video_frame_offset` | Un tenseur latent vide de forme `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. | LATENT |
+| `positif` | Le conditionnement positif modifié, contenant potentiellement des latents d'image de référence intégrés, une sortie CLIP vision ou des latents de vidéo de pose. | CONDITIONING |
+| `négatif` | Le conditionnement négatif modifié, contenant potentiellement des latents d'image de référence intégrés, une sortie CLIP vision ou des latents de vidéo de pose. | CONDITIONING |
+| `latent` | Un tenseur latent vide de forme `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSCAILToVideo/fr.md)
 

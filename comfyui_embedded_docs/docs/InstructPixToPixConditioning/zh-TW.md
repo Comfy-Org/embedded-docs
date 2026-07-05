@@ -19,9 +19,9 @@ InstructPixToPixConditioning 節點透過將正向與負向文字提示與影像
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `負向` | 附加了潛在影像表示的正向條件化資料 | CONDITIONING |
-| `潛在空間` | 附加了潛在影像表示的負向條件化資料 | CONDITIONING |
-| `latent` | 與編碼影像具有相同維度的空潛在張量 | LATENT |
+| `正向` | 附加了潛在影像表示的正向條件化資料 | CONDITIONING |
+| `負向` | 附加了潛在影像表示的負向條件化資料 | CONDITIONING |
+| `潛在空間` | 與編碼影像具有相同維度的空潛在張量 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/zh-TW.md)
 

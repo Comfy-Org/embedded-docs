@@ -16,8 +16,8 @@ El nodo SamplerCustomAdvanced realiza un muestreo avanzado en el espacio latente
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `salida_sin_ruido` | La representación latente muestreada final después de completar el proceso de muestreo | LATENT |
-| `denoised_output` | Una versión sin ruido de la salida cuando está disponible; de lo contrario, devuelve el mismo valor que la salida | LATENT |
+| `salida` | La representación latente muestreada final después de completar el proceso de muestreo | LATENT |
+| `salida_sin_ruido` | Una versión sin ruido de la salida cuando está disponible; de lo contrario, devuelve el mismo valor que la salida | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustomAdvanced/es.md)
 

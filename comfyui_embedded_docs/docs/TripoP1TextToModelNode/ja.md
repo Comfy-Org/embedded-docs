@@ -24,8 +24,8 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデルタスクID` | 生成された3Dモデルのファイルパス（後方互換性のため）。 | STRING |
-| `GLB` | モデル生成リクエストの一意のタスクID。 | MODEL_TASK_ID |
+| `モデルファイル` | 生成された3Dモデルのファイルパス（後方互換性のため）。 | STRING |
+| `モデルタスクID` | モデル生成リクエストの一意のタスクID。 | MODEL_TASK_ID |
 | `GLB` | GLB形式で生成された3Dモデル。 | FILE3DGLB |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/ja.md)

@@ -16,9 +16,9 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `負向` | 正向條件化資料，包含用於生成的圖像嵌入和相機參數 | CONDITIONING |
-| `潛在空間` | 負向條件化資料，嵌入值歸零，用於對比生成 | CONDITIONING |
-| `latent` | 空白的潛在張量，其維度與指定的影片影格數和解析度相符 | LATENT |
+| `正向` | 正向條件化資料，包含用於生成的圖像嵌入和相機參數 | CONDITIONING |
+| `負向` | 負向條件化資料，嵌入值歸零，用於對比生成 | CONDITIONING |
+| `潛在空間` | 空白的潛在張量，其維度與指定的影片影格數和解析度相符 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/zh-TW.md)
 

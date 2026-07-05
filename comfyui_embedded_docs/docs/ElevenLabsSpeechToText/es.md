@@ -23,9 +23,9 @@ El nodo ElevenLabs Speech to Text transcribe archivos de audio a texto. Utiliza 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `código_de_idioma` | El texto transcrito del audio. | STRING |
-| `palabras_json` | El código de idioma detectado del audio. | STRING |
-| `words_json` | Una cadena con formato JSON que contiene información detallada a nivel de palabra, incluyendo marcas de tiempo y etiquetas de hablante si están habilitadas. | STRING |
+| `texto` | El texto transcrito del audio. | STRING |
+| `código_de_idioma` | El código de idioma detectado del audio. | STRING |
+| `palabras_json` | Una cadena con formato JSON que contiene información detallada a nivel de palabra, incluyendo marcas de tiempo y etiquetas de hablante si están habilitadas. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/es.md)
 

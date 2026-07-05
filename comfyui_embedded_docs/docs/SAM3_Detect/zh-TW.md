@@ -31,7 +31,7 @@ SAM3 檢測節點使用文字描述、邊界框或點提示來執行開放詞彙
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `邊界框` | 分割遮罩。當 `個別 mask` 為 False（預設值）時，每個影格返回單一合併遮罩。當為 True 時，為每個檢測到的物體返回單獨的遮罩 | MASK |
+| `mask` | 分割遮罩。當 `個別 mask` 為 False（預設值）時，每個影格返回單一合併遮罩。當為 True 時，為每個檢測到的物體返回單獨的遮罩 | MASK |
 | `邊界框` | 檢測到的邊界框，包含座標和置信度分數。每個框包含 `x`、`y`、`width`、`height` 和 `score` 值 | BOUNDING_BOX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/zh-TW.md)

@@ -17,10 +17,10 @@ Le nœud PreviewGaussianSplat permet de prévisualiser un fichier de splats gaus
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `info_modèle_3d` | Le fichier de splats gaussiens 3D d'entrée, transmis sans modification. | FILE3D |
-| `info_caméra` | Informations de métadonnées sur le modèle 3D, provenant soit de l'entrée, soit dérivées de l'état de la fenêtre d'affichage. | LOAD3DMODELINFO |
-| `largeur` | Informations de caméra pour la prévisualisation, provenant soit de l'entrée, soit dérivées de l'état de la fenêtre d'affichage. | LOAD3DCAMERA |
-| `hauteur` | La largeur du rendu de prévisualisation. | INT |
+| `modèle_3d` | Le fichier de splats gaussiens 3D d'entrée, transmis sans modification. | FILE3D |
+| `info_modèle_3d` | Informations de métadonnées sur le modèle 3D, provenant soit de l'entrée, soit dérivées de l'état de la fenêtre d'affichage. | LOAD3DMODELINFO |
+| `info_caméra` | Informations de caméra pour la prévisualisation, provenant soit de l'entrée, soit dérivées de l'état de la fenêtre d'affichage. | LOAD3DCAMERA |
+| `largeur` | La largeur du rendu de prévisualisation. | INT |
 | `hauteur` | La hauteur du rendu de prévisualisation. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewGaussianSplat/fr.md)

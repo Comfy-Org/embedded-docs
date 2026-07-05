@@ -14,8 +14,8 @@ El nodo TripoRefineNode refina modelos 3D preliminares creados específicamente 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `id_de_tarea_de_modelo` | La ruta de archivo o referencia al modelo refinado (solo para compatibilidad hacia atrás) | STRING |
-| `GLB` | El identificador de tarea para la operación del modelo refinado | MODEL_TASK_ID |
+| `archivo_de_modelo` | La ruta de archivo o referencia al modelo refinado (solo para compatibilidad hacia atrás) | STRING |
+| `id_de_tarea_de_modelo` | El identificador de tarea para la operación del modelo refinado | MODEL_TASK_ID |
 | `GLB` | El modelo 3D refinado en formato GLB | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRefineNode/es.md)

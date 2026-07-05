@@ -12,7 +12,7 @@ Este nodo elimina cualquier espacio adicional, tabulación o salto de línea al 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `text` | El texto procesado con todos los caracteres de espacio en blanco iniciales y finales eliminados. | STRING |
+| `textos` | El texto procesado con todos los caracteres de espacio en blanco iniciales y finales eliminados. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/es.md)
 

@@ -23,7 +23,7 @@ Rendu d'un splat gaussien sous forme d'image à l'aide d'un rastériseur EWA ani
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `mask` | L'image rendue du splat gaussien | IMAGE |
+| `image` | L'image rendue du splat gaussien | IMAGE |
 | `mask` | Le masque alpha du splat rendu | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/fr.md)

@@ -15,7 +15,7 @@ Enregistre les fichiers SVG sur le disque. Ce nœud prend des données SVG en en
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `ui` | Renvoie les informations du fichier, notamment le nom, le sous-dossier et le type, pour affichage dans l'interface ComfyUI | DICT |
+| `svg` | Renvoie les informations du fichier, notamment le nom, le sous-dossier et le type, pour affichage dans l'interface ComfyUI | DICT |
 
 **Remarque :** Ce nœud intègre automatiquement les métadonnées du workflow (prompt et informations PNG supplémentaires) dans le fichier SVG lorsque celles-ci sont disponibles. Les métadonnées sont insérées sous forme de section CDATA dans l'élément metadata du SVG.
 

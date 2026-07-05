@@ -18,7 +18,7 @@ RegexMatch ノードは、テキスト文字列が指定された正規表現パ
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `matches` | 正規表現パターンが入力文字列の一部に一致する場合は True、それ以外の場合は False を返します | BOOLEAN |
+| `マッチ` | 正規表現パターンが入力文字列の一部に一致する場合は True、それ以外の場合は False を返します | BOOLEAN |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/ja.md)
 

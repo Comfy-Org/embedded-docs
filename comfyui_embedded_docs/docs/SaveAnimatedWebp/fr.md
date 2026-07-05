@@ -17,6 +17,6 @@ Ce nœud est conçu pour enregistrer une séquence d'images sous forme de fichie
 
 | Champ | Description | Type de données |
 | --- | --- | --- |
-| `ui` | Fournit un composant d'interface utilisateur affichant les images WEBP animées enregistrées ainsi que leurs métadonnées, et indique si l'animation est activée. | N/A |
+| `images` | Fournit un composant d'interface utilisateur affichant les images WEBP animées enregistrées ainsi que leurs métadonnées, et indique si l'animation est activée. | N/A |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/fr.md)

@@ -25,8 +25,8 @@ Le nœud ElevenLabs Speech to Text transcrit des fichiers audio en texte. Il uti
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `language_code` | Le texte transcrit à partir de l'audio. | STRING |
-| `words_json` | Le code de langue détecté de l'audio. | STRING |
+| `text` | Le texte transcrit à partir de l'audio. | STRING |
+| `language_code` | Le code de langue détecté de l'audio. | STRING |
 | `words_json` | Une chaîne formatée en JSON contenant des informations détaillées au niveau des mots, y compris les horodatages et les étiquettes de locuteur si activés. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/fr.md)

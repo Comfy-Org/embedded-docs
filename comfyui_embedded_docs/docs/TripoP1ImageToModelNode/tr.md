@@ -21,8 +21,8 @@ Bu düğüm, Tripo P1 API'sini kullanarak tek bir 2D görüntüyü 3D modele dö
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_task_id` | Oluşturulan 3D modelin dosya yolu. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `GLB` | Model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
+| `model_dosyası` | Oluşturulan 3D modelin dosya yolu. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanmıştır. | STRING |
+| `model_task_id` | Model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
 | `GLB` | GLB formatında oluşturulan 3D model. | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1ImageToModelNode/tr.md)

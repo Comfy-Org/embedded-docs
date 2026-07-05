@@ -19,7 +19,7 @@ Bir görüntüdeki yüzleri algılar ve MediaPipe'in BlazeFace ile FaceMesh mode
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `bboxes` | Kare başına yüz algılama sonuçlarını içeren yapılandırılmış bir çıktı. 468 yüz işaret noktası, ARKit-52 karışım şekli katsayıları, dönüşüm matrisleri ve ağ görselleştirme için bağlantı kümelerini içerir. | FACE_LANDMARKS |
+| `face_landmarks` | Kare başına yüz algılama sonuçlarını içeren yapılandırılmış bir çıktı. 468 yüz işaret noktası, ARKit-52 karışım şekli katsayıları, dönüşüm matrisleri ve ağ görselleştirme için bağlantı kümelerini içerir. | FACE_LANDMARKS |
 | `bboxes` | Algılanan her yüz için sınırlayıcı kutuların listesi; koordinatlar (x, y, genişlik, yükseklik), "yüz" etiketi ve güven puanı ile birlikte. Giriş karesi başına bir liste. | BOUNDING_BOX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/tr.md)

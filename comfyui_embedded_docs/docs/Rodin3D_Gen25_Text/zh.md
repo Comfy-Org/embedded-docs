@@ -29,7 +29,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model_file` | 以指定格式生成的 3D 模型文件。 | FILE3DANY |
+| `模型文件` | 以指定格式生成的 3D 模型文件。 | FILE3DANY |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/zh.md)
 

@@ -19,7 +19,7 @@ Modifiez une seule image avec Beeble SwitchX. Ce nœud peut changer n'importe qu
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `alpha` | L'image modifiée avec les éléments de la scène changés. | IMAGE |
+| `image` | L'image modifiée avec les éléments de la scène changés. | IMAGE |
 | `alpha` | Le mat alpha utilisé par Beeble. Vide pour le mode "fill", qui n'a pas de mat séparé. | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXImageEdit/fr.md)

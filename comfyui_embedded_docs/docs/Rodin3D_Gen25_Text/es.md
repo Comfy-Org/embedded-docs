@@ -29,7 +29,7 @@ Genera un modelo 3D a partir de una descripción textual utilizando la API de Ro
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model_file` | El archivo del modelo 3D generado en el formato especificado. | FILE3DANY |
+| `archivo_modelo` | El archivo del modelo 3D generado en el formato especificado. | FILE3DANY |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/es.md)
 

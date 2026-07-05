@@ -19,7 +19,7 @@ Bu düğüm, her biri zaman çizelgesinde belirli bir konuma sabitlenmiş bir di
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `oluşturma_id` | Oluşturulan video çıktısı. | VIDEO |
-| `generation_id` | Oluşturma isteği için benzersiz tanımlayıcı. | STRING |
+| `oluşturma_id` | Oluşturma isteği için benzersiz tanımlayıcı. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframesToVideoNode/tr.md)
 

@@ -45,7 +45,7 @@ El nodo de Control de Cámara para Video de Texto a Video de Kling transforma te
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `video_id` | El video generado con efectos de control de cámara | VIDEO |
-| `duration` | El identificador único para el video generado | STRING |
+| `video_id` | El identificador único para el video generado | STRING |
 | `duration` | La duración del video generado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlT2VNode/es.md)

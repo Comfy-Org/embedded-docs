@@ -30,9 +30,9 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `meshy_task_id` | 생성된 GLB 모델의 파일 이름입니다. 이 출력은 하위 호환성을 위해 제공됩니다. | STRING |
-| `GLB` | Meshy API 작업의 고유 식별자입니다. | MESHY_TASK_ID |
-| `FBX` | GLB 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
+| `model_file` | 생성된 GLB 모델의 파일 이름입니다. 이 출력은 하위 호환성을 위해 제공됩니다. | STRING |
+| `meshy_task_id` | Meshy API 작업의 고유 식별자입니다. | MESHY_TASK_ID |
+| `GLB` | GLB 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 형식으로 생성된 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/ko.md)

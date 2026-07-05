@@ -16,8 +16,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `OBJ` | 處理後的3D模型，格式為GLB。 | FILE3D |
-| `texture_image` | 處理後的3D模型，格式為OBJ。 | FILE3D |
+| `GLB` | 處理後的3D模型，格式為GLB。 | FILE3D |
+| `OBJ` | 處理後的3D模型，格式為OBJ。 | FILE3D |
 | `texture_image` | 為3D模型新生成的紋理影像。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DTextureEditNode/zh-TW.md)

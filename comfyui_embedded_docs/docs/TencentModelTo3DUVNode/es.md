@@ -13,9 +13,9 @@ Este nodo utiliza la API de Tencent Hunyuan3D para realizar el desplegado UV en 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `FBX` | El archivo de modelo 3D procesado en formato OBJ. | FILE3D |
-| `imagen UV` | El archivo de modelo 3D procesado en formato FBX. | FILE3D |
-| `uv_image` | La imagen de textura UV generada. | IMAGE |
+| `OBJ` | El archivo de modelo 3D procesado en formato OBJ. | FILE3D |
+| `FBX` | El archivo de modelo 3D procesado en formato FBX. | FILE3D |
+| `imagen UV` | La imagen de textura UV generada. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/es.md)
 

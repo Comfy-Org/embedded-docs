@@ -18,7 +18,7 @@ El Nodo de Extensión de Video Kling te permite extender videos creados por otro
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `video_id` | El video extendido generado por la API de Kling | VIDEO |
-| `duration` | El identificador único para el video extendido | STRING |
+| `video_id` | El identificador único para el video extendido | STRING |
 | `duration` | La duración del video extendido | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoExtendNode/es.md)

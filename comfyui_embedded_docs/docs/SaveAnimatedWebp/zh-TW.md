@@ -17,6 +17,6 @@
 
 | 欄位 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `ui` | 提供一個 UI 元件，顯示已儲存的動畫 WEBP 影像及其元資料，並指示動畫是否已啟用。 | N/A |
+| `images` | 提供一個 UI 元件，顯示已儲存的動畫 WEBP 影像及其元資料，並指示動畫是否已啟用。 | N/A |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedWEBP/zh-TW.md)

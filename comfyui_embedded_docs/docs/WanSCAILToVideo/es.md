@@ -26,9 +26,9 @@ El nodo WanSCAILToVideo prepara el condicionamiento y un espacio latente vacío 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado, que potencialmente contiene latentes de imagen de referencia incrustados, salida de CLIP vision o latentes de video de pose. | CONDITIONING |
-| `latente` | El condicionamiento negativo modificado, que potencialmente contiene latentes de imagen de referencia incrustados, salida de CLIP vision o latentes de video de pose. | CONDITIONING |
-| `video_frame_offset` | Un tensor latente vacío de forma `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. | LATENT |
+| `positivo` | El condicionamiento positivo modificado, que potencialmente contiene latentes de imagen de referencia incrustados, salida de CLIP vision o latentes de video de pose. | CONDITIONING |
+| `negativo` | El condicionamiento negativo modificado, que potencialmente contiene latentes de imagen de referencia incrustados, salida de CLIP vision o latentes de video de pose. | CONDITIONING |
+| `latente` | Un tensor latente vacío de forma `[batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8]`. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSCAILToVideo/es.md)
 

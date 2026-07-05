@@ -14,7 +14,7 @@ Ce nœud supprime tous les espaces, tabulations ou sauts de ligne superflus au d
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `text` | Le texte traité, dont tous les caractères d’espacement de début et de fin ont été supprimés. | STRING |
+| `textes` | Le texte traité, dont tous les caractères d’espacement de début et de fin ont été supprimés. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/fr.md)
 

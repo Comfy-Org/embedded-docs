@@ -15,7 +15,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `voice` | 新创建的克隆语音模型的唯一标识符。此输出可连接至其他ElevenLabs文本转语音节点。 | ELEVENLABS_VOICE |
+| `语音` | 新创建的克隆语音模型的唯一标识符。此输出可连接至其他ElevenLabs文本转语音节点。 | ELEVENLABS_VOICE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/zh.md)
 

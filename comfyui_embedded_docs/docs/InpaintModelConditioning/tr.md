@@ -16,8 +16,8 @@ InpaintModelConditioning düğümü, rötuş (inpainting) modelleri için koşul
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | İşlem sonrası değiştirilmiş pozitif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen pozitif koşullara göre yönlendirmek için gereklidir. | `CONDITIONING` |
-| `gizli` | İşlem sonrası değiştirilmiş negatif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen negatif koşullara göre yönlendirmek için gereklidir. | `CONDITIONING` |
-| `latent` | Koşullandırma sürecinden elde edilen gizli (latent) temsildir. Bu çıktı, rötuş yapılan görüntünün temel özelliklerini ve karakteristiklerini anlamak için çok önemlidir. | `LATENT` |
+| `pozitif` | İşlem sonrası değiştirilmiş pozitif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen pozitif koşullara göre yönlendirmek için gereklidir. | `CONDITIONING` |
+| `negatif` | İşlem sonrası değiştirilmiş negatif koşullandırma bilgisi, rötuş modeline uygulanmaya hazırdır. Bu çıktı, rötuş sürecini belirtilen negatif koşullara göre yönlendirmek için gereklidir. | `CONDITIONING` |
+| `gizli` | Koşullandırma sürecinden elde edilen gizli (latent) temsildir. Bu çıktı, rötuş yapılan görüntünün temel özelliklerini ve karakteristiklerini anlamak için çok önemlidir. | `LATENT` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/tr.md)

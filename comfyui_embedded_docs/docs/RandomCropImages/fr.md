@@ -17,7 +17,7 @@ Le nœud Random Crop Images sélectionne aléatoirement une section rectangulair
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image résultante après application du recadrage aléatoire. | IMAGE |
+| `images` | L'image résultante après application du recadrage aléatoire. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RandomCropImages/fr.md)
 

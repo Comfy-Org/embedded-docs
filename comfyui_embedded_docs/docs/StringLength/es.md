@@ -12,7 +12,7 @@ El nodo StringLength calcula la cantidad de caracteres en una cadena de texto. T
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `length` | El número total de caracteres en la cadena de entrada, incluidos espacios y caracteres especiales. | INT |
+| `longitud` | El número total de caracteres en la cadena de entrada, incluidos espacios y caracteres especiales. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringLength/es.md)
 

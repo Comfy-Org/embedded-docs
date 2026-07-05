@@ -13,6 +13,6 @@ Le nœud SplitSigmas est conçu pour diviser une séquence de valeurs sigma en d
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `sigmas_bas` | Le nœud produit deux séquences de valeurs sigma, chacune représentant une partie de la séquence originale divisée au pas spécifié. Ces sorties sont cruciales pour les opérations ultérieures nécessitant un traitement différencié des valeurs sigma. | `SIGMAS` |
+| `sigmas_hauts` | Le nœud produit deux séquences de valeurs sigma, chacune représentant une partie de la séquence originale divisée au pas spécifié. Ces sorties sont cruciales pour les opérations ultérieures nécessitant un traitement différencié des valeurs sigma. | `SIGMAS` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/fr.md)

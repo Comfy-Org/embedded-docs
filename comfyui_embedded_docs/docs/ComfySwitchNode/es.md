@@ -16,7 +16,7 @@ El nodo Switch selecciona entre dos posibles entradas según una condición bool
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `output` | Los datos seleccionados. Será el valor de la entrada `en_verdadero` si el `interruptor` es verdadero, o el valor de la entrada `en_falso` si el `interruptor` es falso. | MATCH_TYPE |
+| `salida` | Los datos seleccionados. Será el valor de la entrada `en_verdadero` si el `interruptor` es verdadero, o el valor de la entrada `en_falso` si el `interruptor` es falso. | MATCH_TYPE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/es.md)
 

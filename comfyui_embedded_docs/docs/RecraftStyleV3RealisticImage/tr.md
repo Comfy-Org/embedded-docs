@@ -12,7 +12,7 @@ Bu düğüm, Recraft API'sini kullanarak gerçekçi görseller oluşturmak için
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `recraft_style` | `realistic_image` stilini ve seçilen alt stil ayarlarını içeren bir Recraft stil yapılandırma nesnesidir. Bu çıktı, stil girişini kabul eden diğer Recraft düğümlerine bağlanabilir. | STYLEV3 |
+| `recraft_stili` | `realistic_image` stilini ve seçilen alt stil ayarlarını içeren bir Recraft stil yapılandırma nesnesidir. Bu çıktı, stil girişini kabul eden diğer Recraft düğümlerine bağlanabilir. | STYLEV3 |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/tr.md)
 

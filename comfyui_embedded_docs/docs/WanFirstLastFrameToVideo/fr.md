@@ -24,8 +24,8 @@ Le nœud WanFirstLastFrameToVideo crée un conditionnement vidéo en combinant d
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
-| `latent` | Conditionnement négatif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
+| `positif` | Conditionnement positif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
+| `négatif` | Conditionnement négatif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
 | `latent` | Tenseur latent vide dont les dimensions correspondent aux paramètres vidéo spécifiés | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/fr.md)

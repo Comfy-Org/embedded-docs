@@ -14,7 +14,7 @@ El nodo **Center Crop Images** recorta una imagen desde su centro hasta un ancho
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen resultante después de la operación de recorte centrado. | IMAGE |
+| `imágenes` | La imagen resultante después de la operación de recorte centrado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CenterCropImages/es.md)
 

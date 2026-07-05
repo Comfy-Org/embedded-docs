@@ -20,7 +20,7 @@ Bu düğüm, Luma'nın Ray 3.2 modelini kullanarak bir metin isteminden video ol
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
 | `oluşturma_id` | Oluşturulan video dosyası. | VIDEO |
-| `generation_id` | Video oluşturma isteği için benzersiz tanımlayıcı. | STRING |
+| `oluşturma_id` | Video oluşturma isteği için benzersiz tanımlayıcı. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32TextToVideoNode/tr.md)
 

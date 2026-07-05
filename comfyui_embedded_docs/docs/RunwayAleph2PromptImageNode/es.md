@@ -20,7 +20,7 @@ Cuando `position` está configurado en `Fraction (0.0 to 1.0)`, debe proporciona
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |-------------|-------------|-----------|
-| `imágenes_de_guía` | Una cadena de imágenes guía que puede conectarse a la entrada `prompt_images` del nodo Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
+| `imágenes_de_guía` | Una cadena de imágenes guía que puede conectarse a la entrada `imágenes_de_guía` del nodo Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/es.md)
 

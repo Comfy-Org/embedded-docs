@@ -18,7 +18,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `HOOK_KF` | 新しく作成されたキーフレームを含むフックキーフレームグループ。新しいグループとして、または入力キーフレームグループに追加された状態で提供されます | HOOK_KEYFRAMES |
+| `フックKF` | 新しく作成されたキーフレームを含むフックキーフレームグループ。新しいグループとして、または入力キーフレームグループに追加された状態で提供されます | HOOK_KEYFRAMES |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesFromFloats/ja.md)
 

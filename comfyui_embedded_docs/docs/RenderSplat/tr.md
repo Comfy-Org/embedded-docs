@@ -23,7 +23,7 @@ Bir gaussian splat'ı, yönlendirilmiş eliptik splatlar, kenar yumuşatma ve de
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `mask` | Gaussian splat'ın işlenmiş görüntüsü | IMAGE |
+| `görsel` | Gaussian splat'ın işlenmiş görüntüsü | IMAGE |
 | `mask` | İşlenmiş splat'ın alfa maskesi | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/tr.md)

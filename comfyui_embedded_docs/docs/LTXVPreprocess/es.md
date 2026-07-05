@@ -13,7 +13,7 @@ El nodo LTXVPreprocess aplica preprocesamiento de compresión a las imágenes. T
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `output_image` | La imagen de salida procesada con la compresión aplicada | IMAGE |
+| `imagen_salida` | La imagen de salida procesada con la compresión aplicada | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVPreprocess/es.md)
 

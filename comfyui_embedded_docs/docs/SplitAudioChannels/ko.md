@@ -14,8 +14,8 @@ SplitAudioChannels 노드는 스테레오 오디오를 개별 좌측 및 우측 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `오른쪽` | 분리된 좌측 채널 오디오 | AUDIO |
-| `right` | 분리된 우측 채널 오디오 | AUDIO |
+| `왼쪽` | 분리된 좌측 채널 오디오 | AUDIO |
+| `오른쪽` | 분리된 우측 채널 오디오 | AUDIO |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitAudioChannels/ko.md)
 

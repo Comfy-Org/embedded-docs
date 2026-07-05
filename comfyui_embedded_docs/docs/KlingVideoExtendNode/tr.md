@@ -18,8 +18,8 @@ ComfyUI Kling Video Uzatma Düğümü, diğer Kling düğümleri tarafından olu
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `video_kimliği` | Kling API'si tarafından oluşturulan uzatılmış video | VIDEO |
-| `süre` | Uzatılmış video için benzersiz tanımlayıcı | STRING |
-| `duration` | Uzatılmış videonun süresi | STRING |
+| `video_kimliği` | Uzatılmış video için benzersiz tanımlayıcı | STRING |
+| `süre` | Uzatılmış videonun süresi | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingVideoExtendNode/tr.md)
 

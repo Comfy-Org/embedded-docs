@@ -14,7 +14,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `conditioning` | 각 딕셔너리에 `"samples"` 키와 텐서가 포함된 잠재 딕셔너리 목록입니다. | LATENT |
+| `latents` | 각 딕셔너리에 `"samples"` 키와 텐서가 포함된 잠재 딕셔너리 목록입니다. | LATENT |
 | `conditioning` | 각 내부 리스트에 해당 샘플의 컨디셔닝 데이터가 포함된 컨디셔닝 리스트 목록입니다. | CONDITIONING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/ko.md)

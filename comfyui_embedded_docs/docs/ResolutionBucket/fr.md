@@ -15,7 +15,7 @@ Ce nœud organise une liste d'images latentes et leurs données de conditionneme
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditioning` | Liste de dictionnaires latents regroupés en lots, un par groupe de résolution. | LATENT |
+| `latents` | Liste de dictionnaires latents regroupés en lots, un par groupe de résolution. | LATENT |
 | `conditioning` | Liste de listes de conditionnement, une par groupe de résolution. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/fr.md)

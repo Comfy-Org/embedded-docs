@@ -19,8 +19,8 @@ Ce nœud prépare les données pour l'entraînement en encodant les images et le
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditionnement` | Liste de dictionnaires latents. | LATENT |
-| `conditioning` | Liste de listes de conditionnement. | CONDITIONING |
+| `latents` | Liste de dictionnaires latents. | LATENT |
+| `conditionnement` | Liste de listes de conditionnement. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/fr.md)
 

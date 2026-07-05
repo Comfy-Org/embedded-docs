@@ -29,8 +29,8 @@ Le nœud BerniniConditioning prépare les données de conditionnement vidéo et 
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `négatif` | Conditionnement positif avec latents de contexte attachés | CONDITIONING |
-| `latent` | Conditionnement négatif avec latents de contexte attachés | CONDITIONING |
+| `positif` | Conditionnement positif avec latents de contexte attachés | CONDITIONING |
+| `négatif` | Conditionnement négatif avec latents de contexte attachés | CONDITIONING |
 | `latent` | Tenseur latent vide dont les dimensions correspondent à la largeur, hauteur, longueur et taille de lot spécifiées | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BerniniConditioning/fr.md)

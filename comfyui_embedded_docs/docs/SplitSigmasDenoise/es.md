@@ -13,8 +13,8 @@ El nodo SplitSigmasDenoise divide una secuencia de valores sigma en dos partes b
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `sigmas_bajos` | La primera parte de la secuencia sigma que contiene valores sigma más altos | SIGMAS |
-| `low_sigmas` | La segunda parte de la secuencia sigma que contiene valores sigma más bajos | SIGMAS |
+| `sigmas_altos` | La primera parte de la secuencia sigma que contiene valores sigma más altos | SIGMAS |
+| `sigmas_bajos` | La segunda parte de la secuencia sigma que contiene valores sigma más bajos | SIGMAS |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/es.md)
 

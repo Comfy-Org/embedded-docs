@@ -15,7 +15,7 @@ Le nœud **Rodin 3D Regular** génère des actifs 3D en utilisant l'API Rodin. I
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `GLB` | Chemin d'accès au fichier du modèle 3D généré (conservé pour la rétrocompatibilité). | STRING |
+| `Chemin du modèle 3D` | Chemin d'accès au fichier du modèle 3D généré (conservé pour la rétrocompatibilité). | STRING |
 | `GLB` | Le modèle 3D généré au format GLB. | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/fr.md)

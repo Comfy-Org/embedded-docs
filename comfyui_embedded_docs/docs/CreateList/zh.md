@@ -14,7 +14,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `list` | 包含所有已连接输入项目的单个列表，按提供的顺序连接。输出数据类型与输入数据类型一致。 | 可变 |
+| `列表` | 包含所有已连接输入项目的单个列表，按提供的顺序连接。输出数据类型与输入数据类型一致。 | 可变 |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateList/zh.md)
 

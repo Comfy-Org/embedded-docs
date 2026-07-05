@@ -21,9 +21,9 @@ Le nœud Kandinsky5ImageToVideo prépare les données de conditionnement et d'es
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
-| `cond_latent` | Un tenseur latent vidéo vide avec des zéros, formaté pour les dimensions spécifiées. | LATENT |
+| `positif` | Le conditionnement positif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
+| `négatif` | Le conditionnement négatif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
+| `latent` | Un tenseur latent vidéo vide avec des zéros, formaté pour les dimensions spécifiées. | LATENT |
 | `cond_latent` | La représentation latente encodée et propre des images de départ fournies. Utilisée en interne pour remplacer le début bruité des latents vidéo générés. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/fr.md)

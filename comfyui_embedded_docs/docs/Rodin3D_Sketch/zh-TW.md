@@ -13,7 +13,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `GLB` | 生成的 3D 模型檔案路徑（僅為向後相容性保留） | STRING |
+| `3D 模型路徑` | 生成的 3D 模型檔案路徑（僅為向後相容性保留） | STRING |
 | `GLB` | 以 GLB 格式生成的 3D 模型 | FILE3DGLB |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Sketch/zh-TW.md)

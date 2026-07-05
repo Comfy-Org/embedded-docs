@@ -16,7 +16,7 @@ Ce nœud mélange une liste d'images et une liste de textes ensemble, tout en co
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `texts` | La liste mélangée d'images. | IMAGE |
+| `images` | La liste mélangée d'images. | IMAGE |
 | `texts` | La liste mélangée de textes, conservant leurs appariements d'origine avec les images. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleImageTextDataset/fr.md)

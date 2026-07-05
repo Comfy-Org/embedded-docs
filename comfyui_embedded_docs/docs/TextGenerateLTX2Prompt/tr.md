@@ -22,7 +22,7 @@ TextGenerateLTX2Prompt düğümü, metin üretimi düğümünün özelleştirilm
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Dil modeli tarafından oluşturulan, geliştirilmiş veya tamamlanmış metin dizisi. | STRING |
+| `üretilen_metin` | Dil modeli tarafından oluşturulan, geliştirilmiş veya tamamlanmış metin dizisi. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/tr.md)
 

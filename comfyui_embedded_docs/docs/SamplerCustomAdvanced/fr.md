@@ -16,8 +16,8 @@ Le nœud SamplerCustomAdvanced effectue un échantillonnage avancé dans l'espac
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `sortie_débruitée` | La représentation latente finale échantillonnée après avoir terminé le processus d'échantillonnage | LATENT |
-| `denoised_output` | Une version débruitée de la sortie lorsqu'elle est disponible, sinon renvoie la même valeur que la sortie | LATENT |
+| `sortie` | La représentation latente finale échantillonnée après avoir terminé le processus d'échantillonnage | LATENT |
+| `sortie_débruitée` | Une version débruitée de la sortie lorsqu'elle est disponible, sinon renvoie la même valeur que la sortie | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustomAdvanced/fr.md)
 

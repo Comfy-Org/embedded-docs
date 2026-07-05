@@ -14,7 +14,7 @@ Liste Oluştur düğümü, birden fazla girdiyi tek bir sıralı listede birleş
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `list` | Bağlı girdilerdeki tüm öğeleri, sağlandıkları sırayla birleştiren tek bir liste. Çıktı veri türü, girdi veri türüyle eşleşir. | Değişken |
+| `liste` | Bağlı girdilerdeki tüm öğeleri, sağlandıkları sırayla birleştiren tek bir liste. Çıktı veri türü, girdi veri türüyle eşleşir. | Değişken |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateList/tr.md)
 

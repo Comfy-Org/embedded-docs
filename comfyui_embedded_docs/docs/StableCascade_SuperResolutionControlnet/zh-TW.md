@@ -15,8 +15,8 @@ StableCascade_SuperResolutionControlnet 節點用於準備 Stable Cascade 超解
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `stage_c` | 適合 controlnet 輸入的編碼影像表示 | IMAGE |
-| `stage_b` | 用於 Stable Cascade 處理階段 C 的佔位潛在表示 | LATENT |
+| `controlnet_input` | 適合 controlnet 輸入的編碼影像表示 | IMAGE |
+| `stage_c` | 用於 Stable Cascade 處理階段 C 的佔位潛在表示 | LATENT |
 | `stage_b` | 用於 Stable Cascade 處理階段 B 的佔位潛在表示 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/zh-TW.md)

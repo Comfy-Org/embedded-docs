@@ -20,9 +20,9 @@ El nodo LTXVImgToVideo convierte una imagen de entrada en una representación la
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
-| `latente` | Condicionamiento negativo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
-| `latent` | Representación latente de video que contiene los fotogramas codificados y la máscara de ruido para la generación del video | LATENT |
+| `positivo` | Condicionamiento positivo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
+| `negativo` | Condicionamiento negativo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
+| `latente` | Representación latente de video que contiene los fotogramas codificados y la máscara de ruido para la generación del video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/es.md)
 

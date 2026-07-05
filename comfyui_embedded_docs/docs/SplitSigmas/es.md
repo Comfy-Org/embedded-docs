@@ -13,6 +13,6 @@ El nodo SplitSigmas está diseñado para dividir una secuencia de valores sigma 
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `sigmas_bajos` | El nodo genera dos secuencias de valores sigma, cada una representando una parte de la secuencia original dividida en el paso especificado. Estas salidas son cruciales para operaciones posteriores que requieren un manejo diferenciado de los valores sigma. | `SIGMAS` |
+| `sigmas_altos` | El nodo genera dos secuencias de valores sigma, cada una representando una parte de la secuencia original dividida en el paso especificado. Estas salidas son cruciales para operaciones posteriores que requieren un manejo diferenciado de los valores sigma. | `SIGMAS` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/es.md)

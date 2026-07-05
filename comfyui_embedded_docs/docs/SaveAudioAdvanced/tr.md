@@ -18,7 +18,7 @@ Biçim olarak "opus" seçildiğinde, aşağıdaki seçeneklerle birlikte bir `qu
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|-------------|-----------|
-| `ui` | Kaydedilen ses dosyası bilgilerini içeren kullanıcı arayüzü çıktısı. | UI |
+| `audio` | Kaydedilen ses dosyası bilgilerini içeren kullanıcı arayüzü çıktısı. | UI |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioAdvanced/tr.md)
 

@@ -15,8 +15,8 @@ HunyuanRefinerLatent düğümü, iyileştirme işlemleri için conditioning ve l
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negative` | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş pozitif conditioning | CONDITIONING |
-| `latent` | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş negatif conditioning | CONDITIONING |
+| `positive` | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş pozitif conditioning | CONDITIONING |
+| `negative` | Uygulanan gürültü artırımı ve latent görüntü birleştirmesi ile işlenmiş negatif conditioning | CONDITIONING |
 | `latent` | [batch_size, 32, height, width, channels] boyutlarında yeni bir latent çıktısı | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/tr.md)

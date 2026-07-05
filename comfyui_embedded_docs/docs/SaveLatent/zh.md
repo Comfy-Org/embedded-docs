@@ -15,7 +15,7 @@ SaveLatent 节点用于将潜在张量保存为磁盘上的文件，以便后续
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `ui` | 在 ComfyUI 界面中提供已保存潜在文件的存储位置信息 | UI |
+| `samples` | 在 ComfyUI 界面中提供已保存潜在文件的存储位置信息 | UI |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/zh.md)
 

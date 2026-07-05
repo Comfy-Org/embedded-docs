@@ -20,8 +20,8 @@ LTXVAddGuide düğümü, giriş görüntülerini veya videolarını kodlayarak v
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş pozitif koşullandırma | CONDITIONING |
-| `gizli` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş negatif koşullandırma | CONDITIONING |
+| `pozitif` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş negatif koşullandırma | CONDITIONING |
 | `gizli` | Dahil edilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi ile latent dizi | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/tr.md)

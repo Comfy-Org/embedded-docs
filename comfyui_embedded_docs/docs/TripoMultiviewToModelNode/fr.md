@@ -28,8 +28,8 @@ Ce nœud génère des modèles 3D de manière synchrone en utilisant l'API de Tr
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle task_id` | Chemin du fichier ou identifiant du modèle 3D généré (uniquement pour la rétrocompatibilité) | STRING |
-| `GLB` | Identifiant de tâche pour suivre le processus de génération du modèle | MODEL_TASK_ID |
+| `fichier_modèle` | Chemin du fichier ou identifiant du modèle 3D généré (uniquement pour la rétrocompatibilité) | STRING |
+| `modèle task_id` | Identifiant de tâche pour suivre le processus de génération du modèle | MODEL_TASK_ID |
 | `GLB` | Fichier du modèle 3D généré au format GLB | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoMultiviewToModelNode/fr.md)

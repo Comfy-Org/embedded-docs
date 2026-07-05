@@ -22,7 +22,7 @@ Kling Görüntüden Videoya Düğümü, bir başlangıç referans görüntüsü 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `video_kimliği` | Oluşturulan video çıktısı. | VIDEO |
-| `süre` | Oluşturulan video için benzersiz tanımlayıcı. | STRING |
+| `video_kimliği` | Oluşturulan video için benzersiz tanımlayıcı. | STRING |
 | `süre` | Oluşturulan video için süre bilgisi. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingImage2VideoNode/tr.md)

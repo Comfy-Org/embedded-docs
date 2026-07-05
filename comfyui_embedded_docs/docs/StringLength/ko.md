@@ -12,7 +12,7 @@ StringLength 노드는 텍스트 문자열의 문자 수를 계산합니다. 모
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `length` | 입력 문자열의 총 문자 수로, 공백과 특수 문자를 포함합니다. | INT |
+| `길이` | 입력 문자열의 총 문자 수로, 공백과 특수 문자를 포함합니다. | INT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringLength/ko.md)
 

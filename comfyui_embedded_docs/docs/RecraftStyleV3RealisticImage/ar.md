@@ -16,7 +16,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `recraft_style` | كائن تهيئة نمط Recraft يحتوي على نمط `realistic_image` وإعدادات النمط الفرعي المحدد. يمكن توصيل هذا المخرج بعُقد Recraft الأخرى التي تقبل مدخلات النمط. | STYLEV3 |
+| `نمط إعادة الصياغة` | كائن تهيئة نمط Recraft يحتوي على نمط `realistic_image` وإعدادات النمط الفرعي المحدد. يمكن توصيل هذا المخرج بعُقد Recraft الأخرى التي تقبل مدخلات النمط. | STYLEV3 |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/ar.md)
 

@@ -20,7 +20,7 @@ El nodo **LTXV Reference Audio** se utiliza para la transferencia de identidad d
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `positivo` | El modelo modificado con la función de guía de identidad. | MODEL |
-| `negativo` | El condicionamiento positivo, que ahora contiene los datos de audio de referencia codificados. | CONDITIONING |
+| `positivo` | El condicionamiento positivo, que ahora contiene los datos de audio de referencia codificados. | CONDITIONING |
 | `negativo` | El condicionamiento negativo, que ahora contiene los datos de audio de referencia codificados. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/es.md)

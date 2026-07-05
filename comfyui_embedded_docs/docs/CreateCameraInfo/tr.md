@@ -51,7 +51,7 @@ Kamera Bilgisi Oluştur düğümü, 3D görüntüleme için bir kamera bilgi yap
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `camera_info` | 3D görüntüleme için konum, dönüş, görüş alanı, yakınlaştırma ve izdüşüm türünü içeren kamera bilgi yapısı. | LOAD3DCAMERA |
+| `kamera_bilgisi` | 3D görüntüleme için konum, dönüş, görüş alanı, yakınlaştırma ve izdüşüm türünü içeren kamera bilgi yapısı. | LOAD3DCAMERA |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateCameraInfo/tr.md)
 

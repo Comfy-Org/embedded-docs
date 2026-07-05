@@ -24,10 +24,10 @@ Le nœud WanVaceToVideo traite les données de conditionnement vidéo pour les m
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif avec les données de contrôle vidéo appliquées | CONDITIONING |
-| `latent` | Conditionnement négatif avec les données de contrôle vidéo appliquées | CONDITIONING |
-| `latent_coupé` | Tenseur latent vide prêt pour la génération vidéo | LATENT |
-| `trim_latent` | Nombre de trames latentes à supprimer lors de l'utilisation d'une image de référence | INT |
+| `positif` | Conditionnement positif avec les données de contrôle vidéo appliquées | CONDITIONING |
+| `négatif` | Conditionnement négatif avec les données de contrôle vidéo appliquées | CONDITIONING |
+| `latent` | Tenseur latent vide prêt pour la génération vidéo | LATENT |
+| `latent_coupé` | Nombre de trames latentes à supprimer lors de l'utilisation d'une image de référence | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanVaceToVideo/fr.md)
 

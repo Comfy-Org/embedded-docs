@@ -22,9 +22,9 @@ WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller ol
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `gizli_uzay` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma | CONDITIONING |
-| `latent` | Video dizisi verilerini içeren oluşturulmuş gizil temsil | LATENT |
+| `pozitif` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `gizli_uzay` | Video dizisi verilerini içeren oluşturulmuş gizil temsil | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/tr.md)
 

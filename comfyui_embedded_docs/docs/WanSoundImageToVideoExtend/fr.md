@@ -19,8 +19,8 @@ Le nœud WanSoundImageToVideoExtend étend un latent vidéo existant en généra
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif traité avec le contexte vidéo appliqué | CONDITIONING |
-| `latent` | Conditionnement négatif traité avec le contexte vidéo appliqué | CONDITIONING |
+| `positif` | Conditionnement positif traité avec le contexte vidéo appliqué | CONDITIONING |
+| `négatif` | Conditionnement négatif traité avec le contexte vidéo appliqué | CONDITIONING |
 | `latent` | Représentation latente vidéo générée contenant la séquence vidéo étendue | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideoExtend/fr.md)

@@ -14,8 +14,8 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `ネガティブ` | DINOv3特徴量とFlux2 VAE潜在変数を含むポジティブコンディショニングデータ | CONDITIONING |
-| `latent` | ゼロ埋めされたDINOv3特徴量とゼロ埋めされたFlux2 VAE潜在変数を含むネガティブコンディショニングデータ | CONDITIONING |
+| `ポジティブ` | DINOv3特徴量とFlux2 VAE潜在変数を含むポジティブコンディショニングデータ | CONDITIONING |
+| `ネガティブ` | ゼロ埋めされたDINOv3特徴量とゼロ埋めされたFlux2 VAE潜在変数を含むネガティブコンディショニングデータ | CONDITIONING |
 | `latent` | KSampler用の固定サイズノイズターゲット（潜在変数シーケンスとカメラトークン） | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoSplatConditioning/ja.md)

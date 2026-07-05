@@ -13,7 +13,7 @@ El nodo Ajustar Contraste modifica el nivel de contraste de una imagen de entrad
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen resultante con el contraste ajustado. | IMAGE |
+| `imágenes` | La imagen resultante con el contraste ajustado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AdjustContrast/es.md)
 

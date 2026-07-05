@@ -15,8 +15,8 @@ PairConditioningCombine düğümü, iki ayrı koşullandırma çiftini (her biri
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Birleştirilmiş pozitif koşullandırma çıktısı | CONDITIONING |
-| `negative` | Birleştirilmiş negatif koşullandırma çıktısı | CONDITIONING |
+| `pozitif` | Birleştirilmiş pozitif koşullandırma çıktısı | CONDITIONING |
+| `negatif` | Birleştirilmiş negatif koşullandırma çıktısı | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/tr.md)
 

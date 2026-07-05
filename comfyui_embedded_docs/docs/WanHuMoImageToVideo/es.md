@@ -22,9 +22,9 @@ El nodo WanHuMoImageToVideo convierte imágenes en secuencias de video generando
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo modificado con la imagen de referencia y/o embeddings de audio incorporados | CONDITIONING |
-| `latente` | Condicionamiento negativo modificado con la imagen de referencia y/o embeddings de audio incorporados | CONDITIONING |
-| `latent` | Representación latente generada que contiene los datos de la secuencia de video | LATENT |
+| `positivo` | Condicionamiento positivo modificado con la imagen de referencia y/o embeddings de audio incorporados | CONDITIONING |
+| `negativo` | Condicionamiento negativo modificado con la imagen de referencia y/o embeddings de audio incorporados | CONDITIONING |
+| `latente` | Representación latente generada que contiene los datos de la secuencia de video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/es.md)
 

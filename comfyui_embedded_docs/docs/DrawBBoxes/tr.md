@@ -46,7 +46,7 @@ DrawBBoxes düğümü, bir görüntü üzerine sınırlayıcı kutular, etiketle
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `out_image` | Üzerine çizilmiş sınırlayıcı kutular, etiketler ve güven skorları bulunan çıktı görüntüsü(leri). | IMAGE |
+| `çıktı_görseli` | Üzerine çizilmiş sınırlayıcı kutular, etiketler ve güven skorları bulunan çıktı görüntüsü(leri). | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/tr.md)
 

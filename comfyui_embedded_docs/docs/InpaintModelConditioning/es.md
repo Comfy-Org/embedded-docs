@@ -16,8 +16,8 @@ El nodo InpaintModelConditioning está diseñado para facilitar el proceso de co
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | La información de condicionamiento positivo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones positivas especificadas. | `CONDITIONING` |
-| `latente` | La información de condicionamiento negativo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones negativas especificadas. | `CONDITIONING` |
-| `latent` | La representación latente derivada del proceso de condicionamiento. Esta salida es crucial para comprender las características y atributos subyacentes de la imagen que se está inpaintando. | `LATENT` |
+| `positivo` | La información de condicionamiento positivo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones positivas especificadas. | `CONDITIONING` |
+| `negativo` | La información de condicionamiento negativo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones negativas especificadas. | `CONDITIONING` |
+| `latente` | La representación latente derivada del proceso de condicionamiento. Esta salida es crucial para comprender las características y atributos subyacentes de la imagen que se está inpaintando. | `LATENT` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/es.md)

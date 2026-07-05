@@ -18,7 +18,7 @@ Kling Tek Görsel Video Efekt Düğümü, tek bir referans görseline dayanarak 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `video_kimliği` | Uygulanan efektlerle oluşturulan video | VİDEO |
-| `süre` | Oluşturulan video için benzersiz tanımlayıcı | METİN |
+| `video_kimliği` | Oluşturulan video için benzersiz tanımlayıcı | METİN |
 | `süre` | Oluşturulan videonun süresi | METİN |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingSingleImageVideoEffectNode/tr.md)

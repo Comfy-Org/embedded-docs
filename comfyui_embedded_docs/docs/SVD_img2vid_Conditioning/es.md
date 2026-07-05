@@ -20,9 +20,9 @@ El nodo `SVD_img2vid_Conditioning` prepara los datos de condicionamiento para la
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Datos de condicionamiento positivo que contienen las incrustaciones de imagen y los parámetros de video | CONDITIONING |
-| `latente` | Datos de condicionamiento negativo con incrustaciones y parámetros de video puestos a cero | CONDITIONING |
-| `latent` | Tensor de espacio latente vacío listo para la generación de video | LATENT |
+| `positivo` | Datos de condicionamiento positivo que contienen las incrustaciones de imagen y los parámetros de video | CONDITIONING |
+| `negativo` | Datos de condicionamiento negativo con incrustaciones y parámetros de video puestos a cero | CONDITIONING |
+| `latente` | Tensor de espacio latente vacío listo para la generación de video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SVD_img2vid_Conditioning/es.md)
 

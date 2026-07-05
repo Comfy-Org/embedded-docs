@@ -23,7 +23,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `prompt` | 一个结构化的 JSON 字典，包含高级描述、风格描述（如适用），以及包含背景和元素的构图解构。 | DICT |
+| `提示` | 一个结构化的 JSON 字典，包含高级描述、风格描述（如适用），以及包含背景和元素的构图解构。 | DICT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BuildJsonPromptIdeogram/zh.md)
 

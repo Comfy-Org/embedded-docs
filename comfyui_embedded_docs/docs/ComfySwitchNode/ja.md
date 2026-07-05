@@ -16,7 +16,7 @@ Switchノードは、ブール条件に基づいて2つの入力のうち1つを
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `output` | 選択されたデータです。`スイッチ`がtrueの場合は`真の場合`入力の値、`スイッチ`がfalseの場合は`偽の場合`入力の値になります。 | MATCH_TYPE |
+| `出力` | 選択されたデータです。`スイッチ`がtrueの場合は`真の場合`入力の値、`スイッチ`がfalseの場合は`偽の場合`入力の値になります。 | MATCH_TYPE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/ja.md)
 

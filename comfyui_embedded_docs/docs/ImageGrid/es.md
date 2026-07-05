@@ -16,7 +16,7 @@ El nodo **Cuadrícula de Imágenes** combina múltiples imágenes en una única 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La única imagen de salida que contiene todas las imágenes de entrada dispuestas en una cuadrícula. | IMAGE |
+| `imágenes` | La única imagen de salida que contiene todas las imágenes de entrada dispuestas en una cuadrícula. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageGrid/es.md)
 

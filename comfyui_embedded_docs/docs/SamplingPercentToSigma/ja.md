@@ -17,7 +17,7 @@ SamplingPercentToSigma ノードは、モデルのサンプリングパラメー
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `sigma_value` | 入力されたサンプリングパーセンテージに対応する変換後のシグマ値 | FLOAT |
+| `シグマ値` | 入力されたサンプリングパーセンテージに対応する変換後のシグマ値 | FLOAT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/ja.md)
 

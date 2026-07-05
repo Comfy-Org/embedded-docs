@@ -13,7 +13,7 @@ El nodo CFGNorm aplica una técnica de normalización al proceso de guía sin cl
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `patched_model` | Devuelve el modelo modificado con la normalización CFG aplicada a su proceso de muestreo | MODEL |
+| `modelo_parcheado` | Devuelve el modelo modificado con la normalización CFG aplicada a su proceso de muestreo | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/es.md)
 

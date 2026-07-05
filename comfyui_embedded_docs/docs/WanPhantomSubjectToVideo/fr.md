@@ -21,9 +21,9 @@ Le nœud WanPhantomSubjectToVideo génère du contenu vidéo en traitant des ent
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `texte_négatif` | Conditionnement positif modifié avec concaténation temporelle lorsque des images sont fournies | CONDITIONING |
-| `texte_img_négative` | Conditionnement négatif modifié avec concaténation temporelle lorsque des images sont fournies | CONDITIONING |
-| `latent` | Conditionnement négatif avec concaténation temporelle mise à zéro lorsque des images sont fournies | CONDITIONING |
+| `positif` | Conditionnement positif modifié avec concaténation temporelle lorsque des images sont fournies | CONDITIONING |
+| `texte_négatif` | Conditionnement négatif modifié avec concaténation temporelle lorsque des images sont fournies | CONDITIONING |
+| `texte_img_négative` | Conditionnement négatif avec concaténation temporelle mise à zéro lorsque des images sont fournies | CONDITIONING |
 | `latent` | Représentation vidéo latente générée avec les dimensions et la longueur spécifiées | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/fr.md)

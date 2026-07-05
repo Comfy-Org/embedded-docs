@@ -14,7 +14,7 @@ El nodo StringContains verifica si una cadena de texto determinada contiene una 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `contains` | Devuelve true si la subcadena se encuentra en la cadena, false en caso contrario | BOOLEAN |
+| `contiene` | Devuelve true si la subcadena se encuentra en la cadena, false en caso contrario | BOOLEAN |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringContains/es.md)
 

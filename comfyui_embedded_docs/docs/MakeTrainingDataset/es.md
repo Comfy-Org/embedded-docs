@@ -19,8 +19,8 @@ Este nodo prepara datos para entrenamiento codificando imágenes y texto. Toma u
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `acondicionamiento` | Lista de diccionarios latentes. | LATENT |
-| `conditioning` | Lista de listas de condicionamiento. | CONDITIONING |
+| `latentes` | Lista de diccionarios latentes. | LATENT |
+| `acondicionamiento` | Lista de listas de condicionamiento. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/es.md)
 

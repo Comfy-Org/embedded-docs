@@ -22,7 +22,7 @@ El nodo `TextGenerateLTX2Prompt` es una versión especializada de un nodo de gen
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `output` | La cadena de texto mejorada o completada generada por el modelo de lenguaje. | STRING |
+| `texto_generado` | La cadena de texto mejorada o completada generada por el modelo de lenguaje. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/es.md)
 

@@ -24,8 +24,8 @@ Le nœud WanMoveTrackToVideo prépare les données de conditionnement et d'espac
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
+| `positif` | Le conditionnement positif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
+| `négatif` | Le conditionnement négatif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
 | `latent` | Un tenseur latent vide dont les dimensions sont définies par les entrées `taille_du_lot`, `longueur`, `hauteur` et `largeur`. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/fr.md)

@@ -22,8 +22,8 @@
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `视频ID` | 生成的唇形同步音频视频 | VIDEO |
-| `时长` | 生成视频的唯一标识符 | STRING |
-| `duration` | 生成视频的时长信息 | STRING |
+| `视频ID` | 生成视频的唯一标识符 | STRING |
+| `时长` | 生成视频的时长信息 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncTextToVideoNode/zh.md)
 

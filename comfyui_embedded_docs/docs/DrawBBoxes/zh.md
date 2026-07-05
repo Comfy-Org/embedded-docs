@@ -18,7 +18,7 @@ DrawBBoxes 节点通过在图像上绘制边界框、标签和置信度分数来
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `out_image` | 叠加了绘制的边界框、标签和置信度分数的输出图像。 | IMAGE |
+| `输出图像` | 叠加了绘制的边界框、标签和置信度分数的输出图像。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/zh.md)
 

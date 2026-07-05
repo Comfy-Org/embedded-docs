@@ -27,8 +27,8 @@ Al usar el modo `select`, debe proporcionar la imagen `alpha_keyframe`. Al usar 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `alfa` | El video editado con los cambios de escena aplicados. | VIDEO |
-| `alpha` | La máscara alfa utilizada por Beeble. Está vacía para el modo "fill", que no tiene máscara separada. | VIDEO |
+| `video` | El video editado con los cambios de escena aplicados. | VIDEO |
+| `alfa` | La máscara alfa utilizada por Beeble. Está vacía para el modo "fill", que no tiene máscara separada. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXVideoEdit/es.md)
 

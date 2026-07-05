@@ -19,7 +19,7 @@ Hunyuan3Dv2ConditioningMultiView ノードは、3D動画生成のためのマル
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `negative` | 位置エンコーディングを含む結合されたマルチビュー埋め込みによるポジティブ条件付け | CONDITIONING |
+| `positive` | 位置エンコーディングを含む結合されたマルチビュー埋め込みによるポジティブ条件付け | CONDITIONING |
 | `negative` | 対照学習のためのゼロ値によるネガティブ条件付け | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/ja.md)

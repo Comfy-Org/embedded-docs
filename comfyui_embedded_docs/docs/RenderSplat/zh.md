@@ -23,7 +23,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `mask` | 高斯泼溅的渲染图像 | IMAGE |
+| `图像` | 高斯泼溅的渲染图像 | IMAGE |
 | `mask` | 渲染泼溅的 Alpha 遮罩 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RenderSplat/zh.md)

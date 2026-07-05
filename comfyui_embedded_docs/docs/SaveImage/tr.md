@@ -13,7 +13,7 @@ SaveImage düğümü, aldığı görselleri `ComfyUI/output` dizininize kaydeder
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ui` | Bu düğüm, kaydedilen görsellerin dosya adlarını ve alt klasörlerini içeren bir liste olarak bir kullanıcı arayüzü sonucu çıktısı verir. Diğer düğümlere bağlanmak için veri çıktısı sağlamaz. | UI_RESULT |
+| `images` | Bu düğüm, kaydedilen görsellerin dosya adlarını ve alt klasörlerini içeren bir liste olarak bir kullanıcı arayüzü sonucu çıktısı verir. Diğer düğümlere bağlanmak için veri çıktısı sağlamaz. | UI_RESULT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/tr.md)
 

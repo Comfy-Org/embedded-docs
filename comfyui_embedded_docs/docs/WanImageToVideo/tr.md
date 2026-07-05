@@ -22,9 +22,9 @@ WanImageToVideo düğümü, video oluşturma görevleri için conditioning ve la
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş pozitif conditioning | CONDITIONING |
-| `gizli` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş negatif conditioning | CONDITIONING |
-| `latent` | Video oluşturma için hazır, boş latent alan tensörü | LATENT |
+| `pozitif` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş pozitif conditioning | CONDITIONING |
+| `negatif` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş negatif conditioning | CONDITIONING |
+| `gizli` | Video oluşturma için hazır, boş latent alan tensörü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/tr.md)
 

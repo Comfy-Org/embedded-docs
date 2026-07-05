@@ -19,8 +19,8 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `コンディショニング` | 潜在表現の辞書のリスト。 | LATENT |
-| `conditioning` | コンディショニングリストのリスト。 | CONDITIONING |
+| `latentリスト` | 潜在表現の辞書のリスト。 | LATENT |
+| `コンディショニング` | コンディショニングリストのリスト。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/ja.md)
 

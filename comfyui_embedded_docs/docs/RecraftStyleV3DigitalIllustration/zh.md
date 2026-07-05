@@ -12,7 +12,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `recraft_style` | 一个配置好的样式对象，包含所选的"digital_illustration"风格和可选的子风格，可传递给其他 Recraft API 节点使用。 | STYLEV3 |
+| `Recraft风格` | 一个配置好的样式对象，包含所选的"digital_illustration"风格和可选的子风格，可传递给其他 Recraft API 节点使用。 | STYLEV3 |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3DigitalIllustration/zh.md)
 

@@ -21,7 +21,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 应用了 ControlNet 引导后的修改版正向条件控制 | CONDITIONING |
+| `正面条件` | 应用了 ControlNet 引导后的修改版正向条件控制 | CONDITIONING |
 | `负面条件` | 应用了 ControlNet 引导后的修改版负向条件控制 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/zh.md)

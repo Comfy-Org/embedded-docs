@@ -15,8 +15,8 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `keyframes_mask` | 지정된 세그먼트에 대한 패딩 처리된 키프레임 시퀀스입니다. | IMAGE |
-| `audio_segment` | 유효 프레임을 나타내는 마스크입니다(키프레임 위치는 1, 패딩 위치는 0). | MASK |
+| `keyframes_sequence` | 지정된 세그먼트에 대한 패딩 처리된 키프레임 시퀀스입니다. | IMAGE |
+| `keyframes_mask` | 유효 프레임을 나타내는 마스크입니다(키프레임 위치는 1, 패딩 위치는 0). | MASK |
 | `audio_segment` | 이 비디오 세그먼트에 해당하는 오디오 세그먼트입니다. | AUDIO |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/ko.md)

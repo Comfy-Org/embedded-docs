@@ -19,8 +19,8 @@ Ce nœud prépare une séquence d'images clés pour un segment spécifique d'un 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `keyframes_mask` | Séquence d'images clés complétée pour le segment spécifié. | IMAGE |
-| `audio_segment` | Masque indiquant les images valides (1 pour les positions d'images clés, 0 pour les positions complétées). | MASK |
+| `keyframes_sequence` | Séquence d'images clés complétée pour le segment spécifié. | IMAGE |
+| `keyframes_mask` | Masque indiquant les images valides (1 pour les positions d'images clés, 0 pour les positions complétées). | MASK |
 | `audio_segment` | Segment audio pour ce segment vidéo. | AUDIO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/fr.md)

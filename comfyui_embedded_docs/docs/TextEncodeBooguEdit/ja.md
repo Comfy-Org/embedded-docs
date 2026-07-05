@@ -16,8 +16,8 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `ネガティブ` | ビジョントークンと参照潜在変数を含むテキストプロンプトの両方を含む conditioning | CONDITIONING |
-| `negative` | ネガティブテキストプロンプトと参照潜在変数を含む conditioning | CONDITIONING |
+| `ポジティブ` | ビジョントークンと参照潜在変数を含むテキストプロンプトの両方を含む conditioning | CONDITIONING |
+| `ネガティブ` | ネガティブテキストプロンプトと参照潜在変数を含む conditioning | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextEncodeBooguEdit/ja.md)
 

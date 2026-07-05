@@ -15,7 +15,7 @@ Le nœud SplatToFile3D convertit un nuage gaussien (gaussian splat) en un objet 
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `model_3d` | Un objet File3D contenant les données du nuage gaussien sérialisées dans le format sélectionné, prêt à être sauvegardé ou prévisualisé | FILE3D |
+| `modèle_3d` | Un objet File3D contenant les données du nuage gaussien sérialisées dans le format sélectionné, prêt à être sauvegardé ou prévisualisé | FILE3D |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplatToFile3D/fr.md)
 

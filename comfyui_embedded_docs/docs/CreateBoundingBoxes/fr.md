@@ -15,9 +15,9 @@ Ce nœud fournit une interface graphique pour dessiner des boîtes englobantes a
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `boîtes_englobantes` | Une image RVB montrant le canevas avec toutes les boîtes englobantes rendues, incluant les étiquettes, les échantillons de palette de couleurs et le texte descriptif. | IMAGE |
-| `éléments` | Une liste de boîtes englobantes en coordonnées pixels, chaque boîte contenant les valeurs x, y, largeur et hauteur. | BOUNDING_BOX |
-| `elements` | Un tableau structuré d'objets élément, chacun contenant le type, les coordonnées de la boîte englobante (normalisées de 0 à 1000), le texte (pour le type texte), la description et la palette de couleurs. | ARRAY |
+| `aperçu` | Une image RVB montrant le canevas avec toutes les boîtes englobantes rendues, incluant les étiquettes, les échantillons de palette de couleurs et le texte descriptif. | IMAGE |
+| `boîtes_englobantes` | Une liste de boîtes englobantes en coordonnées pixels, chaque boîte contenant les valeurs x, y, largeur et hauteur. | BOUNDING_BOX |
+| `éléments` | Un tableau structuré d'objets élément, chacun contenant le type, les coordonnées de la boîte englobante (normalisées de 0 à 1000), le texte (pour le type texte), la description et la palette de couleurs. | ARRAY |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/fr.md)
 

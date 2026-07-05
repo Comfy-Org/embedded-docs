@@ -21,8 +21,8 @@ Edita una sola imagen con Beeble SwitchX. Este nodo puede cambiar cualquier elem
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `alfa` | La imagen editada con los elementos de la escena cambiados. | IMAGE |
-| `alpha` | El matte alfa utilizado por Beeble. Vacío para el modo "fill", que no tiene matte separado. | MASK |
+| `imagen` | La imagen editada con los elementos de la escena cambiados. | IMAGE |
+| `alfa` | El matte alfa utilizado por Beeble. Vacío para el modo "fill", que no tiene matte separado. | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXImageEdit/es.md)
 

@@ -15,7 +15,7 @@ Rodina 3D Düzgün düğümü, Rodin API'sini kullanarak giriş görüntülerini
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GLB` | İndirilen 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için). | STRING |
+| `3B Model Yolu` | İndirilen 3D modelin dosya yolu (yalnızca geriye dönük uyumluluk için). | STRING |
 | `GLB` | GLB formatında oluşturulan 3D model. | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Smooth/tr.md)

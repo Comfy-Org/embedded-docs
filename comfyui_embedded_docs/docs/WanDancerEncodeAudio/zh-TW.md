@@ -16,7 +16,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `fps_string` | 一個字典，包含處理後的音訊特徵、計算出的幀率 (fps) 以及音訊注入縮放比例。此輸出用於條件化影片生成模型。 | AUDIO_ENCODER_OUTPUT |
+| `audio_encoder_output` | 一個字典，包含處理後的音訊特徵、計算出的幀率 (fps) 以及音訊注入縮放比例。此輸出用於條件化影片生成模型。 | AUDIO_ENCODER_OUTPUT |
 | `fps_string` | 基於音訊長度和影片幀數計算出的幀率 (fps) 文字描述。此字串旨在用於影片模型的提示詞中。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerEncodeAudio/zh-TW.md)

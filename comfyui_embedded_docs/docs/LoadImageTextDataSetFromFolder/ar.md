@@ -16,7 +16,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `texts` | قائمة بمصفوفات الصور المحملة. | IMAGE |
+| `images` | قائمة بمصفوفات الصور المحملة. | IMAGE |
 | `texts` | قائمة بالتعليقات النصية المقابلة لكل صورة محملة. | STRING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/ar.md)

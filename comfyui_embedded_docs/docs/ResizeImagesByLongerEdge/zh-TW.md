@@ -15,7 +15,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `image` | 調整大小後的影像或影像批次。輸出影像數量與輸入相同，且每張影像的較長邊都符合指定的 `longer_edge` 長度。 | IMAGE |
+| `images` | 調整大小後的影像或影像批次。輸出影像數量與輸入相同，且每張影像的較長邊都符合指定的 `longer_edge` 長度。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByLongerEdge/zh-TW.md)
 

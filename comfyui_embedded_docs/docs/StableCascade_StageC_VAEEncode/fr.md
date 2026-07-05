@@ -14,7 +14,7 @@ Le nœud `StableCascade_StageC_VAEEncode` traite les images via un encodeur VAE 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `stage_b` | La représentation latente encodée pour l'étape C du modèle Stable Cascade | LATENT |
+| `stage_c` | La représentation latente encodée pour l'étape C du modèle Stable Cascade | LATENT |
 | `stage_b` | Un espace réservé pour la représentation latente de l'étape B (retourne actuellement des zéros) | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageC_VAEEncode/fr.md)

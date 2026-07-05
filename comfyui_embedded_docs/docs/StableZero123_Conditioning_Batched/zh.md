@@ -23,9 +23,9 @@ StableZero123_Conditioning_Batched 节点处理输入图像，并生成用于 3D
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 包含图像嵌入和相机参数的正向条件数据 | CONDITIONING |
-| `Latent` | 嵌入初始化为零的负向条件数据 | CONDITIONING |
-| `latent` | 包含批次索引信息的处理后图像潜在表示 | LATENT |
+| `正面条件` | 包含图像嵌入和相机参数的正向条件数据 | CONDITIONING |
+| `负面条件` | 嵌入初始化为零的负向条件数据 | CONDITIONING |
+| `Latent` | 包含批次索引信息的处理后图像潜在表示 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/zh.md)
 

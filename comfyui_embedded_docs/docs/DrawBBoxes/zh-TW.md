@@ -18,7 +18,7 @@ DrawBBoxes 節點透過在圖像上繪製邊界框、標籤和信心分數來可
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `out_image` | 疊加了繪製的邊界框、標籤和信心分數的輸出圖像。 | IMAGE |
+| `輸出圖像` | 疊加了繪製的邊界框、標籤和信心分數的輸出圖像。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/zh-TW.md)
 

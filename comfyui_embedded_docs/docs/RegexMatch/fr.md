@@ -16,7 +16,7 @@ Le nœud RegexMatch vérifie si une chaîne de texte contient une correspondance
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `matches` | Renvoie True si le motif regex correspond à une partie de la chaîne d'entrée, False sinon | BOOLEAN |
+| `correspondances` | Renvoie True si le motif regex correspond à une partie de la chaîne d'entrée, False sinon | BOOLEAN |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/fr.md)
 

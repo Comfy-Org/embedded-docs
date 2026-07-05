@@ -12,7 +12,7 @@ El nodo Mahiro modifica la función de guía para enfocarse más en la direcció
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `patched_model` | El modelo modificado con la función de guía Mahiro aplicada | MODEL |
+| `modelo_parcheado` | El modelo modificado con la función de guía Mahiro aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Mahiro/es.md)
 

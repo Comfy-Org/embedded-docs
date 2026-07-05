@@ -52,8 +52,8 @@ Nodo de Sincronización Labial Kling Audio a Video sincroniza los movimientos de
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `id_de_video` | El video procesado con movimientos de boca sincronizados con los labios | VIDEO |
-| `duración` | El identificador único del video procesado | STRING |
-| `duration` | La duración del video procesado | STRING |
+| `id_de_video` | El identificador único del video procesado | STRING |
+| `duración` | La duración del video procesado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/es.md)
 
