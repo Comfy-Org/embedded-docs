@@ -20,7 +20,7 @@ Lorsque `position` est défini sur `Fraction (0.0 to 1.0)`, vous devez fournir u
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `images de prompt` | Une chaîne d'images de guidage pouvant être connectée à l'entrée `prompt_images` du nœud Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
+| `images de prompt` | Une chaîne d'images de guidage pouvant être connectée à l'entrée `images de prompt` du nœud Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/fr.md)
 

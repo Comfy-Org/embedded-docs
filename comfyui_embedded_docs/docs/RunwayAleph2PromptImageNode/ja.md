@@ -20,7 +20,7 @@
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `プロンプト画像` | Runway Aleph2 Video to Videoノードの`prompt_images`入力に接続できるプロンプト画像のチェーンです。 | PROMPT_IMAGE_CHAIN |
+| `プロンプト画像` | Runway Aleph2 Video to Videoノードの`プロンプト画像`入力に接続できるプロンプト画像のチェーンです。 | PROMPT_IMAGE_CHAIN |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/ja.md)
 

@@ -20,7 +20,7 @@ Quando `position` está definido como `Fraction (0.0 to 1.0)`, você deve fornec
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |---------------|-----------|--------------|
-| `imagens_de_prompt` | Uma cadeia de imagens de prompt que pode ser conectada à entrada `prompt_images` do nó Runway Aleph2 Vídeo para Vídeo. | PROMPT_IMAGE_CHAIN |
+| `imagens_de_prompt` | Uma cadeia de imagens de prompt que pode ser conectada à entrada `imagens_de_prompt` do nó Runway Aleph2 Vídeo para Vídeo. | PROMPT_IMAGE_CHAIN |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/pt-BR.md)
 

@@ -20,7 +20,7 @@ Bu düğüm, bir kılavuz görüntüyü çıktı videosunda belirli bir ana sabi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `rehber görseller` | Runway Aleph2 Video to Video düğümünün `prompt_images` girişine bağlanabilen bir prompt görüntü zinciri. | PROMPT_IMAGE_CHAIN |
+| `rehber görseller` | Runway Aleph2 Video to Video düğümünün `rehber görseller` girişine bağlanabilen bir prompt görüntü zinciri. | PROMPT_IMAGE_CHAIN |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/tr.md)
 
