@@ -11,9 +11,10 @@ Ce nœud est conçu pour améliorer les capacités d'échantillonnage d'un modè
 | `sigma_max` | La valeur sigma maximale pour le niveau de bruit, permettant un contrôle de la limite supérieure dans le processus d'injection de bruit pendant l'échantillonnage. | `FLOAT` | `float` |
 | `sigma_min` | La valeur sigma minimale pour le niveau de bruit, définissant la limite inférieure pour l'injection de bruit, affectant ainsi la précision d'échantillonnage du modèle. | `FLOAT` | `float` |
 
+## Sorties
 
 | Paramètre | Description | Type de données | Type Python |
 | --- | --- | --- | --- |
-| `model` | Le modèle amélioré avec des capacités d'échantillonnage EDM continu intégrées, prêt à être utilisé dans des tâches de génération. | MODEL | `torch.nn.Module` |
+| `modèle` | Le modèle amélioré avec des capacités d'échantillonnage EDM continu intégrées, prêt à être utilisé dans des tâches de génération. | MODEL | `torch.nn.Module` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/fr.md)

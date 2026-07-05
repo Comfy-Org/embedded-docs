@@ -12,9 +12,10 @@ El nodo `FeatherMask` aplica un efecto de difuminado en los bordes de una másca
 | `derecha` | Especifica la distancia desde el borde derecho dentro de la cual se aplicará el efecto de difuminado. | INT |
 | `abajo` | Especifica la distancia desde el borde inferior dentro de la cual se aplicará el efecto de difuminado. | INT |
 
+## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `mask` | La salida es una versión modificada de la máscara de entrada con un efecto de difuminado aplicado en sus bordes. | MASK |
+| `máscara` | La salida es una versión modificada de la máscara de entrada con un efecto de difuminado aplicado en sus bordes. | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FeatherMask/es.md)

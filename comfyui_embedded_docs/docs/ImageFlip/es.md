@@ -9,10 +9,11 @@ El nodo ImageFlip invierte imágenes a lo largo de diferentes ejes. Puede invert
 | `imagen` | La imagen de entrada que se va a invertir | IMAGE | Sí | - |
 | `método_volteo` | La dirección de inversión a aplicar (predeterminado: "x-axis: vertically") | STRING | Sí | "x-axis: vertically"<br>"y-axis: horizontally" |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen de salida invertida | IMAGE |
+| `imagen` | La imagen de salida invertida | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageFlip/es.md)
 

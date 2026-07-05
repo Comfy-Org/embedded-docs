@@ -15,10 +15,11 @@ Le nœud **ConditioningSetAreaPercentageVideo** modifie les données de conditio
 | `z` | La position temporelle de départ de la zone en pourcentage de la timeline vidéo | FLOAT | Requis | 0.0 | 0.0 - 1.0 |
 | `force` | Le multiplicateur de force appliqué au conditionnement dans la zone définie | FLOAT | Requis | 1.0 | 0.0 - 10.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditioning` | Les données de conditionnement modifiées avec les paramètres de zone et de force spécifiés appliqués | CONDITIONING |
+| `conditionnement` | Les données de conditionnement modifiées avec les paramètres de zone et de force spécifiés appliqués | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentageVideo/fr.md)
 

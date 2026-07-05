@@ -20,11 +20,12 @@ El nodo WanFirstLastFrameToVideo crea condicionamiento de video combinando fotog
 
 **Nota:** Cuando se proporcionan tanto `start_image` como `end_image`, el nodo crea una secuencia de video que realiza una transición entre estos dos fotogramas. Los parámetros `clip_vision_start_image` y `clip_vision_end_image` son opcionales, pero cuando se proporcionan, sus características de visión CLIP se concatenan y se aplican tanto al condicionamiento positivo como al negativo. La `start_image` se recorta a los primeros `length` fotogramas, y la `end_image` se recorta a los últimos `length` fotogramas antes del procesamiento.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
-| `negative` | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
+| `negativo` | Condicionamiento positivo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
+| `latente` | Condicionamiento negativo con codificación de fotogramas de video aplicada y características de visión CLIP | CONDITIONING |
 | `latent` | Tensor latente vacío con dimensiones que coinciden con los parámetros de video especificados | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/es.md)

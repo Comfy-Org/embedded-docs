@@ -9,10 +9,11 @@ Ce nœud définit un timbre audio de référence pour une utilisation dans le pr
 | `conditionnement` | Les données de conditionnement auxquelles les informations du timbre audio de référence seront attachées. | CONDITIONING | Oui |  |
 | `latent` | Une représentation latente facultative de l'audio de référence. Lorsqu'elle est fournie, ses échantillons sont ajoutés au conditionnement. | LATENT | Non |  |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditioning` | Les données de conditionnement modifiées, contenant désormais les latences du timbre audio de référence si l'entrée facultative `latent` a été fournie. | CONDITIONING |
+| `conditionnement` | Les données de conditionnement modifiées, contenant désormais les latences du timbre audio de référence si l'entrée facultative `latent` a été fournie. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/fr.md)
 

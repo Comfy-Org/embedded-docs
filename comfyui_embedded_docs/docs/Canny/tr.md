@@ -22,10 +22,11 @@ Nihai çıktı, beyaz kısımların algılanan kenar çizgileri ve siyah kısım
 | `düşük_eşik` | Düşük eşik, ne kadar zayıf kenarların yok sayılacağını belirler. Daha düşük değerler daha fazla detay korur ancak gürültü oluşturabilir | FLOAT | Widget | 0.4 | 0.01-0.99 |
 | `yüksek_eşik` | Yüksek eşik, ne kadar güçlü kenarların korunacağını belirler. Daha yüksek değerler yalnızca en belirgin kontur çizgilerini tutar | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Siyah beyaz kenar görüntüsü; beyaz çizgiler algılanan kenarlar, siyah alanlar kenar olmayan kısımlardır | IMAGE |
+| `görüntü` | Siyah beyaz kenar görüntüsü; beyaz çizgiler algılanan kenarlar, siyah alanlar kenar olmayan kısımlardır | IMAGE |
 
 ## Parametre Karşılaştırması
 

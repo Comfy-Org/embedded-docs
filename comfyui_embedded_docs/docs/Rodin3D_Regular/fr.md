@@ -11,10 +11,11 @@ Le nœud **Rodin 3D Regular** génère des actifs 3D en utilisant l'API Rodin. I
 | `Type_Matériau` | Type de matériau à appliquer au modèle 3D. | STRING | Oui | - |
 | `Nombre_Polygones` | Nombre de polygones cible pour le modèle 3D généré. Ce paramètre détermine le mode de qualité et la complexité du maillage. | STRING | Oui | - |
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `3D Model Path` | Chemin d'accès au fichier du modèle 3D généré (conservé pour la rétrocompatibilité). | STRING |
+| `GLB` | Chemin d'accès au fichier du modèle 3D généré (conservé pour la rétrocompatibilité). | STRING |
 | `GLB` | Le modèle 3D généré au format GLB. | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Regular/fr.md)

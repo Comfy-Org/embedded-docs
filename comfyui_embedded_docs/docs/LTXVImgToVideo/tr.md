@@ -16,11 +16,12 @@ LTXVImgToVideo düğümü, video oluşturma modelleri için bir girdi görüntü
 | `toplu_boyut` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Hayır | 1 ile 4096 |
 | `güç` | Oluşturulan videonun ilk karesinde orijinal görüntü içeriğinin ne kadarının korunacağını kontrol eder. 1,0 değeri orijinal görüntüyü tamamen korurken, 0,0 maksimum değişikliğe izin verir (varsayılan: 1,0) | FLOAT | Hayır | 0,0 ile 1,0 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Video kare maskelemesi uygulanmış işlenmiş pozitif koşullandırma | CONDITIONING |
-| `negative` | Video kare maskelemesi uygulanmış işlenmiş negatif koşullandırma | CONDITIONING |
+| `negatif` | Video kare maskelemesi uygulanmış işlenmiş pozitif koşullandırma | CONDITIONING |
+| `gizli` | Video kare maskelemesi uygulanmış işlenmiş negatif koşullandırma | CONDITIONING |
 | `latent` | Video oluşturma için kodlanmış kareleri ve gürültü maskesini içeren video gizil katman temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/tr.md)

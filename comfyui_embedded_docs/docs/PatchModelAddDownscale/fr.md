@@ -15,10 +15,11 @@ Le nœud PatchModelAddDownscale implémente la fonctionnalité Kohya Deep Shrink
 | `méthode de réduction` | La méthode d'interpolation utilisée pour les opérations de réduction | COMBO | Non | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 | `méthode d'agrandissement` | La méthode d'interpolation utilisée pour les opérations d'agrandissement | COMBO | Non | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec le patch de réduction appliqué | MODEL |
+| `modèle` | Le modèle modifié avec le patch de réduction appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/fr.md)
 

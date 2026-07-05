@@ -10,11 +10,12 @@ LTXVConditioning düğümü, video oluşturma modelleri için hem pozitif hem de
 | `negatif` | Kare hızı bilgisini alacak negatif koşullandırma girdisi | CONDITIONING | Evet | - |
 | `kare_hızı` | Her iki koşullandırma kümesine uygulanacak kare hızı değeri (varsayılan: 25,0) | FLOAT | Evet | 0,0 - 1000,0 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Kare hızı bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
-| `negative` | Kare hızı bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
+| `negatif` | Kare hızı bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
+| `negatif` | Kare hızı bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/tr.md)
 

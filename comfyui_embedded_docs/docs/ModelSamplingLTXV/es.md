@@ -11,10 +11,11 @@ El nodo ModelSamplingLTXV aplica parámetros de muestreo avanzados a un modelo b
 | `desplazamiento_base` | El valor base de desplazamiento utilizado en el cálculo de interpolación lineal (predeterminado: 0.95) | FLOAT | Sí | 0.0 a 100.0 |
 | `latente` | Entrada latente opcional utilizada para determinar el recuento de tokens para el cálculo de desplazamiento. Si no se proporciona, se utiliza un recuento de tokens predeterminado de 4096 | LATENT | No | - |
 
+## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con los parámetros de muestreo aplicados | MODEL |
+| `modelo` | El modelo modificado con los parámetros de muestreo aplicados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingLTXV/es.md)
 

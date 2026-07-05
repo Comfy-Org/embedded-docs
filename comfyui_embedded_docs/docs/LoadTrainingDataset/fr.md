@@ -8,10 +8,11 @@ Ce nœud charge un ensemble de données d'entraînement encodé préalablement s
 | --- | --- | --- | --- | --- |
 | `folder_name` | Nom du dossier contenant l'ensemble de données sauvegardé, situé dans le répertoire de sortie de ComfyUI (par défaut : "training_dataset"). | STRING | Oui | N/A |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `latents` | Une liste de dictionnaires latents, où chaque dictionnaire contient une clé `"samples"` avec un tenseur. | LATENT |
+| `conditioning` | Une liste de dictionnaires latents, où chaque dictionnaire contient une clé `"samples"` avec un tenseur. | LATENT |
 | `conditioning` | Une liste de listes de conditionnement, où chaque liste interne contient les données de conditionnement pour un échantillon correspondant. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/fr.md)

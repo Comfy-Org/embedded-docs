@@ -10,10 +10,11 @@ El nodo ImageAddNoise añade ruido aleatorio a una imagen de entrada. Utiliza un
 | `semilla` | La semilla aleatoria utilizada para generar el ruido (predeterminado: 0) | INT | Sí | 0 a 18446744073709551615 |
 | `intensidad` | Controla la intensidad del efecto de ruido (predeterminado: 0.5) | FLOAT | Sí | 0.0 a 1.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen de salida con el ruido añadido aplicado | IMAGE |
+| `imagen` | La imagen de salida con el ruido añadido aplicado | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageAddNoise/es.md)
 

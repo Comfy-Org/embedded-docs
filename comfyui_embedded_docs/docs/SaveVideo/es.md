@@ -11,10 +11,11 @@ El nodo SaveVideo guarda contenido de video de entrada en tu directorio de salid
 | `formato` | El formato para guardar el video (predeterminado: "auto"). | COMBO | No | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` |
 | `códec` | El códec a utilizar para el video (predeterminado: "auto"). | COMBO | No | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| ui | Este nodo no devuelve ningún dato de salida. | - |
+| *Sin salidas* | Este nodo no devuelve ningún dato de salida. | - |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveVideo/es.md)
 

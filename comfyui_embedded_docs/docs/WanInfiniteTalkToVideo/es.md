@@ -32,13 +32,14 @@ El nodo WanInfiniteTalkToVideo genera secuencias de video a partir de entrada de
 * Si se proporcionan `mask_1` y `mask_2`, también debe proporcionarse `audio_encoder_output_2`.
 * Si se proporciona `previous_frames`, debe contener al menos tantos fotogramas como los especificados por `motion_frame_count`.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo parcheado con el condicionamiento de audio aplicado. | MODEL |
-| `positive` | El condicionamiento positivo, potencialmente modificado con contexto adicional (ej. imagen de inicio, CLIP vision). | CONDITIONING |
-| `negative` | El condicionamiento negativo, potencialmente modificado con contexto adicional. | CONDITIONING |
-| `latent` | La secuencia de video generada en el espacio latente. | LATENT |
+| `positivo` | El modelo parcheado con el condicionamiento de audio aplicado. | MODEL |
+| `negativo` | El condicionamiento positivo, potencialmente modificado con contexto adicional (ej. imagen de inicio, CLIP vision). | CONDITIONING |
+| `latente` | El condicionamiento negativo, potencialmente modificado con contexto adicional. | CONDITIONING |
+| `imagen recortada` | La secuencia de video generada en el espacio latente. | LATENT |
 | `trim_image` | El número de fotogramas desde el inicio del contexto de movimiento que deben recortarse al extender una secuencia. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/es.md)

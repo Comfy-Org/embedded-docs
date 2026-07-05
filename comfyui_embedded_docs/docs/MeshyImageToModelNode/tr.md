@@ -25,12 +25,13 @@
 * `enable_pbr`, `texture_prompt` ve `texture_image` girdileri yalnızca `should_texture` `"true"` olarak ayarlandığında kullanılabilir.
 * `texture_prompt` ve `texture_image` aynı anda kullanılamaz. `should_texture` `"true"` iken her ikisi de sağlanırsa, düğüm bir hata verecektir.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_file` | Oluşturulan GLB modelinin dosya adı. (Geriye dönük uyumluluk için korunmaktadır). | STRING |
-| `meshy_task_id` | Referans veya sorun giderme amacıyla kullanılabilen Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
-| `GLB` | GLB dosya formatında oluşturulan 3B model. | FILE3DGLB |
+| `meshy_task_id` | Oluşturulan GLB modelinin dosya adı. (Geriye dönük uyumluluk için korunmaktadır). | STRING |
+| `GLB` | Referans veya sorun giderme amacıyla kullanılabilen Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
+| `FBX` | GLB dosya formatında oluşturulan 3B model. | FILE3DGLB |
 | `FBX` | FBX dosya formatında oluşturulan 3B model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/tr.md)

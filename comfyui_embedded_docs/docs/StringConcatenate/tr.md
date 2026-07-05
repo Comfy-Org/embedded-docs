@@ -10,10 +10,11 @@ StringConcatenate düğümü, iki metin dizgesini belirtilen bir ayırıcı ile 
 | `dize_b` | Birleştirilecek ikinci metin dizesi | STRING | Evet | - |
 | `ayırıcı` | İki girdi dizesi arasına eklenecek karakter veya dize (varsayılan: boş dize) | STRING | Hayır | - |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | string_a ve string_b arasına ayırıcı eklenmiş birleşik dize | STRING |
+| `çıktı` | string_a ve string_b arasına ayırıcı eklenmiş birleşik dize | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringConcatenate/tr.md)
 

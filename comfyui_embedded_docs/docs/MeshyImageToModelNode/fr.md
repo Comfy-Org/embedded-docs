@@ -25,12 +25,13 @@ Le nœud Meshy : Image vers modèle utilise l'API Meshy pour générer un modèl
 * Les entrées `enable_pbr`, `texture_prompt` et `texture_image` ne sont disponibles que lorsque `should_texture` est défini sur `"true"`.
 * Vous ne pouvez pas utiliser `texture_prompt` et `texture_image` en même temps. Si les deux sont fournis lorsque `should_texture` est `"true"`, le nœud générera une erreur.
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `model_file` | Le nom du fichier du modèle GLB généré. (Maintenu pour la rétrocompatibilité). | CHAÎNE |
-| `meshy_task_id` | L'identifiant unique de la tâche de l'API Meshy, qui peut être utilisé pour référence ou dépannage. | MESHY_TASK_ID |
-| `GLB` | Le modèle 3D généré au format de fichier GLB. | FILE3DGLB |
+| `meshy_task_id` | Le nom du fichier du modèle GLB généré. (Maintenu pour la rétrocompatibilité). | CHAÎNE |
+| `GLB` | L'identifiant unique de la tâche de l'API Meshy, qui peut être utilisé pour référence ou dépannage. | MESHY_TASK_ID |
+| `FBX` | Le modèle 3D généré au format de fichier GLB. | FILE3DGLB |
 | `FBX` | Le modèle 3D généré au format de fichier FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/fr.md)

@@ -39,11 +39,12 @@
 | `صورة` | صورة الإدخال المراد معالجتها للدقة الفائقة | IMAGE | نعم | - |
 | `vae` | نموذج VAE المستخدم لتشفير صورة الإدخال | VAE | نعم | - |
 
+## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `controlnet_input` | تمثيل الصورة المشفرة المناسب لمدخلات شبكة التحكم | IMAGE |
-| `stage_c` | تمثيل كامن مؤقت للمرحلة C من معالجة Stable Cascade | LATENT |
+| `المرحلة_ج` | تمثيل الصورة المشفرة المناسب لمدخلات شبكة التحكم | IMAGE |
+| `المرحلة_ب` | تمثيل كامن مؤقت للمرحلة C من معالجة Stable Cascade | LATENT |
 | `stage_b` | تمثيل كامن مؤقت للمرحلة B من معالجة Stable Cascade | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/ar.md)

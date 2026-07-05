@@ -12,10 +12,11 @@
 | --- | --- | --- | --- | --- |
 | `folder_name` | 保存されたデータセットが含まれるフォルダの名前。ComfyUI の出力ディレクトリ内に配置されます（デフォルト: "training_dataset"）。 | STRING | はい | N/A |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `latents` | 潜在辞書のリスト。各辞書にはテンソルを含む `"samples"` キーが含まれます。 | LATENT |
+| `conditioning` | 潜在辞書のリスト。各辞書にはテンソルを含む `"samples"` キーが含まれます。 | LATENT |
 | `conditioning` | コンディショニングリストのリスト。各内部リストには、対応するサンプルのコンディショニングデータが含まれます。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/ja.md)

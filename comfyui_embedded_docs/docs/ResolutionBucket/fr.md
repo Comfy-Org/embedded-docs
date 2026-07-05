@@ -11,10 +11,11 @@ Ce nœud organise une liste d'images latentes et leurs données de conditionneme
 
 **Remarque :** Le nombre d'éléments dans la liste `latents` doit correspondre exactement au nombre d'éléments dans la liste `conditioning`. Chaque dictionnaire latent peut contenir un lot d'échantillons, et la liste de conditionnement correspondante doit contenir un nombre équivalent d'éléments de conditionnement pour ce lot.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `latents` | Liste de dictionnaires latents regroupés en lots, un par groupe de résolution. | LATENT |
+| `conditioning` | Liste de dictionnaires latents regroupés en lots, un par groupe de résolution. | LATENT |
 | `conditioning` | Liste de listes de conditionnement, une par groupe de résolution. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/fr.md)

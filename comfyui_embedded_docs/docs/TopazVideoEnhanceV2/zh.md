@@ -27,10 +27,11 @@
 - 当 `upscaler_model` 非 "Disabled" 时，`upscaler_resolution` 子参数为必填项。
 - 当 `interpolation_model` 非 "Disabled" 时，`interpolation_frame_rate` 子参数为必填项。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `video` | 应用所选放大和/或插值滤镜后的增强视频输出。 | VIDEO |
+| `视频` | 应用所选放大和/或插值滤镜后的增强视频输出。 | VIDEO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazVideoEnhanceV2/zh.md)
 

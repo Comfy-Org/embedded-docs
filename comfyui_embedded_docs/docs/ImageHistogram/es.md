@@ -8,13 +8,14 @@ El nodo ImageHistogram analiza la distribución de color de una imagen de entrad
 | --- | --- | --- | --- | --- |
 | `imagen` | La imagen de entrada a analizar. El nodo procesa la primera imagen del lote. | IMAGE | Sí | N/A |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `rgb` | Un histograma compuesto que representa la intensidad promedio de píxeles en los canales rojo, verde y azul. | HISTOGRAM |
-| `luminance` | Un histograma del brillo percibido de la imagen, calculado utilizando la fórmula de luminancia estándar ITU-R BT.709. | HISTOGRAM |
-| `red` | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color rojo. | HISTOGRAM |
-| `green` | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color verde. | HISTOGRAM |
+| `luminancia` | Un histograma compuesto que representa la intensidad promedio de píxeles en los canales rojo, verde y azul. | HISTOGRAM |
+| `rojo` | Un histograma del brillo percibido de la imagen, calculado utilizando la fórmula de luminancia estándar ITU-R BT.709. | HISTOGRAM |
+| `verde` | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color rojo. | HISTOGRAM |
+| `azul` | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color verde. | HISTOGRAM |
 | `blue` | Un histograma que muestra la distribución de intensidades de píxeles en el canal de color azul. | HISTOGRAM |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageHistogram/es.md)

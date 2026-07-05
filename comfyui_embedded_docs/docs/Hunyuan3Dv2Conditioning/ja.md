@@ -10,10 +10,11 @@ Hunyuan3Dv2Conditioning ノードは、CLIP ビジョン出力を処理して 3D
 | --- | --- | --- | --- | --- |
 | `clip_vision_output` | 視覚的な埋め込みを含む CLIP ビジョンモデルの出力 | CLIP_VISION_OUTPUT | はい | - |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `positive` | CLIP ビジョン埋め込みを含むポジティブ条件付けデータ | CONDITIONING |
+| `negative` | CLIP ビジョン埋め込みを含むポジティブ条件付けデータ | CONDITIONING |
 | `negative` | ポジティブ条件付けの形状に一致するゼロ値埋め込みを含むネガティブ条件付けデータ | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2Conditioning/ja.md)

@@ -12,10 +12,11 @@ Ce nœud fusionne plusieurs listes de textes en une seule liste combinée. Il es
 
 **Remarque :** Ce nœud est configuré comme un processus de groupe (`is_group_process = True`), ce qui signifie qu'il gère automatiquement plusieurs entrées de listes en les concaténant avant l'exécution de la fonction de traitement principale.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `texts` | La liste unique et fusionnée contenant tous les textes d'entrée. | STRING |
+| `textes` | La liste unique et fusionnée contenant tous les textes d'entrée. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeTextLists/fr.md)
 

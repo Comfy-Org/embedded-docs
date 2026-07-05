@@ -10,10 +10,11 @@ Le nœud **LTXVConditioning** ajoute des informations de fréquence d'images aux
 | `negative` | L'entrée de conditionnement négatif qui recevra les informations de fréquence d'images | CONDITIONING | Oui | - |
 | `frame_rate` | La valeur de fréquence d'images à appliquer aux deux ensembles de conditionnement (par défaut : 25.0) | FLOAT | Oui | 0.0 - 1000.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Le conditionnement positif avec les informations de fréquence d'images appliquées | CONDITIONING |
+| `negative` | Le conditionnement positif avec les informations de fréquence d'images appliquées | CONDITIONING |
 | `negative` | Le conditionnement négatif avec les informations de fréquence d'images appliquées | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/fr.md)

@@ -18,11 +18,12 @@ HunyuanVideo15ImageToVideo düğümü, HunyuanVideo 1.5 modeline dayalı video o
 
 **Not:** Bir `start_image` sağlandığında, çift doğrusal enterpolasyon kullanılarak belirtilen `width` ve `height` değerlerine otomatik olarak yeniden boyutlandırılır. Görüntü grubunun ilk `length` karesi kullanılır. Kodlanmış görüntü daha sonra, karşılık gelen bir `concat_mask` ile birlikte `concat_latent_image` olarak hem `positive` hem de `negative` koşullandırmaya eklenir. Maske, başlangıç görüntüsünün kapsadığı kareler için 0.0, kalan kareler için 1.0 olarak ayarlanır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Artık kodlanmış başlangıç görüntüsünü veya CLIP görüş çıktısını içerebilen değiştirilmiş pozitif koşullandırma. | CONDITIONING |
-| `negative` | Artık kodlanmış başlangıç görüntüsünü veya CLIP görüş çıktısını içerebilen değiştirilmiş negatif koşullandırma. | CONDITIONING |
+| `negatif` | Artık kodlanmış başlangıç görüntüsünü veya CLIP görüş çıktısını içerebilen değiştirilmiş pozitif koşullandırma. | CONDITIONING |
+| `latent` | Artık kodlanmış başlangıç görüntüsünü veya CLIP görüş çıktısını içerebilen değiştirilmiş negatif koşullandırma. | CONDITIONING |
 | `latent` | Belirtilen grup boyutu, video uzunluğu, genişlik ve yükseklik için yapılandırılmış boyutlara sahip boş bir gizli tensör. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/tr.md)

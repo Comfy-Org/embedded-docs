@@ -9,10 +9,11 @@
 | `条件` | 将附加参考音频信息的 conditioning 数据。 | CONDITIONING | 是 |  |
 | `潜空间` | 可选的参考音频潜在表示。提供时，其样本将被添加到 conditioning 中。 | LATENT | 否 |  |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `conditioning` | 修改后的 conditioning 数据，如果提供了可选的 `潜空间` 输入，则现在包含参考音频音色潜在表示。 | CONDITIONING |
+| `条件` | 修改后的 conditioning 数据，如果提供了可选的 `潜空间` 输入，则现在包含参考音频音色潜在表示。 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/zh.md)
 

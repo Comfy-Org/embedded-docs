@@ -12,10 +12,11 @@ El nodo HyperTile aplica una técnica de división en mosaicos al mecanismo de a
 | `profundidad_máxima` | El nivel de profundidad máximo (escala de resolución) para aplicar la división en mosaicos. Un valor de 0 aplica la división solo en la resolución más alta (predeterminado: 0) | INT | No | 0 - 10 |
 | `escala_de_profundidad` | Cuando está habilitado, el tamaño del mosaico se escala proporcionalmente en niveles de profundidad más profundos. Esto puede ayudar a mantener la calidad en resoluciones más bajas (predeterminado: False) | BOOLEAN | No | True / False |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con la optimización HyperTile aplicada | MODEL |
+| `modelo` | El modelo modificado con la optimización HyperTile aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HyperTile/es.md)
 

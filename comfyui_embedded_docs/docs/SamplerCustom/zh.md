@@ -16,10 +16,11 @@ SamplerCustom 节点旨在为各种应用提供灵活且可定制的采样机制
 | `Sigmas` | 'sigmas' 输入类型定义了采样过程中使用的噪声水平，影响样本空间的探索程度以及输出的多样性。 | `SIGMAS` |
 | `Latent` | 'latent_image' 输入类型为采样过程提供初始潜在图像，作为样本生成的起点。 | `LATENT` |
 
+## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `output` | 'output' 代表采样过程的主要结果，包含生成的样本。 | `LATENT` |
+| `降噪Latent` | 'output' 代表采样过程的主要结果，包含生成的样本。 | `LATENT` |
 | `denoised_output` | 'denoised_output' 代表经过降噪处理后的样本，可能提升了生成样本的清晰度和质量。 | `LATENT` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/zh.md)

@@ -8,10 +8,11 @@ El nodo LoadImageOutput carga imágenes desde la carpeta de salida. Al hacer cli
 | --- | --- | --- | --- | --- |
 | `imagen` | Carga una imagen desde la carpeta de salida. Incluye una opción de carga y un botón de actualizar para renovar la lista de imágenes. Al hacer clic en el botón de actualizar, el nodo actualizará la lista de imágenes y seleccionará automáticamente la primera, permitiendo una iteración sencilla. | COMBO | Sí | Múltiples opciones disponibles |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen cargada desde la carpeta de salida | IMAGE |
+| `imagen` | La imagen cargada desde la carpeta de salida | IMAGE |
 | `mask` | La máscara asociada a la imagen cargada | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageOutput/es.md)

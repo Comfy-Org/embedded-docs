@@ -11,9 +11,10 @@
 | `sigma_max` | ノイズレベルの最大シグマ値です。サンプリング中のノイズ注入プロセスにおける上限を制御できます。 | `FLOAT` | `float` |
 | `sigma_min` | ノイズレベルの最小シグマ値です。ノイズ注入の下限を設定し、モデルのサンプリング精度に影響を与えます。 | `FLOAT` | `float` |
 
+## 出力
 
 | パラメータ | 説明 | データ型 | Python dtype |
 | --- | --- | --- | --- |
-| `model` | 連続EDMサンプリング機能が統合された強化済みモデルです。生成タスクでさらに使用できる状態になっています。 | MODEL | `torch.nn.Module` |
+| `モデル` | 連続EDMサンプリング機能が統合された強化済みモデルです。生成タスクでさらに使用できる状態になっています。 | MODEL | `torch.nn.Module` |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/ja.md)

@@ -10,9 +10,10 @@ Le nœud `GrowMask` est conçu pour modifier la taille d'un masque donné, en l'
 | `agrandir` | Détermine l'ampleur et la direction de la modification du masque. Les valeurs positives agrandissent le masque, tandis que les valeurs négatives le réduisent. Ce paramètre influence directement la taille finale du masque. | INT |
 | `coins_évasés` | Un indicateur booléen qui, lorsqu'il est défini sur Vrai, applique un effet d'atténuation aux coins du masque lors de la modification. Cette option permet des transitions plus douces et des résultats visuellement agréables. | BOOLEAN |
 
+## Sorties
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `mask` | Le masque modifié après application de l'agrandissement/réduction spécifié et de l'effet d'atténuation optionnel des coins. | MASK |
+| `masque` | Le masque modifié après application de l'agrandissement/réduction spécifié et de l'effet d'atténuation optionnel des coins. | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrowMask/fr.md)

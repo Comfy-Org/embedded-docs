@@ -9,10 +9,11 @@ Este nodo establece un timbre de audio de referencia para su uso en el proceso "
 | `condicionamiento` | Los datos de condicionamiento a los que se adjuntará la información del audio de referencia. | CONDITIONING | Sí |  |
 | `latente` | Una representación latente opcional del audio de referencia. Cuando se proporciona, sus muestras se añaden al condicionamiento. | LATENT | No |  |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `conditioning` | Los datos de condicionamiento modificados, que ahora contienen los latentes del timbre de audio de referencia si se proporcionó la entrada opcional `latente`. | CONDITIONING |
+| `condicionamiento` | Los datos de condicionamiento modificados, que ahora contienen los latentes del timbre de audio de referencia si se proporcionó la entrada opcional `latente`. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/es.md)
 

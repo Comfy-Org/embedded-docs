@@ -10,10 +10,11 @@ El nodo Combinar Listas de Imágenes fusiona múltiples listas separadas de imá
 
 **Nota:** Este nodo está diseñado para recibir múltiples entradas. Puedes conectar varias listas de imágenes a un único conector de entrada `images`. El nodo concatenará automáticamente todas las imágenes de todas las listas conectadas en una única lista de salida.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `images` | La única lista fusionada que contiene todas las imágenes de cada lista de entrada conectada. | IMAGE |
+| `imágenes` | La única lista fusionada que contiene todas las imágenes de cada lista de entrada conectada. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeImageLists/es.md)
 

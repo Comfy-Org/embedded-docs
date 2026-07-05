@@ -11,10 +11,11 @@
 
 **Not:** Bu düğümün girişi için doğrulama kasıtlı olarak devre dışı bırakılmıştır. Bu, arka uç seçiminizin önceden tanımlanmış bir listeden olup olmadığını kontrol etmeden ön uçta istediğiniz herhangi bir özel metin seçeneğini tanımlamanıza olanak tanır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `STRING` | Özel bileşen kutusundan seçilen seçeneğin metin dizesi. | STRING |
+| `INDEX` | Özel bileşen kutusundan seçilen seçeneğin metin dizesi. | STRING |
 | `INDEX` | Seçilen seçeneğin açılır listedeki dizin konumu. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/tr.md)

@@ -9,10 +9,11 @@ El nodo Editor de Curvas proporciona una interfaz visual para ajustar y refinar 
 | `curva` | La curva de entrada que se va a editar. | CURVE | Sí | N/A |
 | `histograma` | Un histograma opcional para mostrar junto a la curva como referencia visual. | HISTOGRAM | No | N/A |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `curve` | La curva editada después de realizar los ajustes en la interfaz del nodo. | CURVE |
+| `curva` | La curva editada después de realizar los ajustes en la interfaz del nodo. | CURVE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CurveEditor/es.md)
 

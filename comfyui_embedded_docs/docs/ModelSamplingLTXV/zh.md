@@ -11,10 +11,11 @@ ModelSamplingLTXV节点根据令牌数量对模型应用高级采样参数。它
 | `基础移位` | 线性插值计算中使用的基础偏移值（默认值：0.95） | FLOAT | 是 | 0.0 至 100.0 |
 | `Latent` | 可选的潜在输入，用于确定偏移计算中的令牌数量。如果未提供，则使用默认令牌数量4096 | LATENT | 否 | - |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 已应用采样参数的修改后模型 | MODEL |
+| `模型` | 已应用采样参数的修改后模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingLTXV/zh.md)
 

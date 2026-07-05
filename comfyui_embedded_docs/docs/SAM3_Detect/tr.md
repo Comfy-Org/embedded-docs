@@ -27,11 +27,12 @@ SAM3 Algılama düğümü, metin açıklamaları, sınırlayıcı kutular veya n
 - **Toplu işleme**: Düğüm toplu görüntüleri destekler. Birden çok kare işlenirken, sınırlayıcı kutular liste listesi formatı kullanılarak kare başına sağlanabilir.
 - **Noktalar için JSON formatı**: Nokta koordinatları, `[{"x": 100, "y": 200}, {"x": 150, "y": 250}]` formatında geçerli JSON dizeleri olarak sağlanmalıdır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `masks` | Bölütleme maskeleri. `bireysel_maskeler` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür | MASK |
-| `bboxes` | Koordinatlar ve güven puanlarıyla algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir | BOUNDING_BOX |
+| `sınırlayıcı_kutular` | Bölütleme maskeleri. `bireysel_maskeler` False (varsayılan) olduğunda, kare başına tek bir birleşik maske döndürür. True olduğunda, algılanan her nesne için ayrı maskeler döndürür | MASK |
+| `sınırlayıcı_kutular` | Koordinatlar ve güven puanlarıyla algılanan sınırlayıcı kutular. Her kutu `x`, `y`, `width`, `height` ve `score` değerlerini içerir | BOUNDING_BOX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/tr.md)
 

@@ -14,10 +14,11 @@ UNetCrossAttentionMultiply ノードは、UNet モデルのクロスアテンシ
 | `v` | クロスアテンションにおけるバリューコンポーネントのスケーリング係数（デフォルト: 1.0） | FLOAT | いいえ | 0.0 - 10.0 |
 | `出力` | クロスアテンションにおける出力コンポーネントのスケーリング係数（デフォルト: 1.0） | FLOAT | いいえ | 0.0 - 10.0 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model` | クロスアテンションコンポーネントがスケーリングされた変更済み UNet モデル | MODEL |
+| `モデル` | クロスアテンションコンポーネントがスケーリングされた変更済み UNet モデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNetCrossAttentionMultiply/ja.md)
 

@@ -10,10 +10,11 @@ Morphology düğümü, görüntülerdeki şekilleri işlemek ve analiz etmek iç
 | `işlem` | Uygulanacak morfolojik işlem (varsayılan: "erode") | STRING | Evet | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` |
 | `çekirdek_boyutu` | Yapılandırma elemanı çekirdeğinin boyutu (varsayılan: 3). Tek sayı olmalıdır. | INT | Evet | 3-999 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Morfolojik işlem uygulandıktan sonraki işlenmiş görüntü | IMAGE |
+| `görüntü` | Morfolojik işlem uygulandıktan sonraki işlenmiş görüntü | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Morphology/tr.md)
 

@@ -18,12 +18,13 @@
 * Bir `text_style_prompt` veya bir `image_style` sağlamanız gerekir, ancak ikisini aynı anda sağlayamazsınız.
 * `text_style_prompt` en fazla 600 karakterle sınırlıdır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_file` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `meshy_task_id` | Sonuca başvurmak için kullanılabilen, bu doku oluşturma işine ait benzersiz görev tanımlayıcısı. | MODEL_TASK_ID |
-| `GLB` | GLB dosya formatında kaydedilmiş dokulu 3D model. | FILE3DGLB |
+| `meshy_görev_id` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
+| `GLB` | Sonuca başvurmak için kullanılabilen, bu doku oluşturma işine ait benzersiz görev tanımlayıcısı. | MODEL_TASK_ID |
+| `FBX` | GLB dosya formatında kaydedilmiş dokulu 3D model. | FILE3DGLB |
 | `FBX` | FBX dosya formatında kaydedilmiş dokulu 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/tr.md)

@@ -12,10 +12,11 @@ El nodo ResizeAndPadImage redimensiona una imagen para que se ajuste a unas dime
 | `color_relleno` | El color que se usará para las áreas de relleno alrededor de la imagen redimensionada (predeterminado: "white") | COMBO | Sí | "white"<br>"black" |
 | `interpolación` | El método de interpolación utilizado para redimensionar la imagen (predeterminado: "area") | COMBO | Sí | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen de salida redimensionada y rellenada | IMAGE |
+| `imagen` | La imagen de salida redimensionada y rellenada | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeAndPadImage/es.md)
 

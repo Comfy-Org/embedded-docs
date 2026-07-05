@@ -30,10 +30,11 @@
 * `transfer_light_b`: يعدل أيضًا شدة نقل الإضاءة. يمكن دمجه مع عنصر التحكم السابق لتأثيرات متنوعة. الخيارات: `"automatic"`, `"composition"`, `"straight"`, `"smooth_in"`, `"smooth_out"`, `"smooth_both"`, `"reverse_both"`, `"soft_in"`, `"soft_out"`, `"soft_mid"`, `"style_shift"`, `"strong_shift"`.
 * `fixed_generation`: يضمن مخرجات متسقة مع نفس الإعدادات. القيمة الافتراضية: صحيح.
 
+## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `image` | الصورة بعد إعادة إضاءتها. | IMAGE |
+| `الصورة` | الصورة بعد إعادة إضاءتها. | IMAGE |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageRelightNode/ar.md)
 

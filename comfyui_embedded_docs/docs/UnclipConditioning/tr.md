@@ -11,9 +11,10 @@ Bu düğüm, CLIP görüntü çıktılarını koşullandırma sürecine entegre 
 | `güç` | CLIP görüntü çıktısının koşullandırma üzerindeki etkisinin yoğunluğunu belirler. | `FLOAT` |
 | `gürültü_artırımı` | CLIP görüntü çıktısına, koşullandırmaya entegre edilmeden önce uygulanacak gürültü artırma seviyesini belirtir. | `FLOAT` |
 
+## Çıktılar
 
 | Parametre | Açıklama | Comfy dtype |
 | --- | --- | --- |
-| `conditioning` | Artık uygulanmış güç ve gürültü artırma ile entegre CLIP görüntü çıktılarını içeren, zenginleştirilmiş koşullandırma verileri. | `CONDITIONING` |
+| `koşullandırma` | Artık uygulanmış güç ve gürültü artırma ile entegre CLIP görüntü çıktılarını içeren, zenginleştirilmiş koşullandırma verileri. | `CONDITIONING` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/tr.md)

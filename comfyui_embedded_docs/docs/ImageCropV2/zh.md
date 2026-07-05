@@ -13,10 +13,11 @@
 
 **区域约束说明：** 裁剪区域会自动约束在输入图像的边界内。如果指定的 `x` 或 `y` 坐标大于图像的宽度或高度，则会被设置为最大有效位置。生成的裁剪宽度和高度将相应调整，以确保区域不超出图像边缘。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `image` | 原始输入图像的裁剪部分。 | IMAGE |
+| `图像` | 原始输入图像的裁剪部分。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCropV2/zh.md)
 

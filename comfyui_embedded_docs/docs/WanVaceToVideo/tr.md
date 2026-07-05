@@ -20,12 +20,13 @@ WanVaceToVideo düğümü, video oluşturma modelleri için video koşullama ver
 
 **Not:** `control_video` sağlandığında, belirtilen genişlik ve yüksekliğe uyacak şekilde yükseltilecektir. `control_masks` sağlanırsa, kontrol videosunun boyutlarıyla eşleşmelidir. `reference_image` sağlandığında VAE aracılığıyla kodlanır ve gizli diziye başa eklenir.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Video kontrol verileri uygulanmış pozitif koşullama | CONDITIONING |
-| `negative` | Video kontrol verileri uygulanmış negatif koşullama | CONDITIONING |
-| `latent` | Video oluşturma için hazır boş gizli tensör | LATENT |
+| `negatif` | Video kontrol verileri uygulanmış pozitif koşullama | CONDITIONING |
+| `gizli` | Video kontrol verileri uygulanmış negatif koşullama | CONDITIONING |
+| `gizliyi_kırp` | Video oluşturma için hazır boş gizli tensör | LATENT |
 | `trim_latent` | Referans görüntüsü kullanıldığında kırpılacak gizli kare sayısı | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanVaceToVideo/tr.md)

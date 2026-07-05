@@ -17,11 +17,12 @@ El nodo StableZero123_Conditioning procesa una imagen de entrada y ángulos de c
 
 **Nota:** Los parámetros `width` y `height` deben ser divisibles por 8, ya que el nodo los divide automáticamente entre 8 para crear las dimensiones de la representación latente.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Datos de condicionamiento positivo que combinan características de imagen e incrustaciones de cámara | CONDITIONING |
-| `negative` | Datos de condicionamiento negativo con características inicializadas en cero | CONDITIONING |
+| `negativo` | Datos de condicionamiento positivo que combinan características de imagen e incrustaciones de cámara | CONDITIONING |
+| `latente` | Datos de condicionamiento negativo con características inicializadas en cero | CONDITIONING |
 | `latent` | Representación latente con dimensiones [batch_size, 4, height//8, width//8] | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning/es.md)

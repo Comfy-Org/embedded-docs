@@ -18,11 +18,12 @@ WanHuMoImageToVideo düğümü, video kareleri için gizil (latent) temsiller ol
 
 **Not:** Bir referans görüntüsü sağlandığında, kodlanır ve hem pozitif hem de negatif koşullandırmaya eklenir. Ses kodlayıcı çıktısı sağlandığında, işlenir ve koşullandırma verilerine dahil edilir. Hiçbiri sağlanmazsa, hem referans gizilleri hem de ses katıştırmaları için sıfır dolu yer tutucu tensörler kullanılır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negative` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `negatif` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `gizli_uzay` | Referans görüntü ve/veya ses katıştırmaları dahil edilmiş değiştirilmiş negatif koşullandırma | CONDITIONING |
 | `latent` | Video dizisi verilerini içeren oluşturulmuş gizil temsil | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/tr.md)

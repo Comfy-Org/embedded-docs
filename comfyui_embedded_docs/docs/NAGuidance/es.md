@@ -11,10 +11,11 @@ El nodo NAGuidance aplica Guía de Atención Normalizada a un modelo. Esta técn
 | `nag_alpha` | Factor de mezcla para la atención normalizada. Un valor de 1.0 reemplaza completamente la atención original, mientras que 0.0 no tiene efecto. (predeterminado: 0.5) | FLOAT | Sí | 0.0 - 1.0 |
 | `nag_tau` | Factor de escala utilizado para limitar la relación de normalización. (predeterminado: 1.5) | FLOAT | Sí | 1.0 - 10.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con la Guía de Atención Normalizada habilitada. | MODEL |
+| `modelo` | El modelo modificado con la Guía de Atención Normalizada habilitada. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NAGuidance/es.md)
 

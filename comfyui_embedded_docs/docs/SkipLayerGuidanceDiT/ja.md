@@ -18,10 +18,11 @@
 
 **注記:** `double_layers` と `single_layers` の両方が空（レイヤー番号を含まない）の場合、ノードはガイダンスを適用せずに元のモデルを返します。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model` | スキップレイヤーガイダンスが適用された変更後のモデル | MODEL |
+| `モデル` | スキップレイヤーガイダンスが適用された変更後のモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceDiT/ja.md)
 

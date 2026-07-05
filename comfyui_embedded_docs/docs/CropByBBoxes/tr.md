@@ -15,10 +15,11 @@ CropByBBoxes düğümü, bir giriş görüntü kümesinden belirli dikdörtgen b
 
 **Not:** Düğüm, her seferinde bir görüntü karesini işler. Tek bir kare için birden fazla sınırlayıcı kutu sağlanırsa, tüm sağlanan kutuların birleşimi (tüm kutuları içeren en küçük dikdörtgen) olan tek bir kırpma bölgesi hesaplar. Hesaplanan bir kırpma bölgesi geçersizse (örneğin, sıfır genişlik veya yükseklik), düğüm görüntünün üst-orta kısmından bir yedek kırpma oluşturur.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Kırpılan ve yeniden boyutlandırılan tüm bölgeler, tek bir görüntü kümesinde birleştirilir. | IMAGE |
+| `görüntü` | Kırpılan ve yeniden boyutlandırılan tüm bölgeler, tek bir görüntü kümesinde birleştirilir. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CropByBBoxes/tr.md)
 

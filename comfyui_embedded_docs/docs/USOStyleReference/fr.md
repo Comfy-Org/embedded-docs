@@ -10,10 +10,11 @@ Le nœud USOStyleReference applique des correctifs de référence de style aux m
 | `correctif_modèle` | Le correctif de modèle contenant les informations de référence de style | MODEL_PATCH | Oui | - |
 | `sortie_vision_clip` | Les caractéristiques visuelles encodées extraites du traitement CLIP vision | CLIP_VISION_OUTPUT | Oui | - |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec les correctifs de référence de style appliqués | MODEL |
+| `modèle` | Le modèle modifié avec les correctifs de référence de style appliqués | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/fr.md)
 

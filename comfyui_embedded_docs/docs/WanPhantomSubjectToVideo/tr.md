@@ -17,12 +17,13 @@ WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağ
 
 **Not:** `images` sağlandığında, belirtilen `width` ve `height` değerlerine uyacak şekilde otomatik olarak yükseltilir ve işleme için yalnızca ilk `length` karesi kullanılır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negative_text` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma | CONDITIONING |
-| `negative_img_text` | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma | CONDITIONING |
+| `negatif_metin` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif_img_metin` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `gizli` | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma | CONDITIONING |
 | `latent` | Belirtilen boyutlar ve uzunluk ile oluşturulmuş gizli video temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/tr.md)

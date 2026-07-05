@@ -31,10 +31,11 @@
 - `upscaler_model` が "Disabled" 以外の場合、`upscaler_resolution` サブパラメータが必須です。
 - `interpolation_model` が "Disabled" 以外の場合、`interpolation_frame_rate` サブパラメータが必須です。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `video` | 選択されたアップスケールおよび/または補間フィルターを適用した後のエンハンスされた動画出力。 | VIDEO |
+| `ビデオ` | 選択されたアップスケールおよび/または補間フィルターを適用した後のエンハンスされた動画出力。 | VIDEO |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazVideoEnhanceV2/ja.md)
 

@@ -12,10 +12,11 @@ TrimAudioDuration düğümü, bir ses dosyasından belirli bir zaman dilimini ke
 
 **Not:** Başlangıç zamanı, bitiş zamanından küçük ve ses uzunluğu dahilinde olmalıdır. Negatif başlangıç değerleri, sesin sonundan geriye doğru sayar. Başlangıç zamanı negatifse, sesin sonundan itibaren sayılarak bir kare konumuna dönüştürülür. Başlangıç ve bitiş kareleri, ses sınırlarına kırpılır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `audio` | Belirtilen başlangıç zamanı ve süre ile kırpılmış ses segmenti | AUDIO |
+| `ses` | Belirtilen başlangıç zamanı ve süre ile kırpılmış ses segmenti | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TrimAudioDuration/tr.md)
 

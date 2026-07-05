@@ -15,10 +15,11 @@ Bu düğüm, görüntüleri ve metinleri kodlayarak eğitim için veri hazırlar
 
 * `texts` listesindeki öğe sayısı 0, 1 veya `images` listesindeki öğe sayısıyla tam olarak eşleşmelidir. 0 ise, tüm görüntüler için boş bir dize kullanılır. 1 ise, bu tek metin tüm görüntüler için tekrarlanır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `latents` | Gizil temsil sözlükleri listesi. | LATENT |
+| `koşullandırma` | Gizil temsil sözlükleri listesi. | LATENT |
 | `conditioning` | Koşullandırma listeleri listesi. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/tr.md)

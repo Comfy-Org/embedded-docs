@@ -14,11 +14,12 @@ Hem pozitif hem de negatif koşullandırmaya referans görseller ekleyin. Bu dü
 
 **`images` parametresi hakkında not:** Bu, 1 ila 10 görsel arasında kabul eden otomatik büyüyen bir girdidir. Görseller `image_1` ile `image_10` arasında etiketlenir. En az 1 görsel sağlamanız gerekir. Görsel sayısı çalışma modunu belirler: tek bir görsel düzenleme talimatları için kullanılırken, birden fazla görsel (2-10) konu odaklı kişiselleştirme için kullanılır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Referans görsellerin eklendiği pozitif koşullandırma. | CONDITIONING |
-| `negative` | Referans görsellerin eklendiği negatif koşullandırma. | CONDITIONING |
+| `negatif` | Referans görsellerin eklendiği pozitif koşullandırma. | CONDITIONING |
+| `negatif` | Referans görsellerin eklendiği negatif koşullandırma. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/tr.md)
 

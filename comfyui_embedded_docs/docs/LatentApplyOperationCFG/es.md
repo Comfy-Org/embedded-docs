@@ -9,10 +9,11 @@ El nodo LatentApplyOperationCFG aplica una operación latente para modificar el 
 | `modelo` | El modelo al que se aplicará la operación CFG | MODEL | Sí | - |
 | `operación` | La operación latente a aplicar durante el proceso de muestreo CFG | LATENT_OPERATION | Sí | - |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con la operación CFG aplicada a su proceso de muestreo | MODEL |
+| `modelo` | El modelo modificado con la operación CFG aplicada a su proceso de muestreo | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentApplyOperationCFG/es.md)
 

@@ -13,11 +13,12 @@ Le nœud InstructPixToPixConditioning prépare les données de conditionnement p
 
 **Remarque :** Les dimensions de l'image d'entrée sont automatiquement ajustées en recadrant au multiple de 8 pixels le plus proche en largeur et en hauteur pour garantir la compatibilité avec le processus d'encodage VAE.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Données de conditionnement positives avec représentation d'image latente attachée | CONDITIONING |
-| `negative` | Données de conditionnement négatives avec représentation d'image latente attachée | CONDITIONING |
+| `négatif` | Données de conditionnement positives avec représentation d'image latente attachée | CONDITIONING |
+| `latent` | Données de conditionnement négatives avec représentation d'image latente attachée | CONDITIONING |
 | `latent` | Tenseur latent vide avec les mêmes dimensions que l'image encodée | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/fr.md)

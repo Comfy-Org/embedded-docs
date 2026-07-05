@@ -13,10 +13,11 @@ Este nodo está diseñado para preparar imágenes para el proceso de outpainting
 | `abajo` | Indica la cantidad de relleno que se añadirá en la parte inferior de la imagen, contribuyendo a la expansión vertical para outpainting. | `INT` |
 | `difuminado` | Controla la suavidad de la transición entre la imagen original y el relleno añadido, mejorando la integración visual para outpainting. | `INT` |
 
+## Outputs
 
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `image` | La salida 'image' representa la imagen con relleno, lista para el proceso de outpainting. | `IMAGE` |
+| `imagen` | La salida 'image' representa la imagen con relleno, lista para el proceso de outpainting. | `IMAGE` |
 | `mask` | La salida 'mask' indica las áreas de la imagen original y el relleno añadido, útil para guiar los algoritmos de outpainting. | `MASK` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImagePadForOutpaint/es.md)

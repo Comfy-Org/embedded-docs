@@ -32,13 +32,14 @@ WanInfiniteTalkToVideo ノードは、音声入力からビデオシーケンス
 * `mask_1` と `mask_2` が指定された場合、`audio_encoder_output_2` も指定する必要があります。
 * `previous_frames` が指定された場合、`motion_frame_count` で指定された数以上のフレームが含まれている必要があります。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model` | 音声条件付けが適用されたパッチ済みモデル。 | MODEL |
-| `positive` | 追加コンテキスト（開始画像、CLIPビジョンなど）で変更される可能性のあるポジティブ条件付け。 | CONDITIONING |
-| `negative` | 追加コンテキストで変更される可能性のあるネガティブ条件付け。 | CONDITIONING |
-| `latent` | 潜在空間で生成されたビデオシーケンス。 | LATENT |
+| `ポジティブ` | 音声条件付けが適用されたパッチ済みモデル。 | MODEL |
+| `ネガティブ` | 追加コンテキスト（開始画像、CLIPビジョンなど）で変更される可能性のあるポジティブ条件付け。 | CONDITIONING |
+| `潜在` | 追加コンテキストで変更される可能性のあるネガティブ条件付け。 | CONDITIONING |
+| `トリム画像` | 潜在空間で生成されたビデオシーケンス。 | LATENT |
 | `trim_image` | シーケンスを拡張する際に、モーションコンテキストの先頭からトリミングする必要があるフレーム数。 | INT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/ja.md)

@@ -10,10 +10,11 @@
 
 **注意：** 此节点设计用于接收多个输入。您可以将多个图像列表连接到单个 `images` 输入端口。节点会自动将所有连接列表中的所有图像合并为一个输出列表。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `images` | 包含来自每个已连接输入列表的所有图像的单个合并列表。 | IMAGE |
+| `图像` | 包含来自每个已连接输入列表的所有图像的单个合并列表。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeImageLists/zh.md)
 

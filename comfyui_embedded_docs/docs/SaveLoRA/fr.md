@@ -12,10 +12,11 @@ Le nœud SaveLoRA enregistre un modèle LoRA (Low-Rank Adaptation) dans un fichi
 
 **Remarque :** L'entrée `lora` doit être un modèle LoRA pur. Ne fournissez pas un modèle de base auquel des couches LoRA ont été appliquées.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| *None* | Ce nœud ne produit aucune donnée vers le workflow. Il s'agit d'un nœud de sortie qui enregistre un fichier sur le disque. | N/A |
+| *Aucun* | Ce nœud ne produit aucune donnée vers le workflow. Il s'agit d'un nœud de sortie qui enregistre un fichier sur le disque. | N/A |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRA/fr.md)
 

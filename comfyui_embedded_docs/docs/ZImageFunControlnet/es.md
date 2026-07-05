@@ -16,10 +16,11 @@ El nodo ZImageFunControlnet aplica una red de control especializada para influir
 
 **Nota:** El parámetro `inpaint_image` se utiliza típicamente junto con una `mask` para especificar el contenido del inpainting. El comportamiento del nodo puede cambiar según las entradas opcionales proporcionadas (por ejemplo, usando `image` como guía o usando `image`, `mask` e `inpaint_image` para inpainting).
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo con el parche de red de control aplicado, listo para usar en un pipeline de muestreo. | MODEL |
+| `modelo` | El modelo con el parche de red de control aplicado, listo para usar en un pipeline de muestreo. | MODEL |
 | `positive` | El condicionamiento positivo, potencialmente modificado por las entradas de la red de control. | CONDITIONING |
 | `negative` | El condicionamiento negativo, potencialmente modificado por las entradas de la red de control. | CONDITIONING |
 

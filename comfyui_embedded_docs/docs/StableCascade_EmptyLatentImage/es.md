@@ -11,10 +11,11 @@ El nodo `StableCascade_EmptyLatentImage` crea tensores latentes vacíos para los
 | `compresión` | El factor de compresión que determina las dimensiones latentes para la etapa C (predeterminado: 42, incremento: 1) | INT | Sí | 4 a 128 |
 | `tamaño_del_lote` | El número de muestras latentes a generar en un lote (predeterminado: 1) | INT | No | 1 a 4096 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `stage_c` | El tensor latente de la etapa C con dimensiones [batch_size, 16, altura//compresión, ancho//compresión] | LATENT |
+| `etapa_b` | El tensor latente de la etapa C con dimensiones [batch_size, 16, altura//compresión, ancho//compresión] | LATENT |
 | `stage_b` | El tensor latente de la etapa B con dimensiones [batch_size, 4, altura//4, ancho//4] | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/es.md)

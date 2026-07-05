@@ -10,10 +10,11 @@ Ce nœud charge un ensemble de données d'images et leurs légendes textuelles c
 
 **Remarque :** Le nœud s'attend à une structure de fichiers spécifique. Pour chaque fichier image (`.png`, `.jpg`, `.jpeg`, `.webp`), il recherchera un fichier `.txt` portant le même nom pour l'utiliser comme légende. Si aucun fichier de légende n'est trouvé, une chaîne vide est utilisée. Le nœud prend également en charge une structure spéciale où le nom d'un sous-dossier commence par un nombre suivi d'un trait de soulignement (par exemple, `5_chats`), ce qui entraînera la répétition de toutes les images de ce sous-dossier autant de fois dans la liste de sortie finale.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `images` | Une liste de tenseurs d'images chargées. | IMAGE |
+| `texts` | Une liste de tenseurs d'images chargées. | IMAGE |
 | `texts` | Une liste de légendes textuelles correspondant à chaque image chargée. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/fr.md)

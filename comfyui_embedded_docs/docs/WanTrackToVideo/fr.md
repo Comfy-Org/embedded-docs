@@ -23,11 +23,12 @@ Le nœud WanTrackToVideo convertit les données de suivi de mouvement en séquen
 
 **Remarque :** Lorsque `tracks` contient des données de suivi valides, le nœud traite les pistes de mouvement pour générer une vidéo. Lorsque `tracks` est vide, il bascule en mode standard image-vers-vidéo. Si `start_image` est fourni, il initialise la première trame de la séquence vidéo.
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Conditionnement positif avec les informations de piste de mouvement appliquées | CONDITIONING |
-| `negative` | Conditionnement négatif avec les informations de piste de mouvement appliquées | CONDITIONING |
+| `negative` | Conditionnement positif avec les informations de piste de mouvement appliquées | CONDITIONING |
+| `latent` | Conditionnement négatif avec les informations de piste de mouvement appliquées | CONDITIONING |
 | `latent` | Représentation latente de la vidéo générée | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTrackToVideo/fr.md)

@@ -9,10 +9,11 @@ Este nodo elimina imágenes duplicadas o muy similares de un lote. Funciona crea
 | `imágenes` | El lote de imágenes a procesar para la deduplicación. | IMAGE | Sí | - |
 | `umbral_de_similitud` | Umbral de similitud (0-1). Un valor más alto indica mayor similitud. Las imágenes por encima de este umbral se consideran duplicados. (predeterminado: 0.95) | FLOAT | No | 0.0 - 1.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `images` | La lista filtrada de imágenes con los duplicados eliminados. | IMAGE |
+| `imágenes` | La lista filtrada de imágenes con los duplicados eliminados. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageDeduplication/es.md)
 

@@ -12,9 +12,10 @@
 | `LoRA名称` | 要加载的 LoRA 文件名，指定应用于模型的调整内容。 | `COMBO[STRING]` |
 | `模型强度` | 决定 LoRA 调整的强度，数值越高表示修改幅度越大。 | `FLOAT` |
 
+## 输出
 
 | 字段 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 应用了 LoRA 调整后的修改模型，反映了模型行为或能力上的变化。 | `MODEL` |
+| `模型` | 应用了 LoRA 调整后的修改模型，反映了模型行为或能力上的变化。 | `MODEL` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderModelOnly/zh.md)

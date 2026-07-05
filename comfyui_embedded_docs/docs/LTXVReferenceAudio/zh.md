@@ -17,11 +17,12 @@ LTXV 参考音频节点用于音频生成中的说话人身份迁移。它将参
 | `start_percent` | 身份引导生效的 sigma 范围起始值。（默认值：0.0） | FLOAT | 否 | 0.0 - 1.0 |
 | `end_percent` | 身份引导生效的 sigma 范围结束值。（默认值：1.0） | FLOAT | 否 | 0.0 - 1.0 |
 
+## 输出
 
 | 输出名称 | 说明 | 数据类型 |
 | --- | --- | --- |
-| `model` | 已应用身份引导函数的模型。 | MODEL |
-| `positive` | 正向条件，现包含编码后的参考音频数据。 | CONDITIONING |
+| `positive` | 已应用身份引导函数的模型。 | MODEL |
+| `negative` | 正向条件，现包含编码后的参考音频数据。 | CONDITIONING |
 | `negative` | 负向条件，现包含编码后的参考音频数据。 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/zh.md)

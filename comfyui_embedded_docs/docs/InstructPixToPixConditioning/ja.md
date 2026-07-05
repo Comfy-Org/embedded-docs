@@ -41,11 +41,12 @@ InstructPixToPixConditioning ノードは、ポジティブおよびネガティ
 
 **注記:** 入力画像の寸法は、VAE エンコード処理との互換性を確保するため、幅と高さの両方が最も近い 8 ピクセルの倍数に自動的に切り取られます。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `positive` | 潜在画像表現が付加されたポジティブ条件付けデータ | CONDITIONING |
-| `negative` | 潜在画像表現が付加されたネガティブ条件付けデータ | CONDITIONING |
+| `ネガティブ` | 潜在画像表現が付加されたポジティブ条件付けデータ | CONDITIONING |
+| `潜在` | 潜在画像表現が付加されたネガティブ条件付けデータ | CONDITIONING |
 | `latent` | エンコードされた画像と同じ寸法を持つ空の潜在テンソル | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/ja.md)

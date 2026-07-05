@@ -22,10 +22,11 @@ La salida final es una imagen en blanco y negro, donde las partes blancas son la
 | `umbral_bajo` | Umbral bajo, determina qué bordes débiles ignorar. Valores más bajos conservan más detalles pero pueden generar ruido | FLOAT | Widget | 0.4 | 0.01-0.99 |
 | `umbral_alto` | Umbral alto, determina qué bordes fuertes conservar. Valores más altos solo mantienen las líneas de contorno más obvias | FLOAT | Widget | 0.8 | 0.01-0.99 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | Imagen de bordes en blanco y negro, las líneas blancas son bordes detectados, las áreas negras son partes sin bordes | IMAGE |
+| `imagen` | Imagen de bordes en blanco y negro, las líneas blancas son bordes detectados, las áreas negras son partes sin bordes | IMAGE |
 
 ## Comparación de Parámetros
 

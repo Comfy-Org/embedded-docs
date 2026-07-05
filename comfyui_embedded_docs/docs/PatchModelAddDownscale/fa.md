@@ -15,10 +15,11 @@
 | `روش کاهش ابعاد` | روش درون‌یابی مورد استفاده برای عملیات کاهش مقیاس | COMBO | خیر | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 | `روش افزایش ابعاد` | روش درون‌یابی مورد استفاده برای عملیات افزایش مقیاس | COMBO | خیر | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
+## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `model` | مدل اصلاح‌شده با پچ کاهش مقیاس اعمال‌شده | MODEL |
+| `مدل` | مدل اصلاح‌شده با پچ کاهش مقیاس اعمال‌شده | MODEL |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/fa.md)
 

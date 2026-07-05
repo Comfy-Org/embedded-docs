@@ -10,10 +10,11 @@ Este nodo carga un conjunto de datos de entrenamiento codificado que ha sido gua
 | --- | --- | --- | --- | --- |
 | `folder_name` | Nombre de la carpeta que contiene el conjunto de datos guardado, ubicada dentro del directorio de salida de ComfyUI (por defecto: "training_dataset"). | STRING | Sí | N/D |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `latents` | Una lista de diccionarios latentes, donde cada diccionario contiene una clave `"samples"` con un tensor. | LATENT |
+| `conditioning` | Una lista de diccionarios latentes, donde cada diccionario contiene una clave `"samples"` con un tensor. | LATENT |
 | `conditioning` | Una lista de listas de condicionamiento, donde cada lista interna contiene datos de condicionamiento para una muestra correspondiente. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/es.md)

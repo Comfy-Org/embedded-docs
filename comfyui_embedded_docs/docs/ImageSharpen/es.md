@@ -11,9 +11,10 @@ El nodo ImageSharpen mejora la nitidez de una imagen acentuando sus bordes y det
 | `sigma` | Controla la dispersión del efecto de enfoque. Un valor de sigma más alto produce una transición más suave en los bordes, mientras que un valor más bajo hace que el enfoque sea más localizado. | `FLOAT` |
 | `alfa` | Ajusta la intensidad del efecto de enfoque. Los valores de alfa más altos producen un efecto de enfoque más fuerte. | `FLOAT` |
 
+## Salidas
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen enfocada, con bordes y detalles mejorados, lista para su posterior procesamiento o visualización. | `IMAGE` |
+| `imagen` | La imagen enfocada, con bordes y detalles mejorados, lista para su posterior procesamiento o visualización. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageSharpen/es.md)

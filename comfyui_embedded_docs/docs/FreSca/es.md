@@ -11,10 +11,11 @@ El nodo FreSca aplica un escalado dependiente de la frecuencia a la guía durant
 | `escala_alta` | Factor de escalado para componentes de alta frecuencia (predeterminado: 1.25) | FLOAT | No | 0 - 10 |
 | `corte_frecuencia` | Número de índices de frecuencia alrededor del centro para considerar como baja frecuencia (predeterminado: 20) | INT | No | 1 - 10000 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con escalado dependiente de la frecuencia aplicado a su función de guía | MODEL |
+| `modelo` | El modelo modificado con escalado dependiente de la frecuencia aplicado a su función de guía | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreSca/es.md)
 

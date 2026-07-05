@@ -11,10 +11,11 @@ Le nœud Custom Combo vous permet de créer un menu déroulant personnalisé ave
 
 **Remarque :** La validation de l'entrée de ce nœud est intentionnellement désactivée. Cela vous permet de définir toutes les options textuelles personnalisées souhaitées dans l'interface utilisateur sans que le backend ne vérifie si votre sélection provient d'une liste prédéfinie.
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `STRING` | La chaîne de caractères correspondant à l'option sélectionnée dans la zone de liste déroulante personnalisée. | STRING |
+| `INDEX` | La chaîne de caractères correspondant à l'option sélectionnée dans la zone de liste déroulante personnalisée. | STRING |
 | `INDEX` | La position d'index de l'option sélectionnée dans la liste déroulante. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/fr.md)

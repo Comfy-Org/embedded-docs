@@ -16,10 +16,11 @@ ZImageFunControlnet 节点应用专门的控制网络来影响图像生成或编
 
 **注意：** `inpaint_image` 参数通常与 `mask` 结合使用，以指定修补内容。节点的行为可能根据提供的可选输入而变化（例如，使用 `image` 进行引导，或使用 `image`、`mask` 和 `inpaint_image` 进行修补）。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 应用了控制网络补丁的模型，可用于采样流程。 | MODEL |
+| `模型` | 应用了控制网络补丁的模型，可用于采样流程。 | MODEL |
 | `positive` | 正向条件，可能已根据控制网络输入进行了修改。 | CONDITIONING |
 | `negative` | 负向条件，可能已根据控制网络输入进行了修改。 | CONDITIONING |
 

@@ -18,12 +18,13 @@ El nodo **Meshy: Texture** aplica texturas generadas por IA a un modelo 3D. Toma
 * Debes proporcionar ya sea un `text_style_prompt` o un `image_style`, pero no puedes proporcionar ambos al mismo tiempo.
 * El `text_style_prompt` está limitado a un máximo de 600 caracteres.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model_file` | El nombre del archivo del modelo GLB generado. Esta salida se proporciona para compatibilidad con versiones anteriores. | STRING |
-| `meshy_task_id` | El identificador único de la tarea para este trabajo de texturizado, que puede usarse para hacer referencia al resultado. | MODEL_TASK_ID |
-| `GLB` | El modelo 3D texturizado guardado en el formato de archivo GLB. | FILE3DGLB |
+| `meshy_task_id` | El nombre del archivo del modelo GLB generado. Esta salida se proporciona para compatibilidad con versiones anteriores. | STRING |
+| `GLB` | El identificador único de la tarea para este trabajo de texturizado, que puede usarse para hacer referencia al resultado. | MODEL_TASK_ID |
+| `FBX` | El modelo 3D texturizado guardado en el formato de archivo GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D texturizado guardado en el formato de archivo FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/es.md)

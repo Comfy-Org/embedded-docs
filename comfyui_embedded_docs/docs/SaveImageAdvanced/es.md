@@ -21,10 +21,11 @@ El nodo **SaveImageAdvanced** guarda imágenes en tu directorio de salida de Com
   - `"HDR"` — la entrada es Rec.2020 (BT.2100) codificada en HLG; se aplica la OETF inversa de HLG para obtener luz lineal de escena.
   - `"linear"` — la entrada ya es lineal de escena (primarios Rec.709); se escribe sin cambios. Úsalo para salidas de renderizador/compositor.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `images` | Una lista de resultados de imágenes guardadas, cada una contiene el nombre de archivo, subcarpeta y tipo ("output"). Esta salida se utiliza para fines de visualización en la interfaz de usuario. | IMAGE |
+| `imágenes` | Una lista de resultados de imágenes guardadas, cada una contiene el nombre de archivo, subcarpeta y tipo ("output"). Esta salida se utiliza para fines de visualización en la interfaz de usuario. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/es.md)
 

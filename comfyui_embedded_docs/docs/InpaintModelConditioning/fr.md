@@ -12,11 +12,12 @@ Le nœud InpaintModelConditioning est conçu pour faciliter le processus de cond
 | `pixels` | Représente les données de pixels de l'image à traiter par infilling. Cette entrée est essentielle pour fournir le contexte visuel nécessaire à la tâche d'infilling. | `IMAGE` |
 | `masque` | Spécifie le masque à appliquer à l'image, indiquant les zones à traiter par infilling. Cette entrée est cruciale pour définir les régions spécifiques de l'image nécessitant un infilling. | `MASK` |
 
+## Sorties
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions positives spécifiées. | `CONDITIONING` |
-| `negative` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions négatives spécifiées. | `CONDITIONING` |
+| `négatif` | Les informations de conditionnement positif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions positives spécifiées. | `CONDITIONING` |
+| `latent` | Les informations de conditionnement négatif modifiées après traitement, prêtes à être appliquées au modèle d'infilling. Cette sortie est essentielle pour guider le processus d'infilling conformément aux conditions négatives spécifiées. | `CONDITIONING` |
 | `latent` | La représentation latente dérivée du processus de conditionnement. Cette sortie est cruciale pour comprendre les caractéristiques et attributs sous-jacents de l'image en cours de traitement par infilling. | `LATENT` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/fr.md)

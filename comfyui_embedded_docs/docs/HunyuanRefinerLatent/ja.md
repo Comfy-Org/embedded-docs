@@ -15,12 +15,13 @@ HunyuanRefinerLatent ノードは、リファインメント処理のために c
 | `潜在表現` | 潜在表現の入力 | LATENT | はい | - |
 | `ノイズ増強` | 適用するノイズ拡張の量（デフォルト: 0.10） | FLOAT | はい | 0.0 - 1.0 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `positive` | ノイズ拡張と潜在画像の結合が適用された、処理済みのポジティブ conditioning | CONDITIONING |
-| `negative` | ノイズ拡張と潜在画像の結合が適用された、処理済みのネガティブ conditioning | CONDITIONING |
-| `latent` | 次元 [batch_size, 32, height, width, channels] を持つ新しい潜在変数出力 | LATENT |
+| `ネガティブ` | ノイズ拡張と潜在画像の結合が適用された、処理済みのポジティブ conditioning | CONDITIONING |
+| `潜在表現` | ノイズ拡張と潜在画像の結合が適用された、処理済みのネガティブ conditioning | CONDITIONING |
+| `潜在表現` | 次元 [batch_size, 32, height, width, channels] を持つ新しい潜在変数出力 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/ja.md)
 

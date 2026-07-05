@@ -14,10 +14,11 @@ Le nœud ScaleROPE vous permet de modifier l'encodage positionnel rotatif (ROPE)
 | `échelle_t` | Facteur d'échelle à appliquer à la composante T (temporelle) du ROPE (par défaut : 1.0). | FLOAT | Non | 0.0 - 100.0 |
 | `décalage_t` | Valeur de décalage à appliquer à la composante T (temporelle) du ROPE (par défaut : 0.0). | FLOAT | Non | -256.0 - 256.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle avec les nouveaux paramètres d'échelle et de décalage ROPE appliqués. | MODEL |
+| `modèle` | Le modèle avec les nouveaux paramètres d'échelle et de décalage ROPE appliqués. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/fr.md)
 

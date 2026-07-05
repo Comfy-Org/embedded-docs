@@ -33,10 +33,11 @@ Le nœud **Topaz Video Enhance V2** permet de suréchantillonner et d'améliorer
 - Lorsque `upscaler_model` n'est pas "Disabled", le sous-paramètre `upscaler_resolution` est requis.
 - Lorsque `interpolation_model` n'est pas "Disabled", le sous-paramètre `interpolation_frame_rate` est requis.
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `video` | La sortie vidéo améliorée après application des filtres de suréchantillonnage et/ou d'interpolation sélectionnés. | VIDEO |
+| `vidéo` | La sortie vidéo améliorée après application des filtres de suréchantillonnage et/ou d'interpolation sélectionnés. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazVideoEnhanceV2/fr.md)
 

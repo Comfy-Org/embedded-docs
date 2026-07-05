@@ -8,10 +8,11 @@
 | --- | --- | --- | --- | --- |
 | `条件` | 需要处理并移除引导的条件数据 | CONDITIONING | 是 | - |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `conditioning` | 已禁用引导的修改后条件数据 | CONDITIONING |
+| `条件` | 已禁用引导的修改后条件数据 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxDisableGuidance/zh.md)
 

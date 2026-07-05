@@ -27,10 +27,11 @@
 - عندما لا يكون `upscaler_model` هو "Disabled"، فإن المعامل الفرعي `upscaler_resolution` مطلوب.
 - عندما لا يكون `interpolation_model` هو "Disabled"، فإن المعامل الفرعي `interpolation_frame_rate` مطلوب.
 
+## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `video` | مخرج الفيديو المحسن بعد تطبيق مرشحات رفع الدقة و/أو الاستيفاء المحددة. | VIDEO |
+| `فيديو` | مخرج الفيديو المحسن بعد تطبيق مرشحات رفع الدقة و/أو الاستيفاء المحددة. | VIDEO |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazVideoEnhanceV2/ar.md)
 

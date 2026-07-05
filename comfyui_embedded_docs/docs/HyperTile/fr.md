@@ -12,10 +12,11 @@ Le nœud HyperTile applique une technique de tuilage au mécanisme d'attention d
 | `profondeur_max` | Le niveau de profondeur maximal (échelle de résolution) auquel appliquer le tuilage. Une valeur de 0 applique le tuilage uniquement à la résolution la plus élevée (par défaut : 0) | INT | Non | 0 - 10 |
 | `échelle_profondeur` | Lorsque cette option est activée, la taille des tuiles est mise à l'échelle proportionnellement aux niveaux de profondeur plus profonds. Cela peut aider à maintenir la qualité aux résolutions inférieures (par défaut : Faux) | BOOLEAN | Non | Vrai / Faux |
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec l'optimisation HyperTile appliquée | MODEL |
+| `modèle` | Le modèle modifié avec l'optimisation HyperTile appliquée | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HyperTile/fr.md)
 

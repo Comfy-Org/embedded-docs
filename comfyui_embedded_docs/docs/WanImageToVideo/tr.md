@@ -18,11 +18,12 @@ WanImageToVideo düğümü, video oluşturma görevleri için conditioning ve la
 
 **Not:** `start_image` sağlandığında, düğüm görüntü dizisini kodlar ve conditioning girdilerine maskeleme uygular. `clip_vision_output` parametresi sağlandığında, hem pozitif hem de negatif girdilere görüş tabanlı conditioning ekler.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş pozitif conditioning | CONDITIONING |
-| `negative` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş negatif conditioning | CONDITIONING |
+| `negatif` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş pozitif conditioning | CONDITIONING |
+| `gizli` | Görüntü ve görüş verileri dahil edilmiş, değiştirilmiş negatif conditioning | CONDITIONING |
 | `latent` | Video oluşturma için hazır, boş latent alan tensörü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/tr.md)

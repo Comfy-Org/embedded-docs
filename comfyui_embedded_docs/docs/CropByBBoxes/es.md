@@ -15,10 +15,11 @@ El nodo CropByBBoxes extrae y redimensiona regiones rectangulares específicas d
 
 **Nota:** El nodo procesa un fotograma de imagen a la vez. Si se proporcionan múltiples cuadros delimitadores para un solo fotograma, calcula una única región de recorte que es la unión (el rectángulo más pequeño que contiene todos los cuadros) de todos los cuadros proporcionados. Si una región de recorte calculada no es válida (por ejemplo, ancho o altura cero), el nodo creará un recorte alternativo desde el centro-superior de la imagen.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | Todas las regiones recortadas y redimensionadas, apiladas en un solo lote de imágenes. | IMAGE |
+| `imagen` | Todas las regiones recortadas y redimensionadas, apiladas en un solo lote de imágenes. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CropByBBoxes/es.md)
 

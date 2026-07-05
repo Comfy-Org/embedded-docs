@@ -13,11 +13,12 @@ El nodo InstructPixToPixConditioning prepara datos de condicionamiento para la e
 
 **Nota:** Las dimensiones de la imagen de entrada se ajustan automáticamente recortándolas al múltiplo de 8 píxeles más cercano tanto en ancho como en alto para garantizar la compatibilidad con el proceso de codificación VAE.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Datos de condicionamiento positivos con la representación de imagen latente adjunta | CONDITIONING |
-| `negative` | Datos de condicionamiento negativos con la representación de imagen latente adjunta | CONDITIONING |
+| `negativo` | Datos de condicionamiento positivos con la representación de imagen latente adjunta | CONDITIONING |
+| `latente` | Datos de condicionamiento negativos con la representación de imagen latente adjunta | CONDITIONING |
 | `latent` | Tensor latente vacío con las mismas dimensiones que la imagen codificada | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/es.md)

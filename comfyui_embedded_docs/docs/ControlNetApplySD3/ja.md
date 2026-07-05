@@ -17,11 +17,12 @@
 | `開始パーセント` | ControlNetが適用を開始する生成プロセス内の開始位置（デフォルト：0.0） | FLOAT | はい | 0.0 - 1.0 |
 | `終了パーセント` | ControlNetが適用を終了する生成プロセス内の終了位置（デフォルト：1.0） | FLOAT | はい | 0.0 - 1.0 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `positive` | ControlNetガイダンスが適用された変更後のポジティブ条件付け | CONDITIONING |
-| `negative` | ControlNetガイダンスが適用された変更後のネガティブ条件付け | CONDITIONING |
+| `ネガティブ` | ControlNetガイダンスが適用された変更後のポジティブ条件付け | CONDITIONING |
+| `ネガティブ` | ControlNetガイダンスが適用された変更後のネガティブ条件付け | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/ja.md)
 

@@ -18,10 +18,11 @@ Le nœud ZImageFunControlnet applique un réseau de contrôle spécialisé pour 
 
 **Remarque :** Le paramètre `inpaint_image` est généralement utilisé conjointement avec un `mask` pour spécifier le contenu de l'incrustation. Le comportement du nœud peut changer en fonction des entrées facultatives fournies (par exemple, utiliser `image` pour le guidage ou utiliser `image`, `mask` et `inpaint_image` pour l'incrustation).
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle avec le correctif du réseau de contrôle appliqué, prêt à être utilisé dans un pipeline d'échantillonnage. | MODEL |
+| `modèle` | Le modèle avec le correctif du réseau de contrôle appliqué, prêt à être utilisé dans un pipeline d'échantillonnage. | MODEL |
 | `positive` | Le conditionnement positif, potentiellement modifié par les entrées du réseau de contrôle. | CONDITIONING |
 | `negative` | Le conditionnement négatif, potentiellement modifié par les entrées du réseau de contrôle. | CONDITIONING |
 

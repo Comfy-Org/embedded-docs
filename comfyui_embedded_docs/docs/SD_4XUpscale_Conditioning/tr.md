@@ -12,11 +12,12 @@ SD_4XUpscale_Conditioning düğümü, difüzyon modelleri kullanarak görüntül
 | `ölçek_oranı` | Giriş görüntülerine uygulanan ölçeklendirme faktörü (varsayılan: 4.0) | FLOAT | Hayır | 0.0 - 10.0 |
 | `gürültü_artırımı` | Büyütme işlemi sırasında eklenecek gürültü miktarı (varsayılan: 0.0) | FLOAT | Hayır | 0.0 - 1.0 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negative` | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `negatif` | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `gizli` | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
 | `latent` | Büyütülmüş boyutlarla eşleşen boş gizli temsil | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/tr.md)

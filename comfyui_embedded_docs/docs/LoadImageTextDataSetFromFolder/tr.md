@@ -10,10 +10,11 @@ Bu düğüm, belirtilen bir klasörden görüntüleri ve bunlara karşılık gel
 
 **Not:** Düğüm belirli bir dosya yapısı bekler. Her görüntü dosyası (`.png`, `.jpg`, `.jpeg`, `.webp`) için, açıklama olarak kullanılmak üzere aynı ada sahip bir `.txt` dosyası arar. Bir açıklama dosyası bulunamazsa, boş bir dize kullanılır. Düğüm ayrıca, bir alt klasörün adının bir sayı ve alt çizgi ile başladığı (örneğin, `5_kediler`) özel bir yapıyı da destekler; bu, o alt klasördeki tüm görüntülerin nihai çıktı listesinde o sayı kadar tekrarlanmasına neden olur.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `images` | Yüklenen görüntü tensörlerinin bir listesi. | IMAGE |
+| `texts` | Yüklenen görüntü tensörlerinin bir listesi. | IMAGE |
 | `texts` | Yüklenen her görüntüye karşılık gelen metin açıklamalarının bir listesi. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/tr.md)

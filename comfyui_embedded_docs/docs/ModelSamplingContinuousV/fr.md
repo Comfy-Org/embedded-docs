@@ -11,10 +11,11 @@ Le nœud **ModelSamplingContinuousV** modifie le comportement d'échantillonnage
 | `sigma_max` | La valeur sigma maximale pour l'échantillonnage (par défaut : 500.0) | FLOAT | Oui | 0.0 - 1000.0 |
 | `sigma_min` | La valeur sigma minimale pour l'échantillonnage (par défaut : 0.03) | FLOAT | Oui | 0.0 - 1000.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec l'échantillonnage continu par prédiction V appliqué | MODEL |
+| `modèle` | Le modèle modifié avec l'échantillonnage continu par prédiction V appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousV/fr.md)
 

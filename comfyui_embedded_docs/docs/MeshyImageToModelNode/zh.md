@@ -25,12 +25,13 @@ Meshy：图像转模型节点使用 Meshy API 从单张输入图像生成 3D 模
 * `enable_pbr`、`texture_prompt` 和 `texture_image` 输入仅在 `should_texture` 设置为 `"true"` 时可用。
 * 您不能同时使用 `texture_prompt` 和 `texture_image`。如果当 `should_texture` 为 `"true"` 时同时提供了两者，节点将引发错误。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model_file` | 生成的 GLB 模型的文件名。（为保持向后兼容性而保留）。 | STRING |
-| `meshy_task_id` | Meshy API 任务的唯一标识符，可用于参考或故障排除。 | MESHY_TASK_ID |
-| `GLB` | 以 GLB 文件格式生成的 3D 模型。 | FILE3DGLB |
+| `meshy_task_id` | 生成的 GLB 模型的文件名。（为保持向后兼容性而保留）。 | STRING |
+| `GLB` | Meshy API 任务的唯一标识符，可用于参考或故障排除。 | MESHY_TASK_ID |
+| `FBX` | 以 GLB 文件格式生成的 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 文件格式生成的 3D 模型。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/zh.md)

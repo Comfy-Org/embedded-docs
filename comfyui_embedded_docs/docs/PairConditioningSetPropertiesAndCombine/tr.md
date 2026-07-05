@@ -16,11 +16,12 @@ PairConditioningSetPropertiesAndCombine düğümü, mevcut pozitif ve negatif ko
 | `kancalar` | Gelişmiş kontrol için isteğe bağlı kanca grubu | HOOKS | Hayır | - |
 | `zaman_adımları` | İsteğe bağlı zaman adımı aralığı belirtimi | TIMESTEPS_RANGE | Hayır | - |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Birleştirilmiş pozitif koşullandırma çıktısı | CONDITIONING |
-| `negative` | Birleştirilmiş negatif koşullandırma çıktısı | CONDITIONING |
+| `negatif` | Birleştirilmiş pozitif koşullandırma çıktısı | CONDITIONING |
+| `negatif` | Birleştirilmiş negatif koşullandırma çıktısı | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetPropertiesAndCombine/tr.md)
 

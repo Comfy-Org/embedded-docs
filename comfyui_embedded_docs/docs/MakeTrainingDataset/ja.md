@@ -15,10 +15,11 @@
 
 * `texts` リストのアイテム数は、0、1、または `images` リストのアイテム数と正確に一致している必要があります。0の場合は、すべての画像に空文字列が使用されます。1の場合は、その単一のテキストがすべての画像に繰り返し使用されます。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `latents` | 潜在表現の辞書のリスト。 | LATENT |
+| `コンディショニング` | 潜在表現の辞書のリスト。 | LATENT |
 | `conditioning` | コンディショニングリストのリスト。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/ja.md)

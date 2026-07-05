@@ -12,11 +12,12 @@ El nodo `SD_4XUpscale_Conditioning` prepara datos de condicionamiento para escal
 | `relación_escala` | Factor de escalado aplicado a las imágenes de entrada (predeterminado: 4.0) | FLOAT | No | 0.0 - 10.0 |
 | `aumento_ruido` | Cantidad de ruido a añadir durante el proceso de escalado (predeterminado: 0.0) | FLOAT | No | 0.0 - 1.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Condicionamiento positivo modificado con información de escalado aplicada | CONDITIONING |
-| `negative` | Condicionamiento negativo modificado con información de escalado aplicada | CONDITIONING |
+| `negativo` | Condicionamiento positivo modificado con información de escalado aplicada | CONDITIONING |
+| `latente` | Condicionamiento negativo modificado con información de escalado aplicada | CONDITIONING |
 | `latent` | Representación latente vacía que coincide con las dimensiones escaladas | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/es.md)

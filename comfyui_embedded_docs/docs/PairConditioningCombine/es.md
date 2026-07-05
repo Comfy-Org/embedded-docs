@@ -11,10 +11,11 @@ El nodo PairConditioningCombine fusiona dos pares de condicionamiento separados 
 | `positivo_B` | Segunda entrada de condicionamiento positivo | CONDITIONING | Sí | - |
 | `negativo_B` | Segunda entrada de condicionamiento negativo | CONDITIONING | Sí | - |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Salida de condicionamiento positivo combinado | CONDITIONING |
+| `negativo` | Salida de condicionamiento positivo combinado | CONDITIONING |
 | `negative` | Salida de condicionamiento negativo combinado | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/es.md)

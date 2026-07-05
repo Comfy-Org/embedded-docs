@@ -46,11 +46,12 @@ El nodo ControlNetInpaintingAliMamaApply aplica el condicionamiento de ControlNe
 
 **Nota:** Cuando el ControlNet tiene `concat_mask` habilitado, la máscara se invierte y se aplica a la imagen antes del procesamiento, y la máscara se incluye en los datos de concatenación adicional enviados al ControlNet.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | El condicionamiento positivo modificado con ControlNet aplicado para inpainting | CONDITIONING |
-| `negative` | El condicionamiento negativo modificado con ControlNet aplicado para inpainting | CONDITIONING |
+| `negativo` | El condicionamiento positivo modificado con ControlNet aplicado para inpainting | CONDITIONING |
+| `negativo` | El condicionamiento negativo modificado con ControlNet aplicado para inpainting | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/es.md)
 

@@ -10,10 +10,11 @@ SaveLoRA düğümü, LoRA (Düşük Dereceli Uyarlama) modellerini çıktı dizi
 | `prefix` | Kaydedilen LoRA dosyası için kullanılacak önek (varsayılan: "loras/ComfyUI_trained_lora"). | STRING | Evet | - |
 | `steps` | İsteğe bağlı: LoRA'nın eğitildiği adım sayısı, kaydedilen dosyayı adlandırmak için kullanılır. | INT | Hayır | - |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| *None* | Bu düğüm herhangi bir çıktı döndürmez ancak LoRA modelini çıktı dizinine kaydeder. | - |
+| *Yok* | Bu düğüm herhangi bir çıktı döndürmez ancak LoRA modelini çıktı dizinine kaydeder. | - |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRANode/tr.md)
 

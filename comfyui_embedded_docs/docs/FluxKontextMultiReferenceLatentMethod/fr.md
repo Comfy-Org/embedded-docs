@@ -11,10 +11,11 @@ Le nœud FluxKontextMultiReferenceLatentMethod modifie les données de condition
 | `conditionnement` | Les données de conditionnement à modifier avec la méthode de latents de référence | CONDITIONING | Oui | - |
 | `méthode_des_latents_de_référence` | La méthode à utiliser pour le traitement des latents de référence. Si "uxo" ou "uso" est sélectionné, il sera converti en "uxo". Ce paramètre est marqué comme avancé. | STRING | Oui | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditioning` | Les données de conditionnement modifiées avec la méthode de latents de référence appliquée | CONDITIONING |
+| `conditionnement` | Les données de conditionnement modifiées avec la méthode de latents de référence appliquée | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/fr.md)
 

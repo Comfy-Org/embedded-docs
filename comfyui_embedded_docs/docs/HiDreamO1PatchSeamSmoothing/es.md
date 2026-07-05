@@ -18,10 +18,11 @@ Este nodo reduce las costuras visibles en imágenes generadas por el modelo HiDr
 - El efecto de suavizado no se aplicará si `strength` es 0.0 o menor, o si `end_percent` es menor o igual que `start_percent`.
 - Las opciones de rampa del parámetro `passes` (`ramp_2_4`, `ramp_2_4_8`) solo tienen sentido cuando `start_percent` y `end_percent` definen un rango, ya que el número de pasadas aumenta a medida que el muestreo progresa a través de ese rango.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con el envoltorio de suavizado de costuras aplicado. | MODEL |
+| `modelo` | El modelo modificado con el envoltorio de suavizado de costuras aplicado. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1PatchSeamSmoothing/es.md)
 

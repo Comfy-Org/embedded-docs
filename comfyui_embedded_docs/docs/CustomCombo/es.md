@@ -11,10 +11,11 @@ El nodo Combo Personalizado te permite crear un menú desplegable personalizado 
 
 **Nota:** La validación para la entrada de este nodo está intencionalmente deshabilitada. Esto te permite definir cualquier opción de texto personalizada que desees en el frontend sin que el backend verifique si tu selección proviene de una lista predefinida.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `STRING` | La cadena de texto de la opción seleccionada del cuadro combinado personalizado. | STRING |
+| `ÍNDICE` | La cadena de texto de la opción seleccionada del cuadro combinado personalizado. | STRING |
 | `INDEX` | La posición de índice de la opción seleccionada en la lista desplegable. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/es.md)

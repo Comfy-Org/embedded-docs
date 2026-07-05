@@ -15,10 +15,11 @@ PatchModelAddDownscale 节点通过将下采样和上采样操作应用于模型
 | `收缩算法` | 用于下采样操作的插值方法 | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 | `放大方法` | 用于上采样操作的插值方法 | COMBO | 否 | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 已应用下采样补丁的修改后模型 | MODEL |
+| `模型` | 已应用下采样补丁的修改后模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/zh.md)
 

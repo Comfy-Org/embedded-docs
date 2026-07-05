@@ -11,10 +11,11 @@ El nodo ModelSave guarda modelos entrenados o modificados en el almacenamiento d
 | `prompt` | Información de la solicitud del flujo de trabajo (se proporciona automáticamente) | PROMPT | No | - |
 | `extra_pnginfo` | Metadatos adicionales del flujo de trabajo (se proporcionan automáticamente) | EXTRA_PNGINFO | No | - |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| *None* | Este nodo no devuelve ningún valor de salida | - |
+| *Ninguno* | Este nodo no devuelve ningún valor de salida | - |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSave/es.md)
 

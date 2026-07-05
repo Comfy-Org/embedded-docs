@@ -12,11 +12,12 @@ SD_4XUpscale_Conditioning 节点用于准备扩散模型放大图像所需的 co
 | `缩放比例` | 应用于输入图像的缩放因子（默认值：4.0） | FLOAT | 否 | 0.0 - 10.0 |
 | `噪波增强` | 放大过程中添加的噪声量（默认值：0.0） | FLOAT | 否 | 0.0 - 1.0 |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `positive` | 应用放大信息后的修改版正向 conditioning | CONDITIONING |
-| `negative` | 应用放大信息后的修改版负向 conditioning | CONDITIONING |
+| `负面条件` | 应用放大信息后的修改版正向 conditioning | CONDITIONING |
+| `Latent` | 应用放大信息后的修改版负向 conditioning | CONDITIONING |
 | `latent` | 与放大后尺寸匹配的空潜空间表示 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/zh.md)

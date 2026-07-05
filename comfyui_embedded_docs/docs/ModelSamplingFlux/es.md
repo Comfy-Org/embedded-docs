@@ -12,10 +12,11 @@ El nodo ModelSamplingFlux aplica el muestreo del modelo Flux a un modelo determi
 | `ancho` | Ancho de la imagen de destino en píxeles (predeterminado: 1024) | INT | Sí | 16 - MAX_RESOLUTION |
 | `altura` | Alto de la imagen de destino en píxeles (predeterminado: 1024) | INT | Sí | 16 - MAX_RESOLUTION |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con la configuración de muestreo Flux aplicada | MODEL |
+| `modelo` | El modelo modificado con la configuración de muestreo Flux aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingFlux/es.md)
 

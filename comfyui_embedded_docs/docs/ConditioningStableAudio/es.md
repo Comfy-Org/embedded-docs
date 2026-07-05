@@ -11,11 +11,12 @@ El nodo ConditioningStableAudio agrega información de temporización a las entr
 | `segundos_inicio` | El tiempo de inicio en segundos para la generación de audio (predeterminado: 0.0) | FLOAT | Sí | 0.0 a 1000.0 |
 | `segundos_total` | La duración total en segundos para la generación de audio (predeterminado: 47.0) | FLOAT | Sí | 0.0 a 1000.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | El condicionamiento positivo modificado con información de temporización de audio aplicada | CONDITIONING |
-| `negative` | El condicionamiento negativo modificado con información de temporización de audio aplicada | CONDITIONING |
+| `negativo` | El condicionamiento positivo modificado con información de temporización de audio aplicada | CONDITIONING |
+| `negativo` | El condicionamiento negativo modificado con información de temporización de audio aplicada | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningStableAudio/es.md)
 

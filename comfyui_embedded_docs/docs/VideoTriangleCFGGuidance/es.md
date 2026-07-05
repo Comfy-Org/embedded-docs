@@ -9,10 +9,11 @@ El nodo `VideoTriangleCFGGuidance` aplica un patrón de escala de guía sin clas
 | `modelo` | El modelo de video al que se aplicará la guía CFG triangular | MODEL | Sí | - |
 | `min_cfg` | El valor mínimo de escala CFG para el patrón triangular (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 100.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con la guía CFG triangular aplicada | MODEL |
+| `modelo` | El modelo modificado con la guía CFG triangular aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/es.md)
 

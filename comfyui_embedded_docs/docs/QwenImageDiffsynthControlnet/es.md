@@ -15,10 +15,11 @@ El nodo QwenImageDiffsynthControlnet aplica un parche de red de control de sínt
 
 **Nota:** Cuando se proporciona una máscara, se invierte automáticamente (1.0 - máscara) y se redimensiona para que coincida con las dimensiones esperadas para el procesamiento de la red de control. El nodo utiliza diferentes métodos de procesamiento interno dependiendo de si el parche del modelo es de tipo ZImage Control o una red de control DiffSynth estándar.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con el parche de red de control de síntesis por difusión aplicado | MODEL |
+| `modelo` | El modelo modificado con el parche de red de control de síntesis por difusión aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/es.md)
 

@@ -8,10 +8,11 @@
 | --- | --- | --- | --- | --- |
 | `模型` | 通过该节点传递的模型。 | MODEL | 是 |  |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 与输入时相同的模型，未发生任何变化。 | MODEL |
+| `模型` | 与输入时相同的模型，未发生任何变化。 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/wanBlockSwap/zh.md)
 

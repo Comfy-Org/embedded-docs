@@ -47,11 +47,12 @@ ElevenLabs Konuşmayı Metne Çevir düğümü, ses dosyalarını metne dönüş
 
 **Not:** `diarize` seçeneği etkinleştirildiğinde `num_speakers` parametresi 0'dan büyük bir değere ayarlanamaz. `diarize` seçeneğini devre dışı bırakmalı veya `num_speakers` değerini 0 olarak ayarlamalısınız.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `text` | Sesten metne çevrilmiş metin. | STRING |
-| `language_code` | Sesin algılanan dil kodu. | STRING |
+| `dil_kodu` | Sesten metne çevrilmiş metin. | STRING |
+| `kelimeler_json` | Sesin algılanan dil kodu. | STRING |
 | `words_json` | Zaman damgaları ve etkinleştirilmişse konuşmacı etiketleri dahil olmak üzere kelime düzeyinde ayrıntılı bilgiler içeren JSON biçimli bir dize. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/tr.md)

@@ -20,11 +20,12 @@ Le nœud WanFirstLastFrameToVideo crée un conditionnement vidéo en combinant d
 
 **Remarque :** Lorsque `start_image` et `end_image` sont tous deux fournis, le nœud crée une séquence vidéo qui effectue une transition entre ces deux images. Les paramètres `clip_vision_start_image` et `clip_vision_end_image` sont facultatifs, mais lorsqu'ils sont fournis, leurs caractéristiques visuelles CLIP sont concaténées et appliquées au conditionnement positif et négatif. L'image `start_image` est recadrée aux premières images `length`, et l'image `end_image` est recadrée aux dernières images `length` avant le traitement.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Conditionnement positif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
-| `negative` | Conditionnement négatif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
+| `négatif` | Conditionnement positif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
+| `latent` | Conditionnement négatif avec encodage d'images vidéo appliqué et caractéristiques visuelles CLIP | CONDITIONING |
 | `latent` | Tenseur latent vide dont les dimensions correspondent aux paramètres vidéo spécifiés | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/fr.md)

@@ -11,10 +11,11 @@ FluxKontextMultiReferenceLatentMethod ノードは、特定の参照潜在変数
 | `コンディショニング` | 参照潜在変数メソッドで変更される条件付けデータ | CONDITIONING | はい | - |
 | `参照潜在変数メソッド` | 参照潜在変数の処理に使用するメソッド。"uxo" または "uso" が選択された場合は、"uxo" に変換されます。このパラメータは高度な設定としてマークされています。 | STRING | はい | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `conditioning` | 参照潜在変数メソッドが適用された変更後の条件付けデータ | CONDITIONING |
+| `コンディショニング` | 参照潜在変数メソッドが適用された変更後の条件付けデータ | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/ja.md)
 

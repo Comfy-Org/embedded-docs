@@ -26,12 +26,13 @@
 * `enable_pbr`、`texture_prompt`、および`texture_image`パラメータは、`should_texture`が`"true"`に設定されている場合にのみ有効です。
 * `texture_prompt`と`texture_image`は同時に使用できません。これらは相互に排他的です。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model_file` | 生成されたGLBモデルのファイル名です。この出力は後方互換性のために提供されています。 | STRING |
-| `meshy_task_id` | Meshy APIタスクの一意の識別子です。 | MESHY_TASK_ID |
-| `GLB` | GLB形式で生成された3Dモデルです。 | FILE3DGLB |
+| `meshy_task_id` | 生成されたGLBモデルのファイル名です。この出力は後方互換性のために提供されています。 | STRING |
+| `GLB` | Meshy APIタスクの一意の識別子です。 | MESHY_TASK_ID |
+| `FBX` | GLB形式で生成された3Dモデルです。 | FILE3DGLB |
 | `FBX` | FBX形式で生成された3Dモデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/ja.md)

@@ -11,10 +11,11 @@
 
 **注記：** `latents`リストのアイテム数は、`conditioning`リストのアイテム数と正確に一致する必要があります。各潜在辞書にはサンプルのバッチが含まれる可能性があり、対応するコンディショニングリストにはそのバッチに一致する数のコンディショニングアイテムが含まれている必要があります。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `latents` | 解像度バケットごとに1つずつ、バッチ処理された潜在辞書のリスト。 | LATENT |
+| `conditioning` | 解像度バケットごとに1つずつ、バッチ処理された潜在辞書のリスト。 | LATENT |
 | `conditioning` | 解像度バケットごとに1つずつ、コンディションリストのリスト。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/ja.md)

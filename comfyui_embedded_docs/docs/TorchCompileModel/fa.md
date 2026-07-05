@@ -9,10 +9,11 @@
 | `مدل` | مدلی که باید کامپایل و بهینه‌سازی شود | MODEL | بله | - |
 | `بک‌اند` | بک‌اند کامپایل PyTorch برای بهینه‌سازی (پیش‌فرض: "inductor") | STRING | بله | "inductor"<br>"cudagraphs" |
 
+## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `model` | مدل کامپایل‌شده با اعمال کامپایل PyTorch | MODEL |
+| `مدل` | مدل کامپایل‌شده با اعمال کامپایل PyTorch | MODEL |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TorchCompileModel/fa.md)
 

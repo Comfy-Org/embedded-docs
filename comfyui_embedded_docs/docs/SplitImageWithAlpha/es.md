@@ -8,10 +8,11 @@ El nodo **SplitImageWithAlpha** está diseñado para separar los componentes de 
 | --- | --- | --- |
 | `imagen` | El parámetro `imagen` representa el tensor de imagen de entrada del cual se separarán los canales RGB y alfa. Es fundamental para la operación, ya que proporciona los datos de origen para la separación. | `IMAGE` |
 
+## Salidas
 
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `image` | La salida `imagen` representa los canales RGB separados de la imagen de entrada, proporcionando el componente de color sin la información de transparencia. | `IMAGE` |
+| `imagen` | La salida `imagen` representa los canales RGB separados de la imagen de entrada, proporcionando el componente de color sin la información de transparencia. | `IMAGE` |
 | `mask` | La salida `mask` representa el canal alfa separado de la imagen de entrada, proporcionando la información de transparencia. | `MASK` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitImageWithAlpha/es.md)

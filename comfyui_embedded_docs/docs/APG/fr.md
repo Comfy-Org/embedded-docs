@@ -13,10 +13,11 @@ Le nœud APG (Guidage Projectif Adaptatif) modifie le processus d'échantillonna
 | `seuil_norme` | Normalise le vecteur de guidage à cette valeur, la normalisation est désactivée à un réglage de 0 (par défaut : 5.0). | FLOAT | Oui | 0.0 à 50.0 |
 | `momentum` | Contrôle une moyenne mobile du guidage pendant la diffusion, désactivé à un réglage de 0 (par défaut : 0.0). | FLOAT | Oui | -5.0 à 1.0 |
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Renvoie le modèle modifié avec le guidage projectif adaptatif appliqué à son processus d'échantillonnage | MODEL |
+| `modèle` | Renvoie le modèle modifié avec le guidage projectif adaptatif appliqué à son processus d'échantillonnage | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/APG/fr.md)
 

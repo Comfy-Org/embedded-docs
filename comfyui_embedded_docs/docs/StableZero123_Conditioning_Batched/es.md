@@ -19,11 +19,12 @@ El nodo `StableZero123_Conditioning_Batched` procesa una imagen de entrada y gen
 
 **Nota:** Los parámetros `width` y `height` deben ser divisibles por 8, ya que el nodo divide internamente estas dimensiones entre 8 para la generación del espacio latente.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Los datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de cámara | CONDITIONING |
-| `negative` | Los datos de condicionamiento negativo con incrustaciones inicializadas en cero | CONDITIONING |
+| `negativo` | Los datos de condicionamiento positivo que contienen incrustaciones de imagen y parámetros de cámara | CONDITIONING |
+| `latente` | Los datos de condicionamiento negativo con incrustaciones inicializadas en cero | CONDITIONING |
 | `latent` | La representación latente de la imagen procesada con información de indexación por lotes | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/es.md)

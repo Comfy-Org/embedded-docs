@@ -22,16 +22,17 @@ Load3D 节点是用于加载和处理 3D 模型文件的核心节点。加载节
 | `宽度` | 画布渲染宽度 | INT | 1024 | 1-4096 |
 | `高度` | 画布渲染高度 | INT | 1024 | 1-4096 |
 
+## 输出
 
 | 参数名 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `image` | 画布渲染图像 | IMAGE |
-| `mask` | 包含当前模型位置的遮罩 | MASK |
-| `mesh_path` | 模型文件路径 | STRING |
-| `normal` | 法线贴图 | IMAGE |
-| `lineart` | 线稿图像输出，对应的 `edge_threshold` 可在画布模型菜单中调整 | IMAGE |
-| `camera_info` | 相机信息 | LOAD3D_CAMERA |
-| `recording_video` | 录制的视频（仅在存在录制时） | VIDEO |
+| `mask` | 画布渲染图像 | IMAGE |
+| `网格路径` | 包含当前模型位置的遮罩 | MASK |
+| `法线` | 模型文件路径 | STRING |
+| `相机信息` | 法线贴图 | IMAGE |
+| `录制视频` | 线稿图像输出，对应的 `edge_threshold` 可在画布模型菜单中调整 | IMAGE |
+| `model_3d` | 相机信息 | LOAD3D_CAMERA |
+| `model_3d_info` | 录制的视频（仅在存在录制时） | VIDEO |
 
 所有输出预览：
 ![查看操作演示](./asset/load3d_outputs.webp)

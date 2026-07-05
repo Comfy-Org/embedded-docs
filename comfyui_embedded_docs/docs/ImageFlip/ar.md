@@ -11,10 +11,11 @@
 | `صورة` | الصورة المدخلة المراد قلبها | IMAGE | نعم | - |
 | `طريقة الالتفاف` | اتجاه القلب المطلوب تطبيقه (الافتراضي: "x-axis: vertically") | STRING | نعم | "x-axis: vertically"<br>"y-axis: horizontally" |
 
+## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `image` | الصورة المقلوبة الناتجة | IMAGE |
+| `صورة` | الصورة المقلوبة الناتجة | IMAGE |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageFlip/ar.md)
 

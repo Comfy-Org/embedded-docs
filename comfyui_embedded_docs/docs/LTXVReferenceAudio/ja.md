@@ -17,11 +17,12 @@ LTXV リファレンスオーディオノードは、音声生成における話
 | `start_percent` | 同一性ガイダンスがアクティブになるシグマ範囲の開始位置。（デフォルト：0.0） | FLOAT | いいえ | 0.0 - 1.0 |
 | `end_percent` | 同一性ガイダンスがアクティブになるシグマ範囲の終了位置。（デフォルト：1.0） | FLOAT | いいえ | 0.0 - 1.0 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model` | 同一性ガイダンス機能でパッチ適用されたモデル。 | MODEL |
-| `positive` | エンコードされたリファレンスオーディオデータを含む、ポジティブな条件付け。 | CONDITIONING |
+| `positive` | 同一性ガイダンス機能でパッチ適用されたモデル。 | MODEL |
+| `negative` | エンコードされたリファレンスオーディオデータを含む、ポジティブな条件付け。 | CONDITIONING |
 | `negative` | エンコードされたリファレンスオーディオデータを含む、ネガティブな条件付け。 | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/ja.md)

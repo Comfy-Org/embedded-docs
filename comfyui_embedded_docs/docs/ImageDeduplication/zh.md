@@ -9,10 +9,11 @@
 | `图像` | 需要进行去重处理的图像批次。 | IMAGE | 是 | - |
 | `相似度阈值` | 相似度阈值（0-1）。值越高表示越相似。超过此阈值的图像将被视为重复项。（默认值：0.95） | FLOAT | 否 | 0.0 - 1.0 |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `images` | 已移除重复项后的过滤图像列表。 | IMAGE |
+| `图像` | 已移除重复项后的过滤图像列表。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageDeduplication/zh.md)
 

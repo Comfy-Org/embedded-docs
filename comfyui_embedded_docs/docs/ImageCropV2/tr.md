@@ -11,10 +11,11 @@ Görüntü Kırp düğümü, bir giriş görüntüsünden dikdörtgen bir bölü
 
 **Bölge Kısıtlamaları Hakkında Not:** Kırpma bölgesi, giriş görüntüsünün sınırları içinde kalacak şekilde otomatik olarak kısıtlanır. Belirtilen `x` veya `y` koordinatı görüntünün genişliğinden veya yüksekliğinden büyükse, izin verilen maksimum konuma ayarlanır. Ortaya çıkan kırpma genişliği ve yüksekliği, bölgenin görüntünün kenarlarını aşmaması için ayarlanır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Orijinal giriş görüntüsünün kırpılmış bölümü. | IMAGE |
+| `görüntü` | Orijinal giriş görüntüsünün kırpılmış bölümü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCropV2/tr.md)
 

@@ -9,10 +9,11 @@
 | `モデル` | 摂動注意誘導を適用する拡散モデル | MODEL | はい | - |
 | `スケール` | 摂動注意誘導効果の強さ（デフォルト: 3.0）。0に設定すると、ノードは効果を発揮せず、元のノイズ除去結果を返します。 | FLOAT | いいえ | 0.0 - 100.0 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model` | 摂動注意誘導が適用された変更済みモデル | MODEL |
+| `モデル` | 摂動注意誘導が適用された変更済みモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/ja.md)
 

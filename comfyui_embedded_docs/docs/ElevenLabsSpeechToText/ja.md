@@ -21,11 +21,12 @@ ElevenLabs Speech to Text ノードは、オーディオファイルをテキス
 
 **注:** `diarize` オプションが有効な場合、`num_speakers` パラメータを 0 より大きい値に設定することはできません。`diarize` を無効にするか、`num_speakers` を 0 に設定する必要があります。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `text` | オーディオから文字起こしされたテキスト。 | STRING |
-| `language_code` | 検出されたオーディオの言語コード。 | STRING |
+| `言語コード` | オーディオから文字起こしされたテキスト。 | STRING |
+| `単語JSON` | 検出されたオーディオの言語コード。 | STRING |
 | `words_json` | タイムスタンプや、有効な場合は話者ラベルを含む、詳細な単語レベルの情報を含む JSON 形式の文字列。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/ja.md)

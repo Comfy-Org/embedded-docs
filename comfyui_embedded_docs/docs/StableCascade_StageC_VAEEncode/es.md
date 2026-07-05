@@ -10,10 +10,11 @@ El nodo `StableCascade_StageC_VAEEncode` procesa imágenes a través de un codif
 | `vae` | El modelo VAE utilizado para codificar la imagen | VAE | Sí | - |
 | `compresión` | El factor de compresión aplicado a la imagen antes de la codificación (predeterminado: 42) | INT | No | 4-128 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `stage_c` | La representación latente codificada para la etapa C del modelo Stable Cascade | LATENT |
+| `etapa_b` | La representación latente codificada para la etapa C del modelo Stable Cascade | LATENT |
 | `stage_b` | Un marcador de posición de representación latente para la etapa B (actualmente devuelve ceros) | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageC_VAEEncode/es.md)

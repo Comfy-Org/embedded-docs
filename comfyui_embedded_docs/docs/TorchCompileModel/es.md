@@ -9,10 +9,11 @@ El nodo TorchCompileModel aplica compilación de PyTorch a un modelo para optimi
 | `modelo` | El modelo que se va a compilar y optimizar | MODEL | Sí | - |
 | `backend` | El backend de compilación de PyTorch a utilizar para la optimización (predeterminado: "inductor") | STRING | Sí | "inductor"<br>"cudagraphs" |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo compilado con la compilación de PyTorch aplicada | MODEL |
+| `modelo` | El modelo compilado con la compilación de PyTorch aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TorchCompileModel/es.md)
 

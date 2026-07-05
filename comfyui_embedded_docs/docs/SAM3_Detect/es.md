@@ -27,11 +27,12 @@ El nodo SAM3 Detect realiza detección y segmentación de vocabulario abierto ut
 - **Procesamiento por lotes**: El nodo admite imágenes por lotes. Al procesar múltiples fotogramas, los cuadros delimitadores se pueden proporcionar por fotograma usando un formato de lista de listas.
 - **Formato JSON para puntos**: Las coordenadas de los puntos deben proporcionarse como cadenas JSON válidas en el formato `[{"x": 100, "y": 200}, {"x": 150, "y": 250}]`.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `masks` | Máscaras de segmentación. Cuando `máscaras_individuales` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado | MASK |
-| `bboxes` | Cuadros delimitadores detectados con coordenadas y puntuaciones de confianza. Cada cuadro incluye valores de `x`, `y`, `width`, `height` y `score` | BOUNDING_BOX |
+| `cajas_delimitadoras` | Máscaras de segmentación. Cuando `máscaras_individuales` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado | MASK |
+| `cajas_delimitadoras` | Cuadros delimitadores detectados con coordenadas y puntuaciones de confianza. Cada cuadro incluye valores de `x`, `y`, `width`, `height` y `score` | BOUNDING_BOX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/es.md)
 

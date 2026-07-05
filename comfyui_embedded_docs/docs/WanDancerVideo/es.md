@@ -23,11 +23,12 @@ El nodo WanDancerVideo prepara datos de condicionamiento y un tensor latente vac
 - Las entradas `clip_vision_output` y `clip_vision_output_ref` son opcionales y se pueden usar juntas para proporcionar contexto visual para el primer fotograma y una imagen de referencia.
 - La entrada `audio_encoder_output` es opcional y proporciona características de audio para la generación condicionada por audio.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | El condicionamiento positivo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. | CONDITIONING |
-| `negative` | El condicionamiento negativo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. | CONDITIONING |
+| `negativo` | El condicionamiento positivo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. | CONDITIONING |
+| `latente` | El condicionamiento negativo con cualquier dato adicional (latente concatenado, CLIP vision, audio) adjunto. | CONDITIONING |
 | `latent` | Un tensor latente vacío con dimensiones que coinciden con la longitud, altura y ancho de video especificados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerVideo/es.md)

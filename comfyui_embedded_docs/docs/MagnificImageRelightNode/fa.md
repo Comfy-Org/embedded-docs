@@ -30,10 +30,11 @@
 * `transfer_light_b`: همچنین شدت انتقال نور را تغییر می‌دهد. می‌تواند با کنترل قبلی برای جلوه‌های متنوع ترکیب شود. گزینه‌ها: `"automatic"`, `"composition"`, `"straight"`, `"smooth_in"`, `"smooth_out"`, `"smooth_both"`, `"reverse_both"`, `"soft_in"`, `"soft_out"`, `"soft_mid"`, `"style_shift"`, `"strong_shift"`.
 * `fixed_generation`: خروجی یکسان با تنظیمات مشابه را تضمین می‌کند. پیش‌فرض: True.
 
+## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `image` | تصویر نوردهی‌شده. | IMAGE |
+| `تصویر` | تصویر نوردهی‌شده. | IMAGE |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageRelightNode/fa.md)
 

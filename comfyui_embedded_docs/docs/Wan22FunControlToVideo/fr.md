@@ -18,11 +18,12 @@ Le nœud Wan22FunControlToVideo prépare les représentations de conditionnement
 
 **Remarque :** Le paramètre `length` est traité par blocs de 4 images, et le nœud gère automatiquement la mise à l'échelle temporelle pour l'espace latent. Lorsque `ref_image` est fourni, il influence le conditionnement via les latentes de référence. Lorsque `control_video` est fourni, il affecte directement la représentation latente concaténée utilisée dans le conditionnement. Le paramètre `start_image` n'est pas exposé en tant qu'entrée dans le schéma de ce nœud, mais est référencé dans la logique d'exécution.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Conditionnement positif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles | CONDITIONING |
-| `negative` | Conditionnement négatif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles | CONDITIONING |
+| `négatif` | Conditionnement positif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles | CONDITIONING |
+| `latent` | Conditionnement négatif modifié avec des données latentes spécifiques à la vidéo, incluant la latente concaténée, le masque et les latentes de référence optionnelles | CONDITIONING |
 | `latent` | Tenseur latent vide avec des dimensions appropriées pour la génération vidéo, basé sur la taille du lot, les canaux latents et la mise à l'échelle spatiale/temporelle | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan22FunControlToVideo/fr.md)

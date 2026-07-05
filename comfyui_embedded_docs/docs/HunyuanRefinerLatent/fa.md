@@ -11,11 +11,12 @@
 | `latent` | نمایش ورودی latent | LATENT | بله | - |
 | `افزایش نویز` | میزان نویزافزایی اعمال‌شده (پیش‌فرض: 0.10) | FLOAT | بله | 0.0 - 1.0 |
 
+## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `positive` | conditioning مثبت پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent | CONDITIONING |
-| `negative` | conditioning منفی پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent | CONDITIONING |
+| `مثبت` | conditioning مثبت پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent | CONDITIONING |
+| `منفی` | conditioning منفی پردازش‌شده با نویزافزایی اعمال‌شده و الحاق تصویر latent | CONDITIONING |
 | `latent` | خروجی latent جدید با ابعاد [batch_size, 32, height, width, channels] | LATENT |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/fa.md)

@@ -21,10 +21,11 @@ HunyuanImageToVideo düğümü, Hunyuan video modelini kullanarak görüntüleri
 - "v2 (replace)": İlk video karelerini görüntü giziliyle değiştirir ve bir gürültü maskesi uygular
 - "custom": Görüntüyü yönlendirme için referans gizil olarak kullanır
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | start_image sağlandığında görüntü yönlendirmesi uygulanmış, değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `gizli` | start_image sağlandığında görüntü yönlendirmesi uygulanmış, değiştirilmiş pozitif koşullandırma | CONDITIONING |
 | `latent` | Video oluşturma modelleri tarafından daha fazla işlenmeye hazır video gizil temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/tr.md)

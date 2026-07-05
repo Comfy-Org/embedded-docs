@@ -11,10 +11,11 @@ Le nœud **ModelSamplingStableCascade** applique un échantillonnage en cascade 
 | `modèle` | Le modèle d'entrée auquel appliquer l'échantillonnage en cascade stable | MODEL | Oui | - |
 | `décalage` | La valeur de décalage à appliquer aux paramètres d'échantillonnage (par défaut : 2.0) | FLOAT | Oui | 0.0 - 100.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec l'échantillonnage en cascade stable appliqué | MODEL |
+| `modèle` | Le modèle modifié avec l'échantillonnage en cascade stable appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingStableCascade/fr.md)
 

@@ -10,9 +10,10 @@ Ce nœud est conçu pour modifier le comportement d'échantillonnage d'un modèl
 | `échantillonnage` | Spécifie la méthode d'échantillonnage discrète à appliquer au modèle. Le choix de la méthode influence la façon dont le modèle génère des échantillons, offrant différentes stratégies d'échantillonnage. | COMBO[STRING] | `str` |
 | `zsnr` | Un indicateur booléen qui, lorsqu'il est activé, ajuste la stratégie de réduction du bruit du modèle en fonction du rapport de bruit zero-shot. Cela peut influencer la qualité et les caractéristiques des échantillons générés. | `BOOLEAN` | `bool` |
 
+## Sorties
 
 | Paramètre | Description | Type de données | Type Python |
 | --- | --- | --- | --- |
-| `model` | Le modèle modifié avec la stratégie d'échantillonnage discrète appliquée. Ce modèle est désormais capable de générer des échantillons en utilisant la méthode et les ajustements spécifiés. | MODEL | `torch.nn.Module` |
+| `modèle` | Le modèle modifié avec la stratégie d'échantillonnage discrète appliquée. Ce modèle est désormais capable de générer des échantillons en utilisant la méthode et les ajustements spécifiés. | MODEL | `torch.nn.Module` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingDiscrete/fr.md)

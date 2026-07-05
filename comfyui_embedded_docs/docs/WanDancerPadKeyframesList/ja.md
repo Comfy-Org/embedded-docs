@@ -17,11 +17,12 @@
 | `num_segments` | リストとして出力するパディング済みセグメントの数（デフォルト：1）。 | INT | はい | 1 ～ 100 |
 | `audio` | 出力される各セグメントに対応してスライスするオーディオ。 | AUDIO | いいえ | なし |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `keyframes_sequence` | 各セグメントに対応するパディング済みキーフレームシーケンスのリスト。 | IMAGE |
-| `keyframes_mask` | 各セグメントの有効なフレームを示すマスクのリスト。 | MASK |
+| `keyframes_mask` | 各セグメントに対応するパディング済みキーフレームシーケンスのリスト。 | IMAGE |
+| `audio_segment` | 各セグメントの有効なフレームを示すマスクのリスト。 | MASK |
 | `audio_segment` | 各動画セグメントに対応するオーディオセグメントのリスト。 | AUDIO |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/ja.md)

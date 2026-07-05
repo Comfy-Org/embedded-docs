@@ -11,10 +11,11 @@
 
 **注意：** 此节点输入的验证功能已被有意禁用。这样您可以在前端定义任何自定义文本选项，而后端不会检查您的选择是否来自预定义列表。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `STRING` | 从自定义组合框中选择的选项的文本字符串。 | STRING |
+| `索引` | 从自定义组合框中选择的选项的文本字符串。 | STRING |
 | `INDEX` | 所选选项在下拉列表中的索引位置。 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/zh.md)

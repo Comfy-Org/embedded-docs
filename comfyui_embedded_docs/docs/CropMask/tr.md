@@ -12,9 +12,10 @@ CropMask düğümü, belirli bir maskeden belirtilen alanı kırpmak için tasar
 | `genişlik` | Genişlik, başlangıç noktasından itibaren kırpma alanının yatay kapsamını tanımlar. | INT |
 | `yükseklik` | Yükseklik, başlangıç noktasından itibaren kırpma alanının dikey kapsamını belirtir. | INT |
 
+## Çıktılar
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `mask` | Çıktı, belirtilen koordinatlar ve boyutlar tarafından tanımlanan orijinal maskenin bir kısmı olan kırpılmış maskedir. | MASK |
+| `maske` | Çıktı, belirtilen koordinatlar ve boyutlar tarafından tanımlanan orijinal maskenin bir kısmı olan kırpılmış maskedir. | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CropMask/tr.md)

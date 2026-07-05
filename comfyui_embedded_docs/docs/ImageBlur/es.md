@@ -10,9 +10,10 @@ El nodo `ImageBlur` aplica un desenfoque gaussiano a una imagen, permitiendo sua
 | `radio_de_desenfoque` | Determina el radio del efecto de desenfoque. Un radio mayor produce un desenfoque más pronunciado. | `INT` |
 | `sigma` | Controla la propagación del desenfoque. Un valor de sigma más alto significa que el desenfoque afectará un área más amplia alrededor de cada píxel. | `FLOAT` |
 
+## Salidas
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La salida es la versión desenfocada de la imagen de entrada, con el grado de desenfoque determinado por los parámetros de entrada. | `IMAGE` |
+| `imagen` | La salida es la versión desenfocada de la imagen de entrada, con el grado de desenfoque determinado por los parámetros de entrada. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageBlur/es.md)

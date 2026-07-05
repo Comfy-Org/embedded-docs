@@ -18,11 +18,12 @@ El nodo Wan22FunControlToVideo prepara las representaciones de condicionamiento 
 
 **Nota:** El parámetro `length` se procesa en bloques de 4 fotogramas, y el nodo maneja automáticamente el escalado temporal para el espacio latente. Cuando se proporciona `ref_image`, influye en el condicionamiento a través de latentes de referencia. Cuando se proporciona `control_video`, afecta directamente la representación latente concatenada utilizada en el condicionamiento. El parámetro `start_image` no está expuesto como entrada en el esquema de este nodo, pero se referencia en la lógica de ejecución.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | Condicionamiento positivo modificado con datos latentes específicos de video, incluyendo latente concatenado, máscara y latentes de referencia opcionales | CONDITIONING |
-| `negative` | Condicionamiento negativo modificado con datos latentes específicos de video, incluyendo latente concatenado, máscara y latentes de referencia opcionales | CONDITIONING |
+| `negativo` | Condicionamiento positivo modificado con datos latentes específicos de video, incluyendo latente concatenado, máscara y latentes de referencia opcionales | CONDITIONING |
+| `latente` | Condicionamiento negativo modificado con datos latentes específicos de video, incluyendo latente concatenado, máscara y latentes de referencia opcionales | CONDITIONING |
 | `latent` | Tensor latente vacío con dimensiones apropiadas para la generación de video basadas en el tamaño del lote, canales latentes y escalado espacial/temporal | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan22FunControlToVideo/es.md)

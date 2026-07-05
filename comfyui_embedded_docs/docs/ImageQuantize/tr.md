@@ -10,9 +10,10 @@ ImageQuantize düğümü, bir görüntüdeki renk sayısını belirtilen sayıya
 | `renkler` | Görüntünün indirgeneceği renk sayısını belirtir. Renk paleti boyutunu belirleyerek nicemleme sürecini doğrudan etkiler. | `INT` |
 | `titreşim` | Nicemleme sırasında uygulanacak renk taklidi tekniğini belirler; çıktı görüntüsünün görsel kalitesini ve görünümünü etkiler. | COMBO[STRING] |
 
+## Çıktılar
 
 | Alan | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Giriş görüntüsünün nicemlenmiş sürümü; azaltılmış renk karmaşıklığına sahiptir ve görsel kaliteyi korumak için isteğe bağlı olarak renk taklidi uygulanmıştır. | `IMAGE` |
+| `görüntü` | Giriş görüntüsünün nicemlenmiş sürümü; azaltılmış renk karmaşıklığına sahiptir ve görsel kaliteyi korumak için isteğe bağlı olarak renk taklidi uygulanmıştır. | `IMAGE` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageQuantize/tr.md)

@@ -16,12 +16,13 @@ El nodo `HunyuanVideo15SuperResolution` prepara datos de condicionamiento para u
 
 **Nota:** Si proporcionas una `start_image`, también debes conectar un `vae` para que pueda ser codificada. La `start_image` se ampliará automáticamente para que coincida con las dimensiones implícitas del `latent` de entrada.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | El condicionamiento positivo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. | CONDITIONING |
-| `negative` | El condicionamiento negativo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. | CONDITIONING |
-| `latent` | El latente de entrada se transmite sin cambios. | LATENT |
+| `negativo` | El condicionamiento positivo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. | CONDITIONING |
+| `latente` | El condicionamiento negativo modificado, que ahora contiene el latente concatenado, el aumento de ruido y los datos de visión CLIP opcionales. | CONDITIONING |
+| `latente` | El latente de entrada se transmite sin cambios. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/es.md)
 

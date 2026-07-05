@@ -19,11 +19,12 @@ ElevenLabs语音转文字节点可将音频文件转录为文本。它使用Elev
 
 **注意：** 当启用`diarize`选项时，`num_speakers`参数不能设置为大于0的值。您必须禁用`diarize`或将`num_speakers`设为0。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `text` | 音频转录后的文本。 | STRING |
-| `language_code` | 检测到的音频语言代码。 | STRING |
+| `语言代码` | 音频转录后的文本。 | STRING |
+| `单词 JSON` | 检测到的音频语言代码。 | STRING |
 | `words_json` | 包含详细单词级别信息的JSON格式字符串，如果启用则包含时间戳和说话者标签。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/zh.md)

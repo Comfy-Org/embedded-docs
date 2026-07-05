@@ -9,11 +9,12 @@ El nodo `StableCascade_SuperResolutionControlnet` prepara las entradas para el p
 | `imagen` | La imagen de entrada que se procesará para superresolución | IMAGE | Sí | - |
 | `vae` | El modelo VAE utilizado para codificar la imagen de entrada | VAE | Sí | - |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `controlnet_input` | La representación de imagen codificada adecuada para la entrada de controlnet | IMAGE |
-| `stage_c` | Representación latente placeholder para la etapa C del procesamiento de Stable Cascade | LATENT |
+| `etapa_c` | La representación de imagen codificada adecuada para la entrada de controlnet | IMAGE |
+| `etapa_b` | Representación latente placeholder para la etapa C del procesamiento de Stable Cascade | LATENT |
 | `stage_b` | Representación latente placeholder para la etapa B del procesamiento de Stable Cascade | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/es.md)

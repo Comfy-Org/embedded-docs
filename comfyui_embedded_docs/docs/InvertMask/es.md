@@ -8,9 +8,10 @@ El nodo InvertMask está diseñado para invertir los valores de una máscara dad
 | --- | --- | --- |
 | `máscara` | El parámetro `máscara` representa la máscara de entrada que se va a invertir. Es crucial para determinar las áreas que se intercambiarán en el proceso de inversión. | MASK |
 
+## Salidas
 
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `mask` | La salida es una versión invertida de la máscara de entrada, donde las áreas previamente enmascaradas pasan a ser no enmascaradas y viceversa. | MASK |
+| `máscara` | La salida es una versión invertida de la máscara de entrada, donde las áreas previamente enmascaradas pasan a ser no enmascaradas y viceversa. | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertMask/es.md)

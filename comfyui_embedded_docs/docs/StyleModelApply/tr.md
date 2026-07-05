@@ -12,9 +12,10 @@ Bu düğüm, bir CLIP görme modelinin çıktısına dayanarak belirli bir koşu
 | `stil_modeli` | CLIP görme modelinin çıktısına dayanarak yeni koşullandırma oluşturmak için kullanılan stil modeli. Uygulanacak yeni stili tanımlamada anahtar rol oynar. | `STYLE_MODEL` |
 | `clip_görü_çıktısı` | Stil modelinin yeni koşullandırma oluşturmak için kullandığı bir CLIP görme modelinin çıktısı. Stil uygulaması için gerekli görsel bağlamı sağlar. | `CLIP_VISION_OUTPUT` |
 
+## Çıktılar
 
 | Parametre | Açıklama | Comfy veri türü |
 | --- | --- | --- |
-| `conditioning` | Stil modelinin çıktısını içeren, geliştirilmiş veya değiştirilmiş koşullandırma. Daha sonraki işlemlere veya üretime hazır, son halini almış, stillendirilmiş koşullandırmayı temsil eder. | `CONDITIONING` |
+| `koşullandırma` | Stil modelinin çıktısını içeren, geliştirilmiş veya değiştirilmiş koşullandırma. Daha sonraki işlemlere veya üretime hazır, son halini almış, stillendirilmiş koşullandırmayı temsil eder. | `CONDITIONING` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StyleModelApply/tr.md)

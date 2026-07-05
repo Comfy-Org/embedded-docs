@@ -9,10 +9,11 @@ El nodo ImageRotate rota una imagen de entrada según ángulos especificados. Ad
 | `imagen` | La imagen de entrada que se va a rotar | IMAGE | Sí | - |
 | `rotación` | El ángulo de rotación que se aplicará a la imagen (predeterminado: "none") | STRING | Sí | "none"<br>"90 degrees"<br>"180 degrees"<br>"270 degrees" |
 
+## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `image` | La imagen de salida rotada | IMAGE |
+| `imagen` | La imagen de salida rotada | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRotate/es.md)
 

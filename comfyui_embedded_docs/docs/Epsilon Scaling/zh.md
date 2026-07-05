@@ -9,10 +9,11 @@
 | `模型` | 将应用 epsilon scaling 补丁的模型。 | MODEL | 是 | - |
 | `系数` | 预测噪声的缩放因子。大于 1.0 的值会减少噪声，小于 1.0 的值则会增加噪声（默认值：1.005）。 | FLOAT | 否 | 0.5 - 1.5 |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `model` | 输入模型的补丁版本，其采样过程已应用 epsilon scaling 函数。 | MODEL |
+| `模型` | 输入模型的补丁版本，其采样过程已应用 epsilon scaling 函数。 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/zh.md)
 

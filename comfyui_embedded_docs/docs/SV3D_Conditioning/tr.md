@@ -14,11 +14,12 @@ SV3D_Conditioning düğümü, SV3D modelini kullanarak 3D video oluşturma için
 | `video_kareleri` | Video dizisi için oluşturulacak kare sayısı (varsayılan: 21) | INT | Hayır | 1 ile 4096 |
 | `yükseklik` | 3D görünüm için kamera yükseklik açısı (derece cinsinden) (varsayılan: 0.0) | FLOAT | Hayır | -90.0 ile 90.0 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Oluşturma için görüntü gömmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
-| `negative` | Karşılaştırmalı oluşturma için sıfırlanmış gömmelere sahip negatif koşullandırma verileri | CONDITIONING |
+| `negatif` | Oluşturma için görüntü gömmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
+| `gizli` | Karşılaştırmalı oluşturma için sıfırlanmış gömmelere sahip negatif koşullandırma verileri | CONDITIONING |
 | `latent` | Boyutları belirtilen video kareleri ve çözünürlükle eşleşen boş bir gizli tensör | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/tr.md)

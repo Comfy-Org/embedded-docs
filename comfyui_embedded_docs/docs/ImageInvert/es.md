@@ -8,9 +8,10 @@ El nodo `ImageInvert` está diseñado para invertir los colores de una imagen, t
 | --- | --- | --- |
 | `imagen` | El parámetro `imagen` representa la imagen de entrada que se va a invertir. Es fundamental para especificar la imagen objetivo cuyos colores se invertirán, afectando la ejecución del nodo y el resultado visual del proceso de inversión. | `IMAGE` |
 
+## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La salida es una versión invertida de la imagen de entrada, donde el valor de color de cada píxel se transforma a su color complementario. | `IMAGE` |
+| `imagen` | La salida es una versión invertida de la imagen de entrada, donde el valor de color de cada píxel se transforma a su color complementario. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageInvert/es.md)

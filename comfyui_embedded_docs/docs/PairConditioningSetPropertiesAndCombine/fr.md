@@ -18,10 +18,11 @@ Le nœud `PairConditioningSetPropertiesAndCombine` modifie et combine des paires
 | `crochets` | Groupe de hooks optionnel pour un contrôle avancé | HOOKS | Non | - |
 | `pas de temps` | Spécification optionnelle de la plage de pas de temps | TIMESTEPS_RANGE | Non | - |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | La sortie de conditionnement positif combinée | CONDITIONING |
+| `negative` | La sortie de conditionnement positif combinée | CONDITIONING |
 | `negative` | La sortie de conditionnement négatif combinée | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetPropertiesAndCombine/fr.md)

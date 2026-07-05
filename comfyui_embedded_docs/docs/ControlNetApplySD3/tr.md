@@ -17,11 +17,12 @@ Bu düğüm, Stable Diffusion 3 koşullandırmasına ControlNet yönlendirmesi u
 | `başlangıç_yüzdesi` | ControlNet'in uygulanmaya başladığı üretim sürecindeki başlangıç noktası (varsayılan: 0.0) | FLOAT | Evet | 0.0 - 1.0 |
 | `bitiş_yüzdesi` | ControlNet'in uygulanmasının durduğu üretim sürecindeki bitiş noktası (varsayılan: 1.0) | FLOAT | Evet | 0.0 - 1.0 |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negative` | ControlNet yönlendirmesi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `negatif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | ControlNet yönlendirmesi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/tr.md)
 

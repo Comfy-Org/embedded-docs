@@ -18,11 +18,12 @@
 | `خطافات` | مجموعة خطاف اختيارية للتحكم المتقدم | HOOKS | لا | - |
 | `خطوات الزمن` | مواصفات نطاق الخطوات الزمنية الاختيارية | TIMESTEPS_RANGE | لا | - |
 
+## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `positive` | مخرج التكييف الإيجابي المدمج | CONDITIONING |
-| `negative` | مخرج التكييف السلبي المدمج | CONDITIONING |
+| `سلبي` | مخرج التكييف الإيجابي المدمج | CONDITIONING |
+| `سلبي` | مخرج التكييف السلبي المدمج | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetPropertiesAndCombine/ar.md)
 

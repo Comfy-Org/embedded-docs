@@ -20,11 +20,12 @@ Le nœud HunyuanVideo15ImageToVideo prépare les données de conditionnement et 
 
 **Remarque :** Lorsqu'une `start_image` est fournie, elle est automatiquement redimensionnée pour correspondre à la `width` et à la `height` spécifiées à l'aide d'une interpolation bilinéaire. Les premières images du lot, correspondant à la valeur `length`, sont utilisées. L'image encodée est ensuite ajoutée au conditionnement `positive` et `negative` en tant que `concat_latent_image` avec un `concat_mask` correspondant. Le masque est défini sur 0,0 pour les images couvertes par l'image de départ et sur 1,0 pour les images restantes.
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Le conditionnement positif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
-| `negative` | Le conditionnement négatif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
+| `négatif` | Le conditionnement positif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
+| `latent` | Le conditionnement négatif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
 | `latent` | Un tenseur latent vide dont les dimensions sont configurées pour la taille de lot, la longueur vidéo, la largeur et la hauteur spécifiées. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/fr.md)

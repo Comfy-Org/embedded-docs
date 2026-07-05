@@ -9,10 +9,11 @@ Le nœud Set Hook Keyframes vous permet d'appliquer une planification d'images c
 | `crochets` | Le groupe de hooks auquel la planification d'images clés sera appliquée | HOOKS | Oui | - |
 | `crochet_kf` | Groupe d'images clés optionnel contenant les informations de temporisation pour l'exécution des hooks | HOOK_KEYFRAMES | Non | - |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `hooks` | Le groupe de hooks modifié avec la planification d'images clés appliquée (cloné si des images clés ont été fournies) | HOOKS |
+| `crochets` | Le groupe de hooks modifié avec la planification d'images clés appliquée (cloné si des images clés ont été fournies) | HOOKS |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetHookKeyframes/fr.md)
 

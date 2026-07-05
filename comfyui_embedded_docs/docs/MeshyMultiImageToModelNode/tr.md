@@ -26,12 +26,13 @@ Bu düğüm, birden fazla girdi görüntüsünden 3B model oluşturmak için Mes
 * `enable_pbr`, `texture_prompt` ve `texture_image` parametreleri yalnızca `should_texture` `"true"` olarak ayarlandığında etkindir.
 * `texture_prompt` ve `texture_image` aynı anda kullanılamaz; bunlar birbirini dışlayan seçeneklerdir.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_file` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `meshy_task_id` | Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
-| `GLB` | GLB formatında oluşturulan 3B model. | FILE3DGLB |
+| `meshy_task_id` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
+| `GLB` | Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
+| `FBX` | GLB formatında oluşturulan 3B model. | FILE3DGLB |
 | `FBX` | FBX formatında oluşturulan 3B model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/tr.md)

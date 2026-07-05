@@ -12,9 +12,10 @@ Le nœud CropMask est conçu pour découper une zone spécifiée à partir d'un 
 | `largeur` | La largeur définit l'étendue horizontale de la zone de découpage à partir du point de départ. | INT |
 | `hauteur` | La hauteur spécifie l'étendue verticale de la zone de découpage à partir du point de départ. | INT |
 
+## Sorties
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `mask` | La sortie est un masque découpé, qui correspond à une partie du masque original définie par les coordonnées et les dimensions spécifiées. | MASK |
+| `masque` | La sortie est un masque découpé, qui correspond à une partie du masque original définie par les coordonnées et les dimensions spécifiées. | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CropMask/fr.md)

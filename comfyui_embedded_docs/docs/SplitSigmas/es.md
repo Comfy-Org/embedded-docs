@@ -9,9 +9,10 @@ El nodo SplitSigmas está diseñado para dividir una secuencia de valores sigma 
 | `sigmas` | El parámetro 'sigmas' representa la secuencia de valores sigma que se va a dividir. Es esencial para determinar el punto de división y las dos secuencias resultantes de valores sigma, afectando la ejecución y los resultados del nodo. | `SIGMAS` |
 | `paso` | El parámetro 'step' especifica el índice en el cual se debe dividir la secuencia sigma. Desempeña un papel crítico en la definición del límite entre las dos secuencias sigma resultantes, influyendo en la funcionalidad del nodo y las características de la salida. | `INT` |
 
+## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `sigmas` | El nodo genera dos secuencias de valores sigma, cada una representando una parte de la secuencia original dividida en el paso especificado. Estas salidas son cruciales para operaciones posteriores que requieren un manejo diferenciado de los valores sigma. | `SIGMAS` |
+| `sigmas_bajos` | El nodo genera dos secuencias de valores sigma, cada una representando una parte de la secuencia original dividida en el paso especificado. Estas salidas son cruciales para operaciones posteriores que requieren un manejo diferenciado de los valores sigma. | `SIGMAS` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmas/es.md)

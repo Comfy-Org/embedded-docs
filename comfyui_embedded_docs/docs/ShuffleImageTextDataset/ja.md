@@ -12,10 +12,11 @@
 
 **注意：** `images` と `texts` の入力は、同じ長さのリストである必要があります。ノードは、最初の画像と最初のテキスト、2番目の画像と2番目のテキストをペアにしてから、これらのペアをまとめてシャッフルします。
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `images` | シャッフルされた画像のリスト。 | IMAGE |
+| `texts` | シャッフルされた画像のリスト。 | IMAGE |
 | `texts` | シャッフルされたテキストのリスト。画像との元のペアリングを維持します。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleImageTextDataset/ja.md)

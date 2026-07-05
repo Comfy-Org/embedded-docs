@@ -11,10 +11,11 @@ Le nœud WanMoveTracksFromCoords crée des trajectoires de mouvement à partir d
 
 **Remarque :** L'entrée `track_coords` attend une structure JSON spécifique. Il doit s'agir d'une liste de trajectoires, où chaque trajectoire est une liste d'images, et chaque image est un objet avec des coordonnées `x` et `y`. Le nombre d'images doit être cohérent pour toutes les trajectoires.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `tracks` | Les données de trajectoire générées, contenant les coordonnées du chemin et les informations de visibilité pour chaque trajectoire. | TRACKS |
+| `longueur_piste` | Les données de trajectoire générées, contenant les coordonnées du chemin et les informations de visibilité pour chaque trajectoire. | TRACKS |
 | `track_length` | Le nombre total d'images dans les trajectoires générées. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/fr.md)

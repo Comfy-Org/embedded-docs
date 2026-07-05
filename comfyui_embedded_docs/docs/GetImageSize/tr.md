@@ -10,11 +10,12 @@ GetImageSize düğümü, bir giriş görüntüsünden boyut ve toplu iş bilgile
 | --- | --- | --- | --- | --- |
 | `image` | Boyut bilgisinin çıkarılacağı giriş görüntüsü | IMAGE | Evet | - |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `width` | Giriş görüntüsünün piksel cinsinden genişliği | INT |
-| `height` | Giriş görüntüsünün piksel cinsinden yüksekliği | INT |
+| `yükseklik` | Giriş görüntüsünün piksel cinsinden genişliği | INT |
+| `toplu_boyut` | Giriş görüntüsünün piksel cinsinden yüksekliği | INT |
 | `batch_size` | Toplu işteki görüntü sayısı | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetImageSize/tr.md)

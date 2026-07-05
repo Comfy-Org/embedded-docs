@@ -9,9 +9,10 @@
 | `图像` | 要与 Alpha 蒙版结合的主要视觉内容。表示不含透明度信息的图像。 | `IMAGE` |
 | `阿尔法` | 定义对应图像透明度的 Alpha 蒙版。用于确定图像中哪些部分应为透明或半透明。 | `MASK` |
 
+## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `image` | 输出为单一图像，将输入图像与 Alpha 蒙版合并，将透明度信息融入视觉内容中。 | `IMAGE` |
+| `图像` | 输出为单一图像，将输入图像与 Alpha 蒙版合并，将透明度信息融入视觉内容中。 | `IMAGE` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/JoinImageWithAlpha/zh.md)

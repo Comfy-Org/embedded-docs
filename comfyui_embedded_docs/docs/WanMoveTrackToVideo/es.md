@@ -20,11 +20,12 @@ El nodo WanMoveTrackToVideo prepara datos de condicionamiento y espacio latente 
 
 **Nota:** El parámetro `strength` solo tiene efecto cuando se proporcionan `tracks`. Si no se proporcionan `tracks` o `strength` es 0.0, el condicionamiento de seguimiento no se aplica. La `start_image` se utiliza para crear una imagen latente y una máscara para el condicionamiento; si no se proporciona, el nodo solo transmite el condicionamiento y genera un latente vacío.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | El condicionamiento positivo modificado, que potencialmente contiene `concat_latent_image`, `concat_mask` y `clip_vision_output`. | CONDITIONING |
-| `negative` | El condicionamiento negativo modificado, que potencialmente contiene `concat_latent_image`, `concat_mask` y `clip_vision_output`. | CONDITIONING |
+| `negativo` | El condicionamiento positivo modificado, que potencialmente contiene `concat_latent_image`, `concat_mask` y `clip_vision_output`. | CONDITIONING |
+| `latente` | El condicionamiento negativo modificado, que potencialmente contiene `concat_latent_image`, `concat_mask` y `clip_vision_output`. | CONDITIONING |
 | `latent` | Un tensor latente vacío con dimensiones determinadas por las entradas `tamaño_lote`, `longitud`, `alto` y `ancho`. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/es.md)

@@ -10,10 +10,11 @@
 
 **注意：** 此节点配置为组处理模式（`is_group_process = True`），这意味着它会在主处理函数运行前自动将多个列表输入拼接在一起。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `texts` | 包含所有输入文本的单个合并列表。 | STRING |
+| `文本` | 包含所有输入文本的单个合并列表。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeTextLists/zh.md)
 

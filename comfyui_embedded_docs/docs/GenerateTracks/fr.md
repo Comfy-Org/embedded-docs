@@ -23,10 +23,11 @@ Le nœud `GenerateTracks` crée plusieurs trajectoires de mouvement parallèles 
 
 **Remarque :** Les paramètres `mid_x` et `mid_y` sont utilisés uniquement lorsque le paramètre `bezier` est défini sur `True`. Lorsque `bezier` est `False`, le chemin est une ligne droite du point de départ au point d'arrivée.
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `TRACKS` | Un objet pistes contenant les coordonnées du chemin généré et les informations de visibilité pour toutes les pistes sur toutes les images. | TRACKS |
+| `longueur_de_piste` | Un objet pistes contenant les coordonnées du chemin généré et les informations de visibilité pour toutes les pistes sur toutes les images. | TRACKS |
 | `track_length` | Le nombre d'images pour lesquelles les pistes ont été générées, correspondant à la valeur d'entrée `nombre_d_images`. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GenerateTracks/fr.md)

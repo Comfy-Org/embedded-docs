@@ -11,9 +11,10 @@ Ce nœud est conçu pour intégrer les sorties de la vision CLIP dans le process
 | `force` | Détermine l'intensité de l'influence de la sortie de la vision CLIP sur le conditionnement. | `FLOAT` |
 | `augmentation_bruit` | Spécifie le niveau d'augmentation du bruit à appliquer à la sortie de la vision CLIP avant de l'intégrer dans le conditionnement. | `FLOAT` |
 
+## Sorties
 
 | Paramètre | Description | Type Comfy |
 | --- | --- | --- |
-| `conditioning` | Les données de conditionnement enrichies, contenant désormais les sorties intégrées de la vision CLIP avec la force et l'augmentation du bruit appliquées. | `CONDITIONING` |
+| `conditionnement` | Les données de conditionnement enrichies, contenant désormais les sorties intégrées de la vision CLIP avec la force et l'augmentation du bruit appliquées. | `CONDITIONING` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/fr.md)

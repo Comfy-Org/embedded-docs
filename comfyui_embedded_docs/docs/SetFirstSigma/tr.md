@@ -9,10 +9,11 @@ SetFirstSigma düğümü, bir sigma değerleri dizisini, dizideki ilk sigma değ
 | `sigmalar` | Değiştirilecek sigma değerlerinin girdi dizisi | SIGMAS | Evet | - |
 | `sigma` | Dizide ilk öğe olarak ayarlanacak yeni sigma değeri (varsayılan: 136,0) | FLOAT | Evet | 0,0 ile 20000,0 arası |
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `sigmas` | İlk öğesi özel sigma değeriyle değiştirilmiş, değiştirilmiş sigma dizisi | SIGMAS |
+| `sigmalar` | İlk öğesi özel sigma değeriyle değiştirilmiş, değiştirilmiş sigma dizisi | SIGMAS |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetFirstSigma/tr.md)
 

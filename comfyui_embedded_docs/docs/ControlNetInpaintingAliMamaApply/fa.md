@@ -20,11 +20,12 @@
 
 **توجه:** هنگامی که ControlNet گزینه `concat_mask` را فعال داشته باشد، ماسک معکوس شده و قبل از پردازش روی تصویر اعمال می‌شود، و ماسک در داده‌های الحاقی اضافی که به ControlNet ارسال می‌شود گنجانده می‌شود.
 
+## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `positive` | شرط‌گذاری مثبت اصلاح‌شده با ControlNet اعمال‌شده برای نقاشی‌سازی | CONDITIONING |
-| `negative` | شرط‌گذاری منفی اصلاح‌شده با ControlNet اعمال‌شده برای نقاشی‌سازی | CONDITIONING |
+| `مثبت` | شرط‌گذاری مثبت اصلاح‌شده با ControlNet اعمال‌شده برای نقاشی‌سازی | CONDITIONING |
+| `منفی` | شرط‌گذاری منفی اصلاح‌شده با ControlNet اعمال‌شده برای نقاشی‌سازی | CONDITIONING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/fa.md)
 

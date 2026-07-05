@@ -9,10 +9,11 @@ Le nœud ThresholdMask convertit un masque en un masque binaire en appliquant un
 | `masque` | Le masque d'entrée à traiter | MASK | Oui | - |
 | `valeur` | La valeur de seuil pour la binarisation (par défaut : 0,5) | FLOAT | Oui | 0,0 - 1,0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `mask` | Le masque binaire résultant après application du seuil | MASK |
+| `masque` | Le masque binaire résultant après application du seuil | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ThresholdMask/fr.md)
 

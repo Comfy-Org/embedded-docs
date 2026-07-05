@@ -12,10 +12,11 @@ Le nœud Self-Attention Guidance applique un guidage aux modèles de diffusion e
 | `échelle` | La force de l'effet de guidage par auto-attention (par défaut : 0.5) | FLOAT | Non | -2.0 à 5.0 |
 | `blur_sigma` | La quantité de flou appliquée pour créer la carte de guidage (par défaut : 2.0) | FLOAT | Non | 0.0 à 10.0 |
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec le guidage par auto-attention appliqué | MODEL |
+| `modèle` | Le modèle modifié avec le guidage par auto-attention appliqué | MODEL |
 
 **Remarque :** Ce nœud est actuellement expérimental et présente des limitations avec les lots fragmentés. Il ne peut sauvegarder les scores d'attention que d'un seul appel UNet et peut ne pas fonctionner correctement avec des tailles de lots plus importantes.
 

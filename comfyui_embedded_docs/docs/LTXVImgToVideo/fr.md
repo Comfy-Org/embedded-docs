@@ -16,11 +16,12 @@ Le nœud LTXVImgToVideo convertit une image d'entrée en une représentation lat
 | `batch_size` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Non | 1 à 4096 |
 | `force` | Contrôle de la part du contenu de l'image d'origine préservée dans la première image de la vidéo générée. Une valeur de 1.0 préserve intégralement l'image d'origine, tandis que 0.0 permet une modification maximale (par défaut : 1.0) | FLOAT | Non | 0.0 à 1.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Conditionnement positif traité avec masquage d'image vidéo appliqué | CONDITIONING |
-| `negative` | Conditionnement négatif traité avec masquage d'image vidéo appliqué | CONDITIONING |
+| `negative` | Conditionnement positif traité avec masquage d'image vidéo appliqué | CONDITIONING |
+| `latent` | Conditionnement négatif traité avec masquage d'image vidéo appliqué | CONDITIONING |
 | `latent` | Représentation latente vidéo contenant les images encodées et le masque de bruit pour la génération vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/fr.md)

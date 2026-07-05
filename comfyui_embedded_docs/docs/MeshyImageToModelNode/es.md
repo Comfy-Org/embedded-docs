@@ -25,12 +25,13 @@ El nodo **Meshy: Imagen a Modelo** utiliza la API de Meshy para generar un model
 * Las entradas `enable_pbr`, `texture_prompt` y `texture_image` solo están disponibles cuando `should_texture` está configurado en `"true"`.
 * No se pueden usar `texture_prompt` y `texture_image` al mismo tiempo. Si ambos se proporcionan cuando `should_texture` es `"true"`, el nodo generará un error.
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model_file` | El nombre del archivo del modelo GLB generado. (Se mantiene para compatibilidad hacia atrás). | STRING |
-| `meshy_task_id` | El identificador único para la tarea de la API de Meshy, que se puede usar como referencia o para solucionar problemas. | MESHY_TASK_ID |
-| `GLB` | El modelo 3D generado en formato de archivo GLB. | FILE3DGLB |
+| `meshy_task_id` | El nombre del archivo del modelo GLB generado. (Se mantiene para compatibilidad hacia atrás). | STRING |
+| `GLB` | El identificador único para la tarea de la API de Meshy, que se puede usar como referencia o para solucionar problemas. | MESHY_TASK_ID |
+| `FBX` | El modelo 3D generado en formato de archivo GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D generado en formato de archivo FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/es.md)

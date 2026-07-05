@@ -17,10 +17,11 @@
 
 **注意：** `low_gain_dB`、`mid_gain_dB` 和 `high_gain_dB` 参数仅在其值不为零时生效。如果增益设置为 0.0，则跳过相应的滤波器级。
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `audio` | 经过均衡处理后的音频数据，包含修改后的波形和原始采样率。 | AUDIO |
+| `音频` | 经过均衡处理后的音频数据，包含修改后的波形和原始采样率。 | AUDIO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEqualizer3Band/zh.md)
 

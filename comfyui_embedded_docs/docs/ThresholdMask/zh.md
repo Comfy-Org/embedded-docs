@@ -9,10 +9,11 @@ ThresholdMask 节点通过应用阈值将掩码转换为二值掩码。它将输
 | `遮罩` | 待处理的输入掩码 | MASK | 是 | - |
 | `值` | 二值化的阈值（默认值：0.5） | FLOAT | 是 | 0.0 - 1.0 |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `mask` | 经过阈值处理后的二值掩码结果 | MASK |
+| `遮罩` | 经过阈值处理后的二值掩码结果 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ThresholdMask/zh.md)
 

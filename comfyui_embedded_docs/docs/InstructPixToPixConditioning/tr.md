@@ -13,11 +13,12 @@ InstructPixToPixConditioning düğümü, pozitif ve negatif metin yönlendirmele
 
 **Not:** Giriş görüntüsü boyutları, VAE kodlama süreciyle uyumluluğu sağlamak için genişlik ve yükseklikte en yakın 8 piksel katına kırpılarak otomatik olarak ayarlanır.
 
+## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `positive` | Eklenmiş gizli görüntü temsili ile pozitif koşullandırma verileri | CONDITIONING |
-| `negative` | Eklenmiş gizli görüntü temsili ile negatif koşullandırma verileri | CONDITIONING |
+| `negatif` | Eklenmiş gizli görüntü temsili ile pozitif koşullandırma verileri | CONDITIONING |
+| `gizli` | Eklenmiş gizli görüntü temsili ile negatif koşullandırma verileri | CONDITIONING |
 | `latent` | Kodlanmış görüntü ile aynı boyutlara sahip boş gizli tensör | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/tr.md)

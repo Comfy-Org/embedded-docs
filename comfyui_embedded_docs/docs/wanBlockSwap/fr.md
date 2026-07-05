@@ -8,10 +8,11 @@ Ce nœud est obsolète et ne remplit aucune fonction. Il accepte un modèle en e
 | --- | --- | --- | --- | --- |
 | `modèle` | Le modèle à faire passer à travers le nœud. | MODEL | Oui |  |
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le même modèle que celui fourni en entrée, inchangé. | MODEL |
+| `modèle` | Le même modèle que celui fourni en entrée, inchangé. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/wanBlockSwap/fr.md)
 

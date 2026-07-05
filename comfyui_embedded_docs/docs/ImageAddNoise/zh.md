@@ -10,10 +10,11 @@ ImageAddNoise 节点用于向输入图像添加随机噪声。它使用指定的
 | `种子` | 用于生成噪声的随机种子（默认值：0） | INT | 是 | 0 到 18446744073709551615 |
 | `强度` | 控制噪声效果的强度（默认值：0.5） | FLOAT | 是 | 0.0 到 1.0 |
 
+## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `image` | 已添加噪声的输出图像 | IMAGE |
+| `图像` | 已添加噪声的输出图像 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageAddNoise/zh.md)
 

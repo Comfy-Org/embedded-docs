@@ -12,10 +12,11 @@ El nodo SkipLayerGuidanceSD3 mejora la guía hacia una estructura detallada apli
 | `porcentaje_inicio` | El punto de inicio de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.01) | FLOAT | Sí | 0.0 - 1.0 |
 | `porcentaje_final` | El punto final de la aplicación de la guía como porcentaje del total de pasos (predeterminado: 0.15) | FLOAT | Sí | 0.0 - 1.0 |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `model` | El modelo modificado con la guía de capas omitidas aplicada | MODEL |
+| `modelo` | El modelo modificado con la guía de capas omitidas aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceSD3/es.md)
 

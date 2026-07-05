@@ -16,11 +16,12 @@ Le nœud **SVD_img2vid_Conditioning** prépare les données de conditionnement p
 | `fps` | Images par seconde pour la vidéo générée (par défaut : 6) | INT | Oui | 1 à 1024 |
 | `niveau_d'augmentation` | Niveau d'augmentation du bruit à appliquer à l'image d'entrée (par défaut : 0,0, pas : 0,01) | FLOAT | Oui | 0,0 à 10,0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Données de conditionnement positives contenant les embeddings d'image et les paramètres vidéo | CONDITIONING |
-| `negative` | Données de conditionnement négatives avec des embeddings et paramètres vidéo mis à zéro | CONDITIONING |
+| `négatif` | Données de conditionnement positives contenant les embeddings d'image et les paramètres vidéo | CONDITIONING |
+| `latent` | Données de conditionnement négatives avec des embeddings et paramètres vidéo mis à zéro | CONDITIONING |
 | `latent` | Tenseur d'espace latent vide prêt pour la génération vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SVD_img2vid_Conditioning/fr.md)

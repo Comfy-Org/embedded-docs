@@ -18,10 +18,11 @@ ScaleROPEノードを使用すると、モデルのRotary Position Embedding（R
 | `時間軸スケール` | ROPEのT（時間）コンポーネントに適用するスケーリング係数（デフォルト：1.0）。 | FLOAT | いいえ | 0.0 - 100.0 |
 | `時間軸シフト` | ROPEのT（時間）コンポーネントに適用するシフト値（デフォルト：0.0）。 | FLOAT | いいえ | -256.0 - 256.0 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `model` | 新しいROPEスケーリングおよびシフトパラメータが適用されたモデル。 | MODEL |
+| `モデル` | 新しいROPEスケーリングおよびシフトパラメータが適用されたモデル。 | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/ja.md)
 

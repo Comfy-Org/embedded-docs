@@ -12,10 +12,11 @@
 | `操作` | 適用する形態変換処理（デフォルト："erode"） | STRING | はい | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` |
 | `カーネルサイズ` | 構造要素カーネルのサイズ（デフォルト：3）。奇数である必要があります。 | INT | はい | 3-999 |
 
+## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `image` | 形態変換処理を適用した後の処理済み画像 | IMAGE |
+| `画像` | 形態変換処理を適用した後の処理済み画像 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Morphology/ja.md)
 

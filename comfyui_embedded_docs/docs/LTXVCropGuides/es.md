@@ -10,12 +10,13 @@ El nodo LTXVCropGuides procesa entradas de condicionamiento y latentes para la g
 | `negativo` | La entrada de condicionamiento negativo que contiene información sobre qué evitar en la generación | CONDITIONING | Sí | - |
 | `latente` | La representación latente que contiene muestras de imagen y datos de máscara de ruido | LATENT | Sí | - |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `positive` | El condicionamiento positivo procesado con índices de fotogramas clave y entradas de atención guía limpiadas | CONDITIONING |
-| `negative` | El condicionamiento negativo procesado con índices de fotogramas clave y entradas de atención guía limpiadas | CONDITIONING |
-| `latent` | La representación latente recortada con muestras y máscara de ruido ajustadas, donde se han eliminado las secciones de fotogramas clave | LATENT |
+| `negativo` | El condicionamiento positivo procesado con índices de fotogramas clave y entradas de atención guía limpiadas | CONDITIONING |
+| `latente` | El condicionamiento negativo procesado con índices de fotogramas clave y entradas de atención guía limpiadas | CONDITIONING |
+| `latente` | La representación latente recortada con muestras y máscara de ruido ajustadas, donde se han eliminado las secciones de fotogramas clave | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVCropGuides/es.md)
 

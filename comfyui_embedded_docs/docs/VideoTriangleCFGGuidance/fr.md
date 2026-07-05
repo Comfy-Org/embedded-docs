@@ -9,10 +9,11 @@ Le nœud **VideoTriangleCFGGuidance** applique un motif d'échelle de guidage CF
 | `modèle` | Le modèle vidéo auquel appliquer le guidage CFG triangulaire | MODEL | Oui | - |
 | `min_cfg` | La valeur d'échelle CFG minimale pour le motif triangulaire (par défaut : 1.0) | FLOAT | Oui | 0.0 - 100.0 |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `model` | Le modèle modifié avec le guidage CFG triangulaire appliqué | MODEL |
+| `modèle` | Le modèle modifié avec le guidage CFG triangulaire appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTriangleCFGGuidance/fr.md)
 

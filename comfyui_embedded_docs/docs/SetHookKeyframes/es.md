@@ -9,10 +9,11 @@ El nodo Set Hook Keyframes permite aplicar programación de fotogramas clave a g
 | `ganchos` | El grupo de hooks al que se aplicará la programación de fotogramas clave | HOOKS | Sí | - |
 | `gancho_kf` | Grupo opcional de fotogramas clave que contiene información de temporización para la ejecución de hooks | HOOK_KEYFRAMES | No | - |
 
+## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `hooks` | El grupo de hooks modificado con la programación de fotogramas clave aplicada (clonado si se proporcionaron fotogramas clave) | HOOKS |
+| `ganchos` | El grupo de hooks modificado con la programación de fotogramas clave aplicada (clonado si se proporcionaron fotogramas clave) | HOOKS |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetHookKeyframes/es.md)
 

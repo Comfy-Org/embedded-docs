@@ -11,10 +11,11 @@ L'éditeur de courbe fournit une interface visuelle pour ajuster et affiner une 
 | `courbe` | La courbe d'entrée à éditer. | CURVE | Oui | N/D |
 | `histogramme` | Un histogramme optionnel à afficher aux côtés de la courbe pour référence visuelle. | HISTOGRAM | Non | N/D |
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `curve` | La courbe éditée après les ajustements effectués dans l'interface du nœud. | CURVE |
+| `courbe` | La courbe éditée après les ajustements effectués dans l'interface du nœud. | CURVE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CurveEditor/fr.md)
 

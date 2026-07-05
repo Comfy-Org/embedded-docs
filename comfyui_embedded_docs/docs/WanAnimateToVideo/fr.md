@@ -36,15 +36,16 @@ Le nœud WanAnimateToVideo génère du contenu vidéo en combinant plusieurs ent
 - Si `reference_image` n'est pas fourni, une image noire (tous les zéros) est utilisée comme référence par défaut
 - Si `continue_motion` n'est pas fourni, les images initiales sont remplies avec un bruit gris (intensité 0,5)
 
+## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Conditionnement positif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale, l'image latente concaténée et le masque concaténé | CONDITIONING |
-| `negative` | Conditionnement négatif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale (inversés), l'image latente concaténée et le masque concaténé | CONDITIONING |
-| `latent` | Contenu vidéo généré au format d'espace latent avec la forme [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
-| `trim_latent` | Informations de rognage dans l'espace latent indiquant le nombre d'images latentes à rogner depuis le début (correspond aux images latentes de l'image de référence) | INT |
-| `trim_image` | Informations de rognage dans l'espace image pour les images de mouvement de référence, indiquant le nombre d'images à rogner depuis le début | INT |
-| `video_frame_offset` | Décalage d'images mis à jour pour poursuivre la génération vidéo par segments, calculé comme le décalage précédent plus la longueur générée | INT |
+| `négatif` | Conditionnement positif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale, l'image latente concaténée et le masque concaténé | CONDITIONING |
+| `latent` | Conditionnement négatif modifié avec contexte vidéo supplémentaire incluant la sortie de vision CLIP, le latent de la vidéo de pose, les pixels de la vidéo faciale (inversés), l'image latente concaténée et le masque concaténé | CONDITIONING |
+| `latent_rogné` | Contenu vidéo généré au format d'espace latent avec la forme [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
+| `image_rognée` | Informations de rognage dans l'espace latent indiquant le nombre d'images latentes à rogner depuis le début (correspond aux images latentes de l'image de référence) | INT |
+| `décalage de trame vidéo` | Informations de rognage dans l'espace image pour les images de mouvement de référence, indiquant le nombre d'images à rogner depuis le début | INT |
+| `décalage_image_vidéo` | Décalage d'images mis à jour pour poursuivre la génération vidéo par segments, calculé comme le décalage précédent plus la longueur générée | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanAnimateToVideo/fr.md)
 

@@ -20,11 +20,12 @@
 
 **ملاحظة:** معامل `strength` له تأثير فقط عند توفير `tracks`. إذا لم يتم توفير `tracks` أو كانت قيمة `strength` تساوي 0.0، فلن يتم تطبيق تكييف المسار. تُستخدم `start_image` لإنشاء صورة كامنة وقناع للتكييف؛ إذا لم يتم توفيرها، تقوم العقدة فقط بتمرير التكييف وإخراج كامن فارغ.
 
+## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `positive` | التكييف الإيجابي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
-| `negative` | التكييف السلبي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
+| `سلبي` | التكييف الإيجابي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
+| `كامنة` | التكييف السلبي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
 | `latent` | موتر كامن فارغ بأبعاد محددة بواسطة مدخلات `حجم الدفعة` و`الطول` و`الارتفاع` و`العرض`. | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/ar.md)

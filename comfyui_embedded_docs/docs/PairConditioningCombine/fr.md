@@ -11,10 +11,11 @@ Le nœud **PairConditioningCombine** fusionne deux paires de conditionnement dis
 | `positive_B` | Deuxième entrée de conditionnement positif | CONDITIONING | Oui | - |
 | `negative_B` | Deuxième entrée de conditionnement négatif | CONDITIONING | Oui | - |
 
+## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positive` | Sortie de conditionnement positif combiné | CONDITIONING |
+| `negative` | Sortie de conditionnement positif combiné | CONDITIONING |
 | `negative` | Sortie de conditionnement négatif combiné | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningCombine/fr.md)
