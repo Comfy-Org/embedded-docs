@@ -9,11 +9,10 @@ Le nœud TomePatchModel applique la technique de fusion de tokens (ToMe) à un m
 | `modèle` | Le modèle de diffusion auquel appliquer la fusion de tokens | MODEL | Oui | - |
 | `ratio` | Le ratio de tokens à fusionner (par défaut : 0.3) | FLOAT | Non | 0.0 - 1.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec la fusion de tokens appliquée | MODEL |
+| `model` | Le modèle modifié avec la fusion de tokens appliquée | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TomePatchModel/fr.md)
 

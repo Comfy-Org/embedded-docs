@@ -13,12 +13,11 @@ Bu düğüm, daha uzun bir video oluşturma sürecinin belirli bir bölümü iç
 | `segment_indeksi` | Bu bölümün hangi bölüm olduğu (0 ilk, 1 ikinci, vb., varsayılan: 0). | INT | Evet | 0 ila 100 |
 | `ses` | Toplam çıktı karelerini hesaplamak ve bölüm sesini çıkarmak için kullanılacak ses. | AUDIO | Evet | Ses verisi |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `anahtar_kare_maskesi` | Belirtilen bölüm için doldurulmuş ana kare dizisi. | IMAGE |
-| `ses_segmenti` | Geçerli kareleri gösteren maske (ana kare konumları için 1, doldurulmuş konumlar için 0). | MASK |
+| `keyframes_sequence` | Belirtilen bölüm için doldurulmuş ana kare dizisi. | IMAGE |
+| `keyframes_mask` | Geçerli kareleri gösteren maske (ana kare konumları için 1, doldurulmuş konumlar için 0). | MASK |
 | `audio_segment` | Bu video bölümü için ses bölümü. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/tr.md)

@@ -10,11 +10,10 @@ Este nodo carga un conjunto de datos de imágenes y sus correspondientes leyenda
 
 **Nota:** El nodo espera una estructura de archivos específica. Para cada archivo de imagen (`.png`, `.jpg`, `.jpeg`, `.webp`), buscará un archivo `.txt` con el mismo nombre para usarlo como leyenda. Si no se encuentra un archivo de leyenda, se utiliza una cadena vacía. El nodo también admite una estructura especial donde el nombre de una subcarpeta comienza con un número y un guion bajo (por ejemplo, `5_gatos`), lo que hará que todas las imágenes dentro de esa subcarpeta se repitan esa cantidad de veces en la lista de salida final.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `texts` | Una lista de tensores de imágenes cargadas. | IMAGE |
+| `images` | Una lista de tensores de imágenes cargadas. | IMAGE |
 | `texts` | Una lista de leyendas de texto correspondientes a cada imagen cargada. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/es.md)

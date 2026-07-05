@@ -23,11 +23,10 @@
 
 **注意：** `mid_x` 和 `mid_y` 参数仅在 `bezier` 参数设置为 `True` 时使用。当 `bezier` 为 `False` 时，路径为从起点到终点的直线。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `轨迹长度` | 一个轨道对象，包含所有帧中所有轨道的生成路径坐标和可见性信息。 | TRACKS |
+| `TRACKS` | 一个轨道对象，包含所有帧中所有轨道的生成路径坐标和可见性信息。 | TRACKS |
 | `track_length` | 生成轨道的帧数，与输入的 `帧数` 一致。 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GenerateTracks/zh.md)

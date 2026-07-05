@@ -9,11 +9,10 @@ Le nœud PerturbedAttentionGuidance applique un guidage par attention perturbée
 | `modèle` | Le modèle de diffusion auquel appliquer le guidage par attention perturbée | MODEL | Oui | - |
 | `échelle` | L'intensité de l'effet de guidage par attention perturbée (par défaut : 3,0). Lorsqu'elle est définie sur 0, le nœud n'a aucun effet et renvoie le résultat de débruitage d'origine. | FLOAT | Non | 0,0 - 100,0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec le guidage par attention perturbée appliqué | MODEL |
+| `model` | Le modèle modifié avec le guidage par attention perturbée appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/fr.md)
 

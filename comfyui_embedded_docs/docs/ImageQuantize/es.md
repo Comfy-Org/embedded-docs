@@ -10,10 +10,9 @@ El nodo ImageQuantize está diseñado para reducir la cantidad de colores en una
 | `colores` | Especifica la cantidad de colores a los que se reducirá la imagen. Influye directamente en el proceso de cuantización al determinar el tamaño de la paleta de colores. | `INT` |
 | `difuminado` | Determina la técnica de tramado que se aplicará durante la cuantización, afectando la calidad visual y la apariencia de la imagen de salida. | COMBO[STRING] |
 
-## Salidas
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La versión cuantizada de la imagen de entrada, con complejidad cromática reducida y opcionalmente tramada para mantener la calidad visual. | `IMAGE` |
+| `image` | La versión cuantizada de la imagen de entrada, con complejidad cromática reducida y opcionalmente tramada para mantener la calidad visual. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageQuantize/es.md)

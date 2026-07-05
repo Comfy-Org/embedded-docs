@@ -9,10 +9,9 @@ Este nodo está diseñado para operaciones de composición, específicamente par
 | `imagen` | El contenido visual principal que se combinará con una máscara alfa. Representa la imagen sin información de transparencia. | `IMAGE` |
 | `alfa` | La máscara alfa que define la transparencia de la imagen correspondiente. Se utiliza para determinar qué partes de la imagen deben ser transparentes o semitransparentes. | `MASK` |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La salida es una única imagen que combina la imagen de entrada con la máscara alfa, incorporando información de transparencia en el contenido visual. | `IMAGE` |
+| `image` | La salida es una única imagen que combina la imagen de entrada con la máscara alfa, incorporando información de transparencia en el contenido visual. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/JoinImageWithAlpha/es.md)

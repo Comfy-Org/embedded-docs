@@ -21,11 +21,10 @@
   - `"HDR"` — girdi HLG kodlu Rec.2020'dir (BT.2100); sahne-doğrusal ışık elde etmek için ters HLG OETF uygulanır.
   - `"linear"` — girdi zaten sahne-doğrusaldır (Rec.709 birincil renkler); değiştirilmeden yazılır. İşleyici/birleştirici çıktısı için kullanın.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntüler` | Her biri dosya adı, alt klasör ve tür ("output") içeren kaydedilmiş görüntü sonuçlarının listesi. Bu çıktı, kullanıcı arayüzü görüntüleme amaçları için kullanılır. | IMAGE |
+| `images` | Her biri dosya adı, alt klasör ve tür ("output") içeren kaydedilmiş görüntü sonuçlarının listesi. Bu çıktı, kullanıcı arayüzü görüntüleme amaçları için kullanılır. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/tr.md)
 

@@ -12,11 +12,10 @@ SaveLoRA 节点用于将 LoRA（低秩适配）模型保存到文件。它接收
 
 **注意：** `lora` 输入必须是纯粹的 LoRA 模型。请勿提供已应用 LoRA 层的基础模型。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| *无* | 此节点不会向工作流输出任何数据。它是一个输出节点，用于将文件保存到磁盘。 | 不适用 |
+| *None* | 此节点不会向工作流输出任何数据。它是一个输出节点，用于将文件保存到磁盘。 | 不适用 |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRA/zh.md)
 

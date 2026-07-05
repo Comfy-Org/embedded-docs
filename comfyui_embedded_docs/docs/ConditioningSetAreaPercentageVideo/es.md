@@ -15,11 +15,10 @@ El nodo `ConditioningSetAreaPercentageVideo` modifica los datos de condicionamie
 | `z` | La posición temporal inicial del área como porcentaje de la línea de tiempo del video | FLOAT | Requerido | 0.0 | 0.0 - 1.0 |
 | `fuerza` | El multiplicador de intensidad aplicado al condicionamiento dentro del área definida | FLOAT | Requerido | 1.0 | 0.0 - 10.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `acondicionamiento` | Los datos de condicionamiento modificados con el área y la configuración de intensidad especificadas aplicadas | CONDITIONING |
+| `conditioning` | Los datos de condicionamiento modificados con el área y la configuración de intensidad especificadas aplicadas | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentageVideo/es.md)
 

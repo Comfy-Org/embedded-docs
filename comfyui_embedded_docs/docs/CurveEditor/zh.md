@@ -9,11 +9,10 @@
 | `曲线` | 待编辑的输入曲线。 | CURVE | 是 | 无 |
 | `直方图` | 可选的直方图，与曲线一同显示以提供视觉参考。 | HISTOGRAM | 否 | 无 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `曲线` | 在节点界面中调整后输出的编辑曲线。 | CURVE |
+| `curve` | 在节点界面中调整后输出的编辑曲线。 | CURVE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CurveEditor/zh.md)
 

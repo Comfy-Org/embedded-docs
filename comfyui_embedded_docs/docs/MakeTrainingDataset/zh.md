@@ -15,11 +15,10 @@
 
 * `texts` 列表中的项目数量必须为 0、1 或与 `images` 列表中的项目数量完全一致。若为 0，则所有图像使用空字符串；若为 1，则对所有图像重复使用该单一文本。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `条件` | 潜在字典列表。 | LATENT |
+| `latents` | 潜在字典列表。 | LATENT |
 | `conditioning` | 条件列表的列表。 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/zh.md)

@@ -12,11 +12,10 @@ FreeUノードは、モデルの出力ブロックに周波数領域の変更を
 | `s1` | model_channels × 4 特徴量に対するスキップ接続スケーリング係数（デフォルト：0.9） | FLOAT | はい | 0.0 - 10.0 |
 | `s2` | model_channels × 2 特徴量に対するスキップ接続スケーリング係数（デフォルト：0.2） | FLOAT | はい | 0.0 - 10.0 |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | FreeUパッチが適用された変更後のモデル | MODEL |
+| `model` | FreeUパッチが適用された変更後のモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU/ja.md)
 

@@ -11,11 +11,10 @@ Le nœud ModelSamplingLTXV applique des paramètres d'échantillonnage avancés 
 | `décalage_base` | La valeur de décalage de base utilisée dans le calcul d'interpolation linéaire (par défaut : 0,95) | FLOAT | Oui | 0,0 à 100,0 |
 | `latent` | Entrée latente facultative utilisée pour déterminer le nombre de jetons pour le calcul du décalage. Si elle n'est pas fournie, un nombre de jetons par défaut de 4096 est utilisé | LATENT | Non | - |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec les paramètres d'échantillonnage appliqués | MODEL |
+| `model` | Le modèle modifié avec les paramètres d'échantillonnage appliqués | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingLTXV/fr.md)
 

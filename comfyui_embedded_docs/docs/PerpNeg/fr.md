@@ -12,11 +12,10 @@ Le nœud PerpNeg applique un guidage négatif perpendiculaire au processus d'éc
 | `conditionnement vide` | Conditionnement vide utilisé pour les calculs de guidage négatif | CONDITIONING | Oui | - |
 | `échelle nég` | Facteur d'échelle pour le guidage négatif (par défaut : 1.0) | FLOAT | Non | 0.0 - 100.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec le guidage négatif perpendiculaire appliqué | MODEL |
+| `model` | Le modèle modifié avec le guidage négatif perpendiculaire appliqué | MODEL |
 
 **Remarque** : Ce nœud est déprécié et a été remplacé par PerpNegGuider. Il est marqué comme expérimental et ne doit pas être utilisé dans des flux de production.
 

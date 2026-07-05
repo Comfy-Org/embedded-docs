@@ -20,12 +20,11 @@ WanFirstLastFrameToVideo düğümü, başlangıç ve bitiş karelerini metin ist
 
 **Not:** Hem `start_image` hem de `end_image` sağlandığında, düğüm bu iki kare arasında geçiş yapan bir video dizisi oluşturur. `clip_vision_start_image` ve `clip_vision_end_image` parametreleri isteğe bağlıdır ancak sağlandıklarında, CLIP görüntü özellikleri birleştirilir ve hem olumlu hem de olumsuz koşullandırmaya uygulanır. `start_image`, işlemeden önce ilk `length` kareye, `end_image` ise son `length` kareye kırpılır.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumlu koşullandırma | CONDITIONING |
-| `gizli` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumsuz koşullandırma | CONDITIONING |
+| `positive` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumlu koşullandırma | CONDITIONING |
+| `negative` | Uygulanmış video kare kodlaması ve CLIP görüntü özellikleri ile olumsuz koşullandırma | CONDITIONING |
 | `latent` | Boyutları belirtilen video parametreleriyle eşleşen boş gizli tensör | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFirstLastFrameToVideo/tr.md)

@@ -27,11 +27,10 @@
 - زمانی که `upscaler_model` "Disabled" نیست، زیرپارامتر `upscaler_resolution` الزامی است.
 - زمانی که `interpolation_model` "Disabled" نیست، زیرپارامتر `interpolation_frame_rate` الزامی است.
 
-## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `ویدیو` | خروجی ویدئوی بهبود یافته پس از اعمال فیلترهای بزرگ‌نمایی و/یا درون‌یابی انتخاب شده. | VIDEO |
+| `video` | خروجی ویدئوی بهبود یافته پس از اعمال فیلترهای بزرگ‌نمایی و/یا درون‌یابی انتخاب شده. | VIDEO |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TopazVideoEnhanceV2/fa.md)
 

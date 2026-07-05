@@ -9,11 +9,10 @@ El nodo PerturbedAttentionGuidance aplica guía de atención perturbada a un mod
 | `modelo` | El modelo de difusión al que se aplicará la guía de atención perturbada | MODEL | Sí | - |
 | `escala` | La intensidad del efecto de guía de atención perturbada (predeterminado: 3.0). Cuando se establece en 0, el nodo no tiene efecto y devuelve el resultado original de eliminación de ruido. | FLOAT | No | 0.0 - 100.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con guía de atención perturbada aplicada | MODEL |
+| `model` | El modelo modificado con guía de atención perturbada aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PerturbedAttentionGuidance/es.md)
 

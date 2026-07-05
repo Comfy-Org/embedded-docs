@@ -34,16 +34,15 @@ El nodo WanAnimateToVideo genera contenido de video combinando múltiples entrad
 - Si no se proporciona `reference_image`, se utiliza una imagen negra (todos ceros) como referencia predeterminada
 - Si no se proporciona `continue_motion`, los fotogramas iniciales se rellenan con ruido gris (intensidad 0.5)
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial, imagen latente concatenada y máscara concatenada | CONDITIONING |
-| `latente` | Condicionamiento negativo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial (invertidos), imagen latente concatenada y máscara concatenada | CONDITIONING |
-| `recortar_latente` | Contenido de video generado en formato de espacio latente con forma [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
-| `recortar_imagen` | Información de recorte en espacio latente que indica la cantidad de fotogramas latentes a recortar desde el inicio (corresponde a los fotogramas latentes de la imagen de referencia) | INT |
-| `desplazamiento_fotograma_video` | Información de recorte en espacio de imagen para fotogramas de movimiento de referencia, que indica la cantidad de fotogramas de imagen a recortar desde el inicio | INT |
-| `desplazamiento_fotograma_video` | Desplazamiento de fotogramas actualizado para continuar la generación de video en fragmentos, calculado como el desplazamiento anterior más la longitud generada | INT |
+| `positive` | Condicionamiento positivo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial, imagen latente concatenada y máscara concatenada | CONDITIONING |
+| `negative` | Condicionamiento negativo modificado con contexto de video adicional que incluye salida de visión CLIP, latente de video de pose, píxeles de video facial (invertidos), imagen latente concatenada y máscara concatenada | CONDITIONING |
+| `latent` | Contenido de video generado en formato de espacio latente con forma [batch_size, 16, latent_length + trim_latent, latent_height, latent_width] | LATENT |
+| `trim_latent` | Información de recorte en espacio latente que indica la cantidad de fotogramas latentes a recortar desde el inicio (corresponde a los fotogramas latentes de la imagen de referencia) | INT |
+| `trim_image` | Información de recorte en espacio de imagen para fotogramas de movimiento de referencia, que indica la cantidad de fotogramas de imagen a recortar desde el inicio | INT |
+| `video_frame_offset` | Desplazamiento de fotogramas actualizado para continuar la generación de video en fragmentos, calculado como el desplazamiento anterior más la longitud generada | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanAnimateToVideo/es.md)
 

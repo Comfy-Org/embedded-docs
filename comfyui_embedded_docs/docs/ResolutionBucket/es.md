@@ -11,12 +11,11 @@ Este nodo organiza una lista de imágenes latentes y sus datos de condicionamien
 
 **Nota:** La cantidad de elementos en la lista `latents` debe coincidir exactamente con la cantidad de elementos en la lista `conditioning`. Cada diccionario latente puede contener un lote de muestras, y la lista de condicionamiento correspondiente debe contener una cantidad coincidente de elementos de condicionamiento para ese lote.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `condicionamiento` | Lista de diccionarios latentes agrupados en lotes, uno por grupo de resolución. | LATENT |
-| `condicionamiento` | Lista de listas de condicionamiento, una por grupo de resolución. | CONDITIONING |
+| `latents` | Lista de diccionarios latentes agrupados en lotes, uno por grupo de resolución. | LATENT |
+| `conditioning` | Lista de listas de condicionamiento, una por grupo de resolución. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/es.md)
 

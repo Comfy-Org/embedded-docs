@@ -12,10 +12,9 @@ El nodo CropMask está diseñado para recortar un área específica de una másc
 | `ancho` | El ancho define la extensión horizontal del área de recorte desde el punto de inicio. | INT |
 | `altura` | La altura especifica la extensión vertical del área de recorte desde el punto de inicio. | INT |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `máscara` | La salida es una máscara recortada, que es una porción de la máscara original definida por las coordenadas y dimensiones especificadas. | MASK |
+| `mask` | La salida es una máscara recortada, que es una porción de la máscara original definida por las coordenadas y dimensiones especificadas. | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CropMask/es.md)

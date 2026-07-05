@@ -10,11 +10,10 @@ Le nœud SplitAudioChannels sépare un fichier audio stéréo en canaux gauche e
 
 **Remarque :** L'entrée audio doit comporter exactement deux canaux (stéréo). Le nœud générera une erreur si l'entrée audio ne comporte qu'un seul canal.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `droite` | Le canal gauche séparé de l'audio | AUDIO |
+| `left` | Le canal gauche séparé de l'audio | AUDIO |
 | `right` | Le canal droit séparé de l'audio | AUDIO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitAudioChannels/fr.md)

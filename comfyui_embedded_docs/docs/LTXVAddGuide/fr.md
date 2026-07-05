@@ -16,12 +16,11 @@ Le nœud **LTXVAddGuide** ajoute un guidage de conditionnement vidéo aux séque
 
 **Remarque :** L'image/vidéo d'entrée doit avoir un nombre de trames suivant le motif 8*n + 1 (par exemple, 1, 9, 17, 25 trames). Si l'entrée dépasse ce motif, elle sera automatiquement recadrée au nombre de trames valide le plus proche.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif mis à jour avec les informations de guidage par images clés | CONDITIONING |
-| `latent` | Conditionnement négatif mis à jour avec les informations de guidage par images clés | CONDITIONING |
+| `positive` | Conditionnement positif mis à jour avec les informations de guidage par images clés | CONDITIONING |
+| `negative` | Conditionnement négatif mis à jour avec les informations de guidage par images clés | CONDITIONING |
 | `latent` | Séquence latente avec les trames de conditionnement intégrées et le masque de bruit mis à jour | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/fr.md)

@@ -17,13 +17,12 @@ Le nœud Kandinsky5ImageToVideo prépare les données de conditionnement et d'es
 
 **Remarque :** Lorsqu'une `start_image` est fournie, elle est automatiquement redimensionnée pour correspondre à la `width` et à la `height` spécifiées à l'aide d'une interpolation bilinéaire. Les premières `length` images du lot d'images sont utilisées pour l'encodage. Le latent encodé est ensuite injecté dans le conditionnement `positive` et `negative` pour guider l'apparence initiale de la vidéo.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
-| `cond_latent` | Un tenseur latent vidéo vide avec des zéros, formaté pour les dimensions spécifiées. | LATENT |
+| `positive` | Le conditionnement positif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
+| `negative` | Le conditionnement négatif modifié, potentiellement mis à jour avec les données de l'image de départ encodée. | CONDITIONING |
+| `latent` | Un tenseur latent vidéo vide avec des zéros, formaté pour les dimensions spécifiées. | LATENT |
 | `cond_latent` | La représentation latente encodée et propre des images de départ fournies. Utilisée en interne pour remplacer le début bruité des latents vidéo générés. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/fr.md)

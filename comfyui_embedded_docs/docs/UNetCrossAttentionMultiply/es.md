@@ -12,11 +12,10 @@ El nodo UNetCrossAttentionMultiply aplica factores de multiplicación al mecanis
 | `v` | Factor de escala para componentes de valor en atención cruzada (predeterminado: 1.0) | FLOAT | No | 0.0 - 10.0 |
 | `salida` | Factor de escala para componentes de salida en atención cruzada (predeterminado: 1.0) | FLOAT | No | 0.0 - 10.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo UNet modificado con componentes de atención cruzada escalados | MODEL |
+| `model` | El modelo UNet modificado con componentes de atención cruzada escalados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNetCrossAttentionMultiply/es.md)
 

@@ -11,11 +11,10 @@ SaveVideo düğümü, giriş video içeriğini ComfyUI çıktı dizininize kayde
 | `format` | Videonun kaydedileceği format (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` |
 | `codec` | Video için kullanılacak codec bileşeni (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| *Çıktı yok* | Bu düğüm herhangi bir çıktı verisi döndürmez. | - |
+| ui | Bu düğüm herhangi bir çıktı verisi döndürmez. | - |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveVideo/tr.md)
 

@@ -17,11 +17,10 @@
 | `min_confidence` | BlazeFaceのスコアしきい値です。値を低くすると、小さな顔や隠れた顔を検出しやすくなります。デフォルト: 0.5。 | FLOAT | いいえ | 0.00 ～ 1.00 |
 | `missing_frame_fallback` | バッチ内で検出に失敗したフレームの動作です。`"empty"`はそのフレームを顔なしのままにします。`"previous"`は最後に成功した検出結果をコピーします。`"interpolate"`は前後の成功フレーム間でランドマーク/バウンディングボックス/ブレンドシェイプを線形補間します。複数顔の場合、フレーム間で顔を貪欲法によるバウンディングボックス中心の最近傍法でペアリングします。デフォルト: `"empty"`。 | COMBO | いいえ | `"empty"`<br>`"previous"`<br>`"interpolate"` |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `bboxes` | フレームごとの顔検出結果を含む構造化出力です。468個の顔のランドマーク、ARKit-52ブレンドシェイプ係数、変換行列、メッシュ可視化用の接続セットが含まれます。 | FACE_LANDMARKS |
+| `face_landmarks` | フレームごとの顔検出結果を含む構造化出力です。468個の顔のランドマーク、ARKit-52ブレンドシェイプ係数、変換行列、メッシュ可視化用の接続セットが含まれます。 | FACE_LANDMARKS |
 | `bboxes` | 検出された各顔のバウンディングボックスのリストです。座標（x, y, 幅, 高さ）、ラベル「face」、信頼度スコアが含まれます。入力フレームごとに1つのリストが出力されます。 | BOUNDING_BOX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/ja.md)

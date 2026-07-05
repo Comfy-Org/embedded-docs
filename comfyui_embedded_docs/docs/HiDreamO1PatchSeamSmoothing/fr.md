@@ -22,11 +22,10 @@ Ce nœud réduit les coutures visibles dans les images générées par le modèl
 - L'effet de lissage ne sera pas appliqué si `strength` est égal ou inférieur à 0,0, ou si `end_percent` est inférieur ou égal à `start_percent`.
 - Les options de rampe du paramètre `passes` (`ramp_2_4`, `ramp_2_4_8`) ne sont significatives que lorsque `start_percent` et `end_percent` définissent une plage, car le nombre de passages augmente à mesure que l'échantillonnage progresse dans cette plage.
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec l'adaptateur de lissage des coutures appliqué. | MODEL |
+| `model` | Le modèle modifié avec l'adaptateur de lissage des coutures appliqué. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1PatchSeamSmoothing/fr.md)
 

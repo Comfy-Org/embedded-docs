@@ -25,12 +25,11 @@ WanFunControlToVideo节点是ComfyUI的一个扩展，旨在支持Wan Fun Contro
 | `起始图像` | （可选）影响生成视频开头的初始图像。 | 否 | IMAGE | 无 |
 | `控制视频` | （可选）允许用户提供预处理的ControlNet参考视频，用于引导生成视频的运动和潜在结构。 | 否 | IMAGE | 无 |
 
-## 输出
 
 | 参数名 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负向` | 提供增强后的正向调节数据，包含编码后的start_image和control_video。 | CONDITIONING |
-| `latent` | 提供同样经过增强的负向调节数据，包含相同的concat_latent_image。 | CONDITIONING |
+| `positive` | 提供增强后的正向调节数据，包含编码后的start_image和control_video。 | CONDITIONING |
+| `negative` | 提供同样经过增强的负向调节数据，包含相同的concat_latent_image。 | CONDITIONING |
 | `latent` | 一个包含空潜在张量的字典，键为"samples"。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunControlToVideo/zh.md)

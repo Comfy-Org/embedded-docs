@@ -16,12 +16,11 @@ HunyuanVideo15SuperResolution düğümü, bir video süper çözünürlük işle
 
 **Not:** Bir `start_image` sağlarsanız, kodlanması için bir `vae` de bağlamanız gerekir. `start_image`, giriş `latent` tarafından belirtilen boyutlarla eşleşecek şekilde otomatik olarak yükseltilecektir (upscale).
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Artık birleştirilmiş gizli (latent), gürültü artırımı (noise augmentation) ve isteğe bağlı CLIP görsel verilerini içeren değiştirilmiş pozitif koşullama. | CONDITIONING |
-| `latent` | Artık birleştirilmiş gizli (latent), gürültü artırımı (noise augmentation) ve isteğe bağlı CLIP görsel verilerini içeren değiştirilmiş negatif koşullama. | CONDITIONING |
+| `positive` | Artık birleştirilmiş gizli (latent), gürültü artırımı (noise augmentation) ve isteğe bağlı CLIP görsel verilerini içeren değiştirilmiş pozitif koşullama. | CONDITIONING |
+| `negative` | Artık birleştirilmiş gizli (latent), gürültü artırımı (noise augmentation) ve isteğe bağlı CLIP görsel verilerini içeren değiştirilmiş negatif koşullama. | CONDITIONING |
 | `latent` | Giriş gizli (latent) değişkeni değiştirilmeden iletilir. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/tr.md)

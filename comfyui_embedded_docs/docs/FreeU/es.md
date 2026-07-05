@@ -12,11 +12,10 @@ El nodo FreeU aplica modificaciones en el dominio de la frecuencia a los bloques
 | `s1` | Factor de escala de conexión de salto para características de model_channels × 4 (predeterminado: 0.9) | FLOAT | Sí | 0.0 - 10.0 |
 | `s2` | Factor de escala de conexión de salto para características de model_channels × 2 (predeterminado: 0.2) | FLOAT | Sí | 0.0 - 10.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con los parches FreeU aplicados | MODEL |
+| `model` | El modelo modificado con los parches FreeU aplicados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU/es.md)
 

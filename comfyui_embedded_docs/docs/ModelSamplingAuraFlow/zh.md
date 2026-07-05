@@ -9,11 +9,10 @@ ModelSamplingAuraFlow 节点为扩散模型应用专门的采样配置，专为 
 | `模型` | 要应用 AuraFlow 采样配置的扩散模型 | MODEL | 是 | - |
 | `移位` | 应用于采样分布的偏移值（默认值：1.73） | FLOAT | 是 | 0.0 - 100.0 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 已应用 AuraFlow 采样配置的修改后模型 | MODEL |
+| `model` | 已应用 AuraFlow 采样配置的修改后模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingAuraFlow/zh.md)
 

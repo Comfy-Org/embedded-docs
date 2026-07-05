@@ -20,12 +20,11 @@ Le nœud WanImageToVideo prépare les représentations de conditionnement et lat
 
 **Remarque :** Lorsque `start_image` est fourni, le nœud encode la séquence d'images et applique un masquage aux entrées de conditionnement. Le paramètre `clip_vision_output`, lorsqu'il est fourni, ajoute un conditionnement basé sur la vision aux entrées positives et négatives.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
+| `negative` | Conditionnement négatif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
 | `latent` | Tenseur d'espace latent vide prêt pour la génération vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/fr.md)

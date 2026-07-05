@@ -16,11 +16,10 @@ El nodo SamplerCustom está diseñado para proporcionar un mecanismo de muestreo
 | `sigmas` | El tipo de entrada 'sigmas' define los niveles de ruido que se utilizarán en el proceso de muestreo, afectando la exploración del espacio de muestras y la diversidad de la salida. | `SIGMAS` |
 | `imagen_latente` | El tipo de entrada 'latent_image' proporciona una imagen latente inicial para el proceso de muestreo, sirviendo como punto de partida para la generación de muestras. | `LATENT` |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `salida_sin_ruido` | La 'output' representa el resultado principal del proceso de muestreo, conteniendo las muestras generadas. | `LATENT` |
+| `output` | La 'output' representa el resultado principal del proceso de muestreo, conteniendo las muestras generadas. | `LATENT` |
 | `denoised_output` | La 'denoised_output' representa las muestras después de que se ha aplicado un proceso de eliminación de ruido, mejorando potencialmente la claridad y calidad de las muestras generadas. | `LATENT` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/es.md)

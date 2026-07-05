@@ -21,12 +21,11 @@ StableZero123_Conditioning_Batched ノードは、入力画像を処理し、3D 
 
 **注記:** `width` パラメータと `height` パラメータは 8 で割り切れる必要があります。これは、ノードが潜在空間生成のためにこれらの寸法を内部的に 8 で除算するためです。
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `ネガティブ` | 画像埋め込みとカメラパラメータを含むポジティブ条件付けデータ | CONDITIONING |
-| `潜在` | ゼロ初期化された埋め込みを含むネガティブ条件付けデータ | CONDITIONING |
+| `positive` | 画像埋め込みとカメラパラメータを含むポジティブ条件付けデータ | CONDITIONING |
+| `negative` | ゼロ初期化された埋め込みを含むネガティブ条件付けデータ | CONDITIONING |
 | `latent` | バッチインデックス情報を含む、処理済み画像の潜在表現 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/ja.md)

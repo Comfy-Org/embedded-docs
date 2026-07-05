@@ -14,12 +14,11 @@ Le nœud SD_4XUpscale_Conditioning prépare les données de conditionnement pour
 | `ratio_d'échelle` | Facteur de mise à l'échelle appliqué aux images d'entrée (par défaut : 4.0) | FLOAT | Non | 0.0 - 10.0 |
 | `augmentation_du_bruit` | Quantité de bruit à ajouter pendant le processus de mise à l'échelle (par défaut : 0.0) | FLOAT | Non | 0.0 - 1.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
+| `negative` | Conditionnement négatif modifié avec les informations de mise à l'échelle appliquées | CONDITIONING |
 | `latent` | Représentation latente vide correspondant aux dimensions mises à l'échelle | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/fr.md)

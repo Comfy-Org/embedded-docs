@@ -17,11 +17,10 @@ Ses Ekolayzeri (3 Bant) düğümü, bir ses dalga formunun bas, orta ve tiz frek
 
 **Not:** `low_gain_dB`, `mid_gain_dB` ve `high_gain_dB` parametreleri yalnızca değerleri sıfır olmadığında uygulanır. Bir kazanç 0.0 olarak ayarlanırsa, ilgili filtre aşaması atlanır.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ses` | Ekolayzır uygulanmış, değiştirilmiş dalga formunu ve orijinal örnekleme hızını içeren işlenmiş ses verisi. | AUDIO |
+| `audio` | Ekolayzır uygulanmış, değiştirilmiş dalga formunu ve orijinal örnekleme hızını içeren işlenmiş ses verisi. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioEqualizer3Band/tr.md)
 

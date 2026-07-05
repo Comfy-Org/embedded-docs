@@ -8,10 +8,9 @@ InvertMask 节点用于反转给定蒙版的值，有效交换蒙版区域与非
 | --- | --- | --- |
 | `遮罩` | `遮罩`参数表示待反转的输入蒙版。它对于确定反转过程中需要翻转的区域至关重要。 | MASK |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `遮罩` | 输出为输入蒙版的反转版本，原蒙版区域变为非蒙版区域，反之亦然。 | MASK |
+| `mask` | 输出为输入蒙版的反转版本，原蒙版区域变为非蒙版区域，反之亦然。 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InvertMask/zh.md)

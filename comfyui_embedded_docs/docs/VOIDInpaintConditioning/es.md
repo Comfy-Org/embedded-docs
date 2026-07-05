@@ -16,12 +16,11 @@ El nodo VOIDInpaintConditioning prepara los datos de condicionamiento necesarios
 | `length` | Número de fotogramas de píxeles a procesar. Para CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t debe ser par — las longitudes que producen latent_t impar se redondean hacia abajo (ej. 49 → 45) (predeterminado: 45) | INT | Sí | 1 a MAX_RESOLUTION (paso: 1) |
 | `batch_size` | El tamaño del lote para el latente de ruido de salida (predeterminado: 1) | INT | Sí | 1 a 64 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negative` | El condicionamiento positivo con la información latente de pintura inteligente añadida | CONDITIONING |
-| `latent` | El condicionamiento negativo con la información latente de pintura inteligente añadida | CONDITIONING |
+| `positive` | El condicionamiento positivo con la información latente de pintura inteligente añadida | CONDITIONING |
+| `negative` | El condicionamiento negativo con la información latente de pintura inteligente añadida | CONDITIONING |
 | `latent` | Un tensor latente de ruido relleno con ceros con forma [batch_size, 16, latent_t, latent_h, latent_w] | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/es.md)

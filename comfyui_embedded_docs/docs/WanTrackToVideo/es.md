@@ -21,12 +21,11 @@ El nodo WanTrackToVideo convierte datos de seguimiento de movimiento en secuenci
 
 **Nota:** Cuando `tracks` contiene datos de seguimiento válidos, el nodo procesa los seguimientos de movimiento para generar video. Cuando `tracks` está vacío, cambia al modo estándar de imagen a video. Si se proporciona `start_image`, inicializa el primer fotograma de la secuencia de video.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Acondicionamiento positivo con información de seguimiento de movimiento aplicada | CONDITIONING |
-| `latente` | Acondicionamiento negativo con información de seguimiento de movimiento aplicada | CONDITIONING |
+| `positive` | Acondicionamiento positivo con información de seguimiento de movimiento aplicada | CONDITIONING |
+| `negative` | Acondicionamiento negativo con información de seguimiento de movimiento aplicada | CONDITIONING |
 | `latent` | Representación latente del video generado | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTrackToVideo/es.md)

@@ -17,12 +17,11 @@ WanFunInpaintToVideo düğümü, başlangıç ve bitiş görüntüleri arasında
 | `başlangıç_görüntüsü` | Video oluşturma için isteğe bağlı başlangıç karesi görüntüsü | IMAGE | Hayır | - |
 | `bitiş_görüntüsü` | Video oluşturma için isteğe bağlı bitiş karesi görüntüsü | IMAGE | Hayır | - |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | İşlenmiş pozitif koşullandırma çıktısı | CONDITIONING |
-| `gizli` | İşlenmiş negatif koşullandırma çıktısı | CONDITIONING |
+| `positive` | İşlenmiş pozitif koşullandırma çıktısı | CONDITIONING |
+| `negative` | İşlenmiş negatif koşullandırma çıktısı | CONDITIONING |
 | `latent` | Oluşturulan video gizil (latent) temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/tr.md)

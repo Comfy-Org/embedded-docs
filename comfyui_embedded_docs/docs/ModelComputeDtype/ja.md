@@ -9,11 +9,10 @@ ModelComputeDtypeノードは、モデルの処理中に使用される計算デ
 | `モデル` | 新しい計算データ型を適用する対象の入力モデル | MODEL | はい | - |
 | `dtype` | モデルに適用する計算データ型（デフォルト: "default"） | STRING | はい | "default"<br>"fp32"<br>"fp16"<br>"bf16" |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | 新しい計算データ型が適用された変更後のモデル | MODEL |
+| `model` | 新しい計算データ型が適用された変更後のモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelComputeDtype/ja.md)
 

@@ -16,14 +16,13 @@ WanCameraEmbedding 节点基于相机运动参数，使用普吕克嵌入（Plü
 | `cx` | 主点 x 坐标（默认值：0.5，步长：0.01） | FLOAT | 否 | 0.0 至 1.0 |
 | `cy` | 主点 y 坐标（默认值：0.5，步长：0.01） | FLOAT | 否 | 0.0 至 1.0 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `宽度` | 生成的相机嵌入张量，包含轨迹序列 | TENSOR |
-| `高度` | 用于处理的宽度值 | INT |
-| `长度` | 用于处理的高度值 | INT |
-| `长度` | 用于处理的长度值 | INT |
+| `camera_embedding` | 生成的相机嵌入张量，包含轨迹序列 | TENSOR |
+| `width` | 用于处理的宽度值 | INT |
+| `height` | 用于处理的高度值 | INT |
+| `length` | 用于处理的长度值 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/zh.md)
 

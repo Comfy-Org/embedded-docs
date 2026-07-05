@@ -26,13 +26,12 @@
 * معاملات `enable_pbr` و `texture_prompt` و `texture_image` نشطة فقط عندما يتم تعيين `should_texture` على `"true"`.
 * لا يمكن استخدام `texture_prompt` و `texture_image` في نفس الوقت؛ فهما متنافيان.
 
-## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `meshy_task_id` | اسم ملف نموذج GLB المُنشأ. يتم توفير هذا المخرج للتوافق مع الإصدارات السابقة. | STRING |
-| `GLB` | المعرف الفريد لمهمة واجهة برمجة تطبيقات Meshy. | MESHY_TASK_ID |
-| `FBX` | النموذج ثلاثي الأبعاد المُنشأ بتنسيق GLB. | FILE3DGLB |
+| `model_file` | اسم ملف نموذج GLB المُنشأ. يتم توفير هذا المخرج للتوافق مع الإصدارات السابقة. | STRING |
+| `meshy_task_id` | المعرف الفريد لمهمة واجهة برمجة تطبيقات Meshy. | MESHY_TASK_ID |
+| `GLB` | النموذج ثلاثي الأبعاد المُنشأ بتنسيق GLB. | FILE3DGLB |
 | `FBX` | النموذج ثلاثي الأبعاد المُنشأ بتنسيق FBX. | FILE3DFBX |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/ar.md)

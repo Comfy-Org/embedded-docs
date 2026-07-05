@@ -9,11 +9,10 @@ AudioAdjustVolume 节点通过以分贝（dB）为单位调整音量来修改音
 | `音频` | 待处理的音频输入 | AUDIO | 是 | - |
 | `音量` | 以分贝（dB）为单位的音量调整值。0 = 无变化，+6 = 加倍，-6 = 减半，以此类推（默认值：1） | INT | 是 | -100 至 100 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `音频` | 经过音量调整后的处理音频 | AUDIO |
+| `audio` | 经过音量调整后的处理音频 | AUDIO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioAdjustVolume/zh.md)
 

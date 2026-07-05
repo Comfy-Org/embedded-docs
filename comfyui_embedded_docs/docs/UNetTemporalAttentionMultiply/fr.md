@@ -12,11 +12,10 @@ Le nœud UNetTemporalAttentionMultiply applique des facteurs de multiplication �
 | `cross_structural` | Multiplicateur pour les composants structurels de l'attention croisée (par défaut : 1.0) | FLOAT | Non | 0.0 - 10.0 |
 | `cross_temporal` | Multiplicateur pour les composants temporels de l'attention croisée (par défaut : 1.0) | FLOAT | Non | 0.0 - 10.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec des poids d'attention ajustés | MODEL |
+| `model` | Le modèle modifié avec des poids d'attention ajustés | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNetTemporalAttentionMultiply/fr.md)
 

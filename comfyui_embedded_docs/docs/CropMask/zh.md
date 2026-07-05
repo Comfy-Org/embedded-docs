@@ -12,10 +12,9 @@ CropMask节点用于从给定的遮罩中裁剪指定区域。它允许用户通
 | `宽度` | 宽度定义从起始点开始的裁剪区域水平范围。 | INT |
 | `高度` | 高度指定从起始点开始的裁剪区域垂直范围。 | INT |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `遮罩` | 输出为裁剪后的遮罩，即由指定坐标和尺寸定义的原始遮罩的一部分。 | MASK |
+| `mask` | 输出为裁剪后的遮罩，即由指定坐标和尺寸定义的原始遮罩的一部分。 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CropMask/zh.md)

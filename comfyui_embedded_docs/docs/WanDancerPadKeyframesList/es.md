@@ -11,12 +11,11 @@ Este nodo toma una secuencia de imágenes y una pista de audio opcional, y las d
 | `num_segments` | Cuántos segmentos rellenados emitir como listas (predeterminado: 1). | INT | Sí | 1 a 100 |
 | `audio` | Audio a segmentar para cada segmento emitido. | AUDIO | No | N/D |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `keyframes_mask` | Una lista de secuencias de fotogramas clave rellenadas, una para cada segmento. | IMAGE |
-| `audio_segment` | Una lista de máscaras que indican los fotogramas válidos para cada segmento. | MASK |
+| `keyframes_sequence` | Una lista de secuencias de fotogramas clave rellenadas, una para cada segmento. | IMAGE |
+| `keyframes_mask` | Una lista de máscaras que indican los fotogramas válidos para cada segmento. | MASK |
 | `audio_segment` | Una lista de segmentos de audio, uno para cada segmento de video. | AUDIO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/es.md)

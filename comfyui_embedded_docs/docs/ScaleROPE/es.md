@@ -14,11 +14,10 @@ El nodo ScaleROPE permite modificar la Codificación Posicional Rotatoria (ROPE)
 | `escala_t` | Factor de escala a aplicar al componente T (tiempo) del ROPE (predeterminado: 1.0). | FLOAT | No | 0.0 - 100.0 |
 | `desplazamiento_t` | Valor de desplazamiento a aplicar al componente T (tiempo) del ROPE (predeterminado: 0.0). | FLOAT | No | -256.0 - 256.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo con los nuevos parámetros de escala y desplazamiento ROPE aplicados. | MODEL |
+| `model` | El modelo con los nuevos parámetros de escala y desplazamiento ROPE aplicados. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ScaleROPE/es.md)
 

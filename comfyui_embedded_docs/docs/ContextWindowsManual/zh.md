@@ -26,11 +26,10 @@
 - `dim` 必须在 0 到 5 之间（含）
 - `cond_retain_index_list` 期望一个以逗号分隔的整数索引列表作为字符串（例如 "0,1,2"）
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 在采样期间应用了上下文窗口的模型。 | MODEL |
+| `model` | 在采样期间应用了上下文窗口的模型。 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ContextWindowsManual/zh.md)
 

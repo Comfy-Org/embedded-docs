@@ -19,12 +19,11 @@ Le nœud WanCameraImageToVideo convertit des images en séquences vidéo en gén
 
 **Remarque :** Lorsque `start_image` est fourni, le nœud l'utilise pour initialiser la séquence vidéo et applique un masquage pour fusionner les images de départ avec le contenu généré. Les paramètres `camera_conditions` et `clip_vision_output` sont optionnels, mais lorsqu'ils sont fournis, ils modifient le conditionnement pour les prompts positifs et négatifs.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
+| `negative` | Conditionnement négatif modifié avec les conditions de caméra et les sorties CLIP vision appliquées | CONDITIONING |
 | `latent` | Représentation latente vidéo générée pour utilisation avec des modèles vidéo. Le tenseur latent a des dimensions [batch_size, 16, images, hauteur/8, largeur/8] où images est calculé comme ((longueur - 1) // 4) + 1. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/fr.md)

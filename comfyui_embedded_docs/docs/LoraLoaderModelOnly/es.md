@@ -12,10 +12,9 @@ Este nodo se especializa en cargar un modelo LoRA sin requerir un modelo CLIP, e
 | `nombre_lora` | El nombre del archivo LoRA que se cargará, especificando los ajustes a aplicar al modelo. | `COMBO[STRING]` |
 | `fuerza_modelo` | Determina la intensidad de los ajustes de LoRA; valores más altos indican modificaciones más fuertes. | `FLOAT` |
 
-## Salidas
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con los ajustes de LoRA aplicados, reflejando cambios en el comportamiento o las capacidades del modelo. | `MODEL` |
+| `model` | El modelo modificado con los ajustes de LoRA aplicados, reflejando cambios en el comportamiento o las capacidades del modelo. | `MODEL` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderModelOnly/es.md)

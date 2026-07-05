@@ -10,11 +10,10 @@
 
 **注記:** このノードはグループプロセス（`is_group_process = True`）として設定されています。つまり、メインの処理関数が実行される前に、複数のリスト入力を自動的に連結して処理します。
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `テキスト` | すべての入力テキストを含む、単一の統合されたリスト。 | STRING |
+| `texts` | すべての入力テキストを含む、単一の統合されたリスト。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeTextLists/ja.md)
 

@@ -11,11 +11,10 @@ Le nœud FreSca applique une mise à l'échelle dépendante de la fréquence au 
 | `échelle_haute` | Facteur d'échelle pour les composantes haute fréquence (par défaut : 1.25) | FLOAT | Non | 0 - 10 |
 | `seuil_fréquence` | Nombre d'indices de fréquence autour du centre à considérer comme basse fréquence (par défaut : 20) | INT | Non | 1 - 10000 |
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec une mise à l'échelle dépendante de la fréquence appliquée à sa fonction de guidage | MODEL |
+| `model` | Le modèle modifié avec une mise à l'échelle dépendante de la fréquence appliquée à sa fonction de guidage | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreSca/fr.md)
 

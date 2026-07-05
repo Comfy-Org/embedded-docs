@@ -20,12 +20,11 @@
 
 **نکته:** پارامتر `strength` تنها زمانی تأثیر دارد که `tracks` ارائه شده باشد. اگر `tracks` ارائه نشود یا `strength` برابر 0.0 باشد، شرطی‌سازی ردیابی اعمال نمی‌شود. از `start_image` برای ایجاد یک تصویر نهفته و ماسک برای شرطی‌سازی استفاده می‌شود؛ اگر ارائه نشود، گره تنها شرطی‌سازی را عبور داده و یک خروجی نهفته خالی تولید می‌کند.
 
-## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `مثبت` | شرطی‌سازی مثبت اصلاح‌شده که احتمالاً شامل `concat_latent_image`، `concat_mask` و `خروجی clip vision` است. | CONDITIONING |
-| `منفی` | شرطی‌سازی منفی اصلاح‌شده که احتمالاً شامل `concat_latent_image`، `concat_mask` و `خروجی clip vision` است. | CONDITIONING |
+| `positive` | شرطی‌سازی مثبت اصلاح‌شده که احتمالاً شامل `concat_latent_image`، `concat_mask` و `خروجی clip vision` است. | CONDITIONING |
+| `negative` | شرطی‌سازی منفی اصلاح‌شده که احتمالاً شامل `concat_latent_image`، `concat_mask` و `خروجی clip vision` است. | CONDITIONING |
 | `latent` | یک تنسور نهفته خالی با ابعادی که توسط ورودی‌های `اندازه بچ`، `طول`، `ارتفاع` و `عرض` تعیین می‌شود. | LATENT |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/fa.md)

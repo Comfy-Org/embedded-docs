@@ -10,10 +10,9 @@ ImageScaleToTotalPixels düğümü, görüntüleri en-boy oranını koruyarak be
 | `büyütme_yöntemi` | Görüntüyü büyütmek için kullanılan yöntem. Büyütülmüş görüntünün kalitesini ve özelliklerini etkiler. | COMBO[STRING] |
 | `megapiksel` | Görüntünün megapiksel cinsinden hedef boyutu. Büyütülmüş görüntüdeki toplam piksel sayısını belirler. | `FLOAT` |
 
-## Çıktılar
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntü` | Orijinal en-boy oranını koruyarak, belirtilen toplam piksel sayısına sahip büyütülmüş görüntü. | `IMAGE` |
+| `image` | Orijinal en-boy oranını koruyarak, belirtilen toplam piksel sayısına sahip büyütülmüş görüntü. | `IMAGE` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleToTotalPixels/tr.md)

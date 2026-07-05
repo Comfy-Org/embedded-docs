@@ -10,10 +10,9 @@ El nodo ImageScaleBy está diseñado para escalar imágenes mediante un factor d
 | `metodo_ampliacion` | Especifica el método de interpolación que se utilizará para el escalado. La elección del método puede afectar la calidad y las características de la imagen escalada. | COMBO[STRING] |
 | `escalar_por` | El factor por el cual se escalará la imagen. Esto determina el aumento de tamaño de la imagen de salida en relación con la imagen de entrada. | `FLOAT` |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La imagen escalada, que es más grande que la imagen de entrada según el factor de escala y el método de interpolación especificados. | `IMAGE` |
+| `image` | La imagen escalada, que es más grande que la imagen de entrada según el factor de escala y el método de interpolación especificados. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleBy/es.md)

@@ -10,10 +10,9 @@
 | `采样` | 指定要应用于模型的离散采样方法。方法的选择会影响模型生成样本的方式，提供不同的采样策略。 | COMBO[STRING] | `str` |
 | `zsnr` | 一个布尔标志，启用时会根据零样本噪声比调整模型的降噪策略。这可能会影响生成样本的质量和特性。 | `BOOLEAN` | `bool` |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 | Python 数据类型 |
 | --- | --- | --- | --- |
-| `模型` | 已应用离散采样策略的修改后模型。该模型现在能够使用指定的方法和调整来生成样本。 | MODEL | `torch.nn.Module` |
+| `model` | 已应用离散采样策略的修改后模型。该模型现在能够使用指定的方法和调整来生成样本。 | MODEL | `torch.nn.Module` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingDiscrete/zh.md)

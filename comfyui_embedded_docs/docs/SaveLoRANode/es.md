@@ -10,11 +10,10 @@ El nodo SaveLoRA guarda modelos LoRA (Adaptación de Bajo Rango) en tu directori
 | `prefix` | El prefijo a utilizar para el archivo LoRA guardado (predeterminado: "loras/ComfyUI_trained_lora"). | STRING | Sí | - |
 | `steps` | Opcional: El número de pasos con los que se ha entrenado el LoRA, utilizado para nombrar el archivo guardado. | INT | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| *Ninguno* | Este nodo no devuelve ninguna salida, pero guarda el modelo LoRA en el directorio de salida. | - |
+| *None* | Este nodo no devuelve ninguna salida, pero guarda el modelo LoRA en el directorio de salida. | - |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRANode/es.md)
 

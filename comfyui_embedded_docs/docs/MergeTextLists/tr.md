@@ -10,11 +10,10 @@ Bu düğüm, birden fazla metin listesini tek bir birleşik listede birleştirir
 
 **Not:** Bu düğüm bir grup işlemi olarak yapılandırılmıştır (`is_group_process = True`), yani ana işleme işlevi çalışmadan önce birden fazla liste girişini birleştirerek otomatik olarak işler.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `metinler` | Tüm giriş metinlerini içeren tek bir birleştirilmiş liste. | STRING |
+| `texts` | Tüm giriş metinlerini içeren tek bir birleştirilmiş liste. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeTextLists/tr.md)
 

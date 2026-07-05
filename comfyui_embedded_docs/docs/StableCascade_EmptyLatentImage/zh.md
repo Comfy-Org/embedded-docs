@@ -11,11 +11,10 @@ StableCascade_EmptyLatentImage 节点用于为 Stable Cascade 模型创建空的
 | `压缩` | 决定阶段 C 潜空间维度的压缩因子，默认值：42，步长：1 | INT | 是 | 4 至 128 |
 | `批量大小` | 每批生成的潜空间样本数量，默认值：1 | INT | 否 | 1 至 4096 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `阶段B` | 阶段 C 的潜空间张量，维度为 [batch_size, 16, height//compression, width//compression] | LATENT |
+| `stage_c` | 阶段 C 的潜空间张量，维度为 [batch_size, 16, height//compression, width//compression] | LATENT |
 | `stage_b` | 阶段 B 的潜空间张量，维度为 [batch_size, 4, height//4, width//4] | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/zh.md)

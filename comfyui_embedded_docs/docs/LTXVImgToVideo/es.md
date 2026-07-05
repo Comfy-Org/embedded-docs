@@ -16,12 +16,11 @@ El nodo LTXVImgToVideo convierte una imagen de entrada en una representación la
 | `tamaño_lote` | Cantidad de videos a generar simultáneamente (predeterminado: 1) | INT | No | 1 a 4096 |
 | `fuerza` | Control sobre cuánto del contenido de la imagen original se conserva en el primer fotograma del video generado. Un valor de 1.0 conserva la imagen original por completo, mientras que 0.0 permite la máxima modificación (predeterminado: 1.0) | FLOAT | No | 0.0 a 1.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
-| `latente` | Condicionamiento negativo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
+| `positive` | Condicionamiento positivo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
+| `negative` | Condicionamiento negativo procesado con enmascaramiento de fotogramas de video aplicado | CONDITIONING |
 | `latent` | Representación latente de video que contiene los fotogramas codificados y la máscara de ruido para la generación del video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/es.md)

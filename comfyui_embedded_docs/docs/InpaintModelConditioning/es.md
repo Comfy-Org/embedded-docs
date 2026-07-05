@@ -12,12 +12,11 @@ El nodo InpaintModelConditioning está diseñado para facilitar el proceso de co
 | `píxeles` | Representa los datos de píxeles de la imagen que se va a inpaint. Esta entrada es esencial para proporcionar el contexto visual necesario para la tarea de inpainting. | `IMAGE` |
 | `máscara` | Especifica la máscara que se aplicará a la imagen, indicando las áreas que se deben inpaint. Esta entrada es crucial para definir las regiones específicas dentro de la imagen que requieren inpainting. | `MASK` |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | La información de condicionamiento positivo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones positivas especificadas. | `CONDITIONING` |
-| `latente` | La información de condicionamiento negativo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones negativas especificadas. | `CONDITIONING` |
+| `positive` | La información de condicionamiento positivo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones positivas especificadas. | `CONDITIONING` |
+| `negative` | La información de condicionamiento negativo modificada después del procesamiento, lista para aplicarse al modelo de inpainting. Esta salida es esencial para guiar el proceso de inpainting de acuerdo con las condiciones negativas especificadas. | `CONDITIONING` |
 | `latent` | La representación latente derivada del proceso de condicionamiento. Esta salida es crucial para comprender las características y atributos subyacentes de la imagen que se está inpaintando. | `LATENT` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InpaintModelConditioning/es.md)

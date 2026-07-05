@@ -16,12 +16,11 @@ Le nœud VOIDInpaintConditioning prépare les données de conditionnement néces
 | `length` | Nombre d'images pixels à traiter. Pour CogVideoX-Fun-V1.5 (patch_size_t=2), latent_t doit être pair — les longueurs produisant un latent_t impair sont arrondies à l'inférieur (ex. 49 → 45) (par défaut : 45) | INT | Oui | 1 à MAX_RESOLUTION (pas : 1) |
 | `batch_size` | Taille du lot pour le bruit latent de sortie (par défaut : 1) | INT | Oui | 1 à 64 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Le conditionnement positif avec les informations latentes d'infilling ajoutées | CONDITIONING |
-| `latent` | Le conditionnement négatif avec les informations latentes d'infilling ajoutées | CONDITIONING |
+| `positive` | Le conditionnement positif avec les informations latentes d'infilling ajoutées | CONDITIONING |
+| `negative` | Le conditionnement négatif avec les informations latentes d'infilling ajoutées | CONDITIONING |
 | `latent` | Un tenseur de bruit latent rempli de zéros avec la forme [batch_size, 16, latent_t, latent_h, latent_w] | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/fr.md)

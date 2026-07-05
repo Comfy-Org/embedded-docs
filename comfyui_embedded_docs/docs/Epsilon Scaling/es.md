@@ -37,11 +37,10 @@ Este nodo implementa el método de Escalado Épsilon del artículo de investigac
 | `modelo` | El modelo al cual se le aplicará el parche de escalado épsilon. | MODEL | Sí | - |
 | `factor_escala` | El factor por el cual se escala el ruido predicho. Un valor mayor que 1.0 reduce el ruido, mientras que un valor menor que 1.0 lo aumenta (valor predeterminado: 1.005). | FLOAT | No | 0.5 - 1.5 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | Una versión parcheada del modelo de entrada con la función de escalado épsilon aplicada a su proceso de muestreo. | MODEL |
+| `model` | Una versión parcheada del modelo de entrada con la función de escalado épsilon aplicada a su proceso de muestreo. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/es.md)
 

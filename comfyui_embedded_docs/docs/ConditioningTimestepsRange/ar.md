@@ -9,12 +9,11 @@
 | `نسبة البداية` | النسبة المئوية لبداية النطاق الزمني (الافتراضي: 0.0) | FLOAT | نعم | 0.0 - 1.0 |
 | `نسبة النهاية` | النسبة المئوية لنهاية النطاق الزمني (الافتراضي: 1.0) | FLOAT | نعم | 0.0 - 1.0 |
 
-## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `قبل النطاق` | النطاق الزمني الرئيسي المحدد بواسطة start_percent و end_percent | TIMESTEPS_RANGE |
-| `بعد النطاق` | النطاق الزمني من 0.0 إلى start_percent | TIMESTEPS_RANGE |
+| `TIMESTEPS_RANGE` | النطاق الزمني الرئيسي المحدد بواسطة start_percent و end_percent | TIMESTEPS_RANGE |
+| `BEFORE_RANGE` | النطاق الزمني من 0.0 إلى start_percent | TIMESTEPS_RANGE |
 | `AFTER_RANGE` | النطاق الزمني من end_percent إلى 1.0 | TIMESTEPS_RANGE |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/ar.md)

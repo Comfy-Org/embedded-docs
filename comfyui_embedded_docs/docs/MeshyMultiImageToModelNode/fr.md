@@ -26,13 +26,12 @@ Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs
 * Les paramètres `enable_pbr`, `texture_prompt` et `texture_image` sont uniquement actifs lorsque `should_texture` est défini sur `"true"`.
 * Vous ne pouvez pas utiliser `texture_prompt` et `texture_image` en même temps ; ils sont mutuellement exclusifs.
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `meshy_task_id` | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour la rétrocompatibilité. | STRING |
-| `GLB` | L'identifiant unique de la tâche API Meshy. | MESHY_TASK_ID |
-| `FBX` | Le modèle 3D généré au format GLB. | FILE3DGLB |
+| `model_file` | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour la rétrocompatibilité. | STRING |
+| `meshy_task_id` | L'identifiant unique de la tâche API Meshy. | MESHY_TASK_ID |
+| `GLB` | Le modèle 3D généré au format GLB. | FILE3DGLB |
 | `FBX` | Le modèle 3D généré au format FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/fr.md)

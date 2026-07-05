@@ -18,12 +18,11 @@ El nodo WanSoundImageToVideo genera contenido de video a partir de imágenes con
 | `video_control` | Video de control opcional que guía el movimiento y la estructura del video generado | IMAGE | No | - |
 | `movimiento_ref` | Referencia de movimiento opcional que proporciona guía para los patrones de movimiento en el video | IMAGE | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo procesado que ha sido modificado para la generación de video | CONDITIONING |
-| `latente` | Condicionamiento negativo procesado que ha sido modificado para la generación de video | CONDITIONING |
+| `positive` | Condicionamiento positivo procesado que ha sido modificado para la generación de video | CONDITIONING |
+| `negative` | Condicionamiento negativo procesado que ha sido modificado para la generación de video | CONDITIONING |
 | `latent` | Representación de video generada en el espacio latente que puede decodificarse en fotogramas de video finales | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideo/es.md)

@@ -51,12 +51,11 @@ WanDancerVideo düğümü, WanDancer modeli ile video oluşturma için koşullan
 - `clip_vision_output` ve `clip_vision_output_ref` girdileri isteğe bağlıdır ve ilk kare ve bir referans görüntüsü için görsel bağlam sağlamak üzere birlikte kullanılabilir.
 - `audio_encoder_output` girdisi isteğe bağlıdır ve ses koşullu oluşturma için ses özellikleri sağlar.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş pozitif koşullandırma. | CONDITIONING |
-| `latent` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş negatif koşullandırma. | CONDITIONING |
+| `positive` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş pozitif koşullandırma. | CONDITIONING |
+| `negative` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş negatif koşullandırma. | CONDITIONING |
 | `latent` | Boyutları belirtilen video uzunluğu, yüksekliği ve genişliğiyle eşleşen boş bir latent tensör. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerVideo/tr.md)

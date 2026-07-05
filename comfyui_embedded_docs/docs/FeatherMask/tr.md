@@ -12,10 +12,9 @@
 | `sağ` | Yumuşatma efektinin uygulanacağı sağ kenardan olan mesafeyi belirtir. | INT |
 | `alt` | Yumuşatma efektinin uygulanacağı alt kenardan olan mesafeyi belirtir. | INT |
 
-## Çıktılar
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `maske` | Çıktı, kenarlarına yumuşatma efekti uygulanmış, giriş maskesinin değiştirilmiş bir sürümüdür. | MASK |
+| `mask` | Çıktı, kenarlarına yumuşatma efekti uygulanmış, giriş maskesinin değiştirilmiş bir sürümüdür. | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FeatherMask/tr.md)

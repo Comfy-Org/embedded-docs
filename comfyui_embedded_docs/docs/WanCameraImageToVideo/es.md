@@ -19,12 +19,11 @@ El nodo WanCameraImageToVideo convierte imágenes en secuencias de video generan
 
 **Nota:** Cuando se proporciona `start_image`, el nodo lo utiliza para inicializar la secuencia de video y aplica un enmascaramiento para fusionar los fotogramas iniciales con el contenido generado. Los parámetros `camera_conditions` y `clip_vision_output` son opcionales, pero cuando se proporcionan, modifican el condicionamiento tanto para las indicaciones positivas como negativas.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo modificado con condiciones de cámara y salidas de visión CLIP aplicadas | CONDITIONING |
-| `latente` | Condicionamiento negativo modificado con condiciones de cámara y salidas de visión CLIP aplicadas | CONDITIONING |
+| `positive` | Condicionamiento positivo modificado con condiciones de cámara y salidas de visión CLIP aplicadas | CONDITIONING |
+| `negative` | Condicionamiento negativo modificado con condiciones de cámara y salidas de visión CLIP aplicadas | CONDITIONING |
 | `latent` | Representación latente de video generada para usar con modelos de video. El tensor latente tiene dimensiones [batch_size, 16, frames, height/8, width/8] donde frames se calcula como ((length - 1) // 4) + 1. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/es.md)

@@ -13,11 +13,10 @@ Le nœud Video Slice vous permet d'extraire un segment spécifique d'une vidéo.
 | `durée` | Durée en secondes, ou 0 pour une durée illimitée (par défaut : 0.0). | FLOAT | Non | 0.0 et plus |
 | `durée_stricte` | Si Vrai, lorsque la durée spécifiée n'est pas possible, une erreur sera générée (par défaut : Faux). | BOOLEAN | Non | - |
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `vidéo` | Le segment vidéo rogné. | VIDEO |
+| `video` | Le segment vidéo rogné. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/fr.md)
 

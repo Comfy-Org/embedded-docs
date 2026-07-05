@@ -14,11 +14,10 @@
 | `kancalar` | Gelişmiş koşullandırma değişiklikleri için isteğe bağlı kanca grubu | HOOKS | Hayır | - |
 | `zaman_adımları` | Koşullandırmanın ne zaman uygulanacağını sınırlamak için isteğe bağlı zaman adımı aralığı | TIMESTEPS_RANGE | Hayır | - |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Uygulanan özelliklerle birlikte değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `positive` | Uygulanan özelliklerle birlikte değiştirilmiş pozitif koşullandırma | CONDITIONING |
 | `negative` | Uygulanan özelliklerle birlikte değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/tr.md)

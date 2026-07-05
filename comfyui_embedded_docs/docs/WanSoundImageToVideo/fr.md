@@ -18,12 +18,11 @@ Le nœud WanSoundImageToVideo génère du contenu vidéo à partir d'images avec
 | `vidéo de contrôle` | Vidéo de contrôle optionnelle guidant le mouvement et la structure de la vidéo générée | IMAGE | Non | - |
 | `mouvement de référence` | Référence de mouvement optionnelle fournissant un guide pour les schémas de déplacement dans la vidéo | IMAGE | Non | - |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif traité et modifié pour la génération vidéo | CONDITIONING |
-| `latent` | Conditionnement négatif traité et modifié pour la génération vidéo | CONDITIONING |
+| `positive` | Conditionnement positif traité et modifié pour la génération vidéo | CONDITIONING |
+| `negative` | Conditionnement négatif traité et modifié pour la génération vidéo | CONDITIONING |
 | `latent` | Représentation vidéo générée dans l'espace latent, pouvant être décodée en images vidéo finales | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideo/fr.md)

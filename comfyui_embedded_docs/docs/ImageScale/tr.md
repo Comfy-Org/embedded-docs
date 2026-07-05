@@ -12,10 +12,9 @@ ImageScale düğümü, görüntüleri belirli boyutlara yeniden boyutlandırmak 
 | `yükseklik` | Büyütülmüş görüntü için hedef yükseklik. Bu parametre, çıktı görüntüsünün boyutlarını doğrudan etkileyerek yeniden boyutlandırma işleminin dikey ölçeğini belirler. | `INT` |
 | `kırp` | Büyütülmüş görüntünün kırpılıp kırpılmayacağını ve nasıl kırpılacağını belirler; devre dışı kırpma veya merkezden kırpma seçenekleri sunar. Bu, belirtilen boyutlara uyması için potansiyel olarak kenarları kaldırarak görüntünün nihai kompozisyonunu etkiler. | COMBO[STRING] |
 
-## Çıktılar
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntü` | Daha ileri işleme veya görselleştirme için hazır, büyütülmüş (ve isteğe bağlı olarak kırpılmış) görüntü. | `IMAGE` |
+| `image` | Daha ileri işleme veya görselleştirme için hazır, büyütülmüş (ve isteğe bağlı olarak kırpılmış) görüntü. | `IMAGE` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScale/tr.md)

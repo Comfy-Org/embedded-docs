@@ -17,13 +17,12 @@ Le nœud LTXV Reference Audio est utilisé pour le transfert d'identité du locu
 | `pourcentage_début` | Début de la plage sigma où le guidage d'identité est actif. (par défaut : 0.0) | FLOAT | Non | 0.0 - 1.0 |
 | `pourcentage_fin` | Fin de la plage sigma où le guidage d'identité est actif. (par défaut : 1.0) | FLOAT | Non | 0.0 - 1.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `positif` | Le modèle patché avec la fonction de guidage d'identité. | MODEL |
-| `négatif` | Le conditionnement positif, contenant désormais les données audio de référence encodées. | CONDITIONING |
-| `négatif` | Le conditionnement négatif, contenant désormais les données audio de référence encodées. | CONDITIONING |
+| `model` | Le modèle patché avec la fonction de guidage d'identité. | MODEL |
+| `positive` | Le conditionnement positif, contenant désormais les données audio de référence encodées. | CONDITIONING |
+| `negative` | Le conditionnement négatif, contenant désormais les données audio de référence encodées. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/fr.md)
 

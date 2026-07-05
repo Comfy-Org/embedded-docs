@@ -9,11 +9,10 @@ Bu düğüm, "ace step 1.5" sürecinde kullanılmak üzere bir referans ses tın
 | `koşullandırma` | Referans ses bilgisinin ekleneceği koşullandırma verisi. | CONDITIONING | Evet |  |
 | `latent` | Referans sesin isteğe bağlı örtük temsili. Sağlandığında, örnekleri koşullandırmaya eklenir. | LATENT | Hayır |  |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `koşullandırma` | İsteğe bağlı `latent` girdisi sağlanmışsa, artık referans ses tınısı örtüklerini içeren değiştirilmiş koşullandırma verisi. | CONDITIONING |
+| `conditioning` | İsteğe bağlı `latent` girdisi sağlanmışsa, artık referans ses tınısı örtüklerini içeren değiştirilmiş koşullandırma verisi. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/tr.md)
 

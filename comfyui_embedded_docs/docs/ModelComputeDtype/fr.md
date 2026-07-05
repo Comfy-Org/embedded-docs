@@ -9,11 +9,10 @@ Le nœud ModelComputeDtype modifie le type de données de calcul (précision) ut
 | `modèle` | Le modèle d'entrée à modifier avec un nouveau type de données de calcul | MODEL | Oui | - |
 | `dtype` | Le type de données de calcul à appliquer au modèle (par défaut : "default") | STRING | Oui | "default"<br>"fp32"<br>"fp16"<br>"bf16" |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec le nouveau type de données de calcul appliqué | MODEL |
+| `model` | Le modèle modifié avec le nouveau type de données de calcul appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelComputeDtype/fr.md)
 

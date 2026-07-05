@@ -11,10 +11,9 @@
 | `最大西格玛` | 噪声水平的最大 sigma 值，用于控制采样过程中噪声注入的上限。 | `FLOAT` | `float` |
 | `最小西格玛` | 噪声水平的最小 sigma 值，设置噪声注入的下限，从而影响模型的采样精度。 | `FLOAT` | `float` |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 | Python 数据类型 |
 | --- | --- | --- | --- |
-| `模型` | 已集成连续 EDM 采样能力的增强模型，可直接用于后续的生成任务。 | MODEL | `torch.nn.Module` |
+| `model` | 已集成连续 EDM 采样能力的增强模型，可直接用于后续的生成任务。 | MODEL | `torch.nn.Module` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingContinuousEDM/zh.md)

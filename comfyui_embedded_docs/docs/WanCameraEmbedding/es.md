@@ -16,14 +16,13 @@ El nodo WanCameraEmbedding genera embeddings de trayectoria de cámara utilizand
 | `cx` | La coordenada x del punto principal (predeterminado: 0.5, paso: 0.01) | FLOAT | No | 0.0 a 1.0 |
 | `cy` | La coordenada y del punto principal (predeterminado: 0.5, paso: 0.01) | FLOAT | No | 0.0 a 1.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ancho` | El tensor de embedding de cámara generado que contiene la secuencia de trayectoria | TENSOR |
-| `alto` | El valor de ancho que se utilizó para el procesamiento | INT |
-| `longitud` | El valor de altura que se utilizó para el procesamiento | INT |
-| `longitud` | El valor de longitud que se utilizó para el procesamiento | INT |
+| `camera_embedding` | El tensor de embedding de cámara generado que contiene la secuencia de trayectoria | TENSOR |
+| `width` | El valor de ancho que se utilizó para el procesamiento | INT |
+| `height` | El valor de altura que se utilizó para el procesamiento | INT |
+| `length` | El valor de longitud que se utilizó para el procesamiento | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/es.md)
 

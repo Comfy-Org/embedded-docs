@@ -36,11 +36,10 @@ LoadImageOutput düğümü, çıktı klasöründen görüntüleri yükler. Yenil
 | --- | --- | --- | --- | --- |
 | `görüntü` | Çıktı klasöründen bir görüntü yükleyin. Görüntü listesini güncellemek için bir yükleme seçeneği ve yenile düğmesi içerir. Yenile düğmesine tıklandığında, düğüm görüntü listesini günceller ve otomatik olarak ilk görüntüyü seçerek kolay geçiş yapılmasını sağlar. | COMBO | Evet | Birden çok seçenek mevcut |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntü` | Çıktı klasöründen yüklenen görüntü | IMAGE |
+| `image` | Çıktı klasöründen yüklenen görüntü | IMAGE |
 | `mask` | Yüklenen görüntüyle ilişkili maske | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageOutput/tr.md)

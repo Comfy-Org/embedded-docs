@@ -9,11 +9,10 @@ Le nœud **ModelSamplingAuraFlow** applique une configuration d'échantillonnage
 | `modèle` | Le modèle de diffusion auquel appliquer la configuration d'échantillonnage AuraFlow | MODEL | Oui | - |
 | `décalage` | La valeur de décalage à appliquer à la distribution d'échantillonnage (par défaut : 1.73) | FLOAT | Oui | 0.0 - 100.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec la configuration d'échantillonnage AuraFlow appliquée | MODEL |
+| `model` | Le modèle modifié avec la configuration d'échantillonnage AuraFlow appliquée | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingAuraFlow/fr.md)
 

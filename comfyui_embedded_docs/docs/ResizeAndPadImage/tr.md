@@ -12,11 +12,10 @@ ResizeAndPadImage düğümü, bir görüntüyü orijinal en-boy oranını koruya
 | `dolgu_rengi` | Yeniden boyutlandırılmış görüntünün etrafındaki dolgu alanları için kullanılacak renk (varsayılan: "white") | COMBO | Evet | "white"<br>"black" |
 | `enterpolasyon` | Görüntüyü yeniden boyutlandırmak için kullanılan enterpolasyon yöntemi (varsayılan: "area") | COMBO | Evet | "area"<br>"bicubic"<br>"nearest-exact"<br>"bilinear"<br>"lanczos" |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görsel` | Yeniden boyutlandırılmış ve doldurulmuş çıktı görüntüsü | IMAGE |
+| `image` | Yeniden boyutlandırılmış ve doldurulmuş çıktı görüntüsü | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeAndPadImage/tr.md)
 

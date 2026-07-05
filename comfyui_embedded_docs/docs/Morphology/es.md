@@ -10,11 +10,10 @@ El nodo Morfología aplica diversas operaciones morfológicas a las imágenes, l
 | `operacion` | La operación morfológica a aplicar (predeterminado: "erode") | STRING | Sí | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` |
 | `tamaño_kernel` | El tamaño del kernel del elemento estructurante (predeterminado: 3). Debe ser un número impar. | INT | Sí | 3-999 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La imagen procesada después de aplicar la operación morfológica | IMAGE |
+| `image` | La imagen procesada después de aplicar la operación morfológica | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Morphology/es.md)
 

@@ -13,12 +13,11 @@
 | `片段索引` | 当前片段序号（0 表示第一个，1 表示第二个，依此类推，默认值：0）。 | INT | 是 | 0 至 100 |
 | `音频` | 用于计算总输出帧数并提取片段音频的音频。 | AUDIO | 是 | 音频数据 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `关键帧掩码` | 指定片段的填充后关键帧序列。 | IMAGE |
-| `音频片段` | 指示有效帧的遮罩（关键帧位置为 1，填充位置为 0）。 | MASK |
+| `keyframes_sequence` | 指定片段的填充后关键帧序列。 | IMAGE |
+| `keyframes_mask` | 指示有效帧的遮罩（关键帧位置为 1，填充位置为 0）。 | MASK |
 | `audio_segment` | 此视频片段对应的音频片段。 | AUDIO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/zh.md)

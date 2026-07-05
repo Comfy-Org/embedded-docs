@@ -13,11 +13,10 @@ Le nœud LoraModelLoader applique les pondérations d'un LoRA (Adaptation de Bas
 
 **Remarque :** Lorsque `strength_model` est défini sur 0, le nœud renvoie le modèle d'origine sans appliquer aucune modification LoRA.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle de diffusion modifié avec les pondérations LoRA appliquées. | MODEL |
+| `model` | Le modèle de diffusion modifié avec les pondérations LoRA appliquées. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraModelLoader/fr.md)
 

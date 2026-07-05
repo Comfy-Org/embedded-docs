@@ -12,10 +12,9 @@ El nodo ImageScale está diseñado para redimensionar imágenes a dimensiones es
 | `altura` | La altura objetivo para la imagen ampliada. Este parámetro influye directamente en las dimensiones de la imagen de salida, determinando la escala vertical de la operación de redimensionamiento. | `INT` |
 | `recorte` | Determina si la imagen ampliada debe recortarse y de qué manera, ofreciendo opciones para deshabilitar el recorte o realizar un recorte centrado. Esto afecta la composición final de la imagen al eliminar potencialmente los bordes para ajustarse a las dimensiones especificadas. | COMBO[STRING] |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La imagen ampliada (y opcionalmente recortada), lista para su posterior procesamiento o visualización. | `IMAGE` |
+| `image` | La imagen ampliada (y opcionalmente recortada), lista para su posterior procesamiento o visualización. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScale/es.md)

@@ -13,12 +13,11 @@ ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negati
 | `saniye_başlangıç` | Ses üretimi için saniye cinsinden başlangıç zamanı (varsayılan: 0,0) | FLOAT | Evet | 0,0 - 1000,0 |
 | `saniye_toplam` | Ses üretimi için saniye cinsinden toplam süre (varsayılan: 47,0) | FLOAT | Evet | 0,0 - 1000,0 |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negatif` | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `positive` | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningStableAudio/tr.md)
 

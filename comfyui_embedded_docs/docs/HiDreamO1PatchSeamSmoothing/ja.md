@@ -20,11 +20,10 @@
 - `strength`が0.0以下の場合、または`end_percent`が`start_percent`以下の場合、スムージング効果は適用されません。
 - `passes`パラメータのランプオプション（`ramp_2_4`、`ramp_2_4_8`）は、`start_percent`と`end_percent`が範囲を定義している場合にのみ意味を持ちます。これは、サンプリングがその範囲を進行するにつれてパス数が増加するためです。
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | 継ぎ目スムージングラッパーが適用された修正済みモデル。 | MODEL |
+| `model` | 継ぎ目スムージングラッパーが適用された修正済みモデル。 | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1PatchSeamSmoothing/ja.md)
 

@@ -10,10 +10,9 @@ El nodo `ImageFromBatch` está diseñado para extraer un segmento específico de
 | `indice_lote` | El índice inicial dentro del lote desde el cual comienza la extracción. Determina la posición inicial del segmento a extraer del lote. | `INT` |
 | `longitud` | La cantidad de imágenes a extraer del lote a partir de `indice_lote`. Este parámetro define el tamaño del segmento a extraer. | `INT` |
 
-## Salidas
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | El segmento extraído de imágenes del lote especificado. Esta salida representa un subconjunto del lote original, determinado por los parámetros `indice_lote` y `longitud`. | `IMAGE` |
+| `image` | El segmento extraído de imágenes del lote especificado. Esta salida representa un subconjunto del lote original, determinado por los parámetros `indice_lote` y `longitud`. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageFromBatch/es.md)

@@ -16,12 +16,11 @@ VOIDInpaintConditioning 节点用于准备 CogVideoX 模型进行修复所需的
 | `length` | 要处理的像素帧数。对于 CogVideoX-Fun-V1.5（patch_size_t=2），latent_t 必须为偶数——导致 latent_t 为奇数的长度将向下取整（例如 49 → 45）（默认值：45） | INT | 是 | 1 至 MAX_RESOLUTION（步长：1） |
 | `batch_size` | 输出噪声潜在变量的批次大小（默认值：1） | INT | 是 | 1 至 64 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `negative` | 已添加修复潜在信息的正向 conditioning | CONDITIONING |
-| `latent` | 已添加修复潜在信息的负向 conditioning | CONDITIONING |
+| `positive` | 已添加修复潜在信息的正向 conditioning | CONDITIONING |
+| `negative` | 已添加修复潜在信息的负向 conditioning | CONDITIONING |
 | `latent` | 形状为 [batch_size, 16, latent_t, latent_h, latent_w] 的零填充噪声潜在张量 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/zh.md)

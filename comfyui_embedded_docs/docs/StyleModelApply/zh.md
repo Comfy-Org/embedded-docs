@@ -12,10 +12,9 @@
 | `风格模型` | 用于根据 CLIP 视觉模型的输出生成新 conditioning 的样式模型。它在定义要应用的新样式方面起着关键作用。 | `STYLE_MODEL` |
 | `clip视觉输出` | CLIP 视觉模型的输出，样式模型使用该输出来生成新的 conditioning。它提供了样式应用所需的视觉上下文。 | `CLIP_VISION_OUTPUT` |
 
-## 输出
 
 | 参数 | 描述 | Comfy 数据类型 |
 | --- | --- | --- |
-| `条件` | 增强或改变后的 conditioning，融合了样式模型的输出。它代表了最终、已应用样式的 conditioning，可供进一步处理或生成使用。 | `CONDITIONING` |
+| `conditioning` | 增强或改变后的 conditioning，融合了样式模型的输出。它代表了最终、已应用样式的 conditioning，可供进一步处理或生成使用。 | `CONDITIONING` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StyleModelApply/zh.md)

@@ -9,11 +9,10 @@ El nodo Difusión Diferencial modifica el proceso de eliminación de ruido aplic
 | `modelo` | El modelo de difusión a modificar | MODEL | Sí | - |
 | `intensidad` | Controla la intensidad de combinación entre la máscara de eliminación de ruido original y la máscara binaria de umbral (predeterminado: 1.0) | FLOAT | No | 0.0 - 1.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo de difusión modificado con la función de máscara de eliminación de ruido actualizada | MODEL |
+| `model` | El modelo de difusión modificado con la función de máscara de eliminación de ruido actualizada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DifferentialDiffusion/es.md)
 

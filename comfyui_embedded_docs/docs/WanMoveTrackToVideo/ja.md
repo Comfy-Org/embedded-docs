@@ -20,12 +20,11 @@ WanMoveTrackToVideo ノードは、動画生成用のコンディショニング
 
 **注意:** `strength` パラメータは、`tracks` が指定された場合にのみ効果があります。`tracks` が指定されていない場合、または `strength` が 0.0 の場合は、トラックコンディショニングは適用されません。`start_image` はコンディショニング用の潜在画像とマスクを作成するために使用されます。これが指定されていない場合、ノードはコンディショニングをそのまま通過させ、空の潜在データを出力します。
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `negative` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたポジティブコンディショニング。 | CONDITIONING |
-| `latent` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたネガティブコンディショニング。 | CONDITIONING |
+| `positive` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたポジティブコンディショニング。 | CONDITIONING |
+| `negative` | `concat_latent_image`、`concat_mask`、`clip_vision_output` を潜在的に含む、修正されたネガティブコンディショニング。 | CONDITIONING |
 | `latent` | `バッチサイズ`、`長さ`、`高さ`、`幅` の入力によって形状が決定される空の潜在テンソル。 | LATENT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/ja.md)

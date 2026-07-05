@@ -15,11 +15,10 @@ PatchModelAddDownscale ノードは、モデル内の特定のブロックにダ
 | `ダウンスケール方法` | ダウンスケール処理に使用する補間方法 | COMBO | いいえ | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 | `アップスケール方法` | アップスケール処理に使用する補間方法 | COMBO | いいえ | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | ダウンスケールパッチが適用された変更後のモデル | MODEL |
+| `model` | ダウンスケールパッチが適用された変更後のモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/ja.md)
 

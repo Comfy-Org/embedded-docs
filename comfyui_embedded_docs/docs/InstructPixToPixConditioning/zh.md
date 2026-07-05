@@ -13,12 +13,11 @@ InstructPixToPixConditioning 节点通过将正向和负向文本提示与图像
 
 **注意：** 输入图像尺寸会自动调整，通过将宽度和高度裁剪到最接近的 8 像素倍数，以确保与 VAE 编码过程兼容。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 附加了潜在图像表示的正向条件数据 | CONDITIONING |
-| `Latent` | 附加了潜在图像表示的负向条件数据 | CONDITIONING |
+| `positive` | 附加了潜在图像表示的正向条件数据 | CONDITIONING |
+| `negative` | 附加了潜在图像表示的负向条件数据 | CONDITIONING |
 | `latent` | 与编码图像尺寸相同的空潜在张量 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/InstructPixToPixConditioning/zh.md)

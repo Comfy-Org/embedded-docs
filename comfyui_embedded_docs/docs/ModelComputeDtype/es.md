@@ -9,11 +9,10 @@ El nodo `ModelComputeDtype` cambia el tipo de datos computacional (precisión) u
 | `modelo` | El modelo de entrada al que se le aplicará un nuevo tipo de datos computacional | MODEL | Sí | - |
 | `dtype` | El tipo de datos computacional que se aplicará al modelo (predeterminado: "default") | STRING | Sí | "default"<br>"fp32"<br>"fp16"<br>"bf16" |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con el nuevo tipo de datos computacional aplicado | MODEL |
+| `model` | El modelo modificado con el nuevo tipo de datos computacional aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelComputeDtype/es.md)
 

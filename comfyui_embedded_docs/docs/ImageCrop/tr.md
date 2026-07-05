@@ -12,10 +12,9 @@
 | `x` | Kırpma alanının sol üst köşesinin x koordinatı. Bu parametre, kırpma işleminin genişlik boyutu için başlangıç noktasını ayarlar. | `INT` |
 | `y` | Kırpma alanının sol üst köşesinin y koordinatı. Bu parametre, kırpma işleminin yükseklik boyutu için başlangıç noktasını ayarlar. | `INT` |
 
-## Çıktılar
 
 | Alan | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntü` | Kırpma işleminin sonucu olarak elde edilen kırpılmış görüntü. Bu çıktı, belirtilen görüntü bölgesinin daha fazla işlenmesi veya analizi için önemlidir. | `IMAGE` |
+| `image` | Kırpma işleminin sonucu olarak elde edilen kırpılmış görüntü. Bu çıktı, belirtilen görüntü bölgesinin daha fazla işlenmesi veya analizi için önemlidir. | `IMAGE` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCrop/tr.md)

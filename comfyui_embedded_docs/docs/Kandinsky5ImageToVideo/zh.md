@@ -17,13 +17,12 @@ Kandinsky5ImageToVideo 节点用于准备 Kandinsky 模型视频生成所需的 
 
 **注意：** 当提供了 `start_image` 时，它会自动通过双线性插值调整大小，以匹配指定的 `width` 和 `height`。图像批次中的前 `length` 帧将用于编码。编码后的潜在变量随后会被注入到 `positive` 和 `negative` conditioning 中，以引导视频的初始外观。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 修改后的正向 conditioning，可能已更新编码后的起始图像数据。 | CONDITIONING |
-| `Latent` | 修改后的负向 conditioning，可能已更新编码后的起始图像数据。 | CONDITIONING |
-| `条件Latent` | 一个填充为零的空视频潜在张量，其形状符合指定的尺寸。 | LATENT |
+| `positive` | 修改后的正向 conditioning，可能已更新编码后的起始图像数据。 | CONDITIONING |
+| `negative` | 修改后的负向 conditioning，可能已更新编码后的起始图像数据。 | CONDITIONING |
+| `latent` | 一个填充为零的空视频潜在张量，其形状符合指定的尺寸。 | LATENT |
 | `cond_latent` | 所提供的起始图像的干净、编码后的潜在表示。内部使用此数据来替换生成视频潜在变量中带噪声的起始部分。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/zh.md)

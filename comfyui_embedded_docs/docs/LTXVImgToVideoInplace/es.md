@@ -14,11 +14,10 @@ El nodo LTXVImgToVideoInplace condiciona una representación latente de video co
 
 **Nota:** La `image` se redimensionará automáticamente para que coincida con las dimensiones espaciales requeridas por el `vae` para la codificación, según el ancho y alto de la entrada `latent`.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `latente` | La representación latente de video modificada. Contiene las muestras actualizadas y una `noise_mask` que aplica la intensidad de condicionamiento a los fotogramas iniciales. | LATENT |
+| `latent` | La representación latente de video modificada. Contiene las muestras actualizadas y una `noise_mask` que aplica la intensidad de condicionamiento a los fotogramas iniciales. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideoInplace/es.md)
 

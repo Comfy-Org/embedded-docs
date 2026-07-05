@@ -10,11 +10,10 @@
 
 **注意：** 该节点期望特定的文件结构。对于每个图像文件（`.png`、`.jpg`、`.jpeg`、`.webp`），它会查找同名的 `.txt` 文件作为描述文本。如果未找到描述文件，则使用空字符串。该节点还支持一种特殊结构：子文件夹名称以数字和下划线开头（例如 `5_cats`），则该子文件夹中的所有图像将在最终输出列表中重复该数字指定的次数。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `文本` | 加载的图像张量列表。 | IMAGE |
+| `images` | 加载的图像张量列表。 | IMAGE |
 | `texts` | 与每张加载图像对应的文本描述列表。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/zh.md)

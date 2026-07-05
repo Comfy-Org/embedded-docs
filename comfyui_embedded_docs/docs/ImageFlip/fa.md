@@ -9,11 +9,10 @@
 | `تصویر` | تصویر ورودی که باید وارونه شود | IMAGE | بله | - |
 | `روش وارونه‌سازی` | جهت وارونگی اعمال‌شده (پیش‌فرض: "x-axis: vertically") | STRING | بله | "x-axis: vertically"<br>"y-axis: horizontally" |
 
-## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `تصویر` | تصویر خروجی وارونه‌شده | IMAGE |
+| `image` | تصویر خروجی وارونه‌شده | IMAGE |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageFlip/fa.md)
 

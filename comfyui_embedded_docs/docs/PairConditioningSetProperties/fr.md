@@ -14,11 +14,10 @@ Le nœud **PairConditioningSetProperties** vous permet de modifier simultanémen
 | `hooks` | Groupe de crochets optionnel pour des modifications avancées du conditionnement | HOOKS | Non | - |
 | `pas_de_temps` | Plage de pas de temps optionnelle pour limiter l'application du conditionnement | TIMESTEPS_RANGE | Non | - |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Le conditionnement positif modifié avec les propriétés appliquées | CONDITIONING |
+| `positive` | Le conditionnement positif modifié avec les propriétés appliquées | CONDITIONING |
 | `negative` | Le conditionnement négatif modifié avec les propriétés appliquées | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/fr.md)

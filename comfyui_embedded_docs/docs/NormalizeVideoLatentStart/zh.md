@@ -12,11 +12,10 @@
 
 **注意：** `reference_frame_count` 会自动限制为起始帧之后可用的帧数。如果视频潜空间只有 1 帧长，则不执行归一化，直接返回原始潜空间。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `Latent` | 处理后的视频潜空间，起始帧已归一化。 | LATENT |
+| `latent` | 处理后的视频潜空间，起始帧已归一化。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeVideoLatentStart/zh.md)
 

@@ -12,10 +12,9 @@
 | `lora_name` | 読み込む LoRA ファイルの名前を指定します。モデルに適用する調整内容を指定します。 | `COMBO[STRING]` |
 | `モデルの強度` | LoRA 調整の強度を決定します。値が大きいほど、より強い変更が適用されます。 | `FLOAT` |
 
-## 出力
 
 | フィールド | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | LoRA 調整が適用された変更後のモデルです。モデルの動作や機能の変化を反映します。 | `MODEL` |
+| `model` | LoRA 調整が適用された変更後のモデルです。モデルの動作や機能の変化を反映します。 | `MODEL` |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoaderModelOnly/ja.md)

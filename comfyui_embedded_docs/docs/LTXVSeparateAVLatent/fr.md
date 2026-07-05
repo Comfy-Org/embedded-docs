@@ -10,11 +10,10 @@ Le nœud LTXVSeparateAVLatent prend une représentation latente audiovisuelle co
 
 **Remarque :** Le tenseur `samples` du latent d'entrée doit contenir au moins deux éléments le long de la première dimension (dimension du lot). Le premier élément est utilisé pour le latent vidéo, et le second pour le latent audio. Si un `noise_mask` est présent, il est divisé de la même manière.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `latent_audio` | La représentation latente contenant les données vidéo séparées. | LATENT |
+| `video_latent` | La représentation latente contenant les données vidéo séparées. | LATENT |
 | `audio_latent` | La représentation latente contenant les données audio séparées. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVSeparateAVLatent/fr.md)

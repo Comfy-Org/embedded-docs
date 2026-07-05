@@ -12,12 +12,11 @@ Adjunta imágenes de referencia tanto al condicionamiento positivo como al negat
 
 **Nota sobre el parámetro `images`:** Esta es una entrada de crecimiento automático que acepta entre 1 y 10 imágenes. Las imágenes se etiquetan como `image_1` hasta `image_10`. Debes proporcionar al menos 1 imagen. La cantidad de imágenes determina el modo de operación: una sola imagen se utiliza para instrucciones de edición, mientras que múltiples imágenes (2-10) se utilizan para personalización dirigida por un sujeto.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo con las imágenes de referencia adjuntas. | CONDITIONING |
-| `negativo` | El condicionamiento negativo con las imágenes de referencia adjuntas. | CONDITIONING |
+| `positive` | El condicionamiento positivo con las imágenes de referencia adjuntas. | CONDITIONING |
+| `negative` | El condicionamiento negativo con las imágenes de referencia adjuntas. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/es.md)
 

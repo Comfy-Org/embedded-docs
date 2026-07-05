@@ -23,12 +23,11 @@ WanDancerVideo 节点用于为 WanDancer 模型的视频生成准备 conditionin
 - `clip_vision_output` 和 `clip_vision_output_ref` 输入为可选，可同时使用，为第一帧和参考图像提供视觉上下文。
 - `audio_encoder_output` 输入为可选，提供音频特征用于音频条件生成。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负向` | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的正向 conditioning。 | CONDITIONING |
-| `latent` | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的负向 conditioning。 | CONDITIONING |
+| `positive` | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的正向 conditioning。 | CONDITIONING |
+| `negative` | 附加了额外数据（拼接潜空间、CLIP 视觉、音频）的负向 conditioning。 | CONDITIONING |
 | `latent` | 维度与指定的视频长度、高度和宽度匹配的空潜空间张量。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerVideo/zh.md)

@@ -10,10 +10,9 @@
 | `模糊半径` | 决定模糊效果的半径。半径越大，模糊程度越明显。 | `INT` |
 | `西格玛` | 控制模糊的扩散范围。sigma 值越高，模糊对每个像素周围区域的影响范围越广。 | `FLOAT` |
 
-## 输出
 
 | 字段 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `图像` | 输出为输入图像的模糊版本，模糊程度由输入参数决定。 | `IMAGE` |
+| `image` | 输出为输入图像的模糊版本，模糊程度由输入参数决定。 | `IMAGE` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageBlur/zh.md)

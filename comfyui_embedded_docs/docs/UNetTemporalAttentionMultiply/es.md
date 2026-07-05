@@ -12,11 +12,10 @@ El nodo UNetTemporalAttentionMultiply aplica factores de multiplicación a difer
 | `cruz_estructural` | Multiplicador para componentes estructurales de atención cruzada (predeterminado: 1.0) | FLOAT | No | 0.0 - 10.0 |
 | `cruz_temporal` | Multiplicador para componentes temporales de atención cruzada (predeterminado: 1.0) | FLOAT | No | 0.0 - 10.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con pesos de atención ajustados | MODEL |
+| `model` | El modelo modificado con pesos de atención ajustados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/UNetTemporalAttentionMultiply/es.md)
 

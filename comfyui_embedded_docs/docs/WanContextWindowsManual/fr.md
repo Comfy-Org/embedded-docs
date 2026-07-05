@@ -17,11 +17,10 @@ Le nœud WAN Context Windows (Manuel) vous permet de configurer manuellement les
 
 **Remarque :** Le paramètre `context_stride` n'affecte que les planifications uniformes, et `closed_loop` ne s'applique qu'aux planifications en boucle. Les valeurs de longueur de contexte et de chevauchement sont automatiquement ajustées pour garantir des valeurs minimales valides lors du traitement. Le paramètre `fuse_method` inclut désormais des options supplémentaires au-delà de "pyramid".
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle avec la configuration de fenêtre de contexte appliquée. | MODEL |
+| `model` | Le modèle avec la configuration de fenêtre de contexte appliquée. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/fr.md)
 

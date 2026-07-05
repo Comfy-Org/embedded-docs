@@ -18,11 +18,10 @@ Le nœud SamplerCustom est conçu pour offrir un mécanisme d'échantillonnage f
 | `sigmas` | Le type d'entrée 'sigmas' définit les niveaux de bruit à utiliser dans le processus d'échantillonnage, affectant l'exploration de l'espace d'échantillonnage et la diversité de la sortie. | `SIGMAS` |
 | `image_latente` | Le type d'entrée 'latent_image' fournit une image latente initiale pour le processus d'échantillonnage, servant de point de départ pour la génération d'échantillons. | `LATENT` |
 
-## Sorties
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `sortie_débruitée` | La sortie 'output' représente le résultat principal du processus d'échantillonnage, contenant les échantillons générés. | `LATENT` |
+| `output` | La sortie 'output' représente le résultat principal du processus d'échantillonnage, contenant les échantillons générés. | `LATENT` |
 | `denoised_output` | La sortie 'denoised_output' représente les échantillons après l'application d'un processus de débruitage, améliorant potentiellement la clarté et la qualité des échantillons générés. | `LATENT` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/fr.md)

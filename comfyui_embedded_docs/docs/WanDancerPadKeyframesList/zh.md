@@ -13,12 +13,11 @@
 | `片段数量` | 作为列表输出的填充片段数量（默认值：1）。 | INT | 是 | 1 到 100 |
 | `音频` | 为每个输出片段切分的音频。 | AUDIO | 否 | 不适用 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `关键帧掩码` | 填充后的关键帧序列列表，每个片段对应一个序列。 | IMAGE |
-| `音频片段` | 指示每个片段有效帧的遮罩列表。 | MASK |
+| `keyframes_sequence` | 填充后的关键帧序列列表，每个片段对应一个序列。 | IMAGE |
+| `keyframes_mask` | 指示每个片段有效帧的遮罩列表。 | MASK |
 | `audio_segment` | 音频片段列表，每个视频片段对应一个音频片段。 | AUDIO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/zh.md)

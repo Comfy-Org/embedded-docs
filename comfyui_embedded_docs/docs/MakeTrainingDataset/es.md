@@ -15,11 +15,10 @@ Este nodo prepara datos para entrenamiento codificando imágenes y texto. Toma u
 
 * La cantidad de elementos en la lista `texts` debe ser 0, 1, o coincidir exactamente con la cantidad de elementos en la lista `images`. Si es 0, se usa una cadena vacía para todas las imágenes. Si es 1, ese único texto se repite para todas las imágenes.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `acondicionamiento` | Lista de diccionarios latentes. | LATENT |
+| `latents` | Lista de diccionarios latentes. | LATENT |
 | `conditioning` | Lista de listas de condicionamiento. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/es.md)

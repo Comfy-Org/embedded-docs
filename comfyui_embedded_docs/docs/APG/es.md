@@ -11,11 +11,10 @@ El nodo APG (Adaptive Projected Guidance) modifica el proceso de muestreo ajusta
 | `umbral_norm` | Normaliza el vector de guía a este valor; la normalización se desactiva con un valor de 0 (predeterminado: 5.0). | FLOAT | Sí | 0.0 a 50.0 |
 | `momento` | Controla un promedio móvil de la guía durante la difusión; se desactiva con un valor de 0 (predeterminado: 0.0). | FLOAT | Sí | -5.0 a 1.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | Devuelve el modelo modificado con guía proyectada adaptativa aplicada a su proceso de muestreo | MODEL |
+| `model` | Devuelve el modelo modificado con guía proyectada adaptativa aplicada a su proceso de muestreo | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/APG/es.md)
 

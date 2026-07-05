@@ -17,12 +17,11 @@ Este nodo aplica la guía de ControlNet al condicionamiento de Stable Diffusion 
 | `porcentaje_inicio` | El punto de inicio en el proceso de generación donde ControlNet comienza a aplicarse (predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `porcentaje_final` | El punto final en el proceso de generación donde ControlNet deja de aplicarse (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado con la guía de ControlNet aplicada | CONDITIONING |
-| `negativo` | El condicionamiento negativo modificado con la guía de ControlNet aplicada | CONDITIONING |
+| `positive` | El condicionamiento positivo modificado con la guía de ControlNet aplicada | CONDITIONING |
+| `negative` | El condicionamiento negativo modificado con la guía de ControlNet aplicada | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/es.md)
 

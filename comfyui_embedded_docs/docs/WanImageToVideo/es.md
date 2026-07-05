@@ -18,12 +18,11 @@ El nodo WanImageToVideo prepara representaciones de condicionamiento y latentes 
 
 **Nota:** Cuando se proporciona `start_image`, el nodo codifica la secuencia de imágenes y aplica enmascaramiento a las entradas de condicionamiento. El parámetro `clip_vision_output`, cuando se proporciona, agrega condicionamiento basado en visión tanto a las entradas positivas como negativas.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo modificado con datos de imagen y visión incorporados | CONDITIONING |
-| `latente` | Condicionamiento negativo modificado con datos de imagen y visión incorporados | CONDITIONING |
+| `positive` | Condicionamiento positivo modificado con datos de imagen y visión incorporados | CONDITIONING |
+| `negative` | Condicionamiento negativo modificado con datos de imagen y visión incorporados | CONDITIONING |
 | `latent` | Tensor de espacio latente vacío listo para la generación de video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/es.md)

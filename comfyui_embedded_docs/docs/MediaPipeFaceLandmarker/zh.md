@@ -15,11 +15,10 @@
 | `min_confidence` | BlazeFace 评分阈值。较低的值有助于捕捉较小或被遮挡的人脸。默认值：0.5。 | FLOAT | 否 | 0.00 到 1.00 |
 | `missing_frame_fallback` | 批次中检测失败时的逐帧处理行为。`"empty"` 使该帧无人脸数据。`"previous"` 复制最近一次成功的检测结果。`"interpolate"` 在相邻成功帧之间对特征点/边界框/混合变形进行线性插值。多人脸：通过贪心边界框中心最近邻算法跨帧配对。默认值：`"empty"`。 | COMBO | 否 | `"empty"`<br>`"previous"`<br>`"interpolate"` |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `bboxes` | 包含每帧人脸检测结果的结构化输出，包括 468 个面部特征点、ARKit-52 混合变形系数、变换矩阵以及用于网格可视化的连接集。 | FACE_LANDMARKS |
+| `face_landmarks` | 包含每帧人脸检测结果的结构化输出，包括 468 个面部特征点、ARKit-52 混合变形系数、变换矩阵以及用于网格可视化的连接集。 | FACE_LANDMARKS |
 | `bboxes` | 每张检测到的人脸的边界框列表，包含坐标 (x, y, width, height)、标签 "face" 和置信度分数。每个输入帧对应一个列表。 | BOUNDING_BOX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/zh.md)

@@ -11,12 +11,11 @@
 
 **注意：** `latents` 列表中的项目数量必须与 `conditioning` 列表中的项目数量完全一致。每个潜在字典可以包含一批样本，对应的条件列表必须包含与该批样本数量匹配的条件项目。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `条件` | 按分辨率分桶后的批处理潜在字典列表，每个分辨率桶对应一个。 | LATENT |
-| `条件` | 条件列表的列表，每个分辨率桶对应一个。 | CONDITIONING |
+| `latents` | 按分辨率分桶后的批处理潜在字典列表，每个分辨率桶对应一个。 | LATENT |
+| `conditioning` | 条件列表的列表，每个分辨率桶对应一个。 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/zh.md)
 

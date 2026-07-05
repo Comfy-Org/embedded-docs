@@ -16,12 +16,11 @@ Le nœud HunyuanVideo15SuperResolution prépare les données de conditionnement 
 
 **Remarque :** Si vous fournissez une `start_image`, vous devez également connecter un `vae` pour qu'elle soit encodée. L'`start_image` sera automatiquement mise à l'échelle pour correspondre aux dimensions implicites du `latent` d'entrée.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
+| `positive` | Le conditionnement positif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
+| `negative` | Le conditionnement négatif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
 | `latent` | Le latent d'entrée est transmis sans modification. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/fr.md)

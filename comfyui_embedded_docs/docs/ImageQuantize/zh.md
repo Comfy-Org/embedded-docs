@@ -10,10 +10,9 @@ ImageQuantize 节点旨在将图像中的颜色数量减少到指定数目，并
 | `颜色` | 指定图像要减少到的颜色数量。通过决定调色板大小，直接影响量化过程。 | `INT` |
 | `抖动` | 决定量化过程中应用的抖动技术，影响输出图像的视觉质量和外观。 | COMBO[STRING] |
 
-## 输出
 
 | 字段 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `图像` | 输入图像的量化版本，颜色复杂度降低，并可选地应用抖动以保持视觉质量。 | `IMAGE` |
+| `image` | 输入图像的量化版本，颜色复杂度降低，并可选地应用抖动以保持视觉质量。 | `IMAGE` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageQuantize/zh.md)

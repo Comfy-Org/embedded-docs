@@ -9,11 +9,10 @@ Le nœud SetUnionControlNetType vous permet de spécifier le type de réseau de 
 | `réseau_de_contrôle` | Le réseau de contrôle à modifier avec un nouveau paramètre de type | CONTROL_NET | Oui | - |
 | `type` | Le type de réseau de contrôle à appliquer. Utilisez "auto" pour la détection automatique du type ou sélectionnez un type de réseau de contrôle spécifique parmi les options disponibles | STRING | Oui | `"auto"`<br>Toutes les clés UNION_CONTROLNET_TYPES disponibles |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `réseau_de_contrôle` | Le réseau de contrôle modifié avec le paramètre de type spécifié appliqué | CONTROL_NET |
+| `control_net` | Le réseau de contrôle modifié avec le paramètre de type spécifié appliqué | CONTROL_NET |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetUnionControlNetType/fr.md)
 

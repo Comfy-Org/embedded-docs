@@ -15,11 +15,10 @@ QwenImageDiffsynthControlnet 节点应用扩散合成控制网络补丁来修改
 
 **注意：** 当提供遮罩时，会自动进行反转处理（1.0 - 遮罩）并调整形状以匹配控制网络处理所需的尺寸。节点会根据模型补丁是 ZImage 控制类型还是标准 DiffSynth 控制网络，采用不同的内部处理方法。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 应用了扩散合成控制网络补丁后的修改模型 | MODEL |
+| `model` | 应用了扩散合成控制网络补丁后的修改模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/zh.md)
 

@@ -10,11 +10,10 @@ El nodo `ImageScaleToMaxDimension` redimensiona imágenes para que encajen dentr
 | `método_de_escalado` | El método de interpolación utilizado para escalar la imagen (predeterminado: "area") | STRING | Sí | "area"<br>"lanczos"<br>"bilinear"<br>"nearest-exact"<br>"bilinear"<br>"bicubic" |
 | `tamaño_máximo` | La dimensión máxima para la imagen escalada (predeterminado: 512) | INT | Sí | 0 a 16384 |
 
-## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `imagen` | La imagen escalada con la dimensión más grande coincidiendo con el tamaño especificado | IMAGE |
+| `image` | La imagen escalada con la dimensión más grande coincidiendo con el tamaño especificado | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleToMaxDimension/es.md)
 

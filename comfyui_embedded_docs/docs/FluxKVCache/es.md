@@ -8,11 +8,10 @@ El nodo Caché KV de Flux permite una optimización de Caché Clave-Valor (KV) p
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo al que se aplicará la optimización de Caché KV. | MODEL | Sí |  |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con la optimización de Caché KV habilitada. | MODEL |
+| `model` | El modelo modificado con la optimización de Caché KV habilitada. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKVCache/es.md)
 

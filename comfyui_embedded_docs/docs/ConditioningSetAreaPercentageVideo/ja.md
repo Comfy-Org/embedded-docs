@@ -15,11 +15,10 @@ ConditioningSetAreaPercentageVideo ノードは、ビデオ生成用の特定の
 | `z` | ビデオタイムラインに対する、領域の時間的な開始位置（パーセンテージ） | FLOAT | 必須 | 0.0 | 0.0 - 1.0 |
 | `強度` | 定義された領域内で条件付けに適用される強度の乗数 | FLOAT | 必須 | 1.0 | 0.0 - 10.0 |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `条件設定` | 指定された領域と強度設定が適用された、変更後の条件付けデータ | CONDITIONING |
+| `conditioning` | 指定された領域と強度設定が適用された、変更後の条件付けデータ | CONDITIONING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentageVideo/ja.md)
 

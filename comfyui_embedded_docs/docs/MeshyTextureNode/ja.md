@@ -20,13 +20,12 @@
 * `text_style_prompt`または`image_style`のいずれかを指定する必要がありますが、両方を同時に指定することはできません。
 * `text_style_prompt`は最大600文字に制限されています。
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `meshy_task_id` | 生成されたGLBモデルのファイル名。この出力は後方互換性のために提供されています。 | STRING |
-| `GLB` | このテクスチャリングジョブの一意のタスク識別子。結果を参照するために使用できます。 | MODEL_TASK_ID |
-| `FBX` | GLBファイル形式で保存された、テクスチャが適用された3Dモデル。 | FILE3DGLB |
+| `model_file` | 生成されたGLBモデルのファイル名。この出力は後方互換性のために提供されています。 | STRING |
+| `meshy_task_id` | このテクスチャリングジョブの一意のタスク識別子。結果を参照するために使用できます。 | MODEL_TASK_ID |
+| `GLB` | GLBファイル形式で保存された、テクスチャが適用された3Dモデル。 | FILE3DGLB |
 | `FBX` | FBXファイル形式で保存された、テクスチャが適用された3Dモデル。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/ja.md)

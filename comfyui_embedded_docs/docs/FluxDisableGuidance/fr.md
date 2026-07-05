@@ -8,11 +8,10 @@ Ce nœud désactive complètement la fonction d'intégration du guidage pour Flu
 | --- | --- | --- | --- | --- |
 | `conditionnement` | Les données de conditionnement à traiter et dont le guidage doit être supprimé | CONDITIONING | Oui | - |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `conditionnement` | Les données de conditionnement modifiées avec le guidage désactivé | CONDITIONING |
+| `conditioning` | Les données de conditionnement modifiées avec le guidage désactivé | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxDisableGuidance/fr.md)
 

@@ -16,13 +16,12 @@ LTXVAddGuide düğümü, giriş görüntülerini veya videolarını kodlayarak v
 
 **Not:** Giriş görüntüsü/videosu, 8*n + 1 desenini izleyen bir kare sayısına sahip olmalıdır (örneğin, 1, 9, 17, 25 kare). Giriş bu deseni aşarsa, otomatik olarak en yakın geçerli kare sayısına kırpılır.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş pozitif koşullandırma | CONDITIONING |
-| `gizli` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş negatif koşullandırma | CONDITIONING |
-| `gizli` | Dahil edilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi ile latent dizi | LATENT |
+| `positive` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | Kare anahtarı yönlendirme bilgileriyle güncellenmiş negatif koşullandırma | CONDITIONING |
+| `latent` | Dahil edilmiş koşullandırma kareleri ve güncellenmiş gürültü maskesi ile latent dizi | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/tr.md)
 

@@ -17,11 +17,10 @@
 
 **注記：** マスクが指定された場合、自動的に反転（1.0 - マスク）され、制御ネットワーク処理に必要な次元にリシェイプされます。このノードは、モデルパッチがZImage Controlタイプか標準のDiffSynth制御ネットワークかによって、異なる内部処理方法を使用します。
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | 拡散合成制御ネットワークパッチが適用された変更済みモデル | MODEL |
+| `model` | 拡散合成制御ネットワークパッチが適用された変更済みモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/ja.md)
 

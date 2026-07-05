@@ -17,11 +17,10 @@
 | `طريقة التصغير` | طريقة الاستيفاء المستخدمة في عمليات التقليص | COMBO | لا | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 | `طريقة التكبير` | طريقة الاستيفاء المستخدمة في عمليات التمديد | COMBO | لا | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
-## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `النموذج` | النموذج المعدل مع تطبيق تصحيح التقليص | MODEL |
+| `model` | النموذج المعدل مع تطبيق تصحيح التقليص | MODEL |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/ar.md)
 

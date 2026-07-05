@@ -18,12 +18,11 @@ Le nœud WanHuMoImageToVideo convertit des images en séquences vidéo en géné
 
 **Remarque :** Lorsqu'une image de référence est fournie, elle est encodée et ajoutée au conditionnement positif et négatif. Lorsque la sortie de l'encodeur audio est fournie, elle est traitée et incorporée dans les données de conditionnement. Si aucun des deux n'est fourni, des tenseurs de substitution remplis de zéros sont utilisés pour les latents de référence et les embeddings audio.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
+| `negative` | Conditionnement négatif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
 | `latent` | Représentation latente générée contenant les données de la séquence vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/fr.md)

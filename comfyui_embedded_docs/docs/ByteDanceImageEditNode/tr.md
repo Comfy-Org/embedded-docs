@@ -13,11 +13,10 @@ ByteDance Image Edit düğümü, ByteDance'in yapay zeka modellerini bir API ara
 | `guidance_scale` | Daha yüksek değer, görselin istemi daha yakından takip etmesini sağlar | ONDALIK | ONDALIK | 5.5 | 1.0-10.0 |
 | `watermark` | Görsele "AI tarafından oluşturuldu" filigranı eklenip eklenmeyeceği | MANTIKSAL | MANTIKSAL | True | - |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GÖRSEL` | ByteDance API'sinden döndürülen düzenlenmiş görsel | GÖRSEL |
+| `IMAGE` | ByteDance API'sinden döndürülen düzenlenmiş görsel | GÖRSEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceImageEditNode/tr.md)
 

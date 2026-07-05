@@ -15,12 +15,11 @@ El nodo WanSoundImageToVideoExtend extiende un latente de video existente genera
 | `imagen_ref` | Imagen de referencia opcional que proporciona guía visual para la generación del video | IMAGE | No | - |
 | `video_control` | Video de control opcional que puede guiar el movimiento y el estilo del video generado | IMAGE | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo procesado con contexto de video aplicado | CONDITIONING |
-| `latente` | Condicionamiento negativo procesado con contexto de video aplicado | CONDITIONING |
+| `positive` | Condicionamiento positivo procesado con contexto de video aplicado | CONDITIONING |
+| `negative` | Condicionamiento negativo procesado con contexto de video aplicado | CONDITIONING |
 | `latent` | Representación latente de video generada que contiene la secuencia de video extendida | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideoExtend/es.md)

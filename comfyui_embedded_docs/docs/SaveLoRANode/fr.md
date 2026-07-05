@@ -12,11 +12,10 @@ Le nœud SaveLoRA enregistre les modèles LoRA (Low-Rank Adaptation) dans votre 
 | `prefix` | Le préfixe à utiliser pour le fichier LoRA enregistré (par défaut : "loras/ComfyUI_trained_lora"). | STRING | Oui | - |
 | `steps` | Optionnel : Le nombre d'étapes pour lequel le LoRA a été entraîné, utilisé pour nommer le fichier enregistré. | INT | Non | - |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| *Aucun* | Ce nœud ne renvoie aucune sortie mais enregistre le modèle LoRA dans le répertoire de sortie. | - |
+| *None* | Ce nœud ne renvoie aucune sortie mais enregistre le modèle LoRA dans le répertoire de sortie. | - |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRANode/fr.md)
 

@@ -17,11 +17,10 @@ ConditioningSetAreaPercentageVideo 节点通过定义视频生成中的特定空
 | `z` | 区域时间起始位置占视频时间线的百分比 | FLOAT | 必需 | 0.0 | 0.0 - 1.0 |
 | `强度` | 应用于定义区域内 conditioning 的强度乘数 | FLOAT | 必需 | 1.0 | 0.0 - 10.0 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `调节` | 已应用指定区域和强度设置的修改后 conditioning 数据 | CONDITIONING |
+| `conditioning` | 已应用指定区域和强度设置的修改后 conditioning 数据 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningSetAreaPercentageVideo/zh.md)
 

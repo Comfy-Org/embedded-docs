@@ -18,12 +18,11 @@ El nodo HunyuanVideo15ImageToVideo prepara los datos de condicionamiento y espac
 
 **Nota:** Cuando se proporciona una `start_image`, se redimensiona automáticamente para que coincida con el `width` y `height` especificados mediante interpolación bilineal. Se utilizan los primeros `length` fotogramas del lote de imágenes. La imagen codificada se agrega tanto al condicionamiento `positive` como al `negative` como un `concat_latent_image` con un `concat_mask` correspondiente. La máscara se establece en 0.0 para los fotogramas cubiertos por la imagen de inicio y en 1.0 para los fotogramas restantes.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
-| `latente` | El condicionamiento negativo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
+| `positive` | El condicionamiento positivo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
+| `negative` | El condicionamiento negativo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
 | `latent` | Un tensor latente vacío con dimensiones configuradas para el tamaño de lote, la duración del video, el ancho y la altura especificados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/es.md)

@@ -11,11 +11,10 @@ Le nœud SaveVideo enregistre le contenu vidéo d’entrée dans votre répertoi
 | `format` | Le format de sauvegarde de la vidéo (par défaut : "auto"). | COMBO | Non | `"auto"`<br>`"mp4"`<br>`"webm"`<br>`"mkv"`<br>`"gif"` |
 | `codec` | Le codec à utiliser pour la vidéo (par défaut : "auto"). | COMBO | Non | `"auto"`<br>`"h264"`<br>`"h265"`<br>`"vp9"`<br>`"av1"`<br>`"prores"` |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| *Aucune sortie* | Ce nœud ne renvoie aucune donnée de sortie. | - |
+| ui | Ce nœud ne renvoie aucune donnée de sortie. | - |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveVideo/fr.md)
 

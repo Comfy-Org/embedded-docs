@@ -27,12 +27,11 @@ SAM3 检测节点使用文本描述、边界框或点提示执行开放词汇检
 - **批量处理**：节点支持批量图像。处理多个帧时，可以使用列表的列表格式为每个帧提供边界框。
 - **点的 JSON 格式**：点坐标必须作为有效的 JSON 字符串提供，格式为 `[{"x": 100, "y": 200}, {"x": 150, "y": 250}]`。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `边界框` | 分割遮罩。当 `单独 mask` 为 False（默认值）时，返回每个帧的单个合并遮罩。当为 True 时，返回每个检测到的对象的单独遮罩 | MASK |
-| `边界框` | 检测到的边界框，包含坐标和置信度得分。每个框包括 `x`、`y`、`width`、`height` 和 `score` 值 | BOUNDING_BOX |
+| `masks` | 分割遮罩。当 `单独 mask` 为 False（默认值）时，返回每个帧的单个合并遮罩。当为 True 时，返回每个检测到的对象的单独遮罩 | MASK |
+| `bboxes` | 检测到的边界框，包含坐标和置信度得分。每个框包括 `x`、`y`、`width`、`height` 和 `score` 值 | BOUNDING_BOX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/zh.md)
 

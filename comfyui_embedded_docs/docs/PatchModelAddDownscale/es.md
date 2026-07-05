@@ -15,11 +15,10 @@ El nodo PatchModelAddDownscale implementa la funcionalidad Kohya Deep Shrink apl
 | `método_de_reducción` | El método de interpolación utilizado para las operaciones de reducción de escala | COMBO | No | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 | `método_de_ampliación` | El método de interpolación utilizado para las operaciones de aumento de escala | COMBO | No | "bicubic"<br>"nearest-exact"<br>"bilinear"<br>"area"<br>"bislerp" |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con el parche de reducción de escala aplicado | MODEL |
+| `model` | El modelo modificado con el parche de reducción de escala aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PatchModelAddDownscale/es.md)
 

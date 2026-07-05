@@ -13,11 +13,10 @@
 | `下` | 指示在图像底部添加的填充量，影响外绘的垂直扩展范围。 | `INT` |
 | `羽化` | 控制原始图像与新增填充区域之间过渡的平滑度，增强外绘的视觉融合效果。 | `INT` |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `图像` | 输出“image”表示填充后的图像，已准备好进行外绘流程。 | `IMAGE` |
+| `image` | 输出“image”表示填充后的图像，已准备好进行外绘流程。 | `IMAGE` |
 | `mask` | 输出“mask”指示原始图像和新增填充区域的分布，用于引导外绘算法。 | `MASK` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImagePadForOutpaint/zh.md)

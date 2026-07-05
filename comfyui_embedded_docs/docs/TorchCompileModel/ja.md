@@ -11,11 +11,10 @@ TorchCompileModel ノードは、PyTorch のコンパイル機能をモデルに
 | `モデル` | コンパイルおよび最適化されるモデル | MODEL | はい | - |
 | `バックエンド` | 最適化に使用する PyTorch コンパイルバックエンド（デフォルト："inductor"） | STRING | はい | "inductor"<br>"cudagraphs" |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `モデル` | PyTorch コンパイルが適用されたコンパイル済みモデル | MODEL |
+| `model` | PyTorch コンパイルが適用されたコンパイル済みモデル | MODEL |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TorchCompileModel/ja.md)
 

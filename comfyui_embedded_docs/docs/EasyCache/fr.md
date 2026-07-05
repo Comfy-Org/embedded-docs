@@ -12,11 +12,10 @@ Le nœud EasyCache implémente un système de cache natif pour les modèles afin
 | `pourcentage_de_fin` | L'étape d'échantillonnage relative pour cesser d'utiliser EasyCache (par défaut : 0,95). | FLOAT | Non | 0,0 - 1,0 |
 | `verbeux` | Indique s'il faut journaliser les informations détaillées (par défaut : False). | BOOLEAN | Non | - |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle avec la fonctionnalité EasyCache ajoutée. | MODEL |
+| `model` | Le modèle avec la fonctionnalité EasyCache ajoutée. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EasyCache/fr.md)
 

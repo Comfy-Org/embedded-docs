@@ -8,11 +8,10 @@ Este nodo está obsoleto y no cumple ninguna función. Acepta un modelo como ent
 | --- | --- | --- | --- | --- |
 | `modelo` | El modelo que se pasa a través del nodo. | MODEL | Sí |  |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El mismo modelo que se proporcionó como entrada, sin cambios. | MODEL |
+| `model` | El mismo modelo que se proporcionó como entrada, sin cambios. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/wanBlockSwap/es.md)
 

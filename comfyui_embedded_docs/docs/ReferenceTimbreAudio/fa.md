@@ -9,11 +9,10 @@
 | `شرایط‌دهی` | داده conditioning که اطلاعات صدای مرجع به آن متصل خواهد شد. | CONDITIONING | بله |  |
 | `latent` | یک نمایش نهفته اختیاری از صدای مرجع. در صورت ارائه، نمونه‌های آن به conditioning اضافه می‌شوند. | LATENT | خیر |  |
 
-## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `شرایط‌دهی` | داده conditioning اصلاح‌شده که اکنون شامل تِمْبرهای نهفته صدای مرجع است (در صورت ارائه ورودی اختیاری `latent`). | CONDITIONING |
+| `conditioning` | داده conditioning اصلاح‌شده که اکنون شامل تِمْبرهای نهفته صدای مرجع است (در صورت ارائه ورودی اختیاری `latent`). | CONDITIONING |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReferenceTimbreAudio/fa.md)
 

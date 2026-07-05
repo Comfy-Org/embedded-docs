@@ -15,11 +15,10 @@ Bir görüntüdeki yüzleri algılar ve MediaPipe'in BlazeFace ile FaceMesh mode
 | `min_confidence` | BlazeFace puan eşiği. Daha düşük değerler, küçük veya kısmen görünen yüzleri yakalamaya yardımcı olur. Varsayılan: 0,5. | FLOAT | Hayır | 0,00 ile 1,00 |
 | `missing_frame_fallback` | Bir toplulukta algılama başarısız olduğunda kare başına davranış. `"empty"`, kareyi yüzsüz bırakır. `"previous"`, en son başarılı algılamayı kopyalar. `"interpolate"`, başarılı kareler arasında işaret noktaları/sınırlayıcı kutular/karışım şekilleri arasında doğrusal enterpolasyon yapar. Çoklu yüz: yüzleri kareler arasında açgözlü sınırlayıcı kutu merkezi NN ile eşleştirir. Varsayılan: `"empty"`. | COMBO | Hayır | `"empty"`<br>`"previous"`<br>`"interpolate"` |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `bboxes` | Kare başına yüz algılama sonuçlarını içeren yapılandırılmış bir çıktı. 468 yüz işaret noktası, ARKit-52 karışım şekli katsayıları, dönüşüm matrisleri ve ağ görselleştirme için bağlantı kümelerini içerir. | FACE_LANDMARKS |
+| `face_landmarks` | Kare başına yüz algılama sonuçlarını içeren yapılandırılmış bir çıktı. 468 yüz işaret noktası, ARKit-52 karışım şekli katsayıları, dönüşüm matrisleri ve ağ görselleştirme için bağlantı kümelerini içerir. | FACE_LANDMARKS |
 | `bboxes` | Algılanan her yüz için sınırlayıcı kutuların listesi; koordinatlar (x, y, genişlik, yükseklik), "yüz" etiketi ve güven puanı ile birlikte. Giriş karesi başına bir liste. | BOUNDING_BOX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/tr.md)

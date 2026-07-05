@@ -14,11 +14,10 @@ Este nodo aplica transformaciones avanzadas de red de control a datos de condici
 | `porcentaje_inicio` | El porcentaje inicial del efecto de la red de control, permitiendo la aplicación gradual de transformaciones en un rango especificado. | `FLOAT` |
 | `porcentaje_fin` | El porcentaje final del efecto de la red de control, que define el rango sobre el cual se aplican las transformaciones. Esto permite un control más matizado del proceso de ajuste. | `FLOAT` |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Los datos de condicionamiento positivo modificados tras la aplicación de las transformaciones de la red de control, reflejando las mejoras realizadas según los parámetros de entrada. | `CONDITIONING` |
-| `negativo` | Los datos de condicionamiento negativo modificados tras la aplicación de las transformaciones de la red de control, reflejando la supresión o eliminación de características específicas según los parámetros de entrada. | `CONDITIONING` |
+| `positive` | Los datos de condicionamiento positivo modificados tras la aplicación de las transformaciones de la red de control, reflejando las mejoras realizadas según los parámetros de entrada. | `CONDITIONING` |
+| `negative` | Los datos de condicionamiento negativo modificados tras la aplicación de las transformaciones de la red de control, reflejando la supresión o eliminación de características específicas según los parámetros de entrada. | `CONDITIONING` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/es.md)

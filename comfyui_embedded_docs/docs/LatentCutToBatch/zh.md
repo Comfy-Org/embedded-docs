@@ -12,11 +12,10 @@ LatentCutToBatch 节点沿选定维度将潜在表示分割成多个切片，并
 | `维度` | 沿此维度切割潜在样本。`"t"` 指时间维度，`"x"` 指宽度，`"y"` 指高度。 | COMBO | 是 | `"t"`<br>`"x"`<br>`"y"` |
 | `碎片大小` | 从指定维度切割的每个切片的大小。如果该维度的大小不能被此值整除，则丢弃余数。（默认值：1） | INT | 是 | 1 至 16384 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `Latent` | 生成的潜在批次，包含切割并堆叠后的样本。 | LATENT |
+| `samples` | 生成的潜在批次，包含切割并堆叠后的样本。 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LatentCutToBatch/zh.md)
 

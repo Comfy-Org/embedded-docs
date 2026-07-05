@@ -19,12 +19,11 @@ WanCameraImageToVideo düğümü, video oluşturma için gizil temsiller üreter
 
 **Not:** `start_image` sağlandığında, düğüm video dizisini başlatmak için bunu kullanır ve başlangıç karelerini oluşturulan içerikle harmanlamak için maskeleme uygular. `camera_conditions` ve `clip_vision_output` parametreleri isteğe bağlıdır ancak sağlandıklarında hem pozitif hem de negatif yönlendirmeler için koşullandırmayı değiştirirler.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `latent` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `positive` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş negatif koşullandırma | CONDITIONING |
 | `latent` | Video modelleriyle kullanım için oluşturulan video gizil temsili. Gizil tensör, [batch_size, 16, frames, height/8, width/8] boyutlarına sahiptir; burada frames, ((length - 1) // 4) + 1 olarak hesaplanır. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/tr.md)

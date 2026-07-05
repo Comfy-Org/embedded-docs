@@ -11,10 +11,9 @@
 | `强度` | 决定 CLIP 视觉输出对条件处理影响的程度。 | `FLOAT` |
 | `噪波增强` | 指定在将 CLIP 视觉输出整合到条件处理之前，对其应用的噪声增强级别。 | `FLOAT` |
 
-## 输出
 
 | 参数 | 描述 | Comfy 数据类型 |
 | --- | --- | --- |
-| `条件` | 经过丰富处理的条件数据，现在包含已应用强度和噪声增强的整合 CLIP 视觉输出。 | `CONDITIONING` |
+| `conditioning` | 经过丰富处理的条件数据，现在包含已应用强度和噪声增强的整合 CLIP 视觉输出。 | `CONDITIONING` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/zh.md)

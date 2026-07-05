@@ -17,11 +17,10 @@ Détecte les visages dans une image et identifie 468 points de repère faciaux (
 | `min_confidence` | Seuil de score BlazeFace. Des valeurs plus faibles aident à détecter les petits visages ou les visages partiellement masqués. Par défaut : 0,5. | FLOAT | Non | 0,00 à 1,00 |
 | `missing_frame_fallback` | Comportement par image lorsque la détection échoue dans un lot. `"empty"` laisse l'image sans visage. `"previous"` copie la détection réussie la plus récente. `"interpolate"` interpole linéairement les points de repère/boîtes englobantes/formes de mélange entre les images réussies encadrantes. Multi-visage : apparie les visages entre les images par un algorithme glouton du plus proche voisin du centre de la boîte englobante. Par défaut : `"empty"`. | COMBO | Non | `"empty"`<br>`"previous"`<br>`"interpolate"` |
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `bboxes` | Une sortie structurée contenant les résultats de détection de visage par image, incluant 468 points de repère faciaux, les coefficients de mélange de formes ARKit-52, les matrices de transformation et les ensembles de connexions pour la visualisation du maillage. | FACE_LANDMARKS |
+| `face_landmarks` | Une sortie structurée contenant les résultats de détection de visage par image, incluant 468 points de repère faciaux, les coefficients de mélange de formes ARKit-52, les matrices de transformation et les ensembles de connexions pour la visualisation du maillage. | FACE_LANDMARKS |
 | `bboxes` | Une liste de boîtes englobantes pour chaque visage détecté, avec les coordonnées (x, y, largeur, hauteur), l'étiquette "face" et le score de confiance. Une liste par image d'entrée. | BOUNDING_BOX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/fr.md)

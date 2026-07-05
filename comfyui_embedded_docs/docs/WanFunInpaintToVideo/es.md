@@ -17,12 +17,11 @@ El nodo WanFunInpaintToVideo crea secuencias de video mediante interpolación en
 | `imagen_inicial` | Imagen de fotograma inicial opcional para la generación de video | IMAGE | No | - |
 | `imagen_final` | Imagen de fotograma final opcional para la generación de video | IMAGE | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Salida de condicionamiento positivo procesado | CONDITIONING |
-| `latente` | Salida de condicionamiento negativo procesado | CONDITIONING |
+| `positive` | Salida de condicionamiento positivo procesado | CONDITIONING |
+| `negative` | Salida de condicionamiento negativo procesado | CONDITIONING |
 | `latent` | Representación latente del video generado | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/es.md)

@@ -12,11 +12,10 @@ El nodo FreeU_V2 mejora la calidad de generación de imágenes aplicando modific
 | `s1` | Factor de escala de características de salto para el primer bloque (predeterminado: 0.9) | FLOAT | Sí | 0.0 - 10.0 |
 | `s2` | Factor de escala de características de salto para el segundo bloque (predeterminado: 0.2) | FLOAT | Sí | 0.0 - 10.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo de difusión mejorado con las modificaciones FreeU aplicadas | MODEL |
+| `model` | El modelo de difusión mejorado con las modificaciones FreeU aplicadas | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU_V2/es.md)
 

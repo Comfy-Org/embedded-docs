@@ -10,11 +10,10 @@ Görüntü Listelerini Birleştir düğümü, birden fazla ayrı görüntü list
 
 **Not:** Bu düğüm birden fazla girdi alacak şekilde tasarlanmıştır. Tek `images` girdi soketine birden fazla görüntü listesi bağlayabilirsiniz. Düğüm, bağlı tüm listelerdeki tüm görüntüleri otomatik olarak tek bir çıktı listesinde birleştirecektir.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `görüntüler` | Bağlı her girdi listesindeki tüm görüntüleri içeren, birleştirilmiş tek liste. | IMAGE |
+| `images` | Bağlı her girdi listesindeki tüm görüntüleri içeren, birleştirilmiş tek liste. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeImageLists/tr.md)
 

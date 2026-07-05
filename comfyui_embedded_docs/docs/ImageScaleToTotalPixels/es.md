@@ -10,10 +10,9 @@ El nodo ImageScaleToTotalPixels está diseñado para redimensionar imágenes a u
 | `metodo_ampliacion` | El método utilizado para escalar la imagen. Afecta la calidad y las características de la imagen escalada. | COMBO[STRING] |
 | `megapixeles` | El tamaño objetivo de la imagen en megapíxeles. Esto determina el número total de píxeles en la imagen escalada. | `FLOAT` |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La imagen escalada con el número total de píxeles especificado, manteniendo la relación de aspecto original. | `IMAGE` |
+| `image` | La imagen escalada con el número total de píxeles especificado, manteniendo la relación de aspecto original. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageScaleToTotalPixels/es.md)

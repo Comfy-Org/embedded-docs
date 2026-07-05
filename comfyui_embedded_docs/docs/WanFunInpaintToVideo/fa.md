@@ -19,12 +19,11 @@
 | `تصویر شروع` | فریم تصویر شروع اختیاری برای تولید ویدیو | IMAGE | خیر | - |
 | `تصویر پایان` | فریم تصویر پایان اختیاری برای تولید ویدیو | IMAGE | خیر | - |
 
-## خروجی‌ها
 
 | نام خروجی | توضیحات | نوع داده |
 | --- | --- | --- |
-| `مثبت` | خروجی conditioning مثبت پردازش‌شده | CONDITIONING |
-| `منفی` | خروجی conditioning منفی پردازش‌شده | CONDITIONING |
+| `positive` | خروجی conditioning مثبت پردازش‌شده | CONDITIONING |
+| `negative` | خروجی conditioning منفی پردازش‌شده | CONDITIONING |
 | `latent` | نمایش لاتنت ویدیوی تولیدشده | LATENT |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/fa.md)

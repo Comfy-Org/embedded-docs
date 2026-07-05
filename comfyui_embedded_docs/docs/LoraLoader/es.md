@@ -21,11 +21,10 @@ Si necesitas cargar múltiples modelos LoRA, puedes encadenar directamente vario
 | `fuerza_modelo` | Rango de valores de -100.0 a 100.0, normalmente se usa entre 0~1 para la generación diaria de imágenes. Valores más altos producen efectos de ajuste del modelo más pronunciados | FLOAT |
 | `fuerza_clip` | Rango de valores de -100.0 a 100.0, normalmente se usa entre 0~1 para la generación diaria de imágenes. Valores más altos producen efectos de ajuste del modelo más pronunciados | FLOAT |
 
-## Salidas
 
 | Parámetro | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `modelo` | El modelo con los ajustes LoRA aplicados | MODEL |
+| `model` | El modelo con los ajustes LoRA aplicados | MODEL |
 | `clip` | La instancia CLIP con los ajustes LoRA aplicados | CLIP |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/es.md)

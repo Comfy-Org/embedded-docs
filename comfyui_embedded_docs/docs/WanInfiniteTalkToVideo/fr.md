@@ -32,14 +32,13 @@ Le nœud WanInfiniteTalkToVideo génère des séquences vidéo à partir d’une
 * Si `mask_1` et `mask_2` sont fournis, `audio_encoder_output_2` doit également être fourni.
 * Si `previous_frames` est fourni, il doit contenir au moins autant d’images que spécifié par `motion_frame_count`.
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `positif` | Le modèle patché avec le conditionnement audio appliqué. | MODEL |
-| `négatif` | Le conditionnement positif, potentiellement modifié avec un contexte supplémentaire (ex. : image de départ, CLIP vision). | CONDITIONING |
-| `latent` | Le conditionnement négatif, potentiellement modifié avec un contexte supplémentaire. | CONDITIONING |
-| `image rognée` | La séquence vidéo générée dans l’espace latent. | LATENT |
+| `model` | Le modèle patché avec le conditionnement audio appliqué. | MODEL |
+| `positive` | Le conditionnement positif, potentiellement modifié avec un contexte supplémentaire (ex. : image de départ, CLIP vision). | CONDITIONING |
+| `negative` | Le conditionnement négatif, potentiellement modifié avec un contexte supplémentaire. | CONDITIONING |
+| `latent` | La séquence vidéo générée dans l’espace latent. | LATENT |
 | `trim_image` | Le nombre d’images depuis le début du contexte de mouvement qui doivent être supprimées lors de l’extension d’une séquence. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/fr.md)

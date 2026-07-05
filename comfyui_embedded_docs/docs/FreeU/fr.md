@@ -14,11 +14,10 @@ Le nœud FreeU applique des modifications dans le domaine fréquentiel aux blocs
 | `s1` | Facteur d'échelle de la connexion de saut pour les caractéristiques model_channels × 4 (par défaut : 0.9) | FLOAT | Oui | 0.0 - 10.0 |
 | `s2` | Facteur d'échelle de la connexion de saut pour les caractéristiques model_channels × 2 (par défaut : 0.2) | FLOAT | Oui | 0.0 - 10.0 |
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec les correctifs FreeU appliqués | MODEL |
+| `model` | Le modèle modifié avec les correctifs FreeU appliqués | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU/fr.md)
 

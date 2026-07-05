@@ -9,11 +9,10 @@ El nodo ThresholdMask convierte una máscara en una máscara binaria aplicando u
 | `máscara` | La máscara de entrada que se procesará | MASK | Sí | - |
 | `valor` | El valor de umbral para la binarización (predeterminado: 0.5) | FLOAT | Sí | 0.0 - 1.0 |
 
-## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `máscara` | La máscara binaria resultante después de aplicar el umbral | MASK |
+| `mask` | La máscara binaria resultante después de aplicar el umbral | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ThresholdMask/es.md)
 

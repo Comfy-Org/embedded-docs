@@ -17,11 +17,10 @@ El nodo Ventanas de Contexto WAN (Manual) permite configurar manualmente ventana
 
 **Nota:** El parámetro `context_stride` solo afecta a las programaciones uniformes, y `closed_loop` solo se aplica a las programaciones en bucle. Los valores de longitud y superposición de contexto se ajustan automáticamente para garantizar valores mínimos válidos durante el procesamiento. El parámetro `fuse_method` ahora incluye opciones adicionales más allá de solo "pyramid".
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo con la configuración de ventana de contexto aplicada. | MODEL |
+| `model` | El modelo con la configuración de ventana de contexto aplicada. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/es.md)
 

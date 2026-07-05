@@ -14,11 +14,10 @@ Versión simplificada del nodo SkipLayerGuidanceDiT que solo modifica el paso in
 
 **Nota:** La guía de salto de capas solo se aplica cuando tanto `double_layers` como `single_layers` contienen índices de capas válidos. Si ambos están vacíos, el nodo devuelve el modelo original sin cambios. La guía de salto de capas está activa únicamente cuando el valor sigma del paso actual de eliminación de ruido se encuentra entre `start_percent` y `end_percent` (convertidos internamente a valores sigma).
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con guía de salto de capas aplicada a las capas especificadas | MODEL |
+| `model` | El modelo modificado con guía de salto de capas aplicada a las capas especificadas | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceDiTSimple/es.md)
 

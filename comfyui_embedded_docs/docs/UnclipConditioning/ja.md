@@ -11,10 +11,9 @@
 | `強度` | 条件付けに対するCLIPビジョン出力の影響の強度を決定します。 | `FLOAT` |
 | `ノイズ増強` | 条件付けに統合する前に、CLIPビジョン出力に適用するノイズ拡張のレベルを指定します。 | `FLOAT` |
 
-## 出力
 
 | パラメータ | 説明 | Comfy dtype |
 | --- | --- | --- |
-| `コンディショニング` | 強化された条件付けデータで、適用された強度とノイズ拡張を含む統合済みのCLIPビジョン出力が含まれています。 | `CONDITIONING` |
+| `conditioning` | 強化された条件付けデータで、適用された強度とノイズ拡張を含む統合済みのCLIPビジョン出力が含まれています。 | `CONDITIONING` |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/unCLIPConditioning/ja.md)

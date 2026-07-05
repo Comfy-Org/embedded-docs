@@ -12,11 +12,10 @@ Le nœud FreeU_V2 améliore la qualité de génération d'images en appliquant d
 | `s1` | Facteur d'échelle des caractéristiques de saut pour le premier bloc (par défaut : 0,9) | FLOAT | Oui | 0,0 - 10,0 |
 | `s2` | Facteur d'échelle des caractéristiques de saut pour le deuxième bloc (par défaut : 0,2) | FLOAT | Oui | 0,0 - 10,0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle de diffusion amélioré avec les modifications FreeU appliquées | MODEL |
+| `model` | Le modèle de diffusion amélioré avec les modifications FreeU appliquées | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FreeU_V2/fr.md)
 

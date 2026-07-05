@@ -16,12 +16,11 @@ El nodo `SVD_img2vid_Conditioning` prepara los datos de condicionamiento para la
 | `fps` | Fotogramas por segundo para el video generado (predeterminado: 6) | INT | Sí | 1 a 1024 |
 | `nivel_de_aumento` | Nivel de aumento de ruido a aplicar a la imagen de entrada (predeterminado: 0.0, paso: 0.01) | FLOAT | Sí | 0.0 a 10.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Datos de condicionamiento positivo que contienen las incrustaciones de imagen y los parámetros de video | CONDITIONING |
-| `latente` | Datos de condicionamiento negativo con incrustaciones y parámetros de video puestos a cero | CONDITIONING |
+| `positive` | Datos de condicionamiento positivo que contienen las incrustaciones de imagen y los parámetros de video | CONDITIONING |
+| `negative` | Datos de condicionamiento negativo con incrustaciones y parámetros de video puestos a cero | CONDITIONING |
 | `latent` | Tensor de espacio latente vacío listo para la generación de video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SVD_img2vid_Conditioning/es.md)

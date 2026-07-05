@@ -19,12 +19,11 @@ StableZero123_Conditioning_Batched düğümü, bir giriş görüntüsünü işle
 
 **Not:** `width` ve `height` parametreleri 8'e bölünebilir olmalıdır çünkü düğüm, gizli uzay oluşturma için bu boyutları dahili olarak 8'e böler.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Görüntü yerleştirmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
-| `gizli` | Sıfır başlangıçlı yerleştirmelere sahip negatif koşullandırma verileri | CONDITIONING |
+| `positive` | Görüntü yerleştirmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
+| `negative` | Sıfır başlangıçlı yerleştirmelere sahip negatif koşullandırma verileri | CONDITIONING |
 | `latent` | Toplu işlem indeksleme bilgisi ile işlenmiş görüntünün gizli temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning_Batched/tr.md)

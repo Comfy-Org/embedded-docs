@@ -9,11 +9,10 @@
 | `模型` | 要修改的扩散模型 | MODEL | 是 | - |
 | `强度` | 控制原始去噪掩码与二值阈值掩码之间的混合强度（默认值：1.0） | FLOAT | 否 | 0.0 - 1.0 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 已修改的扩散模型，具有更新后的去噪掩码函数 | MODEL |
+| `model` | 已修改的扩散模型，具有更新后的去噪掩码函数 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DifferentialDiffusion/zh.md)
 

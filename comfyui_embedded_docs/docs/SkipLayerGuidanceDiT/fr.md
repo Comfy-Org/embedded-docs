@@ -16,11 +16,10 @@ Améliore le guidage vers une structure détaillée en utilisant un autre ensemb
 
 **Remarque :** Si `double_layers` et `single_layers` sont tous deux vides (ne contiennent aucun numéro de couche), le nœud renvoie le modèle original sans appliquer aucun guidage.
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec le guidage par saut de couche appliqué | MODEL |
+| `model` | Le modèle modifié avec le guidage par saut de couche appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceDiT/fr.md)
 

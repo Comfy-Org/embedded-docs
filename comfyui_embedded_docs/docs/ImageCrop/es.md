@@ -12,10 +12,9 @@ El nodo `ImageCrop` está diseñado para recortar imágenes a un ancho y alto es
 | `x` | La coordenada x de la esquina superior izquierda del área de recorte. Este parámetro establece el punto de inicio para la dimensión de ancho del recorte. | `INT` |
 | `y` | La coordenada y de la esquina superior izquierda del área de recorte. Este parámetro establece el punto de inicio para la dimensión de alto del recorte. | `INT` |
 
-## Salidas
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | La imagen recortada como resultado de la operación de recorte. Esta salida es importante para el procesamiento o análisis posterior de la región de imagen especificada. | `IMAGE` |
+| `image` | La imagen recortada como resultado de la operación de recorte. Esta salida es importante para el procesamiento o análisis posterior de la región de imagen especificada. | `IMAGE` |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCrop/es.md)

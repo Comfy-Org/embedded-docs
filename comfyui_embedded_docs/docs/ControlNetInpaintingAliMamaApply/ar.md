@@ -20,12 +20,11 @@
 
 **ملاحظة:** عند تمكين خاصية `concat_mask` في ControlNet، يتم عكس القناع وتطبيقه على الصورة قبل المعالجة، ويتم تضمين القناع في بيانات الربط الإضافية المرسلة إلى ControlNet.
 
-## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `سلبي` | التهيئة الإيجابية المعدلة مع تطبيق ControlNet لأغراض الترميم | CONDITIONING |
-| `سلبي` | التهيئة السالبة المعدلة مع تطبيق ControlNet لأغراض الترميم | CONDITIONING |
+| `positive` | التهيئة الإيجابية المعدلة مع تطبيق ControlNet لأغراض الترميم | CONDITIONING |
+| `negative` | التهيئة السالبة المعدلة مع تطبيق ControlNet لأغراض الترميم | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/ar.md)
 

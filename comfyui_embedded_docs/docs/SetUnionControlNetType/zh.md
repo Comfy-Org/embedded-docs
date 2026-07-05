@@ -9,11 +9,10 @@ SetUnionControlNetType 节点允许您指定用于条件控制的网络类型。
 | `ControlNet` | 需要修改类型设置的控制网络 | CONTROL_NET | 是 | - |
 | `类型` | 要应用的控制网络类型。使用 "auto" 进行自动类型检测，或从可用选项中选择特定的控制网络类型 | STRING | 是 | `"auto"`<br>所有可用的 UNION_CONTROLNET_TYPES 键 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `ControlNet` | 已应用指定类型设置的修改后控制网络 | CONTROL_NET |
+| `control_net` | 已应用指定类型设置的修改后控制网络 | CONTROL_NET |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetUnionControlNetType/zh.md)
 

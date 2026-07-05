@@ -8,12 +8,11 @@ El nodo ImageRGBToYUV convierte imágenes en color RGB al espacio de color YUV. 
 | --- | --- | --- | --- | --- |
 | `imagen` | La imagen RGB de entrada que se convertirá al espacio de color YUV | IMAGE | Sí | - |
 
-## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `U` | El componente de luminancia (brillo) del espacio de color YUV | IMAGE |
-| `V` | El componente de proyección azul del espacio de color YUV | IMAGE |
+| `Y` | El componente de luminancia (brillo) del espacio de color YUV | IMAGE |
+| `U` | El componente de proyección azul del espacio de color YUV | IMAGE |
 | `V` | El componente de proyección roja del espacio de color YUV | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/es.md)

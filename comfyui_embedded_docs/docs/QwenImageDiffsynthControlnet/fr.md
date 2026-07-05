@@ -17,11 +17,10 @@ Le nœud QwenImageDiffsynthControlnet applique un patch de réseau de contrôle 
 
 **Remarque :** Lorsqu'un masque est fourni, il est automatiquement inversé (1,0 - masque) et redimensionné pour correspondre aux dimensions attendues pour le traitement du réseau de contrôle. Le nœud utilise différentes méthodes de traitement interne selon que le patch du modèle est de type ZImage Control ou un réseau de contrôle DiffSynth standard.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle modifié avec le patch de réseau de contrôle de synthèse par diffusion appliqué | MODEL |
+| `model` | Le modèle modifié avec le patch de réseau de contrôle de synthèse par diffusion appliqué | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/QwenImageDiffsynthControlnet/fr.md)
 

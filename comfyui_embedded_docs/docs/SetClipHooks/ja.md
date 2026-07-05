@@ -11,11 +11,10 @@ SetClipHooks ノードを使用すると、CLIPモデルにカスタムフック
 | `schedule_clip` | クリップスケジューリングを有効にするかどうか（デフォルト：False） | BOOLEAN | はい | - |
 | `フック` | CLIPモデルに適用するオプションのフックグループ | HOOKS | いいえ | - |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `クリップ` | 指定されたフックが適用されたクローンCLIPモデル | CLIP |
+| `clip` | 指定されたフックが適用されたクローンCLIPモデル | CLIP |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetClipHooks/ja.md)
 

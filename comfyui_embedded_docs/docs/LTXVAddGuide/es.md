@@ -16,13 +16,12 @@ El nodo LTXVAddGuide agrega guía de condicionamiento de video a secuencias late
 
 **Nota:** La imagen/video de entrada debe tener un número de fotogramas que siga el patrón 8*n + 1 (por ejemplo, 1, 9, 17, 25 fotogramas). Si la entrada supera este patrón, se recortará automáticamente al número de fotogramas válido más cercano.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo actualizado con información de guía de fotogramas clave | CONDITIONING |
-| `latente` | Condicionamiento negativo actualizado con información de guía de fotogramas clave | CONDITIONING |
-| `latente` | Secuencia latente con fotogramas de condicionamiento incorporados y máscara de ruido actualizada | LATENT |
+| `positive` | Condicionamiento positivo actualizado con información de guía de fotogramas clave | CONDITIONING |
+| `negative` | Condicionamiento negativo actualizado con información de guía de fotogramas clave | CONDITIONING |
+| `latent` | Secuencia latente con fotogramas de condicionamiento incorporados y máscara de ruido actualizada | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVAddGuide/es.md)
 

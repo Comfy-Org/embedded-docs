@@ -11,12 +11,11 @@ Le nœud HunyuanRefinerLatent traite les entrées de conditionnement et latentes
 | `latent` | L'entrée de représentation latente | LATENT | Oui | - |
 | `augmentation_du_bruit` | La quantité d'augmentation de bruit à appliquer (par défaut : 0,10) | FLOAT | Oui | 0,0 - 1,0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif traité avec augmentation de bruit appliquée et concaténation d'image latente | CONDITIONING |
-| `latent` | Le conditionnement négatif traité avec augmentation de bruit appliquée et concaténation d'image latente | CONDITIONING |
+| `positive` | Le conditionnement positif traité avec augmentation de bruit appliquée et concaténation d'image latente | CONDITIONING |
+| `negative` | Le conditionnement négatif traité avec augmentation de bruit appliquée et concaténation d'image latente | CONDITIONING |
 | `latent` | Une nouvelle sortie latente avec des dimensions [batch_size, 32, hauteur, largeur, canaux] | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/fr.md)

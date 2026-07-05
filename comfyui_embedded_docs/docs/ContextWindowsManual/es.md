@@ -26,11 +26,10 @@ El nodo **Ventanas de Contexto (Manual)** te permite configurar manualmente vent
 - `dim` debe estar entre 0 y 5 inclusive
 - `cond_retain_index_list` espera una lista de índices enteros separados por comas como una cadena (ej., "0,1,2")
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo con ventanas de contexto aplicadas durante el muestreo. | MODEL |
+| `model` | El modelo con ventanas de contexto aplicadas durante el muestreo. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ContextWindowsManual/es.md)
 

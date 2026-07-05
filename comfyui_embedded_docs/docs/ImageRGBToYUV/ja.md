@@ -8,12 +8,11 @@ ImageRGBToYUV ノードは、RGB カラー画像を YUV 色空間に変換しま
 | --- | --- | --- | --- | --- |
 | `画像` | YUV 色空間に変換する入力 RGB 画像 | IMAGE | はい | - |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `U` | YUV 色空間の輝度（明るさ）コンポーネント | IMAGE |
-| `V` | YUV 色空間の青色投影コンポーネント | IMAGE |
+| `Y` | YUV 色空間の輝度（明るさ）コンポーネント | IMAGE |
+| `U` | YUV 色空間の青色投影コンポーネント | IMAGE |
 | `V` | YUV 色空間の赤色投影コンポーネント | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageRGBToYUV/ja.md)

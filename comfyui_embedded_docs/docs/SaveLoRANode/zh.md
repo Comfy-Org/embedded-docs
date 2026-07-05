@@ -10,11 +10,10 @@ SaveLoRA 节点将 LoRA（低秩适配）模型保存到您的输出目录。它
 | `prefix` | 用于保存 LoRA 文件的前缀（默认值："loras/ComfyUI_trained_lora"）。 | STRING | 是 | - |
 | `steps` | 可选：LoRA 已训练的步数，用于命名保存的文件。 | INT | 否 | - |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| *无* | 此节点不返回任何输出，但会将 LoRA 模型保存到输出目录。 | - |
+| *None* | 此节点不返回任何输出，但会将 LoRA 模型保存到输出目录。 | - |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRANode/zh.md)
 

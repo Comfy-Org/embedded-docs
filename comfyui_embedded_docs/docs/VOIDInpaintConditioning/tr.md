@@ -16,12 +16,11 @@ VOIDInpaintConditioning düğümü, CogVideoX modelleriyle iç boyama (inpaintin
 | `length` | İşlenecek piksel kare sayısı. CogVideoX-Fun-V1.5 (patch_size_t=2) için latent_t çift olmalıdır — tek latent_t üreten uzunluklar aşağı yuvarlanır (örn. 49 → 45) (varsayılan: 45) | INT | Evet | 1 - MAKS_ÇÖZÜNÜRLÜK (adım: 1) |
 | `batch_size` | Çıktı gürültü gizli değişkeni için toplu iş boyutu (varsayılan: 1) | INT | Evet | 1 - 64 |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negative` | İç boyama gizli bilgisi eklenmiş pozitif koşullandırma | CONDITIONING |
-| `latent` | İç boyama gizli bilgisi eklenmiş negatif koşullandırma | CONDITIONING |
+| `positive` | İç boyama gizli bilgisi eklenmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | İç boyama gizli bilgisi eklenmiş negatif koşullandırma | CONDITIONING |
 | `latent` | [batch_size, 16, latent_t, latent_h, latent_w] şeklinde sıfır dolu gürültü gizli değişken tensörü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/tr.md)

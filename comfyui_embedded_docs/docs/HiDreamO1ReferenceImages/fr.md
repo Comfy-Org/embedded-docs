@@ -16,12 +16,11 @@ Attachez des images de référence aux conditionnements positif et négatif. Ce 
 
 **Remarque sur le paramètre `images` :** Il s'agit d'une entrée à croissance automatique qui accepte entre 1 et 10 images. Les images sont étiquetées `image_1` à `image_10`. Vous devez fournir au moins 1 image. Le nombre d'images détermine le mode de fonctionnement : une seule image est utilisée pour les instructions d'édition, tandis que plusieurs images (2 à 10) sont utilisées pour la personnalisation pilotée par un sujet.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif avec les images de référence attachées. | CONDITIONING |
-| `négatif` | Le conditionnement négatif avec les images de référence attachées. | CONDITIONING |
+| `positive` | Le conditionnement positif avec les images de référence attachées. | CONDITIONING |
+| `negative` | Le conditionnement négatif avec les images de référence attachées. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/fr.md)
 

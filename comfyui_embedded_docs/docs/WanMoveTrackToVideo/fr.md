@@ -20,12 +20,11 @@ Le nœud WanMoveTrackToVideo prépare les données de conditionnement et d'espac
 
 **Remarque :** Le paramètre `strength` n'a d'effet que lorsque des `tracks` sont fournies. Si aucune piste n'est fournie ou si `strength` est à 0,0, le conditionnement par pistes n'est pas appliqué. L'image de départ (`start_image`) est utilisée pour créer une image latente et un masque pour le conditionnement ; si elle n'est pas fournie, le nœud se contente de transmettre le conditionnement et produit un tenseur latent vide.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
+| `positive` | Le conditionnement positif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
+| `negative` | Le conditionnement négatif modifié, pouvant contenir `concat_latent_image`, `concat_mask` et `clip_vision_output`. | CONDITIONING |
 | `latent` | Un tenseur latent vide dont les dimensions sont définies par les entrées `taille_du_lot`, `longueur`, `hauteur` et `largeur`. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/fr.md)

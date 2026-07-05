@@ -13,12 +13,11 @@ Bu düğüm, bir dizi görüntüyü ve isteğe bağlı bir ses parçasını alar
 | `segment_sayısı` | Liste olarak yayınlanacak dolgulu parça sayısı (varsayılan: 1). | INT | Evet | 1 ila 100 |
 | `ses` | Yayınlanan her parça için dilimlenecek ses. | AUDIO | Hayır | Yok |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `anahtar_kare_maskeleri` | Her parça için bir tane olmak üzere dolgulu anahtar kare dizilerinin listesi. | IMAGE |
-| `ses_segmenti` | Her parça için geçerli kareleri belirten maskelerin listesi. | MASK |
+| `keyframes_sequence` | Her parça için bir tane olmak üzere dolgulu anahtar kare dizilerinin listesi. | IMAGE |
+| `keyframes_mask` | Her parça için geçerli kareleri belirten maskelerin listesi. | MASK |
 | `audio_segment` | Her video parçası için bir tane olmak üzere ses parçalarının listesi. | AUDIO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/tr.md)

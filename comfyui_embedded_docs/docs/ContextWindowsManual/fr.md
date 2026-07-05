@@ -32,11 +32,10 @@ Le nœud Fenêtres de Contexte (Manuel) vous permet de configurer manuellement l
 - `dim` doit être compris entre 0 et 5 inclus
 - `cond_retain_index_list` attend une liste d'indices entiers séparés par des virgules, sous forme de chaîne de caractères (par exemple, "0,1,2")
 
-## Sorties
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Le modèle avec les fenêtres de contexte appliquées lors de l'échantillonnage. | MODEL |
+| `model` | Le modèle avec les fenêtres de contexte appliquées lors de l'échantillonnage. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ContextWindowsManual/fr.md)
 

@@ -12,12 +12,11 @@
 
 **注意：** `images` 和 `texts` 输入必须是长度相同的列表。该节点会将第一张图像与第一个文本配对，第二张图像与第二个文本配对，依此类推，然后将这些配对一起打乱。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `文本` | 打乱后的图像列表。 | IMAGE |
-| `文本` | 打乱后的文本列表，保持与图像的原始配对关系。 | STRING |
+| `images` | 打乱后的图像列表。 | IMAGE |
+| `texts` | 打乱后的文本列表，保持与图像的原始配对关系。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleImageTextDataset/zh.md)
 

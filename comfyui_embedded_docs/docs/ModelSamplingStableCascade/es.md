@@ -9,11 +9,10 @@ El nodo ModelSamplingStableCascade aplica un muestreo en cascada estable a un mo
 | `modelo` | El modelo de entrada al que se aplicará el muestreo en cascada estable | MODEL | Sí | - |
 | `desplazamiento` | El valor de desplazamiento a aplicar a los parámetros de muestreo (predeterminado: 2.0) | FLOAT | Sí | 0.0 - 100.0 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con el muestreo en cascada estable aplicado | MODEL |
+| `model` | El modelo modificado con el muestreo en cascada estable aplicado | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelSamplingStableCascade/es.md)
 

@@ -10,11 +10,10 @@ El nodo USOStyleReference aplica parches de referencia de estilo a modelos utili
 | `parche_del_modelo` | El parche de modelo que contiene la información de referencia de estilo | MODEL_PATCH | Sí | - |
 | `salida_de_visión_clip` | Las características visuales codificadas extraídas del procesamiento de CLIP vision | CLIP_VISION_OUTPUT | Sí | - |
 
-## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con los parches de referencia de estilo aplicados | MODEL |
+| `model` | El modelo modificado con los parches de referencia de estilo aplicados | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/USOStyleReference/es.md)
 

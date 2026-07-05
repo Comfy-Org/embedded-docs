@@ -11,11 +11,10 @@ Ce nœud implémente la méthode d'échelle epsilon (Epsilon Scaling) issue de l
 | `modèle` | Le modèle auquel le correctif d'échelle epsilon sera appliqué. | MODEL | Oui | - |
 | `facteur_d'échelle` | Le facteur par lequel le bruit prédit est mis à l'échelle. Une valeur supérieure à 1,0 réduit le bruit, tandis qu'une valeur inférieure à 1,0 l'augmente (valeur par défaut : 1,005). | FLOAT | Non | 0.5 - 1.5 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle` | Une version corrigée du modèle d'entrée avec la fonction d'échelle epsilon appliquée à son processus d'échantillonnage. | MODEL |
+| `model` | Une version corrigée du modèle d'entrée avec la fonction d'échelle epsilon appliquée à son processus d'échantillonnage. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Epsilon Scaling/fr.md)
 

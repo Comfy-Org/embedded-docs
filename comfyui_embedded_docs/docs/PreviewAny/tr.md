@@ -8,11 +8,10 @@ PreviewAny düğümü, herhangi bir girdi veri türünün önizlemesini metin bi
 | --- | --- | --- | --- | --- |
 | `kaynak` | Önizleme görüntülemesi için herhangi bir girdi veri türünü kabul eder | ANY | Evet | Herhangi bir veri türü |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `UI Metin Görüntüleme` | Girdi verilerini metin biçimine dönüştürerek kullanıcı arayüzünde görüntüler. Ayrıca metni daha sonraki işlemler için bir dize çıktısı olarak döndürür. | STRING |
+| `UI Text Display` | Girdi verilerini metin biçimine dönüştürerek kullanıcı arayüzünde görüntüler. Ayrıca metni daha sonraki işlemler için bir dize çıktısı olarak döndürür. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAny/tr.md)
 

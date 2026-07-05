@@ -16,12 +16,11 @@ El nodo `PairConditioningSetPropertiesAndCombine` modifica y combina pares de co
 | `ganchos` | Grupo de hooks opcional para control avanzado | HOOKS | No | - |
 | `pasos_de_tiempo` | Especificación opcional de rango de pasos de tiempo | TIMESTEPS_RANGE | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | La salida de condicionamiento positivo combinado | CONDITIONING |
-| `negativo` | La salida de condicionamiento negativo combinado | CONDITIONING |
+| `positive` | La salida de condicionamiento positivo combinado | CONDITIONING |
+| `negative` | La salida de condicionamiento negativo combinado | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetPropertiesAndCombine/es.md)
 

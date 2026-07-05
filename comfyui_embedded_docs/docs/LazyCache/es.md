@@ -12,11 +12,10 @@ LazyCache es una versión casera de EasyCache que ofrece una implementación aú
 | `porcentaje_fin` | El paso de muestreo relativo para finalizar el uso de LazyCache (predeterminado: 0.95). | FLOAT | No | 0.0 - 1.0 |
 | `detallado` | Si se debe registrar información detallada (predeterminado: False). | BOOLEAN | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo con la funcionalidad LazyCache añadida. | MODEL |
+| `model` | El modelo con la funcionalidad LazyCache añadida. | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LazyCache/es.md)
 

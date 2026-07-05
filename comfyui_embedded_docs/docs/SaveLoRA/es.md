@@ -12,11 +12,10 @@ El nodo SaveLoRA guarda un modelo LoRA (Adaptación de Bajo Rango) en un archivo
 
 **Nota:** La entrada `lora` debe ser un modelo LoRA puro. No proporciones un modelo base que tenga capas LoRA aplicadas.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| *Ninguno* | Este nodo no envía ningún dato al flujo de trabajo. Es un nodo de salida que guarda un archivo en el disco. | N/A |
+| *None* | Este nodo no envía ningún dato al flujo de trabajo. Es un nodo de salida que guarda un archivo en el disco. | N/A |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRA/es.md)
 

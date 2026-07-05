@@ -12,10 +12,9 @@
 | `右` | 指定从右侧边缘开始应用羽化效果的距离。 | INT |
 | `底` | 指定从底部边缘开始应用羽化效果的距离。 | INT |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `遮罩` | 输出为输入蒙版的修改版本，其边缘已应用羽化效果。 | MASK |
+| `mask` | 输出为输入蒙版的修改版本，其边缘已应用羽化效果。 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FeatherMask/zh.md)

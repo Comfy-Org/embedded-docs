@@ -10,11 +10,10 @@
 | `操作` | 要应用的形态学运算（默认值："erode"） | STRING | 是 | `"erode"`<br>`"dilate"`<br>`"open"`<br>`"close"`<br>`"gradient"`<br>`"bottom_hat"`<br>`"top_hat"` |
 | `核心大小` | 结构元素内核的大小（默认值：3）。必须为奇数。 | INT | 是 | 3-999 |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `图像` | 应用形态学运算后处理完成的图像 | IMAGE |
+| `image` | 应用形态学运算后处理完成的图像 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Morphology/zh.md)
 

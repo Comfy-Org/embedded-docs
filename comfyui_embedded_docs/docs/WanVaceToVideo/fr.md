@@ -20,13 +20,12 @@ Le nœud WanVaceToVideo traite les données de conditionnement vidéo pour les m
 
 **Remarque :** Lorsque `control_video` est fourni, il sera redimensionné pour correspondre à la largeur et à la hauteur spécifiées. Si `control_masks` sont fournis, ils doivent correspondre aux dimensions de la vidéo de contrôle. L'`reference_image` est encodée via le VAE et ajoutée au début de la séquence latente lorsqu'elle est fournie.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif avec les données de contrôle vidéo appliquées | CONDITIONING |
-| `latent` | Conditionnement négatif avec les données de contrôle vidéo appliquées | CONDITIONING |
-| `latent_coupé` | Tenseur latent vide prêt pour la génération vidéo | LATENT |
+| `positive` | Conditionnement positif avec les données de contrôle vidéo appliquées | CONDITIONING |
+| `negative` | Conditionnement négatif avec les données de contrôle vidéo appliquées | CONDITIONING |
+| `latent` | Tenseur latent vide prêt pour la génération vidéo | LATENT |
 | `trim_latent` | Nombre de trames latentes à supprimer lors de l'utilisation d'une image de référence | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanVaceToVideo/fr.md)

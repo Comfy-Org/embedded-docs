@@ -21,11 +21,10 @@ LoRA 加载器节点主要用于加载 LoRA 模型。你可以将 LoRA 模型视
 | `模型强度` | 取值范围为 -100.0 到 100.0，日常图像生成通常在 0~1 之间使用。数值越高，模型调整效果越明显 | FLOAT |
 | `CLIP强度` | 取值范围为 -100.0 到 100.0，日常图像生成通常在 0~1 之间使用。数值越高，模型调整效果越明显 | FLOAT |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 应用了 LoRA 调整后的模型 | MODEL |
-| `CLIP` | 应用了 LoRA 调整后的 CLIP 实例 | CLIP |
+| `model` | 应用了 LoRA 调整后的模型 | MODEL |
+| `clip` | 应用了 LoRA 调整后的 CLIP 实例 | CLIP |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoraLoader/zh.md)

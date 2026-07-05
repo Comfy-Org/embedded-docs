@@ -9,12 +9,11 @@ El nodo `ConditioningTimestepsRange` crea tres rangos de pasos de tiempo distint
 | `porcentaje_inicio` | El porcentaje inicial del rango de pasos de tiempo (predeterminado: 0.0) | FLOAT | Sí | 0.0 - 1.0 |
 | `porcentaje_fin` | El porcentaje final del rango de pasos de tiempo (predeterminado: 1.0) | FLOAT | Sí | 0.0 - 1.0 |
 
-## Salidas
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `ANTES_DE_RANGO` | El rango principal de pasos de tiempo definido por start_percent y end_percent | TIMESTEPS_RANGE |
-| `DESPUÉS_DE_RANGO` | El rango de pasos de tiempo desde 0.0 hasta start_percent | TIMESTEPS_RANGE |
+| `TIMESTEPS_RANGE` | El rango principal de pasos de tiempo definido por start_percent y end_percent | TIMESTEPS_RANGE |
+| `BEFORE_RANGE` | El rango de pasos de tiempo desde 0.0 hasta start_percent | TIMESTEPS_RANGE |
 | `AFTER_RANGE` | El rango de pasos de tiempo desde end_percent hasta 1.0 | TIMESTEPS_RANGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/es.md)

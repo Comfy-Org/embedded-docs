@@ -21,12 +21,11 @@ WanTrackToVideo düğümü, izleme noktalarını işleyerek ve karşılık gelen
 
 **Not:** `tracks` geçerli izleme verileri içerdiğinde, düğüm video oluşturmak için hareket izlerini işler. `tracks` boş olduğunda, standart görüntüden videoya moduna geçer. `start_image` sağlanırsa, video dizisinin ilk karesini başlatır.
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Hareket izi bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
-| `latent` | Hareket izi bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
+| `positive` | Hareket izi bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
+| `negative` | Hareket izi bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
 | `latent` | Oluşturulan video gizli temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTrackToVideo/tr.md)

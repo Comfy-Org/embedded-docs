@@ -9,11 +9,10 @@ FluxKontextMultiReferenceLatentMethod 节点通过设置特定的参考潜空间
 | `条件化` | 待使用参考潜空间方法修改的条件数据 | CONDITIONING | 是 | - |
 | `参考潜在方法` | 用于参考潜空间处理的方法。如果选择 "uxo" 或 "uso"，则会转换为 "uxo"。此参数标记为高级参数。 | STRING | 是 | `"offset"`<br>`"index"`<br>`"uxo/uno"`<br>`"index_timestep_zero"` |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `条件化` | 已应用参考潜空间方法的修改后条件数据 | CONDITIONING |
+| `conditioning` | 已应用参考潜空间方法的修改后条件数据 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/FluxKontextMultiReferenceLatentMethod/zh.md)
 

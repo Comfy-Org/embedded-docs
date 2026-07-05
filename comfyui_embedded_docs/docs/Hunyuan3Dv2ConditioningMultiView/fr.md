@@ -13,11 +13,10 @@ Le nœud Hunyuan3Dv2ConditioningMultiView traite les embeddings visuels CLIP mul
 
 **Remarque :** Au moins une entrée de vue doit être fournie pour que le nœud fonctionne. Le nœud ne traitera que les vues contenant des données de sortie CLIP valides.
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Conditionnement positif contenant les embeddings multi-vues combinés avec l'encodage positionnel | CONDITIONING |
+| `positive` | Conditionnement positif contenant les embeddings multi-vues combinés avec l'encodage positionnel | CONDITIONING |
 | `negative` | Conditionnement négatif avec des valeurs nulles pour l'apprentissage contrastif | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/fr.md)

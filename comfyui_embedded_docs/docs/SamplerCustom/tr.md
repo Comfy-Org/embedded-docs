@@ -16,11 +16,10 @@ SamplerCustom düğümü, çeşitli uygulamalar için esnek ve özelleştirilebi
 | `sigmalar` | 'sigmas' giriş türü, örnekleme sürecinde kullanılacak gürültü seviyelerini tanımlar ve örnek uzayının keşfini ile çıktının çeşitliliğini etkiler. | `SIGMAS` |
 | `gizli_görüntü` | 'latent_image' giriş türü, örnekleme süreci için bir başlangıç gizli görüntüsü sağlar ve örnek üretimi için bir başlangıç noktası görevi görür. | `LATENT` |
 
-## Çıktılar
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `gürültüsüz_çıktı` | 'output', örnekleme sürecinin birincil sonucunu temsil eder ve üretilen örnekleri içerir. | `LATENT` |
+| `output` | 'output', örnekleme sürecinin birincil sonucunu temsil eder ve üretilen örnekleri içerir. | `LATENT` |
 | `denoised_output` | 'denoised_output', bir gürültü giderme işlemi uygulandıktan sonraki örnekleri temsil eder ve potansiyel olarak üretilen örneklerin netliğini ve kalitesini artırır. | `LATENT` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/tr.md)

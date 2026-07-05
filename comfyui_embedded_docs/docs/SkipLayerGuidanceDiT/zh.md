@@ -16,11 +16,10 @@
 
 **注意：** 如果 `double_layers` 和 `single_layers` 均为空（不包含任何层号），则节点返回原始模型，不应用任何引导。
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型` | 应用了跳过层引导的修改后模型 | MODEL |
+| `model` | 应用了跳过层引导的修改后模型 | MODEL |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceDiT/zh.md)
 

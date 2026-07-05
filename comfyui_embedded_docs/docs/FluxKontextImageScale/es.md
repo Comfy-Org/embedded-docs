@@ -8,11 +8,10 @@ Este nodo escala la imagen de entrada a un tamaño óptimo utilizado durante el 
 | --- | --- | --- | --- | --- | --- |
 | `imagen` | Imagen de entrada que se redimensionará | IMAGE | Requerido | - | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imagen` | Imagen redimensionada | IMAGE |
+| `image` | Imagen redimensionada | IMAGE |
 
 ## Lista de Tamaños Predefinidos
 

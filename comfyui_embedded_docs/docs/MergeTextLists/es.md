@@ -10,11 +10,10 @@ Este nodo combina múltiples listas de texto en una única lista combinada. Est�
 
 **Nota:** Este nodo está configurado como un proceso grupal (`is_group_process = True`), lo que significa que maneja automáticamente múltiples entradas de lista concatenándolas antes de que se ejecute la función de procesamiento principal.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `textos` | La única lista combinada que contiene todos los textos de entrada. | STRING |
+| `texts` | La única lista combinada que contiene todos los textos de entrada. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MergeTextLists/es.md)
 

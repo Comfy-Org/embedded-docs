@@ -11,11 +11,10 @@
 | `ضغط` | عامل الضغط الذي يحدد الأبعاد الكامنة للمرحلة C (الافتراضي: 42، الخطوة: 1) | INT | نعم | 4 إلى 128 |
 | `حجم الدفعة` | عدد العينات الكامنة المراد توليدها في الدفعة الواحدة (الافتراضي: 1) | INT | لا | 1 إلى 4096 |
 
-## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `المرحلة_ب` | موتر المرحلة C الكامن بأبعاد [batch_size, 16, height//compression, width//compression] | LATENT |
+| `stage_c` | موتر المرحلة C الكامن بأبعاد [batch_size, 16, height//compression, width//compression] | LATENT |
 | `stage_b` | موتر المرحلة B الكامن بأبعاد [batch_size, 4, height//4, width//4] | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/ar.md)

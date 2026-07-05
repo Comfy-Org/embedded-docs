@@ -9,11 +9,10 @@
 | `约束` | 将应用关键帧调度的钩子组 | HOOKS | 是 | - |
 | `约束关键帧` | 可选的关键帧组，包含钩子执行的时间信息 | HOOK_KEYFRAMES | 否 | - |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `约束` | 已应用关键帧调度的修改后钩子组（如果提供了关键帧，则为克隆后的副本） | HOOKS |
+| `hooks` | 已应用关键帧调度的修改后钩子组（如果提供了关键帧，则为克隆后的副本） | HOOKS |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SetHookKeyframes/zh.md)
 

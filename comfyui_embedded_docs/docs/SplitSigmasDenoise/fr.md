@@ -9,11 +9,10 @@ Le nœud SplitSigmasDenoise divise une séquence de valeurs sigma en deux partie
 | `sigmas` | La séquence d'entrée des valeurs sigma représentant le plan de bruit | SIGMAS | Oui | - |
 | `réduction_du_bruit` | Le facteur de force de débruitage qui détermine où diviser la séquence sigma (par défaut : 1.0) | FLOAT | Oui | 0.0 - 1.0 |
 
-## Sorties
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `sigmas_bas` | La première partie de la séquence sigma contenant les valeurs sigma les plus élevées | SIGMAS |
+| `high_sigmas` | La première partie de la séquence sigma contenant les valeurs sigma les plus élevées | SIGMAS |
 | `low_sigmas` | La deuxième partie de la séquence sigma contenant les valeurs sigma les plus faibles | SIGMAS |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/fr.md)

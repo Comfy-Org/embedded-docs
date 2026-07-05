@@ -14,11 +14,10 @@ El nodo **PairConditioningSetProperties** permite modificar propiedades de pares
 | `ganchos` | Grupo de ganchos opcional para modificaciones avanzadas de condicionamiento | HOOKS | No | - |
 | `pasos_de_tiempo` | Rango de pasos de tiempo opcional para limitar cuándo se aplica el condicionamiento | TIMESTEPS_RANGE | No | - |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado con las propiedades aplicadas | CONDITIONING |
+| `positive` | El condicionamiento positivo modificado con las propiedades aplicadas | CONDITIONING |
 | `negative` | El condicionamiento negativo modificado con las propiedades aplicadas | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetProperties/es.md)

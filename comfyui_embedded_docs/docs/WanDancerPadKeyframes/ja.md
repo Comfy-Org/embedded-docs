@@ -15,12 +15,11 @@
 | `segment_index` | このセグメントが何番目かを指定します（0＝最初、1＝2番目、など。デフォルト：0）。 | INT | はい | 0 ～ 100 |
 | `audio` | 出力総フレーム数を計算し、セグメントオーディオを抽出するためのオーディオ。 | AUDIO | はい | オーディオデータ |
 
-## 出力
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `keyframes_mask` | 指定されたセグメント用にパディングされたキーフレームシーケンス。 | IMAGE |
-| `audio_segment` | 有効フレームを示すマスク（キーフレーム位置は1、パディング位置は0）。 | MASK |
+| `keyframes_sequence` | 指定されたセグメント用にパディングされたキーフレームシーケンス。 | IMAGE |
+| `keyframes_mask` | 有効フレームを示すマスク（キーフレーム位置は1、パディング位置は0）。 | MASK |
 | `audio_segment` | この動画セグメントに対応するオーディオセグメント。 | AUDIO |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/ja.md)

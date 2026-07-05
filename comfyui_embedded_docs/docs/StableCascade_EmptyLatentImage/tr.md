@@ -11,11 +11,10 @@ StableCascade_EmptyLatentImage düğümü, Stable Cascade modelleri için boş g
 | `sıkıştırma` | C aşaması için gizli boyutları belirleyen sıkıştırma faktörü (varsayılan: 42, adım: 1) | INT | Evet | 4 ile 128 arası |
 | `toplu_boyut` | Bir grupta oluşturulacak gizli örnek sayısı (varsayılan: 1) | INT | Hayır | 1 ile 4096 arası |
 
-## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `aşama_b` | Boyutları [batch_size, 16, height//compression, width//compression] olan C aşaması gizli tensörü | LATENT |
+| `stage_c` | Boyutları [batch_size, 16, height//compression, width//compression] olan C aşaması gizli tensörü | LATENT |
 | `stage_b` | Boyutları [batch_size, 4, height//4, width//4] olan B aşaması gizli tensörü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/tr.md)

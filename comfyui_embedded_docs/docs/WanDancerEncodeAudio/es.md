@@ -10,11 +10,10 @@ Este nodo procesa una entrada de audio para extraer características que pueden 
 | `video_frames` | El número de fotogramas en el video de destino. Se utiliza para calcular la velocidad de fotogramas para la sincronización (valor predeterminado: 149). | INT | Sí | Mín: 1, Máx: 268435456 (MAX_RESOLUTION), Paso: 4 |
 | `audio_inject_scale` | La escala para las características de audio cuando se inyectan en el modelo de video (valor predeterminado: 1.0). | FLOAT | Sí | Mín: 0.0, Máx: 10.0, Paso: 0.01 |
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `fps_string` | Un diccionario que contiene las características de audio procesadas, la velocidad de fotogramas calculada (fps) y la escala de inyección de audio. Esta salida se utiliza para condicionar el modelo de generación de video. | AUDIO_ENCODER_OUTPUT |
+| `audio_encoder_output` | Un diccionario que contiene las características de audio procesadas, la velocidad de fotogramas calculada (fps) y la escala de inyección de audio. Esta salida se utiliza para condicionar el modelo de generación de video. | AUDIO_ENCODER_OUTPUT |
 | `fps_string` | Una cadena de texto que describe la velocidad de fotogramas calculada (fps) basada en la duración del audio y el número de fotogramas de video. Esta cadena está diseñada para usarse en el prompt del modelo de video. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerEncodeAudio/es.md)

@@ -16,11 +16,10 @@ Mejora la guía hacia una estructura detallada utilizando otro conjunto de CFG n
 
 **Nota:** Si tanto `double_layers` como `single_layers` están vacíos (no contienen números de capa), el nodo devuelve el modelo original sin aplicar ninguna guía.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `modelo` | El modelo modificado con la guía de capas omitidas aplicada | MODEL |
+| `model` | El modelo modificado con la guía de capas omitidas aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SkipLayerGuidanceDiT/es.md)
 

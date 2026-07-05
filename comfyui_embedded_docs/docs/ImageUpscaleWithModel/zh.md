@@ -9,10 +9,9 @@
 | `放大模型` | 用于放大图像的放大模型。该参数对于定义放大算法及其参数至关重要。 | `UPSCALE_MODEL` |
 | `图像` | 待放大的图像。此输入对于确定将经历放大过程的源内容至关重要。 | `IMAGE` |
 
-## 输出
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `图像` | 经放大模型处理后的放大图像。此输出是放大操作的结果，展示了增强后的分辨率或质量。 | `IMAGE` |
+| `image` | 经放大模型处理后的放大图像。此输出是放大操作的结果，展示了增强后的分辨率或质量。 | `IMAGE` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageUpscaleWithModel/zh.md)

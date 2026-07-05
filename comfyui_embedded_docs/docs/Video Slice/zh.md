@@ -11,11 +11,10 @@
 | `时长` | 持续时间（秒），0 表示不限时长，默认值：0.0。 | FLOAT | 否 | 0.0 及以上 |
 | `严格时长` | 若为 True，当无法满足指定持续时间时将引发错误，默认值：False。 | BOOLEAN | 否 | - |
 
-## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `视频` | 裁剪后的视频片段。 | VIDEO |
+| `video` | 裁剪后的视频片段。 | VIDEO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Video Slice/zh.md)
 

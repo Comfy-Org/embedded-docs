@@ -17,13 +17,12 @@ El nodo Kandinsky5ImageToVideo prepara los datos de condicionamiento y espacio l
 
 **Nota:** Cuando se proporciona una `start_image`, se redimensiona automáticamente para que coincida con el `width` y `height` especificados mediante interpolación bilineal. Los primeros `length` fotogramas del lote de imágenes se utilizan para la codificación. El latente codificado se inyecta luego en el condicionamiento tanto `positive` como `negative` para guiar la apariencia inicial del video.
 
-## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado, potencialmente actualizado con los datos de la imagen de inicio codificada. | CONDITIONING |
-| `latente` | El condicionamiento negativo modificado, potencialmente actualizado con los datos de la imagen de inicio codificada. | CONDITIONING |
-| `latente_cond` | Un tensor latente de video vacío con ceros, con forma para las dimensiones especificadas. | LATENT |
+| `positive` | El condicionamiento positivo modificado, potencialmente actualizado con los datos de la imagen de inicio codificada. | CONDITIONING |
+| `negative` | El condicionamiento negativo modificado, potencialmente actualizado con los datos de la imagen de inicio codificada. | CONDITIONING |
+| `latent` | Un tensor latente de video vacío con ceros, con forma para las dimensiones especificadas. | LATENT |
 | `cond_latent` | La representación latente codificada y limpia de las imágenes de inicio proporcionadas. Se utiliza internamente para reemplazar el inicio ruidoso de los latentes del video generado. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Kandinsky5ImageToVideo/es.md)
