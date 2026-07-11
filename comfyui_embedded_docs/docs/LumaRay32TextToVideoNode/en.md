@@ -1,4 +1,4 @@
-# LumaRay32TextToVideoNode
+# Luma Ray 3.2 Text to Video
 
 This node generates a video from a text prompt using Luma's Ray 3.2 model. It sends your prompt and video settings to the Luma API and returns the generated video along with a generation ID.
 

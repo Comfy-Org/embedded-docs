@@ -1,4 +1,4 @@
-# Load3DAdvanced
+# Load 3D (Advanced)
 
 This node loads a 3D model file from your ComfyUI input directory and provides the model data along with camera and viewport information. It supports common 3D file formats and allows you to specify the output image dimensions for rendering.
 

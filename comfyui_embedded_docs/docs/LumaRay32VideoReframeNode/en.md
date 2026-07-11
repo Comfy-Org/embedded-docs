@@ -1,4 +1,4 @@
-# LumaRay32VideoReframeNode
+# Luma Ray 3.2 Video Reframe
 
 This node changes the aspect ratio of an existing video using Luma Ray 3.2, which fills the newly exposed canvas areas with generated content. The source video can be up to 30 seconds long, and billing is per second of output.
 
