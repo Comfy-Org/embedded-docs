@@ -1,25 +1,25 @@
-# GeminiVideoOmni
+# Google Gemini Omni (Vidéo)
 
-Générer une vidéo avec audio à partir d'une invite textuelle en utilisant le modèle Gemini Omni Flash de Google. Vous pouvez éventuellement fournir des images et/ou vidéos de référence pour guider ou modifier le résultat. Décrivez la durée souhaitée (3-10 s) et le rapport hauteur/largeur (16:9 ou 9:16) directement dans l'invite.
+Générez une vidéo avec audio à partir d’un prompt texte en utilisant le modèle Gemini Omni Flash de Google. Vous pouvez fournir des images et/ou vidéos de référence pour guider ou éditer le résultat. Décrivez la durée souhaitée (3-10s) et le format d’image (16:9 ou 9:16) directement dans le prompt.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle vidéo Gemini utilisé pour générer la vidéo. | MODEL | Oui | "Omni Flash" |
-| `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine (par défaut : 42). | INT | Oui | 0 à 2147483647 |
-| `prompt` | L'invite textuelle décrivant la vidéo à générer. | STRING | Oui | Minimum 1 caractère après suppression des espaces |
-| `images` | Images de référence optionnelles pour guider la génération vidéo. Maximum de 14 images au total. | IMAGE | Non | Plusieurs images autorisées (max 14) |
-| `videos` | Vidéos de référence optionnelles pour guider ou modifier la génération vidéo. Maximum de 3 vidéos, chacune jusqu'à 10 secondes. | VIDEO | Non | Plusieurs vidéos autorisées (max 3, chacune max 10 s) |
-| `temperature` | Contrôle le caractère aléatoire de la génération (par défaut : 1,0). | FLOAT | Non | 0,0 à 2,0 |
-| `top_p` | Paramètre d'échantillonnage par noyau (par défaut : 0,95). | FLOAT | Non | 0,0 à 1,0 |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Le modèle vidéo Gemini utilisé pour générer la vidéo. | MODEL | Yes | "Omni Flash" |
+| `seed` | Le seed contrôle si le nœud doit être relancé ; les résultats restent non déterministes quel que soit le seed. | INT | Yes | 0 to 2147483647 |
+| `prompt` | The text prompt describing the video to generate. Must be at least one non-whitespace character after stripping leading/trailing whitespace. | STRING | Yes | Minimum 1 character after stripping whitespace |
+| `images` | Optional reference images to guide the video generation. Maximum of 14 images total. | IMAGE | No | Multiple images allowed (max 14) |
+| `videos` | Optional reference videos to guide or edit the video generation. Maximum of 3 videos, each up to 10 seconds. | VIDEO | No | Multiple videos allowed (max 3, each max 10s) |
+| `temperature` | Controls randomness in generation (default: 1.0). | FLOAT | No | 0.0 to 2.0 |
+| `top_p` | Nucleus sampling parameter (default: 0.95). | FLOAT | No | 0.0 to 1.0 |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-|---------------|-------------|-----------------|
-| `VIDEO` | La vidéo générée avec audio provenant du modèle Gemini. | VIDEO |
-| `STRING` | Toute réponse textuelle du modèle, telle que des raisonnements ou explications. | STRING |
+|-------------|-------------|-----------|
+| `VIDEO` | The generated video with audio from the Gemini model. | VIDEO |
+| `STRING` | Any text response from the model, such as reasoning or explanations. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/fr.md)
 

@@ -1,27 +1,25 @@
-# GeminiVideoOmni
+# Google Gemini Omni（動画）
 
-以下は、ご依頼いただいたComfyUIノードドキュメントの日本語訳です。
-
-GoogleのGemini Omni Flashモデルを使用して、テキストプロンプトから音声付きの動画を生成します。オプションで参照画像や動画を提供し、結果をガイドまたは編集することもできます。希望する長さ（3～10秒）とアスペクト比（16：9または9：16）をプロンプトに直接記述してください。
+GoogleのGemini Omni Flashモデルを使い、テキストプロンプトから音声付き動画を生成します。参照画像や動画を指定して、結果をガイドまたは編集することも可能です。希望する長さ（3～10秒）やアスペクト比（16:9または9:16）はプロンプト内で直接指定してください。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 動画生成に使用するGemini動画モデルです。 | MODEL | はい | "Omni Flash" |
-| `seed` | シードはノードを再実行するかどうかを制御します。シードに関わらず結果は非決定的です（デフォルト：42）。 | INT | はい | 0 ～ 2147483647 |
-| `prompt` | 生成する動画を説明するテキストプロンプトです。 | STRING | はい | 空白除去後、最低1文字 |
-| `images` | 動画生成をガイドするためのオプションの参照画像です。合計で最大14枚まで指定できます。 | IMAGE | いいえ | 複数画像可（最大14枚） |
-| `videos` | 動画生成をガイドまたは編集するためのオプションの参照動画です。各動画は最大10秒で、最大3本まで指定できます。 | VIDEO | いいえ | 複数動画可（最大3本、各最大10秒） |
-| `temperature` | 生成におけるランダム性を制御します（デフォルト：1.0）。 | FLOAT | いいえ | 0.0 ～ 2.0 |
-| `top_p` | 核サンプリングのパラメータです（デフォルト：0.95）。 | FLOAT | いいえ | 0.0 ～ 1.0 |
+| `model` | 動画生成に使用するGeminiビデオモデル。 | MODEL | Yes | "Omni Flash" |
+| `seed` | seedはノードの再実行を制御します。seedに関わらず結果は非決定的です。 | INT | Yes | 0 to 2147483647 |
+| `prompt` | The text prompt describing the video to generate. Must be at least one non-whitespace character after stripping leading/trailing whitespace. | STRING | Yes | Minimum 1 character after stripping whitespace |
+| `images` | Optional reference images to guide the video generation. Maximum of 14 images total. | IMAGE | No | Multiple images allowed (max 14) |
+| `videos` | Optional reference videos to guide or edit the video generation. Maximum of 3 videos, each up to 10 seconds. | VIDEO | No | Multiple videos allowed (max 3, each max 10s) |
+| `temperature` | Controls randomness in generation (default: 1.0). | FLOAT | No | 0.0 to 2.0 |
+| `top_p` | Nucleus sampling parameter (default: 0.95). | FLOAT | No | 0.0 to 1.0 |
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `VIDEO` | Geminiモデルから生成された音声付き動画です。 | VIDEO |
-| `STRING` | 推論や説明など、モデルからのテキスト応答です。 | STRING |
+| `VIDEO` | The generated video with audio from the Gemini model. | VIDEO |
+| `STRING` | Any text response from the model, such as reasoning or explanations. | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/ja.md)
 
