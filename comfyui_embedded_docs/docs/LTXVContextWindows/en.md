@@ -1,4 +1,4 @@
-# LTXVContextWindows
+# LTXV Context Windows
 
 This node sets context windows for LTXV-like models during sampling. It divides the video generation process into overlapping windows to manage memory usage and improve temporal coherence.
 

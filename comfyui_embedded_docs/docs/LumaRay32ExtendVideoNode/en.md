@@ -1,4 +1,4 @@
-# LumaRay32ExtendVideoNode
+# Luma Ray 3.2 Extend Video
 
 This node extends a previous Luma Ray 3.2 video generation by adding new content either after it (forward extension) or before it (backward extension). Connect the generation ID output from a prior Luma Ray 3.2 node to create a seamless 5-second extension of your video.
 

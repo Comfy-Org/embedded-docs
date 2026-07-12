@@ -7,9 +7,11 @@ Ce nœud fournit une interface graphique pour dessiner des boîtes englobantes a
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `arrière-plan` | Image facultative utilisée comme arrière-plan dans le canevas et la prévisualisation. | IMAGE | Non | - |
+| `bboxes` | Boîtes englobantes, éléments ou chaîne JSON pour initialiser le canevas. Une nouvelle valeur en amont initialise le canevas ; les modifications apportées sur le canevas ont priorité et sont conservées jusqu'à ce que la valeur en amont change à nouveau. | BOUNDING_BOX, ARRAY, STRING | Non | - |
 | `largeur` | Largeur du canevas et de la grille de pixels pour les boîtes englobantes (par défaut : 1024). | INT | Oui | 64 à 16384 (pas : 16) |
 | `hauteur` | Hauteur du canevas et de la grille de pixels pour les boîtes englobantes (par défaut : 1024). | INT | Oui | 64 à 16384 (pas : 16) |
 | `état_éditeur` | Dessinez les boîtes englobantes et définissez le type, le texte, la description et la palette de couleurs de chaque boîte. Commencez par l'élément d'arrière-plan en premier et l'avant-plan en dernier. | BOUNDING_BOXES | Oui | - |
+| `last_incoming` | État interne géré par le canevas : la valeur des boîtes englobantes en amont qui l'a initialisé en dernier. Laissez vide pour réinitialiser le canevas à partir de l'entrée `bboxes` lors de la prochaine exécution. | BOUNDING_BOXES | Non | - |
 
 ## Sorties
 
@@ -22,4 +24,4 @@ Ce nœud fournit une interface graphique pour dessiner des boîtes englobantes a
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a63939f13edc6c6507590a390dcd6d0a3321febb5831baab1655d9952228612c`
+**Source fingerprint (SHA-256):** `dc5545dffefdccf14f3919ff4d9966dbfd1a497dcd64e1863556d5728659ee94`

@@ -1,4 +1,4 @@
-# LumaRay32ImageToVideoNode
+# Luma Ray 3.2 Image to Video
 
 Generate a video from a start and/or end frame using Luma's Ray 3.2 model. Image-anchored generations are always 5 seconds in duration.
 

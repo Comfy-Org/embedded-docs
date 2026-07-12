@@ -8,7 +8,7 @@ Gere um vídeo com áudio a partir de um prompt de texto usando o modelo Google 
 |-----------|-------------|-----------|----------|-------|
 | `model` | O modelo de vídeo Gemini usado para gerar o vídeo. | MODEL | Sim | "Omni Flash" |
 | `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 42). | INT | Sim | 0 a 2147483647 |
-| `prompt` | O prompt de texto descrevendo o vídeo a ser gerado. | STRING | Sim | Mínimo de 1 caractere após remover espaços em branco |
+| `prompt` | O prompt de texto descrevendo o vídeo a ser gerado. Deve conter pelo menos um caractere que não seja espaço em branco após remover espaços iniciais e finais. | STRING | Sim | Mínimo de 1 caractere após remover espaços em branco |
 | `images` | Imagens de referência opcionais para orientar a geração do vídeo. Máximo de 14 imagens no total. | IMAGE | Não | Múltiplas imagens permitidas (máx. 14) |
 | `videos` | Vídeos de referência opcionais para orientar ou editar a geração do vídeo. Máximo de 3 vídeos, cada um com até 10 segundos. | VIDEO | Não | Múltiplos vídeos permitidos (máx. 3, cada um máx. 10s) |
 | `temperature` | Controla a aleatoriedade na geração (padrão: 1.0). | FLOAT | Não | 0.0 a 2.0 |

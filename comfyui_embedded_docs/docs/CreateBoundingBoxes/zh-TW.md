@@ -7,9 +7,11 @@
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `背景` | 可選影像，用作畫布和預覽中的背景。 | IMAGE | 否 | - |
+| `bboxes` | 用於初始化畫布的邊界框、元素或JSON字串。新的上游值會初始化畫布；在畫布上進行的編輯具有優先權，並會保留直到上游值再次變更。 | BOUNDING_BOX, ARRAY, STRING | 否 | - |
 | `寬度` | 畫布及邊界框像素網格的寬度（預設值：1024）。 | INT | 是 | 64 至 16384（步長：16） |
 | `高度` | 畫布及邊界框像素網格的高度（預設值：1024）。 | INT | 是 | 64 至 16384（步長：16） |
 | `編輯器狀態` | 繪製邊界框，並設定每個框的類型、文字、描述、色板。請從背景元素開始，前景元素最後。 | BOUNDING_BOXES | 是 | - |
+| `last_incoming` | 由畫布管理的內部狀態：最後初始化畫布的上游bboxes值。留空以在下次執行時從bboxes輸入重新初始化畫布。 | BOUNDING_BOXES | 否 | - |
 
 ## ## 輸出
 
@@ -22,4 +24,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `a63939f13edc6c6507590a390dcd6d0a3321febb5831baab1655d9952228612c`
+**Source fingerprint (SHA-256):** `dc5545dffefdccf14f3919ff4d9966dbfd1a497dcd64e1863556d5728659ee94`

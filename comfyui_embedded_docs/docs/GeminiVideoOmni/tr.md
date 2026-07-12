@@ -8,7 +8,7 @@ Google'ın Gemini Omni Flash modelini kullanarak bir metin isteminden sesli vide
 |-----------|-------------|-----------|----------|-------|
 | `model` | Videoyu oluşturmak için kullanılan Gemini video modeli. | MODEL | Evet | "Omni Flash" |
 | `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar, tohumdan bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
-| `prompt` | Oluşturulacak videoyu tanımlayan metin istemi. | STRING | Evet | Boşluklar temizlendikten sonra en az 1 karakter |
+| `prompt` | Oluşturulacak videoyu tanımlayan metin istemi. Baştaki ve sondaki boşluklar kaldırıldıktan sonra en az bir boşluk olmayan karakter içermelidir. | STRING | Evet | Boşluklar temizlendikten sonra en az 1 karakter |
 | `images` | Video oluşturmayı yönlendirmek için isteğe bağlı referans görseller. Toplamda en fazla 14 görsel. | IMAGE | Hayır | Birden çok görsele izin verilir (en fazla 14) |
 | `videos` | Video oluşturmayı yönlendirmek veya düzenlemek için isteğe bağlı referans videolar. Her biri en fazla 10 saniye olmak üzere en fazla 3 video. | VIDEO | Hayır | Birden çok videoya izin verilir (en fazla 3, her biri en fazla 10 sn) |
 | `temperature` | Oluşturmadaki rastgeleliği kontrol eder (varsayılan: 1.0). | FLOAT | Hayır | 0.0 ile 2.0 arası |

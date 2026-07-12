@@ -8,7 +8,7 @@ Genera un video con audio a partir de un texto descriptivo utilizando el modelo 
 |-----------|-------------|--------------|-------------|-------|
 | `model` | El modelo de video Gemini utilizado para generar el video. | MODEL | Sí | "Omni Flash" |
 | `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
-| `prompt` | El texto descriptivo que indica el video a generar. | STRING | Sí | Mínimo 1 carácter después de eliminar espacios en blanco |
+| `prompt` | El texto descriptivo que indica el video a generar. Debe contener al menos un carácter que no sea espacio en blanco después de eliminar espacios iniciales y finales. | STRING | Sí | Mínimo 1 carácter después de eliminar espacios en blanco |
 | `images` | Imágenes de referencia opcionales para guiar la generación del video. Máximo de 14 imágenes en total. | IMAGE | No | Se permiten múltiples imágenes (máx. 14) |
 | `videos` | Videos de referencia opcionales para guiar o editar la generación del video. Máximo de 3 videos, cada uno de hasta 10 segundos. | VIDEO | No | Se permiten múltiples videos (máx. 3, cada uno máx. 10 s) |
 | `temperature` | Controla la aleatoriedad en la generación (predeterminado: 1.0). | FLOAT | No | 0.0 a 2.0 |

@@ -1,4 +1,4 @@
-# LumaRay32KeyframeNode
+# Luma Ray 3.2 Keyframe
 
 This node anchors a guide image to a specific position on the Luma Ray 3.2 output video timeline. Connect this node to the "keyframes" input of the Luma Ray 3.2 Keyframes to Video node, and chain several keyframes together by connecting the optional "keyframes" input.
 

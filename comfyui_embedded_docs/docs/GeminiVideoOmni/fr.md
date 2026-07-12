@@ -8,7 +8,7 @@ Générer une vidéo avec audio à partir d'une invite textuelle en utilisant le
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle vidéo Gemini utilisé pour générer la vidéo. | MODEL | Oui | "Omni Flash" |
 | `seed` | La graine contrôle si le nœud doit être réexécuté ; les résultats ne sont pas déterministes quelle que soit la graine (par défaut : 42). | INT | Oui | 0 à 2147483647 |
-| `prompt` | L'invite textuelle décrivant la vidéo à générer. | STRING | Oui | Minimum 1 caractère après suppression des espaces |
+| `prompt` | L'invite textuelle décrivant la vidéo à générer. Doit contenir au moins un caractère non blanc après suppression des espaces de début et de fin. | STRING | Oui | Minimum 1 caractère après suppression des espaces |
 | `images` | Images de référence optionnelles pour guider la génération vidéo. Maximum de 14 images au total. | IMAGE | Non | Plusieurs images autorisées (max 14) |
 | `videos` | Vidéos de référence optionnelles pour guider ou modifier la génération vidéo. Maximum de 3 vidéos, chacune jusqu'à 10 secondes. | VIDEO | Non | Plusieurs vidéos autorisées (max 3, chacune max 10 s) |
 | `temperature` | Contrôle le caractère aléatoire de la génération (par défaut : 1,0). | FLOAT | Non | 0,0 à 2,0 |
