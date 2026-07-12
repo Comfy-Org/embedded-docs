@@ -8,7 +8,7 @@ Generate a video with audio from a text prompt using Google's Gemini Omni Flash 
 |-----------|-------------|-----------|----------|-------|
 | `model` | The Gemini video model used to generate the video. | MODEL | Yes | "Omni Flash" |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 42). | INT | Yes | 0 to 2147483647 |
-| `prompt` | The text prompt describing the video to generate. Minimum 1 character after stripping whitespace. | STRING | Yes | Minimum 1 character |
+| `prompt` | The text prompt describing the video to generate. Must be at least one non-whitespace character after stripping leading/trailing whitespace. | STRING | Yes | Minimum 1 character after stripping whitespace |
 | `images` | Optional reference images to guide the video generation. Maximum of 14 images total. | IMAGE | No | Multiple images allowed (max 14) |
 | `videos` | Optional reference videos to guide or edit the video generation. Maximum of 3 videos, each up to 10 seconds. | VIDEO | No | Multiple videos allowed (max 3, each max 10s) |
 | `temperature` | Controls randomness in generation (default: 1.0). | FLOAT | No | 0.0 to 2.0 |
