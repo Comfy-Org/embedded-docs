@@ -1,25 +1,25 @@
-# Google Gemini Omni (Video)
+# GeminiVideoOmni
 
-Google'ın Gemini Omni Flash modeliyle bir metin isteminden sesli video oluşturun. Sonucu yönlendirmek veya düzenlemek için isteğe bağlı olarak referans görseller ve/veya videolar sağlayabilirsiniz. İstemde istenen uzunluğu (3-10 sn) ve en-boy oranını (16:9 veya 9:16) doğrudan belirtin.
+Google'ın Gemini Omni Flash modelini kullanarak bir metin isteminden sesli video oluşturun. İsteğe bağlı olarak, sonucu yönlendirmek veya düzenlemek için referans görseller ve/veya videolar sağlayın. İstenen uzunluğu (3-10 sn) ve en boy oranını (16:9 veya 9:16) doğrudan istemde belirtin.
 
-## Girdiler
+## Girişler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Videoyu oluşturmak için kullanılan Gemini video modeli. | MODEL | Yes | "Omni Flash" |
-| `seed` | Seed, düğümün tekrar çalıştırılıp çalıştırılmayacağını kontrol eder; seed ne olursa olsun sonuçlar deterministik değildir. | INT | Yes | 0 to 2147483647 |
-| `prompt` | The text prompt describing the video to generate. Must be at least one non-whitespace character after stripping leading/trailing whitespace. | STRING | Yes | Minimum 1 character after stripping whitespace |
-| `images` | Optional reference images to guide the video generation. Maximum of 14 images total. | IMAGE | No | Multiple images allowed (max 14) |
-| `videos` | Optional reference videos to guide or edit the video generation. Maximum of 3 videos, each up to 10 seconds. | VIDEO | No | Multiple videos allowed (max 3, each max 10s) |
-| `temperature` | Controls randomness in generation (default: 1.0). | FLOAT | No | 0.0 to 2.0 |
-| `top_p` | Nucleus sampling parameter (default: 0.95). | FLOAT | No | 0.0 to 1.0 |
+| `model` | Videoyu oluşturmak için kullanılan Gemini video modeli. | MODEL | Evet | "Omni Flash" |
+| `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar, tohumdan bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
+| `prompt` | Oluşturulacak videoyu tanımlayan metin istemi. | STRING | Evet | Boşluklar temizlendikten sonra en az 1 karakter |
+| `images` | Video oluşturmayı yönlendirmek için isteğe bağlı referans görseller. Toplamda en fazla 14 görsel. | IMAGE | Hayır | Birden çok görsele izin verilir (en fazla 14) |
+| `videos` | Video oluşturmayı yönlendirmek veya düzenlemek için isteğe bağlı referans videolar. Her biri en fazla 10 saniye olmak üzere en fazla 3 video. | VIDEO | Hayır | Birden çok videoya izin verilir (en fazla 3, her biri en fazla 10 sn) |
+| `temperature` | Oluşturmadaki rastgeleliği kontrol eder (varsayılan: 1.0). | FLOAT | Hayır | 0.0 ile 2.0 arası |
+| `top_p` | Çekirdek örnekleme parametresi (varsayılan: 0.95). | FLOAT | Hayır | 0.0 ile 1.0 arası |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `VIDEO` | The generated video with audio from the Gemini model. | VIDEO |
-| `STRING` | Any text response from the model, such as reasoning or explanations. | STRING |
+| `VIDEO` | Gemini modelinden sesli olarak oluşturulan video. | VIDEO |
+| `STRING` | Modelden gelen, akıl yürütme veya açıklamalar gibi herhangi bir metin yanıtı. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/tr.md)
 

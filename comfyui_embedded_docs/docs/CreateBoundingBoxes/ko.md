@@ -1,27 +1,25 @@
 # 바운딩 박스 생성
 
-캔버스에 바운딩 박스를 그립니다. Ideogram 프롬프트 요소, 픽셀 공간 바운딩 박스, 미리보기 이미지를 출력합니다.
+이 노드는 이미지 내 객체나 텍스트 영역 주위에 경계 상자를 그릴 수 있는 캔버스 인터페이스를 제공합니다. 픽셀 공간의 경계 상자 좌표, Ideogram 프롬프트 형식과 호환되는 구조화된 요소 데이터, 그리고 레이블과 색상 팔레트가 포함된 그려진 상자를 보여주는 미리보기 이미지를 출력합니다.
 
 ## 입력
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `배경` | 캔버스와 미리보기에서 배경으로 사용되는 선택적 이미지입니다. | IMAGE | No | - |
-| `bboxes` | Bounding boxes, elements, or a JSON string to initialize the canvas. A new upstream value initializes the canvas; edits made on the canvas take priority and are kept until the upstream value changes again. | BOUNDING_BOX, ARRAY, STRING | No | - |
-| `너비` | 캔버스 및 바운딩 박스의 픽셀 그리드 너비입니다. | INT | Yes | 64 to 16384 (step: 16) |
-| `높이` | 캔버스 및 바운딩 박스의 픽셀 그리드 높이입니다. | INT | Yes | 64 to 16384 (step: 16) |
-| `에디터 상태` | 바운딩 박스를 그리고 각 박스의 유형, 텍스트, 설명, 컬러 팔레트를 설정하세요. 배경 요소부터 시작하고 전경은 마지막에 추가하세요. | BOUNDING_BOXES | Yes | - |
-| `last_incoming` | Internal state managed by the canvas: the upstream bboxes value that last initialized it. Leave empty to re-initialize the canvas from the bboxes input on the next run. | BOUNDING_BOXES | No | - |
+| `배경` | 캔버스 및 미리보기의 배경으로 사용되는 선택적 이미지입니다. | IMAGE | 아니요 | - |
+| `너비` | 캔버스 및 경계 상자용 픽셀 그리드의 너비입니다(기본값: 1024). | INT | 예 | 64 ~ 16384 (단위: 16) |
+| `높이` | 캔버스 및 경계 상자용 픽셀 그리드의 높이입니다(기본값: 1024). | INT | 예 | 64 ~ 16384 (단위: 16) |
+| `에디터 상태` | 경계 상자를 그리고 각 상자의 유형, 텍스트, 설명, 색상 팔레트를 설정합니다. 배경 요소부터 시작하여 전경 요소를 마지막으로 배치하십시오. | BOUNDING_BOXES | 예 | - |
 
 ## 출력
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `preview` | An RGB image showing the canvas with all bounding boxes rendered, including labels, color palette swatches, and descriptive text. | IMAGE |
-| `bboxes` | A list of bounding boxes in pixel coordinates, with each box containing x, y, width, and height values. | BOUNDING_BOX |
-| `elements` | A structured array of element objects, each containing type, bounding box coordinates (normalized 0-1000), text (for text type), description, and color palette. | ARRAY |
+| `미리보기` | 모든 경계 상자가 렌더링된 캔버스를 보여주는 RGB 이미지로, 레이블, 색상 팔레트 견본, 설명 텍스트가 포함됩니다. | IMAGE |
+| `바운딩 박스` | 픽셀 좌표로 표현된 경계 상자 목록으로, 각 상자는 x, y, 너비, 높이 값을 포함합니다. | BOUNDING_BOX |
+| `요소` | 요소 객체의 구조화된 배열로, 각 객체는 유형, 경계 상자 좌표(0-1000으로 정규화), 텍스트(텍스트 유형의 경우), 설명, 색상 팔레트를 포함합니다. | ARRAY |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `dc5545dffefdccf14f3919ff4d9966dbfd1a497dcd64e1863556d5728659ee94`
+**Source fingerprint (SHA-256):** `a63939f13edc6c6507590a390dcd6d0a3321febb5831baab1655d9952228612c`

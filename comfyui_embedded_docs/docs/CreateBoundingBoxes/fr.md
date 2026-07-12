@@ -1,27 +1,25 @@
 # Créer des boîtes englobantes
 
-Dessinez des boîtes englobantes sur une toile. Génère des éléments d’invite Ideogram, des boîtes englobantes en espace pixel et une image d’aperçu.
+Ce nœud fournit une interface graphique pour dessiner des boîtes englobantes autour d'objets ou de zones de texte dans une image. Il produit les coordonnées des boîtes englobantes dans l'espace pixel, des données d'élément structurées compatibles avec le formatage des invites Ideogram, ainsi qu'une image de prévisualisation montrant les boîtes dessinées avec des étiquettes et des palettes de couleurs.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------|----------|-------|
-| `arrière-plan` | Image optionnelle utilisée comme arrière-plan sur la toile et dans l’aperçu. | IMAGE | No | - |
-| `bboxes` | Bounding boxes, elements, or a JSON string to initialize the canvas. A new upstream value initializes the canvas; edits made on the canvas take priority and are kept until the upstream value changes again. | BOUNDING_BOX, ARRAY, STRING | No | - |
-| `largeur` | Largeur de la toile et de la grille de pixels pour les boîtes englobantes. | INT | Yes | 64 to 16384 (step: 16) |
-| `hauteur` | Hauteur de la toile et de la grille de pixels pour les boîtes englobantes. | INT | Yes | 64 to 16384 (step: 16) |
-| `état_éditeur` | Dessinez des boîtes englobantes et définissez pour chaque boîte le type, le texte, la description, la palette de couleurs. Commencez par l’élément d’arrière-plan et terminez par le premier plan. | BOUNDING_BOXES | Yes | - |
-| `last_incoming` | Internal state managed by the canvas: the upstream bboxes value that last initialized it. Leave empty to re-initialize the canvas from the bboxes input on the next run. | BOUNDING_BOXES | No | - |
+|-----------|-------------|-----------------|--------|-------|
+| `arrière-plan` | Image facultative utilisée comme arrière-plan dans le canevas et la prévisualisation. | IMAGE | Non | - |
+| `largeur` | Largeur du canevas et de la grille de pixels pour les boîtes englobantes (par défaut : 1024). | INT | Oui | 64 à 16384 (pas : 16) |
+| `hauteur` | Hauteur du canevas et de la grille de pixels pour les boîtes englobantes (par défaut : 1024). | INT | Oui | 64 à 16384 (pas : 16) |
+| `état_éditeur` | Dessinez les boîtes englobantes et définissez le type, le texte, la description et la palette de couleurs de chaque boîte. Commencez par l'élément d'arrière-plan en premier et l'avant-plan en dernier. | BOUNDING_BOXES | Oui | - |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
-|-------------|-------------|-----------|
-| `preview` | An RGB image showing the canvas with all bounding boxes rendered, including labels, color palette swatches, and descriptive text. | IMAGE |
-| `bboxes` | A list of bounding boxes in pixel coordinates, with each box containing x, y, width, and height values. | BOUNDING_BOX |
-| `elements` | A structured array of element objects, each containing type, bounding box coordinates (normalized 0-1000), text (for text type), description, and color palette. | ARRAY |
+|---------------|-------------|-----------------|
+| `aperçu` | Une image RVB montrant le canevas avec toutes les boîtes englobantes rendues, incluant les étiquettes, les échantillons de palette de couleurs et le texte descriptif. | IMAGE |
+| `boîtes_englobantes` | Une liste de boîtes englobantes en coordonnées pixels, chaque boîte contenant les valeurs x, y, largeur et hauteur. | BOUNDING_BOX |
+| `éléments` | Un tableau structuré d'objets élément, chacun contenant le type, les coordonnées de la boîte englobante (normalisées de 0 à 1000), le texte (pour le type texte), la description et la palette de couleurs. | ARRAY |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateBoundingBoxes/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `dc5545dffefdccf14f3919ff4d9966dbfd1a497dcd64e1863556d5728659ee94`
+**Source fingerprint (SHA-256):** `a63939f13edc6c6507590a390dcd6d0a3321febb5831baab1655d9952228612c`
