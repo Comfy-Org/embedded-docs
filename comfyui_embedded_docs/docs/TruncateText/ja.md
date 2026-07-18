@@ -11,7 +11,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `string` | 切り詰められたテキスト。入力の最初の`最大長`文字のみを含みます。 | STRING |
+| `テキスト` | 切り詰められたテキスト。入力の最初の`最大長`文字のみを含みます。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/ja.md)
 

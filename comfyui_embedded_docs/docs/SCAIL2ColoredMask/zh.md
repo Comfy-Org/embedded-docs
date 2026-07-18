@@ -6,18 +6,18 @@
 
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `driving_track_data` | 驱动姿态视频的 SAM3 跟踪数据。将被渲染到 pose_video_mask 输出中。 | SAM3_TRACK_DATA | 是 | - |
-| `ref_track_data` | 参考图像的 SAM3 跟踪数据。 | SAM3_TRACK_DATA | 否 | - |
-| `object_indices` | 要包含的人物索引列表，以逗号分隔（例如 '0,2,3'）。同时应用于参考遮罩和姿态视频遮罩。留空表示全部包含。 | STRING | 是 | - |
-| `sort_by` | 调色板颜色分配给被跟踪对象的顺序（同时应用于参考遮罩和姿态视频，以确保每个身份保持相同颜色）。left_to_right = 最左侧对象（按首帧质心）获得第一种颜色；area = 最大对象（按首帧遮罩面积）获得第一种颜色；none = 保持 SAM3 的顺序。（默认值："left_to_right"） | COMBO | 是 | `"none"`<br>`"left_to_right"`<br>`"area"` |
-| `replacement_mode` | False = 动画模式（pose_video_mask 背景为黑色，reference_image_mask 背景为白色）。True = 替换模式（pose_video_mask 背景为白色，reference_image_mask 背景为黑色）。（默认值：False） | BOOLEAN | 是 | False<br>True |
+| `驱动轨迹数据` | 驱动姿态视频的 SAM3 跟踪数据。将被渲染到 pose_video_mask 输出中。 | SAM3_TRACK_DATA | 是 | - |
+| `参考轨迹数据` | 参考图像的 SAM3 跟踪数据。 | SAM3_TRACK_DATA | 否 | - |
+| `对象索引` | 要包含的人物索引列表，以逗号分隔（例如 '0,2,3'）。同时应用于参考遮罩和姿态视频遮罩。留空表示全部包含。 | STRING | 是 | - |
+| `排序方式` | 调色板颜色分配给被跟踪对象的顺序（同时应用于参考遮罩和姿态视频，以确保每个身份保持相同颜色）。left_to_right = 最左侧对象（按首帧质心）获得第一种颜色；area = 最大对象（按首帧遮罩面积）获得第一种颜色；none = 保持 SAM3 的顺序。（默认值："left_to_right"） | COMBO | 是 | `"none"`<br>`"left_to_right"`<br>`"area"` |
+| `替换模式` | False = 动画模式（pose_video_mask 背景为黑色，reference_image_mask 背景为白色）。True = 替换模式（pose_video_mask 背景为白色，reference_image_mask 背景为黑色）。（默认值：False） | BOOLEAN | 是 | False<br>True |
 
 ## 输出
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `pose_video_mask` | 从驱动姿态视频跟踪数据渲染的彩色遮罩。背景颜色遵循 replacement_mode 设置。 | IMAGE |
-| `reference_image_mask` | 从参考图像跟踪数据渲染的彩色遮罩。根据模型惯例，始终以黑色背景渲染。 | IMAGE |
+| `姿态视频掩码` | 从驱动姿态视频跟踪数据渲染的彩色遮罩。背景颜色遵循 replacement_mode 设置。 | IMAGE |
+| `参考图像掩码` | 从参考图像跟踪数据渲染的彩色遮罩。根据模型惯例，始终以黑色背景渲染。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SCAIL2ColoredMask/zh.md)
 

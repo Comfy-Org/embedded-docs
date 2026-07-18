@@ -13,8 +13,8 @@ SplitSigmasDenoise 節點根據去噪強度參數將 sigma 值序列分割為兩
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `低 sigma` | 包含較高 sigma 值的 sigma 序列第一部分 | SIGMAS |
-| `low_sigmas` | 包含較低 sigma 值的 sigma 序列第二部分 | SIGMAS |
+| `高 sigma` | 包含較高 sigma 值的 sigma 序列第一部分 | SIGMAS |
+| `低 sigma` | 包含較低 sigma 值的 sigma 序列第二部分 | SIGMAS |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/zh-TW.md)
 

@@ -14,8 +14,8 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `텍스트` | 불러온 이미지 텐서 목록입니다. | IMAGE |
-| `texts` | 각 이미지에 해당하는 텍스트 캡션 목록입니다. | STRING |
+| `이미지` | 불러온 이미지 텐서 목록입니다. | IMAGE |
+| `텍스트` | 각 이미지에 해당하는 텍스트 캡션 목록입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/ko.md)
 

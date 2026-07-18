@@ -14,7 +14,7 @@ Le nœud WanMoveTracksFromCoords crée des trajectoires de mouvement à partir d
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `longueur_piste` | Les données de trajectoire générées, contenant les coordonnées du chemin et les informations de visibilité pour chaque trajectoire. | TRACKS |
-| `track_length` | Le nombre total d'images dans les trajectoires générées. | INT |
+| `longueur_piste` | Le nombre total d'images dans les trajectoires générées. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTracksFromCoords/fr.md)
 

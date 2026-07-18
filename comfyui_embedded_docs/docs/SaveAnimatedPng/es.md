@@ -13,6 +13,6 @@ El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG anima
 
 | Campo | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Proporciona un componente de interfaz de usuario que muestra las imágenes PNG animadas generadas e indica si la animación es de un solo fotograma o de múltiples fotogramas. | N/A |
+| `images` | Proporciona un componente de interfaz de usuario que muestra las imágenes PNG animadas generadas e indica si la animación es de un solo fotograma o de múltiples fotogramas. | N/A |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAnimatedPNG/es.md)

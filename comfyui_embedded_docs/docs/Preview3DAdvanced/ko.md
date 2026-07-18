@@ -17,10 +17,10 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `camera_info` | 입력에서 전달된 3D 모델 파일입니다. | FILE3D |
-| `model_3d_info` | 입력 또는 뷰포트 상태에서 가져온 모델 정보 메타데이터입니다. | LOAD3DMODELINFO |
-| `width` | 입력 또는 뷰포트 상태에서 가져온 카메라 구성입니다. | LOAD3DCAMERA |
-| `height` | 미리보기의 너비(픽셀)입니다. | INT |
+| `model_file` | 입력에서 전달된 3D 모델 파일입니다. | FILE3D |
+| `camera_info` | 입력 또는 뷰포트 상태에서 가져온 모델 정보 메타데이터입니다. | LOAD3DMODELINFO |
+| `model_3d_info` | 입력 또는 뷰포트 상태에서 가져온 카메라 구성입니다. | LOAD3DCAMERA |
+| `width` | 미리보기의 너비(픽셀)입니다. | INT |
 | `height` | 미리보기의 높이(픽셀)입니다. | INT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAdvanced/ko.md)

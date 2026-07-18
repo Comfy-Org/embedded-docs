@@ -25,7 +25,7 @@ Le nœud HunyuanImageToVideo convertit des images en représentations latentes v
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `latent` | Conditionnement positif modifié avec guidage d'image appliqué lorsque start_image est fourni | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec guidage d'image appliqué lorsque start_image est fourni | CONDITIONING |
 | `latent` | Représentation latente vidéo prête pour un traitement ultérieur par des modèles de génération vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/fr.md)

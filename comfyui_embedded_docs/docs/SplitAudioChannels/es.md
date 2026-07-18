@@ -12,8 +12,8 @@ El nodo SplitAudioChannels separa el audio estéreo en canales individuales izqu
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `derecho` | El audio del canal izquierdo separado | AUDIO |
-| `right` | El audio del canal derecho separado | AUDIO |
+| `izquierdo` | El audio del canal izquierdo separado | AUDIO |
+| `derecho` | El audio del canal derecho separado | AUDIO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitAudioChannels/es.md)
 

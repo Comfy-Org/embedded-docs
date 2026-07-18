@@ -19,7 +19,7 @@ Ce nœud convertit un splat gaussien 3D en une surface maillée colorée. Il fon
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `mesh` | Le maillage coloré extrait avec rendu non éclairé (type émissif) pour correspondre à l’apparence du splat | MESH |
+| `maillage` | Le maillage coloré extrait avec rendu non éclairé (type émissif) pour correspondre à l’apparence du splat | MESH |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplatToMesh/fr.md)
 

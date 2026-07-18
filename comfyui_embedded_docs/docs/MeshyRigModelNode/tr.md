@@ -14,9 +14,9 @@
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `rig_task_id` | Geriye dönük uyumluluk için eski bir çıktı olup, GLB modelinin dosya adını içerir. | STRING |
-| `GLB` | Bu donanım oluşturma işlemi için benzersiz görev kimliği olup, sonuca başvurmak için kullanılabilir. | STRING |
-| `FBX` | GLB dosya formatında kaydedilmiş, donanımlı 3B karakter modeli. | FILE3DGLB |
+| `model_file` | Geriye dönük uyumluluk için eski bir çıktı olup, GLB modelinin dosya adını içerir. | STRING |
+| `rig_task_id` | Bu donanım oluşturma işlemi için benzersiz görev kimliği olup, sonuca başvurmak için kullanılabilir. | STRING |
+| `GLB` | GLB dosya formatında kaydedilmiş, donanımlı 3B karakter modeli. | FILE3DGLB |
 | `FBX` | FBX dosya formatında kaydedilmiş, donanımlı 3B karakter modeli. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/tr.md)

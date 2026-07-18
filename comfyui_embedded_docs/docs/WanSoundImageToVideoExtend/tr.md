@@ -17,8 +17,8 @@ WanSoundImageToVideoExtend düğümü, mevcut bir video latentini, isteğe bağl
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negative` | Video bağlamı uygulanmış işlenmiş pozitif koşullandırma | CONDITIONING |
-| `latent` | Video bağlamı uygulanmış işlenmiş negatif koşullandırma | CONDITIONING |
+| `positive` | Video bağlamı uygulanmış işlenmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | Video bağlamı uygulanmış işlenmiş negatif koşullandırma | CONDITIONING |
 | `latent` | Genişletilmiş video dizisini içeren oluşturulmuş video latent temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanSoundImageToVideoExtend/tr.md)

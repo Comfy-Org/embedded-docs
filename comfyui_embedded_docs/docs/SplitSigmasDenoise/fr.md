@@ -11,8 +11,8 @@ Le nœud SplitSigmasDenoise divise une séquence de valeurs sigma en deux partie
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `sigmas_bas` | La première partie de la séquence sigma contenant les valeurs sigma les plus élevées | SIGMAS |
-| `low_sigmas` | La deuxième partie de la séquence sigma contenant les valeurs sigma les plus faibles | SIGMAS |
+| `sigmas_hauts` | La première partie de la séquence sigma contenant les valeurs sigma les plus élevées | SIGMAS |
+| `sigmas_bas` | La deuxième partie de la séquence sigma contenant les valeurs sigma les plus faibles | SIGMAS |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplitSigmasDenoise/fr.md)
 

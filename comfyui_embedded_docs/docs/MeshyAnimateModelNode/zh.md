@@ -11,8 +11,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `GLB` | 动画模型的字符串标识符。此输出仅用于向后兼容。 | STRING |
-| `FBX` | GLB 格式的动画 3D 模型文件。 | FILE3DGLB |
+| `模型文件` | 动画模型的字符串标识符。此输出仅用于向后兼容。 | STRING |
+| `GLB` | GLB 格式的动画 3D 模型文件。 | FILE3DGLB |
 | `FBX` | FBX 格式的动画 3D 模型文件。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/zh.md)

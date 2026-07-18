@@ -17,7 +17,7 @@ Le nœud Kling Texte vers Vidéo convertit des descriptions textuelles en conten
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
 | `video_id` | La sortie vidéo générée | VIDEO |
-| `duration` | Identifiant unique de la vidéo générée | STRING |
+| `video_id` | Identifiant unique de la vidéo générée | STRING |
 | `duration` | Informations sur la durée de la vidéo générée | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingTextToVideoNode/fr.md)

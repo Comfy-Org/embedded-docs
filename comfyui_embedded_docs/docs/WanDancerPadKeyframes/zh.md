@@ -15,9 +15,9 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `关键帧掩码` | 指定片段的填充后关键帧序列。 | IMAGE |
-| `音频片段` | 指示有效帧的遮罩（关键帧位置为 1，填充位置为 0）。 | MASK |
-| `audio_segment` | 此视频片段对应的音频片段。 | AUDIO |
+| `关键帧序列` | 指定片段的填充后关键帧序列。 | IMAGE |
+| `关键帧掩码` | 指示有效帧的遮罩（关键帧位置为 1，填充位置为 0）。 | MASK |
+| `音频片段` | 此视频片段对应的音频片段。 | AUDIO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/zh.md)
 

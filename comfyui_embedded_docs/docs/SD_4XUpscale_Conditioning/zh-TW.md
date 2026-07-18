@@ -16,9 +16,9 @@ SD_4XUpscale_Conditioning 節點用於準備使用擴散模型進行影像放大
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `負向` | 已套用放大資訊的修改後正向條件資料 | CONDITIONING |
-| `潛在空間` | 已套用放大資訊的修改後負向條件資料 | CONDITIONING |
-| `latent` | 對應放大尺寸的空潛在表示 | LATENT |
+| `正向` | 已套用放大資訊的修改後正向條件資料 | CONDITIONING |
+| `負向` | 已套用放大資訊的修改後負向條件資料 | CONDITIONING |
+| `潛在空間` | 對應放大尺寸的空潛在表示 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/zh-TW.md)
 

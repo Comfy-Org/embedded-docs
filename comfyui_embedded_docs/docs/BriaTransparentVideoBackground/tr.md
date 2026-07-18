@@ -13,7 +13,7 @@ Bu düğüm, Bria'nın yapay zeka hizmetini kullanarak bir videonun arka planın
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `mask` | Arka planı kaldırılmış video kareleri | IMAGE |
+| `görseller` | Arka planı kaldırılmış video kareleri | IMAGE |
 | `mask` | Video kareleri için alfa maskesi | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaTransparentVideoBackground/tr.md)

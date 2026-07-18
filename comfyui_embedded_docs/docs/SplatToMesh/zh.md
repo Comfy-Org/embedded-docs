@@ -19,7 +19,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `mesh` | 提取的彩色网格，采用无光照渲染（类似自发光）以匹配泼溅外观 | MESH |
+| `网格` | 提取的彩色网格，采用无光照渲染（类似自发光）以匹配泼溅外观 | MESH |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplatToMesh/zh.md)
 

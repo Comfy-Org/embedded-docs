@@ -17,10 +17,10 @@ Ce nœud fournit un aperçu avancé de modèles 3D avec sortie des informations 
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `infos_caméra` | Fichier de modèle 3D transmis depuis l'entrée. | FILE3D |
-| `infos_modèle_3d` | Métadonnées d'informations sur le modèle, provenant soit de l'entrée, soit de l'état de la fenêtre d'affichage. | LOAD3DMODELINFO |
-| `largeur` | Configuration de la caméra, provenant soit de l'entrée, soit de l'état de la fenêtre d'affichage. | LOAD3DCAMERA |
-| `hauteur` | Largeur de l'aperçu en pixels. | INT |
+| `fichier_modèle` | Fichier de modèle 3D transmis depuis l'entrée. | FILE3D |
+| `infos_caméra` | Métadonnées d'informations sur le modèle, provenant soit de l'entrée, soit de l'état de la fenêtre d'affichage. | LOAD3DMODELINFO |
+| `infos_modèle_3d` | Configuration de la caméra, provenant soit de l'entrée, soit de l'état de la fenêtre d'affichage. | LOAD3DCAMERA |
+| `largeur` | Largeur de l'aperçu en pixels. | INT |
 | `hauteur` | Hauteur de l'aperçu en pixels. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAdvanced/fr.md)

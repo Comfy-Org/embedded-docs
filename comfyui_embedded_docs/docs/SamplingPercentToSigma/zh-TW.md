@@ -14,7 +14,7 @@ SamplingPercentToSigma 節點使用模型的取樣參數，將取樣百分比值
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `sigma_value` | 對應於輸入取樣百分比的轉換後 sigma 值 | FLOAT |
+| `sigma 值` | 對應於輸入取樣百分比的轉換後 sigma 值 | FLOAT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/zh-TW.md)
 

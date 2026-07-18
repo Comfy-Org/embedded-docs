@@ -24,8 +24,8 @@
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `视频ID` | 经过唇形同步嘴部动作处理后的视频 | VIDEO |
-| `时长` | 处理后的视频的唯一标识符 | STRING |
-| `duration` | 处理后的视频时长 | STRING |
+| `视频ID` | 处理后的视频的唯一标识符 | STRING |
+| `时长` | 处理后的视频时长 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/zh.md)
 

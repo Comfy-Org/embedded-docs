@@ -24,7 +24,7 @@
 | --- | --- | --- |
 | `IMAGE` | 生成または編集された画像です。 | IMAGE |
 | `思考画像` | モデルによって生成されたテキスト説明またはキャプションです。 | STRING |
-| `thought_image` | モデルの思考プロセスからの最初の画像です。thinking_level が HIGH で、かつ IMAGE+TEXT モダリティの場合にのみ利用可能です。 | IMAGE |
+| `思考画像` | モデルの思考プロセスからの最初の画像です。thinking_level が HIGH で、かつ IMAGE+TEXT モダリティの場合にのみ利用可能です。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/ja.md)
 

@@ -18,8 +18,8 @@ VOIDInpaintConditioning düğümü, CogVideoX modelleriyle iç boyama (inpaintin
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negative` | İç boyama gizli bilgisi eklenmiş pozitif koşullandırma | CONDITIONING |
-| `latent` | İç boyama gizli bilgisi eklenmiş negatif koşullandırma | CONDITIONING |
+| `positive` | İç boyama gizli bilgisi eklenmiş pozitif koşullandırma | CONDITIONING |
+| `negative` | İç boyama gizli bilgisi eklenmiş negatif koşullandırma | CONDITIONING |
 | `latent` | [batch_size, 16, latent_t, latent_h, latent_w] şeklinde sıfır dolu gürültü gizli değişken tensörü | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/tr.md)

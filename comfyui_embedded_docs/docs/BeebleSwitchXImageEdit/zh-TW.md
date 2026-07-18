@@ -19,7 +19,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `alpha` | 已編輯的圖片，場景元素已被切換。 | IMAGE |
+| `圖像` | 已編輯的圖片，場景元素已被切換。 | IMAGE |
 | `alpha` | Beeble 使用的 Alpha 遮罩。在「fill」模式下為空，因為該模式沒有獨立遮罩。 | MASK |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXImageEdit/zh-TW.md)

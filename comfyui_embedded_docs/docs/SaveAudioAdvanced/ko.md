@@ -18,7 +18,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-----------|------|------------|
-| `ui` | 저장된 오디오 파일 정보를 포함하는 UI 출력입니다. | UI |
+| `audio` | 저장된 오디오 파일 정보를 포함하는 UI 출력입니다. | UI |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveAudioAdvanced/ko.md)
 

@@ -15,7 +15,7 @@ Hunyuan3Dv2ConditioningMultiView 노드는 3D 비디오 생성을 위한 다중 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `negative` | 위치 인코딩이 적용된 결합 다중 뷰 임베딩을 포함하는 포지티브 컨디셔닝 | CONDITIONING |
+| `positive` | 위치 인코딩이 적용된 결합 다중 뷰 임베딩을 포함하는 포지티브 컨디셔닝 | CONDITIONING |
 | `negative` | 대조 학습을 위한 0 값의 네거티브 컨디셔닝 | CONDITIONING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2ConditioningMultiView/ko.md)

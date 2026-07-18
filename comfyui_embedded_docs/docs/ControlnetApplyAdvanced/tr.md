@@ -16,7 +16,7 @@ Bu düğüm, bir görüntü ve bir kontrol ağı modeline dayanarak koşullandı
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Kontrol ağı dönüşümlerinin uygulanmasından sonra, giriş parametrelerine göre yapılan iyileştirmeleri yansıtan değiştirilmiş pozitif koşullandırma verileri. | `CONDITIONING` |
+| `pozitif` | Kontrol ağı dönüşümlerinin uygulanmasından sonra, giriş parametrelerine göre yapılan iyileştirmeleri yansıtan değiştirilmiş pozitif koşullandırma verileri. | `CONDITIONING` |
 | `negatif` | Kontrol ağı dönüşümlerinin uygulanmasından sonra, giriş parametrelerine göre belirli özelliklerin bastırılmasını veya kaldırılmasını yansıtan değiştirilmiş negatif koşullandırma verileri. | `CONDITIONING` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/tr.md)

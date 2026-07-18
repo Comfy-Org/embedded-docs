@@ -18,7 +18,7 @@ ComfyMathExpression 节点使用一组输入值计算数学公式。您可以编
 | --- | --- | --- |
 | `FLOAT` | 数学表达式的结果，以浮点数形式返回。 | FLOAT |
 | `布尔值` | 数学表达式的结果，以整数形式返回。 | INT |
-| `BOOL` | 数学表达式的结果，以布尔值形式返回。 | BOOLEAN |
+| `布尔值` | 数学表达式的结果，以布尔值形式返回。 | BOOLEAN |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfyMathExpression/zh.md)
 

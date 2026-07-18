@@ -28,8 +28,8 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `모델 task_id` | 생성된 3D 모델의 파일 경로 또는 식별자 (하위 호환성 전용) | STRING |
-| `GLB` | 모델 생성 과정 추적을 위한 작업 식별자 | MODEL_TASK_ID |
+| `모델 파일` | 생성된 3D 모델의 파일 경로 또는 식별자 (하위 호환성 전용) | STRING |
+| `모델 task_id` | 모델 생성 과정 추적을 위한 작업 식별자 | MODEL_TASK_ID |
 | `GLB` | GLB 형식으로 생성된 3D 모델 파일 | FILE3DGLB |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoMultiviewToModelNode/ko.md)

@@ -12,8 +12,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `文字` | 已載入影像張量的清單。 | IMAGE |
-| `texts` | 對應於每個已載入影像的文字說明清單。 | STRING |
+| `圖片` | 已載入影像張量的清單。 | IMAGE |
+| `文字` | 對應於每個已載入影像的文字說明清單。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/zh-TW.md)
 

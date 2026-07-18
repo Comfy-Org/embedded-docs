@@ -12,7 +12,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `conditioning` | 潛在字典的清單，其中每個字典包含一個帶有張量的 `"samples"` 鍵。 | LATENT |
+| `latents` | 潛在字典的清單，其中每個字典包含一個帶有張量的 `"samples"` 鍵。 | LATENT |
 | `conditioning` | 條件化清單的清單，其中每個內部清單包含對應樣本的條件化資料。 | CONDITIONING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/zh-TW.md)

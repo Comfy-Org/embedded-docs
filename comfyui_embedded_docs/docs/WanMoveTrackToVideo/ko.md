@@ -24,8 +24,8 @@ WanMoveTrackToVideo 노드는 비디오 생성을 위한 컨디셔닝 및 잠재
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `negative` | 수정된 포지티브 컨디셔닝으로, `concat_latent_image`, `concat_mask` 및 `clip 비전 출력`을 포함할 수 있습니다. | CONDITIONING |
-| `latent` | 수정된 네거티브 컨디셔닝으로, `concat_latent_image`, `concat_mask` 및 `clip 비전 출력`을 포함할 수 있습니다. | CONDITIONING |
+| `positive` | 수정된 포지티브 컨디셔닝으로, `concat_latent_image`, `concat_mask` 및 `clip 비전 출력`을 포함할 수 있습니다. | CONDITIONING |
+| `negative` | 수정된 네거티브 컨디셔닝으로, `concat_latent_image`, `concat_mask` 및 `clip 비전 출력`을 포함할 수 있습니다. | CONDITIONING |
 | `latent` | `배치 크기`, `길이`, `높이` 및 `너비` 입력에 의해 차원이 결정된 빈 잠재 텐서입니다. | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/ko.md)

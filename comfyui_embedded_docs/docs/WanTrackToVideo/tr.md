@@ -23,8 +23,8 @@ WanTrackToVideo düğümü, izleme noktalarını işleyerek ve karşılık gelen
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Hareket izi bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
-| `latent` | Hareket izi bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
+| `pozitif` | Hareket izi bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
+| `negatif` | Hareket izi bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
 | `latent` | Oluşturulan video gizli temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTrackToVideo/tr.md)

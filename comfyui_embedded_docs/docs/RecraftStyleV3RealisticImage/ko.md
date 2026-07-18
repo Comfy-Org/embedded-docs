@@ -10,7 +10,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `recraft_style` | `realistic_image` 스타일과 선택한 하위 스타일 설정을 포함하는 Recraft 스타일 구성 객체입니다. 이 출력은 스타일 입력을 허용하는 다른 Recraft 노드에 연결할 수 있습니다. | STYLEV3 |
+| `recraft 스타일` | `realistic_image` 스타일과 선택한 하위 스타일 설정을 포함하는 Recraft 스타일 구성 객체입니다. 이 출력은 스타일 입력을 허용하는 다른 Recraft 노드에 연결할 수 있습니다. | STYLEV3 |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3RealisticImage/ko.md)
 

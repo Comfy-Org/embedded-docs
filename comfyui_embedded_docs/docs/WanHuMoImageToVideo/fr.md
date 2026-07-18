@@ -20,8 +20,8 @@ Le nœud WanHuMoImageToVideo convertit des images en séquences vidéo en géné
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
+| `positif` | Conditionnement positif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
+| `négatif` | Conditionnement négatif modifié avec l'image de référence et/ou les embeddings audio incorporés | CONDITIONING |
 | `latent` | Représentation latente générée contenant les données de la séquence vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/fr.md)

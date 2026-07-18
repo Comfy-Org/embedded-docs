@@ -14,7 +14,7 @@ El nodo Combo Personalizado te permite crear un menú desplegable personalizado 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `ÍNDICE` | La cadena de texto de la opción seleccionada del cuadro combinado personalizado. | STRING |
-| `INDEX` | La posición de índice de la opción seleccionada en la lista desplegable. | INT |
+| `ÍNDICE` | La posición de índice de la opción seleccionada en la lista desplegable. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/es.md)
 

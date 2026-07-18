@@ -12,7 +12,7 @@ LTXVConditioning 节点用于为视频生成模型的正向和负向条件输入
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 已应用帧率信息的正向条件 | CONDITIONING |
+| `正面条件` | 已应用帧率信息的正向条件 | CONDITIONING |
 | `负面条件` | 已应用帧率信息的负向条件 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/zh.md)

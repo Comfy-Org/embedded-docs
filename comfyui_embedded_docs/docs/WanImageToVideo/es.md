@@ -20,9 +20,9 @@ El nodo WanImageToVideo prepara representaciones de condicionamiento y latentes 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo modificado con datos de imagen y visión incorporados | CONDITIONING |
-| `latente` | Condicionamiento negativo modificado con datos de imagen y visión incorporados | CONDITIONING |
-| `latent` | Tensor de espacio latente vacío listo para la generación de video | LATENT |
+| `positivo` | Condicionamiento positivo modificado con datos de imagen y visión incorporados | CONDITIONING |
+| `negativo` | Condicionamiento negativo modificado con datos de imagen y visión incorporados | CONDITIONING |
+| `latente` | Tensor de espacio latente vacío listo para la generación de video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/es.md)
 

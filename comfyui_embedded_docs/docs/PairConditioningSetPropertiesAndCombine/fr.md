@@ -20,7 +20,7 @@ Le nœud `PairConditioningSetPropertiesAndCombine` modifie et combine des paires
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | La sortie de conditionnement positif combinée | CONDITIONING |
+| `positive` | La sortie de conditionnement positif combinée | CONDITIONING |
 | `negative` | La sortie de conditionnement négatif combinée | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PairConditioningSetPropertiesAndCombine/fr.md)

@@ -13,7 +13,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `masks` | 每帧的单个二进制遮罩，其中选定的对象合并为一个遮罩。如果未选择任何对象或不存在跟踪数据，则返回零遮罩。 | MASK |
+| `mask` | 每帧的单个二进制遮罩，其中选定的对象合并为一个遮罩。如果未选择任何对象或不存在跟踪数据，则返回零遮罩。 | MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackToMask/zh.md)
 

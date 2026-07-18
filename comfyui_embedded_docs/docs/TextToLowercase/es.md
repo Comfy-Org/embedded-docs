@@ -10,7 +10,7 @@ El nodo Texto a Minúsculas toma una cadena de texto como entrada y convierte to
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `text` | El texto de entrada con todos los caracteres convertidos a minúsculas. | STRING |
+| `textos` | El texto de entrada con todos los caracteres convertidos a minúsculas. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToLowercase/es.md)
 

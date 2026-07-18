@@ -19,7 +19,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `HOOK_KF` | 補間シーケンスを含む、生成されたフックキーフレームグループ | HOOK_KEYFRAMES |
+| `フックKF` | 補間シーケンスを含む、生成されたフックキーフレームグループ | HOOK_KEYFRAMES |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesInterpolated/ja.md)
 

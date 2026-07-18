@@ -18,7 +18,7 @@ SamplerCustom 節點旨在為各種應用提供靈活且可自訂的取樣機制
 
 | 參數 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `去雜訊輸出` | 'output' 代表取樣過程的主要結果，包含生成的樣本。 | `LATENT` |
-| `denoised_output` | 'denoised_output' 代表經過降噪處理後的樣本，可能提升生成樣本的清晰度與品質。 | `LATENT` |
+| `輸出` | 'output' 代表取樣過程的主要結果，包含生成的樣本。 | `LATENT` |
+| `去雜訊輸出` | 'denoised_output' 代表經過降噪處理後的樣本，可能提升生成樣本的清晰度與品質。 | `LATENT` |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/zh-TW.md)

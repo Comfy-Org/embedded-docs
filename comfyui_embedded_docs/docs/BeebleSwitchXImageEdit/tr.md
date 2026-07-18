@@ -19,8 +19,8 @@ Beeble SwitchX ile tek bir görseli düzenleyin. Bu düğüm, orijinal nesnenin 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `alfa` | Sahne öğeleri değiştirilmiş düzenlenmiş görsel. | IMAGE |
-| `alpha` | Beeble tarafından kullanılan alfa matı. Ayrı bir matı olmayan "fill" modu için boştur. | MASK |
+| `görüntü` | Sahne öğeleri değiştirilmiş düzenlenmiş görsel. | IMAGE |
+| `alfa` | Beeble tarafından kullanılan alfa matı. Ayrı bir matı olmayan "fill" modu için boştur. | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXImageEdit/tr.md)
 

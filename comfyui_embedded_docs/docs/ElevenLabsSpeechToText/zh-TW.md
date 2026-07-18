@@ -23,9 +23,9 @@ ElevenLabs 語音轉文字節點可將音訊檔案轉錄為文字。它使用 El
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `語言代碼` | 從音訊轉錄的文字。 | STRING |
-| `單詞 JSON` | 偵測到的音訊語言代碼。 | STRING |
-| `words_json` | 包含詳細詞彙層級資訊的 JSON 格式字串，若啟用則包含時間戳記和說話者標籤。 | STRING |
+| `文字` | 從音訊轉錄的文字。 | STRING |
+| `語言代碼` | 偵測到的音訊語言代碼。 | STRING |
+| `單詞 JSON` | 包含詳細詞彙層級資訊的 JSON 格式字串，若啟用則包含時間戳記和說話者標籤。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/zh-TW.md)
 

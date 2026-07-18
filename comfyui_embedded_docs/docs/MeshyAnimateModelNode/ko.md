@@ -13,8 +13,8 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `GLB` | 애니메이션된 모델의 문자열 식별자입니다. 이 출력은 이전 버전과의 호환성을 위해서만 제공됩니다. | STRING |
-| `FBX` | GLB 형식의 애니메이션된 3D 모델 파일입니다. | FILE3DGLB |
+| `model_file` | 애니메이션된 모델의 문자열 식별자입니다. 이 출력은 이전 버전과의 호환성을 위해서만 제공됩니다. | STRING |
+| `GLB` | GLB 형식의 애니메이션된 3D 모델 파일입니다. | FILE3DGLB |
 | `FBX` | FBX 형식의 애니메이션된 3D 모델 파일입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/ko.md)

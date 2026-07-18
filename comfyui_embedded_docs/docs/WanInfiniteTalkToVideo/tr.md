@@ -34,11 +34,11 @@ WanInfiniteTalkToVideo düğümü, ses girişinden video dizileri oluşturur. Bi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `pozitif` | Ses koşullandırması uygulanmış yamalı model. | MODEL |
-| `negatif` | Potansiyel olarak ek bağlamla (örn. başlangıç görüntüsü, CLIP görüşü) değiştirilmiş olumlu koşullandırma. | CONDITIONING |
-| `latent` | Potansiyel olarak ek bağlamla değiştirilmiş olumsuz koşullandırma. | CONDITIONING |
-| `kırpılmış_görsel` | Potansiyel uzayda oluşturulan video dizisi. | LATENT |
-| `trim_image` | Bir dizi genişletilirken hareket bağlamının başlangıcından kırpılması gereken kare sayısı. | INT |
+| `model` | Ses koşullandırması uygulanmış yamalı model. | MODEL |
+| `pozitif` | Potansiyel olarak ek bağlamla (örn. başlangıç görüntüsü, CLIP görüşü) değiştirilmiş olumlu koşullandırma. | CONDITIONING |
+| `negatif` | Potansiyel olarak ek bağlamla değiştirilmiş olumsuz koşullandırma. | CONDITIONING |
+| `latent` | Potansiyel uzayda oluşturulan video dizisi. | LATENT |
+| `kırpılmış_görsel` | Bir dizi genişletilirken hareket bağlamının başlangıcından kırpılması gereken kare sayısı. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanInfiniteTalkToVideo/tr.md)
 

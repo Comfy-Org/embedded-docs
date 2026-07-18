@@ -50,8 +50,8 @@ Kling Lip Sync Audio to Video Node, bir video dosyasındaki ağız hareketlerini
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `video_kimliği` | Dudak senkronizasyonu yapılmış ağız hareketlerini içeren işlenmiş video | VIDEO |
-| `süre` | İşlenmiş video için benzersiz tanımlayıcı | STRING |
-| `duration` | İşlenmiş videonun süresi | STRING |
+| `video_kimliği` | İşlenmiş video için benzersiz tanımlayıcı | STRING |
+| `süre` | İşlenmiş videonun süresi | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/tr.md)
 

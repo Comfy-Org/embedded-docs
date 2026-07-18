@@ -14,7 +14,7 @@ Ce nœud applique un rééchelonnement temporel des scores (TSR) à un modèle d
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `patched_model` | Le modèle d'entrée, désormais patché avec la fonction de rééchelonnement temporel des scores appliquée à son processus d'échantillonnage. | MODEL |
+| `modèle_corrigé` | Le modèle d'entrée, désormais patché avec la fonction de rééchelonnement temporel des scores appliquée à son processus d'échantillonnage. | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/fr.md)
 

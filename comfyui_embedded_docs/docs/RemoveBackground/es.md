@@ -13,7 +13,7 @@ El nodo Remove Background utiliza un modelo de eliminación de fondo para genera
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `mask` | Máscara de primer plano generada que resalta el sujeto principal de la imagen de entrada | MASK |
+| `máscara` | Máscara de primer plano generada que resalta el sujeto principal de la imagen de entrada | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemoveBackground/es.md)
 

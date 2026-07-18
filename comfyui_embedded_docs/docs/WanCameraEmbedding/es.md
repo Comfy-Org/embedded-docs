@@ -18,9 +18,9 @@ El nodo WanCameraEmbedding genera embeddings de trayectoria de cámara utilizand
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ancho` | El tensor de embedding de cámara generado que contiene la secuencia de trayectoria | TENSOR |
-| `alto` | El valor de ancho que se utilizó para el procesamiento | INT |
-| `longitud` | El valor de altura que se utilizó para el procesamiento | INT |
+| `incrustación_cámara` | El tensor de embedding de cámara generado que contiene la secuencia de trayectoria | TENSOR |
+| `ancho` | El valor de ancho que se utilizó para el procesamiento | INT |
+| `alto` | El valor de altura que se utilizó para el procesamiento | INT |
 | `longitud` | El valor de longitud que se utilizó para el procesamiento | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraEmbedding/es.md)

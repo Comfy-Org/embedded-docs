@@ -16,8 +16,8 @@ TripoRetargetNode는 사전 정의된 애니메이션을 3D 캐릭터 모델에 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `리타겟 task_id` | 생성된 애니메이션 3D 모델 파일(하위 호환성 전용) | STRING |
-| `GLB` | 리타겟팅 작업 추적을 위한 작업 ID | RETARGET_TASK_ID |
+| `모델 파일` | 생성된 애니메이션 3D 모델 파일(하위 호환성 전용) | STRING |
+| `리타겟 task_id` | 리타겟팅 작업 추적을 위한 작업 ID | RETARGET_TASK_ID |
 | `GLB` | GLB 형식의 애니메이션 3D 모델 | FILE3DGLB |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/ko.md)

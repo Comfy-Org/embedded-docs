@@ -16,7 +16,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `negative` | 참조 이미지가 첨부된 긍정 컨디셔닝입니다. | CONDITIONING |
+| `positive` | 참조 이미지가 첨부된 긍정 컨디셔닝입니다. | CONDITIONING |
 | `negative` | 참조 이미지가 첨부된 부정 컨디셔닝입니다. | CONDITIONING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/ko.md)

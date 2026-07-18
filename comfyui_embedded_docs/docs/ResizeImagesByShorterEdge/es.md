@@ -11,7 +11,7 @@ Este nodo redimensiona imágenes para que el borde más corto coincida con una l
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen redimensionada con el borde más corto coincidiendo con la longitud objetivo especificada. | IMAGE |
+| `imágenes` | La imagen redimensionada con el borde más corto coincidiendo con la longitud objetivo especificada. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByShorterEdge/es.md)
 

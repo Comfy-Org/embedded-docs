@@ -19,8 +19,8 @@ Le nœud **StableZero123_Conditioning** traite une image d'entrée et des angles
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Données de conditionnement positif combinant les caractéristiques de l'image et les encastrements de caméra | CONDITIONING |
-| `latent` | Données de conditionnement négatif avec des caractéristiques initialisées à zéro | CONDITIONING |
+| `positif` | Données de conditionnement positif combinant les caractéristiques de l'image et les encastrements de caméra | CONDITIONING |
+| `négatif` | Données de conditionnement négatif avec des caractéristiques initialisées à zéro | CONDITIONING |
 | `latent` | Représentation latente avec les dimensions [batch_size, 4, height//8, width//8] | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableZero123_Conditioning/fr.md)

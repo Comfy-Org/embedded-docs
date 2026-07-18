@@ -14,7 +14,7 @@ StableCascade_StageC_VAEEncode 節點透過 VAE 編碼器處理影像，為 Stab
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `stage_b` | Stable Cascade 模型階段 C 的編碼潛在空間表示 | LATENT |
+| `stage_c` | Stable Cascade 模型階段 C 的編碼潛在空間表示 | LATENT |
 | `stage_b` | 階段 B 的佔位符潛在空間表示（目前回傳零值） | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageC_VAEEncode/zh-TW.md)

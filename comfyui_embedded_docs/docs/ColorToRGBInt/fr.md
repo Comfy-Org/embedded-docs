@@ -12,7 +12,7 @@ Le nœud ColorToRGBInt convertit une couleur spécifiée au format hexadécimal 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `hex` | La valeur entière RVB calculée. Elle est obtenue à partir de la formule : `(Rouge * 65536) + (Vert * 256) + Bleu`. | INT |
+| `rgb_int` | La valeur entière RVB calculée. Elle est obtenue à partir de la formule : `(Rouge * 65536) + (Vert * 256) + Bleu`. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/fr.md)
 

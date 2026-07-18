@@ -10,7 +10,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `text` | 已移除所有首尾空白字符的已处理文本。 | STRING |
+| `文本` | 已移除所有首尾空白字符的已处理文本。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StripWhitespace/zh.md)
 

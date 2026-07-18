@@ -11,9 +11,9 @@ Bu düğüm, bir 3B model üzerinde UV açılımı (UV unfolding) gerçekleştir
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `FBX` | OBJ formatında işlenmiş 3B model dosyası. | FILE3D |
-| `uv_görüntüsü` | FBX formatında işlenmiş 3B model dosyası. | FILE3D |
-| `uv_image` | Oluşturulan UV doku görüntüsü. | IMAGE |
+| `OBJ` | OBJ formatında işlenmiş 3B model dosyası. | FILE3D |
+| `FBX` | FBX formatında işlenmiş 3B model dosyası. | FILE3D |
+| `uv_görüntüsü` | Oluşturulan UV doku görüntüsü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/tr.md)
 

@@ -16,9 +16,9 @@ SV3D_Conditioning düğümü, SV3D modelini kullanarak 3D video oluşturma için
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Oluşturma için görüntü gömmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
-| `gizli` | Karşılaştırmalı oluşturma için sıfırlanmış gömmelere sahip negatif koşullandırma verileri | CONDITIONING |
-| `latent` | Boyutları belirtilen video kareleri ve çözünürlükle eşleşen boş bir gizli tensör | LATENT |
+| `pozitif` | Oluşturma için görüntü gömmeleri ve kamera parametrelerini içeren pozitif koşullandırma verileri | CONDITIONING |
+| `negatif` | Karşılaştırmalı oluşturma için sıfırlanmış gömmelere sahip negatif koşullandırma verileri | CONDITIONING |
+| `gizli` | Boyutları belirtilen video kareleri ve çözünürlükle eşleşen boş bir gizli tensör | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/tr.md)
 

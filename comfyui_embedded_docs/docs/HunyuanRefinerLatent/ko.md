@@ -13,8 +13,8 @@ HunyuanRefinerLatent 노드는 리파인먼트 작업을 위해 컨디셔닝 및
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `부정적` | 노이즈 증강 및 잠재 이미지 연결이 적용된 처리된 양성 컨디셔닝 | CONDITIONING |
-| `잠재` | 노이즈 증강 및 잠재 이미지 연결이 적용된 처리된 음성 컨디셔닝 | CONDITIONING |
+| `긍정적` | 노이즈 증강 및 잠재 이미지 연결이 적용된 처리된 양성 컨디셔닝 | CONDITIONING |
+| `부정적` | 노이즈 증강 및 잠재 이미지 연결이 적용된 처리된 음성 컨디셔닝 | CONDITIONING |
 | `잠재` | [배치_크기, 32, 높이, 너비, 채널] 차원의 새로운 잠재 출력 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanRefinerLatent/ko.md)

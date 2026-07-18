@@ -23,12 +23,12 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `GLB` | 이전 버전과의 호환성을 위한 레거시 출력입니다. | STRING |
-| `OBJ` | GLB(Binary GL Transmission Format) 파일 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
-| `texture_image` | OBJ(Wavefront) 파일 형식으로 생성된 3D 모델입니다. | FILE3DOBJ |
-| `optional_metallic` | 생성된 3D 모델의 텍스처 이미지입니다. | IMAGE |
-| `optional_normal` | PBR 재질의 메탈릭 맵입니다. 사용할 수 없는 경우 검은색 이미지를 반환합니다. | IMAGE |
-| `optional_roughness` | PBR 재질의 노멀 맵입니다. 사용할 수 없는 경우 검은색 이미지를 반환합니다. | IMAGE |
+| `모델 파일` | 이전 버전과의 호환성을 위한 레거시 출력입니다. | STRING |
+| `GLB` | GLB(Binary GL Transmission Format) 파일 형식으로 생성된 3D 모델입니다. | FILE3DGLB |
+| `OBJ` | OBJ(Wavefront) 파일 형식으로 생성된 3D 모델입니다. | FILE3DOBJ |
+| `texture_image` | 생성된 3D 모델의 텍스처 이미지입니다. | IMAGE |
+| `optional_metallic` | PBR 재질의 메탈릭 맵입니다. 사용할 수 없는 경우 검은색 이미지를 반환합니다. | IMAGE |
+| `optional_normal` | PBR 재질의 노멀 맵입니다. 사용할 수 없는 경우 검은색 이미지를 반환합니다. | IMAGE |
 | `optional_roughness` | PBR 재질의 러프니스 맵입니다. 사용할 수 없는 경우 검은색 이미지를 반환합니다. | IMAGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentImageToModelNode/ko.md)

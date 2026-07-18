@@ -10,7 +10,7 @@ Le nœud StringLength calcule le nombre de caractères dans une chaîne de texte
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `length` | Le nombre total de caractères dans la chaîne d'entrée, y compris les espaces et les caractères spéciaux. | INT |
+| `longueur` | Le nombre total de caractères dans la chaîne d'entrée, y compris les espaces et les caractères spéciaux. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringLength/fr.md)
 

@@ -15,7 +15,7 @@ SaveLatent 節點可將潛在張量儲存為磁碟上的檔案，以供後續使
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `ui` | 在 ComfyUI 介面中提供已儲存潛在檔案的檔案位置資訊 | UI |
+| `samples` | 在 ComfyUI 介面中提供已儲存潛在檔案的檔案位置資訊 | UI |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/zh-TW.md)
 

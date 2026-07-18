@@ -51,8 +51,8 @@ Bu düğüm, bir nesnenin veya karakterin 2 ila 4 referans görüntüsünden 3B 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_task_id` | Oluşturulan GLB modelinin dosya adı (yalnızca geriye dönük uyumluluk için). | STRING |
-| `GLB` | Bu model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
+| `model_dosyası` | Oluşturulan GLB modelinin dosya adı (yalnızca geriye dönük uyumluluk için). | STRING |
+| `model_task_id` | Bu model oluşturma isteği için benzersiz görev kimliği. | MODEL_TASK_ID |
 | `GLB` | GLB formatında oluşturulan 3B model. | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1MultiviewToModelNode/tr.md)

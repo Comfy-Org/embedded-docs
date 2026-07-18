@@ -22,7 +22,7 @@ TextGenerateLTX2Prompt 節點是文字生成節點的一個專門版本。它接
 
 | 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
-| `output` | 由語言模型生成的增強或補全文字字串。 | STRING |
+| `生成文字` | 由語言模型生成的增強或補全文字字串。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/zh-TW.md)
 

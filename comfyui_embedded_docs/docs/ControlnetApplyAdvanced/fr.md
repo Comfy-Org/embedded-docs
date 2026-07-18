@@ -16,7 +16,7 @@ Ce nœud applique des transformations avancées de réseau de contrôle aux donn
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Les données de conditionnement positives modifiées après l'application des transformations du réseau de contrôle, reflétant les améliorations apportées en fonction des paramètres d'entrée. | `CONDITIONING` |
+| `positive` | Les données de conditionnement positives modifiées après l'application des transformations du réseau de contrôle, reflétant les améliorations apportées en fonction des paramètres d'entrée. | `CONDITIONING` |
 | `negative` | Les données de conditionnement négatives modifiées après l'application des transformations du réseau de contrôle, reflétant la suppression ou l'élimination de caractéristiques spécifiques en fonction des paramètres d'entrée. | `CONDITIONING` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/fr.md)

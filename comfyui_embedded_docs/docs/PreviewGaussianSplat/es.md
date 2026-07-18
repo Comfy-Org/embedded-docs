@@ -17,10 +17,10 @@ El nodo PreviewGaussianSplat permite previsualizar un archivo de splat gaussiano
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `info_modelo_3d` | El archivo 3D de splat gaussiano de entrada, transmitido sin cambios. | FILE3D |
-| `info_cámara` | Información de metadatos sobre el modelo 3D, ya sea de la entrada o derivada del estado del viewport. | LOAD3DMODELINFO |
-| `ancho` | Información de cámara para la previsualización, ya sea de la entrada o derivada del estado del viewport. | LOAD3DCAMERA |
-| `alto` | El ancho del renderizado de previsualización. | INT |
+| `modelo_3d` | El archivo 3D de splat gaussiano de entrada, transmitido sin cambios. | FILE3D |
+| `info_modelo_3d` | Información de metadatos sobre el modelo 3D, ya sea de la entrada o derivada del estado del viewport. | LOAD3DMODELINFO |
+| `info_cámara` | Información de cámara para la previsualización, ya sea de la entrada o derivada del estado del viewport. | LOAD3DCAMERA |
+| `ancho` | El ancho del renderizado de previsualización. | INT |
 | `alto` | La altura del renderizado de previsualización. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewGaussianSplat/es.md)

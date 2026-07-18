@@ -14,7 +14,7 @@ El nodo SaveWEBM guarda una secuencia de imágenes como un archivo de video WEBM
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Vista previa del video que muestra el archivo WEBM guardado | PREVIEW |
+| `images` | Vista previa del video que muestra el archivo WEBM guardado | PREVIEW |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveWEBM/es.md)
 

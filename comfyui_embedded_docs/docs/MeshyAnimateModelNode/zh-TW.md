@@ -11,8 +11,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `GLB` | 動畫模型的字串識別碼。此輸出僅為向下相容性而提供。 | STRING |
-| `FBX` | GLB 格式的動畫 3D 模型檔案。 | FILE3DGLB |
+| `模型檔案` | 動畫模型的字串識別碼。此輸出僅為向下相容性而提供。 | STRING |
+| `GLB` | GLB 格式的動畫 3D 模型檔案。 | FILE3DGLB |
 | `FBX` | FBX 格式的動畫 3D 模型檔案。 | FILE3DFBX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/zh-TW.md)

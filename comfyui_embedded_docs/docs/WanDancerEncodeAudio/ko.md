@@ -14,7 +14,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `fps_string` | 처리된 오디오 특징, 계산된 프레임 속도(fps) 및 오디오 주입 스케일을 포함하는 딕셔너리입니다. 이 출력은 비디오 생성 모델을 컨디셔닝하는 데 사용됩니다. | AUDIO_ENCODER_OUTPUT |
+| `audio_encoder_output` | 처리된 오디오 특징, 계산된 프레임 속도(fps) 및 오디오 주입 스케일을 포함하는 딕셔너리입니다. 이 출력은 비디오 생성 모델을 컨디셔닝하는 데 사용됩니다. | AUDIO_ENCODER_OUTPUT |
 | `fps_string` | 오디오 길이와 비디오 프레임 수를 기반으로 계산된 프레임 속도(fps)를 설명하는 텍스트 문자열입니다. 이 문자열은 비디오 모델의 프롬프트에서 사용하기 위한 것입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerEncodeAudio/ko.md)

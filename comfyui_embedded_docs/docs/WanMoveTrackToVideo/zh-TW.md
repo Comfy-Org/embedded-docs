@@ -24,8 +24,8 @@ WanMoveTrackToVideo 節點為影片生成準備條件化（conditioning）與潛
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `negative` | 修改後的正向條件化資料，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
-| `latent` | 修改後的負向條件化資料，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
+| `positive` | 修改後的正向條件化資料，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
+| `negative` | 修改後的負向條件化資料，可能包含 `concat_latent_image`、`concat_mask` 與 `clip_vision_output`。 | CONDITIONING |
 | `latent` | 一個空的潛在張量，其維度由 `批次大小`、`長度`、`高度` 與 `寬度` 輸入決定。 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/zh-TW.md)

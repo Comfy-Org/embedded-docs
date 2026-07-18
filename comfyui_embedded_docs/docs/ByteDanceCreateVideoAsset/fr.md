@@ -18,7 +18,7 @@ Ce nœud crée un actif vidéo personnel pour Seedance 2.0. Il télécharge votr
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `group_id` | L'identifiant unique du nouvel actif vidéo créé. | STRING |
+| `asset_id` | L'identifiant unique du nouvel actif vidéo créé. | STRING |
 | `group_id` | L'identifiant du groupe d'actifs contenant la nouvelle vidéo. Il s'agira du `group_id` fourni ou d'un nouvel identifiant créé. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/fr.md)

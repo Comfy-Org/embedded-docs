@@ -20,9 +20,9 @@ WanImageToVideo 노드는 비디오 생성 작업을 위한 컨디셔닝 및 잠
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `부정 조건` | 이미지 및 비전 데이터가 통합된 수정된 양수 컨디셔닝 | CONDITIONING |
-| `잠재 비디오` | 이미지 및 비전 데이터가 통합된 수정된 음수 컨디셔닝 | CONDITIONING |
-| `latent` | 비디오 생성을 위해 준비된 빈 잠재 공간 텐서 | LATENT |
+| `긍정 조건` | 이미지 및 비전 데이터가 통합된 수정된 양수 컨디셔닝 | CONDITIONING |
+| `부정 조건` | 이미지 및 비전 데이터가 통합된 수정된 음수 컨디셔닝 | CONDITIONING |
+| `잠재 비디오` | 비디오 생성을 위해 준비된 빈 잠재 공간 텐서 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/ko.md)
 

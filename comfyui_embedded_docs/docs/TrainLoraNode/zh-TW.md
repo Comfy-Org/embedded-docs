@@ -40,8 +40,8 @@ TrainLoraNode 會使用提供的潛在變數與條件化資料，在擴散模型
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `損失地圖` | 訓練完成的 LoRA 權重，可以儲存或應用於其他模型。 | LORA_MODEL |
-| `步數` | 一個字典，包含隨時間變化的訓練損失值。 | LOSS_MAP |
+| `lora` | 訓練完成的 LoRA 權重，可以儲存或應用於其他模型。 | LORA_MODEL |
+| `損失地圖` | 一個字典，包含隨時間變化的訓練損失值。 | LOSS_MAP |
 | `步數` | 總共完成的訓練步數（包括來自現有 LoRA 的任何先前步數）。 | INT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TrainLoraNode/zh-TW.md)

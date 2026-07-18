@@ -16,7 +16,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `texts` | قائمة الصور بعد الخلط. | IMAGE |
+| `images` | قائمة الصور بعد الخلط. | IMAGE |
 | `texts` | قائمة النصوص بعد الخلط، مع الحفاظ على اقتراناتها الأصلية مع الصور. | STRING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleImageTextDataset/ar.md)

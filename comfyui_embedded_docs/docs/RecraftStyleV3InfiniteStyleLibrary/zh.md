@@ -12,7 +12,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `recraft_style` | 从 Recraft 无限样式库中选择的样式对象 | STYLEV3 |
+| `Recraft风格` | 从 Recraft 无限样式库中选择的样式对象 | STYLEV3 |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3InfiniteStyleLibrary/zh.md)
 

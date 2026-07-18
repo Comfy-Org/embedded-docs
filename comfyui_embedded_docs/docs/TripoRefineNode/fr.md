@@ -16,8 +16,8 @@ Le TripoRefineNode affine les modèles 3D bruts créés spécifiquement par les 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle task_id` | Le chemin d'accès ou la référence au modèle affiné (uniquement pour la rétrocompatibilité) | STRING |
-| `GLB` | L'identifiant de tâche pour l'opération du modèle affiné | MODEL_TASK_ID |
+| `fichier_modèle` | Le chemin d'accès ou la référence au modèle affiné (uniquement pour la rétrocompatibilité) | STRING |
+| `modèle task_id` | L'identifiant de tâche pour l'opération du modèle affiné | MODEL_TASK_ID |
 | `GLB` | Le modèle 3D affiné au format GLB | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRefineNode/fr.md)

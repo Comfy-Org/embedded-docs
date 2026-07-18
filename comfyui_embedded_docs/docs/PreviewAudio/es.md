@@ -10,7 +10,7 @@ El nodo PreviewAudio crea una vista previa de audio temporal que se puede reprod
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Muestra un widget reproductor de audio en la interfaz para previsualizar el audio | UI |
+| `audio` | Muestra un widget reproductor de audio en la interfaz para previsualizar el audio | UI |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/es.md)
 

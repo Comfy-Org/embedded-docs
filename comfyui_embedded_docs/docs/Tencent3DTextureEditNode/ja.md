@@ -14,8 +14,8 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `OBJ` | 処理済みの 3D モデル（GLB 形式）。 | FILE3D |
-| `texture_image` | 処理済みの 3D モデル（OBJ 形式）。 | FILE3D |
+| `GLB` | 処理済みの 3D モデル（GLB 形式）。 | FILE3D |
+| `OBJ` | 処理済みの 3D モデル（OBJ 形式）。 | FILE3D |
 | `texture_image` | 新しく生成された 3D モデル用のテクスチャ画像。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DTextureEditNode/ja.md)

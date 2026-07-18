@@ -24,8 +24,8 @@ Ce nœud génère un modèle 3D à partir d'une description textuelle en utilisa
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `ID de tâche modèle` | Le chemin d'accès au fichier du modèle 3D généré (uniquement pour la rétrocompatibilité). | STRING |
-| `GLB` | L'identifiant unique de la tâche pour la demande de génération du modèle. | MODEL_TASK_ID |
+| `fichier modèle` | Le chemin d'accès au fichier du modèle 3D généré (uniquement pour la rétrocompatibilité). | STRING |
+| `ID de tâche modèle` | L'identifiant unique de la tâche pour la demande de génération du modèle. | MODEL_TASK_ID |
 | `GLB` | Le modèle 3D généré au format GLB. | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoP1TextToModelNode/fr.md)

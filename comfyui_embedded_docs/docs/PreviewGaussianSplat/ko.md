@@ -17,10 +17,10 @@ PreviewGaussianSplat 노드를 사용하면 ComfyUI 인터페이스 내에서 3D
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `model_3d_info` | 변경 없이 그대로 전달된 입력 3D 가우시안 스플랫 파일입니다. | FILE3D |
-| `camera_info` | 입력에서 가져오거나 뷰포트 상태에서 파생된 3D 모델의 메타데이터 정보입니다. | LOAD3DMODELINFO |
-| `width` | 입력에서 가져오거나 뷰포트 상태에서 파생된 미리보기용 카메라 정보입니다. | LOAD3DCAMERA |
-| `height` | 미리보기 렌더링의 너비입니다. | INT |
+| `model_3d` | 변경 없이 그대로 전달된 입력 3D 가우시안 스플랫 파일입니다. | FILE3D |
+| `model_3d_info` | 입력에서 가져오거나 뷰포트 상태에서 파생된 3D 모델의 메타데이터 정보입니다. | LOAD3DMODELINFO |
+| `camera_info` | 입력에서 가져오거나 뷰포트 상태에서 파생된 미리보기용 카메라 정보입니다. | LOAD3DCAMERA |
+| `width` | 미리보기 렌더링의 너비입니다. | INT |
 | `height` | 미리보기 렌더링의 높이입니다. | INT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewGaussianSplat/ko.md)

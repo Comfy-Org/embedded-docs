@@ -6,9 +6,9 @@ Este nodo fija una imagen guía en un momento específico del video de salida, c
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `image` | La imagen guía para colocar en el momento elegido del video de salida. | IMAGE | Sí | - |
-| `position` | Cómo ubicar esta imagen en la línea de tiempo del video de salida. Elija entre temporización absoluta (segundos desde el inicio) o temporización fraccionaria (porcentaje de la duración del video). | COMBO | Sí | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
-| `prompt_images` | Imágenes guía anteriores opcionales para encadenar con esta. Conecte aquí la salida de otro nodo Runway Aleph2 Prompt Image para construir una cadena de hasta 5 imágenes guía. | PROMPT_IMAGE_CHAIN | No | - |
+| `imagen` | La imagen guía para colocar en el momento elegido del video de salida. | IMAGE | Sí | - |
+| `posición` | Cómo ubicar esta imagen en la línea de tiempo del video de salida. Elija entre temporización absoluta (segundos desde el inicio) o temporización fraccionaria (porcentaje de la duración del video). | COMBO | Sí | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `imágenes_de_guía` | Imágenes guía anteriores opcionales para encadenar con esta. Conecte aquí la salida de otro nodo Runway Aleph2 Prompt Image para construir una cadena de hasta 5 imágenes guía. | PROMPT_IMAGE_CHAIN | No | - |
 
 **Detalles del Modo de Posición:**
 
@@ -20,7 +20,7 @@ Cuando `position` está configurado en `Fraction (0.0 to 1.0)`, debe proporciona
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |-------------|-------------|-----------|
-| `prompt_images` | Una cadena de imágenes guía que puede conectarse a la entrada `prompt_images` del nodo Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
+| `imágenes_de_guía` | Una cadena de imágenes guía que puede conectarse a la entrada `imágenes_de_guía` del nodo Runway Aleph2 Video to Video. | PROMPT_IMAGE_CHAIN |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RunwayAleph2PromptImageNode/es.md)
 

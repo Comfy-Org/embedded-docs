@@ -16,7 +16,7 @@ Hem pozitif hem de negatif koşullandırmaya referans görseller ekleyin. Bu dü
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Referans görsellerin eklendiği pozitif koşullandırma. | CONDITIONING |
+| `pozitif` | Referans görsellerin eklendiği pozitif koşullandırma. | CONDITIONING |
 | `negatif` | Referans görsellerin eklendiği negatif koşullandırma. | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/tr.md)

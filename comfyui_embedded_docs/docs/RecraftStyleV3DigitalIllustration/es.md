@@ -10,7 +10,7 @@ Este nodo configura un estilo para usar con la API de Recraft, seleccionando esp
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `recraft_style` | Un objeto de estilo configurado que contiene el estilo "digital_illustration" seleccionado y el subestilo opcional, listo para ser pasado a otros nodos de la API de Recraft. | STYLEV3 |
+| `estilo_recraft` | Un objeto de estilo configurado que contiene el estilo "digital_illustration" seleccionado y el subestilo opcional, listo para ser pasado a otros nodos de la API de Recraft. | STYLEV3 |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3DigitalIllustration/es.md)
 

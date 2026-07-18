@@ -20,9 +20,9 @@ El nodo HunyuanVideo15ImageToVideo prepara los datos de condicionamiento y espac
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
-| `latente` | El condicionamiento negativo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
-| `latent` | Un tensor latente vacío con dimensiones configuradas para el tamaño de lote, la duración del video, el ancho y la altura especificados. | LATENT |
+| `positivo` | El condicionamiento positivo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
+| `negativo` | El condicionamiento negativo modificado, que ahora puede incluir la imagen de inicio codificada o la salida de CLIP vision. | CONDITIONING |
+| `latente` | Un tensor latente vacío con dimensiones configuradas para el tamaño de lote, la duración del video, el ancho y la altura especificados. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/es.md)
 

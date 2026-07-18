@@ -15,8 +15,8 @@ Este nodo prepara una secuencia de fotogramas clave para un segmento específico
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `keyframes_mask` | Secuencia de fotogramas clave rellenada para el segmento especificado. | IMAGE |
-| `audio_segment` | Máscara que indica los fotogramas válidos (1 para posiciones de fotogramas clave, 0 para posiciones rellenadas). | MASK |
+| `keyframes_sequence` | Secuencia de fotogramas clave rellenada para el segmento especificado. | IMAGE |
+| `keyframes_mask` | Máscara que indica los fotogramas válidos (1 para posiciones de fotogramas clave, 0 para posiciones rellenadas). | MASK |
 | `audio_segment` | Segmento de audio correspondiente a este segmento de video. | AUDIO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframes/es.md)

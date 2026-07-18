@@ -13,8 +13,8 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `المرحلة_ب` | موتر المرحلة C الكامن بأبعاد [batch_size, 16, height//compression, width//compression] | LATENT |
-| `stage_b` | موتر المرحلة B الكامن بأبعاد [batch_size, 4, height//4, width//4] | LATENT |
+| `المرحلة_ج` | موتر المرحلة C الكامن بأبعاد [batch_size, 16, height//compression, width//compression] | LATENT |
+| `المرحلة_ب` | موتر المرحلة B الكامن بأبعاد [batch_size, 4, height//4, width//4] | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/ar.md)
 

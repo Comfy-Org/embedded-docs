@@ -22,7 +22,7 @@ ControlNetInpaintingAliMamaApply 노드는 인페인팅 작업을 위해 Control
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `부정 조건` | 인페인팅을 위해 ControlNet이 적용된 수정된 포지티브 컨디셔닝 | CONDITIONING |
+| `긍정 조건` | 인페인팅을 위해 ControlNet이 적용된 수정된 포지티브 컨디셔닝 | CONDITIONING |
 | `부정 조건` | 인페인팅을 위해 ControlNet이 적용된 수정된 네거티브 컨디셔닝 | CONDITIONING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetInpaintingAliMamaApply/ko.md)

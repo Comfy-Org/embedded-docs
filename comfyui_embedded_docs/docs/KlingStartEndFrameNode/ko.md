@@ -26,8 +26,8 @@ Kling 시작-종료 프레임 비디오 노드는 제공된 시작 이미지와 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
 | `비디오 ID` | 생성된 비디오 시퀀스 | VIDEO |
-| `길이` | 생성된 비디오의 고유 식별자 | STRING |
-| `duration` | 생성된 비디오의 재생 시간 | STRING |
+| `비디오 ID` | 생성된 비디오의 고유 식별자 | STRING |
+| `길이` | 생성된 비디오의 재생 시간 | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/ko.md)
 

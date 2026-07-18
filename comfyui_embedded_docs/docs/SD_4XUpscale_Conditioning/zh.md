@@ -14,9 +14,9 @@ SD_4XUpscale_Conditioning 节点用于准备扩散模型放大图像所需的 co
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 应用放大信息后的修改版正向 conditioning | CONDITIONING |
-| `Latent` | 应用放大信息后的修改版负向 conditioning | CONDITIONING |
-| `latent` | 与放大后尺寸匹配的空潜空间表示 | LATENT |
+| `正面条件` | 应用放大信息后的修改版正向 conditioning | CONDITIONING |
+| `负面条件` | 应用放大信息后的修改版负向 conditioning | CONDITIONING |
+| `Latent` | 与放大后尺寸匹配的空潜空间表示 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/zh.md)
 

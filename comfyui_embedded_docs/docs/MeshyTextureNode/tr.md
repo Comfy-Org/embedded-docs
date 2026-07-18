@@ -20,9 +20,9 @@
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `meshy_görev_id` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `GLB` | Sonuca başvurmak için kullanılabilen, bu doku oluşturma işine ait benzersiz görev tanımlayıcısı. | MODEL_TASK_ID |
-| `FBX` | GLB dosya formatında kaydedilmiş dokulu 3D model. | FILE3DGLB |
+| `model_dosyası` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
+| `meshy_görev_id` | Sonuca başvurmak için kullanılabilen, bu doku oluşturma işine ait benzersiz görev tanımlayıcısı. | MODEL_TASK_ID |
+| `GLB` | GLB dosya formatında kaydedilmiş dokulu 3D model. | FILE3DGLB |
 | `FBX` | FBX dosya formatında kaydedilmiş dokulu 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/tr.md)

@@ -16,7 +16,7 @@ Adjunta imágenes de referencia tanto al condicionamiento positivo como al negat
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | El condicionamiento positivo con las imágenes de referencia adjuntas. | CONDITIONING |
+| `positivo` | El condicionamiento positivo con las imágenes de referencia adjuntas. | CONDITIONING |
 | `negativo` | El condicionamiento negativo con las imágenes de referencia adjuntas. | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/es.md)

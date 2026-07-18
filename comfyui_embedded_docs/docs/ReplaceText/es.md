@@ -12,7 +12,7 @@ El nodo Reemplazar Texto realiza una sustitución de texto simple. Busca un frag
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `text` | El texto procesado con todas las apariciones del texto `find` reemplazadas por el texto `replace`. | STRING |
+| `texts` | El texto procesado con todas las apariciones del texto `find` reemplazadas por el texto `replace`. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceText/es.md)
 

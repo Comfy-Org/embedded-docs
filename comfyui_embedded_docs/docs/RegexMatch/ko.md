@@ -14,7 +14,7 @@ RegexMatch 노드는 텍스트 문자열에 지정된 정규 표현식 패턴과
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `matches` | 정규 표현식 패턴이 입력 문자열의 일부와 일치하면 True를 반환하고, 그렇지 않으면 False를 반환합니다 | BOOLEAN |
+| `일치 항목` | 정규 표현식 패턴이 입력 문자열의 일부와 일치하면 True를 반환하고, 그렇지 않으면 False를 반환합니다 | BOOLEAN |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/ko.md)
 

@@ -11,9 +11,9 @@ StableCascade_SuperResolutionControlnet 节点用于准备 Stable Cascade 超分
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `阶段C` | 适用于 controlnet 输入的编码图像表示 | IMAGE |
-| `阶段B` | Stable Cascade 处理阶段 C 的占位潜空间表示 | LATENT |
-| `stage_b` | Stable Cascade 处理阶段 B 的占位潜空间表示 | LATENT |
+| `ControlNet` | 适用于 controlnet 输入的编码图像表示 | IMAGE |
+| `阶段C` | Stable Cascade 处理阶段 C 的占位潜空间表示 | LATENT |
+| `阶段B` | Stable Cascade 处理阶段 B 的占位潜空间表示 | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/zh.md)
 

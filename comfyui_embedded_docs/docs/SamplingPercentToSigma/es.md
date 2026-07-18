@@ -12,7 +12,7 @@ El nodo SamplingPercentToSigma convierte un valor de porcentaje de muestreo en u
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `sigma_value` | El valor sigma convertido correspondiente al porcentaje de muestreo de entrada | FLOAT |
+| `valor_sigma` | El valor sigma convertido correspondiente al porcentaje de muestreo de entrada | FLOAT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/es.md)
 

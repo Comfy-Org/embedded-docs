@@ -18,9 +18,9 @@ Ce nœud utilise l'API Hunyuan3D Pro de Tencent pour générer un modèle 3D à 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `GLB` | Une sortie héritée pour la rétrocompatibilité. | STRING |
-| `OBJ` | Le modèle 3D généré au format de fichier GLB. | FILE3DGLB |
-| `texture_image` | Le modèle 3D généré au format de fichier OBJ. | FILE3DOBJ |
+| `fichier_modèle` | Une sortie héritée pour la rétrocompatibilité. | STRING |
+| `GLB` | Le modèle 3D généré au format de fichier GLB. | FILE3DGLB |
+| `OBJ` | Le modèle 3D généré au format de fichier OBJ. | FILE3DOBJ |
 | `texture_image` | L'image de texture extraite du fichier OBJ généré, si disponible. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentTextToModelNode/fr.md)

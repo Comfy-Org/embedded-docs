@@ -11,7 +11,7 @@ Este nodo genera activos 3D utilizando la API de Rodin. Toma imágenes de entrad
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `GLB` | Ruta del archivo al modelo 3D generado (solo para compatibilidad hacia atrás) | STRING |
+| `Ruta del modelo 3D` | Ruta del archivo al modelo 3D generado (solo para compatibilidad hacia atrás) | STRING |
 | `GLB` | El modelo 3D generado en formato GLB | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Sketch/es.md)

@@ -10,7 +10,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `images` | 已加载图像的列表。该节点会加载所选文件夹中找到的所有有效图像文件（PNG、JPG、JPEG、WEBP）。 | IMAGE |
+| `图像` | 已加载图像的列表。该节点会加载所选文件夹中找到的所有有效图像文件（PNG、JPG、JPEG、WEBP）。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/zh.md)
 

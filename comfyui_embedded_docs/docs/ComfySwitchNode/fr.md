@@ -14,7 +14,7 @@ Le nœud Switch sélectionne entre deux entrées possibles en fonction d'une con
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `output` | Les données sélectionnées. Il s'agira de la valeur de l'entrée `vrai` si le `interrupteur` est true, ou de la valeur de l'entrée `faux` si le `interrupteur` est false. | MATCH_TYPE |
+| `sortie` | Les données sélectionnées. Il s'agira de la valeur de l'entrée `vrai` si le `interrupteur` est true, ou de la valeur de l'entrée `faux` si le `interrupteur` est false. | MATCH_TYPE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/fr.md)
 

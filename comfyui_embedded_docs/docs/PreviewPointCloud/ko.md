@@ -17,10 +17,10 @@ Preview Point Cloud 노드는 ComfyUI 인터페이스 내에서 3D 포인트 클
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-----------|------|------------|
-| `model_3d_info` | 포인트 클라우드 모델 데이터 | FILE3D |
-| `camera_info` | 3D 모델에 대한 정보 | LOAD3DMODELINFO |
-| `width` | 3D 뷰를 위한 카메라 정보 | LOAD3DCAMERA |
-| `height` | 미리보기 창의 너비 | INT |
+| `model_3d` | 포인트 클라우드 모델 데이터 | FILE3D |
+| `model_3d_info` | 3D 모델에 대한 정보 | LOAD3DMODELINFO |
+| `camera_info` | 3D 뷰를 위한 카메라 정보 | LOAD3DCAMERA |
+| `width` | 미리보기 창의 너비 | INT |
 | `height` | 미리보기 창의 높이 | INT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewPointCloud/ko.md)

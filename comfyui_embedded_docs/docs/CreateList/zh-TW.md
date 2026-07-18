@@ -12,7 +12,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `list` | 一個包含所有已連接輸入項目的單一列表，並按照提供的順序串接。輸出資料類型與輸入資料類型相符。 | 依情況而定 |
+| `清單` | 一個包含所有已連接輸入項目的單一列表，並按照提供的順序串接。輸出資料類型與輸入資料類型相符。 | 依情況而定 |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateList/zh-TW.md)
 

@@ -12,7 +12,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `text` | `find`テキストのすべての出現箇所が`replace`テキストに置き換えられた処理済みテキスト。 | STRING |
+| `texts` | `find`テキストのすべての出現箇所が`replace`テキストに置き換えられた処理済みテキスト。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceText/ja.md)
 

@@ -31,7 +31,7 @@ El nodo SAM3 Detect realiza detección y segmentación de vocabulario abierto ut
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `cajas_delimitadoras` | Máscaras de segmentación. Cuando `máscaras_individuales` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado | MASK |
+| `máscaras` | Máscaras de segmentación. Cuando `máscaras_individuales` es False (predeterminado), devuelve una sola máscara combinada por fotograma. Cuando es True, devuelve máscaras individuales para cada objeto detectado | MASK |
 | `cajas_delimitadoras` | Cuadros delimitadores detectados con coordenadas y puntuaciones de confianza. Cada cuadro incluye valores de `x`, `y`, `width`, `height` y `score` | BOUNDING_BOX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/es.md)

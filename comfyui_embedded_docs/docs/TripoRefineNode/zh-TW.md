@@ -10,8 +10,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `模型任務 ID` | 精煉後模型的檔案路徑或參考（僅為向後相容性保留） | STRING |
-| `GLB` | 精煉模型操作的任務識別碼 | MODEL_TASK_ID |
+| `模型檔案` | 精煉後模型的檔案路徑或參考（僅為向後相容性保留） | STRING |
+| `模型任務 ID` | 精煉模型操作的任務識別碼 | MODEL_TASK_ID |
 | `GLB` | 精煉後的 GLB 格式 3D 模型 | FILE3DGLB |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRefineNode/zh-TW.md)

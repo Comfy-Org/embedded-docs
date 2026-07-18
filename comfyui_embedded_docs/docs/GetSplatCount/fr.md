@@ -12,8 +12,8 @@ Le nœud Obtenir le Nombre de Splats renvoie le nombre total de splats (points g
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `nombre` | Les données de splat d'origine, transmises sans modification | SPLAT |
-| `count` | Le nombre total de splats additionné sur l'ensemble du lot | INT |
+| `splat` | Les données de splat d'origine, transmises sans modification | SPLAT |
+| `nombre` | Le nombre total de splats additionné sur l'ensemble du lot | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GetSplatCount/fr.md)
 

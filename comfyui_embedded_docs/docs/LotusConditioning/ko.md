@@ -12,7 +12,7 @@ LotusConditioning 노드는 Lotus 모델을 위해 사전 계산된 컨디셔닝
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `conditioning` | Lotus 모델을 위한 사전 계산된 컨디셔닝 임베딩으로, 고정 프롬프트 임베딩과 빈 딕셔너리를 포함합니다. | CONDITIONING |
+| `조건` | Lotus 모델을 위한 사전 계산된 컨디셔닝 임베딩으로, 고정 프롬프트 임베딩과 빈 딕셔너리를 포함합니다. | CONDITIONING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LotusConditioning/ko.md)
 

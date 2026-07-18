@@ -17,10 +17,10 @@ PreviewGaussianSplat ノードを使用すると、ComfyUI インターフェー
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `model_3d_info` | 入力された3Dガウシアンスプラットファイルをそのまま出力 | FILE3D |
-| `camera_info` | 入力から取得、またはビューポート状態から導出された3Dモデルのメタデータ情報 | LOAD3DMODELINFO |
-| `width` | 入力から取得、またはビューポート状態から導出されたプレビュー用のカメラ情報 | LOAD3DCAMERA |
-| `height` | プレビューレンダリングの幅 | INT |
+| `model_3d` | 入力された3Dガウシアンスプラットファイルをそのまま出力 | FILE3D |
+| `model_3d_info` | 入力から取得、またはビューポート状態から導出された3Dモデルのメタデータ情報 | LOAD3DMODELINFO |
+| `camera_info` | 入力から取得、またはビューポート状態から導出されたプレビュー用のカメラ情報 | LOAD3DCAMERA |
+| `width` | プレビューレンダリングの幅 | INT |
 | `height` | プレビューレンダリングの高さ | INT |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewGaussianSplat/ja.md)

@@ -28,7 +28,7 @@ Bu düğüm, Rodin Gen-2.5 API'sini kullanarak bir ila beş referans görüntüd
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_file` | Seçilen geometri biçiminde oluşturulan 3B model dosyası. | FILE3D |
+| `model_dosyası` | Seçilen geometri biçiminde oluşturulan 3B model dosyası. | FILE3D |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Image/tr.md)
 

@@ -23,8 +23,8 @@ El nodo HunyuanImageToVideo convierte imágenes en representaciones latentes de 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `latente` | Condicionamiento positivo modificado con guía de imagen aplicada cuando se proporciona start_image | CONDITIONING |
-| `latent` | Representación latente de video lista para su posterior procesamiento por modelos de generación de video | LATENT |
+| `positivo` | Condicionamiento positivo modificado con guía de imagen aplicada cuando se proporciona start_image | CONDITIONING |
+| `latente` | Representación latente de video lista para su posterior procesamiento por modelos de generación de video | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/es.md)
 

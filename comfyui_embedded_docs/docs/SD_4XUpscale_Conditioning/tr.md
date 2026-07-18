@@ -14,9 +14,9 @@ SD_4XUpscale_Conditioning düğümü, difüzyon modelleri kullanarak görüntül
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `gizli` | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
-| `latent` | Büyütülmüş boyutlarla eşleşen boş gizli temsil | LATENT |
+| `pozitif` | Büyütme bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | Büyütme bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `gizli` | Büyütülmüş boyutlarla eşleşen boş gizli temsil | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SD_4XUpscale_Conditioning/tr.md)
 

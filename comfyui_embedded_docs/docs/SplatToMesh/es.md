@@ -19,7 +19,7 @@ Este nodo convierte un splat gaussiano 3D en una superficie de malla coloreada. 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|-----------|
-| `mesh` | La malla coloreada extraída con renderizado sin iluminación (similar a emisivo) para coincidir con la apariencia del splat | MESH |
+| `malla` | La malla coloreada extraída con renderizado sin iluminación (similar a emisivo) para coincidir con la apariencia del splat | MESH |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SplatToMesh/es.md)
 

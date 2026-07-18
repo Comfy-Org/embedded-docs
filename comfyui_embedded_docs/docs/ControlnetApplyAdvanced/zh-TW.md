@@ -16,7 +16,7 @@
 
 | 參數 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `負向` | 套用控制網格轉換後修改過的正向條件化資料，反映了根據輸入參數所做的增強效果。 | `CONDITIONING` |
+| `正向` | 套用控制網格轉換後修改過的正向條件化資料，反映了根據輸入參數所做的增強效果。 | `CONDITIONING` |
 | `負向` | 套用控制網格轉換後修改過的負向條件化資料，反映了根據輸入參數對特定特徵的抑制或移除效果。 | `CONDITIONING` |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/zh-TW.md)

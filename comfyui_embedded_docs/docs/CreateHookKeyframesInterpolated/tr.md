@@ -17,7 +17,7 @@ Bir başlangıç ve bitiş noktası arasında enterpolasyonlu güç değerlerine
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `HOOK_KF` | Enterpolasyonlu diziyi içeren oluşturulan kanca anahtar kareleri grubu | HOOK_KEYFRAMES |
+| `Kanca_KF` | Enterpolasyonlu diziyi içeren oluşturulan kanca anahtar kareleri grubu | HOOK_KEYFRAMES |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesInterpolated/tr.md)
 

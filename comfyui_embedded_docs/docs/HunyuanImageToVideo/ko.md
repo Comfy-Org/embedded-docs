@@ -25,8 +25,8 @@ HunyuanImageToVideo 노드는 Hunyuan 비디오 모델을 사용하여 이미지
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `잠재 비디오` | start_image가 제공될 때 이미지 안내가 적용된 수정된 긍정 조건 | CONDITIONING |
-| `latent` | 비디오 생성 모델에서 추가 처리를 위해 준비된 비디오 잠재 표현 | LATENT |
+| `긍정 조건` | start_image가 제공될 때 이미지 안내가 적용된 수정된 긍정 조건 | CONDITIONING |
+| `잠재 비디오` | 비디오 생성 모델에서 추가 처리를 위해 준비된 비디오 잠재 표현 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/ko.md)
 

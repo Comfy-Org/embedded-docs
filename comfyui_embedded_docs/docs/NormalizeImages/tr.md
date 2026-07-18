@@ -12,7 +12,7 @@ Bu düğüm, bir giriş görüntüsünün piksel değerlerini matematiksel bir n
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `image` | Normalleştirme işlemi uygulandıktan sonra elde edilen sonuç görüntüsü. | IMAGE |
+| `görüntüler` | Normalleştirme işlemi uygulandıktan sonra elde edilen sonuç görüntüsü. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/tr.md)
 

@@ -18,8 +18,8 @@ Le nœud LTXVImgToVideo convertit une image d'entrée en une représentation lat
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Conditionnement positif traité avec masquage d'image vidéo appliqué | CONDITIONING |
-| `latent` | Conditionnement négatif traité avec masquage d'image vidéo appliqué | CONDITIONING |
+| `positive` | Conditionnement positif traité avec masquage d'image vidéo appliqué | CONDITIONING |
+| `negative` | Conditionnement négatif traité avec masquage d'image vidéo appliqué | CONDITIONING |
 | `latent` | Représentation latente vidéo contenant les images encodées et le masque de bruit pour la génération vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVImgToVideo/fr.md)

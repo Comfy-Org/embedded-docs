@@ -14,7 +14,7 @@ LTXVConditioning 節點會將影格率資訊新增至影片生成模型的正向
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `負向` | 已套用影格率資訊的正向條件 | CONDITIONING |
+| `正向` | 已套用影格率資訊的正向條件 | CONDITIONING |
 | `負向` | 已套用影格率資訊的負向條件 | CONDITIONING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/zh-TW.md)

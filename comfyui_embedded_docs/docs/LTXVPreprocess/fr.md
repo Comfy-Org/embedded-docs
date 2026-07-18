@@ -11,7 +11,7 @@ Le nœud LTXVPreprocess applique un prétraitement de compression aux images. Il
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `output_image` | L'image de sortie traitée avec la compression appliquée | IMAGE |
+| `image_de_sortie` | L'image de sortie traitée avec la compression appliquée | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVPreprocess/fr.md)
 

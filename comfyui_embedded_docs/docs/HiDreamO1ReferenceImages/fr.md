@@ -18,7 +18,7 @@ Attachez des images de référence aux conditionnements positif et négatif. Ce 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif avec les images de référence attachées. | CONDITIONING |
+| `positif` | Le conditionnement positif avec les images de référence attachées. | CONDITIONING |
 | `négatif` | Le conditionnement négatif avec les images de référence attachées. | CONDITIONING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HiDreamO1ReferenceImages/fr.md)

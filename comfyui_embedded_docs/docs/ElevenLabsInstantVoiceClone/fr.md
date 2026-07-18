@@ -15,7 +15,7 @@ Le nœud ElevenLabs Instant Voice Clone crée un nouveau modèle vocal unique en
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `voice` | L'identifiant unique du modèle vocal cloné nouvellement créé. Cette sortie peut être connectée à d'autres nœuds de synthèse vocale ElevenLabs. | ELEVENLABS_VOICE |
+| `voix` | L'identifiant unique du modèle vocal cloné nouvellement créé. Cette sortie peut être connectée à d'autres nœuds de synthèse vocale ElevenLabs. | ELEVENLABS_VOICE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsInstantVoiceClone/fr.md)
 

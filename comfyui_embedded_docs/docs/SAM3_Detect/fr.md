@@ -33,7 +33,7 @@ Le nœud SAM3 Detect effectue une détection et une segmentation à vocabulaire 
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `boîtes_englobantes` | Masques de segmentation. Lorsque `masques_individuels` est Faux (par défaut), renvoie un seul masque combiné par image. Lorsqu'il est Vrai, renvoie des masques individuels pour chaque objet détecté | MASK |
+| `masques` | Masques de segmentation. Lorsque `masques_individuels` est Faux (par défaut), renvoie un seul masque combiné par image. Lorsqu'il est Vrai, renvoie des masques individuels pour chaque objet détecté | MASK |
 | `boîtes_englobantes` | Boîtes englobantes détectées avec les coordonnées et les scores de confiance. Chaque boîte inclut les valeurs `x`, `y`, `width`, `height` et `score` | BOUNDING_BOX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_Detect/fr.md)

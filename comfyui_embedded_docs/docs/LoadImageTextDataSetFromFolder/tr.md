@@ -12,7 +12,7 @@ Bu düğüm, belirtilen bir klasörden görüntüleri ve bunlara karşılık gel
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `texts` | Yüklenen görüntü tensörlerinin bir listesi. | IMAGE |
+| `images` | Yüklenen görüntü tensörlerinin bir listesi. | IMAGE |
 | `texts` | Yüklenen her görüntüye karşılık gelen metin açıklamalarının bir listesi. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/tr.md)

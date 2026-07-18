@@ -15,7 +15,7 @@ ConditioningStableAudio düğümü, ses üretimi için hem pozitif hem de negati
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `pozitif` | Ses zamanlama bilgisi uygulanmış değiştirilmiş pozitif koşullandırma | CONDITIONING |
 | `negatif` | Ses zamanlama bilgisi uygulanmış değiştirilmiş negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningStableAudio/tr.md)

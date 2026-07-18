@@ -55,7 +55,7 @@ TextGenerate düğümü, kullanıcının istemine dayalı olarak metin oluşturm
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `generated_text` | Model tarafından giriş istemi ve isteğe bağlı görsel, video veya ses temel alınarak oluşturulan metin. | STRING |
+| `oluşturulan_metin` | Model tarafından giriş istemi ve isteğe bağlı görsel, video veya ses temel alınarak oluşturulan metin. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerate/tr.md)
 

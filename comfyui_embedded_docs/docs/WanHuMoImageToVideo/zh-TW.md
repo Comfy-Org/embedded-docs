@@ -22,9 +22,9 @@ WanHuMoImageToVideo 節點透過生成影片畫格的潛在表示，將影像轉
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `負面提示` | 修改後的正向條件化，已納入參考影像和/或音訊嵌入 | CONDITIONING |
-| `潛在空間` | 修改後的負向條件化，已納入參考影像和/或音訊嵌入 | CONDITIONING |
-| `latent` | 生成的潛在表示，包含影片序列資料 | LATENT |
+| `正面提示` | 修改後的正向條件化，已納入參考影像和/或音訊嵌入 | CONDITIONING |
+| `負面提示` | 修改後的負向條件化，已納入參考影像和/或音訊嵌入 | CONDITIONING |
+| `潛在空間` | 生成的潛在表示，包含影片序列資料 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanHuMoImageToVideo/zh-TW.md)
 

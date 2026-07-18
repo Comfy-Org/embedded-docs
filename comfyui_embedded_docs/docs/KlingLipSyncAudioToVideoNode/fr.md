@@ -24,8 +24,8 @@ Nœud Kling Lip Sync Audio to Video synchronise les mouvements des lèvres dans 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
 | `id_vidéo` | La vidéo traitée avec les mouvements des lèvres synchronisés | VIDEO |
-| `durée` | L'identifiant unique de la vidéo traitée | STRING |
-| `duration` | La durée de la vidéo traitée | STRING |
+| `id_vidéo` | L'identifiant unique de la vidéo traitée | STRING |
+| `durée` | La durée de la vidéo traitée | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/fr.md)
 

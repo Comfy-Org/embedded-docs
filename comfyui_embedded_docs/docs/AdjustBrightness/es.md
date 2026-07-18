@@ -11,7 +11,7 @@ El nodo Ajustar Brillo modifica el brillo de una imagen de entrada. Funciona mul
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `image` | La imagen de salida con el brillo ajustado. | IMAGE |
+| `imágenes` | La imagen de salida con el brillo ajustado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AdjustBrightness/es.md)
 

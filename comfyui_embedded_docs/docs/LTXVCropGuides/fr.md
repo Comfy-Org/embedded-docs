@@ -12,8 +12,8 @@ Le nœud **LTXVCropGuides** traite les entrées de conditionnement et latentes p
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif traité avec les indices d'images clés et les entrées d'attention de guidage effacés | CONDITIONING |
-| `latent` | Le conditionnement négatif traité avec les indices d'images clés et les entrées d'attention de guidage effacés | CONDITIONING |
+| `positive` | Le conditionnement positif traité avec les indices d'images clés et les entrées d'attention de guidage effacés | CONDITIONING |
+| `négatif` | Le conditionnement négatif traité avec les indices d'images clés et les entrées d'attention de guidage effacés | CONDITIONING |
 | `latent` | La représentation latente rognée avec les échantillons et le masque de bruit ajustés, où les sections d'images clés ont été supprimées | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVCropGuides/fr.md)

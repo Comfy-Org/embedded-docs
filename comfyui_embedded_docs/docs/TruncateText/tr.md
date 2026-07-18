@@ -13,7 +13,7 @@ Bu düğüm, metni belirtilen maksimum uzunlukta keserek kısaltır. Herhangi bi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `string` | Girdiden yalnızca ilk `max_length` karakterini içeren kısaltılmış metin. | STRING |
+| `texts` | Girdiden yalnızca ilk `max_length` karakterini içeren kısaltılmış metin. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/tr.md)
 

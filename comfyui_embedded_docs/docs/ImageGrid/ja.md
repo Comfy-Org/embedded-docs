@@ -16,7 +16,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `image` | すべての入力画像がグリッド状に配置された、単一の出力画像。 | IMAGE |
+| `画像` | すべての入力画像がグリッド状に配置された、単一の出力画像。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageGrid/ja.md)
 

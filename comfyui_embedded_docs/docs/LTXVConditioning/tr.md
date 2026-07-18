@@ -12,7 +12,7 @@ LTXVConditioning düğümü, video oluşturma modelleri için hem pozitif hem de
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Kare hızı bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
+| `pozitif` | Kare hızı bilgisi uygulanmış pozitif koşullandırma | CONDITIONING |
 | `negatif` | Kare hızı bilgisi uygulanmış negatif koşullandırma | CONDITIONING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVConditioning/tr.md)

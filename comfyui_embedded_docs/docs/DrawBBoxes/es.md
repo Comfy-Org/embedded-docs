@@ -16,7 +16,7 @@ El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando c
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `out_image` | La(s) imagen(es) de salida con los cuadros delimitadores, etiquetas y puntuaciones de confianza superpuestos. | IMAGE |
+| `imagen_salida` | La(s) imagen(es) de salida con los cuadros delimitadores, etiquetas y puntuaciones de confianza superpuestos. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DrawBBoxes/es.md)
 

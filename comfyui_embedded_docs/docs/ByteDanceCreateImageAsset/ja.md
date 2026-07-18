@@ -16,7 +16,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `group_id` | 新しく作成された画像アセットの一意の識別子です。 | STRING |
+| `asset_id` | 新しく作成された画像アセットの一意の識別子です。 | STRING |
 | `group_id` | アセットグループの識別子です。指定された `group_id` または新しく作成された ID になります。 | STRING |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateImageAsset/ja.md)

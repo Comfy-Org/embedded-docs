@@ -14,7 +14,7 @@ Switch düğümü, bir boolean koşuluna bağlı olarak iki olası girdi arasın
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `output` | Seçilen veri. `anahtar` true ise `doğruda` girdisinden, false ise `yanlışta` girdisinden gelen değer olacaktır. | MATCH_TYPE |
+| `çıktı` | Seçilen veri. `anahtar` true ise `doğruda` girdisinden, false ise `yanlışta` girdisinden gelen değer olacaktır. | MATCH_TYPE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/tr.md)
 

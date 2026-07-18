@@ -20,7 +20,7 @@ Le nœud TextGenerateLTX2Prompt est une version spécialisée d'un nœud de gén
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `output` | La chaîne de texte améliorée ou complétée générée par le modèle de langage. | STRING |
+| `texte_généré` | La chaîne de texte améliorée ou complétée générée par le modèle de langage. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/fr.md)
 

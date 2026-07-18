@@ -18,8 +18,8 @@ Le nœud HunyuanVideo15SuperResolution prépare les données de conditionnement 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
+| `positif` | Le conditionnement positif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
+| `négatif` | Le conditionnement négatif modifié, contenant désormais le latent concaténé, l'augmentation de bruit et les données de vision CLIP facultatives. | CONDITIONING |
 | `latent` | Le latent d'entrée est transmis sans modification. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15SuperResolution/fr.md)

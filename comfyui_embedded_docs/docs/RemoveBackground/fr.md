@@ -15,7 +15,7 @@ Le nœud Remove Background utilise un modèle de suppression d'arrière-plan pou
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `mask` | Masque de premier plan généré qui met en évidence le sujet principal de l'image d'entrée | MASK |
+| `masque` | Masque de premier plan généré qui met en évidence le sujet principal de l'image d'entrée | MASK |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RemoveBackground/fr.md)
 

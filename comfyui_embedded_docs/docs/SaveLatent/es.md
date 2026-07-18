@@ -13,7 +13,7 @@ El nodo SaveLatent guarda tensores latentes en el disco como archivos para su us
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Proporciona información de ubicación del archivo para el latente guardado en la interfaz de ComfyUI | UI |
+| `samples` | Proporciona información de ubicación del archivo para el latente guardado en la interfaz de ComfyUI | UI |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/es.md)
 

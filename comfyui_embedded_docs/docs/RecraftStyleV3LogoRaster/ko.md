@@ -12,7 +12,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `recraft_style` | 로고 래스터 스타일과 선택된 하위 스타일을 포함한 선택된 Recraft 스타일 구성입니다. | CUSTOM |
+| `recraft 스타일` | 로고 래스터 스타일과 선택된 하위 스타일을 포함한 선택된 Recraft 스타일 구성입니다. | CUSTOM |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3LogoRaster/ko.md)
 

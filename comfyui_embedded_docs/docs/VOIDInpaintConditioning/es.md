@@ -18,8 +18,8 @@ El nodo VOIDInpaintConditioning prepara los datos de condicionamiento necesarios
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negative` | El condicionamiento positivo con la información latente de pintura inteligente añadida | CONDITIONING |
-| `latent` | El condicionamiento negativo con la información latente de pintura inteligente añadida | CONDITIONING |
+| `positive` | El condicionamiento positivo con la información latente de pintura inteligente añadida | CONDITIONING |
+| `negative` | El condicionamiento negativo con la información latente de pintura inteligente añadida | CONDITIONING |
 | `latent` | Un tensor latente de ruido relleno con ceros con forma [batch_size, 16, latent_t, latent_h, latent_w] | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/es.md)

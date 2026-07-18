@@ -17,10 +17,10 @@ El nodo Vista Previa de Nube de Puntos le permite visualizar un archivo de nube 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `info_modelo_3d` | Datos del modelo de nube de puntos | FILE3D |
-| `info_cámara` | Información sobre el modelo 3D | LOAD3DMODELINFO |
-| `ancho` | Información de la cámara para la vista 3D | LOAD3DCAMERA |
-| `alto` | Ancho de la ventana de vista previa | INT |
+| `modelo_3d` | Datos del modelo de nube de puntos | FILE3D |
+| `info_modelo_3d` | Información sobre el modelo 3D | LOAD3DMODELINFO |
+| `info_cámara` | Información de la cámara para la vista 3D | LOAD3DCAMERA |
+| `ancho` | Ancho de la ventana de vista previa | INT |
 | `alto` | Alto de la ventana de vista previa | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewPointCloud/es.md)

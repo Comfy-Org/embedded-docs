@@ -16,7 +16,7 @@ El Nodo de Efecto de Video a partir de una Imagen Única de Kling crea videos co
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `video_id` | El video generado con los efectos aplicados | VIDEO |
-| `duración` | El identificador único del video generado | STRING |
+| `video_id` | El identificador único del video generado | STRING |
 | `duración` | La duración del video generado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingSingleImageVideoEffectNode/es.md)

@@ -21,13 +21,13 @@ Ce nœud utilise l'API Tencent Hunyuan3D Pro pour générer un modèle 3D à par
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `GLB` | Une sortie héritée pour la rétrocompatibilité. | STRING |
-| `OBJ` | Le modèle 3D généré au format de fichier GLB (Binary GL Transmission Format). | FILE3DGLB |
-| `texture_image` | Le modèle 3D généré au format de fichier OBJ (Wavefront). | FILE3DOBJ |
-| `optionnel_metallic` | L'image de texture pour le modèle 3D généré. | IMAGE |
-| `optionnel_normal` | La carte de métallisation pour les matériaux PBR. Renvoie une image noire si elle n'est pas disponible. | IMAGE |
-| `optionnel_roughness` | La carte de normales pour les matériaux PBR. Renvoie une image noire si elle n'est pas disponible. | IMAGE |
-| `optional_roughness` | La carte de rugosité pour les matériaux PBR. Renvoie une image noire si elle n'est pas disponible. | IMAGE |
+| `fichier_modèle` | Une sortie héritée pour la rétrocompatibilité. | STRING |
+| `GLB` | Le modèle 3D généré au format de fichier GLB (Binary GL Transmission Format). | FILE3DGLB |
+| `OBJ` | Le modèle 3D généré au format de fichier OBJ (Wavefront). | FILE3DOBJ |
+| `texture_image` | L'image de texture pour le modèle 3D généré. | IMAGE |
+| `optionnel_metallic` | La carte de métallisation pour les matériaux PBR. Renvoie une image noire si elle n'est pas disponible. | IMAGE |
+| `optionnel_normal` | La carte de normales pour les matériaux PBR. Renvoie une image noire si elle n'est pas disponible. | IMAGE |
+| `optionnel_roughness` | La carte de rugosité pour les matériaux PBR. Renvoie une image noire si elle n'est pas disponible. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentImageToModelNode/fr.md)
 

@@ -27,7 +27,7 @@ Rodin Gen-2.5 API'sini kullanarak bir metin isteminden 3B model oluşturun. Üre
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_file` | Belirtilen biçimde oluşturulan 3B model dosyası. | FILE3DANY |
+| `model_dosyası` | Belirtilen biçimde oluşturulan 3B model dosyası. | FILE3DANY |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Text/tr.md)
 

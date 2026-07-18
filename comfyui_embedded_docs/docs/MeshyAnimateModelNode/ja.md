@@ -11,8 +11,8 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `GLB` | アニメーション化されたモデルの文字列識別子です。この出力は後方互換性のためにのみ提供されています。 | STRING |
-| `FBX` | GLB形式のアニメーション化された3Dモデルファイルです。 | FILE3DGLB |
+| `model_file` | アニメーション化されたモデルの文字列識別子です。この出力は後方互換性のためにのみ提供されています。 | STRING |
+| `GLB` | GLB形式のアニメーション化された3Dモデルファイルです。 | FILE3DGLB |
 | `FBX` | FBX形式のアニメーション化された3Dモデルファイルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/ja.md)

@@ -39,7 +39,7 @@ SVG dosyalarını diske kaydeder. Bu düğüm, girdi olarak SVG verisi alır ve 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ui` | ComfyUI arayüzünde görüntülenmek üzere dosya adı, alt klasör ve tür dahil dosya bilgilerini döndürür | DICT |
+| `svg` | ComfyUI arayüzünde görüntülenmek üzere dosya adı, alt klasör ve tür dahil dosya bilgilerini döndürür | DICT |
 
 **Not:** Bu düğüm, kullanılabilir olduğunda iş akışı meta verilerini (prompt ve ek PNG bilgisi) otomatik olarak SVG dosyasına gömer. Meta veri, SVG'nin meta veri öğesi içinde bir CDATA bölümü olarak eklenir.
 

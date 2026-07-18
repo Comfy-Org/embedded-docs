@@ -26,7 +26,7 @@
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `iz_uzunluğu` | Oluşturulan yol koordinatlarını ve tüm karelerdeki tüm izler için görünürlük bilgilerini içeren bir izler nesnesi. | TRACKS |
-| `track_length` | İzlerin oluşturulduğu kare sayısı, girdi `kare_sayısı` ile eşleşir. | INT |
+| `iz_uzunluğu` | İzlerin oluşturulduğu kare sayısı, girdi `kare_sayısı` ile eşleşir. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GenerateTracks/tr.md)
 

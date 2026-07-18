@@ -11,9 +11,9 @@ Le nœud **StableCascade_SuperResolutionControlnet** prépare les entrées pour 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `étape_c` | La représentation encodée de l'image adaptée à l'entrée du controlnet | IMAGE |
-| `étape_b` | Représentation latente de substitution pour l'étape C du traitement Stable Cascade | LATENT |
-| `stage_b` | Représentation latente de substitution pour l'étape B du traitement Stable Cascade | LATENT |
+| `entrée_controlnet` | La représentation encodée de l'image adaptée à l'entrée du controlnet | IMAGE |
+| `étape_c` | Représentation latente de substitution pour l'étape C du traitement Stable Cascade | LATENT |
+| `étape_b` | Représentation latente de substitution pour l'étape B du traitement Stable Cascade | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/fr.md)
 

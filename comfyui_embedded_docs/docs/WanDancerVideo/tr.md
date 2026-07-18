@@ -53,8 +53,8 @@ WanDancerVideo düğümü, WanDancer modeli ile video oluşturma için koşullan
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş pozitif koşullandırma. | CONDITIONING |
-| `latent` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş negatif koşullandırma. | CONDITIONING |
+| `pozitif` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş pozitif koşullandırma. | CONDITIONING |
+| `negatif` | Ek veriler (birleştirilmiş latent, CLIP vision, ses) eklenmiş negatif koşullandırma. | CONDITIONING |
 | `latent` | Boyutları belirtilen video uzunluğu, yüksekliği ve genişliğiyle eşleşen boş bir latent tensör. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerVideo/tr.md)

@@ -25,8 +25,8 @@ HunyuanImageToVideo 節點使用 Hunyuan 影片模型將圖片轉換為影片潛
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `潛在空間` | 當提供 start_image 時，應用圖片引導後的修改後正向條件化 | CONDITIONING |
-| `latent` | 準備好由影片生成模型進一步處理的影片潛在表示 | LATENT |
+| `正向` | 當提供 start_image 時，應用圖片引導後的修改後正向條件化 | CONDITIONING |
+| `潛在空間` | 準備好由影片生成模型進一步處理的影片潛在表示 | LATENT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanImageToVideo/zh-TW.md)
 

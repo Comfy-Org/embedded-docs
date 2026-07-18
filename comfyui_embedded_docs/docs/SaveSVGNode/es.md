@@ -11,7 +11,7 @@ Guarda archivos SVG en el disco. Este nodo recibe datos SVG como entrada y los g
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Devuelve información del archivo, incluyendo nombre, subcarpeta y tipo para mostrar en la interfaz de ComfyUI | DICT |
+| `svg` | Devuelve información del archivo, incluyendo nombre, subcarpeta y tipo para mostrar en la interfaz de ComfyUI | DICT |
 
 **Nota:** Este nodo incrusta automáticamente metadatos del flujo de trabajo (información de prompt y PNG adicional) en el archivo SVG cuando están disponibles. Los metadatos se insertan como una sección CDATA dentro del elemento de metadatos del SVG.
 

@@ -12,7 +12,7 @@ ColorToRGBInt düğümü, onaltılık (hexadecimal) formatta belirtilen bir reng
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `hex` | Hesaplanan RGB tamsayı değeri. Bu değer şu formülden türetilir: `(Kırmızı * 65536) + (Yeşil * 256) + Mavi`. | INT |
+| `rgb_tam_sayı` | Hesaplanan RGB tamsayı değeri. Bu değer şu formülden türetilir: `(Kırmızı * 65536) + (Yeşil * 256) + Mavi`. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/tr.md)
 

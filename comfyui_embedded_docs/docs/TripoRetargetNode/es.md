@@ -14,8 +14,8 @@ El nodo TripoRetargetNode aplica animaciones predefinidas a modelos de personaje
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `reasignar task_id` | El archivo de modelo 3D animado generado (solo para compatibilidad hacia atrás) | STRING |
-| `GLB` | El ID de tarea para el seguimiento de la operación de reorientación | RETARGET_TASK_ID |
+| `id_de_tarea_de_reorientación` | El archivo de modelo 3D animado generado (solo para compatibilidad hacia atrás) | STRING |
+| `reasignar task_id` | El ID de tarea para el seguimiento de la operación de reorientación | RETARGET_TASK_ID |
 | `GLB` | El modelo 3D animado en formato GLB | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/es.md)

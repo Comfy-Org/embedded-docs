@@ -14,7 +14,7 @@ Este nodo mezcla una lista de imágenes y una lista de textos de forma conjunta,
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `texts` | La lista mezclada de imágenes. | IMAGE |
+| `images` | La lista mezclada de imágenes. | IMAGE |
 | `texts` | La lista mezclada de textos, manteniendo sus emparejamientos originales con las imágenes. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleImageTextDataset/es.md)

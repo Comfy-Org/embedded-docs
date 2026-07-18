@@ -11,7 +11,7 @@ Ce nœud redimensionne les images afin que le bord le plus court corresponde à 
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image redimensionnée dont le bord le plus court correspond à la longueur cible spécifiée. | IMAGE |
+| `images` | L'image redimensionnée dont le bord le plus court correspond à la longueur cible spécifiée. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByShorterEdge/fr.md)
 

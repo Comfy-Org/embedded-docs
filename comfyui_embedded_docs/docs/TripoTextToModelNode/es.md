@@ -24,8 +24,8 @@ Genera modelos 3D de forma síncrona basándose en un prompt de texto mediante l
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `id_de_tarea_de_modelo` | El archivo del modelo 3D generado (solo para compatibilidad hacia atrás) | STRING |
-| `GLB` | El identificador único de la tarea para el proceso de generación del modelo | MODEL_TASK_ID |
+| `archivo_de_modelo` | El archivo del modelo 3D generado (solo para compatibilidad hacia atrás) | STRING |
+| `id_de_tarea_de_modelo` | El identificador único de la tarea para el proceso de generación del modelo | MODEL_TASK_ID |
 | `GLB` | El modelo 3D generado en formato GLB | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextToModelNode/es.md)

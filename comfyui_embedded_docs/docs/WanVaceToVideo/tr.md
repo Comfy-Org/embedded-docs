@@ -22,10 +22,10 @@ WanVaceToVideo düğümü, video oluşturma modelleri için video koşullama ver
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Video kontrol verileri uygulanmış pozitif koşullama | CONDITIONING |
-| `gizli` | Video kontrol verileri uygulanmış negatif koşullama | CONDITIONING |
-| `gizliyi_kırp` | Video oluşturma için hazır boş gizli tensör | LATENT |
-| `trim_latent` | Referans görüntüsü kullanıldığında kırpılacak gizli kare sayısı | INT |
+| `pozitif` | Video kontrol verileri uygulanmış pozitif koşullama | CONDITIONING |
+| `negatif` | Video kontrol verileri uygulanmış negatif koşullama | CONDITIONING |
+| `gizli` | Video oluşturma için hazır boş gizli tensör | LATENT |
+| `gizliyi_kırp` | Referans görüntüsü kullanıldığında kırpılacak gizli kare sayısı | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanVaceToVideo/tr.md)
 

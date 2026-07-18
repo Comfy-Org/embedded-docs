@@ -11,8 +11,8 @@ El nodo Selector de Resolución calcula el ancho y alto en píxeles de una image
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `alto` | El ancho calculado en píxeles, que es un múltiplo de 8. | INT |
-| `height` | La altura calculada en píxeles, que es un múltiplo de 8. | INT |
+| `ancho` | El ancho calculado en píxeles, que es un múltiplo de 8. | INT |
+| `alto` | La altura calculada en píxeles, que es un múltiplo de 8. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/es.md)
 

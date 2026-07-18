@@ -14,8 +14,8 @@ TripoRetargetNode, önceden tanımlanmış animasyonları, hareket verilerini ye
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `yeniden hedefleme task_id` | Oluşturulan animasyonlu 3D model dosyası (yalnızca geriye dönük uyumluluk için) | STRING |
-| `GLB` | Yeniden hedefleme işlemini izlemek için görev kimliği | RETARGET_TASK_ID |
+| `retarget_görev_id` | Oluşturulan animasyonlu 3D model dosyası (yalnızca geriye dönük uyumluluk için) | STRING |
+| `yeniden hedefleme task_id` | Yeniden hedefleme işlemini izlemek için görev kimliği | RETARGET_TASK_ID |
 | `GLB` | GLB formatında animasyonlu 3D model | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRetargetNode/tr.md)

@@ -17,7 +17,7 @@ Detecta rostros en una imagen e identifica 468 puntos de referencia faciales (pu
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `bboxes` | Una salida estructurada que contiene los resultados de detección facial por fotograma, incluyendo 468 puntos de referencia faciales, coeficientes de formas híbridas ARKit-52, matrices de transformación y conjuntos de conexiones para visualización de mallas. | FACE_LANDMARKS |
+| `face_landmarks` | Una salida estructurada que contiene los resultados de detección facial por fotograma, incluyendo 468 puntos de referencia faciales, coeficientes de formas híbridas ARKit-52, matrices de transformación y conjuntos de conexiones para visualización de mallas. | FACE_LANDMARKS |
 | `bboxes` | Una lista de cuadros delimitadores para cada rostro detectado, con coordenadas (x, y, ancho, alto), etiqueta "face" y puntuación de confianza. Una lista por fotograma de entrada. | BOUNDING_BOX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/es.md)

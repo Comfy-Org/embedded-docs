@@ -25,7 +25,7 @@ El nodo **SaveImageAdvanced** guarda imágenes en tu directorio de salida de Com
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `imágenes` | Una lista de resultados de imágenes guardadas, cada una contiene el nombre de archivo, subcarpeta y tipo ("output"). Esta salida se utiliza para fines de visualización en la interfaz de usuario. | IMAGE |
+| `images` | Una lista de resultados de imágenes guardadas, cada una contiene el nombre de archivo, subcarpeta y tipo ("output"). Esta salida se utiliza para fines de visualización en la interfaz de usuario. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImageAdvanced/es.md)
 

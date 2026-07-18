@@ -14,8 +14,8 @@ Ce nœud utilise l'API Tencent Hunyuan3D pour modifier les textures d'un modèle
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `OBJ` | Le modèle 3D traité au format GLB. | FILE3D |
-| `texture_image` | Le modèle 3D traité au format OBJ. | FILE3D |
+| `GLB` | Le modèle 3D traité au format GLB. | FILE3D |
+| `OBJ` | Le modèle 3D traité au format OBJ. | FILE3D |
 | `texture_image` | L'image de texture nouvellement générée pour le modèle 3D. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DTextureEditNode/fr.md)

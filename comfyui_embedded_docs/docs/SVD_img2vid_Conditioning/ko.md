@@ -18,9 +18,9 @@ SVD_img2vid_Conditioning 노드는 Stable Video Diffusion을 사용한 비디오
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `부정 조건` | 이미지 임베딩과 비디오 매개변수를 포함한 포지티브 컨디셔닝 데이터 | CONDITIONING |
-| `잠재 비디오` | 0으로 설정된 임베딩과 비디오 매개변수를 포함한 네거티브 컨디셔닝 데이터 | CONDITIONING |
-| `latent` | 비디오 생성을 위해 준비된 빈 잠재 공간 텐서 | LATENT |
+| `긍정 조건` | 이미지 임베딩과 비디오 매개변수를 포함한 포지티브 컨디셔닝 데이터 | CONDITIONING |
+| `부정 조건` | 0으로 설정된 임베딩과 비디오 매개변수를 포함한 네거티브 컨디셔닝 데이터 | CONDITIONING |
+| `잠재 비디오` | 비디오 생성을 위해 준비된 빈 잠재 공간 텐서 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SVD_img2vid_Conditioning/ko.md)
 

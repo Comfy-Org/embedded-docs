@@ -26,8 +26,8 @@ Bu düğüm, bir nesnenin farklı açılardan görüntülerini gösteren en fazl
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_görev_id` | Oluşturulan 3B model için dosya yolu veya tanımlayıcı (yalnızca geriye dönük uyumluluk için) | STRING |
-| `GLB` | Model oluşturma sürecini izlemek için görev tanımlayıcı | MODEL_TASK_ID |
+| `model_dosyası` | Oluşturulan 3B model için dosya yolu veya tanımlayıcı (yalnızca geriye dönük uyumluluk için) | STRING |
+| `model_görev_id` | Model oluşturma sürecini izlemek için görev tanımlayıcı | MODEL_TASK_ID |
 | `GLB` | GLB formatında oluşturulan 3B model dosyası | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoMultiviewToModelNode/tr.md)

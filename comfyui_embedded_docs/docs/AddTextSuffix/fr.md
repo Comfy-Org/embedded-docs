@@ -11,7 +11,7 @@ Ce nœud ajoute un suffixe spécifié à la fin d'une chaîne de texte d'entrée
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `text` | Le texte résultant après l'ajout du suffixe. | STRING |
+| `textes` | Le texte résultant après l'ajout du suffixe. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextSuffix/fr.md)
 

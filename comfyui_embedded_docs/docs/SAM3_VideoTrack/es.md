@@ -22,7 +22,7 @@ Rastrea objetos a través de fotogramas de video utilizando el rastreador basado
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `track_data` | Datos de rastreo que contienen las máscaras de objetos y metadatos en todos los fotogramas de video | SAM3TrackData |
+| `datos_de_rastreo` | Datos de rastreo que contienen las máscaras de objetos y metadatos en todos los fotogramas de video | SAM3TrackData |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_VideoTrack/es.md)
 

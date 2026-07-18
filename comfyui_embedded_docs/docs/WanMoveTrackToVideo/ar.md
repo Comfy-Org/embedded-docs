@@ -24,9 +24,9 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `سلبي` | التكييف الإيجابي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
-| `كامنة` | التكييف السلبي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
-| `latent` | موتر كامن فارغ بأبعاد محددة بواسطة مدخلات `حجم الدفعة` و`الطول` و`الارتفاع` و`العرض`. | LATENT |
+| `إيجابي` | التكييف الإيجابي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
+| `سلبي` | التكييف السلبي المعدّل، والذي قد يحتوي على `concat_latent_image` و`concat_mask` و`clip_vision_output`. | CONDITIONING |
+| `كامنة` | موتر كامن فارغ بأبعاد محددة بواسطة مدخلات `حجم الدفعة` و`الطول` و`الارتفاع` و`العرض`. | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/ar.md)
 

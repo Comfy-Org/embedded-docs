@@ -22,7 +22,7 @@
 | --- | --- | --- |
 | `IMAGE` | 生成或編輯後的圖像。 | IMAGE |
 | `思考影像` | 模型生成的文字描述或標題。 | STRING |
-| `thought_image` | 模型思考過程中的第一張圖像。僅在思考層級為 HIGH 且回應模式為 IMAGE+TEXT 時可用。 | IMAGE |
+| `思考影像` | 模型思考過程中的第一張圖像。僅在思考層級為 HIGH 且回應模式為 IMAGE+TEXT 時可用。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/zh-TW.md)
 

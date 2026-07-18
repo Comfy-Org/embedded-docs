@@ -20,9 +20,9 @@ Le nœud Meshy : Texture applique des textures générées par IA à un modèle 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `meshy_task_id` | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour des raisons de compatibilité ascendante. | STRING |
-| `GLB` | L'identifiant unique de la tâche pour ce travail de texturation, qui peut être utilisé pour référencer le résultat. | MODEL_TASK_ID |
-| `FBX` | Le modèle 3D texturé enregistré au format de fichier GLB. | FILE3DGLB |
+| `fichier_modèle` | Le nom du fichier du modèle GLB généré. Cette sortie est fournie pour des raisons de compatibilité ascendante. | STRING |
+| `meshy_task_id` | L'identifiant unique de la tâche pour ce travail de texturation, qui peut être utilisé pour référencer le résultat. | MODEL_TASK_ID |
+| `GLB` | Le modèle 3D texturé enregistré au format de fichier GLB. | FILE3DGLB |
 | `FBX` | Le modèle 3D texturé enregistré au format de fichier FBX. | FILE3DFBX |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/fr.md)

@@ -12,7 +12,7 @@ Ce nœud ajuste les valeurs des pixels d'une image d'entrée en utilisant un pro
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image résultante après l'application du processus de normalisation. | IMAGE |
+| `images` | L'image résultante après l'application du processus de normalisation. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/fr.md)
 

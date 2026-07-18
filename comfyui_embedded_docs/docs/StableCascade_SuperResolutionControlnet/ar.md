@@ -41,9 +41,9 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `المرحلة_ج` | تمثيل الصورة المشفرة المناسب لمدخلات شبكة التحكم | IMAGE |
-| `المرحلة_ب` | تمثيل كامن مؤقت للمرحلة C من معالجة Stable Cascade | LATENT |
-| `stage_b` | تمثيل كامن مؤقت للمرحلة B من معالجة Stable Cascade | LATENT |
+| `مدخلات شبكة التحكم` | تمثيل الصورة المشفرة المناسب لمدخلات شبكة التحكم | IMAGE |
+| `المرحلة_ج` | تمثيل كامن مؤقت للمرحلة C من معالجة Stable Cascade | LATENT |
+| `المرحلة_ب` | تمثيل كامن مؤقت للمرحلة B من معالجة Stable Cascade | LATENT |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/ar.md)
 

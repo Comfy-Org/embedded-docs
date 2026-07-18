@@ -14,7 +14,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `patched_model` | 샘플링 과정에 시간적 점수 재조정 함수가 적용되어 패치된 입력 모델입니다. | MODEL |
+| `패치된 모델` | 샘플링 과정에 시간적 점수 재조정 함수가 적용되어 패치된 입력 모델입니다. | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TemporalScoreRescaling/ko.md)
 

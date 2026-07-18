@@ -14,7 +14,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `texts` | 섞인 이미지 목록입니다. | IMAGE |
+| `images` | 섞인 이미지 목록입니다. | IMAGE |
 | `texts` | 섞인 텍스트 목록으로, 이미지와의 원래 쌍을 유지합니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleImageTextDataset/ko.md)

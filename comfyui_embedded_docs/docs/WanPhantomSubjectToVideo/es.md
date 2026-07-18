@@ -19,10 +19,10 @@ El nodo WanPhantomSubjectToVideo genera contenido de video procesando entradas d
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `texto_negativo` | Condicionamiento positivo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes | CONDITIONING |
-| `texto_img_negativa` | Condicionamiento negativo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes | CONDITIONING |
-| `latente` | Condicionamiento negativo con concatenación de dimensión temporal puesta a cero cuando se proporcionan imágenes | CONDITIONING |
-| `latent` | Representación de video latente generada con las dimensiones y longitud especificadas | LATENT |
+| `positivo` | Condicionamiento positivo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes | CONDITIONING |
+| `texto_negativo` | Condicionamiento negativo modificado con concatenación de dimensión temporal cuando se proporcionan imágenes | CONDITIONING |
+| `texto_img_negativa` | Condicionamiento negativo con concatenación de dimensión temporal puesta a cero cuando se proporcionan imágenes | CONDITIONING |
+| `latente` | Representación de video latente generada con las dimensiones y longitud especificadas | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/es.md)
 

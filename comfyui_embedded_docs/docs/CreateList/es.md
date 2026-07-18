@@ -12,7 +12,7 @@ El nodo Crear Lista combina múltiples entradas en una única lista secuencial. 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `list` | Una única lista que contiene todos los elementos de las entradas conectadas, concatenados en el orden en que fueron proporcionados. El tipo de dato de salida coincide con el tipo de dato de entrada. | Varía |
+| `lista` | Una única lista que contiene todos los elementos de las entradas conectadas, concatenados en el orden en que fueron proporcionados. El tipo de dato de salida coincide con el tipo de dato de entrada. | Varía |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateList/es.md)
 

@@ -17,8 +17,8 @@ TripoTextureNode, Tripo API'sini kullanarak dokulu 3D modeller oluşturur. Bir m
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `model_görev_id` | Uygulanan dokularla oluşturulan model dosyası (yalnızca geriye dönük uyumluluk için) | STRING |
-| `GLB` | Doku oluşturma sürecini izlemek için görev kimliği | MODEL_TASK_ID |
+| `model_dosyası` | Uygulanan dokularla oluşturulan model dosyası (yalnızca geriye dönük uyumluluk için) | STRING |
+| `model_görev_id` | Doku oluşturma sürecini izlemek için görev kimliği | MODEL_TASK_ID |
 | `GLB` | Uygulanan dokularla GLB formatında oluşturulan 3D model | FILE3DGLB |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextureNode/tr.md)

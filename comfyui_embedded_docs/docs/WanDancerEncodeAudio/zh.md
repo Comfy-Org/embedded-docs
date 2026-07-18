@@ -14,8 +14,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `fps字符串` | 一个字典，包含处理后的音频特征、计算出的帧率（fps）以及音频注入缩放比例。此输出用于调节视频生成模型。 | AUDIO_ENCODER_OUTPUT |
-| `fps_string` | 基于音频长度和视频帧数计算出的帧率（fps）的文本描述。此字符串旨在用于视频模型的提示词中。 | STRING |
+| `音频编码器输出` | 一个字典，包含处理后的音频特征、计算出的帧率（fps）以及音频注入缩放比例。此输出用于调节视频生成模型。 | AUDIO_ENCODER_OUTPUT |
+| `fps字符串` | 基于音频长度和视频帧数计算出的帧率（fps）的文本描述。此字符串旨在用于视频模型的提示词中。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerEncodeAudio/zh.md)
 

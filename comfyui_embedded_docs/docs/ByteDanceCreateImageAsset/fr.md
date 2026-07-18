@@ -16,7 +16,7 @@ Ce nœud crée un actif d'image personnel pour le service Seedance 2.0 de ByteDa
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `group_id` | L'identifiant unique de l'actif d'image nouvellement créé. | STRING |
+| `asset_id` | L'identifiant unique de l'actif d'image nouvellement créé. | STRING |
 | `group_id` | L'identifiant du groupe d'actifs. Il s'agira du `group_id` fourni ou d'un identifiant nouvellement créé. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateImageAsset/fr.md)

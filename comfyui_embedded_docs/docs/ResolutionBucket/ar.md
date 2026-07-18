@@ -13,7 +13,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `conditioning` | قائمة بقواميس الصور الكامنة المجمعة، واحدة لكل مجموعة دقة. | LATENT |
+| `latents` | قائمة بقواميس الصور الكامنة المجمعة، واحدة لكل مجموعة دقة. | LATENT |
 | `conditioning` | قائمة بقوائم التكييف، واحدة لكل مجموعة دقة. | CONDITIONING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/ar.md)

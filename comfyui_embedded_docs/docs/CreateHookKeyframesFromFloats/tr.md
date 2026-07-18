@@ -16,7 +16,7 @@ Bu düğüm, belirtilen başlangıç ve bitiş yüzdeleri arasında eşit olarak
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `HOOK_KF` | Yeni oluşturulan anahtar kareleri içeren bir kanca anahtar kare grubu; yeni bir grup olarak veya giriş anahtar kare grubuna eklenmiş olarak | HOOK_KEYFRAMES |
+| `Kanca_KF` | Yeni oluşturulan anahtar kareleri içeren bir kanca anahtar kare grubu; yeni bir grup olarak veya giriş anahtar kare grubuna eklenmiş olarak | HOOK_KEYFRAMES |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesFromFloats/tr.md)
 

@@ -22,8 +22,8 @@ Le nœud WanImageToVideo prépare les représentations de conditionnement et lat
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Conditionnement positif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
-| `latent` | Conditionnement négatif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
+| `positive` | Conditionnement positif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
+| `négatif` | Conditionnement négatif modifié avec les données d'image et visuelles intégrées | CONDITIONING |
 | `latent` | Tenseur d'espace latent vide prêt pour la génération vidéo | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideo/fr.md)

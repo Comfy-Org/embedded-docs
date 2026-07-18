@@ -11,9 +11,9 @@ StableCascade_SuperResolutionControlnet 노드는 Stable Cascade 초고해상도
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `StageC 잠재 이미지` | 컨트롤넷 입력에 적합하도록 인코딩된 이미지 표현 | IMAGE |
-| `StageB 잠재 이미지` | Stable Cascade 처리의 스테이지 C를 위한 플레이스홀더 잠재 표현 | LATENT |
-| `stage_b` | Stable Cascade 처리의 스테이지 B를 위한 플레이스홀더 잠재 표현 | LATENT |
+| `컨트롤넷 입력` | 컨트롤넷 입력에 적합하도록 인코딩된 이미지 표현 | IMAGE |
+| `StageC 잠재 이미지` | Stable Cascade 처리의 스테이지 C를 위한 플레이스홀더 잠재 표현 | LATENT |
+| `StageB 잠재 이미지` | Stable Cascade 처리의 스테이지 B를 위한 플레이스홀더 잠재 표현 | LATENT |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_SuperResolutionControlnet/ko.md)
 

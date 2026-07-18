@@ -15,9 +15,9 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `关键帧掩码` | 填充后的关键帧序列列表，每个片段对应一个序列。 | IMAGE |
-| `音频片段` | 指示每个片段有效帧的遮罩列表。 | MASK |
-| `audio_segment` | 音频片段列表，每个视频片段对应一个音频片段。 | AUDIO |
+| `关键帧序列` | 填充后的关键帧序列列表，每个片段对应一个序列。 | IMAGE |
+| `关键帧掩码` | 指示每个片段有效帧的遮罩列表。 | MASK |
+| `音频片段` | 音频片段列表，每个视频片段对应一个音频片段。 | AUDIO |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/zh.md)
 

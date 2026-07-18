@@ -18,7 +18,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `group_id` | 新创建的视频资产的唯一标识符。 | STRING |
+| `asset_id` | 新创建的视频资产的唯一标识符。 | STRING |
 | `group_id` | 包含新视频的资产组标识符。这将是提供的 `group_id` 或新创建的组 ID。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateVideoAsset/zh.md)

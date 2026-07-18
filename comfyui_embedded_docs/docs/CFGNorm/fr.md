@@ -11,7 +11,7 @@ Le nœud CFGNorm applique une technique de normalisation au processus de guidage
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `patched_model` | Renvoie le modèle modifié avec la normalisation CFG appliquée à son processus d'échantillonnage | MODEL |
+| `modèle_patché` | Renvoie le modèle modifié avec la normalisation CFG appliquée à son processus d'échantillonnage | MODEL |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/fr.md)
 

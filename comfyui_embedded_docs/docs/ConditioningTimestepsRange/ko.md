@@ -14,8 +14,8 @@ ConditioningTimestepsRange 노드는 생성 과정에서 컨디셔닝 효과가 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
 | `이전 범위` | start_percent와 end_percent로 정의된 주 타임스텝 범위 | TIMESTEPS_RANGE |
-| `이후 범위` | 0.0부터 start_percent까지의 타임스텝 범위 | TIMESTEPS_RANGE |
-| `AFTER_RANGE` | end_percent부터 1.0까지의 타임스텝 범위 | TIMESTEPS_RANGE |
+| `이전 범위` | 0.0부터 start_percent까지의 타임스텝 범위 | TIMESTEPS_RANGE |
+| `이후 범위` | end_percent부터 1.0까지의 타임스텝 범위 | TIMESTEPS_RANGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningTimestepsRange/ko.md)
 

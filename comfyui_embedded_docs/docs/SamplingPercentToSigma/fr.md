@@ -12,7 +12,7 @@ Le nœud SamplingPercentToSigma convertit une valeur de pourcentage d'échantill
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `sigma_value` | La valeur sigma convertie correspondant au pourcentage d'échantillonnage d'entrée | FLOAT |
+| `valeur_sigma` | La valeur sigma convertie correspondant au pourcentage d'échantillonnage d'entrée | FLOAT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplingPercentToSigma/fr.md)
 

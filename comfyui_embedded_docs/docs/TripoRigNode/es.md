@@ -13,8 +13,8 @@ El nodo TripoRigNode genera un modelo 3D riggeado a partir del ID de tarea de un
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `id_de_tarea_de_rig` | El archivo del modelo 3D riggeado generado (se mantiene por compatibilidad hacia atrás) | STRING |
-| `GLB` | El ID de tarea para rastrear el proceso de generación del rig | RIG_TASK_ID |
+| `archivo_de_modelo` | El archivo del modelo 3D riggeado generado (se mantiene por compatibilidad hacia atrás) | STRING |
+| `id_de_tarea_de_rig` | El ID de tarea para rastrear el proceso de generación del rig | RIG_TASK_ID |
 | `GLB` | El modelo 3D riggeado generado en formato GLB | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoRigNode/es.md)

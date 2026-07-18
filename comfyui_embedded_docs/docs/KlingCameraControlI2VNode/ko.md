@@ -18,8 +18,8 @@ Kling 이미지-투-비디오 카메라 제어 노드는 정적 이미지를 전
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
 | `비디오 ID` | 생성된 비디오 출력 | VIDEO |
-| `길이` | 생성된 비디오의 고유 식별자 | STRING |
-| `duration` | 생성된 비디오의 길이 | STRING |
+| `비디오 ID` | 생성된 비디오의 고유 식별자 | STRING |
+| `길이` | 생성된 비디오의 길이 | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControlI2VNode/ko.md)
 

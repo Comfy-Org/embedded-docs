@@ -23,9 +23,9 @@ El nodo WanTrackToVideo convierte datos de seguimiento de movimiento en secuenci
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Acondicionamiento positivo con información de seguimiento de movimiento aplicada | CONDITIONING |
-| `latente` | Acondicionamiento negativo con información de seguimiento de movimiento aplicada | CONDITIONING |
-| `latent` | Representación latente del video generado | LATENT |
+| `positivo` | Acondicionamiento positivo con información de seguimiento de movimiento aplicada | CONDITIONING |
+| `negativo` | Acondicionamiento negativo con información de seguimiento de movimiento aplicada | CONDITIONING |
+| `latente` | Representación latente del video generado | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanTrackToVideo/es.md)
 

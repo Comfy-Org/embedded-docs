@@ -13,7 +13,7 @@ Selecciona objetos rastreados específicos de una sesión de seguimiento SAM3 me
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `masks` | Una única máscara binaria por cada fotograma, donde los objetos seleccionados se combinan en una sola máscara. Si no se selecciona ningún objeto o no existen datos de seguimiento, devuelve una máscara de ceros. | MASK |
+| `máscaras` | Una única máscara binaria por cada fotograma, donde los objetos seleccionados se combinan en una sola máscara. Si no se selecciona ningún objeto o no existen datos de seguimiento, devuelve una máscara de ceros. | MASK |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackToMask/es.md)
 

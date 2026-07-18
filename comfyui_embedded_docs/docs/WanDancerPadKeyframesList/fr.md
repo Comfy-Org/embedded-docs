@@ -17,8 +17,8 @@ Ce nœud prend une séquence d'images et une piste audio optionnelle, puis les d
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `keyframes_mask` | Une liste de séquences d'images clés rembourrées, une pour chaque segment. | IMAGE |
-| `audio_segment` | Une liste de masques indiquant les images valides pour chaque segment. | MASK |
+| `keyframes_sequence` | Une liste de séquences d'images clés rembourrées, une pour chaque segment. | IMAGE |
+| `keyframes_mask` | Une liste de masques indiquant les images valides pour chaque segment. | MASK |
 | `audio_segment` | Une liste de segments audio, un pour chaque segment vidéo. | AUDIO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanDancerPadKeyframesList/fr.md)

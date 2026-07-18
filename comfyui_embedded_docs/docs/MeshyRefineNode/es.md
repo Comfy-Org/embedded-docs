@@ -16,9 +16,9 @@ El nodo **Meshy: Refinar Modelo Borrador** toma un modelo 3D borrador generado p
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `meshy_task_id` | El nombre del archivo del modelo GLB generado. (Solo por compatibilidad hacia atrás) | STRING |
-| `GLB` | El ID de tarea único para el trabajo de refinamiento enviado. | MESHY_TASK_ID |
-| `FBX` | El modelo 3D final refinado en formato GLB. | FILE3DGLB |
+| `model_file` | El nombre del archivo del modelo GLB generado. (Solo por compatibilidad hacia atrás) | STRING |
+| `meshy_task_id` | El ID de tarea único para el trabajo de refinamiento enviado. | MESHY_TASK_ID |
+| `GLB` | El modelo 3D final refinado en formato GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D final refinado en formato FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/es.md)

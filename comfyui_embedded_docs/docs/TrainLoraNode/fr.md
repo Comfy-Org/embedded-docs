@@ -38,8 +38,8 @@ Le nœud TrainLoraNode crée et entraîne un modèle LoRA (Adaptation de Bas Ran
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `carte_de_perte` | Les poids LoRA entraînés qui peuvent être sauvegardés ou appliqués à d'autres modèles. | LORA_MODEL |
-| `étapes` | Un dictionnaire contenant les valeurs de perte d'entraînement au fil du temps. | LOSS_MAP |
+| `lora` | Les poids LoRA entraînés qui peuvent être sauvegardés ou appliqués à d'autres modèles. | LORA_MODEL |
+| `carte_de_perte` | Un dictionnaire contenant les valeurs de perte d'entraînement au fil du temps. | LOSS_MAP |
 | `étapes` | Le nombre total d'étapes d'entraînement effectuées (y compris les étapes précédentes du LoRA existant). | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TrainLoraNode/fr.md)

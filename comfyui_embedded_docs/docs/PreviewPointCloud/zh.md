@@ -17,10 +17,10 @@
 
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `model_3d_info` | 点云模型数据 | FILE3D |
-| `camera_info` | 3D 模型的信息 | LOAD3DMODELINFO |
-| `width` | 3D 视图的相机信息 | LOAD3DCAMERA |
-| `height` | 预览窗口的宽度 | INT |
+| `model_3d` | 点云模型数据 | FILE3D |
+| `model_3d_info` | 3D 模型的信息 | LOAD3DMODELINFO |
+| `camera_info` | 3D 视图的相机信息 | LOAD3DCAMERA |
+| `width` | 预览窗口的宽度 | INT |
 | `height` | 预览窗口的高度 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewPointCloud/zh.md)

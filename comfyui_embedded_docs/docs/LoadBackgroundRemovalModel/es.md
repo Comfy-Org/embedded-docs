@@ -12,7 +12,7 @@ Carga un modelo de eliminación de fondo desde un archivo. Este nodo prepara el 
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `bg_model` | El modelo de eliminación de fondo cargado, listo para ser utilizado por otros nodos para procesar imágenes. | BACKGROUND_REMOVAL |
+| `modelo_de_fondo` | El modelo de eliminación de fondo cargado, listo para ser utilizado por otros nodos para procesar imágenes. | BACKGROUND_REMOVAL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadBackgroundRemovalModel/es.md)
 

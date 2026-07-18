@@ -14,7 +14,7 @@ SaveWEBM düğümü, bir dizi görüntüyü WEBM video dosyası olarak kaydeder.
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `ui` | Kaydedilen WEBM dosyasını gösteren video önizlemesi | PREVIEW |
+| `images` | Kaydedilen WEBM dosyasını gösteren video önizlemesi | PREVIEW |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveWEBM/tr.md)
 

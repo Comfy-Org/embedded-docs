@@ -24,7 +24,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `resized` | 调整大小后的图像或遮罩，与输入的数据类型一致。 | IMAGE 或 MASK |
+| `已调整大小` | 调整大小后的图像或遮罩，与输入的数据类型一致。 | IMAGE 或 MASK |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImageMaskNode/zh.md)
 

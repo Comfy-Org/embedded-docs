@@ -12,8 +12,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `文本` | 加载的图像张量列表。 | IMAGE |
-| `texts` | 与每张加载图像对应的文本描述列表。 | STRING |
+| `图像` | 加载的图像张量列表。 | IMAGE |
+| `文本` | 与每张加载图像对应的文本描述列表。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/zh.md)
 

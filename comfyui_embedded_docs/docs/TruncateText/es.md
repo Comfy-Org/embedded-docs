@@ -13,7 +13,7 @@ Este nodo acorta texto cortándolo en una longitud máxima especificada. Toma cu
 
 | Nombre de salida | Descripción | Tipo de dato |
 | --- | --- | --- |
-| `string` | El texto truncado, que contiene solo los primeros `max_length` caracteres de la entrada. | STRING |
+| `texts` | El texto truncado, que contiene solo los primeros `max_length` caracteres de la entrada. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/es.md)
 

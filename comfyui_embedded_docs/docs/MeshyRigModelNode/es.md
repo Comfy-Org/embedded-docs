@@ -14,9 +14,9 @@ El nodo Meshy: Rig Model toma un modelo 3D de una tarea previa de Meshy y crea a
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `rig_task_id` | Una salida heredada para compatibilidad hacia atrás, que contiene el nombre del archivo del modelo GLB. | STRING |
-| `GLB` | El ID único de tarea para esta operación de riggeado, que puede usarse para hacer referencia al resultado. | STRING |
-| `FBX` | El modelo de personaje 3D riggeado guardado en formato de archivo GLB. | FILE3DGLB |
+| `model_file` | Una salida heredada para compatibilidad hacia atrás, que contiene el nombre del archivo del modelo GLB. | STRING |
+| `rig_task_id` | El ID único de tarea para esta operación de riggeado, que puede usarse para hacer referencia al resultado. | STRING |
+| `GLB` | El modelo de personaje 3D riggeado guardado en formato de archivo GLB. | FILE3DGLB |
 | `FBX` | El modelo de personaje 3D riggeado guardado en formato de archivo FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/es.md)

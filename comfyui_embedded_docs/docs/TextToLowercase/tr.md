@@ -12,7 +12,7 @@ Metni Küçük Harfe Çevir düğümü, girdi olarak bir metin dizesi alır ve t
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `text` | Tüm karakterleri küçük harfe dönüştürülmüş girdi metni. | STRING |
+| `metinler` | Tüm karakterleri küçük harfe dönüştürülmüş girdi metni. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextToLowercase/tr.md)
 

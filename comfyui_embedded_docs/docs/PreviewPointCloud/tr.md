@@ -17,10 +17,10 @@ Nokta Bulutunu Önizle düğümü, ComfyUI arayüzü içinde bir 3B nokta bulutu
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `model_3d_info` | Nokta bulutu model verisi | FILE3D |
-| `camera_info` | 3B model hakkında bilgi | LOAD3DMODELINFO |
-| `genişlik` | 3B görünüm için kamera bilgisi | LOAD3DCAMERA |
-| `yükseklik` | Önizleme penceresi genişliği | INT |
+| `model_3d` | Nokta bulutu model verisi | FILE3D |
+| `model_3d_info` | 3B model hakkında bilgi | LOAD3DMODELINFO |
+| `camera_info` | 3B görünüm için kamera bilgisi | LOAD3DCAMERA |
+| `genişlik` | Önizleme penceresi genişliği | INT |
 | `yükseklik` | Önizleme penceresi yüksekliği | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewPointCloud/tr.md)

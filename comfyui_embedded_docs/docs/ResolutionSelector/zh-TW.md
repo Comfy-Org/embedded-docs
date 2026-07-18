@@ -13,8 +13,8 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `高度` | 計算出的像素寬度，為 8 的倍數。 | INT |
-| `height` | 計算出的像素高度，為 8 的倍數。 | INT |
+| `寬度` | 計算出的像素寬度，為 8 的倍數。 | INT |
+| `高度` | 計算出的像素高度，為 8 的倍數。 | INT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/zh-TW.md)
 

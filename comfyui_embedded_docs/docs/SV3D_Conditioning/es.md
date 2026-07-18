@@ -16,9 +16,9 @@ El nodo SV3D_Conditioning prepara datos de condicionamiento para la generación 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Los datos de condicionamiento positivo que contienen embeddings de imagen y parámetros de cámara para la generación | CONDITIONING |
-| `latente` | Los datos de condicionamiento negativo con embeddings puestos a cero para generación contrastiva | CONDITIONING |
-| `latent` | Un tensor latente vacío con dimensiones que coinciden con los fotogramas de video y la resolución especificados | LATENT |
+| `positivo` | Los datos de condicionamiento positivo que contienen embeddings de imagen y parámetros de cámara para la generación | CONDITIONING |
+| `negativo` | Los datos de condicionamiento negativo con embeddings puestos a cero para generación contrastiva | CONDITIONING |
+| `latente` | Un tensor latente vacío con dimensiones que coinciden con los fotogramas de video y la resolución especificados | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SV3D_Conditioning/es.md)
 

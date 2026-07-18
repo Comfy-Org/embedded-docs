@@ -11,7 +11,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `text` | 在前端添加了前缀的结果文本。 | STRING |
+| `文本` | 在前端添加了前缀的结果文本。 | STRING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextPrefix/zh.md)
 

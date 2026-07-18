@@ -12,8 +12,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `条件` | 潜在字典列表，每个字典包含一个键为 `"samples"` 的张量。 | LATENT |
-| `conditioning` | 条件列表的列表，其中每个内部列表包含对应样本的条件数据。 | CONDITIONING |
+| `Latent` | 潜在字典列表，每个字典包含一个键为 `"samples"` 的张量。 | LATENT |
+| `条件` | 条件列表的列表，其中每个内部列表包含对应样本的条件数据。 | CONDITIONING |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/zh.md)
 

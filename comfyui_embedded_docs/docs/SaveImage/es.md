@@ -13,7 +13,7 @@ El nodo SaveImage guarda las imágenes que recibe en tu directorio `ComfyUI/outp
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Este nodo genera un resultado de interfaz de usuario que contiene una lista de las imágenes guardadas con sus nombres de archivo y subcarpetas. No produce datos para conectar a otros nodos. | UI_RESULT |
+| `images` | Este nodo genera un resultado de interfaz de usuario que contiene una lista de las imágenes guardadas con sus nombres de archivo y subcarpetas. No produce datos para conectar a otros nodos. | UI_RESULT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveImage/es.md)
 

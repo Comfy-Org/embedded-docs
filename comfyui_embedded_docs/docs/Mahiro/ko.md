@@ -12,7 +12,7 @@ Mahiro 노드는 긍정 프롬프트와 부정 프롬프트 간의 차이보다 
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `patched_model` | Mahiro 안내 함수가 적용된 수정된 모델 | MODEL |
+| `변경된 모델` | Mahiro 안내 함수가 적용된 수정된 모델 | MODEL |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Mahiro/ko.md)
 

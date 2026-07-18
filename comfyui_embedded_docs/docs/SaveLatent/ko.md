@@ -15,7 +15,7 @@ SaveLatent 노드는 잠재 텐서를 디스크에 파일로 저장하여 추후
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `ui` | ComfyUI 인터페이스에서 저장된 잠재 파일의 위치 정보를 제공합니다 | UI |
+| `samples` | ComfyUI 인터페이스에서 저장된 잠재 파일의 위치 정보를 제공합니다 | UI |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLatent/ko.md)
 

@@ -12,8 +12,8 @@ StableCascade_StageC_VAEEncode 节点通过 VAE 编码器处理图像，为 Stab
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `阶段B` | Stable Cascade 模型阶段 C 的编码潜在表示 | LATENT |
-| `stage_b` | 阶段 B 的占位潜在表示（当前返回零值） | LATENT |
+| `阶段C` | Stable Cascade 模型阶段 C 的编码潜在表示 | LATENT |
+| `阶段B` | 阶段 B 的占位潜在表示（当前返回零值） | LATENT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_StageC_VAEEncode/zh.md)
 

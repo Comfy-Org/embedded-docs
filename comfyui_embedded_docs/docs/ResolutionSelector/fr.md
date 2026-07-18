@@ -13,8 +13,8 @@ Le nœud Resolution Selector calcule la largeur et la hauteur en pixels d'une im
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `hauteur` | La largeur calculée en pixels, qui est un multiple de 8. | INT |
-| `height` | La hauteur calculée en pixels, qui est un multiple de 8. | INT |
+| `largeur` | La largeur calculée en pixels, qui est un multiple de 8. | INT |
+| `hauteur` | La hauteur calculée en pixels, qui est un multiple de 8. | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/fr.md)
 

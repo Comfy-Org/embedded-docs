@@ -10,7 +10,7 @@ El nodo PixVerse Template le permite seleccionar entre las plantillas disponible
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `pixverse_template` | El ID de plantilla correspondiente al nombre de plantilla seleccionado, que puede ser utilizado por otros nodos de PixVerse para la generación de videos. | STRING |
+| `plantilla_pixverse` | El ID de plantilla correspondiente al nombre de plantilla seleccionado, que puede ser utilizado por otros nodos de PixVerse para la generación de videos. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PixverseTemplateNode/es.md)
 

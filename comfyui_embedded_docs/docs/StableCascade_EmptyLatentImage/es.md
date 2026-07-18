@@ -13,8 +13,8 @@ El nodo `StableCascade_EmptyLatentImage` crea tensores latentes vacíos para los
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `etapa_b` | El tensor latente de la etapa C con dimensiones [batch_size, 16, altura//compresión, ancho//compresión] | LATENT |
-| `stage_b` | El tensor latente de la etapa B con dimensiones [batch_size, 4, altura//4, ancho//4] | LATENT |
+| `etapa_c` | El tensor latente de la etapa C con dimensiones [batch_size, 16, altura//compresión, ancho//compresión] | LATENT |
+| `etapa_b` | El tensor latente de la etapa B con dimensiones [batch_size, 4, altura//4, ancho//4] | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StableCascade_EmptyLatentImage/es.md)
 

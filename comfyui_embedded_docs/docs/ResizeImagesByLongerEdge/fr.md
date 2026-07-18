@@ -11,7 +11,7 @@ Le nœud Redimensionner par Bord le Plus Long redimensionne une ou plusieurs ima
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `image` | L'image ou le lot d'images redimensionné(e). La sortie aura le même nombre d'images que l'entrée, chaque image ayant son bord le plus long correspondant à la longueur `longer_edge` spécifiée. | IMAGE |
+| `images` | L'image ou le lot d'images redimensionné(e). La sortie aura le même nombre d'images que l'entrée, chaque image ayant son bord le plus long correspondant à la longueur `longer_edge` spécifiée. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResizeImagesByLongerEdge/fr.md)
 

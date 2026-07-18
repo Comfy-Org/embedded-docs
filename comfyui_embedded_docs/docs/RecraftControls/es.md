@@ -11,7 +11,7 @@ Crea Controles Recraft para personalizar la generación Recraft. Este nodo permi
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `recraft_controls` | Los controles Recraft configurados que contienen los ajustes de color | CONTROLS |
+| `controles_recraft` | Los controles Recraft configurados que contienen los ajustes de color | CONTROLS |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftControls/es.md)
 

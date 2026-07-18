@@ -22,8 +22,8 @@ WanMoveTrackToVideo düğümü, video oluşturma için koşullandırma ve gizli 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Potansiyel olarak `concat_latent_image`, `concat_mask` ve `clip_vision_output` içeren değiştirilmiş pozitif koşullandırma. | CONDITIONING |
-| `latent` | Potansiyel olarak `concat_latent_image`, `concat_mask` ve `clip_vision_output` içeren değiştirilmiş negatif koşullandırma. | CONDITIONING |
+| `pozitif` | Potansiyel olarak `concat_latent_image`, `concat_mask` ve `clip_vision_output` içeren değiştirilmiş pozitif koşullandırma. | CONDITIONING |
+| `negatif` | Potansiyel olarak `concat_latent_image`, `concat_mask` ve `clip_vision_output` içeren değiştirilmiş negatif koşullandırma. | CONDITIONING |
 | `latent` | Boyutları `toplu_boyutu`, `uzunluk`, `yükseklik` ve `genişlik` girişleri tarafından şekillendirilen boş bir gizli tensör. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanMoveTrackToVideo/tr.md)

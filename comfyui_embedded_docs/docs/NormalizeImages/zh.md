@@ -12,7 +12,7 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `image` | 经过归一化处理后的结果图像。 | IMAGE |
+| `图像` | 经过归一化处理后的结果图像。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/NormalizeImages/zh.md)
 

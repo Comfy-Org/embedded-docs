@@ -15,7 +15,7 @@ Bir SAM3 izleme oturumundan belirli izlenen nesneleri indeks numaralarına göre
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `masks` | Her kare için, seçilen nesnelerin tek bir maskede birleştirildiği tek bir ikili maske. Hiçbir nesne seçilmezse veya izleme verisi yoksa, sıfır maskesi döndürür. | MASK |
+| `maskeler` | Her kare için, seçilen nesnelerin tek bir maskede birleştirildiği tek bir ikili maske. Hiçbir nesne seçilmezse veya izleme verisi yoksa, sıfır maskesi döndürür. | MASK |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SAM3_TrackToMask/tr.md)
 

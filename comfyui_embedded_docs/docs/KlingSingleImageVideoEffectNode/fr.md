@@ -16,7 +16,7 @@ Le nœud Effet Vidéo sur Image Unique Kling crée des vidéos avec différents 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
 | `video_id` | La vidéo générée avec les effets appliqués | VIDEO |
-| `durée` | L'identifiant unique de la vidéo générée | STRING |
+| `video_id` | L'identifiant unique de la vidéo générée | STRING |
 | `durée` | La durée de la vidéo générée | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingSingleImageVideoEffectNode/fr.md)

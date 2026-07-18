@@ -18,9 +18,9 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `GLB` | 用于向后兼容的旧版输出。 | STRING |
-| `OBJ` | 以 GLB 文件格式生成的 3D 模型。 | FILE3DGLB |
-| `texture_image` | 以 OBJ 文件格式生成的 3D 模型。 | FILE3DOBJ |
+| `模型文件` | 用于向后兼容的旧版输出。 | STRING |
+| `GLB` | 以 GLB 文件格式生成的 3D 模型。 | FILE3DGLB |
+| `OBJ` | 以 OBJ 文件格式生成的 3D 模型。 | FILE3DOBJ |
 | `texture_image` | 从生成的 OBJ 文件中提取的纹理图像（如有）。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentTextToModelNode/zh.md)

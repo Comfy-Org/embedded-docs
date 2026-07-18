@@ -11,9 +11,9 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `FBX` | OBJ形式で処理された3Dモデルファイル。 | FILE3D |
-| `uv画像` | FBX形式で処理された3Dモデルファイル。 | FILE3D |
-| `uv_image` | 生成されたUVテクスチャ画像。 | IMAGE |
+| `OBJ` | OBJ形式で処理された3Dモデルファイル。 | FILE3D |
+| `FBX` | FBX形式で処理された3Dモデルファイル。 | FILE3D |
+| `uv画像` | 生成されたUVテクスチャ画像。 | IMAGE |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/ja.md)
 

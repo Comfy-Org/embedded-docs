@@ -16,7 +16,7 @@
 
 | 参数 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `负面条件` | 应用控制网变换后的修改版正向 conditioning 数据，反映了基于输入参数所做的增强。 | `CONDITIONING` |
+| `正面条件` | 应用控制网变换后的修改版正向 conditioning 数据，反映了基于输入参数所做的增强。 | `CONDITIONING` |
 | `负面条件` | 应用控制网变换后的修改版负向 conditioning 数据，反映了基于输入参数对特定特征的抑制或移除。 | `CONDITIONING` |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplyAdvanced/zh.md)

@@ -13,8 +13,8 @@
 
 | 出力名 | 説明 | データ型 |
 |--------|------|---------|
-| `マスク` | 背景が除去された動画フレーム | IMAGE |
-| `mask` | 動画フレームのアルファマスク | MASK |
+| `画像` | 背景が除去された動画フレーム | IMAGE |
+| `マスク` | 動画フレームのアルファマスク | MASK |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BriaTransparentVideoBackground/ja.md)
 

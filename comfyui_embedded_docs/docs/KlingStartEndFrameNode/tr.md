@@ -52,8 +52,8 @@ Kling Başlangıç-Bitiş Karesinden Video düğümü, sağladığınız başlan
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `video_kimliği` | Oluşturulan video dizisi | VIDEO |
-| `süre` | Oluşturulan video için benzersiz tanımlayıcı | STRING |
-| `duration` | Oluşturulan videonun süresi | STRING |
+| `video_kimliği` | Oluşturulan video için benzersiz tanımlayıcı | STRING |
+| `süre` | Oluşturulan videonun süresi | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/tr.md)
 

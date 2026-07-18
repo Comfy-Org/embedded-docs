@@ -24,7 +24,7 @@ Ce nœud génère ou modifie des images en envoyant une invite textuelle à l'AP
 | --- | --- | --- |
 | `IMAGE` | L'image générée ou modifiée. | IMAGE |
 | `image de réflexion` | Une description textuelle ou une légende générée par le modèle. | STRING |
-| `thought_image` | Première image du processus de réflexion du modèle. Disponible uniquement avec le niveau de réflexion HIGH et la modalité IMAGE+TEXT. | IMAGE |
+| `image de réflexion` | Première image du processus de réflexion du modèle. Disponible uniquement avec le niveau de réflexion HIGH et la modalité IMAGE+TEXT. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/fr.md)
 

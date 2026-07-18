@@ -20,9 +20,9 @@ Meshy: Metinden Modele düğümü, bir metin açıklamasından 3B model oluştur
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `meshy_görev_id` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `GLB` | Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
-| `FBX` | GLB formatında oluşturulan 3B model dosyası. | FILE3DGLB |
+| `model_dosyası` | Oluşturulan GLB modelinin dosya adı. Bu çıktı, geriye dönük uyumluluk için sağlanmıştır. | STRING |
+| `meshy_görev_id` | Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
+| `GLB` | GLB formatında oluşturulan 3B model dosyası. | FILE3DGLB |
 | `FBX` | FBX formatında oluşturulan 3B model dosyası. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/tr.md)

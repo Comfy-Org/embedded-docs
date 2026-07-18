@@ -22,8 +22,8 @@ Le nœud HunyuanVideo15ImageToVideo prépare les données de conditionnement et 
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Le conditionnement positif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
-| `latent` | Le conditionnement négatif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
+| `positif` | Le conditionnement positif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
+| `négatif` | Le conditionnement négatif modifié, qui peut désormais inclure l'image de départ encodée ou la sortie CLIP vision. | CONDITIONING |
 | `latent` | Un tenseur latent vide dont les dimensions sont configurées pour la taille de lot, la longueur vidéo, la largeur et la hauteur spécifiées. | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HunyuanVideo15ImageToVideo/fr.md)

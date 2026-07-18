@@ -24,8 +24,8 @@ Génère des modèles 3D de manière synchrone à partir d’une description tex
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `modèle task_id` | Fichier du modèle 3D généré (uniquement pour la rétrocompatibilité) | STRING |
-| `GLB` | Identifiant unique de la tâche pour le processus de génération du modèle | MODEL_TASK_ID |
+| `fichier_modèle` | Fichier du modèle 3D généré (uniquement pour la rétrocompatibilité) | STRING |
+| `modèle task_id` | Identifiant unique de la tâche pour le processus de génération du modèle | MODEL_TASK_ID |
 | `GLB` | Modèle 3D généré au format GLB | FILE3DGLB |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextToModelNode/fr.md)

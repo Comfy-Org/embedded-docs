@@ -11,7 +11,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `string` | 截斷後的文字，僅包含輸入中前 `最大長度` 個字元。 | STRING |
+| `文字` | 截斷後的文字，僅包含輸入中前 `最大長度` 個字元。 | STRING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/zh-TW.md)
 

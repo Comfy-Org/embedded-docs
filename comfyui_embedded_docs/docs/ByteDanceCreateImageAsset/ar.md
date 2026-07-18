@@ -44,7 +44,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `group_id` | المعرف الفريد لأصل الصورة المنشأ حديثًا. | STRING |
+| `asset_id` | المعرف الفريد لأصل الصورة المنشأ حديثًا. | STRING |
 | `group_id` | معرف مجموعة الأصول. سيكون هذا هو `group_id` المقدم أو معرفًا تم إنشاؤه حديثًا. | STRING |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceCreateImageAsset/ar.md)

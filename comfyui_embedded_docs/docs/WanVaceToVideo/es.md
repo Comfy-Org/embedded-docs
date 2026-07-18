@@ -22,10 +22,10 @@ El nodo WanVaceToVideo procesa datos de condicionamiento de video para modelos d
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negativo` | Condicionamiento positivo con datos de control de video aplicados | CONDITIONING |
-| `latente` | Condicionamiento negativo con datos de control de video aplicados | CONDITIONING |
-| `latente_recortado` | Tensor latente vacío listo para la generación de video | LATENT |
-| `trim_latent` | Número de fotogramas latentes a recortar cuando se utiliza una imagen de referencia | INT |
+| `positivo` | Condicionamiento positivo con datos de control de video aplicados | CONDITIONING |
+| `negativo` | Condicionamiento negativo con datos de control de video aplicados | CONDITIONING |
+| `latente` | Tensor latente vacío listo para la generación de video | LATENT |
+| `latente_recortado` | Número de fotogramas latentes a recortar cuando se utiliza una imagen de referencia | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanVaceToVideo/es.md)
 

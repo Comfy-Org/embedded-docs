@@ -12,7 +12,7 @@ Le nœud StringContains vérifie si une chaîne de caractères donnée contient 
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `contains` | Renvoie true si la sous-chaîne est trouvée dans la chaîne, false sinon | BOOLEAN |
+| `contient` | Renvoie true si la sous-chaîne est trouvée dans la chaîne, false sinon | BOOLEAN |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringContains/fr.md)
 

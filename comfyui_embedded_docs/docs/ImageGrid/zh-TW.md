@@ -16,7 +16,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `image` | 包含所有輸入影像並排列成網格的單一輸出影像。 | IMAGE |
+| `影像` | 包含所有輸入影像並排列成網格的單一輸出影像。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageGrid/zh-TW.md)
 

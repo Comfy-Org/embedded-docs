@@ -17,8 +17,8 @@ TripoTextureNode 使用 Tripo API 生成带纹理的 3D 模型。它接收一个
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型任务ID` | 已应用纹理的生成模型文件（仅用于向后兼容） | STRING |
-| `GLB` | 用于跟踪纹理生成过程的任务 ID | MODEL_TASK_ID |
+| `模型文件` | 已应用纹理的生成模型文件（仅用于向后兼容） | STRING |
+| `模型任务ID` | 用于跟踪纹理生成过程的任务 ID | MODEL_TASK_ID |
 | `GLB` | 已应用纹理的 GLB 格式 3D 模型 | FILE3DGLB |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextureNode/zh.md)

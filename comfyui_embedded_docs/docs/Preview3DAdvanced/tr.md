@@ -17,10 +17,10 @@ Bu düğüm, kamera ve model bilgisi çıktısı ile gelişmiş bir 3B model ön
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `kamera_bilgisi` | Girişten iletilen 3B model dosyası. | FILE3D |
-| `model_3d_bilgisi` | Girişten veya görüntü alanı durumundan gelen model bilgisi meta verileri. | LOAD3DMODELINFO |
-| `genişlik` | Girişten veya görüntü alanı durumundan gelen kamera yapılandırması. | LOAD3DCAMERA |
-| `yükseklik` | Önizlemenin piksel cinsinden genişliği. | INT |
+| `model_dosyası` | Girişten iletilen 3B model dosyası. | FILE3D |
+| `kamera_bilgisi` | Girişten veya görüntü alanı durumundan gelen model bilgisi meta verileri. | LOAD3DMODELINFO |
+| `model_3d_bilgisi` | Girişten veya görüntü alanı durumundan gelen kamera yapılandırması. | LOAD3DCAMERA |
+| `genişlik` | Önizlemenin piksel cinsinden genişliği. | INT |
 | `yükseklik` | Önizlemenin piksel cinsinden yüksekliği. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Preview3DAdvanced/tr.md)

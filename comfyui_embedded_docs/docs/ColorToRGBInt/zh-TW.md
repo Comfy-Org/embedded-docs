@@ -14,7 +14,7 @@ ColorToRGBInt 節點將以十六進位格式指定的顏色轉換為單一整數
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `hex` | 計算出的 RGB 整數值。此值由以下公式推導得出：`(Red * 65536) + (Green * 256) + Blue`。 | INT |
+| `rgb 整數值` | 計算出的 RGB 整數值。此值由以下公式推導得出：`(Red * 65536) + (Green * 256) + Blue`。 | INT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ColorToRGBInt/zh-TW.md)
 

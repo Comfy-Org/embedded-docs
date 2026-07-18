@@ -11,7 +11,7 @@ Bu düğüm, girdi metin dizesinin sonuna belirtilen bir sonek ekler. Orijinal m
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `text` | Sonek eklendikten sonra elde edilen sonuç metni. | STRING |
+| `metinler` | Sonek eklendikten sonra elde edilen sonuç metni. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextSuffix/tr.md)
 

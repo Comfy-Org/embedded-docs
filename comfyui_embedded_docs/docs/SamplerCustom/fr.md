@@ -20,7 +20,7 @@ Le nœud SamplerCustom est conçu pour offrir un mécanisme d'échantillonnage f
 
 | Paramètre | Description | Type de données |
 | --- | --- | --- |
-| `sortie_débruitée` | La sortie 'output' représente le résultat principal du processus d'échantillonnage, contenant les échantillons générés. | `LATENT` |
-| `denoised_output` | La sortie 'denoised_output' représente les échantillons après l'application d'un processus de débruitage, améliorant potentiellement la clarté et la qualité des échantillons générés. | `LATENT` |
+| `sortie` | La sortie 'output' représente le résultat principal du processus d'échantillonnage, contenant les échantillons générés. | `LATENT` |
+| `sortie_débruitée` | La sortie 'denoised_output' représente les échantillons après l'application d'un processus de débruitage, améliorant potentiellement la clarté et la qualité des échantillons générés. | `LATENT` |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/fr.md)

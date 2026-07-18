@@ -14,8 +14,8 @@ SamplerCustomAdvanced düğümü, özel gürültü, yönlendirme ve örnekleme y
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `gürültüsüz_çıktı` | Örnekleme sürecini tamamladıktan sonraki nihai örneklenmiş gizli temsil | LATENT |
-| `denoised_output` | Mevcut olduğunda çıktının gürültüden arındırılmış bir sürümü, aksi takdirde çıktı ile aynı değeri döndürür | LATENT |
+| `çıktı` | Örnekleme sürecini tamamladıktan sonraki nihai örneklenmiş gizli temsil | LATENT |
+| `gürültüsüz_çıktı` | Mevcut olduğunda çıktının gürültüden arındırılmış bir sürümü, aksi takdirde çıktı ile aynı değeri döndürür | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustomAdvanced/tr.md)
 

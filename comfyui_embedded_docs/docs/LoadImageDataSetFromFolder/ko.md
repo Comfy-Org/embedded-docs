@@ -12,7 +12,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `images` | 불러온 이미지 목록입니다. 이 노드는 선택한 폴더에서 발견된 모든 유효한 이미지 파일(PNG, JPG, JPEG, WEBP)을 불러옵니다. | IMAGE |
+| `이미지` | 불러온 이미지 목록입니다. 이 노드는 선택한 폴더에서 발견된 모든 유효한 이미지 파일(PNG, JPG, JPEG, WEBP)을 불러옵니다. | IMAGE |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageDataSetFromFolder/ko.md)
 

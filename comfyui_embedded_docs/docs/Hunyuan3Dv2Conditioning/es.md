@@ -10,7 +10,7 @@ El nodo Hunyuan3Dv2Conditioning procesa la salida de CLIP vision para generar da
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `negative` | Datos de condicionamiento positivo que contienen las incrustaciones de CLIP vision | CONDITIONING |
+| `positive` | Datos de condicionamiento positivo que contienen las incrustaciones de CLIP vision | CONDITIONING |
 | `negative` | Datos de condicionamiento negativo que contienen incrustaciones con valor cero que coinciden con la forma de las incrustaciones positivas | CONDITIONING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Hunyuan3Dv2Conditioning/es.md)

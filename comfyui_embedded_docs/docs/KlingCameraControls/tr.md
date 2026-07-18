@@ -18,7 +18,7 @@ Kling Kamera Kontrolleri düğümü, video oluşturmada hareket kontrol efektler
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `camera_control` | Video oluşturmada kullanılmak üzere yapılandırılmış kamera kontrol ayarlarını döndürür | CAMERA_CONTROL |
+| `kamera_kontrolü` | Video oluşturmada kullanılmak üzere yapılandırılmış kamera kontrol ayarlarını döndürür | CAMERA_CONTROL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingCameraControls/tr.md)
 

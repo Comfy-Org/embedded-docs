@@ -21,8 +21,8 @@ Le nœud WanFunInpaintToVideo crée des séquences vidéo en effectuant de l'inf
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `négatif` | Sortie de conditionnement positif traitée | CONDITIONING |
-| `latent` | Sortie de conditionnement négatif traitée | CONDITIONING |
+| `positif` | Sortie de conditionnement positif traitée | CONDITIONING |
+| `négatif` | Sortie de conditionnement négatif traitée | CONDITIONING |
 | `latent` | Représentation latente vidéo générée | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanFunInpaintToVideo/fr.md)

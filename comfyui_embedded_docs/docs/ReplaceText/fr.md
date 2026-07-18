@@ -14,7 +14,7 @@ Le nœud Replace Text effectue une simple substitution de texte. Il recherche un
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `text` | Le texte traité, où toutes les occurrences du texte `find` ont été remplacées par le texte `replace`. | STRING |
+| `texts` | Le texte traité, où toutes les occurrences du texte `find` ont été remplacées par le texte `replace`. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ReplaceText/fr.md)
 

@@ -11,7 +11,7 @@ CFGNorm düğümü, yayılım modellerinde sınıflandırıcısız yönlendirme 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `patched_model` | Örnekleme sürecine CFG normalizasyonu uygulanmış değiştirilmiş modeli döndürür | MODEL |
+| `yama uygulanmış model` | Örnekleme sürecine CFG normalizasyonu uygulanmış değiştirilmiş modeli döndürür | MODEL |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGNorm/tr.md)
 

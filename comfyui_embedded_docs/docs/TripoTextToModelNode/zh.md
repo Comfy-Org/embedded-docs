@@ -24,8 +24,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `模型任务ID` | 生成的 3D 模型文件（仅用于向后兼容） | STRING |
-| `GLB` | 模型生成过程的唯一任务标识符 | MODEL_TASK_ID |
+| `模型文件` | 生成的 3D 模型文件（仅用于向后兼容） | STRING |
+| `模型任务ID` | 模型生成过程的唯一任务标识符 | MODEL_TASK_ID |
 | `GLB` | 以 GLB 格式生成的 3D 模型 | FILE3DGLB |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextToModelNode/zh.md)

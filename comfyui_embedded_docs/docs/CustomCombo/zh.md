@@ -14,7 +14,7 @@
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `索引` | 从自定义组合框中选择的选项的文本字符串。 | STRING |
-| `INDEX` | 所选选项在下拉列表中的索引位置。 | INT |
+| `索引` | 所选选项在下拉列表中的索引位置。 | INT |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CustomCombo/zh.md)
 

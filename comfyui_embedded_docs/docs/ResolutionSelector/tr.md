@@ -13,8 +13,8 @@
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `yukseklik` | Piksel cinsinden hesaplanan genişlik, 8'in katıdır. | INT |
-| `height` | Piksel cinsinden hesaplanan yükseklik, 8'in katıdır. | INT |
+| `genislik` | Piksel cinsinden hesaplanan genişlik, 8'in katıdır. | INT |
+| `yukseklik` | Piksel cinsinden hesaplanan yükseklik, 8'in katıdır. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionSelector/tr.md)
 

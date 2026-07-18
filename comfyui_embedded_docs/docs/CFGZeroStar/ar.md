@@ -10,7 +10,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `patched_model` | النموذج المُعدَّل مع تطبيق تحجيم التوجيه CFGZeroStar | MODEL |
+| `النموذج المعدل` | النموذج المُعدَّل مع تطبيق تحجيم التوجيه CFGZeroStar | MODEL |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CFGZeroStar/ar.md)
 

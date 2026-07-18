@@ -11,7 +11,7 @@
 
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
-| `GLB` | 生成された3Dモデルのファイルパス（下位互換性のため） | STRING |
+| `3Dモデルパス` | 生成された3Dモデルのファイルパス（下位互換性のため） | STRING |
 | `GLB` | GLB形式で生成された3Dモデル | FILE3DGLB |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Sketch/ja.md)

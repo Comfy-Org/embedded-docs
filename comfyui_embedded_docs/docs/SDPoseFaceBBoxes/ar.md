@@ -16,7 +16,7 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 | --- | --- | --- |
-| `bboxes` | قائمة بمربعات إحاطة الوجه لكل إطار. يتم تعريف كل مربع إحاطة بإحداثيات الزاوية العلوية اليسرى (`x`, `y`) و`width` و`height`. هذا المخرج متوافق مع مدخل `bboxes` لعقدة SDPoseKeypointExtractor. | BOUNDINGBOX |
+| `مربعات التحديد` | قائمة بمربعات إحاطة الوجه لكل إطار. يتم تعريف كل مربع إحاطة بإحداثيات الزاوية العلوية اليسرى (`x`, `y`) و`width` و`height`. هذا المخرج متوافق مع مدخل `bboxes` لعقدة SDPoseKeypointExtractor. | BOUNDINGBOX |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SDPoseFaceBBoxes/ar.md)
 

@@ -13,7 +13,7 @@
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `conditioning` | 批次化潛在字典的列表，每個解析度桶一個。 | LATENT |
+| `latents` | 批次化潛在字典的列表，每個解析度桶一個。 | LATENT |
 | `conditioning` | 條件化列表的列表，每個解析度桶一個。 | CONDITIONING |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ResolutionBucket/zh-TW.md)

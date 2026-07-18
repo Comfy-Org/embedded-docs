@@ -14,7 +14,7 @@ RegexMatch 節點會檢查文字字串是否包含符合指定正規表示式模
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `matches` | 如果正規表示式模式比對到輸入字串的任何部分，則回傳 True，否則回傳 False | BOOLEAN |
+| `匹配結果` | 如果正規表示式模式比對到輸入字串的任何部分，則回傳 True，否則回傳 False | BOOLEAN |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/zh-TW.md)
 

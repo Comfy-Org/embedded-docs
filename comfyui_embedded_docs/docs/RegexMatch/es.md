@@ -14,7 +14,7 @@ El nodo RegexMatch verifica si una cadena de texto contiene una coincidencia con
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `matches` | Devuelve True si el patrón de expresión regular coincide con alguna parte de la cadena de entrada, False en caso contrario | BOOLEAN |
+| `coincidencias` | Devuelve True si el patrón de expresión regular coincide con alguna parte de la cadena de entrada, False en caso contrario | BOOLEAN |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RegexMatch/es.md)
 

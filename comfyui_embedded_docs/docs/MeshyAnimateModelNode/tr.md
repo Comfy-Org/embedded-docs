@@ -11,8 +11,8 @@ Bu düğüm, Meshy hizmeti kullanılarak daha önce iskeletlendirilmiş (rig) bi
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `GLB` | Animasyonlu model için bir dize tanımlayıcı. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `FBX` | GLB formatındaki animasyonlu 3D model dosyası. | FILE3DGLB |
+| `model_file` | Animasyonlu model için bir dize tanımlayıcı. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanmıştır. | STRING |
+| `GLB` | GLB formatındaki animasyonlu 3D model dosyası. | FILE3DGLB |
 | `FBX` | FBX formatındaki animasyonlu 3D model dosyası. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/tr.md)

@@ -12,7 +12,7 @@ Ce nœud charge un ensemble de données d'images et leurs légendes textuelles c
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `texts` | Une liste de tenseurs d'images chargées. | IMAGE |
+| `images` | Une liste de tenseurs d'images chargées. | IMAGE |
 | `texts` | Une liste de légendes textuelles correspondant à chaque image chargée. | STRING |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadImageTextDataSetFromFolder/fr.md)

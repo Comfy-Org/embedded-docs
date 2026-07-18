@@ -17,8 +17,8 @@ El nodo TripoTextureNode genera modelos 3D texturizados utilizando la API de Tri
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `id_de_tarea_de_modelo` | El archivo de modelo generado con texturas aplicadas (solo para compatibilidad hacia atrás) | STRING |
-| `GLB` | El ID de tarea para rastrear el proceso de generación de texturas | MODEL_TASK_ID |
+| `archivo_de_modelo` | El archivo de modelo generado con texturas aplicadas (solo para compatibilidad hacia atrás) | STRING |
+| `id_de_tarea_de_modelo` | El ID de tarea para rastrear el proceso de generación de texturas | MODEL_TASK_ID |
 | `GLB` | El modelo 3D generado en formato GLB con texturas aplicadas | FILE3DGLB |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TripoTextureNode/es.md)

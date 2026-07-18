@@ -10,7 +10,7 @@ Bu düğüm, Recraft API ile kullanılmak üzere bir stil yapılandırır ve öz
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `recraft_style` | Seçilen "digital_illustration" stilini ve isteğe bağlı alt stili içeren, diğer Recraft API düğümlerine aktarılmaya hazır, yapılandırılmış bir stil nesnesi. | STYLEV3 |
+| `recraft_stili` | Seçilen "digital_illustration" stilini ve isteğe bağlı alt stili içeren, diğer Recraft API düğümlerine aktarılmaya hazır, yapılandırılmış bir stil nesnesi. | STYLEV3 |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftStyleV3DigitalIllustration/tr.md)
 

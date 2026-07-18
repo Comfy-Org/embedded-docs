@@ -52,7 +52,7 @@ El nodo Kling Start-End Frame to Video crea una secuencia de video que realiza u
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
 | `video_id` | La secuencia de video generada | VIDEO |
-| `duration` | Identificador único para el video generado | STRING |
+| `video_id` | Identificador único para el video generado | STRING |
 | `duration` | Duración del video generado | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingStartEndFrameNode/es.md)

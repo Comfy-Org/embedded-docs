@@ -17,10 +17,10 @@ Le nœud Aperçu du Nuage de Points vous permet de visualiser un fichier de nuag
 
 | Nom de Sortie | Description | Type de Données |
 |---------------|-------------|-----------------|
-| `info_modèle_3d` | Données du modèle de nuage de points | FILE3D |
-| `info_caméra` | Informations sur le modèle 3D | LOAD3DMODELINFO |
-| `largeur` | Informations de la caméra pour la vue 3D | LOAD3DCAMERA |
-| `hauteur` | Largeur de la fenêtre d'aperçu | INT |
+| `modèle_3d` | Données du modèle de nuage de points | FILE3D |
+| `info_modèle_3d` | Informations sur le modèle 3D | LOAD3DMODELINFO |
+| `info_caméra` | Informations de la caméra pour la vue 3D | LOAD3DCAMERA |
+| `largeur` | Largeur de la fenêtre d'aperçu | INT |
 | `hauteur` | Hauteur de la fenêtre d'aperçu | INT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewPointCloud/fr.md)

@@ -11,7 +11,7 @@ Este nodo añade un sufijo especificado al final de una cadena de texto de entra
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `text` | El texto resultante después de haber añadido el sufijo. | STRING |
+| `textos` | El texto resultante después de haber añadido el sufijo. | STRING |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AddTextSuffix/es.md)
 

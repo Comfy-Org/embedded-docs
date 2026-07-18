@@ -18,8 +18,8 @@ Le nœud VOIDInpaintConditioning prépare les données de conditionnement néces
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `negative` | Le conditionnement positif avec les informations latentes d'infilling ajoutées | CONDITIONING |
-| `latent` | Le conditionnement négatif avec les informations latentes d'infilling ajoutées | CONDITIONING |
+| `positive` | Le conditionnement positif avec les informations latentes d'infilling ajoutées | CONDITIONING |
+| `negative` | Le conditionnement négatif avec les informations latentes d'infilling ajoutées | CONDITIONING |
 | `latent` | Un tenseur de bruit latent rempli de zéros avec la forme [batch_size, 16, latent_t, latent_h, latent_w] | LATENT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VOIDInpaintConditioning/fr.md)

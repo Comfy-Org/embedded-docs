@@ -11,8 +11,8 @@
 
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
-| `FBX` | 处理后的3D模型文件（OBJ格式）。 | FILE3D |
-| `uv_image` | 处理后的3D模型文件（FBX格式）。 | FILE3D |
+| `OBJ` | 处理后的3D模型文件（OBJ格式）。 | FILE3D |
+| `FBX` | 处理后的3D模型文件（FBX格式）。 | FILE3D |
 | `uv_image` | 生成的UV纹理图像。 | IMAGE |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TencentModelTo3DUVNode/zh.md)

@@ -38,7 +38,7 @@ TCFG (Amortiguación Tangencial CFG) refina las predicciones incondicionales (ne
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `patched_model` | El modelo modificado con la amortiguación tangencial CFG aplicada | MODEL |
+| `modelo_modificado` | El modelo modificado con la amortiguación tangencial CFG aplicada | MODEL |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TCFG/es.md)
 

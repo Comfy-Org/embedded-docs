@@ -19,10 +19,10 @@ WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağ
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif_metin` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `negatif_img_metin` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma | CONDITIONING |
-| `gizli` | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma | CONDITIONING |
-| `latent` | Belirtilen boyutlar ve uzunluk ile oluşturulmuş gizli video temsili | LATENT |
+| `pozitif` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif_metin` | Görüntüler sağlandığında zaman boyutlu birleştirme ile değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `negatif_img_metin` | Görüntüler sağlandığında sıfırlanmış zaman boyutlu birleştirme ile negatif koşullandırma | CONDITIONING |
+| `gizli` | Belirtilen boyutlar ve uzunluk ile oluşturulmuş gizli video temsili | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/tr.md)
 

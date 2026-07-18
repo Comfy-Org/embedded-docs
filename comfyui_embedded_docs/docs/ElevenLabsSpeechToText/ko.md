@@ -23,8 +23,8 @@ ElevenLabs 음성-텍스트 노드는 오디오 파일을 텍스트로 변환합
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `language_code` | 오디오에서 변환된 텍스트입니다. | STRING |
-| `words_json` | 감지된 오디오의 언어 코드입니다. | STRING |
+| `text` | 오디오에서 변환된 텍스트입니다. | STRING |
+| `language_code` | 감지된 오디오의 언어 코드입니다. | STRING |
 | `words_json` | 타임스탬프와 활성화된 경우 화자 레이블을 포함한 상세한 단어 수준 정보가 포함된 JSON 형식 문자열입니다. | STRING |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsSpeechToText/ko.md)

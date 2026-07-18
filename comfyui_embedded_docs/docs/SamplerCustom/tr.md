@@ -18,7 +18,7 @@ SamplerCustom düğümü, çeşitli uygulamalar için esnek ve özelleştirilebi
 
 | Parametre | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `gürültüsüz_çıktı` | 'output', örnekleme sürecinin birincil sonucunu temsil eder ve üretilen örnekleri içerir. | `LATENT` |
-| `denoised_output` | 'denoised_output', bir gürültü giderme işlemi uygulandıktan sonraki örnekleri temsil eder ve potansiyel olarak üretilen örneklerin netliğini ve kalitesini artırır. | `LATENT` |
+| `çıktı` | 'output', örnekleme sürecinin birincil sonucunu temsil eder ve üretilen örnekleri içerir. | `LATENT` |
+| `gürültüsüz_çıktı` | 'denoised_output', bir gürültü giderme işlemi uygulandıktan sonraki örnekleri temsil eder ve potansiyel olarak üretilen örneklerin netliğini ve kalitesini artırır. | `LATENT` |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SamplerCustom/tr.md)

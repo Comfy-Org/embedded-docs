@@ -17,7 +17,7 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 | --- | --- | --- |
-| `bboxes` | 프레임별 얼굴 감지 결과를 포함하는 구조화된 출력으로, 468개 얼굴 랜드마크, ARKit-52 블렌드셰이프 계수, 변환 행렬 및 메시 시각화를 위한 연결 집합을 포함합니다. | FACE_LANDMARKS |
+| `face_landmarks` | 프레임별 얼굴 감지 결과를 포함하는 구조화된 출력으로, 468개 얼굴 랜드마크, ARKit-52 블렌드셰이프 계수, 변환 행렬 및 메시 시각화를 위한 연결 집합을 포함합니다. | FACE_LANDMARKS |
 | `bboxes` | 감지된 각 얼굴의 경계 상자 목록으로, 좌표(x, y, 너비, 높이), 레이블 "face" 및 신뢰도 점수를 포함합니다. 입력 프레임당 하나의 목록입니다. | BOUNDING_BOX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MediaPipeFaceLandmarker/ko.md)

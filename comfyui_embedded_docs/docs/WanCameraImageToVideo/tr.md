@@ -21,8 +21,8 @@ WanCameraImageToVideo düğümü, video oluşturma için gizil temsiller üreter
 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
-| `negatif` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş pozitif koşullandırma | CONDITIONING |
-| `latent` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş negatif koşullandırma | CONDITIONING |
+| `pozitif` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş pozitif koşullandırma | CONDITIONING |
+| `negatif` | Uygulanan kamera koşulları ve clip vision çıktılarıyla değiştirilmiş negatif koşullandırma | CONDITIONING |
 | `latent` | Video modelleriyle kullanım için oluşturulan video gizil temsili. Gizil tensör, [batch_size, 16, frames, height/8, width/8] boyutlarına sahiptir; burada frames, ((length - 1) // 4) + 1 olarak hesaplanır. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanCameraImageToVideo/tr.md)

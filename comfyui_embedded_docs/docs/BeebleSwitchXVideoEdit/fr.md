@@ -29,7 +29,7 @@ Lorsque vous utilisez le mode `select`, vous devez fournir l'image `alpha_keyfra
 
 | Nom de la sortie | Description | Type de données |
 | --- | --- | --- |
-| `alpha` | La vidéo éditée avec les changements de scène appliqués. | VIDEO |
+| `vidéo` | La vidéo éditée avec les changements de scène appliqués. | VIDEO |
 | `alpha` | Le mat alpha utilisé par Beeble. Il est vide pour le mode "fill", qui n'a pas de mat séparé. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXVideoEdit/fr.md)
