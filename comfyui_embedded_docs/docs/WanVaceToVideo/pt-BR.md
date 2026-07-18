@@ -13,7 +13,7 @@ O nó WanVaceToVideo processa dados de condicionamento de vídeo para modelos de
 | `altura` | Altura do vídeo de saída em pixels (padrão: 480, passo: 16) | INT | Sim | 16 a MAX_RESOLUTION |
 | `duração` | Número de quadros no vídeo (padrão: 81, passo: 4) | INT | Sim | 1 a MAX_RESOLUTION |
 | `tamanho_do_lote` | Número de vídeos a serem gerados simultaneamente (padrão: 1) | INT | Sim | 1 a 4096 |
-| `força` | Intensidade de controle para o condicionamento de vídeo (padrão: 1.0, passo: 0.01) | FLOAT | Sim | 0.0 a 1000.0 |
+| `força` | Intensidade de condição para o controle VACE (padrão: 1.0, passo: 0.01). Esta não é uma intensidade LoRA. Os pesos LoRA são aplicados através de nós LoRA separados. | FLOAT | Sim | 0.0 a 1000.0 |
 | `control_video` | Vídeo de entrada opcional para condicionamento de controle | IMAGE | Não | - |
 | `máscaras_de_controle` | Máscaras opcionais para controlar quais partes do vídeo modificar | MASK | Não | - |
 | `imagem_de_referência` | Imagem de referência opcional para condicionamento adicional | IMAGE | Não | - |

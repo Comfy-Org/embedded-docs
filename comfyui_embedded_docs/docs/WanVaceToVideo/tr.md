@@ -13,7 +13,7 @@ WanVaceToVideo düğümü, video oluşturma modelleri için video koşullama ver
 | `yükseklik` | Çıktı videosunun piksel cinsinden yüksekliği (varsayılan: 480, adım: 16) | INT | Evet | 16 ila MAX_RESOLUTION |
 | `uzunluk` | Videodaki kare sayısı (varsayılan: 81, adım: 4) | INT | Evet | 1 ila MAX_RESOLUTION |
 | `toplu_boyut` | Aynı anda oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ila 4096 |
-| `güç` | Video koşullaması için kontrol gücü (varsayılan: 1,0, adım: 0,01) | FLOAT | Evet | 0,0 ila 1000,0 |
+| `güç` | VACE kontrolü için koşullama gücü (varsayılan: 1,0, adım: 0,01). Bu bir LoRA gücü değildir. LoRA ağırlıkları ayrı LoRA düğümleri aracılığıyla uygulanır. | FLOAT | Evet | 0,0 ila 1000,0 |
 | `kontrol_videosu` | Kontrol koşullaması için isteğe bağlı video girdisi | IMAGE | Hayır | - |
 | `kontrol_maskeleri` | Videonun hangi bölümlerinin değiştirileceğini kontrol etmek için isteğe bağlı maskeler | MASK | Hayır | - |
 | `referans_görüntüsü` | Ek koşullama için isteğe bağlı referans görüntüsü | IMAGE | Hayır | - |
