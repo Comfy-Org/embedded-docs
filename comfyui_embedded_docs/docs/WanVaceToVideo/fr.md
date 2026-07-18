@@ -13,7 +13,7 @@ Le nœud WanVaceToVideo traite les données de conditionnement vidéo pour les m
 | `hauteur` | Hauteur de la vidéo de sortie en pixels (par défaut : 480, pas : 16) | INT | Oui | 16 à MAX_RESOLUTION |
 | `longueur` | Nombre de trames dans la vidéo (par défaut : 81, pas : 4) | INT | Oui | 1 à MAX_RESOLUTION |
 | `taille_lot` | Nombre de vidéos à générer simultanément (par défaut : 1) | INT | Oui | 1 à 4096 |
-| `intensité` | Force de contrôle pour le conditionnement vidéo (par défaut : 1.0, pas : 0.01) | FLOAT | Oui | 0.0 à 1000.0 |
+| `intensité` | Force de conditionnement pour le contrôle VACE (par défaut : 1.0, pas : 0.01). Ce n'est pas une force LoRA. Les poids LoRA sont appliqués via des nœuds LoRA séparés. | FLOAT | Oui | 0.0 à 1000.0 |
 | `contrôle_vidéo` | Vidéo d'entrée optionnelle pour le conditionnement de contrôle | IMAGE | Non | - |
 | `masques_de_contrôle` | Masques optionnels pour contrôler les parties de la vidéo à modifier | MASK | Non | - |
 | `image_de_référence` | Image de référence optionnelle pour un conditionnement supplémentaire | IMAGE | Non | - |
