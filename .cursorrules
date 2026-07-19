@@ -29,7 +29,6 @@ When creating or editing ComfyUI node documentation, strictly follow this struct
 3. **Input Parameter Description** - Detailed explanation of all input parameters
 4. **Output Result Description** - Explain the node's output content and format
 5. **Usage Suggestions** - Practical application scenarios and operation tips with metaphors
-6. **Do not use level-one headings**
 
 ### Parameter Table Format
 For input parameters, please refer to the following format, though it's not mandatory if a table is already provided:
@@ -52,7 +51,7 @@ Data types should be represented using plain text, not styled text.
 ### Important: Do not translate data types
 - Keep all data types in English: IMAGE, FLOAT, INT, STRING, MODEL, CONDITIONING, LATENT, MASK, etc.
 - Do not translate data types into any localized versions
-- Only translate parameter names
+- Only translate parameter names (using frontend translations)
 
 ## Multilingual Localization Rules
 
@@ -68,7 +67,8 @@ Data types should be represented using plain text, not styled text.
 
 ### Translation Principles
 - Only translate when explicitly requested by the user
-- Only translate parameter names and descriptions
+- **Parameter names in Inputs table**: Use ComfyUI frontend translations when available (e.g. FR: `texte`, JA: `テキスト`) — this ensures docs match what users see in the UI
+- **Output names in Outputs table**: Keep in English (programmatic identifiers, do not translate)
 - Keep data types in English
 - Maintain document structure consistency
 - Ensure metaphors are appropriate for the target language
@@ -128,7 +128,7 @@ Data types should be represented using plain text, not styled text.
 
 When users provide language files and request translation to corresponding languages, please follow these rules:
 - Usually, corresponding language screenshots of node information will be provided; ensure parameter names and descriptions match the screenshots
-- If no corresponding screenshots are provided, maintain the English version of parameter names
+- If no corresponding screenshots are provided, use ComfyUI frontend translations for parameter names (exported from nodeDefs) — the doc_automation pipeline applies these automatically via `update_param_translations.py`
 
 ## Standardized Terms for Input/Output Section Titles in Different Languages
 
