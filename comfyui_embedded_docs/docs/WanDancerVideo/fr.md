@@ -1,3 +1,5 @@
+# WanDancerVideo
+
 Le nœud WanDancerVideo prépare les données de conditionnement et un tenseur latent vide pour la génération vidéo avec le modèle WanDancer. Il combine le conditionnement positif et négatif avec des entrées optionnelles comme une image de départ, un masque, des embeddings CLIP vision et des caractéristiques audio pour contrôler la vidéo générée.
 
 ## Entrées

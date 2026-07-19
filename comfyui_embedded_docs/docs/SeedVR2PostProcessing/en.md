@@ -1,4 +1,4 @@
-# Post-Process SeedVR2 Output
+# SeedVR2PostProcessing
 
 This node aligns the generated image with the original resized image and applies optional color correction. It takes the output from a SeedVR2 upscaling process and adjusts it to match the colors and dimensions of the original reference image.
 

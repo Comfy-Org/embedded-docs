@@ -1,3 +1,5 @@
+# Crear Hook LoRA (MO)
+
 Este nodo crea un hook LoRA (Adaptación de Bajo Rango) que se aplica únicamente al componente del modelo, dejando el componente CLIP completamente sin cambios. Carga un archivo LoRA y lo aplica con una intensidad específica al modelo, mientras establece la intensidad CLIP en cero. El nodo puede encadenarse con hooks anteriores para construir pipelines de modificación complejas.
 
 ## Entradas

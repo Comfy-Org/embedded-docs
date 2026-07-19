@@ -1,3 +1,5 @@
+# Detect Face Landmarks (MediaPipe)
+
 ## Overview
 
 Detects faces in an image and identifies 468 facial landmarks (key points) on each face using MediaPipe's BlazeFace and FaceMesh models. It also calculates ARKit-52 blendshape coefficients for facial expression analysis. The node can process multiple images in a batch and outputs both the landmark data and bounding boxes for each detected face.

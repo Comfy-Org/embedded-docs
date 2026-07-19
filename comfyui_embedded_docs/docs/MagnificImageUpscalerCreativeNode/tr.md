@@ -1,3 +1,5 @@
+# Magnific Görüntü Büyütme (Yaratıcı)
+
 Bu düğüm, bir görseli büyütmek ve yaratıcı bir şekilde geliştirmek için Magnific AI hizmetini kullanır. Geliştirmeyi bir metin istemiyle yönlendirmenize, optimize edilecek belirli bir stil seçmenize ve detay, orijinale benzerlik ve stilizasyon gücü gibi yaratıcı sürecin çeşitli yönlerini kontrol etmenize olanak tanır. Düğüm, seçtiğiniz faktöre (2x, 4x, 8x veya 16x) göre büyütülmüş bir görsel çıktısı verir ve maksimum çıktı boyutu 25,3 megapikseldir.
 
 ## Girişler

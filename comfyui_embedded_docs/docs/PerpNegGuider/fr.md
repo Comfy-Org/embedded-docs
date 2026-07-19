@@ -1,3 +1,5 @@
+# PerpNegGuider
+
 Le nœud PerpNegGuider crée un système de guidage pour contrôler la génération d'images à l'aide d'un conditionnement négatif perpendiculaire. Il prend en entrée des conditionnements positif, négatif et vide, puis applique un algorithme de guidage spécialisé pour orienter le processus de génération. Ce nœud est conçu pour des tests expérimentaux et offre un contrôle précis de la force de guidage et de l'échelle négative.
 
 ## Entrées

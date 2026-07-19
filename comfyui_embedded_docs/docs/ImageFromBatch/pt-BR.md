@@ -1,3 +1,5 @@
+# Imagem do Lote
+
 O nó `ImageFromBatch` foi projetado para extrair um segmento específico de imagens de um lote com base no índice e comprimento fornecidos. Ele permite um controle mais granular sobre as imagens em lote, possibilitando operações em imagens individuais ou subconjuntos dentro de um lote maior.
 
 ## Entradas

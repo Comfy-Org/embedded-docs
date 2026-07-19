@@ -1,3 +1,5 @@
+# HunyuanVideo15ImageToVideo
+
 以下が翻訳結果です。
 
 HunyuanVideo15ImageToVideo ノードは、HunyuanVideo 1.5 モデルに基づいて動画生成のための条件付け（conditioning）および潜在空間データを準備します。このノードは動画シーケンスの初期潜在表現を作成し、オプションで開始画像や CLIP ビジョン出力を統合して生成プロセスをガイドします。

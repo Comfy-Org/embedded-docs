@@ -1,3 +1,5 @@
+# Stablezero123Conditioning
+
 This node is designed to process and condition data for use in StableZero123 models, focusing on preparing the input in a specific format that is compatible and optimized for these models.
 
 ## Inputs

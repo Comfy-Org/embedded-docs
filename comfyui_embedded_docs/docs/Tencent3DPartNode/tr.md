@@ -1,3 +1,5 @@
+# Hunyuan3D: 3D Parça
+
 Bu düğüm, Tencent Hunyuan3D API'sini kullanarak bir 3B modeli otomatik olarak analiz eder ve yapısına göre bileşenlerini oluşturur veya tanımlar. Modeli işler ve yeni bir FBX dosyası döndürür.
 
 ## Girdiler

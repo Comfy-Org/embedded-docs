@@ -1,3 +1,5 @@
+# MoGe Point Map a Malla
+
 ## Descripción general
 
 Este nodo convierte un mapa de puntos MoGe en una malla 3D. Toma los datos geométricos producidos por un nodo de estimación de profundidad MoGe y los triangula en una malla con coordenadas UV y una textura opcional.

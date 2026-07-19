@@ -1,3 +1,5 @@
+# CLIPTextEncodeSDXLRefiner
+
 Ce nœud est spécialement conçu pour le modèle SDXL Refiner afin de convertir des invites textuelles en informations de conditionnement en intégrant des scores esthétiques et des informations dimensionnelles, améliorant ainsi les conditions pour les tâches de génération et optimisant l'effet de raffinement final. Il agit comme un directeur artistique professionnel, non seulement en transmettant votre intention créative, mais aussi en injectant des normes esthétiques précises et des exigences de spécifications dans l'œuvre.
 
 ## À propos de SDXL Refiner

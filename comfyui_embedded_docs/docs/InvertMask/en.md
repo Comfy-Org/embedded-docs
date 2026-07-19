@@ -1,3 +1,5 @@
+# Invert Mask
+
 The InvertMask node is designed to invert the values of a given mask, effectively flipping the masked and unmasked areas. This operation is fundamental in image processing tasks where the focus of interest needs to be switched between the foreground and the background.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Cargar Punto de Control
+
 ## Descripción general
 
 Carga un archivo de modelo de difusión (checkpoint) y lo descompone en tres componentes principales: el modelo principal utilizado para eliminar el ruido de los latentes, el codificador de texto CLIP y el codificador/decodificador de imágenes VAE. Este nodo detecta automáticamente todos los archivos de modelo en la carpeta `ComfyUI/models/checkpoints` y cualquier ruta adicional configurada en tu archivo `extra_model_paths.yaml`.

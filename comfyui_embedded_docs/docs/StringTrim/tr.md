@@ -1,3 +1,5 @@
+# Kırp
+
 StringTrim düğümü, bir metin dizesinin başından, sonundan veya her iki tarafından boşluk karakterlerini kaldırır. Dizenin sol tarafından, sağ tarafından veya her iki tarafından kırpma yapmayı seçebilirsiniz. Bu, istenmeyen boşlukları, sekmeleri veya yeni satır karakterlerini kaldırarak metin girdilerini temizlemek için kullanışlıdır.
 
 ## Girdiler

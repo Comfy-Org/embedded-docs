@@ -1,3 +1,5 @@
+# CLIPTextEncodeKandinsky5
+
 CLIPTextEncodeKandinsky5 düğümü, metin istemlerini Kandinsky 5 modeliyle kullanılmak üzere hazırlar. Sağlanan bir CLIP modeli kullanarak iki ayrı metin girişini tokenleştirir ve bunları tek bir koşullama çıktısında birleştirir. Bu çıktı, görüntü oluşturma sürecini yönlendirmek için kullanılır.
 
 ## Girişler

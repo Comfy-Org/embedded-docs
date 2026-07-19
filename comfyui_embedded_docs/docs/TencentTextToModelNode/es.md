@@ -1,3 +1,5 @@
+# Hunyuan3D: Texto a Modelo (Pro)
+
 Este nodo utiliza la API de Hunyuan3D Pro de Tencent para generar un modelo 3D a partir de una descripción textual. Envía una solicitud para crear una tarea de generación, consulta el resultado y descarga los archivos finales del modelo en formatos GLB y OBJ.
 
 ## Entradas

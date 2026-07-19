@@ -1,4 +1,4 @@
-# Descripción general
+# Imagen Latente Vacía HiDream-O1
 
 Este nodo crea una imagen latente vacía en el espacio de píxeles, diseñada específicamente para el modelo HiDream-O1-Image. Genera un tensor en blanco de ceros que sirve como punto de partida para la generación de imágenes, con dimensiones definidas por las entradas de ancho, alto y tamaño de lote.
 

@@ -1,3 +1,5 @@
+# CFGNorm
+
 Le nœud CFGNorm applique une technique de normalisation au processus de guidage sans classifieur (CFG) dans les modèles de diffusion. Il ajuste l'échelle de la prédiction débruitée en comparant les normes des sorties conditionnelles et inconditionnelles, puis applique un multiplicateur d'intensité pour contrôler l'effet. Cela permet de stabiliser le processus de génération en empêchant les valeurs extrêmes dans la mise à l'échelle du guidage.
 
 ## Entrées

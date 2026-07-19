@@ -1,3 +1,5 @@
+# InverserMasque
+
 Le nœud InvertMask est conçu pour inverser les valeurs d’un masque donné, en échangeant les zones masquées et non masquées. Cette opération est fondamentale dans les tâches de traitement d’image où il est nécessaire de basculer l’intérêt entre le premier plan et l’arrière-plan.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Upscale Image By
+
 The ImageScaleBy node is designed for upscaling images by a specified scale factor using various interpolation methods. It allows for the adjustment of the image size in a flexible manner, catering to different upscaling needs.
 
 ## Inputs

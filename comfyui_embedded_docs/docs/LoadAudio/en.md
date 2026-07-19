@@ -1,3 +1,5 @@
+# Load Audio
+
 The LoadAudio node loads audio files from the input directory and converts them into a format that can be processed by other audio nodes in ComfyUI. It reads audio files and extracts both the waveform data and sample rate, making them available for downstream audio processing tasks.
 
 ## Inputs

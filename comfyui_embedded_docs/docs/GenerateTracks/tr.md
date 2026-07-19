@@ -1,3 +1,5 @@
+# GenerateTracks
+
 `GenerateTracks` düğümü, video oluşturma için birden fazla paralel hareket yolu oluşturur. Bir başlangıç noktasından bitiş noktasına bir ana yol tanımlar, ardından bu yola paralel, eşit aralıklarla yerleştirilmiş bir dizi iz (track) üretir. Yolun şeklini (düz çizgi veya Bezier eğrisi), boyunca hareket hızını ve izlerin hangi karelerde görüneceğini kontrol edebilirsiniz.
 
 ## Girişler

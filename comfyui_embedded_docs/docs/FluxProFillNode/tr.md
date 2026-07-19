@@ -1,3 +1,5 @@
+# Flux.1 Görüntüyü Doldur
+
 Görüntüyü maske ve istem doğrultusunda yeniden boyar. Bu düğüm, Flux.1 modelini kullanarak görüntünün maskelenmiş alanlarını sağlanan metin açıklamasına göre doldurur ve çevreleyen görüntüyle uyumlu yeni içerik oluşturur.
 
 ## Girdiler

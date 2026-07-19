@@ -1,3 +1,5 @@
+# Guia DualCFG
+
 O nó DualCFGGuider cria um sistema de orientação para amostragem dupla com orientação livre de classificador. Ele combina duas entradas de condicionamento positivo com uma entrada de condicionamento negativo, aplicando diferentes escalas de orientação a cada par de condicionamento para controlar a influência de cada prompt na saída gerada.
 
 ## Entradas

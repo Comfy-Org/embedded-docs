@@ -1,3 +1,5 @@
+# Hunyuan3Dv2ÇokluGörünümKoşullandırma
+
 Hunyuan3Dv2ConditioningMultiView düğümü, 3D video oluşturma için çoklu görünüm CLIP görsel yerleştirmelerini işler. İsteğe bağlı olarak ön, sol, arka ve sağ görünüm yerleştirmelerini alır ve bunları konumsal kodlama ile birleştirerek video modelleri için koşullandırma verileri oluşturur. Düğüm, birleştirilmiş yerleştirmelerden pozitif koşullandırma ve sıfır değerlerle negatif koşullandırma çıktısı verir.
 
 ## Girişler

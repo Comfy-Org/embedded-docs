@@ -1,3 +1,5 @@
+# Luma Concepts
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaConceptsNode/en.md)
 
 Contient un ou plusieurs concepts de caméra destinés aux nœuds Luma Texte vers Vidéo et Luma Image vers Vidéo. Ce nœud vous permet de sélectionner jusqu'à quatre concepts de caméra et, éventuellement, de les combiner avec des chaînes de concepts existantes.

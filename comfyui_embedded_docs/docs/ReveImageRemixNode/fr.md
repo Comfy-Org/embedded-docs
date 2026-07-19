@@ -1,3 +1,5 @@
+# Reve Remix d’Image
+
 Le nœud Reve Image Remix utilise l'API Reve pour générer une nouvelle image. Il combine une ou plusieurs images de référence avec un prompt textuel afin de créer une nouvelle image remixée basée sur la description fournie.
 
 ## Entrées

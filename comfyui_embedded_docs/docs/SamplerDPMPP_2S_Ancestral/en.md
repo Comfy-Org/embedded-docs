@@ -1,3 +1,5 @@
+# SamplerDPMPP_2S_Ancestral
+
 The SamplerDPMPP_2S_Ancestral node creates a sampler that uses the DPM++ 2S Ancestral sampling method for generating images. This sampler combines deterministic and stochastic elements to produce varied results while maintaining some consistency. It allows you to control the randomness and noise levels during the sampling process.
 
 ## Inputs

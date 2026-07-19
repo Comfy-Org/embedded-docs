@@ -1,3 +1,5 @@
+# Perp-Neg (PerpNegGuider tarafından ESKİ)
+
 PerpNeg düğümü, bir modelin örnekleme sürecine dik negatif yönlendirme uygular. Bu düğüm, negatif koşullandırma ve ölçekleme faktörlerini kullanarak gürültü tahminlerini ayarlamak için modelin yapılandırma fonksiyonunu değiştirir. Kullanımdan kaldırılmış olup, gelişmiş işlevsellik için PerpNegGuider düğümü ile değiştirilmiştir.
 
 ## Girişler

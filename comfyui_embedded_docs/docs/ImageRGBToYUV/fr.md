@@ -1,3 +1,5 @@
+# ImageRGBToYUV
+
 Le nœud ImageRGBToYUV convertit des images couleur RVB vers l'espace colorimétrique YUV. Il prend une image RVB en entrée et la sépare en trois canaux distincts : Y (luminance), U (projection bleue) et V (projection rouge). Chaque canal de sortie est renvoyé sous forme d'image en niveaux de gris représentant le composant YUV correspondant.
 
 ## Entrées

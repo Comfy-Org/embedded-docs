@@ -1,3 +1,5 @@
+# Görüntü Bulanıklaştırma
+
 `ImageBlur` düğümü, bir görüntüye Gauss bulanıklığı uygulayarak kenarların yumuşatılmasını, detay ve gürültünün azaltılmasını sağlar. Parametreler aracılığıyla bulanıklığın yoğunluğu ve yayılımı üzerinde kontrol imkanı sunar.
 
 ## Girişler

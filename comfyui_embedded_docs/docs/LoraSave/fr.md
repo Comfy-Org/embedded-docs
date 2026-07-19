@@ -1,3 +1,5 @@
+# Extraire et Sauvegarder Lora
+
 Le nœud LoraSave extrait et enregistre des fichiers LoRA (Adaptation de Bas Rang) à partir de différences de modèles. Il peut traiter les différences de modèles de diffusion, les différences d'encodeur de texte, ou les deux, en les convertissant au format LoRA avec un rang et un type spécifiés. Le fichier LoRA résultant est sauvegardé dans le répertoire de sortie pour une utilisation ultérieure.
 
 ## Entrées

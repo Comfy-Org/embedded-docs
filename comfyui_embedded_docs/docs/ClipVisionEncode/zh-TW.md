@@ -1,3 +1,5 @@
+# CLIP Vision 編碼
+
 `CLIP Vision Encode` 節點是 ComfyUI 中的一個影像編碼節點，用於透過 CLIP Vision 模型將輸入影像轉換為視覺特徵向量。此節點是連接影像與文字理解的重要橋樑，廣泛應用於各種 AI 影像生成與處理工作流程中。
 
 **節點功能**

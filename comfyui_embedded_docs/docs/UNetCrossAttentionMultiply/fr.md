@@ -1,3 +1,5 @@
+# UNetMultiplicationAttentionCroisée
+
 Le nœud UNetCrossAttentionMultiply applique des facteurs de multiplication au mécanisme d'attention croisée dans un modèle UNet. Il permet de mettre à l'échelle les composants de requête, clé, valeur et sortie des couches d'attention croisée afin d'expérimenter différents comportements et effets d'attention.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# SetModelHooksOnCond
+
 Bu düğüm, koşullandırma verilerine özel kancalar ekleyerek model yürütme sırasında koşullandırma sürecine müdahale etmenize ve bu süreci değiştirmenize olanak tanır. Bir dizi kanca alır ve bunları sağlanan koşullandırma verilerine uygulayarak metinden görüntüye oluşturma iş akışının ileri düzeyde özelleştirilmesini sağlar. Eklenen kancalarla birlikte değiştirilmiş koşullandırma, daha sonraki işlem adımlarında kullanılmak üzere döndürülür.
 
 ## Girişler

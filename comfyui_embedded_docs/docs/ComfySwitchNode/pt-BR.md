@@ -1,3 +1,5 @@
+# Alternar
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySwitchNode/en.md)
 
 O nó Switch seleciona entre duas entradas possíveis com base em uma condição booleana. Ele produz a entrada `on_true` quando o `switch` está ativado, e a entrada `on_false` quando o `switch` está desativado. Isso permite criar lógica condicional e escolher diferentes caminhos de dados no seu fluxo de trabalho.

@@ -1,3 +1,5 @@
+# ImageCompositeMasked
+
 Voici la traduction en français de la documentation du nœud `ImageCompositeMasked` :
 
 Le nœud `ImageCompositeMasked` est conçu pour le compositing d'images, permettant la superposition d'une image source sur une image de destination à des coordonnées spécifiées, avec un redimensionnement et un masquage optionnels.

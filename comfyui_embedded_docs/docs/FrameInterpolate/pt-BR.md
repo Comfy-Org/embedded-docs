@@ -1,3 +1,5 @@
+# Interpolação de Quadros
+
 ## Visão Geral
 
 O nó de Interpolação de Quadros cria novos quadros entre os existentes em uma sequência de imagens, aumentando efetivamente a taxa de quadros. Ele utiliza um modelo de IA para prever como devem ser os quadros intermediários, podendo ser usado para criar efeitos de câmera lenta suaves ou aumentar a suavidade de um vídeo.

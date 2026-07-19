@@ -1,3 +1,5 @@
+# Enregistrer l'ensemble d'entraînement
+
 Ce nœud enregistre un ensemble de données d'entraînement préparé sur le disque dur de votre ordinateur. Il prend des données encodées, comprenant des latentes d'image et leur conditionnement textuel correspondant, et les organise en plusieurs fichiers plus petits appelés *shards* pour une gestion plus facile. Le nœud crée automatiquement un dossier dans votre répertoire de sortie et enregistre à la fois les fichiers de données et un fichier de métadonnées décrivant l'ensemble de données.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Hunyuan Video 15 Latent Upscale With Model
+
 O nó **Hunyuan Video 15 Latent Upscale With Model** aumenta a resolução de uma representação latente de imagem. Ele primeiro redimensiona as amostras latentes para um tamanho especificado usando um método de interpolação escolhido e, em seguida, refina o resultado redimensionado usando um modelo de redimensionamento especializado Hunyuan Video 1.5 para melhorar a qualidade.
 
 ## Entradas

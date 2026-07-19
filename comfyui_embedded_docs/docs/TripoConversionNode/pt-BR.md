@@ -1,3 +1,5 @@
+# Tripo: Converter modelo
+
 O TripoConversionNode converte modelos 3D entre diferentes formatos de arquivo usando a API Tripo. Ele recebe um ID de tarefa de uma operação Tripo anterior (geração de modelo, rigging ou retargeting) e converte o modelo resultante para o formato desejado com várias opções de exportação.
 
 ## Entradas

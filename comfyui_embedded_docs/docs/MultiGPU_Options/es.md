@@ -1,4 +1,4 @@
-# Descripción General
+# MultiGPU_Options
 
 Este nodo permite especificar el rendimiento relativo de cada GPU al utilizar múltiples tarjetas gráficas con diferentes velocidades. Crea un grupo de opciones de GPU que puede utilizarse para distribuir el trabajo entre dispositivos, aunque la distribución de carga basada en velocidad aún no está implementada en la versión actual.
 

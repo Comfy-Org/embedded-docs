@@ -1,3 +1,5 @@
+# Rodin 3D Générer - Génération Esquisse
+
 Ce nœud génère des actifs 3D à l'aide de l'API Rodin. Il prend des images en entrée et les convertit en modèles 3D via un service externe. Le nœud gère l'ensemble du processus, de la création de la tâche au téléchargement des fichiers de modèles 3D finaux.
 
 ## Entrées

@@ -1,4 +1,4 @@
-# TripoSplat 条件控制
+# TripoSplat 条件编码
 
 此节点使用 DINOv3 和 Flux2 VAE 对输入图像进行编码，为 TripoSplat 模型生成正向和负向条件控制数据。同时生成一个固定尺寸的噪声目标（潜空间数据加相机数据），作为 KSampler 的起始点。
 

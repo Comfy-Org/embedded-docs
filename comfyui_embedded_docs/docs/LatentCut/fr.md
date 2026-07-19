@@ -1,3 +1,5 @@
+# CoupeLatente
+
 Voici la traduction en français de la documentation du nœud LatentCut :
 
 Le nœud LatentCut extrait une section spécifique d'échantillons latents le long d'une dimension choisie. Il permet de découper une partie de la représentation latente en spécifiant la dimension (x, y ou t), la position de départ et la quantité à extraire. Le nœud gère à la fois l'indexation positive et négative et ajuste automatiquement la quantité d'extraction pour rester dans les limites disponibles.

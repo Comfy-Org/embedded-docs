@@ -1,3 +1,5 @@
+# Charger le modèle LoRA
+
 Le nœud LoraModelLoader applique les pondérations d'un LoRA (Adaptation de Bas Rang) entraîné à un modèle de diffusion. Il modifie le modèle de base en chargeant les pondérations LoRA depuis un modèle LoRA entraîné et en ajustant leur intensité d'influence. Cela permet de personnaliser le comportement des modèles de diffusion sans avoir à les réentraîner entièrement.
 
 ## Entrées

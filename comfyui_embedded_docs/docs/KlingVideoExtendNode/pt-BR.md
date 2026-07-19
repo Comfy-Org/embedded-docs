@@ -1,3 +1,5 @@
+# Kling Extender Vídeo
+
 O nó de Extensão de Vídeo Kling permite estender vídeos criados por outros nós Kling. Ele recebe um vídeo existente identificado pelo seu ID e gera conteúdo adicional com base nos seus prompts de texto. O nó funciona enviando sua solicitação de extensão para a API Kling e retornando o vídeo estendido junto com seu novo ID e duração.
 
 ## Entradas

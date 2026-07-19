@@ -1,3 +1,5 @@
+# ExtendIntermediateSigmas
+
 ## 概述
 
 ExtendIntermediateSigmas 節點會取得現有的 sigma 值序列，並在其中插入額外的中間 sigma 值。您可以指定要添加的額外步驟數量、插值的間距方法，以及可選的起始與結束 sigma 邊界，以控制擴展在 sigma 序列中發生的位置。

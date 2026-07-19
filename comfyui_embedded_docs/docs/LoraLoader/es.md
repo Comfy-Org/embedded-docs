@@ -1,3 +1,5 @@
+# Cargar LoRA
+
 Este nodo detecta automáticamente los modelos ubicados en la carpeta LoRA (incluyendo subcarpetas), siendo la ruta de modelo correspondiente `ComfyUI\models\loras`. Para más información, consulta Instalación de modelos LoRA.
 
 El nodo Cargador de LoRA se utiliza principalmente para cargar modelos LoRA. Puedes pensar en los modelos LoRA como filtros que pueden dar a tus imágenes estilos, contenido y detalles específicos:

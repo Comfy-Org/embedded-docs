@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 El nodo `TextEncodeAceStepAudio1.5` prepara metadatos de texto y audio para su uso con el modelo AceStepAudio 1.5. Toma etiquetas descriptivas, letras y parámetros musicales, y luego utiliza un modelo CLIP para convertirlos en un formato de condicionamiento adecuado para la generación de audio.
 
 ## Entradas

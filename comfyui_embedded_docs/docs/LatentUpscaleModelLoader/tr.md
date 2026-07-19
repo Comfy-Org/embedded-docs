@@ -1,3 +1,5 @@
+# Latent Büyütme Modelini Yükle
+
 LatentUpscaleModelLoader düğümü, gizli (latent) temsilleri yükseltmek için tasarlanmış özel bir model yükler. Sistemin belirlenmiş klasöründen bir model dosyası okur ve türünü (720p, 1080p veya diğer) otomatik olarak algılayarak doğru dahili model mimarisini başlatır ve yapılandırır. Yüklenen model daha sonra diğer düğümler tarafından gizli alan süper çözünürlük görevleri için kullanılmaya hazır hale gelir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Luma Texto para Imagem
+
 Gera imagens de forma síncrona com base em um prompt de texto e proporção de aspecto. Este nó cria imagens usando descrições textuais e permite controlar as dimensões e o estilo da imagem por meio de várias entradas de referência, incluindo imagens de personagem e estilo.
 
 ## Entradas

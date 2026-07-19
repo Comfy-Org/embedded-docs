@@ -1,4 +1,4 @@
-# TripoConversionNode
+# Tripo：轉換模型
 
 TripoConversionNode 使用 Tripo API 在不同檔案格式之間轉換 3D 模型。它接收來自先前 Tripo 操作（模型生成、骨架綁定或重定向）的任務 ID，並將生成的模型轉換為您所需的格式，提供多種匯出選項。
 

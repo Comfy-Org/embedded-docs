@@ -1,3 +1,5 @@
+# WEBM Kaydet
+
 SaveWEBM düğümü, bir dizi görüntüyü WEBM video dosyası olarak kaydeder. Birden fazla giriş görüntüsünü alır ve bunları VP9 veya AV1 codec bileşeni ile yapılandırılabilir kalite ayarları ve kare hızı kullanarak bir videoya kodlar. Ortaya çıkan video dosyası, bilgi istemi bilgilerini içeren meta verilerle birlikte çıktı dizinine kaydedilir.
 
 ## Girişler

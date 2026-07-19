@@ -1,4 +1,4 @@
-# ComfyOrNode
+# Ou
 
 Le nœud ComfyOrNode effectue une opération logique OU sur un ensemble de valeurs d'entrée. Il renvoie `true` si l'une des valeurs fournies est considérée comme vraie selon les règles standard de vérité de Python.
 

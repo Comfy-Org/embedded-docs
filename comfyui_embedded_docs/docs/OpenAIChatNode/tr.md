@@ -1,3 +1,5 @@
+# OpenAI ChatGPT
+
 Bu düğüm, bir OpenAI modelinden metin yanıtları oluşturur. Metin isteminizi (ve isteğe bağlı olarak görselleri veya dosyaları) bir OpenAI modeline gönderir ve oluşturulan metin yanıtını döndürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# VAEDecodeAudio
+
 El nodo VAEDecodeAudio convierte representaciones latentes nuevamente en formas de onda de audio utilizando un Autoencoder Variacional. Toma muestras de audio codificadas y las procesa a través del VAE para reconstruir el audio original, aplicando normalización para garantizar niveles de salida consistentes. El audio resultante se devuelve con una frecuencia de muestreo estándar de 44100 Hz.
 
 ## Entradas

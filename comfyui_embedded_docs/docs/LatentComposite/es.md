@@ -1,3 +1,5 @@
+# Compuesto Latente
+
 El nodo LatentComposite está diseñado para fusionar o combinar dos representaciones latentes en una única salida. Este proceso es esencial para crear imágenes o características compuestas al combinar las propiedades de las entradas latentes de forma controlada.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Rodin 3D Oluştur - Detay Oluştur
+
 Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Detail/en.md)
 
 Rodin 3D Detay düğümü, Rodin API'sini kullanarak detaylı 3D varlıklar üretir. Girdi görüntülerini alır ve bunları Rodin hizmeti aracılığıyla işleyerek detaylı geometri ve malzemelere sahip yüksek kaliteli 3D modeller oluşturur. Düğüm, görev oluşturmadan nihai 3D model dosyasını indirmeye kadar tüm iş akışını yönetir.

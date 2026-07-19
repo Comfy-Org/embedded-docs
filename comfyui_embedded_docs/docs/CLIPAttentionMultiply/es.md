@@ -1,3 +1,5 @@
+# MultiplicarAtenciónCLIP
+
 El nodo `CLIPAttentionMultiply` permite ajustar el mecanismo de atención en modelos CLIP aplicando factores de multiplicación a diferentes componentes de las capas de autoatención. Funciona modificando los pesos y sesgos de las proyecciones de consulta, clave, valor y salida en el mecanismo de atención del modelo CLIP. Este nodo experimental crea una copia modificada del modelo CLIP de entrada con los factores de escala especificados aplicados.
 
 ## Entradas

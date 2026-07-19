@@ -1,3 +1,5 @@
+# ÉchelleROPE
+
 Le nœud ScaleROPE vous permet de modifier l'encodage positionnel rotatif (ROPE) d'un modèle en appliquant des facteurs d'échelle et de décalage distincts à ses composantes X, Y et T (temporelle). Il s'agit d'un nœud expérimental avancé utilisé pour ajuster le comportement d'encodage positionnel du modèle.
 
 ## Entrées

@@ -1,4 +1,4 @@
-# Nó SAM3 Detect
+# SAM3 Detect
 
 ## Visão Geral
 

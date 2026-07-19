@@ -1,3 +1,5 @@
+# ScaleROPE
+
 The ScaleROPE node allows you to modify the Rotary Position Embedding (ROPE) of a model by applying separate scaling and shifting factors to its X, Y, and T (time) components. This is an advanced, experimental node used to adjust the model's positional encoding behavior.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ProgramadorAlineaTusPasos
+
 El nodo AlignYourStepsScheduler genera valores sigma para el proceso de eliminación de ruido basándose en diferentes tipos de modelo. Calcula los niveles de ruido apropiados para cada paso del proceso de muestreo y ajusta el número total de pasos según el parámetro de eliminación de ruido. Esto ayuda a alinear los pasos de muestreo con los requisitos específicos de diferentes modelos de difusión.
 
 ## Entradas

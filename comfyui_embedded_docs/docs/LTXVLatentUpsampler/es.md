@@ -1,3 +1,5 @@
+# LTXVLatentUpsampler
+
 El nodo LTXVLatentUpsampler aumenta la resolución espacial de una representación latente de video por un factor de dos. Utiliza un modelo de ampliación especializado para procesar los datos latentes, los cuales primero se desnormalizan y luego se renormalizan utilizando las estadísticas de canal del VAE proporcionado. Este nodo está diseñado para flujos de trabajo de video dentro del espacio latente.
 
 ## Entradas

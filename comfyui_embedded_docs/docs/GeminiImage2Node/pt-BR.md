@@ -1,3 +1,5 @@
+# Nano Banana Pro (Google Gemini Image)
+
 O nó GeminiImage2Node gera ou edita imagens usando o modelo Gemini do Google Vertex AI. Ele envia um prompt de texto e imagens ou arquivos de referência opcionais para a API e retorna a imagem gerada e/ou uma descrição textual.
 
 ## Entradas

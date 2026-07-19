@@ -1,3 +1,5 @@
+# İkili CLIP Yükleyici
+
 DualCLIPLoader düğümü, iki CLIP modelini aynı anda yüklemek için tasarlanmış olup, her iki modelin özelliklerinin entegrasyonunu veya karşılaştırılmasını gerektiren işlemleri kolaylaştırır.
 
 Bu düğüm, `ComfyUI/models/text_encoders` klasöründe bulunan modelleri algılayacaktır.

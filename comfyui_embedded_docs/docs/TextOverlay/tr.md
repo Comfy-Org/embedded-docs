@@ -1,24 +1,24 @@
 # Metin Yer Paylaşımı Çiz
 
-Bu düğüm, bir görüntü veya görüntü grubu üzerine metin çizer. Özel metin, yazı tipi boyutu, renk, konum, hizalama ve isteğe bağlı bir anahat desteği sunarak metni orijinal görüntünün üzerine yerleştirir.
+Bu düğüm, bir görüntü veya görüntü grubu üzerine metin çizer. Özelleştirilebilir yazı tipi boyutu, renk, konum, hizalama ve isteğe bağlı bir anahat ile bir metin katmanı oluşturur ve ardından metni orijinal görüntülerin üzerine yerleştirir.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `görüntüler` | Metin çizilecek giriş görüntüsü veya görüntü grubu. | IMAGE | Evet | |
-| `metin` | Üzerine yerleştirilecek metin dizesi. Yeni satır (`\n`) ve sekme (`\t`) karakterlerini destekler. Varsayılan: "" | STRING | Evet | |
-| `yazı tipi boyutu` | Görüntü yüksekliğinin yüzdesi olarak yazı tipi boyutu. Varsayılan: 5.0 | FLOAT | Evet | 0.5 ila 50.0 |
-| `renk` | Metnin rengi. Varsayılan: "#ffffff" (beyaz) | STRING | Evet | |
-| `konum` | Metnin görüntü üzerindeki dikey konumu. Varsayılan: "top" | COMBO | Evet | "top"<br>"bottom" |
-| `hizalama` | Metnin yatay hizalaması. Varsayılan: "left" | COMBO | Evet | "left"<br>"center"<br>"right" |
-| `dış çizgi` | Metnin etrafına siyah bir anahat çizer. Varsayılan: True | BOOLEAN | Evet | |
+| `görüntüler` | Metin çizilecek giriş görüntüsü veya görüntü grubu | IMAGE | Evet | |
+| `metin` | Görüntü üzerine yerleştirilecek metin (varsayılan: "") | STRING | Evet | |
+| `yazı tipi boyutu` | Görüntü yüksekliğinin yüzdesi olarak yazı tipi boyutu (varsayılan: 5.0) | FLOAT | Evet | 0.5 ila 50.0 |
+| `renk` | Metnin rengi (varsayılan: "#ffffff") | STRING | Evet | |
+| `konum` | Metnin görüntü üzerindeki dikey konumu (varsayılan: "top") | COMBO | Evet | `"top"`<br>`"bottom"` |
+| `hizalama` | Metnin yatay hizalaması (varsayılan: "left") | COMBO | Evet | `"left"`<br>`"center"`<br>`"right"` |
+| `dış çizgi` | Metnin etrafına siyah bir anahat çizer (varsayılan: True) | BOOLEAN | Evet | |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `görüntüler` | Üzerine metin yerleştirilmiş görüntü veya görüntü grubu. | IMAGE |
+| `görüntüler` | Üzerine metin katmanı yerleştirilmiş giriş görüntüleri | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextOverlay/tr.md)
 

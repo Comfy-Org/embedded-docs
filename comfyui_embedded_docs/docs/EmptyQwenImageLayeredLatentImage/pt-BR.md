@@ -1,3 +1,5 @@
+# Imagem Latente em Camadas Qwen Vazia
+
 O nó Empty Qwen Image Layered Latent cria uma representação latente em branco e multicamadas para uso com modelos de imagem Qwen. Ele gera um tensor preenchido com zeros, estruturado com um número específico de camadas, tamanho de lote e dimensões espaciais. Essa latente vazia serve como ponto de partida para fluxos de trabalho subsequentes de geração ou manipulação de imagens.
 
 ## Entradas

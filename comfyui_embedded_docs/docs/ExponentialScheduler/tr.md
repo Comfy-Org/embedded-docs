@@ -1,3 +1,5 @@
+# Üstel Zamanlayıcı
+
 `ExponentialScheduler` düğümü, difüzyon örnekleme süreçleri için üstel bir program izleyen bir sigma değerleri dizisi oluşturmak üzere tasarlanmıştır. Difüzyon sürecinin her adımında uygulanan gürültü seviyelerini kontrol etmek için özelleştirilebilir bir yaklaşım sunarak örnekleme davranışının ince ayarını yapmaya olanak tanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# 條件設定（影片區域百分比）
+
 ## 概述
 
 ConditioningSetAreaPercentageVideo 節點透過定義影片生成的特定區域與時間範圍來修改 conditioning 資料。您可以使用相對於整體尺寸的百分比值，設定 conditioning 將套用的區域位置、大小與持續時間。這對於將生成重點聚焦在影片序列的特定部分非常有用。

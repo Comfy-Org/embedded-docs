@@ -1,3 +1,5 @@
+# Mejorar imagen con Topaz
+
 El nodo Topaz Image Enhance proporciona mejora y escalado de imágenes de nivel profesional. Procesa una sola imagen de entrada utilizando un modelo de IA basado en la nube para mejorar la calidad, el detalle y la resolución. El nodo ofrece un control preciso sobre el proceso de mejora, incluyendo opciones para guía creativa, enfoque en el sujeto y preservación facial.
 
 ## Entradas

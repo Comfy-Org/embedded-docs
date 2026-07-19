@@ -1,3 +1,5 @@
+# LTXV Reference Audio (ID-LoRA)
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LTXVReferenceAudio/pt-BR.md)
 
 O nó LTXV Reference Audio é utilizado para transferência de identidade do locutor na geração de áudio. Ele codifica um clipe de áudio de referência no condicionamento de um modelo, permitindo que o áudio gerado adote as características vocais do locutor. Também pode aplicar orientação de identidade, que executa uma etapa extra de processamento para amplificar o efeito da identidade do locutor.

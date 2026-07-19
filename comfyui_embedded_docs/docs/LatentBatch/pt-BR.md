@@ -1,3 +1,5 @@
+# LatentBatch
+
 O nó **LatentBatch** é projetado para mesclar dois conjuntos de amostras latentes em um único lote, redimensionando potencialmente um conjunto para corresponder às dimensões do outro antes da concatenação. Essa operação facilita a combinação de diferentes representações latentes para tarefas de processamento ou geração posteriores.
 
 ## Entradas

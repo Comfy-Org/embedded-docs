@@ -1,3 +1,5 @@
+# Görüntüyü Döşeme Listesine Böl
+
 Görüntüyü Döşeme Listesine Böl düğümü, tek bir giriş görüntüsünü döşeme adı verilen bir dizi daha küçük, üst üste binen dikdörtgen bölüme ayırır. Bu döşemelerin toplu bir listesini oluşturur ve bu liste diğer düğümler tarafından ayrı ayrı işlenebilir. Her bir döşemenin boyutu ve aralarındaki örtüşme miktarı belirtilebilir.
 
 ## Girişler

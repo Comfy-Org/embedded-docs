@@ -1,3 +1,5 @@
+# Beeble SwitchX 画像編集
+
 このドキュメントはAI生成です。誤りや改善のご提案がございましたら、お気軽にご貢献ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/BeebleSwitchXImageEdit/en.md)
 
 ## 概要

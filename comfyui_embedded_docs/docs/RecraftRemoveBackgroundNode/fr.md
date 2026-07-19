@@ -1,3 +1,5 @@
+# Recraft Remove Background
+
 Ce nœud supprime l'arrière-plan des images à l'aide du service API Recraft. Il traite chaque image du lot d'entrée et renvoie à la fois les images traitées avec des arrière-plans transparents et les masques alpha correspondants qui indiquent les zones d'arrière-plan supprimées.
 
 ## Entrées

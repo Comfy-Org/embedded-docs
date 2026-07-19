@@ -1,3 +1,5 @@
+# Porter-Duff 影像合成
+
 PorterDuffImageComposite 節點旨在使用 Porter-Duff 合成運算子執行影像合成。它允許根據各種混合模式組合來源影像與目標影像，透過操控影像透明度並以創意方式疊加影像，來建立複雜的視覺效果。
 
 ## 輸入

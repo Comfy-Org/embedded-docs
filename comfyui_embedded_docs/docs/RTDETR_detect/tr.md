@@ -1,3 +1,5 @@
+# RT-DETR Tespit
+
 RT-DETR Algılama düğümü, RT-DETR modeli kullanarak giriş görüntülerinde nesne algılama gerçekleştirir. Nesneleri tanımlar, etraflarına sınırlayıcı kutular çizer ve COCO veri kümesi sınıflarına göre etiketler. Sonuçları güven puanına, nesne sınıfına göre filtreleyebilir ve toplam algılama sayısını sınırlayabilirsiniz.
 
 ## Girişler

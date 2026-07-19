@@ -1,4 +1,4 @@
-# Sauvegarder l'audio (Avancé)
+# Enregistrer l’Audio (Avancé)
 
 Sauvegarde l'audio d'entrée dans votre répertoire de sortie ComfyUI. Ce nœud vous permet d'exporter l'audio dans différents formats, notamment FLAC, MP3 et Opus, avec des paramètres de qualité configurables.
 

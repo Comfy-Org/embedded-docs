@@ -1,3 +1,5 @@
+# 확산 모델 로드
+
 UNETLoader 노드는 이름으로 U-Net 모델을 로드하도록 설계되어, 시스템 내에서 사전 훈련된 U-Net 아키텍처를 손쉽게 사용할 수 있도록 합니다.
 
 이 노드는 `ComfyUI/models/diffusion_models` 폴더에 위치한 모델을 감지합니다.

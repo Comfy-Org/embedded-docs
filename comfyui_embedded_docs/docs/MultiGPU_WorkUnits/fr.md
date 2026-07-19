@@ -1,3 +1,5 @@
+# Division CFG MultiGPU
+
 ## Vue d'ensemble
 
 Le nœud MultiGPU CFG Split permet de répartir le travail de diffusion sur plusieurs GPU installés dans le même ordinateur. Le gain de vitesse dépend du workflow, mais des accélérations allant jusqu'à 1.95x ont été mesurées sur des workflows courants.

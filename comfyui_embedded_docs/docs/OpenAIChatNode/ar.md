@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة ComfyUI: OpenAI Chat Node
+# OpenAI ChatGPT
 
 ## نظرة عامة
 

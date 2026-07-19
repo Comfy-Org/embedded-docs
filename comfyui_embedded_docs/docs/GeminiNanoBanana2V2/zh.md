@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 ## 概述
 
 此节点通过向 Google 的 Vertex AI API 发送文本提示来生成或编辑图像。它使用特定的 Gemini 模型，根据您的指令创建新图像或修改现有图像。

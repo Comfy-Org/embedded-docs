@@ -1,3 +1,5 @@
+# Plage de pas de temps
+
 Le nœud `ConditioningTimestepsRange` crée trois plages de pas de temps distinctes pour contrôler le moment où les effets de conditionnement sont appliqués pendant le processus de génération. Il prend des valeurs de pourcentage de début et de fin et divise la plage de pas de temps entière (0,0 à 1,0) en trois segments : la plage principale entre les pourcentages spécifiés, la plage avant le pourcentage de début et la plage après le pourcentage de fin.
 
 ## Entrées

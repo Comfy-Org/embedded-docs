@@ -1,3 +1,5 @@
+# SamplerLCM
+
 The SamplerLCM node provides an LCM (Latent Consistency Model) sampler with tunable per-step noise parameters. It allows you to control the noise applied at each sampling step, enabling fine-grained adjustment of the sampling process.
 
 ## Inputs

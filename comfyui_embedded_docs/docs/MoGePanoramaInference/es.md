@@ -1,3 +1,5 @@
+# Inferencia panorámica MoGe
+
 ## Descripción general
 
 Este nodo realiza la estimación de profundidad en imágenes panorámicas equirrectangulares. Funciona dividiendo el panorama en 12 vistas en perspectiva, ejecutando el modelo de estimación de profundidad MoGe en cada vista y luego fusionando los resultados en un único mapa de profundidad completo para el panorama original.

@@ -1,3 +1,5 @@
+# Arka Plan Kaldırma Modelini Yükle
+
 ## Genel Bakış
 
 Dosyadan bir arka plan kaldırma modeli yükler. Bu düğüm, modeli görüntülerden arka plan kaldırma işleminde kullanılmak üzere hazırlar.

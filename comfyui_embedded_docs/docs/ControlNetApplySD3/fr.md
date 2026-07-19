@@ -1,3 +1,5 @@
+# Appliquer Controlnet avec VAE
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 Ce nœud applique le guidage ControlNet au conditionnement de Stable Diffusion 3. Il prend en entrée des conditionnements positifs et négatifs, ainsi qu'un modèle ControlNet et une image, puis applique le guidage de contrôle avec des paramètres de force et de temporisation ajustables pour influencer le processus de génération.

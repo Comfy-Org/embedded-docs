@@ -1,3 +1,5 @@
+# Cortar Latent de Vídeo
+
 O nó TrimVideoLatent remove quadros do início de uma representação latente de vídeo. Ele recebe uma amostra de vídeo latente e remove um número especificado de quadros do início, retornando a parte restante do vídeo. Isso permite encurtar sequências de vídeo removendo os quadros iniciais.
 
 ## Entradas

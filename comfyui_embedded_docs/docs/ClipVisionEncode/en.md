@@ -1,3 +1,5 @@
+# CLIP Vision Encode
+
 The `CLIP Vision Encode` node is an image encoding node in ComfyUI, used to convert input images into visual feature vectors through the CLIP Vision model. This node is an important bridge connecting image and text understanding, and is widely used in various AI image generation and processing workflows.
 
 **Node Functionality**

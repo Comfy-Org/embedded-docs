@@ -1,4 +1,4 @@
-# BeebleSwitchXImageEdit
+# Beeble SwitchX 이미지 편집
 
 ## 개요
 

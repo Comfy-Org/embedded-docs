@@ -1,3 +1,5 @@
+# InstructPixToPixConditioning
+
 El nodo InstructPixToPixConditioning prepara datos de condicionamiento para la edición de imágenes InstructPix2Pix combinando indicaciones de texto positivas y negativas con datos de imagen. Procesa las imágenes de entrada a través de un codificador VAE para crear representaciones latentes y adjunta estos latentes tanto a los datos de condicionamiento positivos como a los negativos. El nodo maneja automáticamente las dimensiones de la imagen recortándolas a múltiplos de 8 píxeles para garantizar la compatibilidad con el proceso de codificación VAE.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Obtener Tamaño de Imagen
+
 El nodo GetImageSize extrae las dimensiones e información de lote de una imagen de entrada. Devuelve el ancho, alto y tamaño de lote de la imagen, mostrando también esta información como texto de progreso en la interfaz del nodo. Los datos de la imagen original pasan sin modificaciones.
 
 ## Entradas

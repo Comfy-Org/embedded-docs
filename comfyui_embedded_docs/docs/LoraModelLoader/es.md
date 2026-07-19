@@ -1,3 +1,5 @@
+# Cargar Modelo LoRA
+
 El nodo LoraModelLoader aplica pesos de LoRA (Adaptación de Bajo Rango) entrenados a un modelo de difusión. Modifica el modelo base cargando pesos de LoRA desde un modelo entrenado y ajustando su intensidad de influencia. Esto permite personalizar el comportamiento de los modelos de difusión sin necesidad de reentrenarlos desde cero.
 
 ## Entradas

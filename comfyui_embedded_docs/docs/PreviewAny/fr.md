@@ -1,3 +1,5 @@
+# Aperçu de n'importe quel
+
 Le nœud PreviewAny affiche un aperçu de tout type de données d’entrée au format texte. Il accepte tout type de données en entrée et les convertit en une représentation textuelle lisible. Le nœud gère automatiquement différents types de données, notamment les chaînes de caractères, les nombres, les booléens et les objets complexes, en tentant de les sérialiser au format JSON.
 
 ## Entrées

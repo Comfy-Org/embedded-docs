@@ -1,3 +1,5 @@
+# Gizli Değişkeni Döndür
+
 LatentRotate düğümü, görüntülerin gizli uzay temsillerini belirtilen açılarla döndürmek için tasarlanmıştır. Döndürme efektleri elde etmek için gizli uzayı manipüle etmenin karmaşıklığını soyutlayarak, kullanıcıların üretken bir modelin gizli uzayında görüntüleri kolayca dönüştürmesine olanak tanır.
 
 ## Girişler

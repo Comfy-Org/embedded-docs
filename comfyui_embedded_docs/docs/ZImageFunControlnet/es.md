@@ -1,3 +1,5 @@
+# ZImageFunControlnet
+
 El nodo ZImageFunControlnet aplica una red de control especializada para influir en el proceso de generación o edición de imágenes. Utiliza un modelo base, un parche de modelo y un VAE, permitiéndote ajustar la intensidad del efecto de control. Este nodo puede funcionar con una imagen base, una imagen para inpainting y una máscara para ediciones más específicas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Tripo: Imagen a Modelo
+
 Genera modelos 3D de forma síncrona a partir de una sola imagen utilizando la API de Tripo. Este nodo toma una imagen de entrada y la convierte en un modelo 3D con varias opciones de personalización para textura, calidad y propiedades del modelo.
 
 ## Entradas

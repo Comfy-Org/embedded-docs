@@ -1,3 +1,5 @@
+# Renkten RGB Tam Sayıya
+
 ColorToRGBInt düğümü, onaltılık (hexadecimal) formatta belirtilen bir rengi tek bir tamsayı değerine dönüştürür. `#FF5733` gibi bir renk dizesi alır ve kırmızı, yeşil ve mavi bileşenlerini birleştirerek karşılık gelen RGB tamsayısını hesaplar.
 
 ## Girişler

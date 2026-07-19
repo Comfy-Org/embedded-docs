@@ -1,3 +1,5 @@
+# Substituir Texto
+
 O nó Replace Text realiza uma substituição simples de texto. Ele procura por um trecho de texto específico dentro da entrada e substitui cada ocorrência por um novo trecho de texto. A operação é aplicada a todas as entradas de texto fornecidas ao nó.
 
 ## Entradas

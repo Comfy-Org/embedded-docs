@@ -1,3 +1,5 @@
+# Agendador Exponencial
+
 O nó `ExponentialScheduler` foi projetado para gerar uma sequência de valores sigma seguindo um agendamento exponencial para processos de amostragem por difusão. Ele oferece uma abordagem personalizável para controlar os níveis de ruído aplicados em cada etapa do processo de difusão, permitindo um ajuste fino do comportamento da amostragem.
 
 ## Entradas

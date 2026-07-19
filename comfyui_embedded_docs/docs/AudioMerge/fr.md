@@ -1,3 +1,5 @@
+# Fusion Audio
+
 Voici la traduction de la documentation du nœud AudioMerge :
 
 Le nœud AudioMerge combine deux pistes audio en superposant leurs formes d'onde. Il adapte automatiquement les fréquences d'échantillonnage des deux entrées audio et ajuste leurs longueurs pour qu'elles soient égales avant la fusion. Le nœud propose plusieurs méthodes mathématiques pour combiner les signaux audio et garantit que la sortie reste à des niveaux de volume acceptables.

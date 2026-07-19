@@ -1,3 +1,5 @@
+# Escala de Ruído do Modelo
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ModelNoiseScale/en.md)
 
 ## Visão Geral

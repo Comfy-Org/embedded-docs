@@ -1,3 +1,5 @@
+# HitPaw General Image Enhance
+
 Este nodo mejora imágenes de baja resolución ampliándolas a superresolución, eliminando artefactos y ruido. Utiliza una API externa para procesar la imagen y puede ajustar automáticamente el tamaño de entrada para mantenerse dentro de los límites de procesamiento. El tamaño máximo de salida permitido es de 4 megapíxeles.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ModelBirleştirmeSD35_Büyük
+
 ModelMergeSD35_Large düğümü, farklı model bileşenlerinin etkisini ayarlayarak iki Stable Diffusion 3.5 Large modelini birbirine karıştırmanıza olanak tanır. Gömmeli katmanlardan ortak bloklara ve son katmanlara kadar, ikinci modelin her bir parçasının nihai birleştirilmiş modele ne kadar katkıda bulunacağı üzerinde hassas kontrol sağlar.
 
 ## Girişler

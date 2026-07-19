@@ -1,3 +1,5 @@
+# Rodin 3D Gen-2.5 - Metinden 3D'ye
+
 ## Genel Bakış
 
 Rodin Gen-2.5 API'sini kullanarak bir metin isteminden 3B model oluşturun. Üretim hızı ve çıktı kalitesini dengelemek için farklı kalite modları (Hızlı, Normal veya Aşırı Yüksek) arasından seçim yapabilirsiniz.

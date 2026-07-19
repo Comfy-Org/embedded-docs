@@ -1,3 +1,5 @@
+# Epsilon Ölçeklendirme
+
 Bu belge, "Elucidating the Exposure Bias in Diffusion Models" (arxiv.org/abs/2308.15321v6) araştırma makalesindeki Epsilon Ölçekleme yöntemini uygular. Örnekleme işlemi sırasında tahmin edilen gürültüyü ölçekleyerek maruz kalma yanlılığını azaltmaya yardımcı olur; bu da oluşturulan görüntülerde kalite iyileşmesi sağlayabilir. Bu uygulama, pratikliği ve etkinliği nedeniyle makale tarafından önerilen "tekdüze program"ı kullanır.
 
 ## Girişler

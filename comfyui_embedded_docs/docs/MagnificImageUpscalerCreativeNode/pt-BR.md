@@ -1,3 +1,5 @@
+# Magnific Image Upscale (Criativo)
+
 Este nó utiliza o serviço de IA Magnific para aumentar a resolução e aprimorar criativamente uma imagem. Ele permite guiar o aprimoramento com um prompt de texto, escolher um estilo específico para otimização e controlar vários aspectos do processo criativo, como detalhe, semelhança com o original e força da estilização. O nó produz uma imagem com resolução aumentada no fator escolhido (2x, 4x, 8x ou 16x), com um tamanho máximo de saída de 25,3 megapixels.
 
 ## Entradas

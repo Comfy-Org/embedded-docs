@@ -1,3 +1,5 @@
+# Recraft Style - Logo Raster
+
 Ce nœud sélectionne le style de logo raster ainsi qu'un sous-style optionnel pour générer des images de logo. Il est spécialisé dans la création de designs de logos avec des traitements visuels basés sur le raster.
 
 ## Entrées

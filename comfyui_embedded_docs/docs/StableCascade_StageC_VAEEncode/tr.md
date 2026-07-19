@@ -1,3 +1,5 @@
+# StabilKaskad_AşamaC_VAEKodlama
+
 StableCascade_StageC_VAEEncode düğümü, Stable Cascade modelleri için gizli temsiller oluşturmak amacıyla görüntüleri bir VAE kodlayıcı aracılığıyla işler. Bir giriş görüntüsü alır ve belirtilen VAE modelini kullanarak sıkıştırır, ardından iki gizli temsil çıktısı verir: biri C aşaması için, diğeri B aşaması için bir yer tutucu. Sıkıştırma parametresi, kodlamadan önce görüntünün ne kadar küçültüleceğini kontrol eder.
 
 ## Girişler

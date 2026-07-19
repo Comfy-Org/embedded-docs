@@ -1,3 +1,5 @@
+# VAE Decode Audio
+
 The VAEDecodeAudio node converts latent representations back into audio waveforms using a Variational Autoencoder. It takes encoded audio samples and processes them through the VAE to reconstruct the original audio, applying normalization to ensure consistent output levels. The resulting audio is returned with a standard sample rate of 44100 Hz, or the sample rate from the input samples if provided.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# EmptyHunyuanImageLatent
+
 Le nœud EmptyHunyuanImageLatent crée un tenseur latent vide avec des dimensions spécifiques pour une utilisation avec les modèles de génération d'images Hunyuan. Il génère un point de départ vierge qui peut être traité via les nœuds suivants dans le workflow. Ce nœud permet de spécifier la largeur, la hauteur et la taille du lot de l'espace latent.
 
 ## Entrées

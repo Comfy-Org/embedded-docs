@@ -1,3 +1,5 @@
+# LoRA Yükle (Bypass, Sadece Model) (Hata Ayıklama İçin)
+
 Bu düğüm, bir modelin davranışını değiştirmek için bir LoRA (Düşük Dereceli Uyarlama) uygular, ancak yalnızca model bileşeninin kendisini etkiler. Belirtilen bir LoRA dosyasını yükler ve modelin ağırlıklarını belirli bir güçle ayarlar; CLIP metin kodlayıcı gibi diğer bileşenleri değiştirmez.
 
 ## Girişler

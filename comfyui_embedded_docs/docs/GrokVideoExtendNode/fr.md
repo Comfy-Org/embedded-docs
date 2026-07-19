@@ -1,3 +1,5 @@
+# Extension vidéo Grok
+
 Le nœud Grok Video Extend utilise un modèle d’IA pour créer une continuation fluide d’une vidéo existante. Vous fournissez une courte vidéo et une description textuelle de ce qui doit se passer ensuite, et le nœud génère un nouveau clip vidéo qui fait suite à l’original.
 
 ## Entrées

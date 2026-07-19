@@ -1,3 +1,5 @@
+# CFGNorm
+
 El nodo CFGNorm aplica una técnica de normalización al proceso de guía sin clasificador (CFG) en modelos de difusión. Ajusta la escala de la predicción con eliminación de ruido comparando las normas de las salidas condicionales e incondicionales, y luego aplica un multiplicador de intensidad para controlar el efecto. Esto ayuda a estabilizar el proceso de generación al prevenir valores extremos en el escalado de la guía.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# LTXVConcatAVLatent
+
 LTXVConcatAVLatent 節點將影片潛在表示與音訊潛在表示合併為單一、串接的潛在輸出。它會合併兩個輸入中的 `samples` 張量，如果存在的話，也會合併它們的 `noise_mask` 張量，為後續在影片生成流程中的處理做好準備。
 
 ## 輸入

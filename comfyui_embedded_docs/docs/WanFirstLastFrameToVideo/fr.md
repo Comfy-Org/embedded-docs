@@ -1,3 +1,5 @@
+# WanFirstLastFrameToVideo
+
 Le nœud WanFirstLastFrameToVideo crée un conditionnement vidéo en combinant des images de début et de fin avec des invites textuelles. Il génère une représentation latente pour la génération vidéo en encodant la première et la dernière image, en appliquant des masques pour guider le processus de génération, et en incorporant les caractéristiques visuelles CLIP lorsqu'elles sont disponibles. Ce nœud prépare à la fois un conditionnement positif et négatif pour les modèles vidéo afin de générer des séquences cohérentes entre les points de début et de fin spécifiés.
 
 ## Entrées

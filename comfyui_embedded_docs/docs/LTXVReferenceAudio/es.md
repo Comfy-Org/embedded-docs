@@ -1,3 +1,5 @@
+# LTXV Reference Audio (ID-LoRA)
+
 El nodo **LTXV Reference Audio** se utiliza para la transferencia de identidad del hablante en la generación de audio. Codifica un clip de audio de referencia en el condicionamiento de un modelo, permitiendo que el audio generado adopte las características vocales del hablante. También puede aplicar guía de identidad, que ejecuta un paso de procesamiento adicional para amplificar el efecto de la identidad del hablante.
 
 ## Entradas

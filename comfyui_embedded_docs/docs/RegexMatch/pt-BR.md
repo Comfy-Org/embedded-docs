@@ -1,3 +1,5 @@
+# Correspondência Regex
+
 O nó RegexMatch verifica se uma string de texto contém uma correspondência para um determinado padrão de expressão regular. Ele pesquisa a string de entrada e retorna um resultado simples de sim/não indicando se o padrão foi encontrado em qualquer parte do texto. Você pode ajustar como a pesquisa funciona ativando opções como correspondência sem distinção entre maiúsculas e minúsculas ou modo multilinha.
 
 ## Entradas

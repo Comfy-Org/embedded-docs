@@ -1,3 +1,5 @@
+# Tripo P1: Image to Model
+
 ## Overview
 
 This node converts a single 2D image into a 3D model using the Tripo P1 API. It is optimized for generating low-polygon, game-ready meshes.

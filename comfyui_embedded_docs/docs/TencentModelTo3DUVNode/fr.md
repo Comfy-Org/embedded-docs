@@ -1,3 +1,5 @@
+# Hunyuan3D : Modèle vers UV
+
 Ce nœud utilise l'API Tencent Hunyuan3D pour effectuer un dépliage UV sur un modèle 3D. Il prend un fichier de modèle 3D en entrée, l'envoie à l'API pour traitement, puis retourne le modèle traité aux formats OBJ et FBX ainsi qu'une image de texture UV générée. Le modèle d'entrée doit comporter moins de 30 000 faces.
 
 ## Entrées

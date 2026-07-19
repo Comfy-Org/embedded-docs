@@ -1,3 +1,5 @@
+# Nano Banana Pro (Google Gemini Image)
+
 ### GeminiImage2Node
 
 گره GeminiImage2Node با استفاده از مدل Vertex AI Gemini گوگل، تصاویر را تولید یا ویرایش می‌کند. این گره یک متن راهنما (prompt) و تصاویر یا فایل‌های مرجع اختیاری را به API ارسال کرده و تصویر تولیدشده و/یا توضیح متنی را بازمی‌گرداند.

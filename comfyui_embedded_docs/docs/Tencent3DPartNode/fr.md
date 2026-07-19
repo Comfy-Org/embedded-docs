@@ -1,3 +1,5 @@
+# Hunyuan3D : Partie 3D
+
 Ce nœud utilise l'API Tencent Hunyuan3D pour analyser automatiquement un modèle 3D et générer ou identifier ses composants en fonction de sa structure. Il traite le modèle et renvoie un nouveau fichier FBX.
 
 ## Entrées

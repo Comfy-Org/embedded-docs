@@ -1,3 +1,5 @@
+# VAE Kod Çözme
+
 VAEDecode düğümü, belirtilen bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak gizli temsilleri (latent representations) görüntülere çözmek için tasarlanmıştır. Sıkıştırılmış veri temsillerinden görüntüler oluşturma ve görüntülerin gizli uzay kodlamalarından yeniden yapılandırılmasını sağlama amacına hizmet eder.
 
 ## Girişler

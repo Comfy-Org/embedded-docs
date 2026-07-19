@@ -1,3 +1,5 @@
+# VOIDQuadmaskPreprocess
+
 ## Genel Bakış
 
 VOIDQuadmaskPreprocess düğümü, bir maskeyi özel dört seviyeli "dörtlü maskeye" dönüştürerek VOID iç boyama (inpainting) için hazırlar. Giriş maskesini alır, isteğe bağlı olarak ana bölgeyi genişletir, ardından maske değerlerini farklı anlamsal bölgeleri (ana nesne, örtüşme, etkilenen alan ve arka plan) temsil eden dört ayrı seviyeye niceleme işlemi uygular. Son olarak, çıktı değerleri [0, 1] aralığında olacak şekilde maskeyi ters çevirir ve normalleştirir; burada 1.0 kaldırılacak alanı, 0.0 ise korunacak alanı belirtir.

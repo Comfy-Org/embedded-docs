@@ -1,3 +1,5 @@
+# ModelMergeMochiPreview
+
 Este nó mescla dois modelos de IA usando uma abordagem baseada em blocos com controle refinado sobre diferentes componentes do modelo. Ele permite combinar modelos ajustando os pesos de interpolação para seções específicas, incluindo frequências posicionais, camadas de incorporação (embedding) e blocos individuais do transformador. O processo de mesclagem combina as arquiteturas e parâmetros de ambos os modelos de entrada de acordo com os valores de peso especificados.
 
 ## Entradas

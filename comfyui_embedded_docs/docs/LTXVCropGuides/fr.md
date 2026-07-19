@@ -1,3 +1,5 @@
+# LTXVCropGuides
+
 Le nœud **LTXVCropGuides** traite les entrées de conditionnement et latentes pour la génération vidéo en supprimant les informations d'images clés et en ajustant les dimensions latentes. Il rogne l'image latente et le masque de bruit pour exclure les sections d'images clés, tout en effaçant les indices d'images clés des entrées de conditionnement positives et négatives. Cela prépare les données pour les workflows de génération vidéo ne nécessitant pas de guidage par images clés.
 
 ## Entrées

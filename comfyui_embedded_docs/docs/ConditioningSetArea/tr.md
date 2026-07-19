@@ -1,3 +1,5 @@
+# Koşullandırma (Alan Ayarla)
+
 Bu düğüm, koşullandırma bağlamı içinde belirli alanlar ayarlayarak koşullandırma bilgilerini değiştirmek için tasarlanmıştır. Koşullandırma öğelerinin hassas uzamsal manipülasyonuna olanak tanır ve belirtilen boyutlar ile güce dayalı olarak hedefli ayarlamalar ve iyileştirmeler yapılmasını sağlar.
 
 ## Girişler

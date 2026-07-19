@@ -1,3 +1,5 @@
+# VAEDecodeHunyuan3D
+
 The VAEDecodeHunyuan3D node converts latent representations into 3D voxel data using a VAE decoder. It processes the latent samples through the VAE model with configurable chunking and resolution settings to generate volumetric data suitable for 3D applications.
 
 ## Inputs

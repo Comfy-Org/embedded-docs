@@ -1,3 +1,5 @@
+# Vidu Q3 Metinden Videoya Üretim
+
 Vidu Q3 Metinden Videoya Oluşturma düğümü, bir metin açıklamasından video oluşturur. Vidu Q3 Pro veya Q3 Turbo modelini kullanarak, isteminize göre video içeriği üretir; videonun uzunluğunu, çözünürlüğünü, en boy oranını ve ses içerip içermediğini kontrol etmenize olanak tanır.
 
 ## Girişler

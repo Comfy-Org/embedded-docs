@@ -1,3 +1,5 @@
+# MoonvalleyTxt2VideoNode
+
 Voici la traduction en français de la documentation du nœud Moonvalley Marey Text to Video :
 
 Le nœud Moonvalley Marey Texte vers Vidéo génère un contenu vidéo à partir de descriptions textuelles en utilisant l'API Moonvalley. Il prend une invite textuelle et la convertit en vidéo avec des paramètres personnalisables pour la résolution, la qualité et le style. Le nœud gère l'ensemble du processus, de l'envoi de la demande de génération au téléchargement de la vidéo finale.

@@ -1,3 +1,5 @@
+# Guidance d'Auto-Attention
+
 Voici la traduction en français de la documentation du nœud Self-Attention Guidance :
 
 Le nœud Self-Attention Guidance applique un guidage aux modèles de diffusion en modifiant le mécanisme d'attention pendant le processus d'échantillonnage. Il capture les scores d'attention des étapes de débruitage non conditionnées et les utilise pour créer des cartes de guidage floues qui influencent la sortie finale. Cette technique aide à guider le processus de génération en exploitant les propres schémas d'attention du modèle.

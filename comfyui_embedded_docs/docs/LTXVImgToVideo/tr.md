@@ -1,3 +1,5 @@
+# LTXVGörüntüdenVideoya
+
 LTXVImgToVideo düğümü, video oluşturma modelleri için bir girdi görüntüsünü video gizil katman temsiline dönüştürür. Tek bir görüntü alır ve VAE kodlayıcıyı kullanarak bunu bir dizi kareye genişletir, ardından video oluşturma sırasında orijinal görüntü içeriğinin ne kadarının korunacağını ve ne kadarının değiştirileceğini belirlemek için güç kontrolü ile koşullandırma uygular.
 
 ## Girdiler

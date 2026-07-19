@@ -1,3 +1,5 @@
+# ModelSamplingStableCascade
+
 O nó ModelSamplingStableCascade aplica amostragem em cascata estável a um modelo, ajustando os parâmetros de amostragem com um valor de deslocamento. Ele cria uma versão modificada do modelo de entrada com uma configuração de amostragem personalizada para geração em cascata estável.
 
 ## Entradas

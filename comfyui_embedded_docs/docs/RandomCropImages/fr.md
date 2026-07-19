@@ -1,3 +1,5 @@
+# Rogner aléatoirement des images
+
 Le nœud Random Crop Images sélectionne aléatoirement une section rectangulaire dans chaque image d'entrée et la recadre aux dimensions spécifiées. Cette opération est couramment utilisée pour l'augmentation de données afin de créer des variations d'images d'entraînement. La position aléatoire du recadrage est déterminée par une valeur de `seed`, garantissant la reproductibilité du même recadrage.
 
 ## Entrées

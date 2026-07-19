@@ -1,3 +1,5 @@
+# BoşGizliHunyuan3Dv2
+
 EmptyLatentHunyuan3Dv2 düğümü, Hunyuan3Dv2 3B oluşturma modelleri için özel olarak biçimlendirilmiş boş gizil tensörler oluşturur. Hunyuan3Dv2 mimarisi tarafından gereken doğru boyut ve yapıya sahip boş gizil uzaylar üreterek, 3B oluşturma iş akışlarına sıfırdan başlamanızı sağlar. Düğüm, sonraki 3B oluşturma süreçleri için temel görevi gören, sıfırlarla doldurulmuş gizil tensörler üretir.
 
 ## Girişler

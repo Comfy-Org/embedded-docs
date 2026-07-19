@@ -1,3 +1,5 @@
+# ByteDanceImageEditNode
+
 다음은 제공된 영어 문서를 한국어로 번역한 결과입니다.
 
 ---

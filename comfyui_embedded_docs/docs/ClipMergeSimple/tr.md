@@ -1,3 +1,5 @@
+# Basit CLIP Birleştirme
+
 `CLIPMergeSimple`, iki CLIP metin kodlayıcı modelini belirtilen bir orana göre birleştirmek için kullanılan gelişmiş bir model birleştirme düğümüdür.
 
 Bu düğüm, iki CLIP modelini belirtilen bir orana göre birleştirme konusunda uzmanlaşmıştır ve özelliklerini etkili bir şekilde harmanlar. Her iki kaynak modelden gelen özellikleri birleştiren hibrit bir model oluşturmak için, konum kimlikleri ve logit ölçeği gibi belirli bileşenleri hariç tutarak, bir modelden diğerine seçici olarak yamalar uygular.

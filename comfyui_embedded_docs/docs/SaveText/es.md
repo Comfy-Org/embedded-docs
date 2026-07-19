@@ -1,14 +1,14 @@
 # SaveText
 
-El nodo Guardar Texto escribe contenido de texto en un archivo dentro del directorio de salida. Admite el guardado en tres formatos de archivo diferentes: texto plano (.txt), Markdown (.md) y JSON (.json). Al guardar como JSON, el nodo intenta analizar el texto de entrada como JSON válido y formatearlo con sangría adecuada.
+El nodo Guardar Texto escribe contenido de texto en un archivo dentro del directorio de salida. Admite el guardado en formato .txt, .md o .json, y maneja automáticamente el formato JSON con sangría cuando se proporciona JSON válido.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `text` | El contenido de texto que se guardará en un archivo | STRING | Sí | |
-| `filename_prefix` | Prefijo para el nombre del archivo de salida (predeterminado: "ComfyUI") | STRING | No | |
-| `format` | Formato de archivo para guardar el texto (predeterminado: "txt") | STRING | No | `"txt"`<br>`"md"`<br>`"json"` |
+| `text` | El contenido de texto que se guardará en un archivo | STRING | Sí | - |
+| `filename_prefix` | Prefijo para el nombre del archivo de salida (predeterminado: "ComfyUI") | STRING | No | - |
+| `format` | El formato de archivo en el que se guardará el texto (predeterminado: "txt") | STRING | No | `"txt"`<br>`"md"`<br>`"json"` |
 
 ## Salidas
 

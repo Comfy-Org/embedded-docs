@@ -1,4 +1,4 @@
-# Convert DA3 Geometry to Point Cloud
+# DA3GeometryToPointCloud
 
 This node converts a depth map from a DA3_GEOMETRY object into a 3D point cloud. It applies filtering based on confidence and sky masks, and transforms the points into a common world coordinate system suitable for multi-view scenes.
 

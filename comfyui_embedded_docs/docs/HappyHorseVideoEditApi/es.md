@@ -1,4 +1,4 @@
-# Descripción General
+# HappyHorse Edición de Video
 
 Edite un vídeo utilizando instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el vídeo de entrada; las entradas de más de 15 segundos se truncan.
 

@@ -1,3 +1,5 @@
+# Estender Sigmas Intermediários
+
 O nó **ExtendIntermediateSigmas** recebe uma sequência existente de valores sigma e insere valores sigma intermediários adicionais entre eles. Ele permite especificar quantos passos extras adicionar, o método de espaçamento para interpolação e limites opcionais de sigma inicial e final para controlar onde a extensão ocorre dentro da sequência sigma.
 
 ## Entradas

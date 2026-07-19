@@ -1,3 +1,5 @@
+# InvertBooleanNode
+
 This node takes a single boolean (true/false) input and outputs the opposite value. It performs a logical NOT operation, turning `true` into `false` and `false` into `true`.
 
 ## Inputs

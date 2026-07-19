@@ -1,3 +1,5 @@
+# Barajar conjunto de imágenes y textos
+
 Este nodo mezcla una lista de imágenes y una lista de textos de forma conjunta, manteniendo intactos sus emparejamientos. Utiliza una semilla aleatoria para determinar el orden de la mezcla, lo que garantiza que las mismas listas de entrada se mezclarán de la misma manera cada vez que se reutilice la semilla.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Teğetsel Sönümleme CFG
+
 TCFG (Teğetsel Sönümleme CFG), örnekleme sürecinde koşulsuz (negatif) tahminleri, koşullu (pozitif) tahminlerle daha iyi uyumlu hale getirecek şekilde iyileştirir. Bu teknik, 2503.18137 numaralı araştırma makalesine dayanarak, koşulsuz yönlendirmeye teğetsel sönümleme uygulayarak çıktı kalitesini artırır. Düğüm, sınıflandırıcısız yönlendirme sırasında koşulsuz tahminlerin nasıl işlendiğini ayarlayarak modelin örnekleme davranışını değiştirir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Boş HiDream-O1 Latent Görüntü
+
 ## Genel Bakış
 
 Bu düğüm, piksel uzayında boş bir latent görüntü oluşturur ve özellikle HiDream-O1-Image modeli için tasarlanmıştır. Genişlik, yükseklik ve batch boyutu girdileriyle tanımlanan boyutlarda, görüntü oluşturma için başlangıç noktası görevi gören sıfırlardan oluşan boş bir tensör üretir.

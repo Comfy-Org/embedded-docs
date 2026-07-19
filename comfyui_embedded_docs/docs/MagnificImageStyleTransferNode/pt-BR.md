@@ -1,3 +1,5 @@
+# Transferência de Estilo de Imagem Magnific
+
 Este nó aplica o estilo visual de uma imagem de referência à sua imagem de entrada. Ele utiliza um serviço de IA externo para processar as imagens, permitindo que você controle a intensidade da transferência de estilo e a preservação da estrutura da imagem original.
 
 ## Entradas

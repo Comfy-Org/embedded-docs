@@ -1,3 +1,5 @@
+# WanMoveTracksFromCoords
+
 WanMoveTracksFromCoords düğümü, JSON formatındaki bir koordinat dizisinden hareket izleri oluşturur. Koordinat verilerini, diğer video işleme düğümleri tarafından kullanılabilecek bir tensör formatına dönüştürür ve isteğe bağlı olarak izlerin zaman içindeki görünürlüğünü kontrol etmek için bir maske uygulayabilir.
 
 ## Girişler

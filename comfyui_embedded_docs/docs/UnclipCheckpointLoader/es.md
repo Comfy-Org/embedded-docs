@@ -1,3 +1,5 @@
+# Cargador de Puntos de Control unCLIP
+
 Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/checkpoints`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, es posible que necesites **actualizar la interfaz de ComfyUI** para permitir que lea los archivos de modelo desde la carpeta correspondiente.
 
 El nodo unCLIPCheckpointLoader está diseñado para cargar puntos de control (checkpoints) específicamente adaptados para modelos unCLIP. Facilita la recuperación e inicialización de modelos, módulos CLIP vision y VAEs desde un punto de control especificado, optimizando el proceso de configuración para operaciones o análisis posteriores.

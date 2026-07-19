@@ -1,3 +1,5 @@
+# Extrair e Salvar Lora
+
 O nó LoraSave extrai e salva arquivos LoRA (Adaptação de Baixo Posto) a partir de diferenças de modelos. Ele pode processar diferenças de modelos de difusão, diferenças de codificadores de texto ou ambos, convertendo-os no formato LoRA com posto e tipo especificados. O arquivo LoRA resultante é salvo no diretório de saída para uso posterior.
 
 ## Entradas

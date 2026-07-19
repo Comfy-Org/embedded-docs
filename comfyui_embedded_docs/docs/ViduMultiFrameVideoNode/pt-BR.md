@@ -1,3 +1,5 @@
+# Geração de Vídeo com Múltiplos Quadros Vidu
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
 
 Este nó gera um vídeo criando transições entre múltiplos quadros-chave. Ele começa a partir de uma imagem inicial e anima através de uma sequência de imagens finais e prompts definidos pelo usuário, produzindo um único arquivo de vídeo como saída.

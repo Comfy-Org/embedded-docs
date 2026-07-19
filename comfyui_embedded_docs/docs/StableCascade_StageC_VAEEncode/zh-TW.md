@@ -1,3 +1,5 @@
+# StableCascade 階段 C VAE 編碼
+
 ## 概述
 
 StableCascade_StageC_VAEEncode 節點透過 VAE 編碼器處理影像，為 Stable Cascade 模型生成潛在空間表示。它接收輸入影像，使用指定的 VAE 模型進行壓縮，然後輸出兩個潛在空間表示：一個用於階段 C，另一個作為階段 B 的佔位符。壓縮參數控制編碼前影像縮小的程度。

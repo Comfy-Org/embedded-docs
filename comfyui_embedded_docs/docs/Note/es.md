@@ -1,3 +1,5 @@
+# Note
+
 Nodo para agregar anotaciones a un flujo de trabajo.
 
 ## Entradas

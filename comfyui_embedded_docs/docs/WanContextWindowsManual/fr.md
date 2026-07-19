@@ -1,3 +1,5 @@
+# Fenêtres de contexte WAN (Manuel)
+
 Le nœud WAN Context Windows (Manuel) vous permet de configurer manuellement les fenêtres de contexte pour les modèles de type WAN avec un traitement bidimensionnel. Il applique des paramètres personnalisés de fenêtre de contexte lors de l'échantillonnage en spécifiant la longueur de la fenêtre, le chevauchement, la méthode de planification et la technique de fusion. Cela vous offre un contrôle précis sur la manière dont le modèle traite les informations dans différentes régions de contexte.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Get Image from Batch
+
 The `ImageFromBatch` node is designed for extracting a specific segment of images from a batch based on the provided index and length. It allows for more granular control over the batched images, enabling operations on individual or subsets of images within a larger batch.
 
 ## Inputs

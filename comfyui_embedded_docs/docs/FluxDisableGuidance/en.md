@@ -1,3 +1,5 @@
+# FluxDisableGuidance
+
 This node completely disables the guidance embed functionality for Flux and similar models. It takes conditioning data as input and removes the guidance component by setting it to None, effectively turning off guidance-based conditioning for the generation process.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# EmptySD3LatentImage
+
 Le nœud EmptySD3LatentImage crée un tenseur d'image latente vierge, spécifiquement formaté pour les modèles Stable Diffusion 3. Il génère un tenseur rempli de zéros, avec les dimensions et la structure correctes attendues par les pipelines SD3. Ce nœud est couramment utilisé comme point de départ pour les workflows de génération d'images.
 
 ## Entrées

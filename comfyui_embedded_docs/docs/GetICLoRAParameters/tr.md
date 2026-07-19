@@ -1,3 +1,5 @@
+# IC-LoRA Parametrelerini Al
+
 ## Genel Bakış
 
 Bu düğüm, bir LoRA yüklenmiş modelin meta verilerinden IC-LoRA parametrelerini çıkarır. Referans küçültme faktörü gibi değerleri bulmak için safetensors meta verilerini okur ve bunları yapılandırılmış bir parametre nesnesi olarak çıktılar; bu nesne, özel kılavuz işleme için LTXVAddGuide düğümüne bağlanabilir.

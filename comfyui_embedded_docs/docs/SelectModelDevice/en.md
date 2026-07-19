@@ -1,3 +1,5 @@
+# Select Model Device
+
 ## Overview
 
 The SelectModelDevice node allows you to manually choose which device (CPU or a specific GPU) a diffusion model runs on. It can move a model to a different device, and it handles conflicts with other multi-GPU nodes automatically.

@@ -1,3 +1,5 @@
+# Meshy: Multi-Imagen a Modelo
+
 Este nodo utiliza la API de Meshy para generar un modelo 3D a partir de múltiples imágenes de entrada. Carga las imágenes proporcionadas, envía una tarea de procesamiento y devuelve los archivos del modelo 3D resultante (GLB y FBX) junto con el ID de la tarea para referencia.
 
 ## Entradas

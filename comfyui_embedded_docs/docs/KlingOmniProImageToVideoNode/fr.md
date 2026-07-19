@@ -1,3 +1,5 @@
+# Kling Omni Image vers Vidéo (Pro)
+
 Ce nœud utilise le modèle Kling AI pour générer une vidéo à partir d’un prompt textuel et de jusqu’à sept images de référence. Il permet de contrôler le format d’image, la durée, la résolution de la vidéo, et éventuellement d’utiliser des storyboards ou de générer de l’audio. Le nœud envoie la requête à une API externe et retourne la vidéo générée.
 
 ## Entrées

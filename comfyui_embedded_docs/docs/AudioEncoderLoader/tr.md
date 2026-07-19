@@ -1,3 +1,5 @@
+# SesKodlayıcıYükleyici
+
 AudioEncoderLoader düğümü, ses kodlayıcılar klasörünüzdeki bir dosyadan ses kodlayıcı modeli yükler. Girdi olarak bir ses kodlayıcı modelinin dosya adını alır ve yüklenen modeli döndürür; bu model daha sonra iş akışınızda ses işleme görevleri için kullanılabilir.
 
 ## Girdiler

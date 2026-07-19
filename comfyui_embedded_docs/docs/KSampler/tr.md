@@ -1,3 +1,5 @@
+# KSampler
+
 KSampler şu şekilde çalışır: Belirtilen modele ve hem pozitif hem de negatif koşullara dayanarak sağlanan orijinal gizli (latent) görüntü bilgisini değiştirir.
 İlk olarak, belirlenen **seed** (tohum) ve **denoise** (gürültü giderme) gücüne göre orijinal görüntü verisine gürültü ekler, ardından önceden ayarlanmış **Model**'i **pozitif** ve **negatif** yönlendirme koşullarıyla birleştirerek görüntüyü oluşturur.
 

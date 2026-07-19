@@ -1,3 +1,5 @@
+# Expression mathématique
+
 Le nœud ComfyMathExpression évalue une formule mathématique à l'aide d'un ensemble de valeurs d'entrée. Vous pouvez écrire une expression en utilisant des noms de variables (comme `a`, `b`, `c`), et le nœud calculera le résultat. Il prend en charge l'ajout dynamique d'autant de valeurs d'entrée que nécessaire pour votre calcul.
 
 ## Entrées

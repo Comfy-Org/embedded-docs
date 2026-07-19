@@ -1,3 +1,5 @@
+# Cond Définir Propriétés
+
 Le nœud ConditioningSetProperties modifie les propriétés des données de conditionnement en ajustant la force, les paramètres de zone et en appliquant des masques, des hooks ou des plages de pas de temps facultatifs. Il vous permet de contrôler la manière dont le conditionnement influence le processus de génération en définissant des paramètres spécifiques qui affectent l'application des données de conditionnement lors de la génération d'images.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# PhotoMakerEncode
+
 The PhotoMakerEncode node processes a reference image and a text prompt to generate conditioning data for AI image generation. It uses the PhotoMaker model to combine visual characteristics from the image with text embeddings, specifically looking for the "photomaker" token in the text to determine where to apply the image-based conditioning.
 
 ## Inputs

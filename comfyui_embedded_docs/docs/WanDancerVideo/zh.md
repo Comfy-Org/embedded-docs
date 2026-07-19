@@ -1,3 +1,5 @@
+# WanDancerVideo
+
 WanDancerVideo 节点用于为 WanDancer 模型的视频生成准备 conditioning 数据和空的潜空间张量。它结合了正向和负向 conditioning，并支持起始图像、遮罩、CLIP 视觉嵌入和音频特征等可选输入，以控制生成的视频。
 
 ## 输入

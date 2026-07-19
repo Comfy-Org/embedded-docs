@@ -1,3 +1,5 @@
+# Sélectionner le périphérique CLIP
+
 Voici la traduction en français de la documentation du nœud SelectCLIPDevice :
 
 ## Aperçu

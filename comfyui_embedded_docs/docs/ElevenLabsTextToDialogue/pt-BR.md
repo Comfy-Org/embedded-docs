@@ -1,3 +1,5 @@
+# ElevenLabs Texto para Diálogo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ElevenLabsTextToDialogue/en.md)
 
 O nó ElevenLabs Text to Dialogue gera um diálogo de áudio com múltiplos falantes a partir de texto. Ele permite criar uma conversa especificando diferentes linhas de texto e vozes distintas para cada participante. O nó envia a solicitação de diálogo para a API do ElevenLabs e retorna o áudio gerado.

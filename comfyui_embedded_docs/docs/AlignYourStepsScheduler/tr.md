@@ -1,3 +1,5 @@
+# AdımlarınıHizalaZamanlayıcı
+
 AlignYourStepsScheduler düğümü, farklı model türlerine göre gürültü giderme işlemi için sigma değerleri üretir. Örnekleme sürecinin her adımı için uygun gürültü seviyelerini hesaplar ve toplam adım sayısını gürültü giderme parametresine göre ayarlar. Bu, örnekleme adımlarının farklı difüzyon modellerinin özel gereksinimleriyle uyumlu hale getirilmesine yardımcı olur.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Meshy : Modèle de texture
+
 Le nœud Meshy : Texture applique des textures générées par IA à un modèle 3D. Il prend un identifiant de tâche provenant d'un nœud précédent de génération ou de conversion 3D Meshy et utilise soit une description textuelle, soit une image de référence pour créer de nouvelles textures pour le modèle. Le nœud produit le modèle texturé aux formats de fichier GLB et FBX.
 
 ## Entrées

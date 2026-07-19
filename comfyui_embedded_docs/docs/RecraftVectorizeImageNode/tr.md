@@ -1,3 +1,5 @@
+# Recraft Görüntüyü Vektörleştir
+
 Giriş görüntüsünden eşzamanlı olarak SVG oluşturur. Bu düğüm, giriş grubundaki her görüntüyü işleyerek raster görüntüleri vektör grafik formatına dönüştürür ve sonuçları tek bir SVG çıktısında birleştirir.
 
 ## Girişler

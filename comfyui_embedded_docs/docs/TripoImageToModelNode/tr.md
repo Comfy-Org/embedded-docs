@@ -1,3 +1,5 @@
+# Tripo: Görüntüden Modele
+
 TripoImageToModelNode düğümü, Tripo'nun API'sini kullanarak tek bir görüntüye dayalı olarak eşzamanlı 3D modeller üretir. Bu düğüm, bir giriş görüntüsü alır ve doku, kalite ve model özellikleri için çeşitli özelleştirme seçenekleriyle bunu bir 3D modele dönüştürür.
 
 ## Girişler

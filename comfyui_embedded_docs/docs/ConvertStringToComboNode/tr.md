@@ -1,3 +1,5 @@
+# ConvertStringToComboNode
+
 Dizeyi Combo'ya Dönüştür düğümü, girdi olarak bir metin dizesi alır ve bunu Combo veri türüne dönüştürür. Bu, bir Combo girdisi gerektiren diğer düğümler için bir metin değerini seçim olarak kullanmanıza olanak tanır. Dize değerini değiştirmeden iletir ancak veri türünü değiştirir.
 
 ## Girdiler

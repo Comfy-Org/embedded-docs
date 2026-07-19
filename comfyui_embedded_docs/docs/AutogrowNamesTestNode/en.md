@@ -1,3 +1,5 @@
+# AutogrowNamesTestNode
+
 This node is a test for the Autogrow input feature. It takes a dynamic number of float inputs, each labeled with a specific name, and combines their values into a single comma-separated string.
 
 ## Inputs

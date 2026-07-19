@@ -1,3 +1,5 @@
+# Gürültüyü Devre Dışı Bırak
+
 DisableNoise düğümü, örnekleme süreçlerinde gürültü oluşumunu devre dışı bırakmak için kullanılabilecek boş bir gürültü yapılandırması sağlar. Hiçbir gürültü verisi içermeyen özel bir gürültü nesnesi döndürür ve bu çıktıya bağlandığında diğer düğümlerin gürültüyle ilgili işlemleri atlamasına olanak tanır.
 
 ## Girişler

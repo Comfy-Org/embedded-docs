@@ -1,3 +1,5 @@
+# SetFirstSigma
+
 ## 概述
 
 SetFirstSigma 節點透過將序列中的第一個 sigma 值替換為自訂值來修改 sigma 值序列。它接收現有的 sigma 序列和一個新的 sigma 值作為輸入，然後回傳一個新的 sigma 序列，其中僅第一個元素已被更改，而所有其他 sigma 值保持不變。

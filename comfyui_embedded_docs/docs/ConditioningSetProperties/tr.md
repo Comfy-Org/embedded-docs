@@ -1,3 +1,5 @@
+# Koşul Özelliklerini Ayarla
+
 **ConditioningSetProperties** düğümü, güç, alan ayarları ve isteğe bağlı maskeler, kancalar veya zaman adımı aralıkları uygulayarak koşullandırma verilerinin özelliklerini değiştirir. Görüntü oluşturma sırasında koşullandırma verilerinin uygulanmasını etkileyen belirli parametreler ayarlayarak, koşullandırmanın üretim sürecini nasıl etkileyeceğini kontrol etmenizi sağlar.
 
 ## Girişler

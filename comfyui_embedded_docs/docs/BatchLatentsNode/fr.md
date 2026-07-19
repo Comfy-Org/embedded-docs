@@ -1,3 +1,5 @@
+# Latents par lot
+
 Voici la traduction en français de la documentation du nœud Batch Latents :
 
 Le nœud Batch Latents combine plusieurs entrées latentes en un seul lot. Il prend un nombre variable d'échantillons latents et les fusionne le long de la dimension du lot, permettant ainsi de les traiter ensemble dans les nœuds suivants. Cela est utile pour générer ou traiter plusieurs images en une seule opération.

@@ -1,3 +1,5 @@
+# ModelMergeQwenImage
+
 O nó ModelMergeQwenImage mescla dois modelos de IA combinando seus componentes com pesos ajustáveis. Ele permite que você misture partes específicas de modelos de imagem Qwen, incluindo blocos transformadores, embeddings posicionais e componentes de processamento de texto. Você pode controlar quanta influência cada modelo tem em diferentes seções do resultado mesclado.
 
 ## Entradas

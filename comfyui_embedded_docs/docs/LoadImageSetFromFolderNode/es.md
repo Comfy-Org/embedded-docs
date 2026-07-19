@@ -1,3 +1,5 @@
+# LoadImageSetFromFolderNode
+
 El nodo `LoadImageSetFromFolderNode` carga múltiples imágenes desde un directorio de carpeta especificado con fines de entrenamiento. Detecta automáticamente formatos de imagen comunes y puede redimensionar opcionalmente las imágenes usando diferentes métodos antes de devolverlas como un lote.
 
 ## Entradas

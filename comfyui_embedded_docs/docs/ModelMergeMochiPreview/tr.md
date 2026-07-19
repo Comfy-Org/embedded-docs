@@ -1,3 +1,5 @@
+# ModelBirleştirmeMochiÖnizleme
+
 Bu düğüm, blok tabanlı bir yaklaşım kullanarak iki yapay zeka modelini birleştirir ve farklı model bileşenleri üzerinde ince ayar yapma imkanı sağlar. Konumsal frekanslar, gömme katmanları ve bireysel dönüştürücü blokları dahil olmak üzere belirli bölümler için enterpolasyon ağırlıklarını ayarlayarak modelleri harmanlamanıza olanak tanır. Birleştirme işlemi, belirtilen ağırlık değerlerine göre her iki girdi modelinin mimarilerini ve parametrelerini birleştirir.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Échelle d'image FluxKontext
+
 Ce nœud redimensionne l'image d'entrée à une taille optimale utilisée lors de l'entraînement du modèle Flux Kontext, en utilisant l'algorithme de Lanczos et en se basant sur le rapport hauteur/largeur de l'image d'entrée. Ce nœud est particulièrement utile pour les images de grande taille, car des entrées surdimensionnées peuvent dégrader la qualité de sortie du modèle ou provoquer des problèmes tels que l'apparition de plusieurs sujets dans le résultat.
 
 ## Entrées

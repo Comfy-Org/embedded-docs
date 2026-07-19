@@ -1,4 +1,4 @@
-# Descripción General
+# Tripo P1: Texto a Modelo
 
 Este nodo genera un modelo 3D a partir de una descripción textual utilizando la API de Tripo P1. Está optimizado para crear mallas de baja poligonización listas para juegos, con topología estable, lo que lo hace adecuado para aplicaciones en tiempo real.
 

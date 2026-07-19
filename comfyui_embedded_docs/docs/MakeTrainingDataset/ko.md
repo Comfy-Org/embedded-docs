@@ -1,3 +1,5 @@
+# 학습 데이터셋 만들기
+
 이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MakeTrainingDataset/en.md)
 
 이 노드는 이미지와 텍스트를 인코딩하여 학습 데이터를 준비합니다. 이미지 목록과 이에 대응하는 텍스트 캡션 목록을 입력받은 후, VAE 모델을 사용하여 이미지를 잠재 표현(latent representation)으로 변환하고 CLIP 모델을 사용하여 텍스트를 컨디셔닝 데이터로 변환합니다. 그 결과로 생성된 쌍을 이루는 잠재 표현과 컨디셔닝이 목록 형태로 출력되어 학습 워크플로우에서 바로 사용할 수 있습니다.

@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 El nodo VOIDInpaintConditioning prepara los datos de condicionamiento necesarios para la pintura inteligente (inpainting) con modelos CogVideoX. Toma un video fuente y una cuadrimáscara (quadmask) preprocesada, los codifica a través del VAE y los combina en una señal de condicionamiento de 32 canales que el modelo utiliza para rellenar las áreas enmascaradas.
 
 ## Entradas

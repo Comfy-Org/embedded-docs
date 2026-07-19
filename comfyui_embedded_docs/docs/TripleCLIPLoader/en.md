@@ -1,3 +1,5 @@
+# Load CLIP (Triple)
+
 The TripleCLIPLoader node loads three different text encoder models simultaneously and combines them into a single CLIP model. This is useful for advanced text encoding scenarios where multiple text encoders are needed, such as in SD3 workflows that require clip-l, clip-g, and t5 models working together.
 
 ## Inputs

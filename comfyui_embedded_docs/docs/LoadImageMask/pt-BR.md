@@ -1,3 +1,5 @@
+# Carregar Imagem (como Mask)
+
 O nó LoadImageMask foi projetado para carregar imagens e suas máscaras associadas a partir de um caminho especificado, processando-as para garantir compatibilidade com tarefas adicionais de manipulação ou análise de imagens. Ele foca no tratamento de vários formatos de imagem e condições, como a presença de um canal alfa para máscaras, e prepara as imagens e máscaras para processamento downstream, convertendo-as para um formato padronizado.
 
 ## Entradas

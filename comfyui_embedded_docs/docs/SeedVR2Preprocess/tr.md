@@ -1,4 +1,4 @@
-# SeedVR2 Giriş Ön İşleme Düğümü
+# SeedVR2Preprocess
 
 Bu düğüm, yeniden boyutlandırılmış bir görüntüyü SeedVR2 modeli için hazırlamak amacıyla kenar boşluğu (padding) ekler. İşlem sırasında alfa kanalını kaldırır; bu kanal daha sonra, orijinal yeniden boyutlandırılmış görüntü kullanılarak eşlik eden SeedVR2 Çıkış Son İşleme düğümü tarafından geri yüklenir.
 

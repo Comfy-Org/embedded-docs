@@ -1,3 +1,5 @@
+# Hunyuan3Dv2Conditioning
+
 Hunyuan3Dv2Conditioning 節點處理 CLIP 視覺輸出，以生成 3D 模型的條件數據。它從視覺輸出中提取最後的隱藏狀態嵌入，並建立正條件與負條件配對。正條件使用實際的嵌入，而負條件則使用形狀相同的零值嵌入。
 
 ## 輸入

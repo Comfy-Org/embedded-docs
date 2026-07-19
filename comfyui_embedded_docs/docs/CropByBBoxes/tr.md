@@ -1,3 +1,5 @@
+# CropByBBoxes
+
 CropByBBoxes düğümü, bir giriş görüntü kümesinden belirli dikdörtgen bölgeleri çıkarır ve yeniden boyutlandırır. Kırpılacak alanı tanımlamak için sağlanan sınırlayıcı kutu koordinatlarını kullanır. Kırpılan bölgeler daha sonra belirtilen bir çıktı boyutuna yeniden boyutlandırılır ve kırpılan alanı esnetme veya orijinal en-boy oranını korumak için dolgu ekleme seçenekleri sunar.
 
 ## Girişler

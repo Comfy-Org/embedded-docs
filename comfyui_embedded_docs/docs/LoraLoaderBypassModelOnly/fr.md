@@ -1,3 +1,5 @@
+# Charger LoRA (Bypass, Modèle Seulement) (pour le débogage)
+
 Ce nœud applique un LoRA (Adaptation de Bas Rang) à un modèle pour modifier son comportement, mais n'affecte que la composante modèle elle-même. Il charge un fichier LoRA spécifié et ajuste les poids du modèle selon une force donnée, sans modifier les autres composants comme l'encodeur de texte CLIP.
 
 ## Entrées

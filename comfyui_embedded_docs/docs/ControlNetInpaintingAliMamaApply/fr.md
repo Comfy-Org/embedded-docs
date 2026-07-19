@@ -1,3 +1,5 @@
+# ControlNetInpaintingAliMamaApply
+
 Voici la traduction de la documentation du nœud ControlNetInpaintingAliMamaApply :
 
 Le nœud ControlNetInpaintingAliMamaApply applique un conditionnement ControlNet pour les tâches d'incrustation (inpainting) en combinant le conditionnement positif et négatif avec une image de contrôle et un masque. Il traite l'image d'entrée et le masque pour créer un conditionnement modifié qui guide le processus de génération, permettant un contrôle précis des zones de l'image à incruster. Le nœud prend en charge le réglage de la force et des contrôles temporels pour affiner l'influence du ControlNet à différentes étapes du processus de génération.

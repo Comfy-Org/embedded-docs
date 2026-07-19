@@ -1,3 +1,5 @@
+# Klasörden Görsel ve Metin Veri Kümesi Yükle
+
 Bu düğüm, belirtilen bir klasörden görüntüleri ve bunlara karşılık gelen metin açıklamalarını yükler. Görüntü dosyalarını arar ve otomatik olarak aynı temel ada sahip eşleşen `.txt` dosyalarını açıklama olarak kullanmak üzere bulur. Düğüm ayrıca, alt klasörlerin çıktıda görüntülerin birden çok kez tekrarlanması gerektiğini belirtmek için bir sayı önekiyle (örneğin `10_klasor_adi`) adlandırılabildiği belirli bir klasör yapısını da destekler.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# GenerateTracks
+
 Le nœud `GenerateTracks` crée plusieurs trajectoires de mouvement parallèles pour la génération vidéo. Il définit un chemin principal d'un point de départ à un point d'arrivée, puis génère un ensemble de pistes parallèles à ce chemin, espacées de manière uniforme. Vous pouvez contrôler la forme du chemin (ligne droite ou courbe de Bézier), la vitesse de déplacement le long de celui-ci et les images dans lesquelles les pistes sont visibles.
 
 ## Entrées

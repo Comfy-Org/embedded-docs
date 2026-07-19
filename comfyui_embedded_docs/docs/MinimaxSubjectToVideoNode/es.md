@@ -1,3 +1,5 @@
+# MinimaxSubjectToVideoNode
+
 Genera un video de forma sincrónica basado en una imagen de sujeto y un texto de instrucción utilizando la API de MiniMax. Este nodo toma una imagen de un sujeto y una descripción para crear un video que anime o muestre a dicho sujeto según la instrucción.
 
 ## Entradas

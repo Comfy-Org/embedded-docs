@@ -1,3 +1,5 @@
+# Meshy: Modelo de Textura
+
 O nó Meshy: Textura aplica texturas geradas por IA a um modelo 3D. Ele recebe um ID de tarefa de um nó anterior de geração ou conversão 3D do Meshy e usa uma descrição textual ou uma imagem de referência para criar novas texturas para o modelo. O nó gera o modelo texturizado nos formatos de arquivo GLB e FBX.
 
 ## Entradas

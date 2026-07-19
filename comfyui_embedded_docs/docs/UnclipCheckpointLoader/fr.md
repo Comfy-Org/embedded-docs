@@ -1,3 +1,5 @@
+# ChargeurPointContrôleunCLIP
+
 Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/checkpoints`, et lit également les modèles provenant de chemins supplémentaires configurés dans le fichier `extra_model_paths.yaml`. Il peut parfois être nécessaire de **rafraîchir l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
 Le nœud unCLIPCheckpointLoader est conçu pour charger des points de contrôle spécifiquement adaptés aux modèles unCLIP. Il facilite la récupération et l'initialisation des modèles, des modules CLIP vision et des VAE à partir d'un point de contrôle spécifié, simplifiant ainsi le processus de configuration pour des opérations ou analyses ultérieures.

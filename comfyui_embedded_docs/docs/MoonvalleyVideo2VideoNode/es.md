@@ -1,3 +1,5 @@
+# MoonvalleyVideo2VideoNode
+
 El nodo Moonvalley Marey Video a Video transforma un video de entrada en un nuevo video basado en una descripción textual. Utiliza la API de Moonvalley para generar videos que coincidan con tu indicación, preservando las características de movimiento o pose del video original. Puedes controlar el estilo y contenido del video de salida mediante indicaciones de texto y diversos parámetros de generación.
 
 ## Entradas

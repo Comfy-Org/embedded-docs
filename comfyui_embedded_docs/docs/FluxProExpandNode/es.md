@@ -1,3 +1,5 @@
+# Flux.1 Expandir imagen
+
 Expande una imagen basándose en un `prompt`. Este nodo amplía una imagen añadiendo píxeles en los lados superior, inferior, izquierdo y derecho, mientras genera nuevo contenido que coincide con la descripción de texto proporcionada.
 
 ## Entradas

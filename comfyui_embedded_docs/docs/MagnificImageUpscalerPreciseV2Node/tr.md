@@ -1,3 +1,5 @@
+# Magnific Görüntü Büyütme (Hassas V2)
+
 Magnific Image Upscale (Precise V2) düğümü, keskinlik, gren ve detay iyileştirme üzerinde hassas kontrol sağlayarak yüksek doğrulukta görüntü büyütme işlemi gerçekleştirir. Görüntüleri harici bir API aracılığıyla işler ve maksimum 10060×10060 piksel çıktı çözünürlüğünü destekler. Düğüm, farklı işleme stilleri sunar ve istenen çıktı izin verilen maksimum boyutu aşarsa girdiyi otomatik olarak küçültebilir.
 
 ## Girdiler

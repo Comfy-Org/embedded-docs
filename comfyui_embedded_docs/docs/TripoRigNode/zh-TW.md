@@ -1,3 +1,5 @@
+# Tripo: 骨架模型
+
 TripoRigNode 會根據原始模型任務 ID 生成一個已綁定骨架的 3D 模型。它會向 Tripo API 發送請求，以 Tripo 規範建立 GLB 格式的動畫骨架，然後持續輪詢 API，直到骨架生成任務完成。
 
 ## 輸入

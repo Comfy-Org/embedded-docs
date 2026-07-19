@@ -1,3 +1,5 @@
+# Salvar Áudio (FLAC)
+
 O nó SaveAudio salva dados de áudio em um arquivo no formato FLAC. Ele recebe uma entrada de áudio e a grava no diretório de saída especificado com o prefixo de nome de arquivo fornecido. O nó gerencia automaticamente a nomeação dos arquivos e garante que o áudio seja salvo corretamente para uso posterior.
 
 ## Entradas

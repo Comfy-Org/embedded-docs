@@ -1,3 +1,5 @@
+# Ideogram V2
+
 Ideogram V2 düğümü, Ideogram V2 yapay zeka modelini kullanarak görseller oluşturur. Bir API hizmeti aracılığıyla görseller oluşturmak için metin istemleri ve çeşitli oluşturma ayarlarını alır. Düğüm, çıktı görsellerini özelleştirmek için farklı en-boy oranlarını, çözünürlükleri ve stil seçeneklerini destekler.
 
 ## Girişler

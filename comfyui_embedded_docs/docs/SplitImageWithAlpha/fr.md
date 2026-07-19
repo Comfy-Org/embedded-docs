@@ -1,3 +1,5 @@
+# Diviser l'image avec Alpha
+
 Voici la traduction en français de la documentation du nœud **SplitImageWithAlpha** :
 
 Le nœud SplitImageWithAlpha est conçu pour séparer les composantes de couleur et alpha d’une image. Il traite un tenseur d’image en entrée, en extrayant les canaux RVB comme composante couleur et le canal alpha comme composante de transparence, facilitant ainsi les opérations nécessitant la manipulation de ces aspects distincts de l’image.

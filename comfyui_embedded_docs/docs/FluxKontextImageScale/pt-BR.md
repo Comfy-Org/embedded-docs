@@ -1,3 +1,5 @@
+# FluxKontextImageScale
+
 Este nó redimensiona a imagem de entrada para um tamanho ideal utilizado durante o treinamento do modelo Flux Kontext, usando o algoritmo Lanczos, com base na proporção de aspecto da imagem de entrada. Este nó é particularmente útil ao inserir imagens de grandes dimensões, pois entradas superdimensionadas podem levar à degradação da qualidade da saída do modelo ou a problemas como o surgimento de múltiplos sujeitos na saída.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة HunyuanVideo15ImageToVideo
+# HunyuanVideo15ImageToVideo
 
 تقوم عقدة **HunyuanVideo15ImageToVideo** بإعداد بيانات التكييف (conditioning) والفضاء الكامن (latent space) لتوليد الفيديو استنادًا إلى نموذج HunyuanVideo 1.5. تنشئ هذه العقدة تمثيلًا كامنًا أوليًا لتسلسل فيديو، ويمكنها دمج صورة بداية اختيارية أو مخرجات رؤية CLIP لتوجيه عملية التوليد.
 

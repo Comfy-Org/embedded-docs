@@ -1,3 +1,5 @@
+# WanDancerPadKeyframes
+
 ## Visão Geral
 
 Este nó prepara uma sequência de quadros-chave para um segmento específico de um processo de geração de vídeo mais longo. Ele recebe um lote de imagens de entrada e uma faixa de áudio, calcula quantos quadros totais o vídeo completo deve ter com base na duração do áudio e distribui as imagens de entrada como quadros-chave no segmento escolhido, preenchendo o restante com quadros em branco. Ele também extrai a porção correspondente do áudio para aquele segmento.

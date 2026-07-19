@@ -1,3 +1,5 @@
+# Stability AI Audio Inpaint
+
 Transforma parte de uma amostra de áudio existente usando instruções de texto. Este nó permite modificar seções específicas do áudio fornecendo prompts descritivos, efetivamente "inpaintando" ou regenerando partes selecionadas enquanto preserva o restante do áudio.
 
 ## Entradas

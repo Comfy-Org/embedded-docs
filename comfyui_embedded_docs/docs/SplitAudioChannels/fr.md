@@ -1,3 +1,5 @@
+# Séparer les canaux audio
+
 Le nœud SplitAudioChannels sépare un fichier audio stéréo en canaux gauche et droit individuels. Il prend une entrée audio stéréo à deux canaux et produit deux flux audio distincts, un pour le canal gauche et un pour le canal droit.
 
 ## Entrées

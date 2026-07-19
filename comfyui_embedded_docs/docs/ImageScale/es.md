@@ -1,3 +1,5 @@
+# Ampliar Imagen
+
 El nodo ImageScale está diseñado para redimensionar imágenes a dimensiones específicas, ofreciendo una selección de métodos de ampliación y la capacidad de recortar la imagen redimensionada. Abstrae la complejidad del escalado y recorte de imágenes, proporcionando una interfaz sencilla para modificar las dimensiones de la imagen según parámetros definidos por el usuario.
 
 ## Entradas

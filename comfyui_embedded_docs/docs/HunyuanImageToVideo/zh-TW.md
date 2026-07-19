@@ -1,4 +1,4 @@
-# HunyuanImageToVideo 節點
+# HunyuanImageToVideo
 
 HunyuanImageToVideo 節點使用 Hunyuan 影片模型將圖片轉換為影片潛在表示。它接收條件化輸入和可選的起始圖片，以生成可進一步由影片生成模型處理的影片潛在表示。該節點支援不同的引導類型，用於控制起始圖片如何影響影片生成過程。
 

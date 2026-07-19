@@ -1,3 +1,5 @@
+# Editar Método de Referência do Modelo
+
 O nó FluxKontextMultiReferenceLatentMethod modifica dados de condicionamento definindo um método específico de latentes de referência. Ele anexa o método escolhido à entrada de condicionamento, o que afeta como os latentes de referência são processados nas etapas de geração subsequentes. Este nó é marcado como experimental e faz parte do sistema de condicionamento Flux.
 
 ## Entradas

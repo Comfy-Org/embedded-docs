@@ -1,4 +1,4 @@
-# Extraire un maillage à partir d’un Splat
+# Extraire un maillage depuis un Splat
 
 Ce nœud convertit un splat gaussien 3D en une surface maillée colorée. Il fonctionne en rastérisant les gaussiens sur une grille de densité, en extrayant une iso-surface à un niveau de densité choisi, puis en appliquant un lissage et un nettoyage optionnels pour produire un maillage triangulaire propre et coloré.
 

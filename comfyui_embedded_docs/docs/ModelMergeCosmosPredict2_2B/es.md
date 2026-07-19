@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_2B
+
 El nodo `ModelMergeCosmosPredict2_2B` fusiona dos modelos de difusión utilizando un enfoque basado en bloques con control detallado sobre diferentes componentes del modelo. Permite combinar partes específicas de dos modelos ajustando los pesos de interpolación para los incrustadores de posición, incrustadores de tiempo, bloques transformadores y capas finales. Esto proporciona un control preciso sobre cómo los diferentes componentes arquitectónicos de cada modelo contribuyen al resultado final fusionado.
 
 ## Entradas

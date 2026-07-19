@@ -1,3 +1,5 @@
+# Modèle PixVerse
+
 Voici la traduction en français de la documentation du nœud PixVerseTemplateNode :
 
 Le nœud PixVerse Template vous permet de sélectionner parmi les modèles disponibles pour la génération vidéo PixVerse. Il convertit le nom du modèle choisi en l'identifiant de modèle correspondant requis par l'API PixVerse pour la création vidéo.

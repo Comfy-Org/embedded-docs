@@ -1,3 +1,5 @@
+# LTXV Texto a Video
+
 El nodo LTXV Text To Video genera videos de calidad profesional a partir de una descripción textual. Se conecta a una API externa para crear videos con duración, resolución y velocidad de fotogramas personalizables. También puedes optar por que se agregue audio generado por IA al video.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CropByBBoxes
+
 Le nœud CropByBBoxes extrait et redimensionne des régions rectangulaires spécifiques à partir d’un lot d’images d’entrée. Il utilise les coordonnées des boîtes englobantes fournies pour définir la zone à recadrer dans chaque image. Les régions recadrées sont ensuite redimensionnées à une dimension de sortie spécifiée, avec la possibilité d’étirer le recadrage ou de le remplir de manière à préserver son rapport hauteur/largeur d’origine.
 
 ## Entrées

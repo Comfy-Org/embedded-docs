@@ -1,3 +1,5 @@
+# Voxel to Mesh (Basic) (DEPRECATED)
+
 The VoxelToMeshBasic node converts 3D voxel data into mesh geometry. It processes voxel volumes by applying a threshold value to determine which parts of the volume become solid surfaces in the resulting mesh. The node outputs a complete mesh structure with vertices and faces that can be used for 3D rendering and modeling.
 
 ## Inputs

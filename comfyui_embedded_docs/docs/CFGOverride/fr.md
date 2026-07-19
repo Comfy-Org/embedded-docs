@@ -1,4 +1,4 @@
-# CFG Override
+# Remplacement CFG
 
 Le nœud CFG Override vous permet de définir une valeur fixe de CFG (Classifier-Free Guidance) pour une plage spécifique du processus d'échantillonnage, définie en pourcentage du nombre total d'étapes. Lorsque plusieurs nœuds CFG Override sont connectés, celui qui est le plus proche de l'échantillonneur dans la chaîne a priorité pour les plages qui se chevauchent.
 

@@ -1,3 +1,5 @@
+# HunyuanImageToVideo
+
 El nodo HunyuanImageToVideo convierte imágenes en representaciones latentes de video utilizando el modelo de video Hunyuan. Toma entradas de condicionamiento e imágenes de inicio opcionales para generar latentes de video que pueden ser procesados posteriormente por modelos de generación de video. El nodo admite diferentes tipos de guía para controlar cómo la imagen de inicio influye en el proceso de generación de video.
 
 ## Entradas

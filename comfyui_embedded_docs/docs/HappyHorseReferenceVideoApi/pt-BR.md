@@ -1,4 +1,4 @@
-# Visão Geral
+# HappyHorse Referência para Vídeo
 
 Este nó gera um vídeo apresentando uma pessoa ou objeto com base em imagens de referência usando o modelo HappyHorse. Ele suporta a criação de vídeos com um único personagem ou múltiplos personagens interagindo entre si.
 

@@ -1,3 +1,5 @@
+# Reroute
+
 **Nome do Nó:** Nó de Redirecionamento  
 **Finalidade do Nó:** Usado principalmente para organizar a lógica de linhas de conexão excessivamente longas no fluxo de trabalho do ComfyUI.
 

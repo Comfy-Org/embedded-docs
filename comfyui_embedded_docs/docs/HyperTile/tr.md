@@ -1,3 +1,5 @@
+# HiperDöşeme
+
 HyperTile düğümü, görüntü oluşturma sırasında bellek kullanımını optimize etmek için difüzyon modellerindeki dikkat mekanizmasına bir döşeme tekniği uygular. Gizli alanı daha küçük döşemelere böler, bunları ayrı ayrı işler ve ardından sonuçları yeniden birleştirir. Bu, bellek yetersizliği sorunu yaşamadan daha büyük görüntü boyutlarıyla çalışmayı sağlar.
 
 ## Girişler

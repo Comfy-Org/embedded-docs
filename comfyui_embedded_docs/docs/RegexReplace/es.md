@@ -1,3 +1,5 @@
+# Reemplazo Regex
+
 El nodo RegexReplace busca y reemplaza texto en cadenas utilizando patrones de expresiones regulares. Permite buscar patrones de texto y reemplazarlos con texto nuevo, con opciones para controlar cómo funciona la coincidencia de patrones, incluyendo sensibilidad a mayúsculas/minúsculas, coincidencia multilínea y limitación del número de reemplazos.
 
 ## Entradas

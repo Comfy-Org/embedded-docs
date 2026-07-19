@@ -1,3 +1,5 @@
+# Recorte de Imagen
+
 El nodo `ImageCrop` está diseñado para recortar imágenes a un ancho y alto específicos, comenzando desde una coordenada x e y determinada. Esta funcionalidad es esencial para enfocarse en regiones específicas de una imagen o para ajustar el tamaño de la imagen a ciertos requisitos.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Charger le modèle de mise à l'échelle
+
 Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/upscale_models`, et il lira également les modèles à partir de chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
 Le nœud UpscaleModelLoader est conçu pour charger des modèles de suréchantillonnage à partir d'un répertoire spécifié. Il facilite la récupération et la préparation des modèles de suréchantillonnage pour les tâches d'agrandissement d'image, garantissant que les modèles sont correctement chargés et configurés pour l'évaluation.

@@ -1,4 +1,4 @@
-# VAEEncodeTiled Düğümü
+# VAE Kodlama (Döşemeli)
 
 VAEEncodeTiled düğümü, görüntüleri daha küçük parçalara bölerek ve bunları bir Değişken Otomatik Kodlayıcı (VAE) kullanarak kodlayarak işler. Bu parçalama yaklaşımı, aksi takdirde bellek sınırlarını aşabilecek büyük görüntülerin işlenmesine olanak tanır. Düğüm, hem görüntü hem de video VAE'lerini destekler ve uzamsal ve zamansal boyutlar için ayrı parçalama kontrollerine sahiptir.
 

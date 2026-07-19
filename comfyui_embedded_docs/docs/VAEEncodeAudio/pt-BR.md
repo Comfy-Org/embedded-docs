@@ -1,3 +1,5 @@
+# VAE Codificar Áudio
+
 O nó VAEEncodeAudio converte dados de áudio em uma representação latente usando um Autoencoder Variacional (VAE). Ele recebe uma entrada de áudio e a processa através do VAE para gerar amostras latentes comprimidas que podem ser usadas para tarefas posteriores de geração ou manipulação de áudio. O nó reamostra automaticamente o áudio para corresponder à taxa de amostragem esperada pelo VAE, se necessário, antes da codificação.
 
 ## Entradas

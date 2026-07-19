@@ -1,3 +1,5 @@
+# Image ByteDance
+
 Voici la traduction de la documentation du nœud ByteDance Image Node :
 
 Le nœud ByteDance Image génère des images à l'aide des modèles ByteDance via une API, en se basant sur des invites textuelles. Il vous permet de sélectionner un modèle, de spécifier les dimensions de l'image et de contrôler divers paramètres de génération tels que le seed et l'échelle de guidage. Le nœud se connecte au service de génération d'images ByteDance et renvoie l'image créée.

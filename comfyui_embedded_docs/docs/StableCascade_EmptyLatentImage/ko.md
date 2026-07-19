@@ -1,4 +1,4 @@
-# StableCascade_EmptyLatentImage
+# StableCascade 빈 잠재 이미지
 
 StableCascade_EmptyLatentImage 노드는 Stable Cascade 모델을 위한 빈 잠재 텐서를 생성합니다. 입력 해상도와 압축 설정에 따라 적절한 차원을 가진 두 개의 개별 잠재 표현(스테이지 C용과 스테이지 B용)을 생성합니다. 이 노드는 Stable Cascade 생성 파이프라인의 시작점을 제공합니다.
 

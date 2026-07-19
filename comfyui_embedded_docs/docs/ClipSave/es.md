@@ -1,3 +1,5 @@
+# Guardar CLIP
+
 El nodo `CLIPSave` guarda un modelo de codificador de texto CLIP en disco en formato SafeTensors. Está diseñado para flujos de trabajo avanzados de fusión de modelos y separa automáticamente el modelo CLIP en sus partes componentes (como CLIP-L, CLIP-G o T5XXL) según la estructura interna del modelo, guardando cada componente como un archivo separado.
 
 ## Entradas

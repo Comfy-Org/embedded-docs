@@ -1,3 +1,5 @@
+# Grok Görüntü
+
 Grok Görsel düğümü, Grok AI modelini kullanarak bir metin açıklamasına dayalı olarak bir veya daha fazla görsel oluşturur. İsteminizi harici bir servise gönderir ve oluşturulan görselleri iş akışınızda kullanabileceğiniz tensörler olarak döndürür.
 
 ## Girişler

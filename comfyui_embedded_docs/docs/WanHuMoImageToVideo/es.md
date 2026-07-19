@@ -1,3 +1,5 @@
+# WanHuMoImageToVideo
+
 El nodo WanHuMoImageToVideo convierte imágenes en secuencias de video generando representaciones latentes para los fotogramas del video. Procesa entradas de condicionamiento y puede incorporar imágenes de referencia y embeddings de audio para influir en la generación del video. El nodo produce datos de condicionamiento modificados y representaciones latentes adecuadas para la síntesis de video.
 
 ## Entradas

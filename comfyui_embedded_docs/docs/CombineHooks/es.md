@@ -1,3 +1,5 @@
+# CombineHooks
+
 El nodo **Combinar Hooks [2]** fusiona dos grupos de hooks en un único grupo combinado. Toma dos entradas opcionales de hooks y las combina utilizando la funcionalidad de combinación de hooks de ComfyUI. Esto permite consolidar múltiples configuraciones de hooks para un procesamiento optimizado.
 
 ## Entradas

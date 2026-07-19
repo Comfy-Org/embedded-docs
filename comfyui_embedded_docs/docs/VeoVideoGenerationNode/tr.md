@@ -1,3 +1,5 @@
+# Google Veo2 Video Oluşturma
+
 Google'ın Veo 2 API'sini kullanarak metin istemlerinden videolar oluşturur. Bu düğüm, metin açıklamalarından ve isteğe bağlı görsel girdilerinden, en boy oranı, süre ve daha fazlası gibi parametreler üzerinde kontrole sahip videolar oluşturabilir.
 
 ## Girdiler

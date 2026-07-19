@@ -1,3 +1,5 @@
+# GuardarWEBPAnimado
+
 Este nodo está diseñado para guardar una secuencia de imágenes como un archivo WEBP animado. Gestiona la agregación de fotogramas individuales en una animación cohesiva, aplicando metadatos específicos y optimizando la salida según la configuración de calidad y compresión.
 
 ## Entradas

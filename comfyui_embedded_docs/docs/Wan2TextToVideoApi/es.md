@@ -1,3 +1,5 @@
+# Wan 2.7 Texto a Video
+
 Este nodo genera un video a partir de una descripción textual utilizando el modelo Wan 2.7. Envía tu solicitud a una API externa, que procesa el prompt y devuelve un archivo de video. Opcionalmente, puedes proporcionar un clip de audio para influir en el movimiento y la sincronización del video.
 
 ## Entradas

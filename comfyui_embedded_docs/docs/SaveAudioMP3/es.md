@@ -1,3 +1,5 @@
+# Guardar Audio (MP3)
+
 El nodo SaveAudioMP3 guarda datos de audio como un archivo MP3. Toma una entrada de audio y la exporta al directorio de salida especificado con opciones personalizables de nombre de archivo y calidad. El nodo maneja automáticamente la asignación de nombres de archivo y la conversión de formato para crear un archivo MP3 reproducible.
 
 ## Entradas

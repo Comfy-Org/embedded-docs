@@ -1,3 +1,5 @@
+# Kanca LoRA Oluştur
+
 ComfyUI Düğüm Belgeleri - Create Hook LoRA
 
 Create Hook LoRA düğümü, modellere LoRA (Düşük Dereceli Uyarlama) değişiklikleri uygulamak için kanca nesneleri oluşturur. Belirtilen bir LoRA dosyasını yükler ve model ile CLIP güçlerini ayarlayabilen kancalar oluşturur, ardından bu kancaları kendisine iletilen mevcut kancalarla birleştirir. Düğüm, daha önce yüklenen LoRA dosyalarını önbelleğe alarak gereksiz işlemleri önler ve LoRA yüklemeyi verimli bir şekilde yönetir.

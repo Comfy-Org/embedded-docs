@@ -1,3 +1,5 @@
+# Custom Combo
+
 The Custom Combo node allows you to create a custom dropdown menu with your own list of text options. It is a frontend-focused node that provides a backend representation to ensure compatibility within your workflow. When you select an option from the dropdown, the node outputs that text as a string and its index position.
 
 ## Inputs

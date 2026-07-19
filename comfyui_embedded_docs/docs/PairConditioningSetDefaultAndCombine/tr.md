@@ -1,3 +1,5 @@
+# PairConditioningSetDefaultAndCombine
+
 **PairConditioningSetDefaultAndCombine** düğümü, varsayılan koşullandırma değerlerini ayarlar ve bunları giriş koşullandırma verileriyle birleştirir. Pozitif ve negatif koşullandırma girdilerini varsayılan karşılıklarıyla birlikte alır, ardından bunları ComfyUI'nin kanca sistemi aracılığıyla işleyerek varsayılan değerleri içeren nihai koşullandırma çıktılarını üretir.
 
 ## Girişler

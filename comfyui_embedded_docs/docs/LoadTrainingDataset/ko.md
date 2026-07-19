@@ -1,3 +1,5 @@
+# 학습 데이터셋 불러오기
+
 이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
 
 이 노드는 이전에 디스크에 저장된 인코딩된 학습 데이터셋을 불러옵니다. ComfyUI 출력 디렉터리 내의 지정된 폴더에서 모든 데이터 샤드 파일을 검색하여 읽어온 후, 결합된 잠재 벡터와 컨디셔닝 데이터를 반환하여 학습 워크플로우에서 사용할 수 있도록 합니다.

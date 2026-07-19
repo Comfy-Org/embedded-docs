@@ -1,3 +1,5 @@
+# SeuilMasque
+
 Le nœud ThresholdMask convertit un masque en un masque binaire en appliquant une valeur de seuil. Il compare chaque pixel du masque d'entrée à la valeur de seuil spécifiée et crée un nouveau masque où les pixels au-dessus du seuil deviennent 1 (blanc) et les pixels inférieurs ou égaux au seuil deviennent 0 (noir).
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Load LoRA (Bypass, Model Only) (for debugging)
+
 This node applies a LoRA (Low-Rank Adaptation) to a model to modify its behavior, but only affects the model component itself. It loads a specified LoRA file and adjusts the model's weights by a given strength, leaving other components like the CLIP text encoder unchanged.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Contiene
+
 El nodo StringContains verifica si una cadena de texto determinada contiene una subcadena especificada. Puede realizar esta verificación con coincidencia sensible a mayúsculas/minúsculas o insensible, devolviendo un resultado booleano que indica si la subcadena fue encontrada dentro de la cadena principal.
 
 ## Entradas

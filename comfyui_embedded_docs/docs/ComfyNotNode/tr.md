@@ -1,3 +1,5 @@
+# Değil
+
 ## Genel Bakış
 
 Not düğümü, herhangi bir girdi değeri üzerinde mantıksal DEĞİL (NOT) işlemi gerçekleştirir. Girdi değeri yanlış (falsy) olarak kabul ediliyorsa (0, boş dize, None, False gibi) True döndürür, girdi değeri doğru (truthy) ise False döndürür. Doğruluk değerini belirlemek için Python'un standart kurallarını kullanır.

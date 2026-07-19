@@ -1,3 +1,5 @@
+# PixVerse 模板
+
 PixVerse 模板节点允许您从可用的模板中选择用于 PixVerse 视频生成的模板。它会将您选择的模板名称转换为 PixVerse API 创建视频所需的对应模板 ID。
 
 ## 输入

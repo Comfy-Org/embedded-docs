@@ -1,3 +1,5 @@
+# FluxProCannyNode
+
 Generate image using a control image (canny). This node takes a control image and generates a new image based on the provided prompt while following the edge structure detected in the control image.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Recraft Stili - Dijital İllüstrasyon
+
 Bu düğüm, Recraft API ile kullanılmak üzere bir stil yapılandırır ve özellikle "digital_illustration" (dijital illüstrasyon) stilini seçer. Oluşturulan görüntünün sanatsal yönünü daha da hassaslaştırmak için isteğe bağlı bir alt stil seçmenize olanak tanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Toplu Latentler
+
 **Batch Latents (Toplu Gizli Değişkenler) düğümü**, birden fazla gizli değişken girdisini tek bir toplu işlemde birleştirir. Değişken sayıda gizli değişken örneği alır ve bunları toplu işlem boyutu boyunca birleştirerek sonraki düğümlerde birlikte işlenmelerini sağlar. Bu, tek bir işlemde birden fazla görüntü oluşturmak veya işlemek için kullanışlıdır.
 
 ## Girdiler

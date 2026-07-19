@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 TextEncodeAceStepAudio1.5 düğümü, metin ve sesle ilgili meta verileri AceStepAudio 1.5 modeliyle kullanılmak üzere hazırlar. Tanımlayıcı etiketleri, şarkı sözlerini ve müzikal parametreleri alır, ardından bunları bir CLIP modeli kullanarak ses üretimine uygun bir koşullandırma formatına dönüştürür.
 
 ## Girişler

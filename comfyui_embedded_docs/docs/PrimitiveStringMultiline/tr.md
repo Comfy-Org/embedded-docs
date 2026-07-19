@@ -1,3 +1,5 @@
+# String (Çok Satırlı)
+
 ## Genel Bakış
 
 PrimitiveStringMultiline düğümü, iş akışınızda dize değerleri girmek ve iletmek için çok satırlı bir metin giriş alanı sağlar. Birden çok satır içeren metin girdisini kabul eder ve aynı dize değerini değiştirmeden çıktı olarak verir. Bu düğüm, daha uzun metin içeriği veya birden çok satıra yayılan biçimlendirilmiş metin girmeniz gerektiğinde kullanışlıdır.

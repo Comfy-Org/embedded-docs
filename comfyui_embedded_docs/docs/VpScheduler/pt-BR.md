@@ -1,3 +1,5 @@
+# VPScheduler
+
 O nó VPScheduler foi projetado para gerar uma sequência de níveis de ruído (sigmas) com base no método de agendamento de Preservação de Variância (VP). Essa sequência é crucial para orientar o processo de remoção de ruído em modelos de difusão, permitindo a geração controlada de imagens ou outros tipos de dados.
 
 ## Entradas

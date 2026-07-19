@@ -1,3 +1,5 @@
+# Cond Pair Set Props Combine
+
 Voici la traduction en français de la documentation du nœud ComfyUI `PairConditioningSetPropertiesAndCombine` :
 
 Le nœud `PairConditioningSetPropertiesAndCombine` modifie et combine des paires de conditionnement en appliquant de nouvelles données de conditionnement aux entrées de conditionnement positif et négatif existantes. Il permet d'ajuster la force du conditionnement appliqué et de contrôler la définition de la zone de conditionnement. Ce nœud est particulièrement utile pour les workflows avancés de manipulation du conditionnement où vous devez fusionner plusieurs sources de conditionnement.

@@ -1,3 +1,5 @@
+# ByteDance Première-Dernière Image vers Vidéo
+
 Ce nœud génère une vidéo à partir d'une invite textuelle ainsi que d'images de première et dernière images. Il prend votre description et les deux images clés pour créer une séquence vidéo complète qui effectue une transition entre elles. Le nœud offre diverses options pour contrôler la résolution, le rapport hauteur/largeur, la durée et d'autres paramètres de génération de la vidéo.
 
 ## Entrées

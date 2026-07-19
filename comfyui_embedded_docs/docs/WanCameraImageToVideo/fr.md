@@ -1,3 +1,5 @@
+# Image vers vidéo WanCamera
+
 Le nœud WanCameraImageToVideo convertit des images en séquences vidéo en générant des représentations latentes pour la génération vidéo. Il traite les entrées de conditionnement et les images de départ optionnelles pour créer des latents vidéo utilisables avec des modèles vidéo. Le nœud prend en charge les conditions de caméra et les sorties CLIP vision pour un contrôle amélioré de la génération vidéo.
 
 ## Entrées

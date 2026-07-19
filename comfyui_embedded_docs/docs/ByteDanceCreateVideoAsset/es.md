@@ -1,3 +1,5 @@
+# ByteDance Crear Asset de Video
+
 Este nodo crea un activo de video personal para Seedance 2.0. Carga tu video de entrada y lo registra dentro de un grupo de activos especificado. Si no proporcionas un ID de grupo, te guiará a través de un proceso de verificación de persona real en tu navegador para crear un nuevo grupo primero.
 
 ## Entradas

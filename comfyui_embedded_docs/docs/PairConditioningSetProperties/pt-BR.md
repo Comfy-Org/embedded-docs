@@ -1,3 +1,5 @@
+# Definir Propriedades do Par de Condições
+
 O nó **PairConditioningSetProperties** permite modificar propriedades de pares de condicionamento positivo e negativo simultaneamente. Ele aplica ajustes de intensidade, configurações de área de condicionamento e controles opcionais de máscara ou temporização a ambas as entradas de condicionamento, retornando os dados de condicionamento positivo e negativo modificados.
 
 ## Entradas

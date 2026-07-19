@@ -1,3 +1,5 @@
+# Note
+
 Nó para adicionar anotações a um fluxo de trabalho.
 
 ## Entradas

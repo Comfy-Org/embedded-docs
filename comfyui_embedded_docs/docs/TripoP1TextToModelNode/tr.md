@@ -1,3 +1,5 @@
+# Tripo P1: Metinden Modele
+
 ## Genel Bakış
 
 Bu düğüm, Tripo P1 API'sini kullanarak bir metin açıklamasından 3B model oluşturur. Düşük poli sayılı, oyuna hazır, kararlı topolojiye sahip ağlar oluşturmak için optimize edilmiştir ve gerçek zamanlı uygulamalar için uygundur.

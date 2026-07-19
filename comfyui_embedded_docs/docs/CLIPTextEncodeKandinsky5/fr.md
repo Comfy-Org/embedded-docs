@@ -1,3 +1,5 @@
+# CLIPTextEncodeKandinsky5
+
 Le nœud CLIPTextEncodeKandinsky5 prépare les invites textuelles pour une utilisation avec le modèle Kandinsky 5. Il prend deux entrées de texte distinctes, les tokenise à l'aide d'un modèle CLIP fourni, et les combine en une seule sortie de conditionnement. Cette sortie est utilisée pour guider le processus de génération d'images.
 
 ## Entrées

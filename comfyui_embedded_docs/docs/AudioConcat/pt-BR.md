@@ -1,3 +1,5 @@
+# Concatenação de Áudio
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AudioConcat/en.md)
 
 O nó AudioConcat combina duas entradas de áudio unindo-as. Ele recebe duas entradas de áudio e as conecta na ordem especificada, colocando o segundo áudio antes ou depois do primeiro. O nó lida automaticamente com diferentes formatos de áudio, convertendo áudio mono para estéreo e equalizando as taxas de amostragem entre as duas entradas.

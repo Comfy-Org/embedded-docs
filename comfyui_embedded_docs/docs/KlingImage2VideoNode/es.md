@@ -1,4 +1,4 @@
-# Nodo Kling Imagen a Video
+# Kling Imagen a Video
 
 El nodo Kling Imagen a Video genera un video a partir de una imagen de referencia inicial utilizando indicaciones de texto. Toma una imagen como primer fotograma y crea una secuencia de video basada en descripciones de texto positivas y negativas, con opciones configurables para modelo, duración, relación de aspecto y modo de generación.
 

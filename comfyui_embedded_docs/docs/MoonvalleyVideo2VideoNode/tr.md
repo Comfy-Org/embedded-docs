@@ -1,3 +1,5 @@
+# MoonvalleyVideo2VideoNode
+
 Moonvalley Marey Video'dan Video'ya düğümü, bir girdi videosunu metin açıklamasına dayalı olarak yeni bir videoya dönüştürür. Orijinal videodaki hareket veya poz özelliklerini korurken, isteminize uygun videolar oluşturmak için Moonvalley API'sini kullanır. Çıktı videosunun stilini ve içeriğini metin istemleri ve çeşitli oluşturma parametreleri aracılığıyla kontrol edebilirsiniz.
 
 ## Girdiler

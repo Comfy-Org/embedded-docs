@@ -1,3 +1,5 @@
+# Méthode latente multi-référence FluxKontext
+
 Voici la traduction en français de la documentation du nœud FluxKontextMultiReferenceLatentMethod :
 
 Le nœud FluxKontextMultiReferenceLatentMethod modifie les données de conditionnement en définissant une méthode spécifique pour les latents de référence. Il ajoute la méthode choisie à l'entrée de conditionnement, ce qui affecte la façon dont les latents de référence sont traités lors des étapes de génération ultérieures. Ce nœud est marqué comme expérimental et fait partie du système de conditionnement Flux.

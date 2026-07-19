@@ -1,3 +1,5 @@
+# SigmalarıGürültüAzaltmaBöl
+
 SplitSigmasDenoise düğümü, bir sigma değerleri dizisini gürültü giderme gücü parametresine göre iki parçaya böler. Giriş sigmalarını yüksek ve düşük sigma dizilerine ayırır; bölünme noktası, toplam adım sayısının gürültü giderme faktörü ile çarpılmasıyla belirlenir. Bu, gürültü programının özel işleme için farklı yoğunluk aralıklarına ayrılmasını sağlar.
 
 ## Girişler

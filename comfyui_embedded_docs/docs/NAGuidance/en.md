@@ -1,3 +1,5 @@
+# Normalized Attention Guidance
+
 The NAGuidance node applies Normalized Attention Guidance to a model. This technique enables the use of negative prompts with distilled or schnell models by modifying the model's attention mechanism during the sampling process to steer the generation away from undesired concepts.
 
 ## Inputs

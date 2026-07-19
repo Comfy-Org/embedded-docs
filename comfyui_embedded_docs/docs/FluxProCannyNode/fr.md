@@ -1,3 +1,5 @@
+# FluxProCannyNode
+
 Générer une image à l'aide d'une image de contrôle (canny). Ce nœud prend une image de contrôle et génère une nouvelle image basée sur le prompt fourni, tout en suivant la structure des contours détectée dans l'image de contrôle.
 
 ## Entrées

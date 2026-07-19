@@ -1,3 +1,5 @@
+# Redimensionner les images par le bord le plus court
+
 Ce nœud redimensionne les images afin que le bord le plus court corresponde à une longueur spécifiée, tout en préservant le rapport hauteur/largeur d'origine. Il calcule de nouvelles dimensions en fonction de la longueur cible pour le côté le plus court et renvoie l'image redimensionnée.
 
 ## Entrées

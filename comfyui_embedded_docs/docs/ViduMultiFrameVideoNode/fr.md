@@ -1,3 +1,5 @@
+# Génération de vidéo multi-images Vidu
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
 
 Ce nœud génère une vidéo en créant des transitions entre plusieurs images clés. Il part d'une image initiale et anime une séquence d'images finales et de prompts définis par l'utilisateur, produisant un fichier vidéo unique en sortie.

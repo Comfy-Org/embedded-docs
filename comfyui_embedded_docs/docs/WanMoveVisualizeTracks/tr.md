@@ -1,3 +1,5 @@
+# WanMoveVisualizeTracks
+
 WanMoveVisualizeTracks düğümü, hareket takip verilerini bir dizi görüntü veya video karesi üzerine yerleştirir. Takip edilen noktaların hareket yolları ve mevcut konumları dahil olmak üzere görsel temsillerini çizerek hareket verilerini görünür hale getirir ve analiz edilmesini kolaylaştırır.
 
 ## Girişler

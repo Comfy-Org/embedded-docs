@@ -1,3 +1,5 @@
+# Recraft Imagem para Imagem
+
 Este nó modifica uma imagem existente com base em um prompt de texto e um parâmetro de intensidade. Ele utiliza a API Recraft para transformar a imagem de entrada de acordo com a descrição fornecida, mantendo alguma similaridade com a imagem original com base na configuração de intensidade.
 
 ## Entradas

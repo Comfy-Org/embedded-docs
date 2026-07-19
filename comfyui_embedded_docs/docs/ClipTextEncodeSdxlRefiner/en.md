@@ -1,3 +1,5 @@
+# CLIP Text Encode (SDXL Refiner)
+
 This node is specifically designed for the SDXL Refiner model to convert text prompts into conditioning information by incorporating aesthetic scores and dimensional information to enhance the conditions for generation tasks, thereby improving the final refinement effect. It acts like a professional art director, not only conveying your creative intent but also injecting precise aesthetic standards and specification requirements into the work.
 
 ## About SDXL Refiner

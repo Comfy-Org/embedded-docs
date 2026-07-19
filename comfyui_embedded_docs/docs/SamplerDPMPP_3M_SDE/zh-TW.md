@@ -1,3 +1,5 @@
+# SamplerDPMPP_3M_SDE
+
 ## 概述
 
 SamplerDPMPP_3M_SDE 節點建立一個用於取樣過程的 DPM++ 3M SDE 取樣器。此取樣器使用三階多步隨機微分方程方法，並配備可設定的噪聲參數。該節點允許您選擇噪聲計算是在 GPU 還是 CPU 上執行。

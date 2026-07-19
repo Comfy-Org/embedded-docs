@@ -1,3 +1,5 @@
+# ModelBirleştirmeFlux1
+
 ModelMergeFlux1 düğümü, iki difüzyon modelini bileşenlerini ağırlıklı enterpolasyon kullanarak harmanlayarak birleştirir. Görüntü işleme blokları, zaman gömme katmanları, yönlendirme mekanizmaları, vektör girdileri, metin kodlayıcılar ve çeşitli dönüştürücü blokları dahil olmak üzere modellerin farklı bölümlerinin nasıl birleştirileceği üzerinde ince ayar yapma kontrolü sağlar. Bu, iki kaynak modelden özelleştirilmiş özelliklere sahip hibrit modeller oluşturmayı mümkün kılar.
 
 ## Girdiler

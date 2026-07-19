@@ -1,3 +1,5 @@
+# StableCascade_StageC VAE 인코딩
+
 StableCascade_StageC_VAEEncode 노드는 VAE 인코더를 통해 이미지를 처리하여 Stable Cascade 모델용 잠재 표현을 생성합니다. 입력 이미지를 받아 지정된 VAE 모델을 사용하여 압축한 후, stage C용 잠재 표현과 stage B용 플레이스홀더라는 두 가지 잠재 표현을 출력합니다. 압축 매개변수는 인코딩 전 이미지가 축소되는 정도를 제어합니다.
 
 ## 입력

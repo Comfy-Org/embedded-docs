@@ -1,3 +1,5 @@
+# Controles de Cámara Kling
+
 El nodo Controles de Cámara Kling permite configurar varios parámetros de movimiento y rotación de cámara para crear efectos de control de movimiento en la generación de videos. Proporciona controles para posicionamiento, rotación y zoom de la cámara, simulando diferentes movimientos cinematográficos.
 
 ## Entradas

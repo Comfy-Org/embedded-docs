@@ -1,3 +1,5 @@
+# Geração de Vídeo por Referência Vidu
+
 Esta documentação foi gerada por IA. Caso encontre erros ou tenha sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduReferenceVideoNode/en.md)
 
 O Nó de Vídeo de Referência Vidu gera vídeos a partir de múltiplas imagens de referência e um prompt de texto. Ele utiliza modelos de IA para criar conteúdo de vídeo consistente com base nas imagens e na descrição fornecidas. O nó suporta várias configurações de vídeo, incluindo duração, proporção de aspecto, resolução e controle de movimento.

@@ -1,3 +1,5 @@
+# Runway Texte vers Image
+
 Le nœud Runway Text to Image génère des images à partir de descriptions textuelles en utilisant le modèle Gen 4 de Runway. Vous pouvez fournir une description textuelle et éventuellement inclure une image de référence pour guider le processus de génération d'image. Le nœud gère la communication avec l'API et renvoie l'image générée.
 
 ## Entrées

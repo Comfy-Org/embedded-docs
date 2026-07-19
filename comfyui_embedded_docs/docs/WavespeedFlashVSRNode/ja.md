@@ -1,3 +1,5 @@
+# FlashVSRビデオ高解像度化
+
 このドキュメントはAI生成です。誤りや改善の提案がありましたら、ぜひご協力ください！[GitHubで編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WavespeedFlashVSRNode/en.md)
 
 WavespeedFlashVSRNodeは、低解像度やぼやけた映像の解像度を向上させ、鮮明さを復元する高速・高品質なビデオアップスケーラーです。ビデオ入力を処理し、ユーザーが選択した高解像度で新しいビデオを出力します。

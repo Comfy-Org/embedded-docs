@@ -1,3 +1,5 @@
+# SamplingPercentToSigma
+
 ## 概述
 
 SamplingPercentToSigma 節點使用模型的取樣參數，將取樣百分比值轉換為對應的 sigma 值。它接受介於 0.0 到 1.0 之間的百分比值，並將其映射到模型噪聲調度中的適當 sigma 值，同時提供選項來返回計算出的 sigma 值或邊界處的實際最大/最小 sigma 值。

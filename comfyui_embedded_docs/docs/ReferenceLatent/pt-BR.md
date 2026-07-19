@@ -1,3 +1,5 @@
+# ReferenceLatent
+
 Este nó define a latente guia para um modelo de edição. Ele recebe dados de condicionamento e uma entrada latente opcional, em seguida, modifica o condicionamento para incluir informações de latente de referência. Se o modelo suportar, você pode encadear vários nós ReferenceLatent para definir várias imagens de referência.
 
 ## Entradas

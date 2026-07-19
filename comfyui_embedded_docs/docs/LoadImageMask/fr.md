@@ -1,3 +1,5 @@
+# Charger Image (comme Masque)
+
 Le nœud LoadImageMask est conçu pour charger des images et leurs masques associés depuis un chemin spécifié, en les traitant pour garantir leur compatibilité avec des tâches ultérieures de manipulation ou d'analyse d'images. Il se concentre sur la gestion de divers formats d'image et conditions, comme la présence d'un canal alpha pour les masques, et prépare les images et les masques pour un traitement en aval en les convertissant dans un format standardisé.
 
 ## Entrées

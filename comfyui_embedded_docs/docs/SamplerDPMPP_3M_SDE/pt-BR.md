@@ -1,3 +1,5 @@
+# SamplerDPMPP_3M_SDE
+
 O nó SamplerDPMPP_3M_SDE cria um amostrador DPM++ 3M SDE para uso no processo de amostragem. Este amostrador utiliza um método de equação diferencial estocástica multietapa de terceira ordem com parâmetros de ruído configuráveis. O nó permite escolher se os cálculos de ruído são realizados na GPU ou CPU.
 
 ## Entradas

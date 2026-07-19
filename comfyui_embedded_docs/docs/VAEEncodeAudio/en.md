@@ -1,3 +1,5 @@
+# VAE Encode Audio
+
 The VAEEncodeAudio node converts audio data into a latent representation using a Variational Autoencoder (VAE). It takes audio input and processes it through the VAE to generate compressed latent samples that can be used for further audio generation or manipulation tasks. The node automatically resamples audio to match the VAE's expected sample rate if needed before encoding.
 
 ## Inputs

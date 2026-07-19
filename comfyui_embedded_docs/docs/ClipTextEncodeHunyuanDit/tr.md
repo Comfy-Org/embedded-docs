@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaHunyuanDiT
+
 `CLIPTextEncodeHunyuanDiT` düğümü, metin açıklamalarını HunyuanDiT modelinin anlayabileceği bir biçime dönüştürür. HunyuanDiT'in çift metin kodlayıcı mimarisi için tasarlanmış gelişmiş bir koşullandırma düğümüdür; iki ayrı metin girdisini farklı tokenlaştırıcılar aracılığıyla işler.
 
 ## Girdiler

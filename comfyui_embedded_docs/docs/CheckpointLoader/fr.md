@@ -1,3 +1,5 @@
+# Charger Point de Contrôle Avec Config (OBSOLÈTE)
+
 Le nœud CheckpointLoader charge un point de contrôle de modèle pré-entraîné ainsi que son fichier de configuration. Il prend en entrée un fichier de configuration et un fichier de point de contrôle, puis retourne les composants du modèle chargé, notamment le modèle principal, le modèle CLIP et le modèle VAE, pour une utilisation dans le workflow.
 
 ## Entrées

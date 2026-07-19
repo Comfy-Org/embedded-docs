@@ -1,3 +1,5 @@
+# UNetSelfAttentionMultiply
+
 O nó UNetSelfAttentionMultiply aplica fatores de multiplicação aos componentes de consulta, chave, valor e saída do mecanismo de autoatenção em um modelo UNet. Ele permite escalar diferentes partes do cálculo de atenção para experimentar como os pesos de atenção afetam o comportamento do modelo.
 
 ## Entradas

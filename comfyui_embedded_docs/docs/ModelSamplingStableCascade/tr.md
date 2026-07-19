@@ -1,3 +1,5 @@
+# ModelÖrneklemeStabilKaskad
+
 ModelSamplingStableCascade düğümü, örnekleme parametrelerine bir kaydırma değeri uygulayarak bir modele kararlı basamaklı örnekleme uygular. Giriş modelinin, kararlı basamaklı üretim için özel örnekleme yapılandırmasına sahip değiştirilmiş bir sürümünü oluşturur.
 
 ## Girişler

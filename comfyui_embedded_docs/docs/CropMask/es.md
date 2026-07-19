@@ -1,3 +1,5 @@
+# CropMask
+
 El nodo CropMask está diseñado para recortar un área específica de una máscara determinada. Permite a los usuarios definir la región de interés especificando coordenadas y dimensiones, extrayendo eficazmente una porción de la máscara para su posterior procesamiento o análisis.
 
 ## Entradas

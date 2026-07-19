@@ -1,3 +1,5 @@
+# Remover Espaços
+
 O nó StringTrim remove caracteres de espaço em branco do início, fim ou ambos os lados de uma string de texto. Você pode escolher aparar pelo lado esquerdo, direito ou ambos os lados da string. Isso é útil para limpar entradas de texto, removendo espaços, tabulações ou quebras de linha indesejados.
 
 ## Entradas

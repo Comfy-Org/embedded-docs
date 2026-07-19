@@ -1,3 +1,5 @@
+# SplitSigmasDenoise
+
 El nodo SplitSigmasDenoise divide una secuencia de valores sigma en dos partes basándose en un parámetro de fuerza de eliminación de ruido. Divide los sigmas de entrada en secuencias de sigma altas y bajas, donde el punto de división se determina multiplicando el total de pasos por el factor de eliminación de ruido. Esto permite separar el programa de ruido en diferentes rangos de intensidad para un procesamiento especializado.
 
 ## Entradas

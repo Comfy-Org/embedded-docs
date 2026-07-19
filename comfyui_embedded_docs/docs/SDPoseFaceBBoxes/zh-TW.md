@@ -1,3 +1,5 @@
+# SDPoseFaceBBoxes
+
 SDPoseFaceBBoxes 節點處理姿態關鍵點資料，以偵測並生成人臉周圍的邊界框。它分析畫面中每個人的 2D 臉部關鍵點，根據這些點計算邊界框，並可調整框的大小與形狀。生成的邊界框格式與 SDPose 工作流程中的其他節點（如 SDPoseKeypointExtractor）相容。
 
 ## 輸入

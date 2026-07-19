@@ -1,3 +1,5 @@
+# LatentApplyOperationCFG
+
 El nodo LatentApplyOperationCFG aplica una operación latente para modificar el proceso de guiado de condicionamiento en un modelo. Funciona interceptando las salidas de condicionamiento durante el proceso de muestreo de guiado sin clasificador (CFG) y aplicando la operación especificada a las representaciones latentes antes de que se utilicen para la generación.
 
 ## Entradas

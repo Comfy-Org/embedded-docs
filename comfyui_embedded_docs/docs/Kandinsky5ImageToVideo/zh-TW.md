@@ -1,3 +1,5 @@
+# Kandinsky5ImageToVideo
+
 Kandinsky5ImageToVideo 節點使用 Kandinsky 模型為影片生成準備條件設定（conditioning）與潛在空間（latent space）資料。它會建立一個空的影片潛在張量，並可選擇性地對起始影像進行編碼，以引導生成影片的初始幀，並相應地修改正向與負向條件設定。
 
 ## 輸入

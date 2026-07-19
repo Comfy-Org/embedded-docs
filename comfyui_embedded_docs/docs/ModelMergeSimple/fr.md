@@ -1,3 +1,5 @@
+# ModelMergeSimple
+
 Le nœud ModelMergeSimple est conçu pour fusionner deux modèles en combinant leurs paramètres selon un ratio spécifié. Ce nœud facilite la création de modèles hybrides qui allient les forces ou caractéristiques des deux modèles d'entrée.
 
 Le paramètre `ratio` détermine le rapport de mélange entre les deux modèles. Lorsque cette valeur est à 1, le modèle de sortie est composé à 100 % de `model1`, et lorsqu'elle est à 0, le modèle de sortie est composé à 100 % de `model2`.

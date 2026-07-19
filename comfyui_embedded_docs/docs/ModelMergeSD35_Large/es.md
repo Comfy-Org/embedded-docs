@@ -1,3 +1,5 @@
+# ModelMergeSD35_Large
+
 El nodo `ModelMergeSD35_Large` permite fusionar dos modelos Stable Diffusion 3.5 Large combinando la influencia de diferentes componentes del modelo. Proporciona un control preciso sobre cuánto contribuye cada parte del segundo modelo al modelo fusionado final, desde las capas de incrustación hasta los bloques conjuntos y las capas finales.
 
 ## Entradas

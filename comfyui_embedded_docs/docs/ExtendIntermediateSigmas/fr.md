@@ -1,3 +1,5 @@
+# ExtendIntermediateSigmas
+
 Le nœud ExtendIntermediateSigmas prend une séquence existante de valeurs sigma et insère des valeurs sigma intermédiaires supplémentaires entre elles. Il vous permet de spécifier le nombre d'étapes supplémentaires à ajouter, la méthode d'espacement pour l'interpolation, ainsi que des limites sigma de début et de fin optionnelles pour contrôler où l'extension se produit dans la séquence sigma.
 
 ## Entrées

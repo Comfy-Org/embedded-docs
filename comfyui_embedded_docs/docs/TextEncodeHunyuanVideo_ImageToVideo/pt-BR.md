@@ -1,3 +1,5 @@
+# TextEncodeHunyuanVideo_ImageToVideo
+
 O nó TextEncodeHunyuanVideo_ImageToVideo cria dados de condicionamento para geração de vídeo combinando prompts de texto com embeddings de imagem. Ele utiliza um modelo CLIP para processar tanto a entrada de texto quanto as informações visuais de uma saída de visão CLIP, gerando então tokens que mesclam essas duas fontes de acordo com a configuração especificada de intercalação de imagem.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Establecer Propiedades Cond Combinar
+
 El nodo `ConditioningSetPropertiesAndCombine` modifica datos de condicionamiento aplicando propiedades de una nueva entrada de condicionamiento a una entrada de condicionamiento existente. Combina los dos conjuntos de condicionamiento mientras controla la intensidad del nuevo condicionamiento y especifica cómo debe aplicarse el área de condicionamiento.
 
 ## Entradas

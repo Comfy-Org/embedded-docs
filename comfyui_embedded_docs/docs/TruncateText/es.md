@@ -1,3 +1,5 @@
+# Truncar texto
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TruncateText/en.md)
 
 Este nodo acorta texto cortándolo en una longitud máxima especificada. Toma cualquier texto de entrada y devuelve solo la primera parte, hasta la cantidad de caracteres que establezcas. Es una forma sencilla de garantizar que el texto no supere un tamaño determinado.

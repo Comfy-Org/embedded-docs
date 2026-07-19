@@ -1,3 +1,5 @@
+# Recraft V4 Texte vers Vectoriel
+
 Voici la traduction en français de la documentation du nœud Recraft V4 Text to Vector :
 
 Le nœud Recraft V4 Texte vers Vecteur génère des illustrations vectorielles (SVG) à partir d'une description textuelle. Il se connecte à une API externe pour utiliser le modèle Recraft V4 ou Recraft V4 Pro pour la génération d'images. Le nœud produit une ou plusieurs images SVG en fonction de votre invite.

@@ -1,3 +1,5 @@
+# LatentOperationTonemapReinhard
+
 O nó LatentOperationTonemapReinhard aplica o mapeamento tonal Reinhard a vetores latentes. Esta técnica normaliza os vetores latentes e ajusta sua magnitude usando uma abordagem estatística baseada em média e desvio padrão, com a intensidade controlada por um parâmetro multiplicador.
 
 ## Entradas

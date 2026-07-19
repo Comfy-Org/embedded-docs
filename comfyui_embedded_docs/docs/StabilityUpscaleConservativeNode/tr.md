@@ -1,3 +1,5 @@
+# Stability AI Büyütme Muhafazakar
+
 ## Genel Bakış
 
 Görüntüyü minimum değişiklikle 4K çözünürlüğe yükseltir. Bu düğüm, Stability AI'nın koruyucu ölçekleme teknolojisini kullanarak görüntü çözünürlüğünü artırır, orijinal içeriği korur ve yalnızca ince ayarlamalar yapar.

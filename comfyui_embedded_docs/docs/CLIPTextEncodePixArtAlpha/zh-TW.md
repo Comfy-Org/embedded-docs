@@ -1,3 +1,5 @@
+# CLIPTextEncodePixArtAlpha
+
 為 PixArt Alpha 編碼文字並設定解析度條件。此節點處理文字輸入，並加入寬度與高度資訊，以建立專門用於 PixArt Alpha 模型的條件資料。不適用於 PixArt Sigma 模型。
 
 ## 輸入

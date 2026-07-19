@@ -1,3 +1,5 @@
+# Ideogram V2
+
 Le nœud Ideogram V2 génère des images à l'aide du modèle d'IA Ideogram V2. Il prend des invites textuelles et divers paramètres de génération pour créer des images via un service API. Le nœud prend en charge différents ratios d'aspect, résolutions et options de style pour personnaliser les images de sortie.
 
 ## Entrées

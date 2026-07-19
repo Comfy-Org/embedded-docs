@@ -1,3 +1,5 @@
+# Convert Image to Mask
+
 The ImageToMask node is designed to convert an image into a mask based on a specified color channel. It allows for the extraction of mask layers corresponding to the red, green, blue, or alpha channels of an image, facilitating operations that require channel-specific masking or processing.
 
 ## Inputs

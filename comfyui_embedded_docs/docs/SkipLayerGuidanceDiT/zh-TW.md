@@ -1,3 +1,5 @@
+# 跳過層引導 DiT
+
 透過使用另一組帶有跳層的 CFG 負面條件，增強對詳細結構的引導。此通用版本的 SkipLayerGuidance 可用於所有 DiT 模型，其靈感來自於 Perturbed Attention Guidance。原始的實驗性實作是為 SD3 所建立。
 
 ## 輸入

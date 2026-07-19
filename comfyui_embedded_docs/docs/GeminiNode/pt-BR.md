@@ -1,3 +1,5 @@
+# Google Gemini
+
 Este nó permite que usuários interajam com os modelos de IA Gemini do Google para gerar respostas de texto. Você pode fornecer vários tipos de entradas, incluindo texto, imagens, áudio, vídeo e arquivos como contexto para o modelo gerar respostas mais relevantes e significativas. O nó gerencia automaticamente toda a comunicação com a API e a análise das respostas.
 
 ## Entradas

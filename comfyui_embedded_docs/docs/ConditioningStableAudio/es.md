@@ -1,3 +1,5 @@
+# Acondicionamiento Audio Estable
+
 El nodo ConditioningStableAudio agrega información de temporización a las entradas de condicionamiento tanto positivas como negativas para la generación de audio. Establece los parámetros de tiempo de inicio y duración total que ayudan a controlar cuándo y durante cuánto tiempo se debe generar el contenido de audio. Este nodo modifica los datos de condicionamiento existentes añadiendo metadatos de temporización específicos de audio.
 
 ## Entradas

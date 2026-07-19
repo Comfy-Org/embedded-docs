@@ -1,3 +1,5 @@
+# ÖrnekleyiciDPMPP_3M_SDE
+
 SamplerDPMPP_3M_SDE düğümü, örnekleme sürecinde kullanılmak üzere bir DPM++ 3M SDE örnekleyicisi oluşturur. Bu örnekleyici, yapılandırılabilir gürültü parametrelerine sahip üçüncü dereceden çok adımlı bir stokastik diferansiyel denklem yöntemi kullanır. Düğüm, gürültü hesaplamalarının GPU veya CPU'da yapılıp yapılmayacağını seçmenize olanak tanır.
 
 ## Girişler

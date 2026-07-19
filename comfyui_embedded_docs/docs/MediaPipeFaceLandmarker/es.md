@@ -1,4 +1,4 @@
-# Descripción general
+# MediaPipe Face Landmarker
 
 Detecta rostros en una imagen e identifica 468 puntos de referencia faciales (puntos clave) en cada rostro utilizando los modelos BlazeFace y FaceMesh de MediaPipe. También calcula coeficientes de formas híbridas ARKit-52 para el análisis de expresiones faciales. El nodo puede procesar múltiples imágenes en un lote y genera tanto los datos de los puntos de referencia como los cuadros delimitadores para cada rostro detectado.
 

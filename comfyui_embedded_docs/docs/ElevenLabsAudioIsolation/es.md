@@ -1,3 +1,5 @@
+# ElevenLabs Aislamiento de Voz
+
 El nodo de Aislamiento de Voz de ElevenLabs elimina el ruido de fondo de un archivo de audio, aislando las voces o el habla. Envía el audio a la API de ElevenLabs para su procesamiento y devuelve el audio limpio.
 
 ## Entradas

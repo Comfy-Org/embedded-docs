@@ -1,3 +1,5 @@
+# ModelSamplingAuraFlow
+
 El nodo ModelSamplingAuraFlow aplica una configuración de muestreo especializada a modelos de difusión, diseñada específicamente para arquitecturas de modelo AuraFlow. Modifica el comportamiento de muestreo del modelo aplicando un parámetro de desplazamiento que ajusta la distribución de muestreo. Este nodo hereda del marco de muestreo de modelos SD3 y proporciona un control preciso sobre el proceso de muestreo.
 
 ## Entradas

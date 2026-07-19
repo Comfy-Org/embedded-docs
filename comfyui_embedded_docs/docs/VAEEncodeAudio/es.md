@@ -1,3 +1,5 @@
+# VAEEncodeAudio
+
 El nodo VAEEncodeAudio convierte datos de audio en una representación latente utilizando un Autoencoder Variacional (VAE). Toma una entrada de audio y la procesa a través del VAE para generar muestras latentes comprimidas que pueden utilizarse para tareas posteriores de generación o manipulación de audio. El nodo remuestrea automáticamente el audio para que coincida con la frecuencia de muestreo esperada del VAE si es necesario antes de la codificación.
 
 ## Entradas

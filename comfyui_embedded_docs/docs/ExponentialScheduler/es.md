@@ -1,3 +1,5 @@
+# ExponentialScheduler
+
 El nodo `ExponentialScheduler` está diseñado para generar una secuencia de valores sigma siguiendo un programa exponencial para procesos de muestreo por difusión. Proporciona un enfoque personalizable para controlar los niveles de ruido aplicados en cada paso del proceso de difusión, permitiendo un ajuste fino del comportamiento del muestreo.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# KolayÖnbellek
+
 EasyCache düğümü, örnekleme işlemi sırasında önceden hesaplanmış adımları yeniden kullanarak performansı artırmak için modeller için yerel bir önbellekleme sistemi uygular. Örnekleme zaman çizelgesinde önbelleğin ne zaman kullanılmaya başlanacağı ve ne zaman durdurulacağı için yapılandırılabilir eşik değerleriyle bir modele EasyCache işlevselliği ekler.
 
 ## Girişler

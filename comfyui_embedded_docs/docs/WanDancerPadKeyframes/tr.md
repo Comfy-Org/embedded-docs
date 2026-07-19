@@ -1,3 +1,5 @@
+# WanDancerPadKeyframes
+
 ## Genel Bakış
 
 Bu düğüm, daha uzun bir video oluşturma sürecinin belirli bir bölümü için bir dizi ana kare hazırlar. Bir grup girdi görüntüsü ve bir ses parçası alır, ses süresine göre tam videonun sahip olması gereken toplam kare sayısını hesaplar ve ardından girdi görüntülerini seçilen bölüm boyunca ana kareler olarak dağıtır, kalan kısımları boş karelerle doldurur. Ayrıca bu bölüm için sesin ilgili kısmını çıkarır.

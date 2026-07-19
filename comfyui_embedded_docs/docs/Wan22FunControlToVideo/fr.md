@@ -1,3 +1,5 @@
+# Wan22FunControlToVideo
+
 Le nœud Wan22FunControlToVideo prépare les représentations de conditionnement et latentes pour la génération vidéo en utilisant l'architecture du modèle vidéo Wan. Il traite les entrées de conditionnement positif et négatif, ainsi que des images de référence et des vidéos de contrôle optionnelles, pour créer les représentations latentes nécessaires à la synthèse vidéo. Le nœud gère la mise à l'échelle spatiale et les dimensions temporelles afin de générer des données de conditionnement adaptées aux modèles vidéo.
 
 ## Entrées

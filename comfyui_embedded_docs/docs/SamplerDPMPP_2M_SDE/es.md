@@ -1,3 +1,5 @@
+# SamplerDPMPP_2M_SDE
+
 El nodo SamplerDPMPP_2M_SDE crea un muestreador DPM++ 2M SDE para modelos de difusión. Este muestreador utiliza solucionadores de ecuaciones diferenciales de segundo orden con ecuaciones diferenciales estocásticas para generar muestras. Ofrece diferentes tipos de solucionadores y opciones de manejo de ruido para controlar el proceso de muestreo.
 
 ## Entradas

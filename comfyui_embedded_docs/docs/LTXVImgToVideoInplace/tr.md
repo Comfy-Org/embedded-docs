@@ -1,3 +1,5 @@
+# LTXVImgToVideoInplace
+
 LTXVImgToVideoInplace düğümü, bir giriş görüntüsünü ilk karelerine kodlayarak bir video gizil temsilini koşullandırır. Bir VAE kullanarak görüntüyü gizil uzaya kodlar ve belirtilen bir güç değerine göre mevcut gizil örneklerle harmanlar. Bu sayede bir görüntü, video üretimi için başlangıç noktası veya koşullandırma sinyali olarak kullanılabilir.
 
 ## Girişler

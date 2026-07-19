@@ -1,3 +1,5 @@
+# Batch Images
+
 The Batch Images node combines multiple individual images into a single batch. It takes a variable number of image inputs and outputs them as one batched image tensor, allowing them to be processed together in subsequent nodes.
 
 ## Inputs

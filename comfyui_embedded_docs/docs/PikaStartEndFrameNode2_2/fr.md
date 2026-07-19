@@ -1,3 +1,5 @@
+# PikaStartEndFrameNode2_2
+
 Le nœud PikaFrames v2.2 génère une vidéo en combinant votre première et dernière image. Vous téléchargez deux images pour définir les points de début et de fin, et l'IA crée une transition fluide entre elles pour produire une vidéo complète.
 
 ## Entrées

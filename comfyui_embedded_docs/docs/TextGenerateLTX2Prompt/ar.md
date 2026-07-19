@@ -1,3 +1,5 @@
+# TextGenerateLTX2Prompt
+
 بالتأكيد، إليك الترجمة العربية للوثيقة مع الالتزام التام بالقواعد المحددة:
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [عدّل على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/TextGenerateLTX2Prompt/en.md)

@@ -1,3 +1,5 @@
+# SamplerDpmpp2mSde
+
 Ce nœud est conçu pour générer un échantillonneur pour le modèle DPMPP_2M_SDE, permettant la création d'échantillons basés sur des types de solveurs, des niveaux de bruit et des préférences de périphérique de calcul spécifiés. Il abstrait les complexités de la configuration de l'échantillonneur, offrant une interface simplifiée pour générer des échantillons avec des paramètres personnalisés.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# VAEDecodeAudio
+
 Le nœud VAEDecodeAudio convertit les représentations latentes en formes d'onde audio à l'aide d'un autoencodeur variationnel (VAE). Il prend des échantillons audio encodés et les traite via le VAE pour reconstruire l'audio original, en appliquant une normalisation pour garantir des niveaux de sortie cohérents. L'audio résultant est renvoyé avec une fréquence d'échantillonnage standard de 44100 Hz.
 
 ## Entrées

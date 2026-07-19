@@ -1,3 +1,5 @@
+# VAE Decode (Tiled)
+
 Le nœud VAEDecodeTiled décode les représentations latentes en images à l'aide d'une approche par tuiles pour traiter efficacement les grandes images. Il traite l'entrée en tuiles plus petites afin de gérer l'utilisation de la mémoire tout en préservant la qualité de l'image. Le nœud prend également en charge les VAE vidéo en traitant les trames temporelles par lots avec chevauchement pour des transitions fluides.
 
 ## Entrées

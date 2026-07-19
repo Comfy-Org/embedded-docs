@@ -1,3 +1,5 @@
+# Ideogram V1
+
 İşte ComfyUI IdeogramV1 düğüm belgesinin Türkçe çevirisi:
 
 IdeogramV1 düğümü, bir API aracılığıyla Ideogram V1 modelini kullanarak görseller oluşturur. Metin istemleri ve çeşitli oluşturma ayarlarını alarak, girdinize bağlı olarak bir veya daha fazla görsel oluşturur. Düğüm, çıktıyı özelleştirmek için farklı en-boy oranlarını ve oluşturma modlarını destekler.

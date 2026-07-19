@@ -1,3 +1,5 @@
+# SAM3 Track Preview
+
 ## Visão Geral
 
 Este nó cria uma prévia em vídeo dos objetos rastreados, desenhando cada objeto rastreado com uma sobreposição de cor distinta e um rótulo numérico. Ele não gera nenhum tensor de imagem ou vídeo — em vez disso, salva o vídeo de prévia resultante diretamente em um arquivo temporário.

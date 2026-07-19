@@ -1,3 +1,5 @@
+# Meshy: Metinden Modele
+
 Meshy: Metinden Modele düğümü, bir metin açıklamasından 3B model oluşturmak için Meshy API'sini kullanır. İsteminiz ve ayarlarınızla API'ye bir istek gönderir, ardından oluşturma işleminin tamamlanmasını bekler ve sonuçta ortaya çıkan model dosyalarını indirir.
 
 ## Girişler

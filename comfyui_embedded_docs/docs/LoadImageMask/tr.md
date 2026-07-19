@@ -1,3 +1,5 @@
+# Görüntü Yükle (Maske olarak)
+
 LoadImageMask düğümü, belirtilen bir yoldan görüntüleri ve bunlara ait maskeleri yüklemek, bunları daha ileri düzey görüntü işleme veya analiz görevleriyle uyumlu hale getirmek için işlemek üzere tasarlanmıştır. Maskeleme için alfa kanalının varlığı gibi çeşitli görüntü formatlarını ve koşullarını ele alır ve görüntüleri ve maskeleri standart bir formata dönüştürerek sonraki işlemlere hazırlar.
 
 ## Girişler

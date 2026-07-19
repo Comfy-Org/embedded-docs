@@ -1,4 +1,4 @@
-# SAM3 Algılama Düğümü
+# SAM3 Tespit
 
 ## Genel Bakış
 

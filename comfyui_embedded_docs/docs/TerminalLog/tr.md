@@ -1,3 +1,5 @@
+# TerminalLog
+
 Terminal Log (Manager) düğümü, öncelikle ComfyUI'nin terminaldeki çalışma bilgilerini ComfyUI arayüzü içinde görüntülemek için kullanılır. Kullanmak için `mode` parametresini **logging** (kayıt) moduna ayarlamanız gerekir. Bu, görüntü oluşturma görevi sırasında ilgili günlük bilgilerini kaydetmesini sağlar. `mode` parametresi **stop** (durdur) moduna ayarlanırsa, günlük bilgisi kaydedilmez.
 ComfyUI'ye uzaktan bağlantılar veya yerel ağ bağlantıları üzerinden erişip kullandığınızda, Terminal Log (Manager) düğümü özellikle kullanışlı hale gelir. CMD'den gelen hata mesajlarını doğrudan ComfyUI arayüzü içinde görüntülemenizi sağlayarak, ComfyUI'nin mevcut çalışma durumunu anlamayı kolaylaştırır.
 

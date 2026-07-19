@@ -1,3 +1,5 @@
+# Normaliser les images
+
 Ce nœud ajuste les valeurs des pixels d'une image d'entrée en utilisant un processus de normalisation mathématique. Il soustrait une valeur moyenne spécifiée de chaque pixel, puis divise le résultat par un écart type spécifié. Il s'agit d'une étape de prétraitement courante pour préparer les données d'image à d'autres modèles d'apprentissage automatique.
 
 ## Entrées

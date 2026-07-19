@@ -1,3 +1,5 @@
+# Histograma de Imagem
+
 O nó ImageHistogram analisa a distribuição de cores de uma imagem de entrada. Ele calcula e gera vários histogramas, que são gráficos que mostram quantos pixels na imagem possuem cada valor de intensidade possível. Ele gera histogramas separados para os canais de cores vermelho, verde e azul, um histograma RGB composto e um histograma de luminância baseado em uma fórmula de brilho padrão.
 
 ## Entradas

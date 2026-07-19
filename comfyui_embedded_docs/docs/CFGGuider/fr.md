@@ -1,3 +1,5 @@
+# GuideCFG
+
 Le nœud CFGGuider crée un système de guidage pour contrôler le processus d'échantillonnage lors de la génération d'images. Il prend un modèle ainsi que des conditionnements positifs et négatifs, puis applique une échelle de guidage sans classifieur pour orienter la génération vers le contenu souhaité tout en évitant les éléments indésirables. Ce nœud produit un objet guideur qui peut être utilisé par les nœuds d'échantillonnage pour contrôler la direction de la génération d'images.
 
 ## Entrées

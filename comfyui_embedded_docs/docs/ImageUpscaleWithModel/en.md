@@ -1,3 +1,5 @@
+# Upscale Image (using Model)
+
 This node is designed for upscaling images using a specified upscale model. It efficiently manages the upscaling process by adjusting the image to the appropriate device, optimizing memory usage, and applying the upscale model in a tiled manner to prevent potential out-of-memory errors.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Kling 3.0 Video
+
 Este nodo genera videos utilizando el modelo Kling V3. Admite dos modos principales: texto a video, donde se crea un video a partir de una descripción textual, e imagen a video, donde se anima una imagen existente. También ofrece funciones avanzadas como la creación de videos de múltiples segmentos con diferentes indicaciones para cada parte (guiones gráficos) y la opción de generar audio de acompañamiento.
 
 ## Entradas

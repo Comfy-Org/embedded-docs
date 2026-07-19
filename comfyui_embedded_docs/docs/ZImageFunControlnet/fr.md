@@ -1,3 +1,5 @@
+# ZImageFunControlnet
+
 Voici la traduction en français de la documentation du nœud ZImageFunControlnet :
 
 Le nœud ZImageFunControlnet applique un réseau de contrôle spécialisé pour influencer le processus de génération ou d'édition d'images. Il utilise un modèle de base, un correctif de modèle et un VAE, vous permettant d'ajuster la force de l'effet de contrôle. Ce nœud peut fonctionner avec une image de base, une image d'incrustation et un masque pour des modifications plus ciblées.

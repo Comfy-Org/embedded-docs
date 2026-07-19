@@ -1,3 +1,5 @@
+# Kandinsky5ImageToVideo
+
 El nodo Kandinsky5ImageToVideo prepara los datos de condicionamiento y espacio latente para la generación de video utilizando el modelo Kandinsky. Crea un tensor latente de video vacío y puede codificar opcionalmente una imagen de inicio para guiar los fotogramas iniciales del video generado, modificando el condicionamiento positivo y negativo en consecuencia.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Génération vidéo Google Veo 3
+
 Génère des vidéos à partir de descriptions textuelles via l'API Google Veo 3. Ce nœud prend en charge plusieurs modèles Veo 3, y compris les variantes rapides et légères, et permet de spécifier la résolution, la durée et la génération audio de la vidéo.
 
 ## Entrées

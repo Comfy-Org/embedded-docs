@@ -1,3 +1,5 @@
+# EnregistrerAudio
+
 Le nœud SaveAudio enregistre des données audio dans un fichier au format FLAC. Il prend une entrée audio et l'écrit dans le répertoire de sortie spécifié avec le préfixe de nom de fichier donné. Le nœud gère automatiquement la dénomination des fichiers et garantit que l'audio est correctement sauvegardé pour une utilisation ultérieure.
 
 ## Entrées

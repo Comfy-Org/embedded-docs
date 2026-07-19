@@ -1,3 +1,5 @@
+# ModelMergeCosmos7B
+
 The ModelMergeCosmos7B node merges two AI models together using weighted blending of specific components. It allows fine-grained control over how different parts of the models are combined by adjusting individual weights for position embeddings, transformer blocks, and final layers.
 
 ## Inputs

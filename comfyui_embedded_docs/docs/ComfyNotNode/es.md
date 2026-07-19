@@ -1,3 +1,5 @@
+# No
+
 ## Descripción general
 
 El nodo Not realiza una operación lógica NOT sobre cualquier valor de entrada. Devuelve True si el valor de entrada se considera falso (como 0, cadena vacía, None, False), y devuelve False si el valor de entrada es verdadero. Utiliza las reglas estándar de Python para determinar la veracidad.

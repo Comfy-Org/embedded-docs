@@ -1,3 +1,5 @@
+# CLIPAdd
+
 El nodo CLIPAdd combina dos modelos CLIP fusionando sus parches clave. Crea una copia del primer modelo CLIP y luego agrega la mayoría de los parches clave del segundo modelo, excluyendo los ID de posición y los parámetros de escala logit. Esto permite combinar características de diferentes modelos CLIP mientras se preserva la estructura del primer modelo.
 
 ## Entradas

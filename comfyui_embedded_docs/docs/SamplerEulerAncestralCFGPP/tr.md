@@ -1,3 +1,5 @@
+# Euler Atasal Örnekleyici CFG++
+
 SamplerEulerAncestralCFGPP düğümü, görüntü oluşturma için Euler Atasal yöntemiyle sınıflandırıcısız yönlendirme (CFG++) kullanan bir örnekleyici oluşturur. Bu örnekleyici, atasal örnekleme tekniklerini yönlendirme koşullandırmasıyla birleştirerek tutarlılığı korurken çeşitli görüntü varyasyonları üretir ve gürültü ile adım boyutu ayarlamalarını kontrol eden parametreler aracılığıyla ince ayar yapılmasına olanak tanır.
 
 ## Girişler

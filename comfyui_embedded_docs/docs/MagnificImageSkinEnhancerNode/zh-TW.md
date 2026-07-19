@@ -1,3 +1,5 @@
+# Magnific 圖像美膚增強
+
 ## 概述
 
 Magnific Image Skin Enhancer 節點對人像圖片應用專門的 AI 處理，以改善皮膚外觀。它提供三種不同的模式以滿足不同的增強目標：`creative` 用於藝術效果，`faithful` 用於保留原始外觀，`flexible` 用於針對性改善（如光線或真實感）。該節點會將圖片上傳至外部 API 進行處理，並返回增強後的結果。

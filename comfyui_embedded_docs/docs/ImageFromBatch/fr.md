@@ -1,3 +1,5 @@
+# ImageDeBatch
+
 Le nœud `ImageFromBatch` est conçu pour extraire un segment spécifique d'images d'un lot en fonction de l'index et de la longueur fournis. Il permet un contrôle plus granulaire des images par lots, en autorisant des opérations sur des images individuelles ou des sous-ensembles au sein d'un lot plus large.
 
 ## Entrées

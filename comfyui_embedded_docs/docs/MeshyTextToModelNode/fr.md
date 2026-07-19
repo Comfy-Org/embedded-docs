@@ -1,3 +1,5 @@
+# Meshy : Texte vers modèle
+
 Voici la traduction en français de la documentation du nœud MeshyTextToModelNode :
 
 Le nœud Meshy : Texte vers modèle utilise l'API Meshy pour générer un modèle 3D à partir d'une description textuelle. Il envoie une requête à l'API avec votre invite et vos paramètres, puis attend la fin de la génération et télécharge les fichiers du modèle résultant.

@@ -1,3 +1,5 @@
+# EstablecerPropiedadesCondPares
+
 El nodo **PairConditioningSetProperties** permite modificar propiedades de pares de condicionamiento tanto positivos como negativos al mismo tiempo. Aplica ajustes de intensidad, configuraciones de área de condicionamiento y controles opcionales de máscara o temporización a ambas entradas de condicionamiento, devolviendo los datos de condicionamiento positivo y negativo modificados.
 
 ## Entradas

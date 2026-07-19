@@ -1,3 +1,5 @@
+# Kling 3.0 Primer-Último Fotograma a Video
+
 Este nodo utiliza el modelo Kling 3.0 para generar un video. Crea el video basándose en un texto descriptivo, una duración especificada y dos imágenes proporcionadas: un fotograma inicial y un fotograma final. El nodo también puede generar audio de acompañamiento para el video.
 
 ## Entradas

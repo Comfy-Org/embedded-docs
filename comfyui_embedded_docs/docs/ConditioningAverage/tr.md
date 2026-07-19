@@ -1,3 +1,5 @@
+# KoşullandırmaOrtalaması
+
 `ConditioningAverage` düğümü, belirtilen bir ağırlığa göre iki farklı koşullandırma kümesini (metin istemleri gibi) harmanlamak ve ikisi arasında kalan yeni bir koşullandırma vektörü oluşturmak için kullanılır. Ağırlık parametresini ayarlayarak, her bir koşullandırmanın nihai sonuç üzerindeki etkisini esnek bir şekilde kontrol edebilirsiniz. Bu, özellikle istem enterpolasyonu, stil füzyonu ve diğer ileri düzey kullanım durumları için uygundur.
 
 Aşağıda gösterildiği gibi, `conditioning_to` gücünü ayarlayarak iki koşullandırma arasında bir sonuç elde edebilirsiniz.

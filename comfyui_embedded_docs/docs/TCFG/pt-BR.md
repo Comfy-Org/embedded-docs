@@ -1,3 +1,5 @@
+# Tangential Damping CFG
+
 Aqui está a tradução da documentação para português brasileiro, seguindo todas as regras especificadas:
 
 TCFG (Tangential Damping CFG) refina as previsões incondicionais (negativas) para melhor alinhá-las com as previsões condicionais (positivas) durante o processo de amostragem. Esta técnica melhora a qualidade da saída aplicando amortecimento tangencial à orientação incondicional, com base no artigo de pesquisa 2503.18137. O nó modifica o comportamento de amostragem do modelo ajustando como as previsões incondicionais são processadas durante a orientação livre de classificador.

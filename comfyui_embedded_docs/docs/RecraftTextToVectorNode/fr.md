@@ -1,3 +1,5 @@
+# Recraft Texte vers Vecteur
+
 Génère des illustrations vectorielles SVG de manière synchrone à partir d'une invite textuelle et d'une résolution. Ce nœud envoie votre invite à l'API Recraft et retourne le contenu SVG généré.
 
 ## Entrées

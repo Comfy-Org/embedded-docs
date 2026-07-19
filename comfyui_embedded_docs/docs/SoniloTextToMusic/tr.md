@@ -1,3 +1,5 @@
+# Sonilo Metinden Müzik Üret
+
 Sonilo Metinden Müziğe düğümü, Sonilo'nun yapay zeka modelini kullanarak bir metin açıklamasından müzik üretir. İstediğiniz müziği tanımlayan bir istem sağlarsınız ve düğüm, bir ses dosyası oluşturmak için Sonilo hizmetine bir istek gönderir. Hedeflenen bir süre belirtebilir veya modelin bunu isteminizden çıkarmasına izin verebilirsiniz.
 
 ## Girişler

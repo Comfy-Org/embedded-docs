@@ -1,3 +1,5 @@
+# CLIPSubtract
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CLIPSubtract/en.md)
 
 O nó CLIPSubtract realiza uma operação de subtração entre dois modelos CLIP. Ele utiliza o primeiro modelo CLIP como base e subtrai os patches-chave do segundo modelo CLIP, com um multiplicador opcional para controlar a intensidade da subtração. Isso permite a combinação refinada de modelos, removendo características específicas de um modelo usando outro.

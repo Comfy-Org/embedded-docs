@@ -1,4 +1,4 @@
-# TripoSplat 取樣預覽
+# TripoSplat 採樣預覽
 
 此節點會對 TripoSplat 模型進行修補，使其在與標準 KSampler 節點搭配使用時，能在每個取樣步驟顯示解碼後的高斯潑濺（gaussian splat）即時預覽。其運作方式是包裝取樣器的回呼函數，在每個步驟後將模型輸出解碼為預覽影像。
 

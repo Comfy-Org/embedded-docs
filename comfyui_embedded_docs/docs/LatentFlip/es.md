@@ -1,3 +1,5 @@
+# Voltear Latente
+
 El nodo LatentFlip está diseñado para manipular representaciones latentes volteándolas vertical u horizontalmente. Esta operación permite transformar el espacio latente, lo que puede revelar nuevas variaciones o perspectivas dentro de los datos.
 
 ## Entradas

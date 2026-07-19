@@ -1,3 +1,5 @@
+# WanMoveConcatTrack
+
 El nodo WanMoveConcatTrack combina dos conjuntos de datos de seguimiento de movimiento en una única secuencia más larga. Funciona uniendo las rutas de seguimiento y las máscaras de visibilidad de las pistas de entrada a lo largo de sus respectivas dimensiones. Si solo se proporciona una pista de entrada, simplemente transmite esos datos sin cambios.
 
 ## Entradas

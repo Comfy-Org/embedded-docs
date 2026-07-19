@@ -1,3 +1,5 @@
+# SamplerDPMPP_2S_Ancestral
+
 El nodo SamplerDPMPP_2S_Ancestral crea un muestreador que utiliza el método de muestreo DPM++ 2S Ancestral para generar imágenes. Este muestreador combina elementos deterministas y estocásticos para producir resultados variados, manteniendo al mismo tiempo cierta coherencia. Permite controlar los niveles de aleatoriedad y ruido durante el proceso de muestreo.
 
 ## Entradas

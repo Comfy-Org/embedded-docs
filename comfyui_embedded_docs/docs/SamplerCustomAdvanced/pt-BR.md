@@ -1,3 +1,5 @@
+# SamplerCustomAdvanced
+
 O nó SamplerCustomAdvanced realiza amostragem avançada no espaço latente usando configurações personalizadas de ruído, orientação e amostragem. Ele processa uma imagem latente por meio de um processo de amostragem guiada com geração de ruído personalizável e agendamentos sigma, produzindo tanto a saída final amostrada quanto uma versão com redução de ruído, quando disponível.
 
 ## Entradas

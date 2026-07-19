@@ -1,3 +1,5 @@
+# FreSca
+
 El nodo FreSca aplica un escalado dependiente de la frecuencia a la guía durante el proceso de muestreo. Separa la señal de guía en componentes de baja y alta frecuencia mediante filtrado de Fourier, luego aplica diferentes factores de escalado a cada rango de frecuencia antes de recombinarlos. Esto permite un control más matizado sobre cómo la guía afecta diferentes aspectos de la salida generada.
 
 ## Entradas

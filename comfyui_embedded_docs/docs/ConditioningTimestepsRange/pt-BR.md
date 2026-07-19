@@ -1,3 +1,5 @@
+# Intervalo de Etapas de Tempo
+
 O nó **ConditioningTimestepsRange** cria três faixas de timesteps distintas para controlar quando os efeitos de condicionamento são aplicados durante o processo de geração. Ele recebe valores percentuais de início e fim e divide toda a faixa de timesteps (0.0 a 1.0) em três segmentos: a faixa principal entre os percentuais especificados, a faixa anterior ao percentual inicial e a faixa posterior ao percentual final.
 
 ## Entradas

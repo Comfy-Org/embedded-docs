@@ -1,3 +1,5 @@
+# Ajuster la luminosité
+
 Le nœud Ajuster la Luminosité modifie la luminosité d'une image d'entrée. Il fonctionne en multipliant la valeur de chaque pixel par un facteur spécifié, puis en limitant les valeurs résultantes pour qu'elles restent dans une plage valide. Un facteur de 1,0 laisse l'image inchangée, les valeurs inférieures à 1,0 l'assombrissent et les valeurs supérieures à 1,0 l'éclaircissent.
 
 ## Entrées

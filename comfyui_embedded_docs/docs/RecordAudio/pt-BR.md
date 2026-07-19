@@ -1,3 +1,5 @@
+# Gravar Áudio
+
 O nó RecordAudio carrega arquivos de áudio que foram gravados ou selecionados através da interface de gravação de áudio. Ele processa o arquivo de áudio e o converte em um formato de forma de onda que pode ser utilizado por outros nós de processamento de áudio no fluxo de trabalho. O nó detecta automaticamente a taxa de amostragem e prepara os dados de áudio para manipulações posteriores.
 
 ## Entradas

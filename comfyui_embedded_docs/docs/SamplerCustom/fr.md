@@ -1,3 +1,5 @@
+# ÉchantillonneurPersonnalisé
+
 Voici la traduction de la documentation du nœud SamplerCustom, conformément à vos règles :
 
 Le nœud SamplerCustom est conçu pour offrir un mécanisme d'échantillonnage flexible et personnalisable pour diverses applications. Il permet aux utilisateurs de sélectionner et de configurer différentes stratégies d'échantillonnage adaptées à leurs besoins spécifiques, améliorant ainsi l'adaptabilité et l'efficacité du processus d'échantillonnage.

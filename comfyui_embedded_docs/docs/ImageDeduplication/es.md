@@ -1,3 +1,5 @@
+# Eliminación de Imágenes Duplicadas
+
 Este nodo elimina imágenes duplicadas o muy similares de un lote. Funciona creando un hash perceptual para cada imagen —una huella digital numérica simple basada en su contenido visual— y luego comparándolos. Las imágenes cuyos hashes sean más similares que un umbral establecido se consideran duplicados y se filtran.
 
 ## Entradas

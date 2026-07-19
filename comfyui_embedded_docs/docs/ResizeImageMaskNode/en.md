@@ -1,3 +1,5 @@
+# Resize Image/Mask
+
 The Resize Image/Mask node provides multiple methods to change the dimensions of an input image or mask. It can scale by a multiplier, set specific dimensions, match the size of another input, or adjust based on pixel count, using various interpolation methods for quality.
 
 ## Inputs

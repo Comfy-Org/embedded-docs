@@ -1,3 +1,5 @@
+# Escalar ROPE
+
 O nó ScaleROPE permite modificar a Codificação Posicional Rotativa (ROPE) de um modelo aplicando fatores de escala e deslocamento separados para seus componentes X, Y e T (tempo). Este é um nó experimental e avançado, usado para ajustar o comportamento de codificação posicional do modelo.
 
 ## Entradas

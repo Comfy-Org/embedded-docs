@@ -1,3 +1,5 @@
+# PlanificateurExponentiel
+
 Le nœud `ExponentialScheduler` est conçu pour générer une séquence de valeurs sigma suivant un programme exponentiel pour les processus d'échantillonnage par diffusion. Il offre une approche personnalisable pour contrôler les niveaux de bruit appliqués à chaque étape du processus de diffusion, permettant un réglage fin du comportement d'échantillonnage.
 
 ## Entrées

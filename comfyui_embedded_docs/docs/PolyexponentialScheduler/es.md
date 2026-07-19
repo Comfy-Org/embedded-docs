@@ -1,3 +1,5 @@
+# PolyexponentialScheduler
+
 El nodo PolyexponentialScheduler está diseñado para generar una secuencia de niveles de ruido (sigmas) basada en un programación de ruido poliexponencial. Esta programación es una función polinómica en el logaritmo de sigma, lo que permite una progresión flexible y personalizable de los niveles de ruido a lo largo del proceso de difusión.
 
 ## Entradas

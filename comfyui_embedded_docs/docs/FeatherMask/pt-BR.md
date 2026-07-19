@@ -1,3 +1,5 @@
+# FeatherMask
+
 O nó `FeatherMask` aplica um efeito de esmaecimento (feathering) nas bordas de uma máscara fornecida, suavizando suas bordas ao ajustar a opacidade com base em distâncias especificadas a partir de cada borda. Isso cria um efeito de borda mais suave e mesclado.
 
 ## Entradas

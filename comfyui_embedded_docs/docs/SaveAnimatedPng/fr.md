@@ -1,3 +1,5 @@
+# EnregistrerPNGAnimé
+
 Le nœud SaveAnimatedPNG est conçu pour créer et enregistrer des images PNG animées à partir d'une séquence d'images. Il gère l'assemblage d'images individuelles en une animation cohérente, permettant de personnaliser la durée des images, le bouclage et l'inclusion de métadonnées.
 
 ## Entrées

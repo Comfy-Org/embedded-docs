@@ -1,3 +1,5 @@
+# StabilKaskad_BoşGizliGörüntü
+
 StableCascade_EmptyLatentImage düğümü, Stable Cascade modelleri için boş gizli tensörler oluşturur. Giriş çözünürlüğü ve sıkıştırma ayarlarına bağlı olarak uygun boyutlarda iki ayrı gizli temsil - C aşaması ve B aşaması için birer tane - üretir. Bu düğüm, Stable Cascade oluşturma hattının başlangıç noktasını sağlar.
 
 ## Girişler

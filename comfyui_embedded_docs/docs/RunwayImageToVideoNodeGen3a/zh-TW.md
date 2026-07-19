@@ -1,4 +1,4 @@
-# Runway 影像轉影片 (Gen3a Turbo) 節點
+# Runway 圖片轉影片 (Gen3a Turbo)
 
 Runway 影像轉影片 (Gen3a Turbo) 節點使用 Runway 的 Gen3a Turbo 模型，從單一起始影格生成影片。它接收文字提示和初始影像影格，然後根據指定的持續時間和長寬比建立影片序列。此節點連接到 Runway 的 API 以遠端處理生成作業。
 

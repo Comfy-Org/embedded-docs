@@ -1,3 +1,5 @@
+# WanSoundImageToVideo
+
 El nodo WanSoundImageToVideo genera contenido de video a partir de imágenes con condicionamiento de audio opcional. Toma indicaciones de condicionamiento positivo y negativo junto con un modelo VAE para crear latentes de video, y puede incorporar imágenes de referencia, codificación de audio, videos de control y referencias de movimiento para guiar el proceso de generación de video.
 
 ## Entradas

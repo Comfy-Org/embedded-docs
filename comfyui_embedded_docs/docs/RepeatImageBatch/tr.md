@@ -1,3 +1,5 @@
+# GörüntüGrubunuTekrarla
+
 RepeatImageBatch düğümü, belirtilen bir görseli belirli sayıda çoğaltarak aynı görsellerden oluşan bir grup oluşturmak üzere tasarlanmıştır. Bu işlevsellik, toplu işleme veya veri artırma gibi aynı görselin birden fazla örneğini gerektiren işlemler için kullanışlıdır.
 
 ## Girişler

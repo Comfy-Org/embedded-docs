@@ -1,3 +1,5 @@
+# Ajouter un suffixe au texte
+
 Ce nœud ajoute un suffixe spécifié à la fin d'une chaîne de texte d'entrée. Il prend le texte original et le suffixe comme entrées, puis renvoie le résultat combiné.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Meshy: Refinar Modelo Borrador
+
 El nodo **Meshy: Refinar Modelo Borrador** toma un modelo 3D borrador generado previamente y mejora su calidad, añadiendo opcionalmente texturas. Envía una tarea de refinamiento a la API de Meshy y devuelve los archivos finales del modelo 3D una vez que el procesamiento esté completo.
 
 ## Entradas

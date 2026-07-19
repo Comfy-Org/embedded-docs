@@ -1,3 +1,5 @@
+# Aumentar Nitidez da Imagem
+
 O nó **ImageSharpen** melhora a nitidez de uma imagem acentuando suas bordas e detalhes. Ele aplica um filtro de nitidez à imagem, que pode ser ajustado em intensidade e raio, fazendo com que a imagem pareça mais definida e nítida.
 
 ## Entradas

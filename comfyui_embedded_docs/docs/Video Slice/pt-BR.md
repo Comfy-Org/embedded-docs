@@ -1,3 +1,5 @@
+# Corte de Vídeo
+
 O nó Video Slice permite extrair um segmento específico de um vídeo. Você pode definir um tempo inicial e uma duração para cortar o vídeo, ou simplesmente pular os quadros iniciais. Se a duração solicitada for maior que o restante do vídeo, o nó pode retornar o que estiver disponível ou gerar um erro.
 
 ## Entradas

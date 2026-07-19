@@ -1,3 +1,5 @@
+# ModelBirleştirmeEkle
+
 ModelMergeAdd düğümü, bir modelden diğerine anahtar yamalar ekleyerek iki modeli birleştirmek için tasarlanmıştır. Bu işlem, ilk modeli klonlamayı ve ardından ikinci modelden yamalar uygulamayı içerir; böylece her iki modelin özelliklerinin veya davranışlarının birleştirilmesine olanak tanır.
 
 ## Girişler

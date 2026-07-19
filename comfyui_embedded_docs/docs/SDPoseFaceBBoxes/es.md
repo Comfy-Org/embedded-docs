@@ -1,3 +1,5 @@
+# SDPoseFaceBBoxes
+
 El nodo SDPoseFaceBBoxes procesa datos de puntos clave de pose para detectar y generar cuadros delimitadores alrededor de rostros humanos. Analiza los puntos clave faciales 2D de cada persona en un fotograma, calcula un cuadro delimitador basado en esos puntos y puede ajustar el tamaño y la forma del cuadro. Los cuadros delimitadores resultantes se formatean para ser compatibles con otros nodos en el flujo de trabajo SDPose, como el SDPoseKeypointExtractor.
 
 ## Entradas

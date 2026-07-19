@@ -1,3 +1,5 @@
+# Comportement de la Graine LatentBatch
+
 Le nœud LatentBatchSeedBehavior est conçu pour modifier le comportement de la graine (seed) d'un lot d'échantillons latents. Il permet soit de randomiser, soit de fixer la graine sur l'ensemble du lot, influençant ainsi le processus de génération en introduisant de la variabilité ou en maintenant une cohérence dans les résultats générés.
 
 ## Entrées

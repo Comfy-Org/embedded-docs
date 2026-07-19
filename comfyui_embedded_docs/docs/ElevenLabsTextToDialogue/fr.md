@@ -1,3 +1,5 @@
+# ElevenLabs Text to Dialogue
+
 Voici la traduction en français de la documentation du nœud ElevenLabs Text to Dialogue :
 
 Le nœud ElevenLabs Text to Dialogue génère un dialogue audio multipiste à partir d'un texte. Il permet de créer une conversation en spécifiant différentes lignes de texte et des voix distinctes pour chaque participant. Le nœud envoie la demande de dialogue à l'API ElevenLabs et retourne l'audio généré.

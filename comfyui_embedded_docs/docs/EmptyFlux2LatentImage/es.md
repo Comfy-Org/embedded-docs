@@ -1,3 +1,5 @@
+# Empty Flux 2 Latent
+
 El nodo EmptyFlux2LatentImage crea una representación latente vacía y en blanco. Genera un tensor lleno de ceros, que sirve como punto de partida para el proceso de eliminación de ruido del modelo Flux. Las dimensiones del latente están determinadas por el ancho y alto de entrada, reducidos por un factor de 16.
 
 ## Entradas

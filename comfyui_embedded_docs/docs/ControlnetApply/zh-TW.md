@@ -1,3 +1,5 @@
+# 套用 ControlNet（舊版）
+
 使用 controlNet 需要對輸入圖像進行預處理。由於 ComfyUI 初始節點不附帶預處理器和 controlNet 模型，請先安裝 ControlNet 預處理器 [在此處下載預處理器](https://github.com/Fannovel16/comfy_controlnet_preprocessors) 以及相應的 controlNet 模型。
 
 ## 輸入

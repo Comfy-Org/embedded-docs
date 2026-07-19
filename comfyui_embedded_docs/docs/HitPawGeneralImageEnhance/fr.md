@@ -1,3 +1,5 @@
+# HitPaw Amélioration Générale d’Image
+
 Ce nœud améliore les images basse résolution en les agrandissant en super-résolution, tout en supprimant les artefacts et le bruit. Il utilise une API externe pour traiter l'image et peut ajuster automatiquement la taille d'entrée pour respecter les limites de traitement. La taille de sortie maximale autorisée est de 4 mégapixels.
 
 ## Entrées

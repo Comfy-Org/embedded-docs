@@ -1,3 +1,5 @@
+# Guidance Adaptatif Projeté
+
 Voici la traduction en français de la documentation du nœud APG :
 
 Le nœud APG (Guidage Projectif Adaptatif) modifie le processus d'échantillonnage en ajustant la manière dont le guidage est appliqué pendant la diffusion. Il sépare le vecteur de guidage en composantes parallèle et orthogonale par rapport à la sortie conditionnelle, permettant une génération d'image plus contrôlée. Le nœud fournit des paramètres pour mettre à l'échelle le guidage, normaliser sa magnitude et appliquer un momentum pour des transitions plus fluides entre les étapes de diffusion.

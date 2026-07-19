@@ -1,4 +1,4 @@
-# Genel Bakış
+# ModelNoiseScale
 
 Bu düğüm, model örneklemesi sırasında kullanılan gürültü ölçeğini ayarlar. Modelin örnekleme sürecine uygulanan gürültü miktarını kontrol eden belirli bir gürültü ölçeği değeri belirlemenizi sağlar.
 

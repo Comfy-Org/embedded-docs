@@ -1,3 +1,5 @@
+# WanDancerVideo
+
 WanDancerVideo 節點為使用 WanDancer 模型進行影片生成準備條件化資料和空的潛在張量。它將正向和負向條件化與可選輸入（如起始影像、遮罩、CLIP 視覺嵌入和音訊特徵）結合，以控制生成的影片。
 
 ## 輸入

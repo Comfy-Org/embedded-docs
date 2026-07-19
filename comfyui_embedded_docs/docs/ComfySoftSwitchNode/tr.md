@@ -1,3 +1,5 @@
+# ComfySoftSwitchNode
+
 Soft Switch düğümü, boolean bir koşula bağlı olarak iki olası giriş değeri arasında seçim yapar. `switch` değeri true olduğunda `on_true` girişinden, false olduğunda ise `on_false` girişinden gelen değeri çıktı olarak verir. Bu düğüm tembel (lazy) çalışacak şekilde tasarlanmıştır; yani anahtar durumuna bağlı olarak yalnızca ihtiyaç duyulan girişi değerlendirir.
 
 ## Girişler

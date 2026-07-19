@@ -1,3 +1,5 @@
+# Empty HiDream-O1 Latent Image
+
 ## Overview
 
 This node creates an empty latent image in pixel space, specifically designed for the HiDream-O1-Image model. It generates a blank tensor of zeros that serves as the starting point for image generation, with dimensions defined by the width, height, and batch size inputs.

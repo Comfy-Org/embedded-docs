@@ -1,3 +1,5 @@
+# Recorte Aleatorio de Imágenes
+
 El nodo Recorte Aleatorio de Imágenes selecciona aleatoriamente una sección rectangular de cada imagen de entrada y la recorta a un ancho y alto especificados. Se usa comúnmente para aumento de datos con el fin de crear variaciones de imágenes de entrenamiento. La posición aleatoria del recorte se determina mediante un valor de semilla, lo que garantiza que se pueda reproducir el mismo recorte.
 
 ## Entradas

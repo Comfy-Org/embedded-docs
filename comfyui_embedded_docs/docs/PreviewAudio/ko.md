@@ -1,3 +1,5 @@
+# 오디오 미리듣기
+
 이 문서는 AI가 생성했습니다. 오류를 발견하거나 개선 제안이 있으시면 언제든지 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PreviewAudio/en.md)
 
 PreviewAudio 노드는 인터페이스에서 직접 재생할 수 있는 임시 오디오 미리보기를 생성합니다. 오디오 데이터를 입력으로 받아 미리보기 위젯을 생성하며, 사용자가 영구 파일을 저장하지 않고도 오디오 출력을 들을 수 있도록 합니다.

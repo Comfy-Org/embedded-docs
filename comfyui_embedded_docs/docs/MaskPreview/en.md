@@ -1,3 +1,5 @@
+# Preview Mask
+
 The MaskPreview node saves mask data as a preview image to your ComfyUI output directory, allowing you to visually inspect mask data during workflow execution. It converts the input mask into a format suitable for image display and saves it with a configurable filename prefix.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# LotusConditioning
+
 The LotusConditioning node provides pre-computed conditioning embeddings for the Lotus model. It uses a frozen encoder with null conditioning and returns hardcoded prompt embeddings to achieve parity with the reference implementation without requiring inference or loading large tensor files. This node outputs a fixed conditioning tensor that can be used directly in the generation pipeline.
 
 ## Inputs

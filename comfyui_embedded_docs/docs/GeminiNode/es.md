@@ -1,3 +1,5 @@
+# Google Gemini
+
 Este nodo permite a los usuarios interactuar con los modelos de IA Gemini de Google para generar respuestas de texto. Puedes proporcionar múltiples tipos de entrada, incluyendo texto, imágenes, audio, video y archivos como contexto para que el modelo genere respuestas más relevantes y significativas. El nodo maneja automáticamente toda la comunicación con la API y el análisis de las respuestas.
 
 ## Entradas

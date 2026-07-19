@@ -1,3 +1,5 @@
+# Recraft Remplacer l’arrière-plan
+
 Voici la traduction en français de la documentation du nœud ComfyUI, conformément à vos règles :
 
 ---

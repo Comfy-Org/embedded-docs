@@ -1,3 +1,5 @@
+# StableCascade_SuperResolutionControlnet
+
 El nodo `StableCascade_SuperResolutionControlnet` prepara las entradas para el procesamiento de superresolución de Stable Cascade. Toma una imagen de entrada y la codifica usando un VAE para crear la entrada de controlnet, mientras también genera representaciones latentes placeholder para la etapa C y la etapa B del pipeline de Stable Cascade.
 
 ## Entradas

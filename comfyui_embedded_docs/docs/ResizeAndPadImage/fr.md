@@ -1,3 +1,5 @@
+# RedimensionnerEtRembourrerImage
+
 Le nœud ResizeAndPadImage redimensionne une image pour qu'elle s'adapte à des dimensions spécifiées tout en conservant son rapport hauteur/largeur d'origine. Il réduit proportionnellement l'image pour qu'elle tienne dans la largeur et la hauteur cibles, puis ajoute un remplissage autour des bords pour combler l'espace restant. La couleur de remplissage et la méthode d'interpolation peuvent être personnalisées pour contrôler l'apparence des zones remplies et la qualité du redimensionnement.
 
 ## Entrées

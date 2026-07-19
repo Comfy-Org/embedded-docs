@@ -1,4 +1,4 @@
-# TripoSplat Görüntü Ön İşleme
+# TripoSplat Ön İşlem Görüntüsü
 
 Bu düğüm, her bir giriş görüntüsünü siyah bir arka plan üzerinde ortalanmış bir kare şeklinde kırpar ve ardından belirtilen çıktı boyutuna ulaşmak için dolgu ekler. TripoSplat 3B modeli için tutarlı kare çerçeveleme ve kenar yapaylıklarını önlemek için isteğe bağlı alfa mat aşındırması sağlayarak görüntüleri hazırlamak üzere tasarlanmıştır.
 

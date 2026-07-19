@@ -1,3 +1,5 @@
+# Sesi Kaydet
+
 SaveAudio düğümü, ses verilerini FLAC formatında bir dosyaya kaydeder. Ses girişini alır ve belirtilen çıktı dizinine verilen dosya adı önekiyle yazar. Düğüm, dosya adlandırmayı otomatik olarak yönetir ve sesin daha sonra kullanılmak üzere doğru şekilde kaydedilmesini sağlar.
 
 ## Girişler

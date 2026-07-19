@@ -1,3 +1,5 @@
+# CosmosPredict2ImageToVideoLatent
+
 CosmosPredict2ImageToVideoLatent 節點可從影像建立影片潛在表示，以用於影片生成。它能生成空白影片潛在，或結合起始與結束影像，建立具有指定尺寸與時長的影片序列。此節點負責將影像編碼為適合影片處理的潛在空間格式。
 
 ## 輸入

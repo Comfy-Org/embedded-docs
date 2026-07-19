@@ -1,3 +1,5 @@
+# CosmosPredict2ImageToVideoLatent
+
 بالتأكيد، إليك الترجمة العربية للوثيقة التقنية الخاصة بالعقدة CosmosPredict2ImageToVideoLatent، مع الالتزام التام بقواعد الترجمة المحددة.
 
 ---

@@ -1,3 +1,5 @@
+# Vidu Görselden Video Oluşturma
+
 Vidu Görüntüden Videoya Dönüştürme düğümü, bir başlangıç görüntüsü ve isteğe bağlı bir metin açıklaması kullanarak kısa bir video oluşturur. Sağlanan görüntü karesinden devam eden video içeriği üretmek için bir yapay zeka modeli kullanır ve sonuçta oluşan videoyu döndürür.
 
 ## Girişler

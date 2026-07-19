@@ -1,3 +1,5 @@
+# SplitSigmasDenoise
+
 Le nœud SplitSigmasDenoise divise une séquence de valeurs sigma en deux parties en fonction d'un paramètre de force de débruitage. Il sépare les sigmas d'entrée en séquences haute et basse sigma, où le point de division est déterminé en multipliant le nombre total d'étapes par le facteur de débruitage. Cela permet de séparer le plan de bruit en différentes plages d'intensité pour un traitement spécialisé.
 
 ## Entrées

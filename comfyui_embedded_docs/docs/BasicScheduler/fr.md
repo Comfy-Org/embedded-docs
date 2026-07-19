@@ -1,3 +1,5 @@
+# PlanificateurBasique
+
 Le nœud `BasicScheduler` est conçu pour calculer une séquence de valeurs sigma pour les modèles de diffusion en fonction du planificateur, du modèle et des paramètres de débruitage fournis. Il ajuste dynamiquement le nombre total d'étapes en fonction du facteur de débruitage pour affiner le processus de diffusion, fournissant des « recettes » précises pour différentes étapes dans les processus d'échantillonnage avancés nécessitant un contrôle fin (comme l'échantillonnage multi-étapes).
 
 ## Entrées

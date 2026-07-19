@@ -1,3 +1,5 @@
+# Hunyuan3Dv2ConditioningMultiView
+
 El nodo `Hunyuan3Dv2ConditioningMultiView` procesa embeddings de visión CLIP multivista para la generación de video 3D. Toma embeddings opcionales de las vistas frontal, izquierda, trasera y derecha, y los combina con codificación posicional para crear datos de condicionamiento para modelos de video. El nodo genera tanto condicionamiento positivo a partir de los embeddings combinados como condicionamiento negativo con valores cero.
 
 ## Entradas

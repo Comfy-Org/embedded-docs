@@ -1,3 +1,5 @@
+# 潛空間 Reinhard 色調映射
+
 ## 概述
 
 LatentOperationTonemapReinhard 節點將 Reinhard 色調映射應用於潛在向量。此技術透過基於平均值和標準差的統計方法來正規化潛在向量並調整其幅度，其強度由乘數參數控制。

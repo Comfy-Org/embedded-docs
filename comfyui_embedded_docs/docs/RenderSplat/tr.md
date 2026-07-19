@@ -1,4 +1,4 @@
-# Render Splat
+# Splat Oluştur
 
 Bir gaussian splat'ı, yönlendirilmiş eliptik splatlar, kenar yumuşatma ve derinlik sıralı önden arkaya işleme ile anizotropik EWA rasterleştirici kullanarak görüntü olarak işler. Kamera, bir `camera_info` girişinden gelir veya splat'ı otomatik çerçevelemek için boş bırakabilirsiniz. Bir Video düğümünü beslemek için döner tabla görüntü grubu oluşturmak üzere kare sayısını 1'den büyük ayarlayın.
 

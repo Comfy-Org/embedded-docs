@@ -1,3 +1,5 @@
+# Rodin 3D Generar - Generar Regular
+
 Este nodo **Rodin 3D Regular** genera activos 3D utilizando la API de Rodin. Toma imágenes de entrada y las procesa a través del servicio Rodin para crear modelos 3D. El nodo gestiona todo el flujo de trabajo, desde la creación de la tarea hasta la descarga de los archivos del modelo 3D final.
 
 ## Entradas

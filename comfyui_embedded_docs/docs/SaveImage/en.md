@@ -1,3 +1,5 @@
+# Save Image
+
 The SaveImage node saves the images it receives to your `ComfyUI/output` directory. It saves each image as a PNG file and can embed workflow metadata, such as the prompt, into the saved file for future reference.
 
 ## Inputs

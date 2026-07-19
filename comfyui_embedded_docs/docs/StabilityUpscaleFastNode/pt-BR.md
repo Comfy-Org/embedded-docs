@@ -1,3 +1,5 @@
+# Stability AI Upscale Rápido
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityUpscaleFastNode/en.md)
 
 Amplia rapidamente uma imagem por meio da API Stability para 4x seu tamanho original. Este nó é especificamente destinado a ampliar imagens de baixa qualidade ou compactadas, enviando-as ao serviço de ampliação rápida da Stability AI.

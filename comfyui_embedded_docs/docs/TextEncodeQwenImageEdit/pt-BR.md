@@ -1,3 +1,5 @@
+# TextEncodeQwenImageEdit
+
 O nó TextEncodeQwenImageEdit processa prompts de texto e imagens opcionais para gerar dados de condicionamento para geração ou edição de imagens. Ele utiliza um modelo CLIP para tokenizar a entrada e pode, opcionalmente, codificar imagens de referência usando um VAE para criar latentes de referência. Quando uma imagem é fornecida, ela é redimensionada automaticamente para manter dimensões de processamento consistentes.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Sesi Kaydet (Opus)
+
 SaveAudioOpus düğümü, ses verilerini Opus formatında bir dosyaya kaydeder. Ses girişini alır ve yapılandırılabilir kalite ayarlarıyla sıkıştırılmış bir Opus dosyası olarak dışa aktarır. Düğüm, dosya adlandırmayı otomatik olarak yönetir ve çıktıyı belirlenen çıktı dizinine kaydeder.
 
 ## Girişler

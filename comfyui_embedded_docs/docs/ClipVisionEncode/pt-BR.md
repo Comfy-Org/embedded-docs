@@ -1,3 +1,5 @@
+# CLIP Vision Encode
+
 O nó `CLIP Vision Encode` é um nó de codificação de imagem no ComfyUI, utilizado para converter imagens de entrada em vetores de características visuais por meio do modelo CLIP Vision. Este nó é uma ponte importante entre a compreensão de imagens e texto, sendo amplamente utilizado em diversos fluxos de trabalho de geração e processamento de imagens com IA.
 
 **Funcionalidade do Nó**

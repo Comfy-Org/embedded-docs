@@ -1,3 +1,5 @@
+# WanPhantomSubjectToVideo
+
 このドキュメントはAI生成です。誤りや改善のご提案がございましたら、ぜひご協力ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanPhantomSubjectToVideo/en.md)
 
 WanPhantomSubjectToVideo ノードは、条件付け入力とオプションの参照画像を処理してビデオコンテンツを生成します。ビデオ生成用の潜在表現を作成し、入力画像が提供された場合には、その画像からの視覚的なガイダンスを組み込むことができます。このノードは、ビデオモデル向けに時間次元の連結を行った条件付けデータを準備し、修正された条件付けと生成された潜在ビデオデータを出力します。

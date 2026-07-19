@@ -1,3 +1,5 @@
+# Toplu İşlemden Gizli Değişken
+
 Bu düğüm, belirtilen batch indeksi ve uzunluğa göre belirli bir latent örnek alt kümesini verilen bir gruptan çıkarmak için tasarlanmıştır. Latent örneklerin seçici olarak işlenmesine olanak tanır; verimlilik veya hedefli müdahale amacıyla grubun daha küçük bölümleri üzerinde işlem yapılmasını kolaylaştırır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# WanFunControl视频
+
 此节点用于支持阿里巴巴万Fun Control视频生成模型，在[此提交](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82)之后添加。
 
 - **目的：** 使用Wan 2.1 Fun Control模型准备视频生成所需的调节信息。

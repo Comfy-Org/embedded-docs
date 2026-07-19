@@ -1,3 +1,5 @@
+# CLIP Son Katmanı Ayarla
+
 `CLIP Set Last Layer`, ComfyUI'de CLIP modellerinin işleme derinliğini kontrol etmek için kullanılan temel bir düğümdür. Kullanıcıların CLIP metin kodlayıcısının işlemeyi durduracağı katmanı hassas bir şekilde belirlemesine olanak tanır; bu durum hem metin anlama derinliğini hem de oluşturulan görsellerin stilini etkiler.
 
 CLIP modelini 24 katmanlı zeki bir beyin olarak düşünün:

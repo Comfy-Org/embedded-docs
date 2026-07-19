@@ -1,4 +1,4 @@
-# Guideur CFG à Double Modèle
+# Guider CFG Double Modèle
 
 Ce nœud vous permet d'utiliser deux modèles différents pendant le processus d'échantillonnage CFG guidé : un modèle pour le passage positif (conditionnel) et un modèle distinct pour le passage négatif (inconditionnel). Lorsqu'aucun modèle négatif n'est fourni, il se comporte comme un guideur CFG standard utilisant un seul modèle.
 

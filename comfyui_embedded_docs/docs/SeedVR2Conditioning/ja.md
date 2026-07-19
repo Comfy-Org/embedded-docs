@@ -1,4 +1,4 @@
-# Apply SeedVR2 Conditioning
+# SeedVR2Conditioning
 
 このノードは、VAE潜在変数からSeedVR2モデルで使用するポジティブおよびネガティブなコンディショニングを構築します。画像や動画の生成プロセスを導くコンディショニングデータを準備します。
 

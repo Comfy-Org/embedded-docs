@@ -1,4 +1,4 @@
-# Topaz Video Enhance V2
+# Topaz Video Enhance
 
 El nodo **Topaz Video Enhance V2** permite mejorar la resolución y calidad de videos utilizando los modelos de IA de Topaz Labs. Puede aumentar la resolución, ajustar la frecuencia de cuadros mediante interpolación y aplicar mejoras creativas o realistas para dar nueva vida a tus secuencias de video.
 

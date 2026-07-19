@@ -1,3 +1,5 @@
+# LTXVLatentUpsampler
+
 Le nœud LTXVLatentUpsampler augmente d’un facteur deux la résolution spatiale d’une représentation latente vidéo. Il utilise un modèle de suréchantillonnage spécialisé pour traiter les données latentes, qui sont d’abord dénormalisées puis renormalisées à l’aide des statistiques de canaux du VAE fourni. Ce nœud est conçu pour les workflows vidéo dans l’espace latent.
 
 ## Entrées

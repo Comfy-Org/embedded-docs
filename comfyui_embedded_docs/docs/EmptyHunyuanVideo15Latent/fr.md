@@ -1,3 +1,5 @@
+# HunyuanVideo 1.5 latent vide
+
 Ce nœud crée un tenseur latent vide spécialement formaté pour être utilisé avec le modèle HunyuanVideo 1.5. Il génère un point de départ vierge pour la génération vidéo en allouant un tenseur de zéros avec le nombre correct de canaux et les dimensions spatiales adaptées à l'espace latent du modèle.
 
 ## Entrées

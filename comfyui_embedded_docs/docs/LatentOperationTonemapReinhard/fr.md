@@ -1,3 +1,5 @@
+# Opération de Mappage de Tons Reinhard Latent
+
 Le nœud LatentOperationTonemapReinhard applique un mappage tonal Reinhard aux vecteurs latents. Cette technique normalise les vecteurs latents et ajuste leur amplitude à l'aide d'une approche statistique basée sur la moyenne et l'écart type, l'intensité étant contrôlée par un paramètre multiplicateur.
 
 ## Entrées

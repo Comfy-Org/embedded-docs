@@ -1,3 +1,5 @@
+# Grok Video Extend
+
 O nó Grok Video Extend usa um modelo de IA para criar uma continuação perfeita de um vídeo existente. Você fornece um vídeo curto e um prompt de texto descrevendo o que deve acontecer em seguida, e o nó gera um novo clipe de vídeo que dá continuidade ao original.
 
 ## Entradas

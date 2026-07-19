@@ -1,3 +1,5 @@
+# Maskeyi Kırp
+
 CropMask düğümü, belirli bir maskeden belirtilen alanı kırpmak için tasarlanmıştır. Kullanıcıların koordinatlar ve boyutlar belirterek ilgilenilen bölgeyi tanımlamasına olanak tanır ve böylece maskenin bir kısmını daha sonraki işlemler veya analizler için etkili bir şekilde çıkarır.
 
 ## Girişler

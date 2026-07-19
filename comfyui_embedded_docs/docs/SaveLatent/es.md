@@ -1,3 +1,5 @@
+# GuardarLatente
+
 El nodo SaveLatent guarda tensores latentes en el disco como archivos para su uso posterior o para compartir. Toma muestras latentes y las guarda en el directorio de salida con metadatos opcionales que incluyen información de la indicación. El nodo maneja automáticamente la nomenclatura y organización de archivos, preservando la estructura de datos latentes.
 
 ## Entradas

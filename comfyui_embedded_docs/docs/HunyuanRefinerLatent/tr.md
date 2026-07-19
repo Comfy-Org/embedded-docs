@@ -1,3 +1,5 @@
+# HunyuanRefinerLatent
+
 HunyuanRefinerLatent düğümü, iyileştirme işlemleri için conditioning ve latent girdilerini işler. Pozitif ve negatif conditioning'e gürültü artırımı uygularken latent görüntü verilerini de dahil eder ve daha ileri işlemler için belirli boyutlara sahip yeni bir latent çıktısı oluşturur.
 
 ## Girdiler

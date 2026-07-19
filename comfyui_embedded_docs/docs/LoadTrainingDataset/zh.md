@@ -1,3 +1,5 @@
+# 加载训练数据集
+
 此文档由 AI 生成。如发现任何错误或有改进建议，欢迎随时贡献！[在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadTrainingDataset/en.md)
 
 此节点加载先前保存到磁盘的编码训练数据集。它会在 ComfyUI 输出目录中搜索并读取指定文件夹内的所有数据分片文件，然后返回合并后的潜在向量和条件数据，以供训练工作流使用。

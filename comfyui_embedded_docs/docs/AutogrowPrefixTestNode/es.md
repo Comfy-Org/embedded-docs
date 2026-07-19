@@ -1,3 +1,5 @@
+# AutogrowPrefixTestNode
+
 El nodo AutogrowPrefixTestNode es un nodo lógico diseñado para probar la función de entrada de crecimiento automático. Acepta una cantidad dinámica de entradas flotantes, combina sus valores en una cadena separada por comas y genera esa cadena como salida.
 
 ## Entradas

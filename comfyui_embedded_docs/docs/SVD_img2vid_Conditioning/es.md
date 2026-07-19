@@ -1,3 +1,5 @@
+# SVD_img2vid_Acondicionamiento
+
 El nodo `SVD_img2vid_Conditioning` prepara los datos de condicionamiento para la generación de video utilizando Stable Video Diffusion. Toma una imagen inicial y la procesa a través de los codificadores CLIP vision y VAE para crear pares de condicionamiento positivo y negativo, junto con un espacio latente vacío para la generación de video. Este nodo configura los parámetros necesarios para controlar el movimiento, la tasa de fotogramas y los niveles de aumento en el video generado.
 
 ## Entradas

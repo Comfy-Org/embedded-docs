@@ -1,3 +1,5 @@
+# WanCameraImageToVideo
+
 O nó WanCameraImageToVideo converte imagens em sequências de vídeo gerando representações latentes para geração de vídeos. Ele processa entradas de condicionamento e imagens iniciais opcionais para criar latentes de vídeo que podem ser usados com modelos de vídeo. O nó suporta condições de câmera e saídas de visão CLIP para maior controle na geração de vídeos.
 
 ## Entradas

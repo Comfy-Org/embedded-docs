@@ -1,3 +1,5 @@
+# PikaImageToVideoNode2_2
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PikaImageToVideoNode2_2/en.md)
 
 O nó Pika Image to Video envia uma imagem e um prompt de texto para a API Pika versão 2.2 para gerar um vídeo. Ele converte sua imagem de entrada em formato de vídeo com base na descrição e nas configurações fornecidas. O nó gerencia a comunicação com a API e retorna o vídeo gerado como saída.

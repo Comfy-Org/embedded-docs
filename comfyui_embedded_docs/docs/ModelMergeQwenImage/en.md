@@ -1,3 +1,5 @@
+# ModelMergeQwenImage
+
 The ModelMergeQwenImage node merges two AI models by combining their components with adjustable weights. It allows you to blend specific parts of Qwen image models, including transformer blocks, positional embeddings, and text processing components. You can control how much influence each model has on different sections of the merged result.
 
 ## Inputs

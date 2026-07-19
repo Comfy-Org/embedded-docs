@@ -1,3 +1,5 @@
+# Génération de vidéo Google Veo2
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI :
 
 Génère des vidéos à partir de descriptions textuelles en utilisant l'API Google Veo 2. Ce nœud peut créer des vidéos à partir de descriptions textuelles et d'images d'entrée optionnelles, avec un contrôle sur des paramètres tels que le rapport hauteur/largeur, la durée, et plus encore.

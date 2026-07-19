@@ -1,3 +1,5 @@
+# SkipLayerGuidanceDiTSimple
+
 Versão simplificada do nó SkipLayerGuidanceDiT que modifica apenas a passagem incondicional durante o processo de remoção de ruído. Este nó aplica orientação de salto de camada a camadas específicas do transformador em modelos DiT (Diffusion Transformer) ao pular seletivamente certas camadas durante a passagem incondicional com base em parâmetros de tempo e camada especificados.
 
 ## Entradas

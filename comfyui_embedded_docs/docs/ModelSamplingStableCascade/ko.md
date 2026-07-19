@@ -1,4 +1,4 @@
-# ModelSamplingStableCascade
+# 모델 샘플링 (StableCascade)
 
 ModelSamplingStableCascade 노드는 시프트 값을 사용하여 샘플링 매개변수를 조정함으로써 모델에 안정적인 캐스케이드 샘플링을 적용합니다. 이 노드는 안정적인 캐스케이드 생성을 위한 사용자 지정 샘플링 구성으로 입력 모델의 수정된 버전을 생성합니다.
 

@@ -1,3 +1,5 @@
+# LTXV Texto para Vídeo
+
 Este é um nó de Texto para Vídeo LTXV que gera vídeos com qualidade profissional a partir de uma descrição textual. Ele se conecta a uma API externa para criar vídeos com duração, resolução e taxa de quadros personalizáveis. Você também pode optar por adicionar áudio gerado por IA ao vídeo.
 
 ## Entradas

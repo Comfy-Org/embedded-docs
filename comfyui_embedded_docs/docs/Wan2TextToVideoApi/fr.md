@@ -1,3 +1,5 @@
+# Wan 2.7 Texte en Vidéo
+
 Ce nœud génère une vidéo à partir d'une description textuelle en utilisant le modèle Wan 2.7. Il envoie votre requête à une API externe, qui traite la consigne et renvoie un fichier vidéo. Vous pouvez éventuellement fournir un clip audio pour influencer le mouvement et le timing de la vidéo.
 
 ## Entrées

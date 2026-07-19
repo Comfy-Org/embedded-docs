@@ -1,3 +1,5 @@
+# Selector de Resolución
+
 El nodo Selector de Resolución calcula el ancho y alto en píxeles de una imagen basándose en una relación de aspecto seleccionada y una resolución total objetivo en megapíxeles. Es útil para generar dimensiones consistentes para otros nodos, como el nodo de Imagen Latente Vacía. Las dimensiones de salida siempre se redondean al múltiplo de 8 más cercano.
 
 ## Entradas

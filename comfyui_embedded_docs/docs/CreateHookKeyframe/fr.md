@@ -1,3 +1,5 @@
+# Créer une image clé de crochet
+
 Le nœud Créer une image clé de hook vous permet de définir des points spécifiques dans un processus de génération où le comportement du hook change. Il crée des images clés qui modifient la force des hooks à des pourcentages particuliers de l'avancement de la génération, et ces images clés peuvent être chaînées ensemble pour créer des schémas de planification complexes.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# GLIGENLoader
+
 Este nó detecta modelos localizados na pasta `ComfyUI/models/gligen` e também lê modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó `GLIGENLoader` foi projetado para carregar modelos GLIGEN, que são modelos generativos especializados. Ele facilita o processo de recuperação e inicialização desses modelos a partir de caminhos especificados, deixando-os prontos para tarefas generativas posteriores.

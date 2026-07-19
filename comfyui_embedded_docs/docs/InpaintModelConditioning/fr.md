@@ -1,3 +1,5 @@
+# InpaintModelConditioning
+
 Le nœud InpaintModelConditioning est conçu pour faciliter le processus de conditionnement des modèles d'infilling (inpainting), permettant l'intégration et la manipulation de diverses entrées de conditionnement afin d'adapter le résultat de l'infilling. Il englobe un large éventail de fonctionnalités, allant du chargement de points de contrôle de modèle spécifiques et de l'application de modèles de style ou de contrôle net, jusqu'au codage et à la combinaison d'éléments de conditionnement, constituant ainsi un outil complet pour personnaliser les tâches d'infilling.
 
 ## Entrées

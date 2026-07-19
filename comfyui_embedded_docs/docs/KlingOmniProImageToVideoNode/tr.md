@@ -1,3 +1,5 @@
+# Kling Omni Görselden Videoya (Pro)
+
 Bu düğüm, bir metin istemi ve en fazla yedi referans görseline dayanarak video oluşturmak için Kling AI modelini kullanır. Videonun en-boy oranını, süresini, çözünürlüğünü kontrol etmenize ve isteğe bağlı olarak storyboard'lar kullanmanıza veya ses oluşturmanıza olanak tanır. Düğüm, isteği harici bir API'ye gönderir ve oluşturulan videoyu döndürür.
 
 ## Girişler

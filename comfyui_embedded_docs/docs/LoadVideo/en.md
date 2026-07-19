@@ -1,3 +1,5 @@
+# Load Video
+
 The Load Video node loads video files from the input directory and makes them available for processing in the workflow. It reads video files from the designated input folder and outputs them as video data that can be connected to other video processing nodes.
 
 ## Inputs

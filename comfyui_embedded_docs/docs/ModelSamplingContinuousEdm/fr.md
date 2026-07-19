@@ -1,3 +1,5 @@
+# ModelSamplingContinuousEDM
+
 Ce nœud est conçu pour améliorer les capacités d'échantillonnage d'un modèle en intégrant des techniques d'échantillonnage EDM (Energy-based Diffusion Models) continu. Il permet un ajustement dynamique des niveaux de bruit dans le processus d'échantillonnage du modèle, offrant un contrôle plus précis sur la qualité et la diversité de la génération.
 
 ## Entrées

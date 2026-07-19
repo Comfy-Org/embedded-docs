@@ -1,3 +1,5 @@
+# ByteDanceImageEditNode
+
 ## 概述
 
 ByteDance 圖片編輯節點可讓您透過 API 使用 ByteDance 的 AI 模型來修改圖片。您提供輸入圖片和描述所需變更的文字提示，節點會根據您的指示處理圖片。此節點會自動處理 API 通訊，並回傳編輯後的圖片。

@@ -1,3 +1,5 @@
+# Grade de Imagens
+
 O nó Grade de Imagens combina múltiplas imagens em uma única grade ou colagem organizada. Ele recebe uma lista de imagens e as organiza em um número especificado de colunas, redimensionando cada imagem para caber em um tamanho de célula definido e adicionando espaçamento opcional entre elas. O resultado é uma única imagem nova contendo todas as imagens de entrada em um layout de grade.
 
 ## Entradas

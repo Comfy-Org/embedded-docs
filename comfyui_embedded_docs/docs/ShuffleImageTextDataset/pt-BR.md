@@ -1,3 +1,5 @@
+# Embaralhar Conjunto Imagem-Texto
+
 Este nó embaralha uma lista de imagens e uma lista de textos juntas, mantendo seus pares intactos. Ele usa uma semente aleatória para determinar a ordem do embaralhamento, garantindo que as mesmas listas de entrada sejam embaralhadas da mesma forma sempre que a semente for reutilizada.
 
 ## Entradas

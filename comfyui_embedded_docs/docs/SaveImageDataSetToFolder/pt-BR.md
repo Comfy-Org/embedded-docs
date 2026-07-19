@@ -1,3 +1,5 @@
+# Salvar Conjunto de Imagens na Pasta
+
 Este nó salva uma lista de imagens em uma pasta especificada dentro do diretório de saída do ComfyUI. Ele recebe múltiplas imagens como entrada e as grava no disco com um prefixo de nome de arquivo personalizável.
 
 ## Entradas

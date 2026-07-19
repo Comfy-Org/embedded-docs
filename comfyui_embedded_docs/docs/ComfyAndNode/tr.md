@@ -1,3 +1,5 @@
+# Ve
+
 ## Genel Bakış
 
 Ve düğümü, bir dizi girdi değeri üzerinde mantıksal VE işlemi gerçekleştirir. Python'un doğruluk kurallarına göre, yalnızca sağlanan tüm değerler doğru (truthy) olarak kabul edilirse `true` döndürür. Bu düğüm, devam etmeden önce birden çok koşulun tamamının karşılandığını kontrol etmek için kullanışlıdır.

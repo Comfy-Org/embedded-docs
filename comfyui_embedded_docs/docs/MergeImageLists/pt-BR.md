@@ -1,3 +1,5 @@
+# Mesclar Listas de Imagens
+
 O nó **Merge Image Lists** combina múltiplas listas separadas de imagens em uma única lista contínua. Ele funciona pegando todas as imagens de cada entrada conectada e anexando-as na ordem em que são recebidas. Isso é útil para organizar ou agrupar imagens de diferentes fontes para processamento posterior.
 
 ## Entradas

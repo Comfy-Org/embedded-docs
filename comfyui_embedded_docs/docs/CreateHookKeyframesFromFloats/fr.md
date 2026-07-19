@@ -1,3 +1,5 @@
+# Créer des images clés de crochet à partir de flottants
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframesFromFloats/en.md)
 
 Ce nœud crée des images clés de hook à partir d'une liste de valeurs de force flottantes, en les répartissant uniformément entre des pourcentages de début et de fin spécifiés. Il génère une séquence d'images clés où chaque valeur de force est attribuée à une position en pourcentage spécifique dans la chronologie d'animation. Le nœud peut soit créer un nouveau groupe d'images clés, soit en ajouter à un groupe existant, avec une option pour afficher les images clés générées à des fins de débogage.

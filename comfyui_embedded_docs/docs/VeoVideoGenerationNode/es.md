@@ -1,3 +1,5 @@
+# Generación de Video Google Veo2
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias para mejorar, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VeoVideoGenerationNode/en.md)
 
 Genera videos a partir de indicaciones de texto utilizando la API de Veo 2 de Google. Este nodo puede crear videos a partir de descripciones de texto y entradas de imagen opcionales, con control sobre parámetros como la relación de aspecto, la duración y más.

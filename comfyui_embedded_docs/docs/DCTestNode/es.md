@@ -1,3 +1,5 @@
+# DCTestNode
+
 El DCTestNode es un nodo lógico que devuelve diferentes tipos de datos según la selección del usuario en un cuadro combinado dinámico. Actúa como un enrutador condicional, donde la opción elegida determina qué campo de entrada está activo y qué tipo de valor generará el nodo.
 
 ## Entradas

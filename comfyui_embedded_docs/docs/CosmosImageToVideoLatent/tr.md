@@ -1,3 +1,5 @@
+# CosmosGörüntüdenVideoyaGizli
+
 CosmosImageToVideoLatent düğümü, giriş görüntülerinden video gizil temsilleri oluşturur. Boş bir video gizil temsili üretir ve isteğe bağlı olarak başlangıç ve/veya bitiş görüntülerini video dizisinin ilk ve/veya son karelerine kodlar. Görüntüler sağlandığında, üretim sırasında gizil temsilin hangi bölümlerinin korunması gerektiğini belirtmek için karşılık gelen gürültü maskeleri de oluşturur.
 
 ## Girişler

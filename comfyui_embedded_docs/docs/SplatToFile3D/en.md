@@ -1,4 +1,4 @@
-# SplatToFile3D Node Documentation
+# Create 3D File (from Splat)
 
 ## Overview
 

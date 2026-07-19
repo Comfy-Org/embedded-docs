@@ -1,3 +1,5 @@
+# TSR - Zamansal Skor Yeniden Ölçeklendirme
+
 Bu düğüm, bir difüzyon modeline Zamansal Puan Yeniden Ölçekleme (TSR) uygular. Gürültü giderme işlemi sırasında tahmin edilen gürültüyü veya puanı yeniden ölçeklendirerek modelin örnekleme davranışını değiştirir; bu, oluşturulan çıktının çeşitliliğini yönlendirebilir. Bu, bir CFG (Sınıflandırıcısız Kılavuzluk) sonrası işlevi olarak uygulanır.
 
 ## Girişler

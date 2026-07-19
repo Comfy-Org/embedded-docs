@@ -1,3 +1,5 @@
+# ¡Mahiro es tan linda que merece una mejor función de guía!! (。・ω・。)
+
 El nodo Mahiro modifica la función de guía para enfocarse más en la dirección del prompt positivo en lugar de la diferencia entre los prompts positivo y negativo. Crea un modelo parcheado que aplica un enfoque personalizado de escalado de guía utilizando similitud de coseno entre las salidas de eliminación de ruido condicionales e incondicionales normalizadas. Este nodo experimental ayuda a dirigir la generación más fuertemente hacia la dirección prevista del prompt positivo.
 
 ## Entradas

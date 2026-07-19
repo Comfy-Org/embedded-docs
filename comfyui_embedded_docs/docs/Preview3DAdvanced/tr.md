@@ -1,4 +1,4 @@
-# 3B Önizleme (Gelişmiş)
+# 3D Önizleme (Gelişmiş)
 
 Bu düğüm, kamera ve model bilgisi çıktısı ile gelişmiş bir 3B model önizlemesi sağlar. 3B modeli geçici bir dosyaya kaydeder ve kullanıcı arayüzünde görüntüler; ayrıca model verilerini, kamera bilgilerini ve görüntü alanı boyutlarını aşağı akışta daha ileri işleme için iletir.
 

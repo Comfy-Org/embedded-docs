@@ -1,3 +1,5 @@
+# NoeudEnregistrerSVG
+
 Voici la traduction en français de la documentation du nœud SaveSVG :
 
 Enregistre les fichiers SVG sur le disque. Ce nœud prend des données SVG en entrée et les sauvegarde dans votre répertoire de sortie avec possibilité d'intégration de métadonnées. Le nœud gère automatiquement la nomination des fichiers avec des suffixes de compteur et peut intégrer les informations de prompt du workflow directement dans le fichier SVG.

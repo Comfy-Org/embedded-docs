@@ -1,3 +1,5 @@
+# Redimensionar Imagem para Total de Pixels
+
 O nó ImageScaleToTotalPixels é projetado para redimensionar imagens para um número total de pixels especificado, mantendo a proporção original. Ele oferece diversos métodos para aumentar a escala da imagem e atingir a contagem de pixels desejada.
 
 ## Entradas

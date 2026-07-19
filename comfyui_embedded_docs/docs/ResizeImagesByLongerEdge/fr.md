@@ -1,3 +1,5 @@
+# Redimensionner les images par le bord le plus long
+
 Le nœud Redimensionner par Bord le Plus Long redimensionne une ou plusieurs images afin que leur côté le plus long corresponde à une longueur cible spécifiée. Il détermine automatiquement si la largeur ou la hauteur est la plus longue et met à l'échelle l'autre dimension proportionnellement pour préserver le rapport hauteur/largeur d'origine. Cela est utile pour standardiser les tailles d'images en fonction de leur plus grande dimension.
 
 ## Entrées

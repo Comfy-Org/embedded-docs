@@ -1,3 +1,5 @@
+# Luma Görüntüden Videoya
+
 Bir metin istemi ve isteğe bağlı başlangıç/bitiş görsellerine dayanarak eşzamanlı olarak videolar oluşturur. Bu düğüm, video içeriğini bir istem aracılığıyla tanımlamanıza ve isteğe bağlı olarak videonun yapısını kontrol etmek için ilk ve/veya son kareyi belirtmenize olanak tanıyan Luma API'sini kullanır.
 
 ## Girişler

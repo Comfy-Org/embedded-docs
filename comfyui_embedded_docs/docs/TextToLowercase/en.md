@@ -1,3 +1,5 @@
+# Convert Text to Lowercase (DEPRECATED)
+
 The Text to Lowercase node takes a text string as input and converts all of its characters to lowercase. It is a simple utility for standardizing text case.
 
 > **Note:** This node is deprecated and superseded by the Convert Text Case node.

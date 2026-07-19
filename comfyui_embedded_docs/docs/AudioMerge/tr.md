@@ -1,3 +1,5 @@
+# Ses Birleştir
+
 AudioMerge düğümü, iki ses parçasını dalga formlarını üst üste bindirerek birleştirir. Her iki ses girişinin örnekleme hızlarını otomatik olarak eşleştirir ve birleştirmeden önce uzunluklarını eşit olacak şekilde ayarlar. Düğüm, ses sinyallerini birleştirmek için çeşitli matematiksel yöntemler sunar ve çıktının kabul edilebilir ses seviyelerinde kalmasını sağlar.
 
 ## Girişler

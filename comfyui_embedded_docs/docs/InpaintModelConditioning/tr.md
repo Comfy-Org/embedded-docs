@@ -1,3 +1,5 @@
+# İçBoyaModelKoşullandırma
+
 InpaintModelConditioning düğümü, rötuş (inpainting) modelleri için koşullandırma sürecini kolaylaştırmak, çeşitli koşullandırma girdilerinin entegrasyonunu ve manipülasyonunu sağlayarak rötuş çıktısını özelleştirmek üzere tasarlanmıştır. Belirli model kontrol noktalarını yükleme, stil veya kontrol ağı modelleri uygulama ile koşullandırma öğelerini kodlama ve birleştirme gibi geniş bir işlev yelpazesini kapsar; böylece rötuş görevlerini özelleştirmek için kapsamlı bir araç görevi görür.
 
 ## Girdiler

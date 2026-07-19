@@ -1,3 +1,5 @@
+# ControlNet Uygula (ESKİ)
+
 ControlNet kullanımı, giriş görüntülerinin ön işlenmesini gerektirir. ComfyUI'nin başlangıç düğümleri ön işlemciler ve ControlNet modelleri ile gelmediğinden, lütfen öncelikle ControlNet ön işlemcilerini [ön işlemcileri buradan indirin](https://github.com/Fannovel16/comfy_controlnet_preprocessors) ve ilgili ControlNet modellerini yükleyin.
 
 ## Girişler

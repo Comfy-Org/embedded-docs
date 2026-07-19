@@ -1,3 +1,5 @@
+# Expressão Matemática
+
 O nó ComfyMathExpression avalia uma fórmula matemática usando um conjunto de valores de entrada. Você pode escrever uma expressão usando nomes de variáveis (como `a`, `b`, `c`), e o nó calculará o resultado. Ele suporta a adição dinâmica de quantos valores de entrada forem necessários para seu cálculo.
 
 ## Entradas

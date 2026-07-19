@@ -1,3 +1,5 @@
+# MiniMax Image vers Vidéo
+
 Voici la traduction en français de la documentation du nœud MinimaxImageToVideoNode :
 
 Génère des vidéos de manière synchrone à partir d'une image et d'une description textuelle, ainsi que de paramètres optionnels, en utilisant l'API de MiniMax. Ce nœud prend une image d'entrée et une description textuelle pour créer une séquence vidéo, avec différentes options de modèle et paramètres de configuration disponibles.

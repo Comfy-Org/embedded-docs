@@ -1,3 +1,5 @@
+# Grok Video Edit
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoEditNode/en.md)
 
 Este nó utiliza a API Grok para editar um vídeo existente com base em um prompt de texto. Ele faz o upload do seu vídeo, envia uma solicitação ao modelo de IA para modificá-lo de acordo com sua descrição e retorna o novo vídeo gerado.

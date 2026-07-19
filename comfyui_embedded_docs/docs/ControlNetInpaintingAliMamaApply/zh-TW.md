@@ -1,3 +1,5 @@
+# 套用 ControlNet 修補（AliMama）
+
 ## 概述
 
 ControlNetInpaintingAliMamaApply 節點透過將正向與負向條件化結合控制影像和遮罩，將 ControlNet 條件化應用於修補任務。它處理輸入影像和遮罩，以建立修改後的條件化，引導生成過程，從而精確控制影像中哪些區域需要修補。該節點支援強度調整和時序控制，以便在生成過程的不同階段微調 ControlNet 的影響。

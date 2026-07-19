@@ -1,3 +1,5 @@
+# Recraft V4 Metinden Görsele
+
 Bu belge, Recraft V4 veya V4 Pro yapay zeka modellerini kullanarak metin açıklamalarından görseller üretir. İsteğinizi harici bir API'ye gönderir ve oluşturulan görselleri döndürür. Modeli, görsel boyutunu ve oluşturulacak görsel sayısını belirterek çıktıyı kontrol edebilirsiniz.
 
 ## Girişler

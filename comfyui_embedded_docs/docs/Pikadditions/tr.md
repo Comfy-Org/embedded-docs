@@ -1,3 +1,5 @@
+# Pikadditions
+
 Pikadditions düğümü, videonuza herhangi bir nesne veya görsel eklemenizi sağlar. Bir video yükler ve eklemek istediğiniz öğeyi belirterek kusursuz bir şekilde bütünleşmiş bir sonuç elde edersiniz. Bu düğüm, doğal görünümlü bir entegrasyonla videolara görseller eklemek için Pika API'sini kullanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Merge Image Lists (DEPRECATED)
+
 The Merge Image Lists node combines multiple separate lists of images into a single, continuous list. It works by taking all the images from each connected input and appending them together in the order they are received. This is useful for organizing or batching images from different sources for further processing.
 
 **Note:** This node is deprecated and superseded by the Create List node.

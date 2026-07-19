@@ -1,3 +1,5 @@
+# WanHuMoImageToVideo
+
 Le nœud WanHuMoImageToVideo convertit des images en séquences vidéo en générant des représentations latentes pour les trames vidéo. Il traite les entrées de conditionnement et peut incorporer des images de référence et des embeddings audio pour influencer la génération vidéo. Le nœud produit des données de conditionnement modifiées et des représentations latentes adaptées à la synthèse vidéo.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Recraft Stili - Gerçekçi Görüntü
+
 Bu düğüm, Recraft API'sini kullanarak gerçekçi görseller oluşturmak için bir stil yapılandırması oluşturur. `realistic_image` stilini seçer ve çıktı görünümünü ince ayarlamak için isteğe bağlı bir alt stil belirlemenize olanak tanır.
 
 ## Girişler

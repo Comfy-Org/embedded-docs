@@ -1,3 +1,5 @@
+# CodificarTextoCLIPFlux
+
 `CLIPTextEncodeFlux` es un nodo de codificación de texto avanzado diseñado para la arquitectura Flux. Procesa dos entradas de texto separadas a través de diferentes codificadores (CLIP-L y T5XXL) y las combina con una escala de guía para producir una salida de condicionamiento unificada para la generación de imágenes.
 
 ## Entradas

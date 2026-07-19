@@ -1,3 +1,5 @@
+# VAE Kodlama
+
 Bu düğüm, belirtilen bir VAE modeli kullanarak görüntüleri bir gizli uzay temsiline kodlamak için tasarlanmıştır. Kodlama sürecinin karmaşıklığını soyutlayarak, görüntüleri gizli temsillerine dönüştürmek için basit bir yol sağlar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# WanFunControlToVideo
+
 ## مرور کلی
 
 این گره برای پشتیبانی از مدل کنترل وان فان (Wan Fun Control) شرکت علی‌بابا جهت تولید ویدئو اضافه شده است و پس از [این کامیت](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82) به مجموعه افزوده شد.

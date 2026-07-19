@@ -1,3 +1,5 @@
+# ByteDanceImageEditNode
+
 ByteDance Image Edit düğümü, ByteDance'in yapay zeka modellerini bir API aracılığıyla kullanarak görselleri değiştirmenize olanak tanır. Bir giriş görseli ve istenen değişiklikleri açıklayan bir metin istemi sağlarsınız; düğüm, görseli talimatlarınıza göre işler. Düğüm, API iletişimini otomatik olarak yönetir ve düzenlenmiş görseli döndürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# GizliÇarpma
+
 LatentMultiply düğümü, örneklerin gizli (latent) temsillerini belirtilen bir çarpanla ölçeklendirmek için tasarlanmıştır. Bu işlem, gizli uzaydaki özelliklerin yoğunluğunu veya büyüklüğünü ayarlamaya olanak tanıyarak, oluşturulan içeriğin ince ayarını yapmayı veya belirli bir gizli yön içindeki varyasyonları keşfetmeyi sağlar.
 
 ## Girişler

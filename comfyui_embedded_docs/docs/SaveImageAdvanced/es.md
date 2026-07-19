@@ -1,4 +1,4 @@
-# SaveImageAdvanced
+# Guardar imagen (avanzado)
 
 El nodo **SaveImageAdvanced** guarda imágenes en tu directorio de salida de ComfyUI con control avanzado sobre el formato de archivo, profundidad de bits y espacio de color. Admite guardar como archivos PNG o EXR y puede incrustar metadatos del flujo de trabajo en los archivos guardados.
 

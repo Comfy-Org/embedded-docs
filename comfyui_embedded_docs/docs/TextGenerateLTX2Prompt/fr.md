@@ -1,3 +1,5 @@
+# TextGenerateLTX2Prompt
+
 Le nœud TextGenerateLTX2Prompt est une version spécialisée d'un nœud de génération de texte. Il prend une invite textuelle de l'utilisateur et la formate automatiquement avec des instructions système spécifiques avant de l'envoyer à un modèle de langage pour amélioration ou complétion. Le nœud peut fonctionner selon deux modes : texte uniquement ou avec une référence d'image, en utilisant différentes invites système pour chaque cas.
 
 ## Entrées

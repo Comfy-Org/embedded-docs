@@ -1,3 +1,5 @@
+# ByteDance テキストから動画へ
+
 以下が翻訳結果です。
 
 このドキュメントは AI によって生成されました。誤りや改善のための提案があれば、ぜひコントリビュートしてください！ [GitHub で編集する](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDanceTextToVideoNode/en.md)

@@ -1,3 +1,5 @@
+# Imagens em Lote
+
 O nó `ImageBatch` é projetado para combinar duas imagens em um único lote. Se as dimensões das imagens não coincidirem, ele redimensiona automaticamente a segunda imagem para corresponder às dimensões da primeira antes de combiná-las.
 
 ## Entradas

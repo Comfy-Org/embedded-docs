@@ -1,3 +1,5 @@
+# Joindre Image avec Alpha
+
 Ce nœud est conçu pour des opérations de composition, plus précisément pour fusionner une image avec son masque alpha correspondant afin de produire une image de sortie unique. Il combine efficacement le contenu visuel avec les informations de transparence, permettant de créer des images où certaines zones sont transparentes ou semi-transparentes.
 
 ## Entrées

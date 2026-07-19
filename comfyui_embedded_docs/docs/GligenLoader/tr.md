@@ -1,3 +1,5 @@
+# GLIGENYükleyici
+
 Bu düğüm, `ComfyUI/models/gligen` klasöründe bulunan modelleri tespit eder ve ayrıca extra_model_paths.yaml dosyasında yapılandırılmış ek yollardaki modelleri de okur. Bazen, ilgili klasördeki model dosyalarını okuması için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 `GLIGENLoader` düğümü, özel üretken modeller olan GLIGEN modellerini yüklemek için tasarlanmıştır. Belirtilen yollardan bu modelleri alma ve başlatma sürecini kolaylaştırarak, onları daha sonraki üretken görevler için hazır hale getirir.

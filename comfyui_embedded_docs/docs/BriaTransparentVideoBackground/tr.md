@@ -1,4 +1,4 @@
-# Bria Video Arka Planını Kaldır (Saydam)
+# Bria Video Arka Planını Kaldır (Şeffaf)
 
 Bu düğüm, Bria'nın yapay zeka hizmetini kullanarak bir videonun arka planını kaldırır ve kesilmiş kareleri bir alfa maskesiyle birlikte çıktı olarak verir. Her iki çıktıyı bir birleştirme düğümüne bağlayın veya saydam bir video yazmak için bir WEBM Kaydet düğümüne besleyin.
 

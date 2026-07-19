@@ -1,3 +1,5 @@
+# SamplerSASolver
+
 El nodo SamplerSASolver implementa un algoritmo de muestreo personalizado para modelos de difusión. Utiliza un enfoque predictor-corrector con configuraciones de orden ajustables y parámetros de ecuaciones diferenciales estocásticas (SDE) para generar muestras a partir del modelo de entrada.
 
 ## Entradas

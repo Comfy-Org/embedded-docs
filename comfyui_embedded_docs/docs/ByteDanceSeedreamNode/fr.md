@@ -1,3 +1,5 @@
+# ByteDance Seedream 4
+
 Le nœud ByteDance Seedream 4.5 & 5.0 offre des capacités unifiées de génération texte-image et d'édition précise par phrase unique, avec une résolution allant jusqu'à 4K. Il peut créer de nouvelles images à partir de descriptions textuelles ou modifier des images existantes à l'aide d'instructions textuelles. Le nœud prend en charge à la fois la génération d'images uniques et la génération séquentielle de plusieurs images connexes.
 
 ## Entrées

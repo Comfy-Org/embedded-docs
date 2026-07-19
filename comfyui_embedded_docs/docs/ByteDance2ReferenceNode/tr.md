@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Referanstan Videoya
+
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları

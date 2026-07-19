@@ -1,3 +1,5 @@
+# Referencia a video Grok
+
 El nodo Grock Referencia a Video genera un video basado en un prompt de texto, utilizando hasta siete imágenes de referencia para guiar el estilo y contenido del resultado. Se conecta a una API externa para crear el video, el cual luego se descarga y se devuelve.
 
 ## Entradas

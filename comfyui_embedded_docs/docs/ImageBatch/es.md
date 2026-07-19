@@ -1,3 +1,5 @@
+# Lote de Imágenes
+
 El nodo `ImageBatch` está diseñado para combinar dos imágenes en un solo lote. Si las dimensiones de las imágenes no coinciden, reescala automáticamente la segunda imagen para que coincida con las dimensiones de la primera antes de combinarlas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Cor da Imagem para Máscara
+
 O nó `ImageColorToMask` é projetado para converter uma cor específica em uma imagem em uma máscara. Ele processa uma imagem e uma cor alvo, gerando uma máscara onde a cor especificada é destacada, facilitando operações como segmentação baseada em cores ou isolamento de objetos.
 
 ## Entradas

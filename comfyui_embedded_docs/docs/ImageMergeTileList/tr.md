@@ -1,3 +1,5 @@
+# Döşeme Listesini Görüntüye Birleştir
+
 Bu düğüm, bir görüntü döşeme listesini alır ve bunları tek, daha büyük bir görüntü halinde birleştirir. Daha önce bir ızgaraya bölünmüş, üst üste binen döşemelerden oluşan bir görüntüyü yeniden oluşturmak için tasarlanmıştır ve kesintisiz bir nihai sonuç oluşturmak için ağırlıklı bir harmanlama tekniği kullanır.
 
 ## Girişler

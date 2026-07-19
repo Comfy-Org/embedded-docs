@@ -1,3 +1,5 @@
+# LoadImageSetFromFolderNode
+
 Le nœud LoadImageSetFromFolderNode charge plusieurs images depuis un dossier spécifié à des fins d’entraînement. Il détecte automatiquement les formats d’image courants et peut éventuellement redimensionner les images selon différentes méthodes avant de les retourner sous forme de lot.
 
 ## Entrées

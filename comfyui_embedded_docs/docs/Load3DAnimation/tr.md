@@ -1,3 +1,5 @@
+# Load3DAnimation
+
 Harika, işte uzmanlık alanınıza uygun olarak hazırlanmış Türkçe çeviri:
 
 Load3DAnimation düğümü, 3B model dosyalarını yüklemek ve işlemek için kullanılan temel bir düğümdür. Düğüm yüklendiğinde, `ComfyUI/input/3d/` klasöründeki mevcut 3B kaynakları otomatik olarak alır. Ayrıca, yükleme işlevini kullanarak desteklenen 3B dosyalarını önizleme için yükleyebilirsiniz.

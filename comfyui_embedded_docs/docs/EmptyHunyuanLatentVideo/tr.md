@@ -1,3 +1,5 @@
+# BoşHunyuanGizliVideo
+
 `EmptyHunyuanLatentVideo` düğümü, `EmptyLatentImage` düğümüne benzer. Bunu, video oluşturma için boş bir tuval olarak düşünebilirsiniz; burada genişlik, yükseklik ve uzunluk tuvallerin özelliklerini tanımlar ve toplu iş boyutu oluşturulacak tuval sayısını belirler. Bu düğüm, sonraki video oluşturma görevleri için hazır boş tuvaller oluşturur.
 
 ## Girişler

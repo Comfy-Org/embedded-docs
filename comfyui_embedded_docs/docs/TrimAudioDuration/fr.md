@@ -1,3 +1,5 @@
+# Régler la Durée Audio
+
 Le nœud TrimAudioDuration vous permet de découper un segment temporel spécifique dans un fichier audio. Vous pouvez définir le moment de début de la découpe et la durée du clip audio résultant. Le nœud fonctionne en convertissant les valeurs temporelles en positions de trames audio et en extrayant la portion correspondante de la forme d'onde audio.
 
 ## Entrées

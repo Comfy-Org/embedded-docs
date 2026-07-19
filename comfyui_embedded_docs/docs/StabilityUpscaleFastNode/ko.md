@@ -1,4 +1,4 @@
-# StabilityUpscaleFastNode
+# Stability AI 초고속 업스케일
 
 Stability API 호출을 통해 이미지를 원본 크기의 4배로 빠르게 업스케일합니다. 이 노드는 저품질 또는 압축된 이미지를 Stability AI의 빠른 업스케일링 서비스로 전송하여 업스케일링하기 위해 특별히 설계되었습니다.
 

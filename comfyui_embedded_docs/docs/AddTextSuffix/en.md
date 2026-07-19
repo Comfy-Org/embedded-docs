@@ -1,3 +1,5 @@
+# Add Text Suffix (DEPRECATED)
+
 This node appends a specified suffix to the end of an input text string. It takes the original text and the suffix as inputs, then returns the combined result. **This node is deprecated** and superseded by the Concatenate Text node.
 
 ## Inputs

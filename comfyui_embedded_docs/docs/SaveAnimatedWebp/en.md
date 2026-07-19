@@ -1,3 +1,5 @@
+# Save Animated WEBP
+
 This node is designed for saving a sequence of images as an animated WEBP file. It handles the aggregation of individual frames into a cohesive animation, applying specified metadata, and optimizing the output based on quality and compression settings.
 
 ## Inputs

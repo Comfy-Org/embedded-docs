@@ -1,3 +1,5 @@
+# ModelMergeCosmos7B
+
 Le nœud ModelMergeCosmos7B fusionne deux modèles d'IA en utilisant un mélange pondéré de composants spécifiques. Il permet un contrôle précis sur la façon dont les différentes parties des modèles sont combinées en ajustant des poids individuels pour les plongements de position, les blocs de transformeur et les couches finales.
 
 ## Entrées

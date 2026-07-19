@@ -1,3 +1,5 @@
+# Dividir Imagem com Alpha
+
 O nó **SplitImageWithAlpha** foi projetado para separar os componentes de cor e alfa de uma imagem. Ele processa um tensor de imagem de entrada, extraindo os canais RGB como o componente de cor e o canal alfa como o componente de transparência, facilitando operações que exigem manipulação desses aspectos distintos da imagem.
 
 ## Entradas

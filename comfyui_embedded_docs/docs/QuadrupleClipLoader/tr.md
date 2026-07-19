@@ -1,3 +1,5 @@
+# DörtlüCLIPYükleyici
+
 **Quadruple CLIP Loader (Dörtlü CLIP Yükleyici)**
 
 QuadrupleCLIPLoader, ComfyUI'nin temel düğümlerinden biridir ve ilk olarak HiDream I1 sürüm modelini desteklemek için eklenmiştir. Bu düğümü eksik bulursanız, düğüm desteğini sağlamak için ComfyUI'yi en son sürüme güncellemeyi deneyin.

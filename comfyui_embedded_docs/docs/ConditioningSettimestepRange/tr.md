@@ -1,3 +1,5 @@
+# KoşullandırmaZamanAdımıAralığıAyarla
+
 Bu düğüm, belirli bir zaman adımı aralığı ayarlayarak koşullandırmanın zamansal yönünü ayarlamak için tasarlanmıştır. Koşullandırma sürecinin başlangıç ve bitiş noktaları üzerinde hassas kontrol sağlayarak daha hedefli ve verimli bir üretim yapılmasına olanak tanır.
 
 ## Girişler

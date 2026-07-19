@@ -1,3 +1,5 @@
+# Carregar Latent
+
 O nó LoadLatent carrega representações latentes previamente salvas de arquivos .latent no diretório de entrada. Ele lê os dados do tensor latente do arquivo e aplica quaisquer ajustes de escala necessários antes de retornar os dados latentes para uso em outros nós.
 
 ## Entradas

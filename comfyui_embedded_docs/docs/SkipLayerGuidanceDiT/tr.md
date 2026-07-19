@@ -1,3 +1,5 @@
+# KatmanAtlamaRehberliğiDiT
+
 İşte SkipLayerGuidanceDiT düğümü için Türkçe teknik belge çevirisi:
 
 ## Genel Bakış

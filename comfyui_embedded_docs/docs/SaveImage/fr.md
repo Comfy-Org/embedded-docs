@@ -1,3 +1,5 @@
+# Enregistrer Image
+
 Le nœud SaveImage enregistre les images qu'il reçoit dans votre répertoire `ComfyUI/output`. Il sauvegarde chaque image au format PNG et peut intégrer des métadonnées de workflow, telles que le prompt, dans le fichier sauvegardé pour référence ultérieure.
 
 ## Entrées

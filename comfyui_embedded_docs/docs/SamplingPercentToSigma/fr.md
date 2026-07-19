@@ -1,3 +1,5 @@
+# PourcentageÉchantillonnageVersSigma
+
 Le nœud SamplingPercentToSigma convertit une valeur de pourcentage d'échantillonnage en une valeur sigma correspondante à l'aide des paramètres d'échantillonnage du modèle. Il prend une valeur de pourcentage comprise entre 0,0 et 1,0 et la mappe à la valeur sigma appropriée dans le planning de bruit du modèle, avec des options pour retourner soit le sigma calculé, soit les valeurs sigma maximales/minimales réelles aux limites.
 
 ## Entrées

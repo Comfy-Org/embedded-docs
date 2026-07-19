@@ -1,3 +1,5 @@
+# Adjust Audio Volume
+
 The AudioAdjustVolume node modifies the loudness of audio by applying volume adjustments in decibels (dB). It takes an audio input and applies a gain factor based on the specified volume level, where positive values increase volume and negative values decrease it. The node returns the modified audio with the same sample rate as the original.
 
 ## Inputs

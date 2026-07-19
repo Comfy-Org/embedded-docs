@@ -1,3 +1,5 @@
+# Uzunluk
+
 StringLength düğümü, bir metin dizisindeki karakter sayısını hesaplar. Herhangi bir metin girişini alır ve boşluklar ile noktalama işaretleri dahil olmak üzere toplam karakter sayısını döndürür. Bu, metin uzunluğunu ölçmek veya dizi boyutu gereksinimlerini doğrulamak için kullanışlıdır.
 
 ## Girişler

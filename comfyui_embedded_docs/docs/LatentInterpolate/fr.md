@@ -1,3 +1,5 @@
+# Interpoler Latent
+
 Voici la traduction en français de la documentation du nœud LatentInterpolate :
 
 Le nœud LatentInterpolate est conçu pour effectuer une interpolation entre deux ensembles d'échantillons latents selon un rapport spécifié, en mélangeant les caractéristiques des deux ensembles pour produire un nouvel ensemble intermédiaire d'échantillons latents.

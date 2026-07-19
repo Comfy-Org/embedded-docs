@@ -1,3 +1,5 @@
+# LatentApplyOperation
+
 The LatentApplyOperation node applies a specified operation to latent samples. It takes latent data and an operation as inputs, processes the latent samples using the provided operation, and returns the modified latent data. This node allows you to transform or manipulate latent representations in your workflow.
 
 ## Inputs

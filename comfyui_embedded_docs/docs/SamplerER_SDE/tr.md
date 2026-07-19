@@ -1,3 +1,5 @@
+# SamplerER_SDE
+
 SamplerER_SDE düğümü, difüzyon modelleri için ER-SDE, Ters-zamanlı SDE ve ODE yaklaşımları dahil olmak üzere farklı çözücü türleri sunan özel örnekleme yöntemleri sağlar. Örnekleme sürecinin stokastik davranışı ve hesaplama aşamaları üzerinde kontrol sağlar. Düğüm, seçilen çözücü türüne göre parametreleri otomatik olarak ayarlayarak doğru işlevselliği sağlar.
 
 ## Girişler

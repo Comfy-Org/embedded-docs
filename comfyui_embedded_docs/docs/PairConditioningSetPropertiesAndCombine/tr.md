@@ -1,3 +1,5 @@
+# Koşul Çifti Özelliklerini Ayarla ve Birleştir
+
 PairConditioningSetPropertiesAndCombine düğümü, mevcut pozitif ve negatif koşullandırma girdilerine yeni koşullandırma verileri uygulayarak koşullandırma çiftlerini değiştirir ve birleştirir. Uygulanan koşullandırmanın gücünü ayarlamanıza ve koşullandırma alanının nasıl ayarlanacağını kontrol etmenize olanak tanır. Bu düğüm, birden fazla koşullandırma kaynağını bir arada harmanlamanız gereken gelişmiş koşullandırma manipülasyon iş akışları için özellikle kullanışlıdır.
 
 ## Girdiler

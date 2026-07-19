@@ -1,3 +1,5 @@
+# Luma UNI-1 Image
+
 ## Overview
 
 This node generates images from text descriptions using the Luma UNI-1 model. It takes a text prompt and optional settings like aspect ratio and style, then sends the request to the Luma API to create an image.

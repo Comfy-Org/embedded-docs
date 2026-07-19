@@ -1,4 +1,4 @@
-# Visão Geral
+# PiD Condicionamento
 
 Anexa uma imagem latente e um valor de sigma de degradação a um dado CONDITIONING. Isso é usado para decodificação ou upscaling PiD (Pixel-in-Detail), permitindo controlar o quanto o latente é degradado antes do processamento.
 

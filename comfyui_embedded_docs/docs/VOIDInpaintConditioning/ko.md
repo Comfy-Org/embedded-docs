@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 VOIDInpaintConditioning 노드는 CogVideoX 모델의 인페인팅에 필요한 컨디셔닝 데이터를 준비합니다. 소스 비디오와 전처리된 쿼드마스크를 입력받아 VAE를 통해 인코딩한 후, 모델이 마스크 영역을 채우는 데 사용하는 32채널 컨디셔닝 신호로 결합합니다.
 
 ## 입력

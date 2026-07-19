@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 DiffusersLoader düğümü, diffusers kütüphanesinden modeller yüklemek için tasarlanmış olup, sağlanan model yollarına göre UNet, CLIP ve VAE modellerinin yüklenmesini özel olarak yönetir. Bu modellerin ComfyUI çerçevesine entegrasyonunu kolaylaştırarak metinden görüntü oluşturma, görüntü işleme ve daha fazlası gibi gelişmiş işlevleri mümkün kılar.
 
 ## Girişler

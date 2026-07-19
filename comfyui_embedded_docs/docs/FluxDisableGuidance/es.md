@@ -1,3 +1,5 @@
+# FluxDisableGuidance
+
 Este nodo desactiva por completo la funcionalidad de guía integrada para Flux y modelos similares. Toma datos de condicionamiento como entrada y elimina el componente de guía estableciéndolo en None, desactivando efectivamente el condicionamiento basado en guía para el proceso de generación.
 
 ## Entradas

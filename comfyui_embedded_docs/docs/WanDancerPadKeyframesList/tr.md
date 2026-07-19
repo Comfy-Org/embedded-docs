@@ -1,3 +1,5 @@
+# WanDancerPadKeyframesList
+
 ## Genel Bakış
 
 Bu düğüm, bir dizi görüntüyü ve isteğe bağlı bir ses parçasını alarak, bunları belirtilen sayıda dolgulu parçaya böler. Video oluşturma için anahtar kare dizileri hazırlamak üzere tasarlanmıştır; burada her parça tutarlı bir uzunluğa dolgulanır ve hangi karelerin geçerli olduğunu belirtmek için karşılık gelen bir maske oluşturulur.

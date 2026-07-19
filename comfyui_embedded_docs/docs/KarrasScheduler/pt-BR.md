@@ -1,3 +1,5 @@
+# KarrasScheduler
+
 O nó KarrasScheduler é projetado para gerar uma sequência de níveis de ruído (sigmas) com base no agendamento de ruído de Karras et al. (2022). Este agendador é útil para controlar o processo de difusão em modelos generativos, permitindo ajustes refinados nos níveis de ruído aplicados em cada etapa do processo de geração.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# SamplerDpmppSde
+
 Bu düğüm, DPM++ SDE (Stokastik Diferansiyel Denklem) modeli için bir örnekleyici oluşturmak üzere tasarlanmıştır. Hem CPU hem de GPU yürütme ortamlarına uyum sağlayarak, örnekleyicinin uygulamasını mevcut donanıma göre optimize eder.
 
 ## Girişler

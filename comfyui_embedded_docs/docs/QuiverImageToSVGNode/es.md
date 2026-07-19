@@ -1,3 +1,5 @@
+# Quiver Imagen a SVG
+
 Este nodo convierte una imagen rasterizada en un gráfico vectorial escalable (SVG) utilizando los modelos de vectorización de Quiver AI. Envía la imagen a una API externa que la procesa y devuelve el resultado vectorizado.
 
 ## Entradas

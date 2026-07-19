@@ -1,3 +1,5 @@
+# StableCascade 空白潛在影像
+
 ## 概述
 
 StableCascade_EmptyLatentImage 節點會為 Stable Cascade 模型建立空的潛在張量。它會根據輸入解析度與壓縮設定，生成兩個獨立的潛在表示——一個用於階段 C，另一個用於階段 B。此節點為 Stable Cascade 生成管線提供了起點。

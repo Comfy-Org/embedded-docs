@@ -1,4 +1,4 @@
-# StableZero123_Conditioning_Batched
+# StableZero123 조건 설정 (배치)
 
 StableZero123_Conditioning_Batched 노드는 입력 이미지를 처리하여 3D 모델 생성을 위한 컨디셔닝 데이터를 생성합니다. CLIP 비전과 VAE 모델을 사용하여 이미지를 인코딩한 후, 고도(elevation) 및 방위각(azimuth) 각도를 기반으로 카메라 임베딩을 생성하여 배치 처리를 위한 양성 및 음성 컨디셔닝과 잠재 표현을 생성합니다.
 

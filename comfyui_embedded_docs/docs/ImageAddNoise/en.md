@@ -1,3 +1,5 @@
+# Add Noise to Image
+
 The ImageAddNoise node adds random noise to an input image. It uses a specified random seed to generate consistent noise patterns and allows controlling the intensity of the noise effect. The resulting image maintains the same dimensions as the input but with added visual texture.
 
 ## Inputs

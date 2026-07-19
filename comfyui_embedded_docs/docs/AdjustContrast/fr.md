@@ -1,3 +1,5 @@
+# Ajuster le contraste
+
 Le nœud Ajuster le Contraste modifie le niveau de contraste d'une image d'entrée. Il fonctionne en ajustant la différence entre les zones claires et sombres de l'image. Un facteur de 1,0 laisse l'image inchangée, les valeurs inférieures à 1,0 réduisent le contraste et les valeurs supérieures à 1,0 l'augmentent.
 
 ## Entrées

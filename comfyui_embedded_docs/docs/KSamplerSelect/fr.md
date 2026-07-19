@@ -1,3 +1,5 @@
+# KSamplerSelect
+
 Le nœud KSamplerSelect est conçu pour sélectionner un échantillonneur spécifique en fonction du nom d'échantillonneur fourni. Il abstrait la complexité de la sélection d'échantillonneur, permettant aux utilisateurs de basculer facilement entre différentes stratégies d'échantillonnage pour leurs tâches.
 
 ## Entrées

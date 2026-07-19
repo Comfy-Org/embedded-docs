@@ -1,3 +1,5 @@
+# Hunyuan3Dv2ConditioningMultiView
+
 Hunyuan3Dv2ConditioningMultiView 節點處理多視角 CLIP 視覺嵌入，用於 3D 影片生成。它接收可選的前、左、後、右視角嵌入，並將其與位置編碼結合，為影片模型創建條件數據。該節點輸出包含組合嵌入的正向條件，以及包含零值的負向條件。
 
 ## 輸入

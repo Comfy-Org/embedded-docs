@@ -1,3 +1,5 @@
+# Conversor de Caixa
+
 O nó Case Converter transforma strings de texto em diferentes formatos de capitalização. Ele recebe uma string de entrada e a converte com base no modo selecionado, produzindo uma string de saída com a formatação de capitalização especificada. O nó oferece suporte a quatro opções diferentes de conversão de capitalização para modificar a formatação de maiúsculas e minúsculas do seu texto.
 
 ## Entradas

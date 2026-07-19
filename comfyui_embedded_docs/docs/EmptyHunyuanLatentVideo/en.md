@@ -1,3 +1,5 @@
+# Empty HunyuanVideo 1.0 Latent
+
 The `EmptyHunyuanLatentVideo` node is similar to the `EmptyLatentImage` node. You can consider it as a blank canvas for video generation, where width, height, and length define the properties of the canvas, and the batch size determines the number of canvases to create. This node creates empty canvases ready for subsequent video generation tasks.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# CLIP Görü Kodlama
+
 `CLIP Vision Encode` düğümü, ComfyUI'de bulunan bir görüntü kodlama düğümüdür. CLIP Vision modeli aracılığıyla giriş görüntülerini görsel öznitelik vektörlerine dönüştürmek için kullanılır. Bu düğüm, görüntü ve metin anlayışını birbirine bağlayan önemli bir köprüdür ve çeşitli yapay zeka görüntü oluşturma ve işleme iş akışlarında yaygın olarak kullanılır.
 
 **Düğüm İşlevi**

@@ -1,3 +1,5 @@
+# Referans Gizli Değişken
+
 Bu düğüm, bir düzenleme modeli için yönlendirici gizli değişkeni (guiding latent) ayarlar. Koşullandırma verilerini ve isteğe bağlı bir gizli değişken girişini alır, ardından koşullandırmayı referans gizli değişken bilgisini içerecek şekilde değiştirir. Model destekliyorsa, birden fazla referans görseli ayarlamak için birden çok ReferenceLatent düğümünü zincirleyebilirsiniz.
 
 ## Girişler

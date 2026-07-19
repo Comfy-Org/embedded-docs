@@ -1,3 +1,5 @@
+# ByteDance Texto a Video
+
 El nodo ByteDance Text to Video genera videos utilizando modelos de ByteDance a través de una API basada en descripciones de texto. Recibe como entrada una descripción textual y diversas configuraciones de video, y luego crea un video que coincide con las especificaciones proporcionadas. El nodo gestiona la comunicación con la API y devuelve el video generado como salida.
 
 ## Entradas

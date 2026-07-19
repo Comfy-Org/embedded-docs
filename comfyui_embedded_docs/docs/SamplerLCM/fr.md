@@ -1,3 +1,5 @@
+# SamplerLCM
+
 Le nœud SamplerLCM fournit un échantillonneur LCM (Modèle de Cohérence Latente) avec des paramètres de bruit par étape réglables. Il permet de contrôler le bruit appliqué à chaque étape d'échantillonnage, offrant un réglage fin du processus d'échantillonnage.
 
 ## Entrées

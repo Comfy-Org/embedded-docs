@@ -1,3 +1,5 @@
+# Style Recraft - Illustration numérique
+
 Ce nœud configure un style destiné à être utilisé avec l'API Recraft, en sélectionnant spécifiquement le style « digital_illustration ». Il permet de choisir un sous-style optionnel pour affiner davantage la direction artistique de l'image générée.
 
 ## Entrées

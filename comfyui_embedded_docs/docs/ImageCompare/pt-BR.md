@@ -1,3 +1,5 @@
+# Comparar Imagens
+
 O nó Image Compare fornece uma interface visual para comparar duas imagens lado a lado usando um controle deslizante ajustável. Ele foi projetado como um nó de saída, ou seja, não transmite dados para outros nós, mas exibe as imagens diretamente na interface do usuário para inspeção.
 
 ## Entradas

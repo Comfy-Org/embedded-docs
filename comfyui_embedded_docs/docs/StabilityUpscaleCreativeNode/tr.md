@@ -1,3 +1,5 @@
+# Stability AI Büyütme Yaratıcı
+
 Görseli minimum değişiklikle 4K çözünürlüğe yükseltir. Bu düğüm, Stability AI'nin yaratıcı yükseltme teknolojisini kullanarak, orijinal içeriği korurken ve ince yaratıcı detaylar ekleyerek görüntü çözünürlüğünü artırır.
 
 ## Girişler

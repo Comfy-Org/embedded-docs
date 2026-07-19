@@ -1,3 +1,5 @@
+# ÇokÜstelZamanlayıcı
+
 PolyexponentialScheduler düğümü, bir poliexponansiyel gürültü planına dayalı olarak bir dizi gürültü seviyesi (sigma) oluşturmak için tasarlanmıştır. Bu plan, sigma'nın logaritmasında bir polinom fonksiyonudur ve difüzyon süreci boyunca gürültü seviyelerinin esnek ve özelleştirilebilir bir şekilde ilerlemesine olanak tanır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# SamplerEulerAncestral
+
 O nó SamplerEulerAncestral cria um amostrador Euler Ancestral para gerar imagens. Este amostrador utiliza uma abordagem matemática específica que combina integração Euler com técnicas de amostragem ancestral para produzir variações de imagem. O nó permite configurar o comportamento da amostragem ajustando parâmetros que controlam a aleatoriedade e o tamanho do passo durante o processo de geração.
 
 ## Entradas

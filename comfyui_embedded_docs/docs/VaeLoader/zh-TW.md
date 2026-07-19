@@ -1,3 +1,5 @@
+# 載入 VAE
+
 此節點會偵測位於 `ComfyUI/models/vae` 資料夾中的模型，同時也會讀取在 extra_model_paths.yaml 檔案中設定的其他路徑下的模型。有時，您可能需要**重新整理 ComfyUI 介面**，以便讓它從對應的資料夾中讀取模型檔案。
 
 VAELoader 節點專門用於載入變分自編碼器（VAE）模型，特別針對處理標準 VAE 和近似 VAE 進行了最佳化。它支援按名稱載入 VAE，包括對 'taesd' 和 'taesdxl' 模型的特殊處理，並會根據 VAE 的特定設定動態調整。

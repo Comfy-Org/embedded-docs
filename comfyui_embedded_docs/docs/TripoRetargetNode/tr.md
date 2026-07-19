@@ -1,3 +1,5 @@
+# Tripo: Riglenmiş Modeli Yeniden Hedefle
+
 TripoRetargetNode, önceden tanımlanmış animasyonları, hareket verilerini yeniden hedefleyerek 3D karakter modellerine uygular. Daha önce iskeletlenmiş bir 3D modeli alır ve birkaç hazır animasyondan birini uygulayarak çıktı olarak animasyonlu bir 3D model dosyası oluşturur. Düğüm, animasyon yeniden hedefleme işlemini gerçekleştirmek için Tripo API'si ile iletişim kurar.
 
 ## Girişler

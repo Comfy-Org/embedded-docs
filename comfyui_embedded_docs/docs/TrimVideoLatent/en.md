@@ -1,3 +1,5 @@
+# Trim Video Latent
+
 The TrimVideoLatent node removes frames from the beginning of a video latent representation. It takes a latent video sample and trims off a specified number of frames from the start, returning the remaining portion of the video. This allows you to shorten video sequences by removing the initial frames.
 
 ## Inputs

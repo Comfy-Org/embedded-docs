@@ -1,3 +1,5 @@
+# SaveLoRANode
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveLoRANode/en.md)
 
 Le nœud SaveLoRA enregistre les modèles LoRA (Low-Rank Adaptation) dans votre répertoire de sortie. Il prend un modèle LoRA en entrée et crée un fichier safetensors avec un nom de fichier généré automatiquement. Vous pouvez personnaliser le préfixe du nom de fichier et inclure éventuellement le nombre d'étapes d'entraînement dans le nom pour une meilleure organisation.

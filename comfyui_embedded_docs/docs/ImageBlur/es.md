@@ -1,3 +1,5 @@
+# Desenfoque de Imagen
+
 El nodo `ImageBlur` aplica un desenfoque gaussiano a una imagen, permitiendo suavizar bordes y reducir detalles y ruido. Proporciona control sobre la intensidad y propagación del desenfoque mediante parámetros.
 
 ## Entradas

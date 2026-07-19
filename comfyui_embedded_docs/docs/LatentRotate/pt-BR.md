@@ -1,3 +1,5 @@
+# Rotacionar Latent
+
 O nó LatentRotate foi projetado para rotacionar representações latentes de imagens por ângulos especificados. Ele abstrai a complexidade de manipular o espaço latente para obter efeitos de rotação, permitindo que os usuários transformem facilmente imagens no espaço latente de um modelo generativo.
 
 ## Entradas

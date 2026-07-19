@@ -1,3 +1,5 @@
+# ModelMergeWAN2_1
+
 El nodo `ModelMergeWAN2_1` fusiona dos modelos WAN2.1 combinando sus componentes mediante promedios ponderados. Admite diferentes tamaños de modelo, incluidos modelos de 1.3B con 30 bloques y modelos de 14B con 40 bloques, con manejo especial para modelos de imagen a video que incluyen un componente adicional de incrustación de imagen. Cada componente de los modelos puede ponderarse individualmente para controlar la proporción de fusión entre los dos modelos de entrada.
 
 ## Entradas

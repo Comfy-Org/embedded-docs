@@ -1,3 +1,5 @@
+# InvertBooleanNode
+
 此節點接收單一布林值（true/false）輸入，並輸出相反的值。它執行邏輯 NOT 運算，將 `true` 轉換為 `false`，將 `false` 轉換為 `true`。
 
 ## 輸入

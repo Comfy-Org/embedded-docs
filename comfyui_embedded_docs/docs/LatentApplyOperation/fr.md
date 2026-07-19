@@ -1,3 +1,5 @@
+# LatentApplyOperation
+
 Le nœud **LatentApplyOperation** applique une opération spécifiée à des échantillons latents. Il prend en entrée des données latentes et une opération, traite les échantillons latents à l'aide de l'opération fournie, puis renvoie les données latentes modifiées. Ce nœud vous permet de transformer ou de manipuler des représentations latentes dans votre flux de travail.
 
 ## Entrées

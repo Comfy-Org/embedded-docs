@@ -1,3 +1,5 @@
+# 取得 IC-LoRA 參數
+
 ## 概述
 
 此節點從已載入 LoRA 模型的元資料中提取 IC-LoRA 參數。它會讀取 safetensors 元資料以尋找如參考降採樣因子（reference downscale factor）等數值，並將其輸出為結構化的參數物件，可連接到 LTXVAddGuide 節點以進行特殊的引導處理。

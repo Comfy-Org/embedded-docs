@@ -1,3 +1,5 @@
+# SV3D_Koşullandırma
+
 SV3D_Conditioning düğümü, SV3D modelini kullanarak 3D video oluşturma için koşullandırma verilerini hazırlar. Bir başlangıç görüntüsünü alır ve CLIP görüntü ve VAE kodlayıcıları aracılığıyla işleyerek pozitif ve negatif koşullandırma ile birlikte bir gizli temsil oluşturur. Düğüm, belirtilen video karesi sayısına bağlı olarak çok kareli video oluşturma için kamera yükseklik ve azimut dizileri üretir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# FusionarModeloQwenImage
+
 El nodo ModelMergeQwenImage fusiona dos modelos de IA combinando sus componentes con pesos ajustables. Permite mezclar partes específicas de modelos de imagen Qwen, incluyendo bloques transformadores, incrustaciones posicionales y componentes de procesamiento de texto. Puedes controlar cuánta influencia tiene cada modelo en diferentes secciones del resultado fusionado.
 
 ## Entradas

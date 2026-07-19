@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 O nó **DiffusersLoader** é projetado para carregar modelos da biblioteca diffusers, lidando especificamente com o carregamento de modelos UNet, CLIP e VAE com base nos caminhos fornecidos. Ele facilita a integração desses modelos no framework ComfyUI, permitindo funcionalidades avançadas como geração de texto para imagem, manipulação de imagens e muito mais.
 
 ## Entradas

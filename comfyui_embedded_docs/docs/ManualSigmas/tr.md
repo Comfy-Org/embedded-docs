@@ -1,3 +1,5 @@
+# Manuel Sigmalar
+
 ManualSigmas düğümü, örnekleme süreci için özel bir gürültü seviyesi (sigma) dizisini manuel olarak tanımlamanıza olanak tanır. Bir sayı listesini dize olarak girersiniz ve düğüm bunları diğer örnekleme düğümleri tarafından kullanılabilecek bir tensöre dönüştürür. Bu, belirli gürültü programlarını test etmek veya oluşturmak için kullanışlıdır.
 
 ## Girişler

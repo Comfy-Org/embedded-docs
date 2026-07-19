@@ -1,3 +1,5 @@
+# BoşKromaIşımaGizliGörsel
+
 EmptyChromaRadianceLatentImage düğümü, kroma parlaklık iş akışlarında kullanılmak üzere belirtilen boyutlarda boş bir gizli görüntü oluşturur. Gizli alan işlemleri için başlangıç noktası görevi gören sıfırlarla dolu bir tensör üretir. Düğüm, boş gizli görüntünün genişliğini, yüksekliğini ve toplu iş boyutunu tanımlamanıza olanak tanır.
 
 ## Girişler

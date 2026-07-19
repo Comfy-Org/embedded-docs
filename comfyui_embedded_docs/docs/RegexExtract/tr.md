@@ -1,3 +1,5 @@
+# Regex Çıkar
+
 RegexExtract düğümü, düzenli ifadeler kullanarak metin içinde desenler arar. İlk eşleşmeyi, tüm eşleşmeleri, eşleşmelerden belirli grupları veya birden çok eşleşme arasındaki tüm grupları bulabilir. Düğüm, büyük/küçük harf duyarlılığı, çok satırlı eşleştirme ve noktanın her şeyle eşleşmesi (dotall) gibi çeşitli regex bayraklarını destekler.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Cond Pair Set Props Combine
+
 The PairConditioningSetPropertiesAndCombine node modifies and combines conditioning pairs by applying new conditioning data to existing positive and negative conditioning inputs. It allows you to adjust the strength of the applied conditioning and control how the conditioning area is set. This node is particularly useful for advanced conditioning manipulation workflows where you need to blend multiple conditioning sources together.
 
 ## Inputs

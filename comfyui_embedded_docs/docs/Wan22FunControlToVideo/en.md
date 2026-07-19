@@ -1,3 +1,5 @@
+# Wan22FunControlToVideo
+
 The Wan22FunControlToVideo node prepares conditioning and latent representations for video generation using the Wan video model architecture. It processes positive and negative conditioning inputs along with optional reference images and control videos to create the necessary latent space representations for video synthesis. The node handles spatial scaling and temporal dimensions to generate appropriate conditioning data for video models.
 
 ## Inputs

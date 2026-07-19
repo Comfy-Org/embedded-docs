@@ -1,3 +1,5 @@
+# ModelMergeSD3_2B
+
 El nodo ModelMergeSD3_2B permite fusionar dos modelos Stable Diffusion 3 2B combinando sus componentes con pesos ajustables. Proporciona control individual sobre las capas de incrustación y los bloques transformadores, permitiendo combinaciones de modelos finamente ajustadas para tareas de generación especializadas.
 
 ## Entradas

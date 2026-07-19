@@ -1,3 +1,5 @@
+# CombineHooksEight
+
 O nó Combinar Ganchos [8] mescla até oito grupos de ganchos diferentes em um único grupo de ganchos combinado. Ele recebe múltiplas entradas de ganchos e as combina usando a funcionalidade de combinação de ganchos do ComfyUI. Isso permite consolidar várias configurações de ganchos para processamento simplificado em fluxos de trabalho avançados.
 
 ## Entradas

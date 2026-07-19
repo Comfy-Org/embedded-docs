@@ -1,3 +1,5 @@
+# Karşılaştır
+
 StringCompare düğümü, iki metin dizesini farklı karşılaştırma yöntemleri kullanarak karşılaştırır. Bir dizenin diğeriyle başlayıp başlamadığını, diğeriyle bitip bitmediğini veya her iki dizenin tamamen eşit olup olmadığını kontrol edebilir. Karşılaştırma, harf büyüklüğü farklılıkları dikkate alınarak veya alınmadan gerçekleştirilebilir.
 
 ## Girişler

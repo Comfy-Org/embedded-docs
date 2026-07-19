@@ -1,3 +1,5 @@
+# SV3D_Conditioning
+
 O nó SV3D_Conditioning prepara dados de condicionamento para geração de vídeo 3D usando o modelo SV3D. Ele recebe uma imagem inicial e a processa através dos codificadores CLIP vision e VAE para criar condicionamentos positivo e negativo, juntamente com uma representação latente. O nó gera sequências de elevação e azimute da câmera para geração de vídeos com múltiplos quadros, com base no número especificado de quadros de vídeo.
 
 ## Entradas

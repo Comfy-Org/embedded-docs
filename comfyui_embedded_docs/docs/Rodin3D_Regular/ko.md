@@ -1,4 +1,4 @@
-# Rodin 3D Regular 노드
+# Rodin 3D 생성 - 일반 생성
 
 Rodin 3D Regular 노드는 Rodin API를 사용하여 3D 에셋을 생성합니다. 입력 이미지를 받아 Rodin 서비스를 통해 처리하여 3D 모델을 만듭니다. 이 노드는 작업 생성부터 최종 3D 모델 파일 다운로드까지 전체 워크플로를 처리합니다.
 

@@ -1,3 +1,5 @@
+# ThresholdMask
+
 O nó ThresholdMask converte uma máscara em uma máscara binária aplicando um valor de limiar. Ele compara cada pixel da máscara de entrada com o valor de limiar especificado e cria uma nova máscara onde os pixels acima do limiar tornam-se 1 (branco) e os pixels abaixo ou iguais ao limiar tornam-se 0 (preto).
 
 ## Entradas

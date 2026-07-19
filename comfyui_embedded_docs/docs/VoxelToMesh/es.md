@@ -1,3 +1,5 @@
+# VoxelToMesh
+
 El nodo VoxelToMeshBasic convierte datos de vóxeles 3D en una geometría de malla extrayendo una superficie en un valor de umbral especificado. Procesa cada cuadrícula de vóxeles en la entrada y genera vértices y caras que forman una representación de malla 3D.
 
 ## Entradas

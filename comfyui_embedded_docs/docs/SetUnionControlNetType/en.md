@@ -1,3 +1,5 @@
+# Set Union ControlNet Type
+
 The SetUnionControlNetType node allows you to specify the type of control network to use for conditioning. It takes an existing control network and sets its control type based on your selection, creating a modified copy of the control network with the specified type configuration.
 
 ## Inputs

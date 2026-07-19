@@ -1,3 +1,5 @@
+# Recorte central de imágenes
+
 El nodo **Center Crop Images** recorta una imagen desde su centro hasta un ancho y alto especificados. Calcula la región central de la imagen de entrada y extrae un área rectangular con las dimensiones definidas. Si el tamaño de recorte solicitado es mayor que la imagen, el recorte se limitará a los bordes de la imagen.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Load Checkpoint
+
 ## Overview
 
 Loads a diffusion model checkpoint file and decomposes it into three core components: the main model used for denoising latents, the CLIP text encoder, and the VAE image encoder/decoder. This node automatically detects all model files in the `ComfyUI/models/checkpoints` folder and any additional paths configured in your `extra_model_paths.yaml` file.

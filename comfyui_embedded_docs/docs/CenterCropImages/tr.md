@@ -1,3 +1,5 @@
+# Ortadan Kırp Görseller
+
 Merkezi Kırpma Görselleri düğümü, bir görseli merkezinden belirtilen genişlik ve yüksekliğe kırpar. Giriş görselinin merkez bölgesini hesaplar ve tanımlanan boyutlarda dikdörtgen bir alan çıkarır. İstenen kırpma boyutu görselden büyükse, kırpma işlemi görselin sınırlarıyla kısıtlanır.
 
 ## Girişler

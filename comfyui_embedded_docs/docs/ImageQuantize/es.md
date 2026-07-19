@@ -1,3 +1,5 @@
+# Cuantizar Imagen
+
 El nodo ImageQuantize está diseñado para reducir la cantidad de colores en una imagen a un número específico, aplicando opcionalmente técnicas de tramado para mantener la calidad visual. Este proceso es útil para crear imágenes basadas en paletas o reducir la complejidad cromática para ciertas aplicaciones.
 
 ## Entradas

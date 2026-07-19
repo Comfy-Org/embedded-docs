@@ -1,3 +1,5 @@
+# SamplerEulerAncestral
+
 The SamplerEulerAncestral node creates an Euler Ancestral sampler for generating images. This sampler uses a specific mathematical approach that combines Euler integration with ancestral sampling techniques to produce image variations. The node allows you to configure the sampling behavior by adjusting parameters that control the randomness and step size during the generation process.
 
 ## Inputs

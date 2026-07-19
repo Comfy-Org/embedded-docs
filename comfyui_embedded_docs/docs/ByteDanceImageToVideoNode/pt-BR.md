@@ -1,3 +1,5 @@
+# Imagem para Vídeo ByteDance
+
 O nó ByteDance Image to Video gera vídeos usando modelos ByteDance por meio de uma API com base em uma imagem de entrada e um prompt de texto. Ele recebe um quadro de imagem inicial e cria uma sequência de vídeo que segue a descrição fornecida. O nó oferece várias opções de personalização para resolução do vídeo, proporção de aspecto, duração e outros parâmetros de geração.
 
 ## Entradas

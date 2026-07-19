@@ -1,3 +1,5 @@
+# Nano Banana 2
+
 以下が翻訳結果です。
 
 GeminiNanoBanana2 ノードは、Google の Vertex AI Gemini モデルを使用して画像を生成または編集します。テキストプロンプトと、必要に応じて参照画像やファイルを API に送信し、生成された画像とそれに付随するテキストを返します。

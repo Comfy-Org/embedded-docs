@@ -1,3 +1,5 @@
+# Conditionnement (Définir Zone avec Pourcentage)
+
 Le nœud ConditioningSetAreaPercentage est spécialisé dans l'ajustement de la zone d'influence des éléments de conditionnement en fonction de valeurs en pourcentage. Il permet de spécifier les dimensions et la position de la zone sous forme de pourcentages de la taille totale de l'image, ainsi qu'un paramètre de force pour moduler l'intensité de l'effet de conditionnement.
 
 ## Entrées

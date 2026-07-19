@@ -1,3 +1,5 @@
+# Correspondance Regex
+
 Le nœud RegexMatch vérifie si une chaîne de texte contient une correspondance avec un motif d'expression régulière donné. Il recherche dans la chaîne d'entrée et renvoie un résultat simple oui/non indiquant si le motif a été trouvé dans le texte. Vous pouvez ajuster le fonctionnement de la recherche en activant des options comme la correspondance insensible à la casse ou le mode multiligne.
 
 ## Entrées

@@ -8,9 +8,9 @@ Bu düğüm, SAM3 takip verilerini, WanSCAILToVideo düğümü tarafından kulla
 |-----------|----------|-----------|---------|--------|
 | `driving_track_data` | Sürüş pozu videosunun SAM3 takibi. pose_video_mask çıktısına dönüştürülecektir. | SAM3_TRACK_DATA | Evet | - |
 | `ref_track_data` | Referans görüntünün SAM3 takibi. | SAM3_TRACK_DATA | Hayır | - |
-| `object_indices` | Dahil edilecek kişi indekslerinin virgülle ayrılmış listesi (örn. '0,2,3'). Hem referans hem de poz videosu maskelerine uygulanır. Boş = tümü. | STRING | Evet | - |
-| `sort_by` | Palet renklerinin takip edilen nesnelere atanma sırası (her kimliğin aynı rengi koruması için hem referans hem de poz videosuna uygulanır). left_to_right = en soldaki nesne (ilk kare merkez noktasına göre) ilk rengi alır; area = en büyük nesne (ilk kare maske alanına göre) ilk rengi alır; none = SAM3'ün sırasını korur. (varsayılan: "left_to_right") | COMBO | Evet | `"none"`<br>`"left_to_right"`<br>`"area"` |
-| `replacement_mode` | False = Animasyon Modu (pose_video_mask siyah arka plana, reference_image_mask beyaz arka plana sahiptir). True = Değiştirme Modu (pose_video_mask beyaz arka plana, reference_image_mask siyah arka plana sahiptir). (varsayılan: False) | BOOLEAN | Evet | False<br>True |
+| `nesne_indeksleri` | Dahil edilecek kişi indekslerinin virgülle ayrılmış listesi (örn. '0,2,3'). Hem referans hem de poz videosu maskelerine uygulanır. Boş = tümü. | STRING | Evet | - |
+| `sırala` | Palet renklerinin takip edilen nesnelere atanma sırası (her kimliğin aynı rengi koruması için hem referans hem de poz videosuna uygulanır). left_to_right = en soldaki nesne (ilk kare merkez noktasına göre) ilk rengi alır; area = en büyük nesne (ilk kare maske alanına göre) ilk rengi alır; none = SAM3'ün sırasını korur. (varsayılan: "left_to_right") | COMBO | Evet | `"none"`<br>`"left_to_right"`<br>`"area"` |
+| `değiştirme_modu` | False = Animasyon Modu (pose_video_mask siyah arka plana, reference_image_mask beyaz arka plana sahiptir). True = Değiştirme Modu (pose_video_mask beyaz arka plana, reference_image_mask siyah arka plana sahiptir). (varsayılan: False) | BOOLEAN | Evet | False<br>True |
 
 ## Çıktılar
 

@@ -1,3 +1,5 @@
+# Görüntüleri Normalleştir
+
 Bu düğüm, bir giriş görüntüsünün piksel değerlerini matematiksel bir normalleştirme işlemi kullanarak ayarlar. Her pikselden belirtilen bir ortalama değeri çıkarır ve ardından sonucu belirtilen bir standart sapmaya böler. Bu, görüntü verilerini diğer makine öğrenimi modelleri için hazırlamak amacıyla yapılan yaygın bir ön işleme adımıdır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# CombineHooks
+
 O nó Combine Hooks [2] mescla dois grupos de hooks em um único grupo combinado. Ele recebe duas entradas opcionais de hooks e as combina usando a funcionalidade de combinação de hooks do ComfyUI. Isso permite consolidar múltiplas configurações de hooks para um processamento mais simplificado.
 
 ## Entradas

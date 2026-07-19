@@ -1,3 +1,5 @@
+# BetaSamplingScheduler
+
 The BetaSamplingScheduler node generates a sequence of noise levels (sigmas) for the sampling process using a beta scheduling algorithm. It takes a model and configuration parameters to create a customized noise schedule that controls the denoising process during image generation. This scheduler allows fine-tuning of the noise reduction trajectory through alpha and beta parameters.
 
 ## Inputs

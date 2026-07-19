@@ -1,3 +1,5 @@
+# GizliTopluTohumDavranışı
+
 LatentBatchSeedBehavior düğümü, bir grup gizli (latent) örneğin tohum (seed) davranışını değiştirmek için tasarlanmıştır. Bu düğüm, tohumu grup genelinde rastgeleleştirmeye veya sabitlemeye olanak tanıyarak, üretilen çıktılarda çeşitlilik sağlama veya tutarlılığı koruma yoluyla üretim sürecini etkiler.
 
 ## Girişler

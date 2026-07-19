@@ -1,3 +1,5 @@
+# UNetMultiplicationAutoAttention
+
 Le nœud UNetSelfAttentionMultiply applique des facteurs de multiplication aux composants requête, clé, valeur et sortie du mécanisme d'auto-attention dans un modèle UNet. Il permet de pondérer différentes parties du calcul d'attention afin d'expérimenter l'impact des poids d'attention sur le comportement du modèle.
 
 ## Entrées

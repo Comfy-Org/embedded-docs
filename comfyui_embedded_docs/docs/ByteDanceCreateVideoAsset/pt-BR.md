@@ -1,3 +1,5 @@
+# ByteDance Criar Ativo de Vídeo
+
 Este nó cria um ativo de vídeo pessoal para o Seedance 2.0. Ele faz upload do seu vídeo de entrada e o registra em um grupo de ativos especificado. Se você não fornecer um ID de grupo, ele o guiará por um processo de verificação de pessoa real no seu navegador para criar um novo grupo primeiro.
 
 ## Entradas

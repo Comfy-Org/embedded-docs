@@ -1,3 +1,5 @@
+# LoadLatent
+
 The LoadLatent node loads previously saved latent representations from .latent files in the input directory. It reads the latent tensor data from the file and applies any necessary scaling adjustments before returning the latent data for use in other nodes.
 
 ## Inputs

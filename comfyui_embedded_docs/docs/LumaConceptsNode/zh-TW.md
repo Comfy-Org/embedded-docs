@@ -1,3 +1,5 @@
+# Luma 概念
+
 此文件由 AI 生成。若發現任何錯誤或有改進建議，歡迎隨時貢獻！[在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaConceptsNode/en.md)
 
 用於保存一個或多個攝影機概念，以配合 Luma 文字轉影片和 Luma 圖片轉影片節點使用。此節點允許您選擇最多四個攝影機概念，並可選擇性地將它們與現有的概念鏈結合。

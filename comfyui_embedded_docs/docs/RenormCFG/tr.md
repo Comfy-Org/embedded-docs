@@ -1,3 +1,5 @@
+# YenidenNormalleştirCFG
+
 RenormCFG düğümü, koşullu ölçeklendirme ve normalizasyon uygulayarak yayılım modellerindeki sınıflandırıcısız yönlendirme (CFG) sürecini değiştirir. Belirtilen zaman adımı eşiklerine ve yeniden normalizasyon faktörlerine dayanarak, görüntü oluşturma sırasında koşullu ve koşulsuz tahminlerin etkisini kontrol etmek için gürültü giderme sürecini ayarlar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Tripo: Modelo de Textura
+
 O TripoTextureNode gera modelos 3D texturizados usando a API Tripo. Ele recebe um ID de tarefa de modelo e aplica geração de textura com várias opções, incluindo materiais PBR, configurações de qualidade de textura e métodos de alinhamento. O nó se comunica com a API Tripo para processar a solicitação de geração de textura e retorna o arquivo de modelo resultante e o ID da tarefa.
 
 ## Entradas

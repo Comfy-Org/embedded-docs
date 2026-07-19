@@ -1,3 +1,5 @@
+# LoadImageSetNode
+
 Giriş dizininden birden çok görseli toplu işleme ve eğitim amaçları için yükler. Çeşitli görsel formatlarını destekler ve isteğe bağlı olarak farklı yöntemler kullanarak görselleri yeniden boyutlandırabilir. Bu düğüm, seçilen tüm görselleri bir toplu iş olarak işler ve bunları tek bir tensör olarak döndürür.
 
 ## Girişler

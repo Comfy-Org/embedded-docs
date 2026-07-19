@@ -1,3 +1,5 @@
+# Kling Video Extend
+
 El Nodo de Extensión de Video Kling te permite extender videos creados por otros nodos Kling. Toma un video existente identificado por su ID de video y genera contenido adicional basado en tus indicaciones de texto. El nodo funciona enviando tu solicitud de extensión a la API de Kling y devuelve el video extendido junto con su nuevo ID y duración.
 
 ## Entradas

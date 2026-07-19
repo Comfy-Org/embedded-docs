@@ -1,3 +1,5 @@
+# Magnific Görüntü Stil Transferi
+
 Bu belge, yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MagnificImageStyleTransferNode/en.md)
 
 Bu düğüm, referans görselinizin görsel stilini giriş görselinize uygular. Görselleri işlemek için harici bir yapay zeka hizmeti kullanarak, stil aktarımının gücünü ve orijinal görselin yapısının korunmasını kontrol etmenize olanak tanır.

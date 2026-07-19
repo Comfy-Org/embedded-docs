@@ -1,3 +1,5 @@
+# Stability AI Upscale Creative
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI, en respectant les règles établies :
 
 Ce nœud agrandit l'image avec un minimum de modifications jusqu'à une résolution 4K. Il utilise la technologie de mise à l'échelle créative de Stability AI pour améliorer la résolution de l'image tout en préservant le contenu original et en ajoutant des détails créatifs subtils.

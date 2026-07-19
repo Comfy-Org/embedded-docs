@@ -1,3 +1,5 @@
+# LTXVConditioning
+
 El nodo LTXVConditioning añade información de velocidad de fotogramas a las entradas de condicionamiento tanto positivas como negativas para modelos de generación de video. Toma datos de condicionamiento existentes y aplica el valor de velocidad de fotogramas especificado a ambos conjuntos de condicionamiento, haciéndolos adecuados para el procesamiento de modelos de video.
 
 ## Entradas

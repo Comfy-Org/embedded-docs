@@ -1,28 +1,28 @@
 # Save3DAdvanced
 
-Bu düğüm, bir 3B modeli ComfyUI çıktı dizininize kaydeder ve gelişmiş önizleme özellikleri sunar. Çıktı dosya adını, önizleme boyutlarını ve isteğe bağlı olarak gelişmiş bir 3B görüntüleyici deneyimi için kamera ve model bilgilerini belirlemenize olanak tanır.
+Bu düğüm, ComfyUI çıktı dizininde bir 3B modeli dosyaya kaydeder ve çıktı boyutları ile kamera/görüntü alanı ayarları üzerinde gelişmiş kontrol sağlar. Ayrıca 3B modeli, model bilgilerini, kamera bilgilerini ve boyutları alt akış düğümlerine iletir.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `model_3d` | Bir üst akış 3B düğümünden gelen 3B model dosyası. | FILE3D | Evet | GLB, GLTF, FBX, OBJ, STL, USDZ veya herhangi bir 3B formatı |
-| `filename_prefix` | Kaydedilen dosya adı için ön ek. Otomatik olarak bir sayaç ve dosya uzantısı eklenecektir. (varsayılan: "3d/ComfyUI") | STRING | Evet | Herhangi bir geçerli dosya adı dizesi |
-| `viewport_state` | Genellikle bir 3B görüntüleyici düğümünden gelen mevcut görüntü alanı durumu. | LOAD3D | Evet | - |
-| `model_3d_info` | Önizleme için isteğe bağlı 3B model bilgisi. | LOAD3DMODELINFO | Hayır | - |
-| `camera_info` | Önizleme için isteğe bağlı kamera bilgisi. | LOAD3DCAMERA | Hayır | - |
-| `width` | Önizlemenin piksel cinsinden genişliği. (varsayılan: 1024) | INT | Evet | 1 ila 4096 |
-| `height` | Önizlemenin piksel cinsinden yüksekliği. (varsayılan: 1024) | INT | Evet | 1 ila 4096 |
+|-----------|----------|-----------|----------|--------|
+| `model_3d` | Bir üst akış 3B düğümünden gelen 3B model dosyası. | FILE3D | Evet | GLB, GLTF, FBX, OBJ, STL, USDZ, Herhangi |
+| `filename_prefix` | Kaydedilen dosya adı için ön ek (varsayılan: "3d/ComfyUI"). | STRING | Evet | Serbest metin |
+| `viewport_state` | Bir 3B Yükle düğümünden gelen, kamera ve model bilgilerini içeren görüntü alanı durumu. | LOAD3D | Evet | - |
+| `model_3d_info` | Görüntü alanı durumunu geçersiz kılmak için isteğe bağlı 3B model bilgisi. | LOAD3DMODELINFO | Hayır | - |
+| `camera_info` | Görüntü alanı durumunu geçersiz kılmak için isteğe bağlı kamera bilgisi. | LOAD3DCAMERA | Hayır | - |
+| `width` | Çıktı ön izlemesinin piksel cinsinden genişliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
+| `height` | Çıktı ön izlemesinin piksel cinsinden yüksekliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-------------|-------------|-----------|
-| `model_3d` | Kaydedilen 3B model dosyası. | FILE3D |
-| `model_3d_info` | Alt akış düğümleri için iletilen 3B model bilgisi. | LOAD3DMODELINFO |
-| `camera_info` | Alt akış düğümleri için iletilen kamera bilgisi. | LOAD3DCAMERA |
-| `width` | Alt akış düğümleri için iletilen genişlik değeri. | INT |
-| `height` | Alt akış düğümleri için iletilen yükseklik değeri. | INT |
+|-----------|----------|-----------|
+| `model_3d` | Girişten iletilen 3B model dosyası. | FILE3D |
+| `model_3d_info` | Görüntü alanı durumundan veya isteğe bağlı girişten alınan model bilgisi. | LOAD3DMODELINFO |
+| `camera_info` | Görüntü alanı durumundan veya isteğe bağlı girişten alınan kamera bilgisi. | LOAD3DCAMERA |
+| `width` | Girişten iletilen genişlik değeri. | INT |
+| `height` | Girişten iletilen yükseklik değeri. | INT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Save3DAdvanced/tr.md)
 

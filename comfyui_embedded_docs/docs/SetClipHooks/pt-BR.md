@@ -1,3 +1,5 @@
+# Definir Hooks do CLIP
+
 O nó SetClipHooks permite aplicar hooks personalizados a um modelo CLIP, possibilitando modificações avançadas em seu comportamento. Ele pode aplicar hooks às saídas de condicionamento e, opcionalmente, ativar a funcionalidade de agendamento do CLIP. Este nó cria uma cópia clonada do modelo CLIP de entrada com as configurações de hook especificadas aplicadas.
 
 ## Entradas

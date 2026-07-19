@@ -1,3 +1,5 @@
+# EmptyCosmosLatentVideo
+
 EmptyCosmosLatentVideo 節點會建立一個具有指定維度的空潛在影片張量。它會生成一個填充為零的潛在表示，可作為影片生成工作流程的起點，並可設定寬度、高度、長度與批次大小參數。
 
 ## 輸入

@@ -1,19 +1,19 @@
-# Condicionamento (Multiplicar)
+# ConditioningMultiply
 
-Este nó multiplica vetores de condicionamento por um fator escalar, permitindo que você dimensione a influência de uma entrada de condicionamento. Ele aplica o multiplicador tanto ao tensor de condicionamento principal quanto à saída agrupada, se presente.
+Este nó multiplica os valores de condicionamento por um fator especificado, permitindo escalar a influência do condicionamento no processo de geração. Ele funciona aplicando o multiplicador tanto ao tensor principal de condicionamento quanto aos valores de saída agrupados.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-|-----------|-------------|-----------|----------|-------|
-| `conditioning` | Os dados de condicionamento a serem dimensionados | CONDITIONING | Sim | - |
-| `multiplier` | O fator de escala a ser aplicado ao condicionamento (padrão: 1.0) | FLOAT | Sim | -100.0 a 100.0 (passo: 0.01) |
+|-----------|-------------|--------------|-------------|-------|
+| `conditioning` | Os dados de condicionamento a serem escalados | CONDITIONING | Sim | - |
+| `multiplier` | O fator para multiplicar os valores de condicionamento (padrão: 1.0) | FLOAT | Sim | -100.0 a 100.0 (passo: 0.01) |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dado |
-|-------------|-------------|-----------|
-| `CONDITIONING` | Os dados de condicionamento dimensionados com o multiplicador aplicado tanto ao tensor principal quanto à saída agrupada | CONDITIONING |
+|---------------|-----------|--------------|
+| `CONDITIONING` | Os dados de condicionamento escalados com valores multiplicados | CONDITIONING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ConditioningMultiply/pt-BR.md)
 

@@ -1,3 +1,5 @@
+# EncodeurAudioEncoder
+
 Le nœud AudioEncoderEncode traite des données audio en les encodant à l'aide d'un modèle d'encodeur audio. Il prend une entrée audio et la convertit en une représentation encodée pouvant être utilisée pour un traitement ultérieur dans le pipeline de conditionnement. Ce nœud transforme les formes d'onde audio brutes en un format adapté aux applications d'apprentissage automatique basées sur l'audio.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# StableZero123_Conditioning_Batched
+
 El nodo `StableZero123_Conditioning_Batched` procesa una imagen de entrada y genera datos de condicionamiento para la generación de modelos 3D. Codifica la imagen utilizando modelos CLIP vision y VAE, luego crea incrustaciones de cámara basadas en ángulos de elevación y azimut para producir condicionamiento positivo y negativo, junto con representaciones latentes para procesamiento por lotes.
 
 ## Entradas

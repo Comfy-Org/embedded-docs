@@ -1,3 +1,5 @@
+# LoadImageSetFromFolderNode
+
 ## 概述
 
 LoadImageSetFromFolderNode 從指定的資料夾目錄載入多張圖片，以供訓練使用。它會自動偵測常見的圖片格式，並可選擇使用不同方法調整圖片大小，然後以批次形式回傳。

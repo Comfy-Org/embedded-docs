@@ -1,3 +1,5 @@
+# DualCLIPLoader
+
 El nodo DualCLIPLoader está diseñado para cargar dos modelos CLIP simultáneamente, facilitando operaciones que requieren la integración o comparación de características de ambos modelos.
 
 Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/text_encoders`.

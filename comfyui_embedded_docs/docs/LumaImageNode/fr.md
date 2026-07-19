@@ -1,3 +1,5 @@
+# Luma Texte vers Image
+
 Génère des images de manière synchrone en fonction d’un prompt textuel et d’un rapport hauteur/largeur. Ce nœud crée des images à partir de descriptions textuelles et permet de contrôler les dimensions et le style de l’image via diverses entrées de référence, notamment des images de personnage et de style.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Cargador de codificador de texto LTXV Audio
+
 Este nodo carga un codificador de texto especializado para el modelo de audio LTXV. Combina un archivo de codificador de texto específico con un archivo de checkpoint para crear un modelo CLIP que puede utilizarse en tareas de condicionamiento de texto relacionadas con audio.
 
 ## Entradas

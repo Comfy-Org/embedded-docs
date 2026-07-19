@@ -1,3 +1,5 @@
+# ModelSamplingContinuousEDM
+
 Este nodo está diseñado para mejorar las capacidades de muestreo de un modelo mediante la integración de técnicas continuas de muestreo EDM (Modelos de Difusión Basados en Energía). Permite el ajuste dinámico de los niveles de ruido dentro del proceso de muestreo del modelo, ofreciendo un control más refinado sobre la calidad y diversidad de la generación.
 
 ## Entradas

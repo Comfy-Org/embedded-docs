@@ -1,3 +1,5 @@
+# LoadImageSetFromFolderNode
+
 O nó LoadImageSetFromFolderNode carrega múltiplas imagens de um diretório de pasta especificado para fins de treinamento. Ele detecta automaticamente formatos de imagem comuns e pode opcionalmente redimensionar as imagens usando diferentes métodos antes de retorná-las como um lote.
 
 ## Entradas

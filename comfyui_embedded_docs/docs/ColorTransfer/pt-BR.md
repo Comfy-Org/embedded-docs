@@ -1,3 +1,5 @@
+# ColorTransfer
+
 O nó ColorTransfer ajusta a paleta de cores de uma imagem alvo para corresponder às cores de uma imagem de referência. Ele utiliza diferentes algoritmos matemáticos para analisar e transferir as características de cor, como brilho, contraste e distribuição de matiz, da referência para o alvo. Isso é útil para criar consistência visual entre múltiplas imagens ou aplicar uma gradação de cor específica.
 
 ## Entradas

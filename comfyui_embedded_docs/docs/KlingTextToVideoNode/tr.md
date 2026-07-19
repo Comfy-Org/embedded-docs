@@ -1,3 +1,5 @@
+# Kling Metinden Videoya
+
 ComfyUI Kling Metinden Videoya Düğümü, metin açıklamalarını video içeriğine dönüştürür. Metin istemlerini alır ve belirtilen yapılandırma ayarlarına göre karşılık gelen video dizilerini oluşturur. Düğüm, farklı en boy oranlarını ve üretim modlarını destekleyerek çeşitli süre ve kalitede videolar üretir.
 
 ## Girişler

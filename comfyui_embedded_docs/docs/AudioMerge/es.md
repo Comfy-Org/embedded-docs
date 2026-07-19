@@ -1,3 +1,5 @@
+# Combinar Audio
+
 El nodo AudioMerge combina dos pistas de audio superponiendo sus formas de onda. Automáticamente iguala las frecuencias de muestreo de ambas entradas de audio y ajusta sus duraciones para que sean iguales antes de la fusión. El nodo proporciona varios métodos matemáticos para combinar las señales de audio y garantiza que la salida se mantenga dentro de niveles de volumen aceptables.
 
 ## Entradas

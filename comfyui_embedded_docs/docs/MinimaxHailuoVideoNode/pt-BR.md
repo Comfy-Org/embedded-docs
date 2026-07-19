@@ -1,3 +1,5 @@
+# MiniMax Hailuo Vídeo
+
 Esta documentação foi gerada por IA. Caso encontre erros ou tenha sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuoVideoNode/en.md)
 
 Gera vídeos a partir de prompts de texto usando o modelo MiniMax Hailuo-02. Opcionalmente, você pode fornecer uma imagem inicial como primeiro quadro para criar um vídeo que continua a partir dessa imagem.

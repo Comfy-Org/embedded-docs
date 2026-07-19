@@ -1,3 +1,5 @@
+# Canny
+
 Extraia todas as linhas de borda de fotos, como usar uma caneta para contornar uma foto, desenhando os contornos e limites de detalhes dos objetos.
 
 ## Princípio de Funcionamento

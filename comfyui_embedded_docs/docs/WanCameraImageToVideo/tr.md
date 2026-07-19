@@ -1,3 +1,5 @@
+# WanKameraGörüntüdenVideoya
+
 WanCameraImageToVideo düğümü, video oluşturma için gizil temsiller üreterek görüntüleri video dizilerine dönüştürür. Koşullandırma girdilerini ve isteğe bağlı başlangıç görüntülerini işleyerek video modelleriyle kullanılabilecek video gizilleri oluşturur. Düğüm, gelişmiş video oluşturma kontrolü için kamera koşullarını ve clip vision çıktılarını destekler.
 
 ## Girdiler

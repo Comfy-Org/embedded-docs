@@ -1,3 +1,5 @@
+# LatentAdd
+
 Le nœud LatentAdd est conçu pour l'addition de deux représentations latentes. Il facilite la combinaison des caractéristiques ou propriétés encodées dans ces représentations en effectuant une addition élément par élément.
 
 ## Entrées

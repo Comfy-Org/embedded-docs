@@ -1,3 +1,5 @@
+# Ideogram V3
+
 Voici la traduction en français de la documentation du nœud Ideogram V3 :
 
 Le nœud Ideogram V3 génère des images à l'aide du modèle Ideogram V3. Il prend en charge à la fois la génération d'images standard à partir de descriptions textuelles et l'édition d'images lorsqu'une image et un masque sont fournis. Le nœud offre divers contrôles pour le rapport hauteur/largeur, la résolution, la vitesse de génération et les images de référence de personnage optionnelles.

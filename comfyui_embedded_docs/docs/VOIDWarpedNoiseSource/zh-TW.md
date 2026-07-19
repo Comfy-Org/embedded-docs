@@ -1,3 +1,5 @@
+# VOIDWarpedNoiseSource
+
 ## 概述
 
 此節點將 LATENT（例如 VOIDWarpedNoise 節點的輸出）轉換為 NOISE 來源。這讓您能將扭曲噪點與 SamplerCustomAdvanced 節點搭配使用，以實現更可控的影像生成。

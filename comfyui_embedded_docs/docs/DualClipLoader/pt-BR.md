@@ -1,3 +1,5 @@
+# Carregador DualCLIP
+
 O nó DualCLIPLoader foi projetado para carregar dois modelos CLIP simultaneamente, facilitando operações que exigem a integração ou comparação de características de ambos os modelos.
 
 Este nó detectará modelos localizados na pasta `ComfyUI/models/text_encoders`.

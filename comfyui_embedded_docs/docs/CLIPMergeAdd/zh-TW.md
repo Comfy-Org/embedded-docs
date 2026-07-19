@@ -1,3 +1,5 @@
+# CLIPMergeAdd
+
 CLIPMergeAdd 節點透過將第二個 CLIP 模型的修補程式（patches）添加到第一個模型，來組合兩個 CLIP 模型。它會建立第一個 CLIP 模型的副本，並選擇性地納入第二個模型的關鍵修補程式，排除位置 ID（position IDs）與 logit 尺度參數（logit scale parameters）。這讓您能夠在保留基礎模型結構的同時，合併 CLIP 模型的元件。
 
 ## 輸入

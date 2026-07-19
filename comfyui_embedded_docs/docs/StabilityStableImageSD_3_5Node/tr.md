@@ -1,3 +1,5 @@
+# Stability AI Stable Diffusion 3.5 Görüntü
+
 Bu belge, Stability AI'nın Stable Diffusion 3.5 modelini kullanarak eşzamanlı olarak görseller üretir. Metin istemlerine dayalı görseller oluşturur ve girdi olarak sağlandığında mevcut görselleri de değiştirebilir. Düğüm, çıktıyı özelleştirmek için çeşitli en-boy oranlarını ve stil ön ayarlarını destekler.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# SkipLayerGuidanceDiT
+
 ### مرور کلی
 
 راهنمایی (Guidance) به سمت ساختار جزئی‌تر را با استفاده از یک مجموعه CFG منفی دیگر با لایه‌های پرشده (skipped layers) بهبود می‌بخشد. این نسخه عمومی از SkipLayerGuidance روی هر مدل DiT قابل استفاده است و از Perturbed Attention Guidance الهام گرفته شده است. پیاده‌سازی آزمایشی اولیه برای SD3 ایجاد شده بود.

@@ -1,3 +1,5 @@
+# WanImageVersVidéo
+
 Voici la traduction en français de la documentation du nœud WanImageToVideo :
 
 Le nœud WanImageToVideo prépare les représentations de conditionnement et latentes pour les tâches de génération vidéo. Il crée un espace latent vide pour la génération vidéo et peut éventuellement intégrer des images de départ et des sorties CLIP vision pour guider le processus de génération vidéo. Le nœud modifie les entrées de conditionnement positives et négatives en fonction de l'image et des données visuelles fournies.

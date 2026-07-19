@@ -1,3 +1,5 @@
+# Concatenar
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StringConcatenate/en.md)
 
 O nó StringConcatenate combina duas strings de texto em uma só, unindo-as com um delimitador especificado. Ele recebe duas strings de entrada e um caractere ou string delimitador, e então gera uma única string onde as duas entradas são conectadas com o delimitador inserido entre elas.

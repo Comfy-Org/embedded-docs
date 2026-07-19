@@ -1,3 +1,5 @@
+# HunyuanVideo15SuperResolution
+
 Le nœud HunyuanVideo15SuperResolution prépare les données de conditionnement pour un processus de super-résolution vidéo. Il prend une représentation latente d'une vidéo et, éventuellement, une image de départ, puis les assemble avec une augmentation de bruit et des données de vision CLIP dans un format utilisable par un modèle pour générer une sortie en résolution plus élevée.
 
 ## Entrées

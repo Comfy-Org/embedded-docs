@@ -1,3 +1,5 @@
+# WAN Context Windows (Manual)
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanContextWindowsManual/en.md)
 
 O nó WAN Context Windows (Manual) permite configurar manualmente janelas de contexto para modelos do tipo WAN com processamento bidimensional. Ele aplica configurações personalizadas de janela de contexto durante a amostragem, especificando o comprimento da janela, a sobreposição, o método de agendamento e a técnica de fusão. Isso oferece controle preciso sobre como o modelo processa informações em diferentes regiões de contexto.

@@ -1,3 +1,5 @@
+# CFGNorm
+
 CFGNorm düğümü, yayılım modellerinde sınıflandırıcısız yönlendirme (CFG) sürecine bir normalizasyon tekniği uygular. Koşullu ve koşulsuz çıktıların normlarını karşılaştırarak gürültü giderme tahmininin ölçeğini ayarlar ve ardından etkiyi kontrol etmek için bir güç çarpanı uygular. Bu, yönlendirme ölçeklemesinde aşırı değerleri önleyerek üretim sürecini dengelemeye yardımcı olur.
 
 ## Girişler

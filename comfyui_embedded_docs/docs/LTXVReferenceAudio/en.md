@@ -1,3 +1,5 @@
+# LTXV Reference Audio (ID-LoRA)
+
 The LTXV Reference Audio node is used for speaker identity transfer in audio generation. It encodes a reference audio clip into the conditioning for a model, allowing the generated audio to adopt the speaker's voice characteristics. It can also apply identity guidance, which runs an extra processing step to amplify the speaker identity effect.
 
 ## Inputs

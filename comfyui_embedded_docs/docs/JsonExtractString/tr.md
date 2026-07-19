@@ -1,3 +1,5 @@
+# JSON'dan Dize Çıkar
+
 JsonExtractString düğümü, JSON verisi içeren bir metin dizesini okur ve belirli bir anahtarla ilişkili değeri çıkarır. Çıkarılan değeri bir dizeye dönüştürür. JSON geçersizse, anahtar bulunamazsa veya değer null ise, düğüm boş bir dize döndürür.
 
 ## Girişler

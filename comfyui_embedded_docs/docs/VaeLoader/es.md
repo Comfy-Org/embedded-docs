@@ -1,3 +1,5 @@
+# Cargar VAE
+
 Este nodo detectará los modelos ubicados en la carpeta `ComfyUI/models/vae`, y también leerá modelos desde rutas adicionales configuradas en el archivo extra_model_paths.yaml. En ocasiones, puede ser necesario **actualizar la interfaz de ComfyUI** para que pueda leer los archivos de modelo desde la carpeta correspondiente.
 
 El nodo VAELoader está diseñado para cargar modelos de Autoencoder Variacional (VAE), específicamente adaptado para manejar tanto VAEs estándar como aproximados. Soporta la carga de VAEs por nombre, incluyendo manejo especializado para los modelos 'taesd' y 'taesdxl', y se ajusta dinámicamente según la configuración específica del VAE.

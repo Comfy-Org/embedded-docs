@@ -1,3 +1,5 @@
+# unCLIPCheckpointLoader
+
 Este nó detectará modelos localizados na pasta `ComfyUI/models/checkpoints` e também lerá modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 O nó unCLIPCheckpointLoader foi projetado para carregar checkpoints especificamente adaptados para modelos unCLIP. Ele facilita a recuperação e inicialização de modelos, módulos CLIP vision e VAEs a partir de um checkpoint especificado, simplificando o processo de configuração para operações ou análises posteriores.

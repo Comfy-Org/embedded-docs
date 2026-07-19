@@ -1,3 +1,5 @@
+# AutogrowNamesTestNode
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/AutogrowNamesTestNode/en.md)
 
 Este nó é um teste para a funcionalidade de entrada Autogrow. Ele recebe um número dinâmico de entradas do tipo float, cada uma rotulada com um nome específico, e combina seus valores em uma única string separada por vírgulas.

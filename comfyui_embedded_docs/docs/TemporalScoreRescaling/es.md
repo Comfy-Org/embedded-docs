@@ -1,3 +1,5 @@
+# TSR - Reajuste de Puntuación Temporal
+
 Este nodo aplica Re-escalado de Puntuación Temporal (TSR) a un modelo de difusión. Modifica el comportamiento de muestreo del modelo re-escalando el ruido o la puntuación predicha durante el proceso de eliminación de ruido, lo que puede dirigir la diversidad del resultado generado. Se implementa como una función posterior a CFG (Guía Libre de Clasificador).
 
 ## Entradas

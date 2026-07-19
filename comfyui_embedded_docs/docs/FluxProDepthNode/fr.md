@@ -1,3 +1,5 @@
+# FluxProDepthNode
+
 Ce nœud génère des images en utilisant une image de contrôle de profondeur comme guide. Il prend une image de contrôle et un texte d’invite, puis crée une nouvelle image qui respecte à la fois les informations de profondeur de l’image de contrôle et la description de l’invite. Le nœud se connecte à une API externe pour effectuer le processus de génération d’images.
 
 ## Entrées

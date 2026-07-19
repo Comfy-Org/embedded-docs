@@ -1,3 +1,5 @@
+# EmptyLTXVLatentVideo
+
 Le nœud EmptyLTXVLatentVideo crée un tenseur latent vide pour le traitement vidéo. Il génère un point de départ vierge avec des dimensions spécifiées, pouvant être utilisé comme entrée pour les workflows de génération vidéo. Ce nœud produit une représentation latente remplie de zéros avec la largeur, la hauteur, la longueur et la taille de lot configurées.
 
 ## Entrées

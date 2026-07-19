@@ -1,3 +1,5 @@
+# LTXV Metinden Videoya
+
 LTXV Metinden Videoya düğümü, bir metin açıklamasından profesyonel kalitede videolar üretir. Harici bir API'ye bağlanarak özelleştirilebilir süre, çözünürlük ve kare hızına sahip videolar oluşturur. Ayrıca videoya yapay zeka tarafından oluşturulmuş ses eklemeyi de tercih edebilirsiniz.
 
 ## Girişler

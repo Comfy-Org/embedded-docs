@@ -1,3 +1,5 @@
+# WanTrackToVideo
+
 El nodo WanTrackToVideo convierte datos de seguimiento de movimiento en secuencias de video procesando puntos de seguimiento y generando los fotogramas de video correspondientes. Toma coordenadas de seguimiento como entrada y produce acondicionamiento de video y representaciones latentes que pueden utilizarse para la generación de video. Cuando no se proporcionan seguimientos, recurre a la conversión estándar de imagen a video.
 
 ## Entradas

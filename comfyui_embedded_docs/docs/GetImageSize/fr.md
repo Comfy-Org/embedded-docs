@@ -1,3 +1,5 @@
+# Obtenir la taille de l'image
+
 Le nœud GetImageSize extrait les dimensions et les informations de lot d'une image d'entrée. Il renvoie la largeur, la hauteur et la taille du lot de l'image tout en affichant ces informations sous forme de texte de progression sur l'interface du nœud. Les données de l'image d'origine sont transmises sans modification.
 
 ## Entrées

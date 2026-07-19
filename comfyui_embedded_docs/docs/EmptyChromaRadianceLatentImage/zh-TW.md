@@ -1,3 +1,5 @@
+# EmptyChromaRadianceLatentImage
+
 ## 概述
 
 EmptyChromaRadianceLatentImage 節點會建立一個指定尺寸的空白潛在影像，用於色度輻射工作流程。它會產生一個填充為零的張量，作為潛在空間操作的起點。此節點允許您定義空白潛在影像的寬度、高度和批次大小。

@@ -1,3 +1,5 @@
+# PerturbedAttentionGuidance
+
 Le nœud PerturbedAttentionGuidance applique un guidage par attention perturbée à un modèle de diffusion afin d'améliorer la qualité de génération. Il modifie le mécanisme d'auto-attention du modèle pendant l'échantillonnage en le remplaçant par une version simplifiée qui se concentre sur les projections de valeurs. Cette technique contribue à améliorer la cohérence et la qualité des images générées en ajustant le processus de débruitage conditionnel.
 
 ## Entrées

@@ -1,4 +1,4 @@
-# Genel Bakış
+# Grok Görüntü Düzenleme
 
 Bir metin istemine dayanarak mevcut bir görüntüyü değiştirin. Bu düğüm, görsellerinizi ve bir metin açıklamasını Grok API'sine gönderir; API, görselleri talimatlarınıza göre düzenler ve sonucu döndürür.
 

@@ -1,3 +1,5 @@
+# ModèleÉchantillonnageStableCascade
+
 Voici la traduction en français de la documentation du nœud **ModelSamplingStableCascade** :
 
 Le nœud **ModelSamplingStableCascade** applique un échantillonnage en cascade stable à un modèle en ajustant les paramètres d'échantillonnage avec une valeur de décalage. Il crée une version modifiée du modèle d'entrée avec une configuration d'échantillonnage personnalisée pour la génération en cascade stable.

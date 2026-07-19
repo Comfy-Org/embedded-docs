@@ -1,3 +1,5 @@
+# Conditionnement (Combiner)
+
 Ce nœud combine deux entrées de conditionnement en une seule sortie, fusionnant ainsi leurs informations. Les deux conditions sont combinées par concaténation de listes.
 
 ## Entrées

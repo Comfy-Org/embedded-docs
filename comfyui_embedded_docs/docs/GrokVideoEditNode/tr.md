@@ -1,3 +1,5 @@
+# Grok Video Düzenle
+
 Bu düğüm, mevcut bir videoyu metin istemine göre düzenlemek için Grok API'sini kullanır. Videonuzu yükler, yapay zeka modeline açıklamanıza göre videoyu değiştirmesi için bir istek gönderir ve yeni oluşturulan videoyu döndürür.
 
 ## Girişler

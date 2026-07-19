@@ -1,3 +1,5 @@
+# HunyuanVideo15SuperResolution
+
 ## 概述
 
 HunyuanVideo15SuperResolution 節點為影片超解析度處理準備條件化資料。它接收影片的潛在表示，並可選地接收起始影像，將其與雜訊增強和 CLIP 視覺資料打包成模型可用於生成更高解析度輸出的格式。

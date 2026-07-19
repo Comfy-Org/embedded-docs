@@ -1,3 +1,5 @@
+# Establecer Propiedades Cond
+
 El nodo ConditioningSetProperties modifica las propiedades de los datos de condicionamiento ajustando la intensidad, la configuración del área y aplicando máscaras, ganchos o rangos de pasos de tiempo opcionales. Permite controlar cómo el condicionamiento influye en el proceso de generación estableciendo parámetros específicos que afectan la aplicación de los datos de condicionamiento durante la generación de imágenes.
 
 ## Entradas

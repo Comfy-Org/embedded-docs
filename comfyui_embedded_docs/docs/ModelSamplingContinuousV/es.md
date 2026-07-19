@@ -1,3 +1,5 @@
+# ModelSamplingContinuousV
+
 El nodo ModelSamplingContinuousV modifica el comportamiento de muestreo de un modelo aplicando parámetros de muestreo de predicción V continua. Crea un clon del modelo de entrada y lo configura con rangos de sigma personalizados para un control avanzado del muestreo. Esto permite a los usuarios ajustar el proceso de muestreo con valores mínimo y máximo de sigma específicos.
 
 ## Entradas

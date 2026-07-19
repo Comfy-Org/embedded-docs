@@ -1,3 +1,5 @@
+# VoxelParaMalha
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VoxelToMesh/en.md)
 
 O nó VoxelToMeshBasic converte dados de voxel 3D em uma geometria de malha extraindo uma superfície em um valor de limite especificado. Ele processa cada grade de voxel na entrada e gera vértices e faces que formam uma representação de malha 3D.

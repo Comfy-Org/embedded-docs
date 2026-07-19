@@ -1,3 +1,5 @@
+# Kling Omni Vídeo para Vídeo (Pro)
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingOmniProVideoToVideoNode/en.md)
 
 Este nó utiliza o modelo Kling AI para gerar um novo vídeo com base em um vídeo de entrada e imagens de referência opcionais. Você fornece um prompt de texto descrevendo o conteúdo desejado, e o nó transforma o vídeo de referência de acordo. Ele também pode incorporar até quatro imagens de referência adicionais para orientar o estilo e o conteúdo da saída.

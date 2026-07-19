@@ -1,3 +1,5 @@
+# Kling Metinden Videoya (Kamera Kontrolü)
+
 Kling Metinden Videoya Kamera Kontrol Düğümü, profesyonel sinematografiyi simüle eden kamera hareketleriyle metinleri sinematik videolara dönüştürür. Bu düğüm; yakınlaştırma, döndürme, yatay kaydırma, dikey kaydırma ve birinci şahıs görüşü dahil olmak üzere sanal kamera eylemlerini kontrol ederken orijinal metninize odaklanmayı sürdürmeyi destekler. Süre, mod ve model adı sabit kodlanmıştır çünkü kamera kontrolü yalnızca kling-v1-5 modeliyle 5 saniyelik sürede pro modunda desteklenir.
 
 ## Girişler

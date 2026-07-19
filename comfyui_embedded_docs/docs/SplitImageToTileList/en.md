@@ -1,3 +1,5 @@
+# Split Image into List of Tiles
+
 The Split Image into List of Tiles node divides a single input image into a series of smaller, overlapping rectangular sections called tiles. It creates a batched list of these tiles, which can be processed individually by other nodes. The size of each tile and the amount of overlap between them can be specified.
 
 ## Inputs

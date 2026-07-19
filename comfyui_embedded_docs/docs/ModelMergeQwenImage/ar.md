@@ -1,4 +1,4 @@
-# ترجمة وثيقة ModelMergeQwenImage
+# دمج_النموذج_QwenImage
 
 ## نظرة عامة
 

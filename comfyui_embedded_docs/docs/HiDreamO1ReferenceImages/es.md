@@ -1,4 +1,4 @@
-# Descripción General
+# Imágenes de Referencia HiDream-O1
 
 Adjunta imágenes de referencia tanto al condicionamiento positivo como al negativo. Este nodo permite proporcionar una o más imágenes de referencia que se utilizarán para guiar el proceso de generación de imágenes, ya sea para edición basada en una instrucción o para personalización dirigida por un sujeto.
 

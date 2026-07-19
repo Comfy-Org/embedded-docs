@@ -1,3 +1,5 @@
+# SamplerLMS
+
 O nó SamplerLMS cria um amostrador de Mínimos Quadrados Médios (LMS) para uso em modelos de difusão. Ele gera um objeto amostrador que pode ser utilizado no processo de amostragem, permitindo controlar a ordem do algoritmo LMS para estabilidade e precisão numérica.
 
 ## Entradas

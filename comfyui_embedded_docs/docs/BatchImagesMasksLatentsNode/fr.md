@@ -1,3 +1,5 @@
+# BatchImagesMasksLatentsNode
+
 Voici la traduction de la documentation du nœud Batch Images/Masks/Latents :
 
 Le nœud **Batch Images/Masks/Latents** combine plusieurs entrées du même type en un seul lot. Il détecte automatiquement si les entrées sont des images, des masques ou des représentations latentes et utilise la méthode de mise en lot appropriée. Cela est utile pour préparer plusieurs éléments à traiter par des nœuds qui acceptent des entrées groupées.

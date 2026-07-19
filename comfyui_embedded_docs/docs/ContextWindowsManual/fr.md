@@ -1,3 +1,5 @@
+# Fenêtres de contexte (Manuel)
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI, conformément à vos règles :
 
 ---

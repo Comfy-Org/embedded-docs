@@ -1,3 +1,5 @@
+# PikaImageToVideoNode2_2
+
 El nodo Pika Image to Video envía una imagen y un texto de instrucción a la API de Pika versión 2.2 para generar un video. Convierte la imagen de entrada en formato de video según la descripción y la configuración proporcionadas. El nodo gestiona la comunicación con la API y devuelve el video generado como salida.
 
 ## Entradas

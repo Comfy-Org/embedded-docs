@@ -1,3 +1,5 @@
+# Criar Interp. de Keyframes do Hook
+
 Cria uma sequência de keyframes de hook com valores de intensidade interpolados entre um ponto inicial e final. O nó gera múltiplos keyframes que fazem a transição suave do parâmetro de intensidade ao longo de uma faixa percentual especificada do processo de geração, utilizando vários métodos de interpolação para controlar a curva de transição.
 
 ## Entradas

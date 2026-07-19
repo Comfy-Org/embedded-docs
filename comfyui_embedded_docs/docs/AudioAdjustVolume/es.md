@@ -1,3 +1,5 @@
+# Ajustar Volumen de Audio
+
 El nodo AudioAdjustVolume modifica el volumen del audio aplicando ajustes de ganancia en decibelios (dB). Toma una entrada de audio y aplica un factor de ganancia basado en el nivel de volumen especificado, donde los valores positivos aumentan el volumen y los negativos lo disminuyen. El nodo devuelve el audio modificado con la misma frecuencia de muestreo que el original.
 
 ## Entradas

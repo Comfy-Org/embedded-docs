@@ -1,3 +1,5 @@
+# EmptyChromaRadianceLatentImage
+
 Le nœud EmptyChromaRadianceLatentImage crée une image latente vierge aux dimensions spécifiées pour une utilisation dans les workflows de radiance chromatique. Il génère un tenseur rempli de zéros qui sert de point de départ pour les opérations dans l'espace latent. Ce nœud vous permet de définir la largeur, la hauteur et la taille du lot de l'image latente vide.
 
 ## Entrées

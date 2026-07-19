@@ -1,3 +1,5 @@
+# Save SVG
+
 Save SVG files on disk. This node takes SVG data as input and saves it to your output directory with optional metadata embedding. The node automatically handles file naming with counter suffixes and can embed workflow prompt information directly into the SVG file.
 
 ## Inputs

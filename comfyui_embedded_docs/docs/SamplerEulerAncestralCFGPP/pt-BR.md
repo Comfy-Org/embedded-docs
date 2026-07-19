@@ -1,3 +1,5 @@
+# SamplerEulerAncestralCFG++
+
 O nó SamplerEulerAncestralCFGPP cria um amostrador que utiliza o método Euler Ancestral com orientação livre de classificador (CFG++) para geração de imagens. Este amostrador combina técnicas de amostragem ancestral com condicionamento de orientação para produzir variações diversas de imagens, mantendo a coerência, e permite ajustes finos por meio de parâmetros que controlam o ruído e os ajustes de tamanho do passo.
 
 ## Entradas

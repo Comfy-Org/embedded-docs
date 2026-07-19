@@ -1,3 +1,5 @@
+# StableZero123_Conditioning_Batched
+
 O nó **StableZero123_Conditioning_Batched** processa uma imagem de entrada e gera dados de condicionamento para a geração de modelos 3D. Ele codifica a imagem usando modelos CLIP vision e VAE, em seguida, cria embeddings de câmera com base nos ângulos de elevação e azimute para produzir condicionamentos positivo e negativo, juntamente com representações latentes para processamento em lote.
 
 ## Entradas

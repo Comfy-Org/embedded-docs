@@ -1,3 +1,5 @@
+# Cond Pair Set Props
+
 The **PairConditioningSetProperties** node allows you to modify properties of both positive and negative conditioning pairs at the same time. It applies strength adjustments, conditioning area settings, and optional masking or timing controls to both conditioning inputs, returning the modified positive and negative conditioning data.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_2B
+
 O nó ModelMergeCosmosPredict2_2B mescla dois modelos de difusão usando uma abordagem baseada em blocos com controle refinado sobre diferentes componentes do modelo. Ele permite combinar partes específicas de dois modelos ajustando pesos de interpolação para incorporadores de posição, incorporadores de tempo, blocos transformadores e camadas finais. Isso proporciona controle preciso sobre como diferentes componentes arquitetônicos de cada modelo contribuem para o resultado mesclado final.
 
 ## Entradas

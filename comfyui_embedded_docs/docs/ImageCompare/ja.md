@@ -1,3 +1,5 @@
+# 画像比較
+
 このドキュメントはAI生成です。誤りや改善の提案がありましたら、ぜひご貢献ください！[GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ImageCompare/en.md)
 
 Image Compareノードは、ドラッグ可能なスライダーを使用して2つの画像を並べて比較するためのビジュアルインターフェースを提供します。これは出力ノードとして設計されており、他のノードにデータを渡すのではなく、ユーザーインターフェースに直接画像を表示して検査できるようにします。

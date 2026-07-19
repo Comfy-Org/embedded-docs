@@ -1,3 +1,5 @@
+# EmptyImage
+
 ## Descrição da Função
 
 O nó EmptyImage é utilizado para criar imagens em branco com dimensões e cores especificadas. Ele pode gerar imagens de fundo de cor sólida, comumente usadas como pontos de partida ou imagens de fundo para fluxos de trabalho de processamento de imagens.

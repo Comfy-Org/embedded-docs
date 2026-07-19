@@ -1,4 +1,4 @@
-# ByteDance Seedance 2.0 參考影片節點
+# ByteDance Seedance 2.0 參考轉影片
 
 ByteDance Seedance 2.0 參考影片節點使用 Seedance 2.0 AI 模型，根據您的文字提示和提供的參考素材來建立、編輯或延伸影片。它可以將圖片、影片和音訊作為參考來引導生成過程，支援影片編輯和延伸等任務。
 

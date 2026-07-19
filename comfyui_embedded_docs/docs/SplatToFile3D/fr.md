@@ -1,4 +1,4 @@
-# Documentation du nœud SplatToFile3D
+# Créer un fichier 3D (à partir d’un Splat)
 
 ## Présentation
 

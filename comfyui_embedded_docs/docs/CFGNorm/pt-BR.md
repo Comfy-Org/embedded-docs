@@ -1,3 +1,5 @@
+# CFGNorm
+
 O nó CFGNorm aplica uma técnica de normalização ao processo de orientação livre de classificador (CFG) em modelos de difusão. Ele ajusta a escala da previsão de ruído reduzido comparando as normas das saídas condicionais e incondicionais, em seguida, aplica um multiplicador de intensidade para controlar o efeito. Isso ajuda a estabilizar o processo de geração, prevenindo valores extremos na escala de orientação.
 
 ## Entradas

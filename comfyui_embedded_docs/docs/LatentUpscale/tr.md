@@ -1,3 +1,5 @@
+# Gizli Değişkeni Büyüt
+
 LatentUpscale düğümü, görüntülerin gizli (latent) temsillerini büyütmek için tasarlanmıştır. Çıktı görüntüsünün boyutlarının ve büyütme yönteminin ayarlanmasına olanak tanıyarak, gizli görüntülerin çözünürlüğünü artırmada esneklik sağlar.
 
 ## Girişler

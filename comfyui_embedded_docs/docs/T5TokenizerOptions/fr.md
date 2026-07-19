@@ -1,3 +1,5 @@
+# T5TokenizerOptions
+
 Le nœud T5TokenizerOptions vous permet de configurer les paramètres du tokenizer pour différents types de modèles T5. Il définit les valeurs minimales de padding et de longueur pour plusieurs variantes de modèles T5, notamment t5xxl, pile_t5xl, t5base, mt5xl et umt5xxl. Le nœud prend une entrée CLIP et retourne un CLIP modifié avec les options de tokenizer spécifiées appliquées.
 
 ## Entrées

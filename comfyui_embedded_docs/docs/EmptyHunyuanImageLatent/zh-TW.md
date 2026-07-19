@@ -1,3 +1,5 @@
+# EmptyHunyuanImageLatent
+
 ## 概述
 
 EmptyHunyuanImageLatent 節點會建立一個具有特定維度的空潛在張量，用於 Hunyuan 影像生成模型。它會產生一個空白起始點，可透過工作流程中的後續節點進行處理。此節點允許您指定潛在空間的寬度、高度和批次大小。

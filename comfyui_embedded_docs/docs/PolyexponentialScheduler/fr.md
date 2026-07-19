@@ -1,3 +1,5 @@
+# PolyexponentialScheduler
+
 Le nœud PolyexponentialScheduler est conçu pour générer une séquence de niveaux de bruit (sigmas) basée sur un programme de bruit polyexponentiel. Ce programme est une fonction polynomiale dans le logarithme de sigma, permettant une progression flexible et personnalisable des niveaux de bruit tout au long du processus de diffusion.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# LatentOperationSharpen
+
 The LatentOperationSharpen node applies a sharpening effect to latent representations using a Gaussian kernel. It works by normalizing the latent data, applying a convolution with a custom sharpening kernel, and then restoring the original luminance. This enhances the details and edges in the latent space representation.
 
 ## Inputs

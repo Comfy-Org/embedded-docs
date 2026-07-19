@@ -1,3 +1,5 @@
+# SamplerDPMPP_SDE
+
 Le nœud SamplerDPMPP_SDE crée un échantillonneur DPM++ SDE (équation différentielle stochastique) destiné au processus d'échantillonnage. Cet échantillonneur propose une méthode d'échantillonnage stochastique avec des paramètres de bruit configurables et une sélection du dispositif de calcul. Il renvoie un objet échantillonneur utilisable dans le pipeline d'échantillonnage.
 
 ## Entrées

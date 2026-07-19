@@ -1,3 +1,5 @@
+# Vidu Çok Kareli Video Üretimi
+
 Bu belge, yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme öneriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ViduMultiFrameVideoNode/en.md)
 
 Bu düğüm, birden fazla ana kare arasında geçişler oluşturarak bir video üretir. Bir başlangıç görüntüsünden başlar ve kullanıcı tarafından tanımlanan bir dizi bitiş görüntüsü ve istemi aracılığıyla animasyon yaparak çıktı olarak tek bir video dosyası üretir.

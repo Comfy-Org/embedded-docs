@@ -1,3 +1,5 @@
+# Obter Tamanho da Imagem
+
 O nó GetImageSize extrai as dimensões e informações de lote de uma imagem de entrada. Ele retorna a largura, altura e tamanho do lote da imagem, exibindo também essas informações como texto de progresso na interface do nó. Os dados originais da imagem passam sem alterações.
 
 ## Entradas

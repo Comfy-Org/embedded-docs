@@ -1,3 +1,5 @@
+# Ses Ekolayzır (3-Bant)
+
 Ses Ekolayzeri (3 Bant) düğümü, bir ses dalga formunun bas, orta ve tiz frekanslarını ayarlamanızı sağlar. Bas için alçak raf, orta için tepe filtre ve tiz için yüksek raf olmak üzere üç ayrı filtre uygular. Her bant, kazanç, frekans ve bant genişliği ayarlarıyla bağımsız olarak kontrol edilebilir.
 
 ## Girişler

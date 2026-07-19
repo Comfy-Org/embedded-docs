@@ -1,3 +1,5 @@
+# LatentCutToBatch
+
 The LatentCutToBatch node splits a latent representation along a chosen dimension into multiple slices and stacks them into a new batch. This allows you to process different parts of a latent sample independently.
 
 ## Inputs

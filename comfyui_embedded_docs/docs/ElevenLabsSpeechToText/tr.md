@@ -1,3 +1,5 @@
+# ElevenLabs Konuşmadan Metne
+
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları

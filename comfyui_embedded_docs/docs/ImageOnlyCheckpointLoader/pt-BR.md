@@ -1,3 +1,5 @@
+# Carregador de Checkpoint Somente Imagem (modelo img2vid)
+
 Este nó detecta modelos localizados na pasta `ComfyUI/models/checkpoints` e também lê modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 Este nó é especializado em carregar checkpoints especificamente para modelos baseados em imagem em fluxos de trabalho de geração de vídeo. Ele recupera e configura eficientemente os componentes necessários de um determinado checkpoint, focando nos aspectos relacionados à imagem do modelo.

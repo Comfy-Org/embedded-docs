@@ -1,3 +1,5 @@
+# Stability AI Upscale Conservateur
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 Agrandissez l'image avec des modifications minimales vers une résolution 4K. Ce nœud utilise l'agrandissement conservateur de Stability AI pour augmenter la résolution de l'image tout en préservant le contenu original et en n'apportant que des changements subtils.

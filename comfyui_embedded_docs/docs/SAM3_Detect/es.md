@@ -1,4 +1,4 @@
-# Nodo SAM3 Detect
+# SAM3 Detect
 
 ## Descripción General
 

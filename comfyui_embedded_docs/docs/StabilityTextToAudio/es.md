@@ -1,3 +1,5 @@
+# Stability AI Texto a Audio
+
 Genera música y efectos de sonido de alta calidad a partir de descripciones textuales. Este nodo utiliza la tecnología de generación de audio de Stability AI para crear contenido de audio basado en tus indicaciones de texto.
 
 ## Entradas

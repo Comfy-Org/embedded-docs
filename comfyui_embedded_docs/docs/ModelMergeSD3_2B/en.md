@@ -1,3 +1,5 @@
+# ModelMergeSD3_2B
+
 The ModelMergeSD3_2B node allows you to merge two Stable Diffusion 3 2B models by blending their components with adjustable weights. It provides individual control over embedding layers and transformer blocks, enabling fine-tuned model combinations for specialized generation tasks.
 
 ## Inputs

@@ -1,4 +1,4 @@
-# 取得 Splat 計數
+# 取得 Splat 數量
 
 Get Splat Count 節點會返回 splat 批次中的 splat（高斯點）總數，並將批次中所有項目的數量加總。此節點會將原始 splat 資料原封不動地傳遞出去，同時提供其中包含的個別 splat 數量。
 

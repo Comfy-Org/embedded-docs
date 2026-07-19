@@ -1,3 +1,5 @@
+# SV3D_Conditioning
+
 Le nœud SV3D_Conditioning prépare les données de conditionnement pour la génération vidéo 3D à l'aide du modèle SV3D. Il prend une image initiale et la traite via les encodeurs CLIP vision et VAE pour créer un conditionnement positif et négatif, accompagné d'une représentation latente. Le nœud génère des séquences d'élévation et d'azimut de caméra pour la génération vidéo multi-images en fonction du nombre d'images vidéo spécifié.
 
 ## Entrées

@@ -1,4 +1,4 @@
-# Descripción General
+# HappyHorse Imagen a Video
 
 Este nodo genera un video corto a partir de una única imagen inicial utilizando el modelo HappyHorse. Proporcionas una imagen de primer fotograma y un mensaje de texto que describe el movimiento y la escena deseados, y el nodo crea un video que continúa a partir de esa imagen.
 

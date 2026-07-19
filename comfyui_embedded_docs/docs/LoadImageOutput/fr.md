@@ -1,3 +1,5 @@
+# Charger l'image (à partir des sorties)
+
 Voici la traduction en français de la documentation du nœud LoadImageOutput :
 
 Le nœud LoadImageOutput charge des images depuis le dossier de sortie. Lorsque vous cliquez sur le bouton d'actualisation, il met à jour la liste des images disponibles et sélectionne automatiquement la première, facilitant ainsi l'itération parmi vos images générées.

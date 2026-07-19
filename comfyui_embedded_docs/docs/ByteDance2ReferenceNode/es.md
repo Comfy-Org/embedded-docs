@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Referencia a Video
+
 Eres un experto en traducción técnica especializado en documentación de nodos ComfyUI del inglés al español.
 
 ## Reglas de Traducción

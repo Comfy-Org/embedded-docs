@@ -1,3 +1,5 @@
+# Hunyuan3D: Görsel(ler)den Modele (Pro)
+
 Bu düğüm, Tencent'in Hunyuan3D Pro API'sini kullanarak bir veya daha fazla giriş görüntüsünden 3B model oluşturur. Görüntüleri işler, API'ye gönderir ve oluşturulan 3B model dosyalarını GLB ve OBJ formatlarında, isteğe bağlı doku haritalarıyla birlikte döndürür.
 
 ## Girişler

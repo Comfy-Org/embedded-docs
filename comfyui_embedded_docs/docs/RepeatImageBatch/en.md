@@ -1,3 +1,5 @@
+# Repeat Image Batch
+
 The RepeatImageBatch node is designed to replicate a given image a specified number of times, creating a batch of identical images. This functionality is useful for operations that require multiple instances of the same image, such as batch processing or data augmentation.
 
 ## Inputs

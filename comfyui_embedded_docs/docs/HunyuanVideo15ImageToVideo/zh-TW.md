@@ -1,3 +1,5 @@
+# HunyuanVideo15ImageToVideo
+
 ### HunyuanVideo15ImageToVideo 節點
 
 此節點基於 HunyuanVideo 1.5 模型，為影片生成準備條件化（conditioning）與潛在空間（latent space）資料。它會為影片序列建立初始的潛在表示，並可選擇性地整合起始影像或 CLIP 視覺輸出，以引導生成過程。

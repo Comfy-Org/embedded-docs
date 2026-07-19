@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio
+
 O nó TextEncodeAceStepAudio processa entradas de texto para condicionamento de áudio, combinando tags e letras em tokens e, em seguida, codificando-os com força de letras ajustável. Ele recebe um modelo CLIP juntamente com descrições de texto e letras, tokeniza-os juntos e gera dados de condicionamento adequados para tarefas de geração de áudio. O nó permite ajustar a influência das letras por meio de um parâmetro de força que controla seu impacto na saída final.
 
 ## Entradas

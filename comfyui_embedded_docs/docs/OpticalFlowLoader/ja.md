@@ -1,3 +1,5 @@
+# オプティカルフローモデルの読み込み
+
 ## 概要
 
 `models/optical_flow/` フォルダからオプティカルフローモデルを読み込みます。現在は、VOIDWarpedNoise ノードで使用される torchvision の RAFT-large 形式のみをサポートしています。ComfyUI はオプティカルフローの重みを自動的にダウンロードしません。チェックポイントファイルを手動で `models/optical_flow/` ディレクトリに配置する必要があります。

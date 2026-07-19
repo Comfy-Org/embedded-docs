@@ -1,3 +1,5 @@
+# Entrenar LoRA
+
 El nodo TrainLoraNode crea y entrena un modelo LoRA (Adaptación de Bajo Rango) en un modelo de difusión utilizando latentes y datos de condicionamiento proporcionados. Permite ajustar un modelo con parámetros de entrenamiento personalizados, optimizadores y funciones de pérdida. El nodo genera los pesos LoRA entrenados, un mapa del historial de pérdidas y el total de pasos de entrenamiento completados.
 
 ## Entradas

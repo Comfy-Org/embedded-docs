@@ -1,3 +1,5 @@
+# Kling Sanal Deneme
+
 Kling Sanal Deneme Düğümü. Bir insan görseli ve bir kıyafet görseli girin; kıyafeti insan üzerinde deneyin. Birden fazla kıyafet parçası görselini beyaz arka planlı tek bir görselde birleştirebilirsiniz.
 
 ## Girişler

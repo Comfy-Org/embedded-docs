@@ -1,3 +1,5 @@
+# ModelBirleştirmeQwenGörsel
+
 ModelMergeQwenImage düğümü, iki yapay zeka modelini bileşenlerini ayarlanabilir ağırlıklarla birleştirerek birleştirir. Transformer blokları, konumsal gömme (positional embedding) ve metin işleme bileşenleri dahil olmak üzere Qwen görüntü modellerinin belirli bölümlerini harmanlamanıza olanak tanır. Her bir modelin, birleştirilmiş sonucun farklı bölümleri üzerinde ne kadar etkili olacağını kontrol edebilirsiniz.
 
 ## Girişler

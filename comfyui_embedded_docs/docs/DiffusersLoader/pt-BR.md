@@ -1,3 +1,5 @@
+# Carregador Diffusers
+
 O nó DiffusersLoader carrega modelos pré-treinados no formato diffusers. Ele busca diretórios válidos de modelos diffusers que contenham um arquivo `model_index.json` e os carrega como componentes MODEL, CLIP e VAE para uso no pipeline. Este nó faz parte da categoria de carregadores obsoletos e fornece compatibilidade com modelos diffusers do Hugging Face.
 
 ## Entradas

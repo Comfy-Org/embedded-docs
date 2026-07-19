@@ -1,3 +1,5 @@
+# Normalize Image Colors
+
 This node adjusts the pixel values of an input image using a mathematical normalization process. It subtracts a specified mean value from each pixel and then divides the result by a specified standard deviation. This is a common preprocessing step to prepare image data for other machine learning models.
 
 ## Inputs

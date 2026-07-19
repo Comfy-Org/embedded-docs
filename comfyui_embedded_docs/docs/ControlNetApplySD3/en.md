@@ -1,3 +1,5 @@
+# Apply Controlnet with VAE
+
 This node applies ControlNet guidance to Stable Diffusion 3 conditioning. It takes positive and negative conditioning inputs along with a ControlNet model and image, then applies the control guidance with adjustable strength and timing parameters to influence the generation process.
 
 **Note:** This node has been marked as deprecated and may be removed in future versions.

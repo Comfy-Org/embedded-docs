@@ -1,3 +1,5 @@
+# LatentConcat
+
 O nó LatentConcat combina duas amostras latentes unindo-as ao longo de uma dimensão escolhida. Ele recebe duas entradas latentes e as concatena ao longo do eixo x, y ou t, com a opção de controlar qual amostra vem primeiro. O nó ajusta automaticamente o tamanho do lote da segunda entrada para corresponder ao da primeira antes de realizar a concatenação.
 
 ## Entradas

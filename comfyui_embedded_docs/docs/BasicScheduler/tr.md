@@ -1,3 +1,5 @@
+# Temel Zamanlayıcı
+
 `BasicScheduler` düğümü, sağlanan zamanlayıcı, model ve gürültü giderme parametrelerine dayanarak difüzyon modelleri için bir dizi sigma değeri hesaplamak üzere tasarlanmıştır. Gürültü giderme (denoise) faktörüne bağlı olarak toplam adım sayısını dinamik olarak ayarlayarak difüzyon sürecini ince ayarlar ve hassas kontrol gerektiren gelişmiş örnekleme süreçlerinde (çok aşamalı örnekleme gibi) farklı aşamalar için hassas "tarifler" sağlar.
 
 ## Girişler

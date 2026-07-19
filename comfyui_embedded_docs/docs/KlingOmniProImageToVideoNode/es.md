@@ -1,3 +1,5 @@
+# Kling Omni Imagen a Video (Pro)
+
 Este nodo utiliza el modelo Kling AI para generar un video basado en un texto descriptivo y hasta siete imágenes de referencia. Permite controlar la relación de aspecto, duración, resolución del video y, opcionalmente, usar guiones gráficos o generar audio. El nodo envía la solicitud a una API externa y devuelve el video generado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Extract Text from JSON
+
 The JsonExtractString node reads a text string containing JSON data and extracts the value associated with a specific key. It converts the extracted value into a string. If the JSON is invalid, the key is not found, or the value is null, the node returns an empty string.
 
 ## Inputs

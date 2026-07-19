@@ -1,4 +1,4 @@
-# SelectModelDevice Düğümü
+# Model Cihazı Seç
 
 ## Genel Bakış
 

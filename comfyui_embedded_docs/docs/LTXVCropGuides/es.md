@@ -1,3 +1,5 @@
+# LTXVCropGuides
+
 El nodo LTXVCropGuides procesa entradas de condicionamiento y latentes para la generación de video, eliminando información de fotogramas clave y ajustando las dimensiones latentes. Recorta la imagen latente y la máscara de ruido para excluir secciones de fotogramas clave, mientras limpia los índices de fotogramas clave tanto de las entradas de condicionamiento positivo como negativo. Esto prepara los datos para flujos de trabajo de generación de video que no requieren guía por fotogramas clave.
 
 ## Entradas

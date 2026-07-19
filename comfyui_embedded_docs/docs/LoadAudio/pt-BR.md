@@ -1,3 +1,5 @@
+# Carregar Áudio
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadAudio/en.md)
 
 O nó LoadAudio carrega arquivos de áudio do diretório de entrada e os converte em um formato que pode ser processado por outros nós de áudio no ComfyUI. Ele lê arquivos de áudio e extrai tanto os dados da forma de onda quanto a taxa de amostragem, disponibilizando-os para tarefas de processamento de áudio downstream.

@@ -1,3 +1,5 @@
+# Meshy : Affiner le modèle brouillon
+
 Le nœud **Meshy : Affiner le modèle provisoire** prend un modèle 3D provisoire généré précédemment et améliore sa qualité, en ajoutant éventuellement des textures. Il soumet une tâche d'affinement à l'API Meshy et renvoie les fichiers du modèle 3D final une fois le traitement terminé.
 
 ## Entrées

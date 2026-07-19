@@ -1,3 +1,5 @@
+# LTXVImgToVideo
+
 Le nœud LTXVImgToVideo convertit une image d'entrée en une représentation latente vidéo destinée aux modèles de génération vidéo. Il prend une image unique et l'étend en une séquence d'images à l'aide de l'encodeur VAE, puis applique un conditionnement avec contrôle de l'intensité pour déterminer la part du contenu de l'image d'origine qui est préservée ou modifiée lors de la génération vidéo.
 
 ## Entrées

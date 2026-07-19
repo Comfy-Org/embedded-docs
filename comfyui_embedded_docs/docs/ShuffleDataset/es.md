@@ -1,3 +1,5 @@
+# Barajar conjunto de imágenes
+
 El nodo Shuffle Dataset toma una lista de imágenes y cambia aleatoriamente su orden. Utiliza un valor de semilla para controlar la aleatoriedad, lo que permite reproducir el mismo orden de mezcla. Esto es útil para aleatorizar la secuencia de imágenes en un conjunto de datos antes de procesarlo.
 
 ## Entradas

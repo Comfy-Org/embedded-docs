@@ -1,4 +1,4 @@
-# Extrair Malha de Splat
+# Extrair Malha do Splat
 
 Este nó converte um splat Gaussiano 3D em uma superfície de malha colorida. Ele funciona rasterizando os gaussianos em uma grade de densidade, extraindo uma isosuperfície em um nível de densidade escolhido e, em seguida, aplicando suavização e limpeza opcionais para produzir uma malha triangular limpa e colorida.
 

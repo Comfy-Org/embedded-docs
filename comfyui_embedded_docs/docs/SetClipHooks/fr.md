@@ -1,3 +1,5 @@
+# Définir les Crochets CLIP
+
 Le nœud SetClipHooks permet d'appliquer des hooks personnalisés à un modèle CLIP, permettant des modifications avancées de son comportement. Il peut appliquer des hooks aux sorties de conditionnement et activer optionnellement la fonctionnalité de planification CLIP. Ce nœud crée une copie clonée du modèle CLIP d'entrée avec les configurations de hooks spécifiées appliquées.
 
 ## Entrées

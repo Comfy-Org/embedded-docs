@@ -1,3 +1,5 @@
+# ElevenLabs スピーチ・トゥ・スピーチ
+
 以下が翻訳結果です。
 
 ElevenLabs Speech to Speech ノードは、入力された音声ファイルを別の声に変換します。ElevenLabs API を使用して音声を変換し、元の音声の内容と感情的なトーンを保持します。

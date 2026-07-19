@@ -1,3 +1,5 @@
+# Guidance VideoTriangleCFG
+
 Le nœud **VideoTriangleCFGGuidance** applique un motif d'échelle de guidage CFG triangulaire aux modèles vidéo. Il modifie l'échelle de conditionnement dans le temps en utilisant une fonction d'onde triangulaire qui oscille entre la valeur CFG minimale et l'échelle de conditionnement d'origine. Cela crée un motif de guidage dynamique qui peut contribuer à améliorer la cohérence et la qualité de la génération vidéo.
 
 ## Entrées

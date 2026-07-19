@@ -1,3 +1,5 @@
+# MasquePlume
+
 Le nœud `FeatherMask` applique un effet de fondu aux bords d'un masque donné, en transitionnant progressivement les contours du masque par un ajustement de leur opacité en fonction des distances spécifiées depuis chaque bord. Cela crée un effet de bord plus doux et estompé.
 
 ## Entrées

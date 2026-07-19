@@ -1,3 +1,5 @@
+# Recraft Metinden Vektöre
+
 Bir metin istemi ve çözünürlüğe bağlı olarak eşzamanlı olarak SVG vektör illüstrasyonları oluşturur. Bu düğüm, isteminizi Recraft API'sine gönderir ve oluşturulan SVG içeriğini döndürür.
 
 ## Girişler

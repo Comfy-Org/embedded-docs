@@ -1,3 +1,5 @@
+# Wan22FunControlToVideo
+
 このドキュメントはAIによって生成されました。誤りや改善の提案がありましたら、ぜひご貢献ください！ [GitHubで編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan22FunControlToVideo/en.md)
 
 Wan22FunControlToVideo ノードは、Wan ビデオモデルアーキテクチャを使用してビデオ生成のための条件付けと潜在表現を準備します。ポジティブおよびネガティブな条件付け入力と、オプションの参照画像および制御ビデオを処理し、ビデオ合成に必要な潜在空間表現を作成します。このノードは、空間スケーリングと時間次元を処理して、ビデオモデルに適した条件付けデータを生成します。

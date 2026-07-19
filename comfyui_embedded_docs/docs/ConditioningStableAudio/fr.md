@@ -1,3 +1,5 @@
+# ConditionnementStableAudio
+
 Le nœud ConditioningStableAudio ajoute des informations de synchronisation aux entrées de conditionnement positif et négatif pour la génération audio. Il définit les paramètres de temps de début et de durée totale qui aident à contrôler quand et pendant combien de temps le contenu audio doit être généré. Ce nœud modifie les données de conditionnement existantes en y ajoutant des métadonnées de synchronisation spécifiques à l'audio.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# CLIPMetinKodlamaSDXLRefiner
+
 Bu düğüm, metin istemlerini estetik puanları ve boyut bilgilerini dahil ederek koşullandırma bilgisine dönüştürmek, böylece üretim görevleri için koşulları iyileştirmek ve nihai iyileştirme etkisini artırmak üzere özel olarak SDXL Refiner modeli için tasarlanmıştır. Profesyonel bir sanat yönetmeni gibi çalışarak yalnızca yaratıcı niyetinizi iletmekle kalmaz, aynı zamanda çalışmaya hassas estetik standartlar ve teknik özellik gereksinimleri de enjekte eder.
 
 ## SDXL Refiner Hakkında

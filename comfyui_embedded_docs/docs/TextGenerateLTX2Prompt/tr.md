@@ -1,3 +1,5 @@
+# TextGenerateLTX2Prompt
+
 TextGenerateLTX2Prompt düğümü, metin üretimi düğümünün özelleştirilmiş bir sürümüdür. Kullanıcının metin girdisini alır ve belirli sistem talimatlarıyla otomatik olarak biçimlendirerek, geliştirme veya tamamlama amacıyla bir dil modeline gönderir. Düğüm iki modda çalışabilir: yalnızca metin veya görsel referanslı olup, her durum için farklı sistem yönergeleri kullanır.
 
 ## Girdiler

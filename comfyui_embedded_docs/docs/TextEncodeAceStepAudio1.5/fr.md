@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 Le nœud TextEncodeAceStepAudio1.5 prépare les métadonnées textuelles et audio pour le modèle AceStepAudio 1.5. Il prend des balises descriptives, des paroles et des paramètres musicaux, puis utilise un modèle CLIP pour les convertir en un format de conditionnement adapté à la génération audio.
 
 ## Entrées

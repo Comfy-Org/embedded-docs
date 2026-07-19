@@ -1,3 +1,5 @@
+# Sonilo Vidéo en Musique
+
 Générer de la musique à partir d'une vidéo en utilisant le modèle IA de Sonilo. Ce nœud analyse le contenu d'une vidéo d'entrée et crée un morceau de musique correspondant. Il utilise un service IA externe pour traiter la vidéo et générer l'audio.
 
 ## Entrées

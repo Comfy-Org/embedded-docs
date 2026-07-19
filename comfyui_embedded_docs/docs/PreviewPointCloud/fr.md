@@ -1,4 +1,4 @@
-# Aperçu du Nuage de Points
+# Aperçu Nuage de Points
 
 Le nœud Aperçu du Nuage de Points vous permet de visualiser un fichier de nuage de points 3D dans l'interface ComfyUI. Il enregistre le nuage de points dans un fichier temporaire et l'affiche dans une fenêtre d'aperçu 3D, tout en transmettant les données du modèle et les paramètres de la vue pour un traitement ultérieur.
 

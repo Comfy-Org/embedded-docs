@@ -1,3 +1,5 @@
+# EmptyAceStep1.5LatentAudio
+
 **Empty Ace Step 1.5 Latent Audio** düğümü, ses işleme için tasarlanmış boş bir latent tensör oluşturur. Belirtilen süre ve toplu iş boyutunda sessiz bir ses latent'i üretir; bu, ComfyUI'de ses üretim iş akışları için başlangıç noktası olarak kullanılabilir. Düğüm, girdi saniyelerine ve sabit bir örnekleme hızına dayanarak latent uzunluğunu hesaplar.
 
 ## Girdiler

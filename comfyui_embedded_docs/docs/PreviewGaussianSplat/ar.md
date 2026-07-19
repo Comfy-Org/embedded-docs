@@ -1,4 +1,4 @@
-# PreviewGaussianSplat
+# معاينة Splat
 
 تتيح لك عقدة PreviewGaussianSplat معاينة ملف Gaussian Splat ثلاثي الأبعاد داخل واجهة ComfyUI. تستقبل العقدة ملف نموذج ثلاثي الأبعاد بتنسيقات Gaussian Splat المختلفة وتعرضه في نافذة معاينة ثلاثية الأبعاد، مع تمرير بيانات النموذج للمعالجة اللاحقة.
 

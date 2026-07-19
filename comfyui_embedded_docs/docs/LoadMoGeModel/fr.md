@@ -1,3 +1,5 @@
+# Charger le modèle MoGe
+
 Voici la traduction en français de la documentation, en respectant toutes vos règles :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadMoGeModel/en.md)

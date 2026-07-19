@@ -1,3 +1,5 @@
+# Preview3DAnimation
+
 Preview3DAnimation düğümü, temel olarak 3B model çıktılarını önizlemek için kullanılır. Bu düğüm iki girdi alır: biri Load3D düğümünden gelen `camera_info`, diğeri ise 3B model dosyasının yoludur. Model dosya yolu `ComfyUI/output` klasöründe bulunmalıdır.
 
 **Desteklenen Formatlar**

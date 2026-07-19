@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio
+
 ## Genel Bakış
 
 TextEncodeAceStepAudio düğümü, etiketler ve şarkı sözlerini token'larda birleştirip ayarlanabilir şarkı sözü gücüyle kodlayarak ses koşullandırması için metin girdilerini işler. Bir CLIP modelini metin açıklamaları ve şarkı sözleriyle birlikte alır, bunları birlikte tokenize eder ve ses üretim görevlerine uygun koşullandırma verileri oluşturur. Düğüm, şarkı sözlerinin son çıktı üzerindeki etkisini kontrol eden bir güç parametresi aracılığıyla etkilerinin ince ayarını yapmaya olanak tanır.

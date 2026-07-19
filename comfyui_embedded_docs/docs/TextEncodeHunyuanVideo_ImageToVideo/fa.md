@@ -1,3 +1,5 @@
+# TextEncodeHunyuanVideo_ImageToVideo
+
 گره TextEncodeHunyuanVideo_ImageToVideo داده‌های شرطی‌سازی (conditioning) را برای تولید ویدئو با ترکیب پرامپت‌های متنی و جاسازی‌های تصویری (image embeddings) ایجاد می‌کند. این گره از یک مدل CLIP برای پردازش همزمان ورودی متن و اطلاعات بصری حاصل از خروجی CLIP vision استفاده می‌کند و سپس توکن‌هایی تولید می‌کند که این دو منبع را با توجه به تنظیمات interleave تصویر ترکیب می‌کند.
 
 ## ورودی‌ها

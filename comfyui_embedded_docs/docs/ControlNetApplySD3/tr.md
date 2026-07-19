@@ -1,3 +1,5 @@
+# VAE ile Controlnet Uygula
+
 Bu düğüm, Stable Diffusion 3 koşullandırmasına ControlNet yönlendirmesi uygular. Pozitif ve negatif koşullandırma girdilerini bir ControlNet modeli ve görüntü ile birlikte alır, ardından üretim sürecini etkilemek için ayarlanabilir güç ve zamanlama parametreleriyle kontrol yönlendirmesini uygular.
 
 **Not:** Bu düğüm kullanımdan kaldırılmış olarak işaretlenmiştir ve gelecekteki sürümlerde kaldırılabilir.

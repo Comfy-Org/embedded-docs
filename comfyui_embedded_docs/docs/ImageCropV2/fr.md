@@ -1,3 +1,5 @@
+# Rogner l'image
+
 Le nœud de recadrage d'image extrait une section rectangulaire d'une image d'entrée. Vous définissez la région à conserver en spécifiant les coordonnées de son coin supérieur gauche ainsi que sa largeur et sa hauteur. Le nœud renvoie ensuite la partie recadrée de l'image d'origine.
 
 ## Entrées

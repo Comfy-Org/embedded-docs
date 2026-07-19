@@ -1,3 +1,5 @@
+# Kandinsky5ImageToVideo
+
 Kandinsky5ImageToVideo 노드는 Kandinsky 모델을 사용하여 비디오 생성을 위한 조건화(conditioning) 및 잠재 공간(latent space) 데이터를 준비합니다. 빈 비디오 잠재 텐서를 생성하고, 선택적으로 시작 이미지를 인코딩하여 생성된 비디오의 초기 프레임을 안내함으로써 긍정 및 부정 조건화를 수정할 수 있습니다.
 
 ## 입력

@@ -1,3 +1,5 @@
+# 條件（串接）
+
 ConditioningConcat 節點旨在串接條件向量，具體是將 'conditioning_from' 向量合併到 'conditioning_to' 向量中。此操作在需要將來自兩個來源的條件資訊組合成單一統一表示時至關重要。
 
 ## 輸入

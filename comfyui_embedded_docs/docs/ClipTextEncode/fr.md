@@ -1,3 +1,5 @@
+# CLIP Text Encode (Prompt)
+
 Voici la traduction en français de la documentation du nœud ComfyUI `CLIPTextEncode` :
 
 `CLIP Text Encode (CLIPTextEncode)` agit comme un traducteur, convertissant vos descriptions textuelles dans un format compréhensible par l'IA. Cela aide l'IA à interpréter votre entrée et à générer l'image souhaitée.

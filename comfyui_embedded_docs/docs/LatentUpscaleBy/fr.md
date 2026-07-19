@@ -1,3 +1,5 @@
+# Mise à l'échelle Latente Par
+
 Le nœud **LatentUpscaleBy** est conçu pour le suréchantillonnage des représentations latentes d'images. Il permet d'ajuster le facteur d'échelle et la méthode de suréchantillonnage, offrant ainsi une flexibilité pour améliorer la résolution des échantillons latents.
 
 ## Entrées

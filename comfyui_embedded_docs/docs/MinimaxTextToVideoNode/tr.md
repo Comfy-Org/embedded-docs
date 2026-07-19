@@ -1,4 +1,4 @@
-# MiniMaxTextToVideoNode
+# MiniMax Metinden Videoya
 
 Bir metin istemi ve isteğe bağlı parametreler kullanarak MiniMax'ın API'si aracılığıyla eşzamanlı olarak videolar oluşturur. Bu düğüm, MiniMax'ın metinden videoya hizmetine bağlanarak metin açıklamalarından video içeriği oluşturur.
 

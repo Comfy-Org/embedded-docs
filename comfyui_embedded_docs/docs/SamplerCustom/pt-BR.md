@@ -1,3 +1,5 @@
+# SamplerCustom
+
 O nó SamplerCustom foi projetado para fornecer um mecanismo de amostragem flexível e personalizável para diversas aplicações. Ele permite que os usuários selecionem e configurem diferentes estratégias de amostragem adaptadas às suas necessidades específicas, aumentando a adaptabilidade e eficiência do processo de amostragem.
 
 ## Entradas

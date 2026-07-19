@@ -1,3 +1,5 @@
+# Görüntü Kırpma
+
 Görüntü Kırp düğümü, bir giriş görüntüsünden dikdörtgen bir bölüm çıkarır. Korunacak bölgeyi, sol üst köşe koordinatlarını, genişliğini ve yüksekliğini belirterek tanımlarsınız. Düğüm daha sonra orijinal görüntünün kırpılmış kısmını döndürür.
 
 ## Girişler

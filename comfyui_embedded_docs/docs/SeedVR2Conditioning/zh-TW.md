@@ -1,4 +1,4 @@
-# 應用 SeedVR2 條件設定
+# SeedVR2Conditioning
 
 此節點從 VAE 潛在空間建立正向與負向條件設定，以供 SeedVR2 模型使用。它會準備引導影像或影片生成過程所需的條件資料。
 

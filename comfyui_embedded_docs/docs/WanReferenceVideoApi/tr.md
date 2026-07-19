@@ -1,3 +1,5 @@
+# Wan Reference to Video
+
 ComfyUI Wan Referans Videodan Video düğümü, bir veya daha fazla referans videosunun görsel görünümünü ve sesini, bir metin istemiyle birlikte kullanarak yeni bir video oluşturur. Referans malzemedeki karakterlerle tutarlılığı korurken, açıklamanıza dayalı olarak yeni içerik oluşturur.
 
 ## Girişler

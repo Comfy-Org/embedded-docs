@@ -1,3 +1,5 @@
+# Guardar audio (Opus)
+
 El nodo SaveAudioOpus guarda datos de audio en un archivo en formato Opus. Toma una entrada de audio y la exporta como un archivo Opus comprimido con ajustes de calidad configurables. El nodo maneja automáticamente el nombre del archivo y guarda la salida en el directorio de salida designado.
 
 ## Entradas

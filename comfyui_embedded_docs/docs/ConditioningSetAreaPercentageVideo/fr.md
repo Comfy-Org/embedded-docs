@@ -1,3 +1,5 @@
+# Pourcentage de la zone de conditionnement vidéo
+
 Le nœud **ConditioningSetAreaPercentageVideo** modifie les données de conditionnement en définissant une zone spécifique et une région temporelle pour la génération vidéo. Il permet de définir la position, la taille et la durée de la zone où le conditionnement sera appliqué, en utilisant des valeurs en pourcentage relatives aux dimensions globales. Cela est utile pour concentrer la génération sur des parties spécifiques d'une séquence vidéo.
 
 ## Entrées

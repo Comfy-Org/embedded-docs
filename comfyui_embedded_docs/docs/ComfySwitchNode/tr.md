@@ -1,3 +1,5 @@
+# Anahtar
+
 Switch düğümü, bir boolean koşuluna bağlı olarak iki olası girdi arasında seçim yapar. `switch` etkinleştirildiğinde `on_true` girdisini, devre dışı bırakıldığında ise `on_false` girdisini çıktı olarak verir. Bu sayede iş akışınızda koşullu mantık oluşturabilir ve farklı veri yollarını seçebilirsiniz.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Recraft Creative Upscale Image
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftCreativeUpscaleNode/en.md)
 
 Le nœud Recraft Creative Upscale Image améliore une image matricielle en augmentant sa résolution. Il utilise un processus de « mise à l'échelle créative » qui se concentre sur l'amélioration des petits détails et des visages dans l'image. Cette opération est effectuée de manière synchrone via une API externe.

@@ -1,3 +1,5 @@
+# ModelBirleştirmeLTXV
+
 ModelMergeLTXV düğümü, özellikle LTXV model mimarileri için tasarlanmış gelişmiş model birleştirme işlemlerini gerçekleştirir. Dönüştürücü blokları, projeksiyon katmanları ve diğer özelleştirilmiş modüller dahil olmak üzere çeşitli model bileşenleri için enterpolasyon ağırlıklarını ayarlayarak iki farklı modeli birbiriyle harmanlamanıza olanak tanır.
 
 ## Girişler

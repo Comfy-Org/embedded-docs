@@ -1,3 +1,5 @@
+# Inverser l'image
+
 Le nœud `ImageInvert` est conçu pour inverser les couleurs d'une image, transformant efficacement la valeur chromatique de chaque pixel en sa couleur complémentaire sur le cercle chromatique. Cette opération est utile pour créer des images négatives ou pour des effets visuels nécessitant une inversion des couleurs.
 
 ## Entrées

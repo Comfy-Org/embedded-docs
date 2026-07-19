@@ -1,3 +1,5 @@
+# SamplerLCMUpscale
+
 El nodo SamplerLCMUpscale proporciona un método de muestreo especializado que combina el muestreo del Modelo Consistente Latente (LCM) con capacidades de ampliación de imagen. Permite ampliar imágenes durante el proceso de muestreo utilizando varios métodos de interpolación, lo que resulta útil para generar salidas de mayor resolución manteniendo la calidad de la imagen.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# CodificadorAudioCodificar
+
 El nodo AudioEncoderEncode procesa datos de audio codificándolos mediante un modelo de codificador de audio. Toma una entrada de audio y la convierte en una representación codificada que puede utilizarse para procesamiento posterior en el flujo de condicionamiento. Este nodo transforma formas de onda de audio sin procesar en un formato adecuado para aplicaciones de aprendizaje automático basadas en audio.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# TripleCLIPLoader
+
 O nó TripleCLIPLoader carrega três modelos de codificador de texto diferentes simultaneamente e os combina em um único modelo CLIP. Isso é útil para cenários avançados de codificação de texto onde múltiplos codificadores de texto são necessários, como em fluxos de trabalho SD3 que exigem que os modelos clip-l, clip-g e t5 trabalhem juntos.
 
 ## Entradas

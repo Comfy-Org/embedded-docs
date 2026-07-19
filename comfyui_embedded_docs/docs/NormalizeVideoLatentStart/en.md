@@ -1,3 +1,5 @@
+# NormalizeVideoLatentStart
+
 This node adjusts the first few frames of a video latent to make them look more like the frames that come after. It calculates the average and variation from a set of reference frames later in the video and applies those same characteristics to the starting frames. This helps create a smoother and more consistent visual transition at the beginning of a video.
 
 ## Inputs

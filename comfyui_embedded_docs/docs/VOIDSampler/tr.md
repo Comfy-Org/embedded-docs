@@ -1,3 +1,5 @@
+# VOIDSampler
+
 ## Genel Bakış
 
 VOIDSampler düğümü, özellikle VOID iç boyama (inpainting) modelleri için tasarlanmış özel bir DDIM örnekleme yöntemi sağlar. Bu düğüm, standart KSampler'ların uyguladığı gürültü ölçeklemesi olmadan, VOID model eğitimi sırasında kullanılan aynı gürültü giderme işlemini uygular. SamplerCustom veya SamplerCustomAdvanced düğümleriyle kullanılmak üzere tasarlanmıştır ve RandomNoise veya VOIDWarpedNoiseSource ile eşleştirilmelidir.

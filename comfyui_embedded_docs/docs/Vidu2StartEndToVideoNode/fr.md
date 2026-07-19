@@ -1,3 +1,5 @@
+# Génération vidéo Vidu2 à partir d'une image de début/fin
+
 Ce nœud génère une vidéo par interpolation entre une image de début et une image de fin fournies, guidée par une description textuelle. Il utilise un modèle Vidu spécifié pour créer une transition fluide entre les deux images sur une durée définie.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# StabilSıfır123_Koşullandırma_Toplu
+
 StableZero123_Conditioning_Batched düğümü, bir giriş görüntüsünü işler ve 3B model oluşturma için koşullandırma verileri üretir. CLIP vision ve VAE modellerini kullanarak görüntüyü kodlar, ardından yükseklik ve azimut açılarına dayalı kamera yerleştirmeleri oluşturarak toplu işleme için pozitif ve negatif koşullandırma ile birlikte gizli temsiller üretir.
 
 ## Girişler

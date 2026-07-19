@@ -1,3 +1,5 @@
+# SamplerLCMUpscale
+
 O nó SamplerLCMUpscale fornece um método de amostragem especializado que combina a amostragem do Modelo de Consistência Latente (LCM) com capacidades de redimensionamento de imagem. Ele permite redimensionar imagens durante o processo de amostragem usando vários métodos de interpolação, sendo útil para gerar saídas de maior resolução enquanto mantém a qualidade da imagem.
 
 ## Entradas

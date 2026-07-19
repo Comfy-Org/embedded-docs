@@ -1,3 +1,5 @@
+# Meshy: Texto para Modelo
+
 O nó **Meshy: Text to Model** utiliza a API Meshy para gerar um modelo 3D a partir de uma descrição textual. Ele envia uma solicitação para a API com seu prompt e configurações, aguarda a conclusão da geração e baixa os arquivos do modelo resultante.
 
 ## Entradas

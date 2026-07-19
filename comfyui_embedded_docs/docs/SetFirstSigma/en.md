@@ -1,3 +1,5 @@
+# SetFirstSigma
+
 The SetFirstSigma node modifies a sequence of sigma values by replacing the first sigma value in the sequence with a custom value. It takes an existing sigma sequence and a new sigma value as inputs, then returns a new sigma sequence where only the first element has been changed while keeping all other sigma values unchanged.
 
 ## Inputs

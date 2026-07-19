@@ -1,3 +1,5 @@
+# WanCameraEmbedding
+
 O nó WanCameraEmbedding gera embeddings de trajetória de câmera utilizando embeddings de Plücker com base em parâmetros de movimento de câmera. Ele cria uma sequência de poses de câmera que simulam diferentes movimentos e as converte em tensores de embedding adequados para pipelines de geração de vídeo.
 
 ## Entradas

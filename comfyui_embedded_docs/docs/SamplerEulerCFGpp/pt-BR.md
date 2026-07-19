@@ -1,3 +1,5 @@
+# SamplerEulerCFG++
+
 O nó SamplerEulerCFGpp fornece um método de amostragem Euler CFG++ para gerar saídas. Este nó oferece duas versões diferentes de implementação do amostrador Euler CFG++ que podem ser selecionadas de acordo com a preferência do usuário.
 
 ## Entradas

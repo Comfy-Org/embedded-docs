@@ -1,4 +1,4 @@
-# ComfyOrNode
+# Or
 
 The ComfyOrNode performs a logical OR operation on a set of input values. It returns `true` if any of the provided values are considered truthy according to Python's standard truthiness rules.
 

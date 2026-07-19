@@ -1,3 +1,5 @@
+# Condicionamiento PiD
+
 ## Descripción general
 
 Adjunta una imagen latente y un valor sigma de degradación a los datos de CONDITIONING. Se utiliza para la decodificación o ampliación PiD (Pixel-in-Detail), permitiendo controlar cuánto se degrada el latente antes del procesamiento.

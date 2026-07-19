@@ -1,3 +1,5 @@
+# Hunyuan3Dv2Conditioning
+
 Le nœud Hunyuan3Dv2Conditioning traite la sortie de la vision CLIP pour générer des données de conditionnement destinées aux modèles 3D. Il extrait les embeddings du dernier état caché de la sortie visuelle et crée des paires de conditionnement positives et négatives. Le conditionnement positif utilise les embeddings réels, tandis que le conditionnement négatif utilise des embeddings de valeur nulle de la même forme.
 
 ## Entrées

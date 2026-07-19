@@ -1,3 +1,5 @@
+# Quantification d'image
+
 Le nœud ImageQuantize est conçu pour réduire le nombre de couleurs d'une image à un nombre spécifié, en appliquant éventuellement des techniques de tramage (dithering) pour préserver la qualité visuelle. Ce processus est utile pour créer des images basées sur une palette ou pour réduire la complexité chromatique dans certaines applications.
 
 ## Entrées

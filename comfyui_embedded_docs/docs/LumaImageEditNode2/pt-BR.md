@@ -1,4 +1,4 @@
-# Visão Geral
+# Luma UNI-1 Image Edit
 
 Este nó edita uma imagem existente usando um prompt de texto, alimentado pelo modelo Luma UNI-1. Ele recebe uma imagem de origem e uma descrição da alteração desejada, gerando uma nova versão editada da imagem.
 

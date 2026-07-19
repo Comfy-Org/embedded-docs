@@ -1,3 +1,5 @@
+# Recraft Crear Estilo
+
 Este nodo crea un estilo personalizado para la generación de imágenes mediante la carga de imágenes de referencia. Puedes cargar entre 1 y 5 imágenes para definir el nuevo estilo, y el nodo devolverá un ID de estilo único que se puede utilizar con otros nodos de Recraft. El tamaño total combinado de todos los archivos de imagen cargados no debe superar los 5 MB.
 
 ## Entradas

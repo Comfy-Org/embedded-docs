@@ -1,3 +1,5 @@
+# Kling Video Efektleri
+
 Kling Tek Görsel Video Efekt Düğümü, tek bir referans görseline dayanarak farklı özel efektlerle videolar oluşturur. Statik görselleri dinamik video içeriğine dönüştürmek için çeşitli görsel efektler ve sahneler uygular. Düğüm, istenen görsel sonucu elde etmek için farklı efekt sahnelerini, model seçeneklerini ve video sürelerini destekler.
 
 ## Girişler

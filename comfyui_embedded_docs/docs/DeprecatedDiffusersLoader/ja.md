@@ -1,3 +1,5 @@
+# DeprecatedDiffusersLoader
+
 DiffusersLoaderノードは、diffusersライブラリからモデルを読み込むために設計されており、指定されたモデルパスに基づいてUNet、CLIP、VAEモデルの読み込みを処理します。このノードは、これらのモデルをComfyUIフレームワークに統合し、テキストから画像への生成、画像操作などの高度な機能を実現します。
 
 ## 入力

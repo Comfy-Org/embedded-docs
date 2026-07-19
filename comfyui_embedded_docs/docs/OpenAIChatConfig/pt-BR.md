@@ -1,3 +1,5 @@
+# Opções Avançadas do OpenAI ChatGPT
+
 Aqui está a tradução da documentação para português brasileiro, seguindo todas as regras especificadas:
 
 O nó OpenAIChatConfig permite definir opções de configuração adicionais para o Nó de Chat OpenAI. Ele fornece configurações avançadas que controlam como o modelo gera respostas, incluindo comportamento de truncamento, limites de tamanho de saída e instruções personalizadas.

@@ -1,3 +1,5 @@
+# ModelMergeAuraflow
+
 O nó ModelMergeAuraflow permite combinar dois modelos diferentes ajustando pesos específicos de mesclagem para vários componentes do modelo. Ele oferece controle refinado sobre como diferentes partes dos modelos são mescladas, desde as camadas iniciais até as saídas finais. Este nó é particularmente útil para criar combinações personalizadas de modelos com controle preciso sobre o processo de mesclagem.
 
 ## Entradas

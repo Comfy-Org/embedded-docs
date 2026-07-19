@@ -1,3 +1,5 @@
+# Kanca LoRA Oluştur (Sadece Model)
+
 Bu düğüm, yalnızca model bileşenine uygulanan bir LoRA (Düşük Dereceli Uyarlama) kancası oluşturur ve CLIP bileşenini tamamen değiştirmez. Belirtilen güçte bir LoRA dosyası yükler ve model üzerinde uygularken CLIP gücünü sıfıra ayarlar. Bu düğüm, önceki kancalarla zincirlenerek karmaşık değişiklik hatları oluşturulmasını sağlar.
 
 ## Girişler

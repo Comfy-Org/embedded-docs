@@ -1,3 +1,5 @@
+# MoonvalleyImg2VideoNode
+
 Voici la traduction en français de la documentation du nœud ComfyUI Moonvalley Marey Image to Video :
 
 Le nœud Moonvalley Marey Image to Video transforme une image de référence en vidéo à l'aide de l'API Moonvalley. Il prend une image d'entrée et un texte d'invite pour générer une vidéo avec une résolution, des paramètres de qualité et des contrôles créatifs spécifiés. Le nœud gère l'ensemble du processus, du téléchargement de l'image à la génération et au téléchargement de la vidéo.

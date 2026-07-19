@@ -1,3 +1,5 @@
+# DefinirPrimeiroSigma
+
 O nó SetFirstSigma modifica uma sequência de valores sigma substituindo o primeiro valor sigma da sequência por um valor personalizado. Ele recebe uma sequência sigma existente e um novo valor sigma como entradas e retorna uma nova sequência sigma onde apenas o primeiro elemento foi alterado, mantendo todos os outros valores sigma inalterados.
 
 ## Entradas

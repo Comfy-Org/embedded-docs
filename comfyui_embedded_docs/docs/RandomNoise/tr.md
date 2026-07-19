@@ -1,3 +1,5 @@
+# RastgeleGürültü
+
 RandomNoise düğümü, bir tohum (seed) değerine dayalı olarak rastgele gürültü desenleri oluşturur. Çeşitli görüntü işleme ve üretim görevlerinde kullanılabilecek, tekrarlanabilir gürültü üretir. Aynı tohum değeri her zaman aynı gürültü desenini üreterek birden çok çalıştırmada tutarlı sonuçlar alınmasını sağlar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Hunyuan3D: Topologia Inteligente
+
 Este nó realiza retopologia inteligente em um modelo 3D, criando automaticamente uma nova malha mais limpa com contagem de polígonos otimizada. Ele se conecta a uma API Tencent Hunyuan 3D para processar o modelo, suportando formatos de arquivo GLB e OBJ de até 200MB. O nó retorna o modelo processado como um arquivo OBJ.
 
 ## Entradas

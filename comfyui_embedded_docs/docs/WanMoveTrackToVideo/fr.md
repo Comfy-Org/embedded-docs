@@ -1,3 +1,5 @@
+# WanMoveTrackToVideo
+
 Le nœud WanMoveTrackToVideo prépare les données de conditionnement et d'espace latent pour la génération vidéo, en intégrant éventuellement des informations de suivi de mouvement. Il encode une séquence d'images de départ en une représentation latente et peut fusionner des données de position provenant de pistes d'objets pour guider le mouvement dans la vidéo générée. Le nœud produit un conditionnement positif et négatif modifié, ainsi qu'un tenseur latent vide prêt pour un modèle vidéo.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Referência para Vídeo
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/en.md)
 
 O nó ByteDance Seedance 2.0 Reference to Video utiliza o modelo de IA Seedance 2.0 para criar, editar ou estender vídeos com base no seu prompt de texto e nos materiais de referência fornecidos. Ele pode usar imagens, vídeos e áudio como referências para orientar o processo de geração, suportando tarefas como edição e extensão de vídeos.

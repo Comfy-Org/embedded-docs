@@ -1,3 +1,5 @@
+# Boş Ses
+
 BoşSes düğümü, belirtilen süre, örnekleme hızı ve kanal yapılandırmasına sahip sessiz bir ses klibi oluşturur. Tümü sıfırlardan oluşan bir dalga formu üreterek belirtilen süre boyunca tam sessizlik sağlar. Bu düğüm, yer tutucu ses oluşturmak veya ses iş akışlarında sessiz bölümler oluşturmak için kullanışlıdır.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Recraft Texto para Imagem
+
 Gera imagens de forma síncrona com base no prompt e na resolução. Este nó se conecta à API Recraft para criar imagens a partir de descrições textuais com dimensões especificadas e parâmetros opcionais de estilo e controle.
 
 ## Entradas

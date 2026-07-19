@@ -1,3 +1,5 @@
+# LTXVImgToVideoInplace
+
 Le nœud LTXVImgToVideoInplace conditionne une représentation latente vidéo en encodant une image d'entrée dans ses trames initiales. Il fonctionne en utilisant un VAE pour encoder l'image dans l'espace latent, puis en la fusionnant avec les échantillons latents existants selon une force spécifiée. Cela permet à une image de servir de point de départ ou de signal de conditionnement pour la génération vidéo.
 
 ## Entrées

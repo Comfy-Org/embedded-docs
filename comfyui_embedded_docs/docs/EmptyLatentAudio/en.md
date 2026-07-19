@@ -1,3 +1,5 @@
+# Empty Latent Audio
+
 The EmptyLatentAudio node creates an empty latent tensor for audio processing. It generates a blank audio latent representation with a specified duration and batch size, which can be used as a starting point for audio generation or processing workflows. The node automatically calculates the appropriate latent dimensions based on the audio duration and sample rate.
 
 ## Inputs

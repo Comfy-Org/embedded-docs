@@ -1,3 +1,5 @@
+# Empty Latent Audio
+
 O nó EmptyLatentAudio cria um tensor latente vazio para processamento de áudio. Ele gera uma representação latente de áudio em branco com duração e tamanho de lote especificados, que pode ser usada como ponto de partida para fluxos de trabalho de geração ou processamento de áudio. O nó calcula automaticamente as dimensões latentes apropriadas com base na duração do áudio e na taxa de amostragem.
 
 ## Entradas

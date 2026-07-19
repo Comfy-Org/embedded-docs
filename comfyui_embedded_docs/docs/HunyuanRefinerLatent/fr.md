@@ -1,3 +1,5 @@
+# Latent HunyuanRefiner
+
 Le nœud HunyuanRefinerLatent traite les entrées de conditionnement et latentes pour les opérations de raffinement. Il applique une augmentation de bruit aux conditionnements positif et négatif tout en intégrant les données d'image latente, et génère une nouvelle sortie latente avec des dimensions spécifiques pour un traitement ultérieur.
 
 ## Entrées

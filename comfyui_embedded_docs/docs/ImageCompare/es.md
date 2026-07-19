@@ -1,3 +1,5 @@
+# Comparar Imágenes
+
 El nodo Image Compare proporciona una interfaz visual para comparar dos imágenes lado a lado mediante un control deslizante. Está diseñado como un nodo de salida, lo que significa que no transfiere datos a otros nodos, sino que muestra las imágenes directamente en la interfaz de usuario para su inspección.
 
 ## Entradas

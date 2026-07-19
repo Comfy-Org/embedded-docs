@@ -1,3 +1,5 @@
+# LotusKoşullandırma
+
 LotusConditioning düğümü, Lotus modeli için önceden hesaplanmış koşullandırma gömmeleri (conditioning embeddings) sağlar. Donmuş bir kodlayıcı (frozen encoder) kullanarak boş koşullandırma (null conditioning) ile çalışır ve referans uygulamayla eşdeğerlik sağlamak için, çıkarım (inference) yapmaya veya büyük tensör dosyaları yüklemeye gerek kalmadan sabit kodlanmış (hardcoded) prompt gömmeleri döndürür. Bu düğüm, doğrudan üretim hattında (generation pipeline) kullanılabilecek sabit bir koşullandırma tensörü çıktısı verir.
 
 ## Girişler

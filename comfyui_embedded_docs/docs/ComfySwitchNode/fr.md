@@ -1,3 +1,5 @@
+# Commutateur
+
 Le nœud Switch sélectionne entre deux entrées possibles en fonction d'une condition booléenne. Il produit en sortie l'entrée `on_true` lorsque le `switch` est activé, et l'entrée `on_false` lorsque le `switch` est désactivé. Cela permet de créer une logique conditionnelle et de choisir différents chemins de données dans votre flux de travail.
 
 ## Entrées

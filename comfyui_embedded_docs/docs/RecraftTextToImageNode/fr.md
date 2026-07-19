@@ -1,3 +1,5 @@
+# Recraft Texte en Image
+
 Génère des images de manière synchrone en fonction d'un prompt et d'une résolution. Ce nœud se connecte à l'API Recraft pour créer des images à partir de descriptions textuelles avec des dimensions spécifiées et des paramètres facultatifs de style et de contrôle.
 
 ## Entrées

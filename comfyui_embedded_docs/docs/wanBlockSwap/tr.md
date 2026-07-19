@@ -1,3 +1,5 @@
+# wanBlockSwap
+
 Bu düğüm kullanımdan kaldırılmıştır ve herhangi bir işlev sunmamaktadır. Giriş olarak bir model alır ve aynı modeli değiştirmeden döndürür. "NOP" açıklaması, herhangi bir işlem gerçekleştirmediğini belirtir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# CFGZeroStar
+
 Le nœud CFGZeroStar applique une technique de mise à l'échelle spécialisée du guidage aux modèles de diffusion. Il modifie le processus de guidage sans classifieur en calculant un facteur d'échelle optimisé basé sur la différence entre les prédictions conditionnelles et inconditionnelles. Cette approche ajuste la sortie finale pour offrir un contrôle accru sur le processus de génération tout en maintenant la stabilité du modèle.
 
 ## Entrées

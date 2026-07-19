@@ -1,3 +1,5 @@
+# Arka Planı Kaldır
+
 ## Genel Bakış
 
 Arka Planı Kaldır düğümü, bir arka plan kaldırma modeli kullanarak, giriş görüntüsündeki ön plan nesnesini arka plandan ayıran bir maske oluşturur. Bir görüntü ve bir arka plan kaldırma modeli alır, ardından ana nesneyi vurgulayan bir maske üretir.

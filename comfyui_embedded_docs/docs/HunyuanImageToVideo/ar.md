@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقد HunyuanImageToVideo
+# Hunyuan صورة إلى فيديو
 
 ## نظرة عامة
 

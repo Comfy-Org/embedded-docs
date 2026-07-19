@@ -1,3 +1,5 @@
+# Chargeur Audio VAE LTXV
+
 Voici la traduction de la documentation du nœud LTXV Audio VAE Loader :
 
 Le nœud LTXV Audio VAE Loader charge un modèle d'autoencodeur variationnel audio (VAE) pré-entraîné à partir d'un fichier de point de contrôle. Il lit le point de contrôle spécifié, charge ses poids et métadonnées, et prépare le modèle pour une utilisation dans des workflows de génération ou de traitement audio au sein de ComfyUI.

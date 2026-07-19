@@ -1,3 +1,5 @@
+# Sadece Görüntü Kontrol Noktası Yükleyici (img2vid modeli)
+
 Bu düğüm, `ComfyUI/models/checkpoints` klasöründe bulunan modelleri algılar ve ayrıca extra_model_paths.yaml dosyasında yapılandırılmış ek yollardaki modelleri de okur. Bazen, ilgili klasördeki model dosyalarını okuması için **ComfyUI arayüzünü yenilemeniz** gerekebilir.
 
 Bu düğüm, video oluşturma iş akışlarında özellikle görüntü tabanlı modeller için kontrol noktaları (checkpoint) yükleme konusunda uzmanlaşmıştır. Belirli bir kontrol noktasından gerekli bileşenleri verimli bir şekilde alır ve yapılandırır, modelin görüntüyle ilgili yönlerine odaklanır.

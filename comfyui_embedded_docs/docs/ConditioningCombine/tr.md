@@ -1,3 +1,5 @@
+# Koşullandırma (Birleştir)
+
 Bu düğüm, iki koşullandırma girdisini tek bir çıktıda birleştirerek bilgilerini etkili bir şekilde harmanlar. İki koşul, liste birleştirme kullanılarak bir araya getirilir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# TextEncodeZImageOmni
+
 Voici la traduction en français de la documentation du nœud TextEncodeZImageOmni :
 
 Le nœud TextEncodeZImageOmni est un nœud de conditionnement avancé qui encode une invite textuelle ainsi que des images de référence optionnelles dans un format de conditionnement adapté aux modèles de génération d'images. Il peut traiter jusqu'à trois images, en les encodant éventuellement avec un encodeur visuel et/ou un VAE pour produire des latentes de référence, et intègre ces références visuelles à l'invite textuelle en utilisant une structure de modèle spécifique.

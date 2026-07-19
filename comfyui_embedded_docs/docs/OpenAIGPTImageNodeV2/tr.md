@@ -1,3 +1,5 @@
+# OpenAI GPT Görüntü 2
+
 ## Genel Bakış
 
 Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Birden fazla modeli destekler, düzenleme için giriş görselleri sağlamanıza olanak tanır ve bir görselin hangi bölümlerinin değiştirileceğini belirtmek için maske kullanabilir.

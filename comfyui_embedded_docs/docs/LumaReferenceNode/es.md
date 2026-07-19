@@ -1,3 +1,5 @@
+# Referencia Luma
+
 Este nodo contiene una imagen y un valor de peso para usarse con el nodo Luma Generate Image. Crea una cadena de referencia que puede pasarse a otros nodos Luma para influir en la generación de imágenes. El nodo puede iniciar una nueva cadena de referencia o agregarse a una existente.
 
 ## Entradas

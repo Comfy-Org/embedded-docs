@@ -1,4 +1,4 @@
-# Descripción General
+# Escala de Ruido del Modelo
 
 Este nodo ajusta la escala de ruido utilizada durante el muestreo del modelo. Permite establecer un valor específico de escala de ruido, que controla la cantidad de ruido aplicada al proceso de muestreo del modelo.
 

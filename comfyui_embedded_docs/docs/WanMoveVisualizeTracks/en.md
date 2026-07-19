@@ -1,3 +1,5 @@
+# WanMoveVisualizeTracks
+
 The WanMoveVisualizeTracks node overlays motion tracking data onto a sequence of images or video frames. It draws visual representations of tracked points, including their movement paths and current positions, making the motion data visible and easier to analyze.
 
 ## Inputs

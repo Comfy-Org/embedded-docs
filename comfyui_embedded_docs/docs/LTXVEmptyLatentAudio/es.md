@@ -1,3 +1,5 @@
+# LTXV Audio Latente Vacío
+
 El nodo LTXV Empty Latent Audio crea un lote de tensores de audio latente vacíos (rellenos con ceros). Utiliza la configuración de un modelo Audio VAE proporcionado para determinar las dimensiones correctas del espacio latente, como la cantidad de canales y bins de frecuencia. Este latente vacío sirve como punto de partida para flujos de trabajo de generación o manipulación de audio dentro de ComfyUI.
 
 ## Entradas

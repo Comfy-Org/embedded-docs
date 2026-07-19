@@ -1,4 +1,4 @@
-# StableZero123_Conditioning_Batched 節點
+# StableZero123 條件設定（批次）
 
 StableZero123_Conditioning_Batched 節點處理輸入影像，並為 3D 模型生成生成條件數據。它使用 CLIP vision 和 VAE 模型對影像進行編碼，然後根據仰角和方位角創建相機嵌入，以生成正向和負向條件，以及用於批次處理的潛在表示。
 

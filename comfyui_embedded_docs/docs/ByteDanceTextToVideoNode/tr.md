@@ -1,3 +1,5 @@
+# ByteDance Metinden Videoya
+
 ByteDance Metinden Videoya düğümü, metin istemlerine dayalı olarak bir API aracılığıyla ByteDance modellerini kullanarak videolar oluşturur. Giriş olarak bir metin açıklaması ve çeşitli video ayarlarını alır, ardından sağlanan özelliklerle eşleşen bir video oluşturur. Düğüm, API iletişimini yönetir ve oluşturulan videoyu çıktı olarak döndürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# HitPaw Genel Görüntü İyileştirme
+
 Bu düğüm, düşük çözünürlüklü görüntüleri süper çözünürlüğe yükselterek, yapaylıkları ve gürültüyü gidererek iyileştirir. Görüntüyü işlemek için harici bir API kullanır ve işleme sınırları dahilinde kalmak için giriş boyutunu otomatik olarak ayarlayabilir. İzin verilen maksimum çıkış boyutu 4 megapikseldir.
 
 ## Girişler

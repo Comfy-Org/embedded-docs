@@ -1,3 +1,5 @@
+# Stability AI Stable Diffusion 3.5 Imagem
+
 Este nó gera imagens de forma síncrona usando o modelo Stable Diffusion 3.5 da Stability AI. Ele cria imagens com base em prompts de texto e também pode modificar imagens existentes quando fornecidas como entrada. O nó suporta várias proporções de aspecto e predefinições de estilo para personalizar a saída.
 
 ## Entradas

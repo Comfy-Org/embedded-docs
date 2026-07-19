@@ -1,3 +1,5 @@
+# ByteDance Referans Görsellerden Videoya
+
 **ByteDance Görsel Referans Düğümü**, bir metin istemi ve birden dörde kadar referans görsel kullanarak video oluşturur. Görselleri ve istemi, açıklamanızla eşleşen ve referans görsellerinizdeki görsel stili ve içeriği birleştiren bir video oluşturan harici bir API hizmetine gönderir. Düğüm, video çözünürlüğü, en boy oranı, süre ve diğer oluşturma parametreleri için çeşitli kontroller sağlar.
 
 ## Girişler

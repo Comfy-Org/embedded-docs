@@ -1,3 +1,5 @@
+# HunyuanGörüntüdenVideoya
+
 HunyuanImageToVideo düğümü, Hunyuan video modelini kullanarak görüntüleri video gizil (latent) temsillerine dönüştürür. Video oluşturma modelleri tarafından daha fazla işlenebilecek video gizilleri üretmek için koşullandırma girdilerini ve isteğe bağlı başlangıç görüntülerini alır. Düğüm, başlangıç görüntüsünün video oluşturma sürecini nasıl etkileyeceğini kontrol etmek için farklı yönlendirme türlerini destekler.
 
 ## Girdiler

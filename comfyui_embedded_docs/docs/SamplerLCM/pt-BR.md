@@ -1,3 +1,5 @@
+# SamplerLCM
+
 O nó SamplerLCM fornece um amostrador LCM (Modelo de Consistência Latente) com parâmetros de ruído ajustáveis por etapa. Ele permite controlar o ruído aplicado em cada etapa de amostragem, possibilitando um ajuste fino do processo de amostragem.
 
 ## Entradas

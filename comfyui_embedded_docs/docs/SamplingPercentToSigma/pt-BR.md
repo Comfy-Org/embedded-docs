@@ -1,3 +1,5 @@
+# SamplingPercentToSigma
+
 O nó SamplingPercentToSigma converte um valor percentual de amostragem para um valor sigma correspondente usando os parâmetros de amostragem do modelo. Ele recebe um valor percentual entre 0.0 e 1.0 e o mapeia para o valor sigma apropriado na programação de ruído do modelo, com opções para retornar o sigma calculado ou os valores sigma máximo/mínimo reais nos limites.
 
 ## Entradas

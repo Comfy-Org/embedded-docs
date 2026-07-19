@@ -1,3 +1,5 @@
+# PerturbedAttentionGuidance
+
 O nó PerturbedAttentionGuidance aplica orientação de atenção perturbada a um modelo de difusão para melhorar a qualidade da geração. Ele modifica o mecanismo de autoatenção do modelo durante a amostragem, substituindo-o por uma versão simplificada focada nas projeções de valor. Essa técnica ajuda a melhorar a coerência e a qualidade das imagens geradas, ajustando o processo de remoção condicional de ruído.
 
 ## Entradas

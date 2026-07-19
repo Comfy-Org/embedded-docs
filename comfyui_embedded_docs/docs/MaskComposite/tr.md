@@ -1,3 +1,5 @@
+# MaskeBirleştirme
+
 Bu düğüm, toplama, çıkarma ve mantıksal işlemler gibi çeşitli işlemler aracılığıyla iki maske girdisini birleştirerek yeni, değiştirilmiş bir maske üretme konusunda uzmanlaşmıştır. Karmaşık maskeleme efektleri elde etmek için maske verilerinin manipülasyonunu soyut bir şekilde ele alır ve maske tabanlı görüntü düzenleme ve işleme iş akışlarında önemli bir bileşen olarak hizmet eder.
 
 ## Girişler

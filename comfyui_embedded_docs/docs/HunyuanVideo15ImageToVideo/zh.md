@@ -1,3 +1,5 @@
+# 图像到视频（Hunyuan Video 15 ）
+
 HunyuanVideo15ImageToVideo 节点基于 HunyuanVideo 1.5 模型，为视频生成准备条件嵌入和潜在空间数据。它会为视频序列创建一个初始潜在表示，并可选择性地集成起始图像或 CLIP 视觉输出，以引导生成过程。
 
 ## 输入

@@ -1,3 +1,5 @@
+# PairConditioningSetDefaultAndCombine
+
 O nó **PairConditioningSetDefaultAndCombine** define valores de condicionamento padrão e os combina com dados de condicionamento de entrada. Ele recebe entradas de condicionamento positivo e negativo junto com suas contrapartes padrão, processando-as através do sistema de hooks do ComfyUI para produzir saídas de condicionamento finais que incorporam os valores padrão.
 
 ## Entradas

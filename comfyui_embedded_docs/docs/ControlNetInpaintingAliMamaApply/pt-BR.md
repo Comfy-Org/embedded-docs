@@ -1,3 +1,5 @@
+# Aplicar ControlNetInpaintingAliMama
+
 O nó ControlNetInpaintingAliMamaApply aplica o condicionamento ControlNet para tarefas de inpaint, combinando condicionamentos positivo e negativo com uma imagem de controle e máscara. Ele processa a imagem de entrada e a máscara para criar condicionamentos modificados que guiam o processo de geração, permitindo controle preciso sobre quais áreas da imagem serão inpaintadas. O nó suporta ajuste de intensidade e controles de temporização para ajustar a influência do ControlNet durante diferentes estágios do processo de geração.
 
 ## Entradas

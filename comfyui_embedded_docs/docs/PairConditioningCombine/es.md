@@ -1,3 +1,5 @@
+# CombinarCondPares
+
 El nodo PairConditioningCombine fusiona dos pares de condicionamiento separados (cada uno compuesto por un condicionamiento positivo y uno negativo) en un único par combinado. Toma el condicionamiento positivo y negativo de dos fuentes diferentes y los combina utilizando la lógica interna de ComfyUI, generando un condicionamiento positivo final y un condicionamiento negativo final. Este nodo es experimental y está diseñado para flujos de trabajo avanzados de manipulación de condicionamiento.
 
 ## Entradas

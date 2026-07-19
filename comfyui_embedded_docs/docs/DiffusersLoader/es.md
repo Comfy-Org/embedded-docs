@@ -1,3 +1,5 @@
+# Cargador de Difusores
+
 El nodo DiffusersLoader carga modelos preentrenados desde el formato diffusers. Busca directorios de modelos diffusers válidos que contengan un archivo `model_index.json` y los carga como componentes MODEL, CLIP y VAE para su uso en el pipeline. Este nodo pertenece a la categoría de cargadores obsoletos y proporciona compatibilidad con modelos diffusers de Hugging Face.
 
 ## Entradas

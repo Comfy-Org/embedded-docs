@@ -1,3 +1,5 @@
+# Ruido aleatorio
+
 El nodo RandomNoise genera patrones de ruido aleatorio basados en un valor de semilla. Crea ruido reproducible que puede utilizarse para diversas tareas de procesamiento y generación de imágenes. La misma semilla siempre producirá el mismo patrón de ruido, lo que permite obtener resultados consistentes en múltiples ejecuciones.
 
 ## Entradas

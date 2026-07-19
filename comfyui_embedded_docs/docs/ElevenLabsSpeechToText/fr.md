@@ -1,3 +1,5 @@
+# ElevenLabs Speech to Text
+
 Voici la traduction de la documentation du nœud ElevenLabs Speech to Text :
 
 Le nœud ElevenLabs Speech to Text transcrit des fichiers audio en texte. Il utilise l'API d'ElevenLabs pour convertir la parole en transcription écrite, prenant en charge des fonctionnalités telles que la détection automatique de la langue, l'identification des différents locuteurs et l'étiquetage des sons non vocaux comme la musique ou les rires.

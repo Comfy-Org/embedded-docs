@@ -1,3 +1,5 @@
+# KSampler (Advanced)
+
 The KSamplerAdvanced node is designed to enhance the sampling process by providing advanced configurations and techniques. It aims to offer more sophisticated options for generating samples from a model, improving upon the basic KSampler functionalities.
 
 ## Inputs

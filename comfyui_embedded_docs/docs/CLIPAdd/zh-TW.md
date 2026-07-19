@@ -1,3 +1,5 @@
+# CLIPAdd
+
 ## 概述
 
 CLIPAdd 節點透過合併兩個 CLIP 模型的關鍵修補程式（key patches）來組合它們。它會建立第一個 CLIP 模型的副本，然後從第二個模型中添加大部分關鍵修補程式，排除位置 ID（position IDs）和 logit 縮放參數（logit scale parameters）。這讓您能夠在保留第一個模型結構的同時，融合來自不同 CLIP 模型的特徵。

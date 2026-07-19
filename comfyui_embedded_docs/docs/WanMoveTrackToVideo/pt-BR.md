@@ -1,3 +1,5 @@
+# WanMoveTrackToVideo
+
 O nó WanMoveTrackToVideo prepara dados de condicionamento e espaço latente para geração de vídeo, incorporando informações opcionais de rastreamento de movimento. Ele codifica uma sequência de imagens iniciais em uma representação latente e pode mesclar dados posicionais de rastros de objetos para guiar o movimento no vídeo gerado. O nó gera condicionamentos positivo e negativo modificados, juntamente com um tensor latente vazio pronto para um modelo de vídeo.
 
 ## Entradas

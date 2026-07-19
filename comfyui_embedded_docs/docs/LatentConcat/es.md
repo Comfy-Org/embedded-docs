@@ -1,3 +1,5 @@
+# ConcatenaciónLatente
+
 El nodo LatentConcat combina dos muestras latentes uniéndolas a lo largo de una dimensión seleccionada. Toma dos entradas latentes y las concatena a lo largo del eje x, y o t, con la opción de controlar qué muestra aparece primero. El nodo ajusta automáticamente el tamaño del lote de la segunda entrada para que coincida con la primera antes de realizar la concatenación.
 
 ## Entradas

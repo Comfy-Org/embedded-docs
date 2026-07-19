@@ -1,3 +1,5 @@
+# Rodin 3D Générer - Génération Gen-2
+
 Voici la traduction en français de la documentation du nœud Rodin3D_Gen2, en respectant vos règles :
 
 Le nœud Rodin3D_Gen2 génère des actifs 3D à l'aide de l'API Rodin. Il prend des images en entrée et les convertit en modèles 3D avec différents types de matériaux et nombres de polygones. Le nœud gère automatiquement l'ensemble du processus de génération, y compris la création de tâches, l'interrogation de l'état et le téléchargement des fichiers.

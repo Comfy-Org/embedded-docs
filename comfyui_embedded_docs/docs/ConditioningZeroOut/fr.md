@@ -1,3 +1,5 @@
+# ConditioningZeroOut
+
 Ce nœud met à zéro des éléments spécifiques au sein de la structure de données de conditionnement, neutralisant ainsi leur influence dans les étapes de traitement ultérieures. Il est conçu pour des opérations de conditionnement avancées nécessitant une manipulation directe de la représentation interne du conditionnement.
 
 ## Entrées

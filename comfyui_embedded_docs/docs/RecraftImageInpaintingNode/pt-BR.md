@@ -1,3 +1,5 @@
+# Recraft Preenchimento de Imagem
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftImageInpaintingNode/en.md)
 
 Este nó modifica áreas específicas de uma imagem com base em um prompt de texto e uma máscara. Ele utiliza a API Recraft para editar de forma inteligente apenas as regiões mascaradas, mantendo o restante da imagem inalterado.

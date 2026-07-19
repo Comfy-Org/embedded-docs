@@ -1,3 +1,5 @@
+# Kling Omni Imagem (Pro)
+
 O nó Kling Omni Image (Pro) cria ou edita imagens usando o modelo de IA Kling mais recente. Ele gera imagens com base em uma descrição textual e pode opcionalmente usar imagens de referência para orientar o estilo ou conteúdo. O nó envia uma solicitação para uma API externa, que processa a tarefa e retorna a(s) imagem(ns) final(is).
 
 ## Entradas

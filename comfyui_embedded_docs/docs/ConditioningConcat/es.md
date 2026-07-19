@@ -1,3 +1,5 @@
+# Acondicionamiento (Concatenar)
+
 El nodo ConditioningConcat está diseñado para concatenar vectores de condicionamiento, fusionando específicamente el vector 'conditioning_from' en el vector 'conditioning_to'. Esta operación es fundamental en escenarios donde la información de condicionamiento de dos fuentes debe combinarse en una única representación unificada.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# WanVaceToVideo
+
 El nodo WanVaceToVideo procesa datos de condicionamiento de video para modelos de generación de video. Toma entradas de condicionamiento positivo y negativo junto con datos de control de video y prepara representaciones latentes para la generación de video. El nodo maneja el escalado de video, el enmascaramiento y la codificación VAE para crear la estructura de condicionamiento adecuada para modelos de video.
 
 ## Entradas
@@ -11,7 +13,7 @@ El nodo WanVaceToVideo procesa datos de condicionamiento de video para modelos d
 | `alto` | Alto del video de salida en píxeles (predeterminado: 480, paso: 16) | INT | Sí | 16 a MAX_RESOLUTION |
 | `longitud` | Número de fotogramas en el video (predeterminado: 81, paso: 4) | INT | Sí | 1 a MAX_RESOLUTION |
 | `tamaño_lote` | Número de videos a generar simultáneamente (predeterminado: 1) | INT | Sí | 1 a 4096 |
-| `fuerza` | Intensidad de control para el condicionamiento de video (predeterminado: 1.0, paso: 0.01) | FLOAT | Sí | 0.0 a 1000.0 |
+| `fuerza` | Intensidad de condición para el control VACE (predeterminado: 1.0, paso: 0.01). Esto no es una intensidad de LoRA. Los pesos de LoRA se aplican a través de nodos LoRA separados. | FLOAT | Sí | 0.0 a 1000.0 |
 | `control_video` | Video de entrada opcional para condicionamiento de control | IMAGE | No | - |
 | `máscaras_de_control` | Máscaras opcionales para controlar qué partes del video modificar | MASK | No | - |
 | `imagen_de_referencia` | Imagen de referencia opcional para condicionamiento adicional | IMAGE | No | - |

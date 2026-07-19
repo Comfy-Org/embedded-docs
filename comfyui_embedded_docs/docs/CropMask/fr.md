@@ -1,3 +1,5 @@
+# CropMask
+
 Le nœud CropMask est conçu pour découper une zone spécifiée à partir d'un masque donné. Il permet aux utilisateurs de définir la région d'intérêt en précisant les coordonnées et les dimensions, extrayant ainsi une partie du masque pour un traitement ou une analyse ultérieure.
 
 ## Entrées

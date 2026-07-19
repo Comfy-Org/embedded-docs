@@ -1,3 +1,5 @@
+# Génération vidéo Vidu Q3 à partir d'une image de début/fin
+
 Voici la traduction en français de la documentation du nœud ComfyUI, en respectant vos règles :
 
 Ce nœud génère une vidéo par interpolation entre une image de début et une image de fin fournies, guidée par une invite textuelle. Il utilise le modèle Vidu Q3 pour créer une transition fluide entre les deux images, produisant une vidéo d'une durée et d'une résolution spécifiées.

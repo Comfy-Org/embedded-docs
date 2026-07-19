@@ -1,3 +1,5 @@
+# Wan22FunControlToVideo
+
 Wan22FunControlToVideo 節點使用 Wan 影片模型架構，為影片生成準備條件化（conditioning）與潛在空間（latent）表示。它處理正向與負向條件化輸入，以及可選的參考影像和控制影片，以建立影片合成所需的潛在空間表示。該節點處理空間縮放和時間維度，以生成適合影片模型的條件化資料。
 
 ## 輸入

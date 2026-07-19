@@ -1,3 +1,5 @@
+# CodificarTextoCLIPHunyuanDiT
+
 El nodo `CLIPTextEncodeHunyuanDiT` convierte descripciones de texto en un formato que el modelo HunyuanDiT puede entender. Es un nodo de condicionamiento avanzado diseñado para la arquitectura de doble codificador de texto de HunyuanDiT, procesando dos entradas de texto separadas a través de diferentes tokenizadores.
 
 ## Entradas

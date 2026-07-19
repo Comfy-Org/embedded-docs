@@ -1,3 +1,5 @@
+# Meshy: Doku Modeli
+
 **Meshy: Doku Düğümü**, yapay zeka tarafından oluşturulan dokuları bir 3D modele uygular. Önceki bir Meshy 3D oluşturma veya dönüştürme düğümünden bir görev kimliği alır ve model için yeni dokular oluşturmak üzere bir metin açıklaması veya referans görseli kullanır. Düğüm, dokulu modeli GLB ve FBX dosya formatlarında çıktı olarak verir.
 
 ## Girişler

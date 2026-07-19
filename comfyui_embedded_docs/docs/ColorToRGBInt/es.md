@@ -1,3 +1,5 @@
+# Color a RGB Int
+
 El nodo ColorToRGBInt convierte un color especificado en formato hexadecimal en un único valor entero. Toma una cadena de color como `#FF5733` y calcula el entero RGB correspondiente combinando los componentes rojo, verde y azul.
 
 ## Entradas

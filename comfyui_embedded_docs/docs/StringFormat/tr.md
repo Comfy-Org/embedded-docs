@@ -1,3 +1,5 @@
+# Metni Biçimlendir
+
 ## Genel Bakış
 
 Bu düğüm, Python'un string format yöntemini kullanarak metin biçimlendirir. Yer tutucularla bir metin kalıbı tanımladığınız ve ardından bu yer tutucuları doldurmak için değerler sağladığınız bir şablon gibi çalışır. Python'un tüm format seçeneklerini ve özelliklerini destekler.

@@ -1,3 +1,5 @@
+# Rodin 3D Gen-2.5 - Görüntüden 3D'ye
+
 ## Genel Bakış
 
 Bu düğüm, Rodin Gen-2.5 API'sini kullanarak bir ila beş referans görüntüden 3B model oluşturur. Üretim hızı ve maliyeti dengelemek için Hızlı, Normal veya Aşırı-Yüksek kalite modları arasından seçim yapabilirsiniz.

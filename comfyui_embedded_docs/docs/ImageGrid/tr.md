@@ -1,3 +1,5 @@
+# Görsel Izgarası
+
 Görüntü Izgarası düğümü, birden fazla görüntüyü tek bir düzenli ızgarada veya kolajda birleştirir. Bir görüntü listesi alır ve bunları belirtilen sayıda sütuna yerleştirir, her görüntüyü tanımlanmış bir hücre boyutuna sığacak şekilde yeniden boyutlandırır ve aralarına isteğe bağlı boşluk ekler. Sonuç, tüm giriş görüntülerini bir ızgara düzeninde içeren tek bir yeni görüntüdür.
 
 ## Girişler

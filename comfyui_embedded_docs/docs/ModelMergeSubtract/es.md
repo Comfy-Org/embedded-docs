@@ -1,3 +1,5 @@
+# ModelMergeSubtract
+
 Este nodo está diseñado para operaciones avanzadas de fusión de modelos, específicamente para restar los parámetros de un modelo de otro según un multiplicador especificado. Permite personalizar los comportamientos del modelo ajustando la influencia de los parámetros de un modelo sobre otro, facilitando la creación de nuevos modelos híbridos.
 
 ## Entradas

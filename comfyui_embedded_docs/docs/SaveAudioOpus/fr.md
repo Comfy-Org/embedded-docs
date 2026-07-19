@@ -1,3 +1,5 @@
+# Enregistrer Audio (Opus)
+
 Le nœud SaveAudioOpus enregistre des données audio dans un fichier au format Opus. Il prend une entrée audio et l'exporte sous forme de fichier Opus compressé avec des paramètres de qualité configurables. Le nœud gère automatiquement le nommage des fichiers et enregistre la sortie dans le répertoire de sortie désigné.
 
 ## Entrées

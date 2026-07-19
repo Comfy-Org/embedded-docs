@@ -1,3 +1,5 @@
+# HunyuanRefinerLatent
+
 HunyuanRefinerLatent 节点处理用于精炼操作的 conditioning 和 latent 输入。它对正向和负向 conditioning 应用噪声增强，同时结合潜在图像数据，并生成具有特定维度的新 latent 输出以供进一步处理。
 
 ## 输入

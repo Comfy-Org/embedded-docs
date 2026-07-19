@@ -1,3 +1,5 @@
+# Redimensionar Imagens pela Borda Menor
+
 Este nó redimensiona imagens de forma que a borda mais curta corresponda a um comprimento especificado, preservando a proporção original. Ele calcula novas dimensões com base no comprimento alvo para o lado menor e retorna a imagem redimensionada.
 
 ## Entradas

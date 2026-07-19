@@ -1,3 +1,5 @@
+# WaveSpeed Image Upscale
+
 O nó WaveSpeed Image Upscale utiliza um serviço de IA externo para aumentar a resolução e a qualidade de uma imagem. Ele recebe uma única foto de entrada e a redimensiona para uma resolução alvo mais alta, como 2K, 4K ou 8K, produzindo um resultado mais nítido e detalhado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Batch Images (DEPRECATED)
+
 The `ImageBatch` node is designed for combining two images into a single batch. If the dimensions of the images do not match, it automatically rescales the second image to match the first one's dimensions before combining them.
 
 ## Inputs

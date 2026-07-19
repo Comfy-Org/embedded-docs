@@ -1,3 +1,5 @@
+# InstructPixToPixConditioning
+
 Le nœud InstructPixToPixConditioning prépare les données de conditionnement pour l'édition d'images InstructPix2Pix en combinant des invites textuelles positives et négatives avec des données d'image. Il traite les images d'entrée via un encodeur VAE pour créer des représentations latentes et attache ces latentes aux données de conditionnement positives et négatives. Le nœud gère automatiquement les dimensions de l'image en recadrant aux multiples de 8 pixels pour assurer la compatibilité avec le processus d'encodage VAE.
 
 ## Entrées

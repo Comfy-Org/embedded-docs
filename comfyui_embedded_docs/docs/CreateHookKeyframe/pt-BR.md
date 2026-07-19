@@ -1,3 +1,5 @@
+# Criar Quadro-chave de Gancho
+
 Esta documentação foi gerada por IA. Caso encontre erros ou tenha sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CreateHookKeyframe/en.md)
 
 O nó Criar Keyframe de Hook permite definir pontos específicos em um processo de geração onde o comportamento do hook é alterado. Ele cria keyframes que modificam a intensidade dos hooks em porcentagens específicas do progresso da geração, e esses keyframes podem ser encadeados para criar padrões de agendamento complexos.

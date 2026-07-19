@@ -1,4 +1,4 @@
-# Ampliación Creativa de Estabilidad (Stability Upscale Creative)
+# Stability AI Upscale Creative
 
 Amplía imágenes con alteraciones mínimas a resolución 4K. Este nodo utiliza la tecnología de ampliación creativa de Stability AI para mejorar la resolución de la imagen mientras preserva el contenido original y añade detalles creativos sutiles.
 

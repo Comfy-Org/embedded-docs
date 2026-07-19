@@ -1,4 +1,4 @@
-# Bria Supprimer l'Arrière-plan Vidéo (Transparent)
+# Bria Suppression de l’arrière-plan vidéo (Transparent)
 
 Ce nœud supprime l'arrière-plan d'une vidéo à l'aide du service d'IA Bria et produit les images détourées ainsi qu'un masque alpha. Connectez les deux sorties à un nœud de composition, ou transmettez-les à un nœud Save WEBM pour écrire une vidéo transparente.
 

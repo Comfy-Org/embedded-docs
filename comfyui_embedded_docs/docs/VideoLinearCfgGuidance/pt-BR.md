@@ -1,3 +1,5 @@
+# VideoLinearCFGGuidance
+
 O nó VideoLinearCFGGuidance aplica uma escala de orientação de condicionamento linear a um modelo de vídeo, ajustando a influência dos componentes condicionados e não condicionados ao longo de um intervalo especificado. Isso permite controle dinâmico sobre o processo de geração, possibilitando o ajuste fino da saída do modelo com base no nível desejado de condicionamento.
 
 ## Entradas

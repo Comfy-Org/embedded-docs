@@ -1,3 +1,5 @@
+# Carregador de Codificador de Texto LTXV Áudio
+
 Este nó carrega um codificador de texto especializado para o modelo de áudio LTXV. Ele combina um arquivo de codificador de texto específico com um arquivo de checkpoint para criar um modelo CLIP que pode ser usado para tarefas de condicionamento de texto relacionadas a áudio.
 
 ## Entradas

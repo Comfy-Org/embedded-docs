@@ -1,3 +1,5 @@
+# Stability AI Audio a Audio
+
 Transforma muestras de audio existentes en nuevas composiciones de alta calidad utilizando instrucciones de texto. Este nodo toma un archivo de audio de entrada y lo modifica según tu indicación de texto para crear nuevo contenido de audio.
 
 ## Entradas

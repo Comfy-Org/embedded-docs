@@ -1,3 +1,5 @@
+# Vidu2 Referans ile Videoya Üretim
+
 Vidu2 Referans-Görüntüden-Video Oluşturma düğümü, bir metin istemi ve birden fazla referans görüntüden video oluşturur. Her biri kendi referans görüntü kümesine sahip en fazla yedi özne tanımlayabilir ve bunlara istemde `@subject{subject_id}` kullanarak başvurabilirsiniz. Düğüm, yapılandırılabilir süre, en-boy oranı ve hareket ile video oluşturur.
 
 ## Girişler

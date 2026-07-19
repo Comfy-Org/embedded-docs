@@ -1,3 +1,5 @@
+# Runway Metinden Görsele
+
 Runway Metinden Görsele düğümü, Runway'in Gen 4 modelini kullanarak metin istemlerinden görseller oluşturur. Bir metin açıklaması ve isteğe bağlı olarak görsel oluşturma sürecini yönlendirmek için bir referans görseli sağlayabilirsiniz. Düğüm, API iletişimini yönetir ve oluşturulan görseli döndürür.
 
 ## Girişler

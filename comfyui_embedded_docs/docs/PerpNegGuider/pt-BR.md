@@ -1,3 +1,5 @@
+# PerpNegGuider
+
 O nó PerpNegGuider cria um sistema de orientação para controlar a geração de imagens usando condicionamento negativo perpendicular. Ele recebe entradas de condicionamento positivo, negativo e vazio e aplica um algoritmo de orientação especializado para direcionar o processo de geração. Este nó foi projetado para testes experimentais e oferece controle refinado sobre a intensidade da orientação e o escalonamento negativo.
 
 ## Entradas

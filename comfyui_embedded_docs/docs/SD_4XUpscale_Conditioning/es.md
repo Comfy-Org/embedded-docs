@@ -1,3 +1,5 @@
+# SD_4XUpscale_Conditioning
+
 El nodo `SD_4XUpscale_Conditioning` prepara datos de condicionamiento para escalar imágenes mediante modelos de difusión. Toma imágenes de entrada y datos de condicionamiento, luego aplica escalado y aumento de ruido para crear un condicionamiento modificado que guía el proceso de escalado. El nodo genera tanto condicionamiento positivo como negativo, junto con representaciones latentes para las dimensiones escaladas.
 
 ## Entradas

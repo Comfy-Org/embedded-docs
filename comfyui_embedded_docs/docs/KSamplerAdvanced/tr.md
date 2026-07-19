@@ -1,3 +1,5 @@
+# KSampler (Gelişmiş)
+
 KSamplerAdvanced düğümü, gelişmiş yapılandırmalar ve teknikler sunarak örnekleme sürecini iyileştirmek için tasarlanmıştır. Temel KSampler işlevlerine kıyasla, bir modelden örnekler üretmek için daha sofistike seçenekler sunmayı amaçlar.
 
 ## Girişler

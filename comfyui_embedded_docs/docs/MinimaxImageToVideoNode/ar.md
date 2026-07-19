@@ -1,4 +1,4 @@
-# ترجمة وثيقة عقدة MiniMaxImageToVideoNode
+# MiniMax صورة إلى فيديو
 
 ## نظرة عامة
 

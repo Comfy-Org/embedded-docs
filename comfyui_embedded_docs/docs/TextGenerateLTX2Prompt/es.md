@@ -1,3 +1,5 @@
+# TextGenerateLTX2Prompt
+
 El nodo `TextGenerateLTX2Prompt` es una versión especializada de un nodo de generación de texto. Toma el mensaje de texto del usuario y lo formatea automáticamente con instrucciones de sistema específicas antes de enviarlo a un modelo de lenguaje para su mejora o finalización. El nodo puede operar en dos modos: solo texto o con una referencia de imagen, utilizando diferentes mensajes de sistema para cada caso.
 
 ## Entradas

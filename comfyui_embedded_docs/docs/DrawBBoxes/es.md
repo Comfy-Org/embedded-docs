@@ -1,3 +1,5 @@
+# Dibujar BBoxes
+
 El nodo DrawBBoxes visualiza los resultados de detección de objetos dibujando cuadros delimitadores, etiquetas y puntuaciones de confianza sobre una imagen. Si no se proporciona una imagen de entrada, crea un lienzo en blanco lo suficientemente grande para contener todos los cuadros dibujados. Admite procesamiento por lotes, lo que permite dibujar diferentes conjuntos de detecciones para múltiples imágenes o repetir las mismas detecciones en un lote.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Converter RGB para YUV
+
 O nó ImageRGBToYUV converte imagens coloridas RGB para o espaço de cores YUV. Ele recebe uma imagem RGB como entrada e a separa em três canais distintos: Y (luminância), U (projeção azul) e V (projeção vermelha). Cada canal de saída é retornado como uma imagem em escala de cinza separada, representando o componente YUV correspondente.
 
 ## Entradas

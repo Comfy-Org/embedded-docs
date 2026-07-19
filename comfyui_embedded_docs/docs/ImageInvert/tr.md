@@ -1,3 +1,5 @@
+# Görüntüyü Ters Çevir
+
 `ImageInvert` düğümü, bir görüntünün renklerini tersine çevirmek, yani her pikselin renk değerini renk tekerleğindeki tamamlayıcı rengine dönüştürmek için tasarlanmıştır. Bu işlem, negatif görüntüler oluşturmak veya renk tersine çevirme gerektiren görsel efektler için kullanışlıdır.
 
 ## Girişler

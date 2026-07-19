@@ -1,3 +1,5 @@
+# Kling Omni Video Düzenle (Pro)
+
 Kling Omni Video Düzenleme (Pro) düğümü, mevcut bir videoyu metin açıklamasına göre düzenlemek için bir yapay zeka modeli kullanır. Bir kaynak video ve bir istem sağlarsınız; düğüm, istenen değişikliklerle aynı uzunlukta yeni bir video oluşturur. İsteğe bağlı olarak, stili yönlendirmek için referans görseller kullanabilir ve kaynak videodaki orijinal sesi koruyabilir.
 
 ## Girişler

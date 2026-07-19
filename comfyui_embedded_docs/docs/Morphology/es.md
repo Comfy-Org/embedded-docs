@@ -1,3 +1,5 @@
+# MorfologiaDeImagen
+
 El nodo Morfología aplica diversas operaciones morfológicas a las imágenes, las cuales son operaciones matemáticas utilizadas para procesar y analizar formas en imágenes. Puede realizar operaciones como erosión, dilatación, apertura, cierre y más, utilizando un tamaño de kernel personalizable para controlar la intensidad del efecto.
 
 ## Entradas

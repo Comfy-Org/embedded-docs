@@ -1,3 +1,5 @@
+# Hunyuan3D : Texte vers Modèle (Pro)
+
 Ce nœud utilise l'API Hunyuan3D Pro de Tencent pour générer un modèle 3D à partir d'une description textuelle. Il envoie une requête pour créer une tâche de génération, interroge le résultat et télécharge les fichiers finaux du modèle aux formats GLB et OBJ.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# ElevenLabs Fala para Texto
+
 O nó ElevenLabs Speech to Text transcreve arquivos de áudio em texto. Ele utiliza a API da ElevenLabs para converter palavras faladas em uma transcrição escrita, oferecendo suporte a recursos como detecção automática de idioma, identificação de diferentes falantes e marcação de sons não falados, como música ou risadas.
 
 ## Entradas

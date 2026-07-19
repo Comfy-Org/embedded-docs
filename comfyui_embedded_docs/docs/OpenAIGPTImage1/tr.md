@@ -1,3 +1,5 @@
+# OpenAI GPT Görüntü 2
+
 OpenAI'nin GPT Image uç noktası aracılığıyla eşzamanlı olarak görseller oluşturur. Bu düğüm, metin istemlerinden yeni görseller oluşturabilir veya bir giriş görseli ve isteğe bağlı maske sağlandığında mevcut görselleri düzenleyebilir. gpt-image-1, gpt-image-1.5 ve gpt-image-2 dahil olmak üzere birden çok GPT Image modelini destekler.
 
 ## Girişler

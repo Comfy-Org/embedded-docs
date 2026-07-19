@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 تصاویر را به صورت همزمان از طریق نقطه پایانی DALL·E 2 شرکت OpenAI تولید می‌کند.
 

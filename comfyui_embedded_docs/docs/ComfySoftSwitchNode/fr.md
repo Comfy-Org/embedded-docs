@@ -1,3 +1,5 @@
+# ComfySoftSwitchNode
+
 Ce document a été généré par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ComfySoftSwitchNode/en.md)
 
 Le nœud Soft Switch sélectionne entre deux valeurs d'entrée possibles en fonction d'une condition booléenne. Il produit la valeur de l'entrée `on_true` lorsque le `switch` est vrai, et la valeur de l'entrée `on_false` lorsque le `switch` est faux. Ce nœud est conçu pour être paresseux, ce qui signifie qu'il n'évalue que l'entrée nécessaire en fonction de l'état du commutateur.

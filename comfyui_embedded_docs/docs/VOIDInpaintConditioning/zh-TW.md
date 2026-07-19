@@ -1,3 +1,5 @@
+# VOIDInpaintConditioning
+
 VOIDInpaintConditioning 節點準備 CogVideoX 模型進行修補所需的條件資料。它接收來源影片和預處理的四遮罩，透過 VAE 進行編碼，並將其組合成一個 32 通道的條件訊號，供模型用來填補遮罩區域。
 
 ## 輸入

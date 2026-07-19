@@ -1,3 +1,5 @@
+# Flottant
+
 Le nœud PrimitiveFloat crée une valeur numérique à virgule flottante pouvant être utilisée dans votre flux de travail. Il prend une seule entrée numérique et produit la même valeur en sortie, vous permettant de définir et de transmettre des valeurs flottantes entre différents nœuds de votre pipeline ComfyUI.
 
 ## Entrées

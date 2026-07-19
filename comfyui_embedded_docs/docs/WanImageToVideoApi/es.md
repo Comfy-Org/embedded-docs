@@ -1,3 +1,5 @@
+# Wan Imagen a Video
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias para mejorar, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/WanImageToVideoApi/en.md)
 
 El nodo Wan Image to Video genera un video a partir de una sola imagen de entrada y un prompt de texto. Utiliza la imagen proporcionada como primer fotograma y crea una secuencia de video basada en la descripción, con opciones para resolución, duración, audio y otras configuraciones avanzadas.

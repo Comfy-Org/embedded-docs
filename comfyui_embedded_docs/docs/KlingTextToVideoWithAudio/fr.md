@@ -1,3 +1,5 @@
+# Kling Texte en Vidéo avec Audio
+
 Le nœud Kling Text to Video with Audio génère une courte vidéo à partir d'une description textuelle. Il envoie une requête au service d'IA Kling, qui traite la consigne et renvoie un fichier vidéo. Le nœud peut également générer un fichier audio d'accompagnement pour la vidéo en fonction du texte.
 
 ## Entrées

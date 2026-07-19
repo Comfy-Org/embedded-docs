@@ -1,3 +1,5 @@
+# Kandinsky5ImageToVideo
+
 The Kandinsky5ImageToVideo node prepares conditioning and latent space data for video generation using the Kandinsky model. It creates an empty video latent tensor and can optionally encode a starting image to guide the initial frames of the generated video, modifying the positive and negative conditioning accordingly.
 
 ## Inputs

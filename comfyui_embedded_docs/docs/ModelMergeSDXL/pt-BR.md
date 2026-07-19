@@ -1,3 +1,5 @@
+# ModelMergeSDXL
+
 O nó ModelMergeSDXL permite mesclar dois modelos SDXL, ajustando a influência de cada modelo em diferentes partes da arquitetura. Você pode controlar o quanto cada modelo contribui para embeddings de tempo, embeddings de rótulo e vários blocos dentro da estrutura do modelo. Isso cria um modelo híbrido que combina características de ambos os modelos de entrada.
 
 ## Entradas

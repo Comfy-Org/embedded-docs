@@ -1,3 +1,5 @@
+# Wan 2.7 Video Düzenleme
+
 Wan2VideoEditApi düğümü, metin talimatlarına, referans görüntülere veya stil aktarımına dayalı olarak bir videoyu düzenlemek için Wan 2.7 modelini kullanır. Giriş videosunu işler ve çözünürlük, süre ve en boy oranı gibi belirtilen parametrelere göre yeni bir video oluşturur.
 
 ## Girişler

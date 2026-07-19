@@ -1,3 +1,5 @@
+# AutogrowNamesTestNode
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI :
 
 Ce nœud est un test pour la fonctionnalité d'entrée Autogrow. Il accepte un nombre dynamique d'entrées flottantes, chacune étiquetée avec un nom spécifique, et combine leurs valeurs en une seule chaîne de caractères séparée par des virgules.

@@ -1,3 +1,5 @@
+# EmptyLTXVLatentVideo
+
 O nó EmptyLTXVLatentVideo cria um tensor latente vazio para processamento de vídeo. Ele gera um ponto de partida em branco com dimensões especificadas que pode ser usado como entrada para fluxos de trabalho de geração de vídeo. O nó produz uma representação latente preenchida com zeros com a largura, altura, comprimento e tamanho do lote configurados.
 
 ## Entradas

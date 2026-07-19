@@ -1,3 +1,5 @@
+# PhotoMakerLoader
+
 Voici la traduction en français de la documentation du nœud PhotoMakerLoader :
 
 Le nœud PhotoMakerLoader charge un modèle PhotoMaker à partir des fichiers de modèle disponibles. Il lit le fichier de modèle spécifié et prépare l'encodeur d'identité PhotoMaker pour une utilisation dans des tâches de génération d'images basées sur l'identité. Ce nœud est marqué comme expérimental et est destiné à des fins de test.

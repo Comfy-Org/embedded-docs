@@ -1,4 +1,4 @@
-# Extraer Malla desde Splat
+# Extraer malla de Splat
 
 Este nodo convierte un splat gaussiano 3D en una superficie de malla coloreada. Funciona rasterizando los gaussianos en una cuadrícula de densidad, extrayendo una superficie iso en un nivel de densidad seleccionado, y luego aplicando suavizado opcional y limpieza para producir una malla de triángulos coloreada y limpia.
 

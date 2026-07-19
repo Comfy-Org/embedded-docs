@@ -1,3 +1,5 @@
+# HunyuanVideo15SuperResolution
+
 HunyuanVideo15SuperResolution düğümü, bir video süper çözünürlük işlemi için koşullama (conditioning) verilerini hazırlar. Bir videonun gizli (latent) temsilini ve isteğe bağlı olarak bir başlangıç görüntüsünü alır; bunları gürültü artırımı (noise augmentation) ve CLIP görsel verileriyle birlikte, bir model tarafından daha yüksek çözünürlüklü bir çıktı üretmek için kullanılabilecek bir formata paketler.
 
 ## Girişler

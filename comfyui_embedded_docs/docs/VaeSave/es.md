@@ -1,3 +1,5 @@
+# GuardarVAE
+
 El nodo VAESave está diseñado para guardar modelos VAE junto con sus metadatos, incluyendo indicaciones e información adicional de PNG, en un directorio de salida especificado. Encapsula la funcionalidad de serializar el estado del modelo y la información asociada en un archivo, facilitando la preservación y el intercambio de modelos entrenados.
 
 ## Entradas

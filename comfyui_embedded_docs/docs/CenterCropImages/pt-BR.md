@@ -1,3 +1,5 @@
+# Cortar Imagens ao Centro
+
 O nó Center Crop Images recorta uma imagem a partir de seu centro para uma largura e altura especificadas. Ele calcula a região central da imagem de entrada e extrai uma área retangular com as dimensões definidas. Se o tamanho do recorte solicitado for maior que a imagem, o recorte será limitado aos limites da imagem.
 
 ## Entradas

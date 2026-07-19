@@ -1,3 +1,5 @@
+# UNetZamansalDikkatÇarpımı
+
 UNetTemporalAttentionMultiply düğümü, zamansal bir UNet modelindeki farklı dikkat mekanizması türlerine çarpma faktörleri uygular. Kendi kendine dikkat ve çapraz dikkat katmanlarının ağırlıklarını ayarlayarak modeli değiştirir ve yapısal ile zamansal bileşenler arasında ayrım yapar. Bu, her bir dikkat türünün model çıktısı üzerindeki etkisinin ne kadar olacağının ince ayarlanmasına olanak tanır.
 
 ## Girişler

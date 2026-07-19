@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_14B
+
 Le nœud `ModelMergeCosmosPredict2_14B` fusionne deux modèles d'IA en mélangeant leurs composants internes. Il offre un contrôle précis sur l'influence de chaque partie du second modèle dans le résultat final fusionné, grâce à des valeurs de pondération ajustables pour des couches et composants spécifiques.
 
 ## Entrées

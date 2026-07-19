@@ -1,3 +1,5 @@
+# Kling Omni Video'dan Video'ya (Pro)
+
 Bu düğüm, bir girdi videosu ve isteğe bağlı referans görüntülerine dayanarak yeni bir video oluşturmak için Kling AI modelini kullanır. İstenen içeriği tanımlayan bir metin istemi (prompt) sağlarsınız ve düğüm, referans videoyu buna göre dönüştürür. Ayrıca, çıktının stilini ve içeriğini yönlendirmek için en fazla dört ek referans görüntüsü de dahil edebilir.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Wan22ImageToVideoLatent
+
 Wan22ImageToVideoLatent düğümü, görüntülerden video gizil temsilleri oluşturur. Belirtilen boyutlarda boş bir video gizil alanı oluşturur ve isteğe bağlı olarak başlangıç görüntü dizisini ilk karelere kodlayabilir. Bir başlangıç görüntüsü sağlandığında, görüntüyü gizil alana kodlar ve boyanmış bölgeler için karşılık gelen bir gürültü maskesi oluşturur.
 
 ## Girişler

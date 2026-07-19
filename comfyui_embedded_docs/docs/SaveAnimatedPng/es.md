@@ -1,3 +1,5 @@
+# GuardarPNGAnimado
+
 El nodo SaveAnimatedPNG está diseñado para crear y guardar imágenes PNG animadas a partir de una secuencia de fotogramas. Gestiona el ensamblaje de fotogramas de imagen individuales en una animación cohesiva, permitiendo la personalización de la duración de los fotogramas, el bucle y la inclusión de metadatos.
 
 ## Entradas

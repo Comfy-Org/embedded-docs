@@ -1,3 +1,5 @@
+# GizliİşlemKeskinleştirme
+
 LatentOperationSharpen düğümü, bir Gauss çekirdeği kullanarak gizli temsillere keskinleştirme efekti uygular. Gizli verileri normalleştirerek, özel bir keskinleştirme çekirdeği ile evrişim uygulayarak ve ardından orijinal parlaklığı geri yükleyerek çalışır. Bu, gizli uzay temsilindeki ayrıntıları ve kenarları iyileştirir.
 
 ## Girişler

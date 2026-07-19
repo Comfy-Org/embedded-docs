@@ -1,3 +1,5 @@
+# OperaciónAfiladoLatente
+
 El nodo LatentOperationSharpen aplica un efecto de nitidez a representaciones latentes utilizando un kernel gaussiano. Funciona normalizando los datos latentes, aplicando una convolución con un kernel de nitidez personalizado y luego restaurando la luminancia original. Esto realza los detalles y bordes en la representación del espacio latente.
 
 ## Entradas

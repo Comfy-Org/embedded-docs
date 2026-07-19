@@ -1,3 +1,5 @@
+# ModelSamplingContinuousV
+
 O nó ModelSamplingContinuousV modifica o comportamento de amostragem de um modelo aplicando parâmetros de amostragem de previsão V contínua. Ele cria um clone do modelo de entrada e o configura com configurações personalizadas de faixa sigma para controle avançado de amostragem. Isso permite que os usuários ajustem o processo de amostragem com valores sigma mínimo e máximo específicos.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Cargar modelo de eliminación de fondo
+
 ## Descripción general
 
 Carga un modelo de eliminación de fondo desde un archivo. Este nodo prepara el modelo para su uso en la eliminación de fondos de imágenes.

@@ -1,3 +1,5 @@
+# Escalar Latente
+
 El nodo LatentUpscale está diseñado para escalar representaciones latentes de imágenes. Permite ajustar las dimensiones de la imagen de salida y el método de escalado, ofreciendo flexibilidad para mejorar la resolución de imágenes latentes.
 
 ## Entradas

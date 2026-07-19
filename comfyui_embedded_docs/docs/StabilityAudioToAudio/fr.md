@@ -1,3 +1,5 @@
+# Stability AI Audio vers Audio
+
 Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/StabilityAudioToAudio/fr.md)
 
 Transforme des échantillons audio existants en nouvelles compositions de haute qualité à l'aide d'instructions textuelles. Ce nœud prend un fichier audio en entrée et le modifie en fonction de votre invite textuelle pour créer un nouveau contenu audio.

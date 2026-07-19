@@ -1,3 +1,5 @@
+# EstablecerTipoDeRedDeControlUnion
+
 El nodo SetUnionControlNetType permite especificar el tipo de red de control que se utilizará para el condicionamiento. Toma una red de control existente y establece su tipo de control según su selección, creando una copia modificada de la red de control con la configuración de tipo especificada.
 
 ## Entradas

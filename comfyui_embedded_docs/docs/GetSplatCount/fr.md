@@ -1,4 +1,4 @@
-# Obtenir le Nombre de Splats
+# Obtenir le nombre de Splats
 
 Le nœud Obtenir le Nombre de Splats renvoie le nombre total de splats (points gaussiens) dans un lot de splats, additionné pour tous les éléments du lot. Il transmet les données de splat d'origine sans modification tout en fournissant un compte du nombre de splats individuels qu'il contient.
 

@@ -1,4 +1,4 @@
-# TextEncodeZImageOmni 節點
+# TextEncodeZImageOmni
 
 TextEncodeZImageOmni 節點是一個進階條件編碼節點，可將文字提示與可選的參考影像編碼為適合影像生成模型的條件格式。它能處理最多三張影像，可選擇使用視覺編碼器和/或 VAE 進行編碼以產生參考潛在表示，並使用特定的模板結構將這些視覺參考與文字提示整合。
 

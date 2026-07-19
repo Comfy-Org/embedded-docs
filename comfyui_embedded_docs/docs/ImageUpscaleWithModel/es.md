@@ -1,3 +1,5 @@
+# Ampliar Imagen (usando Modelo)
+
 Este nodo está diseñado para escalar imágenes utilizando un modelo de escalado específico. Gestiona eficientemente el proceso de escalado ajustando la imagen al dispositivo adecuado, optimizando el uso de memoria y aplicando el modelo de escalado en mosaicos para evitar posibles errores de memoria insuficiente.
 
 ## Entradas

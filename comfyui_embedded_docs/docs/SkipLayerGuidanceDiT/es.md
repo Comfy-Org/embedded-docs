@@ -1,3 +1,5 @@
+# Orientación de Capa de Salto DiT
+
 Mejora la guía hacia una estructura detallada utilizando otro conjunto de CFG negativo con capas omitidas. Esta versión genérica de SkipLayerGuidance puede usarse en cualquier modelo DiT y está inspirada en Perturbed Attention Guidance. La implementación experimental original fue creada para SD3.
 
 ## Entradas

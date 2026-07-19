@@ -1,29 +1,27 @@
-# Google Gemini Omni (Vídeo)
+# GeminiVideoOmni
 
-Este nó gera um vídeo com áudio a partir de um prompt de texto usando o modelo Google Gemini Omni Flash. Você pode opcionalmente fornecer imagens ou vídeos de referência para guiar ou editar o resultado.
+Gere um vídeo com áudio a partir de um prompt de texto usando o modelo Google Gemini Omni Flash. Opcionalmente, forneça imagens e/ou vídeos de referência para orientar ou editar o resultado. Descreva a duração desejada (3-10s) e a proporção de aspecto (16:9 ou 9:16) diretamente no prompt.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo de vídeo Gemini usado para gerar o vídeo. | COMBO | Sim | `"Omni Flash"` |
-| `seed` | A semente controla se o nó deve ser reexecutado; os resultados são não determinísticos independentemente da semente. (padrão: 42) | INT | Sim | 0 a 2147483647 |
-
-**Nota:** O parâmetro `model` é um combo dinâmico que se expande para incluir entradas adicionais quando "Omni Flash" é selecionado. Essas entradas adicionais incluem:
-- `prompt` (STRING, obrigatório): O prompt de texto descrevendo o vídeo desejado. Descreva a duração desejada (3-10 segundos) e a proporção de aspecto (16:9 ou 9:16) diretamente no prompt.
-- `images` (IMAGE, opcional): Imagens de referência para guiar a geração do vídeo. Máximo de 14 imagens.
-- `videos` (VIDEO, opcional): Vídeos de referência para guiar a geração do vídeo. Máximo de 3 vídeos, cada um com duração máxima de 10 segundos.
-- `temperature` (FLOAT, opcional, padrão: 1.0): Controla a aleatoriedade na geração.
-- `top_p` (FLOAT, opcional, padrão: 0.95): Controla a amostragem por núcleo.
+| `model` | O modelo de vídeo Gemini usado para gerar o vídeo. | MODEL | Sim | "Omni Flash" |
+| `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 42). | INT | Sim | 0 a 2147483647 |
+| `prompt` | O prompt de texto descrevendo o vídeo a ser gerado. Deve conter pelo menos um caractere que não seja espaço em branco após remover espaços iniciais e finais. | STRING | Sim | Mínimo de 1 caractere após remover espaços em branco |
+| `images` | Imagens de referência opcionais para orientar a geração do vídeo. Máximo de 14 imagens no total. | IMAGE | Não | Múltiplas imagens permitidas (máx. 14) |
+| `videos` | Vídeos de referência opcionais para orientar ou editar a geração do vídeo. Máximo de 3 vídeos, cada um com até 10 segundos. | VIDEO | Não | Múltiplos vídeos permitidos (máx. 3, cada um máx. 10s) |
+| `temperature` | Controla a aleatoriedade na geração (padrão: 1.0). | FLOAT | Não | 0.0 a 2.0 |
+| `top_p` | Parâmetro de amostragem por núcleo (padrão: 0.95). | FLOAT | Não | 0.0 a 1.0 |
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |-------------|-------------|-----------|
-| `video` | O vídeo gerado com áudio. | VIDEO |
-| `text` | A resposta de texto do modelo, se houver. | STRING |
+| `VIDEO` | O vídeo gerado com áudio do modelo Gemini. | VIDEO |
+| `STRING` | Qualquer resposta de texto do modelo, como raciocínio ou explicações. | STRING |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `948eb712ca0ad3b7d3c7b3a9e1576f2c52a3575c07d8d52bb727bd9df717caa6`
+**Source fingerprint (SHA-256):** `046842b7ec736283bba355aaa038b02fcf2416020f5f7aee7b0150d2a05bcbe6`

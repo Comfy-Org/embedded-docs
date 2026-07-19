@@ -1,3 +1,5 @@
+# Charger le jeu de données d'entraînement
+
 Ce nœud charge un ensemble de données d'entraînement encodé préalablement sauvegardé sur le disque. Il recherche et lit tous les fichiers de fragments de données d'un dossier spécifié dans le répertoire de sortie de ComfyUI, puis renvoie les vecteurs latents combinés et les données de conditionnement pour une utilisation dans les workflows d'entraînement.
 
 ## Entrées

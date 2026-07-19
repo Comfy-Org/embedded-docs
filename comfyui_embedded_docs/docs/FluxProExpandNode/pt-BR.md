@@ -1,3 +1,5 @@
+# Flux.1 Expandir Imagem
+
 Expande a imagem com base no prompt. Este nó amplia uma imagem adicionando pixels aos lados superior, inferior, esquerdo e direito, enquanto gera novo conteúdo que corresponde à descrição textual fornecida.
 
 ## Entradas

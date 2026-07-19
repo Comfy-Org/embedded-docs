@@ -1,3 +1,5 @@
+# Tripo : Texte vers Modèle
+
 Génère des modèles 3D de manière synchrone à partir d’une description textuelle via l’API Tripo. Ce nœud prend une description textuelle et crée un modèle 3D avec des propriétés optionnelles de texture et de matériau.
 
 ## Entrées

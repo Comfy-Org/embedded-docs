@@ -1,3 +1,5 @@
+# Effets vidéo Kling
+
 Le nœud Effet Vidéo sur Image Unique Kling crée des vidéos avec différents effets spéciaux à partir d'une seule image de référence. Il applique divers effets visuels et scènes pour transformer des images statiques en contenu vidéo dynamique. Le nœud prend en charge différentes scènes d'effets, options de modèle et durées vidéo pour obtenir le résultat visuel souhaité.
 
 ## Entrées

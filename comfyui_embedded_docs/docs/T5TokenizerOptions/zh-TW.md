@@ -1,3 +1,5 @@
+# T5 分詞器選項
+
 T5TokenizerOptions 節點允許您為各種 T5 模型類型配置分詞器設定。它為多個 T5 模型變體（包括 t5xxl、pile_t5xl、t5base、mt5xl 和 umt5xxl）設定最小填充和最小長度參數。此節點接收一個 CLIP 輸入，並返回一個已套用指定分詞器選項的修改後 CLIP。
 
 ## 輸入

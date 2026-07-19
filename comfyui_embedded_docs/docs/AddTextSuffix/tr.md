@@ -1,3 +1,5 @@
+# Metin Son Eki Ekle
+
 Bu düğüm, girdi metin dizesinin sonuna belirtilen bir sonek ekler. Orijinal metni ve soneki girdi olarak alır, ardından birleştirilmiş sonucu döndürür.
 
 ## Girdiler

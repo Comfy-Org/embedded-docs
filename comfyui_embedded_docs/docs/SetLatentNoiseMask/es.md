@@ -1,3 +1,5 @@
+# Establecer Máscara de Ruido Latente
+
 Este nodo está diseñado para aplicar una máscara de ruido a un conjunto de muestras latentes. Modifica las muestras de entrada integrando una máscara específica, alterando así sus características de ruido.
 
 ## Entradas

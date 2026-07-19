@@ -1,3 +1,5 @@
+# SamplerSASolver
+
 O nó SamplerSASolver implementa um algoritmo de amostragem personalizado para modelos de difusão. Ele utiliza uma abordagem preditor-corretor com configurações de ordem ajustáveis e parâmetros de equação diferencial estocástica (SDE) para gerar amostras a partir do modelo de entrada.
 
 ## Entradas

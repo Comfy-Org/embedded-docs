@@ -1,3 +1,5 @@
+# Recraft V4 Texto a Vector
+
 El nodo Recraft V4 Texto a Vector genera ilustraciones en formato de Gráficos Vectoriales Escalables (SVG) a partir de una descripción textual. Se conecta a una API externa para utilizar el modelo Recraft V4 o Recraft V4 Pro en la generación de imágenes. El nodo produce una o más imágenes SVG según tu indicación.
 
 ## Entradas

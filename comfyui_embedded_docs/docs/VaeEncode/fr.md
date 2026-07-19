@@ -1,3 +1,5 @@
+# VAE Encode
+
 Ce nœud est conçu pour encoder des images dans une représentation d'espace latent à l'aide d'un modèle VAE spécifié. Il abstrait la complexité du processus d'encodage, offrant un moyen simple de transformer des images en leurs représentations latentes.
 
 ## Entrées

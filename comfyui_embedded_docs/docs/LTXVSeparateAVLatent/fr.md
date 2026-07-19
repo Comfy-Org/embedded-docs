@@ -1,3 +1,5 @@
+# LTXVSeparateAVLatent
+
 Le nœud LTXVSeparateAVLatent prend une représentation latente audiovisuelle combinée et la divise en deux parties distinctes : l'une pour la vidéo et l'autre pour l'audio. Il sépare les échantillons et, le cas échéant, les masques de bruit du latent d'entrée, créant ainsi deux nouveaux objets latents.
 
 ## Entrées

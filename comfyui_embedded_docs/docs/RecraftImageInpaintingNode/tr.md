@@ -1,3 +1,5 @@
+# Recraft Görüntü İç Boyama
+
 Bu düğüm, bir metin istemi ve maske kullanarak görüntünün belirli alanlarını değiştirir. Recraft API'sini kullanarak yalnızca maskelenmiş bölgeleri akıllıca düzenlerken, görüntünün geri kalanını değiştirmeden bırakır.
 
 ## Girişler

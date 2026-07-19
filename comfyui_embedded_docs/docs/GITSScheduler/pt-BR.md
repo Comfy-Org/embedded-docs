@@ -1,3 +1,5 @@
+# GITSScheduler
+
 O nó GITSScheduler gera sigmas de agendamento de ruído para o método de amostragem GITS (Etapas Temporais Iterativas Generativas). Ele calcula os valores sigma com base em um parâmetro de coeficiente e no número de etapas, com um fator de remoção de ruído opcional que pode reduzir o total de etapas utilizadas. O nó utiliza níveis de ruído predefinidos e interpolação para criar o agendamento sigma final.
 
 ## Entradas

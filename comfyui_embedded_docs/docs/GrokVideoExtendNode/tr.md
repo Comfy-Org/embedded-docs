@@ -1,3 +1,5 @@
+# Grok Video Uzatma
+
 Bu, mevcut bir videonun kesintisiz devamını oluşturmak için bir yapay zeka modeli kullanan bir düğümdür. Kısa bir video ve ardından ne olması gerektiğini açıklayan bir metin istemi sağlarsınız; düğüm, orijinalin devamı niteliğinde yeni bir video klibi oluşturur.
 
 ## Girişler

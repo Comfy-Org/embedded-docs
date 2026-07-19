@@ -1,3 +1,5 @@
+# Transferencia de Estilo de Imagen Magnific
+
 Este nodo aplica el estilo visual de una imagen de referencia a tu imagen de entrada. Utiliza un servicio de IA externo para procesar las imágenes, permitiéndote controlar la intensidad de la transferencia de estilo y la preservación de la estructura de la imagen original.
 
 ## Entradas

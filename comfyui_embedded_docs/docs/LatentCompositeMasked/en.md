@@ -1,3 +1,5 @@
+# Latent Composite Masked
+
 The LatentCompositeMasked node is designed for blending two latent representations together at specified coordinates, optionally using a mask for more controlled compositing. This node enables the creation of complex latent images by overlaying parts of one image onto another, with the ability to resize the source image for a perfect fit.
 
 ## Inputs

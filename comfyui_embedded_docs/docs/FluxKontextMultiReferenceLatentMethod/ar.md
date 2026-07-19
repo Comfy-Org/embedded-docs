@@ -1,4 +1,4 @@
-# ترجمة وثيقة FluxKontextMultiReferenceLatentMethod
+# طريقة FluxKontextMultiReferenceLatent
 
 عقدة FluxKontextMultiReferenceLatentMethod تقوم بتعديل بيانات التكييف عن طريق تعيين طريقة محددة لللاتينات المرجعية. تقوم هذه العقدة بإلحاق الطريقة المختارة بمدخل التكييف، مما يؤثر على كيفية معالجة اللاتينات المرجعية في خطوات التوليد اللاحقة. تم وضع علامة تجريبية على هذه العقدة وهي جزء من نظام تكييف Flux.
 

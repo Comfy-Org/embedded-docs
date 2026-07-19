@@ -1,3 +1,5 @@
+# StableCascade_SuperResolutionControlnet
+
 Le nœud **StableCascade_SuperResolutionControlnet** prépare les entrées pour le traitement de super-résolution Stable Cascade. Il prend une image d'entrée et l'encode à l'aide d'un VAE pour créer une entrée de controlnet, tout en générant des représentations latentes de substitution pour l'étape C et l'étape B du pipeline Stable Cascade.
 
 ## Entrées

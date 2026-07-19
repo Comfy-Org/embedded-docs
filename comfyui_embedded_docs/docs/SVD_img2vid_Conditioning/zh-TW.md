@@ -1,4 +1,4 @@
-# SVD_img2vid_Conditioning 節點
+# SVD_img2vid_Conditioning
 
 SVD_img2vid_Conditioning 節點使用 Stable Video Diffusion 為影片生成準備條件化資料。它接收初始影像，透過 CLIP 視覺編碼器和 VAE 編碼器進行處理，建立正向和負向條件化配對，以及用於影片生成的空白潛在空間。此節點設定必要的參數，用於控制生成影片中的動態、幀率和增強程度。
 

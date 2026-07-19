@@ -1,3 +1,5 @@
+# Perp-Neg (OBSOLÈTE par PerpNegGuider)
+
 Voici la traduction en français de la documentation du nœud PerpNeg :
 
 Le nœud PerpNeg applique un guidage négatif perpendiculaire au processus d'échantillonnage d'un modèle. Ce nœud modifie la fonction de configuration du modèle pour ajuster les prédictions de bruit à l'aide d'un conditionnement négatif et de facteurs d'échelle. Il a été déprécié et remplacé par le nœud PerpNegGuider pour des fonctionnalités améliorées.

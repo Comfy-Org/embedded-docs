@@ -1,4 +1,4 @@
-# VAEDecodeTripoSplat
+# TripoSplat Kod Çözme
 
 TripoSplat gizli temsilini 3 boyutlu Gauss saçılımına dönüştürür. Bu düğüm, TripoSplat modelinden alınan örneklenmiş gizli veriyi alır ve üretilen Gauss sayısını değiştirerek yoğunluğu ayarlanabilen bir dizi 3 boyutlu Gauss olarak yeniden yapılandırır.
 

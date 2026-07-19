@@ -1,4 +1,4 @@
-# SDPoseDrawKeypoints 節點
+# SDPoseDrawKeypoints
 
 SDPoseDrawKeypoints 節點接收姿態估計資料（關鍵點），並將其繪製為空白畫布上的視覺骨架。您可以選擇性地繪製姿態的不同部位，例如身體、手部、臉部和腳部，並可自訂線條寬度和點狀大小。產生的影像可用於視覺化，或作為需要姿態影像的其他節點的輸入。
 

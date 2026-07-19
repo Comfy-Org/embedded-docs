@@ -1,3 +1,5 @@
+# Blend Images
+
 The `ImageBlend` node is designed to blend two images together based on a specified blending mode and blend factor. It supports various blending modes such as normal, multiply, screen, overlay, soft light, and difference, allowing for versatile image manipulation and compositing techniques. This node is essential for creating composite images by adjusting the visual interaction between two image layers.
 
 ## Inputs

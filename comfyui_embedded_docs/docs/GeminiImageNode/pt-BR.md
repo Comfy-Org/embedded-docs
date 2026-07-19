@@ -1,3 +1,5 @@
+# Nano Banana (Google Gemini Image)
+
 O nó GeminiImage gera respostas de texto e imagem dos modelos de IA Gemini do Google. Ele permite que você forneça entradas multimodais, incluindo prompts de texto, imagens e arquivos para criar saídas coerentes de texto e imagem. O nó gerencia toda a comunicação com a API e a análise das respostas com os modelos Gemini mais recentes.
 
 ## Entradas

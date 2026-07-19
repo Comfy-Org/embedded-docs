@@ -1,3 +1,5 @@
+# Eliminar espacios en blanco
+
 Este nodo elimina cualquier espacio adicional, tabulación o salto de línea al inicio y al final de una cadena de texto. Toma una entrada de texto y devuelve una versión limpia con los espacios en blanco iniciales y finales recortados.
 
 ## Entradas

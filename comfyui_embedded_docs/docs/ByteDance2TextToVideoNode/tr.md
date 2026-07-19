@@ -1,3 +1,5 @@
+# ByteDance Seedance 2.0 Metinden Videoya
+
 Bu düğüm, ByteDance'in Seedance 2.0 API'sini kullanarak bir metin açıklamasından video oluşturur. İsteğinizi seçilen modele gönderir, videonun işlenmesini bekler ve nihai sonucu döndürür.
 
 ## Girişler

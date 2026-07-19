@@ -1,3 +1,5 @@
+# MuestreoDeModeloSD3
+
 El nodo ModelSamplingSD3 aplica parámetros de muestreo de Stable Diffusion 3 a un modelo. Modifica el comportamiento de muestreo del modelo ajustando el parámetro de desplazamiento, que controla las características de la distribución de muestreo. El nodo crea una copia modificada del modelo de entrada con la configuración de muestreo especificada aplicada.
 
 ## Entradas

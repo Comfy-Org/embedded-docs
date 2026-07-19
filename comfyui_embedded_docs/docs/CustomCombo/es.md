@@ -1,3 +1,5 @@
+# Combinación personalizada
+
 El nodo Combo Personalizado te permite crear un menú desplegable personalizado con tu propia lista de opciones de texto. Es un nodo centrado en el frontend que proporciona una representación en el backend para garantizar la compatibilidad dentro de tu flujo de trabajo. Cuando seleccionas una opción del menú desplegable, el nodo genera ese texto como una cadena y su posición de índice.
 
 ## Entradas

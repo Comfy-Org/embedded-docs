@@ -1,3 +1,5 @@
+# Hunyuan3D: Parte 3D
+
 Esta documentación fue generada por IA. Si encuentras algún error o tienes sugerencias de mejora, ¡no dudes en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Tencent3DPartNode/en.md)
 
 Este nodo utiliza la API de Tencent Hunyuan3D para analizar automáticamente un modelo 3D y generar o identificar sus componentes según su estructura. Procesa el modelo y devuelve un nuevo archivo FBX.

@@ -1,3 +1,5 @@
+# Kling 3.0 Primeiro-Último-Frame para Vídeo
+
 Este nó utiliza o modelo Kling 3.0 para gerar um vídeo. Ele cria o vídeo com base em um prompt de texto, uma duração especificada e duas imagens fornecidas: um quadro inicial e um quadro final. O nó também pode gerar áudio de acompanhamento para o vídeo.
 
 ## Entradas

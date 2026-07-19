@@ -1,3 +1,5 @@
+# WanMoveTracksFromCoords
+
 O nó WanMoveTracksFromCoords cria trilhas de movimento a partir de uma string formatada em JSON contendo coordenadas. Ele converte os dados de coordenadas em um formato de tensor que pode ser utilizado por outros nós de processamento de vídeo e, opcionalmente, pode aplicar uma máscara para controlar a visibilidade das trilhas ao longo do tempo.
 
 ## Entradas

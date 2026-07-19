@@ -1,3 +1,5 @@
+# Flux.1 Görüntüyü Genişlet
+
 İşte ComfyUI **FluxProExpandNode** düğüm belgesinin Türkçe çevirisi:
 
 ## Genel Bakış

@@ -1,3 +1,5 @@
+# SVD_img2vid条件
+
 SVD_img2vid_Conditioning 节点用于准备基于 Stable Video Diffusion 的视频生成条件数据。它接收初始图像，通过 CLIP 视觉编码器和 VAE 编码器进行处理，生成正负条件对，以及用于视频生成的空潜在空间。该节点设置了控制生成视频中运动量、帧率和增强级别的必要参数。
 
 ## 输入

@@ -1,3 +1,5 @@
+# Créer un crochet LoRA (MO)
+
 Ce nœud crée un hook LoRA (Adaptation de Bas Rang) qui s'applique uniquement au composant modèle, laissant le composant CLIP totalement inchangé. Il charge un fichier LoRA et l'applique avec une force spécifiée au modèle tout en réglant la force CLIP à zéro. Le nœud peut être chaîné avec des hooks précédents pour construire des pipelines de modification complexes.
 
 ## Entrées

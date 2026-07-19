@@ -1,4 +1,4 @@
-# Visão Geral
+# ByteDance Seed
 
 Gere respostas de texto usando os modelos Seed 2.0 da ByteDance. Forneça um prompt de texto e, opcionalmente, inclua imagens ou vídeos para contexto multimodal.
 

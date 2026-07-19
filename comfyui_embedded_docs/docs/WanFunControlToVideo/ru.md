@@ -1,3 +1,5 @@
+# WanFunControlToVideo
+
 Вот перевод документации на русский язык:
 
 Этот узел был добавлен для поддержки модели Alibaba Wan Fun Control для генерации видео и был добавлен после [этого коммита](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82).

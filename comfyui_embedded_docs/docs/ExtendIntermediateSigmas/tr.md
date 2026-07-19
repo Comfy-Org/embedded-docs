@@ -1,3 +1,5 @@
+# AraSigmalarıGenişlet
+
 ExtendIntermediateSigmas düğümü, mevcut bir sigma değerleri dizisini alır ve bunların arasına ek ara sigma değerleri ekler. Kaç adet ekstra adım ekleneceğini, enterpolasyon için aralık yöntemini ve sigma dizisinde uzatmanın gerçekleşeceği yeri kontrol etmek için isteğe bağlı başlangıç ve bitiş sigma sınırlarını belirlemenize olanak tanır.
 
 ## Girişler

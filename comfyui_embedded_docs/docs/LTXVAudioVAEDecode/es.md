@@ -1,3 +1,5 @@
+# Decodificar LTXV Audio VAE
+
 El nodo **LTXV Audio VAE Decode** convierte una representación latente de audio nuevamente en una forma de onda de audio. Utiliza un modelo especializado de Audio VAE para realizar este proceso de decodificación, generando una salida de audio con una frecuencia de muestreo específica.
 
 ## Entradas

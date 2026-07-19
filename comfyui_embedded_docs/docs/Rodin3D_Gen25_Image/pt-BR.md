@@ -1,3 +1,5 @@
+# Rodin 3D Gen-2.5 - Imagem para 3D
+
 Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Rodin3D_Gen25_Image/en.md)
 
 ## Visão Geral

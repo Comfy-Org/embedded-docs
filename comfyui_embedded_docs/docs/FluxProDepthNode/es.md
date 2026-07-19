@@ -1,3 +1,5 @@
+# FluxProDepthNode
+
 Este nodo genera imágenes utilizando una imagen de control de profundidad como guía. Toma una imagen de control y un prompt de texto, luego crea una nueva imagen que sigue tanto la información de profundidad de la imagen de control como la descripción del prompt. El nodo se conecta a una API externa para realizar el proceso de generación de imágenes.
 
 ## Entradas

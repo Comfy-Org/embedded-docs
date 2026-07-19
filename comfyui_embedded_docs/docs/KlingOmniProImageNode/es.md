@@ -1,3 +1,5 @@
+# Kling Omni Imagen (Pro)
+
 El nodo Kling Omni Image (Pro) crea o edita imágenes utilizando el modelo más reciente de Kling AI. Genera imágenes basándose en una descripción textual y puede usar opcionalmente imágenes de referencia para guiar el estilo o el contenido. El nodo envía una solicitud a una API externa, que procesa la tarea y devuelve la(s) imagen(es) final(es).
 
 ## Entradas

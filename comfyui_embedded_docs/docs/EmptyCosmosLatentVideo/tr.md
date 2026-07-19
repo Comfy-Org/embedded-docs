@@ -1,3 +1,5 @@
+# BoşCosmosGizliVideo
+
 EmptyCosmosLatentVideo düğümü, belirtilen boyutlarda boş bir latent video tensörü oluşturur. Sıfırlarla doldurulmuş bir latent temsil üretir; bu temsil, yapılandırılabilir genişlik, yükseklik, uzunluk ve toplu iş boyutu parametreleriyle video oluşturma iş akışları için başlangıç noktası olarak kullanılabilir.
 
 ## Girişler

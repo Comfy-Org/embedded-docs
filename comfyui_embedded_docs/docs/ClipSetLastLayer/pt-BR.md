@@ -1,3 +1,5 @@
+# CLIP Definir Última Camada
+
 `CLIP Set Last Layer` é um nó central no ComfyUI para controlar a profundidade de processamento dos modelos CLIP. Ele permite que os usuários controlem precisamente onde o codificador de texto CLIP para de processar, afetando tanto a profundidade da compreensão textual quanto o estilo das imagens geradas.
 
 Imagine o modelo CLIP como um cérebro inteligente de 24 camadas:

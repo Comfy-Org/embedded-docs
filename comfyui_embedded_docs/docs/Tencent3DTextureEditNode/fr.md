@@ -1,3 +1,5 @@
+# Hunyuan3D : Édition de texture 3D
+
 Ce nœud utilise l'API Tencent Hunyuan3D pour modifier les textures d'un modèle 3D. Vous fournissez un modèle 3D et une description textuelle des modifications souhaitées, et le nœud renvoie une nouvelle version du modèle dont les textures ont été redessinées selon votre instruction.
 
 ## Entrées

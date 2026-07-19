@@ -1,3 +1,5 @@
+# Extension WanSoundImageToVideo
+
 Le nœud WanSoundImageToVideoExtend étend un latent vidéo existant en générant des trames supplémentaires, guidé optionnellement par un fichier audio, une image de référence et une vidéo de contrôle. Il prend un latent vidéo de départ et produit une séquence vidéo plus longue, en utilisant les conditionnements et les indices audio fournis pour influencer le nouveau contenu.
 
 ## Entrées

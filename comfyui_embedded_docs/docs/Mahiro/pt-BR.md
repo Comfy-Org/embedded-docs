@@ -1,3 +1,5 @@
+# Mahiro CFG
+
 O nó Mahiro modifica a função de orientação para focar mais na direção do prompt positivo, em vez da diferença entre prompts positivos e negativos. Ele cria um modelo corrigido que aplica uma abordagem personalizada de escala de orientação usando similaridade de cosseno entre as saídas de eliminação de ruído condicionais e incondicionais normalizadas. Este nó experimental ajuda a direcionar a geração mais fortemente para a direção pretendida do prompt positivo.
 
 ## Entradas

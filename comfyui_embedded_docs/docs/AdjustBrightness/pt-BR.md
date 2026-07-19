@@ -1,3 +1,5 @@
+# Ajustar Brilho
+
 O nó Ajustar Brilho modifica o brilho de uma imagem de entrada. Ele funciona multiplicando o valor de cada pixel por um fator especificado e, em seguida, limitando os valores resultantes para permanecerem dentro de um intervalo válido. Um fator de 1,0 mantém a imagem inalterada, valores abaixo de 1,0 a escurecem e valores acima de 1,0 a clareiam.
 
 ## Entradas

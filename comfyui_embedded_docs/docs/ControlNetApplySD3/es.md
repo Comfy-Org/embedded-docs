@@ -1,3 +1,5 @@
+# Aplicar Controlnet con VAE
+
 Este nodo aplica la guía de ControlNet al condicionamiento de Stable Diffusion 3. Toma entradas de condicionamiento positivo y negativo junto con un modelo ControlNet y una imagen, luego aplica la guía de control con parámetros ajustables de intensidad y temporización para influir en el proceso de generación.
 
 **Nota:** Este nodo ha sido marcado como obsoleto y podría eliminarse en versiones futuras.

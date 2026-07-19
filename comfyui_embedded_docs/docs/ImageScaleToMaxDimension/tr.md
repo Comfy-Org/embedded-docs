@@ -1,3 +1,5 @@
+# Görüntüyü Maksimum Boyuta Ölçekle
+
 ImageScaleToMaxDimension düğümü, görüntüleri orijinal en-boy oranını koruyarak belirtilen maksimum boyuta sığacak şekilde yeniden boyutlandırır. Görüntünün dikey mi yoksa yatay mı olduğunu hesaplar, ardından büyük boyutu hedef boyuta ölçeklerken küçük boyutu orantılı olarak ayarlar. Düğüm, farklı kalite ve performans gereksinimleri için birden fazla büyütme yöntemini destekler.
 
 ## Girişler

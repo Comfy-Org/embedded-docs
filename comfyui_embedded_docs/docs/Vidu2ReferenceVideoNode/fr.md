@@ -1,3 +1,5 @@
+# Génération de vidéo à partir de références Vidu2
+
 Voici la traduction en français de la documentation du nœud Vidu2 Reference-to-Video Generation :
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Vidu2ReferenceVideoNode/en.md)

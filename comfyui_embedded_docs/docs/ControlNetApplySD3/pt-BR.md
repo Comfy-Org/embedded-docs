@@ -1,3 +1,5 @@
+# Aplicar Controlnet com VAE
+
 Esta documentação foi gerada por IA. Caso encontre erros ou tenha sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ControlNetApplySD3/en.md)
 
 Este nó aplica a orientação do ControlNet ao condicionamento do Stable Diffusion 3. Ele recebe entradas de condicionamento positivo e negativo, juntamente com um modelo ControlNet e uma imagem, e então aplica a orientação de controle com parâmetros ajustáveis de intensidade e temporização para influenciar o processo de geração.

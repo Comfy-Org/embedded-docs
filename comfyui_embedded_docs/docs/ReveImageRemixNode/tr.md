@@ -1,3 +1,5 @@
+# Reve Görsel Remix
+
 Reve Image Remix düğümü, Reve API'sini kullanarak yeni bir görüntü oluşturur. Bir veya daha fazla referans görüntüyü bir metin istemiyle birleştirerek, sağlanan açıklamaya dayalı yeni, yeniden karıştırılmış bir görüntü oluşturur.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# SplitSigmas
+
 Le nœud SplitSigmas est conçu pour diviser une séquence de valeurs sigma en deux parties en fonction d’un pas spécifié. Cette fonctionnalité est essentielle pour les opérations nécessitant un traitement différencié des parties initiale et suivante de la séquence sigma, permettant une manipulation plus flexible et ciblée de ces valeurs.
 
 ## Entrées

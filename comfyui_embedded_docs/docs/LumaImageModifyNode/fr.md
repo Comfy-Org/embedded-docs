@@ -1,3 +1,5 @@
+# Luma Image vers Image
+
 Voici la traduction de la documentation du nœud ComfyUI `LumaImageModifyNode` :
 
 Modifie les images de manière synchrone en fonction d’un prompt textuel et du rapport hauteur/largeur de l’image d’origine. Ce nœud prend une image en entrée et la transforme selon le prompt fourni, en utilisant un poids d’image configurable pour contrôler le degré de modification de l’image d’origine.

@@ -1,3 +1,5 @@
+# VAESauvegarder
+
 Voici la traduction en français de la documentation du nœud VAESave :
 
 Le nœud VAESave est conçu pour sauvegarder les modèles VAE ainsi que leurs métadonnées, y compris les prompts et les informations PNG supplémentaires, dans un répertoire de sortie spécifié. Il encapsule la fonctionnalité de sérialisation de l'état du modèle et des informations associées dans un fichier, facilitant ainsi la préservation et le partage des modèles entraînés.

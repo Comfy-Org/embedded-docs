@@ -1,3 +1,5 @@
+# Stablezero123ConditioningBatched
+
 此節點專為處理 StableZero123 模型的批次條件化資訊而設計。其重點在於同時高效處理多組條件化資料，針對批次處理至關重要的場景最佳化工作流程。
 
 ## 輸入

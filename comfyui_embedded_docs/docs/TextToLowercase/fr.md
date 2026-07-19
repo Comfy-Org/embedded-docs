@@ -1,3 +1,5 @@
+# Texte en minuscules
+
 Le nœud Texte en minuscules prend une chaîne de texte en entrée et convertit tous ses caractères en minuscules. Il s'agit d'un utilitaire simple pour normaliser la casse du texte.
 
 ## Entrées

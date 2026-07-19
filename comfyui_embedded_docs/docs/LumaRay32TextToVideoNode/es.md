@@ -1,0 +1,28 @@
+# LumaRay32TextToVideoNode
+
+Este nodo genera un video a partir de un mensaje de texto utilizando el modelo Ray 3.2 de Luma. Envía tu mensaje y configuración de video a la API de Luma y devuelve el video generado junto con un ID de generación.
+
+## Entradas
+
+| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Mensaje de texto para la generación del video. | STRING | Sí | 1-6000 caracteres |
+| `aspect_ratio` | La relación de aspecto del video generado. | STRING | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
+| `resolution` | La resolución de salida del video (predeterminado: "720p"). | STRING | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
+| `duration` | La duración del video generado. | STRING | Sí | `"5s"`<br>`"10s"` |
+| `loop` | Hace que el video se reproduzca en bucle sin interrupciones. Solo disponible con duración de 5s. | BOOLEAN | No | True/False (predeterminado: False) |
+| `seed` | Semilla para generación reproducible. | INT | No | 0 a 2147483647 |
+
+**Nota:** El parámetro `loop` solo se puede habilitar cuando `duration` está configurado en "5s". Si seleccionas una duración de "10s" y habilitas el bucle, el nodo devolverá un error.
+
+## Salidas
+
+| Nombre de Salida | Descripción | Tipo de Dato |
+|-------------|-------------|-----------|
+| `generation_id` | El archivo de video generado. | VIDEO |
+| `generation_id` | El identificador único para la solicitud de generación de video. | STRING |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32TextToVideoNode/es.md)
+
+---
+**Source fingerprint (SHA-256):** `04358a872530e5a2622bf0f148a694f2c707ce8535586d8f860bdf9911e1fa6a`

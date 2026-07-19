@@ -1,3 +1,5 @@
+# Luma Kavramları
+
 Luma Metinden Videoya ve Luma Görüntüden Videoya düğümleriyle kullanılmak üzere bir veya daha fazla Kamera Konseptini tutar. Bu düğüm, en fazla dört kamera konsepti seçmenize ve isteğe bağlı olarak bunları mevcut konsept zincirleriyle birleştirmenize olanak tanır.
 
 ## Girişler

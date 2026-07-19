@@ -1,3 +1,5 @@
+# Rodin 3D Generar - Generar Suavizado
+
 El nodo **Rodin 3D Smooth** genera activos 3D utilizando la API de Rodin, procesando imágenes de entrada y convirtiéndolas en modelos 3D suaves. Toma múltiples imágenes como entrada y produce un archivo de modelo 3D descargable. El nodo maneja todo el proceso de generación, incluyendo la creación de tareas, la verificación periódica del estado y la descarga automática de archivos.
 
 ## Entradas

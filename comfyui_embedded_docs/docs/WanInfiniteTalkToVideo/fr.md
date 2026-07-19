@@ -1,3 +1,5 @@
+# WanInfiniteTalkToVideo
+
 Le nœud WanInfiniteTalkToVideo génère des séquences vidéo à partir d’une entrée audio. Il utilise un modèle de diffusion vidéo, conditionné par des caractéristiques audio extraites d’un ou deux locuteurs, pour produire une représentation latente d’une vidéo de tête parlante. Le nœud peut générer une nouvelle séquence ou en étendre une existante en utilisant les images précédentes pour le contexte de mouvement.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# PlanificateurAlignezVosÉtapes
+
 Le nœud AlignYourStepsScheduler génère des valeurs sigma pour le processus de débruitage en fonction de différents types de modèles. Il calcule les niveaux de bruit appropriés pour chaque étape du processus d'échantillonnage et ajuste le nombre total d'étapes en fonction du paramètre de débruitage. Cela permet d'aligner les étapes d'échantillonnage sur les exigences spécifiques des différents modèles de diffusion.
 
 ## Entrées

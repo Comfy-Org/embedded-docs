@@ -1,3 +1,5 @@
+# Cond Set Props Combine
+
 The ConditioningSetPropertiesAndCombine node modifies conditioning data by applying properties from a new conditioning input to an existing conditioning input. It combines the two conditioning sets while controlling the strength of the new conditioning and specifying how the conditioning area should be applied.
 
 ## Inputs

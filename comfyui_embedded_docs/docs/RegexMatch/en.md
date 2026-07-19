@@ -1,3 +1,5 @@
+# Match Text
+
 The RegexMatch node checks if a text string contains a match for a given regular expression pattern. It searches the input string and returns a simple yes/no result indicating whether the pattern was found anywhere in the text. You can adjust how the search works by enabling options like case-insensitive matching or multiline mode.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ModelMergeSD1
+
 The ModelMergeSD1 node allows you to blend two Stable Diffusion 1.x models together by adjusting the influence of different model components. It provides individual control over time embedding, label embedding, and all input, middle, and output blocks, enabling fine-tuned model merging for specific use cases.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# CLIPMergeAdd
+
 O nó CLIPMergeAdd combina dois modelos CLIP adicionando patches do segundo modelo ao primeiro modelo. Ele cria uma cópia do primeiro modelo CLIP e incorpora seletivamente patches-chave do segundo modelo, excluindo IDs de posição e parâmetros de escala logit. Isso permite mesclar componentes de modelos CLIP preservando a estrutura do modelo base.
 
 ## Entradas

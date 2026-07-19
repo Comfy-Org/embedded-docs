@@ -1,3 +1,5 @@
+# Google Gemini
+
 Ce nœud permet aux utilisateurs d'interagir avec les modèles d'IA Gemini de Google pour générer des réponses textuelles. Vous pouvez fournir plusieurs types d'entrées, notamment du texte, des images, de l'audio, de la vidéo et des fichiers, comme contexte pour que le modèle génère des réponses plus pertinentes et significatives. Le nœud gère automatiquement toute la communication avec l'API et l'analyse des réponses.
 
 ## Entrées

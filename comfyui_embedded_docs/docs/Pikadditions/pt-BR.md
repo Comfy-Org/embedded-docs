@@ -1,3 +1,5 @@
+# Pikadditions
+
 O nó Pikadditions permite adicionar qualquer objeto ou imagem ao seu vídeo. Você envia um vídeo e especifica o que deseja adicionar para criar um resultado perfeitamente integrado. Este nó utiliza a API Pika para inserir imagens em vídeos com uma integração de aparência natural.
 
 ## Entradas

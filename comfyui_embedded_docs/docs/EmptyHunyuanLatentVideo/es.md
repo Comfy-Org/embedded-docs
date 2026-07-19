@@ -1,3 +1,5 @@
+# EmptyHunyuanLatentVideo
+
 El nodo `EmptyHunyuanLatentVideo` es similar al nodo `EmptyLatentImage`. Puede considerarse como un lienzo en blanco para la generación de video, donde el ancho, la altura y la longitud definen las propiedades del lienzo, y el tamaño del lote determina la cantidad de lienzos a crear. Este nodo crea lienzos vacíos listos para tareas posteriores de generación de video.
 
 ## Entradas

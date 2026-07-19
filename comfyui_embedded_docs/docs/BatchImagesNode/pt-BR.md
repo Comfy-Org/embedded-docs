@@ -1,3 +1,5 @@
+# Imagens em Lote
+
 O nó **Agrupar Imagens** combina várias imagens individuais em um único lote. Ele aceita um número variável de entradas de imagem e as agrupa em um tensor de imagem único, permitindo que sejam processadas juntas em nós subsequentes.
 
 ## Entradas

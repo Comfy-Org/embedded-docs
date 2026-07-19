@@ -1,4 +1,4 @@
-# Vista Previa de Nube de Puntos
+# Vista previa de nube de puntos
 
 El nodo Vista Previa de Nube de Puntos le permite visualizar un archivo de nube de puntos 3D dentro de la interfaz de ComfyUI. Guarda la nube de puntos en un archivo temporal y la muestra en una ventana de vista previa 3D, transmitiendo los datos del modelo y la configuración del viewport para su procesamiento posterior.
 

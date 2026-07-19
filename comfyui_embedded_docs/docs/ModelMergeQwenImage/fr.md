@@ -1,3 +1,5 @@
+# FusionModèleQwenImage
+
 Le nœud ModelMergeQwenImage fusionne deux modèles d'IA en combinant leurs composants avec des poids ajustables. Il vous permet de mélanger des parties spécifiques des modèles d'images Qwen, notamment les blocs de transformeurs, les embeddings positionnels et les composants de traitement de texte. Vous pouvez contrôler le degré d'influence de chaque modèle sur les différentes sections du résultat fusionné.
 
 ## Entrées

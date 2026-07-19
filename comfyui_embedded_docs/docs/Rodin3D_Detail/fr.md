@@ -1,3 +1,5 @@
+# Rodin 3D Générer - Générer Détails
+
 Le nœud Rodin 3D Detail génère des actifs 3D détaillés à l'aide de l'API Rodin. Il prend des images en entrée et les traite via le service Rodin pour créer des modèles 3D de haute qualité avec une géométrie et des matériaux détaillés. Le nœud gère l'ensemble du flux de travail, de la création de la tâche au téléchargement du fichier de modèle 3D final.
 
 ## Entrées

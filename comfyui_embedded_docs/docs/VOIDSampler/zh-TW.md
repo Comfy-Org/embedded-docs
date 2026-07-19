@@ -1,3 +1,5 @@
+# VOIDSampler
+
 ## 概述
 
 VOIDSampler 節點提供一種專門為 VOID 修復模型設計的 DDIM 取樣方法。它實作了與 VOID 模型訓練期間相同的去噪過程，但未套用標準 KSampler 所使用的噪聲縮放。此節點旨在與 SamplerCustom 或 SamplerCustomAdvanced 節點搭配使用，並應與 RandomNoise 或 VOIDWarpedNoiseSource 配對。

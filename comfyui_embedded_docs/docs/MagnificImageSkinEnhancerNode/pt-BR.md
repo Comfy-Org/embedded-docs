@@ -1,3 +1,5 @@
+# Magnific Realce de Pele em Imagem
+
 O nó **Magnific Image Skin Enhancer** aplica processamento especializado de IA a imagens de retrato para melhorar a aparência da pele. Ele oferece três modos distintos para diferentes objetivos de aprimoramento: criativo para efeitos artísticos, fiel para preservar a aparência original e flexível para melhorias direcionadas, como iluminação ou realismo. O nó envia a imagem para uma API externa para processamento e retorna o resultado aprimorado.
 
 ## Entradas

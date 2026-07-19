@@ -1,3 +1,5 @@
+# Assemblage d'images
+
 Ce nœud vous permet d'assembler deux images dans une direction spécifiée (haut, bas, gauche, droite), avec prise en charge de l'adaptation des tailles et d'un espacement entre les images.
 
 ## Entrées

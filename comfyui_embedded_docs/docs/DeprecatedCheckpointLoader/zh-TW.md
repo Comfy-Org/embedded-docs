@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 CheckpointLoader 節點專為進階載入操作而設計，具體用於載入模型檢查點及其配置。它協助檢索初始化與執行生成模型所需的模型組件，包括來自指定目錄的配置與檢查點。
 
 ## 輸入

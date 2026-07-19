@@ -1,3 +1,5 @@
+# Repetir lote latente
+
 El nodo RepeatLatentBatch está diseñado para replicar un lote determinado de representaciones latentes un número específico de veces, incluyendo potencialmente datos adicionales como máscaras de ruido e índices de lote. Esta funcionalidad es crucial para operaciones que requieren múltiples instancias de los mismos datos latentes, como el aumento de datos o tareas generativas específicas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Selector de Voz de ElevenLabs
+
 El nodo **ElevenLabs Voice Selector** permite elegir una voz específica de una lista predefinida de voces de texto a voz de ElevenLabs. Toma un nombre de voz como entrada y genera el identificador de voz correspondiente necesario para la generación de audio. Este nodo simplifica el proceso de seleccionar una voz compatible para usar con otros nodos de audio de ElevenLabs.
 
 ## Entradas

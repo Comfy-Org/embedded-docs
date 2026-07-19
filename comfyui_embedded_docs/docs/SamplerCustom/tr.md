@@ -1,3 +1,5 @@
+# ÖzelÖrnekleyici
+
 SamplerCustom düğümü, çeşitli uygulamalar için esnek ve özelleştirilebilir bir örnekleme mekanizması sağlamak üzere tasarlanmıştır. Kullanıcıların kendi özel ihtiyaçlarına göre farklı örnekleme stratejileri seçmesine ve yapılandırmasına olanak tanıyarak örnekleme sürecinin uyarlanabilirliğini ve verimliliğini artırır.
 
 ## Girişler

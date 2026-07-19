@@ -1,3 +1,5 @@
+# WanTrackToVideo
+
 O nó WanTrackToVideo converte dados de rastreamento de movimento em sequências de vídeo, processando pontos de rastreamento e gerando quadros de vídeo correspondentes. Ele recebe coordenadas de rastreamento como entrada e produz condicionamentos de vídeo e representações latentes que podem ser usadas para geração de vídeo. Quando nenhum rastreamento é fornecido, ele recorre à conversão padrão de imagem para vídeo.
 
 ## Entradas

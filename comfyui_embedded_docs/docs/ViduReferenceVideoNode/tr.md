@@ -1,3 +1,5 @@
+# Vidu Referanstan Video Oluşturma
+
 Vidu Referans Video Düğümü, birden fazla referans görseli ve bir metin istemi kullanarak videolar oluşturur. Sağlanan görsellere ve açıklamaya dayanarak tutarlı video içeriği üretmek için yapay zeka modellerini kullanır. Düğüm, süre, en boy oranı, çözünürlük ve hareket kontrolü dahil olmak üzere çeşitli video ayarlarını destekler.
 
 ## Girişler

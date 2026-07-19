@@ -1,3 +1,5 @@
+# LoraLoaderModelOnly
+
 Este nó detectará modelos localizados na pasta `ComfyUI/models/loras`, e também lerá modelos de caminhos adicionais configurados no arquivo extra_model_paths.yaml. Às vezes, pode ser necessário **atualizar a interface do ComfyUI** para que ele leia os arquivos de modelo da pasta correspondente.
 
 Este nó é especializado em carregar um modelo LoRA sem exigir um modelo CLIP, focando em aprimorar ou modificar um modelo fornecido com base nos parâmetros LoRA. Ele permite o ajuste dinâmico da intensidade do modelo por meio dos parâmetros LoRA, facilitando o controle refinado sobre o comportamento do modelo.

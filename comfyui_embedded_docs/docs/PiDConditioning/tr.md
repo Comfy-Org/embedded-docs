@@ -1,3 +1,5 @@
+# PiD Koşullandırma
+
 ## Genel Bakış
 
 Bir gizli görüntüyü ve bozulma sigma değerini CONDITIONING verisine ekler. Bu, PiD (Pixel-in-Detail) kod çözme veya ölçeklendirme için kullanılır ve işleme öncesinde gizli görüntünün ne kadar bozulacağını kontrol etmenizi sağlar.

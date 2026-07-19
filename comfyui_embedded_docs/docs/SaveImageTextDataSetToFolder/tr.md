@@ -1,3 +1,5 @@
+# Görüntü ve Metin Veri Setini Klasöre Kaydet
+
 Görselleri ve Metin Veri Kümesini Klasöre Kaydet düğümü, bir görsel listesini ve bunlara karşılık gelen metin açıklamalarını ComfyUI çıktı dizini içindeki belirtilen bir klasöre kaydeder. Her görsel PNG dosyası olarak kaydedilirken, aynı temel ada sahip eşleşen bir metin dosyası oluşturularak açıklaması saklanır. Bu özellik, oluşturulan görseller ve açıklamalarından oluşan düzenli veri kümeleri oluşturmak için kullanışlıdır.
 
 ## Girişler

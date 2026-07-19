@@ -1,3 +1,5 @@
+# unCLIP 檢查點載入器
+
 此節點會偵測位於 `ComfyUI/models/checkpoints` 資料夾中的模型，並會讀取在 extra_model_paths.yaml 檔案中設定的其他路徑中的模型。有時，您可能需要**重新整理 ComfyUI 介面**，以便讓它從對應的資料夾中讀取模型檔案。
 
 unCLIPCheckpointLoader 節點專為載入針對 unCLIP 模型量身打造的檢查點而設計。它促進了從指定檢查點中擷取並初始化模型、CLIP 視覺模組以及 VAE 的過程，簡化了後續操作或分析的設定流程。

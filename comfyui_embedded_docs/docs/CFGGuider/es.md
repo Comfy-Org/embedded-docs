@@ -1,3 +1,5 @@
+# GuíaCFG
+
 El nodo CFGGuider crea un sistema de guía para controlar el proceso de muestreo en la generación de imágenes. Toma un modelo junto con entradas de condicionamiento positivo y negativo, luego aplica una escala de guía libre de clasificador para dirigir la generación hacia el contenido deseado mientras evita elementos no deseados. Este nodo produce un objeto guía que puede ser utilizado por nodos de muestreo para controlar la dirección de generación de imágenes.
 
 ## Entradas

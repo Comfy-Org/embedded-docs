@@ -1,4 +1,4 @@
-# SDPose關鍵點提取器
+# SDPoseKeypointExtractor
 
 SDPose關鍵點提取器節點使用SDPose模型從輸入圖像中檢測人體姿勢關鍵點。它可以處理完整圖像或由邊界框定義的特定區域，並以OpenPose格式輸出檢測到的關鍵點，其中包括每個人的座標以及每個關鍵點的置信度分數。
 

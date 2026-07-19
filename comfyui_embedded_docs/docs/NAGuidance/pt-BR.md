@@ -1,3 +1,5 @@
+# Orientação de Atenção Normalizada
+
 O nó NAGuidance aplica Orientação de Atenção Normalizada a um modelo. Esta técnica permite o uso de prompts negativos com modelos destilados ou schnell, modificando o mecanismo de atenção do modelo durante o processo de amostragem para direcionar a geração para longe de conceitos indesejados.
 
 ## Entradas

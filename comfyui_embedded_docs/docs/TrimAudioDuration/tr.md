@@ -1,3 +1,5 @@
+# Ses Süresini Kırp
+
 TrimAudioDuration düğümü, bir ses dosyasından belirli bir zaman dilimini kesmenizi sağlar. Kırpmanın ne zaman başlayacağını ve ortaya çıkan ses klibinin ne kadar süreceğini belirleyebilirsiniz. Düğüm, zaman değerlerini ses karesi konumlarına dönüştürerek ve ses dalga formunun ilgili kısmını çıkararak çalışır.
 
 ## Girişler

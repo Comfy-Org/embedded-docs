@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 TextEncodeAceStepAudio1.5 ノードは、AceStepAudio 1.5 モデルで使用するためのテキストおよびオーディオ関連のメタデータを準備します。このノードは、説明タグ、歌詞、音楽パラメータを受け取り、CLIP モデルを使用してオーディオ生成に適した条件付け形式に変換します。
 
 ## 入力

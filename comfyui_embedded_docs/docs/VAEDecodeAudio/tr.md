@@ -1,3 +1,5 @@
+# VAESesKodunuÇöz
+
 VAEDecodeAudio düğümü, bir Varyasyonel Otomatik Kodlayıcı (VAE) kullanarak gizli uzay temsillerini ses dalga formlarına dönüştürür. Kodlanmış ses örneklerini alır ve bunları VAE aracılığıyla işleyerek orijinal sesi yeniden oluşturur; tutarlı çıkış seviyeleri sağlamak için normalizasyon uygular. Ortaya çıkan ses, standart 44100 Hz örnekleme hızıyla döndürülür.
 
 ## Girişler

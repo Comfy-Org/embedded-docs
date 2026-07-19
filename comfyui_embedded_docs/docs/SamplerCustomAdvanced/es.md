@@ -1,3 +1,5 @@
+# SamplerCustomAdvanced
+
 El nodo SamplerCustomAdvanced realiza un muestreo avanzado en el espacio latente utilizando configuraciones personalizadas de ruido, guía y muestreo. Procesa una imagen latente mediante un proceso de muestreo guiado con generación de ruido personalizable y programaciones sigma, produciendo tanto la salida muestreada final como una versión sin ruido cuando está disponible.
 
 ## Entradas

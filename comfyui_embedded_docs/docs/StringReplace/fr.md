@@ -1,3 +1,5 @@
+# Remplacer
+
 Le nœud StringReplace effectue des opérations de remplacement de texte sur des chaînes d'entrée. Il recherche une sous-chaîne spécifiée dans le texte d'entrée et remplace toutes ses occurrences par une autre sous-chaîne. Ce nœud renvoie la chaîne modifiée avec tous les remplacements appliqués.
 
 ## Entrées

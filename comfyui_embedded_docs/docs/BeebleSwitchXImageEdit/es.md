@@ -1,4 +1,4 @@
-# BeebleSwitchXImageEdit
+# Beeble SwitchX Edición de Imagen
 
 ## Resumen
 

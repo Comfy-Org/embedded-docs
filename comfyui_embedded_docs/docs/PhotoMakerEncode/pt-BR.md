@@ -1,3 +1,5 @@
+# PhotoMakerEncode
+
 O nó PhotoMakerEncode processa imagens e texto para gerar dados de condicionamento para geração de imagens por IA. Ele recebe uma imagem de referência e um prompt de texto, criando embeddings que podem ser usados para guiar a geração de imagens com base nas características visuais da imagem de referência. O nó procura especificamente pelo token "photomaker" no texto para determinar onde aplicar o condicionamento baseado em imagem.
 
 ## Entradas

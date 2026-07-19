@@ -1,3 +1,5 @@
+# CLIP Birleştirme Çıkar
+
 CLIPMergeSubtract düğümü, bir CLIP modelinin ağırlıklarını diğerinden çıkararak model birleştirme işlemi gerçekleştirir. İlk modeli klonlayarak ve ardından ikinci modelden anahtar yamaları çıkararak, çıkarma gücünü kontrol etmek için ayarlanabilir bir çarpanla yeni bir CLIP modeli oluşturur. Bu, temel modelden belirli özellikleri kaldırarak ince ayarlı model harmanlamasına olanak tanır.
 
 ## Girişler

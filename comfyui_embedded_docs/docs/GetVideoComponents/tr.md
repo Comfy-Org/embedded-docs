@@ -1,3 +1,5 @@
+# Video Bileşenlerini Al
+
 Video Bileşenlerini Al düğümü, bir video dosyasındaki tüm ana öğeleri çıkarır. Videoyu ayrı karelere ayırır, ses parçasını çıkarır ve videonun kare hızı bilgisini sağlar. Bu sayede her bir bileşenle bağımsız olarak çalışarak ileri işleme veya analiz yapabilirsiniz.
 
 ## Girişler

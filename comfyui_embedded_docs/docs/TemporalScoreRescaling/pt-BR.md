@@ -1,3 +1,5 @@
+# TSR - Redimensionamento Temporal de Pontuação
+
 Este nó aplica o Reajuste Temporal de Score (TSR) a um modelo de difusão. Ele modifica o comportamento de amostragem do modelo ao reajustar o ruído ou score previsto durante o processo de remoção de ruído, o que pode direcionar a diversidade da saída gerada. Isso é implementado como uma função pós-CFG (Orientação Livre de Classificador).
 
 ## Entradas

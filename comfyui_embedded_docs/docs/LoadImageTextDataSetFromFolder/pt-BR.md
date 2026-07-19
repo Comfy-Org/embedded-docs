@@ -1,3 +1,5 @@
+# Carregar Conjunto de Dados de Imagem e Texto da Pasta
+
 Este nó carrega um conjunto de dados de imagens e suas respectivas legendas de texto a partir de uma pasta especificada. Ele busca arquivos de imagem e automaticamente procura por arquivos `.txt` correspondentes com o mesmo nome base para usar como legendas. O nó também suporta uma estrutura de pastas específica onde subpastas podem ser nomeadas com um prefixo numérico (como `10_nome_da_pasta`) para indicar que as imagens dentro delas devem ser repetidas várias vezes na saída.
 
 ## Entradas

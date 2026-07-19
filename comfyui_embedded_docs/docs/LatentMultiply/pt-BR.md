@@ -1,3 +1,5 @@
+# Multiplicar Latent
+
 O nó LatentMultiply foi projetado para escalar a representação latente de amostras por um multiplicador especificado. Esta operação permite ajustar a intensidade ou magnitude das características dentro do espaço latente, possibilitando o refinamento do conteúdo gerado ou a exploração de variações em uma determinada direção latente.
 
 ## Entradas

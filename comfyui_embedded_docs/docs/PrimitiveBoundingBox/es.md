@@ -1,3 +1,5 @@
+# Caja Delimitadora
+
 El nodo PrimitiveBoundingBox crea un área rectangular simple definida por su posición y tamaño. Toma coordenadas X e Y para la esquina superior izquierda, junto con valores de ancho y alto, y genera una estructura de datos de cuadro delimitador que puede ser utilizada por otros nodos en un flujo de trabajo.
 
 ## Entradas

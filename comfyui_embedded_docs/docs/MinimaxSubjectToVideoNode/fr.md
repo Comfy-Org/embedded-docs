@@ -1,3 +1,5 @@
+# MinimaxSubjectToVideoNode
+
 Génère une vidéo de manière synchrone à partir d’une image de sujet et d’une invite textuelle en utilisant l’API de MiniMax. Ce nœud prend une image d’un sujet et une description pour créer une vidéo qui anime ou met en scène ce sujet conformément à l’invite.
 
 ## Entrées

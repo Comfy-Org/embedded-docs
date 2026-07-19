@@ -1,4 +1,4 @@
-# OpenAIDalle2
+# OpenAI DALL·E 2
 
 OpenAIのDALL·E 2エンドポイントを介して画像を同期的に生成します。
 

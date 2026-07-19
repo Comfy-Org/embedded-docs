@@ -1,3 +1,5 @@
+# BozulmuşDikkatRehberliği
+
 PerturbedAttentionGuidance düğümü, bir difüzyon modeline bozulmuş dikkat yönlendirmesi uygulayarak üretim kalitesini artırır. Örnekleme sırasında modelin öz-dikkat mekanizmasını, değer projeksiyonlarına odaklanan basitleştirilmiş bir sürümle değiştirir. Bu teknik, koşullu gürültü giderme sürecini ayarlayarak üretilen görüntülerin tutarlılığını ve kalitesini iyileştirmeye yardımcı olur.
 
 ## Girişler

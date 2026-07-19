@@ -1,3 +1,5 @@
+# TextEncodeZImageOmni
+
 The TextEncodeZImageOmni node is an advanced conditioning node that encodes a text prompt along with optional reference images into a conditioning format suitable for image generation models. It can process up to three images, optionally encoding them with a vision encoder and/or a VAE to produce reference latents, and integrates these visual references with the text prompt using a specific template structure.
 
 ## Inputs

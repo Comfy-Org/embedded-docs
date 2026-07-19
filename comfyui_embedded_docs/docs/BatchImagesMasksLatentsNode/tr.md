@@ -1,3 +1,5 @@
+# BatchImagesMasksLatentsNode
+
 Topluluk İmaj/Maske/Latent düğümü, aynı türdeki birden çok girdiyi tek bir toplu işlemde birleştirir. Girdilerin imaj, maske veya latent temsil olup olmadığını otomatik olarak algılar ve uygun toplu işleme yöntemini kullanır. Bu, toplu girdi kabul eden düğümler tarafından işlenmek üzere birden çok öğeyi hazırlamak için kullanışlıdır.
 
 ## Girdiler

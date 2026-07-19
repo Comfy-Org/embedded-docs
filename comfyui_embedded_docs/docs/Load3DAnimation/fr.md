@@ -1,3 +1,5 @@
+# Load3DAnimation
+
 Voici la traduction en français de la documentation du nœud Load3DAnimation :
 
 Le nœud Load3DAnimation est un nœud central pour le chargement et le traitement de fichiers de modèles 3D. Lors du chargement du nœud, il récupère automatiquement les ressources 3D disponibles depuis `ComfyUI/input/3d/`. Vous pouvez également téléverser des fichiers 3D pris en charge pour les prévisualiser à l'aide de la fonction de téléversement.

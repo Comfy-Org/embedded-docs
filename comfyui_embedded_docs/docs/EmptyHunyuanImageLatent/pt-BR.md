@@ -1,3 +1,5 @@
+# EmptyHunyuanImageLatent
+
 O nó **EmptyHunyuanImageLatent** cria um tensor latente vazio com dimensões específicas para uso com modelos de geração de imagem Hunyuan. Ele gera um ponto de partida em branco que pode ser processado por nós subsequentes no fluxo de trabalho. O nó permite especificar a largura, altura e tamanho do lote do espaço latente.
 
 ## Entradas

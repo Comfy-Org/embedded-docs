@@ -1,3 +1,5 @@
+# Dessiner les BBoxes
+
 Voici la traduction en français de la documentation du nœud DrawBBoxes :
 
 Le nœud DrawBBoxes visualise les résultats de détection d'objets en dessinant des boîtes englobantes, des étiquettes et des scores de confiance sur une image. Si aucune image d'entrée n'est fournie, il crée un canevas vierge suffisamment grand pour contenir toutes les boîtes dessinées. Il prend en charge le traitement par lots, vous permettant de dessiner différents ensembles de détections pour plusieurs images ou de répéter les mêmes détections sur un lot.

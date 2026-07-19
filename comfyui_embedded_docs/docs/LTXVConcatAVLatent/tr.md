@@ -1,3 +1,5 @@
+# LTXVConcatAVLatent
+
 LTXVConcatAVLatent düğümü, bir video gizli temsilini ve bir ses gizli temsilini tek bir birleştirilmiş gizli çıktıda birleştirir. Her iki girdiden gelen `samples` tensörlerini ve varsa `noise_mask` tensörlerini birleştirerek bunları bir video oluşturma hattında daha ileri işleme hazırlar.
 
 ## Girdiler

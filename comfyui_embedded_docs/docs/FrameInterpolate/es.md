@@ -1,3 +1,5 @@
+# Interpolar fotogramas
+
 ## Descripción general
 
 El nodo de Interpolación de Fotogramas crea nuevos fotogramas entre los existentes en una secuencia de imágenes, aumentando efectivamente la frecuencia de fotogramas. Utiliza un modelo de IA para predecir cómo deberían verse los fotogramas intermedios, lo que puede emplearse para crear efectos de cámara lenta suaves o para aumentar la fluidez de un video.

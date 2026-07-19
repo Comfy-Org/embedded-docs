@@ -1,3 +1,5 @@
+# Wan Texte vers Image
+
 Voici la traduction en français de la documentation du nœud WanTextToImageApi, en respectant vos règles :
 
 Le nœud Wan Texte vers Image génère des images à partir de descriptions textuelles. Il utilise des modèles d'IA pour créer un contenu visuel à partir d'invites écrites, prenant en charge la saisie de texte en anglais et en chinois. Le nœud offre divers contrôles pour ajuster la taille, la qualité et les préférences de style de l'image de sortie.

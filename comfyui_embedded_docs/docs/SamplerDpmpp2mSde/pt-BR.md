@@ -1,3 +1,5 @@
+# SamplerDpmpp2mSde
+
 Este nó foi projetado para gerar um amostrador para o modelo DPMPP_2M_SDE, permitindo a criação de amostras com base em tipos de solucionador especificados, níveis de ruído e preferências de dispositivo computacional. Ele abstrai as complexidades da configuração do amostrador, fornecendo uma interface simplificada para gerar amostras com configurações personalizadas.
 
 ## Entradas

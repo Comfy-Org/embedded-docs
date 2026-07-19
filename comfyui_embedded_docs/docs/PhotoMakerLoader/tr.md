@@ -1,3 +1,5 @@
+# PhotoMakerYükleyici
+
 PhotoMakerLoader düğümü, mevcut model dosyalarından bir PhotoMaker modeli yükler. Belirtilen model dosyasını okur ve kimlik tabanlı görüntü oluşturma görevlerinde kullanılmak üzere PhotoMaker kimlik kodlayıcısını hazırlar. Bu düğüm deneysel olarak işaretlenmiştir ve test amaçlı kullanım içindir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Génération vidéo Vidu à partir d'image
+
 Voici la traduction de la documentation du nœud ViduImageToVideoNode :
 
 Le nœud Vidu Image To Video Generation crée une courte vidéo à partir d'une image de départ et d'une description textuelle optionnelle. Il utilise un modèle d'IA pour générer un contenu vidéo qui prolonge l'image fournie, et retourne la vidéo résultante.

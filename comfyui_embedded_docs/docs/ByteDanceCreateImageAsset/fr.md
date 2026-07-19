@@ -1,3 +1,5 @@
+# ByteDance Créer un Actif Image
+
 Ce nœud crée un actif d'image personnel pour le service Seedance 2.0 de ByteDance. Il télécharge une image d'entrée et l'enregistre dans un groupe d'actifs spécifié. Si aucun ID de groupe n'est fourni, il lancera un processus de vérification d'identité réelle dans votre navigateur pour créer un nouveau groupe avant d'ajouter l'actif.
 
 ## Entrées

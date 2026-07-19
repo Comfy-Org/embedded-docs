@@ -1,3 +1,5 @@
+# WanDancerEncodeAudio
+
 Voici la traduction en français de la documentation technique du nœud ComfyUI :
 
 ## Aperçu

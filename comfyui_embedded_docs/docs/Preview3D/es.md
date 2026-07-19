@@ -1,3 +1,5 @@
+# Vista previa 3D
+
 El nodo Preview3D se utiliza principalmente para previsualizar salidas de modelos 3D. Este nodo recibe dos entradas: una es la `camera_info` del nodo Load3D, y la otra es la ruta al archivo del modelo 3D. La ruta del archivo del modelo debe estar ubicada en la carpeta `ComfyUI/output`.
 
 **Formatos Soportados**

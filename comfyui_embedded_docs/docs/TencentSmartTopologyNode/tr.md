@@ -1,3 +1,5 @@
+# Hunyuan3D: Akıllı Topoloji
+
 Bu düğüm, bir 3B model üzerinde akıllı yeniden topoloji gerçekleştirerek optimize edilmiş çokgen sayısına sahip yeni, daha temiz bir ağ otomatik olarak oluşturur. Modeli işlemek için bir Tencent Hunyuan 3D API'sine bağlanır ve 200MB'a kadar GLB ve OBJ dosya formatlarını destekler. Düğüm, işlenmiş modeli bir OBJ dosyası olarak döndürür.
 
 ## Girişler

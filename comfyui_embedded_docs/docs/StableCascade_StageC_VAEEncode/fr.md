@@ -1,3 +1,5 @@
+# StableCascade_StageC_VAEEncode
+
 Le nœud `StableCascade_StageC_VAEEncode` traite les images via un encodeur VAE pour générer des représentations latentes destinées aux modèles Stable Cascade. Il prend une image en entrée et la compresse à l'aide du modèle VAE spécifié, puis produit deux représentations latentes : une pour l'étape C et un espace réservé pour l'étape B. Le paramètre de compression contrôle le facteur de réduction de l'image avant l'encodage.
 
 ## Entrées

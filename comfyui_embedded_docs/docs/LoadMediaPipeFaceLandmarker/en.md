@@ -1,3 +1,5 @@
+# Load Face Detection Model (MediaPipe)
+
 ## Overview
 
 This node loads a MediaPipe Face Landmarker v2 model, which can detect faces and facial landmarks (like eyes, nose, and mouth) in images. It contains two detection variants (short-range and full-range) along with shared mesh data, blendshapes, and canonical geometry for facial analysis.

@@ -1,3 +1,5 @@
+# EpsilonScaling
+
 實作了研究論文《Elucidating the Exposure Bias in Diffusion Models》中的 Epsilon Scaling 方法。此方法透過在取樣過程中縮放預測的雜訊來改善樣本品質。它使用均勻排程來減輕擴散模型中的曝光偏差。
 
 ## 輸入

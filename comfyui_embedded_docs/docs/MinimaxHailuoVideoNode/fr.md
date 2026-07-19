@@ -1,3 +1,5 @@
+# MiniMax Hailuo Vidéo
+
 Voici la traduction de la documentation du nœud ComfyUI **MinimaxHailuoVideoNode** :
 
 Génère des vidéos à partir de descriptions textuelles en utilisant le modèle MiniMax Hailuo-02. Vous pouvez éventuellement fournir une image de départ comme première image pour créer une vidéo qui se poursuit à partir de cette image.

@@ -1,3 +1,5 @@
+# Opciones de Croma Radiance
+
 El nodo ChromaRadianceOptions permite configurar ajustes avanzados para el modelo Chroma Radiance. Envuelve un modelo existente y aplica opciones específicas durante el proceso de eliminación de ruido basándose en valores sigma, lo que permite un control preciso sobre el tamaño del mosaico NeRF y otros parámetros relacionados con la radiancia.
 
 ## Entradas

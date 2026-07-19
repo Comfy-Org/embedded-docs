@@ -1,3 +1,5 @@
+# Convert Text Case
+
 The Case Converter node transforms text strings into different letter case formats. It takes an input string and converts it based on the selected mode, producing an output string with the specified case formatting applied. The node supports four different case conversion options to modify the capitalization of your text.
 
 ## Inputs

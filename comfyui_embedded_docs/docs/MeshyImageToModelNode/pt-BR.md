@@ -1,3 +1,5 @@
+# Meshy: Imagem para Modelo
+
 O nó Meshy: Image to Model usa a API Meshy para gerar um modelo 3D a partir de uma única imagem de entrada. Ele faz upload da sua imagem, envia uma tarefa de processamento e retorna os arquivos do modelo 3D gerado (GLB e FBX) junto com o ID da tarefa para referência.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Tripo: Refinar modelo borrador
+
 El nodo TripoRefineNode refina modelos 3D preliminares creados específicamente por modelos Tripo v1.4. Toma un ID de tarea de modelo y lo procesa a través de la API de Tripo para generar una versión mejorada del modelo. Este nodo está diseñado para funcionar exclusivamente con modelos preliminares producidos por modelos Tripo v1.4.
 
 ## Entradas

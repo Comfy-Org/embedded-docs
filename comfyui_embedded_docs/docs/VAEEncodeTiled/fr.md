@@ -1,3 +1,5 @@
+# VAE Encode (Tiled)
+
 Voici la traduction en français de la documentation du nœud VAEEncodeTiled :
 
 Le nœud VAEEncodeTiled traite les images en les divisant en tuiles plus petites et en les encodant à l'aide d'un autoencodeur variationnel. Cette approche par tuiles permet de gérer de grandes images qui pourraient autrement dépasser les limites de mémoire. Le nœud prend en charge à la fois les VAE d'image et de vidéo, avec des contrôles de tuilage séparés pour les dimensions spatiales et temporelles.

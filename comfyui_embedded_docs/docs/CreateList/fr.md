@@ -1,3 +1,5 @@
+# Créer une liste
+
 Le nœud Créer une Liste combine plusieurs entrées en une seule liste séquentielle. Il accepte un nombre quelconque d'entrées du même type de données et les concatène dans l'ordre de connexion. Ce nœud est utile pour préparer des lots de données, comme des images ou du texte, à traiter par d'autres nœuds dans un workflow.
 
 ## Entrées

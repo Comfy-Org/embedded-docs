@@ -1,3 +1,5 @@
+# LTXVRehberleriKırp
+
 LTXVCropGuides düğümü, ana kare bilgilerini kaldırarak ve gizli boyutları ayarlayarak video oluşturma için koşullandırma ve gizli girdileri işler. Gizli görüntüyü ve gürültü maskesini, ana kare bölümlerini hariç tutacak şekilde kırparken, hem pozitif hem de negatif koşullandırma girdilerinden ana kare indekslerini temizler. Bu, ana kare yönlendirmesi gerektirmeyen video oluşturma iş akışları için verileri hazırlar.
 
 ## Girdiler

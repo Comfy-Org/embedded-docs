@@ -1,3 +1,5 @@
+# ModelSamplingAuraFlow
+
 The ModelSamplingAuraFlow node applies a specialized sampling configuration to diffusion models, specifically designed for AuraFlow model architectures. It modifies the model's sampling behavior by applying a shift parameter that adjusts the sampling distribution. This node inherits from the SD3 model sampling framework and provides fine control over the sampling process.
 
 ## Inputs

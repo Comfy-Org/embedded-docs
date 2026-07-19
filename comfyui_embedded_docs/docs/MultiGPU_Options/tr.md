@@ -1,3 +1,5 @@
+# MultiGPU_Options
+
 ## Genel Bakış
 
 Bu düğüm, farklı hızlara sahip birden çok grafik kartı kullanırken her bir GPU'nun göreceli performansını belirlemenizi sağlar. Cihazlar arasında iş dağıtımı için kullanılabilecek bir GPU seçenekleri grubu oluşturur, ancak hız tabanlı iş yükü dağıtımı henüz mevcut sürümde uygulanmamıştır.

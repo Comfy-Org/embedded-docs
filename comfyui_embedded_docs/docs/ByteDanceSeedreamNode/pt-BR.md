@@ -1,3 +1,5 @@
+# ByteDance Seedream 4.5
+
 O nó ByteDance Seedream 4.5 e 5.0 oferece geração unificada de texto para imagem e capacidades precisas de edição de frase única em resoluções de até 4K. Ele pode criar novas imagens a partir de prompts de texto ou editar imagens existentes usando instruções textuais. O nó suporta tanto a geração de uma única imagem quanto a geração sequencial de múltiplas imagens relacionadas.
 
 ## Entradas

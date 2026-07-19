@@ -1,3 +1,5 @@
+# WanPhantomSubjectToVideo
+
 WanPhantomSubjectToVideo düğümü, koşullandırma girdilerini ve isteğe bağlı referans görüntülerini işleyerek video içeriği oluşturur. Video oluşturma için gizli temsiller oluşturur ve sağlandığında girdi görüntülerinden görsel yönlendirme ekleyebilir. Düğüm, video modelleri için zaman boyutlu birleştirme ile koşullandırma verilerini hazırlar ve oluşturulan gizli video verileriyle birlikte değiştirilmiş koşullandırmayı çıktı olarak verir.
 
 ## Girdiler

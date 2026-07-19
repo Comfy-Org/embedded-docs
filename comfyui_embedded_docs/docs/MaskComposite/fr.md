@@ -1,3 +1,5 @@
+# MaskComposite
+
 Ce nœud est spécialisé dans la combinaison de deux entrées de masque via diverses opérations telles que l'addition, la soustraction et les opérations logiques, afin de produire un nouveau masque modifié. Il gère de manière abstraite la manipulation des données de masque pour obtenir des effets de masquage complexes, constituant un composant essentiel dans les workflows d'édition et de traitement d'images basés sur des masques.
 
 ## Entrées

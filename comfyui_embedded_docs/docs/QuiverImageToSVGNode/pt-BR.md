@@ -1,3 +1,5 @@
+# Quiver Imagem para SVG
+
 Este nó converte uma imagem raster em um gráfico vetorial escalável (SVG) usando os modelos de vetorização da Quiver AI. Ele envia a imagem para uma API externa que a processa e retorna o resultado vetorizado.
 
 ## Entradas

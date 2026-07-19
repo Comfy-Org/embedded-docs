@@ -1,3 +1,5 @@
+# ColorTransfer
+
 Le nœud ColorTransfer ajuste la palette de couleurs d'une image cible pour correspondre aux couleurs d'une image de référence. Il utilise différents algorithmes mathématiques pour analyser et transférer les caractéristiques chromatiques, telles que la luminosité, le contraste et la distribution des teintes, de la référence vers la cible. Cela est utile pour créer une cohérence visuelle entre plusieurs images ou appliquer un étalonnage chromatique spécifique.
 
 ## Entrées

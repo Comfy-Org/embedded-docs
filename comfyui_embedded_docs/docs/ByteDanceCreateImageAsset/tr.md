@@ -1,3 +1,5 @@
+# ByteDance Görsel Varlık Oluştur
+
 Bu düğüm, ByteDance'in Seedance 2.0 hizmeti için kişisel bir görsel varlığı oluşturur. Bir girdi görselini yükler ve belirtilen bir varlık grubuna kaydeder. Herhangi bir grup kimliği sağlanmazsa, varlığı eklemeden önce tarayıcınızda yeni bir grup oluşturmak için bir gerçek kişi doğrulama süreci başlatır.
 
 ## Girdiler

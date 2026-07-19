@@ -1,3 +1,5 @@
+# CLIPTextEncodeSD3
+
 Le nœud CLIPTextEncodeSD3 traite les entrées textuelles pour les modèles Stable Diffusion 3 en encodant plusieurs invites textuelles à l'aide de différents modèles CLIP. Il gère trois entrées textuelles distinctes (`clip_g`, `clip_l` et `t5xxl`) et propose des options pour gérer le remplissage de texte vide. Le nœud assure un alignement correct des jetons entre les différentes entrées textuelles et renvoie des données de conditionnement adaptées aux pipelines de génération SD3.
 
 ## Entrées

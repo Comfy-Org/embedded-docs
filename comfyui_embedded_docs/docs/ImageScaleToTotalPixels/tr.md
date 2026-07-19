@@ -1,3 +1,5 @@
+# Görüntüyü Toplam Piksele Göre Ölçekle
+
 ImageScaleToTotalPixels düğümü, görüntüleri en-boy oranını koruyarak belirtilen toplam piksel sayısına yeniden boyutlandırmak için tasarlanmıştır. İstenen piksel sayısına ulaşmak için görüntüyü büyütmek üzere çeşitli yöntemler sunar.
 
 ## Girişler

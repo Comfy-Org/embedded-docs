@@ -1,3 +1,5 @@
+# PhotoMakerLoader
+
 El nodo PhotoMakerLoader carga un modelo PhotoMaker desde los archivos de modelo disponibles. Lee el archivo de modelo especificado y prepara el codificador de identidad PhotoMaker para su uso en tareas de generación de imágenes basadas en identidad. Este nodo está marcado como experimental y está destinado únicamente para fines de prueba.
 
 ## Entradas

@@ -1,4 +1,4 @@
-# Veo3FirstLastFrameNode
+# Google Veo 3 İlk-Son-Kare'den Videoya
 
 Veo3FirstLastFrameNode, Google'ın Veo 3 modelini kullanarak, video dizisinin başlangıcını ve sonunu tanımlayan sağlanan ilk ve son karelerle birlikte, bir metin istemine dayalı olarak video oluşturur.
 

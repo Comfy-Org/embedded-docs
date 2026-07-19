@@ -1,3 +1,5 @@
+# Geração de Vídeo por Referência Vidu2
+
 Aqui está a tradução da documentação para português brasileiro, seguindo todas as regras estabelecidas:
 
 O nó de Geração de Vídeo a partir de Referência Vidu2 cria um vídeo a partir de um prompt de texto e múltiplas imagens de referência. Você pode definir até sete temas, cada um com seu próprio conjunto de imagens de referência, e referenciá-los no prompt usando `@subject{subject_id}`. O nó gera um vídeo com duração, proporção de aspecto e movimento configuráveis.

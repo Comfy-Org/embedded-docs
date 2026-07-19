@@ -1,3 +1,5 @@
+# SAM3 Track to Mask
+
 ## Overview
 
 Selects specific tracked objects from a SAM3 tracking session by their index numbers and combines them into a single output mask. This allows you to choose which objects to keep and which to ignore from the tracking results.

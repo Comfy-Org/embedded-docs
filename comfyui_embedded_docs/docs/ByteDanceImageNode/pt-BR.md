@@ -1,3 +1,5 @@
+# ByteDance Imagem
+
 O nó ByteDance Image gera imagens usando modelos ByteDance por meio de uma API baseada em prompts de texto. Ele permite selecionar um modelo, especificar dimensões da imagem e controlar vários parâmetros de geração, como semente e escala de orientação. O nó se conecta ao serviço de geração de imagens da ByteDance e retorna a imagem criada.
 
 ## Entradas

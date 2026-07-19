@@ -1,3 +1,5 @@
+# Edición de video Grok
+
 Este nodo utiliza la API de Grok para editar un video existente basándose en un mensaje de texto. Carga tu video, envía una solicitud al modelo de IA para modificarlo según tu descripción y devuelve el video recién generado.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Concaténer Audio
+
 Voici la traduction en français de la documentation du nœud AudioConcat :
 
 Le nœud AudioConcat combine deux entrées audio en les concaténant. Il prend deux entrées audio et les relie dans l'ordre que vous spécifiez, en plaçant le second audio avant ou après le premier. Le nœud gère automatiquement les différents formats audio en convertissant l'audio mono en stéréo et en adaptant les fréquences d'échantillonnage entre les deux entrées.

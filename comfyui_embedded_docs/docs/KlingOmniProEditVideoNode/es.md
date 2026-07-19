@@ -1,3 +1,5 @@
+# Kling Omni Editar Video (Pro)
+
 El nodo Kling Omni Editar Video (Pro) utiliza un modelo de IA para editar un video existente basándose en una descripción textual. Proporcionas un video de origen y un prompt, y el nodo genera un nuevo video de la misma duración con los cambios solicitados. Opcionalmente, puede usar imágenes de referencia para guiar el estilo y conservar el audio original del video de origen.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Meshy : Multi-image vers modèle
+
 Ce nœud utilise l'API Meshy pour générer un modèle 3D à partir de plusieurs images d'entrée. Il télécharge les images fournies, soumet une tâche de traitement et renvoie les fichiers du modèle 3D résultant (GLB et FBX) ainsi que l'identifiant de la tâche pour référence.
 
 ## Entrées

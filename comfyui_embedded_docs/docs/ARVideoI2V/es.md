@@ -1,3 +1,5 @@
+# ARVideoI2V
+
 ## Descripción general
 
 Este nodo prepara una configuración de generación de imagen a video para modelos de video AR (Auto-Regresivos). Toma una imagen inicial, la codifica en el espacio latente usando un VAE y almacena la imagen codificada en la configuración del modelo. Esto permite que el proceso de muestreo de video utilice la imagen como primer fotograma, iniciando efectivamente la generación sin necesidad de una arquitectura de modelo separada de imagen a video.

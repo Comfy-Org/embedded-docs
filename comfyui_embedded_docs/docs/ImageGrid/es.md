@@ -1,3 +1,5 @@
+# Cuadrícula de Imágenes
+
 El nodo **Cuadrícula de Imágenes** combina múltiples imágenes en una única cuadrícula o collage organizado. Toma una lista de imágenes y las dispone en un número específico de columnas, redimensionando cada imagen para que se ajuste a un tamaño de celda definido y añadiendo relleno opcional entre ellas. El resultado es una única imagen nueva que contiene todas las imágenes de entrada en un diseño de cuadrícula.
 
 ## Entradas

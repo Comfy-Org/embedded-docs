@@ -1,3 +1,5 @@
+# NodoGuardarSVG
+
 Guarda archivos SVG en el disco. Este nodo recibe datos SVG como entrada y los guarda en tu directorio de salida con metadatos opcionales incrustados. El nodo maneja automáticamente la nomenclatura de archivos con sufijos de contador y puede incrustar información de flujo de trabajo directamente en el archivo SVG.
 
 ## Entradas

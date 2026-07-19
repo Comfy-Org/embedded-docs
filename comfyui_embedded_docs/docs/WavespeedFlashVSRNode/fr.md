@@ -1,3 +1,5 @@
+# FlashVSR Upscale Vidéo
+
 Le nœud WavespeedFlashVSRNode est un upscaler vidéo rapide et de haute qualité qui améliore la résolution et restaure la netteté des séquences vidéo de faible résolution ou floues. Il traite une entrée vidéo et produit une nouvelle vidéo à une résolution supérieure choisie par l'utilisateur.
 
 ## Entrées

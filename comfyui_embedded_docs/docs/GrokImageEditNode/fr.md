@@ -1,3 +1,5 @@
+# Grok Image Edit
+
 Voici la traduction en français de la documentation du nœud Grok Image Edit :
 
 Le nœud Grok Image Edit modifie une image existante en fonction d'une invite textuelle. Il utilise l'API Grok pour générer une ou plusieurs nouvelles images qui sont des variations de l'entrée, guidées par votre description.

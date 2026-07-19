@@ -1,3 +1,5 @@
+# SetModelHooksOnCond
+
 Este nodo adjunta hooks personalizados a los datos de condicionamiento, permitiendo interceptar y modificar el proceso de condicionamiento durante la ejecución del modelo. Toma un conjunto de hooks y los aplica a los datos de condicionamiento proporcionados, lo que permite una personalización avanzada del flujo de trabajo de generación de texto a imagen. El condicionamiento modificado con los hooks adjuntos se devuelve para su uso en pasos de procesamiento posteriores.
 
 ## Entradas

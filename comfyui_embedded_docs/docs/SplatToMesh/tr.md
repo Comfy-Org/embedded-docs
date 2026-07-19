@@ -1,4 +1,4 @@
-# Splat'tan Mesh Çıkarma
+# Splat'tan Mesh Çıkar
 
 Bu düğüm, 3B Gauss splatını renkli bir mesh yüzeyine dönüştürür. Gaussian'ları bir yoğunluk ızgarasına rasterleştirerek, seçilen bir yoğunluk seviyesinde bir izo-yüzey çıkararak ve ardından isteğe bağlı yumuşatma ve temizleme uygulayarak temiz, renkli bir üçgen mesh üretir.
 

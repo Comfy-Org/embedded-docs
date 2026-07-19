@@ -1,3 +1,5 @@
+# بارگذاری مدل Optical Flow
+
 ## نمای کلی
 
 یک مدل جریان نوری (optical flow) را از پوشه `models/optical_flow/` بارگذاری می‌کند. در حال حاضر، تنها فرمت RAFT-large متعلق به کتابخانه torchvision پشتیبانی می‌شود که همان مدل استفاده‌شده در گره VOIDWarpedNoise است. ComfyUI به‌طور خودکار وزن‌های جریان نوری را دانلود نمی‌کند؛ شما باید فایل checkpoint را به‌صورت دستی در دایرکتوری `models/optical_flow/` قرار دهید.

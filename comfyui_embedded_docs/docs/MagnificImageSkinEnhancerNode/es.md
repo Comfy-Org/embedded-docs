@@ -1,3 +1,5 @@
+# Magnific Mejorador de Piel en Imagen
+
 El nodo Mejorador de Piel de Magnific Image aplica un procesamiento de IA especializado a imágenes de retratos para mejorar la apariencia de la piel. Ofrece tres modos distintos para diferentes objetivos de mejora: creativo para efectos artísticos, fiel para preservar el aspecto original y flexible para mejoras específicas como iluminación o realismo. El nodo carga la imagen a una API externa para su procesamiento y devuelve el resultado mejorado.
 
 ## Entradas

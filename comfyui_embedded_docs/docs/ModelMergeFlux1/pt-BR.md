@@ -1,3 +1,5 @@
+# ModelMergeFlux1
+
 O nó ModelMergeFlux1 mescla dois modelos de difusão combinando seus componentes por meio de interpolação ponderada. Ele permite controle refinado sobre como diferentes partes dos modelos são combinadas, incluindo blocos de processamento de imagem, camadas de incorporação temporal, mecanismos de orientação, entradas vetoriais, codificadores de texto e vários blocos transformadores. Isso possibilita criar modelos híbridos com características personalizadas a partir de dois modelos de origem.
 
 ## Entradas

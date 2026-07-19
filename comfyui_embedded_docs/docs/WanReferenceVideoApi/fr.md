@@ -1,3 +1,5 @@
+# Wan Reference to Video
+
 Le nœud Wan Reference to Video utilise l'apparence visuelle et la voix d'une ou plusieurs vidéos de référence en entrée, ainsi qu'une invite textuelle, pour générer une nouvelle vidéo. Il assure la cohérence avec les personnages du matériel de référence tout en créant un nouveau contenu basé sur votre description.
 
 ## Entrées

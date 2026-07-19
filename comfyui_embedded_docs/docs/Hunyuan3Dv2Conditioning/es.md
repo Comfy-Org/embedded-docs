@@ -1,3 +1,5 @@
+# Hunyuan3Dv2Conditioning
+
 El nodo Hunyuan3Dv2Conditioning procesa la salida de CLIP vision para generar datos de condicionamiento para modelos 3D. Extrae las incrustaciones del último estado oculto de la salida visual y crea pares de condicionamiento tanto positivos como negativos. El condicionamiento positivo utiliza las incrustaciones reales, mientras que el condicionamiento negativo utiliza incrustaciones con valor cero de la misma forma.
 
 ## Entradas

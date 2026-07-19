@@ -1,3 +1,5 @@
+# HappyHorse Referanstan Videoya
+
 ## Genel Bakış
 
 Bu düğüm, HappyHorse modelini kullanarak referans görüntülere dayalı olarak bir kişi veya nesneyi içeren bir video oluşturur. Tek bir karakter veya birbiriyle etkileşime giren birden fazla karakter içeren videolar oluşturmayı destekler.

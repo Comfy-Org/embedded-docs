@@ -1,3 +1,5 @@
+# Acondicionamiento Cero
+
 Este nodo pone a cero elementos específicos dentro de la estructura de datos de condicionamiento, neutralizando efectivamente su influencia en pasos posteriores del procesamiento. Está diseñado para operaciones avanzadas de condicionamiento donde se requiere la manipulación directa de la representación interna del condicionamiento.
 
 ## Entradas

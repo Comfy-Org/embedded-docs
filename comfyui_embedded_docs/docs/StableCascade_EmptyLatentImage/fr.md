@@ -1,3 +1,5 @@
+# StableCascade_EmptyLatentImage
+
 Le nœud `StableCascade_EmptyLatentImage` crée des tenseurs latents vides pour les modèles Stable Cascade. Il génère deux représentations latentes distinctes - une pour l'étape C et une autre pour l'étape B - avec des dimensions appropriées basées sur la résolution d'entrée et les paramètres de compression. Ce nœud fournit le point de départ pour le pipeline de génération Stable Cascade.
 
 ## Entrées

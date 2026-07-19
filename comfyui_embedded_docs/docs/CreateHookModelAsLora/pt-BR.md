@@ -1,3 +1,5 @@
+# Criar Hook Modelo como LoRA
+
 Este nó cria um modelo de hook como um LoRA (Adaptação de Baixa Classificação) carregando pesos de checkpoint e aplicando ajustes de intensidade tanto nos componentes do modelo quanto do CLIP. Ele permite aplicar modificações no estilo LoRA a modelos existentes por meio de uma abordagem baseada em hooks, possibilitando ajuste fino e adaptação sem alterações permanentes no modelo. O nó pode combinar com hooks anteriores e armazena em cache os pesos carregados para maior eficiência.
 
 ## Entradas

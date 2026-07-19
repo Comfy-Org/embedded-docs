@@ -1,3 +1,5 @@
+# 雙 CLIP 載入器
+
 DualCLIPLoader 節點專為同時載入兩個 CLIP 模型而設計，便於執行需要整合或比較兩個模型特徵的操作。
 
 此節點會偵測位於 `ComfyUI/models/text_encoders` 資料夾中的模型。

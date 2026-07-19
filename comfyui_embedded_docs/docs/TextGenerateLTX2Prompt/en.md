@@ -1,3 +1,5 @@
+# Generate LTX2 Prompt
+
 The TextGenerateLTX2Prompt node is a specialized version of a text generation node. It takes a user's text prompt and automatically formats it with specific system instructions before sending it to a language model for enhancement or completion. The node can operate in two modes: text-only or with an image reference, using different system prompts for each case.
 
 ## Inputs

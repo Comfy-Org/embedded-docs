@@ -1,3 +1,5 @@
+# Cond Set Props
+
 The ConditioningSetProperties node modifies the properties of conditioning data by adjusting strength, area settings, and applying optional masks, hooks, or timestep ranges. It allows you to control how conditioning influences the generation process by setting specific parameters that affect the application of conditioning data during image generation.
 
 ## Inputs

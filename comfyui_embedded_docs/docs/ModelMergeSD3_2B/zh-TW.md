@@ -1,3 +1,5 @@
+# 模型合併 (SD3 2B)
+
 ModelMergeSD3_2B 節點允許您透過以可調整的權重混合其元件，來合併兩個 Stable Diffusion 3 2B 模型。它提供對嵌入層和 Transformer 區塊的個別控制，從而實現針對特定生成任務的微調模型組合。
 
 ## 輸入

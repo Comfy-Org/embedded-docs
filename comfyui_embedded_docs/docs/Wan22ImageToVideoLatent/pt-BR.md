@@ -1,3 +1,5 @@
+# Wan22ImageToVideoLatent
+
 O nó Wan22ImageToVideoLatent cria representações latentes de vídeo a partir de imagens. Ele gera um espaço latente de vídeo em branco com dimensões especificadas e pode, opcionalmente, codificar uma sequência de imagem inicial nos primeiros quadros. Quando uma imagem inicial é fornecida, o nó codifica a imagem no espaço latente e cria uma máscara de ruído correspondente para as regiões com inpainting.
 
 ## Entradas

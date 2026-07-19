@@ -1,3 +1,5 @@
+# ModelMergeSD3_2B
+
 Le nœud ModelMergeSD3_2B permet de fusionner deux modèles Stable Diffusion 3 2B en mélangeant leurs composants avec des poids ajustables. Il offre un contrôle individuel sur les couches d'embedding et les blocs de transformeurs, permettant des combinaisons de modèles finement ajustées pour des tâches de génération spécialisées.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 The TextEncodeAceStepAudio1.5 node prepares text and audio-related metadata for use with the AceStepAudio 1.5 model. It takes descriptive tags, lyrics, and musical parameters, then uses a CLIP model to convert them into a conditioning format suitable for audio generation.
 
 ## Inputs

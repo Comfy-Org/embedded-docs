@@ -1,3 +1,5 @@
+# Kling Sincronização Labial de Vídeo com Áudio
+
 Esta documentação foi gerada por IA. Caso encontre erros ou tenha sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingLipSyncAudioToVideoNode/en.md)
 
 Nó de Sincronização Labial Kling com Áudio para Vídeo sincroniza os movimentos da boca em um arquivo de vídeo para corresponder ao conteúdo de áudio de um arquivo de áudio. Este nó analisa os padrões vocais no áudio e ajusta os movimentos faciais no vídeo para criar uma sincronização labial realista. O processo requer tanto um vídeo contendo um rosto nítido quanto um arquivo de áudio com vocais claramente distinguíveis.

@@ -1,3 +1,5 @@
+# HitPaw General Image Enhance
+
 Este nó melhora imagens de baixa resolução, aumentando-as para super-resolução, removendo artefatos e ruídos. Ele utiliza uma API externa para processar a imagem e pode ajustar automaticamente o tamanho da entrada para permanecer dentro dos limites de processamento. O tamanho máximo permitido para a saída é de 4 megapixels.
 
 ## Entradas

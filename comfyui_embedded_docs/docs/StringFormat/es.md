@@ -1,3 +1,5 @@
+# Formatear Texto
+
 ## Descripción general
 
 Este nodo formatea texto utilizando el método de formato de cadenas de Python. Funciona como una plantilla donde se define un patrón de texto con marcadores de posición, y luego se proporcionan valores para completar dichos marcadores. Soporta todas las opciones y características de formato de Python.

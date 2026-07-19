@@ -1,3 +1,5 @@
+# Temel Rehber
+
 BasicGuider düğümü, örnekleme süreci için basit bir yönlendirme mekanizması oluşturur. Giriş olarak bir model ve koşullandırma verisi alır ve örnekleme sırasında üretim sürecini yönlendirmek için kullanılabilecek bir yönlendirici nesnesi üretir. Bu düğüm, kontrollü üretim için gereken temel yönlendirme işlevselliğini sağlar.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Tripo P1: Imagen a Modelo
+
 ## Descripción general
 
 Este nodo convierte una sola imagen 2D en un modelo 3D utilizando la API de Tripo P1. Está optimizado para generar mallas de baja poligonización listas para su uso en videojuegos.

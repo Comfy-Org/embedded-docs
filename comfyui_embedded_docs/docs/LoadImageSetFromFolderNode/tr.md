@@ -1,3 +1,5 @@
+# LoadImageSetFromFolderNode
+
 LoadImageSetFromFolderNode, eğitim amaçlı olarak belirtilen bir klasör dizininden birden fazla görüntü yükler. Yaygın görüntü formatlarını otomatik olarak algılar ve isteğe bağlı olarak görüntüleri farklı yöntemler kullanarak yeniden boyutlandırıp bir grup halinde döndürebilir.
 
 ## Girdiler

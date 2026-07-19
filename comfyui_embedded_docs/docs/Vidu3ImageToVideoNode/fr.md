@@ -1,3 +1,5 @@
+# Génération d’image en vidéo Vidu Q3
+
 Voici la traduction en français de la documentation du nœud Vidu Q3 Image-to-Video :
 
 Le nœud de génération d'image vers vidéo Vidu Q3 crée une séquence vidéo à partir d'une image d'entrée. Il utilise un modèle Vidu Q3 pour animer l'image, éventuellement guidé par une invite textuelle, et produit un fichier vidéo en sortie.

@@ -1,3 +1,5 @@
+# SDPoseKeypointExtractor
+
 O nó SDPoseKeypointExtractor detecta pontos-chave de pose humana a partir de imagens de entrada usando o modelo SDPose. Ele pode processar imagens completas ou regiões específicas definidas por caixas delimitadoras e gera os pontos-chave detectados no formato OpenPose, que inclui as coordenadas para cada pessoa e uma pontuação de confiança para cada ponto-chave.
 
 ## Entradas

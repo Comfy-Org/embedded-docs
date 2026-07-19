@@ -1,3 +1,5 @@
+# Load Image (from Outputs)
+
 The LoadImageOutput node loads images from the output folder. When you click the refresh button, it updates the list of available images and automatically selects the first one, making it easy to iterate through your generated images.
 
 ## Inputs

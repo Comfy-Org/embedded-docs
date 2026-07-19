@@ -1,3 +1,5 @@
+# Seletor de Voz ElevenLabs
+
 O nó **Seletor de Voz ElevenLabs** permite que você escolha uma voz específica de uma lista predefinida de vozes de texto-para-fala da ElevenLabs. Ele recebe um nome de voz como entrada e retorna o identificador de voz correspondente necessário para a geração de áudio. Este nó simplifica o processo de seleção de uma voz compatível para uso com outros nós de áudio da ElevenLabs.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# BetaÖrneklemeZamanlayıcısı
+
 BetaSamplingScheduler düğümü, beta zamanlama algoritmasını kullanarak örnekleme süreci için bir dizi gürültü seviyesi (sigma) oluşturur. Bir model ve yapılandırma parametreleri alarak, görüntü oluşturma sırasında gürültü giderme sürecini kontrol eden özelleştirilmiş bir gürültü zamanlaması oluşturur. Bu zamanlayıcı, alfa ve beta parametreleri aracılığıyla gürültü azaltma yörüngesinin ince ayarını yapmaya olanak tanır.
 
 ## Girişler

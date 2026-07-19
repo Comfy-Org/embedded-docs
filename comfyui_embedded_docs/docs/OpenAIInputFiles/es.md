@@ -1,3 +1,5 @@
+# Archivos de Entrada de OpenAI ChatGPT
+
 Carga y formatea archivos de entrada para la API de OpenAI. Este nodo prepara archivos de texto (.txt) y PDF (.pdf) para incluirlos como contexto de entrada en el Nodo de Chat de OpenAI. Los archivos serán leídos por el modelo de OpenAI al generar una respuesta. Se pueden encadenar varios nodos de Archivos de Entrada de OpenAI para incluir varios archivos en un solo mensaje.
 
 ## Entradas

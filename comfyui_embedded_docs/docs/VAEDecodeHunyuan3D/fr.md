@@ -1,3 +1,5 @@
+# VAEDecodeHunyuan3D
+
 Le nœud VAEDecodeHunyuan3D convertit des représentations latentes en données voxel 3D à l'aide d'un décodeur VAE. Il traite les échantillons latents via le modèle VAE avec des paramètres configurables de fragmentation et de résolution pour générer des données volumétriques adaptées aux applications 3D.
 
 ## Entrées

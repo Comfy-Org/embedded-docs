@@ -1,3 +1,5 @@
+# Chargeur de diffuseurs
+
 Le nœud DiffusersLoader charge des modèles pré-entraînés au format diffusers. Il recherche les répertoires de modèles diffusers valides contenant un fichier `model_index.json` et les charge en tant que composants MODEL, CLIP et VAE pour une utilisation dans le pipeline. Ce nœud fait partie de la catégorie des chargeurs obsolètes et assure la compatibilité avec les modèles diffusers de Hugging Face.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Amortissement tangentiel CFG
+
 Voici la traduction en français de la documentation du nœud TCFG, en respectant vos règles :
 
 TCFG (Guidage CFG à Amortissement Tangentiel) affine les prédictions inconditionnelles (négatives) pour mieux les aligner avec les prédictions conditionnelles (positives) pendant le processus d'échantillonnage. Cette technique améliore la qualité de sortie en appliquant un amortissement tangentiel au guidage inconditionnel, basé sur l'article de recherche 2503.18137. Le nœud modifie le comportement d'échantillonnage du modèle en ajustant la façon dont les prédictions inconditionnelles sont traitées pendant le guidage sans classifieur.

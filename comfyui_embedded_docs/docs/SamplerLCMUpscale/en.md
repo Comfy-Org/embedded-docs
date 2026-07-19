@@ -1,3 +1,5 @@
+# SamplerLCMUpscale
+
 The SamplerLCMUpscale node provides a specialized sampling method that combines Latent Consistency Model (LCM) sampling with image upscaling capabilities. It allows you to upscale images during the sampling process using various interpolation methods, making it useful for generating higher resolution outputs while maintaining image quality.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Nano Banana Pro (Google Gemini Image)
+
 ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
 ## Çeviri Kuralları

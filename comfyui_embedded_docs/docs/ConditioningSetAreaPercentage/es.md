@@ -1,3 +1,5 @@
+# Acondicionamiento (Establecer Área con Porcentaje)
+
 El nodo `ConditioningSetAreaPercentage` está especializado en ajustar el área de influencia de los elementos de condicionamiento basándose en valores porcentuales. Permite especificar las dimensiones y la posición del área como porcentajes del tamaño total de la imagen, junto con un parámetro de intensidad para modular la potencia del efecto de condicionamiento.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Empty Audio
+
 The EmptyAudio node generates a silent audio clip with specified duration, sample rate, and channel configuration. It creates a waveform containing all zeros, producing complete silence for the given duration. This node is useful for creating placeholder audio or generating silent segments in audio workflows.
 
 ## Inputs

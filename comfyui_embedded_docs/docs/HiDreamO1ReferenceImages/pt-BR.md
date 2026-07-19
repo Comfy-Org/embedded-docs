@@ -1,4 +1,4 @@
-# Visão Geral
+# Imagens de Referência HiDream-O1
 
 Anexe imagens de referência tanto ao condicionamento positivo quanto ao negativo. Este nó permite fornecer uma ou mais imagens de referência que serão usadas para guiar o processo de geração de imagem, seja para edição baseada em instruções ou para personalização orientada por assunto.
 

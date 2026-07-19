@@ -1,3 +1,5 @@
+# Carregar LoRA
+
 Este nó detecta automaticamente os modelos localizados na pasta LoRA (incluindo subpastas), com o caminho do modelo correspondente sendo `ComfyUI\models\loras`. Para mais informações, consulte Instalação de Modelos LoRA
 
 O nó Carregador de LoRA é usado principalmente para carregar modelos LoRA. Você pode pensar nos modelos LoRA como filtros que podem dar às suas imagens estilos, conteúdos e detalhes específicos:

@@ -1,3 +1,5 @@
+# Runway Görüntüden Videoya (Gen3a Turbo)
+
 Runway Görüntüden Videoya (Gen3a Turbo) düğümü, Runway'in Gen3a Turbo modelini kullanarak tek bir başlangıç karesinden bir video oluşturur. Bir metin istemi ve başlangıç görüntü karesi alır, ardından belirtilen süre ve en boy oranına göre bir video dizisi oluşturur. Bu düğüm, oluşturmayı uzaktan işlemek için Runway'in API'sine bağlanır.
 
 ## Girişler

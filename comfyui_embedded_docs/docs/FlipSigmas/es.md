@@ -1,3 +1,5 @@
+# FlipSigmas
+
 El nodo `FlipSigmas` está diseñado para manipular la secuencia de valores sigma utilizados en modelos de difusión, invirtiendo su orden y asegurando que el primer valor no sea cero si originalmente lo era. Esta operación es crucial para adaptar los niveles de ruido en orden inverso, facilitando el proceso de generación en modelos que funcionan reduciendo gradualmente el ruido a partir de los datos.
 
 ## Entradas

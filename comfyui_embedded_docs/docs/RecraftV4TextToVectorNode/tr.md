@@ -1,3 +1,5 @@
+# Recraft V4 Metinden Vektöre
+
 Recraft V4 Metinden Vektöre düğümü, bir metin açıklamasından Ölçeklenebilir Vektör Grafikleri (SVG) çizimleri oluşturur. Görüntü oluşturma için Recraft V4 veya Recraft V4 Pro modelini kullanmak üzere harici bir API'ye bağlanır. Düğüm, isteminize bağlı olarak bir veya daha fazla SVG görüntüsü çıktısı verir.
 
 ## Girişler

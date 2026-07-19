@@ -1,3 +1,5 @@
+# Convertir texto a minúsculas
+
 El nodo Texto a Minúsculas toma una cadena de texto como entrada y convierte todos sus caracteres a minúsculas. Es una utilidad simple para estandarizar el uso de mayúsculas y minúsculas en el texto.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Áudio Latente AceStep Vazio
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyAceStepLatentAudio/en.md)
 
 O nó EmptyAceStepLatentAudio cria amostras de áudio latente vazias com uma duração específica. Ele gera um lote de latentes de áudio silenciosos preenchidos com zeros, onde o comprimento é calculado com base nos segundos de entrada e nos parâmetros de processamento de áudio. Este nó é útil para inicializar fluxos de trabalho de processamento de áudio que exigem representações latentes.

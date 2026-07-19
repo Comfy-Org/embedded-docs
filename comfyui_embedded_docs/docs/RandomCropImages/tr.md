@@ -1,3 +1,5 @@
+# Rastgele Kırpılmış Görseller
+
 Rastgele Kırpma Görselleri düğümü, her bir giriş görselinden rastgele bir dikdörtgen bölüm seçer ve bunu belirtilen genişlik ve yüksekliğe kırpar. Bu işlem, genellikle eğitim görsellerinde çeşitlilik oluşturmak için veri artırma amacıyla kullanılır. Kırpma için rastgele konum, bir tohum değeri tarafından belirlenir ve aynı kırpmanın tekrar üretilebilmesini sağlar.
 
 ## Girişler

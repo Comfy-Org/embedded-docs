@@ -1,3 +1,5 @@
+# ByteDance Texte vers Vidéo
+
 Voici la traduction en français de la documentation du nœud ByteDance Text to Video :
 
 Le nœud ByteDance Text to Video génère des vidéos en utilisant les modèles ByteDance via une API basée sur des invites textuelles. Il prend en entrée une description textuelle et divers paramètres vidéo, puis crée une vidéo correspondant aux spécifications fournies. Le nœud gère la communication avec l'API et renvoie la vidéo générée en sortie.

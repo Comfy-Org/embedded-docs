@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio1.5
+
 O nó TextEncodeAceStepAudio1.5 prepara metadados relacionados a texto e áudio para uso com o modelo AceStepAudio 1.5. Ele recebe tags descritivas, letras e parâmetros musicais, e então utiliza um modelo CLIP para convertê-los em um formato de condicionamento adequado para geração de áudio.
 
 ## Entradas

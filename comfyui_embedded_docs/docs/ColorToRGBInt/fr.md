@@ -1,3 +1,5 @@
+# Couleur vers RGB Int
+
 Le nœud ColorToRGBInt convertit une couleur spécifiée au format hexadécimal en une valeur entière unique. Il prend une chaîne de couleur comme `#FF5733` et calcule l'entier RVB correspondant en combinant les composantes rouge, verte et bleue.
 
 ## Entrées

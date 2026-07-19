@@ -1,3 +1,5 @@
+# Guidance VideoLinearCFG
+
 Le nœud VideoLinearCFGGuidance applique une échelle de guidage conditionnel linéaire à un modèle vidéo, ajustant l'influence des composants conditionnés et non conditionnés sur une plage spécifiée. Cela permet un contrôle dynamique du processus de génération, offrant un réglage fin de la sortie du modèle en fonction du niveau de conditionnement souhaité.
 
 ## Entrées

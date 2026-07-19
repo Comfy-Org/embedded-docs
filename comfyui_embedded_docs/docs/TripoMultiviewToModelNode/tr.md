@@ -1,3 +1,5 @@
+# Tripo: Çok Bakışlıdan Modele
+
 Bu düğüm, bir nesnenin farklı açılardan görüntülerini gösteren en fazla dört görüntüyü işleyerek Tripo'nun API'sini kullanarak eşzamanlı olarak 3B modeller oluşturur. Tam bir 3B model oluşturmak için bir ön görüntü ve en az bir ek görünüm (sol, arka veya sağ) gerektirir; doku ve malzeme seçenekleri sunar.
 
 ## Girişler

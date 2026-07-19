@@ -1,3 +1,5 @@
+# FlashVSR Escalado de Video
+
 El nodo WavespeedFlashVSRNode es un escalador de video rápido y de alta calidad que aumenta la resolución y restaura la claridad de material de video de baja resolución o borroso. Procesa una entrada de video y genera un nuevo video a una resolución superior seleccionada por el usuario.
 
 ## Entradas

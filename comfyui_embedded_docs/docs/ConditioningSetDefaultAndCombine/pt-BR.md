@@ -1,3 +1,5 @@
+# ConditioningSetDefaultAndCombine
+
 Este nó combina uma entrada de condicionamento primária com uma entrada de condicionamento padrão usando um sistema baseado em ganchos. Ele mescla as duas fontes de condicionamento em uma única saída, permitindo que o condicionamento padrão sirva como fallback ou base quando o condicionamento primário estiver incompleto.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Rodin 3D Gerar - Geração Suave
+
 O nó Rodin 3D Smooth gera ativos 3D usando a API Rodin, processando imagens de entrada e convertendo-as em modelos 3D suaves. Ele recebe múltiplas imagens como entrada e produz um arquivo de modelo 3D para download. O nó gerencia todo o processo de geração, incluindo criação de tarefas, monitoramento de status e download automático de arquivos.
 
 ## Entradas

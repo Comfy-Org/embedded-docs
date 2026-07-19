@@ -1,3 +1,5 @@
+# Reemplazar Texto
+
 El nodo Reemplazar Texto realiza una sustitución de texto simple. Busca un fragmento de texto específico dentro de la entrada y reemplaza cada aparición con un nuevo fragmento de texto. La operación se aplica a todas las entradas de texto proporcionadas al nodo.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# ImagenDeLote
+
 El nodo `ImageFromBatch` está diseñado para extraer un segmento específico de imágenes de un lote, basándose en el índice y la longitud proporcionados. Permite un control más detallado sobre las imágenes agrupadas, facilitando operaciones en imágenes individuales o subconjuntos dentro de un lote más grande.
 
 ## Entradas

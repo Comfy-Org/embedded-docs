@@ -1,3 +1,5 @@
+# WanKameraYerleştirme
+
 WanCameraEmbedding düğümü, kamera hareket parametrelerine dayalı olarak Plücker gömmeleri kullanarak kamera yörüngesi gömmeleri oluşturur. Farklı kamera hareketlerini simüle eden bir dizi kamera pozu oluşturur ve bunları video oluşturma hatlarına uygun gömmeli tensörlere dönüştürür.
 
 ## Girdiler

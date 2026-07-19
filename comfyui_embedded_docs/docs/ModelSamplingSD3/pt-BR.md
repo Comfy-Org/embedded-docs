@@ -1,3 +1,5 @@
+# ModelSamplingSD3
+
 O nó ModelSamplingSD3 aplica parâmetros de amostragem do Stable Diffusion 3 a um modelo. Ele modifica o comportamento de amostragem do modelo ajustando o parâmetro de deslocamento (*shift*), que controla as características da distribuição de amostragem. O nó cria uma cópia modificada do modelo de entrada com a configuração de amostragem especificada aplicada.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Resize Images by Shorter Edge (DEPRECATED)
+
 This node resizes images so that the shorter edge matches a specified length while preserving the original aspect ratio. It calculates new dimensions based on the target length for the shorter side and returns the resized image.
 
 ## Inputs

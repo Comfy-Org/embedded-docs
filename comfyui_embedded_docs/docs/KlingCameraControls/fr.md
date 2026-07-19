@@ -1,3 +1,5 @@
+# Contrôles de la caméra Kling
+
 Voici la traduction en français de la documentation du nœud Kling Camera Controls :
 
 Le nœud Kling Camera Controls vous permet de configurer divers paramètres de mouvement et de rotation de caméra pour créer des effets de contrôle de mouvement dans la génération vidéo. Il fournit des contrôles pour le positionnement, la rotation et le zoom de la caméra afin de simuler différents mouvements de caméra.

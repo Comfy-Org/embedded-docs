@@ -1,3 +1,5 @@
+# Magnific Görsel Cilt İyileştirici
+
 **Magnific Image Skin Enhancer Düğümü**
 
 Magnific Image Skin Enhancer düğümü, portre görüntülerine özel yapay zeka işleme uygulayarak cilt görünümünü iyileştirir. Farklı iyileştirme hedefleri için üç ayrı mod sunar: sanatsal efektler için yaratıcı, orijinal görünümü korumak için sadık ve aydınlatma veya gerçekçilik gibi hedefli iyileştirmeler için esnek. Düğüm, işleme için görüntüyü harici bir API'ye yükler ve iyileştirilmiş sonucu döndürür.

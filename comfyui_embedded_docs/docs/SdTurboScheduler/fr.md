@@ -1,3 +1,5 @@
+# SDTurboScheduler
+
 SDTurboScheduler est conçu pour générer une séquence de valeurs sigma pour l'échantillonnage d'images, en ajustant la séquence en fonction du niveau de débruitage et du nombre d'étapes spécifiées. Il exploite les capacités d'échantillonnage d'un modèle spécifique pour produire ces valeurs sigma, qui sont essentielles pour contrôler le processus de débruitage lors de la génération d'images.
 
 ## Entrées

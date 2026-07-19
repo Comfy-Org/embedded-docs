@@ -1,21 +1,21 @@
 # SeedVR2TemporalMerge
 
-Bu düğüm, Split SeedVR2 Latent düğümü tarafından daha önce bölünmüş olan geçici gizli video verisi parçalarını yeniden birleştirir. Örtüşen bölgeler üzerinde bir Hann penceresi çapraz geçişi kullanarak parçalar arasında yumuşak bir geçiş oluşturur veya örtüşme belirtilmediğinde basit bir birleştirme gerçekleştirir.
+Bu düğüm, örneklenmiş SeedVR2 latent zamansal parçalarını tek bir tam uzunlukta latent halinde yeniden birleştirir. Parçalar arasındaki örtüşme bölgesinde yumuşak geçişler oluşturmak için Hann penceresi çapraz geçişi kullanır veya örtüşme belirtilmediğinde düz birleştirme gerçekleştirir.
 
 ## Girişler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `latents` | Sıralı olarak örneklenmiş geçici parçalar. | LATENT | Evet | Gizli değişken listesi |
-| `temporal_overlap` | Split SeedVR2 Latent çıktısındaki temporal_overlap değeri. 0 = düz birleştirme. | INT | Evet | 0 ile 16384 arası (varsayılan: 0) |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|--------|
+| `latents` | Sıralı olarak örneklenmiş zamansal parçalar. | LATENT | Evet | Latent listesi |
+| `temporal_overlap` | Split SeedVR2 Latent çıktısının temporal_overlap değeri. 0 = düz birleştirme. (varsayılan: 0) | INT | Evet | 0 ile 16384 arası |
 
-**Not:** `temporal_overlap` parametresi, Split SeedVR2 Latent düğümünün `temporal_overlap` çıktısına bağlanmalıdır. Tüm giriş gizli değişkenleri aynı grup boyutuna, kanal sayısına, yüksekliğe ve genişliğe sahip olmalıdır. Yalnızca son parça, diğerlerinden daha kısa bir geçici boyuta sahip olabilir.
+**Not:** `temporal_overlap` değeri 0'dan büyük veya eşit olmalıdır. Dizideki son parça, diğer parçalardan daha az zamansal kareye sahip olabilir. Tüm parçalar, zamansal eksen (T) dışında eşleşen boyutlara sahip olmalıdır ve ilk parça 5 boyutlu (B, C, T, H, W) olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `latent` | Yeniden birleştirilmiş tam uzunluktaki gizli değişken. | LATENT |
+| `latent` | Yeniden birleştirilmiş tam uzunlukta latent. | LATENT |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2TemporalMerge/tr.md)
 

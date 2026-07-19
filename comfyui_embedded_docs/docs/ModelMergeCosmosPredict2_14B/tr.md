@@ -1,3 +1,5 @@
+# ModelMergeCosmosPredict2_14B
+
 ModelMergeCosmosPredict2_14B düğümü, iki yapay zeka modelini iç bileşenlerini harmanlayarak birleştirir. Belirli katmanlar ve bileşenler için ayarlanabilir ağırlık değerleri kullanarak, ikinci modelin her bir parçasının nihai birleştirilmiş sonucu ne kadar etkileyeceği üzerinde hassas kontrol sağlar.
 
 ## Girdiler

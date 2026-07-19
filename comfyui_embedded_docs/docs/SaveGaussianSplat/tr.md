@@ -1,26 +1,26 @@
 # SaveGaussianSplat
 
-Bu düğüm, bir Gaussian splat 3D dosyasını ComfyUI çıktı dizinine kaydeder ve 3D görüntüleyici için önizleme verileri sağlar.
+Bu düğüm, bir Gaussian splat 3B dosyasını çıktı dizinine kaydeder. Dosya kaydetme işlemini yönetir ve 3B görünüm alanı için önizleme verileri sağlar.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-|-----------|-------------|-----------|----------|--------|
-| `model_3d` | Bir Gaussian splat 3D dosyası. | FILE3D | Evet | - |
-| `filename_prefix` | Kaydedilen dosya adı için ön ek (varsayılan: "3d/ComfyUI") | STRING | Evet | - |
-| `viewport_state` | Bir 3D yükleyici düğümünden gelen mevcut görüntü alanı durumu. | LOAD3D | Evet | - |
-| `model_3d_info` | Önizleme için ek 3D model bilgisi. | LOAD3DMODELINFO | Hayır | - |
-| `camera_info` | Önizleme için kamera bilgisi. | LOAD3DCAMERA | Hayır | - |
-| `width` | Önizlemenin piksel cinsinden genişliği (varsayılan: 1024) | INT | Evet | min: 1, max: 4096, step: 1 |
-| `height` | Önizlemenin piksel cinsinden yüksekliği (varsayılan: 1024) | INT | Evet | min: 1, max: 4096, step: 1 |
+|-----------|-------------|-----------|----------|-------|
+| `model_3d` | Bir Gaussian splat 3B dosyası. | FILE3D | Evet | SplatAny<br>PLY<br>SPLAT<br>SPZ<br>KSPLAT |
+| `filename_prefix` | Kaydedilen dosya adı için ön ek (varsayılan: "3d/ComfyUI"). | STRING | Evet | Geçerli herhangi bir dosya adı ön eki |
+| `viewport_state` | Kamera ve model bilgilerini içeren mevcut görünüm alanı durumu. | LOAD3D | Evet | - |
+| `model_3d_info` | Görünüm alanı için ek model 3B bilgisi. | LOAD3DMODELINFO | Hayır | - |
+| `camera_info` | Görünüm alanı önizlemesi için kamera bilgisi. | LOAD3DCAMERA | Hayır | - |
+| `width` | Önizlemenin genişliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
+| `height` | Önizlemenin yüksekliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model_3d` | Kaydedilen Gaussian splat 3D dosyası. | FILE3D |
-| `model_3d_info` | Önizleme için 3D model bilgisi. | LOAD3DMODELINFO |
-| `camera_info` | Önizleme için kamera bilgisi. | LOAD3DCAMERA |
+| `model_3d` | Kaydedilen Gaussian splat 3B dosyası. | FILE3D |
+| `model_3d_info` | Görünüm alanı için model 3B bilgisi. | LOAD3DMODELINFO |
+| `camera_info` | Görünüm alanı önizlemesi için kamera bilgisi. | LOAD3DCAMERA |
 | `width` | Önizlemenin genişliği. | INT |
 | `height` | Önizlemenin yüksekliği. | INT |
 

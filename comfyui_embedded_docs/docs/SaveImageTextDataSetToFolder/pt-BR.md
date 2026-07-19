@@ -1,3 +1,5 @@
+# Salvar Conjunto de Imagens e Textos na Pasta
+
 O nó Salvar Imagem e Dataset de Texto em Pasta salva uma lista de imagens e suas respectivas legendas de texto em uma pasta especificada dentro do diretório de saída do ComfyUI. Para cada imagem salva como arquivo PNG, um arquivo de texto correspondente com o mesmo nome base é criado para armazenar sua legenda. Isso é útil para criar conjuntos de dados organizados de imagens geradas e suas descrições.
 
 ## Entradas

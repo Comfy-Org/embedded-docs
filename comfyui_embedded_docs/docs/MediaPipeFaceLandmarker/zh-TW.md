@@ -1,3 +1,5 @@
+# MediaPipe Face Landmarker
+
 ## 概述
 
 使用 MediaPipe 的 BlazeFace 和 FaceMesh 模型偵測影像中的人臉，並識別每張臉上的 468 個面部特徵點（關鍵點）。同時計算 ARKit-52 混合變形係數以進行臉部表情分析。此節點可批次處理多張影像，並為每個偵測到的人臉輸出特徵點資料和邊界框。

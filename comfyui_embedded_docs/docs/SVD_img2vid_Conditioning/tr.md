@@ -1,3 +1,5 @@
+# SVD_görüntüden_videoya_Koşullandırma
+
 SVD_img2vid_Conditioning düğümü, Stable Video Diffusion kullanarak video oluşturma için koşullandırma verilerini hazırlar. Bir başlangıç görüntüsünü alır ve CLIP vision ile VAE kodlayıcıları aracılığıyla işleyerek pozitif ve negatif koşullandırma çiftleri ile video oluşturma için boş bir gizli uzay oluşturur. Bu düğüm, oluşturulan videoda hareket, kare hızı ve artırma seviyelerini kontrol etmek için gerekli parametreleri ayarlar.
 
 ## Girişler

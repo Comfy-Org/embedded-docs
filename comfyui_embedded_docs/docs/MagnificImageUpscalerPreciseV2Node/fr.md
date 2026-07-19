@@ -1,3 +1,5 @@
+# Magnific Image Upscale (Precise V2)
+
 Voici la traduction en français de la documentation du nœud Magnific Image Upscale (Precise V2) :
 
 Le nœud Magnific Image Upscale (Precise V2) effectue un agrandissement d'image haute fidélité avec un contrôle précis de la netteté, du grain et de l'amélioration des détails. Il traite les images via une API externe, prenant en charge une résolution de sortie maximale de 10060×10060 pixels. Le nœud propose différents styles de traitement et peut automatiquement réduire l'échelle de l'entrée si la sortie demandée dépasse la taille maximale autorisée.

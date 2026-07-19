@@ -1,3 +1,5 @@
+# Ventanas de Contexto (Manual)
+
 El nodo **Ventanas de Contexto (Manual)** te permite configurar manualmente ventanas de contexto para modelos durante el muestreo. Crea segmentos de contexto superpuestos con una longitud, superposición y patrones de programación específicos para procesar datos en fragmentos manejables, manteniendo la continuidad entre segmentos. Este nodo ofrece opciones avanzadas para controlar cómo se aplican las ventanas de contexto, incluyendo la mezcla de ruido, la retención de condicionamiento y la corrección de ventanas causales.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Torch Model Derleme
+
 TorchCompileModel düğümü, bir modelin performansını optimize etmek için PyTorch derlemesi uygular. Giriş modelinin bir kopyasını oluşturur ve belirtilen arka ucu kullanarak PyTorch'un derleme işlevselliğiyle sarar. Bu, çıkarım sırasında modelin yürütme hızını artırabilir.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# GelişmişÖzelÖrnekleyici
+
 SamplerCustomAdvanced düğümü, özel gürültü, yönlendirme ve örnekleme yapılandırmaları kullanarak gelişmiş gizli alan örneklemesi gerçekleştirir. Özelleştirilebilir gürültü üretimi ve sigma çizelgeleri ile yönlendirilmiş bir örnekleme süreci boyunca bir gizli görüntüyü işler ve hem nihai örneklenmiş çıktıyı hem de mevcut olduğunda gürültüden arındırılmış bir sürümünü üretir.
 
 ## Girişler

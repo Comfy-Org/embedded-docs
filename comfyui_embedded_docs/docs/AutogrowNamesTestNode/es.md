@@ -1,3 +1,5 @@
+# AutogrowNamesTestNode
+
 Este nodo es una prueba para la funcionalidad de entrada Autogrow. Toma un número dinámico de entradas de tipo float, cada una etiquetada con un nombre específico, y combina sus valores en una sola cadena de texto separada por comas.
 
 ## Entradas

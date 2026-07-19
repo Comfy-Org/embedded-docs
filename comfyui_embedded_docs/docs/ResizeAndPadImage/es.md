@@ -1,3 +1,5 @@
+# RedimensionarYRellenarImagen
+
 El nodo ResizeAndPadImage redimensiona una imagen para que se ajuste a unas dimensiones específicas, manteniendo su relación de aspecto original. Escala la imagen proporcionalmente para que quepa dentro del ancho y alto objetivo, y luego añade relleno alrededor de los bordes para llenar el espacio restante. El color de relleno y el método de interpolación se pueden personalizar para controlar la apariencia de las áreas rellenas y la calidad del redimensionamiento.
 
 ## Entradas

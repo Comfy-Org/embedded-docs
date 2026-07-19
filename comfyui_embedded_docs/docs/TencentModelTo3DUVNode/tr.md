@@ -1,3 +1,5 @@
+# Hunyuan3D: Modelden UV'ye
+
 Bu düğüm, bir 3B model üzerinde UV açılımı (UV unfolding) gerçekleştirmek için Tencent Hunyuan3D API'sini kullanır. Giriş olarak bir 3B model dosyası alır, işlenmek üzere API'ye gönderir ve işlenmiş modeli OBJ ve FBX formatlarında, ayrıca oluşturulan UV doku görüntüsüyle birlikte döndürür. Giriş modeli 30.000'den az yüze sahip olmalıdır.
 
 ## Girişler

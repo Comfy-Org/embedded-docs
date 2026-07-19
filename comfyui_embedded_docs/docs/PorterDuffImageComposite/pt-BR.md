@@ -1,3 +1,5 @@
+# Composição de Imagem Porter-Duff
+
 O nó **PorterDuffImageComposite** é projetado para realizar composição de imagens usando os operadores de composição Porter-Duff. Ele permite a combinação de imagens de origem e destino de acordo com vários modos de mesclagem, possibilitando a criação de efeitos visuais complexos ao manipular a transparência da imagem e sobrepor imagens de maneiras criativas.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Kling 3.0 Vidéo
+
 Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge deux modes principaux : le texte-vers-vidéo, où une vidéo est créée à partir d'une description textuelle, et l'image-vers-vidéo, où une image existante est animée. Il offre également des fonctionnalités avancées comme la création de vidéos multi-segments avec des invites différentes pour chaque partie (storyboards) et la génération facultative d'un son d'accompagnement.
 
 ## Entrées

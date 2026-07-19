@@ -1,3 +1,5 @@
+# Görüntü Keskinleştir
+
 ImageSharpen düğümü, bir görüntünün kenarlarını ve detaylarını vurgulayarak netliğini artırır. Görüntüye, yoğunluğu ve yarıçapı ayarlanabilen bir keskinleştirme filtresi uygulayarak görüntünün daha belirgin ve net görünmesini sağlar.
 
 ## Girişler

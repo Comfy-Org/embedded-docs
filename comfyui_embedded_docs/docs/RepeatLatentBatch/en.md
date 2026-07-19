@@ -1,3 +1,5 @@
+# Repeat Latent Batch
+
 The RepeatLatentBatch node is designed to replicate a given batch of latent representations a specified number of times, potentially including additional data like noise masks and batch indices. This functionality is crucial for operations that require multiple instances of the same latent data, such as data augmentation or specific generative tasks.
 
 ## Inputs

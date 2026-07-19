@@ -1,3 +1,5 @@
+# Comparer
+
 Voici la traduction de la documentation du nœud StringCompare :
 
 Le nœud StringCompare compare deux chaînes de texte à l'aide de différentes méthodes de comparaison. Il peut vérifier si une chaîne commence par une autre, se termine par une autre, ou si les deux chaînes sont exactement égales. La comparaison peut être effectuée en tenant compte ou non des différences de casse.

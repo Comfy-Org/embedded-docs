@@ -1,3 +1,5 @@
+# TextEncodeAceStepAudio
+
 El nodo TextEncodeAceStepAudio procesa entradas de texto para el acondicionamiento de audio combinando etiquetas y letras en tokens, luego codificándolos con una intensidad de letras ajustable. Toma un modelo CLIP junto con descripciones de texto y letras, los tokeniza en conjunto y genera datos de acondicionamiento adecuados para tareas de generación de audio. El nodo permite ajustar la influencia de las letras mediante un parámetro de intensidad que controla su impacto en la salida final.
 
 ## Entradas

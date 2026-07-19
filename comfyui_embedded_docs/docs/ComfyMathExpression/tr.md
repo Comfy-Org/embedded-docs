@@ -1,3 +1,5 @@
+# Matematiksel İfade
+
 ComfyMathExpression düğümü, bir dizi girdi değeri kullanarak matematiksel bir formülü değerlendirir. Değişken adları (örneğin `a`, `b`, `c`) kullanarak bir ifade yazabilirsiniz ve düğüm sonucu hesaplar. Hesaplamanız için gerektiği kadar girdi değerini dinamik olarak eklemeyi destekler.
 
 ## Girdiler

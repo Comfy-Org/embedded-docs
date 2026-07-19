@@ -1,3 +1,5 @@
+# Hunyuan3Dv2ConditioningMultiView
+
 O nó **Hunyuan3Dv2ConditioningMultiView** processa embeddings de visão CLIP multivisão para geração de vídeo 3D. Ele aceita embeddings opcionais das vistas frontal, esquerda, traseira e direita e os combina com codificação posicional para criar dados de condicionamento para modelos de vídeo. O nó gera tanto o condicionamento positivo, a partir dos embeddings combinados, quanto o condicionamento negativo, com valores zero.
 
 ## Entradas

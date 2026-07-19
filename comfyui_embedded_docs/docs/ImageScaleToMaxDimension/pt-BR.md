@@ -1,4 +1,4 @@
-# ImageScaleToMaxDimension
+# Redimensionar Imagem para Dimensão Máxima
 
 O nó ImageScaleToMaxDimension redimensiona imagens para caber dentro de uma dimensão máxima especificada, mantendo a proporção original. Ele calcula se a imagem está orientada no modo retrato ou paisagem, então dimensiona a maior dimensão para corresponder ao tamanho alvo, ajustando proporcionalmente a dimensão menor. O nó suporta múltiplos métodos de upscaling para diferentes requisitos de qualidade e desempenho.
 

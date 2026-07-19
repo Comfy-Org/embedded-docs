@@ -1,3 +1,5 @@
+# SkipLayerGuidanceSD3
+
 Le nœud SkipLayerGuidanceSD3 améliore le guidage vers une structure détaillée en appliquant un ensemble supplémentaire de guidage sans classifieur avec des couches ignorées. Cette implémentation expérimentale s'inspire du guidage par attention perturbée (Perturbed Attention Guidance) et fonctionne en contournant sélectivement certaines couches pendant le processus de conditionnement négatif afin d'améliorer les détails structurels dans la sortie générée.
 
 ## Entrées

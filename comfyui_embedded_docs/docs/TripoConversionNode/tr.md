@@ -1,3 +1,5 @@
+# Tripo: Modeli Dönüştür
+
 TripoConversionNode, Tripo API'sini kullanarak 3B modelleri farklı dosya formatları arasında dönüştürür. Önceki bir Tripo işleminden (model oluşturma, iskeletleme veya yeniden hedefleme) bir görev kimliği alır ve ortaya çıkan modeli, çeşitli dışa aktarma seçenekleriyle istediğiniz formata dönüştürür.
 
 ## Girişler

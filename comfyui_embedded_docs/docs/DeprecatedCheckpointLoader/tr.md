@@ -1,3 +1,5 @@
+# DeprecatedCheckpointLoader
+
 CheckpointLoader düğümü, gelişmiş yükleme işlemleri için tasarlanmış olup, özellikle model kontrol noktalarını ve bunların yapılandırmalarını yükler. Belirtilen dizinlerden yapılandırmalar ve kontrol noktaları dahil olmak üzere, üretken modelleri başlatmak ve çalıştırmak için gerekli model bileşenlerinin alınmasını kolaylaştırır.
 
 ## Girişler

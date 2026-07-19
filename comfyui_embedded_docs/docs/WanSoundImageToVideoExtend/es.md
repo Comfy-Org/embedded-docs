@@ -1,3 +1,5 @@
+# WanSoundImageToVideoExtend
+
 El nodo WanSoundImageToVideoExtend extiende un latente de video existente generando fotogramas adicionales, guiado opcionalmente por audio, una imagen de referencia y un video de control. Toma un latente de video inicial y produce una secuencia de video más larga, utilizando las condiciones y señales de audio proporcionadas para influir en el nuevo contenido.
 
 ## Entradas

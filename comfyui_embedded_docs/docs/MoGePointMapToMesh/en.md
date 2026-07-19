@@ -1,3 +1,5 @@
+# Convert MoGe Point Map to Mesh
+
 ## Overview
 
 This node converts a MoGe point map into a 3D mesh. It takes the geometry data produced by a MoGe depth estimation node and triangulates it into a mesh with UV coordinates and an optional texture.

@@ -1,3 +1,5 @@
+# Gizli Karıştırma
+
 LatentBlend düğümü, iki gizli (latent) örneği belirtilen bir karışım faktörü kullanarak birleştirir. İki gizli girdi alır ve ilk örneğin karışım faktörüyle, ikinci örneğin ise tersiyle ağırlıklandırıldığı yeni bir çıktı oluşturur. Girdi örnekleri farklı boyutlara sahipse, ikinci örnek otomatik olarak ilk örneğin boyutlarına yeniden boyutlandırılır.
 
 ## Girdiler

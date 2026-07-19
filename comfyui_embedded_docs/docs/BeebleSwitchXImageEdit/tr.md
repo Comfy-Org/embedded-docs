@@ -1,3 +1,5 @@
+# Beeble SwitchX Görüntü Düzenleme
+
 ## Genel Bakış
 
 Beeble SwitchX ile tek bir görseli düzenleyin. Bu düğüm, orijinal nesnenin piksellerini korurken sahnedeki her şeyi (arka plan, aydınlatma, kostüm) değiştirebilir. Yeni görünümü tanımlamak için bir referans görseli ve/veya metin istemi sağlayın. Maksimum çözünürlük yaklaşık 2,77 megapikseldir.

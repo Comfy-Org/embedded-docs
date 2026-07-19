@@ -1,3 +1,5 @@
+# ByteDanceImageEditNode
+
 El nodo ByteDance Image Edit permite modificar imágenes utilizando los modelos de IA de ByteDance a través de una API. Debes proporcionar una imagen de entrada y un mensaje de texto que describa los cambios deseados, y el nodo procesará la imagen según tus instrucciones. El nodo maneja automáticamente la comunicación con la API y devuelve la imagen editada.
 
 ## Entradas

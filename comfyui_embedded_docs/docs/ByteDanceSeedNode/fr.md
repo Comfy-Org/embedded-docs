@@ -1,3 +1,5 @@
+# ByteDance Seed
+
 Voici la traduction de la documentation technique du nœud ComfyUI, en respectant les règles établies :
 
 ## Aperçu

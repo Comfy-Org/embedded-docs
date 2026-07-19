@@ -1,3 +1,5 @@
+# SVD_img2vid_Conditioning
+
 Le nœud **SVD_img2vid_Conditioning** prépare les données de conditionnement pour la génération vidéo à l'aide de Stable Video Diffusion. Il prend une image initiale et la traite via les encodeurs CLIP vision et VAE pour créer des paires de conditionnement positives et négatives, ainsi qu'un espace latent vide pour la génération vidéo. Ce nœud configure les paramètres nécessaires pour contrôler le mouvement, la fréquence d'images et le niveau d'augmentation dans la vidéo générée.
 
 ## Entrées

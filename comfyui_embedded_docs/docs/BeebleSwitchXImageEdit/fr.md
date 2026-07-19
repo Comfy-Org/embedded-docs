@@ -1,4 +1,4 @@
-# Aperçu
+# Beeble SwitchX Édition d’Image
 
 Modifiez une seule image avec Beeble SwitchX. Ce nœud peut changer n'importe quel élément de la scène (arrière-plan, éclairage, costume) tout en préservant les pixels du sujet d'origine. Fournissez une image de référence et/ou une invite textuelle pour décrire le nouvel aspect. La résolution maximale est d'environ 2,77 mégapixels.
 

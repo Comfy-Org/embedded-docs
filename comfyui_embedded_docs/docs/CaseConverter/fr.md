@@ -1,3 +1,5 @@
+# Convertisseur de casse
+
 Voici la traduction en français de la documentation du nœud Case Converter :
 
 Le nœud Case Converter transforme les chaînes de texte en différents formats de casse. Il prend une chaîne d'entrée et la convertit en fonction du mode sélectionné, produisant une chaîne de sortie avec la mise en forme de casse spécifiée appliquée. Le nœud prend en charge quatre options de conversion de casse différentes pour modifier la capitalisation de votre texte.

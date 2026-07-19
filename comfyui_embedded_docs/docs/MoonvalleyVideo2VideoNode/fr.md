@@ -1,3 +1,5 @@
+# MoonvalleyVideo2VideoNode
+
 Voici la traduction en français de la documentation du nœud ComfyUI **Moonvalley Video to Video** :
 
 Le nœud Moonvalley Marey Video to Video transforme une vidéo d'entrée en une nouvelle vidéo basée sur une description textuelle. Il utilise l'API Moonvalley pour générer des vidéos correspondant à votre invite tout en conservant les caractéristiques de mouvement ou de posture de la vidéo d'origine. Vous pouvez contrôler le style et le contenu de la vidéo de sortie via des invites textuelles et divers paramètres de génération.

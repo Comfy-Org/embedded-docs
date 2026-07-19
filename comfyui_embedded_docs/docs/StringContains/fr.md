@@ -1,3 +1,5 @@
+# Contient
+
 Le nœud StringContains vérifie si une chaîne de caractères donnée contient une sous-chaîne spécifiée. Il peut effectuer cette vérification avec une correspondance sensible à la casse ou insensible à la casse, renvoyant un résultat booléen indiquant si la sous-chaîne a été trouvée dans la chaîne principale.
 
 ## Entrées

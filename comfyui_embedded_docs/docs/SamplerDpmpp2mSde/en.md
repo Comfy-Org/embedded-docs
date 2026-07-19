@@ -1,3 +1,5 @@
+# SamplerDpmpp2mSde
+
 This node is designed to generate a sampler for the DPMPP_2M_SDE model, allowing for the creation of samples based on specified solver types, noise levels, and computational device preferences. It abstracts the complexities of sampler configuration, providing a streamlined interface for generating samples with customized settings.
 
 ## Inputs

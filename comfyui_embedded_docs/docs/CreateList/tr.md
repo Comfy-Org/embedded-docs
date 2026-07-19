@@ -1,3 +1,5 @@
+# Liste Oluştur
+
 Liste Oluştur düğümü, birden fazla girdiyi tek bir sıralı listede birleştirir. Aynı veri türünden herhangi bir sayıda girdi alır ve bunları bağlandıkları sırayla birleştirir. Bu düğüm, bir iş akışında diğer düğümler tarafından işlenmek üzere görüntü veya metin gibi veri grupları hazırlamak için kullanışlıdır.
 
 ## Girdiler

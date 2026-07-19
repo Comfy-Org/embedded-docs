@@ -1,3 +1,5 @@
+# Props de Cond Set Combinar
+
 O nó **ConditioningSetPropertiesAndCombine** modifica dados de condicionamento aplicando propriedades de uma nova entrada de condicionamento a uma entrada de condicionamento existente. Ele combina os dois conjuntos de condicionamento enquanto controla a intensidade do novo condicionamento e especifica como a área de condicionamento deve ser aplicada.
 
 ## Entradas

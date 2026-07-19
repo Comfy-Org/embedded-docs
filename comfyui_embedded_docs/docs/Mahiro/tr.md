@@ -1,3 +1,5 @@
+# Mahiro o kadar sevimli ki daha iyi bir rehberlik fonksiyonunu hak ediyor!! (。・ω・。)
+
 Mahiro düğümü, pozitif ve negatif yönlendirmeler arasındaki farktan ziyade pozitif yönlendirmenin yönüne daha fazla odaklanmak için yönlendirme işlevini değiştirir. Normalize edilmiş koşullu ve koşulsuz gürültü giderme çıktıları arasındaki kosinüs benzerliğini kullanarak özel bir yönlendirme ölçekleme yaklaşımı uygulayan yamalı bir model oluşturur. Bu deneysel düğüm, üretimi pozitif yönlendirmenin amaçlanan yönüne daha güçlü bir şekilde yönlendirmeye yardımcı olur.
 
 ## Girişler

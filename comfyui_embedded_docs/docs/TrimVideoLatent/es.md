@@ -1,3 +1,5 @@
+# TrimVideoLatent
+
 El nodo TrimVideoLatent elimina fotogramas del inicio de una representación latente de video. Toma una muestra de video latente y recorta un número específico de fotogramas desde el principio, devolviendo la porción restante del video. Esto permite acortar secuencias de video eliminando los fotogramas iniciales.
 
 ## Entradas

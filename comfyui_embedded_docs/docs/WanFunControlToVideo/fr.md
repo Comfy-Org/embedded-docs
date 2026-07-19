@@ -1,3 +1,5 @@
+# WanFunControlToVideo
+
 Ce nœud a été ajouté pour prendre en charge le modèle Alibaba Wan Fun Control pour la génération vidéo, et a été intégré après [ce commit](https://github.com/comfyanonymous/ComfyUI/commit/3661c833bcc41b788a7c9f0e7bc48524f8ee5f82).
 
 - **Objectif :** Préparer les informations de conditionnement nécessaires à la génération vidéo, en utilisant le modèle Wan 2.1 Fun Control.

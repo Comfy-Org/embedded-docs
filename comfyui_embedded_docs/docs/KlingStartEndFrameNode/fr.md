@@ -1,3 +1,5 @@
+# Kling Début-Fin Image vers Vidéo
+
 Voici la traduction en français de la documentation du nœud Kling Start-End Frame to Video :
 
 Le nœud Kling Start-End Frame to Video crée une séquence vidéo qui effectue une transition entre vos images de début et de fin fournies. Il génère toutes les images intermédiaires pour produire une transformation fluide de la première à la dernière image. Ce nœud appelle l'API image-vers-vidéo mais ne prend en charge que les options d'entrée compatibles avec le champ de requête `image_tail`.

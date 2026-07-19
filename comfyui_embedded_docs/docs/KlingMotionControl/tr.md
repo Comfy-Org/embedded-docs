@@ -1,3 +1,5 @@
+# Kling Hareket Kontrolü
+
 Kling Motion Control düğümü, referans bir görüntü ve metin istemiyle tanımlanan bir karaktere, referans bir videodaki hareket, ifade ve kamera hareketlerini uygulayarak bir video oluşturur. Karakterin nihai yönünün referans videodan mı yoksa referans görüntüden mi geleceğini kontrol etmenizi sağlar.
 
 ## Girişler

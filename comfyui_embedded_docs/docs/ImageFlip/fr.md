@@ -1,3 +1,5 @@
+# Retournement d'image
+
 Voici la traduction en français de la documentation du nœud ImageFlip :
 
 Le nœud ImageFlip retourne les images le long de différents axes. Il peut retourner les images verticalement le long de l'axe x ou horizontalement le long de l'axe y. Le nœud utilise les opérations torch.flip pour effectuer le retournement en fonction de la méthode sélectionnée.

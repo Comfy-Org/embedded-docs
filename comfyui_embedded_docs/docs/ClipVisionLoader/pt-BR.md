@@ -1,3 +1,5 @@
+# Carregar CLIP Vision
+
 Este nó detecta automaticamente os modelos localizados na pasta `ComfyUI/models/clip_vision`, bem como quaisquer caminhos de modelos adicionais configurados no arquivo `extra_model_paths.yaml`. Se você adicionar modelos após iniciar o ComfyUI, **atualize a interface do ComfyUI** para garantir que os arquivos de modelo mais recentes sejam listados.
 
 ## Entradas

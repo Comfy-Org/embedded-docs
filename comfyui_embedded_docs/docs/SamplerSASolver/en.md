@@ -1,3 +1,5 @@
+# SamplerSASolver
+
 The SamplerSASolver node implements a custom sampling algorithm for diffusion models. It uses a predictor-corrector approach with configurable order settings and stochastic differential equation (SDE) parameters to generate samples from the input model.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# Kling Omni Metinden Videoya (Pro)
+
 Bu düğüm, bir metin açıklamasından video oluşturmak için en son Kling AI modelini kullanır. İsteğinizi uzak bir API'ye gönderir ve oluşturulan videoyu döndürür. Düğüm, videonun uzunluğunu, şeklini, kalitesini kontrol etmenize ve hatta çok çekimli storyboard'lar oluşturmanıza olanak tanır.
 
 ## Girişler

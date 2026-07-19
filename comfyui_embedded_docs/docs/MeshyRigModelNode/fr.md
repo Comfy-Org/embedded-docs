@@ -1,3 +1,5 @@
+# Meshy : Rig du modèle
+
 Le nœud Meshy : Rig Model prend un modèle 3D issu d'une tâche Meshy précédente et crée automatiquement un squelette pour celui-ci, produisant un personnage armaturé pouvant être posé et animé. Le nœud génère le modèle armaturé aux formats de fichier GLB et FBX.
 
 ## Entrées

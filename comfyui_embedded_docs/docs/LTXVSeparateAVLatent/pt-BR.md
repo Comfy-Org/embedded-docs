@@ -1,3 +1,5 @@
+# LTXVSeparateAVLatent
+
 O nó LTXVSeparateAVLatent recebe uma representação latente audiovisual combinada e a divide em duas partes distintas: uma para vídeo e outra para áudio. Ele separa as amostras e, se presente, as máscaras de ruído do latente de entrada, criando dois novos objetos latentes.
 
 ## Entradas

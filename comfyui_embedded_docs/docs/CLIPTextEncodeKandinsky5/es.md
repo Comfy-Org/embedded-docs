@@ -1,3 +1,5 @@
+# CLIPTextEncodeKandinsky5
+
 El nodo CLIPTextEncodeKandinsky5 prepara indicaciones de texto para su uso con el modelo Kandinsky 5. Toma dos entradas de texto separadas, las tokeniza utilizando un modelo CLIP proporcionado y las combina en una única salida de condicionamiento. Esta salida se utiliza para guiar el proceso de generación de imágenes.
 
 ## Entradas

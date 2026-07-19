@@ -1,3 +1,5 @@
+# SV3D_Acondicionamiento
+
 El nodo SV3D_Conditioning prepara datos de condicionamiento para la generación de video 3D utilizando el modelo SV3D. Toma una imagen inicial y la procesa a través de los codificadores CLIP vision y VAE para crear condicionamiento positivo y negativo, junto con una representación latente. El nodo genera secuencias de elevación y acimut de cámara para la generación de video de múltiples fotogramas según el número especificado de fotogramas de video.
 
 ## Entradas

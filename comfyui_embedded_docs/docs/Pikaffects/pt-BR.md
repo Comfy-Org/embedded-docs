@@ -1,3 +1,5 @@
+# Pikaffects
+
 O nó Pikaffects gera vídeos com diversos efeitos visuais aplicados a uma imagem de entrada. Ele utiliza a API de geração de vídeos da Pika para transformar imagens estáticas em vídeos animados com efeitos específicos, como derretimento, explosão ou levitação. O nó requer uma chave de API e um token de autenticação para acessar o serviço Pika.
 
 ## Entradas

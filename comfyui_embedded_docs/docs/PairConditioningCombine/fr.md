@@ -1,3 +1,5 @@
+# Cond Pair Combiner
+
 Le nœud **PairConditioningCombine** fusionne deux paires de conditionnement distinctes (chacune composée d'un conditionnement positif et négatif) en une seule paire combinée. Il prend le conditionnement positif et négatif de deux sources différentes et les combine à l'aide de la logique interne de ComfyUI, produisant un conditionnement positif final et un conditionnement négatif final. Ce nœud est expérimental et conçu pour des workflows avancés de manipulation de conditionnement.
 
 ## Entrées

@@ -1,3 +1,5 @@
+# Extraer y Guardar Lora
+
 El nodo LoraSave extrae y guarda archivos LoRA (Adaptación de Bajo Rango) a partir de diferencias de modelos. Puede procesar diferencias de modelos de difusión, diferencias de codificadores de texto, o ambas, convirtiéndolas en formato LoRA con rango y tipo especificados. El archivo LoRA resultante se guarda en el directorio de salida para su uso posterior.
 
 ## Entradas

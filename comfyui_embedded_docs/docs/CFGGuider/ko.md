@@ -1,3 +1,5 @@
+# CFG 가이드
+
 다음은 ComfyUI CFGGuider 노드 문서의 한국어 번역입니다.
 
 ---

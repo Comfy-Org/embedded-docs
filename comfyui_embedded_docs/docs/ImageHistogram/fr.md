@@ -1,3 +1,5 @@
+# Histogramme d'image
+
 Le nœud ImageHistogram analyse la distribution des couleurs d'une image d'entrée. Il calcule et produit plusieurs histogrammes, qui sont des graphiques montrant combien de pixels de l'image possèdent chaque valeur d'intensité possible. Il génère des histogrammes distincts pour les canaux de couleur rouge, vert et bleu, un histogramme RVB composite, ainsi qu'un histogramme de luminance basé sur une formule standard de luminosité.
 
 ## Entrées

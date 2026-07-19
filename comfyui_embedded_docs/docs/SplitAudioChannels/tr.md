@@ -1,3 +1,5 @@
+# Ses Kanallarını Ayır
+
 SplitAudioChannels düğümü, stereo sesi ayrı sol ve sağ kanallara ayırır. İki kanallı bir stereo ses girişi alır ve biri sol kanal, diğeri sağ kanal için olmak üzere iki ayrı ses akışı çıktısı verir.
 
 ## Girişler

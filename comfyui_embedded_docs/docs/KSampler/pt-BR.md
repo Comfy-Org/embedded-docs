@@ -1,3 +1,5 @@
+# KSampler
+
 O KSampler funciona da seguinte forma: ele modifica as informações da imagem latente original fornecidas com base em um modelo específico e em condições positivas e negativas.
 Primeiro, ele adiciona ruído aos dados da imagem original de acordo com a **semente** e a **força de redução de ruído** definidas, então insere o **Modelo** pré-definido combinado com as condições de orientação **positiva** e **negativa** para gerar a imagem.
 

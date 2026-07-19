@@ -1,3 +1,5 @@
+# LTXVKoşullandırma
+
 LTXVConditioning düğümü, video oluşturma modelleri için hem pozitif hem de negatif koşullandırma girdilerine kare hızı bilgisi ekler. Mevcut koşullandırma verilerini alır ve belirtilen kare hızı değerini her iki koşullandırma kümesine uygulayarak bunları video modeli işleme için uygun hale getirir.
 
 ## Girdiler

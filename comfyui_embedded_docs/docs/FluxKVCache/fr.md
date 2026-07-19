@@ -1,3 +1,5 @@
+# Flux KV Cache
+
 Le nœud Flux KV Cache permet d'activer une optimisation du cache clé-valeur (KV Cache) pour les modèles de la famille Flux. Cette optimisation améliore les performances lors de l'utilisation d'images de référence en mettant en cache certains calculs, ce qui peut accélérer le processus de génération.
 
 ## Entrées

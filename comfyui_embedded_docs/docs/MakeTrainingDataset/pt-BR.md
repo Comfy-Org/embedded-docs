@@ -1,3 +1,5 @@
+# Criar Conjunto de Dados de Treinamento
+
 Este nó prepara dados para treinamento, codificando imagens e textos. Ele recebe uma lista de imagens e uma lista correspondente de legendas de texto, em seguida, utiliza um modelo VAE para converter as imagens em representações latentes e um modelo CLIP para converter o texto em dados de condicionamento. Os pares resultantes de latentes e condicionamentos são gerados como listas, prontos para uso em fluxos de trabalho de treinamento.
 
 ## Entradas

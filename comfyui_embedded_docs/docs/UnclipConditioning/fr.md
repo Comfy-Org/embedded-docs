@@ -1,3 +1,5 @@
+# ConditionnementunCLIP
+
 Ce nœud est conçu pour intégrer les sorties de la vision CLIP dans le processus de conditionnement, en ajustant l'influence de ces sorties en fonction de paramètres spécifiques de force et d'augmentation du bruit. Il enrichit le conditionnement avec un contexte visuel, améliorant ainsi le processus de génération.
 
 ## Entrées

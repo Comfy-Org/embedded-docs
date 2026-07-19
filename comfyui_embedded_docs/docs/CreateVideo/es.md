@@ -1,3 +1,5 @@
+# Crear video
+
 El nodo Crear Video genera un archivo de video a partir de una secuencia de imágenes. Puedes especificar la velocidad de reproducción usando fotogramas por segundo y, opcionalmente, agregar audio al video. El nodo combina tus imágenes en un formato de video que se puede reproducir con la velocidad de fotogramas especificada.
 
 ## Entradas

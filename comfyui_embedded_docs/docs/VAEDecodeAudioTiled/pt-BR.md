@@ -1,3 +1,5 @@
+# VAE Decodificar Áudio (Em Blocos)
+
 Este nó converte uma representação de áudio comprimida (amostras latentes) de volta em uma forma de onda de áudio usando um Autoencoder Variacional (VAE). Ele processa os dados em seções menores e sobrepostas (tiles) para gerenciar o uso de memória, tornando-o adequado para lidar com sequências de áudio mais longas.
 
 ## Entradas

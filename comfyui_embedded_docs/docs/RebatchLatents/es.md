@@ -1,3 +1,5 @@
+# Reagrupar latentes
+
 El nodo RebatchLatents está diseñado para reorganizar un lote de representaciones latentes en una nueva configuración de lote, basada en un tamaño de lote especificado. Garantiza que las muestras latentes se agrupen adecuadamente, manejando variaciones en dimensiones y tamaños, para facilitar el procesamiento posterior o la inferencia del modelo.
 
 ## Entradas

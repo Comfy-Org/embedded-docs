@@ -1,3 +1,5 @@
+# CargarLatente
+
 El nodo LoadLatent carga representaciones latentes previamente guardadas desde archivos .latent en el directorio de entrada. Lee los datos del tensor latente del archivo y aplica los ajustes de escalado necesarios antes de devolver los datos latentes para su uso en otros nodos.
 
 ## Entradas

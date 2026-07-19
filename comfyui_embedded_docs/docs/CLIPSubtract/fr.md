@@ -1,3 +1,5 @@
+# CLIPSubtract
+
 Le nœud CLIPSubtract effectue une opération de soustraction entre deux modèles CLIP. Il prend le premier modèle CLIP comme base et soustrait les correctifs clés du second modèle CLIP, avec un multiplicateur optionnel pour contrôler l'intensité de la soustraction. Cela permet un mélange fin des modèles en supprimant des caractéristiques spécifiques d'un modèle à l'aide d'un autre.
 
 ## Entrées

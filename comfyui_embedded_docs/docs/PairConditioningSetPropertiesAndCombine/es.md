@@ -1,3 +1,5 @@
+# Cond Pair Set Props Combine
+
 El nodo `PairConditioningSetPropertiesAndCombine` modifica y combina pares de condicionamiento aplicando nuevos datos de condicionamiento a las entradas de condicionamiento positivo y negativo existentes. Permite ajustar la intensidad del condicionamiento aplicado y controlar cómo se establece el área de condicionamiento. Este nodo es particularmente útil en flujos de trabajo avanzados de manipulación de condicionamiento donde se necesita fusionar múltiples fuentes de condicionamiento.
 
 ## Entradas

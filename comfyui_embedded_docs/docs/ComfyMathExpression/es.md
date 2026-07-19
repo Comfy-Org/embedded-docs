@@ -1,3 +1,5 @@
+# Expresión matemática
+
 El nodo ComfyMathExpression evalúa una fórmula matemática utilizando un conjunto de valores de entrada. Puedes escribir una expresión usando nombres de variables (como `a`, `b`, `c`), y el nodo calculará el resultado. Admite la adición dinámica de tantos valores de entrada como sean necesarios para tu cálculo.
 
 ## Entradas

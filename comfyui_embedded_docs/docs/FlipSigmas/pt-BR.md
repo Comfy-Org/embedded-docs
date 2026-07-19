@@ -1,3 +1,5 @@
+# FlipSigmas
+
 O nó `FlipSigmas` foi projetado para manipular a sequência de valores sigma usados em modelos de difusão, invertendo sua ordem e garantindo que o primeiro valor seja diferente de zero, caso originalmente seja zero. Essa operação é crucial para adaptar os níveis de ruído em ordem inversa, facilitando o processo de geração em modelos que operam reduzindo gradualmente o ruído dos dados.
 
 ## Entradas

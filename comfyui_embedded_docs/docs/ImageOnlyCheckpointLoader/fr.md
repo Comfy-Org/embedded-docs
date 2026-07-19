@@ -1,3 +1,5 @@
+# Chargeur de points de contrôle uniquement pour image (modèle img2vid)
+
 Ce nœud détecte les modèles situés dans le dossier `ComfyUI/models/checkpoints`, et lit également les modèles depuis les chemins supplémentaires configurés dans le fichier extra_model_paths.yaml. Il peut parfois être nécessaire d'**actualiser l'interface ComfyUI** pour lui permettre de lire les fichiers de modèles depuis le dossier correspondant.
 
 Ce nœud est spécialisé dans le chargement de points de contrôle (checkpoints) spécifiquement pour les modèles basés sur l'image au sein de workflows de génération vidéo. Il récupère et configure efficacement les composants nécessaires à partir d'un point de contrôle donné, en se concentrant sur les aspects liés à l'image du modèle.

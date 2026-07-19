@@ -1,3 +1,5 @@
+# CosmosPredict2ImageToVideoLatent
+
 Esta documentação foi gerada por IA. Se encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/CosmosPredict2ImageToVideoLatent/en.md)
 
 O nó CosmosPredict2ImageToVideoLatent cria representações latentes de vídeo a partir de imagens para geração de vídeos. Ele pode gerar um latente de vídeo em branco ou incorporar imagens de início e fim para criar sequências de vídeo com dimensões e duração especificadas. O nó gerencia a codificação das imagens no formato de espaço latente apropriado para processamento de vídeo.

@@ -1,3 +1,5 @@
+# WanGörüntüdenVideoya
+
 WanImageToVideo düğümü, video oluşturma görevleri için conditioning ve latent temsillerini hazırlar. Video oluşturma için boş bir latent alanı oluşturur ve isteğe bağlı olarak video oluşturma sürecini yönlendirmek için başlangıç görüntüleri ve CLIP görüş çıktılarını dahil edebilir. Düğüm, sağlanan görüntü ve görüş verilerine dayanarak hem pozitif hem de negatif conditioning girdilerini değiştirir.
 
 ## Girdiler

@@ -1,3 +1,5 @@
+# Meshy: Riggear Modelo
+
 El nodo Meshy: Rig Model toma un modelo 3D de una tarea previa de Meshy y crea automáticamente un esqueleto para él, produciendo un personaje riggeado que puede ser posado y animado. El nodo genera el modelo riggeado en formatos de archivo GLB y FBX.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# Load Image (from Folder)
+
 This node loads multiple images from a specified subfolder within ComfyUI's input directory. It scans the chosen folder for common image file types and returns them as a list, making it useful for batch processing or dataset preparation.
 
 ## Inputs

@@ -1,3 +1,5 @@
+# ElevenLabs Anında Ses Klonlama
+
 ElevenLabs Anlık Ses Klonlama düğümü, bir kişinin sesine ait 1 ila 8 ses kaydını analiz ederek yeni ve benzersiz bir ses modeli oluşturur. Bu örnekleri ElevenLabs API'sine gönderir; API, bunları işleyerek metin-konuşma sentezinde kullanılabilecek bir ses klonu oluşturur.
 
 ## Girişler

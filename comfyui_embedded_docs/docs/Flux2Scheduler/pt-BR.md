@@ -1,3 +1,5 @@
+# Flux2Scheduler
+
 O nó Flux2Scheduler gera uma sequência de níveis de ruído (sigmas) para o processo de remoção de ruído, especificamente adaptada para o modelo Flux. Ele calcula um cronograma com base no número de etapas de remoção de ruído e nas dimensões da imagem alvo, o que influencia a progressão da remoção de ruído durante a geração de imagens.
 
 ## Entradas

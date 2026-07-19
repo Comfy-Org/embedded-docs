@@ -1,3 +1,5 @@
+# Kling Omni Görsel (Pro)
+
 Kling Omni Image (Pro) düğümü, en yeni Kling AI modelini kullanarak görseller oluşturur veya düzenler. Bir metin açıklamasına dayanarak görseller üretir ve isteğe bağlı olarak stili veya içeriği yönlendirmek için referans görselleri kullanabilir. Düğüm, harici bir API'ye istek gönderir; API, görevi işler ve nihai görsel(ler)i döndürür.
 
 ## Girişler

@@ -1,3 +1,5 @@
+# Beeble SwitchX Édition Vidéo
+
 Voici la traduction de la documentation technique du nœud ComfyUI **Beeble SwitchX Video Edit** :
 
 # Beeble SwitchX Video Edit

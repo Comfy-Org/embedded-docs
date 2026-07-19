@@ -1,3 +1,5 @@
+# Wan22ImageToVideoLatent
+
 Le nœud Wan22ImageToVideoLatent crée des représentations latentes vidéo à partir d'images. Il génère un espace latent vidéo vierge avec des dimensions spécifiées et peut éventuellement encoder une séquence d'images de départ dans les premières trames. Lorsqu'une image de départ est fournie, il encode l'image dans l'espace latent et crée un masque de bruit correspondant pour les régions à peindre.
 
 ## Entrées

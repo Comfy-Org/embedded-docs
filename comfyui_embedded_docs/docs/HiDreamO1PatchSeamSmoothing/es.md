@@ -1,4 +1,4 @@
-# Descripción General
+# Suavizado de Costuras de Parches HiDream-O1
 
 Este nodo reduce las costuras visibles en imágenes generadas por el modelo HiDream-O1 promediando la salida del modelo en múltiples posiciones de cuadrícula desplazadas durante la parte final del proceso de muestreo. Funciona ejecutando el modelo varias veces con alineaciones de imagen ligeramente diferentes y combinando los resultados, lo que ayuda a cancelar los artefactos en forma de cuadrícula que pueden aparecer en los bordes de los parches.
 

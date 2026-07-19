@@ -1,3 +1,5 @@
+# Kling Texto para Vídeo (Controle de Câmera)
+
 Nó de Controle de Câmera Kling para Texto para Vídeo transforma texto em vídeos cinematográficos com movimentos profissionais de câmera que simulam a cinematografia do mundo real. Este nó suporta o controle de ações de câmera virtual, incluindo zoom, rotação, panorâmica, inclinação e visão em primeira pessoa, mantendo o foco no seu texto original. A duração, o modo e o nome do modelo são codificados porque o controle de câmera é suportado apenas no modo profissional com o modelo kling-v1-5 na duração de 5 segundos.
 
 ## Entradas

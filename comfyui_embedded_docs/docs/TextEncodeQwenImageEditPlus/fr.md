@@ -1,3 +1,5 @@
+# TextEncodeQwenImageEditPlus
+
 Voici la traduction en français de la documentation du nœud ComfyUI `TextEncodeQwenImageEditPlus` :
 
 Le nœud TextEncodeQwenImageEditPlus traite des instructions textuelles et des images optionnelles pour générer des données de conditionnement destinées à des tâches de génération ou d'édition d'images. Il utilise un modèle spécialisé pour analyser les images d'entrée et comprendre comment les instructions textuelles doivent les modifier, puis encode ces informations pour les utiliser dans les étapes de génération ultérieures. Le nœud peut gérer jusqu'à trois images d'entrée et, éventuellement, générer des latents de référence lorsqu'un VAE est fourni.

@@ -1,3 +1,5 @@
+# PikaTextToVideoNode2_2
+
 O nó Pika Text2Video v2.2 envia um prompt de texto para a API Pika versão 2.2 para gerar um vídeo. Ele converte sua descrição textual em um vídeo usando o serviço de geração de vídeo por IA da Pika. O nó permite personalizar vários aspectos do processo de geração de vídeo, incluindo proporção de aspecto, duração e resolução.
 
 ## Entradas

@@ -1,3 +1,5 @@
+# EasyCache
+
 O nó EasyCache implementa um sistema de cache nativo para modelos, com o objetivo de melhorar o desempenho ao reutilizar etapas previamente computadas durante o processo de amostragem. Ele adiciona a funcionalidade EasyCache a um modelo, com limites configuráveis para quando iniciar e parar o uso do cache durante a linha do tempo de amostragem.
 
 ## Entradas

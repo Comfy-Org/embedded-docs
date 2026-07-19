@@ -1,3 +1,5 @@
+# Controles de Recraft
+
 Crea Controles Recraft para personalizar la generación Recraft. Este nodo permite configurar ajustes de color que se utilizarán durante el proceso de generación de imágenes Recraft.
 
 ## Entradas

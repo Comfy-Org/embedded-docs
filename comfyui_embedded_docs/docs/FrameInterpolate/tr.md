@@ -1,3 +1,5 @@
+# Kare Enterpolasyonu
+
 ## Genel Bakış
 
 Frame Interpolate düğümü, bir görüntü dizisindeki mevcut kareler arasına yeni kareler ekleyerek kare hızını etkili bir şekilde artırır. Ara karelerin nasıl görünmesi gerektiğini tahmin etmek için bir yapay zeka modeli kullanır. Bu özellik, yumuşak ağır çekim efektleri oluşturmak veya bir videonun akıcılığını artırmak için kullanılabilir.

@@ -1,3 +1,5 @@
+# HappyHorse Video Düzenleme
+
 ## Genel Bakış
 
 HappyHorse modelini kullanarak bir videoyu metin talimatları veya referans görsellerle düzenleyin. Çıktı süresi 3-15 saniye arasındadır ve giriş videosuyla eşleşir; 15 saniyeden uzun girişler kısaltılır.

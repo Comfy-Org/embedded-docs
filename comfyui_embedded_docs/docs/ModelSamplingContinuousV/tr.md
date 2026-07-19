@@ -1,3 +1,5 @@
+# ModelÖrneklemeSürekliV
+
 **ModelSamplingContinuousV** düğümü, sürekli V-tahmin örnekleme parametrelerini uygulayarak bir modelin örnekleme davranışını değiştirir. Giriş modelinin bir kopyasını oluşturur ve gelişmiş örnekleme kontrolü için özel sigma aralığı ayarlarıyla yapılandırır. Bu, kullanıcıların belirli minimum ve maksimum sigma değerleriyle örnekleme sürecini ince ayar yapmasına olanak tanır.
 
 ## Girişler
