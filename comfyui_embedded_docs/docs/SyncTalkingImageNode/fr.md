@@ -8,9 +8,9 @@ Animez un portrait fixe en une vidéo parlante pilotée par un fichier audio voc
 |-----------|-------------|-----------------|--------|-------|
 | `image` | Une seule image avec un visage clairement visible, jusqu'à 4K (4096x2160). | IMAGE | Oui | Une seule image requise |
 | `audio` | Audio vocal pilotant la vidéo parlante ; la durée de sortie lui correspond. Enchaînez n'importe quel nœud TTS ici pour piloter l'animation à partir d'un texte. | AUDIO | Oui | Durée maximale : 600 secondes |
-| `prompt` | Indication facultative sur la façon dont le portrait prend vie, par exemple « faire sourire le sujet et regarder la caméra ». Laissez vide pour un mouvement de parole naturel. (par défaut : "") | STRING | Non | Texte multiligne |
-| `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. (par défaut : 0) | INT | Non | 0 à 2147483647 |
-| `model` | Modèle de génération sync.so. L'entrée d'image est exclusive à sync-3. | COMBO | Oui | `"sync-3"` |
+| `invite` | Indication facultative sur la façon dont le portrait prend vie, par exemple « faire sourire le sujet et regarder la caméra ». Laissez vide pour un mouvement de parole naturel. (par défaut : "") | STRING | Non | Texte multiligne |
+| `graine` | La graine détermine si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine. (par défaut : 0) | INT | Non | 0 à 2147483647 |
+| `modèle` | Modèle de génération sync.so. L'entrée d'image est exclusive à sync-3. | COMBO | Oui | `"sync-3"` |
 | `speaker_selection` | Quel visage animer lorsque plusieurs personnes sont visibles. `default` : laisser le modèle décider. `coordinates` : cibler le visage au pixel (speaker_x, speaker_y) dans l'image. La détection automatique n'est pas prise en charge pour les images. (par défaut : "default") | COMBO | Non | `"default"`<br>`"coordinates"` |
 | `speaker_x` | Coordonnée X en pixels du visage de l'orateur. Utilisé uniquement lorsque speaker_selection est 'coordinates'. (par défaut : 0) | INT | Non | 0 à 4096 |
 | `speaker_y` | Coordonnée Y en pixels du visage de l'orateur. Utilisé uniquement lorsque speaker_selection est 'coordinates'. (par défaut : 0) | INT | Non | 0 à 4096 |

@@ -6,10 +6,10 @@ Este nó ressincroniza o movimento da boca em um vídeo com um novo áudio de fa
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `video` | Gravação do falante a ser ressincronizada. Até 4K (4096x2160); uma taxa de quadros constante de 24/25/30 fps funciona melhor. | VIDEO | Sim | - |
-| `audio` | Áudio de fala para sincronizar a boca. | AUDIO | Sim | - |
-| `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 42). | INT | Sim | 0 a 2147483647 |
-| `model` | Modelo de geração sync.so. | COMBO | Sim | Veja abaixo |
+| `vídeo` | Gravação do falante a ser ressincronizada. Até 4K (4096x2160); uma taxa de quadros constante de 24/25/30 fps funciona melhor. | VIDEO | Sim | - |
+| `áudio` | Áudio de fala para sincronizar a boca. | AUDIO | Sim | - |
+| `semente` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente (padrão: 42). | INT | Sim | 0 a 2147483647 |
+| `modelo` | Modelo de geração sync.so. | COMBO | Sim | Veja abaixo |
 
 O parâmetro `model` é uma combinação dinâmica que inclui os seguintes subparâmetros:
 
@@ -42,7 +42,7 @@ O parâmetro `model` é uma combinação dinâmica que inclui os seguintes subpa
 
 | Nome da Saída | Descrição | Tipo de Dado |
 |-------------|-------------|-----------|
-| `video` | O vídeo ressincronizado com o movimento da boca correspondente ao áudio fornecido. | VIDEO |
+| `vídeo` | O vídeo ressincronizado com o movimento da boca correspondente ao áudio fornecido. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SyncLipSyncNode/pt-BR.md)
 

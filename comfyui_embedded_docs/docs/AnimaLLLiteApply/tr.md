@@ -8,11 +8,11 @@ Bu düğüm, bir difüzyon modeline hafif bir animasyon yaması uygulayarak, aya
 |-----------|-------------|-----------|----------|-------|
 | `model` | Yamanın uygulanacağı temel difüzyon modeli | MODEL | Evet | |
 | `model_patch` | Uygulanacak önceden yapılandırılmış animasyon yaması | MODEL_PATCH | Evet | |
-| `image` | Üretime rehberlik edecek referans görüntü | IMAGE | Evet | |
-| `strength` | Yama efektinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ile 10.0 arası |
-| `start_percent` | Yamanın etkisini göstermeye başladığı gürültü giderme sürecinin yüzdesi (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 arası |
-| `end_percent` | Yamanın etkisini göstermeyi bıraktığı gürültü giderme sürecinin yüzdesi (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 arası |
-| `mask` | Yama efektini görüntünün belirli alanlarıyla sınırlamak için isteğe bağlı bir maske | MASK | Hayır | |
+| `görsel` | Üretime rehberlik edecek referans görüntü | IMAGE | Evet | |
+| `güç` | Yama efektinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ile 10.0 arası |
+| `başlangıç yüzdesi` | Yamanın etkisini göstermeye başladığı gürültü giderme sürecinin yüzdesi (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 arası |
+| `bitiş yüzdesi` | Yamanın etkisini göstermeyi bıraktığı gürültü giderme sürecinin yüzdesi (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 arası |
+| `maske` | Yama efektini görüntünün belirli alanlarıyla sınırlamak için isteğe bağlı bir maske | MASK | Hayır | |
 
 **Parametre kısıtlamaları hakkında not:** `model_patch` 4 giriş kanalına sahipse ve `mask` sağlanmamışsa, görüntü boyutlarıyla eşleşecek şekilde otomatik olarak sıfır maskesi oluşturulur. `model_patch` 4 giriş kanalına sahip değilse, `mask` parametresi yok sayılır ve `None` olarak ayarlanır.
 

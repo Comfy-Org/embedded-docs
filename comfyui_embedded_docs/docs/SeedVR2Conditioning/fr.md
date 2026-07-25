@@ -13,8 +13,8 @@ Ce nœud construit un conditionnement positif et négatif à partir d'un latent 
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `model` | Le modèle SeedVR2. | MODEL |
-| `positive` | Le conditionnement positif pour guider la génération. | CONDITIONING |
+| `positive` | Le modèle SeedVR2. | MODEL |
+| `negative` | Le conditionnement positif pour guider la génération. | CONDITIONING |
 | `negative` | Le conditionnement négatif pour guider la génération. | CONDITIONING |
 | `latent` | Les échantillons latents traités. | LATENT |
 

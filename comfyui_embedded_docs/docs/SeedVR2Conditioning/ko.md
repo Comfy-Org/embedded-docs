@@ -13,8 +13,8 @@
 
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
-| `model` | SeedVR2 모델입니다. | MODEL |
-| `positive` | 생성을 안내하기 위한 긍정 컨디셔닝입니다. | CONDITIONING |
+| `positive` | SeedVR2 모델입니다. | MODEL |
+| `negative` | 생성을 안내하기 위한 긍정 컨디셔닝입니다. | CONDITIONING |
 | `negative` | 생성을 안내하기 위한 부정 컨디셔닝입니다. | CONDITIONING |
 | `latent` | 처리된 잠재 샘플입니다. | LATENT |
 

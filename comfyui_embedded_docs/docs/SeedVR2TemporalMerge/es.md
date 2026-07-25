@@ -6,8 +6,8 @@ Este nodo recombina fragmentos temporales latentes muestreados de SeedVR2 en un 
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `latents` | Los fragmentos temporales muestreados en orden secuencial. | LATENT | Sí | Lista de latentes |
-| `temporal_overlap` | La salida `temporal_overlap` de Dividir Latente SeedVR2. 0 = concatenación simple. (valor predeterminado: 0) | INT | Sí | 0 a 16384 |
+| `latentes` | Los fragmentos temporales muestreados en orden secuencial. | LATENT | Sí | Lista de latentes |
+| `superposición_temporal` | La salida `superposición_temporal` de Dividir Latente SeedVR2. 0 = concatenación simple. (valor predeterminado: 0) | INT | Sí | 0 a 16384 |
 
 **Nota:** El valor de `temporal_overlap` debe ser mayor o igual a 0. El último fragmento de la secuencia puede tener menos fotogramas temporales que los demás fragmentos. Todos los fragmentos deben tener dimensiones coincidentes excepto en el eje temporal (T), y el primer fragmento debe ser pentadimensional (B, C, T, H, W).
 
@@ -15,7 +15,7 @@ Este nodo recombina fragmentos temporales latentes muestreados de SeedVR2 en un 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `latent` | El latente recompuesto de longitud completa. | LATENT |
+| `latente` | El latente recompuesto de longitud completa. | LATENT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2TemporalMerge/es.md)
 

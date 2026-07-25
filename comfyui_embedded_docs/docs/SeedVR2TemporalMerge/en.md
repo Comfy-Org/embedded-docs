@@ -1,5 +1,7 @@
 # SeedVR2TemporalMerge
 
+Merge SeedVR2 Latents
+
 This node recombines sampled SeedVR2 latent temporal chunks into a single full-length latent. It uses a Hann window crossfade over the overlap region between chunks to create smooth transitions, or performs plain concatenation when no overlap is specified.
 
 ## Inputs

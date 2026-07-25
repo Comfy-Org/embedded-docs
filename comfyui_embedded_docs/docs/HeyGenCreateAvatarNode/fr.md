@@ -28,7 +28,7 @@ Lorsque `source` est défini sur `"photo"`, le paramètre supplémentaire suivan
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
 | `avatar_id` | Identifiant de l'apparence de l'avatar. Transmettez-le au paramètre `custom_avatar_id` du nœud Vidéo d'avatar HeyGen ; sauvegardez-le pour réutiliser l'avatar ultérieurement. | STRING |
-| `preview` | Image d'aperçu de l'avatar généré. | IMAGE |
+| `aperçu` | Image d'aperçu de l'avatar généré. | IMAGE |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenCreateAvatarNode/fr.md)
 

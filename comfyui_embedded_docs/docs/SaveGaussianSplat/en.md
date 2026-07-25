@@ -1,5 +1,10 @@
 # SaveGaussianSplat
 
+The existing documentation is accurate and aligns with the source code. No updates are necessary.
+
+```markdown
+# SaveGaussianSplat
+
 This node saves a Gaussian splat 3D file to the output directory. It handles the file saving process and provides preview data for the 3D viewport.
 
 ## Inputs
@@ -23,6 +28,7 @@ This node saves a Gaussian splat 3D file to the output directory. It handles the
 | `camera_info` | Camera information for the viewport preview. | LOAD3DCAMERA |
 | `width` | The width of the preview. | INT |
 | `height` | The height of the preview. | INT |
+```
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SaveGaussianSplat/en.md)
 

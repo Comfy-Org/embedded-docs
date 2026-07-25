@@ -1,0 +1,22 @@
+# Recortar video (temporal)
+
+Este nodo recorta un rango continuo de fotogramas de un video. Funciona de manera completamente perezosa (lazy), lo que significa que solo procesa la porción seleccionada del video según sea necesario más adelante en el flujo de trabajo.
+
+## Entradas
+
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `video` | Video de entrada. | VIDEO | Sí | – |
+| `fotograma_inicio` | Índice del fotograma inicial (predeterminado: 0). | INT | Sí | 0 a 99999 |
+| `longitud` | Número de fotogramas a conservar (predeterminado: 16). | INT | Sí | 1 a 99999 |
+
+## Salidas
+
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
+| `video` | Video recortado (perezoso). | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/VideoTemporalCrop/es.md)
+
+---
+**Source fingerprint (SHA-256):** `1d28a55399c9fe7ca47f0aaa872751ac89c5419a6f6be6636fbf7f020a02749d`

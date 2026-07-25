@@ -1,6 +1,6 @@
 # Tripo: Import Model
 
-This node imports an external 3D model file into Tripo's system so you can use it with Tripo's post-processing nodes like Texture, Rig, and Convert. It uploads your model and returns a task ID that other Tripo nodes can use to reference the imported model.
+This node imports an external 3D model file into Tripo's system so you can use it with Tripo's post-processing nodes like Texture, Rig, and Convert. It uploads your model and returns a task ID that other Tripo nodes can use to reference the imported model. GLB format is recommended because textures are preserved only when embedded directly in the file. Note that texturing an imported model requires a texture prompt.
 
 ## Inputs
 

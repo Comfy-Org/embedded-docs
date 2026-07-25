@@ -6,23 +6,23 @@ This node splits a SeedVR2 video latent into smaller temporal chunks that can be
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `latent` | The VAE-encoded SeedVR2 latent to split. | LATENT | Yes | - |
+| `latent` | The VAE-encoded SeedVR2 latent to split. Must be a 5‑D tensor with the correct channel count. | LATENT | Yes | - |
 | `temporal_overlap` | Latent frames shared between adjacent chunks and crossfaded at merge; 0 means no overlap (default: 0). | INT | No | 0 to 16384 |
-| `chunking_mode` | Manual uses frames_per_chunk exactly; auto predicts the largest chunk that fits free VRAM. | COMBO | Yes | "auto"<br>"manual" |
+| `chunking_mode` | Manual uses `frames_per_chunk` exactly; auto predicts the largest chunk that fits free VRAM. | COMBO | Yes | `"auto"`<br>`"manual"` |
 
-When `chunking_mode` is set to "manual", an additional parameter becomes available:
+When `chunking_mode` is set to `"manual"`, an additional parameter becomes available:
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `frames_per_chunk` | Pixel frames per temporal chunk. Must be a 4n+1 value (1, 5, 9, 13, 17, 21, ...) (default: 21). | INT | Yes | 1 to 16384 |
 
-Note: The `frames_per_chunk` parameter only appears when `chunking_mode` is set to "manual". The value must satisfy the formula `(frames_per_chunk - 1) % 4 == 0`, meaning it must be one of: 1, 5, 9, 13, 17, 21, etc.
+Note: The `frames_per_chunk` parameter only appears when `chunking_mode` is set to `"manual"`. The value must satisfy the formula `(frames_per_chunk - 1) % 4 == 0`, meaning it must be one of: 1, 5, 9, 13, 17, 21, etc. If the total pixel frames in the latent are equal to or less than the chosen chunk size, the node returns the original latent as a single chunk with zero overlap.
 
 ## Outputs
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `latents` | The temporal chunks in sequence order. | LATENT |
+| `latents` | The temporal chunks in sequence order. Each chunk is a LATENT with the same batch, channel, height, and width but a reduced temporal dimension. | LATENT |
 | `temporal_overlap` | The effective latent-frame overlap between adjacent chunks, for Merge SeedVR2 Latents. | INT |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2TemporalChunk/en.md)

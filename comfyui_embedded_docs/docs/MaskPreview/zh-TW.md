@@ -15,7 +15,7 @@ MaskPreview 節點會將遮罩資料儲存為預覽圖片至您的 ComfyUI 輸�
 
 | 輸出名稱 | 說明 | 資料類型 |
 | --- | --- | --- |
-| `ui` | 包含預覽圖片資訊及用於 UI 顯示的中繼資料 | DICT |
+| `mask` | 包含預覽圖片資訊及用於 UI 顯示的中繼資料 | DICT |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskPreview/zh-TW.md)
 

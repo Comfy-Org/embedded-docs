@@ -5,7 +5,7 @@
 ## 輸入
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `source` | 從文字提示產生新角色，或從連接的人物照片建立頭像。 | COMBO | 是 | `"prompt"`<br>`"photo"` |
+| `來源` | 從文字提示產生新角色，或從連接的人物照片建立頭像。 | COMBO | 是 | `"prompt"`<br>`"photo"` |
 
 當 `source` 設定為 `"prompt"` 時，以下額外參數將可用：
 
@@ -26,7 +26,7 @@
 | 輸出名稱 | 描述 | 資料類型 |
 |-------------|-------------|-----------|
 | `avatar_id` | 頭像外觀 ID。將其傳遞給 HeyGen 頭像影片的 `custom_avatar_id`；儲存以便日後重複使用該頭像。 | STRING |
-| `preview` | 所產生頭像的預覽圖片。 | IMAGE |
+| `預覽` | 所產生頭像的預覽圖片。 | IMAGE |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenCreateAvatarNode/zh-TW.md)
 

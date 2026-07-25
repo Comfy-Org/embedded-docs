@@ -1,4 +1,4 @@
-# GeminiVideoOmni
+# Google Gemini Omni (Video)
 
 Generate a video with audio from a text prompt using Google's Gemini Omni Flash model. Optionally provide reference images and/or videos to guide or edit the result. Describe the desired length (3-10s) and aspect ratio (16:9 or 9:16) directly in the prompt.
 
@@ -6,7 +6,7 @@ Generate a video with audio from a text prompt using Google's Gemini Omni Flash 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The Gemini video model used to generate the video. | MODEL | Yes | "Omni Flash" |
+| `model` | The Gemini video model used to generate the video. | COMBO | Yes | "Omni Flash" |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 42). | INT | Yes | 0 to 2147483647 |
 | `prompt` | The text prompt describing the video to generate. Must be at least one non-whitespace character after stripping leading/trailing whitespace. | STRING | Yes | Minimum 1 character after stripping whitespace |
 | `images` | Optional reference images to guide the video generation. Maximum of 14 images total. | IMAGE | No | Multiple images allowed (max 14) |
@@ -24,4 +24,4 @@ Generate a video with audio from a text prompt using Google's Gemini Omni Flash 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `046842b7ec736283bba355aaa038b02fcf2416020f5f7aee7b0150d2a05bcbe6`
+**Source fingerprint (SHA-256):** `420f62e09e7744554f5989cac7754703fd6fd268a000b45b32d7487beac21c42`

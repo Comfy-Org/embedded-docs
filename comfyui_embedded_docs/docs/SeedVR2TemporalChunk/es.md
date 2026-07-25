@@ -6,9 +6,9 @@ Este nodo divide un latente de video SeedVR2 en fragmentos temporales más peque
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `latent` | El latente SeedVR2 codificado por VAE a dividir. | LATENT | Sí | - |
-| `temporal_overlap` | Fotogramas latentes compartidos entre fragmentos adyacentes y combinados con fundido cruzado al fusionar; 0 significa sin superposición (predeterminado: 0). | INT | No | 0 a 16384 |
-| `chunking_mode` | Manual usa exactamente frames_per_chunk; auto predice el fragmento más grande que quepa en la VRAM libre. | COMBO | Sí | "auto"<br>"manual" |
+| `latente` | El latente SeedVR2 codificado por VAE a dividir. | LATENT | Sí | - |
+| `superposición_temporal` | Fotogramas latentes compartidos entre fragmentos adyacentes y combinados con fundido cruzado al fusionar; 0 significa sin superposición (predeterminado: 0). | INT | No | 0 a 16384 |
+| `modo_de_fragmentación` | Manual usa exactamente frames_per_chunk; auto predice el fragmento más grande que quepa en la VRAM libre. | COMBO | Sí | "auto"<br>"manual" |
 
 Cuando `chunking_mode` está configurado en "manual", un parámetro adicional estará disponible:
 
@@ -22,8 +22,8 @@ Nota: El parámetro `frames_per_chunk` solo aparece cuando `chunking_mode` está
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |-------------|-------------|-----------|
-| `latents` | Los fragmentos temporales en orden secuencial. | LATENT |
-| `temporal_overlap` | La superposición efectiva de fotogramas latentes entre fragmentos adyacentes, para Fusionar Latentes SeedVR2. | INT |
+| `latentes` | Los fragmentos temporales en orden secuencial. | LATENT |
+| `superposición_temporal` | La superposición efectiva de fotogramas latentes entre fragmentos adyacentes, para Fusionar Latentes SeedVR2. | INT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2TemporalChunk/es.md)
 

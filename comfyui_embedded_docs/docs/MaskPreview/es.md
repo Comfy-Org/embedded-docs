@@ -15,7 +15,7 @@ El nodo MaskPreview guarda los datos de la máscara como una imagen de previsual
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 | --- | --- | --- |
-| `ui` | Contiene la información de la imagen de previsualización y los metadatos para mostrar en la interfaz de usuario | DICT |
+| `mask` | Contiene la información de la imagen de previsualización y los metadatos para mostrar en la interfaz de usuario | DICT |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskPreview/es.md)
 

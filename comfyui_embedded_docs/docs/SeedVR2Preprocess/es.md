@@ -6,13 +6,13 @@ Este nodo rellena una imagen redimensionada para prepararla para el modelo SeedV
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `resized_images` | La imagen redimensionada a procesar. | IMAGE | Sí | - |
+| `imágenes_redimensionadas` | La imagen redimensionada a procesar. | IMAGE | Sí | - |
 
 ## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `images` | La imagen rellenada lista para el procesamiento SeedVR2. | IMAGE |
+| `imágenes` | La imagen rellenada lista para el procesamiento SeedVR2. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SeedVR2Preprocess/es.md)
 
