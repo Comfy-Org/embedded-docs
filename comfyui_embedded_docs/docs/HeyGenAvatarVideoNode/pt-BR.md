@@ -8,11 +8,11 @@ Gere um vídeo de apresentador falante a partir de um avatar HeyGen. Este nó cr
 |-----------|-------------|--------------|-------------|-------|
 | `engine` | Mecanismo de renderização; cada opção lista apenas os avatares que o suportam. 'auto' oferece todos os avatares e escolhe seu melhor mecanismo (Avatar IV preferido). Avatar V é o de maior fidelidade, Avatar III é o mais acessível. | COMBO | Sim | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
 | `custom_avatar_id` | ID opcional de aparência do avatar HeyGen. Quando definido, substitui o avatar selecionado acima. Qualquer uma das mais de 3000 aparências públicas da HeyGen (ou seus avatares privados) pode ser usada. | STRING | Não |  |
-| `speech` | Controla o avatar com um roteiro de texto (texto-para-fala da HeyGen) ou seu próprio áudio. | COMBO | Sim | `"script"`<br>`"audio"` |
-| `resolution` | Resolução do vídeo de saída (padrão: "1080p"). | COMBO | Não | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Proporção de tela da saída. 'auto' segue a filmagem de origem do avatar (padrão: "auto"). | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Cor de fundo sólida opcional como código hexadecimal (ex: '#00ff00'). Deixe vazio para usar o fundo original do avatar. | STRING | Não |  |
-| `seed` | Não é enviado para a HeyGen; altere-o para forçar uma nova execução (padrão: 42). | INT | Não | Mín: 0<br>Máx: 2147483647 |
+| `fala` | Controla o avatar com um roteiro de texto (texto-para-fala da HeyGen) ou seu próprio áudio. | COMBO | Sim | `"script"`<br>`"audio"` |
+| `resolução` | Resolução do vídeo de saída (padrão: "1080p"). | COMBO | Não | `"720p"`<br>`"1080p"` |
+| `proporção` | Proporção de tela da saída. 'auto' segue a filmagem de origem do avatar (padrão: "auto"). | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `cor_de_fundo` | Cor de fundo sólida opcional como código hexadecimal (ex: '#00ff00'). Deixe vazio para usar o fundo original do avatar. | STRING | Não |  |
+| `semente` | Não é enviado para a HeyGen; altere-o para forçar uma nova execução (padrão: 42). | INT | Não | Mín: 0<br>Máx: 2147483647 |
 
 Quando `speech` está definido como `"script"`, os seguintes subparâmetros estão disponíveis:
 

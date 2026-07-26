@@ -6,11 +6,11 @@ Anime um retrato estático em um vídeo falante guiado por áudio de fala, usand
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|---------------|-------------|-------|
-| `image` | Uma única imagem com um rosto claramente visível, de até 4K (4096x2160). | IMAGE | Sim | Exatamente uma imagem necessária |
-| `audio` | Áudio de fala que guia o vídeo falante; a duração da saída corresponde a ele. Conecte qualquer nó TTS aqui para gerar a animação a partir de texto. | AUDIO | Sim | Duração máxima: 600 segundos |
+| `imagem` | Uma única imagem com um rosto claramente visível, de até 4K (4096x2160). | IMAGE | Sim | Exatamente uma imagem necessária |
+| `áudio` | Áudio de fala que guia o vídeo falante; a duração da saída corresponde a ele. Conecte qualquer nó TTS aqui para gerar a animação a partir de texto. | AUDIO | Sim | Duração máxima: 600 segundos |
 | `prompt` | Orientação opcional sobre como o retrato ganha vida, ex.: 'faça o sujeito sorrir e olhar para a câmera'. Deixe vazio para movimento natural de fala. (padrão: "") | STRING | Não | Texto multilinha |
-| `seed` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) | INT | Não | 0 a 2147483647 |
-| `model` | Modelo de geração sync.so. A entrada de imagem é exclusiva do sync-3. | COMBO | Sim | `"sync-3"` |
+| `semente` | A semente controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da semente. (padrão: 0) | INT | Não | 0 a 2147483647 |
+| `modelo` | Modelo de geração sync.so. A entrada de imagem é exclusiva do sync-3. | COMBO | Sim | `"sync-3"` |
 | `speaker_selection` | Qual rosto animar quando várias pessoas estão visíveis. `default`: deixar o modelo decidir. `coordinates`: direcionar o rosto no pixel (speaker_x, speaker_y) na imagem. A detecção automática não é suportada para imagens. (padrão: "default") | COMBO | Não | `"default"`<br>`"coordinates"` |
 | `speaker_x` | Coordenada X do pixel do rosto do falante. Usado apenas quando speaker_selection é 'coordinates'. (padrão: 0) | INT | Não | 0 a 4096 |
 | `speaker_y` | Coordenada Y do pixel do rosto do falante. Usado apenas quando speaker_selection é 'coordinates'. (padrão: 0) | INT | Não | 0 a 4096 |

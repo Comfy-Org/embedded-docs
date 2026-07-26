@@ -6,10 +6,10 @@ Ce nœud resynchronise les mouvements de la bouche dans une vidéo avec un nouve
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `video` | Séquence vidéo de l'orateur à resynchroniser. Jusqu'en 4K (4096x2160) ; une fréquence d'images constante de 24/25/30 ips donne les meilleurs résultats. | VIDEO | Oui | - |
+| `vidéo` | Séquence vidéo de l'orateur à resynchroniser. Jusqu'en 4K (4096x2160) ; une fréquence d'images constante de 24/25/30 ips donne les meilleurs résultats. | VIDEO | Oui | - |
 | `audio` | Audio de la parole pour synchroniser la bouche. | AUDIO | Oui | - |
-| `seed` | La graine détermine si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 42). | INT | Oui | 0 à 2147483647 |
-| `model` | Modèle de génération sync.so. | COMBO | Oui | Voir ci-dessous |
+| `graine` | La graine détermine si le nœud doit être réexécuté ; les résultats sont non déterministes quelle que soit la graine (par défaut : 42). | INT | Oui | 0 à 2147483647 |
+| `modèle` | Modèle de génération sync.so. | COMBO | Oui | Voir ci-dessous |
 
 Le paramètre `model` est une liste déroulante dynamique qui inclut les sous-paramètres suivants :
 
@@ -42,7 +42,7 @@ Le paramètre `model` est une liste déroulante dynamique qui inclut les sous-pa
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|
-| `video` | La vidéo resynchronisée avec les mouvements de la bouche correspondant à l'audio fourni. | VIDEO |
+| `vidéo` | La vidéo resynchronisée avec les mouvements de la bouche correspondant à l'audio fourni. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/SyncLipSyncNode/fr.md)
 

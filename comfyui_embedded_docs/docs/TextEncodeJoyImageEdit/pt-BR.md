@@ -9,7 +9,7 @@ Este nó codifica um prompt de texto e imagens opcionais em dados de condicionam
 | `clip` | O modelo CLIP usado para codificar o prompt de texto | CLIP | Sim | - |
 | `prompt` | O prompt de texto a ser codificado, suportando entrada multilinha e prompts dinâmicos | STRING | Sim | - |
 | `vae` | Um modelo VAE para codificar imagens no espaço latente (opcional) | VAE | Não | - |
-| `images` | Uma ou mais imagens a serem incluídas no condicionamento, até o máximo de 6 imagens | IMAGE | Não | 0 a 6 imagens |
+| `imagens` | Uma ou mais imagens a serem incluídas no condicionamento, até o máximo de 6 imagens | IMAGE | Não | 0 a 6 imagens |
 
 ## Saídas
 

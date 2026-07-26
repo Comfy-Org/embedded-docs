@@ -7,11 +7,11 @@ Bu düğüm, bir görüntüdeki nesnelerin veya metin bölgelerinin etrafına s�
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `arka plan` | Tuval ve önizlemede arka plan olarak kullanılan isteğe bağlı görüntü. | IMAGE | Hayır | - |
-| `bboxes` | Kanvası başlatmak için sınırlayıcı kutular, öğeler veya bir JSON dizesi. Yeni bir yukarı akış değeri kanvası başlatır; kanvas üzerinde yapılan düzenlemeler önceliklidir ve yukarı akış değeri tekrar değişene kadar korunur. | BOUNDING_BOX, ARRAY, STRING | Hayır | - |
+| `sınırlayıcı kutular` | Kanvası başlatmak için sınırlayıcı kutular, öğeler veya bir JSON dizesi. Yeni bir yukarı akış değeri kanvası başlatır; kanvas üzerinde yapılan düzenlemeler önceliklidir ve yukarı akış değeri tekrar değişene kadar korunur. | BOUNDING_BOX, ARRAY, STRING | Hayır | - |
 | `genişlik` | Tuvalin ve sınırlayıcı kutular için piksel ızgarasının genişliği (varsayılan: 1024). | INT | Evet | 64 ile 16384 arası (adım: 16) |
 | `yükseklik` | Tuvalin ve sınırlayıcı kutular için piksel ızgarasının yüksekliği (varsayılan: 1024). | INT | Evet | 64 ile 16384 arası (adım: 16) |
 | `düzenleyici durumu` | Sınırlayıcı kutular çizin ve her kutunun türünü, metnini, açıklamasını, renk paletini ayarlayın. Önce arka plan öğesiyle, en son ön planla başlayın. | BOUNDING_BOXES | Evet | - |
-| `last_incoming` | Kanvas tarafından yönetilen iç durum: kanvası en son başlatan yukarı akış bboxes değeri. Bir sonraki çalıştırmada kanvası bboxes girişinden yeniden başlatmak için boş bırakın. | BOUNDING_BOXES | Hayır | - |
+| `son gelen` | Kanvas tarafından yönetilen iç durum: kanvası en son başlatan yukarı akış bboxes değeri. Bir sonraki çalıştırmada kanvası bboxes girişinden yeniden başlatmak için boş bırakın. | BOUNDING_BOXES | Hayır | - |
 
 ## Çıktılar
 

@@ -1,0 +1,21 @@
+# Mezclar Lista de Videos
+
+Este nodo toma una lista de videos y los reordena aleatoriamente. Utiliza una semilla aleatoria para garantizar una mezcla reproducible, de modo que la misma semilla siempre produce el mismo orden de salida.
+
+## Entradas
+
+| Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
+|-----------|-------------|--------------|-------------|-------|
+| `videos` | Lista de videos para mezclar. | VIDEO | Sí | Lista de entradas de video |
+| `seed` | Semilla aleatoria para la mezcla (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
+
+## Salidas
+
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
+| `videos` | Lista de videos mezclados en orden aleatorio. | VIDEO |
+
+> Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ShuffleVideoDataset/es.md)
+
+---
+**Source fingerprint (SHA-256):** `0bd32b664197d3bbd4c53f65e29ef38fba836579f07f05cb7fb85f3b8a1024ac`

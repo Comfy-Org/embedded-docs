@@ -6,13 +6,13 @@ Bir HeyGen avatarından konuşan sunucu videosu oluşturun. Bu düğüm, HeyGen'
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `engine` | İşleme motoru; her seçenek yalnızca onu destekleyen avatarları listeler. 'auto' tüm avatarları sunar ve bunlar için en iyi motoru seçer (Avatar IV tercih edilir). Avatar V en yüksek kalitedir, Avatar III ise en uygun fiyatlıdır. | COMBO | Evet | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
-| `custom_avatar_id` | İsteğe bağlı HeyGen avatar görünüm kimliği. Ayarlandığında, yukarıda seçilen avatarı geçersiz kılar. HeyGen'in 3000'den fazla herkese açık görünümünden (veya özel avatarlarınızdan) herhangi biri kullanılabilir. | STRING | Hayır |  |
-| `speech` | Avatara bir metin komut dosyası (HeyGen metinden sese) veya kendi sesinizle yön verin. | COMBO | Evet | `"script"`<br>`"audio"` |
-| `resolution` | Çıktı video çözünürlüğü (varsayılan: "1080p"). | COMBO | Hayır | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Çıktı en boy oranı. 'auto', avatarın kaynak görüntüsünü takip eder (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Onaltılık kod olarak isteğe bağlı düz arka plan rengi (örn. '#00ff00'). Avatarın kendi arka planı için boş bırakın. | STRING | Hayır |  |
-| `seed` | HeyGen'e gönderilmez; yeniden çalıştırmayı zorlamak için değiştirin (varsayılan: 42). | INT | Hayır | Min: 0<br>Maks: 2147483647 |
+| `motor` | İşleme motoru; her seçenek yalnızca onu destekleyen avatarları listeler. 'auto' tüm avatarları sunar ve bunlar için en iyi motoru seçer (Avatar IV tercih edilir). Avatar V en yüksek kalitedir, Avatar III ise en uygun fiyatlıdır. | COMBO | Evet | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
+| `özel_avatar_id` | İsteğe bağlı HeyGen avatar görünüm kimliği. Ayarlandığında, yukarıda seçilen avatarı geçersiz kılar. HeyGen'in 3000'den fazla herkese açık görünümünden (veya özel avatarlarınızdan) herhangi biri kullanılabilir. | STRING | Hayır |  |
+| `konuşma` | Avatara bir metin komut dosyası (HeyGen metinden sese) veya kendi sesinizle yön verin. | COMBO | Evet | `"script"`<br>`"audio"` |
+| `çözünürlük` | Çıktı video çözünürlüğü (varsayılan: "1080p"). | COMBO | Hayır | `"720p"`<br>`"1080p"` |
+| `en-boy oranı` | Çıktı en boy oranı. 'auto', avatarın kaynak görüntüsünü takip eder (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `arka plan rengi` | Onaltılık kod olarak isteğe bağlı düz arka plan rengi (örn. '#00ff00'). Avatarın kendi arka planı için boş bırakın. | STRING | Hayır |  |
+| `tohum` | HeyGen'e gönderilmez; yeniden çalıştırmayı zorlamak için değiştirin (varsayılan: 42). | INT | Hayır | Min: 0<br>Maks: 2147483647 |
 
 `speech` parametresi `"script"` olarak ayarlandığında, aşağıdaki alt parametreler kullanılabilir:
 

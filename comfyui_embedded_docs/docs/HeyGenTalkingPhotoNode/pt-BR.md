@@ -6,17 +6,17 @@ Anime uma imagem estática de uma pessoa em um vídeo de conversa com sincroniza
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `image` | Imagem de uma pessoa para animar. Redimensionada automaticamente se for maior que 2K. | IMAGE | Sim | - |
-| `speech` | Conduza o avatar com um roteiro de texto (texto-para-fala da HeyGen) ou seu próprio áudio. | COMBO | Sim | `"script"`<br>`"audio"` |
+| `imagem` | Imagem de uma pessoa para animar. Redimensionada automaticamente se for maior que 2K. | IMAGE | Sim | - |
+| `fala` | Conduza o avatar com um roteiro de texto (texto-para-fala da HeyGen) ou seu próprio áudio. | COMBO | Sim | `"script"`<br>`"audio"` |
 | `text` | Texto para o avatar falar (até 5000 caracteres). A fala gerada deve ter pelo menos 1 segundo de duração. | STRING | Sim (quando speech é "script") | - |
 | `voice` | Voz para o roteiro (as vozes mais populares da HeyGen). | COMBO | Sim (quando speech é "script") | Múltiplas opções disponíveis |
 | `custom_voice_id` | ID de voz opcional da HeyGen. Quando definido, substitui a voz selecionada acima. Qualquer voz da biblioteca da HeyGen (mais de 2000) pode ser usada. | STRING | Não | - |
 | `voice_speed` | Multiplicador de velocidade da fala (padrão: 1.0). | FLOAT | Não | 0.5 a 1.5 |
 | `audio` | Áudio para o avatar sincronizar os lábios, até 10 minutos. | AUDIO | Sim (quando speech é "audio") | - |
-| `resolution` | Resolução do vídeo de saída (padrão: "1080p"). | COMBO | Não | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Proporção de tela da saída. 'auto' segue a imagem de entrada (padrão: "auto"). | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `expressiveness` | O quão expressivo é o rosto animado e os gestos (padrão: "low"). | COMBO | Não | `"low"`<br>`"medium"`<br>`"high"` |
-| `seed` | Não enviado para a HeyGen; altere-o para forçar uma nova execução (padrão: 42). | INT | Não | 0 a 2147483647 |
+| `resolução` | Resolução do vídeo de saída (padrão: "1080p"). | COMBO | Não | `"720p"`<br>`"1080p"` |
+| `proporção` | Proporção de tela da saída. 'auto' segue a imagem de entrada (padrão: "auto"). | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `expressividade` | O quão expressivo é o rosto animado e os gestos (padrão: "low"). | COMBO | Não | `"low"`<br>`"medium"`<br>`"high"` |
+| `semente` | Não enviado para a HeyGen; altere-o para forçar uma nova execução (padrão: 42). | INT | Não | 0 a 2147483647 |
 
 ## Saídas
 

@@ -1,6 +1,6 @@
 # HeyGenTextToSpeechNode
 
-Generate speech audio from text using HeyGen's Starfish TTS engine. This node includes HeyGen's most popular voices across 17 languages.
+Synthesize speech audio from text using HeyGen's Starfish TTS engine. This node includes HeyGen's most popular voices across 17 languages.
 
 ## Inputs
 

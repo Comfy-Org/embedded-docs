@@ -9,7 +9,7 @@ Bu düğüm, JoyImage modelleriyle kullanılmak üzere bir metin istemini ve ist
 | `clip` | Metin istemini kodlamak için kullanılan CLIP modeli | CLIP | Evet | - |
 | `prompt` | Kodlanacak metin istemi; çok satırlı girdi ve dinamik istemleri destekler | STRING | Evet | - |
 | `vae` | Görüntüleri potansiyel uzaya kodlamak için bir VAE modeli (isteğe bağlı) | VAE | Hayır | - |
-| `images` | Koşullandırmaya dahil edilecek bir veya daha fazla görüntü; en fazla 6 görüntü | IMAGE | Hayır | 0 ila 6 görüntü |
+| `görseller` | Koşullandırmaya dahil edilecek bir veya daha fazla görüntü; en fazla 6 görüntü | IMAGE | Hayır | 0 ila 6 görüntü |
 
 ## Çıktılar
 

@@ -6,7 +6,7 @@ Crea un avatar reutilizable de HeyGen a partir de una foto de una persona o de u
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `source` | Genera un nuevo personaje a partir de una instrucción de texto, o crea el avatar desde una foto conectada de una persona. | COMBO | Sí | `"prompt"`<br>`"photo"` |
+| `fuente` | Genera un nuevo personaje a partir de una instrucción de texto, o crea el avatar desde una foto conectada de una persona. | COMBO | Sí | `"prompt"`<br>`"photo"` |
 
 Cuando `source` está configurado en `"prompt"`, los siguientes parámetros adicionales están disponibles:
 
@@ -28,7 +28,7 @@ Cuando `source` está configurado en `"photo"`, el siguiente parámetro adiciona
 | Nombre de Salida | Descripción | Tipo de Dato |
 |-------------|-------------|-----------|
 | `avatar_id` | ID de apariencia del avatar. Pásalo al `custom_avatar_id` de Video de Avatar de HeyGen; guárdalo para reutilizar el avatar más tarde. | STRING |
-| `preview` | Imagen de vista previa del avatar generado. | IMAGE |
+| `vista previa` | Imagen de vista previa del avatar generado. | IMAGE |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenCreateAvatarNode/es.md)
 

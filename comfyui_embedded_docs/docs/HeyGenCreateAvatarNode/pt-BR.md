@@ -6,7 +6,7 @@ Crie um avatar HeyGen reutilizável a partir de uma foto de uma pessoa ou de um 
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `source` | Gere um novo personagem a partir de um prompt de texto ou crie o avatar a partir de uma foto conectada de uma pessoa. | COMBO | Sim | `"prompt"`<br>`"photo"` |
+| `origem` | Gere um novo personagem a partir de um prompt de texto ou crie o avatar a partir de uma foto conectada de uma pessoa. | COMBO | Sim | `"prompt"`<br>`"photo"` |
 
 Quando `source` estiver definido como `"prompt"`, os seguintes parâmetros adicionais ficam disponíveis:
 

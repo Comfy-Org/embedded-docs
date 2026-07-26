@@ -1,4 +1,4 @@
-# TextOverlay
+# Draw Text Overlay
 
 This node draws text on top of an image or a batch of images. It creates a text overlay with customizable font size, color, position, alignment, and an optional outline, then composites the text onto the original images.
 

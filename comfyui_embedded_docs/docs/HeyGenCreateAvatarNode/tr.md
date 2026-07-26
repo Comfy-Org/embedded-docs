@@ -6,7 +6,7 @@ Bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden yen
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `source` | Bir metin isteminden yeni bir karakter oluşturun veya bağlı bir kişi fotoğrafından avatar oluşturun. | COMBO | Evet | `"prompt"`<br>`"photo"` |
+| `kaynak` | Bir metin isteminden yeni bir karakter oluşturun veya bağlı bir kişi fotoğrafından avatar oluşturun. | COMBO | Evet | `"prompt"`<br>`"photo"` |
 
 `source` parametresi `"prompt"` olarak ayarlandığında aşağıdaki ek parametreler kullanılabilir:
 
@@ -28,7 +28,7 @@ Bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden yen
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `avatar_id` | Avatar görünüm kimliği. Bunu HeyGen Avatar Video'nun `custom_avatar_id` parametresine iletin; avatarı daha sonra yeniden kullanmak için kaydedin. | STRING |
-| `preview` | Oluşturulan avatarın önizleme görseli. | IMAGE |
+| `önizleme` | Oluşturulan avatarın önizleme görseli. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenCreateAvatarNode/tr.md)
 

@@ -1,5 +1,7 @@
 # Luma Ray 3.2 Video Edit
 
+## Overview
+
 This node re-renders an existing video under a new prompt using Luma Ray 3.2, allowing you to restyle, relight, add, or remove elements while keeping the original motion. The source video can be up to 18 seconds, and the edited video retains the source's original length.
 
 ## Inputs

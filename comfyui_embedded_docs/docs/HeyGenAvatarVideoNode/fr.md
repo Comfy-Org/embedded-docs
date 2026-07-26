@@ -6,13 +6,13 @@ Générer une vidéo de présentateur parlant à partir d'un avatar HeyGen. Ce n
 
 | Paramètre | Description | Type de Données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `engine` | Moteur de rendu ; chaque choix liste uniquement les avatars qui le prennent en charge. 'auto' propose tous les avatars et sélectionne son meilleur moteur (Avatar IV privilégié). Avatar V offre la plus haute fidélité, Avatar III est le plus abordable. | COMBO | Oui | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
-| `custom_avatar_id` | Identifiant optionnel d'apparence d'avatar HeyGen. Lorsqu'il est défini, il remplace l'avatar sélectionné ci-dessus. N'importe laquelle des 3000+ apparences publiques de HeyGen (ou vos avatars privés) peut être utilisée. | STRING | Non |  |
-| `speech` | Pilote l'avatar avec un script textuel (synthèse vocale HeyGen) ou votre propre audio. | COMBO | Oui | `"script"`<br>`"audio"` |
-| `resolution` | Résolution de la vidéo de sortie (par défaut : "1080p"). | COMBO | Non | `"720p"`<br>`"1080p"` |
-| `aspect_ratio` | Format d'image de sortie. 'auto' suit le format de la source de l'avatar (par défaut : "auto"). | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `background_color` | Couleur de fond unie optionnelle sous forme de code hexadécimal (ex. '#00ff00'). Laissez vide pour conserver le fond d'origine de l'avatar. | STRING | Non |  |
-| `seed` | N'est pas envoyé à HeyGen ; modifiez-le pour forcer une nouvelle exécution (par défaut : 42). | INT | Non | Min : 0<br>Max : 2147483647 |
+| `moteur` | Moteur de rendu ; chaque choix liste uniquement les avatars qui le prennent en charge. 'auto' propose tous les avatars et sélectionne son meilleur moteur (Avatar IV privilégié). Avatar V offre la plus haute fidélité, Avatar III est le plus abordable. | COMBO | Oui | `"auto"`<br>`"avatar_iv"`<br>`"avatar_iii"`<br>`"avatar_v"` |
+| `identifiant_avatar_personnalisé` | Identifiant optionnel d'apparence d'avatar HeyGen. Lorsqu'il est défini, il remplace l'avatar sélectionné ci-dessus. N'importe laquelle des 3000+ apparences publiques de HeyGen (ou vos avatars privés) peut être utilisée. | STRING | Non |  |
+| `parole` | Pilote l'avatar avec un script textuel (synthèse vocale HeyGen) ou votre propre audio. | COMBO | Oui | `"script"`<br>`"audio"` |
+| `résolution` | Résolution de la vidéo de sortie (par défaut : "1080p"). | COMBO | Non | `"720p"`<br>`"1080p"` |
+| `format d’image` | Format d'image de sortie. 'auto' suit le format de la source de l'avatar (par défaut : "auto"). | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
+| `couleur de fond` | Couleur de fond unie optionnelle sous forme de code hexadécimal (ex. '#00ff00'). Laissez vide pour conserver le fond d'origine de l'avatar. | STRING | Non |  |
+| `graine` | N'est pas envoyé à HeyGen ; modifiez-le pour forcer une nouvelle exécution (par défaut : 42). | INT | Non | Min : 0<br>Max : 2147483647 |
 
 Lorsque `speech` est réglé sur `"script"`, les sous-paramètres suivants sont disponibles :
 

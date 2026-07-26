@@ -1,5 +1,7 @@
 # Convert Dictionary to String
 
+Convert Dictionary to String
+
 This node converts a dictionary (a collection of key-value pairs) into a text string in JSON format. You can control the indentation level to make the output more readable or compact.
 
 ## Inputs

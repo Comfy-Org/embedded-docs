@@ -1,4 +1,4 @@
-# ConditioningMultiply
+# Conditioning (Multiply)
 
 This node multiplies the conditioning values by a specified factor, allowing you to scale the influence of the conditioning on the generation process. It works by applying the multiplier to both the main conditioning tensor and the pooled output values.
 

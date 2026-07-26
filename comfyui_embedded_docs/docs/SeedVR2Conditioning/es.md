@@ -13,8 +13,8 @@ Este nodo construye condicionamiento positivo y negativo a partir de un latente 
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `model` | El modelo SeedVR2. | MODEL |
-| `positive` | El condicionamiento positivo para guiar la generación. | CONDITIONING |
+| `positive` | El modelo SeedVR2. | MODEL |
+| `negative` | El condicionamiento positivo para guiar la generación. | CONDITIONING |
 | `negative` | El condicionamiento negativo para guiar la generación. | CONDITIONING |
 | `latent` | Las muestras latentes procesadas. | LATENT |
 

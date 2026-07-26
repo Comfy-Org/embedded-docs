@@ -15,7 +15,7 @@ Le nœud MaskPreview enregistre les données de masque sous forme d'image d'aper
 
 | Nom de sortie | Description | Type de données |
 | --- | --- | --- |
-| `ui` | Contient les informations de l'image d'aperçu et les métadonnées pour l'affichage dans l'interface utilisateur | DICT |
+| `mask` | Contient les informations de l'image d'aperçu et les métadonnées pour l'affichage dans l'interface utilisateur | DICT |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MaskPreview/fr.md)
 
