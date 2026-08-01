@@ -1,4 +1,4 @@
-# AnimaLLLiteApply
+# Apply Anima LLLite
 
 AnimaLLLiteApply applies a lightweight animation patch to a diffusion model, enabling controlled image-to-image generation with adjustable strength and timing. It integrates a pre-configured model patch with an input image and optional mask, modifying the model's attention and MLP layers to influence the generation process.
 
@@ -8,13 +8,13 @@ AnimaLLLiteApply applies a lightweight animation patch to a diffusion model, ena
 |-----------|-------------|-----------|----------|-------|
 | `model` | The base diffusion model to apply the patch to | MODEL | Yes | |
 | `model_patch` | The pre-configured animation patch to apply | MODEL_PATCH | Yes | |
-| `image` | The reference image to guide the generation | IMAGE | Yes | |
+| `image` | The reference image to guide the generation. Only the first 3 color channels (RGB) are used | IMAGE | Yes | |
 | `strength` | The strength of the patch effect (default: 1.0) | FLOAT | Yes | -10.0 to 10.0 |
 | `start_percent` | The percentage of the denoising process at which the patch starts taking effect (default: 0.0) | FLOAT | Yes | 0.0 to 1.0 |
 | `end_percent` | The percentage of the denoising process at which the patch stops taking effect (default: 1.0) | FLOAT | Yes | 0.0 to 1.0 |
 | `mask` | An optional mask to limit the patch effect to specific areas of the image | MASK | No | |
 
-**Note on parameter constraints:** If the `model_patch` has 4 input channels and no `mask` is provided, a zero mask is automatically created to match the image dimensions. If the `model_patch` does not have 4 input channels, the `mask` parameter is ignored and set to `None`.
+**Note on parameter constraints:** If the `model_patch` has 4 input channels and no `mask` is provided, a zero mask is automatically created to match the image dimensions. If the `model_patch` does not have 4 input channels, the `mask` parameter is ignored and set to `None`. This node is marked as experimental in ComfyUI.
 
 ## Outputs
 

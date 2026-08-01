@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so Talking Image
 
 Animate a still portrait into a talking video driven by speech audio, using sync.so's sync-3 model. The output duration matches the audio duration, and cost scales with output duration.
 

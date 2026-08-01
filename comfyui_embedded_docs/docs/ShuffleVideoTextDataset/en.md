@@ -1,4 +1,4 @@
-# ShuffleVideoTextDataset
+# Shuffle Pairs of Video-Text
 
 This node randomly shuffles the order of video-text pairs, keeping each video paired with its corresponding text. It takes two lists of equal length and applies the same random permutation to both, ensuring that the original pairings are preserved after shuffling.
 
@@ -9,6 +9,8 @@ This node randomly shuffles the order of video-text pairs, keeping each video pa
 | `videos` | List of videos to shuffle. | VIDEO | Yes | List of video items |
 | `texts` | List of texts to shuffle. | STRING | Yes | List of text strings |
 | `seed` | Random seed to control the shuffling order (default: 0). | INT | Yes | 0 to 18446744073709551615 |
+
+Note: `videos` and `texts` must have the same length, since the node pairs each video with the text at the same position and preserves those pairings when shuffling.
 
 ## Outputs
 
