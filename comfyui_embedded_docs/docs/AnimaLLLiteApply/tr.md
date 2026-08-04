@@ -1,4 +1,4 @@
-# AnimaLLLiteApply
+# Anima LLLite Uygula
 
 Bu düğüm, bir difüzyon modeline hafif bir animasyon yaması uygulayarak, ayarlanabilir güç ve zamanlama ile kontrollü görüntüden görüntüye üretim sağlar. Önceden yapılandırılmış bir model yamasını, bir giriş görüntüsü ve isteğe bağlı bir maske ile entegre ederek, modelin dikkat ve MLP katmanlarını değiştirir ve üretim sürecini etkiler.
 
@@ -8,13 +8,13 @@ Bu düğüm, bir difüzyon modeline hafif bir animasyon yaması uygulayarak, aya
 |-----------|-------------|-----------|----------|-------|
 | `model` | Yamanın uygulanacağı temel difüzyon modeli | MODEL | Evet | |
 | `model_patch` | Uygulanacak önceden yapılandırılmış animasyon yaması | MODEL_PATCH | Evet | |
-| `görsel` | Üretime rehberlik edecek referans görüntü | IMAGE | Evet | |
+| `görsel` | Üretime rehberlik edecek referans görüntü. Yalnızca ilk 3 renk kanalı (RGB) kullanılır | IMAGE | Evet | |
 | `güç` | Yama efektinin gücü (varsayılan: 1.0) | FLOAT | Evet | -10.0 ile 10.0 arası |
 | `başlangıç yüzdesi` | Yamanın etkisini göstermeye başladığı gürültü giderme sürecinin yüzdesi (varsayılan: 0.0) | FLOAT | Evet | 0.0 ile 1.0 arası |
 | `bitiş yüzdesi` | Yamanın etkisini göstermeyi bıraktığı gürültü giderme sürecinin yüzdesi (varsayılan: 1.0) | FLOAT | Evet | 0.0 ile 1.0 arası |
 | `maske` | Yama efektini görüntünün belirli alanlarıyla sınırlamak için isteğe bağlı bir maske | MASK | Hayır | |
 
-**Parametre kısıtlamaları hakkında not:** `model_patch` 4 giriş kanalına sahipse ve `mask` sağlanmamışsa, görüntü boyutlarıyla eşleşecek şekilde otomatik olarak sıfır maskesi oluşturulur. `model_patch` 4 giriş kanalına sahip değilse, `mask` parametresi yok sayılır ve `None` olarak ayarlanır.
+**Parametre kısıtlamaları hakkında not:** `model_patch` 4 giriş kanalına sahipse ve `mask` sağlanmamışsa, görüntü boyutlarıyla eşleşecek şekilde otomatik olarak sıfır maskesi oluşturulur. `model_patch` 4 giriş kanalına sahip değilse, `mask` parametresi yok sayılır ve `None` olarak ayarlanır. Bu düğüm ComfyUI'da deneysel olarak işaretlenmiştir.
 
 ## Çıktılar
 

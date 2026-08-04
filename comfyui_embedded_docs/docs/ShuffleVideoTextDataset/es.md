@@ -9,6 +9,7 @@ Este nodo mezcla aleatoriamente el orden de los pares de video y texto, mantenie
 | `videos` | Lista de videos a mezclar. | VIDEO | Sí | Lista de elementos de video |
 | `texts` | Lista de textos a mezclar. | STRING | Sí | Lista de cadenas de texto |
 | `seed` | Semilla aleatoria para controlar el orden de mezcla (por defecto: 0). | INT | Sí | 0 a 18446744073709551615 |
+Nota: `videos` y `texts` deben tener la misma longitud, ya que el nodo empareja cada video con el texto en la misma posición y conserva esos emparejamientos al mezclar.
 
 ## Salidas
 

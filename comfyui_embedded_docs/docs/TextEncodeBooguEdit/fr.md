@@ -1,16 +1,17 @@
 # TextEncodeBooguEdit
 
-Ce nœud prépare le conditionnement pour l'édition d'images avec Boogu. Il traite les images de référence pour produire à la fois un conditionnement positif et négatif. L'image de référence est utilisée deux fois : les tokens visuels de l'image sont ajoutés uniquement au conditionnement positif pour amplifier l'instruction d'édition, tandis qu'un latent de référence VAE est ajouté aux conditionnements positif et négatif afin de s'annuler sous CFG, préservant ainsi l'identité de l'image d'origine.
+Ce nœud prépare le conditionnement pour l'édition d'images avec Boogu. Il traite les images de référence pour produire à la fois un conditionnement positif et négatif. L'image de référence est utilisée deux fois : les jetons de vision de l'image sont ajoutés uniquement au conditionnement positif pour amplifier l'instruction d'édition, tandis qu'un latent de référence du VAE est ajouté aux conditionnements positif et négatif afin qu'il s'annule sous CFG, préservant l'identité de l'image d'origine ; le tokeniseur sélectionne automatiquement le prompt système approprié en fonction de la présence d'images et de prompts négatifs vides.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Le modèle CLIP utilisé pour l'encodage de texte | CLIP | Oui | |
-| `prompt` | Le prompt textuel décrivant l'édition souhaitée | STRING | Oui | |
-| `negative_prompt` | Le prompt textuel décrivant ce qu'il faut éviter dans l'édition | STRING | Non | |
-| `vae` | Le modèle VAE utilisé pour encoder les images de référence dans l'espace latent | VAE | Non | |
+| `prompt` | Le prompt textuel décrivant l'édition souhaitée. Prend en charge le texte multiligne et les prompts dynamiques. | STRING | Oui | |
+| `negative_prompt` | Le prompt textuel décrivant ce qu'il faut éviter dans l'édition. Peut être laissé vide pour abandonner le conditionnement négatif. Paramètre avancé. | STRING | Oui | |
+| `vae` | Le modèle VAE utilisé pour encoder les images de référence dans l'espace latent. Nécessaire pour ajouter des latents de référence aux sorties de conditionnement. | VAE | Non | |
 | `images` | Image(s) de référence à éditer. Boogu se concentre sur une référence par échantillon ; plusieurs sont autorisées. | IMAGE | Non | Jusqu'à 16 images |
+Les latents de référence ne sont ajoutés aux deux sorties de conditionnement que lorsque `vae` est fourni avec au moins une `image` de référence. Si `vae` est omis, la sortie positive reçoit toujours les jetons de vision des images de référence, mais aucune sortie n'inclut de latents de référence.
 
 ## Sorties
 

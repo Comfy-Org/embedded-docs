@@ -6,14 +6,14 @@ Bu düğüm, Luma'nın Ray 3.2 modelini kullanarak bir metin isteminden video ol
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `prompt` | Video oluşturma için metin istemi. | STRING | Evet | 1-6000 karakter |
+| `prompt` | Video üretimi için metin istemi. | STRING | Evet | 1 ila 6000 karakter |
 | `en-boy oranı` | Oluşturulan videonun en-boy oranı. | STRING | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
 | `çözünürlük` | Videonun çıktı çözünürlüğü (varsayılan: "720p"). | STRING | Evet | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `süre` | Oluşturulan videonun süresi. | STRING | Evet | `"5s"`<br>`"10s"` |
 | `döngü` | Videonun kesintisiz döngüye girmesini sağlar. Yalnızca 5 saniyelik süre ile kullanılabilir. | BOOLEAN | Hayır | Doğru/Yanlış (varsayılan: Yanlış) |
 | `seed` | Tekrarlanabilir oluşturma için tohum değeri. | INT | Hayır | 0 ile 2147483647 arası |
 
-**Not:** `loop` parametresi yalnızca `duration` "5s" olarak ayarlandığında etkinleştirilebilir. "10s" süresi seçip döngüyü etkinleştirirseniz, düğüm bir hata döndürecektir.
+**Not:** `loop` parametresi yalnızca `duration` "5s" olarak ayarlandığında etkinleştirilebilir. `duration` değerini "10s" olarak ayarlayıp `loop` değerini etkinleştirirseniz düğüm bir hata döndürür.
 
 ## Çıktılar
 

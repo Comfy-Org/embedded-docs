@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so 說話肖像
 
 將靜態肖像動畫化為由語音音訊驅動的對話影片，使用 sync.so 的 sync-3 模型。輸出時長與音訊時長相符，費用隨輸出時長增加。
 

@@ -1,4 +1,4 @@
-# HeyGenAvatarVideoNode
+# Vídeo de Avatar HeyGen
 
 Gere um vídeo de apresentador falante a partir de um avatar HeyGen. Este nó cria um vídeo de um avatar de IA falando o texto fornecido ou sincronizando os lábios com seu próprio áudio, usando os mecanismos de renderização da HeyGen.
 
@@ -11,7 +11,7 @@ Gere um vídeo de apresentador falante a partir de um avatar HeyGen. Este nó cr
 | `fala` | Controla o avatar com um roteiro de texto (texto-para-fala da HeyGen) ou seu próprio áudio. | COMBO | Sim | `"script"`<br>`"audio"` |
 | `resolução` | Resolução do vídeo de saída (padrão: "1080p"). | COMBO | Não | `"720p"`<br>`"1080p"` |
 | `proporção` | Proporção de tela da saída. 'auto' segue a filmagem de origem do avatar (padrão: "auto"). | COMBO | Não | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `cor_de_fundo` | Cor de fundo sólida opcional como código hexadecimal (ex: '#00ff00'). Deixe vazio para usar o fundo original do avatar. | STRING | Não |  |
+Deixe vazio para usar o fundo original do avatar. Se fornecido, o valor deve começar com `#`.
 | `semente` | Não é enviado para a HeyGen; altere-o para forçar uma nova execução (padrão: 42). | INT | Não | Mín: 0<br>Máx: 2147483647 |
 
 Quando `speech` está definido como `"script"`, os seguintes subparâmetros estão disponíveis:

@@ -8,10 +8,11 @@ Ce nœud encode un prompt textuel et des images optionnelles en données de cond
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Le modèle CLIP utilisé pour encoder le prompt textuel | CLIP | Oui | - |
 | `prompt` | Le prompt textuel à encoder, prenant en charge les entrées multilignes et les prompts dynamiques | STRING | Oui | - |
-| `vae` | Un modèle VAE pour encoder les images dans l'espace latent (optionnel) | VAE | Non | - |
-| `images` | Une ou plusieurs images à inclure dans le conditionnement, jusqu'à un maximum de 6 images | IMAGE | Non | 0 à 6 images |
+| `vae` | Un modèle VAE pour encoder les images dans l'espace latent | VAE | Non | - |
+| `images` | Images optionnelles à inclure dans le conditionnement, jusqu'à un maximum de 6 images. Chaque image se connecte comme une entrée séparée (image_0 à image_5) | IMAGE | Non | 0 à 6 images |
 
 ## Sorties
+L'entrée `images` est un groupe à croissance automatique qui accepte entre 0 et 6 images. Lorsqu'aucune image n'est connectée, le conditionnement est basé uniquement sur le prompt textuel.
 
 | Nom de sortie | Description | Type de données |
 |---------------|-------------|-----------------|

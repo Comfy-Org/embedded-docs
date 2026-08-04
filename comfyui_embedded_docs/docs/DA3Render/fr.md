@@ -7,7 +7,7 @@ Ce nœud génère une visualisation à partir des données géométriques de Dep
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `da3_geometry` | Le paquet de données géométriques Depth Anything 3 contenant la profondeur, et optionnellement les tenseurs de ciel et de confiance | DA3_GEOMETRY | Oui | - |
-| `output` | Le type de visualisation à générer. Les options incluent depth, depth_colored, sky_mask et confidence. Chaque option possède son propre ensemble de sous-paramètres. | COMBO | Oui | `"depth"`<br>`"depth_colored"`<br>`"sky_mask"`<br>`"confidence"` |
+| `output` | Le type de visualisation à générer.<br>- depth : image de profondeur en niveaux de gris normalisée.<br>- depth_colored : profondeur mappée via la colormap Turbo.<br>- sky_mask : probabilité de ciel dans [0, 1] (modèles Mono/Metric uniquement).<br>- confidence : confiance de profondeur normalisée (modèles Small/Base uniquement). | COMBO | Oui | "depth"<br>"depth_colored"<br>"sky_mask"<br>"confidence" |
 
 ### Sous-paramètres pour les options `output`
 
@@ -15,8 +15,8 @@ Lorsque `output` est défini sur `"depth"` ou `"depth_colored"` :
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `normalization` | La méthode de normalisation de la profondeur. v2_style utilise la normalisation moyenne/écart-type pour des résultats perceptuellement équilibrés (par défaut). min_max étend la plage complète de profondeur à [0, 1] pour un contraste maximal. raw préserve les unités métriques pour le modèle Metric sans mise à l'échelle. | COMBO | Oui | `"v2_style"`<br>`"min_max"`<br>`"raw"` |
-| `apply_sky_clip` | Limiter la profondeur de la région du ciel au 99e percentile de la profondeur du premier plan avant la normalisation. Nécessite une clé sky dans l'entrée da3_geometry (pour les modèles Mono/Metric uniquement). Par défaut : False | BOOLEAN | Oui | True<br>False |
+| `normalization` | Méthode de normalisation de la profondeur.<br>- v2_style : normalisation moyenne/écart-type pour des résultats perceptuellement équilibrés (par défaut).<br>- min_max : étire toute la plage de profondeur sur [0, 1] pour un contraste maximal.<br>- raw : aucune mise à l'échelle, conserve les unités métriques pour le modèle Metric. | COMBO | Oui | "v2_style"<br>"min_max"<br>"raw" |
+| `apply_sky_clip` | Limiter la profondeur de la région du ciel au 99e percentile de la profondeur du premier plan avant la normalisation. Nécessite une clé sky dans l'entrée da3_geometry (modèles Mono/Metric uniquement). Par défaut : False | BOOLEAN | Oui | True<br>False |
 
 Lorsque `output` est défini sur `"sky_mask"` :
 

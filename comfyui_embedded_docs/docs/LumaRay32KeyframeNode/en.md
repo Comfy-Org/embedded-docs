@@ -1,6 +1,5 @@
 # Luma Ray 3.2 Keyframe
 
-```markdown
 This node anchors a guide image to a specific position on the Luma Ray 3.2 output video timeline. Connect this node to the "keyframes" input of the Luma Ray 3.2 Keyframes to Video node, and chain several keyframes together by connecting the optional "keyframes" input.
 
 ## Inputs
@@ -20,7 +19,6 @@ When "Absolute time (seconds)" is selected for the `position` parameter, you can
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `keyframes` | A keyframe chain that includes the new keyframe combined with any optional earlier keyframes. | LUMA_RAY32_KEYFRAME |
-```
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframeNode/en.md)
 

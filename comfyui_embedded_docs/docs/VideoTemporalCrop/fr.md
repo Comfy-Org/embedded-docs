@@ -9,6 +9,7 @@ Ce nœud découpe une plage continue d'images d'une vidéo. Il fonctionne de man
 | `vidéo` | Vidéo d'entrée. | VIDEO | Oui | – |
 | `image de départ` | Index de l'image de début (par défaut : 0). | INT | Oui | 0 à 99999 |
 | `longueur` | Nombre d'images à conserver (par défaut : 16). | INT | Oui | 1 à 99999 |
+Remarque : `start_frame` est limité à la dernière image de la vidéo, et `length` est réduit s'il dépasserait les images disponibles.
 
 ## Sorties
 

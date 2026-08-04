@@ -7,7 +7,7 @@ Bu düğüm, bir kılavuz görüntüyü çıktı videosunda belirli bir ana sabi
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `görsel` | Çıktı videosunun seçilen anına yerleştirilecek kılavuz görüntü. | IMAGE | Evet | - |
-| `konum` | Bu görüntünün çıktı videosunun zaman çizelgesine nasıl yerleştirileceği. Mutlak zamanlama (başlangıçtan itibaren saniye) veya kesirli zamanlama (video süresinin yüzdesi) arasında seçim yapın. | COMBO | Evet | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `konum` | Bu görüntünün çıktı videosunun zaman çizelgesine nasıl yerleştirileceği. Mutlak zamanlama (başlangıçtan itibaren saniye) veya kesirli zamanlama (video süresinin kesri) arasında seçim yapın. Bir seçenek seçmek ilgili alt parametreyi gösterir. | COMBO | Evet | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
 | `rehber görseller` | Bununla zincirlenecek isteğe bağlı önceki prompt görüntüleri. En fazla 5 kılavuz görüntüden oluşan bir zincir oluşturmak için başka bir Runway Aleph2 Prompt Image düğümünün çıktısını buraya bağlayın. | PROMPT_IMAGE_CHAIN | Hayır | - |
 
 **Konum Modu Detayları:**

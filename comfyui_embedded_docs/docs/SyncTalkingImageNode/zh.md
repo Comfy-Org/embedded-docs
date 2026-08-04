@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so 说话图像
 
 使用 sync.so 的 sync-3 模型，将静态人像动画化为由语音音频驱动的说话视频。输出时长与音频时长一致，费用随输出时长增加而增加。
 

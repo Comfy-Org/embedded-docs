@@ -9,6 +9,7 @@ Este nó embaralha aleatoriamente a ordem de pares de vídeo-texto, mantendo cad
 | `vídeos` | Lista de vídeos para embaralhar. | VIDEO | Sim | Lista de itens de vídeo |
 | `textos` | Lista de textos para embaralhar. | STRING | Sim | Lista de strings de texto |
 | `semente` | Semente aleatória para controlar a ordem do embaralhamento (padrão: 0). | INT | Sim | 0 a 18446744073709551615 |
+Observação: `videos` e `texts` devem ter o mesmo comprimento, pois o nó emparelha cada vídeo com o texto na mesma posição e preserva esses emparelhamentos ao embaralhar.
 
 ## Saídas
 

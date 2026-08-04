@@ -11,6 +11,7 @@
 | `物件索引` | 要包含的人物索引，以逗號分隔（例如 '0,2,3'）。同時應用於參考圖像和姿態影片遮罩。空白 = 全部。 | STRING | 是 | - |
 | `排序方式` | 調色板顏色分配給追蹤物件的順序（同時應用於參考圖像和姿態影片，使每個身份保持相同顏色）。left_to_right = 最左側物件（以第一幀質心為準）獲得第一個顏色；area = 最大物件（以第一幀遮罩面積為準）獲得第一個顏色；none = 保留 SAM3 的順序。（預設值："left_to_right"） | COMBO | 是 | `"none"`<br>`"left_to_right"`<br>`"area"` |
 | `替換模式` | False = 動畫模式（pose_video_mask 背景為黑色，reference_image_mask 背景為白色）。True = 替換模式（pose_video_mask 背景為白色，reference_image_mask 背景為黑色）。（預設值：False） | BOOLEAN | 是 | False<br>True |
+注意：`object_indices` 僅接受逗號分隔的數字；非數字條目和超出範圍的索引將被忽略。當未提供 `ref_track_data` 時，`reference_image_mask` 輸出將使用參考背景色進行純色填充（動畫模式為白色，替換模式為黑色）。
 
 ## ## 輸出
 

@@ -1,6 +1,6 @@
 # BerniniConditioning
 
-Le nœud BerniniConditioning prépare les données de conditionnement vidéo et image pour le modèle Wan2.2-A14B. Il encode les vidéos sources, les vidéos de référence et les images de référence à l'aide du VAE fourni, puis les attache aux données de conditionnement pour des tâches de génération en contexte.
+Le nœud BerniniConditioning prépare les données de conditionnement vidéo et image pour le modèle Wan2.2-A14B. Il encode les vidéos sources, les vidéos de référence et les images de référence à l'aide du VAE fourni, puis les attache aux données de conditionnement comme jetons en contexte. La tâche est déduite automatiquement des entrées connectées.
 
 ## Entrées
 
@@ -14,8 +14,8 @@ Le nœud BerniniConditioning prépare les données de conditionnement vidéo et 
 | `longueur` | Nombre d'images dans le latent de sortie (par défaut : 81) | INT | Oui | 1 à 8192 (pas : 4) |
 | `taille_lot` | Nombre de vidéos à générer en un seul lot (par défaut : 1) | INT | Oui | 1 à 4096 |
 | `vidéo_source` | Vidéo source à éditer ou restyler (v2v, rv2v). Redimensionnée à la largeur/hauteur et ajustée à la longueur. | IMAGE | Non | - |
-| `vidéo_de_référence` | Vidéo à insérer dans la vidéo source (ads2v). | IMAGE | Non | - |
-| `images_de_référence` | Images de référence injectées comme jetons en contexte (r2v, rv2v). Jusqu'à 8 images peuvent être fournies. | IMAGE | Non | 0 à 8 images |
+| `vidéo_de_référence` | Vidéo à insérer dans la vidéo source (ads2v). Coupée à la longueur et redimensionnée en préservant le rapport hauteur/largeur (bord long plafonné à ref_max_size). | IMAGE | Non | - |
+| `images_de_référence` | Images de référence injectées comme jetons en contexte (r2v, rv2v). Chaque image est encodée indépendamment dans son propre rapport hauteur/largeur natif (bord long plafonné à ref_max_size). Jusqu'à 8 images peuvent être fournies. | IMAGE | Non | 0 à 8 images |
 | `ref_max_size` | Taille maximale pour le bord long de reference_video et reference_images. Redimensionné avec conservation du rapport hauteur/largeur et ajusté à 16px (par défaut : 848). | INT | Non | 16 à 8192 (pas : 16) |
 
 **Remarque :** La tâche est déduite des entrées connectées :
@@ -24,6 +24,7 @@ Le nœud BerniniConditioning prépare les données de conditionnement vidéo et 
 - `source_video` + `reference_images` → édition vidéo guidée par référence (rv2v)
 - `reference_images` uniquement → référence-vers-vidéo (r2v)
 - `source_video` + `reference_video` → insertion d'image/vidéo dans une vidéo (ads2v)
+Les flux de contexte sont attachés dans un ordre fixe : `source_video` (ID source 1), puis `reference_video` (ID source 2), puis chaque image de référence (IDs source 3, 4, ...). Une entrée d'image de référence contenant plusieurs images contribue d'un flux par image.
 
 ## Sorties
 

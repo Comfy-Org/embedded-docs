@@ -18,8 +18,10 @@ Este nó aplica um ControlNet Uni3C a um modelo de difusão de vídeo Wan, utili
 
 **Observações:**
 - O `model_patch` deve ser um ControlNet Uni3C; caso contrário, o nó gerará um erro.
-- A dimensão interna do controlnet deve corresponder à dimensão do modelo Wan – um erro será gerado se forem diferentes.
+- O ControlNet Uni3C só funciona com modelos Wan; um erro é gerado se o modelo não for baseado em Wan.
+- A dimensão interna do ControlNet deve corresponder à dimensão do modelo Wan; um erro é gerado se forem diferentes.
 - Espera-se que a imagem de entrada `render_video` esteja no formato RGB (apenas os 3 primeiros canais são utilizados).
+- Este nó é experimental.
 
 ## Saídas
 

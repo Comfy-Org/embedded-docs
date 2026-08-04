@@ -1,6 +1,6 @@
 # BerniniConditioning
 
-O nó BerniniConditioning prepara dados de condicionamento de vídeo e imagem para o modelo Wan2.2-A14B. Ele codifica vídeos fonte, vídeos de referência e imagens de referência usando o VAE fornecido, em seguida os anexa aos dados de condicionamento para tarefas de geração em contexto.
+O nó BerniniConditioning prepara dados de condicionamento de vídeo e imagem para o modelo Wan2.2-A14B. Ele codifica vídeos fonte, vídeos de referência e imagens de referência usando o VAE fornecido e os anexa aos dados de condicionamento como tokens em contexto. A tarefa é inferida automaticamente a partir de quais entradas estão conectadas.
 
 ## Entradas
 
@@ -14,8 +14,8 @@ O nó BerniniConditioning prepara dados de condicionamento de vídeo e imagem pa
 | `duração` | Número de quadros no latente de saída (padrão: 81) | INT | Sim | 1 a 8192 (passo: 4) |
 | `tamanho_do_lote` | Número de vídeos a serem gerados em um único lote (padrão: 1) | INT | Sim | 1 a 4096 |
 | `vídeo_fonte` | Vídeo fonte para editar ou reestilizar (v2v, rv2v). Redimensionado para largura/altura e cortado para o comprimento especificado. | IMAGE | Não | - |
-| `vídeo_referência` | Vídeo a ser inserido no vídeo fonte (ads2v). | IMAGE | Não | - |
-| `imagens_referência` | Imagens de referência injetadas como tokens em contexto (r2v, rv2v). Até 8 imagens podem ser fornecidas. | IMAGE | Não | 0 a 8 imagens |
+| `vídeo_referência` | Vídeo a ser inserido no vídeo fonte (ads2v). Cortado no comprimento e redimensionado com proporção preservada (borda longa limitada a ref_max_size). | IMAGE | Não | - |
+| `imagens_referência` | Imagens de referência injetadas como tokens em contexto (r2v, rv2v). Cada imagem é codificada de forma independente em sua própria proporção nativa (borda longa limitada a ref_max_size). Até 8 imagens podem ser fornecidas. | IMAGE | Não | 0 a 8 imagens |
 | `ref_max_size` | Tamanho máximo para a borda longa do vídeo de referência e imagens de referência. Redimensionado com proporção preservada e ajustado para 16px (padrão: 848). | INT | Não | 16 a 8192 (passo: 16) |
 
 **Observação:** A tarefa é inferida a partir de quais entradas estão conectadas:
@@ -24,6 +24,7 @@ O nó BerniniConditioning prepara dados de condicionamento de vídeo e imagem pa
 - `source_video` + `reference_images` → edição de vídeo guiada por referência (rv2v)
 - Apenas `reference_images` → referência-para-vídeo (r2v)
 - `source_video` + `reference_video` → inserir imagem/vídeo em vídeo (ads2v)
+Os fluxos de contexto são anexados em uma ordem fixa: `source_video` (ID da fonte 1), depois `reference_video` (ID da fonte 2), depois cada imagem de referência (IDs da fonte 3, 4, ...). Uma entrada de imagem de referência contendo várias imagens contribui com um fluxo por imagem.
 
 ## Saídas
 

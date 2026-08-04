@@ -15,6 +15,7 @@ Este nodo carga un archivo de modelo 3D desde tu directorio de entrada de ComfyU
 - El parámetro `model_file` solo muestra archivos con las siguientes extensiones: .gltf, .glb, .obj, .fbx, .stl
 - Los archivos deben colocarse en el directorio `input/3d` de tu instalación de ComfyUI
 - Si `model_file` está configurado como "none", no se cargarán datos del modelo 3D (la salida `model_3d` estará vacía)
+- Si `model_file` se establece en un archivo que no existe, el nodo devuelve un error de validación: "Invalid 3D model file: {model_file}"
 
 ## Salidas
 

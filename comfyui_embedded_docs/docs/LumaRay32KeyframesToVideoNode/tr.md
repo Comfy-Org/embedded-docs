@@ -6,7 +6,7 @@ Bu düğüm, her biri zaman çizelgesinde belirli bir konuma sabitlenmiş bir di
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Video oluşturma için metin istemi. | STRING | Evet | 1 ila 6000 karakter |
+| `prompt` | Video oluşturma için metin istemi (varsayılan: boş dize). | STRING | Evet | 1 ila 6000 karakter |
 | `çözünürlük` | Oluşturulan videonun çıktı çözünürlüğü (varsayılan: "720p"). | COMBO | Evet | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `süre` | Oluşturulan videonun süresi (varsayılan: "5s"). | COMBO | Evet | `"5s"`<br>`"10s"` |
 | `seed` | Tekrarlanabilirliği kontrol etmek için rastgele sayı üretimindeki tohum değeri. | INT | Evet | 0 ila 4294967295 |

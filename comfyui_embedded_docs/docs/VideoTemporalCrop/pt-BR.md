@@ -9,6 +9,7 @@ Este nó corta um intervalo contínuo de quadros de um vídeo. Ele funciona de f
 | `vídeo` | Vídeo de entrada. | VIDEO | Sim | – |
 | `quadro_inicial` | Índice do quadro inicial (padrão: 0). | INT | Sim | 0 a 99999 |
 | `comprimento` | Número de quadros a manter (padrão: 16). | INT | Sim | 1 a 99999 |
+Observação: `start_frame` é limitado ao último quadro do vídeo, e `length` é reduzido se se estender além dos quadros disponíveis.
 
 ## Saídas
 

@@ -11,6 +11,7 @@ Ce nœud génère des masques colorés à partir des données de suivi SAM3, qui
 | `indices_objets` | Liste d'indices de personnes séparés par des virgules à inclure (ex. '0,2,3'). Appliqué aux masques de référence et de vidéo de pose. Vide = tous. | STRING | Oui | - |
 | `trier_par` | Ordre d'attribution des couleurs de la palette aux objets suivis (appliqué à la fois à la référence et à la vidéo de pose pour que chaque identité conserve la même couleur). left_to_right = l'objet le plus à gauche (par centroïde de la première image) reçoit la première couleur ; area = l'objet le plus grand (par surface du masque de la première image) reçoit la première couleur ; none = conserve l'ordre de SAM3. (par défaut : "left_to_right") | COMBO | Oui | `"none"`<br>`"left_to_right"`<br>`"area"` |
 | `mode_remplacement` | False = Mode Animation (pose_video_mask a un fond noir, reference_image_mask a un fond blanc). True = Mode Remplacement (pose_video_mask a un fond blanc, reference_image_mask a un fond noir). (par défaut : False) | BOOLEAN | Oui | False<br>True |
+Remarque : `object_indices` n'accepte que des chiffres séparés par des virgules ; les entrées non numériques et les index hors limites sont ignorés. Lorsque `ref_track_data` n'est pas fourni, la sortie `reference_image_mask` est un remplissage uni utilisant la couleur d'arrière-plan de référence (blanc en Mode Animation, noir en Mode Remplacement).
 
 ## Sorties
 

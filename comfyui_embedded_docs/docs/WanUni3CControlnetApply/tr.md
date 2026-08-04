@@ -18,8 +18,10 @@ Bu düğüm, bir Wan video difüzyon modeline Uni3C ControlNet uygular. Bunu yap
 
 **Notlar:**
 - `model_patch` bir Uni3C ControlNet olmalıdır; aksi takdirde düğüm hata verir.
-- ControlNet'in iç boyutu, Wan modelinin boyutuyla eşleşmelidir; farklı olmaları durumunda hata verilir.
+- Uni3C ControlNet yalnızca Wan modelleriyle çalışır; model Wan tabanlı değilse bir hata oluşur.
+- ControlNet'in iç boyutu, Wan modelinin boyutuyla eşleşmelidir; farklı olursa bir hata oluşur.
 - `render_video` giriş görüntüsünün RGB formatında olması beklenir (yalnızca ilk 3 kanal kullanılır).
+- Bu düğüm deneyseldir.
 
 ## Çıktılar
 

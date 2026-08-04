@@ -1,4 +1,4 @@
-# HeyGenVideoTranslateNode
+# HeyGen 비디오 번역
 
 ## 개요
 

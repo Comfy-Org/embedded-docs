@@ -8,9 +8,9 @@ Este nodo codifica una instrucción de edición (prompt) junto con una o más im
 |-----------|-------------|---------------|-------------|-------|
 | `clip` | El modelo CLIP utilizado para tokenizar y codificar los prompts de texto. | CLIP | Sí | |
 | `prompt` | La instrucción de edición (prompt positivo) a aplicar. | STRING | Sí | multilínea, prompts dinámicos activados |
-| `negative_prompt` | El prompt negativo para alejarse de él. Valor predeterminado: cadena vacía (internamente se usa un espacio cuando está en blanco). | STRING | No | multilínea, prompts dinámicos activados |
+| `negative_prompt` | El prompt negativo para alejarse de él. Predeterminado: cadena vacía (usa un espacio internamente cuando está en blanco). Se muestra en la sección avanzada de la interfaz. | STRING | No | multilínea, prompts dinámicos habilitados |
 | `vae` | Modelo VAE para codificar las imágenes de referencia en el espacio latente. Si no se proporciona, no se añaden latentes de referencia al condicionamiento. | VAE | No | |
-| `images` | Una o más imágenes de referencia para editar. Todas las imágenes se redimensionan a la resolución de salida antes de codificarlas. | IMAGE (crecimiento automático) | No | Hasta 16 imágenes (nombradas `image_1`…`image_16`), al menos 0 |
+| `images` | Imágenes de referencia para editar. Todas las referencias se redimensionan a la resolución de salida antes de la codificación. | IMAGE (autogrow) | No | Hasta 16 imágenes (nombradas `image_1`…`image_16`), al menos 0 |
 | `width` | Ancho de salida en píxeles. Si se establece en 0, se utiliza el ancho de la primera imagen de referencia. Siempre se redondea hacia abajo a un múltiplo de 16. Valor predeterminado: 0. | INT | Sí | 0 a 8192 (paso 16) |
 | `height` | Alto de salida en píxeles. Mismo comportamiento de respaldo que el ancho. Valor predeterminado: 0. | INT | Sí | 0 a 8192 (paso 16) |
 | `batch_size` | Número de muestras latentes a generar. Valor predeterminado: 1. | INT | Sí | 1 a 4096 |
@@ -18,7 +18,9 @@ Este nodo codifica una instrucción de edición (prompt) junto con una o más im
 **Notas sobre dependencias de parámetros:**
 - Si `width` y/o `height` son 0 y no se proporcionan imágenes de referencia, se usan 1024 cada uno como valor de respaldo.
 - El parámetro `vae` es opcional; los latentes de referencia solo se generan y se adjuntan al condicionamiento cuando se conecta un VAE.
+- Si solo uno de `width` o `height` es 0, la dimensión faltante se toma de la primera imagen de referencia mientras se mantiene la dimensión establecida explícitamente.
 - El campo `negative_prompt` es opcional; si se deja vacío, internamente se usa un espacio como texto negativo.
+- Para el condicionamiento de texto, cada imagen de referencia se redimensiona para que su borde más largo sea de como máximo 384 píxeles, coincidiendo con el preprocesamiento de entrenamiento. La rama de codificación VAE, en cambio, redimensiona todas las referencias a la resolución de salida completa.
 
 ## Salidas
 

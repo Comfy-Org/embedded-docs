@@ -8,11 +8,13 @@
 |------|------|----------|----------|------|
 | `视频` | 输入视频。 | VIDEO | 是 | – |
 | `帧数` | 要采样的帧数（默认：16）。 | INT | 是 | 1 – 9999 |
-| `采样策略` | 采样策略（默认："uniform"）。 | COMBO | 是 | `"uniform"`<br>`"head"`<br>`"tail"`<br>`"random"` |
+| `采样策略` | uniform：均匀间隔，head：前 N 个，tail：后 N 个，random：随机排序（默认："uniform"）。 | COMBO | 是 | "uniform"<br>"head"<br>"tail"<br>"random" |
 | `随机种子` | 随机种子，仅用于 "random" 策略（默认：0）。 | INT | 是 | 0 – 18446744073709551615 |
 
 - `num_frames` 会自动被限制为输入视频的总帧数。
 - 除非 `strategy` 设置为 `"random"`，否则 `seed` 参数无效。
+- 当 `strategy` 为 `"uniform"` 且 `num_frames` 为 1 时，选择视频的中间帧。
+- 无法识别的 `strategy` 值将引发错误。
 
 ## 输出
 

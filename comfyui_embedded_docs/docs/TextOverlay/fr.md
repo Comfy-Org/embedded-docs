@@ -7,12 +7,13 @@ Ce nœud dessine du texte sur une image ou un lot d'images. Il crée une superpo
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `images` | L'image ou le lot d'images d'entrée sur lequel dessiner le texte | IMAGE | Oui | |
-| `texte` | Le texte à superposer sur l'image (par défaut : "") | STRING | Oui | |
-| `taille_de_police` | Taille de la police en pourcentage de la hauteur de l'image (par défaut : 5.0) | FLOAT | Oui | 0.5 à 50.0 |
+| `texte` | Le texte à superposer sur l'image (par défaut : ""). Prend en charge plusieurs lignes ; les séquences d'échappement `\n` et `\t` sont converties en sauts de ligne et tabulations, et le texte est automatiquement renvoyé à la ligne pour tenir dans la largeur de l'image. | STRING | Oui | |
+| `taille_de_police` | Taille de la police en pourcentage de la hauteur de l'image (par défaut : 5.0) | FLOAT | Oui | 0.5 à 50.0 (pas de 0.5) |
 | `couleur` | Couleur du texte (par défaut : "#ffffff") | STRING | Oui | |
 | `position` | Position verticale du texte sur l'image (par défaut : "top") | COMBO | Oui | `"top"`<br>`"bottom"` |
 | `alignement` | Alignement horizontal du texte (par défaut : "left") | COMBO | Oui | `"left"`<br>`"center"`<br>`"right"` |
 | `contour` | Dessiner un contour noir autour du texte (par défaut : True) | BOOLEAN | Oui | |
+Remarque : si `text` est vide ou ne contient que des espaces, le nœud renvoie les images d'entrée inchangées. La même superposition de texte est appliquée à chaque image du lot.
 
 ## Sorties
 

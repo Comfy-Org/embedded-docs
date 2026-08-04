@@ -15,10 +15,10 @@
 | `pose_method` | 카메라 시야각 추정 방법(Small 및 Base 모델만 해당). cam_dec: 이미지 특징에서 학습. ray_pose: 모델의 3D 광선 출력에서 기하학적으로 도출. 3D 출력의 원근 정확도에 영향을 미칩니다 | COMBO | 아니요(조건부) | `"cam_dec"`<br>`"ray_pose"` |
 
 **매개변수 제약 조건 참고사항:**
-- `ref_view_strategy` 및 `pose_method` 매개변수는 `mode`가 `"multiview"`로 설정된 경우에만 사용 가능합니다
-- 다중 뷰 모드는 Small 또는 Base 모델 변형이 필요합니다. 다른 헤드 유형(Metric 또는 Mono 등)의 모델은 교차 뷰 주의 메커니즘 또는 카메라 포즈 추정을 지원하지 않습니다
-- `pose_method`가 `"cam_dec"`로 설정된 경우 모델에 카메라 디코더가 있어야 합니다. `"ray_pose"`로 설정된 경우 모델에 DualDPT 헤드가 있어야 합니다
-- 선택한 `pose_method`가 로드된 모델과 호환되지 않으면 오류가 발생합니다
+- `ref_view_strategy` 및 `pose_method` 매개변수는 `mode`가 `"multiview"`로 설정된 경우에만 사용 가능합니다.
+- 다중 뷰 모드는 Small 또는 Base 모델 변형이 필요합니다. 다른 헤드 유형(Metric 또는 Mono 등)의 모델은 교차 뷰 주의 메커니즘 또는 카메라 포즈 추정을 지원하지 않습니다.
+- `pose_method`가 `"cam_dec"`로 설정된 경우 모델에 카메라 디코더가 있어야 합니다. `"ray_pose"`로 설정된 경우 모델에 DualDPT 헤드가 있어야 합니다.
+- 선택한 `pose_method`가 로드된 모델과 호환되지 않으면 오류가 발생합니다.
 
 ## 출력
 

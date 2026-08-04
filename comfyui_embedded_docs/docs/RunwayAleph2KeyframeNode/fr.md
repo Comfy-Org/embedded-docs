@@ -1,6 +1,6 @@
 # Nœud d'Image Clé Runway Aleph2
 
-Ce nœud ancre une image de guidage à un moment spécifique de votre vidéo d'entrée, permettant au modèle Aleph2 d'orienter l'édition à cet endroit précis de votre séquence. Connectez ce nœud à l'entrée "keyframes" du nœud Runway Aleph2 Vidéo vers Vidéo, et enchaînez plusieurs exemplaires (jusqu'à 5) via l'entrée optionnelle "keyframes".
+Le nœud Runway Aleph2 Keyframe ancre une image de guidage à un moment spécifique
 
 ## Entrées
 

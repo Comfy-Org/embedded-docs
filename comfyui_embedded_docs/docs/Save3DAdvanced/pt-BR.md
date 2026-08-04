@@ -1,4 +1,4 @@
-# Save3DAdvanced
+# Salvar 3D (Avançado)
 
 Este nó salva um modelo 3D em um arquivo no diretório de saída do ComfyUI, com controle avançado sobre as dimensões de saída e as configurações de câmera/viewport. Ele também encaminha o modelo 3D, as informações do modelo, as informações da câmera e as dimensões para nós subsequentes.
 
@@ -6,13 +6,14 @@ Este nó salva um modelo 3D em um arquivo no diretório de saída do ComfyUI, co
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | Arquivo de modelo 3D proveniente de um nó 3D anterior. | FILE3D | Sim | GLB, GLTF, FBX, OBJ, STL, USDZ, Qualquer |
+| `model_3d` | Arquivo de modelo 3D proveniente de um nó 3D anterior. | FILE3D | Sim | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Qualquer |
 | `filename_prefix` | Prefixo para o nome do arquivo salvo (padrão: "3d/ComfyUI"). | STRING | Sim | Texto livre |
 | `viewport_state` | Estado do viewport proveniente de um nó Carregar 3D, contendo informações da câmera e do modelo. | LOAD3D | Sim | - |
 | `model_3d_info` | Informações opcionais do modelo 3D para substituir o estado do viewport. | LOAD3DMODELINFO | Não | - |
 | `camera_info` | Informações opcionais da câmera para substituir o estado do viewport. | LOAD3DCAMERA | Não | - |
 | `width` | Largura da pré-visualização de saída em pixels (padrão: 1024). | INT | Sim | 1 a 4096 |
 | `height` | Altura da pré-visualização de saída em pixels (padrão: 1024). | INT | Sim | 1 a 4096 |
+Observação: quando `model_3d_info` ou `camera_info` não estão conectados, o nó usa os valores armazenados em `viewport_state`.
 
 ## Saídas
 

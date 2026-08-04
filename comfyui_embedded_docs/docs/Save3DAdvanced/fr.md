@@ -1,4 +1,4 @@
-# Save3DAdvanced
+# Enregistrer 3D (Avancé)
 
 Ce nœud enregistre un modèle 3D dans un fichier situé dans le répertoire de sortie de ComfyUI, avec un contrôle avancé sur les dimensions de sortie et les paramètres de la caméra/du viewport. Il transmet également le modèle 3D, les informations du modèle, les informations de la caméra et les dimensions aux nœuds en aval.
 
@@ -6,13 +6,14 @@ Ce nœud enregistre un modèle 3D dans un fichier situé dans le répertoire de 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model_3d` | Fichier de modèle 3D provenant d'un nœud 3D en amont. | FILE3D | Oui | GLB, GLTF, FBX, OBJ, STL, USDZ, Any |
+| `model_3d` | Fichier de modèle 3D provenant d'un nœud 3D en amont. | FILE3D | Oui | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>N'importe |
 | `filename_prefix` | Préfixe pour le nom du fichier enregistré (par défaut : "3d/ComfyUI"). | STRING | Oui | Texte libre |
 | `viewport_state` | État du viewport provenant d'un nœud Load 3D, contenant les informations de la caméra et du modèle. | LOAD3D | Oui | - |
 | `model_3d_info` | Informations facultatives sur le modèle 3D pour remplacer l'état du viewport. | LOAD3DMODELINFO | Non | - |
 | `camera_info` | Informations facultatives sur la caméra pour remplacer l'état du viewport. | LOAD3DCAMERA | Non | - |
 | `width` | Largeur de l'aperçu de sortie en pixels (par défaut : 1024). | INT | Oui | 1 à 4096 |
 | `height` | Hauteur de l'aperçu de sortie en pixels (par défaut : 1024). | INT | Oui | 1 à 4096 |
+Remarque : lorsque `model_3d_info` ou `camera_info` ne sont pas connectés, le nœud utilise les valeurs stockées dans `viewport_state`.
 
 ## Sorties
 

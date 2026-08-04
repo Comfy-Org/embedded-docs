@@ -9,6 +9,7 @@ Bu düğüm, video-metin çiftlerinin sırasını rastgele karıştırır ve her
 | `videos` | Karıştırılacak videoların listesi. | VIDEO | Evet | List of video items |
 | `texts` | Karıştırılacak metinlerin listesi. | STRING | Evet | List of text strings |
 | `seed` | Karıştırma sırasını kontrol eden rastgele tohum (varsayılan: 0). | INT | Evet | 0 to 18446744073709551615 |
+Not: `videos` ve `texts` aynı uzunlukta olmalıdır; düğüm her videoyu aynı konumdaki metinle eşleştirir ve karıştırırken bu eşleştirmeleri korur.
 
 ## Çıktılar
 

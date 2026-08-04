@@ -1,4 +1,4 @@
-# HeyGenAvatarVideoNode
+# HeyGen Avatar Video
 
 Bir HeyGen avatarından konuşan sunucu videosu oluşturun. Bu düğüm, HeyGen'in işleme motorlarını kullanarak, sağladığınız metni okuyan veya kendi sesinize dudak senkronizasyonu yapan bir yapay zeka avatar videosu oluşturur.
 
@@ -11,7 +11,7 @@ Bir HeyGen avatarından konuşan sunucu videosu oluşturun. Bu düğüm, HeyGen'
 | `konuşma` | Avatara bir metin komut dosyası (HeyGen metinden sese) veya kendi sesinizle yön verin. | COMBO | Evet | `"script"`<br>`"audio"` |
 | `çözünürlük` | Çıktı video çözünürlüğü (varsayılan: "1080p"). | COMBO | Hayır | `"720p"`<br>`"1080p"` |
 | `en-boy oranı` | Çıktı en boy oranı. 'auto', avatarın kaynak görüntüsünü takip eder (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `arka plan rengi` | Onaltılık kod olarak isteğe bağlı düz arka plan rengi (örn. '#00ff00'). Avatarın kendi arka planı için boş bırakın. | STRING | Hayır |  |
+Avatarın kendi arka planı için boş bırakın. Sağlanırsa, değer `#` ile başlamalıdır.
 | `tohum` | HeyGen'e gönderilmez; yeniden çalıştırmayı zorlamak için değiştirin (varsayılan: 42). | INT | Hayır | Min: 0<br>Maks: 2147483647 |
 
 `speech` parametresi `"script"` olarak ayarlandığında, aşağıdaki alt parametreler kullanılabilir:

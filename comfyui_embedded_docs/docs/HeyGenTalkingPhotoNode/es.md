@@ -1,4 +1,4 @@
-# HeyGenTalkingPhotoNode
+# HeyGen Talking Photo
 
 Transforma una imagen estática de una persona en un video parlante con sincronización labial utilizando la tecnología Avatar IV de HeyGen. Puedes controlar la animación con un guion de texto que HeyGen convierte en voz, o proporcionar tu propio audio para que el avatar sincronice los labios.
 
@@ -8,15 +8,17 @@ Transforma una imagen estática de una persona en un video parlante con sincroni
 |-----------|-------------|--------------|-----------|-------|
 | `imagen` | Imagen de una persona para animar. Se reduce automáticamente si es mayor a 2K. | IMAGE | Sí | - |
 | `voz` | Controla el avatar con un guion de texto (texto a voz de HeyGen) o tu propio audio. | COMBO | Sí | `"script"`<br>`"audio"` |
-| `text` | Texto que el avatar debe decir (hasta 5000 caracteres). El discurso generado debe tener al menos 1 segundo de duración. | STRING | Sí (cuando speech es "script") | - |
+| `text` | Texto que el avatar debe decir (hasta 5000 caracteres). El discurso generado debe tener al menos 1 segundo de duración. (predeterminado: vacío) | STRING | Sí (cuando speech es "script") | - |
 | `voice` | Voz para el guion (las voces más populares de HeyGen). | COMBO | Sí (cuando speech es "script") | Múltiples opciones disponibles |
-| `custom_voice_id` | ID de voz opcional de HeyGen. Cuando se establece, anula la voz seleccionada anteriormente. Se puede usar cualquier voz de la biblioteca de HeyGen (más de 2000). | STRING | No | - |
+| `custom_voice_id` | ID de voz opcional de HeyGen. Cuando se establece, anula la voz seleccionada anteriormente. Se puede usar cualquier voz de la biblioteca de HeyGen (más de 2000). (predeterminado: vacío) | STRING | No | - |
 | `voice_speed` | Multiplicador de velocidad del habla (predeterminado: 1.0). | FLOAT | No | 0.5 a 1.5 |
 | `audio` | Audio para que el avatar sincronice los labios, hasta 10 minutos. | AUDIO | Sí (cuando speech es "audio") | - |
 | `resolución` | Resolución del video de salida (predeterminado: "1080p"). | COMBO | No | `"720p"`<br>`"1080p"` |
 | `relación de aspecto` | Relación de aspecto de salida. 'auto' sigue la imagen de entrada (predeterminado: "auto"). | COMBO | No | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
 | `expresividad` | Qué tan expresivos son el rostro y los gestos animados (predeterminado: "low"). | COMBO | No | `"low"`<br>`"medium"`<br>`"high"` |
 | `semilla` | No se envía a HeyGen; cámbialo para forzar una nueva ejecución (predeterminado: 42). | INT | No | 0 a 2147483647 |
+
+Nota: `speech` es una entrada dinámica que selecciona la fuente de voz. Cuando se establece en "script", se requieren `text` y `voice`, y `custom_voice_id` y `voice_speed` son opcionales. Cuando se establece en "audio", se requiere `audio` en su lugar.
 
 ## Salidas
 

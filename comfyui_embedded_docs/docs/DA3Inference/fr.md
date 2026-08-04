@@ -15,10 +15,10 @@ Ce nœud exécute le modèle Depth Anything 3 sur une image pour estimer les inf
 | `pose_method` | Comment le champ de vision de la caméra est estimé (pour les modèles Small et Base uniquement). cam_dec : appris à partir des caractéristiques de l'image. ray_pose : dérivé géométriquement de la sortie de rayons 3D du modèle. Affecte la correction de perspective de la sortie 3D | COMBO | Non (conditionnel) | `"cam_dec"`<br>`"ray_pose"` |
 
 **Remarques sur les contraintes des paramètres :**
-- Les paramètres `ref_view_strategy` et `pose_method` sont disponibles uniquement lorsque `mode` est défini sur `"multiview"`
-- Le mode multi-vue nécessite une variante de modèle Small ou Base. Les modèles avec d'autres types de tête (comme Metric ou Mono) ne prennent pas en charge l'attention inter-vues ou l'estimation de pose de caméra
-- Lorsque `pose_method` est défini sur `"cam_dec"`, le modèle doit disposer d'un décodeur de caméra. S'il est défini sur `"ray_pose"`, le modèle doit avoir une tête DualDPT
-- Si le `pose_method` sélectionné n'est pas compatible avec le modèle chargé, une erreur sera générée
+- Les paramètres `ref_view_strategy` et `pose_method` sont disponibles uniquement lorsque `mode` est défini sur `"multiview"`.
+- Le mode multi-vue nécessite une variante de modèle Small ou Base. Les modèles avec d'autres types de tête (comme Metric ou Mono) ne prennent pas en charge l'attention inter-vues ni l'estimation de pose de caméra.
+- Lorsque `pose_method` est défini sur `"cam_dec"`, le modèle doit disposer d'un décodeur de caméra. S'il est défini sur `"ray_pose"`, le modèle doit avoir une tête DualDPT.
+- Si le `pose_method` sélectionné n'est pas compatible avec le modèle chargé, une erreur sera générée.
 
 ## Sorties
 

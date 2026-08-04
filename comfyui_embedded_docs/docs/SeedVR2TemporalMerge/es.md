@@ -1,6 +1,6 @@
-# SeedVR2TemporalMerge
+# Unir latentes de SeedVR2
 
-Este nodo recombina fragmentos temporales latentes muestreados de SeedVR2 en un único latente de longitud completa. Utiliza una transición suave con ventana Hann sobre la región de superposición entre fragmentos para crear transiciones uniformes, o realiza una concatenación simple cuando no se especifica superposición.
+Este nodo recombina fragmentos temporales latentes muestreados de SeedVR2 en un único latente de longitud completa. Cuando se especifica una superposición temporal, aplica un fundido cruzado con ventana Hann a cada región superpuesta para crear transiciones suaves entre fragmentos; cuando la superposición es 0, realiza una concatenación simple.
 
 ## Entradas
 
@@ -9,7 +9,7 @@ Este nodo recombina fragmentos temporales latentes muestreados de SeedVR2 en un 
 | `latentes` | Los fragmentos temporales muestreados en orden secuencial. | LATENT | Sí | Lista de latentes |
 | `superposición_temporal` | La salida `superposición_temporal` de Dividir Latente SeedVR2. 0 = concatenación simple. (valor predeterminado: 0) | INT | Sí | 0 a 16384 |
 
-**Nota:** El valor de `temporal_overlap` debe ser mayor o igual a 0. El último fragmento de la secuencia puede tener menos fotogramas temporales que los demás fragmentos. Todos los fragmentos deben tener dimensiones coincidentes excepto en el eje temporal (T), y el primer fragmento debe ser pentadimensional (B, C, T, H, W).
+**Nota:** El valor de `temporal_overlap` debe ser mayor o igual a 0. Todos los fragmentos deben ser latentes de video 5-dimensionales (B, C, T, H, W) y deben coincidir en todas las dimensiones excepto el eje temporal (T); solo el fragmento final puede ser más corto que los demás. Si solo se proporciona un fragmento, se devuelve sin cambios.
 
 ## Salidas
 

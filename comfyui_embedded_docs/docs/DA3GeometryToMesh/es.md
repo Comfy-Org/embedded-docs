@@ -7,12 +7,13 @@ Este nodo convierte un paquete DA3_GEOMETRY en una malla 3D mediante la desproye
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
 | `da3_geometry` | El paquete DA3_GEOMETRY que contiene el mapa de profundidad, mapa de confianza opcional, mapa de cielo opcional e imagen de origen | DA3_GEOMETRY | Sí | - |
-| `batch_index` | Qué imagen de un lote convertir. Los recuentos de vértices por imagen difieren, por lo que los lotes no se pueden apilar (predeterminado: 0) | INT | Sí | 0 a 4096 |
+| `batch_index` | Qué imagen de un lote convertir. Los recuentos de vértices por imagen difieren, por lo que los lotes no se pueden apilar (predeterminado: 0). Debe ser menor que el tamaño del lote de la geometría de entrada; de lo contrario, se generará un error | INT | Sí | 0 a 4096 |
 | `decimation` | Paso de vértices. 1 = resolución completa, 2 = mitad, etc. (predeterminado: 1) | INT | Sí | 1 a 8 |
 | `discontinuity_threshold` | Eliminar triángulos cuyo rango de profundidad 3x3 supere esta fracción. 0 = desactivado (predeterminado: 0.04) | FLOAT | Sí | 0.0 a 1.0 |
 | `confidence_threshold` | Excluir píxeles cuya confianza normalizada por imagen esté por debajo de este valor. 0 = conservar todos, 1 = conservar solo el píxel más confiable. Se usa cuando la geometría tiene un mapa de confianza (modelos Small/Base) (predeterminado: 0.1) | FLOAT | Sí | 0.0 a 1.0 |
 | `use_sky_mask` | Excluir píxeles con probabilidad de cielo (cielo >= 0.5) de la malla. Se usa cuando la geometría tiene un mapa de cielo (modelos Mono/Metric) (predeterminado: Verdadero) | BOOLEAN | Sí | Verdadero o Falso |
 | `texture` | Usar la imagen de origen como textura de color base (predeterminado: Verdadero) | BOOLEAN | Sí | Verdadero o Falso |
+Los píxeles con valores de profundidad no finitos, cero o negativos siempre se excluyen de la malla. Si la malla resultante está vacía, se genera un error; el mensaje de error sugiere aumentar `discontinuity_threshold`, reducir `confidence_threshold` o deshabilitar `use_sky_mask`.
 
 ## Salidas
 

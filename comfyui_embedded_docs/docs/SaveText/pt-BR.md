@@ -1,4 +1,4 @@
-# SaveText
+# Salvar Texto
 
 O nó Save Text grava o conteúdo de texto em um arquivo no diretório de saída. Ele suporta salvamento nos formatos .txt, .md ou .json e lida automaticamente com a formatação JSON pretty-printing quando um JSON válido é fornecido.
 
@@ -6,9 +6,9 @@ O nó Save Text grava o conteúdo de texto em um arquivo no diretório de saída
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|--------------|-------------|-------|
-| `text` | O conteúdo de texto a ser salvo em um arquivo | STRING | Sim | - |
-| `filename_prefix` | Prefixo para o nome do arquivo de saída (padrão: "ComfyUI") | STRING | Não | - |
-| `format` | O formato do arquivo para salvar o texto (padrão: "txt") | STRING | Não | `"txt"`<br>`"md"`<br>`"json"` |
+| `text` | O conteúdo de texto para salvar em um arquivo. Esta entrada deve ser conectada a partir de outro nó. | STRING | Sim | - |
+| `filename_prefix` | Prefixo para o nome do arquivo de saída. Um contador de 5 dígitos é anexado para evitar sobrescrever arquivos existentes (padrão: "ComfyUI"). | STRING | Não | - |
+| `format` | O formato de arquivo para salvar o texto (padrão: "txt"). Quando "json" é selecionado, texto JSON válido é formatado com indentação de 2 espaços; caso contrário, o texto é salvo como está. | COMBO | Não | `"txt"`<br>`"md"`<br>`"json"` |
 
 ## Saídas
 

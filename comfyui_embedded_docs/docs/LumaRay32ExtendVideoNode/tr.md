@@ -1,16 +1,16 @@
 # LumaRay32ExtendVideoNode
 
-Bu düğüm, önceki bir Luma Ray 3.2 video oluşturmasını, ona yeni içerik ekleyerek genişletir: ya videodan sonra (ileriye doğru uzatma) ya da videodan önce (geriye doğru uzatma). Kesintisiz 5 saniyelik bir video uzantısı oluşturmak için önceki bir Luma Ray 3.2 düğümünün oluşturma kimliği çıktısını bağlayın.
+Luma Ray 3.2 Extend Video, önceki bir Luma Ray 3.2 video üretimini, orijinal klibin sonrasına (ileri) veya öncesine (geri) yeni bir 5 saniyelik bölüm oluşturarak devam ettirir. Daha önceki bir Luma Ray 3.2 düğümünün `generation_id` çıktısını bağlayarak bu klibi uzantının başlangıç karesi (ileri) veya bitiş karesi (geri) olarak kullanın.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `source_generation_id` | Uzatılacak önceki Ray 3.2 videosunun oluşturma kimliği. Başka bir Luma Ray 3.2 düğümünün generation_id çıktısını bağlayın. | STRING | Evet | - |
-| `direction` | İleri, önceki klipten sonra devam eder; geri, ondan önce eklenir. "İleri (sonrasından devam et)" seçildiğinde, isteğe bağlı olarak döngü modunu etkinleştirebilirsiniz. | COMBO | Evet | "İleri (sonrasından devam et)"<br>"Geri (öncesine ekle)" |
-| `loop` | Uzatılmış videoyu kesintisiz olarak döngüye alır (yalnızca ileri uzatma). | BOOLEAN | Hayır | Doğru<br>Yanlış |
-| `prompt` | Oluşturulacak yeni içeriği tanımlayan metin istemi. | STRING | Evet | - |
-| `resolution` | Uzatılmış video bölümü için çıktı çözünürlüğü. | COMBO | Evet | "540p"<br>"720p"<br>"1080p" |
+| `source_generation_id` | Uzatılacak önceki Ray 3.2 videosunun üretim kimliği. Başka bir Luma Ray 3.2 düğümünün `generation_id` çıktısını bağlayın. Bu değer zorunludur ve boş olmamalıdır. | STRING | Evet | - |
+| `direction` | İleri, önceki klipten sonra devam eder; geri, ondan önceye eklenir. "Forward (continue after)" seçildiğinde `loop` seçeneği de eklenir. | COMBO | Evet | "İleri (sonrasından devam et)"<br>"Geri (öncesine ekle)" |
+| `loop` | Uzatılmış videoyu kesintisiz döngüye alır (yalnızca ileri uzatma). Yalnızca `direction` "Forward (continue after)" olduğunda kullanılabilir. Varsayılan: False. | BOOLEAN | Hayır | Doğru<br>Yanlış |
+| `prompt` | Yeni içerik için metin istemi. 1 ile 6000 karakter arasında olmalıdır. | STRING | Evet | - |
+| `resolution` | Uzatılmış video bölümü için çıktı çözünürlüğü. Varsayılan: "720p". | COMBO | Evet | "540p"<br>"720p"<br>"1080p" |
 | `seed` | Tekrarlanabilir oluşturma sonuçları için rastgele tohum değeri. | INT | Evet | - |
 
 **Not:** `loop` parametresi yalnızca `direction` "İleri (sonrasından devam et)" olarak ayarlandığında kullanılabilir. "Geri (öncesine ekle)" kullanıldığında döngü seçeneği mevcut değildir. `prompt` 1 ile 6000 karakter arasında olmalıdır.

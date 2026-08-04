@@ -7,11 +7,13 @@
 |------|------|----------|------|------|
 | `影片` | 輸入影片。 | VIDEO | 是 | – |
 | `影格數量` | 要取樣的影格數量（預設：16）。 | INT | 是 | 1 – 9999 |
-| `策略` | 取樣策略（預設："uniform"）。 | COMBO | 是 | `"uniform"`<br>`"head"`<br>`"tail"`<br>`"random"` |
+| `策略` | uniform：均勻間隔，head：前 N 個，tail：後 N 個，random：隨機排序（預設："uniform"）。 | COMBO | 是 | "uniform"<br>"head"<br>"tail"<br>"random" |
 | `隨機種子` | 隨機種子，僅在「random」策略中使用（預設：0）。 | INT | 是 | 0 – 18446744073709551615 |
 
 - `num_frames` 會自動限制為輸入影片的總影格數。
 - 除非 `strategy` 設為 `"random"`，否則 `seed` 參數不會產生任何效果。
+- 當 `strategy` 為 `"uniform"` 且 `num_frames` 為 1 時，選擇影片的中間影格。
+- 無法識別的 `strategy` 值將引發錯誤。
 
 ## 輸出
 | 輸出名稱 | 說明 | 資料類型 |

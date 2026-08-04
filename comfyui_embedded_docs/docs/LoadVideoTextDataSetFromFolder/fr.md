@@ -1,19 +1,20 @@
 # Charger Vidéo-Texte (depuis dossier)
 
-Ce nœud charge un ensemble de données de fichiers vidéo et leurs légendes textuelles correspondantes à partir d'un sous-dossier spécifié dans le répertoire d'entrée de ComfyUI. Il renvoie deux listes : des références vidéo paresseuses (les images sont décodées uniquement lorsqu'elles sont nécessaires en aval) et leurs légendes associées. Le nœud prend en charge les formats vidéo courants tels que MP4, AVI, MOV, WEBM, MKV et FLV, et peut également gérer des structures de dossiers imbriquées avec des préfixes de comptage de répétitions (par exemple `5_classname/`) utilisés par des outils comme kohya‑ss/sd‑scripts.
+Ce nœud charge des fichiers vidéo et leurs légendes textuelles associées depuis un sous-dossier sélectionné dans le répertoire d'entrée de ComfyUI et les renvoie sous forme de deux listes : vidéos et légendes. Les entrées vidéo sont des références paresseuses, donc les images ne sont décodées que lorsqu'un nœud aval en a besoin. Les formats pris en charge sont MP4, AVI, MOV, WEBM, MKV et FLV. Les dossiers imbriqués avec un préfixe de nombre de répétitions (par exemple `5_classname/`, comme utilisé par des outils tels que kohya-ss/sd-scripts) sont également pris en charge.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `dossier` | Le sous-dossier contenant les fichiers vidéo et les fichiers de légendes `.txt`. Sélectionnez parmi les sous-dossiers disponibles dans le répertoire d'entrée de ComfyUI. | STRING | Oui | Liste déroulante : tous les sous-répertoires du dossier d'entrée de ComfyUI |
+| `dossier` | Le dossier contenant les fichiers vidéo et les légendes .txt. | STRING | Oui | Combo : liste dynamique de tous les sous-dossiers du répertoire d'entrée de ComfyUI |
 
 ## Sorties
 
 | Nom de sortie | Description | Type de données |
+Si le dossier sélectionné ne contient aucun fichier avec une extension vidéo prise en charge, le nœud génère une erreur. Pour les dossiers imbriqués dont le nom commence par un nombre suivi d'un trait de soulignement (par exemple `5_classname`), chaque vidéo de ce dossier est incluse dans le jeu de données autant de fois que l'indique ce préfixe.
 |---------------|-------------|-----------------|
-| `vidéos` | Références paresseuses aux fichiers vidéo chargés. Les images sont décodées uniquement lorsque connectées à un nœud aval qui les traite. Chaque élément correspond à une vidéo du dossier d'entrée. | VIDEO (liste) |
-| `textes` | Liste de légendes textuelles, une par vidéo. Si une vidéo n'a pas de fichier `.txt` correspondant, sa légende est une chaîne vide. | STRING (liste) |
+| `vidéos` | Références vidéo paresseuses ; les images ne sont décodées que lorsque nécessaire en aval. Une entrée par fichier vidéo trouvé dans le dossier. | VIDEO (list) |
+| `textes` | Liste de légendes textuelles. Une légende par vidéo ; si une vidéo n'a pas de fichier `.txt` correspondant, sa légende est une chaîne vide. | STRING (list) |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadVideoTextDataSetFromFolder/fr.md)
 

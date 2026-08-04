@@ -1,6 +1,6 @@
-# SeedVR2TemporalMerge
+# SeedVR2 Latent'lerini Birleştir
 
-Bu düğüm, örneklenmiş SeedVR2 latent zamansal parçalarını tek bir tam uzunlukta latent halinde yeniden birleştirir. Parçalar arasındaki örtüşme bölgesinde yumuşak geçişler oluşturmak için Hann penceresi çapraz geçişi kullanır veya örtüşme belirtilmediğinde düz birleştirme gerçekleştirir.
+Bu düğüm, örneklenmiş SeedVR2 latent zamansal parçalarını tek bir tam uzunlukta latent halinde yeniden birleştirir. Bir zamansal örtüşme belirtildiğinde, parçalar arasında yumuşak geçişler oluşturmak için her örtüşen bölgeye Hann pencereli çapraz geçiş uygular; örtüşme 0 olduğunda ise düz birleştirme yapar.
 
 ## Girişler
 
@@ -9,7 +9,7 @@ Bu düğüm, örneklenmiş SeedVR2 latent zamansal parçalarını tek bir tam uz
 | `latents` | Sıralı olarak örneklenmiş zamansal parçalar. | LATENT | Evet | Latent listesi |
 | `temporal_overlap` | Split SeedVR2 Latent çıktısının temporal_overlap değeri. 0 = düz birleştirme. (varsayılan: 0) | INT | Evet | 0 ile 16384 arası |
 
-**Not:** `temporal_overlap` değeri 0'dan büyük veya eşit olmalıdır. Dizideki son parça, diğer parçalardan daha az zamansal kareye sahip olabilir. Tüm parçalar, zamansal eksen (T) dışında eşleşen boyutlara sahip olmalıdır ve ilk parça 5 boyutlu (B, C, T, H, W) olmalıdır.
+**Not:** `temporal_overlap` değeri 0'dan büyük veya eşit olmalıdır. Tüm parçalar 5 boyutlu video latentleri (B, C, T, H, W) olmalı ve zamansal eksen (T) dışında her boyutta eşleşmelidir; yalnızca son parça diğerlerinden daha kısa olabilir. Yalnızca bir parça sağlanırsa, değiştirilmeden döndürülür.
 
 ## Çıktılar
 

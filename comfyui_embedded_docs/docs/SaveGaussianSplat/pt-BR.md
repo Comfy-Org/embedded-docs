@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# Salvar Splat
 
 Este nó salva um arquivo 3D de Gaussian splat no diretório de saída. Ele gerencia o processo de salvamento do arquivo e fornece dados de pré-visualização para a janela de visualização 3D.
 
@@ -13,6 +13,8 @@ Este nó salva um arquivo 3D de Gaussian splat no diretório de saída. Ele gere
 | `camera_info` | Informações da câmera para a pré-visualização da janela de visualização. | LOAD3DCAMERA | Não | - |
 | `width` | A largura da pré-visualização (padrão: 1024). | INT | Sim | 1 a 4096 |
 | `height` | A altura da pré-visualização (padrão: 1024). | INT | Sim | 1 a 4096 |
+
+Observação: Se `camera_info` ou `model_3d_info` não forem fornecidos, o nó usa os valores correspondentes de `viewport_state` quando disponíveis.
 
 ## Saídas
 

@@ -1,6 +1,6 @@
-# SeedVR2TemporalMerge
+# Fusionner les latents SeedVR2
 
-Ce nœud recompose les morceaux temporels latents échantillonnés de SeedVR2 en un latent complet de pleine longueur. Il utilise un fondu enchaîné par fenêtre de Hann sur la zone de chevauchement entre les morceaux pour créer des transitions fluides, ou effectue une concaténation simple lorsqu'aucun chevauchement n'est spécifié.
+Ce nœud recompose les morceaux temporels latents échantillonnés de SeedVR2 en un latent complet de pleine longueur. Lorsqu'un chevauchement temporel est spécifié, il applique un fondu enchaîné à fenêtre de Hann à chaque région de chevauchement pour créer des transitions fluides entre les morceaux ; lorsque le chevauchement est 0, il effectue une concaténation simple.
 
 ## Entrées
 
@@ -9,7 +9,7 @@ Ce nœud recompose les morceaux temporels latents échantillonnés de SeedVR2 en
 | `latents` | Les morceaux temporels échantillonnés dans l'ordre séquentiel. | LATENT | Oui | Liste de latents |
 | `temporal_overlap` | La sortie `temporal_overlap` de Split SeedVR2 Latent. 0 = concaténation simple. (par défaut : 0) | INT | Oui | 0 à 16384 |
 
-**Remarque :** La valeur de `temporal_overlap` doit être supérieure ou égale à 0. Le dernier morceau de la séquence peut contenir moins d'images temporelles que les autres morceaux. Tous les morceaux doivent avoir des dimensions correspondantes, à l'exception de l'axe temporel (T), et le premier morceau doit être en 5 dimensions (B, C, T, H, W).
+**Remarque :** La valeur de `temporal_overlap` doit être supérieure ou égale à 0. Tous les morceaux doivent être des latents vidéo 5-dimensionnels (B, C, T, H, W) et doivent correspondre dans chaque dimension sauf l'axe temporel (T) ; seul le dernier morceau peut être plus court que les autres. Si un seul morceau est fourni, il est renvoyé inchangé.
 
 ## Sorties
 

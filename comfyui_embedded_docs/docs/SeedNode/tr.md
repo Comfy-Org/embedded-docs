@@ -1,12 +1,12 @@
 # Tohum
 
-Seed düğümü, sabit veya rastgele bir tam sayı değeri üretir. Diğer düğümlerdeki rastgele işlemlerin tekrarlanabilirliğini kontrol etmek için, rastgele sayı üretimlerine tutarlı bir başlangıç noktası sağlayarak yaygın olarak kullanılır.
+Seed düğümü, diğer düğümlerdeki rastgele işlemlerin tekrarlanabilirliğini kontrol etmek için tohum olarak kullanılabilecek bir tamsayı değeri sağlar. Tutarlı bir başlangıç değeri sağlayarak, gerektiğinde üretilen sonuçların tekrarlanabilir kalmasına yardımcı olur.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `tohum` | Kullanılacak tohum değeri. Üretim sonrası kontrol seçeneği, değerin sabit kalıp kalmayacağını veya her üretimden sonra değişip değişmeyeceğini belirler. | INT | Evet | 0 ile 9223372036854775807 arası |
+| `tohum` | Kullanılacak tohum değeri. Üretimden sonra kontrol seçeneği, değerin her üretimden sonra sabit mi kalacağını yoksa değişeceğini belirler; bu düğümde sabit olarak ayarlanmıştır. | INT | Evet | 0 ile 9223372036854775807 |
 
 ## Çıkışlar
 

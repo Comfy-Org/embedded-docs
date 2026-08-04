@@ -11,12 +11,18 @@ Este nó converte um mapa de profundidade de um objeto DA3_GEOMETRY em uma nuvem
 | `confidence_threshold` | Excluir pixels cuja confiança normalizada por imagem esteja abaixo deste valor (0 = manter todos). Usado quando a geometria possui um mapa de confiança (modelos Small/Base). (padrão: 0,1) | FLOAT | Sim | 0,0 a 1,0 |
 | `use_sky_mask` | Excluir pixels com probabilidade de céu (céu >= 0,5). Usado quando a geometria possui um mapa de céu (modelos Mono/Metric). (padrão: Verdadeiro) | BOOLEAN | Sim | Verdadeiro ou Falso |
 | `downsample` | Pegar cada enésimo pixel (1 = resolução total). Valores maiores geram menos pontos e processamento mais rápido. (padrão: 1) | INT | Sim | 1 a 16 |
+**Observações:**
+- `batch_index` deve ser menor que o tamanho do lote da geometria de entrada; caso contrário, o nó gera um erro.
+- Se a filtragem remover todos os pixels, o nó gera um erro. Reduzir `confidence_threshold` ou desabilitar `use_sky_mask` pode evitar isso.
+- `confidence_threshold` só é aplicado quando a geometria inclui um mapa de confiança (modelos Small/Base).
+- `use_sky_mask` só é aplicado quando a geometria inclui um mapa de céu (modelos Mono/Metric).
+- Quando `downsample` é maior que 1, as intrínsecas da câmera são dimensionadas de acordo para que os pontos projetados permaneçam corretos.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |---------------|-----------|---------------|
-| `point_cloud` | Um objeto de nuvem de pontos contendo pontos 3D filtrados, cores opcionais e valores de confiança opcionais | DA3_POINT_CLOUD |
+| `point_cloud` | Uma nuvem de pontos contendo pontos 3D filtrados, cores opcionais e valores de confiança opcionais | DA3_POINT_CLOUD |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DA3GeometryToPointCloud/pt-BR.md)
 
