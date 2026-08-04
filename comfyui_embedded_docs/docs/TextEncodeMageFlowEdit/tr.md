@@ -10,17 +10,19 @@ Bu düğüm, Mage-Flow-Edit modeli için bir düzenleme talimatını (istem) ve 
 |-----------|----------|-----------|---------|--------|
 | `clip` | Metin istemlerini tokenize etmek ve kodlamak için kullanılan CLIP modeli. | CLIP | Evet | |
 | `prompt` | Uygulanacak düzenleme talimatı (pozitif istem). | STRING | Evet | multiline, dynamic prompts enabled |
-| `negative_prompt` | Kaçınılması gereken negatif istem. Varsayılan: boş dize (boş olduğunda dahili olarak bir boşluk kullanılır). | STRING | Hayır | multiline, dynamic prompts enabled |
+| `negative_prompt` | Kaçınılması gereken negatif istem. Varsayılan: boş dize (boş olduğunda dahili olarak bir boşluk kullanılır). Arayüzün gelişmiş bölümünde gösterilir. | STRING | Hayır | çok satırlı, dinamik istemler etkin |
 | `vae` | Referans görüntüleri gizli uzaya kodlamak için VAE modeli. Sağlanmazsa, conditioning'e referans gizli değerleri eklenmez. | VAE | Hayır | |
-| `images` | Düzenlenecek bir veya daha fazla referans görüntü. Kodlamadan önce tüm görüntüler çıktı çözünürlüğüne yeniden boyutlandırılır. | IMAGE (autogrow) | Hayır | En fazla 16 görüntü (`image_1`…`image_16` olarak adlandırılır), en az 0 |
+| `images` | Düzenlenecek referans görüntüler. Kodlamadan önce tüm referanslar çıktı çözünürlüğüne yeniden boyutlandırılır. | IMAGE (otomatik büyüme) | Hayır | En fazla 16 görüntü (`image_1`…`image_16` adlarıyla), en az 0 |
 | `width` | Piksel cinsinden çıktı genişliği. 0 olarak ayarlanırsa, ilk referans görüntünün genişliği kullanılır. Her zaman 16'nın katına yuvarlanır. Varsayılan: 0. | INT | Evet | 0 ila 8192 (adım 16) |
 | `height` | Piksel cinsinden çıktı yüksekliği. Genişlikle aynı geri dönüş davranışına sahiptir. Varsayılan: 0. | INT | Evet | 0 ila 8192 (adım 16) |
 | `batch_size` | Oluşturulacak gizli örnek sayısı. Varsayılan: 1. | INT | Evet | 1 ila 4096 |
 
 **Parametre bağımlılıklarına ilişkin notlar:**
 - `width` ve/veya `height` 0 ise ve hiçbir referans görüntü sağlanmamışsa, her ikisi de 1024'e geri döner.
+- `width` veya `height` değerlerinden yalnızca biri 0 ise, eksik boyut ilk referans görüntüsünden alınırken açıkça ayarlanan boyut korunur.
 - `vae` parametresi isteğe bağlıdır; referans gizli değerleri yalnızca bir VAE bağlandığında oluşturulur ve conditioning'e eklenir.
 - `negative_prompt` alanı isteğe bağlıdır – boş bırakılırsa, dahili olarak negatif metin olarak tek bir boşluk kullanılır.
+- Metin koşullandırması için her referans görüntü, eğitim ön işlemesiyle uyumlu olarak en uzun kenarı en fazla 384 piksel olacak şekilde yeniden boyutlandırılır. VAE kodlama dalı ise tüm referansları tam çıktı çözünürlüğüne yeniden boyutlandırır.
 
 ## Çıktılar
 

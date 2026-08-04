@@ -7,14 +7,14 @@ Bu düğüm, Ideogram 4 görüntü oluşturma modeli için özel olarak biçimle
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `öğe` | "Sınırlayıcı Kutular Oluştur" düğümünden gelen istem öğeleri. | ARRAY | Evet | - |
-| `üst düzey açıklama` | Görüntünün bir veya iki cümlelik isteğe bağlı açıklaması. Güçlü bir şekilde önerilir. (varsayılan: boş) | STRING | Hayır | - |
-| `arka plan` | Görüntü arka planı veya ortamının zorunlu açıklaması. (varsayılan: boş) | STRING | Evet | - |
+| `üst düzey açıklama` | Görüntünün bir veya iki cümlelik isteğe bağlı açıklaması. Şiddetle önerilir. (varsayılan: boş) | STRING | Hayır | - |
+| `arka plan` | Görüntü arka planının veya ortamının zorunlu açıklaması. Değer sağlamak şiddetle önerilir; düğüm boş dizeyle çalışır ancak sonuçlar öngörülemez olabilir. (varsayılan: boş) | STRING | Evet | - |
 | `stil` | Oluşturulan görüntü için görsel stil kategorisi. (varsayılan: "none") | COMBO | Evet | `"none"`<br>`"photo"`<br>`"art_style"` |
 | `photo` | Fotoğrafik çıktılar için kamera veya lens detayları (örn. 35mm, f/1.4, bokeh). Yalnızca stil "photo" olarak ayarlandığında kullanılabilir. (varsayılan: boş) | STRING | Hayır | - |
 | `art_style` | Sanat stili açıklaması (örn. düz vektör illüstrasyonu, kalın ana hatlar). Yalnızca stil "art_style" olarak ayarlandığında kullanılabilir. (varsayılan: boş) | STRING | Hayır | - |
-| `estetik` | Zorunlu estetik anahtar kelimeler (örn. melankolik, sinematik, doygunluğu azaltılmış). (varsayılan: boş) | STRING | Evet | - |
-| `aydınlatma` | Zorunlu aydınlatma açıklaması (örn. altın saat, kenar ışığı, dramatik gölgeler). (varsayılan: boş) | STRING | Evet | - |
-| `ortam` | Zorunlu ortam türü (örn. fotoğraf, illüstrasyon, 3d_render, resim, grafik_tasarım). Stil = photo olduğunda, photograph olarak ayarlayın. (varsayılan: boş) | STRING | Evet | - |
+| `estetik` | Zorunlu estetik anahtar kelimeler (ör. kasvetli, sinematik, doygunluğu azaltılmış). Değer sağlamak şiddetle önerilir. (varsayılan: boş) | STRING | Evet | - |
+| `aydınlatma` | Zorunlu aydınlatma açıklaması (ör. altın saat, kontur ışığı, dramatik gölgeler). Değer sağlamak şiddetle önerilir. (varsayılan: boş) | STRING | Evet | - |
+| `ortam` | Zorunlu ortam türü (ör. fotoğraf, illüstrasyon, 3d_render, resim, grafik tasarım). stil = photo olduğunda photograph olarak ayarlayın. Değer sağlamak şiddetle önerilir. (varsayılan: boş) | STRING | Evet | - |
 | `renk paleti` | Görüntünün baskın renklerini yönlendiren onaltılık renk kodları. En fazla 16 giriş. | COLORS | Hayır | - |
 
 **Not:** `style` parametresi "photo" olarak ayarlandığında, `photo` girişi kullanılabilir hale gelir ve `medium` parametresini "photograph" olarak ayarlamanız gerekir. `style` "art_style" olarak ayarlandığında ise `art_style` girişi kullanılabilir hale gelir.

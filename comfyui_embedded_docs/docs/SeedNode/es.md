@@ -1,12 +1,12 @@
 # Semilla
 
-El nodo Semilla genera un valor entero fijo o aleatorio. Se utiliza comúnmente para controlar la reproducibilidad de operaciones aleatorias en otros nodos, proporcionando un punto de partida consistente para la generación de números aleatorios.
+El nodo Seed proporciona un valor entero que puede usarse como semilla para controlar la reproducibilidad de operaciones aleatorias en otros nodos. Al proporcionar un valor inicial consistente, ayuda a mantener resultados repetibles cuando sea necesario.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `semilla` | El valor de semilla a utilizar. La opción de control posterior a la generación determina si el valor permanece fijo o cambia después de cada generación. | INT | Sí | 0 a 9223372036854775807 |
+| `semilla` | El valor de semilla a utilizar. La opción de control después de generar determina si el valor permanece fijo o cambia después de cada generación; en este nodo se establece como fijo. | INT | Sí | 0 a 9223372036854775807 |
 
 ## Salidas
 

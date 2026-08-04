@@ -1,4 +1,4 @@
-# HeyGenVideoTranslateNode
+# HeyGen Traduction Vidéo
 
 ### Traduction
 

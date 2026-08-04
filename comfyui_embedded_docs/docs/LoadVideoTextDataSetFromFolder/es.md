@@ -1,19 +1,20 @@
 # Cargar Video-Texto (desde Carpeta)
 
-Este nodo carga un conjunto de datos de archivos de video y sus correspondientes leyendas de texto desde una subcarpeta especificada dentro del directorio de entrada de ComfyUI. Devuelve dos listas: referencias de video perezosas (los fotogramas se decodifican solo cuando se necesitan en nodos posteriores) y sus leyendas asociadas. El nodo admite formatos de video comunes como MP4, AVI, MOV, WEBM, MKV y FLV, y también puede manejar estructuras de carpetas anidadas con prefijos de recuento de repetición (por ejemplo, `5_classname/`) utilizados por herramientas como kohya‑ss/sd‑scripts.
+Este nodo carga archivos de video y sus leyendas de texto asociadas desde una subcarpeta seleccionada en el directorio de entrada de ComfyUI y los devuelve como dos listas: videos y leyendas. Las entradas de video son referencias perezosas, por lo que los fotogramas solo se decodifican cuando un nodo posterior los necesita. Los formatos compatibles son MP4, AVI, MOV, WEBM, MKV y FLV. También se admiten carpetas anidadas con prefijo de recuento de repeticiones (por ejemplo, `5_classname/`, como usan herramientas como kohya-ss/sd-scripts).
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `folder` | La subcarpeta que contiene archivos de video y archivos de leyendas `.txt`. Seleccione entre las subcarpetas disponibles en el directorio de entrada de ComfyUI. | STRING | Sí | Combo: lista dinámica de todos los subdirectorios dentro de la carpeta de entrada de ComfyUI |
+| `folder` | La carpeta que contiene archivos de video y leyendas .txt. | STRING | Sí | Combo: lista dinámica de todas las subcarpetas dentro del directorio de entrada de ComfyUI |
 
 ## Salidas
 
 | Nombre de salida | Descripción | Tipo de datos |
+Si la carpeta seleccionada no contiene archivos con una extensión de video compatible, el nodo genera un error. Para carpetas anidadas cuyo nombre comienza con un número seguido de un guion bajo (por ejemplo, `5_classname`), cada video dentro de esa carpeta se incluye en el conjunto de datos tantas veces como indique ese prefijo.
 |------------------|-------------|---------------|
-| `videos` | Referencias perezosas a los archivos de video cargados. Los fotogramas se decodifican solo cuando están conectados a un nodo posterior que los procesa. Cada elemento corresponde a un video de la carpeta de entrada. | VIDEO (list) |
-| `texts` | Lista de leyendas de texto, una por video. Si un video no tiene un archivo `.txt` correspondiente, su leyenda es una cadena vacía. | STRING (list) |
+| `videos` | Referencias de video perezosas; los fotogramas solo se decodifican cuando se necesitan posteriormente. Una entrada por cada archivo de video encontrado en la carpeta. | VIDEO (list) |
+| `texts` | Lista de leyendas de texto. Una leyenda por video; si un video no tiene un archivo `.txt` correspondiente, su leyenda es una cadena vacía. | STRING (list) |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadVideoTextDataSetFromFolder/es.md)
 

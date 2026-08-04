@@ -12,7 +12,7 @@ Este nodo vuelve a renderizar un video existente bajo un nuevo prompt utilizando
 | `strength` | Qué tan fuertemente preservar vs. reinventar la fuente. "auto" permite que Ray 3.2 elija; adhere_* preserva más, flex_* es equilibrado, reimagine_* cambia más. (por defecto: "auto") | COMBO | Sí | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `seed` | Semilla para reproducibilidad. | INT | Sí | - |
 
-**Nota:** El `prompt` debe tener entre 1 y 6000 caracteres. El video fuente no debe exceder los 18 segundos de duración.
+| `resolution` | La resolución de salida para el video editado. (predeterminado: "720p") | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 
 ## Salidas
 

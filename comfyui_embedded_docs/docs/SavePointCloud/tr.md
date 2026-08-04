@@ -1,4 +1,4 @@
-# SavePointCloud
+# Nokta Bulutunu Kaydet
 
 Save Point Cloud düğümü, 3B nokta bulutu dosyasını çıktı dizinine kaydeder ve isteğe bağlı olarak 3B görüntüleyici için önizleme verisi sağlar. Dosya adlandırma ve kaydetme işlemlerini yönetirken, görüntüleme amacıyla kamera ve model bilgilerini de iletir.
 
@@ -13,6 +13,7 @@ Save Point Cloud düğümü, 3B nokta bulutu dosyasını çıktı dizinine kayde
 | `camera_info` | 3B görüntüleyici için kamera bilgisi | LOAD3D_CAMERA | Hayır | - |
 | `width` | Önizleme ekranının piksel cinsinden genişliği (varsayılan: 1024) | INT | Evet | 1 ila 4096 |
 | `height` | Önizleme ekranının piksel cinsinden yüksekliği (varsayılan: 1024) | INT | Evet | 1 ila 4096 |
+Kaydedilen dosya, eklenen 5 haneli sayaçla birlikte `filename_prefix` kullanılarak çıktı dizinine yazılır (örneğin, `3d/ComfyUI_00001.ply`). İsteğe bağlı `camera_info` girişi bağlı değilse, kamera bilgisi `viewport_state`'den alınır; benzer şekilde, `model_3d_info` bağlı değilse, model bilgisi `viewport_state`'den alınır (mevcut değilse boş liste).
 
 ## Çıktılar
 

@@ -15,6 +15,7 @@ Bu düğüm, ComfyUI giriş dizininizden bir 3B model dosyası yükler ve model 
 - `model_file` parametresi yalnızca şu uzantılara sahip dosyaları gösterir: .gltf, .glb, .obj, .fbx, .stl
 - Dosyalar, ComfyUI kurulumunuzun `input/3d` dizinine yerleştirilmelidir
 - `model_file` "none" olarak ayarlanırsa, hiçbir 3B model verisi yüklenmez (`model_3d` çıktısı boş olur)
+- `model_file` mevcut olmayan bir dosyaya ayarlanırsa, düğüm bir doğrulama hatası döndürür: "Invalid 3D model file: {model_file}"
 
 ## Çıktılar
 

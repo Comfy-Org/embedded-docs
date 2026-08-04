@@ -1,13 +1,13 @@
 # Cortar Vídeo (Temporal Aleatório)
 
-Recorta aleatoriamente uma faixa contínua de quadros de um vídeo de entrada. O comprimento do corte é controlado pelo parâmetro `length`, e a posição inicial é escolhida usando uma semente aleatória. O nó opera de forma lazy, o que significa que ele não processa todo o vídeo até que a saída seja utilizada downstream.
+Recorta aleatoriamente um intervalo contínuo de quadros de um vídeo de entrada. O número de quadros a manter é definido pelo parâmetro `length`, e a posição inicial é escolhida aleatoriamente usando o parâmetro `seed`. O nó opera de forma lazy, o que significa que ele não processa o vídeo inteiro até que a saída seja usada downstream.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-----------|---------------|-------------|-------|
 | `vídeo` | Vídeo de entrada. | VIDEO | Sim | – |
-| `comprimento` | Número de quadros a manter. (padrão: 16) | INT | Sim | min: 1, max: 99999 |
+| `comprimento` | Número de quadros a manter. Se `length` for maior que o número total de quadros no vídeo, o vídeo inteiro é mantido. (padrão: 16) | INT | Sim | min: 1, max: 99999 |
 | `semente` | Semente aleatória. (padrão: 0) | INT | Sim | min: 0, max: 0xFFFFFFFFFFFFFFFF |
 
 ## Saídas

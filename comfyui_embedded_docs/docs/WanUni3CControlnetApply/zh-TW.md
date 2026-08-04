@@ -18,8 +18,10 @@
 
 **注意事項：**
 - `model_patch` 必須是 Uni3C ControlNet，否則節點將引發錯誤。
-- controlnet 的內部維度必須與 Wan 模型的維度相匹配——若兩者不同，則會引發錯誤。
+- Uni3C ControlNet 僅適用於 Wan 模型；如果模型不是基於 Wan 的，則會引發錯誤。
+- ControlNet 的內部維度必須與 Wan 模型的維度匹配；若不一致則會報錯。
 - `render_video` 輸入影像應為 RGB 格式（僅使用前 3 個通道）。
+- 此節點為實驗性。
 
 ## 輸出
 

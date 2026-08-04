@@ -7,12 +7,13 @@ Bu düğüm, bir görüntü veya görüntü grubu üzerine metin çizer. Özelle
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `görüntüler` | Metin çizilecek giriş görüntüsü veya görüntü grubu | IMAGE | Evet | |
-| `metin` | Görüntü üzerine yerleştirilecek metin (varsayılan: "") | STRING | Evet | |
-| `yazı tipi boyutu` | Görüntü yüksekliğinin yüzdesi olarak yazı tipi boyutu (varsayılan: 5.0) | FLOAT | Evet | 0.5 ila 50.0 |
+| `metin` | Görüntü üzerine yerleştirilecek metin (varsayılan: ""). Birden çok satırı destekler; `\n` ve `\t` kaçış dizileri yeni satırlara ve sekmelere dönüştürülür ve metin, görüntü genişliğine sığacak şekilde otomatik olarak sarılır. | STRING | Evet | |
+| `yazı tipi boyutu` | Görüntü yüksekliğinin yüzdesi olarak yazı tipi boyutu (varsayılan: 5.0) | FLOAT | Evet | 0.5 ila 50.0 (adım 0.5) |
 | `renk` | Metnin rengi (varsayılan: "#ffffff") | STRING | Evet | |
 | `konum` | Metnin görüntü üzerindeki dikey konumu (varsayılan: "top") | COMBO | Evet | `"top"`<br>`"bottom"` |
 | `hizalama` | Metnin yatay hizalaması (varsayılan: "left") | COMBO | Evet | `"left"`<br>`"center"`<br>`"right"` |
 | `dış çizgi` | Metnin etrafına siyah bir anahat çizer (varsayılan: True) | BOOLEAN | Evet | |
+Not: `text` boşsa veya yalnızca boşluk içeriyorsa, düğüm giriş görüntülerini değiştirmeden döndürür. Aynı metin yerleşimi yığındaki her görüntüye uygulanır.
 
 ## Çıktılar
 

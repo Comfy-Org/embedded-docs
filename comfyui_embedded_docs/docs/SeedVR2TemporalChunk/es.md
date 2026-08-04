@@ -1,4 +1,4 @@
-# SeedVR2TemporalChunk
+# Dividir latente de SeedVR2
 
 Este nodo divide un latente de video SeedVR2 en fragmentos temporales más pequeños que pueden procesarse uno a la vez dentro de la VRAM disponible. Calcula automáticamente el tamaño óptimo de fragmento según la memoria de tu GPU o te permite especificar el tamaño manualmente, y genera los fragmentos en orden secuencial para su procesamiento.
 
@@ -6,17 +6,17 @@ Este nodo divide un latente de video SeedVR2 en fragmentos temporales más peque
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `latente` | El latente SeedVR2 codificado por VAE a dividir. | LATENT | Sí | - |
-| `superposición_temporal` | Fotogramas latentes compartidos entre fragmentos adyacentes y combinados con fundido cruzado al fusionar; 0 significa sin superposición (predeterminado: 0). | INT | No | 0 a 16384 |
+| `latente` | El latente SeedVR2 codificado por VAE a dividir. Debe ser un tensor 5-D (B, C, T, H, W) con el número de canales latentes esperado para SeedVR2. | LATENT | Sí | - |
+| `superposición_temporal` | Fotogramas latentes compartidos entre fragmentos adyacentes y combinados con fundido cruzado al fusionar; 0 significa sin superposición (predeterminado: 0). La superposición efectiva está limitada a uno menos que el número de fotogramas latentes del fragmento. | INT | No | 0 a 16384 |
 | `modo_de_fragmentación` | Manual usa exactamente frames_per_chunk; auto predice el fragmento más grande que quepa en la VRAM libre. | COMBO | Sí | "auto"<br>"manual" |
 
 Cuando `chunking_mode` está configurado en "manual", un parámetro adicional estará disponible:
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `frames_per_chunk` | Fotogramas de píxeles por fragmento temporal. Debe ser un valor 4n+1 (1, 5, 9, 13, 17, 21, ...) (predeterminado: 21). | INT | Sí | 1 a 16384 |
+| `frames_per_chunk` | Fotogramas de píxeles por fragmento temporal (4n+1: 1, 5, 9, 13, 17, 21, ...); la interfaz avanza de 4 en 4 (predeterminado: 21). | INT | Sí | 1 a 16384 |
 
-Nota: El parámetro `frames_per_chunk` solo aparece cuando `chunking_mode` está configurado en "manual". El valor debe cumplir la fórmula `(frames_per_chunk - 1) % 4 == 0`, lo que significa que debe ser uno de: 1, 5, 9, 13, 17, 21, etc.
+Nota: El parámetro `frames_per_chunk` solo aparece cuando `chunking_mode` está configurado en "manual". El valor debe cumplir la fórmula `(frames_per_chunk - 1) % 4 == 0`, es decir, debe ser uno de: 1, 5, 9, 13, 17, 21, etc. El latente de entrada debe ser 5-dimensional y contener el número de canales latentes esperado de SeedVR2; de lo contrario, el nodo genera un error. Si el total de fotogramas de píxeles en el latente es igual o menor que el tamaño de fragmento elegido (o el tamaño calculado automáticamente), el nodo devuelve el latente original como un solo fragmento sin superposición.
 
 ## Salidas
 

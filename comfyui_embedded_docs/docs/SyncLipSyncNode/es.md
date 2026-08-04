@@ -1,4 +1,4 @@
-# SyncLipSyncNode
+# sync.so Lip Sync
 
 Este nodo resincroniza el movimiento de la boca en un video con un nuevo audio de voz utilizando la API de sync.so. Maneja automáticamente primeros planos, perfiles y obstrucciones, preservando la expresión del hablante. El costo se escala según la duración de la salida.
 
@@ -9,7 +9,7 @@ Este nodo resincroniza el movimiento de la boca en un video con un nuevo audio d
 | `video` | Metraje del hablante a resincronizar. Hasta 4K (4096x2160); una tasa de fotogramas constante de 24/25/30 fps funciona mejor. | VIDEO | Sí | - |
 | `audio` | Audio de voz para sincronizar el movimiento de la boca. | AUDIO | Sí | - |
 | `seed` | La semilla controla si el nodo debe re-ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 42). | INT | Sí | 0 a 2147483647 |
-| `model` | Modelo de generación de sync.so. | COMBO | Sí | Ver más abajo |
+| `model` | Modelo de generación de sync.so. | COMBO | Sí | "sync-3" |
 
 El parámetro `model` es un combo dinámico que incluye los siguientes subparámetros:
 
@@ -35,7 +35,7 @@ El parámetro `model` es un combo dinámico que incluye los siguientes subparám
 
 **Restricciones:**
 - La resolución del video no debe exceder 4K (4096x2160). Los videos por encima de este límite generarán un error.
-- La duración del audio no debe exceder los 600 segundos (10 minutos).
+- Las duraciones de video y audio no deben exceder los 600 segundos (10 minutos).
 - Los parámetros `speaker_frame`, `speaker_x` y `speaker_y` solo se utilizan cuando `speaker_selection` está configurado en "coordinates".
 
 ## Salidas

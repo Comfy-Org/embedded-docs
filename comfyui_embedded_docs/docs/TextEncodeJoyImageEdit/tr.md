@@ -8,10 +8,11 @@ Bu düğüm, JoyImage modelleriyle kullanılmak üzere bir metin istemini ve ist
 |-----------|-------------|-----------|----------|-------|
 | `clip` | Metin istemini kodlamak için kullanılan CLIP modeli | CLIP | Evet | - |
 | `prompt` | Kodlanacak metin istemi; çok satırlı girdi ve dinamik istemleri destekler | STRING | Evet | - |
-| `vae` | Görüntüleri potansiyel uzaya kodlamak için bir VAE modeli (isteğe bağlı) | VAE | Hayır | - |
-| `görseller` | Koşullandırmaya dahil edilecek bir veya daha fazla görüntü; en fazla 6 görüntü | IMAGE | Hayır | 0 ila 6 görüntü |
+| `vae` | Görüntüleri potansiyel uzaya kodlamak için bir VAE modeli | VAE | Hayır | - |
+| `görseller` | Koşullandırmaya dahil edilecek isteğe bağlı görüntüler, en fazla 6 görüntü. Her görüntü ayrı bir giriş olarak bağlanır (image_0 ila image_5) | IMAGE | Hayır | 0 ila 6 görüntü |
 
 ## Çıktılar
+`images` girişi, 0 ile 6 arasında görüntü kabul eden otomatik büyüyen bir gruptur. Hiçbir görüntü bağlı olmadığında, koşullandırma yalnızca metin istemine dayanır.
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|

@@ -1,4 +1,4 @@
-# HeyGenAvatarVideoNode
+# Vidéo Avatar HeyGen
 
 Générer une vidéo de présentateur parlant à partir d'un avatar HeyGen. Ce nœud crée une vidéo d'un avatar IA récitant le texte que vous fournissez ou synchronisant les lèvres sur votre propre audio, en utilisant les moteurs de rendu de HeyGen.
 
@@ -11,7 +11,7 @@ Générer une vidéo de présentateur parlant à partir d'un avatar HeyGen. Ce n
 | `parole` | Pilote l'avatar avec un script textuel (synthèse vocale HeyGen) ou votre propre audio. | COMBO | Oui | `"script"`<br>`"audio"` |
 | `résolution` | Résolution de la vidéo de sortie (par défaut : "1080p"). | COMBO | Non | `"720p"`<br>`"1080p"` |
 | `format d’image` | Format d'image de sortie. 'auto' suit le format de la source de l'avatar (par défaut : "auto"). | COMBO | Non | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
-| `couleur de fond` | Couleur de fond unie optionnelle sous forme de code hexadécimal (ex. '#00ff00'). Laissez vide pour conserver le fond d'origine de l'avatar. | STRING | Non |  |
+Laissez vide pour conserver le fond de l'avatar. S'il est fourni, la valeur doit commencer par `#`.
 | `graine` | N'est pas envoyé à HeyGen ; modifiez-le pour forcer une nouvelle exécution (par défaut : 42). | INT | Non | Min : 0<br>Max : 2147483647 |
 
 Lorsque `speech` est réglé sur `"script"`, les sous-paramètres suivants sont disponibles :

@@ -9,6 +9,7 @@ Este nodo recorta un rango continuo de fotogramas de un video. Funciona de maner
 | `video` | Video de entrada. | VIDEO | Sí | – |
 | `fotograma_inicio` | Índice del fotograma inicial (predeterminado: 0). | INT | Sí | 0 a 99999 |
 | `longitud` | Número de fotogramas a conservar (predeterminado: 16). | INT | Sí | 1 a 99999 |
+Nota: `start_frame` está limitado al último fotograma del video, y `length` se reduce si se extendería más allá de los fotogramas disponibles.
 
 ## Salidas
 

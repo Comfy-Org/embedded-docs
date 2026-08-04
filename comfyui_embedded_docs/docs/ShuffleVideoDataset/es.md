@@ -1,6 +1,6 @@
 # Mezclar Lista de Videos
 
-Este nodo toma una lista de videos y los reordena aleatoriamente. Utiliza una semilla aleatoria para garantizar una mezcla reproducible, de modo que la misma semilla siempre produce el mismo orden de salida.
+Este nodo toma una lista de videos y los reordena aleatoriamente. Utiliza una semilla aleatoria para que la mezcla sea reproducible, por lo que la misma semilla siempre produce el mismo orden de salida.
 
 ## Entradas
 
@@ -8,6 +8,7 @@ Este nodo toma una lista de videos y los reordena aleatoriamente. Utiliza una se
 |-----------|-------------|--------------|-------------|-------|
 | `videos` | Lista de videos para mezclar. | VIDEO | Sí | Lista de entradas de video |
 | `seed` | Semilla aleatoria para la mezcla (predeterminado: 0). | INT | No | 0 a 18446744073709551615 |
+Nota: el valor de la semilla se reduce módulo 4294967295 (2^32 - 1) antes de usarse. Como resultado, las semillas que difieren en un múltiplo de 4294967295 producen el mismo orden de salida.
 
 ## Salidas
 

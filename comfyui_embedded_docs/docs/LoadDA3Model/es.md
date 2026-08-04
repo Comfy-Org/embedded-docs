@@ -7,7 +7,7 @@ Este nodo carga un modelo Depth Anything 3 desde un archivo, preparándolo para 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
 | `model_name` | El nombre del archivo del modelo Depth Anything 3 a cargar. | STRING | Sí | Lista de archivos de modelo disponibles en la carpeta `geometry_estimation` |
-| `weight_dtype` | La precisión numérica (tipo de dato) para los pesos del modelo. La opción "default" utiliza la precisión original del modelo. (predeterminado: "default") | STRING | No | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
+| `weight_dtype` | La precisión numérica (tipo de dato) para los pesos del modelo. "default" utiliza la precisión original del modelo, "fp16" utiliza punto flotante de 16 bits, "bf16" utiliza bfloat16 y "fp32" utiliza punto flotante de 32 bits. (predeterminado: "default") | STRING | No | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
 
 ## Salidas
 

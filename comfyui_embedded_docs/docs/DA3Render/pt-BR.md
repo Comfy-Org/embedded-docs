@@ -7,7 +7,7 @@ Este nó renderiza uma visualização a partir dos dados geométricos do Depth A
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
 | `da3_geometry` | O pacote de dados geométricos do Depth Anything 3 contendo profundidade e, opcionalmente, tensores de céu e confiança | DA3_GEOMETRY | Sim | - |
-| `output` | O tipo de visualização a ser renderizada. As opções incluem depth, depth_colored, sky_mask e confidence. Cada opção possui seu próprio conjunto de subparâmetros. | COMBO | Sim | `"depth"`<br>`"depth_colored"`<br>`"sky_mask"`<br>`"confidence"` |
+| `output` | O tipo de visualização a ser renderizada.<br>- depth: imagem de profundidade em escala de cinza normalizada.<br>- depth_colored: profundidade mapeada pelo mapa de cores Turbo.<br>- sky_mask: probabilidade de céu em [0, 1] (somente modelos Mono/Metric).<br>- confidence: confiança de profundidade normalizada (somente modelos Small/Base). | COMBO | Sim | "depth"<br>"depth_colored"<br>"sky_mask"<br>"confidence" |
 
 ### Subparâmetros para opções de `output`
 
@@ -15,8 +15,8 @@ Quando `output` está definido como `"depth"` ou `"depth_colored"`:
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `normalization` | O método de normalização de profundidade. v2_style usa normalização média/desvio padrão para resultados perceptualmente equilibrados (padrão). min_max estende toda a faixa de profundidade para [0, 1] para máximo contraste. raw preserva unidades métricas para o modelo Metric sem escalonamento. | COMBO | Sim | `"v2_style"`<br>`"min_max"`<br>`"raw"` |
-| `apply_sky_clip` | Recorta a profundidade da região do céu para o percentil 99 da profundidade do primeiro plano antes da normalização. Requer uma chave de céu na entrada da3_geometry (apenas para modelos Mono/Metric). Padrão: False | BOOLEAN | Sim | True<br>False |
+| `normalization` | Método de normalização de profundidade.<br>- v2_style: normalização média/desvio padrão para resultados perceptualmente equilibrados (padrão).<br>- min_max: estica toda a faixa de profundidade para [0, 1] para máximo contraste.<br>- raw: sem escala, preserva unidades métricas para o modelo Metric. | COMBO | Sim | "v2_style"<br>"min_max"<br>"raw" |
+| `apply_sky_clip` | Recorta a profundidade da região do céu para o percentil 99 da profundidade do primeiro plano antes da normalização. Requer uma chave sky na entrada da3_geometry (somente modelos Mono/Metric). Padrão: False | BOOLEAN | Sim | True<br>False |
 
 Quando `output` está definido como `"sky_mask"`:
 

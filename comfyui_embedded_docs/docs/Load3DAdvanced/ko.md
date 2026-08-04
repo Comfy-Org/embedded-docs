@@ -15,6 +15,7 @@
 - `model_file` 매개변수는 다음 확장자를 가진 파일만 표시합니다: .gltf, .glb, .obj, .fbx, .stl
 - 파일은 ComfyUI 설치 디렉토리의 `input/3d` 폴더에 위치해야 합니다.
 - `model_file`을 "none"으로 설정하면 3D 모델 데이터가 불러와지지 않습니다(출력 `model_3d`는 비어 있게 됩니다).
+- `model_file`이 존재하지 않는 파일로 설정된 경우 노드는 검증 오류를 반환합니다: "Invalid 3D model file: {model_file}"
 
 ## 출력
 

@@ -7,7 +7,7 @@
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `da3_geometry` | 包含深度資料的 Depth Anything 3 幾何數據包，可選包含天空和置信度張量 | DA3_GEOMETRY | 是 | - |
-| `output` | 要渲染的視覺化類型。選項包括 depth、depth_colored、sky_mask 和 confidence。每個選項都有其自身的子參數。 | COMBO | 是 | `"depth"`<br>`"depth_colored"`<br>`"sky_mask"`<br>`"confidence"` |
+| `output` | 要渲染的視覺化類型。<br>- depth：歸一化的灰階深度影像。<br>- depth_colored：透過 Turbo 色彩映射的深度。<br>- sky_mask：天空機率，範圍 [0, 1]（僅適用於 Mono/Metric 模型）。<br>- confidence：歸一化的深度置信度（僅適用於 Small/Base 模型）。 | COMBO | 是 | "depth"<br>"depth_colored"<br>"sky_mask"<br>"confidence" |
 
 ### `output` 選項的子參數
 
@@ -15,7 +15,7 @@
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `normalization` | 深度正規化方法。v2_style 使用平均值/標準差正規化以獲得感知平衡的結果（預設）。min_max 將完整深度範圍拉伸至 [0, 1] 以獲得最大對比度。raw 保留 Metric 模型的公制單位數值而不進行縮放。 | COMBO | 是 | `"v2_style"`<br>`"min_max"`<br>`"raw"` |
+| `normalization` | 深度正規化方法。<br>- v2_style：平均值/標準差正規化，獲得感知平衡的結果（預設）。<br>- min_max：將完整深度範圍拉伸至 [0, 1]，獲得最大對比度。<br>- raw：不進行縮放，保留 Metric 模型的公制單位。 | COMBO | 是 | "v2_style"<br>"min_max"<br>"raw" |
 | `apply_sky_clip` | 在正規化前將天空區域的深度裁剪至前景深度的第 99 百分位數。需要在 da3_geometry 輸入中包含天空鍵值（僅適用於 Mono/Metric 模型）。預設：False | BOOLEAN | 是 | True<br>False |
 
 當 `output` 設定為 `"sky_mask"` 時：

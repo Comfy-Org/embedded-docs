@@ -1,6 +1,6 @@
 # BerniniConditioning
 
-BerniniConditioning düğümü, Wan2.2-A14B modeli için video ve görüntü koşullandırma verilerini hazırlar. Kaynak videoları, referans videoları ve referans görüntülerini sağlanan VAE kullanarak kodlar ve bunları bağlam içi üretim görevleri için koşullandırma verilerine ekler.
+BerniniConditioning düğümü, Wan2.2-A14B modeli için video ve görüntü koşullandırma verilerini hazırlar. Kaynak videoları, referans videoları ve referans görüntülerini sağlanan VAE kullanarak kodlar ve bunları bağlam içi token olarak koşullandırma verilerine ekler. Görev, hangi girişlerin bağlı olduğundan otomatik olarak çıkarılır.
 
 ## Girişler
 
@@ -14,8 +14,8 @@ BerniniConditioning düğümü, Wan2.2-A14B modeli için video ve görüntü ko�
 | `uzunluk` | Çıktı latentindeki kare sayısı (varsayılan: 81) | INT | Evet | 1 ila 8192 (adım: 4) |
 | `toplu_boyutu` | Tek bir grupta oluşturulacak video sayısı (varsayılan: 1) | INT | Evet | 1 ila 4096 |
 | `kaynak_video` | Düzenlenecek veya yeniden stillendirilecek kaynak video (v2v, rv2v). Genişlik/yüksekliğe yeniden boyutlandırılır ve uzunluğa kırpılır. | IMAGE | Hayır | - |
-| `referans_video` | Kaynak videoya eklenecek video (ads2v). | IMAGE | Hayır | - |
-| `referans_görüntüler` | Bağlam içi token olarak eklenen referans görüntüleri (r2v, rv2v). En fazla 8 görüntü sağlanabilir. | IMAGE | Hayır | 0 ila 8 görüntü |
+| `referans_video` | Kaynak videoya eklenecek video (ads2v). Uzunluğa göre kırpılır ve en-boy oranı korunarak yeniden boyutlandırılır (uzun kenar ref_max_size ile sınırlanır). | IMAGE | Hayır | - |
+| `referans_görüntüler` | Bağlam içi token olarak eklenen referans görüntüleri (r2v, rv2v). Her görüntü kendi doğal en-boy oranında bağımsız olarak kodlanır (uzun kenar ref_max_size ile sınırlanır). En fazla 8 görüntü sağlanabilir. | IMAGE | Hayır | 0 ila 8 görüntü |
 | `ref_max_size` | reference_video ve reference_images için uzun kenarın maksimum boyutu. En-boy oranı korunarak yeniden boyutlandırılır ve 16 piksele yuvarlanır (varsayılan: 848). | INT | Hayır | 16 ila 8192 (adım: 16) |
 
 **Not:** Görev, hangi girişlerin bağlı olduğuna göre belirlenir:
@@ -24,6 +24,7 @@ BerniniConditioning düğümü, Wan2.2-A14B modeli için video ve görüntü ko�
 - `source_video` + `reference_images` → referans kılavuzlu video düzenleme (rv2v)
 - Yalnızca `reference_images` → referanstan videoya (r2v)
 - `source_video` + `reference_video` → görüntü/videoyu videoya ekleme (ads2v)
+Bağlam akışları sabit bir sırayla eklenir: `source_video` (kaynak ID 1), ardından `reference_video` (kaynak ID 2), ardından her referans görüntüsü (kaynak ID 3, 4, ...). Birden fazla görüntü içeren bir referans görüntü girişi, görüntü başına bir akış sağlar.
 
 ## Çıktılar
 

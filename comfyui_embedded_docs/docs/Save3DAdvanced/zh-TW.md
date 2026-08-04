@@ -1,4 +1,4 @@
-# Save3DAdvanced
+# 儲存 3D（進階）
 
 此節點將 3D 模型儲存到 ComfyUI 輸出目錄中的檔案，並提供對輸出尺寸及攝影機/視埠設定的進階控制。它也會將 3D 模型、模型資訊、攝影機資訊和尺寸傳遞給下游節點。
 
@@ -6,13 +6,14 @@
 
 | 參數 | 描述 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model_3d` | 來自上游 3D 節點的 3D 模型檔案。 | FILE3D | 是 | GLB, GLTF, FBX, OBJ, STL, USDZ, Any |
+| `model_3d` | 來自上游 3D 節點的 3D 模型檔案。 | FILE3D | 是 | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>任意 |
 | `filename_prefix` | 儲存檔案名稱的前綴（預設："3d/ComfyUI"）。 | STRING | 是 | 自由文字 |
 | `viewport_state` | 來自「載入 3D」節點的視埠狀態，包含攝影機和模型資訊。 | LOAD3D | 是 | - |
 | `model_3d_info` | 可選的 3D 模型資訊，用於覆蓋視埠狀態。 | LOAD3DMODELINFO | 否 | - |
 | `camera_info` | 可選的攝影機資訊，用於覆蓋視埠狀態。 | LOAD3DCAMERA | 否 | - |
 | `width` | 輸出預覽的寬度（像素，預設：1024）。 | INT | 是 | 1 至 4096 |
 | `height` | 輸出預覽的高度（像素，預設：1024）。 | INT | 是 | 1 至 4096 |
+注意：當 `model_3d_info` 或 `camera_info` 未連接時，節點將回退使用 `viewport_state` 中儲存的值。
 
 ## ## 輸出
 

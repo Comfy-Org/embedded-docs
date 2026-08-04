@@ -11,12 +11,18 @@ Este nodo convierte un mapa de profundidad de un objeto DA3_GEOMETRY en una nube
 | `confidence_threshold` | Excluir píxeles cuya confianza normalizada por imagen esté por debajo de este valor (0 = conservar todos). Se usa cuando la geometría tiene un mapa de confianza (modelos Small/Base). (predeterminado: 0.1) | FLOAT | Sí | 0.0 a 1.0 |
 | `use_sky_mask` | Excluir píxeles de probabilidad de cielo (cielo >= 0.5). Se usa cuando la geometría tiene un mapa de cielo (modelos Mono/Metric). (predeterminado: True) | BOOLEAN | Sí | True o False |
 | `downsample` | Tomar cada N-ésimo píxel (1 = resolución completa). Valores más altos generan menos puntos y procesamiento más rápido. (predeterminado: 1) | INT | Sí | 1 a 16 |
+**Notas:**
+- `batch_index` debe ser menor que el tamaño del lote de la geometría de entrada; de lo contrario, el nodo genera un error.
+- Si el filtrado elimina todos los píxeles, el nodo genera un error. Reducir `confidence_threshold` o deshabilitar `use_sky_mask` puede evitarlo.
+- `confidence_threshold` solo se aplica cuando la geometría incluye un mapa de confianza (modelos Small/Base).
+- `use_sky_mask` solo se aplica cuando la geometría incluye un mapa de cielo (modelos Mono/Metric).
+- Cuando `downsample` es mayor que 1, las intrínsecas de la cámara se escalan en consecuencia para que los puntos proyectados sigan siendo correctos.
 
 ## Salidas
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|
-| `point_cloud` | Un objeto de nube de puntos que contiene puntos 3D filtrados, colores opcionales y valores de confianza opcionales | DA3_POINT_CLOUD |
+| `point_cloud` | Una nube de puntos que contiene puntos 3D filtrados, colores opcionales y valores de confianza opcionales | DA3_POINT_CLOUD |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DA3GeometryToPointCloud/es.md)
 

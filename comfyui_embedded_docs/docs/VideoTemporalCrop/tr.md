@@ -9,6 +9,7 @@ Bu düğüm, videodan sürekli bir kare aralığı kırpar. Tamamen tembel bir �
 | `video` | Girdi videosu. | VIDEO | Evet | – |
 | `başlangıç_kare` | Başlangıç kare indeksi (varsayılan: 0). | INT | Evet | 0 ile 99999 arası |
 | `uzunluk` | Korunacak kare sayısı (varsayılan: 16). | INT | Evet | 1 ile 99999 arası |
+Not: `start_frame` videonun son karesiyle sınırlıdır ve `length` mevcut karelerin ötesine uzanacaksa azaltılır.
 
 ## Çıktılar
 

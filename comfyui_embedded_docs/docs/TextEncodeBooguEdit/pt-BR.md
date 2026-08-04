@@ -1,16 +1,17 @@
 # TextEncodeBooguEdit
 
-Este nó prepara o condicionamento para edição de imagens com Boogu. Ele processa imagens de referência para criar saídas de condicionamento positivo e negativo. A imagem de referência é usada duas vezes: tokens visuais da imagem são adicionados apenas ao condicionamento positivo para amplificar a instrução de edição, enquanto um latent de referência do VAE é adicionado tanto ao condicionamento positivo quanto ao negativo, de modo que se anule sob CFG, preservando a identidade da imagem original.
+Este nó prepara o condicionamento para edição de imagens com Boogu. Ele processa imagens de referência para criar saídas de condicionamento positivo e negativo. A imagem de referência é usada duas vezes: os tokens de visão da imagem são adicionados apenas ao condicionamento positivo para amplificar a instrução de edição, enquanto um latente de referência do VAE é adicionado tanto ao condicionamento positivo quanto ao negativo para que se cancelem sob CFG, preservando a identidade da imagem original; o tokenizador seleciona automaticamente o prompt de sistema apropriado com base na presença de imagens e prompts negativos vazios.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|--------------|-------------|-------|
 | `clip` | O modelo CLIP usado para codificação de texto | CLIP | Sim | |
-| `prompt` | O prompt de texto descrevendo a edição desejada | STRING | Sim | |
-| `negative_prompt` | O prompt de texto descrevendo o que evitar na edição | STRING | Não | |
-| `vae` | O modelo VAE usado para codificar imagens de referência no espaço latente | VAE | Não | |
+| `prompt` | O prompt de texto descrevendo a edição desejada. Suporta texto multilinha e prompts dinâmicos. | STRING | Sim | |
+| `negative_prompt` | O prompt de texto descrevendo o que evitar na edição. Pode ser deixado vazio para descartar o condicionamento negativo. Parâmetro avançado. | STRING | Sim | |
+| `vae` | O modelo VAE usado para codificar imagens de referência no espaço latente. Necessário para adicionar latentes de referência às saídas de condicionamento. | VAE | Não | |
 | `imagens` | Imagem(ns) de referência para editar. Boogu foca em uma referência por amostra; mais são permitidas. | IMAGE | Não | Até 16 imagens |
+Os latentes de referência são adicionados a ambas as saídas de condicionamento apenas quando `vae` é fornecido junto com pelo menos uma `image` de referência. Se `vae` for omitido, a saída positiva ainda recebe os tokens de visão das imagens de referência, mas nenhuma saída inclui latentes de referência.
 
 ## Saídas
 

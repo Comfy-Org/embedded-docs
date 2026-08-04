@@ -1,6 +1,6 @@
 # Nó de Keyframe Runway Aleph2
 
-Este nó ancora uma imagem de guia a um momento específico do seu vídeo de entrada, para que o modelo Aleph2 direcione a edição naquele ponto do seu material. Conecte este nó à entrada "keyframes" do nó Runway Aleph2 Video to Video e encadeie vários deles (até 5) através da entrada opcional "keyframes".
+O nó Runway Aleph2 Keyframe ancora uma imagem de guia a um momento específico
 
 ## Entradas
 

@@ -1,4 +1,4 @@
-# SaveText
+# Metni Kaydet
 
 ## Genel Bakış
 
@@ -8,9 +8,9 @@ Save Text düğümü, metin içeriğini çıktı dizinindeki bir dosyaya yazar. 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `text` | Bir dosyaya kaydedilecek metin içeriği | STRING | Evet | - |
-| `filename_prefix` | Çıktı dosya adı için ön ek (varsayılan: "ComfyUI") | STRING | Hayır | - |
-| `format` | Metnin kaydedileceği dosya biçimi (varsayılan: "txt") | STRING | Hayır | `"txt"`<br>`"md"`<br>`"json"` |
+| `text` | Bir dosyaya kaydedilecek metin içeriği. Bu girdi başka bir düğümden bağlanmalıdır. | STRING | Evet | - |
+| `filename_prefix` | Çıktı dosya adı için ön ek. Mevcut dosyaların üzerine yazılmasını önlemek için 5 haneli bir sayaç eklenir (varsayılan: "ComfyUI"). | STRING | Hayır | - |
+| `format` | Metnin kaydedileceği dosya biçimi (varsayılan: "txt"). "json" seçildiğinde, geçerli JSON metni 2 boşluk girintiyle düzgün yazdırılır; aksi takdirde metin olduğu gibi kaydedilir. | COMBO | Hayır | `"txt"`<br>`"md"`<br>`"json"` |
 
 ## Çıktılar
 

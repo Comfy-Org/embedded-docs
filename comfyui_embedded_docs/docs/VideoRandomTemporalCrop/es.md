@@ -1,13 +1,13 @@
 # Recortar video (temporal aleatorio)
 
-Recorta aleatoriamente un rango continuo de fotogramas de un video de entrada. La longitud del recorte se controla mediante el parámetro `length`, y la posición inicial se elige usando una semilla aleatoria. El nodo opera de manera diferida (lazy), lo que significa que no procesa el video completo hasta que la salida se use en un nodo posterior.
+Recorta aleatoriamente un rango continuo de fotogramas de un video de entrada. El número de fotogramas a conservar se establece mediante el parámetro `length`, y la posición inicial se elige aleatoriamente mediante el parámetro `seed`. El nodo opera de forma perezosa, lo que significa que no procesa todo el video hasta que la salida se utiliza en el flujo posterior.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
 | `video` | Video de entrada. | VIDEO | Sí | – |
-| `longitud` | Número de fotogramas a conservar. (por defecto: 16) | INT | Sí | min: 1, max: 99999 |
+| `longitud` | Número de fotogramas a conservar. Si `length` es mayor que el número total de fotogramas del video, se conserva el video completo. (predeterminado: 16) | INT | Sí | min: 1, max: 99999 |
 | `semilla` | Semilla aleatoria. (por defecto: 0) | INT | Sí | min: 0, max: 0xFFFFFFFFFFFFFFFF |
 
 ## Salidas

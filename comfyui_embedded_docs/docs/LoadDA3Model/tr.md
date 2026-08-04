@@ -7,7 +7,7 @@ Bu düğüm, bir dosyadan Depth Anything 3 modelini yükleyerek derinlik tahmini
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `model_name` | Yüklenecek Depth Anything 3 model dosyasının adı. | STRING | Evet | `geometry_estimation` klasöründeki mevcut model dosyalarının listesi |
-| `weight_dtype` | Model ağırlıkları için sayısal hassasiyet (veri türü). "default" seçeneği modelin orijinal hassasiyetini kullanır. (varsayılan: "default") | STRING | Hayır | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
+| `weight_dtype` | Model ağırlıkları için sayısal hassasiyet (veri türü). "default" modelin orijinal hassasiyetini kullanır, "fp16" 16 bit kayan nokta, "bf16" bfloat16 ve "fp32" 32 bit kayan nokta kullanır. (varsayılan: "default") | STRING | Hayır | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
 
 ## Çıktılar
 

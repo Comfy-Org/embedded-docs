@@ -1,4 +1,4 @@
-# SaveText
+# Enregistrer le texte
 
 Le nœud Enregistrer le texte écrit le contenu textuel dans un fichier situé dans le répertoire de sortie. Il prend en charge l'enregistrement aux formats .txt, .md ou .json, et gère automatiquement la mise en forme JSON (pretty-printing) lorsque du JSON valide est fourni.
 
@@ -6,9 +6,9 @@ Le nœud Enregistrer le texte écrit le contenu textuel dans un fichier situé d
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `text` | Le contenu textuel à enregistrer dans un fichier | STRING | Oui | - |
-| `filename_prefix` | Préfixe pour le nom du fichier de sortie (par défaut : "ComfyUI") | STRING | Non | - |
-| `format` | Le format de fichier dans lequel enregistrer le texte (par défaut : "txt") | STRING | Non | `"txt"`<br>`"md"`<br>`"json"` |
+| `text` | Le contenu texte à enregistrer dans un fichier. Cette entrée doit être connectée depuis un autre nœud. | STRING | Oui | - |
+| `filename_prefix` | Préfixe du nom de fichier de sortie. Un compteur à 5 chiffres est ajouté pour éviter d'écraser les fichiers existants (par défaut : "ComfyUI"). | STRING | Non | - |
+| `format` | Le format de fichier pour enregistrer le texte (par défaut : "txt"). Lorsque « json » est sélectionné, le texte JSON valide est mis en forme avec une indentation de 2 espaces ; sinon, le texte est enregistré tel quel. | COMBO | Non | `"txt"`<br>`"md"`<br>`"json"` |
 
 ## Sorties
 

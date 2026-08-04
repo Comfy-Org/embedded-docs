@@ -1,13 +1,13 @@
 # Rogner la vidéo (aléatoire temporel)
 
-Effectuer un recadrage aléatoire d'une plage continue d'images à partir d'une vidéo d'entrée. La longueur du recadrage est contrôlée par le paramètre `length`, et la position de départ est choisie à l'aide d'une graine aléatoire. Le nœud fonctionne de manière paresseuse, ce qui signifie qu'il ne traite pas la vidéo entière tant que la sortie n'est pas utilisée en aval.
+Recadre aléatoirement une plage continue d'images d'une vidéo d'entrée. Le nombre d'images à conserver est défini par le paramètre `length`, et la position de départ est choisie aléatoirement à l'aide du paramètre `seed`. Le nœud fonctionne de manière paresseuse, ce qui signifie qu'il ne traite pas toute la vidéo tant que la sortie n'est pas utilisée en aval.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `vidéo` | Vidéo d'entrée. | VIDEO | Oui | – |
-| `longueur` | Nombre d'images à conserver. (par défaut : 16) | INT | Oui | min : 1, max : 99999 |
+| `longueur` | Nombre d'images à conserver. Si `length` est supérieur au nombre total d'images de la vidéo, toute la vidéo est conservée. (par défaut : 16) | INT | Oui | min : 1, max : 99999 |
 | `graine` | Graine aléatoire. (par défaut : 0) | INT | Oui | min : 0, max : 0xFFFFFFFFFFFFFFFF |
 
 ## Sorties

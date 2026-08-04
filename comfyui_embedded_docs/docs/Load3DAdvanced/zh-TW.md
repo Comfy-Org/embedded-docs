@@ -15,6 +15,7 @@
 - `model_file` 參數僅顯示具有以下副檔名的檔案：.gltf、.glb、.obj、.fbx、.stl
 - 檔案必須放置在您 ComfyUI 安裝目錄的 `input/3d` 資料夾中
 - 如果 `model_file` 設定為 "none"，則不會載入任何 3D 模型資料（輸出 `model_3d` 將為空）
+- 如果 `model_file` 設定為不存在的檔案，節點將回傳驗證錯誤："Invalid 3D model file: {model_file}"
 
 ## ## 輸出
 

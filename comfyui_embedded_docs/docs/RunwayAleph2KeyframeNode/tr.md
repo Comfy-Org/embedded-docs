@@ -1,6 +1,6 @@
 # Runway Aleph2 Ana Kare Düğümü
 
-Bu düğüm, bir yönlendirme görüntüsünü giriş videonuzun belirli bir anına sabitler, böylece Aleph2 modeli düzenlemeyi görüntünüzdeki o noktaya yönlendirir. Bu düğümü Runway Aleph2 Video'dan Video'ya düğümünün "keyframes" girişine bağlayın ve isteğe bağlı "keyframes" girişi aracılığıyla birkaçını (en fazla 5) birbirine zincirleyin.
+Runway Aleph2 Keyframe düğümü, bir yönlendirme görüntüsünü giriş videonuzun belirli bir anına sabitler
 
 ## Girişler
 

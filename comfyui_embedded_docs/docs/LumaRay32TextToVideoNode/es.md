@@ -6,14 +6,14 @@ Este nodo genera un video a partir de un mensaje de texto utilizando el modelo R
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Mensaje de texto para la generación del video. | STRING | Sí | 1-6000 caracteres |
+| `prompt` | Indicación de texto para la generación de video. | STRING | Sí | 1 a 6000 caracteres |
 | `aspect_ratio` | La relación de aspecto del video generado. | STRING | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"` |
 | `resolution` | La resolución de salida del video (predeterminado: "720p"). | STRING | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `duration` | La duración del video generado. | STRING | Sí | `"5s"`<br>`"10s"` |
 | `loop` | Hace que el video se reproduzca en bucle sin interrupciones. Solo disponible con duración de 5s. | BOOLEAN | No | True/False (predeterminado: False) |
 | `seed` | Semilla para generación reproducible. | INT | No | 0 a 2147483647 |
 
-**Nota:** El parámetro `loop` solo se puede habilitar cuando `duration` está configurado en "5s". Si seleccionas una duración de "10s" y habilitas el bucle, el nodo devolverá un error.
+**Nota:** El parámetro `loop` solo se puede habilitar cuando `duration` está configurado en "5s". Si establece `duration` en "10s" y habilita `loop`, el nodo devuelve un error.
 
 ## Salidas
 

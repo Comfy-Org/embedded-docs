@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so Talking Image
 
 Animez un portrait fixe en une vidéo parlante pilotée par un fichier audio vocal, en utilisant le modèle sync-3 de sync.so. La durée de sortie correspond à la durée audio, et le coût évolue en fonction de la durée de sortie.
 

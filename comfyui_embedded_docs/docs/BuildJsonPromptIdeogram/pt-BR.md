@@ -8,13 +8,13 @@ Este nó constrói um prompt JSON estruturado especificamente formatado para o m
 |-----------|-------------|-----------|----------|-------|
 | `elemento` | Elementos do prompt provenientes do nó Criar Caixas Delimitadoras. | ARRAY | Sim | - |
 | `descrição_nível_alto` | Descrição opcional da imagem em uma ou duas frases. Fortemente recomendado. (padrão: vazio) | STRING | Não | - |
-| `fundo` | Descrição obrigatória do fundo ou ambiente da imagem. (padrão: vazio) | STRING | Sim | - |
+| `fundo` | Descrição obrigatória do fundo ou ambiente da imagem. Fornecer um valor é fortemente recomendado; o nó executará com uma string vazia, mas os resultados podem ser imprevisíveis. (padrão: vazio) | STRING | Sim | - |
 | `estilo` | A categoria de estilo visual para a imagem gerada. (padrão: "none") | COMBO | Sim | `"none"`<br>`"photo"`<br>`"art_style"` |
 | `photo` | Detalhes de câmera ou lente para saídas fotográficas (ex.: 35mm, f/1.4, bokeh). Disponível apenas quando o estilo está definido como "photo". (padrão: vazio) | STRING | Não | - |
 | `art_style` | Descrição do estilo artístico (ex.: ilustração vetorial plana, contornos marcantes). Disponível apenas quando o estilo está definido como "art_style". (padrão: vazio) | STRING | Não | - |
-| `estética` | Palavras-chave estéticas obrigatórias (ex.: melancólico, cinematográfico, dessaturado). (padrão: vazio) | STRING | Sim | - |
-| `iluminação` | Descrição obrigatória da iluminação (ex.: hora dourada, luz de contorno, sombras dramáticas). (padrão: vazio) | STRING | Sim | - |
-| `meio` | Tipo de mídia obrigatório (ex.: fotografia, ilustração, render_3d, pintura, design_grafico). Quando style = photo, defina como fotografia. (padrão: vazio) | STRING | Sim | - |
+| `estética` | Palavras-chave estéticas obrigatórias (ex.: melancólico, cinematográfico, dessaturado). Fornecer um valor é fortemente recomendado. (padrão: vazio) | STRING | Sim | - |
+| `iluminação` | Descrição obrigatória de iluminação (ex.: hora dourada, luz de contorno, sombras dramáticas). Fornecer um valor é fortemente recomendado. (padrão: vazio) | STRING | Sim | - |
+| `meio` | Tipo de meio obrigatório (ex.: fotografia, ilustração, 3d_render, pintura, design gráfico). Quando estilo = photo, defina como photograph. Fornecer um valor é fortemente recomendado. (padrão: vazio) | STRING | Sim | - |
 | `paleta_de_cores` | Códigos de cores hexadecimais que orientam as cores dominantes da imagem. Até 16 entradas. | COLORS | Não | - |
 
 **Nota:** Quando o parâmetro `style` estiver definido como "photo", a entrada `photo` fica disponível e você deve definir o parâmetro `medium` como "photograph". Quando `style` estiver definido como "art_style", a entrada `art_style` fica disponível.

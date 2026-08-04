@@ -8,11 +8,13 @@ Le nœud `VideoFrameSample` extrait un nombre fixe d'images d'une vidéo en util
 |-----------|-------------|-----------------|--------|-------|
 | `vidéo` | Vidéo d'entrée. | VIDEO | Oui | – |
 | `nombre d’images` | Nombre d'images à échantillonner (par défaut : 16). | INT | Oui | 1 – 9999 |
-| `stratégie` | Stratégie d'échantillonnage (par défaut : "uniform"). | COMBO | Oui | `"uniform"`<br>`"head"`<br>`"tail"`<br>`"random"` |
+| `stratégie` | uniform : espacés uniformément, head : premiers N, tail : derniers N, random : ordre aléatoire (par défaut : "uniform"). | COMBO | Oui | "uniform"<br>"head"<br>"tail"<br>"random" |
 | `graine` | Graine aléatoire, utilisée uniquement avec la stratégie "random" (par défaut : 0). | INT | Oui | 0 – 18446744073709551615 |
 
 - `num_frames` est automatiquement limité au nombre total d'images de la vidéo d'entrée.
 - Le paramètre `seed` n'a aucun effet sauf si `strategy` est définie sur `"random"`.
+- Lorsque `strategy` est `"uniform"` et que `num_frames` vaut 1, l'image centrale de la vidéo est sélectionnée.
+- Une valeur `strategy` non reconnue génère une erreur.
 
 ## Sorties
 

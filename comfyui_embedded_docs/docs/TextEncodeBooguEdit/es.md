@@ -1,16 +1,17 @@
 # TextEncodeBooguEdit
 
-Este nodo prepara el condicionamiento para la edición de imágenes con Boogu. Procesa imágenes de referencia para generar salidas de condicionamiento tanto positivas como negativas. La imagen de referencia se utiliza dos veces: los tokens visuales de la imagen se añaden solo al condicionamiento positivo para amplificar la instrucción de edición, mientras que un latente de referencia del VAE se añade tanto al condicionamiento positivo como al negativo para que se anulen bajo CFG, preservando la identidad de la imagen original.
+Este nodo prepara el condicionamiento para la edición de imágenes con Boogu. Procesa imágenes de referencia para generar salidas de condicionamiento tanto positivas como negativas. La imagen de referencia se usa dos veces: los tokens de visión de la imagen se agregan solo al condicionamiento positivo para amplificar la instrucción de edición, mientras que un latente de referencia del VAE se agrega tanto al condicionamiento positivo como al negativo para que se cancele bajo CFG, preservando la identidad de la imagen original; el tokenizador selecciona automáticamente el prompt del sistema apropiado según la presencia de imágenes y prompts negativos vacíos.
 
 ## Entradas
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
 | `clip` | El modelo CLIP utilizado para la codificación de texto | CLIP | Sí | |
-| `prompt` | El prompt de texto que describe la edición deseada | STRING | Sí | |
-| `negative_prompt` | El prompt de texto que describe lo que se debe evitar en la edición | STRING | No | |
-| `vae` | El modelo VAE utilizado para codificar imágenes de referencia en el espacio latente | VAE | No | |
+| `prompt` | El prompt de texto que describe la edición deseada. Admite texto multilínea y prompts dinámicos. | STRING | Sí | |
+| `negative_prompt` | El prompt de texto que describe lo que se debe evitar en la edición. Puede dejarse vacío para eliminar el condicionamiento negativo. Parámetro avanzado. | STRING | Sí | |
+| `vae` | El modelo VAE utilizado para codificar imágenes de referencia en el espacio latente. Necesario para agregar latentes de referencia a las salidas de condicionamiento. | VAE | No | |
 | `imágenes` | Imagen(es) de referencia a editar. Boogu se enfoca en una referencia por muestra; se permiten más. | IMAGE | No | Hasta 16 imágenes |
+Los latentes de referencia se agregan a ambas salidas de condicionamiento solo cuando se proporciona `vae` junto con al menos una `image` de referencia. Si se omite `vae`, la salida positiva aún recibe tokens de visión de las imágenes de referencia, pero ninguna salida incluye latentes de referencia.
 
 ## Salidas
 

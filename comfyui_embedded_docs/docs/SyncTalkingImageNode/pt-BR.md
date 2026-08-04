@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so Talking Image
 
 Anime um retrato estático em um vídeo falante guiado por áudio de fala, usando o modelo sync-3 da sync.so. A duração da saída corresponde à duração do áudio, e o custo é proporcional à duração da saída.
 

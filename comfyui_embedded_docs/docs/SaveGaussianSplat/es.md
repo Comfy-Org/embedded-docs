@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# Guardar Splat
 
 Este nodo guarda un archivo 3D de salpicadura gaussiana en el directorio de salida. Maneja el proceso de guardado del archivo y proporciona datos de vista previa para el visor 3D.
 
@@ -13,6 +13,8 @@ Este nodo guarda un archivo 3D de salpicadura gaussiana en el directorio de sali
 | `camera_info` | Información de la cámara para la vista previa del visor. | LOAD3DCAMERA | No | - |
 | `width` | El ancho de la vista previa (predeterminado: 1024). | INT | Sí | 1 a 4096 |
 | `height` | La altura de la vista previa (predeterminado: 1024). | INT | Sí | 1 a 4096 |
+
+Nota: Si no se proporcionan `camera_info` o `model_3d_info`, el nodo usa los valores correspondientes de `viewport_state` cuando están disponibles.
 
 ## Salidas
 

@@ -1,4 +1,4 @@
-# SyncTalkingImageNode
+# sync.so Konuşan Görsel
 
 Bir portre fotoğrafını, sync.so'nun sync-3 modelini kullanarak konuşma sesiyle yönlendirilen bir konuşan videoya dönüştürün. Çıktı süresi, ses süresiyle eşleşir ve maliyet, çıktı süresine göre ölçeklenir.
 

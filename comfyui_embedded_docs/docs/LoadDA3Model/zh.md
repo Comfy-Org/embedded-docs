@@ -7,7 +7,7 @@
 | 参数 | 描述 | 数据类型 | 是否必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
 | `model_name` | 要加载的 Depth Anything 3 模型文件名。 | STRING | 是 | `geometry_estimation` 文件夹中可用的模型文件列表 |
-| `weight_dtype` | 模型权重的数值精度（数据类型）。"default" 选项使用模型的原始精度。（默认值："default"） | STRING | 否 | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
+| `weight_dtype` | 模型权重的数值精度（数据类型）。"default" 使用模型的原始精度，"fp16" 使用 16 位浮点数，"bf16" 使用 bfloat16，"fp32" 使用 32 位浮点数。（默认值："default"） | STRING | 否 | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
 
 ## ## 输出
 

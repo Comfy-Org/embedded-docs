@@ -8,11 +8,13 @@ El nodo `VideoFrameSample` extrae un número fijo de fotogramas de un video util
 |-----------|-------------|---------------|-------------|-------|
 | `video` | Video de entrada. | VIDEO | Sí | – |
 | `num_frames` | Número de fotogramas a muestrear (por defecto: 16). | INT | Sí | 1 – 9999 |
-| `estrategia` | Estrategia de muestreo (por defecto: "uniform"). | COMBO | Sí | `"uniform"`<br>`"head"`<br>`"tail"`<br>`"random"` |
+| `estrategia` | uniform: espaciados uniformemente, head: primeros N, tail: últimos N, random: orden aleatorio (predeterminado: "uniform"). | COMBO | Sí | "uniform"<br>"head"<br>"tail"<br>"random" |
 | `semilla` | Semilla aleatoria, solo se usa con la estrategia "random" (por defecto: 0). | INT | Sí | 0 – 18446744073709551615 |
 
 - `num_frames` se ajusta automáticamente al número total de fotogramas del video de entrada.
 - El parámetro `seed` no tiene efecto a menos que `strategy` esté configurado como `"random"`.
+- Cuando `strategy` es `"uniform"` y `num_frames` es 1, se selecciona el fotograma central del video.
+- Un valor de `strategy` no reconocido genera un error.
 
 ## Salidas
 

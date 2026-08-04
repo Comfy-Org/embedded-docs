@@ -1,4 +1,4 @@
-# HeyGenTalkingPhotoNode
+# HeyGen Konuşan Fotoğraf
 
 Bir kişinin durağan fotoğrafını, HeyGen'in Avatar IV teknolojisini kullanarak dudak senkronizasyonlu konuşan bir videoya dönüştürün. Animasyonu, HeyGen'in sese dönüştürdüğü bir metin komut dosyasıyla yönlendirebilir veya avatarın dudak senkronizasyonu yapması için kendi sesinizi sağlayabilirsiniz.
 
@@ -8,14 +8,16 @@ Bir kişinin durağan fotoğrafını, HeyGen'in Avatar IV teknolojisini kullanar
 |-----------|-------------|-----------|----------|-------|
 | `görüntü` | Canlandırılacak kişinin görüntüsü. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Evet | - |
 | `konuşma` | Avatari bir metin komut dosyası (HeyGen metinden sese) veya kendi sesinizle yönlendirin. | COMBO | Evet | `"script"`<br>`"audio"` |
-| `text` | Avatarın söyleyeceği metin (en fazla 5000 karakter). Oluşturulan konuşma en az 1 saniye uzunluğunda olmalıdır. | STRING | Evet (konuşma "script" olduğunda) | - |
+| `text` | Avatarın söyleyeceği metin (en fazla 5000 karakter). Oluşturulan konuşma en az 1 saniye uzunluğunda olmalıdır. (varsayılan: boş) | STRING | Evet (konuşma "script" olduğunda) | - |
 | `voice` | Komut dosyası için ses (HeyGen'in en popüler sesleri). | COMBO | Evet (konuşma "script" olduğunda) | Birden çok seçenek mevcut |
-| `custom_voice_id` | İsteğe bağlı HeyGen ses kimliği. Ayarlandığında, yukarıda seçilen sesi geçersiz kılar. HeyGen'in kitaplığındaki (2000+) herhangi bir ses kullanılabilir. | STRING | Hayır | - |
+| `custom_voice_id` | İsteğe bağlı HeyGen ses kimliği. Ayarlandığında, yukarıda seçilen sesi geçersiz kılar. HeyGen'in kitaplığındaki (2000+) herhangi bir ses kullanılabilir. (varsayılan: boş) | STRING | Hayır | - |
 | `voice_speed` | Konuşma hızı çarpanı (varsayılan: 1.0). | FLOAT | Hayır | 0.5 ila 1.5 |
 | `audio` | Avatarın dudak senkronizasyonu yapacağı, en fazla 10 dakikalık ses. | AUDIO | Evet (konuşma "audio" olduğunda) | - |
 | `çözünürlük` | Çıktı video çözünürlüğü (varsayılan: "1080p"). | COMBO | Hayır | `"720p"`<br>`"1080p"` |
 | `en boy oranı` | Çıktı en boy oranı. 'auto', giriş görüntüsünü takip eder (varsayılan: "auto"). | COMBO | Hayır | `"auto"`<br>`"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:5"`<br>`"5:4"` |
 | `ifadeler` | Canlandırılan yüzün ve jestlerin ne kadar ifade dolu olduğu (varsayılan: "low"). | COMBO | Hayır | `"low"`<br>`"medium"`<br>`"high"` |
+
+Not: `speech`, konuşma kaynağını seçen dinamik bir girdidir. "script" olarak ayarlandığında `text` ve `voice` gereklidir; `custom_voice_id` ve `voice_speed` isteğe bağlıdır. "audio" olarak ayarlandığında bunun yerine `audio` gerekir.
 | `tohum` | HeyGen'e gönderilmez; yeniden çalıştırmayı zorlamak için değiştirin (varsayılan: 42). | INT | Hayır | 0 ila 2147483647 |
 
 ## Çıktılar

@@ -1,6 +1,6 @@
-# HeyGenCreateAvatarNode
+# Crear Avatar HeyGen
 
-Crea un avatar reutilizable de HeyGen a partir de una foto de una persona o de una instrucción de texto que describa un personaje para generar. El ID del avatar resultante se puede usar con el nodo Video de Avatar de HeyGen para crear videos con este avatar.
+Crea un avatar reutilizable de HeyGen a partir de una foto de una persona o de una instrucción de texto que describa un personaje para generar. El ID del avatar resultante se puede usar con el nodo HeyGen Avatar Video para crear videos con este avatar. Guarde el ID para reutilizar el avatar en flujos de trabajo futuros.
 
 ## Entradas
 
@@ -12,8 +12,8 @@ Cuando `source` está configurado en `"prompt"`, los siguientes parámetros adic
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Descripción del avatar a generar (hasta 1000 caracteres). | STRING | Sí | 1 a 1000 caracteres |
-| `reference_images` | Hasta 3 imágenes de referencia que guían la apariencia generada. | IMAGE | No | 0 a 3 imágenes |
+| `prompt` | Descripción del avatar a generar (hasta 1000 caracteres). Debe contener al menos 1 carácter que no sea espacio en blanco. Predeterminado: cadena vacía. | STRING | Sí | 1 a 1000 caracteres |
+| `reference_images` | Hasta 3 imágenes de referencia que guían la apariencia generada. Se reducen automáticamente si superan 2K. | IMAGE | No | 0 a 3 imágenes |
 
 Cuando `source` está configurado en `"photo"`, el siguiente parámetro adicional está disponible:
 

@@ -1,4 +1,4 @@
-# SyncLipSyncNode
+# sync.so Dudak Senkronizasyonu
 
 Bu düğüm, sync.so API'sini kullanarak bir videodaki ağız hareketlerini yeni bir konuşma sesine yeniden senkronize eder. Yakın çekimleri, profilleri ve engelleri otomatik olarak işlerken konuşmacının ifadesini korur. Maliyet, çıktı süresine göre değişir.
 
@@ -9,7 +9,7 @@ Bu düğüm, sync.so API'sini kullanarak bir videodaki ağız hareketlerini yeni
 | `video` | Yeniden senkronize edilecek konuşmacının görüntüsü. 4K'ya (4096x2160) kadar; 24/25/30 fps'lik sabit bir kare hızı en iyi sonucu verir. | VIDEO | Evet | - |
 | `audio` | Ağzın senkronize edileceği konuşma sesi. | AUDIO | Evet | - |
 | `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
-| `model` | sync.so üretim modeli. | COMBO | Evet | Aşağıya bakın |
+| `model` | sync.so üretim modeli. | COMBO | Evet | "sync-3" |
 
 `model` parametresi, aşağıdaki alt parametreleri içeren dinamik bir birleşik giriştir:
 
@@ -35,7 +35,7 @@ Bu düğüm, sync.so API'sini kullanarak bir videodaki ağız hareketlerini yeni
 
 **Kısıtlamalar:**
 - Video çözünürlüğü 4K'yı (4096x2160) aşmamalıdır. Bu sınırın üzerindeki videolar bir hata verecektir.
-- Ses süresi 600 saniyeyi (10 dakika) aşmamalıdır.
+- Video ve ses süreleri 600 saniyeyi (10 dakika) aşmamalıdır.
 - `speaker_frame`, `speaker_x` ve `speaker_y` parametreleri yalnızca `speaker_selection` "coordinates" olarak ayarlandığında kullanılır.
 
 ## Çıktılar
