@@ -1,6 +1,6 @@
 # Empty Qwen Image Layered Latent
 
-The Empty Qwen Image Layered Latent node creates a blank, multi-layered latent for the Qwen-Image-Layered model. It generates a tensor filled with zeros, sized for a batch, a stack of layers, and the spatial dimensions you request. This empty latent is the starting point of a layered generation, in the same way an empty latent image is the starting point of an ordinary one.
+The Empty Qwen Image Layered Latent node prepares the blank canvas that the Qwen-Image-Layered model paints onto. Think of it as a stack of clean tracing sheets clipped together in order: the model fills the first sheet with the complete picture, and each sheet after it with one part of that picture. This node decides how big the sheets are and how many of them there are. It does not draw anything itself.
 
 ## Inputs
 
@@ -8,7 +8,7 @@ The Empty Qwen Image Layered Latent node creates a blank, multi-layered latent f
 | --- | --- | --- | --- | --- |
 | `width` | The width of the latent image to create. The value must be divisible by 16. (default: 640) | INT | Yes | 16 to MAX_RESOLUTION |
 | `height` | The height of the latent image to create. The value must be divisible by 16. (default: 640) | INT | Yes | 16 to MAX_RESOLUTION |
-| `layers` | How many layers the image is decomposed into. The model also regenerates the full image, so the latent is allocated with `layers + 1` slots and a decoded generation gives you `layers + 1` images. Setting this to `0` is allowed and gives you the full image on its own. (default: 3) | INT | Yes | 0 to MAX_RESOLUTION |
+| `layers` | How many layers to separate the picture into. One extra sheet is always reserved for the complete picture, so you get `layers + 1` images back, not `layers`. Set it to 2 and you get the complete picture plus 2 layers. Set it to 0 and you get the complete picture on its own. (default: 3) | INT | Yes | 0 to MAX_RESOLUTION |
 | `batch_size` | The number of latent samples to generate in a batch. (default: 1) | INT | No | 1 to 4096 |
 
 **Note:** The `width` and `height` parameters are internally divided by 8 to determine the spatial dimensions of the output latent tensor.
@@ -19,14 +19,20 @@ The Empty Qwen Image Layered Latent node creates a blank, multi-layered latent f
 | --- | --- | --- |
 | `samples` | A latent tensor filled with zeros. Its shape is `[batch_size, 16, layers + 1, height // 8, width // 8]`. | LATENT |
 
-## Why there is one more slot than layers
+## Why you get one more image than you asked for
 
-Qwen-Image-Layered is an image generation model that regenerates the full image as well as the layers, so the third axis of the latent holds `layers + 1` entries. Set `layers` to 2 and you get the full image plus 2 layers. Set it to 0 and you get the full image only.
+Qwen-Image-Layered does not only take a picture apart. It also repaints the complete picture, on its own sheet, alongside the layers. That is why the stack is always one sheet taller than the number of layers you asked for.
 
-- **The first image is the full image, not a layer.** It repeats content you already have, so discard it when you only want the layers.
-- **Compositing all of the layers together recreates the full image.** Stacking them is a useful check that the decomposition worked.
-- **Layer order is positional.** The layers sit on the temporal axis of the latent, the same axis video models use for frames. LatentCutToBatch with `dim` set to `t` moves that axis into the batch dimension, so after VAE Decode each layer is a separate image and its order is its index in the batch. There is no z-index field and no per-layer metadata carrying that order, so reordering or filtering the batch reorders the layers.
-- The Qwen-Image-Layered VAE decodes to 4 channels, so decoded layers carry an alpha channel.
+- **The first image is the complete picture, not a layer.** It is the same picture you already have, so throw it away when all you want are the layers.
+- **Lay all the layers back on top of each other and you get the complete picture again.** If they do not add back up to that first image, the separation did not work the way you wanted, so this is a quick way to check the result.
+- **Keep the sheets in order.** The stack is the only record of which layer sits on top of which. Nothing is written on the sheets themselves to say where they belong, so reordering or dropping images means reordering or losing layers.
+- **The layers come out with transparency**, so they can be stacked without the lower ones being hidden behind an opaque background.
+
+## Usage suggestions
+
+Send the output to the sampler the way you would a normal empty latent, then put LatentCutToBatch with `dim` set to `t` before VAE Decode. That is the step that takes the stack apart into separate images, in order, starting with the complete picture.
+
+Start with the default of 3 layers. Asking for more means a longer generation and a finer separation, and it is not worth raising until you have seen what the model does with a small number.
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/EmptyQwenImageLayeredLatentImage/en.md)
 
