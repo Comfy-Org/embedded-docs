@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# Splat'ı Kaydet
 
 Bu düğüm, bir Gaussian splat 3B dosyasını çıktı dizinine kaydeder. Dosya kaydetme işlemini yönetir ve 3B görünüm alanı için önizleme verileri sağlar.
 
@@ -14,11 +14,13 @@ Bu düğüm, bir Gaussian splat 3B dosyasını çıktı dizinine kaydeder. Dosya
 | `width` | Önizlemenin genişliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
 | `height` | Önizlemenin yüksekliği (varsayılan: 1024). | INT | Evet | 1 ila 4096 |
 
+Not: `camera_info` veya `model_3d_info` sağlanmazsa, düğüm mevcut olduğunda `viewport_state`'den karşılık gelen değerleri kullanır.
+
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `model_3d` | Kaydedilen Gaussian splat 3B dosyası. | FILE3D |
+| `model_3d` | Çıktı dizinine kaydedilen Gauss splat 3D dosyası. | FILE3D |
 | `model_3d_info` | Görünüm alanı için model 3B bilgisi. | LOAD3DMODELINFO |
 | `camera_info` | Görünüm alanı önizlemesi için kamera bilgisi. | LOAD3DCAMERA |
 | `width` | Önizlemenin genişliği. | INT |

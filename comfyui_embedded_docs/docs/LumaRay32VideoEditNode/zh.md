@@ -12,7 +12,7 @@
 | `强度` | 保留源内容与重新想象源内容之间的强度。"auto" 让 Ray 3.2 自动选择；adhere_* 最大程度保留原内容，flex_* 较为平衡，reimagine_* 变化最大。（默认值："auto"） | COMBO | 是 | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `种子` | 用于结果可复现的随机种子。 | INT | 是 | - |
 
-**注意：** `prompt` 的长度必须在 1 到 6000 个字符之间。源视频的时长不得超过 18 秒。
+| `分辨率` | 编辑后视频的输出分辨率。（默认值："720p"） | COMBO | 是 | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 
 ## 输出
 

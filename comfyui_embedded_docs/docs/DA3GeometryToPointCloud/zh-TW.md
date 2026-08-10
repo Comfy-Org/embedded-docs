@@ -11,12 +11,18 @@
 | `confidence_threshold` | 排除每張影像正規化置信度低於此值的像素（0 = 保留所有）。當幾何圖形具有置信度地圖（小型/基礎模型）時使用。（預設值：0.1） | FLOAT | 是 | 0.0 至 1.0 |
 | `use_sky_mask` | 排除天空機率像素（天空 >= 0.5）。當幾何圖形具有天空地圖（單目/度量模型）時使用。（預設值：True） | BOOLEAN | 是 | True 或 False |
 | `downsample` | 每隔 N 個像素取一個（1 = 完整解析度）。數值越大，點數越少，處理速度越快。（預設值：1） | INT | 是 | 1 至 16 |
+**注意：**
+- `batch_index` 必須小於輸入幾何體的批次大小；否則節點將引發錯誤。
+- 如果過濾移除所有像素，節點將引發錯誤。降低 `confidence_threshold` 或停用 `use_sky_mask` 可以避免此問題。
+- `confidence_threshold` 僅在幾何體包含置信度圖時生效（Small/Base 模型）。
+- `use_sky_mask` 僅在幾何體包含天空圖時生效（Mono/Metric 模型）。
+- 當 `downsample` 大於 1 時，相機內參會相應縮放，以確保投影點保持正確。
 
 ## ## 輸出
 
 | 輸出名稱 | 說明 | 資料類型 |
 |-------------|-------------|-----------|
-| `point_cloud` | 包含過濾後的 3D 點、可選顏色和可選置信度值的點雲物件 | DA3_POINT_CLOUD |
+| `point_cloud` | 包含過濾後的 3D 點、可選顏色和可選置信度值的點雲 | DA3_POINT_CLOUD |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DA3GeometryToPointCloud/zh-TW.md)
 

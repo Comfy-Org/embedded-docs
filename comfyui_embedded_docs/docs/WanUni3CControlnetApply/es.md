@@ -18,8 +18,10 @@ Este nodo aplica un ControlNet Uni3C a un modelo de difusión de video Wan, util
 
 **Notas:**
 - El `model_patch` debe ser un ControlNet Uni3C; de lo contrario, el nodo genera un error.
+- El ControlNet Uni3C solo funciona con modelos Wan; se genera un error si el modelo no se basa en Wan.
 - La dimensión interna del ControlNet debe coincidir con la dimensión del modelo Wan; se genera un error si difieren.
 - Se espera que la imagen de entrada `render_video` esté en formato RGB (solo se utilizan los primeros 3 canales).
+- Este nodo es experimental.
 
 ## Salidas
 

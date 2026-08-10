@@ -7,7 +7,7 @@ Este nó ancora uma imagem de orientação a um momento específico no vídeo de
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-----------|--------------|-------------|-------|
 | `imagem` | A imagem de orientação para posicionar no momento escolhido do vídeo de saída. | IMAGE | Sim | - |
-| `posição` | Como posicionar esta imagem na linha do tempo do vídeo de saída. Escolha entre tempo absoluto (segundos a partir do início) ou tempo fracionário (percentual da duração do vídeo). | COMBO | Sim | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `posição` | Como posicionar esta imagem na linha do tempo do vídeo de saída. Escolha entre tempo absoluto (segundos a partir do início) ou tempo fracionário (fração da duração do vídeo). Selecionar uma opção revela o subparâmetro correspondente. | COMBO | Sim | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
 | `imagens_de_prompt` | Imagens de prompt anteriores opcionais para encadear com esta. Conecte a saída de outro nó Runway Aleph2 Imagem de Prompt aqui para construir uma cadeia de até 5 imagens de orientação. | PROMPT_IMAGE_CHAIN | Não | - |
 
 **Detalhes do Modo de Posição:**

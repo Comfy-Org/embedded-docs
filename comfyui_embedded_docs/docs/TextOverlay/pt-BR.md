@@ -7,12 +7,13 @@ Este nó desenha texto sobre uma imagem ou um lote de imagens. Ele cria uma sobr
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-----------|--------------|-------------|-------|
 | `imagens` | A imagem de entrada ou lote de imagens para desenhar o texto | IMAGE | Sim | |
-| `texto` | O texto a ser sobreposto na imagem (padrão: "") | STRING | Sim | |
-| `tamanho_da_fonte` | Tamanho da fonte como porcentagem da altura da imagem (padrão: 5.0) | FLOAT | Sim | 0.5 a 50.0 |
+| `texto` | O texto a ser sobreposto na imagem (padrão: ""). Suporta várias linhas; as sequências de escape `\n` e `\t` são convertidas em quebras de linha e tabulações, e o texto é automaticamente quebrado para caber na largura da imagem. | STRING | Sim | |
+| `tamanho_da_fonte` | Tamanho da fonte como porcentagem da altura da imagem (padrão: 5.0) | FLOAT | Sim | 0.5 a 50.0 (passo 0.5) |
 | `cor` | Cor do texto (padrão: "#ffffff") | STRING | Sim | |
 | `posição` | Posição vertical do texto na imagem (padrão: "top") | COMBO | Sim | `"top"`<br>`"bottom"` |
 | `alinhamento` | Alinhamento horizontal do texto (padrão: "left") | COMBO | Sim | `"left"`<br>`"center"`<br>`"right"` |
 | `contorno` | Desenhar um contorno preto ao redor do texto (padrão: True) | BOOLEAN | Sim | |
+Observação: se `text` estiver vazio ou contiver apenas espaços em branco, o nó retorna as imagens de entrada inalteradas. A mesma sobreposição de texto é aplicada a cada imagem do lote.
 
 ## Saídas
 

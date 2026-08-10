@@ -1,6 +1,6 @@
 # Tripo : Importer un modèle
 
-Ce nœud importe un fichier de modèle 3D externe dans le système Tripo afin de pouvoir l'utiliser avec les nœuds de post-traitement Tripo tels que Texture, Rig et Convert. Il télécharge votre modèle et renvoie un identifiant de tâche que les autres nœuds Tripo peuvent utiliser pour référencer le modèle importé.
+Ce nœud importe un modèle 3D externe dans Tripo afin que d'autres nœuds de post-traitement Tripo, tels que Texture, Rig et Convert, puissent l'utiliser. Le nœud téléverse le modèle et renvoie un ID de tâche qui identifie le modèle importé. GLB est recommandé car les textures ne sont conservées que lorsqu'elles sont intégrées dans le fichier, et texturer un modèle importé nécessite une invite de texture.
 
 ## Entrées
 
@@ -8,7 +8,7 @@ Ce nœud importe un fichier de modèle 3D externe dans le système Tripo afin de
 |-----------|-------------|-----------------|--------|-------|
 | `model_3d` | Modèle 3D à importer (GLB / FBX / OBJ / STL, jusqu'à 150 Mo). Les fichiers OBJ et STL ne contiennent pas de textures intégrées. | FILE3D | Oui | GLB<br>FBX<br>OBJ<br>STL<br>Tout format 3D |
 
-**Remarque :** Le format GLB est recommandé car les textures sont conservées uniquement lorsqu'elles sont intégrées directement dans le fichier. Les fichiers OBJ et STL ne prennent pas en charge les textures intégrées. Le format GLTF (.gltf) n'est pas pris en charge car il référence des fichiers externes ; utilisez plutôt un fichier GLB unique.
+**Remarque :** Seuls les formats GLB, FBX, OBJ et STL sont pris en charge. GLTF (.gltf) ne peut pas être importé car il fait référence à des fichiers externes ; utilisez plutôt un GLB à fichier unique. Le fichier de modèle doit faire 150 Mo ou moins. GLB est recommandé car les textures ne survivent à l'importation que lorsqu'elles sont intégrées dans le fichier. Les fichiers OBJ et STL ne contiennent pas de textures intégrées. Texturer un modèle importé nécessite une invite de texture.
 
 ## Sorties
 

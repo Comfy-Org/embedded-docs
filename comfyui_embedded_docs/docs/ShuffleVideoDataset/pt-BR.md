@@ -1,6 +1,6 @@
 # Embaralhar Lista de Vídeos
 
-Este nó recebe uma lista de vídeos e os reordena aleatoriamente. Ele usa uma semente aleatória para garantir que a ordem embaralhada seja reproduzível, de modo que a mesma semente sempre produza a mesma ordem de saída.
+Este nó recebe uma lista de vídeos e os reordena aleatoriamente. Ele usa uma semente aleatória para tornar a ordem embaralhada reproduzível, de modo que a mesma semente sempre produz a mesma ordem de saída.
 
 ## Entradas
 
@@ -8,6 +8,7 @@ Este nó recebe uma lista de vídeos e os reordena aleatoriamente. Ele usa uma s
 |-----------|-----------|--------------|-------------|-----------|
 | `vídeos` | Lista de vídeos para embaralhar. | VIDEO | Sim | Lista de entradas de vídeo |
 | `semente` | Semente aleatória para o embaralhamento (padrão: 0). | INT | Não | 0 a 18446744073709551615 |
+Observação: o valor da semente é reduzido módulo 4294967295 (2^32 - 1) antes de ser usado. Como resultado, sementes que diferem por um múltiplo de 4294967295 produzem a mesma ordem de saída.
 
 ## Saídas
 

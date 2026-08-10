@@ -15,10 +15,10 @@ Bu düğüm, bir görüntü üzerinde Depth Anything 3 modelini çalıştırarak
 | `pose_method` | Kamera görüş alanının nasıl tahmin edileceği (yalnızca Small ve Base modeller için). cam_dec: görüntü özelliklerinden öğrenilir. ray_pose: modelin 3D ışın çıktısından geometrik olarak türetilir. 3D çıktının perspektif doğruluğunu etkiler | COMBO | Hayır (koşullu) | `"cam_dec"`<br>`"ray_pose"` |
 
 **Parametre kısıtlamaları hakkında notlar:**
-- `ref_view_strategy` ve `pose_method` parametreleri yalnızca `mode` değeri `"multiview"` olarak ayarlandığında kullanılabilir
-- Çoklu görünüm modu, Small veya Base model çeşidi gerektirir. Diğer başlık türlerine sahip modeller (Metric veya Mono gibi) çapraz görünüm dikkati veya kamera konumu tahminini desteklemez
-- `pose_method` değeri `"cam_dec"` olarak ayarlandığında, modelin bir kamera kod çözücüsü olmalıdır. `"ray_pose"` olarak ayarlandığında, modelin bir DualDPT başlığı olmalıdır
-- Seçilen `pose_method` yüklenen modelle uyumlu değilse, bir hata oluşturulur
+- `ref_view_strategy` ve `pose_method` parametreleri yalnızca `mode` değeri `"multiview"` olarak ayarlandığında kullanılabilir.
+- Çoklu görünüm modu, Small veya Base model çeşidi gerektirir. Diğer başlık türlerine sahip modeller (Metric veya Mono gibi) çapraz görünüm dikkati veya kamera poz tahminini desteklemez.
+- `pose_method` değeri `"cam_dec"` olarak ayarlandığında, modelin bir kamera kod çözücüsü olmalıdır. `"ray_pose"` olarak ayarlandığında, modelin bir DualDPT başlığı olmalıdır.
+- Seçilen `pose_method` yüklenen modelle uyumlu değilse, bir hata oluşturulur.
 
 ## Çıktılar
 

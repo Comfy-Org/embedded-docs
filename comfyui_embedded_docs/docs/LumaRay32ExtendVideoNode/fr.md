@@ -1,16 +1,16 @@
 # LumaRay32ExtendVideoNode
 
-Ce nœud étend une génération vidéo Luma Ray 3.2 précédente en ajoutant un nouveau contenu soit après celle-ci (extension vers l'avant), soit avant celle-ci (extension vers l'arrière). Connectez la sortie d'ID de génération d'un nœud Luma Ray 3.2 antérieur pour créer une extension transparente de 5 secondes de votre vidéo.
+Luma Ray 3.2 Extend Video poursuit une génération vidéo précédente de Luma Ray 3.2 en créant un nouveau segment de 5 secondes, soit après le clip d'origine (vers l'avant), soit avant (vers l'arrière). Connectez la sortie `generation_id` d'un nœud Luma Ray 3.2 antérieur pour utiliser ce clip comme image de départ (vers l'avant) ou de fin (vers l'arrière) de l'extension.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `source_generation_id` | ID de génération de la vidéo Ray 3.2 antérieure à étendre. Connectez la sortie `generation_id` d'un autre nœud Luma Ray 3.2. | STRING | Oui | - |
-| `direction` | "Forward" continue après le clip antérieur ; "backward" est ajouté avant celui-ci. Lorsque "Forward (continue after)" est sélectionné, vous pouvez éventuellement activer le mode boucle. | COMBO | Oui | "Forward (continue after)"<br>"Backward (lead-in before)" |
-| `loop` | Boucle la vidéo étendue de manière transparente (extension vers l'avant uniquement). | BOOLEAN | Non | True<br>False |
-| `prompt` | Invite textuelle décrivant le nouveau contenu à générer. | STRING | Oui | - |
-| `resolution` | Résolution de sortie pour le segment vidéo étendu. | COMBO | Oui | "540p"<br>"720p"<br>"1080p" |
+| `source_generation_id` | ID de génération de la vidéo Ray 3.2 précédente à étendre. Connectez la sortie `generation_id` d'un autre nœud Luma Ray 3.2. Cette valeur est obligatoire et ne doit pas être vide. | STRING | Oui | - |
+| `direction` | Vers l'avant continue après le clip précédent ; vers l'arrière est préfixé avant lui. La sélection de « Forward (continue after) » ajoute également l'option `loop`. | COMBO | Oui | "Forward (continue after)"<br>"Backward (lead-in before)" |
+| `loop` | Boucle la vidéo étendue de manière transparente (extension vers l'avant uniquement). Disponible uniquement lorsque `direction` est « Forward (continue after) ». Par défaut : False. | BOOLEAN | Non | True<br>False |
+| `prompt` | Invite textuelle pour le nouveau contenu. Doit contenir entre 1 et 6000 caractères. | STRING | Oui | - |
+| `resolution` | Résolution de sortie pour le segment vidéo étendu. Par défaut : "720p". | COMBO | Oui | "540p"<br>"720p"<br>"1080p" |
 | `seed` | Graine aléatoire pour des résultats de génération reproductibles. | INT | Oui | - |
 
 **Remarque :** Le paramètre `loop` est disponible uniquement lorsque `direction` est défini sur "Forward (continue after)". Lors de l'utilisation de "Backward (lead-in before)", l'option de boucle n'est pas disponible. L'`prompt` doit contenir entre 1 et 6000 caractères.

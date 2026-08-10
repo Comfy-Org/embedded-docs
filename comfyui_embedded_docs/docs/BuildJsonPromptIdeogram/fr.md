@@ -7,14 +7,14 @@ Ce nœud construit une invite JSON structurée, spécifiquement formatée pour l
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `élément` | Éléments d'invite provenant du nœud Créer des boîtes englobantes. | ARRAY | Oui | - |
-| `description_de_haut_niveau` | Description facultative de l'image en une ou deux phrases. Fortement recommandée. (par défaut : vide) | STRING | Non | - |
-| `arrière-plan` | Description obligatoire de l'arrière-plan ou de l'environnement de l'image. (par défaut : vide) | STRING | Oui | - |
+| `description_de_haut_niveau` | Description facultative de l'image en une ou deux phrases. Fortement recommandé. (par défaut : vide) | STRING | Non | - |
+| `arrière-plan` | Description obligatoire de l'arrière-plan ou de l'environnement de l'image. Il est fortement recommandé de fournir une valeur ; le nœud fonctionnera avec une chaîne vide, mais les résultats peuvent être imprévisibles. (par défaut : vide) | STRING | Oui | - |
 | `style` | Catégorie de style visuel pour l'image générée. (par défaut : "none") | COMBO | Oui | `"none"`<br>`"photo"`<br>`"art_style"` |
 | `photo` | Détails de l'appareil photo ou de l'objectif pour les sorties photographiques (ex. 35mm, f/1.4, bokeh). Disponible uniquement lorsque le style est défini sur "photo". (par défaut : vide) | STRING | Non | - |
 | `art_style` | Description du style artistique (ex. illustration vectorielle plate, contours épais). Disponible uniquement lorsque le style est défini sur "art_style". (par défaut : vide) | STRING | Non | - |
-| `esthétique` | Mots-clés esthétiques obligatoires (ex. atmosphérique, cinématographique, désaturé). (par défaut : vide) | STRING | Oui | - |
-| `éclairage` | Description obligatoire de l'éclairage (ex. heure dorée, contre-jour, ombres dramatiques). (par défaut : vide) | STRING | Oui | - |
-| `support` | Type de support obligatoire (ex. photographie, illustration, rendu_3d, peinture, conception_graphique). Lorsque style = photo, définir sur photographie. (par défaut : vide) | STRING | Oui | - |
+| `esthétique` | Mots-clés esthétiques obligatoires (p. ex. mélancolique, cinématographique, désaturé). Il est fortement recommandé de fournir une valeur. (par défaut : vide) | STRING | Oui | - |
+| `éclairage` | Description obligatoire de l'éclairage (p. ex. heure dorée, lumière de contour, ombres dramatiques). Il est fortement recommandé de fournir une valeur. (par défaut : vide) | STRING | Oui | - |
+| `support` | Type de support obligatoire (p. ex. photographie, illustration, 3d_render, peinture, design graphique). Lorsque style = photo, définissez photograph. Il est fortement recommandé de fournir une valeur. (par défaut : vide) | STRING | Oui | - |
 | `palette_de_couleurs` | Codes de couleur hexadécimaux qui orientent les couleurs dominantes de l'image. Jusqu'à 16 entrées. | COLORS | Non | - |
 
 **Remarque :** Lorsque le paramètre `style` est défini sur "photo", l'entrée `photo` devient disponible et vous devez définir le paramètre `medium` sur "photographie". Lorsque `style` est défini sur "art_style", l'entrée `art_style` devient disponible.

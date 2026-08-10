@@ -8,11 +8,13 @@
 |-----------|----------|-----------|---------|--------|
 | `video` | Giriş videosu. | VIDEO | Evet | – |
 | `kare_sayısı` | Örklenecek kare sayısı (varsayılan: 16). | INT | Evet | 1 – 9999 |
-| `strateji` | Örnekleme stratejisi (varsayılan: "uniform"). | COMBO | Evet | `"uniform"`<br>`"head"`<br>`"tail"`<br>`"random"` |
+| `strateji` | uniform: eşit aralıklı, head: ilk N, tail: son N, random: rastgele sıralı (varsayılan: "uniform"). | COMBO | Evet | "uniform"<br>"head"<br>"tail"<br>"random" |
 | `tohum` | Rastgele tohum, yalnızca "random" stratejisi ile kullanılır (varsayılan: 0). | INT | Evet | 0 – 18446744073709551615 |
 
 - `num_frames`, giriş videosunun toplam kare sayısına otomatik olarak sınırlanır.
 - `seed` parametresinin, `strategy` `"random"` olarak ayarlanmadığı sürece hiçbir etkisi yoktur.
+- `strategy` değeri `"uniform"` ve `num_frames` 1 olduğunda, videonun ortasındaki kare seçilir.
+- Tanınmayan bir `strategy` değeri hata oluşturur.
 
 ## Çıktılar
 

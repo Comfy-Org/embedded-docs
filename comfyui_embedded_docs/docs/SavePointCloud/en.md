@@ -1,4 +1,4 @@
-# SavePointCloud
+# Save Point Cloud
 
 The Save Point Cloud node saves a 3D point cloud file to the output directory and optionally provides preview data for the 3D viewer. It handles file naming and saving, while also passing through camera and model information for display purposes.
 
@@ -13,6 +13,8 @@ The Save Point Cloud node saves a 3D point cloud file to the output directory an
 | `camera_info` | Camera information for the 3D viewer | LOAD3D_CAMERA | No | - |
 | `width` | Width of the preview display in pixels (default: 1024) | INT | Yes | 1 to 4096 |
 | `height` | Height of the preview display in pixels (default: 1024) | INT | Yes | 1 to 4096 |
+
+The saved file is written to the output directory using the `filename_prefix` with a 5-digit counter appended (for example, `3d/ComfyUI_00001.ply`). When the optional `camera_info` input is not connected, the camera information is taken from `viewport_state`; similarly, when `model_3d_info` is not connected, the model information is taken from `viewport_state` (or an empty list if none is available).
 
 ## Outputs
 

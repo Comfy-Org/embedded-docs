@@ -15,6 +15,7 @@ Ce nœud charge un fichier de modèle 3D depuis votre répertoire d'entrée Comf
 - Le paramètre `model_file` n'affiche que les fichiers avec les extensions suivantes : .gltf, .glb, .obj, .fbx, .stl
 - Les fichiers doivent être placés dans le répertoire `input/3d` de votre installation ComfyUI
 - Si `model_file` est défini sur "none", aucune donnée de modèle 3D ne sera chargée (la sortie `model_3d` sera vide)
+- Si `model_file` est défini sur un fichier inexistant, le nœud renvoie une erreur de validation : « Invalid 3D model file: {model_file} »
 
 ## Sorties
 

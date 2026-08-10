@@ -1,6 +1,6 @@
 # Nodo Runway Aleph2 Keyframe
 
-Este nodo ancla una imagen de guía a un momento específico de tu video de entrada, para que el modelo Aleph2 dirija la edición en ese punto de tu metraje. Conecta este nodo a la entrada "keyframes" del nodo Runway Aleph2 Video to Video, y encadena varios (hasta 5) mediante la entrada opcional "keyframes".
+El nodo Runway Aleph2 Keyframe ancla una imagen de guía a un momento específico
 
 ## Entradas
 

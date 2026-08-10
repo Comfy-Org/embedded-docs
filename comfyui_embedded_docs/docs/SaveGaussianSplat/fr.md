@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# Enregistrer Splat
 
 Ce nœud enregistre un fichier 3D de type Gaussian splat dans le répertoire de sortie. Il gère le processus de sauvegarde du fichier et fournit des données d'aperçu pour la fenêtre 3D.
 
@@ -13,6 +13,8 @@ Ce nœud enregistre un fichier 3D de type Gaussian splat dans le répertoire de 
 | `camera_info` | Informations sur la caméra pour l'aperçu dans la fenêtre. | LOAD3DCAMERA | Non | - |
 | `width` | La largeur de l'aperçu (par défaut : 1024). | INT | Oui | 1 à 4096 |
 | `height` | La hauteur de l'aperçu (par défaut : 1024). | INT | Oui | 1 à 4096 |
+
+Remarque : Si `camera_info` ou `model_3d_info` ne sont pas fournis, le nœud utilise les valeurs correspondantes de `viewport_state` lorsqu'elles sont disponibles.
 
 ## Sorties
 

@@ -6,7 +6,7 @@ Este nodo genera un video que interpola a través de una secuencia de imágenes 
 
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `prompt` | Indicación textual para la generación del video. | STRING | Sí | 1 a 6000 caracteres |
+| `prompt` | Indicación textual para la generación del video (predeterminado: cadena vacía). | STRING | Sí | 1 a 6000 caracteres |
 | `resolution` | La resolución de salida del video generado (predeterminado: "720p"). | COMBO | Sí | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `duration` | La duración del video generado (predeterminado: "5s"). | COMBO | Sí | `"5s"`<br>`"10s"` |
 | `seed` | Semilla para la generación de números aleatorios que controla la reproducibilidad. | INT | Sí | 0 a 4294967295 |

@@ -20,8 +20,10 @@ Ce nœud applique un ControlNet Uni3C à un modèle de diffusion vidéo Wan, en 
 
 **Notes :**
 - Le `model_patch` doit être un ControlNet Uni3C ; sinon le nœud génère une erreur.
-- La dimension interne du ControlNet doit correspondre à celle du modèle Wan – une erreur est levée si elles diffèrent.
+- Le ControlNet Uni3C ne fonctionne qu'avec les modèles Wan ; une erreur est levée si le modèle n'est pas basé sur Wan.
+- La dimension interne du ControlNet doit correspondre à celle du modèle Wan ; une erreur est levée si elles diffèrent.
 - L'image d'entrée `render_video` doit être au format RVB (seuls les 3 premiers canaux sont utilisés).
+- Ce nœud est expérimental.
 
 ## Sorties
 

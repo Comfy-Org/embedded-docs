@@ -1,12 +1,12 @@
 # Seed
 
-O nó Seed gera um valor inteiro fixo ou aleatório. Ele é comumente usado para controlar a reprodutibilidade de operações aleatórias em outros nós, fornecendo um ponto de partida consistente para a geração de números aleatórios.
+O nó Seed fornece um valor inteiro que pode ser usado como semente para controlar a reprodutibilidade de operações aleatórias em outros nós. Ao fornecer um valor inicial consistente, ajuda a manter resultados repetíveis quando necessário.
 
 ## Entradas
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `semente` | O valor da semente a ser usado. A opção de controle após a geração determina se o valor permanece fixo ou muda após cada geração. | INT | Sim | 0 a 9223372036854775807 |
+| `semente` | O valor de semente a ser usado. A opção de controle após gerar determina se o valor permanece fixo ou muda após cada geração; neste nó, ele é definido como fixo. | INT | Sim | 0 a 9223372036854775807 |
 
 ## Saídas
 

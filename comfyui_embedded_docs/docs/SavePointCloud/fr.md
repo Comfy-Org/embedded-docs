@@ -1,4 +1,4 @@
-# SavePointCloud
+# Enregistrer le nuage de points
 
 Le nœud Save Point Cloud enregistre un fichier de nuage de points 3D dans le répertoire de sortie et fournit éventuellement des données d'aperçu pour la visionneuse 3D. Il gère la dénomination et l'enregistrement des fichiers, tout en transmettant les informations de caméra et de modèle à des fins d'affichage.
 
@@ -13,6 +13,7 @@ Le nœud Save Point Cloud enregistre un fichier de nuage de points 3D dans le r�
 | `camera_info` | Informations de caméra pour la visionneuse 3D | LOAD3D_CAMERA | Non | - |
 | `width` | Largeur de l'affichage d'aperçu en pixels (par défaut : 1024) | INT | Oui | 1 à 4096 |
 | `height` | Hauteur de l'affichage d'aperçu en pixels (par défaut : 1024) | INT | Oui | 1 à 4096 |
+Le fichier enregistré est écrit dans le répertoire de sortie en utilisant `filename_prefix` avec un compteur à 5 chiffres ajouté (par exemple, `3d/ComfyUI_00001.ply`). Lorsque l'entrée facultative `camera_info` n'est pas connectée, les informations de caméra proviennent de `viewport_state` ; de même, lorsque `model_3d_info` n'est pas connectée, les informations de modèle proviennent de `viewport_state` (ou d'une liste vide si aucune n'est disponible).
 
 ## Sorties
 

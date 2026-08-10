@@ -15,10 +15,10 @@ Este nó executa o modelo Depth Anything 3 em uma imagem para estimar informaç�
 | `pose_method` | Como o campo de visão da câmera é estimado (apenas para modelos Small e Base). cam_dec: aprendido a partir das características da imagem. ray_pose: derivado geometricamente da saída de raios 3D do modelo. Afeta a correção de perspectiva da saída 3D | COMBO | Não (condicional) | `"cam_dec"`<br>`"ray_pose"` |
 
 **Observações sobre restrições de parâmetros:**
-- Os parâmetros `ref_view_strategy` e `pose_method` estão disponíveis apenas quando `mode` está definido como `"multiview"`
-- O modo multivisão requer uma variante de modelo Small ou Base. Modelos com outros tipos de cabeçote (como Metric ou Mono) não suportam atenção entre visões ou estimativa de pose de câmera
-- Quando `pose_method` está definido como `"cam_dec"`, o modelo deve ter um decodificador de câmera. Se definido como `"ray_pose"`, o modelo deve ter um cabeçote DualDPT
-- Se o `pose_method` selecionado não for compatível com o modelo carregado, um erro será gerado
+- Os parâmetros `ref_view_strategy` e `pose_method` estão disponíveis apenas quando `mode` está definido como `"multiview"`.
+- O modo multivisão requer uma variante de modelo Small ou Base. Modelos com outros tipos de cabeçote (como Metric ou Mono) não suportam atenção entre visões ou estimativa de pose de câmera.
+- Quando `pose_method` está definido como `"cam_dec"`, o modelo deve ter um decodificador de câmera. Se definido como `"ray_pose"`, o modelo deve ter um cabeçote DualDPT.
+- Se o `pose_method` selecionado não for compatível com o modelo carregado, um erro será gerado.
 
 ## Saídas
 

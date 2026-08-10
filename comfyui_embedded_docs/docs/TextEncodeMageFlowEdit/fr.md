@@ -10,17 +10,19 @@ Ce nœud encode une instruction d'édition (prompt) avec une ou plusieurs images
 |-----------|-------------|-----------------|--------|-------|
 | `clip` | Le modèle CLIP utilisé pour tokeniser et coder les prompts textuels. | CLIP | Oui | |
 | `prompt` | L'instruction d'édition (prompt positif) à appliquer. | STRING | Oui | multiligne, prompts dynamiques activés |
-| `negative_prompt` | Le prompt négatif pour éviter. Par défaut : chaîne vide (utilise un espace en interne lorsqu'il est vide). | STRING | Non | multiligne, prompts dynamiques activés |
+| `negative_prompt` | Le prompt négatif à éviter. Par défaut : chaîne vide (utilise un espace en interne lorsqu'il est vide). Affiché dans la section avancée de l'interface. | STRING | Non | multiligne, prompts dynamiques activés |
 | `vae` | Modèle VAE pour encoder les images de référence dans l'espace latent. S'il n'est pas fourni, aucun latent de référence n'est ajouté au conditioning. | VAE | Non | |
-| `images` | Une ou plusieurs images de référence à éditer. Toutes les images sont redimensionnées à la résolution de sortie avant l'encodage. | IMAGE (autogrow) | Non | Jusqu'à 16 images (nommées `image_1`…`image_16`), au moins 0 |
+| `images` | Image(s) de référence à éditer. Toutes les références sont redimensionnées à la résolution de sortie avant l'encodage. | IMAGE (autogrow) | Non | Jusqu'à 16 images (nommées `image_1`…`image_16`), au moins 0 |
 | `width` | Largeur de sortie en pixels. Si réglé sur 0, la largeur de la première image de référence est utilisée. Toujours arrondi à l'inférieur à un multiple de 16. Par défaut : 0. | INT | Oui | 0 à 8192 (pas de 16) |
 | `height` | Hauteur de sortie en pixels. Même comportement de repli que pour la largeur. Par défaut : 0. | INT | Oui | 0 à 8192 (pas de 16) |
 | `batch_size` | Nombre d'échantillons latents à générer. Par défaut : 1. | INT | Oui | 1 à 4096 |
 
 **Notes sur les dépendances des paramètres :**
 - Si `width` et/ou `height` sont à 0 et qu'aucune image de référence n'est fournie, ils utilisent par défaut 1024 chacun.
+- Si un seul de `width` ou `height` vaut 0, la dimension manquante est prise à partir de la première image de référence tandis que la dimension définie explicitement est conservée.
 - Le paramètre `vae` est optionnel ; les latents de référence ne sont générés et attachés au conditioning que lorsqu'un VAE est connecté.
 - Le champ `negative_prompt` est optionnel – s'il est laissé vide, un seul espace est utilisé en interne comme texte négatif.
+- Pour le conditionnement textuel, chaque image de référence est redimensionnée pour que son bord le plus long soit d'au plus 384 pixels, conformément au prétraitement d'entraînement. La branche d'encodage VAE redimensionne quant à elle toutes les références à la résolution de sortie complète.
 
 ## Sorties
 

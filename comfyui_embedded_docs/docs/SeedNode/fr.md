@@ -1,12 +1,12 @@
 # Graine
 
-Le nœud Seed génère une valeur entière fixe ou aléatoire. Il est couramment utilisé pour contrôler la reproductibilité des opérations aléatoires dans d'autres nœuds en fournissant un point de départ cohérent pour leur génération de nombres aléatoires.
+Le nœud Seed fournit une valeur entière qui peut être utilisée comme graine pour contrôler la reproductibilité des opérations aléatoires dans d'autres nœuds. En fournissant une valeur de départ cohérente, il aide à garder des résultats reproductibles si nécessaire.
 
 ## Entrées
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `graine` | La valeur de départ à utiliser. L'option de contrôle après génération détermine si la valeur reste fixe ou change après chaque génération. | INT | Oui | 0 à 9223372036854775807 |
+| `graine` | La valeur de graine à utiliser. L'option de contrôle après génération détermine si la valeur reste fixe ou change après chaque génération ; dans ce nœud, elle est définie comme fixe. | INT | Oui | 0 à 9223372036854775807 |
 
 ## Sorties
 

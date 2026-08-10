@@ -1,4 +1,4 @@
-# HeyGenTextToSpeechNode
+# HeyGen Texto a Voz
 
 Genera audio de voz a partir de texto utilizando el motor TTS Starfish de HeyGen. Este nodo incluye las voces más populares de HeyGen en 17 idiomas.
 
@@ -8,7 +8,7 @@ Genera audio de voz a partir de texto utilizando el motor TTS Starfish de HeyGen
 |-----------|-------------|-----------|----------|-------|
 | `texto` | Texto a sintetizar (hasta 5000 caracteres). El audio generado debe tener al menos 1 segundo de duración. | STRING | Sí | 1 a 5000 caracteres |
 | `voz` | Voz a utilizar (seleccionada entre las voces compatibles con Starfish más populares de HeyGen). | STRING | Sí | Múltiples opciones disponibles |
-| `custom_voice_id` | ID de voz opcional de HeyGen. Cuando se define, anula la voz seleccionada anteriormente. La voz debe ser compatible con el motor Starfish. | STRING | No | Cualquier ID de voz válido de HeyGen |
+| `custom_voice_id` | ID de voz opcional de HeyGen. Cuando se define, anula la voz seleccionada anteriormente. La voz debe ser compatible con el motor Starfish (predeterminado: vacío). | STRING | No | Cualquier ID de voz válido de HeyGen |
 | `velocidad` | Multiplicador de velocidad del habla (predeterminado: 1.0). | FLOAT | No | 0.5 a 2.0 (incremento: 0.05) |
 | `ssml` | Tratar el texto como marcado SSML (para pausas, énfasis y control de pronunciación) (predeterminado: Falso). | BOOLEAN | No | Verdadero / Falso |
 | `semilla` | No se envía a HeyGen; cámbielo para forzar una nueva ejecución (predeterminado: 42). | INT | No | 0 a 2147483647 |

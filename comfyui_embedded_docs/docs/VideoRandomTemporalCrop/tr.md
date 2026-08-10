@@ -1,13 +1,13 @@
 # Video Kırp (Zamansal Rastgele)
 
-Giriş videosundan sürekli bir kare aralığını rastgele kırp. Kırpma uzunluğu `length` parametresi ile kontrol edilir ve başlangıç konumu rastgele bir tohum (seed) kullanılarak seçilir. Düğüm tembel çalışma prensibiyle işlem yapar, yani çıktı aşağı akışta (downstream) kullanılana kadar videonun tamamını işlemez.
+Giriş videosundan sürekli bir kare aralığını rastgele kırpar. Tutulacak kare sayısı `length` parametresiyle ayarlanır ve başlangıç konumu `seed` parametresi kullanılarak rastgele seçilir. Düğüm tembel bir şekilde çalışır, yani çıktı aşağı akışta kullanılana kadar videonun tamamını işlemez.
 
 ## Girişler
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Giriş videosu. | VIDEO | Evet | – |
-| `uzunluk` | Saklanacak kare sayısı. (varsayılan: 16) | INT | Evet | min: 1, max: 99999 |
+| `uzunluk` | Tutulacak kare sayısı. `length`, videodaki toplam kare sayısından büyükse videonun tamamı tutulur. (varsayılan: 16) | INT | Evet | min: 1, max: 99999 |
 | `tohum` | Rastgele tohum. (varsayılan: 0) | INT | Evet | min: 0, max: 0xFFFFFFFFFFFFFFFF |
 
 ## Çıktılar

@@ -11,12 +11,18 @@ Bu düğüm, bir DA3_GEOMETRY nesnesinden alınan derinlik haritasını 3B nokta
 | `confidence_threshold` | Görüntü başına normalleştirilmiş güven değeri bu değerin altında olan pikselleri hariç tut (0 = tümünü tut). Geometride güven haritası olduğunda kullanılır (Küçük/Temel modeller). (varsayılan: 0.1) | FLOAT | Evet | 0.0 ile 1.0 |
 | `use_sky_mask` | Gökyüzü olasılığı olan pikselleri hariç tut (gökyüzü >= 0.5). Geometride gökyüzü haritası olduğunda kullanılır (Tek/Metrik modeller). (varsayılan: True) | BOOLEAN | Evet | True veya False |
 | `downsample` | Her N. pikseli al (1 = tam çözünürlük). Daha yüksek değerler daha az nokta ve daha hızlı işleme sağlar. (varsayılan: 1) | INT | Evet | 1 ile 16 |
+**Notlar:**
+- `batch_index`, giriş geometrisinin yığın boyutundan küçük olmalıdır; aksi takdirde düğüm bir hata oluşturur.
+- Filtreleme tüm pikselleri kaldırırsa düğüm bir hata oluşturur. `confidence_threshold` değerini düşürmek veya `use_sky_mask` özelliğini devre dışı bırakmak bunu önleyebilir.
+- `confidence_threshold` yalnızca geometri bir güven haritası içerdiğinde uygulanır (Small/Base modelleri).
+- `use_sky_mask` yalnızca geometri bir gökyüzü haritası içerdiğinde uygulanır (Mono/Metric modelleri).
+- `downsample` 1'den büyük olduğunda, kamera iç parametreleri buna göre ölçeklenir ve yansıtılan noktalar doğru kalır.
 
 ## Çıkışlar
 
 | Çıkış Adı | Açıklama | Veri Türü |
 |-----------|----------|-----------|
-| `point_cloud` | Filtrelenmiş 3B noktalar, isteğe bağlı renkler ve isteğe bağlı güven değerleri içeren nokta bulutu nesnesi | DA3_POINT_CLOUD |
+| `point_cloud` | Filtrelenmiş 3B noktalar, isteğe bağlı renkler ve isteğe bağlı güven değerleri içeren nokta bulutu | DA3_POINT_CLOUD |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/DA3GeometryToPointCloud/tr.md)
 

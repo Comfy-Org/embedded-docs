@@ -1,6 +1,6 @@
 # Tripo: Importar modelo
 
-Este nodo importa un archivo de modelo 3D externo al sistema de Tripo para que puedas utilizarlo con los nodos de posprocesamiento de Tripo, como Textura, Rig y Convertir. Carga tu modelo y devuelve un ID de tarea que otros nodos de Tripo pueden usar para hacer referencia al modelo importado.
+Este nodo importa un modelo 3D externo a Tripo para que otros nodos de posprocesamiento de Tripo, como Texture, Rig y Convert, puedan usarlo. El nodo sube el modelo y devuelve un ID de tarea que identifica el modelo importado. Se recomienda GLB porque las texturas se conservan solo cuando están incrustadas en el archivo, y texturizar un modelo importado requiere una indicación de textura.
 
 ## Entradas
 
@@ -8,7 +8,7 @@ Este nodo importa un archivo de modelo 3D externo al sistema de Tripo para que p
 |-----------|-------------|--------------|-------------|-------|
 | `model_3d` | Modelo 3D a importar (GLB / FBX / OBJ / STL, hasta 150 MB). Los archivos OBJ y STL no contienen texturas incrustadas. | FILE3D | Sí | GLB<br>FBX<br>OBJ<br>STL<br>Cualquier formato 3D |
 
-**Nota:** Se recomienda el formato GLB porque las texturas se conservan solo cuando están incrustadas directamente en el archivo. Los archivos OBJ y STL no admiten texturas incrustadas. El formato GLTF (.gltf) no es compatible porque hace referencia a archivos externos; utiliza un GLB de un solo archivo en su lugar.
+**Nota:** Solo se admiten los formatos GLB, FBX, OBJ y STL. GLTF (.gltf) no se puede importar porque hace referencia a archivos externos; use un GLB de un solo archivo en su lugar. El archivo de modelo debe tener 150 MB o menos. Se recomienda GLB porque las texturas sobreviven a la importación solo cuando están incrustadas en el archivo. Los archivos OBJ y STL no incluyen texturas incrustadas. Texturizar un modelo importado requiere una indicación de textura.
 
 ## Salidas
 

@@ -1,6 +1,6 @@
-# HeyGenCreateAvatarNode
+# HeyGen Avatar Oluştur
 
-Bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden yeniden kullanılabilir bir HeyGen avatarı oluşturun. Ortaya çıkan avatar kimliği, bu avatarı kullanarak videolar oluşturmak için HeyGen Avatar Video düğümüyle kullanılabilir.
+Bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden yeniden kullanılabilir bir HeyGen avatarı oluşturun. Ortaya çıkan avatar kimliği, bu avatarın yer aldığı videolar oluşturmak için HeyGen Avatar Video düğümüyle kullanılabilir. Avatarı gelecekteki iş akışlarında yeniden kullanmak için kimliği kaydedin.
 
 ## Girdiler
 
@@ -12,8 +12,8 @@ Bir kişinin fotoğrafından veya bir karakteri tanımlayan metin isteminden yen
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak avatarın açıklaması (en fazla 1000 karakter). | STRING | Evet | 1 ila 1000 karakter |
-| `reference_images` | Oluşturulacak görünüme yön veren en fazla 3 referans görseli. | IMAGE | Hayır | 0 ila 3 görsel |
+| `prompt` | Oluşturulacak avatarın açıklaması (en fazla 1000 karakter). En az 1 boşluk olmayan karakter içermelidir. Varsayılan: boş dize. | STRING | Evet | 1 ila 1000 karakter |
+| `reference_images` | Oluşturulacak görünüme yön veren en fazla 3 referans görseli. 2K'dan büyükse otomatik olarak küçültülür. | IMAGE | Hayır | 0 ila 3 görsel |
 
 `source` parametresi `"photo"` olarak ayarlandığında aşağıdaki ek parametre kullanılabilir:
 

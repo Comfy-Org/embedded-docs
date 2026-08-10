@@ -7,7 +7,7 @@ Bu düğüm, Depth Anything 3 geometri verilerinden bir görselleştirme oluştu
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|----------|-----------|---------|--------|
 | `da3_geometry` | Derinlik, isteğe bağlı olarak gökyüzü ve güven tensörlerini içeren Depth Anything 3 geometri veri paketi | DA3_GEOMETRY | Evet | - |
-| `output` | Oluşturulacak görselleştirme türü. Seçenekler: depth, depth_colored, sky_mask ve confidence. Her seçeneğin kendine ait alt parametreleri vardır. | COMBO | Evet | `"depth"`<br>`"depth_colored"`<br>`"sky_mask"`<br>`"confidence"` |
+| `output` | Oluşturulacak görselleştirme türü.<br>- depth: normalleştirilmiş gri tonlamalı derinlik görüntüsü.<br>- depth_colored: Turbo renk haritasıyla eşlenen derinlik.<br>- sky_mask: [0, 1] aralığında gökyüzü olasılığı (yalnızca Mono/Metric modelleri).<br>- confidence: normalleştirilmiş derinlik güveni (yalnızca Small/Base modelleri). | COMBO | Evet | "depth"<br>"depth_colored"<br>"sky_mask"<br>"confidence" |
 
 ### `output` seçenekleri için alt parametreler
 
@@ -15,8 +15,8 @@ Bu düğüm, Depth Anything 3 geometri verilerinden bir görselleştirme oluştu
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|----------|-----------|---------|--------|
-| `normalization` | Derinlik normalizasyon yöntemi. v2_style, algısal olarak dengeli sonuçlar için ortalama/standart sapma normalizasyonu kullanır (varsayılan). min_max, maksimum kontrast için tüm derinlik aralığını [0, 1] aralığına genişletir. raw, Metrik model için metrik birimleri ölçeklemeden korur. | COMBO | Evet | `"v2_style"`<br>`"min_max"`<br>`"raw"` |
-| `apply_sky_clip` | Normalizasyon öncesinde gökyüzü bölgesi derinliğini ön plan derinliğinin 99. yüzdelik dilimine kırpar. da3_geometry girişinde bir sky anahtarı gerektirir (yalnızca Mono/Metric modeller için). Varsayılan: False | BOOLEAN | Evet | True<br>False |
+| `normalization` | Derinlik normalizasyon yöntemi.<br>- v2_style: algısal olarak dengeli sonuçlar için ortalama/standart sapma normalizasyonu (varsayılan).<br>- min_max: maksimum kontrast için tüm derinlik aralığını [0, 1]'e uzatır.<br>- raw: ölçekleme yok, Metric modeli için metrik birimleri korur. | COMBO | Evet | "v2_style"<br>"min_max"<br>"raw" |
+| `apply_sky_clip` | Normalizasyon öncesinde gökyüzü bölgesi derinliğini ön plan derinliğinin 99. yüzdelik dilimine kırpar. da3_geometry girişinde bir sky anahtarı gerektirir (yalnızca Mono/Metric modelleri). Varsayılan: False | BOOLEAN | Evet | True<br>False |
 
 `output` değeri `"sky_mask"` olarak ayarlandığında:
 

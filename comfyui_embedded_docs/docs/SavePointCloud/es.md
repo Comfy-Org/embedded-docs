@@ -1,4 +1,4 @@
-# SavePointCloud
+# Guardar Nube de Puntos
 
 El nodo Guardar Nube de Puntos guarda un archivo de nube de puntos 3D en el directorio de salida y, opcionalmente, proporciona datos de vista previa para el visor 3D. Gestiona la asignación de nombres y el guardado de archivos, al mismo tiempo que transfiere información de cámara y modelo para fines de visualización.
 
@@ -13,6 +13,7 @@ El nodo Guardar Nube de Puntos guarda un archivo de nube de puntos 3D en el dire
 | `camera_info` | Información de la cámara para el visor 3D | LOAD3D_CAMERA | No | - |
 | `width` | Ancho de la visualización de vista previa en píxeles (predeterminado: 1024) | INT | Sí | 1 a 4096 |
 | `height` | Alto de la visualización de vista previa en píxeles (predeterminado: 1024) | INT | Sí | 1 a 4096 |
+El archivo guardado se escribe en el directorio de salida usando `filename_prefix` con un contador de 5 dígitos añadido (por ejemplo, `3d/ComfyUI_00001.ply`). Cuando la entrada opcional `camera_info` no está conectada, la información de cámara se toma de `viewport_state`; de manera similar, cuando `model_3d_info` no está conectada, la información del modelo se toma de `viewport_state` (o una lista vacía si no hay ninguna disponible).
 
 ## Salidas
 

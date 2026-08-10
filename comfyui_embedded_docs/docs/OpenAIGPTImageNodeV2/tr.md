@@ -22,7 +22,7 @@ Bu düğüm, OpenAI'nin GPT Image API'sini kullanarak görseller oluşturur. Bir
 
 **Parametre Kısıtlamaları ve Sınırlamaları:**
 
-- `gpt-image-2` kullanılırken `model.size` değeri "Custom" olduğunda, `custom_width` ve `custom_height` değerleri 16'nın katı olmalı, maksimum kenar <= 3840 olmalı, en-boy oranı 3:1'i geçmemeli ve toplam piksel sayısı 655.360 ile 8.294.400 arasında olmalıdır.
+- `gpt-image-2` kullanılırken `model.size` değeri "Custom" olduğunda, `custom_width` ve `custom_height` değerleri 16'nın katı olmalı, maksimum kenar \<= 3840 olmalı, en-boy oranı 3:1'i geçmemeli ve toplam piksel sayısı 655.360 ile 8.294.400 arasında olmalıdır.
 - Bir `mask` sağlanmışsa, bir giriş görseli (`model.images`) gereklidir. Giriş görseli olmadan maske kullanılamaz.
 - Birden fazla giriş görseli ile maske kullanılamaz.
 - Maske sağlandığında, maske boyutları giriş görseli boyutlarıyla eşleşmelidir.

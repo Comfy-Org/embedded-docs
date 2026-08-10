@@ -7,7 +7,7 @@ Ce nœud ancre une image de guidage à un moment spécifique de la vidéo de sor
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `image` | L'image de guidage à placer au moment choisi de la vidéo de sortie. | IMAGE | Oui | - |
-| `position` | Comment placer cette image sur la timeline de la vidéo de sortie. Choisissez entre un minutage absolu (secondes depuis le début) ou un minutage fractionnaire (pourcentage de la durée vidéo). | COMBO | Oui | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
+| `position` | Comment placer cette image sur la timeline de la vidéo de sortie. Choisissez entre un minutage absolu (secondes depuis le début) ou un minutage fractionnaire (fraction de la durée vidéo). La sélection d'une option révèle le sous-paramètre correspondant. | COMBO | Oui | `Absolute (seconds)`<br>`Fraction (0.0 to 1.0)` |
 | `images de prompt` | Images de guidage optionnelles antérieures à chaîner avec celle-ci. Connectez la sortie d'un autre nœud Runway Aleph2 Prompt Image ici pour construire une chaîne allant jusqu'à 5 images de guidage. | PROMPT_IMAGE_CHAIN | Non | - |
 
 **Détails du mode Position :**

@@ -1,4 +1,4 @@
-# SaveGaussianSplat
+# 保存 Splat
 
 此节点将高斯泼溅 3D 文件保存到输出目录。它处理文件保存过程，并为 3D 视口提供预览数据。
 
@@ -14,11 +14,13 @@
 | `width` | 预览的宽度（默认值：1024）。 | INT | 是 | 1 到 4096 |
 | `height` | 预览的高度（默认值：1024）。 | INT | 是 | 1 到 4096 |
 
+注意：如果未提供 `camera_info` 或 `model_3d_info`，节点会在可用时使用 `viewport_state` 中的对应值。
+
 ## ## 输出
 
 | 输出名 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
-| `model_3d` | 已保存的高斯泼溅 3D 文件。 | FILE3D |
+| `model_3d` | 保存到输出目录的高斯泼溅 3D 文件。 | FILE3D |
 | `model_3d_info` | 视口的模型 3D 信息。 | LOAD3DMODELINFO |
 | `camera_info` | 视口预览的相机信息。 | LOAD3DCAMERA |
 | `width` | 预览的宽度。 | INT |

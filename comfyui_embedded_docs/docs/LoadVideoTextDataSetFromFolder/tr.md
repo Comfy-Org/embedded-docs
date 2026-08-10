@@ -1,19 +1,20 @@
 # Video-Metin Yükle (Klasörden)
 
-Bu düğüm, ComfyUI girdi dizini içindeki belirtilen bir alt klasörden video dosyaları ve bunlara ait metin açıklamalarından oluşan bir veri kümesi yükler. İki liste döndürür: tembel video referansları (kareler yalnızca aşağı akışta ihtiyaç duyulduğunda çözülür) ve bunlarla ilişkili açıklamalar. Düğüm; MP4, AVI, MOV, WEBM, MKV ve FLV gibi yaygın video biçimlerini destekler ve kohya‑ss/sd‑scripts gibi araçlar tarafından kullanılan tekrarlı ön ek içeren iç içe klasör yapılarını da (ör. `5_classname/`) işleyebilir.
+Bu düğüm, ComfyUI girdi dizini içindeki seçili bir alt klasörden video dosyalarını ve ilişkili metin açıklamalarını yükler ve bunları iki liste olarak döndürür: videolar ve açıklamalar. Video girdileri tembel referanslardır, bu nedenle kareler yalnızca aşağı akış düğümü ihtiyaç duyduğunda çözülür. Desteklenen biçimler MP4, AVI, MOV, WEBM, MKV ve FLV'dir. Tekrar sayısı önekine sahip iç içe klasörler (örneğin kohya-ss/sd-scripts gibi araçların kullandığı `5_classname/`) de desteklenir.
 
 ## Girdiler
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `folder` | Video dosyalarını ve `.txt` açıklama dosyalarını içeren alt klasör. ComfyUI girdi dizinindeki mevcut alt klasörler arasından seçim yapın. | STRING | Evet | Combo: ComfyUI girdi klasörü içindeki tüm alt dizinlerin dinamik listesi |
+| `folder` | Video dosyalarını ve .txt açıklamalarını içeren klasör. | STRING | Evet | Combo: ComfyUI girdi dizini içindeki tüm alt klasörlerin dinamik listesi |
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
+Seçilen klasörde desteklenen bir video uzantısına sahip dosya yoksa düğüm bir hata oluşturur. Adı bir sayı ve ardından alt çizgi ile başlayan iç içe klasörlerde (örneğin `5_classname`), o klasördeki her video, bu önekin belirttiği sayı kadar veri kümesine dahil edilir.
 |-------------|-----------|-----------|
-| `videos` | Yüklenen video dosyalarına yönelik tembel referanslar. Kareler, yalnızca bunları işleyen bir aşağı akış düğümüne bağlandığında çözülür. Her öğe, girdi klasöründen bir videoya karşılık gelir. | VIDEO (liste) |
-| `texts` | Her video için bir tane olmak üzere metin açıklamalarının listesi. Bir videoyla eşleşen `.txt` dosyası yoksa, açıklaması boş bir dizedir. | STRING (liste) |
+| `videos` | Tembel video referansları; kareler yalnızca aşağı akışta ihtiyaç duyulduğunda çözülür. Klasörde bulunan her video dosyası için bir girdi. | VIDEO (list) |
+| `texts` | Metin açıklamaları listesi. Her video için bir açıklama; bir videoyla eşleşen `.txt` dosyası yoksa açıklaması boş bir dizedir. | STRING (list) |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LoadVideoTextDataSetFromFolder/tr.md)
 

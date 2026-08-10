@@ -8,10 +8,11 @@ Este nodo codifica un mensaje de texto e imágenes opcionales en datos de condic
 |-----------|-------------|--------------|-----------|-------|
 | `clip` | El modelo CLIP utilizado para codificar el mensaje de texto | CLIP | Sí | - |
 | `prompt` | El mensaje de texto a codificar, compatible con entrada multilínea y mensajes dinámicos | STRING | Sí | - |
-| `vae` | Un modelo VAE para codificar imágenes en el espacio latente (opcional) | VAE | No | - |
-| `imágenes` | Una o más imágenes para incluir en el condicionamiento, hasta un máximo de 6 imágenes | IMAGE | No | 0 a 6 imágenes |
+| `vae` | Un modelo VAE para codificar imágenes en el espacio latente | VAE | No | - |
+| `imágenes` | Imágenes opcionales para incluir en el condicionamiento, hasta un máximo de 6 imágenes. Cada imagen se conecta como una entrada separada (image_0 a image_5) | IMAGE | No | 0 a 6 imágenes |
 
 ## Salidas
+La entrada `images` es un grupo de autoexpansión que acepta entre 0 y 6 imágenes. Cuando no se conecta ninguna imagen, el condicionamiento se basa únicamente en el mensaje de texto.
 
 | Nombre de Salida | Descripción | Tipo de Dato |
 |------------------|-------------|--------------|

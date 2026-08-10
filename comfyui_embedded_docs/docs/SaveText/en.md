@@ -1,4 +1,4 @@
-# SaveText
+# Save Text
 
 The Save Text node writes text content to a file in the output directory. It supports saving in .txt, .md, or .json format, and automatically handles JSON pretty-printing when valid JSON is provided.
 
@@ -6,9 +6,9 @@ The Save Text node writes text content to a file in the output directory. It sup
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `text` | The text content to save to a file | STRING | Yes | - |
-| `filename_prefix` | Prefix for the output filename (default: "ComfyUI") | STRING | No | - |
-| `format` | The file format to save the text as (default: "txt") | STRING | No | `"txt"`<br>`"md"`<br>`"json"` |
+| `text` | The text content to save to a file. This input must be connected from another node. | STRING | Yes | - |
+| `filename_prefix` | Prefix for the output filename. A 5-digit counter is appended to prevent overwriting existing files (default: "ComfyUI"). | STRING | No | - |
+| `format` | The file format to save the text as (default: "txt"). When "json" is selected, valid JSON text is pretty-printed with 2-space indentation; otherwise, the text is saved as-is. | COMBO | No | `"txt"`<br>`"md"`<br>`"json"` |
 
 ## Outputs
 

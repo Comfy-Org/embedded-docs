@@ -7,7 +7,7 @@ Ce nœud charge un modèle Depth Anything 3 à partir d'un fichier, en le prépa
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `model_name` | Le nom du fichier du modèle Depth Anything 3 à charger. | STRING | Oui | Liste des fichiers de modèle disponibles dans le dossier `geometry_estimation` |
-| `weight_dtype` | La précision numérique (type de données) pour les poids du modèle. L'option "default" utilise la précision d'origine du modèle. (par défaut : "default") | STRING | Non | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
+| `weight_dtype` | La précision numérique (type de données) pour les poids du modèle. "default" utilise la précision d'origine du modèle, "fp16" utilise une virgule flottante 16 bits, "bf16" utilise bfloat16 et "fp32" utilise une virgule flottante 32 bits. (par défaut : "default") | STRING | Non | `"default"`<br>`"fp16"`<br>`"bf16"`<br>`"fp32"` |
 
 ## Sorties
 

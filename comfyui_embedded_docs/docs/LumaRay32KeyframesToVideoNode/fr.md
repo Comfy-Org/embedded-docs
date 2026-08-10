@@ -6,7 +6,7 @@ Ce nœud génère une vidéo interpolant une séquence d'images guides, chacune 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `prompt` | Texte d'invite pour la génération vidéo. | STRING | Oui | 1 à 6000 caractères |
+| `prompt` | Texte d'invite pour la génération vidéo (par défaut : chaîne vide). | STRING | Oui | 1 à 6000 caractères |
 | `résolution` | La résolution de sortie de la vidéo générée (par défaut : "720p"). | COMBO | Oui | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 | `durée` | La durée de la vidéo générée (par défaut : "5s"). | COMBO | Oui | `"5s"`<br>`"10s"` |
 | `seed` | Graine pour la génération de nombres aléatoires afin de contrôler la reproductibilité. | INT | Oui | 0 à 4294967295 |

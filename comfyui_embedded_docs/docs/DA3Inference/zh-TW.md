@@ -15,10 +15,10 @@
 | `pose_method` | 如何估算相機視野（僅適用於 Small 和 Base 模型）。cam_dec：從影像特徵學習。ray_pose：從模型的 3D 射線輸出以幾何方式推導。影響 3D 輸出的透視正確性 | COMBO | 否（條件式） | `"cam_dec"`<br>`"ray_pose"` |
 
 **關於參數限制的說明：**
-- `ref_view_strategy` 和 `pose_method` 參數僅在 `mode` 設定為 `"multiview"` 時可用
-- 多視圖模式需要 Small 或 Base 模型變體。具有其他頭部類型（如 Metric 或 Mono）的模型不支援跨視圖注意力或相機姿態估算
-- 當 `pose_method` 設定為 `"cam_dec"` 時，模型必須具有相機解碼器。若設定為 `"ray_pose"`，模型必須具有 DualDPT 頭部
-- 如果選取的 `pose_method` 與載入的模型不相容，將會引發錯誤
+- `ref_view_strategy` 和 `pose_method` 參數僅在 `mode` 設定為 `"multiview"` 時可用。
+- 多視圖模式需要 Small 或 Base 模型變體。具有其他頭部類型（如 Metric 或 Mono）的模型不支援跨視圖注意力或相機姿態估算。
+- 當 `pose_method` 設定為 `"cam_dec"` 時，模型必須具有相機解碼器。若設定為 `"ray_pose"`，模型必須具有 DualDPT 頭部。
+- 如果選取的 `pose_method` 與載入的模型不相容，將會引發錯誤。
 
 ## ## 輸出
 

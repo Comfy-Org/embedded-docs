@@ -9,6 +9,7 @@ Ce nœud mélange aléatoirement l'ordre des paires vidéo-texte, en conservant 
 | `vidéos` | Liste des vidéos à mélanger. | VIDEO | Oui | Liste d'éléments vidéo |
 | `textes` | Liste des textes à mélanger. | STRING | Oui | Liste de chaînes de texte |
 | `graine` | Graine aléatoire pour contrôler l'ordre de mélange (par défaut : 0). | INT | Oui | 0 à 18446744073709551615 |
+Remarque : `videos` et `texts` doivent avoir la même longueur, car le nœud associe chaque vidéo au texte à la même position et conserve ces associations lors du mélange.
 
 ## Sorties
 

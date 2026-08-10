@@ -1,4 +1,4 @@
-# SeedVR2TemporalChunk
+# Découper le latent SeedVR2
 
 Ce nœud divise un latent vidéo SeedVR2 en segments temporels plus petits pouvant être traités un par un dans la mémoire VRAM disponible. Il calcule automatiquement la taille optimale des segments en fonction de votre mémoire GPU ou vous permet de spécifier manuellement la taille des segments, et produit les segments dans l'ordre séquentiel pour le traitement.
 
@@ -6,17 +6,17 @@ Ce nœud divise un latent vidéo SeedVR2 en segments temporels plus petits pouva
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `latent` | Le latent SeedVR2 encodé par VAE à diviser. | LATENT | Oui | - |
-| `temporal_overlap` | Images latentes partagées entre segments adjacents et fondues enchaînées lors de la fusion ; 0 signifie aucun chevauchement (par défaut : 0). | INT | Non | 0 à 16384 |
+| `latent` | Le latent SeedVR2 encodé par VAE à diviser. Doit être un tenseur 5-D (B, C, T, H, W) avec le nombre de canaux latents attendu pour SeedVR2. | LATENT | Oui | - |
+| `temporal_overlap` | Images latentes partagées entre segments adjacents et fondues enchaînées lors de la fusion ; 0 signifie aucun chevauchement (par défaut : 0). Le chevauchement effectif est plafonné à un de moins que le nombre d'images latentes du segment. | INT | Non | 0 à 16384 |
 | `chunking_mode` | Manuel utilise exactement `frames_per_chunk` ; automatique prédit le plus grand segment pouvant tenir dans la VRAM libre. | COMBO | Oui | "auto"<br>"manual" |
 
 Lorsque `chunking_mode` est défini sur "manuel", un paramètre supplémentaire devient disponible :
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `frames_per_chunk` | Images pixels par segment temporel. Doit être une valeur 4n+1 (1, 5, 9, 13, 17, 21, ...) (par défaut : 21). | INT | Oui | 1 à 16384 |
+| `frames_per_chunk` | Images pixels par segment temporel (4n+1 : 1, 5, 9, 13, 17, 21, ...) ; l'interface avance par pas de 4 (par défaut : 21). | INT | Oui | 1 à 16384 |
 
-Remarque : Le paramètre `frames_per_chunk` n'apparaît que lorsque `chunking_mode` est défini sur "manuel". La valeur doit satisfaire la formule `(frames_per_chunk - 1) % 4 == 0`, ce qui signifie qu'elle doit être l'une des suivantes : 1, 5, 9, 13, 17, 21, etc.
+Remarque : Le paramètre `frames_per_chunk` n'apparaît que lorsque `chunking_mode` est défini sur "manual". La valeur doit satisfaire la formule `(frames_per_chunk - 1) % 4 == 0`, c'est-à-dire être l'une des valeurs : 1, 5, 9, 13, 17, 21, etc. Le latent d'entrée doit être 5-dimensionnel et contenir le nombre de canaux latents attendu pour SeedVR2 ; sinon, le nœud génère une erreur. Si le nombre total d'images pixels dans le latent est égal ou inférieur à la taille de segment choisie (ou à la taille calculée automatiquement), le nœud renvoie le latent d'origine comme un seul segment sans chevauchement.
 
 ## Sorties
 

@@ -1,4 +1,4 @@
-# HeyGenVideoTranslateNode
+# ترجمه ویدیو HeyGen
 
 ### مرور کلی
 

@@ -1,4 +1,4 @@
-# Save3DAdvanced
+# Guardar 3D (Avanzado)
 
 Este nodo guarda un modelo 3D en un archivo dentro del directorio de salida de ComfyUI, con control avanzado sobre las dimensiones de salida y la configuración de cámara/visor. También transmite el modelo 3D, la información del modelo, la información de la cámara y las dimensiones para nodos posteriores.
 
@@ -6,13 +6,14 @@ Este nodo guarda un modelo 3D en un archivo dentro del directorio de salida de C
 
 | Parámetro | Descripción | Tipo de Dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `model_3d` | Archivo de modelo 3D proveniente de un nodo 3D anterior. | FILE3D | Sí | GLB, GLTF, FBX, OBJ, STL, USDZ, Cualquiera |
+| `model_3d` | Archivo de modelo 3D proveniente de un nodo 3D anterior. | FILE3D | Sí | GLB<br>GLTF<br>FBX<br>OBJ<br>STL<br>USDZ<br>Cualquiera |
 | `filename_prefix` | Prefijo para el nombre del archivo guardado (predeterminado: "3d/ComfyUI"). | STRING | Sí | Texto libre |
 | `viewport_state` | Estado del visor proveniente de un nodo Cargar 3D, que contiene información de la cámara y del modelo. | LOAD3D | Sí | - |
 | `model_3d_info` | Información opcional del modelo 3D para sobrescribir el estado del visor. | LOAD3DMODELINFO | No | - |
 | `camera_info` | Información opcional de la cámara para sobrescribir el estado del visor. | LOAD3DCAMERA | No | - |
 | `width` | Ancho de la vista previa de salida en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
 | `height` | Alto de la vista previa de salida en píxeles (predeterminado: 1024). | INT | Sí | 1 a 4096 |
+Nota: cuando `model_3d_info` o `camera_info` no están conectados, el nodo recurre a los valores almacenados en `viewport_state`.
 
 ## Salidas
 

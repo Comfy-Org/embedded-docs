@@ -7,12 +7,13 @@ Este nodo dibuja texto sobre una imagen o un lote de imágenes. Crea una superpo
 | Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
 | `imágenes` | La imagen o lote de imágenes de entrada sobre las que dibujar el texto | IMAGE | Sí | |
-| `texto` | El texto a superponer en la imagen (predeterminado: "") | STRING | Sí | |
-| `tamaño de fuente` | Tamaño de fuente como porcentaje de la altura de la imagen (predeterminado: 5.0) | FLOAT | Sí | 0.5 a 50.0 |
+| `texto` | El texto a superponer en la imagen (predeterminado: ""). Admite varias líneas; las secuencias de escape `\n` y `\t` se convierten en saltos de línea y tabulaciones, y el texto se ajusta automáticamente para caber dentro del ancho de la imagen. | STRING | Sí | |
+| `tamaño de fuente` | Tamaño de fuente como porcentaje de la altura de la imagen (predeterminado: 5.0) | FLOAT | Sí | 0.5 a 50.0 (paso 0.5) |
 | `color` | Color del texto (predeterminado: "#ffffff") | STRING | Sí | |
 | `posición` | Posición vertical del texto en la imagen (predeterminado: "top") | COMBO | Sí | `"top"`<br>`"bottom"` |
 | `alineación` | Alineación horizontal del texto (predeterminado: "left") | COMBO | Sí | `"left"`<br>`"center"`<br>`"right"` |
 | `contorno` | Dibujar un contorno negro alrededor del texto (predeterminado: True) | BOOLEAN | Sí | |
+Nota: si `text` está vacío o contiene solo espacios en blanco, el nodo devuelve las imágenes de entrada sin cambios. La misma superposición de texto se aplica a todas las imágenes del lote.
 
 ## Salidas
 

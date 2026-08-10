@@ -1,6 +1,6 @@
-# SeedVR2TemporalMerge
+# Unir latentes SeedVR2
 
-Este nó recombina partes latentes temporais amostradas do SeedVR2 em um único latente de comprimento total. Ele usa uma sobreposição com janela Hann (Hann window crossfade) sobre a região de sobreposição entre as partes para criar transições suaves, ou realiza concatenação simples quando nenhuma sobreposição é especificada.
+Este nó recombina partes latentes temporais amostradas do SeedVR2 em um único latente de comprimento total. Quando uma sobreposição temporal é especificada, ele aplica crossfade com janela de Hann em cada região sobreposta para criar transições suaves entre as partes; quando a sobreposição é 0, realiza concatenação simples.
 
 ## Entradas
 
@@ -9,7 +9,7 @@ Este nó recombina partes latentes temporais amostradas do SeedVR2 em um único 
 | `latents` | As partes temporais amostradas em ordem sequencial. | LATENT | Sim | Lista de latentes |
 | `temporal_overlap` | A saída temporal_overlap do nó Dividir Latente SeedVR2. 0 = concatenação simples. (padrão: 0) | INT | Sim | 0 a 16384 |
 
-**Nota:** O valor de `temporal_overlap` deve ser maior ou igual a 0. A parte final da sequência pode ter menos quadros temporais do que as outras partes. Todas as partes devem ter dimensões correspondentes, exceto pelo eixo temporal (T), e a primeira parte deve ser pentadimensional (B, C, T, H, W).
+**Observação:** O valor de `temporal_overlap` deve ser maior ou igual a 0. Todas as partes devem ser latentes de vídeo 5-dimensionais (B, C, T, H, W) e devem corresponder em todas as dimensões, exceto o eixo temporal (T); apenas a parte final pode ser mais curta que as outras. Se apenas uma parte for fornecida, ela é retornada inalterada.
 
 ## Saídas
 

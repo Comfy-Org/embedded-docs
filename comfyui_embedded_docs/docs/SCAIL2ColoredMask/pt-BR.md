@@ -11,6 +11,7 @@ Este nó renderiza dados de rastreamento do SAM3 em máscaras coloridas que são
 | `índices_de_objetos` | Lista separada por vírgulas de índices de pessoas a incluir (ex.: '0,2,3'). Aplicado tanto às máscaras de referência quanto às do vídeo de pose. Vazio = todas. | STRING | Sim | - |
 | `ordenar_por` | Ordem na qual as cores da paleta são atribuídas aos objetos rastreados (aplicado tanto à referência quanto ao vídeo de pose para que cada identidade mantenha a mesma cor). left_to_right = objeto mais à esquerda (pelo centróide do primeiro quadro) recebe a primeira cor; area = objeto maior (pela área da máscara do primeiro quadro) recebe a primeira cor; none = manter a ordem do SAM3. (padrão: "left_to_right") | COMBO | Sim | `"none"`<br>`"left_to_right"`<br>`"area"` |
 | `modo_de_substituição` | Falso = Modo Animação (pose_video_mask tem fundo preto, reference_image_mask tem fundo branco). Verdadeiro = Modo Substituição (pose_video_mask tem fundo branco, reference_image_mask tem fundo preto). (padrão: Falso) | BOOLEAN | Sim | Falso<br>Verdadeiro |
+Observação: `object_indices` aceita apenas dígitos separados por vírgula; entradas não numéricas e índices fora do intervalo são ignorados. Quando `ref_track_data` não é fornecido, a saída `reference_image_mask` é um preenchimento sólido usando a cor de fundo de referência (branco no Modo Animação, preto no Modo Substituição).
 
 ## Saídas
 

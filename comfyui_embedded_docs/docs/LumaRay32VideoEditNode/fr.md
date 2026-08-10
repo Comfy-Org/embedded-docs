@@ -12,7 +12,7 @@ Ce nœud re-rend une vidéo existante sous une nouvelle instruction en utilisant
 | `intensité` | Dans quelle mesure préserver ou réimaginer la source. "auto" laisse Ray 3.2 choisir ; adhere_* préserve le plus, flex_* est équilibré, reimagine_* change le plus. (par défaut : "auto") | COMBO | Oui | `"auto"`<br>`"adhere_1"`<br>`"adhere_2"`<br>`"adhere_3"`<br>`"flex_1"`<br>`"flex_2"`<br>`"flex_3"`<br>`"reimagine_1"`<br>`"reimagine_2"`<br>`"reimagine_3"` |
 | `seed` | Graine pour la reproductibilité. | INT | Oui | - |
 
-**Remarque :** Le `prompt` doit contenir entre 1 et 6000 caractères. La vidéo source ne doit pas dépasser 18 secondes de durée.
+| `résolution` | La résolution de sortie pour la vidéo éditée. (par défaut : "720p") | COMBO | Oui | `"360p"`<br>`"540p"`<br>`"720p"`<br>`"1080p"` |
 
 ## Sorties
 

@@ -1,4 +1,4 @@
-# SavePointCloud
+# Salvar Nuvem de Pontos
 
 O nó Save Point Cloud salva um arquivo de nuvem de pontos 3D no diretório de saída e, opcionalmente, fornece dados de pré-visualização para o visualizador 3D. Ele gerencia a nomeação e o salvamento do arquivo, além de transmitir informações de câmera e modelo para fins de exibição.
 
@@ -13,6 +13,7 @@ O nó Save Point Cloud salva um arquivo de nuvem de pontos 3D no diretório de s
 | `camera_info` | Informações da câmera para o visualizador 3D | LOAD3D_CAMERA | Não | - |
 | `width` | Largura da exibição de pré-visualização em pixels (padrão: 1024) | INT | Sim | 1 a 4096 |
 | `height` | Altura da exibição de pré-visualização em pixels (padrão: 1024) | INT | Sim | 1 a 4096 |
+O arquivo salvo é gravado no diretório de saída usando `filename_prefix` com um contador de 5 dígitos acrescentado (por exemplo, `3d/ComfyUI_00001.ply`). Quando a entrada opcional `camera_info` não está conectada, as informações da câmera são obtidas de `viewport_state`; da mesma forma, quando `model_3d_info` não está conectada, as informações do modelo são obtidas de `viewport_state` (ou uma lista vazia se nenhuma estiver disponível).
 
 ## Saídas
 
