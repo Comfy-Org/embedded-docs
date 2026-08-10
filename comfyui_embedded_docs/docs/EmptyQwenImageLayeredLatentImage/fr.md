@@ -25,7 +25,7 @@ Qwen-Image-Layered ne se contente pas de décomposer une image. Il repeint égal
 
 - **La première image est l'image complète, pas une couche.** C'est la même image que vous avez déjà, jetez-la donc lorsque vous ne voulez que les couches.
 - **Si vous superposez toutes les couches, vous obtenez à nouveau l'image complète.** Si elles ne correspondent pas à cette première image, la séparation n'a pas fonctionné comme vous le vouliez, c'est donc un moyen rapide de vérifier le résultat.
-- **Gardez les feuilles dans l'ordre.** La pile est le seul enregistrement de la couche qui se trouve au-dessus de laquelle. Rien n'est écrit sur les feuilles pour indiquer où elles vont, donc réorganiser ou supprimer des images signifie réorganiser ou perdre des couches.
+- **Gardez les feuilles dans l'ordre.** La pile est le seul moyen de savoir quelle couche se trouve au-dessus de laquelle. Rien n'est écrit sur les feuilles pour indiquer où elles vont, donc réorganiser ou supprimer des images signifie réorganiser ou perdre des couches.
 - **Les couches sortent avec de la transparence**, elles peuvent donc être empilées sans que les couches inférieures soient masquées par un fond opaque.
 
 ## Suggestions d'utilisation
