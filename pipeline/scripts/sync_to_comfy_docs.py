@@ -18,9 +18,14 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-# ALL_NODES_INFO_PATH: optional scanner output (node_name -> { category, ... }).
-# When absent, category lookup falls back to ComfyUI source extraction.
-ALL_NODES_INFO_PATH = Path(os.getenv("ALL_NODES_INFO", "")) if os.getenv("ALL_NODES_INFO") else Path("")
+import runtime  # noqa: F401
+from lib.paths import ALL_NODES_INFO, default_embedded_docs_path, load_dotenv
+
+load_dotenv()
+
+ALL_NODES_INFO_PATH = ALL_NODES_INFO
+
+# Cache: node_name -> category (first segment). Loaded from scanner output if available.
 _nodes_info_cache: Optional[Dict[str, Dict[str, Any]]] = None
 
 
@@ -41,13 +46,9 @@ def _load_all_nodes_info() -> Dict[str, Dict[str, Any]]:
         _nodes_info_cache = {}
         return _nodes_info_cache
 
-# --- Self-contained path resolution -------------------------------------
-# This script is maintained inside the embedded-docs repo (scripts/sync_to_docs.py),
-# so the source docs live next to it. Target (Comfy-Org/docs checkout) and
-# ComfyUI source are provided via env vars, mirroring the local pipeline setup.
-_SCRIPT_DIR = Path(__file__).resolve().parent.parent
-EMBEDDED_DOCS_PATH = _SCRIPT_DIR
+EMBEDDED_DOCS_PATH = default_embedded_docs_path()
 COMFYUI_PATH = Path(os.getenv("COMFYUI_PATH", ""))
+_SCRIPT_DIR = Path(__file__).resolve().parent.parent
 TARGET_DOCS = Path(os.getenv("TARGET_DOCS", _SCRIPT_DIR / ".." / "docs"))
 
 DOCS_SOURCE = EMBEDDED_DOCS_PATH / "comfyui_embedded_docs" / "docs"
