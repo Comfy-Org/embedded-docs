@@ -15,8 +15,9 @@ import os
 import re
 import shutil
 import sys
+from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Optional
 
 import runtime  # noqa: F401
 from lib.paths import ALL_NODES_INFO, default_embedded_docs_path, load_dotenv
@@ -26,10 +27,10 @@ load_dotenv()
 ALL_NODES_INFO_PATH = ALL_NODES_INFO
 
 # Cache: node_name -> category (first segment). Loaded from scanner output if available.
-_nodes_info_cache: Optional[Dict[str, Dict[str, Any]]] = None
+_nodes_info_cache: Optional[dict[str, dict[str, Any]]] = None
 
 
-def _load_all_nodes_info() -> Dict[str, Dict[str, Any]]:
+def _load_all_nodes_info() -> dict[str, dict[str, Any]]:
     """Load all_nodes_info.json from scanner (node_name -> { file, category?, ... })."""
     global _nodes_info_cache
     if _nodes_info_cache is not None:
@@ -60,7 +61,7 @@ IMAGES_TARGET = TARGET_DOCS / "images" / "built-in-nodes"
 DOCS_JSON = TARGET_DOCS / "docs.json"
 
 # Locale sync + docs.json navigation (language code -> config)
-LOCALE_CONFIGS: List[Dict[str, Any]] = [
+LOCALE_CONFIGS: list[dict[str, Any]] = [
     {
         "code": "en",
         "md_file": "en.md",
@@ -150,7 +151,7 @@ DEFAULT_GROUP_KO = "고급"
 # - replacement nodes in nodes_replacements.py (no category field)
 # - deprecated / aliased nodes not found in current source
 # - partner API nodes with flat MDX files but no scanner entry
-_FALLBACK_CATEGORY: Dict[str, str] = {
+_FALLBACK_CATEGORY: dict[str, str] = {
     # Replacement nodes (nodes_replacements.py) — inherit from their original
     "BatchImagesNode": "image",
     "ConditioningAverage": "conditioning",
@@ -223,19 +224,6 @@ _FALLBACK_CATEGORY: Dict[str, str] = {
     "VAEEncodeTiled": "latent",
 }
 
-# Reverse map: group label (EN or ZH) -> ComfyUI category root string
-# Used by _restructure_group_by_category to look up which category root each group corresponds to.
-_GROUP_LABEL_TO_CATEGORY_ROOT: Dict[str, str] = {}
-def _build_reverse_map() -> None:
-    seen: Dict[str, str] = {}
-    for cat_key, labels in CATEGORY_TO_GROUP.items():
-        for label in labels:
-            if label not in seen:
-                seen[label] = cat_key
-    _GROUP_LABEL_TO_CATEGORY_ROOT.update(seen)
-_build_reverse_map()
-
-
 def _default_group_for_lang(lang_idx: int) -> str:
     return (DEFAULT_GROUP_EN, DEFAULT_GROUP_ZH, DEFAULT_GROUP_JA, DEFAULT_GROUP_KO)[lang_idx]
 
@@ -247,14 +235,14 @@ def _group_label_for_category(first_segment: str, lang_idx: int) -> str:
     return _seg_to_label(first_segment)
 
 
-def _find_lang_entry(nav: Dict[str, Any], lang_code: str) -> Optional[Dict[str, Any]]:
+def _find_lang_entry(nav: dict[str, Any], lang_code: str) -> Optional[dict[str, Any]]:
     for entry in nav.get("navigation", {}).get("languages", []):
         if entry.get("language") == lang_code:
             return entry
     return None
 
 
-def _find_tab_pages(lang_entry: Dict[str, Any], tab_name: str) -> Optional[List[Any]]:
+def _find_tab_pages(lang_entry: dict[str, Any], tab_name: str) -> Optional[list[Any]]:
     for tab in lang_entry.get("tabs", []):
         if tab.get("tab") == tab_name and "pages" in tab:
             return tab["pages"]
@@ -262,11 +250,18 @@ def _find_tab_pages(lang_entry: Dict[str, Any], tab_name: str) -> Optional[List[
 
 
 def _seg_to_label(seg: str) -> str:
-    """Convert a path segment like 'custom_sampling' to a display label 'Custom Sampling'."""
-    return seg.replace("_", " ").replace("-", " ").title()
+    """Convert a path segment like 'custom_sampling' to a display label 'Custom Sampling'.
+
+    Preserves already-uppercase tokens (acronyms such as BFL, SDXL, API) unchanged
+    instead of title-casing them into 'Sdxl' / 'Api'.
+    """
+    return " ".join(
+        token if token.isupper() and len(token) > 1 else token.capitalize()
+        for token in seg.replace("_", " ").replace("-", " ").split()
+    )
 
 
-def _category_to_group_and_sub(full_category_path: str, lang_idx: int = 0) -> Tuple[str, Optional[str]]:
+def _category_to_group_and_sub(full_category_path: str, lang_idx: int = 0) -> tuple[str, Optional[str]]:
     """Return (group label, sub-group label or None) for the given locale index.
 
     Always uses the FIRST segment to determine the top-level group so that the
@@ -295,7 +290,7 @@ def is_local_link(href: str) -> bool:
     )
 
 
-def _class_name_variants(node_name: str) -> List[str]:
+def _class_name_variants(node_name: str) -> list[str]:
     """Return possible class names in source (e.g. ClipTextEncode <-> CLIPTextEncode)."""
     variants = [node_name]
     if node_name.startswith("Clip") and len(node_name) > 4:
@@ -340,31 +335,38 @@ def _category_from_schema_node_id(text: str, node_name: str, first_segment_only:
     return None
 
 
-def extract_category_full_from_comfyui(node_name: str) -> Optional[str]:
-    """Extract full category string from ComfyUI source (e.g. 'api node/image/ByteDance')."""
+@lru_cache(maxsize=None)
+def _comfyui_source_files() -> tuple[Path, ...]:
+    """Cached list of ComfyUI Python source files under SCAN_PATHS (read once)."""
+    files: list[Path] = []
     for base in SCAN_PATHS:
         if not base.exists():
             continue
-        files = [base] if base.is_file() else list(base.rglob("*.py"))
-        for path in files:
-            if path.suffix != ".py":
-                continue
-            try:
-                text = path.read_text(encoding="utf-8", errors="ignore")
-            except Exception:
-                continue
-            if node_name not in text and not any(v in text for v in _class_name_variants(node_name)):
-                continue
-            cat = _category_from_class_block(text, node_name, first_segment_only=False)
-            if cat:
-                return cat
-            cat = _category_from_schema_node_id(text, node_name, first_segment_only=False)
-            if cat:
-                return cat
+        files.extend([base] if base.is_file() else list(base.rglob("*.py")))
+    return tuple(files)
+
+
+def _read_comfyui_source(path: Path) -> str:
+    """Read a ComfyUI source file, tolerating decode errors (cached per file)."""
+    return path.read_text(encoding="utf-8", errors="ignore")
+
+
+def extract_category_full_from_comfyui(node_name: str) -> Optional[str]:
+    """Extract full category string from ComfyUI source (e.g. 'api node/image/ByteDance')."""
+    for path in _comfyui_source_files():
+        text = _read_comfyui_source(path)
+        if node_name not in text and not any(v in text for v in _class_name_variants(node_name)):
+            continue
+        cat = _category_from_class_block(text, node_name, first_segment_only=False)
+        if cat:
+            return cat
+        cat = _category_from_schema_node_id(text, node_name, first_segment_only=False)
+        if cat:
+            return cat
     return None
 
 
-def _resolve_node_info_key(nodes: Dict[str, Dict], node_name: str) -> Optional[Dict[str, Any]]:
+def _resolve_node_info_key(nodes: dict[str, dict], node_name: str) -> Optional[dict[str, Any]]:
     """Get node info from all_nodes_info by node_name, or by class variant, or by node_id."""
     if node_name in nodes:
         return nodes[node_name]
@@ -377,6 +379,7 @@ def _resolve_node_info_key(nodes: Dict[str, Dict], node_name: str) -> Optional[D
     return None
 
 
+@lru_cache(maxsize=None)
 def scanner_node_key(node_name: str) -> Optional[str]:
     """Return the all_nodes_info.json dict key for this node, if known to the scanner."""
     nodes = _load_all_nodes_info()
@@ -404,10 +407,10 @@ def canonical_node_name(node_name: str) -> str:
     return scanner_node_key(node_name) or node_name
 
 
-def node_name_nav_aliases(node_name: str) -> Set[str]:
+def node_name_nav_aliases(node_name: str) -> set[str]:
     """All page-key basename variants that should collapse to the same scanner node."""
     canonical = canonical_node_name(node_name)
-    aliases: Set[str] = {node_name, canonical}
+    aliases: set[str] = {node_name, canonical}
     for variant in _class_name_variants(node_name):
         aliases.add(variant)
     for variant in _class_name_variants(canonical):
@@ -425,6 +428,16 @@ def _locale_code_for_page_key(page_key: str) -> str:
         if page_key.startswith(cfg["page_prefix"] + "/"):
             return cfg["code"]
     return "en"
+
+
+@lru_cache(maxsize=None)
+def _locale_mdx_names(builtin_dir: str) -> frozenset:
+    """Cached set of published .mdx basenames (without extension) for a locale directory."""
+    d = Path(builtin_dir)
+    try:
+        return frozenset(e[:-4] for e in os.listdir(d) if e.endswith(".mdx"))
+    except OSError:
+        return frozenset()
 
 
 def published_node_name(node_name: str, locale_code: Optional[str] = None) -> str:
@@ -446,11 +459,9 @@ def published_node_name(node_name: str, locale_code: Optional[str] = None) -> st
         d = locale["builtin_dir"]
         if not d.is_dir():
             continue
-        try:
-            entries = os.listdir(d)
-        except OSError:
+        mdx_names = set(_locale_mdx_names(str(d)))
+        if not mdx_names:
             continue
-        mdx_names = {e[:-4] for e in entries if e.endswith(".mdx")}
         # 1) exact (case-sensitive) alias match against real on-disk names
         for alias in aliases:
             if alias in mdx_names:
@@ -474,25 +485,39 @@ def canonical_page_key(page_key: str) -> str:
     return "/".join([*parts[:-1], published])
 
 
-def resolve_source_node(node_name: str) -> Tuple[str, Path]:
-    """Return (scanner canonical name, embedded-docs dir) for reading en.md / zh.md / ja.md."""
+def resolve_source_node(node_name: str) -> tuple[str, Path]:
+    """Return (scanner canonical name, embedded-docs dir) for reading en.md / zh.md / ja.md.
+
+    Checks the canonical name first, then the remaining nav aliases in deterministic
+    sorted order (avoiding duplicate checks), then a case-insensitive fallback scan.
+    """
     canonical = canonical_node_name(node_name)
-    for candidate in node_name_nav_aliases(node_name):
+    seen: set[str] = set()
+    candidates: list[str] = []
+    for candidate in sorted(node_name_nav_aliases(node_name)):
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        if candidate == canonical:
+            candidates.insert(0, candidate)  # canonical first
+        else:
+            candidates.append(candidate)
+    for candidate in candidates:
         node_dir = DOCS_SOURCE / candidate
         if (node_dir / "en.md").exists():
             return canonical, node_dir
     if DOCS_SOURCE.exists():
         lower = canonical.lower()
-        for node_dir in DOCS_SOURCE.iterdir():
+        for node_dir in sorted(DOCS_SOURCE.iterdir()):
             if node_dir.is_dir() and node_dir.name.lower() == lower and (node_dir / "en.md").exists():
                 return canonical, node_dir
     return canonical, DOCS_SOURCE / canonical
 
 
-def list_nodes_with_en_md() -> List[str]:
-    """List embedded-docs nodes deduped by scanner canonical name."""
-    seen: Set[str] = set()
-    nodes: List[str] = []
+def list_nodes_with_en_md() -> list[str]:
+    """list embedded-docs nodes deduped by scanner canonical name."""
+    seen: set[str] = set()
+    nodes: list[str] = []
     for node_dir in sorted(DOCS_SOURCE.iterdir()):
         if not node_dir.is_dir() or not (node_dir / "en.md").exists():
             continue
@@ -524,57 +549,34 @@ def get_category_for_node(node_name: str) -> Optional[str]:
 
 def extract_category_from_comfyui(node_name: str) -> Optional[str]:
     """Find node in ComfyUI source and extract CATEGORY/category for this node only. Returns first segment (e.g. sampling from sampling/custom_sampling)."""
-    for base in SCAN_PATHS:
-        if not base.exists():
+    for path in _comfyui_source_files():
+        text = _read_comfyui_source(path)
+        if node_name not in text and not any(v in text for v in _class_name_variants(node_name)):
             continue
-        files = [base] if base.is_file() else list(base.rglob("*.py"))
-        for path in files:
-            if path.suffix != ".py":
-                continue
-            try:
-                text = path.read_text(encoding="utf-8", errors="ignore")
-            except Exception:
-                continue
-            if node_name not in text and not any(v in text for v in _class_name_variants(node_name)):
-                continue
-            # Prefer: category from the class block that defines this node
-            cat = _category_from_class_block(text, node_name)
-            if cat:
-                return cat
-            # Fallback: Schema with node_id (e.g. node_id="AddNoise" ... category="...")
-            cat = _category_from_schema_node_id(text, node_name)
-            if cat:
-                return cat
+        # Prefer: category from the class block that defines this node
+        cat = _category_from_class_block(text, node_name)
+        if cat:
+            return cat
+        # Fallback: Schema with node_id (e.g. node_id="AddNoise" ... category="...")
+        cat = _category_from_schema_node_id(text, node_name)
+        if cat:
+            return cat
     return None
 
 
-def collect_page_keys(pages: List[Any], prefix: str = "") -> Set[str]:
+def collect_page_keys(pages: list[Any]) -> set[str]:
     """Recursively collect all page string keys from a tab's pages."""
-    out: Set[str] = set()
+    out: set[str] = set()
     for item in pages:
         if isinstance(item, str):
             out.add(item)
         elif isinstance(item, dict):
             if "pages" in item:
-                out |= collect_page_keys(item["pages"], prefix)
+                out |= collect_page_keys(item["pages"])
     return out
 
 
-def flatten_builtin_pages(pages: List[Any], key_prefix: str) -> List[str]:
-    """
-    Recursively collect built-in-nodes page keys (e.g. built-in-nodes/NodeName or zh/built-in-nodes/NodeName)
-    and return a sorted flat list. Used for flat/collapsed sidebar (no groups).
-    """
-    keys: Set[str] = set()
-    for item in pages:
-        if isinstance(item, str) and (item == key_prefix or item.startswith(key_prefix + "/")):
-            keys.add(item)
-        elif isinstance(item, dict) and "pages" in item:
-            keys |= set(flatten_builtin_pages(item["pages"], key_prefix))
-    return sorted(keys)
-
-
-def find_group_in_pages(pages: List[Any], group_label: str) -> Optional[List[Any]]:
+def find_group_in_pages(pages: list[Any], group_label: str) -> Optional[list[Any]]:
     """Find the top-level group with 'group' == group_label and return its 'pages' list."""
     for item in pages:
         if isinstance(item, dict) and item.get("group") == group_label and "pages" in item:
@@ -582,17 +584,17 @@ def find_group_in_pages(pages: List[Any], group_label: str) -> Optional[List[Any
     return None
 
 
-def find_or_create_group_in_pages(pages: List[Any], group_label: str) -> List[Any]:
+def find_or_create_group_in_pages(pages: list[Any], group_label: str) -> list[Any]:
     """Find group with group_label in pages, or create it and append. Return that group's 'pages' list."""
     for item in pages:
         if isinstance(item, dict) and item.get("group") == group_label and "pages" in item:
             return item["pages"]
-    new_group: Dict[str, Any] = {"group": group_label, "pages": []}
+    new_group: dict[str, Any] = {"group": group_label, "pages": []}
     pages.append(new_group)
     return new_group["pages"]
 
 
-def remove_page_from_pages(pages: List[Any], page_key: str) -> None:
+def remove_page_from_pages(pages: list[Any], page_key: str) -> None:
     """Remove page_key from pages tree in place (recursive)."""
     i = 0
     while i < len(pages):
@@ -606,15 +608,7 @@ def remove_page_from_pages(pages: List[Any], page_key: str) -> None:
         i += 1
 
 
-def _remove_group_from_pages(pages: List[Any], group_label: str) -> None:
-    """Remove the first top-level group with given label from pages (in place)."""
-    for i, item in enumerate(pages):
-        if isinstance(item, dict) and item.get("group") == group_label:
-            pages.pop(i)
-            return
-
-
-def _sort_pages_alphabetically(pages: List[Any], groups_first: bool = True) -> None:
+def _sort_pages_alphabetically(pages: list[Any], groups_first: bool = True) -> None:
     """Sort pages array in place: recursively sort nested 'pages', then sort this level.
 
     groups_first=True  → sub-groups before flat page strings (used inside category groups
@@ -636,8 +630,8 @@ def _sort_pages_alphabetically(pages: List[Any], groups_first: bool = True) -> N
 
 
 def _rebuild_wrapper_groups(
-    wrapper_pages: List[Any],
-    node_cat_map: Dict[str, str],
+    wrapper_pages: list[Any],
+    node_cat_map: dict[str, str],
     lang_idx: int = 0,
 ) -> None:
     """Completely rebuild all non-API groups inside wrapper_pages from scratch.
@@ -649,29 +643,30 @@ def _rebuild_wrapper_groups(
     lang_idx: 0 = EN, 1 = zh, 2 = ja, 3 = ko labels from CATEGORY_TO_GROUP.
     """
     # Preserve the API Node group as-is
-    api_node_item: Optional[Dict[str, Any]] = None
+    api_node_item: Optional[dict[str, Any]] = None
     for item in wrapper_pages:
         if isinstance(item, dict) and item.get("group") == "API Node":
             api_node_item = item
             break
 
-    api_keys: Set[str] = set(collect_page_keys(api_node_item["pages"])) if api_node_item else set()
-    all_keys: Set[str] = set(collect_page_keys(wrapper_pages))
+    api_keys: set[str] = set(collect_page_keys(api_node_item["pages"])) if api_node_item else set()
+    all_keys: set[str] = set(collect_page_keys(wrapper_pages))
     non_api_keys = {canonical_page_key(k) for k in (all_keys - api_keys)}
 
     # Build case-insensitive lookup for node_cat_map (handles ClipLoader → CLIPLoader mismatches)
-    lower_cat_map: Dict[str, str] = {k.lower(): v for k, v in node_cat_map.items()}
+    lower_cat_map: dict[str, str] = {k.lower(): v for k, v in node_cat_map.items()}
     # Build case-insensitive lookup for fallback map
-    lower_fallback: Dict[str, str] = {k.lower(): v for k, v in _FALLBACK_CATEGORY.items()}
+    lower_fallback: dict[str, str] = {k.lower(): v for k, v in _FALLBACK_CATEGORY.items()}
 
     # Rebuild wrapper: clear everything, re-add API Node, then re-place all other keys
     wrapper_pages.clear()
     if api_node_item is not None:
         wrapper_pages.append(api_node_item)
 
+    locale_code = LOCALE_CONFIGS[lang_idx]["code"] if 0 <= lang_idx < len(LOCALE_CONFIGS) else "en"
     for key in sorted(non_api_keys):
         key_parts = Path(key).parts  # e.g. ('built-in-nodes', 'conditioning', 'video-models', 'wan-vace-to-video')
-        node_name = published_node_name(key_parts[-1])
+        node_name = published_node_name(key_parts[-1], locale_code)
         if key_parts[-1] != node_name:
             key = "/".join([*key_parts[:-1], node_name])
 
@@ -755,7 +750,7 @@ def _rebuild_wrapper_groups(
             target.append(key)
 
 
-def _remove_empty_groups(pages: List[Any]) -> None:
+def _remove_empty_groups(pages: list[Any]) -> None:
     """Remove groups with empty 'pages' in place (recursive, bottom-up)."""
     i = 0
     while i < len(pages):
@@ -768,13 +763,13 @@ def _remove_empty_groups(pages: List[Any]) -> None:
         i += 1
 
 
-def _migrate_toplevel_groups_to_wrapper(pages: List[Any], wrapper_label: str) -> None:
+def _migrate_toplevel_groups_to_wrapper(pages: list[Any], wrapper_label: str) -> None:
     """Move any top-level dict groups (other than wrapper_label) inside the wrapper group.
 
     This ensures previously added top-level groups (3D, API Node, etc.) become nested
     inside the wrapper so Mintlify renders them as collapsible entries.
     """
-    orphans: List[Dict[str, Any]] = []
+    orphans: list[dict[str, Any]] = []
     i = 0
     while i < len(pages):
         item = pages[i]
@@ -804,7 +799,7 @@ def get_description_from_content(content: str) -> str:
     Skips AI-generated disclaimer blockquote lines and headings.
     """
     lines = content.split("\n")
-    first_para: List[str] = []
+    first_para: list[str] = []
     for line in lines:
         line_stripped = line.strip()
         if not line_stripped:
@@ -817,6 +812,9 @@ def get_description_from_content(content: str) -> str:
             break
         if line_stripped.startswith("#"):
             continue
+        # Skip Markdown images and table rows — they are not prose
+        if line_stripped.startswith("![") or line_stripped.startswith("|"):
+            continue
         if line_stripped.startswith("> ") and (
             "AI-generated" in line_stripped
             or "AI 生成" in line_stripped
@@ -826,18 +824,23 @@ def get_description_from_content(content: str) -> str:
             continue
         first_para.append(line_stripped)
     paragraph = " ".join(first_para) if first_para else ""
-    # Return only the first sentence (up to first ". " or end of paragraph)
-    for sep in (". ", "。"):
-        idx = paragraph.find(sep)
-        if idx != -1:
-            return paragraph[: idx + 1]
-    return paragraph[:160] if paragraph else ""
+    # Return only the first sentence. For English, split on ". " only when the
+    # next char is uppercase (avoids cutting "e.g." / "i.e." abbreviations);
+    # CJK sentence ender "。" splits unconditionally.
+    m = re.search(r"\.\s+(?=[A-Z])", paragraph)
+    if m:
+        return paragraph[: m.end()]
+    idx = paragraph.find("。")
+    if idx != -1:
+        return paragraph[: idx + 1]
+    # Align fallback truncation with the 180-char frontmatter limit
+    return paragraph[:180] if paragraph else ""
 
 
-def find_local_asset_refs(content: str, doc_dir: Path) -> List[Tuple[str, Path]]:
+def find_local_asset_refs(content: str, doc_dir: Path) -> list[tuple[str, Path]]:
     """Return list of (original_ref, resolved_absolute_path) for local assets."""
-    refs: List[Tuple[str, Path]] = []
-    seen: Set[str] = set()
+    refs: list[tuple[str, Path]] = []
+    seen: set[str] = set()
     for m in MD_IMAGE_RE.finditer(content):
         href = m.group(1).strip()
         if not is_local_link(href):
@@ -862,11 +865,32 @@ def copy_assets_and_rewrite(
     images_out_dir: Path,
     dry_run: bool,
 ) -> str:
-    """Copy referenced assets to images_out_dir and rewrite refs to /images/built-in-nodes/NodeName/xxx."""
+    """Copy referenced assets to images_out_dir and rewrite refs to /images/built-in-nodes/NodeName/xxx.
+
+    - Resolves basename collisions by prefixing the relative subdirectory when two
+      distinct sources share a basename, so neither overwrites the other.
+    - Rewrites only prose references: fenced code blocks are stashed first so their
+      content stays byte-identical.
+    """
     refs = find_local_asset_refs(content, doc_dir)
-    out = content
+    # Stash fenced code blocks so refs inside them are never rewritten
+    _stashed: list[str] = []
+
+    def _stash_code_blocks(m: "re.Match[str]") -> str:
+        _stashed.append(m.group(0))
+        return f"\x00CODEBLOCK{len(_stashed) - 1}\x00"
+
+    out = re.sub(r"```.*?```", _stash_code_blocks, content, flags=re.DOTALL)
+
+    used_names: dict[str, Path] = {}
     for orig, abs_path in refs:
         filename = abs_path.name
+        rel = abs_path.relative_to(doc_dir)
+        # Deterministic destination name: include the source subdirectory on collision
+        if filename in used_names and used_names[filename] != abs_path:
+            stem, ext = filename.rsplit(".", 1) if "." in filename else (filename, "")
+            filename = f"{Path(rel).parent.name}_{stem}.{ext}" if ext else f"{Path(rel).parent.name}_{stem}"
+        used_names[filename] = abs_path
         new_ref = f"/images/built-in-nodes/{node_name}/{filename}"
         if not dry_run:
             images_out_dir.mkdir(parents=True, exist_ok=True)
@@ -875,6 +899,12 @@ def copy_assets_and_rewrite(
                 shutil.copy2(abs_path, dest)
         # Replace in content (use orig as-is to avoid re-escaping)
         out = out.replace(orig, new_ref)
+
+    # Restore stashed code blocks verbatim
+    def _restore(m: "re.Match[str]") -> str:
+        return _stashed[int(m.group(1))]
+
+    out = re.sub(r"\x00CODEBLOCK(\d+)\x00", _restore, out)
     return out
 
 
@@ -892,14 +922,15 @@ def _normalize_mdx_content(content: str) -> str:
     # Strip leading H1 (# Title) and any blank lines after it
     content = re.sub(r'^#\s+[^\n]*\n?\n*', '', content, count=1)
 
-    # Protect fenced code blocks from ALL escaping below: inside ``` blocks the
-    # content must stay byte-identical (CommonMark renders code blocks verbatim,
-    # so &lt;= would show literally instead of <=).
-    _code_blocks: List[str] = []
+    # Protect fenced code blocks AND inline backtick spans from ALL escaping below:
+    # inside ``` blocks (and `code`) the content must stay byte-identical
+    # (CommonMark renders code verbatim, so &lt;= would show literally instead of <=).
+    _code_blocks: list[str] = []
     def _stash_code(m: "re.Match[str]") -> str:
         _code_blocks.append(m.group(0))
         return f"\x00CODEBLOCK{len(_code_blocks) - 1}\x00"
     content = re.sub(r"```.*?```", _stash_code, content, flags=re.DOTALL)
+    content = re.sub(r"`[^`\n]+`", _stash_code, content)
 
     content = content.replace("<br>", "<br />")
     content = re.sub(r"(<source\s+[^>]+)>", r"\1 />", content)
@@ -908,8 +939,9 @@ def _normalize_mdx_content(content: str) -> str:
     # Must escape <= first, then <digit, then remaining bare <word (e.g. <br> already handled above).
     content = re.sub(r"<=", r"&lt;=", content)
     content = re.sub(r"<(\d)", r"&lt;\1", content)
-    # Escape any remaining bare < that is not an HTML/JSX tag (e.g. <x2 <= x1 handled above, "< 8,294,400")
-    content = re.sub(r"<\s", r"&lt; ", content)
+    # Escape any remaining bare < that is not an HTML/JSX tag (e.g. "< 8,294,400").
+    # Keep the original whitespace after the < (including newlines) intact.
+    content = re.sub(r"<(\s)", r"&lt;\1", content)
     # Tags that appear BOTH as <Tag> and </Tag> are intentional paired components
     # (e.g. Mintlify's <Note>...</Note>, <Tip>, <Warning>) — keep them raw.
     # Only orphaned tags (opening without closing, or closing without opening) get escaped.
@@ -938,6 +970,11 @@ def _normalize_mdx_content(content: str) -> str:
         content,
     )
     content = re.sub(r"<([a-zA-Z_][a-zA-Z0-9]*)", lambda m: m.group(0) if m.group(1) in _keep_raw else "&lt;" + m.group(1), content)
+
+    # Escape literal curly braces in prose (MDX treats { as a JSX expression
+    # boundary). Code blocks and inline code are already stashed, so they are
+    # unaffected.
+    content = content.replace("{", "&#123;").replace("}", "&#125;")
 
     # Restore code blocks verbatim
     def _restore_code(m: "re.Match[str]") -> str:
@@ -981,22 +1018,57 @@ def _normalize_category(raw: Optional[str]) -> str:
     return raw
 
 
-def _purge_noncanonical_nav_pages(tab_pages: List[Any]) -> None:
-    """Remove duplicate docs.json page keys (e.g. CLIPLoader when ClipLoader.mdx is already published)."""
+def _purge_noncanonical_nav_pages(tab_pages: list[Any]) -> None:
+    """Replace noncanonical docs.json page keys with the published on-disk spelling.
+
+    When a key's basename differs from the published name (e.g. ClipLoader vs
+    CLIPLoader.mdx on disk), replace it in place at the same position with the
+    canonical key rather than silently removing it. Keys whose locale has no
+    matching .mdx file are left unchanged so no navigation entry is lost.
+    """
     for key in sorted(collect_page_keys(tab_pages)):
         parts = key.split("/")
         if not parts:
             continue
         locale_code = _locale_code_for_page_key(key)
-        if parts[-1] != published_node_name(parts[-1], locale_code):
-            remove_page_from_pages(tab_pages, key)
+        published = published_node_name(parts[-1], locale_code)
+        if parts[-1] == published:
+            continue
+        # Only rewrite when a real .mdx file exists for this locale
+        locale = next((c for c in LOCALE_CONFIGS if c["code"] == locale_code), None)
+        if locale is None:
+            continue
+        target_mdx = locale["builtin_dir"] / f"{published}.mdx"
+        if not target_mdx.exists():
+            continue
+        # Locate the containing pages list BEFORE removing the key, then
+        # re-insert the canonical spelling at the same logical position.
+        target_pages = _find_tab_pages_for_key(tab_pages, key)
+        remove_page_from_pages(tab_pages, key)
+        canonical_key = "/".join([*parts[:-1], published])
+        if target_pages is not None and canonical_key not in target_pages:
+            target_pages.append(canonical_key)
+
+
+def _find_tab_pages_for_key(pages: list[Any], page_key: str) -> Optional[list[Any]]:
+    """Return the innermost 'pages' list containing page_key (recursive), or None."""
+    for item in pages:
+        if isinstance(item, str):
+            if item == page_key:
+                return pages
+        elif isinstance(item, dict) and "pages" in item:
+            if page_key in collect_page_keys(item["pages"]):
+                found = _find_tab_pages_for_key(item["pages"], page_key)
+                if found is not None:
+                    return found
+    return None
 
 
 def _place_page_in_nav(
-    tab_pages: List[Any],
+    tab_pages: list[Any],
     page_key: str,
     full_category: str,
-    locale: Dict[str, Any],
+    locale: dict[str, Any],
 ) -> None:
     """Insert page_key under the correct Built-in Nodes group for one locale."""
     page_key = canonical_page_key(page_key)
@@ -1035,7 +1107,7 @@ def _place_page_in_nav(
 def sync_node(
     node_name: str,
     dry_run: bool,
-) -> Tuple[bool, Optional[str], List[str]]:
+) -> tuple[bool, Optional[str], list[str]]:
     """Sync one node: en.md (+ zh.md / ja.md when present) -> MDX and copy assets."""
     scanner_name, node_dir = resolve_source_node(node_name)
     en_md = node_dir / "en.md"
@@ -1046,8 +1118,8 @@ def sync_node(
     published_en = published_node_name(scanner_name, "en")
     images_out = IMAGES_TARGET / published_en
     content_en = en_md.read_text(encoding="utf-8")
-    description = get_description_from_content(content_en)
-    synced_locales: List[str] = []
+    description_en = get_description_from_content(content_en)
+    synced_locales: list[str] = []
 
     for locale in LOCALE_CONFIGS:
         md_path = node_dir / locale["md_file"]
@@ -1061,7 +1133,11 @@ def sync_node(
         content = md_path.read_text(encoding="utf-8")
         content = copy_assets_and_rewrite(content, node_dir, published_en, images_out, dry_run)
         content = _normalize_mdx_content(content)
-        mdx = build_frontmatter(scanner_name, description or f"Documentation for {scanner_name} node.") + content
+        # Description: prefer the localized overview first sentence, fall back to English.
+        locale_desc = get_description_from_content(content)
+        if not locale_desc:
+            locale_desc = description_en
+        mdx = build_frontmatter(scanner_name, locale_desc or f"Documentation for {scanner_name} node.") + content
 
         target_mdx = locale["builtin_dir"] / f"{published}.mdx"
         if not dry_run:
@@ -1090,9 +1166,16 @@ def main():
         print(f"ERROR: TARGET_DOCS not found: {TARGET_DOCS}")
         sys.exit(1)
 
+    if args.count < 0:
+        print("ERROR: --count must be >= 0")
+        sys.exit(1)
+
     if args.node:
         _canonical, _src = resolve_source_node(args.node)
-        nodes = [_canonical] if (_src / "en.md").exists() else []
+        if not (_src / "en.md").exists():
+            print(f"ERROR: node '{args.node}' does not resolve to a directory containing en.md: {_src}")
+            sys.exit(1)
+        nodes = [_canonical]
     else:
         nodes = list_nodes_with_en_md()
         if args.mode == "test":
@@ -1103,8 +1186,8 @@ def main():
     if update_docs_json:
         print(f"  docs.json path: {DOCS_JSON}")
         if not DOCS_JSON.exists():
-            print(f"  WARNING: docs.json not found at above path; navigation will not be updated.")
-    synced: List[Tuple[str, Optional[str], List[str]]] = []
+            print("  WARNING: docs.json not found at above path; navigation will not be updated.")
+    synced: list[tuple[str, Optional[str], list[str]]] = []
     for node_name in nodes:
         ok, category, synced_locales = sync_node(node_name, args.dry_run)
         if ok:
@@ -1116,7 +1199,7 @@ def main():
         else:
             with open(DOCS_JSON, "r", encoding="utf-8") as f:
                 nav = json.load(f)
-            added: Dict[str, List[str]] = {cfg["code"]: [] for cfg in LOCALE_CONFIGS}
+            added: dict[str, list[str]] = {cfg["code"]: [] for cfg in LOCALE_CONFIGS}
             for node_name, full_category, synced_locales in synced:
                 scanner_name = canonical_node_name(node_name)
                 for locale in LOCALE_CONFIGS:
@@ -1144,7 +1227,7 @@ def main():
                     _purge_noncanonical_nav_pages(tab_pages)
                     _migrate_toplevel_groups_to_wrapper(tab_pages, locale["wrapper"])
 
-            node_cat_map: Dict[str, str] = {
+            node_cat_map: dict[str, str] = {
                 name: info.get("category", "")
                 for name, info in _load_all_nodes_info().items()
             }
@@ -1170,8 +1253,24 @@ def main():
                 _remove_empty_groups(tab_pages)
                 _sort_pages_alphabetically(tab_pages, groups_first=False)
 
-            with open(DOCS_JSON, "w", encoding="utf-8") as f:
-                json.dump(nav, f, indent=2, ensure_ascii=False)
+            # Atomic write: serialize to a temp file in the same directory, then
+            # os.replace so a failed serialization never leaves docs.json truncated.
+            had_trailing_newline = False
+            try:
+                with open(DOCS_JSON, "r", encoding="utf-8") as f:
+                    had_trailing_newline = f.read().endswith("\n")
+            except Exception:
+                had_trailing_newline = True
+            tmp_path = DOCS_JSON.with_suffix(".json.tmp")
+            try:
+                with open(tmp_path, "w", encoding="utf-8") as f:
+                    json.dump(nav, f, indent=2, ensure_ascii=False)
+                    if had_trailing_newline:
+                        f.write("\n")
+                os.replace(tmp_path, DOCS_JSON)
+            finally:
+                if tmp_path.exists():
+                    tmp_path.unlink()
             any_added = any(added[code] for code in added)
             if any_added:
                 print(f"docs.json: updated {DOCS_JSON}")
