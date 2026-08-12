@@ -11,7 +11,7 @@ translates node documentation into 11 languages, and publishes it.
 ## Layout
 
 ```
-pipeline/
+docs-generation/
 ├── main.py                     # CLI entry point (full workflows)
 ├── scripts/
 │   ├── scan_missing_nodes.py   # Scan ComfyUI source: find new/changed nodes
@@ -32,7 +32,7 @@ pipeline/
 ## Setup
 
 ```bash
-cd pipeline
+cd docs-generation
 cp env.example .env
 # edit .env: COMFYUI_PATH, LLM_API_KEY, etc.
 pip install -r requirements.txt
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 cd /path/to/ComfyUI && git fetch origin master && git rebase origin/master
 
 # 2. Scan + regenerate changed node docs (never skip, even if scan says "no changes")
-cd /path/to/embedded-docs/pipeline
+cd /path/to/embedded-docs/docs-generation
 python3 main.py --mode changed
 
 # 3. Generate docs for new nodes
