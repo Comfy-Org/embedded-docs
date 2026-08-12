@@ -1,4 +1,4 @@
-"""Central path configuration for doc_automation."""
+"""Central path configuration for the docs-generation pipeline."""
 
 from __future__ import annotations
 

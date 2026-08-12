@@ -1,1 +1,1 @@
-"""Shared libraries for doc_automation."""
+"""Shared libraries for the docs-generation pipeline."""
