@@ -810,8 +810,12 @@ def get_description_from_content(content: str) -> str:
             if first_para:
                 break
             continue
-        if line_stripped.startswith("##") or line_stripped.startswith("#"):
+        # H1 (# Title) is the page title — skip it and keep looking for the
+        # first content paragraph. H2+ (## Section) ends the overview.
+        if line_stripped.startswith("##"):
             break
+        if line_stripped.startswith("#"):
+            continue
         if line_stripped.startswith("> ") and (
             "AI-generated" in line_stripped
             or "AI 生成" in line_stripped
