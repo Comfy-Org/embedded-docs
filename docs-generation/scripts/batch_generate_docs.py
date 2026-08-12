@@ -33,8 +33,8 @@ load_dotenv()
 
 # Configuration
 API_KEY = os.getenv('LLM_API_KEY') or os.getenv('DEEPSEEK_API_KEY')
-API_BASE_URL = os.getenv('API_BASE_URL', 'https://api.deepseek.com')
-API_MODEL = os.getenv('API_MODEL', 'deepseek-chat')
+API_BASE_URL = os.getenv('API_BASE_URL', '').strip()
+API_MODEL = os.getenv('API_MODEL', '').strip()
 BATCH_SIZE = int(os.getenv('BATCH_SIZE', '5'))
 MAX_RETRIES = int(os.getenv('MAX_RETRIES', '3'))
 DELAY_BETWEEN_REQUESTS = int(os.getenv('DELAY_BETWEEN_REQUESTS', '2'))
@@ -106,6 +106,12 @@ class AIDocGenerator:
     def __init__(self):
         if not API_KEY:
             raise ValueError("❌ LLM_API_KEY not found, please configure it in .env file")
+        if not API_BASE_URL or not API_MODEL:
+            raise ValueError(
+                "❌ API_BASE_URL / API_MODEL not configured. Point them at your "
+                "OpenAI-compatible provider (e.g. DeepSeek, OpenAI, OpenRouter, "
+                "local vLLM/Ollama) in .env."
+            )
         
         self.client = OpenAI(
             api_key=API_KEY,

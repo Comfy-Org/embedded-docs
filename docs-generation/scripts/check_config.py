@@ -100,8 +100,8 @@ def check_config():
         all_ok = False
     
     # Check API settings
-    api_base = os.getenv('API_BASE_URL', 'https://api.deepseek.com')
-    api_model = os.getenv('API_MODEL', 'deepseek-chat')
+    api_base = os.getenv('API_BASE_URL', '').strip()
+    api_model = os.getenv('API_MODEL', '').strip()
     print(f"✅ API_BASE_URL: {api_base}")
     print(f"✅ API_MODEL: {api_model}")
     

@@ -93,7 +93,7 @@ See `env.example`. Key ones:
 |-----|----------|---------|
 | `COMFYUI_PATH` | yes (scan/generate) | ComfyUI source checkout |
 | `LLM_API_KEY` | yes (LLM steps) | OpenAI-compatible API key (any provider; `DEEPSEEK_API_KEY` also accepted for back-compat) |
-| `API_BASE_URL` / `API_MODEL` | no | OpenAI-compatible endpoint + model (defaults: DeepSeek) |
+| `API_BASE_URL` / `API_MODEL` | yes (LLM steps) | OpenAI-compatible endpoint + model for your provider (no default; must be set) |
 | `EMBEDDED_DOCS_PATH` | no | embedded-docs repo root (defaults to repo root) |
 | `TARGET_DOCS` | sync step | Comfy-Org/docs checkout |
 | `COMFYUI_FRONTEND_PATH` | param-translation step | ComfyUI frontend repo |
