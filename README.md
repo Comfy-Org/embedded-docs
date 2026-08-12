@@ -46,35 +46,45 @@ The publishing workflow:
 
 ## Syncing to Comfy docs
 
-The script `doc_automation/sync_to_comfy_docs.py` syncs embedded-docs (en.md, zh.md, and assets) to the [comfy/docs](https://github.com/Comfy-Org/comfy/tree/main/docs) repository as built-in node MDX files and updates the navigation (`docs.json`).
+The `docs-generation` pipeline syncs embedded-docs (en.md, zh.md, ja.md, ko.md, and assets) to the [Comfy-Org/docs](https://github.com/Comfy-Org/docs) repository as built-in node MDX files and updates the navigation (`docs.json`).
+
+The pipeline lives in [`docs-generation/`](docs-generation/README.md) and includes:
+
+- `docs-generation/scripts/scan_missing_nodes.py` – scan the ComfyUI codebase, detect new/changed nodes
+- `docs-generation/scripts/batch_generate_docs.py` + `batch_translate_docs.py` – LLM-based doc generation and 11-language translation
+- `docs-generation/scripts/update_param_translations.py` – reconcile parameter names with the ComfyUI frontend i18n
+- `docs-generation/scripts/sync_to_comfy_docs.py` – generate `built-in-nodes/*.mdx` + update `docs.json` navigation
+- `docs-generation/scripts/version_tracker.py` – per-node source hash tracking
+
+See [docs-generation/README.md](docs-generation/README.md) for full setup and workflow.
 
 **Environment variables (optional):**
 
-- `EMBEDDED_DOCS_PATH` – Path to this repo (default: parent of `doc_automation`)
+- `EMBEDDED_DOCS_PATH` – Path to this repo (default: the repo this pipeline lives in)
 - `COMFYUI_PATH` – Path to the ComfyUI repo (used to read node category from source)
 - `TARGET_DOCS` – Path to the comfy/docs root (e.g. `/path/to/comfy/docs`)
 
-**Category mapping:** The sync script uses each node’s ComfyUI category to put it in the right docs.json group. For the most complete categories (including API nodes and nodes that get category from a base class), run the node scanner once so it can write `doc_automation/all_nodes_info.json`; the sync script will prefer that file when present.
+**Category mapping:** The sync script uses each node's ComfyUI category to put it in the right docs.json group. For the most complete categories (including API nodes and nodes that get category from a base class), run the node scanner once so it can write `docs-generation/data/all_nodes_info.json`; the sync script will prefer that file when present.
 
 ```sh
 # Optional: run scanner first to build all_nodes_info.json (better category coverage)
-python doc_automation/scan_missing_nodes.py
+python docs-generation/scripts/scan_missing_nodes.py
 ```
 
 **Run from repo root:**
 
 ```sh
 # Test mode: sync first 10 nodes (dry run: no writes)
-python doc_automation/sync_to_comfy_docs.py --mode test --count 10 --dry-run
+TARGET_DOCS=/path/to/comfy/docs python docs-generation/scripts/sync_to_comfy_docs.py --mode test --count 10 --dry-run
 
 # Sync all nodes with en.md and update docs.json
-python doc_automation/sync_to_comfy_docs.py --mode all
+TARGET_DOCS=/path/to/comfy/docs python docs-generation/scripts/sync_to_comfy_docs.py --mode all
 
 # Sync a single node
-python doc_automation/sync_to_comfy_docs.py --node Load3D
+TARGET_DOCS=/path/to/comfy/docs python docs-generation/scripts/sync_to_comfy_docs.py --node Load3D
 ```
 
-You can also use the interactive menu: run `python doc_automation/main.py` and choose option **5) 同步到 Comfy 文档 (Sync to Comfy docs)**.
+You can also use the interactive menu: run `python docs-generation/main.py` and choose option **5) Sync to Comfy docs**.
 
 ## Linting
 
