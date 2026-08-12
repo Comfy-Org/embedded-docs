@@ -32,7 +32,7 @@ from lib.paths import (
 load_dotenv()
 
 # Configuration
-API_KEY = os.getenv('DEEPSEEK_API_KEY')
+API_KEY = os.getenv('LLM_API_KEY') or os.getenv('DEEPSEEK_API_KEY')
 API_BASE_URL = os.getenv('API_BASE_URL', 'https://api.deepseek.com')
 API_MODEL = os.getenv('API_MODEL', 'deepseek-chat')
 BATCH_SIZE = int(os.getenv('BATCH_SIZE', '5'))
@@ -105,7 +105,7 @@ class AIDocGenerator:
     
     def __init__(self):
         if not API_KEY:
-            raise ValueError("❌ DEEPSEEK_API_KEY not found, please configure it in .env file")
+            raise ValueError("❌ LLM_API_KEY not found, please configure it in .env file")
         
         self.client = OpenAI(
             api_key=API_KEY,

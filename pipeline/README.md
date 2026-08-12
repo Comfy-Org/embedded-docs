@@ -34,7 +34,7 @@ pipeline/
 ```bash
 cd pipeline
 cp env.example .env
-# edit .env: COMFYUI_PATH, DEEPSEEK_API_KEY, etc.
+# edit .env: COMFYUI_PATH, LLM_API_KEY, etc.
 pip install -r requirements.txt
 ```
 
@@ -92,8 +92,8 @@ See `env.example`. Key ones:
 | Var | Required | Purpose |
 |-----|----------|---------|
 | `COMFYUI_PATH` | yes (scan/generate) | ComfyUI source checkout |
-| `DEEPSEEK_API_KEY` | yes (LLM steps) | OpenAI-compatible API key |
-| `API_BASE_URL` / `API_MODEL` | no | Defaults: DeepSeek |
+| `LLM_API_KEY` | yes (LLM steps) | OpenAI-compatible API key (any provider; `DEEPSEEK_API_KEY` also accepted for back-compat) |
+| `API_BASE_URL` / `API_MODEL` | no | OpenAI-compatible endpoint + model (defaults: DeepSeek) |
 | `EMBEDDED_DOCS_PATH` | no | embedded-docs repo root (defaults to repo root) |
 | `TARGET_DOCS` | sync step | Comfy-Org/docs checkout |
 | `COMFYUI_FRONTEND_PATH` | param-translation step | ComfyUI frontend repo |

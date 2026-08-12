@@ -92,11 +92,11 @@ def check_config():
     print("-" * 80)
     
     # Check API key
-    api_key = os.getenv('DEEPSEEK_API_KEY')
-    if api_key and api_key != 'your_deepseek_api_key_here':
-        print(f"✅ DEEPSEEK_API_KEY: {'*' * 20}{api_key[-4:]}")
+    api_key = os.getenv('LLM_API_KEY') or os.getenv('DEEPSEEK_API_KEY')
+    if api_key and api_key != 'your_api_key_here':
+        print(f"✅ LLM_API_KEY: {'*' * 20}{api_key[-4:]}")
     else:
-        print(f"❌ DEEPSEEK_API_KEY not configured")
+        print(f"❌ LLM_API_KEY not configured")
         all_ok = False
     
     # Check API settings

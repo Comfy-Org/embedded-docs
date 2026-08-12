@@ -65,8 +65,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # AI Configuration
-DEFAULT_API_KEY = os.getenv('DEEPSEEK_API_KEY', '')
-DEFAULT_BASE_URL = "https://api.deepseek.com"
+DEFAULT_API_KEY = os.getenv('LLM_API_KEY') or os.getenv('DEEPSEEK_API_KEY', '')
+DEFAULT_BASE_URL = os.getenv('API_BASE_URL', 'https://api.deepseek.com')
 DEFAULT_MODEL = os.getenv('API_MODEL', 'deepseek-chat')
 DEFAULT_BATCH_SIZE = 5
 
