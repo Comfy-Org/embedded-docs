@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-从前端仓库的 nodeDefs.json 同步参数翻译到文档
-用法: python sync_frontend_translations.py <frontend_repo_path>
-示例: python sync_frontend_translations.py /path/to/ComfyUI_frontend
+Sync parameter translations from the frontend repo's nodeDefs.json into the docs
+Usage: python sync_frontend_translations.py <frontend_repo_path>
+Example: python sync_frontend_translations.py /path/to/ComfyUI_frontend
 """
 
 import json
@@ -17,26 +17,26 @@ load_dotenv()
 
 DOCS_ROOT = embedded_docs_dir()
 
-# 支持的语言
+# Supported languages
 SUPPORTED_LANGS = ['en', 'zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
 
 def load_frontend_translations(frontend_path, lang):
-    """从前端仓库加载指定语言的翻译"""
+    """Load translations for a language from the frontend repo"""
     locale_file = Path(frontend_path) / 'src' / 'locales' / lang / 'nodeDefs.json'
     
     if not locale_file.exists():
-        print(f"⚠️  警告: 未找到 {lang} 语言文件: {locale_file}")
+        print(f"⚠️  Warning: language file not found for {lang}: {locale_file}")
         return {}
     
     try:
         with open(locale_file, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        print(f"❌ 读取 {lang} 语言文件失败: {e}")
+        print(f"❌ Failed to read language file for {lang}: {e}")
         return {}
 
 def get_node_translations(frontend_translations, node_name):
-    """获取节点的翻译信息"""
+    """Get translation info for a node"""
     if node_name not in frontend_translations:
         return None
     
@@ -48,7 +48,7 @@ def get_node_translations(frontend_translations, node_name):
         'outputs': {}
     }
     
-    # 提取输入参数翻译
+    # Extract input parameter translations
     if 'inputs' in node_data:
         for param_name, param_data in node_data['inputs'].items():
             if isinstance(param_data, dict):
@@ -57,7 +57,7 @@ def get_node_translations(frontend_translations, node_name):
                     'tooltip': param_data.get('tooltip', '')
                 }
     
-    # 提取输出翻译
+    # Extract output translations
     if 'outputs' in node_data:
         for output_idx, output_data in node_data['outputs'].items():
             if isinstance(output_data, dict):
@@ -69,47 +69,47 @@ def get_node_translations(frontend_translations, node_name):
     return translations
 
 def create_translation_report(frontend_path):
-    """生成翻译对照报告"""
-    print(f"\n正在从前端仓库加载翻译: {frontend_path}\n")
+    """Generate a translation comparison report"""
+    print(f"\nLoading translations from frontend repo: {frontend_path}\n")
     
-    # 加载所有语言的翻译
+    # Load translations for all languages
     all_translations = {}
     for lang in SUPPORTED_LANGS:
         all_translations[lang] = load_frontend_translations(frontend_path, lang)
     
-    # 获取所有节点名称（从文档目录）
+    # Get all node names (from the docs directory)
     node_dirs = [d for d in DOCS_ROOT.iterdir() if d.is_dir()]
     
-    print(f"找到 {len(node_dirs)} 个节点文档目录\n")
+    print(f"Found {len(node_dirs)} node doc directories\n")
     print("=" * 80)
     
-    # 为每个节点生成翻译报告
+    # Generate a translation report per node
     for node_dir in sorted(node_dirs):
         node_name = node_dir.name
         
-        # 检查是否有对应的前端翻译
+        # Check whether a frontend translation exists
         has_translation = any(node_name in all_translations[lang] for lang in SUPPORTED_LANGS)
         
         if not has_translation:
-            print(f"\n⚠️  {node_name}: 未找到前端翻译")
+            print(f"\n⚠️  {node_name}: no frontend translation found")
             continue
         
         print(f"\n✓ {node_name}")
         print("-" * 80)
         
-        # 显示各语言的参数翻译
+        # Show per-language parameter translations
         for lang in SUPPORTED_LANGS:
             if node_name in all_translations[lang]:
                 trans = get_node_translations(all_translations[lang], node_name)
                 if trans and trans['inputs']:
-                    print(f"\n  [{lang.upper()}] 参数翻译:")
+                    print(f"\n  [{lang.upper()}] Parameter translations:")
                     for param_name, param_trans in trans['inputs'].items():
                         print(f"    - {param_name}: {param_trans['name']}")
                         if param_trans['tooltip']:
-                            print(f"      提示: {param_trans['tooltip'][:60]}...")
+                            print(f"      Tooltip: {param_trans['tooltip'][:60]}...")
 
 def export_translation_json(frontend_path, output_file=None):
-    """导出所有节点的翻译为JSON文件，便于后续使用"""
+    """Export all node translations to a JSON file for later use"""
     all_translations = {}
     for lang in SUPPORTED_LANGS:
         all_translations[lang] = load_frontend_translations(frontend_path, lang)
@@ -118,20 +118,20 @@ def export_translation_json(frontend_path, output_file=None):
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(all_translations, f, ensure_ascii=False, indent=2)
     
-    print(f"\n✓ 翻译数据已导出到: {output_path}")
+    print(f"\n✓ Translation data exported to: {output_path}")
 
 def main():
     if len(sys.argv) < 2:
-        print("用法: python sync_frontend_translations.py <frontend_repo_path> [--export]")
-        print("示例: python sync_frontend_translations.py /path/to/ComfyUI_frontend")
-        print("\n选项:")
-        print("  --export  导出翻译为JSON文件")
+        print("Usage: python sync_frontend_translations.py <frontend_repo_path> [--export]")
+        print("Example: python sync_frontend_translations.py /path/to/ComfyUI_frontend")
+        print("\nOptions:")
+        print("  --export  export translations to JSON file")
         sys.exit(1)
     
     frontend_path = Path(sys.argv[1])
     
     if not frontend_path.exists():
-        print(f"❌ 错误: 前端仓库路径不存在: {frontend_path}")
+        print(f"❌ Error: frontend repo path does not exist: {frontend_path}")
         sys.exit(1)
     
     if '--export' in sys.argv:

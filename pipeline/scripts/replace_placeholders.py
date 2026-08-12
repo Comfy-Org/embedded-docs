@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-替换文档中的占位符为对应语言的标题
-用法: python replace_placeholders.py [--check-only]
+Replace placeholders in docs with language-specific headings
+Usage: python replace_placeholders.py [--check-only]
 """
 
 import os
@@ -14,7 +14,7 @@ from lib.paths import embedded_docs_dir
 
 DOCS_ROOT = embedded_docs_dir()
 
-# 不同语言的标题映射
+# Heading mapping per language
 HEADING_TRANSLATIONS = {
     'en': {
         'heading_overview': '## Overview',
@@ -68,12 +68,12 @@ HEADING_TRANSLATIONS = {
 }
 
 def get_language_from_filename(filename):
-    """从文件名获取语言代码"""
+    """Get the language code from a filename"""
     stem = Path(filename).stem
     return stem if stem in HEADING_TRANSLATIONS else None
 
 def replace_placeholders_in_file(filepath, check_only=False):
-    """替换文件中的占位符"""
+    """Replace placeholders in a file"""
     lang = get_language_from_filename(filepath.name)
     if not lang:
         return False, []
@@ -117,18 +117,18 @@ def main():
     
     if files_with_placeholders:
         if check_only:
-            print(f"\n发现 {len(files_with_placeholders)} 个文件包含占位符：")
+            print(f"\nFound {len(files_with_placeholders)} files with placeholders:")
             for repl in all_replacements:
                 print(repl)
-            print(f"\n运行不带 --check-only 参数来替换这些占位符。")
+            print(f"\nRun without --check-only to replace these placeholders.")
             sys.exit(1)
         else:
-            print(f"\n已替换 {len(files_with_placeholders)} 个文件中的占位符：")
+            print(f"\nReplaced placeholders in {len(files_with_placeholders)} files:")
             for repl in all_replacements:
                 print(repl)
-            print(f"\n✓ 完成！")
+            print(f"\n✓ Done!")
     else:
-        print("✓ 未发现需要替换的占位符。")
+        print("✓ No placeholders found to replace.")
 
 if __name__ == '__main__':
     main()

@@ -55,7 +55,7 @@ def cleanup_duplicate_hashes():
         
         if removed_count > 0:
             nodes_cleaned.append(node_name)
-            print(f"  ✅ {node_name}: 移除了 {removed_count} 个重复记录 (保留 {len(unique_versions)} 个)")
+            print(f"  ✅ {node_name}: removed {removed_count} duplicate records (kept {len(unique_versions)})")
             node_data["versions"] = unique_versions
             
             # Update current_hash to match the last version (most recent)
@@ -65,24 +65,24 @@ def cleanup_duplicate_hashes():
     
     if total_removed > 0:
         print("=" * 80)
-        print(f"\n📊 清理完成:")
-        print(f"  - 清理了 {len(nodes_cleaned)} 个节点")
-        print(f"  - 移除了 {total_removed} 个重复的 hash 记录")
+        print(f"\n📊 Cleanup finished:")
+        print(f"  - cleaned {len(nodes_cleaned)} nodes")
+        print(f"  - removed {total_removed} duplicate hash records")
         
         # Backup original file
         backup_path = version_db_path.with_suffix('.json.backup')
-        print(f"\n💾 备份原文件到: {backup_path}")
+        print(f"\n💾 Backup of original file at: {backup_path}")
         with open(backup_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         
         # Save cleaned data
-        print(f"💾 保存清理后的数据...")
+        print(f"💾 Saving cleaned data...")
         with open(version_db_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         
-        print(f"\n✅ 清理完成！")
+        print(f"\n✅ Cleanup complete!")
     else:
-        print("\n✅ 没有发现重复记录，无需清理")
+        print("\n✅ No duplicate records found; nothing to clean")
 
 
 if __name__ == "__main__":

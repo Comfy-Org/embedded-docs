@@ -717,25 +717,25 @@ def _prompt_yes_no(text: str, default: bool = False) -> bool:
 def run_interactive(workflow: DocumentationWorkflow) -> bool:
     """Run interactive menu-driven workflow."""
     print("\n" + "=" * 60)
-    print("  ComfyUI 文档自动化 - 交互式菜单")
+    print("  ComfyUI Documentation Automation - Interactive Menu")
     print("  Documentation Automation - Interactive Menu")
     print("=" * 60)
 
     while True:
-        print("\n请选择操作 / Choose action:")
-        print("  1) 仅扫描 (Scan only)")
-        print("  2) 生成英文文档 (Generate English docs)")
-        print("  3) 翻译（子菜单：单语 / 全部语言；全部语言里可选「强制全量重译」）")
+        print("\nChoose an action:")
+        print("  1) Scan only")
+        print("  2) Generate English docs")
+        print("  3) Translate (submenu: one language / all languages; force full re-translate option)")
         print("      (Translate: one lang / all langs; submenu includes force-retranslate-all)")
-        print("  4) 生成缺失文档并全部翻译 (Generate missing + translate all)")
-        print("  5) 同步到 Comfy 文档 (Sync to Comfy docs)")
-        print("  6) 更新变更节点文档 (Regenerate docs for changed nodes)")
-        print("  7) 全量重跑英文（可选随后全语言翻译）(FULL en.md; optional all-lang translate)")
-        print("  8) 强制全语言重译全部节点（每个 en.md → 11 语覆盖；等同 CLI --retranslate-all-languages）")
+        print("  4) Generate missing docs + translate all")
+        print("  5) Sync to Comfy docs")
+        print("  6) Regenerate docs for changed nodes")
+        print("  7) Full en.md regeneration (optional all-lang translate)")
+        print("  8) Force full re-translate of all nodes (all en.md -> 11 languages; same as CLI --retranslate-all-languages)")
         print("      (Force-retranslate ALL langs for EVERY node with en.md; API-heavy)")
-        print("  9) 修复已有文档 (Fix existing docs — no AI)")
-        print("  0) 退出 (Exit)")
-        choice = _prompt("选项 / Choice", "0").strip()
+        print("  9) Fix existing docs (no AI)")
+        print("  0) Exit")
+        choice = _prompt("Choice", "0").strip()
 
         if choice == "0":
             print("Bye.")
@@ -743,32 +743,32 @@ def run_interactive(workflow: DocumentationWorkflow) -> bool:
 
         if choice == "1":
             ok = workflow.scan_nodes()
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "2":
-            print("\n--- 生成模式 ---")
-            print("  1) test  - 生成指定数量的缺失节点 (default 20)")
-            print("  2) all   - 生成所有缺失节点")
-            print("  3) node  - 仅生成单个节点")
-            sub = _prompt("模式 (1/2/3)", "1").strip()
+            print("\n--- Generation Mode ---")
+            print("  1) test - generate N missing nodes (default 20)")
+            print("  2) all - generate all missing nodes")
+            print("  3) node - generate a single node")
+            sub = _prompt("Mode (1/2/3)", "1").strip()
             if sub == "2":
                 mode = "all"
                 count = 20
                 node_name = None
             elif sub == "3":
                 mode = "node"
-                node_name = _prompt("节点名称 (Node name)").strip()
+                node_name = _prompt("Node name").strip()
                 if not node_name:
-                    print("  未输入节点名，已取消。")
+                    print("  No node name entered; cancelled.")
                     continue
                 count = None
             else:
                 mode = "test"
-                count = _prompt_int("生成数量 (Count)", 20)
+                count = _prompt_int("Count", 20)
                 node_name = None
-            force = _prompt_yes_no("是否覆盖已有文档 (Force overwrite)?", False)
+            force = _prompt_yes_no("Force overwrite existing docs?", False)
             print()
             if mode == "node":
                 ok = (
@@ -779,86 +779,86 @@ def run_interactive(workflow: DocumentationWorkflow) -> bool:
                 )
             else:
                 ok = workflow.run_full_workflow(mode=mode, count=count, force=force)
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "3":
-            print("\n--- 翻译 ---")
-            print("  1) 单语言 (One language)")
-            print("  2) 全部语言 (All languages)")
-            tr_choice = _prompt("1 或 2", "1").strip()
+            print("\n--- Translation ---")
+            print("  1) One language")
+            print("  2) All languages")
+            tr_choice = _prompt("1 or 2", "1").strip()
             if tr_choice == "2":
-                print("  1) 全部缺失 (all) - 按报告仅翻译当前缺失（每种语言整批缺失）")
-                print("  2) 指定数量 (test) - 每种语言只翻译缺失队列前 N 条")
-                print("  3) 强制全量重译 - 每个有 en.md 的节点全部语种覆盖（忽略缺失报告；CLI: --retranslate-all-languages）")
+                print("  1) all - translate all currently missing per the report")
+                print("  2) test - translate the first N missing per language")
+                print("  3) Force full re-translate - overwrite all languages for every node with en.md (CLI: --retranslate-all-languages)")
                 all_or_count = _prompt("1 / 2 / 3", "1").strip()
                 if all_or_count == "3":
                     return workflow.run_all_languages_translation(mode="all", count=20, force=True, force_all_nodes=True)
                 if all_or_count == "2":
-                    count = _prompt_int("每种语言处理数量 (Count per language)", 20)
-                    force = _prompt_yes_no("是否覆盖已有翻译 (Force overwrite)?", False)
+                    count = _prompt_int("Count per language", 20)
+                    force = _prompt_yes_no("Force overwrite existing translations?", False)
                     return workflow.run_all_languages_translation(mode="test", count=count, force=force)
-                force = _prompt_yes_no("是否覆盖已有翻译 (Force overwrite)?", False)
+                force = _prompt_yes_no("Force overwrite existing translations?", False)
                 return workflow.run_all_languages_translation(mode="all", count=20, force=force)
-            print("\n可选语言:")
+            print("\nAvailable languages:")
             for i, lang in enumerate(LANGUAGES, 1):
                 print(f"  {i:2}) {lang}  {LANG_NAMES.get(lang, '')}")
-            lang_idx = _prompt_int("语言编号 (1-11)", 1)
+            lang_idx = _prompt_int("Language number (1-11)", 1)
             if not (1 <= lang_idx <= len(LANGUAGES)):
-                print("  无效编号。")
+                print("  Invalid number.")
                 continue
             lang = LANGUAGES[lang_idx - 1]
-            print("\n  1) test - 翻译指定数量 (默认 20)")
-            print("  2) all  - 翻译全部缺失")
-            tm = _prompt("模式 (1/2)", "1").strip()
+            print("\n  1) test - translate N (default 20)")
+            print("  2) all - translate all missing")
+            tm = _prompt("Mode (1/2)", "1").strip()
             mode = "all" if tm == "2" else "test"
-            count = _prompt_int("数量 (test 时)", 20) if mode == "test" else 20
-            force = _prompt_yes_no("是否覆盖已有翻译 (Force overwrite)?", False)
+            count = _prompt_int("Count (for test)", 20) if mode == "test" else 20
+            force = _prompt_yes_no("Force overwrite existing translations?", False)
             print()
             ok = workflow.run_translation_workflow(lang=lang, mode=mode, count=count, force=force)
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "4":
-            print("\n--- 生成缺失文档并全部翻译（一次性跑完，中间不再确认）---")
-            print("  1) test - 先生成指定数量的缺失英文文档，再对全部语言翻译同样数量")
-            print("  2) all  - 先生成所有缺失英文文档，再对全部语言翻译所有缺失（推荐，一次性完成）")
-            sub = _prompt("模式 (1/2)", "2").strip()
+            print("\n--- Generate missing docs + translate all (runs to completion) ---")
+            print("  1) test - generate N missing English docs, then translate the same count for all languages")
+            print("  2) all - generate all missing English docs, then translate all missing for every language (recommended)")
+            sub = _prompt("Mode (1/2)", "2").strip()
             if sub == "2":
                 gen_mode, gen_count = "all", 20
                 tr_mode, tr_count = "all", 10
             else:
                 gen_mode = "test"
-                gen_count = _prompt_int("生成数量 (Count)", 20)
+                gen_count = _prompt_int("Count", 20)
                 tr_mode = "test"
                 tr_count = gen_count
-            force_gen = _prompt_yes_no("是否覆盖已有英文文档 (Force overwrite)?", False)
-            force_tr = _prompt_yes_no("是否覆盖已有翻译 (Force overwrite)?", False)
-            print("\n将一次性执行：先生成英文文档 → 再全部语言翻译，中间不再询问。")
-            print("[Step 1/2] 生成英文文档...")
+            force_gen = _prompt_yes_no("Force overwrite existing English docs?", False)
+            force_tr = _prompt_yes_no("Force overwrite existing translations?", False)
+            print("\nThis will run end-to-end: generate English docs, then translate all languages, without further prompts.")
+            print("[Step 1/2] Generating English docs...")
             if not workflow.run_full_workflow(mode=gen_mode, count=gen_count, force=force_gen):
-                print("  生成失败，已取消。")
-                if _prompt_yes_no("继续操作? (Continue?)", False):
+                print("  Generation failed; cancelled.")
+                if _prompt_yes_no("Continue?", False):
                     continue
                 return False
-            print("\n[Step 2/2] 全部语言翻译（自动连续执行）...")
+            print("\n[Step 2/2] Translating all languages (automatic)...")
             ok = workflow.run_all_languages_translation(mode=tr_mode, count=tr_count, force=force_tr)
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "5":
-            print("\n--- 同步到 Comfy 文档 ---")
-            print("  将 embedded-docs 的 en.md/zh.md 与图片同步到 comfy/docs (built-in-nodes)。")
-            print("  1) test - 同步前 N 个节点 (默认 10)")
-            print("  2) all  - 同步所有有 en.md 的节点")
-            sub = _prompt("模式 (1/2)", "1").strip()
+            print("\n--- Sync to Comfy docs ---")
+            print("  Sync embedded-docs en.md/zh.md and images to comfy/docs (built-in-nodes).")
+            print("  1) test - sync first N nodes (default 10)")
+            print("  2) all - sync all nodes with en.md")
+            sub = _prompt("Mode (1/2)", "1").strip()
             mode = "all" if sub == "2" else "test"
-            count = _prompt_int("数量 (test 时)", 10) if mode == "test" else 10
-            dry = _prompt_yes_no("仅预览不写入 (Dry run)?", False)
-            no_json = _prompt_yes_no("不更新 docs.json (No docs.json)?", False)
+            count = _prompt_int("Count (for test)", 10) if mode == "test" else 10
+            dry = _prompt_yes_no("Dry run (no writes)?", False)
+            no_json = _prompt_yes_no("Skip docs.json update?", False)
             args = ["--mode", mode]
             if mode == "test":
                 args.extend(["--count", str(count)])
@@ -872,85 +872,85 @@ def run_interactive(workflow: DocumentationWorkflow) -> bool:
                 args,
                 "Sync to Comfy docs (built-in-nodes + docs.json)"
             )
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "6":
-            print("\n--- 更新变更节点文档 ---")
-            print("  扫描源码变更 → 重新生成有变动节点的英文文档。")
-            force = _prompt_yes_no("是否强制覆盖已有文档 (Force overwrite)?", True)
+            print("\n--- Update changed node docs ---")
+            print("  Scan source changes -> regenerate English docs for changed nodes.")
+            force = _prompt_yes_no("Force overwrite existing docs?", True)
             print()
             ok = workflow.run_changed_workflow(force=force)
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "7":
-            print("\n--- 全量英文文档重生 ---")
-            print("  会：扫描 → 对所有已扫描节点跑 prepare_ai_input → batch_generate_docs all --force。")
-            print("  ⚠️  耗时长；会重写每个节点的 en.md 并占用大量 API。")
-            print("  默认会在英文完成后继续全语言翻译；若只在交互里改了英文不想动翻译，选 n（或 CLI 仅用 --mode regenerate-all 不加翻译）。")
+            print("\n--- Full English docs regeneration ---")
+            print("  Runs: scan -> prepare_ai_input for all scanned nodes -> batch_generate_docs all --force.")
+            print("  Warning: long-running; rewrites every node en.md and consumes significant API quota.")
+            print("  By default continues with all-language translation after English; choose n to skip (or use CLI --mode regenerate-all without translation).")
             also_tr = _prompt_yes_no(
-                "英文完成后是否继续「全语言翻译」（mode=all + 强制覆盖翻译）? (Also translate all langs?)",
+                "Also translate all languages after English (mode=all + force overwrite)?",
                 True,
             )
-            if not _prompt_yes_no("确认继续？", False):
-                print("  已取消。")
+            if not _prompt_yes_no("Confirm to continue?", False):
+                print("  Cancelled.")
                 continue
-            lim_raw = _prompt("仅先做前 N 个节点（调试，留空=全部）Prepare limit / Enter for all").strip()
+            lim_raw = _prompt("Limit to first N nodes (debug, empty=all) Prepare limit / Enter for all").strip()
             prepare_limit = int(lim_raw) if lim_raw else None
             if prepare_limit is not None and prepare_limit <= 0:
-                print("  无效数量。")
+                print("  Invalid count.")
                 continue
             print()
             ok = workflow.run_regenerate_all_workflow(
                 prepare_limit=prepare_limit,
                 translate_all_languages=also_tr,
             )
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "8":
-            print("\n--- 强制全语言重译全部节点 ---")
-            print("  会对「每个已有 en.md 的节点」在全部 11 种语言上覆盖写入翻译（忽略缺失报告）。")
-            print("  ⚠️  API 与时间消耗极大；等同于: python3 main.py --retranslate-all-languages")
-            if not _prompt_yes_no("确认执行？", False):
-                print("  已取消。")
+            print("\n--- Force full re-translate of all nodes ---")
+            print("  Overwrites translations for every node with en.md across all 11 languages (ignores missing report).")
+            print("  Warning: heavy API and time usage; equivalent to: python3 main.py --retranslate-all-languages")
+            if not _prompt_yes_no("Confirm execution?", False):
+                print("  Cancelled.")
                 continue
             print()
             ok = workflow.run_all_languages_translation(
                 mode="all", count=20, force=True, force_all_nodes=True
             )
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
         if choice == "9":
-            print("\n--- 修复已有文档 (Fix) ---")
-            print("  1) 文档标题 — 缺失 / 重复 / 与前端 display_name 不一致")
+            print("\n--- Fix existing docs ---")
+            print("  1) Doc titles - missing / duplicated / mismatched with frontend display_name")
             print("     (Doc titles from frontend nodeDefs; no AI)")
-            sub = _prompt("选项 (1)", "1").strip()
+            sub = _prompt("Option (1)", "1").strip()
             if sub != "1":
-                print("  暂仅支持 1) 文档标题。")
+                print("  Only option 1 (doc titles) is supported.")
                 continue
-            print("\n  Hash 处理 / SHA footer:")
-            print("  1) preserve - 保留原 disclaimer + SHA（推荐，翻译已对齐时）")
-            print("  2) update    - 从 en.md / ai_input 重新写入 SHA（并重写 disclaimer）")
+            print("\n  Hash handling / SHA footer:")
+            print("  1) preserve - keep original disclaimer + SHA (recommended when translations are aligned)")
+            print("  2) update - rewrite SHA from en.md / ai_input (and rewrite disclaimer)")
             hash_choice = _prompt("Hash (1/2)", "1").strip()
             hash_mode = "update" if hash_choice == "2" else "preserve"
-            print("\n  1) test - 扫描前 N 个文件 (默认 20)")
-            print("  2) all  - 扫描全部已有 .md")
-            scope = _prompt("范围 (1/2)", "2").strip()
+            print("\n  1) test - scan first N files (default 20)")
+            print("  2) all - scan all existing .md files")
+            scope = _prompt("Scope (1/2)", "2").strip()
             fix_mode = "all" if scope == "2" else "test"
-            fix_count = _prompt_int("文件数量 (test 时)", 20) if fix_mode == "test" else 20
-            dry_run = _prompt_yes_no("仅预览不写入 (Dry run)?", True)
-            sync_fe = _prompt_yes_no("先同步前端 nodeDefs 翻译? (Sync frontend)", True)
-            node_name = _prompt("仅单个节点 (留空=全部) Node name").strip() or None
-            lang_raw = _prompt("仅单语言代码 en/zh/... (留空=全部) Lang").strip() or None
+            fix_count = _prompt_int("File count (for test)", 20) if fix_mode == "test" else 20
+            dry_run = _prompt_yes_no("Dry run (no writes)?", True)
+            sync_fe = _prompt_yes_no("Sync frontend nodeDefs translations first?", True)
+            node_name = _prompt("Single node only (empty = all) Node name").strip() or None
+            lang_raw = _prompt("Single language code en/zh/... (empty = all) Lang").strip() or None
             if lang_raw and lang_raw not in (["en"] + LANGUAGES):
-                print(f"  无效语言: {lang_raw}")
+                print(f"  Invalid language: {lang_raw}")
                 continue
             print()
             ok = workflow.run_fix_doc_titles_workflow(
@@ -962,11 +962,11 @@ def run_interactive(workflow: DocumentationWorkflow) -> bool:
                 sync_frontend=sync_fe,
                 hash_mode=hash_mode,
             )
-            if ok and _prompt_yes_no("继续操作? (Continue?)", False):
+            if ok and _prompt_yes_no("Continue?", False):
                 continue
             return ok
 
-        print("  请输入 0–9。")
+        print("  Please enter 0-9.")
 
 
 def main():

@@ -273,7 +273,7 @@ def translate_document(node_name, target_lang, lang_config, api_key, base_url, m
             content = strip_trailing_fingerprint_section(content)
 
             # Post-process: enforce English output names.  The AI sometimes translates output names
-            # (e.g. 'positive' → '正向', 'négatif') causing duplicates in the Outputs table.
+            # (e.g. 'positive' translated to the same word as 'negative') causing duplicates in the Outputs table.
             # We parse the en.md Outputs table and force the first column to match.
             content = _fix_output_names_in_translation(content, full_en)
 

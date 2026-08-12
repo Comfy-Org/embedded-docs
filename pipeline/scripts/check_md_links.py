@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-检查 Markdown 文档中的链接有效性和占位符
-用法: python check_md_links.py [--fix-placeholders]
+Check link validity and placeholders in Markdown docs
+Usage: python check_md_links.py [--fix-placeholders]
 """
 
 import os
@@ -22,7 +22,7 @@ MD_LINK_RE = re.compile(r'!\[[^\]]*\]\(([^)]+)\)|\[[^\]]*\]\(([^)]+)\)')
 HTML_SRC_RE = re.compile(r'<(?:img|video|audio|source)[^>]+src=["\']([^"\'>]+)["\']', re.IGNORECASE)
 PLACEHOLDER_RE = re.compile(r'\{(heading_\w+)\}')
 
-# 不同语言的标题映射
+# Heading mapping per language
 HEADING_TRANSLATIONS = {
     'en': {
         'heading_overview': '## Overview',
@@ -76,17 +76,17 @@ HEADING_TRANSLATIONS = {
 }
 
 def get_language_from_filename(filename):
-    """从文件名获取语言代码"""
+    """Get the language code from a filename"""
     stem = Path(filename).stem
     return stem if stem in HEADING_TRANSLATIONS else None
 
 def is_local_link(link):
-    """只检查本地相对路径（非 http/https/data: 开头）"""
+    """Only check local relative paths (not http/https/data: prefixed)"""
     link = link.strip()
     return not (link.startswith('http://') or link.startswith('https://') or link.startswith('data:'))
 
 def find_links_in_line(line):
-    """提取行中的所有本地链接"""
+    """Extract all local links in a line"""
     links = []
     for m in MD_LINK_RE.finditer(line):
         for g in m.groups():
@@ -99,11 +99,11 @@ def find_links_in_line(line):
     return links
 
 def find_placeholders_in_content(content):
-    """查找内容中的占位符"""
+    """Find placeholders in content"""
     return PLACEHOLDER_RE.findall(content)
 
 def check_file(fpath, fix_placeholders=False):
-    """检查单个文件的链接和占位符"""
+    """Check links and placeholders in a single file"""
     errors = []
     placeholder_issues = []
     rel_fpath = fpath.relative_to(DOCS_ROOT.parent.parent)
@@ -113,12 +113,12 @@ def check_file(fpath, fix_placeholders=False):
         content = f.read()
         lines = content.split('\n')
     
-    # 检查占位符
+    # Check placeholders
     placeholders = find_placeholders_in_content(content)
     if placeholders:
-        placeholder_issues.append(f"{rel_fpath}: 发现占位符 {placeholders}")
+        placeholder_issues.append(f"{rel_fpath}: found placeholders {placeholders}")
         
-        # 如果需要修复且能识别语言
+        # Fix if requested and language is detectable
         if fix_placeholders and lang:
             translations = HEADING_TRANSLATIONS[lang]
             modified = False
@@ -131,9 +131,9 @@ def check_file(fpath, fix_placeholders=False):
             if modified:
                 with open(fpath, 'w', encoding='utf-8') as f:
                     f.write(content)
-                placeholder_issues[-1] += " [已修复]"
+                placeholder_issues[-1] += " [fixed]"
     
-    # 检查链接
+    # Check links
     for idx, line in enumerate(lines, 1):
         for link in find_links_in_line(line):
             link_path = link.split('#')[0].split('?')[0]
@@ -153,20 +153,20 @@ def check_file(fpath, fix_placeholders=False):
                     abs_path = (fpath.parent / link_path).absolute()
             
             if not abs_path.exists():
-                errors.append(f"[链接失效] {rel_fpath}:{idx}: {link}")
+                errors.append(f"[broken link] {rel_fpath}:{idx}: {link}")
     
     return errors, placeholder_issues
 
 def check_links():
     if not DOCS_ROOT.exists():
-        print(f"错误: 文档目录不存在: {DOCS_ROOT}")
+        print(f"Error: docs directory does not exist: {DOCS_ROOT}")
         sys.exit(1)
     
     fix_placeholders = '--fix-placeholders' in sys.argv
     link_errors = []
     placeholder_issues = []
     
-    print(f"正在检查 {DOCS_ROOT} 下的所有文档...")
+    print(f"Checking all docs under {DOCS_ROOT}...")
     
     for root, _, files in os.walk(DOCS_ROOT):
         for fname in files:
@@ -181,30 +181,30 @@ def check_links():
     if placeholder_issues:
         has_issues = True
         print("\n" + "=" * 80)
-        print(f"发现 {len(placeholder_issues)} 个文件包含占位符：")
+        print(f"Found {len(placeholder_issues)} files with placeholders:")
         print("=" * 80)
         for issue in placeholder_issues:
             print(f"  {issue}")
         if fix_placeholders:
-            print("\n✓ 占位符已自动修复")
+            print("\n✓ Placeholders auto-fixed")
         else:
-            print("\n提示: 运行 --fix-placeholders 参数来自动替换占位符")
+            print("\nTip: run with --fix-placeholders to auto-replace placeholders")
     
     if link_errors:
         has_issues = True
         print("\n" + "=" * 80)
-        print(f"发现 {len(link_errors)} 个无效链接：")
+        print(f"Found {len(link_errors)} broken links:")
         print("=" * 80)
         for i, err in enumerate(link_errors):
             if i < 10:
                 print(f"  {err}")
             elif i == 10:
-                print(f"\n  ... 还有 {len(link_errors) - 10} 个错误（仅显示前10个）")
+                print(f"\n  ... {len(link_errors) - 10} more errors (showing first 10 only)")
                 break
-        print("\n请修正上述链接问题。")
+        print("\nPlease fix the link issues above.")
     
     if not has_issues:
-        print("\n✓ 所有检查通过！")
+        print("\n✓ All checks passed!")
     else:
         sys.exit(1)
 
