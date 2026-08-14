@@ -29,6 +29,18 @@ Required sections in order:
    - Extract all information from source code including tooltips
    - Description should be factual and based on tooltips/source code
    - If a parameter has a default value, mention it in the Description
+
+   **GROUPED FORMAT for DynamicCombo / model-selector nodes (CRITICAL):**
+   
+   When the source code contains `IO.DynamicCombo.Input` (a model selector whose `options` define per-model sub-parameters via helper functions like `_seedance2_reference_inputs()`), DO NOT flatten everything into one table. The node's real UI shows: common top-level inputs → model-specific widgets that appear when a model is selected → growable reference slots. Structure the Inputs section to match:
+
+   1. `### Common Inputs` — inputs defined directly in the schema, outside the DynamicCombo (e.g. `seed`, `watermark`). Include the `model` selector itself here as the first row (it is always visible). Use one table.
+   2. `### <Model Name> Inputs` — ONE subsection per model option, named exactly after the option (e.g. `### Seedance 2.5 Inputs`, `### Seedance 2.0 Inputs`). List ONLY the sub-parameters that option provides (prompt, resolution, duration, etc.). Use one table per model.
+      - When several options share the same sub-parameter set (e.g. "Seedance 2.0 Fast" and "Seedance 2.0 Mini" both call the same helper), you MAY merge them into one subsection and say "Shared by Seedance 2.0 Fast and Seedance 2.0 Mini" — but only when the parameter sets are identical.
+      - In the Range column for each model's table, note model-specific limits (e.g. resolution options differ: 2.0 has 1080p/4k, Fast/Mini only 480p/720p; duration 4-15 vs 4-30).
+   3. `### Reference Inputs` — one table for all `IO.Autogrow.Input` growable slots (reference_images, reference_videos, reference_audios, reference_assets). In the Description, say "Growable slot: connect 1..N items (e.g. `image_1`...`image_9`); the count limit is per model (see model sections)."
+   
+   Keep the constraint notes (max counts, duration limits, video_editing behavior) as a **Note paragraph after the grouped tables** — do not repeat the same constraint inside every model table.
    
    **Special Formatting for COMBO Parameters:**
    - For parameters with multiple options (COMBO type):

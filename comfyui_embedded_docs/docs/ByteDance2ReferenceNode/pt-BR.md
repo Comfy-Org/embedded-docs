@@ -1,32 +1,82 @@
 # ByteDance Seedance 2.0 Referência para Vídeo
 
-Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/en.md)
-
-O nó ByteDance Seedance 2.0 Reference to Video utiliza o modelo de IA Seedance 2.0 para criar, editar ou estender vídeos com base no seu prompt de texto e nos materiais de referência fornecidos. Ele pode usar imagens, vídeos e áudio como referências para orientar o processo de geração, suportando tarefas como edição e extensão de vídeos.
+Este nó gera, edita ou estende vídeos usando os modelos de IA Seedance 2.5 ou 2.0 da ByteDance. Você descreve o vídeo em um prompt de texto e pode adicionar imagens, vídeos e áudios de referência para orientar o resultado. Ele suporta entradas de referência multimodais, edição de vídeo e extensão de vídeo.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
-| --- | --- | --- | --- | --- |
-| `modelo` | O modelo de IA a ser usado. Seedance 2.0 é para máxima qualidade, enquanto Seedance 2.0 Fast é otimizado para velocidade. Selecionar um modelo revela entradas obrigatórias adicionais para `prompt`, `resolution`, `duration`, `ratio`, `generate_audio` e entradas opcionais para `reference_images`, `reference_videos`, `reference_audios`, `reference_assets` e `auto_downscale`. | COMBO | Sim | `"Seedance 2.0"`<br>`"Seedance 2.0 Fast"` |
-| `semente` | Um número usado para controlar se o nó deve ser executado novamente. Os resultados são não determinísticos, independentemente do valor da semente (padrão: 0). | INT | Não | 0 a 2147483647 |
-| `marca_d'água` | Se deve adicionar uma marca d'água ao vídeo gerado (padrão: False). | BOOLEAN | Não | `True` / `False` |
+Selecionar um `model` determina quais dos parâmetros abaixo estão disponíveis. `video_editing` e `output_format` aparecem somente quando Seedance 2.5 está selecionado. Os slots de referência expansíveis e as opções de redimensionamento automático de vídeos de referência são compartilhados por todos os modelos e são descritos em Entradas de referência.
 
-**Restrições Importantes:**
-*   Pelo menos uma imagem ou vídeo de referência (fornecido através das entradas `reference_images`, `reference_videos` ou `reference_assets`) é necessário para o funcionamento do nó.
-*   Um máximo de 9 imagens de referência pode ser usado no total (incluindo aquelas de `reference_images` e `reference_assets`).
-*   Um máximo de 3 vídeos de referência pode ser usado no total (incluindo aqueles de `reference_videos` e `reference_assets`).
-*   Um máximo de 3 clipes de áudio de referência pode ser usado no total (incluindo aqueles de `reference_audios` e `reference_assets`).
-*   Cada vídeo de referência deve ter pelo menos 1,8 segundos de duração. A duração combinada de todos os vídeos de referência não pode exceder 15,1 segundos.
-*   Cada clipe de áudio de referência deve ter pelo menos 1,8 segundos de duração. A duração combinada de todo o áudio de referência não pode exceder 15,1 segundos.
+### Entradas comuns
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `model` | O modelo de IA usado para gerar o vídeo. Seedance 2.5 para o modelo mais novo, vídeos de até 30 segundos e saída em mp4; Seedance 2.0 para máxima qualidade e 1080p/4k; Fast para otimização de velocidade; Mini para a geração mais rápida e de menor custo. Selecionar um modelo revela as entradas específicas do modelo listadas abaixo. | COMBO | Sim | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `seed` | A `seed` controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente do valor da semente (padrão: 0). | INT | Sim | 0 a 2147483647 |
+| `watermark` | Se deve adicionar uma marca d'água ao vídeo (padrão: False). | BOOLEAN | Sim | `True`<br>`False` |
+
+### Entradas do Seedance 2.5
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt de texto para geração de vídeo. Coloque falas entre aspas duplas para direcionar o diálogo gerado. Deve conter pelo menos um caractere que não seja espaço em branco (padrão: vazio). | STRING | Sim | Qualquer texto |
+| `resolution` | Resolução do vídeo de saída (padrão: `"720p"`). | COMBO | Sim | `"480p"`<br>`"720p"` |
+| `ratio` | Proporção de aspecto do vídeo de saída (padrão: `"16:9"`). | COMBO | Sim | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
+| `duration` | Duração do vídeo de saída em segundos (padrão: 5). | INT | Sim | 4 a 30<br>Passo: 1 |
+| `generate_audio` | Habilitar a geração de áudio para o vídeo de saída (padrão: True). | BOOLEAN | Sim | `True`<br>`False` |
+| `video_editing` | Ative quando o prompt editar um vídeo de referência conectado, por exemplo, substituindo um objeto nele. A saída então mantém a duração e a proporção de aspecto do próprio clipe de origem, e os widgets de duração e proporção são ignorados. Deixe desativado para gerar um novo vídeo ou para estender um até a duração definida (padrão: False). | BOOLEAN | Sim | `True`<br>`False` |
+| `output_format` | Formato de contêiner do vídeo de saída (padrão: `"mp4"`). | COMBO | Sim | `"mp4"` |
+
+### Entradas do Seedance 2.0
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt de texto para geração de vídeo. Deve conter pelo menos um caractere que não seja espaço em branco (padrão: vazio). | STRING | Sim | Qualquer texto |
+| `resolution` | Resolução do vídeo de saída. | COMBO | Sim | `"480p"`<br>`"720p"`<br>`"1080p"`<br>`"4k"` |
+| `ratio` | Proporção de aspecto do vídeo de saída (padrão: `"adaptive"`). | COMBO | Sim | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
+| `duration` | Duração do vídeo de saída em segundos (padrão: 7). | INT | Sim | 4 a 15<br>Passo: 1 |
+| `generate_audio` | Habilitar a geração de áudio para o vídeo de saída (padrão: True). | BOOLEAN | Sim | `True`<br>`False` |
+
+### Entradas do Seedance 2.0 Fast e Seedance 2.0 Mini
+
+Compartilhadas pelo Seedance 2.0 Fast e pelo Seedance 2.0 Mini. Esses dois modelos expõem o mesmo conjunto de entradas que o Seedance 2.0, exceto que `resolution` é limitada a 480p e 720p.
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt de texto para geração de vídeo. Deve conter pelo menos um caractere que não seja espaço em branco (padrão: vazio). | STRING | Sim | Qualquer texto |
+| `resolution` | Resolução do vídeo de saída. | COMBO | Sim | `"480p"`<br>`"720p"` |
+| `ratio` | Proporção de aspecto do vídeo de saída (padrão: `"adaptive"`). | COMBO | Sim | `"16:9"`<br>`"4:3"`<br>`"1:1"`<br>`"3:4"`<br>`"9:16"`<br>`"21:9"`<br>`"adaptive"` |
+| `duration` | Duração do vídeo de saída em segundos (padrão: 7). | INT | Sim | 4 a 15<br>Passo: 1 |
+| `generate_audio` | Habilitar a geração de áudio para o vídeo de saída (padrão: True). | BOOLEAN | Sim | `True`<br>`False` |
+
+### Entradas de referência
+
+Disponíveis para todos os modelos. O número máximo de slots depende do modelo selecionado: o Seedance 2.5 suporta mais referências do que os modelos Seedance 2.0.
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `reference_images` | Slot expansível: conecte uma ou mais imagens de referência (`image_1`, `image_2`, ...) que orientam a geração do vídeo. As imagens são reduzidas automaticamente para um lado máximo de 6000 pixels e devem ter pelo menos 300x300 pixels, com proporção de aspecto entre 0,4 e 2,5. | IMAGE | Não | Até 30 (Seedance 2.5)<br>Até 9 (modelos Seedance 2.0) |
+| `reference_videos` | Slot expansível: conecte um ou mais vídeos de referência (`video_1`, `video_2`, ...) que orientam a geração do vídeo; usado para edição e extensão de vídeo. | VIDEO | Não | Até 10 (Seedance 2.5)<br>Até 3 (modelos Seedance 2.0) |
+| `reference_audios` | Slot expansível: conecte um ou mais clipes de áudio de referência (`audio_1`, `audio_2`, ...) que orientam a geração do vídeo. | AUDIO | Não | Até 10 (Seedance 2.5)<br>Até 3 (modelos Seedance 2.0) |
+| `auto_downscale` | Reduz automaticamente vídeos de referência que excedem o limite de pixels do modelo para a resolução selecionada. A proporção de aspecto é preservada; vídeos que já estão dentro dos limites não são alterados (padrão: True). | BOOLEAN | Não | `True`<br>`False` |
+| `auto_upscale` | Amplia automaticamente vídeos de referência que estão abaixo do número mínimo de pixels do modelo para a resolução selecionada. A proporção de aspecto é preservada; vídeos que já atendem ao mínimo não são alterados. Observação: ampliar uma fonte de baixa resolução não adiciona detalhes reais e pode produzir gerações de qualidade inferior (padrão: False). | BOOLEAN | Não | `True`<br>`False` |
+| `reference_assets` | Slot expansível: IDs de ativos criados anteriormente na biblioteca virtual do Seedance (Imagem, Vídeo ou Áudio) para usar como referências (`asset_1`, `asset_2`, ...). Cada ativo deve existir e ter um status Ativo. No prompt, os ativos podem ser mencionados como `asset1`, `asset 1`, etc.; o nó substitui esses tokens por rótulos como "Imagem 2". | STRING | Não | Até 30 (Seedance 2.5)<br>Até 9 (modelos Seedance 2.0) |
+
+**Restrições importantes:**
+
+* Pelo menos uma referência é obrigatória. Para Seedance 2.0, 2.0 Fast e 2.0 Mini, você deve fornecer pelo menos uma referência de imagem ou vídeo (via `reference_images`, `reference_videos` ou uma entrada de imagem ou vídeo em `reference_assets`). O Seedance 2.5 também aceita referências somente de áudio (via `reference_audios` ou uma entrada de áudio em `reference_assets`).
+* As contagens de referências dependem do modelo e são validados combinando entradas diretas e referências de ativos: o Seedance 2.5 permite até 30 `reference_images`, 10 `reference_videos`, 10 `reference_audios` e 30 `reference_assets`; os modelos Seedance 2.0 permitem até 9 imagens, 3 vídeos, 3 clipes de áudio e 9 ativos.
+* Cada vídeo de referência deve ter pelo menos 1,8 segundo de duração, e cada clipe de áudio de referência deve ter pelo menos 1,8 segundo. A duração total de todos os vídeos de referência e de todos os áudios de referência deve permanecer dentro do limite do modelo selecionado (15,1 segundos para os modelos Seedance 2.0).
+* Os vídeos de referência também devem atender aos limites de pixels do modelo para a resolução selecionada. Com `auto_downscale` habilitado (padrão), vídeos acima do limite são redimensionados automaticamente; com `auto_upscale` habilitado, vídeos abaixo do limite são ampliados. Se qualquer um dos ajustes automáticos estiver desabilitado, vídeos fora do limite correspondente geram um erro.
+* Quando `video_editing` está habilitado no Seedance 2.5, as entradas `duration` e `ratio` são ignoradas; a saída corresponde à duração e à proporção de aspecto do próprio vídeo de referência. Se o provedor interpretar o prompt como uma edição de um vídeo de referência, a geração falha, a menos que `video_editing` esteja habilitado ou que o prompt seja reformulado para descrever um novo vídeo.
+* Se o provedor rejeitar a faixa de áudio gerada para o vídeo (por exemplo, uma possível correspondência de direitos autorais), a tarefa falha; desabilitar `generate_audio` produz um vídeo silencioso.
 
 ## Saídas
 
 | Nome da Saída | Descrição | Tipo de Dados |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `video` | O arquivo de vídeo gerado. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/ByteDance2ReferenceNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `72c8a2f821b9fb9853a4d0428785c432d0852ae562080292817f8a7d52967c7f`
+**Source fingerprint (SHA-256):** `4429306ac40b0f04ce7176cd805b34164de5e4e2b7204b008ea076b57663c200`

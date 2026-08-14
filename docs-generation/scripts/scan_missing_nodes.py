@@ -8,7 +8,7 @@ import re
 import ast
 import hashlib
 from pathlib import Path
-from typing import Set, Dict, List
+from typing import Set, Dict, List, Optional
 import json
 import runtime  # noqa: F401
 from lib.node_source_extract import extract_node_class_source
@@ -276,6 +276,25 @@ class DocumentationChecker:
         return completeness
 
 
+def extract_en_footer_hash(node_name: str) -> Optional[str]:
+    """Read the SHA-256 source fingerprint from a node's en.md footer.
+
+    The footer records the source hash at doc-generation time, so it serves
+    as a baseline for change detection even when node_versions.json has no
+    entry for this node (e.g. docs generated before version tracking existed).
+    Returns None when the doc has no footer (legacy docs).
+    """
+    en_path = DOCS_PATH / node_name / "en.md"
+    if not en_path.exists():
+        return None
+    try:
+        content = en_path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return None
+    m = re.search(r"SHA-256\)[:\uff1a]\s*\**\s*`([a-f0-9]{64})`", content)
+    return m.group(1) if m else None
+
+
 def main():
     """Main function"""
     print("=" * 80)
@@ -391,13 +410,23 @@ def main():
             version_db = json.load(f).get("nodes", {})
 
     changed_nodes = []
+    unverified_nodes = []  # no version_db entry AND no en.md footer: cannot detect changes
     extraction_failed = []
 
     for node_name in sorted(doc_checker.documented_nodes):
-        if node_name not in version_db:
-            continue
-        recorded_hash = version_db[node_name].get("current_hash")
+        # Baseline hash priority:
+        #   1. en.md footer hash (doc-generation time snapshot — works even when
+        #      node_versions.json has no entry, e.g. docs from before version tracking)
+        #   2. node_versions.json current_hash
+        # Nodes with neither baseline (legacy docs) are reported as unverified
+        # instead of being silently skipped.
+        recorded_hash = extract_en_footer_hash(node_name)
+        source_baseline = "en.md footer"
+        if not recorded_hash and node_name in version_db:
+            recorded_hash = version_db[node_name].get("current_hash")
+            source_baseline = "node_versions.json"
         if not recorded_hash:
+            unverified_nodes.append(node_name)
             continue
 
         # Extract current source DIRECTLY from ComfyUI source code (not from cache)
@@ -429,15 +458,27 @@ def main():
                 "class_name": class_name,
                 "old_hash": recorded_hash[:16] + "...",
                 "new_hash": current_hash[:16] + "...",
+                "baseline": source_baseline,
             })
 
     if changed_nodes:
         print(f"⚠️  Found {len(changed_nodes)} node(s) with changed source code:")
         for n in changed_nodes:
-            print(f"   - {n['name']}  ({n['old_hash']} → {n['new_hash']})")
+            print(f"   - {n['name']}  ({n['old_hash']} → {n['new_hash']})  [baseline: {n['baseline']}]")
         print()
     else:
         print("✅ No source code changes detected among documented nodes\n")
+
+    if unverified_nodes:
+        print(f"⚠️  {len(unverified_nodes)} node(s) have NO change-detection baseline "
+              f"(no en.md footer, no node_versions.json entry):")
+        print("   These are legacy docs — changes to their source will NOT be detected.")
+        print("   Re-generate them once (--mode all --force) to add a footer baseline.")
+        for name in sorted(unverified_nodes)[:10]:
+            print(f"   - {name}")
+        if len(unverified_nodes) > 10:
+            print(f"   ... and {len(unverified_nodes) - 10} more")
+        print()
 
     if extraction_failed:
         print(f"⚠️  Failed to extract source for {len(extraction_failed)} node(s):")
@@ -465,6 +506,7 @@ def main():
             for node in sorted(missing_nodes)
         ],
         "changed_nodes": changed_nodes,
+        "unverified_nodes": sorted(unverified_nodes),
         "extra_docs": sorted(list(extra_docs)),
         "incomplete_docs": [
             {"node": node, "missing_languages": langs}
