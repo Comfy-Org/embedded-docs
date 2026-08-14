@@ -9,8 +9,8 @@ Bu düğüm, HappyHorse modelini kullanarak referans görüntülerinde yer alan 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Oluşturma için kullanılacak HappyHorse referanstan videoya modeli. | COMBO | Evet | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | Oluşturma için kullanılacak tohum (varsayılan: 0). Her oluşturmadan sonra otomatik olarak değişecek şekilde ayarlanabilir. | INT | Hayır | 0 ile 2147483647 arası |
-| `watermark` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True veya False |
+| `tohum` | Oluşturma için kullanılacak tohum (varsayılan: 0). Her oluşturmadan sonra otomatik olarak değişecek şekilde ayarlanabilir. | INT | Hayır | 0 ile 2147483647 arası |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True veya False |
 
 ### HappyHorse 1.1 Girdileri (happyhorse-1.1-r2v)
 

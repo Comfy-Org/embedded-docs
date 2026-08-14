@@ -13,7 +13,7 @@ Este nó gera ou edita imagens enviando um prompt de texto para a API Vertex AI 
 | `seed` | Quando a seed é fixada em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para solicitações repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo ao usar o mesmo valor de seed. Por padrão, um valor de seed aleatório é usado. (padrão: 42) | INT | Sim | 0 a 18446744073709551615 |
 | `response_modalities` | Determina o formato da resposta. IMAGE retorna apenas uma imagem; IMAGE+TEXT retorna uma imagem e uma resposta em texto. (padrão: IMAGE) Parâmetro avançado. | COMBO | Sim | `"IMAGE"`<br>`"IMAGE+TEXT"` |
 | `system_prompt` | Instruções fundamentais que definem o comportamento de uma IA. O padrão é um prompt integrado que instrui o modelo a sempre produzir uma imagem. Parâmetro avançado. | STRING | Não | N/A |
-| `temperature` | Controla a aleatoriedade na geração. Valores mais baixos são mais focados/determinísticos. (padrão: 1.0) Parâmetro avançado. | FLOAT | Não | 0.0 a 2.0 (passo 0.01) |
+| `temperatura` | Controla a aleatoriedade na geração. Valores mais baixos são mais focados/determinísticos. (padrão: 1.0) Parâmetro avançado. | FLOAT | Não | 0.0 a 2.0 (passo 0.01) |
 | `top_p` | Limiar de amostragem de núcleo (nucleus sampling). Valores mais baixos são mais focados; valores mais altos, mais diversos. (padrão: 0.95) Parâmetro avançado. | FLOAT | Não | 0.0 a 1.0 (passo 0.01) |
 
 ### Entradas do Nano Banana 2 (Gemini 3.1 Flash Image)

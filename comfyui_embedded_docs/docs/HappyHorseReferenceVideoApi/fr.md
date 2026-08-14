@@ -8,9 +8,9 @@ Ce nœud génère une vidéo mettant en scène une personne ou un objet à parti
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle HappyHorse de type référence-vers-vidéo à utiliser pour la génération. | COMBO | Oui | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
-| `seed` | Graine à utiliser pour la génération (par défaut : 0). Peut être définie pour changer automatiquement après chaque génération. | INT | Non | 0 à 2147483647 |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Non | True ou False |
+| `modèle` | Le modèle HappyHorse de type référence-vers-vidéo à utiliser pour la génération. | COMBO | Oui | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `graine` | Graine à utiliser pour la génération (par défaut : 0). Peut être définie pour changer automatiquement après chaque génération. | INT | Non | 0 à 2147483647 |
+| `filigrane` | Indique s'il faut ajouter un filigrane généré par IA au résultat (par défaut : False). | BOOLEAN | Non | True ou False |
 
 ### Entrées HappyHorse 1.1 (happyhorse-1.1-r2v)
 

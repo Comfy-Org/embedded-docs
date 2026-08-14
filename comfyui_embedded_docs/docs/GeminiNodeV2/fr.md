@@ -6,10 +6,10 @@
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle Gemini utilisé pour générer la réponse. | COMBO | Oui | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
-| `prompt` | Entrée texte pour le modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère non blanc. (défaut : "") | STRING | Oui |  |
-| `seed` | Graine pour l'échantillonnage. Mettez 0 pour une graine aléatoire. La sortie déterministe n'est pas garantie. (défaut : 42) | INT | Oui | 0 à 2147483647 |
-| `system_prompt` | Instructions fondamentales qui régissent le comportement du modèle. (défaut : "") | STRING | Non |  |
+| `modèle` | Le modèle Gemini utilisé pour générer la réponse. | COMBO | Oui | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `invite` | Entrée texte pour le modèle. Incluez des instructions détaillées, des questions ou du contexte. Doit contenir au moins un caractère non blanc. (défaut : "") | STRING | Oui |  |
+| `graine` | Graine pour l'échantillonnage. Mettez 0 pour une graine aléatoire. La sortie déterministe n'est pas garantie. (défaut : 42) | INT | Oui | 0 à 2147483647 |
+| `invite système` | Instructions fondamentales qui régissent le comportement du modèle. (défaut : "") | STRING | Non |  |
 
 ### Gemini 3.5 Flash Entrées
 

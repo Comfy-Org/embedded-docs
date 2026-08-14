@@ -8,10 +8,10 @@ Gere respostas de texto com os modelos Gemini do Google. Forneça um prompt de t
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo Gemini usado para gerar a resposta. | COMBO | Sim | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
+| `modelo` | O modelo Gemini usado para gerar a resposta. | COMBO | Sim | `"Gemini 3.5 Flash"`<br>`"Gemini 3.1 Pro"`<br>`"Gemini 3.1 Flash-Lite"` |
 | `prompt` | Entrada de texto para o modelo. Inclua instruções detalhadas, perguntas ou contexto. Deve conter pelo menos um caractere que não seja espaço em branco. (padrão: "") | STRING | Sim |  |
-| `seed` | Semente para amostragem. Defina como 0 para uma semente aleatória. A saída determinística não é garantida. (padrão: 42) | INT | Sim | 0 a 2147483647 |
-| `system_prompt` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não |  |
+| `semente` | Semente para amostragem. Defina como 0 para uma semente aleatória. A saída determinística não é garantida. (padrão: 42) | INT | Sim | 0 a 2147483647 |
+| `prompt_do_sistema` | Instruções fundamentais que determinam o comportamento do modelo. (padrão: "") | STRING | Não |  |
 
 ### Entradas do Gemini 3.5 Flash
 
