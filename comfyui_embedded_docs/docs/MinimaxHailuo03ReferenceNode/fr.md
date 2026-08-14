@@ -6,7 +6,7 @@ Ce nœud génère une vidéo à l’aide du modèle MiniMax H3, en utilisant des
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour la génération vidéo (par défaut : « MiniMax H3 »). La sélection de « MiniMax H3 » fournit les paramètres `prompt`, `duration`, `resolution`, `ratio`, `reference_images`, `reference_videos` et `reference_audios` ci-dessous. | STRING | Oui | « MiniMax H3 » |
+| `modèle` | Modèle à utiliser pour la génération vidéo (par défaut : « MiniMax H3 »). La sélection de « MiniMax H3 » fournit les paramètres `prompt`, `duration`, `resolution`, `ratio`, `reference_images`, `reference_videos` et `reference_audios` ci-dessous. | STRING | Oui | « MiniMax H3 » |
 | `prompt` | Description textuelle de la vidéo à générer. Les médias de référence peuvent être désignés par leur ordre, par exemple « Image 1 », « Image 2 », « Video 1 » ou « Audio 1 ». | STRING | Oui | Longueur minimale : 1 caractère |
 | `duration` | Durée de la vidéo générée en secondes. | INT | Oui | Plusieurs options disponibles |
 | `resolution` | Résolution de sortie de la vidéo générée. | STRING | Oui | Plusieurs options disponibles |
@@ -14,8 +14,8 @@ Ce nœud génère une vidéo à l’aide du modèle MiniMax H3, en utilisant des
 | `reference_images` | Images de référence de sujet ou de style, désignées dans le prompt comme « Image 1 » à « Image 9 » dans l’ordre de connexion. Jusqu’à 9 images. | IMAGE | Non | 0 à 9 images |
 | `reference_videos` | Vidéos de référence de mouvement ou de scène, désignées dans le prompt comme « Video 1 » à « Video 3 » dans l’ordre de connexion. Jusqu’à 3 vidéos, de 2 à 15 secondes chacune, 15 secondes au total. | VIDEO | Non | 0 à 3 vidéos |
 | `reference_audios` | Références audio, désignées dans le prompt comme « Audio 1 » à « Audio 3 » dans l’ordre de connexion. Jusqu’à 3 clips, de 2 à 15 secondes chacun, 15 secondes au total. Ne peuvent pas être utilisées sans une image ou une vidéo de référence. | AUDIO | Non | 0 à 3 clips |
-| `seed` | Seed aléatoire. La même requête avec la même seed donne des résultats similaires, mais pas garantis identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
-| `watermark` | Indique s’il faut ajouter un filigrane AIGC à la vidéo (par défaut : false). | BOOLEAN | Non | true<br>false |
+| `graine` | Seed aléatoire. La même requête avec la même seed donne des résultats similaires, mais pas garantis identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
+| `filigrane` | Indique s’il faut ajouter un filigrane AIGC à la vidéo (par défaut : false). | BOOLEAN | Non | true<br>false |
 
 ### Contraintes des paramètres
 

@@ -8,7 +8,7 @@ O nó Empty Qwen Image Layered Latent prepara a tela em branco sobre a qual o mo
 | --- | --- | --- | --- | --- |
 | `largura` | A largura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) | INT | Sim | 16 a MAX_RESOLUTION |
 | `altura` | A altura da imagem latente a ser criada. O valor deve ser divisível por 16. (padrão: 640) | INT | Sim | 16 a MAX_RESOLUTION |
-| `camadas` | Em quantas camadas dividir a imagem. Uma folha extra é sempre reservada para a imagem completa, então você obtém `layers + 1` imagens, não `layers`. Defina como 2 e você obtém a imagem completa mais 2 camadas. Defina como 0 e você obtém apenas a imagem completa. (padrão: 3) | INT | Sim | 0 a MAX_RESOLUTION |
+| `camadas` | Em quantas camadas dividir a imagem. Uma folha extra é sempre reservada para a imagem completa, então você obtém `layers + 1` imagens, não `camadas`. Defina como 2 e você obtém a imagem completa mais 2 camadas. Defina como 0 e você obtém apenas a imagem completa. (padrão: 3) | INT | Sim | 0 a MAX_RESOLUTION |
 | `tamanho_do_lote` | O número de amostras latentes a serem geradas em um lote. (padrão: 1) | INT | Não | 1 a 4096 |
 
 **Observação:** Os parâmetros `width` e `height` são internamente divididos por 8 para determinar as dimensões espaciais do tensor latente de saída.

@@ -8,7 +8,7 @@ Boş Qwen Görüntü Katmanlı Gizli (Empty Qwen Image Layered Latent) düğüm�
 | --- | --- | --- | --- | --- |
 | `genişlik` | Oluşturulacak gizli görüntünün genişliği. Değer 16'ya bölünebilir olmalıdır. (varsayılan: 640) | INT | Evet | 16 ile MAX_RESOLUTION arası |
 | `yükseklik` | Oluşturulacak gizli görüntünün yüksekliği. Değer 16'ya bölünebilir olmalıdır. (varsayılan: 640) | INT | Evet | 16 ile MAX_RESOLUTION arası |
-| `katmanlar` | Görselin kaç katmana ayrılacağını belirler. Tam görsel için her zaman fazladan bir kağıt ayrılır, bu nedenle `layers` değil, `layers + 1` görsel elde edersiniz. 2 olarak ayarlarsanız tam görsel artı 2 katman elde edersiniz. 0 olarak ayarlarsanız yalnızca tam görseli elde edersiniz. (varsayılan: 3) | INT | Evet | 0 ile MAX_RESOLUTION arası |
+| `katmanlar` | Görselin kaç katmana ayrılacağını belirler. Tam görsel için her zaman fazladan bir kağıt ayrılır, bu nedenle `katmanlar` değil, `layers + 1` görsel elde edersiniz. 2 olarak ayarlarsanız tam görsel artı 2 katman elde edersiniz. 0 olarak ayarlarsanız yalnızca tam görseli elde edersiniz. (varsayılan: 3) | INT | Evet | 0 ile MAX_RESOLUTION arası |
 | `toplu_boyut` | Bir grupta oluşturulacak gizli örnek sayısı. (varsayılan: 1) | INT | Hayır | 1 ile 4096 arası |
 
 **Not:** `width` ve `height` parametreleri, çıktı gizli tensörünün uzamsal boyutlarını belirlemek için dahili olarak 8'e bölünür.

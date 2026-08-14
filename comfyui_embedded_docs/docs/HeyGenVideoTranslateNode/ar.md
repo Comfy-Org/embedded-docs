@@ -6,18 +6,18 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `video` | فيديو يحتوي على كلام لترجمته. | VIDEO | نعم | - |
-| `output_language` | اللغة الهدف للفيديو المترجم. | STRING | نعم | "Arabic"<br>"Bengali"<br>"Chinese"<br>"Danish"<br>"Dutch"<br>"English"<br>"French"<br>"German"<br>"Greek"<br>"Hindi"<br>"Indonesian"<br>"Italian"<br>"Japanese"<br>"Korean"<br>"Malay"<br>"Polish"<br>"Portuguese"<br>"Russian"<br>"Spanish"<br>"Swedish"<br>"Tamil"<br>"Telugu"<br>"Thai"<br>"Turkish"<br>"Ukrainian"<br>"Vietnamese" |
-| `mode` | وضع 'speed' أسرع؛ بينما ينتج 'precision' مزامنة شفاه بجودة أعلى بسعر مضاعف. (الافتراضي: "speed") | STRING | نعم | "speed"<br>"precision" |
-| `translate_audio_only` | استبدال المسار الصوتي فقط، مع الإبقاء على حركات الفم الأصلية (بدون مزامنة الشفاه). (الافتراضي: False) | BOOLEAN | لا | True<br>False |
-| `speaker_count` | عدد المتحدثين في الفيديو. 0 = الكشف تلقائيًا. تُرسل القيم فوق 0 إلى API كعدد المتحدثين. (الافتراضي: 0) | INT | لا | 0 to 10 |
-| `seed` | لا يُرسل إلى HeyGen؛ غيّره لإجبار إعادة التشغيل. (الافتراضي: 42) | INT | لا | 0 to 2147483647 |
+| `فيديو` | فيديو يحتوي على كلام لترجمته. | VIDEO | نعم | - |
+| `اللغة المستهدفة` | اللغة الهدف للفيديو المترجم. | STRING | نعم | "Arabic"<br>"Bengali"<br>"Chinese"<br>"Danish"<br>"Dutch"<br>"English"<br>"French"<br>"German"<br>"Greek"<br>"Hindi"<br>"Indonesian"<br>"Italian"<br>"Japanese"<br>"Korean"<br>"Malay"<br>"Polish"<br>"Portuguese"<br>"Russian"<br>"Spanish"<br>"Swedish"<br>"Tamil"<br>"Telugu"<br>"Thai"<br>"Turkish"<br>"Ukrainian"<br>"Vietnamese" |
+| `الوضع` | وضع 'speed' أسرع؛ بينما ينتج 'precision' مزامنة شفاه بجودة أعلى بسعر مضاعف. (الافتراضي: "speed") | STRING | نعم | "speed"<br>"precision" |
+| `ترجمة الصوت فقط` | استبدال المسار الصوتي فقط، مع الإبقاء على حركات الفم الأصلية (بدون مزامنة الشفاه). (الافتراضي: False) | BOOLEAN | لا | True<br>False |
+| `عدد المتحدثين` | عدد المتحدثين في الفيديو. 0 = الكشف تلقائيًا. تُرسل القيم فوق 0 إلى API كعدد المتحدثين. (الافتراضي: 0) | INT | لا | 0 to 10 |
+| `البذرة` | لا يُرسل إلى HeyGen؛ غيّره لإجبار إعادة التشغيل. (الافتراضي: 42) | INT | لا | 0 to 2147483647 |
 
 ## المخرجات
 
 | اسم المخرج | الوصف | نوع البيانات |
 |-------------|-------------|-----------|
-| `video` | الفيديو المترجم مع تطبيق استنساخ الصوت ومزامنة الشفاه. | VIDEO |
+| `فيديو` | الفيديو المترجم مع تطبيق استنساخ الصوت ومزامنة الشفاه. | VIDEO |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HeyGenVideoTranslateNode/ar.md)
 

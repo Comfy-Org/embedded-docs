@@ -6,9 +6,9 @@ Este nó gera um vídeo a partir de um prompt de texto usando o modelo MiniMax H
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para geração de vídeo. (padrão: "MiniMax H3"). Esta seleção também inclui o prompt de texto, resolução, duração e configurações de proporção de aspecto do vídeo gerado. | COMBO | Sim | `"MiniMax H3"` |
-| `seed` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, mas não garantidamente idênticos. (padrão: 42) | INT | Sim | 0 a 4294967295 |
-| `watermark` | Se deve adicionar uma marca d'água AIGC ao vídeo. (padrão: false) | BOOLEAN | Não | true<br>false |
+| `modelo` | Modelo a ser usado para geração de vídeo. (padrão: "MiniMax H3"). Esta seleção também inclui o prompt de texto, resolução, duração e configurações de proporção de aspecto do vídeo gerado. | COMBO | Sim | `"MiniMax H3"` |
+| `semente` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, mas não garantidamente idênticos. (padrão: 42) | INT | Sim | 0 a 4294967295 |
+| `marca d'água` | Se deve adicionar uma marca d'água AIGC ao vídeo. (padrão: false) | BOOLEAN | Não | true<br>false |
 
 Nota: O prompt de texto incluído na opção `model` deve conter pelo menos um caractere que não seja espaço em branco. O preço estimado exibido para este nó é calculado a partir da duração do vídeo selecionada.
 

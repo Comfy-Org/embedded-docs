@@ -8,7 +8,7 @@ El nodo Empty Qwen Image Layered Latent prepara el lienzo en blanco sobre el que
 | --- | --- | --- | --- | --- |
 | `ancho` | El ancho de la imagen latente a crear. El valor debe ser divisible entre 16. (predeterminado: 640) | INT | Sí | 16 a MAX_RESOLUTION |
 | `alto` | La altura de la imagen latente a crear. El valor debe ser divisible entre 16. (predeterminado: 640) | INT | Sí | 16 a MAX_RESOLUTION |
-| `capas` | En cuántas capas dividir la imagen. Siempre se reserva una hoja extra para la imagen completa, por lo que obtiene `layers + 1` imágenes, no `layers`. Si lo establece en 2, obtiene la imagen completa más 2 capas. Si lo establece en 0, obtiene solo la imagen completa. (predeterminado: 3) | INT | Sí | 0 a MAX_RESOLUTION |
+| `capas` | En cuántas capas dividir la imagen. Siempre se reserva una hoja extra para la imagen completa, por lo que obtiene `layers + 1` imágenes, no `capas`. Si lo establece en 2, obtiene la imagen completa más 2 capas. Si lo establece en 0, obtiene solo la imagen completa. (predeterminado: 3) | INT | Sí | 0 a MAX_RESOLUTION |
 | `tamaño_lote` | El número de muestras latentes a generar en un lote. (predeterminado: 1) | INT | No | 1 a 4096 |
 
 **Nota:** Los parámetros `width` y `height` se dividen internamente entre 8 para determinar las dimensiones espaciales del tensor latente de salida.
