@@ -299,11 +299,18 @@ def _collect_usage_from_class(class_node: ast.ClassDef) -> Tuple[Set[str], Set[s
                 bare.add(node.id)
 
         if isinstance(node, ast.Call):
-            ch = _attr_to_dotted(node.func)
-            if ch:
-                dotted.add(ch)
-            elif isinstance(node.func, ast.Name):
+            # Plain function calls (e.g. `_seedance2_reference_inputs(...)`) are
+            # same-file helpers: they MUST go into `bare` so the slim preamble
+            # keeps their definitions (dynamic-combo helpers define the actual
+            # sub-inputs the AI needs to document). Only dotted attribute chains
+            # (e.g. `IO.DynamicCombo.Option(...)`) go to `dotted` for import
+            # resolution.
+            if isinstance(node.func, ast.Name):
                 bare.add(node.func.id)
+            else:
+                ch = _attr_to_dotted(node.func)
+                if ch:
+                    dotted.add(ch)
     return bare, dotted
 
 
