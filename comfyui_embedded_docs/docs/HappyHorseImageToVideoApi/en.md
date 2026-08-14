@@ -9,7 +9,7 @@ This node generates a short video from a single starting image using the HappyHo
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model` | The HappyHorse model to use for video generation. | COMBO | Yes | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | First frame image. The output aspect ratio is derived from this image. | IMAGE | Yes | N/A |
+| `first_frame` | First frame image. The output aspect ratio is derived from this image. | IMAGE | Yes | 300×300 px min; 1:2.5 to 2.5:1 |
 | `seed` | Seed to use for generation. (default: 0) | INT | No | 0 to 2147483647 |
 | `watermark` | Whether to add an AI-generated watermark to the result. (advanced option; default: False) | BOOLEAN | No | True / False |
 

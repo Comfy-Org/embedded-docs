@@ -9,7 +9,7 @@ O nó Wan 2.7 Video Continuation gera um novo segmento de vídeo que continua a 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
 | `model` | O modelo de geração de vídeo a ser usado. | COMBO | Sim | `"wan2.7-i2v"` |
-| `first_clip` | Vídeo de entrada a partir do qual continuar. Duração: 2s–10s. A proporção de aspecto da saída é derivada deste vídeo. | VIDEO | Sim | 2s to 10s |
+| `first_clip` | Vídeo de entrada a partir do qual continuar. Duração: 2s–10s. A proporção de aspecto da saída é derivada deste vídeo. | VIDEO | Sim | 2 a 10 s |
 | `last_frame` | Imagem do último quadro. A continuação fará a transição em direção a este quadro. | IMAGE | Não | - |
 | `seed` | Semente a ser usada para geração. (padrão: 0) | INT | Sim | 0 a 2147483647 |
 | `prompt_extend` | Se deve aprimorar o prompt com assistência de IA. (padrão: True) | BOOLEAN | Sim | - |

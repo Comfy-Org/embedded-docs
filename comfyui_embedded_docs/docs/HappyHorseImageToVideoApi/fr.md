@@ -9,7 +9,7 @@ Ce nœud génère une courte vidéo à partir d’une seule image de départ à 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `model` | Le modèle HappyHorse à utiliser pour la génération vidéo. | COMBO | Oui | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Image initiale. Le rapport hauteur/largeur de la sortie est dérivé de cette image. | IMAGE | Oui | N/A |
+| `first_frame` | Image initiale. Le rapport hauteur/largeur de la sortie est dérivé de cette image. | IMAGE | Oui | min. 300×300 px; ratio 1:2.5 à 2.5:1 |
 | `seed` | Graine (seed) à utiliser pour la génération. (défaut : 0) | INT | Non | 0 à 2147483647 |
 | `watermark` | Indique s’il faut ajouter un filigrane généré par IA au résultat. (option avancée ; défaut : False) | BOOLEAN | Non | True / False |
 

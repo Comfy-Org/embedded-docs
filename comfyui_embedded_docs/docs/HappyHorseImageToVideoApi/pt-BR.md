@@ -9,7 +9,7 @@ Este nó gera um vídeo curto a partir de uma única imagem inicial usando o mod
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
 | `model` | O modelo HappyHorse a ser usado para a geração de vídeos. | COMBO | Sim | `"happyhorse-1.1-i2v"`<br>`"happyhorse-1.0-i2v"` |
-| `first_frame` | Imagem do primeiro quadro. A proporção de aspecto da saída é derivada desta imagem. | IMAGE | Sim | N/A |
+| `first_frame` | Imagem do primeiro quadro. A proporção de aspecto da saída é derivada desta imagem. | IMAGE | Sim | mín. 300×300 px; proporção 1:2.5 a 2.5:1 |
 | `seed` | Semente a ser usada para a geração. (padrão: 0) | INT | Não | 0 a 2147483647 |
 | `watermark` | Indica se deve adicionar uma marca d'água gerada por IA ao resultado. (opção avançada; padrão: False) | BOOLEAN | Não | True / False |
 

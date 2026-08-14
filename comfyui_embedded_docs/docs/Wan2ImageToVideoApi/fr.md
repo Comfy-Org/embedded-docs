@@ -9,7 +9,7 @@ Le nœud **Wan 2.7 Image to Video** génère une vidéo à partir d'une image de
 | Paramètre | Description | Type de données | Requis | Plage |
 | --- | --- | --- | --- | --- |
 | `model` | Le modèle d'IA à utiliser pour la génération vidéo. | COMBO | Oui | `"wan2.7-i2v"` |
-| `first_frame` | Image de la première image. Le format de sortie est dérivé de cette image. | IMAGE | Oui | - |
+| `first_frame` | Première image. Le format de sortie est dérivé de cette image. | IMAGE | Oui | - |
 | `last_frame` | Image de la dernière image. Le modèle génère une vidéo qui fait la transition de la première à la dernière image. | IMAGE | Non | - |
 | `audio` | Audio pour piloter la génération vidéo (ex. : synchronisation labiale, mouvement synchronisé sur le rythme). Durée : 2 s à 30 s. S'il n'est pas fourni, le modèle génère automatiquement une musique de fond ou des effets sonores correspondants. | AUDIO | Non | - |
 | `seed` | Graine à utiliser pour la génération (défaut : 0). | INT | Oui | 0 à 2147483647 |

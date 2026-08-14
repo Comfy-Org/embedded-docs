@@ -11,10 +11,10 @@ Les entrées incluent des paramètres communs et des paramètres spécifiques au
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Le modèle spécifique à utiliser pour la génération de vidéo. | COMBO | Oui | `"wan2.7-t2v"` |
-| `audio` | Audio pour piloter la génération vidéo (par exemple, synchronisation labiale, mouvement synchronisé sur le rythme). Durée : 3 s à 30 s. S'il n'est pas fourni, le modèle génère automatiquement une musique de fond ou des effets sonores correspondants. | AUDIO | Non | - |
+| `audio` | Audio pour piloter la génération vidéo (par exemple, synchronisation labiale, mouvement synchronisé sur le rythme). Durée : 1.5 s à 60 s. S'il n'est pas fourni, le modèle génère automatiquement une musique de fond ou des effets sonores correspondants. | AUDIO | Non | - |
 | `seed` | Seed à utiliser pour la génération (défaut : 0). | INT | Non | 0 à 2147483647 |
-| `prompt_extend` | Indique s'il faut améliorer le prompt avec l'assistance de l'IA (défaut : True). | BOOLEAN | Non | - |
-| `watermark` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (défaut : False). | BOOLEAN | Non | - |
+| `prompt_extend` | Indique s'il faut améliorer le prompt avec l'assistance de l'IA (défaut : True). | BOOLEAN | Non True / False |
+| `watermark` | Indique s'il faut ajouter un filigrane généré par l'IA au résultat (défaut : False). | BOOLEAN | Non True / False |
 
 ### wan2.7-t2v Entrées
 

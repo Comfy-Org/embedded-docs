@@ -9,7 +9,7 @@ Wan 2.7 Video Devamı düğümü, bir girdi video klibinin sonundan itibaren dev
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Kullanılacak video üretim modeli. | COMBO | Evet | `"wan2.7-i2v"` |
-| `first_clip` | Devam edilecek girdi videosu. Süre: 2s-10s. Çıktı en-boy oranı bu videodan türetilir. | VIDEO | Evet | 2s to 10s |
+| `first_clip` | Devam edilecek girdi videosu. Süre: 2s-10s. Çıktı en-boy oranı bu videodan türetilir. | VIDEO | Evet | 2 ile 10 saniye arası |
 | `last_frame` | Son kare görüntüsü. Devam, bu kareye doğru geçiş yapar. | IMAGE | Hayır | - |
 | `seed` | Üretim için kullanılacak seed. (varsayılan: 0) | INT | Evet | 0 ile 2147483647 arası |
 | `prompt_extend` | İstem'in yapay zeka yardımıyla geliştirilip geliştirilmeyeceği. (varsayılan: True) | BOOLEAN | Evet | - |

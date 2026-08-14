@@ -11,10 +11,10 @@ As entradas incluem configurações comuns e configurações específicas do mod
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
 |-----------|-------------|--------------|-------------|-------|
 | `model` | O modelo específico a ser usado para geração de vídeo. | COMBO | Sim | `"wan2.7-t2v"` |
-| `audio` | Áudio para orientar a geração de vídeo (ex.: sincronização labial, movimento sincronizado com batida). Duração: 3s-30s. Se não for fornecido, o modelo gera automaticamente música de fundo ou efeitos sonoros correspondentes. | AUDIO | Não | - |
+| `audio` | Áudio para orientar a geração de vídeo (ex.: sincronização labial, movimento sincronizado com batida). Duração: 1.5s-60s. Se não for fornecido, o modelo gera automaticamente música de fundo ou efeitos sonoros correspondentes. | AUDIO | Não | - |
 | `seed` | Semente a ser usada para a geração (padrão: 0). | INT | Não | 0 a 2147483647 |
-| `prompt_extend` | Se deve aprimorar o prompt com assistência de IA (padrão: True). | BOOLEAN | Não | - |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). | BOOLEAN | Não | - |
+| `prompt_extend` | Se deve aprimorar o prompt com assistência de IA (padrão: True). | BOOLEAN | Não True / False |
+| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). | BOOLEAN | Não True / False |
 
 ### Entradas do wan2.7-t2v
 
