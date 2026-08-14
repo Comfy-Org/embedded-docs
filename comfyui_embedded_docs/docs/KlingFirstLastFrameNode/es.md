@@ -1,29 +1,36 @@
 # Kling 3.0 Primer-Último Fotograma a Video
 
-Este nodo utiliza el modelo Kling 3.0 para generar un video. Crea el video basándose en un texto descriptivo, una duración especificada y dos imágenes proporcionadas: un fotograma inicial y un fotograma final. El nodo también puede generar audio de acompañamiento para el video.
+Este nodo utiliza el modelo Kling 3.0 para generar un video. Crea el video basado en un prompt de texto, una duración especificada y dos imágenes proporcionadas: un fotograma inicial y un fotograma final. El nodo también puede generar audio de acompañamiento para el video.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `prompt` | La descripción textual que guía la generación del video. Debe tener entre 1 y 2500 caracteres. | STRING | Sí | N/A |
-| `duración` | La duración del video en segundos (valor predeterminado: 5). | INT | No | 3 a 15 |
-| `primer_fotograma` | La imagen inicial del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | N/A |
-| `último_fotograma` | La imagen final del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | N/A |
-| `generar_audio` | Controla si se genera audio para el video (valor predeterminado: True). | BOOLEAN | No | N/A |
-| `modelo` | Configuración del modelo y de generación. Al seleccionar esta opción se muestra un parámetro `resolution` anidado. | COMBO | No | `"kling-v3"` |
-| `model.resolution` | La resolución del video generado. Este parámetro solo está disponible cuando el `modelo` está configurado en `"kling-v3"` (valor predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `semilla` | Un número utilizado para controlar si el nodo debe reejecutarse. Los resultados no son deterministas independientemente del valor de la semilla (valor predeterminado: 0). | INT | No | 0 a 2147483647 |
+### Entradas comunes
 
-**Nota:** Las imágenes `first_frame` y `end_frame` deben cumplir con los requisitos de tamaño mínimo y relación de aspecto especificados para que el nodo funcione correctamente.
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+|-----------|-------------|--------------|-----------|-------|
+| `model` | Configuración del modelo y de generación. Seleccionar esta opción revela un parámetro anidado `resolution`. | COMBO | No | `"kling-v3"` |
+| `prompt` | La descripción de texto que guía la generación del video. Debe tener entre 1 y 2500 caracteres. | STRING | Sí | N/A |
+| `duration` | La duración del video en segundos (predeterminado: 5). | INT | No | 3 a 15 |
+| `first_frame` | La imagen inicial del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | N/A |
+| `end_frame` | La imagen final del video. Debe tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. | IMAGE | Sí | N/A |
+| `generate_audio` | Controla si se genera audio para el video (predeterminado: True). | BOOLEAN | No | N/A |
+| `seed` | Seed controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | No | 0 a 2147483647 |
+
+### Entradas de Kling V3
+
+| Parámetro | Descripción | Tipo de dato | Requerido | Rango |
+|-----------|-------------|--------------|-----------|-------|
+| `resolution` | La resolución del video generado (predeterminado: `"1080p"`). | COMBO | No | `"4k"`<br>`"1080p"`<br>`"720p"` |
+
+**Nota:** Las imágenes `first_frame` y `end_frame` deben tener al menos 300x300 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1 para que el nodo funcione correctamente. El `prompt` debe tener entre 1 y 2500 caracteres. La opción `resolution` se corresponde con un modo de generación de Kling: `"4k"`, `"1080p"` (pro) y `"720p"` (estándar).
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
+| Nombre de salida | Descripción | Tipo de dato |
+|------------------|-------------|--------------|
 | `output` | El archivo de video generado. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/KlingFirstLastFrameNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `5c904fec35b2bb41cf521263b1b06fd36ba227400b4cec24e79a4e80618e4bae`
+**Source fingerprint (SHA-256):** `b71119c3267e2a74d2180e5182463c78828e892bfcf1eeb7c33a0f4d7019997f`
