@@ -7,7 +7,7 @@ Recorta aleatoriamente un rango continuo de fotogramas de un video de entrada. E
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
 | `video` | Video de entrada. | VIDEO | Sí | – |
-| `longitud` | Número de fotogramas a conservar. Si `length` es mayor que el número total de fotogramas del video, se conserva el video completo. (predeterminado: 16) | INT | Sí | min: 1, max: 99999 |
+| `longitud` | Número de fotogramas a conservar. Si `longitud` es mayor que el número total de fotogramas del video, se conserva el video completo. (predeterminado: 16) | INT | Sí | min: 1, max: 99999 |
 | `semilla` | Semilla aleatoria. (por defecto: 0) | INT | Sí | min: 0, max: 0xFFFFFFFFFFFFFFFF |
 
 ## Salidas

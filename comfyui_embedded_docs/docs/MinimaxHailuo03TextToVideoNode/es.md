@@ -6,9 +6,9 @@ Este nodo genera un video a partir de un prompt de texto utilizando el modelo Mi
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `model` | Modelo a utilizar para la generación de video. (predeterminado: "MiniMax H3"). Esta selección también incluye el prompt de texto, la resolución, la duración y la relación de aspecto para el video generado. | COMBO | Sí | `"MiniMax H3"` |
-| `seed` | Semilla aleatoria. La misma solicitud con la misma semilla produce resultados similares, aunque no se garantiza que sean idénticos. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
-| `watermark` | Indica si se añade una marca de agua AIGC al video. (predeterminado: false) | BOOLEAN | No | true<br>false |
+| `modelo` | Modelo a utilizar para la generación de video. (predeterminado: "MiniMax H3"). Esta selección también incluye el prompt de texto, la resolución, la duración y la relación de aspecto para el video generado. | COMBO | Sí | `"MiniMax H3"` |
+| `semilla` | Semilla aleatoria. La misma solicitud con la misma semilla produce resultados similares, aunque no se garantiza que sean idénticos. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
+| `marca de agua` | Indica si se añade una marca de agua AIGC al video. (predeterminado: false) | BOOLEAN | No | true<br>false |
 
 Nota: El prompt de texto incluido en la opción `model` debe contener al menos un carácter que no sea un espacio en blanco. El precio estimado que se muestra para este nodo se calcula a partir de la duración del video seleccionado.
 

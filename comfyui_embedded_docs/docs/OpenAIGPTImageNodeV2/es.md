@@ -9,7 +9,7 @@ Este nodo genera imágenes mediante la API GPT Image de OpenAI. Admite múltiple
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 | --- | --- | --- | --- | --- |
 | `prompt` | Texto de solicitud (prompt) para GPT Image (por defecto: ""). | STRING | Sí | N/A |
-| `model` | El modelo GPT Image de OpenAI a utilizar. Al seleccionar un modelo, se muestran parámetros adicionales específicos de ese modelo. | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
+| `modelo` | El modelo GPT Image de OpenAI a utilizar. Al seleccionar un modelo, se muestran parámetros adicionales específicos de ese modelo. | COMBO | Sí | `"gpt-image-2"`<br>`"gpt-image-1.5"`<br>`"gpt-image-1"` |
 | `model.size` | Tamaño de la imagen. Seleccione 'Custom' para usar el ancho y alto personalizados (por defecto: "auto"). Solo disponible para `gpt-image-2`. | COMBO | Sí | `"auto"`<br>`"1024x1024"`<br>`"1024x1536"`<br>`"1536x1024"`<br>`"2048x2048"`<br>`"2048x1152"`<br>`"1152x2048"`<br>`"3840x2160"`<br>`"2160x3840"`<br>`"Custom"` |
 | `model.custom_width` | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (por defecto: 1024). Solo disponible para `gpt-image-2`. | INT | No | 1024 a 3840 |
 | `model.custom_height` | Se usa solo cuando `size` es 'Custom'. Debe ser múltiplo de 16 (por defecto: 1024). Solo disponible para `gpt-image-2`. | INT | No | 1024 a 3840 |
@@ -18,7 +18,7 @@ Este nodo genera imágenes mediante la API GPT Image de OpenAI. Admite múltiple
 | `model.images` | Imágenes de entrada para edición. Solo disponible para `gpt-image-2`. | IMAGE | No | N/A |
 | `model.mask` | Una máscara para especificar qué partes de la imagen de entrada se van a editar. Solo disponible para `gpt-image-2`. | MASK | No | N/A |
 | `n` | Cuántas imágenes generar (por defecto: 1). | INT | Sí | 1 a 8 |
-| `seed` | Semilla para reproducibilidad (por defecto: 0). Nota: aún no está implementada en el backend. | INT | Sí | 0 a 2147483647 |
+| `semilla` | Semilla para reproducibilidad (por defecto: 0). Nota: aún no está implementada en el backend. | INT | Sí | 0 a 2147483647 |
 
 **Restricciones y limitaciones de los parámetros:**
 

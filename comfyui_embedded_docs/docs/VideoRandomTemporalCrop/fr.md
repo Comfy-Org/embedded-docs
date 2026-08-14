@@ -7,7 +7,7 @@ Recadre aléatoirement une plage continue d'images d'une vidéo d'entrée. Le no
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
 | `vidéo` | Vidéo d'entrée. | VIDEO | Oui | – |
-| `longueur` | Nombre d'images à conserver. Si `length` est supérieur au nombre total d'images de la vidéo, toute la vidéo est conservée. (par défaut : 16) | INT | Oui | min : 1, max : 99999 |
+| `longueur` | Nombre d'images à conserver. Si `longueur` est supérieur au nombre total d'images de la vidéo, toute la vidéo est conservée. (par défaut : 16) | INT | Oui | min : 1, max : 99999 |
 | `graine` | Graine aléatoire. (par défaut : 0) | INT | Oui | min : 0, max : 0xFFFFFFFFFFFFFFFF |
 
 ## Sorties

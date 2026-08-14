@@ -7,7 +7,7 @@ Giriş videosundan sürekli bir kare aralığını rastgele kırpar. Tutulacak k
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `video` | Giriş videosu. | VIDEO | Evet | – |
-| `uzunluk` | Tutulacak kare sayısı. `length`, videodaki toplam kare sayısından büyükse videonun tamamı tutulur. (varsayılan: 16) | INT | Evet | min: 1, max: 99999 |
+| `uzunluk` | Tutulacak kare sayısı. `uzunluk`, videodaki toplam kare sayısından büyükse videonun tamamı tutulur. (varsayılan: 16) | INT | Evet | min: 1, max: 99999 |
 | `tohum` | Rastgele tohum. (varsayılan: 0) | INT | Evet | min: 0, max: 0xFFFFFFFFFFFFFFFF |
 
 ## Çıktılar

@@ -6,7 +6,7 @@ Este nodo genera un video utilizando el modelo MiniMax H3, usando imágenes, vid
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a utilizar para la generación de video (por defecto: "MiniMax H3"). Al seleccionar "MiniMax H3" se proporcionan los ajustes `prompt`, `duration`, `resolution`, `ratio`, `reference_images`, `reference_videos` y `reference_audios` que se muestran a continuación. | STRING | Sí | "MiniMax H3" |
+| `modelo` | Modelo a utilizar para la generación de video (por defecto: "MiniMax H3"). Al seleccionar "MiniMax H3" se proporcionan los ajustes `prompt`, `duration`, `resolution`, `ratio`, `reference_images`, `reference_videos` y `reference_audios` que se muestran a continuación. | STRING | Sí | "MiniMax H3" |
 | `prompt` | Descripción de texto del video a generar. Los medios de referencia pueden mencionarse por su orden, por ejemplo "Image 1", "Image 2", "Video 1" o "Audio 1". | STRING | Sí | Longitud mínima: 1 carácter |
 | `duration` | Duración del video generado en segundos. | INT | Sí | Múltiples opciones disponibles |
 | `resolution` | Resolución de salida del video generado. | STRING | Sí | Múltiples opciones disponibles |
@@ -14,8 +14,8 @@ Este nodo genera un video utilizando el modelo MiniMax H3, usando imágenes, vid
 | `reference_images` | Imágenes de referencia de sujeto o estilo, mencionadas en el prompt como "Image 1".."Image 9" en orden de conexión. Hasta 9 imágenes. | IMAGE | No | 0 a 9 imágenes |
 | `reference_videos` | Videos de referencia de movimiento o escena, mencionados en el prompt como "Video 1".."Video 3" en orden de conexión. Hasta 3 videos, de 2 a 15 segundos cada uno, 15 segundos en total. | VIDEO | No | 0 a 3 videos |
 | `reference_audios` | Referencias de audio, mencionadas en el prompt como "Audio 1".."Audio 3" en orden de conexión. Hasta 3 clips, de 2 a 15 segundos cada uno, 15 segundos en total. No se pueden utilizar sin una imagen o video de referencia. | AUDIO | No | 0 a 3 clips |
-| `seed` | Semilla aleatoria. La misma solicitud con la misma semilla produce resultados similares, aunque no se garantiza que sean idénticos (por defecto: 42). | INT | Sí | 0 a 4294967295 |
-| `watermark` | Si se debe añadir una marca de agua AIGC al video (por defecto: false). | BOOLEAN | No | true<br>false |
+| `semilla` | Semilla aleatoria. La misma solicitud con la misma semilla produce resultados similares, aunque no se garantiza que sean idénticos (por defecto: 42). | INT | Sí | 0 a 4294967295 |
+| `marca de agua` | Si se debe añadir una marca de agua AIGC al video (por defecto: false). | BOOLEAN | No | true<br>false |
 
 ### Restricciones de los parámetros
 

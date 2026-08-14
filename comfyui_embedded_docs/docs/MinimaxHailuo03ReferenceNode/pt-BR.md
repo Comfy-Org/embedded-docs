@@ -6,7 +6,7 @@ Este nó gera um vídeo usando o modelo MiniMax H3, utilizando imagens, vídeos 
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Intervalo |
 |-----------|-------------|--------------|-------------|-----------|
-| `model` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). Selecionar "MiniMax H3" fornece as configurações `prompt`, `duration`, `resolution`, `ratio`, `reference_images`, `reference_videos` e `reference_audios` abaixo. | STRING | Sim | "MiniMax H3" |
+| `modelo` | Modelo a ser usado para geração de vídeo (padrão: "MiniMax H3"). Selecionar "MiniMax H3" fornece as configurações `prompt`, `duration`, `resolution`, `ratio`, `reference_images`, `reference_videos` e `reference_audios` abaixo. | STRING | Sim | "MiniMax H3" |
 | `prompt` | Descrição textual do vídeo a ser gerado. A mídia de referência pode ser mencionada por sua ordem, por exemplo "Image 1", "Image 2", "Video 1" ou "Audio 1". | STRING | Sim | Comprimento mínimo: 1 caractere |
 | `duration` | Duração do vídeo gerado em segundos. | INT | Sim | Múltiplas opções disponíveis |
 | `resolution` | Resolução de saída do vídeo gerado. | STRING | Sim | Múltiplas opções disponíveis |
@@ -14,8 +14,8 @@ Este nó gera um vídeo usando o modelo MiniMax H3, utilizando imagens, vídeos 
 | `reference_images` | Imagens de referência de assunto ou estilo, mencionadas no prompt como "Image 1".."Image 9" na ordem de conexão. Até 9 imagens. | IMAGE | Não | 0 a 9 imagens |
 | `reference_videos` | Vídeos de referência de movimento ou cena, mencionados no prompt como "Video 1".."Video 3" na ordem de conexão. Até 3 vídeos, cada um com 2 a 15 segundos, totalizando 15 segundos. | VIDEO | Não | 0 a 3 vídeos |
 | `reference_audios` | Referências de áudio, mencionadas no prompt como "Audio 1".."Audio 3" na ordem de conexão. Até 3 clipes, cada um com 2 a 15 segundos, totalizando 15 segundos. Não podem ser usadas sem uma imagem ou vídeo de referência. | AUDIO | Não | 0 a 3 clipes |
-| `seed` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, mas não garantidamente idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
-| `watermark` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). | BOOLEAN | Não | true<br>false |
+| `semente` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, mas não garantidamente idênticos (padrão: 42). | INT | Sim | 0 a 4294967295 |
+| `marca d'água` | Se deve adicionar uma marca d'água AIGC ao vídeo (padrão: false). | BOOLEAN | Não | true<br>false |
 
 ### Restrições de Parâmetros
 

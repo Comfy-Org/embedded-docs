@@ -5,7 +5,7 @@
 ## 輸入
 | 參數 | 描述 | 資料類型 | 必需 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於影片生成的模型（預設："MiniMax H3"）。選擇 "MiniMax H3" 時，會提供以下設定：`prompt`、`duration`、`resolution`、`ratio`、`reference_images`、`reference_videos`、`reference_audios`。 | STRING | 是 | "MiniMax H3" |
+| `模型` | 用於影片生成的模型（預設："MiniMax H3"）。選擇 "MiniMax H3" 時，會提供以下設定：`prompt`、`duration`、`resolution`、`ratio`、`reference_images`、`reference_videos`、`reference_audios`。 | STRING | 是 | "MiniMax H3" |
 | `prompt` | 欲生成影片的文字描述。可按順序引用參考媒體，例如「Image 1」、「Image 2」、「Video 1」或「Audio 1」。 | STRING | 是 | 最小長度：1 個字元 |
 | `duration` | 生成影片的時長（秒）。 | INT | 是 | 提供多種選項 |
 | `resolution` | 生成影片的輸出解析度。 | STRING | 是 | 提供多種選項 |
@@ -13,8 +13,8 @@
 | `reference_images` | 主體或風格參考圖片，在提示詞中按連接順序引用為「Image 1」至「Image 9」。最多 9 張圖片。 | IMAGE | 否 | 0 至 9 張圖片 |
 | `reference_videos` | 動作或場景參考影片，在提示詞中按連接順序引用為「Video 1」至「Video 3」。最多 3 個影片，每個 2-15 秒，總共 15 秒。 | VIDEO | 否 | 0 至 3 個影片 |
 | `reference_audios` | 音訊參考，在提示詞中按連接順序引用為「Audio 1」至「Audio 3」。最多 3 個片段，每個 2-15 秒，總共 15 秒。沒有參考圖片或影片時無法使用。 | AUDIO | 否 | 0 至 3 個片段 |
-| `seed` | 隨機種子。使用相同種子的相同請求會產生相似但不保證相同的結果（預設：42）。 | INT | 是 | 0 至 4294967295 |
-| `watermark` | 是否在影片中新增 AIGC 浮水印（預設：false）。 | BOOLEAN | 否 | true<br>false |
+| `隨機種子` | 隨機種子。使用相同種子的相同請求會產生相似但不保證相同的結果（預設：42）。 | INT | 是 | 0 至 4294967295 |
+| `浮水印` | 是否在影片中新增 AIGC 浮水印（預設：false）。 | BOOLEAN | 否 | true<br>false |
 
 ### 參數限制
 

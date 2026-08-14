@@ -8,7 +8,7 @@ Le nœud Empty Qwen Image Layered Latent prépare la toile vierge sur laquelle l
 | --- | --- | --- | --- | --- |
 | `largeur` | La largeur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) | INT | Oui | 16 à MAX_RESOLUTION |
 | `hauteur` | La hauteur de l'image latente à créer. La valeur doit être divisible par 16. (par défaut : 640) | INT | Oui | 16 à MAX_RESOLUTION |
-| `couches` | En combien de couches diviser l'image. Une feuille supplémentaire est toujours réservée à l'image complète, vous obtenez donc `layers + 1` images, et non `layers`. Réglez-le sur 2 et vous obtenez l'image complète plus 2 couches. Réglez-le sur 0 et vous obtenez uniquement l'image complète. (par défaut : 3) | INT | Oui | 0 à MAX_RESOLUTION |
+| `couches` | En combien de couches diviser l'image. Une feuille supplémentaire est toujours réservée à l'image complète, vous obtenez donc `layers + 1` images, et non `couches`. Réglez-le sur 2 et vous obtenez l'image complète plus 2 couches. Réglez-le sur 0 et vous obtenez uniquement l'image complète. (par défaut : 3) | INT | Oui | 0 à MAX_RESOLUTION |
 | `taille_lot` | Le nombre d'échantillons latents à générer dans un lot. (par défaut : 1) | INT | Non | 1 à 4096 |
 
 **Remarque :** Les paramètres `width` et `height` sont divisés en interne par 8 pour déterminer les dimensions spatiales du tenseur latent de sortie.

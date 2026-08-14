@@ -6,9 +6,9 @@ Ce nœud génère une vidéo à partir d'un prompt texte en utilisant le modèle
 
 | Paramètre | Description | Type de données | Obligatoire | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modèle à utiliser pour la génération vidéo. (défaut : "MiniMax H3"). Cette sélection inclut également le prompt texte, la résolution, la durée et le format d'image pour la vidéo générée. | COMBO | Oui | `"MiniMax H3"` |
-| `seed` | Graine aléatoire. Une même requête avec la même graine donne des résultats similaires, mais pas garantis identiques. (défaut : 42) | INT | Oui | 0 à 4294967295 |
-| `watermark` | Indique si un filigrane AIGC doit être ajouté à la vidéo. (défaut : false) | BOOLEAN | Non | true<br>false |
+| `modèle` | Modèle à utiliser pour la génération vidéo. (défaut : "MiniMax H3"). Cette sélection inclut également le prompt texte, la résolution, la durée et le format d'image pour la vidéo générée. | COMBO | Oui | `"MiniMax H3"` |
+| `graine` | Graine aléatoire. Une même requête avec la même graine donne des résultats similaires, mais pas garantis identiques. (défaut : 42) | INT | Oui | 0 à 4294967295 |
+| `filigrane` | Indique si un filigrane AIGC doit être ajouté à la vidéo. (défaut : false) | BOOLEAN | Non | true<br>false |
 
 Remarque : Le prompt texte inclus dans l'option `model` doit contenir au moins un caractère non blanc. Le prix estimé affiché pour ce nœud est calculé à partir de la durée vidéo sélectionnée.
 
