@@ -885,7 +885,12 @@ def copy_assets_and_rewrite(
     used_names: dict[str, Path] = {}
     for orig, abs_path in refs:
         filename = abs_path.name
-        rel = abs_path.relative_to(doc_dir)
+        # 跨目录相对引用（如 ../Load3D/asset/x.webp）resolve 后在 doc_dir 之外，
+        # relative_to 会抛 ValueError；此时直接用 basename 作为源子目录名。
+        try:
+            rel = abs_path.relative_to(doc_dir)
+        except ValueError:
+            rel = Path(filename)
         # Deterministic destination name: include the source subdirectory on collision
         if filename in used_names and used_names[filename] != abs_path:
             stem, ext = filename.rsplit(".", 1) if "." in filename else (filename, "")
