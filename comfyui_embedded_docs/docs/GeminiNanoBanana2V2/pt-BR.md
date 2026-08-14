@@ -1,57 +1,34 @@
 # Nano Banana 2
 
-Este nó gera ou edita imagens enviando um prompt de texto para a API Vertex AI do Google por meio dos modelos Gemini 3.1 Flash Image. Ele cria novas imagens a partir de uma descrição ou modifica imagens existentes usando imagens de referência opcionais.
+Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/en.md)
+
+## Visão Geral
+
+Este nó gera ou edita imagens enviando um prompt de texto para a API Vertex AI do Google. Ele usa um modelo Gemini específico para criar novas imagens ou modificar imagens existentes com base em suas instruções.
 
 ## Entradas
 
-### Entradas comuns
+| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
+| --- | --- | --- | --- | --- |
+| `prompt` | Prompt de texto descrevendo a imagem a ser gerada ou as edições a serem aplicadas. Inclua quaisquer restrições, estilos ou detalhes que o modelo deve seguir. | STRING | Sim | N/A |
+| `model` | Seleciona o modelo Gemini a ser usado para geração de imagens. Atualmente, apenas uma opção está disponível. | COMBO | Sim | `"Nano Banana 2 (Gemini 3.1 Flash Image)"` |
+| `seed` | Quando a semente é fixada em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para requisições repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo quando você usa o mesmo valor de semente. Por padrão, um valor de semente aleatório é usado. (padrão: 42) | INT | Sim | 0 a 18446744073709551615 |
+| `response_modalities` | Determina o formato da resposta. Escolha "IMAGE" para receber apenas uma imagem, ou "IMAGE+TEXT" para receber tanto uma imagem quanto uma descrição textual. (padrão: "IMAGE") | COMBO | Sim | `"IMAGE"`<br>`"IMAGE+TEXT"` |
+| `system_prompt` | Instruções fundamentais que ditam o comportamento de uma IA. Este é um parâmetro avançado. | STRING | Não | N/A |
 
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
-|-----------|-------------|---------------|--------------|-------|
-| `prompt` | Prompt de texto que descreve a imagem a ser gerada ou as edições a serem aplicadas. Inclua quaisquer restrições, estilos ou detalhes que o modelo deva seguir. Não deve estar vazio. | STRING | Sim | N/A |
-| `model` | Seleciona o modelo Gemini a ser usado para geração de imagens. Este parâmetro inclui subparâmetros adicionais para resolução, proporção de aspecto, nível de raciocínio e entradas de referência. | COMBO | Sim | `"Nano Banana 2 (Gemini 3.1 Flash Image)"`<br>`"Nano Banana 2 Lite"` |
-| `seed` | Quando a seed é fixada em um valor específico, o modelo faz o melhor esforço para fornecer a mesma resposta para solicitações repetidas. A saída determinística não é garantida. Além disso, alterar o modelo ou as configurações de parâmetros, como a temperatura, pode causar variações na resposta mesmo ao usar o mesmo valor de seed. Por padrão, um valor de seed aleatório é usado. (padrão: 42) | INT | Sim | 0 a 18446744073709551615 |
-| `response_modalities` | Determina o formato da resposta. IMAGE retorna apenas uma imagem; IMAGE+TEXT retorna uma imagem e uma resposta em texto. (padrão: IMAGE) Parâmetro avançado. | COMBO | Sim | `"IMAGE"`<br>`"IMAGE+TEXT"` |
-| `system_prompt` | Instruções fundamentais que definem o comportamento de uma IA. O padrão é um prompt integrado que instrui o modelo a sempre produzir uma imagem. Parâmetro avançado. | STRING | Não | N/A |
-| `temperature` | Controla a aleatoriedade na geração. Valores mais baixos são mais focados/determinísticos. (padrão: 1.0) Parâmetro avançado. | FLOAT | Não | 0.0 a 2.0 (passo 0.01) |
-| `top_p` | Limiar de amostragem de núcleo (nucleus sampling). Valores mais baixos são mais focados; valores mais altos, mais diversos. (padrão: 0.95) Parâmetro avançado. | FLOAT | Não | 0.0 a 1.0 (passo 0.01) |
+**Nota sobre o parâmetro `model`:** O parâmetro `model` é uma combinação dinâmica que inclui subparâmetros adicionais para resolução, proporção de aspecto e nível de raciocínio. Esses subparâmetros são definidos dentro da seleção do modelo e não são listados como entradas separadas nesta tabela.
 
-### Entradas do Nano Banana 2 (Gemini 3.1 Flash Image)
-
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
-|-----------|-------------|---------------|--------------|-------|
-| `aspect_ratio` | Se definido como 'auto', corresponde à proporção de aspecto da sua imagem de entrada; se nenhuma imagem for fornecida, uma imagem 16:9 geralmente é gerada. (padrão: auto) | COMBO | Sim | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"21:9"`<br>`"1:4"`<br>`"4:1"`<br>`"8:1"`<br>`"1:8"` |
-| `resolution` | Resolução de saída alvo. | COMBO | Sim | `"1K"`<br>`"2K"`<br>`"4K"` |
-| `thinking_level` | Seleciona o nível de raciocínio usado pelo modelo. | COMBO | Sim | `"MINIMAL"`<br>`"HIGH"` |
-
-### Entradas do Nano Banana 2 Lite
-
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
-|-----------|-------------|---------------|--------------|-------|
-| `aspect_ratio` | Se definido como 'auto', corresponde à proporção de aspecto da sua imagem de entrada; se nenhuma imagem for fornecida, uma imagem 16:9 geralmente é gerada. (padrão: auto) | COMBO | Sim | `"auto"`<br>`"1:1"`<br>`"2:3"`<br>`"3:2"`<br>`"3:4"`<br>`"4:3"`<br>`"4:5"`<br>`"5:4"`<br>`"9:16"`<br>`"16:9"`<br>`"21:9"`<br>`"1:4"`<br>`"4:1"`<br>`"8:1"`<br>`"1:8"` |
-| `resolution` | Resolução de saída alvo. | COMBO | Sim | `"1K"` |
-| `thinking_level` | Seleciona o nível de raciocínio usado pelo modelo. | COMBO | Sim | `"MINIMAL"`<br>`"HIGH"` |
-
-### Entradas de referência
-
-| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
-|-----------|-------------|---------------|--------------|-------|
-| `images` | Imagem(ns) de referência opcional(is). Até 14 imagens no total. Slot expansível: conecte `image_1` a `image_14`. | IMAGE | Não | 0 a 14 imagens |
-| `files` | Arquivo(s) opcional(is) para usar como contexto para o modelo. Aceita entradas do nó Gemini Generate Content Input Files. | GEMINI_INPUT_FILES | Não | N/A |
-
-**Observação:** No máximo 14 imagens de referência podem ser conectadas à entrada `images`.
+**Nota sobre a entrada de imagem:** Você pode fornecer até 14 imagens como entrada para o modelo. Essas imagens são passadas através do subcampo de imagem do parâmetro `model` e são usadas para edição ou como contexto visual para geração.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dados |
-|----------------|-------------|---------------|
+| Nome da Saída | Descrição | Tipo de Dado |
+| --- | --- | --- |
 | `IMAGE` | A imagem gerada ou editada. | IMAGE |
 | `STRING` | Uma descrição textual ou legenda gerada pelo modelo. | STRING |
-| `thought_image` | Primeira imagem do processo de raciocínio do modelo. Disponível apenas com thinking_level HIGH e modalidade IMAGE+TEXT. | IMAGE |
-
-**Observação:** A saída `STRING` fica vazia quando `response_modalities` está definido como `IMAGE`.
+| `thought_image` | Primeira imagem do processo de raciocínio do modelo. Disponível apenas com o nível de raciocínio ALTO e modalidade IMAGE+TEXT. | IMAGE |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `347d28aeb46aa91f7515a31c385a3e3f805a1861116a21dd2ef6575ab7fd4f3e`
+**Source fingerprint (SHA-256):** `6b91afcdd12e08ff0e3afdbb5596bfd63463cda4d2b031019dedf03bd122fa87`

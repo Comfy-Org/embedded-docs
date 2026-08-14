@@ -1,57 +1,60 @@
 # Nano Banana 2
 
-Bu düğüm, Gemini 3.1 Flash Image modelleri aracılığıyla Google'ın Vertex AI API'sine bir metin istemi göndererek görüntüler oluşturur veya düzenler. Bir açıklamadan yeni görüntüler oluşturur veya isteğe bağlı referans görüntüleri kullanarak mevcut görüntüleri değiştirir.
+ComfyUI düğüm belgelerini İngilizceden Türkçeye çevirmede uzmanlaşmış teknik çeviri uzmanısınız.
 
-## Girdiler
+## Çeviri Kuralları
 
-### Ortak Girdiler
+1. **Çevrilmemesi gereken içerik:**
+   - Ters tırnak içindeki parametre adları: `image`, `seed`, `model`
+   - BÜYÜK harflerle veri türleri: IMAGE, STRING, INT, FLOAT, MODEL, CONDITIONING, vb.
+   - Range sütunundaki değerler: sayılar, "auto", seçenek adları
+   - Kod, dosya yolları
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak görüntüyü veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin izlemesi gereken kısıtlamaları, stilleri veya ayrıntıları ekleyin. Boş olmamalıdır. | STRING | Evet | N/A |
-| `model` | Görüntü oluşturma için kullanılacak Gemini modelini seçer. Bu parametre; çözünürlük, en-boy oranı, düşünme düzeyi ve referans girdileri için ek alt parametreler içerir. | COMBO | Evet | `"Nano Banana 2 (Gemini 3.1 Flash Image)"<br>"Nano Banana 2 Lite"` |
-| `seed` | Tohum belirli bir değere sabitlendiğinde model, tekrarlanan isteklerde aynı yanıtı sağlamak için elinden gelenin en iyisini yapar. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır. (varsayılan: 42) | INT | Evet | 0 to 18446744073709551615 |
-| `response_modalities` | Yanıt biçimini belirler. IMAGE yalnızca bir görüntü döndürür; IMAGE+TEXT bir görüntü ve bir metin yanıtı döndürür. (varsayılan: IMAGE) Gelişmiş parametre. | COMBO | Evet | `"IMAGE"<br>"IMAGE+TEXT"` |
-| `system_prompt` | Bir yapay zekânın davranışını belirleyen temel talimatlardır. Varsayılan olarak, modele her zaman bir görüntü üretmesini söyleyen yerleşik bir istem kullanılır. Gelişmiş parametre. | STRING | Hayır | N/A |
-| `temperature` | Üretimdeki rastgeleliği kontrol eder. Düşük değerler daha odaklı/deterministik sonuçlar verir. (varsayılan: 1.0) Gelişmiş parametre. | FLOAT | Hayır | 0.0 to 2.0 (step 0.01) |
-| `top_p` | Çekirdek örnekleme eşiği. Düşük değerler daha odaklı, yüksek değerler daha çeşitlidir. (varsayılan: 0.95) Gelişmiş parametre. | FLOAT | Hayır | 0.0 to 1.0 (step 0.01) |
+2. **Çevrilmesi gereken içerik:**
+   - Bölüm başlıkları: ## Genel Bakış, ## Girdiler, ## Çıktılar
+   - Tüm açıklayıcı metinler
+   - Parametre açıklamaları
 
-### Nano Banana 2 (Gemini 3.1 Flash Image) Girdileri
+3. **Çeviri kalitesi:**
+   - Standart Türkçe kullanın
+   - Profesyonel ama anlaşılır bir üslup koruyun
+   - Teknik doğruluğu sağlayın
+   - Standart Türkçe teknik terminolojiyi kullanın
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `aspect_ratio` | 'auto' olarak ayarlanırsa giriş görüntünüzün en-boy oranıyla eşleşir; görüntü sağlanmazsa genellikle 16:9 oranında bir görüntü üretilir. (varsayılan: auto) | COMBO | Evet | `"auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9"<br>"1:4"<br>"4:1"<br>"8:1"<br>"1:8"` |
-| `resolution` | Hedef çıktı çözünürlüğü. | COMBO | Evet | `"1K"<br>"2K"<br>"4K"` |
-| `thinking_level` | Model tarafından kullanılan düşünme düzeyini seçer. | COMBO | Evet | `"MINIMAL"<br>"HIGH"` |
+4. **Format:**
+   - Tüm Markdown biçimlendirmesini koruyun
+   - Tablo yapısını koruyun
+   - Belgenin başına herhangi bir not veya bağlantı eklemeyin (otomatik olarak eklenecektir)
 
-### Nano Banana 2 Lite Girdileri
+Lütfen aşağıdaki belgeyi Türkçeye çevirin (belgenin başlangıç notunu dahil etmeyin):
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `aspect_ratio` | 'auto' olarak ayarlanırsa giriş görüntünüzün en-boy oranıyla eşleşir; görüntü sağlanmazsa genellikle 16:9 oranında bir görüntü üretilir. (varsayılan: auto) | COMBO | Evet | `"auto"<br>"1:1"<br>"2:3"<br>"3:2"<br>"3:4"<br>"4:3"<br>"4:5"<br>"5:4"<br>"9:16"<br>"16:9"<br>"21:9"<br>"1:4"<br>"4:1"<br>"8:1"<br>"1:8"` |
-| `resolution` | Hedef çıktı çözünürlüğü. | COMBO | Evet | `"1K"` |
-| `thinking_level` | Model tarafından kullanılan düşünme düzeyini seçer. | COMBO | Evet | `"MINIMAL"<br>"HIGH"` |
+## Genel Bakış
 
-### Referans Girdileri
+Bu düğüm, Google'ın Vertex AI API'sine bir metin istemi göndererek görseller oluşturur veya düzenler. Talimatlarınıza göre yeni görseller oluşturmak veya mevcut olanları değiştirmek için belirli bir Gemini modeli kullanır.
 
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `images` | İsteğe bağlı referans görüntüleri. Toplam 14 görüntüye kadar. Genişletilebilir yuva: `image_1` ile `image_14` arasını bağlayın. | IMAGE | Hayır | 0 to 14 images |
-| `files` | Model için bağlam olarak kullanılacak isteğe bağlı dosya(lar). Gemini Generate Content Input Files düğümünden girdi kabul eder. | GEMINI_INPUT_FILES | Hayır | N/A |
+## Girişler
 
-**Not:** `images` girişine en fazla 14 referans görüntüsü bağlanabilir.
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+| --- | --- | --- | --- | --- |
+| `prompt` | Oluşturulacak görseli veya uygulanacak düzenlemeleri tanımlayan metin istemi. Modelin uyması gereken kısıtlamaları, stilleri veya detayları ekleyin. | STRING | Evet | Yok |
+| `model` | Görsel oluşturma için kullanılacak Gemini modelini seçer. Şu anda yalnızca bir seçenek mevcuttur. | COMBO | Evet | `"Nano Banana 2 (Gemini 3.1 Flash Image)"` |
+| `seed` | Tohum belirli bir değere sabitlendiğinde, model tekrarlanan istekler için aynı yanıtı vermek üzere elinden gelenin en iyisini yapar. Deterministik çıktı garanti edilmez. Ayrıca, modeli veya sıcaklık gibi parametre ayarlarını değiştirmek, aynı tohum değerini kullansanız bile yanıtta farklılıklara neden olabilir. Varsayılan olarak rastgele bir tohum değeri kullanılır. (varsayılan: 42) | INT | Evet | 0 ile 18446744073709551615 arası |
+| `response_modalities` | Yanıtın biçimini belirler. Yalnızca bir görsel almak için "IMAGE" veya hem bir görsel hem de bir metin açıklaması almak için "IMAGE+TEXT" seçeneğini belirleyin. (varsayılan: "IMAGE") | COMBO | Evet | `"IMAGE"`<br>`"IMAGE+TEXT"` |
+| `system_prompt` | Bir yapay zekanın davranışını belirleyen temel talimatlar. Bu gelişmiş bir parametredir. | STRING | Hayır | Yok |
+
+**`model` parametresi hakkında not:** `model` parametresi, çözünürlük, en boy oranı ve düşünme seviyesi için ek alt parametreler içeren dinamik bir birleşik kutudur. Bu alt parametreler model seçimi içinde tanımlanır ve bu tabloda ayrı girişler olarak listelenmez.
+
+**Görsel girişi hakkında not:** Modele giriş olarak en fazla 14 görsel sağlayabilirsiniz. Bu görseller, `model` parametresinin görsel alt alanı aracılığıyla iletilir ve düzenleme veya oluşturma için görsel bağlam olarak kullanılır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-|-------------|-------------|-----------|
-| `IMAGE` | Oluşturulan veya düzenlenen görüntü. | IMAGE |
-| `STRING` | Model tarafından oluşturulan metin açıklaması veya başlık. | STRING |
-| `thought_image` | Modelin düşünme sürecinden gelen ilk görüntü. Yalnızca thinking_level HIGH ve IMAGE+TEXT modalitesiyle kullanılabilir. | IMAGE |
-
-**Not:** `response_modalities` değeri `IMAGE` olarak ayarlandığında `STRING` çıktısı boştur.
+| --- | --- | --- |
+| `IMAGE` | Oluşturulan veya düzenlenen görsel. | IMAGE |
+| `thought_image` | Model tarafından oluşturulan bir metin açıklaması veya başlık. | STRING |
+| `thought_image` | Modelin düşünme sürecindeki ilk görsel. Yalnızca düşünme_seviyesi YÜKSEK ve IMAGE+TEXT modalitesi ile kullanılabilir. | IMAGE |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiNanoBanana2V2/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `347d28aeb46aa91f7515a31c385a3e3f805a1861116a21dd2ef6575ab7fd4f3e`
+**Source fingerprint (SHA-256):** `6b91afcdd12e08ff0e3afdbb5596bfd63463cda4d2b031019dedf03bd122fa87`

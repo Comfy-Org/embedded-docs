@@ -1,37 +1,29 @@
 # Google Gemini Omni (Video)
 
-Google'ın Gemini Omni Flash modelini kullanarak bir metin prompt'undan sesli video oluşturun. Sonucu yönlendirmek veya düzenlemek için isteğe bağlı olarak referans görseller ve/veya videolar sağlayın. İstenen uzunluğu (3-10 sn) ve en-boy oranını (16:9 veya 9:16) doğrudan prompt içinde belirtin.
+Google'ın Gemini Omni Flash modelini kullanarak bir metin isteminden sesli video oluşturun. Sonucu yönlendirmek veya düzenlemek için isteğe bağlı olarak referans görseller ve/veya videolar sağlayın. İstenen süreyi (3-10s) ve en boy oranını (16:9 veya 9:16) doğrudan istemde belirtin.
 
 ## Girdiler
 
-### Ortak Girdiler
-
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Videoyu oluşturmak için kullanılan Gemini video modeli. | COMBO | Evet | "Omni Flash" |
-| `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 to 2147483647 |
-
-### Omni Flash Girdileri
-
-| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
-|-----------|-------------|-----------|----------|-------|
-| `prompt` | Oluşturulacak videoyu tanımlayın. Uzunluğu ve en-boy oranını doğrudan prompt içinde belirtin, örn. "16:9'da 6 saniyelik bir klip". Uzunluk 3-10 saniye olabilir; en-boy oranı 16:9 (yatay) veya 9:16 (dikey) olmalıdır. Çıktı 720p, 24 FPS ve seslidir. | STRING | Evet | Boşluklar temizlendikten sonra en az 1 karakter |
-| `images` | Genişletilebilir yuva: Videoyu yönlendirmek veya canlandırmak için bir veya daha fazla referans görseli (`image_1`...`image_14`) bağlayın. Toplamda en fazla 14 görsel. | IMAGE | Hayır | 0-14 görsel |
-| `videos` | Genişletilebilir yuva: Yönlendirmek veya düzenlemek için bir veya daha fazla referans videosu (`video_1`...`video_3`) bağlayın. En fazla 3 video; her biri en fazla 10 saniye uzunluğunda. | VIDEO | Hayır | 0-3 video, her biri maksimum 10 saniye |
-| `temperature` | Rastgeleliği kontrol eder. Düşük değer daha odaklı/deterministik, yüksek değer daha çeşitlidir (varsayılan: 1.0). | FLOAT | Hayır | 0.0 to 2.0 |
-| `top_p` | Çekirdek örnekleme: kümülatif olasılığı top_p'ye ulaşan en küçük token kümesinden örnekleme yapar (varsayılan: 0.95). | FLOAT | Hayır | 0.0 to 1.0 |
+| `seed` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir (varsayılan: 42). | INT | Evet | 0 ile 2147483647 arası |
+| `prompt` | Oluşturulacak videoyu tanımlayan metin istemi. Baştaki ve sondaki boşluklar temizlendikten sonra en az bir boşluk olmayan karakter içermelidir. | STRING | Evet | Boşluklar temizlendikten sonra en az 1 karakter |
+| `images` | Video oluşturmayı yönlendirmek için isteğe bağlı referans görseller. Toplam en fazla 14 görsel. | IMAGE | Hayır | Birden fazla görsele izin verilir (en fazla 14) |
+| `videos` | Video oluşturmayı yönlendirmek veya düzenlemek için isteğe bağlı referans videolar. En fazla 3 video, her biri en fazla 10 saniye. | VIDEO | Hayır | Birden fazla videoya izin verilir (en fazla 3, her biri en fazla 10s) |
+| `temperature` | Oluşturmadaki rastgeleliği kontrol eder (varsayılan: 1.0). | FLOAT | Hayır | 0.0 ile 2.0 arası |
+| `top_p` | Nucleus örnekleme parametresi (varsayılan: 0.95). | FLOAT | Hayır | 0.0 ile 1.0 arası |
 
 Notlar:
-- Bir görsel girdisi birden fazla kare içeriyorsa, her kare 14 görsel sınırına dahil sayılır.
-- Referans görsel veya video sağlandığında, toplam kodlanmış medya boyutu yaklaşık 90 MB'ın altında kalmalıdır; aksi takdirde düğüm bir hata verir.
-- Hiçbir referans görsel veya video sağlanmadığında, düğüm videoyu yalnızca metin prompt'undan oluşturur.
+- Bir görsel girdisi birden fazla kare içeriyorsa, her kare 14 görsel sınırına sayılır.
+- `images` veya `videos` sağlandığında, birleşik kodlanmış medya boyutu yaklaşık 90 MB'ın altında kalmalıdır; aksi takdirde düğüm bir hata verir.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `VIDEO` | Gemini modeli tarafından oluşturulan, ses içeren video. | VIDEO |
-| `STRING` | Modelden gelen her türlü metin yanıtı (örneğin akıl yürütme veya açıklamalar). | STRING |
+| `VIDEO` | Gemini modelinden ses içeren oluşturulan video. | VIDEO |
+| `STRING` | Modelden gelen, muhakeme veya açıklamalar gibi metin yanıtı. | STRING |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/tr.md)
 
