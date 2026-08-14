@@ -289,7 +289,7 @@ def extract_en_footer_hash(node_name: str) -> Optional[str]:
         return None
     try:
         content = en_path.read_text(encoding="utf-8")
-    except Exception:
+    except (OSError, UnicodeError):
         return None
     m = re.search(r"SHA-256\)[:\uff1a]\s*\**\s*`([a-f0-9]{64})`", content)
     return m.group(1) if m else None
