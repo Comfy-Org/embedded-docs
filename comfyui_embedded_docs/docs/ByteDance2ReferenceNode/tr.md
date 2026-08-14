@@ -10,7 +10,7 @@ Bir `model` seçmek, aşağıdaki parametrelerden hangilerinin kullanılabilir o
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Videoyu oluşturmak için kullanılan yapay zeka modeli. En yeni model için Seedance 2.5, 30 saniyeye kadar videolar ve mp4/mov çıktısı; maksimum kalite ve 1080p/4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı, en düşük maliyetli oluşturma için Mini. Bir model seçmek, aşağıda listelenen modele özgü girdileri ortaya çıkarır. | COMBO | Evet | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | Videoyu oluşturmak için kullanılan yapay zeka modeli. En yeni model için Seedance 2.5, 30 saniyeye kadar videolar ve mp4 çıktısı; maksimum kalite ve 1080p/4k için Seedance 2.0; hız optimizasyonu için Fast; en hızlı, en düşük maliyetli oluşturma için Mini. Bir model seçmek, aşağıda listelenen modele özgü girdileri ortaya çıkarır. | COMBO | Evet | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Tohum, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar tohumdan bağımsız olarak deterministik değildir (varsayılan: 0). | INT | Evet | 0 ile 2147483647 |
 | `watermark` | Videoya filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Evet | `True`<br>`False` |
 

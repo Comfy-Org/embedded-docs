@@ -10,7 +10,7 @@ Selecting a `model` determines which of the parameters below are available. `vid
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The AI model used to generate the video. Seedance 2.5 for the newest model, videos up to 30 seconds and mp4/mov output; Seedance 2.0 for maximum quality and 1080p/4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals the model-specific inputs listed below. | COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | The AI model used to generate the video. Seedance 2.5 for the newest model, videos up to 30 seconds and mp4 output; Seedance 2.0 for maximum quality and 1080p/4k; Fast for speed optimization; Mini for the fastest, lowest-cost generation. Selecting a model reveals the model-specific inputs listed below. | COMBO | Yes | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | Yes | 0 to 2147483647 |
 | `watermark` | Whether to add a watermark to the video (default: False). | BOOLEAN | Yes | `True`<br>`False` |
 

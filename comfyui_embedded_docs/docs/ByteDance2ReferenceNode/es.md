@@ -10,7 +10,7 @@ Seleccionar un `model` determina cuáles de los parámetros siguientes están di
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `model` | El modelo de IA utilizado para generar el video. Seedance 2.5 para el modelo más nuevo, videos de hasta 30 segundos y salida mp4/mov; Seedance 2.0 para máxima calidad y 1080p/4k; Fast para optimizar la velocidad; Mini para la generación más rápida y de menor costo. Seleccionar un modelo revela las entradas específicas del modelo que se enumeran a continuación. | COMBO | Sí | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | El modelo de IA utilizado para generar el video. Seedance 2.5 para el modelo más nuevo, videos de hasta 30 segundos y salida mp4; Seedance 2.0 para máxima calidad y 1080p/4k; Fast para optimizar la velocidad; Mini para la generación más rápida y de menor costo. Seleccionar un modelo revela las entradas específicas del modelo que se enumeran a continuación. | COMBO | Sí | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla (por defecto: 0). | INT | Sí | 0 a 2147483647 |
 | `watermark` | Si se debe añadir una marca de agua al video (por defecto: False). | BOOLEAN | Sí | `True`<br>`False` |
 

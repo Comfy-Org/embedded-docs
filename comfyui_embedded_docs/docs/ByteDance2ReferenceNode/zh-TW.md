@@ -10,7 +10,7 @@
 
 | 參數 | 說明 | 資料型別 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於生成影片的 AI 模型。Seedance 2.5 為最新模型，影片可達 30 秒，並支援 mp4/mov 輸出；Seedance 2.0 提供最高品質與 1080p/4k；Fast 為速度最佳化；Mini 為最快且成本最低的生成。選取模型後，會顯示下列該模型專屬的輸入。 | COMBO | 是 | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
+| `model` | 用於生成影片的 AI 模型。Seedance 2.5 為最新模型，影片可達 30 秒，並支援 mp4 輸出；Seedance 2.0 提供最高品質與 1080p/4k；Fast 為速度最佳化；Mini 為最快且成本最低的生成。選取模型後，會顯示下列該模型專屬的輸入。 | COMBO | 是 | `"Seedance 2.5"`<br>`"Seedance 2.0"`<br>`"Seedance 2.0 Fast"`<br>`"Seedance 2.0 Mini"` |
 | `seed` | 種子值控制節點是否應重新執行；無論種子為何，結果都是非確定性的（預設：0）。 | INT | 是 | 0 至 2147483647 |
 | `watermark` | 是否在影片中加入浮水印（預設：False）。 | BOOLEAN | 是 | `True`<br>`False` |
 
