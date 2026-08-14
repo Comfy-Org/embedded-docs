@@ -1,26 +1,44 @@
 # HappyHorse Texto para Vídeo
 
-Esta documentação foi gerada por IA. Se você encontrar algum erro ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseTextToVideoApi/en.md)
-
-## Visão Geral
-
-Gera um vídeo com base em um prompt de texto usando o modelo HappyHorse. Este nó envia seu prompt e configurações para a API HappyHorse, aguarda a geração do vídeo e, em seguida, baixa o resultado.
+Gera um vídeo com base em um prompt de texto usando o modelo HappyHorse. Este nó envia seu prompt e configurações para a API HappyHorse, aguarda a geração do vídeo e baixa o resultado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-| --- | --- | --- | --- | --- |
-| `model` | Um dicionário contendo a seleção do modelo e seus parâmetros associados. O modelo deve ser `"happyhorse-1.0-t2v"`. Este dicionário inclui os seguintes subparâmetros:<br><br>**`prompt`** (STRING): A descrição em texto do vídeo que você deseja gerar. Suporta inglês e chinês. (padrão: "").<br>**`resolution`** (COMBO): A resolução do vídeo de saída. Opções: `"720P"`, `"1080P"`.<br>**`ratio`** (COMBO): A proporção de aspecto do vídeo de saída. Opções: `"16:9"`, `"9:16"`, `"1:1"`, `"4:3"`, `"3:4"`.<br>**`duration`** (INT): A duração do vídeo em segundos. (padrão: 5, mínimo: 3, máximo: 15, passo: 1). | DICT | Sim | Ver Descrição |
-| `seed` | Semente a ser usada para a geração. Usar a mesma semente com as mesmas entradas produzirá o mesmo resultado. (padrão: 0). | INT | Sim | 0 a 2147483647 |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: Falso). | BOOLEAN | Não | Verdadeiro / Falso |
+### Entradas Comuns
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `model` | O modelo HappyHorse usado para a geração, juntamente com seus subparâmetros. A seleção de um modelo determina quais subparâmetros estão disponíveis (veja as seções dos modelos abaixo). | DICT | Sim | "happyhorse-1.1-t2v"<br>"happyhorse-1.0-t2v" |
+| `seed` | Semente usada para a geração. Usar a mesma semente com as mesmas entradas produzirá o mesmo resultado. (padrão: 0). | INT | Sim | 0 a 2147483647 |
+| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado. (padrão: False). | BOOLEAN | Não | True / False |
+
+### happyhorse-1.1-t2v Entradas
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `model.prompt` | Prompt que descreve os elementos e características visuais. Suporta inglês e chinês. (padrão: ""). | STRING | Sim | - |
+| `model.resolution` | A resolução do vídeo de saída. | STRING | Sim | "720P"<br>"1080P" |
+| `model.ratio` | A proporção de aspecto do vídeo de saída. | STRING | Sim | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4"<br>"21:9"<br>"9:21"<br>"5:4"<br>"4:5" |
+| `model.duration` | A duração do vídeo em segundos. (padrão: 5, mín: 3, máx: 15, passo: 1). | INT | Sim | 3 a 15 |
+
+### happyhorse-1.0-t2v Entradas
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `model.prompt` | Prompt que descreve os elementos e características visuais. Suporta inglês e chinês. (padrão: ""). | STRING | Sim | - |
+| `model.resolution` | A resolução do vídeo de saída. | STRING | Sim | "720P"<br>"1080P" |
+| `model.ratio` | A proporção de aspecto do vídeo de saída. | STRING | Sim | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+| `model.duration` | A duração do vídeo em segundos. (padrão: 5, mín: 3, máx: 15, passo: 1). | INT | Sim | 3 a 15 |
+
+Nota: O prompt não pode estar vazio; um erro é gerado se nenhum prompt for fornecido. Ambos os modelos suportam durações de vídeo de 3 a 15 segundos. O modelo `happyhorse-1.1-t2v` oferece proporções de aspecto adicionais (`21:9`, `9:21`, `5:4`, `4:5`) que não estão disponíveis com o `happyhorse-1.0-t2v`.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-| --- | --- | --- |
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
 | `VIDEO` | O arquivo de vídeo gerado. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseTextToVideoApi/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `8c6a7c0c2b10bbc65ca54abc991e1f12e8846b31701ed65b49c5d71f1b2a63ec`
+**Source fingerprint (SHA-256):** `b60cfc3ce4935d7eb36bb28f9bd268446c4df5b437e06278b7e6d91d349d0238`

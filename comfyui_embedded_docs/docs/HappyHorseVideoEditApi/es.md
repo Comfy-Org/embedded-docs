@@ -1,35 +1,41 @@
 # HappyHorse Edición de Video
 
-Edite un vídeo utilizando instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el vídeo de entrada; las entradas de más de 15 segundos se truncan.
+Edita un video usando instrucciones de texto o imágenes de referencia con el modelo HappyHorse. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; las entradas de más de 15 segundos se truncan.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `modelo` | Configuración del modelo que contiene la selección del modelo, instrucción, resolución, relación de aspecto e imágenes de referencia opcionales. | DICT | Sí | Ver más abajo |
-| `video` | El vídeo a editar. | VIDEO | Sí | - |
-| `semilla` | Semilla a utilizar para la generación (predeterminado: 0). | INT | Sí | 0 a 2147483647 |
-| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: Falso). | BOOLEAN | No | Verdadero / Falso |
+### Entradas comunes
 
-### Detalles del Parámetro `model`
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `model` | El modelo de edición de video HappyHorse a utilizar. Esta selección determina qué opciones de prompt, resolución, proporción e imagen de referencia están disponibles. | DICT | Sí | "happyhorse-1.0-video-edit" |
+| `video` | El video a editar. | VIDEO | Sí | 3 a 60 segundos |
+| `seed` | Semilla a utilizar para la generación (por defecto: 0). | INT | Sí | 0 a 2147483647 |
+| `watermark` | Si se debe añadir una marca de agua generada por IA al resultado (por defecto: False). | BOOLEAN | No | True<br>False |
 
-El parámetro `model` es un diccionario con los siguientes campos:
+### happyhorse-1.0-video-edit Entradas
 
-| Campo | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `modelo` | El modelo de edición de vídeo HappyHorse a utilizar. | STRING | Sí | `"happyhorse-1.0-video-edit"` |
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
 | `prompt` | Instrucciones de edición o requisitos de transferencia de estilo. Debe tener al menos 1 carácter de longitud. | STRING | Sí | - |
-| `resolution` | La resolución de salida. | STRING | Sí | `"720P"`<br>`"1080P"` |
-| `ratio` | Relación de aspecto. Si no se modifica, se aproxima a la relación de aspecto del vídeo de entrada. | STRING | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `reference_images` | Imágenes de referencia opcionales (image1, image2, image3, image4, image5) para guiar la edición. | DICT | No | 0 a 5 imágenes |
+| `resolution` | La resolución de salida. | STRING | Sí | "720P"<br>"1080P" |
+| `ratio` | Relación de aspecto. Si no se cambia, se aproxima a la relación de aspecto del video de entrada. | STRING | Sí | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+
+### Entradas de referencia
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `reference_images` | Ranura ampliable: conecta de 0 a 5 imágenes de referencia (`image1`...`image5`) para guiar la edición. | IMAGE | No | 0 a 5 imágenes |
+
+**Nota:** El video de entrada debe tener una duración de 3 a 60 segundos. La duración de salida es de 3 a 15 segundos y coincide con el video de entrada; los videos de entrada de más de 15 segundos se truncan. El `prompt` debe tener al menos 1 carácter de longitud.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
-| `video` | La salida del vídeo editado. | VIDEO |
+| Nombre de salida | Descripción | Tipo de datos |
+|------------------|-------------|---------------|
+| `video` | El video editado de salida. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseVideoEditApi/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `af6747efbea1c65e4909d35dad009cbc2ffaad787d0f2031581c227deb9bf53c`
+**Source fingerprint (SHA-256):** `396cad4b5a06d457746a421050df98c892fa9db6019e3de983b4d0c417842b57`

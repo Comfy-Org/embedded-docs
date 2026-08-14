@@ -1,24 +1,31 @@
 # Wan 2.7 Görüntüden Videoya
 
-Wan 2.7 Görüntüden Videoya düğümü, bir başlangıç karesi görüntüsünden başlayarak bir video oluşturur. İsteğe bağlı olarak, iki kare arasında geçiş oluşturmak için bir bitiş karesi görüntüsü veya videonun hareketini ve zamanlamasını yönlendirmek için bir ses dosyası sağlayabilirsiniz. Düğüm, metin açıklamanıza dayanarak sahneyi canlandırmak için bir yapay zeka modeli kullanır.
+Wan 2.7 Image to Video düğümü, ilk kare görüntüsünden başlayarak bir video oluşturur. İsteğe bağlı olarak, ikisi arasında geçiş oluşturmak için bir son kare görüntüsü veya videonun hareketini ve zamanlamasını yönlendirmek için bir ses dosyası sağlayabilirsiniz. Düğüm, metin açıklamanıza dayalı olarak sahneyi canlandırmak için bir yapay zeka modeli kullanır.
 
-## Girişler
+## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
+### Ortak Girdiler
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Video oluşturma için kullanılacak yapay zeka modeli. | COMBO | Evet | `"wan2.7-i2v"` |
-| `model.prompt` | Videoda görmek istediğiniz öğelerin ve görsel özelliklerin metin açıklaması. İngilizce ve Çinceyi destekler. | STRING | Evet | - |
-| `model.negative_prompt` | Modelin kaçınmasını istediğiniz öğelerin veya özelliklerin metin açıklaması. | STRING | Evet | - |
-| `model.resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"720P"`<br>`"1080P"` |
-| `model.duration` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ila 15 |
-| `first_frame` | Videonun ilk karesi olarak kullanılacak görüntü. Çıktı videosunun en-boy oranı bu görüntüden türetilir. | IMAGE | Evet | - |
-| `last_frame` | Son kare olarak kullanılacak isteğe bağlı bir görüntü. Sağlandığında model, ilk kareden bu son kareye geçiş yapan bir video oluşturur. | IMAGE | Hayır | - |
-| `audio` | Video oluşturmayı yönlendirmek için isteğe bağlı bir ses dosyası; dudak senkronizasyonu veya ritim eşleştirmeli hareket için kullanışlıdır. Süre 2 ila 30 saniye arasında olmalıdır. Sağlanmazsa model, eşleşen arka plan müziği veya ses efektleri oluşturur. | AUDIO | Hayır | - |
-| `seed` | Oluşturmanın rastgeleliğini kontrol etmek için bir tohum değeri (varsayılan: 0). | INT | Evet | 0 ila 2147483647 |
-| `prompt_extend` | Etkinleştirildiğinde düğüm, metin isteminizi geliştirmek için yapay zeka yardımı kullanır (varsayılan: True). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | - |
-| `watermark` | Etkinleştirildiğinde, son videoya yapay zeka tarafından oluşturulmuş bir filigran eklenir (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | - |
+| `first_frame` | İlk kare görüntüsü. Çıktı en-boy oranı bu görüntüden türetilir. | IMAGE | Evet | - |
+| `last_frame` | Son kare görüntüsü. Model, ilk kareden son kareye geçiş yapan bir video oluşturur. | IMAGE | Hayır | - |
+| `audio` | Video oluşturmayı yönlendiren ses (örn. dudak senkronizasyonu, ritim eşleşmeli hareket). Süre: 2s-30s. Sağlanmazsa, model otomatik olarak uygun arka plan müziği veya ses efektleri oluşturur. | AUDIO | Hayır | - |
+| `seed` | Oluşturma için kullanılacak tohum değeri (varsayılan: 0). | INT | Evet | 0 ile 2147483647 arası |
+| `prompt_extend` | İstemin yapay zeka yardımıyla geliştirilip geliştirilmeyeceği (varsayılan: True). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
+| `watermark` | Sonuca yapay zeka tarafından oluşturulan filigran eklenip eklenmeyeceği (varsayılan: False). Bu gelişmiş bir ayardır. | BOOLEAN | Evet | True<br>False |
 
-**Not:** `audio` girişinin bir süre sınırlaması vardır. Sağlanırsa, ses dosyası 2 ila 30 saniye uzunluğunda olmalıdır.
+### wan2.7-i2v Girdileri
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+| --- | --- | --- | --- | --- |
+| `model.prompt` | Öğeleri ve görsel özellikleri tanımlayan istem. İngilizce ve Çince destekler. | STRING | Evet | - |
+| `model.negative_prompt` | Kaçınılması gerekenleri tanımlayan negatif istem. | STRING | Evet | - |
+| `model.resolution` | Çıktı videosunun çözünürlüğü. | COMBO | Evet | `"720P"`<br>`"1080P"` |
+| `model.duration` | Oluşturulan videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Evet | 2 ile 15 arası |
+
+**Not:** `audio` girdisinin süre sınırlaması vardır. Sağlanırsa, ses dosyası 2 ila 30 saniye arasında olmalıdır.
 
 ## Çıktılar
 
@@ -29,4 +36,4 @@ Wan 2.7 Görüntüden Videoya düğümü, bir başlangıç karesi görüntüsün
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/Wan2ImageToVideoApi/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `ccd18dca3b191f2cbe64b6c2b941a7efcf281e4f327329d932cec27fd8234133`
+**Source fingerprint (SHA-256):** `81b0dc9500ff00e1428422d3d9c8df8f790c1d9dec547dcba0d1aa239f8a8beb`
