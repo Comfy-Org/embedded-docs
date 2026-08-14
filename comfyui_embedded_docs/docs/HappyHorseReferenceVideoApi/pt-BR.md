@@ -1,27 +1,50 @@
 # HappyHorse Referência para Vídeo
 
-Este nó gera um vídeo apresentando uma pessoa ou objeto com base em imagens de referência usando o modelo HappyHorse. Ele suporta a criação de vídeos com um único personagem ou múltiplos personagens interagindo entre si.
+Este nó gera um vídeo com uma pessoa ou objeto a partir de imagens de referência usando o modelo HappyHorse. Ele suporta performances de personagem único e interações com múltiplos personagens. As imagens de referência são enviadas e usadas para representar os personagens no vídeo gerado.
 
 ## Entradas
 
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-| --- | --- | --- | --- | --- |
-| `model` | O modelo HappyHorse a ser usado para geração de vídeo. | COMBO | Sim | `"happyhorse-1.0-r2v"` |
-| `prompt` | Uma descrição textual do vídeo que você deseja gerar. Use identificadores como 'character1' e 'character2' para se referir aos personagens de referência. | STRING | Sim | N/A |
+### Entradas Comuns
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `model` | O modelo HappyHorse de referência para vídeo a ser usado na geração. | COMBO | Sim | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `seed` | Semente a ser usada para a geração (padrão: 0). Pode ser configurada para alterar automaticamente após cada geração. | INT | Não | 0 a 2147483647 |
+| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao resultado (padrão: False). | BOOLEAN | Não | True ou False |
+
+### Entradas do HappyHorse 1.1 (happyhorse-1.1-r2v)
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt descrevendo o vídeo. Use identificadores como 'character1' e 'character2' para se referir aos personagens de referência. | STRING | Sim | N/A |
 | `resolution` | A resolução do vídeo gerado. | COMBO | Sim | `"720P"`<br>`"1080P"` |
-| `ratio` | A proporção de aspecto do vídeo gerado. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
+| `ratio` | A proporção do vídeo gerado. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"`<br>`"5:4"`<br>`"4:5"` |
 | `duration` | A duração do vídeo gerado em segundos (padrão: 5). | INT | Sim | 3 a 15 |
-| `reference_images` | Uma ou mais imagens de referência da pessoa ou objeto a ser apresentado no vídeo. Você deve fornecer pelo menos uma imagem. | IMAGE | Sim | 1 a 9 |
-| `seed` | Um valor de semente para geração reproduzível (padrão: 0). A semente pode ser configurada para alterar automaticamente após cada geração. | INT | Não | 0 a 2147483647 |
-| `watermark` | Se deve adicionar uma marca d'água gerada por IA ao vídeo resultante (padrão: Falso). | BOOLEAN | Não | Verdadeiro ou Falso |
+
+### Entradas do HappyHorse 1.0 (happyhorse-1.0-r2v)
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `prompt` | Prompt descrevendo o vídeo. Use identificadores como 'character1' e 'character2' para se referir aos personagens de referência. | STRING | Sim | N/A |
+| `resolution` | A resolução do vídeo gerado. | COMBO | Sim | `"720P"`<br>`"1080P"` |
+| `ratio` | A proporção do vídeo gerado. | COMBO | Sim | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
+| `duration` | A duração do vídeo gerado em segundos (padrão: 5). | INT | Sim | 3 a 15 |
+
+### Entradas de Referência
+
+| Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
+|-----------|-------------|-----------|----------|-------|
+| `reference_images` | Slot expansível: conecte de 1 a 9 imagens de referência da pessoa ou objeto que aparecerá no vídeo. Forneça pelo menos uma imagem de referência. | IMAGE | Sim | 1 a 9 (por modelo) |
+
+Observação: Pelo menos uma imagem de referência deve ser fornecida; caso contrário, o nó apresentará um erro. Cada imagem de referência deve ter no mínimo 400 x 400 pixels e uma proporção de aspecto entre 1:2,5 e 2,5:1. O prompt não pode estar vazio.
 
 ## Saídas
 
-| Nome da Saída | Descrição | Tipo de Dado |
-| --- | --- | --- |
+| Nome da Saída | Descrição | Tipo de Dados |
+|-------------|-------------|-----------|
 | `VIDEO` | O arquivo de vídeo gerado. | VIDEO |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseReferenceVideoApi/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `9162e150aef4cbafa42d59055bdff953e9c21b1e5fbf7c800629e570ee4cd0f9`
+**Source fingerprint (SHA-256):** `252c918afc4cf38be9c7d09b7112075b9adb23490ec9fed1717a8548519d2554`
