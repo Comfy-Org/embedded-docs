@@ -1,0 +1,26 @@
+# Environment
+.env
+*.env.local
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+
+# OS / editor
+.DS_Store
+.ref/
+.cursorrules
+.gemini/
+.claude/
+
+# Generated / local workflow outputs (never commit)
+logs/
+ai_input/
+translation_batches/
+data/
+*.backup
