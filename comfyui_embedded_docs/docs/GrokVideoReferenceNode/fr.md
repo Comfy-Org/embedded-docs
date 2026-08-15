@@ -1,32 +1,55 @@
 # Grok Référence-vers-Vidéo
 
-Voici la traduction en français de la documentation technique du nœud ComfyUI **Grok Reference-to-Video Node**, en respectant vos consignes.
-
----
-
-Le nœud Grok Reference-to-Video génère une vidéo à partir d’une invite textuelle, en utilisant jusqu’à sept images de référence pour guider le style et le contenu de la sortie. Il se connecte à une API externe pour créer la vidéo, qui est ensuite téléchargée et renvoyée.
+Le nœud Grok Reference-to-Video génère une vidéo à partir d'une invite textuelle, en utilisant jusqu'à sept images de référence pour guider le style et le contenu de la sortie. Avec le modèle `grok-imagine-video-1.5`, vous pouvez également attacher jusqu'à trois références vocales prédéfinies et faire référence aux images et aux voix directement dans l'invite à l'aide des balises `@ImageN` et `@AudioN`. Le nœud envoie la requête à une API externe, attend la fin de la génération et télécharge la vidéo résultante.
 
 ## Entrées
 
-| Paramètre | Description | Type de données | Requis | Plage |
-| --- | --- | --- | --- | --- |
-| `invite` | Description textuelle de la vidéo souhaitée. | STRING | Oui | N/A |
-| `modèle` | Le modèle à utiliser pour la génération vidéo. | COMBO | Oui | `"grok-imagine-video"` |
-| `model.reference_images` | Jusqu’à 7 images de référence pour guider la génération vidéo. | IMAGE | Oui | 1 à 7 images |
-| `model.resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"` |
-| `model.aspect_ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
-| `model.duration` | La durée de la vidéo de sortie en secondes (par défaut : 6). | INT | Oui | 2 à 10 |
-| `graine` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la graine (par défaut : 0). | INT | Non | 0 à 2147483647 |
+### Entrées communes
 
-**Remarque :** Le paramètre `model` est un groupe contenant `reference_images`, `resolution`, `aspect_ratio` et `duration`. Vous devez fournir au moins une image de référence, et vous pouvez en fournir jusqu’à sept.
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `invite` | Description textuelle de la vidéo souhaitée. Doit être une chaîne non vide. | STRING | Oui | N/A |
+| `modèle` | Le modèle à utiliser pour la génération de la vidéo. | COMBO | Oui | `"grok-imagine-video-1.5"`<br>`"grok-imagine-video"` |
+| `graine` | Seed pour déterminer si le nœud doit être relancé ; les résultats réels sont non déterministes quel que soit le seed (par défaut : 0). | INT | Non | 0 à 2147483647 |
+
+### Grok Imagine Video 1.5 Entrées
+
+Disponible lorsque `model` est défini sur `grok-imagine-video-1.5`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `voice_1` | Référence vocale prédéfinie facultative ; faites-y référence dans l'invite sous la forme @Audio1. L'API ne prend en charge que ces voix prédéfinies, pas d'audio personnalisé (par défaut : none). | COMBO | Non | Options de voix prédéfinies (y compris `"none"`) |
+| `voice_2` | Deuxième référence vocale facultative ; @Audio2 dans l'invite (par défaut : none). | COMBO | Non | Options de voix prédéfinies (y compris `"none"`) |
+| `voice_3` | Troisième référence vocale facultative ; @Audio3 dans l'invite (par défaut : none). | COMBO | Non | Options de voix prédéfinies (y compris `"none"`) |
+| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"` |
+| `aspect_ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
+| `duration` | La durée de la vidéo de sortie en secondes (par défaut : 6). | INT | Oui | 1 à 15 |
+
+### Grok Imagine Video Entrées
+
+Disponible lorsque `model` est défini sur `grok-imagine-video`.
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `resolution` | La résolution de la vidéo de sortie. | COMBO | Oui | `"480p"`<br>`"720p"` |
+| `aspect_ratio` | Le rapport hauteur/largeur de la vidéo de sortie. | COMBO | Oui | `"16:9"`<br>`"4:3"`<br>`"3:2"`<br>`"1:1"`<br>`"2:3"`<br>`"3:4"`<br>`"9:16"` |
+| `duration` | La durée de la vidéo de sortie en secondes (par défaut : 6). | INT | Oui | 2 à 10 |
+
+### Entrées de référence
+
+| Paramètre | Description | Type de données | Requis | Plage |
+|-----------|-------------|-----------------|--------|-------|
+| `reference_images` | Emplacement extensible : connectez de 1 à 7 images de référence pour guider la génération de la vidéo. Avec `grok-imagine-video-1.5`, faites-y référence dans l'invite sous la forme @Image1 ... @Image7, numérotées dans l'ordre des entrées ; une entrée par lot compte pour une image. | IMAGE | Oui | 1 à 7 images |
+
+**Remarque :** Les sous-paramètres affichés dépendent du `model` sélectionné ; `grok-imagine-video-1.5` ajoute les entrées `voice_1`, `voice_2` et `voice_3`. Au moins une image de référence est requise et le total est plafonné à 7 (une entrée par lot compte pour une image). Avec `grok-imagine-video-1.5`, l'invite peut référencer les images connectées sous la forme `@Image1` ... `@Image7` et les voix activées sous la forme `@Audio1`, `@Audio2`, `@Audio3` ; le fait de référencer une image non connectée ou une voix définie sur `none` provoque une erreur. L'API ne prend en charge que les voix prédéfinies, pas l'audio personnalisé.
 
 ## Sorties
 
-| Nom de la sortie | Description | Type de données |
-| --- | --- | --- |
+| Nom de sortie | Description | Type de données |
+|---------------|-------------|-----------------|
 | `video` | Le fichier vidéo généré. | VIDEO |
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GrokVideoReferenceNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `e368769b869b7a0d0be8e6fdcc2b82774c11805483b2e83a448b6985a6dd9f96`
+**Source fingerprint (SHA-256):** `ac068b34ad7efe786d29f51052a623eaf324041a99b124f6b5f81fadea661a83`

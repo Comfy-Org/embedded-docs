@@ -1,24 +1,24 @@
-# LumaRay32KeyframeNode
+# Luma Ray 3.2 キーフレーム
 
-このノードは、ガイド画像をLuma Ray 3.2出力ビデオのタイムライン上の特定の位置に固定します。このノードをLuma Ray 3.2 Keyframes to Videoノードの「keyframes」入力に接続し、オプションの「keyframes」入力をチェーンすることで、複数のキーフレームを連鎖させることができます。
+このノードは、ガイド画像をLuma Ray 3.2出力ビデオのタイムライン上の特定の位置に固定します。このノードをLuma Ray 3.2 Keyframes to Videoノードの「keyframes」入力に接続し、オプションの「keyframes」入力を接続することで、複数のキーフレームをチェーンできます。
 
 ## 入力
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `image` | 出力ビデオの選択した瞬間に配置するガイド画像です。 | IMAGE | はい | - |
-| `position` | 出力ビデオのタイムライン上でこの画像を配置する方法です。 | COMBO | はい | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
-| `keyframes` | このキーフレームと連鎖させる、オプションの先行キーフレームです。 | LUMA_RAY32_KEYFRAME | いいえ | - |
+| `image` | 出力ビデオの選択した瞬間に配置するガイド画像。 | IMAGE | はい | - |
+| `position` | 出力ビデオのタイムライン上でこの画像をどのように配置するか。 | COMBO | はい | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
+| `keyframes` | このキーフレームにチェーンする、オプションの以前のキーフレーム。 | LUMA_RAY32_KEYFRAME | いいえ | - |
 
-`position`パラメータに「Fraction of duration (0.0-1.0)」が選択された場合、`fraction`値（デフォルト：0.0、範囲：0.0～1.0、ステップ：0.01）を指定できます。この値は、出力ビデオ内でこの画像が適用される位置を決定します（0.0 = 開始、1.0 = 終了）。
+`position` パラメータに「Fraction of duration (0.0-1.0)」を選択した場合、`fraction` 値（デフォルト: 0.0、範囲: 0.0〜1.0、ステップ: 0.01）を指定できます。この値は、出力ビデオ内でこの画像が適用される位置を決定します（0.0 = 開始、1.0 = 終了）。
 
-`position`パラメータに「Absolute time (seconds)」が選択された場合、`seconds`値（デフォルト：0.0、範囲：0.0～10.0、ステップ：0.1）を指定できます。この値は、出力ビデオの開始からこの画像が適用されるまでの時間を秒単位で決定します。
+`position` パラメータに「Absolute time (seconds)」を選択した場合、`seconds` 値（デフォルト: 0.0、範囲: 0.0〜10.0、ステップ: 0.1）を指定できます。この値は、出力ビデオの開始からこの画像が適用される秒単位の時刻を決定します。
 
 ## 出力
 
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
-| `keyframes` | 新しいキーフレームと、オプションの先行キーフレームを組み合わせたキーフレームチェーンです。 | LUMA_RAY32_KEYFRAME |
+| `keyframes` | 新しいキーフレームと、オプションの以前のキーフレームを組み合わせて含むキーフレームチェーン。 | LUMA_RAY32_KEYFRAME |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframeNode/ja.md)
 

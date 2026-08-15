@@ -1,23 +1,21 @@
-# LumaRay32KeyframeNode
-
-Este nodo fija una imagen guía en una posición específica dentro de la línea de tiempo del video de salida de Luma Ray 3.2. Conecta este nodo a la entrada "keyframes" del nodo Luma Ray 3.2 Keyframes to Video, y encadena varios fotogramas clave conectando la entrada opcional "keyframes".
+# Luma Ray 3.2 Fotograma Clave
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-|-----------|-------------|--------------|-------------|-------|
+| Parámetro | Descripción | Tipo de datos | Requerido | Rango |
+|-----------|-------------|-----------|----------|-------|
 | `image` | Imagen guía para colocar en el momento elegido del video de salida. | IMAGE | Sí | - |
-| `position` | Cómo ubicar esta imagen en la línea de tiempo del video de salida. | COMBO | Sí | "Fracción de duración (0.0-1.0)"<br>"Tiempo absoluto (segundos)" |
+| `position` | Cómo colocar esta imagen en la línea de tiempo del video de salida. | COMBO | Sí | "Fraction of duration (0.0-1.0)"<br>"Absolute time (seconds)" |
 | `keyframes` | Fotogramas clave anteriores opcionales para encadenar con este. | LUMA_RAY32_KEYFRAME | No | - |
 
-Cuando se selecciona "Fracción de duración (0.0-1.0)" para el parámetro `position`, puedes especificar un valor `fraction` (valor predeterminado: 0.0, rango: 0.0 a 1.0, incremento: 0.01) que determina en qué parte del video de salida se aplica esta imagen (0.0 = inicio, 1.0 = final).
+Cuando se selecciona "Fraction of duration (0.0-1.0)" para el parámetro `position`, puedes especificar un valor `fraction` (predeterminado: 0.0, rango: 0.0 a 1.0, paso: 0.01) que determina dónde se aplica esta imagen en el video de salida (0.0 = inicio, 1.0 = fin).
 
-Cuando se selecciona "Tiempo absoluto (segundos)" para el parámetro `position`, puedes especificar un valor `seconds` (valor predeterminado: 0.0, rango: 0.0 a 10.0, incremento: 0.1) que determina el tiempo en segundos desde el inicio del video de salida donde se aplica esta imagen.
+Cuando se selecciona "Absolute time (seconds)" para el parámetro `position`, puedes especificar un valor `seconds` (predeterminado: 0.0, rango: 0.0 a 10.0, paso: 0.1) que determina el tiempo en segundos desde el inicio del video de salida donde se aplica esta imagen.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-|------------------|-------------|--------------|
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------|-------------|-----------|
 | `keyframes` | Una cadena de fotogramas clave que incluye el nuevo fotograma clave combinado con cualquier fotograma clave anterior opcional. | LUMA_RAY32_KEYFRAME |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/LumaRay32KeyframeNode/es.md)
