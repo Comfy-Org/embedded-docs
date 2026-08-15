@@ -10,7 +10,7 @@ ElevenLabs文本转语音节点使用ElevenLabs API将书面文本转换为语�
 | `text` | 要转换为语音的文本。 | STRING | 是 | 不适用 |
 | `stability` | 语音稳定性。较低的值提供更广泛的情感范围，较高的值产生更一致但可能单调的语音（默认值：0.5）。 | FLOAT | 否 | 0.0 - 1.0 |
 | `apply_text_normalization` | 文本规范化模式。"auto"让系统决定，"on"始终应用规范化，"off"跳过规范化。 | COMBO | 否 | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | 用于文本转语音的模型。选择模型后会显示其特定参数。 | DYNAMICCOMBO | 否 | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `model` | 用于文本转语音的模型。选择模型后会显示其特定参数。 | DYNAMIC_COMBO | 否 | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `language_code` | ISO-639-1或ISO-639-3语言代码（例如"en"、"es"、"fra"）。留空以自动检测（默认值：""）。 | STRING | 否 | 不适用 |
 | `seed` | 用于可复现性的种子（不保证确定性）（默认值：1）。 | INT | 否 | 0 - 2147483647 |
 | `output_format` | 音频输出格式。 | COMBO | 否 | `"mp3_44100_192"`<br>`"opus_48000_192"` |

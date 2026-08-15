@@ -9,7 +9,7 @@ The ColorTransfer node adjusts the color palette of a target image to match the 
 | `image_target` | Image(s) to apply the color transform to. | IMAGE | Yes | - |
 | `image_ref` | Reference image(s) to match colors to. | IMAGE | Yes | - |
 | `method` | The color transfer algorithm to use. | COMBO | Yes | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | Determines how color statistics are calculated from the source (target) image(s). | DYNAMICCOMBO | Yes | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | Determines how color statistics are calculated from the source (target) image(s). | DYNAMIC_COMBO | Yes | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | The intensity of the color transfer effect. A value of 1.0 applies the full transform, while 0.0 returns the original image. Default: 1.0 | FLOAT | Yes | 0.0 to 10.0 |
 
 **Parameter Details:**

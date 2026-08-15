@@ -10,7 +10,7 @@ ElevenLabs 텍스트 음성 변환 노드는 ElevenLabs API를 사용하여 작�
 | `text` | 음성으로 변환할 텍스트입니다. | STRING | 예 | 해당 없음 |
 | `stability` | 음성 안정성입니다. 값이 낮을수록 더 넓은 감정 표현 범위를 제공하고, 값이 높을수록 더 일관되지만 단조로운 음성을 생성합니다(기본값: 0.5). | FLOAT | 아니요 | 0.0 - 1.0 |
 | `apply_text_normalization` | 텍스트 정규화 모드입니다. 'auto'는 시스템이 결정하도록 하고, 'on'은 항상 정규화를 적용하며, 'off'는 정규화를 건너뜁니다. | COMBO | 아니요 | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | 텍스트 음성 변환에 사용할 모델입니다. 모델을 선택하면 해당 모델의 특정 매개변수가 표시됩니다. | DYNAMICCOMBO | 아니요 | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `model` | 텍스트 음성 변환에 사용할 모델입니다. 모델을 선택하면 해당 모델의 특정 매개변수가 표시됩니다. | DYNAMIC_COMBO | 아니요 | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `language_code` | ISO-639-1 또는 ISO-639-3 언어 코드입니다(예: 'en', 'es', 'fra'). 자동 감지를 위해 비워 두세요(기본값: ""). | STRING | 아니요 | 해당 없음 |
 | `seed` | 재현성을 위한 시드입니다(결정론적 결과는 보장되지 않음)(기본값: 1). | INT | 아니요 | 0 - 2147483647 |
 | `output_format` | 오디오 출력 형식입니다. | COMBO | 아니요 | `"mp3_44100_192"`<br>`"opus_48000_192"` |

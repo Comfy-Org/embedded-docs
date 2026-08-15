@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | `image` | 要矢量化的输入图像。 | IMAGE | 是 | 不适用 |
 | `auto_crop` | 自动裁剪至主要主体。这是一个高级参数（默认值：`False`）。 | BOOLEAN | 否 | `True`<br>`False` |
-| `model` | 用于 SVG 矢量化的模型。选择模型后会显示该模型特有的附加参数：`target_size`（正方形缩放目标尺寸，单位像素，默认值：1024，范围：128-4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMICCOMBO | 是 | 提供多个选项 |
+| `model` | 用于 SVG 矢量化的模型。选择模型后会显示该模型特有的附加参数：`target_size`（正方形缩放目标尺寸，单位像素，默认值：1024，范围：128-4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | 提供多个选项 |
 | `seed` | 用于决定节点是否应重新运行的种子值；实际结果与种子值无关，具有非确定性。此参数具有“生成后控制”功能（默认值：0）。 | INT | 否 | 0 至 2147483647 |
 
 ## 输出

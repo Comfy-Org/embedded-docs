@@ -11,7 +11,7 @@ ElevenLabs Speech to Speech 노드는 입력 오디오 파일의 음성을 다�
 | `voice` | 변환 대상 음성입니다. 음성 선택기 또는 즉시 음성 복제에서 연결하십시오. | CUSTOM | 예 | - |
 | `audio` | 변환할 원본 오디오입니다. | AUDIO | 예 | - |
 | `stability` | 음성 안정성입니다. 값이 낮을수록 더 넓은 감정 범위를 제공하고, 값이 높을수록 더 일관되지만 단조로운 음성을 생성합니다(기본값: 0.5). | FLOAT | 아니요 | 0.0 - 1.0 |
-| `model` | 음성 간 변환에 사용할 모델입니다. 각 옵션은 특정 음성 설정 세트(similarity_boost, style, use_speaker_boost, speed)를 제공합니다. | DYNAMICCOMBO | 아니요 | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `model` | 음성 간 변환에 사용할 모델입니다. 각 옵션은 특정 음성 설정 세트(similarity_boost, style, use_speaker_boost, speed)를 제공합니다. | DYNAMIC_COMBO | 아니요 | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
 | `output_format` | 오디오 출력 형식입니다(기본값: "mp3_44100_192"). | COMBO | 아니요 | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 | `seed` | 재현성을 위한 시드 값입니다(기본값: 0). | INT | 아니요 | 0 - 4294967295 |
 | `remove_background_noise` | 오디오 분리를 사용하여 입력 오디오에서 배경 소음을 제거합니다(기본값: False). | BOOLEAN | 아니요 | - |

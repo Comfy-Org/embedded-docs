@@ -11,7 +11,7 @@ Le nœud ElevenLabs Speech to Speech transforme un fichier audio d'entrée d'une
 | `voix` | Voix cible pour la transformation. Connectez depuis le sélecteur de voix ou le clonage vocal instantané. | CUSTOM | Oui | - |
 | `audio` | Audio source à transformer. | AUDIO | Oui | - |
 | `stabilité` | Stabilité de la voix. Des valeurs plus faibles offrent une gamme émotionnelle plus large, des valeurs plus élevées produisent une parole plus cohérente mais potentiellement monotone (par défaut : 0.5). | FLOAT | Non | 0.0 - 1.0 |
-| `modèle` | Modèle à utiliser pour la transformation parole-à-parole. Chaque option fournit un ensemble spécifique de paramètres vocaux (similarity_boost, style, use_speaker_boost, speed). | DYNAMICCOMBO | Non | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `modèle` | Modèle à utiliser pour la transformation parole-à-parole. Chaque option fournit un ensemble spécifique de paramètres vocaux (similarity_boost, style, use_speaker_boost, speed). | DYNAMIC_COMBO | Non | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
 | `format_de_sortie` | Format de sortie audio (par défaut : "mp3_44100_192"). | COMBO | Non | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 | `graine` | Graine pour la reproductibilité (par défaut : 0). | INT | Non | 0 - 4294967295 |
 | `supprimer_bruit_de_fond` | Supprimer le bruit de fond de l'audio d'entrée en utilisant l'isolation audio (par défaut : False). | BOOLEAN | Non | - |

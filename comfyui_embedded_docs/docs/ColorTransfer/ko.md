@@ -9,7 +9,7 @@ ColorTransfer 노드는 대상 이미지의 색상 팔레트를 참조 이미지
 | `image_target` | 색상 변환을 적용할 이미지입니다. | IMAGE | 예 | - |
 | `image_ref` | 색상을 일치시킬 참조 이미지입니다. | IMAGE | 예 | - |
 | `method` | 사용할 색상 전송 알고리즘입니다. | COMBO | 예 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | 소스(대상) 이미지에서 색상 통계를 계산하는 방식을 결정합니다. | DYNAMICCOMBO | 예 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | 소스(대상) 이미지에서 색상 통계를 계산하는 방식을 결정합니다. | DYNAMIC_COMBO | 예 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | 색상 전송 효과의 강도입니다. 1.0 값은 전체 변환을 적용하며, 0.0은 원본 이미지를 반환합니다. 기본값: 1.0 | FLOAT | 예 | 0.0 ~ 10.0 |
 
 **매개변수 세부 설명:**

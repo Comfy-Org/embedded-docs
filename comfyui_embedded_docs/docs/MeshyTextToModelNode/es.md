@@ -9,7 +9,7 @@ El nodo Meshy: Texto a Modelo utiliza la API de Meshy para generar un modelo 3D 
 | `modelo` | Especifica la versión del modelo de IA a utilizar. Actualmente, solo está disponible la versión "latest". | COMBO | Sí | `"latest"` |
 | `prompt` | La descripción textual del modelo 3D que deseas generar. Debe tener entre 1 y 600 caracteres. | STRING | Sí | - |
 | `estilo` | El estilo artístico para el modelo 3D generado. | COMBO | Sí | `"realistic"`<br>`"sculpture"` |
-| `debe_remallar` | Controla si la malla generada se procesa. Cuando se establece en "false", el nodo devuelve una malla triangular sin procesar. Seleccionar "true" revela parámetros adicionales para topología y recuento de polígonos. | DYNAMIC COMBO | Sí | `"true"`<br>`"false"` |
+| `debe_remallar` | Controla si la malla generada se procesa. Cuando se establece en "false", el nodo devuelve una malla triangular sin procesar. Seleccionar "true" revela parámetros adicionales para topología y recuento de polígonos. | DYNAMIC_COMBO | Sí | `"true"`<br>`"false"` |
 | `topology` | El tipo de polígono objetivo para el modelo remallado. Este parámetro solo está disponible y es requerido cuando `debe_remallar` está establecido en "true". | COMBO | No* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | El número objetivo de polígonos para el modelo remallado. El valor predeterminado es 300000. Este parámetro solo está disponible y es requerido cuando `debe_remallar` está establecido en "true". | INT | No* | 100 - 300000 |
 | `modo_simetría` | Controla la simetría en el modelo generado. | COMBO | Sí | `"auto"`<br>`"on"`<br>`"off"` |

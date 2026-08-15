@@ -11,7 +11,7 @@ Le nœud Meshy : Texte vers modèle utilise l'API Meshy pour générer un modèl
 | `modèle` | Spécifie la version du modèle d'IA à utiliser. Actuellement, seule la version "latest" est disponible. | COMBO | Oui | `"latest"` |
 | `invite` | La description textuelle du modèle 3D que vous souhaitez générer. Doit contenir entre 1 et 600 caractères. | STRING | Oui | - |
 | `style` | Le style artistique pour le modèle 3D généré. | COMBO | Oui | `"realistic"`<br>`"sculpture"` |
-| `doit_remesher` | Contrôle si le maillage généré est traité. Lorsqu'il est défini sur "false", le nœud renvoie un maillage triangulaire non traité. La sélection de "true" révèle des paramètres supplémentaires pour la topologie et le nombre de polygones. | DYNAMIC COMBO | Oui | `"true"`<br>`"false"` |
+| `doit_remesher` | Contrôle si le maillage généré est traité. Lorsqu'il est défini sur "false", le nœud renvoie un maillage triangulaire non traité. La sélection de "true" révèle des paramètres supplémentaires pour la topologie et le nombre de polygones. | DYNAMIC_COMBO | Oui | `"true"`<br>`"false"` |
 | `topology` | Le type de polygone cible pour le modèle remaillé. Ce paramètre n'est disponible et requis que lorsque `doit_remesher` est défini sur "true". | COMBO | Non* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | Le nombre cible de polygones pour le modèle remaillé. La valeur par défaut est 300000. Ce paramètre n'est disponible et requis que lorsque `doit_remesher` est défini sur "true". | INT | Non* | 100 - 300000 |
 | `mode_symétrie` | Contrôle la symétrie dans le modèle généré. | COMBO | Oui | `"auto"`<br>`"on"`<br>`"off"` |

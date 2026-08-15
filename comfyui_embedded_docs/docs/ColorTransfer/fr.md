@@ -9,7 +9,7 @@ Le nœud ColorTransfer ajuste la palette de couleurs d'une image cible pour corr
 | `image_target` | Image(s) à laquelle/auxquelles appliquer la transformation de couleurs. | IMAGE | Oui | - |
 | `image_ref` | Image(s) de référence dont les couleurs doivent être reproduites. | IMAGE | Oui | - |
 | `method` | L'algorithme de transfert de couleurs à utiliser. | COMBO | Oui | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | Détermine comment les statistiques de couleurs sont calculées à partir de la ou des images source (cible). | DYNAMICCOMBO | Oui | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | Détermine comment les statistiques de couleurs sont calculées à partir de la ou des images source (cible). | DYNAMIC_COMBO | Oui | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | L'intensité de l'effet de transfert de couleurs. Une valeur de 1.0 applique la transformation complète, tandis que 0.0 renvoie l'image originale. Par défaut : 1.0 | FLOAT | Oui | 0.0 à 10.0 |
 
 **Détails des paramètres :**

@@ -13,7 +13,7 @@ Magnific Image Relight 节点用于调整输入图像的照明效果。它可以
 | `interpolate_from_original` | 限制生成自由度，使其更接近原始图像。默认值：False。 | BOOLEAN | 是 | 无 |
 | `change_background` | 根据提示/参考图像修改背景。默认值：True。 | BOOLEAN | 是 | 无 |
 | `preserve_details` | 保留原始图像的纹理和细节。默认值：True。 | BOOLEAN | 是 | 无 |
-| `advanced_settings` | 高级照明控制的微调选项。当设置为 `"enabled"` 时，将显示更多参数。 | DYNAMICCOMBO | 是 | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | 高级照明控制的微调选项。当设置为 `"enabled"` 时，将显示更多参数。 | DYNAMIC_COMBO | 是 | `"disabled"`<br>`"enabled"` |
 | `reference_image` | 可选参考图像，用于迁移其照明效果。如果提供，必须输入一张图像。最小尺寸为160x160像素。宽高比必须在1:3到3:1之间。 | IMAGE | 否 | 无 |
 
 **高级设置说明：** 当 `advanced_settings` 设置为 `"enabled"` 时，以下嵌套参数将变为可用：

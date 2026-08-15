@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | `image` | 要進行向量化的輸入影像。 | IMAGE | 是 | 不適用 |
 | `auto_crop` | 自動裁切至主要主體。這是一個進階參數（預設值：`False`）。 | BOOLEAN | 否 | `True`<br>`False` |
-| `model` | 用於 SVG 向量化的模型。選擇模型會顯示該模型特有的其他參數：`target_size`（正方形縮放目標像素，預設值：1024，範圍：128-4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMICCOMBO | 是 | 提供多種選項 |
+| `model` | 用於 SVG 向量化的模型。選擇模型會顯示該模型特有的其他參數：`target_size`（正方形縮放目標像素，預設值：1024，範圍：128-4096）、`temperature`、`top_p` 和 `presence_penalty`。 | DYNAMIC_COMBO | 是 | 提供多種選項 |
 | `seed` | 決定節點是否應重新執行的種子；無論種子值為何，實際結果都是非確定性的。此參數具有「生成後控制」功能（預設值：0）。 | INT | 否 | 0 至 2147483647 |
 
 ## 輸出

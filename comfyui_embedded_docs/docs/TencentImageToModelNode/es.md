@@ -12,7 +12,7 @@ Este nodo utiliza la API de Hunyuan3D Pro de Tencent para generar un modelo 3D a
 | `imagen_derecha` | Una imagen opcional del lado derecho del objeto para generación multivista. Debe tener al menos 128x128 píxeles. | IMAGE | No | - |
 | `imagen_trasera` | Una imagen opcional de la parte trasera del objeto para generación multivista. Debe tener al menos 128x128 píxeles. | IMAGE | No | - |
 | `número_de_caras` | El número objetivo de caras para el modelo 3D generado (predeterminado: 500000). | INT | Sí | 3000 - 1500000 |
-| `tipo_de_generación` | El tipo de modelo 3D a generar. Seleccionar una opción revela parámetros adicionales relacionados. | DYNAMICCOMBO | Sí | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `tipo_de_generación` | El tipo de modelo 3D a generar. Seleccionar una opción revela parámetros adicionales relacionados. | DYNAMIC_COMBO | Sí | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | Habilita la generación de materiales basados en renderizado físicamente realista (PBR). Este parámetro solo es visible cuando `tipo_de_generación` está configurado en "Normal" o "LowPoly" (predeterminado: False). | BOOLEAN | No | - |
 | `generate_type.polygon_type` | El tipo de polígono a utilizar para la malla. Este parámetro solo es visible cuando `tipo_de_generación` está configurado en "LowPoly". | COMBO | No | `"triangle"`<br>`"quadrilateral"` |
 | `semilla` | Un valor de semilla para el proceso de generación. La semilla controla si el nodo debe reejecutarse; los resultados no son deterministas independientemente de la semilla (predeterminado: 0). | INT | Sí | 0 - 2147483647 |

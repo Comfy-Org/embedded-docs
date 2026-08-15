@@ -13,7 +13,7 @@ O nó Magnific Image Relight ajusta a iluminação de uma imagem de entrada. Ele
 | `interpolate_from_original` | Restringe a liberdade de geração para corresponder mais ao original. Padrão: False. | BOOLEAN | Sim | N/A |
 | `change_background` | Modifica o fundo com base no prompt/referência. Padrão: True. | BOOLEAN | Sim | N/A |
 | `preserve_details` | Mantém a textura e os detalhes finos do original. Padrão: True. | BOOLEAN | Sim | N/A |
-| `advanced_settings` | Opções de ajuste fino para controle avançado de iluminação. Quando definido como `"enabled"`, parâmetros adicionais ficam disponíveis. | DYNAMICCOMBO | Sim | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | Opções de ajuste fino para controle avançado de iluminação. Quando definido como `"enabled"`, parâmetros adicionais ficam disponíveis. | DYNAMIC_COMBO | Sim | `"disabled"`<br>`"enabled"` |
 | `reference_image` | Imagem de referência opcional para transferir a iluminação. Se fornecida, exatamente uma imagem é necessária. Dimensões mínimas de 160x160 pixels. A proporção deve estar entre 1:3 e 3:1. | IMAGE | Não | N/A |
 
 **Nota sobre Configurações Avançadas:** Quando `advanced_settings` está definido como `"enabled"`, os seguintes parâmetros aninhados se tornam ativos:

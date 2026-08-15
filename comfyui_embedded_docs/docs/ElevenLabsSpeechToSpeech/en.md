@@ -9,7 +9,7 @@ The ElevenLabs Speech to Speech node transforms an input audio file from one voi
 | `voice` | Target voice for the transformation. Connect from Voice Selector or Instant Voice Clone. | CUSTOM | Yes | - |
 | `audio` | Source audio to transform. | AUDIO | Yes | - |
 | `stability` | Voice stability. Lower values give broader emotional range, higher values produce more consistent but potentially monotonous speech (default: 0.5). | FLOAT | No | 0.0 - 1.0 |
-| `model` | Model to use for speech-to-speech transformation. Each option provides a specific set of voice settings (similarity_boost, style, use_speaker_boost, speed). | DYNAMICCOMBO | No | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `model` | Model to use for speech-to-speech transformation. Each option provides a specific set of voice settings (similarity_boost, style, use_speaker_boost, speed). | DYNAMIC_COMBO | No | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
 | `output_format` | Audio output format (default: "mp3_44100_192"). | COMBO | No | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 | `seed` | Seed for reproducibility (default: 0). | INT | No | 0 - 4294967295 |
 | `remove_background_noise` | Remove background noise from input audio using audio isolation (default: False). | BOOLEAN | No | - |

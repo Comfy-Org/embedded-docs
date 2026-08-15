@@ -13,7 +13,7 @@ The Magnific Image Relight node adjusts the lighting of an input image. It can a
 | `interpolate_from_original` | Restricts generation freedom to match original more closely. Default: False. | BOOLEAN | Yes | N/A |
 | `change_background` | Modifies background based on prompt/reference. Default: True. | BOOLEAN | Yes | N/A |
 | `preserve_details` | Maintains texture and fine details from original. Default: True. | BOOLEAN | Yes | N/A |
-| `advanced_settings` | Fine-tuning options for advanced lighting control. When set to `"enabled"`, additional parameters become available. | DYNAMICCOMBO | Yes | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | Fine-tuning options for advanced lighting control. When set to `"enabled"`, additional parameters become available. | DYNAMIC_COMBO | Yes | `"disabled"`<br>`"enabled"` |
 | `reference_image` | Optional reference image to transfer lighting from. If provided, exactly one image is required. Minimum dimensions are 160x160 pixels. Aspect ratio must be between 1:3 and 3:1. | IMAGE | No | N/A |
 
 **Note on Advanced Settings:** When `advanced_settings` is set to `"enabled"`, the following nested parameters become active:

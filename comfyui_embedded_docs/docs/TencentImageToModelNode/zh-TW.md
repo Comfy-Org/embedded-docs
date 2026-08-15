@@ -12,7 +12,7 @@
 | `右側圖片` | 物體右側的可選圖片，用於多視角生成。必須至少為 128x128 像素。 | IMAGE | 否 | - |
 | `背面圖片` | 物體背面的可選圖片，用於多視角生成。必須至少為 128x128 像素。 | IMAGE | 否 | - |
 | `面數` | 生成的 3D 模型目標面數（預設值：500000）。 | INT | 是 | 3000 - 1500000 |
-| `生成類型` | 要生成的 3D 模型類型。選擇一個選項會顯示額外的相關參數。 | DYNAMICCOMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `生成類型` | 要生成的 3D 模型類型。選擇一個選項會顯示額外的相關參數。 | DYNAMIC_COMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `generate_type.pbr` | 啟用基於物理的渲染（PBR）材質生成。此參數僅在 `生成類型` 設定為 "Normal" 或 "LowPoly" 時可見（預設值：False）。 | BOOLEAN | 否 | - |
 | `generate_type.polygon_type` | 用於網格的多邊形類型。此參數僅在 `生成類型` 設定為 "LowPoly" 時可見。 | COMBO | 否 | `"triangle"`<br>`"quadrilateral"` |
 | `種子` | 生成過程的種子值。種子控制節點是否應重新執行；無論種子為何，結果皆非確定性（預設值：0）。 | INT | 是 | 0 - 2147483647 |

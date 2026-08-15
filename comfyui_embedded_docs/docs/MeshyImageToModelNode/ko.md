@@ -8,11 +8,11 @@ Meshy: 이미지-모델 노드는 Meshy API를 사용하여 단일 입력 이미
 | --- | --- | --- | --- | --- |
 | `model` | 생성에 사용할 AI 모델 버전을 지정합니다. | COMBO | 예 | `"latest"` |
 | `image` | 3D 모델로 변환할 입력 이미지입니다. | IMAGE | 예 | - |
-| `should_remesh` | 생성된 메시를 처리할지 여부를 결정합니다. `"false"`로 설정하면 처리되지 않은 삼각형 메시가 반환됩니다. | DYNAMIC COMBO | 예 | `"true"`<br>`"false"` |
+| `should_remesh` | 생성된 메시를 처리할지 여부를 결정합니다. `"false"`로 설정하면 처리되지 않은 삼각형 메시가 반환됩니다. | DYNAMIC_COMBO | 예 | `"true"`<br>`"false"` |
 | `topology` | 리메시된 모델의 대상 폴리곤 토폴로지입니다. 이 입력은 `should_remesh`가 `"true"`로 설정된 경우에만 사용 가능합니다. | COMBO | 아니요* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | 리메시된 모델의 대상 폴리곤 수입니다. 이 입력은 `should_remesh`가 `"true"`로 설정된 경우에만 사용 가능합니다. 기본값은 300000입니다. | INT | 아니요* | 100 - 300000 |
 | `symmetry_mode` | 생성된 3D 모델에 적용되는 대칭을 제어합니다. | COMBO | 예 | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | 모델에 텍스처를 생성할지 여부를 결정합니다. `"false"`로 설정하면 텍스처 단계를 건너뛰고 텍스처가 없는 메시가 반환됩니다. | DYNAMIC COMBO | 예 | `"true"`<br>`"false"` |
+| `should_texture` | 모델에 텍스처를 생성할지 여부를 결정합니다. `"false"`로 설정하면 텍스처 단계를 건너뛰고 텍스처가 없는 메시가 반환됩니다. | DYNAMIC_COMBO | 예 | `"true"`<br>`"false"` |
 | `enable_pbr` | `should_texture`가 `"true"`인 경우, 이 옵션은 기본 색상 외에 PBR 맵(메탈릭, 거칠기, 노멀)을 생성합니다. 기본값은 `False`입니다. | BOOLEAN | 아니요* | - |
 | `texture_prompt` | 텍스처링 과정을 안내하는 텍스트 프롬프트입니다(최대 600자). 이 입력은 `should_texture`가 `"true"`로 설정된 경우에만 사용 가능합니다. `texture_image`와 동시에 사용할 수 없습니다. | STRING | 아니요* | - |
 | `texture_image` | 텍스처링 과정을 안내하는 이미지입니다. 이 입력은 `should_texture`가 `"true"`로 설정된 경우에만 사용 가능합니다. `texture_prompt`와 동시에 사용할 수 없습니다. | IMAGE | 아니요* | - |

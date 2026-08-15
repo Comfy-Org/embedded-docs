@@ -9,7 +9,7 @@ The Meshy: Text to Model node uses the Meshy API to generate a 3D model from a t
 | `model` | Specifies the AI model version to use. Currently, only the "latest" version is available. | COMBO | Yes | `"latest"` |
 | `prompt` | The text description of the 3D model you want to generate. Must be between 1 and 600 characters long. | STRING | Yes | - |
 | `style` | The artistic style for the generated 3D model. | COMBO | Yes | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | Controls whether the generated mesh is processed. When set to "false", the node returns an unprocessed triangular mesh. Selecting "true" reveals additional parameters for topology and polycount. | DYNAMIC COMBO | Yes | `"true"`<br>`"false"` |
+| `should_remesh` | Controls whether the generated mesh is processed. When set to "false", the node returns an unprocessed triangular mesh. Selecting "true" reveals additional parameters for topology and polycount. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `topology` | The target polygon type for the remeshed model. This parameter is only available when `should_remesh` is set to "true". | COMBO | No* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | The target number of polygons for the remeshed model. Default is 300000. This parameter is only available when `should_remesh` is set to "true". | INT | No* | 100 - 300000 |
 | `symmetry_mode` | Controls symmetry in the generated model. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |

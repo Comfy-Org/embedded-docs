@@ -8,7 +8,7 @@ This node converts a raster image into a scalable vector graphic (SVG) using Qui
 |-----------|-------------|-----------|----------|-------|
 | `image` | Input image to vectorize. | IMAGE | Yes | N/A |
 | `auto_crop` | Automatically crop to the dominant subject (default: False). | BOOLEAN | No | True<br>False |
-| `model` | Model to use for SVG vectorization. Selecting a model reveals additional parameters specific to that model: `target_size` (square resize target in pixels, default: 1024, range: 128-4096), `temperature`, `top_p`, and `presence_penalty`. | DYNAMICCOMBO | Yes | Multiple options available |
+| `model` | Model to use for SVG vectorization. Selecting a model reveals additional parameters specific to that model: `target_size` (square resize target in pixels, default: 1024, range: 128-4096), `temperature`, `top_p`, and `presence_penalty`. | DYNAMIC_COMBO | Yes | Multiple options available |
 | `seed` | Seed to determine if the node should re-run; the actual results are nondeterministic regardless of the seed value. This parameter has "control after generate" functionality (default: 0). | INT | No | 0 to 2147483647 |
 
 ## Outputs

@@ -8,11 +8,11 @@ The Meshy: Image to Model node uses the Meshy API to generate a 3D model from a 
 | --- | --- | --- | --- | --- |
 | `model` | Specifies the AI model version to use for generation. | COMBO | Yes | `"latest"` |
 | `image` | The input image to convert into a 3D model. | IMAGE | Yes | - |
-| `should_remesh` | Determines if the generated mesh should be processed. When set to `"false"`, the node returns an unprocessed triangular mesh. | DYNAMIC COMBO | Yes | `"true"`<br>`"false"` |
+| `should_remesh` | Determines if the generated mesh should be processed. When set to `"false"`, the node returns an unprocessed triangular mesh. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `topology` | The target polygon topology for the remeshed model. This input is only available when `should_remesh` is set to `"true"`. | COMBO | No* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | The target number of polygons for the remeshed model. This input is only available when `should_remesh` is set to `"true"`. The default value is 300000. | INT | No* | 100 - 300000 |
 | `symmetry_mode` | Controls the symmetry applied to the generated 3D model. | COMBO | Yes | `"auto"`<br>`"on"`<br>`"off"` |
-| `should_texture` | Determines whether textures are generated for the model. Setting it to `"false"` skips the texture phase and returns a mesh without textures. | DYNAMIC COMBO | Yes | `"true"`<br>`"false"` |
+| `should_texture` | Determines whether textures are generated for the model. Setting it to `"false"` skips the texture phase and returns a mesh without textures. | DYNAMIC_COMBO | Yes | `"true"`<br>`"false"` |
 | `enable_pbr` | When `should_texture` is `"true"`, this option generates PBR maps (metallic, roughness, normal) in addition to the base color. The default value is `False`. | BOOLEAN | No* | - |
 | `texture_prompt` | A text prompt to guide the texturing process (maximum 600 characters). This input is only available when `should_texture` is `"true"`. It cannot be used at the same time as `texture_image`. | STRING | No* | - |
 | `texture_image` | An image to guide the texturing process. This input is only available when `should_texture` is `"true"`. It cannot be used at the same time as `texture_prompt`. | IMAGE | No* | - |

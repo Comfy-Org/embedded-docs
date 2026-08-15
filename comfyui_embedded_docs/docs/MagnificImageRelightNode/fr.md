@@ -13,7 +13,7 @@ Le nœud Magnific Image Relight ajuste l'éclairage d'une image d'entrée. Il pe
 | `interpolate_from_original` | Limite la liberté de génération pour correspondre davantage à l'original. Par défaut : Faux. | BOOLEAN | Oui | N/D |
 | `change_background` | Modifie l'arrière-plan en fonction de l'invite/de la référence. Par défaut : Vrai. | BOOLEAN | Oui | N/D |
 | `preserve_details` | Préserve la texture et les détails fins de l'original. Par défaut : Vrai. | BOOLEAN | Oui | N/D |
-| `advanced_settings` | Options de réglage fin pour un contrôle avancé de l'éclairage. Lorsqu'il est réglé sur `"enabled"`, des paramètres supplémentaires deviennent disponibles. | DYNAMICCOMBO | Oui | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | Options de réglage fin pour un contrôle avancé de l'éclairage. Lorsqu'il est réglé sur `"enabled"`, des paramètres supplémentaires deviennent disponibles. | DYNAMIC_COMBO | Oui | `"disabled"`<br>`"enabled"` |
 | `reference_image` | Image de référence facultative pour transférer l'éclairage. Si fournie, exactement une image est requise. Dimensions minimales : 160x160 pixels. Le rapport hauteur/largeur doit être compris entre 1:3 et 3:1. | IMAGE | Non | N/D |
 
 **Remarque sur les paramètres avancés :** Lorsque `advanced_settings` est réglé sur `"enabled"`, les paramètres imbriqués suivants deviennent actifs :

@@ -13,7 +13,7 @@ El nodo Magnific Image Relight ajusta la iluminación de una imagen de entrada. 
 | `interpolate_from_original` | Restringe la libertad de generación para que coincida más con el original. Valor predeterminado: Falso. | BOOLEAN | Sí | N/A |
 | `change_background` | Modifica el fondo según el mensaje o la referencia. Valor predeterminado: Verdadero. | BOOLEAN | Sí | N/A |
 | `preserve_details` | Mantiene la textura y los detalles finos del original. Valor predeterminado: Verdadero. | BOOLEAN | Sí | N/A |
-| `advanced_settings` | Opciones de ajuste fino para el control avanzado de iluminación. Cuando se establece en `"enabled"`, los parámetros adicionales estarán disponibles. | DYNAMICCOMBO | Sí | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | Opciones de ajuste fino para el control avanzado de iluminación. Cuando se establece en `"enabled"`, los parámetros adicionales estarán disponibles. | DYNAMIC_COMBO | Sí | `"disabled"`<br>`"enabled"` |
 | `reference_image` | Imagen de referencia opcional para transferir la iluminación. Si se proporciona, se requiere exactamente una imagen. Las dimensiones mínimas son 160x160 píxeles. La relación de aspecto debe estar entre 1:3 y 3:1. | IMAGE | No | N/A |
 
 **Nota sobre la Configuración Avanzada:** Cuando `advanced_settings` se establece en `"enabled"`, los siguientes parámetros anidados se activan:

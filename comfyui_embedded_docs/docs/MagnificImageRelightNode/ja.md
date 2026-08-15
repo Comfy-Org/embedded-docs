@@ -15,7 +15,7 @@ Magnific Image Relight ノードは、入力画像の照明を調整します。
 | `interpolate_from_original` | 生成の自由度を制限し、元の画像により近づけます。デフォルト: False。 | BOOLEAN | はい | N/A |
 | `change_background` | プロンプトまたは参照画像に基づいて背景を変更します。デフォルト: True。 | BOOLEAN | はい | N/A |
 | `preserve_details` | 元の画像のテクスチャと細部を維持します。デフォルト: True。 | BOOLEAN | はい | N/A |
-| `advanced_settings` | 高度な照明制御のための微調整オプション。`"enabled"` に設定すると、追加のパラメータが使用可能になります。 | DYNAMICCOMBO | はい | `"disabled"`<br>`"enabled"` |
+| `advanced_settings` | 高度な照明制御のための微調整オプション。`"enabled"` に設定すると、追加のパラメータが使用可能になります。 | DYNAMIC_COMBO | はい | `"disabled"`<br>`"enabled"` |
 | `reference_image` | 照明を転送するためのオプションの参照画像。指定する場合、正確に1枚の画像が必要です。最小寸法は160x160ピクセルです。アスペクト比は1:3から3:1の間である必要があります。 | IMAGE | いいえ | N/A |
 
 **高度な設定に関する注意:** `advanced_settings` が `"enabled"` に設定されている場合、以下のネストされたパラメータが有効になります。

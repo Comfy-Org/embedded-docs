@@ -9,7 +9,7 @@ Meshy: 텍스트-모델 노드는 Meshy API를 사용하여 텍스트 설명으�
 | `model` | 사용할 AI 모델 버전을 지정합니다. 현재는 "latest" 버전만 사용 가능합니다. | COMBO | 예 | `"latest"` |
 | `prompt` | 생성하려는 3D 모델의 텍스트 설명입니다. 1자에서 600자 사이여야 합니다. | STRING | 예 | - |
 | `style` | 생성된 3D 모델의 예술적 스타일입니다. | COMBO | 예 | `"realistic"`<br>`"sculpture"` |
-| `should_remesh` | 생성된 메시의 후처리 여부를 제어합니다. "false"로 설정하면 노드는 후처리되지 않은 삼각형 메시를 반환합니다. "true"를 선택하면 토폴로지와 폴리곤 수에 대한 추가 매개변수가 표시됩니다. | DYNAMIC COMBO | 예 | `"true"`<br>`"false"` |
+| `should_remesh` | 생성된 메시의 후처리 여부를 제어합니다. "false"로 설정하면 노드는 후처리되지 않은 삼각형 메시를 반환합니다. "true"를 선택하면 토폴로지와 폴리곤 수에 대한 추가 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"true"`<br>`"false"` |
 | `topology` | 리메시된 모델의 대상 폴리곤 유형입니다. 이 매개변수는 `should_remesh`가 "true"로 설정된 경우에만 사용 가능하며 필수입니다. | COMBO | 아니요* | `"triangle"`<br>`"quad"` |
 | `target_polycount` | 리메시된 모델의 대상 폴리곤 수입니다. 기본값은 300000입니다. 이 매개변수는 `should_remesh`가 "true"로 설정된 경우에만 사용 가능하며 필수입니다. | INT | 아니요* | 100 - 300000 |
 | `symmetry_mode` | 생성된 모델의 대칭을 제어합니다. | COMBO | 예 | `"auto"`<br>`"on"`<br>`"off"` |

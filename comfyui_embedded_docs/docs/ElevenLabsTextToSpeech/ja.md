@@ -12,7 +12,7 @@ ElevenLabs Text to Speech ノードは、ElevenLabs API を使用して、書き
 | `text` | 音声に変換するテキストです。 | STRING | はい | なし |
 | `stability` | 音声の安定性です。値が低いと感情表現の幅が広がり、値が高いとより一貫性のある、ただし単調になりがちな音声になります（デフォルト: 0.5）。 | FLOAT | いいえ | 0.0 - 1.0 |
 | `apply_text_normalization` | テキスト正規化モードです。"auto" はシステムが判断し、"on" は常に正規化を適用し、"off" はスキップします。 | COMBO | いいえ | `"auto"`<br>`"on"`<br>`"off"` |
-| `model` | テキスト読み上げに使用するモデルです。モデルを選択すると、そのモデル固有のパラメータが表示されます。 | DYNAMICCOMBO | いいえ | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
+| `model` | テキスト読み上げに使用するモデルです。モデルを選択すると、そのモデル固有のパラメータが表示されます。 | DYNAMIC_COMBO | いいえ | `"eleven_multilingual_v2"`<br>`"eleven_v3"` |
 | `language_code` | ISO-639-1 または ISO-639-3 言語コードです（例: 'en', 'es', 'fra'）。自動検出の場合は空のままにします（デフォルト: ""）。 | STRING | いいえ | なし |
 | `seed` | 再現性のためのシード値です（決定性は保証されません）（デフォルト: 1）。 | INT | いいえ | 0 - 2147483647 |
 | `output_format` | 音声出力フォーマットです。 | COMBO | いいえ | `"mp3_44100_192"`<br>`"opus_48000_192"` |

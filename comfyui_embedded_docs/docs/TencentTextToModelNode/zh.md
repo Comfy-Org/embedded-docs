@@ -9,7 +9,7 @@
 | `模型` | 要使用的 Hunyuan3D 模型版本。`3.1` 模型不支持 LowPoly 选项。 | COMBO | 是 | `"3.0"`<br>`"3.1"` |
 | `提示词` | 要生成的 3D 模型的文本描述。最多支持 1024 个字符。 | STRING | 是 | - |
 | `面数` | 生成 3D 模型的目标面数。默认值：500000。 | INT | 是 | 3000 - 1500000 |
-| `生成类型` | 要生成的 3D 模型类型。可用选项及其关联参数如下：<br>- **Normal**：生成标准模型。包含 `pbr` 参数（默认值：`False`）。<br>- **LowPoly**：生成低多边形模型。包含 `polygon_type`（`"triangle"` 或 `"quadrilateral"`）和 `pbr`（默认值：`False`）参数。<br>- **Geometry**：生成仅几何体模型。 | DYNAMICCOMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
+| `生成类型` | 要生成的 3D 模型类型。可用选项及其关联参数如下：<br>- **Normal**：生成标准模型。包含 `pbr` 参数（默认值：`False`）。<br>- **LowPoly**：生成低多边形模型。包含 `polygon_type`（`"triangle"` 或 `"quadrilateral"`）和 `pbr`（默认值：`False`）参数。<br>- **Geometry**：生成仅几何体模型。 | DYNAMIC_COMBO | 是 | `"Normal"`<br>`"LowPoly"`<br>`"Geometry"` |
 | `种子` | 生成的种子值。无论种子如何，结果均非确定性。设置新种子可控制节点是否应重新运行。默认值：0。 | INT | 否 | 0 - 2147483647 |
 
 **注意：** `generate_type` 参数是动态的。选择 `"LowPoly"` 将显示 `polygon_type` 和 `pbr` 的额外输入。选择 `"Normal"` 将显示 `pbr` 的输入。选择 `"Geometry"` 不会显示任何额外输入。

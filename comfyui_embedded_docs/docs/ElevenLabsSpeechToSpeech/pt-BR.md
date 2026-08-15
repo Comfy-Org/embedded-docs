@@ -11,7 +11,7 @@ O nó ElevenLabs Speech to Speech transforma um arquivo de áudio de entrada de 
 | `voz` | Voz de destino para a transformação. Conecte a partir do Seletor de Voz ou Clone de Voz Instantâneo. | CUSTOM | Sim | - |
 | `áudio` | Áudio de origem a ser transformado. | AUDIO | Sim | - |
 | `estabilidade` | Estabilidade da voz. Valores mais baixos proporcionam uma gama emocional mais ampla; valores mais altos produzem uma fala mais consistente, mas potencialmente monótona (padrão: 0.5). | FLOAT | Não | 0.0 - 1.0 |
-| `modelo` | Modelo a ser usado para a transformação de fala para fala. Cada opção fornece um conjunto específico de configurações de voz (similarity_boost, style, use_speaker_boost, speed). | DYNAMICCOMBO | Não | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
+| `modelo` | Modelo a ser usado para a transformação de fala para fala. Cada opção fornece um conjunto específico de configurações de voz (similarity_boost, style, use_speaker_boost, speed). | DYNAMIC_COMBO | Não | `eleven_multilingual_sts_v2`<br>`eleven_english_sts_v2` |
 | `formato_de_saida` | Formato de saída do áudio (padrão: "mp3_44100_192"). | COMBO | Não | `"mp3_44100_192"`<br>`"opus_48000_192"` |
 | `semente` | Semente para reprodutibilidade (padrão: 0). | INT | Não | 0 - 4294967295 |
 | `remover_ruído_de_fundo` | Remove o ruído de fundo do áudio de entrada usando isolamento de áudio (padrão: False). | BOOLEAN | Não | - |

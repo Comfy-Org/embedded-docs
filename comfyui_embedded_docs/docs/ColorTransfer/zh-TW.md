@@ -9,7 +9,7 @@ ColorTransfer 節點會調整目標影像的色調，使其與參考影像的色
 | `image_target` | 要套用色彩轉換的影像。 | IMAGE | 是 | - |
 | `image_ref` | 作為色彩比對依據的參考影像。 | IMAGE | 是 | - |
 | `method` | 要使用的色彩轉換演算法。 | COMBO | 是 | `"reinhard_lab"`<br>`"mkl_lab"`<br>`"histogram"` |
-| `source_stats` | 決定如何從來源（目標）影像計算色彩統計數據。 | DYNAMICCOMBO | 是 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
+| `source_stats` | 決定如何從來源（目標）影像計算色彩統計數據。 | DYNAMIC_COMBO | 是 | `"per_frame"`<br>`"uniform"`<br>`"target_frame"` |
 | `strength` | 色彩轉換效果的強度。值為 1.0 時套用完整轉換，0.0 則回傳原始影像。預設值：1.0 | FLOAT | 是 | 0.0 至 10.0 |
 
 **參數詳細說明：**

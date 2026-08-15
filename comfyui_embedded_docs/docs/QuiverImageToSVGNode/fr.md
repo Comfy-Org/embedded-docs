@@ -10,7 +10,7 @@ Ce nœud convertit une image matricielle en un graphique vectoriel scalable (SVG
 | --- | --- | --- | --- | --- |
 | `image` | Image d'entrée à vectoriser. | IMAGE | Oui | N/A |
 | `auto_crop` | Rogner automatiquement sur le sujet dominant. Il s'agit d'un paramètre avancé (par défaut : `False`). | BOOLEAN | Non | `True`<br>`False` |
-| `model` | Modèle à utiliser pour la vectorisation SVG. La sélection d'un modèle révèle des paramètres supplémentaires spécifiques à ce modèle : `target_size` (taille de redimensionnement carré en pixels, par défaut : 1024, plage : 128-4096), `temperature`, `top_p` et `presence_penalty`. | DYNAMICCOMBO | Oui | Plusieurs options disponibles |
+| `model` | Modèle à utiliser pour la vectorisation SVG. La sélection d'un modèle révèle des paramètres supplémentaires spécifiques à ce modèle : `target_size` (taille de redimensionnement carré en pixels, par défaut : 1024, plage : 128-4096), `temperature`, `top_p` et `presence_penalty`. | DYNAMIC_COMBO | Oui | Plusieurs options disponibles |
 | `seed` | Graine pour déterminer si le nœud doit être réexécuté ; les résultats réels sont non déterministes quelle que soit la valeur de la graine. Ce paramètre dispose d'une fonctionnalité "contrôle après génération" (par défaut : 0). | INT | Non | 0 à 2147483647 |
 
 ## Sorties

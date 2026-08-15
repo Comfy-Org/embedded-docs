@@ -8,7 +8,7 @@ Bu belge, Quiver AI'nin vektörleştirme modellerini kullanarak bir raster gör�
 | --- | --- | --- | --- | --- |
 | `image` | Vektörleştirilecek giriş görüntüsü. | IMAGE | Evet | Yok |
 | `auto_crop` | Baskın nesneye otomatik olarak kırpma yapar. Bu gelişmiş bir parametredir (varsayılan: `False`). | BOOLEAN | Hayır | `True`<br>`False` |
-| `model` | SVG vektörleştirmesi için kullanılacak model. Bir model seçmek, o modele özgü ek parametreleri ortaya çıkarır: `target_size` (piksel cinsinden kare yeniden boyutlandırma hedefi, varsayılan: 1024, aralık: 128-4096), `temperature`, `top_p` ve `presence_penalty`. | DYNAMICCOMBO | Evet | Birden çok seçenek mevcut |
+| `model` | SVG vektörleştirmesi için kullanılacak model. Bir model seçmek, o modele özgü ek parametreleri ortaya çıkarır: `target_size` (piksel cinsinden kare yeniden boyutlandırma hedefi, varsayılan: 1024, aralık: 128-4096), `temperature`, `top_p` ve `presence_penalty`. | DYNAMIC_COMBO | Evet | Birden çok seçenek mevcut |
 | `seed` | Düğümün yeniden çalıştırılıp çalıştırılmayacağını belirleyen tohum değeri; gerçek sonuçlar, tohum değerinden bağımsız olarak deterministik değildir. Bu parametre "oluşturma sonrası kontrol" işlevine sahiptir (varsayılan: 0). | INT | Hayır | 0 ile 2147483647 arası |
 
 ## Çıktılar

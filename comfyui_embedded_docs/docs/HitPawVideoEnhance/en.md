@@ -6,7 +6,7 @@ The HitPaw Video Enhance node uses an external API to improve the quality of vid
 
 | Parameter | Description | Data Type | Required | Range |
 | --- | --- | --- | --- | --- |
-| `model` | The AI model to use for video enhancement. Selecting a model reveals a nested `resolution` parameter. The available models and their supported resolutions vary. | DYNAMIC COMBO | Yes | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
+| `model` | The AI model to use for video enhancement. Selecting a model reveals a nested `resolution` parameter. The available models and their supported resolutions vary. | DYNAMIC_COMBO | Yes | `"Portrait Restore Model (1x)"`<br>`"Portrait Restore Model (2x)"`<br>`"General Restore Model (1x)"`<br>`"General Restore Model (2x)"`<br>`"General Restore Model (4x)"`<br>`"Ultra HD Model (2x)"`<br>`"Generative Model (1x)"` |
 | `model.resolution` | The target resolution for the enhanced video. The `"8K"` option is only available for models other than `"Generative Model (1x)"`. | COMBO | Yes | For `"Generative Model (1x)"`: `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br><br>For all other models: `"original"`<br>`"720p"`<br>`"1080p"`<br>`"2K/QHD"`<br>`"4K/UHD"`<br>`"8K"` |
 | `video` | The input video file to be enhanced. | VIDEO | Yes | N/A |
 
