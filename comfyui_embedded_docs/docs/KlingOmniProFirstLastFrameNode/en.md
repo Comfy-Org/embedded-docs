@@ -17,6 +17,15 @@ This node uses the latest Kling AI model to generate a video from a start frame,
 | `generate_audio` | Generate audio for the video (default: False). Only supported for `kling-v3-omni`. | BOOLEAN | No | True / False |
 | `seed` | Seed controls whether the node should re-run; results are non-deterministic regardless of seed (default: 0). | INT | No | 0 to 2147483647 |
 
+### Storyboard Inputs
+
+When `storyboards` is set to a value other than `"disabled"`, the following inputs are added for each selected segment (N ranges from 1 to the selected number of storyboards):
+
+| Parameter | Description | Data Type | Required | Range |
+|-----------|-------------|-----------|----------|-------|
+| `storyboard_N_prompt` | Prompt for storyboard segment N. Max 512 characters. (default: "") | STRING | Yes | - |
+| `storyboard_N_duration` | Duration for storyboard segment N in seconds (default: 4). | INT | Yes | 1 to 15 |
+
 **Important Constraints:**
 
 * The `end_frame` input cannot be used at the same time as the `reference_images` input.
@@ -27,6 +36,7 @@ This node uses the latest Kling AI model to generate a video from a start frame,
 * The aspect ratio of all input images must be between 1:2.5 and 2.5:1.
 * A maximum of 6 images can be provided via the `reference_images` input.
 * The `prompt` text must be between 1 and 2500 characters in length (0 characters allowed when storyboards are enabled).
+* The prompt can reference the input images using the placeholders `@image`, `@image1`, `@image2`, etc.; these are automatically converted to the API-compatible image reference format.
 * When storyboards are enabled, the total duration of all storyboard segments must equal the global `duration` value.
 * Each storyboard prompt must be between 1 and 512 characters in length.
 
