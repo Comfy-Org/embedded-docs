@@ -2,15 +2,21 @@
 """
 Update parameter names in documentation to match frontend translations
 Uses node_translations.json exported from frontend nodeDefs
+
+The translations file is refreshed from GitHub (Comfy-Org/ComfyUI_frontend)
+when it is missing or older than TRANSLATIONS_MAX_AGE_HOURS, so param
+localization does not depend on a local frontend checkout being up to date.
 """
 
 import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 import runtime  # noqa: F401
+from lib.frontend_source import fetch_remote_translations, save_translations
 from lib.paths import NODE_TRANSLATIONS, embedded_docs_dir, load_dotenv
 
 load_dotenv()
@@ -18,16 +24,47 @@ load_dotenv()
 DOCS_ROOT = embedded_docs_dir().resolve()
 TRANSLATIONS_FILE = NODE_TRANSLATIONS
 
+# Refresh the translations file from GitHub when older than this (hours)
+TRANSLATIONS_MAX_AGE_HOURS = 12
+
 # Supported languages
 SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
 
-def load_frontend_translations():
-    """Load frontend translations from exported JSON"""
+# The shared node_translations.json is also consumed by lib/doc_title.py,
+# which relies on the English display_name as fallback. Always include 'en'
+# when (re)writing the file, even though this script only updates non-en docs.
+FETCH_LANGS = ['en'] + SUPPORTED_LANGS
+
+def load_frontend_translations(force_refresh=False):
+    """Load frontend translations from exported JSON, refreshing from GitHub
+    if the file is missing or stale (older than TRANSLATIONS_MAX_AGE_HOURS)."""
+    stale = False
     if not TRANSLATIONS_FILE.exists():
-        print(f"❌ Error: {TRANSLATIONS_FILE} not found")
-        print("   Please run: python sync_frontend_translations.py <frontend_path> --export")
-        sys.exit(1)
-    
+        print(f"ℹ️  {TRANSLATIONS_FILE} not found")
+        stale = True
+    else:
+        age_h = (time.time() - TRANSLATIONS_FILE.stat().st_mtime) / 3600
+        if age_h > TRANSLATIONS_MAX_AGE_HOURS:
+            print(f"ℹ️  Translations file is {age_h:.1f}h old (max {TRANSLATIONS_MAX_AGE_HOURS}h); refreshing from GitHub")
+            stale = True
+
+    if stale or force_refresh:
+        print("📡 Fetching frontend translations from GitHub (Comfy-Org/ComfyUI_frontend@master)...")
+        data = fetch_remote_translations(FETCH_LANGS)
+        if any(data.values()):
+            # Merge over the existing file (atomic write) so languages whose
+            # fetch failed and keys not managed here are preserved.
+            merged = save_translations(TRANSLATIONS_FILE, data)
+            print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
+            return merged
+        # Fetch failed: fall back to existing file
+        if TRANSLATIONS_FILE.exists():
+            print("⚠️  GitHub fetch failed; using existing local translations file")
+        else:
+            print("❌ Error: no translations available (GitHub fetch failed and no local file)")
+            print("   Please run: python sync_frontend_translations.py --export")
+            sys.exit(1)
+
     with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
         return json.load(f)
 
@@ -55,10 +92,19 @@ def extract_table_rows(content, table_type='inputs'):
 
 def update_parameter_name_in_row(row, old_param_name, new_param_name):
     """Update parameter name in a table row while preserving backticks and structure"""
-    # Parameter name is typically in the first column with backticks
-    pattern = rf'\|\s*`{re.escape(old_param_name)}`\s*\|'
-    replacement = f'| `{new_param_name}` |'
-    return re.sub(pattern, replacement, row)
+    # DynamicCombo sub-params: frontend key uses underscores (model_aspect_ratio),
+    # docs may write dot form with prefix separator (model.aspect_ratio) or full
+    # dot form (model.aspect.ratio). Try all variants.
+    variants = [
+        old_param_name,
+        old_param_name.replace("_", ".", 1),
+        old_param_name.replace("_", "."),
+    ]
+    for v in variants:
+        pattern = rf'\|\s*`{re.escape(v)}`\s*\|'
+        if re.search(pattern, row):
+            return re.sub(pattern, f'| `{new_param_name}` |', row)
+    return row
 
 def update_doc_with_translations(doc_file, node_name, lang, frontend_translations):
     """Update a documentation file with frontend translations"""
@@ -79,24 +125,37 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
     original_content = content
     changes_made = []
     
-    # Update input parameter names
+    # Update input parameter names, restricted to the Inputs table so
+    # same-named rows in Outputs or other tables are not touched.
     if 'inputs' in node_trans:
+        renames = {}
         for param_name, param_data in node_trans['inputs'].items():
             if not isinstance(param_data, dict):
                 continue
             frontend_name = param_data.get('name', '')
             if frontend_name and frontend_name != param_name:
-                # Try to find and replace the parameter name in the table
-                old_pattern = f'`{param_name}`'
-                if old_pattern in content:
-                    # Only replace in table rows (lines starting with |)
-                    lines = content.split('\n')
-                    for i, line in enumerate(lines):
-                        if line.strip().startswith('|') and old_pattern in line:
-                            # This is a table row with the parameter
-                            lines[i] = line.replace(f'`{param_name}`', f'`{frontend_name}`', 1)
-                            changes_made.append(f"[Input] {param_name} → {frontend_name}")
-                    content = '\n'.join(lines)
+                renames[param_name] = frontend_name
+        if renames:
+            lines = content.split('\n')
+            in_input_section = False
+            for i, line in enumerate(lines):
+                # Detect if we're in the Inputs section
+                if re.match(r'##\s+(?:输入|輸入|入力|입력|Входы|Entradas|Entrées|Inputs|المدخلات|Girdiler|ورودی‌ها)', line):
+                    in_input_section = True
+                    continue
+                elif line.startswith('##'):
+                    in_input_section = False
+                    continue
+                if not (in_input_section and line.strip().startswith('|')):
+                    continue
+                for param_name, frontend_name in renames.items():
+                    updated = update_parameter_name_in_row(line, param_name, frontend_name)
+                    if updated != line:
+                        lines[i] = updated
+                        line = updated
+                        changes_made.append(f"[Input] {param_name} → {frontend_name}")
+                        break
+            content = '\n'.join(lines)
     
     # Update output parameter names
     if 'outputs' in node_trans:
@@ -166,7 +225,8 @@ def main():
     target_lang = None
     target_node = None
     dry_run = False
-    
+    force_refresh = False
+
     for i, arg in enumerate(sys.argv[1:]):
         if arg == '--lang':
             target_lang = sys.argv[i + 2] if i + 2 < len(sys.argv) else None
@@ -174,6 +234,8 @@ def main():
             target_node = sys.argv[i + 2] if i + 2 < len(sys.argv) else None
         elif arg == '--dry-run':
             dry_run = True
+        elif arg == '--refresh':
+            force_refresh = True
     
     print("=" * 80)
     print("Parameter Translation Updater")
@@ -188,7 +250,7 @@ def main():
     
     # Load frontend translations
     print("📖 Loading frontend translations...")
-    frontend_trans = load_frontend_translations()
+    frontend_trans = load_frontend_translations(force_refresh=force_refresh)
     print(f"   Loaded translations for {len(SUPPORTED_LANGS)} languages\n")
     
     # Get list of nodes to process
