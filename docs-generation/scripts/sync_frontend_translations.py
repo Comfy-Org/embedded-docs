@@ -2,14 +2,16 @@
 """
 Sync parameter translations from the frontend repo's nodeDefs.json into the docs
 
-Sources (in priority order):
-1. Remote: Comfy-Org/ComfyUI_frontend nodeDefs.json via raw.githubusercontent.com
-   (default when no local path is given, or when --remote is passed)
-2. Local: a checked-out ComfyUI_frontend repo (fallback, offline-capable)
+Sources:
+1. Remote (default): Comfy-Org/ComfyUI_frontend nodeDefs.json via
+   raw.githubusercontent.com (always the latest master)
+2. Local: a checked-out ComfyUI_frontend repo. Before reading it fetches
+   origin/master so the data is never stale, then reads via `git show`
+   (working tree untouched).
 
 Usage:
-  python sync_frontend_translations.py --export                 # fetch from GitHub
-  python sync_frontend_translations.py /path/to/ComfyUI_frontend --export  # local repo
+  python sync_frontend_translations.py --export                 # fetch from GitHub (default)
+  python sync_frontend_translations.py /path/to/ComfyUI_frontend --export  # local repo (auto-fetch first)
 """
 
 import json
@@ -37,18 +39,61 @@ def load_frontend_translations(frontend_path, lang, use_remote=False):
     """Load translations for a language from the frontend repo (remote or local)"""
     if use_remote or frontend_path is None:
         return load_frontend_translations_remote(lang)
-    locale_file = Path(frontend_path) / 'src' / 'locales' / lang / 'nodeDefs.json'
-    
-    if not locale_file.exists():
-        print(f"⚠️  Warning: language file not found for {lang}: {locale_file}")
-        return {}
-    
-    try:
-        with open(locale_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"❌ Failed to read language file for {lang}: {e}")
-        return {}
+    return load_frontend_translations_local(frontend_path, lang)
+
+def load_frontend_translations_local(frontend_path, lang):
+    """Load nodeDefs.json from a local frontend checkout.
+
+    First fetches the latest origin/master so the data is never stale, then
+    reads the file from the git object (git show origin/master:...), which
+    leaves the working tree untouched.
+    """
+    repo = Path(frontend_path)
+    locale_rel = f"src/locales/{lang}/nodeDefs.json"
+    if not (repo / ".git").exists():
+        print(f"⚠️  Warning: not a git repo: {repo}; reading file directly")
+        locale_file = repo / locale_rel
+        if not locale_file.exists():
+            print(f"⚠️  Warning: language file not found for {lang}: {locale_file}")
+            return {}
+        try:
+            with open(locale_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"❌ Failed to read language file for {lang}: {e}")
+            return {}
+
+    # Fetch latest default branch so the checkout is up to date before reading.
+    # The upstream default branch may be main or master; try both.
+    import subprocess
+    fetched_refs = []
+    for branch in ("main", "master"):
+        try:
+            r = subprocess.run(
+                ["git", "-C", str(repo), "fetch", "origin", branch],
+                capture_output=True, timeout=60,
+            )
+            if r.returncode == 0:
+                fetched_refs.append(f"origin/{branch}")
+        except Exception as e:
+            print(f"⚠️  Warning: git fetch origin {branch} failed ({e})")
+    if not fetched_refs:
+        print("⚠️  Warning: git fetch failed; using existing checkout state")
+
+    # Read the file from the freshest ref via git show (working tree untouched)
+    refs = fetched_refs + ["origin/main", "origin/master", "main", "master", "HEAD"]
+    for ref in refs:
+        try:
+            out = subprocess.run(
+                ["git", "-C", str(repo), "show", f"{ref}:{locale_rel}"],
+                capture_output=True, text=True, timeout=30,
+            )
+            if out.returncode == 0 and out.stdout.strip():
+                return json.loads(out.stdout)
+        except Exception:
+            continue
+    print(f"⚠️  Warning: failed to read {locale_rel} from {repo} (tried {refs})")
+    return {}
 
 def load_frontend_translations_remote(lang):
     """Fetch nodeDefs.json for a language from GitHub raw (master branch)"""
