@@ -887,15 +887,21 @@ def copy_assets_and_rewrite(
         filename = abs_path.name
         # Cross-directory relative refs (e.g. ../Load3D/asset/x.webp) resolve
         # outside doc_dir, where relative_to raises ValueError. Fall back to the
-        # basename so the asset is still copied under the node's images dir.
+        # parent directory name so the collision prefix stays meaningful.
         try:
             rel = abs_path.relative_to(doc_dir)
         except ValueError:
-            rel = Path(filename)
+            rel = Path(abs_path.parent.name) / filename
         # Deterministic destination name: include the source subdirectory on collision
         if filename in used_names and used_names[filename] != abs_path:
             stem, ext = filename.rsplit(".", 1) if "." in filename else (filename, "")
-            filename = f"{Path(rel).parent.name}_{stem}.{ext}" if ext else f"{Path(rel).parent.name}_{stem}"
+            base = f"{Path(rel).parent.name}_{stem}" if Path(rel).parent.name else stem
+            candidate = f"{base}.{ext}" if ext else base
+            n = 1
+            while candidate in used_names:
+                candidate = f"{base}_{n}.{ext}" if ext else f"{base}_{n}"
+                n += 1
+            filename = candidate
         used_names[filename] = abs_path
         new_ref = f"/images/built-in-nodes/{node_name}/{filename}"
         if not dry_run:
