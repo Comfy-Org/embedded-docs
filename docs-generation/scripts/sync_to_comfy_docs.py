@@ -885,8 +885,9 @@ def copy_assets_and_rewrite(
     used_names: dict[str, Path] = {}
     for orig, abs_path in refs:
         filename = abs_path.name
-        # 跨目录相对引用（如 ../Load3D/asset/x.webp）resolve 后在 doc_dir 之外，
-        # relative_to 会抛 ValueError；此时直接用 basename 作为源子目录名。
+        # Cross-directory relative refs (e.g. ../Load3D/asset/x.webp) resolve
+        # outside doc_dir, where relative_to raises ValueError. Fall back to the
+        # basename so the asset is still copied under the node's images dir.
         try:
             rel = abs_path.relative_to(doc_dir)
         except ValueError:
