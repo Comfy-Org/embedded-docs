@@ -24,8 +24,8 @@ Cuando `storyboards` está habilitado, las siguientes entradas aparecen para cad
 
 | Parámetro | Descripción | Tipo de dato | Requerido | Rango |
 |-----------|-------------|--------------|-----------|-------|
-| `storyboard_N_prompt` | Prompt para el segmento de storyboard N. Máximo 512 caracteres. | STRING | No | 1 a 512 caracteres |
-| `storyboard_N_duration` | Duración para el segmento de storyboard N en segundos (predeterminado: 4). | INT | No | 1 a 15 |
+| `storyboard_N_prompt` | Prompt para el segmento de storyboard N. Máximo 512 caracteres. | STRING | Sí | 1 a 512 caracteres |
+| `storyboard_N_duration` | Duración para el segmento de storyboard N en segundos (predeterminado: 4). | INT | Sí | 1 a 15 |
 
 **Nota:** La entrada `reference_images` acepta un máximo de 7 imágenes. Si se proporcionan más, el nodo genera un error. Cada imagen se valida para dimensiones mínimas y relación de aspecto.
 

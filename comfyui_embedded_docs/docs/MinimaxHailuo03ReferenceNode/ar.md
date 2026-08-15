@@ -6,7 +6,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `النموذج` | النموذج المستخدم لتوليد الفيديو (الافتراضي: "MiniMax H3"). اختيار "MiniMax H3" يوفر الإعدادات التالية: `prompt`، `resolution`، `ratio`، `duration`، `reference_images`، `reference_videos`، و`reference_audios`. | STRING | نعم | "MiniMax H3" |
+| `النموذج` | النموذج المستخدم لتوليد الفيديو (الافتراضي: "MiniMax H3"). اختيار "MiniMax H3" يوفر الإعدادات التالية: `prompt`، `resolution`، `ratio`، `duration`، `reference_images`، `reference_videos`، و`reference_audios`. | DYNAMIC_COMBO | نعم | "MiniMax H3" |
 | `البذرة` | بذرة عشوائية. الطلب نفسه مع نفس البذرة يعطي نتائج متشابهة، لكنها ليست متطابقة بالضرورة (الافتراضي: 42). | INT | نعم | 0 إلى 4294967295 |
 | `علامة مائية` | ما إذا كان يجب إضافة علامة مائية AIGC إلى الفيديو (الافتراضي: false). | BOOLEAN | لا | true<br>false |
 

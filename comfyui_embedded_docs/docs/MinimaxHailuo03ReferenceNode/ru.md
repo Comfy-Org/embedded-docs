@@ -8,7 +8,7 @@
 
 | Параметр | Описание | Тип данных | Обязательный | Диапазон |
 |-----------|-------------|-----------|----------|-------|
-| `модель` | Модель для генерации видео (по умолчанию: «MiniMax H3»). При выборе «MiniMax H3» становятся доступны настройки `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` и `reference_audios` ниже. | STRING | Да | «MiniMax H3» |
+| `модель` | Модель для генерации видео (по умолчанию: «MiniMax H3»). При выборе «MiniMax H3» становятся доступны настройки `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` и `reference_audios` ниже. | DYNAMIC_COMBO | Да | «MiniMax H3» |
 | `seed` | Случайное зерно (seed). Одинаковые запросы с одним и тем же seed дают похожие, но не гарантированно идентичные результаты (по умолчанию: 42). | INT | Да | 0–4294967295 |
 | `водяной знак` | Добавлять ли AIGC-водяной знак к видео (по умолчанию: false). | BOOLEAN | Нет | true<br>false |
 

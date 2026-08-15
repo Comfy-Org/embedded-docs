@@ -8,7 +8,7 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `モデル` | ビデオ生成に使用するモデル（デフォルト: "MiniMax H3"）。「MiniMax H3」を選択すると、以下の `prompt`、`resolution`、`ratio`、`duration`、`reference_images`、`reference_videos`、`reference_audios` 設定が提供されます。 | STRING | はい | "MiniMax H3" |
+| `モデル` | ビデオ生成に使用するモデル（デフォルト: "MiniMax H3"）。「MiniMax H3」を選択すると、以下の `prompt`、`resolution`、`ratio`、`duration`、`reference_images`、`reference_videos`、`reference_audios` 設定が提供されます。 | DYNAMIC_COMBO | はい | "MiniMax H3" |
 | `シード` | 乱数シード。同じシードで同じリクエストを行うと、類似した結果が得られますが、同一の結果が保証されるわけではありません（デフォルト: 42）。 | INT | はい | 0 ～ 4294967295 |
 | `ウォーターマーク` | ビデオにAIGC透かしを追加するかどうか（デフォルト: false）。 | BOOLEAN | いいえ | true<br>false |
 

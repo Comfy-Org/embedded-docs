@@ -8,7 +8,7 @@ Bu düğüm, MiniMax H3 modelini kullanarak bir video oluşturur; sonucu koşull
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video oluşturmak için kullanılacak model (varsayılan: "MiniMax H3"). "MiniMax H3" seçildiğinde aşağıdaki `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` ve `reference_audios` ayarları sağlanır. | STRING | Evet | "MiniMax H3" |
+| `model` | Video oluşturmak için kullanılacak model (varsayılan: "MiniMax H3"). "MiniMax H3" seçildiğinde aşağıdaki `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` ve `reference_audios` ayarları sağlanır. | DYNAMIC_COMBO | Evet | "MiniMax H3" |
 | `seed` | Rastgele seed. Aynı seed ile yapılan aynı istek benzer sonuçlar verir, ancak sonuçların birebir aynı olması garanti edilmez (varsayılan: 42). | INT | Evet | 0 ile 4294967295 arası |
 | `watermark` | Videoya AIGC filigranı eklenip eklenmeyeceği (varsayılan: false). | BOOLEAN | Hayır | true<br>false |
 

@@ -24,8 +24,8 @@ Quando `storyboards` está habilitado, as seguintes entradas aparecem para cada 
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `storyboard_N_prompt` | Prompt para o segmento de storyboard N. Máximo de 512 caracteres. | STRING | Não | 1 a 512 caracteres |
-| `storyboard_N_duration` | Duração para o segmento de storyboard N em segundos (padrão: 4). | INT | Não | 1 a 15 |
+| `storyboard_N_prompt` | Prompt para o segmento de storyboard N. Máximo de 512 caracteres. | STRING | Sim | 1 a 512 caracteres |
+| `storyboard_N_duration` | Duração para o segmento de storyboard N em segundos (padrão: 4). | INT | Sim | 1 a 15 |
 
 **Nota:** A entrada `reference_images` aceita um máximo de 7 imagens. Se mais forem fornecidas, o nó gera um erro. Cada imagem é validada quanto às dimensões mínimas e à proporção de aspecto.
 

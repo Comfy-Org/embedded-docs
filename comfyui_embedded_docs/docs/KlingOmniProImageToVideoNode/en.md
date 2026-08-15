@@ -24,8 +24,8 @@ When `storyboards` is enabled, the following inputs appear for each selected sto
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `storyboard_N_prompt` | Prompt for storyboard segment N. Max 512 characters. | STRING | No | 1 to 512 characters |
-| `storyboard_N_duration` | Duration for storyboard segment N in seconds (default: 4). | INT | No | 1 to 15 |
+| `storyboard_N_prompt` | Prompt for storyboard segment N. Max 512 characters. | STRING | Yes | 1 to 512 characters |
+| `storyboard_N_duration` | Duration for storyboard segment N in seconds (default: 4). | INT | Yes | 1 to 15 |
 
 **Note:** The `reference_images` input accepts a maximum of 7 images. If more are provided, the node raises an error. Each image is validated for minimum dimensions and aspect ratio.
 

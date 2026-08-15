@@ -8,7 +8,7 @@ This node generates a video using the MiniMax H3 model, using reference images, 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use for video generation (default: "MiniMax H3"). Selecting "MiniMax H3" provides the `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos`, and `reference_audios` settings below. | STRING | Yes | "MiniMax H3" |
+| `model` | Model to use for video generation (default: "MiniMax H3"). Selecting "MiniMax H3" provides the `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos`, and `reference_audios` settings below. | DYNAMIC_COMBO | Yes | "MiniMax H3" |
 | `seed` | Random seed. The same request with the same seed gives similar, but not guaranteed identical, results (default: 42). | INT | Yes | 0 to 4294967295 |
 | `watermark` | Whether to add an AIGC watermark to the video (default: false). | BOOLEAN | No | true<br>false |
 

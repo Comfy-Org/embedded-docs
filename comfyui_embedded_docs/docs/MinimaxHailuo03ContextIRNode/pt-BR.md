@@ -1,6 +1,5 @@
 # MinimaxHailuo03ContextIRNode
 
-```markdown
 Este nó usa o MiniMax H3 Context IR para analisar sua descrição em texto e qualquer mídia anexada, e então produz um prompt de vídeo estruturado e mais robusto. O prompt retornado é projetado para ser conectado à entrada de prompt de um nó de vídeo MiniMax H3; se você anexar mídia lá, anexe a mesma mídia na mesma ordem, pois o prompt aprimorado se refere à mídia por posição.
 
 ## Entradas
@@ -44,7 +43,6 @@ Este nó usa o MiniMax H3 Context IR para analisar sua descrição em texto e qu
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
 | `STRING` | O prompt de vídeo estruturado e aprimorado gerado pelo MiniMax H3 Context IR. Ele pode ser conectado à entrada de prompt de um nó de geração de vídeo MiniMax H3. | STRING |
-```
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MinimaxHailuo03ContextIRNode/pt-BR.md)
 

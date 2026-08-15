@@ -24,8 +24,8 @@ Bu düğüm, bir metin istemi ve en fazla yedi referans görseline dayalı video
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `storyboard_N_prompt` | Storyboard segmenti N için istem. En fazla 512 karakter. | STRING | Hayır | 1 ile 512 arası characters |
-| `storyboard_N_duration` | Storyboard segmenti N için saniye cinsinden süre (varsayılan: 4). | INT | Hayır | 1 ile 15 arası |
+| `storyboard_N_prompt` | Storyboard segmenti N için istem. En fazla 512 karakter. | STRING | Evet | 1 ile 512 arası characters |
+| `storyboard_N_duration` | Storyboard segmenti N için saniye cinsinden süre (varsayılan: 4). | INT | Evet | 1 ile 15 arası |
 
 **Not:** `reference_images` girdisi en fazla 7 görsel kabul eder. Daha fazla sağlanırsa düğüm bir hata verir. Her görsel minimum boyut ve en-boy oranı açısından doğrulanır.
 

@@ -8,7 +8,7 @@ Ce nœud génère une vidéo en utilisant le modèle MiniMax H3, en s'appuyant s
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------|----------|-------|
-| `modèle` | Modèle à utiliser pour la génération de vidéos (par défaut : "MiniMax H3"). La sélection de "MiniMax H3" fournit les paramètres `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` et `reference_audios` ci-dessous. | STRING | Oui | "MiniMax H3" |
+| `modèle` | Modèle à utiliser pour la génération de vidéos (par défaut : "MiniMax H3"). La sélection de "MiniMax H3" fournit les paramètres `prompt`, `resolution`, `ratio`, `duration`, `reference_images`, `reference_videos` et `reference_audios` ci-dessous. | DYNAMIC_COMBO | Oui | "MiniMax H3" |
 | `graine` | Graine aléatoire. La même demande avec la même graine donne des résultats similaires, mais pas garantis identiques (par défaut : 42). | INT | Oui | 0 à 4294967295 |
 | `filigrane` | Indique si un filigrane AIGC doit être ajouté à la vidéo (par défaut : false). | BOOLEAN | Non | true<br>false |
 
