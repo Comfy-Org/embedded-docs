@@ -1,6 +1,5 @@
 # Google Gemini Omni (Vidéo)
 
-```markdown
 Générez une vidéo avec de l'audio à partir d'une invite texte à l'aide du modèle Gemini Omni Flash de Google. Vous pouvez éventuellement fournir des images et/ou vidéos de référence pour guider ou modifier le résultat. Décrivez la durée souhaitée (3 à 10 s) et le rapport hauteur/largeur (16:9 ou 9:16) directement dans l'invite.
 
 ## Entrées
@@ -33,7 +32,6 @@ Remarques :
 |---------------|-------------|-----------------|
 | `VIDEO` | La vidéo générée avec l'audio du modèle Gemini. | VIDEO |
 | `STRING` | Toute réponse texte du modèle, telle que des raisonnements ou des explications. | STRING |
-```
 
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/GeminiVideoOmni/fr.md)
 
