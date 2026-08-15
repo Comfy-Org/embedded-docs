@@ -55,10 +55,19 @@ def extract_table_rows(content, table_type='inputs'):
 
 def update_parameter_name_in_row(row, old_param_name, new_param_name):
     """Update parameter name in a table row while preserving backticks and structure"""
-    # Parameter name is typically in the first column with backticks
-    pattern = rf'\|\s*`{re.escape(old_param_name)}`\s*\|'
-    replacement = f'| `{new_param_name}` |'
-    return re.sub(pattern, replacement, row)
+    # DynamicCombo sub-params: frontend key uses underscores (model_aspect_ratio),
+    # docs may write dot form with prefix separator (model.aspect_ratio) or full
+    # dot form (model.aspect.ratio). Try all variants.
+    variants = [
+        old_param_name,
+        old_param_name.replace("_", ".", 1),
+        old_param_name.replace("_", "."),
+    ]
+    for v in variants:
+        pattern = rf'\|{{1}}\s*`{re.escape(v)}`\s*\|'
+        if re.search(pattern, row):
+            return re.sub(pattern, f'| `{new_param_name}` |', row)
+    return row
 
 def update_doc_with_translations(doc_file, node_name, lang, frontend_translations):
     """Update a documentation file with frontend translations"""
@@ -86,16 +95,22 @@ def update_doc_with_translations(doc_file, node_name, lang, frontend_translation
                 continue
             frontend_name = param_data.get('name', '')
             if frontend_name and frontend_name != param_name:
-                # Try to find and replace the parameter name in the table
-                old_pattern = f'`{param_name}`'
-                if old_pattern in content:
-                    # Only replace in table rows (lines starting with |)
+                # Try to find and replace the parameter name in the table.
+                # Match underscore (frontend key) and dot (docs) forms.
+                dot_variants = {
+                    param_name,
+                    param_name.replace("_", ".", 1),
+                    param_name.replace("_", "."),
+                }
+                hit = any(f'`{p}`' in content for p in dot_variants)
+                if hit:
                     lines = content.split('\n')
                     for i, line in enumerate(lines):
-                        if line.strip().startswith('|') and old_pattern in line:
-                            # This is a table row with the parameter
-                            lines[i] = line.replace(f'`{param_name}`', f'`{frontend_name}`', 1)
-                            changes_made.append(f"[Input] {param_name} → {frontend_name}")
+                        if line.strip().startswith('|'):
+                            updated = update_parameter_name_in_row(line, param_name, frontend_name)
+                            if updated != line:
+                                lines[i] = updated
+                                changes_made.append(f"[Input] {param_name} → {frontend_name}")
                     content = '\n'.join(lines)
     
     # Update output parameter names
