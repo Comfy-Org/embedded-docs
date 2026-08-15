@@ -1,37 +1,41 @@
 # HappyHorse Video Düzenleme
 
-## Genel Bakış
-
-HappyHorse modelini kullanarak bir videoyu metin talimatları veya referans görsellerle düzenleyin. Çıktı süresi 3-15 saniye arasındadır ve giriş videosuyla eşleşir; 15 saniyeden uzun girişler kısaltılır.
+HappyHorse modeliyle metin talimatlarını veya referans görsellerini kullanarak bir videoyu düzenleyin. Çıktı süresi 3-15 saniyedir ve giriş videosuyla eşleşir; 15 saniyeden uzun girişler kısaltılır.
 
 ## Girdiler
 
-| Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `model` | Model seçimi, istem, çözünürlük, en-boy oranı ve isteğe bağlı referans görsellerini içeren model yapılandırması. | DICT | Evet | Aşağıya bakın |
-| `video` | Düzenlenecek video. | VIDEO | Evet | - |
-| `tohum` | Üretim için kullanılacak tohum değeri (varsayılan: 0). | INT | Evet | 0 ile 2147483647 arası |
-| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True / False |
+### Genel Girdiler
 
-### `model` Parametre Detayları
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `model` | Kullanılacak HappyHorse video düzenleme modeli. Bu seçim, hangi prompt, çözünürlük, oran ve referans görsel seçeneklerinin kullanılabilir olduğunu belirler. | DICT | Evet | "happyhorse-1.0-video-edit" |
+| `video` | Düzenlenecek video. | VIDEO | Evet | 3 ila 60 saniye |
+| `tohum` | Üretim için kullanılacak seed (varsayılan: 0). | INT | Evet | 0 ila 2147483647 |
+| `filigran` | Sonuca yapay zeka tarafından oluşturulmuş bir filigran eklenip eklenmeyeceği (varsayılan: False). | BOOLEAN | Hayır | True<br>False |
 
-`model` parametresi aşağıdaki alanları içeren bir sözlüktür:
+### happyhorse-1.0-video-edit Girdileri
 
-| Alan | Açıklama | Veri Türü | Zorunlu | Aralık |
-| --- | --- | --- | --- | --- |
-| `model` | Kullanılacak HappyHorse video düzenleme modeli. | STRING | Evet | `"happyhorse-1.0-video-edit"` |
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
 | `prompt` | Düzenleme talimatları veya stil aktarımı gereksinimleri. En az 1 karakter uzunluğunda olmalıdır. | STRING | Evet | - |
-| `resolution` | Çıktı çözünürlüğü. | STRING | Evet | `"720P"`<br>`"1080P"` |
-| `ratio` | En-boy oranı. Değiştirilmezse, giriş videosunun oranına yaklaşır. | STRING | Evet | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
-| `reference_images` | Düzenlemeyi yönlendirmek için isteğe bağlı referans görselleri (image1, image2, image3, image4, image5). | DICT | Hayır | 0 ile 5 görsel arası |
+| `resolution` | Çıktı çözünürlüğü. | STRING | Evet | "720P"<br>"1080P" |
+| `ratio` | En boy oranı. Değiştirilmezse, giriş videosunun oranına yaklaşır. | STRING | Evet | "16:9"<br>"9:16"<br>"1:1"<br>"4:3"<br>"3:4" |
+
+### Referans Girdileri
+
+| Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
+|-----------|-------------|-----------|----------|-------|
+| `reference_images` | Genişletilebilir yuva: düzenlemeyi yönlendirmek için 0 ila 5 referans görseli bağlayın (`image1`...`image5`). | IMAGE | Hayır | 0 ila 5 görsel |
+
+**Not:** Giriş videosu 3 ila 60 saniye uzunluğunda olmalıdır. Çıktı süresi 3-15 saniyedir ve giriş videosuyla eşleşir; 15 saniyeden uzun giriş videoları kısaltılır. `prompt` en az 1 karakter uzunluğunda olmalıdır.
 
 ## Çıktılar
 
 | Çıktı Adı | Açıklama | Veri Türü |
-| --- | --- | --- |
+|-------------|-------------|-----------|
 | `video` | Düzenlenmiş video çıktısı. | VIDEO |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseVideoEditApi/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `af6747efbea1c65e4909d35dad009cbc2ffaad787d0f2031581c227deb9bf53c`
+**Source fingerprint (SHA-256):** `396cad4b5a06d457746a421050df98c892fa9db6019e3de983b4d0c417842b57`

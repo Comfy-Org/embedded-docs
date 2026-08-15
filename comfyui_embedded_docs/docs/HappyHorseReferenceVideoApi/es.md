@@ -1,29 +1,50 @@
 # HappyHorse Referencia a Video
 
-## Descripción general
-
-Este nodo genera un video con una persona u objeto basado en imágenes de referencia utilizando el modelo HappyHorse. Permite crear videos con un solo personaje o múltiples personajes interactuando entre sí.
+Este nodo genera un video que presenta a una persona u objeto a partir de imágenes de referencia utilizando el modelo HappyHorse. Admite actuaciones de un solo personaje e interacciones de múltiples personajes. Las imágenes de referencia se cargan y se utilizan para representar a los personajes en el video generado.
 
 ## Entradas
 
-| Parámetro | Descripción | Tipo de Dato | Obligatorio | Rango |
-| --- | --- | --- | --- | --- |
-| `modelo` | El modelo HappyHorse a utilizar para la generación del video. | COMBO | Sí | `"happyhorse-1.0-r2v"` |
-| `prompt` | Una descripción textual del video que deseas generar. Usa identificadores como 'character1' y 'character2' para referirte a los personajes de referencia. | STRING | Sí | N/A |
+### Entradas comunes
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `modelo` | El modelo HappyHorse de referencia a video que se utilizará para la generación. | DYNAMIC_COMBO | Sí | `"happyhorse-1.1-r2v"`<br>`"happyhorse-1.0-r2v"` |
+| `semilla` | Semilla para usar en la generación (predeterminado: 0). Se puede configurar para que cambie automáticamente después de cada generación. | INT | No | 0 a 2147483647 |
+| `marca de agua` | Si se debe añadir una marca de agua generada por IA al resultado (predeterminado: False). | BOOLEAN | No | True o False |
+
+### Entradas de HappyHorse 1.1 (happyhorse-1.1-r2v)
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt` | Indicación que describe el video. Utilice identificadores como 'character1' y 'character2' para referirse a los personajes de referencia. | STRING | Sí | N/A |
+| `resolution` | La resolución del video generado. | COMBO | Sí | `"720P"`<br>`"1080P"` |
+| `ratio` | La relación de aspecto del video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"`<br>`"21:9"`<br>`"9:21"`<br>`"5:4"`<br>`"4:5"` |
+| `duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 3 a 15 |
+
+### Entradas de HappyHorse 1.0 (happyhorse-1.0-r2v)
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `prompt` | Indicación que describe el video. Utilice identificadores como 'character1' y 'character2' para referirse a los personajes de referencia. | STRING | Sí | N/A |
 | `resolution` | La resolución del video generado. | COMBO | Sí | `"720P"`<br>`"1080P"` |
 | `ratio` | La relación de aspecto del video generado. | COMBO | Sí | `"16:9"`<br>`"9:16"`<br>`"1:1"`<br>`"4:3"`<br>`"3:4"` |
 | `duration` | La duración del video generado en segundos (predeterminado: 5). | INT | Sí | 3 a 15 |
-| `reference_images` | Una o más imágenes de referencia de la persona u objeto que aparecerá en el video. Debes proporcionar al menos una imagen. | IMAGE | Sí | 1 a 9 |
-| `semilla` | Un valor de semilla para generación reproducible (predeterminado: 0). La semilla puede configurarse para cambiar automáticamente después de cada generación. | INT | No | 0 a 2147483647 |
-| `marca de agua` | Si se debe agregar una marca de agua de IA generada al video resultante (predeterminado: False). | BOOLEAN | No | True o False |
+
+### Entradas de referencia
+
+| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
+|-----------|-------------|---------------|-------------|-------|
+| `reference_images` | Ranura ampliable: conecte de 1 a 9 imágenes de referencia de la persona u objeto que aparecerá en el video. Debe proporcionarse al menos una imagen de referencia. | IMAGE | Sí | 1 a 9 (por modelo) |
+
+Nota: Debe proporcionarse al menos una imagen de referencia; de lo contrario, el nodo generará un error. Cada imagen de referencia debe tener al menos 400 x 400 píxeles y una relación de aspecto entre 1:2.5 y 2.5:1. La indicación no debe estar vacía.
 
 ## Salidas
 
-| Nombre de Salida | Descripción | Tipo de Dato |
-| --- | --- | --- |
+| Nombre de salida | Descripción | Tipo de datos |
+|-------------------|-------------|---------------|
 | `VIDEO` | El archivo de video generado. | VIDEO |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/HappyHorseReferenceVideoApi/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `9162e150aef4cbafa42d59055bdff953e9c21b1e5fbf7c800629e570ee4cd0f9`
+**Source fingerprint (SHA-256):** `252c918afc4cf38be9c7d09b7112075b9adb23490ec9fed1717a8548519d2554`
