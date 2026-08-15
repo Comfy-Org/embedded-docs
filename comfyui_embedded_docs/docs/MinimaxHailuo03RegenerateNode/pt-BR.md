@@ -8,7 +8,7 @@ Este nó re-renderiza uma saída de vídeo MiniMax H3 768P em resolução 2K. El
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | O modelo a ser usado para regeneração do vídeo. Selecionar "MiniMax H3" revela as configurações de prompt, resolução e mídia de referência. | COMBO | Sim | "MiniMax H3" |
+| `model` | O modelo a ser usado para regeneração do vídeo. Selecionar "MiniMax H3" revela as configurações de prompt, resolução e mídia de referência. | DYNAMIC_COMBO | Sim | "MiniMax H3" |
 | `video` | O vídeo de saída MiniMax H3 768P a ser re-renderizado. Conecte a saída não modificada de um nó de vídeo MiniMax H3 (24 FPS, 4 a 15 segundos). Saídas 2K não podem ser usadas. | VIDEO | Sim | 24 FPS, 4 a 15 segundos |
 | `first_frame` | Imagem do primeiro quadro da geração original, se um tiver sido usado. | IMAGE | Não | Imagem |
 | `last_frame` | Imagem do último quadro da geração original, se um tiver sido usado. | IMAGE | Não | Imagem |

@@ -8,8 +8,8 @@
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `멀티 샷` | 개별 프롬프트와 지속 시간을 가진 일련의 비디오 세그먼트를 생성합니다. 스토리보드 옵션으로 설정하면 각 스토리보드의 프롬프트와 지속 시간에 대한 추가 입력이 나타납니다. | COMBO | 예 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `모델` | 모델 및 생성 설정. 모델을 선택하면 해당 모델의 `model.resolution` 및 `model.aspect_ratio` 하위 매개변수가 표시됩니다. | COMBO | 예 | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `멀티 샷` | 개별 프롬프트와 지속 시간을 가진 일련의 비디오 세그먼트를 생성합니다. 스토리보드 옵션으로 설정하면 각 스토리보드의 프롬프트와 지속 시간에 대한 추가 입력이 나타납니다. | DYNAMIC_COMBO | 예 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `모델` | 모델 및 생성 설정. 모델을 선택하면 해당 모델의 `model.resolution` 및 `model.aspect_ratio` 하위 매개변수가 표시됩니다. | DYNAMIC_COMBO | 예 | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `오디오 생성` | 활성화하면 노드가 비디오용 오디오를 생성합니다. 참고: `"kling-3.0-turbo"`는 항상 기본 오디오를 생성하므로 해당 모델에서는 이 토글이 무시됩니다. 기본값은 True입니다. | BOOLEAN | 예 | True<br>False |
 | `시드` | 시드는 노드의 재실행 여부를 제어합니다. 시드와 관계없이 결과는 비결정적입니다. 기본값은 0입니다. | INT | 예 | 0 ~ 2147483647 |
 | `시작 프레임` | 선택적 시작 프레임 이미지입니다. 연결하면 이미지-투-비디오 모드로 전환됩니다. | IMAGE | 아니요 | - |

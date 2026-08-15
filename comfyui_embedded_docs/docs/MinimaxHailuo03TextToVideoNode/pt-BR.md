@@ -8,7 +8,7 @@ Este nó gera um vídeo a partir de um prompt de texto usando o modelo MiniMax H
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | Modelo a ser usado para a geração de vídeo. (padrão: "MiniMax H3"). Selecionar este modelo também fornece as configurações de prompt de texto, resolução, proporção e duração para o vídeo gerado (consulte Entradas do MiniMax H3 abaixo). | COMBO | Sim | `"MiniMax H3"` |
+| `modelo` | Modelo a ser usado para a geração de vídeo. (padrão: "MiniMax H3"). Selecionar este modelo também fornece as configurações de prompt de texto, resolução, proporção e duração para o vídeo gerado (consulte Entradas do MiniMax H3 abaixo). | DYNAMIC_COMBO | Sim | `"MiniMax H3"` |
 | `semente` | Semente aleatória. A mesma solicitação com a mesma semente gera resultados semelhantes, mas não garantidamente idênticos. (padrão: 42) | INT | Sim | 0 a 4294967295 |
 | `marca d'água` | Se deve adicionar uma marca d'água AIGC ao vídeo. (padrão: false) | BOOLEAN | Não | true<br>false |
 

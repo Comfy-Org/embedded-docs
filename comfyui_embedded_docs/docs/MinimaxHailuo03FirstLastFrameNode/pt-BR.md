@@ -8,7 +8,7 @@ Este nó gera um vídeo a partir de uma imagem de primeiro quadro e uma imagem o
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Faixa |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para geração de vídeo. Selecionar um modelo revela suas configurações específicas (prompt, resolução, duração). | COMBO | Sim | "MiniMax H3" |
+| `model` | Modelo a ser usado para geração de vídeo. Selecionar um modelo revela suas configurações específicas (prompt, resolução, duração). | DYNAMIC_COMBO | Sim | "MiniMax H3" |
 | `first_frame` | Imagem do primeiro quadro do vídeo. A proporção do vídeo gerado segue esta imagem. Deve ter pelo menos 256x256 pixels, com uma proporção largura-altura entre 0.4 e 2.5. | IMAGE | Sim | - |
 | `last_frame` | Imagem opcional do último quadro do vídeo. Quando fornecida, o vídeo começa no primeiro quadro e termina nesta imagem. Deve atender aos mesmos requisitos de tamanho e proporção que `first_frame`. | IMAGE | Não | - |
 | `seed` | Semente aleatória. A mesma solicitação com a mesma semente produz resultados semelhantes, mas não garantidamente idênticos. Inclui uma opção de "controle após gerar" para randomizar após cada geração. Padrão: 42. | INT | Sim | 0 a 4294967295 |

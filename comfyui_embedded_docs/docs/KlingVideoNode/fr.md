@@ -8,8 +8,8 @@ Ce nœud génère des vidéos à l'aide du modèle Kling V3. Il prend en charge 
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `multi_shot` | Génère une série de segments vidéo avec des prompts et des durées individuelles. Lorsque cette option est définie sur une option de storyboard, des entrées supplémentaires apparaissent pour le prompt et la durée de chaque storyboard. | COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `modèle` | Paramètres du modèle et de génération. La sélection d'un modèle révèle ses sous-paramètres `model.resolution` et `model.aspect_ratio`. | COMBO | Oui | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `multi_shot` | Génère une série de segments vidéo avec des prompts et des durées individuelles. Lorsque cette option est définie sur une option de storyboard, des entrées supplémentaires apparaissent pour le prompt et la durée de chaque storyboard. | DYNAMIC_COMBO | Oui | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `modèle` | Paramètres du modèle et de génération. La sélection d'un modèle révèle ses sous-paramètres `model.resolution` et `model.aspect_ratio`. | DYNAMIC_COMBO | Oui | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `générer audio` | Lorsqu'elle est activée, le nœud génère du son pour la vidéo. Remarque : `"kling-3.0-turbo"` génère toujours du son natif, donc ce bouton est ignoré pour ce modèle. Par défaut : True. | BOOLEAN | Oui | True<br>False |
 | `seed` | La graine (seed) contrôle si le nœud doit être relancé ; les résultats sont non déterministes quelle que soit la graine. Par défaut : 0. | INT | Oui | 0 à 2147483647 |
 | `image de départ` | Image de frame de départ facultative. Lorsqu'elle est connectée, passe en mode image-vers-vidéo. | IMAGE | Non | - |

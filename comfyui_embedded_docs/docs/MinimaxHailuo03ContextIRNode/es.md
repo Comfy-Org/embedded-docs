@@ -8,7 +8,7 @@ Este nodo utiliza MiniMax H3 Context IR para analizar su descripción de texto y
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model` | Modelo que se usará para la mejora del prompt. | COMBO | Sí | `"MiniMax H3"` |
+| `model` | Modelo que se usará para la mejora del prompt. | DYNAMIC_COMBO | Sí | `"MiniMax H3"` |
 | `first_frame` | Primer fotograma del video que desea generar. No se puede combinar con medios de referencia. | IMAGE | No | Imagen única |
 | `last_frame` | Último fotograma del video que desea generar. No se puede combinar con medios de referencia. | IMAGE | No | Imagen única |
 

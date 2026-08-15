@@ -10,7 +10,7 @@ Ce nœud utilise MiniMax H3 Context IR pour analyser votre description textuelle
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour l'amélioration de l'invite. | COMBO | Oui | `"MiniMax H3"` |
+| `model` | Modèle à utiliser pour l'amélioration de l'invite. | DYNAMIC_COMBO | Oui | `"MiniMax H3"` |
 | `first_frame` | Première image de la vidéo que vous souhaitez générer. Ne peut pas être combinée avec des médias de référence. | IMAGE | Non | Image unique |
 | `last_frame` | Dernière image de la vidéo que vous souhaitez générer. Ne peut pas être combinée avec des médias de référence. | IMAGE | Non | Image unique |
 

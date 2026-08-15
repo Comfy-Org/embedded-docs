@@ -8,7 +8,7 @@ Ce nœud utilise le modèle Kling 3.0 pour générer une vidéo. Il crée la vid
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Paramètres du modèle et de génération. La sélection de cette option révèle un paramètre `resolution` imbriqué. | COMBO | Non | `"kling-v3"` |
+| `modèle` | Paramètres du modèle et de génération. La sélection de cette option révèle un paramètre `resolution` imbriqué. | DYNAMIC_COMBO | Non | `"kling-v3"` |
 | `prompt` | La description textuelle qui guide la génération de la vidéo. Doit contenir entre 1 et 2500 caractères. | STRING | Oui | N/A |
 | `durée` | La durée de la vidéo en secondes (par défaut : 5). | INT | Non | 3 à 15 |
 | `première image` | L'image de départ pour la vidéo. Doit faire au moins 300x300 pixels et avoir un rapport hauteur/largeur compris entre 1:2.5 et 2.5:1. | IMAGE | Oui | N/A |

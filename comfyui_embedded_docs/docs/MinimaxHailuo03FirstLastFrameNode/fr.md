@@ -6,7 +6,7 @@
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Modèle à utiliser pour la génération de vidéo. La sélection d'un modèle révèle ses paramètres spécifiques (prompt, résolution, durée). | COMBO | Oui | "MiniMax H3" |
+| `model` | Modèle à utiliser pour la génération de vidéo. La sélection d'un modèle révèle ses paramètres spécifiques (prompt, résolution, durée). | DYNAMIC_COMBO | Oui | "MiniMax H3" |
 | `first_frame` | Image initiale pour la vidéo. Le rapport hauteur/largeur de la vidéo générée suit cette image. Doit être d'au moins 256x256 pixels avec un rapport largeur/hauteur compris entre 0,4 et 2,5. | IMAGE | Oui | - |
 | `last_frame` | Image finale facultative pour la vidéo. Lorsqu'elle est fournie, la vidéo démarre à partir de l'image initiale et se termine à cette image. Doit respecter les mêmes exigences de taille et de rapport hauteur/largeur que `first_frame`. | IMAGE | Non | - |
 | `seed` | Graine aléatoire. La même requête avec la même graine donne des résultats similaires, mais pas garantis identiques. Comprend une option « contrôle après génération » pour randomiser après chaque génération. Par défaut : 42. | INT | Oui | 0 à 4294967295 |

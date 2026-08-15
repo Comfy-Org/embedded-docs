@@ -8,8 +8,8 @@ Este nó gera vídeos usando o modelo Kling V3. Ele suporta o modo texto-para-v�
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `multi_shot` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Quando definido para uma opção de storyboard, entradas adicionais para o prompt e a duração de cada storyboard aparecem. | COMBO | Sim | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `modelo` | Configurações de modelo e geração. Selecionar um modelo revela seus subparâmetros `model.resolution` e `model.aspect_ratio`. | COMBO | Sim | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `multi_shot` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Quando definido para uma opção de storyboard, entradas adicionais para o prompt e a duração de cada storyboard aparecem. | DYNAMIC_COMBO | Sim | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `modelo` | Configurações de modelo e geração. Selecionar um modelo revela seus subparâmetros `model.resolution` e `model.aspect_ratio`. | DYNAMIC_COMBO | Sim | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `gerar áudio` | Quando habilitado, o nó gera áudio para o vídeo. Observação: `"kling-3.0-turbo"` sempre gera áudio nativo, portanto esta opção é ignorada para esse modelo. O padrão é True. | BOOLEAN | Sim | True<br>False |
 | `seed` | A semente (seed) controla se o nó deve ser reexecutado; os resultados são não determinísticos independentemente da semente. O padrão é 0. | INT | Sim | 0 a 2147483647 |
 | `quadro inicial` | Imagem opcional do quadro inicial. Quando conectada, alterna para o modo imagem-para-vídeo. | IMAGE | Não | - |

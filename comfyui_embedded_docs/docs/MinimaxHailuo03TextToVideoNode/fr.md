@@ -8,7 +8,7 @@ Ce nœud génère une vidéo à partir d'une invite texte en utilisant le modèl
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `modèle` | Modèle à utiliser pour la génération vidéo. (par défaut : « MiniMax H3 »). La sélection de ce modèle fournit également les paramètres d'invite texte, de résolution, de format et de durée pour la vidéo générée (voir Entrées MiniMax H3 ci-dessous). | COMBO | Oui | `"MiniMax H3"` |
+| `modèle` | Modèle à utiliser pour la génération vidéo. (par défaut : « MiniMax H3 »). La sélection de ce modèle fournit également les paramètres d'invite texte, de résolution, de format et de durée pour la vidéo générée (voir Entrées MiniMax H3 ci-dessous). | DYNAMIC_COMBO | Oui | `"MiniMax H3"` |
 | `graine` | Graine aléatoire. Une même requête avec la même graine donne des résultats similaires, mais pas nécessairement identiques. (par défaut : 42) | INT | Oui | 0 à 4294967295 |
 | `filigrane` | Indique si un filigrane AIGC doit être ajouté à la vidéo. (par défaut : false) | BOOLEAN | Non | true<br>false |
 

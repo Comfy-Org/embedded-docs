@@ -14,7 +14,7 @@ Este nó usa o modelo Kling AI para gerar um vídeo com base em um prompt de tex
 | `duration` | A duração do vídeo em segundos, ajustada com um controle deslizante (padrão: 5). | INT | Sim | 3 a 15 |
 | `reference_images` | Até 7 imagens de referência. Cada imagem deve ter pelo menos 300x300 pixels e uma proporção de aspecto entre 1:2.5 e 2.5:1. | IMAGE | Sim | 1 a 7 imagens |
 | `resolution` | A resolução de saída do vídeo (padrão: "1080p"). | COMBO | Não | `"4k"`<br>`"1080p"`<br>`"720p"` |
-| `storyboards` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando habilitado, o `prompt` global é ignorado, e a duração total de todos os segmentos de storyboard deve ser igual à duração global (padrão: "disabled"). | COMBO | Não | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `storyboards` | Gera uma série de segmentos de vídeo com prompts e durações individuais. Suportado apenas para `kling-v3-omni`. Quando habilitado, o `prompt` global é ignorado, e a duração total de todos os segmentos de storyboard deve ser igual à duração global (padrão: "disabled"). | DYNAMIC_COMBO | Não | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
 | `gerar_áudio` | Gera áudio para o vídeo. Suportado apenas para `kling-v3-omni` (padrão: false). | BOOLEAN | Não | `true`<br>`false` |
 | `semente` | A seed controla se o nó deve ser executado novamente; os resultados são não determinísticos independentemente da seed (padrão: 0). | INT | Não | 0 a 2147483647 |
 

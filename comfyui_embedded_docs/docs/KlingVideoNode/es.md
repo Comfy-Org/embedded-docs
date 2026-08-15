@@ -8,8 +8,8 @@ Este nodo genera videos utilizando el modelo Kling V3. Admite el modo texto-a-vi
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
 |-----------|-------------|---------------|-------------|-------|
-| `multi_shot` | Genera una serie de segmentos de video con indicaciones y duraciones individuales. Cuando se selecciona una opción de storyboard, aparecen entradas adicionales para la indicación y la duración de cada storyboard. | COMBO | Sí | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `modelo` | Configuración del modelo y de la generación. Al seleccionar un modelo se muestran sus subparámetros `model.resolution` y `model.aspect_ratio`. | COMBO | Sí | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `multi_shot` | Genera una serie de segmentos de video con indicaciones y duraciones individuales. Cuando se selecciona una opción de storyboard, aparecen entradas adicionales para la indicación y la duración de cada storyboard. | DYNAMIC_COMBO | Sí | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `modelo` | Configuración del modelo y de la generación. Al seleccionar un modelo se muestran sus subparámetros `model.resolution` y `model.aspect_ratio`. | DYNAMIC_COMBO | Sí | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `generar audio` | Cuando está habilitado, el nodo genera audio para el video. Nota: `"kling-3.0-turbo"` siempre genera audio nativo, por lo que este interruptor se ignora para ese modelo. El valor predeterminado es True. | BOOLEAN | Sí | True<br>False |
 | `semilla` | La semilla controla si el nodo debe volver a ejecutarse; los resultados no son deterministas independientemente de la semilla. El valor predeterminado es 0. | INT | Sí | 0 a 2147483647 |
 | `fotograma inicial` | Imagen de fotograma inicial opcional. Cuando está conectado, cambia al modo imagen-a-video. | IMAGE | No | - |

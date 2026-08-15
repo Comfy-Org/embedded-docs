@@ -8,7 +8,7 @@ This node generates a video from a text prompt using the MiniMax H3 model. It se
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use for video generation. (default: "MiniMax H3"). Selecting this model also provides the text prompt, resolution, ratio, and duration settings for the generated video (see MiniMax H3 Inputs below). | COMBO | Yes | `"MiniMax H3"` |
+| `model` | Model to use for video generation. (default: "MiniMax H3"). Selecting this model also provides the text prompt, resolution, ratio, and duration settings for the generated video (see MiniMax H3 Inputs below). | DYNAMIC_COMBO | Yes | `"MiniMax H3"` |
 | `seed` | Random seed. The same request with the same seed gives similar, but not guaranteed identical, results. (default: 42) | INT | Yes | 0 to 4294967295 |
 | `watermark` | Whether to add an AIGC watermark to the video. (default: false) | BOOLEAN | No | true<br>false |
 

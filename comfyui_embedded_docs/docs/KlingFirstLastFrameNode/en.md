@@ -8,7 +8,7 @@ This node uses the Kling 3.0 model to generate a video. It creates the video bas
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model and generation settings. Selecting this option reveals a nested `resolution` parameter. | COMBO | No | `"kling-v3"` |
+| `model` | Model and generation settings. Selecting this option reveals a nested `resolution` parameter. | DYNAMIC_COMBO | No | `"kling-v3"` |
 | `prompt` | The text description that guides the video generation. Must be between 1 and 2500 characters long. | STRING | Yes | N/A |
 | `duration` | The length of the video in seconds (default: 5). | INT | No | 3 to 15 |
 | `first_frame` | The starting image for the video. Must be at least 300x300 pixels and have an aspect ratio between 1:2.5 and 2.5:1. | IMAGE | Yes | N/A |

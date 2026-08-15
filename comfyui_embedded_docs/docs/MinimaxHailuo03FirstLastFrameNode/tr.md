@@ -8,7 +8,7 @@ Bu düğüm, MiniMax H3 modelini kullanarak bir ilk kare görüntüsünden ve is
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video oluşturmak için kullanılacak model. Bir model seçmek, modele özgü ayarlarını (istem, çözünürlük, süre) görüntüler. | COMBO | Evet | "MiniMax H3" |
+| `model` | Video oluşturmak için kullanılacak model. Bir model seçmek, modele özgü ayarlarını (istem, çözünürlük, süre) görüntüler. | DYNAMIC_COMBO | Evet | "MiniMax H3" |
 | `first_frame` | Videonun ilk kare görüntüsü. Oluşturulan videonun en-boy oranı bu görüntüyü takip eder. En az 256x256 piksel olmalı ve genişlik-yükseklik en-boy oranı 0,4 ile 2,5 arasında olmalıdır. | IMAGE | Evet | - |
 | `last_frame` | Videonun isteğe bağlı son kare görüntüsü. Sağlandığında video ilk kareden başlar ve bu görüntüde sona erer. `first_frame` ile aynı boyut ve en-boy oranı gereksinimlerini karşılamalıdır. | IMAGE | Hayır | - |
 | `seed` | Rastgele tohum. Aynı tohumla yapılan aynı istek benzer sonuçlar verir, ancak birebir aynı sonuçlar garanti edilmez. Her üretimden sonra rastgeleleştirme için 'üretimden sonra kontrol' seçeneğini içerir. Varsayılan: 42. | INT | Evet | 0 ile 4294967295 arası |

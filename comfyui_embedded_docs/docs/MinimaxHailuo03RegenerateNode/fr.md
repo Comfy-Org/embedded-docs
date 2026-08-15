@@ -8,7 +8,7 @@ Ce nœud régénère une sortie vidéo MiniMax H3 768P en résolution 2K. Il té
 
 | Paramètre | Description | Type de données | Requis | Plage |
 |-----------|-------------|-----------------|--------|-------|
-| `model` | Le modèle à utiliser pour la régénération vidéo. La sélection de « MiniMax H3 » révèle les paramètres de prompt, de résolution et de médias de référence. | COMBO | Oui | "MiniMax H3" |
+| `model` | Le modèle à utiliser pour la régénération vidéo. La sélection de « MiniMax H3 » révèle les paramètres de prompt, de résolution et de médias de référence. | DYNAMIC_COMBO | Oui | "MiniMax H3" |
 | `video` | La vidéo de sortie MiniMax H3 768P à régénérer. Connectez la sortie non modifiée d’un nœud vidéo MiniMax H3 (24 FPS, 4-15 secondes). Les sorties 2K ne peuvent pas être utilisées. | VIDEO | Oui | 24 FPS, 4-15 secondes |
 | `first_frame` | Image de la première frame de la génération d’origine, si elle a été utilisée. | IMAGE | Non | Image |
 | `last_frame` | Image de la dernière frame de la génération d’origine, si elle a été utilisée. | IMAGE | Non | Image |

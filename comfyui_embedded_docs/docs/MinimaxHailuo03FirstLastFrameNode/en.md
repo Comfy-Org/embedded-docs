@@ -8,7 +8,7 @@ This node generates a video from a first frame image and an optional last frame 
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use for video generation. Selecting a model reveals its specific settings (prompt, resolution, duration). | COMBO | Yes | "MiniMax H3" |
+| `model` | Model to use for video generation. Selecting a model reveals its specific settings (prompt, resolution, duration). | DYNAMIC_COMBO | Yes | "MiniMax H3" |
 | `first_frame` | First frame image for the video. The aspect ratio of the generated video follows this image. Must be at least 256x256 pixels with a width-to-height aspect ratio between 0.4 and 2.5. | IMAGE | Yes | - |
 | `last_frame` | Optional last frame image for the video. When provided, the video starts from the first frame and ends at this image. Must meet the same size and aspect ratio requirements as `first_frame`. | IMAGE | No | - |
 | `seed` | Random seed. The same request with the same seed gives similar, but not guaranteed identical, results. Includes a "control after generate" option to randomize after each generation. Default: 42. | INT | Yes | 0 to 4294967295 |

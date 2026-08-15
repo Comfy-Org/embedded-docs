@@ -8,7 +8,7 @@ Bu düğüm, MiniMax H3 modelini kullanarak bir metin isteminden video üretir. 
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video üretimi için kullanılacak model. (varsayılan: "MiniMax H3"). Bu modeli seçmek ayrıca üretilen video için metin istemi, çözünürlük, oran ve süre ayarlarını sağlar (aşağıdaki MiniMax H3 Girdileri bölümüne bakın). | COMBO | Evet | `"MiniMax H3"` |
+| `model` | Video üretimi için kullanılacak model. (varsayılan: "MiniMax H3"). Bu modeli seçmek ayrıca üretilen video için metin istemi, çözünürlük, oran ve süre ayarlarını sağlar (aşağıdaki MiniMax H3 Girdileri bölümüne bakın). | DYNAMIC_COMBO | Evet | `"MiniMax H3"` |
 | `seed` | Rastgele tohum. Aynı tohumla yapılan aynı istek benzer, ancak birebir aynı olması garanti edilmeyen sonuçlar verir. (varsayılan: 42) | INT | Evet | 0 ila 4294967295 |
 | `watermark` | Videoya bir AIGC filigranı eklenip eklenmeyeceği. (varsayılan: false) | BOOLEAN | Hayır | true<br>false |
 

@@ -9,7 +9,7 @@ Bu düğüm, Kling V3 modelini kullanarak videolar oluşturur. Metinden videoya 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `çoklu çekim` | Ayrı promptlar ve sürelerle bir dizi video bölümü oluşturun. Bir storyboard seçeneğine ayarlandığında, her storyboard'un promptu ve süresi için ek girdiler görünür. | COMBO | Evet | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `model` | Model ve üretim ayarları. Bir model seçmek, onun `model.resolution` ve `model.aspect_ratio` alt parametrelerini ortaya çıkarır. | COMBO | Evet | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `model` | Model ve üretim ayarları. Bir model seçmek, onun `model.resolution` ve `model.aspect_ratio` alt parametrelerini ortaya çıkarır. | DYNAMIC_COMBO | Evet | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `ses oluştur` | Etkinleştirildiğinde, düğüm video için ses üretir. Not: `"kling-3.0-turbo"` her zaman yerel ses üretir, bu nedenle bu anahtar o model için yok sayılır. Varsayılan True'dur. | BOOLEAN | Evet | True<br>False |
 | `tohum` | Seed, düğümün yeniden çalıştırılıp çalıştırılmayacağını kontrol eder; sonuçlar seed'den bağımsız olarak deterministik değildir. Varsayılan 0'dır. | INT | Evet | 0 ile 2147483647 |
 | `başlangıç karesi` | İsteğe bağlı başlangıç karesi görüntüsü. Bağlandığında görüntüden videoya moduna geçer. | IMAGE | Hayır | - |

@@ -8,7 +8,7 @@ Bu düğüm, Kling 3.0 modelini kullanarak video oluşturur. Videoyu bir metin i
 
 | Parametre | Açıklama | Veri Türü | Zorunlu | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model ve oluşturma ayarları. Bu seçeneğin seçilmesi, iç içe bir `resolution` parametresini ortaya çıkarır. | COMBO | Hayır | `"kling-v3"` |
+| `model` | Model ve oluşturma ayarları. Bu seçeneğin seçilmesi, iç içe bir `resolution` parametresini ortaya çıkarır. | DYNAMIC_COMBO | Hayır | `"kling-v3"` |
 | `prompt` | Video oluşturmayı yönlendiren metin açıklaması. 1 ile 2500 karakter arasında olmalıdır. | STRING | Evet | N/A |
 | `süre` | Videonun saniye cinsinden uzunluğu (varsayılan: 5). | INT | Hayır | 3 ila 15 |
 | `ilk_kare` | Video için başlangıç görseli. En az 300x300 piksel olmalı ve en-boy oranı 1:2,5 ile 2,5:1 arasında olmalıdır. | IMAGE | Evet | N/A |

@@ -9,7 +9,7 @@
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
 | `多段生成` | 生成一系列影片段，每個段具有獨立的提示詞和時長。當設定為分鏡選項時，會出現每個分鏡的提示詞和時長的額外輸入。 | COMBO | 是 | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `模型` | 模型和生成設定。選擇模型會顯示其 `model.resolution` 和 `model.aspect_ratio` 子參數。 | COMBO | 是 | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `模型` | 模型和生成設定。選擇模型會顯示其 `model.resolution` 和 `model.aspect_ratio` 子參數。 | DYNAMIC_COMBO | 是 | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `生成音訊` | 啟用時，節點會為影片生成音訊。請注意：`"kling-3.0-turbo"` 始終會生成原生音訊，因此此開關對該模型會被忽略。預設為 True。 | BOOLEAN | 是 | True<br>False |
 | `seed` | 種子控制節點是否應重新執行；無論種子如何，結果都是非確定性的。預設為 0。 | INT | 是 | 0 至 2147483647 |
 | `起始畫格` | 可選的起始幀影像。連線時，會切換到影像轉影片模式。 | IMAGE | 否 | - |

@@ -8,7 +8,7 @@ Este nodo vuelve a renderizar un video de salida MiniMax H3 768P en resolución 
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `model` | El modelo a usar para la regeneración del video. Seleccionar "MiniMax H3" revela los ajustes de prompt, resolución y medios de referencia. | COMBO | Sí | "MiniMax H3" |
+| `model` | El modelo a usar para la regeneración del video. Seleccionar "MiniMax H3" revela los ajustes de prompt, resolución y medios de referencia. | DYNAMIC_COMBO | Sí | "MiniMax H3" |
 | `video` | El video de salida MiniMax H3 768P que se va a volver a renderizar. Conecta la salida sin modificar de un nodo de video MiniMax H3 (24 FPS, 4-15 segundos). No se pueden usar salidas 2K. | VIDEO | Sí | 24 FPS, 4-15 segundos |
 | `first_frame` | Imagen del primer fotograma de la generación original, si se usó una. | IMAGE | No | Imagen |
 | `last_frame` | Imagen del último fotograma de la generación original, si se usó una. | IMAGE | No | Imagen |

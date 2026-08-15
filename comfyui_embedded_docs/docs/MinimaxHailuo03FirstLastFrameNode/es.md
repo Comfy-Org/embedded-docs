@@ -8,7 +8,7 @@ Este nodo genera un video a partir de una imagen de primer fotograma y una image
 
 | Parámetro | Descripción | Tipo de dato | Obligatorio | Rango |
 |-----------|-------------|--------------|-------------|-------|
-| `model` | Modelo a utilizar para la generación de video. Al seleccionar un modelo, se muestran sus ajustes específicos (prompt, resolución, duración). | COMBO | Sí | "MiniMax H3" |
+| `model` | Modelo a utilizar para la generación de video. Al seleccionar un modelo, se muestran sus ajustes específicos (prompt, resolución, duración). | DYNAMIC_COMBO | Sí | "MiniMax H3" |
 | `first_frame` | Imagen del primer fotograma para el video. La relación de aspecto del video generado sigue esta imagen. Debe tener al menos 256x256 píxeles con una relación de aspecto ancho-alto entre 0.4 y 2.5. | IMAGE | Sí | - |
 | `last_frame` | Imagen opcional del último fotograma para el video. Cuando se proporciona, el video comienza desde el primer fotograma y termina en esta imagen. Debe cumplir los mismos requisitos de tamaño y relación de aspecto que `first_frame`. | IMAGE | No | - |
 | `seed` | Semilla aleatoria. La misma solicitud con la misma semilla produce resultados similares, aunque no se garantiza que sean idénticos. Incluye una opción de "control después de generar" para aleatorizar después de cada generación. Valor predeterminado: 42. | INT | Sí | 0 a 4294967295 |

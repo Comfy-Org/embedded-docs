@@ -9,7 +9,7 @@ Este nó usa o MiniMax H3 Context IR para analisar sua descrição em texto e qu
 
 | Parâmetro | Descrição | Tipo de Dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Modelo a ser usado para aprimoramento de prompt. | COMBO | Sim | `"MiniMax H3"` |
+| `model` | Modelo a ser usado para aprimoramento de prompt. | DYNAMIC_COMBO | Sim | `"MiniMax H3"` |
 | `first_frame` | Primeiro quadro do vídeo que você pretende gerar. Não pode ser combinado com mídia de referência. | IMAGE | Não | Imagem única |
 | `last_frame` | Último quadro do vídeo que você pretende gerar. Não pode ser combinado com mídia de referência. | IMAGE | Não | Imagem única |
 

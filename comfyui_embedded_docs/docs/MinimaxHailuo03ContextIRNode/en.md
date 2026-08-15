@@ -8,7 +8,7 @@ This node uses MiniMax H3 Context IR to analyze your text description and any at
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Model to use for prompt enhancement. | COMBO | Yes | `"MiniMax H3"` |
+| `model` | Model to use for prompt enhancement. | DYNAMIC_COMBO | Yes | `"MiniMax H3"` |
 | `first_frame` | First frame of the video you intend to generate. Cannot be combined with reference media. | IMAGE | No | Single image |
 | `last_frame` | Last frame of the video you intend to generate. Cannot be combined with reference media. | IMAGE | No | Single image |
 

@@ -8,7 +8,7 @@ Este nodo genera un video a partir de un prompt de texto utilizando el modelo Mi
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|---------------|-----------|-------|
-| `modelo` | Modelo a utilizar para la generación de video. (predeterminado: "MiniMax H3"). Al seleccionar este modelo, también se proporcionan el prompt de texto, la resolución, la relación de aspecto y la duración del video generado (consulte Entradas de MiniMax H3 más abajo). | COMBO | Sí | `"MiniMax H3"` |
+| `modelo` | Modelo a utilizar para la generación de video. (predeterminado: "MiniMax H3"). Al seleccionar este modelo, también se proporcionan el prompt de texto, la resolución, la relación de aspecto y la duración del video generado (consulte Entradas de MiniMax H3 más abajo). | DYNAMIC_COMBO | Sí | `"MiniMax H3"` |
 | `semilla` | Semilla aleatoria. La misma solicitud con la misma semilla produce resultados similares, aunque no se garantiza que sean idénticos. (predeterminado: 42) | INT | Sí | 0 a 4294967295 |
 | `marca de agua` | Indica si se debe añadir una marca de agua AIGC al video. (predeterminado: false) | BOOLEAN | No | true<br>false |
 

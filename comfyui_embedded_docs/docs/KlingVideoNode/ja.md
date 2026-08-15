@@ -8,8 +8,8 @@
 
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
-| `マルチショット` | 個別のプロンプトと長さを持つ一連の動画セグメントを生成します。ストーリーボードオプションに設定すると、各ストーリーボードのプロンプトと長さの追加入力が表示されます。 | COMBO | はい | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
-| `モデル` | モデルと生成設定です。モデルを選択すると、その`model.resolution`および`model.aspect_ratio`サブパラメータが表示されます。 | COMBO | はい | `"kling-v3"`<br>`"kling-3.0-turbo"` |
+| `マルチショット` | 個別のプロンプトと長さを持つ一連の動画セグメントを生成します。ストーリーボードオプションに設定すると、各ストーリーボードのプロンプトと長さの追加入力が表示されます。 | DYNAMIC_COMBO | はい | `"disabled"`<br>`"1 storyboard"`<br>`"2 storyboards"`<br>`"3 storyboards"`<br>`"4 storyboards"`<br>`"5 storyboards"`<br>`"6 storyboards"` |
+| `モデル` | モデルと生成設定です。モデルを選択すると、その`model.resolution`および`model.aspect_ratio`サブパラメータが表示されます。 | DYNAMIC_COMBO | はい | `"kling-v3"`<br>`"kling-3.0-turbo"` |
 | `オーディオ生成` | 有効にすると、ノードは動画の音声を生成します。注：`"kling-3.0-turbo"`は常にネイティブオーディオを生成するため、このトグルはそのモデルでは無視されます。デフォルトはTrueです。 | BOOLEAN | はい | True<br>False |
 | `シード` | シードはノードを再実行するかどうかを制御します。結果はシードに関係なく非決定的です。デフォルトは0です。 | INT | はい | 0 から 2147483647 |
 | `開始フレーム` | オプションの開始フレーム画像です。接続すると、画像から動画を生成するモードに切り替わります。 | IMAGE | いいえ | - |

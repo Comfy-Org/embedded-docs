@@ -8,7 +8,7 @@
 
 | 參數 | 說明 | 資料類型 | 必要 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於影片重新生成的模型。選擇「MiniMax H3」會顯示提示詞、解析度及參考媒體設定。 | COMBO | 是 | "MiniMax H3" |
+| `model` | 用於影片重新生成的模型。選擇「MiniMax H3」會顯示提示詞、解析度及參考媒體設定。 | DYNAMIC_COMBO | 是 | "MiniMax H3" |
 | `video` | 要重新渲染的 MiniMax H3 768P 輸出影片。請連接 MiniMax H3 影片節點的未修改輸出（24 FPS，4-15 秒）。2K 輸出無法使用。 | VIDEO | 是 | 24 FPS, 4-15 seconds |
 | `first_frame` | 原始生成所使用的首幀影像（若有使用）。 | IMAGE | 否 | Image |
 | `last_frame` | 原始生成所使用的尾幀影像（若有使用）。 | IMAGE | 否 | Image |

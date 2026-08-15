@@ -8,7 +8,7 @@ Bu düğüm, metin açıklamanızı ve eklenen medyayı analiz etmek için MiniM
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Prompt geliştirme için kullanılacak model. | COMBO | Evet | `"MiniMax H3"` |
+| `model` | Prompt geliştirme için kullanılacak model. | DYNAMIC_COMBO | Evet | `"MiniMax H3"` |
 | `first_frame` | Oluşturmak istediğiniz videonun ilk karesi. Referans medya ile birleştirilemez. | IMAGE | Hayır | Tek görsel |
 | `last_frame` | Oluşturmak istediğiniz videonun son karesi. Referans medya ile birleştirilemez. | IMAGE | Hayır | Tek görsel |
 

@@ -8,7 +8,7 @@ This node re-renders a MiniMax H3 768P video output at 2K resolution. It uploads
 
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
-| `model` | The model to use for video regeneration. Selecting "MiniMax H3" reveals the prompt, resolution, and reference media settings. | COMBO | Yes | "MiniMax H3" |
+| `model` | The model to use for video regeneration. Selecting "MiniMax H3" reveals the prompt, resolution, and reference media settings. | DYNAMIC_COMBO | Yes | "MiniMax H3" |
 | `video` | The MiniMax H3 768P output video to re-render. Connect the unmodified output of a MiniMax H3 video node (24 FPS, 4-15 seconds). 2K outputs cannot be used. | VIDEO | Yes | 24 FPS, 4-15 seconds |
 | `first_frame` | First frame image from the original generation, if one was used. | IMAGE | No | Image |
 | `last_frame` | Last frame image from the original generation, if one was used. | IMAGE | No | Image |

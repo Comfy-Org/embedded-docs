@@ -8,7 +8,7 @@ Bu düğüm, MiniMax H3 768P video çıktısını 2K çözünürlükte yeniden i
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Video yeniden oluşturma için kullanılacak model. "MiniMax H3" seçildiğinde istem, çözünürlük ve referans medya ayarları görüntülenir. | COMBO | Evet | "MiniMax H3" |
+| `model` | Video yeniden oluşturma için kullanılacak model. "MiniMax H3" seçildiğinde istem, çözünürlük ve referans medya ayarları görüntülenir. | DYNAMIC_COMBO | Evet | "MiniMax H3" |
 | `video` | Yeniden işlenecek MiniMax H3 768P çıktı videosu. MiniMax H3 video düğümünün değiştirilmemiş çıktısını bağlayın (24 FPS, 4-15 saniye). 2K çıktılar kullanılamaz. | VIDEO | Evet | 24 FPS, 4-15 saniye |
 | `first_frame` | Orijinal üretimde kullanıldıysa, ilk kare görseli. | IMAGE | Hayır | Görsel |
 | `last_frame` | Orijinal üretimde kullanıldıysa, son kare görseli. | IMAGE | Hayır | Görsel |
