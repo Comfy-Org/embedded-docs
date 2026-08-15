@@ -30,14 +30,19 @@ TRANSLATIONS_MAX_AGE_HOURS = 12
 # Supported languages
 SUPPORTED_LANGS = ['zh', 'zh-TW', 'es', 'fr', 'ja', 'ko', 'ru', 'ar', 'tr', 'pt-BR', 'fa']
 
+# The shared node_translations.json is also consumed by lib/doc_title.py,
+# which relies on the English display_name as fallback. Always include 'en'
+# when (re)writing the file, even though this script only updates non-en docs.
+FETCH_LANGS = ['en'] + SUPPORTED_LANGS
+
 REMOTE_REPO = "Comfy-Org/ComfyUI_frontend"
 REMOTE_BRANCH = "master"
 REMOTE_BASE = f"https://raw.githubusercontent.com/{REMOTE_REPO}/{REMOTE_BRANCH}/src/locales"
 
 def _fetch_remote_translations() -> dict:
-    """Fetch nodeDefs.json for all languages from GitHub raw."""
+    """Fetch nodeDefs.json for all languages (incl. 'en') from GitHub raw."""
     out = {}
-    for lang in SUPPORTED_LANGS:
+    for lang in FETCH_LANGS:
         url = f"{REMOTE_BASE}/{lang}/nodeDefs.json"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "docs-generation"})
@@ -65,10 +70,22 @@ def load_frontend_translations(force_refresh=False):
         print("📡 Fetching frontend translations from GitHub (Comfy-Org/ComfyUI_frontend@master)...")
         data = _fetch_remote_translations()
         if any(data.values()):
+            # Merge over the existing file so languages whose fetch failed
+            # (and any keys not managed here) are preserved.
+            merged = {}
+            if TRANSLATIONS_FILE.exists():
+                try:
+                    with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
+                        merged = json.load(f)
+                except (json.JSONDecodeError, OSError):
+                    merged = {}
+            for lang, lang_data in data.items():
+                if lang_data:
+                    merged[lang] = lang_data
             with open(TRANSLATIONS_FILE, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
+                json.dump(merged, f, ensure_ascii=False, indent=2)
             print(f"✓ Refreshed {TRANSLATIONS_FILE} from GitHub")
-            return data
+            return merged
         # Fetch failed: fall back to existing file
         if TRANSLATIONS_FILE.exists():
             print("⚠️  GitHub fetch failed; using existing local translations file")
@@ -113,7 +130,7 @@ def update_parameter_name_in_row(row, old_param_name, new_param_name):
         old_param_name.replace("_", "."),
     ]
     for v in variants:
-        pattern = rf'\|{{1}}\s*`{re.escape(v)}`\s*\|'
+        pattern = rf'\|\s*`{re.escape(v)}`\s*\|'
         if re.search(pattern, row):
             return re.sub(pattern, f'| `{new_param_name}` |', row)
     return row
